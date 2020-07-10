@@ -8,6 +8,8 @@ categories: Analysis,Plugins
 description: test description
 ---
 
+{% include component-stats content=':sc.fiji:Directionality\_' %}
+
 ## Usage
 
 ![Directionality\_Example.png](Directionality_Example.png

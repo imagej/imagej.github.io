@@ -9,16 +9,11 @@ description: test description
 ---
 
 The following is the original text of the
-[ImageJDev](ImageJ2 "wikilink") grant proposal circa mid-2009.
-
-{% capture includecontent %} message = Please note that
-[ImageJ2](ImageJ2 "wikilink")'s project directions evolved substantially
+[ImageJDev](ImageJ2 "wikilink") grant proposal circa mid-2009. {%
+include warning-sidebox-right message='Please note that
+[ImageJ2](ImageJ2 "wikilink")"s project directions evolved substantially
 as it developed, so the text below is dated, but in many ways, this
-document continues to represent the project's conceptual core.
-
-{% endcapture %}
-
-{% include warning-box content=includecontent %}
+document continues to represent the project"s conceptual core.' %}
 
 ## Summary
 

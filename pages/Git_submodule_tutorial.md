@@ -8,8 +8,7 @@ categories: Git
 description: test description
 ---
 
-%Replace% GitMenu %Replace% %Replace% TOC %Replace% %Replace% Outdated
-%Replace%
+{% include gitmenu %}{% include toc %}{% include outdated %}
 
 ## Submodules in Fiji
 

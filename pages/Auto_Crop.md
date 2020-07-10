@@ -8,16 +8,15 @@ categories: Tutorials,Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Auto Crop |
-maintainer = {% include person content='Schindelin' %} | author =
-Johannes Schindelin | source = {% include github org='fiji'
-repo='Fiji\_Plugins' source='fiji/selection/Select\_Bounding\_Box.java'
-%} | released = 40/02/2010 | latest version = 30/04/2011 | status =
-stable | category = [:Category:Plugins](:Category:Plugins "wikilink")
+{% capture maintainer %} {% include person content="Schindelin" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="Fiji\_Plugins"
+source="fiji/selection/Select\_Bounding\_Box.java" %} {% endcapture %}
+{% include sidebox-right software='ImageJ' name='Auto Crop'
+maintainer=maintainer author='Johannes Schindelin' source=source
+released='40/02/2010' version='30/04/2011' status='stable'
+category='[:Category:Plugins](:Category:Plugins "wikilink")' %}
 
 This plugin can find the smallest bounding box of an image (or a
 rectangular part defined by a selection) by cropping as much background

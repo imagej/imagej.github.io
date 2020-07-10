@@ -8,16 +8,16 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = BigStitcher | name = BigStitcher
-| author = {% include person content='StephanPreibisch' %} & {% include
-person content='hoerldavid' %} | maintainer = {% include person
-content='StephanPreibisch' %} & {% include person content='hoerldavid'
-%} | source = {% include github org='PreibischLab' repo='BigStitcher' %}
-| status = beta
+{% capture author %} {% include person content="StephanPreibisch" %} &
+{% include person content="hoerldavid" %} {% endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="StephanPreibisch" %}
+& {% include person content="hoerldavid" %} {% endcapture %}
 
-{% include info-box-plugin content=includecontent %}
+{% capture source %} {% include github org="PreibischLab"
+repo="BigStitcher" %} {% endcapture %} {% include sidebox-right
+content='Plugin' software='BigStitcher' name='BigStitcher' author=author
+maintainer=maintainer source=source status='beta' %}
 
 ## Introduction & Overview
 

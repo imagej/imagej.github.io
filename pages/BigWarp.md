@@ -8,11 +8,12 @@ categories: Plugins,Visualization,Transform,Registration,Citable
 description: test description
 ---
 
-Bigwarp is a tool for manual, interactive, landmark-based deformable
-image alignment. It uses the [BigDataViewer](BigDataViewer "wikilink")
-for visualization and navigation, and uses a [Thin Plate
+{% include component-stats content=':sc.fiji:bigwarp\_fiji' %}Bigwarp is
+a tool for manual, interactive, landmark-based deformable image
+alignment. It uses the [BigDataViewer](BigDataViewer "wikilink") for
+visualization and navigation, and uses a [Thin Plate
 Spline](wikipedia:Thin_plate_spline "wikilink") implemented {% include
-github org='saalfeldlab' repo='bigwarp' label='in' %} to build a
+github org='saalfeldlab' repo='bigwarp' label='in Java' %} to build a
 deformation from point correspondences.
 
 The interface enables landmark pair placement and displays the effects
@@ -20,60 +21,61 @@ of the warp on-the-fly.
 
 ## Installation
 
-Bigwarp comes with Fiji. You can access it via *Plugins %Replace% arrow
-%Replace% BigDataViewer %Replace% arrow %Replace% Big Warp*, or by
-modifying {% include github org='saalfeldlab' repo='bigwarp'
-path='scripts/bigwarp\_fiji\_demo.bsh' label='this' %}. If this is not
-visible in your installation, try updating Fiji with *Help %Replace%
-arrow %Replace% Update Fiji.*
+Bigwarp comes with Fiji. You can access it via *Plugins {% include arrow
+%} BigDataViewer {% include arrow %} Big Warp*, or by modifying {%
+include github org='saalfeldlab' repo='bigwarp'
+path='scripts/bigwarp\_fiji\_demo.bsh' label='this example script' %}.
+If this is not visible in your installation, try updating Fiji with
+*Help {% include arrow %} Update Fiji.*
 
 ## Usage
 
 Open two images in ImageJ, one *moving* and the other *target* and
-navigate to *Plugins %Replace% arrow %Replace% BigDataViewer %Replace%
-arrow %Replace% Big Warp.* A dialog will appear prompting selection of
-the moving and target images.
+navigate to *Plugins {% include arrow %} BigDataViewer {% include arrow
+%} Big Warp.* A dialog will appear prompting selection of the moving and
+target images.
 
 Once the two image windows and one table window open, press {% include
-key content='Spacebar' %} to enter "landmark mode". Next, click on a
-point in the moving image, then click on the corresponding point in the
-target image. After you have a few moving-target point pairs, press {%
-include key content='T' %} to transform the moving image (you may need
-to re-navigate if the two image are very far apart: see the {% include
-key content='Q' %} and {% include key content='W' %} hotkeys below).
+key content='press|Spacebar' %} to enter "landmark mode". Next, click on
+a point in the moving image, then click on the corresponding point in
+the target image. After you have a few moving-target point pairs, press
+{% include key content='press|T' %} to transform the moving image (you
+may need to re-navigate if the two image are very far apart: see the {%
+include key content='press|Q' %} and {% include key content='press|W' %}
+hotkeys below).
 
 ### Getting Help
 
-Press {% include key content='F1' %} at any time to open a help page
-with a listing of navigation and editing commands. For detailed help,
-create a post on the [image.sc forum](https://forum.image.sc/) with a
-bigwarp tag. Report bugs [on
+Press {% include key content='press|F1' %} at any time to open a help
+page with a listing of navigation and editing commands. For detailed
+help, create a post on the [image.sc forum](https://forum.image.sc/)
+with a bigwarp tag. Report bugs [on
 github](https://github.com/saalfeldlab/bigwarp/issues).
 
 ### Landmark point placement and display in the viewer
 
 Landmark placements is done in *Landmark mode* which you enter by
-pressing {% include key content='Spacebar' %}. Users place pairs of
-corresponding points on the moving and target images.
+pressing {% include key content='press|Spacebar' %}. Users place pairs
+of corresponding points on the moving and target images.
 
 The following table shows the available commands and keystrokes for
 landmark placement, warping.
 
-|                                                                                                                               |                                                                                                                                           |
-| ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| {% include key content='T' %}                                                                                                 | Toggle between warped view and raw view or moving image.                                                                                  |
-| {% include key content='Ctrl' %}+{% include key content='O' %}                                                                | Open landmarks from saved file.                                                                                                           |
-| {% include key content='Ctrl' %}+{% include key content='S' %}                                                                | Save current landmarks to a file.                                                                                                         |
-| {% include key content='Spacebar' %}                                                                                          | Toggle *Landmark mode*                                                                                                                    |
-| \<*Landmark mode*\>+{% include key content='left-click' %}                                                                    | Clicking while in landmark mode adds a landmark point or selects and existing landmark.                                                   |
-| \<*Landmark mode*\>+{% include key content='left-click' %}+{% include key content='drag' %}                                   | Clicking an existing point and dragging changes it's position.                                                                            |
-| \<*Landmark mode*\>+{% include key content='Shift' %}+{% include key content='left-click' %}+{% include key content='drag' %} | "Move" a point. The initial click places a landmark point for the moving image. The release places a landmark point for the target image. |
-| \<*Landmark mode*\>+{% include key content='Ctrl' %}+{% include key content='left-click' %}                                   | "Pin" a point. Add a landmark at the same location for both moving and target images.                                                     |
-| \<*Landmark mode*\>+{% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='left-click' %} | Place a point in the "other" space. Place a moving landmark from the fixed window, and vice versa.                                        |
-| {% include key content='Ctrl' %} + {% include key content='Z' %}                                                              | Undo the last landmark point change.                                                                                                      |
-| {% include key content='Ctrl' %} + {% include key content='Y' %}                                                              | Redo the last landmark point change.                                                                                                      |
-| {% include key content='V' %}                                                                                                 | Toggle point visibility in the viewer.                                                                                                    |
-| {% include key content='N' %}                                                                                                 | Toggle point name visibility in the viewer.                                                                                               |
+|                                                                                                                                                 |                                                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include key content='press|T' %}                                                                                                             | Toggle between warped view and raw view or moving image.                                                                                  |
+| {% include key content='press|Ctrl' %}+{% include key content='press|O' %}                                                                      | Open landmarks from saved file.                                                                                                           |
+| {% include key content='press|Ctrl' %}+{% include key content='press|S' %}                                                                      | Save current landmarks to a file.                                                                                                         |
+| {% include key content='press|Spacebar' %}                                                                                                      | Toggle *Landmark mode*                                                                                                                    |
+| \<*Landmark mode*\>+{% include key content='press|left-click' %}                                                                                | Clicking while in landmark mode adds a landmark point or selects and existing landmark.                                                   |
+| \<*Landmark mode*\>+{% include key content='press|left-click' %}+{% include key content='press|drag' %}                                         | Clicking an existing point and dragging changes it's position.                                                                            |
+| \<*Landmark mode*\>+{% include key content='press|Shift' %}+{% include key content='press|left-click' %}+{% include key content='press|drag' %} | "Move" a point. The initial click places a landmark point for the moving image. The release places a landmark point for the target image. |
+| \<*Landmark mode*\>+{% include key content='press|Ctrl' %}+{% include key content='press|left-click' %}                                         | "Pin" a point. Add a landmark at the same location for both moving and target images.                                                     |
+| \<*Landmark mode*\>+{% include key content='press|Ctrl' %}+{% include key content='press|Shift' %}+{% include key content='press|left-click' %} | Place a point in the "other" space. Place a moving landmark from the fixed window, and vice versa.                                        |
+| {% include key content='press|Ctrl' %} + {% include key content='press|Z' %}                                                                    | Undo the last landmark point change.                                                                                                      |
+| {% include key content='press|Ctrl' %} + {% include key content='press|Y' %}                                                                    | Redo the last landmark point change.                                                                                                      |
+| {% include key content='press|V' %}                                                                                                             | Toggle point visibility in the viewer.                                                                                                    |
+| {% include key content='press|N' %}                                                                                                             | Toggle point name visibility in the viewer.                                                                                               |
 
 ### Landmark selection and editing in the table
 
@@ -82,12 +84,12 @@ table.
 
 |                                                                                       |                                                         |
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| {% include key content='left-click' %}                                                | Select row.                                             |
-| {% include key content='Ctrl' %}+{% include key content='left-click' %}               | Add row to selection.                                   |
-| {% include key content='Shift' %}+{% include key content='left-click' %}              | Select range of rows.                                   |
-| {% include key content='Esc' %}                                                       | Deselect all rows.                                      |
-| {% include key content='right-click' %} %Replace% arrow %Replace% Delete              | Deletes a landmark pair (row in the table).             |
-| {% include key content='right-click' %} %Replace% arrow %Replace% Delete all selected | Deletes all selected landmark pairs (row in the table). |
+| {% include key content='press|left-click' %}                                          | Select row.                                             |
+| {% include key content='press|Ctrl' %}+{% include key content='press|left-click' %}   | Add row to selection.                                   |
+| {% include key content='press|Shift' %}+{% include key content='press|left-click' %}  | Select range of rows.                                   |
+| {% include key content='press|Esc' %}                                                 | Deselect all rows.                                      |
+| {% include key content='press|right-click' %} {% include arrow %} Delete              | Deletes a landmark pair (row in the table).             |
+| {% include key content='press|right-click' %} {% include arrow %} Delete all selected | Deletes all selected landmark pairs (row in the table). |
 
 ### Notes on point addition and landmark pair selection
 
@@ -104,9 +106,9 @@ table.
 
 ### Selecting transformation types
 
-Press {% include key content='F8' %} to bring up a transformation type
-selection window (version 4.0.0 of BigWarp supports multiple options for
-transformations)
+Press {% include key content='press|F8' %} to bring up a transformation
+type selection window (version 4.0.0 of BigWarp supports multiple
+options for transformations)
 
 |                                                                          |                                                                                   |
 | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
@@ -136,19 +138,19 @@ BigWarp specific features are documented below.
 The following table shows the available navigation commands using the
 mouse:
 
-|                                                                                                  |                                                                                   |
-| ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| {% include key content='Q' %}                                                                    | Align the non-active viewer with the active viewer.                               |
-| {% include key content='W' %}                                                                    | Align the active viewer with the non-active viewer.                               |
-| {% include key content='E' %}                                                                    | Centers the active viewer to the nearest landmark (considers 3D when applicable). |
-| {% include key content='Ctrl' %}+{% include key content='D' %}                                   | Centers the active viewer to the next landmark.                                   |
-| {% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='D' %} | Centers the active viewer to the previous landmark.                               |
-| {% include key content='R' %}                                                                    | Resets the active viewer.                                                         |
-| {% include key content='U' %}                                                                    | Show warp visualization / grid dialog.                                            |
-| {% include key content='F6' %}                                                                   | Show moving image panel Visibility & and Grouping dialog.                         |
-| {% include key content='F7' %}                                                                   | Show target image panel Visibility & and Grouping dialog.                         |
-| {% include key content='Ctrl' %}+{% include key content='E' %}                                   | Export moving image as an ImagePlus.                                              |
-| {% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='E' %} | Export moving image as a Virtual ImagePlus.                                       |
+|                                                                                                                    |                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| {% include key content='press|Q' %}                                                                                | Align the non-active viewer with the active viewer.                               |
+| {% include key content='press|W' %}                                                                                | Align the active viewer with the non-active viewer.                               |
+| {% include key content='press|E' %}                                                                                | Centers the active viewer to the nearest landmark (considers 3D when applicable). |
+| {% include key content='press|Ctrl' %}+{% include key content='press|D' %}                                         | Centers the active viewer to the next landmark.                                   |
+| {% include key content='press|Ctrl' %}+{% include key content='press|Shift' %}+{% include key content='press|D' %} | Centers the active viewer to the previous landmark.                               |
+| {% include key content='press|R' %}                                                                                | Resets the active viewer.                                                         |
+| {% include key content='press|U' %}                                                                                | Show warp visualization / grid dialog.                                            |
+| {% include key content='press|F6' %}                                                                               | Show moving image panel Visibility & and Grouping dialog.                         |
+| {% include key content='press|F7' %}                                                                               | Show target image panel Visibility & and Grouping dialog.                         |
+| {% include key content='press|Ctrl' %}+{% include key content='press|E' %}                                         | Export moving image as an ImagePlus.                                              |
+| {% include key content='press|Ctrl' %}+{% include key content='press|Shift' %}+{% include key content='press|E' %} | Export moving image as a Virtual ImagePlus.                                       |
 
 ### Commands shared with BigDataViewer
 
@@ -162,45 +164,45 @@ mouse:
 
 #### Mouse navigation
 
-|                                                                                                   |                                                                     |
-| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| {% include key content='left-click|drag' %}                                                       | Rotate (pan and tilt) around the point where the mouse was clicked. |
-| {% include key content='right-click|drag' %} or {% include key content='middle-click|drag' %}     | Translate in the XY-plane.                                          |
-| {% include key content='mouse-wheel' %}                                                           | Move along the z-axis.                                              |
-| {% include key content='Cmd|mouse-wheel' %} or {% include key content='Shift|Ctrl|mouse-wheel' %} | Zoom in and out.                                                    |
+|                                                                                                               |                                                                     |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| {% include key content='press|left-click|drag' %}                                                             | Rotate (pan and tilt) around the point where the mouse was clicked. |
+| {% include key content='press|right-click|drag' %} or {% include key content='press|middle-click|drag' %}     | Translate in the XY-plane.                                          |
+| {% include key content='press|mouse-wheel' %}                                                                 | Move along the z-axis.                                              |
+| {% include key content='press|Cmd|mouse-wheel' %} or {% include key content='press|Shift|Ctrl|mouse-wheel' %} | Zoom in and out.                                                    |
 
 #### Keyboard navigation
 
-|                                                                                             |                                                                                              |
-| ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| {% include key content='X' %}, {% include key content='Y' %}, {% include key content='Z' %} | Select keyboard rotation axis.                                                               |
-| {% include key content='Left' %}, {% include key content='Right' %}                         | Rotate clockwise or counter-clockwise around the choosen rotation axis.                      |
-| {% include key content='Up' %}, {% include key content='Down' %}                            | Zoom in or out.                                                                              |
-| {% include key content=',' %}, {% include key content='.' %}                                | Move forward or backward along the Z-axis.                                                   |
-| {% include key content='Shift|X' %}                                                         | Rotate to the ZY-plane of the current source. (Look along the X-axis of the current source.) |
-| {% include key content='Shift|Y' %} or {% include key content='Shift|A' %}                  | Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.) |
-| {% include key content='Shift|Z' %}                                                         | Rotate to the XY-plane of the current source. (Look along the Z-axis of the current source.) |
-| {% include key content='\[' %} or {% include key content='N' %}                             | Move to previous timepoint.                                                                  |
-| {% include key content='\]' %} or {% include key content='M' %}                             | Move to next timepoint.                                                                      |
+|                                                                                                               |                                                                                              |
+| ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| {% include key content='press|X' %}, {% include key content='press|Y' %}, {% include key content='press|Z' %} | Select keyboard rotation axis.                                                               |
+| {% include key content='press|Left' %}, {% include key content='press|Right' %}                               | Rotate clockwise or counter-clockwise around the choosen rotation axis.                      |
+| {% include key content='press|Up' %}, {% include key content='press|Down' %}                                  | Zoom in or out.                                                                              |
+| {% include key content='press|,' %}, {% include key content='press|.' %}                                      | Move forward or backward along the Z-axis.                                                   |
+| {% include key content='press|Shift|X' %}                                                                     | Rotate to the ZY-plane of the current source. (Look along the X-axis of the current source.) |
+| {% include key content='press|Shift|Y' %} or {% include key content='press|Shift|A' %}                        | Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.) |
+| {% include key content='press|Shift|Z' %}                                                                     | Rotate to the XY-plane of the current source. (Look along the Z-axis of the current source.) |
+| {% include key content='press|\[' %} or {% include key content='press|N' %}                                   | Move to previous timepoint.                                                                  |
+| {% include key content='press|\]' %} or {% include key content='press|M' %}                                   | Move to next timepoint.                                                                      |
 
-For all navigation commands you can hold {% include key content='Shift'
-%} to rotate and browse 10x faster, or hold {% include key
-content='Ctrl' %} to rotate and browse 10x slower. For example, {%
-include key content='Left' %} rotates by 1° clockwise, while {% include
-key content='Shift|Left' %} rotates by 10°, and {% include key
-content='Ctrl|Left' %} rotates by 0.1°.
+For all navigation commands you can hold {% include key
+content='press|Shift' %} to rotate and browse 10x faster, or hold {%
+include key content='press|Ctrl' %} to rotate and browse 10x slower. For
+example, {% include key content='press|Left' %} rotates by 1° clockwise,
+while {% include key content='press|Shift|Left' %} rotates by 10°, and
+{% include key content='press|Ctrl|Left' %} rotates by 0.1°.
 
 ### Save and load landmarks
 
 Landmarks can be exported and imported from plain text files using the
-drop down menu in the landmark table panel ( *File %Replace% arrow
-%Replace% Export (Import) landmarks.* )
+drop down menu in the landmark table panel ( *File {% include arrow %}
+Export (Import) landmarks.* )
 
 ### Export warped images
 
-Export the warped moving image by clicking *File %Replace% arrow
-%Replace% \> Export as ImagePlus* or using the {% include key
-content='Ctrl' %}+{% include key content='E' %} keyboard shortcut.
+Export the warped moving image by clicking *File {% include arrow %} \>
+Export as ImagePlus* or using the {% include key content='press|Ctrl'
+%}+{% include key content='press|E' %} keyboard shortcut.
 
 ![Bigwarp\_export.png](/images/pages/Bigwarp_export.png "Bigwarp_export.png")"
 
@@ -335,11 +337,11 @@ storing bigwarp landmarks will not work as input to this script.
 
 ## Working with large images
 
-The "normal" BigWarp plugin accessible through *Plugins %Replace% arrow
-%Replace% Big Data Viewer %Replace% arrow %Replace% BigWarp* works well
-for small- and medium-sized images but not for very large volumes (that
-do not fit into memory). For very large volumes, we recommend first
-[converting the volume to bigdataviewer's xml/hdf5
+The "normal" BigWarp plugin accessible through *Plugins {% include arrow
+%} Big Data Viewer {% include arrow %} BigWarp* works well for small-
+and medium-sized images but not for very large volumes (that do not fit
+into memory). For very large volumes, we recommend first [converting the
+volume to bigdataviewer's xml/hdf5
 format](https://imagej.net/BigDataViewer#Exporting_Datasets_for_the_BigDataViewer),
 then using [this
 script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy)
@@ -361,10 +363,7 @@ enables you to run BigWarp using images stored using
 
 # Publication
 
-  - 
-{% capture includecontent %} BigWarp {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='BigWarp' %}
 
 # Publications using BigWarp
 

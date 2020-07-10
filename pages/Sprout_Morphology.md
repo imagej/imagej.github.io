@@ -8,17 +8,17 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | name = Sprout Morphology
-| author = {% include person content='Eglinger' %} | maintainer = {%
-include person content='Eglinger' %} | source = {% include github
-org='angiogenesis' repo='Sprout\_Analysis' %} | released = | latest
-version = | status = stable | category =
-[Analysis](:Category:Analysis "wikilink")
+{% capture author %} {% include person content="Eglinger" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Eglinger" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
-
+{% capture source %} {% include github org="angiogenesis"
+repo="Sprout\_Analysis" %} {% endcapture %} {% include sidebox-right
+software='Fiji' name='Sprout Morphology' author=author
+maintainer=maintainer source=source released='' version=''
+status='stable' category='[Analysis](:Category:Analysis "wikilink")' %}
 The **Sprout Morphology** plugin measures sprout *number*, *length*,
 *width* and *cell density* of endothelial cell (EC) sprouts grown in a
 bead sprouting assay. It optionally includes measuring the coverage of
@@ -75,8 +75,8 @@ pericytes](SproutAnalyzer_CellClassification.png
 Karsjens | first2 = H. | last3 = Lammert | first3 = E. | year = 2017 |
 journal = Inflammation and Regeneration | url =
 http://inflammregen.biomedcentral.com/articles/10.1186/s41232-016-0033-2
-| Quantitative assessment of angiogenesis and pericyte coverage in human
-cell-derived vascular sprouts | volume = 37(2) | pmid = | doi =
+| title = Quantitative assessment of angiogenesis and pericyte coverage
+in human cell-derived vascular sprouts | volume = 37(2) | pmid = | doi =
 10.1186/s41232-016-0033-2 {% endcapture %}
 
 {% include citation content=includecontent %}

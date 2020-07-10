@@ -8,6 +8,8 @@ categories: Plugins,Citable,Transform,Registration,Deconvolution,ImgLib,Integral
 description: test description
 ---
 
+{% include component-stats content=':sc.fiji:SPIM\_Registration' %}
+
 ## Download
 
 The integration of the **Multiview Reconstruction** and the

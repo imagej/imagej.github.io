@@ -8,16 +8,18 @@ categories: Plugins,ImageScience
 description: test description
 ---
 
-{% capture includecontent %} software = ImageScience | name = FeatureJ |
-maintainer = {% include person content='ImageScience' %} | author = {%
-include person content='ImageScience' %} | source = {% include github
-org='imagescience' repo='FeatureJ' %} | status = | category =
-[:Category:Plugins](:Category:Plugins "wikilink") | website =
-http://imagescience.org/meijering/software/featurej/
+{% capture maintainer %} {% include person content="ImageScience" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture author %} {% include person content="ImageScience" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %} The
+{% capture source %} {% include github org="imagescience"
+repo="FeatureJ" %} {% endcapture %} {% include sidebox-right
+software='ImageScience' name='FeatureJ' maintainer=maintainer
+author=author source=source status=''
+category='[:Category:Plugins](:Category:Plugins "wikilink")'
+website='http://imagescience.org/meijering/software/featurej/' %}The
 [FeatureJ](http://imagescience.org/meijering/software/featurej/) suite
 of plugins offers extraction of differential features of images.
 

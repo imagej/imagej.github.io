@@ -8,18 +8,17 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = Vessel Analysis | software = Fiji |
-author = Nivetha Govindaraju, {% include person content='M farna' %} |
-maintainer = {% include person content='M farna' %}
-(<mai.elfarnawany@gmail.com>) | filename = [Vessel
-Analysis.zip](https://imagej.net/File:Vessel_Analysis.zip) | released =
-June 14<sup>th</sup>, 2016 | latest version = 1.1 | status = stable |
-category = [Plugins](:Category:Plugins "wikilink"),
-[Analysis](:Category:Analysis "wikilink")
+{% capture author %} Nivetha Govindaraju, {% include person content="M
+farna" %} {% endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture maintainer %} {% include person content="M farna" %}
+(<mai.elfarnawany@gmail.com>) {% endcapture %} {% include sidebox-right
+name='Vessel Analysis' software='Fiji' author=author
+maintainer=maintainer filename='[Vessel
+Analysis.zip](https://imagej.net/File:Vessel_Analysis.zip)'
+released='June 14<sup>th</sup>, 2016' version='1.1' status='stable'
+category='[Plugins](:Category:Plugins "wikilink"),
+[Analysis](:Category:Analysis "wikilink")' %}
 
 ## **Description:**
 

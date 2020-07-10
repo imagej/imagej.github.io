@@ -8,17 +8,13 @@ categories: Tutorials,Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Retinex |
-maintainer = [Francisco Jiménez
-Hernández](mailto:jimenezf_at_fi.uaemex.mx) | author = Francisco
-Jiménez Hernández | source = {% include github org='fiji'
-repo='Fiji\_Plugins' source='Retinex\_.java' %} | released = 02/08/2010
-| latest version = 02/08/2010 | status = | category =
-[:Category:Plugins](:Category:Plugins "wikilink") | website =
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="Fiji\_Plugins"
+source="Retinex\_.java" %} {% endcapture %} {% include sidebox-right
+software='ImageJ' name='Retinex' maintainer='[Francisco Jiménez
+Hernández](mailto:jimenezf_at_fi.uaemex.mx)' author='Francisco Jiménez
+Hernández' source=source released='02/08/2010' version='02/08/2010'
+status='' category='[:Category:Plugins](:Category:Plugins "wikilink")'
+website='' %}
 
 ## Retinex
 

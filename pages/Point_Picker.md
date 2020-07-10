@@ -8,20 +8,15 @@ categories: Plugins,Particle analysis
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Point Picker |
-author = [Philippe Thévenaz](http://bigwww.epfl.ch/thevenaz/) | filename
-= [PC](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.zip)  
+{% include sidebox-right software='ImageJ' name='Point Picker'
+author='[Philippe Thévenaz](http://bigwww.epfl.ch/thevenaz/)'
+filename='[PC](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.zip)  
 [Macintosh](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.sit)  
-[Unix](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.tar.Z) |
-source = [Java API](http://bigwww.epfl.ch/thevenaz/pointpicker/api/) |
-released = | latest version = 27 September 2003 | status = probably not
-active | category = [Particle
-analysis](:Category:Particle_analysis "wikilink") | website =
-[1](http://bigwww.epfl.ch/thevenaz/pointpicker/)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+[Unix](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.tar.Z)'
+source='[Java API](http://bigwww.epfl.ch/thevenaz/pointpicker/api/)'
+released='' version='27 September 2003' status='probably not active'
+category='[Particle analysis](:Category:Particle_analysis "wikilink")'
+website='[1](http://bigwww.epfl.ch/thevenaz/pointpicker/)' %}
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Particle
 analysis](Category:Particle_analysis "wikilink")

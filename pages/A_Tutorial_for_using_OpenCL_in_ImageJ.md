@@ -8,12 +8,10 @@ categories: Outdated
 description: test description
 ---
 
-{% capture includecontent %} This tutorial was written in 2010-11, and
-contains out-of-date or no-longer-accurate information. A potential
-alternative for using OpenCL in ImageJ is
-[CLIJ](https://imagej.net/Clij). {% endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='This tutorial was written in
+2010-11, and contains out-of-date or no-longer-accurate information. A
+potential alternative for using OpenCL in ImageJ is
+[CLIJ](https://imagej.net/Clij).' %}
 
 This tutorial is meant to help you leverage OpenCL from Java for use
 with ImageJ.
@@ -356,12 +354,10 @@ Native Library Path Prefix: `/opt/glassfishv3/glassfish/lib`
 
 # GPU Based Processing Techniques and the ImageJ Architecture
 
-{% capture includecontent %} The following article describes our first
-effort at GPU computing with ImageJ using OpenCL, in early 2010. The
-tutorial above is more recent and more complete; the text below is
-preserved only for historical reasons. {% endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='The following article
+describes our first effort at GPU computing with ImageJ using OpenCL, in
+early 2010. The tutorial above is more recent and more complete; the
+text below is preserved only for historical reasons.' %}
 
 ## Introduction
 

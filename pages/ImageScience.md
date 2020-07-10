@@ -8,17 +8,19 @@ categories: Libraries,ImageScience
 description: test description
 ---
 
-{% capture includecontent %} software = ImageScience | name =
-ImageScience | maintainer = {% include person content='ImageScience' %}
-| author = {% include person content='ImageScience' %} | source = {%
-include github org='imagescience' repo='ImageScience' %} | status = |
-category = [:Category:Libraries](:Category:Libraries "wikilink") |
-website = http://imagescience.org/meijering/software/imagescience/
+{% capture maintainer %} {% include person content="ImageScience" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture author %} {% include person content="ImageScience" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %} The ImageScience library
-supports the ImageScience suite of plugins:
+{% capture source %} {% include github org="imagescience"
+repo="ImageScience" %} {% endcapture %} {% include sidebox-right
+software='ImageScience' name='ImageScience' maintainer=maintainer
+author=author source=source status=''
+category='[:Category:Libraries](:Category:Libraries "wikilink")'
+website='http://imagescience.org/meijering/software/imagescience/'
+%}The ImageScience library supports the ImageScience suite of plugins:
 
   - [FeatureJ](FeatureJ "wikilink")
   - [MTrackJ](MTrackJ "wikilink")

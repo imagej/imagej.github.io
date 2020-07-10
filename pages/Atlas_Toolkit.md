@@ -8,27 +8,27 @@ categories: Plugins,Registration,Citable
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | name = Atlas Toolkit |
-author = [Grocott Lab](http://www.grocottlab.com) | maintainer = {%
-include person content='GrocottLab' %} | filename =
-Atlas\_Toolkit\_1.0-SNAPSHOT.jar | source = {% include github
-org='GrocottLab' repo='Atlas-Toolkit' %} | released = November
-16<sup>th</sup>, 2015 | latest version = 1.0, May 6<sup>th</sup>, 2015 |
-status = stable, active | category =
-[Registration](:Category:Registration "wikilink") | website =
-[www.grocottlab.com](http://www.grocottlab.com/software)
+{% capture maintainer %} {% include person content="GrocottLab" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %} The Atlas Toolkit plugin
-is a collection of tools developed to achieve group-wise elastic
-registration of 3D objects by decomposing the alignment problem into a
-sequence of orthogonal 2D elastic registrations, for which each object
-is registered to every other. These 2D elastic registrations are powered
-by the [BUnwarpJ](BUnwarpJ "wikilink") plugin, and registration is
-guided by the gross morphology of the corresponding 3D objects, which
-can be defined using the [Segmentation
-Editor](Segmentation_Editor "wikilink") plugin.
+{% capture source %} {% include github org="GrocottLab"
+repo="Atlas-Toolkit" %} {% endcapture %} {% include sidebox-right
+software='Fiji' name='Atlas Toolkit' author='[Grocott
+Lab](http://www.grocottlab.com)' maintainer=maintainer
+filename='Atlas\_Toolkit\_1.0-SNAPSHOT.jar' source=source
+released='November 16<sup>th</sup>, 2015' version='1.0, May
+6<sup>th</sup>, 2015' status='stable, active'
+category='[Registration](:Category:Registration "wikilink")'
+website='[www.grocottlab.com](http://www.grocottlab.com/software)' %}The
+Atlas Toolkit plugin is a collection of tools developed to achieve
+group-wise elastic registration of 3D objects by decomposing the
+alignment problem into a sequence of orthogonal 2D elastic
+registrations, for which each object is registered to every other. These
+2D elastic registrations are powered by the
+[BUnwarpJ](BUnwarpJ "wikilink") plugin, and registration is guided by
+the gross morphology of the corresponding 3D objects, which can be
+defined using the [Segmentation Editor](Segmentation_Editor "wikilink")
+plugin.
 
 ## Installation of the plugin
 
@@ -183,10 +183,7 @@ The following screencast demonstrates Apply Label Registration in use.
 Please cite the following original research article in which the Atlas
 Toolkit is described:
 
-  - 
-{% capture includecontent %} Atlas Toolkit {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='Atlas Toolkit' %}
 
 ## License
 

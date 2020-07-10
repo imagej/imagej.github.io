@@ -8,21 +8,18 @@ categories: Plugins,Particle analysis,Tracking
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Particle Tracker
-| author = [MOSAIC Group](http://mosaic.mpi-cbg.de/), [Center for
-Systems Biology Dresden (CSBD)](http://www.mpg-sysbio.de), [Max Planck
-Institute of Molecular Cell Biology and Genetics
+{% capture maintainer %} {% include person content="Krzysztof.Gonciarz"
+%} {% endcapture %} {% include sidebox-right software='ImageJ'
+name='Particle Tracker' author='[MOSAIC
+Group](http://mosaic.mpi-cbg.de/), [Center for Systems Biology Dresden
+(CSBD)](http://www.mpg-sysbio.de), [Max Planck Institute of Molecular
+Cell Biology and Genetics
 (MPI-CBG)](http://www.mpi-cbg.de/research/research-groups/ivo-sbalzarini.html),
-Dresden, Germany. | maintainer = {% include person
-content='Krzysztof.Gonciarz' %} | update site = MOSAIC ToolSuite |
-source = [MPI-CBG git](https://git.mpi-cbg.de/mosaic/MosaicSuite) |
-released = 2006 | status = active | category = [Particle
-analysis](:Category:Particle_analysis "wikilink") | website =
-[MosaicSuite](http://mosaic.mpi-cbg.de/?q=downloads/imageJ)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+Dresden, Germany.' maintainer=maintainer site='MOSAIC ToolSuite'
+source='[MPI-CBG git](https://git.mpi-cbg.de/mosaic/MosaicSuite)'
+released='2006' status='active' category='[Particle
+analysis](:Category:Particle_analysis "wikilink")'
+website='[MosaicSuite](http://mosaic.mpi-cbg.de/?q=downloads/imageJ)' %}
 
 **Particle Tracker** is a 2D and 3D feature point-tracking tool for the
 automated detection and tracking of particle trajectories as recorded by

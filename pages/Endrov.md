@@ -8,22 +8,16 @@ categories: Related Software,Citable
 description: test description
 ---
 
-{% capture includecontent %} name = Endrov | software = Endrov | author
-= Johan Henriksson | maintainer = Johan Henriksson | source = {% include
-github org='mahogny' repo='Endrov' %} | status = Active | website =
-http://www.endrov.net/
-
-{% endcapture %}
-
-{% include info-box content=includecontent %} Endrov is an open-source
-plugin architecture aimed for image analysis and data processing.
+{% capture source %} {% include github org="mahogny" repo="Endrov" %} {%
+endcapture %} {% include sidebox-right name='Endrov' software='Endrov'
+author='Johan Henriksson' maintainer='Johan Henriksson' source=source
+status='Active' website='http://www.endrov.net/' %}Endrov is an
+open-source plugin architecture aimed for image analysis and data
+processing.
 
 ## Publication
 
-  - 
-{% capture includecontent %} Endrov {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='Endrov' %}
 
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:Citable](Category:Citable "wikilink")

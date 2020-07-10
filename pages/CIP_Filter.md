@@ -13,6 +13,8 @@ description: test description
 This page provides user documentation for the filter functions of the
 [CIP](CIP "wikilink") package
 
+{% include cip content='Navigation' %}
+
 # **gauss**
 
 <span style="font-size:110%">**Description**</span>  

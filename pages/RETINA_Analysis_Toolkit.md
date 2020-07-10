@@ -8,27 +8,23 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} logo = ![ 96px](/images/pages/Fiji-icon.png " 96px")" |
-software = ImageJ | name = RETINA Analysis Toolkit | author = [**Daniel
-E. Maidana**](https://www.researchgate.net/profile/Daniel_Maidana2)  
-[**Demetrios G.
-Vavvas**](https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g)
-| maintainer = **Daniel E. Maidana**  
+{% include sidebox-right logo='![ 96px](/images/pages/Fiji-icon.png " 96px")"'
+software='ImageJ' name='RETINA Analysis Toolkit' author='["""Daniel E.
+Maidana"""](https://www.researchgate.net/profile/Daniel_Maidana2)  
+["""Demetrios G.
+Vavvas"""](https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g)'
+maintainer='"""Daniel E. Maidana"""  
 Angiogenesis Laboratory  
 Massachusetts Eye and Ear Infirmary  
 Harvard Medical School
-([Daniel\_Maidana@meei.harvard.edu](mailto:Daniel_Maidana@MEEI.HARVARD.EDU))
-| filename = [TUNEL Cell Counter
-Macro](https://github.com/DanielMaidana/TUNEL_Cell_Counter/archive/master.zip)
-| source = [TUNEL Cell Counter Repository](https://osf.io/9rveh/)  
-| released = August 18<sup>th</sup>, 2015 | latest version = July
-21<sup>th</sup>, 2016 | status = Active and validated with Fiji (ImageJ
-1.51d) | website = [RETINA Analysis Toolkit at
-YouTube](https://www.youtube.com/channel/UCqGMCPY9ViyAPWhYciRNuKQ)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}  
+([Daniel\_Maidana@meei.harvard.edu](mailto:Daniel_Maidana@MEEI.HARVARD.EDU))'
+filename='[TUNEL Cell Counter
+Macro](https://github.com/DanielMaidana/TUNEL_Cell_Counter/archive/master.zip)'
+source='[TUNEL Cell Counter Repository](https://osf.io/9rveh/)  
+' released='August 18<sup>th</sup>, 2015' version='July 21<sup>th</sup>,
+2016' status='Active and validated with Fiji (ImageJ 1.51d)'
+website='[RETINA Analysis Toolkit at
+YouTube](https://www.youtube.com/channel/UCqGMCPY9ViyAPWhYciRNuKQ)' %}  
 **RETINA Analysis Toolkit** is a free macro toolkit designed and
 developed for Fiji (ImageJ). The purpose of the RETINA Analysis Toolkit
 is to perform fast quantitation of digital RGB images from retina

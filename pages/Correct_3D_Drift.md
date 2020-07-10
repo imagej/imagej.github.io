@@ -8,7 +8,8 @@ categories: Plugins,Registration,Citable
 description: test description
 ---
 
-This Fiji menu command is implemented by the script {% include github
+{% include component-stats content=':sc.fiji:Correct\_3D\_Drift' %}This
+Fiji menu command is implemented by the script {% include github
 org='fiji' repo='Correct\_3D\_Drift'
 path='src/main/resources/scripts/Plugins/Registration/Correct\_3D\_drift.py'
 label='Correct\_3D\_Drift.py' %}.

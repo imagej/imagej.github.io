@@ -8,13 +8,11 @@ categories: Scripting,Jython
 description: test description
 ---
 
-{% capture includecontent %} This page is a copy of [Jython
+{% include sidebox-right content='This page is a copy of [Jython
 Scripting](Jython_Scripting "wikilink"). The original wiki page is in a
 rewrite progress. When rewriting [Jython
 Scripting](Jython_Scripting "wikilink") is finished, this wiki page will
-be shortened to only contain Jython code examples. {% endcapture %}
-
-{% include info-box content=includecontent %}
+be shortened to only contain Jython code examples.' %}
 
 {% include learn content='scripting' %}[Jython](http://www.jython.org/)
 is an implementation of the [Python programming
@@ -38,15 +36,13 @@ Interpreter'%}. See [Scripting Help](Scripting_Help "wikilink") for all
 keybindings, and also [Scripting
 comparisons](Scripting_comparisons "wikilink").
 
-{% capture includecontent %} Note that ImageJ also ships a unified
-Script Interpreter plugin, accessible from {% include bc
-content='Plugins | Scripting | Script Interpreter'%}. But it is
-currently beta quality, and the Python language does not work properly
-due to bugs. Once this issue is fixed, the unified Script Interpreter
-will replace the language-specific interpreters such as the Jython
-Interpreter. {% endcapture %}
-
-{% include warning-box content=includecontent %}
+{% capture content %} Note that ImageJ also ships a unified Script
+Interpreter plugin, accessible from {% include bc content="Plugins |
+Scripting | Script Interpreter"%}. But it is currently beta quality, and
+the Python language does not work properly due to bugs. Once this issue
+is fixed, the unified Script Interpreter will replace the
+language-specific interpreters such as the Jython Interpreter. {%
+endcapture %} {% include warning-sidebox-right content=content %}
 
 Within the interpreter, all ImageJ, java.lang.\* and TrakEM2 classes are
 automatically imported. So creating new images and manipulating them is
@@ -69,11 +65,8 @@ very straighforward.
 
 #### Importing classes
 
-{% capture includecontent %} lang = Jython {% endcapture %}
-
-{% include importing-classes content=includecontent %}
-
-You can specify imports in Jython as follows:
+{% include importing-classes lang='Jython' %} You can specify imports in
+Jython as follows:
 
 ``` python
 from java.io import File
@@ -110,22 +103,9 @@ If all you need is a script to run in headless mode, simply do:
 
 ### Some limitations of jython
 
-{% capture includecontent %} float=right | title=What about NumPy and
-SciPy? | If you like Python, you probably want to use Python modules
-such as the excellent [NumPy](http://www.numpy.org/) and
-[SciPy](http://www.scipy.org/) libraries. Unfortunately, Jython does not
-support linking to Python modules backed by native code. See [this
-thread on the ImageJ
-forum](http://forum.imagej.net/t/python-scripting/80) for some options
-and alternatives. This area is somewhere a dedicated programmer could
-make a huge splash and benefit the entire scientific community.
-
-{% endcapture %}
-
-{% include sidebox-right content=includecontent %}
-
-Though jython tries to be as close as possible as python, there are some
-differences you may experience during scripting.
+{% include sidebox-right float='right' title='What about NumPy and
+SciPy?' %} Though jython tries to be as close as possible as python,
+there are some differences you may experience during scripting.
 
   - <u>Float "special numbers" such as *NaN* and *Inf* are not
     handled.</u>
@@ -2313,16 +2293,19 @@ similarly be handle by the updater to populate an update site.
 
   - {% include github repo='fiji'
     path='plugins/Examples/Find\_Dimension\_of\_Raw\_Image.py'
-    label='Find' %}
+    label='Find Dimension of Raw Image' %}
   - {% include github repo='fiji'
-    path='plugins/Examples/Edit\_LUT\_As\_Text.py' label='Edit' %}
+    path='plugins/Examples/Edit\_LUT\_As\_Text.py' label='Edit LUT As
+    Text' %}
   - {% include github repo='fiji'
-    path='plugins/Examples/Delayed\_Snapshot.py' label='Delayed' %}
+    path='plugins/Examples/Delayed\_Snapshot.py' label='Delayed
+    Snapshot' %}
   - {% include github repo='fiji'
     path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Python.py'
-    label='Command' %}
+    label='Command Launcher GUI' %}
   - {% include github repo='fiji'
-    path='plugins/Examples/list\_all\_threads.py' label='List' %}
+    path='plugins/Examples/list\_all\_threads.py' label='List all
+    threads' %}
   - {% include github repo='fiji' path='plugins/Examples/chess\_.py'
     label='Chess' %}
 
@@ -2330,16 +2313,16 @@ similarly be handle by the updater to populate an update site.
 
   - {% include github repo='fiji'
     path='plugins/Examples/TrakEM2\_Example\_Scripts/extract\_stack\_under\_arealist.py'
-    label='Extract' %} in TrakEM2.
+    label='Extract stack under AreaList' %} in TrakEM2.
   - {% include github repo='fiji'
     path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py'
-    label='Set' %} for TrakEM2 objects.
+    label='Set all transforms to identity' %} for TrakEM2 objects.
   - {% include github repo='fiji'
     path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_Select\_All.py'
-    label='Select' %} objects in TrakEM2.
+    label='Select All' %} objects in TrakEM2.
   - {% include github repo='fiji'
     path='plugins/Examples/TrakEM2\_Example\_Scripts/Measure\_AreaLists.py'
-    label='Measure' %} in TrakEM2.
+    label='Measure AreaList' %} in TrakEM2.
 
 # See also
 

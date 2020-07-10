@@ -10,17 +10,12 @@ description: test description
 
 ## 'Xlib' plugins
 
-{% capture includecontent %} software = ImageJ / Fiji plugins | name =
-Xlib | maintainer = Beat Münch | author = Beat Münch | filename =
-[xlib\_.jar](ftp://ftp.empa.ch/pub/empa/outgoing/BeatsRamsch/lib/xlib_.jar)
-| released = 01.06.2015 | latest version = 01.10.2019 | status =
-maintained actively as of October 2019 | category =
-[Plugins](:Category:Plugins "wikilink") | website =
-http://wiki.imagej.net/Xlib
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ / Fiji plugins' name='Xlib'
+maintainer='Beat Münch' author='Beat Münch'
+filename='[xlib\_.jar](ftp://ftp.empa.ch/pub/empa/outgoing/BeatsRamsch/lib/xlib_.jar)'
+released='01.06.2015' version='01.10.2019' status='maintained actively
+as of October 2019' category='[Plugins](:Category:Plugins "wikilink")'
+website='http://wiki.imagej.net/Xlib' %}
 
 \_\_TOC\_\_
 
@@ -150,8 +145,8 @@ membership.
 
   - 
 {% capture includecontent %} last = Münch | first = B | last2 = Martin |
-first2 = L | last3 = Leemann | first3 = A | Segmentation of Elemental
-EDS Maps by Means of Multiple Clustering Combined with Phase
+first2 = L | last3 = Leemann | first3 = A | title = Segmentation of
+Elemental EDS Maps by Means of Multiple Clustering Combined with Phase
 Identification | journal = Journal of Microscopy | volume = 260(3) |
 pages = 411-426 | year = 2015
 
@@ -250,9 +245,9 @@ The filter works in 2D as well as in 3D.
 
   - 
 {% capture includecontent %} last = Perona | first = P | last2 = Malik |
-first2 = J | Scale-Space and Edge-Detection Using Anisotropic Diffusion
-| journal = IEEE Trans. Pattern Anal. Mach. Intell. | volume = 12(7) |
-pages = 629-639 | year = 1990
+first2 = J | title = Scale-Space and Edge-Detection Using Anisotropic
+Diffusion | journal = IEEE Trans. Pattern Anal. Mach. Intell. | volume =
+12(7) | pages = 629-639 | year = 1990
 
 {% endcapture %}
 
@@ -260,9 +255,10 @@ pages = 629-639 | year = 1990
 
   - 
 {% capture includecontent %} last = Tschmperlé | first = D | last2 =
-Deriche | first2 = R | Vector-Valued Image Regularization with PDE's: A
-Common Framework for Different Applications | journal = IEEE Trans. Pat.
-Anal. Mach. Intell. | volume = 27(4) | pages = 506-517 | year = 2005
+Deriche | first2 = R | title = Vector-Valued Image Regularization with
+PDE's: A Common Framework for Different Applications | journal = IEEE
+Trans. Pat. Anal. Mach. Intell. | volume = 27(4) | pages = 506-517 |
+year = 2005
 
 {% endcapture %}
 
@@ -294,10 +290,10 @@ are presented (2nd row), as well as the magnitudes after non-maxima
 suppression and also after joining the connected regions (3rd row).
 
   - 
-{% capture includecontent %} last = Canny | first = J | A Computational
-Approach to Edge Detection | journal = IEEE Transactions on Pattern
-Analysis and Machine Intelligence | volume = PAMI-8(6) | pages = 679-698
-| year = 1986
+{% capture includecontent %} last = Canny | first = J | title = A
+Computational Approach to Edge Detection | journal = IEEE Transactions
+on Pattern Analysis and Machine Intelligence | volume = PAMI-8(6) |
+pages = 679-698 | year = 1986
 
 {% endcapture %}
 
@@ -426,7 +422,7 @@ volumes containing different phases.
 {% capture includecontent %} last = Kanungo | first = T | last2 = Mount
 | first2 = D M | last3 = Netanyahu | first3 = N S | last4 = Piatko |
 first4 = C D | last5 = Silverman | first5 = R | last6 = Wu | first6 = A
-Y | An Efficient K-Means Clustering Algorithm: Analysis and
+Y | title = An Efficient K-Means Clustering Algorithm: Analysis and
 Implementation | journal = IEEE Trans. Pattern Analysis and Machine
 Intelligence | volume = 24(7) | pages = 881-892 | year = 2002
 
@@ -436,19 +432,19 @@ Intelligence | volume = 24(7) | pages = 881-892 | year = 2002
 
   - 
 {% capture includecontent %} last = Funkunaga | first = K | last2 =
-Hosteler | first2 = L D | last3 = Netanyahu | The Estimation of the
-Gradient of a Density Function, with Applications in Pattern Recognition
-| journal = IEEE Transactions on Information Theory | volume = 21(1) |
-pages = 32-40 | year = 1975
+Hosteler | first2 = L D | last3 = Netanyahu | title = The Estimation of
+the Gradient of a Density Function, with Applications in Pattern
+Recognition | journal = IEEE Transactions on Information Theory | volume
+= 21(1) | pages = 32-40 | year = 1975
 
 {% endcapture %}
 
 {% include citation content=includecontent %}
 
   - 
-{% capture includecontent %} last = Bezdek | first = J C | FCM: The
-Fuzzy C-Means Clustering Algorithm | journal = Computers & Geosciences |
-volume = 10(2) | pages = 191-203 | year = 1984
+{% capture includecontent %} last = Bezdek | first = J C | title = FCM:
+The Fuzzy C-Means Clustering Algorithm | journal = Computers &
+Geosciences | volume = 10(2) | pages = 191-203 | year = 1984
 
 {% endcapture %}
 
@@ -456,10 +452,10 @@ volume = 10(2) | pages = 191-203 | year = 1984
 
   - 
 {% capture includecontent %} last = Dempster | first = A P | last2 =
-Laird | first2 = N M | last3 = Rubin | first3 = D B | Maximum Likelihood
-from Incomplete Data via the EM Algorithm | journal = Journal of the
-Royal Statistical Society, Series B | volume = 39 (1) | pages = 1-38 |
-year = 1977
+Laird | first2 = N M | last3 = Rubin | first3 = D B | title = Maximum
+Likelihood from Incomplete Data via the EM Algorithm | journal = Journal
+of the Royal Statistical Society, Series B | volume = 39 (1) | pages =
+1-38 | year = 1977
 
 {% endcapture %}
 
@@ -492,7 +488,7 @@ and labeled subsequently.
   - 
 {% capture includecontent %} last = Münch | first = B | last2 = Gasser |
 first2 = P | last3 = Holzer | first3 = L | last3 = Flatt | first3 = R |
-FIB Nanotomography of Particulate Systems - Part II: Particle
+title = FIB Nanotomography of Particulate Systems - Part II: Particle
 Recognition and Effect of Boundary Truncation | journal = Journal
 American Ceramics Society | volume = 89(8) | pages = 2586-2595 | year =
 2006
@@ -530,9 +526,10 @@ and Citymap (right) distance transform is shown.
 
   - 
 {% capture includecontent %} last = Saito | first = T | last2 = Toriwaki
-| first2 = J-I | New algorithms for Euclidean Distance Transformation of
-an N-Dimensional Digitized Picture with Applications | journal = Pattern
-Recognition | volume = 27(11) | pages = 1551-1565 | year = 1994
+| first2 = J-I | title = New algorithms for Euclidean Distance
+Transformation of an N-Dimensional Digitized Picture with Applications |
+journal = Pattern Recognition | volume = 27(11) | pages = 1551-1565 |
+year = 1994
 
 {% endcapture %}
 
@@ -540,8 +537,8 @@ Recognition | volume = 27(11) | pages = 1551-1565 | year = 1994
 
   - 
 {% capture includecontent %} last = Meijster | first = A | last2 =
-Roerdink | first2 = J B T M | last3 = Hesselink | first3 = W H | A
-General Algorithm for Computing Distance Transform in Linear Time |
+Roerdink | first2 = J B T M | last3 = Hesselink | first3 = W H | title =
+A General Algorithm for Computing Distance Transform in Linear Time |
 journal = in Proc. Mathematical Morphology and its Applications to Image
 and Signal Processing, Kluwer | pages = 331-340 | year = 2000
 
@@ -583,10 +580,10 @@ transform of the center and right images reconstructs the original
 function (left) again without any loss of precision.
 
   - 
-{% capture includecontent %} last = Bluestein | first = L I | A Linear
-Filtering Approach to the Computation of the Discrete Fourier Transform
-| journal = Northeast Electronics Research and Engineering Meeting
-Record | volume = 10 | pages = 218-219 | year = 1968
+{% capture includecontent %} last = Bluestein | first = L I | title = A
+Linear Filtering Approach to the Computation of the Discrete Fourier
+Transform | journal = Northeast Electronics Research and Engineering
+Meeting Record | volume = 10 | pages = 218-219 | year = 1968
 
 {% endcapture %}
 
@@ -594,9 +591,9 @@ Record | volume = 10 | pages = 218-219 | year = 1968
 
   - 
 {% capture includecontent %} last = Rabiner | first = L R | last2 =
-Schafer | first2 = R W | last3 = Rader | first3 = C M | The Chirp
-Z-Transform Algorithm | journal = IEEE Trans. Audio Electroacoustics |
-volume = 17(2) | pages = 86-92 | year = 1969
+Schafer | first2 = R W | last3 = Rader | first3 = C M | title = The
+Chirp Z-Transform Algorithm | journal = IEEE Trans. Audio
+Electroacoustics | volume = 17(2) | pages = 86-92 | year = 1969
 
 {% endcapture %}
 
@@ -992,10 +989,10 @@ additionally confining to already existing color vectors only, the
 bottom right image results.
 
   - 
-{% capture includecontent %} last = Weiszfeld | first = E V | Sur le
-point pour lequel la somme des distances de n points donnes est minimum
-| journal = The Tohoku Mathematical Journal | volume = 43 | pages =
-355-386 | year = 1937
+{% capture includecontent %} last = Weiszfeld | first = E V | title =
+Sur le point pour lequel la somme des distances de n points donnes est
+minimum | journal = The Tohoku Mathematical Journal | volume = 43 |
+pages = 355-386 | year = 1937
 
 {% endcapture %}
 
@@ -1080,8 +1077,8 @@ of an object approaches a circle (2D) or a sphere (3D), thus for rating
 object shapes.
 
   - 
-{% capture includecontent %} last = Wadell | first = H | Volume, Shape
-and Roundness of Quartz Particles | journal = Journal of Geology |
+{% capture includecontent %} last = Wadell | first = H | title = Volume,
+Shape and Roundness of Quartz Particles | journal = Journal of Geology |
 volume = 43(3) | pages = 250-280 | year = 1935
 
 {% endcapture %}
@@ -1109,9 +1106,9 @@ original ones.
 
   - 
 {% capture includecontent %} last = Palagyi | first = K | last2 = Kuba |
-first2 = A | A 3D-Subiteration Thinning Algorithm for Extracting Medial
-Lines | journal = Pattern Recognition Letters | volume = 19 | pages =
-613-227 | year = 1998
+first2 = A | title = A 3D-Subiteration Thinning Algorithm for Extracting
+Medial Lines | journal = Pattern Recognition Letters | volume = 19 |
+pages = 613-227 | year = 1998
 
 {% endcapture %}
 
@@ -1145,9 +1142,9 @@ stripe filtering to the right.
   - 
 {% capture includecontent %} last = Münch | first = B | last2 = Trtik |
 first2 = P | last3 = Marone | first3 = F | last4 = Stampanoni | first4 =
-M | Stripe and Ring Artifact Removal with Combined Wavelet-Fourier
-Filtering | journal = Optical Express | volume = 17(10) | pages =
-8567-8591 | year = 2009
+M | title = Stripe and Ring Artifact Removal with Combined
+Wavelet-Fourier Filtering | journal = Optical Express | volume = 17(10)
+| pages = 8567-8591 | year = 2009
 
 {% endcapture %}
 
@@ -1342,7 +1339,7 @@ evaluations is given in the figure below.
   - 
 {% capture includecontent %} last = Münch | first = B | last2 = Gasser |
 first2 = P | last3 = Holzer | first3 = L | last4 = Flatt | first4 = R |
-FIB Nanotomography of Particulate Systems - Part II: Particle
+title = FIB Nanotomography of Particulate Systems - Part II: Particle
 Recognition and Effect of Boundary Truncation | journal = Journal
 American Ceramics Society | volume = 89(8) | pages = 2586-2595 | year =
 2006
@@ -1390,8 +1387,8 @@ as well (bottom).
   - 
 {% capture includecontent %} last = Leemann | first = A | last2 = Münch
 | first2 = B | last3 = Gasser | first3 = P | last4 = Holzer | first4 = L
-| Influence of Compaction on the Interfacial Transition Zone and the
-Permeability of Concrete | journal = Cement and Concrete Research |
+| title = Influence of Compaction on the Interfacial Transition Zone and
+the Permeability of Concrete | journal = Cement and Concrete Research |
 volume = 36 | pages = 1425-1433 | year = 2006
 
 {% endcapture %}
@@ -1400,10 +1397,10 @@ volume = 36 | pages = 1425-1433 | year = 2006
 
   - 
 {% capture includecontent %} last = Leemann | first = A | last2 = Loser
-| first2 = R | last3 = Münch | first3 = B | Influence of Cement Type on
-ITZ Porosity and Chloride Resistance on Self-Compacting Concrete |
-journal = Cement & Concrete Composites | volume = 32 | pages = 116-120 |
-year = 2010
+| first2 = R | last3 = Münch | first3 = B | title = Influence of Cement
+Type on ITZ Porosity and Chloride Resistance on Self-Compacting Concrete
+| journal = Cement & Concrete Composites | volume = 32 | pages = 116-120
+| year = 2010
 
 {% endcapture %}
 
@@ -1452,10 +1449,10 @@ visualized by [MATLAB](MATLAB "wikilink")).
 
   - 
 {% capture includecontent %} last = Münch | first = B | last2 = Holzer |
-first2 = L | Contradicting Geometrical Concepts in Pore Size Analysis
-Attained with Electron Microscopy and Mercury Intrusion | journal =
-Journal of American Ceramics Society | volume = 91(12) | pages =
-4059-4067 | year = 2008
+first2 = L | title = Contradicting Geometrical Concepts in Pore Size
+Analysis Attained with Electron Microscopy and Mercury Intrusion |
+journal = Journal of American Ceramics Society | volume = 91(12) | pages
+= 4059-4067 | year = 2008
 
 {% endcapture %}
 
@@ -1724,9 +1721,9 @@ Transform"](#Distance_Transform "wikilink") plugin).
 
   - 
 {% capture includecontent %} last = Lorensen | first = W E | last2 =
-Cline | first2 = H E | Marching Cubes: a High Resolution 3D Surface
-Construction Algorithm | journal = Computer Graphics | volume = 21(4) |
-pages = 163-169 | year = 1987
+Cline | first2 = H E | title = Marching Cubes: a High Resolution 3D
+Surface Construction Algorithm | journal = Computer Graphics | volume =
+21(4) | pages = 163-169 | year = 1987
 
 {% endcapture %}
 
@@ -1734,10 +1731,10 @@ pages = 163-169 | year = 1987
 
   - 
 {% capture includecontent %} last = Artzy | first = E | last2 = Frieder
-| first2 = G | last3 = Herman | first3 = G T | The Theory, Design,
-Implementation and Evaluation of a Three-Dimensional Surface Detection
-Algorithm | journal = Computer Graphics and Image Processing | volume =
-15 | pages = 1-24 | year = 1981
+| first2 = G | last3 = Herman | first3 = G T | title = The Theory,
+Design, Implementation and Evaluation of a Three-Dimensional Surface
+Detection Algorithm | journal = Computer Graphics and Image Processing |
+volume = 15 | pages = 1-24 | year = 1981
 
 {% endcapture %}
 

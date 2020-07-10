@@ -8,8 +8,8 @@ categories:
 description: test description
 ---
 
-%Replace% Learn %Replace% This page collects ImageJ-related
-presentations, including talks, workshops and posters.
+{% include learn %}This page collects ImageJ-related presentations,
+including talks, workshops and posters.
 
 Do you know of a publicly archived ImageJ-related presentation not
 listed here? Please add it\!

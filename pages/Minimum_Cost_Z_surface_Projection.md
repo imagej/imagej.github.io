@@ -10,19 +10,15 @@ description: test description
 
 \_\_TOC\_\_
 
-{% capture includecontent %} software = ImageJ/Fiji | name = Min Cost Z
-Surface | author = [Benoit Lombardot](User:Benoit "wikilink") |
-maintainer = [Benoit Lombardot](User:Benoit "wikilink") | released = 03
-August 2016 | filename =
-![MinCostZSurface\_-1.1.0.jar.zip](MinCostZSurface_-1.1.0.jar.zip
-"MinCostZSurface_-1.1.0.jar.zip") | source = [MPI-CBG
-git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection)
-| category = [Plugins](:Category:Plugins "wikilink"),
-[Projection](:Category:Projection "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ/Fiji' name='Min Cost Z
+Surface' author='[Benoit Lombardot](User:Benoit "wikilink")'
+maintainer='[Benoit Lombardot](User:Benoit "wikilink")' released='03
+August 2016'
+filename='![MinCostZSurface\_-1.1.0.jar.zip](MinCostZSurface_-1.1.0.jar.zip
+"MinCostZSurface_-1.1.0.jar.zip")' source='[MPI-CBG
+git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection)'
+category='[Plugins](:Category:Plugins "wikilink"),
+[Projection](:Category:Projection "wikilink")' %}
 
 ## Introduction
 

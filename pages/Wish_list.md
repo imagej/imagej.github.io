@@ -8,7 +8,7 @@ categories: Development
 description: test description
 ---
 
-%Replace% AboutMenu %Replace% This page offers a list of ImageJ-related
+{% include aboutmenu %}This page offers a list of ImageJ-related
 projects which need community assistance to move forward in a timely
 manner.
 

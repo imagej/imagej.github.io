@@ -8,22 +8,23 @@ categories: Plugins,Related Software,SciJava,Citable
 description: test description
 ---
 
-{% capture includecontent %} software = MiToBo | name = MiToBo | logo =
-![MiToBo-logo.png](/images/pages/MiToBo-logo.png "MiToBo-logo.png")" | maintainer =
-Stefan Posch, {% include person content='MiToBo' %} | author = Stefan
-Posch, {% include person content='MiToBo' %} | source = {% include
-github org='mitobo-hub' repo='mitobo-plugins' %} | status = | category =
-[:Category:Plugins](:Category:Plugins "wikilink") | website =
-http://www.informatik.uni-halle.de/mitobo/
+{% capture maintainer %} Stefan Posch, {% include person
+content="MiToBo" %} {% endcapture %}
 
+{% capture author %} Stefan Posch, {% include person content="MiToBo" %}
 {% endcapture %}
 
-{% include info-box content=includecontent %} The Microscope Image
-Analysis Toolbox MiToBo is a collection of basic and advanced image
-processing operators and applications mainly dedicated to biological and
-biomedical image data, however, not restricted to these fields. MiToBo
-is an extension of [ImageJ](ImageJ "wikilink"), i.e. MiToBo operators
-are ready to be directly used as plugins in ImageJ.
+{% capture source %} {% include github org="mitobo-hub"
+repo="mitobo-plugins" %} {% endcapture %} {% include sidebox-right
+software='MiToBo' name='MiToBo' logo='![MiToBo-logo.png](MiToBo-logo.png
+"MiToBo-logo.png")' maintainer=maintainer author=author source=source
+status='' category='[:Category:Plugins](:Category:Plugins "wikilink")'
+website='http://www.informatik.uni-halle.de/mitobo/' %}The Microscope
+Image Analysis Toolbox MiToBo is a collection of basic and advanced
+image processing operators and applications mainly dedicated to
+biological and biomedical image data, however, not restricted to these
+fields. MiToBo is an extension of [ImageJ](ImageJ "wikilink"), i.e.
+MiToBo operators are ready to be directly used as plugins in ImageJ.
 
 To make use of MiToBo's functionality it can be enabled by [toggling the
 MiToBo update site](Update_Sites "wikilink").
@@ -38,10 +39,7 @@ image analysis workflows can easily be designed graphically.
 
 ## Publication
 
-  - 
-{% capture includecontent %} MiToBo {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='MiToBo' %}
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Related
 Software](Category:Related_Software "wikilink")

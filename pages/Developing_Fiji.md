@@ -8,7 +8,7 @@ categories: Development,Fiji
 description: test description
 ---
 
-%Replace% FijiMenu %Replace% %Replace% Outdated %Replace%
+{% include fijimenu %}{% include outdated %}
 
 Fiji is a community effort. So we are happy whenever we see new people
 developing Fiji\!

@@ -8,16 +8,16 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = Labkit | update site = Labkit |
-author = {% include person content='Maarzt' %} | maintainer = {% include
-person content='Maarzt' %} | source = {% include github org='maarzt'
-repo='imglib2-labkit' %}
+{% capture author %} {% include person content="Maarzt" %} {% endcapture
+%}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Maarzt" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
-
-![Labkit\_Illustration.jpg](Labkit_Illustration.jpg
+{% capture source %} {% include github org="maarzt"
+repo="imglib2-labkit" %} {% endcapture %} {% include sidebox-right
+name='Labkit' site='Labkit' author=author maintainer=maintainer
+source=source %} ![Labkit\_Illustration.jpg](Labkit_Illustration.jpg
 "Labkit_Illustration.jpg")
 
 Labkit is a plugin for:
@@ -46,8 +46,8 @@ Follow these steps to segment an image:
 2.  Start Labkit by selecting "Plugins \> Segmentation \> Labkit" from
     the menu.
 3.  Labkit should start and display the image. If it shows a black
-    window instead of the image: Click {% include key content='S' %} and
-    adjust the contrast.
+    window instead of the image: Click {% include key content='press|S'
+    %} and adjust the contrast.
 4.  Select "foreground" (In the side bar of Labkit). Select the pencil
     tool (top bar of Labkit) and draw on the image.
 5.  Select "background" and the pencil tool, and mark some other region
@@ -65,37 +65,39 @@ Labkit is based on Big Data Viewer. Navigation the image works as in Big
 Data Viewer, and many short cuts work too. Click
 [here](BigDataViewer "wikilink") for a description of the short cuts.
 
-  - {% include key content='Ctrl|Shift|mouse-wheel' %} to zoom in and
-    out
-  - {% include key content='right-click|drag' %} to move the image
-  - {% include key content='left-click|drag' %} to rotate a 3d image
-  - {% include key content='mouse-wheel' %} to scroll through the
+  - {% include key content='press|Ctrl|Shift|mouse-wheel' %} to zoom in
+    and out
+  - {% include key content='press|right-click|drag' %} to move the image
+  - {% include key content='press|left-click|drag' %} to rotate a 3d
+    image
+  - {% include key content='press|mouse-wheel' %} to scroll through the
     z-slices of a 3d image
 
 ## Tips & Tricks
 
   - If there's a black window, where the image should be? You might need
     to change the contrast settings: Click on the image, and then press
-    {% include key content='S' %} on the keyboard. A dialog shows up.
-    Use it to adjust the contrast.
+    {% include key content='press|S' %} on the keyboard. A dialog shows
+    up. Use it to adjust the contrast.
   - There can be more than two labels, just click on the "Add label"
     button...
   - Labels can be renamed, by double clicking on them.
   - To change the label color, just click on the colored rectangle left
     of the labels name.
-  - {% include key content='D|mouse-wheel' %} to change the size of the
-    brush tool.
+  - {% include key content='press|D|mouse-wheel' %} to change the size
+    of the brush tool.
 
 ## Drawing Tool Shortcuts
 
-  - {% include key content='D|left-click' %} to draw with the pencil
+  - {% include key content='press|D|left-click' %} to draw with the
+    pencil tool.
+  - {% include key content='press|E|left-click' %} to erase with the
+    pencil tool.
+  - {% include key content='press|F|left click' %} to use the flood fill
     tool.
-  - {% include key content='E|left-click' %} to erase with the pencil
-    tool.
-  - {% include key content='F|left click' %} to use the flood fill tool.
-  - {% include key content='R|left-click' %} to remove a connected
+  - {% include key content='press|R|left-click' %} to remove a connected
     component.
-  - {% include key content='N' %} - switch to next label
+  - {% include key content='press|N' %} - switch to next label
 
 ## Open & Save - Import & Export
 

@@ -11,6 +11,8 @@ description: test description
 This page provides user documentation for some experimental functions of
 the [CIP](CIP "wikilink") package
 
+{% include cip content='Navigation' %}
+
 # **track**
 
 <span style="font-size:110%">**Description**</span>  

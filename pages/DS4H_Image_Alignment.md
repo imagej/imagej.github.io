@@ -8,16 +8,13 @@ categories: Tutorials,Plugins,Registration
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = DS4H Image
-Alignment | maintainer = DS4H | author = Stefano Belli; Antonella
-Carbonaro; Filippo Piccinini | source = {% include github org='Luxor001'
-repo='DS4H-Image-Alignment' %} | released = 08/06/2019 | latest version
-= 13/08/2019 | status = stable | category =
-[:Category:Registration](:Category:Registration "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="Luxor001"
+repo="DS4H-Image-Alignment" %} {% endcapture %} {% include sidebox-right
+software='ImageJ' name='DS4H Image Alignment' maintainer='DS4H'
+author='Stefano Belli; Antonella Carbonaro; Filippo Piccinini'
+source=source released='08/06/2019' version='13/08/2019' status='stable'
+category='[:Category:Registration](:Category:Registration "wikilink")'
+%}
 
 ## Goal of the plugin
 

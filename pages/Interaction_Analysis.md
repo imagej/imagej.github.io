@@ -8,23 +8,19 @@ categories: Plugins,Particle analysis,Colocalization
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = MosaicIA -
-Interaction Analysis | author = [MOSAIC
+{% capture maintainer %} {% include person content="Krzysztof.Gonciarz"
+%} {% endcapture %} {% include sidebox-right software='ImageJ'
+name='MosaicIA - Interaction Analysis' author='[MOSAIC
 Group](http://mosaic.mpi-cbg.de/), [Center for Systems Biology Dresden
 (CSBD)](http://www.mpg-sysbio.de), [Max Planck Institute of Molecular
 Cell Biology and Genetics
 (MPI-CBG)](http://www.mpi-cbg.de/research/research-groups/ivo-sbalzarini.html),
-Dresden, Germany. | maintainer = {% include person
-content='Krzysztof.Gonciarz' %} | update site = MOSAIC ToolSuite |
-source = [MPI-CBG git](https://git.mpi-cbg.de/mosaic/MosaicSuite) |
-released = 2013 | status = active | category = [Particle
+Dresden, Germany.' maintainer=maintainer site='MOSAIC ToolSuite'
+source='[MPI-CBG git](https://git.mpi-cbg.de/mosaic/MosaicSuite)'
+released='2013' status='active' category='[Particle
 analysis](:Category:Particle_analysis "wikilink"),
-[Colocalization](:Category:Colocalization "wikilink") | website =
-[MosaicSuite](http://mosaic.mpi-cbg.de/?q=downloads/imageJ)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+[Colocalization](:Category:Colocalization "wikilink")'
+website='[MosaicSuite](http://mosaic.mpi-cbg.de/?q=downloads/imageJ)' %}
 
 **Interaction Analysis** is a tool to analyze the spatial distribution
 of objects in images. It estimates from an observed particle or object

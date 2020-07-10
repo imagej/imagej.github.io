@@ -10,16 +10,11 @@ description: test description
 
 \_\_TOC\_\_
 
-{% capture includecontent %} software = ImageJ/Fiji | name = CIP |
-update site = CIP | author = [Benoit Lombardot](User:Benoit "wikilink")
-| maintainer = [Benoit Lombardot](User:Benoit "wikilink") | released =
-January 2018 | filename = CIP update site | source =
-https://github.com/benoalo/CIP | category =
-[Scripting](:Category:Scripting "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ/Fiji' name='CIP' site='CIP'
+author='[Benoit Lombardot](User:Benoit "wikilink")' maintainer='[Benoit
+Lombardot](User:Benoit "wikilink")' released='January 2018'
+filename='CIP update site' source='https://github.com/benoalo/CIP'
+category='[Scripting](:Category:Scripting "wikilink")' %}
 
 ![CIP: ](/images/pages/CIP_basic_concept.PNG "CIP: ")"
 
@@ -179,10 +174,8 @@ Link to function user documentation are provided in the table below.
 The following script shows how to segment 2d object in an image and
 visualize them. The workflow is illustrated in the **Figure 3**.
 
-{% capture includecontent %}
-org=benoalo|repo=CIP|path=wiki\_examples/2D\_nuclei.py {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='benoalo' repo='CIP'
+path='wiki\_examples/2D\_nuclei.py' %}
 
 ![CIP: ](/images/pages/CIP_example_2D.PNG "CIP: ")"
 
@@ -199,11 +192,8 @@ Research Campus
 The following script shows a 3d nuclei segmentation and the measure and
 displau of nuclei size. The workflow is illustrated in the **Figure 4**.
 
-{% capture includecontent %}
-org=benoalo|repo=CIP|path=wiki\_examples/3D\_nuclei\_segmentation.py {%
-endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='benoalo' repo='CIP'
+path='wiki\_examples/3D\_nuclei\_segmentation.py' %}
 
 ![CIP: ](/images/pages/CIP_example_3D.PNG "CIP: ")"
 

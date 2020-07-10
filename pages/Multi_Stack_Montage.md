@@ -8,17 +8,15 @@ categories: Plugins
 description: test description
 ---
 
-{% capture includecontent %} name = Multi Stack Montage | software =
-ImageJ | author = Olivier Burri, Romain Guiet | maintainer = Olivier
-Burri | filename = Multi\_Stack\_Montage.jar | released = August 2015 |
-latest version = August 2015 | source = {% include github org='PTBIOP'
-repo='ijp-multi-stack-montage' %} | status = stable | category =
-[Stacks|Montage|Visualization](:Category:Plugins "wikilink") | website =
-[BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="PTBIOP"
+repo="ijp-multi-stack-montage" %} {% endcapture %} {% include
+sidebox-right name='Multi Stack Montage' software='ImageJ'
+author='Olivier Burri, Romain Guiet' maintainer='Olivier Burri'
+filename='Multi\_Stack\_Montage.jar' released='August 2015'
+version='August 2015' source=source status='stable'
+category='[Stacks|Montage|Visualization](:Category:Plugins "wikilink")'
+website='[BIOP Staff
+Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
 
 ## Purpose
 
@@ -40,15 +38,13 @@ select the stacks that you wish to use.
 ![Interface of the plugin](Hyperstacks_Montage_menu.jpg
 "Interface of the plugin")
 
-{% capture includecontent %} If you are going to make a montage, you
-need each stack to be as follows:
+{% include warning-sidebox-right content='If you are going to make a
+montage, you need each stack to be as follows:
 
   - Same number of Channels, Slices and Timepoints
   - Same Data Type (8-bit, 16-bit, 32-bit or RGB)
 
-{% endcapture %}
-
-{% include warning-box content=includecontent %}
+' %}
 
 In the case that there would be many images open, the plugin does not
 pre-select any images.

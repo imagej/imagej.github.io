@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-%Replace% AboutMenu %Replace% The community encourages discussion about
+{% include aboutmenu %}The community encourages discussion about
 proposed changes on ImageJ's [communication](communication "wikilink")
 channels. Submit your ideas\!
 
@@ -74,8 +74,8 @@ Methods of getting the patch to Wayne include:
     not use any Git extension because Wayne uses `patch(1)` to apply the
     patch.
   - Submit a pull request on GitHub against {% include github
-    org='imagej' repo='imagej1' label='the' %}. Please note, though,
-    that none of [the past Pull
+    org='imagej' repo='imagej1' label='the ImageJ1 repository' %}.
+    Please note, though, that none of [the past Pull
     Requests](https://github.com/imagej/imagej1/pulls?q=is%3Apr+is%3Aclosed)
     were merged using the standard Git workflow.
 

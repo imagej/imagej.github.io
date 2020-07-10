@@ -8,7 +8,8 @@ categories: Plugins
 description: test description
 ---
 
-Documentation: https://imagej.net/plugins/color-inspector.html
+{% include component-stats content=':sc.fiji:Color\_Inspector\_3D'
+%}Documentation: https://imagej.net/plugins/color-inspector.html
 
 Not hardware accelerated.
 

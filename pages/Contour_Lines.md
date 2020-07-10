@@ -8,17 +8,13 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = ContourLines |
-author = [Eugene Katrukha](http://katpyxa.info) | maintainer = [Eugene
-Katrukha](mailto:katpyxa_at_gmail.com) | filename =
-[ContourLines\_.jar](https://github.com/ekatrukha/ContourLines/blob/master/target/ContourLines_-0.0.4.jar?raw=true)
-| source = [github](https://github.com/ekatrukha/ContourLines) |
-released = 07 March 2019 | latest version = 07 March 2019 | status =
-stable | website = [1](https://github.com/ekatrukha/ContourLines)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='ContourLines'
+author='[Eugene Katrukha](http://katpyxa.info)' maintainer='[Eugene
+Katrukha](mailto:katpyxa_at_gmail.com)'
+filename='[ContourLines\_.jar](https://github.com/ekatrukha/ContourLines/blob/master/target/ContourLines_-0.0.4.jar?raw=true)'
+source='[github](https://github.com/ekatrukha/ContourLines)'
+released='07 March 2019' version='07 March 2019' status='stable'
+website='[1](https://github.com/ekatrukha/ContourLines)' %}
 
 Plugin generating contour lines with equal spacing on top of an image
 (using overlay). Based/inspired by

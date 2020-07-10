@@ -8,7 +8,7 @@ categories: Import-Export
 description: test description
 ---
 
-%Replace% FormatsMenu %Replace% The [TIFF file
+{% include menu-formats %}The [TIFF file
 format](wikipedia:TIFF "wikilink") is one of the most widely used
 formats in biosciences. Many commercial instruments write images using
 some flavor of TIFF. It is used in [open source](open_source "wikilink")

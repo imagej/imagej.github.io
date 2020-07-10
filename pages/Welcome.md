@@ -78,7 +78,7 @@ ImageJ</p></td>
 Fiji</p></td>
 <td><p>{% include logo content='Plugin' %}<br />
 Plugins</p></td>
-<td><p>{% include logo content='SciJava' link='Category:Related' %}<br />
+<td><p>{% include logo content='SciJava' link='Category:Related Software' %}<br />
 Related software</p></td>
 </tr>
 </tbody>

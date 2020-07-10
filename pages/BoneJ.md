@@ -8,17 +8,19 @@ categories: Related Software,Citable
 description: test description
 ---
 
-{% capture includecontent %} name = BoneJ 1.x | software = ImageJ | logo
-= ![Bonej-icon.png](/images/pages/Bonej-icon.png "Bonej-icon.png")" | author = {%
-include person content='Mdoube' %} | maintainer = {% include person
-content='Mdoube' %} | source = {% include github org='mdoube'
-repo='BoneJ' %} | status = Active | website = http://bonej.org/
+{% capture author %} {% include person content="Mdoube" %} {% endcapture
+%}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Mdoube" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %} BoneJ is a plugin for bone
-image analysis in [ImageJ](ImageJ "wikilink"). It provides free, open
-source tools for trabecular geometry and whole bone shape analysis.
+{% capture source %} {% include github org="mdoube" repo="BoneJ" %} {%
+endcapture %} {% include sidebox-right name='BoneJ 1.x'
+software='ImageJ' logo='![Bonej-icon.png](Bonej-icon.png
+"Bonej-icon.png")' author=author maintainer=maintainer source=source
+status='Active' website='http://bonej.org/' %}BoneJ is a plugin for
+bone image analysis in [ImageJ](ImageJ "wikilink"). It provides free,
+open source tools for trabecular geometry and whole bone shape analysis.
 
 ## Experimental release ([BoneJ2](BoneJ2 "wikilink"))
 
@@ -56,10 +58,7 @@ http://bonej.org/ it still includes older versions of the pQCT tools.
 
 ## Publication
 
-  - 
-{% capture includecontent %} BoneJ {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='BoneJ' %}
 
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:Citable](Category:Citable "wikilink")

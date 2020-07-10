@@ -8,19 +8,15 @@ categories: Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Upload Sample
-Image | maintainer = Johannes Schindelin | author = Johannes Schindelin
-| source = {% include github org='imagej' repo='imagej-plugins-commands'
-source='net/imagej/plugins/commands/upload/SampleImageUploader.java' %}
-| released = 2009-06-11 | latest version = 2014-07-01 | status = stable
-| category = [:Category:Plugins](:Category:Plugins "wikilink") | website
-=
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-## Upload Sample Image
+{% capture source %} {% include github org="imagej"
+repo="imagej-plugins-commands"
+source="net/imagej/plugins/commands/upload/SampleImageUploader.java" %}
+{% endcapture %} {% include sidebox-right software='ImageJ' name='Upload
+Sample Image' maintainer='Johannes Schindelin' author='Johannes
+Schindelin' source=source released='2009-06-11' version='2014-07-01'
+status='stable'
+category='[:Category:Plugins](:Category:Plugins "wikilink")' website=''
+%}== Upload Sample Image ==
 
 Use the {% include bc content='Help | Upload Sample Image'%} command to
 upload a file (not just images) meant for the ImageJ developers. You

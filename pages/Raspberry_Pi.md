@@ -8,33 +8,28 @@ categories: Platforms
 description: test description
 ---
 
-%Replace% PlatformsMenu %Replace% {% capture includecontent %}
-logo=Pi.svg | blurb=Learn programming through fun, practical projects\!
-{% endcapture %}
+{% include menu-platforms %}{% include minisidebox-right logo='Pi.svg'
+blurb='Learn programming through fun, practical projects\!' %}The
+[Raspberry Pi](wikipedia:Raspberry_Pi "wikilink") is an inexpensive
+single-board computer system which runs the
+[Raspbian](wikipedia:Raspbian "wikilink") operating system, a flavor of
+Debian [Linux](Linux "wikilink"). This page provides advice and guidance
+for running [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") on
+Raspberry Pi systems.
 
-{% include minibox content=includecontent %} The [Raspberry
-Pi](wikipedia:Raspberry_Pi "wikilink") is an inexpensive single-board
-computer system which runs the [Raspbian](wikipedia:Raspbian "wikilink")
-operating system, a flavor of Debian [Linux](Linux "wikilink"). This
-page provides advice and guidance for running
-[ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") on Raspberry Pi
-systems.
-
-%Replace% TOC %Replace%
+{% include toc %}
 
 # Installation
 
-{% capture includecontent %} You might notice there is as an `imagej`
+{% include imagej1 content='You might notice there is as an `imagej`
 package available from your package manager. Please be aware that this
 provides [ImageJ 1.x](ImageJ_1.x "wikilink") only, packaged by a third
 party, without cooperation from the core ImageJ development team. You
 will not have access to any [ImageJ2](ImageJ2 "wikilink")-specific
 features such as [parameterized scripts](Script_parameters "wikilink"),
 and you will likely have permissions errors because it is a system-wide
-ImageJ installation. {% endcapture %}
-
-{% include imagej1 content=includecontent %} The following steps
-describe how to install ImageJ on a Raspberry Pi:
+ImageJ installation.' %}The following steps describe how to install
+ImageJ on a Raspberry Pi:
 
 1.  Open the terminal.
 2.  Install Java 8 on your Pi (`sudo apt-get install openjdk-8-jre`).

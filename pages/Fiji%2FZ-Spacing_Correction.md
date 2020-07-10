@@ -8,20 +8,20 @@ categories: Plugins,TrakEM2,Transform,Citable
 description: test description
 ---
 
-{% capture includecontent %} name = Z-Spacing Correction | software =
-Fiji | author = Philipp Hanslovsky, {% include person content='Saalfeld'
-%} ([1](mailto:saalfelds@janelia.hhmi.org)) | maintainer = Philipp
-Hanslovsky, {% include person content='Saalfeld' %} | source =
-[2](https://github.com/saalfeldlab/em-thickness-estimation) | released =
-April 16<sup>th</sup>, 2015 | latest version = April 16<sup>th</sup>,
-2015 | status = experimental, active | category =
-[Plugins](:Category:Plugins "wikilink"),
+{% capture author %} Philipp Hanslovsky, {% include person
+content="Saalfeld" %} ([1](mailto:saalfelds@janelia.hhmi.org)) {%
+endcapture %}
+
+{% capture maintainer %} Philipp Hanslovsky, {% include person
+content="Saalfeld" %} {% endcapture %} {% include sidebox-right
+name='Z-Spacing Correction' software='Fiji' author=author
+maintainer=maintainer
+source='[2](https://github.com/saalfeldlab/em-thickness-estimation)'
+released='April 16<sup>th</sup>, 2015' version='April 16<sup>th</sup>,
+2015' status='experimental, active'
+category='[Plugins](:Category:Plugins "wikilink"),
 [TrakEM2](:Category:TrakEM2 "wikilink"),
-[Transform](:Category:Transform "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+[Transform](:Category:Transform "wikilink")' %}
 
 ## Citation
 

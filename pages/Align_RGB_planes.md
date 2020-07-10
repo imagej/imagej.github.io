@@ -8,18 +8,14 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Align RGB planes
-| author = Gabriel Landini | maintainer = G. Landini at bham. ac. uk |
-filename =
-[align\_rgb.zip](http://www.mecourse.com/landinig/software/align_rgb.zip)
-| source = in zip file | released = 12 January 2004 | latest version =
-27 March 2007 | status = active | category = [Color
-processing](:Category:Color_processing "wikilink") | website =
-[1](http://www.mecourse.com/landinig/software/software.html)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Align RGB planes'
+author='Gabriel Landini' maintainer='G. Landini at bham. ac. uk'
+filename='[align\_rgb.zip](http://www.mecourse.com/landinig/software/align_rgb.zip)'
+source='in zip file' released='12 January 2004' version='27 March 2007'
+status='active' category='[Color
+processing](:Category:Color_processing "wikilink")'
+website='[1](http://www.mecourse.com/landinig/software/software.html)'
+%}
 
 ## Documentation
 

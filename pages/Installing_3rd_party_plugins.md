@@ -65,6 +65,8 @@ description: test description
 
 ## For developers
 
+{% include template content=':Outdated' %}
+
 Please try to avoid closed-source plugins.
 
 If you have the sources, copy them into src-plugins/. (If you do not

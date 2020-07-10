@@ -8,19 +8,16 @@ categories: Related Software,Citable
 description: test description
 ---
 
-{% capture includecontent %} name = VisBio | software = VisBio | author
-= {% include person content='Rueden' %} | maintainer = None | source =
-{% include github org='uw-loci' repo='visbio' %} | status = Discontinued
-| website = http://loci.wisc.edu/software/visbio
+{% capture author %} {% include person content="Rueden" %} {% endcapture
+%}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-VisBio is a biological visualization tool designed for easy
-visualization and analysis of multidimensional image data, developed by
-{% include person content='Rueden' %} at [UW-Madison
-LOCI](http://loci.wisc.edu/).
+{% capture source %} {% include github org="uw-loci" repo="visbio" %} {%
+endcapture %} {% include sidebox-right name='VisBio' software='VisBio'
+author=author maintainer='None' source=source status='Discontinued'
+website='http://loci.wisc.edu/software/visbio' %} VisBio is a
+biological visualization tool designed for easy visualization and
+analysis of multidimensional image data, developed by {% include person
+content='Rueden' %} at [UW-Madison LOCI](http://loci.wisc.edu/).
 
 VisBio is based on the [VisAD](http://visad.ssec.wisc.edu/) Java
 component library for interactive and collaborative visualization and

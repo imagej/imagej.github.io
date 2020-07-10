@@ -17,11 +17,9 @@ transformations** between the images, we offer the possibility to
 **Refine the Alignment** using the **ICP (Iterative Closest Point)**
 algorithm combined with global optimization.
 
-{% capture includecontent %} The ICP algorithm assumes that the images
-are already roughly aligned. You should therefore use it as a **last
-step** after stitching your dataset. {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='The ICP algorithm assumes that the
+images are already roughly aligned. You should therefore use it as a
+"""last step""" after stitching your dataset.' %}
 
 ## Simple refinement
 
@@ -69,13 +67,11 @@ Finally, you can start the refinement by clicking:
     multiple illuminations (and have not selected one of them yet), they
     will also be aligned.
 
-{% capture includecontent %} For **chromatic aberration correction**, it
-is necessary to detect the same interest points in all channels, so only
-use that if your sample has autofluorescent structures visible in all
-channels or you added fiducial beads that fluoresce in all channels {%
-endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='For """chromatic aberration
+correction""", it is necessary to detect the same interest points in all
+channels, so only use that if your sample has autofluorescent structures
+visible in all channels or you added fiducial beads that fluoresce in
+all channels' %}
 
 ## Expert refinement
 

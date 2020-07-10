@@ -8,18 +8,16 @@ categories: Registration,Stitching
 description: test description
 ---
 
-{% capture includecontent %} name = Stitching | software = ImageJ |
-author = Stephan Preibisch | maintainer = Stephan Preibisch  
+{% capture source %} {% include github org="fiji" repo="Stitching"
+source="plugin/Stitching\_Grid.java" %} {% endcapture %} {% include
+sidebox-right name='Stitching' software='ImageJ' author='Stephan
+Preibisch' maintainer='Stephan Preibisch  
 Mark Hiner  
-Curtis Rueden | filename = Stitching\_.jar | source = {% include github
-org='fiji' repo='Stitching' source='plugin/Stitching\_Grid.java' %} |
-released = October 2008 | status = active | category =
-[Stitching](:Category:Stitching "wikilink") | website = [Stephan
-Preibisch's homepage](http://fly.mpi-cbg.de/~preibisch)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %} %Replace% TOC %Replace%
+Curtis Rueden' filename='Stitching\_.jar' source=source
+released='October 2008' status='active'
+category='[Stitching](:Category:Stitching "wikilink")' website='[Stephan
+Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch)' %}{% include
+toc %}
 
 # What is Grid/Collection Stitching?
 

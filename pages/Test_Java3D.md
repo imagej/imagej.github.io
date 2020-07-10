@@ -8,16 +8,12 @@ categories: Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Test Java3D |
-author = Benjamin Schmid | maintainer = Benjamin Schmid | filename =
-[1](http://132.187.25.13/home/imagej/Test_Java3D.jar) | source =
-[2](http://132.187.25.13/home/imagej/Test_Java3D.jar) | released = - |
-latest version = - | status = stable | category =
-[Plugins](:Category:Plugins "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Test Java3D'
+author='Benjamin Schmid' maintainer='Benjamin Schmid'
+filename='[1](http://132.187.25.13/home/imagej/Test_Java3D.jar)'
+source='[2](http://132.187.25.13/home/imagej/Test_Java3D.jar)'
+released='-' version='-' status='stable'
+category='[Plugins](:Category:Plugins "wikilink")' %}
 
 ## Purpose
 

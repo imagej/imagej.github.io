@@ -8,8 +8,8 @@ categories: Git
 description: test description
 ---
 
-%Replace% GitMenu %Replace% Often you want to try some new idea, or work
-on some new feature, without interfering with the master branch. That is
+{% include gitmenu %} Often you want to try some new idea, or work on
+some new feature, without interfering with the master branch. That is
 where topic branches come in. You can easily switch back and forth
 between branches, so that you do not need to contribute a new feature
 with one big "monster" commit.

@@ -47,7 +47,7 @@ one merging event - the opposite, and a gap closing event - where a spot
 disappear for one frame then reappear a bit further. TrackMate is made
 to handle these events, and we will see how.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Starting TrackMate
 
@@ -93,7 +93,7 @@ everything you need will be loaded and displayed. However, if you need
 to change the target file or if it cannot be retrieved, you will have to
 open the TrackMate XML file and edit its 4th line.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## The start panel
 
@@ -134,7 +134,7 @@ inspect for correct parameters, particularly for the segmentation step.
 In this tutorial, the image is so small and parse that we need not
 worrying about it. Press the **Next** button to step forward.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Choosing a detector
 
@@ -166,7 +166,7 @@ know.
 
 In our case, let us just use the **Dog detector**.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## The detector configuration panel
 
@@ -214,7 +214,7 @@ so this is what we enter in the corresponding field. We don't need
 anything else. The **Sub-pixel localization** option adds a very little
 overhead so we can leave it on.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## The detection process
 
@@ -250,7 +250,7 @@ and the segmentation should be over in a few seconds. Typically, this is
 the step that takes the longer. Once the segmentation is done, the
 **Next** button is re-enabled.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Initial spot filtering
 
@@ -306,7 +306,7 @@ ending in having only relevant spots. But with less than 10 000 spots,
 we are very very far from 1 million so we need not to use this trick.
 Leave the threshold bar close to 0 and proceed to the next step.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Selecting a view
 
@@ -334,7 +334,7 @@ When you press the **Next** button, two processes start:
 
 So nothing much. Let's carry on.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Spot filtering
 
@@ -422,7 +422,7 @@ button. TrackMate will retain the spots that satisfy to <u>all</u>
 
 Press **Next** when you are ready to build tracks with these spots.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Selecting a simple tracker
 

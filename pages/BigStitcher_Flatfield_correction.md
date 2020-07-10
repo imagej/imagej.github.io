@@ -50,12 +50,10 @@ You can specify the dark and bright image files by dragging and dropping
 the file, entering the path manually or selecting the file by clicking
 **Browse...**.
 
-{% capture includecontent %} The dark and bright images should be
+{% include sidebox-right content='The dark and bright images should be
 provided as TIFF files. The images should have the same width and height
 as your raw images. If you use 2D flatfield images to correct 3D stacks,
-the same correction will be applied to every slice. {% endcapture %}
-
-{% include info-box content=includecontent %}
+the same correction will be applied to every slice.' %}
 
 Furthermore, you can **set the correction active**. Use this to activate
 or deactivate the flatfield correction to compare results.
@@ -70,12 +68,10 @@ the corrected images. If you with to change the correction settings, you
 can click through the dialog once more, e.g. to deactivate the
 correction.
 
-{% capture includecontent %} Since we calculate the correction
+{% include sidebox-right content='Since we calculate the correction
 on-the-fly, it will slow subsequent processing steps. If you plan on
 doing flatfield correction, we advise to first load the data virtually,
 apply the correction and then, if you are content with the results,
-re-save as HDF5 to "burn-in" the correction. {% endcapture %}
-
-{% include info-box content=includecontent %}
+re-save as HDF5 to "burn-in" the correction.' %}
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")

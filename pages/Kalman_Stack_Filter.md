@@ -8,18 +8,13 @@ categories: Filtering,Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Kalman Stack
-Filter | author = Christopher Philip Mauer | filename =
-Kalman\_Stack\_Filter.class | source =
-[Kalman\_Stack\_Filter.java](https://imagej.net/plugins/download/Kalman_Stack_Filter.java)
-| released = 23 May 2003 | latest version = 17 November 2006 | status =
-stable (not yet in fiji update) | category =
-[Filtering](:Category:Filtering "wikilink") | website =
-[1](https://imagej.net/plugins/kalman.html)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Kalman Stack Filter'
+author='Christopher Philip Mauer' filename='Kalman\_Stack\_Filter.class'
+source='[Kalman\_Stack\_Filter.java](https://imagej.net/plugins/download/Kalman_Stack_Filter.java)'
+released='23 May 2003' version='17 November 2006' status='stable (not
+yet in fiji update)'
+category='[Filtering](:Category:Filtering "wikilink")'
+website='[1](https://imagej.net/plugins/kalman.html)' %}
 
 ## Purpose
 

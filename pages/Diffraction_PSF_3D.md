@@ -8,18 +8,13 @@ categories: Plugins,Deconvolution
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Diffraction PSF
-3D | author = Bob Dougherty | filename =
-[Diffraction\_PSF\_3D.class](http://www.optinav.info/download/Diffraction_PSF_3D.class)
-| source =
-[Diffraction\_PSF\_3D.java](http://www.optinav.info/download/Diffraction_PSF_3D.java)
-| released = 2 May 2005 | latest version = 6 June 2005 | status = stable
-| category = [Deconvolution](:Category:Deconvolution "wikilink") |
-website = [1](http://www.optinav.info/Diffraction-PSF-3D.htm)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Diffraction PSF 3D'
+author='Bob Dougherty'
+filename='[Diffraction\_PSF\_3D.class](http://www.optinav.info/download/Diffraction_PSF_3D.class)'
+source='[Diffraction\_PSF\_3D.java](http://www.optinav.info/download/Diffraction_PSF_3D.java)'
+released='2 May 2005' version='6 June 2005' status='stable'
+category='[Deconvolution](:Category:Deconvolution "wikilink")'
+website='[1](http://www.optinav.info/Diffraction-PSF-3D.htm)' %}
 
 ## Purpose
 

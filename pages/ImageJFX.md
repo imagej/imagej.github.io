@@ -8,15 +8,16 @@ categories: Related Software
 description: test description
 ---
 
-{% capture includecontent %} name = ImageJFX | software = ImageJ |
-author = {% include person content='cmongis' %} | maintainer = {%
-include person content='cmongis' %} | source = {% include github
-content='org = cmongis | repo = imagejfx' %} | status = dormant |
-category = | website = http://www.imagejfx.net/
+{% capture author %} {% include person content="cmongis" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="cmongis" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %} The
+{% capture source %} {% include github org="cmongis" repo="imagejfx" %}
+{% endcapture %} {% include sidebox-right name='ImageJFX'
+software='ImageJ' author=author maintainer=maintainer source=source
+status='dormant' category='' website='http://www.imagejfx.net/' %}The
 [ImageJFX](http://www.imagejfx.net/) project aims to create a new user
 interface for [ImageJ](ImageJ "wikilink") in order to ease scientific
 image analysis. While keeping the core components of ImageJ, ImageJFX

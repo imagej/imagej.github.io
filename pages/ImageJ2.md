@@ -12,32 +12,29 @@ description: test description
 
 <div style="clear: right; float: right">
 
-{% capture includecontent %} float=right | text=
+{% include sidebox-right float='right' text='
 
 <h2>
 
-ImageJ2's Mission
+ImageJ2"s Mission
 
 </h2>
 
-  - **Design** the next generation of ImageJ, driven by the needs of the
-    community.
-  - **Collaborate** across organizations, fostering open development
+  - """Design""" the next generation of ImageJ, driven by the needs of
+    the community.
+  - """Collaborate""" across organizations, fostering open development
     through sharing and reuse.
-  - **Broaden** ImageJ's usefulness and relevance across many
+  - """Broaden""" ImageJ"s usefulness and relevance across many
     disciplines of the scientific community.
-  - **Maintain** backwards compatibility with existing ImageJ
+  - """Maintain""" backwards compatibility with existing ImageJ
     functionality.
-  - **Unify** online resources to a central location for the ImageJ
+  - """Unify""" online resources to a central location for the ImageJ
     community.
-  - **Lead** ImageJ development with a clear vision.
+  - """Lead""" ImageJ development with a clear vision.
 
 See also [these presentation slides about
-ImageJ](https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/#/4).
-
-{% endcapture %}
-
-{% include sidebox-right content=includecontent %}
+ImageJ](https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/#/4).'
+%}
 
 </div>
 
@@ -56,7 +53,7 @@ The [Fiji](Fiji "wikilink") distribution of ImageJ has shipped with beta
 versions of ImageJ2 for quite some time, so you may already be familiar
 with some of ImageJ2's features—some of which, such as the
 [Updater](Updater "wikilink") and [Launcher](Launcher "wikilink"), were
-originally developed as part of Fiji. %Replace% TOC %Replace%
+originally developed as part of Fiji. {% include toc %}
 
 ## Features of ImageJ2
 
@@ -178,15 +175,8 @@ ImageJ2 is funded from a variety of sources. See the
 
 ## Publications
 
-  - 
-{% capture includecontent %} ImageJ2 {% endcapture %}
-
-{% include publication content=includecontent %}
-
-  - 
-{% capture includecontent %} Ecosystem {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='ImageJ2' %}
+  - {% include publication content='Ecosystem' %}
 
 For the moment, we suggest using "The ImageJ ecosystem" paper for
 citations. But we recommend both of the above for learning about ImageJ2

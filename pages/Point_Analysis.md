@@ -8,15 +8,13 @@ categories: Tutorials,Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Point Analysis |
-maintainer = Simon Klein | author = Simon Klein | source = {% include
-github org='kleinsimon' repo='PointAnalysis' %} | released = 29/12/2016
-| latest version = 29/12/2016 | status = Alpha | category =
-[:Category:Plugins](:Category:Plugins "wikilink") | website =
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="kleinsimon"
+repo="PointAnalysis" %} {% endcapture %} {% include sidebox-right
+software='ImageJ' name='Point Analysis' maintainer='Simon Klein'
+author='Simon Klein' source=source released='29/12/2016'
+version='29/12/2016' status='Alpha'
+category='[:Category:Plugins](:Category:Plugins "wikilink")' website=''
+%}
 
 PointAnalysis
 

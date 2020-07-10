@@ -14,7 +14,7 @@ done about design issues of the originally published ImgLib (which was
 already the 6th generation). Unfortunately, these improvements were not
 possible in a fully backwards-compatible manner.
 
-%Replace% TOC %Replace%
+{% include toc %}
 
 ### Summary
 
@@ -75,7 +75,7 @@ by *Iterable(Real)Interval.cursor()* and
 *Iterable(Real)Interval.localizingCursor()*. Fig. 2 shows a UML-diagram
 visualizing the interface inheritance graph.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Where is the LocalizableByDimCursor?
 

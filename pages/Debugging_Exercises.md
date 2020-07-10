@@ -8,14 +8,11 @@ categories:
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %}
-
-{% capture includecontent %} This page presents exercises for *software
-developers* to use for debugging ImageJ.  
-If you are a *user* looking to troubleshoot issues, see the
-[Troubleshooting](Troubleshooting "wikilink") page. {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include develop-menu content='tutorials' %} {% include sidebox-right
+content='This page presents exercises for ""software developers"" to use
+for debugging ImageJ.  
+If you are a ""user"" looking to troubleshoot issues, see the
+[Troubleshooting](Troubleshooting "wikilink") page.' %}
 
 [Debugging](Debugging "wikilink") is the art of determining the cause
 and/or location of a problem. The purpose of this guide is to provide
@@ -171,14 +168,10 @@ To investigate further, try to complete the following debugging steps:
 6.  In the *Variables* window, look at the value of the Object variable
 7.  'resume' execution until the program completes
 
-{% capture includecontent %} Now that you've walked through the program,
-do you know *why* we got a `NullPointerException`? | \> Although
-`makeAThing` does create an new Object, that Object isn't actually
-returned by the method.
-
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
+{% include expandingsidebox-right content='Now that you"ve walked
+through the program, do you know ""why"" we got a
+`NullPointerException`? | \> Although `makeAThing` does create an new
+Object, that Object isn"t actually returned by the method. ' %}
 
 **Takeaway**
 
@@ -216,14 +209,10 @@ Try setting a breakpoint on the conditional line:
 if (index < 0 || index >= list.size()) {
 ```
 
-{% capture includecontent %} Try debugging now, using *Resume* any time
-a breakpoint is encountered. How many times do you hit a breakpoint? |
-\>Three times. This is because we're debugging inside a method that is
-used multiple times in our program.
-
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
+{% include expandingsidebox-right content='Try debugging now, using
+""Resume"" any time a breakpoint is encountered. How many times do you
+hit a breakpoint? | \>Three times. This is because we"re debugging
+inside a method that is used multiple times in our program. ' %}
 
 Since we are only interested in the `processElementAtIndex` method when
 a problem actually occurs, let's try something different:
@@ -265,15 +254,12 @@ To complete this exercise:
 2.  Write a 2nd expression that evaluates to the value of the `index`
     variable
 
-{% capture includecontent %} Once you've evaluated these expressions,
-can you tell what went wrong in the program? | \>We asked for a list of
-size 100,000 but a list of size 99,999 came back. Since we used
-hard-coded indices, instead of size-relative (e.g. `list.size()-1`), a
-method was called wanting to access a non-existent element.
-
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
+{% include expandingsidebox-right content='Once you"ve evaluated these
+expressions, can you tell what went wrong in the program? | \>We asked
+for a list of size 100,000 but a list of size 99,999 came back. Since we
+used hard-coded indices, instead of size-relative (e.g.
+`list.size()-1`), a method was called wanting to access a non-existent
+element. ' %}
 
 **Takeaways**
 
@@ -328,17 +314,14 @@ Then try the following:
     the error message.
 4.  Try debugging
 
-{% capture includecontent %} Was there a problem with the current object
-when/if your breakpoint is hit? | \>If there was, try it again\! In this
-exercise, the "broken" object index is non-deterministic - so it is
-unlikely to be exactly the same index two runs in a row. \>If the broken
-object appears later the second time, your breakpoint will hit but the
-current object will likely be fine. \>If the "broken" object appears
-earlier the second time, your breakpoint won't be hit at all.
-
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
+{% include expandingsidebox-right content='Was there a problem with the
+current object when/if your breakpoint is hit? | \>If there was, try it
+again\! In this exercise, the "broken" object index is non-deterministic
+- so it is unlikely to be exactly the same index two runs in a row. \>If
+the broken object appears later the second time, your breakpoint will
+hit but the current object will likely be fine. \>If the "broken" object
+appears earlier the second time, your breakpoint won"t be hit at all. '
+%}
 
 Using `count`-based conditional breakpoints can be very useful if the
 error is deterministic. In this case we need to try something different.
@@ -362,12 +345,8 @@ value. Try it out:
 Were you able to get the breakpoint to stop in the loop only when a
 problem is encountered?
 
-{% capture includecontent %} What was suspicious about the object at
-that index? | \>The object was `null`.
-
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
+{% include expandingsidebox-right content='What was suspicious about the
+object at that index? | \>The object was `null`. ' %}
 
 **Takeaways**
 
@@ -482,23 +461,15 @@ our plugin:
 3.  In Eclipse, when the breakpoint is hit, inspect the value of the
     `consoleService` field
 
-{% capture includecontent %} What is the class of `consoleService`? |
-\>It's a `LegacyConsoleService`.
+{% include expandingsidebox-right content='What is the class of
+`consoleService`? | \>It"s a `LegacyConsoleService`. ' %}
 
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
-
-{% capture includecontent %} Extra credit: why did this plugin work when
-we ran its `main` method, but not in ImageJ? | \>The `Context` in the
-`main` method is built with only one `ConsoleService` implementation
-available - `DefaultConsoleService`. In the full `Context` used in
-ImageJ, a higher-priority `LegacyConsoleService` overrides the
-`DefaultConsoleService`.
-
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
+{% include expandingsidebox-right content='Extra credit: why did this
+plugin work when we ran its `main` method, but not in ImageJ? | \>The
+`Context` in the `main` method is built with only one `ConsoleService`
+implementation available - `DefaultConsoleService`. In the full
+`Context` used in ImageJ, a higher-priority `LegacyConsoleService`
+overrides the `DefaultConsoleService`. ' %}
 
 **Takeaways**
 
@@ -581,8 +552,8 @@ the failing commit:
 After marking the last commit good or bad, bisect will print out the
 first bad commit. You can use `git bisect reset` to finish bisecting.
 
-{% capture includecontent %} What is the first bad commit that you
-identified with `git bisect`? |
+{% include expandingsidebox-right content='What is the first bad commit
+that you identified with `git bisect`? |
 
     commit 3102e5620a61978b52a733a0733c83899aeddc66
     Author: Mark Hiner <hinerm@gmail.com>
@@ -590,9 +561,7 @@ identified with `git bisect`? |
     
         E5: More maths plz!
 
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
+' %}
 
 **Takeaways**
 
@@ -681,17 +650,13 @@ find the `E6SleuthingSilence` class. Whatever follows that entry is at
 the top of the stack, and thus what was being processed on that thread
 when you took the stack trace.
 
-{% capture includecontent %} What method did you identify as being last
-executed before the crash?
+{% include expandingsidebox-right content='What method did you identify
+as being last executed before the crash?
 |\>`net.imagej.trouble.hidden.NotALoop.dontLoopForever` is what you
-should find. Note that there is some hand-waving in this exercise: it's
+should find. Note that there is some hand-waving in this exercise: it"s
 possible that this method could have returned and a subsequent method
 caused the actual crash\! But we at least have gained information, in
-that we know the `dontLoopForever` method *was* executed.
-
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
+that we know the `dontLoopForever` method ""was"" executed. ' %}
 
 **Takeaways**
 
@@ -758,12 +723,8 @@ To acquire the heap dump:
     of the heap dump
 4.  Sort by Size
 
-{% capture includecontent %} What class is occupying the majority of
-memory? |\>`java.lang.Float[]`
-
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
+{% include expandingsidebox-right content='What class is occupying the
+majority of memory? |\>`java.lang.Float[]` ' %}
 
 So now we know what's taking up all of our memory - but we don't
 actually know why. Although `jvisualvm` does have the tools to
@@ -791,17 +752,13 @@ the selected class alive. Because we're investigating memory leaks we
 can typically exclude weak and soft references, as these should be
 released before an `OutOfMemoryError` occurs.
 
-{% capture includecontent %} Expand the classes in the "merge shortest
-paths" tab until you get to the first child of the `ObjectMaker`
-class.  
-What is the child's variable name and class? |\>It is a
-`java.util.HashSet` with the name **cache**. `ObjectMaker` seems to
+{% include expandingsidebox-right content='Expand the classes in the
+"merge shortest paths" tab until you get to the first child of the
+`ObjectMaker` class.  
+What is the child"s variable name and class? |\>It is a
+`java.util.HashSet` with the name """cache""". `ObjectMaker` seems to
 store the `Float[]` instances in a set, creating strong references that
-prevent the arrays from being garbage collected.
-
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
+prevent the arrays from being garbage collected. ' %}
 
 **Tip:** In this exercise we acquired the heap dump manually via
 `jvisualvm`. When you right-click on an application you can also set
@@ -858,24 +815,16 @@ tool.
 
 ![Profiling Results](/images/pages/E8ProfilingResults.PNG "Profiling Results")"
 
-{% capture includecontent %} Which method takes more time? *doStuff* or
-*doMoreStuff*? |Answer - **doStuff**. Exact timing will vary per
-computer, but in our case *doStuff* took 954 ms while *doMoreStuff* took
-710 ms.
+{% include expandingsidebox-right content='Which method takes more time?
+""doStuff"" or ""doMoreStuff""? |Answer - """doStuff""". Exact timing
+will vary per computer, but in our case ""doStuff"" took 954 ms while
+""doMoreStuff"" took 710 ms. ' %}
 
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
-
-{% capture includecontent %} Are the number of invocations/function
-calls of both functions same ? |Yes. This number will change based on
-the length of profiling, but in this case we see both methods were
-called 83,573,448 times - so the difference in timing is truly due to
-length of method execution.
-
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
+{% include expandingsidebox-right content='Are the number of
+invocations/function calls of both functions same ? |Yes. This number
+will change based on the length of profiling, but in this case we see
+both methods were called 83,573,448 times - so the difference in timing
+is truly due to length of method execution. ' %}
 
 **Takeaways**
 

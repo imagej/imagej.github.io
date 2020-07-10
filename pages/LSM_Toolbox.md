@@ -8,7 +8,8 @@ categories: Plugins,Import-Export
 description: test description
 ---
 
-%Replace% FormatsMenu %Replace% The LSM Toolbox provides plugins for
+{% include menu-formats %}{% include component-stats
+content=':sc.fiji:LSM\_Toolbox' %}The LSM Toolbox provides plugins for
 working with Carl Zeiss LSM510 .lsm files.
 
 ## Usage

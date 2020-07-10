@@ -8,13 +8,9 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = Minimum/Maximum/Median | software =
-ImageJ | author = Benjamin Schmid | maintainer = Benjamin Schmid |
-filename = VIB\_.jar | source = VIB\_.jar | status = beta
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right name='Minimum/Maximum/Median' software='ImageJ'
+author='Benjamin Schmid' maintainer='Benjamin Schmid'
+filename='VIB\_.jar' source='VIB\_.jar' status='beta' %}
 
 ## Purpose
 

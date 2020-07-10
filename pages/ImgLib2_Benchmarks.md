@@ -8,11 +8,8 @@ categories:
 description: test description
 ---
 
-%Replace% ImgLibMenu %Replace% %Replace% TOC %Replace% {% capture
-includecontent %} This page was last updated 2016 May 3. {% endcapture
-%}
-
-{% include info-box content=includecontent %}
+{% include imglibmenu %}{% include toc %}{% include sidebox-right
+content='This page was last updated 2016 May 3.' %}
 
 This page compares the time performance of image processing operations
 using raw byte arrays, [ImageJ 1.x](ImageJ_1.x "wikilink") and
@@ -113,8 +110,8 @@ Planar, Raw 9, 15, 15, 12, 12, 4 5, 5, 9, 8, 5, 0 0, 0, 2, 1, 0, 0 0, 0,
 ImageJ 1.x, ImgLib2 Array, ImgLib2 Cell, ImgLib2 ImagePlus, ImgLib2
 Planar, Raw 10, 42, 92, 39, 40, 7 5, 35, 78, 33, 30, 5 2, 2, 79, 2, 3, 3
 2, 2, 78, 2, 3, 3 2, 2, 78, 2, 2, 3 1, 2, 79, 3, 3, 3 2, 1, 75, 2, 2, 4
-1, 2, 79, 2, 3, 3 2, 2, 78, 4, 2, 3 1, 3, 83, 3, 3, 4 </pLines>
-%Replace% Clear %Replace%
+1, 2, 79, 2, 3, 3 2, 2, 78, 4, 2, 3 1, 3, 83, 3, 3, 4 </pLines> {%
+include clear %}
 
 <div style="float: left">
 
@@ -132,7 +129,7 @@ Mpx, 9, 18, 36, 17, 17, 5 10 Mpx, 9, 25, 38, 23, 21, 5 13 Mpx, 9, 28,
 Planar, Raw 1 Mpx, 0, 0, 2, 0, 0, 1 4 Mpx, 0, 0, 15, 1, 0, 1 7 Mpx, 1,
 0, 21, 2, 0, 0 10 Mpx, 1, 0, 30, 1, 1, 1 13 Mpx, 1, 1, 39, 1, 2, 1 16
 Mpx, 1, 1, 52, 1, 2, 2 19 Mpx, 1, 1, 65, 1, 2, 2 22 Mpx, 2, 1, 70, 2, 2,
-2 25 Mpx, 1, 3, 83, 3, 3, 4 </pLines> %Replace% Clear %Replace%
+2 25 Mpx, 1, 3, 83, 3, 3, 4 </pLines> {% include clear %}
 
 ## Expensive operation results
 
@@ -154,7 +151,7 @@ Planar, Raw 1161, 1171, 1332, 1126, 1162, 1277 1052, 1062, 1210, 1066,
 1026, 978 1027, 1041, 1137, 1037, 1037, 997 1017, 1034, 1096, 1031,
 1058, 984 978, 1049, 1079, 1060, 1042, 983 999, 1040, 1072, 1046, 1030,
 989 993, 1071, 1100, 1047, 1042, 983 989, 1037, 1061, 1030, 1041, 973
-</pLines> %Replace% Clear %Replace%
+</pLines> {% include clear %}
 
 <div style="float: left">
 
@@ -175,5 +172,5 @@ Planar, Raw 1 Mpx, 38, 43, 47, 43, 46, 40 4 Mpx, 165, 169, 173, 157,
 180, 167 7 Mpx, 286, 292, 298, 284, 299, 279 10 Mpx, 390, 435, 423, 412,
 420, 397 13 Mpx, 518, 589, 529, 535, 547, 512 16 Mpx, 646, 655, 668,
 652, 661, 636 19 Mpx, 764, 779, 799, 775, 774, 745 22 Mpx, 866, 913,
-922, 911, 909, 859 25 Mpx, 989, 1037, 1061, 1030, 1041, 973 </pLines>
-%Replace% Clear %Replace%
+922, 911, 909, 859 25 Mpx, 989, 1037, 1061, 1030, 1041, 973 </pLines> {%
+include clear %}

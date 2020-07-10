@@ -8,17 +8,18 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = Script Interpreter | software =
-ImageJ | author = {% include person content='Schindelin' %}, {% include
-person content='Rueden' %} | maintainer = {% include person
-content='Rueden' %} | source = {% include github org='scijava'
-repo='script-editor' source='org/scijava/ui/swing/script' %} | released
-= 8 Apr 2016 | status = active
+{% capture author %} {% include person content="Schindelin" %}, {%
+include person content="Rueden" %} {% endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Rueden" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %} %Replace% TOC %Replace%
-The **Script Interpreter** is a
+{% capture source %} {% include github org="scijava"
+repo="script-editor" source="org/scijava/ui/swing/script" %} {%
+endcapture %} {% include sidebox-right name='Script Interpreter'
+software='ImageJ' author=author maintainer=maintainer source=source
+released='8 Apr 2016' status='active' %}{% include toc %} The **Script
+Interpreter** is a
 [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)
 allowing scripting from the command line.
 

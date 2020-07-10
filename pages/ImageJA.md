@@ -8,33 +8,31 @@ categories: Software
 description: test description
 ---
 
-{% include project content='ImageJ1' %} {% capture includecontent %}
-software = ImageJA | name = ImageJA | author = {% include person
-content='Rasband' %}, {% include person content='Schindelin' %}, {%
-include person content='Albertcardona' %}, et al | maintainer = [Travis
-CI](Travis_CI "wikilink") | filename = Newer versions [on Maven
+{% include project content='ImageJ1' %} {% capture author %} {% include
+person content="Rasband" %}, {% include person content="Schindelin" %},
+{% include person content="Albertcardona" %}, et al {% endcapture %}
+
+{% capture source %} {% include github org="imagej" repo="ImageJA"
+label="Git repository" %} {% endcapture %} {% include sidebox-right
+software='ImageJA' name='ImageJA' author=author maintainer='[Travis
+CI](Travis_CI "wikilink")' filename='Newer versions [on Maven
 Central](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22net.imagej%22%20AND%20a%3A%22ij%22)  
 Older versions [in ImageJ Maven
-repository](http://maven.imagej.net/content/repositories/releases/net/imagej/ij/)
-| source = {% include github org='imagej' repo='ImageJA' label='Git' %}
-| released = 17/03/2007 | latest version = auto-updated | status =
-auto-maintained
-
-{% endcapture %}
-
-{% include info-box content=includecontent %} ImageJA is a project that
-provides a clean [Git](Git "wikilink") history of the [ImageJ
-1.x](ImageJ_1.x "wikilink") project, with a proper 'pom.xml' file so
-that it can be used with [Maven](Maven "wikilink") without hassles.
+repository](http://maven.imagej.net/content/repositories/releases/net/imagej/ij/)'
+source=source released='17/03/2007' version='auto-updated'
+status='auto-maintained' %}ImageJA is a project that provides a clean
+[Git](Git "wikilink") history of the [ImageJ 1.x](ImageJ_1.x "wikilink")
+project, with a proper 'pom.xml' file so that it can be used with
+[Maven](Maven "wikilink") without hassles.
 
 ## Why ImageJA?
 
 The [ImageJ1](ImageJ1 "wikilink") project, developed by {% include
 person content='Rasband' %}, lives in the {% include github org='imagej'
-repo='imagej1' label='imagej/imagej1' %} on [GitHub](GitHub "wikilink").
-The `imagej1` repository uses the Ant build system. Changes are pushed
-(at most) once per day, with a corresponding datestamp. This scheme has
-some drawbacks:
+repo='imagej1' label='imagej/imagej1 repository' %} on
+[GitHub](GitHub "wikilink"). The `imagej1` repository uses the Ant build
+system. Changes are pushed (at most) once per day, with a corresponding
+datestamp. This scheme has some drawbacks:
 
   - ImageJ1 artifacts cannot be published easily to public repositories
     for use as a dependency downstream.
@@ -61,8 +59,8 @@ something has changed, the job performs the following actions:
       - Sources are placed in `src/main/java`.
       - A `pom.xml` is added.
 4.  Commits and pushes the result to the `master` branch of the {%
-    include github org='imagej' repo='ImageJA' label='imagej/ImageJA' %}
-    on [GitHub](GitHub "wikilink").
+    include github org='imagej' repo='ImageJA' label='imagej/ImageJA
+    repository' %} on [GitHub](GitHub "wikilink").
 
 The push triggers the followup
 [job](https://travis-ci.org/imagej/ImageJA), which builds and deploys

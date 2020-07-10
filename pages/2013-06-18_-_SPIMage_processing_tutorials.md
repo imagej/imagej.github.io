@@ -10,16 +10,17 @@ description: test description
 
 As part of Fiji's sister project -
 [**OpenSPIM**](http://openspim.org)<ref name="Pitrone2013"> {% capture
-includecontent %} author = Pitrone P. G., Schindelin J., Stuyvenberg L.,
-Preibisch S., Weber M.; Eliceiri K. W., Huisken J., Tomancak P. |
-OpenSPIM: an open access light sheet microscopy platform | journal =
-Nature Methods | volume = | number = | pages = | year = 2013 |url =
+includecontent %} journal | author = Pitrone P. G., Schindelin J.,
+Stuyvenberg L., Preibisch S., Weber M.; Eliceiri K. W., Huisken J.,
+Tomancak P. | title = OpenSPIM: an open access light sheet microscopy
+platform | journal = Nature Methods | volume = | number = | pages = |
+year = 2013 |url =
 http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2507.html
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref> - we have
-assembled detailed step-by-step tutorials for [**SPIMage
+{% include cite content=includecontent %} </ref> - we have assembled
+detailed step-by-step tutorials for [**SPIMage
 processing**](http://openspim.org/Operation#Data_processing).
 
   - We start by defining [**System

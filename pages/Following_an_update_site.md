@@ -8,8 +8,8 @@ categories: Tutorials
 description: test description
 ---
 
-%Replace% UpdateSitesWarning %Replace% %Replace% UpdateSitesMenu
-%Replace%
+{% include updatesiteswarning-sidebox-right %} {% include
+menu-updatesites %}
 
 ## Introduction
 
@@ -48,16 +48,14 @@ sites will now show up:
 
 ![AddPluginSite-5.jpg](/images/pages/AddPluginSite-5.jpg "AddPluginSite-5.jpg")"
 
-{% capture includecontent %} If an entry's action is **Update It**, that
-means it is changing an existing plugin. This action is dangerous and
-can break other plugins, or ImageJ itself.  
+{% include warning-sidebox-right content='If an entry"s action is
+"""Update It""", that means it is changing an existing plugin. This
+action is dangerous and can break other plugins, or ImageJ itself.  
 Ideally the maintainers of these sites would work with the core ImageJ
 maintainers to centralize important plugins.  
 When you find plugin conflicts between update sites, you can greatly
 help the community by [starting a discussion](Help "wikilink") with the
-maintainers\! {% endcapture %}
-
-{% include warning-box content=includecontent %}
+maintainers\! ' %}
 
 ## Choose and download plugins
 
@@ -72,12 +70,10 @@ Changes* button to download your updates.
 
 ## Verify install
 
-{% capture includecontent %} An update is not finalized until
-**restarting the application.** After initiating an update, **do not
-modify your ImageJ installation manually** until after restarting at
-least once. {% endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='An update is not finalized
+until """restarting the application.""" After initiating an update,
+"""do not modify your ImageJ installation manually""" until after
+restarting at least once. ' %}
 
 Restart ImageJ as instructed to finish the install. Check to see that
 the plugin was installed:

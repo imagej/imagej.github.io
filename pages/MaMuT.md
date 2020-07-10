@@ -8,20 +8,20 @@ categories: Plugins,Citable
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | name = MaMuT | logo =
-![MaMuT\_logo-256x256.png](MaMuT_logo-256x256.png
-"MaMuT_logo-256x256.png") | maintainer = {% include person
-content='JeanYvesTinevez' %} | author = {% include person
-content='JeanYvesTinevez' %}, {% include person content='Pietzsch' %} |
-source = {% include github org='fiji' repo='MaMuT' %} | status =
-v0.27.0, active | released = 06/01/2015 | category =
-[Segmentation](:Category:Segmentation "wikilink"),
-[Tracking](:Category:Tracking "wikilink"),
-[:Category:Plugins](:Category:Plugins "wikilink")
-
+{% capture maintainer %} {% include person content="JeanYvesTinevez" %}
 {% endcapture %}
 
-{% include info-box content=includecontent %}
+{% capture author %} {% include person content="JeanYvesTinevez" %}, {%
+include person content="Pietzsch" %} {% endcapture %}
+
+{% capture source %} {% include github org="fiji" repo="MaMuT" %} {%
+endcapture %} {% include sidebox-right software='Fiji' name='MaMuT'
+logo='![MaMuT\_logo-256x256.png](MaMuT_logo-256x256.png
+"MaMuT_logo-256x256.png")' maintainer=maintainer author=author
+source=source status='v0.27.0, active' released='06/01/2015'
+category='[Segmentation](:Category:Segmentation "wikilink"),
+[Tracking](:Category:Tracking "wikilink"),
+[:Category:Plugins](:Category:Plugins "wikilink")' %}
 
 '''A Fiji plugin for the annotation of massive, multi-view data. '''
 
@@ -32,10 +32,7 @@ it.
 
 ## Publication.
 
-  - 
-{% capture includecontent %} MaMuT {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='MaMuT' %}
 
 ## Presentation.
 

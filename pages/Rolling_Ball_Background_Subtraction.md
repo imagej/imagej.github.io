@@ -8,18 +8,14 @@ categories: Plugins,Filtering
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Rolling Ball
-Background Subtraction | author = Michael Castle and Janice Keller
-(Mental Health Research Institute, University of Michigan) | filename =
-Rolling\_Ball\_Background.class | source =
-[Rolling\_Ball\_Background.java](https://imagej.net/plugins/download/Rolling_Ball_Background.java)
-| released = 22 November 2007 | status = first version | category =
-[Filtering](:Category:Filtering "wikilink") | website =
-[1](https://imagej.net/plugins/rolling-ball.html)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Rolling Ball Background
+Subtraction' author='Michael Castle and Janice Keller (Mental Health
+Research Institute, University of Michigan)'
+filename='Rolling\_Ball\_Background.class'
+source='[Rolling\_Ball\_Background.java](https://imagej.net/plugins/download/Rolling_Ball_Background.java)'
+released='22 November 2007' status='first version'
+category='[Filtering](:Category:Filtering "wikilink")'
+website='[1](https://imagej.net/plugins/rolling-ball.html)' %}
 
 ## Documentation
 

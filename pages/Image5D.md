@@ -8,16 +8,15 @@ categories: Plugins,Visualization
 description: test description
 ---
 
-This page supersedes the [original Image5D
+{% include component-stats content=':sc.fiji:Image\_5D' %}This page
+supersedes the [original Image5D
 page](https://imagej.net/plugins/image5d.html) from the ImageJ 1.x
 documentation.
 
-{% capture includecontent %} Please consider using the built-in
+{% include sidebox-right content='Please consider using the built-in
 [hyperstacks](https://imagej.net/docs/guide/146-8.html) functionality in
 ImageJ, since it is newer and more well-integrated than this old Image5D
-plugin. {% endcapture %}
-
-{% include info-box content=includecontent %}
+plugin.' %}
 
 ## Installation
 
@@ -105,7 +104,7 @@ de Marne, France.
 ## History
 
 See the {% include github org='imagej' repo='image5d'
-path='doc/Image5D-changes.txt' label='release' %} for details on
+path='doc/Image5D-changes.txt' label='release notes' %} for details on
 changes.
 
 [Category:Plugins](Category:Plugins "wikilink")

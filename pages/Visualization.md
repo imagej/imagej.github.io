@@ -8,13 +8,10 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} See
+{% include bigsidebox-right content='See
 [:Category:Visualization](:Category:Visualization "wikilink") for pages
-about scientific visualization. {% endcapture %}
-
-{% include big-notice content=includecontent %}
-
-{% include learn content='techniques' %}[Scientific
+about scientific visualization.' %} {% include learn
+content='techniques' %}[Scientific
 visualization](wikipedia:Scientific_visualization "wikilink") is a set
 of techniques for graphically illustrating scientific data, enabling
 scientists to better understand, illustrate, and glean insight from
@@ -284,7 +281,7 @@ above 'big data' visualization tools.
 <td><p>A tool for manual, interactive, landmark-based deformable image alignment.</p></td>
 <td><ul>
 <li>Uses <a href="https://imagej.net/BigDataViewer">BigDataViewer</a> for visualization and navigation</li>
-<li>Uses a <a href="wikipedia:Thin_plate_spline" title="wikilink">Thin Plate Spline</a> implemented {% include github org='saalfeldlab' repo='bigwarp' label='in' %} to build a deformation from point correspondences</li>
+<li>Uses a <a href="wikipedia:Thin_plate_spline" title="wikilink">Thin Plate Spline</a> implemented {% include github org='saalfeldlab' repo='bigwarp' label='in Java' %} to build a deformation from point correspondences</li>
 <li>Enables landmark pair placement and displays the effects of the warp on-the-fly</li>
 </ul></td>
 <td><figure>

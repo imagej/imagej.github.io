@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-%Replace% WIP %Replace%
+{% include wip %}
 
 <div style="text-align:center;">
 

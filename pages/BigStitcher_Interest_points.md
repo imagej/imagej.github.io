@@ -164,11 +164,9 @@ results will be previewed in the ImageJ-window. You can interactively go
 through the Z-stack and preview the detected interest points. To start
 the detection process in all selected views, click "Done".
 
-{% capture includecontent %} The interest point detection can take a
-long time, especially if you do little or no downsampling. Have a look
-at the log widow for updates on the progress. {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='The interest point detection can take
+a long time, especially if you do little or no downsampling. Have a look
+at the log widow for updates on the progress.' %}
 
 ![BigStitcher\_Register\_4\_1.png](BigStitcher_Register_4_1.png
 "BigStitcher_Register_4_1.png")![BigStitcher\_Register\_4\_2.png](BigStitcher_Register_4_2.png

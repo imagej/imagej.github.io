@@ -13,6 +13,8 @@ description: test description
 This page provides user documentation for the utility functions of the
 [CIP](CIP "wikilink") package
 
+{% include cip content='Navigation' %}
+
 # **measure**
 
 <span style="font-size:110%">**Description**</span>  

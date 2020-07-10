@@ -38,7 +38,7 @@ and that the *previous* button is disabled at the bottom. Notice also
 that the color scales for both spot and track features display a dummy
 range.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Creating spots one by one
 
@@ -160,7 +160,7 @@ branches, at some point, you have to decide what way you want to go).
 You should get - rather quickly - something like the picture on the
 right.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ![](TrackMate_ManualTracking_2.png)
 
@@ -175,7 +175,7 @@ the spots that belong to the right branch, just like you did before.
 These spots will be added to the same track, and should get a inverted
 Y-branch like pictured on the right.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Tracks are updated live
 
@@ -191,7 +191,7 @@ The same is valid when you delete a link or a spot. For instance, let's
 create 3 tracks out of our inverted Y. Go to the frame 9, and delete the
 spot that is at the crossing. You now have 3 tracks.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Track and spot features are updated live
 
@@ -217,7 +217,7 @@ and it will be properly repainted. On the right you can see what I get
 if I pick the feature *Y* for spot coloring, and the track index, after
 refreshing.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## The semi-automatic tracking tool
 

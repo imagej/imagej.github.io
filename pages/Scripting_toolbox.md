@@ -11,21 +11,17 @@ description: test description
 {% include learn content='scripting' %}This page is meant to provide
 small code snippets as a starting point for writing scripts.
 
-{% capture includecontent %} message = **See also:**
+{% include sidebox-right message='"""See also:"""
 
   - Language-specific scripting pages in the right-hand menu.
   - [Scripting comparisons](Scripting_comparisons "wikilink") to compare
     and contrast the languages.
   - [Broadly Applicable Routines](BAR "wikilink"), a curated collection
     of snippets.
-  - Albert Cardona's comprehensive [Fiji Jython
+  - Albert Cardona"s comprehensive [Fiji Jython
     tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/) (please
     note that it is better idea to contribute tutorials to the
-    ImageJ/Fiji wiki directly).
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+    ImageJ/Fiji wiki directly).' %}
 
 **Note:** To copy the snippets, just double-click somewhere into the
 code. If Javascript is enabled, this will automatically select the

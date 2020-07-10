@@ -8,15 +8,10 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = Blind Analysis Tools | software =
-Fiji | source = [on
-GitHub](https://github.com/ahtsaJ/Blind-Analysis-Tools) | author = Astha
-Jaiswal, Holger Lorenz | maintainer = Astha Jaiswal, Holger Lorenz |
-status = Active
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right name='Blind Analysis Tools' software='Fiji'
+source='[on GitHub](https://github.com/ahtsaJ/Blind-Analysis-Tools)'
+author='Astha Jaiswal, Holger Lorenz' maintainer='Astha Jaiswal, Holger
+Lorenz' status='Active' %}
 
 ## Introduction
 

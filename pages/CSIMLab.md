@@ -8,22 +8,21 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = CSIM Laboratory ImageJ | software =
-Fiji | author = {% include person content='Acsenrafilho' %}
-([1](mailto:acsenrafilho@gmail.com)) | maintainer = {% include person
-content='Acsenrafilho' %} | source = {% include github content='org =
-CSIM-Toolkits | repo = ImageJ | label = GitHub CSIM-ImageJ repository'
-%} | released = February 01<sup>st</sup>, 2015 | latest version =
-February 01<sup>st</sup>, 2015 | status = experimental, active |
-category = [Plugins](:Category:Plugins "wikilink"),
+{% capture author %} {% include person content="Acsenrafilho" %}
+([1](mailto:acsenrafilho@gmail.com)) {% endcapture %}
+
+{% capture maintainer %} {% include person content="Acsenrafilho" %} {%
+endcapture %}
+
+{% capture source %} {% include github org="CSIM-Toolkits" repo="ImageJ"
+label="GitHub CSIM-ImageJ repository" %} {% endcapture %} {% include
+sidebox-right name='CSIM Laboratory ImageJ' software='Fiji'
+author=author maintainer=maintainer source=source released='February
+01<sup>st</sup>, 2015' version='February 01<sup>st</sup>, 2015'
+status='experimental, active'
+category='[Plugins](:Category:Plugins "wikilink"),
 [Filtering](:Category:Filtering "wikilink"),
-[Feature](:Category:Noise_Generator "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-## Purpose
+[Feature](:Category:Noise_Generator "wikilink")' %}== Purpose ==
 
 Promote plugins, macros and scripts created by the Computing in Signal
 and Image in Medicine research group (CSIM). All the code implemented
@@ -31,8 +30,8 @@ here have a specific applications, where are related with the basic
 image analysis such as image filtering, registration, feature extraction
 and others. Please, be free to install our plugins, macros and scripts
 from the ImageJ Updater or even contribute with our codes on GitHub
-repository ({% include github content='org = CSIM-Toolkits | repo =
-ImageJ | label = GitHub CSIM-ImageJ repository' %}).
+repository ({% include github org='CSIM-Toolkits' repo='ImageJ'
+label='GitHub CSIM-ImageJ repository' %}).
 
 ![CSIM Laboratory. See more details about our research group in the web
 site: http://dcm.ffclrp.usp.br/csim](CSIM-logo.png
@@ -92,9 +91,9 @@ more information about this PlugIn.
 ## Source code
 
 The ImageJ plugins source codes are available on GitHub repository: {%
-include github content='org = CSIM-Toolkits | repo = ImageJ | label =
-GitHub-ImageJ source codes' %}. If you want contribute with our
-applications, please enter in contact.
+include github org='CSIM-Toolkits' repo='ImageJ' label='GitHub-ImageJ
+source codes' %}. If you want contribute with our applications, please
+enter in contact.
 
 ## Who we are
 

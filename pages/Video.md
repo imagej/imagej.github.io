@@ -8,9 +8,8 @@ categories: Import-Export
 description: test description
 ---
 
-%Replace% FormatsMenu %Replace% Out of the box, ImageJ has limited
-support for some video formats such as AVI and
-[QuickTime](QuickTime "wikilink").
+{% include menu-formats %}Out of the box, ImageJ has limited support for
+some video formats such as AVI and [QuickTime](QuickTime "wikilink").
 
 ## Plugins
 

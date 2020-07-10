@@ -8,16 +8,18 @@ categories: Plugins,Visualization,Citable
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | name = 3Dscript |
-maintainer = {% include person content='Bene' %} | author = {% include
-person content='Bene' %} | source = {% include github org='bene51'
-repo='3Dscript' %} | status = active | released = January 2019 |
-category = [Visualization](:Category:Visualization "wikilink"),
-[:Category:Plugins](:Category:Plugins "wikilink")
+{% capture maintainer %} {% include person content="Bene" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture author %} {% include person content="Bene" %} {% endcapture
+%}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="bene51" repo="3Dscript" %}
+{% endcapture %} {% include sidebox-right software='Fiji'
+name='3Dscript' maintainer=maintainer author=author source=source
+status='active' released='January 2019'
+category='[Visualization](:Category:Visualization "wikilink"),
+[:Category:Plugins](:Category:Plugins "wikilink")' %}
 
 **3Dscript** - Create high-quality 3D/4D animations using a
 natural-language based syntax
@@ -39,10 +41,7 @@ degrees horizontally ease-in".
 
 ## Publication
 
-  - 
-{% capture includecontent %} 3Dscript {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='3Dscript' %}
 
 ## Installation
 

@@ -13,6 +13,8 @@ description: test description
 This page provides user documentation for the Format category of the
 [CIP](CIP "wikilink") scripting package.
 
+{% include cip content='Navigation' %}
+
 # **create**
 
 <span style="font-size:110%">**Description**</span>  

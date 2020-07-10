@@ -9,7 +9,8 @@ description: test description
 ---
 
 ![TrackMate-Logo85x50-color-300p.png](TrackMate-Logo85x50-color-300p.png
-"TrackMate-Logo85x50-color-300p.png") 
+"TrackMate-Logo85x50-color-300p.png") {% include component-stats
+content=':sc.fiji:TrackMate\_' %}
 
 ## Citation
 
@@ -17,9 +18,7 @@ Please note that TrackMate is available through Fiji, and is based on a
 publication. If you use it successfully for your research **please be so
 kind to cite our work**:
 
-{% capture includecontent %} TrackMate {% endcapture %}
-
-{% include publication content=includecontent %}
+{% include publication content='TrackMate' %}
 
 ## Presentation
 
@@ -60,7 +59,7 @@ estimated diameter of a *C.elegans* cell as it divides over time.
 A movie following one cell of a *C.elegans* embryo tracked over 3 hours,
 as it divides. The track follows the lineage from cell AB to ABaraapap.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ### Single Particle Tracking
 

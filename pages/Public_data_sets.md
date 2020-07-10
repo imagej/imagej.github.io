@@ -38,7 +38,7 @@ available public data sets from the Fiji community and other sources:
   -   
     All the data and further information is available in the {% include
     github org='unidesigner' repo='groundtruth-drosophila-vnc'
-    label='GitHub' %}.
+    label='GitHub repository' %}.
 
 <!-- end list -->
 

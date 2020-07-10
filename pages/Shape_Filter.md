@@ -8,18 +8,17 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ/Fiji | name = Shape
-Filter Plugin | author = {% include person content='Twagner' %} |
-maintainer = {% include person content='Twagner' %} | filename =
-shape\_filter\_x.y.z.jar
-[\[1](https://github.com/thorstenwagner/ij-shape-filter/releases/latest)\]
-| source = Github
-[\[2](https://github.com/thorstenwagner/ij-shape-filter)\] | latest
-version = v1.4.2 (14 July 2016) | status = active
+{% capture author %} {% include person content="Twagner" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture maintainer %} {% include person content="Twagner" %} {%
+endcapture %} {% include sidebox-right software='ImageJ/Fiji'
+name='Shape Filter Plugin' author=author maintainer=maintainer
+filename='shape\_filter\_x.y.z.jar
+[\[1](https://github.com/thorstenwagner/ij-shape-filter/releases/latest)\]'
+source='Github
+[\[2](https://github.com/thorstenwagner/ij-shape-filter)\]'
+version='v1.4.2 (14 July 2016)' status='active' %}
 
 # General Description
 

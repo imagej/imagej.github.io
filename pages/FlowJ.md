@@ -8,9 +8,9 @@ categories: Plugins,Optic Flow
 description: test description
 ---
 
-FlowJ is a plugin that implements the main gradient-based optical flow
-techniques, such as Lucas and Kanade, Uras, Fleet and Jepson and Singh
-algorithms.
+{% include component-stats content=':sc.fiji:FlowJ\_' %}FlowJ is a
+plugin that implements the main gradient-based optical flow techniques,
+such as Lucas and Kanade, Uras, Fleet and Jepson and Singh algorithms.
 
 ## Documentation
 

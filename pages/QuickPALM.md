@@ -8,15 +8,14 @@ categories: Superresolution | Super Resolution,Citable
 description: test description
 ---
 
-The QuickPALM ImageJ plugin enables PALM/STORM 2D/3D/4D particle
-detection and image reconstruction. It uses fast methods to make the
+{% include component-stats content=':sc.fiji:QuickPALM\_' %}The
+QuickPALM ImageJ plugin enables PALM/STORM 2D/3D/4D particle detection
+and image reconstruction. It uses fast methods to make the
 reconstruction very quickly, or even in real time.
 
 ## Publication
 
-{% capture includecontent %} QuickPALM {% endcapture %}
-
-{% include publication content=includecontent %}
+{% include publication content='QuickPALM' %}
 
 For Full Documentation, and details of how to build your own super
 resolution system, please visit: [QuickPALM pages at Google

@@ -35,11 +35,9 @@ z-axis using three sliders.
   - Clicking **Apply** will apply the current translation and leave the
     *transformation window* open for further movement of views
 
-{% capture includecontent %} The range of movement is limited, if you
-wish to move views by a large amount, you have to repeatedly apply a
-translation {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='The range of movement is limited, if
+you wish to move views by a large amount, you have to repeatedly apply a
+translation' %}
 
 ![BigStitcher\_Arrange\_Views002.png](BigStitcher_Arrange_Views002.png
 "BigStitcher_Arrange_Views002.png")
@@ -64,12 +62,10 @@ file.
   - Ticking **keep rotation from metadata** will rotate views according
     to their **Angle** after moving them to the specified locations.
 
-{% capture includecontent %} Clicking **Apply** will overwrite the
-transformations stored in your dataset (except for the pixel
-calibration, the translation from the tile configuration and,
-optionally, a rotation) {% endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='Clicking """Apply""" will
+overwrite the transformations stored in your dataset (except for the
+pixel calibration, the translation from the tile configuration and,
+optionally, a rotation)' %}
 
 #### Tile Configuration file format
 
@@ -121,12 +117,10 @@ previewed in real time.
     multiple timepoints, you will be asked whether you want to apply the
     transformation to all timepoints or just the currently selected one.
 
-{% capture includecontent %} Clicking **Apply** will overwrite the
-transformations stored in your dataset (except for the pixel
-calibration, the translation from the tile configuration and,
-optionally, a rotation) {% endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='Clicking """Apply""" will
+overwrite the transformations stored in your dataset (except for the
+pixel calibration, the translation from the tile configuration and,
+optionally, a rotation)' %}
 
 ![BigStitcher\_Arrange\_Views004.png](BigStitcher_Arrange_Views004.png
 "BigStitcher_Arrange_Views004.png")

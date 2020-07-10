@@ -8,17 +8,18 @@ categories: ImageScience|ImageScience,Plugins,ImageScience,Neuroanatomy
 description: test description
 ---
 
-{% capture includecontent %} software = ImageScience | name = NeuronJ |
-maintainer = {% include person content='ImageScience' %} | author = {%
-include person content='ImageScience' %} | source = {% include github
-org='imagescience' repo='NeuronJ' %} | status = | category =
-[Plugins](:Category:Plugins "wikilink") | website =
-http://imagescience.org/meijering/software/neuronj/
+{% capture maintainer %} {% include person content="ImageScience" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture author %} {% include person content="ImageScience" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
-[NeuronJ](http://imagescience.org/meijering/software/neuronj/) is an
+{% capture source %} {% include github org="imagescience" repo="NeuronJ"
+%} {% endcapture %} {% include sidebox-right software='ImageScience'
+name='NeuronJ' maintainer=maintainer author=author source=source
+status='' category='[Plugins](:Category:Plugins "wikilink") '
+website='http://imagescience.org/meijering/software/neuronj/'
+%}[NeuronJ](http://imagescience.org/meijering/software/neuronj/) is an
 ImageJ plugin to facilitate the tracing and analysis of elongated image
 structures, such as neuronal processes, complementing [Simple Neurite
 Tracer](Simple_Neurite_Tracer "wikilink").

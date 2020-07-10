@@ -16,9 +16,7 @@ dataset.
 
 If you find MaMuT useful for your research, please cite it:
 
-{% capture includecontent %} MaMuT {% endcapture %}
-
-{% include publication content=includecontent %}
+{% include publication content='MaMuT' %}
 
 \_\_TOC\_\_
 
@@ -250,55 +248,58 @@ keyboard. The key bindings can be redefined, but here are the default:
 
 **To pan and zoom:**
 
-  - {% include key content='Right Drag' %} or {% include key
-    content='Middle Drag' %} Move in the XY-plane of the view.
-  - {% include key content='Mousewheel' %} Move along the Z-axis of the
-    view. Press {% include key content='Shift' %} or {% include key
-    content='Control' %} to change the speed.
-  - {% include key content='Alt-Mousewheel' %} (Mac and Linux) or {%
-    include key content='Ctrl-Shift-Mousewheel' %} (Windows) Zoom in and
-    out.
-  - {% include key content='up' %} / {% include key content='down' %}
-    Zoom in / out. With {% include key content='Shift' %} fast zoom.
-    With {% include key content='Control' %} slow zoom.
+  - {% include key content='press|Right Drag' %} or {% include key
+    content='press|Middle Drag' %} Move in the XY-plane of the view.
+  - {% include key content='press|Mousewheel' %} Move along the Z-axis
+    of the view. Press {% include key content='press|Shift' %} or {%
+    include key content='press|Control' %} to change the speed.
+  - {% include key content='press|Alt-Mousewheel' %} (Mac and Linux) or
+    {% include key content='press|Ctrl-Shift-Mousewheel' %} (Windows)
+    Zoom in and out.
+  - {% include key content='press|up' %} / {% include key
+    content='press|down' %} Zoom in / out. With {% include key
+    content='press|Shift' %} fast zoom. With {% include key
+    content='press|Control' %} slow zoom.
 
 **To orient, rotate the view:**
 
-  - {% include key content='Left Drag' %} Rotate around the point where
-    the mouse was clicked.
-  - {% include key content='X' %} / {% include key content='Y' %} / {%
-    include key content='Z' %} Select rotation axis.
-  - {% include key content='up' %} / {% include key content='down' %}
-    Rotate clockwise / counter-clockwise around the chosen rotation
-    axis.
-  - {% include key content=',' %} / {% include key content='.' %} Move
-    forward / backward along the z-axis.
-  - {% include key content='Shift|X' %} Rotate to the ZY-plane of the
-    current source (look along the x-axis of the current source).
-  - {% include key content='Shift|Y' %} or {% include key
-    content='Shift|C' %} Rotate to the XZ-plane of the current source
-    (look along the y-axis of the current source).
-  - {% include key content='Shift|Z' %} Rotate to the XY-plane of the
-    current source (look along the z-axis of the current source).
+  - {% include key content='press|Left Drag' %} Rotate around the point
+    where the mouse was clicked.
+  - {% include key content='press|X' %} / {% include key
+    content='press|Y' %} / {% include key content='press|Z' %} Select
+    rotation axis.
+  - {% include key content='press|up' %} / {% include key
+    content='press|down' %} Rotate clockwise / counter-clockwise around
+    the chosen rotation axis.
+  - {% include key content='press|,' %} / {% include key
+    content='press|.' %} Move forward / backward along the z-axis.
+  - {% include key content='press|Shift|X' %} Rotate to the ZY-plane of
+    the current source (look along the x-axis of the current source).
+  - {% include key content='press|Shift|Y' %} or {% include key
+    content='press|Shift|C' %} Rotate to the XZ-plane of the current
+    source (look along the y-axis of the current source).
+  - {% include key content='press|Shift|Z' %} Rotate to the XY-plane of
+    the current source (look along the z-axis of the current source).
 
 **To navigate in time:**
 
-  - {% include key content='N' %} Move to the previous time-point.
-  - {% include key content='M' %} Move to the next time-point.
-  - {% include key content='\[' %} Jump to the previous time step
+  - {% include key content='press|N' %} Move to the previous time-point.
+  - {% include key content='press|M' %} Move to the next time-point.
+  - {% include key content='press|\[' %} Jump to the previous time step
     (explained below).
-  - {% include key content='\]' %} Jump to the next time step.
+  - {% include key content='press|\]' %} Jump to the next time step.
 
 There is a fantastic feature in the BigDataViewer that you will find
 here called **bookmarks**. They let you store a position and orientation
 in space as bookmarks. You can later call them again. To use them:
 
-  - First press {% include key content='Shift|B' %} then any other key
-    to bookmark the current view position.
-  - Pressing {% include key content='B' %} then the bookmark's key to
-    restore the view position.
-  - {% include key content='O' %} does the same things, but only restore
-    the bookmark orientation, and does not translate to its position.
+  - First press {% include key content='press|Shift|B' %} then any other
+    key to bookmark the current view position.
+  - Pressing {% include key content='press|B' %} then the bookmark's key
+    to restore the view position.
+  - {% include key content='press|O' %} does the same things, but only
+    restore the bookmark orientation, and does not translate to its
+    position.
 
 You can many bookmarks, all identified by the key you press after the
 bookmark command.
@@ -306,13 +307,13 @@ bookmark command.
 ### Configuring the source visibility and display.
 
 Switching from one source to another is done with the numeric keys {%
-include key content='1' %} ... {% include key content='0' %} for up to
-10 views. Pressing {% include key content='F' %} switches to the fused
-mode, where all sources are overlaid. You can add and remove sources
-from the fused view by pressing {% include key content='Shift|1' %} -
-etc. The color and brightness of each source are defined in the
-**brightness and color** panel, brought by pressing the {% include key
-content='S' %} key.
+include key content='press|1' %} ... {% include key content='press|0' %}
+for up to 10 views. Pressing {% include key content='press|F' %}
+switches to the fused mode, where all sources are overlaid. You can add
+and remove sources from the fused view by pressing {% include key
+content='press|Shift|1' %} - etc. The color and brightness of each
+source are defined in the **brightness and color** panel, brought by
+pressing the {% include key content='press|S' %} key.
 
 ![bdv-MaMuT\_ViewerBrightnessColor.png](bdv-MaMuT_ViewerBrightnessColor.png
 "bdv-MaMuT_ViewerBrightnessColor.png")
@@ -330,7 +331,7 @@ The MaMuT viewer only displays a slice of the current source(s). It
 fetches the pixel values it needs to generate a single slice through the
 data. By default, pixel values are interpolated using the nearest
 neighbor, which might generate a pixelated look for high level of zoom.
-By pressing {% include key content='I' %} you can toggle between
+By pressing {% include key content='press|I' %} you can toggle between
 nearest-neighbor interpolation, and tri-linear interpolation, which
 smoothes the display.
 
@@ -345,28 +346,30 @@ are in sight.
 "bdv-MaMuT_DesiredOrientation.png")
 
 To do so, select the first source (angle 0°) and move the view in its XY
-place (press {% include key content='Shift|Z' %}). Then move in Z to the
-top of the embryo (around Z=1800) and finally zoom to bring about 50
-cells in view. If you move in time, you can see that a lot of cell
+place (press {% include key content='press|Shift|Z' %}). Then move in Z
+to the top of the embryo (around Z=1800) and finally zoom to bring about
+50 cells in view. If you move in time, you can see that a lot of cell
 divisions are happening there. We will now build their lineage.
 
 Move the mouse pointer over the cell you want to annotation, and press
-{% include key content='A' %}. A magenta circle should appear,
+{% include key content='press|A' %}. A magenta circle should appear,
 representing a cell or more generally, a spot. Spots are created, edited
 and removed using the following default key bindings:
 
-  - {% include key content='A' %} to add a spot at the mouse location.
-  - {% include key content='D' %} to delete the spot under the mouse
+  - {% include key content='press|A' %} to add a spot at the mouse
     location.
-  - {% include key content='Q' %} / {% include key content='E' %} to
-    decrease / increase the spot radius. Use {% include key
-    content='Shift' %} / {% include key content='Control' %} to change
-    the radius by a greater / smaller amount.
-  - {% include key content='Space' %} is used to move a spot in the XY
-    view plane: put the mouse pointer inside the spot you want to move,
-    then press and hold space while moving the mouse. The spot will
-    follow your mouse until you release the {% include key
-    content='Space' %} key.
+  - {% include key content='press|D' %} to delete the spot under the
+    mouse location.
+  - {% include key content='press|Q' %} / {% include key
+    content='press|E' %} to decrease / increase the spot radius. Use {%
+    include key content='press|Shift' %} / {% include key
+    content='press|Control' %} to change the radius by a greater /
+    smaller amount.
+  - {% include key content='press|Space' %} is used to move a spot in
+    the XY view plane: put the mouse pointer inside the spot you want to
+    move, then press and hold space while moving the mouse. The spot
+    will follow your mouse until you release the {% include key
+    content='press|Space' %} key.
 
 Spots represents point of interest (in our case, cells) under the shape
 of a sphere. You can change the sphere time-point, location and radius,
@@ -386,27 +389,27 @@ brought in sync by clicking inside a spot.
 In the first view, click on the spot you added. The second view is
 translated so that this very spot is brought at the center of the view
 window. Rotate around this point so as to show the YZ plane of the
-source (press {% include key content='Shift|X' %}) and zoom close to the
-spot, to have a view pair resembling this:
+source (press {% include key content='press|Shift|X' %}) and zoom close
+to the spot, to have a view pair resembling this:
 
 ![bdv-MaMuT\_MultipleViews.png](bdv-MaMuT_MultipleViews.png
 "bdv-MaMuT_MultipleViews.png")
 
 Just to ensure we are looking at the same spot in the two views, we
 checked the **Display spots names** button in the main GUI. Use the {%
-include key content='Space' %} key to move the spot around in a plane
-until you are happy with its location. This view combination is useful
-to place properly spots in 3D. You can open as many views as you want.
-Other views can be used e.g. to have an overview of the data using a
-dezoomed view.
+include key content='press|Space' %} key to move the spot around in a
+plane until you are happy with its location. This view combination is
+useful to place properly spots in 3D. You can open as many views as you
+want. Other views can be used e.g. to have an overview of the data using
+a dezoomed view.
 
 Spots can also be created with a double-click of the mouse. So if we
 recapitulate:
 
-  - {% include key content='Left Click' %} inside a spot to select it
-    and center all views to this spot.
-  - {% include key content='Double Left Click' %} outside any spot to
-    create a new one at the mouse location.
+  - {% include key content='press|Left Click' %} inside a spot to select
+    it and center all views to this spot.
+  - {% include key content='press|Double Left Click' %} outside any spot
+    to create a new one at the mouse location.
 
 ### Display settings for spots.
 
@@ -503,20 +506,20 @@ In the MaMuT Viewer, only spots are selectable with the mouse. To create
 or remove a link, you have to select exactly two spots.
 
   - Select a spot by clicking inside it.
-  - Move to another time-point ({% include key content='N' %}, {%
-    include key content='M' %}, {% include key content='\[' %}, {%
-    include key content='\]' %}, the time slider).
+  - Move to another time-point ({% include key content='press|N' %}, {%
+    include key content='press|M' %}, {% include key content='press|\['
+    %}, {% include key content='press|\]' %}, the time slider).
   - Add a second spot to the selection by shift-clicking inside it.
-  - Press {% include key content='L' %} to add a link between these two
-    spots, or to remove it already exists.
+  - Press {% include key content='press|L' %} to add a link between
+    these two spots, or to remove it already exists.
 
 So here are the two new useful bindings for **editing links**:
 
-  - {% include key content='Shift-Left Click' %} add and remove spots
-    from the selection.
-  - {% include key content='L' %} toggle a link between the two spots of
-    the selection. This does nothing if there is not exactly two spots
-    in the selection.
+  - {% include key content='press|Shift-Left Click' %} add and remove
+    spots from the selection.
+  - {% include key content='press|L' %} toggle a link between the two
+    spots of the selection. This does nothing if there is not exactly
+    two spots in the selection.
 
 Now go back to your MaMuT session, with the data oriented as aid above,
 and try to annotate and link the cell that divides between the first and
@@ -537,25 +540,25 @@ an existing annotation.
 
 ### The auto-linking mode.
 
-Press {% include key content='Shift-L' %} with a MaMuT viewer window
-active. A message should appear in the MaMuT viewer that states the
-auto-linking mode is now on. In this mode, a link is automatically
+Press {% include key content='press|Shift-L' %} with a MaMuT viewer
+window active. A message should appear in the MaMuT viewer that states
+the auto-linking mode is now on. In this mode, a link is automatically
 created when you create a new spot between this spot and the last one in
 the selection. Then the selection is changed to be the last spot added.
 Using this, you can quickly create lineage by moving forward in time
 with the keyboard and creating spots by typing {% include key
-content='A' %}. You can also use {% include key content='Double Click'
-%} to create spots, but because a simple click would clear the
-selection, you have to hold the {% include key content='Shift' %} key
-down to use auto-linking with mouse clicks.
+content='press|A' %}. You can also use {% include key
+content='press|Double Click' %} to create spots, but because a simple
+click would clear the selection, you have to hold the {% include key
+content='press|Shift' %} key down to use auto-linking with mouse clicks.
 
 Try to use the auto-linking mode to create the cell lineage of the
 dividing cell above, this time following the other daughter cell. Move
 back to the first time-point, select the mother cell, move to the second
-time-point {% include key content='M' %} and add a spot {% include key
-content='A' %} or {% include key content='Shift-Double Click' %} on the
-cell location. Repeat by following the right daughter cell. You should
-end up with an annotation that resembles the following:
+time-point {% include key content='press|M' %} and add a spot {% include
+key content='press|A' %} or {% include key content='press|Shift-Double
+Click' %} on the cell location. Repeat by following the right daughter
+cell. You should end up with an annotation that resembles the following:
 
 ![bdv-MaMuT\_DesiredTracking\_2.PNG](bdv-MaMuT_DesiredTracking_2.PNG
 "bdv-MaMuT_DesiredTracking_2.PNG")
@@ -582,8 +585,8 @@ and still be able to identify the cell you tracked over time.
 MaMuT has step-wise time browsing commands to just do that. The keyboard
 shortcut to do this are:
 
-  - {% include key content='\[' %} Jump to the previous time step.
-  - {% include key content='\]' %} Jump to the next time step.
+  - {% include key content='press|\[' %} Jump to the previous time step.
+  - {% include key content='press|\]' %} Jump to the next time step.
 
 By default, the viewer will jump to time-points multiples of 5: 0, 5,
 10, etc. You can set what is the time step in the **Annotation** tab of
@@ -694,26 +697,30 @@ TrackMate.
 ### Moving around in TrackScheme.
 
 Moving around is done classically with the mouse, and the panning is
-triggered by holding down the {% include key content='Space' %} key:
+triggered by holding down the {% include key content='press|Space' %}
+key:
 
-  - {% include key content='Mousewheel' %} scrolls up and down.
-  - {% include key content='Shift|Mousewheel' %} scrolls left and right.
-  - {% include key content='Space|Mousedrag' %} pans the view, à la
-    ImageJ. If you pull the mouse out of the TrackScheme window, it will
-    scroll in the direction of the mouse cursor.
-  - {% include key content='Space|Mousewheel' %} is used for zooming.
+  - {% include key content='press|Mousewheel' %} scrolls up and down.
+  - {% include key content='press|Shift|Mousewheel' %} scrolls left and
+    right.
+  - {% include key content='press|Space|Mousedrag' %} pans the view, à
+    la ImageJ. If you pull the mouse out of the TrackScheme window, it
+    will scroll in the direction of the mouse cursor.
+  - {% include key content='press|Space|Mousewheel' %} is used for
+    zooming.
 
 The keyboard can also be used:
 
-  - The numeric keypad numbers {% include key content='6' %}, {% include
-    key content='9' %}, {% include key content='8' %}, {% include key
-    content='7' %}, {% include key content='4' %}, {% include key
-    content='1' %}, {% include key content='2' %} and {% include key
-    content='3' %} are used to move as on a compass.
-  - {% include key content='+' %} zoom in.
-  - {% include key content='-' %} zoom out.
-  - {% include key content='equals' %} restores the zoom to its default
-    level.
+  - The numeric keypad numbers {% include key content='press|6' %}, {%
+    include key content='press|9' %}, {% include key content='press|8'
+    %}, {% include key content='press|7' %}, {% include key
+    content='press|4' %}, {% include key content='press|1' %}, {%
+    include key content='press|2' %} and {% include key
+    content='press|3' %} are used to move as on a compass.
+  - {% include key content='press|+' %} zoom in.
+  - {% include key content='press|-' %} zoom out.
+  - {% include key content='press|equals' %} restores the zoom to its
+    default level.
 
 The top-left part of the TrackScheme window shows the outline of the
 graph. The blue square represents the current view and can be resized
@@ -804,21 +811,22 @@ visibility setting. Spots and links are always visible, which is useful
 to build a selection. Spots and links are added to the current selection
 in a classical way:
 
-  - {% include key content='Left-Click' %} on a spot or link to set the
-    selection with this spot or link. The selection is cleared before.
-  - {% include key content='Left-Click' %} outside a spot to clear the
-    selection.
-  - {% include key content='Shift|Left-Click' %} on a spot or link to
-    add or remove this spot or link to the selection.
-  - {% include key content='Mousedrag' %} to select multiple spots and
-    links in a selection box. Hold {% include key content='Shift' %} to
-    add them to the current selection.
+  - {% include key content='press|Left-Click' %} on a spot or link to
+    set the selection with this spot or link. The selection is cleared
+    before.
+  - {% include key content='press|Left-Click' %} outside a spot to clear
+    the selection.
+  - {% include key content='press|Shift|Left-Click' %} on a spot or link
+    to add or remove this spot or link to the selection.
+  - {% include key content='press|Mousedrag' %} to select multiple spots
+    and links in a selection box. Hold {% include key
+    content='press|Shift' %} to add them to the current selection.
 
 Adding to this, several items in the {% include key
-content='Right-click' %} popup menu help selecting part of tracks. If
-you {% include key content='Right-click' %} on a spot or {% include key
-content='Right-click' %} outside a spot with a non-empty selection, you
-can:
+content='press|Right-click' %} popup menu help selecting part of tracks.
+If you {% include key content='press|Right-click' %} on a spot or {%
+include key content='press|Right-click' %} outside a spot with a
+non-empty selection, you can:
 
   - `Select whole track` will include all the spots and the links of the
     tracks the selection belongs to.
@@ -855,7 +863,7 @@ The info pane in the middle left takes the shape of a table, that
 displays the numerical feature values of the spot selection as a table.
 Spots are arranged as columns and feature as lines. This table can be
 exported to an ImageJ table with the {% include key
-content='Right-click' %} popup menu.
+content='press|Right-click' %} popup menu.
 
 The bottom left part if the spot feature plotter. The **Feature for X
 axis** drop down menu lets you choose what will be the feature used for
@@ -864,11 +872,11 @@ features can be added and removed using the add and remove buttons.
 
 To generate the plot, click the **Plot features** button. A graph should
 appear on which you can interact a bit. {% include key
-content='Mousedrag' %} towards the bottom right direction will zoom the
-plot, and {% include key content='Mousedrag' %} towards to up right
-direction will reset the zoom. The {% include key content='Right-click'
-%} menu lets you configure the plot, save it to an image file and export
-it as an ImageJ table.
+content='press|Mousedrag' %} towards the bottom right direction will
+zoom the plot, and {% include key content='press|Mousedrag' %} towards
+to up right direction will reset the zoom. The {% include key
+content='press|Right-click' %} menu lets you configure the plot, save it
+to an image file and export it as an ImageJ table.
 
 ![bdv-MaMuT\_TrackSchemeSideBar.png](bdv-MaMuT_TrackSchemeSideBar.png
 "bdv-MaMuT_TrackSchemeSideBar.png")
@@ -883,8 +891,8 @@ this now.
 
 Make sure you have a TrackScheme window open, a MaMuT viewer window
 open, and move the later close to the cells we tracked previously. Make
-sure the auto-linking mode is off {% include key content='Shift|L' %},
-and start creating spots over a cell close to the first one. Try to
+sure the auto-linking mode is off {% include key content='press|Shift|L'
+%}, and start creating spots over a cell close to the first one. Try to
 follow it over time. You should see spots appearing in TrackScheme,
 under a special column on the right called `Unlaid spots`. The
 TrackScheme window should resembles this:
@@ -899,12 +907,12 @@ stacked under this special column. From there, you can attach them to an
 existing track or create a new one.
 
 Here is a way to do it. In TrackScheme using {% include key
-content='Mousedrag' %} select all the spots in the unlaid column. {%
-include key content='Right-click' %} somewhere in TrackScheme to make
-the pop-up menu appear. One of the menu item should be something like
-`Link 10 spots`. Choose this one. Each spots is then linked to the next
-one, frame by frame, and the links should appear in TrackScheme and in
-the MaMuT viewer. You just created a new track.
+content='press|Mousedrag' %} select all the spots in the unlaid column.
+{% include key content='press|Right-click' %} somewhere in TrackScheme
+to make the pop-up menu appear. One of the menu item should be something
+like `Link 10 spots`. Choose this one. Each spots is then linked to the
+next one, frame by frame, and the links should appear in TrackScheme and
+in the MaMuT viewer. You just created a new track.
 
 ### Triggering re-layout and style refresh.
 
@@ -950,15 +958,15 @@ link between the source and the target.
 The last you link you added may have strongly perturbed our annotation,
 particularly if you did what was on the screenshot above. Correct it by
 removing the last link. Simply select it press {% include key
-content='Delete' %}. The same key will remove everything in the
+content='press|Delete' %}. The same key will remove everything in the
 selection.
 
 ### Editing track names and imposing track order.
 
 Tracks are ordered from left to right alphanumerically with their name.
-To change a track name, {% include key content='Double-click' %} on it
-in the column header part. Track names should be made of a single line
-with a combination of any character.
+To change a track name, {% include key content='press|Double-click' %}
+on it in the column header part. Track names should be made of a single
+line with a combination of any character.
 
 Try for instance to change the track order by changing their name. Let's
 call the first one 'B' and the second one 'A'. Click the **Layout**
@@ -975,24 +983,24 @@ checking the **Display spot names**, either in TrackScheme by using the
 not very informative.
 
 To edit a spot name in TrackScheme, {% include key
-content='Double-click' %} on the spot. It should be replaced by an
+content='press|Double-click' %} on the spot. It should be replaced by an
 orange box in which you can type the spot name. Press {% include key
-content='Shift|Enter' %} to validate the new name, or {% include key
-content='Escape' %} to cancel the change. Spot names may be several
-lines long, but their display might then not be very pleasing.
+content='press|Shift|Enter' %} to validate the new name, or {% include
+key content='press|Escape' %} to cancel the change. Spot names may be
+several lines long, but their display might then not be very pleasing.
 
 You can also set the name of several spots at once. For instance, select
 the the whole second track (now named 'A') and {% include key
-content='Right click' %} (outside of a spot) to bring the popup menu.
-There is an item called `Edit 10 spot names`. The closest spot is
+content='press|Right click' %} (outside of a spot) to bring the popup
+menu. There is an item called `Edit 10 spot names`. The closest spot is
 changed to an edit box. When you validate the new name, all the selected
 spots get this new name.
 
 Apart from their use to mark some biological meaning to the annotations,
 spot names have several uses. There is a search box in TrackScheme
 toolbar that centers the view on spots with name matching the text you
-enter there. Press {% include key content='Enter' %} to loop over all
-the matching spots.
+enter there. Press {% include key content='press|Enter' %} to loop over
+all the matching spots.
 
 Spot names are also used to decide in what order to lay out track
 branches. For instance, our track 'B' as a cell division in the second
@@ -1243,11 +1251,11 @@ example:
     ...
 
 It follows the syntax `key=command`, one per line. Modifier keys such as
-{% include key content='Control' %} and {% include key content='Shift'
-%} are specified by prepending the key with their name, separated by a
-space escaped with a backslash '\\'. Spaces in commands do not need to
-be escaped. The dash \# character at the beginning of a line is used to
-insert comments.
+{% include key content='press|Control' %} and {% include key
+content='press|Shift' %} are specified by prepending the key with their
+name, separated by a space escaped with a backslash '\\'. Spaces in
+commands do not need to be escaped. The dash \# character at the
+beginning of a line is used to insert comments.
 
 An example of such a file can be found
 [**here**](Example_mamut.properties_file "wikilink").
@@ -1387,21 +1395,21 @@ image is also included in the help window of the MaMuT viewer.
 TrackScheme key-bindings cannot be remapped like for the MaMuT viewer.
 We list them here.
 
-|                                                                                                             |                                                                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| {% include key content='F2' %}                                                                              | Edit current spot name.                                                                                                                                                                             |
-| {% include key content='Delete' %}                                                                          | Delete the current selection.                                                                                                                                                                       |
-| {% include key content='Home' %}                                                                            | Center view on the first spot in current selection.                                                                                                                                                 |
-| {% include key content='End' %}                                                                             | Center view on the last spot in current selection.                                                                                                                                                  |
-| {% include key content='+' %} & {% include key content='equals' %}                                          | Zoom in.                                                                                                                                                                                            |
-| {% include key content='-' %}                                                                               | Zoom out.                                                                                                                                                                                           |
-| {% include key content='Shift|equals' %}                                                                    | Reset zoom.                                                                                                                                                                                         |
-| {% include key content='1' %} {% include key content='2' %} ... {% include key content='9' %} on the keypad | Pan the view.                                                                                                                                                                                       |
-| {% include key content='Control|A' %}                                                                       | Select all.                                                                                                                                                                                         |
-| {% include key content='Control|Shift|A' %}                                                                 | Clear selection.                                                                                                                                                                                    |
-| {% include key content='up' %} / {% include key content='down' %}                                           | Move to the previous / next spot in time, within the current track.                                                                                                                                 |
-| {% include key content='left' %} / {% include key content='right' %}                                        | Move to the previous / next sibling, within the current track. Sibling are spots that belong to the same track and to the same time-point. For instance the two spots of two sister daughter cells. |
-| {% include key content='Page up' %} / {% include key content='Page down' %}                                 | Jump to the the previous / next track.                                                                                                                                                              |
-| {% include key content='Shift|Mousedrag' %}                                                                 | Pan the view.                                                                                                                                                                                       |
-| {% include key content='Shift|Mousewheel' %}                                                                | Zoom in / out.                                                                                                                                                                                      |
-|                                                                                                             |                                                                                                                                                                                                     |
+|                                                                                                                               |                                                                                                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include key content='press|F2' %}                                                                                          | Edit current spot name.                                                                                                                                                                             |
+| {% include key content='press|Delete' %}                                                                                      | Delete the current selection.                                                                                                                                                                       |
+| {% include key content='press|Home' %}                                                                                        | Center view on the first spot in current selection.                                                                                                                                                 |
+| {% include key content='press|End' %}                                                                                         | Center view on the last spot in current selection.                                                                                                                                                  |
+| {% include key content='press|+' %} & {% include key content='press|equals' %}                                                | Zoom in.                                                                                                                                                                                            |
+| {% include key content='press|-' %}                                                                                           | Zoom out.                                                                                                                                                                                           |
+| {% include key content='press|Shift|equals' %}                                                                                | Reset zoom.                                                                                                                                                                                         |
+| {% include key content='press|1' %} {% include key content='press|2' %} ... {% include key content='press|9' %} on the keypad | Pan the view.                                                                                                                                                                                       |
+| {% include key content='press|Control|A' %}                                                                                   | Select all.                                                                                                                                                                                         |
+| {% include key content='press|Control|Shift|A' %}                                                                             | Clear selection.                                                                                                                                                                                    |
+| {% include key content='press|up' %} / {% include key content='press|down' %}                                                 | Move to the previous / next spot in time, within the current track.                                                                                                                                 |
+| {% include key content='press|left' %} / {% include key content='press|right' %}                                              | Move to the previous / next sibling, within the current track. Sibling are spots that belong to the same track and to the same time-point. For instance the two spots of two sister daughter cells. |
+| {% include key content='press|Page up' %} / {% include key content='press|Page down' %}                                       | Jump to the the previous / next track.                                                                                                                                                              |
+| {% include key content='press|Shift|Mousedrag' %}                                                                             | Pan the view.                                                                                                                                                                                       |
+| {% include key content='press|Shift|Mousewheel' %}                                                                            | Zoom in / out.                                                                                                                                                                                      |
+|                                                                                                                               |                                                                                                                                                                                                     |

@@ -8,7 +8,8 @@ categories: Plugins,ImageJ2
 description: test description
 ---
 
-The purpose of the ImageJ Updater is to keep you up-to-date with all
+{% include component-stats content=':net.imagej:imagej-updater' %}The
+purpose of the ImageJ Updater is to keep you up-to-date with all
 components of ImageJ (or Fiji), i.e. the macros, scripts, plugins and
 the core components (libraries) needed by the plugins.
 
@@ -175,7 +176,8 @@ jrunscript bootstrap.js help
 
 This uses the **jrunscript** executable of your Java installation to run
 the Javascript file tracked in ImageJ's {% include github org='imagej'
-repo='imagej-updater' path='bin/bootstrap.js' label='source' %}.
+repo='imagej-updater' path='bin/bootstrap.js' label='source code
+repository' %}.
 
 The `bootstrap.js` script was originally intended to fix broken
 [Fiji](Fiji "wikilink") installations, and was subsequently enhanced to
@@ -221,7 +223,7 @@ for them. In such case, the ssh key can be placed in {% include path
 content='/etc/ssh' %}, and the config options used with {% include
 inline content='ssh -o' %}.
 
-{% capture includecontent %} /home/fiji\_mirror\_sync/.ssh/config||
+{% include file content='/home/fiji\_mirror\_sync/.ssh/config||
 
     Host imagej
       Hostname code.imagej.net
@@ -231,9 +233,7 @@ inline content='ssh -o' %}.
       User your_account_username
       ProxyCommand  ssh code.imagej.net netcat -w 120 %h %p
 
-{% endcapture %}
-
-{% include file content=includecontent %}
+' %}
 
 To prepare the known hosts files:
 
@@ -243,14 +243,12 @@ To prepare the known hosts files:
 Finally set up the cronjob with {% include inline content='sudo crontab
 -u fiji\_mirror\_sync -e' %}
 
-{% capture includecontent %} /var/spool/cron/...||
+{% include file content='/var/spool/cron/...||
 
     00 06 * * * rsync -azL --delete -e ssh imagej:imagej-update-site/ /var/www/fiji_update/mirrors/imagej
     10 06 * * * rsync -azL --delete -e ssh fiji:fiji-update-site/ /var/www/fiji_update/mirrors/fiji
 
-{% endcapture %}
-
-{% include file content=includecontent %}
+' %}
 
 Once the mirrors get populated, you can start using them on your ImageJ
 installations. Editing the URL of the existing ImageJ and Fiji update

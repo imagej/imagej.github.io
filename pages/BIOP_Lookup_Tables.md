@@ -8,15 +8,11 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = BIOP luts | software = Fiji | author
-= Romain Guiet, Olivier Burri | maintainer = Romain Guiet | filename =
-biop-\*.lut | released = October 2016 | latest version = October 2016 |
-source = PTBIOP update site | status = stable | website = [BIOP Staff
-Page](http://biop.epfl.ch/INFO_Facility.html#staff)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right name='BIOP luts' software='Fiji' author='Romain
+Guiet, Olivier Burri' maintainer='Romain Guiet' filename='biop-\*.lut'
+released='October 2016' version='October 2016' source='PTBIOP update
+site' status='stable' website='[BIOP Staff
+Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
 
 ## Purpose
 

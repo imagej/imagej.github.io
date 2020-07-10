@@ -15,10 +15,8 @@ This means that the JAR functions as an "all-in-one" distribution of the
 software, without needing any other Java code. (You still need a Java
 runtime, and an underlying operating system, of course.)
 
-{% capture includecontent %} We recommend *against* using uber-JARs.
-They introduce many problems for downstream consumers. {% endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='We recommend ""against"" using
+uber-JARs. They introduce many problems for downstream consumers.' %}
 
 ## Approaches
 

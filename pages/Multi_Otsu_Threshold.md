@@ -8,17 +8,12 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Multi Otsu
-Threshold | author = Yasunari Tosa | filename =
-Multi\_OtsuThreshold.class | source =
-[Multi\_OtsuThreshold.java](https://imagej.net/plugins/download/Multi_OtsuThreshold.java)
-| released = 14 April 2006 | status = stable | category =
-[Segmentation](:Category:Segmentation "wikilink") | website =
-[1](https://imagej.net/plugins/multi-otsu-threshold.html)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Multi Otsu Threshold'
+author='Yasunari Tosa' filename='Multi\_OtsuThreshold.class'
+source='[Multi\_OtsuThreshold.java](https://imagej.net/plugins/download/Multi_OtsuThreshold.java)'
+released='14 April 2006' status='stable'
+category='[Segmentation](:Category:Segmentation "wikilink")'
+website='[1](https://imagej.net/plugins/multi-otsu-threshold.html)' %}
 
 ## Purpose
 
@@ -38,7 +33,7 @@ This plugin implements an algorithm described in the following paper
 ` | first2 = T-S.`  
 ` | last2 = Chung`  
 ` | first2 = P-C.`  
-` | A fast algorithm for multilevel thresholding`  
+` | title = A fast algorithm for multilevel thresholding`  
 ` | journal = Journal of Information Science and Engineering`  
 ` | volume = 17`  
 ` | issue = 5`  

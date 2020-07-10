@@ -8,15 +8,11 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = RGB to Montage |
-author = unknown | maintainer = None | filename = RGB\_to\_Montage.class
-| source = not found | released = unknown | latest version = unknown |
-status = Unmaintained | category = [Color
-processing](:Category:Color_processing "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='RGB to Montage'
+author='unknown' maintainer='None' filename='RGB\_to\_Montage.class'
+source='not found' released='unknown' version='unknown'
+status='Unmaintained' category='[Color
+processing](:Category:Color_processing "wikilink")' %}
 
 ## Purpose
 

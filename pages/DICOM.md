@@ -8,7 +8,7 @@ categories: Import-Export
 description: test description
 ---
 
-%Replace% FormatsMenu %Replace% [Digital Imaging and Communications in
+{% include menu-formats %}[Digital Imaging and Communications in
 Medicine (DICOM)](wikipedia:DICOM "wikilink") is a standard for
 handling, storing, printing, and transmitting information in medical
 imaging.

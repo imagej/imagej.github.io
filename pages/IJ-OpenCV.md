@@ -32,9 +32,6 @@ site](http://sites.imagej.net/IJ-OpenCV/).
 
 ## Publication
 
-  - 
-{% capture includecontent %} IJ-OpenCV {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='IJ-OpenCV' %}
 
 [Category:Citable](Category:Citable "wikilink")

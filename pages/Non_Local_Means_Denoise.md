@@ -8,18 +8,17 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ/Fiji | name = Non Local
-Means Denoise | maintainer = {% include person content='Twagner' %} |
-author = Pascal Behnel, {% include person content='Twagner' %} |
-filename = ij\_nl\_means.jar
-[\[1](https://github.com/thorstenwagner/ij-nl-means/releases/latest)\] |
-source = GitHub [\[2](https://github.com/jumpfunky/ij-nl-means)\] |
-latest version = v1.4.6 (13 March 2016) | status = maintaining |
-category = [:Category:Plugins](:Category:Plugins "wikilink")
+{% capture maintainer %} {% include person content="Twagner" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture author %} Pascal Behnel, {% include person content="Twagner"
+%} {% endcapture %} {% include sidebox-right software='ImageJ/Fiji'
+name='Non Local Means Denoise' maintainer=maintainer author=author
+filename='ij\_nl\_means.jar
+[\[1](https://github.com/thorstenwagner/ij-nl-means/releases/latest)\]'
+source='GitHub [\[2](https://github.com/jumpfunky/ij-nl-means)\]'
+version='v1.4.6 (13 March 2016)' status='maintaining'
+category='[:Category:Plugins](:Category:Plugins "wikilink")' %}
 
 # Purpose
 

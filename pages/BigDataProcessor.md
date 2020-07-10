@@ -8,14 +8,11 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | name = BigDataProcessor |
-update site = EMBL-CBA | author = Christian Tischer | maintainer =
-Christian Tischer | source = {% include github org='embl-cba'
-repo='fiji-plugin-bigDataProcessor' %}
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="embl-cba"
+repo="fiji-plugin-bigDataProcessor" %} {% endcapture %} {% include
+sidebox-right software='Fiji' name='BigDataProcessor' site='EMBL-CBA'
+author='Christian Tischer' maintainer='Christian Tischer' source=source
+%}
 
 ## Overview
 

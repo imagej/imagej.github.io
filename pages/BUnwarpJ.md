@@ -8,8 +8,9 @@ categories: Plugins,Registration,Citable
 description: test description
 ---
 
-{| |style="vertical-align:top" |![bUnwarpJ scheme: bidirectional
-Unwarping in Java.](BUnwarpJ_scheme.png
+{% include component-stats content=':sc.fiji:bUnwarpJ\_' %}{|
+|style="vertical-align:top" |![bUnwarpJ scheme: bidirectional Unwarping
+in Java.](BUnwarpJ_scheme.png
 "bUnwarpJ scheme: bidirectional Unwarping in Java.") |}
 
 This ImageJ/Fiji plugin performs **2D image registration based on

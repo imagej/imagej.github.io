@@ -8,15 +8,11 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = Selective Plane Illumination
-Microscopy Invasion assay | software = Fiji | author = Svenja Rühland,
-David Hörl, Hartmann Harz | maintainer = David Hörl | released =
-Decembre 2014 | latest version = Decembre 2014 | category =
-[Registration](:Category:Registration "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right name='Selective Plane Illumination Microscopy
+Invasion assay' software='Fiji' author='Svenja Rühland, David Hörl,
+Hartmann Harz' maintainer='David Hörl' released='Decembre 2014'
+version='Decembre 2014'
+category='[Registration](:Category:Registration "wikilink")' %}
 
 SPIM allows for three-dimensional imaging of thick specimens. Among
 other approaches this can be exploited to analyse invasion of different

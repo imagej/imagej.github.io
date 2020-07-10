@@ -143,11 +143,9 @@ described above.
       - **Make sure you switch your ImageJ over to Java 8 *before*
         enabling the Java-8 update site\!**
 
-{% capture includecontent %} If you enable the Java-8 update site while
-still running Java 6, your installation will become non-functional\! {%
-endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='If you enable the Java-8
+update site while still running Java 6, your installation will become
+non-functional\!' %}
 
 Alternately, you can simply download a new Fiji as described above.
 

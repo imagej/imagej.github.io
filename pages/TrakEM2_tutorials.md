@@ -25,7 +25,7 @@ tutorial](TrakEM2_basics_tutorial "wikilink")**. It includes:
   - Segmenting cells across multiple sections.
   - 3D visualization.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Video tutorial on segmenting/outlining objects over multiple sections in 3D
 
@@ -44,7 +44,7 @@ covers:
 See also the list of [key bindings for
 AreaList](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#edit_arealist).
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Video tutorial on aligning sections
 
@@ -61,7 +61,7 @@ focused on:
 See also the feature extraction and alignment [parameters
 explained](http://www.ini.uzh.ch/~acardona/howto.html#sift_parameters).
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Video tutorial on manual segmentation modes
 
@@ -82,7 +82,7 @@ modes](TrakEM2_segmentation_modes_tutorial "wikilink"):
     when painting in an arealist, paint in the current but erase any
     other arealist.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Video tutorial on semi-automatic segmentation
 
@@ -98,7 +98,7 @@ will learn:
   - Fast marching method tool in TrakEM2.
   - Selecting segmentation parameters.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Video tutorial on measuring surfaces and volumes
 
@@ -116,7 +116,7 @@ See also [AreaList
 measurements](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#measure_arealist)
 in the TrakEM2 manual, with figures.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Video tutorial on adding sections/layers to an existing project
 
@@ -135,7 +135,7 @@ learn how to:
 In the tutorial, the layers are imported following an existing set of
 layers, i.e. concatenating to enlarge the collection of sections.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Video tutorial on saving a project
 
@@ -146,7 +146,7 @@ layers, i.e. concatenating to enlarge the collection of sections.
     project](TrakEM2_saving_project_tutorial "wikilink") into an .XML
     file.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Video tutorial on 3D reconstruction from serial section
 

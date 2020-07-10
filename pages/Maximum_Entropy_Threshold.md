@@ -8,18 +8,14 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Maximum Entropy
-Threshold | author = Jerek Sacha | filename =
-[Entropy\_Threshold.class](https://imagej.net/plugins/download/Entropy_Threshold.class)
-(1,418 Bytes) | source =
-[Entropy\_Threshold.java](https://imagej.net/plugins/download/Entropy_Threshold.java)
-(2,755 Bytes) | released = 13 February 2004 | status = unknown |
-category = [Segmentation](:Category:Segmentation "wikilink") | website =
-[1](https://imagej.net/plugins/entropy.html)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Maximum Entropy
+Threshold' author='Jerek Sacha'
+filename='[Entropy\_Threshold.class](https://imagej.net/plugins/download/Entropy_Threshold.class)
+(1,418 Bytes)'
+source='[Entropy\_Threshold.java](https://imagej.net/plugins/download/Entropy_Threshold.java)
+(2,755 Bytes)' released='13 February 2004' status='unknown'
+category='[Segmentation](:Category:Segmentation "wikilink")'
+website='[1](https://imagej.net/plugins/entropy.html)' %}
 
 ## Purpose
 

@@ -8,18 +8,17 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji/ImageJ | name = Ellipse
-Splitting Plugin | author = {% include person content='Twagner' %} |
-maintainer = {% include person content='Twagner' %} | filename =
-ij-ellipsesplit.jar
-[\[1](https://github.com/thorstenwagner/ij-ellipsesplit/releases/latest)\]
-| source = Github
-[\[2](https://github.com/thorstenwagner/ij-ellipsesplit)\] | latest
-version = v0.4.0 (15 May 2016) | status = active
+{% capture author %} {% include person content="Twagner" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture maintainer %} {% include person content="Twagner" %} {%
+endcapture %} {% include sidebox-right software='Fiji/ImageJ'
+name='Ellipse Splitting Plugin' author=author maintainer=maintainer
+filename='ij-ellipsesplit.jar
+[\[1](https://github.com/thorstenwagner/ij-ellipsesplit/releases/latest)\]'
+source='Github
+[\[2](https://github.com/thorstenwagner/ij-ellipsesplit)\]'
+version='v0.4.0 (15 May 2016)' status='active' %}
 
 ## Purpose
 

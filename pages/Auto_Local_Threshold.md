@@ -8,7 +8,8 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-This plugin binarises 8-bit images using various **local** thresholding
+{% include component-stats content=':sc.fiji:Auto\_Threshold' %}This
+plugin binarises 8-bit images using various **local** thresholding
 methods. By 'local' here is meant that the threshold is computed for
 each pixel according to the image characteristings within a window of
 radius **r** (in pixel units) around it. The segmented phase is always
@@ -94,8 +95,8 @@ depending on the value of the midgrey.
 
   - 
 {% capture includecontent %} last = Bernsen | first = J | year = 1986 |
-journal = Proc. of the 8th Int. Conf. on Pattern Recognition | Dynamic
-Thresholding of Grey-Level Images
+journal = Proc. of the 8th Int. Conf. on Pattern Recognition | title =
+Dynamic Thresholding of Grey-Level Images
 
 {% endcapture %}
 
@@ -104,8 +105,8 @@ Thresholding of Grey-Level Images
   - 
 {% capture includecontent %} last = Sezgin | first = M | last2 = Sankur
 | first2 = B | year = 2004 | journal = Journal of Electronic Imaging |
-Survey over Image Thresholding Techniques and Quantitative Performance
-Evaluation | volume = 13(1) | pages = 146-165 | url =
+title = Survey over Image Thresholding Techniques and Quantitative
+Performance Evaluation | volume = 13(1) | pages = 146-165 | url =
 http://webdocs.cs.ualberta.ca/~nray1/CMPUT605/track3_papers/Threshold_survey.pdf
 
 {% endcapture %}
@@ -125,8 +126,8 @@ case of Toggle Contrast Enhancement, see for example:
 
   - 
 {% capture includecontent %} last = Soille | first = P | year = 2004 |
-Morphological Image Analysis: Principles and applications. Springer |
-pages = 259
+title = Morphological Image Analysis: Principles and applications.
+Springer | pages = 259
 
 {% endcapture %}
 
@@ -198,7 +199,8 @@ C = 0.
 
   - 
 {% capture includecontent %} last = Niblack | first = W | year = 1986 |
-journal = | An introduction to Digital Image Processing, Prentice-Hall
+journal = | title = An introduction to Digital Image Processing,
+Prentice-Hall
 
 {% endcapture %}
 
@@ -219,9 +221,9 @@ Otsu threshold found for that region.
   - 
 {% capture includecontent %} last = Otsu | first = N | year = 1979 |
 journal = IEEE Trans. Sys., Man., Cyber. | url =
-http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?&arnumber=4310076 | A
-threshold selection method from gray-level histograms | volume = 9 |
-pages = 62-66 | doi = 10.1109/TSMC.1979.4310076
+http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?&arnumber=4310076 |
+title = A threshold selection method from gray-level histograms | volume
+= 9 | pages = 62-66 | doi = 10.1109/TSMC.1979.4310076
 
 {% endcapture %}
 
@@ -243,8 +245,8 @@ More | first2 = S | last3 = Sabale | first3 = A | last4 = Joshi | first4
 = M | year = 2011 | journal = International Conference on Communications
 and Signal Processing (ICCSP) | url =
 https://ieeexplore.ieee.org/document/5739305/ | pages = 218-220 |
-Adaptive local thresholding for detection of nuclei in diversity stained
-cytology images. | doi = 10.1109/ICCSP.2011.5739305
+title = Adaptive local thresholding for detection of nuclei in diversity
+stained cytology images. | doi = 10.1109/ICCSP.2011.5739305
 
 {% endcapture %}
 
@@ -285,8 +287,9 @@ number than 0 will change the default value
   - 
 {% capture includecontent %} last = Sauvola | first = J | last2 =
 Pietaksinen | first2 = M | year = 2000 | journal = Pattern Recognition |
-Adaptive Document Image Binarization | volume = 33(2) | pages = 225-236
-|url = http://www.ee.oulu.fi/research/mvmp/mvg/files/pdf/pdf_24.pdf
+title = Adaptive Document Image Binarization | volume = 33(2) | pages =
+225-236 |url =
+http://www.ee.oulu.fi/research/mvmp/mvg/files/pdf/pdf_24.pdf
 
 {% endcapture %}
 

@@ -8,19 +8,14 @@ categories: Binary
 description: test description
 ---
 
-{% capture includecontent %} name = Minimum/Maximum/Median | software =
-ImageJ | author = Benjamin Schmid | maintainer = Benjamin Schmid |
-filename = {% capture includecontent %} g=sc.fiji | a=VIB\_ {%
+{% capture filename %} {% include maven g="sc.fiji" a="VIB\_" %} {%
 endcapture %}
 
-{% include maven content=includecontent %}
-
-| source = {% include github org='fiji' repo='VIB' %} | latest version =
-3.0.0, December 17<sup>th</sup>, 2015 | status = beta
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="VIB" %} {%
+endcapture %} {% include sidebox-right name='Minimum/Maximum/Median'
+software='ImageJ' author='Benjamin Schmid' maintainer='Benjamin Schmid'
+filename=filename source=source version='3.0.0, December
+17<sup>th</sup>, 2015' status='beta' %}
 
 ## Purpose
 

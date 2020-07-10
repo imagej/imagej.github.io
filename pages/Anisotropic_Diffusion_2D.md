@@ -8,7 +8,8 @@ categories: Plugins,Filtering
 description: test description
 ---
 
-This plugin implement the anisotropic diffusion filter in 2D.
+{% include component-stats content=':sc.fiji:Anisotropic\_Diffusion\_2D'
+%}This plugin implement the anisotropic diffusion filter in 2D.
 Anisotropic filters are a class of filter that reduces noise in an image
 while trying to preserve sharp edges. See also [this page of the
 ImageJ 1.x web
@@ -56,7 +57,7 @@ Diffusion from:
 ` | first = D.`  
 ` | last2 = Deriche`  
 ` | first2 = R.`  
-` | Vector-valued image regularization with PDEs: a common framework for different applications`  
+` | title = Vector-valued image regularization with PDEs: a common framework for different applications`  
 ` | journal =  IEEE Trans Pattern Anal Mach Intell`  
 ` | volume = 27`  
 ` | issue = 4`  

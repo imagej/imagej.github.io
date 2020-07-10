@@ -8,8 +8,8 @@ categories: Tutorials
 description: test description
 ---
 
-%Replace% GitMenu %Replace% These are the notes of a Git workshop held
-at the [Max-Planck Institute of molecular Cell Biology and
+{% include gitmenu %} These are the notes of a Git workshop held at the
+[Max-Planck Institute of molecular Cell Biology and
 Genetics](http://www.mpi-cbg.de/) on August 3rd, 2011.
 
 # What is a version control system, why should I care?

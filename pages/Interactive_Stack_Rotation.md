@@ -8,19 +8,20 @@ categories: Plugins,Transform,Interactive
 description: test description
 ---
 
-{% capture includecontent %} name = Interactive Stack Rotation |
-software = Fiji | author = {% include person content='Saalfeld' %}
-([1](mailto:saalfeld@mpi-cbg.de)) | maintainer = {% include person
-content='Saalfeld' %} | source = {% include github org='axtimwalde'
-repo='mpicbg' path='mpicbg\_/src/main/java/Stack\_Rotate.java' %} |
-released = September 29<sup>th</sup>, 2009 | latest version = February
-26<sup>th</sup>, 2010 | status = stable, active | category =
-[Plugins](:Category:Plugins "wikilink"),
-[Transform](:Category:Transform "wikilink")
+{% capture author %} {% include person content="Saalfeld" %}
+([1](mailto:saalfeld@mpi-cbg.de)) {% endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Saalfeld" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="axtimwalde" repo="mpicbg"
+path="mpicbg\_/src/main/java/Stack\_Rotate.java" %} {% endcapture %} {%
+include sidebox-right name='Interactive Stack Rotation' software='Fiji'
+author=author maintainer=maintainer source=source released='September
+29<sup>th</sup>, 2009' version='February 26<sup>th</sup>, 2010'
+status='stable, active'
+category='[Plugins](:Category:Plugins "wikilink"),
+[Transform](:Category:Transform "wikilink")' %}
 
 Here is a screencast how to use the Interactive Stack Rotation plugin:
 

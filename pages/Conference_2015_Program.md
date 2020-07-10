@@ -13,7 +13,7 @@ Developer Conference](Conference_2015 "wikilink").
 
 ## Program
 
-TODO GOOGLE SPREADSHEET WIDGET %Replace% Clear %Replace%
+TODO GOOGLE SPREADSHEET WIDGET {% include clear %}
 
 ## Keynote presentations
 
@@ -156,9 +156,7 @@ and a new powerful Undo framework. Finally, Icy is always evolving,
 thanks to the feedback of all its users on
 http://icy.bioimageanalysis.org/support \!
 
-{% capture includecontent %} Icy {% endcapture %}
-
-{% include publication content=includecontent %}
+{% include publication content='Icy' %}
 
 \[ [Presentation video](https://vimeo.com/140929690/) \]
 
@@ -620,9 +618,7 @@ different functionalities of Icy in action, from visualization (2D/3D)
 to analysis based on a real biologic case with a lot of analysis traps
 \! Let's investigate \!
 
-{% capture includecontent %} Icy {% endcapture %}
-
-{% include publication content=includecontent %}
+{% include publication content='Icy' %}
 
 **Workshop requirements:** An installation of
 [Icy](http://icy.bioimageanalysis.org/download) \[ [Presentation
@@ -918,9 +914,7 @@ In this poster we present a panel of Icy's features. Live demo based on
 your images, and we will try to process them thanks to one of the 300
 image analysis plugins available in Icy \!
 
-{% capture includecontent %} Icy {% endcapture %}
-
-{% include publication content=includecontent %}
+{% include publication content='Icy' %}
 
 ### Olaya Fernandez-Gayol - Using the wrMTrck plugin to analyze the Morris Water maze in mice
 

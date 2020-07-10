@@ -8,25 +8,20 @@ categories: Development
 description: test description
 ---
 
-{% capture includecontent %} This page describes the *technical*
+{% include sidebox-right content='This page describes the ""technical""
 structure of [SciJava](SciJava "wikilink") and
 [ImageJ](ImageJ "wikilink") projects.
 
-  - For information on the *social* structure, see
+  - For information on the ""social"" structure, see
     [Governance](Governance "wikilink").
-  - For information on the *legal* structure, see
-    [Licensing](Licensing "wikilink").
+  - For information on the ""legal"" structure, see
+    [Licensing](Licensing "wikilink").' %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-%Replace% DevelopMenu %Replace% This page describes the technical
-structure of [SciJava](SciJava "wikilink") and
-[ImageJ](ImageJ "wikilink") projects. For maximum benefit, we suggest
-readers familiarize themselves with [Maven](Maven "wikilink"),
-[Git](Git "wikilink") and [GitHub](GitHub "wikilink") before reading the
-sections here.
+{% include develop-menu %}This page describes the technical structure of
+[SciJava](SciJava "wikilink") and [ImageJ](ImageJ "wikilink") projects.
+For maximum benefit, we suggest readers familiarize themselves with
+[Maven](Maven "wikilink"), [Git](Git "wikilink") and
+[GitHub](GitHub "wikilink") before reading the sections here.
 
 # Definitions
 
@@ -297,33 +292,25 @@ loading the plugin classes in advance.
 
 # Reproducible builds
 
-{% capture includecontent %} Why are reproducible builds so essential
-for science?
-
-Arguably **the most important thing** in science is to gain insights
-about nature **that can be verified by other researchers**. It is this
-mission for which [ImageJ](ImageJ "wikilink") and
-[Fiji](Fiji "wikilink") stand, and it is the central reason why they are
-[open source](open_source "wikilink").
+{% include sidebox-right title='Why are reproducible builds so essential
+for science?' width='40%' float='right' text='Arguably """the most
+important thing""" in science is to gain insights about nature """that
+can be verified by other researchers""". It is this mission for which
+[ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") stand, and it is
+the central reason why they are [open source](open_source "wikilink").
 
 To verify results, it is absolutely necessary to be able to reproduce
 results claimed in scientific articles, and in the interest of
-efficiency, it should be **easy** to reproduce the results, and it
-should **also** be easy to scrutinize the used methods—incorrect results
-can be artifacts of flawed algorithms, after all.
+efficiency, it should be """easy""" to reproduce the results, and it
+should """also""" be easy to scrutinize the used methods—incorrect
+results can be artifacts of flawed algorithms, after all.
 
-To that end, it should be obvious that researchers **need** to have the
-ability to inspect the exact source code corresponding to the software
-used to generate the results to be verified. In other words,
-reproducible builds are required for sound scientific research.
-
-{% endcapture %}
-
-{% include sidebox-right content=includecontent %}
-
-A software *version* (or *build*) is called **reproducible** if it is
-easy to regenerate the exact same software application from the source
-code.
+To that end, it should be obvious that researchers """need""" to have
+the ability to inspect the exact source code corresponding to the
+software used to generate the results to be verified. In other words,
+reproducible builds are required for sound scientific research.' %} A
+software *version* (or *build*) is called **reproducible** if it is easy
+to regenerate the exact same software application from the source code.
 
 For example, you can refer to "ImageJ 1.49g" as a *reproducible build*,
 or to *Sholl Analysis 3.4.3*, while referring to "ImageJ" is
@@ -425,12 +412,10 @@ to see the snapshot couplings go into effect; the shortcut {% include
 key content='Alt' %}+{% include key content='F5' %} while selecting the
 affected project(s) accomplishes this quickly.
 
-{% capture includecontent %} **Current versions of the Eclipse Maven
-integration (tested with Eclipse Mars) fail to correctly resolve the
-`LATEST` version tag to `SNAPSHOT`s. Use the command-line client
-instead.** {% endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='"""Current versions of the
+Eclipse Maven integration (tested with Eclipse Mars) fail to correctly
+resolve the `LATEST` version tag to `SNAPSHOT`s. Use the command-line
+client instead."""' %}
 
 Either way, ***be sure to work on a topic branch while developing code
 in this fashion.*** You will need to clean up your Git history

@@ -8,18 +8,21 @@ categories: Citable
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = FigureJ |
-maintainer = {% include person content='Mutterer' %} | author = {%
-include person content='Mutterer' %} | source = {% include github
-org='mutterer' repo='figurej' %} | status = stable | category =
-[Visualization](:Category:Visualization "wikilink"),
-[Plugins](:Category:Plugins "wikilink") | website =
-https://imagejdocu.tudor.lu/plugin/utilities/figurej/start
+{% capture maintainer %} {% include person content="Mutterer" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture author %} {% include person content="Mutterer" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %} This plugin allows easy
-creation of figures for publications, reports, projects.
+{% capture source %} {% include github org="mutterer" repo="figurej" %}
+{% endcapture %} {% include sidebox-right software='ImageJ'
+name='FigureJ' maintainer=maintainer author=author source=source
+status='stable'
+category='[Visualization](:Category:Visualization "wikilink"),
+[Plugins](:Category:Plugins "wikilink")'
+website='https://imagejdocu.tudor.lu/plugin/utilities/figurej/start'
+%}This plugin allows easy creation of figures for publications, reports,
+projects.
 
 Download, installation instructions and video tutorials can be found
 [here.](https://imagejdocu.tudor.lu/plugin/utilities/figurej/start)
@@ -32,9 +35,6 @@ Microscopy.](http://onlinelibrary.wiley.com/doi/10.1111/jmi.12069/abstract)
 
 ## Publication
 
-  - 
-{% capture includecontent %} FigureJ {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='FigureJ' %}
 
 [Category:Citable](Category:Citable "wikilink")

@@ -8,23 +8,25 @@ categories: Plugins,Segmentation,Mathematical_morphology
 description: test description
 ---
 
-{% capture includecontent %} name = Marker-controlled Watershed |
-software = IJPB-plugins | author = {% include person content='Iarganda'
-%}, David Legland | maintainer = {% include person content='Iarganda' %}
-| source = {% include github org='ijpb' repo='ijpb-plugins' %} |
-released = July 3<sup>rd</sup>, 2014 | latest version = July
-23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) |
-status = stable, active | category =
-[Segmentation](:Category:Segmentation "wikilink"), [Mathematical
-morphology](:Category:Mathematical_morphology "wikilink")
+{% capture author %} {% include person content="Iarganda" %}, David
+Legland {% endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Iarganda" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
-
-|                                                                                                                                                                                                 |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Marker-controlled flooding on the gradient image of the blobs sample.](/images/pages/Watershed-flooding-markers-blobs-gradient.gif "Marker-controlled flooding on the gradient image of the blobs sample.")" |
+{% capture source %} {% include github org="ijpb" repo="ijpb-plugins" %}
+{% endcapture %} {% include sidebox-right name='Marker-controlled
+Watershed' software='IJPB-plugins' author=author maintainer=maintainer
+source=source released='July 3<sup>rd</sup>, 2014' version='July
+23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1)'
+status='stable, active'
+category='[Segmentation](:Category:Segmentation "wikilink"),
+[Mathematical morphology](:Category:Mathematical_morphology "wikilink")'
+%}{| |style="vertical-align:top" |![Marker-controlled flooding on the
+gradient image of the blobs
+sample.](Watershed-flooding-markers-blobs-gradient.gif
+"Marker-controlled flooding on the gradient image of the blobs sample.")
+|}
 
 ## Introduction
 

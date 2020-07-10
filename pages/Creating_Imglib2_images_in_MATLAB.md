@@ -8,10 +8,10 @@ categories: ImgLib,Matlab
 description: test description
 ---
 
-%Replace% ImgLibMenu %Replace% This page recenses experiments with
-creating ImgLib2 images from [MATLAB](MATLAB "wikilink"), and then
-calling ImgLib2 algorithm from [MATLAB](MATLAB "wikilink"). We aim first
-at showing how to build ImgLib2 types from [MATLAB](MATLAB "wikilink")
+{% include imglibmenu %} This page recenses experiments with creating
+ImgLib2 images from [MATLAB](MATLAB "wikilink"), and then calling
+ImgLib2 algorithm from [MATLAB](MATLAB "wikilink"). We aim first at
+showing how to build ImgLib2 types from [MATLAB](MATLAB "wikilink")
 types, then to do that efficiently. By this we mean having to
 <b>share</b> a single, massive low level data piece between ImgLib2 and
 [MATLAB](MATLAB "wikilink"), which is not doable simply due to

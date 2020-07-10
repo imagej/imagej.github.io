@@ -8,20 +8,20 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = MRI Perfusion PlugIn | software =
-Fiji | author = {% include person content='Acsenrafilho' %}
-([1](mailto:acsenrafilho@gmail.com)) | maintainer = {% include person
-content='Acsenrafilho' %} | source = {% include github content='org =
-CSIM-Toolkits | repo = ImageJ/tree/master/plugins/MRI-Perfusion | label
-= GitHub CSIM-ImageJ MRI Perfusion repository' %} | released = February
-04<sup>th</sup>, 2015 | latest version = February 04<sup>th</sup>, 2015
-| status = experimental, active | category =
-[Plugins](:Category:Plugins "wikilink"),
-[MRI](:Category:Perfusion "wikilink")
+{% capture author %} {% include person content="Acsenrafilho" %}
+([1](mailto:acsenrafilho@gmail.com)) {% endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Acsenrafilho" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="CSIM-Toolkits"
+repo="ImageJ/tree/master/plugins/MRI-Perfusion" label="GitHub
+CSIM-ImageJ MRI Perfusion repository" %} {% endcapture %} {% include
+sidebox-right name='MRI Perfusion PlugIn' software='Fiji' author=author
+maintainer=maintainer source=source released='February 04<sup>th</sup>,
+2015' version='February 04<sup>th</sup>, 2015' status='experimental,
+active' category='[Plugins](:Category:Plugins "wikilink"),
+[MRI](:Category:Perfusion "wikilink")' %}
 
 ## Perfusion in MRI
 
@@ -96,7 +96,7 @@ It will be displayed several tables with the measures calculated in each
 pixel into the ROI. At the last column of all tables its show the mean
 values for all pixels into the ROI.
 
-%Replace% reflist %Replace%
+{% include reflist %}
 
 1.  The size of the region of interesting influence directly the time
     consuming of our plugin. Large regions could use several minutes to

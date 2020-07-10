@@ -8,7 +8,7 @@ categories: Plugins
 description: test description
 ---
 
-%Replace% TOC %Replace% %Replace% Outdated %Replace%
+{% include toc %}{% include outdated %}
 
 ## Key concepts
 

@@ -8,21 +8,19 @@ categories:  Particle analysis
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ / Fiji | name = BioVoxxel
-Toolbox | author = {% include person content='BioVoxxel' %}, {% include
-person content='Twagner' %} | website =
-[www.biovoxxel.de](http://www.biovoxxel.de/index.html) | maintainer = {%
-include person content='BioVoxxel' %} | latest version = 15. October
-2015 | source =[GitHub](https://github.com/biovoxxel/BioVoxxel_Toolbox)
-| category = [Particle
-analysis](:Category:Particle_analysis "wikilink"),
+{% capture author %} {% include person content="BioVoxxel" %}, {%
+include person content="Twagner" %} {% endcapture %}
+
+{% capture maintainer %} {% include person content="BioVoxxel" %} {%
+endcapture %} {% include sidebox-right software='ImageJ / Fiji'
+name='BioVoxxel Toolbox' author=author
+website='[www.biovoxxel.de](http://www.biovoxxel.de/index.html)'
+maintainer=maintainer version='15. October 2015'
+source='[GitHub](https://github.com/biovoxxel/BioVoxxel_Toolbox)'
+category='[Particle analysis](:Category:Particle_analysis "wikilink"),
 [Binary](:Category:Binary "wikilink"),
-[Filtering](:Category:Filtering "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %} You can setup an automatic
-update for the BioVoxxel Toolbox. Just run the
+[Filtering](:Category:Filtering "wikilink")' %}You can setup an
+automatic update for the BioVoxxel Toolbox. Just run the
 [Updater](Updater "wikilink") ({% include bc content='Help |
 Update...'%}) and switch in the main window to 'Advanced mode'. Then
 click on 'Manage update sites'. Here you simply need to activate the

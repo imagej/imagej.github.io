@@ -8,19 +8,14 @@ categories: Plugins,Registration
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | name = Manual drift
-correction | author = [Benoit Lombardot](User:Benoit "wikilink") |
-maintainer = [Benoit Lombardot](User:Benoit "wikilink") | released = 22
-March 2016 | filename =
-![Manual\_Drift\_Correction-1.0.0.jar.zip](Manual_Drift_Correction-1.0.0.jar.zip
-"Manual_Drift_Correction-1.0.0.jar.zip") | source =
-[github](https://github.com/mpicbg-scicomp/Manual_drift_correction) |
-category = [Plugins](:Category:Plugins "wikilink"),
-[Registration](:Category:Registration "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='Fiji' name='Manual drift correction'
+author='[Benoit Lombardot](User:Benoit "wikilink")' maintainer='[Benoit
+Lombardot](User:Benoit "wikilink")' released='22 March 2016'
+filename='![Manual\_Drift\_Correction-1.0.0.jar.zip](Manual_Drift_Correction-1.0.0.jar.zip
+"Manual_Drift_Correction-1.0.0.jar.zip")'
+source='[github](https://github.com/mpicbg-scicomp/Manual_drift_correction)'
+category='[Plugins](:Category:Plugins "wikilink"),
+[Registration](:Category:Registration "wikilink")' %}
 
 ## Goal of the plugin
 

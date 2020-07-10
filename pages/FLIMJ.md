@@ -8,21 +8,19 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = FLIMJ plugin |
-logo = ![Slim-curve-icon.png](/images/pages/Slim-curve-icon.png "Slim-curve-icon.png")"
-| author = [CRUK/MRC at University of
-Oxford](http://www.rob.ox.ac.uk/)  
-[UW-Madison LOCI](http://loci.wisc.edu/) | maintainer = {% include
-person content='Rueden' %} | filename = flimlib.jar,
-flimlib-*arch*-*ver*.jar,  
-flimj-ops-*ver*.jar | source = {% include github org='slim-curve'
-repo='slim-plugin' %} | latest version = 1.0.0 | website =
-https://flimlib.github.io/ | category =
-[:Category:Analysis](:Category:Analysis "wikilink")
+{% capture maintainer %} {% include person content="Rueden" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="slim-curve"
+repo="slim-plugin" %} {% endcapture %} {% include sidebox-right
+software='ImageJ' name='FLIMJ plugin'
+logo='![Slim-curve-icon.png](/images/pages/Slim-curve-icon.png "Slim-curve-icon.png")"'
+author='[CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
+[UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer
+filename='flimlib.jar, flimlib-""arch""-""ver"".jar,  
+flimj-ops-""ver"".jar' source=source version='1.0.0'
+website='https://flimlib.github.io/'
+category='[:Category:Analysis](:Category:Analysis "wikilink")' %}
 
 ## Introduction
 

@@ -8,15 +8,11 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ / Fiji plugins | name =
-Image Synthesizer | maintainer = Maximilian Maske | author = Maximilian
-Maske | released = 19.03.2018 | latest version = 19.03.2018 | category =
-[Plugins](:Category:Plugins "wikilink") | website =
-http://wiki.imagej.net/Image_Synthesizer
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ / Fiji plugins' name='Image
+Synthesizer' maintainer='Maximilian Maske' author='Maximilian Maske'
+released='19.03.2018' version='19.03.2018'
+category='[Plugins](:Category:Plugins "wikilink")'
+website='http://wiki.imagej.net/Image_Synthesizer' %}
 
 \_\_TOC\_\_
 

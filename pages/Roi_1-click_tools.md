@@ -8,16 +8,18 @@ categories: Plugins,Update Sites,Macro Tools,Citable
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = ROI 1-click
-tools | author = {% include person content='Lthomas' %} | maintainer =
-{% include person content='Lthomas' %} | update site = ROI 1-click tools
-| source = {% include github org='LauLauThom' repo='Fiji-RoiClickTools'
-%} | released = 2019 | status = active | category =
-[Analysis](:Category:Analysis "wikilink")
+{% capture author %} {% include person content="Lthomas" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Lthomas" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="LauLauThom"
+repo="Fiji-RoiClickTools" %} {% endcapture %} {% include sidebox-right
+software='ImageJ' name='ROI 1-click tools' author=author
+maintainer=maintainer site='ROI 1-click tools' source=source
+released='2019' status='active'
+category='[Analysis](:Category:Analysis "wikilink")' %}
 
 # Installation
 

@@ -8,16 +8,16 @@ categories: Tutorials,Plugins,Registration
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Align Image by
-line ROI | maintainer = {% include person content='Schindelin' %} |
-author = Johannes Schindelin | source = {% include github org='fiji'
-repo='VIB' source='Align\_Image.java' %} | released = 28/09/2006 |
-latest version = 28/09/2006 | status = stable, handles only gray images
-| category = [:Category:Registration](:Category:Registration "wikilink")
+{% capture maintainer %} {% include person content="Schindelin" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="VIB"
+source="Align\_Image.java" %} {% endcapture %} {% include sidebox-right
+software='ImageJ' name='Align Image by line ROI' maintainer=maintainer
+author='Johannes Schindelin' source=source released='28/09/2006'
+version='28/09/2006' status='stable, handles only gray images'
+category='[:Category:Registration](:Category:Registration "wikilink")'
+%}
 
 This plugin aligns an image to another image. You have to provide two
 landmarks per image by selecting a line.

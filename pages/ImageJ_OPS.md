@@ -8,8 +8,9 @@ categories: Ops
 description: test description
 ---
 
-ImageJ Ops is a framework for reusable image processing operations. Ops
-extends Java's mantra of "write once, run anywhere" to image processing
+{% include component-stats content=':net.imagej:imagej-ops' %}ImageJ Ops
+is a framework for reusable image processing operations. Ops extends
+Java's mantra of "write once, run anywhere" to image processing
 algorithms.
 
 The central goal is to enable programmers to code an image processing
@@ -109,13 +110,10 @@ using [javacpp](https://github.com/bytedeco/javacpp).
 For an interactive tool to see all available Ops, see the [Op
 Finder](Op_Finder "wikilink") documentation.
 
-For the core Ops available, you can go to the {% capture includecontent
-%} package = ?net/imagej/ops | class=package-summary | label=ImageJ Ops
-{% endcapture %}
-
-{% include javadoc content=includecontent %}
-
-`javadocs. Any class under the package net.imagej.ops is related to Ops.`
+For the core Ops available, you can go to the {% include javadoc
+package='?net/imagej/ops' class='package-summary' label='ImageJ Ops' %}
+javadocs. Any class under the package `net.imagej.ops` is related to
+Ops.
 
 You can also use the [Script Editor](Script_Editor "wikilink") in ImageJ
 and actively search using Ops itself. For example in groovy language:

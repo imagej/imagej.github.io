@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-%Replace% ImgLibMenu %Replace% In ImgLib2, images are represented by
+{% include imglibmenu %} In ImgLib2, images are represented by
 *Accessibles*. *Image* here refers to any (partial) function from
 coordinates to values.
 

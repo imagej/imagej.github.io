@@ -8,7 +8,9 @@ categories: Plugins,Registration,TrakEM2
 description: test description
 ---
 
-{| |style="vertical-align:top" |![Register Virtual Stack scheme - All
+{% include component-stats
+content=':sc.fiji:register\_virtual\_stack\_slices' %}{|
+|style="vertical-align:top" |![Register Virtual Stack scheme - All
 images are transformed to match the reference](Rvs_scheme.png
 "Register Virtual Stack scheme - All images are transformed to match the reference")
 |}

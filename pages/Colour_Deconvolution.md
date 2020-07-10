@@ -8,7 +8,8 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-Similarly to the command {% include bc content='Image | Color | RGB
+{% include component-stats content=':sc.fiji:Colour\_Deconvolution'
+%}Similarly to the command {% include bc content='Image | Color | RGB
 split'%}, this plugin unmixes an RGB image produced by subtractive
 mixing (inks, histological dyes) into separate channels corresponding to
 up to 3 determined colors. This is useful e.g. to do pigment separation.
@@ -25,7 +26,7 @@ This plugin implements the method described in the following paper:
 ` | first = A.C.`  
 ` | last2 = Johnston`  
 ` | first2 = D.A.`  
-` | Quantification of histochemical staining by color deconvolution`  
+` | title = Quantification of histochemical staining by color deconvolution`  
 ` | journal = Anal. Quant. Cytol. Histol.`  
 ` | volume = 23`  
 ` | pages = 291-299`  

@@ -8,7 +8,8 @@ categories: Plugins
 description: test description
 ---
 
-%Replace% Stub %Replace%
+{% include component-stats content=':sc.fiji:Color\_Histogram' %}{%
+include stub %}
 
 See also [Color Inspector 3D](Color_Inspector_3D "wikilink").
 

@@ -25,11 +25,9 @@ script headlessly, use:
 
     ./ImageJ-linux64 --ij2 --headless --run path/to/script [key1=value1,key2=value2,...]
 
-{% capture includecontent %} In many cases, it is necessary to enclose
-the entire list of key/value pairs in single quotes, to avoid shell
-expansion. See the following examples. {% endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='In many cases, it is necessary
+to enclose the entire list of key/value pairs in single quotes, to avoid
+shell expansion. See the following examples.' %}
 
 ## Basic run
 

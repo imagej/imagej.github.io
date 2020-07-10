@@ -8,29 +8,35 @@ categories: Plugins
 description: test description
 ---
 
-{% capture includecontent %} project = ImageJ | name = DHM Utilities |
-license = [LGPLv3](LGPLv3 "wikilink") | devStatus = {% capture
-includecontent %} developer=yes | incubating=no | obsolete=no {%
+{% capture tatus %} {% include devstatus developer="yes" incubating="no"
+obsolete="no" %} {% endcapture %}
+
+{% capture tatus %} {% include supportstatus debugger="yes"
+reviewer="yes" support="yes" %} {% endcapture %}
+
+{% capture founders %} {% include person content="David Cohoe" %}
+([1](mailto:dcohoe@pdx.edu)) {% endcapture %}
+
+{% capture leads %} {% include person content="David Cohoe" %} {%
 endcapture %}
 
-{% include devstatus content=includecontent %}
+{% capture developers %} {% include person content="David Cohoe" %} {%
+endcapture %}
 
-| supportStatus = {% capture includecontent %} debugger=yes |
-reviewer=yes | support=yes {% endcapture %}
+{% capture debuggers %} {% include person content="David Cohoe" %} {%
+endcapture %}
 
-{% include supportstatus content=includecontent %}
+{% capture reviewers %} {% include person content="David Cohoe" %} {%
+endcapture %}
 
-| founders = {% include person content='David Cohoe' %}
-([1](mailto:dcohoe@pdx.edu)) | leads = {% include person content='David
-Cohoe' %} | developers = {% include person content='David Cohoe' %} |
-debuggers = {% include person content='David Cohoe' %} | reviewers = {%
-include person content='David Cohoe' %} | support = {% include person
-content='David Cohoe' %} | maintainers = {% include person
-content='David Cohoe' %}
+{% capture support %} {% include person content="David Cohoe" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include component content=includecontent %}
+{% capture maintainers %} {% include person content="David Cohoe" %} {%
+endcapture %} {% include component project='ImageJ' name='DHM Utilities'
+license='[LGPLv3](LGPLv3 "wikilink")' tatus=tatus tatus=tatus
+founders=founders leads=leads developers=developers debuggers=debuggers
+reviewers=reviewers support=support maintainers=maintainers %}
 
 DHM Utilities is a collection of plugins for use in Digital Holographic
 Microscopy. There are three main plugins packaged with DHM Utilities:

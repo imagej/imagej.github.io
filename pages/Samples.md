@@ -8,7 +8,8 @@ categories: Plugins
 description: test description
 ---
 
-This component provides hooks which register the [Fiji sample
+{% include component-stats content=':sc.fiji:Samples\_' %}This component
+provides hooks which register the [Fiji sample
 images](https://samples.fiji.sc/) into the {% include bc content='File |
 Open Samples'%} submenu.
 

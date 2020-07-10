@@ -19,11 +19,9 @@ ImageJ](http://javadoc.imagej.net/) is similar for all of them. This
 article will introduce the basic concepts and is valid for all scripting
 languages.
 
-{% capture includecontent %} The examples are written in Groovy, but
-they are easy to adapt for any other scripting language ImageJ supports.
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='The examples are written in Groovy,
+but they are easy to adapt for any other scripting language ImageJ
+supports.' %}
 
 ## Get an image and perform an action
 

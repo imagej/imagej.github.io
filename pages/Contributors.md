@@ -8,21 +8,17 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} This page describes who *contributes* to
-[SciJava](SciJava "wikilink") projects.
+{% include sidebox-right content='This page describes who
+""contributes"" to [SciJava](SciJava "wikilink") projects.
 
-  - For information on who *maintains* these projects, see
+  - For information on who ""maintains"" these projects, see
     [Governance](Governance "wikilink").
-  - For information on how ImageJ projects are *funded*, see
+  - For information on how ImageJ projects are ""funded"", see
     [Funding](Funding "wikilink").
-  - For information on *citing* these projects, see
-    [Citing](Citing "wikilink").
+  - For information on ""citing"" these projects, see
+    [Citing](Citing "wikilink").' %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-%Replace% AboutMenu %Replace% \_\_NOTOC\_\_== Who we are ==
+{% include aboutmenu %}\_\_NOTOC\_\_== Who we are ==
 
 <div style="font-size: small">
 
@@ -142,7 +138,7 @@ Processing](KNIME "wikilink") ===
 
 </div>
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 <div style="float: left">
 
@@ -163,7 +159,7 @@ Our deep thanks to {% include person content='Rasband' %}, author of
 
 ### Institutions
 
-%Replace% reflist %Replace%
+{% include reflist %}
 
 </div>
 

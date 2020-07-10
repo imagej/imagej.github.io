@@ -10,7 +10,7 @@ description: test description
 
 Today, the [ImageJ](ImageJ "wikilink") and [KNIME](KNIME "wikilink")
 teams are pleased to announce {% include github org='imagej'
-repo='imagej-ops' label='ImageJ' %}: a framework for reusable image
+repo='imagej-ops' label='ImageJ Ops' %}: a framework for reusable image
 processing operations. This library is the direct result of an extremely
 successful hackathon hosted by Michael Berthold's team at the University
 of Konstanz, Germany.
@@ -71,7 +71,8 @@ requirements: you can think of an op as a function which takes a list of
 typed inputs, produces a list of typed outputs, and has no side effects.
 There are over 80 ops implemented so far, with {% include github
 org='imagej' repo='imagej-ops' tag='ij-ops-0.1.0' path='operations.txt'
-label='many' %}; see this ImageJ tutorial to learn about some of them:
+label='many more to come' %}; see this ImageJ tutorial to learn about
+some of them:
 
 [Using
 Ops](https://github.com/imagej/tutorials/tree/master/maven-projects/using-ops/src/main/java/UsingOps.java)

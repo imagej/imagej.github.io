@@ -8,19 +8,16 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | name = Shape Smoothing
-Plugin | author = Undral Erdenetsogt, {% include person
-content='Twagner' %} | maintainer = Undral Erdenetsogt
-(erdenetsogt@biomedical-imaging.de), {% include person content='Twagner'
-%} | filename =
-[shape-smoothing.jar](https://github.com/thorstenwagner/ij-shape-smoothing/releases/latest)
-| source =
-[Github](https://github.com/thorstenwagner/ij-shape-smoothing) | latest
-version = v1.2 (06 October 2016) | status = maintaining
+{% capture author %} Undral Erdenetsogt, {% include person
+content="Twagner" %} {% endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture maintainer %} Undral Erdenetsogt
+(erdenetsogt@biomedical-imaging.de), {% include person content="Twagner"
+%} {% endcapture %} {% include sidebox-right software='Fiji' name='Shape
+Smoothing Plugin' author=author maintainer=maintainer
+filename='[shape-smoothing.jar](https://github.com/thorstenwagner/ij-shape-smoothing/releases/latest)'
+source='[Github](https://github.com/thorstenwagner/ij-shape-smoothing)'
+version='v1.2 (06 October 2016)' status='maintaining' %}
 
 # General Purpose
 

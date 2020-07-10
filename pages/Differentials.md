@@ -8,17 +8,13 @@ categories: Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Differentials |
-maintainer = Philippe Thévenaz | author = Philippe Thévenaz | source =
-{% include github org='fiji' repo='Differentials'
-source='Differentials\_.java' %} | released = 16/09/2010 | latest
-version = 16/09/2010 | status = | category =
-[:Category:Plugins](:Category:Plugins "wikilink") | website =
-http://bigwww.epfl.ch/thevenaz/differentials/
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="Differentials"
+source="Differentials\_.java" %} {% endcapture %} {% include
+sidebox-right software='ImageJ' name='Differentials'
+maintainer='Philippe Thévenaz' author='Philippe Thévenaz' source=source
+released='16/09/2010' version='16/09/2010' status=''
+category='[:Category:Plugins](:Category:Plugins "wikilink")'
+website='http://bigwww.epfl.ch/thevenaz/differentials/' %}
 
 This plugin allows you to perform several differentiation operations on
 images, seen as continuous functions, even though they are stored as

@@ -8,26 +8,22 @@ categories: Registration,Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | name = Linear Stack
-Alignment with SIFT | maintainer = Stephan Saalfeld | author = Stephan
-Saalfeld | source = [in
-gitweb](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=SIFT_Align.java;hb=HEAD)
-| latest version = June 2008 | category =
-[:Category:Registration](:Category:Registration "wikilink") | website =
-http://fly.mpi-cbg.de/~saalfeld/Projects/javasift.html
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='Fiji' name='Linear Stack Alignment
+with SIFT' maintainer='Stephan Saalfeld' author='Stephan Saalfeld'
+source='[in
+gitweb](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=SIFT_Align.java;hb=HEAD)'
+version='June 2008'
+category='[:Category:Registration](:Category:Registration "wikilink")'
+website='http://fly.mpi-cbg.de/~saalfeld/Projects/javasift.html' %}
 
 A lightweight SIFT-implementation for Java after the paper of David
-Lowe<ref> {% capture includecontent %} author=Lowe D | title=Distinctive
-Image Features from Scale-Invariant Keypoints | journal=International
-Journal of Computer Vision | year=2004 | volume=60 | number=2 |
-pages=91-110 {% endcapture %}
+Lowe<ref> {% capture includecontent %} journal |author=Lowe D |
+title=Distinctive Image Features from Scale-Invariant Keypoints |
+journal=International Journal of Computer Vision | year=2004 | volume=60
+| number=2 | pages=91-110 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>. The ImageJ
-plugin can be used for aligning image stacks.
+{% include cite content=includecontent %} </ref>. The ImageJ plugin can
+be used for aligning image stacks.
 
 Note, that the SIFT-algorithm is protected by U.S. Patent 6,711,293:
 *Method and apparatus for identifying scale invariant features in an

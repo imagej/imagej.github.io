@@ -8,18 +8,14 @@ categories: Plugins,Tracking,Filtering
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Temporal Median
-| author = Graeme Ball, [Micron Oxford](http://www.micron.ox.ac.uk) |
-filename =
-[Temporal\_plugins.jar](http://www.micron.ox.ac.uk/microngroup/software/Temporal_plugins.jar)
-| source = {% include github org='graemeball' repo='IJ\_Temporal' %} |
-released = 2013 | latest version = | status = active | category =
-[Filtering](:Category:Filtering "wikilink") | website =
-https://github.com/graemeball/IJ_Temporal
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="graemeball"
+repo="IJ\_Temporal" %} {% endcapture %} {% include sidebox-right
+software='ImageJ' name='Temporal Median' author='Graeme Ball, [Micron
+Oxford](http://www.micron.ox.ac.uk)'
+filename='[Temporal\_plugins.jar](http://www.micron.ox.ac.uk/microngroup/software/Temporal_plugins.jar)'
+source=source released='2013' version='' status='active'
+category='[Filtering](:Category:Filtering "wikilink")'
+website='https://github.com/graemeball/IJ_Temporal' %}
 
 **Temporal Median** can be used to find moving foreground features,
 which can be be a powerful way to suppress false background detections

@@ -8,9 +8,9 @@ categories: Development
 description: test description
 ---
 
-%Replace% DevelopMenu %Replace% We make a serious effort to keep the
-ImageJ codebase clean, consistent and easy to read—which includes both
-the source code and the revision history.
+{% include develop-menu %} We make a serious effort to keep the ImageJ
+codebase clean, consistent and easy to read—which includes both the
+source code and the revision history.
 
 ## Interface-driven design
 

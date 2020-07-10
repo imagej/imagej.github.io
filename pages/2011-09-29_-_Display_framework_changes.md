@@ -8,11 +8,9 @@ categories: News,ImageJ2
 description: test description
 ---
 
-{% capture includecontent %} The following is a blog post from {%
-include person content='Rueden' %} originally published on the ImageJDev
-web site. {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture content %} The following is a blog post from {% include
+person content="Rueden" %} originally published on the ImageJDev web
+site. {% endcapture %} {% include sidebox-right content=content %}
 
 The following is a quick technical update on some work I am doing on
 ImageJ2's display hierarchy. It will mostly be of interest to other IJ2

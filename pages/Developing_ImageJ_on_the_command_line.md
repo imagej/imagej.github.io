@@ -75,12 +75,10 @@ mvn -Pexec
 
 ### Launching alternative user interfaces
 
-{% capture includecontent %} Alternative UIs are experimental and still
-at "proof of concept" stage. The `swing` UI is semi-functional, but the
-other two (`swing-mdi` and `awt`) are largely non-functional, mentioned
-here solely for completeness. {% endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='Alternative UIs are
+experimental and still at "proof of concept" stage. The `swing` UI is
+semi-functional, but the other two (`swing-mdi` and `awt`) are largely
+non-functional, mentioned here solely for completeness.' %}
 
 ``` bash
 mvn -Dscijava.ui=swing -Pexec

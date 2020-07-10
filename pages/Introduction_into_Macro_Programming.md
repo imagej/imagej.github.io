@@ -18,13 +18,11 @@ Macros can be used to
   - add tools to the toolbar
   - add keyboard shortcuts
 
-{% capture includecontent %} message = Please be aware that there are
-several other available [scripting](scripting "wikilink") languages that
-are more powerful than macros, too\! See the sidebar on the right, as
-well as the [Overcoming limitations](#Overcoming_limitations "wikilink")
-section below. {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right message='Please be aware that there are several
+other available [scripting](scripting "wikilink") languages that are
+more powerful than macros, too\! See the sidebar on the right, as well
+as the [Overcoming limitations](#Overcoming_limitations "wikilink")
+section below.' %}
 
 # Variables
 
@@ -90,7 +88,7 @@ paste this code in the [script editor](Script_Editor "wikilink"), you
 can uncomment these lines to see their errors)
 
 ``` java
-"Macro";
+title = "Macro";
 //write("The name: title");  // BAD - literally prints "title"
 write("The name: " + title); // GOOD - properly uses the title variable value
 ```
@@ -357,7 +355,7 @@ The parameters passed to *Merge Channels...* depend very much on the
 current image's name. One possible solution looks like this:
 
 ``` java
-getTitle();
+title = getTitle();
 run("Merge Channels...",
      "red=[Edges of " + title + "] green=" + title + " blue=" + title + " gray=*None*");
 ```
@@ -370,7 +368,7 @@ In order to allow spaces in the name, you might also want to add extra
 *\[...\]* around the title:
 
 ``` java
-getTitle();
+title = getTitle();
 run("Merge Channels...",
      "red=[Edges of " + title + "] green=[" + title + "] blue=[" + title + "] gray=*None*");
 ```
@@ -527,7 +525,7 @@ different timepoints of one movie.
 // join frames
 
 // get the dimensions
-getTitle();
+title = getTitle();
 getDimensions(width, height, channelCount, sliceCount, frameCount);
 
 if (frameCount > 1)

@@ -8,7 +8,7 @@ categories: ImgLib,Tutorials,Development
 description: test description
 ---
 
-%Replace% ImgLibMenu %Replace%
+{% include imglibmenu %}
 
 ## Introduction
 

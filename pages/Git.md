@@ -8,7 +8,7 @@ categories: Development,Git
 description: test description
 ---
 
-{% capture includecontent %} If Git is completely new to you, read:
+{% include sidebox-right content='If Git is completely new to you, read:
 
   - [TryGit 15-minute interactive tutorial](https://try.github.io/)
   - [Learn Git Branching interactive
@@ -16,17 +16,13 @@ description: test description
   - [Git for dummies](Git_for_dummies "wikilink") tutorial on this web
     site
 
-If you are passingly familiar with Git, but wish it wasn't so arcane,
+If you are passingly familiar with Git, but wish it wasn"t so arcane,
 check out:
 
   - [Think Like (a) Git - A Guide for the
     Perplexed](http://think-like-a-git.net/)
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-{% include develop-menu content='tools' %}Development of ImageJ and
+' %} {% include develop-menu content='tools' %}Development of ImageJ and
 related software relies heavily on [Git](http://git-scm.com/). See the
 [source code](source_code "wikilink") page for information on where the
 Git repositories reside.
@@ -46,7 +42,7 @@ Git repositories reside.
 
 <div style="float: left; padding-right: 20px">
 
-%Replace% GitMenu %Replace%
+{% include gitmenu %}
 
 </div>
 

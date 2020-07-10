@@ -8,7 +8,8 @@ categories: Citable
 description: test description
 ---
 
-[SCIFIO](https://scif.io/) is a flexible framework for **SC**ientific
+{% include component-stats content=':io.scif:scifio'
+%}[SCIFIO](https://scif.io/) is a flexible framework for **SC**ientific
 **I**mage **F**ormat **I**nput and **O**utput. In other words, it is a
 library for reading and writing N-dimensional image data—e.g., to and
 from files on disk. SCIFIO is built on the [SciJava
@@ -81,9 +82,6 @@ advantages:
 
 ## Publications
 
-  - 
-{% capture includecontent %} SCIFIO {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='SCIFIO' %}
 
 [Category:Citable](Category:Citable "wikilink")

@@ -8,18 +8,16 @@ categories: Tutorials
 description: test description
 ---
 
-{% capture includecontent %} name = Blob Tracking | software = Fiji |
-author = {% include person content='Alex-krull' %}, {% include person
-content='Damienrj' %} | maintainer = {% include person
-content='Alex-krull' %}, {% include person content='Damienrj' %} |
-source = https://github.com/alex-krull/fiji | released = May
-22<sup>nd</sup>, 2013 | latest version = May 22<sup>nd</sup>, 2013 |
-status = PreRelease, active | category =
-[Tracking](:Category:Tracking "wikilink")
+{% capture author %} {% include person content="Alex-krull" %}, {%
+include person content="Damienrj" %} {% endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture maintainer %} {% include person content="Alex-krull" %}, {%
+include person content="Damienrj" %} {% endcapture %} {% include
+sidebox-right name='Blob Tracking' software='Fiji' author=author
+maintainer=maintainer source='https://github.com/alex-krull/fiji'
+released='May 22<sup>nd</sup>, 2013' version='May 22<sup>nd</sup>, 2013'
+status='PreRelease, active'
+category='[Tracking](:Category:Tracking "wikilink")' %}
 
 This software is a tool for the tracking of low-light sub-resolution
 objects in fluorescent microscopy. It can be applied in other fields as

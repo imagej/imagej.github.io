@@ -225,12 +225,10 @@ documentation](BigDataViewer#Exporting_from_ImageJ_Stacks "wikilink").
   - Finally, you can choose the **export path**, i.e. the directory the
     .h5 file(s) are saved to.
 
-{% capture includecontent %} Be aware that re-saving a multi-terabyte
-dataset *may take several hours*. However, since most processing steps
-of BigStitcher can be done on downsampled versions of the data, this
-will save you a lot of time down the road. {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='Be aware that re-saving a
+multi-terabyte dataset ""may take several hours"". However, since most
+processing steps of BigStitcher can be done on downsampled versions of
+the data, this will save you a lot of time down the road. ' %}
 
 ![Options for re-saving as multi-resolution
 HDF5.](BigStitcherAutoLoader5.png

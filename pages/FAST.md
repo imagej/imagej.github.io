@@ -24,14 +24,10 @@ Requirements:
   - [Bio-Formats 5.x](https://www.openmicroscopy.org/bio-formats/downloads/)
     or newer.
 
-{% capture includecontent %} id = bioformat| tip = Saving
-*bioformats\_package.jar* in .\\ImageJ.app\\plugins\\ seems to be the
-best way to use the macro in stable conditions. {% endcapture %}
-
-{% include tip content=includecontent %}
-
-Use the ImageJ Updater and see the instructions [How to follow a 3rd
-party update
+{% include tip id='bioformat' tip='Saving ""bioformats\_package.jar"" in
+.\\ImageJ.app\\plugins\\ seems to be the best way to use the macro in
+stable conditions.' %} Use the ImageJ Updater and see the instructions
+[How to follow a 3rd party update
 site](https://imagej.net/How_to_follow_a_3rd_party_update_site) select
 FAST (http://sites.imagej.net/FAST) from the available site list.
 
@@ -73,11 +69,9 @@ displays a dialog box to set analysis options:
     segmenting the image into features of interest (above threshold) and
     background.
 
-{% capture includecontent %} id = Threshold | tip =***Threshold value
-must be defined for each acquisition system (microscope + camera +
-exposure time + file-type)***. {% endcapture %}
-
-{% include tip content=includecontent %}
+{% include tip id='Threshold' tip='"""""Threshold value must be defined
+for each acquisition system (microscope + camera + exposure time +
+file-type)""""".' %}
 
   - **Create ROIs** : Step 1, analyses pixels above the user-defined
     threshold value and automatically saves Regions Of Interest zip file
@@ -105,14 +99,15 @@ Each image and the corresponding ROI are opened automatically. An
 options dialog box is displayed.
 
   - If the area is correct the user must click {% include key
-    content='OK' %} to proceed with next image.
+    content='press|OK' %} to proceed with next image.
   - If the area contains non-specific signal, select {% include key
-    content='Yes' %} to *redefine area manually* and edit the ROI.
+    content='press|Yes' %} to *redefine area manually* and edit the ROI.
   - The dialog box allows to exclude current image from analysis (e.g.
     blurred image).
 
 Just select the radio button option needed then click {% include key
-content='OK' %} or {% include key content='⏎ENTER' %} to continue.
+content='press|OK' %} or {% include key content='press|⏎ENTER' %} to
+continue.
 
 ![Dialog box to redefine area](FAST_ROI-edition.png
 "Dialog box to redefine area") If you selected to *redefine area
@@ -128,20 +123,16 @@ Select the appropriate tool in ImageJ toolbar:
 ![Wand-tool.png](/images/pages/Wand-tool.png "Wand-tool.png")" Wand tool.
 
   - To remove non-specific fluorescence, use selected tool and hold {%
-    include key content='Alt' %} while unwanted area to remove it from
-    ROI.
+    include key content='press|Alt' %} while unwanted area to remove it
+    from ROI.
   - To add area to the previously selected ROI, hold {% include key
-    content='Shift' %} while selecting new area to add.
+    content='press|Shift' %} while selecting new area to add.
 
-Click {% include key content='OK' %} to confirm the new ROI.
+Click {% include key content='press|OK' %} to confirm the new ROI.
 Fluorescence is then measured and the ROI zip file is automatically
-updated.
-
-{% capture includecontent %} id = Selection| tip = In case the selection
-is empty after manual correction, the macro discards the image from
-analysis. {% endcapture %}
-
-{% include tip content=includecontent %}
+updated. {% include tip id='Selection' tip='In case the selection is
+empty after manual correction, the macro discards the image from
+analysis.' %}
 
 After completion of Step 2, a list of all measured images with filename
 is displayed in the Result Table window of ImageJ.

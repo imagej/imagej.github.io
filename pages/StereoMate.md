@@ -8,16 +8,15 @@ categories: Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = FIJI | name = StereoMate |
-author = {% include person content='stevenjwest' %} | maintainer = {%
-include person content='stevenjwest' %} | filename = Stereo\_Mate.jar |
-source = [1](https://github.com/stevenjwest/StereoMate) | released =
-August 2019 | status = stable | website =
-[2](https://imagej.net/plugins/stereomate.html)
+{% capture author %} {% include person content="stevenjwest" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture maintainer %} {% include person content="stevenjwest" %} {%
+endcapture %} {% include sidebox-right software='FIJI' name='StereoMate'
+author=author maintainer=maintainer filename='Stereo\_Mate.jar'
+source='[1](https://github.com/stevenjwest/StereoMate)' released='August
+2019' status='stable'
+website='[2](https://imagej.net/plugins/stereomate.html)' %}
 
 ## Purpose
 
@@ -35,7 +34,7 @@ described in the following paper
 ` | first = S-J.`  
 ` | last2 = Bennett`  
 ` | first2 = D-H-L.`  
-` | StereoMate: A Stereological and Automated Analysis Platform for Assessing Histological Labelling in Cleared Tissue Specimens`  
+` | title = StereoMate: A Stereological and Automated Analysis Platform for Assessing Histological Labelling in Cleared Tissue Specimens`  
 ` | journal = bioRxiv`  
 ` | doi = `https://doi.org/10.1101/648337  
 ` | date = August 2019`  

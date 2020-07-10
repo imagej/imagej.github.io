@@ -8,6 +8,8 @@ categories:
 description: test description
 ---
 
+{% include displaytitle content=':Working with ImageJ' %}
+
 This part introduces some basic aspects of ImageJ so that you can use
 the software more efficiently. It also introduces some important terms
 and concepts used throughout this guide. You may skip it if you already
@@ -1051,7 +1053,7 @@ plain RGB images are:
    if (bitDepth!=24)         // Ignore non-RGB images
        exit(&quot;This macro requires an RGB image&quot;);
  setBatchMode(true);         // Enter ‘Batch’ mode
-   getTitle();       // Retrieve the image title
+   title = getTitle();       // Retrieve the image title
    run(&quot;Make Composite&quot;);    // Run Image&gt;Color&gt;Make Composite
    run(&quot;Magenta&quot;);           // Run Image&gt;Lookup Tables&gt;Magenta on channel 1
    run(&quot;RGB Color&quot;);         // Run Image&gt;Type&gt;RGB Color

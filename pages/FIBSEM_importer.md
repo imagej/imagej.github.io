@@ -8,16 +8,13 @@ categories: Import-Export
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = FIBSEM importer
-| maintainer = Stephan Preibisch | author = Stephan Preibisch | source =
-{% include github org='fiji' repo='IO' source='io/FIBSEM\_Reader.java'
-%} | released = 08/02/2012 | latest version = 08/02/2012 | status =
-stable | category = [:Category:Plugins](:Category:Plugins "wikilink") |
-website =
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="IO"
+source="io/FIBSEM\_Reader.java" %} {% endcapture %} {% include
+sidebox-right software='ImageJ' name='FIBSEM importer'
+maintainer='Stephan Preibisch' author='Stephan Preibisch' source=source
+released='08/02/2012' version='08/02/2012' status='stable'
+category='[:Category:Plugins](:Category:Plugins "wikilink")' website=''
+%}
 
 ## Overview
 

@@ -8,17 +8,13 @@ categories: Plugins,Unmaintained
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Deep Zoom |
-author = [Aivar Grislis](http://loci.wisc.edu/people/aivar-grislis) |
-source = {% include github org='uw-loci' repo='deep-zoom-plugin' %} |
-status = inactive | category =
-[Import-Export](:Category:Import-Export "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-## Introduction
+{% capture source %} {% include github org="uw-loci"
+repo="deep-zoom-plugin" %} {% endcapture %} {% include sidebox-right
+software='ImageJ' name='Deep Zoom' author='[Aivar
+Grislis](http://loci.wisc.edu/people/aivar-grislis)' source=source
+status='inactive'
+category='[Import-Export](:Category:Import-Export "wikilink")' %}==
+Introduction ==
 
 ![Deep-zoom-1.png](/images/pages/Deep-zoom-1.png "Deep-zoom-1.png")"
 ![Deep-zoom-2.png](/images/pages/Deep-zoom-2.png "Deep-zoom-2.png")"

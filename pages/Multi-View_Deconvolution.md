@@ -8,18 +8,15 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = Multi-view deconvolution plugin |
-software = ImageJ | author = Stephan Preibisch, Fernando Amat, Eugene
-Myers, Pavel Tomancak | maintainer = Stephan Preibisch | source = {%
-include github org='fiji' repo='SPIM\_Registration' %} | filename =
-SPIM\_Registration.jar | released = February 2013 | latest version =
-June 2013 | category = [SPIM
-Registration](:Category:Registration "wikilink") | website = [Stephan
-Preibisch's homepage](http://fly.mpi-cbg.de/~preibisch)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji"
+repo="SPIM\_Registration" %} {% endcapture %} {% include sidebox-right
+name='Multi-view deconvolution plugin' software='ImageJ' author='Stephan
+Preibisch, Fernando Amat, Eugene Myers, Pavel Tomancak'
+maintainer='Stephan Preibisch' source=source
+filename='SPIM\_Registration.jar' released='February 2013' version='June
+2013' category='[SPIM Registration](:Category:Registration "wikilink")'
+website='[Stephan Preibisch"s
+homepage](http://fly.mpi-cbg.de/~preibisch)' %}
 
 ## Citation
 

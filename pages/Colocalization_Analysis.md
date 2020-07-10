@@ -8,13 +8,9 @@ categories: Cookbook,Tutorials,Colocalization,Color processing
 description: test description
 ---
 
-{% capture includecontent %} See
+{% include bigsidebox-right content='See
 [:Category:Colocalization](:Category:Colocalization "wikilink") for
-pages about colocalization. {% endcapture %}
-
-{% include big-notice content=includecontent %}
-
-{% include learn content='techniques' %}
+pages about colocalization.' %} {% include learn content='techniques' %}
 
 ## What is colocalization?
 

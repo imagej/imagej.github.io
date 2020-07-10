@@ -8,18 +8,15 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = FPBioimage
-Helper Plugin | logo = ![FPB\_Logo.png](/images/pages/FPB_Logo.png "FPB_Logo.png")" |
-author = [FPBioimage](http://fpb.ceb.cam.ac.uk)  
-Marcus Fantham | Maintainer = Marcus Fantham | source = {% include
-github org='fpBioimage' repo='FPBioimageHelper-FIJI' %}
-
-{% endcapture %}
-
-{% include info-box content=includecontent %} FPBioimage is an
-interactive tool for viewing volumetric data in the web browser. To
+{% capture source %} {% include github org="fpBioimage"
+repo="FPBioimageHelper-FIJI" %} {% endcapture %} {% include
+sidebox-right software='ImageJ' name='FPBioimage Helper Plugin'
+logo='![FPB\_Logo.png](/images/pages/FPB_Logo.png "FPB_Logo.png")"'
+author='[FPBioimage](http://fpb.ceb.cam.ac.uk)  
+Marcus Fantham' aintainer='Marcus Fantham' source=source %}FPBioimage is
+an interactive tool for viewing volumetric data in the web browser. To
 quickly share 3D data with your collaborators using FPBioimage, we
-provide this useful plugin for ImageJ and FIJI. %Replace% TOC %Replace%
+provide this useful plugin for ImageJ and FIJI. {% include toc %}
 
 ## Installation
 
@@ -83,10 +80,10 @@ macro "FPB Upload Action Tool - C111F00ffCeeeD21D24D71D81Dc1Dd1De1CfffL3137L393e
 ## Source code
 
 The source code for the FPBioimage FIJI plugin is {% include github
-content='org = fpbioimage | repo = FPBioimageHelper-FIJI' %}.
+org='fpbioimage' repo='FPBioimageHelper-FIJI' %}.
 
 The source code for the FPBioimage web app can also be accessed {%
-include github content='org = fpbioimage | repo = unity' %}.
+include github org='fpbioimage' repo='unity' %}.
 
 ## Publication
 

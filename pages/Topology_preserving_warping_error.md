@@ -18,14 +18,15 @@ The **warping error** is a
 disagreements over boundary location, penalizes topological
 disagreements, and can be used directly as a cost function for learning
 boundary detection<ref name="Viren2010"> {% capture includecontent %}
-author = V. Jain, B. Bollmann, M. Richardson, D.R. Berger, M.N.
+journal |author = V. Jain, B. Bollmann, M. Richardson, D.R. Berger, M.N.
 Helmstaedter, K.L. Briggman, W. Denk, J.B. Bowden, J.M. Mendenhall, W.C.
 Abraham,
 
 `   K.M. Harris, N. Kasthuri, K.J. Hayworth, R. Schalek, J.C. Tapia, J.W. Lichtman, S.H. Seung`
 
-| Boundary Learning by Optimization with Topological Constraints |
-book2010 IEEE CONFERENCE ON COMPUTER VISION AND PATTERN RECOGNITION
+| title = Boundary Learning by Optimization with Topological Constraints
+| booktitle = 2010 IEEE CONFERENCE ON COMPUTER VISION AND PATTERN
+RECOGNITION
 
 `   (CVPR)`
 
@@ -35,7 +36,7 @@ Recognition | pages = 2488-2495 | organization = IEEE Comp Soc | doi =
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>.
+{% include cite content=includecontent %} </ref>.
 
 In other words, instead of focusing on the geometric differences (pixel
 disagreement) between two segmentations, the **warping error** focuses

@@ -8,16 +8,12 @@ categories: Plugins
 description: test description
 ---
 
-{% capture includecontent %} name = Fourier Ring Correlation | software
-= Fiji | author = Olivier Burri, Alex Herbert | maintainer = Olivier
-Burri | filename = FRC\_-1.0.2.jar | released = September 2016 | latest
-version = July 2018 | source = [github
-page](https://github.com/BIOP/ijp-frc) | status = stable | website =
-[BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right name='Fourier Ring Correlation' software='Fiji'
+author='Olivier Burri, Alex Herbert' maintainer='Olivier Burri'
+filename='FRC\_-1.0.2.jar' released='September 2016' version='July 2018'
+source='[github page](https://github.com/BIOP/ijp-frc)' status='stable'
+website='[BIOP Staff
+Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
 
 # Updates
 
@@ -60,15 +56,15 @@ Making use of the Fourier Ring Correlation Implementation by Alex
 Herbert which is itself adapted from the FIRE (Fourier Image REsolution)
 plugin produced as part of the paper **Niewenhuizen, et al (2013).
 Measuring image resolution in optical nanoscopy. Nature Methods, 10,
-557** <ref> {% capture includecontent %} issn = 1548-7091| volume = 10|
-issue = 6| pages = 557–562| last1 = Nieuwenhuizen| first1 = Robert P J|
-last2 = Lidke| first2 = Keith A| last3 = Bates| first3 = Mark| last4 =
-Puig| first4 = Daniela Leyton| last5 = Grunwald| first5 = David| last6 =
-Stallinga| first6 = Sjoerd| last7 = Rieger| first7 = Bernd| Measuring
-image resolution in optical nanoscopy| journal = Nat Meth| date =
-2013-06 {% endcapture %}
+557** <ref> {% capture includecontent %} journal| issn = 1548-7091|
+volume = 10| issue = 6| pages = 557–562| last1 = Nieuwenhuizen| first1 =
+Robert P J| last2 = Lidke| first2 = Keith A| last3 = Bates| first3 =
+Mark| last4 = Puig| first4 = Daniela Leyton| last5 = Grunwald| first5 =
+David| last6 = Stallinga| first6 = Sjoerd| last7 = Rieger| first7 =
+Bernd| title = Measuring image resolution in optical nanoscopy| journal
+= Nat Meth| date = 2013-06 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>
+{% include cite content=includecontent %} </ref>
 
 # Details
 
@@ -87,14 +83,14 @@ There are three threshold methods currently implemented
 
 Please see the publication **van Hell and Schatz, Fourier shell
 correlation threshold criteria, Journal of Structural Biology 151,
-2005**<ref> {% capture includecontent %} doi =
+2005**<ref> {% capture includecontent %} journal| doi =
 10.1016/j.jsb.2005.05.009| issn = 1047-8477| volume = 151| issue = 3|
 pages = 250–262| last1 = van Heel| first1 = Marin| last2 = Schatz|
-first2 = Michael| Fourier shell correlation threshold criteria| journal
-= Journal of Structural Biology| date = 2005-09 {% endcapture %}
+first2 = Michael| title = Fourier shell correlation threshold criteria|
+journal = Journal of Structural Biology| date = 2005-09 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref> for more
-information on the calculation of these criteria.
+{% include cite content=includecontent %} </ref> for more information on
+the calculation of these criteria.
 
 ## Image Calibration
 
@@ -200,6 +196,6 @@ which was very well documented.
 
 ## References
 
-%Replace% Reflist %Replace%
+{% include reflist %}
 
 [Category:Plugins](Category:Plugins "wikilink")

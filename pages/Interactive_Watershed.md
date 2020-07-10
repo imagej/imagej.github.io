@@ -10,17 +10,14 @@ description: test description
 
 \_\_TOC\_\_
 
-{% capture includecontent %} software = ImageJ/Fiji | name = Interactive
-H\_Watershed | author = [Benoit Lombardot](User:Benoit "wikilink") |
-maintainer = [Benoit Lombardot](User:Benoit "wikilink") | released = 08
-May 2017 | filename = SCF-MPI-CBG update site | source = {% include
-github org='mpicbg-scicomp' repo='Interactive-H-Watershed' %} | category
-= [Plugins](:Category:Plugins "wikilink"),
-[Segmentation](:Category:Segmentation "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="mpicbg-scicomp"
+repo="Interactive-H-Watershed" %} {% endcapture %} {% include
+sidebox-right software='ImageJ/Fiji' name='Interactive H\_Watershed'
+author='[Benoit Lombardot](User:Benoit "wikilink")' maintainer='[Benoit
+Lombardot](User:Benoit "wikilink")' released='08 May 2017'
+filename='SCF-MPI-CBG update site' source=source
+category='[Plugins](:Category:Plugins "wikilink"),
+[Segmentation](:Category:Segmentation "wikilink")' %}
 
 ![InteractiveWatershed\_illustration.PNG](InteractiveWatershed_illustration.PNG
 "InteractiveWatershed_illustration.PNG")
@@ -294,20 +291,14 @@ quality against raw data (Right Panel).
 In ImageJ macro language one can perform a H-Watershed segmentation with
 the following command:
 
-{% capture includecontent %}
-org=mpicbg-scicomp|repo=Interactive-H-Watershed|path=scripts/macro\_IJ1.ijm
-{% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='mpicbg-scicomp'
+repo='Interactive-H-Watershed' path='scripts/macro\_IJ1.ijm' %}
 
 In a Jython script the H-Watershed segmentation could be called as
 follows:
 
-{% capture includecontent %}
-org=mpicbg-scicomp|repo=Interactive-H-Watershed|path=scripts/jython\_Ops.py
-{% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='mpicbg-scicomp'
+repo='Interactive-H-Watershed' path='scripts/jython\_Ops.py' %}
 
 The run commands are also recorded by the macro recorder when exporting
 a label map.

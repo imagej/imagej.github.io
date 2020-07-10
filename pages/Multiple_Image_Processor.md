@@ -8,18 +8,14 @@ categories: Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Multiple Image
-Processor | maintainer = [at rcm.upr.edu](mailto:ngonzalez) | author =
-Nathaniel Gonzalez Santiago | source = {% include github org='fiji'
-repo='M\_I\_P' %} | released = 10/10/2005 | latest version = 10/10/2005
-| status = stable | category =
-[:Category:Plugins](:Category:Plugins "wikilink") | website = [Center
-for Information Architecture in
-Research](http://ciar.rcm.upr.edu/projects/imageprocessor/multiples)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="M\_I\_P" %} {%
+endcapture %} {% include sidebox-right software='ImageJ' name='Multiple
+Image Processor' maintainer='[at rcm.upr.edu](mailto:ngonzalez)'
+author='Nathaniel Gonzalez Santiago' source=source released='10/10/2005'
+version='10/10/2005' status='stable'
+category='[:Category:Plugins](:Category:Plugins "wikilink")'
+website='[Center for Information Architecture in
+Research](http://ciar.rcm.upr.edu/projects/imageprocessor/multiples)' %}
 
 ## Multiple Image Processor
 

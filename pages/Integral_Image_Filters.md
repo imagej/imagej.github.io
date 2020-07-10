@@ -8,27 +8,26 @@ categories: Plugins,Filtering,Integral Image
 description: test description
 ---
 
-{% capture includecontent %} name = Integral Image Filters | software =
-Fiji | author = {% include person content='Saalfeld' %}
-([1](mailto:saalfeld@mpi-cbg.de)) | maintainer = {% include person
-content='Saalfeld' %} | source =
-[GitHub](https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/integral)
-| released = March 21<sup>st</sup>, 2011 | latest version = February
-22<sup>nd</sup>, 2012 | status = stable, active | category =
-[Plugins](:Category:Plugins "wikilink"),
-[Filtering](:Category:Filtering "wikilink")
+{% capture author %} {% include person content="Saalfeld" %}
+([1](mailto:saalfeld@mpi-cbg.de)) {% endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %} {% include youtube
+{% capture maintainer %} {% include person content="Saalfeld" %} {%
+endcapture %} {% include sidebox-right name='Integral Image Filters'
+software='Fiji' author=author maintainer=maintainer
+source='[GitHub](https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/integral)'
+released='March 21<sup>st</sup>, 2011' version='February
+22<sup>nd</sup>, 2012' status='stable, active'
+category='[Plugins](:Category:Plugins "wikilink"),
+[Filtering](:Category:Filtering "wikilink")' %}{% include youtube
 url="https://www.youtube.com/embed/p1mhZqj2VTY" %}
 
 Integral images have been introduced in by Crow (1984)<ref> {% capture
-includecontent %} last = Crow
+includecontent %} conference
 
+`| last = Crow`  
 `| first = Franklin C.`  
-`| Summed-area tables for texture mapping`  
-`| bookProceedings of the 11`<sup>`th`</sup>` annual conference on Computer graphics and interactive techniques`  
+`| title = Summed-area tables for texture mapping`  
+`| booktitle = Proceedings of the 11`<sup>`th`</sup>` annual conference on Computer graphics and interactive techniques`  
 `| series = SIGGRAPH '84`  
 `| year = 1984`  
 `| pages = 207–212`  
@@ -40,33 +39,35 @@ includecontent %} last = Crow
 
 {% endcapture %}
 
-{% include cite-conference content=includecontent %}
+{% include cite content=includecontent %}
 
 </ref> as a technique to improve texture rendering speed at multiple
 scales in perspective projections. The technique has since then been
 used for a number of applications. The most popular examples are fast
-normalized cross-correlation<ref> {% capture includecontent %} first =
-J. P.
+normalized cross-correlation<ref> {% capture includecontent %}
+conference
 
+`| first = J. P.`  
 `| last = Lewis`  
-`| bookVision Interface`  
+`| booktitle = Vision Interface`  
 `| volume = 95`  
 `| pages = 120–123`  
 `| publisher = Canadian Image Processing and Pattern Recognition Society`  
-`| Fast template matching`  
+`| title = Fast template matching`  
 `| year = 1995`
 
 {% endcapture %}
 
-{% include cite-conference content=includecontent %} </ref>, the
-[Viola-Jones object detection
+{% include cite content=includecontent %} </ref>, the [Viola-Jones
+object detection
 framework](wikipedia:Viola%E2%80%93Jones_object_detection_framework "wikilink")<ref>
-{% capture includecontent %} first1 = Paul
+{% capture includecontent %} journal
 
+`| first1 = Paul`  
 `| last1 = Viola`  
 `| first2 = Michael J.`  
 `| last2 = Jones`  
-`| Robust Real-Time Face Detection`  
+`| title = Robust Real-Time Face Detection`  
 `| journal = International Journal of Computer Vision`  
 `| pages = 137–154`  
 `| volume = 57`  
@@ -75,10 +76,11 @@ framework](wikipedia:Viola%E2%80%93Jones_object_detection_framework "wikilink")<
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>, and the
-[Speeded Up Robust Feature (SURF)](wikipedia:SURF "wikilink")
-transform<ref> {% capture includecontent %} first1 = Herbert
+{% include cite content=includecontent %} </ref>, and the [Speeded Up
+Robust Feature (SURF)](wikipedia:SURF "wikilink") transform<ref> {%
+capture includecontent %} journal
 
+`| first1 = Herbert`  
 `| last1 = Bay`  
 `| first2 = Andreas`  
 `| last2 = Ess`  
@@ -86,7 +88,7 @@ transform<ref> {% capture includecontent %} first1 = Herbert
 `| last3 = Tuytelaars`  
 `| first4 = Luc`  
 `| last4 = Van Gool`  
-`| SURF: Speeded Up Robust Features`  
+`| title = SURF: Speeded Up Robust Features`  
 `| journal = Computer Vision and Image Understanding (CVIU)`  
 `| volume = 110`  
 `| number = 3`  
@@ -95,9 +97,8 @@ transform<ref> {% capture includecontent %} first1 = Herbert
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>. In Fiji, we
-currently use Integral Images for a number of basic statistic block
-filters.
+{% include cite content=includecontent %} </ref>. In Fiji, we currently
+use Integral Images for a number of basic statistic block filters.
 
 ## Basic Block Statistics with Integral Images (Summed-Area Tables)
 

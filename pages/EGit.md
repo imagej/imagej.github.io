@@ -8,8 +8,8 @@ categories: Git
 description: test description
 ---
 
-%Replace% GitMenu %Replace% This page provides an introduction on how to
-start using the [EGit](http://www.eclipse.org/egit/) extension in the
+{% include gitmenu %} This page provides an introduction on how to start
+using the [EGit](http://www.eclipse.org/egit/) extension in the
 [Eclipse](Eclipse "wikilink") IDE for software development.
 
 ## Installing EGit in Eclipse

@@ -8,24 +8,21 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} The **Batch Processor** plugin is currently
-in development, and its functionality is still subject to substantial
-changes in the near future. For an overview of current batch processing
-options, see the [Batch Processing](Batch_Processing "wikilink") page.
-{% endcapture %}
+{% include warning-sidebox-right content='The """Batch Processor"""
+plugin is currently in development, and its functionality is still
+subject to substantial changes in the near future. For an overview of
+current batch processing options, see the [Batch
+Processing](Batch_Processing "wikilink") page.' %}
 
-{% include warning-box content=includecontent %}
+{% capture maintainer %} {% include person content="Eglinger" %} {%
+endcapture %}
 
-{% capture includecontent %} name = Batch Processor | software =
-ImageJ/SciJava | update site = batch-processor (testing only\!) | author
-= Jan Eglinger, FMI Basel | maintainer = {% include person
-content='Eglinger' %} | filename = batch-processor.jar | source = {%
-include github org='fmi-faim' repo='batch-processor' %} | released = N/A
-| latest version = N/A | status = active, unstable
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fmi-faim"
+repo="batch-processor" %} {% endcapture %} {% include sidebox-right
+name='Batch Processor' software='ImageJ/SciJava' site='batch-processor
+(testing only\!)' author='Jan Eglinger, FMI Basel' maintainer=maintainer
+filename='batch-processor.jar' source=source released='N/A'
+version='N/A' status='active, unstable' %}
 
 **Batch Processor** aims to simplify batch processing tasks in ImageJ
 across scripting languages, independent of the dataset structure, and by

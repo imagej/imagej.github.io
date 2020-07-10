@@ -8,32 +8,24 @@ categories: Citable,Plugins,Analysis
 description: test description
 ---
 
-{% capture includecontent %} This page is a placeholder. Please help
-improve its content. {% endcapture %}
+{% include sidebox-right content='This page is a placeholder. Please
+help improve its content.' %}
 
-{% include info-box content=includecontent %}
-
-{% capture includecontent %} software = Fiji/ImageJ | name = SME
-Projection | author = | maintainer = | source = {% include github org=''
-repo='' %} | released = | status = | latest version = | category =
-[Plugins](:Category:Plugins "wikilink"),
-[Analysis](:Category:Analysis "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %} Smooth manifold extraction
+{% capture source %} {% include github org="biocompibens" repo="SME" %}
+{% endcapture %} {% include sidebox-right software='Fiji/ImageJ'
+name='SME Projection' author='' maintainer='' source=source released=''
+status='' version='' category='[Plugins](:Category:Plugins "wikilink"),
+[Analysis](:Category:Analysis "wikilink")' %}Smooth manifold extraction
 (SME) is a remarkable alternative to the traditional
 \[https://imagej.net/docs/guide/146-28.html#sub:Z-Project... Maximum
 Intensity Projection\] (MIP). You can read more about it in the [SME
 manuscript](https://www.nature.com/articles/ncomms15554). Code and
-binaries are available {% include github org='' repo='' %}.
+binaries are available {% include github org='biocompibens' repo='SME'
+%}.
 
 ## Publication
 
-  - 
-{% capture includecontent %} SME {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='SME' %}
 
 [Category:Citable](Category:Citable "wikilink")
 [Category:Plugins](Category:Plugins "wikilink")

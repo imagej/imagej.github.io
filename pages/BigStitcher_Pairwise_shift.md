@@ -46,12 +46,10 @@ multiple channels (if present) and which downsampling to use.
     calculation. Select a predefined downsampling factor or choose your
     own.
 
-{% capture includecontent %} In our experience, some downsampling (2-4x)
-improves results over using raw image data, as it reduces noise in the
-images. It also dramatically speeds up computations, so we advise using
-moderate downsampling in this step {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='In our experience, some downsampling
+(2-4x) improves results over using raw image data, as it reduces noise
+in the images. It also dramatically speeds up computations, so we advise
+using moderate downsampling in this step ' %}
 
 ![BigStitcher\_stitch\_2.png](BigStitcher_stitch_2.png
 "BigStitcher_stitch_2.png")
@@ -62,11 +60,9 @@ moderate downsampling in this step {% endcapture %}
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")
 
-{% capture includecontent %} When calculating pairwise shifts, we use
-only the **overlapping parts of two views**. This reduces the amount of
-data we have to look at and speeds up the computation, but might lead to
-incorrect results if the initial overlap (e.g. the positions loaded from
-metadata or manual grid specification) of the images is too small. {%
-endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='When calculating pairwise
+shifts, we use only the """overlapping parts of two views""". This
+reduces the amount of data we have to look at and speeds up the
+computation, but might lead to incorrect results if the initial overlap
+(e.g. the positions loaded from metadata or manual grid specification)
+of the images is too small. ' %}

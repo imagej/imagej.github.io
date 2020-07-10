@@ -8,14 +8,10 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Dithering |
-author = Gabriel Landini | maintainer = Gabriel Landini (G.Landini at
-bham. ac. uk) | filename = Dithering\_.txt | source = See below | latest
-version = v1.0 (17 May 2009) | status = active
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Dithering'
+author='Gabriel Landini' maintainer='Gabriel Landini (G.Landini at bham.
+ac. uk)' filename='Dithering\_.txt' source='See below' version='v1.0 (17
+May 2009)' status='active' %}
 
 ## Purpose
 

@@ -231,7 +231,8 @@ PlotData=
       - Fixed Eclipse configuration to run enforcer only upon initial
         configuration ({% include github org='scijava'
         repo='pom-scijava'
-        commit='022a7bea5ebbc5b81ffae7386a26eea8f8677e3f' %})
+        commit='022a7bea5ebbc5b81ffae7386a26eea8f8677e3f
+        scijava/pom-scijava@022a7bea' %})
 
 <!-- end list -->
 

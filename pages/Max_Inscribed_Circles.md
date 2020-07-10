@@ -8,16 +8,13 @@ categories: Plugins
 description: test description
 ---
 
-{% capture includecontent %} name = Max Inscribed Circles | software =
-Fiji | author = Olivier Burri, Romain Guiet | maintainer = Olivier Burri
-| filename = Max\_Inscribed\_Circle.jar | released = August 2015 |
-latest version = July 2016 | source = {% include github org='ptbiop'
-repo='ijp-max-inscribed-circles' %} | status = stable | website = [BIOP
-Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="ptbiop"
+repo="ijp-max-inscribed-circles" %} {% endcapture %} {% include
+sidebox-right name='Max Inscribed Circles' software='Fiji'
+author='Olivier Burri, Romain Guiet' maintainer='Olivier Burri'
+filename='Max\_Inscribed\_Circle.jar' released='August 2015'
+version='July 2016' source=source status='stable' website='[BIOP Staff
+Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
 
 ## Purpose
 

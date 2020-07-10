@@ -19,9 +19,9 @@ first released in 1987, shared on floppy disks.
 {% capture includecontent %} last = Schneider | first = C. A. | last2 =
 Rasband | first2 = W. S. | last3 = Eliceiri | first3 = K. W. | year =
 2012 | journal = Nature methods | url =
-http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html | NIH
-Image to ImageJ: 25 years of image analysis | volume = 9(7) | pages =
-671-675 | pmid = 22930834 {% endcapture %}
+http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html | title
+= NIH Image to ImageJ: 25 years of image analysis | volume = 9(7) |
+pages = 671-675 | pmid = 22930834 {% endcapture %}
 
 {% include citation content=includecontent %} .
 

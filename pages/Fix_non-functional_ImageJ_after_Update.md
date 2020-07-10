@@ -8,7 +8,7 @@ categories: Tutorials
 description: test description
 ---
 
-%Replace% Outdated %Replace%
+{% include outdated %}
 
 Unfortunately, there was a bug in the [ImageJ
 updater](Fiji_Updater "wikilink") that affected the update of the
@@ -25,7 +25,7 @@ content='Ctrl' %}+{% include key content='click' %} on the Fiji icon and
 select *Open Package Contents* and open the *jars/* directory you see
 there). After that, the Updater should magically repair itself.
 
-If that still fails, please download a fresh copy from here: %Replace%
-DownloadFiji %Replace%
+If that still fails, please download a fresh copy from here: {% include
+downloadfiji %}
 
 [Category:Tutorials](Category:Tutorials "wikilink")

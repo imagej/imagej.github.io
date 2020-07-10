@@ -57,15 +57,13 @@ length unit for the selected views.
 ![BigStitcher\_registration\_calibration.png](BigStitcher_registration_calibration.png
 "BigStitcher_registration_calibration.png")
 
-{% capture includecontent %} As mentioned in the dialog, this will only
-change the metadata and leave computed registrations (including the
-scaling to isotropic x,y and z-resolution) as-is. Use **Apply
-Transformation(s)** and **Apply on top of Calibration** to update the
-isotropy scaling. This will remove other transformations however, so
-please make sure that the calibration is set correctly **before**
-starting any registration/stitching. {% endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='As mentioned in the dialog,
+this will only change the metadata and leave computed registrations
+(including the scaling to isotropic x,y and z-resolution) as-is. Use
+"""Apply Transformation(s)""" and """Apply on top of Calibration""" to
+update the isotropy scaling. This will remove other transformations
+however, so please make sure that the calibration is set correctly
+"""before""" starting any registration/stitching.' %}
 
 ## Apply Transformation(s)
 

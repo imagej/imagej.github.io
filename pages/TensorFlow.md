@@ -8,17 +8,14 @@ categories: Related Software,Citable,SciJava
 description: test description
 ---
 
-{% capture includecontent %} software = TensorFlow | name = TensorFlow |
-logo = ![Tensorflow-logo.png](/images/pages/Tensorflow-logo.png "Tensorflow-logo.png")"
-| author = [Google Brain](wikipedia:Google_Brain "wikilink") team |
-maintainer = TensorFlow developers | source = {% include github
-org='tensorflow' repo='tensorflow' %} | website =
-https://www.tensorflow.org/
-
-{% endcapture %}
-
-{% include info-box-plugin content=includecontent %}
-[TensorFlow](https://www.tensorflow.org/) is an
+{% capture source %} {% include github org="tensorflow"
+repo="tensorflow" %} {% endcapture %} {% include sidebox-right
+content='Plugin' software='TensorFlow' name='TensorFlow'
+logo='![Tensorflow-logo.png](/images/pages/Tensorflow-logo.png "Tensorflow-logo.png")"'
+author='[Google Brain](wikipedia:Google_Brain "wikilink") team'
+maintainer='TensorFlow developers' source=source
+website='https://www.tensorflow.org/'
+%}[TensorFlow](https://www.tensorflow.org/) is an
 [open-source](open-source "wikilink") software library for [machine
 intelligence](wikipedia:Artificial_intelligence "wikilink").
 
@@ -30,15 +27,12 @@ support refining models based on additional training images from ImageJ.
 
 ## Publication
 
-  - 
-{% capture includecontent %} TensorFlow {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='TensorFlow' %}
 
 ## See also
 
   - {% include github org='imagej' repo='imagej-tensorflow'
-    label='ImageJ-TensorFlow' %}.
+    label='ImageJ-TensorFlow on GitHub' %}.
   - The TensorFlow [update site](update_site "wikilink") to make
     TensorFlow features available in ImageJ.
   - [Microscope Focus Quality](Microscope_Focus_Quality "wikilink"), an

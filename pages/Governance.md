@@ -8,20 +8,16 @@ categories: Development
 description: test description
 ---
 
-{% capture includecontent %} This page describes the *social* structure
-of [SciJava](SciJava "wikilink") projects.
+{% include sidebox-right content='This page describes the ""social""
+structure of [SciJava](SciJava "wikilink") projects.
 
-  - For information on the *technical* structure, see
+  - For information on the ""technical"" structure, see
     [Architecture](Architecture "wikilink").
-  - For information on the *legal* structure, see
-    [Licensing](Licensing "wikilink").
+  - For information on the ""legal"" structure, see
+    [Licensing](Licensing "wikilink").' %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-%Replace% AboutMenu %Replace% The [ImageJ](ImageJ "wikilink") project,
-and related projects in the [SciJava](SciJava "wikilink") software
+{% include aboutmenu %}The [ImageJ](ImageJ "wikilink") project, and
+related projects in the [SciJava](SciJava "wikilink") software
 ecosystem, are governed as [open source](open_source "wikilink")
 software projects. Everybody is welcome to
 [contribute](contribute "wikilink") with [plugins](plugins "wikilink"),
@@ -329,9 +325,9 @@ Birgit Möller</p></td>
 and Saalfeld vote on primary decisions, with Pietzsch's vote breaking
 ties.  
 <sup>2</sup> Barber leads development of the {% include github
-org='slim-curve' repo='slim-curve' label='SLIM' %}; Rueden leads
-development of the {% include github org='slim-curve' repo='slim-plugin'
-label='SLIM' %}.
+org='slim-curve' repo='slim-curve' label='SLIM Curve C library' %};
+Rueden leads development of the {% include github org='slim-curve'
+repo='slim-plugin' label='SLIM Curve plugin for ImageJ' %}.
 
 ## Further reading
 

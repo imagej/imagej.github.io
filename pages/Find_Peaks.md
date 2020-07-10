@@ -10,20 +10,21 @@ description: test description
 
 <seo metak="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" metad="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" />
 
-{% capture includecontent %} software = ImageJ/Fiji | name = Find Peaks
-| maintainer = [ BAR update site](BAR "wikilink") | author = {% include
-person content='Tiago' %} | filename = {% include github org='tferr'
-repo='Scripts'
-path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/Find\_Peaks.bsh'
-%} | source = {% include github org='tferr' repo='Scripts'
-path='README.md\#data-analysis' %} | released = February 2014 | category
-= [Analysis](:Category:Analysis "wikilink"),
+{% capture author %} {% include person content="Tiago" %} {% endcapture
+%}
+
+{% capture filename %} {% include github org="tferr" repo="Scripts"
+path="BAR/src/main/resources/scripts/BAR/Data\_Analysis/Find\_Peaks.bsh"
+%} {% endcapture %}
+
+{% capture source %} {% include github org="tferr" repo="Scripts"
+path="README.md\#data-analysis" %} {% endcapture %} {% include
+sidebox-right software='ImageJ/Fiji' name='Find Peaks' maintainer='[ BAR
+update site](BAR "wikilink")' author=author filename=filename
+source=source released='February 2014'
+category='[Analysis](:Category:Analysis "wikilink"),
 [Scripting](:Category:Scripting "wikilink"),
-[Plugins](:Category:Plugins "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+[Plugins](:Category:Plugins "wikilink")' %}
 
 A [BAR](BAR "wikilink") script (written in
 [BeanShell](Beanshell_Scripting "wikilink")) that retrieves local maxima

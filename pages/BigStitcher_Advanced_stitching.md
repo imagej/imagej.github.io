@@ -27,11 +27,9 @@ Wizard|Stitch dataset (expert) ...'%}
 We currently support three different ways of calculating pairwise
 shifts.
 
-{% capture includecontent %} We strongly advice to try the default
-**Phase Correlation** first, as it tends to give the most robust results
-in comparison to the more specialized methods below. {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='We strongly advice to try the default
+"""Phase Correlation""" first, as it tends to give the most robust
+results in comparison to the more specialized methods below.' %}
 
 ## Advanced phase correlation
 
@@ -180,14 +178,12 @@ calculations and how to group them.
 ![BigStitcher\_stitch\_8.png](BigStitcher_stitch_8.png
 "BigStitcher_stitch_8.png")
 
-{% capture includecontent %} Theoretically, you can use the second
-dialog to generate arbitrary groupings of the data, e.g. compare
+{% include warning-sidebox-right content='Theoretically, you can use the
+second dialog to generate arbitrary groupings of the data, e.g. compare
 Channels but group Tiles for chromatic shift correction. Not all of
 these groupings might make sense and not all of them can be properly
-visualized in the UI (e.g. for *interactive link preview*). Note that
+visualized in the UI (e.g. for ""interactive link preview""). Note that
 you have to use for the same grouping of the data in the subsequent
-*global optimization* step. {% endcapture %}
-
-{% include warning-box content=includecontent %}
+""global optimization"" step.' %}
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")

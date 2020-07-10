@@ -12,25 +12,26 @@ description: test description
 
 <div style="float:right;">
 
-{% capture includecontent %} software = ImageJ/Fiji | name = BAR |
-maintainer = {% include person content='Tiago' %} | source = {% include
-github org='tferr' repo='Scripts' %} | released = June 2014 | latest
-version = **1.1.13 March 2017** ({% include github org='tferr'
-repo='Scripts/releases' label='Changelog' %}) | category =
-[Analysis](:Category:Analysis "wikilink"),
+{% capture maintainer %} {% include person content="Tiago" %} {%
+endcapture %}
+
+{% capture source %} {% include github org="tferr" repo="Scripts" %} {%
+endcapture %}
+
+{% capture version %} """1.1.13 March 2017""" ({% include github
+org="tferr" repo="Scripts/releases" label="Changelog" %}) {% endcapture
+%} {% include sidebox-right software='ImageJ/Fiji' name='BAR'
+maintainer=maintainer source=source released='June 2014' version=version
+category='[Analysis](:Category:Analysis "wikilink"),
 [Annotation](:Category:Image_annotation "wikilink"),
 [Filtering](:Category:Filtering "wikilink"),
 [Segmentation](:Category:Segmentation "wikilink"),
-[Scripting](:Category:Scripting "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+[Scripting](:Category:Scripting "wikilink")' %}
 
 </div>
 
-%Replace% TOC %Replace% **BAR**: A collection of **B**roadly
-**A**pplicable **R**outines.
+{% include toc %} **BAR**: A collection of **B**roadly **A**pplicable
+**R**outines.
 
 The collection contains [Macros](Macros "wikilink"),
 [Scripts](Scripts "wikilink") and [Plugins](Plugins "wikilink") focused
@@ -51,7 +52,7 @@ it. Enjoy BAR\!
 BAR files are accessible through a dedicated top-level menu subdivided
 in task-oriented categories. All routines should be documented on {%
 include github org='tferr' repo='Scripts' path='README.md\#ij-bar'
-label='' %}.
+label='GitHub' %}.
 
 Some of the scripts have a dedicated documentation page, others feature
 built-in help, while a handful were deemed too simple to require
@@ -64,20 +65,23 @@ open all the scripts using the [Shift key](#OpeningBAR "wikilink").
 [right|Overview of BAR (v1.0.0)](File:BARsnapshot.png "wikilink")
 
   - {% include github org='tferr' repo='Scripts'
-    path='README.md\#analysis' label='' %}<span id="Analysis"></span>  
+    path='README.md\#analysis' label='Analysis'
+    %}<span id="Analysis"></span>  
     {% include github org='tferr' repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#log-dog-spot-counter'
-    label='LoG-DoG' %}, {% include github org='tferr' repo='Scripts'
+    label='LoG-DoG Spot Counter' %}, {% include github org='tferr'
+    repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multi-roi-profiler'
-    label='Multi' %}, {% include github org='tferr' repo='Scripts'
+    label='Multi ROI Profiler' %}, {% include github org='tferr'
+    repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multichannel-plot-profile'
-    label='Multichannel' %}, {% include github org='tferr'
+    label='Multichannel Plot Profile' %}, {% include github org='tferr'
     repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multichannel-zt-axis-profile'
-    label='Multichannel' %}, {% include github org='tferr'
-    repo='Scripts'
+    label='Multichannel ZT-axis Profile' %}, {% include github
+    org='tferr' repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#smoothed-plot-profile'
-    label='Smoothed' %}
+    label='Smoothed Plot Profile' %}
 
 <!-- end list -->
 
@@ -86,28 +90,33 @@ open all the scripts using the [Shift key](#OpeningBAR "wikilink").
     %}<span id="Annotation"></span>  
     {% include github org='tferr' repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Annotation/README.md\#combine-orthogonal-views'
-    label='Combine' %}, {% include github org='tferr' repo='Scripts'
+    label='Combine Orthogonal Views' %}, {% include github org='tferr'
+    repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Annotation/README.md\#cumulative-z-project'
-    label='Cumulative' %}, {% include github org='tferr' repo='Scripts'
+    label='Cumulative Z Project' %}, {% include github org='tferr'
+    repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Annotation/README.md\#roi-color-coder'
-    label='ROI' %}
+    label='ROI Color Coder' %}
 
 <!-- end list -->
 
   - {% include github org='tferr' repo='Scripts'
-    path='README.md\#data-analysis' label='Data'
+    path='README.md\#data-analysis' label='Data Analysis'
     %}<span id="Data_Analysis"></span>  
     {% include github org='tferr' repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-boxplot'
-    label='Create' %}, {% include github org='tferr' repo='Scripts'
+    label='Create Boxplot' %}, {% include github org='tferr'
+    repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-polar-plot'
-    label='Create' %}, {% include github org='tferr' repo='Scripts'
+    label='Create Polar Plot' %}, {% include github org='tferr'
+    repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#distribution-plotter'
-    label='Distribution' %}, [Find Peaks](Find_Peaks "wikilink"), [Fit
+    label='Distribution Plotter' %}, [Find
+    Peaks](Find_Peaks "wikilink"), [Fit
     Polynomial](Sholl_Analysis#Complementary_Tools "wikilink"), {%
     include github org='tferr' repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#interactive-plotting'
-    label='Interactive' %}
+    label='Interactive Plotting' %}
 
 <!-- end list -->
 
@@ -116,23 +125,28 @@ open all the scripts using the [Shift key](#OpeningBAR "wikilink").
     %}<span id="Segmentation"></span>  
     {% include github org='tferr' repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#shen-castan-edge-detector'
-    label='Shen-Castan' %}, {% include github org='tferr' repo='Scripts'
+    label='Shen-Castan Edge Detector' %}, {% include github org='tferr'
+    repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#apply-threshold-to-roi'
-    label='Apply' %}, {% include github org='tferr' repo='Scripts'
+    label='Apply Threshold To ROI' %}, {% include github org='tferr'
+    repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#clear-thresholded-pixels'
-    label='Clear' %}, {% include github org='tferr' repo='Scripts'
+    label='Clear Thresholded Pixels' %}, {% include github org='tferr'
+    repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#remove-isolated-pixels'
-    label='Remove' %}, {% include github org='tferr' repo='Scripts'
+    label='Remove Isolated Pixels' %}, {% include github org='tferr'
+    repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#threshold-from-background'
-    label='Threshold' %}, {% include github org='tferr' repo='Scripts'
+    label='Threshold From Background' %}, {% include github org='tferr'
+    repo='Scripts'
     path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#wipe-background'
-    label='Wipe' %}
+    label='Wipe Background' %}
 
 <!-- end list -->
 
   - {% include github org='tferr' repo='Scripts'
     path='README.md\#snippets' label='Snippets' %}, {% include github
-    org='tferr' repo='Scripts' path='/lib\#lib' label='BAR'
+    org='tferr' repo='Scripts' path='/lib\#lib' label='BAR lib'
     %}<span id="SnippetsList"> and {% include github org='tferr'
     repo='Scripts' path='BAR/src/main/resources/tutorials/'
     label='Tutorials' %}</span>  
@@ -141,20 +155,20 @@ open all the scripts using the [Shift key](#OpeningBAR "wikilink").
 <!-- end list -->
 
   - {% include github org='tferr' repo='Scripts'
-    path='README.md\#tools-and-toolsets' label='Tools'
+    path='README.md\#tools-and-toolsets' label='Tools and Toolsets'
     %}<span id="Tools"></span>  
     {% include github org='tferr' repo='Scripts'
-    path='Tools/README.md\#calibration-menu' label='Calibration' %}, {%
+    path='Tools/README.md\#calibration-menu' label='Calibration Menu'
+    %}, {% include github org='tferr' repo='Scripts'
+    path='Tools/README.md\#list-folder-menu' label='List Folder Menu'
+    %}, {% include github org='tferr' repo='Scripts'
+    path='Tools/README.md\#segment-profile-tool' label='Segment Profile'
+    %}, {% include github org='tferr' repo='Scripts'
+    path='Tools/README.md\#shortcuts-menu' label='Shortcuts Menu' %}, {%
     include github org='tferr' repo='Scripts'
-    path='Tools/README.md\#list-folder-menu' label='List' %}, {% include
-    github org='tferr' repo='Scripts'
-    path='Tools/README.md\#segment-profile-tool' label='Segment' %}, {%
-    include github org='tferr' repo='Scripts'
-    path='Tools/README.md\#shortcuts-menu' label='Shortcuts' %}, {%
-    include github org='tferr' repo='Scripts'
-    path='Tools/README.md\#roi-manager-tools' label='ROI' %}, {% include
-    github org='tferr' repo='Scripts'
-    path='Tools/README.md\#toolset-creator' label='Toolset' %}
+    path='Tools/README.md\#roi-manager-tools' label='ROI Manager Tools'
+    %}, {% include github org='tferr' repo='Scripts'
+    path='Tools/README.md\#toolset-creator' label='Toolset Creator' %}
 
 <!-- end list -->
 
@@ -173,20 +187,15 @@ Menu Tool* (<span style="border-bottom:1px dotted #ccc;">BAR▷ Tool
 Installers▷ Install Shortcuts Menu</span>), that registers frequently
 used commands in the ImageJ toolbar, 4) by
 [pressing](#ExpediteAccess "wikilink") {% include key
-content='[L](#ExpediteAccess "wikilink")' %}, or 5) from other [scripts,
-macros and plugins](#Scripting_BARs "wikilink").
+content='press|[L](#ExpediteAccess "wikilink")' %}, or 5) from other
+[scripts, macros and plugins](#Scripting_BARs "wikilink").
 
-{% capture includecontent %} id = OpeningBAR | tip = You can open any
-BAR script by holding {% include key content='Shift' %} while selecting
-its name from the
+{% capture tip %} You can open any BAR script by holding {% include key
+content="press|Shift" %} while selecting its name from the
 <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. For
 pre-compiled java plugins, the source code is available through the
 <span style="border-bottom:1px dotted #ccc;">About BAR...</span>
-command.
-
-{% endcapture %}
-
-{% include tip content=includecontent %}
+command. {% endcapture %} {% include tip id='OpeningBAR' tip=tip %}
 
 ### Context Menu
 
@@ -291,8 +300,9 @@ command-line interfaces. Here are some examples:
 
 You can use <span style="border-bottom:1px dotted #ccc;">Plugins▷
 Shortcuts▷ Create Shortcut...</span> to assign hotkeys (e.g., keyboard
-key that you do not use frequently such as {% include key content='0' %}
-or {% include key content='F7' %}) to any script registered in the
+key that you do not use frequently such as {% include key
+content='press|0' %} or {% include key content='press|F7' %}) to any
+script registered in the
 <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. These
 shortcuts will be listed in
 <span style="border-bottom:1px dotted #ccc;">Plugins▷ Shortcuts▷</span>
@@ -315,21 +325,14 @@ into the text area of <span style="border-bottom:1px dotted #ccc;">Edit▷
 Options▷ Startup...</span> so that they can be executed when ImageJ
 starts up.
 
-{% capture includecontent %} id = ExpediteAccess | tip = Two other
-expedite ways of retrieving commands include: 1) Pressing {% include key
-content='L' %}, the shortcut for the [Command
-Launcher](Using_the_Command_Launcher "wikilink") and 2) Pressing {%
-include key content='9' %}, the default shortcut for the *Recent
-Commands* list.
-
-{% endcapture %}
-
-{% include tip content=includecontent %}
-
-## Scripting BARs
-
-Although BARs can be used as standalone commands, the scripts and
-plugins in BAR become more useful when incorporated into other routines.
+{% capture tip %} Two other expedite ways of retrieving commands
+include: 1) Pressing {% include key content="press|L" %}, the shortcut
+for the [Command Launcher](Using_the_Command_Launcher "wikilink") and 2)
+Pressing {% include key content="press|9" %}, the default shortcut for
+the ""Recent Commands"" list. {% endcapture %} {% include tip
+id='ExpediteAccess' tip=tip %}== Scripting BARs == Although BARs can be
+used as standalone commands, the scripts and plugins in BAR become more
+useful when incorporated into other routines.
 
 You can use BARs as a starting point for your own workflows. Whether you
 are just looking to automate a simple task or you are an advanced
@@ -364,28 +367,22 @@ contains some utilities to help you manage your scripts:
     browser of the operating system.  
     Search BAR: Searches the contents of BAR files.
 
-{% capture includecontent %} id = API | tip = BAR provides several
-utility methods that simplify the creation of
-[Snippets](#Snippets "wikilink") and [BAR lib](#BAR_lib "wikilink")
-usage. These are documented in the [BAR
-API](http://tferr.github.io/Scripts/apidocs/), that can be accessed
-using {% include bc content='BAR|About BAR...'%}. {% include bc
-content='About BAR...'%} also provides links to several online resources
-including the [ImageJ Search Portal](http://search.imagej.net), [ImageJ
+{% capture tip %} BAR provides several utility methods that simplify the
+creation of \_\_\_SHADOW2\_\_\_ and \_\_\_SHADOW3\_\_\_ usage. These are
+documented in the [BAR API](http://tferr.github.io/Scripts/apidocs/),
+that can be accessed using {% include bc content="BAR|About BAR..."%}.
+{% include bc content="About BAR..."%} also provides links to several
+online resources including the [ImageJ Search
+Portal](http://search.imagej.net), [ImageJ
 Javadocs](http://javadoc.imagej.net), and the [GitHub
-documentation](https://github.com/tferr/Scripts#ij-bar) of BAR.
-
-{% endcapture %}
-
-{% include tip content=includecontent %}
-
-<span id="lib"></span>
+documentation](https://github.com/tferr/Scripts#ij-bar) of BAR. {%
+endcapture %} {% include tip id='API' tip=tip %} <span id="lib"></span>
 
 ### BAR lib
 
 {% include learn content='scripting' %}{% include github org='tferr'
-repo='Scripts' path='/lib/README.md\#lib' label='BAR' %} (stored in the
-*/BAR/lib/* directory) are centralized libraries
+repo='Scripts' path='/lib/README.md\#lib' label='BAR libs' %} (stored in
+the */BAR/lib/* directory) are centralized libraries
 ([BeanShell](BeanShell_Scripting "wikilink"),
 [IJM](Introduction_into_Macro_Programming "wikilink") and
 [Python](Jython_Scripting "wikilink"), etc.) that can be shared across
@@ -419,7 +416,7 @@ Run it in the [Script Editor](Script_Editor "wikilink") ({% include bc
 content='File|New|Script...'%}), and you should be greeted by a *"BAR
 lib successfully loaded"* message. Further details are provided on the
 {% include github org='tferr' repo='Scripts' path='/lib\#lib'
-label='GitHub' %} and on the documentation of the
+label='GitHub lib page' %} and on the documentation of the
 [bar.Utils](http://tferr.github.io/Scripts/apidocs/index.html?bar/Utils.html)
 class.
 
@@ -496,62 +493,39 @@ def myRoutines():
     PythonInterpreter().execfile(script)
 ```
 
-{% capture includecontent %} id = BuiltinProcessor | tip = Note also
-that there is an [easier](Batch_Processing#Easy_option "wikilink") (but
-less flexible) way to [batch process](Batch_Processing "wikilink") a
-folder: The built-in
+{% capture tip %} Note also that there is an \_\_\_SHADOW2\_\_\_ (but
+less flexible) way to \_\_\_SHADOW3\_\_\_ a folder: The built-in
 <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷
-Macro...</span> [command](Batch_Processing#Easy_option "wikilink").
+Macro...</span> \_\_\_SHADOW4\_\_\_.
 
 In this case, you only need to paste the contents of your `myRoutines()`
 function into the text area of the command. However, by default,
 <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷
-Macro...</span> assumes you want to process *all* the files in a
+Macro...</span> assumes you want to process ""all"" the files in a
 directory. If that is not the case, i.e., you want to restrict the
 processing to certain file types, you will have to use
-[regex](wikipedia:Regular_expression "wikilink") to instruct the
-built-in command on the file extensions to be considered (see
-[Commander](#Commander "wikilink")'s built-in help for several regex
-examples). E.g., typing the following in the *File name contains* field
-of <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷
+\_\_\_SHADOW5\_\_\_ to instruct the built-in command on the file
+extensions to be considered (see \_\_\_SHADOW6\_\_\_"s built-in help for
+several regex examples). E.g., typing the following in the ""File name
+contains"" field of
+<span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷
 Macro...</span>, would restrict processing to `.tif`, `.stk` and `.oib`
 files (the default extensions specified in the `validExtension()`
-function of {% include github org='tferr' repo='Scripts'
-path='Snippets/Process\_Folder\_IJM.ijm'
-label='Process\_Folder\_IJM.ijm' %}):
+function of {% include github org="tferr" repo="Scripts"
+path="Snippets/Process\_Folder\_IJM.ijm"
+label="Process\_Folder\_IJM.ijm" %}):
 
 ``` java
-(.*(\.(?i)(tif|stk|oib))$)
-```
-
+(.*(\.(?i)(tif
 {% endcapture %}
+{% include tip id='BuiltinProcessor' tip=tip %}
+=== Example: Batch Randomization of Filenames ===
+The default task of both the Python and IJM implementation of {% include github org='tferr' repo='Scripts' path='Snippets/README.md#batch-processors' label='BAR' %} ''Process Folder'' scripts is
+filename randomization: 1) They copy images from one folder to another, 2) Rename their filenames using a random string and 3) Log changes to a CSV table (so that id of randomized filename can be traced back to the original file). This approach allows for blind analyses of datasets that are sensitive to user interpretation. Below are the descriptions of {% include github org='tferr' repo='Scripts' path='Snippets/Process_Folder_PY.py' label='Process_Folder_PY.py' %} and {% include github org='tferr' repo='Scripts' path='Snippets/Process_Folder_IJM.ijm' label='Process_Folder_IJM.ijm' %}.
 
-{% include tip content=includecontent %}
-
-### Example: Batch Randomization of Filenames
-
-The default task of both the Python and IJM implementation of {% include
-github org='tferr' repo='Scripts'
-path='Snippets/README.md\#batch-processors' label='BAR' %} *Process
-Folder* scripts is filename randomization: 1) They copy images from one
-folder to another, 2) Rename their filenames using a random string and
-3) Log changes to a CSV table (so that id of randomized filename can be
-traced back to the original file). This approach allows for blind
-analyses of datasets that are sensitive to user interpretation. Below
-are the descriptions of {% include github org='tferr' repo='Scripts'
-path='Snippets/Process\_Folder\_PY.py' label='Process\_Folder\_PY.py' %}
-and {% include github org='tferr' repo='Scripts'
-path='Snippets/Process\_Folder\_IJM.ijm'
-label='Process\_Folder\_IJM.ijm' %}.
-
-##### Python
-
-In Python we can use the [uuid
-module](http://docs.python.org/library/uuid.html) to generate a random
-filename (rational [here](http://stackoverflow.com/a/10501355)). The
-result is an impressively succinct function:
-
-``` python
+===== Python =====
+In Python we can use the [http://docs.python.org/library/uuid.html uuid module] to generate a random filename (rational [http://stackoverflow.com/a/10501355 here]). The result is an impressively succinct function:
+<source lang="python">
 def myRoutines(image):
     import uuid
     image.setTitle( str(uuid.uuid4()) )
@@ -624,11 +598,13 @@ processed:
 csvWriter.writerow([old_filename, new_filename])
 ```
 
-Visit the {% include github org='tferr' repo='Scripts' label='BAR' %} to
-check how the assembled script ({% include github org='tferr'
-repo='Scripts' path='Snippets/Process\_Folder\_PY.py?raw=true'
+Visit the {% include github org='tferr' repo='Scripts' label='BAR
+repository' %} to check how the assembled script ({% include github
+org='tferr' repo='Scripts'
+path='Snippets/Process\_Folder\_PY.py?raw=true'
 label='Process\_Folder\_PY.py' %}) {% include github org='tferr'
-repo='Scripts' path='Snippets/Process\_Folder\_PY.py' label='looks' %}.
+repo='Scripts' path='Snippets/Process\_Folder\_PY.py' label='looks like'
+%}.
 
 #### IJ Macro Language
 
@@ -784,7 +760,7 @@ function myRoutines() {
   - Can I contribute to BAR?  
     Yes, please do\! If you have some suggestions on how to improve it,
     do {% include github org='tferr' repo='Scripts'
-    path='README.md\#help' label='let' %}.
+    path='README.md\#help' label='let us know' %}.
 
 <!-- end list -->
 
@@ -792,13 +768,13 @@ function myRoutines() {
     In a case of premature termination BARs tend to exit rather
     silently. The best way to have insights on an unexpected error is to
     run it directly from the [Script Editor](Script_Editor "wikilink"):
-    Open the script by holding {% include key content='Shift' %} while
-    selecting it from the
+    Open the script by holding {% include key content='press|Shift' %}
+    while selecting it from the
     <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu, press
     *Run* and have a look at the editors' s console, where all sort of
     useful messages will be printed to. Do {% include github org='tferr'
-    repo='Scripts' path='README.md\#help' label='let' %} if you have
-    found a bug.
+    repo='Scripts' path='README.md\#help' label='let us know' %} if you
+    have found a bug.
 
 <!-- end list -->
 

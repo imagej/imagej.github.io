@@ -8,7 +8,8 @@ categories: Plugins,Tracking,Citable
 description: test description
 ---
 
-The **ToAST** plugin (Tool for Automated Sporozoite Tracking)
+{% include component-stats content=':sc.fiji:ToAST\_' %}The **ToAST**
+plugin (Tool for Automated Sporozoite Tracking)
 
 ToAST is a Fiji plugin performing tracking and analysis of motile
 fluorescent objects highly customized to study malaria sporozoite

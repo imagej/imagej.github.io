@@ -10,21 +10,22 @@ description: test description
 
 <div style="float:right;">
 
-{% capture includecontent %} software = ImageJ/Fiji | name =
-PillarTracker | author = {% include person content='Xu Xiaochun' %}, {%
-include person content='Felix Martin Margadant' %} | maintainer = {%
-include person content='Xu Xiaochun' %} | source = {% include github
-org='scottreen' repo='PillarTracker' %} | released = June 2017 | latest
-version = **1.1.6 May 2018** | status = stable, active | category =
-[Tracking](:Category:Tracking "wikilink"),
+{% capture author %} {% include person content="Xu Xiaochun" %}, {%
+include person content="Felix Martin Margadant" %} {% endcapture %}
+
+{% capture maintainer %} {% include person content="Xu Xiaochun" %} {%
+endcapture %}
+
+{% capture source %} {% include github org="scottreen"
+repo="PillarTracker" %} {% endcapture %} {% include sidebox-right
+software='ImageJ/Fiji' name='PillarTracker' author=author
+maintainer=maintainer source=source released='June 2017'
+version='"""1.1.6 May 2018"""' status='stable, active'
+category='[Tracking](:Category:Tracking "wikilink"),
 [Visualization](:Category:Visualization "wikilink"),
 [Filtering](:Category:Filtering "wikilink"),
 [Analysis](:Category:Analysis "wikilink"),
-[Plugins](:Category:Plugins "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+[Plugins](:Category:Plugins "wikilink")' %}
 
 </div>
 

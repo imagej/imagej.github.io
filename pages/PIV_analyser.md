@@ -8,8 +8,9 @@ categories: Plugins,Optic Flow,Citable
 description: test description
 ---
 
-This plugin calculates the optic flow for each pair of images made with
-the given stack.
+{% include component-stats content=':sc.fiji:PIV\_analyser' %}This
+plugin calculates the optic flow for each pair of images made with the
+given stack.
 
 ## Principle
 
@@ -25,7 +26,7 @@ using imaging and image analysis<ref>
 ` | first2 = C.`  
 ` | last3 = Kompenhans`  
 ` | first3 = J.`  
-` | Particle Image Velocimetry: A Practical Guide`  
+` | title = Particle Image Velocimetry: A Practical Guide`  
 ` | place = Berlin`  
 ` | publisher = Springer-Verlag`  
 ` | year = 2007`  
@@ -85,7 +86,7 @@ Here are two examples of its first applications in Biology:
     ` | first5 = E.`  
     ` | last6 =  Beaurepaire`  
     ` | first6 = E.`  
-    ` | In vivo modulation of morphogenetic movements in Drosophila embryos with femtosecond laser pulses`  
+    ` | title = In vivo modulation of morphogenetic movements in Drosophila embryos with femtosecond laser pulses`  
     ` | journal = PNAS`  
     ` | volume = 102`  
     ` | pages = 1047-1052`  
@@ -106,7 +107,7 @@ Here are two examples of its first applications in Biology:
     `| first5 = S.E.`  
     `| last6 = Gharib`  
     `| first6 = M.`  
-    `| Intracardiac fluid forces are an essential epigenetic factor for embryonic cardiogenesis`  
+    `| title = Intracardiac fluid forces are an essential epigenetic factor for embryonic cardiogenesis`  
     `| journal = Nature`  
     `| volume = 421`  
     `| pages = 172-177`  

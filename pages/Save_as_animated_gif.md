@@ -8,16 +8,12 @@ categories: Tutorials,Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Save as animated
-gif | author = Ryan Raz | maintainer = Johannes Schindelin | filename =
-IO\_.jar | source = {% include github org='fiji' repo='IO'
-source='io/Gif\_Stack\_Writer.java' %} | latest version = March 2002 |
-status = stable | category =
-[Import/Export](:Category:Import-Export "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="IO"
+source="io/Gif\_Stack\_Writer.java" %} {% endcapture %} {% include
+sidebox-right software='ImageJ' name='Save as animated gif' author='Ryan
+Raz' maintainer='Johannes Schindelin' filename='IO\_.jar' source=source
+version='March 2002' status='stable'
+category='[Import/Export](:Category:Import-Export "wikilink")' %}
 
 1.  Go to menu {% include bc content='Images | Stacks | Tools |
     Animation options...'%}

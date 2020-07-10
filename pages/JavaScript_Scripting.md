@@ -33,11 +33,8 @@ may no longer function correctly when run with current ImageJ versions
 
 ### Importing classes
 
-{% capture includecontent %} lang=JavaScript {% endcapture %}
-
-{% include importing-classes content=includecontent %}
-
-You can specify imports in JavaScript as follows:
+{% include importing-classes lang='JavaScript' %} You can specify
+imports in JavaScript as follows:
 
 ``` javascript
 importClass(Packages.java.io.File)
@@ -280,9 +277,9 @@ imp.show();
 For a complex example see the example script {% include github
 repo='fiji'
 path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js'
-label='Multithreaded' %}, which, beyond parallelization, illustrates how
-to pass functions as arguments to other functions, and how to invoke
-them with variable number of arguments.
+label='Multithreaded Image Processing in Javascript' %}, which, beyond
+parallelization, illustrates how to pass functions as arguments to other
+functions, and how to invoke them with variable number of arguments.
 
 #### Functions as Objects
 

@@ -8,11 +8,11 @@ categories: Plugins,Registration,Stitching
 description: test description
 ---
 
-{% capture includecontent %} *Please note that this version of the
-Stitching is deprecated. A new version is available here: [Image
-Stitching](Image_Stitching "wikilink")* {% endcapture %}
+{% include warning-sidebox-right content='""Please note that this
+version of the Stitching is deprecated. A new version is available here:
+[Image Stitching](Image_Stitching "wikilink")""' %}
 
-{% include warning-box content=includecontent %}
+{% include component-stats content=':sc.fiji:Stitching\_' %}
 
 ## Citation
 

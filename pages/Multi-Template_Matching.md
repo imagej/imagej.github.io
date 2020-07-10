@@ -8,17 +8,19 @@ categories: Plugins,Citable,Feature Extraction,Jython,Object Detection
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Multi-Template
-Matching | author = {% include person content='Lthomas' %}, J.Gehrig |
-maintainer = {% include person content='Lthomas' %} | update site =
-Multi-Template-Matching | source = {% include github org='LauLauThom'
-repo='MultiTemplateMatching' %} | released = 2019 | status = active |
-category = [Analysis](:Category:Analysis "wikilink") [Feature
-Extraction](:Category:Feature_Extraction "wikilink")
+{% capture author %} {% include person content="Lthomas" %}, J.Gehrig {%
+endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Lthomas" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="LauLauThom"
+repo="MultiTemplateMatching" %} {% endcapture %} {% include
+sidebox-right software='ImageJ' name='Multi-Template Matching'
+author=author maintainer=maintainer site='Multi-Template-Matching'
+source=source released='2019' status='active'
+category='[Analysis](:Category:Analysis "wikilink") [Feature
+Extraction](:Category:Feature_Extraction "wikilink")' %}
 
 ![Multi-Template-Matching-MontageGUI.png](Multi-Template-Matching-MontageGUI.png
 "Multi-Template-Matching-MontageGUI.png")

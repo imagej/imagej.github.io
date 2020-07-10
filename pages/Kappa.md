@@ -8,17 +8,17 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = Kappa | logo = | software = Fiji |
-author = {% include person content='Hadim' %} | maintainer = {% include
-person content='Hadim' %} | source = {% include github org='brouhardlab'
-repo='Kappa' %} | released = 13/10/2017 | status = v1.5.6, Stable |
-category = Analysis, Curvature
+{% capture author %} {% include person content="Hadim" %} {% endcapture
+%}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Hadim" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
-
-\_\_TOC\_\_
+{% capture source %} {% include github org="brouhardlab" repo="Kappa" %}
+{% endcapture %} {% include sidebox-right name='Kappa' logo=''
+software='Fiji' author=author maintainer=maintainer source=source
+released='13/10/2017' status='v1.5.6, Stable' category='Analysis,
+Curvature' %} \_\_TOC\_\_
 
 ## Presentation
 

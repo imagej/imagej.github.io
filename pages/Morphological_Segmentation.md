@@ -8,22 +8,25 @@ categories: Plugins,Segmentation,Mathematical_morphology,Citable
 description: test description
 ---
 
-{% capture includecontent %} name = Morphological Segmentation |
-software = IJPB-plugins | author = {% include person content='Iarganda'
-%}, David Legland | maintainer = {% include person content='Iarganda' %}
-| source = {% include github org='ijpb' repo='MorphoLibJ' %} | released
-= July 3<sup>rd</sup>, 2014 | latest version = July 23<sup>rd</sup>,
-2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) | status = stable,
-active | category = [Segmentation](:Category:Segmentation "wikilink"),
-[Mathematical morphology](:Category:Mathematical_morphology "wikilink")
+{% capture author %} {% include person content="Iarganda" %}, David
+Legland {% endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Iarganda" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
-
-|                                                                                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Visual description of the different steps of the Morphological Segmentation plugin.](/images/pages/Morphological-Segmentation-animation-blobs.gif "Visual description of the different steps of the Morphological Segmentation plugin.")" |
+{% capture source %} {% include github org="ijpb" repo="MorphoLibJ" %}
+{% endcapture %} {% include sidebox-right name='Morphological
+Segmentation' software='IJPB-plugins' author=author
+maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014'
+version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink")
+v1.4.1)' status='stable, active'
+category='[Segmentation](:Category:Segmentation "wikilink"),
+[Mathematical morphology](:Category:Mathematical_morphology "wikilink")'
+%}{| |style="vertical-align:top" |![Visual description of the different
+steps of the Morphological Segmentation
+plugin.](Morphological-Segmentation-animation-blobs.gif
+"Visual description of the different steps of the Morphological Segmentation plugin.")
+|}
 
 ## Introduction
 
@@ -321,10 +324,7 @@ in the suite.
 If you need to cite the plugin, please do so by citing the following
 paper:
 
-  - 
-{% capture includecontent %} MorphoLibJ {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='MorphoLibJ' %}
 
 To cite the implementation, [MorphoLibJ](MorphoLibJ "wikilink")'s code
 repository has its own [DOI](http://dx.doi.org/10.5281/zenodo.50694).

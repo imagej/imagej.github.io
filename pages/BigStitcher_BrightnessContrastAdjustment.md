@@ -26,11 +26,9 @@ mode** under {% include bc content='Processing|Intensity Adjustment'%}.
 ![BigStitcher\_Intensity\_Adjustment\_menu.png](BigStitcher_Intensity_Adjustment_menu.png
 "BigStitcher_Intensity_Adjustment_menu.png")
 
-{% capture includecontent %} Calculating the intensity adjustment
+{% include sidebox-right content='Calculating the intensity adjustment
 requires the images to be aligned, therefore use it as a last step after
-registration before fusing the dataset. {% endcapture %}
-
-{% include info-box content=includecontent %}
+registration before fusing the dataset.' %}
 
 ### Usage
 
@@ -75,12 +73,10 @@ The options at the bottom of the dialog set the values for λ1 and λ2:
     values give more weight to an identiy transformation, i.e. leaving
     the corrected intensity values as close to the original as possible.
 
-{% capture includecontent %} If λ1 and λ2 are both set to 0, the fitted
-transformation might converge to *I*(x) \* 0 + β1, i.e. setting all
-intensities equal. To prevent this, please always use values ≥ 0 for at
-least one of the regularization parameters. {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='If λ1 and λ2 are both set to 0, the
+fitted transformation might converge to ""I""(x) \* 0 + β1, i.e. setting
+all intensities equal. To prevent this, please always use values ≥ 0 for
+at least one of the regularization parameters.' %}
 
 #### Displaying
 

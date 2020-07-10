@@ -8,7 +8,8 @@ categories: Plugins
 description: test description
 ---
 
-{| |style="vertical-align:top" |![Volume Calculator user
+{% include component-stats content=':sc.fiji:Volume\_Calculator' %}{|
+|style="vertical-align:top" |![Volume Calculator user
 interface.](/images/pages/VolCal.png "Volume Calculator user interface.")" |}
 
 ## Introduction

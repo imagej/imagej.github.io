@@ -8,14 +8,11 @@ categories: Development
 description: test description
 ---
 
-%Replace% DevelopMenu %Replace%
-
-{% capture includecontent %} This page has approaches for *software
-developers* to use for debugging ImageJ.  
-If you are a *user* looking to troubleshoot issues, see the
-[Troubleshooting](Troubleshooting "wikilink") page. {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include develop-menu %} {% include sidebox-right content='This page
+has approaches for ""software developers"" to use for debugging
+ImageJ.  
+If you are a ""user"" looking to troubleshoot issues, see the
+[Troubleshooting](Troubleshooting "wikilink") page.' %}
 
 # Launching ImageJ in debug mode
 

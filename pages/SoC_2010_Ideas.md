@@ -133,7 +133,7 @@ The project would consist of
     BeanShell) -- I suggest having a look at {% include github
     repo='fiji'
     path='src-plugins/JRuby\_Interpreter/src/main/java/JRuby/JRuby\_Interpreter.java'
-    label='the' %} for an example,
+    label='the JRuby Interpreter' %} for an example,
 
 <!-- end list -->
 

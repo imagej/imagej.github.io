@@ -8,19 +8,15 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = CMP-BIA tools | software =
-ImagejJ/Fiji | author = Jiří Borovec
-([web](http://cmp.felk.cvut.cz/~borovji3/)) | maintainer = Jiří Borovec
-([email](mailto:jiri.borovec\(at\)fel.cvut.cz)) | filename =
-[CMP\_BIA-0.2.jar](http://sites.imagej.net/CMP-BIA/plugins/) | source =
-{% include github org='Borda' repo='ij-CMP-BIA' label='GitHub.com' %} |
-released = 2013 | version = 0.2 | latest version = December
-20<sup>th</sup>, 2013 | license = GPLv2 | category =
-[Segmentation](:Category:Segmentation "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="Borda" repo="ij-CMP-BIA"
+label="GitHub.com" %} {% endcapture %} {% include sidebox-right
+name='CMP-BIA tools' software='ImagejJ/Fiji' author='Jiří Borovec
+([web](http://cmp.felk.cvut.cz/~borovji3/))' maintainer='Jiří Borovec
+([email](mailto:jiri.borovec\(at\)fel.cvut.cz))'
+filename='[CMP\_BIA-0.2.jar](http://sites.imagej.net/CMP-BIA/plugins/)'
+source=source released='2013' version='0.2' version='December
+20<sup>th</sup>, 2013' license='GPLv2'
+category='[Segmentation](:Category:Segmentation "wikilink")' %}
 
 # About
 

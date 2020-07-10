@@ -8,7 +8,7 @@ categories: ImgLib
 description: test description
 ---
 
-%Replace% ImgLibMenu %Replace%
+{% include imglibmenu %}
 
 ## What *is* ImgLib2 anyway?
 

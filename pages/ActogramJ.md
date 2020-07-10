@@ -8,26 +8,25 @@ categories: Plugins,Visualization,Citable
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | name = ActogramJ |
-maintainer = {% include person content='Bene' %} | author = {% include
-person content='Bene' %} | source = {% include github org='bene51'
-repo='ActogramJ' %} | status = active | released = 2010 | category =
-[Visualization](:Category:Visualization "wikilink"),
-[:Category:Plugins](:Category:Plugins "wikilink")
+{% capture maintainer %} {% include person content="Bene" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture author %} {% include person content="Bene" %} {% endcapture
+%}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="bene51" repo="ActogramJ" %}
+{% endcapture %} {% include sidebox-right software='Fiji'
+name='ActogramJ' maintainer=maintainer author=author source=source
+status='active' released='2010'
+category='[Visualization](:Category:Visualization "wikilink"),
+[:Category:Plugins](:Category:Plugins "wikilink")' %}
 
 **ActogramJ** - Visualizing and analyzing activity diagrams in
 behavioral experiments
 
 ## Publication
 
-  - 
-{% capture includecontent %} ActogramJ {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='ActogramJ' %}
 
 ![ActogramJ.png](/images/pages/ActogramJ.png "ActogramJ.png")"
 

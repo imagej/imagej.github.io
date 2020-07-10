@@ -8,7 +8,8 @@ categories: Plugins
 description: test description
 ---
 
-![LS.2b.progress.png](/images/pages/LS.2b.progress.png "LS.2b.progress.png")"
+{% include component-stats content=':sc.fiji:level\_sets'
+%}![LS.2b.progress.png](/images/pages/LS.2b.progress.png "LS.2b.progress.png")"
 
 ## Level Sets and Fast Marching
 

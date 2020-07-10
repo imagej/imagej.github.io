@@ -73,11 +73,9 @@ it is open. If you want to un-do this step, you can click {% include bc
 content='Remove Transformation|Latest/Newest Transformation'%} in the
 main menu.
 
-{% capture includecontent %} We will not save the results to the project
-XML file automatically, click the **Save** button in the main window to
-do that. {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='We will not save the results to the
+project XML file automatically, click the """Save""" button in the main
+window to do that.' %}
 
 # Expert Mode
 
@@ -98,13 +96,11 @@ apply:
   - **Two-Round using Metadata to align unconnected Tiles:** same as
     **Identify wrong links and handle unconnected Tiles:** (see above)
 
-{% capture includecontent %} The computational cost of the global
+{% include sidebox-right content='The computational cost of the global
 optimization is relatively minor in comparison to the pairwise shift
-calculation. We therefore recommend to use the **Two-Round using
-Metadata to align unconnected Tiles** strategy (and do so by default in
-the Simple Mode). {% endcapture %}
-
-{% include info-box content=includecontent %}
+calculation. We therefore recommend to use the """Two-Round using
+Metadata to align unconnected Tiles""" strategy (and do so by default in
+the Simple Mode).' %}
 
 If you opt for any of the **iterative strategies**, you have to consider
 the two error thresholds, which determine when to stop dropping bad
@@ -179,14 +175,12 @@ global optimization. They are the same as in
 ![BigStitcher\_stitch\_8.png](BigStitcher_stitch_8.png
 "BigStitcher_stitch_8.png")
 
-{% capture includecontent %} Theoretically, you can use the second
-dialog to align arbitrary groupings of the data, e.g. compare Channels
-but group Tiles for chromatic shift correction. Note that you have to
-have done the *pairwise shift calculation* for the same grouping of the
-data, otherwise, we can find no pairwise shifts to use in the global
-optimization {% endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='Theoretically, you can use the
+second dialog to align arbitrary groupings of the data, e.g. compare
+Channels but group Tiles for chromatic shift correction. Note that you
+have to have done the ""pairwise shift calculation"" for the same
+grouping of the data, otherwise, we can find no pairwise shifts to use
+in the global optimization' %}
 
 ## Fixing views
 

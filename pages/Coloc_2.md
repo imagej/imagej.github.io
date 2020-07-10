@@ -8,7 +8,8 @@ categories: Colocalization,Color processing,Plugins
 description: test description
 ---
 
-\= What is Coloc 2 =
+{% include component-stats content=':sc.fiji:Colocalisation\_Analysis'
+%}= What is Coloc 2 =
 
 Coloc 2 is Fiji's plugin for colocalization analysis. It implements and
 performs the pixel intensity correlation over space methods of

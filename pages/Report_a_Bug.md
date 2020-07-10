@@ -8,7 +8,7 @@ categories: Tutorials,Plugins,Bug Reporting
 description: test description
 ---
 
-%Replace% HelpMenu %Replace% Please report bugs via the [Image.sc
+{% include menu-help %}Please report bugs via the [Image.sc
 Forum](Image.sc_Forum "wikilink"):
 
   - Start a new topic in the "Usage & Issues" category.

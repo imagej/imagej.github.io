@@ -8,17 +8,16 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJFiji | name = NanoTrackJ |
-author = {% include person content='Twagner' %}, | maintainer = {%
-include person content='Twagner' %}, | filename = nanotrackj.jar
-[\[1](https://github.com/thorstenwagner/ij-nanotrackj/releases/latest)\]
-| source = Github
-[\[2](https://github.com/thorstenwagner/ij-nanotrackj)\] | latest
-version = v1.0.3 (22 Feb 2016) | status = active
+{% capture author %} {% include person content="Twagner" %}, {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture maintainer %} {% include person content="Twagner" %}, {%
+endcapture %} {% include sidebox-right software='ImageJFiji'
+name='NanoTrackJ' author=author maintainer=maintainer
+filename='nanotrackj.jar
+[\[1](https://github.com/thorstenwagner/ij-nanotrackj/releases/latest)\]'
+source='Github [\[2](https://github.com/thorstenwagner/ij-nanotrackj)\]'
+version='v1.0.3 (22 Feb 2016)' status='active' %}
 
 ## General
 

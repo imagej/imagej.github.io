@@ -8,15 +8,15 @@ categories:
 description: test description
 ---
 
-The Op Finder is a utility for the browsing, learning, and running of
-all available {% include github org='imagej' d='imagej-ops' label='Ops'
-%}. Because Ops are plugins and can be dynamically extended and
-specialized for particular inputs, it is not practical to have static
-documentation on a given Op. By using the Op Finder, you are able to
-explore the actual list of Ops available in *your* installation. The
-purpose of this guide is to familiarize yourself with the basic
-capabilities of the Op Finder, enabling you to learn and experiment with
-Ops.
+{% include component-stats content=':net.imagej:op-finder' %}The Op
+Finder is a utility for the browsing, learning, and running of all
+available {% include github org='imagej' d='imagej-ops' label='Ops' %}.
+Because Ops are plugins and can be dynamically extended and specialized
+for particular inputs, it is not practical to have static documentation
+on a given Op. By using the Op Finder, you are able to explore the
+actual list of Ops available in *your* installation. The purpose of this
+guide is to familiarize yourself with the basic capabilities of the Op
+Finder, enabling you to learn and experiment with Ops.
 
 # Getting started
 
@@ -69,12 +69,10 @@ tailoring the content of the Op Finder to a specific audience.
 
 ## For Users
 
-{% capture includecontent %} This view provides an abstract
+{% include warning-sidebox-right content='This view provides an abstract
 representation of available Ops e.g., one entry could be many Ops merged
 together. An Op call is ultimately defined by the combination of
-requested **Op type** + **parameters**. {% endcapture %}
-
-{% include warning-box content=includecontent %}
+requested """Op type""" + """parameters""".' %}
 
 Ops in this view are focused on answering the question "What can I do
 *right now* with Ops?" For example, in this example we see that we can

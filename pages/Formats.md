@@ -8,7 +8,7 @@ categories: Import-Export
 description: test description
 ---
 
-%Replace% FormatsMenu %Replace% Thanks to ImageJ's
+{% include menu-formats %}Thanks to ImageJ's
 [extensibility](extensibility "wikilink") via
 [plugins](plugins "wikilink"), it supports a lot of image formats\!
 

@@ -8,7 +8,7 @@ categories: Cookbook,Tutorials
 description: test description
 ---
 
-\_\_FORCETOC\_\_ %Replace% CookbookMenu %Replace%
+\_\_FORCETOC\_\_ {% include menu-cookbook %}
 
 ## Correcting for bleaching
 

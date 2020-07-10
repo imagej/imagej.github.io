@@ -8,28 +8,27 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} This is an experimental plugin, and I have
-doubts about its correctness—in particular, the results are strange when
-the ratio of pixelWidth : pixelHeight : pixelDepth is other than 1:1:1.
-In addition, the results in any case seem to be different from those
-from other implementations, such as [this [MATLAB](MATLAB "wikilink")
+{% include warning-sidebox-right content='This is an experimental
+plugin, and I have doubts about its correctness—in particular, the
+results are strange when the ratio of pixelWidth : pixelHeight :
+pixelDepth is other than 1:1:1. In addition, the results in any case
+seem to be different from those from other implementations, such as
+[this [MATLAB](MATLAB "wikilink")
 one](http://www.mathworks.co.uk/matlabcentral/fileexchange/24409-hessian-based-frangi-vesselness-filter).
-I don't have time to work on this any more (and no longer work in
+I don"t have time to work on this any more (and no longer work in
 academia at all) so if someone were interested in taking it over, that
-would be brilliant. {% endcapture %}
-
-{% include warning-box content=includecontent %}
-
-This plugin implements the algorithm for detection of vessel- or
-tube-like structures in 2D and 3D images described Frangi et al 1998.
-<ref> {% capture includecontent %} author=Alejandro F. Frangi, Wiro J.
-Niessen, Koen L. Vinc and Max A. Viergever|title=Multiscale Vessel
-Enhancement Filtering|journal=Medical Image Computing and
-Computer-Assisted Interventation — MICCAI’98 Lecture Notes in Computer
+would be brilliant.' %} {% include component-stats
+content=':sc.fiji:Feature\_Detection' %} This plugin implements the
+algorithm for detection of vessel- or tube-like structures in 2D and 3D
+images described Frangi et al 1998. <ref> {% capture includecontent %}
+journal|author=Alejandro F. Frangi, Wiro J. Niessen, Koen L. Vinc and
+Max A. Viergever|title=Multiscale Vessel Enhancement
+Filtering|journal=Medical Image Computing and Computer-Assisted
+Interventation — MICCAI’98 Lecture Notes in Computer
 Science|year=1998|volume=1496/1998|page=130|url=http://www.tecn.upf.es/~afrangi/articles/miccai1998.pdf
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>
+{% include cite content=includecontent %} </ref>
 
 In my experience, this method produces consistently better results than
 the [Tubeness](Tubeness "wikilink") plugin for isotropic image data,

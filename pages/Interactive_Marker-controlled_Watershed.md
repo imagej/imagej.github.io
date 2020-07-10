@@ -8,19 +8,21 @@ categories: Plugins,Segmentation,Mathematical_morphology
 description: test description
 ---
 
-{% capture includecontent %} name = Interactive Marker-controlled
-Watershed | software = IJPB-plugins | author = {% include person
-content='Iarganda' %}, David Legland | maintainer = {% include person
-content='Iarganda' %} | source = {% include github org='ijpb'
-repo='ijpb-plugins' %} | released = September 9<sup>th</sup>, 2017 |
-latest version = July 23<sup>rd</sup>, 2019
-([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) | status = stable, active |
-category = [Segmentation](:Category:Segmentation "wikilink"),
-[Mathematical morphology](:Category:Mathematical_morphology "wikilink")
+{% capture author %} {% include person content="Iarganda" %}, David
+Legland {% endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Iarganda" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="ijpb" repo="ijpb-plugins" %}
+{% endcapture %} {% include sidebox-right name='Interactive
+Marker-controlled Watershed' software='IJPB-plugins' author=author
+maintainer=maintainer source=source released='September 9<sup>th</sup>,
+2017' version='July 23<sup>rd</sup>, 2019
+([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1)' status='stable, active'
+category='[Segmentation](:Category:Segmentation "wikilink"),
+[Mathematical morphology](:Category:Mathematical_morphology "wikilink")'
+%}
 
 ## Introduction
 

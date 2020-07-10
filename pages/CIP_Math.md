@@ -13,6 +13,8 @@ description: test description
 This page provides user documentation for the Math category of the
 [CIP](CIP "wikilink") scripting package
 
+{% include cip content='Navigation' %}
+
 # **binary operator**
 
 <span style="font-size:110%">**Description**</span>  

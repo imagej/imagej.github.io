@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} This guide is intended for maintaining
+{% include sidebox-right content='This guide is intended for maintaining
 non-core update sites by automating builds with [Travis
 CI](https://travis-ci.org/).  
 \* The [core update
@@ -18,11 +18,7 @@ manually or by [Travis CI](Travis_CI "wikilink").
   - Travis CI is useful because it can freely build any open source
     project with minimal effort.
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-%Replace% UpdateSitesMenu %Replace%
+' %} {% include menu-updatesites %}
 
 # Requirements
 
@@ -152,17 +148,18 @@ they will appear to have been deleted.
 
 # Caveats
 
-{% capture includecontent %} **USE CAUTION HERE**
+{% include warning-sidebox-right content='"""USE CAUTION HERE"""
 
 1.  You are configuring Travis CI to upload the state of an ImageJ
     installation to your update site. The current working directory IS
     the ImageJ.app that will be uploaded. If your build artifacts are
-    not located in the `jars` or `plugins` directory, or you don't
+    not located in the `jars` or `plugins` directory, or you don"t
     manually copy scripts to the correct location, ImageJ will see these
-    items as having been deleted—**effectively removing all content from
-    your update site.** You can mitigate this danger by customizing your
-    `.travis-deploy.sh` to download your own update site into the base
-    ImageJ.app; only changes to the update site state will be uploaded.
+    items as having been deleted—"""effectively removing all content
+    from your update site.""" You can mitigate this danger by
+    customizing your `.travis-deploy.sh` to download your own update
+    site into the base ImageJ.app; only changes to the update site state
+    will be uploaded.
 2.  By default—building the master branch of your repository—your update
     site will be updated with \*\*every change\*\* to the source code.
     Although we encourage the master branch to be "[release
@@ -179,9 +176,7 @@ they will appear to have been deleted.
     materials](Architecture#Bill_of_Materials "wikilink")) then this
     automation may break your own update site.
 
-{% endcapture %}
-
-{% include warning-box content=includecontent %}
+' %}
 
 # See Also
 

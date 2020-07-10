@@ -39,13 +39,10 @@ macro can be found in our *Investigative Ophthalmology & Visual Science
 
 ## Before You Start
 
-Please read carefully before using this macro.
-
-{% capture includecontent %} **This macro was validated using ImageJ
-1.49v. We strongly suggest to use the same version, as segmentation and
-quantitation may vary with other versions.** {% endcapture %}
-
-{% include info-box content=includecontent %}
+Please read carefully before using this macro. {% include sidebox-right
+content='"""This macro was validated using ImageJ 1.49v. We strongly
+suggest to use the same version, as segmentation and quantitation may
+vary with other versions."""' %}
 
 ### Microscope Calibration
 
@@ -89,12 +86,10 @@ much as possible and increase exposure without saturating fragments.
 
 The original ONL and INL image datasets used for validation purposes are
 available to download. These images have been accurately segmented and
-quantitated, and their values were validated by observers. {% capture
-includecontent %} *' We strongly recommend to download and revise these
-images beforehand, to have a rough estimate on acquisition and
-post-processing parameters.*' {% endcapture %}
-
-{% include info-box content=includecontent %}
+quantitated, and their values were validated by observers. {% include
+sidebox-right content='""" We strongly recommend to download and revise
+these images beforehand, to have a rough estimate on acquisition and
+post-processing parameters."""' %}
 
 ### Important Links
 

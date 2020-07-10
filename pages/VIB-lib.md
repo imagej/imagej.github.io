@@ -8,4 +8,5 @@ categories:
 description: test description
 ---
 
-%Replace% Stub %Replace%
+{% include component-stats content=':sc.fiji:VIB-lib' %}{% include stub
+%}

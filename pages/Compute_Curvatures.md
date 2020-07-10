@@ -8,14 +8,10 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Compute
-Curvatures | author = Stephan Preibisch, Mark Longair | maintainer =
-Mark Longair | filename = VIB\_.jar | source = {% include github
-org='fiji' repo='VIB' source='Compute\_Curvatures.java' %} | status =
-stable
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="VIB"
+source="Compute\_Curvatures.java" %} {% endcapture %} {% include
+sidebox-right software='ImageJ' name='Compute Curvatures'
+author='Stephan Preibisch, Mark Longair' maintainer='Mark Longair'
+filename='VIB\_.jar' source=source status='stable' %}
 
 FIXME: write documentation for this plugin

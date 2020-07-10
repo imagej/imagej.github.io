@@ -8,7 +8,7 @@ categories: Tutorials
 description: test description
 ---
 
-%Replace% ExtendingTrackMateTutorials %Replace%
+{% include extendingtrackmatetutorials %}
 
 ## Introduction
 
@@ -90,10 +90,10 @@ new features.
 Before we step into the edge analyzers specific, you want to setup a
 development environment that will ease TrackMate module development.
 Rather than listing the requirement, just checkout {% include github
-org='fiji' repo='TrackMate-examples' label='this' %}, and clone it. It
-contains the files of this tutorial series and more importantly, is
-configured to depend on the latest TrackMate version, which will make it
-available to your code.
+org='fiji' repo='TrackMate-examples' label='this github repository' %},
+and clone it. It contains the files of this tutorial series and more
+importantly, is configured to depend on the latest TrackMate version,
+which will make it available to your code.
 
 Compiling this project with maven will generate a jar, that you will be
 able to drop in the fiji plugins folder. Your modules will then be
@@ -186,7 +186,8 @@ These 6 methods are:
   - `getFeatureDimensions()` returns a last map, that gives a dimension
     to your features. Physical dimensions are listed in the {% include
     github org='fiji' repo='TrackMate'
-    source='fiji/plugin/trackmate/Dimension.java' label='Dimension' %}.
+    source='fiji/plugin/trackmate/Dimension.java' label='Dimension enum'
+    %}.
 
 <!-- end list -->
 
@@ -489,11 +490,9 @@ public class EdgeAngleAnalyzer implements EdgeAnalyzer
 
 and that's it. Let me repeat:
 
-{% capture includecontent %} text= To make a TrackMate module
-discoverable in TrackMate, just annotate its class with `@Plugin( type =
-TheTrackMateModuleClassYouAreExtending.class )`. {% endcapture %}
-
-{% include ambox content=includecontent %}
+{% include amsidebox-right text='To make a TrackMate module discoverable
+in TrackMate, just annotate its class with `@Plugin( type =
+TheTrackMateModuleClassYouAreExtending.class )`.' %}
 
 Just the line `@Plugin( type = EdgeAnalyzer.class )` is enough. There
 are also mechanisms that allow fine tuning of priority, visibility (in

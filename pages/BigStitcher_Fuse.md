@@ -43,13 +43,11 @@ to fuse the image(s) and display the result in a new ImageJ-window.
 ![BigStitcher\_Fusion\_Quick.png](BigStitcher_Fusion_Quick.png
 "BigStitcher_Fusion_Quick.png")
 
-{% capture includecontent %} The quick fusion will fuse **all selected
-images**, including multiple channels/illuminations/time points, into
-one final image. To prevent e.g. a fusion of multiple channels, make
-sure to select only the images you need, ungrouping the views in the
-main window, if necessary. {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='The quick fusion will fuse """all
+selected images""", including multiple channels/illuminations/time
+points, into one final image. To prevent e.g. a fusion of multiple
+channels, make sure to select only the images you need, ungrouping the
+views in the main window, if necessary.' %}
 
 ## Advanced Fusion
 

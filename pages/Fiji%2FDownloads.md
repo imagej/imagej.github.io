@@ -20,7 +20,7 @@ description: test description
 ImageJ which includes many useful plugins [contributed by the
 community](Fiji_contribution_requirements "wikilink").
 
-%Replace% DownloadFiji %Replace%
+{% include downloadfiji %}
 
 # System requirements
 
@@ -35,9 +35,8 @@ runtime is available (Solaris, Raspbian, etc.).
 
 # Installation
 
-%Replace% AvoidProgramFiles %Replace%
-
-{% capture includecontent %} Packages for Debian / Ubuntu
+{% include avoidprogramfiles %} {% include sidebox-right title='Packages
+for Debian / Ubuntu' float='right' text='
 
 We used to offer Debian packages of Fiji. Unfortunately, for a variety
 of reasons, we are withdrawing support for these packages until such
@@ -49,11 +48,7 @@ situation, we would love to have your help—please join us in
 [chat](chat "wikilink") or on the
 [forum](http://forum.imagej.net/c/development).
 
-{% endcapture %}
-
-{% include sidebox-right content=includecontent %}
-
-Fiji is distributed as a [portable
+' %} Fiji is distributed as a [portable
 application](wikipedia:Portable_application "wikilink"). That means that
 you do not have to run an installer; just download, unpack and start it.
 

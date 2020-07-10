@@ -8,17 +8,17 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = FilamentDetector | logo = | software
-= Fiji | author = {% include person content='Hadim' %} | maintainer = {%
-include person content='Hadim' %} | source = {% include github
-org='hadim' repo='FilamentDetector' %} | released = 13/10/2017 | status
-= v0.1.1, alpha | category = Tracking, Detection
+{% capture author %} {% include person content="Hadim" %} {% endcapture
+%}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Hadim" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
-
-\_\_TOC\_\_
+{% capture source %} {% include github org="hadim"
+repo="FilamentDetector" %} {% endcapture %} {% include sidebox-right
+name='FilamentDetector' logo='' software='Fiji' author=author
+maintainer=maintainer source=source released='13/10/2017'
+status='v0.1.1, alpha' category='Tracking, Detection' %} \_\_TOC\_\_
 
 ## Presentation
 

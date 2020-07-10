@@ -8,16 +8,16 @@ categories: Plugins,Image annotation
 description: test description
 ---
 
-This plugin adds time stamps to a stack. The times are drawn in the
-current foreground color. Use the color picker ({% include bc
-content='Image | Color | Color Picker'%} or double-click on the color
-picker button ![color\_picker.png](/images/pages/color_picker.png "color_picker.png")"
-) to set the foreground color. A dialog box allows the user to specify
-the starting time, time between frames, location, font size, decimal
-places and unit of time. Create a rectangular selection and the X and Y
-locations in the dialog box will be based on that selection. Set time
-between frames to zero to display nothing but the text in the Suffix
-field.
+{% include component-stats content=':sc.fiji:Time\_Stamper' %}This
+plugin adds time stamps to a stack. The times are drawn in the current
+foreground color. Use the color picker ({% include bc content='Image |
+Color | Color Picker'%} or double-click on the color picker button
+![color\_picker.png](/images/pages/color_picker.png "color_picker.png")" ) to set the
+foreground color. A dialog box allows the user to specify the starting
+time, time between frames, location, font size, decimal places and unit
+of time. Create a rectangular selection and the X and Y locations in the
+dialog box will be based on that selection. Set time between frames to
+zero to display nothing but the text in the Suffix field.
 
 ## Usage
 

@@ -8,7 +8,8 @@ categories: Plugins
 description: test description
 ---
 
-Please have a look at the [detailed plugin
+{% include component-stats content=':sc.fiji:Multi\_Kymograph' %}Please
+have a look at the [detailed plugin
 description](http://www.embl.de/eamnet/html/body_kymograph.html).
 
 [Category:Plugins](Category:Plugins "wikilink")

@@ -64,8 +64,8 @@ Here we summarize some of the Registration plugins in ImageJ.
 <td><ul>
 <li>A lightweight SIFT-implementation for Java after the paper of David Lowe<ref></li>
 </ul>
-<p>{% capture includecontent %} author=Lowe D | title=Distinctive Image Features from Scale-Invariant Keypoints | journal=International Journal of Computer Vision | year=2004 | volume=60 | number=2 | pages=91-110 {% endcapture %}</p>
-<p>{% include cite-journal content=includecontent %} </ref>.</p></td>
+<p>{% capture includecontent %} journal |author=Lowe D | title=Distinctive Image Features from Scale-Invariant Keypoints | journal=International Journal of Computer Vision | year=2004 | volume=60 | number=2 | pages=91-110 {% endcapture %}</p>
+<p>{% include cite content=includecontent %} </ref>.</p></td>
 <td></td>
 </tr>
 <tr class="even">

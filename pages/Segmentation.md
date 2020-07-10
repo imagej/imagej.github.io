@@ -8,19 +8,13 @@ categories: Tutorials,Segmentation
 description: test description
 ---
 
-{% capture includecontent %} See
+{% include bigsidebox-right content='See
 [:Category:Segmentation](:Category:Segmentation "wikilink") for pages
-about image segmentation. {% endcapture %}
+about image segmentation.' %} {% include learn content='techniques' %}
 
-{% include big-notice content=includecontent %}
-
-{% include learn content='techniques' %}
-
-{% capture includecontent %} tip=See [this helpful workshop on Image
+{% include tip tip='See [this helpful workshop on Image
 Segmentation](https://imagej.net/_images/8/87/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf)
-for another great overview of Segmentation\! {% endcapture %}
-
-{% include tip content=includecontent %}
+for another great overview of Segmentation\!' %}
 
 # Introduction
 

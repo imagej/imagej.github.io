@@ -8,19 +8,16 @@ categories: Plugins,Image annotation,Unmaintained
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Grid | author =
-{% include person content='Rasband' %} | filename =
-[Grid\_.class](https://imagej.net/plugins/download/Grid_.class) (5,575
-Bytes) | source =
-[Grid\_.java](https://imagej.net/plugins/download/Grid_.java) (5,123
-Bytes) | released = 25 April 2001 | latest version = 02 July 2007 |
-status = active | category = [Image
-annotation](:Category:Image_annotation "wikilink") | website =
-[1](https://imagej.net/plugins/grid.html)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture author %} {% include person content="Rasband" %} {%
+endcapture %} {% include sidebox-right software='ImageJ' name='Grid'
+author=author
+filename='[Grid\_.class](https://imagej.net/plugins/download/Grid_.class)
+(5,575 Bytes)'
+source='[Grid\_.java](https://imagej.net/plugins/download/Grid_.java)
+(5,123 Bytes)' released='25 April 2001' version='02 July 2007'
+status='active' category='[Image
+annotation](:Category:Image_annotation "wikilink")'
+website='[1](https://imagej.net/plugins/grid.html)' %}
 
 This plugin creates a non-destructive grid of lines , crosses or points
 on the current image or stack. You can specify the the grid type (lines,

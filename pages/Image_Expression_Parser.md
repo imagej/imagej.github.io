@@ -8,7 +8,8 @@ categories: Plugins
 description: test description
 ---
 
-%Replace% TOC %Replace%
+{% include component-stats content=':sc.fiji:Image\_Expression\_Parser'
+%}{% include toc %}
 
 ## Usage
 

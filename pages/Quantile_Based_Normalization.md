@@ -8,14 +8,11 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Quantile Based
-Normalization | author = Mark Longair | maintainer = Mark Longair |
-filename = VIB\_.jar | source = {% include github org='fiji' repo='VIB'
-source='util/Quantile\_Based\_Normalization.java' %} | status = stable
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="VIB"
+source="util/Quantile\_Based\_Normalization.java" %} {% endcapture %} {%
+include sidebox-right software='ImageJ' name='Quantile Based
+Normalization' author='Mark Longair' maintainer='Mark Longair'
+filename='VIB\_.jar' source=source status='stable' %}
 
 The main documentation for this plugin can be found here:
 http://homepages.inf.ed.ac.uk/s9808248/imagej/quantile-normalization/

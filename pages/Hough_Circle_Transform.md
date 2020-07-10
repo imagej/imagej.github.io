@@ -8,18 +8,20 @@ categories: Analysis
 description: test description
 ---
 
-{% capture includecontent %} name = Hough Circle Transform | software =
-plugin | update site = UCB Vision Sciences | author = {% include person
-content='Llamero' %} | maintainer = {% include person content='Llamero'
-%} | source ={% include github org='llamero' repo='Local\_Hough\_Circle'
-%} | released = February 4<sup>th</sup>, 2017 | latest version =
-September 21<sup>st</sup>, 2018 (v1.0.0) | status = stable, active |
-category = [Analysis](:Category:Analysis "wikilink"), [Feature
-Extraction](:Category:Feature_Extraction "wikilink")
+{% capture author %} {% include person content="Llamero" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Llamero" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="llamero"
+repo="Local\_Hough\_Circle" %} {% endcapture %} {% include sidebox-right
+name='Hough Circle Transform' software='plugin' site='UCB Vision
+Sciences' author=author maintainer=maintainer source=source
+released='February 4<sup>th</sup>, 2017' version='September
+21<sup>st</sup>, 2018 (v1.0.0)' status='stable, active'
+category='[Analysis](:Category:Analysis "wikilink"), [Feature
+Extraction](:Category:Feature_Extraction "wikilink")' %}
 
 ## Introduction
 

@@ -8,19 +8,15 @@ categories: Plugins,Analysis
 description: test description
 ---
 
-{% capture includecontent %} name = TreeJ | software = ImageJ and Fiji |
-author = [Elise Laruelle](https://github.com/L-EL), Philippe Andrey,
-Jean-Christophe Palauqui, Alain Trubuil | maintainer = [Elise
-Laruelle](https://github.com/L-EL) | filename =
-[TreeJ\_-1.0.0-SNAPSHOT.jar](https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar)
-| source = {% include github org='L-EL' repo='TreeJ' %} | Initial
-released = July, 2016 | category =
-[Analysis](:Category:Analysis "wikilink"),
-[Plugins](:Category:Plugins "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="L-EL" repo="TreeJ" %} {%
+endcapture %} {% include sidebox-right name='TreeJ' software='ImageJ and
+Fiji' author='[Elise Laruelle](https://github.com/L-EL), Philippe
+Andrey, Jean-Christophe Palauqui, Alain Trubuil' maintainer='[Elise
+Laruelle](https://github.com/L-EL)'
+filename='[TreeJ\_-1.0.0-SNAPSHOT.jar](https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar)'
+source=source released='July, 2016'
+category='[Analysis](:Category:Analysis "wikilink"),
+[Plugins](:Category:Plugins "wikilink")' %}
 
 This plugin contains an interface to reconstruct interactively and
 recursively a cell lineage from a static labeled image. It allows to :
@@ -31,8 +27,8 @@ recursively a cell lineage from a static labeled image. It allows to :
   - extract some set of images related to TreeJ functions
   - save as a tree file compatible with other tree viewer and/or TreeJ
 
-![treeJExample.png](/images/pages/treeJExample.png "treeJExample.png")" %Replace% TOC
-%Replace%
+![treeJExample.png](/images/pages/treeJExample.png "treeJExample.png")" {% include toc
+%}
 
 ## Usage
 

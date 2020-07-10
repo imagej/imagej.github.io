@@ -8,15 +8,12 @@ categories: Plugins,Filtering
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Biomat |
-maintainer = [Jiří Janáček](mailto:jiri.janacek_at_fgu.cas.cz) | author
-= Jiří Janáček | source = {% include github org='jiri-janacek'
-repo='biomat' %} | released = 03/26/2019 | latest version = 03/26/2019 |
-status = | website =
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="jiri-janacek" repo="biomat"
+%} {% endcapture %} {% include sidebox-right software='ImageJ'
+name='Biomat' maintainer='[Jiří
+Janáček](mailto:jiri.janacek_at_fgu.cas.cz)' author='Jiří Janáček'
+source=source released='03/26/2019' version='03/26/2019' status=''
+website='' %}
 
 ## Plugins for 3D image preprocessing.
 

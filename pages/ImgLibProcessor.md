@@ -8,20 +8,16 @@ categories: ImageJ2,Development
 description: test description
 ---
 
-{% capture includecontent %} The following article describes a method of
-ImageJ1/ImageJ2 integration we explored in 2010, revolving around an
-`ij.process.ImageProcessor` extension called `ImgLibProcessor` which
-would enable additional transparent usage of
+{% include warning-sidebox-right content='The following article
+describes a method of ImageJ1/ImageJ2 integration we explored in 2010,
+revolving around an `ij.process.ImageProcessor` extension called
+`ImgLibProcessor` which would enable additional transparent usage of
 [ImgLib2](ImgLib2 "wikilink") from within ImageJ1, thus greatly
 expanding the available pixel types and storage strategies. However,
 after discussion with [Wayne Rasband](Wayne_Rasband "wikilink"), we
 settled on a different method of backwards compatibility known as
 [ImageJ Legacy](ImageJ_Legacy "wikilink"). The text below is preserved
-only for historical reasons. {% endcapture %}
-
-{% include warning-box content=includecontent %}
-
-%Replace% TOC %Replace%
+only for historical reasons.' %} {% include toc %}
 
 ## Design
 

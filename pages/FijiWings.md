@@ -8,18 +8,16 @@ categories: Citable
 description: test description
 ---
 
-\_\_NOTOC\_\_![File.png](/images/pages/File.png "File.png")"%Replace% Clear %Replace%
-{% capture includecontent %} software = Fiji/ImageJ | name = FijiWings |
-author = Alex Dobens, {% include person content='Dobensl' %} |
-maintainer = {% include person content='Dobensl' %} | filename =
-fiji-macosx.zip | source = https://sourceforge.net/projects/fijiwings/
-| status = stable
+\_\_NOTOC\_\_![File.png](/images/pages/File.png "File.png")"{% include clear %} {%
+capture author %} Alex Dobens, {% include person content="Dobensl" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box-plugin content=includecontent %}
-
-### Introduction
+{% capture maintainer %} {% include person content="Dobensl" %} {%
+endcapture %} {% include sidebox-right content='Plugin'
+software='Fiji/ImageJ' name='FijiWings' author=author
+maintainer=maintainer filename='fiji-macosx.zip'
+source='https://sourceforge.net/projects/fijiwings/' status='stable'
+%}=== Introduction ===
 
 This set of macros control plugin to perform semi-automatic tracing of
 insect wing veins and determination of trichome number and density. The
@@ -55,10 +53,7 @@ on Fiji (e.g. the mailing lists, IRC, etc.) listed at
 
 If you would like to reference FijiWings in a publication, you can cite:
 
-  - 
-{% capture includecontent %} FijiWings {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='FijiWings' %}
 
 ## Tutorials
 

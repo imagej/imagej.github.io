@@ -8,7 +8,8 @@ categories: Plugins,TrakEM2
 description: test description
 ---
 
-The Reconstruct Reader plugin is a utility to transform
+{% include component-stats content=':sc.fiji:Reconstruct\_Reader' %}The
+Reconstruct Reader plugin is a utility to transform
 [Reconstruct](http://synapses.clm.utexas.edu/tools/reconstruct/reconstruct.stm)
 projects directly into [TrakEM2](TrakEM2 "wikilink") projects.
 

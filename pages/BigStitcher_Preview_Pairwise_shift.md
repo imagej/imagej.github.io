@@ -25,11 +25,9 @@ right-click menu under **Step-by-step Stitching**:
     preview the calculated pairwise shifts, filer them based on criteria
     such as cross correlation and remove individual bad links.
 
-{% capture includecontent %} The Interactive Link Explorer will work on
-the views selected in the main window, the others will be grayed out
-while it is open {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='The Interactive Link Explorer will
+work on the views selected in the main window, the others will be grayed
+out while it is open' %}
 
   - **Filter Links by Parameters ...** offers the same functionality as
     the Interactive Link explorer in a simple dialog without any live

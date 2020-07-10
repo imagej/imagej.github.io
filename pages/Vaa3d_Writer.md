@@ -8,7 +8,8 @@ categories: Plugins,Import-Export
 description: test description
 ---
 
-%Replace% Stub %Replace%
+{% include component-stats content=':sc.fiji:Vaa3d\_Writer' %}{% include
+stub %}
 
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:Import-Export](Category:Import-Export "wikilink")

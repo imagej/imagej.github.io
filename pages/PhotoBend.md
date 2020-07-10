@@ -8,17 +8,18 @@ categories: Tracking,Tutorials,Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = PhotoBend |
-maintainer = {% include person content='Anotherche' %} | author = {%
-include person content='Anotherche' %} | source = {% include github
-org='anotherche' repo='photobend' %} | released = 10/11/2016 | latest
-version = 26/04/2017 | status = Alpha | category =
-[:Category:Plugins](:Category:Plugins "wikilink"),[Tracking](:Category:Tracking "wikilink")
-| website =
+{% capture maintainer %} {% include person content="Anotherche" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture author %} {% include person content="Anotherche" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="anotherche" repo="photobend"
+%} {% endcapture %} {% include sidebox-right software='ImageJ'
+name='PhotoBend' maintainer=maintainer author=author source=source
+released='10/11/2016' version='26/04/2017' status='Alpha'
+category='[:Category:Plugins](:Category:Plugins "wikilink"),[Tracking](:Category:Tracking "wikilink")'
+website='' %}
 
 ## PhotoBend plugins collection
 
@@ -29,17 +30,17 @@ non-uniform crystal structure transformation due to photochemical
 reaction. Bending of crystals caused by light irradiation is only one of
 various types of mechanical response observed in chemically transforming
 solid substances (see the review by Naumov *et al.*, 2015\[1\] {%
-capture includecontent %} Quantification of photoinduced bending of
-dynamic molecular crystals: from macroscopic strain to kinetic constants
-and activation energies | author = Stanislav Chizhik, Anatoly
-Sidelnikov, Boris Zakharov, Panče Naumov and Elena Boldyreva | journal =
-Chemical Science | volume = 9 | number = 8 | pages= 2319-2335 | year =
-2018 | publisher = The Royal Society of Chemistry | doi =
-10.1039/C7SC04863G
+capture includecontent %} journal | title = Quantification of
+photoinduced bending of dynamic molecular crystals: from macroscopic
+strain to kinetic constants and activation energies | author = Stanislav
+Chizhik, Anatoly Sidelnikov, Boris Zakharov, Panče Naumov and Elena
+Boldyreva | journal = Chemical Science | volume = 9 | number = 8 |
+pages= 2319-2335 | year = 2018 | publisher = The Royal Society of
+Chemistry | doi = 10.1039/C7SC04863G
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref> ).
+{% include cite content=includecontent %} </ref> ).
 
 ![Animation of the photobend time lapse (\~1500x playback
 speed)](photobend_demo.gif

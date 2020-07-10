@@ -8,17 +8,15 @@ categories:
 description: test description
 ---
 
-%Replace% Learn %Replace% ImageJ has been extended with thousands of
+{% include learn %}ImageJ has been extended with thousands of
 [plugins](wikipedia:Plug-in_\(computing\) "wikilink"): special-purpose
 software components that extend ImageJ’s functionality—e.g., by offering
 additional commands via menu entries.
 
 ## Available plugins
 
-{% capture includecontent %} You can browse the [list of available
-plugins](:Category:Plugins "wikilink"). {% endcapture %}
-
-{% include big-notice content=includecontent %}
+{% include bigsidebox-right content='You can browse the [list of
+available plugins](:Category:Plugins "wikilink").' %}
 
 ## Tiers of plugins
 

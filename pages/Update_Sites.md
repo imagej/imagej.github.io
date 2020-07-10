@@ -8,8 +8,8 @@ categories:
 description: test description
 ---
 
-%Replace% UpdateSitesMenu %Replace% An **update site** is web space used
-by the [Updater](Updater "wikilink") which enables users to share their
+{% include menu-updatesites %}An **update site** is web space used by
+the [Updater](Updater "wikilink") which enables users to share their
 macros, scripts and plugins with other researchers. With update sites,
 you do not need to manually download and install anything;
 [ImageJ](ImageJ "wikilink") takes care of it for you.
@@ -18,12 +18,10 @@ you do not need to manually download and install anything;
 
 <div style="clear: right; float: right">
 
-{% capture includecontent %} The [Fiji](Fiji "wikilink") distribution of
-ImageJ ships with both the *ImageJ* and *Fiji* sites enabled. You can
-transform your ImageJ installation into a Fiji one simply by enabling
-the *Fiji* update site. {% endcapture %}
-
-{% include fiji content=includecontent %}
+{% include fiji content='The [Fiji](Fiji "wikilink") distribution of
+ImageJ ships with both the ""ImageJ"" and ""Fiji"" sites enabled. You
+can transform your ImageJ installation into a Fiji one simply by
+enabling the ""Fiji"" update site.' %}
 
 </div>
 

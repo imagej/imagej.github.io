@@ -8,16 +8,18 @@ categories: Plugins,ImageScience
 description: test description
 ---
 
-{% capture includecontent %} software = ImageScience | name = TransformJ
-| maintainer = {% include person content='ImageScience' %} | author = {%
-include person content='ImageScience' %} | source = {% include github
-org='imagescience' repo='TransformJ' %} | status = | category =
-[:Category:Plugins](:Category:Plugins "wikilink") | website =
-http://imagescience.org/meijering/software/transformj/
+{% capture maintainer %} {% include person content="ImageScience" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture author %} {% include person content="ImageScience" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %} The
+{% capture source %} {% include github org="imagescience"
+repo="TransformJ" %} {% endcapture %} {% include sidebox-right
+software='ImageScience' name='TransformJ' maintainer=maintainer
+author=author source=source status=''
+category='[:Category:Plugins](:Category:Plugins "wikilink")'
+website='http://imagescience.org/meijering/software/transformj/' %}The
 [TransformJ](http://imagescience.org/meijering/software/transformj/)
 suite of plugins offers geometrical image transformation and
 manipulation.

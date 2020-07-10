@@ -8,7 +8,7 @@ categories: Colocalization,Plugins
 description: test description
 ---
 
-%Replace% WIP %Replace%
+{% include wip %}
 
 # What is Colocalize?
 

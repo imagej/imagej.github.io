@@ -8,17 +8,18 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | name = LimeSeg | update
-site = LimeSeg | logo = | maintainer = {% include person
-content='NicoKiaru' %} | author = {% include person content='NicoKiaru'
-%}, {% include person content='Sarah Machado' %} | source = {% include
-github org='NicoKiaru' repo='LimeSeg' %} | status = | released = 01/2018
-| category = [Segmentation](:Category:Segmentation "wikilink"),
-[:Category:Plugins](:Category:Plugins "wikilink")
+{% capture maintainer %} {% include person content="NicoKiaru" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture author %} {% include person content="NicoKiaru" %}, {%
+include person content="Sarah Machado" %} {% endcapture %}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="NicoKiaru" repo="LimeSeg" %}
+{% endcapture %} {% include sidebox-right software='Fiji' name='LimeSeg'
+site='LimeSeg' logo='' maintainer=maintainer author=author source=source
+status='' released='01/2018'
+category='[Segmentation](:Category:Segmentation "wikilink"),
+[:Category:Plugins](:Category:Plugins "wikilink")' %}
 
 '''A Fiji plugin for the segmentation of 3D objects. '''
 

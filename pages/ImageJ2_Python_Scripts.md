@@ -23,81 +23,61 @@ https://github.com/imagej/imagej-scripting/tree/master/src/main/resources/script
 
 ## Stack Projection
 
-{% capture includecontent %}
-org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Projection.py|label=Projection.py
-{% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imagej' repo='imagej-scripting'
+path='src/main/resources/script\_templates/ImageJ2/Projection.py'
+label='Projection.py' %}
 
 ## Apply Threshold
 
-{% capture includecontent %}
-org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Apply\_Threshold.py|label=Apply\_Threshold.py
-{% endcapture %}
+{% include github-embed org='imagej' repo='imagej-scripting'
+path='src/main/resources/script\_templates/ImageJ2/Apply\_Threshold.py'
+label='Apply\_Threshold.py' %}
 
-{% include github-embed content=includecontent %}
-
-{% capture includecontent %}
-org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Apply\_Threshold\_Fast.py|label=Apply\_Threshold\_Fast.py
-{% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imagej' repo='imagej-scripting'
+path='src/main/resources/script\_templates/ImageJ2/Apply\_Threshold\_Fast.py'
+label='Apply\_Threshold\_Fast.py' %}
 
 ## Crop an image
 
-{% capture includecontent %}
-org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Crop.py|label=Crop.py
-{% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imagej' repo='imagej-scripting'
+path='src/main/resources/script\_templates/ImageJ2/Crop.py'
+label='Crop.py' %}
 
 ## Rotate all the frames of a stack
 
-{% capture includecontent %}
-org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Rotate\_Stack.py|label=Rotate\_Stack.py
-{% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imagej' repo='imagej-scripting'
+path='src/main/resources/script\_templates/ImageJ2/Rotate\_Stack.py'
+label='Rotate\_Stack.py' %}
 
 ## Subtract a stack to its first image
 
-{% capture includecontent %}
-org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Subtract\_First\_Image\_Stack.py|label=Subtract\_First\_Image\_Stack.py
-{% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imagej' repo='imagej-scripting'
+path='src/main/resources/script\_templates/ImageJ2/Subtract\_First\_Image\_Stack.py'
+label='Subtract\_First\_Image\_Stack.py' %}
 
 ## Apply DOG Filter
 
-{% capture includecontent %}
-org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Apply\_DOG\_Filtering.py|label=Apply\_DOG\_Filtering.py
-{% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imagej' repo='imagej-scripting'
+path='src/main/resources/script\_templates/ImageJ2/Apply\_DOG\_Filtering.py'
+label='Apply\_DOG\_Filtering.py' %}
 
 ## Apply a mask
 
-{% capture includecontent %}
-org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Apply\_Mask.py|label=Apply\_Mask.py
-{% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imagej' repo='imagej-scripting'
+path='src/main/resources/script\_templates/ImageJ2/Apply\_Mask.py'
+label='Apply\_Mask.py' %}
 
 ## Retrieve objects/particles from a mask
 
-{% capture includecontent %}
-org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Particles\_From\_Mask.py|label=Particles\_From\_Mask.py
-{% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imagej' repo='imagej-scripting'
+path='src/main/resources/script\_templates/ImageJ2/Particles\_From\_Mask.py'
+label='Particles\_From\_Mask.py' %}
 
 ## Manual Simple Registration on Stack
 
-{% capture includecontent %}
-org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Manual\_Registration.py|label=Manual\_Registration.py
-{% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imagej' repo='imagej-scripting'
+path='src/main/resources/script\_templates/ImageJ2/Manual\_Registration.py'
+label='Manual\_Registration.py' %}
 
 # Resources
 

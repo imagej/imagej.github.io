@@ -8,11 +8,12 @@ categories: Plugins,Segmentation,Machine Learning,Citable
 description: test description
 ---
 
-{| |style="vertical-align:top" |![Trainable Weka Segmentation pipeline
+{% include component-stats content=':sc.fiji:Trainable\_Segmentation'
+%}{| |style="vertical-align:top" |![Trainable Weka Segmentation pipeline
 overview.](TWS-pipeline.png
-"Trainable Weka Segmentation pipeline overview.") |}%Replace% TOC
-%Replace% **Trainable**: this plugin can be trained to learn from the
-user input and perform later the same task in unknown (test) data.
+"Trainable Weka Segmentation pipeline overview.") |}{% include toc %}
+**Trainable**: this plugin can be trained to learn from the user input
+and perform later the same task in unknown (test) data.
 
 **Weka**: it makes use of all the powerful tools and classifiers from
 the latest version of [Weka](http://www.cs.waikato.ac.nz/ml/weka/).
@@ -918,11 +919,7 @@ Segmentation](Trainable_Weka_Segmentation "wikilink") is based on a
 publication. If you use it successfully for your research please be so
 kind to cite our work:
 
-  - 
-{% capture includecontent %} Trainable Weka Segmentation {% endcapture
-%}
-
-{% include publication content=includecontent %}
+  - {% include publication content='Trainable Weka Segmentation' %}
 
 The [Trainable Weka
 Segmentation](Trainable_Weka_Segmentation "wikilink") code has its own

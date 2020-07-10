@@ -8,9 +8,10 @@ categories: Tutorials,Plugins
 description: test description
 ---
 
-The TopoJ plugins help you analyze surfaces of bright objects in image
-stacks. You can load an example via {% include bc content='File | Open
-Samples | SinteredAlumina (2.6MB)'%}:
+{% include component-stats content=':sc.fiji:TopoJ\_' %}The TopoJ
+plugins help you analyze surfaces of bright objects in image stacks. You
+can load an example via {% include bc content='File | Open Samples |
+SinteredAlumina (2.6MB)'%}:
 
 ![TopoJ-Sintered\_Alumina.jpg](TopoJ-Sintered_Alumina.jpg
 "TopoJ-Sintered_Alumina.jpg")

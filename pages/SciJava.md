@@ -8,19 +8,15 @@ categories:
 description: test description
 ---
 
-{% include project content='SciJava' %} {% capture includecontent %}
-name = SciJava | software = SciJava | logo =
-![Scijava-logo.png](/images/pages/Scijava-logo.png "Scijava-logo.png")" | author =
-[SciJava consortium](https://scijava.org/) | maintainer = {% include
-person content='Rueden' %} | source = [on
-GitHub](https://github.com/scijava) | status = Active | website =
-https://scijava.org/
-
-{% endcapture %}
-
-{% include info-box content=includecontent %} SciJava is a collaboration
-of projects providing software for scientific computing—an effort to
-cooperate and reuse code when feasible.
+{% include project content='SciJava' %} {% capture maintainer %} {%
+include person content="Rueden" %} {% endcapture %} {% include
+sidebox-right name='SciJava' software='SciJava'
+logo='![Scijava-logo.png](/images/pages/Scijava-logo.png "Scijava-logo.png")"'
+author='[SciJava consortium](https://scijava.org/)'
+maintainer=maintainer source='[on GitHub](https://github.com/scijava)'
+status='Active' website='https://scijava.org/' %}SciJava is a
+collaboration of projects providing software for scientific computing—an
+effort to cooperate and reuse code when feasible.
 
 ## The SciJava component collection
 

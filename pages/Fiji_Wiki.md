@@ -8,11 +8,7 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = Fiji Wiki | software = Fiji | author
-= Johannes Schindelin | maintainer = Johannes Schindelin
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right name='Fiji Wiki' software='Fiji'
+author='Johannes Schindelin' maintainer='Johannes Schindelin' %}
 
 The menu item "Fiji Wiki" opens this Fiji Wiki in the web browser.

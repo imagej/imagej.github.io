@@ -8,18 +8,20 @@ categories: Plugins,Segmentation,Citable
 description: test description
 ---
 
-\== Balloon Segmentation for multicellular images ==
+{% include component-stats content=':sc.fiji:BalloonSegmentation\_' %}==
+Balloon Segmentation for multicellular images ==
 
 ### Introduction
 
-A plugin<ref> {% capture includecontent %} author=Federici Fernán, Dupuy
-Lionel, Laplaze Laurent, Heisler Marcus, Haseloff Jim.|title=Integrated
-genetic and computation methods for in planta cytometry|journal=Nature
-Methods |year=2012 |volume= advance online publication
+A plugin<ref> {% capture includecontent %} journal|author=Federici
+Fernán, Dupuy Lionel, Laplaze Laurent, Heisler Marcus, Haseloff
+Jim.|title=Integrated genetic and computation methods for in planta
+cytometry|journal=Nature Methods |year=2012 |volume= advance online
+publication
 |url=http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1940.html
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref> that allows the
+{% include cite content=includecontent %} </ref> that allows the
 segmentation off cell wall boundaries from microscopy images and to
 extract cell architectures . It uses a physical “balloon inflation”
 algorithm for finding the cell boundaries from 8bits images. Features

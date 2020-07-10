@@ -8,11 +8,12 @@ categories: Plugins,User interface
 description: test description
 ---
 
-The Sync Windows plugin synchronizes mouse motion and input between
-multiple windows. Thus, an ROI drawn in one window is replicated in all
-other synchronized windows in the synchronized window set. A
-synchronization cursor (the red box above) indicates the location of the
-mouse in all synchronized windows.
+{% include component-stats content=':sc.fiji:Sync\_Win' %}The Sync
+Windows plugin synchronizes mouse motion and input between multiple
+windows. Thus, an ROI drawn in one window is replicated in all other
+synchronized windows in the synchronized window set. A synchronization
+cursor (the red box above) indicates the location of the mouse in all
+synchronized windows.
 
 ## Installation
 

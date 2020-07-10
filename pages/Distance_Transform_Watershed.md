@@ -8,19 +8,21 @@ categories: Plugins,Segmentation,Mathematical_morphology
 description: test description
 ---
 
-{% capture includecontent %} name = Distance Transform Watershed (2D and
-3D) | software = IJPB-plugins | author = {% include person
-content='Iarganda' %}, David Legland | maintainer = {% include person
-content='Iarganda' %} | source = {% include github org='ijpb'
-repo='ijpb-plugins' %} | released = August 25<sup>th</sup>, 2016 |
-latest version = July 23<sup>rd</sup>, 2019
-([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) | status = stable, active |
-category = [Segmentation](:Category:Segmentation "wikilink"),
-[Mathematical morphology](:Category:Mathematical_morphology "wikilink")
+{% capture author %} {% include person content="Iarganda" %}, David
+Legland {% endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Iarganda" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="ijpb" repo="ijpb-plugins" %}
+{% endcapture %} {% include sidebox-right name='Distance Transform
+Watershed (2D and 3D)' software='IJPB-plugins' author=author
+maintainer=maintainer source=source released='August 25<sup>th</sup>,
+2016' version='July 23<sup>rd</sup>, 2019
+([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1)' status='stable, active'
+category='[Segmentation](:Category:Segmentation "wikilink"),
+[Mathematical morphology](:Category:Mathematical_morphology "wikilink")'
+%}
 
 ## Introduction
 

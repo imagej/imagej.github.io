@@ -8,18 +8,14 @@ categories: Segmentation,Visualization,Plugins,Citable
 description: test description
 ---
 
-{% capture includecontent %} name = VTEA | software = Fiji | author =
-Seth Winfree ([1](mailto:winfrees@iu.edu)) | maintainer = Seth Winfree
-([2](mailto:winfrees@iu.edu)) | source = {% include github
-org='icbm-iupui' repo='volumetric-tissue-exploration-analysis' %} |
-status = v0.7, alpha, 1.0.a on deck. | category =
-[Segmentation](:Category:Segmentation "wikilink"),[Visualization](:Category:Visualization "wikilink"),[Plugins](:Category:Plugins "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-\_\_TOC\_\_
+{% capture source %} {% include github org="icbm-iupui"
+repo="volumetric-tissue-exploration-analysis" %} {% endcapture %} {%
+include sidebox-right name='VTEA' software='Fiji' author='Seth Winfree
+([1](mailto:winfrees@iu.edu))' maintainer='Seth Winfree
+([2](mailto:winfrees@iu.edu))' source=source status='v0.7, alpha, 1.0.a
+on deck.'
+category='[Segmentation](:Category:Segmentation "wikilink"),[Visualization](:Category:Visualization "wikilink"),[Plugins](:Category:Plugins "wikilink")'
+%} \_\_TOC\_\_
 
 # Volumetric Tissue Exploration and Analysis
 
@@ -53,11 +49,9 @@ clustering and dimensionality reduction.
 localization of identified cells in the analysis space in the original
 image, *in situ*, and in 3D with [ClearVolume](ClearVolume "wikilink").
 
-{% capture includecontent %} VTEA is still under active development.
-Version 1.0 is tentatively planned for an October release.. {%
-endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='VTEA is still under active
+development. Version 1.0 is tentatively planned for an October
+release..' %}
 
 This brief [video](Media:Demostration.mov "wikilink") describes VTEA's
 core behaviors. VTEA's utility has been demonstrated in this

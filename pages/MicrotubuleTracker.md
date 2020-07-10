@@ -9,7 +9,8 @@ description: test description
 ---
 
 ![MTracker\_NewLogo-04.png](MTracker_NewLogo-04.png
-"MTracker_NewLogo-04.png") 
+"MTracker_NewLogo-04.png") {% include component-stats
+content=':net.imagej:MTrack' %}
 
 MTrack is a tool, which detects, tracks, and measures the behavior of
 fluorescently labeled microtubules imaged by TIRF (total internal

@@ -8,14 +8,10 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Colour merge |
-author = unknown | filename = Colour\_merge.class | source = not found |
-released = unknown | latest version = unknown | status = unknown |
-category = [Color processing](:Category:Color_processing "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Colour merge'
+author='unknown' filename='Colour\_merge.class' source='not found'
+released='unknown' version='unknown' status='unknown' category='[Color
+processing](:Category:Color_processing "wikilink")' %}
 
 ## Purpose
 
@@ -38,7 +34,7 @@ yellow) but facilitates visualization of the separate channels (See
 ` | first = D.`  
 ` | last2 = Davoust`  
 ` | first2 = J.`  
-` | Multicolour analysis and local image correlation in confocal microscopy`  
+` | title = Multicolour analysis and local image correlation in confocal microscopy`  
 ` | journal = Journal of microscopy`  
 ` | volume = 185`  
 ` | pages = 21-36`  

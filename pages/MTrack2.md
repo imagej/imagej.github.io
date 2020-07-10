@@ -8,7 +8,8 @@ categories: Plugins,Tracking
 description: test description
 ---
 
-This plugin is for tracking objects in 2D over time.
+{% include component-stats content=':sc.fiji:MTrack2\_' %} This plugin
+is for tracking objects in 2D over time.
 
 Mtrack2 is based on the MultiTracker plugin by Jeffrey Kuhn which is
 based on the Object tracker plugin by {% include person

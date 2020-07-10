@@ -8,10 +8,10 @@ categories: Plugins,Visualization,Citable
 description: test description
 ---
 
-This plugin offers hardware-accelerated visualization possibilities for
-image stacks, using the [Java 3D](Java_3D "wikilink") library. Stacks
-can be displayed as texture-based volume renderings, surfaces or
-orthoslices.
+{% include component-stats content=':sc.fiji:3D\_Viewer' %}This plugin
+offers hardware-accelerated visualization possibilities for image
+stacks, using the [Java 3D](Java_3D "wikilink") library. Stacks can be
+displayed as texture-based volume renderings, surfaces or orthoslices.
 
 ![3D\_Viewer\_overview.png](3D_Viewer_overview.png
 "3D_Viewer_overview.png")
@@ -67,11 +67,8 @@ snippets can be found
 
 ### Javadocs
 
-The Fiji Javadocs provide detailed information about the {% capture
-includecontent %} package = ij3d | class = package-summary | label = 3D
-Viewer API {% endcapture %}
-
-{% include javadoc content=includecontent %} .
+The Fiji Javadocs provide detailed information about the {% include
+javadoc package='ij3d' class='package-summary' label='3D Viewer API' %}.
 
 ## FAQ
 
@@ -116,10 +113,7 @@ addidtional, potentially useful information.
 
 ## Publication
 
-  - 
-{% capture includecontent %} 3D Viewer {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='3D Viewer' %}
 
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:Visualization](Category:Visualization "wikilink")

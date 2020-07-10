@@ -21,10 +21,10 @@ funding efforts.
 On the technical side, {% include person content='Rueden' %} just wrote
 the first ImageJ code using Java 8 functionality, which will continue
 drive our {% include github org='imagej' repo='imagej' issue='135'
-label='need' %}. One recent and fundamental step in this direction is
-the release of the {% include list-of-update-sites content='3D update
-site' %}: providing Java 7- and 8-compatible versions of 3D ImageJ
-plugins (previously relegated to Java 6).
+label='need to migrate' %}. One recent and fundamental step in this
+direction is the release of the {% include list-of-update-sites
+content='3D update site' %}: providing Java 7- and 8-compatible versions
+of 3D ImageJ plugins (previously relegated to Java 6).
 
 ## Next steps
 
@@ -46,7 +46,7 @@ approximate order of our priority:
     pleased to have {% include person content='gab1one' %} on loan from
     Konstanz\!)
   - Improved {% include github org='imagej' repo='imagej-legacy'
-    issue='86' label='ImageJ1-ImageJ2' %}
+    issue='86' label='ImageJ1-ImageJ2 synchronization' %}
   - [Formalizing developer roles and
     responsibilities](http://forum.imagej.net/t/project-developer-roles/206)
     (which will make an "Adopt-a-plugin" program possible\!)

@@ -8,40 +8,42 @@ categories: Tutorials,Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = CoverMaker |
-maintainer = {% include person content='Tomancak' %} | author = {%
-include person content='Tomancak' %}, {% include person
-content='Schindelin' %} | source = {% include github repo='fiji'
-path='plugins/Examples/CoverMaker/Cover\_Maker.py' %} | released =
-27/05/2012 | latest version = 29/06/2012 | status = active | category =
-[:Category:Plugins](:Category:Plugins "wikilink") | website =
+{% capture maintainer %} {% include person content="Tomancak" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture author %} {% include person content="Tomancak" %}, {% include
+person content="Schindelin" %} {% endcapture %}
 
-{% include info-box content=includecontent %} %Replace% TOC %Replace%
+{% capture source %} {% include github repo="fiji"
+path="plugins/Examples/CoverMaker/Cover\_Maker.py" %} {% endcapture %}
+{% include sidebox-right software='ImageJ' name='CoverMaker'
+maintainer=maintainer author=author source=source released='27/05/2012'
+version='29/06/2012' status='active'
+category='[:Category:Plugins](:Category:Plugins "wikilink")' website=''
+%}{% include toc %}
 
 ## Introduction
 
 \[\[Image:Nature\_cover.png|thumb|right|166px|Nature cover for the paper
 on the developmental hourglass <ref name="Kalinka and Varga2010"> {%
-capture includecontent %} Gene expression divergence recapitulates the
-developmental hourglass model | author = A.T. Kalinka, K. Varga, D.T.
-Gerrard, S.W. Preibisch, D.L. Corcoran, J. Jarrels, U. Ohler, C.M.
-Bergman, P. Tomancak | journal = Nature | pages = 811–844 | volume = 468
-| number = 7325 | year = 2010 | doi = <doi:10.1038/nature09634>
+capture includecontent %} journal | title = Gene expression divergence
+recapitulates the developmental hourglass model | author = A.T. Kalinka,
+K. Varga, D.T. Gerrard, S.W. Preibisch, D.L. Corcoran, J. Jarrels, U.
+Ohler, C.M. Bergman, P. Tomancak | journal = Nature | pages = 811–844 |
+volume = 468 | number = 7325 | year = 2010 | doi =
+<doi:10.1038/nature09634>
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>.\]\]This
-project explores the algorithms for reconstructing scientific images as
-a combination of other scientific images drawing from a large database
-of scientific imagery. The resulting image can be visually stunning
-given that a large database with good balance of colors is available.
-One such database consisting of about 66,000 images of gene expression
-patterns in Drosophila embryogenesis is provided
-[here](#Databases "wikilink") as a starting point. The results of the
-plugin can be used as material for cover art such as for example the
-Nature cover on the right.
+{% include cite content=includecontent %} </ref>.\]\]This project
+explores the algorithms for reconstructing scientific images as a
+combination of other scientific images drawing from a large database of
+scientific imagery. The resulting image can be visually stunning given
+that a large database with good balance of colors is available. One such
+database consisting of about 66,000 images of gene expression patterns
+in Drosophila embryogenesis is provided [here](#Databases "wikilink") as
+a starting point. The results of the plugin can be used as material for
+cover art such as for example the Nature cover on the right.
 
 There are many online or offline solutions available for reconstructing
 images in this way, some of them undoubtedly more sophisticated than the
@@ -63,7 +65,8 @@ examples jump to the [Gallery](#Gallery "wikilink") section.
 <td><figure>
 <img src="/images/pages/Haeckel_embryos_white.png" title="Drawing of Haeckel embryos. For afficionados this is in fact Romanes&#39; 1892 copy of the Ernst Haeckel drawing. If you consider Haeckel a fraud, think again and start by reading the excellent Robert J. Richards book &quot;The Tragic Sense of Life&quot;." alt="Drawing of Haeckel embryos. For afficionados this is in fact Romanes&#39; 1892 copy of the Ernst Haeckel drawing. If you consider Haeckel a fraud, think again and start by reading the excellent Robert J. Richards book &quot;The Tragic Sense of Life&quot;." width="350" /><figcaption><strong>Drawing of Haeckel embryos.</strong> For afficionados this is in fact Romanes' 1892 copy of the <a href="wikipedia:Ernst_Haeckel" title="wikilink">Ernst Haeckel</a> drawing. If you consider Haeckel a fraud, think again and start by reading the excellent Robert J. Richards book "<a href="http://www.amazon.com/The-Tragic-Sense-Life-Evolutionary/dp/0226712141">The Tragic Sense of Life</a>".</figcaption>
 </figure></td>
-<td><p>[[Image:Haeckel embryos cover.png|thumb|left|350px|<strong>CoverMaker rendition of Haeckel embryos</strong> The image was generated using a database of 66,579 images of gene expression pattern during Drosophila embryogenesis visualized by histochemical RNA in situ hybridization.<ref name="Tomancak2002"> {% capture includecontent %} Systematic determination of patterns of gene expression during Drosophila embryogenesis.</p></td>
+<td><p>[[Image:Haeckel embryos cover.png|thumb|left|350px|<strong>CoverMaker rendition of Haeckel embryos</strong> The image was generated using a database of 66,579 images of gene expression pattern during Drosophila embryogenesis visualized by histochemical RNA in situ hybridization.<ref name="Tomancak2002"> {% capture includecontent %} journal</p></td>
+<td><p>title = Systematic determination of patterns of gene expression during Drosophila embryogenesis.</p></td>
 <td><p>author = P. Tomancak, A. Beaton, R. Weiszmann, E. Kwan, S. Shu, S.E. Lewis, S. Richards, M. Ashburner, V. Hartenstein, S.E. Celniker, G.M. Rubin</p></td>
 <td><p>journal = Genome Biology</p></td>
 <td><p>pages = 88–88</p></td>
@@ -71,8 +74,9 @@ examples jump to the [Gallery](#Gallery "wikilink") section.
 <td><p>number = 12</p></td>
 <td><p>year = 2002</p>
 <p>{% endcapture %}</p>
-<p>{% include cite-journal content=includecontent %}</p>
-<p></ref><ref name="Tomancak2007"> {% capture includecontent %} Global analysis of patterns of gene expression during Drosophila embryogenesis.</p></td>
+<p>{% include cite content=includecontent %}</p>
+<p></ref><ref name="Tomancak2007"> {% capture includecontent %} journal</p></td>
+<td><p>title = Global analysis of patterns of gene expression during Drosophila embryogenesis.</p></td>
 <td><p>author = P. Tomancak, B.P. Berman, A. Beaton, R. Weiszmann, E. Kwan, V. Hartenstein, S.E. Celniker, G.M. Rubin</p></td>
 <td><p>journal = Genome Biology</p></td>
 <td><p>pages = 145–145</p></td>
@@ -80,7 +84,7 @@ examples jump to the [Gallery](#Gallery "wikilink") section.
 <td><p>number = 7</p></td>
 <td><p>year = 2007</p>
 <p>{% endcapture %}</p>
-<p>{% include cite-journal content=includecontent %} </ref>]]</p></td>
+<p>{% include cite content=includecontent %} </ref>]]</p></td>
 </tr>
 </tbody>
 </table>

@@ -61,7 +61,7 @@ run "3D Project...", projection_options
 # has to discover the particular method the algorithm used to generate
 # the name of the new ImagePlus.)
 
-projections_"Projections of " + i.getShortTitle
+projections_title = "Projections of " + i.getShortTitle
 select_window projections_title
 
 # Split the stack into separate images, so we can merge them as

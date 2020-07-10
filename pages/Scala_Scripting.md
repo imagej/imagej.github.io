@@ -15,6 +15,6 @@ Scala scripting capabilities in ImageJ. However, support is *very new*
 and *largely untested*. Support will be improved later, as time allows.
 
 See also {% include github org='scijava' repo='scripting-scala'
-label='scripting-scala' %}.
+label='scripting-scala on GitHub' %}.
 
 [Category:Scripting](Category:Scripting "wikilink")

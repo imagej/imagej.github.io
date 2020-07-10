@@ -8,16 +8,12 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = RGB-Gray Merge |
-author = Eugene Tkachenko and Justin D. Pearlman | maintainer = None |
-filename = RGB\_Gray\_Merge.class | source = RGB\_Gray\_Merge.java |
-released = 12 December 2001 | latest version = 4 January 2007 | status =
-Unmaintained | category = [Color
-processing](:Category:Color_processing "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='RGB-Gray Merge'
+author='Eugene Tkachenko and Justin D. Pearlman' maintainer='None'
+filename='RGB\_Gray\_Merge.class' source='RGB\_Gray\_Merge.java'
+released='12 December 2001' version='4 January 2007'
+status='Unmaintained' category='[Color
+processing](:Category:Color_processing "wikilink")' %}
 
 ## Purpose
 

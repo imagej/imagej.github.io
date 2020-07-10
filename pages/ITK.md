@@ -8,19 +8,16 @@ categories: Related Software,Citable
 description: test description
 ---
 
-{% capture includecontent %} name = ITK | software = ITK | logo =
-![Itk-logo.png](/images/pages/Itk-logo.png "Itk-logo.png")" | author = [Insight
-Software Consortium](http://itk.org/) | maintainer = [Insight Software
-Consortium](http://itk.org/) | source = {% include github
-org='InsightSoftwareConsortium' repo='ITK' %} | status = Active |
-website = http://itk.org/
-
-{% endcapture %}
-
-{% include info-box content=includecontent %} The Insight Toolkit (ITK)
-is a cross-platform, [open-source](open-source "wikilink") application
-development framework widely used for the development of image
-[segmentation](segmentation "wikilink") and image registration programs.
+{% capture source %} {% include github org="InsightSoftwareConsortium"
+repo="ITK" %} {% endcapture %} {% include sidebox-right name='ITK'
+software='ITK' logo='![Itk-logo.png](/images/pages/Itk-logo.png "Itk-logo.png")"'
+author='[Insight Software Consortium](http://itk.org/)'
+maintainer='[Insight Software Consortium](http://itk.org/)'
+source=source status='Active' website='http://itk.org/' %}The Insight
+Toolkit (ITK) is a cross-platform, [open-source](open-source "wikilink")
+application development framework widely used for the development of
+image [segmentation](segmentation "wikilink") and image registration
+programs.
 
 # ITK integration with ImageJ
 
@@ -71,10 +68,7 @@ output = otsu.execute(image, 2, 0, 255, True)
 
 To cite ITK, please use the following publication:
 
-  - 
-{% capture includecontent %} ITK {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='ITK' %}
 
 See also:
 

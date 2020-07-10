@@ -8,9 +8,10 @@ categories: Plugins
 description: test description
 ---
 
-The VIB Protocol is designed for aligning 3D image stacks. The images we
-used are confocal images of adult fly brains, but basically the VIB
-protocol can be used for any 3D images.
+{% include component-stats content=':sc.fiji:VIB\_' %}The VIB Protocol
+is designed for aligning 3D image stacks. The images we used are
+confocal images of adult fly brains, but basically the VIB protocol can
+be used for any 3D images.
 
 ## Workflow
 

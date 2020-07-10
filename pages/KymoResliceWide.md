@@ -8,18 +8,15 @@ categories: Stacks,Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = KymoResliceWide
-| author = [Eugene Katrukha](http://katpyxa.info) and Laurie Young |
-maintainer = [Eugene Katrukha](mailto:katpyxa_at_gmail.com) | filename =
-[KymoResliceWide\_.jar](https://github.com/ekatrukha/KymoResliceWide/blob/master/KymoResliceWide_.jar?raw=true)
-| source = [github](https://github.com/ekatrukha/KymoResliceWide) |
-released = 24 September 2014 | latest version = 1 April 2017 | status =
-stable | category = [Stacks](:Category:Stacks "wikilink") | website =
-[wiki\_page](https://github.com/ekatrukha/KymoResliceWide/wiki)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='KymoResliceWide'
+author='[Eugene Katrukha](http://katpyxa.info) and Laurie Young'
+maintainer='[Eugene Katrukha](mailto:katpyxa_at_gmail.com)'
+filename='[KymoResliceWide\_.jar](https://github.com/ekatrukha/KymoResliceWide/blob/master/KymoResliceWide_.jar?raw=true)'
+source='[github](https://github.com/ekatrukha/KymoResliceWide)'
+released='24 September 2014' version='1 April 2017' status='stable'
+category='[Stacks](:Category:Stacks "wikilink")'
+website='[wiki\_page](https://github.com/ekatrukha/KymoResliceWide/wiki)'
+%}
 
 This plugin builds
 [kymographs](Generate_and_exploit_Kymographs "wikilink") using straight

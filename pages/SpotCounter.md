@@ -8,16 +8,14 @@ categories: Particle_analysis,Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = SpotCounter |
-author = Nico Stuurman (nico.stuurman at ucsf.edu) | maintainer = [Nico
-Stuurman](Nico_Stuurman "wikilink") | filename = | source = {% include
-github org='nicost' repo='spotCounter' %} | released = 2015/07/30 |
-latest version = 2018/01/18 (Version 0.14) | status = | category =
-[:Category:Particle\_analysis](:Category:Particle_analysis "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="nicost" repo="spotCounter"
+%} {% endcapture %} {% include sidebox-right software='ImageJ'
+name='SpotCounter' author='Nico Stuurman (nico.stuurman at ucsf.edu)'
+maintainer='[Nico Stuurman](Nico_Stuurman "wikilink")' filename=''
+source=source released='2015/07/30' version='2018/01/18 (Version 0.14)'
+status=''
+category='[:Category:Particle\_analysis](:Category:Particle_analysis "wikilink")'
+%}
 
 Simple ImageJ/Fiji plugin to count spots in image stacks. The plugin
 detects local maxima by scanning the image with a box of user-defined

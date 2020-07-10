@@ -8,21 +8,17 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} This page describes *how*
+{% include sidebox-right content='This page describes ""how""
 [SciJava](SciJava "wikilink") projects are funded.
 
-  - For information on who *contributes* to these projects, see
+  - For information on who ""contributes"" to these projects, see
     [Contributors](Contributors "wikilink").
-  - For information on who *maintains* these projects, see
+  - For information on who ""maintains"" these projects, see
     [Governance](Governance "wikilink").
-  - For information on *citing* these projects, see
-    [Citing](Citing "wikilink").
+  - For information on ""citing"" these projects, see
+    [Citing](Citing "wikilink").' %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-%Replace% AboutMenu %Replace% \_\_NOTOC\_\_== ImageJ 1.x ==
+{% include aboutmenu %}\_\_NOTOC\_\_== ImageJ 1.x ==
 
 Historically, [ImageJ 1.x](ImageJ_1.x "wikilink") was funded internally
 by the [Research Services](http://rsbweb.nih.gov/) branch of the

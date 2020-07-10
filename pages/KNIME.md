@@ -8,17 +8,16 @@ categories: Related Software,SciJava,Citable
 description: test description
 ---
 
-{% capture includecontent %} software = KNIME | name = KNIME Image
-Processing | logo = {% include logo content='KNIME' size='78px' %} |
-author = [KNIME team](http://www.knime.org/team) | maintainer = [KNIME
-team](http://www.knime.org/team) | source = {% include github
-org='knime-ip' repo='knip' %} | status = active | website =
-http://tech.knime.org/community/image-processing
+{% capture logo %} {% include logo content="KNIME" size="78px" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box-plugin content=includecontent %}
-[KNIME](http://knime.org/), the **K**o**n**stanz **I**nformation
+{% capture source %} {% include github org="knime-ip" repo="knip" %} {%
+endcapture %} {% include sidebox-right content='Plugin' software='KNIME'
+name='KNIME Image Processing' logo=logo author='[KNIME
+team](http://www.knime.org/team)' maintainer='[KNIME
+team](http://www.knime.org/team)' source=source status='active'
+website='http://tech.knime.org/community/image-processing'
+%}[KNIME](http://knime.org/), the **K**o**n**stanz **I**nformation
 **M**in**e**r, is an open source data analytics, reporting and
 integration platform. KNIME integrates various components for machine
 learning and data mining through its modular data pipelining concept. A
@@ -46,20 +45,9 @@ Both approaches are available as KNIME plugin (currently beta status).
 
 ## Publications
 
-  - 
-{% capture includecontent %} KNIME-Bioimage {% endcapture %}
-
-{% include publication content=includecontent %}
-
-  - 
-{% capture includecontent %} KNIP {% endcapture %}
-
-{% include publication content=includecontent %}
-
-  - 
-{% capture includecontent %} KNIME {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='KNIME-Bioimage' %}
+  - {% include publication content='KNIP' %}
+  - {% include publication content='KNIME' %}
 
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:SciJava](Category:SciJava "wikilink")

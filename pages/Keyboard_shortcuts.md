@@ -8,7 +8,7 @@ categories: User interface
 description: test description
 ---
 
-%Replace% TOC %Replace% ImageJ has a lot of keyboard shortcuts.
+{% include toc %}ImageJ has a lot of keyboard shortcuts.
 
 ## Listing all keyboard shortcuts
 

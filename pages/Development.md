@@ -8,17 +8,13 @@ categories: Development
 description: test description
 ---
 
-{% capture includecontent %} If your goal is to automate the behavior of
-ImageJ, consider writing a [script](script "wikilink") using ImageJ's
-[Script Editor](Script_Editor "wikilink")—it is often much simpler than
-a plugin in Java. {% endcapture %}
-
-{% include info-box content=includecontent %}
-
-%Replace% DevelopMenu %Replace% This page provides an overview of ImageJ
-from the perspective of software development: how to use it from your
-programs, as well as how to modify or extend its capabilities via
-[plugins](plugins "wikilink").
+{% include sidebox-right content='If your goal is to automate the
+behavior of ImageJ, consider writing a [script](script "wikilink") using
+ImageJ"s [Script Editor](Script_Editor "wikilink")—it is often much
+simpler than a plugin in Java.' %} {% include develop-menu %}This page
+provides an overview of ImageJ from the perspective of software
+development: how to use it from your programs, as well as how to modify
+or extend its capabilities via [plugins](plugins "wikilink").
 
 ## Quick start
 

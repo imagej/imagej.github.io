@@ -8,20 +8,15 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} logo = ![SciView-icon.png](SciView-icon.png
-"SciView-icon.png") | name = SciView | software = ImageJ | author = {%
-include person content='Kharrington' %}, {% include person
-content='skalarproduktraum' %}, {% include person content='Rueden' %} |
-filename = | source = [SciView](https://github.com/kephale/SciView) |
-released = in development | latest version = in development | status =
-alpha | category = [Visualization](:Category:Visualization "wikilink") |
-website = https://github.com/scenerygraphics/SciView
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-## Purpose
+{% capture author %} {% include person content="Kharrington" %}, {%
+include person content="skalarproduktraum" %}, {% include person
+content="Rueden" %} {% endcapture %} {% include sidebox-right
+logo='![SciView-icon.png](/images/pages/SciView-icon.png "SciView-icon.png")"'
+name='SciView' software='ImageJ' author=author filename=''
+source='[SciView](https://github.com/kephale/SciView)' released='in
+development' version='in development' status='alpha'
+category='[Visualization](:Category:Visualization "wikilink")'
+website='https://github.com/scenerygraphics/SciView' %}== Purpose ==
 
 This plugin provides 3D visualization and virtual reality capabilities
 for images and meshes using the

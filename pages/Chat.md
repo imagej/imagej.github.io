@@ -11,12 +11,11 @@ description: test description
 [ImageJ](ImageJ "wikilink") community members are often available via a
 couple of different chat services.
 
-{% capture includecontent %} If you have *image analysis* questions, it
-is better to use the [Image.sc Forum](https://forum.image.sc/), rather
-than chat rooms. Most of ImageJ community's image analysis experts
-frequent the Image.sc Forum, not live chat rooms. {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='If you have ""image analysis""
+questions, it is better to use the [Image.sc
+Forum](https://forum.image.sc/), rather than chat rooms. Most of ImageJ
+community"s image analysis experts frequent the Image.sc Forum, not live
+chat rooms.' %}
 
 ## Gitter
 

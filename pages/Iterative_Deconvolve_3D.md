@@ -8,18 +8,13 @@ categories: Plugins,Deconvolution
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Iterative
-Deconvolve 3D | author = Bob Dougherty | filename =
-[Iterative\_Deconvolve\_3D.class](http://www.optinav.info/download/Iterative_Deconvolve_3D.class)
-| source =
-[Iterative\_Deconvolve\_3D.java](http://www.optinav.info/download/Iterative_Deconvolve_3D.java)
-| released = 1 May 2005 | latest version = 4 June 2005 | status = stable
-| category = [Deconvolution](:Category:Deconvolution "wikilink") |
-website = [1](http://www.optinav.info/Iterative-Deconvolve-3D.htm)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Iterative Deconvolve
+3D' author='Bob Dougherty'
+filename='[Iterative\_Deconvolve\_3D.class](http://www.optinav.info/download/Iterative_Deconvolve_3D.class)'
+source='[Iterative\_Deconvolve\_3D.java](http://www.optinav.info/download/Iterative_Deconvolve_3D.java)'
+released='1 May 2005' version='4 June 2005' status='stable'
+category='[Deconvolution](:Category:Deconvolution "wikilink")'
+website='[1](http://www.optinav.info/Iterative-Deconvolve-3D.htm)' %}
 
 ## Purpose
 
@@ -39,7 +34,7 @@ The plugin was also the subject of a conference paper:
 {% capture includecontent %} last = Dougherty
 
 ` | first = R.`  
-` | Extensions of DAMAS and Benefits and Limitations of Deconvolution in Beamforming`  
+` | title = Extensions of DAMAS and Benefits and Limitations of Deconvolution in Beamforming`  
 ` | journal =  11th AIAA/CEAS Aeroacoustics Conference (26th AIAA Aeroacoustics Conference)`  
 ` | date = 2005`
 

@@ -8,6 +8,8 @@ categories: Plugins,Particle analysis,Tracking
 description: test description
 ---
 
+{% include component-stats content=':sc.fiji:Manual\_Tracking' %}
+
 See pdf documentation
 [here](https://imagej.net/plugins/track/Manual%20Tracking%20plugin.pdf)
 

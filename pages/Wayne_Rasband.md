@@ -8,19 +8,14 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = Wayne Rasband | affiliation = NIH
-special volunteer | loci = wayne-rasband | forum = Wayne | github =
-rasband | linkedin = in/waynerasband
-
-{% endcapture %}
-
-{% include user-box content=includecontent %}
-![Wayne-rasband.jpg](/images/pages/Wayne-rasband.jpg "Wayne-rasband.jpg")" Wayne
-Rasband was a software developer at the National Institutes of Health
-(NIH) for 40 years. He retired in 2010 but continues to work on ImageJ
-as an NIH volunteer. He fixes bugs, answers questions and adds features
-based on user feedback. Wayne also manages the [ImageJ 1.x
-website](https://imagej.net/index.html) and [mailing
+{% include usersidebox-right name='Wayne Rasband' affiliation='NIH
+special volunteer' loci='wayne-rasband' forum='Wayne' github='rasband'
+linkedin='in/waynerasband' %}![Wayne-rasband.jpg](Wayne-rasband.jpg
+"Wayne-rasband.jpg") Wayne Rasband was a software developer at the
+National Institutes of Health (NIH) for 40 years. He retired in 2010 but
+continues to work on ImageJ as an NIH volunteer. He fixes bugs, answers
+questions and adds features based on user feedback. Wayne also manages
+the [ImageJ 1.x website](https://imagej.net/index.html) and [mailing
 list](mailing_list "wikilink").
 
 Rasband developed three image analysis programs while at the NIH. The

@@ -8,8 +8,8 @@ categories: Fiji,Related Software,Citable
 description: test description
 ---
 
-%Replace% FijiMenu %Replace% [Fiji](https://fiji.sc/) is an image
-processing package—a "batteries-included" distribution of
+{% include fijimenu %}[Fiji](https://fiji.sc/) is an image processing
+package—a "batteries-included" distribution of
 [ImageJ](ImageJ "wikilink"), bundling a lot of plugins which facilitate
 scientific image analysis.
 
@@ -26,7 +26,7 @@ scientific image analysis.
 
 ## Downloads
 
-%Replace% DownloadFiji %Replace% See the [Fiji
+{% include downloadfiji %} See the [Fiji
 Downloads](Fiji/Downloads "wikilink") page for Life-Line versions, etc.
 
 ## License
@@ -38,7 +38,7 @@ Fiji builds on top of the [ImageJ2](ImageJ2 "wikilink") core, which is
 licensed under the permissive [BSD 2-Clause license](BSD "wikilink").
 
 Plugins and other components have {% include github repo='fiji'
-path='LICENSES' label='their' %}.
+path='LICENSES' label='their own licenses' %}.
 
 See the [Licensing](Licensing "wikilink") page for details.
 
@@ -67,10 +67,7 @@ community](Contact "wikilink").
 
 ## Publication
 
-  - 
-{% capture includecontent %} Fiji {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='Fiji' %}
 
 [Category:Fiji](Category:Fiji "wikilink") [Category:Related
 Software](Category:Related_Software "wikilink")

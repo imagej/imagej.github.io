@@ -8,7 +8,7 @@ categories: Cookbook,Tutorials
 description: test description
 ---
 
-%Replace% CookbookMenu %Replace% This book is an analysis-oriented
+{% include menu-cookbook %}This book is an analysis-oriented
 introduction and user guide to ImageJ. It is inspired by the defunct
 [MBF "ImageJ for microscopy" manual](MBF_Plugin_Collection "wikilink")
 which went offline in November 2012, and it describes many of the same
@@ -19,13 +19,12 @@ them *HOWTOs*. No matter how you refer to them, you'll find the book
 topics in the sidebar to the right\!
 
 Like the rest of this wiki, this Cookbook is a community project. Please
-feel welcome to edit and expand the material here\! %Replace% TOC
-%Replace%
+feel welcome to edit and expand the material here\! {% include toc %}
 
 ## Installing ImageJ
 
 The Cookbook is based on the [Fiji](Fiji "wikilink") distribution of
-ImageJ. %Replace% DownloadFiji %Replace%
+ImageJ. {% include downloadfiji %}
 
 ## Installing the Cookbook plugins
 
@@ -42,7 +41,7 @@ ImageJ. %Replace% DownloadFiji %Replace%
 ## Source
 
 The source code is {% include github org='fiji' repo='cookbook'
-label='on' %}.
+label='on GitHub' %}.
 
 ## Credits
 

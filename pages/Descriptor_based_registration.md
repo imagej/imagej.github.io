@@ -8,6 +8,7 @@ categories: Plugins
 description: test description
 ---
 
-%Replace% Stub %Replace%
+{% include component-stats
+content=':sc.fiji:Descriptor\_based\_registration' %}{% include stub %}
 
 [Category:Plugins](Category:Plugins "wikilink")

@@ -117,16 +117,11 @@ something similar at this stage...
 If you need to use classes that aren't in the java.\* or ij.\*
 hierarchy—or if you are developing JRuby scripts in the [Script
 Editor](Script_Editor "wikilink")—you will have to include them
-explicitly.
-
-{% capture includecontent %} lang=JRuby {% endcapture %}
-
-{% include importing-classes content=includecontent %}
-
-For example, in the classpath of [Fiji](Fiji "wikilink") there is a
-useful class called util.BatchOpener, that has static methods for
-opening files as arrays of ImagePlus objects (one per channel) without
-showing them. To use these methods, you would have to do:
+explicitly. {% include importing-classes lang='JRuby' %} For example, in
+the classpath of [Fiji](Fiji "wikilink") there is a useful class called
+util.BatchOpener, that has static methods for opening files as arrays of
+ImagePlus objects (one per channel) without showing them. To use these
+methods, you would have to do:
 
 ` >>> java_import 'util.BatchOpener'`  
 ` util.BatchOpener`
@@ -291,10 +286,11 @@ ImageJ plugins and commands. The next section has an example of the use
 of this. It may be instructive to compare the ["Blobs Demo"
 macro](https://imagej.net/macros/ConvexHull.txt) from the ImageJ
 distribution with {% include github repo='fiji'
-path='plugins/Examples/Blobs\_Demo\_in\_Ruby.rb' label='a' %}. The use
-of the analagous function in JRuby is not always the same - for example,
-if you compare the invocation of getSelectionCoordinates, you'll find
-that whereas the ImageJ macro version passes in the output variables:
+path='plugins/Examples/Blobs\_Demo\_in\_Ruby.rb' label='a version ported
+to JRuby' %}. The use of the analagous function in JRuby is not always
+the same - for example, if you compare the invocation of
+getSelectionCoordinates, you'll find that whereas the ImageJ macro
+version passes in the output variables:
 
 ` getSelectionCoordinates(xCoordinates, yCoordinates);`
 
@@ -305,7 +301,7 @@ that whereas the ImageJ macro version passes in the output variables:
 A note for the interested programmer: About 15% of the macro functions
 have be done so far, and if anyone wanted to help out with doing the
 rest, that would be excellent\! The source code {% include github
-repo='fiji' path='plugins/JRuby/imagej.rb' label='can' %}.
+repo='fiji' path='plugins/JRuby/imagej.rb' label='can be found here' %}.
 
 ## Example: Generating Red/Cyan Anaglyphs
 
@@ -355,11 +351,9 @@ the [Script Editor](Script_Editor "wikilink"), you need to use a `$`
 before `@ variables`, due to a limitation in the scoping, as in this
 example from [Script Templates](Script_Templates "wikilink"):
 
-{% capture includecontent %} org=
-scijava|repo=scripting-jruby|path=src/main/resources/script\_templates/Intro/Greeting.rb|label=Greeting.rb
-{% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='scijava' repo='scripting-jruby'
+path='src/main/resources/script\_templates/Intro/Greeting.rb'
+label='Greeting.rb' %}
 
 ## Library
 

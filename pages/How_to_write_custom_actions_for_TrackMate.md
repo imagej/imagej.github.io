@@ -8,7 +8,7 @@ categories: Tutorials
 description: test description
 ---
 
-%Replace% ExtendingTrackMateTutorials %Replace%
+{% include extendingtrackmatetutorials %}
 
 ## Introduction.
 

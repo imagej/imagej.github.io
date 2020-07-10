@@ -8,22 +8,23 @@ categories: Plugins,Segmentation,Mathematical_morphology
 description: test description
 ---
 
-{% capture includecontent %} name = Classic Watershed | software =
-IJPB-plugins | author = {% include person content='Iarganda' %}, David
-Legland | maintainer = {% include person content='Iarganda' %} | source
-= {% include github org='ijpb' repo='ijpb-plugins' %} | released = July
-3<sup>rd</sup>, 2014 | latest version = July 23<sup>rd</sup>, 2019
-([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) | status = stable, active |
-category = [Segmentation](:Category:Segmentation "wikilink"),
-[Mathematical morphology](:Category:Mathematical_morphology "wikilink")
+{% capture author %} {% include person content="Iarganda" %}, David
+Legland {% endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Iarganda" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
-
-|                                                                                                                                        |
-| -------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Overlay of watershed lines on blurred blobs.](/images/pages/Classic-Watershed-lines-blur-blobs.png "Overlay of watershed lines on blurred blobs.")" |
+{% capture source %} {% include github org="ijpb" repo="ijpb-plugins" %}
+{% endcapture %} {% include sidebox-right name='Classic Watershed'
+software='IJPB-plugins' author=author maintainer=maintainer
+source=source released='July 3<sup>rd</sup>, 2014' version='July
+23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1)'
+status='stable, active'
+category='[Segmentation](:Category:Segmentation "wikilink"),
+[Mathematical morphology](:Category:Mathematical_morphology "wikilink")'
+%}{| |style="vertical-align:top" |![Overlay of watershed lines on
+blurred blobs.](Classic-Watershed-lines-blur-blobs.png
+"Overlay of watershed lines on blurred blobs.") |}
 
 ## Introduction
 
@@ -33,15 +34,15 @@ category = [Segmentation](:Category:Segmentation "wikilink"),
 ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D
 images using flooding simulations as described by Pierre Soille and Luc
 M. Vincent (1990)\<ref name="Soille1990\> {% capture includecontent %}
-Determining watersheds in digital pictures via flooding simulations |
-author = Soille, Pierre and Vincent, Luc M | bookProc. SPIE | volume =
-1360 | pages = 240-250 | year = 1990 | organization = International
-Society for Optics and Photonics | doi = 10.1117/12.24211 | url =
-http://dx.doi.org/10.1117/12.24211
+conference | title = Determining watersheds in digital pictures via
+flooding simulations | author = Soille, Pierre and Vincent, Luc M |
+booktitle = Proc. SPIE | volume = 1360 | pages = 240-250 | year = 1990 |
+organization = International Society for Optics and Photonics | doi =
+10.1117/12.24211 | url = http://dx.doi.org/10.1117/12.24211
 
 {% endcapture %}
 
-{% include cite-conference content=includecontent %} </ref>.
+{% include cite content=includecontent %} </ref>.
 
 The basic idea consists of considering the input image as topographic
 surface and placing a water source in each regional minimum of its

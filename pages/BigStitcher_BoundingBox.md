@@ -71,12 +71,9 @@ This method will try to automatically find a bounding box around the
 sample by applying a **minimum filter** and then **thresholding** a
 downsampled version of the fused image.
 
-{% capture includecontent %} This method will try to segment a bright
-object in front of dark background, so it cannot be used e.g. for
-brightfield images with dark objects in front a bright background. {%
-endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right content='This method will try to segment a
+bright object in front of dark background, so it cannot be used e.g. for
+brightfield images with dark objects in front a bright background.' %}
 
 You will be asked for the following parameters:
 

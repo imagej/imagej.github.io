@@ -8,16 +8,11 @@ categories: Related Software
 description: test description
 ---
 
-{% capture includecontent %} name = Image SXM | software = Image SXM |
-author = Steve Barrett | maintainer = Steve Barrett | website =
-http://www.liv.ac.uk/~sdb/ImageSXM/
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-Image SXM, created by Steve Barrett, is a version of [NIH
-Image](NIH_Image "wikilink") that has been extended to handle the
-loading, display and analysis of scanning microscope images.
+{% include sidebox-right name='Image SXM' software='Image SXM'
+author='Steve Barrett' maintainer='Steve Barrett'
+website='http://www.liv.ac.uk/~sdb/ImageSXM/' %} Image SXM, created by
+Steve Barrett, is a version of [NIH Image](NIH_Image "wikilink") that
+has been extended to handle the loading, display and analysis of
+scanning microscope images.
 
 [Category:Related Software](Category:Related_Software "wikilink")

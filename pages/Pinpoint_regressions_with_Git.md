@@ -8,7 +8,7 @@ categories: Git
 description: test description
 ---
 
-%Replace% GitMenu %Replace%
+{% include gitmenu %}
 
 # How to bisect with Git
 

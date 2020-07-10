@@ -11,86 +11,44 @@ description: test description
 This page collects the plugins and packages maintained by each member of
 the Fiji team. The list is automatically generated from the Wiki data by
 a {% include github repo='fiji' path='bin/plugin-documentation-list.py'
-label='python' %}. It is stored in
+label='python script' %}. It is stored in
 [Template:Maintainers](Template:Maintainers "wikilink") and fetched by
 this page on demand.
 
 ## Ignacio Arganda-Carreras
 
-{% capture includecontent %} maintainer = Ignacio Arganda-Carreras {%
-endcapture %}
-
-{% include maintainers content=includecontent %}
-
-  
+{% include maintainers maintainer='Ignacio Arganda-Carreras' %}  
 
 ## Albert Cardona
 
-{% capture includecontent %} maintainer = Albert Cardona {% endcapture
-%}
-
-{% include maintainers content=includecontent %}
-
-  
+{% include maintainers maintainer='Albert Cardona' %}  
 
 ## Johannes Schindelin
 
-{% capture includecontent %} maintainer = Johannes Schindelin {%
-endcapture %}
-
-{% include maintainers content=includecontent %}
-
-  
+{% include maintainers maintainer='Johannes Schindelin' %}  
 
 ## Verena Kaynig
 
-{% capture includecontent %} maintainer = Verena Kaynig {% endcapture %}
-
-{% include maintainers content=includecontent %}
-
-  
+{% include maintainers maintainer='Verena Kaynig' %}  
 
 ## Gabriel Landini
 
-{% capture includecontent %} maintainer = Gabriel Landini {% endcapture
-%}
-
-{% include maintainers content=includecontent %}
-
-  
+{% include maintainers maintainer='Gabriel Landini' %}  
 
 ## Mark Longair
 
-{% capture includecontent %} maintainer = Mark Longair {% endcapture %}
-
-{% include maintainers content=includecontent %}
-
-  
+{% include maintainers maintainer='Mark Longair' %}  
 
 ## Benjamin Schmid
 
-{% capture includecontent %} maintainer = Benjamin Schmid {% endcapture
-%}
-
-{% include maintainers content=includecontent %}
-
-  
+{% include maintainers maintainer='Benjamin Schmid' %}  
 
 ## Jean-Yves Tinevez
 
-{% capture includecontent %} maintainer = Jean-Yves Tinevez {%
-endcapture %}
-
-{% include maintainers content=includecontent %}
-
-  
+{% include maintainers maintainer='Jean-Yves Tinevez' %}  
 
 ## Dan White
 
-{% capture includecontent %} maintainer = Dan White {% endcapture %}
-
-{% include maintainers content=includecontent %}
-
-  
+{% include maintainers maintainer='Dan White' %}  
 
 [Category:Development](Category:Development "wikilink")

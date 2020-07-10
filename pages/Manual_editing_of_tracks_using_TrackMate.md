@@ -111,7 +111,7 @@ The segmentation should take you no more than a minute, even on a
 standard machine, a considerable improvement over a standard segmenter.
 But at what cost\!
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ![TrackMate\_DownsampledInitThreshold.png](TrackMate_DownsampledInitThreshold.png
 "TrackMate_DownsampledInitThreshold.png")
@@ -151,7 +151,7 @@ training purpose, by having them generating additional linking defects.
 ![TrackMate\_DownsampleFilter.png](TrackMate_DownsampleFilter.png
 "TrackMate_DownsampleFilter.png")
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Generating irrelevant tracks
 
@@ -174,7 +174,7 @@ hopeless.
 
 This is what we will now manually correct.
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Launching TrackScheme
 

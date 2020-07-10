@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-%Replace% WIP %Replace% In [image
+{% include wip %} In [image
 processing](wikipedia:Image_processing "wikilink"), two of the most
 often needed yet complex operations are
 [segmentation](wikipedia:Segmentation_\(image_processing\) "wikilink")

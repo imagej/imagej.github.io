@@ -8,7 +8,7 @@ categories: Development,IDEs
 description: test description
 ---
 
-{% capture includecontent %} 1=
+{% include sidebox-right content='1=
 
 <center>
 
@@ -19,11 +19,8 @@ line](command_line "wikilink").
 
 </center>
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-{% include develop-menu content='tools' %}An [integrated development
+' %} {% include develop-menu content='tools' %}An [integrated
+development
 environment](wikipedia:Integrated_development_environment "wikilink")
 (IDE) is a software application that provides comprehensive facilities
 to computer programmers for software development. An IDE normally
@@ -35,7 +32,7 @@ supports [Maven](Maven "wikilink"), which includes:
 
 <center>
 
-%Replace% IDEs %Replace%
+{% include ides %}
 
 </center>
 

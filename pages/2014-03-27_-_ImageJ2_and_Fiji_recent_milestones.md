@@ -29,16 +29,17 @@ fixed, hardening the updater. It also allowed us to offer a very cool
 feature: personal update sites. Anybody with a Fiji wiki account (which
 in this case just serves as a convenient vehicle for ImageJ2) can
 register their personal update site onto which they can upload plugins
-and even macros. By adding the site to the %Replace% ListOfUpdateSites
-%Replace% page, every ImageJ2 user (which includes all Fiji users; Fiji
-includes ImageJ2\!) can follow that update site by pressing the "Manage
-update sites" button in the updater and checking the appropriate site's
-checkbox. Just like the Fiji wiki and the other ImageJ2 web resources,
-the update sites are served from LOCI's web servers.
+and even macros. By adding the site to the {% include
+list-of-update-sites %} page, every ImageJ2 user (which includes all
+Fiji users; Fiji includes ImageJ2\!) can follow that update site by
+pressing the "Manage update sites" button in the updater and checking
+the appropriate site's checkbox. Just like the Fiji wiki and the other
+ImageJ2 web resources, the update sites are served from LOCI's web
+servers.
 
-The list of update sites sees [SERVERNAME %Replace%
-/index.php?title=List\_of\_update\_sites\&action=history continued
-growth](http://%Replace%), and we encourage their use e.g. for macros or
+The list of update sites sees [include servername
+%}/index.php?title=List\_of\_update\_sites\&action=history continued
+growth](http://%7B%), and we encourage their use e.g. for macros or
 plugins associated with publications. It simply enhances the impact of a
 paper if its methods are available at the users' fingertips.
 
@@ -90,8 +91,8 @@ data mining environment [KNIME](KNIME "wikilink") started to [support
 image processing](http://tech.knime.org/community/image-processing)
 using exactly that library. This collaboration led to an amazing
 hackathon two weeks ago, the {% include github org='imagej'
-repo='imagej-ops' label='results' %} you can be certain to hear about
-soon ;-).
+repo='imagej-ops' label='results of which' %} you can be certain to hear
+about soon ;-).
 
 Likewise, the file input/output layer of ImageJ2 was abstracted into a
 general-purpose library called [SCIFIO](SCIFIO "wikilink"). Not only can

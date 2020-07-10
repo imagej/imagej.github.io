@@ -11,10 +11,7 @@ description: test description
 A detailed technical paper on [ImageJ2](ImageJ2 "wikilink") has been
 published in BMC Bioinformatics:
 
-  - 
-{% capture includecontent %} ImageJ2 {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='ImageJ2' %}
 
 Please [cite it](Citing "wikilink") if you use ImageJ2 in your work\!
 Thank you\!

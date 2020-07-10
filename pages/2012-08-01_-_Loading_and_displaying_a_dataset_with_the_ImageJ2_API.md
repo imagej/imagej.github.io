@@ -43,7 +43,7 @@ public class DisplayDataset {
 
 We have {% include github org='imagej' repo='tutorials'
 path='maven-projects/load-and-display-dataset/src/main/java/LoadAndDisplayDataset.java'
-label='published' %}.
+label='published this code as an ImageJ tutorial' %}.
 
 For this to work, you will need to add compile-time dependencies to
 `ij-core`, `ij-data` and `ij-io`, as well as a runtime dependency to
@@ -51,7 +51,7 @@ your user interface of choice (e.g., `ij-ui-swing`). If you don't add
 the UI JAR dependency, nothing will be displayed, because ImageJ2 won't
 know how to do it\! See the {% include github org='imagej'
 repo='tutorials' path='maven-projects/load-and-display-dataset/pom.xml'
-label='tutorial' %} for details.
+label='tutorial code"s pom.xml' %} for details.
 
 Note that as of this writing, there is a bug with the Swing SDI user
 interface (and maybe other UIs) that causes the display to initially

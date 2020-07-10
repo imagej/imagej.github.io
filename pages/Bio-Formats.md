@@ -8,25 +8,22 @@ categories: Related Software,Citable,SciJava,OME
 description: test description
 ---
 
-%Replace% FormatsMenu %Replace% {% capture includecontent %} software =
-ImageJ | name = OME Bio-Formats plugins | logo =
-![Bio-formats-icon.png](/images/pages/Bio-formats-icon.png "Bio-formats-icon.png")" |
-author = [Open Microscopy
+{% include menu-formats %} {% capture source %} {% include github
+org="openmicroscopy" repo="bioformats" %} {% endcapture %} {% include
+sidebox-right software='ImageJ' name='OME Bio-Formats plugins'
+logo='![Bio-formats-icon.png](Bio-formats-icon.png
+"Bio-formats-icon.png")' author='[Open Microscopy
 Environment](https://www.openmicroscopy.org/):  
 \- [UW-Madison LOCI](LOCI "wikilink")  
 \- [Glencoe Software](https://www.glencoesoftware.com/)  
-\- [University of Dundee](https://www.dundee.ac.uk/) | maintainer = OME
-development team | filename = [See Bio-Formats Downloads
-page](https://downloads.openmicroscopy.org/bio-formats/) | source = {%
-include github org='openmicroscopy' repo='bioformats' %} | latest
-version = [See Bio-Formats Downloads
-page](https://downloads.openmicroscopy.org/bio-formats/) | status =
-active | category =
-[:Category:Import-Export](:Category:Import-Export "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %} %Replace% TOC %Replace%
+\- [University of Dundee](https://www.dundee.ac.uk/)' maintainer='OME
+development team' filename='[See Bio-Formats Downloads
+page](https://downloads.openmicroscopy.org/bio-formats/)' source=source
+version='[See Bio-Formats Downloads
+page](https://downloads.openmicroscopy.org/bio-formats/)'
+status='active'
+category='[:Category:Import-Export](:Category:Import-Export "wikilink")'
+%}{% include toc %}
 
 ## Purpose
 
@@ -228,14 +225,12 @@ ImagePlus[] imps = BF.openImagePlus(options);
 
 ## Daily builds
 
-{% capture includecontent %} The daily builds are **not yet released**
-and should be considered **beta** in quality. There may be new bugs. In
-particular, you should **avoid exporting data using the Bio-Formats
-Exporter** because the files it writes might not be readable later by
-release versions of Bio-Formats or other OME-compliant tools. {%
-endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='The daily builds are """not
+yet released""" and should be considered """beta""" in quality. There
+may be new bugs. In particular, you should """avoid exporting data using
+the Bio-Formats Exporter""" because the files it writes might not be
+readable later by release versions of Bio-Formats or other OME-compliant
+tools.' %}
 
 Fiji ships release versions of Bio-Formats. However, given the long time
 frame between releases, you can update to the latest code by toggling
@@ -262,8 +257,8 @@ To enable the Bio-Formats update site:
 
 ## Source code
 
-The Bio-Formats source code is {% include github content='org =
-openmicroscopy | repo = bioformats' %}.
+The Bio-Formats source code is {% include github org='openmicroscopy'
+repo='bioformats' %}.
 
 ## Reporting bugs
 
@@ -272,10 +267,7 @@ Bio-Formats](https://docs.openmicroscopy.org/latest/bio-formats/about/bug-report
 
 ## Publication
 
-  - 
-{% capture includecontent %} Bio-Formats {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='Bio-Formats' %}
 
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:Citable](Category:Citable "wikilink")

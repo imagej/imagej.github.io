@@ -8,16 +8,15 @@ categories: Plugins,Particle analysis
 description: test description
 ---
 
-This plugin will open a new cell counter GUI. On the left are the
-counter types and counters, on the right the action buttons.
+{% include component-stats content=':sc.fiji:Cell\_Counter' %}This
+plugin will open a new cell counter GUI. On the left are the counter
+types and counters, on the right the action buttons.
 
-{% capture includecontent %} Please consider using the built-in
+{% include sidebox-right content='Please consider using the built-in
 [Multi-Point
 Tool](https://imagej.net/docs/guide/146-19.html#sec:Multi-point-Tool) in
 ImageJ, as this tool now replicates most of the functionality of Cell
-Counter. {% endcapture %}
-
-{% include info-box content=includecontent %}
+Counter.' %}
 
 ## Bugs
 

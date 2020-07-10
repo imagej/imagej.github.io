@@ -8,6 +8,7 @@ categories: Plugins,Image annotation
 description: test description
 ---
 
+{% include component-stats content=':sc.fiji:Arrow\_' %}
 ![Arrow\_example.png](/images/pages/Arrow_example.png "Arrow_example.png")"
 
 This version replaces the old `Arrow_.class` tool that was present in

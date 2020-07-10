@@ -8,18 +8,13 @@ categories: Plugins,Filtering
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Sigma Filter |
-author = Michael Schmid and Tony Collins | filename =
-[Sigma\_Filter\_Plus.class](https://imagej.net/plugins/download/Sigma_Filter_Plus.class)
-| source =
-[Sigma\_Filter\_Plus.java](https://imagej.net/plugins/download/Sigma_Filter_Plus.java)
-| released = 25 October 2007 | status = 1st version | category =
-[Filtering](:Category:Filtering "wikilink") | website =
-[1](https://imagej.net/plugins/sigma-filter.html)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Sigma Filter'
+author='Michael Schmid and Tony Collins'
+filename='[Sigma\_Filter\_Plus.class](https://imagej.net/plugins/download/Sigma_Filter_Plus.class)'
+source='[Sigma\_Filter\_Plus.java](https://imagej.net/plugins/download/Sigma_Filter_Plus.java)'
+released='25 October 2007' status='1st version'
+category='[Filtering](:Category:Filtering "wikilink")'
+website='[1](https://imagej.net/plugins/sigma-filter.html)' %}
 
 ## Purpose
 
@@ -34,7 +29,7 @@ This filter is based on the algorithm described in the following paper:
 {% capture includecontent %} last = Lee
 
 ` | first = Jong-Sen`  
-` | Digital image smoothing and the sigma filter`  
+` | title = Digital image smoothing and the sigma filter`  
 ` | journal = Computer vision, graphics, and image processing`  
 ` | volume = 24`  
 ` | issue = 2`  

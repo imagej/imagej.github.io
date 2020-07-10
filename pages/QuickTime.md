@@ -8,7 +8,7 @@ categories: Import-Export
 description: test description
 ---
 
-%Replace% FormatsMenu %Replace% The [QuickTime movie
+{% include menu-formats %}The [QuickTime movie
 format](wikipedia:QuickTime_File_Format "wikilink") is a multimedia
 container format with extension `.mov`.
 
@@ -44,18 +44,16 @@ QTJ is only available on Windows and OS X platforms, and only when
 running a 32-bit version of Java. On OS X, this means [using Apple Java
 6](Frequently_Asked_Questions#How_do_I_set_up_Java_6_on_OS_X.3F "wikilink").
 
-{% capture includecontent %} QuickTime for Java has been deprecated for
-many years, and Apple is steadily phasing it out. It is likely that it
-will no longer be possible to use QTJ at all in future operating system
-versions.
+{% include warning-sidebox-right content='QuickTime for Java has been
+deprecated for many years, and Apple is steadily phasing it out. It is
+likely that it will no longer be possible to use QTJ at all in future
+operating system versions.
 
 Apple has also deprecated several old codecs (e.g., `mjpb`), with its
 QuickTime Player application no longer able to read them in current
-versions of OS X. In general, we strongly encourage scientists *not* to
-use MOV format for storing scientific image data, since Apple is not
-committed to maintaining backwards compatibility. {% endcapture %}
-
-{% include warning-box content=includecontent %}
+versions of OS X. In general, we strongly encourage scientists ""not""
+to use MOV format for storing scientific image data, since Apple is not
+committed to maintaining backwards compatibility.' %}
 
 ### Enabling QuickTime for Java on OS X
 

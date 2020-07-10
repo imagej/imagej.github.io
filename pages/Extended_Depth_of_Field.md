@@ -8,16 +8,13 @@ categories: Tutorials,Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Extended Depth
-of Field | maintainer = Daniel Sage | author = Alex Prudencio | source =
-{% include github org='fiji' repo='Extended\_Depth\_Field' %} | released
-= 24/12/2010 | latest version = 24/12/2010 | status = stable | category
-= [:Category:Plugins](:Category:Plugins "wikilink") | website =
-http://bigwww.epfl.ch/demo/edf/
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji"
+repo="Extended\_Depth\_Field" %} {% endcapture %} {% include
+sidebox-right software='ImageJ' name='Extended Depth of Field'
+maintainer='Daniel Sage' author='Alex Prudencio' source=source
+released='24/12/2010' version='24/12/2010' status='stable'
+category='[:Category:Plugins](:Category:Plugins "wikilink")'
+website='http://bigwww.epfl.ch/demo/edf/' %}
 
 ## Extended Depth of Field
 

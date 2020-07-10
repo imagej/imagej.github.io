@@ -8,17 +8,16 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | name = Robust Clump
-Splitting | author = {% include person content='LouiseBloch' %}, {%
-include person content='Twagner' %} | maintainer = {% include person
-content='LouiseBloch' %}, {% include person content='Twagner' %} |
-filename = ij\_robust\_split.jar \[\] | source = Github
-[1](https://github.com/thorstenwagner/ij-robust-split) | latest version
-= v1.0.0 (04 Sep 2016) | status = active
+{% capture author %} {% include person content="LouiseBloch" %}, {%
+include person content="Twagner" %} {% endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture maintainer %} {% include person content="LouiseBloch" %}, {%
+include person content="Twagner" %} {% endcapture %} {% include
+sidebox-right software='Fiji' name='Robust Clump Splitting'
+author=author maintainer=maintainer filename='ij\_robust\_split.jar
+\[\]' source='Github
+[1](https://github.com/thorstenwagner/ij-robust-split)' version='v1.0.0
+(04 Sep 2016)' status='active' %}
 
 ## Purpose
 

@@ -8,14 +8,11 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Average Images |
-author = Mark Longair | maintainer = Mark Longair | filename = VIB\_.jar
-| source = {% include github org='fiji' repo='VIB'
-source='vib/Average\_Images.java' %} | status = stable
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="VIB"
+source="vib/Average\_Images.java" %} {% endcapture %} {% include
+sidebox-right software='ImageJ' name='Average Images' author='Mark
+Longair' maintainer='Mark Longair' filename='VIB\_.jar' source=source
+status='stable' %}
 
 Create an averaged image, in that each point in the result image is the
 mean of the values at that point in all the source images. You can drag

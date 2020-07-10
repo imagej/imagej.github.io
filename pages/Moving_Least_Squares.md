@@ -8,25 +8,24 @@ categories: Tutorials,Plugins
 description: test description
 ---
 
-{% capture includecontent %} name = Moving Least Squares registration |
-software = ImageJ | author = {% include person content='Schindelin' %} |
-maintainer = Johannes Schindelin | source = {% include github org='fiji'
-repo='VIB' source='Moving\_Least\_Squares.java' %} | released =
-2006/10/05
+{% capture author %} {% include person content="Schindelin" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="VIB"
+source="Moving\_Least\_Squares.java" %} {% endcapture %} {% include
+sidebox-right name='Moving Least Squares registration' software='ImageJ'
+author=author maintainer='Johannes Schindelin' source=source
+released='2006/10/05' %}
 
 This plugin implements the algorithms described in <ref> {% capture
-includecontent %} title=Image Deformation Using Moving Least
+includecontent %} journal|title=Image Deformation Using Moving Least
 Squares|author=Schaefer S., McPhail T., Warrent J.|journal=ACM
 Transactions on
 Graphics|volume=25|issue=3|month=July|year=2006|pages=533-540 {%
 endcapture %}
 
-{% include cite-journal content=includecontent %} </ref> to deform an
-image given a set of landmarks.
+{% include cite content=includecontent %} </ref> to deform an image
+given a set of landmarks.
 
 ## Tutorial
 

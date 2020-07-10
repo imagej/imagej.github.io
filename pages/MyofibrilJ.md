@@ -10,17 +10,19 @@ description: test description
 
 <seo metak="Fourier analysis, autocorrelation" metad="Fourier analysis, autocorrelation" />
 
-{% capture includecontent %} software = ImageJ/Fiji | name = MyofribilJ
-| maintainer = {% include person content='Gcardone' %} | author = {%
-include person content='Gcardone' %} and Maria Spletter | source = {%
-include github org='giocard' repo='MyofibrilJ' %} | released = November
-2017 | category = [Analysis](:Category:Analysis "wikilink"),
+{% capture maintainer %} {% include person content="Gcardone" %} {%
+endcapture %}
+
+{% capture author %} {% include person content="Gcardone" %} and Maria
+Spletter {% endcapture %}
+
+{% capture source %} {% include github org="giocard" repo="MyofibrilJ"
+%} {% endcapture %} {% include sidebox-right software='ImageJ/Fiji'
+name='MyofribilJ' maintainer=maintainer author=author source=source
+released='November 2017'
+category='[Analysis](:Category:Analysis "wikilink"),
 [Scripting](:Category:Scripting "wikilink"),
-[Plugins](:Category:Plugins "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+[Plugins](:Category:Plugins "wikilink")' %}
 
 ## Introduction
 

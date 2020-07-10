@@ -8,9 +8,9 @@ categories: Development
 description: test description
 ---
 
-%Replace% DevelopMenu %Replace% The [ImageJ](ImageJ "wikilink") and
-related [SciJava](SciJava "wikilink") projects take advantage of several
-project management tools.
+{% include develop-menu %}The [ImageJ](ImageJ "wikilink") and related
+[SciJava](SciJava "wikilink") projects take advantage of several project
+management tools.
 
 ## Git
 

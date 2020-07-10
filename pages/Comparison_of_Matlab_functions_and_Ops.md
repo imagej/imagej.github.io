@@ -8,1441 +8,365 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} This page is under active development.
+{% include sidebox-right content='This page is under active development.
 
   - The intention is to help developers switch from MATLAB to Ops by
     showing equivalent operations.
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+' %}
 
 ## Import, Export, and Conversion
 
 ### Read and Write Image Data from Files
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=imread {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Read image from graphics file</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=imwrite {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Write image to graphics file</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=imfinfo {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Information about graphics file</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=nitfinfo {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Read metadata from National Imagery Transmission Format (NITF) file</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=nitfread {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Read image from NITF file</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=dpxinfo {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Read metadata from DPX file</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=dpxread {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Read DPX image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=analyze75info {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Read metadata from header file of Analyze 7.5 data set</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=analyze75read {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Read image data from image file of Analyze 7.5 data set</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=interfileinfo {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Read metadata from Interfile file</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=interfileread {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Read images in Interfile format</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                   |                                                                       |
+| ----------------------------------------------------------------- | --------------------------------------------------------------------- |
+| | {% include matlab path='matlab/ref' function='imread' %}        | | Read image from graphics file                                       |
+| | {% include matlab path='matlab/ref' function='imwrite' %}       | | Write image to graphics file                                        |
+| | {% include matlab path='matlab/ref' function='imfinfo' %}       | | Information about graphics file                                     |
+| | {% include matlab path='images/ref' function='nitfinfo' %}      | | Read metadata from National Imagery Transmission Format (NITF) file |
+| | {% include matlab path='images/ref' function='nitfread' %}      | | Read image from NITF file                                           |
+| | {% include matlab path='images/ref' function='dpxinfo' %}       | | Read metadata from DPX file                                         |
+| | {% include matlab path='images/ref' function='dpxread' %}       | | Read DPX image                                                      |
+| | {% include matlab path='images/ref' function='analyze75info' %} | | Read metadata from header file of Analyze 7.5 data set              |
+| | {% include matlab path='images/ref' function='analyze75read' %} | | Read image data from image file of Analyze 7.5 data set             |
+| | {% include matlab path='images/ref' function='interfileinfo' %} | | Read metadata from Interfile file                                   |
+| | {% include matlab path='images/ref' function='interfileread' %} | | Read images in Interfile format                                     |
 
 ### Read and Write Image Data from DICOM Files
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=dicomanon {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Anonymize DICOM file</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=dicomdict {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Get or set active DICOM data dictionary</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=dicomdisp {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Display DICOM file structure</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=dicominfo {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Read metadata from DICOM message</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=dicomlookup {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find attribute in DICOM data dictionary</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=dicomread {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Read DICOM image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=dicomuid {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Generate DICOM unique identifier</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=dicomwrite {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Write images as DICOM files</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                 |                                           |
+| --------------------------------------------------------------- | ----------------------------------------- |
+| | {% include matlab path='images/ref' function='dicomanon' %}   | | Anonymize DICOM file                    |
+| | {% include matlab path='images/ref' function='dicomdict' %}   | | Get or set active DICOM data dictionary |
+| | {% include matlab path='images/ref' function='dicomdisp' %}   | | Display DICOM file structure            |
+| | {% include matlab path='images/ref' function='dicominfo' %}   | | Read metadata from DICOM message        |
+| | {% include matlab path='images/ref' function='dicomlookup' %} | | Find attribute in DICOM data dictionary |
+| | {% include matlab path='images/ref' function='dicomread' %}   | | Read DICOM image                        |
+| | {% include matlab path='images/ref' function='dicomuid' %}    | | Generate DICOM unique identifier        |
+| | {% include matlab path='images/ref' function='dicomwrite' %}  | | Write images as DICOM files             |
 
 ### High Dynamic Range Images
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=hdrread {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Read high dynamic range (HDR) image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=hdrwrite {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Write Radiance high dynamic range (HDR) image file</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=makehdr {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create high dynamic range image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=tonemap {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Render high dynamic range image for viewing</p></td>
-</tr>
-</tbody>
-</table>
+|                                                              |                                                      |
+| ------------------------------------------------------------ | ---------------------------------------------------- |
+| | {% include matlab path='images/ref' function='hdrread' %}  | | Read high dynamic range (HDR) image                |
+| | {% include matlab path='images/ref' function='hdrwrite' %} | | Write Radiance high dynamic range (HDR) image file |
+| | {% include matlab path='images/ref' function='makehdr' %}  | | Create high dynamic range image                    |
+| | {% include matlab path='images/ref' function='tonemap' %}  | | Render high dynamic range image for viewing        |
 
 ### Large Image Files
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=ImageAdapter {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Interface for image I/O</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=isrset {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Check if file is R-Set</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=openrset {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Open R-Set file</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=rsetwrite {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create reduced resolution data set from image file</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                  |                                                      |
+| ---------------------------------------------------------------- | ---------------------------------------------------- |
+| | {% include matlab path='images/ref' function='ImageAdapter' %} | | Interface for image I/O                            |
+| | {% include matlab path='images/ref' function='isrset' %}       | | Check if file is R-Set                             |
+| | {% include matlab path='images/ref' function='openrset' %}     | | Open R-Set file                                    |
+| | {% include matlab path='images/ref' function='rsetwrite' %}    | | Create reduced resolution data set from image file |
 
 ### Image Type Conversion
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=gray2ind {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert grayscale or binary image to indexed image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=ind2gray {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert indexed image to grayscale image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=mat2gray {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert matrix to grayscale image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=rgb2gray {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert RGB image or colormap to grayscale</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=ind2rgb {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert indexed image to RGB image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=label2rgb {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert label matrix into RGB image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=demosaic {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert Bayer pattern encoded image to truecolor image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imbinarize {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Binarize image by thresholding</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imquantize {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Quantize image using specified quantization levels and output values</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=multithresh {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Multilevel image thresholds using Otsu's method</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=adaptthresh {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Adaptive image threshold using local first-order statistics</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=otsuthresh {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Global histogram threshold using Otsu's method</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=graythresh {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Global image threshold using Otsu's method</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=grayslice {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert grayscale image to indexed image using multilevel thresholding</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=im2double {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to double precision</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=im2int16 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to 16-bit signed integers</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=im2java2d {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to Java buffered image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=im2single {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to single precision</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=im2uint16 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to 16-bit unsigned integers</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=im2uint8 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to 8-bit unsigned integers</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                 |                                                                          |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| | {% include matlab path='images/ref' function='gray2ind' %}    | | Convert grayscale or binary image to indexed image                     |
+| | {% include matlab path='images/ref' function='ind2gray' %}    | | Convert indexed image to grayscale image                               |
+| | {% include matlab path='images/ref' function='mat2gray' %}    | | Convert matrix to grayscale image                                      |
+| | {% include matlab path='matlab/ref' function='rgb2gray' %}    | | Convert RGB image or colormap to grayscale                             |
+| | {% include matlab path='images/ref' function='ind2rgb' %}     | | Convert indexed image to RGB image                                     |
+| | {% include matlab path='images/ref' function='label2rgb' %}   | | Convert label matrix into RGB image                                    |
+| | {% include matlab path='images/ref' function='demosaic' %}    | | Convert Bayer pattern encoded image to truecolor image                 |
+| | {% include matlab path='images/ref' function='imbinarize' %}  | | Binarize image by thresholding                                         |
+| | {% include matlab path='images/ref' function='imquantize' %}  | | Quantize image using specified quantization levels and output values   |
+| | {% include matlab path='images/ref' function='multithresh' %} | | Multilevel image thresholds using Otsu's method                        |
+| | {% include matlab path='images/ref' function='adaptthresh' %} | | Adaptive image threshold using local first-order statistics            |
+| | {% include matlab path='images/ref' function='otsuthresh' %}  | | Global histogram threshold using Otsu's method                         |
+| | {% include matlab path='images/ref' function='graythresh' %}  | | Global image threshold using Otsu's method                             |
+| | {% include matlab path='images/ref' function='grayslice' %}   | | Convert grayscale image to indexed image using multilevel thresholding |
+| | {% include matlab path='matlab/ref' function='im2double' %}   | | Convert image to double precision                                      |
+| | {% include matlab path='images/ref' function='im2int16' %}    | | Convert image to 16-bit signed integers                                |
+| | {% include matlab path='images/ref' function='im2java2d' %}   | | Convert image to Java buffered image                                   |
+| | {% include matlab path='images/ref' function='im2single' %}   | | Convert image to single precision                                      |
+| | {% include matlab path='images/ref' function='im2uint16' %}   | | Convert image to 16-bit unsigned integers                              |
+| | {% include matlab path='images/ref' function='im2uint8' %}    | | Convert image to 8-bit unsigned integers                               |
 
 ### Color
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=rgb2lab {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert RGB to CIE 1976 L*a*b*</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=rgb2ntsc {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert RGB color values to NTSC color space</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=rgb2xyz {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert RGB to CIE 1931 XYZ</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=rgb2ycbcr {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert RGB color values to YCbCr color space</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=lab2rgb {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert CIE 1976 L*a*b* to RGB</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=lab2xyz {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert CIE 1976 L*a*b* to CIE 1931 XYZ</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=xyz2lab {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert CIE 1931 XYZ to CIE 1976 L*a*b*</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=xyz2rgb {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert CIE 1931 XYZ to RGB</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=ycbcr2rgb {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert YCbCr color values to RGB color space</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=ntsc2rgb {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert NTSC values to RGB color space</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=lab2double {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert L*a*b* data to double</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=lab2uint16 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert L*a*b* data to uint16</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=lab2uint8 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert L*a*b* data to uint8</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=xyz2double {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert XYZ color values to double</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=xyz2uint16 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert XYZ color values to uint16</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=iccfind {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Search for ICC profiles</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=iccread {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Read ICC profile</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=iccroot {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find system default ICC profile repository</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=iccwrite {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Write ICC color profile to disk file</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=isicc {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| True for valid ICC color profile</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=makecform {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create color transformation structure</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=applycform {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Apply device-independent color space transformation</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=imapprox {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Approximate indexed image by reducing number of colors</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=colorcloud {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Display 3-D color gamut as point cloud in specified color space</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=whitepoint {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| XYZ color values of standard illuminants</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                |                                                                   |
+| -------------------------------------------------------------- | ----------------------------------------------------------------- |
+| | {% include matlab path='images/ref' function='rgb2lab' %}    | | Convert RGB to CIE 1976 L\*a\*b\*                               |
+| | {% include matlab path='images/ref' function='rgb2ntsc' %}   | | Convert RGB color values to NTSC color space                    |
+| | {% include matlab path='images/ref' function='rgb2xyz' %}    | | Convert RGB to CIE 1931 XYZ                                     |
+| | {% include matlab path='images/ref' function='rgb2ycbcr' %}  | | Convert RGB color values to YCbCr color space                   |
+| | {% include matlab path='images/ref' function='lab2rgb' %}    | | Convert CIE 1976 L\*a\*b\* to RGB                               |
+| | {% include matlab path='images/ref' function='lab2xyz' %}    | | Convert CIE 1976 L\*a\*b\* to CIE 1931 XYZ                      |
+| | {% include matlab path='images/ref' function='xyz2lab' %}    | | Convert CIE 1931 XYZ to CIE 1976 L\*a\*b\*                      |
+| | {% include matlab path='images/ref' function='xyz2rgb' %}    | | Convert CIE 1931 XYZ to RGB                                     |
+| | {% include matlab path='images/ref' function='ycbcr2rgb' %}  | | Convert YCbCr color values to RGB color space                   |
+| | {% include matlab path='images/ref' function='ntsc2rgb' %}   | | Convert NTSC values to RGB color space                          |
+| | {% include matlab path='images/ref' function='lab2double' %} | | Convert L\*a\*b\* data to double                                |
+| | {% include matlab path='images/ref' function='lab2uint16' %} | | Convert L\*a\*b\* data to uint16                                |
+| | {% include matlab path='images/ref' function='lab2uint8' %}  | | Convert L\*a\*b\* data to uint8                                 |
+| | {% include matlab path='images/ref' function='xyz2double' %} | | Convert XYZ color values to double                              |
+| | {% include matlab path='images/ref' function='xyz2uint16' %} | | Convert XYZ color values to uint16                              |
+| | {% include matlab path='images/ref' function='iccfind' %}    | | Search for ICC profiles                                         |
+| | {% include matlab path='images/ref' function='iccread' %}    | | Read ICC profile                                                |
+| | {% include matlab path='images/ref' function='iccroot' %}    | | Find system default ICC profile repository                      |
+| | {% include matlab path='images/ref' function='iccwrite' %}   | | Write ICC color profile to disk file                            |
+| | {% include matlab path='images/ref' function='isicc' %}      | | True for valid ICC color profile                                |
+| | {% include matlab path='images/ref' function='makecform' %}  | | Create color transformation structure                           |
+| | {% include matlab path='images/ref' function='applycform' %} | | Apply device-independent color space transformation             |
+| | {% include matlab path='matlab/ref' function='imapprox' %}   | | Approximate indexed image by reducing number of colors          |
+| | {% include matlab path='images/ref' function='colorcloud' %} | | Display 3-D color gamut as point cloud in specified color space |
+| | {% include matlab path='images/ref' function='whitepoint' %} | | XYZ color values of standard illuminants                        |
 
 ### Synthetic Images
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=checkerboard {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create checkerboard image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=phantom {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create head phantom image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imnoise {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Add noise to image</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                  |                             |
+| ---------------------------------------------------------------- | --------------------------- |
+| | {% include matlab path='images/ref' function='checkerboard' %} | | Create checkerboard image |
+| | {% include matlab path='images/ref' function='phantom' %}      | | Create head phantom image |
+| | {% include matlab path='images/ref' function='imnoise' %}      | | Add noise to image        |
 
 ## Display and Exploration
 
 ### Basic Display
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imshow {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Display image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=montage {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Display multiple image frames as rectangular montage</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=immovie {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Make movie from multiframe image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=implay {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Play movies, videos, or image sequences</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=warp {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Display image as texture-mapped surface</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptgetpref {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Get values of Image Processing Toolbox preferences</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptprefs {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Display Image Processing Toolbox Preferences dialog box</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptsetpref {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Set Image Processing Toolbox preferences or display valid values</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                |                                                                    |
+| -------------------------------------------------------------- | ------------------------------------------------------------------ |
+| | {% include matlab path='images/ref' function='imshow' %}     | | Display image                                                    |
+| | {% include matlab path='images/ref' function='montage' %}    | | Display multiple image frames as rectangular montage             |
+| | {% include matlab path='images/ref' function='immovie' %}    | | Make movie from multiframe image                                 |
+| | {% include matlab path='images/ref' function='implay' %}     | | Play movies, videos, or image sequences                          |
+| | {% include matlab path='images/ref' function='warp' %}       | | Display image as texture-mapped surface                          |
+| | {% include matlab path='images/ref' function='iptgetpref' %} | | Get values of Image Processing Toolbox preferences               |
+| | {% include matlab path='images/ref' function='iptprefs' %}   | | Display Image Processing Toolbox Preferences dialog box          |
+| | {% include matlab path='images/ref' function='iptsetpref' %} | | Set Image Processing Toolbox preferences or display valid values |
 
 ### Interactive Exploration with the Image Viewer App
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imtool {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Image Viewer app</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imageinfo {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Image Information tool</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imcontrast {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Adjust Contrast tool</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imdisplayrange {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Display Range tool</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imdistline {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Distance tool</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=impixelinfo {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pixel Information tool</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=impixelinfoval {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pixel Information tool without text label</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=impixelregion {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pixel Region tool</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=immagbox {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Magnification box for scroll panel</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imoverview {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Overview tool for image displayed in scroll panel</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptgetpref {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Get values of Image Processing Toolbox preferences</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptprefs {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Display Image Processing Toolbox Preferences dialog box</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptsetpref {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Set Image Processing Toolbox preferences or display valid values</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                    |                                                                    |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| | {% include matlab path='images/ref' function='imtool' %}         | | Image Viewer app                                                 |
+| | {% include matlab path='images/ref' function='imageinfo' %}      | | Image Information tool                                           |
+| | {% include matlab path='images/ref' function='imcontrast' %}     | | Adjust Contrast tool                                             |
+| | {% include matlab path='images/ref' function='imdisplayrange' %} | | Display Range tool                                               |
+| | {% include matlab path='images/ref' function='imdistline' %}     | | Distance tool                                                    |
+| | {% include matlab path='images/ref' function='impixelinfo' %}    | | Pixel Information tool                                           |
+| | {% include matlab path='images/ref' function='impixelinfoval' %} | | Pixel Information tool without text label                        |
+| | {% include matlab path='images/ref' function='impixelregion' %}  | | Pixel Region tool                                                |
+| | {% include matlab path='images/ref' function='immagbox' %}       | | Magnification box for scroll panel                               |
+| | {% include matlab path='images/ref' function='imoverview' %}     | | Overview tool for image displayed in scroll panel                |
+| | {% include matlab path='images/ref' function='iptgetpref' %}     | | Get values of Image Processing Toolbox preferences               |
+| | {% include matlab path='images/ref' function='iptprefs' %}       | | Display Image Processing Toolbox Preferences dialog box          |
+| | {% include matlab path='images/ref' function='iptsetpref' %}     | | Set Image Processing Toolbox preferences or display valid values |
 
 ### Build Interactive Tools
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imageinfo {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Image Information tool</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imcolormaptool {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Choose Colormap tool</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imcontrast {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Adjust Contrast tool</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imcrop {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Crop image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imdisplayrange {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Display Range tool</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imdistline {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Distance tool</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=impixelinfo {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pixel Information tool</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=impixelinfoval {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pixel Information tool without text label</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=impixelregion {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pixel Region tool</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=impixelregionpanel {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pixel Region tool panel</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=immagbox {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Magnification box for scroll panel</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imoverview {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Overview tool for image displayed in scroll panel</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imoverviewpanel {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Overview tool panel for image displayed in scroll panel</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imsave {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Save Image Tool</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imscrollpanel {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Scroll panel for interactive image navigation</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imellipse {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create draggable ellipse</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imfreehand {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create draggable freehand region</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imline {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create draggable, resizable line</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=impoint {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create draggable point</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=impoly {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create draggable, resizable polygon</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imrect {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create draggable rectangle</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imroi {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Region-of-interest (ROI) base class</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=getline {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Select polyline with mouse</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=getpts {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Specify points with mouse</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=getrect {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Specify rectangle with mouse</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=getimage {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Image data from axes</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=getimagemodel {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Image model object from image object</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imagemodel {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Image Model object</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=axes2pix {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert axes coordinates to pixel coordinates</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imattributes {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Information about image attributes</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgca {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Get current axes containing image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgcf {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Get current figure containing image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgetfile {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Display Open Image dialog box</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imhandles {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Get all image objects</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptaddcallback {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Add function handle to callback list</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptcheckhandle {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Check validity of handle</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptgetapi {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Get Application Programmer Interface (API) for handle</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptGetPointerBehavior {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Retrieve pointer behavior from graphics object</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=ipticondir {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Directories containing IPT and MATLAB icons</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptPointerManager {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create pointer manager in figure</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptremovecallback {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Delete function handle from callback list</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptSetPointerBehavior {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Store pointer behavior structure in graphics object</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptwindowalign {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Align figure windows</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=makeConstrainToRectFcn {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create rectangularly bounded drag constraint function</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=truesize {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Adjust display size of image</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                            |                                                           |
+| -------------------------------------------------------------------------- | --------------------------------------------------------- |
+| | {% include matlab path='images/ref' function='imageinfo' %}              | | Image Information tool                                  |
+| | {% include matlab path='images/ref' function='imcolormaptool' %}         | | Choose Colormap tool                                    |
+| | {% include matlab path='images/ref' function='imcontrast' %}             | | Adjust Contrast tool                                    |
+| | {% include matlab path='images/ref' function='imcrop' %}                 | | Crop image                                              |
+| | {% include matlab path='images/ref' function='imdisplayrange' %}         | | Display Range tool                                      |
+| | {% include matlab path='images/ref' function='imdistline' %}             | | Distance tool                                           |
+| | {% include matlab path='images/ref' function='impixelinfo' %}            | | Pixel Information tool                                  |
+| | {% include matlab path='images/ref' function='impixelinfoval' %}         | | Pixel Information tool without text label               |
+| | {% include matlab path='images/ref' function='impixelregion' %}          | | Pixel Region tool                                       |
+| | {% include matlab path='images/ref' function='impixelregionpanel' %}     | | Pixel Region tool panel                                 |
+| | {% include matlab path='images/ref' function='immagbox' %}               | | Magnification box for scroll panel                      |
+| | {% include matlab path='images/ref' function='imoverview' %}             | | Overview tool for image displayed in scroll panel       |
+| | {% include matlab path='images/ref' function='imoverviewpanel' %}        | | Overview tool panel for image displayed in scroll panel |
+| | {% include matlab path='images/ref' function='imsave' %}                 | | Save Image Tool                                         |
+| | {% include matlab path='images/ref' function='imscrollpanel' %}          | | Scroll panel for interactive image navigation           |
+| | {% include matlab path='images/ref' function='imellipse' %}              | | Create draggable ellipse                                |
+| | {% include matlab path='images/ref' function='imfreehand' %}             | | Create draggable freehand region                        |
+| | {% include matlab path='images/ref' function='imline' %}                 | | Create draggable, resizable line                        |
+| | {% include matlab path='images/ref' function='impoint' %}                | | Create draggable point                                  |
+| | {% include matlab path='images/ref' function='impoly' %}                 | | Create draggable, resizable polygon                     |
+| | {% include matlab path='images/ref' function='imrect' %}                 | | Create draggable rectangle                              |
+| | {% include matlab path='images/ref' function='imroi' %}                  | | Region-of-interest (ROI) base class                     |
+| | {% include matlab path='images/ref' function='getline' %}                | | Select polyline with mouse                              |
+| | {% include matlab path='images/ref' function='getpts' %}                 | | Specify points with mouse                               |
+| | {% include matlab path='images/ref' function='getrect' %}                | | Specify rectangle with mouse                            |
+| | {% include matlab path='images/ref' function='getimage' %}               | | Image data from axes                                    |
+| | {% include matlab path='images/ref' function='getimagemodel' %}          | | Image model object from image object                    |
+| | {% include matlab path='images/ref' function='imagemodel' %}             | | Image Model object                                      |
+| | {% include matlab path='images/ref' function='axes2pix' %}               | | Convert axes coordinates to pixel coordinates           |
+| | {% include matlab path='images/ref' function='imattributes' %}           | | Information about image attributes                      |
+| | {% include matlab path='images/ref' function='imgca' %}                  | | Get current axes containing image                       |
+| | {% include matlab path='images/ref' function='imgcf' %}                  | | Get current figure containing image                     |
+| | {% include matlab path='images/ref' function='imgetfile' %}              | | Display Open Image dialog box                           |
+| | {% include matlab path='images/ref' function='imhandles' %}              | | Get all image objects                                   |
+| | {% include matlab path='images/ref' function='iptaddcallback' %}         | | Add function handle to callback list                    |
+| | {% include matlab path='images/ref' function='iptcheckhandle' %}         | | Check validity of handle                                |
+| | {% include matlab path='images/ref' function='iptgetapi' %}              | | Get Application Programmer Interface (API) for handle   |
+| | {% include matlab path='images/ref' function='iptGetPointerBehavior' %}  | | Retrieve pointer behavior from graphics object          |
+| | {% include matlab path='images/ref' function='ipticondir' %}             | | Directories containing IPT and MATLAB icons             |
+| | {% include matlab path='images/ref' function='iptPointerManager' %}      | | Create pointer manager in figure                        |
+| | {% include matlab path='images/ref' function='iptremovecallback' %}      | | Delete function handle from callback list               |
+| | {% include matlab path='images/ref' function='iptSetPointerBehavior' %}  | | Store pointer behavior structure in graphics object     |
+| | {% include matlab path='images/ref' function='iptwindowalign' %}         | | Align figure windows                                    |
+| | {% include matlab path='images/ref' function='makeConstrainToRectFcn' %} | | Create rectangularly bounded drag constraint function   |
+| | {% include matlab path='images/ref' function='truesize' %}               | | Adjust display size of image                            |
 
 ## Geometric Transformation, Spatial Referencing, and Image Registration
 
 ### Geometric Transformations
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imcrop {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Crop image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imresize {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Resize image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imrotate {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Rotate image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imtranslate {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Translate image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=impyramid {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Image pyramid reduction and expansion</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imwarp {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Apply geometric transformation to image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=fitgeotrans {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Fit geometric transformation to control point pairs</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imtransform {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Apply 2-D spatial transformation to image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=findbounds {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find output bounds for spatial transformation</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=fliptform {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Flip input and output roles of TFORM structure</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=makeresampler {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create resampling structure</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=maketform {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create spatial transformation structure (TFORM)</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=tformarray {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Apply spatial transformation to N-D array</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=tformfwd {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Apply forward spatial transformation</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=tforminv {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Apply inverse spatial transformation</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=checkerboard {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create checkerboard image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=affine2d {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D Affine Geometric Transformation</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=affine3d {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 3-D Affine Geometric Transformation</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=projective2d {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D Projective Geometric Transformation</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=images.geotrans.PiecewiseLinearTransformation2D {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D piecewise linear geometric transformation</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=images.geotrans.PolynomialTransformation2D {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D Polynomial Geometric Transformation</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=images.geotrans.LocalWeightedMeanTransformation2D {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D Local Weighted Mean Geometric Transformation</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                                                       |                                                       |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| | {% include matlab path='images/ref' function='imcrop' %}                                            | | Crop image                                          |
+| | {% include matlab path='images/ref' function='imresize' %}                                          | | Resize image                                        |
+| | {% include matlab path='images/ref' function='imrotate' %}                                          | | Rotate image                                        |
+| | {% include matlab path='images/ref' function='imtranslate' %}                                       | | Translate image                                     |
+| | {% include matlab path='images/ref' function='impyramid' %}                                         | | Image pyramid reduction and expansion               |
+| | {% include matlab path='images/ref' function='imwarp' %}                                            | | Apply geometric transformation to image             |
+| | {% include matlab path='images/ref' function='fitgeotrans' %}                                       | | Fit geometric transformation to control point pairs |
+| | {% include matlab path='images/ref' function='imtransform' %}                                       | | Apply 2-D spatial transformation to image           |
+| | {% include matlab path='images/ref' function='findbounds' %}                                        | | Find output bounds for spatial transformation       |
+| | {% include matlab path='images/ref' function='fliptform' %}                                         | | Flip input and output roles of TFORM structure      |
+| | {% include matlab path='images/ref' function='makeresampler' %}                                     | | Create resampling structure                         |
+| | {% include matlab path='images/ref' function='maketform' %}                                         | | Create spatial transformation structure (TFORM)     |
+| | {% include matlab path='images/ref' function='tformarray' %}                                        | | Apply spatial transformation to N-D array           |
+| | {% include matlab path='images/ref' function='tformfwd' %}                                          | | Apply forward spatial transformation                |
+| | {% include matlab path='images/ref' function='tforminv' %}                                          | | Apply inverse spatial transformation                |
+| | {% include matlab path='images/ref' function='checkerboard' %}                                      | | Create checkerboard image                           |
+| | {% include matlab path='images/ref' function='affine2d' %}                                          | | 2-D Affine Geometric Transformation                 |
+| | {% include matlab path='images/ref' function='affine3d' %}                                          | | 3-D Affine Geometric Transformation                 |
+| | {% include matlab path='images/ref' function='projective2d' %}                                      | | 2-D Projective Geometric Transformation             |
+| | {% include matlab path='images/ref' function='images.geotrans.PiecewiseLinearTransformation2D' %}   | | 2-D piecewise linear geometric transformation       |
+| | {% include matlab path='images/ref' function='images.geotrans.PolynomialTransformation2D' %}        | | 2-D Polynomial Geometric Transformation             |
+| | {% include matlab path='images/ref' function='images.geotrans.LocalWeightedMeanTransformation2D' %} | | 2-D Local Weighted Mean Geometric Transformation    |
 
 ### Spatial Referencing
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imwarp {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Apply geometric transformation to image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imregister {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Intensity-based image registration</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imregtform {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Estimate geometric transformation that aligns two 2-D or 3-D images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imshow {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Display image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imshowpair {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Compare differences between images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imfuse {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Composite of two images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imref2d {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Reference 2-D image to world coordinates</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imref3d {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Reference 3-D image to world coordinates</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                |                                                                       |
+| -------------------------------------------------------------- | --------------------------------------------------------------------- |
+| | {% include matlab path='images/ref' function='imwarp' %}     | | Apply geometric transformation to image                             |
+| | {% include matlab path='images/ref' function='imregister' %} | | Intensity-based image registration                                  |
+| | {% include matlab path='images/ref' function='imregtform' %} | | Estimate geometric transformation that aligns two 2-D or 3-D images |
+| | {% include matlab path='images/ref' function='imshow' %}     | | Display image                                                       |
+| | {% include matlab path='images/ref' function='imshowpair' %} | | Compare differences between images                                  |
+| | {% include matlab path='images/ref' function='imfuse' %}     | | Composite of two images                                             |
+| | {% include matlab path='images/ref' function='imref2d' %}    | | Reference 2-D image to world coordinates                            |
+| | {% include matlab path='images/ref' function='imref3d' %}    | | Reference 3-D image to world coordinates                            |
 
 ### Automatic Registration
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imregister {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Intensity-based image registration</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imregconfig {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Configurations for intensity-based registration</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imregtform {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Estimate geometric transformation that aligns two 2-D or 3-D images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imregcorr {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Estimates geometric transformation that aligns two 2-D images using phase correlation</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imregdemons {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Estimate displacement field that aligns two 2-D or 3-D images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imfuse {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Composite of two images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imshowpair {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Compare differences between images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=registration.metric.MattesMutualInformation {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Mattes mutual information metric configuration object</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=registration.metric.MeanSquares {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Mean square error metric configuration object</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=registration.optimizer.RegularStepGradientDescent {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Regular step gradient descent optimizer configuration object</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=registration.optimizer.OnePlusOneEvolutionary {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| One-plus-one evolutionary optimizer configuration object</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                                                       |                                                                                         |
+| ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| | {% include matlab path='images/ref' function='imregister' %}                                        | | Intensity-based image registration                                                    |
+| | {% include matlab path='images/ref' function='imregconfig' %}                                       | | Configurations for intensity-based registration                                       |
+| | {% include matlab path='images/ref' function='imregtform' %}                                        | | Estimate geometric transformation that aligns two 2-D or 3-D images                   |
+| | {% include matlab path='images/ref' function='imregcorr' %}                                         | | Estimates geometric transformation that aligns two 2-D images using phase correlation |
+| | {% include matlab path='images/ref' function='imregdemons' %}                                       | | Estimate displacement field that aligns two 2-D or 3-D images                         |
+| | {% include matlab path='images/ref' function='imfuse' %}                                            | | Composite of two images                                                               |
+| | {% include matlab path='images/ref' function='imshowpair' %}                                        | | Compare differences between images                                                    |
+| | {% include matlab path='images/ref' function='registration.metric.MattesMutualInformation' %}       | | Mattes mutual information metric configuration object                                 |
+| | {% include matlab path='images/ref' function='registration.metric.MeanSquares' %}                   | | Mean square error metric configuration object                                         |
+| | {% include matlab path='images/ref' function='registration.optimizer.RegularStepGradientDescent' %} | | Regular step gradient descent optimizer configuration object                          |
+| | {% include matlab path='images/ref' function='registration.optimizer.OnePlusOneEvolutionary' %}     | | One-plus-one evolutionary optimizer configuration object                              |
 
 ### Control Point Registration
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=cpselect {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Control Point Selection Tool</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=fitgeotrans {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Fit geometric transformation to control point pairs</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=cpcorr {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Tune control-point locations using cross correlation</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=cpstruct2pairs {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert CPSTRUCT to valid pairs of control points</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=normxcorr2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Normalized 2-D cross-correlation</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=cp2tform {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Infer spatial transformation from control point pairs</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                    |                                                         |
+| ------------------------------------------------------------------ | ------------------------------------------------------- |
+| | {% include matlab path='images/ref' function='cpselect' %}       | | Control Point Selection Tool                          |
+| | {% include matlab path='images/ref' function='fitgeotrans' %}    | | Fit geometric transformation to control point pairs   |
+| | {% include matlab path='images/ref' function='cpcorr' %}         | | Tune control-point locations using cross correlation  |
+| | {% include matlab path='images/ref' function='cpstruct2pairs' %} | | Convert CPSTRUCT to valid pairs of control points     |
+| | {% include matlab path='images/ref' function='normxcorr2' %}     | | Normalized 2-D cross-correlation                      |
+| | {% include matlab path='images/ref' function='cp2tform' %}       | | Infer spatial transformation from control point pairs |
 
 ## Image Enhancement
 
 ### Contrast Adjustment
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imadjust {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Adjust image intensity values or colormap</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imcontrast {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Adjust Contrast tool</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imsharpen {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Sharpen image using unsharp masking</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=locallapfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Fast Local Laplacian Filtering of images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=localcontrast {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Edge-aware local contrast manipulation of images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=localtonemap {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Render HDR image for viewing while enhancing local contrast</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=histeq {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Enhance contrast using histogram equalization</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=adapthisteq {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Contrast-limited adaptive histogram equalization (CLAHE)</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imhistmatch {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Adjust histogram of image to match N-bin histogram of reference image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=decorrstretch {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Apply decorrelation stretch to multichannel image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=stretchlim {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find limits to contrast stretch image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=intlut {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert integer values using lookup table</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imnoise {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Add noise to image</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                   |                                                                         |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| | {% include matlab path='images/ref' function='imadjust' %}      | | Adjust image intensity values or colormap                             |
+| | {% include matlab path='images/ref' function='imcontrast' %}    | | Adjust Contrast tool                                                  |
+| | {% include matlab path='images/ref' function='imsharpen' %}     | | Sharpen image using unsharp masking                                   |
+| | {% include matlab path='images/ref' function='locallapfilt' %}  | | Fast Local Laplacian Filtering of images                              |
+| | {% include matlab path='images/ref' function='localcontrast' %} | | Edge-aware local contrast manipulation of images                      |
+| | {% include matlab path='images/ref' function='localtonemap' %}  | | Render HDR image for viewing while enhancing local contrast           |
+| | {% include matlab path='images/ref' function='histeq' %}        | | Enhance contrast using histogram equalization                         |
+| | {% include matlab path='images/ref' function='adapthisteq' %}   | | Contrast-limited adaptive histogram equalization (CLAHE)              |
+| | {% include matlab path='images/ref' function='imhistmatch' %}   | | Adjust histogram of image to match N-bin histogram of reference image |
+| | {% include matlab path='images/ref' function='decorrstretch' %} | | Apply decorrelation stretch to multichannel image                     |
+| | {% include matlab path='images/ref' function='stretchlim' %}    | | Find limits to contrast stretch image                                 |
+| | {% include matlab path='images/ref' function='intlut' %}        | | Convert integer values using lookup table                             |
+| | {% include matlab path='images/ref' function='imnoise' %}       | | Add noise to image                                                    |
 
 ### Image Filtering
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imfilter {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| N-D filtering of multidimensional images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgaussfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D Gaussian filtering of images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgaussfilt3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 3-D Gaussian filtering of 3-D images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=fspecial {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create predefined 2-D filter</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imguidedfilter {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Guided filtering of images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=normxcorr2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Normalized 2-D cross-correlation</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=wiener2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D adaptive noise-removal filtering</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=medfilt2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D median filtering</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=medfilt3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 3-D median filtering</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=ordfilt2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D order-statistic filtering</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=stdfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Local standard deviation of image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=rangefilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Local range of image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=entropyfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Local entropy of grayscale image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=nlfilter {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| General sliding-neighborhood operations</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=gabor {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create Gabor filter or Gabor filter bank</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgaborfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Apply Gabor filter or set of filters to 2-D image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imboxfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D box filtering of images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imboxfilt3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 3-D box filtering of 3-D images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=integralImage {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Calculate integral image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=integralImage3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Calculate 3-D integral image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=integralBoxFilter {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D box filtering of integral images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=integralBoxFilter3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 3-D box filtering of 3-D integral images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwareafilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Extract objects from binary image by size</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwpropfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Extract objects from binary image using properties</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=padarray {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pad array</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=freqz2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D frequency response</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=fsamp2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D FIR filter using frequency sampling</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=ftrans2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D FIR filter using frequency transformation</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=fwind1 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D FIR filter using 1-D window method</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=fwind2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D FIR filter using 2-D window method</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=convmtx2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D convolution matrix</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                        |                                                      |
+| ---------------------------------------------------------------------- | ---------------------------------------------------- |
+| | {% include matlab path='images/ref' function='imfilter' %}           | | N-D filtering of multidimensional images           |
+| | {% include matlab path='images/ref' function='imgaussfilt' %}        | | 2-D Gaussian filtering of images                   |
+| | {% include matlab path='images/ref' function='imgaussfilt3' %}       | | 3-D Gaussian filtering of 3-D images               |
+| | {% include matlab path='images/ref' function='fspecial' %}           | | Create predefined 2-D filter                       |
+| | {% include matlab path='images/ref' function='imguidedfilter' %}     | | Guided filtering of images                         |
+| | {% include matlab path='images/ref' function='normxcorr2' %}         | | Normalized 2-D cross-correlation                   |
+| | {% include matlab path='images/ref' function='wiener2' %}            | | 2-D adaptive noise-removal filtering               |
+| | {% include matlab path='images/ref' function='medfilt2' %}           | | 2-D median filtering                               |
+| | {% include matlab path='images/ref' function='medfilt3' %}           | | 3-D median filtering                               |
+| | {% include matlab path='images/ref' function='ordfilt2' %}           | | 2-D order-statistic filtering                      |
+| | {% include matlab path='images/ref' function='stdfilt' %}            | | Local standard deviation of image                  |
+| | {% include matlab path='images/ref' function='rangefilt' %}          | | Local range of image                               |
+| | {% include matlab path='images/ref' function='entropyfilt' %}        | | Local entropy of grayscale image                   |
+| | {% include matlab path='images/ref' function='nlfilter' %}           | | General sliding-neighborhood operations            |
+| | {% include matlab path='images/ref' function='gabor' %}              | | Create Gabor filter or Gabor filter bank           |
+| | {% include matlab path='images/ref' function='imgaborfilt' %}        | | Apply Gabor filter or set of filters to 2-D image  |
+| | {% include matlab path='images/ref' function='imboxfilt' %}          | | 2-D box filtering of images                        |
+| | {% include matlab path='images/ref' function='imboxfilt3' %}         | | 3-D box filtering of 3-D images                    |
+| | {% include matlab path='images/ref' function='integralImage' %}      | | Calculate integral image                           |
+| | {% include matlab path='images/ref' function='integralImage3' %}     | | Calculate 3-D integral image                       |
+| | {% include matlab path='images/ref' function='integralBoxFilter' %}  | | 2-D box filtering of integral images               |
+| | {% include matlab path='images/ref' function='integralBoxFilter3' %} | | 3-D box filtering of 3-D integral images           |
+| | {% include matlab path='images/ref' function='bwareafilt' %}         | | Extract objects from binary image by size          |
+| | {% include matlab path='images/ref' function='bwpropfilt' %}         | | Extract objects from binary image using properties |
+| | {% include matlab path='images/ref' function='padarray' %}           | | Pad array                                          |
+| | {% include matlab path='images/ref' function='freqz2' %}             | | 2-D frequency response                             |
+| | {% include matlab path='images/ref' function='fsamp2' %}             | | 2-D FIR filter using frequency sampling            |
+| | {% include matlab path='images/ref' function='ftrans2' %}            | | 2-D FIR filter using frequency transformation      |
+| | {% include matlab path='images/ref' function='fwind1' %}             | | 2-D FIR filter using 1-D window method             |
+| | {% include matlab path='images/ref' function='fwind2' %}             | | 2-D FIR filter using 2-D window method             |
+| | {% include matlab path='images/ref' function='convmtx2' %}           | | 2-D convolution matrix                             |
 
 ### Morphological Operations
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwhitmiss {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Binary hit-miss operation</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwmorph {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphological operations on binary images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwulterode {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Ultimate erosion</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwareaopen {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Remove small objects from binary image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imbothat {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Bottom-hat filtering</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imclearborder {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Suppress light structures connected to image border</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imclose {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphologically close image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imdilate {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Dilate image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imerode {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Erode image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imextendedmax {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Extended-maxima transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imextendedmin {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Extended-minima transform</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imfill {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Fill image regions and holes</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imhmax {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| H-maxima transform</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imhmin {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| H-minima transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imimposemin {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Impose minima</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imopen {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphologically open image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imreconstruct {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphological reconstruction</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imregionalmax {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Regional maxima</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imregionalmin {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Regional minima</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imtophat {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Top-hat filtering</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=watershed {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Watershed transform</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=conndef {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create connectivity array</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptcheckconn {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Check validity of connectivity argument</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=applylut {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Neighborhood operations on binary images using lookup tables</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwlookup {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Nonlinear filtering using lookup tables</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=makelut {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create lookup table for use with bwlookup</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=strel {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphological structuring element</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=offsetstrel {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphological offset structuring element</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                   |                                                                |
+| ----------------------------------------------------------------- | -------------------------------------------------------------- |
+| | {% include matlab path='images/ref' function='bwhitmiss' %}     | | Binary hit-miss operation                                    |
+| | {% include matlab path='images/ref' function='bwmorph' %}       | | Morphological operations on binary images                    |
+| | {% include matlab path='images/ref' function='bwulterode' %}    | | Ultimate erosion                                             |
+| | {% include matlab path='images/ref' function='bwareaopen' %}    | | Remove small objects from binary image                       |
+| | {% include matlab path='images/ref' function='imbothat' %}      | | Bottom-hat filtering                                         |
+| | {% include matlab path='images/ref' function='imclearborder' %} | | Suppress light structures connected to image border          |
+| | {% include matlab path='images/ref' function='imclose' %}       | | Morphologically close image                                  |
+| | {% include matlab path='images/ref' function='imdilate' %}      | | Dilate image                                                 |
+| | {% include matlab path='images/ref' function='imerode' %}       | | Erode image                                                  |
+| | {% include matlab path='images/ref' function='imextendedmax' %} | | Extended-maxima transform                                    |
+| | {% include matlab path='images/ref' function='imextendedmin' %} | | Extended-minima transform                                    |
+| | {% include matlab path='images/ref' function='imfill' %}        | | Fill image regions and holes                                 |
+| | {% include matlab path='images/ref' function='imhmax' %}        | | H-maxima transform                                           |
+| | {% include matlab path='images/ref' function='imhmin' %}        | | H-minima transform                                           |
+| | {% include matlab path='images/ref' function='imimposemin' %}   | | Impose minima                                                |
+| | {% include matlab path='images/ref' function='imopen' %}        | | Morphologically open image                                   |
+| | {% include matlab path='images/ref' function='imreconstruct' %} | | Morphological reconstruction                                 |
+| | {% include matlab path='images/ref' function='imregionalmax' %} | | Regional maxima                                              |
+| | {% include matlab path='images/ref' function='imregionalmin' %} | | Regional minima                                              |
+| | {% include matlab path='images/ref' function='imtophat' %}      | | Top-hat filtering                                            |
+| | {% include matlab path='images/ref' function='watershed' %}     | | Watershed transform                                          |
+| | {% include matlab path='images/ref' function='conndef' %}       | | Create connectivity array                                    |
+| | {% include matlab path='images/ref' function='iptcheckconn' %}  | | Check validity of connectivity argument                      |
+| | {% include matlab path='images/ref' function='applylut' %}      | | Neighborhood operations on binary images using lookup tables |
+| | {% include matlab path='images/ref' function='bwlookup' %}      | | Nonlinear filtering using lookup tables                      |
+| | {% include matlab path='images/ref' function='makelut' %}       | | Create lookup table for use with bwlookup                    |
+| | {% include matlab path='images/ref' function='strel' %}         | | Morphological structuring element                            |
+| | {% include matlab path='images/ref' function='offsetstrel' %}   | | Morphological offset structuring element                     |
 
 <h3 id="btdrz6j-1">
 
@@ -1450,1448 +374,338 @@ Deblurring
 
 </h3>
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=deconvblind {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Deblur image using blind deconvolution</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=deconvlucy {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Deblur image using Lucy-Richardson method</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=deconvreg {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Deblur image using regularized filter</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=deconvwnr {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Deblur image using Wiener filter</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=edgetaper {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Taper discontinuities along image edges</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=otf2psf {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert optical transfer function to point-spread function</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=psf2otf {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert point-spread function to optical transfer function</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=padarray {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pad array</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                 |                                                              |
+| --------------------------------------------------------------- | ------------------------------------------------------------ |
+| | {% include matlab path='images/ref' function='deconvblind' %} | | Deblur image using blind deconvolution                     |
+| | {% include matlab path='images/ref' function='deconvlucy' %}  | | Deblur image using Lucy-Richardson method                  |
+| | {% include matlab path='images/ref' function='deconvreg' %}   | | Deblur image using regularized filter                      |
+| | {% include matlab path='images/ref' function='deconvwnr' %}   | | Deblur image using Wiener filter                           |
+| | {% include matlab path='images/ref' function='edgetaper' %}   | | Taper discontinuities along image edges                    |
+| | {% include matlab path='images/ref' function='otf2psf' %}     | | Convert optical transfer function to point-spread function |
+| | {% include matlab path='images/ref' function='psf2otf' %}     | | Convert point-spread function to optical transfer function |
+| | {% include matlab path='images/ref' function='padarray' %}    | | Pad array                                                  |
 
 ### ROI-Based Processing
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=roipoly {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Specify polygonal region of interest (ROI)</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=poly2mask {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert region of interest (ROI) polygon to region mask</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=regionfill {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Fill in specified regions in image using inward interpolation</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=roicolor {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Select region of interest (ROI) based on color</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=roifilt2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Filter region of interest (ROI) in image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imellipse {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create draggable ellipse</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imfreehand {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create draggable freehand region</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=impoly {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create draggable, resizable polygon</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imrect {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create draggable rectangle</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imroi {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Region-of-interest (ROI) base class</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                |                                                                 |
+| -------------------------------------------------------------- | --------------------------------------------------------------- |
+| | {% include matlab path='images/ref' function='roipoly' %}    | | Specify polygonal region of interest (ROI)                    |
+| | {% include matlab path='images/ref' function='poly2mask' %}  | | Convert region of interest (ROI) polygon to region mask       |
+| | {% include matlab path='images/ref' function='regionfill' %} | | Fill in specified regions in image using inward interpolation |
+| | {% include matlab path='images/ref' function='roicolor' %}   | | Select region of interest (ROI) based on color                |
+| | {% include matlab path='images/ref' function='roifilt2' %}   | | Filter region of interest (ROI) in image                      |
+| | {% include matlab path='images/ref' function='imellipse' %}  | | Create draggable ellipse                                      |
+| | {% include matlab path='images/ref' function='imfreehand' %} | | Create draggable freehand region                              |
+| | {% include matlab path='images/ref' function='impoly' %}     | | Create draggable, resizable polygon                           |
+| | {% include matlab path='images/ref' function='imrect' %}     | | Create draggable rectangle                                    |
+| | {% include matlab path='images/ref' function='imroi' %}      | | Region-of-interest (ROI) base class                           |
 
 ### Neighborhood and Block Processing
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=ImageAdapter {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Interface for image I/O</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=blockproc {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Distinct block processing for image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bestblk {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Determine optimal block size for block processing</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=nlfilter {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| General sliding-neighborhood operations</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=col2im {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Rearrange matrix columns into blocks</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=colfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Columnwise neighborhood operations</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=im2col {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Rearrange image blocks into columns</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                  |                                                     |
+| ---------------------------------------------------------------- | --------------------------------------------------- |
+| | {% include matlab path='images/ref' function='ImageAdapter' %} | | Interface for image I/O                           |
+| | {% include matlab path='images/ref' function='blockproc' %}    | | Distinct block processing for image               |
+| | {% include matlab path='images/ref' function='bestblk' %}      | | Determine optimal block size for block processing |
+| | {% include matlab path='images/ref' function='nlfilter' %}     | | General sliding-neighborhood operations           |
+| | {% include matlab path='images/ref' function='col2im' %}       | | Rearrange matrix columns into blocks              |
+| | {% include matlab path='images/ref' function='colfilt' %}      | | Columnwise neighborhood operations                |
+| | {% include matlab path='images/ref' function='im2col' %}       | | Rearrange image blocks into columns               |
 
 ### Image Arithmetic
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imabsdiff {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Absolute difference of two images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imadd {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Add two images or add constant to image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imapplymatrix {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Linear combination of color channels</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imcomplement {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Complement image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imdivide {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Divide one image into another or divide image by constant</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imlincomb {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Linear combination of images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=immultiply {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Multiply two images or multiply image by constant</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imsubtract {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Subtract one image from another or subtract constant from image</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                   |                                                                   |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------- |
+| | {% include matlab path='images/ref' function='imabsdiff' %}     | | Absolute difference of two images                               |
+| | {% include matlab path='images/ref' function='imadd' %}         | | Add two images or add constant to image                         |
+| | {% include matlab path='images/ref' function='imapplymatrix' %} | | Linear combination of color channels                            |
+| | {% include matlab path='images/ref' function='imcomplement' %}  | | Complement image                                                |
+| | {% include matlab path='images/ref' function='imdivide' %}      | | Divide one image into another or divide image by constant       |
+| | {% include matlab path='images/ref' function='imlincomb' %}     | | Linear combination of images                                    |
+| | {% include matlab path='images/ref' function='immultiply' %}    | | Multiply two images or multiply image by constant               |
+| | {% include matlab path='images/ref' function='imsubtract' %}    | | Subtract one image from another or subtract constant from image |
 
 ## Image Analysis
 
 ### Object Analysis
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwboundaries {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Trace region boundaries in binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwtraceboundary {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Trace object in binary image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=visboundaries {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Plot region boundaries</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=edge {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find edges in intensity image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imfindcircles {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find circles using circular Hough transform</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=viscircles {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create circle</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgradient {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Gradient magnitude and direction of an image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgradientxy {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Directional gradients of an image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgradient3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find 3-D gradient magnitude and direction of images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgradientxyz {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find the directional gradients of a 3-D image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=hough {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Hough transform</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=houghlines {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Extract line segments based on Hough transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=houghpeaks {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Identify peaks in Hough transform</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=qtdecomp {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Quadtree decomposition</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=qtgetblk {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Block values in quadtree decomposition</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=qtsetblk {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Set block values in quadtree decomposition</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                     |                                                       |
+| ------------------------------------------------------------------- | ----------------------------------------------------- |
+| | {% include matlab path='images/ref' function='bwboundaries' %}    | | Trace region boundaries in binary image             |
+| | {% include matlab path='images/ref' function='bwtraceboundary' %} | | Trace object in binary image                        |
+| | {% include matlab path='images/ref' function='visboundaries' %}   | | Plot region boundaries                              |
+| | {% include matlab path='images/ref' function='edge' %}            | | Find edges in intensity image                       |
+| | {% include matlab path='images/ref' function='imfindcircles' %}   | | Find circles using circular Hough transform         |
+| | {% include matlab path='images/ref' function='viscircles' %}      | | Create circle                                       |
+| | {% include matlab path='images/ref' function='imgradient' %}      | | Gradient magnitude and direction of an image        |
+| | {% include matlab path='images/ref' function='imgradientxy' %}    | | Directional gradients of an image                   |
+| | {% include matlab path='images/ref' function='imgradient3' %}     | | Find 3-D gradient magnitude and direction of images |
+| | {% include matlab path='images/ref' function='imgradientxyz' %}   | | Find the directional gradients of a 3-D image       |
+| | {% include matlab path='images/ref' function='hough' %}           | | Hough transform                                     |
+| | {% include matlab path='images/ref' function='houghlines' %}      | | Extract line segments based on Hough transform      |
+| | {% include matlab path='images/ref' function='houghpeaks' %}      | | Identify peaks in Hough transform                   |
+| | {% include matlab path='images/ref' function='qtdecomp' %}        | | Quadtree decomposition                              |
+| | {% include matlab path='images/ref' function='qtgetblk' %}        | | Block values in quadtree decomposition              |
+| | {% include matlab path='images/ref' function='qtsetblk' %}        | | Set block values in quadtree decomposition          |
 
 ### Region and Image Properties
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=regionprops {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Measure properties of image regions</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwarea {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Area of objects in binary image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwareafilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Extract objects from binary image by size</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwconncomp {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find connected components in binary image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwconvhull {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Generate convex hull image from binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwdist {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Distance transform of binary image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwdistgeodesic {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Geodesic distance transform of binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bweuler {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Euler number of binary image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwperim {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find perimeter of objects in binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwpropfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Extract objects from binary image using properties</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwselect {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Select objects in binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=graydist {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Gray-weighted distance transform of grayscale image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imcontour {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create contour plot of image data</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imhist {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Histogram of image data</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=impixel {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pixel color values</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=improfile {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pixel-value cross-sections along line segments</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=corr2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D correlation coefficient</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=mean2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Average or mean of matrix elements</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=std2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Standard deviation of matrix elements</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwlabel {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Label connected components in 2-D binary image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwlabeln {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Label connected components in binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=labelmatrix {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create label matrix from bwconncomp structure</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwpack {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pack binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwunpack {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Unpack binary image</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                    |                                                       |
+| ------------------------------------------------------------------ | ----------------------------------------------------- |
+| | {% include matlab path='images/ref' function='regionprops' %}    | | Measure properties of image regions                 |
+| | {% include matlab path='images/ref' function='bwarea' %}         | | Area of objects in binary image                     |
+| | {% include matlab path='images/ref' function='bwareafilt' %}     | | Extract objects from binary image by size           |
+| | {% include matlab path='images/ref' function='bwconncomp' %}     | | Find connected components in binary image           |
+| | {% include matlab path='images/ref' function='bwconvhull' %}     | | Generate convex hull image from binary image        |
+| | {% include matlab path='images/ref' function='bwdist' %}         | | Distance transform of binary image                  |
+| | {% include matlab path='images/ref' function='bwdistgeodesic' %} | | Geodesic distance transform of binary image         |
+| | {% include matlab path='images/ref' function='bweuler' %}        | | Euler number of binary image                        |
+| | {% include matlab path='images/ref' function='bwperim' %}        | | Find perimeter of objects in binary image           |
+| | {% include matlab path='images/ref' function='bwpropfilt' %}     | | Extract objects from binary image using properties  |
+| | {% include matlab path='images/ref' function='bwselect' %}       | | Select objects in binary image                      |
+| | {% include matlab path='images/ref' function='graydist' %}       | | Gray-weighted distance transform of grayscale image |
+| | {% include matlab path='images/ref' function='imcontour' %}      | | Create contour plot of image data                   |
+| | {% include matlab path='images/ref' function='imhist' %}         | | Histogram of image data                             |
+| | {% include matlab path='images/ref' function='impixel' %}        | | Pixel color values                                  |
+| | {% include matlab path='images/ref' function='improfile' %}      | | Pixel-value cross-sections along line segments      |
+| | {% include matlab path='images/ref' function='corr2' %}          | | 2-D correlation coefficient                         |
+| | {% include matlab path='images/ref' function='mean2' %}          | | Average or mean of matrix elements                  |
+| | {% include matlab path='images/ref' function='std2' %}           | | Standard deviation of matrix elements               |
+| | {% include matlab path='images/ref' function='bwlabel' %}        | | Label connected components in 2-D binary image      |
+| | {% include matlab path='images/ref' function='bwlabeln' %}       | | Label connected components in binary image          |
+| | {% include matlab path='images/ref' function='labelmatrix' %}    | | Create label matrix from bwconncomp structure       |
+| | {% include matlab path='images/ref' function='bwpack' %}         | | Pack binary image                                   |
+| | {% include matlab path='images/ref' function='bwunpack' %}       | | Unpack binary image                                 |
 
 ### Texture Analysis
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=entropy {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Entropy of grayscale image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=entropyfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Local entropy of grayscale image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=rangefilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Local range of image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=stdfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Local standard deviation of image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=graycomatrix {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create gray-level co-occurrence matrix from image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=graycoprops {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Properties of gray-level co-occurrence matrix</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                  |                                                     |
+| ---------------------------------------------------------------- | --------------------------------------------------- |
+| | {% include matlab path='images/ref' function='entropy' %}      | | Entropy of grayscale image                        |
+| | {% include matlab path='images/ref' function='entropyfilt' %}  | | Local entropy of grayscale image                  |
+| | {% include matlab path='images/ref' function='rangefilt' %}    | | Local range of image                              |
+| | {% include matlab path='images/ref' function='stdfilt' %}      | | Local standard deviation of image                 |
+| | {% include matlab path='images/ref' function='graycomatrix' %} | | Create gray-level co-occurrence matrix from image |
+| | {% include matlab path='images/ref' function='graycoprops' %}  | | Properties of gray-level co-occurrence matrix     |
 
 ### Image Quality
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=immse {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Mean-squared error</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=psnr {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Peak Signal-to-Noise Ratio (PSNR)</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=ssim {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Structural Similarity Index (SSIM) for measuring image quality</p></td>
-</tr>
-</tbody>
-</table>
+|                                                           |                                                                  |
+| --------------------------------------------------------- | ---------------------------------------------------------------- |
+| | {% include matlab path='images/ref' function='immse' %} | | Mean-squared error                                             |
+| | {% include matlab path='images/ref' function='psnr' %}  | | Peak Signal-to-Noise Ratio (PSNR)                              |
+| | {% include matlab path='images/ref' function='ssim' %}  | | Structural Similarity Index (SSIM) for measuring image quality |
 
 ### Image Segmentation
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=activecontour {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Segment image into foreground and background using active contour</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imsegfmm {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Binary image segmentation using Fast Marching Method</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imseggeodesic {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Segment image into two or three regions using geodesic distance-based color segmentation</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=gradientweight {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Calculate weights for image pixels based on image gradient</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=graydiffweight {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Calculate weights for image pixels based on grayscale intensity difference</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=grayconnected {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Select contiguous image region with similar gray values</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=graythresh {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Global image threshold using Otsu's method</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=multithresh {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Multilevel image thresholds using Otsu's method</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=otsuthresh {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Global histogram threshold using Otsu's method</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=adaptthresh {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Adaptive image threshold using local first-order statistics</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=boundarymask {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find region boundaries of segmentation</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=superpixels {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D superpixel oversegmentation of images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=superpixels3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 3-D superpixel oversegmentation of 3-D image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imoverlay {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Burn binary mask into 2-D image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=label2idx {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert label matrix to cell array of linear indices</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                    |                                                                                            |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| | {% include matlab path='images/ref' function='activecontour' %}  | | Segment image into foreground and background using active contour                        |
+| | {% include matlab path='images/ref' function='imsegfmm' %}       | | Binary image segmentation using Fast Marching Method                                     |
+| | {% include matlab path='images/ref' function='imseggeodesic' %}  | | Segment image into two or three regions using geodesic distance-based color segmentation |
+| | {% include matlab path='images/ref' function='gradientweight' %} | | Calculate weights for image pixels based on image gradient                               |
+| | {% include matlab path='images/ref' function='graydiffweight' %} | | Calculate weights for image pixels based on grayscale intensity difference               |
+| | {% include matlab path='images/ref' function='grayconnected' %}  | | Select contiguous image region with similar gray values                                  |
+| | {% include matlab path='images/ref' function='graythresh' %}     | | Global image threshold using Otsu's method                                               |
+| | {% include matlab path='images/ref' function='multithresh' %}    | | Multilevel image thresholds using Otsu's method                                          |
+| | {% include matlab path='images/ref' function='otsuthresh' %}     | | Global histogram threshold using Otsu's method                                           |
+| | {% include matlab path='images/ref' function='adaptthresh' %}    | | Adaptive image threshold using local first-order statistics                              |
+| | {% include matlab path='images/ref' function='boundarymask' %}   | | Find region boundaries of segmentation                                                   |
+| | {% include matlab path='images/ref' function='superpixels' %}    | | 2-D superpixel oversegmentation of images                                                |
+| | {% include matlab path='images/ref' function='superpixels3' %}   | | 3-D superpixel oversegmentation of 3-D image                                             |
+| | {% include matlab path='images/ref' function='imoverlay' %}      | | Burn binary mask into 2-D image                                                          |
+| | {% include matlab path='images/ref' function='label2idx' %}      | | Convert label matrix to cell array of linear indices                                     |
 
 ### Image Transforms
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwdist {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Distance transform of binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwdistgeodesic {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Geodesic distance transform of binary image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=graydist {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Gray-weighted distance transform of grayscale image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=hough {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Hough transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=dct2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D discrete cosine transform</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=dctmtx {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Discrete cosine transform matrix</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=fan2para {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert fan-beam projections to parallel-beam</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=fanbeam {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Fan-beam transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=idct2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D inverse discrete cosine transform</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=ifanbeam {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Inverse fan-beam transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=iradon {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Inverse Radon transform</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=para2fan {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert parallel-beam projections to fan-beam</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=radon {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Radon transform</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=fft2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D fast Fourier transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=fftshift {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Shift zero-frequency component to center of spectrum</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=ifft2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D inverse fast Fourier transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=ifftshift {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Inverse FFT shift</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                    |                                                        |
+| ------------------------------------------------------------------ | ------------------------------------------------------ |
+| | {% include matlab path='images/ref' function='bwdist' %}         | | Distance transform of binary image                   |
+| | {% include matlab path='images/ref' function='bwdistgeodesic' %} | | Geodesic distance transform of binary image          |
+| | {% include matlab path='images/ref' function='graydist' %}       | | Gray-weighted distance transform of grayscale image  |
+| | {% include matlab path='images/ref' function='hough' %}          | | Hough transform                                      |
+| | {% include matlab path='images/ref' function='dct2' %}           | | 2-D discrete cosine transform                        |
+| | {% include matlab path='images/ref' function='dctmtx' %}         | | Discrete cosine transform matrix                     |
+| | {% include matlab path='images/ref' function='fan2para' %}       | | Convert fan-beam projections to parallel-beam        |
+| | {% include matlab path='images/ref' function='fanbeam' %}        | | Fan-beam transform                                   |
+| | {% include matlab path='images/ref' function='idct2' %}          | | 2-D inverse discrete cosine transform                |
+| | {% include matlab path='images/ref' function='ifanbeam' %}       | | Inverse fan-beam transform                           |
+| | {% include matlab path='images/ref' function='iradon' %}         | | Inverse Radon transform                              |
+| | {% include matlab path='images/ref' function='para2fan' %}       | | Convert parallel-beam projections to fan-beam        |
+| | {% include matlab path='images/ref' function='radon' %}          | | Radon transform                                      |
+| | {% include matlab path='matlab/ref' function='fft2' %}           | | 2-D fast Fourier transform                           |
+| | {% include matlab path='matlab/ref' function='fftshift' %}       | | Shift zero-frequency component to center of spectrum |
+| | {% include matlab path='matlab/ref' function='ifft2' %}          | | 2-D inverse fast Fourier transform                   |
+| | {% include matlab path='matlab/ref' function='ifftshift' %}      | | Inverse FFT shift                                    |
 
 ## 3D Volumetric Image Processing
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imboxfilt3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 3-D box filtering of 3-D images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgaussfilt3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 3-D Gaussian filtering of 3-D images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgradient3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find 3-D gradient magnitude and direction of images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imregdemons {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Estimate displacement field that aligns two 2-D or 3-D images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=integralBoxFilter3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 3-D box filtering of 3-D integral images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=IntegralImage3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Calculate 3-D integral image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=medfilt3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 3-D median filtering</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=superpixels3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 3-D superpixel oversegmentation of 3-D image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imref3d {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Reference 3-D image to world coordinates</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=affine3d {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 3-D Affine Geometric Transformation</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                        |                                                                 |
+| ---------------------------------------------------------------------- | --------------------------------------------------------------- |
+| | {% include matlab path='images/ref' function='imboxfilt3' %}         | | 3-D box filtering of 3-D images                               |
+| | {% include matlab path='images/ref' function='imgaussfilt3' %}       | | 3-D Gaussian filtering of 3-D images                          |
+| | {% include matlab path='images/ref' function='imgradient3' %}        | | Find 3-D gradient magnitude and direction of images           |
+| | {% include matlab path='images/ref' function='imregdemons' %}        | | Estimate displacement field that aligns two 2-D or 3-D images |
+| | {% include matlab path='images/ref' function='integralBoxFilter3' %} | | 3-D box filtering of 3-D integral images                      |
+| | {% include matlab path='images/ref' function='IntegralImage3' %}     | | Calculate 3-D integral image                                  |
+| | {% include matlab path='images/ref' function='medfilt3' %}           | | 3-D median filtering                                          |
+| | {% include matlab path='images/ref' function='superpixels3' %}       | | 3-D superpixel oversegmentation of 3-D image                  |
+| | {% include matlab path='images/ref' function='imref3d' %}            | | Reference 3-D image to world coordinates                      |
+| | {% include matlab path='images/ref' function='affine3d' %}           | | 3-D Affine Geometric Transformation                           |
 
 ## Code Generation
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=adaptthresh {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Adaptive image threshold using local first-order statistics</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=boundarymask {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find region boundaries of segmentation</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwareaopen {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Remove small objects from binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwboundaries {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Trace region boundaries in binary image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwconncomp {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find connected components in binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwdist {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Distance transform of binary image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bweuler {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Euler number of binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwlabel {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Label connected components in 2-D binary image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwlookup {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Nonlinear filtering using lookup tables</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwmorph {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphological operations on binary images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwpack {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pack binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwperim {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find perimeter of objects in binary image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwselect {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Select objects in binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwtraceboundary {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Trace object in binary image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwunpack {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Unpack binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=conndef {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create connectivity array</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=demosaic {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert Bayer pattern encoded image to truecolor image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=edge {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find edges in intensity image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=fitgeotrans {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Fit geometric transformation to control point pairs</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=fspecial {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Create predefined 2-D filter</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=getrangefromclass {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Default display range of image based on its class</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=grayconnected {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Select contiguous image region with similar gray values</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=histeq {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Enhance contrast using histogram equalization</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=hough {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Hough transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=houghlines {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Extract line segments based on Hough transform</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=houghpeaks {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Identify peaks in Hough transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=hsv2rgb {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert HSV colormap to RGB colormap</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=im2double {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to double precision</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=im2int16 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to 16-bit signed integers</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=im2single {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to single precision</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=im2uint16 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to 16-bit unsigned integers</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=im2uint8 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to 8-bit unsigned integers</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imabsdiff {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Absolute difference of two images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imadjust {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Adjust image intensity values or colormap</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imbinarize {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Binarize image by thresholding</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imbothat {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Bottom-hat filtering</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imboxfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D box filtering of images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imclearborder {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Suppress light structures connected to image border</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imclose {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphologically close image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imcomplement {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Complement image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imcrop {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Crop image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imdilate {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Dilate image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imerode {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Erode image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imextendedmax {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Extended-maxima transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imextendedmin {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Extended-minima transform</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imfill {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Fill image regions and holes</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imfilter {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| N-D filtering of multidimensional images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imfindcircles {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find circles using circular Hough transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgaborfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Apply Gabor filter or set of filters to 2-D image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgaussfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D Gaussian filtering of images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgradient3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find 3-D gradient magnitude and direction of images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgradientxyz {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find the directional gradients of a 3-D image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imhist {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Histogram of image data</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imhmax {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| H-maxima transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imhmin {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| H-minima transform</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imlincomb {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Linear combination of images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=immse {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Mean-squared error</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imopen {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphologically open image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imoverlay {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Burn binary mask into 2-D image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=impyramid {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Image pyramid reduction and expansion</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imquantize {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Quantize image using specified quantization levels and output values</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=imread {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Read image from graphics file</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imreconstruct {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphological reconstruction</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imregionalmax {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Regional maxima</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imregionalmin {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Regional minima</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imresize {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Resize image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imrotate {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Rotate image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imtophat {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Top-hat filtering</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imtranslate {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Translate image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imwarp {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Apply geometric transformation to image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=integralBoxFilter {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D box filtering of integral images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=integralImage {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Calculate integral image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=intlut {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert integer values using lookup table</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptcheckmap {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Check validity of colormap</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=iptcheckconn {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Check validity of connectivity argument</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=lab2rgb {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert CIE 1976 L*a*b* to RGB</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=label2rgb {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert label matrix into RGB image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=label2idx {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert label matrix to cell array of linear indices</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=mean2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Average or mean of matrix elements</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=medfilt2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D median filtering</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=multithresh {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Multilevel image thresholds using Otsu's method</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=ordfilt2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D order-statistic filtering</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=otsuthresh {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Global histogram threshold using Otsu's method</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=padarray {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pad array</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=psnr {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Peak Signal-to-Noise Ratio (PSNR)</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=regionprops {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Measure properties of image regions</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=rgb2gray {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert RGB image or colormap to grayscale</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=rgb2hsv {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert RGB colormap to HSV colormap</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=rgb2lab {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert RGB to CIE 1976 L*a*b*</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=rgb2ycbcr {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert RGB color values to YCbCr color space</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=stretchlim {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find limits to contrast stretch image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=superpixels {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D superpixel oversegmentation of images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=superpixels3 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 3-D superpixel oversegmentation of 3-D image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=watershed {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Watershed transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=ycbcr2rgb {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert YCbCr color values to RGB color space</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imref2d {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Reference 2-D image to world coordinates</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imref3d {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Reference 3-D image to world coordinates</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=affine2d {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D Affine Geometric Transformation</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=projective2d {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D Projective Geometric Transformation</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=strel {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphological structuring element</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=offsetstrel {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphological offset structuring element</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                       |                                                                        |
+| --------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| | {% include matlab path='images/ref' function='adaptthresh' %}       | | Adaptive image threshold using local first-order statistics          |
+| | {% include matlab path='images/ref' function='boundarymask' %}      | | Find region boundaries of segmentation                               |
+| | {% include matlab path='images/ref' function='bwareaopen' %}        | | Remove small objects from binary image                               |
+| | {% include matlab path='images/ref' function='bwboundaries' %}      | | Trace region boundaries in binary image                              |
+| | {% include matlab path='images/ref' function='bwconncomp' %}        | | Find connected components in binary image                            |
+| | {% include matlab path='images/ref' function='bwdist' %}            | | Distance transform of binary image                                   |
+| | {% include matlab path='images/ref' function='bweuler' %}           | | Euler number of binary image                                         |
+| | {% include matlab path='images/ref' function='bwlabel' %}           | | Label connected components in 2-D binary image                       |
+| | {% include matlab path='images/ref' function='bwlookup' %}          | | Nonlinear filtering using lookup tables                              |
+| | {% include matlab path='images/ref' function='bwmorph' %}           | | Morphological operations on binary images                            |
+| | {% include matlab path='images/ref' function='bwpack' %}            | | Pack binary image                                                    |
+| | {% include matlab path='images/ref' function='bwperim' %}           | | Find perimeter of objects in binary image                            |
+| | {% include matlab path='images/ref' function='bwselect' %}          | | Select objects in binary image                                       |
+| | {% include matlab path='images/ref' function='bwtraceboundary' %}   | | Trace object in binary image                                         |
+| | {% include matlab path='images/ref' function='bwunpack' %}          | | Unpack binary image                                                  |
+| | {% include matlab path='images/ref' function='conndef' %}           | | Create connectivity array                                            |
+| | {% include matlab path='images/ref' function='demosaic' %}          | | Convert Bayer pattern encoded image to truecolor image               |
+| | {% include matlab path='images/ref' function='edge' %}              | | Find edges in intensity image                                        |
+| | {% include matlab path='images/ref' function='fitgeotrans' %}       | | Fit geometric transformation to control point pairs                  |
+| | {% include matlab path='images/ref' function='fspecial' %}          | | Create predefined 2-D filter                                         |
+| | {% include matlab path='images/ref' function='getrangefromclass' %} | | Default display range of image based on its class                    |
+| | {% include matlab path='images/ref' function='grayconnected' %}     | | Select contiguous image region with similar gray values              |
+| | {% include matlab path='images/ref' function='histeq' %}            | | Enhance contrast using histogram equalization                        |
+| | {% include matlab path='images/ref' function='hough' %}             | | Hough transform                                                      |
+| | {% include matlab path='images/ref' function='houghlines' %}        | | Extract line segments based on Hough transform                       |
+| | {% include matlab path='images/ref' function='houghpeaks' %}        | | Identify peaks in Hough transform                                    |
+| | {% include matlab path='matlab/ref' function='hsv2rgb' %}           | | Convert HSV colormap to RGB colormap                                 |
+| | {% include matlab path='matlab/ref' function='im2double' %}         | | Convert image to double precision                                    |
+| | {% include matlab path='images/ref' function='im2int16' %}          | | Convert image to 16-bit signed integers                              |
+| | {% include matlab path='images/ref' function='im2single' %}         | | Convert image to single precision                                    |
+| | {% include matlab path='images/ref' function='im2uint16' %}         | | Convert image to 16-bit unsigned integers                            |
+| | {% include matlab path='images/ref' function='im2uint8' %}          | | Convert image to 8-bit unsigned integers                             |
+| | {% include matlab path='images/ref' function='imabsdiff' %}         | | Absolute difference of two images                                    |
+| | {% include matlab path='images/ref' function='imadjust' %}          | | Adjust image intensity values or colormap                            |
+| | {% include matlab path='images/ref' function='imbinarize' %}        | | Binarize image by thresholding                                       |
+| | {% include matlab path='images/ref' function='imbothat' %}          | | Bottom-hat filtering                                                 |
+| | {% include matlab path='images/ref' function='imboxfilt' %}         | | 2-D box filtering of images                                          |
+| | {% include matlab path='images/ref' function='imclearborder' %}     | | Suppress light structures connected to image border                  |
+| | {% include matlab path='images/ref' function='imclose' %}           | | Morphologically close image                                          |
+| | {% include matlab path='images/ref' function='imcomplement' %}      | | Complement image                                                     |
+| | {% include matlab path='images/ref' function='imcrop' %}            | | Crop image                                                           |
+| | {% include matlab path='images/ref' function='imdilate' %}          | | Dilate image                                                         |
+| | {% include matlab path='images/ref' function='imerode' %}           | | Erode image                                                          |
+| | {% include matlab path='images/ref' function='imextendedmax' %}     | | Extended-maxima transform                                            |
+| | {% include matlab path='images/ref' function='imextendedmin' %}     | | Extended-minima transform                                            |
+| | {% include matlab path='images/ref' function='imfill' %}            | | Fill image regions and holes                                         |
+| | {% include matlab path='images/ref' function='imfilter' %}          | | N-D filtering of multidimensional images                             |
+| | {% include matlab path='images/ref' function='imfindcircles' %}     | | Find circles using circular Hough transform                          |
+| | {% include matlab path='images/ref' function='imgaborfilt' %}       | | Apply Gabor filter or set of filters to 2-D image                    |
+| | {% include matlab path='images/ref' function='imgaussfilt' %}       | | 2-D Gaussian filtering of images                                     |
+| | {% include matlab path='images/ref' function='imgradient3' %}       | | Find 3-D gradient magnitude and direction of images                  |
+| | {% include matlab path='images/ref' function='imgradientxyz' %}     | | Find the directional gradients of a 3-D image                        |
+| | {% include matlab path='images/ref' function='imhist' %}            | | Histogram of image data                                              |
+| | {% include matlab path='images/ref' function='imhmax' %}            | | H-maxima transform                                                   |
+| | {% include matlab path='images/ref' function='imhmin' %}            | | H-minima transform                                                   |
+| | {% include matlab path='images/ref' function='imlincomb' %}         | | Linear combination of images                                         |
+| | {% include matlab path='images/ref' function='immse' %}             | | Mean-squared error                                                   |
+| | {% include matlab path='images/ref' function='imopen' %}            | | Morphologically open image                                           |
+| | {% include matlab path='images/ref' function='imoverlay' %}         | | Burn binary mask into 2-D image                                      |
+| | {% include matlab path='images/ref' function='impyramid' %}         | | Image pyramid reduction and expansion                                |
+| | {% include matlab path='images/ref' function='imquantize' %}        | | Quantize image using specified quantization levels and output values |
+| | {% include matlab path='matlab/ref' function='imread' %}            | | Read image from graphics file                                        |
+| | {% include matlab path='images/ref' function='imreconstruct' %}     | | Morphological reconstruction                                         |
+| | {% include matlab path='images/ref' function='imregionalmax' %}     | | Regional maxima                                                      |
+| | {% include matlab path='images/ref' function='imregionalmin' %}     | | Regional minima                                                      |
+| | {% include matlab path='images/ref' function='imresize' %}          | | Resize image                                                         |
+| | {% include matlab path='images/ref' function='imrotate' %}          | | Rotate image                                                         |
+| | {% include matlab path='images/ref' function='imtophat' %}          | | Top-hat filtering                                                    |
+| | {% include matlab path='images/ref' function='imtranslate' %}       | | Translate image                                                      |
+| | {% include matlab path='images/ref' function='imwarp' %}            | | Apply geometric transformation to image                              |
+| | {% include matlab path='images/ref' function='integralBoxFilter' %} | | 2-D box filtering of integral images                                 |
+| | {% include matlab path='images/ref' function='integralImage' %}     | | Calculate integral image                                             |
+| | {% include matlab path='images/ref' function='intlut' %}            | | Convert integer values using lookup table                            |
+| | {% include matlab path='images/ref' function='iptcheckmap' %}       | | Check validity of colormap                                           |
+| | {% include matlab path='images/ref' function='iptcheckconn' %}      | | Check validity of connectivity argument                              |
+| | {% include matlab path='images/ref' function='lab2rgb' %}           | | Convert CIE 1976 L\*a\*b\* to RGB                                    |
+| | {% include matlab path='images/ref' function='label2rgb' %}         | | Convert label matrix into RGB image                                  |
+| | {% include matlab path='images/ref' function='label2idx' %}         | | Convert label matrix to cell array of linear indices                 |
+| | {% include matlab path='images/ref' function='mean2' %}             | | Average or mean of matrix elements                                   |
+| | {% include matlab path='images/ref' function='medfilt2' %}          | | 2-D median filtering                                                 |
+| | {% include matlab path='images/ref' function='multithresh' %}       | | Multilevel image thresholds using Otsu's method                      |
+| | {% include matlab path='images/ref' function='ordfilt2' %}          | | 2-D order-statistic filtering                                        |
+| | {% include matlab path='images/ref' function='otsuthresh' %}        | | Global histogram threshold using Otsu's method                       |
+| | {% include matlab path='images/ref' function='padarray' %}          | | Pad array                                                            |
+| | {% include matlab path='images/ref' function='psnr' %}              | | Peak Signal-to-Noise Ratio (PSNR)                                    |
+| | {% include matlab path='images/ref' function='regionprops' %}       | | Measure properties of image regions                                  |
+| | {% include matlab path='matlab/ref' function='rgb2gray' %}          | | Convert RGB image or colormap to grayscale                           |
+| | {% include matlab path='matlab/ref' function='rgb2hsv' %}           | | Convert RGB colormap to HSV colormap                                 |
+| | {% include matlab path='images/ref' function='rgb2lab' %}           | | Convert RGB to CIE 1976 L\*a\*b\*                                    |
+| | {% include matlab path='images/ref' function='rgb2ycbcr' %}         | | Convert RGB color values to YCbCr color space                        |
+| | {% include matlab path='images/ref' function='stretchlim' %}        | | Find limits to contrast stretch image                                |
+| | {% include matlab path='images/ref' function='superpixels' %}       | | 2-D superpixel oversegmentation of images                            |
+| | {% include matlab path='images/ref' function='superpixels3' %}      | | 3-D superpixel oversegmentation of 3-D image                         |
+| | {% include matlab path='images/ref' function='watershed' %}         | | Watershed transform                                                  |
+| | {% include matlab path='images/ref' function='ycbcr2rgb' %}         | | Convert YCbCr color values to RGB color space                        |
+| | {% include matlab path='images/ref' function='imref2d' %}           | | Reference 2-D image to world coordinates                             |
+| | {% include matlab path='images/ref' function='imref3d' %}           | | Reference 3-D image to world coordinates                             |
+| | {% include matlab path='images/ref' function='affine2d' %}          | | 2-D Affine Geometric Transformation                                  |
+| | {% include matlab path='images/ref' function='projective2d' %}      | | 2-D Projective Geometric Transformation                              |
+| | {% include matlab path='images/ref' function='strel' %}             | | Morphological structuring element                                    |
+| | {% include matlab path='images/ref' function='offsetstrel' %}       | | Morphological offset structuring element                             |
 
 ## GPU Computing
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwdist {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Distance transform of binary image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwlabel {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Label connected components in 2-D binary image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwlookup {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Nonlinear filtering using lookup tables</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=bwmorph {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphological operations on binary images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=corr2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D correlation coefficient</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=edge {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find edges in intensity image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=histeq {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Enhance contrast using histogram equalization</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=im2double {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to double precision</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=im2single {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to single precision</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=im2uint8 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to 8-bit unsigned integers</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=im2uint16 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert image to 16-bit unsigned integers</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imabsdiff {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Absolute difference of two images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imadjust {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Adjust image intensity values or colormap</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imbothat {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Bottom-hat filtering</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imclose {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphologically close image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imcomplement {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Complement image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imdilate {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Dilate image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imerode {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Erode image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imfill {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Fill image regions and holes</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imfilter {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| N-D filtering of multidimensional images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgradient {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Gradient magnitude and direction of an image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imgradientxy {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Directional gradients of an image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imhist {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Histogram of image data</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imlincomb {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Linear combination of images</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imnoise {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Add noise to image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=ycbcr2rgb {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert YCbCr color values to RGB color space</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imopen {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphologically open image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imreconstruct {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Morphological reconstruction</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imregdemons {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Estimate displacement field that aligns two 2-D or 3-D images</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imresize {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Resize image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imrotate {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Rotate image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=imshow {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Display image</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=imtophat {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Top-hat filtering</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=iradon {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Inverse Radon transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=mat2gray {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert matrix to grayscale image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=mean2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Average or mean of matrix elements</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=medfilt2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| 2-D median filtering</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=normxcorr2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Normalized 2-D cross-correlation</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=padarray {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Pad array</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=radon {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Radon transform</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=regionprops {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Measure properties of image regions</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=matlab/ref | function=rgb2gray {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert RGB image or colormap to grayscale</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=rgb2ycbcr {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Convert RGB color values to YCbCr color space</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=std2 {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Standard deviation of matrix elements</p></td>
-</tr>
-<tr class="odd">
-<td><p>| {% capture includecontent %} path=images/ref | function=stdfilt {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Local standard deviation of image</p></td>
-</tr>
-<tr class="even">
-<td><p>| {% capture includecontent %} path=images/ref | function=stretchlim {% endcapture %}</p>
-<p>{% include matlab content=includecontent %}</p></td>
-<td><p>| Find limits to contrast stretch image</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                   |                                                                 |
+| ----------------------------------------------------------------- | --------------------------------------------------------------- |
+| | {% include matlab path='images/ref' function='bwdist' %}        | | Distance transform of binary image                            |
+| | {% include matlab path='images/ref' function='bwlabel' %}       | | Label connected components in 2-D binary image                |
+| | {% include matlab path='images/ref' function='bwlookup' %}      | | Nonlinear filtering using lookup tables                       |
+| | {% include matlab path='images/ref' function='bwmorph' %}       | | Morphological operations on binary images                     |
+| | {% include matlab path='images/ref' function='corr2' %}         | | 2-D correlation coefficient                                   |
+| | {% include matlab path='images/ref' function='edge' %}          | | Find edges in intensity image                                 |
+| | {% include matlab path='images/ref' function='histeq' %}        | | Enhance contrast using histogram equalization                 |
+| | {% include matlab path='matlab/ref' function='im2double' %}     | | Convert image to double precision                             |
+| | {% include matlab path='images/ref' function='im2single' %}     | | Convert image to single precision                             |
+| | {% include matlab path='images/ref' function='im2uint8' %}      | | Convert image to 8-bit unsigned integers                      |
+| | {% include matlab path='images/ref' function='im2uint16' %}     | | Convert image to 16-bit unsigned integers                     |
+| | {% include matlab path='images/ref' function='imabsdiff' %}     | | Absolute difference of two images                             |
+| | {% include matlab path='images/ref' function='imadjust' %}      | | Adjust image intensity values or colormap                     |
+| | {% include matlab path='images/ref' function='imbothat' %}      | | Bottom-hat filtering                                          |
+| | {% include matlab path='images/ref' function='imclose' %}       | | Morphologically close image                                   |
+| | {% include matlab path='images/ref' function='imcomplement' %}  | | Complement image                                              |
+| | {% include matlab path='images/ref' function='imdilate' %}      | | Dilate image                                                  |
+| | {% include matlab path='images/ref' function='imerode' %}       | | Erode image                                                   |
+| | {% include matlab path='images/ref' function='imfill' %}        | | Fill image regions and holes                                  |
+| | {% include matlab path='images/ref' function='imfilter' %}      | | N-D filtering of multidimensional images                      |
+| | {% include matlab path='images/ref' function='imgradient' %}    | | Gradient magnitude and direction of an image                  |
+| | {% include matlab path='images/ref' function='imgradientxy' %}  | | Directional gradients of an image                             |
+| | {% include matlab path='images/ref' function='imhist' %}        | | Histogram of image data                                       |
+| | {% include matlab path='images/ref' function='imlincomb' %}     | | Linear combination of images                                  |
+| | {% include matlab path='images/ref' function='imnoise' %}       | | Add noise to image                                            |
+| | {% include matlab path='images/ref' function='ycbcr2rgb' %}     | | Convert YCbCr color values to RGB color space                 |
+| | {% include matlab path='images/ref' function='imopen' %}        | | Morphologically open image                                    |
+| | {% include matlab path='images/ref' function='imreconstruct' %} | | Morphological reconstruction                                  |
+| | {% include matlab path='images/ref' function='imregdemons' %}   | | Estimate displacement field that aligns two 2-D or 3-D images |
+| | {% include matlab path='images/ref' function='imresize' %}      | | Resize image                                                  |
+| | {% include matlab path='images/ref' function='imrotate' %}      | | Rotate image                                                  |
+| | {% include matlab path='images/ref' function='imshow' %}        | | Display image                                                 |
+| | {% include matlab path='images/ref' function='imtophat' %}      | | Top-hat filtering                                             |
+| | {% include matlab path='images/ref' function='iradon' %}        | | Inverse Radon transform                                       |
+| | {% include matlab path='images/ref' function='mat2gray' %}      | | Convert matrix to grayscale image                             |
+| | {% include matlab path='images/ref' function='mean2' %}         | | Average or mean of matrix elements                            |
+| | {% include matlab path='images/ref' function='medfilt2' %}      | | 2-D median filtering                                          |
+| | {% include matlab path='images/ref' function='normxcorr2' %}    | | Normalized 2-D cross-correlation                              |
+| | {% include matlab path='images/ref' function='padarray' %}      | | Pad array                                                     |
+| | {% include matlab path='images/ref' function='radon' %}         | | Radon transform                                               |
+| | {% include matlab path='images/ref' function='regionprops' %}   | | Measure properties of image regions                           |
+| | {% include matlab path='matlab/ref' function='rgb2gray' %}      | | Convert RGB image or colormap to grayscale                    |
+| | {% include matlab path='images/ref' function='rgb2ycbcr' %}     | | Convert RGB color values to YCbCr color space                 |
+| | {% include matlab path='images/ref' function='std2' %}          | | Standard deviation of matrix elements                         |
+| | {% include matlab path='images/ref' function='stdfilt' %}       | | Local standard deviation of image                             |
+| | {% include matlab path='images/ref' function='stretchlim' %}    | | Find limits to contrast stretch image                         |

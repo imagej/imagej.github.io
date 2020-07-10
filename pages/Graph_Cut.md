@@ -8,6 +8,7 @@ categories: Segmentation,Tutorials,Plugins
 description: test description
 ---
 
+{% include component-stats content=':sc.fiji:Graph\_Cut' %}
 ![mito-sample.png](/images/pages/mito-sample.png "mito-sample.png")"
 
 The Graph Cut plugin provides a way to obtain a globally smooth binary

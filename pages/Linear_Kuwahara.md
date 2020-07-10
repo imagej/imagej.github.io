@@ -8,7 +8,8 @@ categories: Tutorials,Plugins
 description: test description
 ---
 
-This plugin extends the idea of the [original
+{% include component-stats content=':sc.fiji:Linear\_Kuwahara' %}This
+plugin extends the idea of the [original
 Kuwahara](https://imagej.net/plugins/kuwahara.html) filter from
 rectangular kernels to (straight) linear ones.
 

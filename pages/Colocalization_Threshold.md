@@ -8,20 +8,19 @@ categories: Plugins,Colocalization,Color processing
 description: test description
 ---
 
-{% capture includecontent %} name = Colocalization Threshold | software
-= ImageJ - Fiji | author = Tony Collins (and others?) | maintainer = {%
-include person content='White' %} | filename = Colocalization.jar |
-source = {% include github org='fiji' repo='Colocalisation\_Analysis'
-source='Colocalisation\_Threshold.java' %}, modified from [MBF
-ImageJ](MBF_ImageJ "wikilink") | latest version = june 2009 | website =
-[Colocalization
-Analysis\#Colocalization\_Threshold](Colocalization_Analysis#Colocalization_Threshold "wikilink")
-| status = no longer actively supported, unlikely to be stable enough
-for real use. Use [Coloc\_2](Coloc_2 "wikilink")
+{% capture maintainer %} {% include person content="White" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji"
+repo="Colocalisation\_Analysis" source="Colocalisation\_Threshold.java"
+%}, modified from [MBF ImageJ](MBF_ImageJ "wikilink") {% endcapture %}
+{% include sidebox-right name='Colocalization Threshold'
+software='ImageJ - Fiji' author='Tony Collins (and others?)'
+maintainer=maintainer filename='Colocalization.jar' source=source
+version='june 2009' website='[Colocalization
+Analysis\#Colocalization\_Threshold](Colocalization_Analysis#Colocalization_Threshold "wikilink")'
+status='no longer actively supported, unlikely to be stable enough for
+real use. Use [Coloc\_2](Coloc_2 "wikilink")' %}
 
 ## Purpose
 

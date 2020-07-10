@@ -8,26 +8,25 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = BoneJ2 | software = ImageJ | logo =
-![Bonej-icon.png](/images/pages/Bonej-icon.png "Bonej-icon.png")" | author = {% include
-person content='Michaeldoube' %}, {% include person content='Rdom' %},
-{% include person content='Alessandrofelder' %} | maintainer = {%
-include person content='Michaeldoube' %}, {% include person
-content='Alessandrofelder' %} | source = {% include github
-org='bonej-org' repo='BoneJ2' %},
-[<doi:10.5281/zenodo.1427262>](https://doi.org/10.5281/zenodo.1427262) |
-released = Dec 11<sup>th</sup>, 2017 | latest version = Apr
-18<sup>th</sup>, 2019 | status = Active, Experimental
+{% capture author %} {% include person content="Michaeldoube" %}, {%
+include person content="Rdom" %}, {% include person
+content="Alessandrofelder" %} {% endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Michaeldoube" %}, {%
+include person content="Alessandrofelder" %} {% endcapture %}
 
-{% include info-box content=includecontent %}
-
-BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is
-the new experimental, modernized version of the software available
-through the ImageJ [updater](https://imagej.net/Updater). Its update
-site is called [BoneJ experimental](http://sites.imagej.net/BoneJ). For
-the old ImageJ1 version, see [BoneJ](BoneJ "wikilink").
+{% capture source %} {% include github org="bonej-org" repo="BoneJ2" %},
+[<doi:10.5281/zenodo.1427262>](https://doi.org/10.5281/zenodo.1427262)
+{% endcapture %} {% include sidebox-right name='BoneJ2'
+software='ImageJ' logo='![Bonej-icon.png](Bonej-icon.png
+"Bonej-icon.png")' author=author maintainer=maintainer source=source
+released='Dec 11<sup>th</sup>, 2017' version='Apr 18<sup>th</sup>, 2019'
+status='Active, Experimental' %} BoneJ is a collection of skeletal
+biology plug-ins for ImageJ. This is the new experimental, modernized
+version of the software available through the ImageJ
+[updater](https://imagej.net/Updater). Its update site is called [BoneJ
+experimental](http://sites.imagej.net/BoneJ). For the old ImageJ1
+version, see [BoneJ](BoneJ "wikilink").
 
 This version works with the latest Fiji, and complies with the modern
 ImageJ [architecture](architecture "wikilink"). Most plug-ins also now

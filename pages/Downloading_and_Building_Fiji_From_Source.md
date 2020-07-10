@@ -8,12 +8,11 @@ categories: Development,Fiji
 description: test description
 ---
 
-%Replace% FijiMenu %Replace% The complete Fiji distribution of ImageJ
-consists of over a hundred individual components. Most of these
-components are ImageJ [plugins](plugins "wikilink"); the rest are core
-libraries, [scripts](scripts "wikilink") and several other resources
-(such as the [Fiji logo](:File:Fiji-icon.png "wikilink") and the
-README).
+{% include fijimenu %}The complete Fiji distribution of ImageJ consists
+of over a hundred individual components. Most of these components are
+ImageJ [plugins](plugins "wikilink"); the rest are core libraries,
+[scripts](scripts "wikilink") and several other resources (such as the
+[Fiji logo](:File:Fiji-icon.png "wikilink") and the README).
 
 In the past, Fiji used to be built from one monolithic source code
 repository, which became unmanageable over time. These days, therefore,
@@ -35,9 +34,9 @@ will need a JDK in order to develop Java code.
 
 To develop a plugin, the developer first needs to find out in which file
 it is contained. To do that, simply call the *Command Finder* (shortcut
-{% include key content='Ctrl|L' %}), type (part of) the label of the
-menu entry in whose function you are interested, and look at the *File*
-column.
+{% include key content='press|Ctrl|L' %}), type (part of) the label of
+the menu entry in whose function you are interested, and look at the
+*File* column.
 
 Each individual component is maintained in its own repository in the
 [*fiji* org on GitHub](https://github.com/fiji/). The name of the

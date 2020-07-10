@@ -8,18 +8,19 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = BigDataServer | software = Fiji |
-author = {% include person content='Pietzsch' %}, {% include person
-content='Moon' %}, {% include person content='Tomancak' %} | maintainer
-= {% include person content='Pietzsch' %} | source = {% include github
-org='bigdataviewer' repo='bigdataviewer-server' %} | latest version =
-1.0.5 | status = experimental | category =
-[Visualization](:Category:Visualization "wikilink"),
-[Transform](:Category:Transform "wikilink")
+{% capture author %} {% include person content="Pietzsch" %}, {% include
+person content="Moon" %}, {% include person content="Tomancak" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Pietzsch" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="bigdataviewer"
+repo="bigdataviewer-server" %} {% endcapture %} {% include sidebox-right
+name='BigDataServer' software='Fiji' author=author maintainer=maintainer
+source=source version='1.0.5' status='experimental'
+category='[Visualization](:Category:Visualization "wikilink"),
+[Transform](:Category:Transform "wikilink")' %}
 
 \_\_TOC\_\_
 
@@ -117,7 +118,7 @@ The web interface of /manager context looks like this:
 "BigDataServer_Manager.png")
 
 The server will keep running until you cancel it with {% include key
-content='Ctrl|C' %} or close the shell. To start the server in the
+content='press|Ctrl|C' %} or close the shell. To start the server in the
 background run it in a screen session:
 
 `$ screen`  
@@ -126,13 +127,13 @@ background run it in a screen session:
 `...`  
 `2015-02-14 14:03:12.316:`<INFO:oejs.Server:main>`: Started @20046ms`
 
-and detach the screen with {% include key content='Ctrl|A' %} {% include
-key content='D' %}.
+and detach the screen with {% include key content='press|Ctrl|A' %} {%
+include key content='press|D' %}.
 
 To add new datasets edit the *dataset.txt* and add new XML paths. After
 that you have to currently restart the server. (Re-attach the screen
 session with `screen -r`, cancel the server with {% include key
-content='Ctrl|C' %} and repeat the above).
+content='press|Ctrl|C' %} and repeat the above).
 
 Note that the server port needs to be open.
 

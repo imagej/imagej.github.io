@@ -8,18 +8,14 @@ categories: Plugins,Transform
 description: test description
 ---
 
-{% capture includecontent %} name = Interactive Perspective | software =
-Fiji | author = Stephan Saalfeld | maintainer = Stephan Saalfeld |
-source = {% include github org='axtimwalde' repo='mpicbg'
-path='mpicbg\_/src/main/java/Transform\_Perspective.java ' %} | released
-= November 9<sup>th</sup>, 2008 | latest version = February
-13<sup>th</sup>, 2015 | status = stable | category =
-[Transform](:Category:Transform "wikilink"),
-[Plugins](:Category:Plugins "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="axtimwalde" repo="mpicbg"
+path="mpicbg\_/src/main/java/Transform\_Perspective.java" %} {%
+endcapture %} {% include sidebox-right name='Interactive Perspective'
+software='Fiji' author='Stephan Saalfeld' maintainer='Stephan Saalfeld'
+source=source released='November 9<sup>th</sup>, 2008' version='February
+13<sup>th</sup>, 2015' status='stable'
+category='[Transform](:Category:Transform "wikilink"),
+[Plugins](:Category:Plugins "wikilink")' %}
 
 This plugin allows to apply a **perspective transformation** to a 2D
 image in an interactive way.

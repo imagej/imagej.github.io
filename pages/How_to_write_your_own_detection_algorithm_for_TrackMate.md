@@ -8,7 +8,7 @@ categories: Tutorials
 description: test description
 ---
 
-%Replace% ExtendingTrackMateTutorials %Replace%
+{% include extendingtrackmatetutorials %}
 
 ## Introduction.
 
@@ -443,7 +443,7 @@ are excruciating long and painfully hard to write, at least if you want
 to get them right. Check the {% include github org='fiji'
 repo='TrackMate'
 source='fiji/plugin/trackmate/gui/panels/detector/LogDetectorConfigurationPanel.java'
-label='configuration' %} for an example.
+label='configuration panel of the LOG detector' %} for an example.
 
 ### Checking the validity of parameters.
 
@@ -521,11 +521,11 @@ attribute or child elements. Here is what you must put in it:
 
   - Everything else is pretty much up to you. There is a {% include
     github org='fiji' repo='TrackMate'
-    source='fiji/plugin/trackmate/io/IOUtils.java\#L383' label='helper'
-    %} that you can use to serialize single parameters. Check the {%
-    include github org='fiji' repo='TrackMate'
+    source='fiji/plugin/trackmate/io/IOUtils.java\#L383' label='helper
+    method in IOUtils' %} that you can use to serialize single
+    parameters. Check the {% include github org='fiji' repo='TrackMate'
     source='fiji/plugin/trackmate/detection/LogDetectorFactory.java\#L161'
-    label='LogDetectorFactory' %} for an example.
+    label='LogDetectorFactory marshall method' %} for an example.
 
 #### Unmarshalling.
 
@@ -544,7 +544,7 @@ you just built.
 
 Check again the {% include github org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/detection/LogDetectorFactory.java\#L173'
-label='LogDetectorFactory' %} for an example.
+label='LogDetectorFactory unmarshall method' %} for an example.
 
 ### Instantiating spot detectors.
 
@@ -558,8 +558,8 @@ This will be called repeatedly by TrackMate to generate as many
 SpotDetector instances as there is frames in the raw data to segment.
 The two parameters specify the ROI the user wants to operate on as an {%
 include github repo='imglib'
-path='core/src/main/java/net/imglib2/Interval.java' label='Imglib2' %},
-and the target frame. So you need to process and bundle:
+path='core/src/main/java/net/imglib2/Interval.java' label='Imglib2
+interval' %}, and the target frame. So you need to process and bundle:
 
   - this interval and this frame;
   - the raw image data and settings map received from the `setTarget`

@@ -8,16 +8,14 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Segmentation
-Editor | author = Johannes Schindelin, Francois Kusztos, Benjamin Schmid
-| maintainer = Benjamin Schmid | filename = VIB\_.jar | source = {%
-include github org='fiji' repo='VIB' source='Segmentation\_Editor.java'
-%} | status = stable | website =
-http://132.187.25.13/home/?category=Download&page=SegmentationEditor
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="VIB"
+source="Segmentation\_Editor.java" %} {% endcapture %} {% include
+sidebox-right software='ImageJ' name='Segmentation Editor'
+author='Johannes Schindelin, Francois Kusztos, Benjamin Schmid'
+maintainer='Benjamin Schmid' filename='VIB\_.jar' source=source
+status='stable'
+website='http://132.187.25.13/home/?category=Download&page=SegmentationEditor'
+%}
 
 ## Demo video
 

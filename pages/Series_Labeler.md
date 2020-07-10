@@ -8,7 +8,8 @@ categories: Image annotation
 description: test description
 ---
 
-This plugin is inspired by the [Time Stamper](Time_Stamper "wikilink")
+{% include component-stats content=':sc.fiji:Series\_Labeler' %}This
+plugin is inspired by the [Time Stamper](Time_Stamper "wikilink")
 plugins from ImageJ and from Tony Collins' [MBF Plugin
 Collection](MBF_Plugin_Collection "wikilink"), as well as the imageJ
 built-in {% include bc content='Image|Stack|Label'%} command.

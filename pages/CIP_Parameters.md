@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-
+{% include cip content='types' %}

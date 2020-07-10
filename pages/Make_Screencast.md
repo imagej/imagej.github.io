@@ -8,15 +8,11 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | name =
-Make\_Screencast.bsh | author = Johannes Schindelin | maintainer =
-Johannes Schindelin | filename = Make\_Screencast.bsh | source = {%
-include github repo='fiji'
-path='plugins/Scripts/File/Make\_Screencast.bsh' %} | status = stable
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github repo="fiji"
+path="plugins/Scripts/File/Make\_Screencast.bsh" %} {% endcapture %} {%
+include sidebox-right software='Fiji' name='Make\_Screencast.bsh'
+author='Johannes Schindelin' maintainer='Johannes Schindelin'
+filename='Make\_Screencast.bsh' source=source status='stable' %}
 
 **Make Screencast** is a [Beanshell](Beanshell_Scripting "wikilink")
 script to record a screencast in [Ogg](wikipedia:Ogg "wikilink") or

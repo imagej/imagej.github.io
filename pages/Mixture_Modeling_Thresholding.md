@@ -8,17 +8,13 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Mixture Modeling
-| author = Christopher Mei, Maxime Dauphin | filename =
-[Mixture\_Modeling.jar](https://imagej.net/plugins/download/jars/Mixture_Modeling.jar)
-(18,454 Bytes) | source = in .jar file | released = 15 December 2003 |
-status = unknown | category =
-[Segmentation](:Category:Segmentation "wikilink") | website =
-[1](https://imagej.net/plugins/mixture-modeling.html)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Mixture Modeling'
+author='Christopher Mei, Maxime Dauphin'
+filename='[Mixture\_Modeling.jar](https://imagej.net/plugins/download/jars/Mixture_Modeling.jar)
+(18,454 Bytes)' source='in .jar file' released='15 December 2003'
+status='unknown'
+category='[Segmentation](:Category:Segmentation "wikilink")'
+website='[1](https://imagej.net/plugins/mixture-modeling.html)' %}
 
 ## Purpose
 

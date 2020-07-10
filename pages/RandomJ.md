@@ -8,16 +8,17 @@ categories: Plugins,ImageScience
 description: test description
 ---
 
-{% capture includecontent %} software = ImageScience | name = RandomJ |
-maintainer = {% include person content='ImageScience' %} | author = {%
-include person content='ImageScience' %} | source = {% include github
-org='imagescience' repo='RandomJ' %} | status = | category =
-[:Category:Plugins](:Category:Plugins "wikilink") | website =
-http://imagescience.org/meijering/software/randomj/
+{% capture maintainer %} {% include person content="ImageScience" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture author %} {% include person content="ImageScience" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %} The
+{% capture source %} {% include github org="imagescience" repo="RandomJ"
+%} {% endcapture %} {% include sidebox-right software='ImageScience'
+name='RandomJ' maintainer=maintainer author=author source=source
+status='' category='[:Category:Plugins](:Category:Plugins "wikilink")'
+website='http://imagescience.org/meijering/software/randomj/' %}The
 [RandomJ](http://imagescience.org/meijering/software/randomj/) suite of
 plugins offers sophisticated application of noise to images.
 

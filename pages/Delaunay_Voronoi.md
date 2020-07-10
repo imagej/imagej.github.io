@@ -8,16 +8,12 @@ categories: Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Delaunay/Voronoi
-| author = Johannes Schindelin, L. Paul Chew | maintainer = Johannes
-Schindelin | source = {% include github org='fiji' repo='VIB'
-source='Delaunay\_Voronoi.java' %} | released = 14 August 2006 | latest
-version = 11 December 2008 | status = stable | category = [Image
-annotation](:Category:Image_annotation "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="VIB"
+source="Delaunay\_Voronoi.java" %} {% endcapture %} {% include
+sidebox-right software='ImageJ' name='Delaunay/Voronoi' author='Johannes
+Schindelin, L. Paul Chew' maintainer='Johannes Schindelin' source=source
+released='14 August 2006' version='11 December 2008' status='stable'
+category='[Image annotation](:Category:Image_annotation "wikilink")' %}
 
 ## Purpose
 

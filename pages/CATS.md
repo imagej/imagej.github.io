@@ -8,13 +8,10 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = CATS | software = Fiji | update site
-= EMBL-CBA | author = Christian Tischer | maintainer = Christian Tischer
-| source = {% include github org='embl-cba' repo='fiji-plugin-cats' %}
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="embl-cba"
+repo="fiji-plugin-cats" %} {% endcapture %} {% include sidebox-right
+name='CATS' software='Fiji' site='EMBL-CBA' author='Christian Tischer'
+maintainer='Christian Tischer' source=source %}
 
 ## Overview
 

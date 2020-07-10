@@ -8,15 +8,17 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = Dynamic\_Kymograph | software = Fiji
-| author = {% include person content='Rudy Zhou' %} | maintainer = {%
-include person content='Rudy Zhou' %} | released = 26 July 2018 | source
-= {% include github org='rudyzhou' repo='Dynamic\_Kymograph' %} |
-category = [Plugins](:Category:Plugins "wikilink")
+{% capture author %} {% include person content="Rudy Zhou" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Rudy Zhou" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="rudyzhou"
+repo="Dynamic\_Kymograph" %} {% endcapture %} {% include sidebox-right
+name='Dynamic\_Kymograph' software='Fiji' author=author
+maintainer=maintainer released='26 July 2018' source=source
+category='[Plugins](:Category:Plugins "wikilink")' %}
 
 Dynamic\_Kymograph is a plugin for ImageJ that generates kymographs from
 stack videos using key-framing and linear interpolation.

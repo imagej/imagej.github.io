@@ -23,10 +23,7 @@ Facilitate Scientific Image
 Analysis](https://research.googleblog.com/2018/03/using-deep-learning-to-facilitate.html),
 as well as the publication in BMC Bioinformatics:
 
-  - 
-{% capture includecontent %} Microscope Image Quality {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='Microscope Image Quality' %}
 
 [Category:Fiji](Category:Fiji "wikilink")
 [Category:News](Category:News "wikilink")

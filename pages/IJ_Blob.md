@@ -8,16 +8,15 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ/Fiji | name = IJBlob |
-author = {% include person content='Twagner' %} | maintainer = {%
-include person content='Twagner' %} | filename = ij-blob.jar
-[\[1](https://github.com/thorstenwagner/ij-blob/releases/latest)\] |
-source = Github [\[2](https://github.com/thorstenwagner/ij-blob)\] |
-latest version = v1.4.9 (4 July 2016) | status = active
+{% capture author %} {% include person content="Twagner" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture maintainer %} {% include person content="Twagner" %} {%
+endcapture %} {% include sidebox-right software='ImageJ/Fiji'
+name='IJBlob' author=author maintainer=maintainer filename='ij-blob.jar
+[\[1](https://github.com/thorstenwagner/ij-blob/releases/latest)\]'
+source='Github [\[2](https://github.com/thorstenwagner/ij-blob)\]'
+version='v1.4.9 (4 July 2016)' status='active' %}
 
 ## Purpose
 

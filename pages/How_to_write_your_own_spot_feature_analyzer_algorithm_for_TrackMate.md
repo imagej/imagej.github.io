@@ -8,7 +8,7 @@ categories: Tutorials
 description: test description
 ---
 
-%Replace% ExtendingTrackMateTutorials %Replace%
+{% include extendingtrackmatetutorials %}
 
 ## Introduction
 
@@ -246,6 +246,10 @@ factory, you can see that there is an extra parameter, `priority`:
 This priority parameter accepts a `double` as value and this value
 determines the order of execution. Careful, the rule is the opposite of
 what would make sense for a priority:
+
+{% include amsidebox-right text='Feature analyzers are executed in order
+according to """increasing priority""". This means that analyzers with
+the greatest priority are executed last.' %}
 
 By convention, if your feature analyzer depends on the features
 calculated by N other analyzers, you take the larger priority of these

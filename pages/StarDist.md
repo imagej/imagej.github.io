@@ -8,16 +8,11 @@ categories: Plugins
 description: test description
 ---
 
-{% capture includecontent %} name = StarDist | software = ImageJ |
-update site = StarDist | author = Uwe Schmidt, Martin Weigert |
-maintainer = Uwe Schmidt, Martin Weigert | source = {% include github
-org='mpicbg-csbd' repo='stardist-imagej' %} | website =
-https://github.com/mpicbg-csbd/stardist
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
+{% capture source %} {% include github org="mpicbg-csbd"
+repo="stardist-imagej" %} {% endcapture %} {% include sidebox-right
+name='StarDist' software='ImageJ' site='StarDist' author='Uwe Schmidt,
+Martin Weigert' maintainer='Uwe Schmidt, Martin Weigert' source=source
+website='https://github.com/mpicbg-csbd/stardist' %}
 ![StarDist\_logo.jpg](/images/pages/StarDist_logo.jpg "StarDist_logo.jpg")"
 
 ## Overview

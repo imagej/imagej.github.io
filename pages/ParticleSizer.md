@@ -8,18 +8,17 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | update site = Biomedgroup
-& ParticleSizer | name = ParticleSizer | author = {% include person
-content='Twagner' %} | maintainer = {% include person content='Twagner'
-%} | filename = ParticleSizer\_.jar
-[\[1](https://github.com/thorstenwagner/ij-particlesizer/releases/latest)\]
-| source = Github
-[\[2](https://github.com/thorstenwagner/ij-particlesizer)\] | latest
-version = v1.0.7 (28. Ocotober 2016) | status = active
+{% capture author %} {% include person content="Twagner" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture maintainer %} {% include person content="Twagner" %} {%
+endcapture %} {% include sidebox-right software='Fiji' site='Biomedgroup
+& ParticleSizer' name='ParticleSizer' author=author
+maintainer=maintainer filename='ParticleSizer\_.jar
+[\[1](https://github.com/thorstenwagner/ij-particlesizer/releases/latest)\]'
+source='Github
+[\[2](https://github.com/thorstenwagner/ij-particlesizer)\]'
+version='v1.0.7 (28. Ocotober 2016)' status='active' %}
 
 # Purpose
 

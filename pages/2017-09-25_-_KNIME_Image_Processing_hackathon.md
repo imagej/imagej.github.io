@@ -83,7 +83,8 @@ learning networks applied to biological data.
     [here](https://github.com/scijava/scijava-common/issues/42#issuecomment-332658377)
     for a written update with illustration of progress).
   - Helped {% include person content='chaubold' %} set up his {% include
-    github org='ilastik' repo='ilastik4ij' label='shiny' %} with [Travis
+    github org='ilastik' repo='ilastik4ij' label='shiny new
+    Ilastik-ImageJ integration' %} with [Travis
     CI](Travis_CI "wikilink") and deploy it to the ImageJ Maven
     repository.
 
@@ -156,7 +157,7 @@ learning networks applied to biological data.
     imglib-tests branch
     ["roi"](https://github.com/imglib/imglib2-tests/tree/ec0df49bf5fc344f6ae5af5fec8584a36e3d2ca2)).
   - Reviewed imglib2-roi {% include github org='imglib'
-    repo='imglib-roi' pr='29' label='Masks' %}, and worked on
+    repo='imglib-roi' pr='29' label='Masks PR' %}, and worked on
     revision/re-implementation of core interfaces and operators
     (imglib2-roi branch
     ["troi"](https://github.com/imglib/imglib2-roi/tree/c41c93acf696b801e13f5023bf00527c04722263)).

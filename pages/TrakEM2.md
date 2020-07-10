@@ -8,9 +8,9 @@ categories: Plugins,Registration,Segmentation,TrakEM2,Image annotation,Neuroanat
 description: test description
 ---
 
-TrakEM2 is an ImageJ plugin for morphological data mining,
-three-dimensional modeling and image stitching, registration, editing
-and annotation.
+{% include component-stats content=':sc.fiji:TrakEM2\_' %}TrakEM2 is an
+ImageJ plugin for morphological data mining, three-dimensional modeling
+and image stitching, registration, editing and annotation.
 
 See [TrakEM2 snapshots](http://www.ini.uzh.ch/~acardona/snapshots.html)
 for an overview. {% include toc content='small' %}
@@ -310,10 +310,7 @@ and floating text labels.](TrakEM2_Display_segmentations.png
 
 ## Publication
 
-  - 
-{% capture includecontent %} TrakEM2 {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='TrakEM2' %}
 
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:Registration](Category:Registration "wikilink")

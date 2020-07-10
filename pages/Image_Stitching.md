@@ -8,8 +8,8 @@ categories: Plugins,Registration,Stitching,Cookbook,Citable
 description: test description
 ---
 
-{% include learn content='techniques' %}{% include toc content='small'
-%}
+{% include learn content='techniques' %}{% include component-stats
+content=':sc.fiji:Stitching\_' %}{% include toc content='small' %}
 
 ## Citation
 
@@ -101,7 +101,7 @@ images.
     all images is computed ({% include github org='fiji'
     repo='Stitching'
     source='mpicbg/stitching/fusion/AveragePixelFusion.java'
-    label='example' %}).
+    label='example source code' %}).
   - **Median**: In the overlapping area the median intensity of all
     images is computed.
   - **Max. Intensity**: In the overlapping area the maximum intensity

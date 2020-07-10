@@ -10,40 +10,50 @@ description: test description
 
 ![Mifqc.png](/images/pages/Mifqc.png "Mifqc.png")"
 
-{% capture includecontent %} name = Microscope Image Focus Quality
-Classifier | url = https://imagej.net/Microscope_Focus_Quality |
-source = {% include github org='fiji' repo='microscope-image-quality'
-tag='microscope-image-quality-0.1.0' %} | license =
-[Apache](Apache "wikilink") | release = {% capture includecontent %}
-g=sc.fiji | a=microscope-image-quality | v=0.1.0 | label=0.1.0 {%
-endcapture %}
-
-{% include maven content=includecontent %}
-
-| devStatus = {% capture includecontent %} developer=yes |
-incubating=yes | obsolete=no {% endcapture %}
-
-{% include devstatus content=includecontent %}
-
-| supportStatus = {% capture includecontent %} debugger=yes |
-reviewer=yes | support=yes {% endcapture %}
-
-{% include supportstatus content=includecontent %}
-
-| founders = {% include person content='ctrueden' %}, {% include person
-content='samueljyang' %}, {% include person content='asimshankar' %} |
-leads = {% include person content='ctrueden' %} | developers = {%
-include person content='ctrueden' %} | debuggers = {% include person
-content='ctrueden' %} | reviewers = {% include person content='ctrueden'
-%} | support = {% include person content='ctrueden' %} | maintainers =
-{% include person content='ctrueden' %} | contributors = {% include
-person content='samueljyang' %}, {% include person content='asimshankar'
-%}
-
+{% capture source %} {% include github org="fiji"
+repo="microscope-image-quality" tag="microscope-image-quality-0.1.0" %}
 {% endcapture %}
 
-{% include component content=includecontent %} This plugin assesses the
-focus quality of microscope images, classifying the image in tiles.
+{% capture release %} {% include maven g="sc.fiji"
+a="microscope-image-quality" v="0.1.0" label="0.1.0" %} {% endcapture %}
+
+{% capture tatus %} {% include devstatus developer="yes"
+incubating="yes" obsolete="no" %} {% endcapture %}
+
+{% capture tatus %} {% include supportstatus debugger="yes"
+reviewer="yes" support="yes" %} {% endcapture %}
+
+{% capture founders %} {% include person content="ctrueden" %}, {%
+include person content="samueljyang" %}, {% include person
+content="asimshankar" %} {% endcapture %}
+
+{% capture leads %} {% include person content="ctrueden" %} {%
+endcapture %}
+
+{% capture developers %} {% include person content="ctrueden" %} {%
+endcapture %}
+
+{% capture debuggers %} {% include person content="ctrueden" %} {%
+endcapture %}
+
+{% capture reviewers %} {% include person content="ctrueden" %} {%
+endcapture %}
+
+{% capture support %} {% include person content="ctrueden" %} {%
+endcapture %}
+
+{% capture maintainers %} {% include person content="ctrueden" %} {%
+endcapture %}
+
+{% capture contributors %} {% include person content="samueljyang" %},
+{% include person content="asimshankar" %} {% endcapture %} {% include
+component name='Microscope Image Focus Quality Classifier'
+url='https://imagej.net/Microscope_Focus_Quality' source=source
+license='[Apache](Apache "wikilink")' release=release tatus=tatus
+tatus=tatus founders=founders leads=leads developers=developers
+debuggers=debuggers reviewers=reviewers support=support
+maintainers=maintainers contributors=contributors %}This plugin assesses
+the focus quality of microscope images, classifying the image in tiles.
 
 ## Summary
 
@@ -104,10 +114,7 @@ intensities diverge from that too greatly.
 
 ## Publication
 
-  - 
-{% capture includecontent %} Microscope Image Quality {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='Microscope Image Quality' %}
 
 ## See also
 

@@ -8,17 +8,14 @@ categories: Plugins,Transform
 description: test description
 ---
 
-{% capture includecontent %} name = Interactive Moving Least Squares |
-software = Fiji | author = Stephan Saalfeld | maintainer = Stephan
-Saalfeld | source = {% include github org='axtimwalde' repo='mpicbg'
-path='mpicbg\_/src/main/java/Transform\_MovingLeastSquaresMesh.java' %}
-| released = July 18, 2008 | latest version = May 26, 2009 | status =
-stable, active | category = [Transform](:Category:Transform "wikilink"),
-[Plugins](:Category:Plugins "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %} {% include youtube
+{% capture source %} {% include github org="axtimwalde" repo="mpicbg"
+path="mpicbg\_/src/main/java/Transform\_MovingLeastSquaresMesh.java" %}
+{% endcapture %} {% include sidebox-right name='Interactive Moving Least
+Squares' software='Fiji' author='Stephan Saalfeld' maintainer='Stephan
+Saalfeld' source=source released='July 18, 2008' version='May 26, 2009'
+status='stable, active'
+category='[Transform](:Category:Transform "wikilink"),
+[Plugins](:Category:Plugins "wikilink")' %}{% include youtube
 url="https://www.youtube.com/embed/NwOxRmX03xs" %}
 
 ## License

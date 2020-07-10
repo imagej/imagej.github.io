@@ -60,40 +60,14 @@ dropdown choices will be indeícated ***bold/italic***
 
 ## Boxes
 
-``` 
+    {% include sidebox-right width='30%' %}
 
-{% capture includecontent %}
-width=30% | As a standard box for additional info.
-{% endcapture %}
+{% include sidebox-right width='30%' %}  
 
-{% include sidebox-right content=includecontent %}
-```
+    {% include sidebox-right title='Modifies Box with a title!' text='As a standard box for additional info.' width='30%' float='left' %}
 
-{% capture includecontent %} width=30% | As a standard box for
-additional info. {% endcapture %}
-
-{% include sidebox-right content=includecontent %}
-
-  
-
-``` 
-
-{% capture includecontent %}
-Modifies Box with a title!
- As a standard box for additional info.
-
-{% endcapture %}
-
-{% include sidebox-right content=includecontent %}
-```
-
-{% capture includecontent %} Modifies Sidebox with title\!
-
-`As a standard box for additional info.`
-
-{% endcapture %}
-
-{% include sidebox-right content=includecontent %}
+{% include sidebox-right title='Modifies Sidebox with title\!' text='As
+a standard box for additional info.' width='30%' float='left' %}
 
   
   
@@ -104,77 +78,35 @@ Modifies Box with a title!
 
 ``` 
 
-{% capture includecontent %}
-tip = Press the {% include key content='L' %} key to access ImageJ's most useful feature: the [[Command Finder]].
-
+{% capture tip %}
+Press the {% include key content="L" %} key to access ImageJ"s most useful feature: the [[Command Finder]].
 {% endcapture %}
-
-{% include tip content=includecontent %}
+{% include tip tip=tip %}
 ```
 
-{% capture includecontent %} tip = Press the {% include key content='L'
-%} key to access ImageJ's most useful feature: the [Command
-Finder](Command_Finder "wikilink").
+{% capture tip %} Press the {% include key content="L" %} key to access
+ImageJ"s most useful feature: the [Command
+Finder](Command_Finder "wikilink"). {% endcapture %} {% include tip
+tip=tip %}
 
-{% endcapture %}
+    {% include sidebox-right content='This should display a notice box used for tipps.' %}
 
-{% include tip content=includecontent %}
+{% include sidebox-right content='This should display a notice box used
+for tipps.' %}
 
-``` 
+    {% include warning-sidebox-right content='Something critical like do not put Fiji in the Programm Files folder!' %}
 
-{% capture includecontent %}
-This should display a notice box used for tipps.
-{% endcapture %}
+{% include warning-sidebox-right content='Something critical like do not
+put Fiji in the Programm Files folder\!' %}
 
-{% include info-box content=includecontent %}
-```
+    {% include tech content='if necessary can be used for technical details.' %}
 
-{% capture includecontent %} This should display a notice box used for
-tipps. {% endcapture %}
+{% include tech content='if necessary can be used for technical
+details.' %}
 
-{% include info-box content=includecontent %}
+    {% include fiji content='To mention Fiji specific hints!' %}
 
-``` 
-
-{% capture includecontent %}
-Something critical like do not put Fiji in the Programm Files folder!
-{% endcapture %}
-
-{% include warning-box content=includecontent %}
-```
-
-{% capture includecontent %} Something critical like do not put Fiji in
-the Programm Files folder\! {% endcapture %}
-
-{% include warning-box content=includecontent %}
-
-``` 
-
-{% capture includecontent %}
-if necessary can be used for technical details.
-{% endcapture %}
-
-{% include tech content=includecontent %}
-```
-
-{% capture includecontent %} if necessary can be used for technical
-details. {% endcapture %}
-
-{% include tech content=includecontent %}
-
-``` 
-
-{% capture includecontent %}
-To mention Fiji specific hints!
-{% endcapture %}
-
-{% include fiji content=includecontent %}
-```
-
-{% capture includecontent %} To mention Fiji specific hints\! {%
-endcapture %}
-
-{% include fiji content=includecontent %}
+{% include fiji content='To mention Fiji specific hints\!' %}
 
   
   
@@ -183,75 +115,42 @@ endcapture %}
   
   
 
-    %Replace% Yes %Replace% 
+    {% include yes %}
 
-%Replace% Yes %Replace%
+{% include yes %}
 
 ## Specific Icons
 
-    %Replace% No %Replace% 
+    {% include no %}
 
-%Replace% No %Replace%
+{% include no %}
 
 ## Operating systems
 
-``` 
+    {% include linux content='Everyone agrees: Linux is the ""best"" operating system!' %}
 
-{% capture includecontent %}
-Everyone agrees: Linux is the ''best'' operating system!
-{% endcapture %}
-
-{% include linux content=includecontent %}
-```
-
-{% capture includecontent %} Everyone agrees: Linux is the *best*
-operating system\! {% endcapture %}
-
-{% include linux content=includecontent %}
-
-  
+{% include linux content='Everyone agrees: Linux is the ""best""
+operating system\!' %}  
   
   
   
   
   
 
-``` 
+    {% include windows content='Everyone agrees: Windows is the ""best"" operating system!' %}
 
-{% capture includecontent %}
-Everyone agrees: Windows is the ''best'' operating system!
-{% endcapture %}
-
-{% include windows content=includecontent %}
-```
-
-{% capture includecontent %} Everyone agrees: Windows is the *best*
-operating system\! {% endcapture %}
-
-{% include windows content=includecontent %}
-
-  
+{% include windows content='Everyone agrees: Windows is the ""best""
+operating system\!' %}  
   
   
   
   
   
 
-``` 
+    {% include macos content='Everyone agrees: macOS is the ""best"" operating system!' %}
 
-{% capture includecontent %}
-Everyone agrees: macOS is the ''best'' operating system!
-{% endcapture %}
-
-{% include macos content=includecontent %}
-```
-
-{% capture includecontent %} Everyone agrees: macOS is the *best*
-operating system\! {% endcapture %}
-
-{% include macos content=includecontent %}
-
-  
+{% include macos content='Everyone agrees: macOS is the ""best""
+operating system\!' %}  
   
   
   
@@ -263,15 +162,13 @@ article, or to article's discussion page. We could use the Todo
 
 ``` 
 
-{% capture includecontent %}
-add link to wiki page|add info on shortcut {% include key content='Shift' %} + {% include key content='F' %}|mention alternative plugins
+{% capture content %}
+add link to wiki page|add info on shortcut {% include key content="Shift" %} + {% include key content="F" %}|mention alternative plugins
 {% endcapture %}
-
-{% include guidetask content=includecontent %}
+{% include guidetask content=content %}
 ```
 
-{% capture includecontent %} add link to wiki page|add info on usage of
-{% include key content='Shift' %} + {% include key content='F'
-%}|mention alternative plugins {% endcapture %}
-
-{% include guidetask content=includecontent %}
+{% capture content %} add link to wiki page|add info on usage of {%
+include key content="Shift" %} + {% include key content="F" %}|mention
+alternative plugins {% endcapture %} {% include guidetask
+content=content %}

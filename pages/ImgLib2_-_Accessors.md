@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-%Replace% ImgLibMenu %Replace%
+{% include imglibmenu %}
 
 ## Introduction
 
@@ -695,23 +695,16 @@ above](ImgLib2_-_Accessors#Introduction "wikilink") are highlighted.
 Real equivalents of the **Positionable** and **Localizable** interfaces
 have been added by which real-valued coordinates can be accessed.
 
-Something that is {% capture includecontent %} project=ImgLib2 |
-package=net/imglib2 | class=RealPositionable {% endcapture %}
-
-{% include javadoc content=includecontent %} , can be positioned at real
-coordinates. There are methods to set absolute or relative position, for
-a single or all dimensions, in analogy to the integer **Positionable**.
-You can also set a **RealPositionable** to the location of a
-**RealLocalizable**. Note that {% capture includecontent %}
-project=ImgLib2 | package=net/imglib2 | class=RealPositionable {%
-endcapture %}
-
-{% include javadoc content=includecontent %}
-
-`extends `**`Positionable`**`, which is quite natural:`
-
-Whenever something can be positioned at arbitrary real coordinates, of
-course it can be positioned to integer coordinates as well.
+Something that is {% include javadoc project='ImgLib2'
+package='net/imglib2' class='RealPositionable' %}, can be positioned at
+real coordinates. There are methods to set absolute or relative
+position, for a single or all dimensions, in analogy to the integer
+**Positionable**. You can also set a **RealPositionable** to the
+location of a **RealLocalizable**. Note that {% include javadoc
+project='ImgLib2' package='net/imglib2' class='RealPositionable' %}
+extends **Positionable**, which is quite natural: Whenever something can
+be positioned at arbitrary real coordinates, of course it can be
+positioned to integer coordinates as well.
 
 [RealLocalizable](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealLocalizable.html)
 allows to get a real coordinate from an accessor. Again, this is

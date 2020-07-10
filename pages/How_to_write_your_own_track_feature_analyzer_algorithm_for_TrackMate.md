@@ -8,7 +8,7 @@ categories: Tutorials
 description: test description
 ---
 
-%Replace% ExtendingTrackMateTutorials %Replace%
+{% include extendingtrackmatetutorials %}
 
 ## Introduction
 
@@ -36,8 +36,8 @@ to **disable** modules.
 All the track feature analyzers must implement {% include github
 org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/features/track/TrackAnalyzer.java'
-label='TrackAnalyzer' %}. Like for the {% include github org='fiji'
-repo='TrackMate'
+label='TrackAnalyzer interface' %}. Like for the {% include github
+org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java'
 label='EdgeAnalyzer' %} interface, it extends both
 
@@ -278,6 +278,9 @@ module integration.
 
 The first one we will see is the `enabled` value. It accepts a `boolean`
 as value and by default it is `true`. Its usage is obvious:
+
+{% include amsidebox-right text='If you want to disable a TrackMate
+module, add the `enabled = false` annotation parameter.' %}
 
 Like this:
 

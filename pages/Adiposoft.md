@@ -8,17 +8,13 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Adiposoft |
-author = [CIMA](https://cima.unav.edu/), [University of
-Navarra](http://www.unav.edu/). | maintainer = [Mikel
-Ariz](mailto:mikelariz@unav.es) | released = April 2012 | latest version
-= January 2019 | status = stable, active | publications =
-[JLR](http://www.jlr.org/content/53/12/2791.short) | category =
-[Segmentation](:Category:Segmentation "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Adiposoft'
+author='[CIMA](https://cima.unav.edu/), [University of
+Navarra](http://www.unav.edu/).' maintainer='[Mikel
+Ariz](mailto:mikelariz@unav.es)' released='April 2012' version='January
+2019' status='stable, active'
+publications='[JLR](http://www.jlr.org/content/53/12/2791.short)'
+category='[Segmentation](:Category:Segmentation "wikilink")' %}
 
 ![screenshot1.jpg](/images/pages/screenshot1.jpg "screenshot1.jpg")"
 

@@ -8,7 +8,9 @@ categories: Plugins,Transform
 description: test description
 ---
 
-![SplineDeformationGenerator available image
+{% include component-stats
+content=':sc.fiji:SplineDeformationGenerator\_'
+%}![SplineDeformationGenerator available image
 deformations](Spline-deformations-examples.gif
 "SplineDeformationGenerator available image deformations")
 

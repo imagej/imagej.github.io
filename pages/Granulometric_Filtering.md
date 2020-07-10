@@ -8,16 +8,12 @@ categories: Plugins,Particle analysis
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Granulometric
-Filtering | author = Dimiter Prodanov | filename =
-[Gran\_Filter.jar](https://imagej.net/plugins/download/jars/Gran_Filter.jar)
-(39,559 Bytes) | source = in .jar file | released = 21 May 2005 | latest
-version = | status = unknown | category = | website =
-[1](https://imagej.net/plugins/gran-filter.html)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Granulometric
+Filtering' author='Dimiter Prodanov'
+filename='[Gran\_Filter.jar](https://imagej.net/plugins/download/jars/Gran_Filter.jar)
+(39,559 Bytes)' source='in .jar file' released='21 May 2005' version=''
+status='unknown' category=''
+website='[1](https://imagej.net/plugins/gran-filter.html)' %}
 
 ## Purpose
 
@@ -60,7 +56,7 @@ the following paper, where more documentation can be found:
 ` | first2 = J.`  
 ` | last3 = Marani`  
 ` | first3 = E.`  
-` | Automatic morphometry of synaptic boutons of cultured cells using granulometric analysis of digital images`  
+` | title = Automatic morphometry of synaptic boutons of cultured cells using granulometric analysis of digital images`  
 ` | journal = Journal of Neuroscience Methods`  
 ` | volume = 151`  
 ` | pages = 168-177`  

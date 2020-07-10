@@ -8,16 +8,13 @@ categories: Plugins,Transform,Registration
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = StackReg |
-maintainer = Philippe Thévenaz | author = Philippe Thévenaz | source =
-{% include github org='fiji' repo='StackReg' source='StackReg\_.java' %}
-| released = 16/09/2010 | latest version = 16/09/2010 | status = |
-category = [:Category:Plugins](:Category:Plugins "wikilink") | website =
-http://bigwww.epfl.ch/thevenaz/stackreg/
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="StackReg"
+source="StackReg\_.java" %} {% endcapture %} {% include sidebox-right
+software='ImageJ' name='StackReg' maintainer='Philippe Thévenaz'
+author='Philippe Thévenaz' source=source released='16/09/2010'
+version='16/09/2010' status=''
+category='[:Category:Plugins](:Category:Plugins "wikilink")'
+website='http://bigwww.epfl.ch/thevenaz/stackreg/' %}
 
 This plugin is described in detail on the [BIG
 website](http://bigwww.epfl.ch/thevenaz/stackreg/).

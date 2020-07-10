@@ -8,9 +8,10 @@ categories: Tutorials,Plugins
 description: test description
 ---
 
-The Fiji Packager allows you to bundle an existing Fiji installation so
-you can share all the plugins and update sites with colleagues. It makes
-a single archive (.zip, .tar.gz, .tar.bz2 are supported at the moment)
+{% include component-stats content=':sc.fiji:Fiji\_Package\_Maker' %}The
+Fiji Packager allows you to bundle an existing Fiji installation so you
+can share all the plugins and update sites with colleagues. It makes a
+single archive (.zip, .tar.gz, .tar.bz2 are supported at the moment)
 from the files in *Fiji.app/*.
 
 After clicking on {% include bc content='Plugins | Utilities | Make Fiji

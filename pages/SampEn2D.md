@@ -8,20 +8,21 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = Two-dimensional Sample Entropy
-(SampEn2D) PlugIn | software = Fiji | author = {% include person
-content='Acsenrafilho' %} ([1](mailto:acsenrafilho@gmail.com)) |
-maintainer = {% include person content='Acsenrafilho' %} | source = {%
-include github content='org = CSIM-Toolkits | repo =
-ImageJ/tree/master/plugins/SampleEntropy-2D | label = GitHub CSIM-ImageJ
-SampEn2D repository' %} | released = June 23<sup>rd</sup>, 2016 | latest
-version = June 23<sup>rd</sup>, 2016 | status = experimental, active |
-category = [Plugins](:Category:Plugins "wikilink"), [Pattern
-Recognition](:Category:Pattern_Recognition "wikilink")
+{% capture author %} {% include person content="Acsenrafilho" %}
+([1](mailto:acsenrafilho@gmail.com)) {% endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Acsenrafilho" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="CSIM-Toolkits"
+repo="ImageJ/tree/master/plugins/SampleEntropy-2D" label="GitHub
+CSIM-ImageJ SampEn2D repository" %} {% endcapture %} {% include
+sidebox-right name='Two-dimensional Sample Entropy (SampEn2D) PlugIn'
+software='Fiji' author=author maintainer=maintainer source=source
+released='June 23<sup>rd</sup>, 2016' version='June 23<sup>rd</sup>,
+2016' status='experimental, active'
+category='[Plugins](:Category:Plugins "wikilink"), [Pattern
+Recognition](:Category:Pattern_Recognition "wikilink")' %}
 
 ## Two-dimensional Sample Entropy
 

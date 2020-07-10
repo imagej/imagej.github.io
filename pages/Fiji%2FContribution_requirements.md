@@ -8,18 +8,15 @@ categories: Fiji
 description: test description
 ---
 
-{% capture includecontent %} There is another good way to distribute
-your extension: your own [update site](update_site "wikilink"). See the
-[Distribution](Distribution "wikilink") page for details. {% endcapture
-%}
-
-{% include info-box content=includecontent %}
-
-%Replace% FijiMenu %Replace% Distributing your software component as
-part of [Fiji](Fiji "wikilink") is an effective way to immediately and
-easily put it into the hands of many users, as well as to actively
-participate in the community of ImageJ software development. However,
-doing so comes with a few corresponding rules.
+{% include sidebox-right content='There is another good way to
+distribute your extension: your own [update
+site](update_site "wikilink"). See the
+[Distribution](Distribution "wikilink") page for details.' %} {% include
+fijimenu %}Distributing your software component as part of
+[Fiji](Fiji "wikilink") is an effective way to immediately and easily
+put it into the hands of many users, as well as to actively participate
+in the community of ImageJ software development. However, doing so comes
+with a few corresponding rules.
 
 The following document describes these requirements, as well as
 associated best practices, for shipping your component as part of the
@@ -292,17 +289,17 @@ components are structured.
 | --------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------- |
 | **Basics**                                                | **[GitHub](GitHub "wikilink")**             | **[Maven](Maven "wikilink")**                     |
 | **Classification**                                        | **Component**                               | **Core?<sup>1</sup>**                             |
-| **Standard**                                              | [3D Viewer](3D_Viewer "wikilink")           | %Replace% Yes %Replace%                           |
-| [Coloc 2](Coloc_2 "wikilink")                             | %Replace% Yes %Replace%                     | [Fiji](http://update.fiji.sc/)                    |
-| [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink") | %Replace% Yes %Replace%                     | [Fiji](http://update.fiji.sc/)                    |
-| [TrackMate](TrackMate "wikilink")                         | %Replace% Yes %Replace%                     | [Fiji](http://update.fiji.sc/)                    |
-| **External**                                              | [Sholl Analysis](Sholl_Analysis "wikilink") | %Replace% Yes %Replace%                           |
-| [Bio-Formats](Bio-Formats "wikilink")                     | %Replace% Yes %Replace%                     | [Fiji](http://update.fiji.sc/)                    |
-| **Subproject**                                            | [BigDataViewer](BigDataViewer "wikilink")   | %Replace% Yes %Replace%                           |
-| [TrakEM2](TrakEM2 "wikilink")                             | %Replace% Yes %Replace%                     | [Fiji](http://update.fiji.sc/)                    |
-| **Third party**                                           | [Cookbook](Cookbook "wikilink")             | %Replace% No %Replace%                            |
-| [MaMuT](MaMuT "wikilink")                                 | %Replace% No %Replace%                      | [MaMuT](http://sites.imagej.net/MaMuT/)           |
-| [SLIM Curve](SLIM_Curve "wikilink")                       | %Replace% No %Replace%                      | [SLIM-Curve](http://sites.imagej.net/SLIM-Curve/) |
+| **Standard**                                              | [3D Viewer](3D_Viewer "wikilink")           | {% include yes %}                                 |
+| [Coloc 2](Coloc_2 "wikilink")                             | {% include yes %}                           | [Fiji](http://update.fiji.sc/)                    |
+| [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink") | {% include yes %}                           | [Fiji](http://update.fiji.sc/)                    |
+| [TrackMate](TrackMate "wikilink")                         | {% include yes %}                           | [Fiji](http://update.fiji.sc/)                    |
+| **External**                                              | [Sholl Analysis](Sholl_Analysis "wikilink") | {% include yes %}                                 |
+| [Bio-Formats](Bio-Formats "wikilink")                     | {% include yes %}                           | [Fiji](http://update.fiji.sc/)                    |
+| **Subproject**                                            | [BigDataViewer](BigDataViewer "wikilink")   | {% include yes %}                                 |
+| [TrakEM2](TrakEM2 "wikilink")                             | {% include yes %}                           | [Fiji](http://update.fiji.sc/)                    |
+| **Third party**                                           | [Cookbook](Cookbook "wikilink")             | {% include no %}                                  |
+| [MaMuT](MaMuT "wikilink")                                 | {% include no %}                            | [MaMuT](http://sites.imagej.net/MaMuT/)           |
+| [SLIM Curve](SLIM_Curve "wikilink")                       | {% include no %}                            | [SLIM-Curve](http://sites.imagej.net/SLIM-Curve/) |
 
 <sup>1</sup> A "core" project is one distributed on the Fiji update
 site. These projects are subject to the requirements discussed on this

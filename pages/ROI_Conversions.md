@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-%Replace% WIP %Replace%
+{% include wip %}
 
 This page collects examples of various conversions between different ROI
 and label representations:

@@ -8,18 +8,13 @@ categories: ImgLib,Tutorials
 description: test description
 ---
 
-{% capture includecontent %} name = Examples | software = ImgLib2 |
-author = Stephan Preibisch | maintainer = Stephan Preibisch, Curtis
-Rueden | source = {% include github content='org = imglib | repo =
-imglib2-tutorials' %} | released = March 2012 | latest version =
-December 2013 | website = [ImgLib2
-publication](http://bioinformatics.oxfordjournals.org/content/early/2012/09/07/bioinformatics.bts543.abstract)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-%Replace% ImgLibMenu %Replace%
+{% capture source %} {% include github org="imglib"
+repo="imglib2-tutorials" %} {% endcapture %} {% include sidebox-right
+name='Examples' software='ImgLib2' author='Stephan Preibisch'
+maintainer='Stephan Preibisch, Curtis Rueden' source=source
+released='March 2012' version='December 2013' website='[ImgLib2
+publication](http://bioinformatics.oxfordjournals.org/content/early/2012/09/07/bioinformatics.bts543.abstract)'
+%} {% include imglibmenu %}
 
 ## Jupyter notebook
 
@@ -51,9 +46,10 @@ be found in *ImageJ.app/jars/*:
   - ij (ImageJ 1.x core, used for display)
 
 Alternately, you can access the examples from the {% include github
-org='imglib' repo='imglib-tutorials' label='ImgLib-tutorials' %}. After
-cloning the source code, open the project in your favorite IDE. See
-[Developing ImgLib2](Developing_ImgLib2 "wikilink") for further details.
+org='imglib' repo='imglib-tutorials' label='ImgLib-tutorials Git
+repository' %}. After cloning the source code, open the project in your
+favorite IDE. See [Developing ImgLib2](Developing_ImgLib2 "wikilink")
+for further details.
 
 ## Example 1 - Opening, creating and displaying images
 
@@ -76,10 +72,8 @@ limited in dimensionality (2d-5d), in the type of data
 (**UnsignedByteType**, **UnsignedShortType**, **FloatType** and
 **ARGBType**) and maximal size of each 2d-plane (max. 46000x46000).
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example1a.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example1a.java' %}
 
 ### Example 1b - Opening an ImgLib2 image
 
@@ -115,10 +109,8 @@ the data as we will use **Iterators** and **RandomAccesses** to access
 the image content. It might be, however, important if you work on two
 **Img** at the same time using **Iterators**, see Example2.
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example1b.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example1b.java' %}
 
 ### Example 1c - Creating a new ImgLib2 image
 
@@ -132,10 +124,8 @@ another one using the same **Type** and **ImgFactory**, even if it has a
 different size. Note that the call **img.firstElement()** returns the
 first pixel of any **Iterable**, e.g. an **Img**.
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example1c.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example1c.java' %}
 
 ### Example 1d - Displaying images partly using Views
 
@@ -159,10 +149,8 @@ also display an **Img**.
 degree rotated version of the view. Note that only the original image in
 kept in memory, both Views are completely virtual.*
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example1d.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example1d.java' %}
 
 ## Example 2 - How to use Cursor, RandomAccess and Type
 
@@ -247,10 +235,8 @@ supported by **Type** will be available. Note that the method returns a
 method it will also return an **Img<FloatType>** as we provide it with
 one.
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example2a.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example2a.java' %}
 
 ### Example 2b - Duplicating an Img using a different ImgFactory
 
@@ -279,10 +265,8 @@ the *setPosition()* call of the **RandomAccess** directly takes the
 instead of a normal **Cursor** because we need the location of the
 **Cursor** at every pixel.
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example2b.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example2b.java' %}
 
 ### Example 2c - Generic copying of image data
 
@@ -308,10 +292,8 @@ confined. This, however does not necessarily mean that it can only be an
 something that is iterable and not infinite, which for example also
 applies to sparse data (e.g. a list of locations and their values).
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example2c.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example2c.java' %}
 
 ## Example 3 - Writing generic algorithms
 
@@ -382,20 +364,16 @@ as **Cursor** can return their location.
 
 #### Example 3a - Variation 1
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example3a1.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example3a1.java' %}
 
 #### Example 3a - Variation 2
 
 Note that this example works just the same way if the input is not an
 **Img**, but for example just a standard Java **ArrayList**.
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example3a2.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example3a2.java' %}
 
 #### Example 3a - Variation 3
 
@@ -408,10 +386,8 @@ from that, the algorithm looks quite similar. Note that we do not use a
 when a new maximal or minimal value has been found while iterating the
 data.
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example3a3.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example3a3.java' %}
 
 ### Example 3b - Computing average
 
@@ -427,10 +403,8 @@ use the **RealSum** class that offers correct addition of even very
 large amounts of pixels. As this implementation is only available for
 double values, we restrict the method here to **RealType**.
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example3b.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example3b.java' %}
 
 ## Example 4 - Specialized iterables
 
@@ -481,10 +455,8 @@ four-dimensional case. The image series in (c) represents a movie of a
 three-dimensional rendering. The images of (b) and (c) were rendered
 using the ImageJ 3d Viewer.*
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example4a.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example4a.java' %}
 
 ### Example 4b - Finding and displaying local minima
 
@@ -535,10 +507,8 @@ detection of local minima after the Gaussian blurring. (a) depicts the
 input image, (b) the blurred version (sigma=1) and (c) all local mimina
 drawn as circles with radius 1.*
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example4b.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example4b.java' %}
 
 ## Example 5 - Out of bounds
 
@@ -568,10 +538,8 @@ effect of various OutOfBoundsStrategies. (a) shows out of bounds with a
 constant value, (b) shows a mirroring strategy, (c) shows the periodic
 strategy, and (d) shows a strategy that uses random values.*
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example5.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example5.java' %}
 
 ## Example 6 - Basic built-in algorithms
 
@@ -614,10 +582,8 @@ that it could be applied in-place as well when calling
 *Gauss.inFloatInPlace( ... )*. The Gaussian convolution uses by default
 the **OutOfBoundsMirrorStrategy**.
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example6a1.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example6a1.java' %}
 
 #### Example 6a - Gaussian convolution (variation 2 - different OutOfBoundsStrategy)
 
@@ -628,10 +594,8 @@ in-place here. However, we still need to provide an **ImgFactory** as
 the Gaussian convolution needs to create temporary image(s) - except for
 the one-dimensional case.
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example6a2.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example6a2.java' %}
 
 #### Example 6a - Gaussian convolution (variation 3 - only part of an Interval)
 
@@ -648,10 +612,8 @@ you would have to create an **RandomAccessibleInterval** on the **Img**,
 extend it by an **OutOfBoundsStrategy** and give this as input to the
 Gaussian convolution.
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example6a3.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example6a3.java' %}
 
 #### Example 6a - Gaussian convolution (variation 4 - with a lower dimensionality)
 
@@ -667,10 +629,8 @@ wide stripes using a sigma of 16. ''Note that whenever you request an
 contains all dimensions <span style="color:#FF0000">but</span> this
 one.''
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example6a4.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example6a4.java' %}
 
 ### Example 6b - Convolution in Fourier space
 
@@ -695,10 +655,8 @@ kernel.*
 <span style="color:#FF0000">*Important: This source code is only
 GPLv2\!*</span>
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example6b.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example6b.java' %}
 
 ### Example 6c - Complex numbers and Fourier transforms
 
@@ -749,10 +707,8 @@ FFT of the inverse kernel.*
 <span style="color:#FF0000">*Important: This source code is only
 GPLv2\!*</span>
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example6c.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example6c.java' %}
 
 ## Example 7 - Interpolation
 
@@ -782,10 +738,8 @@ interpolation produces reasonable results and computes quite fast. The
 Lanczos interpolation shows visually most pleasing results but also
 introduces slight artifacts in the background.*
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example7.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example7.java' %}
 
 ## Example 8 - Working with sparse data
 
@@ -832,10 +786,8 @@ created in example 8a. The right hand side shows the result of a
 Gaussian convolution, run directly on the virtual
 RandomAccessibleInterval.*
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example8a.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example8a.java' %}
 
 ### Example 8b - Randomly sample an existing image and display it
 
@@ -850,10 +802,8 @@ using nearest neighbor interpolation, the lower panel uses an
 interpolated, distance-weighted value of the k nearest neighbors
 relative to each sampled location (i.e. each pixel).*
 
-{% capture includecontent %}
-org=imglib|repo=imglib-tutorials|source=Example8b.java {% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='imglib' repo='imglib-tutorials'
+source='Example8b.java' %}
 
 [Category:ImgLib](Category:ImgLib "wikilink")
 [Category:Tutorials](Category:Tutorials "wikilink")

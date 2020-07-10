@@ -8,18 +8,17 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | name = Ridge (Line)
-Detection Plugin | author = {% include person content='Twagner' %}, {%
-include person content='Hinerm' %} | maintainer = {% include person
-content='Twagner' %}, | filename = Ridge\_Detect.jar
-[\[1](https://github.com/thorstenwagner/ij-ridgedetection/releases/latest)\]
-| source = Github
-[\[2](https://github.com/thorstenwagner/ij-ridgedetection)\] | latest
-version = v1.4.0 (20 Aug 2017) | status = maintaining
+{% capture author %} {% include person content="Twagner" %}, {% include
+person content="Hinerm" %} {% endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture maintainer %} {% include person content="Twagner" %}, {%
+endcapture %} {% include sidebox-right software='Fiji' name='Ridge
+(Line) Detection Plugin' author=author maintainer=maintainer
+filename='Ridge\_Detect.jar
+[\[1](https://github.com/thorstenwagner/ij-ridgedetection/releases/latest)\]'
+source='Github
+[\[2](https://github.com/thorstenwagner/ij-ridgedetection)\]'
+version='v1.4.0 (20 Aug 2017)' status='maintaining' %}
 
 ## Purpose
 

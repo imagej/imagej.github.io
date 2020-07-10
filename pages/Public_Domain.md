@@ -8,41 +8,28 @@ categories:
 description: test description
 ---
 
-\_\_NOTOC\_\_ {% capture includecontent %} For a summary of
+\_\_NOTOC\_\_{% include sidebox-right content='For a summary of
 [SciJava](SciJava "wikilink") licensing, see the
-[Licensing](Licensing "wikilink") page. {% endcapture %}
-
-{% include info-box content=includecontent %}
-
-%Replace% LicensesMenu %Replace% Software in the **public domain**
-disclaims all copyright interest, being freely available to everyone for
-any purpose, with no attribution or acknowledgement required. There are
-several ways (summarized below) to dedicate software to the public
-domain—although be warned that some jurisdictions do not recognize the
-legal concept of "public domain" at all.
+[Licensing](Licensing "wikilink") page.' %} {% include menu-licenses
+%}Software in the **public domain** disclaims all copyright interest,
+being freely available to everyone for any purpose, with no attribution
+or acknowledgement required. There are several ways (summarized below)
+to dedicate software to the public domain—although be warned that some
+jurisdictions do not recognize the legal concept of "public domain" at
+all.
 
 See the [Wikipedia article on public domain
 software](wikipedia:Public_domain_software "wikilink") for more
 information.
 
-{% capture includecontent %} name = Unlicense | shortname = Unlicense |
-description = The Unlicense is a template for dedicating your software
-to the public domain. | url = http://unlicense.org/ | choosealicense =
-unlicense
-
-{% endcapture %}
-
-{% include license content=includecontent %}
-
-{% capture includecontent %} name = Creative Commons Zero 1.0 Universal
-| shortname = CC0 | description = CC0 enables scientists, educators,
-artists and other creators and owners of copyright- or
-database-protected content to waive those interests. | url =
-http://creativecommons.org/publicdomain/zero/1.0/legalcode |
-choosealicense = cc0 | wikipedia =
-Creative\_Commons\_license\#Zero\_.2F\_Public\_domain | osswatch =
-cclicensing
-
-{% endcapture %}
-
-{% include license content=includecontent %}
+{% include license name='Unlicense' shortname='Unlicense'
+description='The Unlicense is a template for dedicating your software to
+the public domain.' url='http://unlicense.org/'
+choosealicense='unlicense' %} {% include license name='Creative Commons
+Zero 1.0 Universal' shortname='CC0' description='CC0 enables scientists,
+educators, artists and other creators and owners of copyright- or
+database-protected content to waive those interests.'
+url='http://creativecommons.org/publicdomain/zero/1.0/legalcode'
+choosealicense='cc0'
+wikipedia='Creative\_Commons\_license\#Zero\_.2F\_Public\_domain'
+osswatch='cclicensing' %}

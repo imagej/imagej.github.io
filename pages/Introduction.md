@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-%Replace% Learn %Replace% == What is ImageJ? ==
+{% include learn %}== What is ImageJ? ==
 <a href="ImageJ"><img src="/images/pages/Imagej2-icon.png" height="48px"/></a>
 [ImageJ](ImageJ "wikilink") is an [open source](open_source "wikilink")
 [image processing](techniques "wikilink") program for multidimensional

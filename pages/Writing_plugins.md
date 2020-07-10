@@ -8,25 +8,23 @@ categories: Tutorials,ImageJ2,Development
 description: test description
 ---
 
-{% capture includecontent %} This guide provides a technical overview of
-[plugins](plugins "wikilink"), including how to **create new
-plugins**.  
-\* If you are interested in developing an **existing** plugin instead,
+{% include sidebox-right content='This guide provides a technical
+overview of [plugins](plugins "wikilink"), including how to """create
+new plugins""".  
+\* If you are interested in developing an """existing""" plugin instead,
 see [Contributing to a
 plugin](How_to_contribute_to_an_existing_plugin_or_library "wikilink").  
-\* If you have completed a plugin that you would like to **share with
-the community**, see [Distributing your
+\* If you have completed a plugin that you would like to """share with
+the community""", see [Distributing your
 plugins](Distribution "wikilink").
 
   - For instructions on plugin development for [ImageJ
     1.x](ImageJ_1.x "wikilink"), see [Developing Plugins for ImageJ
     1.x](Developing_Plugins_for_ImageJ_1.x "wikilink").
 
-{% endcapture %}
+' %}
 
-{% include info-box content=includecontent %}
-
-{% include develop-menu content='tutorials' %} %Replace% TOC %Replace%
+{% include develop-menu content='tutorials' %} {% include toc %}
 
 ## Requirements
 
@@ -40,9 +38,9 @@ familiarity with these topics and tools, especially:
 | [Git](Git "wikilink")                                    | [Maven](Maven "wikilink")                                    |
 
 Additionally, at a minimum, you should clone the {% include github
-org='imagej' repo='tutorials' label='imagej/tutorials' %}. This will
-give you a local copy of the tutorials discussed in this guide, as well
-as templates for use in your own development.
+org='imagej' repo='tutorials' label='imagej/tutorials repository' %}.
+This will give you a local copy of the tutorials discussed in this
+guide, as well as templates for use in your own development.
 
 For the complete "developer experience", you can go through the [GitHub
 Bootcamp](https://help.github.com/categories/bootcamp/). At the least,
@@ -94,23 +92,16 @@ public class MyService implements Service { }
 public class SpecialService implements Service { }
 ```
 
-{% capture includecontent %} Which of these plugins would we expect back
-if asking the [Context](Writing_plugins#The_Context "wikilink") for
-plugins of type `Service` plugin? | \> It would give back both the
-`MyService` and `SpecialService` plugins, since `SpecialService` is a
-subclass of `Service`.
+{% include expandingsidebox-right content='Which of these plugins would
+we expect back if asking the
+[Context](Writing_plugins#The_Context "wikilink") for plugins of type
+`Service` plugin? | \> It would give back both the `MyService` and
+`SpecialService` plugins, since `SpecialService` is a subclass of
+`Service`. ' %}
 
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
-
-{% capture includecontent %} What if we asked for plugins of type
-`SpecialService`? | \> It would just return the `SpecialService` plugin,
-since `MyService` is **not** a `SpecialService`.
-
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
+{% include expandingsidebox-right content='What if we asked for plugins
+of type `SpecialService`? | \> It would just return the `SpecialService`
+plugin, since `MyService` is """not""" a `SpecialService`. ' %}
 
 ### Plugin priority
 
@@ -136,15 +127,12 @@ public class MyService implements Service { }
 public class SpecialService implements Service { }
 ```
 
-{% capture includecontent %} Which plugin would be returned first if we
-asked the Context for a `Service` plugin? | \> The `SpecialService`
-plugin would come back first. If we look at the `Priority` class we see
-that HIGH\_PRIORITY simply [resolves
+{% include expandingsidebox-right content='Which plugin would be
+returned first if we asked the Context for a `Service` plugin? | \> The
+`SpecialService` plugin would come back first. If we look at the
+`Priority` class we see that HIGH\_PRIORITY simply [resolves
 to 100](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/Priority.java#L54-L55).
-
-{% endcapture %}
-
-{% include expanding-box content=includecontent %}
+' %}
 
 We can also use *relative priorities* when referring to particular
 priority constants. This is a nice way to give the best chance that
@@ -169,11 +157,12 @@ contextual state.
 
 In ImageJ, a `Context` is automatically created when {% include github
 org='imagej' repo='imagej' tag='imagej-2.0.0-rc-39'
-source='net/imagej/ImageJ.java' label='the' %}, so plugin developers do
-not need to create their own. In fact, creating your own `Context`
-typically causes problems, as it will be a different container than
-ImageJ is using. Instead, plugin instances within a common `Context` are
-provided automatically by the framework—you just have to ask.
+source='net/imagej/ImageJ.java' label='the application starts up' %}, so
+plugin developers do not need to create their own. In fact, creating
+your own `Context` typically causes problems, as it will be a different
+container than ImageJ is using. Instead, plugin instances within a
+common `Context` are provided automatically by the framework—you just
+have to ask.
 
 Typically, ImageJ plugin developers will be writing
 [Service](#Services "wikilink") and/or [Command](#Commands "wikilink")
@@ -187,8 +176,8 @@ container and managed by the plugin framework automatically). Instead,
 you should ask your `Context` for an instance by adding a field of the
 desired type and annotating it with the {% include github org='scijava'
 repo='scijava-common' tag='scijava-common-2.47.0'
-source='org/scijava/plugin/Parameter.java' label='@Parameter' %}. For
-example:
+source='org/scijava/plugin/Parameter.java' label='@Parameter annotation'
+%}. For example:
 
 ``` java
 @Plugin
@@ -271,9 +260,9 @@ source='org/scijava/plugin/PluginService.java' label='PluginService' %}
 sees ubiquitous use in retrieving and working with plugin instances. For
 such reuse, {% include github org='scijava' repo='scijava-common'
 tag='scijava-common-2.47.0' source='org/scijava/plugin/Parameter.java'
-label='@Parameter' %} can be used to declare inter-service requirements.
-During `Context` startup, these relationships will be resolved
-automatically.
+label='@Parameter annotation' %} can be used to declare inter-service
+requirements. During `Context` startup, these relationships will be
+resolved automatically.
 
 ### Commands
 
@@ -311,7 +300,7 @@ source='io/scif/services/DatasetIOService.java' label='DatasetIOService'
 include github org='imagej' repo='imagej-plugins-commands'
 tag='imagej-plugins-commands-0.6.0'
 source='net/imagej/plugins/commands/io/OpenDataset.java'
-label='OpenDataset' %}—which itself simply calls into the
+label='OpenDataset command' %}—which itself simply calls into the
 `DatasetIOService`.
 
 ### Other plugins
@@ -341,8 +330,8 @@ A brief list of some of the more useful plugin types to extend:
   - {% include github org='scijava' repo='scijava-common'
     tag='scijava-common-2.47.0'
     source='org/scijava/module/process/PreprocessorPlugin.java'
-    label='Input' %} give you control over the population of
-    `@Parameters`.
+    label='Input Preprocessors' %} give you control over the population
+    of `@Parameters`.
   - {% include github org='scijava' repo='scijava-common'
     tag='scijava-common-2.47.0'
     source='org/scijava/display/Display.java' label='Displays' %}
@@ -355,7 +344,7 @@ You're part of the community now\!
 ## Example projects
 
 Remember the {% include github org='imagej' repo='tutorials'
-label='imagej/tutorials' %} we [said you should
+label='imagej/tutorials repository' %} we [said you should
 clone](#Requirements "wikilink")? Now's the time to put it to use\!
 
 Because the ImageJ API is designed to be maximally flexible and

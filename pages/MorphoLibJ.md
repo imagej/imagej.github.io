@@ -8,24 +8,23 @@ categories: Plugins,Analysis,Filtering,Segmentation,Mathematical_morphology,Cita
 description: test description
 ---
 
-{% capture includecontent %} name = MorphoLibJ | software = IJPB-plugins
-| update site = IJPB-plugins | author = [David
-Legland](https://github.com/dlegland), {% include person
-content='Iarganda' %} | maintainer = [David
-Legland](https://github.com/dlegland), {% include person
-content='Iarganda' %} | source = {% include github org='ijpb'
-repo='MorphoLibJ' %} | released = July 3<sup>rd</sup>, 2014 | latest
-version = July 23<sup>rd</sup>, 2019
-([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) | status = stable, active |
-category = [Analysis](:Category:Analysis "wikilink"),
+{% capture author %} [David Legland](https://github.com/dlegland), {%
+include person content="Iarganda" %} {% endcapture %}
+
+{% capture maintainer %} [David Legland](https://github.com/dlegland),
+{% include person content="Iarganda" %} {% endcapture %}
+
+{% capture source %} {% include github org="ijpb" repo="MorphoLibJ" %}
+{% endcapture %} {% include sidebox-right name='MorphoLibJ'
+software='IJPB-plugins' site='IJPB-plugins' author=author
+maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014'
+version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink")
+v1.4.1)' status='stable, active'
+category='[Analysis](:Category:Analysis "wikilink"),
 [Filtering](:Category:Filtering "wikilink"),
 [Segmentation](:Category:Segmentation "wikilink"), [Mathematical
-morphology](:Category:Mathematical_morphology "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %} MorphoLibJ is a collection
-of [mathematical
+morphology](:Category:Mathematical_morphology "wikilink")' %}MorphoLibJ
+is a collection of [mathematical
 morphology](wikipedia:Mathematical_morphology "wikilink") methods and
 **plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital
 Imaging
@@ -79,15 +78,15 @@ structures.
 
 The original idea was to define a methodology to describe shapes by
 using another shape as test probe (Serra, 1982\[1\] {% capture
-includecontent %} An overview of morphological filtering | author =
-Serra, Jean and Vincent, Luc | journal = Circuits, Systems and Signal
-Processing | volume = 11 | number = 1 | pages= 47-108 | year = 1992 |
-publisher = Springer | doi = 10.1007/BF01189221
+includecontent %} journal | title = An overview of morphological
+filtering | author = Serra, Jean and Vincent, Luc | journal = Circuits,
+Systems and Signal Processing | volume = 11 | number = 1 | pages= 47-108
+| year = 1992 | publisher = Springer | doi = 10.1007/BF01189221
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>). The most
-basic morphological filters are the **morphological dilation** and the
+{% include cite content=includecontent %} </ref>). The most basic
+morphological filters are the **morphological dilation** and the
 **morphological erosion**. The principle of morphological dilation is to
 test for each point of the plane, if the structuring element centered on
 this point **intersects** the structure of interest (see figure below).
@@ -194,38 +193,39 @@ An alternative is to apply directional filtering. The principle is to
 consider an oriented structuring element such as a line segment of a
 given length, and to perform morphological operations for various
 orientations of the structuring element (Soille *et al.*,
-2001<ref name="Soille2001"> {% capture includecontent %} Directional
-morphological filtering | author = Soille, Pierre and Talbot, Hugues |
-publisher = IEEE | year = 2001 | volume = 23 | number = 11 | pages =
-1313-1329 | journal =IEEE Transactions on Pattern Analysis and Machine
-Intelligence | doi = 10.1109/34.969120
+2001<ref name="Soille2001"> {% capture includecontent %} journal | title
+= Directional morphological filtering | author = Soille, Pierre and
+Talbot, Hugues | publisher = IEEE | year = 2001 | volume = 23 | number =
+11 | pages = 1313-1329 | journal =IEEE Transactions on Pattern Analysis
+and Machine Intelligence | doi = 10.1109/34.969120
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>; Heneghan *et
-al.*, 2002<ref name="Heneghan2002"> {% capture includecontent %}
-Characterization of changes in blood vessel width and tortuosity in
-retinopathy of prematurity using image analysis | author = Conor
+{% include cite content=includecontent %} </ref>; Heneghan *et al.*,
+2002<ref name="Heneghan2002"> {% capture includecontent %} journal |
+title = Characterization of changes in blood vessel width and tortuosity
+in retinopathy of prematurity using image analysis | author = Conor
 Heneghan and John Flynn and Michael O Keefe and Mark Cahill | journal =
 Medical Image Analysis | volume = 6 | number = 4 | pages= 407-429 | year
 = 2002 | publisher = Elsevier | doi = 10.1016/S1361-8415(02)00058-0
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>; Hendriks *et
-al.*, 2003<ref name="Hendriks2003"> {% capture includecontent %}
-Discrete Morphology with Line Structuring Elements | author = Hendriks,
-CL Luengo and van Vliet, Lucas J | bookInternational Conference on
-Computer Analysis of Images and Patterns | pages = 722-729 | year = 2003
-| organization = Springer | doi = 10.1007/978-3-540-45179-2\_88
+{% include cite content=includecontent %} </ref>; Hendriks *et al.*,
+2003<ref name="Hendriks2003"> {% capture includecontent %} conference |
+title = Discrete Morphology with Line Structuring Elements | author =
+Hendriks, CL Luengo and van Vliet, Lucas J | booktitle = International
+Conference on Computer Analysis of Images and Patterns | pages = 722-729
+| year = 2003 | organization = Springer | doi =
+10.1007/978-3-540-45179-2\_88
 
 {% endcapture %}
 
-{% include cite-conference content=includecontent %} </ref>). For
-example, applying a median filter or a morphological opening with
-horizontal direction results in the enhancement of horizontal parts of
-bright structures. Similarly, using a vertical structuring element
-results in the enhancement of the vertical portions of the structures.
+{% include cite content=includecontent %} </ref>). For example, applying
+a median filter or a morphological opening with horizontal direction
+results in the enhancement of horizontal parts of bright structures.
+Similarly, using a vertical structuring element results in the
+enhancement of the vertical portions of the structures.
 
 ![Principle of directional filtering of a thin structure. (a) and (b):
 result of median filter using an horizontal and a vertical linear
@@ -353,23 +353,22 @@ not depend on image values located at a sufficient distance.
 Connected components operators are more general as they propagate
 information within the image based on connectivity between pixels or
 voxels. More details can be found in the review of Breen *et al.*
-(1996)<ref name="Breen1996"> {% capture includecontent %} Attribute
-Opening, Thinnings, and Granulometries | author = Edmond J. Breen and
-Ronald Jones | journal = Computer Vision and Image Understanding | year
-= 1996 | month = Nov. | number = 3 | pages = 377--389 | volume = 64 |
-doi = 10.1006/cviu.1996.0066 | url =
+(1996)<ref name="Breen1996"> {% capture includecontent %} conference |
+title = Attribute Opening, Thinnings, and Granulometries | author =
+Edmond J. Breen and Ronald Jones | journal = Computer Vision and Image
+Understanding | year = 1996 | month = Nov. | number = 3 | pages =
+377--389 | volume = 64 | doi = 10.1006/cviu.1996.0066 | url =
 http://www.sciencedirect.com/science/article/pii/S1077314296900661 {%
 endcapture %}
 
-{% include cite-conference content=includecontent %} </ref>. Connected
-components operators encompass powerful operators, such as
-**morphological reconstruction** that allows to reconstruct a marker
-image by constraining it to a mask. An extension of morphological
-reconstruction is the detection of **extended minima and maxima**, that
-can be useful as marker detection for segmentation. Finally, **attribute
-opening and filtering** algorithms can filter images based on size or
-range properties, with better preservation of edges than classical
-filtering.
+{% include cite content=includecontent %} </ref>. Connected components
+operators encompass powerful operators, such as **morphological
+reconstruction** that allows to reconstruct a marker image by
+constraining it to a mask. An extension of morphological reconstruction
+is the detection of **extended minima and maxima**, that can be useful
+as marker detection for segmentation. Finally, **attribute opening and
+filtering** algorithms can filter images based on size or range
+properties, with better preservation of edges than classical filtering.
 
 ### Morphological reconstruction
 
@@ -579,31 +578,32 @@ implementations of the algorithm and plugins that make use of it:
     implementing the original watershed algorithm by Pierre Soille and
     Luc M. Vincent (1990)\<ref name="Soille1990\>
 
-{% capture includecontent %} Determining watersheds in digital pictures
-via flooding simulations | author = Soille, Pierre and Vincent, Luc M |
-bookProc. SPIE | volume = 1360 | pages = 240-250 | year = 1990 |
-organization = International Society for Optics and Photonics | doi =
-10.1117/12.24211 | url = http://dx.doi.org/10.1117/12.24211
+{% capture includecontent %} conference | title = Determining watersheds
+in digital pictures via flooding simulations | author = Soille, Pierre
+and Vincent, Luc M | booktitle = Proc. SPIE | volume = 1360 | pages =
+240-250 | year = 1990 | organization = International Society for Optics
+and Photonics | doi = 10.1117/12.24211 | url =
+http://dx.doi.org/10.1117/12.24211
 
 {% endcapture %}
 
-{% include cite-conference content=includecontent %} </ref> to segment
-2D/3D grayscale images.
+{% include cite content=includecontent %} </ref> to segment 2D/3D
+grayscale images.
 
   - [Marker-controlled
     Watershed](Marker-controlled_Watershed "wikilink"), a plugin to
     perform watershed in 2D/3D images by flooding from specific seed
     points or markers by Meyer and Beucher (1990)\<ref name="Meyer1990\>
 
-{% capture includecontent %} Morphological segmentation | author = F.
-Meyer and S. Beucher | journal = Journal of Visual Communication and
-Image Representation | volume = 1 | number = 1 | pages = 21-46 | year =
-1990 | doi = 10.1016/1047-3203(90)90014-M | url =
-http://www.sciencedirect.com/science/article/pii/104732039090014M
+{% capture includecontent %} journal | title = Morphological
+segmentation | author = F. Meyer and S. Beucher | journal = Journal of
+Visual Communication and Image Representation | volume = 1 | number = 1
+| pages = 21-46 | year = 1990 | doi = 10.1016/1047-3203(90)90014-M | url
+= http://www.sciencedirect.com/science/article/pii/104732039090014M
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>.
+{% include cite content=includecontent %} </ref>.
 
   - [Interactive Marker-controlled
     Watershed](Interactive_Marker-controlled_Watershed "wikilink"), a
@@ -654,15 +654,15 @@ of the mean curvature over the surface) and the Euler number. In 3D the
 Euler number equals the number of connected components minus the number
 of "handles" or "tunnels" through the structure, plus the number of
 bubbles within the particles (Serra, 1982\[2\] {% capture includecontent
-%} book3D Images of Materials Structures: processing and analysis |
-Image Processing | author = Joachim Ohser and Katja Schladitz |
-publisher = Wiley-VCH Verlag GmbH & Co. KGaA | year = 2009 | doi =
-10.1002/9783527628308.ch4 | url =
+%} conference | booktitle = 3D Images of Materials Structures:
+processing and analysis | title = Image Processing | author = Joachim
+Ohser and Katja Schladitz | publisher = Wiley-VCH Verlag GmbH & Co. KGaA
+| year = 2009 | doi = 10.1002/9783527628308.ch4 | url =
 http://dx.doi.org/10.1002/9783527628308.ch4
 
 {% endcapture %}
 
-{% include cite-conference content=includecontent %} </ref>).
+{% include cite content=includecontent %} </ref>).
 
 ##### Estimation from 2D or 3D images
 
@@ -679,17 +679,17 @@ and to count the number of intersections with the region(s) of interest
 to the perimeter (Serra, 1982\<ref name="Serra1982\></ref>; Legland *et
 al.*, 2007<ref name="Legland2007">
 
-{% capture includecontent %} Computation of Minkowski measures on 2D and
-3D binary images |author = Legland, David and Kiêu, Kiên and Devaux,
-Marie-Françoise |journal = Image Analysis and Stereology |year = 2007
-|month = June |number = 6 |pages = 83-92 |volume = 26 |doi =
-10.5566/ias.v26.p83-92 |url =
+{% capture includecontent %} conference |title = Computation of
+Minkowski measures on 2D and 3D binary images |author = Legland, David
+and Kiêu, Kiên and Devaux, Marie-Françoise |journal = Image Analysis and
+Stereology |year = 2007 |month = June |number = 6 |pages = 83-92 |volume
+= 26 |doi = 10.5566/ias.v26.p83-92 |url =
 http://www.ias-iss.org/ojs/IAS/article/view/811
 
 {% endcapture %}
 
-{% include cite-conference content=includecontent %} </ref>; Ohser *et
-al.*, 2009\<ref name="Osher2009\></ref>). By averaging over all possible
+{% include cite content=includecontent %} </ref>; Ohser *et al.*,
+2009\<ref name="Osher2009\></ref>). By averaging over all possible
 directions, the estimate is unbiased.
 
 Perimeter can be estimated using either two directions (horizontal and
@@ -697,26 +697,26 @@ vertical), or four directions (by adding the diagonals). Restricting the
 number of directions introduces an estimation bias, with known
 theoretical bounds (Moran, 1966<ref name="Moran1966">
 
-{% capture includecontent %} Measuring the length of a curve |author =
-Moran, PAP |journal = Biometrika |year = 1966 |volume = 53 |number = 3-4
-|pages = 359-364 |doi = 10.1093/biomet/53.3-4.359 |URL =
-http://biomet.oxfordjournals.org/content/53/3-4/359.abstract
+{% capture includecontent %} conference |title = Measuring the length of
+a curve |author = Moran, PAP |journal = Biometrika |year = 1966 |volume
+= 53 |number = 3-4 |pages = 359-364 |doi = 10.1093/biomet/53.3-4.359
+|URL = http://biomet.oxfordjournals.org/content/53/3-4/359.abstract
 
 {% endcapture %}
 
-{% include cite-conference content=includecontent %} </ref>; Legland *et
-al.*, 2007\[3\]), that is usually better than boundary pixel count
-(Lehmann *et al.*, 2012<ref name="Lehmann2012">
+{% include cite content=includecontent %} </ref>; Legland *et al.*,
+2007\[3\]), that is usually better than boundary pixel count (Lehmann
+*et al.*, 2012<ref name="Lehmann2012">
 
-{% capture includecontent %} Efficient N-Dimensional surface estimation
-using [Crofton formula](wikipedia:Crofton_formula "wikilink") and
-run-length encoding |author = Lehmann, Gaetan and Legland, David
-|journal = Insight Journal |year = 2012 |pages = 1-11 |url =
-http://hdl.handle.net/10380/3342
+{% capture includecontent %} journal |title = Efficient N-Dimensional
+surface estimation using [Crofton
+formula](wikipedia:Crofton_formula "wikilink") and run-length encoding
+|author = Lehmann, Gaetan and Legland, David |journal = Insight Journal
+|year = 2012 |pages = 1-11 |url = http://hdl.handle.net/10380/3342
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>).
+{% include cite content=includecontent %} </ref>).
 
 The **estimation of surface area** follows the same principle. The
 number of directions is typically chosen equal to 3 (the three main axes
@@ -790,15 +790,15 @@ It corresponds of the largest geodesic distance between two points
 within a region, the geodesic distance being the length of the shortest
 path joining the two points while staying inside the region (Lantuejoul
 *et al.*, 1981<ref name="Lantuejoul1981"> {% capture includecontent %}
-title = On the use of geodesic metric in image analysis | author =
-Lantuejoul, C. and Beucher, S. | journal = Journal of Microscopy | year
-= 1981 | month = Jan. | number = 1, | pages = 39-40 | volume = 121 | doi
-= 10.1111/j.1365-2818.1981.tb01197.x | url =
+conference | title = On the use of geodesic metric in image analysis |
+author = Lantuejoul, C. and Beucher, S. | journal = Journal of
+Microscopy | year = 1981 | month = Jan. | number = 1, | pages = 39-40 |
+volume = 121 | doi = 10.1111/j.1365-2818.1981.tb01197.x | url =
 http://dx.doi.org/10.1111/j.1365-2818.1981.tb01197.x
 
 {% endcapture %}
 
-{% include cite-conference content=includecontent %} </ref>).
+{% include cite content=includecontent %} </ref>).
 
 #### Plugins
 
@@ -854,17 +854,17 @@ following information:
 \[\[Image:Longest-geodesic-path-DRIVE.png|thumb|300px|right|Computation
 of the geodesic diameter on a segmented image from the DRIVE database
 (Staal *et al*., 2004<ref name="Staal2004"> {% capture includecontent %}
-title = Ridge based vessel segmentation in color images of the retina |
-author = J.J. Staal and M.D. Abramoff and M. Niemeijer and M.A.
+journal |title = Ridge based vessel segmentation in color images of the
+retina | author = J.J. Staal and M.D. Abramoff and M. Niemeijer and M.A.
 Viergever and B. van Ginneken | journal = IEEE Transactions on Medical
 Imaging | year = 2004 | pages = 501-509 | volume = 23 | doi =
 10.1109/TMI.2004.825627
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>). Each
-connected component was associated to a label, then the longest geodesic
-path within each connected component was computed and displayed as red
+{% include cite content=includecontent %} </ref>). Each connected
+component was associated to a label, then the longest geodesic path
+within each connected component was computed and displayed as red
 overlay.\]\]
 
 ##### Geodesic diameter
@@ -929,19 +929,19 @@ image. The results are displayed as well in an ImageJ *ResultsTable*.
 Given two label images, there are different measures that allow us to
 evaluate the overlap agreement (or error) between the labels. Following
 Tustison & Gee (2009)\<ref name="Tustison2009\> {% capture
-includecontent %} Introducing Dice, Jaccard, and other label overlap
-measures to ITK | author = Tustison, NJ and Gee, JC | journal = The
-Insight Journal | pages = 1-4 | issue = July-December | year = 2009 |
-doi = 10.1007/BF01189221
+includecontent %} journal | title = Introducing Dice, Jaccard, and other
+label overlap measures to ITK | author = Tustison, NJ and Gee, JC |
+journal = The Insight Journal | pages = 1-4 | issue = July-December |
+year = 2009 | doi = 10.1007/BF01189221
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>, and given a
-source image \(S\) and a target image \(T\), this plugin (under {%
-include bc content='Plugins | MorphoLibJ | Analyze | Label Overlap
-Measures'%}) provides the following overlap measurements in two
-different result tables (one with the total values for all labels and
-one with values for individual labels):
+{% include cite content=includecontent %} </ref>, and given a source
+image \(S\) and a target image \(T\), this plugin (under {% include bc
+content='Plugins | MorphoLibJ | Analyze | Label Overlap Measures'%})
+provides the following overlap measurements in two different result
+tables (one with the total values for all labels and one with values for
+individual labels):
 
   - Target Overlap for each individual labeled region \(r\):
 
@@ -1003,16 +1003,16 @@ The region adjacency graph plugin gives access to the neighborhood
 relationship between adjacent regions. This can be particularly
 informative for exploring collections of cells within cellular tissues
 (Florindo *et al.*, 2016<ref name="Florindo2016"> {% capture
-includecontent %} title = Identifying plant species using architectural
-features in leaf microscopy images | author = Joao Batista Florindo and
-Odemir Martinez Bruno and Davi Rodrigo Rossatto and Rosana Marta Kolb
-and Maria Cecilia Gomez and Gabriel Landini | journal = Botany | year =
-2016 | number = 1 | pages = 15-21 | volume = 94 | doi =
+includecontent %} conference | title = Identifying plant species using
+architectural features in leaf microscopy images | author = Joao Batista
+Florindo and Odemir Martinez Bruno and Davi Rodrigo Rossatto and Rosana
+Marta Kolb and Maria Cecilia Gomez and Gabriel Landini | journal =
+Botany | year = 2016 | number = 1 | pages = 15-21 | volume = 94 | doi =
 10.1139/cjb-2015-0075 | url = http://dx.doi.org/10.1139/cjb-2015-0075
 
 {% endcapture %}
 
-{% include cite-conference content=includecontent %} </ref>).
+{% include cite content=includecontent %} </ref>).
 
 ![Computation of the Region Adjacency Graph on a microscopy image of
 plant tissue. Left: original image. Middle: result of watershed
@@ -1470,10 +1470,7 @@ Please note that [MorphoLibJ](MorphoLibJ "wikilink") is based on a
 publication. If you use it successfully for your research please be so
 kind to cite our work:
 
-  - 
-{% capture includecontent %} MorphoLibJ {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='MorphoLibJ' %}
 
 [MorphoLibJ](MorphoLibJ "wikilink")'s code repository has its own
 [DOI](https://zenodo.org/badge/latestdoi/21349/ijpb/MorphoLibJ).

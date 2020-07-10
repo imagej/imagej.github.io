@@ -8,19 +8,14 @@ categories: Plugins,Deconvolution
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Parallel
-Spectral Deconvolution 2D and 3D | author = Piotr Wendykier | filename =
-[parallel\_spectral\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-bin.zip)
-| source =
-[parallel\_spectral\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-src.zip)
-| released = 27 September 2007 | latest version = 11 April 2009 |
-category = [Deconvolution](:Category:Deconvolution "wikilink") | website
-=
-[1](http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution)
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='Parallel Spectral
+Deconvolution 2D and 3D' author='Piotr Wendykier'
+filename='[parallel\_spectral\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-bin.zip)'
+source='[parallel\_spectral\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-src.zip)'
+released='27 September 2007' version='11 April 2009'
+category='[Deconvolution](:Category:Deconvolution "wikilink")'
+website='[1](http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution)'
+%}
 
 ## Purpose
 
@@ -38,7 +33,7 @@ The plugin code is based on the following book:
 ` | first3 = J.G.`  
 ` | last3 = O'Leary`  
 ` | first2 = D.P.`  
-` | Deblurring Images: Matrices, Spectra, and Filtering`  
+` | title = Deblurring Images: Matrices, Spectra, and Filtering`  
 ` | editor = Society for Industrial and Applied Mathematic`  
 ` | date = 2006`  
 ` | ISBN = 0898716187`

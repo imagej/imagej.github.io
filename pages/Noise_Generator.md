@@ -8,20 +8,21 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = Noise Generator PlugIn | software =
-Fiji | author = {% include person content='Acsenrafilho' %}
-([1](mailto:acsenrafilho@gmail.com)) | maintainer = {% include person
-content='Acsenrafilho' %} | source = {% include github content='org =
-CSIM-Toolkits | repo = ImageJ/tree/master/plugins/NoiseGenerator | label
-= GitHub CSIM-ImageJ Noise Generator repository' %} | released =
-February 08<sup>th</sup>, 2015 | latest version = February
-08<sup>th</sup>, 2015 | status = experimental, active | category =
-[Plugins](:Category:Plugins "wikilink"),
-[Image](:Category:Noise "wikilink")
+{% capture author %} {% include person content="Acsenrafilho" %}
+([1](mailto:acsenrafilho@gmail.com)) {% endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Acsenrafilho" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="CSIM-Toolkits"
+repo="ImageJ/tree/master/plugins/NoiseGenerator" label="GitHub
+CSIM-ImageJ Noise Generator repository" %} {% endcapture %} {% include
+sidebox-right name='Noise Generator PlugIn' software='Fiji'
+author=author maintainer=maintainer source=source released='February
+08<sup>th</sup>, 2015' version='February 08<sup>th</sup>, 2015'
+status='experimental, active'
+category='[Plugins](:Category:Plugins "wikilink"),
+[Image](:Category:Noise "wikilink")' %}
 
 ## Noise Generator
 

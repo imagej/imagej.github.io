@@ -544,7 +544,7 @@ represented by a node which the user can connect with lines to define a
 workflow.
 
 ImageFlow has its own {% include github org='Dahie' repo='imageflow'
-label='Git' %} ([our
+label='Git repository' %} ([our
 mirror](https://fiji.sc/cgi-bin/gitweb.cgi?p=imageflow.git;a=summary)).
 
 The following issues need to be resolved:

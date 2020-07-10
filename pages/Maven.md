@@ -8,25 +8,20 @@ categories: Development,Maven
 description: test description
 ---
 
-{% capture includecontent %} If Maven is completely new to you, read:
+{% include sidebox-right content='If Maven is completely new to you,
+read:
 
   - [What is Maven?](https://maven.apache.org/what-is-maven.html)
   - [Maven in 5
-    Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
+    Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)'
+    %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-{% include develop-menu content='tools' %} {% capture includecontent %}
-logo=Maven-icon.png | size=51px | blurb=  
-**Apache Maven** is a [convention over
+{% include develop-menu content='tools' %}{% include minisidebox-right
+logo='Maven-icon.png' size='51px' blurb='  
+"""Apache Maven""" is a [convention over
 configuration](wikipedia:Convention_over_configuration "wikilink") build
-automation tool. {% endcapture %}
-
-{% include minibox content=includecontent %}
-[ImageJ](ImageJ "wikilink"), [Fiji](Fiji "wikilink") and other
-[SciJava](SciJava "wikilink") projects use
+automation tool.' %}[ImageJ](ImageJ "wikilink"), [Fiji](Fiji "wikilink")
+and other [SciJava](SciJava "wikilink") projects use
 [Maven](https://maven.apache.org/) for their project infrastructure.
 
 Maven artifacts are published to the [SciJava Maven
@@ -194,7 +189,7 @@ needs to be a common parent POM, a so-called *aggregator* or
 *multi-module* POM (only this POM needs to have the SciJava POM as
 parent, of course). {% include github org='imagej' repo='tutorials'
 tag='577286474be8399eb38d30d66cf0c35ee50bd929' path='pom.xml\#L47-L62'
-label='Here' %}. Basically, it is adding the
+label='Here is an example' %}. Basically, it is adding the
 <packaging>`pom`</packaging> entry at the top, as well as some
 subdirectory names to the <modules> section.
 
@@ -242,13 +237,10 @@ results, you can click the "Drill down" link to view more details of
 that specific GAV combination. You can also click an entry to get a
 formatted `dependency` block for direct copy-pasting into your POM.
 
-{% capture includecontent %} tip=If your dependencies are in Maven
-Central, you can use the
-[quickdeps](https://github.com/ingenieux/quickdeps) tool to quickly
-generate dependency blocks, by scanning your project's bytecode. {%
-endcapture %}
-
-{% include tip content=includecontent %}
+{% include tip tip='If your dependencies are in Maven Central, you can
+use the [quickdeps](https://github.com/ingenieux/quickdeps) tool to
+quickly generate dependency blocks, by scanning your project"s
+bytecode.' %}
 
 # Depending on libraries outside the core repositories
 

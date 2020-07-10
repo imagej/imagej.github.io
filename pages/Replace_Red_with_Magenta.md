@@ -8,16 +8,15 @@ categories: Tutorials,Plugins
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = Replace Red with
-Magenta | maintainer = {% include person content='Schindelin' %} |
-author = Johannes Schindelin | source = {% include github org='fiji'
-repo='Fiji\_Plugins' source='fiji/color/Convert\_Red\_To\_Magenta.java'
-%} | released = 27/06/2011 | latest version = 27/06/2011 | status = |
-category = [:Category:Plugins](:Category:Plugins "wikilink")
+{% capture maintainer %} {% include person content="Schindelin" %} {%
+endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture source %} {% include github org="fiji" repo="Fiji\_Plugins"
+source="fiji/color/Convert\_Red\_To\_Magenta.java" %} {% endcapture %}
+{% include sidebox-right software='ImageJ' name='Replace Red with
+Magenta' maintainer=maintainer author='Johannes Schindelin'
+source=source released='27/06/2011' version='27/06/2011' status=''
+category='[:Category:Plugins](:Category:Plugins "wikilink")' %}
 
 This plugin converts all occurrences of red in a red/green image with
 magenta, effectively replacing it with a magenta/green merge.

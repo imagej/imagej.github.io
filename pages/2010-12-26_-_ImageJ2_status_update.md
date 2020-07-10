@@ -31,11 +31,12 @@ browser.](ij2-gui-image-window.png
 #### Unit tests
 
 We have created {% include github org='imagej' repo='ij1-tests'
-label='extensive' %} for approximately 40 of ImageJ's core classes.
-These tests are useful for verifying that new versions of ImageJ still
-perform identically to previous versions. The tests are fully automated,
-and run whenever we make a change to the ImageJ codebase, via our
-[Hudson continuous integration system](http://jenkins.imagej.net/).
+label='extensive unit tests' %} for approximately 40 of ImageJ's core
+classes. These tests are useful for verifying that new versions of
+ImageJ still perform identically to previous versions. The tests are
+fully automated, and run whenever we make a change to the ImageJ
+codebase, via our [Hudson continuous integration
+system](http://jenkins.imagej.net/).
 
 #### ImageJ2 architecture
 
@@ -68,16 +69,16 @@ are rapidly becoming more powerful and have many advantages versus
 traditional desktop applications. We want to leverage such tools where
 appropriate, and are exploring ways to integrate such web-based software
 with the ImageJ client application. Currently we have two such plugins:
-{% include github org='imagej' repo='workflow-pipes' label='Work' %} and
-a [Deep Zoom plugin](Deep_Zoom "wikilink").
+{% include github org='imagej' repo='workflow-pipes' label='Work Flow
+Pipes' %} and a [Deep Zoom plugin](Deep_Zoom "wikilink").
 
 ### OpenCL-based image processing
 
 We spent some time exploring how to integrate GPU processing with Java,
 with the ultimate goal of enabling use of multi-core OpenCL programs
 from ImageJ. At the moment, we have created a {% include github
-org='uw-loci' repo='opencl-demo' label='web-services-based' %} that
-performs 3D iterative deconvolution.
+org='uw-loci' repo='opencl-demo' label='web-services-based OpenCL
+plugin' %} that performs 3D iterative deconvolution.
 
 [Category:News](Category:News "wikilink")
 [Category:ImageJ2](Category:ImageJ2 "wikilink")

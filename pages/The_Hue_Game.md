@@ -8,17 +8,13 @@ categories: Scripting
 description: test description
 ---
 
-{% capture includecontent %} software = ImageJ | name = The Hue Game |
-maintainer = Johannes Schindelin | author = Johannes Schindelin | source
-= [in
-GitWeb](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/The_Hue_Game.bsh;hb=refs/heads/master)
-| released = 16/04/2012 | latest version = 16/04/2012 | status = stable
-| category = [:Category:Scripting](:Category:Scripting "wikilink") |
-website = http://www.xrite.com/custom_page.aspx?PageID=77&Lang=en
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='ImageJ' name='The Hue Game'
+maintainer='Johannes Schindelin' author='Johannes Schindelin'
+source='[in
+GitWeb](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/The_Hue_Game.bsh;hb=refs/heads/master)'
+released='16/04/2012' version='16/04/2012' status='stable'
+category='[:Category:Scripting](:Category:Scripting "wikilink")'
+website='http://www.xrite.com/custom_page.aspx?PageID=77&Lang=en' %}
 
 ## The Hue Game
 

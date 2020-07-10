@@ -8,7 +8,7 @@ categories: Tutorials
 description: test description
 ---
 
-%Replace% ExtendingTrackMateTutorials %Replace%
+{% include extendingtrackmatetutorials %}
 
 ## Introduction.
 
@@ -349,6 +349,10 @@ view is *always* used, whatever you choose, so we could not mind, but
 eh).
 
 There is way to do that, just by tuning the SciJava annotation:
+
+{% include amsidebox-right text='To make a TrackMate module available in
+TrackMate, but not visible in the GUI menus, use the annotation
+parameter `visible = false`' %}
 
 So editing the header of our ViewFactory to make it look like:
 

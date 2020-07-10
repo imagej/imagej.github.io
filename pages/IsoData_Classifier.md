@@ -8,6 +8,7 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
+{% include component-stats content=':sc.fiji:IsoData\_Classifier' %}
 This plugin calculates a classification based on the histogram of the
 image by generalizing the [IsoData](IsoData "wikilink") algorithm to
 more than two classes.

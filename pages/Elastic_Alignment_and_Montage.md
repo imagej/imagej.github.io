@@ -8,22 +8,17 @@ categories: Plugins,Registration,TrakEM2,Citable
 description: test description
 ---
 
-{% capture includecontent %} name = Elastic Align and Montage | software
-= Fiji | author = {% include person content='Saalfeld' %}
-([1](mailto:saalfeld@mpi-cbg.de)) | maintainer = {% include person
-content='Saalfeld' %} | source =
-[2](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/plugin)
-| released = March 11<sup>th</sup>, 2011 | latest version = October
-22<sup>nd</sup>, 2011 | status = experimental, active | category =
-[Plugins](:Category:Plugins "wikilink"),
-[Registration](:Category:Registration "wikilink")
+{% capture author %} {% include person content="Saalfeld" %}
+([1](mailto:saalfeld@mpi-cbg.de)) {% endcapture %}
 
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-## Citation
-
+{% capture maintainer %} {% include person content="Saalfeld" %} {%
+endcapture %} {% include sidebox-right name='Elastic Align and Montage'
+software='Fiji' author=author maintainer=maintainer
+source='[2](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/plugin)'
+released='March 11<sup>th</sup>, 2011' version='October 22<sup>nd</sup>,
+2011' status='experimental, active'
+category='[Plugins](:Category:Plugins "wikilink"),
+[Registration](:Category:Registration "wikilink")' %}== Citation ==
 Please note that the elastic alignment and montage plugin available
 through Fiji, is based on a publication. If you use it successfully for
 your research please cite our work:
@@ -42,14 +37,14 @@ available [here](http://fly.mpi-cbg.de/elastic).
 
 ![Example 2: Example for elastic alignment and montaging. 7 serial TEM
 sections of the neuropil of a *Drosophila melanogaster* first instar
-larva, detail at 100% pixel resolution. Image courtesy of
-.](Aligned-series-crop-512.gif
-"Example 2: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a Drosophila melanogaster first instar larva, detail at 100% pixel resolution. Image courtesy of .")![Example
+larva, detail at 100% pixel resolution. Image courtesy of {% include
+person content=':Albertcardona' %}.](Aligned-series-crop-512.gif
+"Example 2: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a Drosophila melanogaster first instar larva, detail at 100% pixel resolution. Image courtesy of {% include person content=':Albertcardona' %}.")![Example
 1: Example for elastic alignment and montaging. 7 serial TEM sections of
 the neuropil of a *Drosophila melanogaster* first instar larva,
-downscaled by a factor of 12. Image courtesy of
-.](Aligned-series-512.gif
-"Example 1: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a Drosophila melanogaster first instar larva, downscaled by a factor of 12. Image courtesy of .")
+downscaled by a factor of 12. Image courtesy of {% include person
+content=':Albertcardona' %}.](Aligned-series-512.gif
+"Example 1: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a Drosophila melanogaster first instar larva, downscaled by a factor of 12. Image courtesy of {% include person content=':Albertcardona' %}.")
 We describe here our elastic alignment method for series or groups of
 overlapping 2d-images. The method is accessible through the plugins
 **Elastic Stack Alignment** and **Elastic Montage** and incorporated in
@@ -113,15 +108,15 @@ with the benefit of both, increased speed and better reliability. We
 initialize the system with a linear-per-image optimal pre-alignment
 based on [local image
 features](Feature_Extraction "wikilink").<ref name="SaalfeldAl2010"> {%
-capture includecontent %} As-rigid-as-possible mosaicking and serial
-section registration of large ssTEM datasets | author = S. Saalfeld, A.
-Cardona, V. Hartenstein, P. Tomancak | journal = Bioinformatics | pages
-= i57–i63 | volume = 26 | number = 12 | year = 2010 | doi =
-10.1093/bioinformatics/btq219
+capture includecontent %} journal | title = As-rigid-as-possible
+mosaicking and serial section registration of large ssTEM datasets |
+author = S. Saalfeld, A. Cardona, V. Hartenstein, P. Tomancak | journal
+= Bioinformatics | pages = i57–i63 | volume = 26 | number = 12 | year =
+2010 | doi = 10.1093/bioinformatics/btq219
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>
+{% include cite content=includecontent %} </ref>
 
 ## Block Matching
 
@@ -155,14 +150,14 @@ We perform block matching at a reasonably down-scaled version of the
 images. The ideal scaling factor depends on the application and quality
 of the signal. To overcome the reduced accuracy of the estimated offset,
 we use Brown's method<ref name="BrownL2002"> {% capture includecontent
-%} author = M. Brown and D. Lowe | Invariant Features from Interest
-Point Groups | bookBritish Machine Vision Conference | year = 2002 |
-pages = 656–665 | place = Cardiff, Wales
+%} conference | author = M. Brown and D. Lowe | title = Invariant
+Features from Interest Point Groups | booktitle = British Machine Vision
+Conference | year = 2002 | pages = 656–665 | place = Cardiff, Wales
 
 {% endcapture %}
 
-{% include cite-conference content=includecontent %} </ref> to estimate
-an approximate sub-pixel offset. Furthermore, in order to reject wrong
+{% include cite content=includecontent %} </ref> to estimate an
+approximate sub-pixel offset. Furthermore, in order to reject wrong
 matches, three local filters based on the correlation surface are in
 place:
 
@@ -173,14 +168,14 @@ place:
     related by a factor larger than a given threshold, the match is
     rejected for being an edge response.<ref name="Lowe2004">
 
-{% capture includecontent %} author = D. Lowe | Distinctive Image
-Features from Scale-Invariant Keypoints | journal = International
-Journal of Computer Vision | volume = 60 | number = 2 | pages = 91–110 |
-year = 2004 | doi = 10.1109/ICCV.1999.790410
+{% capture includecontent %} journal | author = D. Lowe | title =
+Distinctive Image Features from Scale-Invariant Keypoints | journal =
+International Journal of Computer Vision | volume = 60 | number = 2 |
+pages = 91–110 | year = 2004 | doi = 10.1109/ICCV.1999.790410
 
 {% endcapture %}
 
-{% include cite-journal content=includecontent %} </ref>
+{% include cite content=includecontent %} </ref>
 
   - ambiguity filter  
     if the second best *r(x,y)* is very similar to the best, the match

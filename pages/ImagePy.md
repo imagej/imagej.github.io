@@ -8,16 +8,18 @@ categories: Related Software,Citable
 description: test description
 ---
 
-{% capture includecontent %} software = ImagePy | name = ImagePy | logo
-= ![ImagePy-logo.png](/images/pages/ImagePy-logo.png "ImagePy-logo.png")" | author = {%
-include person content='yxdragon' %} | maintainer = {% include person
-content='yxdragon' %} | source = {% include github org='Image-Py'
-repo='imagepy' %} | status = active | website =
-https://www.imagepy.org/
+{% capture author %} {% include person content="yxdragon" %} {%
+endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="yxdragon" %} {%
+endcapture %}
 
-{% include info-box-plugin content=includecontent %} ImagePy is a
+{% capture source %} {% include github org="Image-Py" repo="imagepy" %}
+{% endcapture %} {% include sidebox-right content='Plugin'
+software='ImagePy' name='ImagePy'
+logo='![ImagePy-logo.png](/images/pages/ImagePy-logo.png "ImagePy-logo.png")"'
+author=author maintainer=maintainer source=source status='active'
+website='https://www.imagepy.org/' %}ImagePy is a
 [Python](Python "wikilink")-based extensible image processing framework,
 inspired by and modeled after the [ImageJ](ImageJ "wikilink") user
 experience. It is built on libraries of the PyData software stack,
@@ -25,10 +27,7 @@ including NumPy, SciPy, scikit-image, pandas and others.
 
 ## Publication
 
-  - 
-{% capture includecontent %} ImagePy {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='ImagePy' %}
 
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:Citable](Category:Citable "wikilink")

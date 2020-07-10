@@ -31,12 +31,10 @@ brain):
 ![BigStitcher\_FRC\_overview.png](BigStitcher_FRC_overview.png
 "BigStitcher_FRC_overview.png")
 
-{% capture includecontent %} For FRC using neighbouring planes to work,
-the z-spacing of your images has to be low enough, so that neighbouring
-planes still contain a lot of shared information/structures. {%
-endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='For FRC using neighbouring
+planes to work, the z-spacing of your images has to be low enough, so
+that neighbouring planes still contain a lot of shared
+information/structures.' %}
 
 ## Usage
 
@@ -52,12 +50,10 @@ Many parameters are similar to [Image
 Fusion](BigStitcher_Fuse "wikilink"): You can set a bounding box for the
 resulting image, downsampling and whether to display or save results.
 
-{% capture includecontent %} By default, Quality is estimated in
+{% include sidebox-right content='By default, Quality is estimated in
 relatively large blocks of the (full resolution) images, downsampling
 only affects how large the blocks are "rendered" in the resulting image.
-Using high downsampling should be okay here. {% endcapture %}
-
-{% include info-box content=includecontent %}
+Using high downsampling should be okay here.' %}
 
 Parameters that are important to the actual quality estimation are:
 

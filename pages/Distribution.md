@@ -58,7 +58,7 @@ The first goal is to get your extension into the hands of users.
 <tr class="odd">
 <td><ul>
 <li><strong><a href="How_to_set_up_and_populate_an_update_site" title="wikilink"> Create your update site</a></strong>, then <strong><a href="How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site" title="wikilink">upload your extension to it</a></strong>.</li>
-<li>You may add your update site to the list of built-in sites by editing the '''%Replace% ListOfUpdateSites %Replace% ''' page.</li>
+<li>You may add your update site to the list of built-in sites by editing the <strong>{% include list-of-update-sites %}</strong> page.</li>
 <li>To release a new version, <strong><a href="How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site" title="wikilink">upload it to the update site</a></strong>.</li>
 </ul></td>
 </tr>

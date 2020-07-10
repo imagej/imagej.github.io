@@ -8,16 +8,12 @@ categories: Fiji,Plugins,Color processing
 description: test description
 ---
 
-{% capture includecontent %} software = Fiji | name = Simulate Color
-Blindness | author = Johannes Schindelin | maintainer = Johannes
-Schindelin | filename = Dichromacy\_.jar | source =
-[GitHub](https://github.com/fiji/Dichromacy/blob/8f1cd16a74b89f4761840e9df9e47209afc8dc7c/src/main/java/Daltonize_.java)
-| released = 2009 | latest version = 2009 | status = active | category =
-[Color processing](:Category:Color_processing "wikilink")
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
+{% include sidebox-right software='Fiji' name='Simulate Color Blindness'
+author='Johannes Schindelin' maintainer='Johannes Schindelin'
+filename='Dichromacy\_.jar'
+source='[GitHub](https://github.com/fiji/Dichromacy/blob/8f1cd16a74b89f4761840e9df9e47209afc8dc7c/src/main/java/Daltonize_.java)'
+released='2009' version='2009' status='active' category='[Color
+processing](:Category:Color_processing "wikilink")' %}
 
 This plugin simulates color blindness.
 

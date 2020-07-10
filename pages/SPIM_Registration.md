@@ -8,16 +8,16 @@ categories: Plugins,Registration
 description: test description
 ---
 
+{% include component-stats content=':sc.fiji:SPIM\_Registration' %}
+
 ## Important Note
 
-{% capture includecontent %} ***Please Note: This version of the
-software is outdated. It will be part of Fiji for the time being, but I
-highly recommend using the new [Multiview Reconstruction
+{% include warning-sidebox-right content='"""""Please Note: This version
+of the software is outdated. It will be part of Fiji for the time being,
+but I highly recommend using the new [Multiview Reconstruction
 Plugin](Multiview-Reconstruction "wikilink"). It is much more powerful,
 flexible and completely integrated with the
-[BigDataViewer](BigDataViewer "wikilink").*** {% endcapture %}
-
-{% include warning-box content=includecontent %}
+[BigDataViewer](BigDataViewer "wikilink")."""""' %}
 
 ## Citation
 

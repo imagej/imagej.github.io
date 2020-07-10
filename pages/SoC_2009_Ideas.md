@@ -239,9 +239,9 @@ compatibility with specific ImageJ versions, and the ability to track
 plugin versions.
 
 At the moment, there is a rudimentary {% include github repo='fiji'
-path='src-plugins/Fiji\_Updater/UpdateFiji.java' label='plugin' %} which
-should be a good starting point for this project. The list of current
-plugins used by that plugin can be found
+path='src-plugins/Fiji\_Updater/UpdateFiji.java' label='plugin updater'
+%} which should be a good starting point for this project. The list of
+current plugins used by that plugin can be found
 [here](http://update.fiji.sc/current.txt).
 
 **Goal:** Convert Fiji's update plugin into a proper plugin manager.  
@@ -317,7 +317,7 @@ The project would consist of
     infrastructure shared by Jython, JRuby, Clojure, Javascript and
     BeanShell) -- I suggest having a look at {% include github
     repo='fiji' path='src-plugins/JRuby/JRuby\_Interpreter.java'
-    label='the' %} for an example,
+    label='the JRuby Interpreter' %} for an example,
 
 <!-- end list -->
 

@@ -8,7 +8,8 @@ categories: Segmentation,Mathematical_morphology,Plugins
 description: test description
 ---
 
-This plugin performs [mathematical
+{% include component-stats content=':sc.fiji:Gray\_Morphology' %}This
+plugin performs [mathematical
 morphology](wikipedia:Mathematical_morphology "wikilink") on grayscale
 images. It only works on [8-bit](8-bit "wikilink") grayscale images.
 

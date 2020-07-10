@@ -8,7 +8,7 @@ categories: Cookbook,Tutorials,Plugins,Import-Export
 description: test description
 ---
 
-%Replace% CookbookMenu %Replace% %Replace% TOC %Replace%
+{% include menu-cookbook %}{% include toc %}
 
 ## The File / Import submenu
 

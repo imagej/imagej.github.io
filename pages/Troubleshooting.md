@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-%Replace% HelpMenu %Replace%
+{% include menu-help %}
 
 # How to troubleshoot problems
 
@@ -317,46 +317,8 @@ following:
 
 ## OutOfMemoryError
 
-{% capture includecontent %} float=right | **Why does ImageJ not release
-any memory back to the system?**
-
-This is a characteristic of the Java runtime. In many cases, Java
-*never* releases memory back to the system, so memory monitors such as
-Windows Task Manager will always report an ever-growing amount of RAM
-used by the Java process, until the JVM shuts down.
-
-The best way to monitor ImageJ's actual memory usage is to run the
-[Monitor
-Memory...](https://imagej.net/docs/guide/146-31.html#toc-Subsubsection-31.3.5)
-command. You can also click on the ImageJ [status
-bar](status_bar "wikilink") to trigger a garbage collection operation,
-which will typically decrease the memory use.
-
-That said, some articles suggest that you can cause Java to give back
-free memory to the OS under certain conditions; see:
-
-  - [Java still uses system memory after deallocation of objects and
-    garbage collection](http://stackoverflow.com/q/324499)
-  - [java.exe process uses more memory and does not free it
-    up](http://stackoverflow.com/q/16649601)
-  - [JVM Memory : Why memory on task manager difference with JProbe (or
-    JConsole tool)](http://stackoverflow.com/q/12017437)
-
-To be clear, Java does reuse memory when you close and reopen images.
-The behavior described above is not a memory *leak* per se. It should be
-possible to leave ImageJ running for days or weeks at a time doing batch
-processing and it have it work just fine.
-
-See also:
-
-  - [Automatically release unused memory in ImageJ /
-    Fiji](http://stackoverflow.com/q/22912063)
-
-{% endcapture %}
-
-{% include sidebox-right content=includecontent %}
-
-The error means ImageJ ran out of available [computer
+{% include sidebox-right float='right' %} The error means ImageJ ran out
+of available [computer
 memory](wikipedia:Random-access_memory "wikilink") (*not* hard drive
 space).
 

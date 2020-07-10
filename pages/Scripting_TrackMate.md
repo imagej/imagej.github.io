@@ -986,11 +986,8 @@ analyzer](TrackMate#Downloadable_jars "wikilink") is such a module.
 As any other module it can be used in a script, provided the jar file is
 in the plugins or jars folder of Fiji:
 
-{% capture includecontent %}
-org=fiji|repo=TrackMate|source=../../../scripts/CallTrackMateMultiChannel.py
-{% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='fiji' repo='TrackMate'
+source='../../../scripts/CallTrackMateMultiChannel.py' %}
 
 ## Making TrackMate macro recordable with a 64-line script
 
@@ -1002,11 +999,8 @@ course. Quoting from Jan:
 > scripting language. So when using a 64-line script to call it, it
 > actually is macro recordable."
 
-{% capture includecontent %}
-org=fiji|repo=TrackMate|source=../../../scripts/Run\_TrackMate\_Headless.groovy
-{% endcapture %}
-
-{% include github-embed content=includecontent %}
+{% include github-embed org='fiji' repo='TrackMate'
+source='../../../scripts/Run\_TrackMate\_Headless.groovy' %}
 
 ## Add 3D maximas in the ROI Manager using TrackMate
 

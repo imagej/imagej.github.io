@@ -79,8 +79,8 @@ updating of menus is needed (unless its file name changes).
     need for type-hinting, and some of the burdens involved in handling
     more complicated data structures, such as those from ImgLib2.
 
-See the %Replace% ListOfUpdateSites %Replace% for information on setting
-up the Funimage update site.
+See the {% include list-of-update-sites %} for information on setting up
+the Funimage update site.
 
 ### Running Clojure files from the command line
 
@@ -198,11 +198,8 @@ Within the jdb prompt, type "help".
 
 ### Importing classes
 
-{% capture includecontent %} lang=Clojure {% endcapture %}
-
-{% include importing-classes content=includecontent %}
-
-You can specify imports in Clojure in a few ways:
+{% include importing-classes lang='Clojure' %} You can specify imports
+in Clojure in a few ways:
 
 ``` clojure
 ; A single import.
@@ -1065,8 +1062,8 @@ find three Clojure examples:
     [Javascript](Javascript_Scripting "wikilink") and
     [JRuby](JRuby_Scripting "wikilink").
   - {% include github repo='fiji'
-    path='plugins/Analyze/Dynamic\_ROI\_Profiler.clj' label='Dynamic'
-    %}: illustrates how to add a MouseMotionListener and a
+    path='plugins/Analyze/Dynamic\_ROI\_Profiler.clj' label='Dynamic ROI
+    Profiler' %}: illustrates how to add a MouseMotionListener and a
     WindowListener to an ImageWindow of an open image. Reads out the ROI
     (Region Of Interest), and if it's a line, polyline or rectangle,
     plots the profile of pixel intensity along the line. As the mouse

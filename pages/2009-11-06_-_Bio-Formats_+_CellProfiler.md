@@ -8,11 +8,9 @@ categories: News,ImageJ2
 description: test description
 ---
 
-{% capture includecontent %} The following is a blog post from {%
-include person content='Leek' %} originally published on the ImageJDev
-web site. {% endcapture %}
-
-{% include info-box content=includecontent %}
+{% capture content %} The following is a blog post from {% include
+person content="Leek" %} originally published on the ImageJDev web site.
+{% endcapture %} {% include sidebox-right content=content %}
 
 Hi all,
 

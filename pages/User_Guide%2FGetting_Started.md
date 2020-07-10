@@ -8,6 +8,8 @@ categories:
 description: test description
 ---
 
+{% include displaytitle content=':Getting Started' %}
+
 This part provides basic information on ImageJ installation,
 troubleshooting and update strategies. It discusses
 [Fiji↓](#sub:Fiji-intro "wikilink")[↓](#nom-fiji "wikilink") and

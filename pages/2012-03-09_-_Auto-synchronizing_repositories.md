@@ -28,10 +28,10 @@ We solved exactly those problems in the ImageJ project. There is a
 job](http://jenkins.imagej.net/view/Synchronizers/job/ImageJ-synchronizer/)
 to synchronize the ImageJ repositories with each other, using {% include
 github org='scijava' repo='scijava-scripts' path='git-synchronizer.sh'
-label='this' %}. Sadly the script is a little more complex than I hoped,
-but it does the job reliably and to be honest, it is a little more
-tricky than I first thought: when there are updates from only one of the
-repositories, they should be forced. However, there might be
+label='this script' %}. Sadly the script is a little more complex than I
+hoped, but it does the job reliably and to be honest, it is a little
+more tricky than I first thought: when there are updates from only one
+of the repositories, they should be forced. However, there might be
 contradicting updates in which case nothing may be forced. Of course,
 such a script—especially when it is a little more complex than the
 author hoped—also has to take precautions not to be overzealous in

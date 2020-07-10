@@ -8,23 +8,21 @@ categories: Plugins,Visualization,Citable
 description: test description
 ---
 
-{% capture includecontent %} name = ClearVolume | logo =
-![ClearVolumeLogo.png](/images/pages/ClearVolumeLogo.png "ClearVolumeLogo.png")" |
-software = Fiji | author = {% include person content='Jug' %}, {%
-include person content='royerloic' %}, Martin Weigert, {% include person
-content='skalarproduktraum' %} | maintainer = {% include person
-content='Jug' %} | source = {% include github org='ClearVolume'
-repo='imglib2-clearvolume' %} | status = active | category =
-[Visualization](:Category:Visualization "wikilink") | website =
-https://clearvolume.github.io/
+{% capture author %} {% include person content="Jug" %}, {% include
+person content="royerloic" %}, Martin Weigert, {% include person
+content="skalarproduktraum" %} {% endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Jug" %} {%
+endcapture %}
 
-{% include info-box content=includecontent %}
-
-## Problems and Solutions
-
-We work constantly on improving the Fiji and KNIME plugins. Help us
+{% capture source %} {% include github org="ClearVolume"
+repo="imglib2-clearvolume" %} {% endcapture %} {% include sidebox-right
+name='ClearVolume' logo='![ClearVolumeLogo.png](ClearVolumeLogo.png
+"ClearVolumeLogo.png")' software='Fiji' author=author
+maintainer=maintainer source=source status='active'
+category='[Visualization](:Category:Visualization "wikilink")'
+website='https://clearvolume.github.io/' %}== Problems and Solutions
+== We work constantly on improving the Fiji and KNIME plugins. Help us
 doing so by letting us know if you encounter problems.
 
   - **Problem:** on a Linux machine ClearVolume would not start but
@@ -49,16 +47,13 @@ doing so by letting us know if you encounter problems.
 
 ## What is ClearVolume?
 
-{% capture includecontent %} quote = I checked out ClearVolume.
-Extremely well-made plugin\! Does exactly what I want :) | person =
-komodovaran | source = http://forum.imagej.net/t/1907/3
-
-{% endcapture %}
-
-{% include testimonial content=includecontent %} ClearVolume is a volume
-renderer developed at MPI-CBG. Its sources are open and can be cloned
-[from GitHub](https://github.com/ClearVolume). If you use ClearVolume in
-your research, please cite it—see reference below.
+{% include testimonial quote='I checked out ClearVolume. Extremely
+well-made plugin\! Does exactly what I want :)' person='komodovaran'
+source='http://forum.imagej.net/t/1907/3' width='30%' float='right'
+%}ClearVolume is a volume renderer developed at MPI-CBG. Its sources are
+open and can be cloned [from GitHub](https://github.com/ClearVolume). If
+you use ClearVolume in your research, please cite it—see reference
+below.
 
 ## Screenshots
 
@@ -123,10 +118,7 @@ further questions please contact any of us
 
 ## Publication
 
-  - 
-{% capture includecontent %} ClearVolume {% endcapture %}
-
-{% include publication content=includecontent %}
+  - {% include publication content='ClearVolume' %}
 
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:Visualization](Category:Visualization "wikilink")

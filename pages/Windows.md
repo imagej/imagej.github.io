@@ -8,24 +8,21 @@ categories: Platforms
 description: test description
 ---
 
-%Replace% PlatformsMenu %Replace% {% capture includecontent %}
-logo=Win.png | blurb=[Where do you want to go
-today?](wikipedia:Where_do_you_want_to_go_today? "wikilink") {%
-endcapture %}
-
-{% include minibox content=includecontent %}
-[Windows](wikipedia:Microsoft_Windows "wikilink") is
+{% include menu-platforms %}{% include minisidebox-right logo='Win.png'
+blurb='[Where do you want to go
+today?](wikipedia:Where_do_you_want_to_go_today? "wikilink")'
+%}[Windows](wikipedia:Microsoft_Windows "wikilink") is
 [Microsoft](wikipedia:Microsoft "wikilink")'s family of operating
 systems. It is [the most prevalent desktop computer
 platform](https://www.netmarketshare.com/operating-system-market-share.aspx).
 This page details issues specific to using [ImageJ](ImageJ "wikilink")
 on Windows systems.
 
-%Replace% TOC %Replace%
+{% include toc %}
 
 # Installation
 
-%Replace% AvoidProgramFiles %Replace%
+{% include avoidprogramfiles %}
 
 # Troubleshooting
 

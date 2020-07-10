@@ -8,12 +8,12 @@ categories:
 description: test description
 ---
 
-%Replace% UpdateSitesMenu %Replace% %Replace% TOC %Replace%
+{% include menu-updatesites %}{% include toc %}
 
 ## How do I make my update site appear in ImageJ's *Manage update sites* dialog?
 
-The dialog is based on the %Replace% ListOfUpdateSites %Replace% wiki
-page. You can edit that page to add your own update site.
+The dialog is based on the {% include list-of-update-sites %} wiki page.
+You can edit that page to add your own update site.
 
 ## How do I remove a file from my update site?
 

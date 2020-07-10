@@ -8,18 +8,13 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} name = FunImageJ | software = ImageJ |
-author = {% include person content='Kharrington' %} | filename = |
-source = [FunImageJ](https://github.com/kephale/fun.imagej) | released =
-in development | latest version = in development | status = alpha |
-category = [Lisp](:Category:Lisp "wikilink") | website =
-https://github.com/kephale/fun.imagej
-
-{% endcapture %}
-
-{% include info-box content=includecontent %}
-
-## Purpose
+{% capture author %} {% include person content="Kharrington" %} {%
+endcapture %} {% include sidebox-right name='FunImageJ'
+software='ImageJ' author=author filename=''
+source='[FunImageJ](https://github.com/kephale/fun.imagej)' released='in
+development' version='in development' status='alpha'
+category='[Lisp](:Category:Lisp "wikilink")'
+website='https://github.com/kephale/fun.imagej' %}== Purpose ==
 
 FunImageJ provides a natural Lisp interface for ImageJ, written using
 the Clojure dialect of Lisp. Code written with FunImageJ can be compiled

@@ -8,8 +8,8 @@ categories: Import-Export
 description: test description
 ---
 
-%Replace% FormatsMenu %Replace% If you have Flex files from an older
-Opera system, you may receive a message from
+{% include menu-formats %}If you have Flex files from an older Opera
+system, you may receive a message from
 [Bio-Formats](Bio-Formats "wikilink") stating that you need a LuraWave
 LWF license code to decode these files.
 
@@ -44,11 +44,7 @@ costs to do so.
 
 ## See also
 
-  - 
-{% capture includecontent %} Bio-Formats {% endcapture %}
-
-{% include publication content=includecontent %}
-
+  - {% include publication content='Bio-Formats' %}
   - [OME Blog - Supporting complex formats - what we will and won't do,
     and what you can do to
     help](http://blog.openmicroscopy.org/file-formats/community/2016/01/06/format-support/)

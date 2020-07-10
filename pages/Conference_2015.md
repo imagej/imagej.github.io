@@ -8,15 +8,11 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} title=ImageJ 2015 User & Developer
-Conference | section=5th ImageJ User & Developer Conference | dates=3 -
-4 September 2015 | image=Imagej-conference-2015.jpg |
-location=[Wisconsin Institutes for
-Discovery](http://discovery.wisc.edu/) in Madison, Wisconsin, USA
-
-{% endcapture %}
-
-{% include conference content=includecontent %}
+{% include conference title='ImageJ 2015 User & Developer Conference'
+section='5th ImageJ User & Developer Conference' dates='3 - 4 September
+2015' image='Imagej-conference-2015.jpg' location='[Wisconsin Institutes
+for Discovery](http://discovery.wisc.edu/) in Madison, Wisconsin, USA'
+%}
 
 # Information
 
@@ -129,7 +125,7 @@ reserve rooms at The Lowell Center for the state rate of $82 per night.
 
 </div>
 
-%Replace% Clear %Replace%
+{% include clear %}
 
 ## Travel support
 
@@ -140,7 +136,7 @@ presentations.
 
 # Program
 
-TODO GOOGLE SPREADSHEET WIDGET %Replace% Clear %Replace%
+TODO GOOGLE SPREADSHEET WIDGET {% include clear %}
 
 For full details including abstracts and presentation recordings, see
 the [Conference 2015 Program](Conference_2015_Program "wikilink") page.

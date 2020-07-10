@@ -165,9 +165,9 @@ fiji --classpath /path/to/classes \
 ```
 
 If you are using Fiji's {% include github org='fiji' repo='fiji-compat'
-source='fiji/JavassistHelper.java' label='JavassistHelper' %}, you can
-use the *verify()* method which does nothing else than to hand off to
-the ASM component's verifier. Example:
+source='fiji/JavassistHelper.java' label='JavassistHelper class' %}, you
+can use the *verify()* method which does nothing else than to hand off
+to the ASM component's verifier. Example:
 
 ``` java
 import fiji.JavassistHelper;

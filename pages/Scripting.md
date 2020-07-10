@@ -102,6 +102,9 @@ Editor documentation](Using_the_Script_Editor "wikilink").
 
 For the script to appear in the ImageJ menus, the following must apply:
 
+{% include sidebox-right text='".txt" is not a supported script
+extension' width='30%' float='right' %}
+
 1.  The script file is saved in the `ImageJ.app/scripts` or the
     `ImageJ.app/plugins/Scripts` directory (or a subdirectory thereof).
 2.  The script name ends in a supported script extension. For example
@@ -115,10 +118,7 @@ For the script to appear in the ImageJ menus, the following must apply:
 3.  The script name contains a '\_' (underscore) character, e.g.
     "MyScript\_.ijm".
 
-{% capture includecontent %} Replace `ImageJ.app` with `Fiji.app` {%
-endcapture %}
-
-{% include fiji content=includecontent %}
+{% include fiji content='Replace `ImageJ.app` with `Fiji.app`' %}
 
 The extension will be stripped and any underscores will be turned into
 spaces before the script is added to the menus.

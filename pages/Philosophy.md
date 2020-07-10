@@ -8,7 +8,7 @@ categories: Development
 description: test description
 ---
 
-%Replace% DevelopMenu %Replace% [ImageJ](ImageJ "wikilink"), and the
+{% include develop-menu %}[ImageJ](ImageJ "wikilink"), and the
 [SciJava](SciJava "wikilink") component collection in general, is
 developed according to certain biases, which we describe here. This
 philosophy has evolved over a very long development history, reflecting
@@ -104,9 +104,11 @@ remain possible to use existing [plugins](plugins "wikilink") and
 
 ## Release early, release often
 
-{% capture includecontent %} What's the alternative?
-
-`Some projects opt to release their entire software stack with a single monolithic version number. This has one extremely nice ramification: it clearly communicates which versions of which software components are intended to be compatible with one another.`
+{% include sidebox-right title='What"s the alternative?' width='30%'
+float='right' text='Some projects opt to release their entire software
+stack with a single monolithic version number. This has one extremely
+nice ramification: it clearly communicates which versions of which
+software components are intended to be compatible with one another.
 
 For example, the [OME](OME "wikilink") project (which includes
 [OMERO](OMERO "wikilink") and [Bio-Formats](Bio-Formats "wikilink"))
@@ -128,19 +130,19 @@ Versioning strategies
 
 <td>
 
-*Versioning*
+""Versioning""
 
 </td>
 
 <td>
 
-**BOM**
+"""BOM"""
 
 </td>
 
 <td>
 
-**Monoversioned**
+"""Monoversioned"""
 
 </td>
 
@@ -150,19 +152,19 @@ Versioning strategies
 
 <td style="vertical-align: top">
 
-*Releases*
+""Releases""
 
 </td>
 
 <td>
 
-**RERO**
+"""RERO"""
 
 </td>
 
 <td>
 
-**"Big bang"**
+""""Big bang""""
 
 </td>
 
@@ -172,7 +174,7 @@ Versioning strategies
 
 <td style="vertical-align: top">
 
-*Version compatibility*
+""Version compatibility""
 
 </td>
 
@@ -195,7 +197,7 @@ Compatible components have the same version number
 
 <td style="vertical-align: top">
 
-*Frequency of releases*
+""Frequency of releases""
 
 </td>
 
@@ -217,7 +219,7 @@ Slower
 
 <td style="vertical-align: top">
 
-*Stability*
+""Stability""
 
 </td>
 
@@ -237,11 +239,7 @@ More
 
 </table>
 
-{% endcapture %}
-
-{% include sidebox-right content=includecontent %}
-
-ImageJ subscribes to the [release early, release
+' %} ImageJ subscribes to the [release early, release
 often](wikipedia:Release_early,_release_often "wikilink") (RERO) mantra
 often cited in software engineering circles. In particular—and
 especially because there is a small core development team—the project is

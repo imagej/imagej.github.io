@@ -8,7 +8,7 @@ categories: ImgLib,Tutorials,Development
 description: test description
 ---
 
-%Replace% ImgLib1\_Deprecation\_Notice %Replace%
+{% include imglib1-deprecation-sidebox-right %}
 
 The [Imglib](Imglib "wikilink") library makes extensive use of [Java
 generics](wikipedia:Generics_in_Java "wikilink"). Generics appeared in

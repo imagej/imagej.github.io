@@ -70,7 +70,7 @@ Variables are assigned a value by statements of the form **name** =
 ``` java
 intensity = 255;
 value = 2 * 8 + 1;
-“Hello, World!”;
+title = “Hello, World!”;
 text = “title”;
 ```
 

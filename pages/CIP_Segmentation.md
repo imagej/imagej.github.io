@@ -13,6 +13,8 @@ description: test description
 This page describes the segmentation function of the [CIP
 scripting](CIP "wikilink") package
 
+{% include cip content='Navigation' %}
+
 # **threshold**
 
 <span style="font-size:110%">**Description**</span>  

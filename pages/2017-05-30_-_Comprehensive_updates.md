@@ -17,9 +17,9 @@ fruition all at once.
 The most exciting news is that, as [announced on the ImageJ
 forum](http://forum.imagej.net/t/jupyter-notebook-for-imagej/5421),
 there is now a {% include github org='hadim'
-repo='scijava-jupyter-kernel' label='SciJava' %} enabling ImageJ to be
-used with [Jupyter Notebook](https://jupyter.org/) in all of the
-[supported scripting
+repo='scijava-jupyter-kernel' label='SciJava Jupyter Kernel' %} enabling
+ImageJ to be used with [Jupyter Notebook](https://jupyter.org/) in all
+of the [supported scripting
 languages](Scripting#Supported_languages "wikilink").
 
 Please peruse the [ImageJ Tutorial

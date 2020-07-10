@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-%Replace% UpdateSitesMenu %Replace% %Replace% TOC %Replace%
+{% include menu-updatesites %}{% include toc %}
 
 ## Introduction
 
@@ -29,11 +29,9 @@ The typical workflow is:
 4.  Upload changes to ImageJ update site
 5.  Upload changes to Fiji update site
 
-{% capture includecontent %} There is a known issue where
-**bio-formats\_plugins.jar** is placed in `/jars/bio-formats` by this
-maven job. It should be manually moved to `/plugins/` {% endcapture %}
-
-{% include warning-box content=includecontent %}
+{% include warning-sidebox-right content='There is a known issue where
+"""bio-formats\_plugins.jar""" is placed in `/jars/bio-formats` by this
+maven job. It should be manually moved to `/plugins/`' %}
 
 ## Responsibility of uploaders
 

@@ -8,41 +8,47 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} project = CSBDresden | name = CSBDeep Fiji
-Plugin | url = https://imagej.net/CSBDeep | source = {% include github
-org='CSBDeep' repo='CSBDeep\_fiji' tag='csbdeep-0.3.4' %} | license =
-[BSD-2](BSD-2 "wikilink") | release = {% capture includecontent %}
-g=de.csbdresden | a=csbdeep | v=0.3.4 | label=0.3.4 {% endcapture %}
+{% capture source %} {% include github org="CSBDeep"
+repo="CSBDeep\_fiji" tag="csbdeep-0.3.4" %} {% endcapture %}
 
-{% include maven content=includecontent %}
+{% capture release %} {% include maven g="de.csbdresden" a="csbdeep"
+v="0.3.4" label="0.3.4" %} {% endcapture %}
 
-| date = Tue Dec 11 00:00:00 CDT 2018 | devStatus = {% capture
-includecontent %} developer=yes | incubating=yes | obsolete=no {%
+{% capture tatus %} {% include devstatus developer="yes"
+incubating="yes" obsolete="no" %} {% endcapture %}
+
+{% capture tatus %} {% include supportstatus debugger="yes"
+reviewer="yes" support="yes" %} {% endcapture %}
+
+{% capture founders %} {% include person content="frauzufall" %} {%
 endcapture %}
 
-{% include devstatus content=includecontent %}
+{% capture leads %} {% include person content="frauzufall" %}, {%
+include person content="HedgehogCode" %}, {% include person
+content="fjug" %} {% endcapture %}
 
-| supportStatus = {% capture includecontent %} debugger=yes |
-reviewer=yes | support=yes {% endcapture %}
+{% capture developers %} {% include person content="frauzufall" %}, {%
+include person content="HedgehogCode" %}, {% include person
+content="fjug" %} {% endcapture %}
 
-{% include supportstatus content=includecontent %}
+{% capture debuggers %} {% include person content="frauzufall" %}, {%
+include person content="HedgehogCode" %} {% endcapture %}
 
-| founders = {% include person content='frauzufall' %} | leads = {%
-include person content='frauzufall' %}, {% include person
-content='HedgehogCode' %}, {% include person content='fjug' %} |
-developers = {% include person content='frauzufall' %}, {% include
-person content='HedgehogCode' %}, {% include person content='fjug' %} |
-debuggers = {% include person content='frauzufall' %}, {% include person
-content='HedgehogCode' %} | reviewers = {% include person
-content='frauzufall' %}, {% include person content='HedgehogCode' %} |
-support = {% include person content='frauzufall' %}, {% include person
-content='HedgehogCode' %} | maintainers = {% include person
-content='frauzufall' %}, {% include person content='tpietzsch' %}, {%
-include person content='HedgehogCode' %}
+{% capture reviewers %} {% include person content="frauzufall" %}, {%
+include person content="HedgehogCode" %} {% endcapture %}
 
-{% endcapture %}
+{% capture support %} {% include person content="frauzufall" %}, {%
+include person content="HedgehogCode" %} {% endcapture %}
 
-{% include component content=includecontent %}
+{% capture maintainers %} {% include person content="frauzufall" %}, {%
+include person content="tpietzsch" %}, {% include person
+content="HedgehogCode" %} {% endcapture %} {% include component
+project='CSBDresden' name='CSBDeep Fiji Plugin'
+url='https://imagej.net/CSBDeep' source=source
+license='[BSD-2](BSD-2 "wikilink")' release=release date='Tue Dec 11
+00:00:00 CDT 2018' tatus=tatus tatus=tatus founders=founders leads=leads
+developers=developers debuggers=debuggers reviewers=reviewers
+support=support maintainers=maintainers %}
 
 ## Install
 

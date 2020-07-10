@@ -8,25 +8,25 @@ categories: ImgLib,Citable
 description: test description
 ---
 
-{% capture includecontent %} name = ImgLib2 | software = Generic Image
-Processing for Java | logo = ![imglib2-logo.png](imglib2-logo.png
-"imglib2-logo.png") | author = {% include person content='Saalfeld' %},
-{% include person content='Pietzsch' %}, {% include person
-content='StephanP' %}, {% include person content='Rueden' %}, {% include
-person content='Leek' %}, {% include person content='Bdezonia' %}, {%
-include person content='Schindelin' %}, {% include person
-content='Dietzc' %}, {% include person content='hornm' %}, {% include
-person content='Albertcardona' %}, {% include person content='Harris'
-%}, {% include person content='Lindsey' %} | maintainer = {% include
-person content='Pietzsch' %}, {% include person content='Rueden' %} |
-source = {% include github content='org = imglib | repo = imglib2' %} |
-status = stable, active | category =
-[:Category:ImgLib](:Category:ImgLib "wikilink")
+{% capture author %} {% include person content="Saalfeld" %}, {% include
+person content="Pietzsch" %}, {% include person content="StephanP" %},
+{% include person content="Rueden" %}, {% include person content="Leek"
+%}, {% include person content="Bdezonia" %}, {% include person
+content="Schindelin" %}, {% include person content="Dietzc" %}, {%
+include person content="hornm" %}, {% include person
+content="Albertcardona" %}, {% include person content="Harris" %}, {%
+include person content="Lindsey" %} {% endcapture %}
 
-{% endcapture %}
+{% capture maintainer %} {% include person content="Pietzsch" %}, {%
+include person content="Rueden" %} {% endcapture %}
 
-{% include info-box content=includecontent %} %Replace% ImgLibMenu
-%Replace% ImgLib2 is a general-purpose, multidimensional image
+{% capture source %} {% include github org="imglib" repo="imglib2" %} {%
+endcapture %} {% include sidebox-right name='ImgLib2' software='Generic
+Image Processing for Java' logo='![imglib2-logo.png](imglib2-logo.png
+"imglib2-logo.png")' author=author maintainer=maintainer source=source
+status='stable, active'
+category='[:Category:ImgLib](:Category:ImgLib "wikilink")' %}{% include
+imglibmenu %}ImgLib2 is a general-purpose, multidimensional image
 processing library.
 
 It provides an interface-driven design that supports numeric and
@@ -40,18 +40,9 @@ demand, and planes read on demand from disk.
 
   - [ImgLib2
     paper](http://bioinformatics.oxfordjournals.org/content/28/22/3009.full)
-
   - [ImgLib2 Documentation](ImgLib2_Documentation "wikilink")
-
   - [ImgLib2 Examples](ImgLib2_Examples "wikilink")
-
-  - 
-{% capture includecontent %} project = ImgLib2 {% endcapture %}
-
-{% include javadoc content=includecontent %}
-
-`javadoc`
-
+  - {% include javadoc project='ImgLib2' %} javadoc
   - [How To Migrate Code From ImgLib To
     ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 "wikilink")
   - ["Introduction to
