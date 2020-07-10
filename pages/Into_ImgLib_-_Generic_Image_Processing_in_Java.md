@@ -8,7 +8,9 @@ categories: ImgLib
 description: test description
 ---
 
-{% include imglib1-deprecation-info-box%} {% include imglibmenu%} The purpose of ImgLib, a Generic Java Image Processing Library, is to provide an abstract framework enabling Java developers to design and implement data processing algorithms without having to consider dimensionality, type of data (e.g. byte, float, complex float), or strategies for data access (e.g. linear arrays, cells, paged cells).
+{% include imglib1-deprecation-info-box%}
+ {% include imglibmenu%}
+ The purpose of ImgLib, a Generic Java Image Processing Library, is to provide an abstract framework enabling Java developers to design and implement data processing algorithms without having to consider dimensionality, type of data (e.g. byte, float, complex float), or strategies for data access (e.g. linear arrays, cells, paged cells).
 
 This kind of programming has significant advantages over the classical way. An algorithm written once for a certain class of Type will potentially run on any compatible Type, even if it does not exist yet. Same applies for data access strategies and the number of dimensions.
 

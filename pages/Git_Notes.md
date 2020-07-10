@@ -8,7 +8,8 @@ categories: Git
 description: test description
 ---
 
-{% include gitmenu%} Here are some common git operations for which we often find ourselves searching.
+{% include gitmenu%}
+ Here are some common git operations for which we often find ourselves searching.
 
 ## Workflow
 

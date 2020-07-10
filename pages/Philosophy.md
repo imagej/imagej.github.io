@@ -8,7 +8,8 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu%}[ImageJ](ImageJ "wikilink"), and the [SciJava](SciJava "wikilink") component collection in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
+{% include develop-menu%}
+[ImageJ](ImageJ "wikilink"), and the [SciJava](SciJava "wikilink") component collection in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
 
 ## Open source
 

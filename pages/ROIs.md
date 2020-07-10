@@ -8,7 +8,8 @@ categories:
 description: test description
 ---
 
-{% include wip%} In [image processing](wikipedia:Image_processing "wikilink"), two of the most often needed yet complex operations are [segmentation](wikipedia:Segmentation_\(image_processing\) "wikilink") and [registration](wikipedia:Image_registration "wikilink"). Regions of interest (ROIs) are an effective way of expressing and visualizing the results of a segmentation. For the current implementation of ROIs in ImageJ, see the [imglib2-roi](https://github.com/imglib/imglib2-roi) repository.
+{% include wip%}
+ In [image processing](wikipedia:Image_processing "wikilink"), two of the most often needed yet complex operations are [segmentation](wikipedia:Segmentation_\(image_processing\) "wikilink") and [registration](wikipedia:Image_registration "wikilink"). Regions of interest (ROIs) are an effective way of expressing and visualizing the results of a segmentation. For the current implementation of ROIs in ImageJ, see the [imglib2-roi](https://github.com/imglib/imglib2-roi) repository.
 
 # Introduction
 

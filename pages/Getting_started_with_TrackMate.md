@@ -26,6 +26,7 @@ Also, if you look carefully, you will see that there are two splitting events - 
 
 {% include clear%}
 
+
 ## Starting TrackMate
 
 ![](TrackMate_MainButtons.png)
@@ -43,6 +44,7 @@ Now is a good time to speak strategy when it comes to saving/restoring. You can 
 The advantage of this approach is that you load in TrackMate, and everything you need will be loaded and displayed. However, if you need to change the target file or if it cannot be retrieved, you will have to open the TrackMate XML file and edit its 4th line.
 
 {% include clear%}
+
 
 ## The start panel
 
@@ -62,6 +64,7 @@ Defining a smaller area to analyze can be very beneficial to test and inspect fo
 
 {% include clear%}
 
+
 ## Choosing a detector
 
 ![](TrackMate_SegmenterChoice.png)
@@ -77,6 +80,7 @@ The choice is actually quite limited. Apart from the **Manual annotation**, you 
 In our case, let us just use the **Dog detector**.
 
 {% include clear%}
+
 
 ## The detector configuration panel
 
@@ -98,6 +102,7 @@ In our case, the spots we want to track are about 5 pixels in diameter, so this 
 
 {% include clear%}
 
+
 ## The detection process
 
 ![](TrackMate_Segmenting.png)
@@ -111,6 +116,7 @@ TrackMate takes advantage of multi-core computers, which seems to be the standar
 On our dummy image, this is clearly something we need to worry about, and the segmentation should be over in a few seconds. Typically, this is the step that takes the longer. Once the segmentation is done, the **Next** button is re-enabled.
 
 {% include clear%}
+
 
 ## Initial spot filtering
 
@@ -130,6 +136,7 @@ In our case, we see from the histogram that we could make sense of this step. Th
 
 {% include clear%}
 
+
 ## Selecting a view
 
 ![](TrackMate_DisplayerChoice.png)
@@ -146,6 +153,7 @@ When you press the **Next** button, two processes start:
 So nothing much. Let's carry on.
 
 {% include clear%}
+
 
 ## Spot filtering
 
@@ -185,6 +193,7 @@ You can stack several filters by simply clicking on the green **+** button. Trac
 Press **Next** when you are ready to build tracks with these spots.
 
 {% include clear%}
+
 
 ## Selecting a simple tracker
 

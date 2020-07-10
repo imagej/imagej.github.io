@@ -10,6 +10,7 @@ description: test description
 
 \_\_FORCETOC\_\_ {% include menu-cookbook%}
 
+
 ## Stack-Projections
 
 A z-series is generally difficult to represent as a 2-D image for publication purposes. A montage will allow the 3-D dataset to be visualized in 2-D, but results in each frame being very small. There are several ways to "flatten” the 3D stack.

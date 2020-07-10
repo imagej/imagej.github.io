@@ -9,6 +9,7 @@ description: test description
 ---
 
 {% include menu-formats%}
+
 {% capture source%}
 {% include github org='openmicroscopy' repo='bioformats' %}
 {% endcapture %}
@@ -16,6 +17,7 @@ description: test description
 \- [UW-Madison LOCI](LOCI "wikilink")  
 \- [Glencoe Software](https://www.glencoesoftware.com/)  
 \- [University of Dundee](https://www.dundee.ac.uk/) ' maintainer='OME development team' filename=' [See Bio-Formats Downloads page](https://downloads.openmicroscopy.org/bio-formats/) ' source=source latest-version=' [See Bio-Formats Downloads page](https://downloads.openmicroscopy.org/bio-formats/) ' status='active' category='[:Category:Import-Export](:Category:Import-Export "wikilink")' %}{% include toc%}
+
 
 ## Purpose
 

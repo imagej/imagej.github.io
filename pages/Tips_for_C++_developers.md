@@ -10,6 +10,7 @@ description: test description
 
 {% include develop-menu content='tutorials' %} {% include toc%}
 
+
 # Introduction
 
 Many developers are more familiar with C++ than Java when starting to develop code for Fiji. There are a few common pitfalls when coding in Java, being used to C++, and this page tries to help you avoid them.

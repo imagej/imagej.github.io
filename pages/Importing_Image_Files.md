@@ -8,7 +8,9 @@ categories: Cookbook,Tutorials,Plugins,Import-Export
 description: test description
 ---
 
-{% include menu-cookbook%}{% include toc%}
+{% include menu-cookbook%}
+{% include toc%}
+
 
 ## The File / Import submenu
 

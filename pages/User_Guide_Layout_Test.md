@@ -103,13 +103,17 @@ Press the {% include key content='L' %} key to access ImageJ"s most useful featu
 
     {% include yes%}
 
+
 {% include yes%}
+
 
 ## Specific Icons
 
     {% include no%}
 
+
 {% include no%}
+
 
 ## Operating systems
 

@@ -8,7 +8,8 @@ categories:
 description: test description
 ---
 
-{% include aboutmenu%}The community encourages discussion about proposed changes on ImageJ's [communication](communication "wikilink") channels. Submit your ideas\!
+{% include aboutmenu%}
+The community encourages discussion about proposed changes on ImageJ's [communication](communication "wikilink") channels. Submit your ideas\!
 
 Start on the [forum](forum "wikilink"), searching for discussions related to your contribution to get some context & background. It can also be helpful to [search](search "wikilink") for applicable issues and plans across the spectrum of ImageJ resources. The ImageJ community believes that [public discussion is important](Philosophy#Open_source "wikilink") so that ideas are exposed to healthy alternate points of view rather than lost.
 

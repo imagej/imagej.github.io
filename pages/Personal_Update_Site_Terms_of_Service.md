@@ -8,7 +8,8 @@ categories:
 description: test description
 ---
 
-{% include menu-updatesites%}By creating a personal update site, you agree to the following terms and conditions:
+{% include menu-updatesites%}
+By creating a personal update site, you agree to the following terms and conditions:
 
 1.  You agree to use your personal update site only for ImageJ extensions, and not hosting content for any other purpose.
 2.  You grant permission for anyone enabling your update site to use the functionality it provides for any legal purpose whatsoever.

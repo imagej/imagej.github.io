@@ -22,6 +22,7 @@ You should should get the layout pictured on the right. Notice that we are alrea
 
 {% include clear%}
 
+
 ## Creating spots one by one
 
 The default view (the one that re-uses the HyperStack viewer of ImageJ) can readily edit the tracks. You just have to make sure that the TrackMate tool is selected in the ImageJ toolbar:
@@ -78,6 +79,7 @@ Let's apply this to our data. First create a spot over the bright blob at the to
 
 {% include clear%}
 
+
 ![](TrackMate_ManualTracking_2.png)
 
 Tracks created this way do not have to be linear. You can create branching segments simply by remembering that in the auto-linking mode, links are created between the last selected spot.
@@ -85,6 +87,7 @@ Tracks created this way do not have to be linear. You can create branching segme
 Therefore, to create the branch that goes on the right, go back on the frame 9 (the frame just before the branching happens) and click into the spot that's there to select it. Then move to the next frame and create the spots that belong to the right branch, just like you did before. These spots will be added to the same track, and should get a inverted Y-branch like pictured on the right.
 
 {% include clear%}
+
 
 ## Tracks are updated live
 
@@ -95,6 +98,7 @@ Note that you do not have to worry about what track a spot belongs to when creat
 The same is valid when you delete a link or a spot. For instance, let's create 3 tracks out of our inverted Y. Go to the frame 9, and delete the spot that is at the crossing. You now have 3 tracks.
 
 {% include clear%}
+
 
 ## Track and spot features are updated live
 
@@ -107,6 +111,7 @@ For instance this is what happened in the previous section, when you deleted a s
 The track and spot colors are refreshed immediately in the HyperStack displayer. Note, though, that the color range in the GUI has not been updated. It still displays *-Infinity - Infinity*. This is by construction, to alleviate a bit the load when editing large models. If you want to refresh the color range, you have to click directly on it, and it will be properly repainted. On the right you can see what I get if I pick the feature *Y* for spot coloring, and the track index, after refreshing.
 
 {% include clear%}
+
 
 ## The semi-automatic tracking tool
 

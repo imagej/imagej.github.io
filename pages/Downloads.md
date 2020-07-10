@@ -46,6 +46,7 @@ These downloads bundle ImageJ with a curated collection of plugins pre-installed
 
 {% include clear%}
 
+
 # System requirements
 
 ImageJ will run on any system that has a Java 8 (or later) runtime installed. This includes, but is not limited to:
@@ -56,7 +57,8 @@ ImageJ will run on any system that has a Java 8 (or later) runtime installed. Th
 
 # Installation
 
-{% include avoidprogramfiles%} ImageJ is distributed as a [portable application](wikipedia:Portable_application "wikilink"). That means that you do not have to run an installer; just download, unpack and start it.
+{% include avoidprogramfiles%}
+ ImageJ is distributed as a [portable application](wikipedia:Portable_application "wikilink"). That means that you do not have to run an installer; just download, unpack and start it.
 
 # Troubleshooting
 

@@ -8,7 +8,8 @@ categories:
 description: test description
 ---
 
-{% include imglibmenu%} In ImgLib2, images are represented by *Accessibles*. *Image* here refers to any (partial) function from coordinates to values.
+{% include imglibmenu%}
+ In ImgLib2, images are represented by *Accessibles*. *Image* here refers to any (partial) function from coordinates to values.
 
 In the [ previous section](ImgLib2_-_Accessors "wikilink") we have seen how pixel values can be manipulated using [ Accessors](ImgLib2_-_Accessors "wikilink"). Accessors are obtained from *Accessibles*. For example we have used
 

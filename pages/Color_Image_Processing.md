@@ -10,6 +10,7 @@ description: test description
 
 \_\_FORCETOC\_\_ {% include menu-cookbook%}
 
+
 ## Types of color images
 
 Images with color come in three different forms: pseudo-color, 24-bit RGB image, or color composite image.

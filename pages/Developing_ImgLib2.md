@@ -10,6 +10,7 @@ description: test description
 
 {% include imglibmenu%}
 
+
 ## Introduction
 
 The [ImgLib2](ImgLib2 "wikilink") library uses [Maven](Maven "wikilink") to manage project dependencies. One advantage of this approach is nice integration with various development environments ([IDEs](IDEs "wikilink")).

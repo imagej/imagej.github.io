@@ -22,6 +22,7 @@ description: test description
 {% endcapture %}
 {% include info-box software='ImageJ' name='CoverMaker' maintainer=maintainer author=author source=source released='27/05/2012' latest-version='29/06/2012' status='active' category='[:Category:Plugins](:Category:Plugins "wikilink")' website='' %}{% include toc%}
 
+
 ## Introduction
 
 ![Nature cover for the paper on the developmental hourglass \[1\].](Nature_cover.png "Nature cover for the paper on the developmental hourglass .")This project explores the algorithms for reconstructing scientific images as a combination of other scientific images drawing from a large database of scientific imagery. The resulting image can be visually stunning given that a large database with good balance of colors is available. One such database consisting of about 66,000 images of gene expression patterns in Drosophila embryogenesis is provided [here](#Databases "wikilink") as a starting point. The results of the plugin can be used as material for cover art such as for example the Nature cover on the right.

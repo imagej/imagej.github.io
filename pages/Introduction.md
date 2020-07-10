@@ -8,7 +8,8 @@ categories:
 description: test description
 ---
 
-{% include learn%}== What is ImageJ? == <a href="ImageJ"><img src="/images/pages/Imagej2-icon.png" height="48px"/></a> [ImageJ](ImageJ "wikilink") is an [open source](open_source "wikilink") [image processing](techniques "wikilink") program for multidimensional image data with a focus on scientific imaging.
+{% include learn%}
+== What is ImageJ? == <a href="ImageJ"><img src="/images/pages/Imagej2-icon.png" height="48px"/></a> [ImageJ](ImageJ "wikilink") is an [open source](open_source "wikilink") [image processing](techniques "wikilink") program for multidimensional image data with a focus on scientific imaging.
 
 ## What is Fiji?
 

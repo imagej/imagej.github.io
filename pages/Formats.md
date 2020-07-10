@@ -8,7 +8,8 @@ categories: Import-Export
 description: test description
 ---
 
-{% include menu-formats%}Thanks to ImageJ's [extensibility](extensibility "wikilink") via [plugins](plugins "wikilink"), it supports a lot of image formats\!
+{% include menu-formats%}
+Thanks to ImageJ's [extensibility](extensibility "wikilink") via [plugins](plugins "wikilink"), it supports a lot of image formats\!
 
 ## Life sciences
 

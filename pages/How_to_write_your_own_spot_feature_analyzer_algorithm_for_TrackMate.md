@@ -10,6 +10,7 @@ description: test description
 
 {% include extendingtrackmatetutorials%}
 
+
 ## Introduction
 
 This third article in the series dedicated to extending [TrackMate](TrackMate "wikilink") deals with spot feature analyzer. This is the last of the three kind of feature analyzers you can create, and it focuses on spots, or detections.

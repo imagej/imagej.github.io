@@ -16,6 +16,7 @@ description: test description
 Mark Hiner  
 Curtis Rueden' filename='Stitching\_.jar' source=source released='October 2008' status='active' category='[Stitching](:Category:Stitching "wikilink")' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch) ' %}{% include toc%}
 
+
 # What is Grid/Collection Stitching?
 
 When a large biological specimen must be pictured in high resolution, it must be done in tiles as the entire thing could not fit into the field view of the microscope. Once the entire specimen has been imaged, the tiles must be fit or stitched together to form one coherent image. Some overlap will be present between each tile and its neighbors to verify its location in the image.

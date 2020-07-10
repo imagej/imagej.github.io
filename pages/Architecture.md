@@ -13,7 +13,8 @@ description: test description
   - For information on the ""social"" structure, see [Governance](Governance "wikilink").
   - For information on the ""legal"" structure, see [Licensing](Licensing "wikilink").' %}
 
-{% include develop-menu%}This page describes the technical structure of [SciJava](SciJava "wikilink") and [ImageJ](ImageJ "wikilink") projects. For maximum benefit, we suggest readers familiarize themselves with [Maven](Maven "wikilink"), [Git](Git "wikilink") and [GitHub](GitHub "wikilink") before reading the sections here.
+{% include develop-menu%}
+This page describes the technical structure of [SciJava](SciJava "wikilink") and [ImageJ](ImageJ "wikilink") projects. For maximum benefit, we suggest readers familiarize themselves with [Maven](Maven "wikilink"), [Git](Git "wikilink") and [GitHub](GitHub "wikilink") before reading the sections here.
 
 # Definitions
 

@@ -8,7 +8,8 @@ categories: Fiji
 description: test description
 ---
 
-{% include fijimenu%} Fiji is home to quite a few nice ImageJ plugins\! Here is a non-exhaustive list:
+{% include fijimenu%}
+ Fiji is home to quite a few nice ImageJ plugins\! Here is a non-exhaustive list:
 
   - [3D Viewer](3D_Viewer "wikilink")
 

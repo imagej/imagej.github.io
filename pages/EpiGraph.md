@@ -12,6 +12,7 @@ description: test description
 
 {% include component-stats content=':EpiGraph' %}{| |style="vertical-align:top" | |}{% include toc%}
 
+
 ## **Introduction**
 
 The [EpiGraph](EpiGraph "wikilink") is a Fiji plugin that combines computational geometry and graph theory to measure the degree of arrangement in any made by computational or natural tessellation. Here, a tessellation is treated as a network in which the edges are defined by the regions contacts. A network can be split up into different subgraphs named graphlets. The comparison of the quantity of each type of graphlets with the reference tessellations provide the Graphlet degree Distribution Distances (GDDs) as a marker of arrangement. This plugin has into account three different reference patterns: a "hexagonal lattice", a "random Voronoi Diagram" (generated Voronoi from seeds located randomly) and a "Voronoi Diagram 5" (which represents the common polygon distribution in nature). They have been used to compute a set of references that quantify organization: Epi-Hexagons, Epi-Random and Epi-Voronoi5, respectively.

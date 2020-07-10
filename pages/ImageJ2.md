@@ -37,6 +37,7 @@ To ensure backwards compatibility, ImageJ2 has been designed to fully integrate 
 
 The [Fiji](Fiji "wikilink") distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](Updater "wikilink") and [Launcher](Launcher "wikilink"), were originally developed as part of Fiji. {% include toc%}
 
+
 ## Features of ImageJ2
 
 ImageJ2 provides a wealth of new features and capabilities:

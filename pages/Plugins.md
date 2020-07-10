@@ -8,7 +8,8 @@ categories:
 description: test description
 ---
 
-{% include learn%}ImageJ has been extended with thousands of [plugins](wikipedia:Plug-in_\(computing\) "wikilink"): special-purpose software components that extend ImageJ’s functionality—e.g., by offering additional commands via menu entries.
+{% include learn%}
+ImageJ has been extended with thousands of [plugins](wikipedia:Plug-in_\(computing\) "wikilink"): special-purpose software components that extend ImageJ’s functionality—e.g., by offering additional commands via menu entries.
 
 ## Available plugins
 

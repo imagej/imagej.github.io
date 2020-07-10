@@ -60,5 +60,6 @@ It will be displayed several tables with the measures calculated in each pixel i
 
 {% include reflist%}
 
+
 1.  The size of the region of interesting influence directly the time consuming of our plugin. Large regions could use several minutes to process all the perfusion metrics
 2.  It is still an experimental method. The maps generated are create in a separeted window. Further updates will merge these maps into the original perfusion image.

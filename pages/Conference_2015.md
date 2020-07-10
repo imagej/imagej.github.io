@@ -96,6 +96,7 @@ As such, the 2015 ImageJ Conference Organizers recommended that guests reserve r
 
 {% include clear%}
 
+
 ## Travel support
 
 With this conference, there were no registration fees, and there was a free reception. As such, attendees covered their own travel expenses. There was limited travel support for workshop presenters and featured presentations.
@@ -103,6 +104,7 @@ With this conference, there were no registration fees, and there was a free rece
 # Program
 
 TODO GOOGLE SPREADSHEET WIDGET {% include clear%}
+
 
 For full details including abstracts and presentation recordings, see the [Conference 2015 Program](Conference_2015_Program "wikilink") page.
 

@@ -10,4 +10,5 @@ description: test description
 
 {% include component-stats content=':sc.fiji:Descriptor\_based\_registration' %}{% include stub%}
 
+
 [Category:Plugins](Category:Plugins "wikilink")

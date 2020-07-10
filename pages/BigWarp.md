@@ -14,11 +14,16 @@ The interface enables landmark pair placement and displays the effects of the wa
 
 ## Installation
 
-Bigwarp comes with Fiji. You can access it via *Plugins {% include arrow%} BigDataViewer {% include arrow%} Big Warp*, or by modifying {% include github org='saalfeldlab' repo='bigwarp' path='scripts/bigwarp\_fiji\_demo.bsh' label='this example script' %}. If this is not visible in your installation, try updating Fiji with *Help {% include arrow%} Update Fiji.*
+Bigwarp comes with Fiji. You can access it via *Plugins {% include arrow%}
+ BigDataViewer {% include arrow%}
+ Big Warp*, or by modifying {% include github org='saalfeldlab' repo='bigwarp' path='scripts/bigwarp\_fiji\_demo.bsh' label='this example script' %}. If this is not visible in your installation, try updating Fiji with *Help {% include arrow%}
+ Update Fiji.*
 
 ## Usage
 
-Open two images in ImageJ, one *moving* and the other *target* and navigate to *Plugins {% include arrow%} BigDataViewer {% include arrow%} Big Warp.* A dialog will appear prompting selection of the moving and target images.
+Open two images in ImageJ, one *moving* and the other *target* and navigate to *Plugins {% include arrow%}
+ BigDataViewer {% include arrow%}
+ Big Warp.* A dialog will appear prompting selection of the moving and target images.
 
 Once the two image windows and one table window open, press {% include key content='press|Spacebar' %} to enter "landmark mode". Next, click on a point in the moving image, then click on the corresponding point in the target image. After you have a few moving-target point pairs, press {% include key content='press|T' %} to transform the moving image (you may need to re-navigate if the two image are very far apart: see the {% include key content='press|Q' %} and {% include key content='press|W' %} hotkeys below).
 
@@ -58,8 +63,10 @@ Some changes to landmarks can be done by interacting with the landmark table.
 | {% include key content='press|Ctrl' %}+{% include key content='press|left-click' %}  | Add row to selection.                                   |
 | {% include key content='press|Shift' %}+{% include key content='press|left-click' %} | Select range of rows.                                   |
 | {% include key content='press|Esc' %}                                                | Deselect all rows.                                      |
-| {% include key content='press|right-click' %} {% include arrow%} Delete                   | Deletes a landmark pair (row in the table).             |
-| {% include key content='press|right-click' %} {% include arrow%} Delete all selected      | Deletes all selected landmark pairs (row in the table). |
+| {% include key content='press|right-click' %} {% include arrow%}
+ Delete                   | Deletes a landmark pair (row in the table).             |
+| {% include key content='press|right-click' %} {% include arrow%}
+ Delete all selected      | Deletes all selected landmark pairs (row in the table). |
 
 ### Notes on point addition and landmark pair selection
 
@@ -141,11 +148,13 @@ For all navigation commands you can hold {% include key content='press|Shift' %}
 
 ### Save and load landmarks
 
-Landmarks can be exported and imported from plain text files using the drop down menu in the landmark table panel ( *File {% include arrow%} Export (Import) landmarks.* )
+Landmarks can be exported and imported from plain text files using the drop down menu in the landmark table panel ( *File {% include arrow%}
+ Export (Import) landmarks.* )
 
 ### Export warped images
 
-Export the warped moving image by clicking *File {% include arrow%} \> Export as ImagePlus* or using the {% include key content='press|Ctrl' %}+{% include key content='press|E' %} keyboard shortcut.
+Export the warped moving image by clicking *File {% include arrow%}
+ \> Export as ImagePlus* or using the {% include key content='press|Ctrl' %}+{% include key content='press|E' %} keyboard shortcut.
 
 ![Bigwarp\_export.png](/images/pages/Bigwarp_export.png "Bigwarp_export.png")"
 
@@ -242,7 +251,9 @@ without quotation marks, spaces, or any other characters. Csv files storing bigw
 
 ## Working with large images
 
-The "normal" BigWarp plugin accessible through *Plugins {% include arrow%} Big Data Viewer {% include arrow%} BigWarp* works well for small- and medium-sized images but not for very large volumes (that do not fit into memory). For very large volumes, we recommend first [converting the volume to bigdataviewer's xml/hdf5 format](https://imagej.net/BigDataViewer#Exporting_Datasets_for_the_BigDataViewer), then using [this script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy) to run BigWarp using the xml/h5 file(s). See also [this forum post.](https://forum.image.sc/t/issue-with-big-warp/31472)
+The "normal" BigWarp plugin accessible through *Plugins {% include arrow%}
+ Big Data Viewer {% include arrow%}
+ BigWarp* works well for small- and medium-sized images but not for very large volumes (that do not fit into memory). For very large volumes, we recommend first [converting the volume to bigdataviewer's xml/hdf5 format](https://imagej.net/BigDataViewer#Exporting_Datasets_for_the_BigDataViewer), then using [this script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy) to run BigWarp using the xml/h5 file(s). See also [this forum post.](https://forum.image.sc/t/issue-with-big-warp/31472)
 
 [This script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_N5.groovy) enables you to run BigWarp using images stored using [N5](https://github.com/saalfeldlab/n5).
 

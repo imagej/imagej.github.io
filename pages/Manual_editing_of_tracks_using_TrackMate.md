@@ -46,6 +46,7 @@ The segmentation should take you no more than a minute, even on a standard machi
 
 {% include clear%}
 
+
 ![TrackMate\_DownsampledInitThreshold.png](/images/pages/TrackMate_DownsampledInitThreshold.png "TrackMate_DownsampledInitThreshold.png")"
 
 On the Initial thresholding panel, we see that it is easy to separate spurious spots using the **Quality** feature only. There is a big and sharp peak at the left of the histogram. By moving the slider around you can get the remaining number of spot after filtering. If we put the threshold around 70, just above the first sharp peak, we see that we are left with about 115 spots. Now: We have 17 time-points, each of them containing at most 4 cells and two polar bodies (check the raw movie). So 115 remaining spots seems to be correct, therefore the threshold set at 70 seems right.
@@ -62,6 +63,7 @@ Almost all polar bodies are incorrectly detected, and the localization of cells 
 
 {% include clear%}
 
+
 ## Generating irrelevant tracks
 
 ![Celegans-5pc\_17timepoints-Incorrect.png](/images/pages/Celegans-5pc_17timepoints-Incorrect.png "Celegans-5pc_17timepoints-Incorrect.png")"
@@ -75,6 +77,7 @@ A quick assertion shows that for nuclei, the individual track branches are not s
 This is what we will now manually correct.
 
 {% include clear%}
+
 
 ## Launching TrackScheme
 

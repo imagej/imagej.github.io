@@ -8,7 +8,8 @@ categories: Import-Export
 description: test description
 ---
 
-{% include menu-formats%}The [QuickTime movie format](wikipedia:QuickTime_File_Format "wikilink") is a multimedia container format with extension `.mov`.
+{% include menu-formats%}
+The [QuickTime movie format](wikipedia:QuickTime_File_Format "wikilink") is a multimedia container format with extension `.mov`.
 
 QuickTime MOV files come in many flavors, which are known as codecs. Whether you can open an MOV file in ImageJ will depend on several factors, including the codec used to store the movie, which version of which operating system you have, and which ImageJ [plugin](plugin "wikilink") is used.
 

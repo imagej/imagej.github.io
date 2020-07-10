@@ -8,7 +8,8 @@ categories:
 description: test description
 ---
 
-\_\_NOTOC\_\_{% include info-box content='For a summary of [SciJava](SciJava "wikilink") licensing, see the [Licensing](Licensing "wikilink") page.' %} {% include menu-licenses%}The **MIT License** is a **permissive** [free software](Open_Source "wikilink") license, imposing minimal restrictions on the redistribution of covered software. This is in contrast to [copyleft](wikipedia:Copyleft "wikilink") licenses like the [GPL](GPL "wikilink"), which have reciprocity share-alike requirements. The MIT license is named for the [Massachusetts Institute of Technology](http://mit.edu/), where it originated.
+\_\_NOTOC\_\_{% include info-box content='For a summary of [SciJava](SciJava "wikilink") licensing, see the [Licensing](Licensing "wikilink") page.' %} {% include menu-licenses%}
+The **MIT License** is a **permissive** [free software](Open_Source "wikilink") license, imposing minimal restrictions on the redistribution of covered software. This is in contrast to [copyleft](wikipedia:Copyleft "wikilink") licenses like the [GPL](GPL "wikilink"), which have reciprocity share-alike requirements. The MIT license is named for the [Massachusetts Institute of Technology](http://mit.edu/), where it originated.
 
 See the [Wikipedia article on the MIT license](wikipedia:MIT_License "wikilink") for more information.
 

@@ -8,10 +8,12 @@ categories: Platforms
 description: test description
 ---
 
-{% include menu-platforms%}{% include minibox logo='Tux.png' blurb=' [Talk is cheap. Show me the code.](https://en.wikiquote.org/wiki/Linus_Torvalds)  
+{% include menu-platforms%}
+{% include minibox logo='Tux.png' blurb=' [Talk is cheap. Show me the code.](https://en.wikiquote.org/wiki/Linus_Torvalds)  
 —Linus Torvalds' %}[Linux](wikipedia:Linux "wikilink") (also known as [GNU/Linux](wikipedia:GNU/Linux_naming_controversy "wikilink")) is an [open source](open_source "wikilink") family of desktop operating systems. It is [the third most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](Windows "wikilink") and [macOS](macOS "wikilink"). This page details issues specific to using [ImageJ](ImageJ "wikilink") on Linux systems.
 
 {% include toc%}
+
 
 # Installation
 

@@ -8,7 +8,8 @@ categories: Development
 description: test description
 ---
 
-{% include aboutmenu%}This page offers a list of ImageJ-related projects which need community assistance to move forward in a timely manner.
+{% include aboutmenu%}
+This page offers a list of ImageJ-related projects which need community assistance to move forward in a timely manner.
 
 You can also browse the [open issues on GitHub](https://github.com/search?q=is%3Aopen+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Ascifio+user%3Ascijava+user%3Atrakem2&type=Issues). The list on this page is intended to be higher level, covering significant directions which nobody otherwise has time to pursue, as well as frequently reported issues.
 

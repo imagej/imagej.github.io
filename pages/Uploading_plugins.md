@@ -8,7 +8,8 @@ categories: Development
 description: test description
 ---
 
-{% include outdated%} **Note**: Please make sure that you have a clean build of the plugin you try to upload. You can ensure a clean build by calling the [Fiji Build System](Fiji_Build_System "wikilink") with the *-clean* suffix before building the actual target. Example:
+{% include outdated%}
+ **Note**: Please make sure that you have a clean build of the plugin you try to upload. You can ensure a clean build by calling the [Fiji Build System](Fiji_Build_System "wikilink") with the *-clean* suffix before building the actual target. Example:
 
 `./Build.sh plugins/Fiji_Plugins.jar-clean`  
 `./Build.sh plugins/Fiji_Plugins.jar`

@@ -8,9 +8,11 @@ categories: Platforms
 description: test description
 ---
 
-{% include menu-platforms%}{% include minibox logo='Pi.svg' blurb='Learn programming through fun, practical projects\!' %}The [Raspberry Pi](wikipedia:Raspberry_Pi "wikilink") is an inexpensive single-board computer system which runs the [Raspbian](wikipedia:Raspbian "wikilink") operating system, a flavor of Debian [Linux](Linux "wikilink"). This page provides advice and guidance for running [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") on Raspberry Pi systems.
+{% include menu-platforms%}
+{% include minibox logo='Pi.svg' blurb='Learn programming through fun, practical projects\!' %}The [Raspberry Pi](wikipedia:Raspberry_Pi "wikilink") is an inexpensive single-board computer system which runs the [Raspbian](wikipedia:Raspbian "wikilink") operating system, a flavor of Debian [Linux](Linux "wikilink"). This page provides advice and guidance for running [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") on Raspberry Pi systems.
 
 {% include toc%}
+
 
 # Installation
 

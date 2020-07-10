@@ -10,6 +10,7 @@ description: test description
 
 {% include gitmenu%}
 
+
 ## Merge conflicts
 
 Sometimes you get *merge conflicts* when merging or pulling from a branch. Git will then tell you something like

@@ -20,6 +20,7 @@ description: test description
 
 {% include downloadfiji%}
 
+
 # System requirements
 
 Fiji is supported on the following systems:
@@ -32,7 +33,8 @@ However, Fiji (like ImageJ) should run on any system for which a Java 8 runtime 
 
 # Installation
 
-{% include avoidprogramfiles%} {% include box title='Packages for Debian / Ubuntu' float='right' text='
+{% include avoidprogramfiles%}
+ {% include box title='Packages for Debian / Ubuntu' float='right' text='
 
 We used to offer Debian packages of Fiji. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.
 

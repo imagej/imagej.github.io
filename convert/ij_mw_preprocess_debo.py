@@ -188,7 +188,7 @@ def replace_template_match(document_content, match_content, template_name, templ
         return document_content, False
 
     if len(template_content) == 0:
-        return document_content.replace(match_content, txt_include_start + template_name + txt_liquid_end), False
+        return document_content.replace(match_content, txt_include_start + template_name + txt_liquid_linebreak_end), False
 
     # handle inline templates
     template_content = re.sub(r'\'', r'"', template_content)
@@ -239,7 +239,6 @@ def match_content_parameters(template_content):
     # in case there are already converted includes in the template content, it messes with converting the parameters,
     # so we shadow them with a numbered string and put them back in after converting the parameters.
     include_pattern = re.compile(include_shadowed_regex)
-    link_with_vertical_bar_pattern = re.compile(link_with_vertical_bar_regex)
     shadows_include = []
     shadows_links = []
     idx = 0
@@ -249,6 +248,8 @@ def match_content_parameters(template_content):
         shadows_include.append((shadow, match))
         template_content = template_content.replace(match, shadow)
 
+    # links with vertical bars make it hard to convert the parameters, so we are shadowing them too
+    link_with_vertical_bar_pattern = re.compile(link_with_vertical_bar_regex)
     for match in re.findall(link_with_vertical_bar_pattern, template_content):
         idx += 1
         shadow = "___SHADOW" + str(idx) + "___"
@@ -267,13 +268,15 @@ def match_content_parameters(template_content):
         value = re.sub(r'(\[(\[\[[^\]]*\]\])?[ ]*(http[^\]]*)\])', r' \1 ', value)
         pattern_matched = True
         key = key.replace(" ", "-")
+        if key == "1":
+            key = "content"
         # if there were includes in the value of a parameter, capture the content
         if any(s[0] in value for s in shadows_include):
             captures += txt_capture_start + key + txt_capture_start_end + value + txt_capture_end
             res += key + txt_param_var_start + key + " "
         else:
             res += key + txt_param_start + cleanup(value) + txt_param_end + " "
-    # print(res)
+
     # check if additionally to having parameters, the template has an unnamed value as well,
     # e.g. {{template this is the unnamed value|x=bla|y=blub}}
     # if yes, attach as `content`
@@ -284,6 +287,7 @@ def match_content_parameters(template_content):
             if len(content) > 0:
                 res = "content" + txt_param_start + content + txt_param_end + " " + res
     else:
+        # if we are shadowing includes, capture the content of the parameter, otherwise liquid breaks
         if any(s[0] in template_content for s in shadows_include):
             captures += txt_capture_start + " content " + txt_capture_start_end + template_content + txt_capture_end
             res = "content" + txt_param_var_start + "content "
@@ -291,6 +295,7 @@ def match_content_parameters(template_content):
             content = cleanup(template_content).strip()
             if len(content.strip()) > 0:
                 res = "content" + txt_param_start + content + txt_param_end + " "
+    # unshadow includes and links
     for shadow, include in shadows_include:
         captures = captures.replace(shadow, include)
     for shadow, link in shadows_links:

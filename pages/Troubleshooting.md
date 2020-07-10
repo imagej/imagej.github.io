@@ -10,6 +10,7 @@ description: test description
 
 {% include menu-help%}
 
+
 # How to troubleshoot problems
 
 ## Checking the Java version

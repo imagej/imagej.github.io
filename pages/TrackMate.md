@@ -44,6 +44,7 @@ A movie following one cell of a *C.elegans* embryo tracked over 3 hours, as it d
 
 {% include clear%}
 
+
 ### Single Particle Tracking
 
 TrackMate provides the tools to perform single particle tracking (SPT). SPT is an image analysis challenge where the goal is to segment and follow over time some labelled, spot-like structures. Each spot is segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track. These tracks can then be either visualized or yield further analysis results such as velocity, total displacement, diffusion characteristics, division events, etc...

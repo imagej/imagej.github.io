@@ -8,7 +8,7 @@ categories: Development,IDEs
 description: test description
 ---
 
-{% include info-box 1='
+{% include info-box content='
 
 <center>
 
@@ -24,6 +24,7 @@ many [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") developers use [Ecl
 <center>
 
 {% include ides%}
+
 
 </center>
 

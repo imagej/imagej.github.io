@@ -8,7 +8,9 @@ categories: Plugins
 description: test description
 ---
 
-{% include toc%}{% include outdated%}
+{% include toc%}
+{% include outdated%}
+
 
 ## Key concepts
 

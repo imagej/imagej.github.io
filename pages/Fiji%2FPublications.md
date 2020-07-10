@@ -13,7 +13,8 @@ description: test description
   - For general instructions on citing [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink"), see [Citing](Citing "wikilink").
   - For an index of citable software, see [:Category:Citable](:Category:Citable "wikilink").' %}
 
-{% include fijimenu%}== Publications introducing Fiji ==
+{% include fijimenu%}
+== Publications introducing Fiji ==
 
   - The primary reference for citing Fiji is the paper presented in Nature Methods [Focus on Bioimage Informatics](http://www.nature.com/nmeth/focus/bioimageinformatics/index.html) in July 2012\[1\].
 

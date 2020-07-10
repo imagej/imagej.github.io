@@ -22,6 +22,7 @@ description: test description
 {% endcapture %}
 {% include info-box name='OMEVisual' logo='' software='Fiji' author=author maintainer=maintainer source=source released='08/05/2016' status='v1.0.1, stable' category='' %}{% include toc%}
 
+
 ## Presentation
 
 `OMEVisual` is a Fiji plugin to easily visualize OME metadata.

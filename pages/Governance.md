@@ -13,7 +13,8 @@ description: test description
   - For information on the ""technical"" structure, see [Architecture](Architecture "wikilink").
   - For information on the ""legal"" structure, see [Licensing](Licensing "wikilink").' %}
 
-{% include aboutmenu%}The [ImageJ](ImageJ "wikilink") project, and related projects in the [SciJava](SciJava "wikilink") software ecosystem, are governed as [open source](open_source "wikilink") software projects. Everybody is welcome to [contribute](contribute "wikilink") with [plugins](plugins "wikilink"), patches, [bug reports](Bugs "wikilink"), [tutorials](tutorials "wikilink"), [documentation](documentation "wikilink"), and artwork.
+{% include aboutmenu%}
+The [ImageJ](ImageJ "wikilink") project, and related projects in the [SciJava](SciJava "wikilink") software ecosystem, are governed as [open source](open_source "wikilink") software projects. Everybody is welcome to [contribute](contribute "wikilink") with [plugins](plugins "wikilink"), patches, [bug reports](Bugs "wikilink"), [tutorials](tutorials "wikilink"), [documentation](documentation "wikilink"), and artwork.
 
 That said, every project needs leaders: the ones who participate in *governance* of the project, [maintaining](wikipedia:Software_maintenance "wikilink") the software and making key decisions.
 

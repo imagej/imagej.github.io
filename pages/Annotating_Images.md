@@ -10,6 +10,7 @@ description: test description
 
 \_\_FORCETOC\_\_ {% include menu-cookbook%}
 
+
 ## Scale bar
 
 All images for publications should include a scale bar. A standard size should be used for the scale bars on all images if possible to help avoid confusion.

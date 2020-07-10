@@ -14,6 +14,7 @@ description: test description
 {% endcapture %}
 {% include info-box name='Examples' software='ImgLib2' author='Stephan Preibisch' maintainer='Stephan Preibisch, Curtis Rueden' source=source released='March 2012' latest-version='December 2013' website=' [ImgLib2 publication](http://bioinformatics.oxfordjournals.org/content/early/2012/09/07/bioinformatics.bts543.abstract) ' %} {% include imglibmenu%}
 
+
 ## Jupyter notebook
 
 This tutorial is also available in Jupyter notebook form [here](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/3-Advanced-Usage/2-ImgLib2-in-Detail.ipynb)\!

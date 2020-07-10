@@ -8,7 +8,8 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu%}The source code of ImageJ is very modular; i.e., it is organized into [well-separated](Architecture#Modularity "wikilink") projects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
+{% include develop-menu%}
+The source code of ImageJ is very modular; i.e., it is organized into [well-separated](Architecture#Modularity "wikilink") projects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
 
 ## Where is the code?
 
@@ -43,11 +44,13 @@ To build a Maven project:
 2.  Clone the source repository of interest.
 3.  Type `mvn` from the top-level directory.
 
-Advanced instructions for building, or modifying, the source code are available for specific development environments: {% include ides%} Note that these tutorials are targeted towards [ImageJ](ImageJ "wikilink"), but would apply to any Maven-based project.
+Advanced instructions for building, or modifying, the source code are available for specific development environments: {% include ides%}
+ Note that these tutorials are targeted towards [ImageJ](ImageJ "wikilink"), but would apply to any Maven-based project.
 
 ## Javadocs
 
 {% include javadocsection%}
+
 
 ## Running ImageJ1 unit tests
 

@@ -8,7 +8,8 @@ categories:
 description: test description
 ---
 
-{% include learn%}ImageJ is easy to use, but sometimes you wish for some function that is actually implemented, yet you do not know how to trigger. This page lists a few of those tricks.
+{% include learn%}
+ImageJ is easy to use, but sometimes you wish for some function that is actually implemented, yet you do not know how to trigger. This page lists a few of those tricks.
 
 ## Show the memory consumption
 

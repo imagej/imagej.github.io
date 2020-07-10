@@ -13,7 +13,8 @@ description: test description
   - For information on their ""technical"" structure, see [Architecture](Architecture "wikilink").
   - For information on their ""social"" structure, see [Governance](Governance "wikilink").' %}
 
-{% include menu-licenses%}The [ImageJ](ImageJ "wikilink") project, and related projects in the [SciJava](SciJava "wikilink") component collection, are licensed as [open source](open_source "wikilink") software (OSS) projects.
+{% include menu-licenses%}
+The [ImageJ](ImageJ "wikilink") project, and related projects in the [SciJava](SciJava "wikilink") component collection, are licensed as [open source](open_source "wikilink") software (OSS) projects.
 
 For an introduction to OSS licensing, see http://choosealicense.com/.
 

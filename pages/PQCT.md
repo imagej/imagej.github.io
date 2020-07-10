@@ -14,6 +14,7 @@ description: test description
 {% endcapture %}
 {% include info-box name='pQCT' author='Timo Rantalainen' software='ImageJ/Fiji' source=source released='Feb 9<sup>th</sup>, 2018' latest-version='3.0.0, Jun 8<sup>th</sup>, 2018' status='stable' %}{% include toc%}
 
+
 ## Summary
 
 This package contains tools for Stractec pQCT soft-tissue and bone images. It's designed for the following analyses:

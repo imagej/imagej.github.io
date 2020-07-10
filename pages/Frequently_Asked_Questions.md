@@ -8,7 +8,8 @@ categories:
 description: test description
 ---
 
-{% include menu-help%} This page lists answers to the most frequently asked questions.
+{% include menu-help%}
+ This page lists answers to the most frequently asked questions.
 
 # Usage
 
@@ -401,7 +402,8 @@ More effort is still needed to clarify web resources, to explain concisely and c
 
 ## This is a Wiki but I cannot edit it\! Why?
 
-If you \[{% include server%}/wiki/index.php?title=Special:Userlogin\&type=signup create an account\], you will be able to make edits while logged in.
+If you \[{% include server%}
+/wiki/index.php?title=Special:Userlogin\&type=signup create an account\], you will be able to make edits while logged in.
 
 ## The Wiki is lacking documentation about X, Y and Z
 

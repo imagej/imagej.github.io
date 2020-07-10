@@ -31,6 +31,7 @@ If you are passingly familiar with Git, but wish it wasn"t so arcane, check out:
 
 {% include gitmenu%}
 
+
 </div>
 
 This web site has lots of tutorials on Git; see the left sidebar.

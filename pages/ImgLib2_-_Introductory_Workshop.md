@@ -8,7 +8,8 @@ categories: ImgLib
 description: test description
 ---
 
-{% include imglibmenu%} Please download the following archive and the presentation to follow the workshop presentation:
+{% include imglibmenu%}
+ Please download the following archive and the presentation to follow the workshop presentation:
 
   - [The presentation as PDF](:File:ImgLib2_presentation.pdf "wikilink")
 

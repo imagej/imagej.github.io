@@ -8,9 +8,11 @@ categories: Platforms
 description: test description
 ---
 
-{% include menu-platforms%}{% include minibox logo='Osx.png' blurb='[Think different](wikipedia:Think_different "wikilink").' %}[macOS](wikipedia:macOS "wikilink") (formerly called Mac OS X, then OS X) is [Apple](wikipedia:Apple_Inc. "wikilink")'s desktop operating system. It is [the second most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](Windows "wikilink"). This page details issues specific to using [ImageJ](ImageJ "wikilink") on macOS systems.
+{% include menu-platforms%}
+{% include minibox logo='Osx.png' blurb='[Think different](wikipedia:Think_different "wikilink").' %}[macOS](wikipedia:macOS "wikilink") (formerly called Mac OS X, then OS X) is [Apple](wikipedia:Apple_Inc. "wikilink")'s desktop operating system. It is [the second most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](Windows "wikilink"). This page details issues specific to using [ImageJ](ImageJ "wikilink") on macOS systems.
 
 {% include toc%}
+
 
 # Installation
 

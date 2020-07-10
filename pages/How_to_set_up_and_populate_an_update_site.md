@@ -10,6 +10,7 @@ description: test description
 
 {% include menu-updatesites%}
 
+
 ## Introduction
 
 This tutorial explains how to **set up a website to distribute your plugins**. It assumes that your plugins are correctly installed in your local ImageJ setup.
@@ -160,7 +161,8 @@ For even more visibility and practicability, you can ask to have your update sit
 
 ## Publishing your update site
 
-If you want your update site to be listed in the ImageJ update manager, follow the instructions at this page : {% include list-of-update-sites%}.
+If you want your update site to be listed in the ImageJ update manager, follow the instructions at this page : {% include list-of-update-sites%}
+.
 
 ## Further Reading
 

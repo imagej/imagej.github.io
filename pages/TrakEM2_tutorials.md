@@ -22,6 +22,7 @@ This is the [basic tutorial for TrakEM2](TrakEM2_basics_tutorial "wikilink"). **
 
 {% include clear%}
 
+
 ## Video tutorial on segmenting/outlining objects over multiple sections in 3D
 
 ![TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)](/images/pages/Arealists-brushing.jpg "TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)")" This mp4 [video tutorial](http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4) covers:
@@ -32,6 +33,7 @@ This is the [basic tutorial for TrakEM2](TrakEM2_basics_tutorial "wikilink"). **
 See also the list of [key bindings for AreaList](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#edit_arealist).
 
 {% include clear%}
+
 
 ## Video tutorial on aligning sections
 
@@ -45,6 +47,7 @@ See also the list of [key bindings for AreaList](http://www.ini.uzh.ch/~acardona
 See also the feature extraction and alignment [parameters explained](http://www.ini.uzh.ch/~acardona/howto.html#sift_parameters).
 
 {% include clear%}
+
 
 ## Video tutorial on manual segmentation modes
 
@@ -61,6 +64,7 @@ See also the feature extraction and alignment [parameters explained](http://www.
 
 {% include clear%}
 
+
 ## Video tutorial on semi-automatic segmentation
 
 ![TrakEM2 semi-automatic segmentation](/images/pages/Screenshot-TrakEM2-tutorial-automatic-segmentation.png "TrakEM2 semi-automatic segmentation")"
@@ -72,6 +76,7 @@ In [this video tutorial](TrakEM2_semi-automatic_segmentation_tutorial "wikilink"
   - Selecting segmentation parameters.
 
 {% include clear%}
+
 
 ## Video tutorial on measuring surfaces and volumes
 
@@ -85,6 +90,7 @@ In [this video tutorial](TrakEM2_measurements_tutorial "wikilink") you will lear
 See also [AreaList measurements](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#measure_arealist) in the TrakEM2 manual, with figures.
 
 {% include clear%}
+
 
 ## Video tutorial on adding sections/layers to an existing project
 
@@ -100,6 +106,7 @@ In the tutorial, the layers are imported following an existing set of layers, i.
 
 {% include clear%}
 
+
 ## Video tutorial on saving a project
 
 ![TrakEM2 saving a project](/images/pages/Screenshot-TrakEM2-save-project.png "TrakEM2 saving a project")"
@@ -107,6 +114,7 @@ In the tutorial, the layers are imported following an existing set of layers, i.
   - [Saving a TrakEM2 project](TrakEM2_saving_project_tutorial "wikilink") into an .XML file.
 
 {% include clear%}
+
 
 ## Video tutorial on 3D reconstruction from serial section
 

@@ -10,4 +10,5 @@ description: test description
 
 {% include component-stats content=':sc.fiji:Fiji\_Developer' %}{% include stub%}
 
+
 [Category:Plugins](Category:Plugins "wikilink")

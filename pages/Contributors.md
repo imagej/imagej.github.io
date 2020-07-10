@@ -14,7 +14,8 @@ description: test description
   - For information on how ImageJ projects are ""funded"", see [Funding](Funding "wikilink").
   - For information on ""citing"" these projects, see [Citing](Citing "wikilink").' %}
 
-{% include aboutmenu%}\_\_NOTOC\_\_== Who we are ==
+{% include aboutmenu%}
+\_\_NOTOC\_\_== Who we are ==
 
 <div style="font-size: small">
 
@@ -121,6 +122,7 @@ Note: This list is only irregularly updated.
 
 {% include clear%}
 
+
 <div style="float: left">
 
 ### Plugin maintainers
@@ -138,6 +140,7 @@ Our deep thanks to {% include person content='Rasband' %}, author of [ImageJ1](I
 ### Institutions
 
 {% include reflist%}
+
 
 </div>
 

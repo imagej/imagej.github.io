@@ -14,6 +14,7 @@ description: test description
 {% endcapture %}
 {% include info-box name='LungJ' author='[Lasse Wollatz](User:LungJ "wikilink")' maintainer='[Lasse Wollatz](User:LungJ "wikilink")' software='ImageJ/Fiji' logo='![LungJ-logo.png](/images/pages/LungJ-logo.png "LungJ-logo.png")"' source=source released='Nov 10<sup>st</sup>, 2016' latest-version='0.5.1, November 10<sup>th</sup>, 2016 (LungJ v0.5.1)' status='stable, new' category='[Segmentation](:Category:Segmentation "wikilink"), [Binary](:Category:Binary "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Image annotation](:Category:Image_annotation "wikilink")' %}{% include toc%}
 
+
 ## Installation
 
 1\) {% include bc content='Help | Update...'%}

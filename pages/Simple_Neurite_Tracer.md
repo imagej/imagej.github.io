@@ -10,6 +10,7 @@ description: test description
 
 <seo metak="snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy" metad="snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy" /> {% include component-stats content=':sc.fiji:Simple\_Neurite\_Tracer' %} The ImageJ framework for semi-automated tracing of neurons and tubular structures. {% include toc%}
 
+
 ## Introduction
 
 SNT is designed to allow easy semi-automatic tracing of neurons or other tube-like structures (e.g., blood vessels) through 3D image stacks. The plugin has built-in tools for analysis and hardware accelerated 3D visualization of the results. Data can be imported and exported in SWC files for interaction with other software, or details of the traces can be exported as CSV files for analysis in spreadsheets or statistical software. The [native file format](#Technical_Documentation "wikilink") is open and XML-based. This plugin is Free Software (also known as Open Source software).

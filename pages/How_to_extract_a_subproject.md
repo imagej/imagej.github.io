@@ -8,7 +8,8 @@ categories: Development
 description: test description
 ---
 
-{% include gitmenu%} Sometimes, a piece of functionality is developed as part of one project, but grows so much as to warrant becoming its own, separate project.
+{% include gitmenu%}
+ Sometimes, a piece of functionality is developed as part of one project, but grows so much as to warrant becoming its own, separate project.
 
 This tutorial describes how to split part of a Git repository into its own dedicated Git repository, preserving only the history relevant to the subproject being extracted.
 

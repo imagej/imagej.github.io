@@ -10,6 +10,7 @@ description: test description
 
 \_\_FORCETOC\_\_ {% include menu-cookbook%}
 
+
 ## Slice shuffling/removing/Adding
 
 The slices in a stack can be manipulated in many ways. Some of these functions are described below.

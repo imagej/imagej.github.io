@@ -8,7 +8,8 @@ categories:
 description: test description
 ---
 
-\_\_NOTOC\_\_{% include info-box content='For a summary of [SciJava](SciJava "wikilink") licensing, see the [Licensing](Licensing "wikilink") page.' %} {% include menu-licenses%}The **Apache License** is a **permissive** [free software](Open_Source "wikilink") license, imposing minimal restrictions on the redistribution of covered software. This is in contrast to [copyleft](wikipedia:Copyleft "wikilink") licenses like the [GPL](GPL "wikilink"), which have reciprocity share-alike requirements. The Apache License is named for the [Apache Software Foundation](wikipedia:Apache_Software_Foundation "wikilink"), where it originated.
+\_\_NOTOC\_\_{% include info-box content='For a summary of [SciJava](SciJava "wikilink") licensing, see the [Licensing](Licensing "wikilink") page.' %} {% include menu-licenses%}
+The **Apache License** is a **permissive** [free software](Open_Source "wikilink") license, imposing minimal restrictions on the redistribution of covered software. This is in contrast to [copyleft](wikipedia:Copyleft "wikilink") licenses like the [GPL](GPL "wikilink"), which have reciprocity share-alike requirements. The Apache License is named for the [Apache Software Foundation](wikipedia:Apache_Software_Foundation "wikilink"), where it originated.
 
 See the [Wikipedia article on the Apache License](wikipedia:Apache_License "wikilink") for more information.
 

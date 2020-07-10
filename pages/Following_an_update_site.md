@@ -8,7 +8,9 @@ categories: Tutorials
 description: test description
 ---
 
-{% include updatesiteswarning-box%} {% include menu-updatesites%}
+{% include updatesiteswarning-box%}
+ {% include menu-updatesites%}
+
 
 ## Introduction
 
