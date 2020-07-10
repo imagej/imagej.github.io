@@ -10,7 +10,6 @@ description: This page is a feature demo.
 
 <center>
 <h1>Project details box</h1>
-<hr>
 </center>
 
 **A project details box can be created by including `details-box`, for example:**
@@ -75,12 +74,10 @@ Eum ei melius salutandi urbanitas, id duo modo discere dolorum. Tota nonumes ei 
 
 <center>
 <h1>Table of contents (TOC) -- Sidebar</h1>
-<hr>
 </center>
 
 <center>
 <h1>Images without legends</h1>
-<hr>
 </center>
 
 **Images can be added to your page by including `image-` with a location (_i.e._ `left`, `right`, `center` or `fit`) and the path to your image. For example here is a left aligned image with some text:**
@@ -115,7 +112,6 @@ Eum ei melius salutandi urbanitas, id duo modo discere dolorum. Tota nonumes ei 
 
 <center>
 <h1>Images with legends</h1>
-<hr>
 </center>
 
 **Images can be added with an accompanying legend text by including `figure-` followed by a location (_e.g._ `left`, `right` and `center`) as well as a `content` variable for the legend text. For example, an image with a legened (or a "figure") can be added to the left of the text:**
@@ -161,7 +157,6 @@ Eum ei melius salutandi urbanitas, id duo modo discere dolorum. Tota nonumes ei 
 
 <center>
 <h1>Information/Warning/Tech boxes</h1>
-<hr>
 </center>
 
 **Information and warning boxes allow you to notify the reader of something important details to keep in mind. To use the information and warning boxes, include them in your markdown document, and utilize the `content` variable to contain your text. For example:**
@@ -224,7 +219,6 @@ If you want to learn more about how to create an info box, view the source of th
 
 <center>
 <h1>Left/Right sidebox</h1>
-<hr>
 </center>
 
 **Sideboxes on the left or right of a body of text can be added easily by including `sidebox-right` or `sidebox-left`. Here's a box on the right:**
@@ -247,7 +241,6 @@ Eum ei melius salutandi urbanitas, id duo modo discere dolorum. Tota nonumes ei 
 
 <center>
 <h1>Math eqations</h1>
-<hr>
 </center>
 
 Note, Because MathJax 3 broke support for MathJax 2 style equations parsed by Kramdown, equations are only recognized by the `$$` tag.
