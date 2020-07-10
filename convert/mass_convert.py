@@ -36,7 +36,8 @@ def copy_media(file_name, path_in, root_out):
     file_out = os.path.join(root_out, file_name)
     file_in = os.path.join(os.path.dirname(path_in), file_name)
     if not os.path.exists(file_in):
-        missing_media.append(file_name)
+        if file_name not in missing_media:
+            missing_media.append(file_name)
         print("Could not find media " + file_in)
         return
     converted_media.append(file_name)
@@ -90,10 +91,12 @@ def _convert(page_title, recursive=False):
         print("Cannot process, blacklisted: " + page_title)
         return
     path_in = None
+    mw_title = page_title + ".mw"
     if not metapage:
-        path_in = os.path.join(root_in, page_title + ".mw")
+        path_in = os.path.join(root_in, mw_title)
         if not os.path.exists(path_in):
-            missing_pages.append(page_title+".mw")
+            if mw_title not in missing_pages:
+                missing_pages.append(mw_title)
             # print("Could not find " + page_title)
             return
         title = get_title(path_in)
@@ -102,7 +105,7 @@ def _convert(page_title, recursive=False):
     if os.path.exists(path_out):
         return
     convert(path_in, path_out, layout, title)
-    converted_pages.append(title+".mw")
+    converted_pages.append(mw_title)
     if recursive:
         convert_links(path_out)
 
