@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>{{page.title}}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Navigation bar-->
+		{% include nav-bar %}
+
+		<!-- Breadcrumb -->
+		{% include nav-bc %}
+
+		<!-- Page-info -->
+		{% include page-info %}
+
+        <section id="page" class="main style1">
+            <div class="container">
+                <header class="major special">
+					<h1><strong>{{page.title}}</strong></h1>
+				</header>
+					<div class="box alt"></div>
+						<!-- Page content -->
+						<div id="content" class="browse">
+							{{content}}
+						</div>
+
+		</section>
+                    
+		<!-- Footer -->
+		{% include footer %}
+
+		<!-- Scripts -->
+		{% include base-scripts %}
+		{% if page.use_math %}
+			{% include mathjax-scripts %}
+		{% endif %}
+
+  </body>
+</html>
