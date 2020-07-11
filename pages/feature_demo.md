@@ -16,7 +16,7 @@ description: This page is a feature demo.
 | Insert figure | [figure]({{"/pages/demo-figure" | relative_url}})
 | Link to github files | [github]({{"/pages/demo-github" | relative_url}}) |
 | Insert images | [image]({{"/pages/demo-image" | relative_url}}) |
-| Insert info-box | [info-box]({{"/pages/demo-info-box" | relative_url}})
+| Insert a notice | [info-box]({{"/pages/demo-info-box" | relative_url}})
 | Insert logos | [logo]({{"/pages/demo-logo" | relative_url}}) |
 | Insert person details | [person]({{"/pages/demo-person" | relative_url}})
 
@@ -25,29 +25,7 @@ description: This page is a feature demo.
 <h1>Information/Warning/Tech boxes</h1>
 </center>
 
-**Information and warning boxes allow you to notify the reader of something important details to keep in mind. To use the information and warning boxes, include them in your markdown document, and utilize the `content` variable to contain your text. For example:**
 
-{% raw %}
-```
-{% include info-box content="Hey this is the info box! 
-
-- item 1
-- item 2
-
-If you want to learn more about how to create an info box, view the source of this page! Such wow!" %}
-```
-{% endraw %}
-
-**Creates:**
-
-{% include info-box content="Hey this is the info box! 
-
-- item 1
-- item 2
-
-If you want to learn more about how to create an info box, view the source of this page! Such wow!" %}
-
-**Note that you can still use markdown inside the `""` where your text is placed. In this example I'm using markdown to create a list inside the information box.**
 
 **A warning box can be created like this:**
 
