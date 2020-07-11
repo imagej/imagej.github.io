@@ -19,47 +19,9 @@ description: This page is a feature demo.
 | Insert a notice | [info-box]({{"/pages/demo-info-box" | relative_url}})
 | Insert logos | [logo]({{"/pages/demo-logo" | relative_url}}) |
 | Insert person details | [person]({{"/pages/demo-person" | relative_url}})
+| Insert a tech box | [tech-box]({{"/pages/demo-tech-box" | relative_url}})
 | Insert a warning | [warning-box]({{"/pages/demo-warning-box" | relative_url}})
 
-<center>
-<h1>Information/Warning/Tech boxes</h1>
-</center>
-
-
-
-**A warning box can be created like this:**
-
-{% raw %}
-```
-{% include warning-box content="Stop! This is an important message! Did you check out the plugins categories page? What do you think? Make sure you wash your hands! Okay please continue reading.
-" %}
-```
-{% endraw %}
-
-{% include warning-box content="Stop! This is an important message! Did you check out the plugins categories page? What do you think? Make sure you wash your hands! Okay please continue reading.
-" %}
-
-**You can also use a tech-box to highlight a technology:**
-
-{% raw %}
-```
-{% include tech-box content="Wait stop! There's some tech going on here!
-
-- Tech item 1
-- Tech item 2
-- Tech item 3
-
-" %}
-```
-{% endraw %}
-
-{% include tech-box content="Wait stop! There's some tech going on here!
-
-- Tech item 1
-- Tech item 2
-- Tech item 3
-
-" %}
 
 <center>
 <h1>Left/Right sidebox</h1>
