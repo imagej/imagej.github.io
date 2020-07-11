@@ -19,7 +19,7 @@ description: This page is a feature demo.
 | Insert a notice | [info-box]({{"/pages/demo-info-box" | relative_url}})
 | Insert logos | [logo]({{"/pages/demo-logo" | relative_url}}) |
 | Insert person details | [person]({{"/pages/demo-person" | relative_url}})
-
+| Insert a warning | [warning-box]({{"/pages/demo-warning-box" | relative_url}})
 
 <center>
 <h1>Information/Warning/Tech boxes</h1>
