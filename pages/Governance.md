@@ -8,64 +8,31 @@ categories: Development
 description: test description
 ---
 
-{% include sidebox-right content='This page describes the ""social""
-structure of [SciJava](SciJava "wikilink") projects.
+{% include info-box content='This page describes the ""social"" structure of [SciJava](SciJava "wikilink") projects.
 
-  - For information on the ""technical"" structure, see
-    [Architecture](Architecture "wikilink").
-  - For information on the ""legal"" structure, see
-    [Licensing](Licensing "wikilink").' %}
+  - For information on the ""technical"" structure, see [Architecture](Architecture "wikilink").
+  - For information on the ""legal"" structure, see [Licensing](Licensing "wikilink").' %}
 
-{% include aboutmenu %}The [ImageJ](ImageJ "wikilink") project, and
-related projects in the [SciJava](SciJava "wikilink") software
-ecosystem, are governed as [open source](open_source "wikilink")
-software projects. Everybody is welcome to
-[contribute](contribute "wikilink") with [plugins](plugins "wikilink"),
-patches, [bug reports](Bugs "wikilink"),
-[tutorials](tutorials "wikilink"),
-[documentation](documentation "wikilink"), and artwork.
+{% include aboutmenu%}
+The [ImageJ](ImageJ "wikilink") project, and related projects in the [SciJava](SciJava "wikilink") software ecosystem, are governed as [open source](open_source "wikilink") software projects. Everybody is welcome to [contribute](contribute "wikilink") with [plugins](plugins "wikilink"), patches, [bug reports](Bugs "wikilink"), [tutorials](tutorials "wikilink"), [documentation](documentation "wikilink"), and artwork.
 
-That said, every project needs leaders: the ones who participate in
-*governance* of the project,
-[maintaining](wikipedia:Software_maintenance "wikilink") the software
-and making key decisions.
+That said, every project needs leaders: the ones who participate in *governance* of the project, [maintaining](wikipedia:Software_maintenance "wikilink") the software and making key decisions.
 
 ## Project roles
 
-Because [open source](open_source "wikilink") software (OSS) is highly
-collaborative, it is extremely important to understand the difference
-between various roles on the project, to avoid misconceptions about
-**authority** (who makes decisions) and **responsibility** (who is
-pledged to do the work) concerning each project.
+Because [open source](open_source "wikilink") software (OSS) is highly collaborative, it is extremely important to understand the difference between various roles on the project, to avoid misconceptions about **authority** (who makes decisions) and **responsibility** (who is pledged to do the work) concerning each project.
 
 The most common roles in OSS are:
 
   - **Founders** are the people who originally launched the project.
-  - **Leads** are responsible for making final decisions. In the [open
-    source](open_source "wikilink") world these people are often
-    referred to as [benevolent
-    dictators](http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html).
-    Changes with a serious impact on the community are typically
-    [discussed on open channels](Community "wikilink") first.
-  - **Maintainers** keep the project functional, fix bugs and make
-    releases. They often make day to day decisions, and are typically
-    involved in discussion with the project lead(s) regarding major
-    decisions, although the lead has final decision-making authority.
-  - **Developers** are people who work on the project significantly or
-    often. Typically they have direct push access to the source code. In
-    some cases they make day to day decisions, depending on their
-    experience and comfort level with the project.
-  - **Contributors** are people who help with the project either
-    currently or in the past. They may participate occasionally or
-    sporadically, and are typically not involved in project decision
-    making.
+  - **Leads** are responsible for making final decisions. In the [open source](open_source "wikilink") world these people are often referred to as [benevolent dictators](http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html). Changes with a serious impact on the community are typically [discussed on open channels](Community "wikilink") first.
+  - **Maintainers** keep the project functional, fix bugs and make releases. They often make day to day decisions, and are typically involved in discussion with the project lead(s) regarding major decisions, although the lead has final decision-making authority.
+  - **Developers** are people who work on the project significantly or often. Typically they have direct push access to the source code. In some cases they make day to day decisions, depending on their experience and comfort level with the project.
+  - **Contributors** are people who help with the project either currently or in the past. They may participate occasionally or sporadically, and are typically not involved in project decision making.
 
 ### SciJava team roles
 
-Projects in the [SciJava component collection](Architecture "wikilink")
-define each component's **team** as the group of people who take
-*responsibility* for it. The following roles formalize the ways people
-are pledged to help:
+Projects in the [SciJava component collection](Architecture "wikilink") define each component's **team** as the group of people who take *responsibility* for it. The following roles formalize the ways people are pledged to help:
 
 | Role        | Commitment                                                                                                                         |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
@@ -82,22 +49,13 @@ Individuals often fill more than one role.
 
 ## Component status
 
-This web site documents lots of software
-[components](components "wikilink")—and in particular, many ImageJ
-[plugins](plugins "wikilink"). Components in the ecosystem each have a
-distinct development path, with varying levels of maturity and activity,
-which is ultimately determined by the people who participate in
-developing it.
+This web site documents lots of software [components](components "wikilink")—and in particular, many ImageJ [plugins](plugins "wikilink"). Components in the ecosystem each have a distinct development path, with varying levels of maturity and activity, which is ultimately determined by the people who participate in developing it.
 
-Each component's page features an informational sidebar with a status
-report derived from the component's declared *team*. This sidebar is
-intended to help users understand what level to expect when seeking
-help, reporting issues, and submitting feature requests.
+Each component's page features an informational sidebar with a status report derived from the component's declared *team*. This sidebar is intended to help users understand what level to expect when seeking help, reporting issues, and submitting feature requests.
 
 ### Development status
 
-**Development status** conveys what to expect regarding a component's
-future.
+**Development status** conveys what to expect regarding a component's future.
 
 | Status   | Meaning                                                                                                                                                                                     |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -108,8 +66,7 @@ future.
 
 ### Support status
 
-**Support status** indicates the level to which the team responds to
-questions and [issue reports](bugs "wikilink").
+**Support status** indicates the level to which the team responds to questions and [issue reports](bugs "wikilink").
 
 | Status  | Meaning                                                                                                                                                                                         |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -120,8 +77,7 @@ questions and [issue reports](bugs "wikilink").
 
 ## SciJava project summary
 
-Here is a summary of roles for projects in the
-[SciJava](SciJava "wikilink") ecosystem.
+Here is a summary of roles for projects in the [SciJava](SciJava "wikilink") ecosystem.
 
 <table>
 <tbody>
@@ -321,21 +277,13 @@ Birgit Möller</p></td>
 </tbody>
 </table>
 
-<sup>1</sup> Pietzsch leads on day to day issues. Pietzsch, Preibisch
-and Saalfeld vote on primary decisions, with Pietzsch's vote breaking
-ties.  
-<sup>2</sup> Barber leads development of the {% include github
-org='slim-curve' repo='slim-curve' label='SLIM Curve C library' %};
-Rueden leads development of the {% include github org='slim-curve'
-repo='slim-plugin' label='SLIM Curve plugin for ImageJ' %}.
+<sup>1</sup> Pietzsch leads on day to day issues. Pietzsch, Preibisch and Saalfeld vote on primary decisions, with Pietzsch's vote breaking ties.  
+<sup>2</sup> Barber leads development of the {% include github org='slim-curve' repo='slim-curve' label='SLIM Curve C library' %}; Rueden leads development of the {% include github org='slim-curve' repo='slim-plugin' label='SLIM Curve plugin for ImageJ' %}.
 
 ## Further reading
 
-  - [OSS Watch's article on Governance
-    Models](http://oss-watch.ac.uk/resources/governancemodels)
-  - Eric S. Raymond's [Homesteading the
-    Noosphere](http://catb.org/~esr/writings/homesteading/homesteading/)
-  - Eric S. Raymond's [The Cathedral and the
-    Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/)
+  - [OSS Watch's article on Governance Models](http://oss-watch.ac.uk/resources/governancemodels)
+  - Eric S. Raymond's [Homesteading the Noosphere](http://catb.org/~esr/writings/homesteading/homesteading/)
+  - Eric S. Raymond's [The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/)
 
 [Category:Development](Category:Development "wikilink")

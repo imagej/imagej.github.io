@@ -8,94 +8,59 @@ categories: Scripting,Jython
 description: test description
 ---
 
-{% include sidebox-right content='This page is a copy of [Jython
-Scripting](Jython_Scripting "wikilink"). The original wiki page is in a
-rewrite progress. When rewriting [Jython
-Scripting](Jython_Scripting "wikilink") is finished, this wiki page will
-be shortened to only contain Jython code examples.' %}
+{% include info-box content='This page is a copy of [Jython Scripting](Jython_Scripting "wikilink"). The original wiki page is in a rewrite progress. When rewriting [Jython Scripting](Jython_Scripting "wikilink") is finished, this wiki page will be shortened to only contain Jython code examples.' %}
 
-{% include learn content='scripting' %}[Jython](http://www.jython.org/)
-is an implementation of the [Python programming
-language](https://www.python.org/) designed to run on the Java platform.
+{% include learn content='scripting' %}[Jython](http://www.jython.org/) is an implementation of the [Python programming language](https://www.python.org/) designed to run on the Java platform.
 
 ## Quickstart
 
-  - Press {% include key content='\[' %} to bring up the [Script
-    Editor](Script_Editor "wikilink").
-  - Select an example Jython script from the {% include bc
-    content='Templates | \[by language\] | Python'%} menu.
+  - Press {% include key content='\[' %} to bring up the [Script Editor](Script_Editor "wikilink").
+  - Select an example Jython script from the {% include bc content='Templates | \[by language\] | Python'%} menu.
   - Press {% include key content='Ctrl|R' %} to run the script\!
 
 ## The Jython interpreter plugin
 
-The interpreter provides a screen and a prompt. Type any jython code on
-the prompt to interact with ImageJ.
+The interpreter provides a screen and a prompt. Type any jython code on the prompt to interact with ImageJ.
 
-Launch it from {% include bc content='Plugins | Scripting | Jython
-Interpreter'%}. See [Scripting Help](Scripting_Help "wikilink") for all
-keybindings, and also [Scripting
-comparisons](Scripting_comparisons "wikilink").
+Launch it from {% include bc content='Plugins | Scripting | Jython Interpreter'%}. See [Scripting Help](Scripting_Help "wikilink") for all keybindings, and also [Scripting comparisons](Scripting_comparisons "wikilink").
 
-{% capture content %} Note that ImageJ also ships a unified Script
-Interpreter plugin, accessible from {% include bc content="Plugins |
-Scripting | Script Interpreter"%}. But it is currently beta quality, and
-the Python language does not work properly due to bugs. Once this issue
-is fixed, the unified Script Interpreter will replace the
-language-specific interpreters such as the Jython Interpreter. {%
-endcapture %} {% include warning-sidebox-right content=content %}
 
-Within the interpreter, all ImageJ, java.lang.\* and TrakEM2 classes are
-automatically imported. So creating new images and manipulating them is
-very straighforward.
+{% capture  content %}
+Note that ImageJ also ships a unified Script Interpreter plugin, accessible from {% include bc content='Plugins | Scripting | Script Interpreter'%}. But it is currently beta quality, and the Python language does not work properly due to bugs. Once this issue is fixed, the unified Script Interpreter will replace the language-specific interpreters such as the Jython Interpreter.
+{% endcapture %}
+{% include warning-box content=content %}
+
+Within the interpreter, all ImageJ, java.lang.\* and TrakEM2 classes are automatically imported. So creating new images and manipulating them is very straighforward.
 
 ### Language basics
 
   - Any text after a \# is commented out.
-  - There are no line terminators (such as ';' in other languages),
-    neither curly braces to define code blocks.
+  - There are no line terminators (such as ';' in other languages), neither curly braces to define code blocks.
   - Indentation defines code blocks.
-  - Functions are defined with <i>def</i>, and classes with
-    <i>class</i>.
+  - Functions are defined with <i>def</i>, and classes with <i>class</i>.
   - Functions are objects, and thus storable in variables.
-  - Jython (and python in general) accepts a mixture of procedural and
-    object-oriented code.
-  - Jython currently implements the Python language at its 2.5 version.
-    All [documentation for python 2.5](http://www.python.org/doc/2.5.2/)
-    applies to Jython bundled with Fiji (with the remarks listed later).
+  - Jython (and python in general) accepts a mixture of procedural and object-oriented code.
+  - Jython currently implements the Python language at its 2.5 version. All [documentation for python 2.5](http://www.python.org/doc/2.5.2/) applies to Jython bundled with Fiji (with the remarks listed later).
 
 #### Importing classes
 
-{% include importing-classes lang='Jython' %} You can specify imports in
-Jython as follows:
+{% include importing-classes lang='Jython' %} You can specify imports in Jython as follows:
 
 ``` python
 from java.io import File
 ```
 
-Where `java.io.File` is the class to be imported. See also section
-[Importing other *.py* scripts
-(modules)](#Importing_other_.py_scripts_.28modules.29 "wikilink") for
-importing user python modules.
+Where `java.io.File` is the class to be imported. See also section [Importing other *.py* scripts (modules)](#Importing_other_.py_scripts_.28modules.29 "wikilink") for importing user python modules.
 
 ### Workflow for creating Jython scripts
 
 To create a script for the GUI, the recommended setup is the following:
 
-  - Edit and save a file in your favorite text editor. If you want
-    ImageJ1 to insert it into the Menu structure, the file must be saved
-    somewhere under ImageJ plugins folder, have an underscore on the
-    name, and a .py extension.
-  - Run {% include bc content='Plugins | Scripting | Refresh Jython
-    scripts'%} <b>only</b> the very first time after newly creating the
-    file under any folder or subfolder of ImageJ's plugins folder. A
-    menu item will appear with its name, from which it can be run.
-  - Keep editing (and saving) the file from your editor. Just select the
-    menu item to execute it over and over. Or use the {% include bc
-    content='Plugins | Utilities | Find Commands...'%} window to launch
-    it easily (keybinding 'l').
+  - Edit and save a file in your favorite text editor. If you want ImageJ1 to insert it into the Menu structure, the file must be saved somewhere under ImageJ plugins folder, have an underscore on the name, and a .py extension.
+  - Run {% include bc content='Plugins | Scripting | Refresh Jython scripts'%} <b>only</b> the very first time after newly creating the file under any folder or subfolder of ImageJ's plugins folder. A menu item will appear with its name, from which it can be run.
+  - Keep editing (and saving) the file from your editor. Just select the menu item to execute it over and over. Or use the {% include bc content='Plugins | Utilities | Find Commands...'%} window to launch it easily (keybinding 'l').
 
-The next time Fiji is run, it will setup all your scripts in the Plugins
-menu.
+The next time Fiji is run, it will setup all your scripts in the Plugins menu.
 
 If all you need is a script to run in headless mode, simply do:
 
@@ -103,12 +68,9 @@ If all you need is a script to run in headless mode, simply do:
 
 ### Some limitations of jython
 
-{% include sidebox-right float='right' title='What about NumPy and
-SciPy?' %} Though jython tries to be as close as possible as python,
-there are some differences you may experience during scripting.
+{% include box float='right' title='What about NumPy and SciPy?' %} Though jython tries to be as close as possible as python, there are some differences you may experience during scripting.
 
-  - <u>Float "special numbers" such as *NaN* and *Inf* are not
-    handled.</u>
+  - <u>Float "special numbers" such as *NaN* and *Inf* are not handled.</u>
 
 For instance,
 
@@ -116,8 +78,7 @@ For instance,
  a = float('nan') 
 ```
 
-will create the correct float number in python, but will throw an
-exception in jython.
+will create the correct float number in python, but will throw an exception in jython.
 
 Instead, to create a NaN in jython, use:
 
@@ -142,18 +103,12 @@ a is NaN!
   - 
     
       -   
-        This is for instance the case of the module *numpy*, which would
-        have been really convenient for analysing data and results.
-        But see these java numerical libraries:
-        http://math.nist.gov/javanumerics/#libraries , of which:
+        This is for instance the case of the module *numpy*, which would have been really convenient for analysing data and results.
+        But see these java numerical libraries: http://math.nist.gov/javanumerics/#libraries , of which:
 
 :\* JaMa (Java Matrix Package)
 
-:\* Java3D (particularly its
-[vecmath](http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/package-summary.html)
-package provides general matrix and vector classes
-([GMatrix](http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/GMatrix.html),
-[GVector](http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/GVector.html)).
+:\* Java3D (particularly its [vecmath](http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/package-summary.html) package provides general matrix and vector classes ([GMatrix](http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/GMatrix.html), [GVector](http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/GVector.html)).
 
   - 
     
@@ -163,18 +118,14 @@ package provides general matrix and vector classes
 
 <!-- end list -->
 
-  - <u>Your Jython version may be matching a much older Python version
-    than you expect.</u>
+  - <u>Your Jython version may be matching a much older Python version than you expect.</u>
 
 <!-- end list -->
 
   - 
     
       -   
-        The latest Jython stable release (as of May 2015) is 2.7.0. Fiji
-        (as of December 2015) distributes Jython 2.5.3. Any recent
-        Python syntax such as `except ExceptionType as e:` or `with
-        open(filepath, 'r') as f:` will fail.
+        The latest Jython stable release (as of May 2015) is 2.7.0. Fiji (as of December 2015) distributes Jython 2.5.3. Any recent Python syntax such as `except ExceptionType as e:` or `with open(filepath, 'r') as f:` will fail.
 
 ## Jython tutorials for ImageJ
 
@@ -190,8 +141,7 @@ Which is the same as:
 imp = WindowManager.getCurrentImage()
 ```
 
-Since calling the above is long and tedious, one can declare a variable
-that points to the above static methods:
+Since calling the above is long and tedious, one can declare a variable that points to the above static methods:
 
 ``` python
 c = WindowManager.getCurrentImage
@@ -205,9 +155,7 @@ To execute the function, just use parentheses on it:
  imp = c()
 ```
 
-The above gets the value of <i>c</i>, which is the method named
-getCurrentImage in class WindowManager, and executes it, storing its
-returned object in <i>imp</i>.
+The above gets the value of <i>c</i>, which is the method named getCurrentImage in class WindowManager, and executes it, storing its returned object in <i>imp</i>.
 
 ### Manipulating pixels
 
@@ -248,10 +196,7 @@ imp.show()
 
 #### Creating a random 8-bit image
 
-First import necessary packages: Random, from standard java util
-library, and
-[jarray](http://www.jython.org/archive/21/docs/jarray.html), the Jython
-module for native java arrays:
+First import necessary packages: Random, from standard java util library, and [jarray](http://www.jython.org/archive/21/docs/jarray.html), the Jython module for native java arrays:
 
 ``` python
 from java.util import Random
@@ -268,12 +213,9 @@ pix = zeros(width * height, 'b')
 Random().nextBytes(pix)
 ```
 
-('z' = boolean, 'c' = char, 'b' = byte, 'h' = short, 'i' = int, 'l' =
-long, 'f' = float and 'd' = double, as explained in the [jarray
-documentation](http://www.jython.org/archive/21/docs/jarray.html).)
+('z' = boolean, 'c' = char, 'b' = byte, 'h' = short, 'i' = int, 'l' = long, 'f' = float and 'd' = double, as explained in the [jarray documentation](http://www.jython.org/archive/21/docs/jarray.html).)
 
-Now make a new IndexColorModel (that's what ImageJ's ij.process.LUT
-class is) for 8-bit images:
+Now make a new IndexColorModel (that's what ImageJ's ij.process.LUT class is) for 8-bit images:
 
 ``` python
 channel = zeros(256, 'b')
@@ -282,8 +224,7 @@ for i in range(256):
 cm = LUT(channel, channel, channel)
 ```
 
-... and compose a ByteProcessor from the pixels, and assign it to an
-ImagePlus:
+... and compose a ByteProcessor from the pixels, and assign it to an ImagePlus:
 
 ``` python
 imp = ImagePlus("Random", ByteProcessor(width, height, pix, cm))
@@ -326,8 +267,7 @@ EDM().toWatershed(ip)
 imp.show()
 ```
 
-The EDM plugin that contains the watershed could have been indirectly
-applied to the currently active image, which is <i>not</i> recommended:
+The EDM plugin that contains the watershed could have been indirectly applied to the currently active image, which is <i>not</i> recommended:
 
 ``` python
 imp = IJ.getImage()  # the current image
@@ -336,8 +276,7 @@ IJ.run(imp, "Convert to Mask", "")
 IJ.run(imp, "Watershed", "")
 ```
 
-If you had called <i>show()</i> on the image at any early stage, just
-update the screen with:
+If you had called <i>show()</i> on the image at any early stage, just update the screen with:
 
 ``` python
 imp.updateAndDraw()
@@ -345,8 +284,7 @@ imp.updateAndDraw()
 
 #### ... and counting particles, and measuring their areas
 
-Continuing from the <i>imp</i> above, that contains the now watersheded
-"blobs" sample image:
+Continuing from the <i>imp</i> above, that contains the now watersheded "blobs" sample image:
 
 ``` python
 # Create a table to store the results
@@ -382,10 +320,7 @@ To print out the area measurement of each:
 `434.0`  
 `...`
 
-Now, we want to measure the intensity of each particle. To do so, we'll
-retrieve the ROI from the ROIManager, set them one at a time on the
-original (non-watershed, non-thresholded) image stored in the variable
-<i>blobs</i>, and measure:
+Now, we want to measure the intensity of each particle. To do so, we'll retrieve the ROI from the ROIManager, set them one at a time on the original (non-watershed, non-thresholded) image stored in the variable <i>blobs</i>, and measure:
 
 ``` python
 # Create a new list to store the mean intensity values of each blob:
@@ -397,8 +332,7 @@ for roi in RoiManager.getInstance().getRoisAsArray():
   means.append(stats.mean)
 ```
 
-Finally read out the measured mean intensity value of each blob, along
-with its area:
+Finally read out the measured mean intensity value of each blob, along with its area:
 
 ``` python
 for area, mean in zip(areas, means):
@@ -421,10 +355,7 @@ A data file containing rows with 4 columns:
 `400 23 30 12.34`  
 `...`
 
-... where the columns are X, Y, Z and value, for every pixel in the
-image. We assume we know the width and height of the image. From this
-sort of data, we create an image, read out all lines and parse the
-numbers:
+... where the columns are X, Y, Z and value, for every pixel in the image. We assume we know the width and height of the image. From this sort of data, we create an image, read out all lines and parse the numbers:
 
 ``` python
 width = 512
@@ -465,17 +396,14 @@ finally:
 
 ### Obtain/View histogram and measurements from an image
 
-The easiest way is to grab an image and call an ImageJ command to show
-its histogram:
+The easiest way is to grab an image and call an ImageJ command to show its histogram:
 
 ``` python
 imp = IJ.openImage("https://imagej.net/images/blobs.gif")
 IJ.run(imp, "Histogram", "")
 ```
 
-How ImageJ does it, internally, has to do with the
-[ImageStatisics](https://imagej.net/developer/api/ij/process/ImageStatistics.html)
-class:
+How ImageJ does it, internally, has to do with the [ImageStatisics](https://imagej.net/developer/api/ij/process/ImageStatistics.html) class:
 
 ``` python
 stats = imp.getStatistics()
@@ -498,12 +426,9 @@ print stats.histogram
 `           0, 0, 0, 1568, 0, 0, 0, 0, 0, 0, 0, 1778, 0, 0, 0, 0, 0,`  
 `           0, 0, 774, 0, 0, 0, 0, 0, 0, 0, 1364, 0, 0, 0, 0, 0, 0, 0])`
 
-The histogram, area and mean are computed by default. Other values like
-the median need to be specified.
+The histogram, area and mean are computed by default. Other values like the median need to be specified.
 
-To calculate other parameters, specify them by bitwise-or composition
-(see flags in
-[Measurements](https://imagej.net/developer/api/ij/measure/Measurements.html)):
+To calculate other parameters, specify them by bitwise-or composition (see flags in [Measurements](https://imagej.net/developer/api/ij/measure/Measurements.html)):
 
 ``` python
 stats = imp.getStatistics(Measurements.MEAN | Measurements.MEDIAN | Measurements.AREA)
@@ -512,8 +437,7 @@ print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
 
 `mean: 103.26857775590551 median: 64.0 area: 65024.`
 
-If we set a ROI to the image, then we are measuring only for the inside
-of the ROI. Here we set an oval ROI of radius 25 pixels, centered:
+If we set a ROI to the image, then we are measuring only for the inside of the ROI. Here we set an oval ROI of radius 25 pixels, centered:
 
 ``` python
 radius = 25
@@ -525,9 +449,7 @@ print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
 
 `mean: 104.96356275303644 median: 64.0 area: 1976.0`
 
-To display the histogram window ourselves, we may use the
-[HistogramWindow](https://imagej.net/developer/api/ij/gui/HistogramWindow.html)
-class:
+To display the histogram window ourselves, we may use the [HistogramWindow](https://imagej.net/developer/api/ij/gui/HistogramWindow.html) class:
 
 ``` python
 hwin = HistogramWindow(imp)
@@ -542,11 +464,9 @@ IJ.save(plotimage, "/path/to/our/folder/plot.tif")
 
 ### Removing bleeding from one channel to another
 
-The technique to use is to divide one channel by the other: the channel
-to denoise divided by the channel that bled through.
+The technique to use is to divide one channel by the other: the channel to denoise divided by the channel that bled through.
 
-The relatively high-level way to do it is to split the channels and call
-the ImageCalculator with a "Divide" argument:
+The relatively high-level way to do it is to split the channels and call the ImageCalculator with a "Divide" argument:
 
 ``` python
 # 1 - Obtain an RGB image stack
@@ -589,9 +509,7 @@ for i in range(1, imp.getNSlices()+1):
 ImagePlus("Normalized " + imp.title, new_stack).show()
 ```
 
-Alternatively and as an example of direct pixel manipulation, we'll
-iterate all slices of the image stack, divide the red channel by the
-green channel, and compose a new stack:
+Alternatively and as an example of direct pixel manipulation, we'll iterate all slices of the image stack, divide the red channel by the green channel, and compose a new stack:
 
 ``` python
 # 1 - Obtain an RGB image stack
@@ -636,15 +554,11 @@ new_imp = ImagePlus("Normalized " + imp.title, new_stack)
 new_imp.show()
 ```
 
-Notice that this second approach is much slower: accessing every pixel
-from jython has a high cost. If you would like to do very fast
-pixel-level manipulations, use java or
-[Clojure](Clojure_Scripting "wikilink").
+Notice that this second approach is much slower: accessing every pixel from jython has a high cost. If you would like to do very fast pixel-level manipulations, use java or [Clojure](Clojure_Scripting "wikilink").
 
 ### Subtract the minimal value to an image
 
-Which is to say, translate the histogram so that the lowest value is at
-zero.
+Which is to say, translate the histogram so that the lowest value is at zero.
 
 ``` python
 # Obtain current image and its pixels
@@ -662,27 +576,15 @@ ImagePlus("min subtracted", FloatProcessor(imp.width, imp.height, pix2, None)).s
 
 Notice we used:
 
-  - The <i>reduce</i> function to obtain a single value from a list of
-    values (the pixel array) by applying a function to every pair of
-    consecutive values (in this case, the Math.min).
-  - <i>lambda</i>, which is used to declare an anonymous function that
-    takes one argument.
-  - The <i>map</i> function, which runs a function given as argument to
-    every element of a list (here, every pixel) and returns a new list
-    with all the results.
+  - The <i>reduce</i> function to obtain a single value from a list of values (the pixel array) by applying a function to every pair of consecutive values (in this case, the Math.min).
+  - <i>lambda</i>, which is used to declare an anonymous function that takes one argument.
+  - The <i>map</i> function, which runs a function given as argument to every element of a list (here, every pixel) and returns a new list with all the results.
 
 ### Extract a specific color channel for a given time frame of a composite image
 
-Suppose you have a 4D multicolor image, and want to obtain a stack of
-slices corresponding to a specific color channel and time frame.
+Suppose you have a 4D multicolor image, and want to obtain a stack of slices corresponding to a specific color channel and time frame.
 
-The [CompositeImage](https://fiji.sc/javadoc/ij/CompositeImage.html) is
-a stack whose slices are interpreted as belonging to specific color
-channels, Z slices and time frames. To find out which slice corresponds
-to what, use the <i>getStackIndex</i> method of the
-[ImagePlus](https://fiji.sc/javadoc/ij/ImagePlus.html), which translates
-between color channels, z slices and time frames to the slice index in
-the underlying [ImageStack](https://fiji.sc/javadoc/ij/ImageStack.html).
+The [CompositeImage](https://fiji.sc/javadoc/ij/CompositeImage.html) is a stack whose slices are interpreted as belonging to specific color channels, Z slices and time frames. To find out which slice corresponds to what, use the <i>getStackIndex</i> method of the [ImagePlus](https://fiji.sc/javadoc/ij/ImagePlus.html), which translates between color channels, z slices and time frames to the slice index in the underlying [ImageStack](https://fiji.sc/javadoc/ij/ImageStack.html).
 
 ``` python
 from ij import IJ, ImagePlus, ImageStack
@@ -700,36 +602,21 @@ imp = IJ.getImage()
 extractChannel(imp, 1, 1).show()
 ```
 
-Notice that color channels, stack slices and time frames are all
-1-based. For example, if you have 3 color channels, then these have
-indices 1, 2, and 3 (not 0, 1 and 2).
+Notice that color channels, stack slices and time frames are all 1-based. For example, if you have 3 color channels, then these have indices 1, 2, and 3 (not 0, 1 and 2).
 
 ### Visualize any number of TIFF stacks in a single composite multi-color image stack
 
-Suppose you have 1000 stacks of <i>Drosophila</i> fly brains, each with
-different neurons labeled in a single color channel. Suppose that you
-have registered all these confocal stacks. Were you to overlay them, you
-would see whether the labeled neurons overlap in 3D space or not.
+Suppose you have 1000 stacks of <i>Drosophila</i> fly brains, each with different neurons labeled in a single color channel. Suppose that you have registered all these confocal stacks. Were you to overlay them, you would see whether the labeled neurons overlap in 3D space or not.
 
-Here is a script to do that. First, it asks for a directory containing
-any number of TIF image stacks. It assumes all stacks have the same
-dimensions, and that they are all single channel (i.e. just red, or just
-green, etc.). Then, it displays a small window with a listing of many
-colors: red, green, blue, orange, gray, etc. Any of the hundreds of
-stacks in the directory can be assigned to each color channel.
+Here is a script to do that. First, it asks for a directory containing any number of TIF image stacks. It assumes all stacks have the same dimensions, and that they are all single channel (i.e. just red, or just green, etc.). Then, it displays a small window with a listing of many colors: red, green, blue, orange, gray, etc. Any of the hundreds of stacks in the directory can be assigned to each color channel.
 
-The stacks are accessed in a virtual way, so even 1000 (one thousand)
-stacks will be managed just fine in small laptop.
+The stacks are accessed in a virtual way, so even 1000 (one thousand) stacks will be managed just fine in small laptop.
 
 One could easily add more color channels. But there are already lots.
 
-The script uses [Imglib](Imglib "wikilink") scripting to normalize
-images and generate the color composite. See this [imglib scripting
-tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/#s10) for
-in-depth explanations.
+The script uses [Imglib](Imglib "wikilink") scripting to normalize images and generate the color composite. See this [imglib scripting tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/#s10) for in-depth explanations.
 
-![Corti-multi-channel.png](/images/pages/Corti-multi-channel.png
-"Corti-multi-channel.png")"
+![Corti-multi-channel.png](/images/pages/Corti-multi-channel.png "Corti-multi-channel.png")"
 
 ``` python
 # 2010-12-03 Albert Cardona and Arnim Jenett
@@ -938,8 +825,7 @@ frame.setVisible(True)
 
 ### Sort all points of a PointRoi into a chain by distance to each other
 
-There may be better ways, but here is one. Read the header to understand
-its limitations.
+There may be better ways, but here is one. Read the header to understand its limitations.
 
 ``` python
 # Albert Cardona 2010-12-17 for Victoria Butler at HHMI Janelia Farm
@@ -1021,16 +907,11 @@ print "Chain:", chain
 
 ### Correct illumination in a stack: apply the illumination of one slice to all others
 
-The Multi-focus 3D Microscope (Sara Abrahamsson and Matz Gustafsson)
-takes a single image and later, computationally, 9 image planes are
-extracted.
+The Multi-focus 3D Microscope (Sara Abrahamsson and Matz Gustafsson) takes a single image and later, computationally, 9 image planes are extracted.
 
-The middle slice usually has the desired illumination levels, while the
-other 8 slices (4 before and 4 after) do not. Here is a script to apply
-the illumination of the 5th slice to all other slices.
+The middle slice usually has the desired illumination levels, while the other 8 slices (4 before and 4 after) do not. Here is a script to apply the illumination of the 5th slice to all other slices.
 
-The script takes a directory of images and processed them all, resulting
-in new images stored as "\*-corrected.tif" in the same directory.
+The script takes a directory of images and processed them all, resulting in new images stored as "\*-corrected.tif" in the same directory.
 
 ``` python
 # Albert Cardona 2011-06-09 at HHMI Janelia Farm
@@ -1127,8 +1008,7 @@ for imp in map(WindowManager.getImage, WindowManager.getIDList()):
  win.getCanvas().addMouseListener(listener)
 ```
 
-After running the script, clicking on any image will result in printing
-a line to the log window, like:
+After running the script, clicking on any image will result in printing a line to the log window, like:
 
 ` clicked on: imp[Untitled-1 400x200x1]`
 
@@ -1244,18 +1124,7 @@ run()
 
 ### Apply a binary mask to every slice in an image stack
 
-Will work with regular stacks and with any kind of complex stack like a
-composite image or a 4d volume. Keep in mind that all stack types in
-ImageJ consists of a sequence of 2d images, each editable with an
-[ImageProcessor](https://imagej.net/developer/api/ij/process/ImageProcessor.html)
-obtained from the
-[ImageStack](https://imagej.net/developer/api/ij/ImageStack.html) that
-one can get from the
-[ImagePlus](https://imagej.net/developer/api/ij/ImagePlus.html). (The
-[ImagePlus](https://imagej.net/developer/api/ij/ImagePlus.html) being
-what the opener or the
-[WindowManager](https://imagej.net/developer/api/ij/WindowManager.html)
-provides.)
+Will work with regular stacks and with any kind of complex stack like a composite image or a 4d volume. Keep in mind that all stack types in ImageJ consists of a sequence of 2d images, each editable with an [ImageProcessor](https://imagej.net/developer/api/ij/process/ImageProcessor.html) obtained from the [ImageStack](https://imagej.net/developer/api/ij/ImageStack.html) that one can get from the [ImagePlus](https://imagej.net/developer/api/ij/ImagePlus.html). (The [ImagePlus](https://imagej.net/developer/api/ij/ImagePlus.html) being what the opener or the [WindowManager](https://imagej.net/developer/api/ij/WindowManager.html) provides.)
 
 ``` python
 # Albert Cardona 2012-10-05 for Sara Abrahamsson
@@ -1294,9 +1163,7 @@ volume.updateAndDraw()
 volume.show()
 ```
 
-Note that it is counterintuitive that the area outside the mask gets
-filled with zeros. If you want the area inside the mask to get filled
-with zeros, then add this step before the loop:
+Note that it is counterintuitive that the area outside the mask gets filled with zeros. If you want the area inside the mask to get filled with zeros, then add this step before the loop:
 
 ``` python
 mask = mask.duplicate()
@@ -1350,21 +1217,11 @@ for i in range(0, nseries):
 
 ### Open and save movies with the FFMPEG I/O plugin
 
-First note that the FFMPEG I/O plugin was a proof-of-concept that is
-completely **unmaintained**.
+First note that the FFMPEG I/O plugin was a proof-of-concept that is completely **unmaintained**.
 
-Then open the [Fiji Updater](Fiji_Updater "wikilink"), push the "Manage
-update sites" at the bottom left of the dialog, and install the
-[FFMPEG](https://fiji.sc/~schindelin/ffmpeg-plugins/) plugin by {%
-include person content='Schindelin' %} by ticking its checkbox, as
-[explained in more detail
-here](How_to_follow_a_3rd_party_update_site "wikilink").
+Then open the [Fiji Updater](Fiji_Updater "wikilink"), push the "Manage update sites" at the bottom left of the dialog, and install the [FFMPEG](https://fiji.sc/~schindelin/ffmpeg-plugins/) plugin by {% include person content='Schindelin' %} by ticking its checkbox, as [explained in more detail here](How_to_follow_a_3rd_party_update_site "wikilink").
 
-See also the Java source code for the {% include github repo='fiji'
-tag='8164ae68'
-path='native/FFMPEG\_IO/plugin/src/main/java/fiji/ffmpeg/IO.java'
-label='IO' %} class from the [FFMPEG plugin source code
-site](https://github.com/fiji/fiji/tree/8164ae68/native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/).
+See also the Java source code for the {% include github repo='fiji' tag='8164ae68' path='native/FFMPEG\_IO/plugin/src/main/java/fiji/ffmpeg/IO.java' label='IO' %} class from the [FFMPEG plugin source code site](https://github.com/fiji/fiji/tree/8164ae68/native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/).
 
 ``` python
 """ Albert Cardona for Marta Zlatic, 2014-01-24. """
@@ -1539,8 +1396,7 @@ else:
 
 ### Getting a list of all members in one package
 
-You can use the Python function *dir(<package>)* to see the contents of
-a package:
+You can use the Python function *dir(<package>)* to see the contents of a package:
 
 ``` python
 import ij
@@ -1555,25 +1411,17 @@ for *dir(<package>)* to work.
 
 ### Specifying the encoding of the source
 
-When your source code contains non-ASCII characters (such as umlauts),
-Jython will complain with a *SyntaxError: Non-ASCII character in file
-'<iostream>', but no encoding declared*.
+When your source code contains non-ASCII characters (such as umlauts), Jython will complain with a *SyntaxError: Non-ASCII character in file '<iostream>', but no encoding declared*.
 
 You can fix this issue by putting the line
 
 `# -*- coding: iso-8859-15 -*-`
 
-as first line into your source code (or if it starts with
-*\#\!/usr/bin/python*, as second line), as suggested
-[here](http://docs.python.org/tutorial/interpreter.html#source-code-encoding).
-You might need to replace the string *iso-8859-15* by something like
-*utf-8* if your source code is encoded in UTF-8.
+as first line into your source code (or if it starts with *\#\!/usr/bin/python*, as second line), as suggested [here](http://docs.python.org/tutorial/interpreter.html#source-code-encoding). You might need to replace the string *iso-8859-15* by something like *utf-8* if your source code is encoded in UTF-8.
 
 ### Changing the default encoding
 
-By default, Jython encodes the standard output (and other streams) with
-the ASCII encoding. Often, this is not what you want. You can change the
-default encoding like this:
+By default, Jython encodes the standard output (and other streams) with the ASCII encoding. Often, this is not what you want. You can change the default encoding like this:
 
 ``` python
 from org.python.core import codecs
@@ -1582,8 +1430,7 @@ codecs.setDefaultEncoding('utf-8')
 
 ### Error handling with try / except / finally
 
-See complete documentation at: [jython book
-chapter 6](http://jythonpodcast.hostjava.net/jythonbook/chapter6.html).
+See complete documentation at: [jython book chapter 6](http://jythonpodcast.hostjava.net/jythonbook/chapter6.html).
 
 ``` python
 x = 10
@@ -1619,8 +1466,7 @@ Which prints:
 
 `Error:  (<type 'exceptions.NameError'>, NameError("name 'x' is not defined",), <traceback object at 0x2>)`
 
-To ensure that you see the stack trace, print it to the ImageJ log
-window instead of stdout (whathever the latter may be):
+To ensure that you see the stack trace, print it to the ImageJ log window instead of stdout (whathever the latter may be):
 
 ``` python
     IJ.log(str(sys.exc_info()))
@@ -1628,10 +1474,7 @@ window instead of stdout (whathever the latter may be):
 
 ### Importing other *.py* scripts (modules)
 
-If you want to import other python files, you need to *import* them.
-This requires that the files are found in the so-called *search path*, a
-list of directories in which Jython looks for the modules (*.py* files)
-to import. You can easily extend the search path:
+If you want to import other python files, you need to *import* them. This requires that the files are found in the so-called *search path*, a list of directories in which Jython looks for the modules (*.py* files) to import. You can easily extend the search path:
 
 ``` python
 from sys import path
@@ -1644,12 +1487,9 @@ path.append(getProperty('fiji.dir') + '/bin')
 import compat
 ```
 
-A situation you are likely to encounter is when you have multiple jython
-scripts in a folder under the fiji plugins folder.
+A situation you are likely to encounter is when you have multiple jython scripts in a folder under the fiji plugins folder.
 
-For example, suppose you have the folder *my scripts* under the fiji
-*plugins* folder, in which you have the script *Filters.py* with the
-following filter functions in it:
+For example, suppose you have the folder *my scripts* under the fiji *plugins* folder, in which you have the script *Filters.py* with the following filter functions in it:
 
 ``` python
 # Script plugins/my scripts/Filters.py
@@ -1673,8 +1513,7 @@ def removeOutliers(imp, radius, threshold, bright):
   return copy
 ```
 
-And now you have a second script in which you want to use a function
-from the *Filters.py* script:
+And now you have a second script in which you want to use a function from the *Filters.py* script:
 
 ``` python
 from ij import IJ
@@ -1690,12 +1529,9 @@ medianFiltered.show()
 
 ### Defining a class and creating instances of the new class
 
-A simple class to store an X,Y coordinate. (In real code, just use
-javax.vecmath.\* classes such as Point3f, Point3d, etc.)
+A simple class to store an X,Y coordinate. (In real code, just use javax.vecmath.\* classes such as Point3f, Point3d, etc.)
 
-The constructor is defined with <i>\_\_init\_\_</i>, and takes at least
-one argument , named <i>self</i> by convention (you may name it
-something else, like <i>this</i>).
+The constructor is defined with <i>\_\_init\_\_</i>, and takes at least one argument , named <i>self</i> by convention (you may name it something else, like <i>this</i>).
 
 ``` python
 from math import sqrt, pow
@@ -1708,9 +1544,7 @@ class Point:
     return sqrt(pow(self.x - other.x, 2), pow(self.y - other.y, 2))
 ```
 
-... and create two instances, and measure the distance between them. To
-create the new instances, we use the name of the class with the
-arguments in brackets:
+... and create two instances, and measure the distance between them. To create the new instances, we use the name of the class with the arguments in brackets:
 
 ``` python
 p1 = Point(10, 20)
@@ -1721,12 +1555,9 @@ print "Distance:", p1.distance(p2)
 
 ### Adding a static method to a class
 
-A static method is a method of a class that doesn't need a <i>self</i>
-first argument. You may call this method by using the name of the class
-alone--you don't need to invoke it on an instance.
+A static method is a method of a class that doesn't need a <i>self</i> first argument. You may call this method by using the name of the class alone--you don't need to invoke it on an instance.
 
-To declare a method as static, decorate it with <i>@staticmethod</i>, as
-shown below for method <i>two</i>:
+To declare a method as static, decorate it with <i>@staticmethod</i>, as shown below for method <i>two</i>:
 
 ``` python
 class Numbers:
@@ -1739,9 +1570,7 @@ class Numbers:
     return 2
 ```
 
-Now, to invoke these methods, notice how <i>two</i> doesn't need to be
-invoked on an instance (we merely prepend the class name), but
-<i>one</i> does:
+Now, to invoke these methods, notice how <i>two</i> doesn't need to be invoked on an instance (we merely prepend the class name), but <i>one</i> does:
 
 ``` python
 print Numbers.two()
@@ -1750,13 +1579,11 @@ that = Numbers()
 print that.one()
 ```
 
-Why would you want to use a static method? It is useful to keep the
-namespace tidy, to avoid name collisions.
+Why would you want to use a static method? It is useful to keep the namespace tidy, to avoid name collisions.
 
 ### Creating multi-dimensional native java arrays
 
-Suppose you want to create a one-dimensional double array, the
-equivalent of **double\[\]** in java. This is what you would do:
+Suppose you want to create a one-dimensional double array, the equivalent of **double\[\]** in java. This is what you would do:
 
 ``` python
 from jarray import array
@@ -1777,8 +1604,7 @@ Other accepted primitive array types are:
 `f  float`  
 `d  double`
 
-But now suppose you want a two-dimensional double array, the equivalent
-of **double\[\]\[\]** in java. How to do that? Here's how:
+But now suppose you want a two-dimensional double array, the equivalent of **double\[\]\[\]** in java. How to do that? Here's how:
 
 ``` python
 from jarray    import array
@@ -1788,12 +1614,9 @@ data = [[1.0, 2.0], [3.0, 4.0]]
 twoDimArr = array(data, Class.forName('[D'))
 ```
 
-Essentially, what we did is to give the function **array** the argument
-**class of a one-dimensional double array**, so that it will create an
-array of that--hence a two-dimensional double array.
+Essentially, what we did is to give the function **array** the argument **class of a one-dimensional double array**, so that it will create an array of that--hence a two-dimensional double array.
 
-For a three-dimensional array in jython, you'd just add another **\[**
-(square bracket) to the class name:
+For a three-dimensional array in jython, you'd just add another **\[** (square bracket) to the class name:
 
 ``` python
 from jarray import array
@@ -1803,11 +1626,9 @@ data = [[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]]
 threeDimArr = array(data, Class.forName('[[D'))
 ```
 
-See the [jarray
-documentation](http://www.jython.org/archive/21/docs/jarray.html).
+See the [jarray documentation](http://www.jython.org/archive/21/docs/jarray.html).
 
-To create primitive arrays of any class, pass along the class itself.
-For example, a native array of **String**:
+To create primitive arrays of any class, pass along the class itself. For example, a native array of **String**:
 
 ``` python
 from jarray import array
@@ -1817,14 +1638,9 @@ texts = ["one", "two", "three"]
 strings = array(texts, String)
 ```
 
-Of course arrays can also be created empty. For numbers, all values will
-be zero. For an arbitrary class such as **String**, all values will be
-null (or None, in python parlance).
+Of course arrays can also be created empty. For numbers, all values will be zero. For an arbitrary class such as **String**, all values will be null (or None, in python parlance).
 
-In the example below, we create an empty two-dimensional array of
-**double\[N\]\[\]** type, where the smaller, inner arrays are null (just
-like in java a **new double\[5\]\[\]** would have the second-order also
-all null):
+In the example below, we create an empty two-dimensional array of **double\[N\]\[\]** type, where the smaller, inner arrays are null (just like in java a **new double\[5\]\[\]** would have the second-order also all null):
 
 ``` python
 from jarray import zeros
@@ -1845,21 +1661,13 @@ print twoDimArr
 
 ### Inline java code inside jython: the Weaver
 
-Jython is great at doing high-level operations on images. But sometimes
-one wants to edit pixels specifically. The performance of low-level
-loops in jython are far from the performance offered by java. But
-writing a special-purpose java class for a minor piece of code is
-painful and requires specific java skills regarding code compilation and
-classpath management.
+Jython is great at doing high-level operations on images. But sometimes one wants to edit pixels specifically. The performance of low-level loops in jython are far from the performance offered by java. But writing a special-purpose java class for a minor piece of code is painful and requires specific java skills regarding code compilation and classpath management.
 
 The weaver removes all the pain.
 
-The weaver offers two ways to embed java code: the <i>inline</i> and the
-<i>method</i>.
+The weaver offers two ways to embed java code: the <i>inline</i> and the <i>method</i>.
 
-Here is an example using the <i>inline</i> approach, where the
-<i>float\[\]</i> pixels array of the current image is iterated to
-compute the mean intensity:
+Here is an example using the <i>inline</i> approach, where the <i>float\[\]</i> pixels array of the current image is iterated to compute the mean intensity:
 
 ``` python
 from fiji.scripting import Weaver
@@ -1892,25 +1700,11 @@ mean = w.call()
 print mean
 ```
 
-The above is trivial and it is meant only as an example (there are
-better ways to get the mean value, such as via
-<i>imp.getStatistics()</i>. Notice that the <i>Weaver.inline</i>
-function takes three arguments: the java code to inline, the map of
-bindings, and the return type. In the example, we pass only the
-<i>float\[\]</i> pixels array, and define <i>Double</i> as the return
-type. The return type is optional.
+The above is trivial and it is meant only as an example (there are better ways to get the mean value, such as via <i>imp.getStatistics()</i>. Notice that the <i>Weaver.inline</i> function takes three arguments: the java code to inline, the map of bindings, and the return type. In the example, we pass only the <i>float\[\]</i> pixels array, and define <i>Double</i> as the return type. The return type is optional.
 
-Internally, bindings are represented as fields in a java class, set as
-either primitives (like double, int ...) or the least general public
-class or superclass of the object to bind.
+Internally, bindings are represented as fields in a java class, set as either primitives (like double, int ...) or the least general public class or superclass of the object to bind.
 
-A better example that exploits the capabilities of the
-<i>Weaver.inline</i> is the following: compile the function once, and
-then call it over and over with different parameters. The bindings
-cannot be changed, but if they are arrays or collections, one can change
-the elements of these collections. For example, to obtain a new
-<i>ImageStack</i> that is the result of applying XOR to each consecutive
-pair of slices (which will give you the boundaries of objects):
+A better example that exploits the capabilities of the <i>Weaver.inline</i> is the following: compile the function once, and then call it over and over with different parameters. The bindings cannot be changed, but if they are arrays or collections, one can change the elements of these collections. For example, to obtain a new <i>ImageStack</i> that is the result of applying XOR to each consecutive pair of slices (which will give you the boundaries of objects):
 
 ``` python
 from ij import IJ, ImagePlus, ImageStack
@@ -1947,15 +1741,9 @@ for i in range(2, imp.getNSlices()+1):
 ImagePlus("XORed stack", stackXOR).show()
 ```
 
-The above approach with <i>Weaver.inline</i> becomes a bit verbose and
-ad-hoc, having to edit the contents of the <i>slices</i> list.
+The above approach with <i>Weaver.inline</i> becomes a bit verbose and ad-hoc, having to edit the contents of the <i>slices</i> list.
 
-Instead, here is the same code but using the <i>Weaver.method</i>
-approach, where, instead of bindings, we pass the arrays directly as
-method arguments. This approach requires knowing a bit more about java,
-but not much, to declare a full java class method (or any number of
-them). The returned <i>w</i> object contains that method, which we can
-invoke with, in this case, the two byte arrays as arguments:
+Instead, here is the same code but using the <i>Weaver.method</i> approach, where, instead of bindings, we pass the arrays directly as method arguments. This approach requires knowing a bit more about java, but not much, to declare a full java class method (or any number of them). The returned <i>w</i> object contains that method, which we can invoke with, in this case, the two byte arrays as arguments:
 
 ``` python
 from ij import IJ, ImagePlus, ImageStack
@@ -1985,8 +1773,7 @@ for i in range(2, imp.getNSlices()+1):
 ImagePlus("XORed stack", stackXOR).show()
 ```
 
-There are two additional, optional arguments for <i>Weaver.inline</i>
-and <i>Weaver.method</i>:
+There are two additional, optional arguments for <i>Weaver.inline</i> and <i>Weaver.method</i>:
 
 `1. A list of classes to insert as imports, so that instead of fully qualified class names`
 
@@ -2002,8 +1789,7 @@ and <i>Weaver.method</i>:
 
 `2. A boolean, to show the generated java code in a tab of the Script Editor.`
 
-Here is a small example, using <i>Weaver.method</i>, that uses imports.
-The script subtracts "10" from every pixel:
+Here is a small example, using <i>Weaver.method</i>, that uses imports. The script subtracts "10" from every pixel:
 
 ``` python
 from net.imglib2.type.numeric.real import FloatType
@@ -2038,24 +1824,13 @@ w.subtract(img, 10)
 imp.updateAndDraw()
 ```
 
-Of course the Weaver is a java library, and may be used from any
-scripting language such as
-[Javascript](Javascript_Scripting "wikilink"),
-[JRuby](JRuby_Scripting "wikilink"), and
-[others](:Category:Scripting "wikilink").
+Of course the Weaver is a java library, and may be used from any scripting language such as [Javascript](Javascript_Scripting "wikilink"), [JRuby](JRuby_Scripting "wikilink"), and [others](:Category:Scripting "wikilink").
 
-All the above is inspired by the [Scientific Python Weaver, or scipy
-Weaver](http://www.scipy.org/Cookbook/Weave), which inlines C code
-inside a python file.
+All the above is inspired by the [Scientific Python Weaver, or scipy Weaver](http://www.scipy.org/Cookbook/Weave), which inlines C code inside a python file.
 
 ### Reading command line arguments given to a script
 
-The Fiji launcher can execute scripts. When running scripts from the
-command line with the launcher, it is convenient to read out the
-arguments given to the script. For example, suppose you create a script
-to open an image file and do some processing with it, and you want to
-read the name of the file to open from the command line argument. Here
-is how:
+The Fiji launcher can execute scripts. When running scripts from the command line with the launcher, it is convenient to read out the arguments given to the script. For example, suppose you create a script to open an image file and do some processing with it, and you want to read the name of the file to open from the command line argument. Here is how:
 
 ``` python
 import os, sys
@@ -2080,20 +1855,11 @@ print "Processing:", imp.title
 # Do some processing ...
 ```
 
-IMPORTANT: notice that, when executing scripts from the command line,
-there is no auto-importing of common imports. So above we <b>must</b>
-declare "from ij import IJ" to import the namespace <i>IJ</i> with all
-the static utility functions such as <i>openImage</i>.
+IMPORTANT: notice that, when executing scripts from the command line, there is no auto-importing of common imports. So above we <b>must</b> declare "from ij import IJ" to import the namespace <i>IJ</i> with all the static utility functions such as <i>openImage</i>.
 
 ### Catching errors from a running macro
 
-ImageJ exits with zero even when it fails (see [bug
-report](https://github.com/imagej/imagej/issues/61)). A possible fix is
-to convert the macro into a plugin but a quicker fix, is to wrap the
-macro call into a script. For this purpose, it is enough to check the
-returned string of `runMacroCode`, which will return the string
-`[aborted]` in case of
-[failure](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/plugin/Macro_Runner.html#runMacro%28java.lang.String,%20java.lang.String%29):
+ImageJ exits with zero even when it fails (see [bug report](https://github.com/imagej/imagej/issues/61)). A possible fix is to convert the macro into a plugin but a quicker fix, is to wrap the macro call into a script. For this purpose, it is enough to check the returned string of `runMacroCode`, which will return the string `[aborted]` in case of [failure](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/plugin/Macro_Runner.html#runMacro%28java.lang.String,%20java.lang.String%29):
 
 ``` python
 from ij import IJ
@@ -2109,31 +1875,24 @@ if status == '[aborted]':
 sys.exit (0)
 ```
 
-Of course, if your macro happens to return `[aborted]` for success,
-you're out of luck ;)
+Of course, if your macro happens to return `[aborted]` for success, you're out of luck ;)
 
 ### Running 3rd party java libraries
 
-It is possible to run external java programs within Jython. To make them
-available, just copy the corresponding jar file into Fiji's plugins
-folder. To import the respective java classes, just do
+It is possible to run external java programs within Jython. To make them available, just copy the corresponding jar file into Fiji's plugins folder. To import the respective java classes, just do
 
 ``` python
 import name.of.external.java.library as foo
 ```
 
-If the class names of the external package are unknown, one possibility
-is to inspect the jar file manually. On Linux and Mac OS systems just do
-on the command line
+If the class names of the external package are unknown, one possibility is to inspect the jar file manually. On Linux and Mac OS systems just do on the command line
 
 ``` 
 
 jar tvf <library>.jar 
 ```
 
-This will print the jar contents as plain text, look for entries ending
-with ".class". For the implementation of json in jython, provided at
-jyson.xhaus.com, the output looks like:
+This will print the jar contents as plain text, look for entries ending with ".class". For the implementation of json in jython, provided at jyson.xhaus.com, the output looks like:
 
 ``` 
 
@@ -2151,8 +1910,7 @@ jar tvf jyson-1.0.2.jar
   3899 Sat Mar 17 14:06:40 CET 2012 com/xhaus/jyson/JysonEncoder.class
 ```
 
-The JysonCodec.class is the toplevel class, so to import this library
-include the following line in your jython script:
+The JysonCodec.class is the toplevel class, so to import this library include the following line in your jython script:
 
 ``` python
 import com.xhaus.jyson.JysonCodec as jyson
@@ -2162,33 +1920,19 @@ import com.xhaus.jyson.JysonCodec as jyson
 
 ### Using a jython script as a plugin
 
-The simplest way is to place the jython script file into fiji/plugins/
-folder or a subfolder, and it will appear in the menus after running
-"'{% include bc content='Plugins | Scripting | Refresh Jython
-Scripts'%}'" or "'{% include bc content='Help | Refresh Menus'%}'", or
-on restarting Fiji.
+The simplest way is to place the jython script file into fiji/plugins/ folder or a subfolder, and it will appear in the menus after running "'{% include bc content='Plugins | Scripting | Refresh Jython Scripts'%}'" or "'{% include bc content='Help | Refresh Menus'%}'", or on restarting Fiji.
 
-If you want to have the Jython script show up in a place outside the
-Plugins menu, just put the file into an appropriate subdirectory of
-fiji/plugins/Scripts/; for example, if you put a Jython script called
-Animation\_.py into fiji/plugins/Scripts/File/New/, it will be available
-as {% include bc content='File | New | Animation'%}.
+If you want to have the Jython script show up in a place outside the Plugins menu, just put the file into an appropriate subdirectory of fiji/plugins/Scripts/; for example, if you put a Jython script called Animation\_.py into fiji/plugins/Scripts/File/New/, it will be available as {% include bc content='File | New | Animation'%}.
 
-To populate an update site, the updater let the possibility to directly
-upload jython scripts as .py (or $py.class for the one that resides in
-the `Jars/Lib` folder). Alternatively if you want to bundle multiple
-scripts you can pack them into a jar archive as described below.
+To populate an update site, the updater let the possibility to directly upload jython scripts as .py (or $py.class for the one that resides in the `Jars/Lib` folder). Alternatively if you want to bundle multiple scripts you can pack them into a jar archive as described below.
 
 ### Distributing jython scripts in a .jar file
 
-PLEASE NOTE: there is no need to do the following -- unless you want to
-bundle a couple of scripts in one package. See entry above.
+PLEASE NOTE: there is no need to do the following -- unless you want to bundle a couple of scripts in one package. See entry above.
 
-The whole idea is to be able to distribute an entire collection of
-scripts in a single .jar file, for best convenience.
+The whole idea is to be able to distribute an entire collection of scripts in a single .jar file, for best convenience.
 
-In this example, we create two jython scripts that we want to distribute
-in a .jar file as plugins:
+In this example, we create two jython scripts that we want to distribute in a .jar file as plugins:
 
 The <i>printer.py</i> script:
 
@@ -2242,9 +1986,7 @@ Finally, we put all files in a .jar file:
 
 `$ jar cf my_jython_scripts.jar plugins.config my/Jython_Launcher.class scripts/*py`
 
-Then, drop the jar file into fiji/plugins/ folder and run "Help - Update
-Menus", or restart fiji. Your scripts will appear under Plugins - My
-Scripts.
+Then, drop the jar file into fiji/plugins/ folder and run "Help - Update Menus", or restart fiji. Your scripts will appear under Plugins - My Scripts.
 
 For clarity, this is a summary of the files in the folder:
 
@@ -2256,79 +1998,41 @@ For clarity, this is a summary of the files in the folder:
 
 #### With Maven
 
-Even if you are not familiar with Maven, packaging the py script into a
-jar is rather straightforward.
+Even if you are not familiar with Maven, packaging the py script into a jar is rather straightforward.
 
-First make sure that you have installed Maven and a java jdk and add the
-path to those 2 in your environment variables (see [Maven
-installation](https://maven.apache.org/install.html)).
+First make sure that you have installed Maven and a java jdk and add the path to those 2 in your environment variables (see [Maven installation](https://maven.apache.org/install.html)).
 
-Then download a zip of this [Github
-repository](https://github.com/m-entrup/imagej-jython-package). And
-follow the guidelines :
+Then download a zip of this [Github repository](https://github.com/m-entrup/imagej-jython-package). And follow the guidelines :
 
   - place your script in a subfolder of `Ressources`
-  - eventually modify the pom file according to your dependencies (see
-    [Building a POM](https://imagej.net/Building_a_POM)
+  - eventually modify the pom file according to your dependencies (see [Building a POM](https://imagej.net/Building_a_POM)
   - then open a command line in the folder and type `mvn package`.
 
-Eventually you can also type `mvn
--Dimagej.app.directory=/path/to/your/Fiji.app
--Dimagej.deleteOtherVersions=older` to have the dependencies
-automatically coped to an ImageJ installation : handy to test your
-package on a fresh installation.
+Eventually you can also type `mvn -Dimagej.app.directory=/path/to/your/Fiji.app -Dimagej.deleteOtherVersions=older` to have the dependencies automatically coped to an ImageJ installation : handy to test your package on a fresh installation.
 
-NB : This latter command with the dependencies was [reported not to
-function with windows
-Powershell](http://forum.imagej.net/t/use-opencv-within-jython-macro/10320/18?u=lthomas),
-although the normal packaging works. Use a different command line tool
-in this case.
+NB : This latter command with the dependencies was [reported not to function with windows Powershell](http://forum.imagej.net/t/use-opencv-within-jython-macro/10320/18?u=lthomas), although the normal packaging works. Use a different command line tool in this case.
 
-Notice, though, that <b>you don't need to do the .jar packaging at
-all</b>. Just place the python scripts directly under fiji/plugins/My
-Scripts/ and they will appear in the menus as regular plugins, and
-similarly be handle by the updater to populate an update site.
+Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just place the python scripts directly under fiji/plugins/My Scripts/ and they will appear in the menus as regular plugins, and similarly be handle by the updater to populate an update site.
 
 # Jython examples in Fiji
 
-  - {% include github repo='fiji'
-    path='plugins/Examples/Find\_Dimension\_of\_Raw\_Image.py'
-    label='Find Dimension of Raw Image' %}
-  - {% include github repo='fiji'
-    path='plugins/Examples/Edit\_LUT\_As\_Text.py' label='Edit LUT As
-    Text' %}
-  - {% include github repo='fiji'
-    path='plugins/Examples/Delayed\_Snapshot.py' label='Delayed
-    Snapshot' %}
-  - {% include github repo='fiji'
-    path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Python.py'
-    label='Command Launcher GUI' %}
-  - {% include github repo='fiji'
-    path='plugins/Examples/list\_all\_threads.py' label='List all
-    threads' %}
-  - {% include github repo='fiji' path='plugins/Examples/chess\_.py'
-    label='Chess' %}
+  - {% include github repo='fiji' path='plugins/Examples/Find\_Dimension\_of\_Raw\_Image.py' label='Find Dimension of Raw Image' %}
+  - {% include github repo='fiji' path='plugins/Examples/Edit\_LUT\_As\_Text.py' label='Edit LUT As Text' %}
+  - {% include github repo='fiji' path='plugins/Examples/Delayed\_Snapshot.py' label='Delayed Snapshot' %}
+  - {% include github repo='fiji' path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Python.py' label='Command Launcher GUI' %}
+  - {% include github repo='fiji' path='plugins/Examples/list\_all\_threads.py' label='List all threads' %}
+  - {% include github repo='fiji' path='plugins/Examples/chess\_.py' label='Chess' %}
 
 <!-- end list -->
 
-  - {% include github repo='fiji'
-    path='plugins/Examples/TrakEM2\_Example\_Scripts/extract\_stack\_under\_arealist.py'
-    label='Extract stack under AreaList' %} in TrakEM2.
-  - {% include github repo='fiji'
-    path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py'
-    label='Set all transforms to identity' %} for TrakEM2 objects.
-  - {% include github repo='fiji'
-    path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_Select\_All.py'
-    label='Select All' %} objects in TrakEM2.
-  - {% include github repo='fiji'
-    path='plugins/Examples/TrakEM2\_Example\_Scripts/Measure\_AreaLists.py'
-    label='Measure AreaList' %} in TrakEM2.
+  - {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/extract\_stack\_under\_arealist.py' label='Extract stack under AreaList' %} in TrakEM2.
+  - {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py' label='Set all transforms to identity' %} for TrakEM2 objects.
+  - {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_Select\_All.py' label='Select All' %} objects in TrakEM2.
+  - {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/Measure\_AreaLists.py' label='Measure AreaList' %} in TrakEM2.
 
 # See also
 
-  - Albert Cardona's crash course in [Jython scripting with
-    Fiji](http://www.ini.uzh.ch/~acardona/fiji-tutorial/index.html).
+  - Albert Cardona's crash course in [Jython scripting with Fiji](http://www.ini.uzh.ch/~acardona/fiji-tutorial/index.html).
   - Jython for [TrakEM2 Scripting](TrakEM2_Scripting "wikilink").
 
-[Category:Scripting](Category:Scripting "wikilink")
-[Category:Jython](Category:Jython "wikilink")
+[Category:Scripting](Category:Scripting "wikilink") [Category:Jython](Category:Jython "wikilink")

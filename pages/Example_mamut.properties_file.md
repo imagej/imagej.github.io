@@ -8,11 +8,7 @@ categories:
 description: test description
 ---
 
-The key-bindings used in the [MaMuT](MaMuT "wikilink") viewer can be
-customized through a text file, that allow you to remap any command to
-any key. To so, create a text file named `mamut.properties` in the
-`Fiji.app` folder (where the `plugins` and `jars` folders are). This
-file must follow this syntax example:
+The key-bindings used in the [MaMuT](MaMuT "wikilink") viewer can be customized through a text file, that allow you to remap any command to any key. To so, create a text file named `mamut.properties` in the `Fiji.app` folder (where the `plugins` and `jars` folders are). This file must follow this syntax example:
 
     A=add spot
     ENTER=add spot
@@ -25,12 +21,7 @@ file must follow this syntax example:
     control\ Q=decrease spot radius a bit
     ...
 
-It follows the syntax `key=command`, one per line. Modifier keys such as
-{% include key content='press|Control' %} and {% include key
-content='press|Shift' %} are specified by prepending the key with their
-name, separated by a space escaped with a backslash `\`. Spaces in
-commands do not need to be escaped. The dash \# character at the
-beginning of a line is used to insert comments.
+It follows the syntax `key=command`, one per line. Modifier keys such as {% include key content='press|Control' %} and {% include key content='press|Shift' %} are specified by prepending the key with their name, separated by a space escaped with a backslash `\`. Spaces in commands do not need to be escaped. The dash \# character at the beginning of a line is used to insert comments.
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -38,8 +29,7 @@ beginning of a line is used to insert comments.
 
 1.  The key bindings for MaMuT viewer windows.
 
-2.  Available actions are the following (space in between words must be
-    included):
+2.  Available actions are the following (space in between words must be included):
 
 3.  
 4.  add spot
@@ -102,37 +92,23 @@ beginning of a line is used to insert comments.
 
 36. An action can have several key bindings.
 
-37. When using shift, control, etc... use a a backslash-space after the
-    modifier
+37. When using shift, control, etc... use a a backslash-space after the modifier
 
 38. (as in 'control\\ Q').
 
-A=add spot ENTER=add spot D=delete spot E=increase spot radius
-Q=decrease spot radius shift\\ E=increase spot radius a lot shift\\
-Q=decrease spot radius a lot control\\ E=increase spot radius a bit
-control\\ Q=decrease spot radius a bit shift\\ A=semi-auto tracking
-shift\\ L=toggle linking mode L=toggle link F1=help
+A=add spot ENTER=add spot D=delete spot E=increase spot radius Q=decrease spot radius shift\\ E=increase spot radius a lot shift\\ Q=decrease spot radius a lot control\\ E=increase spot radius a bit control\\ Q=decrease spot radius a bit shift\\ A=semi-auto tracking shift\\ L=toggle linking mode L=toggle link F1=help
 
-S=brightness settings F6=visibility and grouping I=toggle interpolation
-F=toggle fused mode G=toggle grouping T=toggle manual transformation
+S=brightness settings F6=visibility and grouping I=toggle interpolation F=toggle fused mode G=toggle grouping T=toggle manual transformation
 
 F8=record max projection movie F10=record movie
 
-shift\\ 1=toggle source visibility 0 shift\\ 2=toggle source visibility
-1 shift\\ 3=toggle source visibility 2 shift\\ 4=toggle source
-visibility 3 shift\\ 5=toggle source visibility 4 shift\\ 6=toggle
-source visibility 5 shift\\ 7=toggle source visibility 6 shift\\
-8=toggle source visibility 7 shift\\ 9=toggle source visibility 8
-shift\\ 0=toggle source visibility 9
+shift\\ 1=toggle source visibility 0 shift\\ 2=toggle source visibility 1 shift\\ 3=toggle source visibility 2 shift\\ 4=toggle source visibility 3 shift\\ 5=toggle source visibility 4 shift\\ 6=toggle source visibility 5 shift\\ 7=toggle source visibility 6 shift\\ 8=toggle source visibility 7 shift\\ 9=toggle source visibility 8 shift\\ 0=toggle source visibility 9
 
-shift\\ Z=align XY plane shift\\ X=align ZY plane shift\\ Y=align XZ
-plane shift\\ C=align XZ plane
+shift\\ Z=align XY plane shift\\ X=align ZY plane shift\\ Y=align XZ plane shift\\ C=align XZ plane
 
-CLOSE\_BRACKET=step time forward M=next timepoint OPEN\_BRACKET=step
-time backward N=previous timepoint
+CLOSE\_BRACKET=step time forward M=next timepoint OPEN\_BRACKET=step time backward N=previous timepoint
 
-shift\\ CLOSE\_BRACKET=step time forward shift\\ M=next timepoint
-shift\\ OPEN\_BRACKET=step time backward shift\\ N=previous timepoint
+shift\\ CLOSE\_BRACKET=step time forward shift\\ M=next timepoint shift\\ OPEN\_BRACKET=step time backward shift\\ N=previous timepoint
 
 shift\\ B=set bookmark B=go to bookmark O=go to bookmark rotation
 

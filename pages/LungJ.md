@@ -8,17 +8,12 @@ categories: Plugins,Citable,Segmentation,Binary,Filtering,Image_annotation
 description: test description
 ---
 
-{% capture source %} {% include github org="LWollatz" repo="LungJ" %} {%
-endcapture %} {% include sidebox-right name='LungJ' author='[Lasse
-Wollatz](User:LungJ "wikilink")' maintainer='[Lasse
-Wollatz](User:LungJ "wikilink")' software='ImageJ/Fiji'
-logo='![LungJ-logo.png](/images/pages/LungJ-logo.png "LungJ-logo.png")"' source=source
-released='Nov 10<sup>st</sup>, 2016' version='0.5.1, November
-10<sup>th</sup>, 2016 (LungJ v0.5.1)' status='stable, new'
-category='[Segmentation](:Category:Segmentation "wikilink"),
-[Binary](:Category:Binary "wikilink"),
-[Filtering](:Category:Filtering "wikilink"), [Image
-annotation](:Category:Image_annotation "wikilink")' %}{% include toc %}
+
+{% capture source%}
+{% include github org='LWollatz' repo='LungJ' %}
+{% endcapture %}
+{% include info-box name='LungJ' author='[Lasse Wollatz](User:LungJ "wikilink")' maintainer='[Lasse Wollatz](User:LungJ "wikilink")' software='ImageJ/Fiji' logo='![LungJ-logo.png](/images/pages/LungJ-logo.png "LungJ-logo.png")"' source=source released='Nov 10<sup>st</sup>, 2016' latest-version='0.5.1, November 10<sup>th</sup>, 2016 (LungJ v0.5.1)' status='stable, new' category='[Segmentation](:Category:Segmentation "wikilink"), [Binary](:Category:Binary "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Image annotation](:Category:Image_annotation "wikilink")' %}{% include toc%}
+
 
 ## Installation
 
@@ -40,56 +35,43 @@ annotation](:Category:Image_annotation "wikilink")' %}{% include toc %}
 
 9\) A new subdirectory called LungJ appears under Plugins.
 
-10\) Future versions of LungJ will be updated together with the normal
-Fiji plugin updates.
+10\) Future versions of LungJ will be updated together with the normal Fiji plugin updates.
 
 ## Function Documentation
 
 ### 3D Blocks - Concatenate (Concatenate\_3D)
 
-{% include bc content='Plugins | LungJ | 3D Blocks | 3D Blocks -
-Concatenate'%}
+{% include bc content='Plugins | LungJ | 3D Blocks | 3D Blocks - Concatenate'%}
 
 Combines 3D blocks in a directory into a single image.
 
 ### 3D Blocks - Create (Subdivide\_3D)
 
-{% include bc content='Plugins | LungJ | 3D Blocks | 3D Blocks -
-Create'%}
+{% include bc content='Plugins | LungJ | 3D Blocks | 3D Blocks - Create'%}
 
-Divides a 3D image into 3D blocks and saves them into a directory along
-with header information in a txt file.
+Divides a 3D image into 3D blocks and saves them into a directory along with header information in a txt file.
 
 ### 3D Blocks - Halo Exchange (Halo\_Exchange)
 
-{% include bc content='Plugins | LungJ | 3D Blocks | 3D Blocks - Halo
-Exchange'%}
+{% include bc content='Plugins | LungJ | 3D Blocks | 3D Blocks - Halo Exchange'%}
 
-Exchanges the halos of a 3D Blocks image. This function can be applied
-between filters. Halos allow the avoidance of boundary errors/
-inconsistencies.
+Exchanges the halos of a 3D Blocks image. This function can be applied between filters. Halos allow the avoidance of boundary errors/ inconsistencies.
 
 ### 3D Blocks - Histogram (Block\_Histogram)
 
-{% include bc content='Plugins | LungJ | 3D Blocks | 3D Blocks -
-Histogram'%}
+{% include bc content='Plugins | LungJ | 3D Blocks | 3D Blocks - Histogram'%}
 
-Opens the blocks of a 3D Blocks image, calculates all the relevant
-statistics and displays a histogram for all the blocks combined.
-Optionally saves the statistics to the properties directory.
+Opens the blocks of a 3D Blocks image, calculates all the relevant statistics and displays a histogram for all the blocks combined. Optionally saves the statistics to the properties directory.
 
 ### 3D Blocks - Run Macro (Run\_Macro\_3D)
 
-{% include bc content='Plugins | LungJ | 3D Blocks | 3D Blocks - Run
-Macro'%}
+{% include bc content='Plugins | LungJ | 3D Blocks | 3D Blocks - Run Macro'%}
 
-Runs a macro for each 3D block in a directory and saves the resulting
-image blocks to a new directory.
+Runs a macro for each 3D block in a directory and saves the resulting image blocks to a new directory.
 
 ### Apply Binary Threshold (Create\_Threshold\_Mask)
 
-{% include bc content='Plugins | LungJ | Tools | Apply Binary
-Threshold'%}
+{% include bc content='Plugins | LungJ | Tools | Apply Binary Threshold'%}
 
 Creates a truly binary mask based on a fixed global threshold.
 
@@ -97,36 +79,23 @@ Creates a truly binary mask based on a fixed global threshold.
 
 {% include bc content='Plugins | LungJ | Tools | Apply Mask'%}
 
-Applies a mask to an image, leaving the foreground as it is and
-replacing the background by black.
+Applies a mask to an image, leaving the foreground as it is and replacing the background by black.
 
 ### Apply Weka Classifier (Apply\_Weka\_Classifier)
 
-{% include bc content='Plugins | LungJ | Tools | Apply Weka
-Classifier'%}
+{% include bc content='Plugins | LungJ | Tools | Apply Weka Classifier'%}
 
-Applies a Weka classifier based on the filename of an image and the
-filename of a classifier model. This implements the whole application
-process in a single function and does not require loading the original
-image into memory twice. This function is likely to suffer from updates
-to the weka-segmentation plug-in.
+Applies a Weka classifier based on the filename of an image and the filename of a classifier model. This implements the whole application process in a single function and does not require loading the original image into memory twice. This function is likely to suffer from updates to the weka-segmentation plug-in.
 
 ### Average ROIs Colour (Average\_ROI\_Colour)
 
 {% include bc content='Plugins | LungJ | Other | Average ROIs Colour'%}
 
-Finds the average value or RGB of active ROIs. The expected value range
-is overlaid on the histogram of the active image. Error calculations are
-based on
+Finds the average value or RGB of active ROIs. The expected value range is overlaid on the histogram of the active image. Error calculations are based on
 
-Keith Dear, "An Online Text in Introductory Statistics." (1999)
-University of Newcastle, Australia \[online\]. Was available at
-http://surfstat.newcastle.edu.au/ and
+Keith Dear, "An Online Text in Introductory Statistics." (1999) University of Newcastle, Australia \[online\]. Was available at http://surfstat.newcastle.edu.au/ and
 
-Hans-Jürgen Andreß "Students T-Verteilung" (2001) \[online\]. Available
-at
-http://psydok.sulb.uni-saarland.de/volltexte/2004/268/html/surfstat/t.htm,
-last accessed: 22. July 2015.
+Hans-Jürgen Andreß "Students T-Verteilung" (2001) \[online\]. Available at http://psydok.sulb.uni-saarland.de/volltexte/2004/268/html/surfstat/t.htm, last accessed: 22. July 2015.
 
 ### Colour by Segment (Colorize\_)
 
@@ -136,68 +105,51 @@ Combines a set of segmented images into a colour image.
 
 ### Compare Map to Mask (Compare\_MapMask)
 
-{% include bc content='Plugins | LungJ | Statistics | Compare Map to
-Mask'%}
+{% include bc content='Plugins | LungJ | Statistics | Compare Map to Mask'%}
 
-Compares a probability map to a binary masks by combining them into a
-single colour-coded image. Agreed foreground is white and agreed
-background black. Foreground detected as background is blue and
-background detected as foreground red.
+Compares a probability map to a binary masks by combining them into a single colour-coded image. Agreed foreground is white and agreed background black. Foreground detected as background is blue and background detected as foreground red.
 
 ### Compare Masks (Compare\_Masks)
 
 {% include bc content='Plugins | LungJ | Statistics | Compare Masks'%}
 
-Compares two binary masks by combining them into a single colour-coded
-image. Agreed foreground is white and agreed background black.
-Foreground detected as background is blue and background detected as
-foreground red.
+Compares two binary masks by combining them into a single colour-coded image. Agreed foreground is white and agreed background black. Foreground detected as background is blue and background detected as foreground red.
 
 ### Convert Mask to STL (mask\_to\_stl)
 
 {% include bc content='Plugins | LungJ | Other | Convert Mask to STL'%}
 
-Takes a mask and converts and saves it as an STL file using Image Viewer
-3D. This is useful if an image should be 3D printed.
+Takes a mask and converts and saves it as an STL file using Image Viewer 3D. This is useful if an image should be 3D printed.
 
 ### Create MCTV Tiles (Create\_MCTV\_Tiles)
 
 {% include bc content='Plugins | MCTV | Create MCTV Tiles'%}
 
-Creates jpg tiles and metadata file compatible with MCTV (code
-<doi:10.5258/SOTON/400332> , paper <doi:10.1109/eScience.2015.42>).
+Creates jpg tiles and metadata file compatible with MCTV (code <doi:10.5258/SOTON/400332> , paper <doi:10.1109/eScience.2015.42>).
 
 ### Entropy
 
 {% include bc content='Plugins | LungJ | Filter | Entropy'%}
 
-Calls the Entropy filter from Trainable
-Segmentation/src/main/java/trainableSegmentation/filters/Entropy
-Filter.java
+Calls the Entropy filter from Trainable Segmentation/src/main/java/trainableSegmentation/filters/Entropy Filter.java
 
 ### Fill Holes Manual 3D (Fill\_Holes\_Manual\_3D)
 
 {% include bc content='Plugins | LungJ | Tools | Fill Holes Manual 3D'%}
 
-Aims to fill holes of a mask. Ideal for filling a mask with many holes
-in the foreground but only one or few connected background(s).
+Aims to fill holes of a mask. Ideal for filling a mask with many holes in the foreground but only one or few connected background(s).
 
 ### Gabor (Weka\_Gabor)
 
 {% include bc content='Plugins | LungJ | Filter | Gabor'%}
 
-Applies the Gabor filter from Trainable
-Segmentation/src/main/java/trainableSegmentation/FeatureStack.java
+Applies the Gabor filter from Trainable Segmentation/src/main/java/trainableSegmentation/FeatureStack.java
 
 ### Invert Values (Invert\_Values)
 
 {% include bc content='Plugins | LungJ | Tools | Invert Values'%}
 
-LungJ code for inverting the values in an image. This code changes the
-actual values and mirrors them around the centre between minimum and
-maximum. Values which exceed the minimum or maximum specified are being
-cut of at the boundary. The GUI looks up the minimum and maximum value
-in an image and suggests them as defaults.
+LungJ code for inverting the values in an image. This code changes the actual values and mirrors them around the centre between minimum and maximum. Values which exceed the minimum or maximum specified are being cut of at the boundary. The GUI looks up the minimum and maximum value in an image and suggests them as defaults.
 
 ### Label Hyperstack (Label\_Hyperstack)
 
@@ -209,45 +161,37 @@ Consistently labels the slices of a hyperstack.
 
 {% include bc content='Plugins | LungJ | Filter | Lipschitz'%}
 
-Calls the Lipschitz filter from
-Trainable\_Segmentation/src/main/java/trainableSegmentation/filters/Lipschitz\_.java
+Calls the Lipschitz filter from Trainable\_Segmentation/src/main/java/trainableSegmentation/filters/Lipschitz\_.java
 
 ### LungJ Settings (LungJ\_Settings)
 
 {% include bc content='Plugins | LungJ | LungJ Settings'%}
 
-Allows to change standard settings for LungJ. This affects mainly 3D
-Blocks - Run Macro but also changes the default values for some other
-functions.
+Allows to change standard settings for LungJ. This affects mainly 3D Blocks - Run Macro but also changes the default values for some other functions.
 
 ### Matrix Operation (Matrix\_Operation)
 
 {% include bc content='Plugins | LungJ | Filter | Matrix Operation'%}
 
-Applies a 2D matrix onto an image. Can be used for GUI implementation of
-non standard matrix based filters.
+Applies a 2D matrix onto an image. Can be used for GUI implementation of non standard matrix based filters.
 
 ### Membrane Projections (Weka\_Membrane\_Projections)
 
-{% include bc content='Plugins | LungJ | Filter | Membrane
-Projections'%}
+{% include bc content='Plugins | LungJ | Filter | Membrane Projections'%}
 
-Applies the Membrane Projections filter from Trainable
-Segmentation/src/main/java/trainableSegmentation/FeatureStack.java
+Applies the Membrane Projections filter from Trainable Segmentation/src/main/java/trainableSegmentation/FeatureStack.java
 
 ### Neighbors (Weka\_Neighbors)
 
 {% include bc content='Plugins | LungJ | Filter | Neighbors'%}
 
-Applies the Neighbors filter from Trainable
-Segmentation/src/main/java/trainableSegmentation/FeatureStack.java
+Applies the Neighbors filter from Trainable Segmentation/src/main/java/trainableSegmentation/FeatureStack.java
 
 ### Set Calibration (Set\_Calibration)
 
 {% include bc content='Plugins | LungJ | Other | Set Calibration'%}
 
-Allows to set the Calibration of an image, similar to Image \>
-Properties but with pixel value calibration function included.
+Allows to set the Calibration of an image, similar to Image \> Properties but with pixel value calibration function included.
 
 ### Stretch Histogram (Stretch\_Histogram)
 
@@ -259,28 +203,12 @@ Linearly stretch the values of an image.
 
 {% include bc content='Plugins | LungJ | Filter | Test WEKA Filter'%}
 
-Allows to compare WEKA filters visually. Note that the Gabor filter is
-currently not working.
+Allows to compare WEKA filters visually. Note that the Gabor filter is currently not working.
 
 ## Publications
 
-Please note that LungJ, as well as other plug-ins available through
-Fiji, is based on a publication. If you use it successfully for your
-research please be so kind to cite our work:
+Please note that LungJ, as well as other plug-ins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
-  - 
-{% capture includecontent %} last1=Wollatz | first1=Lasse |
-last2=Johnston | first2=Steven J. | last3=Lackie | first3=Peter M. |
-last4=Cox | first4=Simon J. | title=LungJ v0.5.1 | type=Code | year=2016
-| month=November | publisher=University of Southampton |
-doi=10.5258/SOTON/401280 |
-url=http://eprints.soton.ac.uk/id/eprint/401280 {% endcapture %}
+  - {% include citation last1='Wollatz' first1='Lasse' last2='Johnston' first2='Steven J.' last3='Lackie' first3='Peter M.' last4='Cox' first4='Simon J.' title='LungJ v0.5.1' type='Code' year='2016' month='November' publisher='University of Southampton' doi='10.5258/SOTON/401280' url='http://eprints.soton.ac.uk/id/eprint/401280' %}
 
-{% include citation content=includecontent %}
-
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Citable](Category:Citable "wikilink")
-[Category:Segmentation](Category:Segmentation "wikilink")
-[Category:Binary](Category:Binary "wikilink")
-[Category:Filtering](Category:Filtering "wikilink")
-[Category:Image\_annotation](Category:Image_annotation "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Citable](Category:Citable "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Binary](Category:Binary "wikilink") [Category:Filtering](Category:Filtering "wikilink") [Category:Image\_annotation](Category:Image_annotation "wikilink")

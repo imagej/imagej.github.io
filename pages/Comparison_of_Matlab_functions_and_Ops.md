@@ -8,19 +8,16 @@ categories:
 description: test description
 ---
 
-{% include sidebox-right content='This page is under active development.
+{% include info-box content='This page is under active development.
 
-  - The intention is to help developers switch from MATLAB to Ops by
-    showing equivalent operations.
-
-' %}
+  - The intention is to help developers switch from MATLAB to Ops by showing equivalent operations.' %}
 
 ## Import, Export, and Conversion
 
 ### Read and Write Image Data from Files
 
-|                                                                   |                                                                       |
-| ----------------------------------------------------------------- | --------------------------------------------------------------------- |
+|                                                                        |                                                                       |
+| ---------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | | {% include matlab path='matlab/ref' function='imread' %}        | | Read image from graphics file                                       |
 | | {% include matlab path='matlab/ref' function='imwrite' %}       | | Write image to graphics file                                        |
 | | {% include matlab path='matlab/ref' function='imfinfo' %}       | | Information about graphics file                                     |
@@ -35,8 +32,8 @@ description: test description
 
 ### Read and Write Image Data from DICOM Files
 
-|                                                                 |                                           |
-| --------------------------------------------------------------- | ----------------------------------------- |
+|                                                                      |                                           |
+| -------------------------------------------------------------------- | ----------------------------------------- |
 | | {% include matlab path='images/ref' function='dicomanon' %}   | | Anonymize DICOM file                    |
 | | {% include matlab path='images/ref' function='dicomdict' %}   | | Get or set active DICOM data dictionary |
 | | {% include matlab path='images/ref' function='dicomdisp' %}   | | Display DICOM file structure            |
@@ -48,8 +45,8 @@ description: test description
 
 ### High Dynamic Range Images
 
-|                                                              |                                                      |
-| ------------------------------------------------------------ | ---------------------------------------------------- |
+|                                                                   |                                                      |
+| ----------------------------------------------------------------- | ---------------------------------------------------- |
 | | {% include matlab path='images/ref' function='hdrread' %}  | | Read high dynamic range (HDR) image                |
 | | {% include matlab path='images/ref' function='hdrwrite' %} | | Write Radiance high dynamic range (HDR) image file |
 | | {% include matlab path='images/ref' function='makehdr' %}  | | Create high dynamic range image                    |
@@ -57,8 +54,8 @@ description: test description
 
 ### Large Image Files
 
-|                                                                  |                                                      |
-| ---------------------------------------------------------------- | ---------------------------------------------------- |
+|                                                                       |                                                      |
+| --------------------------------------------------------------------- | ---------------------------------------------------- |
 | | {% include matlab path='images/ref' function='ImageAdapter' %} | | Interface for image I/O                            |
 | | {% include matlab path='images/ref' function='isrset' %}       | | Check if file is R-Set                             |
 | | {% include matlab path='images/ref' function='openrset' %}     | | Open R-Set file                                    |
@@ -66,8 +63,8 @@ description: test description
 
 ### Image Type Conversion
 
-|                                                                 |                                                                          |
-| --------------------------------------------------------------- | ------------------------------------------------------------------------ |
+|                                                                      |                                                                          |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | | {% include matlab path='images/ref' function='gray2ind' %}    | | Convert grayscale or binary image to indexed image                     |
 | | {% include matlab path='images/ref' function='ind2gray' %}    | | Convert indexed image to grayscale image                               |
 | | {% include matlab path='images/ref' function='mat2gray' %}    | | Convert matrix to grayscale image                                      |
@@ -91,8 +88,8 @@ description: test description
 
 ### Color
 
-|                                                                |                                                                   |
-| -------------------------------------------------------------- | ----------------------------------------------------------------- |
+|                                                                     |                                                                   |
+| ------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | | {% include matlab path='images/ref' function='rgb2lab' %}    | | Convert RGB to CIE 1976 L\*a\*b\*                               |
 | | {% include matlab path='images/ref' function='rgb2ntsc' %}   | | Convert RGB color values to NTSC color space                    |
 | | {% include matlab path='images/ref' function='rgb2xyz' %}    | | Convert RGB to CIE 1931 XYZ                                     |
@@ -121,8 +118,8 @@ description: test description
 
 ### Synthetic Images
 
-|                                                                  |                             |
-| ---------------------------------------------------------------- | --------------------------- |
+|                                                                       |                             |
+| --------------------------------------------------------------------- | --------------------------- |
 | | {% include matlab path='images/ref' function='checkerboard' %} | | Create checkerboard image |
 | | {% include matlab path='images/ref' function='phantom' %}      | | Create head phantom image |
 | | {% include matlab path='images/ref' function='imnoise' %}      | | Add noise to image        |
@@ -131,8 +128,8 @@ description: test description
 
 ### Basic Display
 
-|                                                                |                                                                    |
-| -------------------------------------------------------------- | ------------------------------------------------------------------ |
+|                                                                     |                                                                    |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | | {% include matlab path='images/ref' function='imshow' %}     | | Display image                                                    |
 | | {% include matlab path='images/ref' function='montage' %}    | | Display multiple image frames as rectangular montage             |
 | | {% include matlab path='images/ref' function='immovie' %}    | | Make movie from multiframe image                                 |
@@ -144,8 +141,8 @@ description: test description
 
 ### Interactive Exploration with the Image Viewer App
 
-|                                                                    |                                                                    |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------ |
+|                                                                         |                                                                    |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | | {% include matlab path='images/ref' function='imtool' %}         | | Image Viewer app                                                 |
 | | {% include matlab path='images/ref' function='imageinfo' %}      | | Image Information tool                                           |
 | | {% include matlab path='images/ref' function='imcontrast' %}     | | Adjust Contrast tool                                             |
@@ -162,8 +159,8 @@ description: test description
 
 ### Build Interactive Tools
 
-|                                                                            |                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------- |
+|                                                                                 |                                                           |
+| ------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | | {% include matlab path='images/ref' function='imageinfo' %}              | | Image Information tool                                  |
 | | {% include matlab path='images/ref' function='imcolormaptool' %}         | | Choose Colormap tool                                    |
 | | {% include matlab path='images/ref' function='imcontrast' %}             | | Adjust Contrast tool                                    |
@@ -214,8 +211,8 @@ description: test description
 
 ### Geometric Transformations
 
-|                                                                                                       |                                                       |
-| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+|                                                                                                            |                                                       |
+| ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
 | | {% include matlab path='images/ref' function='imcrop' %}                                            | | Crop image                                          |
 | | {% include matlab path='images/ref' function='imresize' %}                                          | | Resize image                                        |
 | | {% include matlab path='images/ref' function='imrotate' %}                                          | | Rotate image                                        |
@@ -241,8 +238,8 @@ description: test description
 
 ### Spatial Referencing
 
-|                                                                |                                                                       |
-| -------------------------------------------------------------- | --------------------------------------------------------------------- |
+|                                                                     |                                                                       |
+| ------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | | {% include matlab path='images/ref' function='imwarp' %}     | | Apply geometric transformation to image                             |
 | | {% include matlab path='images/ref' function='imregister' %} | | Intensity-based image registration                                  |
 | | {% include matlab path='images/ref' function='imregtform' %} | | Estimate geometric transformation that aligns two 2-D or 3-D images |
@@ -254,8 +251,8 @@ description: test description
 
 ### Automatic Registration
 
-|                                                                                                       |                                                                                         |
-| ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+|                                                                                                            |                                                                                         |
+| ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | | {% include matlab path='images/ref' function='imregister' %}                                        | | Intensity-based image registration                                                    |
 | | {% include matlab path='images/ref' function='imregconfig' %}                                       | | Configurations for intensity-based registration                                       |
 | | {% include matlab path='images/ref' function='imregtform' %}                                        | | Estimate geometric transformation that aligns two 2-D or 3-D images                   |
@@ -270,8 +267,8 @@ description: test description
 
 ### Control Point Registration
 
-|                                                                    |                                                         |
-| ------------------------------------------------------------------ | ------------------------------------------------------- |
+|                                                                         |                                                         |
+| ----------------------------------------------------------------------- | ------------------------------------------------------- |
 | | {% include matlab path='images/ref' function='cpselect' %}       | | Control Point Selection Tool                          |
 | | {% include matlab path='images/ref' function='fitgeotrans' %}    | | Fit geometric transformation to control point pairs   |
 | | {% include matlab path='images/ref' function='cpcorr' %}         | | Tune control-point locations using cross correlation  |
@@ -283,8 +280,8 @@ description: test description
 
 ### Contrast Adjustment
 
-|                                                                   |                                                                         |
-| ----------------------------------------------------------------- | ----------------------------------------------------------------------- |
+|                                                                        |                                                                         |
+| ---------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | | {% include matlab path='images/ref' function='imadjust' %}      | | Adjust image intensity values or colormap                             |
 | | {% include matlab path='images/ref' function='imcontrast' %}    | | Adjust Contrast tool                                                  |
 | | {% include matlab path='images/ref' function='imsharpen' %}     | | Sharpen image using unsharp masking                                   |
@@ -301,8 +298,8 @@ description: test description
 
 ### Image Filtering
 
-|                                                                        |                                                      |
-| ---------------------------------------------------------------------- | ---------------------------------------------------- |
+|                                                                             |                                                      |
+| --------------------------------------------------------------------------- | ---------------------------------------------------- |
 | | {% include matlab path='images/ref' function='imfilter' %}           | | N-D filtering of multidimensional images           |
 | | {% include matlab path='images/ref' function='imgaussfilt' %}        | | 2-D Gaussian filtering of images                   |
 | | {% include matlab path='images/ref' function='imgaussfilt3' %}       | | 3-D Gaussian filtering of 3-D images               |
@@ -337,8 +334,8 @@ description: test description
 
 ### Morphological Operations
 
-|                                                                   |                                                                |
-| ----------------------------------------------------------------- | -------------------------------------------------------------- |
+|                                                                        |                                                                |
+| ---------------------------------------------------------------------- | -------------------------------------------------------------- |
 | | {% include matlab path='images/ref' function='bwhitmiss' %}     | | Binary hit-miss operation                                    |
 | | {% include matlab path='images/ref' function='bwmorph' %}       | | Morphological operations on binary images                    |
 | | {% include matlab path='images/ref' function='bwulterode' %}    | | Ultimate erosion                                             |
@@ -374,8 +371,8 @@ Deblurring
 
 </h3>
 
-|                                                                 |                                                              |
-| --------------------------------------------------------------- | ------------------------------------------------------------ |
+|                                                                      |                                                              |
+| -------------------------------------------------------------------- | ------------------------------------------------------------ |
 | | {% include matlab path='images/ref' function='deconvblind' %} | | Deblur image using blind deconvolution                     |
 | | {% include matlab path='images/ref' function='deconvlucy' %}  | | Deblur image using Lucy-Richardson method                  |
 | | {% include matlab path='images/ref' function='deconvreg' %}   | | Deblur image using regularized filter                      |
@@ -387,8 +384,8 @@ Deblurring
 
 ### ROI-Based Processing
 
-|                                                                |                                                                 |
-| -------------------------------------------------------------- | --------------------------------------------------------------- |
+|                                                                     |                                                                 |
+| ------------------------------------------------------------------- | --------------------------------------------------------------- |
 | | {% include matlab path='images/ref' function='roipoly' %}    | | Specify polygonal region of interest (ROI)                    |
 | | {% include matlab path='images/ref' function='poly2mask' %}  | | Convert region of interest (ROI) polygon to region mask       |
 | | {% include matlab path='images/ref' function='regionfill' %} | | Fill in specified regions in image using inward interpolation |
@@ -402,8 +399,8 @@ Deblurring
 
 ### Neighborhood and Block Processing
 
-|                                                                  |                                                     |
-| ---------------------------------------------------------------- | --------------------------------------------------- |
+|                                                                       |                                                     |
+| --------------------------------------------------------------------- | --------------------------------------------------- |
 | | {% include matlab path='images/ref' function='ImageAdapter' %} | | Interface for image I/O                           |
 | | {% include matlab path='images/ref' function='blockproc' %}    | | Distinct block processing for image               |
 | | {% include matlab path='images/ref' function='bestblk' %}      | | Determine optimal block size for block processing |
@@ -414,8 +411,8 @@ Deblurring
 
 ### Image Arithmetic
 
-|                                                                   |                                                                   |
-| ----------------------------------------------------------------- | ----------------------------------------------------------------- |
+|                                                                        |                                                                   |
+| ---------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | | {% include matlab path='images/ref' function='imabsdiff' %}     | | Absolute difference of two images                               |
 | | {% include matlab path='images/ref' function='imadd' %}         | | Add two images or add constant to image                         |
 | | {% include matlab path='images/ref' function='imapplymatrix' %} | | Linear combination of color channels                            |
@@ -429,8 +426,8 @@ Deblurring
 
 ### Object Analysis
 
-|                                                                     |                                                       |
-| ------------------------------------------------------------------- | ----------------------------------------------------- |
+|                                                                          |                                                       |
+| ------------------------------------------------------------------------ | ----------------------------------------------------- |
 | | {% include matlab path='images/ref' function='bwboundaries' %}    | | Trace region boundaries in binary image             |
 | | {% include matlab path='images/ref' function='bwtraceboundary' %} | | Trace object in binary image                        |
 | | {% include matlab path='images/ref' function='visboundaries' %}   | | Plot region boundaries                              |
@@ -450,8 +447,8 @@ Deblurring
 
 ### Region and Image Properties
 
-|                                                                    |                                                       |
-| ------------------------------------------------------------------ | ----------------------------------------------------- |
+|                                                                         |                                                       |
+| ----------------------------------------------------------------------- | ----------------------------------------------------- |
 | | {% include matlab path='images/ref' function='regionprops' %}    | | Measure properties of image regions                 |
 | | {% include matlab path='images/ref' function='bwarea' %}         | | Area of objects in binary image                     |
 | | {% include matlab path='images/ref' function='bwareafilt' %}     | | Extract objects from binary image by size           |
@@ -479,8 +476,8 @@ Deblurring
 
 ### Texture Analysis
 
-|                                                                  |                                                     |
-| ---------------------------------------------------------------- | --------------------------------------------------- |
+|                                                                       |                                                     |
+| --------------------------------------------------------------------- | --------------------------------------------------- |
 | | {% include matlab path='images/ref' function='entropy' %}      | | Entropy of grayscale image                        |
 | | {% include matlab path='images/ref' function='entropyfilt' %}  | | Local entropy of grayscale image                  |
 | | {% include matlab path='images/ref' function='rangefilt' %}    | | Local range of image                              |
@@ -490,16 +487,16 @@ Deblurring
 
 ### Image Quality
 
-|                                                           |                                                                  |
-| --------------------------------------------------------- | ---------------------------------------------------------------- |
+|                                                                |                                                                  |
+| -------------------------------------------------------------- | ---------------------------------------------------------------- |
 | | {% include matlab path='images/ref' function='immse' %} | | Mean-squared error                                             |
 | | {% include matlab path='images/ref' function='psnr' %}  | | Peak Signal-to-Noise Ratio (PSNR)                              |
 | | {% include matlab path='images/ref' function='ssim' %}  | | Structural Similarity Index (SSIM) for measuring image quality |
 
 ### Image Segmentation
 
-|                                                                    |                                                                                            |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+|                                                                         |                                                                                            |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | | {% include matlab path='images/ref' function='activecontour' %}  | | Segment image into foreground and background using active contour                        |
 | | {% include matlab path='images/ref' function='imsegfmm' %}       | | Binary image segmentation using Fast Marching Method                                     |
 | | {% include matlab path='images/ref' function='imseggeodesic' %}  | | Segment image into two or three regions using geodesic distance-based color segmentation |
@@ -518,8 +515,8 @@ Deblurring
 
 ### Image Transforms
 
-|                                                                    |                                                        |
-| ------------------------------------------------------------------ | ------------------------------------------------------ |
+|                                                                         |                                                        |
+| ----------------------------------------------------------------------- | ------------------------------------------------------ |
 | | {% include matlab path='images/ref' function='bwdist' %}         | | Distance transform of binary image                   |
 | | {% include matlab path='images/ref' function='bwdistgeodesic' %} | | Geodesic distance transform of binary image          |
 | | {% include matlab path='images/ref' function='graydist' %}       | | Gray-weighted distance transform of grayscale image  |
@@ -540,8 +537,8 @@ Deblurring
 
 ## 3D Volumetric Image Processing
 
-|                                                                        |                                                                 |
-| ---------------------------------------------------------------------- | --------------------------------------------------------------- |
+|                                                                             |                                                                 |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------- |
 | | {% include matlab path='images/ref' function='imboxfilt3' %}         | | 3-D box filtering of 3-D images                               |
 | | {% include matlab path='images/ref' function='imgaussfilt3' %}       | | 3-D Gaussian filtering of 3-D images                          |
 | | {% include matlab path='images/ref' function='imgradient3' %}        | | Find 3-D gradient magnitude and direction of images           |
@@ -555,8 +552,8 @@ Deblurring
 
 ## Code Generation
 
-|                                                                       |                                                                        |
-| --------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+|                                                                            |                                                                        |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | | {% include matlab path='images/ref' function='adaptthresh' %}       | | Adaptive image threshold using local first-order statistics          |
 | | {% include matlab path='images/ref' function='boundarymask' %}      | | Find region boundaries of segmentation                               |
 | | {% include matlab path='images/ref' function='bwareaopen' %}        | | Remove small objects from binary image                               |
@@ -661,8 +658,8 @@ Deblurring
 
 ## GPU Computing
 
-|                                                                   |                                                                 |
-| ----------------------------------------------------------------- | --------------------------------------------------------------- |
+|                                                                        |                                                                 |
+| ---------------------------------------------------------------------- | --------------------------------------------------------------- |
 | | {% include matlab path='images/ref' function='bwdist' %}        | | Distance transform of binary image                            |
 | | {% include matlab path='images/ref' function='bwlabel' %}       | | Label connected components in 2-D binary image                |
 | | {% include matlab path='images/ref' function='bwlookup' %}      | | Nonlinear filtering using lookup tables                       |

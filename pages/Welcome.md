@@ -8,8 +8,7 @@ categories:
 description: test description
 ---
 
-<seo google-site-verification="hF8k34axd16e2Zul9i4zyRriSL-W77CVBPnt1j_XDmM" />
-\_\_NOTOC\_\_
+<seo google-site-verification="hF8k34axd16e2Zul9i4zyRriSL-W77CVBPnt1j_XDmM" /> \_\_NOTOC\_\_
 
 <div style="margin: 0 auto; padding: 0 3em 0.5em 0;" align="center">
 
@@ -42,15 +41,9 @@ description: test description
 
 <div style="text-align: left; font-size: 1.3em; padding: 1.5em; background-color: #fec; border: 2px solid black; border-radius: 10px">
 
-[ImageJ](ImageJ "wikilink") is an [open source](open_source "wikilink")
-image processing program designed for scientific multidimensional
-images.
+[ImageJ](ImageJ "wikilink") is an [open source](open_source "wikilink") image processing program designed for scientific multidimensional images.
 
-[ImageJ](ImageJ "wikilink") is highly
-[extensible](Extensibility "wikilink"), with thousands of
-[plugins](plugins "wikilink") and [scripts](scripts "wikilink") for
-performing a wide variety of tasks, and a [large user
-community](Usage "wikilink").
+[ImageJ](ImageJ "wikilink") is highly [extensible](Extensibility "wikilink"), with thousands of [plugins](plugins "wikilink") and [scripts](scripts "wikilink") for performing a wide variety of tasks, and a [large user community](Usage "wikilink").
 
 </div>
 
@@ -64,8 +57,7 @@ Welcome to the Wiki\!
 
 <div style="font-size: 1.2em; padding: 7px">
 
-This [wiki](wikipedia:wiki "wikilink") documents all aspects of the
-**ImageJ ecosystem**, including:
+This [wiki](wikipedia:wiki "wikilink") documents all aspects of the **ImageJ ecosystem**, including:
 
 </div>
 
@@ -114,9 +106,7 @@ Join the Community
 
 <hr>
 
-<span style="font-size: 0.9em;">ImageJ is developed by [contributors
-worldwide](Contributors "wikilink"). This web site is hosted by
-[LOCI](LOCI "wikilink") at the University of Wisconsin-Madison.</span>
+<span style="font-size: 0.9em;">ImageJ is developed by [contributors worldwide](Contributors "wikilink"). This web site is hosted by [LOCI](LOCI "wikilink") at the University of Wisconsin-Madison.</span>
 
 </div>
 

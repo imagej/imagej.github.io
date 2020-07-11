@@ -8,31 +8,24 @@ categories:
 description: test description
 ---
 
-{% include sidebox-right content='This page describes how to ""cite""
-[SciJava](SciJava "wikilink") projects.
+{% include info-box content='This page describes how to ""cite"" [SciJava](SciJava "wikilink") projects.
 
-  - For information on who ""contributes"" to these projects, see
-    [Contributors](Contributors "wikilink").
-  - For information on who ""maintains"" these projects, see
-    [Governance](Governance "wikilink").
-  - For information on how ImageJ projects are ""funded"", see
-    [Funding](Funding "wikilink").' %}
+  - For information on who ""contributes"" to these projects, see [Contributors](Contributors "wikilink").
+  - For information on who ""maintains"" these projects, see [Governance](Governance "wikilink").
+  - For information on how ImageJ projects are ""funded"", see [Funding](Funding "wikilink").' %}
 
-{% include aboutmenu %}== Guidelines ==
+{% include aboutmenu%}
+== Guidelines ==
 
 We ask users to cite:
 
-1.  Any [specific publications](:Category:Citable "wikilink") of
-    [plugins](plugins "wikilink") used.
-2.  The general paper of ImageJ distribution(s) used—e.g., if you used
-    [Fiji](Fiji "wikilink"), cite the [Fiji](Fiji "wikilink") paper.
+1.  Any [specific publications](:Category:Citable "wikilink") of [plugins](plugins "wikilink") used.
+2.  The general paper of ImageJ distribution(s) used—e.g., if you used [Fiji](Fiji "wikilink"), cite the [Fiji](Fiji "wikilink") paper.
 3.  The general [ImageJ](ImageJ "wikilink") paper.
 
-If journal reference limits interfere, the plugin-specific publications
-should take precedence.
+If journal reference limits interfere, the plugin-specific publications should take precedence.
 
-In general, please cite these projects—their long-term future depends on
-it\!
+In general, please cite these projects—their long-term future depends on it\!
 
 Thank you for your support.
 
@@ -56,6 +49,4 @@ Thank you for your support.
 |                                      |                                             |                                                    |
 |                                      |                                             |                                                    |
 
-See the [list of citable software](:Category:Citable "wikilink") and
-[publications using Fiji](Fiji/Publications "wikilink") for additional
-citation information.
+See the [list of citable software](:Category:Citable "wikilink") and [publications using Fiji](Fiji/Publications "wikilink") for additional citation information.

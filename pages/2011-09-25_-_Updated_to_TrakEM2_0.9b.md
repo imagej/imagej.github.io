@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2011-09-25 - Updated to TrakEM2
-    0.9a](2011-09-25_-_Updated_to_TrakEM2_0.9a "wikilink")
+1.  REDIRECT [2011-09-25 - Updated to TrakEM2 0.9a](2011-09-25_-_Updated_to_TrakEM2_0.9a "wikilink")

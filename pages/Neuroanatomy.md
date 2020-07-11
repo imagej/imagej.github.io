@@ -8,78 +8,55 @@ categories: Neuroanatomy
 description: test description
 ---
 
-{% capture author %} {% include person content="Tiago" %} {% endcapture
-%}
 
-{% capture maintainer %} {% include person content="Tiago" %} {%
-endcapture %}
+{% capture author%}
+{% include person content='Tiago' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="tferr" repo="hIPNAT" %} {%
-endcapture %}
+{% capture maintainer%}
+{% include person content='Tiago' %}
+{% endcapture %}
 
-{% capture version %} """1.0.10 May 2017""" ({% include github
-org="tferr" repo="hIPNAT/releases" label="Changelog" %}) {% endcapture
-%} {% include sidebox-right software='Fiji' name='Neuroanatomy update
-site' author=author maintainer=maintainer source=source released='April
-2016' status='Active' version=version
-category='[Plugins](:Category:Plugins "wikilink"),
-[Analysis](:Category:Analysis "wikilink"),
-[Neuroanatomy](:Category:Neuroanatomy "wikilink")' %} This is the main
-documentation page for the hIPNAT (*Image Processing for NeuroAnatomy
-and Tree-like Structures*) plugins distributed through the [Neuroanatomy
-update site](User:Neuroanatomy "wikilink"), released in
-[April 2016](http://forum.imagej.net/t/launch-of-the-neuroanatomy-update-site/1377?u=tferr).
-For a list of all pages in this wiki related to Neuroanatomy have a look
-at [:Category:Neuroanatomy](:Category:Neuroanatomy "wikilink"). {%
-include amsidebox-right text='Please note that, at this time, these
-tools are under heavy development: some features are experimental and
-documentation remains incomplete. Also, some of this work has been
-meanwhile migrated to core-Fiji plugins, such as [Simple Neurite
-Tracer](Simple_Neurite_Tracer "wikilink").' %}
+{% capture source%}
+{% include github org='tferr' repo='hIPNAT' %}
+{% endcapture %}
+
+{% capture latest-version%}
+"""1.0.10 May 2017""" ({% include github org='tferr' repo='hIPNAT/releases' label='Changelog' %})
+{% endcapture %}
+{% include info-box software='Fiji' name='Neuroanatomy update site' author=author maintainer=maintainer source=source released='April 2016' status='Active' latest-version=latest-version category='[Plugins](:Category:Plugins "wikilink"), [Analysis](:Category:Analysis "wikilink"), [Neuroanatomy](:Category:Neuroanatomy "wikilink")' %} This is the main documentation page for the hIPNAT (*Image Processing for NeuroAnatomy and Tree-like Structures*) plugins distributed through the [Neuroanatomy update site](User:Neuroanatomy "wikilink"), released in [April 2016](http://forum.imagej.net/t/launch-of-the-neuroanatomy-update-site/1377?u=tferr). For a list of all pages in this wiki related to Neuroanatomy have a look at [:Category:Neuroanatomy](:Category:Neuroanatomy "wikilink"). {% include ambox text='Please note that, at this time, these tools are under heavy development: some features are experimental and documentation remains incomplete. Also, some of this work has been meanwhile migrated to core-Fiji plugins, such as [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink").' %}
 
 # Installation
 
-The requirements to run the Neuroanatomy suite of plugins are twofold:
-i) [Fiji](Fiji "wikilink") (i.e., an ImageJ installation subscribed to
-the Fiji update site) and ii) Java 8 (as part of an active effort to
-[modernize ImageJ](2015-12-22_-_The_road_to_Java_8 "wikilink")). If you
-are running an older version of Java, you can either i) [Download the
-latest Fiji release](Fiji/Downloads "wikilink") (newer releases come
-pre-bundled with Java 8); or ii) If you have downloaded Fiji while ago
-and want to keep your existing installation, you will have to download
-Java 8 and make your [Fiji installation aware of
-it](Troubleshooting#Checking_the_Java_version "wikilink").
+The requirements to run the Neuroanatomy suite of plugins are twofold: i) [Fiji](Fiji "wikilink") (i.e., an ImageJ installation subscribed to the Fiji update site) and ii) Java 8 (as part of an active effort to [modernize ImageJ](2015-12-22_-_The_road_to_Java_8 "wikilink")). If you are running an older version of Java, you can either i) [Download the latest Fiji release](Fiji/Downloads "wikilink") (newer releases come pre-bundled with Java 8); or ii) If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [Fiji installation aware of it](Troubleshooting#Checking_the_Java_version "wikilink").
 
 **Subscribing to the Neuroanatomy update site:**
 
-1.  Run [{% include bc
-    content='Help|Update...'%}](Update_Sites "wikilink")
+1.  Run [{% include bc content='Help|Update...'%}](Update_Sites "wikilink")
 2.  Click *Manage update sites*
-3.  Select the *Neuroanatomy* checkbox (see also {% include
-    list-of-update-sites %})
+3.  Select the *Neuroanatomy* checkbox (see also {% include list-of-update-sites%}
+)
 4.  Click *Apply changes* and Restart ImageJ.
 
 # List of commands
 
-|                         |                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ----------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Name**                | **Menu Path**                                                                | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| *Topological Skeletons* |                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                         |                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ----------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Name**                | **Menu Path**                                                                | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| *Topological Skeletons* |                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Strahler classifier     | {% include bc content='Analyze|Skeleton|Strahler Analysis...'%}              | Described in [Strahler Analysis](Strahler_Analysis "wikilink"). Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/java/ipnat/skel' label='Java plugin' %}.                                                                                                                                                                                                                                                                                                                                                           |
 | Summarize Skeleton      | {% include bc content='Analyze|Skeleton|Summarize Skeleton'%}                | Bulk statistics of skeletonized images. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/java/ipnat/skel' label='Java plugin' %}.                                                                                                                                                                                                                                                                                                                                                                                   |
 | Particles classifier    | {% include bc content='Analyze|Skeleton|Classify Particles Using Skeleton'%} | Tags particles according to skeleton features. Detects maxima on a masked image and clusters detected maxima using features of the skeletonized mask. A maxima is considered to be associated to a skeleton feature (e.g., a junction or end-point, see [AnalyzeSkeleton](AnalyzeSkeleton "wikilink")) if the distance between its centroid and the feature is less than or equal to a cuttoff ("snap to") distance. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/resources/scripts/' label='Python script' %}. |
-| *Import/Export*         |                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| *Import/Export*         |                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Tracings importer       | {% include bc content='File|Import|Tracings (Traces/(e)SWC)...'%}            | Renders traced reconstructions ([.traces](SNT:_.traces_File_Format "wikilink") - [SNT](SNT "wikilink")'s format - and [.swc](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) files) in ImageJ's [3D Viewer](3D_Viewer "wikilink") or as skeletonized image stacks. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/java/ipnat/' label='Java plugin' %}.                                                                                                                           |
 | Traces converter        | {% include bc content='Plugins|NeuroAnatomy|Convert Traces to SWC'%}         | Batch conversion of [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink")'s [.traces files](Simple_Neurite_Tracer:_.traces_File_Format "wikilink") into [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html). Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/resources/scripts/' label='Python script' %}.                                                                                                                                                                  |
 | Multi-SWC renderer      | {% include bc content='Plugins|NeuroAnatomy|Render Multiple SWC Files'%}     | Renders multiple SWC files in a single image canvas or a [3D viewer](3D_Viewer "wikilink") universe. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/resources/scripts/' label='Python script' %}.                                                                                                                                                                                                                                                                                                                 |
 | Remote File renderer    | {% include bc content='Plugins|NeuroAnatomy|Render Remote SWC File'%}        | Exemplifies how to download and access a remote (e)SWC (internet connection required). Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/resources/scripts/' label='Python script' %}.                                                                                                                                                                                                                                                                                                                               |
-| *Utilities*             |                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| *Utilities*             |                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Fractal Trees           | {% include bc content='File|Open Samples|Fractal Tree'%}                     | Synthetic images ([L-System](https://en.wikipedia.org/wiki/L-system) Trees) useful for debugging, testing or prototyping. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/java/ipnat/skel' label='Java plugin' %}.                                                                                                                                                                                                                                                                                                 |
 
 # Further information
 
-  - A list of all pages in this wiki related to image processing in the
-    neurosciences can be found
-    [here](:Category:Neuroanatomy "wikilink").
+  - A list of all pages in this wiki related to image processing in the neurosciences can be found [here](:Category:Neuroanatomy "wikilink").
 
 [Category:Neuroanatomy](Category:Neuroanatomy "wikilink")

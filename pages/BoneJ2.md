@@ -8,45 +8,31 @@ categories:
 description: test description
 ---
 
-{% capture author %} {% include person content="Michaeldoube" %}, {%
-include person content="Rdom" %}, {% include person
-content="Alessandrofelder" %} {% endcapture %}
 
-{% capture maintainer %} {% include person content="Michaeldoube" %}, {%
-include person content="Alessandrofelder" %} {% endcapture %}
+{% capture author%}
+{% include person content='Michaeldoube' %}, {% include person content='Rdom' %}, {% include person content='Alessandrofelder' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="bonej-org" repo="BoneJ2" %},
-[<doi:10.5281/zenodo.1427262>](https://doi.org/10.5281/zenodo.1427262)
-{% endcapture %} {% include sidebox-right name='BoneJ2'
-software='ImageJ' logo='![Bonej-icon.png](/images/pages/Bonej-icon.png
-"Bonej-icon.png")"' author=author maintainer=maintainer source=source
-released='Dec 11<sup>th</sup>, 2017' version='Apr 18<sup>th</sup>, 2019'
-status='Active, Experimental' %} BoneJ is a collection of skeletal
-biology plug-ins for ImageJ. This is the new experimental, modernized
-version of the software available through the ImageJ
-[updater](https://imagej.net/Updater). Its update site is called [BoneJ
-experimental](http://sites.imagej.net/BoneJ). For the old ImageJ1
-version, see [BoneJ](BoneJ "wikilink").
+{% capture maintainer%}
+{% include person content='Michaeldoube' %}, {% include person content='Alessandrofelder' %}
+{% endcapture %}
 
-This version works with the latest Fiji, and complies with the modern
-ImageJ [architecture](architecture "wikilink"). Most plug-ins also now
-support hyperstacks, i.e. images with multiple channels or time frames.
+{% capture source%}
+{% include github org='bonej-org' repo='BoneJ2' %}, [<doi:10.5281/zenodo.1427262>](https://doi.org/10.5281/zenodo.1427262) 
+{% endcapture %}
+{% include info-box name='BoneJ2' software='ImageJ' logo='![Bonej-icon.png](/images/pages/Bonej-icon.png "Bonej-icon.png")"' author=author maintainer=maintainer source=source released='Dec 11<sup>th</sup>, 2017' latest-version='Apr 18<sup>th</sup>, 2019' status='Active, Experimental' %} BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is the new experimental, modernized version of the software available through the ImageJ [updater](https://imagej.net/Updater). Its update site is called [BoneJ experimental](http://sites.imagej.net/BoneJ). For the old ImageJ1 version, see [BoneJ](BoneJ "wikilink").
 
-As the code is still experimental, it's still likely to change a lot.
-This means any scripts using the code might break, results can change,
-and plug-ins gain and lose parameters. Tools marked with *WIP* (work in
-progress), are more likely to undergo large changes.
+This version works with the latest Fiji, and complies with the modern ImageJ [architecture](architecture "wikilink"). Most plug-ins also now support hyperstacks, i.e. images with multiple channels or time frames.
 
-Below is the documentation for the plug-ins included in BoneJ
-experimental.
+As the code is still experimental, it's still likely to change a lot. This means any scripts using the code might break, results can change, and plug-ins gain and lose parameters. Tools marked with *WIP* (work in progress), are more likely to undergo large changes.
+
+Below is the documentation for the plug-ins included in BoneJ experimental.
 
 ## Installation
 
-![400 px|Installation steps](/images/pages/Install-bonej.png
-"400 px|Installation steps")"
+![400 px|Installation steps](/images/pages/Install-bonej.png "400 px|Installation steps")"
 
-1.  [Download](https://imagej.net/Downloads) the latest version of Fiji
-    for your operating system
+1.  [Download](https://imagej.net/Downloads) the latest version of Fiji for your operating system
 2.  Launch Fiji
 3.  Select in the menu *Help* \> *Update...*
 4.  Click *Manage update sites*
@@ -60,170 +46,78 @@ After the downloads have finished, close and restart Fiji.
 
 Menu path *Plugins \> BoneJ \> Analyse skeleton*.
 
-This plug-in simply includes
-[AnalyzeSkeleton](AnalyzeSkeleton "wikilink") in BoneJ. It adds some
-additional validation to check that your image suits the tool. It also
-skeletonizes your image by calling
-[Skeletonize3D](Skeletonize3D "wikilink") if needed.
+This plug-in simply includes [AnalyzeSkeleton](AnalyzeSkeleton "wikilink") in BoneJ. It adds some additional validation to check that your image suits the tool. It also skeletonizes your image by calling [Skeletonize3D](Skeletonize3D "wikilink") if needed.
 
 #### Suitable images
 
-The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not
-supported.
+The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supported.
 
 #### Differences to BoneJ1
 
-Calls the latest version of
-[AnalyzeSkeleton](AnalyzeSkeleton "wikilink").
+Calls the latest version of [AnalyzeSkeleton](AnalyzeSkeleton "wikilink").
 
 ## Anisotropy
 
 Menu path *Plugins \> BoneJ \> Anisotropy*.
 
-Anisotropy is used to quantify the directionality of trabecular bone. It
-tells whether the trabeculae have a certain orientation, or if they're
-randomly aligned. The method to measure anisotropy is fairly complex and
-consists of multiple steps:
+Anisotropy is used to quantify the directionality of trabecular bone. It tells whether the trabeculae have a certain orientation, or if they're randomly aligned. The method to measure anisotropy is fairly complex and consists of multiple steps:
 
 1.  Find mean intercept length (MIL) vectors from \(n\) directions
 2.  Plot MIL vectors into a point cloud
 3.  Solve the equation of an ellipsoid that best fits the point cloud
 4.  Calculate the degree of anisotropy from the radii of the ellipsoid
 
-It's important to note that algorithm is stochastic and does not
-guarantee exact results. Thus it's recommended to run it several times
-to establish the degree of anisotropy in your image.
+It's important to note that algorithm is stochastic and does not guarantee exact results. Thus it's recommended to run it several times to establish the degree of anisotropy in your image.
 
-![150 px|The red dots mark phase changes](/images/pages/PhaseChanges.png
-"150 px|The red dots mark phase changes")"
+![150 px|The red dots mark phase changes](/images/pages/PhaseChanges.png "150 px|The red dots mark phase changes")"
 
-In the first step the algorithm draws parallel lines over the input
-image in direction \(\mathbf{v}\). The direction is chosen randomly.
-Each line segment in the image stack is sampled to find points where it
-changes from background to foreground, i.e. where the line enters an
-object. The points are called *phase changes*, in the adjacent figure
-they're marked with red dots. After the sampling is complete, the
-algorithm forms a *MIL vector*, whose length is the total length of the
-line segments divided by the total number of phase changes found. The
-MIL vector has the same direction as \(\mathbf{v}\). Drawing and
-sampling the lines is repeated for \(n\) directions, and the method
-creates \(n\) MIL vectors.
+In the first step the algorithm draws parallel lines over the input image in direction \(\mathbf{v}\). The direction is chosen randomly. Each line segment in the image stack is sampled to find points where it changes from background to foreground, i.e. where the line enters an object. The points are called *phase changes*, in the adjacent figure they're marked with red dots. After the sampling is complete, the algorithm forms a *MIL vector*, whose length is the total length of the line segments divided by the total number of phase changes found. The MIL vector has the same direction as \(\mathbf{v}\). Drawing and sampling the lines is repeated for \(n\) directions, and the method creates \(n\) MIL vectors.
 
-After the MIL vectors have been calculated, they are added to a point
-cloud (a collection of points) around the origin. Then the method tries
-solve the equation of an ellipsoid that would fit the cloud. There may
-be no solution, especially if there are few points. That is, the fitting
-may fail at which point the plug-in stops. The radii of this ellipsoid
-determine the degree of anisotropy (see
-[results](https://imagej.net/index.php?title=BoneJ_experimental&action=submit#Results)).
+After the MIL vectors have been calculated, they are added to a point cloud (a collection of points) around the origin. Then the method tries solve the equation of an ellipsoid that would fit the cloud. There may be no solution, especially if there are few points. That is, the fitting may fail at which point the plug-in stops. The radii of this ellipsoid determine the degree of anisotropy (see [results](https://imagej.net/index.php?title=BoneJ_experimental&action=submit#Results)).
 
-![200 px|Projecting lines from a plane](/images/pages/MilCube.png
-"200 px|Projecting lines from a plane")"
+![200 px|Projecting lines from a plane](/images/pages/MilCube.png "200 px|Projecting lines from a plane")"
 
-In more detail, the lines in the first step are projected from a
-\(d * d\) plane with normal \(\mathbf{v}\) (see the adjacent figure).
-The size \(d = \sqrt{w^{2} + h^{2} + d^{2}}\), where \(w, h, d\) are the
-dimensions of the image stack. Each of the lines originates from a
-random point \(\mathbf{o}\) on the plane. The plane is divided into
-\(m * m\) same-sized sections, where \(m\) is a number selected by the
-user (i.e. *Lines per dimension*). One origin \(\mathbf{o}\) is randomly
-selected from within each section. The lines are projected until they
-intercept the stack edges at points
-\(\mathbf{o} + t_{min}\mathbf{v}\),\(\mathbf{o} + t_{max}\mathbf{v}\)
-(the algorithm solves for \(t_{min}\), \(t_{max}\)). These line segments
-within the stack are then sampled for phase changes. In this drawing
-method some lines may miss the image stack completely, but conversely
-there aren't any areas in the stack that don't have an equal chance of
-being sampled.
+In more detail, the lines in the first step are projected from a \(d * d\) plane with normal \(\mathbf{v}\) (see the adjacent figure). The size \(d = \sqrt{w^{2} + h^{2} + d^{2}}\), where \(w, h, d\) are the dimensions of the image stack. Each of the lines originates from a random point \(\mathbf{o}\) on the plane. The plane is divided into \(m * m\) same-sized sections, where \(m\) is a number selected by the user (i.e. *Lines per dimension*). One origin \(\mathbf{o}\) is randomly selected from within each section. The lines are projected until they intercept the stack edges at points \(\mathbf{o} + t_{min}\mathbf{v}\),\(\mathbf{o} + t_{max}\mathbf{v}\) (the algorithm solves for \(t_{min}\), \(t_{max}\)). These line segments within the stack are then sampled for phase changes. In this drawing method some lines may miss the image stack completely, but conversely there aren't any areas in the stack that don't have an equal chance of being sampled.
 
 #### Suitable images
 
 A 3D binary image.
 
-The plug-in is intended to analyse the "texture" of an object thus it
-suits samples of a larger whole, e.g. a trabecular cube that fills the
-whole stack. The results for whole objects such as the pre-packaged *Bat
-Cochlea Volume* ImageJ sample image are not really meaningful.
+The plug-in is intended to analyse the "texture" of an object thus it suits samples of a larger whole, e.g. a trabecular cube that fills the whole stack. The results for whole objects such as the pre-packaged *Bat Cochlea Volume* ImageJ sample image are not really meaningful.
 
 #### Parameters
 
-  - **Directions**: number of times sampling is performed from different
-    directions. The minimum is \(9\), because that's how many
-    independent variables the algorithm needs to solve the "shape" of
-    the orientation in the image.
-  - **Lines per dimension**: controls how many parallel lines are drawn
-    per each direction. For example, if *lines per dimension* is \(2\)
-    then *Anisotropy* draws \(4\) lines. In this case, the origin points
-    of the lines are randomly selected from within the \(4\) equal
-    sections of the sampling plane (see above detailed explanation). The
-    number is squared, because the location of the origins can vary in
-    two dimensions.
+  - **Directions**: number of times sampling is performed from different directions. The minimum is \(9\), because that's how many independent variables the algorithm needs to solve the "shape" of the orientation in the image.
+  - **Lines per dimension**: controls how many parallel lines are drawn per each direction. For example, if *lines per dimension* is \(2\) then *Anisotropy* draws \(4\) lines. In this case, the origin points of the lines are randomly selected from within the \(4\) equal sections of the sampling plane (see above detailed explanation). The number is squared, because the location of the origins can vary in two dimensions.
 
-then the plane is divided into \(4\) equal sections, and a line is drawn
-from each. The origin point of each line is randomly located within
-their section.
+then the plane is divided into \(4\) equal sections, and a line is drawn from each. The origin point of each line is randomly located within their section.
 
-  - **Sampling increment**: controls how often each line is sampled. The
-    default is \(1.0\), which means that after each step a unit vector
-    (a \(1\_px\) long line) is added to the position along a sampling
-    line. The number of samples taken per line depends on the length of
-    the line segment within the image stack.
-  - **Recommended minimum**: if checked, then the above three parameters
-    are set to the recommended minimum values. In our tests we found
-    that with these values the results are quite stable, and fitting
-    unlikely to fail. However, these minimums are not guaranteed to be
-    the best settings for your image.
-  - **Show radii**: if checked, then the radii of the fitted ellipsoid
-    are shown in the results table.
+  - **Sampling increment**: controls how often each line is sampled. The default is \(1.0\), which means that after each step a unit vector (a \(1\_px\) long line) is added to the position along a sampling line. The number of samples taken per line depends on the length of the line segment within the image stack.
+  - **Recommended minimum**: if checked, then the above three parameters are set to the recommended minimum values. In our tests we found that with these values the results are quite stable, and fitting unlikely to fail. However, these minimums are not guaranteed to be the best settings for your image.
+  - **Show radii**: if checked, then the radii of the fitted ellipsoid are shown in the results table.
 
 #### Results
 
-  - **Degree of anisotropy**: how much orientation there is in the
-    structure. \(0.0\) means the image is completely isotropic, the
-    sample has no directionality whatsoever. \(1.0\) means there is very
-    strong orientation in the structure of the image. Note that these
-    are theoretical minimum and maximum values. Due the stochastic
-    nature of the algorithm, even an empty stack will have non-zero
-    degree of anisotropy.
-  - **Radii of fitted ellipsoid** (optional): the lengths of the radii
-    \(a \leq b \leq c\) of the ellipsoid fitted on the MIL points.
-    Degree of anisotropy \(= 1.0 - a/c\).
+  - **Degree of anisotropy**: how much orientation there is in the structure. \(0.0\) means the image is completely isotropic, the sample has no directionality whatsoever. \(1.0\) means there is very strong orientation in the structure of the image. Note that these are theoretical minimum and maximum values. Due the stochastic nature of the algorithm, even an empty stack will have non-zero degree of anisotropy.
+  - **Radii of fitted ellipsoid** (optional): the lengths of the radii \(a \leq b \leq c\) of the ellipsoid fitted on the MIL points. Degree of anisotropy \(= 1.0 - a/c\).
 
-The measures are reported separately for each 3D subspace in the image,
-i.e. for each channel and time frame.
+The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
 
 #### Differences to BoneJ1
 
-  - The results of this Anisotropy do not stabilize, so it's not
-    repeated automatically like in BoneJ1. However, the results vary
-    less between runs.
-  - MIL vectors are drawn differently. In BoneJ1 they're drawn in
-    sphere-shapes around random seed points. Here parallel lines from
-    different directions are drawn through the whole stack. We think
-    this method produces more uniform sampling, i.e. there's less chance
-    of a directional bias.
+  - The results of this Anisotropy do not stabilize, so it's not repeated automatically like in BoneJ1. However, the results vary less between runs.
+  - MIL vectors are drawn differently. In BoneJ1 they're drawn in sphere-shapes around random seed points. Here parallel lines from different directions are drawn through the whole stack. We think this method produces more uniform sampling, i.e. there's less chance of a directional bias.
 
 #### Related publications
 
-  - Odgaard A (1997), *Three-dimensional methods for quantification of
-    cancellous bone architecture*, Bone, 20, 315-328,
-    [<doi:10.1016/S8756-3282(97)00007-0>](http://dx.doi.org/10.1016/S8756-3282\(97\)00007-0)
-  - Harrigan TP, Mann RW (1984), *Characterization of microstructural
-    anisotropy in orthotropic materials using a second rank tensor*, J
-    Mater Sci, 19, 761-767,
-    [<doi:10.1007/BF00540446>](http://dx.doi.org/10.1007/BF00540446)
+  - Odgaard A (1997), *Three-dimensional methods for quantification of cancellous bone architecture*, Bone, 20, 315-328, [<doi:10.1016/S8756-3282(97)00007-0>](http://dx.doi.org/10.1016/S8756-3282\(97\)00007-0)
+  - Harrigan TP, Mann RW (1984), *Characterization of microstructural anisotropy in orthotropic materials using a second rank tensor*, J Mater Sci, 19, 761-767, [<doi:10.1007/BF00540446>](http://dx.doi.org/10.1007/BF00540446)
 
 ## Area/Volume fraction
 
 Menu path *Plugins \> BoneJ \> Fraction \> Area/Volume fraction*
 
-*Area/Volume fraction* calculates the fraction of bone in an image by it
-to the whole image. It counts all the foreground voxels, which it
-assumes represent bone, and compares them to the total number of voxels
-in the image. More formally defined, the plug-in calculates the fraction
-*BV/TV*, which is the volume of mineralised bone *BV* per unit volume of
-the sample *TV*. In case of a 2D image, it calculates the fraction
-*BA/TA*, which is the area of bone per unit area of the sample.
+*Area/Volume fraction* calculates the fraction of bone in an image by it to the whole image. It counts all the foreground voxels, which it assumes represent bone, and compares them to the total number of voxels in the image. More formally defined, the plug-in calculates the fraction *BV/TV*, which is the volume of mineralised bone *BV* per unit volume of the sample *TV*. In case of a 2D image, it calculates the fraction *BA/TA*, which is the area of bone per unit area of the sample.
 
 #### Suitable images
 
@@ -235,9 +129,7 @@ A 2D or 3D binary image
   - **Total volume**: volume of the whole image.
   - **Volume ratio**: ratio of bone to total volume.
 
-The measures are reported separately for each 2D/3D subspace in the
-image, i.e. for each channel and time frame. Results will be for *area*
-if image is 2D.
+The measures are reported separately for each 2D/3D subspace in the image, i.e. for each channel and time frame. Results will be for *area* if image is 2D.
 
 #### Differences to BoneJ1
 
@@ -249,8 +141,7 @@ if image is 2D.
 
 Menu path *Plugins \> BoneJ \> Analyze \> Calibrate SCANCO*
 
-Applies the *mg HA/ccm* pixel value calibration, i.e. *HU* or Hounfield
-unit calibration stored in the .isq format metadata to the image.
+Applies the *mg HA/ccm* pixel value calibration, i.e. *HU* or Hounfield unit calibration stored in the .isq format metadata to the image.
 
 #### Suitable images
 
@@ -260,10 +151,7 @@ An .isq format image generated by Scanco X-ray microtomography scanners.
 
 Menu path *Plugins \> BoneJ \> Stacks \> Check Voxel Depth*
 
-Checks whether slice spacing has been calibrated correctly. Some DICOM
-images contain slice thickness data in the header information, but
-thickness is not necessarily the same as the physical distance between
-consecutive slices' positions.
+Checks whether slice spacing has been calibrated correctly. Some DICOM images contain slice thickness data in the header information, but thickness is not necessarily the same as the physical distance between consecutive slices' positions.
 
 #### Suitable images
 
@@ -273,66 +161,38 @@ A 3D image.
 
 Menu path *Plugins \> BoneJ \> Connectivity*.
 
-The Connectivity plug-in is designed to estimate the number of connected
-structures i.e. trabeculae in a trabecular network. This *connectivity*
-measure is related to a topological number \(\chi\) known as *Euler
-characteristic*, *Euler number* or *Euler-Poincaré characteristic*.
-Mathematically defined connectivity is \(= 1 - (\chi + \Delta\chi)\).
-Roughly speaking, \(\chi\) describes the shape or structure of a
-topological space. It can also be expressed as
-\(\chi = objects - handles + cavities\), where a handle is a hole that
-goes through an object (e.g the hole in a doughnut, or the ear of a
-coffee mug), and a cavity is enclosed inside one. When measuring
-trabecular cubes, you need to add \(\Delta\chi\) to \(\chi\) to get a
-more accurate estimate of the connectivity of the whole network. The
-term \(\Delta\chi\) corrects for the change in the topology of an
-object, when it's cut to pieces.
+The Connectivity plug-in is designed to estimate the number of connected structures i.e. trabeculae in a trabecular network. This *connectivity* measure is related to a topological number \(\chi\) known as *Euler characteristic*, *Euler number* or *Euler-Poincaré characteristic*. Mathematically defined connectivity is \(= 1 - (\chi + \Delta\chi)\). Roughly speaking, \(\chi\) describes the shape or structure of a topological space. It can also be expressed as \(\chi = objects - handles + cavities\), where a handle is a hole that goes through an object (e.g the hole in a doughnut, or the ear of a coffee mug), and a cavity is enclosed inside one. When measuring trabecular cubes, you need to add \(\Delta\chi\) to \(\chi\) to get a more accurate estimate of the connectivity of the whole network. The term \(\Delta\chi\) corrects for the change in the topology of an object, when it's cut to pieces.
 
-NB some other Euler characteristic implementations report
-\(\chi + \Delta\chi\) as \(\chi\), i.e. in them the correction
-\(\Delta\chi\) is implicit.
+NB some other Euler characteristic implementations report \(\chi + \Delta\chi\) as \(\chi\), i.e. in them the correction \(\Delta\chi\) is implicit.
 
 #### Suitable images
 
-The input image must be 3D and binary. The plug-in assumes that there is
-only one particle in the foreground; to achieve this, run *Purify*.
-Having more than one object often leads to negative connectivity.
+The input image must be 3D and binary. The plug-in assumes that there is only one particle in the foreground; to achieve this, run *Purify*. Having more than one object often leads to negative connectivity.
 
 #### Results
 
-  - **Euler characteristic (χ)**: describes the shape of the object(s)
-    in the image, \(\chi = objects - handles + cavities\).
-  - **Corrected Euler (χ + Δχ)**: the Euler characteristic of the part
-    corrected for edge effects to fit the whole.
-  - **Connectivity**: gives an estimate of the number of connected
-    trabeculae in the image. Equal to \(1 - (\chi + \Delta\chi)\).
+  - **Euler characteristic (χ)**: describes the shape of the object(s) in the image, \(\chi = objects - handles + cavities\).
+  - **Corrected Euler (χ + Δχ)**: the Euler characteristic of the part corrected for edge effects to fit the whole.
+  - **Connectivity**: gives an estimate of the number of connected trabeculae in the image. Equal to \(1 - (\chi + \Delta\chi)\).
   - **Conn. density**: connectivity divided by unit volume.
 
-The measures are reported separately for each 3D subspace in the image,
-i.e. for each channel and time frame.
+The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
 
 #### Differences to BoneJ1
 
   - Supports hyperstacks
-  - The old version reported *Corrected Euler (χ + Δχ)* incorrectly as
-    *Δχ*
+  - The old version reported *Corrected Euler (χ + Δχ)* incorrectly as *Δχ*
 
 #### Related publications
 
-  - Odgaard A, Gundersen HJG (1993), *Quantification of connectivity in
-    cancellous bone, with special emphasis on 3-D reconstructions*, Bone
-    14: 173-182,
-    [<doi:10.1016/8756-3282(93)90245-6>.](http://dx.doi.org/10.1016/8756-3282\(93\)90245-6)
-  - Toriwaki J, Yonekura T (2002), *Euler number and connectivity
-    indexes of a three dimensional digital picture*,
-    [Forma 17: 183-209](http://www.scipress.org/journals/forma/abstract/1703/17030183.html)
+  - Odgaard A, Gundersen HJG (1993), *Quantification of connectivity in cancellous bone, with special emphasis on 3-D reconstructions*, Bone 14: 173-182, [<doi:10.1016/8756-3282(93)90245-6>.](http://dx.doi.org/10.1016/8756-3282\(93\)90245-6)
+  - Toriwaki J, Yonekura T (2002), *Euler number and connectivity indexes of a three dimensional digital picture*, [Forma 17: 183-209](http://www.scipress.org/journals/forma/abstract/1703/17030183.html)
 
 ## Delete slice range (WIP)
 
 Menu path *Plugins \> BoneJ \> Stacks \> Delete slice range*
 
-Removes a range of slices from a stack, so that cropping in the Z
-direction is practical.
+Removes a range of slices from a stack, so that cropping in the Z direction is practical.
 
 #### Suitable images
 
@@ -342,33 +202,11 @@ A 3D image.
 
 Menu path *Plugins \> BoneJ \> Ellipsoid factor*.
 
-Ellipsoid Factor is a new method for measuring rod/plate geometry. It
-uses the axis lengths from prolate, oblate and intermediate elipsoids to
-determine how prolate or oblate the trabecular space is at a particular
-point. Highly prolate (javelin-shaped, rod-like) ellipsoids have a
-single long axis (\(c\)) and two short axes (\(a, b\)) such that
-\(a < b \ll c\) , whereas highly oblate (discus-shaped, plate-like)
-ellipsoids have two longer axes (\(b, c\)) and one much shorter axis
-(\(a\)) so that \(a \ll b < c\). Calculating \(EF\) as the difference in
-ratios, \(EF = a/b - b/c\) leads to a useful scale ranging from \(-1\)
-(oblate, \(a/b \approx 0, b/c \approx 1\)) to \(+1\) (prolate,
-\(a/b \approx 1, b/c \approx 0\)). \(EF\) of \(0\) indicates an
-intermediate ellipsoid where \(a/b = b/c\), which is the case for
-spheres (\(a = b = c\)) and other ellipsoids with axis ratios
-\(a:qa:q^{2}a\). Ellipsoid Factor runs
-[Skeletonize3D](Skeletonize3D "wikilink") to get the medial axis of the
-trabeculae, which is used as the seed for sampling. Ellipsoids are
-seeded from each voxel on the medial axis. A combination of dilation,
-contraction, rotation and a small amount of translation is run
-iteratively until the ellipsoid increases no further in volume.
+Ellipsoid Factor is a new method for measuring rod/plate geometry. It uses the axis lengths from prolate, oblate and intermediate elipsoids to determine how prolate or oblate the trabecular space is at a particular point. Highly prolate (javelin-shaped, rod-like) ellipsoids have a single long axis (\(c\)) and two short axes (\(a, b\)) such that \(a < b \ll c\) , whereas highly oblate (discus-shaped, plate-like) ellipsoids have two longer axes (\(b, c\)) and one much shorter axis (\(a\)) so that \(a \ll b < c\). Calculating \(EF\) as the difference in ratios, \(EF = a/b - b/c\) leads to a useful scale ranging from \(-1\) (oblate, \(a/b \approx 0, b/c \approx 1\)) to \(+1\) (prolate, \(a/b \approx 1, b/c \approx 0\)). \(EF\) of \(0\) indicates an intermediate ellipsoid where \(a/b = b/c\), which is the case for spheres (\(a = b = c\)) and other ellipsoids with axis ratios \(a:qa:q^{2}a\). Ellipsoid Factor runs [Skeletonize3D](Skeletonize3D "wikilink") to get the medial axis of the trabeculae, which is used as the seed for sampling. Ellipsoids are seeded from each voxel on the medial axis. A combination of dilation, contraction, rotation and a small amount of translation is run iteratively until the ellipsoid increases no further in volume.
 
-The EF at a point in the structure is determined as the EF of the most
-voluminous ellipsoid which contains that point.
+The EF at a point in the structure is determined as the EF of the most voluminous ellipsoid which contains that point.
 
-If you use Ellipsoid Factor in your work, please cite: Doube M (2015),
-*The Ellipsoid Factor for quantification of rods, plates and
-intermediate forms in 3D geometries*, Frontiers in Endocrinology, 6:15,
-[doi: 10.3389/fendo.2015.00015](http://journal.frontiersin.org/Journal/10.3389/fendo.2015.00015/abstract)
+If you use Ellipsoid Factor in your work, please cite: Doube M (2015), *The Ellipsoid Factor for quantification of rods, plates and intermediate forms in 3D geometries*, Frontiers in Endocrinology, 6:15, [doi: 10.3389/fendo.2015.00015](http://journal.frontiersin.org/Journal/10.3389/fendo.2015.00015/abstract)
 
 #### Suitable images
 
@@ -376,69 +214,39 @@ A binary 3D image.
 
 #### Parameters
 
-  - **Sampling increment**: distance between sample points on each
-    vector; should be less than the pixel spacing.
+  - **Sampling increment**: distance between sample points on each vector; should be less than the pixel spacing.
   - **Vectors**: number of vectors to sample at each seed point.
-  - **Skeleton points per ellipsoid**: allows dense or sparse sampling,
-    a value of \(1\) means that an ellipsoid is sampled at every seed
-    point.
-  - **Contact sensitivity**: how many vectors must touch the background
-    before dilation stops.
-  - **Maximum iterations**: how hard to try to find larger ellipsoids -
-    fitting will stop if no improvement has been made after this number
-    of iterations..
-  - **Maximum drift**: how far the centroid may be displaced from its
-    seed point.
-  - **EF image**: stack containing EF values for each point contained by
-    at least one ellipsoid and NaN elsewhere.
-  - **Ellipsoid ID image**: stack containing the ID of the biggest
-    ellipsoid at each point, ranked in descending order (\(0\) is the
-    largest ellipsoid).
-  - **Volume image**: image showing the volume of the largest ellipsoid
-    containing that point.
-  - **Axis ratio images**: images showing \(a/b\) and \(b/c\) ratios
-    foreach point containing at least one ellipsoid and NaN elsewhere.
-  - **Flinn peak plot**: plot of \(a/b\) vs \(b/c\) weighted by volume,
-    so bright pixels indicate relatively more of the structure has that
-    axis ratio.
-  - **Gaussian sigma:** amount to blur the Flinn peak plot - set to
-    \(0\) for a precise but less 'beautiful' result.
-  - **Flinn plot**: unweighted Flinn plot - every ellipsoid is
-    represented by the same sized point regardless of ellipsoid size.
+  - **Skeleton points per ellipsoid**: allows dense or sparse sampling, a value of \(1\) means that an ellipsoid is sampled at every seed point.
+  - **Contact sensitivity**: how many vectors must touch the background before dilation stops.
+  - **Maximum iterations**: how hard to try to find larger ellipsoids - fitting will stop if no improvement has been made after this number of iterations..
+  - **Maximum drift**: how far the centroid may be displaced from its seed point.
+  - **EF image**: stack containing EF values for each point contained by at least one ellipsoid and NaN elsewhere.
+  - **Ellipsoid ID image**: stack containing the ID of the biggest ellipsoid at each point, ranked in descending order (\(0\) is the largest ellipsoid).
+  - **Volume image**: image showing the volume of the largest ellipsoid containing that point.
+  - **Axis ratio images**: images showing \(a/b\) and \(b/c\) ratios foreach point containing at least one ellipsoid and NaN elsewhere.
+  - **Flinn peak plot**: plot of \(a/b\) vs \(b/c\) weighted by volume, so bright pixels indicate relatively more of the structure has that axis ratio.
+  - **Gaussian sigma:** amount to blur the Flinn peak plot - set to \(0\) for a precise but less 'beautiful' result.
+  - **Flinn plot**: unweighted Flinn plot - every ellipsoid is represented by the same sized point regardless of ellipsoid size.
 
 #### Results
 
-  - **EF image**: stack containing EF values. NaN (not a number) values
-    are used in the background. Summary statistics can be obtained by
-    running Analyze \> Histogram
+  - **EF image**: stack containing EF values. NaN (not a number) values are used in the background. Summary statistics can be obtained by running Analyze \> Histogram
   - **Short-Mid image**: stack containing the \(a/b\) ratios
   - **Mid-Long image**: stack contining the \(b/c\) ratios
   - **Volume image**: stack containing ellipsoid volumes
-  - **Max id image**: stack containing the ID of the largest ellipsoid
-    at each point; IDs relate to the sort order based on volume, so ID =
-    0 is the largest ellipsoid. \(-1\) is foreground and background is
-    labelled with a large negative number.
-  - **Flinn diagram**: plot of \(a/b\) versus \(b/c\) values present in
-    the volume
-  - **Weighted Flinn plot**: Flinn diagram with peaks of intensity
-    proportional to volume occupied by each (\(a/b\), \(b/c\)) ratio
+  - **Max id image**: stack containing the ID of the largest ellipsoid at each point; IDs relate to the sort order based on volume, so ID = 0 is the largest ellipsoid. \(-1\) is foreground and background is labelled with a large negative number.
+  - **Flinn diagram**: plot of \(a/b\) versus \(b/c\) values present in the volume
+  - **Weighted Flinn plot**: Flinn diagram with peaks of intensity proportional to volume occupied by each (\(a/b\), \(b/c\)) ratio
 
 #### Related publications
 
-Salmon PL, Ohlsson C, Shefelbine SJ, Doube M (2015), *Structure model
-index does not measure rods and plates in trabecular bone*, Frontiers in
-Endocrinology, 6:162,
-[<doi:10.3389/fendo.2015.00162>](http://dx.doi.org/10.3389/fendo.2015.00162).
+Salmon PL, Ohlsson C, Shefelbine SJ, Doube M (2015), *Structure model index does not measure rods and plates in trabecular bone*, Frontiers in Endocrinology, 6:162, [<doi:10.3389/fendo.2015.00162>](http://dx.doi.org/10.3389/fendo.2015.00162).
 
 ## Fit ellipsoid
 
 Menu path *Plugins \> BoneJ \> Fit ellipsoid*.
 
-Finds the ellipsoid that best fits a set of point or multi-point ROIs in
-the ROI Manager. *Fit ellipsoid* may fail to fit an ellipsoid. The more
-points you add, the more likely it is to succeed. Points are scaled to
-the spatial calibration (voxel widht, height & depth) of the input
-image.
+Finds the ellipsoid that best fits a set of point or multi-point ROIs in the ROI Manager. *Fit ellipsoid* may fail to fit an ellipsoid. The more points you add, the more likely it is to succeed. Points are scaled to the spatial calibration (voxel widht, height & depth) of the input image.
 
 #### Suitable images
 
@@ -450,27 +258,19 @@ A 3D image.
 
 #### Results
 
-  - **Radii**: the radii *a*, *b* and *c* of the fitted ellipsoid.
-    Radius *a* is the shortest and *c* the longest.
-  - **Centroid**: *x*, *y* and *z* coordinates of the ellipsoid centre
-    point.
+  - **Radii**: the radii *a*, *b* and *c* of the fitted ellipsoid. Radius *a* is the shortest and *c* the longest.
+  - **Centroid**: *x*, *y* and *z* coordinates of the ellipsoid centre point.
 
 #### Differences from BoneJ1
 
   - Supports multi-point ROIs.
-  - Plug-in cancels if an ellipsoid can't be found, instead of reporting
-    invalid results.
+  - Plug-in cancels if an ellipsoid can't be found, instead of reporting invalid results.
 
 ## Fit sphere (WIP)
 
 Menu path *Plugins \> BoneJ \> Fit sphere*.
 
-Finds the sphere that best fits a set of point ROIs, and optionally
-displays the image data bounded by the sphere in a new image window.
-Place a set of point ROIs on structures of interest, hitting \[T\] to
-add each point to the ROI Manager. Fit Sphere takes the coordinates of
-the points from the ROI Manager and applies a least-squares
-optimisation.
+Finds the sphere that best fits a set of point ROIs, and optionally displays the image data bounded by the sphere in a new image window. Place a set of point ROIs on structures of interest, hitting \[T\] to add each point to the ROI Manager. Fit Sphere takes the coordinates of the points from the ROI Manager and applies a least-squares optimisation.
 
 #### Suitable images
 
@@ -479,20 +279,13 @@ A 3D image.
 #### Parameters
 
   - **ROI Manager**: populated with at least 5 point ROI's
-  - **Copy Sphere**: Create a new stack containing image data from
-    within the best-fit sphere.
-  - **Padding**: Number of black pixels to put between the sphere and
-    the sides of the image
-  - **Inner Cube**: Create a new stack containing image data from the
-    cube that just fits inside the best-fit sphere.
-  - **Outer Cube**: Create a new stack containing image data from the
-    cube that the best-fit sphere just fits inside.
-  - **Crop Factor**: Radius used for generating new images is multiplied
-    by crop factor so that a bigger or smaller volume can be produced.
-  - **Add to ROI Manager**: Add the sphere to the ROI Manager as a set
-    of circular ROIs
-  - **Clear ROI Manager**: Clear any existing ROIs in the Manager prior
-    to adding circles
+  - **Copy Sphere**: Create a new stack containing image data from within the best-fit sphere.
+  - **Padding**: Number of black pixels to put between the sphere and the sides of the image
+  - **Inner Cube**: Create a new stack containing image data from the cube that just fits inside the best-fit sphere.
+  - **Outer Cube**: Create a new stack containing image data from the cube that the best-fit sphere just fits inside.
+  - **Crop Factor**: Radius used for generating new images is multiplied by crop factor so that a bigger or smaller volume can be produced.
+  - **Add to ROI Manager**: Add the sphere to the ROI Manager as a set of circular ROIs
+  - **Clear ROI Manager**: Clear any existing ROIs in the Manager prior to adding circles
 
 #### Results
 
@@ -500,34 +293,17 @@ A 3D image.
   - **Y Centroid**: y-coordinate of sphere's centroid
   - **Z Centroid**: z-coordinate of sphere's centroid
   - **Radius**: length of radius
-  - **Images (optional)**: images containing a copy of the original data
-    within the sphere, or within cubes bounding or bounded by the
-    sphere.
+  - **Images (optional)**: images containing a copy of the original data within the sphere, or within cubes bounding or bounded by the sphere.
 
 ## Fractal dimension
 
 Menu path *Plugins \> BoneJ \> Fractal dimension*.
 
-This plug-in estimates the fractal dimension of an image by applying the
-box-counting algorithm. In this algorithm grids of diminishing size are
-scanned over the image, and the number of boxes containing at least one
-foreground voxel is counted. As the box size decreases and the grid
-becomes finer, the proportion of foreground boxes increases in a fractal
-structure. See [Wikipedia](https://en.wikipedia.org/wiki/Box_counting)
-for further details. BoneJ uses a fixed-grid scan, with an option to try
-to find the optimal covering.
+This plug-in estimates the fractal dimension of an image by applying the box-counting algorithm. In this algorithm grids of diminishing size are scanned over the image, and the number of boxes containing at least one foreground voxel is counted. As the box size decreases and the grid becomes finer, the proportion of foreground boxes increases in a fractal structure. See [Wikipedia](https://en.wikipedia.org/wiki/Box_counting) for further details. BoneJ uses a fixed-grid scan, with an option to try to find the optimal covering.
 
-The box counting algorithm produces a pair of \((log(n), -log(m))\)
-values for each iteration it runs. Here n = number of boxes with
-foreground, and m = box size. These pairs are passed to a curve-fitting
-algorithm, which returns the slope of the linear function which
-describes them ([regression
-fit](https://en.wikipedia.org/wiki/Linear_regression)). The coefficient
-of this slope is the fractal dimension.
+The box counting algorithm produces a pair of \((log(n), -log(m))\) values for each iteration it runs. Here n = number of boxes with foreground, and m = box size. These pairs are passed to a curve-fitting algorithm, which returns the slope of the linear function which describes them ([regression fit](https://en.wikipedia.org/wiki/Linear_regression)). The coefficient of this slope is the fractal dimension.
 
-Fractal dimension is markedly influenced by the parameters selected for
-the box counting algorithm, so it's worth running it several times with
-different values to find an accurate measure for your image.
+Fractal dimension is markedly influenced by the parameters selected for the box counting algorithm, so it's worth running it several times with different values to find an accurate measure for your image.
 
 #### Suitable images
 
@@ -535,36 +311,19 @@ A 2D or 3D binary image.
 
 #### Parameters
 
-  - *Starting box size (px)*: the size (sides) in pixels of a box in the
-    sampling grid in the first iteration of the algorithm.
-  - *Smallest box size (px)*: the minimum size in pixels of a box in the
-    grid. When box size becomes smaller than this limit, the algorithm
-    iterates one more time, and then stops.
-  - *Box scaling factor*: the term used to divide the box size after
-    iteration. For example, a scaling factor of \(2.0\) halves the size
-    at each step.
-  - *Grid translations*: how many times at each iteration the grid is
-    moved to try to the find the optimal covering. The optimal covering
-    covers the objects in the image with the least amount of boxes. The
-    larger the parameter the more likely it is that optimal covering is
-    found. However, this slows down the plug-in considerably.
-  - *Automatic parameters*: if checked, then the plug-in runs with
-    default parameters.
-  - *Show points*: if checked, then the plug-in displays the
-    \((log(n), -log(m))\) values it calculated.
+  - *Starting box size (px)*: the size (sides) in pixels of a box in the sampling grid in the first iteration of the algorithm.
+  - *Smallest box size (px)*: the minimum size in pixels of a box in the grid. When box size becomes smaller than this limit, the algorithm iterates one more time, and then stops.
+  - *Box scaling factor*: the term used to divide the box size after iteration. For example, a scaling factor of \(2.0\) halves the size at each step.
+  - *Grid translations*: how many times at each iteration the grid is moved to try to the find the optimal covering. The optimal covering covers the objects in the image with the least amount of boxes. The larger the parameter the more likely it is that optimal covering is found. However, this slows down the plug-in considerably.
+  - *Automatic parameters*: if checked, then the plug-in runs with default parameters.
+  - *Show points*: if checked, then the plug-in displays the \((log(n), -log(m))\) values it calculated.
 
 #### Results
 
-  - *Fractal dimension*: the [fractal
-    dimension](https://en.wikipedia.org/wiki/Fractal_dimension) of the
-    image. For example, the Koch snow flake has a fractal dimension of
-    1.262.
-  - *R²*: the [coefficient of
-    determination](https://en.wikipedia.org/wiki/Coefficient_of_determination)
-    of the line fitted to the \((log(n), -log(m))\) points.
+  - *Fractal dimension*: the [fractal dimension](https://en.wikipedia.org/wiki/Fractal_dimension) of the image. For example, the Koch snow flake has a fractal dimension of 1.262.
+  - *R²*: the [coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination) of the line fitted to the \((log(n), -log(m))\) points.
 
-The measures are reported separately for each 3D subspace in the image,
-i.e. for each channel and time frame.
+The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
 
 #### Differences to BoneJ1
 
@@ -573,67 +332,23 @@ i.e. for each channel and time frame.
 
 #### Related publications
 
-Fazzalari NL, Parkinson IH (1996), *Fractal dimension and architecture
-of trabecular bone*, J Pathol, 178: 100-5,
-\[http://dx.doi.org/10.1002/(SICI)1096-9896(199601)178:1%3C100::AID-PATH429%3E3.0.CO;2-K
-<doi:10.1002/(SICI)1096-9896(199601)178:1>\<100::AID-PATH429\>3.0.CO;2-K\].
+Fazzalari NL, Parkinson IH (1996), *Fractal dimension and architecture of trabecular bone*, J Pathol, 178: 100-5, \[http://dx.doi.org/10.1002/(SICI)1096-9896(199601)178:1%3C100>::AID-PATH429%3E3.0.CO;2-K <doi:10.1002/(SICI)1096-9896(199601)178:1>\<100::AID-PATH429\3.0.CO;2-K\].
 
 ## Inter-trabecular angles
 
 Menu path *Plugins \> BoneJ \> Inter-trabecular Angles*.
 
-The plug-in was designed to analyse the angles between trabeculae of
-cancellous bone. First it calls
-[Skeletonize3D](Skeletonize3D "wikilink") to thin the input image (if
-necessary). Then it calls [AnalyzeSkeleton](AnalyzeSkeleton "wikilink"),
-which creates a graph of the largest skeleton (by number of nodes) in
-the thinned image. The graph consists of nodes and the edges that
-connect them. Nodes are also known as vertices, and edges as branches.
-Roughly speaking the edges correspond to trabeculae and the nodes to the
-junction points, where trabeuculae meet.
+The plug-in was designed to analyse the angles between trabeculae of cancellous bone. First it calls [Skeletonize3D](Skeletonize3D "wikilink") to thin the input image (if necessary). Then it calls [AnalyzeSkeleton](AnalyzeSkeleton "wikilink"), which creates a graph of the largest skeleton (by number of nodes) in the thinned image. The graph consists of nodes and the edges that connect them. Nodes are also known as vertices, and edges as branches. Roughly speaking the edges correspond to trabeculae and the nodes to the junction points, where trabeuculae meet.
 
-The graph is often not a perfect representation of the trabecular
-network in the input image. *Inter-trabecular angles* offers many
-options to adjust the graph's topology and filter out artefacts that may
-obfuscate or skew the results. First it allows you to filter out nodes
-with too many or too few edges. Secondly it can be used to prune very
-short edges, which often do not represent actual trabeculae.
+The graph is often not a perfect representation of the trabecular network in the input image. *Inter-trabecular angles* offers many options to adjust the graph's topology and filter out artefacts that may obfuscate or skew the results. First it allows you to filter out nodes with too many or too few edges. Secondly it can be used to prune very short edges, which often do not represent actual trabeculae.
 
-![150 px|Types of edges in pruning](/images/pages/Ita_types.png
-"150 px|Types of edges in pruning")" Pruning works differently for
-different types of edges. There are four kinds: outer, dead-end, inner
-and short. An outer edge doesn't interconnect different parts of a
-graph. In other words, one (and only one) of its endpoints connects to
-only one branch, i.e. the edge itself. In the figure the outer edge is
-colored black. A dead-end (blue) is an outer edge whose length is less
-than the minimum set by the user, i.e. it's a short, outer edge. An
-inner edge (green) connects to end points with more than one branch. A
-short edge is an inner edge, whose length is less than the set minimum.
-When a dead-end is pruned, it with its "lonely" end-point are removed
-from the graph. When a short edge is pruned, it and it's endpoints are
-removed, and a new node is placed at the midpoint of the former. This
-new node connects to all the branches the previous nodes connected to.
+![150 px|Types of edges in pruning](/images/pages/Ita_types.png "150 px|Types of edges in pruning")" Pruning works differently for different types of edges. There are four kinds: outer, dead-end, inner and short. An outer edge doesn't interconnect different parts of a graph. In other words, one (and only one) of its endpoints connects to only one branch, i.e. the edge itself. In the figure the outer edge is colored black. A dead-end (blue) is an outer edge whose length is less than the minimum set by the user, i.e. it's a short, outer edge. An inner edge (green) connects to end points with more than one branch. A short edge is an inner edge, whose length is less than the set minimum. When a dead-end is pruned, it with its "lonely" end-point are removed from the graph. When a short edge is pruned, it and it's endpoints are removed, and a new node is placed at the midpoint of the former. This new node connects to all the branches the previous nodes connected to.
 
-*Inter-trabecular angles* offers two further options to control pruning:
-*iteration* and *clustering*. Iteration repeats pruning until no new
-short edges are found. Sometimes pruning can create new short edges, and
-thus the graph may still have them after one iteration. However,
-iteration can alter the structure of the graph too dramatically.
-Clustering searches for all nodes connected by short edges, before
-removing any. In the figure, clustering pruning would remove the four
-nodes and the red edges between them in one go. It would create a new
-node at the center of the previous four, and connect it to the blue and
-green edges. When pruning is not clustering, it removes edges
-one-by-one. This changes the end result depending on the order the edges
-are traversed. Clustering creates the same result each time.
+*Inter-trabecular angles* offers two further options to control pruning: *iteration* and *clustering*. Iteration repeats pruning until no new short edges are found. Sometimes pruning can create new short edges, and thus the graph may still have them after one iteration. However, iteration can alter the structure of the graph too dramatically. Clustering searches for all nodes connected by short edges, before removing any. In the figure, clustering pruning would remove the four nodes and the red edges between them in one go. It would create a new node at the center of the previous four, and connect it to the blue and green edges. When pruning is not clustering, it removes edges one-by-one. This changes the end result depending on the order the edges are traversed. Clustering creates the same result each time.
 
-Pruning also removes loops and redundant parallel edges. The former
-connects to the same node on both ends, and the latter connects two
-nodes that are already connected by another edge.
+Pruning also removes loops and redundant parallel edges. The former connects to the same node on both ends, and the latter connects two nodes that are already connected by another edge.
 
-The pruning and filtering features were added so that we can replicate
-and continue from the research of [Reznikov et
-al.](https://doi.org/10.1016/j.actbio.2016.08.040)
+The pruning and filtering features were added so that we can replicate and continue from the research of [Reznikov et al.](https://doi.org/10.1016/j.actbio.2016.08.040)
 
 #### Suitable images
 
@@ -641,88 +356,46 @@ An 8-bit, binary 2D or 3D image. Hyperstacks are not supported.
 
 #### Parameters
 
-  - **Minimum valence**: minimum number of branches for a node to be
-    included in the analysis.
-  - **Maximum valence**: maximum number of branches for a node to be
-    included in the analysis.
-  - **Minimum trabecular length (px)**: minimum length for a branch to
-    be preserved in the pruning. Length is calculated as the distance
-    between the endpoints of a branch.
-      - This length is also displayed in the units of the image
-        calibration
-  - **Margin (px)**: minimum distance of a node from image stack edges
-    to be included in the analysis. Having nodes too close to the edges
-    can make the results less accurate, because you get more branches
-    that do not terminate to a node at the other end.
-  - **Iterate pruning**: repeat pruning until no more new short branches
-    are discovered. When true, the topology of the graph is likely to
-    change more in the pruning.
-  - **Use clusters**: if true then the pruning result is independent of
-    the order in which the graph is traversed. False corresponds with
-    methodology in Reznikov's article. See above for more details.
-  - **Print centroids**: Print the centroids (center coordinates) of the
-    node pairs at the ends of each edge.
-  - **Print % culled edges**: Print statistics of different types of
-    edges pruned.
+  - **Minimum valence**: minimum number of branches for a node to be included in the analysis.
+  - **Maximum valence**: maximum number of branches for a node to be included in the analysis.
+  - **Minimum trabecular length (px)**: minimum length for a branch to be preserved in the pruning. Length is calculated as the distance between the endpoints of a branch.
+      - This length is also displayed in the units of the image calibration
+  - **Margin (px)**: minimum distance of a node from image stack edges to be included in the analysis. Having nodes too close to the edges can make the results less accurate, because you get more branches that do not terminate to a node at the other end.
+  - **Iterate pruning**: repeat pruning until no more new short branches are discovered. When true, the topology of the graph is likely to change more in the pruning.
+  - **Use clusters**: if true then the pruning result is independent of the order in which the graph is traversed. False corresponds with methodology in Reznikov's article. See above for more details.
+  - **Print centroids**: Print the centroids (center coordinates) of the node pairs at the ends of each edge.
+  - **Print % culled edges**: Print statistics of different types of edges pruned.
 
 #### Results
 
-  - **Inter-trabecular angles**: angles between each branch of each node
-    included in the analysis. Sorted into columns according to the
-    number of branches per node. For example, column *"3"* shows the
-    angles between branches of nodes with three branches.
-  - **Centroids** (optional): A table of the center coordinates of the
-    node pairs at the ends of each edge.
-  - **Culled edge percentages** (optional): A table showing the
-    percentages of different kinds of edges pruned, compared to the
-    total number of edges in the analysed graph.
-  - **Skeleton** (optional): if the plug-in had to skeletonise the input
-    image, it displays the result of the thinning.
+  - **Inter-trabecular angles**: angles between each branch of each node included in the analysis. Sorted into columns according to the number of branches per node. For example, column *"3"* shows the angles between branches of nodes with three branches.
+  - **Centroids** (optional): A table of the center coordinates of the node pairs at the ends of each edge.
+  - **Culled edge percentages** (optional): A table showing the percentages of different kinds of edges pruned, compared to the total number of edges in the analysed graph.
+  - **Skeleton** (optional): if the plug-in had to skeletonise the input image, it displays the result of the thinning.
 
 #### Differences to BoneJ1
 
-  - Inter-trabecular angles generalizes the idea of *Triple point
-    angles* for any types of points. It also provides more tools for
-    adjusting the graph for analysis.
+  - Inter-trabecular angles generalizes the idea of *Triple point angles* for any types of points. It also provides more tools for adjusting the graph for analysis.
 
 #### Related publications
 
-Reznikov, N et al. (2016), *Inter-trabecular angle: A parameter of
-trabecular bone architecture in the human proximal femur that reveals
-underlying topological motifs*, Acta Biomaterialia, 44: 65--72,
-[<doi:j.actbio.2016.08.040>](https://doi.org/10.1016/j.actbio.2016.08.040).
+Reznikov, N et al. (2016), *Inter-trabecular angle: A parameter of trabecular bone architecture in the human proximal femur that reveals underlying topological motifs*, Acta Biomaterialia, 44: 65--72, [<doi:j.actbio.2016.08.040>](https://doi.org/10.1016/j.actbio.2016.08.040).
 
 ## Thickness
 
 Menu path *Plugins \> BoneJ \> Thickness*.
 
-This plug-in includes [Local\_Thickness](Local_Thickness "wikilink") in
-BoneJ, and provides some additional options & results. Local thickness
-measures *the diameter of the largest sphere that fits inside the object
-and contains the point* for each point i.e. foreground voxel in an
-image. The plug-in calculates mean and standard deviation of the
-trabecular thickness (Tb.Th) or trabecular spacing (Tb.Sp) directly from
-pixel values in the resulting thickness map. Foreground voxels are
-considered trabeculae, and background voxels are the spacing. Processing
-time is heavily dependent on feature size (in pixels); large features
-can take a very long time to process.
+This plug-in includes [Local\_Thickness](Local_Thickness "wikilink") in BoneJ, and provides some additional options & results. Local thickness measures *the diameter of the largest sphere that fits inside the object and contains the point* for each point i.e. foreground voxel in an image. The plug-in calculates mean and standard deviation of the trabecular thickness (Tb.Th) or trabecular spacing (Tb.Sp) directly from pixel values in the resulting thickness map. Foreground voxels are considered trabeculae, and background voxels are the spacing. Processing time is heavily dependent on feature size (in pixels); large features can take a very long time to process.
 
 #### Suitable images
 
-The input image must be 3D, 8-bit and binary. Hyperstacks are not
-supported.
+The input image must be 3D, 8-bit and binary. Hyperstacks are not supported.
 
 #### Parameters
 
-  - **Calculate**: chooses which thickness maps to calculate -
-    trabecular thickness, trabecular spacing, or both. In order to
-    calculate trabecular spacing, the image voxels are inverted.
-  - **Show thickness maps**: display the calculated thickness maps or
-    not.
-  - **Mask thickness maps**: remove artifacts from the thickness maps.
-    Artifacts are foreground voxels not present in the original image.
-    Resets to true for each run, because unmasked pixels bias the
-    result.
+  - **Calculate**: chooses which thickness maps to calculate - trabecular thickness, trabecular spacing, or both. In order to calculate trabecular spacing, the image voxels are inverted.
+  - **Show thickness maps**: display the calculated thickness maps or not.
+  - **Mask thickness maps**: remove artifacts from the thickness maps. Artifacts are foreground voxels not present in the original image. Resets to true for each run, because unmasked pixels bias the result.
 
 #### Results
 
@@ -731,36 +404,18 @@ supported.
 
 #### Differences to BoneJ1
 
-  - Calls the latest version of
-    [Local\_Thickness](Local_Thickness "wikilink").
+  - Calls the latest version of [Local\_Thickness](Local_Thickness "wikilink").
 
 #### Related publications
 
-  - Dougherty R, Kunzelmann K (2007), *Computing local thickness of 3D
-    structures with ImageJ*, Microsc. Microanal., 13: 1678-1679,
-    [<doi:10.1017/S1431927607074430>](http://dx.doi.org/10.1017/S1431927607074430)
-  - Hildebrand T, Rüegsegger P (1997), *A new method for the
-    model-independent assessment of thickness in three-dimensional
-    images*, J. Microsc., 185: 67-75,
-    [<doi:10.1046/j.1365-2818.1997.1340694.x>](http://dx.doi.org/10.1046/j.1365-2818.1997.1340694.x)
+  - Dougherty R, Kunzelmann K (2007), *Computing local thickness of 3D structures with ImageJ*, Microsc. Microanal., 13: 1678-1679, [<doi:10.1017/S1431927607074430>](http://dx.doi.org/10.1017/S1431927607074430)
+  - Hildebrand T, Rüegsegger P (1997), *A new method for the model-independent assessment of thickness in three-dimensional images*, J. Microsc., 185: 67-75, [<doi:10.1046/j.1365-2818.1997.1340694.x>](http://dx.doi.org/10.1046/j.1365-2818.1997.1340694.x)
 
 ## Moments of inertia (WIP)
 
 Menu path: *Plugins \> BoneJ \> Moments of Inertia*
 
-Calculates the three orthogonal principal axes and moments of inertia
-around those axes. It includes pixels with values between upper and
-lower limits, which can be defined in terms of unitless grey values or
-Hounsfield units (HU). It optionally creates a new stack with the image
-centred and rotated so that the principal axes are parallel to the image
-stack's x, y and z axes. Calculations are limited to a rectangular ROI
-if one is drawn. The plugin will guess whether the image is HU
-calibrated, and if so, apply HU limits of bone (0-4000 HU), otherwise it
-will calculate auto-thresholds based on the stack's histogram. If a
-calibration curve is known, the coefficients can be added to get
-weighted calculations. Aligning a bone with Moments of Inertia may be a
-useful step prior to Slice Geometry if bones are not aligned with the
-image z axis.
+Calculates the three orthogonal principal axes and moments of inertia around those axes. It includes pixels with values between upper and lower limits, which can be defined in terms of unitless grey values or Hounsfield units (HU). It optionally creates a new stack with the image centred and rotated so that the principal axes are parallel to the image stack's x, y and z axes. Calculations are limited to a rectangular ROI if one is drawn. The plugin will guess whether the image is HU calibrated, and if so, apply HU limits of bone (0-4000 HU), otherwise it will calculate auto-thresholds based on the stack's histogram. If a calibration curve is known, the coefficients can be added to get weighted calculations. Aligning a bone with Moments of Inertia may be a useful step prior to Slice Geometry if bones are not aligned with the image z axis.
 
 #### Suitable images
 
@@ -770,29 +425,23 @@ An 8-bit or 16-bit image.
 
   - **Start slice**: First slice to include in calculations
   - **End slice**: Last slice to include in calculations
-  - **HU Calibrated**: Plugin will guess whether the image is HU
-    calibrated. If image is HU calibrated, make sure the box is checked
-    and enter HU calibrated numeric values in the following fields
+  - **HU Calibrated**: Plugin will guess whether the image is HU calibrated. If image is HU calibrated, make sure the box is checked and enter HU calibrated numeric values in the following fields
   - **Bone Min**: Lower threshold, in either uncalibrated greys or HU
   - **Bone Max**: Upper threshold, in either uncalibrated greys or HU
   - **Slope**: m where physical density = m × pixel value + c
   - **Y Intercept**: c where physical density = m × pixel value + c
-  - **Align result**: Draw a new stack with the principal axes parallel
-    to the image axes
+  - **Align result**: Draw a new stack with the principal axes parallel to the image axes
   - **Show axes (2D)**: Draw the axes in white on the aligned image
-  - **Show axes (3D)**: Display the stack and its principal axes in a 3D
-    Viewer window
+  - **Show axes (3D)**: Display the stack and its principal axes in a 3D Viewer window
 
 #### Results
 
-  - **Image (optional)**: a copy of the input image centered and aligned
-    with the principal axes
+  - **Image (optional)**: a copy of the input image centered and aligned with the principal axes
   - **Xc**: Centroid x-coordinate (mass-weighted by calibrated density)
   - **Yc**: Centroid y-coordinate
   - **Zc**: Centroid z-coordinate
   - **Vol**: Total volume of thresholded voxels
-  - **Mass**: Mass of bone, from pixel values and density calibration
-    coefficients
+  - **Mass**: Mass of bone, from pixel values and density calibration coefficients
   - **Icxx**: Moment around x axis passing through centroid
   - **Icyy**: Moment around y axis passing through centroid
   - **Iczz**: Moment around z axis passing through centroid
@@ -803,30 +452,16 @@ An 8-bit or 16-bit image.
   - **I2**: Moment around the middle principal axis
   - **I3**: Moment around the longest principal axis
   - **Verbose output in Log window**
-      - **Eigenvalues**: Result of of eigenvalue decomposition. Moments
-        of inertia
+      - **Eigenvalues**: Result of of eigenvalue decomposition. Moments of inertia
       - **Eigenvectors of principal axes**: orientation of input image
-      - **Inverse eigenvector matrix**: used to map voxel positions in
-        the aligned image back to voxel positions in the original image
+      - **Inverse eigenvector matrix**: used to map voxel positions in the aligned image back to voxel positions in the original image
   - Optional 3D display of principal axes
 
 ## Optimise threshold (WIP)
 
 Menu path: *Plugins \> BoneJ \> Optimise Threshold*
 
-Several histogram-based methods exist for automatic determination of
-threshold for binary segmentation, but in ImageJ these are currently
-limited to pixel values in a single slice. The result can be excluding
-high values in a stack that are higher than the highest value in the
-current slice. This plugin uses all the pixels in a stack to construct a
-histogram and uses ImageJ's built-in isodata algorithm to determine the
-threshold. It optionally tests values either side of the initial
-auto-threshold for connectivity, because connectivity is very sensitive
-to image noise. The plugin attempts to find the threshold that results
-in minimal connectivity. Purification, erosion and dilation can improve
-the connectivity estimate, so Purify is always called, and erosion and
-dilation are applied as part of a sequence: purify, erode, purify,
-dilate.
+Several histogram-based methods exist for automatic determination of threshold for binary segmentation, but in ImageJ these are currently limited to pixel values in a single slice. The result can be excluding high values in a stack that are higher than the highest value in the current slice. This plugin uses all the pixels in a stack to construct a histogram and uses ImageJ's built-in isodata algorithm to determine the threshold. It optionally tests values either side of the initial auto-threshold for connectivity, because connectivity is very sensitive to image noise. The plugin attempts to find the threshold that results in minimal connectivity. Purification, erosion and dilation can improve the connectivity estimate, so Purify is always called, and erosion and dilation are applied as part of a sequence: purify, erode, purify, dilate.
 
 #### Suitable images
 
@@ -834,20 +469,14 @@ An 8-bit of 16-bit image
 
 #### Parameters
 
-  - **Threshold Only**: Determine the threshold from the stack histogram
-    only
-  - **Apply Threshold**: Replace the input image with a thresholded
-    version
+  - **Threshold Only**: Determine the threshold from the stack histogram only
+  - **Apply Threshold**: Replace the input image with a thresholded version
   - **Show Plot**: Display a graph showing connectivity versus threshold
   - **Tests**: Number of different thresholds to test for connectivity
-  - **Range**: Proportion of the initial threshold to test above and
-    below initial thresholds
-  - **Subvolume Size**: Size of the volume to test for connectivity. Set
-    small for a faster run and large to test the whole stack
-  - **Erosion Cycles**: Number of times to erode the stack after initial
-    purification
-  - **Dilation Cycles**: Number of times to dilate the stack after
-    secondary purification
+  - **Range**: Proportion of the initial threshold to test above and below initial thresholds
+  - **Subvolume Size**: Size of the volume to test for connectivity. Set small for a faster run and large to test the whole stack
+  - **Erosion Cycles**: Number of times to erode the stack after initial purification
+  - **Dilation Cycles**: Number of times to dilate the stack after secondary purification
 
 #### Results
 
@@ -859,10 +488,7 @@ An 8-bit of 16-bit image
 
 Menu path: *Plugins \> BoneJ \> Orientation*
 
-Sets the direction in a 2D image, without rotating the image or changing
-it in any way. *Slice Geometry* (see below) uses *Orientation* to
-calculate diameter, second moments of area and section moduli around
-anatomic axes set by the user.
+Sets the direction in a 2D image, without rotating the image or changing it in any way. *Slice Geometry* (see below) uses *Orientation* to calculate diameter, second moments of area and section moduli around anatomic axes set by the user.
 
 #### Suitable images
 
@@ -870,25 +496,21 @@ A 2D image.
 
 #### Parameters
 
-  - **Orientation**: input field displays current orientation (clockwise
-    from 12 o'clock) and takes keyboard input
+  - **Orientation**: input field displays current orientation (clockwise from 12 o'clock) and takes keyboard input
   - **deg / rad**: display and set orientation in degrees or radians
-  - **Principal direction**: the main direction, the head of which is
-    displayed in red
+  - **Principal direction**: the main direction, the head of which is displayed in red
   - **Secondary direction**: the orthogonal direction
   - **Reflect**: swap the labels on this axis
 
 #### Results
 
-  - **Orientation axes**: draws the axes of the orientation on the
-    image.
+  - **Orientation axes**: draws the axes of the orientation on the image.
 
 ## Purify (WIP)
 
 Menu path: *Plugins \> BoneJ \> Purify*
 
-Purify locates all particles in 3D and removes all but the largest
-foreground and background particles.
+Purify locates all particles in 3D and removes all but the largest foreground and background particles.
 
 #### Suitable images
 
@@ -898,27 +520,20 @@ The input image must be 3D, 8-bit and binary.
 
   - **Labelling algorithm**:
       - **Mapped**: Non-recursive, memory efficient and fast.
-      - **Multithreaded**: use multiple cores and job chunking to reduce
-        recursion. Fast on small stacks and if you have many CPU cores.
-      - **Linear**: Non-recursive but heavy on RAM and single-threaded.
-        Fast on big stacks, but only if you have the memory.
-  - **Chunk Size**: number of slices to use in each particle labelling
-    thread. If images are large, set this to 2
-  - **Performance Log**: Show verbose performance information to help
-    tune your system
-  - **Make copy**: If checked, shows the result in a new window; if
-    unchecked the result replaces the original image.
+      - **Multithreaded**: use multiple cores and job chunking to reduce recursion. Fast on small stacks and if you have many CPU cores.
+      - **Linear**: Non-recursive but heavy on RAM and single-threaded. Fast on big stacks, but only if you have the memory.
+  - **Chunk Size**: number of slices to use in each particle labelling thread. If images are large, set this to 2
+  - **Performance Log**: Show verbose performance information to help tune your system
+  - **Make copy**: If checked, shows the result in a new window; if unchecked the result replaces the original image.
 
 #### Results
 
   - **Performance metrics (optional)**
       - **Threads**: Number of CPU cores used
       - **Slices**: Number of slices in the input image stack
-      - **Chunks**: Number of chunks of slices, each chunk is processed
-        independently
+      - **Chunks**: Number of chunks of slices, each chunk is processed independently
       - **Chunk size**: Number of slices per chunk
-      - **Last chunk size**: size of the last chunk (the remainder
-        chunk)
+      - **Last chunk size**: size of the last chunk (the remainder chunk)
       - **Duration**: time in seconds to complete purification
   - **Purified image**: optionally in a new image window.
 
@@ -926,14 +541,11 @@ The input image must be 3D, 8-bit and binary.
 
 Menu path *Plugins \> BoneJ \>Skeletonise*.
 
-This plug-in simply includes [Skeletonize3D](Skeletonize3D "wikilink")
-in BoneJ. It adds some additional validation to check that your image
-suits the tool.
+This plug-in simply includes [Skeletonize3D](Skeletonize3D "wikilink") in BoneJ. It adds some additional validation to check that your image suits the tool.
 
 #### Suitable images
 
-The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not
-supported.
+The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supported.
 
 #### Differences to BoneJ1
 
@@ -943,14 +555,7 @@ Calls the latest version of [Skeletonize3D](Skeletonize3D "wikilink").
 
 Menu path *Plugins \> BoneJ \> Slice Geometry*
 
-Slice Geometry calculates cross-sectional geometric properties of
-shapes: cross-sectional area, centroid, mean density, second moment of
-area, section modulus, Feret diameter and local thickness (2D and 3D).
-Measurements can be limited to a rectangular ROI. If your bone is not
-well aligned with the image axes, you may find it useful to align the
-bone to its principal axes using Moments of Inertia or by exporting a
-transformed volume from the ImageJ 3D Viewer. Importantly, no assumption
-of geometry is made for any of the measurements.
+Slice Geometry calculates cross-sectional geometric properties of shapes: cross-sectional area, centroid, mean density, second moment of area, section modulus, Feret diameter and local thickness (2D and 3D). Measurements can be limited to a rectangular ROI. If your bone is not well aligned with the image axes, you may find it useful to align the bone to its principal axes using Moments of Inertia or by exporting a transformed volume from the ImageJ 3D Viewer. Importantly, no assumption of geometry is made for any of the measurements.
 
 #### Suitable images
 
@@ -958,67 +563,44 @@ A 2D or 3D binary image.
 
 #### Parameters
 
-  - **Bone**: Slice Geometry will guess from your image title the bone
-    it is working on. If it is wrong, correct it. If your bone of
-    interest isn't listed, email me.
-  - **2D Thickness**: Run Thickness on a per-slice basis; this fits
-    circles rather than spheres
-  - **3D Thickness**: Run Thickness on the whole stack, fitting spheres,
-    then report results per slice
+  - **Bone**: Slice Geometry will guess from your image title the bone it is working on. If it is wrong, correct it. If your bone of interest isn't listed, email me.
+  - **2D Thickness**: Run Thickness on a per-slice basis; this fits circles rather than spheres
+  - **3D Thickness**: Run Thickness on the whole stack, fitting spheres, then report results per slice
   - **Draw Axes**: Draw axes on an annotated copy of the stack
   - **Draw Centroids**: Draw centroids on an annotated copy of the stack
-  - **Annotated Copy (2D)**: Create a new stack showing the centroids
-    and principal axes
-  - **3D Annotation**: Display the stack, principal axes and centroids
-    in the 3D viewer
+  - **Annotated Copy (2D)**: Create a new stack showing the centroids and principal axes
+  - **3D Annotation**: Display the stack, principal axes and centroids in the 3D viewer
   - **Process Stack**: Calculate parameters for all slices in the stack
-  - **Clear Results**: Remove all data in the results table without
-    saving, prior to calculating parameters
-  - **Use Orientation**: Also calculate parameters based on directions
-    defined in Orientation
-  - **HU Calibrated**: Allows you to enter your thresholds in Hounsfield
-    units (HU) or uncalibrated units
+  - **Clear Results**: Remove all data in the results table without saving, prior to calculating parameters
+  - **Use Orientation**: Also calculate parameters based on directions defined in Orientation
+  - **HU Calibrated**: Allows you to enter your thresholds in Hounsfield units (HU) or uncalibrated units
   - **Bone Min**: minimum pixel value to use in calculations
   - **Bone Max**: maximum pixel value to use in calculations
   - **Slope**: \(m\) where physical density \(= m * pixel value + c\)
-  - **Y Intercept**: \(c\) where physical density
-    \(= m * pixel value + c\)
-  - **Note**: density-weighted calculations are only applied to centroid
-    determination at present
-  - **Partial volume compensation**: Use model that assumes Gaussian
-    blur of imaging modality and linear transform between pixel value
-    and sample 'density' to correct for blurred and pixelated images
-    (e.g. small bone in clinical CT)
-  - **Background**: pixel value that corresponds to zero bone density
-    (could be the 'fat', 'air' or 'muscle' pixel value)
+  - **Y Intercept**: \(c\) where physical density \(= m * pixel value + c\)
+  - **Note**: density-weighted calculations are only applied to centroid determination at present
+  - **Partial volume compensation**: Use model that assumes Gaussian blur of imaging modality and linear transform between pixel value and sample 'density' to correct for blurred and pixelated images (e.g. small bone in clinical CT)
+  - **Background**: pixel value that corresponds to zero bone density (could be the 'fat', 'air' or 'muscle' pixel value)
   - **Foreground**: pixel value that corresponds to 100% bone density
-  - **A rectangular ROI (optional)**: if there's a ROI, calculations are
-    limited to its area.
+  - **A rectangular ROI (optional)**: if there's a ROI, calculations are limited to its area.
 
 #### Results
 
-  - **Images (optional)**: displays the result images selected in the
-    parameters
-  - **Bone code**: Unique numeric identifier for the anatomic name of
-    each bone. Further bone codes can be added to BoneJ on request
-  - **Slice**: slice number indicating which slice contributed image
-    data for this row of the results
+  - **Images (optional)**: displays the result images selected in the parameters
+  - **Bone code**: Unique numeric identifier for the anatomic name of each bone. Further bone codes can be added to BoneJ on request
+  - **Slice**: slice number indicating which slice contributed image data for this row of the results
   - **CSA**: cross-sectional area
   - **X cent.**: Centroid x-coordinate
   - **Y cent.**: Centroid y-coordinate
-  - **Density**: mean physical density, calculated from pixel values and
-    calibration coefficients
+  - **Density**: mean physical density, calculated from pixel values and calibration coefficients
   - **wX cent**: Density-weighted x-coordinate of centroid
   - **wY cent**: Density-weighted y-coordinate of centroid
-  - **Theta**: angle of minor axis (axis for Imin, the long axis of your
-    specimen's cross section) from the horizontal, ranging from
-    \(-\pi/2\) to \(\pi/2\), with positive as clockwise
+  - **Theta**: angle of minor axis (axis for Imin, the long axis of your specimen's cross section) from the horizontal, ranging from \(-\pi/2\) to \(\pi/2\), with positive as clockwise
   - **R1**: maximum chord length from minor axis
   - **R2**: maximum chord length from major axis
   - **Imin**: Second moment of area around major axis
   - **Imax**: Second moment of area around minor axis
-  - **Ipm**: Product moment of area (= 0 if no errors are present, e.g.
-    due to pixelation)
+  - **Ipm**: Product moment of area (= 0 if no errors are present, e.g. due to pixelation)
   - **Zmax**: Section modulus around major axis (Imax / R2)
   - **Zmin**: Section modulus around minor axis (Imin / R1)
   - **Zpol**: Polar section modulus
@@ -1026,19 +608,12 @@ A 2D or 3D binary image.
   - **Feret Max**: Maximum caliper width
   - **Feret Angle**: Orientation of maximum caliper width
   - **Perimeter**: Distance around external surface
-  - **Max Thick 2D**: Maximum thickness determined by local thickness in
-    2D
-  - **Mean Thick 2D**: Mean thickness determined by local thickness in
-    2D
-  - **SD Thick 2D**: Standard deviation of the mean thickness determined
-    by local thickness in 2D
-  - **Max Thick 3D**: Maximum thickness in this slice determined by
-    local thickness in 3D
-  - **Mean Thick 3D**: Mean thickness in this slice determined by local
-    thickness in 3D
-  - **SD Thick 3D**: Standard deviation of the mean thickness in this
-    slice determined by local thickness in 3D Directional measurements,
-    using Orientation directions, and the specimen's slice centroid
+  - **Max Thick 2D**: Maximum thickness determined by local thickness in 2D
+  - **Mean Thick 2D**: Mean thickness determined by local thickness in 2D
+  - **SD Thick 2D**: Standard deviation of the mean thickness determined by local thickness in 2D
+  - **Max Thick 3D**: Maximum thickness in this slice determined by local thickness in 3D
+  - **Mean Thick 3D**: Mean thickness in this slice determined by local thickness in 3D
+  - **SD Thick 3D**: Standard deviation of the mean thickness in this slice determined by local thickness in 3D Directional measurements, using Orientation directions, and the specimen's slice centroid
   - **A (rad)**: Principal orientation (direction A)
   - **B (rad)**: Secondary orientation (direction B)
   - **IAa**: Second moment of area around Aa axis
@@ -1054,10 +629,7 @@ A 2D or 3D binary image.
 
 Menu path *Plugins \> BoneJ \> Surface area*
 
-*Surface area* creates a mesh from the bone in the image, and then
-calculates the area of the surface of the mesh. A mesh is a collection
-of triangular faces that defines the shape of an object in 3D graphics.
-The plug-in assumes that all foreground voxels represent bone.
+*Surface area* creates a mesh from the bone in the image, and then calculates the area of the surface of the mesh. A mesh is a collection of triangular faces that defines the shape of an object in 3D graphics. The plug-in assumes that all foreground voxels represent bone.
 
 #### Suitable images
 
@@ -1065,38 +637,28 @@ A 3D binary image.
 
 #### Parameters
 
-  - **Export STL file(s)**: if checked, then the meshes created from the
-    image are saved as .stl-files. A dialog opens for you to select a
-    folder for the files.
+  - **Export STL file(s)**: if checked, then the meshes created from the image are saved as .stl-files. A dialog opens for you to select a folder for the files.
 
 #### Results
 
   - **Surface area**: the surface area of the bone mesh
   - **STL-file**: the mesh created from the bone image
 
-The surface area is reported and an .stl-file saved separately for each
-3D subspace in the image.
+The surface area is reported and an .stl-file saved separately for each 3D subspace in the image.
 
 #### Differences to BoneJ1
 
   - Supports hyperstacks.
-  - Results differ, because the marching cubes and mesh volume
-    implementations are different.
+  - Results differ, because the marching cubes and mesh volume implementations are different.
   - In BoneJ1 this plug-in was called *Isosurface*
 
 ## Surface fraction
 
 Menu path *Plugins \> BoneJ \> Fraction \> Surface fraction*
 
-*Surface fraction* calculates the fraction of bone volume in an image by
-comparing meshes created from bone particles and the whole image. A mesh
-is a collection of triangular faces that defines the shape of an object
-in 3D graphics. The plug-in assumes that all foreground voxels represent
-bone.
+*Surface fraction* calculates the fraction of bone volume in an image by comparing meshes created from bone particles and the whole image. A mesh is a collection of triangular faces that defines the shape of an object in 3D graphics. The plug-in assumes that all foreground voxels represent bone.
 
-More formally defined, *Surface fraction* calculates the fraction
-*BV/TV*, which is the volume of mineralised bone *BV* per unit volume of
-the sample *TV*.
+More formally defined, *Surface fraction* calculates the fraction *BV/TV*, which is the volume of mineralised bone *BV* per unit volume of the sample *TV*.
 
 #### Suitable images
 
@@ -1108,28 +670,19 @@ The input image must be 3D and binary.
   - **Total volume**: volume of the mesh created from the whole image.
   - **Volume ratio**: ratio of bone to total volume.
 
-The measures are reported separately for each 3D subspace in the image,
-i.e. for each channel and time frame.
+The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
 
 #### Differences to BoneJ1
 
   - Supports hyperstacks.
-  - Results differ, because the marching cubes and mesh volume
-    implementations are different.
+  - Results differ, because the marching cubes and mesh volume implementations are different.
   - In BoneJ1 this plug-in was called *Volume fraction*
 
 ## Results table
 
-The BoneJ plug-ins print their results into a shared result table. This
-is because we often need to calculate several measures for the same
-image, so it's handy to have them on one row. Repeated measures for the
-same image are reported on different rows. The results persist even if
-the table is closed. To clear the table run *Plugins \> BoneJ \> Table
-\> Clear BoneJ results*.
+The BoneJ plug-ins print their results into a shared result table. This is because we often need to calculate several measures for the same image, so it's handy to have them on one row. Repeated measures for the same image are reported on different rows. The results persist even if the table is closed. To clear the table run *Plugins \> BoneJ \> Table \> Clear BoneJ results*.
 
-Note that some of the plug-ins (marked with *WIP*) still use a ImageJ1
-style results table that works slightly differently. As they are
-modernized they'll move to use the same new table as the others.
+Note that some of the plug-ins (marked with *WIP*) still use a ImageJ1 style results table that works slightly differently. As they are modernized they'll move to use the same new table as the others.
 
 ## Usage reporting
 
@@ -1137,105 +690,62 @@ Menu path '' Edit \> Options \> BoneJ Usage (Modern | Legacy)''
 
 #### What is collected?
 
-BoneJ uses Google Analytics to report when a plugin's run() method
-completes successfully.
+BoneJ uses Google Analytics to report when a plugin's run() method completes successfully.
 
 `ht`<span>`tp://`</span>`www.google-analytics.com/__utm.gif?utmwv=5.2.5&utms=0&utmn=1074354874&utmhn=bonej.org&utmt=event&utme=5(Plugin%20Usage*org.bonej.wrapperPlugins.wrapperUtils.UsageReporterOptions*0.5.1)&utmcs=UTF-8&utmsr=3840x1080&utmvp=3840x1080&utmsc=24-bit&utmul=en-gb&utmje=0&utmcn=1&utmdt=bonej.org%20Usage%20Statistics&utmhid=512699200&utmr=-&utmp=%2Fstats&utmac=UA-366405-8&utmcc=__utma%3D1589599318.1327557233.1538550102.1538550102.1538550102.2%3B%2B__utmz%3D1589599318.1538550102.79.42.utmcsr%3Dgoogle%7Cutmccn%3D(organic)%7Cutmcmd%3Dorganic%7Cutmctr%3DBoneJ%20Usage%20Reporter%3B`
 
-A one-pixel GIF image is requested from Google, with a rather long set
-of parameters. Reported details are:
+A one-pixel GIF image is requested from Google, with a rather long set of parameters. Reported details are:
 
-  - A unique ID which is stored in your ImageJ preferences between
-    sessions
+  - A unique ID which is stored in your ImageJ preferences between sessions
   - Your screen resolution
   - The name of the plugin's Java class
   - The version of BoneJ
   - The first time, last time and current time you ran a BoneJ plugin
   - Your system language and character map
-  - Google also records your IP address as all webservers do in their
-    logs
+  - Google also records your IP address as all webservers do in their logs
   - Some of these values are saved in your preferences
-  - Your operating system and Java version are reported in the user
-    agent ID
+  - Your operating system and Java version are reported in the user agent ID
 
 #### What does the report look like?
 
-Data are collated with the Analytics report already used to track hits
-on bonej.org.
+Data are collated with the Analytics report already used to track hits on bonej.org.
 
 #### For what is the data used?
 
-So far, BoneJ has been supported mainly by grants to scientists. We wish
-to create quantitative reports that detail how much BoneJ is being used
-in the community, so that decisions to fund further development can be
-made rationally.
+So far, BoneJ has been supported mainly by grants to scientists. We wish to create quantitative reports that detail how much BoneJ is being used in the community, so that decisions to fund further development can be made rationally.
 
-In addition, development resources are limited so it is useful to see
-which features are used heavily and can be consolidated, while
-little-used features can be abandoned or made more useful.
+In addition, development resources are limited so it is useful to see which features are used heavily and can be consolidated, while little-used features can be abandoned or made more useful.
 
 #### That is noble but my work is top secret
 
-If you are uncomfortable with this level of data collection then please
-opt out, at the dialog which is prompted on first run, or by running ''
-Edit \> Options \> BoneJ Usage (Modern | Legacy) ''. Hitting Cancel
-(Legacy) or unchecking the box (Modern) will prevent any report from
-being gathered or sent and will also clear any values that were
-previously saved.
+If you are uncomfortable with this level of data collection then please opt out, at the dialog which is prompted on first run, or by running '' Edit \> Options \> BoneJ Usage (Modern | Legacy) ''. Hitting Cancel (Legacy) or unchecking the box (Modern) will prevent any report from being gathered or sent and will also clear any values that were previously saved.
 
-You can opt back in by running '' Edit \> Options \> BoneJ Usage (Modern
-| Legacy)'', checking the box (Modern only) and hitting OK.
+You can opt back in by running '' Edit \> Options \> BoneJ Usage (Modern | Legacy)'', checking the box (Modern only) and hitting OK.
 
 #### Can I see the report?
 
-At the moment the report is kept private. If there is a strong will from
-the user community, who created the data in the first place, the report
-could be made more open. Please feel free to discuss on the user forum.
+At the moment the report is kept private. If there is a strong will from the user community, who created the data in the first place, the report could be made more open. Please feel free to discuss on the user forum.
 
 #### How is it implemented?
 
-You can read the code on Github and in every copy of BoneJ. If you turn
-on ImageJ's debug mode (in '' Edit \> Options \> Misc. '') the URL and
-the GIF response will be logged to ImageJ's log window.
+You can read the code on Github and in every copy of BoneJ. If you turn on ImageJ's debug mode (in '' Edit \> Options \> Misc. '') the URL and the GIF response will be logged to ImageJ's log window.
 
 ## Where is my favourite plug-in?
 
-We have removed some plug-ins from BoneJ. *Neck shaft angle*,
-*Plateness* and *Structure model index* have been discontinued.
-*Interpolate ROIs*, [*Dilate 3D* and *Erode
-3D*](https://imagej.net/3D_Binary_Filters) come pre-packaged with
-ImageJ, so they are no longer included in BoneJ2.
+We have removed some plug-ins from BoneJ. *Neck shaft angle*, *Plateness* and *Structure model index* have been discontinued. *Interpolate ROIs*, [*Dilate 3D* and *Erode 3D*](https://imagej.net/3D_Binary_Filters) come pre-packaged with ImageJ, so they are no longer included in BoneJ2.
 
-Support for *Kontron IMG*, *Scanco ISQ* and *Stratec pQCT* file formats
-has been moved to [SCIFIO](SCIFIO "wikilink"). Just run *Edit \> Options
-\> ImageJ2*, and check *Use SCIFIO when opening files*. When the option
-is enabled, these kinds of files can be opened from *File \> Open* or
-dragging & dropping them like any other format.
+Support for *Kontron IMG*, *Scanco ISQ* and *Stratec pQCT* file formats has been moved to [SCIFIO](SCIFIO "wikilink"). Just run *Edit \> Options \> ImageJ2*, and check *Use SCIFIO when opening files*. When the option is enabled, these kinds of files can be opened from *File \> Open* or dragging & dropping them like any other format.
 
-*Distribution analysis* and other pQCT related tools can now be
-downloaded independently from the [PQCT](PQCT "wikilink") update site.
+*Distribution analysis* and other pQCT related tools can now be downloaded independently from the [PQCT](PQCT "wikilink") update site.
 
 ## Licence
 
-BoneJ2 is free, open-source software. You can redistribute it and/or
-modify it under the terms of the [BSD 2-clause
-licence](https://github.com/bonej-org/BoneJ2/blob/master/LICENCE.md).
-The software is provided "as is" and any warranties are disclaimed. In
-no event shall the copyright holder or contributors be liable.
+BoneJ2 is free, open-source software. You can redistribute it and/or modify it under the terms of the [BSD 2-clause licence](https://github.com/bonej-org/BoneJ2/blob/master/LICENCE.md). The software is provided "as is" and any warranties are disclaimed. In no event shall the copyright holder or contributors be liable.
 
 ## Citation
 
-If you'd like to cite the software, we will soon publish a paper about
-BoneJ experimental. You can read the draft (and send us your feedback)
-as we're writing it [for Wellcome Open Research on
-Overleaf](https://v1.overleaf.com/read/yxdkwpcdkjzj). We recommend you
-cite the specific release used in your research.
+If you'd like to cite the software, we will soon publish a paper about BoneJ experimental. You can read the draft (and send us your feedback) as we're writing it [for Wellcome Open Research on Overleaf](https://v1.overleaf.com/read/yxdkwpcdkjzj). We recommend you cite the specific release used in your research.
 
 ## Funding
 
-The redesign and porting effort to create BoneJ2 was supported by a
-[Wellcome Trust Biomedical Resource and Technology Development
-Grant](https://wellcome.ac.uk/what-we-do/directories/biomedical-resource-technology-development-grants-people-funded).
-Interaction with [SciView](SciView "wikilink") was assisted by a [Royal
-Society International Exchange
-grant](https://royalsociety.org/grants-schemes-awards/grants/international-exchanges/).
+The redesign and porting effort to create BoneJ2 was supported by a [Wellcome Trust Biomedical Resource and Technology Development Grant](https://wellcome.ac.uk/what-we-do/directories/biomedical-resource-technology-development-grants-people-funded). Interaction with [SciView](SciView "wikilink") was assisted by a [Royal Society International Exchange grant](https://royalsociety.org/grants-schemes-awards/grants/international-exchanges/).

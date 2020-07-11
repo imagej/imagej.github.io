@@ -8,37 +8,24 @@ categories:
 description: test description
 ---
 
-{% capture maintainer %} {% include person content="Eglinger" %} {%
-endcapture %}
 
-{% capture source %} {% include github org="fmi-basel" repo="pixfret" %}
-{% endcapture %} {% include sidebox-right software='Fiji' name='PixFRET'
-author='Jerome Feige, Daniel Sage, Walter Wahli, Beatrice Desvergne,
-Laurent Gelman' maintainer=maintainer source=source released='2005'
-version='1.5.2' status='stable'
-category='[Analysis](:Category:Analysis "wikilink")' %}
+{% capture maintainer%}
+{% include person content='Eglinger' %}
+{% endcapture %}
+
+{% capture source%}
+{% include github org='fmi-basel' repo='pixfret' %}
+{% endcapture %}
+{% include info-box software='Fiji' name='PixFRET' author='Jerome Feige, Daniel Sage, Walter Wahli, Beatrice Desvergne, Laurent Gelman' maintainer=maintainer source=source released='2005' latest-version='1.5.2' status='stable' category='[Analysis](:Category:Analysis "wikilink")' %}
 
 ## Installation
 
-To install the plugin, activate the **PixFRET** [update
-site](How_to_follow_a_3rd_party_update_site "wikilink") and restart
-Fiji.
+To install the plugin, activate the **PixFRET** [update site](How_to_follow_a_3rd_party_update_site "wikilink") and restart Fiji.
 
 ## Usage
 
-Please refer to the [user guide
-(PDF)](Media:PixFRET_userguide.pdf "wikilink").
+Please refer to the [user guide (PDF)](Media:PixFRET_userguide.pdf "wikilink").
 
 ## Publication
 
-  - 
-{% capture includecontent %} last = Feige| first = J. | last2 = Sage |
-first2 = D. | last3 = Wahli| first3 = W. | last4 = Desvergne| first4 =
-B. | last5 = Gelman| first5 = L. | year = 2005 | journal = Microscopy
-Research and Technique | url =
-http://bigwww.epfl.ch/publications/feige0501.html | title = PixFRET,
-an ImageJ Plug-in for FRET Calculation That Can Accommodate Variations
-in Spectral Bleed-throughs | volume = 68(1) | pmid = | doi =
-10.1002/jemt.20215 {% endcapture %}
-
-{% include citation content=includecontent %}
+  - {% include citation last='Feige' first='J.' last2='Sage' first2='D.' last3='Wahli' first3='W.' last4='Desvergne' first4='B.' last5='Gelman' first5='L.' year='2005' journal='Microscopy Research and Technique' url='http://bigwww.epfl.ch/publications/feige0501.html' title='PixFRET, an ImageJ Plug-in for FRET Calculation That Can Accommodate Variations in Spectral Bleed-throughs' volume='68(1)' pmid='' doi='10.1002/jemt.20215' %}

@@ -22,6 +22,7 @@
 2014-07-11_-_Fiji_won't_quit!.mw
 2014-07-11_-_Fiji_won't_quit.mw
 2016-04-19_-_Writing_ImageJ2_Plugins:_A_Beginner's_Perspective.mw
+2016-07-21_-_KNIME_Image_Processing_hackathon.mw
 2D_Histogram.mw
 3D_Viewer:_4D_Viewer.mw
 3D_Viewer:_Apply_Transformation.mw
@@ -2774,6 +2775,7 @@ Median_(3D).mw
 Microtubule_polarity_and_(+)_end_vs._(-)_end_tracking.mw
 Miji.mw
 Minimum_(3D).mw
+Minimum_Splits_and_Mergers_Warping_error.mw
 Neuroanatomy:External_Resources.mw
 Ops_Deconvolution.mw
 Overview_of_Fiji's_source_code.mw
@@ -2801,6 +2803,7 @@ SPIM_Registration_on_cluster_(deprecated).mw
 Sandbox:Test.mw
 Save_Particles_(.tif_file_-_fast).mw
 Script_Parameters.mw
+Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012.mw
 Select_Bounding_Box_(guess_background_color).mw
 Shape_Index_Map.mw
 Shepp-Logan_Phantom_(Plugin).mw
@@ -3156,6 +3159,7 @@ Template:Yes.mw
 Template:·.mw
 Temporal-Color_Code.mw
 Test_Block_Matching_Parameters.mw
+Topology_preserving_warping_error.mw
 Trainable_Segmentation_Plugin_(deprecated).mw
 TrakEM2_(blank).mw
 TrakEM2_(from_template).mw

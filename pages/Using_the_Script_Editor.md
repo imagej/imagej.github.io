@@ -8,19 +8,15 @@ categories: Plugins,Tutorials,Scripting
 description: test description
 ---
 
-{% capture maintainer %} {% include person content="Rueden" %} {%
-endcapture %}
 
-{% capture source %} {% include github org="scijava"
-repo="script-editor"
-source="org/scijava/ui/swing/script/ScriptEditor.java" %} {% endcapture
-%} {% include sidebox-right name='Script Editor' software='ImageJ'
-author='Johannes Schindelin, Sumit Dubey (Google Summer of Code 2009)'
-maintainer=maintainer source=source released='11 Sep 2008'
-status='active' %}The script editor is an invaluable help when writing
-scripts in any of ImageJ's supported
-[languages](Scripting_comparisons "wikilink").{% include learn
-content='scripting' %}
+{% capture maintainer%}
+{% include person content='Rueden' %}
+{% endcapture %}
+
+{% capture source%}
+{% include github org='scijava' repo='script-editor' source='org/scijava/ui/swing/script/ScriptEditor.java' %}
+{% endcapture %}
+{% include info-box name='Script Editor' software='ImageJ' author='Johannes Schindelin, Sumit Dubey (Google Summer of Code 2009)' maintainer=maintainer source=source released='11 Sep 2008' status='active' %}The script editor is an invaluable help when writing scripts in any of ImageJ's supported [languages](Scripting_comparisons "wikilink").{% include learn content='scripting' %}
 
 ## Features
 
@@ -40,8 +36,7 @@ content='scripting' %}
 
   - Syntax highlighting
   - Output console
-  - Git integration (file being edited must be part of a
-    [Git](Git "wikilink") repository)
+  - Git integration (file being edited must be part of a [Git](Git "wikilink") repository)
   - Language specific [templates](Script_Templates "wikilink")
   - Find and replace using regex patterns
   - Automatic brace highlighting
@@ -54,9 +49,7 @@ content='scripting' %}
 <!-- end list -->
 
   - Organization of `import` declarations
-  - Access to online documentation
-    ([Javadocs](http://javadoc.imagej.net), [Built-in Macro
-    Functions](http://imagej.nih.gov/ij/developer/macro/functions.html))
+  - Access to online documentation ([Javadocs](http://javadoc.imagej.net), [Built-in Macro Functions](http://imagej.nih.gov/ij/developer/macro/functions.html))
   - Access to source code in `.jar` files
 
 <!-- end list -->
@@ -77,47 +70,32 @@ To get started, start up the script editor:
 
 ![Script-Editor-new.jpg](/images/pages/Script-Editor-new.jpg "Script-Editor-new.jpg")"
 
-There is also the keyboard shortcut {% include key content='\[' %} (open
-square bracket) to open the editor.
+There is also the keyboard shortcut {% include key content='\[' %} (open square bracket) to open the editor.
 
 ### Choosing a language
 
 Then choose a language from the language menu:
 
-![Script-Editor-choose-language.jpg](/images/pages/Script-Editor-choose-language.jpg
-"Script-Editor-choose-language.jpg")"
+![Script-Editor-choose-language.jpg](/images/pages/Script-Editor-choose-language.jpg "Script-Editor-choose-language.jpg")"
 
-Now you can write your script. In this tutorial, Jython was chosen as
-scripting language, but the process is really the same for all scripting
-languages.
+Now you can write your script. In this tutorial, Jython was chosen as scripting language, but the process is really the same for all scripting languages.
 
-![Script-Editor-first-script.jpg](/images/pages/Script-Editor-first-script.jpg
-"Script-Editor-first-script.jpg")"
+![Script-Editor-first-script.jpg](/images/pages/Script-Editor-first-script.jpg "Script-Editor-first-script.jpg")"
 
 ### Running the script
 
-Once you are satisfied with the script, run it. This does not require
-saving, but of course you should save your script later when it works.
+Once you are satisfied with the script, run it. This does not require saving, but of course you should save your script later when it works.
 
 ![Script-Editor-run.jpg](/images/pages/Script-Editor-run.jpg "Script-Editor-run.jpg")"
 
-Note that while the script is running, the window title shows the
-tell-tale *(Running)*.
+Note that while the script is running, the window title shows the tell-tale *(Running)*.
 
-You can use all of ImageJ's classes right away. Here is an example that
-shows a dialog where the user can input a number. For details how to
-write dialogs in the different scripting languages, see [Scripting
-comparisons](Scripting_comparisons "wikilink")
+You can use all of ImageJ's classes right away. Here is an example that shows a dialog where the user can input a number. For details how to write dialogs in the different scripting languages, see [Scripting comparisons](Scripting_comparisons "wikilink")
 
-![Script-Editor-dialog.jpg](/images/pages/Script-Editor-dialog.jpg
-"Script-Editor-dialog.jpg")"
+![Script-Editor-dialog.jpg](/images/pages/Script-Editor-dialog.jpg "Script-Editor-dialog.jpg")"
 
 ## Further reading
 
-See the [Scripting Help](Scripting_Help "wikilink") page for an
-introduction to scripting. For more information about each specific
-language, see the Languages section of top right sidebar.
+See the [Scripting Help](Scripting_Help "wikilink") page for an introduction to scripting. For more information about each specific language, see the Languages section of top right sidebar.
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Tutorials](Category:Tutorials "wikilink")
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Tutorials](Category:Tutorials "wikilink") [Category:Scripting](Category:Scripting "wikilink")

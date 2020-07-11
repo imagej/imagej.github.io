@@ -8,49 +8,32 @@ categories: Plugins,Import-Export
 description: test description
 ---
 
-{% include menu-formats %}{% include sidebox-right software='ImageJ'
-name='OlympusViewer Plugin' author='OLYMPUS CORPORATION
-(olympus-imagejplugin at ot.olympus.co.jp)' maintainer='' filename=''
-source='The source code of plugin is in Olympus\_Viewer.jar. The source
-code of native library is not provided.' released='2015/12/09: First
-version Ver1.1.1' version='2017/09/22 Ver2.2.1' status=''
-category='[:Category:Import-Export](:Category:Import-Export "wikilink")'
-website='' %}This plugin can load Olympus vsi/oir/omp2info file formats
-and show some meta data.
+{% include menu-formats%}
+{% include info-box software='ImageJ' name='OlympusViewer Plugin' author='OLYMPUS CORPORATION (olympus-imagejplugin at ot.olympus.co.jp)' maintainer='' filename='' source='The source code of plugin is in Olympus\_Viewer.jar. The source code of native library is not provided.' released='2015/12/09: First version Ver1.1.1' latest-version='2017/09/22 Ver2.2.1' status='' category='[:Category:Import-Export](:Category:Import-Export "wikilink")' website='' %}This plugin can load Olympus vsi/oir/omp2info file formats and show some meta data.
 
-{% include toc %}
+{% include toc%}
+
 
 ## Installation
 
-Please see also [installation
-manual](http://www.olympus-lifescience.com/OlympusImageJPlugin/HowToInstallOlympusViewerPlugin).
+Please see also [installation manual](http://www.olympus-lifescience.com/OlympusImageJPlugin/HowToInstallOlympusViewerPlugin).
 
 Windows
 
-1.  Download OlympusViewer-win.zip
-    [here](http://www.olympus-lifescience.com/OlympusImageJPlugin/OlympusViewer_Win)
+1.  Download OlympusViewer-win.zip [here](http://www.olympus-lifescience.com/OlympusImageJPlugin/OlympusViewer_Win)
 2.  Extract the zip file.
-3.  Execute OlympusViewer-win.exe. This file is in self-extracting
-    format.
-4.  If you agree to our end user license agreement, extract it to your
-    specified folder.
+3.  Execute OlympusViewer-win.exe. This file is in self-extracting format.
+4.  If you agree to our end user license agreement, extract it to your specified folder.
 5.  Unzip the OlympusViewer-package.zip
-6.  Install vs2008 runtime. The runtime is in
-    OlympusViewer-package/WinRuntime. If you use 32bit OS, install
-    vcredist\_x86.exe. If you use 64bit OS, install vcredist\_x64.exe
-7.  Copy "OlympusViewer" folder in "OlympusViewer-package" folder to the
-    plugins folder of your ImageJ directory. If ImageJ plugin folder
-    already has OlympusViewer folder, delete the folder before copying.
+6.  Install vs2008 runtime. The runtime is in OlympusViewer-package/WinRuntime. If you use 32bit OS, install vcredist\_x86.exe. If you use 64bit OS, install vcredist\_x64.exe
+7.  Copy "OlympusViewer" folder in "OlympusViewer-package" folder to the plugins folder of your ImageJ directory. If ImageJ plugin folder already has OlympusViewer folder, delete the folder before copying.
 
 Mac
 
-1.  Download OlympusViewer-mac.dmg
-    [here](http://www.olympus-lifescience.com/OlympusImageJPlugin/OlympusViewer_Mac)
+1.  Download OlympusViewer-mac.dmg [here](http://www.olympus-lifescience.com/OlympusImageJPlugin/OlympusViewer_Mac)
 2.  Double click the dmg file.
 3.  If you agree to our end user license agreement, extract it.
-4.  Copy "OlympusViewer-Ver2.1.1" folder to the plugins folder of your
-    ImageJ directory. If ImageJ plugin folder already has OlympusViewer
-    folder, delete the folder before copying.
+4.  Copy "OlympusViewer-Ver2.1.1" folder to the plugins folder of your ImageJ directory. If ImageJ plugin folder already has OlympusViewer folder, delete the folder before copying.
 
 ## How to use
 
@@ -70,13 +53,11 @@ Drag & Drop (ver2.1.1-)
 
 Virtual stack mode for large images (ver2.2.1-)
 
-1.  Select a menu item ( Plugins -\> OlympusViewer -\> DragDrop -\> Use
-    Virtual Stack for large images )
+1.  Select a menu item ( Plugins -\> OlympusViewer -\> DragDrop -\> Use Virtual Stack for large images )
 2.  Drop a image file.
 
 ## See Also
 
 This plugin uses jai-imageio.
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Import-Export](Category:Import-Export "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Import-Export](Category:Import-Export "wikilink")

@@ -8,22 +8,12 @@ categories: Plugins,Image annotation,Unmaintained
 description: test description
 ---
 
-{% capture author %} {% include person content="Rasband" %} {%
-endcapture %} {% include sidebox-right software='ImageJ' name='Grid'
-author=author
-filename='[Grid\_.class](https://imagej.net/plugins/download/Grid_.class)
-(5,575 Bytes)'
-source='[Grid\_.java](https://imagej.net/plugins/download/Grid_.java)
-(5,123 Bytes)' released='25 April 2001' version='02 July 2007'
-status='active' category='[Image
-annotation](:Category:Image_annotation "wikilink")'
-website='[1](https://imagej.net/plugins/grid.html)' %}
 
-This plugin creates a non-destructive grid of lines , crosses or points
-on the current image or stack. You can specify the the grid type (lines,
-crosses or points), the area per point (in pixels or physical units),
-and the color.
+{% capture author%}
+{% include person content='Rasband' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='Grid' author=author filename=' [Grid\_.class](https://imagej.net/plugins/download/Grid_.class) (5,575 Bytes)' source=' [Grid\_.java](https://imagej.net/plugins/download/Grid_.java) (5,123 Bytes)' released='25 April 2001' latest-version='02 July 2007' status='active' category='[Image annotation](:Category:Image_annotation "wikilink")' website='https://imagej.net/plugins/grid.html' %}
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Image
-annotation](Category:Image_annotation "wikilink")
-[Category:Unmaintained](Category:Unmaintained "wikilink")
+This plugin creates a non-destructive grid of lines , crosses or points on the current image or stack. You can specify the the grid type (lines, crosses or points), the area per point (in pixels or physical units), and the color.
+
+[Category:Plugins](Category:Plugins "wikilink") [Category:Image annotation](Category:Image_annotation "wikilink") [Category:Unmaintained](Category:Unmaintained "wikilink")

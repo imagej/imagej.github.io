@@ -8,16 +8,10 @@ categories:
 description: test description
 ---
 
-Please see [this list on the Image.sc
-Forum](https://forum.image.sc/t/upcoming-image-analysis-events/19912) of
-upcoming conferences, courses, and other events in the scientific
-imaging community.
+Please see [this list on the Image.sc Forum](https://forum.image.sc/t/upcoming-image-analysis-events/19912) of upcoming conferences, courses, and other events in the scientific imaging community.
 
 ## Past events
 
-  - [Presentations](Presentations "wikilink") – from past conferences
-    and workshops
-  - [Conferences](Conferences "wikilink") – past conferences focused on
-    ImageJ
-  - [Hackathons](Hackathons "wikilink") – past software developer
-    gatherings
+  - [Presentations](Presentations "wikilink") – from past conferences and workshops
+  - [Conferences](Conferences "wikilink") – past conferences focused on ImageJ
+  - [Hackathons](Hackathons "wikilink") – past software developer gatherings

@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [Architecture\#Extensibility](Architecture#Extensibility "wikilink")
+1.  REDIRECT [Architecture\#Extensibility](Architecture#Extensibility "wikilink")

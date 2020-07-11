@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Multithreaded Image Processing in
-    Clojure](Multithreaded_Image_Processing_in_Clojure "wikilink")
+1.  REDIRECT [Multithreaded Image Processing in Clojure](Multithreaded_Image_Processing_in_Clojure "wikilink")

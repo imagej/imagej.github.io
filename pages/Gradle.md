@@ -8,18 +8,13 @@ categories:
 description: test description
 ---
 
-[Gradle](http://gradle.org/getting-started-gradle-java/) is an
-open-source build system using a Groovy-based script syntax as a
-succinct alternative to the XML of [Ant](http://ant.apache.org/) or
-[Maven](Maven "wikilink").
+[Gradle](http://gradle.org/getting-started-gradle-java/) is an open-source build system using a Groovy-based script syntax as a succinct alternative to the XML of [Ant](http://ant.apache.org/) or [Maven](Maven "wikilink").
 
-The ImageJ core artifacts are built with Maven, but can also be consumed
-in a Gradle build script.
+The ImageJ core artifacts are built with Maven, but can also be consumed in a Gradle build script.
 
 ## Sample ImageJ build.gradle
 
-Contributed<sup>[1](https://github.com/imagej/tutorials/issues/24)</sup>
-by {% include person content='reckbo' %}
+Contributed<sup>[1](https://github.com/imagej/tutorials/issues/24)</sup> by {% include person content='reckbo' %}
 
 ``` groovy
 buildscript {

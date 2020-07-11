@@ -8,34 +8,17 @@ categories: Jython,Scripting
 description: test description
 ---
 
-Here is a [Jython](:Category:Jython "wikilink") script that does the
-analysis of a FRAP movie. It was developed during the [Image Processing
-School Pilsen 2009](Image_Processing_School_Pilsen_2009 "wikilink"), and
-updated to modern Fiji.
+Here is a [Jython](:Category:Jython "wikilink") script that does the analysis of a FRAP movie. It was developed during the [Image Processing School Pilsen 2009](Image_Processing_School_Pilsen_2009 "wikilink"), and updated to modern Fiji.
 
-Once the user has loaded a good FRAP movie, [well aligned with no
-drift](Correcting_drift_in_FRAP_experiments‎ "wikilink"), and has
-specified the ROI for the FRAP zone and another for the control zone, it
-should be possible to automate the analysis of the FRAP curve. This is
-what this script aims to do:
+Once the user has loaded a good FRAP movie, [well aligned with no drift](Correcting_drift_in_FRAP_experiments‎ "wikilink"), and has specified the ROI for the FRAP zone and another for the control zone, it should be possible to automate the analysis of the FRAP curve. This is what this script aims to do:
 
   - Load a movie
-  - Draw a ROI for the FRAP zone, and store it as the **first** ROI in
-    the ROI manager (by pressing the {% include key content='T' %} key)
+  - Draw a ROI for the FRAP zone, and store it as the **first** ROI in the ROI manager (by pressing the {% include key content='T' %} key)
   - Do the same for a control zone, out of the FRAP zone
 
-Then load this script in the [Script Editor](Script_Editor "wikilink"),
-choose {% include bc content='Language | Python'%}, and run it. It will
-measure the FRAP intensity for all frames, try to find the FRAP frame
-(by finding the one with the minimal FRAP ROI intensity), and fit the
-FRAP curve by an increasing exponential. The parameters of the fit can
-be then read in the log window, and the FRAP curve and its fit are
-plotted. Careful:the background is taken as the intensity in the FRAP
-region just after the FRAP pulse.
+Then load this script in the [Script Editor](Script_Editor "wikilink"), choose {% include bc content='Language | Python'%}, and run it. It will measure the FRAP intensity for all frames, try to find the FRAP frame (by finding the one with the minimal FRAP ROI intensity), and fit the FRAP curve by an increasing exponential. The parameters of the fit can be then read in the log window, and the FRAP curve and its fit are plotted. Careful:the background is taken as the intensity in the FRAP region just after the FRAP pulse.
 
-This script uses only ImageJ functions for everything, but could be
-tuned to use more fancy Fiji-included plotting library, such as
-JFreeChart.
+This script uses only ImageJ functions for everything, but could be tuned to use more fancy Fiji-included plotting library, such as JFreeChart.
 
 ``` python
 import java.awt.Color as Color
@@ -167,5 +150,4 @@ str2 = "Mobile fraction = %.1f %%" % (100 * mobile_fraction)
 IJ.log( str2 )
 ```
 
-[Category:Jython](Category:Jython "wikilink")
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Jython](Category:Jython "wikilink") [Category:Scripting](Category:Scripting "wikilink")

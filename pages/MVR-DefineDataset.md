@@ -38,27 +38,21 @@ This dialog asks you several facts:
 
   - image directory
   - image file pattern
-      - there are 3 different variables. They are used to identify the
-        images. All of them can have leading zeros, e.g. {aaa} for a
-        angle of 045 degrees or {tttt} for 0014 as a time point
+      - there are 3 different variables. They are used to identify the images. All of them can have leading zeros, e.g. {aaa} for a angle of 045 degrees or {tttt} for 0014 as a time point
           - {t} - time points
           - {c} - channel
           - {a} - angles
-  - time points, channels and angles can be given as a comma seperated
-    list or in a more elegant way, {start}-{end}:{interval}
+  - time points, channels and angles can be given as a comma seperated list or in a more elegant way, {start}-{end}:{interval}
   - calibration can be either read from file or entered by hand
-  - data container, smaller image stacks can use **ArrayImg**, bigger
-    one should use **CellImg**
+  - data container, smaller image stacks can use **ArrayImg**, bigger one should use **CellImg**
 
 ![MVR\_define3.png](/images/pages/MVR_define3.png "MVR_define3.png")"
 
-In case you selected the option, a list of found files will be presented
-![MVR\_define4.png](/images/pages/MVR_define4.png "MVR_define4.png")"
+In case you selected the option, a list of found files will be presented ![MVR\_define4.png](/images/pages/MVR_define4.png "MVR_define4.png")"
 
 ## Define Dataset 3/3
 
-Finally the plugin shows you the calibration it read from the files or
-asks for it. ![MVR\_define5.png](/images/pages/MVR_define5.png "MVR_define5.png")"
+Finally the plugin shows you the calibration it read from the files or asks for it. ![MVR\_define5.png](/images/pages/MVR_define5.png "MVR_define5.png")"
 
 ## Log File Output
 

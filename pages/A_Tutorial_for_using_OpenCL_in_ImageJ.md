@@ -8,30 +8,17 @@ categories: Outdated
 description: test description
 ---
 
-{% include warning-sidebox-right content='This tutorial was written in
-2010-11, and contains out-of-date or no-longer-accurate information. A
-potential alternative for using OpenCL in ImageJ is
-[CLIJ](https://imagej.net/Clij).' %}
+{% include warning-box content='This tutorial was written in 2010-11, and contains out-of-date or no-longer-accurate information. A potential alternative for using OpenCL in ImageJ is [CLIJ](https://imagej.net/Clij).' %}
 
-This tutorial is meant to help you leverage OpenCL from Java for use
-with ImageJ.
+This tutorial is meant to help you leverage OpenCL from Java for use with ImageJ.
 
 ## Background
 
-To use OpenCL from Java in ImageJ we rely on
-[JOCL](http://jogamp.org/deployment/webstart/). JOCL is written on top
-of a low level JNI API to make using OpenCL a bit easier. The OpenCL
-code you write can also leverage JOCL to accelerate execution of ImageJ
-plugins from Java. We have created an [OpenCL
-deconvolution](https://github.com/uw-loci/opencl-decon) example to
-demonstrate compute acceleration using OpenCL (both locally and remotely
-as a binary web service).
+To use OpenCL from Java in ImageJ we rely on [JOCL](http://jogamp.org/deployment/webstart/). JOCL is written on top of a low level JNI API to make using OpenCL a bit easier. The OpenCL code you write can also leverage JOCL to accelerate execution of ImageJ plugins from Java. We have created an [OpenCL deconvolution](https://github.com/uw-loci/opencl-decon) example to demonstrate compute acceleration using OpenCL (both locally and remotely as a binary web service).
 
 ## Setting up the Development Machine
 
-We set up an Ubuntu based development machine for OpenCL development and
-testing. OSX 10.6, Windows 64/32, and Linux 64/32 pass the tests and are
-supported by this package. Here are the steps for setting up Ubuntu:
+We set up an Ubuntu based development machine for OpenCL development and testing. OSX 10.6, Windows 64/32, and Linux 64/32 pass the tests and are supported by this package. Here are the steps for setting up Ubuntu:
 
   - Obtain an ISO for Ubuntu 10.04
   - Install Ubuntu on the target machine.
@@ -48,22 +35,17 @@ supported by this package. Here are the steps for setting up Ubuntu:
 
 ## Setting up OpenCL
 
-You will need to install OpenCL for your OpenCL enabled hardware if it
-does not come installed as part of the OS.
+You will need to install OpenCL for your OpenCL enabled hardware if it does not come installed as part of the OS.
 
 ### Setting up OpenCL for ATI
 
-If you have ATI GPU hardware, check out [these
-instructions](http://developer.amd.com/gpu/AMDAPPSDK/downloads/Pages/default.aspx).
+If you have ATI GPU hardware, check out [these instructions](http://developer.amd.com/gpu/AMDAPPSDK/downloads/Pages/default.aspx).
 
 ### Setting up OpenCL for NVidia
 
-For NVidia hardware, install development drivers, CUDA Toolkit, and GPU
-Computing SDK code samples by following [these installation
-instructions](http://developer.download.nvidia.com/compute/cuda/3_2_prod/docs/Getting_Started_Linux.pdf).
+For NVidia hardware, install development drivers, CUDA Toolkit, and GPU Computing SDK code samples by following [these installation instructions](http://developer.download.nvidia.com/compute/cuda/3_2_prod/docs/Getting_Started_Linux.pdf).
 
-Use the wget tool for downloading the three needed install files from
-NVidia's download site.
+Use the wget tool for downloading the three needed install files from NVidia's download site.
 
 ``` shell
 wget http://developer.download.nvidia.com/compute/cuda/\
@@ -90,16 +72,14 @@ sudo sh cudatoolkit_3.2.16_linux_64_ubuntu10.04.run
 sh gpucomputingsdk_3.2.16_linux.run
 ```
 
-Per the installation instructions, we setup the environment variables
-(in `.bashrc`):
+Per the installation instructions, we setup the environment variables (in `.bashrc`):
 
 ``` shell
 export LD_LIBRARY_PATH="/usr/local/cuda/lib:/usr/local/cuda/lib64"
 export PATH="/usr/local/cuda/bin"
 ```
 
-Test the installation by compiling and running a few of the NVidia
-provided OpenCL samples by changing directories to:
+Test the installation by compiling and running a few of the NVidia provided OpenCL samples by changing directories to:
 
 ``` shell
 /NVIDIA_GPU_COMPUTING_SDK/C
@@ -169,8 +149,7 @@ to run the OpenCL Bandwidth sample using:
 
 ## Setting up Eclipse and needed plugins on Ubuntu
 
-To configure the development environment, we started by installing the
-JRE with:
+To configure the development environment, we started by installing the JRE with:
 
 ``` shell
 sudo apt-get install openjdk-6-jdk
@@ -184,8 +163,7 @@ http://www.eclipse.org/downloads/download.php
 
 and following the Eclipse installation steps.
 
-We added the SVN plugin to Eclipse by clicking on Help-\> Install New
-Software and adding the SVN adapter site:
+We added the SVN plugin to Eclipse by clicking on Help-\> Install New Software and adding the SVN adapter site:
 
 ``` shell
 http://subclipse.tigris.org/update_1.6.x
@@ -193,9 +171,7 @@ http://subclipse.tigris.org/update_1.6.x
 
 ## Downloading and running the ImageJ OpenCL examples
 
-The ImageJ OpenCL examples can be imported as an Eclipse project by
-right clicking in the Package Explorer window and choose Import. Select
-Git project and add the site:
+The ImageJ OpenCL examples can be imported as an Eclipse project by right clicking in the Package Explorer window and choose Import. Select Git project and add the site:
 
 ``` shell
 https://github.com/uw-loci/opencl-decon
@@ -205,41 +181,19 @@ Import the branch and assign a general project name like imagej-opencl.
 
 The folder structure of the source consists of the following:
 
-  - **src** - Java and OpenCL source files (extension .cl) Notice the
-    files fht.cl and sobel.cl in the src directory. When executed, the
-    Java code in provided in the examples compile these the OpenCL for
-    execution. Note: Runtime compilation of the OpenCL source files
-    allows execution on any potential OpenCL enabled device.
-  - **sourcedata** - (Point Spread Function) PSF and 3D data used as a
-    small sample data set for the FHT3D Example.
-  - **lib** - libraries needed for classes using JOCL, ImageJ, and
-    Hessian 4.0.7
+  - **src** - Java and OpenCL source files (extension .cl) Notice the files fht.cl and sobel.cl in the src directory. When executed, the Java code in provided in the examples compile these the OpenCL for execution. Note: Runtime compilation of the OpenCL source files allows execution on any potential OpenCL enabled device.
+  - **sourcedata** - (Point Spread Function) PSF and 3D data used as a small sample data set for the FHT3D Example.
+  - **lib** - libraries needed for classes using JOCL, ImageJ, and Hessian 4.0.7
 
-We have included the necessary JOCL native libraries for Windows 32/64,
-Apple, and Linux 32/64 platforms inside this directory. To use OpenCL
-from Java in ImageJ we leverage JOCL. JOCL uses JNI to make calls into
-the OpenCL API. The OpenCL code you write can also leverage JOCL to
-accelerate execution of ImageJ plugins from Java. Since each OS has
-different native JOCL native libraries, the runtime environment must be
-configured such that the Java code can load the needed native libraries.
+We have included the necessary JOCL native libraries for Windows 32/64, Apple, and Linux 32/64 platforms inside this directory. To use OpenCL from Java in ImageJ we leverage JOCL. JOCL uses JNI to make calls into the OpenCL API. The OpenCL code you write can also leverage JOCL to accelerate execution of ImageJ plugins from Java. Since each OS has different native JOCL native libraries, the runtime environment must be configured such that the Java code can load the needed native libraries.
 
 ## Understanding platform-specific JOCL native libraries
 
-For these samples, three native libraries are needed: gluegen-rt, jocl,
-and JOCL-'platform'-'arch'. If you look in the lib folder, you will find
--natives-xyz.jar files containing the respective libraries. You need to
-unzip each of the three jar files and copy the dynamic files (.so,
-.dylib, or .dll) into the parent directory if they are not already
-present. Notice the below example where the `libgluegen-rt.dylib`,
-`libJOCL-apple-x86_64.dylib`, and `libjocl.dylib` files are in the
-platform specific directory.
+For these samples, three native libraries are needed: gluegen-rt, jocl, and JOCL-'platform'-'arch'. If you look in the lib folder, you will find -natives-xyz.jar files containing the respective libraries. You need to unzip each of the three jar files and copy the dynamic files (.so, .dylib, or .dll) into the parent directory if they are not already present. Notice the below example where the `libgluegen-rt.dylib`, `libJOCL-apple-x86_64.dylib`, and `libjocl.dylib` files are in the platform specific directory.
 
 ![2011-opencl-01.png](/images/pages/2011-opencl-01.png "2011-opencl-01.png")"
 
-Then ensure that the platform specific jar is exported during the
-project build. For example notice that the JOCL-0-1.4-beta1.jar file is
-referenced in the project. (To see this menu right click the project and
-choose Properties -\> Java Build Path -\> Libraries.)
+Then ensure that the platform specific jar is exported during the project build. For example notice that the JOCL-0-1.4-beta1.jar file is referenced in the project. (To see this menu right click the project and choose Properties -\> Java Build Path -\> Libraries.)
 
 ![2011-opencl-00.png](/images/pages/2011-opencl-00.png "2011-opencl-00.png")"
 
@@ -247,80 +201,39 @@ Finally, ensure that the platform specific files are exported:
 
 ![2011-opencl-02.png](/images/pages/2011-opencl-02.png "2011-opencl-02.png")"
 
-Start exploring the examples by viewing the developer comments in the
-file `src/publication/SobelFilterExample.java`. Notice the `Main()`
-method calls `run()` which use an `awt.Image` type as an input
-parameter. Modify and run the `Main()` method as a Java application and
-adjust the VM Arguments (E.g. `-Xmx1024m`) if needed.
+Start exploring the examples by viewing the developer comments in the file `src/publication/SobelFilterExample.java`. Notice the `Main()` method calls `run()` which use an `awt.Image` type as an input parameter. Modify and run the `Main()` method as a Java application and adjust the VM Arguments (E.g. `-Xmx1024m`) if needed.
 
 ## SobelFilter example
 
-Without modification, `SobelFilterExample.java` loads an image from a
-web server, process it locally using OpenCL, and displays the results.
-There is nothing novel about this example. It simply allows runtime
-testing of several system configuration steps to ensure working
-configuration of JOCL and OpenCL native libraries. Modify this example
-to suite your needs, but please ensure proper JOCL and OpenCL
-configuration before proceeding.
+Without modification, `SobelFilterExample.java` loads an image from a web server, process it locally using OpenCL, and displays the results. There is nothing novel about this example. It simply allows runtime testing of several system configuration steps to ensure working configuration of JOCL and OpenCL native libraries. Modify this example to suite your needs, but please ensure proper JOCL and OpenCL configuration before proceeding.
 
 ## Understanding ImageJ + OpenCL
 
-Working within ImageJ: If developing an ImageJ plugin using OpenCL
-realize that programmatic control is passed to your plugin inside the
-`PlugIn` (or `PluginFilter`) `run()` method. An example of this can be
-found in `src.demos.OpenCL_SobelFilter.java`. For this plugin to run
-within ImageJ, the JOCL jars and native libraries respective to the
-target platform will need to be available by the ImageJ class loader.
-The supporting JOCL native libraries can be copied into the plug-in
-directory within ImageJ to allow plugin implementations using OpenCL to
-reference the native libraries provided by the OpenCL installation.
+Working within ImageJ: If developing an ImageJ plugin using OpenCL realize that programmatic control is passed to your plugin inside the `PlugIn` (or `PluginFilter`) `run()` method. An example of this can be found in `src.demos.OpenCL_SobelFilter.java`. For this plugin to run within ImageJ, the JOCL jars and native libraries respective to the target platform will need to be available by the ImageJ class loader. The supporting JOCL native libraries can be copied into the plug-in directory within ImageJ to allow plugin implementations using OpenCL to reference the native libraries provided by the OpenCL installation.
 
 ## ImageJ OpenCL: An incremental approach to applying OpenCL
 
-Now that you have demonstrated use of OpenCL from Java and within
-ImageJ, you may wish to see a compute intensive example demonstrating
-modification of an existing Java implementation that delegates a portion
-of its implementation to OpenCL. Take a look at the developer comments
-in the `FHT3D_3D_Deconvolution.java` example to see what steps are used
-for brokering data between Java and OpenCL between steps within an
-algorithm's implementation.
+Now that you have demonstrated use of OpenCL from Java and within ImageJ, you may wish to see a compute intensive example demonstrating modification of an existing Java implementation that delegates a portion of its implementation to OpenCL. Take a look at the developer comments in the `FHT3D_3D_Deconvolution.java` example to see what steps are used for brokering data between Java and OpenCL between steps within an algorithm's implementation.
 
-The approach used to start delegating to OpenCL from an existing Java
-implementation:
+The approach used to start delegating to OpenCL from an existing Java implementation:
 
-1.  Assess the performance of the existing implementation to identify
-    the most compute intensive region of code
+1.  Assess the performance of the existing implementation to identify the most compute intensive region of code
 2.  Develop a test data set before and after that region
 3.  Write OpenCL code that replaces the compute intensive region
-4.  Test to ensure the new OpenCL code generates the same results using
-    the test data
-5.  Add conditional delegation logic to handle runtime compute
-    capabilities
+4.  Test to ensure the new OpenCL code generates the same results using the test data
+5.  Add conditional delegation logic to handle runtime compute capabilities
 
 ## OpenCL ImageJ plugins following enterprise java patterns
 
-Finally, some users and academic labs are building "[GPU
-Supercomputers](http://fastra2.ua.ac.be/)" to expose compute resources
-to a wide range of applications running locally. In this case, you wish
-to leverage to look at the `FHTEJBService` and
-`Iterative_Deconvolve_3D_WS` classes for an example on how to remotely
-serve up the your GPU accelerated resources using open source J2EE
-technologies.
+Finally, some users and academic labs are building "[GPU Supercomputers](http://fastra2.ua.ac.be/)" to expose compute resources to a wide range of applications running locally. In this case, you wish to leverage to look at the `FHTEJBService` and `Iterative_Deconvolve_3D_WS` classes for an example on how to remotely serve up the your GPU accelerated resources using open source J2EE technologies.
 
-In this example, Hessian Binary Web Services are used to broker data
-between the Java consumer and the Hessian Servlet. This approach is only
-recommended for those labs having sufficient throughput between the
-client application and the OpenCL/GPU servlet host.
+In this example, Hessian Binary Web Services are used to broker data between the Java consumer and the Hessian Servlet. This approach is only recommended for those labs having sufficient throughput between the client application and the OpenCL/GPU servlet host.
 
 ## Hosting OpenCL-accelerated algorithms using Oracle's GlassfishV3
 
-Start out with the installation instructions available
-[here](http://www.oracle.com/technetwork/java/javaee/community/index-jsp-139692.html).
+Start out with the installation instructions available [here](http://www.oracle.com/technetwork/java/javaee/community/index-jsp-139692.html).
 
-To set up OpenCL support on Glassfish for deploying the ImageJ/Fiji Java
-based EJBs, navigate to the system's lib directory (for example:
-`/opt/glassfishv3/glassfish/lib`) and install the required jars/native
-libs.
+To set up OpenCL support on Glassfish for deploying the ImageJ/Fiji Java based EJBs, navigate to the system's lib directory (for example: `/opt/glassfishv3/glassfish/lib`) and install the required jars/native libs.
 
 ``` shell
 sudo wget http://jogamp.org/deployment/webstart/jocl-natives-linux-amd64.jar
@@ -344,9 +257,7 @@ sudo wget http://jogamp.org/deployment/webstart/gluegen.jar
 sudo wget http://jogamp.org/deployment/webstart/jocl.jar
 ```
 
-The only other thing needed to get glassfish setup to support JOCL is to
-login to the admin console, under {% include bc content='Common Tasks |
-Configuration | JVM Settings | Path Settings'%}.
+The only other thing needed to get glassfish setup to support JOCL is to login to the admin console, under {% include bc content='Common Tasks | Configuration | JVM Settings | Path Settings'%}.
 
 Native Library Path Prefix: `/opt/glassfishv3/glassfish/lib`
 
@@ -354,97 +265,49 @@ Native Library Path Prefix: `/opt/glassfishv3/glassfish/lib`
 
 # GPU Based Processing Techniques and the ImageJ Architecture
 
-{% include warning-sidebox-right content='The following article
-describes our first effort at GPU computing with ImageJ using OpenCL, in
-early 2010. The tutorial above is more recent and more complete; the
-text below is preserved only for historical reasons.' %}
+{% include warning-box content='The following article describes our first effort at GPU computing with ImageJ using OpenCL, in early 2010. The tutorial above is more recent and more complete; the text below is preserved only for historical reasons.' %}
 
 ## Introduction
 
-The primary focus of this paper is to provide an introduction to and
-evaluation of two common GPU technologies (CUDA and OpenCL) as they
-could be used within ImageJ. The intent is to provide a light
-introduction to the software libraries used to perform two basic image
-processing tasks and present performance metrics that may be useful for
-deciding future efforts in this area.
+The primary focus of this paper is to provide an introduction to and evaluation of two common GPU technologies (CUDA and OpenCL) as they could be used within ImageJ. The intent is to provide a light introduction to the software libraries used to perform two basic image processing tasks and present performance metrics that may be useful for deciding future efforts in this area.
 
-Many of the algorithms within ImageJ and ImageJ plug-ins can be
-implemented to take advantage of GPU and multi-core CPU processors.
-Having the capability to support plugins that leverage 'many-core
-hardware processors' poses important architectural issues for ImageJ. An
-intent of the ImageJ refactoring effort is to implement support for
-native code integration in a manner that leverages hardware devices
-'behind-the-scenes'. Performance is not as important as compatibility
-with external native libraries and ease of use by non-programming
-scientists.
+Many of the algorithms within ImageJ and ImageJ plug-ins can be implemented to take advantage of GPU and multi-core CPU processors. Having the capability to support plugins that leverage 'many-core hardware processors' poses important architectural issues for ImageJ. An intent of the ImageJ refactoring effort is to implement support for native code integration in a manner that leverages hardware devices 'behind-the-scenes'. Performance is not as important as compatibility with external native libraries and ease of use by non-programming scientists.
 
-Note: The use of 'device' refers to GPU based hardware devices and
-'host' refers to GPU based devices.
+Note: The use of 'device' refers to GPU based hardware devices and 'host' refers to GPU based devices.
 
 ## Background on the use of ImgLib
 
-The future release of ImageJ will adopt the
-[ImgLib](http://imglib2.net/) generic processing library. A very minor
-change has been introduced into the ImgLib codebase that allows data to
-be stored in Java.NIO arrays. The NIO backed arrays are allocated
-outside of the Java Virtual Machine and allow for a single copy of data
-to be shared with the native code.
+The future release of ImageJ will adopt the [ImgLib](http://imglib2.net/) generic processing library. A very minor change has been introduced into the ImgLib codebase that allows data to be stored in Java.NIO arrays. The NIO backed arrays are allocated outside of the Java Virtual Machine and allow for a single copy of data to be shared with the native code.
 
-There are several issues that are encountered when developing GPU based
-code:
+There are several issues that are encountered when developing GPU based code:
 
-1.  Byte ordering differences need consideration when using NIO Buffers
-    and exchanging data between different hardware devices with
-    different byte ordering.
-2.  The amount of available host memory, device memory, number of GPU
-    processors, and the computational capabilities of devices may vary
-    significantly.
+1.  Byte ordering differences need consideration when using NIO Buffers and exchanging data between different hardware devices with different byte ordering.
+2.  The amount of available host memory, device memory, number of GPU processors, and the computational capabilities of devices may vary significantly.
 
-To address these issues, helper methods can be used to dynamically
-assess a given host's capabilities at runtime. Working memory for the
-device and host are important along with the performance characteristics
-for a device. Profiling performance is also important in assessing a
-device since a device that is shared between several applications may
-achieve lower performance than if the device is not shared.
+To address these issues, helper methods can be used to dynamically assess a given host's capabilities at runtime. Working memory for the device and host are important along with the performance characteristics for a device. Profiling performance is also important in assessing a device since a device that is shared between several applications may achieve lower performance than if the device is not shared.
 
-When considering how to access GPU resources from Java, several
-open-source APIs were considered. For the purposes of this evaluation,
-Olivier Chafik's [JavaCL](http://code.google.com/p/javacl/) was chosen
-due to its Lesser General Public License.
+When considering how to access GPU resources from Java, several open-source APIs were considered. For the purposes of this evaluation, Olivier Chafik's [JavaCL](http://code.google.com/p/javacl/) was chosen due to its Lesser General Public License.
 
 ## Introduction to GPU processing pipeline
 
-The processing pipeline when using GPUs as compute device in ImageJ
-involves several steps:
+The processing pipeline when using GPUs as compute device in ImageJ involves several steps:
 
-1.  Get the data in native arrays with the needed byte ordering from an
-    imglib object
-2.  Choose a device, compile the kernel, and associate the native arrays
-    with the kernel
+1.  Get the data in native arrays with the needed byte ordering from an imglib object
+2.  Choose a device, compile the kernel, and associate the native arrays with the kernel
 3.  Launch the kernel
 4.  Return the results to a compatible Imglib object
 
 ## Metric/Method
 
-Sobel filter is a common image processing routine that is used for edge
-detection. It is ideally suited for this evaluation due to
-implementation simplicity as well as the GPU code's similarity to the
-existing open source implementation.
+Sobel filter is a common image processing routine that is used for edge detection. It is ideally suited for this evaluation due to implementation simplicity as well as the GPU code's similarity to the existing open source implementation.
 
-For purposes of timing processing, the 8-bit test image will be loaded
-into an Imglib NIO backed buffer. The kernel source code is precompiled.
-The timer is started before the call to execute the kernel and concludes
-after the results are returned to the Imglib NIO backed buffer. 100
-iterations are averaged to determine the recorded value.
+For purposes of timing processing, the 8-bit test image will be loaded into an Imglib NIO backed buffer. The kernel source code is precompiled. The timer is started before the call to execute the kernel and concludes after the results are returned to the Imglib NIO backed buffer. 100 iterations are averaged to determine the recorded value.
 
-Note: It is almost certainly possible to optimize any of the following
-implementations, however the primary goal of this assessment is not
-performance.
+Note: It is almost certainly possible to optimize any of the following implementations, however the primary goal of this assessment is not performance.
 
 ## Implementation
 
-The following code demonstrates a partial implementation of sobel filter
-within ImageJ:
+The following code demonstrates a partial implementation of sobel filter within ImageJ:
 
 ``` java
 public byte[] filter(int width, int height, byte[] inputImageArray)
@@ -463,11 +326,7 @@ public byte[] filter(int width, int height, byte[] inputImageArray)
     }
 ```
 
-There are a few properties that make the above partial implementation
-ideal for GPU computation. Each resultant pixel's value is independent
-of those around it. The values consumed in calculating the resultant
-pixel share a sequential relationship can leverage performance
-advantages. Several computations are performed for each pixel.
+There are a few properties that make the above partial implementation ideal for GPU computation. Each resultant pixel's value is independent of those around it. The values consumed in calculating the resultant pixel share a sequential relationship can leverage performance advantages. Several computations are performed for each pixel.
 
 Here is the partial implementation of Sobel filter in OpenCL:
 
@@ -505,14 +364,9 @@ else
 };
 ```
 
-The above OpenCL kernel is almost identical to the Java implementation
-with the exception that an index is used to identify the per value
-offset (rather than looping through an array). This allows the
-computation to be spread over many cores and thus provide the potential
-for speed up.
+The above OpenCL kernel is almost identical to the Java implementation with the exception that an index is used to identify the per value offset (rather than looping through an array). This allows the computation to be spread over many cores and thus provide the potential for speed up.
 
-The following example demonstrates how an image is loaded using Imglib
-in preparation for GPU computation:
+The following example demonstrates how an image is loaded using Imglib in preparation for GPU computation:
 
 ``` java
 //Create an array container factory
@@ -525,16 +379,8 @@ arrayContainerFactory.setNIOUse(true);
 Image inImg = LOCI.openLOCIFloatType( file.getPath(), arrayContainerFactory );
 ```
 
-`ArrayContainerFactory.setNIOUse(true)` ensures that NIO backed arrays
-are used. The reason for using NIO backed arrays rather than Java native
-arrays is due to optimal data sharing between Java and native code as
-well as for improved throughput between the host and device. Both CUDA
-and OpenCL benefit from the use of host arrays that are not paged to
-disk. This type of memory is referred to as paged-locked memory. Section
-5.3.1 of "CUDA Programming Guide Version 3.0" has more specific
-information on this detail.
+`ArrayContainerFactory.setNIOUse(true)` ensures that NIO backed arrays are used. The reason for using NIO backed arrays rather than Java native arrays is due to optimal data sharing between Java and native code as well as for improved throughput between the host and device. Both CUDA and OpenCL benefit from the use of host arrays that are not paged to disk. This type of memory is referred to as paged-locked memory. Section 5.3.1 of "CUDA Programming Guide Version 3.0" has more specific information on this detail.
 
-Note: OpenCL may use page-locked host memory when the
-"CL\_MEM\_ALLOC\_HOST\_PTR" flag is set.
+Note: OpenCL may use page-locked host memory when the "CL\_MEM\_ALLOC\_HOST\_PTR" flag is set.
 
 [Category:Outdated](Category:Outdated "wikilink")

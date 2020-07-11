@@ -8,37 +8,26 @@ categories:
 description: test description
 ---
 
-  - [ImageJ's Google+
-    page](https://plus.google.com/u/0/112060674582400644206/)
-  - [Fiji's Google+
-    page](https://plus.google.com/u/0/111207545597136714163/)
+  - [ImageJ's Google+ page](https://plus.google.com/u/0/112060674582400644206/)
+  - [Fiji's Google+ page](https://plus.google.com/u/0/111207545597136714163/)
   - [ImageJ 1.x documentation](https://imagej.net/index.html)
   - [ImageJ User Manual](https://imagej.net/docs/user-guide.pdf)
-  - [Fluorescence image analysis
-    introduction](http://blogs.qub.ac.uk/ccbg/fluorescence-image-analysis-intro/)
+  - [Fluorescence image analysis introduction](http://blogs.qub.ac.uk/ccbg/fluorescence-image-analysis-intro/)
   - [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php)
-  - [About the relationship between ImageJ2 and
-    Fiji](http://imagej-dev.org/2010/04/07/recent-fiji-imagej2-presentations)
+  - [About the relationship between ImageJ2 and Fiji](http://imagej-dev.org/2010/04/07/recent-fiji-imagej2-presentations)
   - [Wikipedia page on ImageJ](wikipedia:ImageJ "wikilink")
   - [Wikipedia page on Fiji](wikipedia:Fiji_\(software\) "wikilink")
   - [Fiji on OHLOH](http://www.ohloh.net/p/therealfiji)
   - [ObjectJ](http://simon.bio.uva.nl/objectj/)
 
-Links to the contributors' personal pages can be found
-[here](Contributors "wikilink").
+Links to the contributors' personal pages can be found [here](Contributors "wikilink").
 
 ## More ImageJ plugins
 
-  - Plugins on the [ImageJ
-    website](https://imagej.net/plugins/index.html), specifically [links
-    to external websites](https://imagej.net/plugins/index.html#more)
-  - Plugins on the [ImageJ Documentation
-    Wiki](http://imagejdocu.tudor.lu/doku.php?id=plugin:start)
-  - The Biomedical Imaging Group in Lausanne has [many interesting
-    plugins](http://bigwww.epfl.ch/algorithms.html).
-  - Christian Henden has some interesting plugins (mainly in the Public
-    Domain), including 3D threshold methods:
-    http://www.pvv.org/~perchrh/imagej/
+  - Plugins on the [ImageJ website](https://imagej.net/plugins/index.html), specifically [links to external websites](https://imagej.net/plugins/index.html#more)
+  - Plugins on the [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php?id=plugin:start)
+  - The Biomedical Imaging Group in Lausanne has [many interesting plugins](http://bigwww.epfl.ch/algorithms.html).
+  - Christian Henden has some interesting plugins (mainly in the Public Domain), including 3D threshold methods: http://www.pvv.org/~perchrh/imagej/
 
 ## Related projects
 
@@ -65,77 +54,49 @@ See the [Video](Video "wikilink") page.
 
 See the [Principles](Principles "wikilink") page.
 
-[A pixel is not a little
-square](http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf). Really. It
-is not. Pixels may be spaced on a regular grid. But that does not make
-them square. Even thinking about them as squares will harm your
-analysis, since it is simply wrong.
+[A pixel is not a little square](http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf). Really. It is not. Pixels may be spaced on a regular grid. But that does not make them square. Even thinking about them as squares will harm your analysis, since it is simply wrong.
 
-Explore the [Hypermedia Image Processing
-Reference](http://homepages.inf.ed.ac.uk/rbf/HIPR2/) of the Department
-of Artificial Intelligence in the University of Edinburgh for an
-extensive overview of available image processing techniques.
+Explore the [Hypermedia Image Processing Reference](http://homepages.inf.ed.ac.uk/rbf/HIPR2/) of the Department of Artificial Intelligence in the University of Edinburgh for an extensive overview of available image processing techniques.
 
-The University of Edinburgh also has the rather complete
-[CVonline](http://homepages.inf.ed.ac.uk/rbf/CVonline/) compendium of
-Computer Vision.
+The University of Edinburgh also has the rather complete [CVonline](http://homepages.inf.ed.ac.uk/rbf/CVonline/) compendium of Computer Vision.
 
-A scientific image [is not a
-photograph](http://www.4p8.com/eric.brasseur/gamma.html)\!
+A scientific image [is not a photograph](http://www.4p8.com/eric.brasseur/gamma.html)\!
 
 [External tutorials](External_tutorials "wikilink").
 
 ## Programming in science
 
-In research Software should be treated just like materials: if you
-publish your results, you should [publish the software (including source
-code)](http://sciencecodemanifesto.org/), too.
+In research Software should be treated just like materials: if you publish your results, you should [publish the software (including source code)](http://sciencecodemanifesto.org/), too.
 
-Even [Nature](http://www.nature.com/news/2010/101013/full/467753a.html)
-says that your code is good enough; you should publish it if you want to
-be a good scientist.
+Even [Nature](http://www.nature.com/news/2010/101013/full/467753a.html) says that your code is good enough; you should publish it if you want to be a good scientist.
 
-If you're still unsure and think that your code is not good enough, then
-publish it under a license [appropriate for
-science](http://matt.might.net/articles/crapl/) (CRAPL).
+If you're still unsure and think that your code is not good enough, then publish it under a license [appropriate for science](http://matt.might.net/articles/crapl/) (CRAPL).
 
 ## Java
 
-  - An [introduction to Java for kids
-    (ebook)](http://myflex.org/books/java4kids/java4kids.htm)
-  - [Mixing light-weight (Swing) and heavy-weight (AWT)
-    components](http://java.sun.com/developer/technicalArticles/GUI/mixing_components/index.html)
+  - An [introduction to Java for kids (ebook)](http://myflex.org/books/java4kids/java4kids.htm)
+  - [Mixing light-weight (Swing) and heavy-weight (AWT) components](http://java.sun.com/developer/technicalArticles/GUI/mixing_components/index.html)
 
 <!-- end list -->
 
-  - A [generics
-    tutorial](http://java.sun.com/j2se/1.5/pdf/generics-tutorial.pdf)
+  - A [generics tutorial](http://java.sun.com/j2se/1.5/pdf/generics-tutorial.pdf)
 
 <!-- end list -->
 
-  - [Infrequently Asked Questions](http://norvig.com/java-iaq.html)
-    about Java
+  - [Infrequently Asked Questions](http://norvig.com/java-iaq.html) about Java
 
 <!-- end list -->
 
-  - [Effective
-    Java](http://www.slideshare.net/marakana/effective-java-still-effective-after-all-these-years)
+  - [Effective Java](http://www.slideshare.net/marakana/effective-java-still-effective-after-all-these-years)
 
 <!-- end list -->
 
-  - [Details about Sun's/Oracle's Java Just-In-Time (JIT)
-    compiler](https://wikis.oracle.com/display/HotSpotInternals), and in
-    particular, [performance
-    techniques](https://wikis.oracle.com/display/HotSpotInternals/PerformanceTechniques)
-    of the JIT.
+  - [Details about Sun's/Oracle's Java Just-In-Time (JIT) compiler](https://wikis.oracle.com/display/HotSpotInternals), and in particular, [performance techniques](https://wikis.oracle.com/display/HotSpotInternals/PerformanceTechniques) of the JIT.
 
 ## Miscellaneous
 
-  - An [explanation](https://imagej.net/docs/install/osx.html#icon)
-    where ImageJ's icon's
-    [microscope](http://www.arsmachina.com/s-hart1209.htm) comes from.
+  - An [explanation](https://imagej.net/docs/install/osx.html#icon) where ImageJ's icon's [microscope](http://www.arsmachina.com/s-hart1209.htm) comes from.
 
 ## Imaging Networks and Facilities
 
-  - [Imaging Facility Network (Dresden
-    Biopolis)](https://ifn.mpi-cbg.de)
+  - [Imaging Facility Network (Dresden Biopolis)](https://ifn.mpi-cbg.de)

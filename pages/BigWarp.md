@@ -8,58 +8,34 @@ categories: Plugins,Visualization,Transform,Registration,Citable
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:bigwarp\_fiji' %}Bigwarp is
-a tool for manual, interactive, landmark-based deformable image
-alignment. It uses the [BigDataViewer](BigDataViewer "wikilink") for
-visualization and navigation, and uses a [Thin Plate
-Spline](wikipedia:Thin_plate_spline "wikilink") implemented {% include
-github org='saalfeldlab' repo='bigwarp' label='in Java' %} to build a
-deformation from point correspondences.
+{% include component-stats content=':sc.fiji:bigwarp\_fiji' %}Bigwarp is a tool for manual, interactive, landmark-based deformable image alignment. It uses the [BigDataViewer](BigDataViewer "wikilink") for visualization and navigation, and uses a [Thin Plate Spline](wikipedia:Thin_plate_spline "wikilink") implemented {% include github org='saalfeldlab' repo='bigwarp' label='in Java' %} to build a deformation from point correspondences.
 
-The interface enables landmark pair placement and displays the effects
-of the warp on-the-fly.
+The interface enables landmark pair placement and displays the effects of the warp on-the-fly.
 
 ## Installation
 
-Bigwarp comes with Fiji. You can access it via *Plugins {% include arrow
-%} BigDataViewer {% include arrow %} Big Warp*, or by modifying {%
-include github org='saalfeldlab' repo='bigwarp'
-path='scripts/bigwarp\_fiji\_demo.bsh' label='this example script' %}.
-If this is not visible in your installation, try updating Fiji with
-*Help {% include arrow %} Update Fiji.*
+Bigwarp comes with Fiji. You can access it via *Plugins {% include arrow%}
+ BigDataViewer {% include arrow%}
+ Big Warp*, or by modifying {% include github org='saalfeldlab' repo='bigwarp' path='scripts/bigwarp\_fiji\_demo.bsh' label='this example script' %}. If this is not visible in your installation, try updating Fiji with *Help {% include arrow%}
+ Update Fiji.*
 
 ## Usage
 
-Open two images in ImageJ, one *moving* and the other *target* and
-navigate to *Plugins {% include arrow %} BigDataViewer {% include arrow
-%} Big Warp.* A dialog will appear prompting selection of the moving and
-target images.
+Open two images in ImageJ, one *moving* and the other *target* and navigate to *Plugins {% include arrow%}
+ BigDataViewer {% include arrow%}
+ Big Warp.* A dialog will appear prompting selection of the moving and target images.
 
-Once the two image windows and one table window open, press {% include
-key content='press|Spacebar' %} to enter "landmark mode". Next, click on
-a point in the moving image, then click on the corresponding point in
-the target image. After you have a few moving-target point pairs, press
-{% include key content='press|T' %} to transform the moving image (you
-may need to re-navigate if the two image are very far apart: see the {%
-include key content='press|Q' %} and {% include key content='press|W' %}
-hotkeys below).
+Once the two image windows and one table window open, press {% include key content='press|Spacebar' %} to enter "landmark mode". Next, click on a point in the moving image, then click on the corresponding point in the target image. After you have a few moving-target point pairs, press {% include key content='press|T' %} to transform the moving image (you may need to re-navigate if the two image are very far apart: see the {% include key content='press|Q' %} and {% include key content='press|W' %} hotkeys below).
 
 ### Getting Help
 
-Press {% include key content='press|F1' %} at any time to open a help
-page with a listing of navigation and editing commands. For detailed
-help, create a post on the [image.sc forum](https://forum.image.sc/)
-with a bigwarp tag. Report bugs [on
-github](https://github.com/saalfeldlab/bigwarp/issues).
+Press {% include key content='press|F1' %} at any time to open a help page with a listing of navigation and editing commands. For detailed help, create a post on the [image.sc forum](https://forum.image.sc/) with a bigwarp tag. Report bugs [on github](https://github.com/saalfeldlab/bigwarp/issues).
 
 ### Landmark point placement and display in the viewer
 
-Landmark placements is done in *Landmark mode* which you enter by
-pressing {% include key content='press|Spacebar' %}. Users place pairs
-of corresponding points on the moving and target images.
+Landmark placements is done in *Landmark mode* which you enter by pressing {% include key content='press|Spacebar' %}. Users place pairs of corresponding points on the moving and target images.
 
-The following table shows the available commands and keystrokes for
-landmark placement, warping.
+The following table shows the available commands and keystrokes for landmark placement, warping.
 
 |                                                                                                                                                 |                                                                                                                                           |
 | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -79,36 +55,29 @@ landmark placement, warping.
 
 ### Landmark selection and editing in the table
 
-Some changes to landmarks can be done by interacting with the landmark
-table.
+Some changes to landmarks can be done by interacting with the landmark table.
 
-|                                                                                       |                                                         |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| {% include key content='press|left-click' %}                                          | Select row.                                             |
-| {% include key content='press|Ctrl' %}+{% include key content='press|left-click' %}   | Add row to selection.                                   |
-| {% include key content='press|Shift' %}+{% include key content='press|left-click' %}  | Select range of rows.                                   |
-| {% include key content='press|Esc' %}                                                 | Deselect all rows.                                      |
-| {% include key content='press|right-click' %} {% include arrow %} Delete              | Deletes a landmark pair (row in the table).             |
-| {% include key content='press|right-click' %} {% include arrow %} Delete all selected | Deletes all selected landmark pairs (row in the table). |
+|                                                                                      |                                                         |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------- |
+| {% include key content='press|left-click' %}                                         | Select row.                                             |
+| {% include key content='press|Ctrl' %}+{% include key content='press|left-click' %}  | Add row to selection.                                   |
+| {% include key content='press|Shift' %}+{% include key content='press|left-click' %} | Select range of rows.                                   |
+| {% include key content='press|Esc' %}                                                | Deselect all rows.                                      |
+| {% include key content='press|right-click' %} {% include arrow%}
+ Delete                   | Deletes a landmark pair (row in the table).             |
+| {% include key content='press|right-click' %} {% include arrow%}
+ Delete all selected      | Deletes all selected landmark pairs (row in the table). |
 
 ### Notes on point addition and landmark pair selection
 
   - Adding a new landmark pair selects that pair (row) in the table.
-  - If a row is "missing" a moving (target) landmark point, then it must
-    be selected in order to add that missing point by clicking in the
-    moving (target) viewer. Then BigWarp will find the "next" row that
-    is missing a moving (target) landmark, and select that row
-    automatically.
-  - If the selected row is not missing a landmark, the next click will
-    add a new landmark pair.
-  - If multiple rows are selected when a viewer is clicked, the result
-    will be as though only the first row was selected.
+  - If a row is "missing" a moving (target) landmark point, then it must be selected in order to add that missing point by clicking in the moving (target) viewer. Then BigWarp will find the "next" row that is missing a moving (target) landmark, and select that row automatically.
+  - If the selected row is not missing a landmark, the next click will add a new landmark pair.
+  - If multiple rows are selected when a viewer is clicked, the result will be as though only the first row was selected.
 
 ### Selecting transformation types
 
-Press {% include key content='press|F8' %} to bring up a transformation
-type selection window (version 4.0.0 of BigWarp supports multiple
-options for transformations)
+Press {% include key content='press|F8' %} to bring up a transformation type selection window (version 4.0.0 of BigWarp supports multiple options for transformations)
 
 |                                                                          |                                                                                   |
 | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
@@ -127,16 +96,9 @@ options for transformations)
 
 ### Navigation and Visualization
 
-Bigwarp inherits many image
-[navigation](BigDataViewer#Basic_Navigation "wikilink"),
-[visualization](BigDataViewer#Adjusting_Brightness_and_Color "wikilink"),
-and [grouping](BigDataViewer#Grouping_Sources "wikilink") features with
-BigDataViewer, the details of which can be found on the
-[BigDataViewer](BigDataViewer "wikilink") page or on the help page.
-BigWarp specific features are documented below.
+Bigwarp inherits many image [navigation](BigDataViewer#Basic_Navigation "wikilink"), [visualization](BigDataViewer#Adjusting_Brightness_and_Color "wikilink"), and [grouping](BigDataViewer#Grouping_Sources "wikilink") features with BigDataViewer, the details of which can be found on the [BigDataViewer](BigDataViewer "wikilink") page or on the help page. BigWarp specific features are documented below.
 
-The following table shows the available navigation commands using the
-mouse:
+The following table shows the available navigation commands using the mouse:
 
 |                                                                                                                    |                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
@@ -154,13 +116,10 @@ mouse:
 
 ### Commands shared with BigDataViewer
 
-  - [Displaying multiple stacks
-    ("sources")](BigDataViewer#Displaying_Multiple_Sources "wikilink")
+  - [Displaying multiple stacks ("sources")](BigDataViewer#Displaying_Multiple_Sources "wikilink")
   - [Grouping sources](BigDataViewer#Grouping_Sources "wikilink")
-  - [Adjusting brightness and
-    color](BigDataViewer#Adjusting_Brightness_and_Color "wikilink")
-  - [Bookmarking views (locations and
-    orientations)](BigDataViewer#Bookmarking_Locations_and_Orientations "wikilink")
+  - [Adjusting brightness and color](BigDataViewer#Adjusting_Brightness_and_Color "wikilink")
+  - [Bookmarking views (locations and orientations)](BigDataViewer#Bookmarking_Locations_and_Orientations "wikilink")
 
 #### Mouse navigation
 
@@ -185,104 +144,65 @@ mouse:
 | {% include key content='press|\[' %} or {% include key content='press|N' %}                                   | Move to previous timepoint.                                                                  |
 | {% include key content='press|\]' %} or {% include key content='press|M' %}                                   | Move to next timepoint.                                                                      |
 
-For all navigation commands you can hold {% include key
-content='press|Shift' %} to rotate and browse 10x faster, or hold {%
-include key content='press|Ctrl' %} to rotate and browse 10x slower. For
-example, {% include key content='press|Left' %} rotates by 1° clockwise,
-while {% include key content='press|Shift|Left' %} rotates by 10°, and
-{% include key content='press|Ctrl|Left' %} rotates by 0.1°.
+For all navigation commands you can hold {% include key content='press|Shift' %} to rotate and browse 10x faster, or hold {% include key content='press|Ctrl' %} to rotate and browse 10x slower. For example, {% include key content='press|Left' %} rotates by 1° clockwise, while {% include key content='press|Shift|Left' %} rotates by 10°, and {% include key content='press|Ctrl|Left' %} rotates by 0.1°.
 
 ### Save and load landmarks
 
-Landmarks can be exported and imported from plain text files using the
-drop down menu in the landmark table panel ( *File {% include arrow %}
-Export (Import) landmarks.* )
+Landmarks can be exported and imported from plain text files using the drop down menu in the landmark table panel ( *File {% include arrow%}
+ Export (Import) landmarks.* )
 
 ### Export warped images
 
-Export the warped moving image by clicking *File {% include arrow %} \>
-Export as ImagePlus* or using the {% include key content='press|Ctrl'
-%}+{% include key content='press|E' %} keyboard shortcut.
+Export the warped moving image by clicking *File {% include arrow%}
+ \> Export as ImagePlus* or using the {% include key content='press|Ctrl' %}+{% include key content='press|E' %} keyboard shortcut.
 
 ![Bigwarp\_export.png](/images/pages/Bigwarp_export.png "Bigwarp_export.png")"
 
-The default parameters will result in the exported image having the same
-dimensions as the target image. *Note: Take care when exporting very
-large data sets as they can cause out-of-memory exceptions.*
+The default parameters will result in the exported image having the same dimensions as the target image. *Note: Take care when exporting very large data sets as they can cause out-of-memory exceptions.*
 
   - Resolution
-      - Target: *The output will have the same resolution as the target
-        image*
-      - Moving: *The output will have the same resolution as the moving
-        image*
-      - Specified: *The output will have the resolution given in the
-        fields below (in the same units as the moving and target
-        images).*
+      - Target: *The output will have the same resolution as the target image*
+      - Moving: *The output will have the same resolution as the moving image*
+      - Specified: *The output will have the resolution given in the fields below (in the same units as the moving and target images).*
 
 <!-- end list -->
 
   - Field of view
-      - Target: *The output will have the same field of view as the
-        target image*
-      - Moving: *The output field of view will be the smallest bounding
-        box that contains the warped moving images (approximated)*
-      - Specified (pixel): '' The output field of view will be that
-        given by the Offset and Field of View parameter fields where
-        both are in units of pixels''\*\* \*\* Specified (physical): ''
-        The output field of view will be that given by the Offset and
-        Field of View parameter fields where both are in the physical
-        units of the moving and target images''
+      - Target: *The output will have the same field of view as the target image*
+      - Moving: *The output field of view will be the smallest bounding box that contains the warped moving images (approximated)*
+      - Specified (pixel): '' The output field of view will be that given by the Offset and Field of View parameter fields where both are in units of pixels''\*\* \*\* Specified (physical): '' The output field of view will be that given by the Offset and Field of View parameter fields where both are in the physical units of the moving and target images''
 
-The warped moving image can be exported as an in-memory or
-[virtual](https://imagej.net/docs/guide/146-8.html) ImagePlus. A virtual
-ImagePlus is generally faster to generate but slower to browse, whereas
-an in-memory ImagePlus will be slower to generate but faster to browse.
+The warped moving image can be exported as an in-memory or [virtual](https://imagej.net/docs/guide/146-8.html) ImagePlus. A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
-![BigwarpLandmarkCenteredExport.png](/images/pages/BigwarpLandmarkCenteredExport.png
-"BigwarpLandmarkCenteredExport.png")"
+![BigwarpLandmarkCenteredExport.png](/images/pages/BigwarpLandmarkCenteredExport.png "BigwarpLandmarkCenteredExport.png")"
 
 ### Apply transforms
 
-Often, it is important to apply transforms estimated with one image to
-other images in the same space.
+Often, it is important to apply transforms estimated with one image to other images in the same space.
 
-If you have moving and target images open in Fiji [this
-script](https://github.com/saalfeldlab/bigwarp/blob/master/scripts/Apply_Bigwarp_Xfm.groovy)
-to transform the moving image into the space of the target image. You
-will need to provide a file containing the saved landmark point pairs.
+If you have moving and target images open in Fiji [this script](https://github.com/saalfeldlab/bigwarp/blob/master/scripts/Apply_Bigwarp_Xfm.groovy) to transform the moving image into the space of the target image. You will need to provide a file containing the saved landmark point pairs.
 
-To manually specify the field-of-view (FOV) of the target space, use
-[this
-script](https://github.com/saalfeldlab/bigwarp/blob/master/scripts/Apply_Bigwarp_Xfm_FOV.groovy)
+To manually specify the field-of-view (FOV) of the target space, use [this script](https://github.com/saalfeldlab/bigwarp/blob/master/scripts/Apply_Bigwarp_Xfm_FOV.groovy)
 
-To make the scripts above appear in your Fiji Plugins menu, simply copy
-them into the `/plugins/Scripts folder` in your Fiji installation.
+To make the scripts above appear in your Fiji Plugins menu, simply copy them into the `/plugins/Scripts folder` in your Fiji installation.
 
 #### Warp 2d ImageJ ROIs
 
-Download and install [this
-script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/Apply_Bigwarp_Xfm_IjRoi2d.groovy).
+Download and install [this script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/Apply_Bigwarp_Xfm_IjRoi2d.groovy).
 
 Usage:
 
 1.  Run the script downloadable above.
-2.  Indicate which open images correspond to the moving and fixed images
-    in bigwarp.
+2.  Indicate which open images correspond to the moving and fixed images in bigwarp.
 3.  Select the csv file that stores bigwarp landmarks.
-4.  Indicate whether you want to transform an ROI from moving to target
-    space or vice versa.
+4.  Indicate whether you want to transform an ROI from moving to target space or vice versa.
 5.  Click OK.
 
-Note that the resulting ROI will be densely sampled. This is because an
-ROI with a particular shape may not have the same shape after being
-warped (i.e., a circle may not still be circular after being warped).
+Note that the resulting ROI will be densely sampled. This is because an ROI with a particular shape may not have the same shape after being warped (i.e., a circle may not still be circular after being warped).
 
-Example: In this example, we've chosen the boats sample as the moving
-image, the bridge sample as the target image, and have added some
-landmarks that transform the boats image.
+Example: In this example, we've chosen the boats sample as the moving image, the bridge sample as the target image, and have added some landmarks that transform the boats image.
 
-To warp an ROI from the moving boats image to the fixed bridge image, we
-run the script with the options:
+To warp an ROI from the moving boats image to the fixed bridge image, we run the script with the options:
 
 >   - Fixed image: boats
 >   - Moving image: bridge
@@ -291,8 +211,7 @@ run the script with the options:
 
 The results are shown in the "Forward example" below.
 
-To warp an ROI from the moving boats image to the fixed bridge image, we
-run the script with the options:
+To warp an ROI from the moving boats image to the fixed bridge image, we run the script with the options:
 
 >   - Fixed image: boats
 >   - Moving image: bridge
@@ -306,23 +225,19 @@ The results are shown in the "Inverse example" below.
 | ![bigwarp\_warp\_roi\_fwd.png](/images/pages/bigwarp_warp_roi_fwd.png "bigwarp_warp_roi_fwd.png")" | ![bigwarp\_warp\_roi\_inv.png](/images/pages/bigwarp_warp_roi_inv.png "bigwarp_warp_roi_inv.png")" |
 | Forward example (click to expand)                                                   | Inverse example (click to expand)                                                   |
 
-Note, at this time ImageJ ROIs are 2D objects. We recommend using
-another approach for 3D regions of interest.
+Note, at this time ImageJ ROIs are 2D objects. We recommend using another approach for 3D regions of interest.
 
 #### Warp points in a csv file
 
-Download and install [this
-script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/Apply_Bigwarp_Xfm_csvPts.groovy).
+Download and install [this script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/Apply_Bigwarp_Xfm_csvPts.groovy).
 
 Usage:
 
 1.  Run the script download-able above.
 2.  Select the csv file that stores bigwarp landmarks.
 3.  Select the csv file storing the points you want to transform.
-4.  Select the location for csv file you want the results to be stored
-    in.
-5.  Indicate whether you want to transform the points from moving to
-    target space or vice versa.
+4.  Select the location for csv file you want the results to be stored in.
+5.  Indicate whether you want to transform the points from moving to target space or vice versa.
 6.  Click OK.
 
 Note the input csv must be formatted:
@@ -332,34 +247,21 @@ Note the input csv must be formatted:
 ` ...`  
 ` xN,yN,zN`
 
-without quotation marks, spaces, or any other characters. Csv files
-storing bigwarp landmarks will not work as input to this script.
+without quotation marks, spaces, or any other characters. Csv files storing bigwarp landmarks will not work as input to this script.
 
 ## Working with large images
 
-The "normal" BigWarp plugin accessible through *Plugins {% include arrow
-%} Big Data Viewer {% include arrow %} BigWarp* works well for small-
-and medium-sized images but not for very large volumes (that do not fit
-into memory). For very large volumes, we recommend first [converting the
-volume to bigdataviewer's xml/hdf5
-format](https://imagej.net/BigDataViewer#Exporting_Datasets_for_the_BigDataViewer),
-then using [this
-script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy)
-to run BigWarp using the xml/h5 file(s). See also [this forum
-post.](https://forum.image.sc/t/issue-with-big-warp/31472)
+The "normal" BigWarp plugin accessible through *Plugins {% include arrow%}
+ Big Data Viewer {% include arrow%}
+ BigWarp* works well for small- and medium-sized images but not for very large volumes (that do not fit into memory). For very large volumes, we recommend first [converting the volume to bigdataviewer's xml/hdf5 format](https://imagej.net/BigDataViewer#Exporting_Datasets_for_the_BigDataViewer), then using [this script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy) to run BigWarp using the xml/h5 file(s). See also [this forum post.](https://forum.image.sc/t/issue-with-big-warp/31472)
 
-[This
-script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_N5.groovy)
-enables you to run BigWarp using images stored using
-[N5](https://github.com/saalfeldlab/n5).
+[This script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_N5.groovy) enables you to run BigWarp using images stored using [N5](https://github.com/saalfeldlab/n5).
 
 # Tutorials
 
-  - An example of a 2d warping by [Nicolas
-    Chiaruttini](http://kiaru.eu/cv-rapide/) in response to [this forum
-    post.](https://forum.image.sc/t/superimpose-atlas-image-onto-microscope-picture/20593)
+  - An example of a 2d warping by [Nicolas Chiaruttini](http://kiaru.eu/cv-rapide/) in response to [this forum post.](https://forum.image.sc/t/superimpose-atlas-image-onto-microscope-picture/20593)
 
-{% include youtube url="https://www.youtube.com/embed/zNur6mk9VXg" %}
+{% include youtube url='https://www.youtube.com/embed/'%}
 
 # Publication
 
@@ -367,41 +269,13 @@ enables you to run BigWarp using images stored using
 
 # Publications using BigWarp
 
-1.  Russell et al. ["3D correlative light and electron microscopy of
-    cultured cells using serial blockface scanning electron
-    microscopy"](https://www.ncbi.nlm.nih.gov/pubmed/27445312) J Cell
-    Sci 130: 278-291 2017.
-2.  Collinson et al. ["Correlating 3D light to 3D electron microscopy
-    for systems
-    biology"](https://www.sciencedirect.com/science/article/pii/S2468451117300685)
-    Current Opinion in Biomedical Engineering 2017 3:49-55
-3.  Lerner et al. ["Mycobacterium tuberculosis replicates within
-    necrotic human
-    macrophages"](http://jcb.rupress.org/content/216/3/583) J Cell Biol
-    2017
-4.  Hildebrand et al. ["Whole-brain serial-section electron microscopy
-    in larval zebrafish"](https://www.nature.com/articles/nature22356)
-    Nature 545:345–349 2017.
-5.  Zhang et al. ["A Complete Electron Microscopy Volume Of The Brain Of
-    Adult Drosophila
-    melanogaster"](https://www.cell.com/cell/fulltext/S0092-8674\(18\)30787-6)
-    Cell 174:3 P730-743.e22, 2018.
-6.  Gao et al. ["Cortical column and whole-brain imaging with molecular
-    contrast and nanoscale
-    resolution."](http://science.sciencemag.org/content/363/6424/eaau8302.abstract)
-    Science 363 (6424) 2019.
-7.  Wan et al. ["Single-Cell Reconstruction of Emerging Population
-    Activity in an Entire Developing
-    Circuit."](https://www.sciencedirect.com/science/article/pii/S0092867419309584)
-    Cell 179(2) 2019.
-8.  Hoffman, Shtengel et al. ["Correlative three-dimensional
-    super-resolution and block-face electron microscopy of whole
-    vitreously frozen
-    cells."](https://science.sciencemag.org/content/367/6475/eaaz5357)
-    Science 367 (6475) 2020.
+1.  Russell et al. ["3D correlative light and electron microscopy of cultured cells using serial blockface scanning electron microscopy"](https://www.ncbi.nlm.nih.gov/pubmed/27445312) J Cell Sci 130: 278-291 2017.
+2.  Collinson et al. ["Correlating 3D light to 3D electron microscopy for systems biology"](https://www.sciencedirect.com/science/article/pii/S2468451117300685) Current Opinion in Biomedical Engineering 2017 3:49-55
+3.  Lerner et al. ["Mycobacterium tuberculosis replicates within necrotic human macrophages"](http://jcb.rupress.org/content/216/3/583) J Cell Biol 2017
+4.  Hildebrand et al. ["Whole-brain serial-section electron microscopy in larval zebrafish"](https://www.nature.com/articles/nature22356) Nature 545:345–349 2017.
+5.  Zhang et al. ["A Complete Electron Microscopy Volume Of The Brain Of Adult Drosophila melanogaster"](https://www.cell.com/cell/fulltext/S0092-8674\(18\)30787-6) Cell 174:3 P730-743.e22, 2018.
+6.  Gao et al. ["Cortical column and whole-brain imaging with molecular contrast and nanoscale resolution."](http://science.sciencemag.org/content/363/6424/eaau8302.abstract) Science 363 (6424) 2019.
+7.  Wan et al. ["Single-Cell Reconstruction of Emerging Population Activity in an Entire Developing Circuit."](https://www.sciencedirect.com/science/article/pii/S0092867419309584) Cell 179(2) 2019.
+8.  Hoffman, Shtengel et al. ["Correlative three-dimensional super-resolution and block-face electron microscopy of whole vitreously frozen cells."](https://science.sciencemag.org/content/367/6475/eaaz5357) Science 367 (6475) 2020.
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Visualization](Category:Visualization "wikilink")
-[Category:Transform](Category:Transform "wikilink")
-[Category:Registration](Category:Registration "wikilink")
-[Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Visualization](Category:Visualization "wikilink") [Category:Transform](Category:Transform "wikilink") [Category:Registration](Category:Registration "wikilink") [Category:Citable](Category:Citable "wikilink")

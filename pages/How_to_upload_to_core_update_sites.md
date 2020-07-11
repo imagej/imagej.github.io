@@ -8,42 +8,29 @@ categories:
 description: test description
 ---
 
-{% include menu-updatesites %}{% include toc %}
+{% include menu-updatesites%}
+{% include toc%}
+
 
 ## Introduction
 
-This tutorial explains how to upload changes to core
-[ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") libraries.
+This tutorial explains how to upload changes to core [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") libraries.
 
 The typical workflow is:
 
-1.  Update {% include github org='fiji' repo='fiji' label='Fiji.git' %}
-    to depend on the latest {% include github org='scijava'
-    repo='pom-scijava' label='pom-scijava' %}
-2.  Use `mvn -Dimagej.app.directory=$HOME/Desktop/Fiji.app/
-    -Ddelete.other.versions=true` to install into an existing
-    (up-to-date) Fiji installation
-3.  NOTE: if there are any version downgrades at this point, this
-    indicates dependency skew. Fiji.git should be updated appropriately,
-    restarting from step 1
+1.  Update {% include github org='fiji' repo='fiji' label='Fiji.git' %} to depend on the latest {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %}
+2.  Use `mvn -Dimagej.app.directory=$HOME/Desktop/Fiji.app/ -Ddelete.other.versions=true` to install into an existing (up-to-date) Fiji installation
+3.  NOTE: if there are any version downgrades at this point, this indicates dependency skew. Fiji.git should be updated appropriately, restarting from step 1
 4.  Upload changes to ImageJ update site
 5.  Upload changes to Fiji update site
 
-{% include warning-sidebox-right content='There is a known issue where
-"""bio-formats\_plugins.jar""" is placed in `/jars/bio-formats` by this
-maven job. It should be manually moved to `/plugins/`' %}
+{% include warning-box content='There is a known issue where """bio-formats\_plugins.jar""" is placed in `/jars/bio-formats` by this maven job. It should be manually moved to `/plugins/`' %}
 
 ## Responsibility of uploaders
 
-To facilitate
-[reproducibility](Architecture#Reproducible_builds "wikilink") and
-present a unified application to both users and developers, uploaders
-should strive to keep each core update site synchronized with its
-corresponding source code.
+To facilitate [reproducibility](Architecture#Reproducible_builds "wikilink") and present a unified application to both users and developers, uploaders should strive to keep each core update site synchronized with its corresponding source code.
 
-Because releases are tied to the source code (and the update site
-contents are not explicitly versioned), the order of update should
-always be:
+Because releases are tied to the source code (and the update site contents are not explicitly versioned), the order of update should always be:
 
 1.  Source code
 2.  Update site
@@ -58,64 +45,46 @@ Source repository for each core update site:
 
 ## Getting started
 
-First of all, start the [updater](updater "wikilink") with {% include bc
-content='Help | Update'%} and click on the *Manage update sites* button:
+First of all, start the [updater](updater "wikilink") with {% include bc content='Help | Update'%} and click on the *Manage update sites* button:
 
 ![Mamed-3.jpg](/images/pages/Mamed-3.jpg "Mamed-3.jpg")"
 
-From this dialog, you can edit the desired update site(s) to add your
-authentication information.
+From this dialog, you can edit the desired update site(s) to add your authentication information.
 
 ## Configuring Fiji update site
 
-The Fiji update site uses [webDAV](wikipedia:WebDAV "wikilink")
-authentication. To upload something, you will need to:
+The Fiji update site uses [webDAV](wikipedia:WebDAV "wikilink") authentication. To upload something, you will need to:
 
-  - [Create a wiki
-    account](https://imagej.net/index.php?title=Special:UserLogin&type=signup)
-  - Ask an administrator has to add you to the [*uploaders*
-    group](https://imagej.net/Special:ListUsers?group=uploaders)
-  - Once you have been added, [initialize your upload password for
-    "Fiji's main update site"](Special:ChangeUploadPassword "wikilink").
+  - [Create a wiki account](https://imagej.net/index.php?title=Special:UserLogin&type=signup)
+  - Ask an administrator has to add you to the [*uploaders* group](https://imagej.net/Special:ListUsers?group=uploaders)
+  - Once you have been added, [initialize your upload password for "Fiji's main update site"](Special:ChangeUploadPassword "wikilink").
 
-In the *Manage update sites* dialog, on the Fiji update site line, add
-the following information:
+In the *Manage update sites* dialog, on the Fiji update site line, add the following information:
 
   - Host = **webdav:YourFijiWikiLogin**
   - Directory on host = **./**
 
-Note that your username will always start with an upper case letter. It
-should look like this:
+Note that your username will always start with an upper case letter. It should look like this:
 
-![Update\_site\_fiji\_creds.png](/images/pages/Update_site_fiji_creds.png
-"Update_site_fiji_creds.png")"
+![Update\_site\_fiji\_creds.png](/images/pages/Update_site_fiji_creds.png "Update_site_fiji_creds.png")"
 
-You can now close the *Manage update sites* window and go on to [
-Uploading your resources](#Uploading_your_resources "wikilink").
+You can now close the *Manage update sites* window and go on to [ Uploading your resources](#Uploading_your_resources "wikilink").
 
 ## Configuring the ImageJ update site
 
-The ImageJ update site uses [ssh](wikipedia:Secure_Shell "wikilink")
-authentication. You will need a login with [the imageJ update
-site](http://update.imagej.net) that some administrator will have to add
-to the *ij-update* group.
+The ImageJ update site uses [ssh](wikipedia:Secure_Shell "wikilink") authentication. You will need a login with [the imageJ update site](http://update.imagej.net) that some administrator will have to add to the *ij-update* group.
 
-In the *Manage update sites* dialog, on the ImageJ update site line, add
-the following information:
+In the *Manage update sites* dialog, on the ImageJ update site line, add the following information:
 
   - Host = `yourImageJLogin@update.imagej.net`
   - Directory on host = `/home/imagej/update-site/`
 
 It should look like this:
 
-![Update\_site\_ij2\_creds.png](/images/pages/Update_site_ij2_creds.png
-"Update_site_ij2_creds.png")"
+![Update\_site\_ij2\_creds.png](/images/pages/Update_site_ij2_creds.png "Update_site_ij2_creds.png")"
 
-You can now close the *Manage update sites* window and go on to [
-Uploading your resources](#Uploading_your_resources "wikilink").
+You can now close the *Manage update sites* window and go on to [ Uploading your resources](#Uploading_your_resources "wikilink").
 
 ## Uploading your resources
 
-See the [ Uploading files to your update
-site](How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site "wikilink")
-section of the set up and populate tutorial.
+See the [ Uploading files to your update site](How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site "wikilink") section of the set up and populate tutorial.

@@ -10,9 +10,7 @@ description: test description
 
 ## Purpose
 
-This is an example JRuby script, which is described in the page on
-[JRuby
-Scripting](JRuby_Scripting#Example:_Generating_Red.2FCyan_Anaglyphs "wikilink").
+This is an example JRuby script, which is described in the page on [JRuby Scripting](JRuby_Scripting#Example:_Generating_Red.2FCyan_Anaglyphs "wikilink").
 
 ## Code
 
@@ -84,6 +82,4 @@ run "RGB Merge...", merge_options
 
 [JRuby Scripting](JRuby_Scripting "wikilink")
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Scripting](Category:Scripting "wikilink")
-[Category:Unmaintained](Category:Unmaintained "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Scripting](Category:Scripting "wikilink") [Category:Unmaintained](Category:Unmaintained "wikilink")

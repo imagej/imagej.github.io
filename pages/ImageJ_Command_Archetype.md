@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-{% include component-stats
-content=':net.imagej:imagej-command-archetype' %}
+{% include component-stats content=':net.imagej:imagej-command-archetype' %}

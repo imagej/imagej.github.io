@@ -8,21 +8,10 @@ categories: News
 description: test description
 ---
 
-[ImgLib2](ImgLib2 "wikilink") was published in
-[Bioinformatics](http://bioinformatics.oxfordjournals.org/content/28/22/3009).
-The library developed jointly by Stephan Saalfeld, Stephan Preibisch and
-Tobias Pietszch has originated in Fiji, but has outgrown it becoming the
-centerpiece of other projects, especially [ImageJ2](ImageJ2 "wikilink").
-Pavel Tomancak provided funding for its developers.<ref> {% capture
-includecontent %} journal |author=Tobias Pietszch, Stephan Preibisch,
-Pavel Tomancak, Stephan Saalfeld|title=ImgLib2 – Generic Image
-Processing in Java|journal=Bioinformatics|year=2012
-|volume=28(22)|pages= 3009-3011
-|url=http://bioinformatics.oxfordjournals.org/content/28/22/3009 {%
-endcapture %}
-
-{% include cite content=includecontent %} </ref>.
+[ImgLib2](ImgLib2 "wikilink") was published in [Bioinformatics](http://bioinformatics.oxfordjournals.org/content/28/22/3009). The library developed jointly by Stephan Saalfeld, Stephan Preibisch and Tobias Pietszch has originated in Fiji, but has outgrown it becoming the centerpiece of other projects, especially [ImageJ2](ImageJ2 "wikilink"). Pavel Tomancak provided funding for its developers.\[1\].
 
 <references/>
 
 [Category:News](Category:News "wikilink")
+
+1.  {% include cite content='journal' author='Tobias Pietszch, Stephan Preibisch, Pavel Tomancak, Stephan Saalfeld' title='ImgLib2 – Generic Image Processing in Java' journal='Bioinformatics' year='2012' volume='28(22)' pages='3009-3011' url='http://bioinformatics.oxfordjournals.org/content/28/22/3009' %}

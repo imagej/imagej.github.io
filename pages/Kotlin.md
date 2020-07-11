@@ -8,9 +8,7 @@ categories:
 description: test description
 ---
 
-In order to start using Kotlin to develop plugins we need to ensure that
-the Annotation are pre processed so that ImageJ can display the
-shortcuts in the menu's
+In order to start using Kotlin to develop plugins we need to ensure that the Annotation are pre processed so that ImageJ can display the shortcuts in the menu's
 
 To accomplish that the following code need to be added to your pom:
 
@@ -40,11 +38,9 @@ To accomplish that the following code need to be added to your pom:
 
 </sub>
 
-and example can also be found in
-https://github.com/imagej/example-imagej-command-kotlin/pom.xml
+and example can also be found in https://github.com/imagej/example-imagej-command-kotlin/pom.xml
 
-If gradle is your built system of choice, then the following code need
-to be added to your build.gradle:
+If gradle is your built system of choice, then the following code need to be added to your build.gradle:
 
 <sub>
 
@@ -62,5 +58,4 @@ dependencies {
 
 </sub>
 
-and example can also be found in
-https://github.com/imagej/example-imagej-command-kotlin/build.gradle
+and example can also be found in https://github.com/imagej/example-imagej-command-kotlin/build.gradle

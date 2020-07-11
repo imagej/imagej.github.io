@@ -8,20 +8,16 @@ categories:
 description: test description
 ---
 
-{% capture source %} {% include github repo="fiji"
-path="plugins/Examples/Edit\_LUT\_As\_Text.py" %} {% endcapture %} {%
-include sidebox-right software='ImageJ' name='Edit LUT As Text'
-author='Johannes Schindelin' maintainer='Johannes Schindelin'
-source=source status='stable' category='[Color
-processing](:Category:Color_processing "wikilink")' %}
+
+{% capture source%}
+{% include github repo='fiji' path='plugins/Examples/Edit\_LUT\_As\_Text.py' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='Edit LUT As Text' author='Johannes Schindelin' maintainer='Johannes Schindelin' source=source status='stable' category='[Color processing](:Category:Color_processing "wikilink")' %}
 
 # Purpose
 
-Demonstrate how to call ImageJ's editor and extend the menu in a Jython
-script.
+Demonstrate how to call ImageJ's editor and extend the menu in a Jython script.
 
-It also helps you to edit the current lookup table as a list of triplets
-denoting the red/green/blue values.
+It also helps you to edit the current lookup table as a list of triplets denoting the red/green/blue values.
 
-You can also use the script to import lookup tables you have in the form
-of 256 red/green/blue triplets.
+You can also use the script to import lookup tables you have in the form of 256 red/green/blue triplets.

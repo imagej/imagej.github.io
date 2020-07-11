@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Bio-Formats\#Stack
-    Slicer](Bio-Formats#Stack_Slicer "wikilink")
+1.  REDIRECT [Bio-Formats\#Stack Slicer](Bio-Formats#Stack_Slicer "wikilink")

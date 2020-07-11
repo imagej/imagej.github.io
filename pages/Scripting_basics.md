@@ -12,24 +12,13 @@ description: test description
 
 ## Introduction
 
-ImageJ and Fiji are able to run scripts written in [different
-languages](https://imagej.net/Scripting#Supported_languages). Besides
-all the differences the approach on how to use the [API of
-ImageJ](http://javadoc.imagej.net/) is similar for all of them. This
-article will introduce the basic concepts and is valid for all scripting
-languages.
+ImageJ and Fiji are able to run scripts written in [different languages](https://imagej.net/Scripting#Supported_languages). Besides all the differences the approach on how to use the [API of ImageJ](http://javadoc.imagej.net/) is similar for all of them. This article will introduce the basic concepts and is valid for all scripting languages.
 
-{% include sidebox-right content='The examples are written in Groovy,
-but they are easy to adapt for any other scripting language ImageJ
-supports.' %}
+{% include info-box content='The examples are written in Groovy, but they are easy to adapt for any other scripting language ImageJ supports.' %}
 
 ## Get an image and perform an action
 
-First we want to learn different ways to select an image and perform an
-action on it. In [ImageJ1](ImageJ1 "wikilink") the image is represented
-by an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html)
-object. The recommended way to select an ImagePlus object is to use
-[Script Parameters](Script_parameters "wikilink"):
+First we want to learn different ways to select an image and perform an action on it. In [ImageJ1](ImageJ1 "wikilink") the image is represented by an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html) object. The recommended way to select an ImagePlus object is to use [Script Parameters](Script_parameters "wikilink"):
 
 ``` java
 #@ ImagePlus imp
@@ -42,26 +31,11 @@ import ij.IJ
 IJ.run(imp, "Gaussian Blur...", "sigma=" + sig)
 ```
 
-Script Parameters are placed at the beginning of the script file. If
-only one `@ImagePlus` is used, the front most image is selected. A
-second Script Parameter is used to get the radius of the gaussion
-filter. By using `print(imp)` we verify, that an ImagePlus object is
-assigned to the variable.
+Script Parameters are placed at the beginning of the script file. If only one `@ImagePlus` is used, the front most image is selected. A second Script Parameter is used to get the radius of the gaussion filter. By using `print(imp)` we verify, that an ImagePlus object is assigned to the variable.
 
-To perform an operation on the selected image, we use `IJ.run()`.
-Therefore we have to import the [class
-IJ](http://javadoc.imagej.net/ImageJ1/ij/IJ.html). There are three
-different versions of the
-\[http://javadoc.imagej.net/ImageJ1/ij/IJ.html#run(java.lang.String)
-run() method\] of these we need the one with three parameters. The first
-parameter is the image to perform the action on, the second parameters
-defines the action (called **command**) and the last parameter is used
-to configure the action (here we set the filter radius). The easiest way
-to find a command is to use the
-[Recorder](Introduction_into_Macro_Programming#The_recorder "wikilink").
+To perform an operation on the selected image, we use `IJ.run()`. Therefore we have to import the [class IJ](http://javadoc.imagej.net/ImageJ1/ij/IJ.html). There are three different versions of the \[http://javadoc.imagej.net/ImageJ1/ij/IJ.html#run(java.lang.String) run() method\] of these we need the one with three parameters. The first parameter is the image to perform the action on, the second parameters defines the action (called **command**) and the last parameter is used to configure the action (here we set the filter radius). The easiest way to find a command is to use the [Recorder](Introduction_into_Macro_Programming#The_recorder "wikilink").
 
-The second approach is similar to how to perform this operation using
-the [macro language](Introduction_into_Macro_Programming "wikilink"):
+The second approach is similar to how to perform this operation using the [macro language](Introduction_into_Macro_Programming "wikilink"):
 
 ``` java
 import ij.IJ
@@ -71,14 +45,9 @@ sig = IJ.getNumber('Filter radius:', 2)
 IJ.run(imp, "Gaussian Blur...", "sigma=" + sig)
 ```
 
-The first step is to select the front most image by using IJ's method
-`getImage()`. The second step is to use the method `getNumber()` to show
-up a dialog to enter the filter radius. Running the filter is the same
-as in the previous example.
+The first step is to select the front most image by using IJ's method `getImage()`. The second step is to use the method `getNumber()` to show up a dialog to enter the filter radius. Running the filter is the same as in the previous example.
 
-Finally we want to use the
-[WindowManager](http://javadoc.imagej.net/ImageJ1/ij/WindowManager.html)
-to select the front most image:
+Finally we want to use the [WindowManager](http://javadoc.imagej.net/ImageJ1/ij/WindowManager.html) to select the front most image:
 
 ``` java
 import ij.IJ
@@ -89,25 +58,13 @@ sig = IJ.getNumber('Filter radius:', 2)
 IJ.run(imp, "Gaussian Blur...", "sigma=" + sig)
 ```
 
-This is nearly identical to the use of `IJ.getImage()` and therefore not
-recommended. The WindowManager class contains some useful methods that
-can be used to select more than one image (e.g. `getImageTitles()` and
-`getIDList()`.
+This is nearly identical to the use of `IJ.getImage()` and therefore not recommended. The WindowManager class contains some useful methods that can be used to select more than one image (e.g. `getImageTitles()` and `getIDList()`.
 
 ## Opening images
 
-In ImageJ there are many different ways to open images (or more general
-datasets). We want to introduce some of them.
+In ImageJ there are many different ways to open images (or more general datasets). We want to introduce some of them.
 
-The first example uses the
-[DatasetIOService](http://javadoc.imagej.net/SCIFIO/io/scif/services/DatasetIOService.html).
-It is part of [SCIFIO](SCIFIO "wikilink"), a flexible framework for
-**SC**ientific **I**mage **F**ormat **I**nput and **O**utput. Two types
-of image files are opened. The first one is an example image, downloaded
-from the Internet. The second image can be chosen by the user. Both
-datasets are displayed using the
-[UIService](http://javadoc.imagej.net/SciJava/org/scijava/ui/UIService.html)
-that is part of the [SciJava](SciJava "wikilink") project.
+The first example uses the [DatasetIOService](http://javadoc.imagej.net/SCIFIO/io/scif/services/DatasetIOService.html). It is part of [SCIFIO](SCIFIO "wikilink"), a flexible framework for **SC**ientific **I**mage **F**ormat **I**nput and **O**utput. Two types of image files are opened. The first one is an example image, downloaded from the Internet. The second image can be chosen by the user. Both datasets are displayed using the [UIService](http://javadoc.imagej.net/SciJava/org/scijava/ui/UIService.html) that is part of the [SciJava](SciJava "wikilink") project.
 
 ``` java
 #@ DatasetIOService ds
@@ -123,8 +80,7 @@ ui.show(dataset1)
 ui.show(dataset2)
 ```
 
-If a script only depends on ImageJ1 functionality, one can use the
-function `IJ.openImage()`. It will return an ImagePlus object.
+If a script only depends on ImageJ1 functionality, one can use the function `IJ.openImage()`. It will return an ImagePlus object.
 
 ``` java
 #@ String(label='Image URL', value='http://wsr.imagej.net/images/clown.jpg') fileUrl
@@ -140,13 +96,7 @@ imagePlus1.show()
 imagePlus2.show()
 ```
 
-`IJ.openImage()` is based on the class
-[ij.io.Opener](http://javadoc.imagej.net/ImageJ1/ij/io/Opener.html). You
-can use it directly to open images and other files (e.g. text files).
-The example uses the class
-[ij.io.OpenDialog](http://javadoc.imagej.net/ImageJ1/ij/io/OpenDialog.html)
-to select a file. This is an alternative to the usage of the Scripting
-Parameter `@File`.
+`IJ.openImage()` is based on the class [ij.io.Opener](http://javadoc.imagej.net/ImageJ1/ij/io/Opener.html). You can use it directly to open images and other files (e.g. text files). The example uses the class [ij.io.OpenDialog](http://javadoc.imagej.net/ImageJ1/ij/io/OpenDialog.html) to select a file. This is an alternative to the usage of the Scripting Parameter `@File`.
 
 ``` java
 import ij.io.Opener
@@ -162,8 +112,7 @@ imagePlus.show()
 
 ## ImagePlus, ImageStack and ImageProcessor Conversion
 
-When working with the ImageJ API you will run into the problem that you
-have e.g. a ImageProcessor, but what you need right now is a ImagePlus.
+When working with the ImageJ API you will run into the problem that you have e.g. a ImageProcessor, but what you need right now is a ImagePlus.
 
 To convert one to another use these commands:
 

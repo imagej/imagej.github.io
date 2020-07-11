@@ -8,13 +8,6 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu content='tools' %}{% include minisidebox-right
-logo='Jenkins.png' blurb='"""Jenkins:""" Serving the ImageJ community,
-2010 - 2019\!' %}ImageJ had a Jenkins server: a continuous integration
-system which automatically checked the code for build and test errors.
-As of 2019, the [ImageJ](ImageJ "wikilink") and
-[SciJava](SciJava "wikilink") projects have transitioned to [Travis
-CI](Travis_CI "wikilink") and [AppVeyor](AppVeyor "wikilink") for CI
-services.
+{% include develop-menu content='tools' %}{% include minibox logo='Jenkins.png' blurb='"""Jenkins:""" Serving the ImageJ community, 2010 - 2019\!' %}ImageJ had a Jenkins server: a continuous integration system which automatically checked the code for build and test errors. As of 2019, the [ImageJ](ImageJ "wikilink") and [SciJava](SciJava "wikilink") projects have transitioned to [Travis CI](Travis_CI "wikilink") and [AppVeyor](AppVeyor "wikilink") for CI services.
 
 [Category:Development](Category:Development "wikilink")

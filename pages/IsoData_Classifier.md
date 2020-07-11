@@ -8,19 +8,12 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:IsoData\_Classifier' %}
-This plugin calculates a classification based on the histogram of the
-image by generalizing the [IsoData](IsoData "wikilink") algorithm to
-more than two classes.
+{% include component-stats content=':sc.fiji:IsoData\_Classifier' %} This plugin calculates a classification based on the histogram of the image by generalizing the [IsoData](IsoData "wikilink") algorithm to more than two classes.
 
 This plugin works on 8-bit and 16-bit grayscale images only.
 
-To start the plugin, go to {% include bc content='Analyze |
-Classification | IsoData Classifier'%}.
+To start the plugin, go to {% include bc content='Analyze | Classification | IsoData Classifier'%}.
 
-![Configuration dialog of the IsoData Classifier
-plugin](/images/pages/IsoData_Classifier.png
-"Configuration dialog of the IsoData Classifier plugin")"
+![Configuration dialog of the IsoData Classifier plugin](/images/pages/IsoData_Classifier.png "Configuration dialog of the IsoData Classifier plugin")"
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")

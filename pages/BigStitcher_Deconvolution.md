@@ -10,29 +10,19 @@ description: test description
 
 ## Overview
 
-In BigStitcher we offer deconvolution using a multi-view variant of the
-iterative Richardson-Lucy algorithm with various optimizations. Details
-about the previous version of the MultiView deconvolution as well as the
-corresponding publication with mathematical details can be found at
-[Multi-View\_Deconvolution](Multi-View_Deconvolution "wikilink").
+In BigStitcher we offer deconvolution using a multi-view variant of the iterative Richardson-Lucy algorithm with various optimizations. Details about the previous version of the MultiView deconvolution as well as the corresponding publication with mathematical details can be found at [Multi-View\_Deconvolution](Multi-View_Deconvolution "wikilink").
 
 **TODO: nice deconvolved image**
 
-The deconvolution can be started by selecting the views you wish to
-deconvolve and selecting {% include bc content='Processing|(MultiView)
-Deconvolution'%} in the main menu in **MultiView mode**.
+The deconvolution can be started by selecting the views you wish to deconvolve and selecting {% include bc content='Processing|(MultiView) Deconvolution'%} in the main menu in **MultiView mode**.
 
 ## Usage
 
-After clicking **(MultiView) Deconvolution**, you will be presented with
-a dialog asking for the main parameters for deconvolution:
+After clicking **(MultiView) Deconvolution**, you will be presented with a dialog asking for the main parameters for deconvolution:
 
-![BigStitcher\_Deconvolution\_Main.png](/images/pages/BigStitcher_Deconvolution_Main.png
-"BigStitcher_Deconvolution_Main.png")"
+![BigStitcher\_Deconvolution\_Main.png](/images/pages/BigStitcher_Deconvolution_Main.png "BigStitcher_Deconvolution_Main.png")"
 
-Since you are also producing a fused image for the deconvolution, some
-parameters are the same as in
-[BigStitcher\_Fuse](BigStitcher_Fuse "wikilink"):
+Since you are also producing a fused image for the deconvolution, some parameters are the same as in [BigStitcher\_Fuse](BigStitcher_Fuse "wikilink"):
 
   - the **BoundingBox** to use for the deconvolved output
   - by how much to **Downsample** the output
@@ -44,83 +34,43 @@ The other options are (from top to bottom):
   - **Input image(s)**:
   - **Weight image(s)**:
   - **Initialize with**:
-  - **Type of iteration**: We implemented various optimizations to the
-    iterative deconvolution, which make some assumptions about the data
-    that typically hold for images with high signal-to-noise-ratio
-    (SNR). Using the optimizations speeds up the deconvolution, but
-    might lead to artifacts if the SNR of your images is not high
-    enough.
-  - **Fast sequential iterations (OSEM)** and **OSEM acceleration**:
-    TODO explain...
-  - **Number of iterations**: For how many iterations to run the
-    iterative deconvolution.
-  - **Debug mode**: In debug mode, we will show intermediate results
-    (deconvolved image every nth iteration) while the deconvolution is
-    still running. You can specify how often to display in a separate
-    dialog (see below).
-  - **Use Tikhonov regularization** and **Tikhonov parameter**: By
-    activating Tikhonov regularization, and setting the Tikhonov
-    parameter to \(>0\) you can penalize large changes in the
-    iterations. This way, the deconvolution is less prone to amplify
-    noise but the results will generally be less sharp.
-  - **Compute**: use this to specify **block size**. We can split the
-    image into blocks and compute the deconvolution block-by-block. This
-    allows you to do deconvolution on systems with less RAM, but will be
-    slower, as we have to use overlapping blocks (smaller blocks will
-    lead to more overlap). You can choose from a few presets or choose
-    to **specify block size manually** in an extra dialog (see below).
-  - **Compute on**: Whether to compute on **CPU (Java)** or **GPU
-    (Nvidia CUDA via JNA)**. GPU acceleration can greatly speed up the
-    deconvolution, but you have to manually compile the required
-    libraries and have a CUDA-capable Nvidia GPU in you system (see
-    below for details).
-  - **Adjust blending & grouping parameters**: check this to show
-    advanced options for view grouping and blending in a separate dialog
-    (see below).
+  - **Type of iteration**: We implemented various optimizations to the iterative deconvolution, which make some assumptions about the data that typically hold for images with high signal-to-noise-ratio (SNR). Using the optimizations speeds up the deconvolution, but might lead to artifacts if the SNR of your images is not high enough.
+  - **Fast sequential iterations (OSEM)** and **OSEM acceleration**: TODO explain...
+  - **Number of iterations**: For how many iterations to run the iterative deconvolution.
+  - **Debug mode**: In debug mode, we will show intermediate results (deconvolved image every nth iteration) while the deconvolution is still running. You can specify how often to display in a separate dialog (see below).
+  - **Use Tikhonov regularization** and **Tikhonov parameter**: By activating Tikhonov regularization, and setting the Tikhonov parameter to \(>0\) you can penalize large changes in the iterations. This way, the deconvolution is less prone to amplify noise but the results will generally be less sharp.
+  - **Compute**: use this to specify **block size**. We can split the image into blocks and compute the deconvolution block-by-block. This allows you to do deconvolution on systems with less RAM, but will be slower, as we have to use overlapping blocks (smaller blocks will lead to more overlap). You can choose from a few presets or choose to **specify block size manually** in an extra dialog (see below).
+  - **Compute on**: Whether to compute on **CPU (Java)** or **GPU (Nvidia CUDA via JNA)**. GPU acceleration can greatly speed up the deconvolution, but you have to manually compile the required libraries and have a CUDA-capable Nvidia GPU in you system (see below for details).
+  - **Adjust blending & grouping parameters**: check this to show advanced options for view grouping and blending in a separate dialog (see below).
 
-The dialog will also preview the memory requirements for the
-deconvolution (green preview text indicates that ImageJ has enough
-memory for the process, while red text indicates that the deconvolution
-will run out of memory and fail - use downsampling or smaller block
-sizes in that case).
+The dialog will also preview the memory requirements for the deconvolution (green preview text indicates that ImageJ has enough memory for the process, while red text indicates that the deconvolution will run out of memory and fail - use downsampling or smaller block sizes in that case).
 
 ### Initialization with existing image
 
-If you chose to **Initialize from TIFF file** in the main dialog, you
-will be asked to provide the path to the file here, by dragging and
-dropping the file, selecting it by clicking **Browse...** or entering
-the path manually.
+If you chose to **Initialize from TIFF file** in the main dialog, you will be asked to provide the path to the file here, by dragging and dropping the file, selecting it by clicking **Browse...** or entering the path manually.
 
-You can choose whether to do **Exact avg and max computation from
-input** or not. TODO: explain...
+You can choose whether to do **Exact avg and max computation from input** or not. TODO: explain...
 
-![BigStitcher\_Deconvolution\_fromFile.png](/images/pages/BigStitcher_Deconvolution_fromFile.png
-"BigStitcher_Deconvolution_fromFile.png")"
+![BigStitcher\_Deconvolution\_fromFile.png](/images/pages/BigStitcher_Deconvolution_fromFile.png "BigStitcher_Deconvolution_fromFile.png")"
 
-Using this option, you can **continue a previous deconvolution** if you
-think that additional iterations will improve the results.
+Using this option, you can **continue a previous deconvolution** if you think that additional iterations will improve the results.
 
 ### Manual block size setup
 
-![BigStitcher\_Deconvolution\_blocksize.png](/images/pages/BigStitcher_Deconvolution_blocksize.png
-"BigStitcher_Deconvolution_blocksize.png")"
+![BigStitcher\_Deconvolution\_blocksize.png](/images/pages/BigStitcher_Deconvolution_blocksize.png "BigStitcher_Deconvolution_blocksize.png")"
 
 ### Blending & grouping parameters
 
-![BigStitcher\_Deconvolution\_blending.png](/images/pages/BigStitcher_Deconvolution_blending.png
-"BigStitcher_Deconvolution_blending.png")"
+![BigStitcher\_Deconvolution\_blending.png](/images/pages/BigStitcher_Deconvolution_blending.png "BigStitcher_Deconvolution_blending.png")"
 
 ### Debug mode
 
-![BigStitcher\_Deconvolution\_debug.png](/images/pages/BigStitcher_Deconvolution_debug.png
-"BigStitcher_Deconvolution_debug.png")"
+![BigStitcher\_Deconvolution\_debug.png](/images/pages/BigStitcher_Deconvolution_debug.png "BigStitcher_Deconvolution_debug.png")"
 
 ### Deconvolution on GPU
 
 ## Usage of Previous version
 
-As this usage guide is still work in progress, please refer to
-[Multi-View\_Deconvolution](Multi-View_Deconvolution "wikilink") for
-now.
+As this usage guide is still work in progress, please refer to [Multi-View\_Deconvolution](Multi-View_Deconvolution "wikilink") for now.
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")

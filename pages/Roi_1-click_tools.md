@@ -8,39 +8,34 @@ categories: Plugins,Update Sites,Macro Tools,Citable
 description: test description
 ---
 
-{% capture author %} {% include person content="Lthomas" %} {%
-endcapture %}
 
-{% capture maintainer %} {% include person content="Lthomas" %} {%
-endcapture %}
+{% capture author%}
+{% include person content='Lthomas' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="LauLauThom"
-repo="Fiji-RoiClickTools" %} {% endcapture %} {% include sidebox-right
-software='ImageJ' name='ROI 1-click tools' author=author
-maintainer=maintainer site='ROI 1-click tools' source=source
-released='2019' status='active'
-category='[Analysis](:Category:Analysis "wikilink")' %}
+{% capture maintainer%}
+{% include person content='Lthomas' %}
+{% endcapture %}
+
+{% capture source%}
+{% include github org='LauLauThom' repo='Fiji-RoiClickTools' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='ROI 1-click tools' author=author maintainer=maintainer update-site='ROI 1-click tools' source=source released='2019' status='active' category='[Analysis](:Category:Analysis "wikilink")' %}
 
 # Installation
 
 In Fiji, activate the **ROI 1-click tools** update site.  
-In ImageJ, copy the file *Roi 1-Click Tools.ijm* to
-*ImageJ\\macros\\toolsets*
+In ImageJ, copy the file *Roi 1-Click Tools.ijm* to *ImageJ\\macros\\toolsets*
 
 # Documentation
 
-See the [Readme](https://github.com/LauLauThom/Fiji-RoiClickTools) of
-the GitHub repo.
+See the [Readme](https://github.com/LauLauThom/Fiji-RoiClickTools) of the GitHub repo.
 
 # Credits
 
 If you use these tools please cite:  
 Thomas, LS; Gehrig, J (2020)  
-ImageJ/Fiji ROI 1-click tools for rapid manual image annotations and
-measurements  
+ImageJ/Fiji ROI 1-click tools for rapid manual image annotations and measurements  
 microPublication Biology. 10.17912/micropub.biology.000215
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Update
-Sites](Category:Update_Sites "wikilink") [Category:Macro
-Tools](Category:Macro_Tools "wikilink")
-[Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Update Sites](Category:Update_Sites "wikilink") [Category:Macro Tools](Category:Macro_Tools "wikilink") [Category:Citable](Category:Citable "wikilink")

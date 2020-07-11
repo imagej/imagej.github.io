@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Maven - Frequently Asked
-    Questions](Maven_-_Frequently_Asked_Questions "wikilink")
+1.  REDIRECT [Maven - Frequently Asked Questions](Maven_-_Frequently_Asked_Questions "wikilink")

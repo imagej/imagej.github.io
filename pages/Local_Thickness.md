@@ -8,10 +8,8 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:LocalThickness\_' %}**Local
-Thickness** is used to compute the local thickness of a 3D image stack.
+{% include component-stats content=':sc.fiji:LocalThickness\_' %}**Local Thickness** is used to compute the local thickness of a 3D image stack.
 
-Documentation is available as
-[pdf](http://www.optinav.info/LocalThicknessEd.pdf) file.
+Documentation is available as [pdf](http://www.optinav.info/LocalThicknessEd.pdf) file.
 
 [Category:Plugins](Category:Plugins "wikilink")

@@ -8,29 +8,21 @@ categories: Fiji
 description: test description
 ---
 
-{% include fijimenu %}Useful information about using Fiji can be found
-here:
+{% include fijimenu%}
+Useful information about using Fiji can be found here:
 
-  - [What you need to know about scientific image
-    processing](IP_Principles "wikilink")
+  - [What you need to know about scientific image processing](IP_Principles "wikilink")
   - [Installing Fiji](Installation "wikilink")
   - [Getting started with Fiji](Getting_started "wikilink")
-  - [Tutorials](:Category:Tutorials "wikilink") (also [external
-    ones](External_tutorials "wikilink"))
-  - [Introduction into Macro
-    Programming](Introduction_into_Macro_Programming "wikilink")
-  - Example images you'll find in the {% include bc content='File | Open
-    Samples'%} menu or in [public data
-    sets](public_data_sets "wikilink")
+  - [Tutorials](:Category:Tutorials "wikilink") (also [external ones](External_tutorials "wikilink"))
+  - [Introduction into Macro Programming](Introduction_into_Macro_Programming "wikilink")
+  - Example images you'll find in the {% include bc content='File | Open Samples'%} menu or in [public data sets](public_data_sets "wikilink")
   - Some [ImageJ tricks](ImageJ_tricks "wikilink")
   - Descriptions of bundled [Plugins](:Category:Plugins "wikilink")
   - A detailed overview of the [Plugins Menu](Plugins_Menu "wikilink")
-  - The ImageJ website has a nice [ImageJ User
-    Manual](https://imagej.net/docs/user-guide.pdf)
-  - [Installing 3rd party
-    plugins](Installing_3rd_party_plugins "wikilink")
-  - [Find contact information, mailing list, IRC (chat) and
-    help](Help "wikilink")
+  - The ImageJ website has a nice [ImageJ User Manual](https://imagej.net/docs/user-guide.pdf)
+  - [Installing 3rd party plugins](Installing_3rd_party_plugins "wikilink")
+  - [Find contact information, mailing list, IRC (chat) and help](Help "wikilink")
   - [Frequently Asked Questions](Frequently_Asked_Questions "wikilink")
 
 [Category:Fiji](Category:Fiji "wikilink")

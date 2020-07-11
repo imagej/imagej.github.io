@@ -8,24 +8,16 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='scripting' %}This page is meant to provide
-small code snippets as a starting point for writing scripts.
+{% include learn content='scripting' %}This page is meant to provide small code snippets as a starting point for writing scripts.
 
-{% include sidebox-right message='"""See also:"""
+{% include info-box message='"""See also:"""
 
   - Language-specific scripting pages in the right-hand menu.
-  - [Scripting comparisons](Scripting_comparisons "wikilink") to compare
-    and contrast the languages.
-  - [Broadly Applicable Routines](BAR "wikilink"), a curated collection
-    of snippets.
-  - Albert Cardona"s comprehensive [Fiji Jython
-    tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/) (please
-    note that it is better idea to contribute tutorials to the
-    ImageJ/Fiji wiki directly).' %}
+  - [Scripting comparisons](Scripting_comparisons "wikilink") to compare and contrast the languages.
+  - [Broadly Applicable Routines](BAR "wikilink"), a curated collection of snippets.
+  - Albert Cardona"s comprehensive [Fiji Jython tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/) (please note that it is better idea to contribute tutorials to the ImageJ/Fiji wiki directly).' %}
 
-**Note:** To copy the snippets, just double-click somewhere into the
-code. If Javascript is enabled, this will automatically select the
-complete snippet.
+**Note:** To copy the snippets, just double-click somewhere into the code. If Javascript is enabled, this will automatically select the complete snippet.
 
 ## Opening an image using ImageJ
 
@@ -128,8 +120,7 @@ imps[0].show();
 
 #### Python
 
-See also [this python example
-script](https://gist.github.com/ctrueden/6282856)
+See also [this python example script](https://gist.github.com/ctrueden/6282856)
 
   - Ruby
 
@@ -177,8 +168,7 @@ function processFile(input, output, file) {
 }
 ```
 
-See also the tutorial *[How to apply a common operation to a complete
-directory](How_to_apply_a_common_operation_to_a_complete_directory "wikilink")*.
+See also the tutorial *[How to apply a common operation to a complete directory](How_to_apply_a_common_operation_to_a_complete_directory "wikilink")*.
 
 #### Python
 
@@ -335,9 +325,7 @@ rm.runCommand("AND");
 
 ## Unlocking an image
 
-Sometimes things go wrong and all you see is "blabla.jpg is locked" when
-you try to process the image in some way. Then all you can do is to
-force-unlock the image, like so:
+Sometimes things go wrong and all you see is "blabla.jpg is locked" when you try to process the image in some way. Then all you can do is to force-unlock the image, like so:
 
 #### Beanshell
 
@@ -347,10 +335,7 @@ IJ.getImage().unlock();
 
 ## Scripting [SIFT](Feature_Extraction "wikilink")
 
-The *Scale-Invariant Feature Transform* poses a relatively powerful way
-to reduce the complexity when trying to find matching parts of large
-images. Fiji has an implementation of this algorithm which you can use
-like so:
+The *Scale-Invariant Feature Transform* poses a relatively powerful way to reduce the complexity when trying to find matching parts of large images. Fiji has an implementation of this algorithm which you can use like so:
 
 #### Beanshell
 
@@ -372,14 +357,11 @@ for (Feature feature : features)
     print("x: " + feature.location[0] + ", y: " + feature.location[1]);
 ```
 
-For more information, please browse the [Javadoc of the Feature
-class](http://javadoc.imagej.net/MPI-CBG/index.html?mpicbg/imagefeatures/Feature.html).
+For more information, please browse the [Javadoc of the Feature class](http://javadoc.imagej.net/MPI-CBG/index.html?mpicbg/imagefeatures/Feature.html).
 
 ## Plotting charts with JFreeChart
 
-[JFreeChart](http://www.jfree.org/jfreechart/) is a Java library for
-creating various charts. You can create charts as interactive JFrames,
-display them as an ImagePlus, or write them to SVG format.
+[JFreeChart](http://www.jfree.org/jfreechart/) is a Java library for creating various charts. You can create charts as interactive JFrames, display them as an ImagePlus, or write them to SVG format.
 
 #### Javascript
 
@@ -481,12 +463,7 @@ outputStream.close();
 
 ## Writing out movie files with JavaCV
 
-[JavaCV](https://github.com/bytedeco/javacv) is a Java wrapper around
-OpenCV and FFMPEG. You will have to unpack the libraries into
-`ImageJ.app/lib/`<platform>`/` (or `Fiji.app/lib/`<platform>`/`) to let
-JavaCV find the native libraries (e.g. unpack
-ffmpeg-macosx-x86\_64.jar's `.dylib` files directly into
-`ImageJ.app/lib/macosx/`) **before** starting ImageJ/Fiji.
+[JavaCV](https://github.com/bytedeco/javacv) is a Java wrapper around OpenCV and FFMPEG. You will have to unpack the libraries into `ImageJ.app/lib/`<platform>`/` (or `Fiji.app/lib/`<platform>`/`) to let JavaCV find the native libraries (e.g. unpack ffmpeg-macosx-x86\_64.jar's `.dylib` files directly into `ImageJ.app/lib/macosx/`) **before** starting ImageJ/Fiji.
 
 #### Beanshell
 

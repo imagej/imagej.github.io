@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [ImageJ1-ImageJ2 cheat
-    sheet](ImageJ1-ImageJ2_cheat_sheet "wikilink")
+1.  REDIRECT [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet "wikilink")

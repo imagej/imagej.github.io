@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2010-05-22 - 3D viewer published in BMC
-    Bioinformatics](2010-05-22_-_3D_viewer_published_in_BMC_Bioinformatics "wikilink")
+1.  REDIRECT [2010-05-22 - 3D viewer published in BMC Bioinformatics](2010-05-22_-_3D_viewer_published_in_BMC_Bioinformatics "wikilink")

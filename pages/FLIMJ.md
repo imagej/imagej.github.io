@@ -8,52 +8,36 @@ categories:
 description: test description
 ---
 
-{% capture maintainer %} {% include person content="Rueden" %} {%
-endcapture %}
 
-{% capture source %} {% include github org="slim-curve"
-repo="slim-plugin" %} {% endcapture %} {% include sidebox-right
-software='ImageJ' name='FLIMJ plugin'
-logo='![Slim-curve-icon.png](/images/pages/Slim-curve-icon.png "Slim-curve-icon.png")"'
-author='[CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
-[UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer
-filename='flimlib.jar, flimlib-""arch""-""ver"".jar,  
-flimj-ops-""ver"".jar' source=source version='1.0.0'
-website='https://flimlib.github.io/'
-category='[:Category:Analysis](:Category:Analysis "wikilink")' %}
+{% capture maintainer%}
+{% include person content='Rueden' %}
+{% endcapture %}
+
+{% capture source%}
+{% include github org='slim-curve' repo='slim-plugin' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='FLIMJ plugin' logo='![Slim-curve-icon.png](/images/pages/Slim-curve-icon.png "Slim-curve-icon.png")"' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
+[UW-Madison LOCI](http://loci.wisc.edu/) ' maintainer=maintainer filename='flimlib.jar, flimlib-""arch""-""ver"".jar,  
+flimj-ops-""ver"".jar' source=source latest-version='1.0.0' website='https://flimlib.github.io/' category='[:Category:Analysis](:Category:Analysis "wikilink")' %}
 
 ## Introduction
 
-The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data
-within ImageJ, using the [FLIMLib](https://flimlib.github.io/) library.
-The plugin can be installed into the [Fiji](Fiji "wikilink")
-distribution of ImageJ simply by enabling the FLIMJ [update
-site](update_site "wikilink"). Features include:
+The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data within ImageJ, using the [FLIMLib](https://flimlib.github.io/) library. The plugin can be installed into the [Fiji](Fiji "wikilink") distribution of ImageJ simply by enabling the FLIMJ [update site](update_site "wikilink"). Features include:
 
-  - Fit individual pixels, entire images per-pixel, or do global
-    analysis on entire images, using FLIMLib's rapid lifetime
-    determination (RLD), Levenberg-Marquardt (LMA) or global analysis
-    (Global) fitting algorithms
+  - Fit individual pixels, entire images per-pixel, or do global analysis on entire images, using FLIMLib's rapid lifetime determination (RLD), Levenberg-Marquardt (LMA) or global analysis (Global) fitting algorithms
   - Single, double and triple exponential fits
   - Gaussian, Poisson and Maximum Likelihood Estimation noise models
-  - Produce one or several fitted images depending which parameters (A,
-    τ, Z, χ²) are chosen for visualization
+  - Produce one or several fitted images depending which parameters (A, τ, Z, χ²) are chosen for visualization
   - Full control over the start and end fit cutoffs known as "cursors"
-  - Binning options for various kernel sizes to reduce noise and boost
-    intensity when fitting per-pixel
-  - Support for so-called "excitation" or "prompt" files containing a
-    recorded system response function to be convolved with the
-    exponential fit
-  - Batch processing support for analyzing many lifetime images as part
-    of a [scripting](scripting "wikilink") workflow
+  - Binning options for various kernel sizes to reduce noise and boost intensity when fitting per-pixel
+  - Support for so-called "excitation" or "prompt" files containing a recorded system response function to be convolved with the exponential fit
+  - Batch processing support for analyzing many lifetime images as part of a [scripting](scripting "wikilink") workflow
 
 ## Installation
 
-The FLIMJ plugin is available from the "FLIMJ" [update
-site](update_site "wikilink").
+The FLIMJ plugin is available from the "FLIMJ" [update site](update_site "wikilink").
 
-Once you have installed the FLIMJ plugin, it becomes available on the
-menu under {% include bc content='Analyze | Lifetime | FLIMJ'%}.
+Once you have installed the FLIMJ plugin, it becomes available on the menu under {% include bc content='Analyze | Lifetime | FLIMJ'%}.
 
 ## Usage
 

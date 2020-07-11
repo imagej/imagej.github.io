@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [Debugging\_intro\#Debugging\_plugins\_in\_an\_IDE\_.28Netbeans.2C\_IntelliJ.2C\_Eclipse.2C\_etc.29](Debugging_intro#Debugging_plugins_in_an_IDE_.28Netbeans.2C_IntelliJ.2C_Eclipse.2C_etc.29 "wikilink")
+1.  REDIRECT [Debugging\_intro\#Debugging\_plugins\_in\_an\_IDE\_.28Netbeans.2C\_IntelliJ.2C\_Eclipse.2C\_etc.29](Debugging_intro#Debugging_plugins_in_an_IDE_.28Netbeans.2C_IntelliJ.2C_Eclipse.2C_etc.29 "wikilink")

@@ -8,31 +8,26 @@ categories: Plugins,Transform,Interactive
 description: test description
 ---
 
-{% capture author %} {% include person content="Saalfeld" %}
-([1](mailto:saalfeld@mpi-cbg.de)) {% endcapture %}
 
-{% capture maintainer %} {% include person content="Saalfeld" %} {%
-endcapture %}
+{% capture author%}
+{% include person content='Saalfeld' %} ([1](mailto:saalfeld@mpi-cbg.de))
+{% endcapture %}
 
-{% capture source %} {% include github org="axtimwalde" repo="mpicbg"
-path="mpicbg\_/src/main/java/Stack\_Rotate.java" %} {% endcapture %} {%
-include sidebox-right name='Interactive Stack Rotation' software='Fiji'
-author=author maintainer=maintainer source=source released='September
-29<sup>th</sup>, 2009' version='February 26<sup>th</sup>, 2010'
-status='stable, active'
-category='[Plugins](:Category:Plugins "wikilink"),
-[Transform](:Category:Transform "wikilink")' %}
+{% capture maintainer%}
+{% include person content='Saalfeld' %}
+{% endcapture %}
+
+{% capture source%}
+{% include github org='axtimwalde' repo='mpicbg' path='mpicbg\_/src/main/java/Stack\_Rotate.java' %}
+{% endcapture %}
+{% include info-box name='Interactive Stack Rotation' software='Fiji' author=author maintainer=maintainer source=source released='September 29<sup>th</sup>, 2009' latest-version='February 26<sup>th</sup>, 2010' status='stable, active' category='[Plugins](:Category:Plugins "wikilink"), [Transform](:Category:Transform "wikilink")' %}
 
 Here is a screencast how to use the Interactive Stack Rotation plugin:
 
-{% include youtube url="https://www.youtube.com/embed/7so6zkwvNeQ" %}
+{% include youtube url='https://www.youtube.com/embed/'%}
 
-For a quick overview of keyboard shortcuts, please press the {% include
-key content='F1' %} key to be shown this usage:
+For a quick overview of keyboard shortcuts, please press the {% include key content='F1' %} key to be shown this usage:
 
-![InteractiveStackRotation.jpg](/images/pages/InteractiveStackRotation.jpg
-"InteractiveStackRotation.jpg")"
+![InteractiveStackRotation.jpg](/images/pages/InteractiveStackRotation.jpg "InteractiveStackRotation.jpg")"
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Transform](Category:Transform "wikilink")
-[Category:Interactive](Category:Interactive "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Transform](Category:Transform "wikilink") [Category:Interactive](Category:Interactive "wikilink")

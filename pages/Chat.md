@@ -8,24 +8,13 @@ categories: Help
 description: test description
 ---
 
-[ImageJ](ImageJ "wikilink") community members are often available via a
-couple of different chat services.
+[ImageJ](ImageJ "wikilink") community members are often available via a couple of different chat services.
 
-{% include sidebox-right content='If you have ""image analysis""
-questions, it is better to use the [Image.sc
-Forum](https://forum.image.sc/), rather than chat rooms. Most of ImageJ
-community"s image analysis experts frequent the Image.sc Forum, not live
-chat rooms.' %}
+{% include info-box content='If you have ""image analysis"" questions, it is better to use the [Image.sc Forum](https://forum.image.sc/), rather than chat rooms. Most of ImageJ community"s image analysis experts frequent the Image.sc Forum, not live chat rooms.' %}
 
 ## Gitter
 
-The [Gitter](wikipedia:Gitter "wikilink") chat service, while relatively
-new, is a great way to discuss *programming* issues with developers of
-the [SciJava](SciJava "wikilink") component collection. All you need is
-either a [GitHub](https://github.com/) or
-[Twitter](https://twitter.com/) account. Advantages of Gitter include a
-nice "21st century" web interface, email notification when participants
-miss messages, and a full searchable history.
+The [Gitter](wikipedia:Gitter "wikilink") chat service, while relatively new, is a great way to discuss *programming* issues with developers of the [SciJava](SciJava "wikilink") component collection. All you need is either a [GitHub](https://github.com/) or [Twitter](https://twitter.com/) account. Advantages of Gitter include a nice "21st century" web interface, email notification when participants miss messages, and a full searchable history.
 
 |                                                          |                               |                                                   |
 | -------------------------------------------------------- | ----------------------------- | ------------------------------------------------- |
@@ -39,16 +28,13 @@ miss messages, and a full searchable history.
 
 ## IRC
 
-Some community members frequent
-[IRC](wikipedia:Internet_Relay_Chat "wikilink") on
-[irc.freenode.net](http://freenode.net/), in chat rooms:
+Some community members frequent [IRC](wikipedia:Internet_Relay_Chat "wikilink") on [irc.freenode.net](http://freenode.net/), in chat rooms:
 
 | Channel                                           | Description                                                          | Chat logs                                                     |
 | ------------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------- |
 | [\#imagejdev](irc://irc.freenode.net/imagejdev)   | Core ImageJ development discussion.                                  | [imagejdev logs](http://code.imagej.net/chatlogs/imagejdev)   |
 | [\#fiji-devel](irc://irc.freenode.net/fiji-devel) | [Fiji](Fiji "wikilink") user and developer discussion and questions. | [fiji-devel logs](http://code.imagej.net/chatlogs/fiji-devel) |
 
-Advantages of IRC include anonymity, and maximum compatibility with a
-huge variety of existing chat clients.
+Advantages of IRC include anonymity, and maximum compatibility with a huge variety of existing chat clients.
 
 [Category:Help](Category:Help "wikilink")

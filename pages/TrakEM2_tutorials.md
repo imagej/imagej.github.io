@@ -10,143 +10,111 @@ description: test description
 
 ## Video tutorial on the basic recipe for TrakEM2
 
-![TrakEM2 basic tutorial](/images/pages/Screenshot-TrakEM2_basics_tutorial.png
-"TrakEM2 basic tutorial")"
+![TrakEM2 basic tutorial](/images/pages/Screenshot-TrakEM2_basics_tutorial.png "TrakEM2 basic tutorial")"
 
-This is the [basic tutorial for
-TrakEM2](TrakEM2_basics_tutorial "wikilink"). **If you are new to
-TrakEM2, please start by watching [this
-tutorial](TrakEM2_basics_tutorial "wikilink")**. It includes:
+This is the [basic tutorial for TrakEM2](TrakEM2_basics_tutorial "wikilink"). **If you are new to TrakEM2, please start by watching [this tutorial](TrakEM2_basics_tutorial "wikilink")**. It includes:
 
   - Importing an image stack.
-  - Registering stack slices manually, using color overlays and affine
-    transforms.
+  - Registering stack slices manually, using color overlays and affine transforms.
   - Defining a template tree structure for your segmentations.
   - Segmenting cells across multiple sections.
   - 3D visualization.
 
-{% include clear %}
+{% include clear%}
+
 
 ## Video tutorial on segmenting/outlining objects over multiple sections in 3D
 
-![TrakEM2 brushing (This video tutorial was made by Albert Cardona. To
-visualize it, you need a mp4 player.)](/images/pages/Arealists-brushing.jpg
-"TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)")"
-This mp4 [video
-tutorial](http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4)
-covers:
+![TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)](/images/pages/Arealists-brushing.jpg "TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)")" This mp4 [video tutorial](http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4) covers:
 
-  - How to use the PEN tool with "area lists" segmentation type (paint
-    an area, flood-fill, erase, flood-erase).
-  - How to use ROIs (selections like polygon and freeroi) to edit "area
-    lists".
+  - How to use the PEN tool with "area lists" segmentation type (paint an area, flood-fill, erase, flood-erase).
+  - How to use ROIs (selections like polygon and freeroi) to edit "area lists".
 
-See also the list of [key bindings for
-AreaList](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#edit_arealist).
+See also the list of [key bindings for AreaList](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#edit_arealist).
 
-{% include clear %}
+{% include clear%}
+
 
 ## Video tutorial on aligning sections
 
-![TrakEM2 align sections
-tutorial](/images/pages/Screenshot-TrakEM2_align_sections_tutorial.png
-"TrakEM2 align sections tutorial")"
+![TrakEM2 align sections tutorial](/images/pages/Screenshot-TrakEM2_align_sections_tutorial.png "TrakEM2 align sections tutorial")"
 
-[This video tutorial](TrakEM2_align_sections_tutorial "wikilink") is
-focused on:
+[This video tutorial](TrakEM2_align_sections_tutorial "wikilink") is focused on:
 
   - Automatically registering sections.
   - Selecting feature extraction parameters.
 
-See also the feature extraction and alignment [parameters
-explained](http://www.ini.uzh.ch/~acardona/howto.html#sift_parameters).
+See also the feature extraction and alignment [parameters explained](http://www.ini.uzh.ch/~acardona/howto.html#sift_parameters).
 
-{% include clear %}
+{% include clear%}
+
 
 ## Video tutorial on manual segmentation modes
 
-![TrakEM2 manual segmentation
-modes](/images/pages/Screenshot-TrakEM2-Manual-Segmentation-Modes-Tutorial.png
-"TrakEM2 manual segmentation modes")"
+![TrakEM2 manual segmentation modes](/images/pages/Screenshot-TrakEM2-Manual-Segmentation-Modes-Tutorial.png "TrakEM2 manual segmentation modes")"
 
-[Tutorial on how to manually segment cells using the 3 segmentation
-modes](TrakEM2_segmentation_modes_tutorial "wikilink"):
+[Tutorial on how to manually segment cells using the 3 segmentation modes](TrakEM2_segmentation_modes_tutorial "wikilink"):
 
   - Overlap  
-    multiple arealists can coexist in space (the normal mode; arealists
-    are independent).
+    multiple arealists can coexist in space (the normal mode; arealists are independent).
   - Exclude  
-    when painting in an arealist, do not allow paint to occur over any
-    other existing arealist.
+    when painting in an arealist, do not allow paint to occur over any other existing arealist.
   - Erode  
-    when painting in an arealist, paint in the current but erase any
-    other arealist.
+    when painting in an arealist, paint in the current but erase any other arealist.
 
-{% include clear %}
+{% include clear%}
+
 
 ## Video tutorial on semi-automatic segmentation
 
-![TrakEM2 semi-automatic
-segmentation](/images/pages/Screenshot-TrakEM2-tutorial-automatic-segmentation.png
-"TrakEM2 semi-automatic segmentation")"
+![TrakEM2 semi-automatic segmentation](/images/pages/Screenshot-TrakEM2-tutorial-automatic-segmentation.png "TrakEM2 semi-automatic segmentation")"
 
-In [this video
-tutorial](TrakEM2_semi-automatic_segmentation_tutorial "wikilink") you
-will learn:
+In [this video tutorial](TrakEM2_semi-automatic_segmentation_tutorial "wikilink") you will learn:
 
   - How to segment cells by only one click.
   - Fast marching method tool in TrakEM2.
   - Selecting segmentation parameters.
 
-{% include clear %}
+{% include clear%}
+
 
 ## Video tutorial on measuring surfaces and volumes
 
-![TrakEM2 measuring surfaces and
-volumes](/images/pages/Screenshot-TrakEM2-tutorial-measure-surfaces.png
-"TrakEM2 measuring surfaces and volumes")"
+![TrakEM2 measuring surfaces and volumes](/images/pages/Screenshot-TrakEM2-tutorial-measure-surfaces.png "TrakEM2 measuring surfaces and volumes")"
 
-In [this video tutorial](TrakEM2_measurements_tutorial "wikilink") you
-will learn how to:
+In [this video tutorial](TrakEM2_measurements_tutorial "wikilink") you will learn how to:
 
   - Extract information from TrakEM2 project objects.
   - Save measurements into files.
 
-See also [AreaList
-measurements](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#measure_arealist)
-in the TrakEM2 manual, with figures.
+See also [AreaList measurements](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#measure_arealist) in the TrakEM2 manual, with figures.
 
-{% include clear %}
+{% include clear%}
+
 
 ## Video tutorial on adding sections/layers to an existing project
 
-![TrakEM2 adding layers to existing
-project](/images/pages/Screenshot-TrakEM2-tutorial-add-layers.png
-"TrakEM2 adding layers to existing project")"
+![TrakEM2 adding layers to existing project](/images/pages/Screenshot-TrakEM2-tutorial-add-layers.png "TrakEM2 adding layers to existing project")"
 
-[Here](TrakEM2_add_more_sections/layers_tutorial "wikilink") you will
-learn how to:
+[Here](TrakEM2_add_more_sections/layers_tutorial "wikilink") you will learn how to:
 
   - Open an image sequence as a virtual stack in Fiji.
   - Calibrate the virtual stack.
-  - Import the virtual stack into TrakEM2 as a sequence of layers
-    (sections), one image per layer.
+  - Import the virtual stack into TrakEM2 as a sequence of layers (sections), one image per layer.
 
-In the tutorial, the layers are imported following an existing set of
-layers, i.e. concatenating to enlarge the collection of sections.
+In the tutorial, the layers are imported following an existing set of layers, i.e. concatenating to enlarge the collection of sections.
 
-{% include clear %}
+{% include clear%}
+
 
 ## Video tutorial on saving a project
 
-![TrakEM2 saving a project](/images/pages/Screenshot-TrakEM2-save-project.png
-"TrakEM2 saving a project")"
+![TrakEM2 saving a project](/images/pages/Screenshot-TrakEM2-save-project.png "TrakEM2 saving a project")"
 
-  - [Saving a TrakEM2
-    project](TrakEM2_saving_project_tutorial "wikilink") into an .XML
-    file.
+  - [Saving a TrakEM2 project](TrakEM2_saving_project_tutorial "wikilink") into an .XML file.
 
-{% include clear %}
+{% include clear%}
+
 
 ## Video tutorial on 3D reconstruction from serial section
 
@@ -158,5 +126,4 @@ TODO GOOGLE SPREADSHEET WIDGET
   - [TrakEM2](TrakEM2 "wikilink") wiki page
   - [TrakEM2 web page](http://www.ini.uzh.ch/~acardona/trakem2.html)
 
-[Category:TrakEM2](Category:TrakEM2 "wikilink")
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:TrakEM2](Category:TrakEM2 "wikilink") [Category:Tutorials](Category:Tutorials "wikilink")

@@ -10,10 +10,7 @@ description: test description
 
 ## Purpose
 
-This [javascript](Javascript_Scripting "wikilink") code displays the
-Fiji logo in 3D, within the [3D Viewer](3D_Viewer "wikilink"), and
-illustrate how to create and display 3D objects from a script, using
-Fiji facilities.
+This [javascript](Javascript_Scripting "wikilink") code displays the Fiji logo in 3D, within the [3D Viewer](3D_Viewer "wikilink"), and illustrate how to create and display 3D objects from a script, using Fiji facilities.
 
 The script is maintained by {% include person content='Schindelin' %}.
 
@@ -105,5 +102,4 @@ universe.show();
   - [Javascript Scripting](Javascript_Scripting "wikilink")
   - [3D Viewer](3D_Viewer "wikilink")
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Scripting](Category:Scripting "wikilink")

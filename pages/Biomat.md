@@ -8,56 +8,38 @@ categories: Plugins,Filtering
 description: test description
 ---
 
-{% capture source %} {% include github org="jiri-janacek" repo="biomat"
-%} {% endcapture %} {% include sidebox-right software='ImageJ'
-name='Biomat' maintainer='[Jiří
-Janáček](mailto:jiri.janacek_at_fgu.cas.cz)' author='Jiří Janáček'
-source=source released='03/26/2019' version='03/26/2019' status=''
-website='' %}
+
+{% capture source%}
+{% include github org='jiri-janacek' repo='biomat' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='Biomat' maintainer='[Jiří Janáček](mailto:jiri.janacek_at_fgu.cas.cz)' author='Jiří Janáček' source=source released='03/26/2019' latest-version='03/26/2019' status='' website='' %}
 
 ## Plugins for 3D image preprocessing.
 
-**Stack Linear Contrast** - multiplies images in stack by coefficient
-obtained by linear interpolation of the "first" and "last" coefficient.
-A simple tool for compensation of contrast decreasing with depth within
-thick sample.
+**Stack Linear Contrast** - multiplies images in stack by coefficient obtained by linear interpolation of the "first" and "last" coefficient. A simple tool for compensation of contrast decreasing with depth within thick sample.
 
-**Lipschitz 3D** Filter - top hat - subtracts slowly varying background
-calculated as lower Lipschitz envelope from the image.
+**Lipschitz 3D** Filter - top hat - subtracts slowly varying background calculated as lower Lipschitz envelope from the image.
 
-Preprocessing example: [Image of capillaries in
-brain](https://imagej.net/_images/2/2e/Capillaries_brain.zip)
+Preprocessing example: [Image of capillaries in brain](https://imagej.net/_images/2/2e/Capillaries_brain.zip)
 
-  - {% include bc content='Plugins | Biomat | Stack Linear Contrast'%}
-    with parameters (multiplyers) "first"= 1.0 and "last"= 3.0
-  - {% include bc content='Process | Filters | Gaussian blur 3D'%} with
-    "sigma"= 1 pixel
-  - {% include bc content='Plugins | Biomat | Lipschitz 3D Filter'%}
-    with parameter "slope"= 2 / pixel
+  - {% include bc content='Plugins | Biomat | Stack Linear Contrast'%} with parameters (multiplyers) "first"= 1.0 and "last"= 3.0
+  - {% include bc content='Process | Filters | Gaussian blur 3D'%} with "sigma"= 1 pixel
+  - {% include bc content='Plugins | Biomat | Lipschitz 3D Filter'%} with parameter "slope"= 2 / pixel
 
 ## Plugins for detection of fibres in 3D image.
 
-**Tensor Line 3D Filter** - enhances white fibers of uniform width
-sparsely distributed on dark background.
+**Tensor Line 3D Filter** - enhances white fibers of uniform width sparsely distributed on dark background.
 
-Example: [Image of capillaries in adipose
-tissue](https://imagej.net/_images/e/e8/Capillaries_adipose.zip).
+Example: [Image of capillaries in adipose tissue](https://imagej.net/_images/e/e8/Capillaries_adipose.zip).
 
-  - {% include bc content='Plugins | Biomat | Tensor Line 3D Filter'%}
-    with "sigma" set to 3 pixels
+  - {% include bc content='Plugins | Biomat | Tensor Line 3D Filter'%} with "sigma" set to 3 pixels
   - {% include bc content='Image | Adjust | Brightness/Contrast'%}
-  - {% include bc content='Process | Filters | Gaussian blur 3D'%} with
-    "sigma"= 1 pixel
+  - {% include bc content='Process | Filters | Gaussian blur 3D'%} with "sigma"= 1 pixel
 
-**Vector Line 3D Filter** - enhances white fibers of varying thickness.
-Crossection of the fibers need not be circular. Parameter "sigma" in
-pixels corresponds to the largest diameter.
+**Vector Line 3D Filter** - enhances white fibers of varying thickness. Crossection of the fibers need not be circular. Parameter "sigma" in pixels corresponds to the largest diameter.
 
-Example: [Image of capillaries in embryonic
-heart](https://imagej.net/_images/e/e9/Capillaries_heart.zip).
+Example: [Image of capillaries in embryonic heart](https://imagej.net/_images/e/e9/Capillaries_heart.zip).
 
-  - {% include bc content='Plugins | Biomat | Vector Line 3D Filter'%}
-    with parameters "sigma"= 4 pixels, "scale number"= 2
+  - {% include bc content='Plugins | Biomat | Vector Line 3D Filter'%} with parameters "sigma"= 4 pixels, "scale number"= 2
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Filtering](Category:Filtering "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Filtering](Category:Filtering "wikilink")

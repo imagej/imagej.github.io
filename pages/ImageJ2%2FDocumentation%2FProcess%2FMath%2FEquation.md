@@ -8,17 +8,11 @@ categories:
 description: test description
 ---
 
-This page documents that language that can be used to specify equations
-via the {% include bc content='Process | Math | Equation'%} command.
+This page documents that language that can be used to specify equations via the {% include bc content='Process | Math | Equation'%} command.
 
-The {% include bc content='Process | Math | Equation'%} dialog supports
-a powerful language for defining equations that can be used to fill
-images with data.
+The {% include bc content='Process | Math | Equation'%} dialog supports a powerful language for defining equations that can be used to fill images with data.
 
-An equation is defined by a list of index variable declarations and a
-formula definition. If the formula does not refer to any index variables
-they can be omitted from the definition. (Index variables are discussed
-a bit later)
+An equation is defined by a list of index variable declarations and a formula definition. If the formula does not refer to any index variables they can be omitted from the definition. (Index variables are discussed a bit later)
 
 For example here is the most basic definition:
 
@@ -26,8 +20,7 @@ For example here is the most basic definition:
 
 </UL>
 
-When you query this equation it returns the value 12. Note that there
-are no index variable definitions.
+When you query this equation it returns the value 12. Note that there are no index variable definitions.
 
 Here is an example of an equation with index variable definitions:
 
@@ -35,54 +28,37 @@ Here is an example of an equation with index variable definitions:
 
 </UL>
 
-When you query this equation for a loaded image it substitutes each x
-index for u and each y index for v and returns u + v (resulting in a
-ramp).
+When you query this equation for a loaded image it substitutes each x index for u and each y index for v and returns u + v (resulting in a ramp).
 
-Note that index names do not have to be those defined in ImageJ 1.x
-(i.e. x, y, c, z, or t). They can be any name you designate. The key
-concept is that the order of index definition is important. If your
-input image is defined such that it has axes \[X,Y,FREQUENCY\] you want
-your equation to match (i.e. "\[u,v,freq\] , freq \* 1.3" )
+Note that index names do not have to be those defined in ImageJ 1.x (i.e. x, y, c, z, or t). They can be any name you designate. The key concept is that the order of index definition is important. If your input image is defined such that it has axes \[X,Y,FREQUENCY\] you want your equation to match (i.e. "\[u,v,freq\] , freq \* 1.3" )
 
-If you have a multidimensional set of data it is important to specify
-all axes as index variables. For instance for a 5d \[X,Y,Z,C,T\] data
-set we might want an equation that sets the pixel value to 2 times the
-time index. If you specified it like this
+If you have a multidimensional set of data it is important to specify all axes as index variables. For instance for a 5d \[X,Y,Z,C,T\] data set we might want an equation that sets the pixel value to 2 times the time index. If you specified it like this
 
 "\[ t \] , t \* 2"
 
 </UL>
 
-the input image would substitute x values for the t variable and you
-would not get what you want. A correct specification would be:
+the input image would substitute x values for the t variable and you would not get what you want. A correct specification would be:
 
 "\[x,y,z,c,t\] , t \* 2"
 
 </UL>
 
-However one can underspecify a set of axes without issue if they are not
-used. Given an input image whose axes are \[X,Y,Z,C,T\] one can legally
-specify a function like this:
+However one can underspecify a set of axes without issue if they are not used. Given an input image whose axes are \[X,Y,Z,C,T\] one can legally specify a function like this:
 
 "\[x,y,z\], x + z"
 
 </UL>
 
-Notice that we don't care about the Y axis but we specify it to keep the
-positional indexes populated correctly. And we are ignoring the C and T
-axes.
+Notice that we don't care about the Y axis but we specify it to keep the positional indexes populated correctly. And we are ignoring the C and T axes.
 
-One can also use the current image's data values as input to an
-equation. For instance here is an example that does so:
+One can also use the current image's data values as input to an equation. For instance here is an example that does so:
 
 "img+23"
 
 </UL>
 
-When you query this equation for a loaded image it substitutes each
-pixel value for the "img" function and adds 23 to it (resulting in a
-brightening).
+When you query this equation for a loaded image it substitutes each pixel value for the "img" function and adds 23 to it (resulting in a brightening).
 
 Equations are specified in pieces. The equation language supports:
 
@@ -105,8 +81,7 @@ Here are some simple examples:
   - "img"
   - "\[x,y\] , sin(y)"
 
-There are numerous built in functions that can appear in an equation.
-For reference they are enumerated here:
+There are numerous built in functions that can appear in an equation. For reference they are enumerated here:
 
 <B>abs</B> : example ( "\[x,y\] , abs(y) " )
 
@@ -118,8 +93,7 @@ For reference they are enumerated here:
 
 <B>acosh</B> : example ( "\[x,y\] , acosh(y) " )
 
-  - Returns the angle in radians whose hyperbolic cosine equals the
-    given input.
+  - Returns the angle in radians whose hyperbolic cosine equals the given input.
 
 <B>acot</B> : example ( "\[x,y\] , acot(y) " )
 
@@ -127,8 +101,7 @@ For reference they are enumerated here:
 
 <B>acoth</B> : example ( "\[x,y\] , acoth(y) " )
 
-  - Returns the angle in radians whose hyperbolic cotangent equals the
-    given input.
+  - Returns the angle in radians whose hyperbolic cotangent equals the given input.
 
 <B>acsc</B> : example ( "\[x,y\] , acsc(y) " )
 
@@ -136,14 +109,11 @@ For reference they are enumerated here:
 
 <B>acsch</B> : example ( "\[x,y\] , acsch(y) " )
 
-  - Returns the angle in radians whose hyperbolic cosecant equals the
-    given input.
+  - Returns the angle in radians whose hyperbolic cosecant equals the given input.
 
-<B>angle</B> : example ( "\[x,y,z,c,t\] , angle(z,t) " ) \[Note - two
-index variable name arguments\]
+<B>angle</B> : example ( "\[x,y,z,c,t\] , angle(z,t) " ) \[Note - two index variable name arguments\]
 
-  - Returns the angle in radians of a given pixel along two specified
-    axes.
+  - Returns the angle in radians of a given pixel along two specified axes.
 
 <B>asec</B> : example ( "\[x,y\] , asec(y) " )
 
@@ -151,8 +121,7 @@ index variable name arguments\]
 
 <B>asech</B> : example ( "\[x,y\] , asech(y) " )
 
-  - Returns the angle in radians whose hyperbolic secant equals the
-    given input.
+  - Returns the angle in radians whose hyperbolic secant equals the given input.
 
 <B>asin</B> : example ( "\[x,y\] , asin(y) " )
 
@@ -160,8 +129,7 @@ index variable name arguments\]
 
 <B>asinh</B> : example ( "\[x,y\] , asinh(y) " )
 
-  - Returns the angle in radians whose hyperbolic sine equals the given
-    input.
+  - Returns the angle in radians whose hyperbolic sine equals the given input.
 
 <B>atan</B> : example ( "\[x,y\] , atan(y) " )
 
@@ -169,8 +137,7 @@ index variable name arguments\]
 
 <B>atanh</B> : example ( "\[x,y\] , atanh(y) " )
 
-  - Returns the angle in radians whose hyperbolic tangent equals the
-    given input.
+  - Returns the angle in radians whose hyperbolic tangent equals the given input.
 
 <B>cbrt</B> : example ( "\[x,y\] , cbrt(y) " )
 
@@ -178,8 +145,7 @@ index variable name arguments\]
 
 <B>ceil</B> : example ( "\[x,y\] , ceil(y) " )
 
-  - Returns the result of pushing a non integral input value to the next
-    higher integral value.
+  - Returns the result of pushing a non integral input value to the next higher integral value.
 
 <B>cos</B> : example ( "\[x,y\] , cos(y) " )
 
@@ -207,34 +173,27 @@ index variable name arguments\]
 
 <B>dctr</B> : example ( "\[x,y\] , dctr" ) \[Note - no arguments\]
 
-  - Returns the distance from the center of the image for each input
-    pixel.
+  - Returns the distance from the center of the image for each input pixel.
 
-<B>dim</B> : example ( "\[x,y,z\], dim(z)" ) \[Note - one index variable
-name argument\]
+<B>dim</B> : example ( "\[x,y,z\], dim(z)" ) \[Note - one index variable name argument\]
 
-  - Returns the dimension of a specified axis of an input image. I.e.
-    for a 200x500 image dim(y) would be 500.
+  - Returns the dimension of a specified axis of an input image. I.e. for a 200x500 image dim(y) would be 500.
 
 <B>exp</B> : example ( "\[x,y\] , exp(y) " )
 
-  - Returns the result of raising the constant E to the power equal to
-    the given input.
+  - Returns the result of raising the constant E to the power equal to the given input.
 
 <B>expm1</B> : example ( "\[x,y\] , expm1(y) " )
 
-  - Returns the result of raising the constant E to the power equal to
-    the given input and subtracting one.
+  - Returns the result of raising the constant E to the power equal to the given input and subtracting one.
 
 <B>floor</B> : example ( "\[x,y\] , floor(y) " )
 
-  - Returns the result of truncating an input value to an integral
-    value.
+  - Returns the result of truncating an input value to an integral value.
 
 <B>gauss</B> : example ( "\[x,y\] , gauss(y) " )
 
-  - Returns a gaussian random variable of mean 0 and whose standard
-    deviation matches the input value.
+  - Returns a gaussian random variable of mean 0 and whose standard deviation matches the input value.
 
 <B>img</B> : example ( "\[x,y\] , img " ) \[Note - no arguments\]
 
@@ -266,18 +225,15 @@ name argument\]
 
 <B>rand</B> : example ( "\[x,y\] , rand(y) " )
 
-  - Returns a random number uniformly distributed on the range of 0 up
-    to but not including the input value.
+  - Returns a random number uniformly distributed on the range of 0 up to but not including the input value.
 
 <B>rint</B> : example ( "\[x,y\] , rint(y) " )
 
-  - Returns the result of rounding a given input value to the nearest
-    integer value (redundant).
+  - Returns the result of rounding a given input value to the nearest integer value (redundant).
 
 <B>round</B> : example ( "\[x,y\] , round(y) " )
 
-  - Returns the result of rounding a given input value to the nearest
-    integer value (redundant).
+  - Returns the result of rounding a given input value to the nearest integer value (redundant).
 
 <B>sec</B> : example ( "\[x,y\] , sec(y) " )
 
@@ -289,8 +245,7 @@ name argument\]
 
 <B>signum</B> : example ( "\[x,y\] , signum(y) " )
 
-  - Returns -1, 0, or 1 depending upon whether a given input value is
-    negative, zero, or positive.
+  - Returns -1, 0, or 1 depending upon whether a given input value is negative, zero, or positive.
 
 <B>sin</B> : example ( "\[x,y\] , sin(y) " )
 
@@ -330,23 +285,14 @@ name argument\]
 
 <B>tmax</B> : example ( "\[x,y\], tmax " ) \[Note - no arguments\]
 
-  - Returns the maximum possible value of a pixel for a given input
-    image. For an unsigned 8-bit image the value would be 255 and for a
-    signed 8-bit image the value would be 127.
+  - Returns the maximum possible value of a pixel for a given input image. For an unsigned 8-bit image the value would be 255 and for a signed 8-bit image the value would be 127.
 
 <B>tmin</B> : example ( "\[x,y\], tmin " ) \[Note - no arguments\]
 
-  - Returns the minimum possible value of a pixel for a given input
-    image. For an unsigned 8-bit image the value would be 0 and for a
-    signed 8-bit image the value would be -128.
+  - Returns the minimum possible value of a pixel for a given input image. For an unsigned 8-bit image the value would be 0 and for a signed 8-bit image the value would be -128.
 
 <B>ulp</B> : example ( "\[x,y\], ulp(y) " )
 
-  - Returns the the positive distance between the input floating-point
-    value and the floating point value next larger in magnitude.
+  - Returns the the positive distance between the input floating-point value and the floating point value next larger in magnitude.
 
-We can compare this language to the ImageJ 1.x {% include bc
-content='Process | Math | Macro'%} language. In ImageJ 1.x the default
-macro for the command is defined as "v = v + 50\*sin(d/10)". Note that
-this exact string is not legal syntax in the new equation language. But
-it can now be specified as "img+50\*sin(dctr/10)".
+We can compare this language to the ImageJ 1.x {% include bc content='Process | Math | Macro'%} language. In ImageJ 1.x the default macro for the command is defined as "v = v + 50\*sin(d/10)". Note that this exact string is not legal syntax in the new equation language. But it can now be specified as "img+50\*sin(dctr/10)".

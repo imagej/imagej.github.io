@@ -8,10 +8,6 @@ categories: News
 description: test description
 ---
 
-Francisco Jiménez Hernández wrote the [Retinex](Retinex "wikilink")
-plugin, which implements an algorithm that tries to imitate human vision
-to enhance contrast in color images. The original home page of the
-plugin is on [Gabriel Landini's
-website](http://www.mecourse.com/landinig/software/retinex/retinex.html).
+Francisco Jiménez Hernández wrote the [Retinex](Retinex "wikilink") plugin, which implements an algorithm that tries to imitate human vision to enhance contrast in color images. The original home page of the plugin is on [Gabriel Landini's website](http://www.mecourse.com/landinig/software/retinex/retinex.html).
 
 [Category:News](Category:News "wikilink")

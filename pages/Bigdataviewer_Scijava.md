@@ -8,46 +8,22 @@ categories:
 description: test description
 ---
 
-As announced in the forum
-[here](https://forum.image.sc/t/getting-bigdataviewer-instance-in-an-imagej-command/21110/8)
-and
-[here](https://forum.image.sc/t/fiji-commands-for-bigdataviewer/25601),
-this repository aims at a better integration of BigDataViewer into FIJI
-by using the Scijava Framework.
+As announced in the forum [here](https://forum.image.sc/t/getting-bigdataviewer-instance-in-an-imagej-command/21110/8) and [here](https://forum.image.sc/t/fiji-commands-for-bigdataviewer/25601), this repository aims at a better integration of BigDataViewer into FIJI by using the Scijava Framework.
 
 ## Installation
 
-Enable the [update site](https://imagej.net/Following_an_update_site)
-(https://biop.epfl.ch/Fiji-Update-Bdv/) to activate
-bigdataviewer\_scijava commands. All commands from this update site are
-present in the github repository
-[bigdataviewer\_scijava](https://github.com/BIOP/bigdataviewer_scijava).
-A [list of all
-commands](https://github.com/BIOP/bigdataviewer_scijava#list-of-all-commands-of-the-repository)
-can be found in the repository.
+Enable the [update site](https://imagej.net/Following_an_update_site) (https://biop.epfl.ch/Fiji-Update-Bdv/) to activate bigdataviewer\_scijava commands. All commands from this update site are present in the github repository [bigdataviewer\_scijava](https://github.com/BIOP/bigdataviewer_scijava). A [list of all commands](https://github.com/BIOP/bigdataviewer_scijava#list-of-all-commands-of-the-repository) can be found in the repository.
 
 ## Goals
 
-  - **Modularity for bigdataviewer\!** Being able to combine scripts or
-    code for display and processing. This update site creates a way to
-    access an existing BDV instance when scripting or writing java code.
-  - **Provide a set of macro recordable commands for bigdataviewer**.
-    Makes it possible to script basic actions on BigDataViewer with the
-    IJ1 recorder.
+  - **Modularity for bigdataviewer\!** Being able to combine scripts or code for display and processing. This update site creates a way to access an existing BDV instance when scripting or writing java code.
+  - **Provide a set of macro recordable commands for bigdataviewer**. Makes it possible to script basic actions on BigDataViewer with the IJ1 recorder.
 
 ## What you can do with this update site
 
-By using Scijava framework to store BigDataViewer windows through its
-`BdvHandle` interface, it is possible to communicate bdv instances
-between scripts and commands (see [script parameter
-page](https://imagej.net/Script_Parameters)). This also facilitates the
-use of FIJI GUI because the commands of this repository can be chained
-easily. Any script or Command which declares a `BdvHandle` parameter can
-retrieve or provide reference to existing BigDataViewer instances.
+By using Scijava framework to store BigDataViewer windows through its `BdvHandle` interface, it is possible to communicate bdv instances between scripts and commands (see [script parameter page](https://imagej.net/Script_Parameters)). This also facilitates the use of FIJI GUI because the commands of this repository can be chained easily. Any script or Command which declares a `BdvHandle` parameter can retrieve or provide reference to existing BigDataViewer instances.
 
-In practice, Bdv windows created via the commands from this update site
-are put by default in the `ObjectService`. To get a reference to these
-windows:
+In practice, Bdv windows created via the commands from this update site are put by default in the `ObjectService`. To get a reference to these windows:
 
   - In groovy, add this at the beginning of your script
 
@@ -70,34 +46,19 @@ BdvHandle bdvh;
 
 Two options:
 
-  - Use the command `BdvWindowCreate` from this repository and retrieve
-    its reference through SciJava parameter annotation. This will make
-    your Bdv Window accessible to other plugins / commands.
-  - Create your own Bdv window, but declare the associated `BdvHandle`
-    as an output of your Command:
+  - Use the command `BdvWindowCreate` from this repository and retrieve its reference through SciJava parameter annotation. This will make your Bdv Window accessible to other plugins / commands.
+  - Create your own Bdv window, but declare the associated `BdvHandle` as an output of your Command:
       - in Java: `@Parameter(type = ItemIO.OUTPUT); BdvHandle bdvh_out;`
 
-The type of the parameter annotation can also be `ItemIO.BOTH` if your
-command is modifying an existing `BdvHandle`
+The type of the parameter annotation can also be `ItemIO.BOTH` if your command is modifying an existing `BdvHandle`
 
 ## Secondary Goals
 
-This repo provide an implementation of all the command from the
-repository bigdataviewer\_fiji to make it scijava compatible, so it
-should have the same commands.
+This repo provide an implementation of all the command from the repository bigdataviewer\_fiji to make it scijava compatible, so it should have the same commands.
 
-  - Because complex bdv dataset (metadata, multiple views, channels...)
-    are usually organized into `SpimData` objects, this update site /
-    repository also provide tools to manipulate these objects, in a
-    scijava compatible manner. Hence declaring in groovy
-    `#@mpicbg.spim.data.generic.AbstractSpimData sd` or in java
-    `@Parameter AbstractSpimData asd;` allows to manipulate and
-    communicate such objects.
-  - Easy visualization of the bdv sources present in a Bdv Window (-\>
-    access to display options). Right clicking on selected source also
-    enables to access basic display operations.
-  - Easy edition with "standard actions" on bdv sources held within a
-    Bdv Handle:
+  - Because complex bdv dataset (metadata, multiple views, channels...) are usually organized into `SpimData` objects, this update site / repository also provide tools to manipulate these objects, in a scijava compatible manner. Hence declaring in groovy `#@mpicbg.spim.data.generic.AbstractSpimData sd` or in java `@Parameter AbstractSpimData asd;` allows to manipulate and communicate such objects.
+  - Easy visualization of the bdv sources present in a Bdv Window (-\> access to display options). Right clicking on selected source also enables to access basic display operations.
+  - Easy edition with "standard actions" on bdv sources held within a Bdv Handle:
       - transform
       - registration
       - export
@@ -113,8 +74,7 @@ https://www.youtube.com/watch?v=-q5qIdH9Idw (1 minute)
 
   - Open a sample image.
   - Change display settings.
-  - Double clicking on the source in the bdv window translate the window
-    to the origin of the source
+  - Double clicking on the source in the bdv window translate the window to the origin of the source
 
 #### 2 - IJ Script example
 
@@ -140,14 +100,12 @@ https://youtu.be/uOYWn7tUsf0 (7 minutes)
   - Transfer initial Voronoi Image into this window
   - Transfer transformed fractal into this window
   - Resample transformed Mandelbrot like Voronoi
-  - Save initial voronoi and transformed resampled mandelbrot into a new
-    dataset
+  - Save initial voronoi and transformed resampled mandelbrot into a new dataset
   - Close everything
   - Reopen saved dataset
   - Apply correct display settings
 
-Resampling is necessary because XML/Hdf5 do not allow to save procedural
-images.
+Resampling is necessary because XML/Hdf5 do not allow to save procedural images.
 
 ### Scripts
 
@@ -282,5 +240,4 @@ run("Transform Sources (Affine, string)", "sourceindexstring=0 bdvh_out=Bdv outp
 
 ## List of all commands
 
-The list of commands of this repository is available in the git
-repository : https://github.com/BIOP/bigdataviewer_scijava
+The list of commands of this repository is available in the git repository : https://github.com/BIOP/bigdataviewer_scijava

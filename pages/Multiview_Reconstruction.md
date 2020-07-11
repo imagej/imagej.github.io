@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [Multiview-Reconstruction](Multiview-Reconstruction "wikilink")
+1.  REDIRECT [Multiview-Reconstruction](Multiview-Reconstruction "wikilink")

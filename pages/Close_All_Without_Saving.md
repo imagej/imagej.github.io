@@ -8,6 +8,4 @@ categories:
 description: test description
 ---
 
-This ImageJ macro has been obsoleted by the {% include bc content='File
-| Close All'%} command. It is still in Fiji only for backwards
-compatibility.
+This ImageJ macro has been obsoleted by the {% include bc content='File | Close All'%} command. It is still in Fiji only for backwards compatibility.

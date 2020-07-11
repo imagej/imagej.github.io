@@ -8,31 +8,9 @@ categories:
 description: test description
 ---
 
-\_\_NOTOC\_\_{% include sidebox-right content='For a summary of
-[SciJava](SciJava "wikilink") licensing, see the
-[Licensing](Licensing "wikilink") page.' %} {% include menu-licenses
-%}The **GNU General Public License** is a free,
-**[copyleft](wikipedia:Copyleft "wikilink")** [open
-source](open_source "wikilink") license for software and other kinds of
-works. This is in contrast to **permissive** licenses like
-[BSD](BSD "wikilink"), which impose minimal restrictions on the
-redistribution of covered software. The GPL ensures that granted
-freedoms are preserved whenever the work is distributed, even when the
-work is changed or added to.
+\_\_NOTOC\_\_{% include info-box content='For a summary of [SciJava](SciJava "wikilink") licensing, see the [Licensing](Licensing "wikilink") page.' %} {% include menu-licenses%}
+The **GNU General Public License** is a free, **[copyleft](wikipedia:Copyleft "wikilink")** [open source](open_source "wikilink") license for software and other kinds of works. This is in contrast to **permissive** licenses like [BSD](BSD "wikilink"), which impose minimal restrictions on the redistribution of covered software. The GPL ensures that granted freedoms are preserved whenever the work is distributed, even when the work is changed or added to.
 
-See the [Wikipedia article on the
-GPL](wikipedia:GNU_General_Public_License "wikilink") for more
-information.
+See the [Wikipedia article on the GPL](wikipedia:GNU_General_Public_License "wikilink") for more information.
 
-{% include license name='GNU General Public License v3'
-shortname='GPLv3' description='Version 3 of the GPL is the latest
-version, written in 2007. It is the recommended version of the GPL to
-use for new projects.' url='http://www.gnu.org/licenses/gpl.html'
-choosealicense='gpl-3.0' osswatch='gplv3' osi='gpl-license' %} {%
-include license name='GNU General Public License v2' shortname='GPLv2'
-description='Version 2 of the GPL is an older version from 1991, which
-lacks some language relating to patents, as well as prevention of
-[Tivoization](wikipedia:Tivoization "wikilink"). It is recommended to
-use GPLv3 instead if possible.'
-url='http://www.gnu.org/licenses/gpl-2.0.html'
-choosealicense='gpl-2.0' osswatch='gpl' %}
+{% include license name='GNU General Public License v3' shortname='GPLv3' description='Version 3 of the GPL is the latest version, written in 2007. It is the recommended version of the GPL to use for new projects.' url='http://www.gnu.org/licenses/gpl.html' choosealicense='gpl-3.0' osswatch='gplv3' osi='gpl-license' %} {% include license name='GNU General Public License v2' shortname='GPLv2' description='Version 2 of the GPL is an older version from 1991, which lacks some language relating to patents, as well as prevention of [Tivoization](wikipedia:Tivoization "wikilink"). It is recommended to use GPLv3 instead if possible.' url='http://www.gnu.org/licenses/gpl-2.0.html' choosealicense='gpl-2.0' osswatch='gpl' %}

@@ -10,5 +10,4 @@ description: test description
 
 ## Machine Learning
 
-A small introduction introduction into [ Weka](Using_Weka "wikilink")
-Machine Learning Framework for Java.
+A small introduction introduction into [ Weka](Using_Weka "wikilink") Machine Learning Framework for Java.

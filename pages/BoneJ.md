@@ -8,57 +8,44 @@ categories: Related Software,Citable
 description: test description
 ---
 
-{% capture author %} {% include person content="Mdoube" %} {% endcapture
-%}
 
-{% capture maintainer %} {% include person content="Mdoube" %} {%
-endcapture %}
+{% capture author%}
+{% include person content='Mdoube' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="mdoube" repo="BoneJ" %} {%
-endcapture %} {% include sidebox-right name='BoneJ 1.x'
-software='ImageJ' logo='![Bonej-icon.png](/images/pages/Bonej-icon.png
-"Bonej-icon.png")"' author=author maintainer=maintainer source=source
-status='Active' website='http://bonej.org/' %}BoneJ is a plugin for
-bone image analysis in [ImageJ](ImageJ "wikilink"). It provides free,
-open source tools for trabecular geometry and whole bone shape analysis.
+{% capture maintainer%}
+{% include person content='Mdoube' %}
+{% endcapture %}
+
+{% capture source%}
+{% include github org='mdoube' repo='BoneJ' %}
+{% endcapture %}
+{% include info-box name='BoneJ 1.x' software='ImageJ' logo='![Bonej-icon.png](/images/pages/Bonej-icon.png "Bonej-icon.png")"' author=author maintainer=maintainer source=source status='Active' website='http://bonej.org/' %}BoneJ is a plugin for bone image analysis in [ImageJ](ImageJ "wikilink"). It provides free, open source tools for trabecular geometry and whole bone shape analysis.
 
 ## Experimental release ([BoneJ2](BoneJ2 "wikilink"))
 
-There's a new modernized version of BoneJ available through the ImageJ
-[updater](https://imagej.net/Updater). Read more about
-[BoneJ2](BoneJ2 "wikilink").
+There's a new modernized version of BoneJ available through the ImageJ [updater](https://imagej.net/Updater). Read more about [BoneJ2](BoneJ2 "wikilink").
 
 ## Installation
 
-{% include logo content='ImageJ1' size='24px' %} BoneJ was designed to
-work with plain [ImageJ 1.x](ImageJ_1.x "wikilink").
+{% include logo content='ImageJ1' size='24px' %} BoneJ was designed to work with plain [ImageJ 1.x](ImageJ_1.x "wikilink").
 
-{% include logo content='Fiji' size='24px' %} BoneJ can be installed
-into [Fiji](Fiji "wikilink"), but you must **use the Java-6 version of
-Fiji, not the current Java-8 version**:
+{% include logo content='Fiji' size='24px' %} BoneJ can be installed into [Fiji](Fiji "wikilink"), but you must **use the Java-6 version of Fiji, not the current Java-8 version**:
 
-  - Download the final Java-6 version of Fiji labeled “2017 May 30” from
-    [here](Fiji/Downloads#Java_6 "wikilink").
+  - Download the final Java-6 version of Fiji labeled “2017 May 30” from [here](Fiji/Downloads#Java_6 "wikilink").
   - Unpack it somewhere beneath your home folder.
-  - Download and install `BoneJ_.jar` into that installation's `plugins`
-    folder.
-  - Launch Fiji and run {% include bc content='Plugins | 3D Viewer'%} to
-    trigger installation of the [3D Viewer](3D_Viewer "wikilink").
+  - Download and install `BoneJ_.jar` into that installation's `plugins` folder.
+  - Launch Fiji and run {% include bc content='Plugins | 3D Viewer'%} to trigger installation of the [3D Viewer](3D_Viewer "wikilink").
   - Restart Fiji.
 
-For technical details about ImageJ and Fiji using Java 6 vs. Java 8, see
-the [Java 8](Java_8 "wikilink") page.
+For technical details about ImageJ and Fiji using Java 6 vs. Java 8, see the [Java 8](Java_8 "wikilink") page.
 
 ## BoneJ and pQCT
 
-BoneJ and pQCT plug-ins are in the process of separation. The latter
-have their own \[https://imagej.net/PQCT| update site\], and they
-don't need BoneJ to work. However, if you download `BoneJ_.jar` from
-http://bonej.org/ it still includes older versions of the pQCT tools.
+BoneJ and pQCT plug-ins are in the process of separation. The latter have their own \[https://imagej.net/PQCT>| update site\], and they don't need BoneJ to work. However, if you download `BoneJ_.jar` from <http://bonej.org/ it still includes older versions of the pQCT tools.
 
 ## Publication
 
   - {% include publication content='BoneJ' %}
 
-[Category:Related Software](Category:Related_Software "wikilink")
-[Category:Citable](Category:Citable "wikilink")
+[Category:Related Software](Category:Related_Software "wikilink") [Category:Citable](Category:Citable "wikilink")

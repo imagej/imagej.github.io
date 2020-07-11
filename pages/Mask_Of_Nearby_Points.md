@@ -8,11 +8,10 @@ categories:
 description: test description
 ---
 
-{% capture source %} {% include github org="fiji" repo="VIB"
-source="util/util/Mask\_Of\_Nearby\_Points.java" %} {% endcapture %} {%
-include sidebox-right software='ImageJ' name='Mask Of Nearby Points'
-author='Mark Longair' maintainer='Mark Longair' filename='VIB\_.jar'
-source=source status='stable' %}
 
-The main documentation for this plugin can be found here:
-http://homepages.inf.ed.ac.uk/s9808248/imagej/nearby/
+{% capture source%}
+{% include github org='fiji' repo='VIB' source='util/util/Mask\_Of\_Nearby\_Points.java' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='Mask Of Nearby Points' author='Mark Longair' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
+
+The main documentation for this plugin can be found here: http://homepages.inf.ed.ac.uk/s9808248/imagej/nearby/

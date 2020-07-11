@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Bio-Formats\#Bio-Formats Remote
-    Importer](Bio-Formats#Bio-Formats_Remote_Importer "wikilink")
+1.  REDIRECT [Bio-Formats\#Bio-Formats Remote Importer](Bio-Formats#Bio-Formats_Remote_Importer "wikilink")

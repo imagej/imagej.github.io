@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2011-06-30 - Easier URL:
-    https://fiji.sc/](2011-06-30_-_Easier_URL:_https://fiji.sc/ "wikilink")
+1.  REDIRECT [2011-06-30 - Easier URL: https://fiji.sc/](2011-06-30_-_Easier_URL:_https://fiji.sc/ "wikilink")

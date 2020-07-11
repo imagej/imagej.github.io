@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2014-03-19 TrackMate v2.2.0
-    released](2014-03-19_TrackMate_v2.2.0_released "wikilink")
+1.  REDIRECT [2014-03-19 TrackMate v2.2.0 released](2014-03-19_TrackMate_v2.2.0_released "wikilink")

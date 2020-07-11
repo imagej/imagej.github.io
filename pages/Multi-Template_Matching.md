@@ -8,54 +8,43 @@ categories: Plugins,Citable,Feature Extraction,Jython,Object Detection
 description: test description
 ---
 
-{% capture author %} {% include person content="Lthomas" %}, J.Gehrig {%
-endcapture %}
 
-{% capture maintainer %} {% include person content="Lthomas" %} {%
-endcapture %}
+{% capture author%}
+{% include person content='Lthomas' %}, J.Gehrig
+{% endcapture %}
 
-{% capture source %} {% include github org="LauLauThom"
-repo="MultiTemplateMatching" %} {% endcapture %} {% include
-sidebox-right software='ImageJ' name='Multi-Template Matching'
-author=author maintainer=maintainer site='Multi-Template-Matching'
-source=source released='2019' status='active'
-category='[Analysis](:Category:Analysis "wikilink") [Feature
-Extraction](:Category:Feature_Extraction "wikilink")' %}
+{% capture maintainer%}
+{% include person content='Lthomas' %}
+{% endcapture %}
 
-![Multi-Template-Matching-MontageGUI.png](/images/pages/Multi-Template-Matching-MontageGUI.png
-"Multi-Template-Matching-MontageGUI.png")"
+{% capture source%}
+{% include github org='LauLauThom' repo='MultiTemplateMatching' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='Multi-Template Matching' author=author maintainer=maintainer update-site='Multi-Template-Matching' source=source released='2019' status='active' category='[Analysis](:Category:Analysis "wikilink") [Feature Extraction](:Category:Feature_Extraction "wikilink")' %}
+
+![Multi-Template-Matching-MontageGUI.png](/images/pages/Multi-Template-Matching-MontageGUI.png "Multi-Template-Matching-MontageGUI.png")"
 
 # Installation
 
-Activate the **IJ-OpenCV** update site and the **Multi-Template-Matching
-update sites**.
+Activate the **IJ-OpenCV** update site and the **Multi-Template-Matching update sites**.
 
 # Documentation
 
-See the [wiki
-section](https://github.com/LauLauThom/MultiTemplateMatching/wiki) of
-the github repository for the documentation including video tutorials \!
+See the [wiki section](https://github.com/LauLauThom/MultiTemplateMatching/wiki) of the github repository for the documentation including video tutorials \!
 
 # Related work
 
-We also distribute a python package for Multi-Template-Matching
-available on [PyPI](https://pypi.org/project/Multi-Template-Matching/).
+We also distribute a python package for Multi-Template-Matching available on [PyPI](https://pypi.org/project/Multi-Template-Matching/).
 
 # Citations
 
 If you use this plugin for your research please cite:  
-Multi-Template Matching: a versatile tool for object-localization in
-microscopy images;  
+Multi-Template Matching: a versatile tool for object-localization in microscopy images;  
 Laurent SV Thomas, Jochen Gehrig  
 bioRxiv 619338; doi: https://doi.org/10.1101/619338
 
 # Video Tutorials
 
-Check our serie of [video
-tutorials](https://www.youtube.com/watch?v=KlzIqSG5XBU&list=PLHZOgc1s26MJ8QjYau7NcG5k0zh9SjHpo)\!
+Check our serie of [video tutorials](https://www.youtube.com/watch?v=KlzIqSG5XBU&list=PLHZOgc1s26MJ8QjYau7NcG5k0zh9SjHpo)\!
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Citable](Category:Citable "wikilink") [Category:Feature
-Extraction](Category:Feature_Extraction "wikilink")
-[Category:Jython](Category:Jython "wikilink") [Category:Object
-Detection](Category:Object_Detection "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Citable](Category:Citable "wikilink") [Category:Feature Extraction](Category:Feature_Extraction "wikilink") [Category:Jython](Category:Jython "wikilink") [Category:Object Detection](Category:Object_Detection "wikilink")

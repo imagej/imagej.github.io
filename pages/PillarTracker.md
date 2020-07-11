@@ -10,46 +10,33 @@ description: test description
 
 <div style="float:right;">
 
-{% capture author %} {% include person content="Xu Xiaochun" %}, {%
-include person content="Felix Martin Margadant" %} {% endcapture %}
 
-{% capture maintainer %} {% include person content="Xu Xiaochun" %} {%
-endcapture %}
+{% capture author%}
+{% include person content='Xu Xiaochun' %}, {% include person content='Felix Martin Margadant' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="scottreen"
-repo="PillarTracker" %} {% endcapture %} {% include sidebox-right
-software='ImageJ/Fiji' name='PillarTracker' author=author
-maintainer=maintainer source=source released='June 2017'
-version='"""1.1.6 May 2018"""' status='stable, active'
-category='[Tracking](:Category:Tracking "wikilink"),
-[Visualization](:Category:Visualization "wikilink"),
-[Filtering](:Category:Filtering "wikilink"),
-[Analysis](:Category:Analysis "wikilink"),
-[Plugins](:Category:Plugins "wikilink")' %}
+{% capture maintainer%}
+{% include person content='Xu Xiaochun' %}
+{% endcapture %}
+
+{% capture source%}
+{% include github org='scottreen' repo='PillarTracker' %}
+{% endcapture %}
+{% include info-box software='ImageJ/Fiji' name='PillarTracker' author=author maintainer=maintainer source=source released='June 2017' latest-version='"""1.1.6 May 2018"""' status='stable, active' category='[Tracking](:Category:Tracking "wikilink"), [Visualization](:Category:Visualization "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Analysis](:Category:Analysis "wikilink"), [Plugins](:Category:Plugins "wikilink")' %}
 
 </div>
 
-This plugin enables user to track pillars with drift correction and
-visualize the trajectories and deflections.
+This plugin enables user to track pillars with drift correction and visualize the trajectories and deflections.
 
 ## Installation
 
-It can be automatically downloaded and installed by Fiji's
-updater(*Help-\>Update...*). Activate the **PillarTracker** checkbox in
-*Manage update sites*. For more details about how to update Fiji in a
-most convenient way, please refer to our documentation here. However, if
-user doesn't want to use the updater for some reason, one can still
-download it from following link, and then install it manually.
+It can be automatically downloaded and installed by Fiji's updater(*Help-\>Update...*). Activate the **PillarTracker** checkbox in *Manage update sites*. For more details about how to update Fiji in a most convenient way, please refer to our documentation here. However, if user doesn't want to use the updater for some reason, one can still download it from following link, and then install it manually.
 
-Latest version:
-[Pillar\_Tracker\_GUI-1.1.6-SNAPSHOT.zip](https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs)
-(\<1 MB)
+Latest version: [Pillar\_Tracker\_GUI-1.1.6-SNAPSHOT.zip](https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs) (\<1 MB)
 
-[PillarTracker\_Documentation.pdf](https://drive.google.com/file/d/0B3hxvkn3VvhCVWJsdUN3eDUyNkk)
-(\~3 MB)
+[PillarTracker\_Documentation.pdf](https://drive.google.com/file/d/0B3hxvkn3VvhCVWJsdUN3eDUyNkk) (\~3 MB)
 
-[Sample\_Files.zip](https://drive.google.com/file/d/0B3hxvkn3VvhCYjFCaWx5dnNpSlE)
-(61.9 MB)
+[Sample\_Files.zip](https://drive.google.com/file/d/0B3hxvkn3VvhCYjFCaWx5dnNpSlE) (61.9 MB)
 
 ## Update History
 
@@ -61,8 +48,7 @@ version **1.1.6** (since Apr. 03, 2018)
 
 `(3).output ROI data for all frames as table.`
 
-`(4).source code on `[`Github`` 
- ``repository`](https://github.com/scottreen/PillarTracker)`.`
+`(4).source code on `[`Github``   ``repository`](https://github.com/scottreen/PillarTracker)`.`
 
 version **1.1.5**
 
@@ -124,8 +110,4 @@ MR Xu Xiaochun (mbixxc@nus.edu.sg)
 
 DR Felix Martin Margadant (mbifmm@nus.edu.sg)
 
-[Category:Tracking](Category:Tracking "wikilink")
-[Category:Visualization](Category:Visualization "wikilink")
-[Category:Analysis](Category:Analysis "wikilink")
-[Category:Filtering](Category:Filtering "wikilink")
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Tracking](Category:Tracking "wikilink") [Category:Visualization](Category:Visualization "wikilink") [Category:Analysis](Category:Analysis "wikilink") [Category:Filtering](Category:Filtering "wikilink") [Category:Plugins](Category:Plugins "wikilink")

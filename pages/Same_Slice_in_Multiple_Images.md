@@ -10,10 +10,7 @@ description: test description
 
 ## Purpose
 
-An example JRuby script, which needs to be customized to be useful to
-you - the source code is {% include github repo='fiji'
-path='plugins/Examples/Same\_Slice\_in\_Multiple\_Images.rb'
-label='here' %}.
+An example JRuby script, which needs to be customized to be useful to you - the source code is {% include github repo='fiji' path='plugins/Examples/Same\_Slice\_in\_Multiple\_Images.rb' label='here' %}.
 
 ## Code
 
@@ -95,6 +92,4 @@ result.show
 
 [JRuby Scripting](JRuby_Scripting "wikilink")
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Scripting](Category:Scripting "wikilink")
-[Category:Unmaintained](Category:Unmaintained "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Scripting](Category:Scripting "wikilink") [Category:Unmaintained](Category:Unmaintained "wikilink")

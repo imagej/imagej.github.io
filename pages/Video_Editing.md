@@ -8,7 +8,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Video\_Editing' %}{%
-include stub %}
+{% include component-stats content=':sc.fiji:Video\_Editing' %}{% include stub%}
+
 
 [Category:Plugins](Category:Plugins "wikilink")

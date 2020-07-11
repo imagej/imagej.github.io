@@ -8,13 +8,6 @@ categories:
 description: test description
 ---
 
-Below we show some examples of Ransac fits on the trajectories obtained
-using the simple mode of Mtrack. In red are the inliers found using the
-[MTrack-RANSAC models](MTrack-RANSAC_models "wikilink") and in green and
-blue are the line fits on the inliers to determine the rates.
+Below we show some examples of Ransac fits on the trajectories obtained using the simple mode of Mtrack. In red are the inliers found using the [MTrack-RANSAC models](MTrack-RANSAC_models "wikilink") and in green and blue are the line fits on the inliers to determine the rates.
 
-![ExampleA.png](/images/pages/ExampleA.png "ExampleA.png")"
-![ExampleB.png](/images/pages/ExampleB.png "ExampleB.png")"
-![ExampleC.png](/images/pages/ExampleC.png "ExampleC.png")"
-![ExampleD.png](/images/pages/ExampleD.png "ExampleD.png")"
-![ExampleE.png](/images/pages/ExampleE.png "ExampleE.png")"
+![ExampleA.png](/images/pages/ExampleA.png "ExampleA.png")" ![ExampleB.png](/images/pages/ExampleB.png "ExampleB.png")" ![ExampleC.png](/images/pages/ExampleC.png "ExampleC.png")" ![ExampleD.png](/images/pages/ExampleD.png "ExampleD.png")" ![ExampleE.png](/images/pages/ExampleE.png "ExampleE.png")"

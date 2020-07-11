@@ -8,15 +8,10 @@ categories: TrakEM2,Tutorials
 description: test description
 ---
 
-This video tutorial was made by Javier Cabrera-Chaves and edited by {%
-include person content='Iarganda' %} using [Wink 1.5 for
-linux](http://www.debugmode.com/wink/). To navigate, use the green
-arrows to go forward and backward in the slide-show.
+This video tutorial was made by Javier Cabrera-Chaves and edited by {% include person content='Iarganda' %} using [Wink 1.5 for linux](http://www.debugmode.com/wink/). To navigate, use the green arrows to go forward and backward in the slide-show.
 
-(here's the [Wish list](Wish_list "wikilink") link that is displayed at
-the end of the movie)
+(here's the [Wish list](Wish_list "wikilink") link that is displayed at the end of the movie)
 
 TODO FLASH WIDGET
 
-[Category:TrakEM2](Category:TrakEM2 "wikilink")
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:TrakEM2](Category:TrakEM2 "wikilink") [Category:Tutorials](Category:Tutorials "wikilink")

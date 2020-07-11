@@ -10,47 +10,29 @@ description: test description
 
 # CSV to TrackMate importer.
 
-This plugin allows for importing detections and tracks contained in CSV
-files into TrackMate, or to export them as TrackMate XML file in
-headless mode.
+This plugin allows for importing detections and tracks contained in CSV files into TrackMate, or to export them as TrackMate XML file in headless mode.
 
 ## Installation.
 
-This plugin lives on a separate {% include list-of-update-sites
-content='update site' %}. If you want to use it, you first need to
-subscribe to the update site named `TrackMateCSVImporter`, as explained
-[here](Following_an_update_site "wikilink").
+This plugin lives on a separate {% include list-of-update-sites content='update site' %}. If you want to use it, you first need to subscribe to the update site named `TrackMateCSVImporter`, as explained [here](Following_an_update_site "wikilink").
 
-The importer can be found in the {% include bc content='Plugins |
-Tracking | TrackMate CSV importer'%} menu.
+The importer can be found in the {% include bc content='Plugins | Tracking | TrackMate CSV importer'%} menu.
 
 ## Using the GUI.
 
-The example below shows a capture of the GUI when re-importing a CSV
-file created by TrackMate itself (from the `Analysis` button).
+The example below shows a capture of the GUI when re-importing a CSV file created by TrackMate itself (from the `Analysis` button).
 
-![TrackMateCSVImporter\_01.png](/images/pages/TrackMateCSVImporter_01.png
-"TrackMateCSVImporter_01.png")"
+![TrackMateCSVImporter\_01.png](/images/pages/TrackMateCSVImporter_01.png "TrackMateCSVImporter_01.png")"
 
-Open the target image in Fiji, and browse to the CSV file from the GUI.
-It will be parsed and the parameter lists will be populated with the
-headers of the CSV file. Some columns are mandatory (X, Y, frame). If
-you uncheck `Compute all features?` box, only a minimal set of features
-will be declared and computed.
+Open the target image in Fiji, and browse to the CSV file from the GUI. It will be parsed and the parameter lists will be populated with the headers of the CSV file. Some columns are mandatory (X, Y, frame). If you uncheck `Compute all features?` box, only a minimal set of features will be declared and computed.
 
-Depending on whether you specify to import the track values or not, the
-TrackMate GUI will be created at a different stage.
+Depending on whether you specify to import the track values or not, the TrackMate GUI will be created at a different stage.
 
 ## Running the exporter from the command line.
 
-After installation, a Jython script called `CsvToTrackMate.py` will be
-addede to the `scripts` folder of your Fiji installation. It is meant to
-be called in [headless mode](Headless "wikilink") to directly convert a
-CSV file and an image file into a TrackMate file.
+After installation, a Jython script called `CsvToTrackMate.py` will be addede to the `scripts` folder of your Fiji installation. It is meant to be called in [headless mode](Headless "wikilink") to directly convert a CSV file and an image file into a TrackMate file.
 
-You can use Fiji in headless mode, to call the Jython script
-`CsvToTrackMate.py` that will parse arguments and configure the importer
-properly. Here is an example:
+You can use Fiji in headless mode, to call the Jython script `CsvToTrackMate.py` that will parse arguments and configure the importer properly. Here is an example:
 
 ``` sh
 ./ImageJ-macosx --headless   /path/to/scripts/CsvToTrackMate.py 
@@ -64,6 +46,4 @@ properly. Here is an example:
      --targetFilePath="/path/to/TrackMateFile.xml"
 ```
 
-This will create a new TrackMate file `/path/to/TrackMateFile.xml` with
-detections created from the CSV file `/path/to/MyCsvFile.csv` and
-reading the image metadata from image file `/path/to/MyImage.tif`.
+This will create a new TrackMate file `/path/to/TrackMateFile.xml` with detections created from the CSV file `/path/to/MyCsvFile.csv` and reading the image metadata from image file `/path/to/MyImage.tif`.

@@ -8,30 +8,21 @@ categories: Plugins
 description: test description
 ---
 
-{% capture source %} {% include github org="ptbiop"
-repo="ijp-gabriel-graph" %} {% endcapture %} {% include sidebox-right
-name='Gabriel Graph' software='Fiji' author='Olivier Burri'
-maintainer='Olivier Burri' filename='Gabriel\_Graph-1.0.0.jar'
-released='August 2015' version='July 2017' source=source status='stable'
-website='[BIOP Staff
-Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
+
+{% capture source%}
+{% include github org='ptbiop' repo='ijp-gabriel-graph' %}
+{% endcapture %}
+{% include info-box name='Gabriel Graph' software='Fiji' author='Olivier Burri' maintainer='Olivier Burri' filename='Gabriel\_Graph-1.0.0.jar' released='August 2015' latest-version='July 2017' source=source status='stable' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff) ' %}
 
 ## Purpose
 
-Gabriel Graph Implementation for ImageJ/Fiji See
-https://en.wikipedia.org/wiki/Gabriel_graph for implementation
+Gabriel Graph Implementation for ImageJ/Fiji See https://en.wikipedia.org/wiki/Gabriel_graph for implementation
 
-![Gabriel\_Graph\_Dialog.png](/images/pages/Gabriel_Graph_Dialog.png
-"Gabriel_Graph_Dialog.png")"
+![Gabriel\_Graph\_Dialog.png](/images/pages/Gabriel_Graph_Dialog.png "Gabriel_Graph_Dialog.png")"
 
 ## Details
 
-The algorithm goes through each pair of points and looks for the
-shortest distance between two points that does not contain any other
-point within the circle whose diameter is defined by the two points
-being queried. It is built to run in parallel as per the implementation
-of [Albert Cardona's ImageJ
-Tutorials](http://albert.rierol.net/imagej_programming_tutorials.html)
+The algorithm goes through each pair of points and looks for the shortest distance between two points that does not contain any other point within the circle whose diameter is defined by the two points being queried. It is built to run in parallel as per the implementation of [Albert Cardona's ImageJ Tutorials](http://albert.rierol.net/imagej_programming_tutorials.html)
 
 ## Use
 
@@ -39,13 +30,11 @@ Call up the plugin using *Plugins-\>BIOP-\>Gabriel Graph...*.
 
 The plugin expects an open image with a multipoint selection.
 
-If selected, it will create a new results table with each point, its
-computed neighbor and the distance between them.
+If selected, it will create a new results table with each point, its computed neighbor and the distance between them.
 
 If selected, it will overlay the Gabriel Graph onto the image.
 
-![Result of Plugin on image](/images/pages/Gabriel_Graph_Processing_Example.png
-"Result of Plugin on image")"
+![Result of Plugin on image](/images/pages/Gabriel_Graph_Processing_Example.png "Result of Plugin on image")"
 
 ## Macro Recordable
 
@@ -71,8 +60,6 @@ ResultsTable results = GabrielGraph.getGabrielGraph(final ImagePlus imp, final b
 
 ## Notes
 
-It makes little sense not to use parallel processing, the only issue
-might be that the order of the points will be different on multiple
-runs, as this will depend on how Java will manage the threads.
+It makes little sense not to use parallel processing, the only issue might be that the order of the points will be different on multiple runs, as this will depend on how Java will manage the threads.
 
 [Category:Plugins](Category:Plugins "wikilink")

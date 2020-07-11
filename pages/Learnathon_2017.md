@@ -12,22 +12,16 @@ The first DAIS Learnathon took place from June 18 until June 24 2017.
 
 ## Schedule
 
-See [this
-page](https://indico.mpi-cbg.de/event/50/other-view?view=standard)\!
+See [this page](https://indico.mpi-cbg.de/event/50/other-view?view=standard)\!
 
 ## Setting up your system
 
 Check if you have this set up:
 
-  - Jupyter + the SciJava kernel
-    (https://github.com/scijava/scijava-jupyter-kernel)
-      - Install [Miniconda](https://conda.io/miniconda.html) if you do
-        not have installed it or Anaconda already. (We need the version
-        for Python 3\!)
-      - Your `.bashrc` or `.zshrc` will need a line like this: `export
-        PATH="/Users/someforders/miniconda3/bin:$PATH"`
-      - Make a new conda environment and install `jupyter` and
-        `scijava-jupiter-kernel`:
+  - Jupyter + the SciJava kernel (https://github.com/scijava/scijava-jupyter-kernel)
+      - Install [Miniconda](https://conda.io/miniconda.html) if you do not have installed it or Anaconda already. (We need the version for Python 3\!)
+      - Your `.bashrc` or `.zshrc` will need a line like this: `export PATH="/Users/someforders/miniconda3/bin:$PATH"`
+      - Make a new conda environment and install `jupyter` and `scijava-jupiter-kernel`:
         ``` bash
                   conda create --name scijava python=3
                   source activate scijava
@@ -36,8 +30,7 @@ Check if you have this set up:
                   conda install scijava-jupyter-kernel
                 
         ```
-      - Now (and in the future) you will have to activate the
-        environment we just created: `source activate scijava`.
+      - Now (and in the future) you will have to activate the environment we just created: `source activate scijava`.
       - Deactivation would work like this: `source deactivate`
       - Get some notebook to try it out:
         ``` bash
@@ -46,8 +39,7 @@ Check if you have this set up:
                   jupyter notebook
                 
         ```
-      - Execute cells by hitting
-        <kbd>shift</kbd>+<kbd>enter</kbd>—enjoy\!
+      - Execute cells by hitting <kbd>shift</kbd>+<kbd>enter</kbd>—enjoy\!
   - Eclipse (Neon)
   - bash / zsh
   - GIT
@@ -83,19 +75,11 @@ Write your first `Command` plugin\!
 Details of your assignment:
 
   - Create a [Git](Git "wikilink") repository.
-  - Create a [Maven](Maven "wikilink") project. (hints:
-    [1](https://github.com/imagej/example-imagej-command),
-    [2](Building_a_POM "wikilink"))
-  - Implement a `Command` plugin in your [IDE](IDE "wikilink"), which
-    calculates the *mean* across an image. (hints:
-    [1](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb),
-    [2](https://github.com/imagej/tutorials/tree/master/maven-projects/simple-commands/src/main/java))
-  - Push to [GitHub](GitHub "wikilink") (hints:
-    [1](https://help.github.com/articles/pushing-to-a-remote/),
-    [2](https://git-man-page-generator.lokaltog.net/)).
+  - Create a [Maven](Maven "wikilink") project. (hints: [1](https://github.com/imagej/example-imagej-command), [2](Building_a_POM "wikilink"))
+  - Implement a `Command` plugin in your [IDE](IDE "wikilink"), which calculates the *mean* across an image. (hints: [1](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb), [2](https://github.com/imagej/tutorials/tree/master/maven-projects/simple-commands/src/main/java))
+  - Push to [GitHub](GitHub "wikilink") (hints: [1](https://help.github.com/articles/pushing-to-a-remote/), [2](https://git-man-page-generator.lokaltog.net/)).
 
-If you get that far, YOU WIN. {% include person content='Jug' %} has a
-reward for you.
+If you get that far, YOU WIN. {% include person content='Jug' %} has a reward for you.
 
 Extra credit:
 
@@ -104,41 +88,25 @@ Extra credit:
 
 ### How to create a new git repository
 
-This is, from my (Hanslovsky) point of view, the best way to create a
-new git repository. All commands should run on Linux, OSX, and the git
-bash shell on Windows.
+This is, from my (Hanslovsky) point of view, the best way to create a new git repository. All commands should run on Linux, OSX, and the git bash shell on Windows.
 
-  - Create a new repository on github.com (choose not to add a README.md
-    or .gitignore), e.g. with name 'awesome-learnathon'
-  - On your local machine create a directory where you would like to
-    have the repository and cd into it: `mkdir 'awesome-learnathon' &&
-    cd 'awesome-learnathon'`
+  - Create a new repository on github.com (choose not to add a README.md or .gitignore), e.g. with name 'awesome-learnathon'
+  - On your local machine create a directory where you would like to have the repository and cd into it: `mkdir 'awesome-learnathon' && cd 'awesome-learnathon'`
   - Initalize local git repository: `git init`
-  - Add remote repository as origin: `git remote add -f origin
-    git@github.com:user/awesome-learnathon` or ` git remote add -f
-    origin  `https://github.com/user/awesome-learnathon if you did not
-    set up git through ssh. The `-f` parameter fetches from the remote
-    repository
-  - Create a first file, e.g. `pom.xml`, and stage it for a commit: `git
-    add pom.xml`
-  - Commit the stage files with commit message: `git commit -m 'Add
-    pom.xml'`
-  - Push your commit: `git push --set-upstream origin master` (you can
-    ommit `--set-upstream origin master` in future commits)
+  - Add remote repository as origin: `git remote add -f origin git@github.com:user/awesome-learnathon` or ` git remote add -f origin  `https://github.com/user/awesome-learnathon if you did not set up git through ssh. The `-f` parameter fetches from the remote repository
+  - Create a first file, e.g. `pom.xml`, and stage it for a commit: `git add pom.xml`
+  - Commit the stage files with commit message: `git commit -m 'Add pom.xml'`
+  - Push your commit: `git push --set-upstream origin master` (you can ommit `--set-upstream origin master` in future commits)
 
 ## Tuesday
 
 Git repos to clone:
 
   - Morning + early afternoon sessions:
-      - https://github.com/imglib/imglib2-introductory-workshop
-        ([slides](https://github.com/imglib/imglib2-introductory-workshop/blob/master/Introduction-ImgLib2.pdf)
-        are in the repository)
-      - (bonus) LabelingPlus:
-        https://github.com/TrNdy/Indago/blob/master/src/main/java/com/indago/data/segmentation/LabelingPlus.java
+      - https://github.com/imglib/imglib2-introductory-workshop ([slides](https://github.com/imglib/imglib2-introductory-workshop/blob/master/Introduction-ImgLib2.pdf) are in the repository)
+      - (bonus) LabelingPlus: https://github.com/TrNdy/Indago/blob/master/src/main/java/com/indago/data/segmentation/LabelingPlus.java
   - Afternoon session:
-      - The pull-request example: [to
-        solve](https://github.com/Meyenhofer/ij-command-2/issues/)
+      - The pull-request example: [to solve](https://github.com/Meyenhofer/ij-command-2/issues/)
       - https://github.com/mpicbg-scicomp/ij2course-images
       - https://github.com/mpicbg-scicomp/ij2course-regions
       - https://github.com/mpicbg-scicomp/ij2course-tables
@@ -155,65 +123,44 @@ Git repos to clone:
       - [Slides](Media:Jug_BigDataAnd3dViz.pdf "wikilink")
       - https://github.com/fjug/TutorialClearVolume.git
       - https://github.com/fjug/TutorialBigDataViewer.git
-      - https://github.com/imglib/imglib2-cache-examples.git (optional
-        but awesome)
+      - https://github.com/imglib/imglib2-cache-examples.git (optional but awesome)
       - https://github.com/bigdataviewer/bigdataviewer-vistools.git
   - Afternoon Ops Session:
       - https://github.com/imagej/tutorials
           - Import the `maven-projects/using-ops` into your IDE
-      - [Introduction to ImageJ
-        Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb)
-        Jupyter notebook
-      - [Extending ImageJ: Writing
-        Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2_-_Extending_ImageJ/4_-_Writing_Op_plugins.ipynb)
-        Jupyter notebook
+      - [Introduction to ImageJ Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb) Jupyter notebook
+      - [Extending ImageJ: Writing Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2_-_Extending_ImageJ/4_-_Writing_Op_plugins.ipynb) Jupyter notebook
   - Afternoon Session on KNIME:
       - Download & Install KNIME (app with all extensions)
           - https://www.knime.org/downloads/overview?quicktabs_knimed=1#quicktabs-knimed
       - Start KNIME and install all updates
-      - How to install ImageJ Integration in KNIME:
-        https://tech.knime.org/community/imagej
+      - How to install ImageJ Integration in KNIME: https://tech.knime.org/community/imagej
       - Set heap-size of KNIME: https://tech.knime.org/faq#q4_2
       - https://github.com/knime-ip/knip-sdk-setup
-          - See installation instructions in
-            [README.md](https://github.com/knime-ip/knip-sdk-setup/blob/master/README.md)
+          - See installation instructions in [README.md](https://github.com/knime-ip/knip-sdk-setup/blob/master/README.md)
       - https://github.com/knime-ip/knip-imagej2
-          - See installation instructions in
-            [README.md](https://github.com/knime-ip/knip-imagej2/blob/master/README.md)
+          - See installation instructions in [README.md](https://github.com/knime-ip/knip-imagej2/blob/master/README.md)
       - https://github.com/knime-ip/knip-course
-          - See instructions for exercises in
-            [README.md](https://github.com/knime-ip/knip-course/blob/master/README.md)
+          - See instructions for exercises in [README.md](https://github.com/knime-ip/knip-course/blob/master/README.md)
 
 <!-- end list -->
 
   - Preparation for the imglyb session on Thursday:
-      - Please follow the [installation
-        instructions](https://gist.github.com/hanslovsky/508fb1ff7668f1e53bb769e6dccc789c)
-        and install imglyb through conda.
-      - If you are a Windows user, please pair up with a OSX or Linux
-        user, or download the [VirtualBox Ubuntu
-        appliance](https://www.dropbox.com/s/gxqqzbxaff6uowe/Ubuntu%2017.04%20-%20imglyb.ova).
-        We also have (at least) one MacBook that is available for use
-        during that session. First come first serve\!
+      - Please follow the [installation instructions](https://gist.github.com/hanslovsky/508fb1ff7668f1e53bb769e6dccc789c) and install imglyb through conda.
+      - If you are a Windows user, please pair up with a OSX or Linux user, or download the [VirtualBox Ubuntu appliance](https://www.dropbox.com/s/gxqqzbxaff6uowe/Ubuntu%2017.04%20-%20imglyb.ova). We also have (at least) one MacBook that is available for use during that session. First come first serve\!
 
 ## Thursday
 
 ### imglib2-algorithm
 
-We will look at the examples in the *algorithm.morphology* package of
-the *imglib2-advanced-workshop* to get familiar with the use of existing
-algorithms in *imglib2-algorithm*.
+We will look at the examples in the *algorithm.morphology* package of the *imglib2-advanced-workshop* to get familiar with the use of existing algorithms in *imglib2-algorithm*.
 
   - Git repos to clone:
       - https://github.com/imglib/imglib2-advanced-workshop
 
 ### imglyb
 
-The jupyter notebooks in the *imglyb-learnathon* repository cover basic
-and advanced use of the *imglyb* compatibility layer for *imglib2* and
-*numpy*. Please follow the instructions below to make sure your machine
-is prepared for the tutorial. Clone the *imagey* repository to access
-CPython through *ImageJ*.
+The jupyter notebooks in the *imglyb-learnathon* repository cover basic and advanced use of the *imglyb* compatibility layer for *imglib2* and *numpy*. Please follow the instructions below to make sure your machine is prepared for the tutorial. Clone the *imagey* repository to access CPython through *ImageJ*.
 
   - Instructions:
       - https://gist.github.com/hanslovsky/508fb1ff7668f1e53bb769e6dccc789c
@@ -231,11 +178,9 @@ CPython through *ImageJ*.
 
 Git repos to clone:
 
-  - Advanced ImgLib2 workshop:
-    https://github.com/imglib/imglib2-advanced-workshop
+  - Advanced ImgLib2 workshop: https://github.com/imglib/imglib2-advanced-workshop
   - ImgLib2 caches: https://github.com/imglib/imglib2-cache-examples
-  - Write your own SciJava plugin types:
-    https://github.com/mpicbg-scicomp/ij2course-scijava-plugin-mechanism
+  - Write your own SciJava plugin types: https://github.com/mpicbg-scicomp/ij2course-scijava-plugin-mechanism
 
 Awesome stuff that happened too:
 
@@ -244,10 +189,7 @@ Awesome stuff that happened too:
       - The problem of missing funding...
       - Stable releases (coming in December).
       - A system to track what a workflow should cite...
-  - Headless with Fiji (https://imagej.net/Batch) (ignoring legacy
-    problems)
-  - ImgLib2 ROIs
-    (https://github.com/imglib/imglib2-roi/tree/shape-rois), a preview
-    to what will/might come soon\!
+  - Headless with Fiji (https://imagej.net/Batch) (ignoring legacy problems)
+  - ImgLib2 ROIs (https://github.com/imglib/imglib2-roi/tree/shape-rois), a preview to what will/might come soon\!
 
 ## Saturday

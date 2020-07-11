@@ -8,55 +8,27 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [RETINA Analysis
-    Toolkit](RETINA_Analysis_Toolkit "wikilink")
+1.  REDIRECT [RETINA Analysis Toolkit](RETINA_Analysis_Toolkit "wikilink")
 
   
-Please visit https://imagej.net/RETINA_Analysis_Toolkit to download
-this macro.
+Please visit https://imagej.net/RETINA_Analysis_Toolkit to download this macro.
 
-**TUNEL Cell Counter** is a free, open source macro created for ImageJ
-1.49v developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas,
-M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear
-Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated
-for TUNEL assay quantitation in retinal cryo-sections using ImageJ
-1.49v. This macro is able to analyze digital images obtained from
-fluorescence microscopes, segment the outer nuclear (ONL) and inner
-nuclear layer (INL), and count TUNEL-positive (TUNEL<sup>+</sup>) cells
-in each retinal layer. After analysis, TUNEL Cell Counter generates an
-array with several output variables. Additionally, the macro generates a
-merged image with segmented layers and quantitated cells for qualitative
-performance assessment. \_\_TOC\_\_
+**TUNEL Cell Counter** is a free, open source macro created for ImageJ 1.49v developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for TUNEL assay quantitation in retinal cryo-sections using ImageJ 1.49v. This macro is able to analyze digital images obtained from fluorescence microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL-positive (TUNEL<sup>+</sup>) cells in each retinal layer. After analysis, TUNEL Cell Counter generates an array with several output variables. Additionally, the macro generates a merged image with segmented layers and quantitated cells for qualitative performance assessment. \_\_TOC\_\_
 
 ## Overview
 
-TUNEL Cell Counter is a custom-built and validated ImageJ macro that
-processes digital images from retinal TUNEL assay. It segments retinal
-outer nuclear (ONL) and inner nuclear layers (INL) and quantitates
-TUNEL+ cells in these layers. The detailed validation process of this
-macro can be found in our *Investigative Ophthalmology & Visual Science
-(IOVS)* paper.
+TUNEL Cell Counter is a custom-built and validated ImageJ macro that processes digital images from retinal TUNEL assay. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates TUNEL+ cells in these layers. The detailed validation process of this macro can be found in our *Investigative Ophthalmology & Visual Science (IOVS)* paper.
 
 ## Before You Start
 
-Please read carefully before using this macro. {% include sidebox-right
-content='"""This macro was validated using ImageJ 1.49v. We strongly
-suggest to use the same version, as segmentation and quantitation may
-vary with other versions."""' %}
+Please read carefully before using this macro. {% include info-box content='"""This macro was validated using ImageJ 1.49v. We strongly suggest to use the same version, as segmentation and quantitation may vary with other versions."""' %}
 
 ### Microscope Calibration
 
-![Replace the value 3095.975 in the source code with your microscope
-spatial scale.](/images/pages/Scale.png
-"Replace the value 3095.975 in the source code with your microscope spatial scale.")"
-To convert pixels to mm<sup>2</sup>, the image spatial scale is
-required. This can be found in the image metadata or in the microscope's
-bundled software.
+![Replace the value 3095.975 in the source code with your microscope spatial scale.](/images/pages/Scale.png "Replace the value 3095.975 in the source code with your microscope spatial scale.")" To convert pixels to mm<sup>2</sup>, the image spatial scale is required. This can be found in the image metadata or in the microscope's bundled software.
 
   -   
-    For validation purposes, we acquired images with Axio Imager M2
-    fluorescence microscope (Carl Zeiss Inc., NY) using a 20x/0.8 air
-    objective. The spatial scale was: 3095.975 pixels/mm.
+    For validation purposes, we acquired images with Axio Imager M2 fluorescence microscope (Carl Zeiss Inc., NY) using a 20x/0.8 air objective. The spatial scale was: 3095.975 pixels/mm.
 
 <!-- end list -->
 
@@ -65,59 +37,38 @@ bundled software.
 ```
 
   -   
-    Replace the value 3095.975 in code line 32 with your microscope
-    spatial scale.
+    Replace the value 3095.975 in code line 32 with your microscope spatial scale.
 
 ### Image Acquisition
 
-This macro was designed for TIFF images acquired with fluorescence
-microscopes using a 20x/0.8 air objective. We considered this
-magnification the most suitable to assess a reasonably large area
-without missing out on details in cell morphology.
+This macro was designed for TIFF images acquired with fluorescence microscopes using a 20x/0.8 air objective. We considered this magnification the most suitable to assess a reasonably large area without missing out on details in cell morphology.
 
 ### Image Processing
 
-We suggest using consistent post-processing for all images. Regarding
-the blue channel, avoid saturating pixels, as this will interfere with
-nuclei identification. As for the green channel, reduce background as
-much as possible and increase exposure without saturating fragments.
+We suggest using consistent post-processing for all images. Regarding the blue channel, avoid saturating pixels, as this will interfere with nuclei identification. As for the green channel, reduce background as much as possible and increase exposure without saturating fragments.
 
 ### Validated Dataset
 
-The original ONL and INL image datasets used for validation purposes are
-available to download. These images have been accurately segmented and
-quantitated, and their values were validated by observers. {% include
-sidebox-right content='""" We strongly recommend to download and revise
-these images beforehand, to have a rough estimate on acquisition and
-post-processing parameters."""' %}
+The original ONL and INL image datasets used for validation purposes are available to download. These images have been accurately segmented and quantitated, and their values were validated by observers. {% include info-box content='""" We strongly recommend to download and revise these images beforehand, to have a rough estimate on acquisition and post-processing parameters."""' %}
 
 ### Important Links
 
 :\*[ImageJ 1.49v](https://www.dropbox.com/s/2z5gwgrx1vi0nym/ImageJ%20v1.49.zip?dl=0)
 
-:\*[ONL
-Dataset](https://www.dropbox.com/sh/yq7d6pac61niav9/AABw9L29qWfDAYH5K2SAaVUma?dl=0)
+:\*[ONL Dataset](https://www.dropbox.com/sh/yq7d6pac61niav9/AABw9L29qWfDAYH5K2SAaVUma?dl=0)
 
-:\*[INL
-Dataset](https://www.dropbox.com/sh/lu6qojkte1z41pf/AABJHv2uptUaWfx-mGUmn1nJa?dl=0)
+:\*[INL Dataset](https://www.dropbox.com/sh/lu6qojkte1z41pf/AABJHv2uptUaWfx-mGUmn1nJa?dl=0)
 
 ## Download & Install
 
 ### TUNEL Cell Counter Setup
 
-1.  Download and install ImageJ 1.49v.
-    [1](https://www.dropbox.com/s/2z5gwgrx1vi0nym/ImageJ%20v1.49.zip?dl=0)  
-2.  Go to {% include bc content='Plugins | Macros | Install'%} and
-    select the downloaded **.ijm** file.
+1.  Download and install ImageJ 1.49v. [1](https://www.dropbox.com/s/2z5gwgrx1vi0nym/ImageJ%20v1.49.zip?dl=0)  
+2.  Go to {% include bc content='Plugins | Macros | Install'%} and select the downloaded **.ijm** file.
 
 ## TUNEL Cell Counter
 
-![Representative animation of Macro Mode. Processing time is \~5
-seconds/image.](/images/pages/Stack_-_Macro.gif
-"Representative animation of Macro Mode. Processing time is ~5 seconds/image.")"
-![Representative animation of Batch Mode. Processing time is \~2.7
-seconds/image.](/images/pages/Stack_-_Batch.gif
-"Representative animation of Batch Mode. Processing time is ~2.7 seconds/image.")"
+![Representative animation of Macro Mode. Processing time is \~5 seconds/image.](/images/pages/Stack_-_Macro.gif "Representative animation of Macro Mode. Processing time is ~5 seconds/image.")" ![Representative animation of Batch Mode. Processing time is \~2.7 seconds/image.](/images/pages/Stack_-_Batch.gif "Representative animation of Batch Mode. Processing time is ~2.7 seconds/image.")"
 
 ### Segmentation
 
@@ -152,8 +103,7 @@ The following processes are executed by the macro:
 ### Total Cells Quantitation
 
   -   
-    Find Maxima function to detect nuclei located in the ONL and INL
-    ROIs.
+    Find Maxima function to detect nuclei located in the ONL and INL ROIs.
 
 ### TUNEL Cells Quantitation
 
@@ -164,43 +114,33 @@ The following processes are executed by the macro:
 
 ### Macro Mode vs. Batch Mode
 
-TUNEL Cell Counter can be executed either as a macro or as batch
-process, with the same results. We strongly recommend Batch Mode
-processing.  
+TUNEL Cell Counter can be executed either as a macro or as batch process, with the same results. We strongly recommend Batch Mode processing.  
 To execute in Macro Mode:
 
 1.  Open an image or *drag-and-drop* to the application window.
-2.  Go to {% include bc content='Process | Macro | TUNEL Cell
-    Counter'%}.
-3.  After processing, select "Results" window and go to {% include bc
-    content='File | Save as'%}, and save results as **.xls** file.
+2.  Go to {% include bc content='Process | Macro | TUNEL Cell Counter'%}.
+3.  After processing, select "Results" window and go to {% include bc content='File | Save as'%}, and save results as **.xls** file.
 
 To execute in Batch Mode:
 
 1.  Inspect the macro source code from the GitHub link.  
 2.  Copy the whole code to the clipboard.
-3.  Go to {% include bc content='Process | Batch | Macro'%} and paste
-    the content in the macro box.
-4.  Correct microscope spatial scale in line 32 of the code, if
-    necessary.
+3.  Go to {% include bc content='Process | Batch | Macro'%} and paste the content in the macro box.
+4.  Correct microscope spatial scale in line 32 of the code, if necessary.
 5.  Select *Input* as the folder were original images are located.
 6.  Select *Output* as the folder were processed images will be saved.
 7.  Choose JPEG as "Output Format" (recommended).
 8.  Click on "Process".
-9.  After processing, select "Summary" window and go to {% include bc
-    content='File | Save as'%}, and save summary as **.xls** file.
+9.  After processing, select "Summary" window and go to {% include bc content='File | Save as'%}, and save summary as **.xls** file.
 
 ## Macro Output
 
 ### Qualitative
 
-![Example of an original TUNEL assay image (top) after macro processing
-(bottom).](/images/pages/Montage.jpg
-"Example of an original TUNEL assay image (top) after macro processing (bottom).")"
+![Example of an original TUNEL assay image (top) after macro processing (bottom).](/images/pages/Montage.jpg "Example of an original TUNEL assay image (top) after macro processing (bottom).")"
 
   -   
-    A JPEG image is created to visualize ONL and INL segmentation and
-    TUNEL<sup>+</sup> cell count, as an overlay.
+    A JPEG image is created to visualize ONL and INL segmentation and TUNEL<sup>+</sup> cell count, as an overlay.
 
 ### Quantitative
 
@@ -224,50 +164,26 @@ When executed in Macro Mode, the output variables are:
       - Ratio TUNEL<sup>+</sup> Cells/INL Area (count/mm<sup>2</sup>)
       - Percentage TUNEL<sup>+</sup> Cells/INL Total Cells (%)  
 
-![A new window is generated with the output variables.](/images/pages/Bar.png
-"A new window is generated with the output variables.")" When executed in
-Batch Mode, ONL Area, INL Area, ONL TUNEL<sup>+</sup> cells, and INL
-TUNEL<sup>+</sup> cells are reported. These values were used for macro
-validation.  
-Ratio of TUNEL<sup>+</sup> Cells can be calculated by any spreadsheet or
-statistics package.
+![A new window is generated with the output variables.](/images/pages/Bar.png "A new window is generated with the output variables.")" When executed in Batch Mode, ONL Area, INL Area, ONL TUNEL<sup>+</sup> cells, and INL TUNEL<sup>+</sup> cells are reported. These values were used for macro validation.  
+Ratio of TUNEL<sup>+</sup> Cells can be calculated by any spreadsheet or statistics package.
 
 ## Limitations
 
-1.  Acquisition: The macro was designed for images acquired with a
-    20x/0.8 air objective. Images with higher or lower magnification
-    will not be successfully segmented. We considered this magnification
-    the most suitable to assess a reasonably large area without missing
-    out cell morphology details.
-2.  TUNEL staining quality: Images need to have an intense cell staining
-    and low background noise.
-3.  Image Focus: Uneven image focus will render incomplete layer
-    segmentation.
-4.  Indistinguishable Retinal Layers: The macro cannot distinguish
-    between the ONL and INL if you can't either\!
-5.  Uncentered Image: For best results, acquire images centered in
-    frame.
-6.  Significant Shadowing: Shadowing will render incomplete layer
-    segmentation.
+1.  Acquisition: The macro was designed for images acquired with a 20x/0.8 air objective. Images with higher or lower magnification will not be successfully segmented. We considered this magnification the most suitable to assess a reasonably large area without missing out cell morphology details.
+2.  TUNEL staining quality: Images need to have an intense cell staining and low background noise.
+3.  Image Focus: Uneven image focus will render incomplete layer segmentation.
+4.  Indistinguishable Retinal Layers: The macro cannot distinguish between the ONL and INL if you can't either\!
+5.  Uncentered Image: For best results, acquire images centered in frame.
+6.  Significant Shadowing: Shadowing will render incomplete layer segmentation.
 
 ## FAQs
 
 1.  Q: Can I modify the source code?
-      - A: *Yes, you can modify the code to develop new macros or
-        plugins. Please acknowledge previous work that helped or
-        inspired you, and share your contribution with the scientific
-        community\!*  
+      - A: *Yes, you can modify the code to develop new macros or plugins. Please acknowledge previous work that helped or inspired you, and share your contribution with the scientific community\!*  
 2.  Q: I used this tool for my research. How should I acknowledge it?
-      - A: *Please cite or reference this work as follows: Maidana DE,
-        Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller
-        JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death
-        Quantitation in the Retina. Invest Ophthalmol Vis Sci.
-        2015;56:6701–6708. <DOI:10.1167/> iovs.15-17599.*  
+      - A: *Please cite or reference this work as follows: Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Invest Ophthalmol Vis Sci. 2015;56:6701–6708. <DOI:10.1167/> iovs.15-17599.*  
 3.  Q: I cannot get accurate segmentation or counting. Any advice?
-      - A: *Check your acquisition and post-processing parameters.
-        First, try to keep background at minimum to remove any
-        fragments. Next, adjust saturation until cells are easily
-        identifiable.*  
+      - A: *Check your acquisition and post-processing parameters. First, try to keep background at minimum to remove any fragments. Next, adjust saturation until cells are easily identifiable.*  
 
 ## Future Development
 
@@ -275,11 +191,9 @@ Yes, we know there is a lot to improve\!
 We are currently working on the following issues:
 
   - Image acquisition: Images obtained with 10x air objective.
-  - Variables in Batch Processing mode: We are modifying the code to
-    report a complete variable list.
+  - Variables in Batch Processing mode: We are modifying the code to report a complete variable list.
 
-<b>In case you have any comments, suggestions, or any difficulties with
-your images, just send us a message\!</b>
+<b>In case you have any comments, suggestions, or any difficulties with your images, just send us a message\!</b>
 
 ## Version History
 
@@ -289,14 +203,9 @@ your images, just send us a message\!</b>
 
 ## External Links
 
-1.  [Massachusetts Eye and Ear
-    Infirmary](http://www.masseyeandear.org)  
-2.  [IOVS
-    Paper](http://iovs.arvojournals.org/article.aspx?articleid=2463763)
+1.  [Massachusetts Eye and Ear Infirmary](http://www.masseyeandear.org)  
+2.  [IOVS Paper](http://iovs.arvojournals.org/article.aspx?articleid=2463763)
 
 ## References
 
-1.  Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H,
-    Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death
-    Quantitation in the Retina. Invest Ophthalmol Vis Sci.
-    2015;56:6701–6708. <DOI:10.1167/> iovs.15-17599.''
+1.  Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Invest Ophthalmol Vis Sci. 2015;56:6701–6708. <DOI:10.1167/> iovs.15-17599.''

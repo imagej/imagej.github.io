@@ -8,8 +8,8 @@ categories: Git
 description: test description
 ---
 
-{% include gitmenu %} Here are some common git operations for which we
-often find ourselves searching.
+{% include gitmenu%}
+ Here are some common git operations for which we often find ourselves searching.
 
 ## Workflow
 
@@ -19,8 +19,7 @@ often find ourselves searching.
 git checkout -t origin/develop
 ```
 
-It should report: "Branch develop set up to track remote branch develop
-from origin."
+It should report: "Branch develop set up to track remote branch develop from origin."
 
 ### List all branches (both local and remote)
 
@@ -153,8 +152,7 @@ git rebase -i
 # Change the undesirable commit to "noop"
 ```
 
-For more on branching, see [Git topic
-branches](Git_topic_branches "wikilink").
+For more on branching, see [Git topic branches](Git_topic_branches "wikilink").
 
 ### Rename the current branch
 
@@ -234,17 +232,11 @@ Respects `.mailmap`.
 git log --follow HelloWorld.file
 ```
 
-This history is algorithmically calculated and must be carefully
-preserved.
+This history is algorithmically calculated and must be carefully preserved.
 
-Simultaneous (within a single commit) significant changes + file
-renaming (including relocation) can prevent the algorithm from
-successfully tracing the file's history, or cause it to begin tracing
-the wrong file.
+Simultaneous (within a single commit) significant changes + file renaming (including relocation) can prevent the algorithm from successfully tracing the file's history, or cause it to begin tracing the wrong file.
 
-Keeping code changes separate from renames should prevent this
-confusion, but it is good practice to check `log --follow` before
-pushing to a remote repository.
+Keeping code changes separate from renames should prevent this confusion, but it is good practice to check `log --follow` before pushing to a remote repository.
 
 ### See commits in branch B not present in branch A
 
@@ -254,9 +246,7 @@ There are two main options. The first:
 git log A..B
 ```
 
-will display the different commits in full git log format. NB: the `..`
-between commits is important to sure only the difference in commits is
-considered.
+will display the different commits in full git log format. NB: the `..` between commits is important to sure only the difference in commits is considered.
 
 The second:
 
@@ -264,13 +254,11 @@ The second:
 git cherry -v A B
 ```
 
-will display a simple list of the different commits, one per line, with
-commit message and hash.
+will display a simple list of the different commits, one per line, with commit message and hash.
 
 ## Scripts
 
-There are some Git-related scripts available in the
-[scijava-scripts](https://github.com/scijava/scijava-scripts) project.
+There are some Git-related scripts available in the [scijava-scripts](https://github.com/scijava/scijava-scripts) project.
 
 ### List information about all remote branches including last author, commit date and unmerged commit count
 
@@ -292,8 +280,7 @@ Or for a bare repository:
 git init --bare --shared=group
 ```
 
-(Bare repositories are meant for a remote server repository that all
-your coworkers push into and pull/fetch from.)
+(Bare repositories are meant for a remote server repository that all your coworkers push into and pull/fetch from.)
 
 ### Push all remote branches from one remote (e.g., "origin") to another (e.g., "github")
 
@@ -326,12 +313,9 @@ git reset --hard git for-each-ref --format="%(refname)" refs/original/ | \
 
 See these posts on Stack Overflow:
 
-  - [Detach subdirectory into separate Git
-    repository](http://stackoverflow.com/questions/359424/detach-subdirectory-into-separate-git-repository)
-  - [Detach subdirectory (that was renamed\!) into a new
-    repo](http://stackoverflow.com/questions/6638019/detach-subdirectory-that-was-renamed-into-a-new-repo)
-  - [Split large Git repository into many smaller
-    ones](http://stackoverflow.com/questions/3910412/split-large-git-repository-into-many-smaller-ones)
+  - [Detach subdirectory into separate Git repository](http://stackoverflow.com/questions/359424/detach-subdirectory-into-separate-git-repository)
+  - [Detach subdirectory (that was renamed\!) into a new repo](http://stackoverflow.com/questions/6638019/detach-subdirectory-that-was-renamed-into-a-new-repo)
+  - [Split large Git repository into many smaller ones](http://stackoverflow.com/questions/3910412/split-large-git-repository-into-many-smaller-ones)
 
 ### Throw away git-svn-id metadata
 
@@ -343,8 +327,7 @@ git filter-branch --msg-filter ' sed -e "/^git-svn-id:/d" '
 
 See this post on Stack Overflow:
 
-  - [How do I combine the first two commits of a Git
-    repository?](http://stackoverflow.com/questions/435646/how-do-i-combine-the-first-two-commits-of-a-git-repository)
+  - [How do I combine the first two commits of a Git repository?](http://stackoverflow.com/questions/435646/how-do-i-combine-the-first-two-commits-of-a-git-repository)
 
 ### Change the author of a commit
 
@@ -356,17 +339,14 @@ git commit --amend --author="Author Name"
 
 See this post on Stack Overflow:
 
-  - [How do I change the author of a commit in
-    git?](http://stackoverflow.com/questions/750172/how-do-i-change-the-author-of-a-commit-in-git)
+  - [How do I change the author of a commit in git?](http://stackoverflow.com/questions/750172/how-do-i-change-the-author-of-a-commit-in-git)
 
 ### Merge multiple repositories
 
 See these posts on Stack Overflow:
 
-  - [Combining multiple git
-    repositories](http://stackoverflow.com/questions/277029/combining-multiple-git-repositories)
-  - [git: Retroactively introduce several
-    merges](http://stackoverflow.com/questions/4039682/git-retroactively-introduce-several-merges)
+  - [Combining multiple git repositories](http://stackoverflow.com/questions/277029/combining-multiple-git-repositories)
+  - [git: Retroactively introduce several merges](http://stackoverflow.com/questions/4039682/git-retroactively-introduce-several-merges)
 
 ## Tutorials
 
@@ -386,39 +366,28 @@ git config branch.master.remote origin
 git config branch.master.merge refs/heads/master
 ```
 
-Creates a bare remote repository at <ssh://server/home/you/remote.git>
-that tracks your local repository in `/home/you/local`. Adopted from
-[Tim
-Lucas](http://toolmantim.com/articles/setting_up_a_new_remote_git_repository).
+Creates a bare remote repository at <ssh://server/home/you/remote.git> that tracks your local repository in `/home/you/local`. Adopted from [Tim Lucas](http://toolmantim.com/articles/setting_up_a_new_remote_git_repository).
 
 ### Displaying a filtered set of commits
 
-Assume you want to see commits in branch `stephan`, but only those that
-are <u>not</u> part of the history of branch `saalfeld`:
+Assume you want to see commits in branch `stephan`, but only those that are <u>not</u> part of the history of branch `saalfeld`:
 
 ``` bash
 git log stephan ^saalfeld
 ```
 
-More realistically, if you want to see all the commits which are in a
-topic branch, but not yet merged into master:
+More realistically, if you want to see all the commits which are in a topic branch, but not yet merged into master:
 
 ``` bash
 git log --all ^master
 ```
 
-If you want to see the changes which come from a topic branch which was
-merged in commit `deadbeef`, use this command line:
+If you want to see the changes which come from a topic branch which was merged in commit `deadbeef`, use this command line:
 
 ``` bash
 git log deadbeef^..deadbeef^2
 ```
 
-Explanation: `deadbeef` is a merge commit, so its first parent
-(`deadbeef^`, can also be written as `deadbeef^1`) was the current
-`HEAD` when the merge was performed, and the second parent
-(`deadbeef^2`) is the tip of the branch which was merged. The argument
-`A..B` is short form of `^A B`, i.e. all commits reachable from `B`
-excluding those which are also reachable from `A`.
+Explanation: `deadbeef` is a merge commit, so its first parent (`deadbeef^`, can also be written as `deadbeef^1`) was the current `HEAD` when the merge was performed, and the second parent (`deadbeef^2`) is the tip of the branch which was merged. The argument `A..B` is short form of `^A B`, i.e. all commits reachable from `B` excluding those which are also reachable from `A`.
 
 [Category:Git](Category:Git "wikilink")

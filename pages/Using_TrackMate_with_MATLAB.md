@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Analyzing TrackMate results with
-    MATLAB](Analyzing_TrackMate_results_with_MATLAB "wikilink")
+1.  REDIRECT [Analyzing TrackMate results with MATLAB](Analyzing_TrackMate_results_with_MATLAB "wikilink")

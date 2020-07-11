@@ -8,8 +8,7 @@ categories: News
 description: test description
 ---
 
-Today, the ImageJ team has launched a unified site for searching ImageJ
-resources, including web, code, issues, mailing lists and more.
+Today, the ImageJ team has launched a unified site for searching ImageJ resources, including web, code, issues, mailing lists and more.
 
 The site is:
 
@@ -19,11 +18,8 @@ http://search.imagej.net/
 
 </div>
 
-The source code can be found {% include github org='imagej'
-repo='imagej-search' %}. Everyone is welcome to contribute any
-improvements.
+The source code can be found {% include github org='imagej' repo='imagej-search' %}. Everyone is welcome to contribute any improvements.
 
-We hope this site makes it easier for the community to quickly locate
-information about ImageJ.
+We hope this site makes it easier for the community to quickly locate information about ImageJ.
 
 [Category:News](Category:News "wikilink")

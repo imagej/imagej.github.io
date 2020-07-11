@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [Contributing\#This\_web\_site](Contributing#This_web_site "wikilink")
+1.  REDIRECT [Contributing\#This\_web\_site](Contributing#This_web_site "wikilink")

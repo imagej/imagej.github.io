@@ -1,1 +1,1 @@
-<div class="citation">{{include.content}}</div>
+{{include.last}}, {{include.first}}; {{include.last1}}, {{include.first1}}; {{include.last2}}, {{include.first2}} ({{include.year}}), {{include.title}}, {{include.journal}}, ISSN {{include.issn}}

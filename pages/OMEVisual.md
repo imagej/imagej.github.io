@@ -8,17 +8,20 @@ categories: Plugins,OME
 description: test description
 ---
 
-{% capture author %} {% include person content="Hadim" %} {% endcapture
-%}
 
-{% capture maintainer %} {% include person content="Hadim" %} {%
-endcapture %}
+{% capture author%}
+{% include person content='Hadim' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="hadim" repo="OMEVisual" %}
-{% endcapture %} {% include sidebox-right name='OMEVisual' logo=''
-software='Fiji' author=author maintainer=maintainer source=source
-released='08/05/2016' status='v1.0.1, stable' category='' %}{% include
-toc %}
+{% capture maintainer%}
+{% include person content='Hadim' %}
+{% endcapture %}
+
+{% capture source%}
+{% include github org='hadim' repo='OMEVisual' %}
+{% endcapture %}
+{% include info-box name='OMEVisual' logo='' software='Fiji' author=author maintainer=maintainer source=source released='08/05/2016' status='v1.0.1, stable' category='' %}{% include toc%}
+
 
 ## Presentation
 
@@ -27,29 +30,21 @@ toc %}
 Usage:
 
   - Open your image in Fiji.
-  - Start the plugin with `Plugins ► Utilities ► Visualize OME
-    Metadata`.
+  - Start the plugin with `Plugins ► Utilities ► Visualize OME Metadata`.
   - A window should open with the metadata in it.
 
 Please note that :
 
-  - This goal of this plugin is **not to implement** all the OME
-    features.
-  - This plugin makes several strong assumptions about the OME model in
-    order to simplify the interface :
+  - This goal of this plugin is **not to implement** all the OME features.
+  - This plugin makes several strong assumptions about the OME model in order to simplify the interface :
       - Each image contains only one `Pixels` element.
       - Each `TiffData` contains only one `Plane`.
-      - `Plane` and `TiffData` informations are displayed at the same
-        location without distinction.
-  - Any ideas to improve the visualization and/or add OME features is
-    very welcome :
+      - `Plane` and `TiffData` informations are displayed at the same location without distinction.
+  - Any ideas to improve the visualization and/or add OME features is very welcome :
       - The best way is to submit a PR.
-      - You can also open an issue and post an OME-TIFF file which
-        contains additional OME features you would like to see added to
-        the plugin.
+      - You can also open an issue and post an OME-TIFF file which contains additional OME features you would like to see added to the plugin.
 
-![caption OMEVisual Screenshot](/images/pages/OMEVisual_Screenshot.png
-"caption OMEVisual Screenshot")"
+![caption OMEVisual Screenshot](/images/pages/OMEVisual_Screenshot.png "caption OMEVisual Screenshot")"
 
 ## Related links
 
@@ -57,11 +52,8 @@ Please note that :
 
 ## Authors
 
-`OMEVisual` has been created by [Hadrien
-Mary](mailto:hadrien.mary@gmail.com).
+`OMEVisual` has been created by [Hadrien Mary](mailto:hadrien.mary@gmail.com).
 
-This work started in 2016 at the [Gary Brouhard
-laboratory](http://brouhardlab.mcgill.ca/) at the University of McGill.
+This work started in 2016 at the [Gary Brouhard laboratory](http://brouhardlab.mcgill.ca/) at the University of McGill.
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:OME](Category:OME "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:OME](Category:OME "wikilink")

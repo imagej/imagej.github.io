@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [ImageJ2/Documentation/Edit/Options/Compatibility](ImageJ2/Documentation/Edit/Options/Compatibility "wikilink")
+1.  REDIRECT [ImageJ2/Documentation/Edit/Options/Compatibility](ImageJ2/Documentation/Edit/Options/Compatibility "wikilink")

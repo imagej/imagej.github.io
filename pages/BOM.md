@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [Architecture\#Bill\_of\_Materials](Architecture#Bill_of_Materials "wikilink")
+1.  REDIRECT [Architecture\#Bill\_of\_Materials](Architecture#Bill_of_Materials "wikilink")

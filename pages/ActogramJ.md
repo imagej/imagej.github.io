@@ -8,21 +8,21 @@ categories: Plugins,Visualization,Citable
 description: test description
 ---
 
-{% capture maintainer %} {% include person content="Bene" %} {%
-endcapture %}
 
-{% capture author %} {% include person content="Bene" %} {% endcapture
-%}
+{% capture maintainer%}
+{% include person content='Bene' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="bene51" repo="ActogramJ" %}
-{% endcapture %} {% include sidebox-right software='Fiji'
-name='ActogramJ' maintainer=maintainer author=author source=source
-status='active' released='2010'
-category='[Visualization](:Category:Visualization "wikilink"),
-[:Category:Plugins](:Category:Plugins "wikilink")' %}
+{% capture author%}
+{% include person content='Bene' %}
+{% endcapture %}
 
-**ActogramJ** - Visualizing and analyzing activity diagrams in
-behavioral experiments
+{% capture source%}
+{% include github org='bene51' repo='ActogramJ' %}
+{% endcapture %}
+{% include info-box software='Fiji' name='ActogramJ' maintainer=maintainer author=author source=source status='active' released='2010' category='[Visualization](:Category:Visualization "wikilink"), [:Category:Plugins](:Category:Plugins "wikilink")' %}
+
+**ActogramJ** - Visualizing and analyzing activity diagrams in behavioral experiments
 
 ## Publication
 
@@ -32,6 +32,4 @@ behavioral experiments
 
 More information is available at https://bene51.github.io/ActogramJ.
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Visualization](Category:Visualization "wikilink")
-[Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Visualization](Category:Visualization "wikilink") [Category:Citable](Category:Citable "wikilink")

@@ -13,18 +13,13 @@ description: test description
 ![Microscope setup](/images/pages/OWS_1.jpg "Microscope setup")"
 
 1.  Make sure the image being used has been set up correctly:
-    1.  On the computer, click and hold the shutter button until it
-        turns yellow. The shutter is now activated
-    2.  Ensure the the outer shutter lever is pointing towards "Lamp"
-        and the inner shutter lever is pointing to the right
+    1.  On the computer, click and hold the shutter button until it turns yellow. The shutter is now activated
+    2.  Ensure the the outer shutter lever is pointing towards "Lamp" and the inner shutter lever is pointing to the right
     3.  Turn on the xyz controller
     <!-- end list -->
-      - NOTE: Do not attempt to adjust the focus of the image with the
-        manual knob while the controller is engaged. You will wear down
-        the gears.
+      - NOTE: Do not attempt to adjust the focus of the image with the manual knob while the controller is engaged. You will wear down the gears.
         </ol>
-2.  Move the outer shutter lever toward "Image" and the inner shutter
-    lever toward
+2.  Move the outer shutter lever toward "Image" and the inner shutter lever toward
 3.  Turn on the Pockel Power Cell
 4.  Turn on the Ti Sapph Shutter Controller
 5.  Log in to Wiscan
@@ -32,13 +27,11 @@ description: test description
 
 <!-- end list -->
 
-  - Note: DO NOT turn on the detector till the main lights are off. You
-    WILL damage the detector.
+  - Note: DO NOT turn on the detector till the main lights are off. You WILL damage the detector.
 
 <li>
 
-Start Scan and ensure your image is in focus on the left side of your
-screen\<\\li\>
+Start Scan and ensure your image is in focus on the left side of your screen\<\\li\>
 
 <li>
 
@@ -48,21 +41,17 @@ Use the computer xyz controller to choose your initial image frame
 
 <li>
 
-Adjust the pockle cell dials until you can see an image on the right
-side of your screen (the blue portion)
+Adjust the pockle cell dials until you can see an image on the right side of your screen (the blue portion)
 
 </li>
 
 <li>
 
-Adjust the detector so that only a small amount of red can be seen in
-the frame of your image. If too much of a contrast is present, it will
-burn out the microscope's laser
+Adjust the detector so that only a small amount of red can be seen in the frame of your image. If too much of a contrast is present, it will burn out the microscope's laser
 
 </li>
 
-  - Note: The normal range for the detector is 300-500. You should not
-    go above 620.
+  - Note: The normal range for the detector is 300-500. You should not go above 620.
 
  
 
@@ -76,8 +65,7 @@ Stop scan
 
 <li>
 
-Define the start position in your metadata by selecting "manual update"
-then "set 0"
+Define the start position in your metadata by selecting "manual update" then "set 0"
 
 </li>
 
@@ -97,19 +85,15 @@ Set the size of each image taken (in microns)
 
 <li>
 
-Set the amount of overlap you wish to have in your image, then press
-"calculate number of positions"
+Set the amount of overlap you wish to have in your image, then press "calculate number of positions"
 
 </li>
 
-  - NOTE- You can also set your own step size and overlap amount and
-    calculate the size of each image
+  - NOTE- You can also set your own step size and overlap amount and calculate the size of each image
 
 <li>
 
-Once you have calculated all the necessary positions, you can save this
-data using the "save positions" button and load them back into Wiscan at
-a later date
+Once you have calculated all the necessary positions, you can save this data using the "save positions" button and load them back into Wiscan at a later date
 
 </li>
 
@@ -127,8 +111,7 @@ under 4d imaging, calculate Z bottom, Z top, and Z step
 
 <li>
 
-These numbers should be set as 0 unless you are imaging in more than one
-plane of your sample
+These numbers should be set as 0 unless you are imaging in more than one plane of your sample
 
 </li>
 
@@ -140,14 +123,11 @@ Select "Use XY coordinates" and then start sequence
 
 <li>
 
-Once Wiscan has run, your output will be a series of images that can be
-stitched together.
+Once Wiscan has run, your output will be a series of images that can be stitched together.
 
 </li>
 
-  - NOTE- If an noticeable amount of overlay can be seen in your images,
-    there is a pixel to micron error within the microscope's initial
-    setup. To fix this, recalibrate the microscope's objectives. 
+  - NOTE- If an noticeable amount of overlay can be seen in your images, there is a pixel to micron error within the microscope's initial setup. To fix this, recalibrate the microscope's objectives. 
 
 ## Generate the grid
 
@@ -167,8 +147,7 @@ Enter the step size in microns
 
 <li>
 
-Select "Calculate total size from \# Pos" to find the total size of your
-stitched image (optional)
+Select "Calculate total size from \# Pos" to find the total size of your stitched image (optional)
 
 </li>
 
@@ -182,34 +161,28 @@ Select "OK"
 
 ### Percent overlapped grid
 
-1.  Use the "Compute overlap slider" to set the overlap percentage you
-    would like within your stitched image
+1.  Use the "Compute overlap slider" to set the overlap percentage you would like within your stitched image
 2.  Enter your dimensions for X and Y \<\\li\>
-3.  Select "Calculate total size from \# Pos" to find the total size of
-    your stitched image (optional)
+3.  Select "Calculate total size from \# Pos" to find the total size of your stitched image (optional)
 4.  Select "OK"
 
 ### Calculating grid using total sample size
 
 ![SampleSize.png](/images/pages/SampleSize.png "SampleSize.png")"
 
-1.  Enter the total size dimensions of your stitched image in microns
-    into the "Total Size" boxes
-2.  Enter the step size or the overlap for you stitched images and
-    select "Calculate total size from \# Pos"
+1.  Enter the total size dimensions of your stitched image in microns into the "Total Size" boxes
+2.  Enter the step size or the overlap for you stitched images and select "Calculate total size from \# Pos"
 3.  Select "OK"
 
 ### Computing the grid between two stage positions
 
-1.  Determine your step size using either a pre-calculated value or the
-    overlap slider
+1.  Determine your step size using either a pre-calculated value or the overlap slider
 
 ![StageGrid.png](/images/pages/StageGrid.png "StageGrid.png")"
 
 <li>
 
-During your scan, use the XY motor controller to position on corner of
-your tissue into the field of view
+During your scan, use the XY motor controller to position on corner of your tissue into the field of view
 
 </li>
 
@@ -229,7 +202,4 @@ Select "OK"
 
 # Gallery
 
-<File:Frame> mover.jpg | (xyz computer controller) <File:Lever> 1.jpg|
-(Internal microscope lever) <File:X> y z.jpg| (XYZ controller)
-<File:Pockel> cell.jpg| (Pockel Cell machine) <File:Ti> saph.jpg | (Ti
-Sapph Shutter control) <File:Photosensor.jpg> | Detector
+<File:Frame> mover.jpg | (xyz computer controller) <File:Lever> 1.jpg| (Internal microscope lever) <File:X> y z.jpg| (XYZ controller) <File:Pockel> cell.jpg| (Pockel Cell machine) <File:Ti> saph.jpg | (Ti Sapph Shutter control) <File:Photosensor.jpg> | Detector

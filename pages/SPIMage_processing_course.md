@@ -12,8 +12,7 @@ description: test description
 
 ## Hardware requirements
 
-The overview of hardware requirements for SPIMage processing can be
-found [here](http://openspim.org/Pre-requisites).
+The overview of hardware requirements for SPIMage processing can be found [here](http://openspim.org/Pre-requisites).
 
 ### Standalone
 

@@ -8,37 +8,28 @@ categories: Import-Export
 description: test description
 ---
 
-{% capture source %} {% include github org="fiji" repo="IO"
-source="io/FIBSEM\_Reader.java" %} {% endcapture %} {% include
-sidebox-right software='ImageJ' name='FIBSEM importer'
-maintainer='Stephan Preibisch' author='Stephan Preibisch' source=source
-released='08/02/2012' version='08/02/2012' status='stable'
-category='[:Category:Plugins](:Category:Plugins "wikilink")' website=''
-%}
+
+{% capture source%}
+{% include github org='fiji' repo='IO' source='io/FIBSEM\_Reader.java' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='FIBSEM importer' maintainer='Stephan Preibisch' author='Stephan Preibisch' source=source released='08/02/2012' latest-version='08/02/2012' status='stable' category='[:Category:Plugins](:Category:Plugins "wikilink")' website='' %}
 
 ## Overview
 
-The FIBSEM importer is able to read the image files produced by the
-FIB-SEM machine at Janelia Farm. It can be used via:
+The FIBSEM importer is able to read the image files produced by the FIB-SEM machine at Janelia Farm. It can be used via:
 
   - Drag & Drop
   - {% include bc content='File | Import | FIB-SEM ...'%}
 
-It will be opened as unsigned 16-bit data ranging from 0 to 65535, where
-0 corresponds to a detector voltage of -10 volts and 65535 to a voltage
-of +10 volts. It will automatically set the pixel resolution in the
-image calibration.
+It will be opened as unsigned 16-bit data ranging from 0 to 65535, where 0 corresponds to a detector voltage of -10 volts and 65535 to a voltage of +10 volts. It will automatically set the pixel resolution in the image calibration.
 
-For access to all the other meta-data, see the special options paragraph
-below.
+For access to all the other meta-data, see the special options paragraph below.
 
 ## Special options
 
 ### Open image as float
 
-It might make sense to open the image as float and not convert it into
-an unsigned short. To do so, one can set a switch in the FIBSEM importer
-using the **script editor**:
+It might make sense to open the image as float and not convert it into an unsigned short. To do so, one can set a switch in the FIBSEM importer using the **script editor**:
 
   - {% include bc content='File | New | Script'%}
   - {% include bc content='Language | Beanshell'%}
@@ -53,16 +44,11 @@ FIBSEM_Reader.openAsFloat = true;
 
   - click Run
 
-From now on, every FIBSEM image of the **currently running Fiji
-instance** will be opened as float, the float values represent directly
-the measured voltage for each pixel.
+From now on, every FIBSEM image of the **currently running Fiji instance** will be opened as float, the float values represent directly the measured voltage for each pixel.
 
 ### Access the complete metadata
 
-In order to access the complete metadata you have to make a new instance
-of the FIBSEM importer, load the dataset and afterwards request the
-metadata object. Here is the code how do it using the script editor and
-the Beanshell language (see above):
+In order to access the complete metadata you have to make a new instance of the FIBSEM importer, load the dataset and afterwards request the metadata object. Here is the code how do it using the script editor and the Beanshell language (see above):
 
 ``` java
 import io.FIBSEM_Reader;
@@ -82,8 +68,7 @@ IJ.log( "" + metadata );
 IJ.log( "The resolution of the image is " + metadata.xRes + " x " + metadata.yRes + " pixels." );
 ```
 
-Below you will find a complete list of all fields of **FIBSEMData**,
-i.e. all metadata information that you can access:
+Below you will find a complete list of all fields of **FIBSEMData**, i.e. all metadata information that you can access:
 
 ``` java
 /* the magic number identifying the file, should be 3555587570 */

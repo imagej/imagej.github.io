@@ -8,35 +8,22 @@ categories: Scripting
 description: test description
 ---
 
-Super sloppy surface reconstruction from planetary surface photographs
-or [Scanning Electron Micrographs
-(SEM)](wikipedia:Scanning_electron_microscope "wikilink").
+Super sloppy surface reconstruction from planetary surface photographs or [Scanning Electron Micrographs (SEM)](wikipedia:Scanning_electron_microscope "wikilink").
 
 ## Motivation
 
-Sometimes, you have a picture of a surface and you want to see how it
-looks in 3-D. If your picture meets a few requirements, then
-reconstruction of an approximation of this surface is possible and,
-indeed, very simple. These requirements are:
+Sometimes, you have a picture of a surface and you want to see how it looks in 3-D. If your picture meets a few requirements, then reconstruction of an approximation of this surface is possible and, indeed, very simple. These requirements are:
 
-  - The surface has no variance in illumination and color (like in SEM
-    where everything is gold or at the moon where everything is cheese).
-  - The surface is illuminated by a single parallel light-source from
-    the left (rotate it if it comes from a different side).
-  - The light-source illuminates the surface from an angle steeper or as
-    steep as the steepest slope at the surface (that means: no shadows).
+  - The surface has no variance in illumination and color (like in SEM where everything is gold or at the moon where everything is cheese).
+  - The surface is illuminated by a single parallel light-source from the left (rotate it if it comes from a different side).
+  - The light-source illuminates the surface from an angle steeper or as steep as the steepest slope at the surface (that means: no shadows).
   - There is no occlusion of objects.
 
-If these requirements are met, your picture is an arbitrarily scaled
-<em>x</em>-gradient of your surface. That is, integrating it alongside
-<em>x</em> will give you the surface at an arbitrary scale.
+If these requirements are met, your picture is an arbitrarily scaled <em>x</em>-gradient of your surface. That is, integrating it alongside <em>x</em> will give you the surface at an arbitrary scale.
 
 ## Example
 
-See here a photograph of the [lunar crater
-Hohmann](http://commons.wikimedia.org/wiki/File:Hohmann_crater.png)
-original, integrated, and rendered as a [3D Surface
-Plot](3D_Surface_Plot "wikilink").
+See here a photograph of the [lunar crater Hohmann](http://commons.wikimedia.org/wiki/File:Hohmann_crater.png) original, integrated, and rendered as a [3D Surface Plot](3D_Surface_Plot "wikilink").
 
 |                                                        |                                                                         |                                                                      |
 | ------------------------------------------------------ | ----------------------------------------------------------------------- | -------------------------------------------------------------------- |
@@ -44,23 +31,12 @@ Plot](3D_Surface_Plot "wikilink").
 
 ## Shortcomings
 
-  - The approach is very sensitive to noise. Noise will result in a
-    stripy pattern, because it is accumulated independently for each
-    pixel row.
-  - Lacking the constant initializer for integration, we assume that the
-    average height for all pixel rows is equal and that the average
-    slope per row is 0. Rows with a large mountain without a
-    compensating valley will thus appear lower than they should.
+  - The approach is very sensitive to noise. Noise will result in a stripy pattern, because it is accumulated independently for each pixel row.
+  - Lacking the constant initializer for integration, we assume that the average height for all pixel rows is equal and that the average slope per row is 0. Rows with a large mountain without a compensating valley will thus appear lower than they should.
 
 ## Code
 
-This is BeanShell and can be executed via [Script
-Editor](Script_Editor "wikilink") or [BeanShell
-Interpreter](BeanShell_Interpreter "wikilink") or by dragging it as a
-file with extension \`.bsh' into the Fiji toolbar. This script performs
-per-pixel operations in an interpreted language and, therefore, is very
-slow. If you really need more speed, compile the source into a Java
-class which is straight forward for BeanShell code.
+This is BeanShell and can be executed via [Script Editor](Script_Editor "wikilink") or [BeanShell Interpreter](BeanShell_Interpreter "wikilink") or by dragging it as a file with extension \`.bsh' into the Fiji toolbar. This script performs per-pixel operations in an interpreted language and, therefore, is very slow. If you really need more speed, compile the source into a Java class which is straight forward for BeanShell code.
 
 ``` java
 import ij.*;

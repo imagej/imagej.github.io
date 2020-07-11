@@ -8,17 +8,11 @@ categories: Related Software,SciJava,Citable
 description: test description
 ---
 
-{% capture source %} {% include github org="CellProfiler"
-repo="CellProfiler" %} {% endcapture %} {% include sidebox-right
-content='Plugin' software='CellProfiler' name='CellProfiler'
-logo='![Cellprofiler-icon.png](/images/pages/Cellprofiler-icon.png
-"Cellprofiler-icon.png")"' author='[Broad Institute of MIT and
-Harvard](https://www.broadinstitute.org/)' maintainer='[Broad Institute
-of MIT and Harvard](https://www.broadinstitute.org/)' source=source
-status='active' website='http://cellprofiler.org/' %}CellProfiler is
-free open-source software designed to enable biologists without training
-in computer vision or programming to quantitatively measure phenotypes
-from thousands of images automatically.
+
+{% capture source%}
+{% include github org='CellProfiler' repo='CellProfiler' %}
+{% endcapture %}
+{% include info-box content='Plugin' software='CellProfiler' name='CellProfiler' logo='![Cellprofiler-icon.png](/images/pages/Cellprofiler-icon.png "Cellprofiler-icon.png")"' author=' [Broad Institute of MIT and Harvard](https://www.broadinstitute.org/) ' maintainer=' [Broad Institute of MIT and Harvard](https://www.broadinstitute.org/) ' source=source status='active' website='http://cellprofiler.org/' %}CellProfiler is free open-source software designed to enable biologists without training in computer vision or programming to quantitatively measure phenotypes from thousands of images automatically.
 
 ## Publications
 
@@ -26,6 +20,4 @@ from thousands of images automatically.
   - {% include publication content='CellProfiler2' %}
   - {% include publication content='CellProfiler' %}
 
-[Category:Related Software](Category:Related_Software "wikilink")
-[Category:SciJava](Category:SciJava "wikilink")
-[Category:Citable](Category:Citable "wikilink")
+[Category:Related Software](Category:Related_Software "wikilink") [Category:SciJava](Category:SciJava "wikilink") [Category:Citable](Category:Citable "wikilink")

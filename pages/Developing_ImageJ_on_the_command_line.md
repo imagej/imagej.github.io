@@ -8,9 +8,7 @@ categories: Development,IDEs
 description: test description
 ---
 
-{% include develop-menu content='tools' %}This article explains how to
-install and configure command line tools for use with
-[ImageJ](ImageJ "wikilink") development.
+{% include develop-menu content='tools' %}This article explains how to install and configure command line tools for use with [ImageJ](ImageJ "wikilink") development.
 
 ## Install and configure command line tools
 
@@ -18,8 +16,7 @@ install and configure command line tools for use with
 
 <tabs> <tab name="Windows"> ![ x32px](/images/pages/Win.png " x32px")" **Windows**
 
-Install [Git](Git "wikilink"), [Maven](Maven "wikilink"), and Java SE
-using [Chocolatey](https://chocolatey.org/):
+Install [Git](Git "wikilink"), [Maven](Maven "wikilink"), and Java SE using [Chocolatey](https://chocolatey.org/):
 
 ``` bash
 choco install -y git maven jdk8
@@ -33,16 +30,13 @@ choco install -y cyg-get
 
 </tab> <tab name="OS X"> ![ x32px](/images/pages/Osx.png " x32px")" **OS X**
 
-Install [Git](Git "wikilink") and [Maven](Maven "wikilink") using
-[Homebrew](http://brew.sh/):
+Install [Git](Git "wikilink") and [Maven](Maven "wikilink") using [Homebrew](http://brew.sh/):
 
 ``` bash
 brew install git maven bash-completion
 ```
 
-Download and install [Java
-SE](http://www.oracle.com/technetwork/java/javase/downloads/) from
-Oracle. </tab> <tab name="Linux"> ![ x32px](/images/pages/Tux.png " x32px")" **Linux**
+Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/) from Oracle. </tab> <tab name="Linux"> ![ x32px](/images/pages/Tux.png " x32px")" **Linux**
 
 ``` bash
 sudo apt-get install default-jdk git maven
@@ -75,10 +69,7 @@ mvn -Pexec
 
 ### Launching alternative user interfaces
 
-{% include warning-sidebox-right content='Alternative UIs are
-experimental and still at "proof of concept" stage. The `swing` UI is
-semi-functional, but the other two (`swing-mdi` and `awt`) are largely
-non-functional, mentioned here solely for completeness.' %}
+{% include warning-box content='Alternative UIs are experimental and still at "proof of concept" stage. The `swing` UI is semi-functional, but the other two (`swing-mdi` and `awt`) are largely non-functional, mentioned here solely for completeness.' %}
 
 ``` bash
 mvn -Dscijava.ui=swing -Pexec
@@ -90,5 +81,4 @@ mvn -Dscijava.ui=awt -Pexec
 
   - [Dotfiles](Dotfiles "wikilink") if you want to twink out your shell
 
-[Category:Development](Category:Development "wikilink")
-[Category:IDEs](Category:IDEs "wikilink")
+[Category:Development](Category:Development "wikilink") [Category:IDEs](Category:IDEs "wikilink")

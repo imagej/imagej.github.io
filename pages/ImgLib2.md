@@ -8,77 +8,50 @@ categories: ImgLib,Citable
 description: test description
 ---
 
-{% capture author %} {% include person content="Saalfeld" %}, {% include
-person content="Pietzsch" %}, {% include person content="StephanP" %},
-{% include person content="Rueden" %}, {% include person content="Leek"
-%}, {% include person content="Bdezonia" %}, {% include person
-content="Schindelin" %}, {% include person content="Dietzc" %}, {%
-include person content="hornm" %}, {% include person
-content="Albertcardona" %}, {% include person content="Harris" %}, {%
-include person content="Lindsey" %} {% endcapture %}
 
-{% capture maintainer %} {% include person content="Pietzsch" %}, {%
-include person content="Rueden" %} {% endcapture %}
+{% capture author%}
+{% include person content='Saalfeld' %}, {% include person content='Pietzsch' %}, {% include person content='StephanP' %}, {% include person content='Rueden' %}, {% include person content='Leek' %}, {% include person content='Bdezonia' %}, {% include person content='Schindelin' %}, {% include person content='Dietzc' %}, {% include person content='hornm' %}, {% include person content='Albertcardona' %}, {% include person content='Harris' %}, {% include person content='Lindsey' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="imglib" repo="imglib2" %} {%
-endcapture %} {% include sidebox-right name='ImgLib2' software='Generic
-Image Processing for Java' logo='![imglib2-logo.png](/images/pages/imglib2-logo.png
-"imglib2-logo.png")"' author=author maintainer=maintainer source=source
-status='stable, active'
-category='[:Category:ImgLib](:Category:ImgLib "wikilink")' %}{% include
-imglibmenu %}ImgLib2 is a general-purpose, multidimensional image
-processing library.
+{% capture maintainer%}
+{% include person content='Pietzsch' %}, {% include person content='Rueden' %}
+{% endcapture %}
 
-It provides an interface-driven design that supports numeric and
-non-numeric data types (8-bit unsigned integer, 32-bit floating point,
-etc.) in an extensible way. It implements several data sources and
-sample organizations, including one single primitive array, one array
-per plane, N-dimensional array "cells" cached to and from disk on
-demand, and planes read on demand from disk.
+{% capture source%}
+{% include github org='imglib' repo='imglib2' %}
+{% endcapture %}
+{% include info-box name='ImgLib2' software='Generic Image Processing for Java' logo='![imglib2-logo.png](/images/pages/imglib2-logo.png "imglib2-logo.png")"' author=author maintainer=maintainer source=source status='stable, active' category='[:Category:ImgLib](:Category:ImgLib "wikilink")' %}{% include imglibmenu%}
+ImgLib2 is a general-purpose, multidimensional image processing library.
+
+It provides an interface-driven design that supports numeric and non-numeric data types (8-bit unsigned integer, 32-bit floating point, etc.) in an extensible way. It implements several data sources and sample organizations, including one single primitive array, one array per plane, N-dimensional array "cells" cached to and from disk on demand, and planes read on demand from disk.
 
 ## Resources
 
-  - [ImgLib2
-    paper](http://bioinformatics.oxfordjournals.org/content/28/22/3009.full)
+  - [ImgLib2 paper](http://bioinformatics.oxfordjournals.org/content/28/22/3009.full)
   - [ImgLib2 Documentation](ImgLib2_Documentation "wikilink")
   - [ImgLib2 Examples](ImgLib2_Examples "wikilink")
   - {% include javadoc project='ImgLib2' %} javadoc
-  - [How To Migrate Code From ImgLib To
-    ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 "wikilink")
-  - ["Introduction to
-    ImgLib2"](ImgLib2_-_Introductory_Workshop "wikilink") workshop
-  - ["Advanced Programming with
-    ImgLib2"](ImgLib2_-_Advanced_Programming_Workshop "wikilink")
-    workshop
+  - [How To Migrate Code From ImgLib To ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 "wikilink")
+  - ["Introduction to ImgLib2"](ImgLib2_-_Introductory_Workshop "wikilink") workshop
+  - ["Advanced Programming with ImgLib2"](ImgLib2_-_Advanced_Programming_Workshop "wikilink") workshop
 
 ## Source code
 
-You can find the source {% include github org='imglib' repo='imglib2'
-%}.
+You can find the source {% include github org='imglib' repo='imglib2' %}.
 
-There is also a continuous integration system that builds ImgLib2 [every
-time the code changes](https://travis-ci.org/imglib/imglib2).
+There is also a continuous integration system that builds ImgLib2 [every time the code changes](https://travis-ci.org/imglib/imglib2).
 
 ## ImgLib2 vs. ImgLib1
 
-[ImgLib1](ImgLib1_\(deprecated\) "wikilink") is the previous incarnation
-of the library. We encourage developers to use ImgLib2 instead, and
-[migrate existing ImgLib1 programs to
-ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 "wikilink") whenever
-possible.
+[ImgLib1](ImgLib1_\(deprecated\) "wikilink") is the previous incarnation of the library. We encourage developers to use ImgLib2 instead, and [migrate existing ImgLib1 programs to ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 "wikilink") whenever possible.
 
-For an explanation of how ImgLib2 has changed from ImgLib1, see the
-[Changes from ImgLib1 to
-ImgLib2](Changes_from_ImgLib1_to_ImgLib2 "wikilink") page.
+For an explanation of how ImgLib2 has changed from ImgLib1, see the [Changes from ImgLib1 to ImgLib2](Changes_from_ImgLib1_to_ImgLib2 "wikilink") page.
 
-See the [How To Migrate Code From ImgLib To
-ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 "wikilink") page for
-details on how to update your ImgLib1-based code to use ImgLib2.
+See the [How To Migrate Code From ImgLib To ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 "wikilink") page for details on how to update your ImgLib1-based code to use ImgLib2.
 
 ## API Version History
 
-A history of API changes is available at:
-https://abi-laboratory.pro/java/tracker/timeline/imglib2/
+A history of API changes is available at: https://abi-laboratory.pro/java/tracker/timeline/imglib2/
 
 ## Other links
 
@@ -88,10 +61,6 @@ https://abi-laboratory.pro/java/tracker/timeline/imglib2/
 
 ## Publication
 
-Pietzsch, T., Preibisch, S., Tomančák, P., & Saalfeld, S. (2012).
-[ImgLib2—generic image processing in
-Java](http://bioinformatics.oxfordjournals.org/content/28/22/3009.full).
-Bioinformatics, 28(22), 3009-3011.
+Pietzsch, T., Preibisch, S., Tomančák, P., & Saalfeld, S. (2012). [ImgLib2—generic image processing in Java](http://bioinformatics.oxfordjournals.org/content/28/22/3009.full). Bioinformatics, 28(22), 3009-3011.
 
-[Category:ImgLib](Category:ImgLib "wikilink")
-[Category:Citable](Category:Citable "wikilink")
+[Category:ImgLib](Category:ImgLib "wikilink") [Category:Citable](Category:Citable "wikilink")

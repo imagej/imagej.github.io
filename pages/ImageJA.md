@@ -8,96 +8,57 @@ categories: Software
 description: test description
 ---
 
-{% include project content='ImageJ1' %} {% capture author %} {% include
-person content="Rasband" %}, {% include person content="Schindelin" %},
-{% include person content="Albertcardona" %}, et al {% endcapture %}
+{% include project content='ImageJ1' %}
+{% capture author%}
+{% include person content='Rasband' %}, {% include person content='Schindelin' %}, {% include person content='Albertcardona' %}, et al
+{% endcapture %}
 
-{% capture source %} {% include github org="imagej" repo="ImageJA"
-label="Git repository" %} {% endcapture %} {% include sidebox-right
-software='ImageJA' name='ImageJA' author=author maintainer='[Travis
-CI](Travis_CI "wikilink")' filename='Newer versions [on Maven
-Central](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22net.imagej%22%20AND%20a%3A%22ij%22)  
-Older versions [in ImageJ Maven
-repository](http://maven.imagej.net/content/repositories/releases/net/imagej/ij/)'
-source=source released='17/03/2007' version='auto-updated'
-status='auto-maintained' %}ImageJA is a project that provides a clean
-[Git](Git "wikilink") history of the [ImageJ 1.x](ImageJ_1.x "wikilink")
-project, with a proper 'pom.xml' file so that it can be used with
-[Maven](Maven "wikilink") without hassles.
+{% capture source%}
+{% include github org='imagej' repo='ImageJA' label='Git repository' %}
+{% endcapture %}
+{% include info-box software='ImageJA' name='ImageJA' author=author maintainer='[Travis CI](Travis_CI "wikilink")' filename='Newer versions [on Maven Central](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22net.imagej%22%20AND%20a%3A%22ij%22)  
+Older versions [in ImageJ Maven repository](http://maven.imagej.net/content/repositories/releases/net/imagej/ij/) ' source=source released='17/03/2007' latest-version='auto-updated' status='auto-maintained' %}ImageJA is a project that provides a clean [Git](Git "wikilink") history of the [ImageJ 1.x](ImageJ_1.x "wikilink") project, with a proper 'pom.xml' file so that it can be used with [Maven](Maven "wikilink") without hassles.
 
 ## Why ImageJA?
 
-The [ImageJ1](ImageJ1 "wikilink") project, developed by {% include
-person content='Rasband' %}, lives in the {% include github org='imagej'
-repo='imagej1' label='imagej/imagej1 repository' %} on
-[GitHub](GitHub "wikilink"). The `imagej1` repository uses the Ant build
-system. Changes are pushed (at most) once per day, with a corresponding
-datestamp. This scheme has some drawbacks:
+The [ImageJ1](ImageJ1 "wikilink") project, developed by {% include person content='Rasband' %}, lives in the {% include github org='imagej' repo='imagej1' label='imagej/imagej1 repository' %} on [GitHub](GitHub "wikilink"). The `imagej1` repository uses the Ant build system. Changes are pushed (at most) once per day, with a corresponding datestamp. This scheme has some drawbacks:
 
-  - ImageJ1 artifacts cannot be published easily to public repositories
-    for use as a dependency downstream.
-  - The `imagej1` repository's source code does not precisely correspond
-    to ImageJ 1.x's actual releases. Hence, that repository does not
-    have any [Git](Git "wikilink") release tags.
-  - Developing ImageJ1 in an [IDE](IDE "wikilink") would be more
-    convenient if it were structured as a Maven project.
+  - ImageJ1 artifacts cannot be published easily to public repositories for use as a dependency downstream.
+  - The `imagej1` repository's source code does not precisely correspond to ImageJ 1.x's actual releases. Hence, that repository does not have any [Git](Git "wikilink") release tags.
+  - Developing ImageJ1 in an [IDE](IDE "wikilink") would be more convenient if it were structured as a Maven project.
 
-The ImageJA project is an adjusted version of ImageJ1 which addresses
-the above limitations.
+The ImageJA project is an adjusted version of ImageJ1 which addresses the above limitations.
 
 ## How it works
 
-The [ij1-builds job on Travis
-CI](https://travis-ci.com/imagej/ij1-builds) polls the [ImageJ1 release
-notes page](https://wsr.imagej.net/notes.html) for updates. When
-something has changed, the job performs the following actions:
+The [ij1-builds job on Travis CI](https://travis-ci.com/imagej/ij1-builds) polls the [ImageJ1 release notes page](https://wsr.imagej.net/notes.html) for updates. When something has changed, the job performs the following actions:
 
-1.  Downloads the latest ImageJ1 source archive from the ImageJ 1.x
-    website.
+1.  Downloads the latest ImageJ1 source archive from the ImageJ 1.x website.
 2.  Extracts the archive.
 3.  Restructures the source code into a Maven project.
       - Sources are placed in `src/main/java`.
       - A `pom.xml` is added.
-4.  Commits and pushes the result to the `master` branch of the {%
-    include github org='imagej' repo='ImageJA' label='imagej/ImageJA
-    repository' %} on [GitHub](GitHub "wikilink").
+4.  Commits and pushes the result to the `master` branch of the {% include github org='imagej' repo='ImageJA' label='imagej/ImageJA repository' %} on [GitHub](GitHub "wikilink").
 
-The push triggers the followup
-[job](https://travis-ci.org/imagej/ImageJA), which builds and deploys
-the ImageJA project to the Maven Central repository (via OSS Sonatype).
+The push triggers the followup [job](https://travis-ci.org/imagej/ImageJA), which builds and deploys the ImageJA project to the Maven Central repository (via OSS Sonatype).
 
 ## Historical note
 
-ImageJA was originally [launched
-in 2005](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;cd841de0.0510) as
-a *fork* of [ImageJ1](ImageJ1 "wikilink"); i.e., it was synchronized
-closely with ImageJ with a few changes on top:
+ImageJA was originally [launched in 2005](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;cd841de0.0510) as a *fork* of [ImageJ1](ImageJ1 "wikilink"); i.e., it was synchronized closely with ImageJ with a few changes on top:
 
   - When run as an applet, ImageJA is embedded.
-  - The internal structure of ImageJA's recorder allows command
-    listeners to get much more fine-grained information.
-  - When launching a text editor, in many cases ImageJA will now choose
-    Fiji's Script Editor, if available, instead of the old AWT based
-    ImageJ editor.
-  - ImageJA has an easy Plugin installer via {% include bc
-    content='Plugins | Install PlugIn...'%} (ImageJ only has that
-    drag-n-drop thingie).
-  - The instance listener is RMI-based with ImageJA, so there is no
-    security issue with it.
+  - The internal structure of ImageJA's recorder allows command listeners to get much more fine-grained information.
+  - When launching a text editor, in many cases ImageJA will now choose Fiji's Script Editor, if available, instead of the old AWT based ImageJ editor.
+  - ImageJA has an easy Plugin installer via {% include bc content='Plugins | Install PlugIn...'%} (ImageJ only has that drag-n-drop thingie).
+  - The instance listener is RMI-based with ImageJA, so there is no security issue with it.
   - ImageJA's Command Launcher has fuzzy matching, too.
   - A couple of bug fixes:
       - JavaScript in ImageJA can find plugin classes, too.
-      - ImageJA also put back some not-yet-deprecated methods as
-        deprecated.
-      - A simple bug fix in PolygonRoi drawing (it moves to the first
-        point, but then draws a line to the same first point rather than
-        the second).
-      - A little bug fix in StackWindow: if you have a 2D time lapse,
-        ImageJ will still use the zSelector (rather than the tSelector).
+      - ImageJA also put back some not-yet-deprecated methods as deprecated.
+      - A simple bug fix in PolygonRoi drawing (it moves to the first point, but then draws a line to the same first point rather than the second).
+      - A little bug fix in StackWindow: if you have a 2D time lapse, ImageJ will still use the zSelector (rather than the tSelector).
       - ImageJA can handle https:// URLs, too.
 
-However, these days, needed changes to ImageJ 1.x are instead patched at
-runtime; see the [Compatibility](Compatibility "wikilink") page for
-details.
+However, these days, needed changes to ImageJ 1.x are instead patched at runtime; see the [Compatibility](Compatibility "wikilink") page for details.
 
 [Category:Software](Category:Software "wikilink")

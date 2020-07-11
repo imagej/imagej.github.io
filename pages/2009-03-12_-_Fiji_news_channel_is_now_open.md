@@ -8,8 +8,7 @@ categories: News,News
 description: test description
 ---
 
-Fiji now has its own news channel. We will use this feed to post news
-related to Fiji development and relevant events. Stay tuned\!
+Fiji now has its own news channel. We will use this feed to post news related to Fiji development and relevant events. Stay tuned\!
 
 If you need to post a news event, simly use the Fiji wiki to do so:
 

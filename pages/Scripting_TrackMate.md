@@ -12,61 +12,31 @@ description: test description
 
 ## TrackMate scripting principle
 
-[TrackMate\_](TrackMate_ "wikilink") can also be used without the GUI,
-using a scripting language that allows making calls to Java. The most
-simple way to get started is to use the [Script
-Editor](Script_Editor "wikilink"), which takes care of the difficult &
-boring part for you (such as path). The examples proposed on this page
-all use Jython, but can be adapted to anything.
+[TrackMate\_](TrackMate_ "wikilink") can also be used without the GUI, using a scripting language that allows making calls to Java. The most simple way to get started is to use the [Script Editor](Script_Editor "wikilink"), which takes care of the difficult & boring part for you (such as path). The examples proposed on this page all use Jython, but can be adapted to anything.
 
-Since we are calling the internals of TrackMate, we must get to know a
-bit of its guts. I have tried to come up with a rational design; though
-not always successfully. There is 3 main classes to interact with in a
-script:
+Since we are calling the internals of TrackMate, we must get to know a bit of its guts. I have tried to come up with a rational design; though not always successfully. There is 3 main classes to interact with in a script:
 
-  - Model
-    ([`fiji.plugin.trackmate.Model`](https://fiji.sc/javadoc/fiji/plugin/trackmate/Model.html))
-    is the class in charge of <u>storing the data</u>. It cannot do
-    anything to create it. It can help you follow manual modifications
-    you would made in the manual editing mode, interrogate it, ... but
-    it is conceptually just a data recipient.
+  - Model ([`fiji.plugin.trackmate.Model`](https://fiji.sc/javadoc/fiji/plugin/trackmate/Model.html)) is the class in charge of <u>storing the data</u>. It cannot do anything to create it. It can help you follow manual modifications you would made in the manual editing mode, interrogate it, ... but it is conceptually just a data recipient.
 
 <!-- end list -->
 
-  - Settings
-    ([`fiji.plugin.trackmate.Settings`](https://fiji.sc/javadoc/fiji/plugin/trackmate/Settings.html))
-    is the class storing the fields that will configure TrackMate and
-    pilot how the data is created. This is where you specify what is the
-    source image, what are the detector and tracking algorithms to use,
-    what are the filters to use, etc...
+  - Settings ([`fiji.plugin.trackmate.Settings`](https://fiji.sc/javadoc/fiji/plugin/trackmate/Settings.html)) is the class storing the fields that will configure TrackMate and pilot how the data is created. This is where you specify what is the source image, what are the detector and tracking algorithms to use, what are the filters to use, etc...
 
 <!-- end list -->
 
-  - TrackMate
-    (\[https://fiji.sc/javadoc/fiji/plugin/trackmate/TrackMate.html`fiji.plugin.trackmate.TrackMate`\])
-    is the guy that does the actual work. In scripts, we use it to
-    actually <u>perform the analysis tasks</u>, such as generating spots
-    from images, linking them into track, etc... It reads configuration
-    information in the Settings object mentioned above and put the
-    resulting data in the model.
+  - TrackMate (\[https://fiji.sc/javadoc/fiji/plugin/trackmate/TrackMate.html>`fiji.plugin.trackmate.TrackMate`\]) is the guy that does the actual work. In scripts, we use it to actually <u>perform the analysis tasks</u, such as generating spots from images, linking them into track, etc... It reads configuration information in the Settings object mentioned above and put the resulting data in the model.
 
-So getting a working script is all about configuring a proper `Settings`
-object and calling `exec*` methods on a `TrackMate` object. Then we read
-the results in the `Model` object.
+So getting a working script is all about configuring a proper `Settings` object and calling `exec*` methods on a `TrackMate` object. Then we read the results in the `Model` object.
 
 ## A full example
 
-Here is an example of full tracking process, using the easy image found
-in the [first tutorial](Getting_started_with_TrackMate "wikilink"). The
-following (Jython) script works as following:
+Here is an example of full tracking process, using the easy image found in the [first tutorial](Getting_started_with_TrackMate "wikilink"). The following (Jython) script works as following:
 
   - It fetches the image from the web
   - It configures settings for segmentation and tracking
   - The model is instantiated, with the settings and imp objects
-  - The [TrackMate](TrackMate "wikilink") class is instantiated with the
-    model object
-  - Then the [TrackMate](TrackMate "wikilink") object performs all the
-    steps needed.
+  - The [TrackMate](TrackMate "wikilink") class is instantiated with the model object
+  - Then the [TrackMate](TrackMate "wikilink") object performs all the steps needed.
   - The final results is displayed as an overlay.
 
 <!-- end list -->
@@ -184,16 +154,11 @@ model.getLogger().log(str(model))
 
 ## Loading and reading from a saved TrackMate XML file
 
-Scripting is a good way to interrogate and play non-interactively with
-tracking results. The example below shows how to load a XML TrackMate
-file and rebuild a full working model from it.
+Scripting is a good way to interrogate and play non-interactively with tracking results. The example below shows how to load a XML TrackMate file and rebuild a full working model from it.
 
-That way you could for instance redo a full tracking process by only
-changing one parameter with respect to the saved one. You might also
-want to check results without relying on the GUI. Etc...
+That way you could for instance redo a full tracking process by only changing one parameter with respect to the saved one. You might also want to check results without relying on the GUI. Etc...
 
-For the example below to work for you, you will have to edit line 20 and
-put the actual path to your TrackMate file.
+For the example below to work for you, you will have to edit line 20 and put the actual path to your TrackMate file.
 
 ``` python
 from fiji.plugin.trackmate.visualization.hyperstack import HyperStackDisplayer
@@ -312,40 +277,22 @@ displayer.render()
 
 ## Export spot, edge and track numerical features after tracking
 
-This example shows how to extract numerical features from tracking
-results.
+This example shows how to extract numerical features from tracking results.
 
 TrackMate computes and stores three kind of numerical features:
 
-  - Spot features, such as a spot location (X, Y, Z), its mean
-    intensity, radius etc...
-  - Edge or link features: An edge is a link between two spots. Its
-    feature typically stores the velocity and displacement, which are
-    defined only for two consecutive spots in the same track.
-  - Track features: numerical features that apply to a whole track, such
-    as the number of spots it contains.
+  - Spot features, such as a spot location (X, Y, Z), its mean intensity, radius etc...
+  - Edge or link features: An edge is a link between two spots. Its feature typically stores the velocity and displacement, which are defined only for two consecutive spots in the same track.
+  - Track features: numerical features that apply to a whole track, such as the number of spots it contains.
 
-By default, TrackMate only computes a very limited number of features.
-The GUI forces TrackMate to compute them all, but if you do scripting,
-you will have to explicitly configures TrackMate to compute the features
-you desire. This is done by adding feature analyzers to the settings
-object.
+By default, TrackMate only computes a very limited number of features. The GUI forces TrackMate to compute them all, but if you do scripting, you will have to explicitly configures TrackMate to compute the features you desire. This is done by adding feature analyzers to the settings object.
 
-There are some gotchas: some feature analyzers require other numerical
-features to be already calculated. If something does not work, it is a
-good idea to directly check the preamble in the source code of the
-analyzers ([TrackMate feature
-logic](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/)).
+There are some gotchas: some feature analyzers require other numerical features to be already calculated. If something does not work, it is a good idea to directly check the preamble in the source code of the analyzers ([TrackMate feature logic](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/)).
 
-Finally, depending on their type, numerical features are not stored at
-the same place:
+Finally, depending on their type, numerical features are not stored at the same place:
 
-  - Spot features are simply conveyed by the spot object, and you can
-    access them through `spot.getFeature('FEATURE_NAME')`
-  - Edge and track features are stored in a sub-component of the model
-    object called the FeatureModel ({% include github repo='fiji'
-    path='src-plugins/TrackMate\_/src/main/java/fiji/plugin/trackmate/FeatureModel.java'
-    label='FeatureModel.java' %}).
+  - Spot features are simply conveyed by the spot object, and you can access them through `spot.getFeature('FEATURE_NAME')`
+  - Edge and track features are stored in a sub-component of the model object called the FeatureModel ({% include github repo='fiji' path='src-plugins/TrackMate\_/src/main/java/fiji/plugin/trackmate/FeatureModel.java' label='FeatureModel.java' %}).
 
 Check the script below to see a working example.
 
@@ -490,12 +437,9 @@ for id in model.getTrackModel().trackIDs(True):
 
 ## Manually creating a model
 
-TrackMate aims at combining automatic and manual tracking facilities.
-This is also the case when scripting: a part of the API offers to a edit
-a model extensively. A few code patterns must be followed.
+TrackMate aims at combining automatic and manual tracking facilities. This is also the case when scripting: a part of the API offers to a edit a model extensively. A few code patterns must be followed.
 
-First, every edit must happen between a call to `model.beginUpdate()`
-and `model.endUpdate()`:
+First, every edit must happen between a call to `model.beginUpdate()` and `model.endUpdate()`:
 
 ``` python
 model.beginUpdate()
@@ -503,47 +447,25 @@ model.beginUpdate()
 model.endUpdate()
 ```
 
-The reason for this is that TrackMate caches each modification made to
-its model. This is required because we can deal with a rather complex
-content. For instance: imagine you have a single track that splits in
-two branches at some point. If you decide to remove the spot at the
-fork, a complex series of events will happen:
+The reason for this is that TrackMate caches each modification made to its model. This is required because we can deal with a rather complex content. For instance: imagine you have a single track that splits in two branches at some point. If you decide to remove the spot at the fork, a complex series of events will happen:
 
-  - First, three edges will be removed: the ones that were connected to
-    the spot you just removed.
+  - First, three edges will be removed: the ones that were connected to the spot you just removed.
   - Then the spot will actually be removed from the model.
-  - But then you need to recompute the tracks, because now, you have 3
-    tracks instead of 1.
-  - But also: all the numerical features of the tracks are now invalid,
-    and you need to recompute them.
-  - And what happens to the track name? What track, amongst the 3 new
-    ones, will receive the old name?
+  - But then you need to recompute the tracks, because now, you have 3 tracks instead of 1.
+  - But also: all the numerical features of the tracks are now invalid, and you need to recompute them.
+  - And what happens to the track name? What track, amongst the 3 new ones, will receive the old name?
 
-Well, TrackMate does that for you automatically, but for the chain of
-events to happen timely, you must make your edits within this
-`model.beginUpdate() / model.endUpdate()` code block.
+Well, TrackMate does that for you automatically, but for the chain of events to happen timely, you must make your edits within this `model.beginUpdate() / model.endUpdate()` code block.
 
-This script just shows you how to use this construct to build and
-populate a model from scratch. Appending content to a model is done by,
-sequentially:
+This script just shows you how to use this construct to build and populate a model from scratch. Appending content to a model is done by, sequentially:
 
-  - Creating spot objects. You have to provide their x, y, z location,
-    as well as a radius and a quality value for each. At this stage, you
-    don't provide at what frame (or time) they belong.
-  - This is done by adding the spot to the model, using
-    `model.addSpotTo(Spot, frame)`, frame being a positive integer
-    number.
-  - Then you create a link, or an edge as it is called in TrackMate,
-    between two spots. You have to provide the link cost:
-    `model.addEdge(Spot1, Spot2, cost)`.
+  - Creating spot objects. You have to provide their x, y, z location, as well as a radius and a quality value for each. At this stage, you don't provide at what frame (or time) they belong.
+  - This is done by adding the spot to the model, using `model.addSpotTo(Spot, frame)`, frame being a positive integer number.
+  - Then you create a link, or an edge as it is called in TrackMate, between two spots. You have to provide the link cost: `model.addEdge(Spot1, Spot2, cost)`.
 
-Spot quality and link cost are typically useful to quantify automatic
-spot detection and linking. We typically use negative values for these
-two numbers when doing manual edits.
+Spot quality and link cost are typically useful to quantify automatic spot detection and linking. We typically use negative values for these two numbers when doing manual edits.
 
-The script below does this:
-![TrackMate\_AnimatedName.gif](/images/pages/TrackMate_AnimatedName.gif
-"TrackMate_AnimatedName.gif")"
+The script below does this: ![TrackMate\_AnimatedName.gif](/images/pages/TrackMate_AnimatedName.gif "TrackMate_AnimatedName.gif")"
 
 ``` python
 import ij.gui.NewImage as NewImage
@@ -979,33 +901,23 @@ Animator().run('start')
 
 ## Calling TrackMate with multi-channel analyzer
 
-TrackMate allows for the addition of jar files that contain extra
-TrackMate modules. The [multi-channel spot mean intensity
-analyzer](TrackMate#Downloadable_jars "wikilink") is such a module.
+TrackMate allows for the addition of jar files that contain extra TrackMate modules. The [multi-channel spot mean intensity analyzer](TrackMate#Downloadable_jars "wikilink") is such a module.
 
-As any other module it can be used in a script, provided the jar file is
-in the plugins or jars folder of Fiji:
+As any other module it can be used in a script, provided the jar file is in the plugins or jars folder of Fiji:
 
-{% include github-embed org='fiji' repo='TrackMate'
-source='../../../scripts/CallTrackMateMultiChannel.py' %}
+{% include github-embed org='fiji' repo='TrackMate' source='../../../scripts/CallTrackMateMultiChannel.py' %}
 
 ## Making TrackMate macro recordable with a 64-line script
 
-Contributed by {% include person content='Eglinger' %} during a NEUBIAS
-course. Quoting from Jan:
+Contributed by {% include person content='Eglinger' %} during a NEUBIAS course. Quoting from Jan:
 
-> "The macro language is too limited to work with such awesome things as
-> TrackMate, but that you can do everything with a more powerful
-> scripting language. So when using a 64-line script to call it, it
-> actually is macro recordable."
+> "The macro language is too limited to work with such awesome things as TrackMate, but that you can do everything with a more powerful scripting language. So when using a 64-line script to call it, it actually is macro recordable."
 
-{% include github-embed org='fiji' repo='TrackMate'
-source='../../../scripts/Run\_TrackMate\_Headless.groovy' %}
+{% include github-embed org='fiji' repo='TrackMate' source='../../../scripts/Run\_TrackMate\_Headless.groovy' %}
 
 ## Add 3D maximas in the ROI Manager using TrackMate
 
-Using the 3D spots finder of TrackMate, it is possible to add the
-maximas to the ROI Manager with a simple Jython code:
+Using the 3D spots finder of TrackMate, it is possible to add the maximas to the ROI Manager with a simple Jython code:
 
 ``` python
 # @ImagePlus imp
@@ -1072,29 +984,19 @@ else:
 
 ## Tracking spots that are taken from the ROI manager.
 
-You have to start from a 2D+T image (nothing else) and a results table
-that contains at least the center of mass XM, YM, the slice and the Area
-for the cells in the movie. The results table is typically generated
-from the ROI manager, that would contain the results of the particle
-analyzer.
+You have to start from a 2D+T image (nothing else) and a results table that contains at least the center of mass XM, YM, the slice and the Area for the cells in the movie. The results table is typically generated from the ROI manager, that would contain the results of the particle analyzer.
 
 So an ideal starting situation would like this:
 
-![TrackMateScriptBeforeCapture.png](/images/pages/TrackMateScriptBeforeCapture.png
-"TrackMateScriptBeforeCapture.png")"
+![TrackMateScriptBeforeCapture.png](/images/pages/TrackMateScriptBeforeCapture.png "TrackMateScriptBeforeCapture.png")"
 
 this script will generate the following tracks:
 
 https://aws1.discourse-cdn.com/business4/uploads/imagej/original/3X/c/3/c3cee76938213f8d3e43ae1ca4cfbe3e4453546e.gif
 
-Cool no? The output can be controlled via a TrackMate GUI that will be
-shown upon running the script. Showing the GUI might not be desirable in
-batch mode, but from the GUI you can save your data, export to IJ tables
-and save to CSV, export a movie etc.
+Cool no? The output can be controlled via a TrackMate GUI that will be shown upon running the script. Showing the GUI might not be desirable in batch mode, but from the GUI you can save your data, export to IJ tables and save to CSV, export a movie etc.
 
-The script also offers to color the ROIs by track ID, if you have the
-ROI manager that was used to create the results table. It looks like
-this:
+The script also offers to color the ROIs by track ID, if you have the ROI manager that was used to create the results table. It looks like this:
 
 https://aws1.discourse-cdn.com/business4/uploads/imagej/original/3X/2/3/237d4f70b01b9d4fa596f89adea5c10fc481fbc0.gif
 

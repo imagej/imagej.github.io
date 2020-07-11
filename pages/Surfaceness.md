@@ -8,10 +8,10 @@ categories:
 description: test description
 ---
 
-{% capture source %} {% include github org="fiji" repo="VIB"
-source="features/Surfaceness\_.java" %} {% endcapture %} {% include
-sidebox-right software='ImageJ' name='Surfaceness' author='Mark Longair,
-Stephan Preibisch' maintainer='Mark Longair' filename='VIB\_.jar'
-source=source status='stable' %}
+
+{% capture source%}
+{% include github org='fiji' repo='VIB' source='features/Surfaceness\_.java' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='Surfaceness' author='Mark Longair, Stephan Preibisch' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
 
 FIXME: write some documentation for this plugin

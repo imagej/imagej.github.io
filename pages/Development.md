@@ -8,20 +8,13 @@ categories: Development
 description: test description
 ---
 
-{% include sidebox-right content='If your goal is to automate the
-behavior of ImageJ, consider writing a [script](script "wikilink") using
-ImageJ"s [Script Editor](Script_Editor "wikilink")—it is often much
-simpler than a plugin in Java.' %} {% include develop-menu %}This page
-provides an overview of ImageJ from the perspective of software
-development: how to use it from your programs, as well as how to modify
-or extend its capabilities via [plugins](plugins "wikilink").
+{% include info-box content='If your goal is to automate the behavior of ImageJ, consider writing a [script](script "wikilink") using ImageJ"s [Script Editor](Script_Editor "wikilink")—it is often much simpler than a plugin in Java.' %} {% include develop-menu%}
+This page provides an overview of ImageJ from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [plugins](plugins "wikilink").
 
 ## Quick start
 
-  - **Learn to write [ImageJ scripts](Scripting "wikilink")** from the
-    [ImageJ tutorial notebooks](https://imagej.github.io/tutorials).
-  - **Learn to use ImageJ from Java** with the [ImageJ tutorial Maven
-    projects](https://github.com/imagej/tutorials/tree/master/maven-projects).
+  - **Learn to write [ImageJ scripts](Scripting "wikilink")** from the [ImageJ tutorial notebooks](https://imagej.github.io/tutorials).
+  - **Learn to use ImageJ from Java** with the [ImageJ tutorial Maven projects](https://github.com/imagej/tutorials/tree/master/maven-projects).
 
 ## What is ImageJ?
 
@@ -96,13 +89,11 @@ ImageJ is divided into three parts:
 </tbody>
 </table>
 
-For full details on the technical structure of ImageJ, see the
-[Architecture](Architecture "wikilink") page.
+For full details on the technical structure of ImageJ, see the [Architecture](Architecture "wikilink") page.
 
 ## Key developer tools
 
-There are four indispensable software development tools on which ImageJ
-relies:
+There are four indispensable software development tools on which ImageJ relies:
 
 <table>
 <tbody>
@@ -130,22 +121,17 @@ Although: ImageJ can be developed using <a href="IDEs" title="wikilink"><em>any<
 </tbody>
 </table>
 
-See the [Project management](Project_management "wikilink") page for
-further details.
+See the [Project management](Project_management "wikilink") page for further details.
 
 ## Source code
 
-[ImageJ](ImageJ "wikilink") and related [SciJava](SciJava "wikilink")
-software projects are [open source](open_source "wikilink"). The code is
-organized into [well-separated](Architecture#Modularity "wikilink")
-projects.
+[ImageJ](ImageJ "wikilink") and related [SciJava](SciJava "wikilink") software projects are [open source](open_source "wikilink"). The code is organized into [well-separated](Architecture#Modularity "wikilink") projects.
 
 See the [source code](source_code "wikilink") page for further details.
 
 ## Tutorials
 
-Start with the [ImageJ tutorial
-notebooks](https://imagej.github.io/tutorials)\!
+Start with the [ImageJ tutorial notebooks](https://imagej.github.io/tutorials)\!
 
 <table>
 <tbody>

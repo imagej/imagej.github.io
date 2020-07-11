@@ -8,22 +8,16 @@ categories: Plugins
 description: test description
 ---
 
-{% capture source %} {% include github org="fiji" repo="Stitching"
-source="tools/RoiPicker.java" %} {% endcapture %} {% include
-sidebox-right software='Fiji' name='ROI Picker' author='Mark Hiner'
-maintainer='Mark Hiner' source=source released='30 August 2013'
-version='22 October 2013' status='second version'
-category='[Plugins](:Category:Plugins "wikilink")' %}
+
+{% capture source%}
+{% include github org='fiji' repo='Stitching' source='tools/RoiPicker.java' %}
+{% endcapture %}
+{% include info-box software='Fiji' name='ROI Picker' author='Mark Hiner' maintainer='Mark Hiner' source=source released='30 August 2013' latest-version='22 October 2013' status='second version' category='[Plugins](:Category:Plugins "wikilink")' %}
 
 ## Purpose
 
-![The ROI Picker tool selected.](/images/pages/ROI_Picker.png
-"The ROI Picker tool selected.")"
+![The ROI Picker tool selected.](/images/pages/ROI_Picker.png "The ROI Picker tool selected.")"
 
-This tool allows clicking to select existing ROIs. Clicking within the
-bounds of a ROI will select it in the ROI Manager. If multiple ROIs
-overlap over the clicked area, the union of the ROIs will be selected.
-Repeated clicks with the tool will then cycle through all individual
-ROIs in the union.
+This tool allows clicking to select existing ROIs. Clicking within the bounds of a ROI will select it in the ROI Manager. If multiple ROIs overlap over the clicked area, the union of the ROIs will be selected. Repeated clicks with the tool will then cycle through all individual ROIs in the union.
 
 [Category:Plugins](Category:Plugins "wikilink")

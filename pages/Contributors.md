@@ -8,17 +8,14 @@ categories:
 description: test description
 ---
 
-{% include sidebox-right content='This page describes who
-""contributes"" to [SciJava](SciJava "wikilink") projects.
+{% include info-box content='This page describes who ""contributes"" to [SciJava](SciJava "wikilink") projects.
 
-  - For information on who ""maintains"" these projects, see
-    [Governance](Governance "wikilink").
-  - For information on how ImageJ projects are ""funded"", see
-    [Funding](Funding "wikilink").
-  - For information on ""citing"" these projects, see
-    [Citing](Citing "wikilink").' %}
+  - For information on who ""maintains"" these projects, see [Governance](Governance "wikilink").
+  - For information on how ImageJ projects are ""funded"", see [Funding](Funding "wikilink").
+  - For information on ""citing"" these projects, see [Citing](Citing "wikilink").' %}
 
-{% include aboutmenu %}\_\_NOTOC\_\_== Who we are ==
+{% include aboutmenu%}
+\_\_NOTOC\_\_== Who we are ==
 
 <div style="font-size: small">
 
@@ -33,22 +30,14 @@ Note: This list is only irregularly updated.
   - {% include person content='Eliceiri' %}\[1\] (ImageJ, Fiji)
   - {% include person content='Tomancak' %}\[2\] (Fiji)
   - {% include person content='Jug' %}\[3\] (Fiji)
-  - [Anne Carpenter](http://www.broadinstitute.org/~anne/)\[4\]
-    (CellProfiler)
-  - [Michael
-    Berthold](http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/)\[5\]\[6\]
-    (KNIME)
-  - [Jason
-    Swedlow](http://www.lifesci.dundee.ac.uk/people/jason-swedlow)\[7\]\[8\]
-    (OME)
+  - [Anne Carpenter](http://www.broadinstitute.org/~anne/)\[4\] (CellProfiler)
+  - [Michael Berthold](http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/)\[5\]\[6\] (KNIME)
+  - [Jason Swedlow](http://www.lifesci.dundee.ac.uk/people/jason-swedlow)\[7\]\[8\] (OME)
 
-\=== {% include logo content='ImageJ' size='32px'
-%}[ImageJ](ImageJ "wikilink") ===
+### {% include logo content='ImageJ' size='32px' %}[ImageJ](ImageJ "wikilink")
 
-  - {% include person content='Rasband' %}\[9\] (lead, [ImageJ
-    1.x](ImageJ_1.x "wikilink"))
-  - {% include person content='Rueden' %}\[10\] (lead,
-    [ImageJ2](ImageJ2 "wikilink"))
+  - {% include person content='Rasband' %}\[9\] (lead, [ImageJ 1.x](ImageJ_1.x "wikilink"))
+  - {% include person content='Rueden' %}\[10\] (lead, [ImageJ2](ImageJ2 "wikilink"))
   - {% include person content='Dietzc' %}\[11\]\[12\]
   - {% include person content='Bnorthan' %}\[13\]
   - {% include person content='Hinerm' %}\[14\] (Sep 2010-Jun 2016)
@@ -61,8 +50,7 @@ Note: This list is only irregularly updated.
   - {% include person content='Lentz' %}\[21\] (Nov 2009-Feb 2011)
   - See also [ImageJ forum heroes](http://forum.imagej.net/users)
 
-\=== {% include logo content='ImgLib2' size='32px'
-%}[ImgLib2](ImgLib2 "wikilink") ===
+### {% include logo content='ImgLib2' size='32px' %}[ImgLib2](ImgLib2 "wikilink")
 
   - {% include person content='Pietzsch' %}\[22\] (lead)
   - {% include person content='StephanP' %}\[23\]\[24\]
@@ -72,8 +60,7 @@ Note: This list is only irregularly updated.
 
 <div style="float: left">
 
-\=== {% include logo content='Fiji' size='32px'
-%}[Fiji](Fiji "wikilink") ===
+### {% include logo content='Fiji' size='32px' %}[Fiji](Fiji "wikilink")
 
   - {% include person content='Rueden' %}\[27\] (lead)
   - {% include person content='JeanYvesTinevez' %}\[28\]
@@ -91,8 +78,7 @@ Note: This list is only irregularly updated.
   - {% include person content='Hinerm' %}\[44\] (former)
   - {% include person content='Albertcardona' %}\[45\]\[46\] (founder)
   - {% include person content='Schindelin' %}\[47\] (former, founder)
-  - See also [graph of Fiji
-    contributors](https://github.com/fiji/fiji/graphs/contributors)
+  - See also [graph of Fiji contributors](https://github.com/fiji/fiji/graphs/contributors)
 
 ### [BigDataViewer](BigDataViewer "wikilink")
 
@@ -108,20 +94,17 @@ Note: This list is only irregularly updated.
 
 <div style="float: left">
 
-\=== {% include logo content='SCIFIO' size='32px'
-%}[SCIFIO](SCIFIO "wikilink") ===
+### {% include logo content='SCIFIO' size='32px' %}[SCIFIO](SCIFIO "wikilink")
 
   - {% include person content='Rueden' %}\[55\] (lead)
   - {% include person content='Hinerm' %}\[56\] (former, founder)
 
-\=== {% include logo content='CellProfiler' size='32px'
-%}[CellProfiler](CellProfiler "wikilink") ===
+### {% include logo content='CellProfiler' size='32px' %}[CellProfiler](CellProfiler "wikilink")
 
   - {% include person content='0x00B1' %}\[57\] (lead)
   - {% include person content='Leek' %}\[58\] (former)
 
-\=== {% include logo content='KNIME' size='32px' %}[KNIME Image
-Processing](KNIME "wikilink") ===
+### {% include logo content='KNIME' size='32px' %}[KNIME Image Processing](KNIME "wikilink")
 
   - {% include person content='Dietzc' %}\[59\]\[60\] (lead)
   - {% include person content='hornm' %}\[61\]
@@ -129,8 +112,7 @@ Processing](KNIME "wikilink") ===
   - {% include person content='Squareys' %}\[64\]\[65\]
   - {% include person content='Gab1one' %}\[66\]\[67\]
 
-\=== {% include logo content='OME' size='32px' %}[OME](OME "wikilink")
-===
+### {% include logo content='OME' size='32px' %}[OME](OME "wikilink")
 
   - {% include person content='Moore' %}\[68\]\[69\] (co-lead)
   - {% include person content='jburel' %}\[70\] (co-lead)
@@ -138,20 +120,18 @@ Processing](KNIME "wikilink") ===
 
 </div>
 
-{% include clear %}
+{% include clear%}
+
 
 <div style="float: left">
 
 ### Plugin maintainers
 
-The specific plugin maintainers can be found at the [ maintainer
-page](Maintainer_page "wikilink"), although the list is out of date
-right now.
+The specific plugin maintainers can be found at the [ maintainer page](Maintainer_page "wikilink"), although the list is out of date right now.
 
 ### Special thanks
 
-Our deep thanks to {% include person content='Rasband' %}, author of
-[ImageJ1](ImageJ1 "wikilink"), for all his support and patience\!
+Our deep thanks to {% include person content='Rasband' %}, author of [ImageJ1](ImageJ1 "wikilink"), for all his support and patience\!
 
 </div>
 
@@ -159,23 +139,20 @@ Our deep thanks to {% include person content='Rasband' %}, author of
 
 ### Institutions
 
-{% include reflist %}
+{% include reflist%}
+
 
 </div>
 
-1.  [Laboratory for Optical and Computation](LOCI "wikilink") (LOCI) at
-    [UW-Madison](http://wisc.edu/)
+1.  [Laboratory for Optical and Computation](LOCI "wikilink") (LOCI) at [UW-Madison](http://wisc.edu/)
 
-2.  [Max Planck Institute of Molecular Cell Biology and
-    Genetics](http://mpi-cbg.de/) (MPI-CBG) at Dresden
+2.  [Max Planck Institute of Molecular Cell Biology and Genetics](http://mpi-cbg.de/) (MPI-CBG) at Dresden
 
-3.  [Max Planck Institute of Molecular Cell Biology and
-    Genetics](http://mpi-cbg.de/) (MPI-CBG) at Dresden
+3.  [Max Planck Institute of Molecular Cell Biology and Genetics](http://mpi-cbg.de/) (MPI-CBG) at Dresden
 
 4.  [Broad Institute](http://www.broadinstitute.org/) of MIT and Harvard
 
-5.  [University of Konstanz](http://www.uni-konstanz.de/en/welcome/),
-    Germany
+5.  [University of Konstanz](http://www.uni-konstanz.de/en/welcome/), Germany
 
 6.  [KNIME GmbH](https://www.knime.com/)
 
@@ -188,16 +165,14 @@ Our deep thanks to {% include person content='Rasband' %}, author of
 10. 
 11. 
 12. 
-13. [True North Intelligent Algorithms
-    LLC](http://www.truenorth-ia.com/)
+13. [True North Intelligent Algorithms LLC](http://www.truenorth-ia.com/)
 
 14. 
 15. 
 16. 
 17. 
 18. 
-19. [Marine Biological Laboratory](http://www.mbl.edu/) (MBL) at Woods
-    Hole
+19. [Marine Biological Laboratory](http://www.mbl.edu/) (MBL) at Woods Hole
 
 20. 
 21. 
@@ -209,16 +184,14 @@ Our deep thanks to {% include person content='Rasband' %}, author of
 27. 
 28. [Institut Pasteur](http://www.pasteur.fr/en), Paris, France
 
-29. [Ikerbasque](http://www.ikerbasque.net/), Basque Foundation for
-    Science, Spain
+29. [Ikerbasque](http://www.ikerbasque.net/), Basque Foundation for Science, Spain
 
 30. 
 31. 
 32. 
 33. 
 34. 
-35. [Friedrich Miescher Institute](https://www.fmi.ch/) for Biomedical
-    Research (FMI), Basel, Switzerland
+35. [Friedrich Miescher Institute](https://www.fmi.ch/) for Biomedical Research (FMI), Basel, Switzerland
 
 36. 
 37. [McGill University](https://www.mcgill.ca/)
@@ -231,21 +204,17 @@ Our deep thanks to {% include person content='Rasband' %}, author of
 41. [University of Idaho](http://www.uidaho.edu), Moscow
 
 42. 
-43. [University of Applied Sciencs and Arts
-    Dortmund](http://www.fh-dortmund.de), Germany
+43. [University of Applied Sciencs and Arts Dortmund](http://www.fh-dortmund.de), Germany
 
 44. 
-45. [Institute of Neuroinformatics](https://www.ini.uzh.ch/), [Uni/ETH
-    Zurich](https://www.ethz.ch/en.html)
+45. [Institute of Neuroinformatics](https://www.ini.uzh.ch/), [Uni/ETH Zurich](https://www.ethz.ch/en.html)
 
 46. [HHMI Janelia Research Campus](http://janelia.org/)
 
 47. 
 48. 
 49. 
-50. [Berlin Institute of Medical Systems Biology
-    (BIMSB)](https://www.mdc-berlin.de/13800178/en/bimsb) of the [Max
-    Delbrück Center (MDC)](https://www.mdc-berlin.de/en)
+50. [Berlin Institute of Medical Systems Biology (BIMSB)](https://www.mdc-berlin.de/13800178/en/bimsb) of the [Max Delbrück Center (MDC)](https://www.mdc-berlin.de/en)
 
 51. 
 52. 

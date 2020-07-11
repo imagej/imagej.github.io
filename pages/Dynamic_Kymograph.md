@@ -8,35 +8,33 @@ categories:
 description: test description
 ---
 
-{% capture author %} {% include person content="Rudy Zhou" %} {%
-endcapture %}
 
-{% capture maintainer %} {% include person content="Rudy Zhou" %} {%
-endcapture %}
+{% capture author%}
+{% include person content='Rudy Zhou' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="rudyzhou"
-repo="Dynamic\_Kymograph" %} {% endcapture %} {% include sidebox-right
-name='Dynamic\_Kymograph' software='Fiji' author=author
-maintainer=maintainer released='26 July 2018' source=source
-category='[Plugins](:Category:Plugins "wikilink")' %}
+{% capture maintainer%}
+{% include person content='Rudy Zhou' %}
+{% endcapture %}
 
-Dynamic\_Kymograph is a plugin for ImageJ that generates kymographs from
-stack videos using key-framing and linear interpolation.
+{% capture source%}
+{% include github org='rudyzhou' repo='Dynamic\_Kymograph' %}
+{% endcapture %}
+{% include info-box name='Dynamic\_Kymograph' software='Fiji' author=author maintainer=maintainer released='26 July 2018' source=source category='[Plugins](:Category:Plugins "wikilink")' %}
+
+Dynamic\_Kymograph is a plugin for ImageJ that generates kymographs from stack videos using key-framing and linear interpolation.
 
 ## Features
 
 The main features are:
 
-  - Allows user to specify polyline ROIs on multiple frames of a stack
-    video
+  - Allows user to specify polyline ROIs on multiple frames of a stack video
   - Automatically interpolates between ROIs drawn on different frames
-  - Generates a kymograph using the interpolated ROI throughout the
-    stack video
+  - Generates a kymograph using the interpolated ROI throughout the stack video
 
 ## Download and Usage
 
-See https://github.com/rudyzhou/Dynamic_Kymograph for download and
-detailed usage instructions.
+See https://github.com/rudyzhou/Dynamic_Kymograph for download and detailed usage instructions.
 
 ## Authors
 
@@ -44,11 +42,8 @@ detailed usage instructions.
 
 ## License
 
-This project is licensed under the [GNU General Public
-License](https://imagej.net/GPL).
+This project is licensed under the [GNU General Public License](https://imagej.net/GPL).
 
 ## Acknowledgements
 
-Some code used from [Multiple Kymograph
-Plugin](https://imagej.net/Multi_Kymograph) by Jens Reitdorf, Arne
-Seitz, and Johannes Schindelin.
+Some code used from [Multiple Kymograph Plugin](https://imagej.net/Multi_Kymograph) by Jens Reitdorf, Arne Seitz, and Johannes Schindelin.

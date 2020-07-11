@@ -8,17 +8,12 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu %}The source code of ImageJ is very modular;
-i.e., it is organized into
-[well-separated](Architecture#Modularity "wikilink") projects. This
-separation offers many advantages for efficient software development and
-it is well worth investing a little bit of time to understand.
+{% include develop-menu%}
+The source code of ImageJ is very modular; i.e., it is organized into [well-separated](Architecture#Modularity "wikilink") projects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
 
 ## Where is the code?
 
-{% include tip tip='You can search the source code at
-http://search.imagej.net/ using the GitHub button\!' %}\* All source
-code is on [GitHub](GitHub "wikilink").
+{% include tip tip='You can search the source code at http://search.imagej.net/ using the GitHub button\!' %}\* All source code is on [GitHub](GitHub "wikilink").
 
   - Each project exists in its own GitHub organization.
   - Each organization contains multiple source code repositories.
@@ -33,40 +28,32 @@ code is on [GitHub](GitHub "wikilink").
 | ![Scifio-icon.png](/images/pages/Scifio-icon.png "Scifio-icon.png")"    | [SCIFIO](https://github.com/scifio)   | Extensible image file I/O                                       |
 | ![Fiji-icon.png](/images/pages/Fiji-icon.png "Fiji-icon.png")"          | [Fiji](https://github.com/fiji)       | A "batteries-included" distribution of ImageJ                   |
 
-See the [Architecture](Architecture "wikilink") page for more
-information about the relationship between these projects.
+See the [Architecture](Architecture "wikilink") page for more information about the relationship between these projects.
 
 ## What is the license?
 
-Most is [BSD-2](BSD-2 "wikilink") (permissive); some is
-[GPL](GPL "wikilink") (copyleft). See the
-[Licensing](Licensing "wikilink") page.
+Most is [BSD-2](BSD-2 "wikilink") (permissive); some is [GPL](GPL "wikilink") (copyleft). See the [Licensing](Licensing "wikilink") page.
 
 ## Building from source
 
-Virtually all of these repositories have a top-level `pom.xml` file,
-identifying them as [Maven](Maven "wikilink") projects.
+Virtually all of these repositories have a top-level `pom.xml` file, identifying them as [Maven](Maven "wikilink") projects.
 
 To build a Maven project:
 
-1.  [Install
-    Maven](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html).
+1.  [Install Maven](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html).
 2.  Clone the source repository of interest.
 3.  Type `mvn` from the top-level directory.
 
-Advanced instructions for building, or modifying, the source code are
-available for specific development environments: {% include ides %} Note
-that these tutorials are targeted towards [ImageJ](ImageJ "wikilink"),
-but would apply to any Maven-based project.
+Advanced instructions for building, or modifying, the source code are available for specific development environments: {% include ides%}
+ Note that these tutorials are targeted towards [ImageJ](ImageJ "wikilink"), but would apply to any Maven-based project.
 
 ## Javadocs
 
-{% include javadocsection %}
+{% include javadocsection%}
+
 
 ## Running ImageJ1 unit tests
 
-We have written a substantial number of unit tests to exercise [ImageJ
-1.x](ImageJ_1.x "wikilink") functionality. See the [Unit tests for
-ImageJ1](Unit_tests_for_ImageJ1 "wikilink") page for more information.
+We have written a substantial number of unit tests to exercise [ImageJ 1.x](ImageJ_1.x "wikilink") functionality. See the [Unit tests for ImageJ1](Unit_tests_for_ImageJ1 "wikilink") page for more information.
 
 [Category:Development](Category:Development "wikilink")

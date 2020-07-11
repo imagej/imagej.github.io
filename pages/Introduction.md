@@ -8,22 +8,12 @@ categories:
 description: test description
 ---
 
-{% include learn %}== What is ImageJ? ==
-<a href="ImageJ"><img src="/images/pages/Imagej2-icon.png" height="48px"/></a>
-[ImageJ](ImageJ "wikilink") is an [open source](open_source "wikilink")
-[image processing](techniques "wikilink") program for multidimensional
-image data with a focus on scientific imaging.
+{% include learn%}
+== What is ImageJ? == <a href="ImageJ"><img src="/images/pages/Imagej2-icon.png" height="48px"/></a> [ImageJ](ImageJ "wikilink") is an [open source](open_source "wikilink") [image processing](techniques "wikilink") program for multidimensional image data with a focus on scientific imaging.
 
 ## What is Fiji?
 
-<a href="Fiji"><img src="/images/pages/Fiji-icon.png" height="48px"/></a>
-[<span style="color: darkcyan; font-size: large; font-weight: bold">F</span>iji
-<span style="color: darkcyan; font-size: large; font-weight: bold">I</span>s
-<span style="color: darkcyan; font-size: large; font-weight: bold">J</span>ust
-<span style="color: darkcyan; font-size: large; font-weight: bold">I</span>mageJ](Fiji "wikilink")—a
-"batteries-included" distribution of ImageJ which includes many useful
-[plugins](plugins "wikilink") [contributed by the
-community](Fiji_contribution_requirements "wikilink").
+<a href="Fiji"><img src="/images/pages/Fiji-icon.png" height="48px"/></a> [<span style="color: darkcyan; font-size: large; font-weight: bold">F</span>iji <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>s <span style="color: darkcyan; font-size: large; font-weight: bold">J</span>ust <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>mageJ](Fiji "wikilink")—a "batteries-included" distribution of ImageJ which includes many useful [plugins](plugins "wikilink") [contributed by the community](Fiji_contribution_requirements "wikilink").
 
 ## What does ImageJ provide?
 
@@ -35,16 +25,10 @@ community](Fiji_contribution_requirements "wikilink").
 | [Scripting](Scripting "wikilink")     | Automated, reproducible workflows via [scripts](scripting "wikilink") and [macros](macros "wikilink"), including [headless on a remote server or cluster](Scripting_Headless "wikilink").                                                                                                                                                         |
 | [Forum](http://forum.imagej.net/)     | A vibrant, diverse, and helpful user [community](community "wikilink") that gives rise to insightful scientific exchanges.                                                                                                                                                                                                                        |
 
-ImageJ's [extensibility](extensibility "wikilink") is the root of its
-effectiveness: many advanced image-processing methods are not provided
-by the core application, but rather are [plugins](plugins "wikilink")
-written by specialists in specific fields, made available via [update
-sites](update_sites "wikilink").
+ImageJ's [extensibility](extensibility "wikilink") is the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather are [plugins](plugins "wikilink") written by specialists in specific fields, made available via [update sites](update_sites "wikilink").
 
 ## How do I get started?
 
   - Get ImageJ from the [Downloads](Downloads "wikilink") page
   - Read the [Getting started](Getting_started "wikilink") tutorial.
-  - Then peruse the [User Guides](User_Guides "wikilink"), additional
-    [tutorials](tutorials "wikilink"), and
-    [presentations](presentations "wikilink").
+  - Then peruse the [User Guides](User_Guides "wikilink"), additional [tutorials](tutorials "wikilink"), and [presentations](presentations "wikilink").

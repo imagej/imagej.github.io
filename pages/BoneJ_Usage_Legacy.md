@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [BoneJ2\#Usage\_reporting](BoneJ2#Usage_reporting "wikilink")
+1.  REDIRECT [BoneJ2\#Usage\_reporting](BoneJ2#Usage_reporting "wikilink")

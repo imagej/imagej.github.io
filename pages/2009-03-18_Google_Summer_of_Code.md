@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2009-03-18 - Google Summer of
-    Code](2009-03-18_-_Google_Summer_of_Code "wikilink")
+1.  REDIRECT [2009-03-18 - Google Summer of Code](2009-03-18_-_Google_Summer_of_Code "wikilink")

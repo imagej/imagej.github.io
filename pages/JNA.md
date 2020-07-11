@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [Developing\_using\_native\_libraries\#JNA](Developing_using_native_libraries#JNA "wikilink")
+1.  REDIRECT [Developing\_using\_native\_libraries\#JNA](Developing_using_native_libraries#JNA "wikilink")

@@ -10,17 +10,9 @@ description: test description
 
 ## Introduction
 
-The {% include javadoc project='ImageJ1' package='ij/gui'
-class='GenericDialog' %} class is part of [ImageJ1](ImageJ1 "wikilink")
-and can be used to make simple graphical user interfaces for scripts and
-plugins. It requires a bit more of work than with the [script
-parameters](Script_Parameters "wikilink") option but offers more
-possibilities.  
-Fiji offers an additional {% include javadoc project='Fiji'
-package='fiji/util/gui' class='GenericDialogPlus' %} subclass which
-include additional GUI item like a file input with a browse button.  
-Like the script parameters, plugins using the Generic Dialog (or one of
-its subclass) are macro recordable.
+The {% include javadoc project='ImageJ1' package='ij/gui' class='GenericDialog' %} class is part of [ImageJ1](ImageJ1 "wikilink") and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more of work than with the [script parameters](Script_Parameters "wikilink") option but offers more possibilities.  
+Fiji offers an additional {% include javadoc project='Fiji' package='fiji/util/gui' class='GenericDialogPlus' %} subclass which include additional GUI item like a file input with a browse button.  
+Like the script parameters, plugins using the Generic Dialog (or one of its subclass) are macro recordable.
 
 ### In Jython (or similar scripting language)
 
@@ -62,22 +54,16 @@ if gui.wasOKed():
 ### In the macro language
 
 There are 2 options to generate a GUI in the ImageJ macro language.  
-The first option is convenient if only a single or few parameters are
-requested.  
-It will open a dedicated input window for every parameter requested ie
-if there are multiple parameters, several windows will successively show
-up.
+The first option is convenient if only a single or few parameters are requested.  
+It will open a dedicated input window for every parameter requested ie if there are multiple parameters, several windows will successively show up.
 
 ``` java
 someNumber = getNumber("Some number", 0); // 0 is the default here
 someString = getString("Some string", "DefaultValue");
 ```
 
-The list of possible inputs is the same than for the second option with
-the Dialog.  
-Using Dialog (the 2nd option), a single input window will show up with
-all parameters. This requires a little bit more coding than the 1st
-option, but is more elegant.
+The list of possible inputs is the same than for the second option with the Dialog.  
+Using Dialog (the 2nd option), a single input window will show up with all parameters. This requires a little bit more coding than the 1st option, but is more elegant.
 
 ``` java
 Dialog.create("My inputs");
@@ -114,19 +100,13 @@ print("Choice:", inChoice);
 print("Do something (1=True, 0=False):", inBoolean);
 ```
 
-See the section "Dialog" of the [Macro functions
-reference](https://imagej.net/developer/macro/functions.html) for more
-details.
+See the section "Dialog" of the [Macro functions reference](https://imagej.net/developer/macro/functions.html) for more details.
 
 ## Image and file inputs
 
 By default, script and plugins process the last selected image.  
-However sometime one needs to specify different images or files as
-input.  
-The subclass {% include javadoc project='Fiji' package='fiji/util/gui'
-class='GenericDialogPlus' %} provides a couple of handful methods for
-such cases, while all methods shown above are inherited from the
-GenericDialog class.
+However sometime one needs to specify different images or files as input.  
+The subclass {% include javadoc project='Fiji' package='fiji/util/gui' class='GenericDialogPlus' %} provides a couple of handful methods for such cases, while all methods shown above are inherited from the GenericDialog class.
 
 ``` python
 from fiji.util.gui import GenericDialogPlus
@@ -159,35 +139,21 @@ if gui.wasOKed():
 
 ## Macro-recording
 
-Just like script parameters, plugins using the GenericDialog class are
-macro-recordable.  
-One important thing to note is the name of the variable in the recorded
-command. This name is actually the first word of the string used as
-label for each item, with lowercase letters only.  
-A single word is not very intuitive to understand a parameter in most
-cases. To include the next words of the label in the recorded command
-replace the space with underscores, as in `some_file` above.
+Just like script parameters, plugins using the GenericDialog class are macro-recordable.  
+One important thing to note is the name of the variable in the recorded command. This name is actually the first word of the string used as label for each item, with lowercase letters only.  
+A single word is not very intuitive to understand a parameter in most cases. To include the next words of the label in the recorded command replace the space with underscores, as in `some_file` above.
 
-For instance the previous code saved as `GUI_.py` in
-`Fiji.app/scripts/Plugins/Test` yields the following recorded command:  
+For instance the previous code saved as `GUI_.py` in `Fiji.app/scripts/Plugins/Test` yields the following recorded command:  
 
     run("GUI ", "image1=MyImage1.tif image2=MyImage2.tif some_file=DefaultFilePath some_folder=DefaultFolderPath some_path=DefaultPath");
 
 ## Recalling previous entries using the PrefService
 
-It is convenient to have the previously entered parameters recalled at
-the next run of a given plugin. This is happening automatically for
-Script parameters (unless specified differently) but not for the
-GenericDialog class.  
-Fortunately, it is still possible to make it works using the
-PrefService.
+It is convenient to have the previously entered parameters recalled at the next run of a given plugin. This is happening automatically for Script parameters (unless specified differently) but not for the GenericDialog class.  
+Fortunately, it is still possible to make it works using the PrefService.
 
-Services are some ImageJ2/SciJava features that can be though of as some
-kind of package import at runtime. They are not available in a plain
-ImageJ1, thus an alternative to recall parameter in ImageJ1 is to use a
-temp file to store the previously entered parameters.  
-Here's the link to the {% include javadoc project='SciJava'
-package='org/scijava/prefs' class='PrefService' %}.  
+Services are some ImageJ2/SciJava features that can be though of as some kind of package import at runtime. They are not available in a plain ImageJ1, thus an alternative to recall parameter in ImageJ1 is to use a temp file to store the previously entered parameters.  
+Here's the link to the {% include javadoc project='SciJava' package='org/scijava/prefs' class='PrefService' %}.  
 And below is a Jython example of how to use it.
 
 ``` python
@@ -223,66 +189,36 @@ if gui.wasOKed():
     prefs.put(None, "Decimal", Decimal) 
 ```
 
-The first step is to "import" the PrefService and to assign it a name,
-here prefs.
+The first step is to "import" the PrefService and to assign it a name, here prefs.
 
-Then there are 2 methods to respectively recover and store some
-parameter values from the PrefService, namely `get` and `put`.
+Then there are 2 methods to respectively recover and store some parameter values from the PrefService, namely `get` and `put`.
 
-Let's start with `get`. This method is define for the different datatype
-`getInt`, `getFloat`, `getBoolean`. An exception for String there is no
-`getString` just `get`.  
-Also in Jython the `getBoolean` method is not mapping the right Java
-signature, so use `getInt` instead as illustrated above.
+Let's start with `get`. This method is define for the different datatype `getInt`, `getFloat`, `getBoolean`. An exception for String there is no `getString` just `get`.  
+Also in Jython the `getBoolean` method is not mapping the right Java signature, so use `getInt` instead as illustrated above.
 
 There are 3 arguments for the `get` methods:
 
-1.  The Plugin class for which to associate the parameter persistence.
-    Leave it None (or Null in other languages) to use the default.
-2.  The name of the variable to recall from memory/the preferences, it
-    should be the same name used by the `put` method for that parameter.
-3.  The default value to use if no variable with such name exist in
-    memory ie the first time you run your script or if you reset the
-    preferences.
+1.  The Plugin class for which to associate the parameter persistence. Leave it None (or Null in other languages) to use the default.
+2.  The name of the variable to recall from memory/the preferences, it should be the same name used by the `put` method for that parameter.
+3.  The default value to use if no variable with such name exist in memory ie the first time you run your script or if you reset the preferences.
 
-The method `put` is even simpler as there is only a single method that
-takes also 3 arguments:
+The method `put` is even simpler as there is only a single method that takes also 3 arguments:
 
 1.  Like for `get` an optional Plugin class
-2.  The name used to store the parameter value in memory/in the
-    preferences, it is the same name used by `get` to recover the
-    previously entered value.
-3.  The value to store in memory with the name in argument 2. If the
-    parameter was already existing in memory the value is updated to
-    this newly provided value.
+2.  The name used to store the parameter value in memory/in the preferences, it is the same name used by `get` to recover the previously entered value.
+3.  The value to store in memory with the name in argument 2. If the parameter was already existing in memory the value is updated to this newly provided value.
 
-Therefore in the script above, the default values for the GenericDialog
-fields are initialized to the values available in memory, or some
-default values if there are missing in memory.  
-Once the GUI is oked, the values in memory are updated with the newly
-typed values, using the `put` method.
+Therefore in the script above, the default values for the GenericDialog fields are initialized to the values available in memory, or some default values if there are missing in memory.  
+Once the GUI is oked, the values in memory are updated with the newly typed values, using the `put` method.
 
 ## Custom buttons
 
-Using the
-[GenericDialogPlus](https://javadoc.scijava.org/Fiji/fiji/util/gui/GenericDialogPlus.html)
-provided with Fiji, it is possible to add custom buttons and associated
-actions to a GUI.  
-To do so, we have to import the
-[ActionListener](https://docs.oracle.com/javase/7/docs/api/java/awt/event/ActionListener.html)
-interface from `java.awt.event`.  
-We then create a class that implements this interface, and that contains
-a single method named `actionPerformed`, which will be called anytime
-the user interacts with an item that is linked to this event-listening
-class, like a button.  
-In the folloguig jython example, we define 2 buttons A and B, both
-associated to the same event-handling class named `ButtonClic`.  
-If any of the button is clicked, the `actionPerformed` method of
-`ButtonClic` is called. However the source of the event is different
-(button A or B), and thus we can define different commands to execute
-for each case.  
-For more complicated cases, one could also create different
-event-handling classes to assign to different set of GUI items.
+Using the [GenericDialogPlus](https://javadoc.scijava.org/Fiji/fiji/util/gui/GenericDialogPlus.html) provided with Fiji, it is possible to add custom buttons and associated actions to a GUI.  
+To do so, we have to import the [ActionListener](https://docs.oracle.com/javase/7/docs/api/java/awt/event/ActionListener.html) interface from `java.awt.event`.  
+We then create a class that implements this interface, and that contains a single method named `actionPerformed`, which will be called anytime the user interacts with an item that is linked to this event-listening class, like a button.  
+In the folloguig jython example, we define 2 buttons A and B, both associated to the same event-handling class named `ButtonClic`.  
+If any of the button is clicked, the `actionPerformed` method of `ButtonClic` is called. However the source of the event is different (button A or B), and thus we can define different commands to execute for each case.  
+For more complicated cases, one could also create different event-handling classes to assign to different set of GUI items.
 
 ``` python
 from fiji.util.gui    import GenericDialogPlus

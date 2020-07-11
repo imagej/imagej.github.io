@@ -8,117 +8,23 @@ categories: News,ImageJ2
 description: test description
 ---
 
-With [ImageJ1](ImageJ1 "wikilink"), there is a singleton instance of the
-program, accessible via `IJ.getInstance()`. With
-[ImageJ2](ImageJ2 "wikilink") we want to provide a mechanism for
-managing multiple [ImageJ](ImageJ "wikilink") "application contexts." At
-the moment, ImageJ2 is also still a singleton, but we recently did some
-work to pave the way for multiple ImageJ applications running
-simultaneously.
+With [ImageJ1](ImageJ1 "wikilink"), there is a singleton instance of the program, accessible via `IJ.getInstance()`. With [ImageJ2](ImageJ2 "wikilink") we want to provide a mechanism for managing multiple [ImageJ](ImageJ "wikilink") "application contexts." At the moment, ImageJ2 is also still a singleton, but we recently did some work to pave the way for multiple ImageJ applications running simultaneously.
 
-In ImageJ2, functionality is divided into a set of services, which are
-classes implementing the `IService` interface. Each service class has a
-single instance associated with its `ImageJ` application context. So
-once you have an `ImageJ` object, you can ask it for a service of a
-particular class by calling the `getService(Class<? extends IService>)`
-method. With multiple application contexts, the tricky part can be
-accessing the correct `ImageJ` object in the first place.
+In ImageJ2, functionality is divided into a set of services, which are classes implementing the `IService` interface. Each service class has a single instance associated with its `ImageJ` application context. So once you have an `ImageJ` object, you can ask it for a service of a particular class by calling the `getService(Class<? extends IService>)` method. With multiple application contexts, the tricky part can be accessing the correct `ImageJ` object in the first place.
 
-One option is for the API to require passing around an `ImageJ` object
-in many places. For example, writing a plugin currently requires
-implementing a single method, `run()`. Most plugins require access to
-one or more services of the application context (e.g., a plugin might
-wish to ask the `DisplayService` about the currently active `Display`).
-We could change this signature to `run(ImageJ)`, but then it would
-become incompatible with the `Runnable` interface. Alternately, we could
-add another method setContext(ImageJ) that informs the plugin of the
-context, or require a constructor that takes an ImageJ argument, but
-both of these would make writing a plugin more complicated. A third
-option could be to declare the required services as fields annotated
-with `@Parameter`, to be populated during preprocessing.
+One option is for the API to require passing around an `ImageJ` object in many places. For example, writing a plugin currently requires implementing a single method, `run()`. Most plugins require access to one or more services of the application context (e.g., a plugin might wish to ask the `DisplayService` about the currently active `Display`). We could change this signature to `run(ImageJ)`, but then it would become incompatible with the `Runnable` interface. Alternately, we could add another method setContext(ImageJ) that informs the plugin of the context, or require a constructor that takes an ImageJ argument, but both of these would make writing a plugin more complicated. A third option could be to declare the required services as fields annotated with `@Parameter`, to be populated during preprocessing.
 
-For now, we have chosen to provide access to the current application
-context from a static method, `ImageJ.getContext()`. This method
-examines the name of the current thread and extracts the context ID if
-available. For example, a thread called `"ImageJ-1-ModuleRunner"` is
-spawned when the `ImageJ` with an ID of 1 executes a plugin. The
-`getContext()` method can then determine the application context merely
-from the thread name. However, this approach cannot glean the
-application context from standard threads such as the AWT event dispatch
-thread. Hence, when creating a new application context, we use a special
-initialization thread named `"ImageJ-0-Initialization"` (where "0" is
-the ID of the context being created), and block the calling thread until
-it is complete.
+For now, we have chosen to provide access to the current application context from a static method, `ImageJ.getContext()`. This method examines the name of the current thread and extracts the context ID if available. For example, a thread called `"ImageJ-1-ModuleRunner"` is spawned when the `ImageJ` with an ID of 1 executes a plugin. The `getContext()` method can then determine the application context merely from the thread name. However, this approach cannot glean the application context from standard threads such as the AWT event dispatch thread. Hence, when creating a new application context, we use a special initialization thread named `"ImageJ-0-Initialization"` (where "0" is the ID of the context being created), and block the calling thread until it is complete.
 
-To create a new application context, call the static
-`ImageJ.createContext()` method, which instantiates an `ImageJ` object
-with all available services (i.e., those classes which implement
-`IService` and are annotated with `@Service`, discovered in the
-classpath at runtime by SezPoz). Alternately, calling
-`ImageJ.createContext(createContext(Class<? extends IService>...)` or
-`ImageJ.createContext(Collection<Class<? extends IService>>)` will
-create an application with only those services given (and any
-dependencies). Either way, the context is guaranteed to have a unique
-ID, which will be the next available incrementing value, starting at 0.
+To create a new application context, call the static `ImageJ.createContext()` method, which instantiates an `ImageJ` object with all available services (i.e., those classes which implement `IService` and are annotated with `@Service`, discovered in the classpath at runtime by SezPoz). Alternately, calling `ImageJ.createContext(createContext(Class<? extends IService>...)` or `ImageJ.createContext(Collection<Class<? extends IService>>)` will create an application with only those services given (and any dependencies). Either way, the context is guaranteed to have a unique ID, which will be the next available incrementing value, starting at 0.
 
-To initialize services, ImageJ examines the given list of service
-classes in order, recursively scanning for dependencies, as declared in
-the constructor of each service. For example, the `PluginService`
-requires a `ModuleService` to function, so it declares a constructor
-`PluginService(ImageJ, ModuleService)` which ImageJ takes care of
-populating with the proper values. (As a side note: every service also
-declares a no-args constructor, but only because SezPoz requires it; it
-is never used, and will throw `UnsupportedOperationException` if it is
-called.) The constructor used is always the first one found with an
-`ImageJ` for its first argument. Any additional arguments are considered
-dependencies, and expected to be `IService` implementations. This
-paradigm allows for easier dependency injection, which e.g. is useful
-for unit testing the service classes. When initializing, ImageJ uses a
-two-pass approach to its services: on the first pass, it recursively
-constructs the instances, and on the second pass it calls
-\`IService.initialize()\` on each new instance in the same order. This
-ensures that all service classes exist before any are initialized, and
-allows limited support for circular dependencies. Finally, additional
-services can be loaded into an `ImageJ` application context after
-initialization using the `loadService(Class<? extends IService>)` and
-`loadServices(Collection<Class<? extends IService>>)` methods.
+To initialize services, ImageJ examines the given list of service classes in order, recursively scanning for dependencies, as declared in the constructor of each service. For example, the `PluginService` requires a `ModuleService` to function, so it declares a constructor `PluginService(ImageJ, ModuleService)` which ImageJ takes care of populating with the proper values. (As a side note: every service also declares a no-args constructor, but only because SezPoz requires it; it is never used, and will throw `UnsupportedOperationException` if it is called.) The constructor used is always the first one found with an `ImageJ` for its first argument. Any additional arguments are considered dependencies, and expected to be `IService` implementations. This paradigm allows for easier dependency injection, which e.g. is useful for unit testing the service classes. When initializing, ImageJ uses a two-pass approach to its services: on the first pass, it recursively constructs the instances, and on the second pass it calls \`IService.initialize()\` on each new instance in the same order. This ensures that all service classes exist before any are initialized, and allows limited support for circular dependencies. Finally, additional services can be loaded into an `ImageJ` application context after initialization using the `loadService(Class<? extends IService>)` and `loadServices(Collection<Class<? extends IService>>)` methods.
 
-There are a few problem areas remaining before ImageJ will fully support
-multiple simultaneous application contexts. Specifically, there are some
-static methods that must be fixed or eliminated:
+There are a few problem areas remaining before ImageJ will fully support multiple simultaneous application contexts. Specifically, there are some static methods that must be fixed or eliminated:
 
-  - `ImageJ.get(Class<? extends IService>)`: This method is a shortcut
-    for `ImageJ.getContext().getService(Class<? extends IService>)` and
-    is the main mechanism that plugins and other external code uses to
-    obtain access to application services. Fortunately, making
-    `getContext()` work reliably also fixes this method. But ideally we
-    should reduce or possibly even eliminate uses of this method in
-    favor of other approaches.
-  - `Events.publish` and `Events.subscribe`: As part of the refactoring
-    toward multiple application contexts, we moved away from a single
-    static event bus, and now have an `EventService` with its own event
-    bus. So events are now published locally within a particular context
-    only. We also added a `getContext()` method to `ImageJEvent` so that
-    all event handlers have easy access to the application context of
-    the event. Unfortunately, there are over a hundred references to the
-    static `Events` class throughout the codebase. Thus, we have updated
-    `Events.publish(ImageJEvent)` to be a shortcut for
-    `ImageJ.get(EventService.class).publish(ImageJEvent)`. In the
-    future, we may eliminate the `Events` class, or at least thoroughly
-    scrutinize everywhere it is used.
+  - `ImageJ.get(Class<? extends IService>)`: This method is a shortcut for `ImageJ.getContext().getService(Class<? extends IService>)` and is the main mechanism that plugins and other external code uses to obtain access to application services. Fortunately, making `getContext()` work reliably also fixes this method. But ideally we should reduce or possibly even eliminate uses of this method in favor of other approaches.
+  - `Events.publish` and `Events.subscribe`: As part of the refactoring toward multiple application contexts, we moved away from a single static event bus, and now have an `EventService` with its own event bus. So events are now published locally within a particular context only. We also added a `getContext()` method to `ImageJEvent` so that all event handlers have easy access to the application context of the event. Unfortunately, there are over a hundred references to the static `Events` class throughout the codebase. Thus, we have updated `Events.publish(ImageJEvent)` to be a shortcut for `ImageJ.get(EventService.class).publish(ImageJEvent)`. In the future, we may eliminate the `Events` class, or at least thoroughly scrutinize everywhere it is used.
 
-In particular, calling either of the above static methods from the EDT
-or other generic thread will fail, so the architecture must be
-structured to work properly without ever doing so. Unfortunately, there
-are currently many places where these methods (particularly the `Events`
-methods) are called in such a way. So for now, we have hardcoded
-`ImageJ.getContext()` to return `ImageJ.getContext(0)` by default, which
-effectively keeps ImageJ restricted to a singleton application. We will
-revisit this issue in the future, but for the time being there are more
-pressing matters ([\#632](http://trac.imagej.net/ticket/632),
-[\#694](http://trac.imagej.net/ticket/694),
-[\#660](http://trac.imagej.net/ticket/660), and [many
-more](http://trac.imagej.net/query?status=accepted&status=assigned&status=new&status=reopened&group=milestone&col=id&col=summary&col=type&col=priority&col=milestone&col=component&order=priority)).
+In particular, calling either of the above static methods from the EDT or other generic thread will fail, so the architecture must be structured to work properly without ever doing so. Unfortunately, there are currently many places where these methods (particularly the `Events` methods) are called in such a way. So for now, we have hardcoded `ImageJ.getContext()` to return `ImageJ.getContext(0)` by default, which effectively keeps ImageJ restricted to a singleton application. We will revisit this issue in the future, but for the time being there are more pressing matters ([\#632](http://trac.imagej.net/ticket/632), [\#694](http://trac.imagej.net/ticket/694), [\#660](http://trac.imagej.net/ticket/660), and [many more](http://trac.imagej.net/query?status=accepted&status=assigned&status=new&status=reopened&group=milestone&col=id&col=summary&col=type&col=priority&col=milestone&col=component&order=priority)).
 
-[Category:News](Category:News "wikilink")
-[Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")

@@ -1,1 +1,1 @@
-<div class="clear">{{include.content}}</div>
+<div style="clear: both;">{{include.content}}</div>

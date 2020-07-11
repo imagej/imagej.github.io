@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Detect Information
-    Loss](Detect_Information_Loss "wikilink")
+1.  REDIRECT [Detect Information Loss](Detect_Information_Loss "wikilink")

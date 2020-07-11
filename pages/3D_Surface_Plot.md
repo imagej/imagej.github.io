@@ -8,9 +8,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats
-content=':sc.fiji:Interactive\_3D\_Surface\_Plot' %} Documentation:
-https://imagej.net/plugins/surface-plot-3d.html
+{% include component-stats content=':sc.fiji:Interactive\_3D\_Surface\_Plot' %} Documentation: https://imagej.net/plugins/surface-plot-3d.html
 
 Not hardware accelerated.
 

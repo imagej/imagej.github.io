@@ -8,10 +8,7 @@ categories: Development
 description: test description
 ---
 
-\_\_NOTOC\_\_{% include develop-menu content='tutorials' %}If you create
-a useful extension of ImageJ—e.g., a [plugin](plugin "wikilink"),
-[script](script "wikilink") or [macro](macro "wikilink")—the next step
-is to *distribute* it to others, including:
+\_\_NOTOC\_\_{% include develop-menu content='tutorials' %}If you create a useful extension of ImageJ—e.g., a [plugin](plugin "wikilink"), [script](script "wikilink") or [macro](macro "wikilink")—the next step is to *distribute* it to others, including:
 
   - **Distribute** the extension itself to users
   - Share the extension's **source code**
@@ -22,26 +19,17 @@ is to *distribute* it to others, including:
 Here is a quick summary of the most recommended options:
 
   - **Distribution.**
-      - A) **[create your own update
-        site](How_to_set_up_and_populate_an_update_site "wikilink")**;
-        or
-      - B) **[bundle your plugin with
-        Fiji](Fiji_contribution_requirements "wikilink")**.
+      - A) **[create your own update site](How_to_set_up_and_populate_an_update_site "wikilink")**; or
+      - B) **[bundle your plugin with Fiji](Fiji_contribution_requirements "wikilink")**.
   - **Source code.**
       - Make your project **[open source](open_source "wikilink")**.
       - Host it on **[GitHub](GitHub "wikilink")**.
-      - Use **[Maven](Maven "wikilink")** to build and SemVer for
-        **[versioning](versioning "wikilink")**.
-      - Use **[Travis](Travis "wikilink")** for continuous integration
-        and artifact deployment to the [SciJava Maven
-        repository](SciJava_Maven_repository "wikilink").
+      - Use **[Maven](Maven "wikilink")** to build and SemVer for **[versioning](versioning "wikilink")**.
+      - Use **[Travis](Travis "wikilink")** for continuous integration and artifact deployment to the [SciJava Maven repository](SciJava_Maven_repository "wikilink").
   - **Documentation.**
-      - Create a page here on the **[ImageJ
-        Wiki](https://imagej.net/)**.
+      - Create a page here on the **[ImageJ Wiki](https://imagej.net/)**.
 
-The tables below discuss additional options for these three aspects of
-distribution. Green items are recommended. Other options are given but
-not recommended for various reasons.
+The tables below discuss additional options for these three aspects of distribution. Green items are recommended. Other options are given but not recommended for various reasons.
 
 ## Distributing your extension
 
@@ -58,7 +46,8 @@ The first goal is to get your extension into the hands of users.
 <tr class="odd">
 <td><ul>
 <li><strong><a href="How_to_set_up_and_populate_an_update_site" title="wikilink"> Create your update site</a></strong>, then <strong><a href="How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site" title="wikilink">upload your extension to it</a></strong>.</li>
-<li>You may add your update site to the list of built-in sites by editing the <strong>{% include list-of-update-sites %}</strong> page.</li>
+<li>You may add your update site to the list of built-in sites by editing the <strong>{% include list-of-update-sites%}
+</strong> page.</li>
 <li>To release a new version, <strong><a href="How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site" title="wikilink">upload it to the update site</a></strong>.</li>
 </ul></td>
 </tr>
@@ -96,9 +85,7 @@ The first goal is to get your extension into the hands of users.
 
 ## Sharing your source code
 
-If you want to facilitate good science, please [share your source
-code](Open_Source "wikilink"). Otherwise, your extension is a black box
-and its results are not verifiable.
+If you want to facilitate good science, please [share your source code](Open_Source "wikilink"). Otherwise, your extension is a black box and its results are not verifiable.
 
 <table>
 <tbody>
@@ -180,8 +167,7 @@ and its results are not verifiable.
 
 ## Documenting your extension
 
-Useful extensions deserve corresponding documentation explaining how to
-use them.
+Useful extensions deserve corresponding documentation explaining how to use them.
 
 <table>
 <tbody>

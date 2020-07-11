@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [Architecture\#Versioning](Architecture#Versioning "wikilink")
+1.  REDIRECT [Architecture\#Versioning](Architecture#Versioning "wikilink")

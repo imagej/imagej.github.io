@@ -8,23 +8,20 @@ categories: Plugins,ImageScience
 description: test description
 ---
 
-{% capture maintainer %} {% include person content="ImageScience" %} {%
-endcapture %}
 
-{% capture author %} {% include person content="ImageScience" %} {%
-endcapture %}
+{% capture maintainer%}
+{% include person content='ImageScience' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="imagescience"
-repo="FeatureJ" %} {% endcapture %} {% include sidebox-right
-software='ImageScience' name='FeatureJ' maintainer=maintainer
-author=author source=source status=''
-category='[:Category:Plugins](:Category:Plugins "wikilink")'
-website='http://imagescience.org/meijering/software/featurej/' %}The
-[FeatureJ](http://imagescience.org/meijering/software/featurej/) suite
-of plugins offers extraction of differential features of images.
+{% capture author%}
+{% include person content='ImageScience' %}
+{% endcapture %}
 
-FeatureJ is available from the [ImageScience](ImageScience "wikilink")
-update site.
+{% capture source%}
+{% include github org='imagescience' repo='FeatureJ' %}
+{% endcapture %}
+{% include info-box software='ImageScience' name='FeatureJ' maintainer=maintainer author=author source=source status='' category='[:Category:Plugins](:Category:Plugins "wikilink")' website='http://imagescience.org/meijering/software/featurej/' %}The [FeatureJ](http://imagescience.org/meijering/software/featurej/) suite of plugins offers extraction of differential features of images.
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:ImageScience](Category:ImageScience "wikilink")
+FeatureJ is available from the [ImageScience](ImageScience "wikilink") update site.
+
+[Category:Plugins](Category:Plugins "wikilink") [Category:ImageScience](Category:ImageScience "wikilink")

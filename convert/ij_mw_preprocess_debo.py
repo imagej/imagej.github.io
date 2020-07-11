@@ -1,7 +1,33 @@
 import os
 import re
 
-inline_blocks = ["citation", "cite"]
+txt_include_start = "%AA%"
+txt_param_start = "%BB%"
+txt_param_end = "%CC%"
+txt_param_var_start = "%DD%"
+txt_liquid_end = "%FF%"
+txt_liquid_linebreak_end = "%GG%"
+txt_capture_start = "%HH%"
+txt_capture_start_end = txt_liquid_linebreak_end
+txt_capture_end = "%JJ%"
+
+template_regex = r'(\{\{[\n ]*([A-Za-z0-9_]*)[ \n]*\|?[ \n]*(([\s\S]*?))\}\})'
+template_parameter_regex = r'(\w+([ ]\w+)*)[ ]*=[ ]*([^|]*)'
+include_regex = r'((\n )*\{\%[\n ]*include\ ([^\ \n]*)([^\%]*)\%\})'
+include_shadowed_regex = r'(' + txt_include_start + '.+?(?=' + txt_liquid_end + ')' + txt_liquid_end + ")"
+link_with_vertical_bar_regex = r'(\[\[[^\]]*\|[^\]]*\]\])'
+
+global_shadows = [
+    ("{% include ", txt_include_start),
+    ("=\'", txt_param_start),
+    ("=", txt_param_var_start),
+    ("\'", txt_param_end),
+    ("%}", txt_liquid_end),
+    ("%}\n", txt_liquid_linebreak_end),
+    ("\n{% endcapture %}\n", txt_capture_end),
+    ("\n{% capture ", txt_capture_start),
+    ("\n%}\n", txt_capture_end)
+]
 
 def read_file(file_path):
 
@@ -82,13 +108,6 @@ def get_categories(file_path):
 
     return str_categories
 
-
-template_regex = r'(\{\{[\n ]*([A-Za-z0-9_]*)[ \n]*\|?[ \n]*(([\s\S]*?))\}\})'
-template_parameter_regex = r'([a-z]+)[ ]*=[ ]*([^|]*)'
-include_regex = r'(\{\%[\n ]*include\ ([^\ \n]*)(.*)\%\})'
-link_with_vertical_bar_regex = r'(\[\[[^\]]*\|[^\]]*\]\])'
-
-
 def process_file(str_content):
 
     # perform regex replacements
@@ -102,7 +121,7 @@ def process_file(str_content):
 
     # fix youtube template
     content_tmp = re.sub(r'{{[\\]*#widget:YouTube\|id=([\w\d\-_]*)[a-z=|\d]*}}',
-                         r'{% include youtube url="https://www.youtube.com/embed/\1" %} ', content_tmp)
+                         r'' + txt_include_start + 'youtube url' + txt_param_start + 'https://www.youtube.com/embed/\1' + txt_param_end + txt_liquid_end, content_tmp)
     # TODO parse flash template?!, removing for now because it creates liquid issues
     content_tmp = re.sub(r'{{[\\]*#widget:flash\|[^}]*}}', r'TODO FLASH WIDGET', content_tmp)
     # TODO parse google spreadsheet template, removing for now because it creates liquid issues
@@ -114,11 +133,20 @@ def process_file(str_content):
     content_tmp = replace_template(content_tmp)
 
     #convert image links into working links - this can be improved, it should not run on all File: links..
-    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\|[ ]*link=(?!http)(.*)[ ]*\]\]',
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\|[ ]*link=(?!http)([^\]]*)[ ]*\]\]',
                          r'<a href="\3"><img src="\1" width="\2"/></a>', content_tmp)
-    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*x([^ |]*)[ ]*\|[ ]*link=(.*)[ ]*\]\]',
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*x([^ |]*)[ ]*\|[ ]*link=([^\]]*)\]\]',
                          r'<a href="\3"><img src="\1" height="\2"/></a>', content_tmp)
 
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\]\]',
+                         r'[[File:\1 |\3|link=\2 ]]', content_tmp)
+
+    return content_tmp
+
+
+def reveal_includes(content_tmp):
+    for real, shadow in global_shadows:
+        content_tmp = content_tmp.replace(shadow, real)
     return content_tmp
 
 
@@ -160,26 +188,21 @@ def replace_template_match(document_content, match_content, template_name, templ
         return document_content, False
 
     if len(template_content) == 0:
-        return document_content.replace(match_content, "{% include " + template_name + " %}"), False
+        return document_content.replace(match_content, txt_include_start + template_name + txt_liquid_linebreak_end), False
 
-    if template_name not in inline_blocks:
-        # handle inline templates
-        template_content = re.sub(r'\'', r'"', template_content)
-        if template_name == "bc":
-            document_content = document_content.replace(match_content,
-                                                        "{% include " + template_name + " content=\'" + template_content + "\'%}")
-        else:
-            matched_parameters, captures = match_content_parameters(template_content)
-            if len(captures) > 0:
-                document_content = document_content.replace(match_content, captures +
-                                                        "{% include " + template_name + " " + matched_parameters + "%}")
-            else:
-                document_content = document_content.replace(match_content,
-                                                        "{% include " + template_name + " " + matched_parameters + "%}")
-    else:
+    # handle inline templates
+    template_content = re.sub(r'\'', r'"', template_content)
+    if template_name == "bc":
         document_content = document_content.replace(match_content,
-                                                    "\n{% capture includecontent %}\n" + template_content + "\n{% endcapture %}\n"
-                                                    "\n{% include " + template_name + " content=includecontent %}\n")
+                                                    txt_include_start + template_name + " content" + txt_param_start + cleanup(template_content) + txt_param_end + txt_liquid_end)
+    else:
+        matched_parameters, captures = match_content_parameters(template_content)
+        if len(captures) > 0:
+            document_content = document_content.replace(match_content, captures +
+                                                    txt_include_start + template_name + " " + matched_parameters + txt_liquid_end)
+        else:
+            document_content = document_content.replace(match_content,
+                                                    txt_include_start + template_name + " " + matched_parameters + txt_liquid_end)
     return document_content, False
 
 
@@ -190,7 +213,7 @@ def fix_template_name(name):
     name = name.replace('notice', 'info-box')
     name = name.replace('infobox', 'info-box')
     name = name.replace('warning', 'warning-box')
-    name = name.replace('box', 'sidebox-right')
+    # name = name.replace('box', 'sidebox-right')
     name = name.replace('info-sidebox-right', 'sidebox-right')
     name = name.replace('key-press', 'key')
     name = name.replace('biglink', 'big-link')
@@ -215,17 +238,18 @@ def fix_template_name(name):
 def match_content_parameters(template_content):
     # in case there are already converted includes in the template content, it messes with converting the parameters,
     # so we shadow them with a numbered string and put them back in after converting the parameters.
-    include_pattern = re.compile(include_regex)
-    link_with_vertical_bar_pattern = re.compile(link_with_vertical_bar_regex)
+    include_pattern = re.compile(include_shadowed_regex)
     shadows_include = []
     shadows_links = []
     idx = 0
     for match in re.findall(include_pattern, template_content):
         idx += 1
         shadow = "___SHADOW" + str(idx) + "___"
-        shadows_include.append((shadow, match[0]))
-        template_content = template_content.replace(match[0], shadow)
+        shadows_include.append((shadow, match))
+        template_content = template_content.replace(match, shadow)
 
+    # links with vertical bars make it hard to convert the parameters, so we are shadowing them too
+    link_with_vertical_bar_pattern = re.compile(link_with_vertical_bar_regex)
     for match in re.findall(link_with_vertical_bar_pattern, template_content):
         idx += 1
         shadow = "___SHADOW" + str(idx) + "___"
@@ -237,33 +261,52 @@ def match_content_parameters(template_content):
     res = ""
     captures = ""
     # check if template has parameters, e.g. is of form `x=bla|y=blub`
-    for (key, value) in re.findall(parameter_pattern, template_content):
+    for (key, unused, value) in re.findall(parameter_pattern, template_content):
         value = value.strip()
+        # [URL] are not converted, and since it has no title, the brackets are not needed in markdown
+        value = re.sub(r'\[(http[^ \]]*)\]', r'\1', value)
+        value = re.sub(r'(\[(\[\[[^\]]*\]\])?[ ]*(http[^\]]*)\])', r' \1 ', value)
         pattern_matched = True
+        key = key.replace(" ", "-")
+        if key == "1":
+            key = "content"
         # if there were includes in the value of a parameter, capture the content
         if any(s[0] in value for s in shadows_include):
-            captures += "\n{% capture " + key + " %}\n" + value + "\n{% endcapture %}\n"
-            res += key + "=" + key + " "
+            captures += txt_capture_start + key + txt_capture_start_end + value + txt_capture_end
+            res += key + txt_param_var_start + key + " "
         else:
-            res += key + "=\'" + value + "\' "
+            res += key + txt_param_start + cleanup(value) + txt_param_end + " "
+
     # check if additionally to having parameters, the template has an unnamed value as well,
     # e.g. {{template this is the unnamed value|x=bla|y=blub}}
     # if yes, attach as `content`
     if pattern_matched:
         match = re.match(r'^([^\|\=]*)\|', template_content)
         if match:
-            res = "content=\'" + match[1].strip() + "\' " + res
+            content = match[1].strip()
+            if len(content) > 0:
+                res = "content" + txt_param_start + content + txt_param_end + " " + res
     else:
+        # if we are shadowing includes, capture the content of the parameter, otherwise liquid breaks
         if any(s[0] in template_content for s in shadows_include):
-            captures += "\n{% capture content %}\n" + template_content + "\n{% endcapture %}\n"
-            res = "content=content "
+            captures += txt_capture_start + " content " + txt_capture_start_end + template_content + txt_capture_end
+            res = "content" + txt_param_var_start + "content "
         else:
-            res = "content=\'" + template_content + "\' "
+            content = cleanup(template_content).strip()
+            if len(content.strip()) > 0:
+                res = "content" + txt_param_start + content + txt_param_end + " "
+    # unshadow includes and links
     for shadow, include in shadows_include:
         captures = captures.replace(shadow, include)
     for shadow, link in shadows_links:
         res = res.replace(shadow, link)
+    # print(res)
     return res, captures
+
+
+def cleanup(value):
+    return value
+    # return " ".join(value.replace("\n", " ").split())
 
 
 def add_front_matter(str_content, file_path, layout, title):
@@ -306,6 +349,8 @@ def convert(path_in, path_out, layout, title):
         tmp_file = os.path.join(os.path.dirname(path_out), "tmpconversionfile.mw")
         write_file(processed_mw, tmp_file)
 
+        # print(processed_mw)
+
         run_pandoc(tmp_file, path_out)
         os.remove(tmp_file)
 
@@ -313,9 +358,14 @@ def convert(path_in, path_out, layout, title):
         content_tmp = read_file(path_out)
 
         # do replacements in md format
+        content_tmp = reveal_includes(content_tmp)
         content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
         content_tmp = re.sub(r'<img src=\"(?!http)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
         content_tmp = re.sub(r'(\!\[[^\]]*\]\()([^"\)]*[ \n]\"[^\"]*\"[ ]*\))', r'\1/images/pages/\2"', content_tmp)
+
+        # pattern = re.compile(include_regex)
+        # for match in re.findall(pattern, content_tmp):
+        #     content_tmp = content_tmp.replace(match[0], cleanup(match[0]))
 
     front_matter = add_front_matter(content_tmp, path_in, layout, title)
 
@@ -334,4 +384,4 @@ def convert(path_in, path_out, layout, title):
 
 
 def run_pandoc(path_in, path_out):
-    os.system('pandoc {0} -f mediawiki -t gfm -s -o {1}'.format(path_in, path_out))
+    os.system('pandoc {0} -f mediawiki -t gfm --wrap=none -s -o {1}'.format(path_in, path_out))

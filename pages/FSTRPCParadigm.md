@@ -8,15 +8,7 @@ categories:
 description: test description
 ---
 
-It is implementation of RPCParadigm that executes commands in different
-instances of running Fiji. The Fiji can run in a different computer or a
-HPC cluster. Communication is realized through TCP/IP and data are
-serialized by library
-[fst](https://github.com/RuedigerMoeller/fast-serialization). It is
-possible to send as parameter in request every serializable object .
-Support for another types could be added through the offered
-extensibility. It is necessary to implement the interface
-*ParallelizationParadigmSerializer*:
+It is implementation of RPCParadigm that executes commands in different instances of running Fiji. The Fiji can run in a different computer or a HPC cluster. Communication is realized through TCP/IP and data are serialized by library [fst](https://github.com/RuedigerMoeller/fast-serialization). It is possible to send as parameter in request every serializable object . Support for another types could be added through the offered extensibility. It is necessary to implement the interface *ParallelizationParadigmSerializer*:
 
 ``` java
 public interface ParallelizationParadigmSerializer extends SciJavaPlugin {
@@ -33,10 +25,7 @@ public interface ParallelizationParadigmSerializer extends SciJavaPlugin {
 }
 ```
 
-and to annotate the implementing class with @Plugin annotation with
-specified type *ParallelizationParadigmSerializer*. There exists one
-implementation of the interface for the type Dataset in the project
-scijava-parallel-fst:
+and to annotate the implementing class with @Plugin annotation with specified type *ParallelizationParadigmSerializer*. There exists one implementation of the interface for the type Dataset in the project scijava-parallel-fst:
 
 ``` java
 @Plugin(type = ParallelizationParadigmSerializer.class)

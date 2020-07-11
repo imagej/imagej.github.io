@@ -10,54 +10,31 @@ description: test description
 
 ## Overview
 
-In addition to the main application available in the Fiji menu via {%
-include bc content='Plugins|BigStitcher|BigStitcher'%}, we offer
-macro-recordable versions of most processing steps under the {% include
-bc content='Plugins|BigStitcher|Batch Processing'%} menu.
+In addition to the main application available in the Fiji menu via {% include bc content='Plugins|BigStitcher|BigStitcher'%}, we offer macro-recordable versions of most processing steps under the {% include bc content='Plugins|BigStitcher|Batch Processing'%} menu.
 
-![BigStitcher\_Headless\_Menu.png](/images/pages/BigStitcher_Headless_Menu.png
-"BigStitcher_Headless_Menu.png")"
+![BigStitcher\_Headless\_Menu.png](/images/pages/BigStitcher_Headless_Menu.png "BigStitcher_Headless_Menu.png")"
 
-The operation of the Batch versions of the processing steps is
-essentially the same as in the main application, though with a more
-rudimentary UI that just asks for parameters before performing the
-processing step.
+The operation of the Batch versions of the processing steps is essentially the same as in the main application, though with a more rudimentary UI that just asks for parameters before performing the processing step.
 
-Macro-scriptable versions of the Multiview Reconstruction steps can be
-found in the Fiji menu under: {% include bc content='Plugins|Multiview
-Reconstruction|Batch Processing'%}
+Macro-scriptable versions of the Multiview Reconstruction steps can be found in the Fiji menu under: {% include bc content='Plugins|Multiview Reconstruction|Batch Processing'%}
 
 ## Example: Recording processing steps
 
-Clicking {% include bc content='Plugins|Macros|Record...'%} in the Fiji
-will bring up the macro recorder that compiles most actions performed in
-Fiji as a executable script.
+Clicking {% include bc content='Plugins|Macros|Record...'%} in the Fiji will bring up the macro recorder that compiles most actions performed in Fiji as a executable script.
 
-In the following example, we performed the following macro-recordable
-steps of BigStitcher:
+In the following example, we performed the following macro-recordable steps of BigStitcher:
 
-  - Import a dataset (available
-    [here](BigStitcher#3D_multi-tile_dataset_\(123_MB\) "wikilink")),
-    arange the tiles into a regular grid and re-save the data as HDF5.
-  - Perform pairwise shift calculation via Phase correlation, filter the
-    links by thresholding on the correlation coefficient and globally
-    optimize the alignment.
+  - Import a dataset (available [here](BigStitcher#3D_multi-tile_dataset_\(123_MB\) "wikilink")), arange the tiles into a regular grid and re-save the data as HDF5.
+  - Perform pairwise shift calculation via Phase correlation, filter the links by thresholding on the correlation coefficient and globally optimize the alignment.
   - Fuse the Tiles and save the results as TIFF
 
-![BigStitcher\_Headless\_Recorder.png](/images/pages/BigStitcher_Headless_Recorder.png
-"BigStitcher_Headless_Recorder.png")"
+![BigStitcher\_Headless\_Recorder.png](/images/pages/BigStitcher_Headless_Recorder.png "BigStitcher_Headless_Recorder.png")"
 
-Clicking **Generate** in the macro recorder will pop up the Fiji script
-editor with a new script containing the recorded commands. You can save
-or **Run** the created script.
+Clicking **Generate** in the macro recorder will pop up the Fiji script editor with a new script containing the recorded commands. You can save or **Run** the created script.
 
 ## Example: Modifying and Calling the macro
 
-Calling the macro generated after clicking **Generate** will just
-perform the same steps on the same dataset again. By providing some
-parameters to the script as an argument string and substitution them in
-the recorded commands, a script for headless, batch operation of
-BigStitcher can be generated.
+Calling the macro generated after clicking **Generate** will just perform the same steps on the same dataset again. By providing some parameters to the script as an argument string and substitution them in the recorded commands, a script for headless, batch operation of BigStitcher can be generated.
 
 In the example below, the user can pass a parameter string of the form
 
@@ -120,9 +97,7 @@ to process another dataset with a different number of tiles headlessly:
     // quit after we are finished
     eval("script", "System.exit(0);");
 
-After saving the macro, it can be run from any Terminal by starting Fiji
-in [Headless](Headless "wikilink") mode and passing the macro as well as
-a parameter string.
+After saving the macro, it can be run from any Terminal by starting Fiji in [Headless](Headless "wikilink") mode and passing the macro as well as a parameter string.
 
 `   /path/to/fiji/ImageJ-linux64 --headless --console -macro /path/to/macro/bigStitcherBatch.ijm "/path/to/data 2 3"`
 

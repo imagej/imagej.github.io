@@ -8,26 +8,14 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-{% include sidebox-right software='ImageJ' name='RGB Profiler'
-author='Christophe Laummonerie, Jerome Mutterer'
-filename='[RGB\_Profiler.class](https://imagej.net/plugins/download/RGB_Profiler.class)'
-source='[RGB\_Profiler.java](https://imagej.net/plugins/download/RGB_Profiler.java)'
-released='2 February 2004' version='2 February 2004' status='first
-version' category='[Color
-processing](:Category:Color_processing "wikilink")'
-website='[1](https://imagej.net/plugins/rgb-profiler.html)' %}
+{% include info-box software='ImageJ' name='RGB Profiler' author='Christophe Laummonerie, Jerome Mutterer' filename=' [RGB\_Profiler.class](https://imagej.net/plugins/download/RGB_Profiler.class) ' source=' [RGB\_Profiler.java](https://imagej.net/plugins/download/RGB_Profiler.java) ' released='2 February 2004' latest-version='2 February 2004' status='first version' category='[Color processing](:Category:Color_processing "wikilink")' website='https://imagej.net/plugins/rgb-profiler.html' %}
 
 ## Purpose
 
 From the plugin webpage:
 
-"This Plugin draw the Red, Green and Blue profile plot of an RGB image
-on the same Plot, for each type of line selection. This profile is
-refreshed when a new selection is made. Large parts of this code were
-taken from plugins by {% include person content='Rasband' %}."
+"This Plugin draw the Red, Green and Blue profile plot of an RGB image on the same Plot, for each type of line selection. This profile is refreshed when a new selection is made. Large parts of this code were taken from plugins by {% include person content='Rasband' %}."
 
-Image:RGB\_profile\_example\_1.png|Original RGB image and line selection
-(black) Image:RGB\_profile\_example\_2.png|Resulting profile
+Image:RGB\_profile\_example\_1.png|Original RGB image and line selection (black) Image:RGB\_profile\_example\_2.png|Resulting profile
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Color
-processing](Category:Color_processing "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Color processing](Category:Color_processing "wikilink")

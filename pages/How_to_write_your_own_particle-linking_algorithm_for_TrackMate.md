@@ -8,53 +8,26 @@ categories: Tutorials
 description: test description
 ---
 
-{% include extendingtrackmatetutorials %}
+{% include extendingtrackmatetutorials%}
+
 
 ## Introduction.
 
-This last part on particle-linking modules concludes the series of
-tutorials on extending [TrackMate](TrackMate "wikilink"). The most
-difficult modules to create are spot detectors, which was the subject of
-the [previous
-tutorial](How_to_write_your_own_detection_algorithm_for_TrackMate "wikilink").
-Particle-linking modules, or trackers, are a little bit less
-complicated.
+This last part on particle-linking modules concludes the series of tutorials on extending [TrackMate](TrackMate "wikilink"). The most difficult modules to create are spot detectors, which was the subject of the [previous tutorial](How_to_write_your_own_detection_algorithm_for_TrackMate "wikilink"). Particle-linking modules, or trackers, are a little bit less complicated.
 
-However, you still need to understand how we store and manipulate links
-in TrackMate, and this implies very briefly introducing mathematical
-graphs.
+However, you still need to understand how we store and manipulate links in TrackMate, and this implies very briefly introducing mathematical graphs.
 
 ## Simple, undirected graphs.
 
-TrackMate stores the results of the detection step as spots in a
-[SpotCollection](https://fiji.sc/javadoc/fiji/plugin/trackmate/SpotCollection.html).
-The tracking results are mainly links between these spots so we needed a
-structure to hold them. We went for the most general one, and picked a
-mathematical graph.
+TrackMate stores the results of the detection step as spots in a [SpotCollection](https://fiji.sc/javadoc/fiji/plugin/trackmate/SpotCollection.html). The tracking results are mainly links between these spots so we needed a structure to hold them. We went for the most general one, and picked a mathematical graph.
 
-[Mathematical graphs](wikipedia:Graph_\(mathematics\) "wikilink") are
-mathematical structures that hold objects (**vertices**) and links
-between them (**edges**, we will use the two terms interchangeably).
-TrackMate relies specifically on a specialization: it uses an
-undirected, simple weighted graph.
+[Mathematical graphs](wikipedia:Graph_\(mathematics\) "wikilink") are mathematical structures that hold objects (**vertices**) and links between them (**edges**, we will use the two terms interchangeably). TrackMate relies specifically on a specialization: it uses an undirected, simple weighted graph.
 
-  - Undirected means that a link between A and B is the same as a link
-    between B and A. There is no specific direction and it cannot be
-    exploited. However, you will see that the API offers specific tools
-    that can fake a direction. Indeed, since we deal mainly with
-    time-lapse data, we would like to make it possible to say that we
-    iterate a graph following the time direction.
-  - Simple is not related to the efforts that must be made to grasp this
-    mathematical field, but to the fact that there can be only 1 or no
-    link between two spots, and that we do not authorize a link going
-    from one spots to this same spot (no loop).
-  - Weighted means that each link has a numerical value, called weight,
-    associated to it. We use it just to store some of the results of the
-    tracking algorithm, but it has no real impact on TrackMate.
+  - Undirected means that a link between A and B is the same as a link between B and A. There is no specific direction and it cannot be exploited. However, you will see that the API offers specific tools that can fake a direction. Indeed, since we deal mainly with time-lapse data, we would like to make it possible to say that we iterate a graph following the time direction.
+  - Simple is not related to the efforts that must be made to grasp this mathematical field, but to the fact that there can be only 1 or no link between two spots, and that we do not authorize a link going from one spots to this same spot (no loop).
+  - Weighted means that each link has a numerical value, called weight, associated to it. We use it just to store some of the results of the tracking algorithm, but it has no real impact on TrackMate.
 
-This restrictions do not harm the generality of what you can represent
-in Life Science with this. You can still have the classical links you
-find in typical time-lapse experiment:
+This restrictions do not harm the generality of what you can represent in Life Science with this. You can still have the classical links you find in typical time-lapse experiment:
 
   - Following a single object over time:
 
@@ -70,96 +43,41 @@ find in typical time-lapse experiment:
              |
              +- C2 - C3 - ...
 
-  - But also anything fusions, tripolar divisions, and a mix of
-    everything in the same model.
+  - But also anything fusions, tripolar divisions, and a mix of everything in the same model.
 
 ## Graphs in TrackMate.
 
-On a side note, this is important if you plan to build analysis tools
-for TrackMate results. TrackMate philosophy is to offer managing the
-most general case (when it comes to linking), but your analysis tools
-might require special use cases.
+On a side note, this is important if you plan to build analysis tools for TrackMate results. TrackMate philosophy is to offer managing the most general case (when it comes to linking), but your analysis tools might require special use cases.
 
-  - For instance, when you are tracking vesicles that do not fuse nor
-    split, you just have a linear data structure (an array of objects
-    for each particle).
-  - When you follow a cell lineage, you have a [rooted mathematical
-    tree](wikipedia:Tree_\(data_structure\) "wikilink").
-  - And if all cells divide in two daughters, then you have a [rooted
-    binary tree](wikipedia:Binary_tree "wikilink").
+  - For instance, when you are tracking vesicles that do not fuse nor split, you just have a linear data structure (an array of objects for each particle).
+  - When you follow a cell lineage, you have a [rooted mathematical tree](wikipedia:Tree_\(data_structure\) "wikilink").
+  - And if all cells divide in two daughters, then you have a [rooted binary tree](wikipedia:Binary_tree "wikilink").
 
-They all are specialization of the simple graph, and offer special tools
-that can be very useful. But *TrackMate assumes none of these
-specializations*. It stores and manipulate a graph.
+They all are specialization of the simple graph, and offer special tools that can be very useful. But *TrackMate assumes none of these specializations*. It stores and manipulate a graph.
 
-Since we are Java coders, we use a Java library to manipulate these
-graphs, and for this we rely on the excellent
-[JGraphT](http://jgrapht.org/) library. Why a graph? Why not storing a
-list of successors and a list of predecessors for each spot? Or directly
-have a track object that would save some time on determining what are
-the tracks? Well, because a graph is very handy and simple to use when
-creating links. When you will write your own tracker, and found a link
-you want to add the model, the only thing you have to do is:
-`graph.addEdge(A, B)`. You don't have to care whether A belongs to a
-track and if yes to what track, you don't need to see the whole graph
-globally, you can just focus on the local link. Adding a link in the
-code is always very simple.
+Since we are Java coders, we use a Java library to manipulate these graphs, and for this we rely on the excellent [JGraphT](http://jgrapht.org/) library. Why a graph? Why not storing a list of successors and a list of predecessors for each spot? Or directly have a track object that would save some time on determining what are the tracks? Well, because a graph is very handy and simple to use when creating links. When you will write your own tracker, and found a link you want to add the model, the only thing you have to do is: `graph.addEdge(A, B)`. You don't have to care whether A belongs to a track and if yes to what track, you don't need to see the whole graph globally, you can just focus on the local link. Adding a link in the code is always very simple.
 
-Then of course, you still need a way to know how many tracks are there
-in the model, and what are they made of. But this is the job of
-TrackMate. It offers the API that hides the graph and deals in track.
-This is done via a component of the model, the
-[TrackModel](https://fiji.sc/javadoc/fiji/plugin/trackmate/TrackModel.html).
-But in the tracker we will not use this. We will be given a simple
-graph, and will have to flesh it out with spots and links between these
-spots. When the tracker completes, TrackMate will build and maintains a
-list of tracks from it.
+Then of course, you still need a way to know how many tracks are there in the model, and what are they made of. But this is the job of TrackMate. It offers the API that hides the graph and deals in track. This is done via a component of the model, the [TrackModel](https://fiji.sc/javadoc/fiji/plugin/trackmate/TrackModel.html). But in the tracker we will not use this. We will be given a simple graph, and will have to flesh it out with spots and links between these spots. When the tracker completes, TrackMate will build and maintains a list of tracks from it.
 
-The price to pay for this simplicity is that - when tracking - it is not
-trivial to get the global information. For instance, it is easy to query
-whether a link exists between two spots, but the graph does not see the
-tracks directly. If you need them, you either have to build them from
-the graph, either have to maintain them locally. But more on this below.
+The price to pay for this simplicity is that - when tracking - it is not trivial to get the global information. For instance, it is easy to query whether a link exists between two spots, but the graph does not see the tracks directly. If you need them, you either have to build them from the graph, either have to maintain them locally. But more on this below.
 
 ## Particle-linking algorithms in TrackMate.
 
-We used the term *tracker* since the beginning of this series, but the
-correct term for what we will build now is particle linking algorithm.
-Our particles are the visible spots resulting from the detection step,
-and the links will be the edges of the graph. A tracker could be defined
-as the full application that combines a particle detection algorithm
-with a particle linking algorithm.
+We used the term *tracker* since the beginning of this series, but the correct term for what we will build now is particle linking algorithm. Our particles are the visible spots resulting from the detection step, and the links will be the edges of the graph. A tracker could be defined as the full application that combines a particle detection algorithm with a particle linking algorithm.
 
-In TrackMate, particle linking algorithms implements the
-[SpotTracker](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/SpotTracker.java)
-interface. It is very simple. As explained in the docs, a SpotTracker
-algorithm is simply expected to create a new
-[SimpleWeightedGraph](http://jgrapht.org/javadoc/index.html?org/jgrapht/graph/SimpleWeightedGraph.html)
-from the SpotCollection given (using of course only the *visible*
-spots). We use a simple weighted graph:
+In TrackMate, particle linking algorithms implements the [SpotTracker](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/SpotTracker.java) interface. It is very simple. As explained in the docs, a SpotTracker algorithm is simply expected to create a new [SimpleWeightedGraph](http://jgrapht.org/javadoc/index.html?org/jgrapht/graph/SimpleWeightedGraph.html) from the SpotCollection given (using of course only the *visible* spots). We use a simple weighted graph:
 
-  - Though the weights themselves are not used for subsequent steps, it
-    is suggested to use edge weight to report the cost of a link.
-  - The graph is undirected, however, some link direction can be
-    retrieved later on using the Spot.FRAME feature. The SpotTracker
-    implementation does not have to deal with this; only undirected
-    edges are created.
+  - Though the weights themselves are not used for subsequent steps, it is suggested to use edge weight to report the cost of a link.
+  - The graph is undirected, however, some link direction can be retrieved later on using the Spot.FRAME feature. The SpotTracker implementation does not have to deal with this; only undirected edges are created.
   - Several links between two spots are not permitted.
   - A link with the same spot for source and target is not allowed.
-  - A link with the source spot and the target spot in the same frame is
-    not allowed. This must be enforced by implementations.
+  - A link with the source spot and the target spot in the same frame is not allowed. This must be enforced by implementations.
 
-There is also an extra method to pass a instance of
-[Logger](https://fiji.sc/javadoc/fiji/plugin/trackmate/Logger.html) to
-log the tracking process progresses. That's all.
+There is also an extra method to pass a instance of [Logger](https://fiji.sc/javadoc/fiji/plugin/trackmate/Logger.html) to log the tracking process progresses. That's all.
 
 ## A dummy example: drunken cell divisions.
 
-There is already an example online that does [random link
-creation](https://github.com/fiji/TrackMate-examples/blob/master/src/main/java/plugin/trackmate/examples/tracker/RandomLinkingTracker.java).
-Let's do something else, and build a tracker that links a spot to any
-two spots in the next frame (if they exist) as if it would go cell
-division as fast as it can.
+There is already an example online that does [random link creation](https://github.com/fiji/TrackMate-examples/blob/master/src/main/java/plugin/trackmate/examples/tracker/RandomLinkingTracker.java). Let's do something else, and build a tracker that links a spot to any two spots in the next frame (if they exist) as if it would go cell division as fast as it can.
 
 Creating the class yields the following skeleton:
 
@@ -234,12 +152,7 @@ public class DrunkenCellDivisionTracker implements SpotTracker
 }
 ```
 
-Parameters need to be passed to the class via its constructor. As for
-detectors, the factory we will build later will be in charge of getting
-these parameters. Of course, the most important one is the
-SpotCollection to track. In our case it will be the only one, as our
-dummy tracker do not have any settings. So we can have a constructor
-like this:
+Parameters need to be passed to the class via its constructor. As for detectors, the factory we will build later will be in charge of getting these parameters. Of course, the most important one is the SpotCollection to track. In our case it will be the only one, as our dummy tracker do not have any settings. So we can have a constructor like this:
 
 ``` java
 public DrunkenCellDivisionTracker( final SpotCollection spots )
@@ -248,11 +161,7 @@ public DrunkenCellDivisionTracker( final SpotCollection spots )
     }
 ```
 
-then we exploit the SpotCollection in the `process()` method. Our
-strategy here is to loop over all the frames that have a content, and
-link each spot to two spots in the next frame - wherever they are -
-until there is either no source spots or no target spots left. The
-method looks like this:
+then we exploit the SpotCollection in the `process()` method. Our strategy here is to loop over all the frames that have a content, and link each spot to two spots in the next frame - wherever they are - until there is either no source spots or no target spots left. The method looks like this:
 
 ``` java
 @Override
@@ -328,42 +237,23 @@ method looks like this:
     }
 ```
 
-So it's not really complicated. Which is good, because the complicated
-part, completely omitted here, is the one where you have to determine
-what links to create. This is where you Science should kick in.
+So it's not really complicated. Which is good, because the complicated part, completely omitted here, is the one where you have to determine what links to create. This is where you Science should kick in.
 
 ## The factory class.
 
-Now that we have the clever part of the code (the one that does the
-actual linking), we need to deal with TrackMate integration. Like for
-the detection modules, this is done <i>via</i> a factory class, named
-[SpotTrackerFactory](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/SpotTrackerFactory.java).
-It is completely equivalent to the SpotDetectorFactory we saw in the
-[previous
-tutorial](How_to_write_your_own_detection_algorithm_for_TrackMate "wikilink"),
-so I won't detail the common methods again.
+Now that we have the clever part of the code (the one that does the actual linking), we need to deal with TrackMate integration. Like for the detection modules, this is done <i>via</i> a factory class, named [SpotTrackerFactory](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/SpotTrackerFactory.java). It is completely equivalent to the SpotDetectorFactory we saw in the [previous tutorial](How_to_write_your_own_detection_algorithm_for_TrackMate "wikilink"), so I won't detail the common methods again.
 
 The methods specific to the tracker are:
 
-  - `public SpotTracker create( final SpotCollection spots, final Map<
-    String, Object > settings );`
+  - `public SpotTracker create( final SpotCollection spots, final Map< String, Object > settings );`
 
-This method instantiates the actual tracker class. You can see that it
-received the SpotCollection and a settings map. This method is expected
-to unpack this map and extract the actual parameters need to instantiate
-the tracker.
+This method instantiates the actual tracker class. You can see that it received the SpotCollection and a settings map. This method is expected to unpack this map and extract the actual parameters need to instantiate the tracker.
 
-Note that contrary to the detector factory, TrackMate calls this method
-only once for a tracking process. It does not generate a tracker per
-frame. So it is actually simpler than for detection: a tracker instance
-is expected to solve the tracking problem for the whole model at once.
-Therefore, there is no need for a `setTarget()` method, like previously.
+Note that contrary to the detector factory, TrackMate calls this method only once for a tracking process. It does not generate a tracker per frame. So it is actually simpler than for detection: a tracker instance is expected to solve the tracking problem for the whole model at once. Therefore, there is no need for a `setTarget()` method, like previously.
 
-  - `public ConfigurationPanel getTrackerConfigurationPanel( final Model
-    model );`
+  - `public ConfigurationPanel getTrackerConfigurationPanel( final Model model );`
 
-This method should generate a GUI panel to request tracking parameters
-from the user. Completely similar to the detection modules.
+This method should generate a GUI panel to request tracking parameters from the user. Completely similar to the detection modules.
 
   - `marshall` and `unmarshall`
 
@@ -375,22 +265,14 @@ Used to pretty-print the settings map specific to this tracker.
 
 The rest is classic. Here is what it looks like for our tracker:
 
-![TrackaMateExample\_RandomCellDivision.png](/images/pages/TrackaMateExample_RandomCellDivision.png
-"TrackaMateExample_RandomCellDivision.png")"
+![TrackaMateExample\_RandomCellDivision.png](/images/pages/TrackaMateExample_RandomCellDivision.png "TrackaMateExample_RandomCellDivision.png")"
 
-TrackMate recognize there were two tracks. You did not have to worry
-about that.
+TrackMate recognize there were two tracks. You did not have to worry about that.
 
 ## Wrapping up
 
-The full code, as well as the code for another tracker example can be
-found on
-[github](https://github.com/fiji/TrackMate-examples/tree/master/src/main/java/plugin/trackmate/examples/tracker).
-And this concludes flatly our series of tutorials on how to extend
-TrackMate. Go forth now, and bend it to your needs; it is *your* tool.
+The full code, as well as the code for another tracker example can be found on [github](https://github.com/fiji/TrackMate-examples/tree/master/src/main/java/plugin/trackmate/examples/tracker). And this concludes flatly our series of tutorials on how to extend TrackMate. Go forth now, and bend it to your needs; it is *your* tool.
 
-{% include person content='JeanYvesTinevez' %}
-([talk](User_talk:JeanYvesTinevez "wikilink")) 09:26, 5 September 2014
-(CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 09:26, 5 September 2014 (CDT)
 
 [Category:Tutorials](Category:Tutorials "wikilink")

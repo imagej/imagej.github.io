@@ -8,38 +8,18 @@ categories: Registration,Plugins
 description: test description
 ---
 
-{% include sidebox-right software='Fiji' name='Linear Stack Alignment
-with SIFT' maintainer='Stephan Saalfeld' author='Stephan Saalfeld'
-source='[in
-gitweb](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=SIFT_Align.java;hb=HEAD)'
-version='June 2008'
-category='[:Category:Registration](:Category:Registration "wikilink")'
-website='http://fly.mpi-cbg.de/~saalfeld/Projects/javasift.html' %}
+{% include info-box software='Fiji' name='Linear Stack Alignment with SIFT' maintainer='Stephan Saalfeld' author='Stephan Saalfeld' source=' [in gitweb](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=SIFT_Align.java;hb=HEAD) ' latest-version='June 2008' category='[:Category:Registration](:Category:Registration "wikilink")' website='http://fly.mpi-cbg.de/\~saalfeld/Projects/javasift.html' %}
 
-A lightweight SIFT-implementation for Java after the paper of David
-Lowe<ref> {% capture includecontent %} journal |author=Lowe D |
-title=Distinctive Image Features from Scale-Invariant Keypoints |
-journal=International Journal of Computer Vision | year=2004 | volume=60
-| number=2 | pages=91-110 {% endcapture %}
+A lightweight SIFT-implementation for Java after the paper of David Lowe\[1\]. The ImageJ plugin can be used for aligning image stacks.
 
-{% include cite content=includecontent %} </ref>. The ImageJ plugin can
-be used for aligning image stacks.
+Note, that the SIFT-algorithm is protected by U.S. Patent 6,711,293: *Method and apparatus for identifying scale invariant features in an image and use of same for locating an object in an image by the University of British Columbia*. That is, for commercial applications the permission of the author is required. Anything else is published under the terms of the GPL, so feel free to use it for academic or personal purposes.
 
-Note, that the SIFT-algorithm is protected by U.S. Patent 6,711,293:
-*Method and apparatus for identifying scale invariant features in an
-image and use of same for locating an object in an image by the
-University of British Columbia*. That is, for commercial applications
-the permission of the author is required. Anything else is published
-under the terms of the GPL, so feel free to use it for academic or
-personal purposes.
-
-See also
-[JavaSIFT](http://fly.mpi-cbg.de/~saalfeld/Projects/javasift.html) (the
-original version of this Fiji plugin).
+See also [JavaSIFT](http://fly.mpi-cbg.de/~saalfeld/Projects/javasift.html) (the original version of this Fiji plugin).
 
 ## References
 
 <references />
 
-[Category:Registration](Category:Registration "wikilink")
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Registration](Category:Registration "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+
+1.  {% include cite content='journal' author='Lowe D' title='Distinctive Image Features from Scale-Invariant Keypoints' journal='International Journal of Computer Vision' year='2004' volume='60' number='2' pages='91-110' %}

@@ -8,9 +8,7 @@ categories: Hackathons
 description: test description
 ---
 
-This is the summary of the final project meeting of the
-[Hackathon](Hackathon "wikilink") which took place at the MPI-CBG in
-Dresden/Germany from 04/21/2008 till 04/30/2008.
+This is the summary of the final project meeting of the [Hackathon](Hackathon "wikilink") which took place at the MPI-CBG in Dresden/Germany from 04/21/2008 till 04/30/2008.
 
 ## Finished Tasks
 

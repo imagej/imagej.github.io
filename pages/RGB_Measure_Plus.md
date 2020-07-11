@@ -8,20 +8,10 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-{% include sidebox-right software='ImageJ' name='RGB Measure Plus'
-author='Dimiter Prodanov' filename='RGB\_Measure\_Plus.class'
-source='[RGB\_Measure\_Plus.java](https://imagej.net/plugins/download/RGB_Measure_Plus.java)'
-released='23 March 2005' version='23 March 2005' status='initial
-version' category='[Color
-processing](:Category:Color_processing "wikilink")'
-website='[1](https://imagej.net/plugins/rgb-measure-plus.html)' %}
+{% include info-box software='ImageJ' name='RGB Measure Plus' author='Dimiter Prodanov' filename='RGB\_Measure\_Plus.class' source=' [RGB\_Measure\_Plus.java](https://imagej.net/plugins/download/RGB_Measure_Plus.java) ' released='23 March 2005' latest-version='23 March 2005' status='initial version' category='[Color processing](:Category:Color_processing "wikilink")' website='https://imagej.net/plugins/rgb-measure-plus.html' %}
 
 ## Purpose
 
-This plugin separately measures the red, green and blue channels of an
-RGB image between user-definable threshold levels per channel. The
-aforementioned thresholds can be set using the [Threshold
-Colour](Threshold_Colour "wikilink") plugin.
+This plugin separately measures the red, green and blue channels of an RGB image between user-definable threshold levels per channel. The aforementioned thresholds can be set using the [Threshold Colour](Threshold_Colour "wikilink") plugin.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Color
-processing](Category:Color_processing "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Color processing](Category:Color_processing "wikilink")

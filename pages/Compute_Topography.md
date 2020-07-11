@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [TopoJ\#Compute
-    Topography](TopoJ#Compute_Topography "wikilink")
+1.  REDIRECT [TopoJ\#Compute Topography](TopoJ#Compute_Topography "wikilink")

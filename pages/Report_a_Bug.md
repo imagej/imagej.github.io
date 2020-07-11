@@ -8,22 +8,16 @@ categories: Tutorials,Plugins,Bug Reporting
 description: test description
 ---
 
-{% include menu-help %}Please report bugs via the [Image.sc
-Forum](Image.sc_Forum "wikilink"):
+{% include menu-help%}
+Please report bugs via the [Image.sc Forum](Image.sc_Forum "wikilink"):
 
   - Start a new topic in the "Usage & Issues" category.
   - Add the `imagej` label, and any other relevant labels.
-  - Include a [minimal working
-    example](Bug_reporting_best_practices "wikilink") illustrating the
-    issue.
-  - If you know who is responsible for maintaining the affected part of
-    ImageJ, please `@mention` them.
+  - Include a [minimal working example](Bug_reporting_best_practices "wikilink") illustrating the issue.
+  - If you know who is responsible for maintaining the affected part of ImageJ, please `@mention` them.
 
-Or if you have a GitHub account, please feel welcome to report issues
-[on GitHub](https://github.com/imagej/imagej/issues) instead.
+Or if you have a GitHub account, please feel welcome to report issues [on GitHub](https://github.com/imagej/imagej/issues) instead.
 
 Thank you\! 😁
 
-[Category:Tutorials](Category:Tutorials "wikilink")
-[Category:Plugins](Category:Plugins "wikilink") [Category:Bug
-Reporting](Category:Bug_Reporting "wikilink")
+[Category:Tutorials](Category:Tutorials "wikilink") [Category:Plugins](Category:Plugins "wikilink") [Category:Bug Reporting](Category:Bug_Reporting "wikilink")

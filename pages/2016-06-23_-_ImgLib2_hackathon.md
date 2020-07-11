@@ -8,17 +8,7 @@ categories: News,Hackathons,ImageJ2
 description: test description
 ---
 
-![[ImgLib2](/images/pages/ImgLib2 "wikilink")" hackers, from left to right: {% include
-person content='Saalfeld' %}, {% include person content='Dietzc' %}, {%
-include person content='Rueden' %}, {% include person content='Pietzsch'
-%}.](Janelia-2016-hackathon.jpg
-"ImgLib2 hackers, from left to right: {% include person content='Saalfeld' %}, {% include person content='Dietzc' %}, {% include person content='Rueden' %}, {% include person content='Pietzsch' %}.")
-From Sunday, June 19, 2016 through Tuesday, June 28, 2016, {% include
-person content='Saalfeld' %} at HHMI Janelia in Ashburn, Virginia hosted
-{% include person content='Pietzsch' %}, {% include person
-content='Rueden' %} and {% include person content='Dietzc' %} for a
-[hackathon](hackathon "wikilink") to improve the core
-[ImageJ2](ImageJ2 "wikilink") data model.
+![[ImgLib2](/images/pages/ImgLib2 "wikilink")" hackers, from left to right: {% include person content='Saalfeld' %}, {% include person content='Dietzc' %}, {% include person content='Rueden' %}, {% include person content='Pietzsch' %}.](Janelia-2016-hackathon.jpg "ImgLib2 hackers, from left to right: {% include person content='Saalfeld' %}, {% include person content='Dietzc' %}, {% include person content='Rueden' %}, {% include person content='Pietzsch' %}.") From Sunday, June 19, 2016 through Tuesday, June 28, 2016, {% include person content='Saalfeld' %} at HHMI Janelia in Ashburn, Virginia hosted {% include person content='Pietzsch' %}, {% include person content='Rueden' %} and {% include person content='Dietzc' %} for a [hackathon](hackathon "wikilink") to improve the core [ImageJ2](ImageJ2 "wikilink") data model.
 
 ## Timeline
 
@@ -79,13 +69,11 @@ PlotData=
 
 </timeline>
 
-And {% include person content='Kharrington' %} stopped by on the
-afternoon of the 23rd to discuss some issues for a bit.
+And {% include person content='Kharrington' %} stopped by on the afternoon of the 23rd to discuss some issues for a bit.
 
 ## Discussions and progress
 
-We spent the first couple of days discussing use cases and requirements
-for core [ImageJ2](ImageJ2 "wikilink") metadata-rich image structures.
+We spent the first couple of days discussing use cases and requirements for core [ImageJ2](ImageJ2 "wikilink") metadata-rich image structures.
 
 Some of the needed features we considered:
 
@@ -94,8 +82,7 @@ Some of the needed features we considered:
   - Transformations for display
   - Color conversion for display
   - Intensity conversion for display
-  - Store preprocessed information about raw data (e.g.: min, max,
-    histogram, features, ...)
+  - Store preprocessed information about raw data (e.g.: min, max, histogram, features, ...)
   - Projections
   - Non-linear axes transformations (e.g.: log)
   - Other arbitrary transformations (e.g.: polar to cartesian)
@@ -103,71 +90,24 @@ Some of the needed features we considered:
 
 The central use cases we used as litmus tests for our ideas:
 
-  - Interpolate differently across different dimensions of an image
-    (e.g.: treat XYZ as continuous with {% include javadoc
-    project='ImgLib2' package='net/imglib2/interpolation/randomaccess'
-    class='LanczosInterpolator' label='Lanczos' %}, but time as discrete
-    with {% include javadoc project='ImgLib2'
-    package='net/imglib2/interpolation/randomaccess'
-    class='NearestNeighborInterpolator' label='nearest neighbor' %} or
-    maybe {% include javadoc project='ImgLib2'
-    package='net/imglib2/interpolation/randomaccess'
-    class='NLinearInterpolator' label='1D linear' %}.
-  - Register 2D tiles into a larger 2D image, a la
-    [TrakEM2](TrakEM2 "wikilink").
+  - Interpolate differently across different dimensions of an image (e.g.: treat XYZ as continuous with {% include javadoc project='ImgLib2' package='net/imglib2/interpolation/randomaccess' class='LanczosInterpolator' label='Lanczos' %}, but time as discrete with {% include javadoc project='ImgLib2' package='net/imglib2/interpolation/randomaccess' class='NearestNeighborInterpolator' label='nearest neighbor' %} or maybe {% include javadoc project='ImgLib2' package='net/imglib2/interpolation/randomaccess' class='NLinearInterpolator' label='1D linear' %}.
+  - Register 2D tiles into a larger 2D image, a la [TrakEM2](TrakEM2 "wikilink").
   - Register 2D planes over time (e.g.: correct for shaky cam).
-  - Time skew over samples: each plane/scanline/pixel can have a
-    physical timestamp, which could be taken into account somehow,
-    although in practice doing so is very rare.
+  - Time skew over samples: each plane/scanline/pixel can have a physical timestamp, which could be taken into account somehow, although in practice doing so is very rare.
 
-We spent quite some time considering how to create a unified data
-structure (`SpaceTree`? :-) which would keep multiple images grouped
-into some tree- or graph-like structure, with attached {% include
-javadoc project='ImgLib2' package='net/imglib2/realtransform'
-class='RealTransform' label='transforms' %}, in a way which handled all
-of the above use cases and more.
+We spent quite some time considering how to create a unified data structure (`SpaceTree`? :-) which would keep multiple images grouped into some tree- or graph-like structure, with attached {% include javadoc project='ImgLib2' package='net/imglib2/realtransform' class='RealTransform' label='transforms' %}, in a way which handled all of the above use cases and more.
 
-Ultimately, we concluded it was too difficult to design such a data
-structure in a vacuum, so we instead opted to start coding individual
-use cases using [ImgLib2](ImgLib2 "wikilink"). We came up with a design
-which provides: A) a container for metadata-rich images, with individual
-metadata elements sensitive to {% include javadoc project='ImgLib2'
-package='net/imglib2/view' class='Views' %} manipulations; and B) a
-scheme for "grooming" these metadata-rich images into increasingly
-useful data structures depending on the use case.
+Ultimately, we concluded it was too difficult to design such a data structure in a vacuum, so we instead opted to start coding individual use cases using [ImgLib2](ImgLib2 "wikilink"). We came up with a design which provides: A) a container for metadata-rich images, with individual metadata elements sensitive to {% include javadoc project='ImgLib2' package='net/imglib2/view' class='Views' %} manipulations; and B) a scheme for "grooming" these metadata-rich images into increasingly useful data structures depending on the use case.
 
 ### Metadata-rich containers
 
-We invented `MetaViews`, a class analogous to {% include javadoc
-project='ImgLib2' package='net/imglib2/view' class='Views' %} but for
-metadata elements. These elements are then aggregated into a
-`MetaSpace`, which provides mutators and accessors for working with the
-space. For example, you might attach a physical calibration to a spatial
-axis, or a custom variable-width timestamp to each point along the time
-axis.
+We invented `MetaViews`, a class analogous to {% include javadoc project='ImgLib2' package='net/imglib2/view' class='Views' %} but for metadata elements. These elements are then aggregated into a `MetaSpace`, which provides mutators and accessors for working with the space. For example, you might attach a physical calibration to a spatial axis, or a custom variable-width timestamp to each point along the time axis.
 
-On top of this, we are actively developing a (tentatively named)
-`RichImage` structure, consisting of image pixels (e.g., a
-`RandomAccessible`) together with a `MetaSpace` which describes it. The
-[SCIFIO](SCIFIO "wikilink") library will be updated to produce a
-`Dataset`, a collection of `RichImage` elements, which are populated
-with elements directly from the source data format.
+On top of this, we are actively developing a (tentatively named) `RichImage` structure, consisting of image pixels (e.g., a `RandomAccessible`) together with a `MetaSpace` which describes it. The [SCIFIO](SCIFIO "wikilink") library will be updated to produce a `Dataset`, a collection of `RichImage` elements, which are populated with elements directly from the source data format.
 
 ### Image enrichers
 
-For the various use cases above (e.g., registration of tiles in a larger
-space), we will have a pipeline which calls `ImageInspector` plugins
-that examine the `RichImages` and decide whether they can be improved
-with available `ImageEnricher` plugins. (Again: these are working names
-only.) For instance, the `Dataset` image collection might consist of a
-bag of 2D tiles with associated affine transforms; a `MosaicEnricher`
-could then apply those transforms virtually to offer the larger 2D
-mosaic image as a `RandomAccessible` which returns lists of tile values
-at each sample. A `FusionEnricher` could operate on any
-`RandomAccessible` which returns a list, blending the values of that
-list using a given `Converter`. (In practice, the enrichers will very
-likely be more general than these examples, but hopefully they serve
-here to illustrate some of the possibilities.)
+For the various use cases above (e.g., registration of tiles in a larger space), we will have a pipeline which calls `ImageInspector` plugins that examine the `RichImages` and decide whether they can be improved with available `ImageEnricher` plugins. (Again: these are working names only.) For instance, the `Dataset` image collection might consist of a bag of 2D tiles with associated affine transforms; a `MosaicEnricher` could then apply those transforms virtually to offer the larger 2D mosaic image as a `RandomAccessible` which returns lists of tile values at each sample. A `FusionEnricher` could operate on any `RandomAccessible` which returns a list, blending the values of that list using a given `Converter`. (In practice, the enrichers will very likely be more general than these examples, but hopefully they serve here to illustrate some of the possibilities.)
 
 ### Source code
 
@@ -179,6 +119,4 @@ There is also an experimental repository for the hackathon at:
 
   - https://github.com/imagej/janelia-hackathon-2016
 
-[Category:News](Category:News "wikilink")
-[Category:Hackathons](Category:Hackathons "wikilink")
-[Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:News](Category:News "wikilink") [Category:Hackathons](Category:Hackathons "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")

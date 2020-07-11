@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Graphical user
-    interface](Graphical_user_interface "wikilink")
+1.  REDIRECT [Graphical user interface](Graphical_user_interface "wikilink")

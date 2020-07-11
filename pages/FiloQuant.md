@@ -8,19 +8,14 @@ categories:
 description: test description
 ---
 
-FiloQuant is a user friendly and modifiable tool for automated detection
-and quantification of filopodia properties such as length and density.
+FiloQuant is a user friendly and modifiable tool for automated detection and quantification of filopodia properties such as length and density.
 
-FiloQuant was created by Guillaume Jacquemet and Alexandre Carisey. This
-program is free software; you can redistribute it and/or modify it under
-the terms of the GNU General Public License
+FiloQuant was created by Guillaume Jacquemet and Alexandre Carisey. This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License
 
 FiloQuant user guide can be accessed bellow:
 
-**![FiloQuant\_Manual\_V1.pdf](/images/pages/FiloQuant_Manual_V1.pdf
-"FiloQuant_Manual_V1.pdf")"**
+**![FiloQuant\_Manual\_V1.pdf](/images/pages/FiloQuant_Manual_V1.pdf "FiloQuant_Manual_V1.pdf")"**
 
 More info can be found in our paper:
 
-[**FiloQuant reveals increased filopodia density during DCIS
-progression**](http://biorxiv.org/content/early/2017/04/06/125047)
+[**FiloQuant reveals increased filopodia density during DCIS progression**](http://biorxiv.org/content/early/2017/04/06/125047)

@@ -12,38 +12,23 @@ Gaussian downsampling of an image with ImageJ on-board tools.
 
 ## Motivation
 
-Sound downsampling of an image requires the elimination of image
-frequencies higher than half the sampling frequency in the result image
-(see the [Nyquist–Shannon sampling
-theorem](wikipedia:Nyquist%E2%80%93Shannon_sampling_theorem "wikilink")).
-The exclusive tool for this is [Gaussian
-convolution](wikipedia:Gaussian_function "wikilink").
+Sound downsampling of an image requires the elimination of image frequencies higher than half the sampling frequency in the result image (see the [Nyquist–Shannon sampling theorem](wikipedia:Nyquist%E2%80%93Shannon_sampling_theorem "wikilink")). The exclusive tool for this is [Gaussian convolution](wikipedia:Gaussian_function "wikilink").
 
 ## Download
 
-Get a snapshot from the git repository here:
-[downsample\_.js](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob_plain;f=plugins/Examples/downsample_.js).
+Get a snapshot from the git repository here: [downsample\_.js](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob_plain;f=plugins/Examples/downsample_.js).
 
 ## Documentation
 
-This script calculates the required Gaussian kernel for a given target
-**width** or **height**, smooths the image and resamples it. The target
-size must be smaller than the source image size.
+This script calculates the required Gaussian kernel for a given target **width** or **height**, smooths the image and resamples it. The target size must be smaller than the source image size.
 
-Furthermore, you can define the "intrinsic" Gaussian kernel of the
-source and target images. An optimal sampler is identified by sigma=0.5.
-If your source image was blurred already, you may set a higher **source
-sigma** for a sharper result. Setting **target sigma** to values smaller
-than 0.5 makes the result appear sharper and therefore eventually
-aliased.
+Furthermore, you can define the "intrinsic" Gaussian kernel of the source and target images. An optimal sampler is identified by sigma=0.5. If your source image was blurred already, you may set a higher **source sigma** for a sharper result. Setting **target sigma** to values smaller than 0.5 makes the result appear sharper and therefore eventually aliased.
 
 This script is maintained by Stephan Saalfeld.
 
 ## Example
 
-A picture is worth a thousand words, so here is an example. You see a
-2,048×2,048px transmission electron micrograph downsampled to 100×100px.
-For better illustration, the examples are shown at 200%.
+A picture is worth a thousand words, so here is an example. You see a 2,048×2,048px transmission electron micrograph downsampled to 100×100px. For better illustration, the examples are shown at 200%.
 
 |                                                                                     |                                                                                                                        |                                                                                                                     |
 | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |

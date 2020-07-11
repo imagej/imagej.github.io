@@ -8,40 +8,21 @@ categories:
 description: test description
 ---
 
-{% include sidebox-right content='This page describes the ""legal""
-structure of [SciJava](SciJava "wikilink") projects.
+{% include info-box content='This page describes the ""legal"" structure of [SciJava](SciJava "wikilink") projects.
 
-  - For information on their ""technical"" structure, see
-    [Architecture](Architecture "wikilink").
-  - For information on their ""social"" structure, see
-    [Governance](Governance "wikilink").' %}
+  - For information on their ""technical"" structure, see [Architecture](Architecture "wikilink").
+  - For information on their ""social"" structure, see [Governance](Governance "wikilink").' %}
 
-{% include menu-licenses %}The [ImageJ](ImageJ "wikilink") project, and
-related projects in the [SciJava](SciJava "wikilink") component
-collection, are licensed as [open source](open_source "wikilink")
-software (OSS) projects.
+{% include menu-licenses%}
+The [ImageJ](ImageJ "wikilink") project, and related projects in the [SciJava](SciJava "wikilink") component collection, are licensed as [open source](open_source "wikilink") software (OSS) projects.
 
 For an introduction to OSS licensing, see http://choosealicense.com/.
 
-The table below summarizes the dominant license of each project's
-components.
+The table below summarizes the dominant license of each project's components.
 
 ## Exceptions
 
-Since each project consists of many components, some may be licensed
-differently. You can always find the license of each project in a
-`LICENSE.txt` or similar file of the relevant repository on
-[GitHub](GitHub "wikilink"). That said, in general, the table below is
-accurate with very few exceptions. When there *is* an exception, it is
-often licensed more permissively than the rest of the project—for
-example, the core of [Bio-Formats](Bio-Formats "wikilink") is licensed
-under [BSD-2](BSD-2 "wikilink")
-([1](https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt)),
-and the [ImageJ](ImageJ "wikilink") and [SCIFIO](SCIFIO "wikilink")
-tutorials are licensed under [CC0](CC0 "wikilink")
-([1](https://github.com/imagej/tutorials/blob/master/README.md),
-[2](https://github.com/scifio/scifio-tutorials/blob/master/README.md)),
-waiving all copyright interest as allowed by law.
+Since each project consists of many components, some may be licensed differently. You can always find the license of each project in a `LICENSE.txt` or similar file of the relevant repository on [GitHub](GitHub "wikilink"). That said, in general, the table below is accurate with very few exceptions. When there *is* an exception, it is often licensed more permissively than the rest of the project—for example, the core of [Bio-Formats](Bio-Formats "wikilink") is licensed under [BSD-2](BSD-2 "wikilink") ([1](https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt)), and the [ImageJ](ImageJ "wikilink") and [SCIFIO](SCIFIO "wikilink") tutorials are licensed under [CC0](CC0 "wikilink") ([1](https://github.com/imagej/tutorials/blob/master/README.md), [2](https://github.com/scifio/scifio-tutorials/blob/master/README.md)), waiving all copyright interest as allowed by law.
 
 ## Project summary
 
@@ -162,50 +143,21 @@ waiving all copyright interest as allowed by law.
 </tbody>
 </table>
 
-<span>\*</span> See [choosealicense.com](http://choosealicense.com/) for
-details.  
+<span>\*</span> See [choosealicense.com](http://choosealicense.com/) for details.  
 <sup>†</sup> See note below for details.
 
 ## A note about ImageJ1
 
-The [ImageJ 1.x](ImageJ_1.x "wikilink") project is developed at the
-National Institutes of Health, a United States government organization.
-Hence, pursuant to [U.S. copyright law Title 17,
-Section 105](http://www.copyright.gov/title17/92chap1.html#105), no
-copyright applies. However, that waiver of copyright applies only to
-U.S. law, and does not apply to other countries. Furthermore, the
-ImageJ1 project includes substantial effort and code from individuals
-who are not U.S. government employees, making the legal status of
-ImageJ1 as a whole decidedly unclear. For further reading, see the
-[Wikipedia article "Copyright status of work by the U.S.
-government"](wikipedia:Copyright_status_of_work_by_the_U.S._government "wikilink").
+The [ImageJ 1.x](ImageJ_1.x "wikilink") project is developed at the National Institutes of Health, a United States government organization. Hence, pursuant to [U.S. copyright law Title 17, Section 105](http://www.copyright.gov/title17/92chap1.html#105), no copyright applies. However, that waiver of copyright applies only to U.S. law, and does not apply to other countries. Furthermore, the ImageJ1 project includes substantial effort and code from individuals who are not U.S. government employees, making the legal status of ImageJ1 as a whole decidedly unclear. For further reading, see the [Wikipedia article "Copyright status of work by the U.S. government"](wikipedia:Copyright_status_of_work_by_the_U.S._government "wikilink").
 
 ## Developers: How to use this page
 
-If you will be creating and/or consuming open source code, you should
-familiarize yourself with the options for [managing copyright
-information](http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html).
-There are numerous tools for assisting in license management; in ImageJ
-projects, for example, the
-[license-maven-plugin](https://www.mojohaus.org/license-maven-plugin/)
-is used to maintain file-scope copyright notices.
+If you will be creating and/or consuming open source code, you should familiarize yourself with the options for [managing copyright information](http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html). There are numerous tools for assisting in license management; in ImageJ projects, for example, the [license-maven-plugin](https://www.mojohaus.org/license-maven-plugin/) is used to maintain file-scope copyright notices.
 
 ### Linking to these libraries
 
-If you are writing code (open source or not) that will use one or more
-of these libraries, you should first familiarize yourself with the type
-of license(s) used by your library(ies) of interest to determine the
-compatibility with the licensing of your own project. Then follow the
-corresponding *License text* column entry links to the actual document
-(if any) that needs to be distributed with your code.
+If you are writing code (open source or not) that will use one or more of these libraries, you should first familiarize yourself with the type of license(s) used by your library(ies) of interest to determine the compatibility with the licensing of your own project. Then follow the corresponding *License text* column entry links to the actual document (if any) that needs to be distributed with your code.
 
 ### Applying these licenses
 
-If you are writing open source code and aren't sure how to license it,
-you can use this page to get a feel for how other ImageJ software layers
-are licensed, and thus what might be appropriate for your project. You
-can follow [general tutorials](http://opensource.org/faq#apply-license)
-on applying open source licenses, or use the fantastic
-[choosealicense.com](http://choosealicense.com/licenses/) to guide your
-choice (which also includes *How to apply this license* instructions for
-each license).
+If you are writing open source code and aren't sure how to license it, you can use this page to get a feel for how other ImageJ software layers are licensed, and thus what might be appropriate for your project. You can follow [general tutorials](http://opensource.org/faq#apply-license) on applying open source licenses, or use the fantastic [choosealicense.com](http://choosealicense.com/licenses/) to guide your choice (which also includes *How to apply this license* instructions for each license).
