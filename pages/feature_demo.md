@@ -8,9 +8,15 @@ use_math: true
 description: This page is a feature demo.
 ---
 
-<center>
-<h1>Table of contents (TOC) -- Sidebar</h1>
-</center>
+# DEMO LINKS
+
+| Action | Link to demo page|
+| : --- : | :---: |
+| Generate info/details box | [details-box]({{"/pages/demo-details-box" | relative_url}}) | 
+| Link to github files | [github]({{"/pages/demo-github" | relative_url}}) |
+| Insert images | [images]({{"/pages/demo-images" | relative_url}}) |
+| Insert logos | [logo]({{"/pages/demo-logo" | relative_url}}) |
+
 
 <center>
 <h1>Images without legends</h1>
