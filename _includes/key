@@ -1,1 +1,1 @@
-<span class="key">{{include.content}}</span>
+<code class="key">{{include.content}}</code>

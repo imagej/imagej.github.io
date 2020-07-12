@@ -135,7 +135,9 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 <li>Integrates <a href="ImageJ2" title="wikilink">ImageJ2</a> functionality, including <a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a></li>
 <li>Aims to serve as a modern replacement to <a href="3D_Viewer" title="wikilink">3D Viewer</a></li>
 </ul></td>
-<td><p><em>in development</em></p></td>
+<td><figure>
+<img src="/images/pages/Sciview-gameoflife.gif" title="Sciview-gameoflife.gif" alt="Sciview-gameoflife.gif" width="500" /><figcaption>Sciview-gameoflife.gif</figcaption>
+</figure></td>
 </tr>
 </tbody>
 </table>

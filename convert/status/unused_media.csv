@@ -26,6 +26,7 @@
 2017-09-20-rs-result-ransac.png
 2017-09-20-rs-result-values.png
 2017-09-20-rs-set-parameters.png
+2019 AinDM Capek et al Wavelet Denoising Fiji.pdf
 24bit rgb images.jpg
 2788D705-B02A-4915-8135-BC051F8B9E2B.jpeg
 3 Enable cookbook.png
@@ -36,12 +37,15 @@
 3D-Viewer-snapshot.jpg
 3D-Viewer.jpg
 3DViewer-class-diagram-customnode.png
+3Dobjectscounter.png
+3Dscript-Logo.png
 3Dscript-wiki-01.jpg
 3chs CMY cell.jpg
 3chs Grays cell.jpg
 3chs RGB cell.jpg
 3d project depth cues.png
 3d project window.png
+3d variance.png
 3d viewer volume.png
 3d viewer window.png
 3dstitching.png
@@ -55,12 +59,14 @@
 500px-ColocalizationSampling.png
 500px-CrossTalkBleedThrough.jpg
 60Xnooptovar.gif
+AMF plugin.png
 AWS-Classifier-selection.png
 AWS-GUI-after-training.png
 AWS-Plot-result.png
 AWS-Probability-maps.png
 AWS-Settings.png
 AWS-macro-recording.png
+Abstract 1848 thomasboudier.pdf
 ActogramJ.png
 AdaptiveFilter.png
 Add-wiki-markup.png
@@ -402,6 +408,8 @@ Brightness Contrast Window.png
 Brightness contrast pic.png
 Broom icon.svg
 BrowseOps.png
+Bundle-tapas0.51.zip
+Bundle-tapas0.6.3.zip
 CGLSOptions.jpg
 CIP basic concept.PNG
 CIP closing.PNG
@@ -435,6 +443,9 @@ Call-modern-from-legacy.jpg
 Capillaries adipose.zip
 Capillaries brain.zip
 Capillaries heart.zip
+Case 1 Data.zip
+Case 1 Roiset and measurements.zip
+Case 4 data.zip
 Catmiss.png
 Cbgbuilding.jpg
 Celegans beads analysis-1.0.0.jar.zip
@@ -471,6 +482,8 @@ Coloc2.png
 ColocBGnoise.gif
 ColocBleedThru.png
 ColocBlur.gif
+ColocByCorrelate-GaussFit.jpg
+ColocByCorrelation-CorrelationImage.jpg
 ColocQuadrants.jpg
 ColocTestGUI1.png
 ColocTestGUI2.png
@@ -483,6 +496,8 @@ Color thresholding manual threshold2.png
 Color-tag-result-2.png
 Color-tag-result-image.png
 Color-tag-result.png
+Colorizer Overlay.jpg
+Colorizer Overlay.zip
 CombineShollProfiles.png
 Combined buildup small gif vert.gif
 Combined-SIOX-Stacks.gif
@@ -529,14 +544,18 @@ CreateSpatiallyVariantPSFDialog.jpg
 Creating-a-new-page.png
 CropExample.jpeg
 Cropped source image.jpg
+Cross-sectional-analysis.zip
 Cross.png
 Cross2.png
 Cross3.png
 Crystal important.png
 Csbdbuilding.jpg
 Curtis-rueden-2010.jpg
+Cx3d-sciview.png
 Cycle detection.png
 D4CB4754-204F-4EAB-A166-208E8197A223.jpeg
+DICOM open.jpg
+DICOM open.zip
 DS4H IA Modified TsujikawaCellReports2017.png
 DW3M1.JPG
 Dai.png
@@ -559,7 +578,16 @@ Delaunay-dialog.png
 Delta f corrected.png
 Delta f raw.png
 Demostration.mov
+DenoiSeg-teaser.png
 Denoised lena small.jpg
+Denoiseg-model.png
+Denoiseg-modelpredict-parameters.png
+Denoiseg-plugins.png
+Denoiseg-predict-parameters.png
+Denoiseg-train-parameters.png
+Denoiseg-train-preview.png
+Denoiseg-train-progress.png
+Denoiseg-trainpredict-parameters.png
 Depth code max.png
 DepthOfDrawing.png
 DescriptorBuildup.png
@@ -607,6 +635,7 @@ DiameterJ 1.010.zip
 DiameterJ 1.011.zip
 DiameterJ 2.003.zip
 DiameterJ F.005.zip
+DiameterJ FIJI.zip
 DiameterJ Fiji - 1-013.zip
 DiameterJ Fiji - 1-014.zip
 DiameterJ Fiji - 1-016.zip
@@ -684,6 +713,13 @@ E9StopVM.PNG
 EAA17768-BD83-4121-8C74-74B529A89CB6.jpeg
 EDM w CL.png
 EDMErosionDilation.png
+EMtool 01.jpg
+EMtool 02.jpg
+EMtool 04.jpg
+EMtool 05.jpg
+EMtool 06.jpg
+EMtool 07.jpg
+EMtool 08.jpg
 Easy Eclipse-Done.png
 Easy Eclipse-Import Existing.png
 Easy Eclipse-Import Menu.png
@@ -693,6 +729,8 @@ EauContrasteMaxFit.jpg
 Eclipse-luna-icon.png
 Eclipse-luna.png
 Edge-filter.png
+Edgeandsymmetry.png
+Edgesymmetry.png
 EditSpatiallyVariantPSFDialog.jpg
 Eingabemaske2.png
 EllipseSplit.png
@@ -744,12 +782,28 @@ Excitation.png
 Explore-fit-preview.png
 Extended depth of field.png
 ExtendedParticleAnalyzer v2.png
+F Profiler Screenshot.jpg
+F Project ScreenShot.jpg
 F f0 corrected.png
 F f0 raw.png
 FAST Processing.png
 FAST ROI-check.png
 FAST ROI-edition.png
 FAST Thr-ROI.png
+FLIMJ Lifetime Axis Not Detected.png
+FLIMJ Multiple Channel Detected.png
+FLIMJ Time Base Info Not Detected.png
+FLIMJ first launch.png
+FLIMJ fit dataset preview results as.png
+FLIMJ fit dataset preview results lut.png
+FLIMJ image export.png
+FLIMJ irf crop irf.png
+FLIMJ preview plot.png
+FLIMJ preview preview.png
+FLIMJ preview settings.png
+FLIMJ settings binning.png
+FLIMJ settings start end.png
+FLIMJ usage open dataset.png
 FM.0.dialog.png
 FM.1.seed.png
 FM.2.progress.png
@@ -760,6 +814,8 @@ FPB-manage-update-sites.png
 Farhan.png
 FeatureExtraction-snapshot.jpg
 FeatureExtractor1.png
+FiberOutlines.png
+Fibers.png
 Fig 1.jpg
 Figure 01.jpg
 Figure 1.png
@@ -793,6 +849,7 @@ Fiji Updater-screenshot.png
 Fiji chromostereopsis.png
 Fiji cover.png
 Fiji jSLIC gui.jpg
+Fiji main results.jpg
 Fiji perspective nmeth.2019-S1.pdf
 Fiji-25%.png
 Fiji-ELMI2009.pdf
@@ -814,6 +871,7 @@ FijiArchipelagoShot01.png
 FijiArchipelagoShot02.png
 FijiArchipelagoShot03.png
 FijiTrainingNotes.png
+Fijiyama reg manager.png
 File graph GraphVizExtensionDummy dot.jpeg
 File graph GraphVizExtensionDummy dot.jpg
 File graph GraphVizExtensionDummy dot.png
@@ -860,7 +918,9 @@ FluorescenceImageAnalysisIntro copy.jpg
 Fork-GitHub-tutorial.png
 Fourier.jpg
 FourierConvolution.jpg
+Frame Slider Screenshot.jpg
 Frame mover.jpg
+Frames.zip
 Frangi-before-and-after.png
 Frangi-parameters.png
 Frc-dialog-batch.png
@@ -894,6 +954,7 @@ GitHub-pull-request-review-create-tutorial.png
 Glasbey-labeling.png
 Glasbey.png
 GlobalOptions.png
+Gnu Plot.jpg
 Gold nooverlay.png
 Gold overlay ellipsefitting size.png
 Gold overlay ellipsefitting.png
@@ -909,6 +970,9 @@ GreyLevel.png
 GridStitching1.png
 GridStitching1013.png
 GridStitching2.png
+Groom-bin.png
+Groom-evf.png
+Groom-raw.png
 Grouped z stack.png
 HYBROptions.jpg
 Hackathon-2016-konstanz-dietz-and-rueden.jpg
@@ -930,10 +994,16 @@ Hackdd16-waldschlosschen.jpg
 Hackdd16-xmas.jpg
 Haeckel embryos cover.png
 Haeckel embryos white.png
+Heck-orig.png
+Heck-seg.png
+Heck-watershed.png
 Hello-world-script.png
 HelmholtzAnalysisAverageOutput.png
 HelmholtzDialog.png
 Help-On-Menu-Item.png
+Hill Shade.class
+Hillshade-overlay-example.jpg
+Hillshade-screenshot.jpg
 Hires cover buildup 1.png
 Hires cover buildup 2.png
 Hires cover buildup 3.png
@@ -1049,6 +1119,7 @@ Imagej2-options.png
 Imagejfx.png
 Imagesxm-icon.png
 Imagesxm-logo.jpg
+Img spectrum.png
 Img1.png
 ImgLib2 Introduction src.zip
 ImgLib2 Introduction.zip
@@ -1062,7 +1133,6 @@ Imglib2-accessibles.png
 Imglib2-accessors-real.png
 Imglib2-accessors-simplified-integer.png
 Imglib2-data.png
-Imglib2-icon (copy 1).png
 Imglib2-icon.png
 Imglib2-logo.png
 Imglib2-transform.png
@@ -1100,6 +1170,8 @@ Intellij-idea.png
 Intensity ratio analysis.jpg
 Intensity vs Beads.jpg
 Interactive Correlation Plot.png
+Interactive Fitting.jpg
+Interactive Fitting.zip
 Interactive-Marker-controlled-Watershed-WS-panel.png
 Interactive-Marker-controlled-Watershed-markers.png
 Interactive-Marker-controlled-Watershed-plugin-overview.png
@@ -1112,6 +1184,8 @@ Intro Quiver Plot Image.jpg
 Isletj-demo.zip
 IsoData Classifier.png
 Iterative deconvolve window.png
+IterativeDotblot.png
+IterativeTouching.png
 Itk-logo.png
 JPEG-glasbey.png
 JPEG-grayscale.png
@@ -1120,6 +1194,7 @@ JSLIC-AuPbSn40.zip
 JSLIC-Leaf.jpg
 JSLIC-Lena-ROIs-2.jpg
 JSLIC-Lena-ROIs.jpg
+Jacop interface.jpg
 Janelia-2016-hackathon.jpg
 Java.svg
 Jean-marie-burel.jpg
@@ -1136,7 +1211,6 @@ Kaolin overlay.png
 Kaolin size distr.png
 Kernel-Gabor-filter.png
 Kevin-eliceiri.jpg
-Knime-icon (copy 1).png
 Knime-icon.png
 Knime-logo.jpg
 Konstanz-hackathon.jpg
@@ -1173,6 +1247,7 @@ Label3-endB.png
 Label4-endA.png
 LabelRegistration3D-1.png
 LabeledOpFinder.png
+Labkit.png
 Landmarks-00-no-points-yet.png
 Landmarks-01-named-unset.png
 Landmarks-02-point-ROI-selected.png
@@ -1307,6 +1382,8 @@ Max largest circ dialog.png
 Max largest circ dialog2.png
 Max-Circles-Algorithm-Overview.png
 MaximumIntensitySplitLine.png
+Mcib3d-3.96.zip
+Mcib3d-suite3.96.3.zip
 Measurements 1.jpg
 Measurements 2.jpg
 MedianBackgroundSubtraction.png
@@ -1345,6 +1422,7 @@ Mito.png
 MitoDonut Meshes.zip
 Mitosis.jpg
 Mm-icon.jpg
+Mobie-white.jpg
 ModAE.jpg
 ModelChoice.png
 Modes.jpeg
@@ -1408,10 +1486,20 @@ Multiple Image Processor.jpg
 Multiple-dots-detections.png
 Multiple-uis.jpg
 Mv deconvolution.png
+N2v-model.png
+N2v-modelpredict-parameters.png
+N2v-plugins.png
+N2v-predict-parameters.png
+N2v-train-parameters.png
+N2v-train-preview.png
+N2v-train-progress.png
+N2v-trainfolder-parameters.png
+N2v-trainpredict-parameters.png
 N51x10 20092013 ipma 1.jpg
 N51x10 20092013 ipma 2.jpg
 N51x10 20092013 ipma 3.jpg
 N51x10 20092013 ipma.jpg
+NEUBIAS 3DSuite.pdf
 NM cover.jpg
 NM2012 perspective nmeth.2019.pdf
 Nature cover.png
@@ -1464,6 +1552,9 @@ ObjectOption.png
 Octocat.png
 OfficialSiteSequence.png
 OffsetProblem.png
+Ollion-closeLabels.png
+Ollion-raw.png
+Ollion-seg.png
 Ome-icon.png
 Ome-logo.jpg
 Ome-logo.png
@@ -1492,6 +1583,11 @@ Overlay.JPG
 PIV analyser window.png
 PairwiseStitching2.png
 PairwiseStitching3.png
+Panel 1-1.jpg
+Panel3-1.jpg
+Panel4-1.jpg
+Panel5-1.jpg
+Panel6-1.jpg
 Paradigm-manager-using-runner.jpg
 Paradigm-manager.png
 ParadigmProfilesManager.png
@@ -1544,6 +1640,7 @@ Pietzsch update site.png
 PixFRET userguide.pdf
 Pixel to Distance transform zoom.png
 Pixel-error-description.png
+Plant Science 2016.png
 Plasma-cloud.png
 Playground.jpg
 PlaygroundFirstAnnotation.jpg
@@ -1619,7 +1716,10 @@ Reconstruction-viewer-AA0100-sholl-plot.png
 Reconstruction-viewer-AA0100-sholl-table.png
 Reconstruction-viewer-AA0100-strahler-plot.png
 Reconstruction-viewer-AA0100-strahler-table.png
+Reconstruction-viewer-OP-distribution-analysis.png
+Reconstruction-viewer-animated-gif.gif
 Reconstruction-viewer-aspect-ratio-ZY.png
+Reconstruction-viewer-brain-area-analysis.png
 Reconstruction-viewer-color-mapping-group.png
 Reconstruction-viewer-color-mapping-individual.png
 Reconstruction-viewer-color-mapping-unique.png
@@ -1630,6 +1730,8 @@ Reconstruction-viewer-mesh-controls.png
 Reconstruction-viewer-obj-transparency-5.png
 Reconstruction-viewer-obj-transparency-95.png
 Reconstruction-viewer-scene-controls.png
+Reconstruction-viewer-settings-menu.png
+Reconstruction-viewer-shortcuts.png
 Reconstruction-viewer-stretched.png
 Reconstruction-viewer-tools-menu.png
 Reconstruction-viewer-whole-mouse-thalamus.png
@@ -1639,6 +1741,10 @@ RectangleStrel2DPerformanceComparison.png
 RectangleStrel3DPerformance.png
 RectangleStrel3DPerformanceComparison.png
 RecursiveFilters01.png
+Reg present 1.png
+Reg present 2.png
+Reg present 3.png
+Reg present.png
 Regression.png
 Removed-from-Fiji.png
 Report a Bug-account.jpg
@@ -1663,6 +1769,7 @@ Roi back corr after.gif
 Roi back corr before.gif
 Roi manager results box.jpg
 Roi select all.jpg
+RoiSet case 1.zip
 Rolling ball back corr.jpg
 Rotation chamber.png
 Rudolf-oldenbourg.jpg
@@ -1676,6 +1783,7 @@ S3.png
 S3D example.jpg
 SAIM Math.pdf
 SIFT Dialog.png
+SIM Lamina 32bit 488 Honeycomb StrongBckg Scale-0 25.zip
 SIOX Segmentation GUI step1.png
 SIOX result embryos775x581.png
 SIOX-Detail-Refinement-Brush.png
@@ -1723,12 +1831,14 @@ SNT-Path-Manager-Analyze-Menu.png
 SNT-Path-Manager-Branch-Order-Filter.png
 SNT-Path-Manager-Color-Mapper.png
 SNT-Path-Manager-Edit.png
+SNT-Path-Manager-Fill.png
 SNT-Path-Manager-Filtering-Menu.png
 SNT-Path-Manager-Length-Filter.png
 SNT-Path-Manager-Measurements.png
 SNT-Path-Manager-Node-Count-Filter.png
 SNT-Path-Manager-SWC-Type-Filter.png
 SNT-Path-Manager-Skeletonize.png
+SNT-Path-Manager-Tag.png
 SNT-Path-Manager-Text-Filter-Color-Filters.png
 SNT-Path-Manager-Text-Filter-Replace-Prompt.png
 SNT-Path-Manager-Text-Filter.png
@@ -1741,11 +1851,14 @@ SNT-ROI-Manager.png
 SNT-Reconstruction-Plotter-Colored.png
 SNT-Reconstruction-Plotter-Controls.png
 SNT-Reconstruction-Plotter-Example.png
+SNT-ScriptInterpreter.png
 SNT-Sholl-Analysis-How-to-Menu.png
 SNT-Startup-Prompt.png
 SNT-Strahler-Analysis-Plot.png
 SNT-Text-Filter-Balloon-Button.png
+SNT-Text-Filter-Color-Button.png
 SNT-Text-Filter-Down-Arrow-Button.png
+SNT-Text-Filter-Morphology-Button.png
 SNT-Text-Filter-Up-Arrow-Button.png
 SNT-Three-Pane-View-Enabled-Startup-Prompt.png
 SNT-Tracing-On-Filtered-Image-Gear-Options.png
@@ -1754,6 +1867,7 @@ SNT-data-source-widget.png
 SNT-misc-options.png
 SNT-temporary-paths-dialog.png
 SNT-views-widget.png
+SNTLogo512.png
 SOC autoMerge.png
 SOC cubeDimensions.png
 SOC cubeSplitting.png
@@ -1802,6 +1916,7 @@ Scijava-icon.svg
 Scijava-logo.png
 Scijava.svg
 ScijavaMultilineMessage.png
+Sciview-gameoflife.gif
 Screen Shot 2015-07-24 at 10.07.04 AM.png
 Screenshot slim final.png
 Screenshot slim macro.png
@@ -1858,6 +1973,7 @@ Script-parameters.png
 Script-segmentation-evaluation-thinning-dialog.png
 Script-segmentation-evaluation-thinning-log.png
 ScriptParam MESSAGEstring.JPG
+ScriptParameters-IntegerStyles.JPG
 ScriptParams.png
 Search-bar.png
 Searchradius.gif
@@ -2105,6 +2221,7 @@ Stack4-2.gif
 Stack4.gif
 StackLinePlots.png
 StageGrid.png
+Staining-combinations.png
 Stapel et al Documentation.pdf
 StarDist logo.jpg
 StarDist update site.jpg
@@ -2177,14 +2294,19 @@ TWS-settings-new-classifier.png
 TableStitching.gif
 TableStitching2.gif
 Tagging example.png
+Tapas description0.51.pdf
+Tapas description0.6.3.pdf
 Tech.png
 Tem-42-33-f.png
 Tem-clahe-50-256-2.5.jpg
 Tem.jpg
 Temp.jpg
 Temp2.jpg
+Tensorflow-installer.png
 Terrifying-generics.jpg
 Test Java3D.png
+Test dataset 01 vine crops.zip
+Test dataset 04 time series.zip
 Test of PNG-screenshot tutorial-1.png
 Test.png
 Testpiv3-fd.png
@@ -2380,6 +2502,7 @@ Volumej.png
 Volviewer.png
 Voxelization output.png
 WID.jpg
+WIN 20190224 125013.JPG
 WPLOptions.jpg
 Wand-tool.png
 Warning-sign.png
@@ -2391,6 +2514,8 @@ Watershed-flooding-graph.png
 Watershed-flooding-markers-blobs-gradient.gif
 WatershedIrregularFeatures.png
 WatershedIrregularStructures.png
+Wavelet Denoise Pics ImageJ SyncWins.jpg
+Wavelet Denoise dialog.jpg
 Wayne-rasband.jpg
 Weka module.JPG
 Weka-GUI-Chooser-package-manager.png
@@ -2478,4 +2603,3 @@ Z variance.png
 Zenodo.35114.svg
 Zoomify montage.png
 Zoomify start.png
-convert.sh

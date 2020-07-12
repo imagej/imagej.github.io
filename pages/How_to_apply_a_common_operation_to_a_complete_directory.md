@@ -78,8 +78,9 @@ After defining the generic *action* function, you can call it on each image in a
 `output = "/home/fiji/images/";`  
   
 `list = getFileList(input);`  
-`for (i = 0; i < list.length; i++)`  
-`        action(input, output, list[i]);`
+`for (i = 0; i < list.length; i++){`  
+`        action(input, output, list[i]);`  
+`}`
 
 Now, this is a little more complicated: First, a variable *input* is defined. The reason is that the input directory is not only needed to get the list of images, but also to pass to the *action* function.
 
@@ -87,7 +88,7 @@ To make the macro easier to modify, also the output directory is stored in a var
 
 The next line defines a variable *list*, which takes the result of the builtin function *getFileList*. The result is a so-called *array*, a list that contains a number of *list.length* items, indexed by the numbers *0, ..., list.length-1*. These items are the names of the files in the given *input* directory.
 
-The *for* loop does nothing else than assigning the integral numbers *0, ..., list.length-1* to the variable *i* and executing the next line with each setting.
+The *for* loop does nothing else than assigning the integral numbers *0, ..., list.length-1* to the variable *i* and executing the lines between { and } with each setting.
 
 The line executed in the *for* loop calls the *action* function with the *i*th file name in the directory list, obtained by *list\[i\]*.
 
@@ -98,9 +99,11 @@ Sometimes, ImageJ can get confused when it has to open or close windows and perf
   
 `setBatchMode(true); `  
 `list = getFileList(input);`  
-`for (i = 0; i < list.length; i++)`  
+`for (i = 0; i < list.length; i++){`  
 `        action(input, output, list[i]);`  
-`setBatchMode(false);`
+`}`
+
+setBatchMode(false);
 
 ## Alternative: Multiple Image Processor
 

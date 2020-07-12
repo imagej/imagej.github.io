@@ -319,30 +319,36 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 <td></td>
 </tr>
 <tr class="even">
+<td><p>2020-May-13</p></td>
+<td><p>Ellen Dobson</p></td>
+<td><p>ImageJ: An Open Platform for Scientific Image Analysis (Virtual AQLM 2020)</p></td>
+<td><p><a href="https://docs.google.com/presentation/d/1CCmZEWigNXcG6Yr47l5_WvSEt-pTKKTfMmwOj1YY0Mw/edit?usp=sharing">slides</a></p></td>
+</tr>
+<tr class="odd">
 <td><p>2019-Mar-28</p></td>
 <td><p>{% include person content='Rueden' %}</p></td>
 <td><p>ImageJ – Vision, Mission and Values: Challenges of a diverse community</p></td>
 <td><p><a href="https://docs.google.com/presentation/d/1mZBJpxTGzJmD3nFSSl_y2oneHmT8D9bVzTtb0gdvRH0/present">slides</a></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>2015-Jan-12</p></td>
 <td><p>{% include person content='Schindelin' %}</p></td>
 <td><p>The ImageJ Ops Framework: Image processing made easy</p></td>
 <td><p><a href="https://imagej.github.io/presentations/2015-01-12-imagej-ops/">slides</a></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>2014-Mar-20</p></td>
 <td><p>{% include person content='Schindelin' %}</p></td>
 <td><p>SciJava Common: Plugins, Contexts, Utilities and More</p></td>
 <td><p><a href="https://scijava.org/scijava-common/scijava-common.html">slides</a></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>2010-Apr-06</p></td>
 <td><p>{% include person content='Rueden' %}</p></td>
 <td><p>ImageJ2: Directions &amp; Goals</p></td>
 <td><p><a href="https://imagej.github.io/presentations/2010-04-06-loci-imagej2-plan.pdf">slides</a></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>2010-Apr-01</p></td>
 <td><p>{% include person content='Rueden' %}</p></td>
 <td><p>LOCI, Fiji &amp; ImageJ2</p></td>
@@ -455,6 +461,12 @@ Stephane Dallongeville</p></td>
 <td><p><a href="https://imagej.net/User:Iarganda">Ignacio Arganda-Carreras</a></p></td>
 <td><p>Introduction to Image Segmentation using ImageJ/Fiji</p></td>
 <td><p><a href="https://imagej.net/_images/8/87/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf">slides (PDF)</a></p></td>
+</tr>
+<tr class="even">
+<td><p>2020-April-02</p></td>
+<td><p>Robert Haase</p></td>
+<td><p>Lecture Biolmage Analysis 2020</p></td>
+<td><p><a href="https://www.youtube.com/playlist?list=PL5ESQNfM5lc7SAMstEu082ivW4BDMvd0U">YouTube Channel</a></p></td>
 </tr>
 </tbody>
 </table>

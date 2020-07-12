@@ -18,7 +18,9 @@ This plugin provides 3D visualization and virtual reality capabilities for image
 
 An update site is available: http://sites.imagej.net/SciView/
 
-There have been a number of contributors to the project: Stephan Saalfeld, Tobias Pietzsch, Loic Royer, and Robert Haase. Development has taken place at hackathons such as the first [SciView hackathon](2018-04-04_22-_SciView_hackathon "wikilink")).
+There have been a number of contributors to the project: {% include person content='Saalfeld' %}, {% include person content='Pietzsch' %}, {% include person content='royerloic' %}, and {% include person content='Haesleinhuepf' %}. Development has taken place at hackathons such as the first [SciView hackathon](2018-04-04_22-_SciView_hackathon "wikilink").
+
+![align=right](/images/pages/Sciview-gameoflife.gif "align=right")"
 
 ### Shortcuts
 

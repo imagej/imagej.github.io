@@ -50,7 +50,7 @@ description: test description
 
 <!-- end list -->
 
-  - [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink") (project [page](http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/))
+  - [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink") (SNT)
   - [Segmentation Editor](http://132.187.25.13/home/?category=Download&page=SegmentationEditor)
   - Manual (via [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html))
   - [Level Sets](Level_Sets "wikilink")

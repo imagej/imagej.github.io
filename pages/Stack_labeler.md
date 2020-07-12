@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Series Labeler](Series_Labeler "wikilink")
+1.  REDIRECT [Stack Labeler](Stack_Labeler "wikilink")

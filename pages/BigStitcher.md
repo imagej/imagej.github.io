@@ -28,6 +28,8 @@ The BigStitcher is a software package that allows simple and efficient alignment
 
 As its predecessor, the [Image Stitching](Image_Stitching "wikilink"), the BigStitcher can run in fully automatically mode but is additionally able to guide the user through the alignment process by interactively showing intermediate results with the option for user interaction, which includes interactive setup of approximate tile locations. The BigStitcher is fully integrated with the [BigDataViewer](BigDataViewer "wikilink") and is thus able to interactively display and process the input images independent of their size. An improved global optimization is now able to efficiently align sparsely connected datasets, where image content is separated by large areas of almost constant background.
 
+**In addition to the documentation here there is a growing set of tutorial videos on this [YouTube Channel](https://www.youtube.com/playlist?list=PLNZz8lLDpAeVOeAmQWMrKGOeB3vv28yJE)**
+
 Specifically intended for lightsheet acquisitions of cleared samples (e.g. by CLARITY), the BigStitcher offers several features:
 
   - Registration of multi-view multi-tile acquisitions, where each view of the sample that is acquired from different orientations may consist of many individual image tiles.

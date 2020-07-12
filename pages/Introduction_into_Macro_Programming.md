@@ -258,6 +258,17 @@ for (i=1; i<=nSlices; i++) {
 }
 ```
 
+## Looping over rois in RoiManager
+
+This small IJmacro scriptlet loops over the roi in the Roi Manager, selecting one at a time.
+
+``` java
+for (i = 0; i < roiManager("count"); i++){
+     roiManager("Select", i);
+     // do some operation
+}
+```
+
 # The recorder
 
 Typically, macros are not written from scratch, but recorded using the Macro Recorder: Just click on {% include bc content='Plugins | Macros | Record...'%} and perform some actions. These actions will be recorded in the recorder window, and you can hit the *Create* button to open the recorded instructions in an editor:
@@ -693,6 +704,16 @@ eval("script",
     "}"
 );
 ```
+
+## The exec function
+
+The [`exec` function](https://imagej.net/developer/macro/functions.html#exec) can call any external program or process with optional arguments.  
+It can be used to e.g. automatically open a tabular software with a result table after analysis. It can also be used to open a specific webpage in the default browser.  
+See [Examples](https://imagej.net/macros/ExecExamples.txt).  
+Note that the macro code will wait for the external process to terminate, and only after that continue the execution of the rest of the code (except when opening a webpage or excel).  
+If you dont want the macro to wait until the end of the external process you can call the command  
+`setOption("WaitForCompletion", false);`  
+before the `exec` call. (since ImageJ 1.52u38)
 
 # Further documentation
 

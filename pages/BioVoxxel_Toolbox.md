@@ -10,13 +10,17 @@ description: test description
 
 
 {% capture author%}
-{% include person content='BioVoxxel' %}, {% include person content='Twagner' %}
+{% include person content='BioVoxxel' %}
 {% endcapture %}
 
 {% capture maintainer%}
 {% include person content='BioVoxxel' %}
 {% endcapture %}
-{% include info-box software='ImageJ / Fiji' name='BioVoxxel Toolbox' author=author website=' [www.biovoxxel.de](http://www.biovoxxel.de/index.html) ' maintainer=maintainer latest-version='15. October 2015' source=' [GitHub](https://github.com/biovoxxel/BioVoxxel_Toolbox) ' category='[Particle analysis](:Category:Particle_analysis "wikilink"), [Binary](:Category:Binary "wikilink"), [Filtering](:Category:Filtering "wikilink")' %}You can setup an automatic update for the BioVoxxel Toolbox. Just run the [Updater](Updater "wikilink") ({% include bc content='Help | Update...'%}) and switch in the main window to 'Advanced mode'. Then click on 'Manage update sites'. Here you simply need to activate the "BioVoxxel". See here how to follow an update site [follow an update site](https://imagej.net/Following_an_update_site)
+
+{% capture maintainer%}
+{% include person content='BioVoxxel' %}
+{% endcapture %}
+{% include info-box software='ImageJ / Fiji' name='BioVoxxel Toolbox' update-site='BioVoxxel' author=author maintainer=maintainer website=' [www.biovoxxel.de](http://www.biovoxxel.de/index.html) ' maintainer=maintainer released='2014' latest-version='12. February 2020' status='stable (active maintainance)' source=' [GitHub](https://github.com/biovoxxel/BioVoxxel-Toolbox) ' category='[Particle analysis](:Category:Particle_analysis "wikilink"), [Binary](:Category:Binary "wikilink"), [Filtering](:Category:Filtering "wikilink")' %}You can setup an automatic update for the BioVoxxel Toolbox. Just run the [Updater](Updater "wikilink") ({% include bc content='Help | Update...'%}) and switch in the main window to 'Advanced mode'. Then click on 'Manage update sites'. Here you simply need to activate the "BioVoxxel". See here how to follow an update site [follow an update site](https://imagej.net/Following_an_update_site)
 
 You will find all functions of the BioVoxxel Toolbox under the icon of the green BioVoxxel cube after selecting BioVoxxel Toolbox from the More Tools Icon (last Icon in the ImageJ/Fiji Icon list with the double arrow).
 

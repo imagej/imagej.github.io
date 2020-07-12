@@ -306,7 +306,7 @@ Most MorphoLibJ plugins consider the current image as input, that must be either
 
 ##### Global geometry
 
-The **global geometry** of particles in 2D images can be characterized with the Region Morphometry plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Region Morphometry'%}). For 2D particles, the area, the perimeter and derived features are implemented. The columns of the results table are:
+The **global geometry** of particles in 2D images can be characterized with the Analyze Regions plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Analyze Regions'%}). For 2D particles, the area, the perimeter and derived features are implemented. The columns of the results table are:
 
   - **Label**: the label of the particle measured on the current line (it can be different from the row number if some labels do no exist in original image).
   - **Area**: the number of pixels within each region, multiplied by the area of each pixel.
@@ -337,9 +337,9 @@ This plugin computes several geodesic measures for each particle in a label imag
   - **x1, y1**: coordinates of one of the geodesic extremities of the particle.
   - **x2, y2**: coordinates of another geodesic extremity of the particle.
 
-##### Region Analysis 3D
+##### Analyze Regions 3D
 
-The plugin calculating these measurements is found under {% include bc content='Plugins | MorphoLibJ | Analyze | Region Analysis 3D'%}. The results are provided in an ImageJ Results table, whose name contains the name of the original image.
+The plugin calculating these measurements is found under {% include bc content='Plugins | MorphoLibJ | Analyze | Analyze Regions 3D'%}. The results are provided in an ImageJ Results table, whose name contains the name of the original image.
 
   - **Label**: the label of the particle measured on the current line (it can be different from the row number if some labels do no exist in original image).
   - **Bounding box**: the minimal and maximal coordinates in each direction for each label.

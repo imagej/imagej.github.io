@@ -4,8 +4,105 @@ title: Getting Started
 breadcrumb: Getting Started
 layout: page
 author: test author
-categories: 
+categories: Tutorials
 description: test description
 ---
 
-1.  REDIRECT [Getting Started](Getting_Started "wikilink")
+{% include learn%}
+{% include toc%}
+
+
+# Installation
+
+First, you should to [install](install "wikilink") ImageJ\!
+
+# The main window
+
+After starting ImageJ, you will see the main window:
+
+![Fiji-main-window.jpg](/images/pages/Fiji-main-window.jpg "Fiji-main-window.jpg")"
+
+On Mac OS X, the menu bar will appear on the top of the screen (as with all OS X applications).
+
+## The menu bar
+
+In the menu bar, you will find most of the functionality, such as loading/saving files, processing them, and plugins will be installed into the menus, too.
+
+The menus have different purposes:
+
+  - File  
+    File input/output, new files
+  - Edit  
+    Selection/ROI handling
+  - Image  
+    Visualization, stack manipulation
+  - Process  
+    Image filters
+  - Analyze  
+    Statistics
+  - Plugins  
+    Plugins, Macros and Utilities
+  - Window  
+    Windows
+  - Help  
+    Help & Links
+
+## The tool bar
+
+The toolbar mostly contains selection tools: the rectangle, ellipse, polygon, freehand and straight line selection tool. By clicking on the icon, you activate the tool.
+
+Some tools offer option dialogs which you can open by double clicking the icon. This example shows the option dialog of the Oval Tool:
+
+![Oval\_Tool\_Option\_Dialog.png](/images/pages/Oval_Tool_Option_Dialog.png "Oval_Tool_Option_Dialog.png")"
+
+If there is a small red arrow in the lower right corner of the tool icon, you can right-click ({% include key content='Ctrl' %}+{% include key content='click' %} on an Apple mouse) and select an alternative selection tool (e.g. a circular brush selection tool which shares the icon with the ellipse selection tool). Example:
+
+![Alternative\_Tools.png](/images/pages/Alternative_Tools.png "Alternative_Tools.png")"
+
+## The status bar
+
+The status bar displays useful information at startup, and when running plugins. It also shows a progress bar on the right side for long-running processes:
+
+![Status-bar-with-progress.png](/images/pages/Status-bar-with-progress.png "Status-bar-with-progress.png")"
+
+A single mouse click on the status bar will show the information about ImageJ and Java version as well as about memory consumption:
+
+![Default-status-message.png](/images/pages/Default-status-message.png "Default-status-message.png")"
+
+## Drag & Drop
+
+You can drag files from your favorite file manager and drop them on the main window; ImageJ will load the corresponding files.
+
+Drag 'n Drop will also work for images displayed in your web browser, unless they are links to other web pages. You can try with this page: clicking on an image will open a page whose image you can Drag 'n Drop into ImageJ's main window.
+
+# Image windows
+
+Whenever you open an image, be it via {% include bc content='File | Open'%}, Drag 'n Drop or {% include bc content='File | Open Samples'%}, ImageJ will open an image window.
+
+![Clown-snapshot.jpg](/images/pages/Clown-snapshot.jpg "Clown-snapshot.jpg")"
+
+The window has the file name as title, and it display some useful information above the image: the real resolution (in this case in square centimeters), the pixel resolution, the image type and the memory required by the image.
+
+If your image does not have meta-data about the real resolution, you can set the resolution explicitely with {% include bc content='Image | Properties...'%} or by following the [tutorial on spatial calibration](SpatialCalibration "wikilink").
+
+## Image Types
+
+You can change the image *type*:
+
+![Image-Types.png](/images/pages/Image-Types.png "Image-Types.png")"
+
+Choose between
+
+  - 8-bit (intensity range 0..255)
+  - 16-bit (intensity range 0..65535)
+  - 32-bit (floating point numbers)
+  - 8-bit color (up to 256 colors encoded via a color lookup table)
+  - RGB color (3 colors encoded as 8-bit values)
+
+There are two more options: RGB stack and HSV stack, which can turn a 2-dimensional color image into a stack consisting of 3 color channels (red, green & blue or hue, saturation & value, respectively).
+
+# Further reading
+
+Have a look at the list of [tutorials](:Category:Tutorials "wikilink") on this Wiki.
+
+[Category:Tutorials](Category:Tutorials "wikilink")

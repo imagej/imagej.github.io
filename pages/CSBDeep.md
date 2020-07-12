@@ -8,104 +8,19 @@ categories:
 description: test description
 ---
 
+The CSBDeep family is growing. Here is an overview of related topics relevant to ImageJ / Fiji users:
 
-{% capture source%}
-{% include github org='CSBDeep' repo='CSBDeep\_fiji' tag='csbdeep-0.3.4' %}
-{% endcapture %}
+## What can you do with CSBDeep?
 
-{% capture release%}
-{% include maven g='de.csbdresden' a='csbdeep' v='0.3.4' label='0.3.4' %}
-{% endcapture %}
+  - On [csbdeep.bioimagecomputing.com](https://csbdeep.bioimagecomputing.com/scenarios/) you can find examples of bio image data which was enhanced or segmented with CSBDeep based tools
 
-{% capture devStatus%}
-{% include devstatus developer='yes' incubating='yes' obsolete='no' %}
-{% endcapture %}
+## Which plugins are available in ImageJ / Fiji?
 
-{% capture supportStatus%}
-{% include supportstatus debugger='yes' reviewer='yes' support='yes' %}
-{% endcapture %}
-
-{% capture founders%}
-{% include person content='frauzufall' %}
-{% endcapture %}
-
-{% capture leads%}
-{% include person content='frauzufall' %}, {% include person content='HedgehogCode' %}, {% include person content='fjug' %}
-{% endcapture %}
-
-{% capture developers%}
-{% include person content='frauzufall' %}, {% include person content='HedgehogCode' %}, {% include person content='fjug' %}
-{% endcapture %}
-
-{% capture debuggers%}
-{% include person content='frauzufall' %}, {% include person content='HedgehogCode' %}
-{% endcapture %}
-
-{% capture reviewers%}
-{% include person content='frauzufall' %}, {% include person content='HedgehogCode' %}
-{% endcapture %}
-
-{% capture support%}
-{% include person content='frauzufall' %}, {% include person content='HedgehogCode' %}
-{% endcapture %}
-
-{% capture maintainers%}
-{% include person content='frauzufall' %}, {% include person content='tpietzsch' %}, {% include person content='HedgehogCode' %}
-{% endcapture %}
-{% include component project='CSBDresden' name='CSBDeep Fiji Plugin' url='https://imagej.net/CSBDeep' source=source license='[BSD-2](BSD-2 "wikilink")' release=release date='Tue Dec 11 00:00:00 CDT 2018' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
-
-## Install
-
-### ImageJ update site
-
-The CSBDeep plugin can be installed from the ImageJ update site [1](http://sites.imagej.net/CSBDeep/). See the [CSBDeep Wiki Pages](https://github.com/CSBDeep/CSBDeep_website/wiki/CSBDeep-in-Fiji) for more details.
-
-### From source
-
-1.  Clone this repository.
-2.  Run the following command from inside the repo:
-
-`mvn -Dimagej.app.directory=/path/to/Fiji.app/ -Ddelete.other.versions=true`
-
-## Run demos
-
-1.  Download the [exemplary image data](http://csbdeep.bioimagecomputing.com/exemplary-image-data.zip)
-2.  Open Fiji.
-3.  Open an example image, e.g. \`tribolium.tif\`.
-4.  Run the plugin via \`Plugins \> CSBDeep \> Demo\`.
-5.  Run the plugin by pressing \`Ok\`.
-
-If all goes well, an image will be displayed representing the result of the model execution.
-
-See the [CSBDeep Wiki Pages](https://github.com/CSBDeep/CSBDeep_website/wiki/CSBDeep-in-Fiji) for more details.
-
-## Run your own model
-
-1.  Use the [python code](https://github.com/CSBDeep/CSBDeep) to train your network with your data. Export it as ZIP.
-2.  Open Fiji.
-3.  Open an image.
-4.  Run the plugin for any network via \`Plugins \> CSBDeep \> Run your network\`.
-5.  Load your exported network by pressing \`Browse\` on the \`Import model (.zip)\` line.
-6.  Run the plugin by pressing \`Ok\`.
-
-If all goes well, an image will be displayed representing the result of the model execution.
-
-See the [CSBDeep Wiki Page](https://github.com/CSBDeep/CSBDeep_website/wiki/Your-Model-in-Fiji) for more details.
-
-## Develop
-
-### Code Style
-
-If you use eclipse you can import our code formatter \`doc/eclipse-code-formatter.xml\`, code cleanup (\`doc/eclipse-code-clean-up.xml\`) and import order (\`eclipse-import-order.importorder\`) settings.
+  - [CARE](CARE "wikilink") (CSBDeep update site)
+  - [StarDist](StarDist "wikilink") (StarDist update site)
+  - [N2V](N2V "wikilink") (CSBDeep update site)
+  - [DenoiSeg](DenoiSeg "wikilink") (CSBDeep update site)
 
 ## GPU support
 
-See the according [CSBDeep Wiki page](https://github.com/CSBDeep/CSBDeep_website/wiki/CSBDeep-in-Fiji-–-Installation#gpu-support) for a detailed installation guide.
-
-### Muliple GPUs
-
-See the according [CSBDeep Wiki page](https://github.com/CSBDeep/CSBDeep_website/wiki/CSBDeep-in-Fiji-–-Installation#multiple-gpus).
-
-## License
-
-This project is licensed under the BSD 2-clause "Simplified" License -- see the [LICENSE.txt](https://github.com/CSBDeep/CSBDeep_fiji/blob/master/LICENSE.txt) file for details.
+  - go to the [TensorFlow-GPU](TensorFlow-GPU "wikilink") wiki page for support

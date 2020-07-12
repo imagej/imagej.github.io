@@ -22,12 +22,26 @@ There are three common methods for constructing an uber-JAR:
       - **Tools:** [Maven Assembly Plugin](http://maven.apache.org/plugins/maven-assembly-plugin/), [Classworlds Uberjar](http://classworlds.codehaus.org/uberjar.html)
   - **Shaded.** Same as unshaded, but rename (i.e., "shade") all packages of all dependencies.
       - **Pro:** Works with Java's default class loader. Avoids some (not all) dependency version clashes.
-      - **Con:** Files present in multiple JAR files with the same path (e.g., `META-INF/services/javax.script.ScriptEngineFactory`) will overwrite one another, resulting in faulty behavior. As a workaround, if you use [Maven](Maven "wikilink"), you can add the following lines to the shade plugin section of the POM to apply the appending tranform to multiple resources with the same name (in this case `org.scijava.plugin.Plugin` files):
+      - **Con:** Files present in multiple JAR files with the same path (e.g., `META-INF/services/javax.script.ScriptEngineFactory`) will overwrite one another, resulting in faulty behavior. As a workaround, if you use [Maven](Maven "wikilink"), you can add the following lines to the shade plugin section of the POM to apply the appending tranform to multiple resources with the same name (e.g. `META-INF/json/org.scijava.plugin.Plugin` or `META-INF/json/mpicbg.spim.data.generic.sequence.ImgLoaderIo`). Both are annotations necessary to find interface or abstract class implementation during runtime across JARs:
         ``` xml
-        <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
-        <resource>META-INF/json/org.scijava.plugin.Plugin</resource>
-        </transformer>
+        <transformers combine.children="append">
+          <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+            <resource>META-INF/json/org.scijava.plugin.Plugin</resource>
+          </transformer>
+        </transformers>
         ```
+        If you need to append more than one file, you unfortunately need to list multiple **transformer implementations** as wildcards are not allowed. For appending two files, the entry would look like this:
+        ``` xml
+        <transformers combine.children="append">
+            <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                <resource>META-INF/json/org.scijava.plugin.Plugin</resource>
+            </transformer>
+            <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                <resource>META-INF/json/mpicbg.spim.data.generic.sequence.ImgLoaderIo</resource>
+            </transformer>
+        </transformers>
+        ```
+        An example of a full maven-shade-plugin can be found [here](https://github.com/PreibischLab/multiview-reconstruction/blob/96d0f417638dab108f942e49ffa26024b48053f0/pom.xml#L271) (single entry) and [here](https://github.com/PreibischLab/BigStitcher/blob/eb1cc4af404ae83715135894920ed9c3b5e42385/pom.xml#L208) (multiple entries).
       - **Tools:** [Maven Shade Plugin](http://maven.apache.org/plugins/maven-shade-plugin/)
   - **JAR of JARs**. The final JAR file contains the other JAR files embedded within.
       - **Pro:** Avoids dependency version clashes. All resource files are preserved.

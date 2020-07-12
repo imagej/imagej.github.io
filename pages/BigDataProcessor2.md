@@ -10,16 +10,16 @@ description: test description
 
 
 {% capture source%}
-{% include github org='tischi' repo='fiji-plugin-bigDataProcessor2' %}
+{% include github org='embl-cba' repo='bigDataProcessor2' %}
 {% endcapture %}
-{% include info-box name='BigDataProcessor2' software='Fiji' update-site='EMBL-CBA' author='Ashis Ravindran & Christian Tischer' maintainer='Ashis Ravindran & Christian Tischer' source=source %}
+{% include info-box name='BigDataProcessor2' software='Fiji' update-site='BigDataProcessor' author='Ashis Ravindran & Christian Tischer' maintainer='Christian Tischer' source=source %}
 
 ## Overview
 
-BigDataProcessor2 is a FIJI plugin for efficient inspection and processing of big image data. For more information, please visit the GitHub [README](https://github.com/tischi/fiji-plugin-bigDataProcessor2#big-data-processor-2).
+BigDataProcessor2 is a FIJI plugin for efficient inspection and processing of big image data. For more information, please visit the GitHub [README](https://github.com/embl-cba/bigDataProcessor2#bigdataprocessor2).
 
 ## Installation
 
-BigDataProcessor2 can be installed from the ImageJ update site: http://sites.imagej.net/EMBL-CBA/. For details on how to install an update site click [here](Following_an_update_site "wikilink").
+Please install the update site: http://sites.imagej.net/BigDataProcessor/. For details on how to install an update site click [here](Following_an_update_site "wikilink").
 
-To start BigDataProcessor2 in ImageJ, select Plugins \> BigDataTools \> BigDataProcessor2 from the main menu.
+After installation, please select Plugins \> BigDataProcessor2 \> BigDataProcessor2 from the main menu.

@@ -81,6 +81,24 @@ Here we summarize some of the Registration plugins in ImageJ.
 <img src="/images/pages/Rvs_scheme.png" title="Rvs_scheme.png" alt="Rvs_scheme.png" width="500" /><figcaption>Rvs_scheme.png</figcaption>
 </figure></td>
 </tr>
+<tr class="odd">
+<td><p><a href="https://imagej.net/Fijiyama">Fijiyama</a></p></td>
+<td><p>A registration tool for 3D multimodal time-lapse imaging</p></td>
+<td><ul>
+<li>User-friendly, generic and versatile</li>
+<li>Automatic 3D registration (two algorithms available)</li>
+<li>Manual registration (using the <a href="https://imagej.net/3D_Viewer">3D_Viewer</a>)</li>
+<li>Movie tutorials and example datasets</li>
+<li>Settings automatically adjust based on your data</li>
+<li>Transformations: linear or non-linear</li>
+<li>Tested on specimens: human, vine trunk,</li>
+<li>Tested on modalities: MRI, X-ray CT, Photograph</li>
+<li>Limitations: should be avoided for big datasets (more than 15 time points or 1GB+).</li>
+</ul></td>
+<td><figure>
+<img src="/images/pages/Reg_present_1.png" title="Reg_present_1.png" alt="Reg_present_1.png" width="500" /><figcaption>Reg_present_1.png</figcaption>
+</figure></td>
+</tr>
 </tbody>
 </table>
 

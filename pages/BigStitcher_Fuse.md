@@ -12,7 +12,7 @@ description: test description
 
 While BigStitcher (using [BigDataViewer](BigDataViewer "wikilink")) is great for displaying the alignment results and manually inspecting your data, subsequent processing steps by other ImageJ-plugins or different programms typically require "classical" (single) images (the aligned "image" that the BigDataViewer shows is calculated on-the-fly from the input images and not saved).
 
-The process of creating single image stacks from multiple transformed/aligned input images is called **Image Fusion**. We offer two ways of creating fused images in BidStitcher and [Multiview-Reconstruction](Multiview-Reconstruction "wikilink"):
+The process of creating single image stacks from multiple transformed/aligned input images is called **Image Fusion**. We offer two ways of creating fused images in BigStitcher and [Multiview-Reconstruction](Multiview-Reconstruction "wikilink"):
 
 ## Quick fusion
 

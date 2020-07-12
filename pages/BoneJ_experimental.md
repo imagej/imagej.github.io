@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BoneJ2](BoneJ2 "wikilink")
+1.  REDIRECT [BoneJ](BoneJ "wikilink")

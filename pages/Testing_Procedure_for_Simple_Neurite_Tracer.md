@@ -8,6 +8,9 @@ categories:
 description: test description
 ---
 
+{% include sntdeprecation%}
+
+
 This is a set of instructions to follow to test as much of the code as possible in [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink"). It does not give complete coverage, but following this before each new release should stop the more obvious problems from getting through. The coverage results for this procedure with VIB at 6840872c6a492e31caa453a6776d1e9fac26f58d are [here](https://fiji.sc/~longair/coverage-VIB-6840872c6a492e31caa453a6776d1e9fac26f58d/_files/2b.html).
 
 ## Basic Tracing

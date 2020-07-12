@@ -10,13 +10,13 @@ description: test description
 
 
 {% capture source%}
-{% include github org='mpicbg-csbd' repo='stardist-imagej' %}
+{% include github org='stardist' repo='stardist-imagej' %}
 {% endcapture %}
 {% include info-box name='StarDist' software='ImageJ' update-site='StarDist' author='Uwe Schmidt, Martin Weigert' maintainer='Uwe Schmidt, Martin Weigert' source=source website='https://github.com/mpicbg-csbd/stardist' %} ![StarDist\_logo.jpg](/images/pages/StarDist_logo.jpg "StarDist_logo.jpg")"
 
 ## Overview
 
-This is the ImageJ/Fiji plugin for [StarDist](https://github.com/mpicbg-csbd/stardist), a cell/nuclei detection method for microscopy images with star-convex shape priors. The plugin can be used to apply already trained models to new images. See the [main repository](https://github.com/mpicbg-csbd/stardist) for links to our publications and the full-featured Python package that can also be used to train new models. If you encounter problems with the plugin, please file an issue [here](https://github.com/mpicbg-csbd/stardist-imagej).
+This is the ImageJ/Fiji plugin for [StarDist](https://github.com/mpicbg-csbd/stardist), a cell/nuclei detection method for microscopy images with star-convex shape priors. The plugin can be used to apply already trained models to new images. See the [main repository](https://github.com/mpicbg-csbd/stardist) for links to our publications and the full-featured Python package that can also be used to train new models. If you encounter problems with the plugin, please file an issue [here](https://github.com/stardist/stardist-imagej).
 
 *The plugin currently only supports 2D image and time lapse data. If you have 3D data, please use our [python library](https://github.com/mpicbg-csbd/stardist).*
 
@@ -35,6 +35,8 @@ This is the ImageJ/Fiji plugin for [StarDist](https://github.com/mpicbg-csbd/sta
 
 ## Usage
 
+### Plugin
+
 Open the image that should be segmented. Note, that currently only 2D and 2D+time images are supported. Suitable test images can for instance be found at the [Broad Bioimage Benchmark Collection](https://data.broadinstitute.org/bbbc/BBBC008/BBBC008_v1_images.zip)\[1\]:
 
 ![StarDist\_usage\_input.png](/images/pages/StarDist_usage_input.png "StarDist_usage_input.png")"
@@ -49,8 +51,12 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
 </figure></td>
 <td><p>Select a neural network model from the dropdown list, which can be one of the following:</p>
 <ul>
-<li><em>A built-in model</em>. We currently provide <code>Versatile...</code> and <code>DSB 2018...</code> that were both trained on a subset of the <a href="https://data.broadinstitute.org/bbbc/BBBC038/">DSB 2018 nuclei segmentation challenge dataset</a>.</li>
-<li><em>A custom user-trained model</em> (<a href="https://github.com/mpicbg-csbd/stardist">via the training code</a>) that has been exported as a zip file and can be loaded from a file or URL (see <em>Advanced options</em> below).</li>
+<li><em>A built-in model</em>. We currently provide:
+<ul>
+<li><code>Versatile (fluorescent nuclei)</code> and <code>DSB 2018 (from StarDist 2D paper)</code> that were both trained on a subset of the <a href="https://data.broadinstitute.org/bbbc/BBBC038/">DSB 2018 nuclei segmentation challenge dataset</a>.</li>
+<li><code>Versatile (H&amp;E nuclei)</code> that was trained on images from the <a href="https://monuseg.grand-challenge.org/Data/">MoNuSeg 2018 training data</a> and the <a href="http://cancergenome.nih.gov/">TCGA archive</a>.</li>
+</ul></li>
+<li><em>A custom user-trained model</em> (<a href="https://github.com/mpicbg-csbd/stardist">via the training code</a>) that has been <a href="https://github.com/mpicbg-csbd/stardist/search?q=export_TF&amp;type=Code">exported as a zip file</a> and can be loaded from a file or URL (see <em>Advanced options</em> below).</li>
 </ul>
 <p>If necessary, one can change/disable the percentile-based input image normalization.</p></td>
 </tr>
@@ -88,6 +94,10 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
 Example of running the plugin, showing the returned label image and ROIs overlaid on the input image (check `Show All` in the ROI Manager):
 
 ![StarDist\_usage\_output.png](/images/pages/StarDist_usage_output.png "StarDist_usage_output.png")"
+
+### Scripting/Batch-Processing
+
+Please have a look at the [Fiji/Jython script batch-processing example](https://gist.github.com/maweigert/8dd6ef139e1cd37b2307b35fb50dee4a) that runs stardist on all files of a folder.
 
 ## Citation
 

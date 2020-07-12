@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='jiri-janacek' repo='biomat' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Biomat' maintainer='[Jiří Janáček](mailto:jiri.janacek_at_fgu.cas.cz)' author='Jiří Janáček' source=source released='03/26/2019' latest-version='03/26/2019' status='' website='' %}
+{% include info-box software='ImageJ' name='Biomat' maintainer='[Jiří Janáček](mailto:jiri.janacek_at_fgu.cas.cz)' author='Jiří Janáček' source=source released='03/26/2019' latest-version='02/24/2020' status='' website='' %}
 
 ## Plugins for 3D image preprocessing.
 
@@ -41,5 +41,13 @@ Example: [Image of capillaries in adipose tissue](https://imagej.net/_images/e/e
 Example: [Image of capillaries in embryonic heart](https://imagej.net/_images/e/e9/Capillaries_heart.zip).
 
   - {% include bc content='Plugins | Biomat | Vector Line 3D Filter'%} with parameters "sigma"= 4 pixels, "scale number"= 2
+
+## Plugins for evaluation of 2D images using heat equation.
+
+**2D Tensor Color Coding** - standard color coding of 2D tensor image. Symmetric tensor is coded as channels of 32 bit image stacks.
+
+**2D Heat Kernel Tensor** - second order moments of heat kernel calculated from 8 bit binary image.
+
+**2D Tensor Statistics** - summary of tensor image (in ROI). "Value" is average trace of the tensor, "shape" is the ratio of its eigenvalues and "angle" of the first eigenvector is measured counterclockwise from the horizontal axis.
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Filtering](Category:Filtering "wikilink")

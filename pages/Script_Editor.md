@@ -4,8 +4,10 @@ title: Script Editor
 breadcrumb: Script Editor
 layout: page
 author: test author
-categories: 
+categories: Scripting
 description: test description
 ---
 
-1.  REDIRECT [Script\_Editor](Script_Editor "wikilink")
+1.  REDIRECT [Using\_the\_Script\_Editor](Using_the_Script_Editor "wikilink")
+
+[Category:Scripting](Category:Scripting "wikilink")

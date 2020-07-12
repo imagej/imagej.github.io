@@ -41,8 +41,16 @@ Either put the code of the macro in the file macro\>StartupMacros.ijm (or Startu
 The code of the macro must declare a keyboard shortcut in square bracket as such
 
     macro "Macro 1 [1]" {
-        print("The user pressed '1'");
+        print("The user pressed '1' on the top row of the keyboard");
         } 
+    
+    macro "Macro 1.2 [n1]" {
+        print("The user pressed '1' on the numerical keypad");
+        } 
+    
+    macro Macro 1.3 [&1]{
+        print("The user pressed '1' either on the numerical keyboard or on the top row of the keyboard. This is new since ImageJ v1.53a, thanks to Norbert Vischer.")
+    }
     
     macro "Macro 2 [h]" {
        print ("the user pressed 'h'");
@@ -53,8 +61,6 @@ The code of the macro must declare a keyboard shortcut in square bracket as such
       } 
 
 The key defined in square bracket is case sensitive \! If a capital letter is used then the shortcut is "shift + key".
-
-For digit, the shortcut is functional with the row of digits at the top of the keyboard. It might not work with the keypad on the right.
 
 ### Option 2: Save the macro(s) as a toolset
 

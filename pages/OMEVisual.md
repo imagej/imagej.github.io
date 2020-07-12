@@ -18,7 +18,7 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='hadim' repo='OMEVisual' %}
+{% include github org='fiji' repo='OMEVisual' %}
 {% endcapture %}
 {% include info-box name='OMEVisual' logo='' software='Fiji' author=author maintainer=maintainer source=source released='08/05/2016' status='v1.0.1, stable' category='' %}{% include toc%}
 
@@ -48,7 +48,7 @@ Please note that :
 
 ## Related links
 
-  - Source code on GitHub : https://github.com/hadim/OMEVisual
+  - Source code on GitHub : https://github.com/fiji/OMEVisual
 
 ## Authors
 

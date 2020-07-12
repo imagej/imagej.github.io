@@ -22,7 +22,7 @@ description: test description
 {% endcapture %}
 {% include info-box software='Fiji' name='3Dscript' maintainer=maintainer author=author source=source status='active' released='January 2019' category='[Visualization](:Category:Visualization "wikilink"), [:Category:Plugins](:Category:Plugins "wikilink")' %}
 
-**3Dscript** - Create high-quality 3D/4D animations using a natural-language based syntax
+![3Dscript-Logo.png](/images/pages/3Dscript-Logo.png "3Dscript-Logo.png")" **3Dscript** - Create high-quality 3D/4D animations using a natural-language based syntax
 
 In state-of-the-art 3D rendering and animation software the user typically creates an animation by specifying a number of keyframes. While intuitive, this approach becomes tedious for complex motions like simultaneous rotations around multiple axes, and even worse for accelerated and decelerated motions: The number of required keyframes increases, and creating them becomes hardly reproducible.
 
@@ -40,9 +40,7 @@ In 3Dscript, animations are defined by a syntax based on natural English languag
 
   - Click on Help\>Update...
   - Click on Manage update sites
-  - Click on Add update site
-  - Enter Name: 3Dscript
-  - Enter URL: https://romulus.oice.uni-erlangen.de/updatesite/
+  - Check the box in front of '3Dscript'
   - Click on Close
   - Click on Apply changes
   - Restart Fiji

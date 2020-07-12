@@ -39,9 +39,9 @@ We also distribute a python package for Multi-Template-Matching available on [Py
 # Citations
 
 If you use this plugin for your research please cite:  
-Multi-Template Matching: a versatile tool for object-localization in microscopy images;  
-Laurent SV Thomas, Jochen Gehrig  
-bioRxiv 619338; doi: https://doi.org/10.1101/619338
+Thomas, L.S.V., Gehrig, J.  
+*Multi-template matching: a versatile tool for object-localization in microscopy images.*  
+BMC Bioinformatics 21, 44 (2020). https://doi.org/10.1186/s12859-020-3363-7
 
 # Video Tutorials
 

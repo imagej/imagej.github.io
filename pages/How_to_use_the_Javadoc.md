@@ -21,3 +21,9 @@ And more particulary for
 
   - [ImageJ](https://imagej.nih.gov/ij/developer/api/overview-summary.html)
   - [Fiji](https://javadoc.scijava.org/Fiji/)
+
+## The ImageJ1 API
+
+The diagram below depicts the relation between the different classes composing ImageJ1.
+
+![ImageJ1-API-diagram.jpg](/images/pages/ImageJ1-API-diagram.jpg "ImageJ1-API-diagram.jpg")"

@@ -36,6 +36,10 @@ To test the plugin, use the data: File \> Open Samples \> Tracks for Trackmate. 
 
 ![SpotIntensityAnalysisScreenshot.png](/images/pages/SpotIntensityAnalysisScreenshot.png "SpotIntensityAnalysisScreenshot.png")" ![SpotIntensityAnalysisTable.png](/images/pages/SpotIntensityAnalysisTable.png "SpotIntensityAnalysisTable.png")"
 
+## Common Problems
+
+When the plugin does not work on your stack, or if it only works on the first image, make sure that ImageJ sees your stack as a time-lapse and not as a Z-stack. To do so, go to Image \> Properties, and make sure that the number of Slices is 1, and the number of Frames is whatever the length of your stack. If that is not the case, change the numbers in the dialog.
+
 ## History
 
   - 2018-01-18 - Version 0.3. Updated to match changes in jfreechart library  

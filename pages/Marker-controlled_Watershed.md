@@ -73,6 +73,7 @@ You should now find the plugin under the sub-menu {% include bc content='Plugins
 
 ## See also
 
+  - [Interactive Marker-controlled Watershed](Interactive_Marker-controlled_Watershed "wikilink"), same idea as this plugin but with user-defined seed points.
   - [Morphological Segmentation](Morphological_Segmentation "wikilink"), a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
   - [Classic Watershed](Classic_Watershed "wikilink"), plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
   - [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.

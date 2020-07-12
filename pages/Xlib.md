@@ -10,7 +10,7 @@ description: test description
 
 ## 'Xlib' plugins
 
-{% include info-box software='ImageJ / Fiji plugins' name='Xlib' maintainer='Beat Münch' author='Beat Münch' filename='[xlib\_.jar](ftp://ftp.empa.ch/pub/empa/outgoing/BeatsRamsch/lib/xlib_.jar)' released='01.06.2015' latest-version='01.10.2019' status='maintained actively as of October 2019' category='[Plugins](:Category:Plugins "wikilink")' website='http://wiki.imagej.net/Xlib' %}
+{% include info-box software='ImageJ / Fiji plugins' name='Xlib' maintainer='Beat Münch' author='Beat Münch' filename='install from ImageJ Updater (Help--\>Update--\>Manage update sites--\>Xlib). Takes repository from https://sites.imagej.net/Xlib' released='01.06.2015' latest-version='09.05.2020' status='maintained actively as of May 2020' category='[Plugins](:Category:Plugins "wikilink")' website='http://wiki.imagej.net/Xlib' %}
 
 \_\_TOC\_\_
 

@@ -19,6 +19,7 @@ LOCI plays a very active role in the ImageJ community:
   - LOCI founded the [Bio-Formats](Bio-Formats "wikilink") project, and led the project's development for several years.
   - LOCI regularly funds and hosts [hackathons](hackathons "wikilink") intended to foster community development of [open source](open_source "wikilink") biological software projects.
   - LOCI hosts the `imagej.net` web services, as well as related services including `fiji.sc` and `openspim.org`.
+  - LOCI current funds core [Micro-Manager](Micro-Manager "wikilink") development work.
 
 LOCI is a founding member of the [SciJava](SciJava "wikilink") collaboration, and a partner of the [Open Microscopy Environment consortium](http://openmicroscopy.org/).
 
@@ -26,7 +27,10 @@ LOCI is a founding member of the [SciJava](SciJava "wikilink") collaboration, an
 
   - {% include person content='Eliceiri' %} (PI)
   - {% include person content='Rueden' %} (lead)
+  - {% include person content='marktsuchida' %} (Micro-Manager lead)
+  - {% include person content='Hinerm' %} (developer, Sep 2010-Jun 2016, Jun 2020-current)
   - {% include person content='Etarena' %} (developer)
+  - {% include person content='elevans' %} (developer)
   - {% include person content='gselzer' %} (developer, [ImageJ Ops](ImageJ_Ops "wikilink"))
   - {% include person content='Xanthorapedia' %} (developer, [FLIMJ](FLIMJ "wikilink"))
 
@@ -35,7 +39,6 @@ LOCI is a founding member of the [SciJava](SciJava "wikilink") collaboration, an
   - {% include person content='Awalter2' %} (Sep 2014-May 2018)
   - {% include person content='Leon' %} (Sep 2015-May 2017)
   - {% include person content='Alecneevel' %} (Jul 2015-Jan 2017)
-  - {% include person content='Hinerm' %} (Sep 2010-Jun 2016)
   - {% include person content='Schindelin' %} (Sep 2011-Nov 2014)
   - {% include person content='Grislis' %} (Jan 2010-Dec 2013)
   - {% include person content='Bdezonia' %} (Jan 2010-Nov 2013)

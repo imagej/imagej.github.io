@@ -11,10 +11,10 @@ txt_capture_start = "%HH%"
 txt_capture_start_end = txt_liquid_linebreak_end
 txt_capture_end = "%JJ%"
 
-template_regex = r'(\{\{[\n ]*([A-Za-z0-9_]*)[ \n]*\|?[ \n]*(([\s\S]*?))\}\})'
+template_regex = r'(((?<=\n)[ ]*)*(?<!<nowiki>)\{\{[\n ]*([A-Za-z0-9_]*)[ \n]*\|?[ \n]*(([\s\S]*?))\}\})'
 template_parameter_regex = r'(\w+([ ]\w+)*)[ ]*=[ ]*([^|]*)'
 include_regex = r'((\n )*\{\%[\n ]*include\ ([^\ \n]*)([^\%]*)\%\})'
-include_shadowed_regex = r'(' + txt_include_start + '.+?(?=' + txt_liquid_end + ')' + txt_liquid_end + ")"
+include_shadowed_regex = r'(' + txt_include_start + '.+?(?=(' + txt_liquid_linebreak_end + '|' + txt_liquid_end + '))(' + txt_liquid_linebreak_end + '|' + txt_liquid_end + '))'
 link_with_vertical_bar_regex = r'(\[\[[^\]]*\|[^\]]*\]\])'
 
 global_shadows = [
@@ -122,6 +122,7 @@ def process_file(str_content):
     # fix youtube template
     content_tmp = re.sub(r'{{[\\]*#widget:YouTube\|id=([\w\d\-_]*)[a-z=|\d]*}}',
                          r'' + txt_include_start + 'youtube url' + txt_param_start + 'https://www.youtube.com/embed/\1' + txt_param_end + txt_liquid_end, content_tmp)
+    content_tmp = re.sub(r'{{[\\]*#widget:Vimeo\|[^}]*}}', r'TODO VIMEO WIDGET', content_tmp)
     # TODO parse flash template?!, removing for now because it creates liquid issues
     content_tmp = re.sub(r'{{[\\]*#widget:flash\|[^}]*}}', r'TODO FLASH WIDGET', content_tmp)
     # TODO parse google spreadsheet template, removing for now because it creates liquid issues
@@ -141,6 +142,10 @@ def process_file(str_content):
     content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\]\]',
                          r'[[File:\1 |\3|link=\2 ]]', content_tmp)
 
+    content_tmp = content_tmp.replace("{{-}}", "")
+    content_tmp = content_tmp.replace("{{}}", "")
+    content_tmp = content_tmp.replace("{{!}}", "")
+
     return content_tmp
 
 
@@ -155,8 +160,8 @@ def replace_template(document_content):
     pattern = re.compile(template_regex)
     for match in re.findall(pattern, document_content):
         template_full = match[0]
-        template_name = match[1]
-        template_content = match[2]
+        template_name = match[2]
+        template_content = match[3]
         document_content, found_sub = replace_template_match(document_content, template_full, template_name, template_content)
         if found_sub:
             # in the template was another template and got replaced
@@ -167,12 +172,12 @@ def replace_template(document_content):
 
 def replace_template_match(document_content, match_content, template_name, template_content):
     # first check if another template is in the content of the matched template
-    content_remove_first_bracket = match_content[2:]
+    content_remove_first_bracket = match_content.strip()[2:]
     pattern = re.compile(template_regex)
     found_sub_template = False
     for match in re.findall(pattern, content_remove_first_bracket):
         # inside template found, try to convert it..
-        _content = replace_template_match(document_content, match[0], match[1], match[2])[0]
+        _content = replace_template_match(document_content, match[0], match[2], match[3])[0]
         if not _content == document_content:
             document_content = _content
             found_sub_template = True
@@ -183,7 +188,7 @@ def replace_template_match(document_content, match_content, template_name, templ
     template_name = fix_template_name(template_name)
     template_content.strip()
 
-    if len(template_name) == 1 or template_name.isdigit():
+    if len(template_name) < 2 or template_name.isdigit():
         # not a template
         return document_content, False
 
@@ -245,8 +250,8 @@ def match_content_parameters(template_content):
     for match in re.findall(include_pattern, template_content):
         idx += 1
         shadow = "___SHADOW" + str(idx) + "___"
-        shadows_include.append((shadow, match))
-        template_content = template_content.replace(match, shadow)
+        shadows_include.append((shadow, match[0]))
+        template_content = template_content.replace(match[0], shadow)
 
     # links with vertical bars make it hard to convert the parameters, so we are shadowing them too
     link_with_vertical_bar_pattern = re.compile(link_with_vertical_bar_regex)

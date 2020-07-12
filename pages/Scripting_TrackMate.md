@@ -42,23 +42,29 @@ Here is an example of full tracking process, using the easy image found in the [
 <!-- end list -->
 
 ``` python
+
+import sys
+
+from ij import IJ
+from ij import WindowManager
+
 from fiji.plugin.trackmate import Model
 from fiji.plugin.trackmate import Settings
 from fiji.plugin.trackmate import TrackMate
 from fiji.plugin.trackmate import SelectionModel
 from fiji.plugin.trackmate import Logger
 from fiji.plugin.trackmate.detection import LogDetectorFactory
-from fiji.plugin.trackmate.tracking.sparselap import SparseLAPTrackerFactory
 from fiji.plugin.trackmate.tracking import LAPUtils
-from ij import IJ
+from fiji.plugin.trackmate.tracking.sparselap import SparseLAPTrackerFactory
+from fiji.plugin.trackmate.providers import SpotAnalyzerProvider
+from fiji.plugin.trackmate.providers import EdgeAnalyzerProvider
+from fiji.plugin.trackmate.providers import TrackAnalyzerProvider
 import fiji.plugin.trackmate.visualization.hyperstack.HyperStackDisplayer as HyperStackDisplayer
 import fiji.plugin.trackmate.features.FeatureFilter as FeatureFilter
-import sys
-import fiji.plugin.trackmate.features.track.TrackDurationAnalyzer as TrackDurationAnalyzer
    
 # Get currently selected image
-#imp = WindowManager.getCurrentImage()
-imp = IJ.openImage('https://fiji.sc/samples/FakeTracks.tif')
+imp = WindowManager.getCurrentImage()
+# imp = IJ.openImage('https://fiji.sc/samples/FakeTracks.tif')
 imp.show()
    
    
@@ -103,15 +109,26 @@ settings.trackerFactory = SparseLAPTrackerFactory()
 settings.trackerSettings = LAPUtils.getDefaultLAPSettingsMap() # almost good enough
 settings.trackerSettings['ALLOW_TRACK_SPLITTING'] = True
 settings.trackerSettings['ALLOW_TRACK_MERGING'] = True
-   
-# Configure track analyzers - Later on we want to filter out tracks 
-# based on their displacement, so we need to state that we want 
-# track displacement to be calculated. By default, out of the GUI, 
-# not features are calculated. 
-   
-# The displacement feature is provided by the TrackDurationAnalyzer.
-   
-settings.addTrackAnalyzer(TrackDurationAnalyzer())
+
+# Add ALL the feature analyzers known to TrackMate, via
+# providers. 
+# They offer automatic analyzer detection, so all the 
+# available feature analyzers will be added. 
+
+spotAnalyzerProvider = SpotAnalyzerProvider()
+for key in spotAnalyzerProvider.getKeys():
+    print( key )
+    settings.addSpotAnalyzerFactory( spotAnalyzerProvider.getFactory( key ) )
+
+edgeAnalyzerProvider = EdgeAnalyzerProvider()
+for  key in edgeAnalyzerProvider.getKeys():
+    print( key )
+    settings.addEdgeAnalyzer( edgeAnalyzerProvider.getFactory( key ) )
+
+trackAnalyzerProvider = TrackAnalyzerProvider()
+for key in trackAnalyzerProvider.getKeys():
+    print( key )
+    settings.addTrackAnalyzer( trackAnalyzerProvider.getFactory( key ) )
    
 # Configure track filters - We want to get rid of the two immobile spots at 
 # the bottom right of the image. Track displacement must be above 10 pixels.
@@ -1011,6 +1028,7 @@ from java.awt import Color
 from ij import WindowManager
 from ij.measure import ResultsTable
 from ij.plugin.frame import RoiManager
+from ij import IJ
 
 from fiji.plugin.trackmate import Logger
 from fiji.plugin.trackmate import Model
@@ -1062,7 +1080,7 @@ def spots_from_results_table( results_table, frame_interval ):
         quality = i # Store the line index, to later retrieve the ROI.
         spot = Spot( x, y, z, radius, quality )
         spot.putFeature( 'POSITION_T', t )
-        spots.add( spot, int( frame ) )
+        spots.add( spot, int( frame - 1 ) )
         
     return spots
 
@@ -1130,8 +1148,8 @@ def create_trackmate( imp, results_table ):
     # Configure tracker
     settings.trackerFactory = SparseLAPTrackerFactory()
     settings.trackerSettings = LAPUtils.getDefaultLAPSettingsMap()
-    settings.trackerSettings[ 'LINKING_MAX_DISTANCE' ]      = 10.0
-    settings.trackerSettings[ 'GAP_CLOSING_MAX_DISTANCE' ]  = 10.0
+    settings.trackerSettings[ 'LINKING_MAX_DISTANCE' ]      = 20.0
+    settings.trackerSettings[ 'GAP_CLOSING_MAX_DISTANCE' ]  = 20.0
     settings.trackerSettings[ 'MAX_FRAME_GAP' ]             = 3
     
     settings.initialSpotFilterValue = -1.
@@ -1199,7 +1217,7 @@ def display_results_in_GUI( trackmate ):
 
 
 
-def color_rois_by_track( trackmate, rm ):
+def color_rois_by_track( trackmate, rm, results_table ):
     """
     Colors the ROIs stored in the specified ROIManager rm using a color
     determined by the track ID they have.
@@ -1211,9 +1229,13 @@ def color_rois_by_track( trackmate, rm ):
     generated. So any changes to the ROIManager or the ResultsTable is 
     likely to break things.
     """
+
+    rt = ResultsTable.getResultsTable()
     model = trackmate.getModel()
     track_colors = {}
+    track_idds = {}
     track_indices = [] 
+    
     for i in model.getTrackModel().trackIDs( True ):
         track_indices.append( i )
     shuffle( track_indices )
@@ -1223,8 +1245,10 @@ def color_rois_by_track( trackmate, rm ):
         color = Jet.getPaint( float(index) / ( len( track_indices) - 1 ) )
         track_colors[ track_id ] = color
         index = index + 1
-    
+
+
     spots = model.getSpots()
+    spotN=0;
     for spot in spots.iterable( True ):
         q = spot.getFeature( 'QUALITY' ) # Stored the ROI id.
         roi_id = int( q )
@@ -1238,8 +1262,23 @@ def color_rois_by_track( trackmate, rm ):
             color = track_colors[ track_id ] 
             
         roi.setFillColor( color )
+        
+        roiF=roi.getPosition()
+        #rename ROI
+        if track_id is None:
+            rm.rename(roi_id,"trNaN_f"+str(roiF)+"_"+roi.getName())
+        else:
+            rm.rename(roi_id,"tr"+str(track_indices[track_id])+"_f"+str(roiF)+"_"+roi.getName())
+        #addResults table entry
+        if track_id is None:
+            rt.setValue("TrackN",roi_id, "NaN")
+        else:
+            rt.setValue("TrackN",roi_id, track_indices[track_id])
 
+        spotN=spotN+1
 
+    results_table.updateResults()
+    rt.show("Results")
 
 #------------------------------
 #           MAIN 
@@ -1274,5 +1313,5 @@ display_results_in_GUI( trackmate )
 
 # Color ROI by track ID!
 rm = RoiManager.getInstance()
-color_rois_by_track( trackmate, rm )
+color_rois_by_track( trackmate, rm, results_table )
 ```

@@ -376,7 +376,7 @@ parInit();
     cakeTask = parAddTask("Get the cake.");
   }
   getPieceTask = parAddTask("Get the cake pieces.");
-  annoucementTask = parAddTask("Anounce the pieces you got.");
+  annoucementTask = parAddTask("Announce the pieces you got.");
   parReportTasks();
 
   parReportProgress(introductionTask,0);
@@ -434,12 +434,13 @@ Many of the functions have an MPI equivalent, this will also be listed in the ta
 
 Parallelization functions
 
-| Function name     | Input                                         | Output               | Description                                                                     |
-| ----------------- | --------------------------------------------- | -------------------- | ------------------------------------------------------------------------------- |
-| parReportProgress | Task id (ex 8), progress percentage (ex 85 %) | None                 | Outputs progress in percentage for a specified task in the node’s progress log. |
-| parReportText     | Text                                          | None                 | Outputs given text to the node’s log.                                           |
-| parAddTask        | Description                                   | Index of added task. | Creates a new task with the description provided.                               |
-| parReportTasks    | None                                          | None                 | Outputs all task ids with their descriptions.                                   |
+| Function name     | Input                                         | Output               | Description                                                                                            |
+| ----------------- | --------------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------ |
+| parReportProgress | Task id (ex 8), progress percentage (ex 85 %) | None                 | Outputs progress in percentage for a specified task in the node’s progress log.                        |
+| parReportText     | Text                                          | None                 | Outputs given text to the node’s log.                                                                  |
+| parAddTask        | Description                                   | Index of added task. | Creates a new task with the description provided.                                                      |
+| parReportTasks    | None                                          | None                 | Outputs all task ids with their descriptions.                                                          |
+| parEnableTiming   | None                                          | None                 | Enables timing each task in the progress logs. It measures time passed to reach 100% from 0% progress. |
 
 Progress log functions
 

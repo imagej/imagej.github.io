@@ -440,6 +440,7 @@ At GitHub you will find an [example project](https://github.com/m-entrup/imagej-
   - [ImageJ2 Python Scripts](ImageJ2_Python_Scripts "wikilink")
   - [A Fiji Scripting Tutorial by Albert Cardona](https://www.ini.uzh.ch/~acardona/fiji-tutorial/)
   - [Jython scripting cookbook](http://wiki.cmci.info/documents/120206pyip_cooking/python_imagej_cookbook)
+  - [ImageJ tutorials repository](https://github.com/imagej/tutorials/tree/master/howtos/src/main/java/howto)
 
 ## References
 

@@ -8,6 +8,13 @@ categories: TrakEM2,Tutorials
 description: test description
 ---
 
+## Video tutorial on 3D reconstruction from serial section
+
+TODO GOOGLE SPREADSHEET WIDGET
+
+{% include clear%}
+
+
 ## Video tutorial on the basic recipe for TrakEM2
 
 ![TrakEM2 basic tutorial](/images/pages/Screenshot-TrakEM2_basics_tutorial.png "TrakEM2 basic tutorial")"
@@ -112,13 +119,6 @@ In the tutorial, the layers are imported following an existing set of layers, i.
 ![TrakEM2 saving a project](/images/pages/Screenshot-TrakEM2-save-project.png "TrakEM2 saving a project")"
 
   - [Saving a TrakEM2 project](TrakEM2_saving_project_tutorial "wikilink") into an .XML file.
-
-{% include clear%}
-
-
-## Video tutorial on 3D reconstruction from serial section
-
-TODO GOOGLE SPREADSHEET WIDGET
 
 ## See Also
 

@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% include menu-help%}
-Please report bugs via the [Image.sc Forum](Image.sc_Forum "wikilink"):
+Please report bugs via the [Image.sc Forum](https://forum.image.sc/):
 
   - Start a new topic in the "Usage & Issues" category.
   - Add the `imagej` label, and any other relevant labels.

@@ -10,40 +10,26 @@ name,failing component,reason
 2D_Histogram,pandoc,
 Adelson's_Squares,reader,
 Alida,pandoc,
-Batch_Processing,liquid,has an include tag in a title
+Architecture,reader,
 BigDataServer,pandoc,
 Deconvolution,pandoc,
 Description_of_ImageJ's_plugin_architecture,reader,
-Developing_ImageJ_in_Eclipse,liquid,
-Developing_Plugins_for_ImageJ_1.x,liquid,
 DiameterJ,reader,
 DokuWiki_Migration,liquid,
-Feature_Extraction,liquid,
 Fiji_Contribution_requirements,pandoc,
 Fiji's_Menu,reader,
 Fiji%2FYouTube_Channel,liquid,youtube playlist
 GSoC_2011_Ideas,reader,
-Hackathon,liquid,
-Image_Intensity_Processing,liquid,
-ImageJ,liquid,
-Landmark_Correspondences,liquid,
-MATLAB_Scripting,liquid,
-Miji,liquid,
+ImageJ,liquid,timline needs to be replaced before conversion
 Minimum_Splits_and_Mergers_Warping_error,liquid,indendation in cite block converts to code block
-Ops_Deconvolution,liquid,has formulas messing with liquid
+Ops_Deconvolution,liquid,math formulas look like liquid
 Overview_of_Fiji's_source_code,reader,
-Particle_Analysis,liquid,
-Rand_error,liquid,
-Script_Parameters,liquid,
+Rand_error,liquid,math formulas
 Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012,liquid,line break in cite creates code block
 Shape_Index_Map,reader,
-Sholl_Analysis,liquid,
-Strahler_Analysis,liquid,
-Test_Block_Matching_Parameters,liquid,
+Sholl_Analysis,liquid,intended lines create weird conversions
 Topology_preserving_warping_error,liquid,line break in cite creates code block
-TrakEM2_Scripting,liquid,
-Tree_and_Menu_Demo,liquid,
+TrakEM2_Scripting,liquid, whitespace before list items -> code blocks
+Tree_and_Menu_Demo,liquid,mediawiki demo page
 Versioning,pandoc,
 VisBio_Fiji_plugin,reader,
-Temporal-Color_Code,liquid,
-

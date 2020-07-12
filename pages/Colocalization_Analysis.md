@@ -31,7 +31,7 @@ Other methods include ICCS (image cross correlation spectroscopy) and a derivati
 
 #### Object-based overlap analysis
 
-This cookbook does not cover object-based overlap analysis, since it requires segmenting the image into objects and background, and that is a whole branch of image processing in itself. See the [JACoP imageJ plugin](https://imagej.net/plugins/track/jacop.html) for object based methods.
+This cookbook does not cover object-based overlap analysis, since it requires segmenting the image into objects and background, and that is a whole branch of image processing in itself. See the [JACoP](JACoP "wikilink") imageJ plugin for object based methods.
 
 #### Do state the spatial resolution explicitly\!
 
@@ -69,7 +69,11 @@ If you like, you can change the look up tables of the images (LUTs) so one is "g
 
 ![SplitChannels.png](/images/pages/SplitChannels.png "SplitChannels.png")"
 
-## Colocalization analysis using Coloc 2
+## ImageJ plugins for colocalization analysis
+
+There are several plugins available for performing colocalization analysis. In addition to the options described below, see also the [index of pages related to colocalization](:Category:Colocalization "wikilink").
+
+### Coloc 2
 
 Coloc 2 implements and performs the pixel intensity correlation over space methods of [Pearson](wikipedia:Pearson_product-moment_correlation_coefficient "wikilink"), [Manders](Media:Manders.pdf "wikilink"), [Costes](Media:Costes_etalColoc.pdf "wikilink"), [Li](Media:LietAlColoc.pdf "wikilink") and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 
@@ -77,15 +81,43 @@ None of this gives sensible results unless you have your imaging hardware set up
 
 This plugin supersedes the [Colocalization Threshold](Colocalization_Threshold "wikilink") and [Colocalization Test](Colocalization_Test "wikilink") plugins, which unfortunately were buggy and hard to maintain. So we started from scratch with a carefully planned and designed new plugin. While the old plugins are described below as well, we recommend that you use Coloc 2 instead.
 
-### What is Coloc 2
-
-Coloc 2 is a plugin that uses the new ImgLib image data container library for image processing, and implements the above methods in a pixel data type (8, 16, 32-bit) independent, modular and easily extensible way. The source code has unit tests to detect if changes to the source code break the maths. It should be easy to add new methods since the plugin is designed with that in mind.
-
 One main feature of Coloc 2 is the standardised PDF output, which is intended to make the results of different colocalization experiments comparable.
 
-### How to use Coloc 2
-
 Please see the [Coloc2](Coloc2 "wikilink") page for complete instructions on using the Coloc 2 plugin, including common pitfalls of the pixel intensity spatial correlation methods that it employs.
+
+### JaCoP
+
+[JaCoP](JaCoP "wikilink") is a compilation of co-localization tools:
+
+  - Calculating a set of commonly used co-localization indicators:
+
+<!-- end list -->
+
+  -   - Pearson's coefficient
+      - Overlap coefficient
+      - k1 & k2 coefficients
+      - Manders' coefficient
+
+  - Generating commonly used visualizations:
+    
+      - Cytofluorogram
+
+  - Having access to more recently published methods:
+    
+      - Costes' automatic threshold
+      - Li's ICA
+      - Costes' randomization
+      - Objects based methods (2 methods: distances between centres and centre-particle coincidence)
+
+All methods are implemented to work on 3D datasets.
+
+See the [JaCoP](JaCoP "wikilink") page for full details.
+
+### Colocalization Finder
+
+The Colocalization Finder plugin displays a correlation diagram (called scatterPlot picture) from two initial pictures having the same size together with a RGB overlap of the original images (called Composite picture).
+
+See the [Colocalization Finder web page](http://punias.free.fr/ImageJ/colocalization-finder.html) for further details.
 
 ## Precautions and notes
 

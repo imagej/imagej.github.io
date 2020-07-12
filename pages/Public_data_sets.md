@@ -82,7 +82,7 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 
 <!-- end list -->
 
-  - [A 3D electron microscopy dataset of rodent brain](http://cvlab.epfl.ch/data/em), courtesy of [Graham Knott](http://people.epfl.ch/graham.knott) and Marco Cantoni at EPFL. In particular, a FIBSEM volume measuring 5x5x5 micrometers and taken from the CA1 hippocampus region of the brain, and imaged at the extraordinary resolution of 5x5x5 nanometers per voxel\! In addition, Aurelien Lucchi from [Pascal Fua](http://people.epfl.ch/pascal.fua/bio?lang=en)'s lab has made available, in the same page, image volumes contaning labels for mitochondria.
+  - [A 3D electron microscopy dataset of rodent brain](https://www.epfl.ch/labs/cvlab/data/data-em/), courtesy of [Graham Knott](http://people.epfl.ch/graham.knott) and Marco Cantoni at EPFL. In particular, a FIBSEM volume measuring 5x5x5 micrometers and taken from the CA1 hippocampus region of the brain, and imaged at the extraordinary resolution of 5x5x5 nanometers per voxel\! In addition, Aurelien Lucchi from [Pascal Fua](http://people.epfl.ch/pascal.fua/bio?lang=en)'s lab has made available, in the same page, image volumes contaning labels for mitochondria.
 
 <!-- end list -->
 
