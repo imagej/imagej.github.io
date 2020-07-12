@@ -6,7 +6,7 @@ categories:
 description: this page demonstrates how to use the github include tag
 ---
 
-==Examples==
+## Examples
 
 Use `path` to link to a file off the repository root:
 

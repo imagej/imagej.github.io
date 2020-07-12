@@ -11,7 +11,12 @@
 
 		<!-- Navigation bar-->
 		{% include nav-bar %}
-		
+
+		<!-- Breadcrumb -->
+		{% include nav-bc %}
+
+		<!-- Page-info -->
+		{% include page-info %}
 
         <section id="page" class="main style1">
             <div class="container">
@@ -19,10 +24,11 @@
 					<h1><strong>{{page.title}}</strong></h1>
 				</header>
 					<div class="box alt"></div>
-						<!-- markdown content pushed here -->
-						<div class="search" id="content">
+						<!-- Page content -->
+						<div id="content" class="browse">
 							{{content}}
 						</div>
+
 		</section>
                     
 		<!-- Footer -->
@@ -30,5 +36,9 @@
 
 		<!-- Scripts -->
 		{% include base-scripts %}
+		{% if page.use_math %}
+			{% include mathjax-scripts %}
+		{% endif %}
+
   </body>
 </html>
