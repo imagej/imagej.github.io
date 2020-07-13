@@ -145,6 +145,14 @@ def get_unused_pages():
     res = []
     for filename in os.listdir(root_in):
         if filename.endswith(".mw"):
+            if filename.startswith("File:"):
+                continue
+            if filename.startswith("Template:"):
+                continue
+            if filename.startswith("MediaWiki:"):
+                continue
+            if filename.startswith("Help:"):
+                continue
             if filename not in converted_pages:
                 res.append(filename)
     return res
