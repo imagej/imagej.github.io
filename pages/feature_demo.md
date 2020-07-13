@@ -4,7 +4,6 @@ breadcrumb: Feature Demo
 layout: page
 author: Edward Evans
 categories: plugins, demo, help
-use_math: true
 description: This page is a feature demo.
 ---
 
@@ -12,36 +11,20 @@ description: This page is a feature demo.
 
 | Action | Link to demo page|
 | : --- : | :---: |
+| Insert the about menu | [about-menu]({{"/pages/demo-about-menu" | relative_url}})
+| Insert conference info | [conference]({{"/pages/demo-conference" | relative_url}})
 | Generate info/details box | [details-box]({{"/pages/demo-details-box" | relative_url}}) | 
 | Insert figure | [figure]({{"/pages/demo-figure" | relative_url}})
 | Link to github files | [github]({{"/pages/demo-github" | relative_url}}) |
 | Insert images | [image]({{"/pages/demo-image" | relative_url}}) |
 | Insert a notice | [info-box]({{"/pages/demo-info-box" | relative_url}})
 | Insert logos | [logo]({{"/pages/demo-logo" | relative_url}}) |
+| Insert menu breadcrumb | [menu-bc]({{"/pages/demo-menu-breadcrumb" | relative_url}}) |
+| Insert math | [math]({{"/pages/demo-math" | relative_url}}) |
 | Insert person details | [person]({{"/pages/demo-person" | relative_url}})
 | Insert a sidebox | [sidebox]({{"/pages/demo-sidebox" | relative_url}})
 | Insert a tech box | [tech-box]({{"/pages/demo-tech-box" | relative_url}})
 | Insert a warning | [warning-box]({{"/pages/demo-warning-box" | relative_url}})
-
-
-<center>
-<h1>Left/Right sidebox</h1>
-</center>
-
-
-
-<center>
-<h1>Math eqations</h1>
-</center>
-
-Note, Because MathJax 3 broke support for MathJax 2 style equations parsed by Kramdown, equations are only recognized by the `$$` tag.
-
-When $$a \ne 0$$ , there are two solutions to $$(ax^2 + bx + c = 0)$$ and they are
-
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
-
-Wow such pretty math!
-
 
 {% include sidebar title="Demo" content="Introduction, |, Left image, Right image, Center image, Fit image, Figure left, Figure right,Figure center, Figure row, Markdown table, YouTube video, Embedded images in table, Math equations, Sidebox, Syntax highlighting, Menu breadcrumbs" %}
 
@@ -123,14 +106,3 @@ def update_progress(progress):
     sys.stdout.write(text)
     sys.stdout.flush()
 ```
-
-{% include anchor content="Menu breadcrumbs" %}
-
-_Black menu breadcrumb_:
-{% include bc color="black" content="Menu1|Menu2|Menu3|Menu4|**Plugin**" %} 
-
-_White menu breadcrumb_:
-{% include bc color="white" content="Menu1|Menu2|Menu3|Menu4|**Plugin**" %} 
-
-_None menu breadcrumb_:
-{% include bc color="none" content="Menu1|Menu2|Menu3|Menu4|**Plugin**" %} 

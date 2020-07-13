@@ -1,1 +1,14 @@
-<div class="conference">{{include.content}}</div>
+<div id="conference" markdown="1">
+
+# {{include.title}}
+
+![{{include.title}}]({{include.image | relative_url}})
+
+## {{include.section}}
+
+- **Location:** {{include.location}}
+- **Dates:** {{include.dates}}
+
+See the [{{include.title}} web site]({{include.link}}) for details!
+
+</div>
