@@ -11,6 +11,7 @@ description: This page is a feature demo.
 
 | Action | Link to demo page|
 | : --- : | :---: |
+| Insert the about menu | [about-menu]({{"/pages/demo-about-menu" | relative_url}})
 | Generate info/details box | [details-box]({{"/pages/demo-details-box" | relative_url}}) | 
 | Insert figure | [figure]({{"/pages/demo-figure" | relative_url}})
 | Link to github files | [github]({{"/pages/demo-github" | relative_url}}) |
