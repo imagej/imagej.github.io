@@ -8,7 +8,7 @@ categories: Conference,News
 description: test description
 ---
 
-![ link=Conference 2015](/images/pages/Imagej-conference-2015.jpg " link=Conference 2015")"
+![ link=Conference 2015](/images/pages/Imagej-conference-2015.jpg " link=Conference 2015")
 
 In early September, the [LOCI](LOCI "wikilink") team in Madison, WI hosted the [2015 ImageJ User & Developer Conference](Conference_2015 "wikilink"). More than 250 people attended a wealth of presentations and workshops given by ImageJ enthusiasts hailing from all over the world.
 

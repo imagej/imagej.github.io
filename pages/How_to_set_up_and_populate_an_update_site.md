@@ -33,13 +33,13 @@ Please note, that the password for the corresponding update site is NOT the one 
 
 start the updater with {% include bc content='Help | Update'%} and click on the *Manage update sites* button:
 
-![Mamed-3.jpg](/images/pages/Mamed-3.jpg "Mamed-3.jpg")"
+![Mamed-3.jpg](/images/pages/Mamed-3.jpg "Mamed-3.jpg")
 
 ### Specifying your existing ImageJ Wiki account
 
 Enter the name of that account and click *OK*:
 
-![Personal-Update-Site-1.png](/images/pages/Personal-Update-Site-1.png "Personal-Update-Site-1.png")"
+![Personal-Update-Site-1.png](/images/pages/Personal-Update-Site-1.png "Personal-Update-Site-1.png")
 
 If your upload password (separate from your wiki password) was not initialized, you will then be asked to provide your wiki password, which will be used to initialize your upload password. The two passwords can differ. This can be source of confusion during setting up of the update.
 
@@ -61,7 +61,7 @@ To create such an update site, post on the [Image.sc Forum](https://forum.image.
 
 If you have an own server or web space with WebDAV, SFTP or SSH access, you can create a directory in that web space and initialize it as an update site, too. Just call the updater with {% include bc content='Help | Update'%} and click the *Manage update sites* button:
 
-![Mamed-3.jpg](/images/pages/Mamed-3.jpg "Mamed-3.jpg")"
+![Mamed-3.jpg](/images/pages/Mamed-3.jpg "Mamed-3.jpg")
 
 Now press the *Add* button, provide a nick name for your update site, the URL of your web space, and *upload information*.
 
@@ -89,7 +89,7 @@ Note that you need to connect with command-line ssh first, to record the finger-
 
 If the update site has not been initialized yet (i.e. if nobody else has initialized that site yet), you will see a dialog like this:
 
-![How\_to\_setup\_a\_plugin\_distribution\_site-6a.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-6a.jpg "How_to_setup_a_plugin_distribution_site-6a.jpg")"
+![How\_to\_setup\_a\_plugin\_distribution\_site-6a.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-6a.jpg "How_to_setup_a_plugin_distribution_site-6a.jpg")
 
 Just click *OK* and let the updater upload an empty file index (it is stored in the file *db.xml.gz* which is also called the *database* in the documentation of the updater).
 
@@ -101,7 +101,7 @@ Note: you cannot simply copy files to your web space; the updater would miss all
 
 First, start the [updater](updater "wikilink"):
 
-![How\_to\_setup\_a\_plugin\_distribution\_site-1.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")"
+![How\_to\_setup\_a\_plugin\_distribution\_site-1.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
 
 Click on the *Manage update sites* button and verify:
 
@@ -110,7 +110,7 @@ Click on the *Manage update sites* button and verify:
 
 For example:
 
-![Personal-Update-Site-7.png](/images/pages/Personal-Update-Site-7.png "Personal-Update-Site-7.png")"
+![Personal-Update-Site-7.png](/images/pages/Personal-Update-Site-7.png "Personal-Update-Site-7.png")
 
 Once your login information is set you can *Close* the update site window.
 
@@ -132,7 +132,7 @@ In this case, the plugin we'll be uploading is contained in *A\_Jolly\_Useful\_P
 
 Select the file to upload, click under the *Stats/Action* column, or right-click (on MacOSX, {% include key content='Ctrl' %}+{% include key content='click' %}) in any column, for the context menu and select *Upload to <update site name>*.
 
-![Upload-to-update-site.png](/images/pages/Upload-to-update-site.png "Upload-to-update-site.png")"
+![Upload-to-update-site.png](/images/pages/Upload-to-update-site.png "Upload-to-update-site.png")
 
 {% include info-box content='The ""Upload to <update site name>"" option is only available if you entered your [wiki credentials](#Start_the_updater_and_check_your_update_site "wikilink") and no other changes are pending. Be aware that the password for the update site [""is not"" your Wiki password](Update_site_FAQ#How_do_I_set_a_password_for_my_personal_update_site.3F "wikilink"). This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the ""View changes"" view and resolve any pending changes - e.g. by updating or reverting to """Keep as-is""".' %}
 
@@ -142,7 +142,7 @@ When a plugin is selected, a *Details* panel becomes available. The plugin's dep
 
 You can also manually enter or edit any information in the *Details* panel:
 
-![How\_to\_setup\_a\_plugin\_distribution\_site-15.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-15.jpg "How_to_setup_a_plugin_distribution_site-15.jpg")"
+![How\_to\_setup\_a\_plugin\_distribution\_site-15.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-15.jpg "How_to_setup_a_plugin_distribution_site-15.jpg")
 
 {% include info-box content='The ""Details"" panel can only be edited if you have entered upload credentials for the appropriate update site. After modifying the ""Details"" panel you can mark the jar for upload, even though the jar contents itself has not changed.' %}
 
@@ -154,7 +154,7 @@ Finally, click *Apply changes (upload)* to upload your plugin to the server and 
 
 Check that your plugins are now registered as ImageJ plugins by selecting the *View files of the '\[your site name here\]' site* view option:
 
-![UpdaterFinalScreen.jpg](/images/pages/UpdaterFinalScreen.jpg "UpdaterFinalScreen.jpg")"
+![UpdaterFinalScreen.jpg](/images/pages/UpdaterFinalScreen.jpg "UpdaterFinalScreen.jpg")
 
 That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [add your update site](How_to_follow_a_3rd_party_update_site "wikilink") to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their ImageJ installations just like the standard ImageJ plugins.  
 For even more visibility and practicability, you can ask to have your update site listed in the Fiji Updater (see section below).

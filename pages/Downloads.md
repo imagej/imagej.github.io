@@ -14,15 +14,7 @@ description: test description
 
 <div style="width: 440px">
 
-{% include box bgcolor='white' text='
-
-<center>
-
-![Imagej2-download-icon.png](/images/pages/Imagej2-download-icon.png "Imagej2-download-icon.png")"
-
-</center>
-
-' %}
+{% include box bgcolor='white' text='![Imagej2-download-icon.png](/images/pages/Imagej2-download-icon.png "Imagej2-download-icon.png")' %}
 
 </div>
 

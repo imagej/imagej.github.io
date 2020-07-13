@@ -23,7 +23,7 @@ Some microscope models (e.g., Biorad PIC, and Zeiss LSM confocal image files) wi
 
 In the case that the files have no calibration, you can apply the calibration using images of a stage micrometer with the same settings as your experiment. These settings include camera binning, frame size, objective, confocal zoom, etc. Then the calibration can be applied using "*Analyze/Set Scale*" (see below). Spatial calibration can also be found and set in the "*Image/Properties*" dialog. The "*Microscope Scale*" plugin is another alternative and can be customized using a drop-down box of objectives to apply spatial calibrations.
 
-![set\_scale\_plugin.png](/images/pages/set_scale_plugin.png "set_scale_plugin.png")"
+![set\_scale\_plugin.png](/images/pages/set_scale_plugin.png "set_scale_plugin.png")
 
 Sometimes the spatial calibration may be lost after applying an image processing function. In this case, use the original file's spatial calibration (located under "*Image/Properties*") to update the "*Image/Properties*" values of the final, processed image.
 
@@ -31,14 +31,14 @@ There are three ways to reapply spatial calibration: manually via the “*Image/
 
 #### Copy-calibration
 
-![copy\_pixel\_size.png](/images/pages/copy_pixel_size.png "copy_pixel_size.png")"
+![copy\_pixel\_size.png](/images/pages/copy_pixel_size.png "copy_pixel_size.png")
 
 1.  Open the image with the original calibration
 2.  Run the "Copy Pixel Size" plugin.
 3.  In the “*from*" drop-down box select the original image; in the “*to*" box, select the processed image. Click OK.
 4.  In the new dialog, enter a value by which the receiving image has been scaled.
 
-![copy\_pixel\_size\_values.png](/images/pages/copy_pixel_size_values.png "copy_pixel_size_values.png")"
+![copy\_pixel\_size\_values.png](/images/pages/copy_pixel_size_values.png "copy_pixel_size_values.png")
 
 #### Set Scale
 
@@ -71,11 +71,11 @@ Always save your images before adding text. Text color is set via the color pick
 
 Pseudocolored images should be converted to RGB ("*Image/Type/RGB color"*) prior to adding text. The text is “anti-aliased”. This means that instead of being completely white in color, some pixels on the curved edges of letters are averaged with neighboring pixels. This makes these pixels gray and helps the text to appear smoother.
 
-![aliased\_text.png](/images/pages/aliased_text.png "aliased_text.png")"
+![aliased\_text.png](/images/pages/aliased_text.png "aliased_text.png")
 
 Since some of the pixels in anti-aliased text do not have the gray-scale value of 255, some LUTS will display the pixels as other colors such as orange or green. This will lose the smoothing affect from antialiasing.
 
-![antialiased\_lut.png](/images/pages/antialiased_lut.png "antialiased_lut.png")"
+![antialiased\_lut.png](/images/pages/antialiased_lut.png "antialiased_lut.png")
 
 Frame 1 counter text when used with Hot Green LUT.
 
@@ -83,7 +83,7 @@ Another potential problem is that if you use the red or blue LUT then the text w
 
 To avoid this, convert the pseudocolored image from its current format (i.e. *8-bit color*) to an RGB image with “*Image/Type/RGB color*” before adding the text.
 
-![corrected\_lut.png](/images/pages/corrected_lut.png "corrected_lut.png")"
+![corrected\_lut.png](/images/pages/corrected_lut.png "corrected_lut.png")
 
 Text on converted image.
 
@@ -101,7 +101,7 @@ Adding text to a stack is a slightly different process. You can draw a text box 
 
 Open the *Time Stamper2* plugin. From here, you can specify the location, interval, format, and other properties of the time stamp.
 
-![time\_stamper.png](/images/pages/time_stamper.png "time_stamper.png")"
+![time\_stamper.png](/images/pages/time_stamper.png "time_stamper.png")
 
 Alternatively, you can also draw a rectangular ROI at the location and approximate size of the desired counter. The text will, by default, be the same height as the ROI and aligned to its left edge. Note that if the rectangle is drawn on the right side of the image, the text could be cut off on the right in the case that the size is too large.
 

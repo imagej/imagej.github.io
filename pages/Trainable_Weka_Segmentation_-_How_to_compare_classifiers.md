@@ -18,41 +18,41 @@ Most of the information contained here has been extracted from the [WEKA manual 
 
 To get started, open the 2D image or stack you want to work on and launch the [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") plugin (under {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation'%}):
 
-![Screenshot-open-AWS.png](/images/pages/Screenshot-open-AWS.png "Screenshot-open-AWS.png")"
+![Screenshot-open-AWS.png](/images/pages/Screenshot-open-AWS.png "Screenshot-open-AWS.png")
 
 For this tutorial, we used one of the TEM sections from [ Albert Cardona's public data set](public_data_sets "wikilink").
 
-After loading, the main GUI of the plugin will pop up: ![screenshot-AWS-startup.png](/images/pages/screenshot-AWS-startup.png "screenshot-AWS-startup.png")"
+After loading, the main GUI of the plugin will pop up: ![screenshot-AWS-startup.png](/images/pages/screenshot-AWS-startup.png "screenshot-AWS-startup.png")
 
 ### Gathering training samples
 
 First of all, we select the features (filters) that we want to use to perform the segmentation. For that, we will click on "Settings", select the corresponding features on the Settings dialog, and click "OK":
 
-![Screenshot-AWS-tutorial-settings-dialog.png](/images/pages/Screenshot-AWS-tutorial-settings-dialog.png "Screenshot-AWS-tutorial-settings-dialog.png")"
+![Screenshot-AWS-tutorial-settings-dialog.png](/images/pages/Screenshot-AWS-tutorial-settings-dialog.png "Screenshot-AWS-tutorial-settings-dialog.png")
 
 After that, we use the selection tools to trace samples of both classes. By default, the "freehand" line is selected, but you can use any of the available selection tools to mark areas on the image and then add them to any of the classes by click on the "Add to class \[1/2\]" buttons. In our example, we use the two classes to differentiate between membrane areas (in red, class 1) and the rest of the image (in green, class 2):
 
-![Screenshot-AWS-tutorial-select-training-traces.png](/images/pages/Screenshot-AWS-tutorial-select-training-traces.png "Screenshot-AWS-tutorial-select-training-traces.png")"
+![Screenshot-AWS-tutorial-select-training-traces.png](/images/pages/Screenshot-AWS-tutorial-select-training-traces.png "Screenshot-AWS-tutorial-select-training-traces.png")
 
 Once we are satisfied with the amount of samples, we save the data into an ARFF file, the format WEKA understand. For that, we click on "Save data" and select the output path and file name ("data-compare.arff" in our case):
 
-![Screenshot-AWS-tutorial-save-data.png](/images/pages/Screenshot-AWS-tutorial-save-data.png "Screenshot-AWS-tutorial-save-data.png")"
+![Screenshot-AWS-tutorial-save-data.png](/images/pages/Screenshot-AWS-tutorial-save-data.png "Screenshot-AWS-tutorial-save-data.png")
 
 ### Working with the WEKA Experimenter
 
 In order to use the data we just saved for comparing classifiers, we need to open the WEKA Experimenter. For that, we first click on the WEKA button of the plugin GUI (last button of the left panel). Then the Weka GUI Chooser will pop up:
 
-![Screenshot-AWS-tutorial-WEKA-Chooser.png](/images/pages/Screenshot-AWS-tutorial-WEKA-Chooser.png "Screenshot-AWS-tutorial-WEKA-Chooser.png")"
+![Screenshot-AWS-tutorial-WEKA-Chooser.png](/images/pages/Screenshot-AWS-tutorial-WEKA-Chooser.png "Screenshot-AWS-tutorial-WEKA-Chooser.png")
 
 We click on "Experimenter" and the Weka Experiment Environment GUI will pop up:
 
-![Screenshot-AWS-Weka-Experiment-Environment.png](/images/pages/Screenshot-AWS-Weka-Experiment-Environment.png "Screenshot-AWS-Weka-Experiment-Environment.png")"
+![Screenshot-AWS-Weka-Experiment-Environment.png](/images/pages/Screenshot-AWS-Weka-Experiment-Environment.png "Screenshot-AWS-Weka-Experiment-Environment.png")
 
 #### New experiment
 
 In this tutorial we use the "Simple" configuration mode. After clicking *New*, default parameters for an Experiment are defined:
 
-![Screenshot-Weka-Experiment-Environment-Simple-New.png](/images/pages/Screenshot-Weka-Experiment-Environment-Simple-New.png "Screenshot-Weka-Experiment-Environment-Simple-New.png")"
+![Screenshot-Weka-Experiment-Environment-Simple-New.png](/images/pages/Screenshot-Weka-Experiment-Environment-Simple-New.png "Screenshot-Weka-Experiment-Environment-Simple-New.png")
 
 #### Results destination
 
@@ -64,7 +64,7 @@ By default, an ARFF file is the destination for the results output. But you can 
 
 CSV is similar to ARFF, but it can be used to be loaded in an external spreadsheet application. If the file name is left empty a temporary file will be created in the TEMP directory of the system. If one wants to specify an explicit results file, click on *Browse* and choose a filename. In our case, we set the filename to *experiment-compare.arff*:
 
-![Screnshot-AWS-tutorial-save-destination-arff.png](/images/pages/Screnshot-AWS-tutorial-save-destination-arff.png "Screnshot-AWS-tutorial-save-destination-arff.png")"
+![Screnshot-AWS-tutorial-save-destination-arff.png](/images/pages/Screnshot-AWS-tutorial-save-destination-arff.png "Screnshot-AWS-tutorial-save-destination-arff.png")
 
 Click on *Save* and the name will appear in the edit field next to *ARFF file*.
 
@@ -75,7 +75,7 @@ The user can choose between the following three diﬀerent types
   - **Cross-validation (default)** performs stratified cross-validation with the given number of folds.
   - **Train/Test Percentage Split (data randomized)** splits a dataset according to the given percentage into a train and a test file (one cannot specify explicit training and test files in the Experimenter), after the order of the data has been randomized and stratified:
 
-![Screenshot-AWS-tutorial-select-experiment-type.png](/images/pages/Screenshot-AWS-tutorial-select-experiment-type.png "Screenshot-AWS-tutorial-select-experiment-type.png")"
+![Screenshot-AWS-tutorial-select-experiment-type.png](/images/pages/Screenshot-AWS-tutorial-select-experiment-type.png "Screenshot-AWS-tutorial-select-experiment-type.png")
 
   - **Train/Test Percentage Split (order preserved)** because it is impossible to specify an explicit train/test files pair, one can *abuse* this type to *un-merge* previously merged train and test file into the two original files (one only needs to find out the correct percentage).
 
@@ -87,7 +87,7 @@ Additionally, one can choose between *Classification* and *Regression*, dependin
 
 One can add dataset files either with an absolute path or with a relative one. The latter makes it often easier to run experiments on diﬀerent machines, hence one should check *Use relative paths*, before clicking on *Add new...*:
 
-![Screenshot-AWS-tutorial-add-dataset.png](/images/pages/Screenshot-AWS-tutorial-add-dataset.png "Screenshot-AWS-tutorial-add-dataset.png")"
+![Screenshot-AWS-tutorial-add-dataset.png](/images/pages/Screenshot-AWS-tutorial-add-dataset.png "Screenshot-AWS-tutorial-add-dataset.png")
 
 In this example, we open the *albert* directory and choose the *data-compare.arﬀ* dataset.
 
@@ -97,17 +97,17 @@ After clicking *Open* the file will be displayed in the datasets list. If one se
 
 New algorithms can be added via the *Add new...* button. Opening this dialog for the first time, *' ZeroR*' is presented, otherwise the one that was selected last:
 
-![Screenshot-AWS-tutorial-select-algorithm.png](/images/pages/Screenshot-AWS-tutorial-select-algorithm.png "Screenshot-AWS-tutorial-select-algorithm.png")"
+![Screenshot-AWS-tutorial-select-algorithm.png](/images/pages/Screenshot-AWS-tutorial-select-algorithm.png "Screenshot-AWS-tutorial-select-algorithm.png")
 
 With the *Choose* button one can open the *GenericObjectEditor* and choose another classifier:
 
-![Screenshot-AWS-tutorial-select-NaivesBayes.png](/images/pages/Screenshot-AWS-tutorial-select-NaivesBayes.png "Screenshot-AWS-tutorial-select-NaivesBayes.png")"
+![Screenshot-AWS-tutorial-select-NaivesBayes.png](/images/pages/Screenshot-AWS-tutorial-select-NaivesBayes.png "Screenshot-AWS-tutorial-select-NaivesBayes.png")
 
 The *Filter...* button enables one to highlight classifiers that can handle certain attribute and class types. With the *Remove filter* button all the selected capabilities will get cleared and the highlighting removed again.
 
 Additional algorithms can be added again with the *Add new...* button. After setting the classifier parameters, one clicks on *OK* to add it to the list of algorithms. In our example, we add **NaiveBayes**, **SMO**, **VotedPerceptron** and **J48**:
 
-![Screenshot-AWS-tutorial-add-some-algorithms.png](/images/pages/Screenshot-AWS-tutorial-add-some-algorithms.png "Screenshot-AWS-tutorial-add-some-algorithms.png")"
+![Screenshot-AWS-tutorial-add-some-algorithms.png](/images/pages/Screenshot-AWS-tutorial-add-some-algorithms.png "Screenshot-AWS-tutorial-add-some-algorithms.png")
 
 With the *Load options...* and *Save options...* buttons one can load and save the setup of a selected classifier from and to XML. This is especially useful for highly configured classifiers (e.g., nested meta-classifiers), where the manual setup takes quite some time, and which are used often.
 
@@ -117,7 +117,7 @@ One can also paste classifier settings here by right-clicking (or {% include key
 
 For future re-use, one can save the current setup of the experiment to a file by clicking on *Save...* at the top of the window:
 
-![Screenshot-AWS-tutorial-save-setup.png](/images/pages/Screenshot-AWS-tutorial-save-setup.png "Screenshot-AWS-tutorial-save-setup.png")"
+![Screenshot-AWS-tutorial-save-setup.png](/images/pages/Screenshot-AWS-tutorial-save-setup.png "Screenshot-AWS-tutorial-save-setup.png")
 
 By default, the format of the experiment files is the binary format that Java serialization oﬀers. The drawback of this format is the possible incompatibility between diﬀerent versions of Weka. A more robust alternative to the binary format is the XML format.
 
@@ -127,11 +127,11 @@ Previously saved experiments can be loaded again via the *Open...* button.
 
 To run the current experiment, click the *Run* tab at the top of the Experiment Environment window. The current experiment performs 10 runs of Train/Test percentage split (with data randomized) on the TEM image dataset using the **NaiveBayes**, **SMO**, **VotedPerceptron** and **J48** schemes:
 
-![Screenshot-AWS-tutorial-Experiment-Initial-Run.png](/images/pages/Screenshot-AWS-tutorial-Experiment-Initial-Run.png "Screenshot-AWS-tutorial-Experiment-Initial-Run.png")"
+![Screenshot-AWS-tutorial-Experiment-Initial-Run.png](/images/pages/Screenshot-AWS-tutorial-Experiment-Initial-Run.png "Screenshot-AWS-tutorial-Experiment-Initial-Run.png")
 
 Click *Start* to run the experiment:
 
-![Screenshot-AWS-tutorial-experiment-run.png](/images/pages/Screenshot-AWS-tutorial-experiment-run.png "Screenshot-AWS-tutorial-experiment-run.png")"
+![Screenshot-AWS-tutorial-experiment-run.png](/images/pages/Screenshot-AWS-tutorial-experiment-run.png "Screenshot-AWS-tutorial-experiment-run.png")
 
 If the experiment was defined correctly, the 3 messages shown above will be displayed in the *Log* panel. The results of the experiment are saved to the dataset *experiment-compare.arff*.
 
@@ -143,13 +143,13 @@ To analyse the results, select the *Analyse* tab at the top of the Experiment En
 
 Click on *Experiment* to analyse the results of the current experiment:
 
-![Screenshot-AWS-tutorial-Analyse-Result-Experiment.png](/images/pages/Screenshot-AWS-tutorial-Analyse-Result-Experiment.png "Screenshot-AWS-tutorial-Analyse-Result-Experiment.png")"
+![Screenshot-AWS-tutorial-Analyse-Result-Experiment.png](/images/pages/Screenshot-AWS-tutorial-Analyse-Result-Experiment.png "Screenshot-AWS-tutorial-Analyse-Result-Experiment.png")
 
 The number of result lines available (*Got 40 results*) is shown in the *Source* panel. This experiment consisted of 10 runs, for 4 schemes, for 1 dataset, for a total of 40 result lines. Results can also be loaded from an earlier experiment file by clicking *File* and loading the appropriate *.arﬀ* results file.
 
 Select the *Percent correct* attribute from the *Comparison field* and click *Perform test* to generate a comparison of the 4 schemes:
 
-![Screenshot-AWS-tutorial-percentage-correct-test.png](/images/pages/Screenshot-AWS-tutorial-percentage-correct-test.png "Screenshot-AWS-tutorial-percentage-correct-test.png")"
+![Screenshot-AWS-tutorial-percentage-correct-test.png](/images/pages/Screenshot-AWS-tutorial-percentage-correct-test.png "Screenshot-AWS-tutorial-percentage-correct-test.png")
 
 The schemes used in the experiment are shown in the columns and the datasets used are shown in the rows.
 
@@ -159,7 +159,7 @@ The standard deviation of the attribute being evaluated can be generated by sele
 
 Selecting *Number correct* as the *comparison field* and clicking *Perform test* generates the average number correct (out of 975 test patterns - 33% of 2954 patterns in the *segment* dataset).
 
-![Screenshot-AWS-tutorial-analyse-number-correct.png](/images/pages/Screenshot-AWS-tutorial-analyse-number-correct.png "Screenshot-AWS-tutorial-analyse-number-correct.png")"
+![Screenshot-AWS-tutorial-analyse-number-correct.png](/images/pages/Screenshot-AWS-tutorial-analyse-number-correct.png "Screenshot-AWS-tutorial-analyse-number-correct.png")
 
 Clicking on the button for the *Output format* leads to a dialog that lets you choose the precision for the *mean* and the *std. deviations*, as well as the format of the output. Checking the *Show Average* checkbox adds an additional line to the output listing the average of each column. With the *Remove filter* *classnames* checkbox one can remove the filter name and options from processed datasets (filter names in Weka can be quite lengthy). The following formats are supported:
 
@@ -170,7 +170,7 @@ Clicking on the button for the *Output format* leads to a dialog that lets you c
   - Plain text (default)
   - Significance only
 
-![Screenshot-AWS-tutorial-analyse-precision-dialog.png](/images/pages/Screenshot-AWS-tutorial-analyse-precision-dialog.png "Screenshot-AWS-tutorial-analyse-precision-dialog.png")"
+![Screenshot-AWS-tutorial-analyse-precision-dialog.png](/images/pages/Screenshot-AWS-tutorial-analyse-precision-dialog.png "Screenshot-AWS-tutorial-analyse-precision-dialog.png")
 
 To give one more control, the “Advanced setup” allows one to bring up all the options that a result matrix oﬀers. This includes the options described above, plus options like the width of the row names, or whether to enumerate the columns and rows.
 
@@ -178,7 +178,7 @@ To give one more control, the “Advanced setup” allows one to bring up all th
 
 The information displayed in the *Test output* panel is controlled by the currently selected entry in the *Result list* panel. Clicking on an entry causes the results corresponding to that entry to be displayed.
 
-![Screenshot-AWS-tutorial-result-list-analyse.png](/images/pages/Screenshot-AWS-tutorial-result-list-analyse.png "Screenshot-AWS-tutorial-result-list-analyse.png")"
+![Screenshot-AWS-tutorial-result-list-analyse.png](/images/pages/Screenshot-AWS-tutorial-result-list-analyse.png "Screenshot-AWS-tutorial-result-list-analyse.png")
 
 The results shown in the *Test output* panel can be saved to a file by clicking *Save output*. Only one set of results can be saved at a time but Weka permits the user to save all results to the same file by saving them one at a time and using the *Append* option instead of the *Overwrite* option for the second and subsequent saves.
 

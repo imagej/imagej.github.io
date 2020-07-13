@@ -16,7 +16,7 @@ description: test description
 
 ## Purpose
 
-![The ROI Picker tool selected.](/images/pages/ROI_Picker.png "The ROI Picker tool selected.")"
+![The ROI Picker tool selected.](/images/pages/ROI_Picker.png "The ROI Picker tool selected.")
 
 This tool allows clicking to select existing ROIs. Clicking within the bounds of a ROI will select it in the ROI Manager. If multiple ROIs overlap over the clicked area, the union of the ROIs will be selected. Repeated clicks with the tool will then cycle through all individual ROIs in the union.
 

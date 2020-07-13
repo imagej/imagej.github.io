@@ -12,6 +12,6 @@ description: test description
 
 (from the previous tutorial:
 
-![Hippocampal\_CA3\_Interneuron-1.png](/images/pages/Hippocampal_CA3_Interneuron-1.png "Hippocampal_CA3_Interneuron-1.png")"
+![Hippocampal\_CA3\_Interneuron-1.png](/images/pages/Hippocampal_CA3_Interneuron-1.png "Hippocampal_CA3_Interneuron-1.png")
 
 [Category:Tutorials](Category:Tutorials "wikilink")

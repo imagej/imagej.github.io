@@ -22,7 +22,7 @@ The plugin can be used with labelled images, but it also integrates tools for th
 
 Jean-François Gilles, Institute of Biology Paris Seine (France). jean-francois.gilles (at) upmc.fr
 
-Thomas Boudier ![EmailBoudier.png](/images/pages/EmailBoudier.png "EmailBoudier.png")", [Academia Sinica](https://www.sinica.edu.tw/en), Taipei, Taiwan.
+Thomas Boudier ![EmailBoudier.png](/images/pages/EmailBoudier.png "EmailBoudier.png"), [Academia Sinica](https://www.sinica.edu.tw/en), Taipei, Taiwan.
 
 ## Features
 

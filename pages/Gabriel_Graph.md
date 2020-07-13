@@ -18,7 +18,7 @@ description: test description
 
 Gabriel Graph Implementation for ImageJ/Fiji See https://en.wikipedia.org/wiki/Gabriel_graph for implementation
 
-![Gabriel\_Graph\_Dialog.png](/images/pages/Gabriel_Graph_Dialog.png "Gabriel_Graph_Dialog.png")"
+![Gabriel\_Graph\_Dialog.png](/images/pages/Gabriel_Graph_Dialog.png "Gabriel_Graph_Dialog.png")
 
 ## Details
 
@@ -34,7 +34,7 @@ If selected, it will create a new results table with each point, its computed ne
 
 If selected, it will overlay the Gabriel Graph onto the image.
 
-![Result of Plugin on image](/images/pages/Gabriel_Graph_Processing_Example.png "Result of Plugin on image")"
+![Result of Plugin on image](/images/pages/Gabriel_Graph_Processing_Example.png "Result of Plugin on image")
 
 ## Macro Recordable
 

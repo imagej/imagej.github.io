@@ -20,7 +20,7 @@ The DICOM datasets that I open in ImageJ, contain multiple volumes, where each v
 
 ## Features
 
-![DICOM\_open.jpg](/images/pages/DICOM_open.jpg "DICOM_open.jpg")"
+![DICOM\_open.jpg](/images/pages/DICOM_open.jpg "DICOM_open.jpg")
 
 When run as a plugin the plugin will first present a directory browser to select the parent directory of where to start the DICOM dataset search, and then, present this GUI. At the top is the directory of the currently selected item.The second line presents a Pulldown to select an item under the currently selected item. Select an item to display information about the item below the Pulldown. The 'Load Series' button at the bottom is only available when the current item is a series.
 

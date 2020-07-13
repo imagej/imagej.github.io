@@ -22,7 +22,7 @@ The importer can be found in the {% include bc content='Plugins | Tracking | Tra
 
 The example below shows a capture of the GUI when re-importing a CSV file created by TrackMate itself (from the `Analysis` button).
 
-![TrackMateCSVImporter\_01.png](/images/pages/TrackMateCSVImporter_01.png "TrackMateCSVImporter_01.png")"
+![TrackMateCSVImporter\_01.png](/images/pages/TrackMateCSVImporter_01.png "TrackMateCSVImporter_01.png")
 
 Open the target image in Fiji, and browse to the CSV file from the GUI. It will be parsed and the parameter lists will be populated with the headers of the CSV file. Some columns are mandatory (X, Y, frame). If you uncheck `Compute all features?` box, only a minimal set of features will be declared and computed.
 

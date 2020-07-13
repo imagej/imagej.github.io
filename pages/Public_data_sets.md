@@ -31,7 +31,7 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 
   - [Segmented ssTEM stack of neural tissue](http://www.ini.uzh.ch/~acardona/data.html), thanks to Albert Cardona.
 
-![TrakEM2-tree-datastructure.png](/images/pages/TrakEM2-tree-datastructure.png "TrakEM2-tree-datastructure.png")" ![TrakEM2-display-s.jpg](/images/pages/TrakEM2-display-s.jpg "TrakEM2-display-s.jpg")"
+![TrakEM2-tree-datastructure.png](/images/pages/TrakEM2-tree-datastructure.png "TrakEM2-tree-datastructure.png") ![TrakEM2-display-s.jpg](/images/pages/TrakEM2-display-s.jpg "TrakEM2-display-s.jpg")
 
   -   
     30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
@@ -53,7 +53,7 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 
 <!-- end list -->
 
-  - [Sample OME-TIFF data on openmicroscopy.org](http://www.openmicroscopy.org/site/support/file-formats/ome-tiff/ome-tiff-data), thanks to Josh Bembenek.![*C. elegans* embryo coexpressing tubulin histone GFP](/images/pages/tubhiswt4D.png "C. elegans embryo coexpressing tubulin histone GFP")"
+  - [Sample OME-TIFF data on openmicroscopy.org](http://www.openmicroscopy.org/site/support/file-formats/ome-tiff/ome-tiff-data), thanks to Josh Bembenek.![*C. elegans* embryo coexpressing tubulin histone GFP](/images/pages/tubhiswt4D.png "C. elegans embryo coexpressing tubulin histone GFP")
 
 <!-- end list -->
 
@@ -67,7 +67,7 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 <!-- end list -->
 
   -   
-    4D data set, kindly provided by Dirk Sieger and [Francesca Peri](http://www.embl.de/research/units/dev_biology/peri/), EMBL.![Macrophages in 4D](/images/pages/Migrating-macrophages.gif "Macrophages in 4D")"
+    4D data set, kindly provided by Dirk Sieger and [Francesca Peri](http://www.embl.de/research/units/dev_biology/peri/), EMBL.![Macrophages in 4D](/images/pages/Migrating-macrophages.gif "Macrophages in 4D")
     **The challenge**: trace the macrophages in 4D, and measure their shape volumes, surfaces, positions and pixel value intensities.
     The file is a tif hyperstack that can be loaded directly into the [3D Viewer](3D_Viewer "wikilink").
     The key idea is to setup the tracking system so that it requires minimal user interaction, and is general. For example, a user clicks on one cell in one time point, and the program should find all other time points of the same cell. Then the program should learn about the statistics of that cell, and offer the means to automatically find all other cells in the volume and track them as well. In summary, a machine learning approach to 4D tracking.

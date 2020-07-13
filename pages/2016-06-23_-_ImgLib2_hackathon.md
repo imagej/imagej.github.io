@@ -8,7 +8,7 @@ categories: News,Hackathons,ImageJ2
 description: test description
 ---
 
-![[ImgLib2](/images/pages/ImgLib2 "wikilink")" hackers, from left to right: {% include person content='Saalfeld' %}, {% include person content='Dietzc' %}, {% include person content='Rueden' %}, {% include person content='Pietzsch' %}.](Janelia-2016-hackathon.jpg "ImgLib2 hackers, from left to right: {% include person content='Saalfeld' %}, {% include person content='Dietzc' %}, {% include person content='Rueden' %}, {% include person content='Pietzsch' %}.") From Sunday, June 19, 2016 through Tuesday, June 28, 2016, {% include person content='Saalfeld' %} at HHMI Janelia in Ashburn, Virginia hosted {% include person content='Pietzsch' %}, {% include person content='Rueden' %} and {% include person content='Dietzc' %} for a [hackathon](hackathon "wikilink") to improve the core [ImageJ2](ImageJ2 "wikilink") data model.
+![[ImgLib2](/images/pages/ImgLib2 "wikilink") hackers, from left to right: {% include person content='Saalfeld' %}, {% include person content='Dietzc' %}, {% include person content='Rueden' %}, {% include person content='Pietzsch' %}.](Janelia-2016-hackathon.jpg "ImgLib2 hackers, from left to right: {% include person content='Saalfeld' %}, {% include person content='Dietzc' %}, {% include person content='Rueden' %}, {% include person content='Pietzsch' %}.") From Sunday, June 19, 2016 through Tuesday, June 28, 2016, {% include person content='Saalfeld' %} at HHMI Janelia in Ashburn, Virginia hosted {% include person content='Pietzsch' %}, {% include person content='Rueden' %} and {% include person content='Dietzc' %} for a [hackathon](hackathon "wikilink") to improve the core [ImageJ2](ImageJ2 "wikilink") data model.
 
 ## Timeline
 

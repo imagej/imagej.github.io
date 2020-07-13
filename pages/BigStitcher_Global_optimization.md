@@ -24,7 +24,7 @@ Furthermore, we apply a few tweaks to improve the results:
 
 The **simple mode** of global optimization requires only selection of an optimization strategy and no explicit setting of the threshold parameters. The simple global optimization is run automatically if you click through the **Stitching wizard** (in no-expert mode) or can be accessed from the main menu under {% include bc content='Optimize Globally And Apply Shift|Simple Mode'%}.
 
-![BigStitcher\_optimize\_simple1.png](/images/pages/BigStitcher_optimize_simple1.png "BigStitcher_optimize_simple1.png")"
+![BigStitcher\_optimize\_simple1.png](/images/pages/BigStitcher_optimize_simple1.png "BigStitcher_optimize_simple1.png")
 
 The options available here are:
 
@@ -60,7 +60,7 @@ Note that **both** stopping conditions have to be met for the optimization to fi
 
   - **show expert grouping options**: click this to show expert grouping options in the next dialog (see below).
 
-![BigStitcher\_stitch\_5.png](/images/pages/BigStitcher_stitch_5.png "BigStitcher_stitch_5.png")"
+![BigStitcher\_stitch\_5.png](/images/pages/BigStitcher_stitch_5.png "BigStitcher_stitch_5.png")
 
 ### Intuition for setting the error thresholds
 
@@ -76,11 +76,11 @@ In the next two dialogs, you will be asked which views to include in the global 
 
   - In the first dialog, you can select whether all instances of an attribute or just the currently selected views should be processed. For example, in the example below, we align all Channels, Tiles and Illuminations, but only for the currently selected timepoint and angle.
 
-![BigStitcher\_stitch\_6.png](/images/pages/BigStitcher_stitch_6.png "BigStitcher_stitch_6.png")"
+![BigStitcher\_stitch\_6.png](/images/pages/BigStitcher_stitch_6.png "BigStitcher_stitch_6.png")
 
   - Select how to process the different attributes. For example, in the figure below, we will *treat TimePoints and Angles individually*, which means that we will run the global optimization separately for each time point and angle. Likewise, we *group Channels and Illuminations*, meaning that we will align all channels and illumination directions for a tile the same way. Finally, we *compare* Tiles, which means that tiles will be aligned relatively to each other.
 
-![BigStitcher\_stitch\_8.png](/images/pages/BigStitcher_stitch_8.png "BigStitcher_stitch_8.png")"
+![BigStitcher\_stitch\_8.png](/images/pages/BigStitcher_stitch_8.png "BigStitcher_stitch_8.png")
 
 {% include warning-box content='Theoretically, you can use the second dialog to align arbitrary groupings of the data, e.g. compare Channels but group Tiles for chromatic shift correction. Note that you have to have done the ""pairwise shift calculation"" for the same grouping of the data, otherwise, we can find no pairwise shifts to use in the global optimization' %}
 
@@ -92,6 +92,6 @@ Note that if you select multiple fixed groups, it might lead to worse results as
 
 Normally, the best idea is to select one view group to fix, using it as a starting point that all other views will be moved relative to.
 
-![BigStitcher\_stitch\_9.png](/images/pages/BigStitcher_stitch_9.png "BigStitcher_stitch_9.png")"
+![BigStitcher\_stitch\_9.png](/images/pages/BigStitcher_stitch_9.png "BigStitcher_stitch_9.png")
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")

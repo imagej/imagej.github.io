@@ -91,7 +91,7 @@ MIJ.help
 Further descriptions and example code can be found on [the home page for MIJ](http://bigwww.epfl.ch/sage/soft/mij/). Eventually, detailed documentation about the class MIJ can be found [here](http://bigwww.epfl.ch/sage/soft/mij/doc/index.html) (suitable if you have a bit of experience with Java).
 
   
-![MIJ\_Splash.jpg](/images/pages/MIJ_Splash.jpg "MIJ_Splash.jpg")"
+![MIJ\_Splash.jpg](/images/pages/MIJ_Splash.jpg "MIJ_Splash.jpg")
 
 # Alternative: do not start the Fiji GUI
 

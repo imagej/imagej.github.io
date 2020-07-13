@@ -1,7 +1,5 @@
 {% capture info_content %}
-<div info="content" markdown="1">
-{{include.content}}
-</div>
+<div info="content" markdown="1">{{include.content}}</div>
 {% endcapture %}
 {% capture info_tags %}
 {% if include.name %}<tr><td>Name</td><td>{{include.name}}</td></tr>{% endif %}

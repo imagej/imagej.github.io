@@ -18,7 +18,7 @@ description: test description
 
 Align (i.e. co-register) 2D images
 
-![DS4H\_IA\_Modified\_TsujikawaCellReports2017.png](/images/pages/DS4H_IA_Modified_TsujikawaCellReports2017.png "DS4H_IA_Modified_TsujikawaCellReports2017.png")"
+![DS4H\_IA\_Modified\_TsujikawaCellReports2017.png](/images/pages/DS4H_IA_Modified_TsujikawaCellReports2017.png "DS4H_IA_Modified_TsujikawaCellReports2017.png")
 
 ## Description
 

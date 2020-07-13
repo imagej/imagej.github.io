@@ -8,7 +8,7 @@ categories: News,ImageJ2,Hackathons,Ops
 description: test description
 ---
 
-![A graph of progress during the hackathon.](/images/pages/2014-ops-hackathon.png "A graph of progress during the hackathon.")"
+![A graph of progress during the hackathon.](/images/pages/2014-ops-hackathon.png "A graph of progress during the hackathon.")
 
 From Sunday, September 14, 2014 through Friday, September 19, 2014, LOCI in Madison hosted Christian Dietz and Brian Northan, two developers of [ImageJ Ops](ImageJ_Ops "wikilink"), for an exciting hackathon. [Christian Dietz](http://www.informatik.uni-konstanz.de/en/berthold/members/christian-dietz/) is a PhD student in computer science at the University of Konstanz and the lead developer of the [KNIME Image Processing](http://knime.imagej.net/) project; [Brian Northan](https://www.linkedin.com/pub/brian-northan/6/860/3a7) is a freelance contract research and development engineer specializing in scientific image and signal processing.
 

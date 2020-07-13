@@ -18,12 +18,12 @@ It is based on http://quarkphysics.ca/phys1/light/u-light.htm .
 
 Choose one of the color blindness modes in the dialog, then press OK:
 
-![Simulate\_Color\_Blindness\_Dialog.png](/images/pages/Simulate_Color_Blindness_Dialog.png "Simulate_Color_Blindness_Dialog.png")"
+![Simulate\_Color\_Blindness\_Dialog.png](/images/pages/Simulate_Color_Blindness_Dialog.png "Simulate_Color_Blindness_Dialog.png")
 
 Here's how the results look like when applied to the *Clown* sample image:
 
 |                                                                                                                                                                            |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Simulate Color Blindness: overview of the nine different modes.](/images/pages/Simulate_Color_Blindness_Results.png "Simulate Color Blindness: overview of the nine different modes.")" |
+| ![Simulate Color Blindness: overview of the nine different modes.](/images/pages/Simulate_Color_Blindness_Results.png "Simulate Color Blindness: overview of the nine different modes.") |
 
 [Category:Fiji](Category:Fiji "wikilink") [Category:Plugins](Category:Plugins "wikilink") [Category:Color processing](Category:Color_processing "wikilink")

@@ -26,7 +26,7 @@ This plugin is available from the {% include list-of-update-sites content='PTBIO
 
 Call up the plugin using *Plugins-\>BIOP-\>Multi Stack Montage...* and select the stacks that you wish to use.
 
-![Interface of the plugin](/images/pages/Hyperstacks_Montage_menu.jpg "Interface of the plugin")"
+![Interface of the plugin](/images/pages/Hyperstacks_Montage_menu.jpg "Interface of the plugin")
 
 {% include warning-box content='If you are going to make a montage, you need each stack to be as follows:
 
@@ -35,7 +35,7 @@ Call up the plugin using *Plugins-\>BIOP-\>Multi Stack Montage...* and select th
 
 In the case that there would be many images open, the plugin does not pre-select any images.
 
-![Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination](/images/pages/Hyperstacks_Montage_example.jpg "Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination")"
+![Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination](/images/pages/Hyperstacks_Montage_example.jpg "Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination")
 
 This plugin is useful when montaging multiple views or when montaging RGB datasets all in one go.
 

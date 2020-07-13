@@ -29,6 +29,6 @@ The command {% include bc content='Analyze | Tools | Sync Windows'%} opens a dia
 
 Clicking on **Synchronize All** starts synchronizing all windows, clicking on **Unsynchronize All** stops synchronization.
 
-![Sync\_Win.png](/images/pages/Sync_Win.png "Sync_Win.png")"
+![Sync\_Win.png](/images/pages/Sync_Win.png "Sync_Win.png")
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:User interface](Category:User_interface "wikilink")

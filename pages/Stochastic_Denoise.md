@@ -29,11 +29,11 @@ With the sigma setting, you can adjust the expected amount of noise in the image
 
 To get more pleasing results, you can increase the number of samples (i.e., the number of random walks) per pixel. However, this will result in longer runtime.
 
-![Asd-1.jpg](/images/pages/Asd-1.jpg "Asd-1.jpg")"
+![Asd-1.jpg](/images/pages/Asd-1.jpg "Asd-1.jpg")
 
 ## Tutorial
 
-![Lena\_small.jpg](/images/pages/Lena_small.jpg "Lena_small.jpg")" ![Denoised\_lena\_small.jpg](/images/pages/Denoised_lena_small.jpg "Denoised_lena_small.jpg")"
+![Lena\_small.jpg](/images/pages/Lena_small.jpg "Lena_small.jpg") ![Denoised\_lena\_small.jpg](/images/pages/Denoised_lena_small.jpg "Denoised_lena_small.jpg")
 
 Open the image you would like to denoise and start the plugin. Try the default settings first and click "Denoise". After some seconds, the denoised image will pop up. You can change the settings and retry - the denoised image will get updated.
 

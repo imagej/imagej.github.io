@@ -32,7 +32,7 @@ done by lunchtime' person=person gravatar='9e4ed4484fd425f3f178bfeed4777b31' sou
 
 We see that an input parameter `name` of type `String` is declared. `@Parameters` are handled automatically by the framework; if we run this script when the User Interface is available (e.g. from the script editor), the `name` parameter will automatically be harvested via a pop-up dialog:
 
-![ScriptParams.png](/images/pages/ScriptParams.png "ScriptParams.png")"
+![ScriptParams.png](/images/pages/ScriptParams.png "ScriptParams.png")
 
 We could also run this script [headlessly](Scripting_Headless "wikilink"), thanks to the general nature of `@parameters`.
 
@@ -76,7 +76,7 @@ Different styles are also possible.
 #@ Float   (label="Slider with float", style="slider", min=0, max=1, stepSize=0.1) myfloat
 ```
 
-![ScriptParameters-IntegerStyles.JPG](/images/pages/ScriptParameters-IntegerStyles.JPG "ScriptParameters-IntegerStyles.JPG")"
+![ScriptParameters-IntegerStyles.JPG](/images/pages/ScriptParameters-IntegerStyles.JPG "ScriptParameters-IntegerStyles.JPG")
 
 ## Parameter properties
 
@@ -141,14 +141,14 @@ This property set if the parameter should be displayed, editable and/or recorded
 
 \- MESSAGE: parameter value is intended as a message only, not editable by the user nor included as an input or output parameter. The option `required` should be set to false.
 
-![ScriptParam\_MESSAGEstring.JPG](/images/pages/ScriptParam_MESSAGEstring.JPG "ScriptParam_MESSAGEstring.JPG")"
+![ScriptParam\_MESSAGEstring.JPG](/images/pages/ScriptParam_MESSAGEstring.JPG "ScriptParam_MESSAGEstring.JPG")
 
 ``` python
 #@ String (visibility=MESSAGE, value="This is a documentation line", required=false) msg
 #@ Integer (label="Some integer parameter") my_int
 ```
 
-You can [use HTML](https://forum.image.sc/t/multiline-messages-in-dialog-widgets/183) to format the message string, for example: ![ScijavaMultilineMessage.png](/images/pages/ScijavaMultilineMessage.png "ScijavaMultilineMessage.png")"
+You can [use HTML](https://forum.image.sc/t/multiline-messages-in-dialog-widgets/183) to format the message string, for example: ![ScijavaMultilineMessage.png](/images/pages/ScijavaMultilineMessage.png "ScijavaMultilineMessage.png")
 
 ``` python
 #@ String (visibility=MESSAGE, value="<html>Message line 1<br/>Message line 2<p>Let's make a list<ul><li>item a</li><li>item b</li></ul></html>") docmsg
@@ -170,7 +170,7 @@ print(myChoice123)
 print(myChoiceABC)
 ```
 
-![Input-styles.png](/images/pages/Input-styles.png "Input-styles.png")"
+![Input-styles.png](/images/pages/Input-styles.png "Input-styles.png")
 
 ### Files and Folders
 

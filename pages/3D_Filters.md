@@ -48,7 +48,7 @@ Available filters :
 
   - Adaptive Nagao-like
 
-![3d\_variance.png](/images/pages/3d_variance.png "3d_variance.png")"
+![3d\_variance.png](/images/pages/3d_variance.png "3d_variance.png")
 
 3D variance
 

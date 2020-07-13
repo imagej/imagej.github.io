@@ -26,27 +26,27 @@ Here, we propose to use 6 LUTs, which are obtained by combining Red Green and Bl
 
 ## On 3 channels image
 
-![3 channels, each in Grays levels. ](/images/pages/3chs_Grays_cell.jpg "3 channels, each in Grays levels. ")"
+![3 channels, each in Grays levels. ](/images/pages/3chs_Grays_cell.jpg "3 channels, each in Grays levels. ")
 
 ### RGB
 
-![3 channels image, in Red Green Blue and Merge. ](/images/pages/3chs_RGB_cell.jpg "3 channels image, in Red Green Blue and Merge. ")"
+![3 channels image, in Red Green Blue and Merge. ](/images/pages/3chs_RGB_cell.jpg "3 channels image, in Red Green Blue and Merge. ")
 
 ### CMY
 
-![3 channels image, in Red Green Blue and Merge. ](/images/pages/3chs_CMY_cell.jpg "3 channels image, in Red Green Blue and Merge. ")"
+![3 channels image, in Red Green Blue and Merge. ](/images/pages/3chs_CMY_cell.jpg "3 channels image, in Red Green Blue and Merge. ")
 
 ## On 4 (to 6) channels image
 
-![4 channels image, each in Grays levels. ](/images/pages/4chs_Grays_cell.jpg "4 channels image, each in Grays levels. ")"
+![4 channels image, each in Grays levels. ](/images/pages/4chs_Grays_cell.jpg "4 channels image, each in Grays levels. ")
 
 ### Appropriate BIOP-LUTs selection
 
-![4 channels image, biop luts good choice](/images/pages/4chs_biop-lut_cell_ok.jpg "4 channels image, biop luts good choice")"
+![4 channels image, biop luts good choice](/images/pages/4chs_biop-lut_cell_ok.jpg "4 channels image, biop luts good choice")
 
 ### Unappropriate BIOP-LUTs selection
 
-![4 channels image, biop luts poor choice](/images/pages/4chs_biop-lut_cell_bad.jpg "4 channels image, biop luts poor choice")"
+![4 channels image, biop luts poor choice](/images/pages/4chs_biop-lut_cell_bad.jpg "4 channels image, biop luts poor choice")
 
 Here, channels 2 and 3 are tubular structure and it's difficult to distinguish them if both are greenish.
 

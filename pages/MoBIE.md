@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-![Mobie-white.jpg](/images/pages/Mobie-white.jpg "Mobie-white.jpg")"
+![Mobie-white.jpg](/images/pages/Mobie-white.jpg "Mobie-white.jpg")
 
 
 {% capture source%}

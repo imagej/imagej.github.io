@@ -16,11 +16,11 @@ The LAP trackers previously available in TrackMate had a cost calculation based 
 
 But a tracker that deals specifically with a new motion model is welcome, in particular when it is as common as linear motion. Its principles are detailed [here](TrackMate_algorithms#Linear_motion_tracker "wikilink").
 
-![TrackMate\_KalmanTrackerPrinciple.png](/images/pages/TrackMate_KalmanTrackerPrinciple.png "TrackMate_KalmanTrackerPrinciple.png")"
+![TrackMate\_KalmanTrackerPrinciple.png](/images/pages/TrackMate_KalmanTrackerPrinciple.png "TrackMate_KalmanTrackerPrinciple.png")
 
 To assess the performance of the new and old trackers, we re-run the ISBI tracking challenge from 2012\[1\]. We put all the results on a single page: [TrackMate Accuracy](TrackMate_Accuracy "wikilink") that should help you decide what is the algorithm that suits your problem best. For instance:
 
-![TrackMate\_RECEPTOR\_LAP\_Brownian\_motion,\_Linear\_motion\_tracker\_\&amp;\_Nearest\_neighbor.png](/images/pages/TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png "TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png")"
+![TrackMate\_RECEPTOR\_LAP\_Brownian\_motion,\_Linear\_motion\_tracker\_\&amp;\_Nearest\_neighbor.png](/images/pages/TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png "TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png")
 
 <references/>
 

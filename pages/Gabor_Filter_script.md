@@ -8,7 +8,7 @@ categories: Scripting
 description: test description
 ---
 
-![Example of a two-dimensional Gabor filter kernel (with a spectrum LUT).](/images/pages/Kernel-Gabor-filter.png "Example of a two-dimensional Gabor filter kernel (with a spectrum LUT).")" This is an example of how to create [Gabor filters](wikipedia:Gabor_filter "wikilink") in Fiji using Beanshell scripting. The script will create and apply a set of Gabor filters to the currently selected image.
+![Example of a two-dimensional Gabor filter kernel (with a spectrum LUT).](/images/pages/Kernel-Gabor-filter.png "Example of a two-dimensional Gabor filter kernel (with a spectrum LUT).") This is an example of how to create [Gabor filters](wikipedia:Gabor_filter "wikilink") in Fiji using Beanshell scripting. The script will create and apply a set of Gabor filters to the currently selected image.
 
 Five different parameters can be adjusted:
 
@@ -22,7 +22,7 @@ As result, the script will display the set of filters, the filtered version of t
 
 ## Example
 
-This is an example of the script results using the Leaf sample image ({% include bc content='File | Open Samples | Leaf (36K)'%}) and sigma = 8.0, gamma = 0.25, psi = 0.0, Fx = 3.0, nAngles = 5. ![Demonstration of a Gabor filter applied to the Leaf sample image. Five orientations are shown on the right (0°, 36°, 72°, 108° and 144°). The original Leaf picture is shown on the upper-left corner.](/images/pages/Montage-Gabor-filter-5-angles.png "Demonstration of a Gabor filter applied to the Leaf sample image. Five orientations are shown on the right (0°, 36°, 72°, 108° and 144°). The original Leaf picture is shown on the upper-left corner.")"
+This is an example of the script results using the Leaf sample image ({% include bc content='File | Open Samples | Leaf (36K)'%}) and sigma = 8.0, gamma = 0.25, psi = 0.0, Fx = 3.0, nAngles = 5. ![Demonstration of a Gabor filter applied to the Leaf sample image. Five orientations are shown on the right (0°, 36°, 72°, 108° and 144°). The original Leaf picture is shown on the upper-left corner.](/images/pages/Montage-Gabor-filter-5-angles.png "Demonstration of a Gabor filter applied to the Leaf sample image. Five orientations are shown on the right (0°, 36°, 72°, 108° and 144°). The original Leaf picture is shown on the upper-left corner.")
 
 ## Code
 

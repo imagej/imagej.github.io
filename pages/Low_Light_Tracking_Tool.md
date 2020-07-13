@@ -30,11 +30,11 @@ Please refer to the [ **tutorial**](Update_Sites "wikilink") on how to add our u
 
 ` `**`http://sites.imagej.net/Alex-krull/`**
 
-![LLTT\_Install4.jpg](/images/pages/LLTT_Install4.jpg "LLTT_Install4.jpg")"
+![LLTT\_Install4.jpg](/images/pages/LLTT_Install4.jpg "LLTT_Install4.jpg")
 
 ## Install the required files
 
-![LLTT\_Install5.jpg](/images/pages/LLTT_Install5.jpg "LLTT_Install5.jpg")"
+![LLTT\_Install5.jpg](/images/pages/LLTT_Install5.jpg "LLTT_Install5.jpg")
 
 Install or update all 6 items shown above by hitting **Apply changes**. Please restart Fiji afterwards.
 
@@ -42,9 +42,9 @@ Install or update all 6 items shown above by hitting **Apply changes**. Please r
 
 ## Load the data
 
-![OpenData.png](/images/pages/OpenData.png "OpenData.png")"
+![OpenData.png](/images/pages/OpenData.png "OpenData.png")
 
-To begin use Fiji to load the data to be used for tracking. Use whichever method you prefer in Fiji. The LLTT-plugin will work with 8-bit, 16-bit and 32-bit-float stacks. Moreover you can use 3D and multichannel hyperstacks. If you want to try the LLTT-plugin but do not have the right data at hand, you can download a file with sample data here: ![LLTT\_BeadsExampleData.zip](/images/pages/LLTT_BeadsExampleData.zip "LLTT_BeadsExampleData.zip")".
+To begin use Fiji to load the data to be used for tracking. Use whichever method you prefer in Fiji. The LLTT-plugin will work with 8-bit, 16-bit and 32-bit-float stacks. Moreover you can use 3D and multichannel hyperstacks. If you want to try the LLTT-plugin but do not have the right data at hand, you can download a file with sample data here: ![LLTT\_BeadsExampleData.zip](/images/pages/LLTT_BeadsExampleData.zip "LLTT_BeadsExampleData.zip").
 
 ## Start the LLTT-plugin
 
@@ -52,13 +52,13 @@ After the data is loaded, start the plugin by clicking:
 
 **plugins-\>Tracking-\>Low Light Tracking Tool**
 
-![LLTT\_Start1.jpg](/images/pages/LLTT_Start1.jpg "LLTT_Start1.jpg")"
+![LLTT\_Start1.jpg](/images/pages/LLTT_Start1.jpg "LLTT_Start1.jpg")
 
 ## Set global options
 
 Upon startup of the plugin you will be asked to enter three values.
 
-![LLTT\_GlobalOptions2d.jpg](/images/pages/LLTT_GlobalOptions2d.jpg "LLTT_GlobalOptions2d.jpg")"
+![LLTT\_GlobalOptions2d.jpg](/images/pages/LLTT_GlobalOptions2d.jpg "LLTT_GlobalOptions2d.jpg")
 
 They are:
 
@@ -77,7 +77,7 @@ Please consult you camera's specs sheet to obtain this information. The **EMCCD 
 
 When the plugin starts on a 2D image stack you have three windows and the control panel. The main data window lets you move through the slices like normal. On the sides you see the two kymographs, which makes it easier to see movement over time. The control window will help you to organize your tracking activity.
 
-![Opendatasmall.png](/images/pages/Opendatasmall.png "Opendatasmall.png")" ![Controlwindownew.png](/images/pages/Controlwindownew.png "Controlwindownew.png")"
+![Opendatasmall.png](/images/pages/Opendatasmall.png "Opendatasmall.png") ![Controlwindownew.png](/images/pages/Controlwindownew.png "Controlwindownew.png")
 
 If you would like the windows to become larger or smaller, change the size of the main data window and then select **Arrange Windows**, from the **View** menu. Alternatively you can use the [ hot-key](Low_Light_Tracking_Tool#Hot-Keys "wikilink") {% include key content='Ctrl' %}+{% include key content='W' %} (when the focus is on the control panel) or {% include key content='W' %} (when the focus is on one of the other windows). This will also organize the windows if they have become scattered.
 
@@ -95,7 +95,7 @@ The yellow lines in the kymographs indicate what frame you are currently working
 
 ## Create session
 
-![LLTT\_ChooseSession.jpg](/images/pages/LLTT_ChooseSession.jpg "LLTT_ChooseSession.jpg")"
+![LLTT\_ChooseSession.jpg](/images/pages/LLTT_ChooseSession.jpg "LLTT_ChooseSession.jpg")
 
 Click on the **New Session** button or select from the menu. The **New session** window opens. Here you can pick a name for the session as well as the channel you want to track on. Finally you can choose your tracking method.
 
@@ -113,7 +113,7 @@ This algorithm implements the maximum likelihood estimator based on a more sophi
 
 ## Pick session options
 
-![SessionOptions.png](/images/pages/SessionOptions.png "SessionOptions.png")"
+![SessionOptions.png](/images/pages/SessionOptions.png "SessionOptions.png")
 
 After clicking **OK**, a new window will open. In this window you can choose a **σ** value, which denotes the standard deviation (in pixels) of the Gaussian used to approximate the [Point Spread Function](wikipedia:Point_spread_function "wikilink") (PSF) of the tracked objects. If you select **Automatic σ**, this value is used only as initialization. In this case **Min** and **Max** are used as bounds for the estimation. These values will be the default values for all new traces you make in this session.
 
@@ -125,7 +125,7 @@ Fixed **σ** can be more stable and also faster, this is more so for 3D data. Al
 
 To add an object in order to track it, make sure the cross hair icon in the Fiji toolbar is selected and then double click roughly on the object you would like to track in the main window. This new object is represented as a circle. An accordant entry will appear in the table in the control panel representing the objects trace. You can select objects by clicking on them in the control panel or directly in the main window. You can then move them around, using drag and drop or edit them. Multiple objects can be selected by holding {% include key content='Shift' %} when selecting.
 
-![CreateDots.png](/images/pages/CreateDots.png "CreateDots.png")"
+![CreateDots.png](/images/pages/CreateDots.png "CreateDots.png")
 
 You can change a trace's label by clicking on the text in the label field or change the color by clicking on the colored area.
 
@@ -133,7 +133,7 @@ You can change a trace's label by clicking on the text in the label field or cha
 
 The default settings made in the session options dialog will only effect new traces. If at this point you find that the parameters you picked were less ideal you can change the parameters with the **Edit Object** selection from the **Edit** menu.
 
-![ObjectOption.png](/images/pages/ObjectOption.png "ObjectOption.png")"
+![ObjectOption.png](/images/pages/ObjectOption.png "ObjectOption.png")
 
 The settings you make here will effect the selected object in the very frame you are looking at.
 
@@ -145,11 +145,11 @@ Objects that are very close to each other should generally be tracked jointly by
 
 # Working with tracking results
 
-![Result1.png](/images/pages/Result1.png "Result1.png")"
+![Result1.png](/images/pages/Result1.png "Result1.png")
 
 You can watch the trace fill in the kymograph line as the tracking is in progress. If you see the tracking looks incorrect and lost the object, you can click on **Stop Tracking** and adjust the object location and the software will resume from the new starting point.
 
-![Result2.png](/images/pages/Result2.png "Result2.png")"
+![Result2.png](/images/pages/Result2.png "Result2.png")
 
 The table now contains more information, with the first frame of the trace, and the last frame. Double clicking on the ID\# of the object will jump the frame number to the beginning and end of the trace.
 
@@ -180,13 +180,13 @@ The plugin can be used to track objects in 3D volumes as well. When working with
 
 The **ΔZ ratio** is the slice thickness divided by the pixel width. This value is only used for 3D data. Example: My pixel size for my data is 100 nm and my slice thickness is 200 nm. I would then enter a value of 2.
 
-![NewWindows.jpg](/images/pages/NewWindows.jpg "NewWindows.jpg")"
+![NewWindows.jpg](/images/pages/NewWindows.jpg "NewWindows.jpg")
 
 3D data is very similar to 2D data, there are just a few more windows that open when you start. The data window and the kymographs appears, but a second set of windows appear. A max Z projection window and max Y and X projects. The side projections are useful to place your starting tracking in the correct slice. So before clicking on the object in the data window, change the z to the correct plane first.
 
 Otherwise, tracking function is the same. It is best to optimize the σ-value for 3D tracking and then use a fixed value to increase speed.
 
-![NewWithDot.jpg](/images/pages/NewWithDot.jpg "NewWithDot.jpg")"
+![NewWithDot.jpg](/images/pages/NewWithDot.jpg "NewWithDot.jpg")
 
 ## Using multiscale tracking for fast moving objects
 
@@ -194,7 +194,7 @@ If you are trying to track fast moving objects that move over a big distance bet
 
 You can change the default behavior in the edit menu.
 
-![MScaleOptions.png](/images/pages/MScaleOptions.png "MScaleOptions.png")"
+![MScaleOptions.png](/images/pages/MScaleOptions.png "MScaleOptions.png")
 
 The algorithm builds a [pyramid](wikipedia:Pyramid_%28image_processing%29 "wikilink") by repetitively smothing the image with a Gaussian kernel with the standard deviation given in the **Smoothing σ** field and than down-sampling it by a factor set in the **Downscaling** field. The pyramid's hight (i.e. the number of repetitions) can be set in the **iterations** field. Localization is than first performed on the top level of the pyramid and repeated until its bottom, which is the original image.
 

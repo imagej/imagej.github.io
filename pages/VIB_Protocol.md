@@ -25,13 +25,13 @@ The output of the VIB Protocol is written to a user-specified folder. A descript
 
 The VIB Protocol starts with the following dialog:
 
-![VIB\_Protocol\_1.png](/images/pages/VIB_Protocol_1.png "VIB_Protocol_1.png")"
+![VIB\_Protocol\_1.png](/images/pages/VIB_Protocol_1.png "VIB_Protocol_1.png")
 
 A configuration file stores all the settings for running the VIB Protocol on a particular data set. It is saved in the output directory. If one wants to run the algorithm a second time, it is possible to load (and modify) the previous configuration. If you run this for the first time, just leave the text field blanc and click OK.
 
 After that, a second dialog appears, which asks the user for all the necessary input:
 
-![VIB\_Protocol\_2.png](/images/pages/VIB_Protocol_2.png "VIB_Protocol_2.png")"
+![VIB\_Protocol\_2.png](/images/pages/VIB_Protocol_2.png "VIB_Protocol_2.png")
 
 The different fields have the following meaning:
 
@@ -65,10 +65,10 @@ The different fields have the following meaning:
 
 Clicking OK will finally start the VIB Protocol. At this point, the above mentioned configuration file is created and saved, which is shown by:
 
-![VIB\_Protocol\_3.png](/images/pages/VIB_Protocol_3.png "VIB_Protocol_3.png")"
+![VIB\_Protocol\_3.png](/images/pages/VIB_Protocol_3.png "VIB_Protocol_3.png")
 
 Normally, the Segmentation Editor opens during the software execution and asks the user to label the brains. This step is omitted if there exists already a folder called 'labels' in the output directory and if this folder contains for each image the corresponding labels image. After that, no more user interaction is required, and the software finishes after some time. All the results can be found in the output directory. The structure of this directory is as follows:
 
-![VIB\_Protocol\_4.png](/images/pages/VIB_Protocol_4.png "VIB_Protocol_4.png")"
+![VIB\_Protocol\_4.png](/images/pages/VIB_Protocol_4.png "VIB_Protocol_4.png")
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")

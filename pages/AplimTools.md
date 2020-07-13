@@ -19,7 +19,7 @@ AplimTools is a set of image processing tools for plants magnetic resonance anal
   - T1/T2/M0 maps computation from spin echo sequences (multiple TR and/or TE)
   - Time-lapse exploration of T1/T2/M0 parameters in interest areas
 
-![Time-lapse exploration of parameters in a plant under drought stress](/images/pages/Full-1.jpg "Time-lapse exploration of parameters in a plant under drought stress")"
+![Time-lapse exploration of parameters in a plant under drought stress](/images/pages/Full-1.jpg "Time-lapse exploration of parameters in a plant under drought stress")
 
   
   
@@ -95,7 +95,7 @@ For time-lapse experiments, one can compute such a 4D MR hyperimage at successiv
 
 This plugin helps exploring the relaxation curves on a point, the neighbourhood of a point, or a user-defined roi, using non-linear fit (as above). The visualization of these curves (middle panels) is enriched by semi-log graphs of the T1 and T2 values (right-top panel), and a distribution of these values in the selected area (right-bottom panel). This explorer can open time-lapse 5D hyperimages, to give insight of the evolution of these parameters along the experiment. The explorer display informations through 6 panels :
 
-![Application panels](/images/pages/Full-1.jpg "Application panels")"
+![Application panels](/images/pages/Full-1.jpg "Application panels")
 
 [File:Panel\_1-1.jpg|Left](File:Panel_1-1.jpg%7CLeft) panels: spin echo images from T1 (top) and T2 (bottom) sequences. The yellow square shows the interest area where the tissue parameters are estimated. Its size and position can be modified dynamically. [File:Panel3-1.jpg|T1](File:Panel3-1.jpg%7CT1) relaxation curve (red) estimated from MRI data (blue crosses), given the measured noise level (black) [File:Panel4-1.jpg|T2](File:Panel4-1.jpg%7CT2) relaxation curve (dark green=mono-exponential, light green=bi-exponential) estimated from MRI data (blue crosses). The blue crosses display the mean MR value over all the pixels in the interest area (the yellow square), and the std within these data is displayed as a vertical blue bar. The measured noise level used for noise-corrected estimation is displayed as a black line. [File:Panel5-1.jpg|Values](File:Panel5-1.jpg%7CValues) of T1 (red) and T2 (green) estimated from the mean values (blue crosses on the curves panel). Marker thickness are proportional to the relative proton density. The three graphs (from bottom to top) shows the values in this area for the three successive timepoints of the 5D MR Hyperimage. [File:Panel6-1.jpg|Distribution](File:Panel6-1.jpg%7CDistribution) of the T1 and T2 values estimated from each individual pixel of the current region of interest.
 

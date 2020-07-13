@@ -27,7 +27,7 @@ See here a photograph of the [lunar crater Hohmann](http://commons.wikimedia.org
 
 |                                                        |                                                                         |                                                                      |
 | ------------------------------------------------------ | ----------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| ![Original image](/images/pages/Hohmann-crater.jpg "Original image")" | ![Integral in <em>x</em>](/images/pages/Hohmann-crater-xintegral.jpg "Integral in x")" | ![3D Surface Plot](/images/pages/Hohmann-crater-surfaceplot.jpg "3D Surface Plot")" |
+| ![Original image](/images/pages/Hohmann-crater.jpg "Original image") | ![Integral in <em>x</em>](/images/pages/Hohmann-crater-xintegral.jpg "Integral in x") | ![3D Surface Plot](/images/pages/Hohmann-crater-surfaceplot.jpg "3D Surface Plot") |
 
 ## Shortcomings
 

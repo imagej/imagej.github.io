@@ -8,7 +8,7 @@ categories: Plugins,Registration,Citable
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:bUnwarpJ\_' %}{| |style="vertical-align:top" |![bUnwarpJ scheme: bidirectional Unwarping in Java.](/images/pages/BUnwarpJ_scheme.png "bUnwarpJ scheme: bidirectional Unwarping in Java.")" |}
+{% include component-stats content=':sc.fiji:bUnwarpJ\_' %}{| |style="vertical-align:top" |![bUnwarpJ scheme: bidirectional Unwarping in Java.](/images/pages/BUnwarpJ_scheme.png "bUnwarpJ scheme: bidirectional Unwarping in Java.") |}
 
 This ImageJ/Fiji plugin performs **2D image registration based on elastic deformations** represented by B-splines. The invertibility of the deformations is enforced through a consistency restriction.
 
@@ -32,7 +32,7 @@ Where the weights of every term are set by the user in the main window of the pl
 
 The plugin can be called from the main ImageJ/Fiji menu under Plugins \> Registration \> bUnwarpJ. Two images (**8, 16, 32-bit grayscale or RGB Color**) need to be opened in order to be able to use the plugin. If so, the maing dialog window of the plugin will open.
 
-![bUnwarpJ main dialog](/images/pages/BUnwarpJ-main-dialog.png "bUnwarpJ main dialog")"
+![bUnwarpJ main dialog](/images/pages/BUnwarpJ-main-dialog.png "bUnwarpJ main dialog")
 
 **Both selected images will work simultaneously as source and target**, their tags are there only for the sake of clarification. The registration mode can be "Accurate", "Fast" and "Mono". The registration mode "**Mono**" (included since version 2.5) makes the program to perform only **unidirectional** registration, i.e. from source to target. The two registration modes "Accurate" and "Fast" involve performing **bidirectional** registration and affect the stopping criteria internally used by the program. More internal options can be modified in the "Advanced Options" panel. This panel gives you access to most of the internal parameters of the algorithm. The "Initial" and "Final" deformation lists allow you to select the coarsest and finest scale of the spline deformation field. "Very coarse" corresponds to 4 splines (one in each corner of the image). As you increase the deformation level, the number of splines is doubled in each direction (horizontal and vertical).
 
@@ -54,7 +54,7 @@ The final registration values appear in a separate ("Results") window.
 
 The following figure shows one of the **resulting stacks** from registering a source (moving) Lena image to a target (fixed) warped version of the same image:
 
-![From left to right, consecutive slices of the resulting stack: elastic-transformed image, original moving image and warped moving mask.](/images/pages/BUnwarpJ-lena-basic-result.png "From left to right, consecutive slices of the resulting stack: elastic-transformed image, original moving image and warped moving mask.")"
+![From left to right, consecutive slices of the resulting stack: elastic-transformed image, original moving image and warped moving mask.](/images/pages/BUnwarpJ-lena-basic-result.png "From left to right, consecutive slices of the resulting stack: elastic-transformed image, original moving image and warped moving mask.")
 
 The **verbose mode** produces more information:
 
@@ -62,7 +62,7 @@ The **verbose mode** produces more information:
 2.  The grid obtained after deforming the fixed image with the vector field described above;
 3.  The step values of the optimization process in a separate ("Results") window.
 
-![From left to right: the last consecutive slices of the resulting stack in verbose mode (deformation field and deformation grid) and the Log window with the optimization steps, final optimal values and execution time.](/images/pages/BUnwarpJ-lena-verbose-result.png "From left to right: the last consecutive slices of the resulting stack in verbose mode (deformation field and deformation grid) and the Log window with the optimization steps, final optimal values and execution time.")"
+![From left to right: the last consecutive slices of the resulting stack in verbose mode (deformation field and deformation grid) and the Log window with the optimization steps, final optimal values and execution time.](/images/pages/BUnwarpJ-lena-verbose-result.png "From left to right: the last consecutive slices of the resulting stack in verbose mode (deformation field and deformation grid) and the Log window with the optimization steps, final optimal values and execution time.")
 
 Since both, source and target images work as moving and fixed images, **there are two sets (stacks) of results**: from source to target and from target to source.
 
@@ -72,13 +72,13 @@ During the registration process, the current difference images and a mapping of 
 
 |                                                                                                                                                                                                                                                                         |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image.](/images/pages/BUnwarpJ-lena-during-registration.png "Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image.")" |
+| ![Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image.](/images/pages/BUnwarpJ-lena-during-registration.png "Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image.") |
 
 During the registration process the toolbar will be changed to
 
 |                                                                                                                                                                       |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![bUnwarpJ toolbar when the registration process has started. ](/images/pages/BUnwarpJ-toolbar-when-registering.png "bUnwarpJ toolbar when the registration process has started. ")" |
+| ![bUnwarpJ toolbar when the registration process has started. ](/images/pages/BUnwarpJ-toolbar-when-registering.png "bUnwarpJ toolbar when the registration process has started. ") |
 
 Click on the stop button to stop the process. The output at the current state of the optimization will be returned in the normal way.
 
@@ -88,7 +88,7 @@ When the plugin is called and before pressing "OK" in the main window, the toolb
 
 |                                                                                                                                      |
 | ------------------------------------------------------------------------------------------------------------------------------------ |
-| ![bUnwarpJ toolbar before starting registration.](/images/pages/BUnwarpJ-toolbar-add-crosses.png "bUnwarpJ toolbar before starting registration.")" |
+| ![bUnwarpJ toolbar before starting registration.](/images/pages/BUnwarpJ-toolbar-add-crosses.png "bUnwarpJ toolbar before starting registration.") |
 
 The depressed button indicates that you may **add a landmark** now. Landmarks are added in either image. The landmark will be automatically placed in the same position on both images. The new landmark becomes the "current landmark" (indicated by a thicker \[+\] sign in the current image and a \[×\] sign in the other image, while all the rest are represented by \[+\] signs). To move any landmark, press on the "**Move crosses**" button:
 
@@ -100,7 +100,7 @@ Click and drag on any landmark to make it correspond to the same position in bot
 
 |                                                                                                                                        |
 | -------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Example of landmarks on moving and fixed images.](/images/pages/BUnwarpJ-landmarks-example.png "Example of landmarks on moving and fixed images.")" |
+| ![Example of landmarks on moving and fixed images.](/images/pages/BUnwarpJ-landmarks-example.png "Example of landmarks on moving and fixed images.") |
 
 Landmarks can be removed through the "**Remove crosses**" button:
 
@@ -125,7 +125,7 @@ The inner mask keeps the information in the interior of the polygon, while the o
 
 |                                                                                                                                   |
 | --------------------------------------------------------------------------------------------------------------------------------- |
-| ![bUnwarpJ example of inner mask on Lena image.](/images/pages/BUnwarpJ-inner-mask-example.png "bUnwarpJ example of inner mask on Lena image.")" |
+| ![bUnwarpJ example of inner mask on Lena image.](/images/pages/BUnwarpJ-inner-mask-example.png "bUnwarpJ example of inner mask on Lena image.") |
 
 Masks can be used for one of the images, both, or none. You can put a mask in one of the images and not in the other, you can put a mask (with different shapes) in both images, or you may not use masks at all. After calling the plugin, the masks are erased and the initial images are restored.
 
@@ -137,7 +137,7 @@ When using the "**Input/Output Menu**" from the toolbar, we have the possibility
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![bUnwarpJ toolbar with "Input/Output menu" button selected.](BUnwarpJ-toolbar-IO-menu.png "bUnwarpJ toolbar with \"Input/Output menu\" button selected.") |
 
-![bUnwarpJ Input/Output menu.](/images/pages/BUnwarpJ-IO-menu.png "bUnwarpJ Input/Output menu.")"
+![bUnwarpJ Input/Output menu.](/images/pages/BUnwarpJ-IO-menu.png "bUnwarpJ Input/Output menu.")
 
 In the last release, the plugin presents the following Input/Output options:
 
@@ -264,7 +264,7 @@ One important advantage of [bUnwarpJ](bUnwarpJ "wikilink") over the previous met
 
 ### SIFT and MOPS plugin support
 
-![bUnwarpJ: example of SIFT correspondences converted to registration landmarks.](/images/pages/BUnwarpJ-lena-SIFT-landmarks-example.png "bUnwarpJ: example of SIFT correspondences converted to registration landmarks.")"The last release of bUnwarpJ has compatibility with Stephan Saalfeld's plugin for automatic [ feature extraction](Feature_Extraction "wikilink") (implementations of SIFT and MOPS algorithms).
+![bUnwarpJ: example of SIFT correspondences converted to registration landmarks.](/images/pages/BUnwarpJ-lena-SIFT-landmarks-example.png "bUnwarpJ: example of SIFT correspondences converted to registration landmarks.")The last release of bUnwarpJ has compatibility with Stephan Saalfeld's plugin for automatic [ feature extraction](Feature_Extraction "wikilink") (implementations of SIFT and MOPS algorithms).
 
 An explanation of the parameters is [ here](Feature_Extraction#Parameters "wikilink"). This plugin is also integrated in Fiji.
 
@@ -294,7 +294,7 @@ The weights need to be chosen experimentally, test and error is the only way of 
 
 The divergence and curl weights regularize the deformation by penalizing the [divergence](https://en.wikipedia.org/wiki/Divergence) and [curl](https://en.wikipedia.org/wiki/Curl_%28mathematics%29) of the deformation vector field. In other words, we penalize vector fields with **many** points like this:
 
-![Divergence-curl-2d-examples.png](/images/pages/Divergence-curl-2d-examples.png "Divergence-curl-2d-examples.png")"
+![Divergence-curl-2d-examples.png](/images/pages/Divergence-curl-2d-examples.png "Divergence-curl-2d-examples.png")
 
 These are attractor points that make the deformation too rough. One of them would not be a problem (it could be just a rotation), but many yes. So controlling them we make the deformation **smooth**. If you see that your transformations get too rough, it is a good idea to use them. **0.1 and 0.1 are usually good values** if there's no prior knowledge about the deformation shape.
 

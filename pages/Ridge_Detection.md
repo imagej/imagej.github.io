@@ -27,13 +27,13 @@ It works with stacks, is parallelized, has a preview mode and is able to resolve
 
 ## Examples
 
-![CNT\_Ridge\_Detection\_Original.png](/images/pages/CNT_Ridge_Detection_Original.png "CNT_Ridge_Detection_Original.png")" ![CNT\_Ridge\_Detection\_Example.png](/images/pages/CNT_Ridge_Detection_Example.png "CNT_Ridge_Detection_Example.png")"
+![CNT\_Ridge\_Detection\_Original.png](/images/pages/CNT_Ridge_Detection_Original.png "CNT_Ridge_Detection_Original.png") ![CNT\_Ridge\_Detection\_Example.png](/images/pages/CNT_Ridge_Detection_Example.png "CNT_Ridge_Detection_Example.png")
 
 This example shows the application of the plugin on images of carbon nanotubes (Sigma = 1.5, Lower Threshold = 1.3, Higher Threshold = 7).
 
 # Parameter Selection
 
-There are three parameters which '''have to ''' be specified. These are the mandatory parameters. The optional parameters can be used to estimate the mandatory parameters ![Ridge\_Detection\_Parameters.png](/images/pages/Ridge_Detection_Parameters.png "Ridge_Detection_Parameters.png")"
+There are three parameters which '''have to ''' be specified. These are the mandatory parameters. The optional parameters can be used to estimate the mandatory parameters ![Ridge\_Detection\_Parameters.png](/images/pages/Ridge_Detection_Parameters.png "Ridge_Detection_Parameters.png")
 
 ## Mandatory Parameters
 
@@ -91,19 +91,19 @@ This method makes the assumption that when two ridges overlap, it is more likely
 
 If you use this method of overlap resolution, it is recommended that you first tune the Ridge Detection parameters with `Preview` enabled to get a minimal starting set of junction points - so that each ridge matches reality as best as possible. For example:
 
-![Slope\_detection\_low\_sigma.png](/images/pages/Slope_detection_low_sigma.png "Slope_detection_low_sigma.png")"
+![Slope\_detection\_low\_sigma.png](/images/pages/Slope_detection_low_sigma.png "Slope_detection_low_sigma.png")
 
 This detection with a sigma of 1.6 produces a set of lines and junctions not suited to slope-based overlap detection.
 
-![Slope\_detection\_high\_sigma.png](/images/pages/Slope_detection_high_sigma.png "Slope_detection_high_sigma.png")"
+![Slope\_detection\_high\_sigma.png](/images/pages/Slope_detection_high_sigma.png "Slope_detection_high_sigma.png")
 
 The same image with a sigma of 3.0. These are "real" junction points that will allow reasonable overlap detection via line slope.
 
-![Slope\_detection\_bad.png](/images/pages/Slope_detection_bad.png "Slope_detection_bad.png")"
+![Slope\_detection\_bad.png](/images/pages/Slope_detection_bad.png "Slope_detection_bad.png")
 
 In this image we see poor overlap detection. In this case due to a superfluous junction point at the bottom of one arm, leading to a misdiagnosis of what lines are overlapping.
 
-![Slope\_detection\_success.png](/images/pages/Slope_detection_success.png "Slope_detection_success.png")"
+![Slope\_detection\_success.png](/images/pages/Slope_detection_success.png "Slope_detection_success.png")
 
 Successful ridge detection with slope-based overlap detection enabled. Line 134 is selected to illustrate the selection of a complete line despite numerous intersections.
 
@@ -129,4 +129,4 @@ We think the best way is to cite the formal method and the used implementation:
 
 **Implementation**:
 
-![Ij-ridgedetection.svg](/images/pages/Ij-ridgedetection.svg "Ij-ridgedetection.svg")"
+![Ij-ridgedetection.svg](/images/pages/Ij-ridgedetection.svg "Ij-ridgedetection.svg")

@@ -35,17 +35,17 @@ Click the links below to find more about each tool.
 
 2\. Click “Help / Update…” to open the FIJI updater. If it’s the first time updating your FIJI, it might take some time to download the update files and may also require to restart FIJI a few times. Once done, click “Help / Update…” again to bring up the ImageJ updater window.
 
-![EMtool\_01.jpg](/images/pages/EMtool_01.jpg "EMtool_01.jpg")"
+![EMtool\_01.jpg](/images/pages/EMtool_01.jpg "EMtool_01.jpg")
 
 3\. Click “Manage update sites”.
 
-![EMtool\_02.jpg](/images/pages/EMtool_02.jpg "EMtool_02.jpg")"
+![EMtool\_02.jpg](/images/pages/EMtool_02.jpg "EMtool_02.jpg")
 
 4\. Find and tick "EM tool", URL "https://sites.imagej.net/IMBalENce/".
 
 5\. If the update site does not show, you can manually add the site by clicking “Add update site”. Type in Name "EM tool", URL "https://sites.imagej.net/IMBalENce/"
 
-![EMtool\_03.jpg](/images/pages/EMtool_03.jpg "EMtool_03.jpg")"
+![EMtool\_03.jpg](/images/pages/EMtool_03.jpg "EMtool_03.jpg")
 
 6 Close the "Manage Update Sites" window and click the "Apply Changes" button on the "ImageJ Updater Window".
 

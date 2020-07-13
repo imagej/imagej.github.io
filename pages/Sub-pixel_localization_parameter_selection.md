@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-![ModelChoice.png](/images/pages/ModelChoice.png "ModelChoice.png")"
+![ModelChoice.png](/images/pages/ModelChoice.png "ModelChoice.png")
 
 The first choice the users see in the panel is regarding the model to be used for performing the sub-pixel Localization with. If the microtubules grow only linearly and do not bend just a linear growth model is sufficient to track the growth of such microtubules. If the microtubules only just bend like a beam then a beam model is sufficient to track them. The most advanced model here, the higher order beam mode, takes into account some more complicated microtubule bending actions and is recommended as the default model to be used during the tracking.
 
