@@ -1,0 +1,3 @@
+<a class="thumbnail" href="{{include.src}}" data-lightbox="image-{{include.title | replace: " ", "-"}}" data-title="{{include.title}}">
+    <img src="{{include.src}}"/>
+</a>
