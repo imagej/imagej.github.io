@@ -51,15 +51,15 @@ In conclusion, we believe there is little reason for concern regarding time perf
 
 The main benchmark code can be found at:
 
-  - {% include github org='imglib' repo='imglib2-tests' path='src/test/java/tests/PerformanceBenchmark.java' label='PerformanceBenchmark.java' %}
+  - {% include github org='imglib ' repo='imglib2-tests ' path='src/test/java/tests/PerformanceBenchmark.java ' label='PerformanceBenchmark.java ' %}
 
 The script that runs the benchmark at various image resolutions is:
 
-  - {% include github org='imglib' repo='imglib2-tests' path='src/test/scripts/benchmark.sh' label='benchmark.sh' %}
+  - {% include github org='imglib ' repo='imglib2-tests ' path='src/test/scripts/benchmark.sh ' label='benchmark.sh ' %}
 
 The shell script also uses a Python script to transform the CSV output into the pChart data on this page:
 
-  - {% include github org='imglib' repo='imglib2-tests' path='src/test/scripts/chart-gen.py' label='chart-gen.py' %}
+  - {% include github org='imglib ' repo='imglib2-tests ' path='src/test/scripts/chart-gen.py ' label='chart-gen.py ' %}
 
 ## Cheap operation results
 

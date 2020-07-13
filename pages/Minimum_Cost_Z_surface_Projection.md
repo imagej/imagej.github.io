@@ -10,7 +10,7 @@ description: test description
 
 \_\_TOC\_\_
 
-{% include info-box software='ImageJ/Fiji' name='Min Cost Z Surface' author='[Benoit Lombardot](User:Benoit "wikilink")' maintainer='[Benoit Lombardot](User:Benoit "wikilink")' released='03 August 2016' filename='![MinCostZSurface\_-1.1.0.jar.zip](/images/pages/MinCostZSurface_-1.1.0.jar.zip "MinCostZSurface_-1.1.0.jar.zip")' source=' [MPI-CBG git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection) ' category='[Plugins](:Category:Plugins "wikilink"), [Projection](:Category:Projection "wikilink")' %}
+{% include info-box software='ImageJ/Fiji ' name='Min Cost Z Surface ' author='[Benoit Lombardot](User:Benoit "wikilink") ' maintainer='[Benoit Lombardot](User:Benoit "wikilink") ' released='03 August 2016 ' filename='![MinCostZSurface\_-1.1.0.jar.zip](/images/pages/MinCostZSurface -1.1.0.jar.zip "MinCostZSurface -1.1.0.jar.zip") ' source=' [MPI-CBG git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection) ' category='[Plugins](:Category:Plugins "wikilink"), [Projection](:Category:Projection "wikilink") ' %}
 
 ## Introduction
 
@@ -18,7 +18,7 @@ This plugin detects minimum cost z-surface in a 3D volume. A z surface is a topo
 
 The detected surface can be used to remove signal close to the surface. For instance if the surface is occluding other objects of interest. Inversely, if one wants to visualize a surface ocluded by other object the signal far from the surface can be attenuated. Figure 1 and 2 are illustrate these use cases.
 
-![MinCostSurf\_Ex2\_SurfaceSelection.PNG](/images/pages/MinCostSurf_Ex2_SurfaceSelection.PNG "MinCostSurf_Ex2_SurfaceSelection.PNG")
+![MinCostSurf\_Ex2\_SurfaceSelection.PNG](/images/pages/MinCostSurf Ex2 SurfaceSelection.PNG "MinCostSurf Ex2 SurfaceSelection.PNG")
 
 <div align="center">
 
@@ -26,7 +26,7 @@ The detected surface can be used to remove signal close to the surface. For inst
 
 </div>
 
-![MinCostSurf\_Ex1\_removeSurface.PNG](/images/pages/MinCostSurf_Ex1_removeSurface.PNG "MinCostSurf_Ex1_removeSurface.PNG")
+![MinCostSurf\_Ex1\_removeSurface.PNG](/images/pages/MinCostSurf Ex1 removeSurface.PNG "MinCostSurf Ex1 removeSurface.PNG")
 
 <div align="center">
 
@@ -40,7 +40,7 @@ Both examples illustrated in the previous section can be reproduced with the Min
 
   - If your surface appears with high intensity value you need to duplicate it and invert it. With this manipulatiuon you should have a volume where your surface appears with low intensity. It will be used by the plugin to measure the cost of the surface. Any kind of preprocessing that can enhance the surface can be used to favor a good detection of the surface.
 
-![MinCostSurf\_inputImage.PNG](/images/pages/MinCostSurf_inputImage.PNG "MinCostSurf_inputImage.PNG")
+![MinCostSurf\_inputImage.PNG](/images/pages/MinCostSurf inputImage.PNG "MinCostSurf inputImage.PNG")
 
 <div align="center">
 
@@ -60,7 +60,7 @@ Input image (left) and cost image (right) for the detection of fly winf with the
       - **Max distance between surfaces**: maximum distance in pixel between the 2 detected surfaces
       - **Min distance between the surfaces**: minimum distance in pixel between the 2 detected surfaces
 
-![MinCostSurf\_gui.PNG](/images/pages/MinCostSurf_gui.PNG "MinCostSurf_gui.PNG")
+![MinCostSurf\_gui.PNG](/images/pages/MinCostSurf gui.PNG "MinCostSurf gui.PNG")
 
 <div align="center">
 
@@ -73,7 +73,7 @@ user interface of the plugin with the parameter used for this example
       - the altitude map of the surface with minimum cost. Altitude is in pixel between 0 and the number of slice of the original image
       - A volume showing the intensity on the surface on the center slice. Other slice correspond to the intensity if the original image on tranlated version of the surface.
 
-![MinCostSurf\_output.PNG](/images/pages/MinCostSurf_output.PNG "MinCostSurf_output.PNG")
+![MinCostSurf\_output.PNG](/images/pages/MinCostSurf output.PNG "MinCostSurf output.PNG")
 
 <div align="center">
 

@@ -8,7 +8,7 @@ categories: Segmentation,Tutorials,Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Graph\_Cut' %} ![mito-sample.png](/images/pages/mito-sample.png "mito-sample.png")
+{% include component-stats content=':sc.fiji:Graph\_Cut' %} ![mito-sample.png](/images/pages/Mito-sample.png "mito-sample.png")
 
 The Graph Cut plugin provides a way to obtain a globally smooth binary segmentation. As input, you have to provide a gray-scale image that represents the pixel affinities for belonging to the foreground. Via a single parameter you can adjust the smoothness of the segmentation.
 
@@ -28,24 +28,24 @@ The only available setting so far is the "smoothness" value. Use it to adjust th
 
 Assume we want to segment the following image into foreground/background, such that the foreground is the mitochondria and the background everything else:
 
-![mito.png](/images/pages/mito.png "mito.png")
+![mito.png](/images/pages/Mito.png "mito.png")
 
 ### Probability Image
 
 First, we create a probability image that reflects the per-pixel probability of belonging to the foreground. For that, we can use the [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") plugin. We train a classifier for the mitochondria and everything else. Instead of using the classifier directly for the segmentation, however, we create a probability image:
 
-![mito-prob.png](/images/pages/mito-prob.png "mito-prob.png")
+![mito-prob.png](/images/pages/Mito-prob.png "mito-prob.png")
 
 ### Running Graph Cut
 
 Now we start the Graph Cut plugin on the probability image. With the "smoothness" slider we can adjust the smoothness of the segmentation to avoid some small extrema to corrupt our segmentation. In our example, we found that a value of about 600 gives reasonable results. The outcome of the plugin is a binary image, with white being the foreground segmentation:
 
-![mito-seg.png](/images/pages/mito-seg.png "mito-seg.png")
+![mito-seg.png](/images/pages/Mito-seg.png "mito-seg.png")
 
 ### Result
 
 Finally, we merge the original image and the segmentation for illustration purposes:
 
-![200px](/images/pages/mito-comp.png "200px")
+![200px](/images/pages/Mito-comp.png "200px")
 
 [Category:Segmentation](Category:Segmentation "wikilink") [Category:Tutorials](Category:Tutorials "wikilink") [Category:Plugins](Category:Plugins "wikilink")

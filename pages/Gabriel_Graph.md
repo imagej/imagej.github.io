@@ -10,15 +10,15 @@ description: test description
 
 
 {% capture source%}
-{% include github org='ptbiop' repo='ijp-gabriel-graph' %}
+{% include github org='ptbiop ' repo='ijp-gabriel-graph ' %}
 {% endcapture %}
-{% include info-box name='Gabriel Graph' software='Fiji' author='Olivier Burri' maintainer='Olivier Burri' filename='Gabriel\_Graph-1.0.0.jar' released='August 2015' latest-version='July 2017' source=source status='stable' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff) ' %}
+{% include info-box name='Gabriel Graph ' software='Fiji ' author='Olivier Burri ' maintainer='Olivier Burri ' filename='Gabriel\_Graph-1.0.0.jar ' released='August 2015 ' latest-version='July 2017 ' source=source status='stable ' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff) ' %}
 
 ## Purpose
 
 Gabriel Graph Implementation for ImageJ/Fiji See https://en.wikipedia.org/wiki/Gabriel_graph for implementation
 
-![Gabriel\_Graph\_Dialog.png](/images/pages/Gabriel_Graph_Dialog.png "Gabriel_Graph_Dialog.png")
+![Gabriel\_Graph\_Dialog.png](/images/pages/Gabriel Graph Dialog.png "Gabriel Graph Dialog.png")
 
 ## Details
 
@@ -34,7 +34,7 @@ If selected, it will create a new results table with each point, its computed ne
 
 If selected, it will overlay the Gabriel Graph onto the image.
 
-![Result of Plugin on image](/images/pages/Gabriel_Graph_Processing_Example.png "Result of Plugin on image")
+![Result of Plugin on image](/images/pages/Gabriel Graph Processing Example.png "Result of Plugin on image")
 
 ## Macro Recordable
 

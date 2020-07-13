@@ -12,7 +12,7 @@ description: test description
 
 A very easy way of improving registration quality in datasets in which translation and even affine models are not enough is to **split the images** into smaller blocks which can be registered individually, partially accounting for non-rigid distortions within the original images.
 
-![BigStitcher\_splitting\_overview.png](/images/pages/BigStitcher_splitting_overview.png "BigStitcher_splitting_overview.png")
+![BigStitcher\_splitting\_overview.png](/images/pages/BigStitcher splitting overview.png "BigStitcher splitting overview.png")
 
 We support *virtual* splitting of datasets into smaller blocks in BigStitcher. The original dataset will not be modified and data do not have to be resaved, as we just *wrap* the original dataset to produce a split version.
 
@@ -26,7 +26,7 @@ First, you will be asked for the **dataset (XML project file) to split**. Select
 
 After selecting the dataset to split and clicking **OK**, the following dialog will appear:
 
-![BigStitcher\_splitting\_dialog.png](/images/pages/BigStitcher_splitting_dialog.png "BigStitcher_splitting_dialog.png")
+![BigStitcher\_splitting\_dialog.png](/images/pages/BigStitcher splitting dialog.png "BigStitcher splitting dialog.png")
 
 Here, you can set
 

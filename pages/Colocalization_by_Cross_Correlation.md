@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='andmccall' repo='Colocalization\_by\_Cross\_Correlation' %}
+{% include github org='andmccall ' repo='Colocalization\_by\_Cross\_Correlation ' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='Colocalization by Cross Correlation' maintainer=' [Andrew McCall](https://imagej.net/User:Amccall) ' author=' [Andrew McCall](https://imagej.net/User:Amccall) ' source=source status='active' released='2020' category='[:Category:Plugins](:Category:Plugins "wikilink"), [:Category:Colocalization](:Category:Colocalization "wikilink")' %}
+{% include info-box software='Fiji ' name='Colocalization by Cross Correlation ' maintainer=' [Andrew McCall](https://imagej.net/User:Amccall) ' author=' [Andrew McCall](https://imagej.net/User:Amccall) ' source=source status='active ' released='2020 ' category='[:Category:Plugins](:Category:Plugins "wikilink"), [:Category:Colocalization](:Category:Colocalization "wikilink") ' %}
 
 This plugin attempts to determine the average distance between non-randomly spatially associated particles, the standard deviation of that distance (which should also reflect the width of the PSF in the image for diffraction limited images), and a statistical measure of confidence of the association. It currently works on 2D/3D single-channel images, and requires a mask of all possible localizations for the signal in one of the images.
 
@@ -22,7 +22,11 @@ Available on the list of [ImageJ updates sites](Update_Sites "wikilink"). Requir
 
 **How it works:**
 
-{% include thumbnail src="/images/pages/Colocbycorrelation-correlationimage.jpg" title="Correlation Image" %}
+
+{% capture title%}
+ Correlation Image 
+{% endcapture %}
+{% include thumbnail src="/images/pages/ColocByCorrelation-CorrelationImage.jpg" title=title %}
 
 The plugin performs a cross-correlation in frequency space to create a correlation image. To remove non-specific correlations (from background, or high signal density), a correlation image generated from randomized images is then subtracted from the original correlation image. This occurs through cycles of:
 
@@ -32,7 +36,11 @@ The plugin performs a cross-correlation in frequency space to create a correlati
 
 After the subtraction of non-specific correlations, we generate a radial profile of this data and fit a gaussian curve to it, showing the correlation between the images at different offsets. We also generate a radial profile for the original correlation data before subtraction, as this is needed to establish a measure of confidence. The confidence is calculated as the area under the curve (AUC) of the subtracted correlation radial profile (in the range of mean ± 3×sigma) divided by the AUC of the original correlation radial profile (in same range) as a percentage. The confidence value, along with the mean and sigma of the gaussian fit are displayed in a log window. Higher values of confidence, closer to 100, indicate that two images likely have a true spatial correlation at the indicated distance.
 
-{% include thumbnail src="/images/pages/Colocbycorrelate-graph.jpeg" title="Radial profile of correlation image shown above" %}
+
+{% capture title%}
+ Radial profile of correlation image shown above 
+{% endcapture %}
+{% include thumbnail src="/images/pages/ColocByCorrelate-Graph.jpeg" title=title %}
 
 **Preparing images:**
 

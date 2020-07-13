@@ -21,7 +21,7 @@ Miji;
 
 will start a Fiji inside [MATLAB](MATLAB "wikilink").
 
-{% include warning-box message='There are over 300 jar and plugin files that ship with Fiji, and depending on your operating system and configuration, you may run into """too many files open""" errors (for example, on OSX [MATLAB](MATLAB "wikilink") seems to use the default soft limit for open files, which is typically 256). If this happens you will need to increase the open file limit per-session or system-wide. See [this guide](http://docs.basho.com/riak/latest/ops/tuning/open-files-limit/) for helpful instructions on doing so for OSX and Linux.' %}
+{% include warning-box message='There are over 300 jar and plugin files that ship with Fiji, and depending on your operating system and configuration, you may run into """too many files open""" errors (for example, on OSX [MATLAB](MATLAB "wikilink") seems to use the default soft limit for open files, which is typically 256). If this happens you will need to increase the open file limit per-session or system-wide. See [this guide](http://docs.basho.com/riak/latest/ops/tuning/open-files-limit/) for helpful instructions on doing so for OSX and Linux. ' %}
 
 # Getting started
 
@@ -91,7 +91,7 @@ MIJ.help
 Further descriptions and example code can be found on [the home page for MIJ](http://bigwww.epfl.ch/sage/soft/mij/). Eventually, detailed documentation about the class MIJ can be found [here](http://bigwww.epfl.ch/sage/soft/mij/doc/index.html) (suitable if you have a bit of experience with Java).
 
   
-![MIJ\_Splash.jpg](/images/pages/MIJ_Splash.jpg "MIJ_Splash.jpg")
+![MIJ\_Splash.jpg](/images/pages/MIJ Splash.jpg "MIJ Splash.jpg")
 
 # Alternative: do not start the Fiji GUI
 

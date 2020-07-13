@@ -8,7 +8,11 @@ categories: News
 description: test description
 ---
 
-![Cover of the July 2012 issue of Nature Methods with a mosaic by Pavel Tomancak](/images/pages/NM_cover.jpg "Cover of the July 2012 issue of Nature Methods with a mosaic by Pavel Tomancak")
+
+{% capture title%}
+ Cover of the July 2012 issue of Nature Methods with a mosaic by Pavel Tomancak 
+{% endcapture %}
+{% include thumbnail src="/images/pages/NM cover.jpg" title=title %}
 
 Nature Methods July issue [focuses](http://www.nature.com/nmeth/focus/bioimageinformatics/index.html) on Bioimage Informatics and there are several papers dealing with or using Fiji.
 

@@ -20,9 +20,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='scottreen' repo='PillarTracker' %}
+{% include github org='scottreen ' repo='PillarTracker ' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='PillarTracker' author=author maintainer=maintainer source=source released='June 2017' latest-version='"""1.1.6 May 2018"""' status='stable, active' category='[Tracking](:Category:Tracking "wikilink"), [Visualization](:Category:Visualization "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Analysis](:Category:Analysis "wikilink"), [Plugins](:Category:Plugins "wikilink")' %}
+{% include info-box software='ImageJ/Fiji ' name='PillarTracker ' author=author maintainer=maintainer source=source released='June 2017 ' latest-version='"""1.1.6 May 2018""" ' status='stable, active ' category='[Tracking](:Category:Tracking "wikilink"), [Visualization](:Category:Visualization "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Analysis](:Category:Analysis "wikilink"), [Plugins](:Category:Plugins "wikilink") ' %}
 
 </div>
 

@@ -74,7 +74,7 @@ Note that this is an example of creating an object in JRuby; you use the usual S
 
 ### Importing classes
 
-If you need to use classes that aren't in the java.\* or ij.\* hierarchy—or if you are developing JRuby scripts in the [Script Editor](Script_Editor "wikilink")—you will have to include them explicitly. {% include importing-classes lang='JRuby' %} For example, in the classpath of [Fiji](Fiji "wikilink") there is a useful class called util.BatchOpener, that has static methods for opening files as arrays of ImagePlus objects (one per channel) without showing them. To use these methods, you would have to do:
+If you need to use classes that aren't in the java.\* or ij.\* hierarchy—or if you are developing JRuby scripts in the [Script Editor](Script_Editor "wikilink")—you will have to include them explicitly. {% include importing-classes lang='JRuby ' %} For example, in the classpath of [Fiji](Fiji "wikilink") there is a useful class called util.BatchOpener, that has static methods for opening files as arrays of ImagePlus objects (one per channel) without showing them. To use these methods, you would have to do:
 
 ` >>> java_import 'util.BatchOpener'`  
 ` util.BatchOpener`
@@ -207,7 +207,7 @@ or:
 
 ` image = get_image`
 
-The "run" method may also be particularly useful for calling existing ImageJ plugins and commands. The next section has an example of the use of this. It may be instructive to compare the ["Blobs Demo" macro](https://imagej.net/macros/ConvexHull.txt) from the ImageJ distribution with {% include github repo='fiji' path='plugins/Examples/Blobs\_Demo\_in\_Ruby.rb' label='a version ported to JRuby' %}. The use of the analagous function in JRuby is not always the same - for example, if you compare the invocation of getSelectionCoordinates, you'll find that whereas the ImageJ macro version passes in the output variables:
+The "run" method may also be particularly useful for calling existing ImageJ plugins and commands. The next section has an example of the use of this. It may be instructive to compare the ["Blobs Demo" macro](https://imagej.net/macros/ConvexHull.txt) from the ImageJ distribution with {% include github repo='fiji ' path='plugins/Examples/Blobs\_Demo\_in\_Ruby.rb ' label='a version ported to JRuby ' %}. The use of the analagous function in JRuby is not always the same - for example, if you compare the invocation of getSelectionCoordinates, you'll find that whereas the ImageJ macro version passes in the output variables:
 
 ` getSelectionCoordinates(xCoordinates, yCoordinates);`
 
@@ -215,7 +215,7 @@ The "run" method may also be particularly useful for calling existing ImageJ plu
 
 ` x_coordinates, y_coordinates = get_selection_coordinates`
 
-A note for the interested programmer: About 15% of the macro functions have be done so far, and if anyone wanted to help out with doing the rest, that would be excellent\! The source code {% include github repo='fiji' path='plugins/JRuby/imagej.rb' label='can be found here' %}.
+A note for the interested programmer: About 15% of the macro functions have be done so far, and if anyone wanted to help out with doing the rest, that would be excellent\! The source code {% include github repo='fiji ' path='plugins/JRuby/imagej.rb ' label='can be found here ' %}.
 
 ## Example: Generating Red/Cyan Anaglyphs
 
@@ -246,11 +246,11 @@ Some example output:
 
 When using [Script Parameters](Script_Parameters "wikilink"), e.g., in the [Script Editor](Script_Editor "wikilink"), you need to use a `$` before `@ variables`, due to a limitation in the scoping, as in this example from [Script Templates](Script_Templates "wikilink"):
 
-{% include github-embed org='scijava' repo='scripting-jruby' path='src/main/resources/script\_templates/Intro/Greeting.rb' label='Greeting.rb' %}
+{% include github-embed org='scijava ' repo='scripting-jruby ' path='src/main/resources/script\_templates/Intro/Greeting.rb ' label='Greeting.rb ' %}
 
 ## Library
 
-There is a library called {% include github repo='fiji' path='plugins/JRuby/imagej.rb' label='imagej.rb' %} for convenience. It contains a number of useful functions related to ImageJ. It is loaded by default when creating a new JRuby script in the [Script Editor](Script_Editor "wikilink").
+There is a library called {% include github repo='fiji ' path='plugins/JRuby/imagej.rb ' label='imagej.rb ' %} for convenience. It contains a number of useful functions related to ImageJ. It is loaded by default when creating a new JRuby script in the [Script Editor](Script_Editor "wikilink").
 
 ## What next?
 

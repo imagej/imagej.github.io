@@ -16,7 +16,7 @@ See also http://www.optinav.info/Helmholtz_Analysis.htm
 
 With an artificial example input like this:
 
-![Helmholtz\_Input.png](/images/pages/Helmholtz_Input.png "Helmholtz_Input.png")
+![Helmholtz\_Input.png](/images/pages/Helmholtz Input.png "Helmholtz Input.png")
 
 and parameters like this:
 

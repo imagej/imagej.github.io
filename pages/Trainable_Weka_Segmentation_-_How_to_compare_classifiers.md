@@ -22,7 +22,7 @@ To get started, open the 2D image or stack you want to work on and launch the [T
 
 For this tutorial, we used one of the TEM sections from [ Albert Cardona's public data set](public_data_sets "wikilink").
 
-After loading, the main GUI of the plugin will pop up: ![screenshot-AWS-startup.png](/images/pages/screenshot-AWS-startup.png "screenshot-AWS-startup.png")
+After loading, the main GUI of the plugin will pop up: ![screenshot-AWS-startup.png](/images/pages/Screenshot-AWS-startup.png "screenshot-AWS-startup.png")
 
 ### Gathering training samples
 

@@ -10,19 +10,19 @@ description: test description
 
 ![Mifqc.png](/images/pages/Mifqc.png "Mifqc.png") 
 {% capture source%}
-{% include github org='fiji' repo='microscope-image-quality' tag='microscope-image-quality-0.1.0' %}
+{% include github org='fiji ' repo='microscope-image-quality ' tag='microscope-image-quality-0.1.0 ' %}
 {% endcapture %}
 
 {% capture release%}
-{% include maven g='sc.fiji' a='microscope-image-quality' v='0.1.0' label='0.1.0' %}
+{% include maven g='sc.fiji ' a='microscope-image-quality ' v='0.1.0 ' label='0.1.0 ' %}
 {% endcapture %}
 
 {% capture devStatus%}
-{% include devstatus developer='yes' incubating='yes' obsolete='no' %}
+{% include devstatus developer='yes ' incubating='yes ' obsolete='no ' %}
 {% endcapture %}
 
 {% capture supportStatus%}
-{% include supportstatus debugger='yes' reviewer='yes' support='yes' %}
+{% include supportstatus debugger='yes ' reviewer='yes ' support='yes ' %}
 {% endcapture %}
 
 {% capture founders%}
@@ -56,7 +56,7 @@ description: test description
 {% capture contributors%}
 {% include person content='samueljyang' %}, {% include person content='asimshankar' %}
 {% endcapture %}
-{% include component name='Microscope Image Focus Quality Classifier' url='https://imagej.net/Microscope\_Focus\_Quality' source=source license='[Apache](Apache "wikilink")' release=release devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers contributors=contributors %}This plugin assesses the focus quality of microscope images, classifying the image in tiles.
+{% include component name='Microscope Image Focus Quality Classifier ' url='https://imagej.net/Microscope\_Focus\_Quality ' source=source license='[Apache](Apache "wikilink") ' release=release devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers contributors=contributors %}This plugin assesses the focus quality of microscope images, classifying the image in tiles.
 
 ## Summary
 

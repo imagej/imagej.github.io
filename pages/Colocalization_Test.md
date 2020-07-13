@@ -14,9 +14,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji' repo='Colocalisation\_Analysis' source='Colocalisation\_Test.java' %}, modified from [MBF ImageJ](MBF_ImageJ "wikilink")
+{% include github org='fiji ' repo='Colocalisation\_Analysis ' source='Colocalisation\_Test.java ' %}, modified from [MBF ImageJ](MBF_ImageJ "wikilink")
 {% endcapture %}
-{% include info-box name='Colocalization Test' software='ImageJ - Fiji' author='Tony Collins (and others?)' maintainer=maintainer filename='Colocalization.jar' source=source latest-version='june 2009' website='[Colocalization Analysis\#Colocalization\_Test](Colocalization_Analysis#Colocalization_Test "wikilink")' status='<span style="color:red">Deprecated, use [Coloc 2](Coloc_2 "wikilink") instead.</span>' %}
+{% include info-box name='Colocalization Test ' software='ImageJ - Fiji ' author='Tony Collins (and others?) ' maintainer=maintainer filename='Colocalization.jar ' source=source latest-version='june 2009 ' website='[Colocalization Analysis\#Colocalization\_Test](Colocalization_Analysis#Colocalization_Test "wikilink") ' status='<span style="color:red">Deprecated, use [Coloc 2](Coloc_2 "wikilink") instead.</span> ' %}
 
 ## Purpose
 

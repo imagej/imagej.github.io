@@ -17,7 +17,7 @@ description: test description
 {% include github%}
 
 {% endcapture %}
-{% include info-box name='RiFRET' software='ImageJ' author='J. Roszik, D. Lisboa, J. Szöllosi, G. Vereb' maintainer=maintainer source=source released='2009' status='active' category='[:Category:Plugins](:Category:Plugins "wikilink") [:Category:Citable](:Category:Citable "wikilink")' website=' https://biophys.med.unideb.hu/en/rifret ' %}
+{% include info-box name='RiFRET ' software='ImageJ ' author='J. Roszik, D. Lisboa, J. Szöllosi, G. Vereb ' maintainer=maintainer source=source released='2009 ' status='active ' category='[:Category:Plugins](:Category:Plugins "wikilink") [:Category:Citable](:Category:Citable "wikilink") ' website=' https://biophys.med.unideb.hu/en/rifret ' %}
 
 **An ImageJ plugin for intensity-based three filter-set FRET**
 

@@ -16,11 +16,11 @@ description: test description
 {% capture maintainer%}
 {% include person content='Twagner' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='Shape Filter Plugin' author=author maintainer=maintainer filename='shape\_filter\_x.y.z.jar [\[1](https://github.com/thorstenwagner/ij-shape-filter/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-shape-filter) \]' latest-version='v1.4.2 (14 July 2016)' status='active' %}
+{% include info-box software='ImageJ/Fiji ' name='Shape Filter Plugin ' author=author maintainer=maintainer filename='shape\_filter\_x.y.z.jar [\[1](https://github.com/thorstenwagner/ij-shape-filter/releases/latest) \] ' source='Github [\[2](https://github.com/thorstenwagner/ij-shape-filter) \] ' latest-version='v1.4.2 (14 July 2016) ' status='active ' %}
 
 # General Description
 
-The ImageJ Shape Filter Plugin use the [\[ij-blob](https://github.com/thorstenwagner/ij-blob)\] library to characterize and filter objects in binary scenes by its shape. Therefore, several features are calculated as shown below. ![Shape\_Filter\_GUI.png](/images/pages/Shape_Filter_GUI.png "Shape_Filter_GUI.png")
+The ImageJ Shape Filter Plugin use the [\[ij-blob](https://github.com/thorstenwagner/ij-blob)\] library to characterize and filter objects in binary scenes by its shape. Therefore, several features are calculated as shown below. ![Shape\_Filter\_GUI.png](/images/pages/Shape Filter GUI.png "Shape Filter GUI.png")
 
 If you like to cite the Shape Filter plugin in a scientific publication, please cite:
 

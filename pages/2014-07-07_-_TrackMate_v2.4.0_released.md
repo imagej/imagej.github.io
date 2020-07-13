@@ -14,7 +14,7 @@ We just released a new minor version of [TrackMate](TrackMate "wikilink"), that 
 
   - TrackScheme now has an outline panel, useful to navigate in large models.
 
-![TrackMate\_TrackSchemeOutline.png](/images/pages/TrackMate_TrackSchemeOutline.png "TrackMate_TrackSchemeOutline.png")
+![TrackMate\_TrackSchemeOutline.png](/images/pages/TrackMate TrackSchemeOutline.png "TrackMate TrackSchemeOutline.png")
 
   - TrackScheme has a better layout for tracks that have merge and split events.
 

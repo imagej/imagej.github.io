@@ -67,7 +67,7 @@ Stack Sorter: “*Image/Stacks/Tools/Stack Sorter*”.
   - Control the position of individual slices or groups of slices.
   - Advanced “Insert” functionality.
 
-![stack\_slice\_manipulations1.png](/images/pages/stack_slice_manipulations1.png "stack_slice_manipulations1.png")
+![stack\_slice\_manipulations1.png](/images/pages/Stack slice manipulations1.png "stack slice manipulations1.png")
 
 ## Stack dimension manipulations
 
@@ -89,11 +89,11 @@ To use this plugin, select an ROI which will become the final frame, but do not 
 
 Image with selected ROI
 
-![zoomify\_start.png](/images/pages/zoomify_start.png "zoomify_start.png")
+![zoomify\_start.png](/images/pages/Zoomify start.png "zoomify start.png")
 
 Series generated with zoomify
 
-![zoomify\_montage.png](/images/pages/zoomify_montage.png "zoomify_montage.png")
+![zoomify\_montage.png](/images/pages/Zoomify montage.png "zoomify montage.png")
 
 ## Align slices in stack
 
@@ -105,10 +105,10 @@ P. Thévenaz, U.E. Ruttimann, M. Unser, "[A Pyramid Approach to Subpixel Registr
 
 Time series before alignment
 
-![pre\_alignment.png](/images/pages/pre_alignment.png "pre_alignment.png")
+![pre\_alignment.png](/images/pages/Pre alignment.png "pre alignment.png")
 
 After
 
-![after\_alignment.png](/images/pages/after_alignment.png "after_alignment.png")
+![after\_alignment.png](/images/pages/After alignment.png "after alignment.png")
 
 [Category:Cookbook](Category:Cookbook "wikilink") [Category:Tutorials](Category:Tutorials "wikilink")

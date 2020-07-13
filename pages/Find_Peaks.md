@@ -14,13 +14,13 @@ description: test description
 {% endcapture %}
 
 {% capture filename%}
-{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/Find\_Peaks.bsh' %}
+{% include github org='tferr ' repo='Scripts ' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/Find\_Peaks.bsh ' %}
 {% endcapture %}
 
 {% capture source%}
-{% include github org='tferr' repo='Scripts' path='README.md\#data-analysis' %}
+{% include github org='tferr ' repo='Scripts ' path='README.md\#data-analysis ' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='Find Peaks' maintainer='[ BAR update site](BAR "wikilink")' author=author filename=filename source=source released='February 2014' category='[Analysis](:Category:Analysis "wikilink"), [Scripting](:Category:Scripting "wikilink"), [Plugins](:Category:Plugins "wikilink")' %}
+{% include info-box software='ImageJ/Fiji ' name='Find Peaks ' maintainer='[ BAR update site](BAR "wikilink") ' author=author filename=filename source=source released='February 2014 ' category='[Analysis](:Category:Analysis "wikilink"), [Scripting](:Category:Scripting "wikilink"), [Plugins](:Category:Plugins "wikilink") ' %}
 
 A [BAR](BAR "wikilink") script (written in [BeanShell](Beanshell_Scripting "wikilink")) that retrieves local maxima and minima from an ImageJ plot. The easiest way to install *Find Peaks* is by [subscribing](BAR#Installation "wikilink") to the BAR {% include list-of-update-sites content='update site' %}.
 

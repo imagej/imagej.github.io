@@ -8,7 +8,11 @@ categories: Plugins,Transform
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:SplineDeformationGenerator\_' %}![SplineDeformationGenerator available image deformations](/images/pages/Spline-deformations-examples.gif "SplineDeformationGenerator available image deformations")
+{% include component-stats content=':sc.fiji:SplineDeformationGenerator\_' %}
+{% capture title%}
+ SplineDeformationGenerator available image deformations 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Spline-deformations-examples.gif" title=title %}
 
 **SplineDeformationGenerator** is an image processing interface for image deformations developed as an ImageJ plugin. It can perform 5 different types of image deformations:
 

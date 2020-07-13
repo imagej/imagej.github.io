@@ -12,7 +12,7 @@ description: test description
 {% capture maintainer%}
 {% include person content='Rueden' %}
 {% endcapture %}
-{% include info-box name='SciJava' software='SciJava' logo='![Scijava-logo.png](/images/pages/Scijava-logo.png "Scijava-logo.png")' author=' [SciJava consortium](https://scijava.org/) ' maintainer=maintainer source=' [on GitHub](https://github.com/scijava) ' status='Active' website='https://scijava.org/' %}SciJava is a collaboration of projects providing software for scientific computing—an effort to cooperate and reuse code when feasible.
+{% include info-box name='SciJava ' software='SciJava ' logo='![Scijava-logo.png](/images/pages/Scijava-logo.png "Scijava-logo.png") ' author=' [SciJava consortium](https://scijava.org/) ' maintainer=maintainer source=' [on GitHub](https://github.com/scijava) ' status='Active ' website='https://scijava.org/ ' %}SciJava is a collaboration of projects providing software for scientific computing—an effort to cooperate and reuse code when feasible.
 
 ## The SciJava component collection
 
@@ -36,6 +36,6 @@ The following projects are part of the **[SciJava pledge](:Category:SciJava "wik
 |                                      |                                                                             |                                                               |                                                               |                                                                                                      |
 | ------------------------------------ | --------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | {% include logo content='ImageJ2' %} | <a href="CellProfiler"><img src="/images/pages/Cellprofiler-logo.png" height="64px"/></a> | <a href="KNIME"><img src="/images/pages/Knime-logo.jpg" height="54px"/></a> | <a href="OMERO"><img src="/images/pages/Omero-logo.png" height="32px"/></a> | <a href="https://github.com/scenerygraphics/scenery"><img src="/images/pages/Scenery-logo.png" height="72px"/></a> |
-| {% include logo content='Fiji' %}    | <a href="Icy"><img src="/images/pages/Icy-logo.png" height="48px"/></a>                   | {% include logo content='Micro-Manager' size='48px' %}   | {% include logo content='VCell' size='48px' %}           | <a href="Bio-Formats"><img src="/images/pages/Bio-formats-logo.png" height="28px"/></a>                            |
+| {% include logo content='Fiji' %}    | <a href="Icy"><img src="/images/pages/Icy-logo.png" height="48px"/></a>                   | {% include logo content='Micro-Manager' size='48px ' %}  | {% include logo content='VCell' size='48px ' %}          | <a href="Bio-Formats"><img src="/images/pages/Bio-formats-logo.png" height="28px"/></a>                            |
 
 See the [Architecture](Architecture "wikilink") and [Governance](Governance "wikilink") pages, as well as the [SciJava web site](https://scijava.org/), for further details.

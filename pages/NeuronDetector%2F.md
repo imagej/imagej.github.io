@@ -30,7 +30,7 @@ Please cite:
 
 Example video obtained with GCampf6 marker | Processed video | Object map obtained with [3D Objects Counter](https://imagej.net/3D_Objects_Counter)
 
-![Example\_neuron\_activation\_300.gif](/images/pages/Example_neuron_activation_300.gif "Example_neuron_activation_300.gif") ![example\_neurons\_activation\_postprocessed\_300.gif](/images/pages/example_neurons_activation_postprocessed_300.gif "example_neurons_activation_postprocessed_300.gif") ![example\_neurons\_activation\_objects\_map\_300.gif](/images/pages/example_neurons_activation_objects_map_300.gif "example_neurons_activation_objects_map_300.gif")
+![Example\_neuron\_activation\_300.gif](/images/pages/Example neuron activation 300.gif "Example neuron activation 300.gif") ![example\_neurons\_activation\_postprocessed\_300.gif](/images/pages/Example neurons activation postprocessed 300.gif "example neurons activation postprocessed 300.gif") ![example\_neurons\_activation\_objects\_map\_300.gif](/images/pages/Example neurons activation objects map 300.gif "example neurons activation objects map 300.gif")
 
 -----
 

@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='imcf' repo='noisee' %}
+{% include github org='imcf ' repo='noisee ' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='NoiSee' logo='![Noisee-logo.png](/images/pages/Noisee-logo.png "Noisee-logo.png")' author=author maintainer=maintainer update-site='NoiSee' source=source released='2018' status='active' category='[Analysis](:Category:Analysis "wikilink")' %}
+{% include info-box software='ImageJ ' name='NoiSee ' logo='![Noisee-logo.png](/images/pages/Noisee-logo.png "Noisee-logo.png") ' author=author maintainer=maintainer update-site='NoiSee ' source=source released='2018 ' status='active ' category='[Analysis](:Category:Analysis "wikilink") ' %}
 
 **NoiSee** - An easy-to-use ImageJ macro suite for measuring SNR (signal-to-noise ratio) of confocal microscopes.
 

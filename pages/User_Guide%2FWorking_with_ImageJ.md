@@ -104,7 +104,7 @@ In addition, ImageJ features a find function that locates macros, scripts and pl
 
 <div class="center">
 
-![figure images/CommandFinderAndSearch.png](/images/pages/images/CommandFinderAndSearch.png "figure images/CommandFinderAndSearch.png")
+![figure images/CommandFinderAndSearch.png](/images/pages/Images/CommandFinderAndSearch.png "figure images/CommandFinderAndSearch.png")
 
 </div>
 
@@ -306,7 +306,7 @@ Most ImageJ filters will, as an option, process all the slices in a stack. Image
 
 <div class="figure">
 
-![figure images/StacksHyperstacks.png](/images/pages/images/StacksHyperstacks.png "figure images/StacksHyperstacks.png")
+![figure images/StacksHyperstacks.png](/images/pages/Images/StacksHyperstacks.png "figure images/StacksHyperstacks.png")
 
 <div class="caption">
 
@@ -359,7 +359,7 @@ float-infobox4 Opening Virtual Stacks by Drag & Drop
 
 </div>
 
-TIFF stacks with a <span class="Filename">.tif</span> extension open as virtual stacks when dragged and dropped on the<span class="sans"> ![figure images/tools/Switcher-small.png](/images/pages/images/tools/Switcher-small.png "figure images/tools/Switcher-small.png")  </span>toolbar icon.
+TIFF stacks with a <span class="Filename">.tif</span> extension open as virtual stacks when dragged and dropped on the<span class="sans"> ![figure images/tools/Switcher-small.png](/images/pages/Images/tools/Switcher-small.png "figure images/tools/Switcher-small.png")  </span>toolbar icon.
 
 <div class="medskip">
 
@@ -369,7 +369,7 @@ TIFF stacks with a <span class="Filename">.tif</span> extension open as virtual 
 
 <div class="center">
 
-![figure images/DragAndDropVirtualTiff.png](/images/pages/images/DragAndDropVirtualTiff.png "figure images/DragAndDropVirtualTiff.png")
+![figure images/DragAndDropVirtualTiff.png](/images/pages/Images/DragAndDropVirtualTiff.png "figure images/DragAndDropVirtualTiff.png")
 
 </div>
 
@@ -419,7 +419,7 @@ As described in [Image Types and Formats↑](#sec:Image-Types "wikilink"), true 
 
 <div class="figure" style="max-width: 100%;">
 
-![figure images/RGB-HSBcolorModels.png](/images/pages/images/RGB-HSBcolorModels.png "figure images/RGB-HSBcolorModels.png")
+![figure images/RGB-HSBcolorModels.png](/images/pages/Images/RGB-HSBcolorModels.png "figure images/RGB-HSBcolorModels.png")
 
 <div class="caption">
 
@@ -451,7 +451,7 @@ People see color with significant variations. Indeed, the popular phrase “One 
 
 <div class="figure" style="max-width: 100%;">
 
-![figure images/Dichromacy.png](/images/pages/images/Dichromacy.png "figure images/Dichromacy.png")
+![figure images/Dichromacy.png](/images/pages/Images/Dichromacy.png "figure images/Dichromacy.png")
 
 <div class="caption">
 
@@ -590,7 +590,7 @@ Properties… \[y\]
 
 <div class="figure" style="max-width: 88%;">
 
-![figure images/Selections.png](/images/pages/images/Selections.png "figure images/Selections.png")
+![figure images/Selections.png](/images/pages/Images/Selections.png "figure images/Selections.png")
 
 <div class="caption">
 
@@ -626,7 +626,7 @@ Most of commands that can be useful in defining or drawing selections are availa
 
 <div class="Labeling">
 
-**Moving** Selections can be moved by clicking and dragging as long as the cursor is within the selection and has changed to an ![figure images/pointers/Pointer-Arrow.png](/images/pages/images/pointers/Pointer-Arrow.png "figure images/pointers/Pointer-Arrow.png") . The status bar displays the coordinates of the upper left corner of the selection (or the bounding rectangle for non-rectangular selections) as it is being moved. To move the contents of a selection, rather than the selection itself, <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ \[\[\#sub:Copy%5Bc%5D|Copy \[c\]↓\]\]</span></span></span>, <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ \[\[\#sub:Paste%5Bv%5D|Paste \[v\]↓\]\]</span></span></span>, and then click within the selection and drag.
+**Moving** Selections can be moved by clicking and dragging as long as the cursor is within the selection and has changed to an ![figure images/pointers/Pointer-Arrow.png](/images/pages/Images/pointers/Pointer-Arrow.png "figure images/pointers/Pointer-Arrow.png") . The status bar displays the coordinates of the upper left corner of the selection (or the bounding rectangle for non-rectangular selections) as it is being moved. To move the contents of a selection, rather than the selection itself, <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ \[\[\#sub:Copy%5Bc%5D|Copy \[c\]↓\]\]</span></span></span>, <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ \[\[\#sub:Paste%5Bv%5D|Paste \[v\]↓\]\]</span></span></span>, and then click within the selection and drag.
 
 </div>
 
@@ -652,7 +652,7 @@ Most of commands that can be useful in defining or drawing selections are availa
 
 <div class="figure">
 
-![figure images/compositeROI.png](/images/pages/images/compositeROI.png "figure images/compositeROI.png")
+![figure images/compositeROI.png](/images/pages/Images/compositeROI.png "figure images/compositeROI.png")
 
 </div>
 
@@ -692,7 +692,7 @@ Since ImageJ 1.46, selections can be defined with [subpixel accuracy](http://en.
 
 <div class="figure">
 
-![figure images/SubPixel.png](/images/pages/images/SubPixel.png "figure images/SubPixel.png")
+![figure images/SubPixel.png](/images/pages/Images/SubPixel.png "figure images/SubPixel.png")
 
 <div class="caption">
 
@@ -720,7 +720,7 @@ Figure 7 **Interpolated selections.** ROIs drawn with (left) or without (middl
 
 <div class="figure" style="max-width: 75%;">
 
-![figure images/OverlayShowcase.png](/images/pages/images/OverlayShowcase.png "figure images/OverlayShowcase.png")
+![figure images/OverlayShowcase.png](/images/pages/Images/OverlayShowcase.png "figure images/OverlayShowcase.png")
 
 <div class="caption">
 
@@ -778,7 +778,7 @@ Currently, the support for [↓](#index-ThreeD-ROIs_3D-ROIs "wikilink")[↓](#in
 
 <div class="figure" style="max-width: 70%;">
 
-![figure images/3Dviewer.png](/images/pages/images/3Dviewer.png "figure images/3Dviewer.png")
+![figure images/3Dviewer.png](/images/pages/Images/3Dviewer.png "figure images/3Dviewer.png")
 
 <div class="caption">
 

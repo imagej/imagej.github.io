@@ -40,7 +40,7 @@ Which method segments your data best? You can attempt to answer this question us
 
 Original image
 
-![epithm2.png](/images/pages/epithm2.png "epithm2.png")
+![epithm2.png](/images/pages/Epithm2.png "epithm2.png")
 
 Try all methods.
 
@@ -61,11 +61,11 @@ The method uses a user-provided *contrast threshold*. If the *local contrast* (m
 `else`  
 ` pixel = ( pixel >= mid_gray ) ? object : background`
 
-  - {% include citation last='Bernsen' first='J' year='1986' journal='Proc. of the 8th Int. Conf. on Pattern Recognition' title='Dynamic Thresholding of Grey-Level Images' %}
+  - {% include citation last='Bernsen ' first='J ' year='1986 ' journal='Proc. of the 8th Int. Conf. on Pattern Recognition ' title='Dynamic Thresholding of Grey-Level Images ' %}
 
 <!-- end list -->
 
-  - {% include citation last='Sezgin' first='M' last2='Sankur' first2='B' year='2004' journal='Journal of Electronic Imaging' title='Survey over Image Thresholding Techniques and Quantitative Performance Evaluation' volume='13(1)' pages='146-165' url='http://webdocs.cs.ualberta.ca/\~nray1/CMPUT605/track3\_papers/Threshold\_survey.pdf' %}
+  - {% include citation last='Sezgin ' first='M ' last2='Sankur ' first2='B ' year='2004 ' journal='Journal of Electronic Imaging ' title='Survey over Image Thresholding Techniques and Quantitative Performance Evaluation ' volume='13(1) ' pages='146-165 ' url='http://webdocs.cs.ualberta.ca/\~nray1/CMPUT605/track3\_papers/Threshold\_survey.pdf ' %}
 
 Based on ME Celebi's fourier\_0.8 routines [1](http://sourceforge.net/projects/fourier-ipal) and [2](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
@@ -73,7 +73,7 @@ Based on ME Celebi's fourier\_0.8 routines [1](http://sourceforge.net/projects/f
 
 Based on a simple contrast toggle. Sets the pixel value to either white (255) or black (0) depending on whether its current value is closest to the local maximum or minimum respectively. The procedure is an extreme case of Toggle Contrast Enhancement, see for example:
 
-  - {% include citation last='Soille' first='P' year='2004' title='Morphological Image Analysis: Principles and applications. Springer' pages='259' %}
+  - {% include citation last='Soille ' first='P ' year='2004 ' title='Morphological Image Analysis: Principles and applications. Springer ' pages='259 ' %}
 
 This procedure does not have user-provided parameters other than the kernel radius.
 
@@ -123,7 +123,7 @@ Implements Niblack's thresholding method:
 
 **Parameter 2**: is the *C value*. This is an offset with a default value of 0. Any other number than 0 will change its value. This parameter was added in version 1.3 and is not part of the original implementation of the algorithm. The original algorithm is applied when C = 0.
 
-  - {% include citation last='Niblack' first='W' year='1986' journal='' title='An introduction to Digital Image Processing, Prentice-Hall' %}
+  - {% include citation last='Niblack ' first='W ' year='1986 ' journal=' ' title='An introduction to Digital Image Processing, Prentice-Hall ' %}
 
 Ported from ME Celebi's fourier\_0.8 routines [3](http://sourceforge.net/projects/fourier-ipal) and [4](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
@@ -131,7 +131,7 @@ Ported from ME Celebi's fourier\_0.8 routines [3](http://sourceforge.net/project
 
 Implements a local version of Otsu's global threshold clustering. The algorithm searches for the threshold that minimizes the intra-class variance, defined as a weighted sum of variances of the two classes. The local set is a circular ROI and the central pixel is tested against the Otsu threshold found for that region.
 
-  - {% include citation last='Otsu' first='N' year='1979' journal='IEEE Trans. Sys., Man., Cyber.' url='http://ieeexplore.ieee.org/xpl/freeabs\_all.jsp?\&arnumber=4310076' title='A threshold selection method from gray-level histograms' volume='9' pages='62-66' doi='10.1109/TSMC.1979.4310076' %}
+  - {% include citation last='Otsu ' first='N ' year='1979 ' journal='IEEE Trans. Sys., Man., Cyber. ' url='http://ieeexplore.ieee.org/xpl/freeabs\_all.jsp?\&arnumber=4310076 ' title='A threshold selection method from gray-level histograms ' volume='9 ' pages='62-66 ' doi='10.1109/TSMC.1979.4310076 ' %}
 
 See also the [Wikipedia article on Otsu's method](wikipedia:Otsu's_method "wikilink").
 
@@ -141,7 +141,7 @@ Ported from C++ code by Jordan Bevik.
 
 This is a modification of Sauvola's thresholding method to deal with low contrast images.
 
-  - {% include citation last='Phansalskar' first='N' last2='More' first2='S' last3='Sabale' first3='A' last4='Joshi' first4='M' year='2011' journal='International Conference on Communications and Signal Processing (ICCSP)' url='https://ieeexplore.ieee.org/document/5739305/' pages='218-220' title='Adaptive local thresholding for detection of nuclei in diversity stained cytology images.' doi='10.1109/ICCSP.2011.5739305' %}
+  - {% include citation last='Phansalskar ' first='N ' last2='More ' first2='S ' last3='Sabale ' first3='A ' last4='Joshi ' first4='M ' year='2011 ' journal='International Conference on Communications and Signal Processing (ICCSP) ' url='https://ieeexplore.ieee.org/document/5739305/ ' pages='218-220 ' title='Adaptive local thresholding for detection of nuclei in diversity stained cytology images. ' doi='10.1109/ICCSP.2011.5739305 ' %}
 
 In this method, the threshold t is computed as:
 
@@ -165,7 +165,7 @@ Implements Sauvola's thresholding method, which is a variation of Niblack's meth
 
 **Parameter 2**: is the *r value*. The default value is 128. Any other number than 0 will change the default value
 
-  - {% include citation last='Sauvola' first='J' last2='Pietaksinen' first2='M' year='2000' journal='Pattern Recognition' title='Adaptive Document Image Binarization' volume='33(2)' pages='225-236' url='http://www.ee.oulu.fi/research/mvmp/mvg/files/pdf/pdf\_24.pdf' %}
+  - {% include citation last='Sauvola ' first='J ' last2='Pietaksinen ' first2='M ' year='2000 ' journal='Pattern Recognition ' title='Adaptive Document Image Binarization ' volume='33(2) ' pages='225-236 ' url='http://www.ee.oulu.fi/research/mvmp/mvg/files/pdf/pdf\_24.pdf ' %}
 
 Ported from ME Celebi's fourier\_0.8 routines [5](http://sourceforge.net/projects/fourier-ipal) and [6](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 

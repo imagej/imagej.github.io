@@ -58,11 +58,11 @@ This plugin is designed for two-dimensional serial sections.
 
 The Cluster user interface will open. The cluster must be configured before it may be started.
 
-![Archipelago\_01.png](/images/pages/Archipelago_01.png "Archipelago_01.png")
+![Archipelago\_01.png](/images/pages/Archipelago 01.png "Archipelago 01.png")
 
 #### Configure the Root Node
 
-![Archipelago\_02.png](/images/pages/Archipelago_02.png "Archipelago_02.png")
+![Archipelago\_02.png](/images/pages/Archipelago 02.png "Archipelago 02.png")
 
   - Click the Configure Root Node... button
       - Local Exec Root: The folder containing your local fiji (or ImageJ) executable. This field may disappear in future versions.
@@ -85,7 +85,7 @@ The default is the SSH Shell method, which uses standard IO over ssh for communi
 
 The other option is the Insecure Socket Shell method, which starts the remote nodes by ssh and causes them to connect to an insecure server running on the root node. This may be faster, but should not be used on an unprotected network.
 
-![Archipelago\_03.png](/images/pages/Archipelago_03.png "Archipelago_03.png")
+![Archipelago\_03.png](/images/pages/Archipelago 03.png "Archipelago 03.png")
 
   - Click Configure Cluster Nodes...
 
@@ -93,7 +93,7 @@ This will open the cluster node configuration window
 
   - Click Add Node...
 
-![Archipelago\_04.png](/images/pages/Archipelago_04.png "Archipelago_04.png")
+![Archipelago\_04.png](/images/pages/Archipelago 04.png "Archipelago 04.png")
 
 This will open a dialog for adding a new cluster node, with the following fields:
 
@@ -133,7 +133,7 @@ The default port is 4012.
 
 #### Configuration on a Proprietary Cluster
 
-Archipelago may be run on a proprietary cluster, for instance one running SLURM or qsub, by scripting the creation of an .arc configuration file and passing it as an argument to the Fiji or ImageJ executable. An {% include github org='larrylindsey' repo='Stampede-Fiji-Archipelago' path='job.fiji\#L126' label='example' %} showing how this is done on the vnc queue of the TACC stampede cluster is available.
+Archipelago may be run on a proprietary cluster, for instance one running SLURM or qsub, by scripting the creation of an .arc configuration file and passing it as an argument to the Fiji or ImageJ executable. An {% include github org='larrylindsey ' repo='Stampede-Fiji-Archipelago ' path='job.fiji\#L126 ' label='example ' %} showing how this is done on the vnc queue of the TACC stampede cluster is available.
 
 #### Saving
 
@@ -153,7 +153,7 @@ To allow "volunteer nodes" to attach, click the Start Insecure Server button. Th
 
 #### Show Node Statistics
 
-![Archipelago\_05.png](/images/pages/Archipelago_05.png "Archipelago_05.png")
+![Archipelago\_05.png](/images/pages/Archipelago 05.png "Archipelago 05.png")
 
 Clicking the Show Node Statistics button will open a dialog that displays usage stats for running client nodes:
 
@@ -177,6 +177,6 @@ To make this work, submissions to a Cluster are serialized and transmitted to a 
 
 While many Clusters may exist on a single root node, only one is "official." This instance is referenced by Cluster.getCluster(). Cluster.activeCluster() indicates whether there is existing active Cluster.
 
-An example may be found in {% include github repo='fiji' path='src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Cluster\_SIFT.java' label='Cluster\_SIFT' %}. An example that demonstrates the breakage of deep equality may be found in {% include github repo='fiji' path='src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Equality\_Example.java' label='Equality\_Example' %}
+An example may be found in {% include github repo='fiji ' path='src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Cluster\_SIFT.java ' label='Cluster\_SIFT ' %}. An example that demonstrates the breakage of deep equality may be found in {% include github repo='fiji ' path='src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Equality\_Example.java ' label='Equality\_Example ' %}
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:TrakEM2](Category:TrakEM2 "wikilink")

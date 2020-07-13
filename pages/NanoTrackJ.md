@@ -16,7 +16,7 @@ description: test description
 {% capture maintainer%}
 {% include person content='Twagner' %},
 {% endcapture %}
-{% include info-box software='ImageJFiji' name='NanoTrackJ' author=author maintainer=maintainer filename='nanotrackj.jar [\[1](https://github.com/thorstenwagner/ij-nanotrackj/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-nanotrackj) \]' latest-version='v1.0.3 (22 Feb 2016)' status='active' %}
+{% include info-box software='ImageJFiji ' name='NanoTrackJ ' author=author maintainer=maintainer filename='nanotrackj.jar [\[1](https://github.com/thorstenwagner/ij-nanotrackj/releases/latest) \] ' source='Github [\[2](https://github.com/thorstenwagner/ij-nanotrackj) \] ' latest-version='v1.0.3 (22 Feb 2016) ' status='active ' %}
 
 ## General
 
@@ -78,7 +78,7 @@ The *covariance estimator* is a good alternative to the regression estimator. It
 
 If the plugin finishes analyzing it opens histogram plots for the size distribution and the diffusion coefficient distribution. Please note that for calculating the distribution the track length is used as weighting factor. Furthermore the plugins open result tables for the histogram data (ideal for plotting with other software). The following plot shows a size distribution (using walker's method & covariance estimator) estimated from a suspension with 100nm polystyrene beads (in water, 22C). The video used was captured with a nanosight LM10 microscope. The reported modal value is 98nm.
 
-![Size100nm\_walker.png](/images/pages/Size100nm_walker.png "Size100nm_walker.png")
+![Size100nm\_walker.png](/images/pages/Size100nm walker.png "Size100nm walker.png")
 
 ## Simulation
 

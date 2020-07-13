@@ -22,23 +22,23 @@ Please note that TrackMate is available through Fiji, and is based on a publicat
 
 ### Examples
 
-![TrackMate\_Celegans\_devel.gif](/images/pages/TrackMate_Celegans_devel.gif "TrackMate_Celegans_devel.gif")
+![TrackMate\_Celegans\_devel.gif](/images/pages/TrackMate Celegans devel.gif "TrackMate Celegans devel.gif")
 
 The first 2 hours of a *C.elegans* embryo development, followed in 3D over time using TrackMate (strain: [AZ212](http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain))
 
-![TrackMate\_Celegans\_lineage\_detail.png](/images/pages/TrackMate_Celegans_lineage_detail.png "TrackMate_Celegans_lineage_detail.png")
+![TrackMate\_Celegans\_lineage\_detail.png](/images/pages/TrackMate Celegans lineage detail.png "TrackMate Celegans lineage detail.png")
 
 A detail of the corresponding unannotated lineage visualized in TrackScheme. The full lineage of this one hour of imaging is [there](:Image:TrackMate_Celegans_lineage.pdf "wikilink").
 
-![TrackMate\_Split\_Merge\_Gapclosing.gif](/images/pages/TrackMate_Split_Merge_Gapclosing.gif "TrackMate_Split_Merge_Gapclosing.gif")
+![TrackMate\_Split\_Merge\_Gapclosing.gif](/images/pages/TrackMate Split Merge Gapclosing.gif "TrackMate Split Merge Gapclosing.gif")
 
 TrackMate can be set to detect and deal with gap-closing events, splitting events and merging events.
 
-![TrackMate Celegans CellDiameter.png](/images/pages/TrackMate_Celegans_CellDiameter.png "TrackMate Celegans CellDiameter.png")
+![TrackMate Celegans CellDiameter.png](/images/pages/TrackMate Celegans CellDiameter.png "TrackMate Celegans CellDiameter.png")
 
 TrackMate can also be used for basic track analysis. Here is plotted the estimated diameter of a *C.elegans* cell as it divides over time.
 
-![TrackMate\_CelegansCellFollowed.gif](/images/pages/TrackMate_CelegansCellFollowed.gif "TrackMate_CelegansCellFollowed.gif")
+![TrackMate\_CelegansCellFollowed.gif](/images/pages/TrackMate CelegansCellFollowed.gif "TrackMate CelegansCellFollowed.gif")
 
 A movie following one cell of a *C.elegans* embryo tracked over 3 hours, as it divides. The track follows the lineage from cell AB to ABaraapap.
 

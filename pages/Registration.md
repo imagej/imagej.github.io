@@ -106,4 +106,4 @@ Here we summarize some of the Registration plugins in ImageJ.
 
 See [Category:Registration](https://imagej.net/Category:Registration) for other ImageJ pages and tools about image registration.
 
-1.  {% include cite content='journal' author='Lowe D' title='Distinctive Image Features from Scale-Invariant Keypoints' journal='International Journal of Computer Vision' year='2004' volume='60' number='2' pages='91-110' %}
+1.  {% include cite content='journal' author='Lowe D ' title='Distinctive Image Features from Scale-Invariant Keypoints ' journal='International Journal of Computer Vision ' year='2004 ' volume='60 ' number='2 ' pages='91-110 ' %}

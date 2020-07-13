@@ -16,7 +16,7 @@ description: test description
 {% capture maintainer%}
 {% include person content='Twagner' %}
 {% endcapture %}
-{% include info-box software='Fiji/ImageJ' name='Ellipse Splitting Plugin' author=author maintainer=maintainer filename='ij-ellipsesplit.jar [\[1](https://github.com/thorstenwagner/ij-ellipsesplit/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-ellipsesplit) \]' latest-version='v0.4.0 (15 May 2016)' status='active' %}
+{% include info-box software='Fiji/ImageJ ' name='Ellipse Splitting Plugin ' author=author maintainer=maintainer filename='ij-ellipsesplit.jar [\[1](https://github.com/thorstenwagner/ij-ellipsesplit/releases/latest) \] ' source='Github [\[2](https://github.com/thorstenwagner/ij-ellipsesplit) \] ' latest-version='v0.4.0 (15 May 2016) ' status='active ' %}
 
 ## Purpose
 
@@ -41,19 +41,19 @@ The generall approach of the ellipse fitting plugin is as follows:
 
 Suppose you have the following input image:
 
-![Ellipsesplit\_input.png](/images/pages/Ellipsesplit_input.png "Ellipsesplit_input.png")
+![Ellipsesplit\_input.png](/images/pages/Ellipsesplit input.png "Ellipsesplit input.png")
 
 Then the watershed approach (*Process -\> Binary -\> Watershed*) would give this result:
 
-![Ellipsesplit\_watershed.png](/images/pages/Ellipsesplit_watershed.png "Ellipsesplit_watershed.png")
+![Ellipsesplit\_watershed.png](/images/pages/Ellipsesplit watershed.png "Ellipsesplit watershed.png")
 
 The ellipse splitting plugin applied to the input image will combine the watershed result and direct ellipse fitting. This leads to the following result:
 
-![Ellipsesplit\_result.png](/images/pages/Ellipsesplit_result.png "Ellipsesplit_result.png")
+![Ellipsesplit\_result.png](/images/pages/Ellipsesplit result.png "Ellipsesplit result.png")
 
 Furthermore it outputs several important features:
 
-![Ellipsesplit\_resultstable.png](/images/pages/Ellipsesplit_resultstable.png "Ellipsesplit_resultstable.png")
+![Ellipsesplit\_resultstable.png](/images/pages/Ellipsesplit resultstable.png "Ellipsesplit resultstable.png")
 
 ## Parameters
 

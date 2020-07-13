@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='ethier-lab' repo='AxoNet-fiji' %}
+{% include github org='ethier-lab ' repo='AxoNet-fiji ' %}
 {% endcapture %}
-{% include info-box content='Plugin' software='AxoNet' name='AxoNet' author='Matthew Ritch (mritch3)' maintainer='Matthew Ritch (mritch3)' source=source website='https://github.com/ethier-lab/AxoNet-fiji' %}
+{% include info-box content='Plugin' software='AxoNet ' name='AxoNet ' author='Matthew Ritch (mritch3) ' maintainer='Matthew Ritch (mritch3) ' source=source website='https://github.com/ethier-lab/AxoNet-fiji ' %}
 
 AxoNet is an [open-source](open-source "wikilink") plugin for axon counting using deep learning.
 
@@ -24,7 +24,7 @@ The [AxoNet](https://github.com/ethier-lab/axonet-fiji) plugin enables AxoNet to
 
 ## See also
 
-  - {% include github org='ethier-lab' repo='axonet-fiji' label='AxoNet on GitHub' %}.
+  - {% include github org='ethier-lab ' repo='axonet-fiji ' label='AxoNet on GitHub ' %}.
   - The AxoNet [update site](update_site "wikilink") to make AxoNet available in ImageJ.
 
 [Category:Related Software](Category:Related_Software "wikilink") [Category:Citable](Category:Citable "wikilink") [Category:SciJava](Category:SciJava "wikilink")

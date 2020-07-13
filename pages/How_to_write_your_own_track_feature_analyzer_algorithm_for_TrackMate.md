@@ -21,10 +21,10 @@ Actually, we will not learn much beyond what we saw previously. The only little 
 
 ## Track analyzers
 
-All the track feature analyzers must implement {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/track/TrackAnalyzer.java' label='TrackAnalyzer interface' %}. Like for the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java' label='EdgeAnalyzer' %} interface, it extends both
+All the track feature analyzers must implement {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/features/track/TrackAnalyzer.java ' label='TrackAnalyzer interface ' %}. Like for the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java ' label='EdgeAnalyzer ' %} interface, it extends both
 
-  - {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java' label='FeatureAnalyzer' %} that helps you declaring what you compute,
-  - and {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/TrackMateModule.java' label='TrackMateModule' %}, that is in charge of the integration in TrackMate.
+  - {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java ' label='FeatureAnalyzer ' %} that helps you declaring what you compute,
+  - and {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/TrackMateModule.java ' label='TrackMateModule ' %}, that is in charge of the integration in TrackMate.
 
 The only changes for us are two methods specific to tracks:
 
@@ -150,7 +150,7 @@ Let's compute them now.
 
 In the previous article, we went maybe a bit quickly on how to access data in TrackMate. This is not the goal of this series, but here is a quick recap:
 
-All the track structure is stored in a sub-component of the model called the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/TrackModel.java' label='TrackModel' %}. It stores the collection of links between two spots that builds a graph, and has some rather complex logic to maintain a list of connected components: the tracks.
+All the track structure is stored in a sub-component of the model called the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/TrackModel.java ' label='TrackModel ' %}. It stores the collection of links between two spots that builds a graph, and has some rather complex logic to maintain a list of connected components: the tracks.
 
 The tracks themselves are indexed by their ID, stored as an `int`, that has no particular meaning. Once you have the ID of track, you can get the spots it contains with
 
@@ -208,13 +208,13 @@ Well, it is just about retrieving a track and identifying its starting and end p
     }
 ```
 
-The whole code for the analyzer can be found {% include github org='fiji' repo='TrackMate-examples' source='plugin/trackmate/examples/trackanalyzer/TrackStartSpotAnalyzer.java' label='here' %}.
+The whole code for the analyzer can be found {% include github org='fiji ' repo='TrackMate-examples ' source='plugin/trackmate/examples/trackanalyzer/TrackStartSpotAnalyzer.java ' label='here ' %}.
 
 ## Wrapping up
 
 Et ca marche \!
 
-![TrackMate\_TrackAnalyzerExample.png](/images/pages/TrackMate_TrackAnalyzerExample.png "TrackMate_TrackAnalyzerExample.png")
+![TrackMate\_TrackAnalyzerExample.png](/images/pages/TrackMate TrackAnalyzerExample.png "TrackMate TrackAnalyzerExample.png")
 
 In the next article we will build a spot analyzer and complicate things a bit, by introducing the notion of *priority*. But before this, a short word on how to disable a module.
 
@@ -226,7 +226,7 @@ The `@Plugin( type = TrackAnalyzer.class )` annotation accepts extra parameters 
 
 The first one we will see is the `enabled` value. It accepts a `boolean` as value and by default it is `true`. Its usage is obvious:
 
-{% include ambox text='If you want to disable a TrackMate module, add the `enabled = false` annotation parameter.' %}
+{% include ambox text='If you want to disable a TrackMate module, add the `enabled = false` annotation parameter. ' %}
 
 Like this:
 

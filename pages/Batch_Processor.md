@@ -16,8 +16,8 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fmi-faim' repo='batch-processor' %}
+{% include github org='fmi-faim ' repo='batch-processor ' %}
 {% endcapture %}
-{% include info-box name='Batch Processor' software='ImageJ/SciJava' update-site='batch-processor (testing only\!)' author='Jan Eglinger, FMI Basel' maintainer=maintainer filename='batch-processor.jar' source=source released='N/A' latest-version='N/A' status='active, unstable' %}
+{% include info-box name='Batch Processor ' software='ImageJ/SciJava ' update-site='batch-processor (testing only\!) ' author='Jan Eglinger, FMI Basel ' maintainer=maintainer filename='batch-processor.jar ' source=source released='N/A ' latest-version='N/A ' status='active, unstable ' %}
 
 **Batch Processor** aims to simplify batch processing tasks in ImageJ across scripting languages, independent of the dataset structure, and by allowing maximal flexibility.

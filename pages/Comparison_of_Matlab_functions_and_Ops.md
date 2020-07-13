@@ -16,354 +16,354 @@ description: test description
 
 ### Read and Write Image Data from Files
 
-|                                                                        |                                                                       |
-| ---------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| | {% include matlab path='matlab/ref' function='imread' %}        | | Read image from graphics file                                       |
-| | {% include matlab path='matlab/ref' function='imwrite' %}       | | Write image to graphics file                                        |
-| | {% include matlab path='matlab/ref' function='imfinfo' %}       | | Information about graphics file                                     |
-| | {% include matlab path='images/ref' function='nitfinfo' %}      | | Read metadata from National Imagery Transmission Format (NITF) file |
-| | {% include matlab path='images/ref' function='nitfread' %}      | | Read image from NITF file                                           |
-| | {% include matlab path='images/ref' function='dpxinfo' %}       | | Read metadata from DPX file                                         |
-| | {% include matlab path='images/ref' function='dpxread' %}       | | Read DPX image                                                      |
-| | {% include matlab path='images/ref' function='analyze75info' %} | | Read metadata from header file of Analyze 7.5 data set              |
-| | {% include matlab path='images/ref' function='analyze75read' %} | | Read image data from image file of Analyze 7.5 data set             |
-| | {% include matlab path='images/ref' function='interfileinfo' %} | | Read metadata from Interfile file                                   |
-| | {% include matlab path='images/ref' function='interfileread' %} | | Read images in Interfile format                                     |
+|                                                                          |                                                                       |
+| ------------------------------------------------------------------------ | --------------------------------------------------------------------- |
+| | {% include matlab path='matlab/ref ' function='imread ' %}        | | Read image from graphics file                                       |
+| | {% include matlab path='matlab/ref ' function='imwrite ' %}       | | Write image to graphics file                                        |
+| | {% include matlab path='matlab/ref ' function='imfinfo ' %}       | | Information about graphics file                                     |
+| | {% include matlab path='images/ref ' function='nitfinfo ' %}      | | Read metadata from National Imagery Transmission Format (NITF) file |
+| | {% include matlab path='images/ref ' function='nitfread ' %}      | | Read image from NITF file                                           |
+| | {% include matlab path='images/ref ' function='dpxinfo ' %}       | | Read metadata from DPX file                                         |
+| | {% include matlab path='images/ref ' function='dpxread ' %}       | | Read DPX image                                                      |
+| | {% include matlab path='images/ref ' function='analyze75info ' %} | | Read metadata from header file of Analyze 7.5 data set              |
+| | {% include matlab path='images/ref ' function='analyze75read ' %} | | Read image data from image file of Analyze 7.5 data set             |
+| | {% include matlab path='images/ref ' function='interfileinfo ' %} | | Read metadata from Interfile file                                   |
+| | {% include matlab path='images/ref ' function='interfileread ' %} | | Read images in Interfile format                                     |
 
 ### Read and Write Image Data from DICOM Files
 
-|                                                                      |                                           |
-| -------------------------------------------------------------------- | ----------------------------------------- |
-| | {% include matlab path='images/ref' function='dicomanon' %}   | | Anonymize DICOM file                    |
-| | {% include matlab path='images/ref' function='dicomdict' %}   | | Get or set active DICOM data dictionary |
-| | {% include matlab path='images/ref' function='dicomdisp' %}   | | Display DICOM file structure            |
-| | {% include matlab path='images/ref' function='dicominfo' %}   | | Read metadata from DICOM message        |
-| | {% include matlab path='images/ref' function='dicomlookup' %} | | Find attribute in DICOM data dictionary |
-| | {% include matlab path='images/ref' function='dicomread' %}   | | Read DICOM image                        |
-| | {% include matlab path='images/ref' function='dicomuid' %}    | | Generate DICOM unique identifier        |
-| | {% include matlab path='images/ref' function='dicomwrite' %}  | | Write images as DICOM files             |
+|                                                                        |                                           |
+| ---------------------------------------------------------------------- | ----------------------------------------- |
+| | {% include matlab path='images/ref ' function='dicomanon ' %}   | | Anonymize DICOM file                    |
+| | {% include matlab path='images/ref ' function='dicomdict ' %}   | | Get or set active DICOM data dictionary |
+| | {% include matlab path='images/ref ' function='dicomdisp ' %}   | | Display DICOM file structure            |
+| | {% include matlab path='images/ref ' function='dicominfo ' %}   | | Read metadata from DICOM message        |
+| | {% include matlab path='images/ref ' function='dicomlookup ' %} | | Find attribute in DICOM data dictionary |
+| | {% include matlab path='images/ref ' function='dicomread ' %}   | | Read DICOM image                        |
+| | {% include matlab path='images/ref ' function='dicomuid ' %}    | | Generate DICOM unique identifier        |
+| | {% include matlab path='images/ref ' function='dicomwrite ' %}  | | Write images as DICOM files             |
 
 ### High Dynamic Range Images
 
-|                                                                   |                                                      |
-| ----------------------------------------------------------------- | ---------------------------------------------------- |
-| | {% include matlab path='images/ref' function='hdrread' %}  | | Read high dynamic range (HDR) image                |
-| | {% include matlab path='images/ref' function='hdrwrite' %} | | Write Radiance high dynamic range (HDR) image file |
-| | {% include matlab path='images/ref' function='makehdr' %}  | | Create high dynamic range image                    |
-| | {% include matlab path='images/ref' function='tonemap' %}  | | Render high dynamic range image for viewing        |
+|                                                                     |                                                      |
+| ------------------------------------------------------------------- | ---------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='hdrread ' %}  | | Read high dynamic range (HDR) image                |
+| | {% include matlab path='images/ref ' function='hdrwrite ' %} | | Write Radiance high dynamic range (HDR) image file |
+| | {% include matlab path='images/ref ' function='makehdr ' %}  | | Create high dynamic range image                    |
+| | {% include matlab path='images/ref ' function='tonemap ' %}  | | Render high dynamic range image for viewing        |
 
 ### Large Image Files
 
-|                                                                       |                                                      |
-| --------------------------------------------------------------------- | ---------------------------------------------------- |
-| | {% include matlab path='images/ref' function='ImageAdapter' %} | | Interface for image I/O                            |
-| | {% include matlab path='images/ref' function='isrset' %}       | | Check if file is R-Set                             |
-| | {% include matlab path='images/ref' function='openrset' %}     | | Open R-Set file                                    |
-| | {% include matlab path='images/ref' function='rsetwrite' %}    | | Create reduced resolution data set from image file |
+|                                                                         |                                                      |
+| ----------------------------------------------------------------------- | ---------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='ImageAdapter ' %} | | Interface for image I/O                            |
+| | {% include matlab path='images/ref ' function='isrset ' %}       | | Check if file is R-Set                             |
+| | {% include matlab path='images/ref ' function='openrset ' %}     | | Open R-Set file                                    |
+| | {% include matlab path='images/ref ' function='rsetwrite ' %}    | | Create reduced resolution data set from image file |
 
 ### Image Type Conversion
 
-|                                                                      |                                                                          |
-| -------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| | {% include matlab path='images/ref' function='gray2ind' %}    | | Convert grayscale or binary image to indexed image                     |
-| | {% include matlab path='images/ref' function='ind2gray' %}    | | Convert indexed image to grayscale image                               |
-| | {% include matlab path='images/ref' function='mat2gray' %}    | | Convert matrix to grayscale image                                      |
-| | {% include matlab path='matlab/ref' function='rgb2gray' %}    | | Convert RGB image or colormap to grayscale                             |
-| | {% include matlab path='images/ref' function='ind2rgb' %}     | | Convert indexed image to RGB image                                     |
-| | {% include matlab path='images/ref' function='label2rgb' %}   | | Convert label matrix into RGB image                                    |
-| | {% include matlab path='images/ref' function='demosaic' %}    | | Convert Bayer pattern encoded image to truecolor image                 |
-| | {% include matlab path='images/ref' function='imbinarize' %}  | | Binarize image by thresholding                                         |
-| | {% include matlab path='images/ref' function='imquantize' %}  | | Quantize image using specified quantization levels and output values   |
-| | {% include matlab path='images/ref' function='multithresh' %} | | Multilevel image thresholds using Otsu's method                        |
-| | {% include matlab path='images/ref' function='adaptthresh' %} | | Adaptive image threshold using local first-order statistics            |
-| | {% include matlab path='images/ref' function='otsuthresh' %}  | | Global histogram threshold using Otsu's method                         |
-| | {% include matlab path='images/ref' function='graythresh' %}  | | Global image threshold using Otsu's method                             |
-| | {% include matlab path='images/ref' function='grayslice' %}   | | Convert grayscale image to indexed image using multilevel thresholding |
-| | {% include matlab path='matlab/ref' function='im2double' %}   | | Convert image to double precision                                      |
-| | {% include matlab path='images/ref' function='im2int16' %}    | | Convert image to 16-bit signed integers                                |
-| | {% include matlab path='images/ref' function='im2java2d' %}   | | Convert image to Java buffered image                                   |
-| | {% include matlab path='images/ref' function='im2single' %}   | | Convert image to single precision                                      |
-| | {% include matlab path='images/ref' function='im2uint16' %}   | | Convert image to 16-bit unsigned integers                              |
-| | {% include matlab path='images/ref' function='im2uint8' %}    | | Convert image to 8-bit unsigned integers                               |
+|                                                                        |                                                                          |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| | {% include matlab path='images/ref ' function='gray2ind ' %}    | | Convert grayscale or binary image to indexed image                     |
+| | {% include matlab path='images/ref ' function='ind2gray ' %}    | | Convert indexed image to grayscale image                               |
+| | {% include matlab path='images/ref ' function='mat2gray ' %}    | | Convert matrix to grayscale image                                      |
+| | {% include matlab path='matlab/ref ' function='rgb2gray ' %}    | | Convert RGB image or colormap to grayscale                             |
+| | {% include matlab path='images/ref ' function='ind2rgb ' %}     | | Convert indexed image to RGB image                                     |
+| | {% include matlab path='images/ref ' function='label2rgb ' %}   | | Convert label matrix into RGB image                                    |
+| | {% include matlab path='images/ref ' function='demosaic ' %}    | | Convert Bayer pattern encoded image to truecolor image                 |
+| | {% include matlab path='images/ref ' function='imbinarize ' %}  | | Binarize image by thresholding                                         |
+| | {% include matlab path='images/ref ' function='imquantize ' %}  | | Quantize image using specified quantization levels and output values   |
+| | {% include matlab path='images/ref ' function='multithresh ' %} | | Multilevel image thresholds using Otsu's method                        |
+| | {% include matlab path='images/ref ' function='adaptthresh ' %} | | Adaptive image threshold using local first-order statistics            |
+| | {% include matlab path='images/ref ' function='otsuthresh ' %}  | | Global histogram threshold using Otsu's method                         |
+| | {% include matlab path='images/ref ' function='graythresh ' %}  | | Global image threshold using Otsu's method                             |
+| | {% include matlab path='images/ref ' function='grayslice ' %}   | | Convert grayscale image to indexed image using multilevel thresholding |
+| | {% include matlab path='matlab/ref ' function='im2double ' %}   | | Convert image to double precision                                      |
+| | {% include matlab path='images/ref ' function='im2int16 ' %}    | | Convert image to 16-bit signed integers                                |
+| | {% include matlab path='images/ref ' function='im2java2d ' %}   | | Convert image to Java buffered image                                   |
+| | {% include matlab path='images/ref ' function='im2single ' %}   | | Convert image to single precision                                      |
+| | {% include matlab path='images/ref ' function='im2uint16 ' %}   | | Convert image to 16-bit unsigned integers                              |
+| | {% include matlab path='images/ref ' function='im2uint8 ' %}    | | Convert image to 8-bit unsigned integers                               |
 
 ### Color
 
-|                                                                     |                                                                   |
-| ------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| | {% include matlab path='images/ref' function='rgb2lab' %}    | | Convert RGB to CIE 1976 L\*a\*b\*                               |
-| | {% include matlab path='images/ref' function='rgb2ntsc' %}   | | Convert RGB color values to NTSC color space                    |
-| | {% include matlab path='images/ref' function='rgb2xyz' %}    | | Convert RGB to CIE 1931 XYZ                                     |
-| | {% include matlab path='images/ref' function='rgb2ycbcr' %}  | | Convert RGB color values to YCbCr color space                   |
-| | {% include matlab path='images/ref' function='lab2rgb' %}    | | Convert CIE 1976 L\*a\*b\* to RGB                               |
-| | {% include matlab path='images/ref' function='lab2xyz' %}    | | Convert CIE 1976 L\*a\*b\* to CIE 1931 XYZ                      |
-| | {% include matlab path='images/ref' function='xyz2lab' %}    | | Convert CIE 1931 XYZ to CIE 1976 L\*a\*b\*                      |
-| | {% include matlab path='images/ref' function='xyz2rgb' %}    | | Convert CIE 1931 XYZ to RGB                                     |
-| | {% include matlab path='images/ref' function='ycbcr2rgb' %}  | | Convert YCbCr color values to RGB color space                   |
-| | {% include matlab path='images/ref' function='ntsc2rgb' %}   | | Convert NTSC values to RGB color space                          |
-| | {% include matlab path='images/ref' function='lab2double' %} | | Convert L\*a\*b\* data to double                                |
-| | {% include matlab path='images/ref' function='lab2uint16' %} | | Convert L\*a\*b\* data to uint16                                |
-| | {% include matlab path='images/ref' function='lab2uint8' %}  | | Convert L\*a\*b\* data to uint8                                 |
-| | {% include matlab path='images/ref' function='xyz2double' %} | | Convert XYZ color values to double                              |
-| | {% include matlab path='images/ref' function='xyz2uint16' %} | | Convert XYZ color values to uint16                              |
-| | {% include matlab path='images/ref' function='iccfind' %}    | | Search for ICC profiles                                         |
-| | {% include matlab path='images/ref' function='iccread' %}    | | Read ICC profile                                                |
-| | {% include matlab path='images/ref' function='iccroot' %}    | | Find system default ICC profile repository                      |
-| | {% include matlab path='images/ref' function='iccwrite' %}   | | Write ICC color profile to disk file                            |
-| | {% include matlab path='images/ref' function='isicc' %}      | | True for valid ICC color profile                                |
-| | {% include matlab path='images/ref' function='makecform' %}  | | Create color transformation structure                           |
-| | {% include matlab path='images/ref' function='applycform' %} | | Apply device-independent color space transformation             |
-| | {% include matlab path='matlab/ref' function='imapprox' %}   | | Approximate indexed image by reducing number of colors          |
-| | {% include matlab path='images/ref' function='colorcloud' %} | | Display 3-D color gamut as point cloud in specified color space |
-| | {% include matlab path='images/ref' function='whitepoint' %} | | XYZ color values of standard illuminants                        |
+|                                                                       |                                                                   |
+| --------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='rgb2lab ' %}    | | Convert RGB to CIE 1976 L\*a\*b\*                               |
+| | {% include matlab path='images/ref ' function='rgb2ntsc ' %}   | | Convert RGB color values to NTSC color space                    |
+| | {% include matlab path='images/ref ' function='rgb2xyz ' %}    | | Convert RGB to CIE 1931 XYZ                                     |
+| | {% include matlab path='images/ref ' function='rgb2ycbcr ' %}  | | Convert RGB color values to YCbCr color space                   |
+| | {% include matlab path='images/ref ' function='lab2rgb ' %}    | | Convert CIE 1976 L\*a\*b\* to RGB                               |
+| | {% include matlab path='images/ref ' function='lab2xyz ' %}    | | Convert CIE 1976 L\*a\*b\* to CIE 1931 XYZ                      |
+| | {% include matlab path='images/ref ' function='xyz2lab ' %}    | | Convert CIE 1931 XYZ to CIE 1976 L\*a\*b\*                      |
+| | {% include matlab path='images/ref ' function='xyz2rgb ' %}    | | Convert CIE 1931 XYZ to RGB                                     |
+| | {% include matlab path='images/ref ' function='ycbcr2rgb ' %}  | | Convert YCbCr color values to RGB color space                   |
+| | {% include matlab path='images/ref ' function='ntsc2rgb ' %}   | | Convert NTSC values to RGB color space                          |
+| | {% include matlab path='images/ref ' function='lab2double ' %} | | Convert L\*a\*b\* data to double                                |
+| | {% include matlab path='images/ref ' function='lab2uint16 ' %} | | Convert L\*a\*b\* data to uint16                                |
+| | {% include matlab path='images/ref ' function='lab2uint8 ' %}  | | Convert L\*a\*b\* data to uint8                                 |
+| | {% include matlab path='images/ref ' function='xyz2double ' %} | | Convert XYZ color values to double                              |
+| | {% include matlab path='images/ref ' function='xyz2uint16 ' %} | | Convert XYZ color values to uint16                              |
+| | {% include matlab path='images/ref ' function='iccfind ' %}    | | Search for ICC profiles                                         |
+| | {% include matlab path='images/ref ' function='iccread ' %}    | | Read ICC profile                                                |
+| | {% include matlab path='images/ref ' function='iccroot ' %}    | | Find system default ICC profile repository                      |
+| | {% include matlab path='images/ref ' function='iccwrite ' %}   | | Write ICC color profile to disk file                            |
+| | {% include matlab path='images/ref ' function='isicc ' %}      | | True for valid ICC color profile                                |
+| | {% include matlab path='images/ref ' function='makecform ' %}  | | Create color transformation structure                           |
+| | {% include matlab path='images/ref ' function='applycform ' %} | | Apply device-independent color space transformation             |
+| | {% include matlab path='matlab/ref ' function='imapprox ' %}   | | Approximate indexed image by reducing number of colors          |
+| | {% include matlab path='images/ref ' function='colorcloud ' %} | | Display 3-D color gamut as point cloud in specified color space |
+| | {% include matlab path='images/ref ' function='whitepoint ' %} | | XYZ color values of standard illuminants                        |
 
 ### Synthetic Images
 
-|                                                                       |                             |
-| --------------------------------------------------------------------- | --------------------------- |
-| | {% include matlab path='images/ref' function='checkerboard' %} | | Create checkerboard image |
-| | {% include matlab path='images/ref' function='phantom' %}      | | Create head phantom image |
-| | {% include matlab path='images/ref' function='imnoise' %}      | | Add noise to image        |
+|                                                                         |                             |
+| ----------------------------------------------------------------------- | --------------------------- |
+| | {% include matlab path='images/ref ' function='checkerboard ' %} | | Create checkerboard image |
+| | {% include matlab path='images/ref ' function='phantom ' %}      | | Create head phantom image |
+| | {% include matlab path='images/ref ' function='imnoise ' %}      | | Add noise to image        |
 
 ## Display and Exploration
 
 ### Basic Display
 
-|                                                                     |                                                                    |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| | {% include matlab path='images/ref' function='imshow' %}     | | Display image                                                    |
-| | {% include matlab path='images/ref' function='montage' %}    | | Display multiple image frames as rectangular montage             |
-| | {% include matlab path='images/ref' function='immovie' %}    | | Make movie from multiframe image                                 |
-| | {% include matlab path='images/ref' function='implay' %}     | | Play movies, videos, or image sequences                          |
-| | {% include matlab path='images/ref' function='warp' %}       | | Display image as texture-mapped surface                          |
-| | {% include matlab path='images/ref' function='iptgetpref' %} | | Get values of Image Processing Toolbox preferences               |
-| | {% include matlab path='images/ref' function='iptprefs' %}   | | Display Image Processing Toolbox Preferences dialog box          |
-| | {% include matlab path='images/ref' function='iptsetpref' %} | | Set Image Processing Toolbox preferences or display valid values |
+|                                                                       |                                                                    |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| | {% include matlab path='images/ref ' function='imshow ' %}     | | Display image                                                    |
+| | {% include matlab path='images/ref ' function='montage ' %}    | | Display multiple image frames as rectangular montage             |
+| | {% include matlab path='images/ref ' function='immovie ' %}    | | Make movie from multiframe image                                 |
+| | {% include matlab path='images/ref ' function='implay ' %}     | | Play movies, videos, or image sequences                          |
+| | {% include matlab path='images/ref ' function='warp ' %}       | | Display image as texture-mapped surface                          |
+| | {% include matlab path='images/ref ' function='iptgetpref ' %} | | Get values of Image Processing Toolbox preferences               |
+| | {% include matlab path='images/ref ' function='iptprefs ' %}   | | Display Image Processing Toolbox Preferences dialog box          |
+| | {% include matlab path='images/ref ' function='iptsetpref ' %} | | Set Image Processing Toolbox preferences or display valid values |
 
 ### Interactive Exploration with the Image Viewer App
 
-|                                                                         |                                                                    |
-| ----------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| | {% include matlab path='images/ref' function='imtool' %}         | | Image Viewer app                                                 |
-| | {% include matlab path='images/ref' function='imageinfo' %}      | | Image Information tool                                           |
-| | {% include matlab path='images/ref' function='imcontrast' %}     | | Adjust Contrast tool                                             |
-| | {% include matlab path='images/ref' function='imdisplayrange' %} | | Display Range tool                                               |
-| | {% include matlab path='images/ref' function='imdistline' %}     | | Distance tool                                                    |
-| | {% include matlab path='images/ref' function='impixelinfo' %}    | | Pixel Information tool                                           |
-| | {% include matlab path='images/ref' function='impixelinfoval' %} | | Pixel Information tool without text label                        |
-| | {% include matlab path='images/ref' function='impixelregion' %}  | | Pixel Region tool                                                |
-| | {% include matlab path='images/ref' function='immagbox' %}       | | Magnification box for scroll panel                               |
-| | {% include matlab path='images/ref' function='imoverview' %}     | | Overview tool for image displayed in scroll panel                |
-| | {% include matlab path='images/ref' function='iptgetpref' %}     | | Get values of Image Processing Toolbox preferences               |
-| | {% include matlab path='images/ref' function='iptprefs' %}       | | Display Image Processing Toolbox Preferences dialog box          |
-| | {% include matlab path='images/ref' function='iptsetpref' %}     | | Set Image Processing Toolbox preferences or display valid values |
+|                                                                           |                                                                    |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| | {% include matlab path='images/ref ' function='imtool ' %}         | | Image Viewer app                                                 |
+| | {% include matlab path='images/ref ' function='imageinfo ' %}      | | Image Information tool                                           |
+| | {% include matlab path='images/ref ' function='imcontrast ' %}     | | Adjust Contrast tool                                             |
+| | {% include matlab path='images/ref ' function='imdisplayrange ' %} | | Display Range tool                                               |
+| | {% include matlab path='images/ref ' function='imdistline ' %}     | | Distance tool                                                    |
+| | {% include matlab path='images/ref ' function='impixelinfo ' %}    | | Pixel Information tool                                           |
+| | {% include matlab path='images/ref ' function='impixelinfoval ' %} | | Pixel Information tool without text label                        |
+| | {% include matlab path='images/ref ' function='impixelregion ' %}  | | Pixel Region tool                                                |
+| | {% include matlab path='images/ref ' function='immagbox ' %}       | | Magnification box for scroll panel                               |
+| | {% include matlab path='images/ref ' function='imoverview ' %}     | | Overview tool for image displayed in scroll panel                |
+| | {% include matlab path='images/ref ' function='iptgetpref ' %}     | | Get values of Image Processing Toolbox preferences               |
+| | {% include matlab path='images/ref ' function='iptprefs ' %}       | | Display Image Processing Toolbox Preferences dialog box          |
+| | {% include matlab path='images/ref ' function='iptsetpref ' %}     | | Set Image Processing Toolbox preferences or display valid values |
 
 ### Build Interactive Tools
 
-|                                                                                 |                                                           |
-| ------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| | {% include matlab path='images/ref' function='imageinfo' %}              | | Image Information tool                                  |
-| | {% include matlab path='images/ref' function='imcolormaptool' %}         | | Choose Colormap tool                                    |
-| | {% include matlab path='images/ref' function='imcontrast' %}             | | Adjust Contrast tool                                    |
-| | {% include matlab path='images/ref' function='imcrop' %}                 | | Crop image                                              |
-| | {% include matlab path='images/ref' function='imdisplayrange' %}         | | Display Range tool                                      |
-| | {% include matlab path='images/ref' function='imdistline' %}             | | Distance tool                                           |
-| | {% include matlab path='images/ref' function='impixelinfo' %}            | | Pixel Information tool                                  |
-| | {% include matlab path='images/ref' function='impixelinfoval' %}         | | Pixel Information tool without text label               |
-| | {% include matlab path='images/ref' function='impixelregion' %}          | | Pixel Region tool                                       |
-| | {% include matlab path='images/ref' function='impixelregionpanel' %}     | | Pixel Region tool panel                                 |
-| | {% include matlab path='images/ref' function='immagbox' %}               | | Magnification box for scroll panel                      |
-| | {% include matlab path='images/ref' function='imoverview' %}             | | Overview tool for image displayed in scroll panel       |
-| | {% include matlab path='images/ref' function='imoverviewpanel' %}        | | Overview tool panel for image displayed in scroll panel |
-| | {% include matlab path='images/ref' function='imsave' %}                 | | Save Image Tool                                         |
-| | {% include matlab path='images/ref' function='imscrollpanel' %}          | | Scroll panel for interactive image navigation           |
-| | {% include matlab path='images/ref' function='imellipse' %}              | | Create draggable ellipse                                |
-| | {% include matlab path='images/ref' function='imfreehand' %}             | | Create draggable freehand region                        |
-| | {% include matlab path='images/ref' function='imline' %}                 | | Create draggable, resizable line                        |
-| | {% include matlab path='images/ref' function='impoint' %}                | | Create draggable point                                  |
-| | {% include matlab path='images/ref' function='impoly' %}                 | | Create draggable, resizable polygon                     |
-| | {% include matlab path='images/ref' function='imrect' %}                 | | Create draggable rectangle                              |
-| | {% include matlab path='images/ref' function='imroi' %}                  | | Region-of-interest (ROI) base class                     |
-| | {% include matlab path='images/ref' function='getline' %}                | | Select polyline with mouse                              |
-| | {% include matlab path='images/ref' function='getpts' %}                 | | Specify points with mouse                               |
-| | {% include matlab path='images/ref' function='getrect' %}                | | Specify rectangle with mouse                            |
-| | {% include matlab path='images/ref' function='getimage' %}               | | Image data from axes                                    |
-| | {% include matlab path='images/ref' function='getimagemodel' %}          | | Image model object from image object                    |
-| | {% include matlab path='images/ref' function='imagemodel' %}             | | Image Model object                                      |
-| | {% include matlab path='images/ref' function='axes2pix' %}               | | Convert axes coordinates to pixel coordinates           |
-| | {% include matlab path='images/ref' function='imattributes' %}           | | Information about image attributes                      |
-| | {% include matlab path='images/ref' function='imgca' %}                  | | Get current axes containing image                       |
-| | {% include matlab path='images/ref' function='imgcf' %}                  | | Get current figure containing image                     |
-| | {% include matlab path='images/ref' function='imgetfile' %}              | | Display Open Image dialog box                           |
-| | {% include matlab path='images/ref' function='imhandles' %}              | | Get all image objects                                   |
-| | {% include matlab path='images/ref' function='iptaddcallback' %}         | | Add function handle to callback list                    |
-| | {% include matlab path='images/ref' function='iptcheckhandle' %}         | | Check validity of handle                                |
-| | {% include matlab path='images/ref' function='iptgetapi' %}              | | Get Application Programmer Interface (API) for handle   |
-| | {% include matlab path='images/ref' function='iptGetPointerBehavior' %}  | | Retrieve pointer behavior from graphics object          |
-| | {% include matlab path='images/ref' function='ipticondir' %}             | | Directories containing IPT and MATLAB icons             |
-| | {% include matlab path='images/ref' function='iptPointerManager' %}      | | Create pointer manager in figure                        |
-| | {% include matlab path='images/ref' function='iptremovecallback' %}      | | Delete function handle from callback list               |
-| | {% include matlab path='images/ref' function='iptSetPointerBehavior' %}  | | Store pointer behavior structure in graphics object     |
-| | {% include matlab path='images/ref' function='iptwindowalign' %}         | | Align figure windows                                    |
-| | {% include matlab path='images/ref' function='makeConstrainToRectFcn' %} | | Create rectangularly bounded drag constraint function   |
-| | {% include matlab path='images/ref' function='truesize' %}               | | Adjust display size of image                            |
+|                                                                                   |                                                           |
+| --------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='imageinfo ' %}              | | Image Information tool                                  |
+| | {% include matlab path='images/ref ' function='imcolormaptool ' %}         | | Choose Colormap tool                                    |
+| | {% include matlab path='images/ref ' function='imcontrast ' %}             | | Adjust Contrast tool                                    |
+| | {% include matlab path='images/ref ' function='imcrop ' %}                 | | Crop image                                              |
+| | {% include matlab path='images/ref ' function='imdisplayrange ' %}         | | Display Range tool                                      |
+| | {% include matlab path='images/ref ' function='imdistline ' %}             | | Distance tool                                           |
+| | {% include matlab path='images/ref ' function='impixelinfo ' %}            | | Pixel Information tool                                  |
+| | {% include matlab path='images/ref ' function='impixelinfoval ' %}         | | Pixel Information tool without text label               |
+| | {% include matlab path='images/ref ' function='impixelregion ' %}          | | Pixel Region tool                                       |
+| | {% include matlab path='images/ref ' function='impixelregionpanel ' %}     | | Pixel Region tool panel                                 |
+| | {% include matlab path='images/ref ' function='immagbox ' %}               | | Magnification box for scroll panel                      |
+| | {% include matlab path='images/ref ' function='imoverview ' %}             | | Overview tool for image displayed in scroll panel       |
+| | {% include matlab path='images/ref ' function='imoverviewpanel ' %}        | | Overview tool panel for image displayed in scroll panel |
+| | {% include matlab path='images/ref ' function='imsave ' %}                 | | Save Image Tool                                         |
+| | {% include matlab path='images/ref ' function='imscrollpanel ' %}          | | Scroll panel for interactive image navigation           |
+| | {% include matlab path='images/ref ' function='imellipse ' %}              | | Create draggable ellipse                                |
+| | {% include matlab path='images/ref ' function='imfreehand ' %}             | | Create draggable freehand region                        |
+| | {% include matlab path='images/ref ' function='imline ' %}                 | | Create draggable, resizable line                        |
+| | {% include matlab path='images/ref ' function='impoint ' %}                | | Create draggable point                                  |
+| | {% include matlab path='images/ref ' function='impoly ' %}                 | | Create draggable, resizable polygon                     |
+| | {% include matlab path='images/ref ' function='imrect ' %}                 | | Create draggable rectangle                              |
+| | {% include matlab path='images/ref ' function='imroi ' %}                  | | Region-of-interest (ROI) base class                     |
+| | {% include matlab path='images/ref ' function='getline ' %}                | | Select polyline with mouse                              |
+| | {% include matlab path='images/ref ' function='getpts ' %}                 | | Specify points with mouse                               |
+| | {% include matlab path='images/ref ' function='getrect ' %}                | | Specify rectangle with mouse                            |
+| | {% include matlab path='images/ref ' function='getimage ' %}               | | Image data from axes                                    |
+| | {% include matlab path='images/ref ' function='getimagemodel ' %}          | | Image model object from image object                    |
+| | {% include matlab path='images/ref ' function='imagemodel ' %}             | | Image Model object                                      |
+| | {% include matlab path='images/ref ' function='axes2pix ' %}               | | Convert axes coordinates to pixel coordinates           |
+| | {% include matlab path='images/ref ' function='imattributes ' %}           | | Information about image attributes                      |
+| | {% include matlab path='images/ref ' function='imgca ' %}                  | | Get current axes containing image                       |
+| | {% include matlab path='images/ref ' function='imgcf ' %}                  | | Get current figure containing image                     |
+| | {% include matlab path='images/ref ' function='imgetfile ' %}              | | Display Open Image dialog box                           |
+| | {% include matlab path='images/ref ' function='imhandles ' %}              | | Get all image objects                                   |
+| | {% include matlab path='images/ref ' function='iptaddcallback ' %}         | | Add function handle to callback list                    |
+| | {% include matlab path='images/ref ' function='iptcheckhandle ' %}         | | Check validity of handle                                |
+| | {% include matlab path='images/ref ' function='iptgetapi ' %}              | | Get Application Programmer Interface (API) for handle   |
+| | {% include matlab path='images/ref ' function='iptGetPointerBehavior ' %}  | | Retrieve pointer behavior from graphics object          |
+| | {% include matlab path='images/ref ' function='ipticondir ' %}             | | Directories containing IPT and MATLAB icons             |
+| | {% include matlab path='images/ref ' function='iptPointerManager ' %}      | | Create pointer manager in figure                        |
+| | {% include matlab path='images/ref ' function='iptremovecallback ' %}      | | Delete function handle from callback list               |
+| | {% include matlab path='images/ref ' function='iptSetPointerBehavior ' %}  | | Store pointer behavior structure in graphics object     |
+| | {% include matlab path='images/ref ' function='iptwindowalign ' %}         | | Align figure windows                                    |
+| | {% include matlab path='images/ref ' function='makeConstrainToRectFcn ' %} | | Create rectangularly bounded drag constraint function   |
+| | {% include matlab path='images/ref ' function='truesize ' %}               | | Adjust display size of image                            |
 
 ## Geometric Transformation, Spatial Referencing, and Image Registration
 
 ### Geometric Transformations
 
-|                                                                                                            |                                                       |
-| ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| | {% include matlab path='images/ref' function='imcrop' %}                                            | | Crop image                                          |
-| | {% include matlab path='images/ref' function='imresize' %}                                          | | Resize image                                        |
-| | {% include matlab path='images/ref' function='imrotate' %}                                          | | Rotate image                                        |
-| | {% include matlab path='images/ref' function='imtranslate' %}                                       | | Translate image                                     |
-| | {% include matlab path='images/ref' function='impyramid' %}                                         | | Image pyramid reduction and expansion               |
-| | {% include matlab path='images/ref' function='imwarp' %}                                            | | Apply geometric transformation to image             |
-| | {% include matlab path='images/ref' function='fitgeotrans' %}                                       | | Fit geometric transformation to control point pairs |
-| | {% include matlab path='images/ref' function='imtransform' %}                                       | | Apply 2-D spatial transformation to image           |
-| | {% include matlab path='images/ref' function='findbounds' %}                                        | | Find output bounds for spatial transformation       |
-| | {% include matlab path='images/ref' function='fliptform' %}                                         | | Flip input and output roles of TFORM structure      |
-| | {% include matlab path='images/ref' function='makeresampler' %}                                     | | Create resampling structure                         |
-| | {% include matlab path='images/ref' function='maketform' %}                                         | | Create spatial transformation structure (TFORM)     |
-| | {% include matlab path='images/ref' function='tformarray' %}                                        | | Apply spatial transformation to N-D array           |
-| | {% include matlab path='images/ref' function='tformfwd' %}                                          | | Apply forward spatial transformation                |
-| | {% include matlab path='images/ref' function='tforminv' %}                                          | | Apply inverse spatial transformation                |
-| | {% include matlab path='images/ref' function='checkerboard' %}                                      | | Create checkerboard image                           |
-| | {% include matlab path='images/ref' function='affine2d' %}                                          | | 2-D Affine Geometric Transformation                 |
-| | {% include matlab path='images/ref' function='affine3d' %}                                          | | 3-D Affine Geometric Transformation                 |
-| | {% include matlab path='images/ref' function='projective2d' %}                                      | | 2-D Projective Geometric Transformation             |
-| | {% include matlab path='images/ref' function='images.geotrans.PiecewiseLinearTransformation2D' %}   | | 2-D piecewise linear geometric transformation       |
-| | {% include matlab path='images/ref' function='images.geotrans.PolynomialTransformation2D' %}        | | 2-D Polynomial Geometric Transformation             |
-| | {% include matlab path='images/ref' function='images.geotrans.LocalWeightedMeanTransformation2D' %} | | 2-D Local Weighted Mean Geometric Transformation    |
+|                                                                                                              |                                                       |
+| ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='imcrop ' %}                                            | | Crop image                                          |
+| | {% include matlab path='images/ref ' function='imresize ' %}                                          | | Resize image                                        |
+| | {% include matlab path='images/ref ' function='imrotate ' %}                                          | | Rotate image                                        |
+| | {% include matlab path='images/ref ' function='imtranslate ' %}                                       | | Translate image                                     |
+| | {% include matlab path='images/ref ' function='impyramid ' %}                                         | | Image pyramid reduction and expansion               |
+| | {% include matlab path='images/ref ' function='imwarp ' %}                                            | | Apply geometric transformation to image             |
+| | {% include matlab path='images/ref ' function='fitgeotrans ' %}                                       | | Fit geometric transformation to control point pairs |
+| | {% include matlab path='images/ref ' function='imtransform ' %}                                       | | Apply 2-D spatial transformation to image           |
+| | {% include matlab path='images/ref ' function='findbounds ' %}                                        | | Find output bounds for spatial transformation       |
+| | {% include matlab path='images/ref ' function='fliptform ' %}                                         | | Flip input and output roles of TFORM structure      |
+| | {% include matlab path='images/ref ' function='makeresampler ' %}                                     | | Create resampling structure                         |
+| | {% include matlab path='images/ref ' function='maketform ' %}                                         | | Create spatial transformation structure (TFORM)     |
+| | {% include matlab path='images/ref ' function='tformarray ' %}                                        | | Apply spatial transformation to N-D array           |
+| | {% include matlab path='images/ref ' function='tformfwd ' %}                                          | | Apply forward spatial transformation                |
+| | {% include matlab path='images/ref ' function='tforminv ' %}                                          | | Apply inverse spatial transformation                |
+| | {% include matlab path='images/ref ' function='checkerboard ' %}                                      | | Create checkerboard image                           |
+| | {% include matlab path='images/ref ' function='affine2d ' %}                                          | | 2-D Affine Geometric Transformation                 |
+| | {% include matlab path='images/ref ' function='affine3d ' %}                                          | | 3-D Affine Geometric Transformation                 |
+| | {% include matlab path='images/ref ' function='projective2d ' %}                                      | | 2-D Projective Geometric Transformation             |
+| | {% include matlab path='images/ref ' function='images.geotrans.PiecewiseLinearTransformation2D ' %}   | | 2-D piecewise linear geometric transformation       |
+| | {% include matlab path='images/ref ' function='images.geotrans.PolynomialTransformation2D ' %}        | | 2-D Polynomial Geometric Transformation             |
+| | {% include matlab path='images/ref ' function='images.geotrans.LocalWeightedMeanTransformation2D ' %} | | 2-D Local Weighted Mean Geometric Transformation    |
 
 ### Spatial Referencing
 
-|                                                                     |                                                                       |
-| ------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| | {% include matlab path='images/ref' function='imwarp' %}     | | Apply geometric transformation to image                             |
-| | {% include matlab path='images/ref' function='imregister' %} | | Intensity-based image registration                                  |
-| | {% include matlab path='images/ref' function='imregtform' %} | | Estimate geometric transformation that aligns two 2-D or 3-D images |
-| | {% include matlab path='images/ref' function='imshow' %}     | | Display image                                                       |
-| | {% include matlab path='images/ref' function='imshowpair' %} | | Compare differences between images                                  |
-| | {% include matlab path='images/ref' function='imfuse' %}     | | Composite of two images                                             |
-| | {% include matlab path='images/ref' function='imref2d' %}    | | Reference 2-D image to world coordinates                            |
-| | {% include matlab path='images/ref' function='imref3d' %}    | | Reference 3-D image to world coordinates                            |
+|                                                                       |                                                                       |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='imwarp ' %}     | | Apply geometric transformation to image                             |
+| | {% include matlab path='images/ref ' function='imregister ' %} | | Intensity-based image registration                                  |
+| | {% include matlab path='images/ref ' function='imregtform ' %} | | Estimate geometric transformation that aligns two 2-D or 3-D images |
+| | {% include matlab path='images/ref ' function='imshow ' %}     | | Display image                                                       |
+| | {% include matlab path='images/ref ' function='imshowpair ' %} | | Compare differences between images                                  |
+| | {% include matlab path='images/ref ' function='imfuse ' %}     | | Composite of two images                                             |
+| | {% include matlab path='images/ref ' function='imref2d ' %}    | | Reference 2-D image to world coordinates                            |
+| | {% include matlab path='images/ref ' function='imref3d ' %}    | | Reference 3-D image to world coordinates                            |
 
 ### Automatic Registration
 
-|                                                                                                            |                                                                                         |
-| ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| | {% include matlab path='images/ref' function='imregister' %}                                        | | Intensity-based image registration                                                    |
-| | {% include matlab path='images/ref' function='imregconfig' %}                                       | | Configurations for intensity-based registration                                       |
-| | {% include matlab path='images/ref' function='imregtform' %}                                        | | Estimate geometric transformation that aligns two 2-D or 3-D images                   |
-| | {% include matlab path='images/ref' function='imregcorr' %}                                         | | Estimates geometric transformation that aligns two 2-D images using phase correlation |
-| | {% include matlab path='images/ref' function='imregdemons' %}                                       | | Estimate displacement field that aligns two 2-D or 3-D images                         |
-| | {% include matlab path='images/ref' function='imfuse' %}                                            | | Composite of two images                                                               |
-| | {% include matlab path='images/ref' function='imshowpair' %}                                        | | Compare differences between images                                                    |
-| | {% include matlab path='images/ref' function='registration.metric.MattesMutualInformation' %}       | | Mattes mutual information metric configuration object                                 |
-| | {% include matlab path='images/ref' function='registration.metric.MeanSquares' %}                   | | Mean square error metric configuration object                                         |
-| | {% include matlab path='images/ref' function='registration.optimizer.RegularStepGradientDescent' %} | | Regular step gradient descent optimizer configuration object                          |
-| | {% include matlab path='images/ref' function='registration.optimizer.OnePlusOneEvolutionary' %}     | | One-plus-one evolutionary optimizer configuration object                              |
+|                                                                                                              |                                                                                         |
+| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='imregister ' %}                                        | | Intensity-based image registration                                                    |
+| | {% include matlab path='images/ref ' function='imregconfig ' %}                                       | | Configurations for intensity-based registration                                       |
+| | {% include matlab path='images/ref ' function='imregtform ' %}                                        | | Estimate geometric transformation that aligns two 2-D or 3-D images                   |
+| | {% include matlab path='images/ref ' function='imregcorr ' %}                                         | | Estimates geometric transformation that aligns two 2-D images using phase correlation |
+| | {% include matlab path='images/ref ' function='imregdemons ' %}                                       | | Estimate displacement field that aligns two 2-D or 3-D images                         |
+| | {% include matlab path='images/ref ' function='imfuse ' %}                                            | | Composite of two images                                                               |
+| | {% include matlab path='images/ref ' function='imshowpair ' %}                                        | | Compare differences between images                                                    |
+| | {% include matlab path='images/ref ' function='registration.metric.MattesMutualInformation ' %}       | | Mattes mutual information metric configuration object                                 |
+| | {% include matlab path='images/ref ' function='registration.metric.MeanSquares ' %}                   | | Mean square error metric configuration object                                         |
+| | {% include matlab path='images/ref ' function='registration.optimizer.RegularStepGradientDescent ' %} | | Regular step gradient descent optimizer configuration object                          |
+| | {% include matlab path='images/ref ' function='registration.optimizer.OnePlusOneEvolutionary ' %}     | | One-plus-one evolutionary optimizer configuration object                              |
 
 ### Control Point Registration
 
-|                                                                         |                                                         |
-| ----------------------------------------------------------------------- | ------------------------------------------------------- |
-| | {% include matlab path='images/ref' function='cpselect' %}       | | Control Point Selection Tool                          |
-| | {% include matlab path='images/ref' function='fitgeotrans' %}    | | Fit geometric transformation to control point pairs   |
-| | {% include matlab path='images/ref' function='cpcorr' %}         | | Tune control-point locations using cross correlation  |
-| | {% include matlab path='images/ref' function='cpstruct2pairs' %} | | Convert CPSTRUCT to valid pairs of control points     |
-| | {% include matlab path='images/ref' function='normxcorr2' %}     | | Normalized 2-D cross-correlation                      |
-| | {% include matlab path='images/ref' function='cp2tform' %}       | | Infer spatial transformation from control point pairs |
+|                                                                           |                                                         |
+| ------------------------------------------------------------------------- | ------------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='cpselect ' %}       | | Control Point Selection Tool                          |
+| | {% include matlab path='images/ref ' function='fitgeotrans ' %}    | | Fit geometric transformation to control point pairs   |
+| | {% include matlab path='images/ref ' function='cpcorr ' %}         | | Tune control-point locations using cross correlation  |
+| | {% include matlab path='images/ref ' function='cpstruct2pairs ' %} | | Convert CPSTRUCT to valid pairs of control points     |
+| | {% include matlab path='images/ref ' function='normxcorr2 ' %}     | | Normalized 2-D cross-correlation                      |
+| | {% include matlab path='images/ref ' function='cp2tform ' %}       | | Infer spatial transformation from control point pairs |
 
 ## Image Enhancement
 
 ### Contrast Adjustment
 
-|                                                                        |                                                                         |
-| ---------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| | {% include matlab path='images/ref' function='imadjust' %}      | | Adjust image intensity values or colormap                             |
-| | {% include matlab path='images/ref' function='imcontrast' %}    | | Adjust Contrast tool                                                  |
-| | {% include matlab path='images/ref' function='imsharpen' %}     | | Sharpen image using unsharp masking                                   |
-| | {% include matlab path='images/ref' function='locallapfilt' %}  | | Fast Local Laplacian Filtering of images                              |
-| | {% include matlab path='images/ref' function='localcontrast' %} | | Edge-aware local contrast manipulation of images                      |
-| | {% include matlab path='images/ref' function='localtonemap' %}  | | Render HDR image for viewing while enhancing local contrast           |
-| | {% include matlab path='images/ref' function='histeq' %}        | | Enhance contrast using histogram equalization                         |
-| | {% include matlab path='images/ref' function='adapthisteq' %}   | | Contrast-limited adaptive histogram equalization (CLAHE)              |
-| | {% include matlab path='images/ref' function='imhistmatch' %}   | | Adjust histogram of image to match N-bin histogram of reference image |
-| | {% include matlab path='images/ref' function='decorrstretch' %} | | Apply decorrelation stretch to multichannel image                     |
-| | {% include matlab path='images/ref' function='stretchlim' %}    | | Find limits to contrast stretch image                                 |
-| | {% include matlab path='images/ref' function='intlut' %}        | | Convert integer values using lookup table                             |
-| | {% include matlab path='images/ref' function='imnoise' %}       | | Add noise to image                                                    |
+|                                                                          |                                                                         |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='imadjust ' %}      | | Adjust image intensity values or colormap                             |
+| | {% include matlab path='images/ref ' function='imcontrast ' %}    | | Adjust Contrast tool                                                  |
+| | {% include matlab path='images/ref ' function='imsharpen ' %}     | | Sharpen image using unsharp masking                                   |
+| | {% include matlab path='images/ref ' function='locallapfilt ' %}  | | Fast Local Laplacian Filtering of images                              |
+| | {% include matlab path='images/ref ' function='localcontrast ' %} | | Edge-aware local contrast manipulation of images                      |
+| | {% include matlab path='images/ref ' function='localtonemap ' %}  | | Render HDR image for viewing while enhancing local contrast           |
+| | {% include matlab path='images/ref ' function='histeq ' %}        | | Enhance contrast using histogram equalization                         |
+| | {% include matlab path='images/ref ' function='adapthisteq ' %}   | | Contrast-limited adaptive histogram equalization (CLAHE)              |
+| | {% include matlab path='images/ref ' function='imhistmatch ' %}   | | Adjust histogram of image to match N-bin histogram of reference image |
+| | {% include matlab path='images/ref ' function='decorrstretch ' %} | | Apply decorrelation stretch to multichannel image                     |
+| | {% include matlab path='images/ref ' function='stretchlim ' %}    | | Find limits to contrast stretch image                                 |
+| | {% include matlab path='images/ref ' function='intlut ' %}        | | Convert integer values using lookup table                             |
+| | {% include matlab path='images/ref ' function='imnoise ' %}       | | Add noise to image                                                    |
 
 ### Image Filtering
 
-|                                                                             |                                                      |
-| --------------------------------------------------------------------------- | ---------------------------------------------------- |
-| | {% include matlab path='images/ref' function='imfilter' %}           | | N-D filtering of multidimensional images           |
-| | {% include matlab path='images/ref' function='imgaussfilt' %}        | | 2-D Gaussian filtering of images                   |
-| | {% include matlab path='images/ref' function='imgaussfilt3' %}       | | 3-D Gaussian filtering of 3-D images               |
-| | {% include matlab path='images/ref' function='fspecial' %}           | | Create predefined 2-D filter                       |
-| | {% include matlab path='images/ref' function='imguidedfilter' %}     | | Guided filtering of images                         |
-| | {% include matlab path='images/ref' function='normxcorr2' %}         | | Normalized 2-D cross-correlation                   |
-| | {% include matlab path='images/ref' function='wiener2' %}            | | 2-D adaptive noise-removal filtering               |
-| | {% include matlab path='images/ref' function='medfilt2' %}           | | 2-D median filtering                               |
-| | {% include matlab path='images/ref' function='medfilt3' %}           | | 3-D median filtering                               |
-| | {% include matlab path='images/ref' function='ordfilt2' %}           | | 2-D order-statistic filtering                      |
-| | {% include matlab path='images/ref' function='stdfilt' %}            | | Local standard deviation of image                  |
-| | {% include matlab path='images/ref' function='rangefilt' %}          | | Local range of image                               |
-| | {% include matlab path='images/ref' function='entropyfilt' %}        | | Local entropy of grayscale image                   |
-| | {% include matlab path='images/ref' function='nlfilter' %}           | | General sliding-neighborhood operations            |
-| | {% include matlab path='images/ref' function='gabor' %}              | | Create Gabor filter or Gabor filter bank           |
-| | {% include matlab path='images/ref' function='imgaborfilt' %}        | | Apply Gabor filter or set of filters to 2-D image  |
-| | {% include matlab path='images/ref' function='imboxfilt' %}          | | 2-D box filtering of images                        |
-| | {% include matlab path='images/ref' function='imboxfilt3' %}         | | 3-D box filtering of 3-D images                    |
-| | {% include matlab path='images/ref' function='integralImage' %}      | | Calculate integral image                           |
-| | {% include matlab path='images/ref' function='integralImage3' %}     | | Calculate 3-D integral image                       |
-| | {% include matlab path='images/ref' function='integralBoxFilter' %}  | | 2-D box filtering of integral images               |
-| | {% include matlab path='images/ref' function='integralBoxFilter3' %} | | 3-D box filtering of 3-D integral images           |
-| | {% include matlab path='images/ref' function='bwareafilt' %}         | | Extract objects from binary image by size          |
-| | {% include matlab path='images/ref' function='bwpropfilt' %}         | | Extract objects from binary image using properties |
-| | {% include matlab path='images/ref' function='padarray' %}           | | Pad array                                          |
-| | {% include matlab path='images/ref' function='freqz2' %}             | | 2-D frequency response                             |
-| | {% include matlab path='images/ref' function='fsamp2' %}             | | 2-D FIR filter using frequency sampling            |
-| | {% include matlab path='images/ref' function='ftrans2' %}            | | 2-D FIR filter using frequency transformation      |
-| | {% include matlab path='images/ref' function='fwind1' %}             | | 2-D FIR filter using 1-D window method             |
-| | {% include matlab path='images/ref' function='fwind2' %}             | | 2-D FIR filter using 2-D window method             |
-| | {% include matlab path='images/ref' function='convmtx2' %}           | | 2-D convolution matrix                             |
+|                                                                               |                                                      |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='imfilter ' %}           | | N-D filtering of multidimensional images           |
+| | {% include matlab path='images/ref ' function='imgaussfilt ' %}        | | 2-D Gaussian filtering of images                   |
+| | {% include matlab path='images/ref ' function='imgaussfilt3 ' %}       | | 3-D Gaussian filtering of 3-D images               |
+| | {% include matlab path='images/ref ' function='fspecial ' %}           | | Create predefined 2-D filter                       |
+| | {% include matlab path='images/ref ' function='imguidedfilter ' %}     | | Guided filtering of images                         |
+| | {% include matlab path='images/ref ' function='normxcorr2 ' %}         | | Normalized 2-D cross-correlation                   |
+| | {% include matlab path='images/ref ' function='wiener2 ' %}            | | 2-D adaptive noise-removal filtering               |
+| | {% include matlab path='images/ref ' function='medfilt2 ' %}           | | 2-D median filtering                               |
+| | {% include matlab path='images/ref ' function='medfilt3 ' %}           | | 3-D median filtering                               |
+| | {% include matlab path='images/ref ' function='ordfilt2 ' %}           | | 2-D order-statistic filtering                      |
+| | {% include matlab path='images/ref ' function='stdfilt ' %}            | | Local standard deviation of image                  |
+| | {% include matlab path='images/ref ' function='rangefilt ' %}          | | Local range of image                               |
+| | {% include matlab path='images/ref ' function='entropyfilt ' %}        | | Local entropy of grayscale image                   |
+| | {% include matlab path='images/ref ' function='nlfilter ' %}           | | General sliding-neighborhood operations            |
+| | {% include matlab path='images/ref ' function='gabor ' %}              | | Create Gabor filter or Gabor filter bank           |
+| | {% include matlab path='images/ref ' function='imgaborfilt ' %}        | | Apply Gabor filter or set of filters to 2-D image  |
+| | {% include matlab path='images/ref ' function='imboxfilt ' %}          | | 2-D box filtering of images                        |
+| | {% include matlab path='images/ref ' function='imboxfilt3 ' %}         | | 3-D box filtering of 3-D images                    |
+| | {% include matlab path='images/ref ' function='integralImage ' %}      | | Calculate integral image                           |
+| | {% include matlab path='images/ref ' function='integralImage3 ' %}     | | Calculate 3-D integral image                       |
+| | {% include matlab path='images/ref ' function='integralBoxFilter ' %}  | | 2-D box filtering of integral images               |
+| | {% include matlab path='images/ref ' function='integralBoxFilter3 ' %} | | 3-D box filtering of 3-D integral images           |
+| | {% include matlab path='images/ref ' function='bwareafilt ' %}         | | Extract objects from binary image by size          |
+| | {% include matlab path='images/ref ' function='bwpropfilt ' %}         | | Extract objects from binary image using properties |
+| | {% include matlab path='images/ref ' function='padarray ' %}           | | Pad array                                          |
+| | {% include matlab path='images/ref ' function='freqz2 ' %}             | | 2-D frequency response                             |
+| | {% include matlab path='images/ref ' function='fsamp2 ' %}             | | 2-D FIR filter using frequency sampling            |
+| | {% include matlab path='images/ref ' function='ftrans2 ' %}            | | 2-D FIR filter using frequency transformation      |
+| | {% include matlab path='images/ref ' function='fwind1 ' %}             | | 2-D FIR filter using 1-D window method             |
+| | {% include matlab path='images/ref ' function='fwind2 ' %}             | | 2-D FIR filter using 2-D window method             |
+| | {% include matlab path='images/ref ' function='convmtx2 ' %}           | | 2-D convolution matrix                             |
 
 ### Morphological Operations
 
-|                                                                        |                                                                |
-| ---------------------------------------------------------------------- | -------------------------------------------------------------- |
-| | {% include matlab path='images/ref' function='bwhitmiss' %}     | | Binary hit-miss operation                                    |
-| | {% include matlab path='images/ref' function='bwmorph' %}       | | Morphological operations on binary images                    |
-| | {% include matlab path='images/ref' function='bwulterode' %}    | | Ultimate erosion                                             |
-| | {% include matlab path='images/ref' function='bwareaopen' %}    | | Remove small objects from binary image                       |
-| | {% include matlab path='images/ref' function='imbothat' %}      | | Bottom-hat filtering                                         |
-| | {% include matlab path='images/ref' function='imclearborder' %} | | Suppress light structures connected to image border          |
-| | {% include matlab path='images/ref' function='imclose' %}       | | Morphologically close image                                  |
-| | {% include matlab path='images/ref' function='imdilate' %}      | | Dilate image                                                 |
-| | {% include matlab path='images/ref' function='imerode' %}       | | Erode image                                                  |
-| | {% include matlab path='images/ref' function='imextendedmax' %} | | Extended-maxima transform                                    |
-| | {% include matlab path='images/ref' function='imextendedmin' %} | | Extended-minima transform                                    |
-| | {% include matlab path='images/ref' function='imfill' %}        | | Fill image regions and holes                                 |
-| | {% include matlab path='images/ref' function='imhmax' %}        | | H-maxima transform                                           |
-| | {% include matlab path='images/ref' function='imhmin' %}        | | H-minima transform                                           |
-| | {% include matlab path='images/ref' function='imimposemin' %}   | | Impose minima                                                |
-| | {% include matlab path='images/ref' function='imopen' %}        | | Morphologically open image                                   |
-| | {% include matlab path='images/ref' function='imreconstruct' %} | | Morphological reconstruction                                 |
-| | {% include matlab path='images/ref' function='imregionalmax' %} | | Regional maxima                                              |
-| | {% include matlab path='images/ref' function='imregionalmin' %} | | Regional minima                                              |
-| | {% include matlab path='images/ref' function='imtophat' %}      | | Top-hat filtering                                            |
-| | {% include matlab path='images/ref' function='watershed' %}     | | Watershed transform                                          |
-| | {% include matlab path='images/ref' function='conndef' %}       | | Create connectivity array                                    |
-| | {% include matlab path='images/ref' function='iptcheckconn' %}  | | Check validity of connectivity argument                      |
-| | {% include matlab path='images/ref' function='applylut' %}      | | Neighborhood operations on binary images using lookup tables |
-| | {% include matlab path='images/ref' function='bwlookup' %}      | | Nonlinear filtering using lookup tables                      |
-| | {% include matlab path='images/ref' function='makelut' %}       | | Create lookup table for use with bwlookup                    |
-| | {% include matlab path='images/ref' function='strel' %}         | | Morphological structuring element                            |
-| | {% include matlab path='images/ref' function='offsetstrel' %}   | | Morphological offset structuring element                     |
+|                                                                          |                                                                |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='bwhitmiss ' %}     | | Binary hit-miss operation                                    |
+| | {% include matlab path='images/ref ' function='bwmorph ' %}       | | Morphological operations on binary images                    |
+| | {% include matlab path='images/ref ' function='bwulterode ' %}    | | Ultimate erosion                                             |
+| | {% include matlab path='images/ref ' function='bwareaopen ' %}    | | Remove small objects from binary image                       |
+| | {% include matlab path='images/ref ' function='imbothat ' %}      | | Bottom-hat filtering                                         |
+| | {% include matlab path='images/ref ' function='imclearborder ' %} | | Suppress light structures connected to image border          |
+| | {% include matlab path='images/ref ' function='imclose ' %}       | | Morphologically close image                                  |
+| | {% include matlab path='images/ref ' function='imdilate ' %}      | | Dilate image                                                 |
+| | {% include matlab path='images/ref ' function='imerode ' %}       | | Erode image                                                  |
+| | {% include matlab path='images/ref ' function='imextendedmax ' %} | | Extended-maxima transform                                    |
+| | {% include matlab path='images/ref ' function='imextendedmin ' %} | | Extended-minima transform                                    |
+| | {% include matlab path='images/ref ' function='imfill ' %}        | | Fill image regions and holes                                 |
+| | {% include matlab path='images/ref ' function='imhmax ' %}        | | H-maxima transform                                           |
+| | {% include matlab path='images/ref ' function='imhmin ' %}        | | H-minima transform                                           |
+| | {% include matlab path='images/ref ' function='imimposemin ' %}   | | Impose minima                                                |
+| | {% include matlab path='images/ref ' function='imopen ' %}        | | Morphologically open image                                   |
+| | {% include matlab path='images/ref ' function='imreconstruct ' %} | | Morphological reconstruction                                 |
+| | {% include matlab path='images/ref ' function='imregionalmax ' %} | | Regional maxima                                              |
+| | {% include matlab path='images/ref ' function='imregionalmin ' %} | | Regional minima                                              |
+| | {% include matlab path='images/ref ' function='imtophat ' %}      | | Top-hat filtering                                            |
+| | {% include matlab path='images/ref ' function='watershed ' %}     | | Watershed transform                                          |
+| | {% include matlab path='images/ref ' function='conndef ' %}       | | Create connectivity array                                    |
+| | {% include matlab path='images/ref ' function='iptcheckconn ' %}  | | Check validity of connectivity argument                      |
+| | {% include matlab path='images/ref ' function='applylut ' %}      | | Neighborhood operations on binary images using lookup tables |
+| | {% include matlab path='images/ref ' function='bwlookup ' %}      | | Nonlinear filtering using lookup tables                      |
+| | {% include matlab path='images/ref ' function='makelut ' %}       | | Create lookup table for use with bwlookup                    |
+| | {% include matlab path='images/ref ' function='strel ' %}         | | Morphological structuring element                            |
+| | {% include matlab path='images/ref ' function='offsetstrel ' %}   | | Morphological offset structuring element                     |
 
 <h3 id="btdrz6j-1">
 
@@ -371,338 +371,338 @@ Deblurring
 
 </h3>
 
-|                                                                      |                                                              |
-| -------------------------------------------------------------------- | ------------------------------------------------------------ |
-| | {% include matlab path='images/ref' function='deconvblind' %} | | Deblur image using blind deconvolution                     |
-| | {% include matlab path='images/ref' function='deconvlucy' %}  | | Deblur image using Lucy-Richardson method                  |
-| | {% include matlab path='images/ref' function='deconvreg' %}   | | Deblur image using regularized filter                      |
-| | {% include matlab path='images/ref' function='deconvwnr' %}   | | Deblur image using Wiener filter                           |
-| | {% include matlab path='images/ref' function='edgetaper' %}   | | Taper discontinuities along image edges                    |
-| | {% include matlab path='images/ref' function='otf2psf' %}     | | Convert optical transfer function to point-spread function |
-| | {% include matlab path='images/ref' function='psf2otf' %}     | | Convert point-spread function to optical transfer function |
-| | {% include matlab path='images/ref' function='padarray' %}    | | Pad array                                                  |
+|                                                                        |                                                              |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------ |
+| | {% include matlab path='images/ref ' function='deconvblind ' %} | | Deblur image using blind deconvolution                     |
+| | {% include matlab path='images/ref ' function='deconvlucy ' %}  | | Deblur image using Lucy-Richardson method                  |
+| | {% include matlab path='images/ref ' function='deconvreg ' %}   | | Deblur image using regularized filter                      |
+| | {% include matlab path='images/ref ' function='deconvwnr ' %}   | | Deblur image using Wiener filter                           |
+| | {% include matlab path='images/ref ' function='edgetaper ' %}   | | Taper discontinuities along image edges                    |
+| | {% include matlab path='images/ref ' function='otf2psf ' %}     | | Convert optical transfer function to point-spread function |
+| | {% include matlab path='images/ref ' function='psf2otf ' %}     | | Convert point-spread function to optical transfer function |
+| | {% include matlab path='images/ref ' function='padarray ' %}    | | Pad array                                                  |
 
 ### ROI-Based Processing
 
-|                                                                     |                                                                 |
-| ------------------------------------------------------------------- | --------------------------------------------------------------- |
-| | {% include matlab path='images/ref' function='roipoly' %}    | | Specify polygonal region of interest (ROI)                    |
-| | {% include matlab path='images/ref' function='poly2mask' %}  | | Convert region of interest (ROI) polygon to region mask       |
-| | {% include matlab path='images/ref' function='regionfill' %} | | Fill in specified regions in image using inward interpolation |
-| | {% include matlab path='images/ref' function='roicolor' %}   | | Select region of interest (ROI) based on color                |
-| | {% include matlab path='images/ref' function='roifilt2' %}   | | Filter region of interest (ROI) in image                      |
-| | {% include matlab path='images/ref' function='imellipse' %}  | | Create draggable ellipse                                      |
-| | {% include matlab path='images/ref' function='imfreehand' %} | | Create draggable freehand region                              |
-| | {% include matlab path='images/ref' function='impoly' %}     | | Create draggable, resizable polygon                           |
-| | {% include matlab path='images/ref' function='imrect' %}     | | Create draggable rectangle                                    |
-| | {% include matlab path='images/ref' function='imroi' %}      | | Region-of-interest (ROI) base class                           |
+|                                                                       |                                                                 |
+| --------------------------------------------------------------------- | --------------------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='roipoly ' %}    | | Specify polygonal region of interest (ROI)                    |
+| | {% include matlab path='images/ref ' function='poly2mask ' %}  | | Convert region of interest (ROI) polygon to region mask       |
+| | {% include matlab path='images/ref ' function='regionfill ' %} | | Fill in specified regions in image using inward interpolation |
+| | {% include matlab path='images/ref ' function='roicolor ' %}   | | Select region of interest (ROI) based on color                |
+| | {% include matlab path='images/ref ' function='roifilt2 ' %}   | | Filter region of interest (ROI) in image                      |
+| | {% include matlab path='images/ref ' function='imellipse ' %}  | | Create draggable ellipse                                      |
+| | {% include matlab path='images/ref ' function='imfreehand ' %} | | Create draggable freehand region                              |
+| | {% include matlab path='images/ref ' function='impoly ' %}     | | Create draggable, resizable polygon                           |
+| | {% include matlab path='images/ref ' function='imrect ' %}     | | Create draggable rectangle                                    |
+| | {% include matlab path='images/ref ' function='imroi ' %}      | | Region-of-interest (ROI) base class                           |
 
 ### Neighborhood and Block Processing
 
-|                                                                       |                                                     |
-| --------------------------------------------------------------------- | --------------------------------------------------- |
-| | {% include matlab path='images/ref' function='ImageAdapter' %} | | Interface for image I/O                           |
-| | {% include matlab path='images/ref' function='blockproc' %}    | | Distinct block processing for image               |
-| | {% include matlab path='images/ref' function='bestblk' %}      | | Determine optimal block size for block processing |
-| | {% include matlab path='images/ref' function='nlfilter' %}     | | General sliding-neighborhood operations           |
-| | {% include matlab path='images/ref' function='col2im' %}       | | Rearrange matrix columns into blocks              |
-| | {% include matlab path='images/ref' function='colfilt' %}      | | Columnwise neighborhood operations                |
-| | {% include matlab path='images/ref' function='im2col' %}       | | Rearrange image blocks into columns               |
+|                                                                         |                                                     |
+| ----------------------------------------------------------------------- | --------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='ImageAdapter ' %} | | Interface for image I/O                           |
+| | {% include matlab path='images/ref ' function='blockproc ' %}    | | Distinct block processing for image               |
+| | {% include matlab path='images/ref ' function='bestblk ' %}      | | Determine optimal block size for block processing |
+| | {% include matlab path='images/ref ' function='nlfilter ' %}     | | General sliding-neighborhood operations           |
+| | {% include matlab path='images/ref ' function='col2im ' %}       | | Rearrange matrix columns into blocks              |
+| | {% include matlab path='images/ref ' function='colfilt ' %}      | | Columnwise neighborhood operations                |
+| | {% include matlab path='images/ref ' function='im2col ' %}       | | Rearrange image blocks into columns               |
 
 ### Image Arithmetic
 
-|                                                                        |                                                                   |
-| ---------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| | {% include matlab path='images/ref' function='imabsdiff' %}     | | Absolute difference of two images                               |
-| | {% include matlab path='images/ref' function='imadd' %}         | | Add two images or add constant to image                         |
-| | {% include matlab path='images/ref' function='imapplymatrix' %} | | Linear combination of color channels                            |
-| | {% include matlab path='images/ref' function='imcomplement' %}  | | Complement image                                                |
-| | {% include matlab path='images/ref' function='imdivide' %}      | | Divide one image into another or divide image by constant       |
-| | {% include matlab path='images/ref' function='imlincomb' %}     | | Linear combination of images                                    |
-| | {% include matlab path='images/ref' function='immultiply' %}    | | Multiply two images or multiply image by constant               |
-| | {% include matlab path='images/ref' function='imsubtract' %}    | | Subtract one image from another or subtract constant from image |
+|                                                                          |                                                                   |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='imabsdiff ' %}     | | Absolute difference of two images                               |
+| | {% include matlab path='images/ref ' function='imadd ' %}         | | Add two images or add constant to image                         |
+| | {% include matlab path='images/ref ' function='imapplymatrix ' %} | | Linear combination of color channels                            |
+| | {% include matlab path='images/ref ' function='imcomplement ' %}  | | Complement image                                                |
+| | {% include matlab path='images/ref ' function='imdivide ' %}      | | Divide one image into another or divide image by constant       |
+| | {% include matlab path='images/ref ' function='imlincomb ' %}     | | Linear combination of images                                    |
+| | {% include matlab path='images/ref ' function='immultiply ' %}    | | Multiply two images or multiply image by constant               |
+| | {% include matlab path='images/ref ' function='imsubtract ' %}    | | Subtract one image from another or subtract constant from image |
 
 ## Image Analysis
 
 ### Object Analysis
 
-|                                                                          |                                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------- |
-| | {% include matlab path='images/ref' function='bwboundaries' %}    | | Trace region boundaries in binary image             |
-| | {% include matlab path='images/ref' function='bwtraceboundary' %} | | Trace object in binary image                        |
-| | {% include matlab path='images/ref' function='visboundaries' %}   | | Plot region boundaries                              |
-| | {% include matlab path='images/ref' function='edge' %}            | | Find edges in intensity image                       |
-| | {% include matlab path='images/ref' function='imfindcircles' %}   | | Find circles using circular Hough transform         |
-| | {% include matlab path='images/ref' function='viscircles' %}      | | Create circle                                       |
-| | {% include matlab path='images/ref' function='imgradient' %}      | | Gradient magnitude and direction of an image        |
-| | {% include matlab path='images/ref' function='imgradientxy' %}    | | Directional gradients of an image                   |
-| | {% include matlab path='images/ref' function='imgradient3' %}     | | Find 3-D gradient magnitude and direction of images |
-| | {% include matlab path='images/ref' function='imgradientxyz' %}   | | Find the directional gradients of a 3-D image       |
-| | {% include matlab path='images/ref' function='hough' %}           | | Hough transform                                     |
-| | {% include matlab path='images/ref' function='houghlines' %}      | | Extract line segments based on Hough transform      |
-| | {% include matlab path='images/ref' function='houghpeaks' %}      | | Identify peaks in Hough transform                   |
-| | {% include matlab path='images/ref' function='qtdecomp' %}        | | Quadtree decomposition                              |
-| | {% include matlab path='images/ref' function='qtgetblk' %}        | | Block values in quadtree decomposition              |
-| | {% include matlab path='images/ref' function='qtsetblk' %}        | | Set block values in quadtree decomposition          |
+|                                                                            |                                                       |
+| -------------------------------------------------------------------------- | ----------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='bwboundaries ' %}    | | Trace region boundaries in binary image             |
+| | {% include matlab path='images/ref ' function='bwtraceboundary ' %} | | Trace object in binary image                        |
+| | {% include matlab path='images/ref ' function='visboundaries ' %}   | | Plot region boundaries                              |
+| | {% include matlab path='images/ref ' function='edge ' %}            | | Find edges in intensity image                       |
+| | {% include matlab path='images/ref ' function='imfindcircles ' %}   | | Find circles using circular Hough transform         |
+| | {% include matlab path='images/ref ' function='viscircles ' %}      | | Create circle                                       |
+| | {% include matlab path='images/ref ' function='imgradient ' %}      | | Gradient magnitude and direction of an image        |
+| | {% include matlab path='images/ref ' function='imgradientxy ' %}    | | Directional gradients of an image                   |
+| | {% include matlab path='images/ref ' function='imgradient3 ' %}     | | Find 3-D gradient magnitude and direction of images |
+| | {% include matlab path='images/ref ' function='imgradientxyz ' %}   | | Find the directional gradients of a 3-D image       |
+| | {% include matlab path='images/ref ' function='hough ' %}           | | Hough transform                                     |
+| | {% include matlab path='images/ref ' function='houghlines ' %}      | | Extract line segments based on Hough transform      |
+| | {% include matlab path='images/ref ' function='houghpeaks ' %}      | | Identify peaks in Hough transform                   |
+| | {% include matlab path='images/ref ' function='qtdecomp ' %}        | | Quadtree decomposition                              |
+| | {% include matlab path='images/ref ' function='qtgetblk ' %}        | | Block values in quadtree decomposition              |
+| | {% include matlab path='images/ref ' function='qtsetblk ' %}        | | Set block values in quadtree decomposition          |
 
 ### Region and Image Properties
 
-|                                                                         |                                                       |
-| ----------------------------------------------------------------------- | ----------------------------------------------------- |
-| | {% include matlab path='images/ref' function='regionprops' %}    | | Measure properties of image regions                 |
-| | {% include matlab path='images/ref' function='bwarea' %}         | | Area of objects in binary image                     |
-| | {% include matlab path='images/ref' function='bwareafilt' %}     | | Extract objects from binary image by size           |
-| | {% include matlab path='images/ref' function='bwconncomp' %}     | | Find connected components in binary image           |
-| | {% include matlab path='images/ref' function='bwconvhull' %}     | | Generate convex hull image from binary image        |
-| | {% include matlab path='images/ref' function='bwdist' %}         | | Distance transform of binary image                  |
-| | {% include matlab path='images/ref' function='bwdistgeodesic' %} | | Geodesic distance transform of binary image         |
-| | {% include matlab path='images/ref' function='bweuler' %}        | | Euler number of binary image                        |
-| | {% include matlab path='images/ref' function='bwperim' %}        | | Find perimeter of objects in binary image           |
-| | {% include matlab path='images/ref' function='bwpropfilt' %}     | | Extract objects from binary image using properties  |
-| | {% include matlab path='images/ref' function='bwselect' %}       | | Select objects in binary image                      |
-| | {% include matlab path='images/ref' function='graydist' %}       | | Gray-weighted distance transform of grayscale image |
-| | {% include matlab path='images/ref' function='imcontour' %}      | | Create contour plot of image data                   |
-| | {% include matlab path='images/ref' function='imhist' %}         | | Histogram of image data                             |
-| | {% include matlab path='images/ref' function='impixel' %}        | | Pixel color values                                  |
-| | {% include matlab path='images/ref' function='improfile' %}      | | Pixel-value cross-sections along line segments      |
-| | {% include matlab path='images/ref' function='corr2' %}          | | 2-D correlation coefficient                         |
-| | {% include matlab path='images/ref' function='mean2' %}          | | Average or mean of matrix elements                  |
-| | {% include matlab path='images/ref' function='std2' %}           | | Standard deviation of matrix elements               |
-| | {% include matlab path='images/ref' function='bwlabel' %}        | | Label connected components in 2-D binary image      |
-| | {% include matlab path='images/ref' function='bwlabeln' %}       | | Label connected components in binary image          |
-| | {% include matlab path='images/ref' function='labelmatrix' %}    | | Create label matrix from bwconncomp structure       |
-| | {% include matlab path='images/ref' function='bwpack' %}         | | Pack binary image                                   |
-| | {% include matlab path='images/ref' function='bwunpack' %}       | | Unpack binary image                                 |
+|                                                                           |                                                       |
+| ------------------------------------------------------------------------- | ----------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='regionprops ' %}    | | Measure properties of image regions                 |
+| | {% include matlab path='images/ref ' function='bwarea ' %}         | | Area of objects in binary image                     |
+| | {% include matlab path='images/ref ' function='bwareafilt ' %}     | | Extract objects from binary image by size           |
+| | {% include matlab path='images/ref ' function='bwconncomp ' %}     | | Find connected components in binary image           |
+| | {% include matlab path='images/ref ' function='bwconvhull ' %}     | | Generate convex hull image from binary image        |
+| | {% include matlab path='images/ref ' function='bwdist ' %}         | | Distance transform of binary image                  |
+| | {% include matlab path='images/ref ' function='bwdistgeodesic ' %} | | Geodesic distance transform of binary image         |
+| | {% include matlab path='images/ref ' function='bweuler ' %}        | | Euler number of binary image                        |
+| | {% include matlab path='images/ref ' function='bwperim ' %}        | | Find perimeter of objects in binary image           |
+| | {% include matlab path='images/ref ' function='bwpropfilt ' %}     | | Extract objects from binary image using properties  |
+| | {% include matlab path='images/ref ' function='bwselect ' %}       | | Select objects in binary image                      |
+| | {% include matlab path='images/ref ' function='graydist ' %}       | | Gray-weighted distance transform of grayscale image |
+| | {% include matlab path='images/ref ' function='imcontour ' %}      | | Create contour plot of image data                   |
+| | {% include matlab path='images/ref ' function='imhist ' %}         | | Histogram of image data                             |
+| | {% include matlab path='images/ref ' function='impixel ' %}        | | Pixel color values                                  |
+| | {% include matlab path='images/ref ' function='improfile ' %}      | | Pixel-value cross-sections along line segments      |
+| | {% include matlab path='images/ref ' function='corr2 ' %}          | | 2-D correlation coefficient                         |
+| | {% include matlab path='images/ref ' function='mean2 ' %}          | | Average or mean of matrix elements                  |
+| | {% include matlab path='images/ref ' function='std2 ' %}           | | Standard deviation of matrix elements               |
+| | {% include matlab path='images/ref ' function='bwlabel ' %}        | | Label connected components in 2-D binary image      |
+| | {% include matlab path='images/ref ' function='bwlabeln ' %}       | | Label connected components in binary image          |
+| | {% include matlab path='images/ref ' function='labelmatrix ' %}    | | Create label matrix from bwconncomp structure       |
+| | {% include matlab path='images/ref ' function='bwpack ' %}         | | Pack binary image                                   |
+| | {% include matlab path='images/ref ' function='bwunpack ' %}       | | Unpack binary image                                 |
 
 ### Texture Analysis
 
-|                                                                       |                                                     |
-| --------------------------------------------------------------------- | --------------------------------------------------- |
-| | {% include matlab path='images/ref' function='entropy' %}      | | Entropy of grayscale image                        |
-| | {% include matlab path='images/ref' function='entropyfilt' %}  | | Local entropy of grayscale image                  |
-| | {% include matlab path='images/ref' function='rangefilt' %}    | | Local range of image                              |
-| | {% include matlab path='images/ref' function='stdfilt' %}      | | Local standard deviation of image                 |
-| | {% include matlab path='images/ref' function='graycomatrix' %} | | Create gray-level co-occurrence matrix from image |
-| | {% include matlab path='images/ref' function='graycoprops' %}  | | Properties of gray-level co-occurrence matrix     |
+|                                                                         |                                                     |
+| ----------------------------------------------------------------------- | --------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='entropy ' %}      | | Entropy of grayscale image                        |
+| | {% include matlab path='images/ref ' function='entropyfilt ' %}  | | Local entropy of grayscale image                  |
+| | {% include matlab path='images/ref ' function='rangefilt ' %}    | | Local range of image                              |
+| | {% include matlab path='images/ref ' function='stdfilt ' %}      | | Local standard deviation of image                 |
+| | {% include matlab path='images/ref ' function='graycomatrix ' %} | | Create gray-level co-occurrence matrix from image |
+| | {% include matlab path='images/ref ' function='graycoprops ' %}  | | Properties of gray-level co-occurrence matrix     |
 
 ### Image Quality
 
-|                                                                |                                                                  |
-| -------------------------------------------------------------- | ---------------------------------------------------------------- |
-| | {% include matlab path='images/ref' function='immse' %} | | Mean-squared error                                             |
-| | {% include matlab path='images/ref' function='psnr' %}  | | Peak Signal-to-Noise Ratio (PSNR)                              |
-| | {% include matlab path='images/ref' function='ssim' %}  | | Structural Similarity Index (SSIM) for measuring image quality |
+|                                                                  |                                                                  |
+| ---------------------------------------------------------------- | ---------------------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='immse ' %} | | Mean-squared error                                             |
+| | {% include matlab path='images/ref ' function='psnr ' %}  | | Peak Signal-to-Noise Ratio (PSNR)                              |
+| | {% include matlab path='images/ref ' function='ssim ' %}  | | Structural Similarity Index (SSIM) for measuring image quality |
 
 ### Image Segmentation
 
-|                                                                         |                                                                                            |
-| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| | {% include matlab path='images/ref' function='activecontour' %}  | | Segment image into foreground and background using active contour                        |
-| | {% include matlab path='images/ref' function='imsegfmm' %}       | | Binary image segmentation using Fast Marching Method                                     |
-| | {% include matlab path='images/ref' function='imseggeodesic' %}  | | Segment image into two or three regions using geodesic distance-based color segmentation |
-| | {% include matlab path='images/ref' function='gradientweight' %} | | Calculate weights for image pixels based on image gradient                               |
-| | {% include matlab path='images/ref' function='graydiffweight' %} | | Calculate weights for image pixels based on grayscale intensity difference               |
-| | {% include matlab path='images/ref' function='grayconnected' %}  | | Select contiguous image region with similar gray values                                  |
-| | {% include matlab path='images/ref' function='graythresh' %}     | | Global image threshold using Otsu's method                                               |
-| | {% include matlab path='images/ref' function='multithresh' %}    | | Multilevel image thresholds using Otsu's method                                          |
-| | {% include matlab path='images/ref' function='otsuthresh' %}     | | Global histogram threshold using Otsu's method                                           |
-| | {% include matlab path='images/ref' function='adaptthresh' %}    | | Adaptive image threshold using local first-order statistics                              |
-| | {% include matlab path='images/ref' function='boundarymask' %}   | | Find region boundaries of segmentation                                                   |
-| | {% include matlab path='images/ref' function='superpixels' %}    | | 2-D superpixel oversegmentation of images                                                |
-| | {% include matlab path='images/ref' function='superpixels3' %}   | | 3-D superpixel oversegmentation of 3-D image                                             |
-| | {% include matlab path='images/ref' function='imoverlay' %}      | | Burn binary mask into 2-D image                                                          |
-| | {% include matlab path='images/ref' function='label2idx' %}      | | Convert label matrix to cell array of linear indices                                     |
+|                                                                           |                                                                                            |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| | {% include matlab path='images/ref ' function='activecontour ' %}  | | Segment image into foreground and background using active contour                        |
+| | {% include matlab path='images/ref ' function='imsegfmm ' %}       | | Binary image segmentation using Fast Marching Method                                     |
+| | {% include matlab path='images/ref ' function='imseggeodesic ' %}  | | Segment image into two or three regions using geodesic distance-based color segmentation |
+| | {% include matlab path='images/ref ' function='gradientweight ' %} | | Calculate weights for image pixels based on image gradient                               |
+| | {% include matlab path='images/ref ' function='graydiffweight ' %} | | Calculate weights for image pixels based on grayscale intensity difference               |
+| | {% include matlab path='images/ref ' function='grayconnected ' %}  | | Select contiguous image region with similar gray values                                  |
+| | {% include matlab path='images/ref ' function='graythresh ' %}     | | Global image threshold using Otsu's method                                               |
+| | {% include matlab path='images/ref ' function='multithresh ' %}    | | Multilevel image thresholds using Otsu's method                                          |
+| | {% include matlab path='images/ref ' function='otsuthresh ' %}     | | Global histogram threshold using Otsu's method                                           |
+| | {% include matlab path='images/ref ' function='adaptthresh ' %}    | | Adaptive image threshold using local first-order statistics                              |
+| | {% include matlab path='images/ref ' function='boundarymask ' %}   | | Find region boundaries of segmentation                                                   |
+| | {% include matlab path='images/ref ' function='superpixels ' %}    | | 2-D superpixel oversegmentation of images                                                |
+| | {% include matlab path='images/ref ' function='superpixels3 ' %}   | | 3-D superpixel oversegmentation of 3-D image                                             |
+| | {% include matlab path='images/ref ' function='imoverlay ' %}      | | Burn binary mask into 2-D image                                                          |
+| | {% include matlab path='images/ref ' function='label2idx ' %}      | | Convert label matrix to cell array of linear indices                                     |
 
 ### Image Transforms
 
-|                                                                         |                                                        |
-| ----------------------------------------------------------------------- | ------------------------------------------------------ |
-| | {% include matlab path='images/ref' function='bwdist' %}         | | Distance transform of binary image                   |
-| | {% include matlab path='images/ref' function='bwdistgeodesic' %} | | Geodesic distance transform of binary image          |
-| | {% include matlab path='images/ref' function='graydist' %}       | | Gray-weighted distance transform of grayscale image  |
-| | {% include matlab path='images/ref' function='hough' %}          | | Hough transform                                      |
-| | {% include matlab path='images/ref' function='dct2' %}           | | 2-D discrete cosine transform                        |
-| | {% include matlab path='images/ref' function='dctmtx' %}         | | Discrete cosine transform matrix                     |
-| | {% include matlab path='images/ref' function='fan2para' %}       | | Convert fan-beam projections to parallel-beam        |
-| | {% include matlab path='images/ref' function='fanbeam' %}        | | Fan-beam transform                                   |
-| | {% include matlab path='images/ref' function='idct2' %}          | | 2-D inverse discrete cosine transform                |
-| | {% include matlab path='images/ref' function='ifanbeam' %}       | | Inverse fan-beam transform                           |
-| | {% include matlab path='images/ref' function='iradon' %}         | | Inverse Radon transform                              |
-| | {% include matlab path='images/ref' function='para2fan' %}       | | Convert parallel-beam projections to fan-beam        |
-| | {% include matlab path='images/ref' function='radon' %}          | | Radon transform                                      |
-| | {% include matlab path='matlab/ref' function='fft2' %}           | | 2-D fast Fourier transform                           |
-| | {% include matlab path='matlab/ref' function='fftshift' %}       | | Shift zero-frequency component to center of spectrum |
-| | {% include matlab path='matlab/ref' function='ifft2' %}          | | 2-D inverse fast Fourier transform                   |
-| | {% include matlab path='matlab/ref' function='ifftshift' %}      | | Inverse FFT shift                                    |
+|                                                                           |                                                        |
+| ------------------------------------------------------------------------- | ------------------------------------------------------ |
+| | {% include matlab path='images/ref ' function='bwdist ' %}         | | Distance transform of binary image                   |
+| | {% include matlab path='images/ref ' function='bwdistgeodesic ' %} | | Geodesic distance transform of binary image          |
+| | {% include matlab path='images/ref ' function='graydist ' %}       | | Gray-weighted distance transform of grayscale image  |
+| | {% include matlab path='images/ref ' function='hough ' %}          | | Hough transform                                      |
+| | {% include matlab path='images/ref ' function='dct2 ' %}           | | 2-D discrete cosine transform                        |
+| | {% include matlab path='images/ref ' function='dctmtx ' %}         | | Discrete cosine transform matrix                     |
+| | {% include matlab path='images/ref ' function='fan2para ' %}       | | Convert fan-beam projections to parallel-beam        |
+| | {% include matlab path='images/ref ' function='fanbeam ' %}        | | Fan-beam transform                                   |
+| | {% include matlab path='images/ref ' function='idct2 ' %}          | | 2-D inverse discrete cosine transform                |
+| | {% include matlab path='images/ref ' function='ifanbeam ' %}       | | Inverse fan-beam transform                           |
+| | {% include matlab path='images/ref ' function='iradon ' %}         | | Inverse Radon transform                              |
+| | {% include matlab path='images/ref ' function='para2fan ' %}       | | Convert parallel-beam projections to fan-beam        |
+| | {% include matlab path='images/ref ' function='radon ' %}          | | Radon transform                                      |
+| | {% include matlab path='matlab/ref ' function='fft2 ' %}           | | 2-D fast Fourier transform                           |
+| | {% include matlab path='matlab/ref ' function='fftshift ' %}       | | Shift zero-frequency component to center of spectrum |
+| | {% include matlab path='matlab/ref ' function='ifft2 ' %}          | | 2-D inverse fast Fourier transform                   |
+| | {% include matlab path='matlab/ref ' function='ifftshift ' %}      | | Inverse FFT shift                                    |
 
 ## 3D Volumetric Image Processing
 
-|                                                                             |                                                                 |
-| --------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| | {% include matlab path='images/ref' function='imboxfilt3' %}         | | 3-D box filtering of 3-D images                               |
-| | {% include matlab path='images/ref' function='imgaussfilt3' %}       | | 3-D Gaussian filtering of 3-D images                          |
-| | {% include matlab path='images/ref' function='imgradient3' %}        | | Find 3-D gradient magnitude and direction of images           |
-| | {% include matlab path='images/ref' function='imregdemons' %}        | | Estimate displacement field that aligns two 2-D or 3-D images |
-| | {% include matlab path='images/ref' function='integralBoxFilter3' %} | | 3-D box filtering of 3-D integral images                      |
-| | {% include matlab path='images/ref' function='IntegralImage3' %}     | | Calculate 3-D integral image                                  |
-| | {% include matlab path='images/ref' function='medfilt3' %}           | | 3-D median filtering                                          |
-| | {% include matlab path='images/ref' function='superpixels3' %}       | | 3-D superpixel oversegmentation of 3-D image                  |
-| | {% include matlab path='images/ref' function='imref3d' %}            | | Reference 3-D image to world coordinates                      |
-| | {% include matlab path='images/ref' function='affine3d' %}           | | 3-D Affine Geometric Transformation                           |
+|                                                                               |                                                                 |
+| ----------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='imboxfilt3 ' %}         | | 3-D box filtering of 3-D images                               |
+| | {% include matlab path='images/ref ' function='imgaussfilt3 ' %}       | | 3-D Gaussian filtering of 3-D images                          |
+| | {% include matlab path='images/ref ' function='imgradient3 ' %}        | | Find 3-D gradient magnitude and direction of images           |
+| | {% include matlab path='images/ref ' function='imregdemons ' %}        | | Estimate displacement field that aligns two 2-D or 3-D images |
+| | {% include matlab path='images/ref ' function='integralBoxFilter3 ' %} | | 3-D box filtering of 3-D integral images                      |
+| | {% include matlab path='images/ref ' function='IntegralImage3 ' %}     | | Calculate 3-D integral image                                  |
+| | {% include matlab path='images/ref ' function='medfilt3 ' %}           | | 3-D median filtering                                          |
+| | {% include matlab path='images/ref ' function='superpixels3 ' %}       | | 3-D superpixel oversegmentation of 3-D image                  |
+| | {% include matlab path='images/ref ' function='imref3d ' %}            | | Reference 3-D image to world coordinates                      |
+| | {% include matlab path='images/ref ' function='affine3d ' %}           | | 3-D Affine Geometric Transformation                           |
 
 ## Code Generation
 
-|                                                                            |                                                                        |
-| -------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| | {% include matlab path='images/ref' function='adaptthresh' %}       | | Adaptive image threshold using local first-order statistics          |
-| | {% include matlab path='images/ref' function='boundarymask' %}      | | Find region boundaries of segmentation                               |
-| | {% include matlab path='images/ref' function='bwareaopen' %}        | | Remove small objects from binary image                               |
-| | {% include matlab path='images/ref' function='bwboundaries' %}      | | Trace region boundaries in binary image                              |
-| | {% include matlab path='images/ref' function='bwconncomp' %}        | | Find connected components in binary image                            |
-| | {% include matlab path='images/ref' function='bwdist' %}            | | Distance transform of binary image                                   |
-| | {% include matlab path='images/ref' function='bweuler' %}           | | Euler number of binary image                                         |
-| | {% include matlab path='images/ref' function='bwlabel' %}           | | Label connected components in 2-D binary image                       |
-| | {% include matlab path='images/ref' function='bwlookup' %}          | | Nonlinear filtering using lookup tables                              |
-| | {% include matlab path='images/ref' function='bwmorph' %}           | | Morphological operations on binary images                            |
-| | {% include matlab path='images/ref' function='bwpack' %}            | | Pack binary image                                                    |
-| | {% include matlab path='images/ref' function='bwperim' %}           | | Find perimeter of objects in binary image                            |
-| | {% include matlab path='images/ref' function='bwselect' %}          | | Select objects in binary image                                       |
-| | {% include matlab path='images/ref' function='bwtraceboundary' %}   | | Trace object in binary image                                         |
-| | {% include matlab path='images/ref' function='bwunpack' %}          | | Unpack binary image                                                  |
-| | {% include matlab path='images/ref' function='conndef' %}           | | Create connectivity array                                            |
-| | {% include matlab path='images/ref' function='demosaic' %}          | | Convert Bayer pattern encoded image to truecolor image               |
-| | {% include matlab path='images/ref' function='edge' %}              | | Find edges in intensity image                                        |
-| | {% include matlab path='images/ref' function='fitgeotrans' %}       | | Fit geometric transformation to control point pairs                  |
-| | {% include matlab path='images/ref' function='fspecial' %}          | | Create predefined 2-D filter                                         |
-| | {% include matlab path='images/ref' function='getrangefromclass' %} | | Default display range of image based on its class                    |
-| | {% include matlab path='images/ref' function='grayconnected' %}     | | Select contiguous image region with similar gray values              |
-| | {% include matlab path='images/ref' function='histeq' %}            | | Enhance contrast using histogram equalization                        |
-| | {% include matlab path='images/ref' function='hough' %}             | | Hough transform                                                      |
-| | {% include matlab path='images/ref' function='houghlines' %}        | | Extract line segments based on Hough transform                       |
-| | {% include matlab path='images/ref' function='houghpeaks' %}        | | Identify peaks in Hough transform                                    |
-| | {% include matlab path='matlab/ref' function='hsv2rgb' %}           | | Convert HSV colormap to RGB colormap                                 |
-| | {% include matlab path='matlab/ref' function='im2double' %}         | | Convert image to double precision                                    |
-| | {% include matlab path='images/ref' function='im2int16' %}          | | Convert image to 16-bit signed integers                              |
-| | {% include matlab path='images/ref' function='im2single' %}         | | Convert image to single precision                                    |
-| | {% include matlab path='images/ref' function='im2uint16' %}         | | Convert image to 16-bit unsigned integers                            |
-| | {% include matlab path='images/ref' function='im2uint8' %}          | | Convert image to 8-bit unsigned integers                             |
-| | {% include matlab path='images/ref' function='imabsdiff' %}         | | Absolute difference of two images                                    |
-| | {% include matlab path='images/ref' function='imadjust' %}          | | Adjust image intensity values or colormap                            |
-| | {% include matlab path='images/ref' function='imbinarize' %}        | | Binarize image by thresholding                                       |
-| | {% include matlab path='images/ref' function='imbothat' %}          | | Bottom-hat filtering                                                 |
-| | {% include matlab path='images/ref' function='imboxfilt' %}         | | 2-D box filtering of images                                          |
-| | {% include matlab path='images/ref' function='imclearborder' %}     | | Suppress light structures connected to image border                  |
-| | {% include matlab path='images/ref' function='imclose' %}           | | Morphologically close image                                          |
-| | {% include matlab path='images/ref' function='imcomplement' %}      | | Complement image                                                     |
-| | {% include matlab path='images/ref' function='imcrop' %}            | | Crop image                                                           |
-| | {% include matlab path='images/ref' function='imdilate' %}          | | Dilate image                                                         |
-| | {% include matlab path='images/ref' function='imerode' %}           | | Erode image                                                          |
-| | {% include matlab path='images/ref' function='imextendedmax' %}     | | Extended-maxima transform                                            |
-| | {% include matlab path='images/ref' function='imextendedmin' %}     | | Extended-minima transform                                            |
-| | {% include matlab path='images/ref' function='imfill' %}            | | Fill image regions and holes                                         |
-| | {% include matlab path='images/ref' function='imfilter' %}          | | N-D filtering of multidimensional images                             |
-| | {% include matlab path='images/ref' function='imfindcircles' %}     | | Find circles using circular Hough transform                          |
-| | {% include matlab path='images/ref' function='imgaborfilt' %}       | | Apply Gabor filter or set of filters to 2-D image                    |
-| | {% include matlab path='images/ref' function='imgaussfilt' %}       | | 2-D Gaussian filtering of images                                     |
-| | {% include matlab path='images/ref' function='imgradient3' %}       | | Find 3-D gradient magnitude and direction of images                  |
-| | {% include matlab path='images/ref' function='imgradientxyz' %}     | | Find the directional gradients of a 3-D image                        |
-| | {% include matlab path='images/ref' function='imhist' %}            | | Histogram of image data                                              |
-| | {% include matlab path='images/ref' function='imhmax' %}            | | H-maxima transform                                                   |
-| | {% include matlab path='images/ref' function='imhmin' %}            | | H-minima transform                                                   |
-| | {% include matlab path='images/ref' function='imlincomb' %}         | | Linear combination of images                                         |
-| | {% include matlab path='images/ref' function='immse' %}             | | Mean-squared error                                                   |
-| | {% include matlab path='images/ref' function='imopen' %}            | | Morphologically open image                                           |
-| | {% include matlab path='images/ref' function='imoverlay' %}         | | Burn binary mask into 2-D image                                      |
-| | {% include matlab path='images/ref' function='impyramid' %}         | | Image pyramid reduction and expansion                                |
-| | {% include matlab path='images/ref' function='imquantize' %}        | | Quantize image using specified quantization levels and output values |
-| | {% include matlab path='matlab/ref' function='imread' %}            | | Read image from graphics file                                        |
-| | {% include matlab path='images/ref' function='imreconstruct' %}     | | Morphological reconstruction                                         |
-| | {% include matlab path='images/ref' function='imregionalmax' %}     | | Regional maxima                                                      |
-| | {% include matlab path='images/ref' function='imregionalmin' %}     | | Regional minima                                                      |
-| | {% include matlab path='images/ref' function='imresize' %}          | | Resize image                                                         |
-| | {% include matlab path='images/ref' function='imrotate' %}          | | Rotate image                                                         |
-| | {% include matlab path='images/ref' function='imtophat' %}          | | Top-hat filtering                                                    |
-| | {% include matlab path='images/ref' function='imtranslate' %}       | | Translate image                                                      |
-| | {% include matlab path='images/ref' function='imwarp' %}            | | Apply geometric transformation to image                              |
-| | {% include matlab path='images/ref' function='integralBoxFilter' %} | | 2-D box filtering of integral images                                 |
-| | {% include matlab path='images/ref' function='integralImage' %}     | | Calculate integral image                                             |
-| | {% include matlab path='images/ref' function='intlut' %}            | | Convert integer values using lookup table                            |
-| | {% include matlab path='images/ref' function='iptcheckmap' %}       | | Check validity of colormap                                           |
-| | {% include matlab path='images/ref' function='iptcheckconn' %}      | | Check validity of connectivity argument                              |
-| | {% include matlab path='images/ref' function='lab2rgb' %}           | | Convert CIE 1976 L\*a\*b\* to RGB                                    |
-| | {% include matlab path='images/ref' function='label2rgb' %}         | | Convert label matrix into RGB image                                  |
-| | {% include matlab path='images/ref' function='label2idx' %}         | | Convert label matrix to cell array of linear indices                 |
-| | {% include matlab path='images/ref' function='mean2' %}             | | Average or mean of matrix elements                                   |
-| | {% include matlab path='images/ref' function='medfilt2' %}          | | 2-D median filtering                                                 |
-| | {% include matlab path='images/ref' function='multithresh' %}       | | Multilevel image thresholds using Otsu's method                      |
-| | {% include matlab path='images/ref' function='ordfilt2' %}          | | 2-D order-statistic filtering                                        |
-| | {% include matlab path='images/ref' function='otsuthresh' %}        | | Global histogram threshold using Otsu's method                       |
-| | {% include matlab path='images/ref' function='padarray' %}          | | Pad array                                                            |
-| | {% include matlab path='images/ref' function='psnr' %}              | | Peak Signal-to-Noise Ratio (PSNR)                                    |
-| | {% include matlab path='images/ref' function='regionprops' %}       | | Measure properties of image regions                                  |
-| | {% include matlab path='matlab/ref' function='rgb2gray' %}          | | Convert RGB image or colormap to grayscale                           |
-| | {% include matlab path='matlab/ref' function='rgb2hsv' %}           | | Convert RGB colormap to HSV colormap                                 |
-| | {% include matlab path='images/ref' function='rgb2lab' %}           | | Convert RGB to CIE 1976 L\*a\*b\*                                    |
-| | {% include matlab path='images/ref' function='rgb2ycbcr' %}         | | Convert RGB color values to YCbCr color space                        |
-| | {% include matlab path='images/ref' function='stretchlim' %}        | | Find limits to contrast stretch image                                |
-| | {% include matlab path='images/ref' function='superpixels' %}       | | 2-D superpixel oversegmentation of images                            |
-| | {% include matlab path='images/ref' function='superpixels3' %}      | | 3-D superpixel oversegmentation of 3-D image                         |
-| | {% include matlab path='images/ref' function='watershed' %}         | | Watershed transform                                                  |
-| | {% include matlab path='images/ref' function='ycbcr2rgb' %}         | | Convert YCbCr color values to RGB color space                        |
-| | {% include matlab path='images/ref' function='imref2d' %}           | | Reference 2-D image to world coordinates                             |
-| | {% include matlab path='images/ref' function='imref3d' %}           | | Reference 3-D image to world coordinates                             |
-| | {% include matlab path='images/ref' function='affine2d' %}          | | 2-D Affine Geometric Transformation                                  |
-| | {% include matlab path='images/ref' function='projective2d' %}      | | 2-D Projective Geometric Transformation                              |
-| | {% include matlab path='images/ref' function='strel' %}             | | Morphological structuring element                                    |
-| | {% include matlab path='images/ref' function='offsetstrel' %}       | | Morphological offset structuring element                             |
+|                                                                              |                                                                        |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='adaptthresh ' %}       | | Adaptive image threshold using local first-order statistics          |
+| | {% include matlab path='images/ref ' function='boundarymask ' %}      | | Find region boundaries of segmentation                               |
+| | {% include matlab path='images/ref ' function='bwareaopen ' %}        | | Remove small objects from binary image                               |
+| | {% include matlab path='images/ref ' function='bwboundaries ' %}      | | Trace region boundaries in binary image                              |
+| | {% include matlab path='images/ref ' function='bwconncomp ' %}        | | Find connected components in binary image                            |
+| | {% include matlab path='images/ref ' function='bwdist ' %}            | | Distance transform of binary image                                   |
+| | {% include matlab path='images/ref ' function='bweuler ' %}           | | Euler number of binary image                                         |
+| | {% include matlab path='images/ref ' function='bwlabel ' %}           | | Label connected components in 2-D binary image                       |
+| | {% include matlab path='images/ref ' function='bwlookup ' %}          | | Nonlinear filtering using lookup tables                              |
+| | {% include matlab path='images/ref ' function='bwmorph ' %}           | | Morphological operations on binary images                            |
+| | {% include matlab path='images/ref ' function='bwpack ' %}            | | Pack binary image                                                    |
+| | {% include matlab path='images/ref ' function='bwperim ' %}           | | Find perimeter of objects in binary image                            |
+| | {% include matlab path='images/ref ' function='bwselect ' %}          | | Select objects in binary image                                       |
+| | {% include matlab path='images/ref ' function='bwtraceboundary ' %}   | | Trace object in binary image                                         |
+| | {% include matlab path='images/ref ' function='bwunpack ' %}          | | Unpack binary image                                                  |
+| | {% include matlab path='images/ref ' function='conndef ' %}           | | Create connectivity array                                            |
+| | {% include matlab path='images/ref ' function='demosaic ' %}          | | Convert Bayer pattern encoded image to truecolor image               |
+| | {% include matlab path='images/ref ' function='edge ' %}              | | Find edges in intensity image                                        |
+| | {% include matlab path='images/ref ' function='fitgeotrans ' %}       | | Fit geometric transformation to control point pairs                  |
+| | {% include matlab path='images/ref ' function='fspecial ' %}          | | Create predefined 2-D filter                                         |
+| | {% include matlab path='images/ref ' function='getrangefromclass ' %} | | Default display range of image based on its class                    |
+| | {% include matlab path='images/ref ' function='grayconnected ' %}     | | Select contiguous image region with similar gray values              |
+| | {% include matlab path='images/ref ' function='histeq ' %}            | | Enhance contrast using histogram equalization                        |
+| | {% include matlab path='images/ref ' function='hough ' %}             | | Hough transform                                                      |
+| | {% include matlab path='images/ref ' function='houghlines ' %}        | | Extract line segments based on Hough transform                       |
+| | {% include matlab path='images/ref ' function='houghpeaks ' %}        | | Identify peaks in Hough transform                                    |
+| | {% include matlab path='matlab/ref ' function='hsv2rgb ' %}           | | Convert HSV colormap to RGB colormap                                 |
+| | {% include matlab path='matlab/ref ' function='im2double ' %}         | | Convert image to double precision                                    |
+| | {% include matlab path='images/ref ' function='im2int16 ' %}          | | Convert image to 16-bit signed integers                              |
+| | {% include matlab path='images/ref ' function='im2single ' %}         | | Convert image to single precision                                    |
+| | {% include matlab path='images/ref ' function='im2uint16 ' %}         | | Convert image to 16-bit unsigned integers                            |
+| | {% include matlab path='images/ref ' function='im2uint8 ' %}          | | Convert image to 8-bit unsigned integers                             |
+| | {% include matlab path='images/ref ' function='imabsdiff ' %}         | | Absolute difference of two images                                    |
+| | {% include matlab path='images/ref ' function='imadjust ' %}          | | Adjust image intensity values or colormap                            |
+| | {% include matlab path='images/ref ' function='imbinarize ' %}        | | Binarize image by thresholding                                       |
+| | {% include matlab path='images/ref ' function='imbothat ' %}          | | Bottom-hat filtering                                                 |
+| | {% include matlab path='images/ref ' function='imboxfilt ' %}         | | 2-D box filtering of images                                          |
+| | {% include matlab path='images/ref ' function='imclearborder ' %}     | | Suppress light structures connected to image border                  |
+| | {% include matlab path='images/ref ' function='imclose ' %}           | | Morphologically close image                                          |
+| | {% include matlab path='images/ref ' function='imcomplement ' %}      | | Complement image                                                     |
+| | {% include matlab path='images/ref ' function='imcrop ' %}            | | Crop image                                                           |
+| | {% include matlab path='images/ref ' function='imdilate ' %}          | | Dilate image                                                         |
+| | {% include matlab path='images/ref ' function='imerode ' %}           | | Erode image                                                          |
+| | {% include matlab path='images/ref ' function='imextendedmax ' %}     | | Extended-maxima transform                                            |
+| | {% include matlab path='images/ref ' function='imextendedmin ' %}     | | Extended-minima transform                                            |
+| | {% include matlab path='images/ref ' function='imfill ' %}            | | Fill image regions and holes                                         |
+| | {% include matlab path='images/ref ' function='imfilter ' %}          | | N-D filtering of multidimensional images                             |
+| | {% include matlab path='images/ref ' function='imfindcircles ' %}     | | Find circles using circular Hough transform                          |
+| | {% include matlab path='images/ref ' function='imgaborfilt ' %}       | | Apply Gabor filter or set of filters to 2-D image                    |
+| | {% include matlab path='images/ref ' function='imgaussfilt ' %}       | | 2-D Gaussian filtering of images                                     |
+| | {% include matlab path='images/ref ' function='imgradient3 ' %}       | | Find 3-D gradient magnitude and direction of images                  |
+| | {% include matlab path='images/ref ' function='imgradientxyz ' %}     | | Find the directional gradients of a 3-D image                        |
+| | {% include matlab path='images/ref ' function='imhist ' %}            | | Histogram of image data                                              |
+| | {% include matlab path='images/ref ' function='imhmax ' %}            | | H-maxima transform                                                   |
+| | {% include matlab path='images/ref ' function='imhmin ' %}            | | H-minima transform                                                   |
+| | {% include matlab path='images/ref ' function='imlincomb ' %}         | | Linear combination of images                                         |
+| | {% include matlab path='images/ref ' function='immse ' %}             | | Mean-squared error                                                   |
+| | {% include matlab path='images/ref ' function='imopen ' %}            | | Morphologically open image                                           |
+| | {% include matlab path='images/ref ' function='imoverlay ' %}         | | Burn binary mask into 2-D image                                      |
+| | {% include matlab path='images/ref ' function='impyramid ' %}         | | Image pyramid reduction and expansion                                |
+| | {% include matlab path='images/ref ' function='imquantize ' %}        | | Quantize image using specified quantization levels and output values |
+| | {% include matlab path='matlab/ref ' function='imread ' %}            | | Read image from graphics file                                        |
+| | {% include matlab path='images/ref ' function='imreconstruct ' %}     | | Morphological reconstruction                                         |
+| | {% include matlab path='images/ref ' function='imregionalmax ' %}     | | Regional maxima                                                      |
+| | {% include matlab path='images/ref ' function='imregionalmin ' %}     | | Regional minima                                                      |
+| | {% include matlab path='images/ref ' function='imresize ' %}          | | Resize image                                                         |
+| | {% include matlab path='images/ref ' function='imrotate ' %}          | | Rotate image                                                         |
+| | {% include matlab path='images/ref ' function='imtophat ' %}          | | Top-hat filtering                                                    |
+| | {% include matlab path='images/ref ' function='imtranslate ' %}       | | Translate image                                                      |
+| | {% include matlab path='images/ref ' function='imwarp ' %}            | | Apply geometric transformation to image                              |
+| | {% include matlab path='images/ref ' function='integralBoxFilter ' %} | | 2-D box filtering of integral images                                 |
+| | {% include matlab path='images/ref ' function='integralImage ' %}     | | Calculate integral image                                             |
+| | {% include matlab path='images/ref ' function='intlut ' %}            | | Convert integer values using lookup table                            |
+| | {% include matlab path='images/ref ' function='iptcheckmap ' %}       | | Check validity of colormap                                           |
+| | {% include matlab path='images/ref ' function='iptcheckconn ' %}      | | Check validity of connectivity argument                              |
+| | {% include matlab path='images/ref ' function='lab2rgb ' %}           | | Convert CIE 1976 L\*a\*b\* to RGB                                    |
+| | {% include matlab path='images/ref ' function='label2rgb ' %}         | | Convert label matrix into RGB image                                  |
+| | {% include matlab path='images/ref ' function='label2idx ' %}         | | Convert label matrix to cell array of linear indices                 |
+| | {% include matlab path='images/ref ' function='mean2 ' %}             | | Average or mean of matrix elements                                   |
+| | {% include matlab path='images/ref ' function='medfilt2 ' %}          | | 2-D median filtering                                                 |
+| | {% include matlab path='images/ref ' function='multithresh ' %}       | | Multilevel image thresholds using Otsu's method                      |
+| | {% include matlab path='images/ref ' function='ordfilt2 ' %}          | | 2-D order-statistic filtering                                        |
+| | {% include matlab path='images/ref ' function='otsuthresh ' %}        | | Global histogram threshold using Otsu's method                       |
+| | {% include matlab path='images/ref ' function='padarray ' %}          | | Pad array                                                            |
+| | {% include matlab path='images/ref ' function='psnr ' %}              | | Peak Signal-to-Noise Ratio (PSNR)                                    |
+| | {% include matlab path='images/ref ' function='regionprops ' %}       | | Measure properties of image regions                                  |
+| | {% include matlab path='matlab/ref ' function='rgb2gray ' %}          | | Convert RGB image or colormap to grayscale                           |
+| | {% include matlab path='matlab/ref ' function='rgb2hsv ' %}           | | Convert RGB colormap to HSV colormap                                 |
+| | {% include matlab path='images/ref ' function='rgb2lab ' %}           | | Convert RGB to CIE 1976 L\*a\*b\*                                    |
+| | {% include matlab path='images/ref ' function='rgb2ycbcr ' %}         | | Convert RGB color values to YCbCr color space                        |
+| | {% include matlab path='images/ref ' function='stretchlim ' %}        | | Find limits to contrast stretch image                                |
+| | {% include matlab path='images/ref ' function='superpixels ' %}       | | 2-D superpixel oversegmentation of images                            |
+| | {% include matlab path='images/ref ' function='superpixels3 ' %}      | | 3-D superpixel oversegmentation of 3-D image                         |
+| | {% include matlab path='images/ref ' function='watershed ' %}         | | Watershed transform                                                  |
+| | {% include matlab path='images/ref ' function='ycbcr2rgb ' %}         | | Convert YCbCr color values to RGB color space                        |
+| | {% include matlab path='images/ref ' function='imref2d ' %}           | | Reference 2-D image to world coordinates                             |
+| | {% include matlab path='images/ref ' function='imref3d ' %}           | | Reference 3-D image to world coordinates                             |
+| | {% include matlab path='images/ref ' function='affine2d ' %}          | | 2-D Affine Geometric Transformation                                  |
+| | {% include matlab path='images/ref ' function='projective2d ' %}      | | 2-D Projective Geometric Transformation                              |
+| | {% include matlab path='images/ref ' function='strel ' %}             | | Morphological structuring element                                    |
+| | {% include matlab path='images/ref ' function='offsetstrel ' %}       | | Morphological offset structuring element                             |
 
 ## GPU Computing
 
-|                                                                        |                                                                 |
-| ---------------------------------------------------------------------- | --------------------------------------------------------------- |
-| | {% include matlab path='images/ref' function='bwdist' %}        | | Distance transform of binary image                            |
-| | {% include matlab path='images/ref' function='bwlabel' %}       | | Label connected components in 2-D binary image                |
-| | {% include matlab path='images/ref' function='bwlookup' %}      | | Nonlinear filtering using lookup tables                       |
-| | {% include matlab path='images/ref' function='bwmorph' %}       | | Morphological operations on binary images                     |
-| | {% include matlab path='images/ref' function='corr2' %}         | | 2-D correlation coefficient                                   |
-| | {% include matlab path='images/ref' function='edge' %}          | | Find edges in intensity image                                 |
-| | {% include matlab path='images/ref' function='histeq' %}        | | Enhance contrast using histogram equalization                 |
-| | {% include matlab path='matlab/ref' function='im2double' %}     | | Convert image to double precision                             |
-| | {% include matlab path='images/ref' function='im2single' %}     | | Convert image to single precision                             |
-| | {% include matlab path='images/ref' function='im2uint8' %}      | | Convert image to 8-bit unsigned integers                      |
-| | {% include matlab path='images/ref' function='im2uint16' %}     | | Convert image to 16-bit unsigned integers                     |
-| | {% include matlab path='images/ref' function='imabsdiff' %}     | | Absolute difference of two images                             |
-| | {% include matlab path='images/ref' function='imadjust' %}      | | Adjust image intensity values or colormap                     |
-| | {% include matlab path='images/ref' function='imbothat' %}      | | Bottom-hat filtering                                          |
-| | {% include matlab path='images/ref' function='imclose' %}       | | Morphologically close image                                   |
-| | {% include matlab path='images/ref' function='imcomplement' %}  | | Complement image                                              |
-| | {% include matlab path='images/ref' function='imdilate' %}      | | Dilate image                                                  |
-| | {% include matlab path='images/ref' function='imerode' %}       | | Erode image                                                   |
-| | {% include matlab path='images/ref' function='imfill' %}        | | Fill image regions and holes                                  |
-| | {% include matlab path='images/ref' function='imfilter' %}      | | N-D filtering of multidimensional images                      |
-| | {% include matlab path='images/ref' function='imgradient' %}    | | Gradient magnitude and direction of an image                  |
-| | {% include matlab path='images/ref' function='imgradientxy' %}  | | Directional gradients of an image                             |
-| | {% include matlab path='images/ref' function='imhist' %}        | | Histogram of image data                                       |
-| | {% include matlab path='images/ref' function='imlincomb' %}     | | Linear combination of images                                  |
-| | {% include matlab path='images/ref' function='imnoise' %}       | | Add noise to image                                            |
-| | {% include matlab path='images/ref' function='ycbcr2rgb' %}     | | Convert YCbCr color values to RGB color space                 |
-| | {% include matlab path='images/ref' function='imopen' %}        | | Morphologically open image                                    |
-| | {% include matlab path='images/ref' function='imreconstruct' %} | | Morphological reconstruction                                  |
-| | {% include matlab path='images/ref' function='imregdemons' %}   | | Estimate displacement field that aligns two 2-D or 3-D images |
-| | {% include matlab path='images/ref' function='imresize' %}      | | Resize image                                                  |
-| | {% include matlab path='images/ref' function='imrotate' %}      | | Rotate image                                                  |
-| | {% include matlab path='images/ref' function='imshow' %}        | | Display image                                                 |
-| | {% include matlab path='images/ref' function='imtophat' %}      | | Top-hat filtering                                             |
-| | {% include matlab path='images/ref' function='iradon' %}        | | Inverse Radon transform                                       |
-| | {% include matlab path='images/ref' function='mat2gray' %}      | | Convert matrix to grayscale image                             |
-| | {% include matlab path='images/ref' function='mean2' %}         | | Average or mean of matrix elements                            |
-| | {% include matlab path='images/ref' function='medfilt2' %}      | | 2-D median filtering                                          |
-| | {% include matlab path='images/ref' function='normxcorr2' %}    | | Normalized 2-D cross-correlation                              |
-| | {% include matlab path='images/ref' function='padarray' %}      | | Pad array                                                     |
-| | {% include matlab path='images/ref' function='radon' %}         | | Radon transform                                               |
-| | {% include matlab path='images/ref' function='regionprops' %}   | | Measure properties of image regions                           |
-| | {% include matlab path='matlab/ref' function='rgb2gray' %}      | | Convert RGB image or colormap to grayscale                    |
-| | {% include matlab path='images/ref' function='rgb2ycbcr' %}     | | Convert RGB color values to YCbCr color space                 |
-| | {% include matlab path='images/ref' function='std2' %}          | | Standard deviation of matrix elements                         |
-| | {% include matlab path='images/ref' function='stdfilt' %}       | | Local standard deviation of image                             |
-| | {% include matlab path='images/ref' function='stretchlim' %}    | | Find limits to contrast stretch image                         |
+|                                                                          |                                                                 |
+| ------------------------------------------------------------------------ | --------------------------------------------------------------- |
+| | {% include matlab path='images/ref ' function='bwdist ' %}        | | Distance transform of binary image                            |
+| | {% include matlab path='images/ref ' function='bwlabel ' %}       | | Label connected components in 2-D binary image                |
+| | {% include matlab path='images/ref ' function='bwlookup ' %}      | | Nonlinear filtering using lookup tables                       |
+| | {% include matlab path='images/ref ' function='bwmorph ' %}       | | Morphological operations on binary images                     |
+| | {% include matlab path='images/ref ' function='corr2 ' %}         | | 2-D correlation coefficient                                   |
+| | {% include matlab path='images/ref ' function='edge ' %}          | | Find edges in intensity image                                 |
+| | {% include matlab path='images/ref ' function='histeq ' %}        | | Enhance contrast using histogram equalization                 |
+| | {% include matlab path='matlab/ref ' function='im2double ' %}     | | Convert image to double precision                             |
+| | {% include matlab path='images/ref ' function='im2single ' %}     | | Convert image to single precision                             |
+| | {% include matlab path='images/ref ' function='im2uint8 ' %}      | | Convert image to 8-bit unsigned integers                      |
+| | {% include matlab path='images/ref ' function='im2uint16 ' %}     | | Convert image to 16-bit unsigned integers                     |
+| | {% include matlab path='images/ref ' function='imabsdiff ' %}     | | Absolute difference of two images                             |
+| | {% include matlab path='images/ref ' function='imadjust ' %}      | | Adjust image intensity values or colormap                     |
+| | {% include matlab path='images/ref ' function='imbothat ' %}      | | Bottom-hat filtering                                          |
+| | {% include matlab path='images/ref ' function='imclose ' %}       | | Morphologically close image                                   |
+| | {% include matlab path='images/ref ' function='imcomplement ' %}  | | Complement image                                              |
+| | {% include matlab path='images/ref ' function='imdilate ' %}      | | Dilate image                                                  |
+| | {% include matlab path='images/ref ' function='imerode ' %}       | | Erode image                                                   |
+| | {% include matlab path='images/ref ' function='imfill ' %}        | | Fill image regions and holes                                  |
+| | {% include matlab path='images/ref ' function='imfilter ' %}      | | N-D filtering of multidimensional images                      |
+| | {% include matlab path='images/ref ' function='imgradient ' %}    | | Gradient magnitude and direction of an image                  |
+| | {% include matlab path='images/ref ' function='imgradientxy ' %}  | | Directional gradients of an image                             |
+| | {% include matlab path='images/ref ' function='imhist ' %}        | | Histogram of image data                                       |
+| | {% include matlab path='images/ref ' function='imlincomb ' %}     | | Linear combination of images                                  |
+| | {% include matlab path='images/ref ' function='imnoise ' %}       | | Add noise to image                                            |
+| | {% include matlab path='images/ref ' function='ycbcr2rgb ' %}     | | Convert YCbCr color values to RGB color space                 |
+| | {% include matlab path='images/ref ' function='imopen ' %}        | | Morphologically open image                                    |
+| | {% include matlab path='images/ref ' function='imreconstruct ' %} | | Morphological reconstruction                                  |
+| | {% include matlab path='images/ref ' function='imregdemons ' %}   | | Estimate displacement field that aligns two 2-D or 3-D images |
+| | {% include matlab path='images/ref ' function='imresize ' %}      | | Resize image                                                  |
+| | {% include matlab path='images/ref ' function='imrotate ' %}      | | Rotate image                                                  |
+| | {% include matlab path='images/ref ' function='imshow ' %}        | | Display image                                                 |
+| | {% include matlab path='images/ref ' function='imtophat ' %}      | | Top-hat filtering                                             |
+| | {% include matlab path='images/ref ' function='iradon ' %}        | | Inverse Radon transform                                       |
+| | {% include matlab path='images/ref ' function='mat2gray ' %}      | | Convert matrix to grayscale image                             |
+| | {% include matlab path='images/ref ' function='mean2 ' %}         | | Average or mean of matrix elements                            |
+| | {% include matlab path='images/ref ' function='medfilt2 ' %}      | | 2-D median filtering                                          |
+| | {% include matlab path='images/ref ' function='normxcorr2 ' %}    | | Normalized 2-D cross-correlation                              |
+| | {% include matlab path='images/ref ' function='padarray ' %}      | | Pad array                                                     |
+| | {% include matlab path='images/ref ' function='radon ' %}         | | Radon transform                                               |
+| | {% include matlab path='images/ref ' function='regionprops ' %}   | | Measure properties of image regions                           |
+| | {% include matlab path='matlab/ref ' function='rgb2gray ' %}      | | Convert RGB image or colormap to grayscale                    |
+| | {% include matlab path='images/ref ' function='rgb2ycbcr ' %}     | | Convert RGB color values to YCbCr color space                 |
+| | {% include matlab path='images/ref ' function='std2 ' %}          | | Standard deviation of matrix elements                         |
+| | {% include matlab path='images/ref ' function='stdfilt ' %}       | | Local standard deviation of image                             |
+| | {% include matlab path='images/ref ' function='stretchlim ' %}    | | Find limits to contrast stretch image                         |

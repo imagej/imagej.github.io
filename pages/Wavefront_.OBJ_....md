@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='fiji' repo='VIB' source='marchingcubes/ExportMesh\_.java' %}
+{% include github org='fiji ' repo='VIB ' source='marchingcubes/ExportMesh\_.java ' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='ExportMesh\_' author='Benjamin Schmid, Mark Longair' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
+{% include info-box software='ImageJ ' name='ExportMesh\_ ' author='Benjamin Schmid, Mark Longair ' maintainer='Mark Longair ' filename='VIB\_.jar ' source=source status='stable ' %}
 
 This plugin will threshold a stack and create a surface using marchingcubes, and then save that as a Wavefront .OBJ file.
 

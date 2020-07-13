@@ -1,5 +1,6 @@
 import os
 import re
+import regex
 
 txt_include_start = "%AA%"
 txt_param_start = "%BB%"
@@ -26,7 +27,7 @@ global_shadows = [
     ("%}\n", txt_liquid_linebreak_end),
     ("\n{% endcapture %}\n", txt_capture_end),
     ("\n{% capture ", txt_capture_start),
-    ("\n%}\n", txt_capture_end)
+    ("\n%}\n", txt_capture_start_end)
 ]
 
 def read_file(file_path):
@@ -133,24 +134,7 @@ def process_file(str_content):
     # replace '{{ stuff }}' mediawiki syntax with '{% include stuff %}` liquid
     content_tmp = replace_template(content_tmp)
 
-    #convert image links into working links - this can be improved, it should not run on all File: links..
-    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\]\]',
-                         fix_src_width_link_match, content_tmp)
-    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)\|[ ]*([^x ][^ |]*)[ ]*[ ]*\]\]',
-                         fix_src_link_width_match, content_tmp)
-    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)\|[ ]*(x[^ |]*)[ ]*[ ]*\]\]',
-                         fix_src_link_height_match, content_tmp)
-    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*x([^ |]*)[ ]*\|[ ]*link=([^\]]*)\]\]',
-                         fix_src_height_link_match, content_tmp)
-
-    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*thumb[ ]*\|[ ]*([^|]*)[ ]*\]\]',
-                         fix_thumbnail_match, content_tmp)
-
-    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|\|([ ]*[^\]]*[ ]*)\]\]',
-                         fix_simple_image_match, content_tmp)
-
-    # content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\]\]',
-    #                      r'[[File:\1 |\3|link=\2 ]]', content_tmp)
+    content_tmp = regex.sub(r'\[((?>[^\[\]]+|(?R))*)\]', file_match, content_tmp)
 
     content_tmp = content_tmp.replace("{{-}}", "")
     content_tmp = content_tmp.replace("{{}}", "")
@@ -159,20 +143,55 @@ def process_file(str_content):
     return content_tmp
 
 
+def file_match(match):
+    res = re.sub(r'^\[\[Image:([^|]*)\|[ ]*thumb[ ]*\|(.*)\]\]$', fix_thumbnail_match, match[0])
+    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\]\]$',
+                         fix_src_width_link_match, res)
+    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)\|[ ]*([^x ][^ |]*)[ ]*[ ]*\]\]$',
+                         fix_src_link_width_match, res)
+    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)\|[ ]*(x[^ |]*)[ ]*[ ]*\]\]$',
+                         fix_src_link_height_match, res)
+    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|[ ]*x([^ |]*)[ ]*\|[ ]*link=([^\]]*)\]\]$',
+                         fix_src_height_link_match, res)
+
+    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|[ ]*thumb[ ]*\|[ ]*([^|]*)[ ]*\]\]$',
+                         fix_thumbnail_match, res)
+
+    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|\|([ ]*[^\]]*[ ]*)\]\]$',
+                         fix_simple_image_match, res)
+
+    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\]\]$',
+                         r'[[File:\1 |\3|link=\2 ]]', res)
+
+    return res
+
+
 def fix_simple_image_match(match):
     return fix_simple_image(match.group(1), match.group(2))
 
 
 def fix_simple_image(src, title):
-    return "[[File:" + src.capitalize() + "|" + title + "]]"
+    return "[[File:" + fix_image_name(src) + "|" + title + "]]"
 
 
 def fix_thumbnail_match(match):
+
     return fix_thumbnail(match.group(1), match.group(2))
 
 
+def fix_thumbnail_match2(match):
+    return fix_thumbnail(match.group(1), match.group(3))
+
+
 def fix_thumbnail(src, title):
-    return txt_include_start + 'thumbnail src="/images/pages/' + src.capitalize() + '" title="' + title + '" ' + txt_liquid_end
+    title = re.sub(r'([^|\[]*\|)*(([^\|]|\[.*\])*)$', r'\2', title)
+    capture = txt_capture_start + "title" + txt_capture_start_end + " " + title + " " + txt_capture_end
+    return capture + txt_include_start + 'thumbnail src="/images/pages/' + fix_image_name(src) + '" title=title ' + txt_liquid_end
+
+
+def fix_image_name(src):
+    src = src[0].capitalize() + src[1:]
+    return src.replace("_", " ")
 
 
 def fix_src_width_link_match(match):
@@ -192,12 +211,11 @@ def fix_src_height_link_match(match):
 
 
 def fix_src_link_width(src, link, width):
-    return '<a href="' + link + '"><img src="' + src.capitalize() + '" width="' + width + '"/></a>'
+    return '<a href="' + link + '"><img src="' + fix_image_name(src) + '" width="' + width + '"/></a>'
 
 
 def fix_src_link_height(src, link, height):
-    return '<a href="' + link + '"><img src="' + src.capitalize() + '" height="' + height + '"/></a>'
-
+    return '<a href="' + link + '"><img src="' + fix_image_name(src) + '" height="' + height + '"/></a>'
 
 
 def reveal_includes(content_tmp):
@@ -331,7 +349,7 @@ def match_content_parameters(template_content):
             captures += txt_capture_start + key + txt_capture_start_end + value + txt_capture_end
             res += key + txt_param_var_start + key + " "
         else:
-            res += key + txt_param_start + cleanup(value) + txt_param_end + " "
+            res += key + txt_param_start + cleanup(value) + " " + txt_param_end + " "
 
     # check if additionally to having parameters, the template has an unnamed value as well,
     # e.g. {{template this is the unnamed value|x=bla|y=blub}}
@@ -416,8 +434,8 @@ def convert(path_in, path_out, layout, title):
         # do replacements in md format
         content_tmp = reveal_includes(content_tmp)
         content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
-        content_tmp = re.sub(r'<img src=\"(?!http)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
-        content_tmp = re.sub(r'(\!\[[^\]]*\]\()([^"\)]*[ \n]\"[^\"]*\"[ ]*\))', r'\1/images/pages/\2', content_tmp)
+        content_tmp = re.sub(r'<img src=\"(?!http)(?!/images/pages/)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
+        content_tmp = re.sub(r'(\!\[[^\]]*\]\()((?!/images/pages/)[^\"\)]*)([ \n]\"[^\"]*\"[ ]*\))', fix_md_image, content_tmp)
 
         # pattern = re.compile(include_regex)
         # for match in re.findall(pattern, content_tmp):
@@ -437,6 +455,10 @@ def convert(path_in, path_out, layout, title):
         for line in lines:
             f.write(line)
     return None
+
+
+def fix_md_image(match):
+    return match.group(1) + "/images/pages/" + fix_image_name(match.group(2) + match.group(3))
 
 
 def run_pandoc(path_in, path_out):

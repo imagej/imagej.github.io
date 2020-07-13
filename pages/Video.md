@@ -33,6 +33,6 @@ For files larger than 4GB, you may run into trouble with otherwise excellent tra
 
 ## Future directions
 
-The {% include github org='scifio' repo='scifio-javacv' label='SCIFIO-JavaCV' %} project will offer out-of-the-box support for video formats supported by [OpenCV](OpenCV "wikilink") including those supported by FFmpeg. At the moment, the SCIFIO-JavaCV project is inactive due to lack of development resources.
+The {% include github org='scifio ' repo='scifio-javacv ' label='SCIFIO-JavaCV ' %} project will offer out-of-the-box support for video formats supported by [OpenCV](OpenCV "wikilink") including those supported by FFmpeg. At the moment, the SCIFIO-JavaCV project is inactive due to lack of development resources.
 
 [Category:Import-Export](Category:Import-Export "wikilink")

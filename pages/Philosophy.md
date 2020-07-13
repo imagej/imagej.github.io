@@ -45,7 +45,7 @@ Backward compatibility is one of ImageJ's most important goals. It must remain p
 
 ## Release early, release often
 
-{% include box title='What"s the alternative?' width='30%' float='right' text='Some projects opt to release their entire software stack with a single monolithic version number. This has one extremely nice ramification: it clearly communicates which versions of which software components are intended to be compatible with one another.
+{% include box title='What"s the alternative? ' width='30% ' float='right ' text='Some projects opt to release their entire software stack with a single monolithic version number. This has one extremely nice ramification: it clearly communicates which versions of which software components are intended to be compatible with one another.
 
 For example, the [OME](OME "wikilink") project (which includes [OMERO](OMERO "wikilink") and [Bio-Formats](Bio-Formats "wikilink")) employs this approach to versioning and release management. Before each release, the entire OME team performs careful and thorough integration testing of all components.
 

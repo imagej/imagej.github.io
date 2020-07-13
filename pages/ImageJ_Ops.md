@@ -31,8 +31,8 @@ Ops are a special type of ImageJ plugin, so a basic understanding of the [SciJav
 
 In addition to cloning the [imagej-ops](https://github.com/imagej/imagej-ops) itself, the following components have useful Ops examples:
 
-  - {% include github org='imagej' repo='imagej-tutorials' label='ImageJ-tutorials' %} - examples of ImageJ plugins using Ops
-  - {% include github org='imagej' repo='imagej-scripting' label='ImageJ-scripting' %} - provides [templates in the Script Editor](Script_Templates "wikilink")
+  - {% include github org='imagej ' repo='imagej-tutorials ' label='ImageJ-tutorials ' %} - examples of ImageJ plugins using Ops
+  - {% include github org='imagej ' repo='imagej-scripting ' label='ImageJ-scripting ' %} - provides [templates in the Script Editor](Script_Templates "wikilink")
 
 ## Tutorials and workshops
 
@@ -58,7 +58,7 @@ Yes, but there is no automagic wrapping of native/external functionality in Ops.
 
 For an interactive tool to see all available Ops, see the [Op Finder](Op_Finder "wikilink") documentation.
 
-For the core Ops available, you can go to the {% include javadoc package='?net/imagej/ops' class='package-summary' label='ImageJ Ops' %} javadocs. Any class under the package `net.imagej.ops` is related to Ops.
+For the core Ops available, you can go to the {% include javadoc package='?net/imagej/ops ' class='package-summary ' label='ImageJ Ops ' %} javadocs. Any class under the package `net.imagej.ops` is related to Ops.
 
 You can also use the [Script Editor](Script_Editor "wikilink") in ImageJ and actively search using Ops itself. For example in groovy language:
 

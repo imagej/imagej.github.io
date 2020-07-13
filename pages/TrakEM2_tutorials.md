@@ -17,7 +17,11 @@ TODO GOOGLE SPREADSHEET WIDGET
 
 ## Video tutorial on the basic recipe for TrakEM2
 
-![TrakEM2 basic tutorial](/images/pages/Screenshot-TrakEM2_basics_tutorial.png "TrakEM2 basic tutorial")
+
+{% capture title%}
+ TrakEM2 basic tutorial 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Screenshot-TrakEM2 basics tutorial.png" title=title %}
 
 This is the [basic tutorial for TrakEM2](TrakEM2_basics_tutorial "wikilink"). **If you are new to TrakEM2, please start by watching [this tutorial](TrakEM2_basics_tutorial "wikilink")**. It includes:
 
@@ -32,7 +36,11 @@ This is the [basic tutorial for TrakEM2](TrakEM2_basics_tutorial "wikilink"). **
 
 ## Video tutorial on segmenting/outlining objects over multiple sections in 3D
 
-![TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)](/images/pages/Arealists-brushing.jpg "TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)") This mp4 [video tutorial](http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4) covers:
+
+{% capture title%}
+ TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.) 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Arealists-brushing.jpg" title=title %} This mp4 [video tutorial](http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4) covers:
 
   - How to use the PEN tool with "area lists" segmentation type (paint an area, flood-fill, erase, flood-erase).
   - How to use ROIs (selections like polygon and freeroi) to edit "area lists".
@@ -44,7 +52,11 @@ See also the list of [key bindings for AreaList](http://www.ini.uzh.ch/~acardona
 
 ## Video tutorial on aligning sections
 
-![TrakEM2 align sections tutorial](/images/pages/Screenshot-TrakEM2_align_sections_tutorial.png "TrakEM2 align sections tutorial")
+
+{% capture title%}
+ TrakEM2 align sections tutorial 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Screenshot-TrakEM2 align sections tutorial.png" title=title %}
 
 [This video tutorial](TrakEM2_align_sections_tutorial "wikilink") is focused on:
 
@@ -58,7 +70,11 @@ See also the feature extraction and alignment [parameters explained](http://www.
 
 ## Video tutorial on manual segmentation modes
 
-![TrakEM2 manual segmentation modes](/images/pages/Screenshot-TrakEM2-Manual-Segmentation-Modes-Tutorial.png "TrakEM2 manual segmentation modes")
+
+{% capture title%}
+ TrakEM2 manual segmentation modes 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Screenshot-TrakEM2-Manual-Segmentation-Modes-Tutorial.png" title=title %}
 
 [Tutorial on how to manually segment cells using the 3 segmentation modes](TrakEM2_segmentation_modes_tutorial "wikilink"):
 
@@ -74,7 +90,11 @@ See also the feature extraction and alignment [parameters explained](http://www.
 
 ## Video tutorial on semi-automatic segmentation
 
-![TrakEM2 semi-automatic segmentation](/images/pages/Screenshot-TrakEM2-tutorial-automatic-segmentation.png "TrakEM2 semi-automatic segmentation")
+
+{% capture title%}
+ TrakEM2 semi-automatic segmentation 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Screenshot-TrakEM2-tutorial-automatic-segmentation.png" title=title %}
 
 In [this video tutorial](TrakEM2_semi-automatic_segmentation_tutorial "wikilink") you will learn:
 
@@ -87,7 +107,11 @@ In [this video tutorial](TrakEM2_semi-automatic_segmentation_tutorial "wikilink"
 
 ## Video tutorial on measuring surfaces and volumes
 
-![TrakEM2 measuring surfaces and volumes](/images/pages/Screenshot-TrakEM2-tutorial-measure-surfaces.png "TrakEM2 measuring surfaces and volumes")
+
+{% capture title%}
+ TrakEM2 measuring surfaces and volumes 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Screenshot-TrakEM2-tutorial-measure-surfaces.png" title=title %}
 
 In [this video tutorial](TrakEM2_measurements_tutorial "wikilink") you will learn how to:
 
@@ -101,7 +125,11 @@ See also [AreaList measurements](http://www.ini.uzh.ch/~acardona/trakem2_manual.
 
 ## Video tutorial on adding sections/layers to an existing project
 
-![TrakEM2 adding layers to existing project](/images/pages/Screenshot-TrakEM2-tutorial-add-layers.png "TrakEM2 adding layers to existing project")
+
+{% capture title%}
+ TrakEM2 adding layers to existing project 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Screenshot-TrakEM2-tutorial-add-layers.png" title=title %}
 
 [Here](TrakEM2_add_more_sections/layers_tutorial "wikilink") you will learn how to:
 
@@ -116,7 +144,11 @@ In the tutorial, the layers are imported following an existing set of layers, i.
 
 ## Video tutorial on saving a project
 
-![TrakEM2 saving a project](/images/pages/Screenshot-TrakEM2-save-project.png "TrakEM2 saving a project")
+
+{% capture title%}
+ TrakEM2 saving a project 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Screenshot-TrakEM2-save-project.png" title=title %}
 
   - [Saving a TrakEM2 project](TrakEM2_saving_project_tutorial "wikilink") into an .XML file.
 

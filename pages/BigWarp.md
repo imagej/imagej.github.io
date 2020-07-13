@@ -8,7 +8,7 @@ categories: Plugins,Visualization,Transform,Registration,Citable
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:bigwarp\_fiji' %}Bigwarp is a tool for manual, interactive, landmark-based deformable image alignment. It uses the [BigDataViewer](BigDataViewer "wikilink") for visualization and navigation, and uses a [Thin Plate Spline](wikipedia:Thin_plate_spline "wikilink") implemented {% include github org='saalfeldlab' repo='bigwarp' label='in Java' %} to build a deformation from point correspondences.
+{% include component-stats content=':sc.fiji:bigwarp\_fiji' %}Bigwarp is a tool for manual, interactive, landmark-based deformable image alignment. It uses the [BigDataViewer](BigDataViewer "wikilink") for visualization and navigation, and uses a [Thin Plate Spline](wikipedia:Thin_plate_spline "wikilink") implemented {% include github org='saalfeldlab ' repo='bigwarp ' label='in Java ' %} to build a deformation from point correspondences.
 
 The interface enables landmark pair placement and displays the effects of the warp on-the-fly.
 
@@ -16,7 +16,7 @@ The interface enables landmark pair placement and displays the effects of the wa
 
 Bigwarp comes with Fiji. You can access it via *Plugins {% include arrow%}
  BigDataViewer {% include arrow%}
- Big Warp*, or by modifying {% include github org='saalfeldlab' repo='bigwarp' path='scripts/bigwarp\_fiji\_demo.bsh' label='this example script' %}. If this is not visible in your installation, try updating Fiji with *Help {% include arrow%}
+ Big Warp*, or by modifying {% include github org='saalfeldlab ' repo='bigwarp ' path='scripts/bigwarp\_fiji\_demo.bsh ' label='this example script ' %}. If this is not visible in your installation, try updating Fiji with *Help {% include arrow%}
  Update Fiji.*
 
 ## Usage
@@ -81,7 +81,7 @@ Press {% include key content='press|F8' %} to bring up a transformation type sel
 
 |                                                                          |                                                                                   |
 | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| ![Bigwarp\_selectTps.png](/images/pages/Bigwarp_selectTps.png "Bigwarp_selectTps.png") | ![Bigwarp\_selectAffine.png](/images/pages/Bigwarp_selectAffine.png "Bigwarp_selectAffine.png") |
+| ![Bigwarp\_selectTps.png](/images/pages/Bigwarp selectTps.png "Bigwarp selectTps.png") | ![Bigwarp\_selectAffine.png](/images/pages/Bigwarp selectAffine.png "Bigwarp selectAffine.png") |
 | Example of a thin plate spline transformation                            | Example of an affine transformation                                               |
 
 #### Table of transformation types
@@ -156,7 +156,7 @@ Landmarks can be exported and imported from plain text files using the drop down
 Export the warped moving image by clicking *File {% include arrow%}
  \> Export as ImagePlus* or using the {% include key content='press|Ctrl' %}+{% include key content='press|E' %} keyboard shortcut.
 
-![Bigwarp\_export.png](/images/pages/Bigwarp_export.png "Bigwarp_export.png")
+![Bigwarp\_export.png](/images/pages/Bigwarp export.png "Bigwarp export.png")
 
 The default parameters will result in the exported image having the same dimensions as the target image. *Note: Take care when exporting very large data sets as they can cause out-of-memory exceptions.*
 
@@ -222,7 +222,7 @@ The results are shown in the "Inverse example" below.
 
 |                                                                                     |                                                                                     |
 | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| ![bigwarp\_warp\_roi\_fwd.png](/images/pages/bigwarp_warp_roi_fwd.png "bigwarp_warp_roi_fwd.png") | ![bigwarp\_warp\_roi\_inv.png](/images/pages/bigwarp_warp_roi_inv.png "bigwarp_warp_roi_inv.png") |
+| ![bigwarp\_warp\_roi\_fwd.png](/images/pages/Bigwarp warp roi fwd.png "bigwarp warp roi fwd.png") | ![bigwarp\_warp\_roi\_inv.png](/images/pages/Bigwarp warp roi inv.png "bigwarp warp roi inv.png") |
 | Forward example (click to expand)                                                   | Inverse example (click to expand)                                                   |
 
 Note, at this time ImageJ ROIs are 2D objects. We recommend using another approach for 3D regions of interest.

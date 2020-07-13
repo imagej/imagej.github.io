@@ -12,6 +12,6 @@ The [Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)](http
 
 The MPI-CBG is also the place where the [Fiji](Fiji "wikilink") project was started and is still one of the key contributors to Fiji and its supporting infrastructure.
 
-![cbgbuilding.jpg](/images/pages/cbgbuilding.jpg "cbgbuilding.jpg")
+![cbgbuilding.jpg](/images/pages/Cbgbuilding.jpg "cbgbuilding.jpg")
 
 [Category:Location](Category:Location "wikilink")

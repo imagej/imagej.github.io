@@ -20,41 +20,41 @@ Note that all the scripts of this page are links from https://github.com/imagej/
 
 ## Stack Projection
 
-{% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/ImageJ2/Projection.py' label='Projection.py' %}
+{% include github-embed org='imagej ' repo='imagej-scripting ' path='src/main/resources/script\_templates/ImageJ2/Projection.py ' label='Projection.py ' %}
 
 ## Apply Threshold
 
-{% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/ImageJ2/Apply\_Threshold.py' label='Apply\_Threshold.py' %}
+{% include github-embed org='imagej ' repo='imagej-scripting ' path='src/main/resources/script\_templates/ImageJ2/Apply\_Threshold.py ' label='Apply\_Threshold.py ' %}
 
-{% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/ImageJ2/Apply\_Threshold\_Fast.py' label='Apply\_Threshold\_Fast.py' %}
+{% include github-embed org='imagej ' repo='imagej-scripting ' path='src/main/resources/script\_templates/ImageJ2/Apply\_Threshold\_Fast.py ' label='Apply\_Threshold\_Fast.py ' %}
 
 ## Crop an image
 
-{% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/ImageJ2/Crop.py' label='Crop.py' %}
+{% include github-embed org='imagej ' repo='imagej-scripting ' path='src/main/resources/script\_templates/ImageJ2/Crop.py ' label='Crop.py ' %}
 
 ## Rotate all the frames of a stack
 
-{% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/ImageJ2/Rotate\_Stack.py' label='Rotate\_Stack.py' %}
+{% include github-embed org='imagej ' repo='imagej-scripting ' path='src/main/resources/script\_templates/ImageJ2/Rotate\_Stack.py ' label='Rotate\_Stack.py ' %}
 
 ## Subtract a stack to its first image
 
-{% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/ImageJ2/Subtract\_First\_Image\_Stack.py' label='Subtract\_First\_Image\_Stack.py' %}
+{% include github-embed org='imagej ' repo='imagej-scripting ' path='src/main/resources/script\_templates/ImageJ2/Subtract\_First\_Image\_Stack.py ' label='Subtract\_First\_Image\_Stack.py ' %}
 
 ## Apply DOG Filter
 
-{% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/ImageJ2/Apply\_DOG\_Filtering.py' label='Apply\_DOG\_Filtering.py' %}
+{% include github-embed org='imagej ' repo='imagej-scripting ' path='src/main/resources/script\_templates/ImageJ2/Apply\_DOG\_Filtering.py ' label='Apply\_DOG\_Filtering.py ' %}
 
 ## Apply a mask
 
-{% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/ImageJ2/Apply\_Mask.py' label='Apply\_Mask.py' %}
+{% include github-embed org='imagej ' repo='imagej-scripting ' path='src/main/resources/script\_templates/ImageJ2/Apply\_Mask.py ' label='Apply\_Mask.py ' %}
 
 ## Retrieve objects/particles from a mask
 
-{% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/ImageJ2/Particles\_From\_Mask.py' label='Particles\_From\_Mask.py' %}
+{% include github-embed org='imagej ' repo='imagej-scripting ' path='src/main/resources/script\_templates/ImageJ2/Particles\_From\_Mask.py ' label='Particles\_From\_Mask.py ' %}
 
 ## Manual Simple Registration on Stack
 
-{% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/ImageJ2/Manual\_Registration.py' label='Manual\_Registration.py' %}
+{% include github-embed org='imagej ' repo='imagej-scripting ' path='src/main/resources/script\_templates/ImageJ2/Manual\_Registration.py ' label='Manual\_Registration.py ' %}
 
 # Resources
 

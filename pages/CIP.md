@@ -10,9 +10,9 @@ description: test description
 
 \_\_TOC\_\_
 
-{% include info-box software='ImageJ/Fiji' name='CIP' update-site='CIP' author='[Benoit Lombardot](User:Benoit "wikilink")' maintainer='[Benoit Lombardot](User:Benoit "wikilink")' released='January 2018' filename='CIP update site' source='https://github.com/benoalo/CIP' category='[Scripting](:Category:Scripting "wikilink")' %}
+{% include info-box software='ImageJ/Fiji ' name='CIP ' update-site='CIP ' author='[Benoit Lombardot](User:Benoit "wikilink") ' maintainer='[Benoit Lombardot](User:Benoit "wikilink") ' released='January 2018 ' filename='CIP update site ' source='https://github.com/benoalo/CIP ' category='[Scripting](:Category:Scripting "wikilink") ' %}
 
-![CIP: ](/images/pages/CIP_basic_concept.PNG "CIP: ")
+![CIP: ](/images/pages/CIP basic concept.PNG "CIP: ")
 
 <div align="center">
 
@@ -58,7 +58,7 @@ For information on the parameters, their type, whether they are optionnal or req
 
 Image analysis workflows require the user to perform stereotypic steps: enhance signal, define and characterize region, visualize and assess results. This recurring process allows to create one function per task and to organize these functions in categories with similar roles, input and output: Format, Filter, Segment, Math, Assess.
 
-![CIP\_generic\_pipeline.PNG](/images/pages/CIP_generic_pipeline.PNG "CIP_generic_pipeline.PNG")
+![CIP\_generic\_pipeline.PNG](/images/pages/CIP generic pipeline.PNG "CIP generic pipeline.PNG")
 
 <div align="center">
 
@@ -103,9 +103,9 @@ Link to function user documentation are provided in the table below.
 
 The following script shows how to segment 2d object in an image and visualize them. The workflow is illustrated in the **Figure 3**.
 
-{% include github-embed org='benoalo' repo='CIP' path='wiki\_examples/2D\_nuclei.py' %}
+{% include github-embed org='benoalo ' repo='CIP ' path='wiki\_examples/2D\_nuclei.py ' %}
 
-![CIP: ](/images/pages/CIP_example_2D.PNG "CIP: ")
+![CIP: ](/images/pages/CIP example 2D.PNG "CIP: ")
 
 <div align="center">
 
@@ -115,9 +115,9 @@ The following script shows how to segment 2d object in an image and visualize th
 
 The following script shows a 3d nuclei segmentation and the measure and displau of nuclei size. The workflow is illustrated in the **Figure 4**.
 
-{% include github-embed org='benoalo' repo='CIP' path='wiki\_examples/3D\_nuclei\_segmentation.py' %}
+{% include github-embed org='benoalo ' repo='CIP ' path='wiki\_examples/3D\_nuclei\_segmentation.py ' %}
 
-![CIP: ](/images/pages/CIP_example_3D.PNG "CIP: ")
+![CIP: ](/images/pages/CIP example 3D.PNG "CIP: ")
 
 <div align="center">
 

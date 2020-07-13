@@ -8,7 +8,7 @@ categories: Plugins,Deconvolution
 description: test description
 ---
 
-{% include info-box software='ImageJ' name='Parallel Iterative Deconvolution 2D and 3D' author='Piotr Wendykier' maintainer='None' filename=' [parallel\_iterative\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260515&filename=parallel_iterative_deconvolution-1.9-bin.zip) ' source=' [parallel\_iterative\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260515&filename=parallel_iterative_deconvolution-1.9-src.zip) ' released='30 January 2008' latest-version='11 April 2009' status='active' category='[Deconvolution](:Category:Deconvolution "wikilink")' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/paralleliterativedeconvolution' %}
+{% include info-box software='ImageJ ' name='Parallel Iterative Deconvolution 2D and 3D ' author='Piotr Wendykier ' maintainer='None ' filename=' [parallel\_iterative\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260515&filename=parallel_iterative_deconvolution-1.9-bin.zip) ' source=' [parallel\_iterative\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260515&filename=parallel_iterative_deconvolution-1.9-src.zip) ' released='30 January 2008 ' latest-version='11 April 2009 ' status='active ' category='[Deconvolution](:Category:Deconvolution "wikilink") ' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/paralleliterativedeconvolution ' %}
 
 ## Purpose
 

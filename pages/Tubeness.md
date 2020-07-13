@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='fiji' repo='VIB' source='features/Tubeness\_.java' %}
+{% include github org='fiji ' repo='VIB ' source='features/Tubeness\_.java ' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Tubeness' author='Mark Longair, Stephan Preibisch' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
+{% include info-box software='ImageJ ' name='Tubeness ' author='Mark Longair, Stephan Preibisch ' maintainer='Mark Longair ' filename='VIB\_.jar ' source=source status='stable ' %}
 
 
 {% capture text%}

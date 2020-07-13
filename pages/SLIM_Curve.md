@@ -16,10 +16,10 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='slim-curve' repo='slim-plugin' %}
+{% include github org='slim-curve ' repo='slim-plugin ' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='SLIM Curve plugin' logo='![Slim-curve-icon.png](/images/pages/Slim-curve-icon.png "Slim-curve-icon.png")' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
-[UW-Madison LOCI](http://loci.wisc.edu/) ' maintainer=maintainer filename='slim\_plugin-2.0.0-SNAPSHOT.jar' source=source latest-version='2.0.0-SNAPSHOT' status='discontinued in favor of [FLIMJ](FLIMJ "wikilink")' website='https://slim-curve.github.io/' category='[:Category:Analysis](:Category:Analysis "wikilink")' %}
+{% include info-box software='ImageJ ' name='SLIM Curve plugin ' logo='![Slim-curve-icon.png](/images/pages/Slim-curve-icon.png "Slim-curve-icon.png") ' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
+[UW-Madison LOCI](http://loci.wisc.edu/) ' maintainer=maintainer filename='slim\_plugin-2.0.0-SNAPSHOT.jar ' source=source latest-version='2.0.0-SNAPSHOT ' status='discontinued in favor of [FLIMJ](FLIMJ "wikilink") ' website='https://slim-curve.github.io/ ' category='[:Category:Analysis](:Category:Analysis "wikilink") ' %}
 
 ## Introduction
 
@@ -132,11 +132,19 @@ For images that have more than one channel, there will also be a checkbox to *Di
 
 ### Save/Load default excitation
 
-![Controlling the default excitation](/images/pages/Excitation.png "Controlling the default excitation") As loading/saving excitation file is something user need to do every time, the process has been simplified. Whatever macro user wants to set as default excitation, user should load the sdt file normally, set transient start/end time and save the file as \*irf file. Then from the drop down user should select "Set as default". This way, the excitation with the transient start/end time is saved as default excitation. Later, when needed to load the default excitation, selecting "Use default excitation" will load the default one.
+
+{% capture title%}
+ Controlling the default excitation 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Excitation.png" title=title %} As loading/saving excitation file is something user need to do every time, the process has been simplified. Whatever macro user wants to set as default excitation, user should load the sdt file normally, set transient start/end time and save the file as \*irf file. Then from the drop down user should select "Set as default". This way, the excitation with the transient start/end time is saved as default excitation. Later, when needed to load the default excitation, selecting "Use default excitation" will load the default one.
 
 ### Macro language support
 
-All the operations in SLIM Plugin operation are completely compatible with the popular [ImageJ macro language](https://imagej.net/developer/macro/macros.html). Each of the button, selection, choice of algorithm, binning, noise model, default excitation selection with custom start-end time is completely macro record-able. Below is a typical macro recording for a typical usage where the user sets the algorithm, noise model, changes transient time, loads default excitation, sets the chi2 target, fixes A value for fitting and then starts fitting. ![Example of macro recording SLIM Curve](/images/pages/Screenshot_slim_final.png "Example of macro recording SLIM Curve")
+All the operations in SLIM Plugin operation are completely compatible with the popular [ImageJ macro language](https://imagej.net/developer/macro/macros.html). Each of the button, selection, choice of algorithm, binning, noise model, default excitation selection with custom start-end time is completely macro record-able. Below is a typical macro recording for a typical usage where the user sets the algorithm, noise model, changes transient time, loads default excitation, sets the chi2 target, fixes A value for fitting and then starts fitting. 
+{% capture title%}
+ Example of macro recording SLIM Curve 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Screenshot slim final.png" title=title %}
 
 The list of command are as follows
 
@@ -388,7 +396,7 @@ For some specific applications, you might want to analyze a specific segment in 
 7.  Run the Create Mask and Create Selection commands to make the ROI. You can execute commands easily using the [Command Finder](Command_Finder "wikilink") (press {% include key content='L' %}).
 8.  Add the ROI to ROI manager by pressing {% include key content='T' %}. Use it on overlay with lifetime image and start analyzing.
 
-![Weka\_module.JPG](/images/pages/Weka_module.JPG "Weka_module.JPG") ![Overlay.JPG](/images/pages/Overlay.JPG "Overlay.JPG")
+![Weka\_module.JPG](/images/pages/Weka module.JPG "Weka module.JPG") ![Overlay.JPG](/images/pages/Overlay.JPG "Overlay.JPG")
 
 ### Result comparison
 

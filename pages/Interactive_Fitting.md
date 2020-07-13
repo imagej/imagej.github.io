@@ -8,7 +8,7 @@ categories: Plotting‏‎,Plugins
 description: test description
 ---
 
-{% include info-box software='ImageJ1' name='Interactive\_Fitting' author='Fred Damen' filename='Interactive\_Fitting.jar' source=' [Interactive\_Fitting.zip](https://imagej.net/_images/9/92/Interactive_Fitting.zip) ' released='1 April 2020' status='stable' category='[Plotting‏‎](:Category:Plotting‏‎ "wikilink")' website='' %}
+{% include info-box software='ImageJ1 ' name='Interactive\_Fitting ' author='Fred Damen ' filename='Interactive\_Fitting.jar ' source=' [Interactive\_Fitting.zip](https://imagej.net/_images/9/92/Interactive_Fitting.zip) ' released='1 April 2020 ' status='stable ' category='[Plotting‏‎](:Category:Plotting‏‎ "wikilink") ' website=' ' %}
 
 The Interactive\_Fitting plugin provides the ability to fit plotted data to an equation and plot the results on the same plot, and to be able to update the plot without refitting if you suspect there is a better set of parameters or a better equation. I had noticed that an ability to fit a plotted dataset using CurveFitter was added to the PlotWindow(Data\>\>Add fit...). I needed more functionality, so...
 
@@ -16,7 +16,7 @@ N.B., I wish to express gratitude to the immense work that I was able to add a l
 
 ## Features
 
-![Interactive\_Fitting.jpg](/images/pages/Interactive_Fitting.jpg "Interactive_Fitting.jpg")  
+![Interactive\_Fitting.jpg](/images/pages/Interactive Fitting.jpg "Interactive Fitting.jpg")  
 **PlotWindow** identifies the PlotWindow that contains the plot of interest.  
 **DataSource** identifies the plotted dataset of interest.  
 **Fit** identifies the desired fitting. The *<user defined>* option allows an arbitrary equation, using the macro language, to be specified. The rest of the options are CurveFitter predefined fitting options. A user specified equation which is essentially the same as a CurveFitter option may not fit exactly the same.  

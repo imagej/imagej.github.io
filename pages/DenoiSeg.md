@@ -8,7 +8,11 @@ categories:
 description: test description
 ---
 
-{% include thumbnail src="/images/pages/Denoiseg-teaser.png" title="Teaser of what DenoiSeg can compute on your data." %}
+
+{% capture title%}
+ Teaser of what DenoiSeg can compute on your data. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/DenoiSeg-teaser.png" title=title %}
 
 DenoiSeg is a neural network based algorithm for instance segmentation. The interesting thing about DenoiSeg is, that - although primarily meant for segmentation - the algorithm also learns to denoise your images. The knowledge acquired by denoising the images, improves the segmentation results. DenoiSeg can solve hard segmentation tasks, just like other neural network bases algorithms. But it requires less training data, you only need to manually generate segmentation for about 2 to 10 images. (Other methods usually require much manual segmentations for at least 50 image.)
 
@@ -68,7 +72,11 @@ Please note: You may not use this training data to segment your images. You need
 
 ### Train plugin
 
-{% include thumbnail src="/images/pages/Denoiseg-train-parameters.png" title="N2V train parameters" %}
+
+{% capture title%}
+ N2V train parameters 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Denoiseg-train-parameters.png" title=title %}
 
 1.  Start ImageJ / Fiji
 2.  Click on `Plugins > CSBDeep > DenoiSeg > DenoiSeg train` and adjust the following parameters:
@@ -86,7 +94,11 @@ Please note: You may not use this training data to segment your images. You need
 
 ### Train & predict plugin (one-click solution)
 
-{% include thumbnail src="/images/pages/Denoiseg-trainpredict-parameters.png" title="N2V train & predict parameters" %}
+
+{% capture title%}
+ N2V train & predict parameters 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Denoiseg-trainpredict-parameters.png" title=title %}
 
 1.  Start ImageJ / Fiji
 2.  Open a noisy image you want to denoise and segment directly after training
@@ -99,7 +111,15 @@ Please note: You may not use this training data to segment your images. You need
 
 ## What happens during and after training
 
-{% include thumbnail src="/images/pages/Denoiseg-train-progress.png" title="DenoiSeg training progress window" %} {% include thumbnail src="/images/pages/Denoiseg-train-preview.png" title="N2V training preview window" %} During training, you will see two windows:
+
+{% capture title%}
+ DenoiSeg training progress window 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Denoiseg-train-progress.png" title=title %} 
+{% capture title%}
+ N2V training preview window 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Denoiseg-train-preview.png" title=title %} During training, you will see two windows:
 
   - The progress window keeps you updated of the steps the training process is going through. It also plots the current training and validation loss.
   - The preview window is generated from the first validation batch. It is split into five parts.
@@ -111,7 +131,7 @@ Please note: You may not use this training data to segment your images. You need
 
 After training, two additional windows should appear. They represent two trained models. One is the model from the epoch with the lowest validation loss, the other one the model from the last epoch step. For DenoiSeg, using the model from the last epoch is almost always recommended. The windows will look similar to this:
 
-![DenoiSeg model archive window](/images/pages/denoiseg-model.png "DenoiSeg model archive window")
+![DenoiSeg model archive window](/images/pages/Denoiseg-model.png "DenoiSeg model archive window")
 
 They are stored to a temporary location which you can see in the Overview section of the model window under `Saved to..`.
 
@@ -128,7 +148,11 @@ There are two ways to predict from a trained model. For both cases, the resultin
 
 The user currently has to use these probabilities to compute the segmentation themself. In the future, further postprocessing steps will be available to automatically compute segmentations based on the output of the trained model.
 
-You can <b>open the model directly</b>: {% include thumbnail src="/images/pages/Denoiseg-modelpredict-parameters.png" title="DenoiSeg prediction from model parameters" %}
+You can <b>open the model directly</b>: 
+{% capture title%}
+ DenoiSeg prediction from model parameters 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Denoiseg-modelpredict-parameters.png" title=title %}
 
 1.  Start Fiji
 2.  Open an image you want to denoise and segment and for which you have a pretrained model available as ZIP file
@@ -137,7 +161,11 @@ You can <b>open the model directly</b>: {% include thumbnail src="/images/pages/
       - <b>`Input`</b> The image you want to denoise
       - <b>`Axes of prediction input`</b> This parameter helps to figure out how your input data is organized. It's a string with one letter per dimension of the input image. For 2D images, this should be `XY`. If your data has another axis which should be batch processed, set this parameter to `XYB`
 
-Alternatively, you can <b>use the DenoiSeg menu</b>: {% include thumbnail src="/images/pages/Denoiseg-predict-parameters.png" title="DenoiSeg prediction parameters" %}
+Alternatively, you can <b>use the DenoiSeg menu</b>: 
+{% capture title%}
+ DenoiSeg prediction parameters 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Denoiseg-predict-parameters.png" title=title %}
 
 1.  Start Fiji
 2.  Open an image you want to denoise and for which you have a pretrained model available as ZIP file
@@ -156,7 +184,19 @@ It's possible to train a DenoiSeg neural network using Python. The required code
 
 There are many possibilities for how to create labelings. But since we get this question a lot, here is how we do it:
 
-{% include thumbnail src="/images/pages/Updatesite-labkit.png" title="Update site Labkit" %} {% include thumbnail src="/images/pages/Labkit.png" title="Labkit" %} {% include thumbnail src="/images/pages/3dobjectscounter.png" title="3D Objects counter options" %}
+
+{% capture title%}
+ Update site Labkit 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Updatesite-labkit.png" title=title %} 
+{% capture title%}
+ Labkit 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Labkit.png" title=title %} 
+{% capture title%}
+ 3D Objects counter options 
+{% endcapture %}
+{% include thumbnail src="/images/pages/3Dobjectscounter.png" title=title %}
 
 1.  Install the Labkit update site via `Help > Update...`, clicking on `Manage update sites`, and selecting `Labkit`
 2.  Restart Fiji

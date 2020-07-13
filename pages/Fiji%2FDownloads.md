@@ -34,7 +34,7 @@ However, Fiji (like ImageJ) should run on any system for which a Java 8 runtime 
 # Installation
 
 {% include avoidprogramfiles%}
- {% include box title='Packages for Debian / Ubuntu' float='right' text='
+ {% include box title='Packages for Debian / Ubuntu ' float='right ' text='
 
 We used to offer Debian packages of Fiji. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.
 
@@ -65,23 +65,23 @@ This sections offers older downloads of Fiji, preserved just prior to introducin
 
 Here are Life-Line versions of Fiji created after the switch to Java 8.
 
-| Date        | Downloads                                                                                                                             | Description                                                                                                                           |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| 64-bit      | 32-bit                                                                                                                                | macOS                                                                                                                                 |
-| 2017 May 30 | {% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20170530.zip' %} | {% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20170530.zip' %} |
+| Date        | Downloads                                                                                                                               | Description                                                                                                                             |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| 64-bit      | 32-bit                                                                                                                                  | macOS                                                                                                                                   |
+| 2017 May 30 | {% include logo content='Windows' size='24px ' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20170530.zip ' %} | {% include logo content='Windows' size='24px ' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20170530.zip ' %} |
 
 ### Java 6
 
 Here are Life-Line versions from before Fiji switched to Java 8.
 
-| Date             | Downloads                                                                                                                             | Description                                                                                                                           |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| 64-bit           | 32-bit                                                                                                                                | macOS                                                                                                                                 |
-| 2017 May 30      | {% include logo content='Fiji' size='48px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-java6-20170530.zip' %}    | The final version of Fiji using Java 6, for all platforms.                                                                            |
-| 2015 December 22 | {% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20151222.zip' %} | {% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20151222.zip' %} |
-| 2014 November 25 | {% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20141125.zip' %} | {% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20141125.zip' %} |
-| 2014 June 02     | {% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20140602.zip' %} | {% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20140602.zip' %} |
-| 2013 July 15     | {% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20130715.zip' %} | {% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20130715.zip' %} |
+| Date             | Downloads                                                                                                                               | Description                                                                                                                             |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| 64-bit           | 32-bit                                                                                                                                  | macOS                                                                                                                                   |
+| 2017 May 30      | {% include logo content='Fiji' size='48px ' link='https://downloads.imagej.net/fiji/Life-Line/fiji-java6-20170530.zip ' %}    | The final version of Fiji using Java 6, for all platforms.                                                                              |
+| 2015 December 22 | {% include logo content='Windows' size='24px ' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20151222.zip ' %} | {% include logo content='Windows' size='24px ' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20151222.zip ' %} |
+| 2014 November 25 | {% include logo content='Windows' size='24px ' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20141125.zip ' %} | {% include logo content='Windows' size='24px ' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20141125.zip ' %} |
+| 2014 June 02     | {% include logo content='Windows' size='24px ' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20140602.zip ' %} | {% include logo content='Windows' size='24px ' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20140602.zip ' %} |
+| 2013 July 15     | {% include logo content='Windows' size='24px ' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20130715.zip ' %} | {% include logo content='Windows' size='24px ' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20130715.zip ' %} |
 
 ## See also
 

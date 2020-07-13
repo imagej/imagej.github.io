@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% include develop-menu content='tutorials' %}{% include toc%}
-This tutorial is designed to guide developers through the options, processes and motivations for adding Ops outside the core {% include github org='imagej' repo='imagej-ops' label='imagej-ops' %} project. Because this tutorial caters to external developers, in this tutorial we show how a [BAR](BAR "wikilink") function could be converted to an Op.
+This tutorial is designed to guide developers through the options, processes and motivations for adding Ops outside the core {% include github org='imagej ' repo='imagej-ops ' label='imagej-ops ' %} project. Because this tutorial caters to external developers, in this tutorial we show how a [BAR](BAR "wikilink") function could be converted to an Op.
 
 # Make your first Op
 
@@ -324,6 +324,6 @@ There are many conveniences in Op development that have not been covered in this
   - Auto-generate your Op implementations using templates
   - Write unit-tests to ensure coverage of built-in methods for your Ops
 
-However, all of this is done in the core {% include github org='imagej' repo='imagej-ops' label='imagej-ops' %} project and could be deduced by careful study. If you do take the time to independently attempt any of these topics, consider documenting your experience and sharing it as a tutorial on this wiki.
+However, all of this is done in the core {% include github org='imagej ' repo='imagej-ops ' label='imagej-ops ' %} project and could be deduced by careful study. If you do take the time to independently attempt any of these topics, consider documenting your experience and sharing it as a tutorial on this wiki.
 
 [Category:Tutorials](Category:Tutorials "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:Development](Category:Development "wikilink") [Category:Ops](Category:Ops "wikilink")

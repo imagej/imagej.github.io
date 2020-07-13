@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% include menu-platforms%}
-{% include minibox logo='Osx.png' blurb='[Think different](wikipedia:Think_different "wikilink").' %}[macOS](wikipedia:macOS "wikilink") (formerly called Mac OS X, then OS X) is [Apple](wikipedia:Apple_Inc. "wikilink")'s desktop operating system. It is [the second most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](Windows "wikilink"). This page details issues specific to using [ImageJ](ImageJ "wikilink") on macOS systems.
+{% include minibox logo='Osx.png ' blurb='[Think different](wikipedia:Think_different "wikilink"). ' %}[macOS](wikipedia:macOS "wikilink") (formerly called Mac OS X, then OS X) is [Apple](wikipedia:Apple_Inc. "wikilink")'s desktop operating system. It is [the second most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](Windows "wikilink"). This page details issues specific to using [ImageJ](ImageJ "wikilink") on macOS systems.
 
 {% include toc%}
 
@@ -52,7 +52,7 @@ See also the [Frequently Asked Questions](Frequently_Asked_Questions "wikilink")
 
 It is unfortunately no longer feasible to install Apple Java 6 on current versions of macOS. However, ImageJ should work OK with Java 8. If you have difficulties, please post on the [Image.sc Forum](https://forum.image.sc/).
 
-At any time, you can verify which Javas are installed on your system using {% include github org='ctrueden' repo='ctr-scripts' path='java-info' label='this script' %}.
+At any time, you can verify which Javas are installed on your system using {% include github org='ctrueden ' repo='ctr-scripts ' path='java-info ' label='this script ' %}.
 
 ## How do I run ImageJ on Yosemite?
 

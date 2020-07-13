@@ -21,13 +21,13 @@ Requirements:
   - [ImageJ](https://imagej.net/Downloads) v1.49o or newer.
   - [Bio-Formats 5.x](https://www.openmicroscopy.org/bio-formats/downloads/) or newer.
 
-{% include tip id='bioformat' tip='Saving ""bioformats\_package.jar"" in .\\ImageJ.app\\plugins\\ seems to be the best way to use the macro in stable conditions.' %} Use the ImageJ Updater and see the instructions [How to follow a 3rd party update site](https://imagej.net/How_to_follow_a_3rd_party_update_site) select FAST (http://sites.imagej.net/FAST) from the available site list.
+{% include tip id='bioformat ' tip='Saving ""bioformats\_package.jar"" in .\\ImageJ.app\\plugins\\ seems to be the best way to use the macro in stable conditions. ' %} Use the ImageJ Updater and see the instructions [How to follow a 3rd party update site](https://imagej.net/How_to_follow_a_3rd_party_update_site) select FAST (http://sites.imagej.net/FAST) from the available site list.
 
 New commands should then appear in ImageJ '{% include bc content='Plugins | FAST '%}' menu.
 
 ## Image Processing
 
-![Description of the Image processing pipeline of FAST macro.](/images/pages/FAST_Processing.png "Description of the Image processing pipeline of FAST macro.")
+![Description of the Image processing pipeline of FAST macro.](/images/pages/FAST Processing.png "Description of the Image processing pipeline of FAST macro.")
 
 ### Step 1: Auto processing of images within the selected work directory
 
@@ -43,13 +43,13 @@ New commands should then appear in ImageJ '{% include bc content='Plugins | FAST
 
 ## Startup Options
 
-![Options dialog box](/images/pages/FAST_Options.png "Options dialog box") The macro displays a dialog box to set analysis options:
+![Options dialog box](/images/pages/FAST Options.png "Options dialog box") The macro displays a dialog box to set analysis options:
 
   - **File type** : Select image type between CZI (Carl Zeiss Image), ZVI (Zeiss Vision Image), ND2 (Nikon) or TIFF (Tagged Image File Format).  
     'Other' allow to enter a specific file extension.  
     **Threshold value** : Set threshold value for pixel intensity, segmenting the image into features of interest (above threshold) and background.
 
-{% include tip id='Threshold' tip='"""""Threshold value must be defined for each acquisition system (microscope + camera + exposure time + file-type)""""".' %}
+{% include tip id='Threshold ' tip='"""""Threshold value must be defined for each acquisition system (microscope + camera + exposure time + file-type)""""". ' %}
 
   - **Create ROIs** : Step 1, analyses pixels above the user-defined threshold value and automatically saves Regions Of Interest zip file in the image directory.  
     **Measure ROIs** : Step 2 of image analysis to check individually and measure previously created ROIs. (With Step 1 unchecked and Step 2 checked, user can reanalyse previous data).  
@@ -59,7 +59,7 @@ New commands should then appear in ImageJ '{% include bc content='Plugins | FAST
 
 ## Validation of selected Regions Of Interest
 
-![User validation of defined ROI](/images/pages/FAST_ROI-check.png "User validation of defined ROI") After completion of Step 1 of image processing, images and their corresponding ROIs need to be validated by the user.
+![User validation of defined ROI](/images/pages/FAST ROI-check.png "User validation of defined ROI") After completion of Step 1 of image processing, images and their corresponding ROIs need to be validated by the user.
 
 Each image and the corresponding ROI are opened automatically. An options dialog box is displayed.
 
@@ -69,16 +69,16 @@ Each image and the corresponding ROI are opened automatically. An options dialog
 
 Just select the radio button option needed then click {% include key content='press|OK' %} or {% include key content='press|⏎ENTER' %} to continue.
 
-![Dialog box to redefine area](/images/pages/FAST_ROI-edition.png "Dialog box to redefine area") If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
+![Dialog box to redefine area](/images/pages/FAST ROI-edition.png "Dialog box to redefine area") If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
 
-![Example of thresholded image and corrected ROI](/images/pages/FAST_Thr-ROI.png "Example of thresholded image and corrected ROI")
+![Example of thresholded image and corrected ROI](/images/pages/FAST Thr-ROI.png "Example of thresholded image and corrected ROI")
 
 Select the appropriate tool in ImageJ toolbar: ![Freehand.png](/images/pages/Freehand.png "Freehand.png") Freehand (default) OR ![Wand-tool.png](/images/pages/Wand-tool.png "Wand-tool.png") Wand tool.
 
   - To remove non-specific fluorescence, use selected tool and hold {% include key content='press|Alt' %} while unwanted area to remove it from ROI.
   - To add area to the previously selected ROI, hold {% include key content='press|Shift' %} while selecting new area to add.
 
-Click {% include key content='press|OK' %} to confirm the new ROI. Fluorescence is then measured and the ROI zip file is automatically updated. {% include tip id='Selection' tip='In case the selection is empty after manual correction, the macro discards the image from analysis.' %}
+Click {% include key content='press|OK' %} to confirm the new ROI. Fluorescence is then measured and the ROI zip file is automatically updated. {% include tip id='Selection ' tip='In case the selection is empty after manual correction, the macro discards the image from analysis. ' %}
 
 After completion of Step 2, a list of all measured images with filename is displayed in the Result Table window of ImageJ.
 

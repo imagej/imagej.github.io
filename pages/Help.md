@@ -15,7 +15,7 @@ The ImageJ community firmly believes in public discussion of the software. In th
 
 There is a convenient online search interface:
 
-{% include big-link url='https://search.imagej.net/' %}
+{% include big-link url='https://search.imagej.net/ ' %}
 
 # Getting help with ImageJ
 

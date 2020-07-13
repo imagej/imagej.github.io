@@ -10,15 +10,15 @@ description: test description
 
 
 {% capture source%}
-{% include github org='sudgy' repo='reconstruction' %}
+{% include github org='sudgy ' repo='reconstruction ' %}
 {% endcapture %}
 
 {% capture devStatus%}
-{% include devstatus developer='yes' incubating='no' obsolete='no' %}
+{% include devstatus developer='yes ' incubating='no ' obsolete='no ' %}
 {% endcapture %}
 
 {% capture supportStatus%}
-{% include supportstatus debugger='yes' reviewer='yes' support='yes' %}
+{% include supportstatus debugger='yes ' reviewer='yes ' support='yes ' %}
 {% endcapture %}
 
 {% capture founders%}
@@ -48,7 +48,7 @@ description: test description
 {% capture maintainers%}
 {% include person content='David Cohoe' %}
 {% endcapture %}
-{% include component project='ImageJ' name='Reconstruction' source=source license='[LGPLv3](LGPLv3 "wikilink")' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
+{% include component project='ImageJ ' name='Reconstruction ' source=source license='[LGPLv3](LGPLv3 "wikilink") ' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
 
 Reconstruction is a plugin to reconstruct holograms and perform numerical propagation, with a focus on holograms produced by DHM. The plugin is highly extendable, with anybody able to add new plugins within it to perform whatever process they want at any point in the reconstruction pipeline. By default, it includes support for angular spectrum propagation, and for various noise removal techniques such as a reference hologram and a polynomial fit algorithm.
 

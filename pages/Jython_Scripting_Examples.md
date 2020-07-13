@@ -44,7 +44,7 @@ Within the interpreter, all ImageJ, java.lang.\* and TrakEM2 classes are automat
 
 #### Importing classes
 
-{% include importing-classes lang='Jython' %} You can specify imports in Jython as follows:
+{% include importing-classes lang='Jython ' %} You can specify imports in Jython as follows:
 
 ``` python
 from java.io import File
@@ -68,7 +68,7 @@ If all you need is a script to run in headless mode, simply do:
 
 ### Some limitations of jython
 
-{% include box float='right' title='What about NumPy and SciPy?' %} Though jython tries to be as close as possible as python, there are some differences you may experience during scripting.
+{% include box float='right ' title='What about NumPy and SciPy? ' %} Though jython tries to be as close as possible as python, there are some differences you may experience during scripting.
 
   - <u>Float "special numbers" such as *NaN* and *Inf* are not handled.</u>
 
@@ -1221,7 +1221,7 @@ First note that the FFMPEG I/O plugin was a proof-of-concept that is completely 
 
 Then open the [Fiji Updater](Fiji_Updater "wikilink"), push the "Manage update sites" at the bottom left of the dialog, and install the [FFMPEG](https://fiji.sc/~schindelin/ffmpeg-plugins/) plugin by {% include person content='Schindelin' %} by ticking its checkbox, as [explained in more detail here](How_to_follow_a_3rd_party_update_site "wikilink").
 
-See also the Java source code for the {% include github repo='fiji' tag='8164ae68' path='native/FFMPEG\_IO/plugin/src/main/java/fiji/ffmpeg/IO.java' label='IO' %} class from the [FFMPEG plugin source code site](https://github.com/fiji/fiji/tree/8164ae68/native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/).
+See also the Java source code for the {% include github repo='fiji ' tag='8164ae68 ' path='native/FFMPEG\_IO/plugin/src/main/java/fiji/ffmpeg/IO.java ' label='IO ' %} class from the [FFMPEG plugin source code site](https://github.com/fiji/fiji/tree/8164ae68/native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/).
 
 ``` python
 """ Albert Cardona for Marta Zlatic, 2014-01-24. """
@@ -2016,19 +2016,19 @@ Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just
 
 # Jython examples in Fiji
 
-  - {% include github repo='fiji' path='plugins/Examples/Find\_Dimension\_of\_Raw\_Image.py' label='Find Dimension of Raw Image' %}
-  - {% include github repo='fiji' path='plugins/Examples/Edit\_LUT\_As\_Text.py' label='Edit LUT As Text' %}
-  - {% include github repo='fiji' path='plugins/Examples/Delayed\_Snapshot.py' label='Delayed Snapshot' %}
-  - {% include github repo='fiji' path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Python.py' label='Command Launcher GUI' %}
-  - {% include github repo='fiji' path='plugins/Examples/list\_all\_threads.py' label='List all threads' %}
-  - {% include github repo='fiji' path='plugins/Examples/chess\_.py' label='Chess' %}
+  - {% include github repo='fiji ' path='plugins/Examples/Find\_Dimension\_of\_Raw\_Image.py ' label='Find Dimension of Raw Image ' %}
+  - {% include github repo='fiji ' path='plugins/Examples/Edit\_LUT\_As\_Text.py ' label='Edit LUT As Text ' %}
+  - {% include github repo='fiji ' path='plugins/Examples/Delayed\_Snapshot.py ' label='Delayed Snapshot ' %}
+  - {% include github repo='fiji ' path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Python.py ' label='Command Launcher GUI ' %}
+  - {% include github repo='fiji ' path='plugins/Examples/list\_all\_threads.py ' label='List all threads ' %}
+  - {% include github repo='fiji ' path='plugins/Examples/chess\_.py ' label='Chess ' %}
 
 <!-- end list -->
 
-  - {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/extract\_stack\_under\_arealist.py' label='Extract stack under AreaList' %} in TrakEM2.
-  - {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py' label='Set all transforms to identity' %} for TrakEM2 objects.
-  - {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_Select\_All.py' label='Select All' %} objects in TrakEM2.
-  - {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/Measure\_AreaLists.py' label='Measure AreaList' %} in TrakEM2.
+  - {% include github repo='fiji ' path='plugins/Examples/TrakEM2\_Example\_Scripts/extract\_stack\_under\_arealist.py ' label='Extract stack under AreaList ' %} in TrakEM2.
+  - {% include github repo='fiji ' path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py ' label='Set all transforms to identity ' %} for TrakEM2 objects.
+  - {% include github repo='fiji ' path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_Select\_All.py ' label='Select All ' %} objects in TrakEM2.
+  - {% include github repo='fiji ' path='plugins/Examples/TrakEM2\_Example\_Scripts/Measure\_AreaLists.py ' label='Measure AreaList ' %} in TrakEM2.
 
 # See also
 

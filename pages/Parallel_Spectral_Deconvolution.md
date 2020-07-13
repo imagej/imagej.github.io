@@ -8,7 +8,7 @@ categories: Plugins,Deconvolution
 description: test description
 ---
 
-{% include info-box software='ImageJ' name='Parallel Spectral Deconvolution 2D and 3D' author='Piotr Wendykier' filename=' [parallel\_spectral\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-bin.zip) ' source=' [parallel\_spectral\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-src.zip) ' released='27 September 2007' latest-version='11 April 2009' category='[Deconvolution](:Category:Deconvolution "wikilink")' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution' %}
+{% include info-box software='ImageJ ' name='Parallel Spectral Deconvolution 2D and 3D ' author='Piotr Wendykier ' filename=' [parallel\_spectral\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-bin.zip) ' source=' [parallel\_spectral\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-src.zip) ' released='27 September 2007 ' latest-version='11 April 2009 ' category='[Deconvolution](:Category:Deconvolution "wikilink") ' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution ' %}
 
 ## Purpose
 
@@ -18,7 +18,7 @@ Parallel Spectral Deconvolution is an ImageJ plugin for spectral deblurring. Thi
 
 The plugin code is based on the following book:
 
-{% include citation last='Hansen' first='C.' last2='Nagy' first3='J.G.' last3='O"Leary' first2='D.P.' title='Deblurring Images: Matrices, Spectra, and Filtering' editor='Society for Industrial and Applied Mathematic' date='2006' ISBN='0898716187' %}
+{% include citation last='Hansen ' first='C. ' last2='Nagy ' first3='J.G. ' last3='O"Leary ' first2='D.P. ' title='Deblurring Images: Matrices, Spectra, and Filtering ' editor='Society for Industrial and Applied Mathematic ' date='2006 ' ISBN='0898716187 ' %}
 
 Please refer to the [website](http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution) for detail and examples.
 

@@ -421,7 +421,7 @@ The *Call<return-type>Method()* family of functions take a variable number of ar
 
 ## JNI Example
 
-There is an example in Fiji's source code: {% include github org='imagej' repo='minimal-ij1-plugin' tag='native' path='src/main/c/JNI\_Example.c' %}.
+There is an example in Fiji's source code: {% include github org='imagej ' repo='minimal-ij1-plugin ' tag='native ' path='src/main/c/JNI\_Example.c ' %}.
 
 To compile it, simply run
 

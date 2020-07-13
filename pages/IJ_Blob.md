@@ -16,7 +16,7 @@ description: test description
 {% capture maintainer%}
 {% include person content='Twagner' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='IJBlob' author=author maintainer=maintainer filename='ij-blob.jar [\[1](https://github.com/thorstenwagner/ij-blob/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-blob) \]' latest-version='v1.4.9 (4 July 2016)' status='active' %}
+{% include info-box software='ImageJ/Fiji ' name='IJBlob ' author=author maintainer=maintainer filename='ij-blob.jar [\[1](https://github.com/thorstenwagner/ij-blob/releases/latest) \] ' source='Github [\[2](https://github.com/thorstenwagner/ij-blob) \] ' latest-version='v1.4.9 (4 July 2016) ' status='active ' %}
 
 ## Purpose
 
@@ -26,7 +26,7 @@ The IJBlob library indentifying connected components in binary images. The algor
 
 A connected component is a set of pixels which are connected by its 8-neigherhood and is often called a "blob". An Example:
 
-![Ijblob\_1.jpg](/images/pages/Ijblob_1.jpg "Ijblob_1.jpg")
+![Ijblob\_1.jpg](/images/pages/Ijblob 1.jpg "Ijblob 1.jpg")
 
 The image above contains 8 marked blobs. Also the holes (and the contours of the holes) of the two Bs and the O are identified. It is also possible to get a color labeled image:
 
@@ -34,7 +34,7 @@ The image above contains 8 marked blobs. Also the holes (and the contours of the
 
 In addition ijblob identifies nested objects:
 
-![Ijblob\_nested.jpg](/images/pages/Ijblob_nested.jpg "Ijblob_nested.jpg")
+![Ijblob\_nested.jpg](/images/pages/Ijblob nested.jpg "Ijblob nested.jpg")
 
 If you are using IJBlob in a scientific publication, please cite:
 

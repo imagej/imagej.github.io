@@ -131,7 +131,7 @@ Konstanz, Germany</p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
 <td><p>{% include person-list content='thewtex|Rueden|Schindelin|hinerm' %}</p></td>
-<td><p>{% include github org='scifio' repo='scifio-imageio' label='SCIFIO ImageIO plugin' %}</p></td>
+<td><p>{% include github org='scifio ' repo='scifio-imageio ' label='SCIFIO ImageIO plugin ' %}</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="2013-04-22_-_Trainable_Segmentation_Hackathon" title="wikilink">2013 Apr 14 -<br />
@@ -179,7 +179,7 @@ Konstanz, Germany</p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
 <td><p>{% include person-list content='jburel|pwalczysko|Rueden' %}</p></td>
-<td><p>{% include github org='imagej' repo='imagej-omero' label='ImageJ-OMERO' %}</p></td>
+<td><p>{% include github org='imagej ' repo='imagej-omero ' label='ImageJ-OMERO ' %}</p></td>
 </tr>
 <tr class="even">
 <td><p>2014 Jul 7 -<br />

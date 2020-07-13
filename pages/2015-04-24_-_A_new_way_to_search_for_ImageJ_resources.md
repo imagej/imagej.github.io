@@ -18,7 +18,7 @@ http://search.imagej.net/
 
 </div>
 
-The source code can be found {% include github org='imagej' repo='imagej-search' %}. Everyone is welcome to contribute any improvements.
+The source code can be found {% include github org='imagej ' repo='imagej-search ' %}. Everyone is welcome to contribute any improvements.
 
 We hope this site makes it easier for the community to quickly locate information about ImageJ.
 

@@ -21,12 +21,12 @@ description: test description
 
 Whether adding new features, fixing bugs, improving performance, etc... **development** is the process of making changes, with the goal of exposing these changes to users. To accomplish this, actively developed projects cycle through five general "phases":
 
-{% include box title='What are Maven artifacts?' width='30%' float='right' text='Artifacts are files, most commonly a """[JAR](wikipedia:JAR_%28file_format%29 "wikilink")""" encapsulating the compiled classes for a component. Other files that may be produced as artifacts include:
+{% include box title='What are Maven artifacts? ' width='30% ' float='right ' text='Artifacts are files, most commonly a """[JAR](wikipedia:JAR_%28file_format%29 "wikilink")""" encapsulating the compiled classes for a component. Other files that may be produced as artifacts include:
 
   - The project"s """ [POM](https://maven.apache.org/pom.html) """
   - A jar with the original source files
   - A jar with any generated javadoc
-  - A jar with any test files' %}
+  - A jar with any test files ' %}
 
 <!-- end list -->
 
@@ -48,7 +48,7 @@ To provide users with an updated version of an artifact (phases 3, 4 and 5) the 
 
 # Phases in-depth
 
-{% include box float='right' title='When to use a topic branch?' text='[Core SciJava components](Architecture "wikilink") employ a "release ready master branch" approach:
+{% include box float='right ' title='When to use a topic branch? ' text='[Core SciJava components](Architecture "wikilink") employ a "release ready master branch" approach:
 
   - The tip of the master branch is always stable enough to be released, "as good or better" than the state of its last release.
   - Each commit on the master branch should compile with passing tests. This has several advantages—e.g., better [bisect-style debugging](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search) .
@@ -75,7 +75,7 @@ Conversely, some situations to push directly to master:
   - """Unstable.""" Changes to unstable or experimental components still in their "incubation" period of development (i.e., versioned at 0.x), since there is no promise of backwards compatibility.
   - """Unsupported.""" Changes to "unsupported" components which make no guarantee of backwards compatibility.
 
-Lastly, keep in mind that SciJava favors the [release early, release often](RERO "wikilink") style of development, to maximize iterations of community feedback. Just because a change makes it to the master branch, does not mean it is set in stone: if a problem is later found, the change can be amended or reverted as quickly as it was added—easy come, easy go.' %}
+Lastly, keep in mind that SciJava favors the [release early, release often](RERO "wikilink") style of development, to maximize iterations of community feedback. Just because a change makes it to the master branch, does not mean it is set in stone: if a problem is later found, the change can be amended or reverted as quickly as it was added—easy come, easy go. ' %}
 
 ## Phase 1: In development
 
@@ -132,18 +132,18 @@ The script will verify that your master branch is ready to go, then create and p
 
 ## Phase 4: Managed
 
-For core projects, there is an intermediate layer tying User-facing and Developer-facing components together: the [Bill of Materials](BOM "wikilink") (BOM). To ensure users and developers see the same functionality, components should only be uploaded to the core update sites when their version is also updated in the {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %} BOM.
+For core projects, there is an intermediate layer tying User-facing and Developer-facing components together: the [Bill of Materials](BOM "wikilink") (BOM). To ensure users and developers see the same functionality, components should only be uploaded to the core update sites when their version is also updated in the {% include github org='scijava ' repo='pom-scijava ' label='pom-scijava ' %} BOM.
 
-To update the version of your component listed in the {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %} BOM, you should follow the [External developer](#Phase_1:_In_development "wikilink") instructions for contributing to {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %}. By [submitting a pull request](https://help.github.com/articles/using-pull-requests/) that simply modifies the managed version of your component, you will signal to the core SciJava developers that your project is ready for upload. For example, {% include github org='scijava' repo='pom-scijava' pr='40' label='this PR' %} updates the managed version of [Bio-Formats](Bio-Formats "wikilink") to 5.5.0.
+To update the version of your component listed in the {% include github org='scijava ' repo='pom-scijava ' label='pom-scijava ' %} BOM, you should follow the [External developer](#Phase_1:_In_development "wikilink") instructions for contributing to {% include github org='scijava ' repo='pom-scijava ' label='pom-scijava ' %}. By [submitting a pull request](https://help.github.com/articles/using-pull-requests/) that simply modifies the managed version of your component, you will signal to the core SciJava developers that your project is ready for upload. For example, {% include github org='scijava ' repo='pom-scijava ' pr='40 ' label='this PR ' %} updates the managed version of [Bio-Formats](Bio-Formats "wikilink") to 5.5.0.
 
 ## Phase 5: Uploaded
 
-{% include box title='What are ImageJ update sites?' width='30%' float='right' text='ImageJ [update sites](update_sites "wikilink") are what ImageJ actually queries to download updates. These update sites are versioned, but do not rely on other tools (e.g., [Git](Git "wikilink") or [Maven](Maven "wikilink")) in order to function. Rather, component developers upload new versions of their component(s) using the [ImageJ Updater](ImageJ_Updater "wikilink"), which makes them available to end users. Typically, update sites are available as web sites via HTTP, with uploads functioning via [WebDAV](https://github.com/imagej/imagej-plugins-uploader-webdav) or [SSH/SFTP/SCP](https://github.com/imagej/imagej-plugins-uploader-ssh) .' %} Deploying to the Maven repository creates a stable release artifact of a software component usable by other developers. But for ImageJ-related components, that alone does not put it into the hands of users. To do that, the component must then be *uploaded* to an ImageJ [update site](update_site "wikilink").
+{% include box title='What are ImageJ update sites? ' width='30% ' float='right ' text='ImageJ [update sites](update_sites "wikilink") are what ImageJ actually queries to download updates. These update sites are versioned, but do not rely on other tools (e.g., [Git](Git "wikilink") or [Maven](Maven "wikilink")) in order to function. Rather, component developers upload new versions of their component(s) using the [ImageJ Updater](ImageJ_Updater "wikilink"), which makes them available to end users. Typically, update sites are available as web sites via HTTP, with uploads functioning via [WebDAV](https://github.com/imagej/imagej-plugins-uploader-webdav) or [SSH/SFTP/SCP](https://github.com/imagej/imagej-plugins-uploader-ssh) . ' %} Deploying to the Maven repository creates a stable release artifact of a software component usable by other developers. But for ImageJ-related components, that alone does not put it into the hands of users. To do that, the component must then be *uploaded* to an ImageJ [update site](update_site "wikilink").
 
 ### ImageJ and Fiji update sites
 
-  - The core ImageJ update site reflects the state of the newest {% include github org='imagej' repo='imagej' label='net.imagej:imagej' %} release.
-  - The core Fiji update site reflects the state of the newest {% include github org='fiji' repo='fiji' label='sc.fiji:fiji' %} release.
+  - The core ImageJ update site reflects the state of the newest {% include github org='imagej ' repo='imagej ' label='net.imagej:imagej ' %} release.
+  - The core Fiji update site reflects the state of the newest {% include github org='fiji ' repo='fiji ' label='sc.fiji:fiji ' %} release.
   - Actually, for the moment, both of the above statements are untrue, but they represent the direction we are heading. Right now, core components of both ImageJ and Fiji are distributed manually via the Java-8 update site. See the [Java 8](Java_8 "wikilink") page for details.
 
 ### External update sites

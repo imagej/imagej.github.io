@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='fiji' repo='VIB' source='Segmentation\_Editor.java' %}
+{% include github org='fiji ' repo='VIB ' source='Segmentation\_Editor.java ' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Segmentation Editor' author='Johannes Schindelin, Francois Kusztos, Benjamin Schmid' maintainer='Benjamin Schmid' filename='VIB\_.jar' source=source status='stable' website='http://132.187.25.13/home/?category=Download\&page=SegmentationEditor' %}
+{% include info-box software='ImageJ ' name='Segmentation Editor ' author='Johannes Schindelin, Francois Kusztos, Benjamin Schmid ' maintainer='Benjamin Schmid ' filename='VIB\_.jar ' source=source status='stable ' website='http://132.187.25.13/home/?category=Download\&page=SegmentationEditor ' %}
 
 ## Demo video
 
@@ -24,13 +24,13 @@ Segmentation Editor Demo Screencast (5 min 30 sec):
 
 Open the stack containing the structures you want to reconstruct or segment. Go the to the plugins menu and click on "Segmentation Editor". Your stack will be embedded into a segmentation window, and another window opens, which will contain your labels later.
 
-![Segmentation\_Editor\_1.png](/images/pages/Segmentation_Editor_1.png "Segmentation_Editor_1.png")
+![Segmentation\_Editor\_1.png](/images/pages/Segmentation Editor 1.png "Segmentation Editor 1.png")
 
 ## Material
 
 On the left side of the segmentation window, you see a list of available materials. You can extend and modify these materials by right-clicking into the list. For a first start, right-click on Interior, select "Rename" from the popup menu and specify the name of the label you want.
 
-![Segmentation\_Editor\_2.png](/images/pages/Segmentation_Editor_2.png "Segmentation_Editor_2.png")
+![Segmentation\_Editor\_2.png](/images/pages/Segmentation Editor 2.png "Segmentation Editor 2.png")
 
 ## Labelling
 
@@ -38,17 +38,17 @@ Now go through the slices and use ImageJ's selection tools to select the regions
 
 After selecting the regions to label in each slice, click the I-Button (which is next to the Plus and Minus button). This interpolates if you didn't make selections on each slice. Now activate the "3d" checkbox. It means that the selections of all slices will be asigned to a material, not only the selection of the current slice.
 
-![Segmentation\_Editor\_3.png](/images/pages/Segmentation_Editor_3.png "Segmentation_Editor_3.png")
+![Segmentation\_Editor\_3.png](/images/pages/Segmentation Editor 3.png "Segmentation Editor 3.png")
 
 Now go to the material list, select the material which you want to asign, and click on the Plus button. That's it.
 
-![Segmentation\_Editor\_4.png](/images/pages/Segmentation_Editor_4.png "Segmentation_Editor_4.png")
+![Segmentation\_Editor\_4.png](/images/pages/Segmentation Editor 4.png "Segmentation Editor 4.png")
 
 After finishing, click Ok to close the segmentation window. The labels will remain open. You must store them yourself.
 
 Have also a look at our 3D viewer if you want to see your result in 3D.
 
-![Segmentation\_Editor\_medulla\_r\_labels\_rotating.gif](/images/pages/Segmentation_Editor_medulla_r_labels_rotating.gif "Segmentation_Editor_medulla_r_labels_rotating.gif")
+![Segmentation\_Editor\_medulla\_r\_labels\_rotating.gif](/images/pages/Segmentation Editor medulla r labels rotating.gif "Segmentation Editor medulla r labels rotating.gif")
 
 ## Starting from a macro
 

@@ -14,9 +14,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='mcib3d' repo='mcib3d-core' %}
+{% include github org='mcib3d ' repo='mcib3d-core ' %}
 {% endcapture %}
-{% include info-box name='3D ImageJ Suite' software='3DSuite' update-site='3D ImageJ Suite' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d) ' source=source released='25/09/2012, V2.0' latest-version='30/10/2019, V3.96' status='stable, active' category='[3D](:Category:3D "wikilink"), [Analysis](:Category:Analysis "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink")' %}
+{% include info-box name='3D ImageJ Suite ' software='3DSuite ' update-site='3D ImageJ Suite ' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d) ' source=source released='25/09/2012, V2.0 ' latest-version='30/10/2019, V3.96 ' status='stable, active ' category='[3D](:Category:3D "wikilink"), [Analysis](:Category:Analysis "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink") ' %}
 
 ## 3D ImageJ Suite
 

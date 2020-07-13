@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='Rocsg' repo='AplimTools' %}
+{% include github org='Rocsg ' repo='AplimTools ' %}
 {% endcapture %}
-{% include info-box name='AplimTools' software='Fiji' author='Romain Fernandez & Bamba Diop' maintainer='Romain Fernandez' source=source released='March 23<sup>th</sup>, 2020' status='unstable, active' category='[Analysis](:Category:Analysis "wikilink")' %}
+{% include info-box name='AplimTools ' software='Fiji ' author='Romain Fernandez & Bamba Diop ' maintainer='Romain Fernandez ' source=source released='March 23<sup>th</sup>, 2020 ' status='unstable, active ' category='[Analysis](:Category:Analysis "wikilink") ' %}
 
 AplimTools is a set of image processing tools for plants magnetic resonance analysis. These tools are developed in the context of the Aplim project (see the [project official page](https://umr-agap.cirad.fr/recherche/projets-de-recherche/aplim) ). Main features :
 

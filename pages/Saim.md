@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='nicost' repo='saimAnalysis' %}
+{% include github org='nicost ' repo='saimAnalysis ' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='SAIM (Scanning Angle Interference Microscopy)' author='Nico Stuurman (nico.stuurman at ucsf.edu)' maintainer='[Nico Stuurman](Nico_Stuurman "wikilink")' filename='' source=source released='2015/11/20' latest-version='2016/09/28' category='[:Category:Techniques](:Category:Techniques "wikilink")' %}
+{% include info-box software='ImageJ ' name='SAIM (Scanning Angle Interference Microscopy) ' author='Nico Stuurman (nico.stuurman at ucsf.edu) ' maintainer='[Nico Stuurman](Nico_Stuurman "wikilink") ' filename=' ' source=source released='2015/11/20 ' latest-version='2016/09/28 ' category='[:Category:Techniques](:Category:Techniques "wikilink") ' %}
 
 # ImageJ/Fiji plugin to to analyze Scanning Angle Interference Microscope Data.
 
@@ -22,7 +22,7 @@ To install this plugin check the "ValelabUtils" update site in the Fiji updater.
 
 ## Description
 
-SAIM (Scanning Angle Interference Microscopy) is a technique to measure the distance of fluorescent dyes to the surface at nm resolution. To use it, one needs to place the sample on a silicon chip (that acts as a mirror) with a solicon oxide (glass) spacer). The reflection of coherent excitation light will interfere with the incoming beam and set up a standing wave pattern, resulting in fluorescence intensity that varies with distance to the surface. By varying the angle of incidence, the standing wave pattern changes in predictable ways, and a series of images at different angles can be used to deduce the height of fluorescence molecules, independent of their intensity. This technique is very well described by [Paszek et al.](http://www.nature.com/nmeth/journal/v9/n8/abs/nmeth.2077.html), and this plugin uses the equations from the Paszek et al. paper with a few ![SAIM\_Math.pdf](/images/pages/SAIM_Math.pdf "SAIM_Math.pdf") extensions. A thorough description can be found in [our manuscript](http://www.nature.com/nmeth/journal/v13/n11/full/nmeth.4030.html) or in [the preprint version on BiorXiv](http://biorxiv.org/content/early/2016/04/26/050468). . If you use this plugin, please do cite that paper.
+SAIM (Scanning Angle Interference Microscopy) is a technique to measure the distance of fluorescent dyes to the surface at nm resolution. To use it, one needs to place the sample on a silicon chip (that acts as a mirror) with a solicon oxide (glass) spacer). The reflection of coherent excitation light will interfere with the incoming beam and set up a standing wave pattern, resulting in fluorescence intensity that varies with distance to the surface. By varying the angle of incidence, the standing wave pattern changes in predictable ways, and a series of images at different angles can be used to deduce the height of fluorescence molecules, independent of their intensity. This technique is very well described by [Paszek et al.](http://www.nature.com/nmeth/journal/v9/n8/abs/nmeth.2077.html), and this plugin uses the equations from the Paszek et al. paper with a few ![SAIM\_Math.pdf](/images/pages/SAIM Math.pdf "SAIM Math.pdf") extensions. A thorough description can be found in [our manuscript](http://www.nature.com/nmeth/journal/v13/n11/full/nmeth.4030.html) or in [the preprint version on BiorXiv](http://biorxiv.org/content/early/2016/04/26/050468). . If you use this plugin, please do cite that paper.
 
 This plugin consists of three parts. "Saim Plot" plots theoretical predictions for the intensity distribution as a function of height.
 
@@ -52,11 +52,11 @@ These datasets were obtained by imaging a phospho-lipid bilayer stained with DiO
 
 [640 data set](http://valelab.ucsf.edu/~nstuurman/SAIM/160302_bilayer2_cal2_pos3_640-crop.tif)
 
-![488\_fit\_parameters.png](/images/pages/488_fit_parameters.png "488_fit_parameters.png")![561\_fit\_parameters.png](/images/pages/561_fit_parameters.png "561_fit_parameters.png")![640\_fit\_parameters.png](/images/pages/640_fit_parameters.png "640_fit_parameters.png")
+![488\_fit\_parameters.png](/images/pages/488 fit parameters.png "488 fit parameters.png")![561\_fit\_parameters.png](/images/pages/561 fit parameters.png "561 fit parameters.png")![640\_fit\_parameters.png](/images/pages/640 fit parameters.png "640 fit parameters.png")
 
 Some of the single pixels fits we obtained look as follows:
 
-![Example\_single\_pixel\_fits.png](/images/pages/Example_single_pixel_fits.png "Example_single_pixel_fits.png")
+![Example\_single\_pixel\_fits.png](/images/pages/Example single pixel fits.png "Example single pixel fits.png")
 
 ## History
 

@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='Fiji' repo='PQCT' %}
+{% include github org='Fiji ' repo='PQCT ' %}
 {% endcapture %}
-{% include info-box name='pQCT' author='Timo Rantalainen' software='ImageJ/Fiji' source=source released='Feb 9<sup>th</sup>, 2018' latest-version='3.0.0, Jun 8<sup>th</sup>, 2018' status='stable' %}{% include toc%}
+{% include info-box name='pQCT ' author='Timo Rantalainen ' software='ImageJ/Fiji ' source=source released='Feb 9<sup>th</sup>, 2018 ' latest-version='3.0.0, Jun 8<sup>th</sup>, 2018 ' status='stable ' %}{% include toc%}
 
 
 ## Summary
@@ -48,7 +48,7 @@ This package contains tools for Stractec pQCT soft-tissue and bone images. It's 
 
 The main tool for pQCT image analysis. You must open an image first before running this tool.
 
-![selections.png](/images/pages/selections.png "selections.png")
+![selections.png](/images/pages/Selections.png "selections.png")
 
   - **Flip horizontal**: flips the image horizontally
 
@@ -283,14 +283,14 @@ The main tool for pQCT image analysis. You must open an image first before runni
 ### Interpretation
 
 **Polar distribution**  
-![polar.png](/images/pages/polar.png "polar.png")  
+![polar.png](/images/pages/Polar.png "polar.png")  
 The mean of the three radial divisions within a given sector is reported as the density of that sector. Applies to:
 
   - 0° - 10° ... 350° - 360° mineral mass \[mg\]
   - Polar sector \#0 ... \#35 vBMD \[mg/cm³\]
 
 **Radial distribution**  
-![radial.png](/images/pages/radial.png "radial.png")  
+![radial.png](/images/pages/Radial.png "radial.png")  
 The mean of the thirty six 10° sectors within a given anatomical ring is reported as the density of that ring. Applies to:
 
   - Radial division \#0 ... \#2 vBMD \[mg/cm³\]
@@ -306,7 +306,7 @@ The mean of the thirty six 10° sectors within a given anatomical ring is report
 
   - 0° - 10° ... 350° - 360° endo/pericortical radius \[mm\]
 
-![radii.png](/images/pages/radii.png "radii.png")  
+![radii.png](/images/pages/Radii.png "radii.png")  
 Endo- and pericortical radii are given as the distance from the centroid of the marrow cavity to the endo- and pericortical border, respectively. The radii are calculated prior to peeling off the layers of pixels from endosteal and periosteal border.
 
 ## Export Stratec Header

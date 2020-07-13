@@ -68,7 +68,7 @@ The original ONL and INL image datasets used for validation purposes are availab
 
 ## TUNEL Cell Counter
 
-![Representative animation of Macro Mode. Processing time is \~5 seconds/image.](/images/pages/Stack_-_Macro.gif "Representative animation of Macro Mode. Processing time is ~5 seconds/image.") ![Representative animation of Batch Mode. Processing time is \~2.7 seconds/image.](/images/pages/Stack_-_Batch.gif "Representative animation of Batch Mode. Processing time is ~2.7 seconds/image.")
+![Representative animation of Macro Mode. Processing time is \~5 seconds/image.](/images/pages/Stack - Macro.gif "Representative animation of Macro Mode. Processing time is ~5 seconds/image.") ![Representative animation of Batch Mode. Processing time is \~2.7 seconds/image.](/images/pages/Stack - Batch.gif "Representative animation of Batch Mode. Processing time is ~2.7 seconds/image.")
 
 ### Segmentation
 

@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='uw-loci' repo='deep-zoom-plugin' %}
+{% include github org='uw-loci ' repo='deep-zoom-plugin ' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Deep Zoom' author=' [Aivar Grislis](http://loci.wisc.edu/people/aivar-grislis) ' source=source status='inactive' category='[Import-Export](:Category:Import-Export "wikilink")' %}== Introduction ==
+{% include info-box software='ImageJ ' name='Deep Zoom ' author=' [Aivar Grislis](http://loci.wisc.edu/people/aivar-grislis) ' source=source status='inactive ' category='[Import-Export](:Category:Import-Export "wikilink") ' %}== Introduction ==
 
 ![Deep-zoom-1.png](/images/pages/Deep-zoom-1.png "Deep-zoom-1.png") ![Deep-zoom-2.png](/images/pages/Deep-zoom-2.png "Deep-zoom-2.png")
 
@@ -22,7 +22,7 @@ It has also been useful as a testbed for developing ideas for a chained plugins 
 
 The current version uses [Seadragon Ajax](http://seadragon.com/developer/ajax/) to display the zoomable pannable image.  Deep Zoom ordinarily uses Microsoft's [Silverlight](http://www.microsoft.com/silverlight/) browser plugin for Windows and OS X; there is a [Moonlight](http://www.go-mono.com/moonlight/) implementation available for Linux.  It would be possible to have a checkbox to create a Silverlight version of the HTML, which might offer smoother zoom & pan.
 
-This plugin uses {% include github org='uw-loci' repo='deep-zoom-plugin' source='com/centerkey/utils/BareBonesBrowserLaunch.java' label='BareBonesBrowserLaunch' %} to launch a new browser window.
+This plugin uses {% include github org='uw-loci ' repo='deep-zoom-plugin ' source='com/centerkey/utils/BareBonesBrowserLaunch.java ' label='BareBonesBrowserLaunch ' %} to launch a new browser window.
 
 ## Limitations
 

@@ -10,15 +10,15 @@ description: test description
 
 
 {% capture source%}
-{% include github org='sudgy' repo='phase-unwrapping' %}
+{% include github org='sudgy ' repo='phase-unwrapping ' %}
 {% endcapture %}
 
 {% capture devStatus%}
-{% include devstatus developer='yes' incubating='no' obsolete='no' %}
+{% include devstatus developer='yes ' incubating='no ' obsolete='no ' %}
 {% endcapture %}
 
 {% capture supportStatus%}
-{% include supportstatus debugger='yes' reviewer='yes' support='yes' %}
+{% include supportstatus debugger='yes ' reviewer='yes ' support='yes ' %}
 {% endcapture %}
 
 {% capture founders%}
@@ -48,7 +48,7 @@ description: test description
 {% capture maintainers%}
 {% include person content='David Cohoe' %}
 {% endcapture %}
-{% include component project='ImageJ' name='Phase Unwrapping' source=source license='[LGPLv3](LGPLv3 "wikilink")' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
+{% include component project='ImageJ ' name='Phase Unwrapping ' source=source license='[LGPLv3](LGPLv3 "wikilink") ' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
 
 Phase Unwrapping is a plugin to perform phase unwrapping on a phase image, with a focus on unwrapping images produced by DHM (possibly created using [DHM Utilities/Reconstruction](DHM_Utilities/Reconstruction "wikilink")). It currently has support for two different algorithms. The first is a quality-guided unwrapping method, and the second is a double-wavelength unwrapping method.
 

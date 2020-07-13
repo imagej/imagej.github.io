@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include info-box content='Plugin' software='ImageJ/FIJI' name='EM tool' maintainer=' [Zhou XU](https://github.com/IMBalENce/EM-tool) @ Monash Centre for Electron Microscopy' source='https://github.com/IMBalENce/EM-tool' released='30/08/2018' latest-version='06/05/2020' status='Stable, Active' category='' website='' %}
+{% include info-box content='Plugin' software='ImageJ/FIJI ' name='EM tool ' maintainer=' [Zhou XU](https://github.com/IMBalENce/EM-tool) @ Monash Centre for Electron Microscopy ' source='https://github.com/IMBalENce/EM-tool ' released='30/08/2018 ' latest-version='06/05/2020 ' status='Stable, Active ' category=' ' website=' ' %}
 
 # **Overview**
 
@@ -35,17 +35,17 @@ Click the links below to find more about each tool.
 
 2\. Click “Help / Update…” to open the FIJI updater. If it’s the first time updating your FIJI, it might take some time to download the update files and may also require to restart FIJI a few times. Once done, click “Help / Update…” again to bring up the ImageJ updater window.
 
-![EMtool\_01.jpg](/images/pages/EMtool_01.jpg "EMtool_01.jpg")
+![EMtool\_01.jpg](/images/pages/EMtool 01.jpg "EMtool 01.jpg")
 
 3\. Click “Manage update sites”.
 
-![EMtool\_02.jpg](/images/pages/EMtool_02.jpg "EMtool_02.jpg")
+![EMtool\_02.jpg](/images/pages/EMtool 02.jpg "EMtool 02.jpg")
 
 4\. Find and tick "EM tool", URL "https://sites.imagej.net/IMBalENce/".
 
 5\. If the update site does not show, you can manually add the site by clicking “Add update site”. Type in Name "EM tool", URL "https://sites.imagej.net/IMBalENce/"
 
-![EMtool\_03.jpg](/images/pages/EMtool_03.jpg "EMtool_03.jpg")
+![EMtool\_03.jpg](/images/pages/EMtool 03.jpg "EMtool 03.jpg")
 
 6 Close the "Manage Update Sites" window and click the "Apply Changes" button on the "ImageJ Updater Window".
 

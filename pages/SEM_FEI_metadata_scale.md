@@ -18,12 +18,12 @@ Note: This macro use Bio-formats plugin to read metadata. FIJI should include th
 
 1\. Open a “.tif” file acquired from a FEI SEM/FIB (currently acquired by Thermofisher), and make the image window active. Note that the image dimensions are not calibrated.
 
-![EMtool\_04.jpg](/images/pages/EMtool_04.jpg "EMtool_04.jpg")
+![EMtool\_04.jpg](/images/pages/EMtool 04.jpg "EMtool 04.jpg")
 
 2\. Click “SEM/FEI SEM metadata Scale”, the metadata for the image will be displayed in the log window.
 
-![EMtool\_05.jpg](/images/pages/EMtool_05.jpg "EMtool_05.jpg")
+![EMtool\_05.jpg](/images/pages/EMtool 05.jpg "EMtool 05.jpg")
 
 3\. The image dimensions are also calibrated based on the pixel size in the metadata. Scale bar can be added using the ImageJ tool “Analyze/Tools/Scale Bar…”.
 
-![EMtool\_06.jpg](/images/pages/EMtool_06.jpg "EMtool_06.jpg")
+![EMtool\_06.jpg](/images/pages/EMtool 06.jpg "EMtool 06.jpg")

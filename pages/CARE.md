@@ -10,19 +10,19 @@ description: test description
 
 
 {% capture source%}
-{% include github org='CSBDeep' repo='CSBDeep\_fiji' tag='csbdeep-0.3.4' %}
+{% include github org='CSBDeep ' repo='CSBDeep\_fiji ' tag='csbdeep-0.3.4 ' %}
 {% endcapture %}
 
 {% capture release%}
-{% include maven g='de.csbdresden' a='csbdeep' v='0.3.4' label='0.3.4' %}
+{% include maven g='de.csbdresden ' a='csbdeep ' v='0.3.4 ' label='0.3.4 ' %}
 {% endcapture %}
 
 {% capture devStatus%}
-{% include devstatus developer='yes' incubating='yes' obsolete='no' %}
+{% include devstatus developer='yes ' incubating='yes ' obsolete='no ' %}
 {% endcapture %}
 
 {% capture supportStatus%}
-{% include supportstatus debugger='yes' reviewer='yes' support='yes' %}
+{% include supportstatus debugger='yes ' reviewer='yes ' support='yes ' %}
 {% endcapture %}
 
 {% capture founders%}
@@ -52,7 +52,7 @@ description: test description
 {% capture maintainers%}
 {% include person content='frauzufall' %}, {% include person content='tpietzsch' %}, {% include person content='HedgehogCode' %}
 {% endcapture %}
-{% include component project='CSBDresden' name='CARE Fiji Plugin' url='https://imagej.net/CARE' source=source license='[BSD-2](BSD-2 "wikilink")' release=release date='Tue Dec 11 00:00:00 CDT 2018' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
+{% include component project='CSBDresden ' name='CARE Fiji Plugin ' url='https://imagej.net/CARE ' source=source license='[BSD-2](BSD-2 "wikilink") ' release=release date='Tue Dec 11 00:00:00 CDT 2018 ' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
 
 ## Install
 

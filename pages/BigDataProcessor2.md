@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='embl-cba' repo='bigDataProcessor2' %}
+{% include github org='embl-cba ' repo='bigDataProcessor2 ' %}
 {% endcapture %}
-{% include info-box name='BigDataProcessor2' software='Fiji' update-site='BigDataProcessor' author='Ashis Ravindran & Christian Tischer' maintainer='Christian Tischer' source=source %}
+{% include info-box name='BigDataProcessor2 ' software='Fiji ' update-site='BigDataProcessor ' author='Ashis Ravindran & Christian Tischer ' maintainer='Christian Tischer ' source=source %}
 
 ## Overview
 

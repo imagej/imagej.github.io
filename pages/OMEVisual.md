@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji' repo='OMEVisual' %}
+{% include github org='fiji ' repo='OMEVisual ' %}
 {% endcapture %}
-{% include info-box name='OMEVisual' logo='' software='Fiji' author=author maintainer=maintainer source=source released='08/05/2016' status='v1.0.1, stable' category='' %}{% include toc%}
+{% include info-box name='OMEVisual ' logo=' ' software='Fiji ' author=author maintainer=maintainer source=source released='08/05/2016 ' status='v1.0.1, stable ' category=' ' %}{% include toc%}
 
 
 ## Presentation
@@ -44,7 +44,7 @@ Please note that :
       - The best way is to submit a PR.
       - You can also open an issue and post an OME-TIFF file which contains additional OME features you would like to see added to the plugin.
 
-![caption OMEVisual Screenshot](/images/pages/OMEVisual_Screenshot.png "caption OMEVisual Screenshot")
+![caption OMEVisual Screenshot](/images/pages/OMEVisual Screenshot.png "caption OMEVisual Screenshot")
 
 ## Related links
 

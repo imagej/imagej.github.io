@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include info-box name='Scijava-parallel' software='Fiji' author='Petr Bainar, Jan Kožusznik' maintainer='Jan Kožusznik' released='October 2019' latest-version='October 2019' category='[:Category:Development](:Category:Development "wikilink")' source=' [on github](https://github.com/fiji-hpc/scijava-parallel) ' %}
+{% include info-box name='Scijava-parallel ' software='Fiji ' author='Petr Bainar, Jan Kožusznik ' maintainer='Jan Kožusznik ' released='October 2019 ' latest-version='October 2019 ' category='[:Category:Development](:Category:Development "wikilink") ' source=' [on github](https://github.com/fiji-hpc/scijava-parallel) ' %}
 
 Scijava-parallel is a framework that provides an access point for using computational resources such as remote computers or HPC clusters. It hides details about configuration and initialization of such resources.
 
@@ -95,13 +95,13 @@ The parallelization paradigm implementation very often also requires some specif
 
 The framework provides interface *ParadigmManager* and its implementation is used by the framework for a profile creation (method *createProfile*) and its editing (method *editProfile*). Parallelization paradigm implementation is initialized by the method*prepareParadigm*. The parallelization paradigm provider implements the interface *ParadigmManager* and annotates it as *@Plugin* with a type *ParadigmManager*.
 
-![paradigm-manager.png](/images/pages/paradigm-manager.png "paradigm-manager.png")
+![paradigm-manager.png](/images/pages/Paradigm-manager.png "paradigm-manager.png")
 
 The class ParadigmManagerUsingRunner supports the frequently occurring scenario of how ParallelizationParadigm is initialized: external software is launched - it is always Fiji in the case of the existing implementation - and parallelization paradigm is initialized with information on how to access the software (host name, port number). It works with profile type *ParadigmProfileUsingRunner* that contains an object of a type *RunnerSettings* or its subtype (e.g. LocalImagejRunnerSettings). ParadigmManagerUsingRunner starts external software through an interface *ServerRunner*. ParadigmManagerUsingRunner edits settings with an object that implements *RunnerSettingsEditor*. Implementing class should be annotated with the annotation *@Plugin* with the type *RunnerSettingsEditor*. It enables scijava-parallel to find an editor for a given type of settings. There are registered editors for existing implementations of RunnerSettings.
 
 A developer makes a non-abstract child of the class ParadigmManagerUsingRunner. The child needs to implement only two abstract methods: *getTypeOfRunner* and *initParadigm*. It is possible to create a new implementation of *ServerRunner* or reuse one of the existing ones: LocalImagejRunner, HPCImageJRunner.
 
-![paradigm-manager-using-runner.jpg](/images/pages/paradigm-manager-using-runner.jpg "paradigm-manager-using-runner.jpg")
+![paradigm-manager-using-runner.jpg](/images/pages/Paradigm-manager-using-runner.jpg "paradigm-manager-using-runner.jpg")
 
 ## Installation
 

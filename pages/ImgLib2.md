@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='imglib' repo='imglib2' %}
+{% include github org='imglib ' repo='imglib2 ' %}
 {% endcapture %}
-{% include info-box name='ImgLib2' software='Generic Image Processing for Java' logo='![imglib2-logo.png](/images/pages/imglib2-logo.png "imglib2-logo.png")' author=author maintainer=maintainer source=source status='stable, active' category='[:Category:ImgLib](:Category:ImgLib "wikilink")' %}{% include imglibmenu%}
+{% include info-box name='ImgLib2 ' software='Generic Image Processing for Java ' logo='![imglib2-logo.png](/images/pages/Imglib2-logo.png "imglib2-logo.png") ' author=author maintainer=maintainer source=source status='stable, active ' category='[:Category:ImgLib](:Category:ImgLib "wikilink") ' %}{% include imglibmenu%}
 ImgLib2 is a general-purpose, multidimensional image processing library.
 
 It provides an interface-driven design that supports numeric and non-numeric data types (8-bit unsigned integer, 32-bit floating point, etc.) in an extensible way. It implements several data sources and sample organizations, including one single primitive array, one array per plane, N-dimensional array "cells" cached to and from disk on demand, and planes read on demand from disk.
@@ -30,14 +30,14 @@ It provides an interface-driven design that supports numeric and non-numeric dat
   - [ImgLib2 paper](http://bioinformatics.oxfordjournals.org/content/28/22/3009.full)
   - [ImgLib2 Documentation](ImgLib2_Documentation "wikilink")
   - [ImgLib2 Examples](ImgLib2_Examples "wikilink")
-  - {% include javadoc project='ImgLib2' %} javadoc
+  - {% include javadoc project='ImgLib2 ' %} javadoc
   - [How To Migrate Code From ImgLib To ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 "wikilink")
   - ["Introduction to ImgLib2"](ImgLib2_-_Introductory_Workshop "wikilink") workshop
   - ["Advanced Programming with ImgLib2"](ImgLib2_-_Advanced_Programming_Workshop "wikilink") workshop
 
 ## Source code
 
-You can find the source {% include github org='imglib' repo='imglib2' %}.
+You can find the source {% include github org='imglib ' repo='imglib2 ' %}.
 
 There is also a continuous integration system that builds ImgLib2 [every time the code changes](https://travis-ci.org/imglib/imglib2).
 

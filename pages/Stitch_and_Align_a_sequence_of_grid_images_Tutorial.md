@@ -31,7 +31,7 @@ As a first step, we start Fiji and go to '{% include bc content='Plugins | Stitc
 
 Then, the next dialog pops up to choose the stitching parameters:
 
-![Screenshot-Stitch\_Image\_Grid\_Sequence.png](/images/pages/Screenshot-Stitch_Image_Grid_Sequence.png "Screenshot-Stitch_Image_Grid_Sequence.png")
+![Screenshot-Stitch\_Image\_Grid\_Sequence.png](/images/pages/Screenshot-Stitch Image Grid Sequence.png "Screenshot-Stitch Image Grid Sequence.png")
 
 Here we have to set some important parameters (the ones we don't mention can be left with their default values):
 
@@ -62,7 +62,7 @@ For the alignment of the stitched slices we will use the plugin *Register Virtua
 
 As before, a dialog will pop up where we have to choose the registration parameters:
 
-![Screenshot-Register\_Virtual\_Stack.png](/images/pages/Screenshot-Register_Virtual_Stack.png "Screenshot-Register_Virtual_Stack.png")
+![Screenshot-Register\_Virtual\_Stack.png](/images/pages/Screenshot-Register Virtual Stack.png "Screenshot-Register Virtual Stack.png")
 
 The relevant parameters are:
 
@@ -77,7 +77,7 @@ And we click on the first two check-boxes:
 
 When we click on OK, another dialog pops up to select the Feature extraction parameters:
 
-![Screenshot-Feature\_extraction.png](/images/pages/Screenshot-Feature_extraction.png "Screenshot-Feature_extraction.png")
+![Screenshot-Feature\_extraction.png](/images/pages/Screenshot-Feature extraction.png "Screenshot-Feature extraction.png")
 
 Here, we only increase the **steps per octave scale** to 5 to find more point candidates to correspondences, and the **maximum image size** to 1400 pixels, to use more image information.
 

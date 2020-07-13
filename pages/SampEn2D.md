@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='CSIM-Toolkits' repo='ImageJ/tree/master/plugins/SampleEntropy-2D' label='GitHub CSIM-ImageJ SampEn2D repository' %}
+{% include github org='CSIM-Toolkits ' repo='ImageJ/tree/master/plugins/SampleEntropy-2D ' label='GitHub CSIM-ImageJ SampEn2D repository ' %}
 {% endcapture %}
-{% include info-box name='Two-dimensional Sample Entropy (SampEn2D) PlugIn' software='Fiji' author=author maintainer=maintainer source=source released='June 23<sup>rd</sup>, 2016' latest-version='June 23<sup>rd</sup>, 2016' status='experimental, active' category='[Plugins](:Category:Plugins "wikilink"), [Pattern Recognition](:Category:Pattern_Recognition "wikilink")' %}
+{% include info-box name='Two-dimensional Sample Entropy (SampEn2D) PlugIn ' software='Fiji ' author=author maintainer=maintainer source=source released='June 23<sup>rd</sup>, 2016 ' latest-version='June 23<sup>rd</sup>, 2016 ' status='experimental, active ' category='[Plugins](:Category:Plugins "wikilink"), [Pattern Recognition](:Category:Pattern_Recognition "wikilink") ' %}
 
 ## Two-dimensional Sample Entropy
 
@@ -32,7 +32,11 @@ The extension of SampEn for a two-dimensional method was developed so as to main
 
 ## Parameters set
 
-![SampEn2D GUI.](/images/pages/SampEn2D-gui.png "SampEn2D GUI.")
+
+{% capture title%}
+ SampEn2D GUI. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/SampEn2D-gui.png" title=title %}
 
 Basically, the common parameters that are used for adjust the SampEn2D method are the m and r. The m parameters is responsible to set the window size that is used to search the matching patterns all over the image. The r parameters is the tolerance parameter, i.e. as r rises the matching criteria became more permissive. Also, the r parameter is given is relationship with the stantard variation (SD) given by the image pixels intensity, where it is set by the percentual allowance over the image SD. Usually, the pair (m,r) is set with the values m=1 and r=0.1, but the correct parameter adjust is crucial to each application. See the [journal article](http://dx.doi.org/10.1088/2057-1976/2/4/045002) and [conference report](http://dx.doi.org/10.1109/EMBC.2014.6944339) to have an starting point to correctly choose those parameters.
 

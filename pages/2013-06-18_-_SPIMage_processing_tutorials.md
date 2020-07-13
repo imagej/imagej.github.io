@@ -22,4 +22,4 @@ The pipeline is relatively linear as described above, we highlight the steps whe
 
 [Category:News](Category:News "wikilink")
 
-1.  {% include cite content='journal' author='Pitrone P. G., Schindelin J., Stuyvenberg L., Preibisch S., Weber M.; Eliceiri K. W., Huisken J., Tomancak P.' title='OpenSPIM: an open access light sheet microscopy platform' journal='Nature Methods' volume='' number='' pages='' year='2013' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2507.html' %}
+1.  {% include cite content='journal' author='Pitrone P. G., Schindelin J., Stuyvenberg L., Preibisch S., Weber M.; Eliceiri K. W., Huisken J., Tomancak P. ' title='OpenSPIM: an open access light sheet microscopy platform ' journal='Nature Methods ' volume=' ' number=' ' pages=' ' year='2013 ' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2507.html ' %}

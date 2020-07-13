@@ -13,7 +13,7 @@ The **Apache License** is a **permissive** [free software](Open_Source "wikilink
 
 See the [Wikipedia article on the Apache License](wikipedia:Apache_License "wikilink") for more information.
 
-{% include license name='Apache License 2.0' shortname='Apache 2' description='The """Apache 2""" license is a permissive license, similar to the [MIT](MIT "wikilink") and [BSD](BSD "wikilink") licenses, but with additional protection against patent-related lawsuits. A licensee of Apache-2-licensed software can:
+{% include license name='Apache License 2.0 ' shortname='Apache 2 ' description='The """Apache 2""" license is a permissive license, similar to the [MIT](MIT "wikilink") and [BSD](BSD "wikilink") licenses, but with additional protection against patent-related lawsuits. A licensee of Apache-2-licensed software can:
 
   - Use, copy and distribute the unmodified source or binary forms of the licensed program
-  - Use, copy and distribute modified source or binary forms of the licensed program, provided that all distributed copies are accompanied by the license' url='http://choosealicense.com/licenses/apache-2.0/' choosealicense='apache-2.0' osi='Apache-2.0' %}
+  - Use, copy and distribute modified source or binary forms of the licensed program, provided that all distributed copies are accompanied by the license ' url='http://choosealicense.com/licenses/apache-2.0/ ' choosealicense='apache-2.0 ' osi='Apache-2.0 ' %}

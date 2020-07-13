@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='fiji' repo='SPIM\_Registration' %}
+{% include github org='fiji ' repo='SPIM\_Registration ' %}
 {% endcapture %}
-{% include info-box name='Multi-view deconvolution plugin' software='ImageJ' author='Stephan Preibisch, Fernando Amat, Eugene Myers, Pavel Tomancak' maintainer='Stephan Preibisch' source=source filename='SPIM\_Registration.jar' released='February 2013' latest-version='June 2013' category='[SPIM Registration](:Category:Registration "wikilink")' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch) ' %}
+{% include info-box name='Multi-view deconvolution plugin ' software='ImageJ ' author='Stephan Preibisch, Fernando Amat, Eugene Myers, Pavel Tomancak ' maintainer='Stephan Preibisch ' source=source filename='SPIM\_Registration.jar ' released='February 2013 ' latest-version='June 2013 ' category='[SPIM Registration](:Category:Registration "wikilink") ' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch) ' %}
 
 ## Citation
 
@@ -42,7 +42,11 @@ It is highly recommended that before starting the multi-view deconvolution, to u
 
 ## How to use the plugin
 
-![Shows the first dialog that queries the location of the multi-view files](/images/pages/Spim_multiview_dialog1.jpg "Shows the first dialog that queries the location of the multi-view files")
+
+{% capture title%}
+ Shows the first dialog that queries the location of the multi-view files 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Spim multiview dialog1.jpg" title=title %}
 
 The multi-view deconvolution consists like the multi-view fusion of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset, i.e. locate the image files, the registration information and the location of the corresponding beads if applicable. Please note that all the parameters will be transferred from the [Multi-view fusion](Multi-View_Fusion "wikilink") dialog that you used before to set the bounding box (cropping area).
 
@@ -50,7 +54,11 @@ We omit a detailed explanation of the parameters here as it is identical to the 
 
 After providing the data the plugin will check which kind of registrations are available (\*.registration and \*.registration\_.to{tt}). Typically, the individual registration is available, and maybe also several time-series registrations to various reference timepoints. If no registration files could be found, the plugin will quit.
 
-![Shows the second dialog that queries detailed parameters](/images/pages/mv_deconvolution.png "Shows the second dialog that queries detailed parameters")
+
+{% capture title%}
+ Shows the second dialog that queries detailed parameters 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Mv deconvolution.png" title=title %}
 
 In the second dialog, you have to define the detailed instruction of how to run the multi-view deconvolution.
 

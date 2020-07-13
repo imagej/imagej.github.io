@@ -303,7 +303,7 @@ Suggested by Quentin de Robillard.
 
 ImageFlow provides a graphical way to construct macros. Every action is represented by a node which the user can connect with lines to define a workflow.
 
-ImageFlow has its own {% include github org='Dahie' repo='imageflow' label='Git repository' %} ([our mirror](https://fiji.sc/cgi-bin/gitweb.cgi?p=imageflow.git;a=summary)).
+ImageFlow has its own {% include github org='Dahie ' repo='imageflow ' label='Git repository ' %} ([our mirror](https://fiji.sc/cgi-bin/gitweb.cgi?p=imageflow.git;a=summary)).
 
 The following issues need to be resolved:
 

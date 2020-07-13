@@ -8,7 +8,7 @@ categories: Plugins,Particle analysis
 description: test description
 ---
 
-{% include info-box software='ImageJ' name='Nucleus Counter' author='unknown' filename='part of [MBF ImageJ](MBF_ImageJ "wikilink") bundle' source='' released='' latest-version='' status='unknown' category='[Particle analysis](:Category:Particle_analysis "wikilink")' website='' %}
+{% include info-box software='ImageJ ' name='Nucleus Counter ' author='unknown ' filename='part of [MBF ImageJ](MBF_ImageJ "wikilink") bundle ' source=' ' released=' ' latest-version=' ' status='unknown ' category='[Particle analysis](:Category:Particle_analysis "wikilink") ' website=' ' %}
 
 This plugin is part of the [MBF ImageJ](MBF_ImageJ "wikilink") bundle. Author, version history and status is unknown.
 

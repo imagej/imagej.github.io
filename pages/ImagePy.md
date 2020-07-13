@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='Image-Py' repo='imagepy' %}
+{% include github org='Image-Py ' repo='imagepy ' %}
 {% endcapture %}
-{% include info-box content='Plugin' software='ImagePy' name='ImagePy' logo='![ImagePy-logo.png](/images/pages/ImagePy-logo.png "ImagePy-logo.png")' author=author maintainer=maintainer source=source status='active' website='https://www.imagepy.org/' %}ImagePy is a [Python](Python "wikilink")-based extensible image processing framework, inspired by and modeled after the [ImageJ](ImageJ "wikilink") user experience. It is built on libraries of the PyData software stack, including NumPy, SciPy, scikit-image, pandas and others.
+{% include info-box content='Plugin' software='ImagePy ' name='ImagePy ' logo='![ImagePy-logo.png](/images/pages/ImagePy-logo.png "ImagePy-logo.png") ' author=author maintainer=maintainer source=source status='active ' website='https://www.imagepy.org/ ' %}ImagePy is a [Python](Python "wikilink")-based extensible image processing framework, inspired by and modeled after the [ImageJ](ImageJ "wikilink") user experience. It is built on libraries of the PyData software stack, including NumPy, SciPy, scikit-image, pandas and others.
 
 ## Publication
 

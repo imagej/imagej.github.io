@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-The following is the original text of the [ImageJDev](ImageJ2 "wikilink") grant proposal circa mid-2009. {% include warning-box message='Please note that [ImageJ2](ImageJ2 "wikilink")"s project directions evolved substantially as it developed, so the text below is dated, but in many ways, this document continues to represent the project"s conceptual core.' %}
+The following is the original text of the [ImageJDev](ImageJ2 "wikilink") grant proposal circa mid-2009. {% include warning-box message='Please note that [ImageJ2](ImageJ2 "wikilink")"s project directions evolved substantially as it developed, so the text below is dated, but in many ways, this document continues to represent the project"s conceptual core. ' %}
 
 ## Summary
 
@@ -52,7 +52,7 @@ To overcome this problem, we will employ a popular and successful design pattern
 
 We will also use Java's event-driven approach to provide a means for other software to “listen in” when ImageJ's Model changes, enabling features like dynamic charts and real-time linked displays. With this design, changes to the underlying Model will automatically propagate to all active linked Views, and user interaction with a View (such as cropping an image) will be capable of altering the Model.
 
-Refactoring ImageJ to use an MVC design is a significant effort, but fortunately, preliminary work has already been done in this direction: Grant Harris has written a whitepaper (![ImageJX\_Mar09.pdf](/images/pages/ImageJX_Mar09.pdf "ImageJX_Mar09.pdf")) describing his efforts thus far to deploy an interface-driven architecture for extensible, modular GUI support. With further development, we will transform ImageJ into a flexible library usable by a wide variety of scientific image software.
+Refactoring ImageJ to use an MVC design is a significant effort, but fortunately, preliminary work has already been done in this direction: Grant Harris has written a whitepaper (![ImageJX\_Mar09.pdf](/images/pages/ImageJX Mar09.pdf "ImageJX Mar09.pdf")) describing his efforts thus far to deploy an interface-driven architecture for extensible, modular GUI support. With further development, we will transform ImageJ into a flexible library usable by a wide variety of scientific image software.
 
 ### Aim IB – Introduce an extensions framework for algorithms
 
@@ -250,4 +250,4 @@ Examples of new applications facilitated by this grant’s technical aims:
 
 ## See also
 
-  - ![ImageJX\_Mar09.pdf](/images/pages/ImageJX_Mar09.pdf "ImageJX_Mar09.pdf"), the ImageJX whitepaper from 2008
+  - ![ImageJX\_Mar09.pdf](/images/pages/ImageJX Mar09.pdf "ImageJX Mar09.pdf"), the ImageJX whitepaper from 2008

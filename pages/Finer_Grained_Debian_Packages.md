@@ -40,7 +40,7 @@ The packages are targetting Ubuntu 10.04 (Lucid Lynx) and Debian testing (squeez
 
 Mostly as a reminder to myself, the quick way to build new packages is:
 
-  - Clone a new fiji.git, initialize and update the right submodules \[FIXME: document which submodules are required, mentioned in the {% include github repo='fiji' path='debian/TODO' label='TODO' %} at the moment\]
+  - Clone a new fiji.git, initialize and update the right submodules \[FIXME: document which submodules are required, mentioned in the {% include github repo='fiji ' path='debian/TODO ' label='TODO ' %} at the moment\]
   - Run `debian/complete-build`. If anything doesn't work, then you can retry the build with `debian/build-command`. Before retrying `debian/complete-build`, make sure that you've committed your changes, since afterwards you'll need to run `git reset --hard` to clean the tree so that `debian/complete-build` is happy to try again...
   - Assuming that you're building on an amd64 machine, run `debian/build-in-i386-chroot` to build the i386 packages. (The chroot can be created as a one-off with debian/create-i386-chroot.py but you will still need to carefully customize /etc/schroot/schroot.conf )
   - Upload the new versions of the packages with `debian/upload-to-pacific`.

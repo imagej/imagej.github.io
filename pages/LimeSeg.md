@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='NicoKiaru' repo='LimeSeg' %}
+{% include github org='NicoKiaru ' repo='LimeSeg ' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='LimeSeg' update-site='LimeSeg' logo='' maintainer=maintainer author=author source=source status='' released='01/2018' category='[Segmentation](:Category:Segmentation "wikilink"), [:Category:Plugins](:Category:Plugins "wikilink")' %}
+{% include info-box software='Fiji ' name='LimeSeg ' update-site='LimeSeg ' logo=' ' maintainer=maintainer author=author source=source status=' ' released='01/2018 ' category='[Segmentation](:Category:Segmentation "wikilink"), [:Category:Plugins](:Category:Plugins "wikilink") ' %}
 
 '''A Fiji plugin for the segmentation of 3D objects. '''
 
@@ -66,7 +66,7 @@ The command Sphere Seg (**Plugins\>LimeSeg\>Sphere Seg**) is the easiest way to 
 
 2\. Draw a circular ROI that is contained within the vesicle And save it in the ROI manager with the t key or with Edit\>Selection\>Add To Manager (only this ROI should be contained in the ROI manager).
 
-![LimeSeg\_Seed\_Vesicle.png](/images/pages/LimeSeg_Seed_Vesicle.png "LimeSeg_Seed_Vesicle.png")
+![LimeSeg\_Seed\_Vesicle.png](/images/pages/LimeSeg Seed Vesicle.png "LimeSeg Seed Vesicle.png")
 
 3\. Execute the Sphere Seg command : **Plugins\>LimeSeg\>Sphere Seg**
 
@@ -86,17 +86,17 @@ The command Sphere Seg (**Plugins\>LimeSeg\>Sphere Seg**) is the easiest way to 
 
 To segment this demo image, please choose the parameters as in this image:
 
-![LimeSeg\_Parameters\_Vesicle.png](/images/pages/LimeSeg_Parameters_Vesicle.png "LimeSeg_Parameters_Vesicle.png")
+![LimeSeg\_Parameters\_Vesicle.png](/images/pages/LimeSeg Parameters Vesicle.png "LimeSeg Parameters Vesicle.png")
 
 After convergence, you can go through the 2D image and you should see some points along the objects, like this:
 
-![LimeSeg\_2DView\_Vesicle.png](/images/pages/LimeSeg_2DView_Vesicle.png "LimeSeg_2DView_Vesicle.png")
+![LimeSeg\_2DView\_Vesicle.png](/images/pages/LimeSeg 2DView Vesicle.png "LimeSeg 2DView Vesicle.png")
 
 Also the 3D viewer should give a 3D View of the vesicle:
 
-![LimeSeg\_3DView\_Vesicle.png](/images/pages/LimeSeg_3DView_Vesicle.png "LimeSeg_3DView_Vesicle.png")
+![LimeSeg\_3DView\_Vesicle.png](/images/pages/LimeSeg 3DView Vesicle.png "LimeSeg 3DView Vesicle.png")
 
-Other outputs are provided as an ImageJ table: ![LimeSeg\_Results\_Vesicle.png](/images/pages/LimeSeg_Results_Vesicle.png "LimeSeg_Results_Vesicle.png")
+Other outputs are provided as an ImageJ table: ![LimeSeg\_Results\_Vesicle.png](/images/pages/LimeSeg Results Vesicle.png "LimeSeg Results Vesicle.png")
 
   - **Cell\_Name** : each 3D object that LimeSeg generated is a "Cell" object. By default, these objects have a String identifier: Cell\_0, Cell\_1, Cell\_2...
   - **Number of Surfels** : number of surface elements in the generated 3D object. This number is also the number of vertex within the 3D Mesh.
@@ -125,7 +125,7 @@ For instance, in the vesicle example: 1 - Right after the convergence is reached
 
 The shape is now more precise, as you can see in the 2D view and in 3D:
 
-![LimeSeg\_2D3DViews\_Refined\_Vesicle.png](/images/pages/LimeSeg_2D3DViews_Refined_Vesicle.png "LimeSeg_2D3DViews_Refined_Vesicle.png")
+![LimeSeg\_2D3DViews\_Refined\_Vesicle.png](/images/pages/LimeSeg 2D3DViews Refined Vesicle.png "LimeSeg 2D3DViews Refined Vesicle.png")
 
 ### Alternative ways to segment a single object: multiple spheres and skeletons
 
@@ -137,11 +137,11 @@ The sample image accessible here: https://raw.githubusercontent.com/NicoKiaru/Te
 
 For instance for three spherical seeds:
 
-![LimeSeg\_3D\_MultipleSeeds.png](/images/pages/LimeSeg_3D_MultipleSeeds.png "LimeSeg_3D_MultipleSeeds.png")
+![LimeSeg\_3D\_MultipleSeeds.png](/images/pages/LimeSeg 3D MultipleSeeds.png "LimeSeg 3D MultipleSeeds.png")
 
 Final result:
 
-![LimeSeg\_2D3D\_ER.png](/images/pages/LimeSeg_2D3D_ER.png "LimeSeg_2D3D_ER.png")
+![LimeSeg\_2D3D\_ER.png](/images/pages/LimeSeg 2D3D ER.png "LimeSeg 2D3D ER.png")
 
 *' Starting with a ROI skeleton*'
 
@@ -151,13 +151,13 @@ It is possible to define more precisely the seeds used to segment images. This c
 
 2\. Using a few ROIs approximately define the contour of the embryo at certains slices, like in the image shown above:
 
-![LimeSeg\_Skeleton\_Example.png](/images/pages/LimeSeg_Skeleton_Example.png "LimeSeg_Skeleton_Example.png")
+![LimeSeg\_Skeleton\_Example.png](/images/pages/LimeSeg Skeleton Example.png "LimeSeg Skeleton Example.png")
 
 You need to begin and end with a single point ROI, otherwise the shape will not be closed. Also, the ROIs need to be drawn clockwise and should starts always at the same angle (start on top for instance).
 
 3\. Launch the **Plugins\>LimeSeg\>Skeleton Seg** command, without anything else in the ROI manager. Using the parameters D\_0=10, F\_pressure = 0, range\_in \_d0\_units=2 and Z\_scale=3.5 should give correct results, like shown below:
 
-![LimeSeg\_CElegans\_Global.png](/images/pages/LimeSeg_CElegans_Global.png "LimeSeg_CElegans_Global.png")
+![LimeSeg\_CElegans\_Global.png](/images/pages/LimeSeg CElegans Global.png "LimeSeg CElegans Global.png")
 
 ## Multiple objects segmentation
 

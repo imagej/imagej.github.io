@@ -12,7 +12,7 @@ description: test description
 
 <div style="clear: right; float: right">
 
-{% include box float='right' text='
+{% include box float='right ' text='
 
 <h2>
 
@@ -27,7 +27,7 @@ ImageJ2"s Mission
   - """Unify""" online resources to a central location for the ImageJ community.
   - """Lead""" ImageJ development with a clear vision.
 
-See also [these presentation slides about ImageJ](https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/#/4) .' %}
+See also [these presentation slides about ImageJ](https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/#/4) . ' %}
 
 </div>
 

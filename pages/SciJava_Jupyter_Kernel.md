@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='scijava' repo='scijava-jupyter-kernel' %}
+{% include github org='scijava ' repo='scijava-jupyter-kernel ' %}
 {% endcapture %}
-{% include info-box name='scijava-jupyter-kernel' logo='' software='SciJava' author=author maintainer=maintainer source=source released='23/04/2016' status='0.4.0, beta' category='' %} \_\_TOC\_\_
+{% include info-box name='scijava-jupyter-kernel ' logo=' ' software='SciJava ' author=author maintainer=maintainer source=source released='23/04/2016 ' status='0.4.0, beta ' category=' ' %} \_\_TOC\_\_
 
 ## Presentation
 

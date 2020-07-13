@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include conference title='ImageJ 2015 User & Developer Conference' section='5th ImageJ User & Developer Conference' dates='3 - 4 September 2015' image='Imagej-conference-2015.jpg' location=' [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/) in Madison, Wisconsin, USA' %}
+{% include conference title='ImageJ 2015 User & Developer Conference ' section='5th ImageJ User & Developer Conference ' dates='3 - 4 September 2015 ' image='Imagej-conference-2015.jpg ' location=' [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/) in Madison, Wisconsin, USA ' %}
 
 # Information
 

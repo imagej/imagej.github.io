@@ -34,7 +34,7 @@ This tutorial uses the following strategy: we will use an inadequate set of segm
 
 ## Doing a fast but very bad segmentation
 
-![TrackMate\_DownsampledLogSegmenter.png](/images/pages/TrackMate_DownsampledLogSegmenter.png "TrackMate_DownsampledLogSegmenter.png")
+![TrackMate\_DownsampledLogSegmenter.png](/images/pages/TrackMate DownsampledLogSegmenter.png "TrackMate DownsampledLogSegmenter.png")
 
 Launch TrackMate ({% include bc content='Plugins | Tracking | TrackMate'%}) and select the *C.elegans* stack as a target. Check on the first panel that all the spatial calibration is OK. The pixel size is about 200 nm in XY, 1 μm in Z, and each frame is separated by 2 minutes.
 
@@ -47,7 +47,7 @@ The segmentation should take you no more than a minute, even on a standard machi
 {% include clear%}
 
 
-![TrackMate\_DownsampledInitThreshold.png](/images/pages/TrackMate_DownsampledInitThreshold.png "TrackMate_DownsampledInitThreshold.png")
+![TrackMate\_DownsampledInitThreshold.png](/images/pages/TrackMate DownsampledInitThreshold.png "TrackMate DownsampledInitThreshold.png")
 
 On the Initial thresholding panel, we see that it is easy to separate spurious spots using the **Quality** feature only. There is a big and sharp peak at the left of the histogram. By moving the slider around you can get the remaining number of spot after filtering. If we put the threshold around 70, just above the first sharp peak, we see that we are left with about 115 spots. Now: We have 17 time-points, each of them containing at most 4 cells and two polar bodies (check the raw movie). So 115 remaining spots seems to be correct, therefore the threshold set at 70 seems right.
 
@@ -59,14 +59,14 @@ Anyway, let's correct it now. Just add a filter on Quality, and take a value of 
 
 Almost all polar bodies are incorrectly detected, and the localization of cells is bad. These are expected defects given our choice of detection algorithm and the parameters we have used. Here, the results are not so bad, unfortunately for this tutorial. We could fix them right now, before tracking. You can actually edit the results any time after the first panel of TrackMate. But let us exploit these defects for our training purpose, by having them generating additional linking defects.
 
-![TrackMate\_DownsampleFilter.png](/images/pages/TrackMate_DownsampleFilter.png "TrackMate_DownsampleFilter.png")
+![TrackMate\_DownsampleFilter.png](/images/pages/TrackMate DownsampleFilter.png "TrackMate DownsampleFilter.png")
 
 {% include clear%}
 
 
 ## Generating irrelevant tracks
 
-![Celegans-5pc\_17timepoints-Incorrect.png](/images/pages/Celegans-5pc_17timepoints-Incorrect.png "Celegans-5pc_17timepoints-Incorrect.png")
+![Celegans-5pc\_17timepoints-Incorrect.png](/images/pages/Celegans-5pc 17timepoints-Incorrect.png "Celegans-5pc 17timepoints-Incorrect.png")
 
 Normally, TrackMate can robustly handles track splitting events, representing *e.g.* cell division. Though this happens in this movie, we choose to dismiss this possibility in the automated tracking part.
 
@@ -87,11 +87,11 @@ Move to the *Display options* panel, skipping the track filtering part.
 
 [TrackScheme](TrackScheme "wikilink") also allows manually editing the tracks. Press the **TrackScheme** button on the last panel. By default, the tracks are displayed as colored circles joined by lines. Each circle represent a spot, and the lines represent a link connecting two dots. The selection in TrackScheme is share across TrackMate, so if you select one circle, it will be highlighted in the HyperStack viewer as well (circled in green).
 
-![TrackScheme\_Start.png](/images/pages/TrackScheme_Start.png "TrackScheme_Start.png")
+![TrackScheme\_Start.png](/images/pages/TrackScheme Start.png "TrackScheme Start.png")
 
 TrackScheme launches with a simple style: each spot is represented with a circle. You can get more information by changing the style. Next to the **Style** button in the TrackScheme toolbar, there is combo-box ini which you can select either **simple** or **full**. Select **full**. Each spot is now represented by a rounded rectangle, with the default name printed on the right. Go back in the TrackScheme toolbar. Next to the style combo-box, there is greyed-out button showing 3 pictures. Press it; after some time, each spot in TrackScheme will contain a thumbnail of the spot taken in the raw image. This is very handy to quickly detect detection problems.
 
-![TrackScheme\_Full.png](/images/pages/TrackScheme_Full.png "TrackScheme_Full.png")
+![TrackScheme\_Full.png](/images/pages/TrackScheme Full.png "TrackScheme Full.png")
 
 ## TrackScheme in a nutshell
 
@@ -200,7 +200,7 @@ You can create a link between two cells in TrackScheme simply by enabling the li
 
 This is pictured below, where the fore-to-last cell of the track 4 is connected to the new spot. For visibility, I brought on this screenshot the target cell closer to the lane of the track 4. You can normally find it either on the far right of the panel.
 
-![TrackMate\_CreateLinksInTrackScheme\_annotated.png](/images/pages/TrackMate_CreateLinksInTrackScheme_annotated.png "TrackMate_CreateLinksInTrackScheme_annotated.png")
+![TrackMate\_CreateLinksInTrackScheme\_annotated.png](/images/pages/TrackMate CreateLinksInTrackScheme annotated.png "TrackMate CreateLinksInTrackScheme annotated.png")
 
 Press the **Redo layout** button to see the arranged result. The first spot is now incorporated in the right track.
 
@@ -227,7 +227,7 @@ The newly created link is displayed in magenta. Note that the track arrangement 
 
 After doing so, you should now see a branching track, as picture below. Notice that the track colors are out of sync. The colors are not automatically updated when changing a track layout. You have to click the **Style** button in the TrackScheme toolbar to do so. Do so.
 
-![TrackMate\_BranchingTrack.png](/images/pages/TrackMate_BranchingTrack.png "TrackMate_BranchingTrack.png")
+![TrackMate\_BranchingTrack.png](/images/pages/TrackMate BranchingTrack.png "TrackMate BranchingTrack.png")
 
 ### Creating several links at once
 
@@ -245,7 +245,7 @@ Removing a link often splits a track in 2 new tracks. To have them properly re-a
 
 Plus or minus the localization errors and some incorrect cell radii, you now have the full lineage in 3D of this short movie. This concludes this tutorial on manual editing in TrackMate. Here is a picture of the final results:
 
-![TrackMate\_SmallLineage.png](/images/pages/TrackMate_SmallLineage.png "TrackMate_SmallLineage.png")
+![TrackMate\_SmallLineage.png](/images/pages/TrackMate SmallLineage.png "TrackMate SmallLineage.png")
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 11:30, 1 August 2013 (CDT)
 

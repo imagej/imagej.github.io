@@ -18,7 +18,7 @@ Macros can be used to
   - add tools to the toolbar
   - add keyboard shortcuts
 
-{% include info-box message='Please be aware that there are several other available [scripting](scripting "wikilink") languages that are more powerful than macros, too\! See the sidebar on the right, as well as the [Overcoming limitations](#Overcoming_limitations "wikilink") section below.' %}
+{% include info-box message='Please be aware that there are several other available [scripting](scripting "wikilink") languages that are more powerful than macros, too\! See the sidebar on the right, as well as the [Overcoming limitations](#Overcoming_limitations "wikilink") section below. ' %}
 
 # Variables
 
@@ -273,7 +273,7 @@ for (i = 0; i < roiManager("count"); i++){
 
 Typically, macros are not written from scratch, but recorded using the Macro Recorder: Just click on {% include bc content='Plugins | Macros | Record...'%} and perform some actions. These actions will be recorded in the recorder window, and you can hit the *Create* button to open the recorded instructions in an editor:
 
-![Macro\_recorder.png](/images/pages/Macro_recorder.png "Macro_recorder.png")
+![Macro\_recorder.png](/images/pages/Macro recorder.png "Macro recorder.png")
 
 In some cases, you might need to edit the recorded macro to make it usable with other images than the one you used to record the macro with. Example: when you merge channels, you end up with a statement like this:
 

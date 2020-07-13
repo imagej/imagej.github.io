@@ -8,7 +8,7 @@ categories: Plugins,Registration,TrakEM2
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:register\_virtual\_stack\_slices' %}{| |style="vertical-align:top" |![Register Virtual Stack scheme - All images are transformed to match the reference](/images/pages/Rvs_scheme.png "Register Virtual Stack scheme - All images are transformed to match the reference") |}
+{% include component-stats content=':sc.fiji:register\_virtual\_stack\_slices' %}{| |style="vertical-align:top" |![Register Virtual Stack scheme - All images are transformed to match the reference](/images/pages/Rvs scheme.png "Register Virtual Stack scheme - All images are transformed to match the reference") |}
 
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas). One of the images in the sequence can be selected by the user as **reference** and it will remain intact.
 
@@ -35,7 +35,7 @@ Images may have different dimensions and be of different type.
 
 <b>Step 1</b>: launch the "Plugins - Registration - Register Virtual Stack Slices" plugin.
 
-![Register Virtual Stack main window](/images/pages/Rvs_main_window.png "Register Virtual Stack main window")
+![Register Virtual Stack main window](/images/pages/Rvs main window.png "Register Virtual Stack main window")
 
 <b>Step 2</b>: choose the appropriate options:  
 
@@ -55,13 +55,21 @@ On success, a virtual stack will open showing all the registered images containe
 
 ### Shrinkage constrain
 
-![Shrinkage constrain checkbox](/images/pages/RVS_shrink_option.png "Shrinkage constrain checkbox") Since the 09/13/2009 version and thanks to [Daniel Berger](http://hebb.mit.edu/), Register Virtual Stack Slices has the option of constraining the registration to avoid section shrinking for large sets of images.
+
+{% capture title%}
+ Shrinkage constrain checkbox 
+{% endcapture %}
+{% include thumbnail src="/images/pages/RVS shrink option.png" title=title %} Since the 09/13/2009 version and thanks to [Daniel Berger](http://hebb.mit.edu/), Register Virtual Stack Slices has the option of constraining the registration to avoid section shrinking for large sets of images.
 
 If this option is used, **no reference image needs to be selected**. All images will be transformed into the same common space by initializing first the system with a rigid transformation and then relaxing it based on the desired registration model.
 
 To do so, in the main dialog, you have to check the "Shrinkage constrain" option (see attached window).
 
-If you check as well the "Advance setup" checkbox from the same dialog, then a new window will appear to select the corresponding parameters to regularize the section shrinkage based on the properties of the transformation. If we choose "affine" as registration model, then we will be able to regularize: ![ Shrinkage regularization parameters ](/images/pages/RVS_regularization_params.png " Shrinkage regularization parameters ")
+If you check as well the "Advance setup" checkbox from the same dialog, then a new window will appear to select the corresponding parameters to regularize the section shrinkage based on the properties of the transformation. If we choose "affine" as registration model, then we will be able to regularize: 
+{% capture title%}
+ Shrinkage regularization parameters 
+{% endcapture %}
+{% include thumbnail src="/images/pages/RVS regularization params.png" title=title %}
 
   - the [shear](wikipedia:Shear_mapping "wikilink"),
   - the [scaling](wikipedia:Scaling_\(geometry\) "wikilink"),
@@ -94,7 +102,7 @@ The transforms are saved as **.XML** files, following [TrakEM2](TrakEM2 "wikilin
 3.  All types of images are accepted (8-bit, 16-bit, 32-bit and RGB) but only in .tif, .jpg, .png, .gif, .tiff, .jpeg, .bmp, .pgm, or .ima format. Output images are saved as TIFF.
 4.  If you selected the "Advanced setup" and "Elastic" as registration model, another window to adjust the elastic registration parameters will be shown.
 
-![Elastic registration options](/images/pages/Rvs_elastic_options_351x446.png "Elastic registration options")
+![Elastic registration options](/images/pages/Rvs elastic options 351x446.png "Elastic registration options")
 
 This is actually a reduced version of the [ bUnwarpJ](BUnwarpJ "wikilink") main window.
 
@@ -139,13 +147,13 @@ Example of registration results using the shrinking constraint:
 
 <td>
 
-![input data](/images/pages/RVS_Tem_example.gif "input data")
+![input data](/images/pages/RVS Tem example.gif "input data")
 
 </td>
 
 <td>
 
-![output data](/images/pages/RVS_Registered_tem.gif "output data")
+![output data](/images/pages/RVS Registered tem.gif "output data")
 
 </td>
 
@@ -231,7 +239,7 @@ reference_name, p, use_shrinking_constraint)
 
   - [Transform Virtual Stack Slices](Transform_Virtual_Stack_Slices "wikilink"), to see how to load the saved transforms.
   - [FloatArray2DSIFT.java](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/imagefeatures/FloatArray2DSIFT.java;hb=HEAD) which contains the subclass Param which is the 'sift' member of the Register\_Virtual\_Stack\_Slices.Param subclass.
-  - {% include github org='fiji' repo='register\_virtual\_stack\_slices' source='register\_virtual\_stack/Register\_Virtual\_Stack\_MT.java' label='Register\_Virtual\_Stack\_MT.java' %}, including the Param subclass.
+  - {% include github org='fiji ' repo='register\_virtual\_stack\_slices ' source='register\_virtual\_stack/Register\_Virtual\_Stack\_MT.java ' label='Register\_Virtual\_Stack\_MT.java ' %}, including the Param subclass.
   - [Elastic Alignment and Montage plugin](Elastic_Alignment_and_Montage "wikilink"), for elastic registration/montage of large datasets using spring meshes (local deformations).
 
 ## References

@@ -18,16 +18,16 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='scijava' repo='script-editor' source='org/scijava/ui/swing/script' %}
+{% include github org='scijava ' repo='script-editor ' source='org/scijava/ui/swing/script ' %}
 {% endcapture %}
-{% include info-box name='Script Interpreter' software='ImageJ' author=author maintainer=maintainer source=source released='8 Apr 2016' status='active' %}{% include toc%}
+{% include info-box name='Script Interpreter ' software='ImageJ ' author=author maintainer=maintainer source=source released='8 Apr 2016 ' status='active ' %}{% include toc%}
  The **Script Interpreter** is a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) allowing scripting from the command line.
 
 ## Getting Started
 
 Start it via {% include bc content='Plugins|Scripting|Script Interpreter'%} or by typing {% include key content='Shift' %}-{% include key content='\[' %}.
 
-![Script\_Interpreter.png](/images/pages/Script_Interpreter.png "Script_Interpreter.png")
+![Script\_Interpreter.png](/images/pages/Script Interpreter.png "Script Interpreter.png")
 
 ## Usage
 

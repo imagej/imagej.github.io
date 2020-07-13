@@ -14,9 +14,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='demisjohn' repo='Microscope-Measurement-Tools' %}
+{% include github org='demisjohn ' repo='Microscope-Measurement-Tools ' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='Microscope Measurement Tools' author=author maintainer='Demis D. John (<demis.john@gmail.com>)' filename=' [Download from GitHub/Releases](https://github.com/demisjohn/Microscope-Measurement-Tools/releases) ' source=source released='Sept. 24<sup>th</sup>, 2015' latest-version='2.3' status='beta' website=' [Microscope Measurement Tools at GitHub](https://github.com/demisjohn/Microscope-Measurement-Tools) ' %} Recall saved calibrations for your microscope's measurement scale and create measurement annotations.
+{% include info-box software='Fiji ' name='Microscope Measurement Tools ' author=author maintainer='Demis D. John (<demis.john@gmail.com>) ' filename=' [Download from GitHub/Releases](https://github.com/demisjohn/Microscope-Measurement-Tools/releases) ' source=source released='Sept. 24<sup>th</sup>, 2015 ' latest-version='2.3 ' status='beta ' website=' [Microscope Measurement Tools at GitHub](https://github.com/demisjohn/Microscope-Measurement-Tools) ' %} Recall saved calibrations for your microscope's measurement scale and create measurement annotations.
 
 ## Description
 
@@ -24,11 +24,11 @@ This set of plugins provides a quick way to save distance/length calibrations fo
 
 You can then choose any of your prior measurement calibrations to be applied to an open image (or all open images), as so:
 
-![Microscope\_Meas\_Tools\_-\_Choose\_Calibration\_01.png](/images/pages/Microscope_Meas_Tools_-_Choose_Calibration_01.png "Microscope_Meas_Tools_-_Choose_Calibration_01.png")
+![Microscope\_Meas\_Tools\_-\_Choose\_Calibration\_01.png](/images/pages/Microscope Meas Tools - Choose Calibration 01.png "Microscope Meas Tools - Choose Calibration 01.png")
 
 The "Draw Measurement" plugin then allows you to draw a line with the calibrated measurement length, as so:
 
-![Microscope\_Meas\_Tools\_-\_Draw\_Meas\_Line.png](/images/pages/Microscope_Meas_Tools_-_Draw_Meas_Line.png "Microscope_Meas_Tools_-_Draw_Meas_Line.png")
+![Microscope\_Meas\_Tools\_-\_Draw\_Meas\_Line.png](/images/pages/Microscope Meas Tools - Draw Meas Line.png "Microscope Meas Tools - Draw Meas Line.png")
 
 Three files are included:
 

@@ -8,7 +8,7 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-![ 256px | Stack of Listeria Movement ](/images/pages/K_listeria_animated.gif " 256px | Stack of Listeria Movement ") ![ 256px | Temporal-Color Coded](/images/pages/K_temporal_color_coded_listeria.png " 256px | Temporal-Color Coded")
+![ 256px | Stack of Listeria Movement ](/images/pages/K listeria animated.gif " 256px | Stack of Listeria Movement ") ![ 256px | Temporal-Color Coded](/images/pages/K temporal color coded listeria.png " 256px | Temporal-Color Coded")
 
 
 {% capture author%}
@@ -16,9 +16,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github repo='fiji' path='plugins/Scripts/Image/Hyperstacks/Temporal-Color\_Code.ijm' %}
+{% include github repo='fiji ' path='plugins/Scripts/Image/Hyperstacks/Temporal-Color\_Code.ijm ' %}
 {% endcapture %}
-{% include info-box name='Temporal-Color Code' software='Fiji' author=author maintainer=' [Kota Miura](http://cmci.embl.de) ([1](mailto:miura@embl.de))' source=source released='29 Nov 2010' latest-version='29 Nov 2010' status='beta' %}
+{% include info-box name='Temporal-Color Code ' software='Fiji ' author=author maintainer=' [Kota Miura](http://cmci.embl.de) ([1](mailto:miura@embl.de)) ' source=source released='29 Nov 2010 ' latest-version='29 Nov 2010 ' status='beta ' %}
 
 ## Temporal-Color Code
 

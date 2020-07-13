@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='fiji' repo='Fiji\_Plugins' source='fiji/stacks/Dynamic\_Reslice.java' %}
+{% include github org='fiji ' repo='Fiji\_Plugins ' source='fiji/stacks/Dynamic\_Reslice.java ' %}
 {% endcapture %}
-{% include info-box name='Dynamic Reslice' software='[Fiji\_Plugins](Fiji_Plugins "wikilink")' author='Jean-Yves Tinevez & Albert Cardona from an ImageJ class' maintainer='Jean-Yves Tinevez (<tinevez_at_mpi-cbg_dot_de>)' filename=' [Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Reslice.jar) ' source=source released='22 April 2009' latest-version='v1.2 (23 April 2009)' status='active' %}
+{% include info-box name='Dynamic Reslice ' software='[Fiji\_Plugins](Fiji_Plugins "wikilink") ' author='Jean-Yves Tinevez & Albert Cardona from an ImageJ class ' maintainer='Jean-Yves Tinevez (<tinevez_at_mpi-cbg_dot_de>) ' filename=' [Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Reslice.jar) ' source=source released='22 April 2009 ' latest-version='v1.2 (23 April 2009) ' status='active ' %}
 
 ## Purpose
 

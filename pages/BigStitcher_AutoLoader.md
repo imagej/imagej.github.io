@@ -139,7 +139,7 @@ You will be presented with a dialog to specify the parameters of the grid, i.e. 
 
 As with the macro-scriptable version of this dialog, if there are multiple angles in the dataset, the dialog will be shown for each of them and if you specify more than one layer in z, the x and y pattern will be repeated for every layer.
 
-![Interactive grid alignment window.](/images/pages/BigStitcher_Arrange_Views004.png "Interactive grid alignment window.")
+![Interactive grid alignment window.](/images/pages/BigStitcher Arrange Views004.png "Interactive grid alignment window.")
 
 Go back to the [dataset definition overview](BigStitcher_Define_new_dataset "wikilink")
 

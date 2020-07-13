@@ -34,7 +34,7 @@ The fastest way to start batch conversion is via the [{% include bc content='Pro
 
 Open the [script editor](Using_the_Script_Editor "wikilink"), select {% include bc content='Templates | ImageJ 1.x | Batch | Process Folder (IJ1 Macro)'%}. This will generate the following boilerplate:
 
-![Process\_folder\_ij1.png](/images/pages/Process_folder_ij1.png "Process_folder_ij1.png")
+![Process\_folder\_ij1.png](/images/pages/Process folder ij1.png "Process folder ij1.png")
 
 Lines 26 and 27 can now be edited, replaced with the functional macro code you would like to apply to all images of a given type in a folder. Furthermore you can now modify the batch processing logic itself, for example if you need to customize what (if any) output information is saved.
 

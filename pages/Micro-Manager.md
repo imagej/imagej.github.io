@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='micro-manager' repo='micro-manager' %}
+{% include github org='micro-manager ' repo='micro-manager ' %}
 {% endcapture %}
-{% include info-box content='Plugin' name='μManager' software='μManager' logo='![Mm-icon.jpg](/images/pages/Mm-icon.jpg "Mm-icon.jpg")' author=' [Vale Lab](http://valelab.ucsf.edu/) , [UCSF](http://www.ucsf.edu/) ' maintainer=' [Open Imaging, Inc.](https://open-imaging.com/) ' source=source status='Active' website='https://micro-manager.org/' %}μManager is a software package for control of automated microscopes.
+{% include info-box content='Plugin' name='μManager ' software='μManager ' logo='![Mm-icon.jpg](/images/pages/Mm-icon.jpg "Mm-icon.jpg") ' author=' [Vale Lab](http://valelab.ucsf.edu/) , [UCSF](http://www.ucsf.edu/) ' maintainer=' [Open Imaging, Inc.](https://open-imaging.com/) ' source=source status='Active ' website='https://micro-manager.org/ ' %}μManager is a software package for control of automated microscopes.
 
 ## Publication
 

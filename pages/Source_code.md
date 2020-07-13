@@ -13,7 +13,7 @@ The source code of ImageJ is very modular; i.e., it is organized into [well-sepa
 
 ## Where is the code?
 
-{% include tip tip='You can search the source code at http://search.imagej.net/ using the GitHub button\!' %}\* All source code is on [GitHub](GitHub "wikilink").
+{% include tip tip='You can search the source code at http://search.imagej.net/ using the GitHub button\! ' %}\* All source code is on [GitHub](GitHub "wikilink").
 
   - Each project exists in its own GitHub organization.
   - Each organization contains multiple source code repositories.

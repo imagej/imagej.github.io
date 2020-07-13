@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='giocard' repo='MyofibrilJ' %}
+{% include github org='giocard ' repo='MyofibrilJ ' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='MyofribilJ' maintainer=maintainer author=author source=source released='November 2017' category='[Analysis](:Category:Analysis "wikilink"), [Scripting](:Category:Scripting "wikilink"), [Plugins](:Category:Plugins "wikilink")' %}
+{% include info-box software='ImageJ/Fiji ' name='MyofribilJ ' maintainer=maintainer author=author source=source released='November 2017 ' category='[Analysis](:Category:Analysis "wikilink"), [Scripting](:Category:Scripting "wikilink"), [Plugins](:Category:Plugins "wikilink") ' %}
 
 ## Introduction
 

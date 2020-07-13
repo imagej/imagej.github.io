@@ -21,9 +21,9 @@ For further technical details on project structure, see the [Architecture](Archi
 Before coming out of beta, we have made several last-minute changes to the code:
 
   - All `@Deprecated` methods and classes have been removed.
-  - All metadata handling (formerly `imglib2-meta` subproject) is being moved into {% include github org='imagej' repo='imagej-common' label='imagej-common' %}. From ImgLib2 core, the classes `AnnotatedSpace`, `AbstractAnnotatedSpace`, and `Axis` were moved to {% include github org='imagej' repo='imagej-common' label='imagej-common' %}.
-  - The current ROI representation was not considered stable enough to be included in a release. The `net.imglib2.roi` and `net.imglib2.labeling` packages were moved to the new {% include github org='imglib' repo='imglib2-roi' label='imglib2-roi' %} subproject which will remain in beta for now.
-  - The `net.imglib2.multithreading` package was moved to {% include github org='imglib' repo='imglib2-algorithm' label='imglib2-algorithm' %} and deprecated.
+  - All metadata handling (formerly `imglib2-meta` subproject) is being moved into {% include github org='imagej ' repo='imagej-common ' label='imagej-common ' %}. From ImgLib2 core, the classes `AnnotatedSpace`, `AbstractAnnotatedSpace`, and `Axis` were moved to {% include github org='imagej ' repo='imagej-common ' label='imagej-common ' %}.
+  - The current ROI representation was not considered stable enough to be included in a release. The `net.imglib2.roi` and `net.imglib2.labeling` packages were moved to the new {% include github org='imglib ' repo='imglib2-roi ' label='imglib2-roi ' %} subproject which will remain in beta for now.
+  - The `net.imglib2.multithreading` package was moved to {% include github org='imglib ' repo='imglib2-algorithm ' label='imglib2-algorithm ' %} and deprecated.
   - We merged work by Albert Cardona and Stephan Preibisch on "fractional" types. ImgLib2 `NativeType`s map pixels into primitive arrays, where often the mapping is one-to-one. For example, an `UnsignedByteType` pixel maps into one byte of a primitive `byte[]` array. With fractional types this mapping maybe non-integral, for example `Unsigned12BitType` maps pixels into a `long[]` array, where each pixel occupies 12/64 longs.
   - Superfluous generic parameters were removed from `Projector<A,B>` interface which is now only `Projector`. Projector implementations were fixed accordingly.
   - Several classes were renamed or moved to more suitable places:

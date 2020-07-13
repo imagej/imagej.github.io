@@ -16,7 +16,7 @@ description: test description
 {% capture maintainer%}
 {% include person content='Alex-krull' %}, {% include person content='Damienrj' %}
 {% endcapture %}
-{% include info-box name='Blob Tracking' software='Fiji' author=author maintainer=maintainer source='https://github.com/alex-krull/fiji' released='May 22<sup>nd</sup>, 2013' latest-version='May 22<sup>nd</sup>, 2013' status='PreRelease, active' category='[Tracking](:Category:Tracking "wikilink")' %}
+{% include info-box name='Blob Tracking ' software='Fiji ' author=author maintainer=maintainer source='https://github.com/alex-krull/fiji ' released='May 22<sup>nd</sup>, 2013 ' latest-version='May 22<sup>nd</sup>, 2013 ' status='PreRelease, active ' category='[Tracking](:Category:Tracking "wikilink") ' %}
 
 This software is a tool for the tracking of low-light sub-resolution objects in fluorescent microscopy. It can be applied in other fields as well. The plugin implements the localization algorithm described in the following paper: "A Divide and Conquer Strategy for the Maximum Likelihood localization of Low Intensity Objects" by Alexander Krull et al, 2013 Optics Express, Vol. 22, Issue 1, pp. 210-228 (2014).
 
@@ -30,11 +30,11 @@ Please refer to the [ **tutorial**](Update_Sites "wikilink") on how to add our u
 
 ` `**`http://sites.imagej.net/Alex-krull/`**
 
-![LLTT\_Install4.jpg](/images/pages/LLTT_Install4.jpg "LLTT_Install4.jpg")
+![LLTT\_Install4.jpg](/images/pages/LLTT Install4.jpg "LLTT Install4.jpg")
 
 ## Install the required files
 
-![LLTT\_Install5.jpg](/images/pages/LLTT_Install5.jpg "LLTT_Install5.jpg")
+![LLTT\_Install5.jpg](/images/pages/LLTT Install5.jpg "LLTT Install5.jpg")
 
 Install or update all 6 items shown above by hitting **Apply changes**. Please restart Fiji afterwards.
 
@@ -44,7 +44,7 @@ Install or update all 6 items shown above by hitting **Apply changes**. Please r
 
 ![OpenData.png](/images/pages/OpenData.png "OpenData.png")
 
-To begin use Fiji to load the data to be used for tracking. Use whichever method you prefer in Fiji. The LLTT-plugin will work with 8-bit, 16-bit and 32-bit-float stacks. Moreover you can use 3D and multichannel hyperstacks. If you want to try the LLTT-plugin but do not have the right data at hand, you can download a file with sample data here: ![LLTT\_BeadsExampleData.zip](/images/pages/LLTT_BeadsExampleData.zip "LLTT_BeadsExampleData.zip").
+To begin use Fiji to load the data to be used for tracking. Use whichever method you prefer in Fiji. The LLTT-plugin will work with 8-bit, 16-bit and 32-bit-float stacks. Moreover you can use 3D and multichannel hyperstacks. If you want to try the LLTT-plugin but do not have the right data at hand, you can download a file with sample data here: ![LLTT\_BeadsExampleData.zip](/images/pages/LLTT BeadsExampleData.zip "LLTT BeadsExampleData.zip").
 
 ## Start the LLTT-plugin
 
@@ -52,13 +52,13 @@ After the data is loaded, start the plugin by clicking:
 
 **plugins-\>Tracking-\>Low Light Tracking Tool**
 
-![LLTT\_Start1.jpg](/images/pages/LLTT_Start1.jpg "LLTT_Start1.jpg")
+![LLTT\_Start1.jpg](/images/pages/LLTT Start1.jpg "LLTT Start1.jpg")
 
 ## Set global options
 
 Upon startup of the plugin you will be asked to enter three values.
 
-![LLTT\_GlobalOptions2d.jpg](/images/pages/LLTT_GlobalOptions2d.jpg "LLTT_GlobalOptions2d.jpg")
+![LLTT\_GlobalOptions2d.jpg](/images/pages/LLTT GlobalOptions2d.jpg "LLTT GlobalOptions2d.jpg")
 
 They are:
 
@@ -95,7 +95,7 @@ The yellow lines in the kymographs indicate what frame you are currently working
 
 ## Create session
 
-![LLTT\_ChooseSession.jpg](/images/pages/LLTT_ChooseSession.jpg "LLTT_ChooseSession.jpg")
+![LLTT\_ChooseSession.jpg](/images/pages/LLTT ChooseSession.jpg "LLTT ChooseSession.jpg")
 
 Click on the **New Session** button or select from the menu. The **New session** window opens. Here you can pick a name for the session as well as the channel you want to track on. Finally you can choose your tracking method.
 

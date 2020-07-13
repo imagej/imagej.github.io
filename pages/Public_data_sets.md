@@ -25,7 +25,7 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 <!-- end list -->
 
   -   
-    All the data and further information is available in the {% include github org='unidesigner' repo='groundtruth-drosophila-vnc' label='GitHub repository' %}.
+    All the data and further information is available in the {% include github org='unidesigner ' repo='groundtruth-drosophila-vnc ' label='GitHub repository ' %}.
 
 <!-- end list -->
 
@@ -53,7 +53,7 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 
 <!-- end list -->
 
-  - [Sample OME-TIFF data on openmicroscopy.org](http://www.openmicroscopy.org/site/support/file-formats/ome-tiff/ome-tiff-data), thanks to Josh Bembenek.![*C. elegans* embryo coexpressing tubulin histone GFP](/images/pages/tubhiswt4D.png "C. elegans embryo coexpressing tubulin histone GFP")
+  - [Sample OME-TIFF data on openmicroscopy.org](http://www.openmicroscopy.org/site/support/file-formats/ome-tiff/ome-tiff-data), thanks to Josh Bembenek.![*C. elegans* embryo coexpressing tubulin histone GFP](/images/pages/Tubhiswt4D.png "C. elegans embryo coexpressing tubulin histone GFP")
 
 <!-- end list -->
 

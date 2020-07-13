@@ -89,7 +89,7 @@ Note that you need to connect with command-line ssh first, to record the finger-
 
 If the update site has not been initialized yet (i.e. if nobody else has initialized that site yet), you will see a dialog like this:
 
-![How\_to\_setup\_a\_plugin\_distribution\_site-6a.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-6a.jpg "How_to_setup_a_plugin_distribution_site-6a.jpg")
+![How\_to\_setup\_a\_plugin\_distribution\_site-6a.jpg](/images/pages/How to setup a plugin distribution site-6a.jpg "How to setup a plugin distribution site-6a.jpg")
 
 Just click *OK* and let the updater upload an empty file index (it is stored in the file *db.xml.gz* which is also called the *database* in the documentation of the updater).
 
@@ -101,7 +101,7 @@ Note: you cannot simply copy files to your web space; the updater would miss all
 
 First, start the [updater](updater "wikilink"):
 
-![How\_to\_setup\_a\_plugin\_distribution\_site-1.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
+![How\_to\_setup\_a\_plugin\_distribution\_site-1.jpg](/images/pages/How to setup a plugin distribution site-1.jpg "How to setup a plugin distribution site-1.jpg")
 
 Click on the *Manage update sites* button and verify:
 
@@ -142,7 +142,7 @@ When a plugin is selected, a *Details* panel becomes available. The plugin's dep
 
 You can also manually enter or edit any information in the *Details* panel:
 
-![How\_to\_setup\_a\_plugin\_distribution\_site-15.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-15.jpg "How_to_setup_a_plugin_distribution_site-15.jpg")
+![How\_to\_setup\_a\_plugin\_distribution\_site-15.jpg](/images/pages/How to setup a plugin distribution site-15.jpg "How to setup a plugin distribution site-15.jpg")
 
 {% include info-box content='The ""Details"" panel can only be edited if you have entered upload credentials for the appropriate update site. After modifying the ""Details"" panel you can mark the jar for upload, even though the jar contents itself has not changed.' %}
 

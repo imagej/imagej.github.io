@@ -46,7 +46,7 @@ For the DoG detector, unsurprisingly, we find that the execution time is proport
 
 The LoG detector operates in Fourier space, and because of the Fourier transform implementation we use, the images are padded with 0s to reach a size equal to a power of 2. This does not show here as all but one tests are made with such a size. Still, the execution time slightly deviates from the linear case, and shows a slight quadratic shape. The best linear fit yields a low in *t (ms) = 2.8e-4 x Npixels*, showing that the LoG detector is slightly quicker than the DoG detector.
 
-![TrackMate\_DoGandLoGTimeVsPixels.png](/images/pages/TrackMate_DoGandLoGTimeVsPixels.png "TrackMate_DoGandLoGTimeVsPixels.png")
+![TrackMate\_DoGandLoGTimeVsPixels.png](/images/pages/TrackMate DoGandLoGTimeVsPixels.png "TrackMate DoGandLoGTimeVsPixels.png")
 
 #### Processing time for a 3D image as a function of its size.
 
@@ -63,13 +63,13 @@ And again, the processing time is found to be linear with the number of pixels. 
 
 Interestingly, the LoG detector seems to become the slowest at intermediate size, which I cannot interpret well.
 
-![TrackMate\_DoGandLoGTimeVsPixels3D.png](/images/pages/TrackMate_DoGandLoGTimeVsPixels3D.png "TrackMate_DoGandLoGTimeVsPixels3D.png")
+![TrackMate\_DoGandLoGTimeVsPixels3D.png](/images/pages/TrackMate DoGandLoGTimeVsPixels3D.png "TrackMate DoGandLoGTimeVsPixels3D.png")
 
 #### Processing time for a 2D image as a function of the spot radius.
 
 We used a 1024x1024 *uint16* image, with 200 gaussian spots, the size of which we varied. The detector was tuned to this radius.
 
-![TrackMate\_DoGandLoGTimeVsRadius2D.png](/images/pages/TrackMate_DoGandLoGTimeVsRadius2D.png "TrackMate_DoGandLoGTimeVsRadius2D.png")
+![TrackMate\_DoGandLoGTimeVsRadius2D.png](/images/pages/TrackMate DoGandLoGTimeVsRadius2D.png "TrackMate DoGandLoGTimeVsRadius2D.png")
 
 We find that for the DoG detector, the processing time to increase linearly with the specified radius, following approximately *t (ms) = 20.5 x radius + 260*. As the difference-of-gaussians is calculated in the direct space, a marked increase is expected as there is more pixels to iterate over. Without optimization, we should however have found the time to be increasing with the square of the radius, and find the same dependence that for the image size. Thanks to the clever implementation of gaussian filtering\[1\], this is avoided.
 
@@ -79,7 +79,7 @@ The LoG detector shows a near-constant processing time, which makes it desirable
 
 This time we used a 256x256x256 3D image, but with otherwise the same parameters.
 
-![TrackMate\_DoGandLoGTimeVsRadius3D.png](/images/pages/TrackMate_DoGandLoGTimeVsRadius3D.png "TrackMate_DoGandLoGTimeVsRadius3D.png")
+![TrackMate\_DoGandLoGTimeVsRadius3D.png](/images/pages/TrackMate DoGandLoGTimeVsRadius3D.png "TrackMate DoGandLoGTimeVsRadius3D.png")
 
 The processing time increases, but this time deviates slightly from linearity in the DoG case. We retrieve the 3D kernel overhead we had for the 3D images.
 

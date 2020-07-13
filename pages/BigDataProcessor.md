@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='embl-cba' repo='fiji-plugin-bigDataProcessor' %}
+{% include github org='embl-cba ' repo='fiji-plugin-bigDataProcessor ' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='BigDataProcessor' update-site='EMBL-CBA' author='Christian Tischer' maintainer='Christian Tischer' source=source %}
+{% include info-box software='Fiji ' name='BigDataProcessor ' update-site='EMBL-CBA ' author='Christian Tischer ' maintainer='Christian Tischer ' source=source %}
 
 ## Overview
 

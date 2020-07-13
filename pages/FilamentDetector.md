@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='hadim' repo='FilamentDetector' %}
+{% include github org='hadim ' repo='FilamentDetector ' %}
 {% endcapture %}
-{% include info-box name='FilamentDetector' logo='' software='Fiji' author=author maintainer=maintainer source=source released='13/10/2017' status='v0.1.1, alpha' category='Tracking, Detection' %} \_\_TOC\_\_
+{% include info-box name='FilamentDetector ' logo=' ' software='Fiji ' author=author maintainer=maintainer source=source released='13/10/2017 ' status='v0.1.1, alpha ' category='Tracking, Detection ' %} \_\_TOC\_\_
 
 ## Presentation
 

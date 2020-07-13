@@ -8,13 +8,13 @@ categories:
 description: test description
 ---
 
-{% include info-box logo='![ 96px](/images/pages/Fiji-icon.png " 96px")' software='ImageJ' name='RETINA Analysis Toolkit' author=' ["""Daniel E. Maidana"""](https://www.researchgate.net/profile/Daniel_Maidana2)  
+{% include info-box logo='![ 96px](/images/pages/Fiji-icon.png " 96px") ' software='ImageJ ' name='RETINA Analysis Toolkit ' author=' ["""Daniel E. Maidana"""](https://www.researchgate.net/profile/Daniel_Maidana2)  
 ["""Demetrios G. Vavvas"""](https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g) ' maintainer='"""Daniel E. Maidana"""  
 Angiogenesis Laboratory  
 Massachusetts Eye and Ear Infirmary  
 Harvard Medical School  
-Email: [Daniel Maidana](mailto:dmaida3@uic.edu)' filename=' [TUNEL Cell Counter Macro](https://github.com/DanielMaidana/TUNEL_Cell_Counter/archive/master.zip) ' source=' [TUNEL Cell Counter Repository](https://osf.io/9rveh/)  
-' released='August 18<sup>th</sup>, 2015' latest-version='July 21<sup>th</sup>, 2016' status='Active and validated with Fiji (ImageJ 1.51d)' website=' [RETINA Analysis Toolkit at YouTube](https://www.youtube.com/channel/UCqGMCPY9ViyAPWhYciRNuKQ) ' %}  
+Email: [Daniel Maidana](mailto:dmaida3@uic.edu) ' filename=' [TUNEL Cell Counter Macro](https://github.com/DanielMaidana/TUNEL_Cell_Counter/archive/master.zip) ' source=' [TUNEL Cell Counter Repository](https://osf.io/9rveh/)  
+' released='August 18<sup>th</sup>, 2015 ' latest-version='July 21<sup>th</sup>, 2016 ' status='Active and validated with Fiji (ImageJ 1.51d) ' website=' [RETINA Analysis Toolkit at YouTube](https://www.youtube.com/channel/UCqGMCPY9ViyAPWhYciRNuKQ) ' %}  
 **RETINA Analysis Toolkit** is a free macro toolkit designed and developed for Fiji (ImageJ). The purpose of the RETINA Analysis Toolkit is to perform fast quantitation of digital RGB images from retina cryosections, acquired by fluorescent microscopes. The current components of these toolkit are: TUNEL Cell Counter and RETINA Cell Heatmap.
 
 \_\_TOC\_\_  
@@ -23,7 +23,11 @@ Email: [Daniel Maidana](mailto:dmaida3@uic.edu)' filename=' [TUNEL Cell Counter 
 # TUNEL Cell Counter
 
   
-TUNEL Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. ![**TUNEL Cell Counter**: Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.](/images/pages/RETINA_Cell_Counter_Montage.png "TUNEL Cell Counter: Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.")
+TUNEL Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. 
+{% capture title%}
+ **TUNEL Cell Counter**: Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/RETINA Cell Counter Montage.png " title=title %}
 
 ## Required Components
 
@@ -40,7 +44,11 @@ The following are required to execute this tool:
 
 ## Processing Settings
 
-![**Settings Dialog**: Input the spatial scale obtained from the image metadata or microscope.](/images/pages/RETINA_Cell_Counter_Dialog.png "Settings Dialog: Input the spatial scale obtained from the image metadata or microscope.") After importing a TIFF image and executing the counter, the following settings should be selected:
+
+{% capture title%}
+ **Settings Dialog**: Input the spatial scale obtained from the image metadata or microscope. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/RETINA Cell Counter Dialog.png" title=title %} After importing a TIFF image and executing the counter, the following settings should be selected:
 
 1.  <b>Microscope Magnification</b>: Displays the working 20x objective magnification.
 2.  <b>Image Native Resolution</b>: Displays the imported image resolution.
@@ -53,9 +61,21 @@ The following are required to execute this tool:
 9.  <b>Channels</b>: Choose the cells of interest in either the green, red, or combined channels.
 10. <b>Help</b>: Links directly to this site.
 
-|                                                                                                                                                               |                                                                                                                                                                                        |                                                                                                                                                                                             |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![**Cell Roundness**: Select the desired morphology for cells.](/images/pages/RETINA_Cell_Counter_Roundness.png "Cell Roundness: Select the desired morphology for cells.") | ![**Retina Area Selection**: Choose between automated or manual segmentation.](/images/pages/RETINA_Cell_Counter_Area.png "Retina Area Selection: Choose between automated or manual segmentation.") | ![**Threshold Sensitivity**: Select the threshold protocol for cell counting.](/images/pages/RETINA_Cell_Counter_Threshold.png "Threshold Sensitivity: Select the threshold protocol for cell counting.") |
+|                                                                                                                                                                     |                                                                                                                                                                               |                                                                                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 
+{% capture title%}
+ **Cell Roundness**: Select the desired morphology for cells. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/RETINA Cell Counter Roundness.png" title=title %} | 
+{% capture title%}
+ **Retina Area Selection**: Choose between automated or manual segmentation. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/RETINA Cell Counter Area.png" title=title %} | 
+{% capture title%}
+ **Threshold Sensitivity**: Select the threshold protocol for cell counting. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/RETINA Cell Counter Threshold.png" title=title %} |
 
 ## Results
 

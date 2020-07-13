@@ -10,14 +10,18 @@ description: test description
 
 
 {% capture source%}
-{% include github repo='fiji' path='plugins/Analyze/Dynamic\_ROI\_Profiler.clj' %}
+{% include github repo='fiji ' path='plugins/Analyze/Dynamic\_ROI\_Profiler.clj ' %}
 {% endcapture %}
-{% include info-box name='Dynamic ROI Profiler' software='Clojure' author='Albert Cardona' maintainer='' filename='Dynamic\_ROI\_Profiler.clj' source=source latest-version='16 November 2008' status='unknown' %}
+{% include info-box name='Dynamic ROI Profiler ' software='Clojure ' author='Albert Cardona ' maintainer=' ' filename='Dynamic\_ROI\_Profiler.clj ' source=source latest-version='16 November 2008 ' status='unknown ' %}
 
 Dynamically updates a profile plot for an image with a line, freeline, polyline or a rectangular ROI, as the ROI is moved across the image. Written in [Clojure](Clojure_Scripting "wikilink").
 
-|                                                                                                                                                                                                                                                                |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Dragging a line ROI across an image shows the pixel intensity profile across that line in a separate image window.](/images/pages/Profiler-movie.gif "Dragging a line ROI across an image shows the pixel intensity profile across that line in a separate image window.") |
+|                                                                                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 
+{% capture title%}
+ Dragging a line ROI across an image shows the pixel intensity profile across that line in a separate image window. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Profiler-movie.gif" title=title %} |
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Scripting](Category:Scripting "wikilink") [Category:Unmaintained](Category:Unmaintained "wikilink")

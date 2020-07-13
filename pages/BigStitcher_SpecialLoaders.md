@@ -14,11 +14,11 @@ In addition to the more generic [Automatic Loader](BigStitcher_AutoLoader "wikil
 
 ## Zeiss Lightsheet Z.1 Dataset (Bioformats)
 
-![Step 1: select the .czi file to load.](/images/pages/BigStitcher_CZI_Import1.png "Step 1: select the .czi file to load.")
+![Step 1: select the .czi file to load.](/images/pages/BigStitcher CZI Import1.png "Step 1: select the .czi file to load.")
 
 If you select to load a **Zeiss Lightsheet Z.1 Dataset**, you will first be asked for the first **.czi-file** in the dataset (Step 1). If your dataset is just a single file, pick that file. If your dataset consists of multiple files, pick the one without a numeric suffix.
 
-![Step 2: Reviewing metadata detected in CZI-dataset.](/images/pages/BigStitcher_CZI_Import2.png "Step 2: Reviewing metadata detected in CZI-dataset.")
+![Step 2: Reviewing metadata detected in CZI-dataset.](/images/pages/BigStitcher CZI Import2.png "Step 2: Reviewing metadata detected in CZI-dataset.")
 
 We will then parse the dataset and show the metadata we could extract in the next dialog (Step 2). There are a few changes you can make at this moment:
 
@@ -29,7 +29,7 @@ We will then parse the dataset and show the metadata we could extract in the nex
       - Ticking **Apply rotation to dataset** will transform the individual views according to the rotations from metadata. This should give you a rough alignment to start with.
   - Finally, due to a bug in BioFormats, all stacks in a file may be reported to have the same number of z-slices even if their number of slices differ (smaller stacks will be filled with zeroes to reach the size of the largest stack). If you tick **Fix Bioformats stack size bug**, we will inspect the image data and remove the zero-valued volume at the end of the stack.
 
-![Step 3: Modifying calibration and rotation axis.](/images/pages/BigStitcher_CZI_Import3.png "Step 3: Modifying calibration and rotation axis.")
+![Step 3: Modifying calibration and rotation axis.](/images/pages/BigStitcher CZI Import3.png "Step 3: Modifying calibration and rotation axis.")
 
 If you chose to modify the calibration or the rotation axis, a third dialog will be displayed in which you can manually set the following thinks (Step 3):
 

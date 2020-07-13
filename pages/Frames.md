@@ -8,13 +8,13 @@ categories: Import-Export‏‎,Plugins
 description: test description
 ---
 
-{% include info-box software='ImageJ1' name='Frames' author='Fred Damen' maintainer='Fred Damen' filename='Frames.jar' source=' [Frames.zip](https://imagej.net/_images/3/3d/Frames.zip) ' released='1 April 2019' latest-version='1 April 2020' status='stable' category='[Analysis‏‎‏‎](:Category:Analysis‏‎‏‎ "wikilink")' website='' %}
+{% include info-box software='ImageJ1 ' name='Frames ' author='Fred Damen ' maintainer='Fred Damen ' filename='Frames.jar ' source=' [Frames.zip](https://imagej.net/_images/3/3d/Frames.zip) ' released='1 April 2019 ' latest-version='1 April 2020 ' status='stable ' category='[Analysis‏‎‏‎](:Category:Analysis‏‎‏‎ "wikilink") ' website=' ' %}
 
 These are a set of plugins that are used to work with data in the frame direction. The F\_Project plugin projects the images in the frame direction into a lower dimension using different methods. The F\_Profiler pulgin plots the contents of an ROI through the frame direction. The Frame\_Slider provides sliders to step though the frames of a hyperstacks based on the variable/values in the slice labels.
 
 ## F\_Project
 
-![F\_Project\_ScreenShot.jpg](/images/pages/F_Project_ScreenShot.jpg "F_Project_ScreenShot.jpg")
+![F\_Project\_ScreenShot.jpg](/images/pages/F Project ScreenShot.jpg "F Project ScreenShot.jpg")
 
 When run as a plugin from the gui the image used is identified on the top line. A subset of the slices and frames can be used as the source data; see syntax for *Make Substacks...*. When the identified frames is 'label', the frames are grouped by identical labels. When the frames are identified by 'repeats var', where var is the name of the variable in the slice label, these frames are treated as repeats of data.  
 **Transpose?** Swap frames for slices.
@@ -132,12 +132,12 @@ OR with more resilience to outliers . . .
 
 ## F\_Profilier
 
-![F\_Profiler\_Screenshot.jpg](/images/pages/F_Profiler_Screenshot.jpg "F_Profiler_Screenshot.jpg")  
+![F\_Profiler\_Screenshot.jpg](/images/pages/F Profiler Screenshot.jpg "F Profiler Screenshot.jpg")  
 Given a Hyperstack image, draw an ROI and start plugin. Manipulate the ROI and the plot changes. Check out Interactive\_Fitting plugin.
 
 ## Frame\_Slider
 
-![Frame\_Slider\_Screenshot.jpg](/images/pages/Frame_Slider_Screenshot.jpg "Frame_Slider_Screenshot.jpg")  
+![Frame\_Slider\_Screenshot.jpg](/images/pages/Frame Slider Screenshot.jpg "Frame Slider Screenshot.jpg")  
 When you have one or more Hyperstacks open and want to step though the images per the variables in the slice labels, start the Frame\_Slider with the dataset with the most variables, select the other datasets, and step through them using the sliders. The datasets should all be governed by the same set of variables, i.e., The two left images are the raw data with repeats and the two right images are the mean and SNR projections, to see why click the scrollbars.
 
 ## Install

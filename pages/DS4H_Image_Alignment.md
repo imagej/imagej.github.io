@@ -10,15 +10,15 @@ description: test description
 
 
 {% capture source%}
-{% include github org='Luxor001' repo='DS4H-Image-Alignment' %}
+{% include github org='Luxor001 ' repo='DS4H-Image-Alignment ' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='DS4H Image Alignment' maintainer='DS4H' author='Stefano Belli; Antonella Carbonaro; Filippo Piccinini' source=source released='08/06/2019' latest-version='13/08/2019' status='stable' category='[:Category:Registration](:Category:Registration "wikilink")' %}
+{% include info-box software='ImageJ ' name='DS4H Image Alignment ' maintainer='DS4H ' author='Stefano Belli; Antonella Carbonaro; Filippo Piccinini ' source=source released='08/06/2019 ' latest-version='13/08/2019 ' status='stable ' category='[:Category:Registration](:Category:Registration "wikilink") ' %}
 
 ## Goal of the plugin
 
 Align (i.e. co-register) 2D images
 
-![DS4H\_IA\_Modified\_TsujikawaCellReports2017.png](/images/pages/DS4H_IA_Modified_TsujikawaCellReports2017.png "DS4H_IA_Modified_TsujikawaCellReports2017.png")
+![DS4H\_IA\_Modified\_TsujikawaCellReports2017.png](/images/pages/DS4H IA Modified TsujikawaCellReports2017.png "DS4H IA Modified TsujikawaCellReports2017.png")
 
 ## Description
 

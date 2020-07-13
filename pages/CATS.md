@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='embl-cba' repo='fiji-plugin-cats' %}
+{% include github org='embl-cba ' repo='fiji-plugin-cats ' %}
 {% endcapture %}
-{% include info-box name='CATS' software='Fiji' update-site='EMBL-CBA' author='Christian Tischer' maintainer='Christian Tischer' source=source %}
+{% include info-box name='CATS ' software='Fiji ' update-site='EMBL-CBA ' author='Christian Tischer ' maintainer='Christian Tischer ' source=source %}
 
 ## Overview
 

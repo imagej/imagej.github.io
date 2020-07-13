@@ -14,4 +14,4 @@ description: test description
 
 [Category:News](Category:News "wikilink")
 
-1.  {% include cite content='journal' author='Tobias Pietszch, Stephan Preibisch, Pavel Tomancak, Stephan Saalfeld' title='ImgLib2 – Generic Image Processing in Java' journal='Bioinformatics' year='2012' volume='28(22)' pages='3009-3011' url='http://bioinformatics.oxfordjournals.org/content/28/22/3009' %}
+1.  {% include cite content='journal' author='Tobias Pietszch, Stephan Preibisch, Pavel Tomancak, Stephan Saalfeld ' title='ImgLib2 – Generic Image Processing in Java ' journal='Bioinformatics ' year='2012 ' volume='28(22) ' pages='3009-3011 ' url='http://bioinformatics.oxfordjournals.org/content/28/22/3009 ' %}

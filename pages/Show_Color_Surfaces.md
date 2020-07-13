@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='fiji' repo='3D\_Viewer' source='isosurface/Show\_Colour\_Surfaces.java' %}
+{% include github org='fiji ' repo='3D\_Viewer ' source='isosurface/Show\_Colour\_Surfaces.java ' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Show Color Surfaces' author='Mark Longair' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
+{% include info-box software='ImageJ ' name='Show Color Surfaces ' author='Mark Longair ' maintainer='Mark Longair ' filename='VIB\_.jar ' source=source status='stable ' %}
 
 This plugin allows you to add surfaces generated from *label field stacks* to a new or existing 3D viewer.
 

@@ -26,9 +26,9 @@ The rules for `#@` parameter use are as follows:
 Clojure developer
 {% endcapture %}
 {% include testimonial quote='zomg UIs are so easy now  
-done by lunchtime' person=person gravatar='9e4ed4484fd425f3f178bfeed4777b31' source='https://gitter.im/fiji/fiji?at=5717afbc98c544f1396cef2f' float='right' %} For example, if we look at the [Greeting.py](https://github.com/scijava/scripting-jython/blob/scripting-jython-0.2.0/src/main/resources/script_templates/Python/Greeting.py) [template](Script_Templates "wikilink") supplied with Fiji:
+done by lunchtime ' person=person gravatar='9e4ed4484fd425f3f178bfeed4777b31 ' source='https://gitter.im/fiji/fiji?at=5717afbc98c544f1396cef2f ' float='right ' %} For example, if we look at the [Greeting.py](https://github.com/scijava/scripting-jython/blob/scripting-jython-0.2.0/src/main/resources/script_templates/Python/Greeting.py) [template](Script_Templates "wikilink") supplied with Fiji:
 
-{% include github-embed org='scijava' repo='scripting-jython' path='src/main/resources/script\_templates/Intro/Greeting.py' %}
+{% include github-embed org='scijava ' repo='scripting-jython ' path='src/main/resources/script\_templates/Intro/Greeting.py ' %}
 
 We see that an input parameter `name` of type `String` is declared. `@Parameters` are handled automatically by the framework; if we run this script when the User Interface is available (e.g. from the script editor), the `name` parameter will automatically be harvested via a pop-up dialog:
 
@@ -61,7 +61,7 @@ See the respective widget sections for a preview of the styles.
 {% include warning-box content='`float` is also an accepted field but the decimal part is not displayed in the form compared to `Float` (mind the capital F).  
 A related [issue](https://github.com/scijava/scijava-common/issues/302) occurs with `int` and `double` when a default value is set in the code and entered in the form, the value is not properly recalled at the next run. Use `Integer` and `Double` instead.' %} {% include warning-box content='A single `#@ImagePlus` or `#@Dataset` field will not show up in the input form, instead the current image will automatically be processed. The idea is to stick to the IJ macro language. However if 2 `#@ImagePlus` (or respectively `#@Dataset`) are present then they will be rendered as drop-down buttons.' %}
 
-By implementing {% include javadoc project='SciJava' package='org/scijava/widget' class='InputWidget' %} it is possible to extend this list.
+By implementing {% include javadoc project='SciJava ' package='org/scijava/widget ' class='InputWidget ' %} it is possible to extend this list.
 
 ## Examples
 
@@ -141,7 +141,7 @@ This property set if the parameter should be displayed, editable and/or recorded
 
 \- MESSAGE: parameter value is intended as a message only, not editable by the user nor included as an input or output parameter. The option `required` should be set to false.
 
-![ScriptParam\_MESSAGEstring.JPG](/images/pages/ScriptParam_MESSAGEstring.JPG "ScriptParam_MESSAGEstring.JPG")
+![ScriptParam\_MESSAGEstring.JPG](/images/pages/ScriptParam MESSAGEstring.JPG "ScriptParam MESSAGEstring.JPG")
 
 ``` python
 #@ String (visibility=MESSAGE, value="This is a documentation line", required=false) msg

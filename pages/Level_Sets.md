@@ -70,7 +70,7 @@ An upcoming future implementation will add geodesic active contours as described
 
 Open the example image "Dot Blot (7k)" in the menu File, Open Samples
 
-![Dot\_Blot.jpg](/images/pages/Dot_Blot.jpg "Dot_Blot.jpg")
+![Dot\_Blot.jpg](/images/pages/Dot Blot.jpg "Dot Blot.jpg")
 
 Using the "Point selections", select a seed point as a start.
 

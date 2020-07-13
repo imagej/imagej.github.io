@@ -111,37 +111,37 @@ We discussed opportunities to improvement for the Bdv design:
 
 ### SciJava - (Curtis Rueden)
 
-  - Added a minimum Java build version feature to pom-scijava-base ({% include github org='scijava' repo='pom-scijava-base' commit='54bf6664462db3cb538a39986005ac91bded13d5' label='scijava/pom-scijava-base@54bf6664' %}).
-  - Implemented `#@script` directive ({% include github org='scijava' repo='scijava-common' commit='d9dce68bf18b4db0fb812e4685f44fb58d6a988e' label='scijava/scijava-common@d9dce68b' %}, {% include github org='scijava' repo='scijava-common' issue='294' label='scijava/scijava-common\#294' %}).
-  - In response to a question from {% include person content='milkyklim' %}, cleaned up the `PrefService` and fixed related parameter persistence bugs ({% include github org='scijava' repo='scijava-common' commit='195878b7277fff3f350e1e5c457ae395e53bf34e' label='scijava/scijava-common@195878b7' %}).
-  - With {% include person content='haesleinhuepf' %} and {% include person content='frauzufall' %}, developed a `SearchService` API for extensible text-based searches ({% include github org='scijava' repo='scijava-search' label='scijava/scijava-search' %}). Initially supports searching SciJava modules (e.g. commands and scripts) and ImageJ web resources. Also offers a code snippet executer, as suggested by {% include person content='kephale' %}.
-  - In response to a question from {% include person content='rimadoma' %}, fixed a bug with `DynamicCommand` validater method callbacks ({% include github org='scijava' repo='scijava-common' commit='13e4ec325d951cb89b1cba89bcab8889ca25e65f' label='scijava/scijava-common@13e4ec32' %}).
-  - In response to a question from {% include person content='rimadoma' %}, added a short-term workaround for the fact that you cannot execute `DynamicCommand` via `CommandService#run` ({% include github org='scijava' repo='scijava-common' commit='753dd703144371dc715bceb2fd77901e97788002' label='scijava/scijava-common@753dd703' %}).
+  - Added a minimum Java build version feature to pom-scijava-base ({% include github org='scijava ' repo='pom-scijava-base ' commit='54bf6664462db3cb538a39986005ac91bded13d5 ' label='scijava/pom-scijava-base@54bf6664 ' %}).
+  - Implemented `#@script` directive ({% include github org='scijava ' repo='scijava-common ' commit='d9dce68bf18b4db0fb812e4685f44fb58d6a988e ' label='scijava/scijava-common@d9dce68b ' %}, {% include github org='scijava ' repo='scijava-common ' issue='294 ' label='scijava/scijava-common\#294 ' %}).
+  - In response to a question from {% include person content='milkyklim' %}, cleaned up the `PrefService` and fixed related parameter persistence bugs ({% include github org='scijava ' repo='scijava-common ' commit='195878b7277fff3f350e1e5c457ae395e53bf34e ' label='scijava/scijava-common@195878b7 ' %}).
+  - With {% include person content='haesleinhuepf' %} and {% include person content='frauzufall' %}, developed a `SearchService` API for extensible text-based searches ({% include github org='scijava ' repo='scijava-search ' label='scijava/scijava-search ' %}). Initially supports searching SciJava modules (e.g. commands and scripts) and ImageJ web resources. Also offers a code snippet executer, as suggested by {% include person content='kephale' %}.
+  - In response to a question from {% include person content='rimadoma' %}, fixed a bug with `DynamicCommand` validater method callbacks ({% include github org='scijava ' repo='scijava-common ' commit='13e4ec325d951cb89b1cba89bcab8889ca25e65f ' label='scijava/scijava-common@13e4ec32 ' %}).
+  - In response to a question from {% include person content='rimadoma' %}, added a short-term workaround for the fact that you cannot execute `DynamicCommand` via `CommandService#run` ({% include github org='scijava ' repo='scijava-common ' commit='753dd703144371dc715bceb2fd77901e97788002 ' label='scijava/scijava-common@753dd703 ' %}).
 
 ### ImageJ Ops - (Curtis Rueden)
 
-  - Merged {% include person content='gselzer' %}'s improvements to the transform namespace for intervals ({% include github org='imagej' repo='imagej-ops' pr='515' label='imagej/imagej-ops\#515' %}).
-  - Merged {% include person content='xulman' %}'s Gabor and bigauss filters ({% include github org='imagej' repo='imagej-ops' pr='485' label='imagej/imagej-ops\#485' %}).
-  - Merged {% include person content='gselzer' %}'s Frangi vesselness filter ({% include github org='imagej' repo='imagej-ops' pr='525' label='imagej/imagej-ops\#525' %}).
-  - Merged {% include person content='bnorthan' %}'s bug-fix to the IFFT op ({% include github org='imagej' repo='imagej-ops' pr='529' label='imagej/imagej-ops\#529' %}).
-  - Merged {% include person content='bnorthan' %}'s diffraction-based kernel, useful for generating PSFs for deconvolution ({% include github org='imagej' repo='imagej-ops' pr='530' label='imagej/imagej-ops\#530' %}).
-  - Merged {% include person content='kephale' %}'s morphological thinning ops, ported from KNIME ({% include github org='imagej' repo='imagej-ops' pr='317' label='imagej/imagej-ops\#317' %}).
-  - Merged {% include person content='EikeHeinz' %}'s Sobel and Hessian filters ({% include github org='imagej' repo='imagej-ops' pr='349' label='imagej/imagej-ops\#349' %}).
-  - With {% include person content='gab1one' %}, worked on fusion ops for combining RAIs that overlap ({% include github org='imagej' repo='imagej-ops' pr='230' label='imagej/imagej-ops\#230' %}). PR was closed without merge, but a demo of RAI fusion was pushed to my sandbox ({% include github org='ctrueden' repo='sandbox' commit='b551811277bf5898d2bf838abb92959bc3385de6' label='ctrueden/sandbox@b5518112' %}).
-  - In response to a question from {% include person content='milkyklim' %}, pushed an example of using the slice op to iterate an op over planes ({% include github org='ctrueden' repo='sandbox' commit='753dd703144371dc715bceb2fd77901e97788002' label='ctrueden/sandbox@753dd703' %}).
+  - Merged {% include person content='gselzer' %}'s improvements to the transform namespace for intervals ({% include github org='imagej ' repo='imagej-ops ' pr='515 ' label='imagej/imagej-ops\#515 ' %}).
+  - Merged {% include person content='xulman' %}'s Gabor and bigauss filters ({% include github org='imagej ' repo='imagej-ops ' pr='485 ' label='imagej/imagej-ops\#485 ' %}).
+  - Merged {% include person content='gselzer' %}'s Frangi vesselness filter ({% include github org='imagej ' repo='imagej-ops ' pr='525 ' label='imagej/imagej-ops\#525 ' %}).
+  - Merged {% include person content='bnorthan' %}'s bug-fix to the IFFT op ({% include github org='imagej ' repo='imagej-ops ' pr='529 ' label='imagej/imagej-ops\#529 ' %}).
+  - Merged {% include person content='bnorthan' %}'s diffraction-based kernel, useful for generating PSFs for deconvolution ({% include github org='imagej ' repo='imagej-ops ' pr='530 ' label='imagej/imagej-ops\#530 ' %}).
+  - Merged {% include person content='kephale' %}'s morphological thinning ops, ported from KNIME ({% include github org='imagej ' repo='imagej-ops ' pr='317 ' label='imagej/imagej-ops\#317 ' %}).
+  - Merged {% include person content='EikeHeinz' %}'s Sobel and Hessian filters ({% include github org='imagej ' repo='imagej-ops ' pr='349 ' label='imagej/imagej-ops\#349 ' %}).
+  - With {% include person content='gab1one' %}, worked on fusion ops for combining RAIs that overlap ({% include github org='imagej ' repo='imagej-ops ' pr='230 ' label='imagej/imagej-ops\#230 ' %}). PR was closed without merge, but a demo of RAI fusion was pushed to my sandbox ({% include github org='ctrueden ' repo='sandbox ' commit='b551811277bf5898d2bf838abb92959bc3385de6 ' label='ctrueden/sandbox@b5518112 ' %}).
+  - In response to a question from {% include person content='milkyklim' %}, pushed an example of using the slice op to iterate an op over planes ({% include github org='ctrueden ' repo='sandbox ' commit='753dd703144371dc715bceb2fd77901e97788002 ' label='ctrueden/sandbox@753dd703 ' %}).
 
 ### ImageJ Legacy - (Curtis Rueden)
 
-  - In response to a question from {% include person content='milkyklim' %}, fixed bug with parameter visibility ({% include github org='imagej' repo='imagej-legacy' commit='e89ce40e38956488a41e806dc0cb51cc12611341' label='imagej/imagej-legacy@e89ce40e' %}).
+  - In response to a question from {% include person content='milkyklim' %}, fixed bug with parameter visibility ({% include github org='imagej ' repo='imagej-legacy ' commit='e89ce40e38956488a41e806dc0cb51cc12611341 ' label='imagej/imagej-legacy@e89ce40e ' %}).
 
 ### ImageJ Launcher - (Curtis Rueden)
 
-  - Merged {% include person content='stelfrich' %}'s CI configuration for AppVeyor and Travis CI ({% include github org='imagej' repo='imagej-launcher' pr='49' label='imagej/imagej-launcher\#49' %}).
-  - Made minimal changes required for the the Launcher to work with Java 9 ({% include github org='imagej' repo='imagej-launcher' commit='e501d695f571c82148e35afdbc154835801fbf49' label='imagej/imagej-launcher@e501d695' %}).
+  - Merged {% include person content='stelfrich' %}'s CI configuration for AppVeyor and Travis CI ({% include github org='imagej ' repo='imagej-launcher ' pr='49 ' label='imagej/imagej-launcher\#49 ' %}).
+  - Made minimal changes required for the the Launcher to work with Java 9 ({% include github org='imagej ' repo='imagej-launcher ' commit='e501d695f571c82148e35afdbc154835801fbf49 ' label='imagej/imagej-launcher@e501d695 ' %}).
 
 ### Bio-Formats - (Curtis Rueden)
 
-  - In response to a question from {% include person content='tischi' %} and {% include person content='hoerldavid' %}, filed a PR to enable the high-level Bio-Formats API to accept file patterns directly ({% include github org='openmicroscopy' repo='bioformats' pr='3019' label='openmicroscopy/bioformats\#3019' %}).
+  - In response to a question from {% include person content='tischi' %} and {% include person content='hoerldavid' %}, filed a PR to enable the high-level Bio-Formats API to accept file patterns directly ({% include github org='openmicroscopy ' repo='bioformats ' pr='3019 ' label='openmicroscopy/bioformats\#3019 ' %}).
   - Fixed new and existing Java-8 installations of Fiji to work properly with Bio-Formats again ([1](http://forum.imagej.net/t/fiji-and-bioformats-conflicting-jars/5736/9?u=ctrueden)). This entailed creating a script that instructs users of the old Java 6 version of Fiji to please enable the Fiji-Legacy update site, and instructs users of the new Java 8 version of Fiji to please enable the Java-8 update site.
 
 ### ClearControl / ClearVolume / ClearCL (Robert Haase, Loic Royer)
@@ -155,17 +155,17 @@ We discussed opportunities to improvement for the Bdv design:
 
 ### ImgLib2 IJ - (Matthias Arzt)
 
-  - Add a wrapper for IJ1 VirtualStack, based on imglib2-caches to support large virtual stacks. ({% include github org='imglib' repo='imglib2-ij' pr='12' label='imglib/imglib2-ij\#12' %})
-  - Refactored, wrappers for ImagePlus ({% include github org='imglib' repo='imglib2-ij' pr='11' label='imglib/imglib2-ij\#12' %})
+  - Add a wrapper for IJ1 VirtualStack, based on imglib2-caches to support large virtual stacks. ({% include github org='imglib ' repo='imglib2-ij ' pr='12 ' label='imglib/imglib2-ij\#12 ' %})
+  - Refactored, wrappers for ImagePlus ({% include github org='imglib ' repo='imglib2-ij ' pr='11 ' label='imglib/imglib2-ij\#12 ' %})
 
 ### Labkit - (Matthias Arzt)
 
-  - Improved Usability of the Labkit plugin. ({% include github org='maarzt' repo='imglib2-labkit' label='maarzt/imglib2-labkit' %})
+  - Improved Usability of the Labkit plugin. ({% include github org='maarzt ' repo='imglib2-labkit ' label='maarzt/imglib2-labkit ' %})
   - Benchmark of different sparse ROI implementations.
 
 ### ImgLib2 ROIs - (Alison Walter, Tobias Pietzsch, Curtis Rueden)
 
-  - Changes related to: {% include github org='imglib' repo='imglib2-roi' pr='29' label='imglib2/imglib2-roi\#29' %}
+  - Changes related to: {% include github org='imglib ' repo='imglib2-roi ' pr='29 ' label='imglib2/imglib2-roi\#29 ' %}
       - Improved transform operation for ROIs
       - Fixed boundary computation for transformed ROIs
       - Added knownConstant to ROIs for determining if a ROI will always return `false` or `true`
@@ -173,8 +173,8 @@ We discussed opportunities to improvement for the Bdv design:
 
 ### ImageJ-OMERO - (Alison Walter, Josh Moore)
 
-  - Added integration test structure ({% include github org='imagej' repo='imagej-omero' pr='69' label='imagej/imagej-omero\#69' %})
-  - Began adding integration tests ({% include github org='imagej' repo='imagej-omero' pr='70' label='imagej/imagej-omero\#70' %})
+  - Added integration test structure ({% include github org='imagej ' repo='imagej-omero ' pr='69 ' label='imagej/imagej-omero\#69 ' %})
+  - Began adding integration tests ({% include github org='imagej ' repo='imagej-omero ' pr='70 ' label='imagej/imagej-omero\#70 ' %})
   - Discussed ROI support and ROI conversions
 
 ### BigCAT (Philipp Hanslovsky)
@@ -201,7 +201,7 @@ We discussed opportunities to improvement for the Bdv design:
   - Created [scyjava](https://github.com/scijava/scyjava) python wrapper around [pyjnius](https://github.com/kivy/pyjnius) to allow for runtime resolution of jars/classes that are not on the classpath yet.
       - For now: Facilitiate groovy grape, might switch to more generic scijava-grab library later on.
       - Removes fat jar requirement of imglyb and will make it easier to distribute
-      - Currently WIP as jnius.autoclass does not accept custom class loaders as parameter: ({% include github org='kivy' repo='pyjnius' issue='316' label='kivy/pyjnius\#70' %})
+      - Currently WIP as jnius.autoclass does not accept custom class loaders as parameter: ({% include github org='kivy ' repo='pyjnius ' issue='316 ' label='kivy/pyjnius\#70 ' %})
 
 ### Image Sequence Registration Plugin (Christian Tischer)
 

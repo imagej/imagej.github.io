@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='LauLauThom' repo='Fiji-RoiClickTools' %}
+{% include github org='LauLauThom ' repo='Fiji-RoiClickTools ' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='ROI 1-click tools' author=author maintainer=maintainer update-site='ROI 1-click tools' source=source released='2019' status='active' category='[Analysis](:Category:Analysis "wikilink")' %}
+{% include info-box software='ImageJ ' name='ROI 1-click tools ' author=author maintainer=maintainer update-site='ROI 1-click tools ' source=source released='2019 ' status='active ' category='[Analysis](:Category:Analysis "wikilink") ' %}
 
 # New versions
 

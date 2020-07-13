@@ -22,7 +22,7 @@ The launcher is a native executable whose purpose is to start up a Java Virtual 
 
 ## Source
 
-The ImageJ launcher source code lives on {% include github org='imagej' repo='imagej-launcher' label='GitHub' %}.
+The ImageJ launcher source code lives on {% include github org='imagej ' repo='imagej-launcher ' label='GitHub ' %}.
 
 ## Purpose
 

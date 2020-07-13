@@ -8,7 +8,7 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-{% include info-box software='ImageJ' name='RGB Profiler' author='Christophe Laummonerie, Jerome Mutterer' filename=' [RGB\_Profiler.class](https://imagej.net/plugins/download/RGB_Profiler.class) ' source=' [RGB\_Profiler.java](https://imagej.net/plugins/download/RGB_Profiler.java) ' released='2 February 2004' latest-version='2 February 2004' status='first version' category='[Color processing](:Category:Color_processing "wikilink")' website='https://imagej.net/plugins/rgb-profiler.html' %}
+{% include info-box software='ImageJ ' name='RGB Profiler ' author='Christophe Laummonerie, Jerome Mutterer ' filename=' [RGB\_Profiler.class](https://imagej.net/plugins/download/RGB_Profiler.class) ' source=' [RGB\_Profiler.java](https://imagej.net/plugins/download/RGB_Profiler.java) ' released='2 February 2004 ' latest-version='2 February 2004 ' status='first version ' category='[Color processing](:Category:Color_processing "wikilink") ' website='https://imagej.net/plugins/rgb-profiler.html ' %}
 
 ## Purpose
 

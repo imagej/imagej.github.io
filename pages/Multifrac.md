@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='ivangtorre' repo='multifrac' %}
+{% include github org='ivangtorre ' repo='multifrac ' %}
 {% endcapture %}
-{% include info-box software='ImageJ / Fiji plugins' name='Multifrac' update-site='Multifrac' maintainer=' [Ivan G Torre](https://www.ivangtorre.com/) ' author=' [Ivan G Torre](https://www.ivangtorre.com/) ' released='06.05.2020' latest-version='06.05.2020' source=source category='[Plugins](:Category:Plugins "wikilink")' website='http://imagej.net/Multifrac' category='[Analysis](:Category:Analysis "wikilink"), [Citable](:Category:Citable "wikilink"), [Feature Extraction](:Category:Feature_Extraction "wikilink"), [ImageJ2](:Category:ImageJ2 "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink"), [Plugins](:Category:Plugins "wikilink"), [Stacks](:Category:Stacks "wikilink")' %}
+{% include info-box software='ImageJ / Fiji plugins ' name='Multifrac ' update-site='Multifrac ' maintainer=' [Ivan G Torre](https://www.ivangtorre.com/) ' author=' [Ivan G Torre](https://www.ivangtorre.com/) ' released='06.05.2020 ' latest-version='06.05.2020 ' source=source category='[Plugins](:Category:Plugins "wikilink") ' website='http://imagej.net/Multifrac ' category='[Analysis](:Category:Analysis "wikilink"), [Citable](:Category:Citable "wikilink"), [Feature Extraction](:Category:Feature_Extraction "wikilink"), [ImageJ2](:Category:ImageJ2 "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink"), [Plugins](:Category:Plugins "wikilink"), [Stacks](:Category:Stacks "wikilink") ' %}
 
 **Multifrac** is an ImageJ plugin for fractal, multifractal and scaling analysis and characterization of 2D and 3D gray and B\&W stack images. It has been particularly developed for the study of CT-scan images on soil science but it is recommended for complexity analysis in any kind of image.
 

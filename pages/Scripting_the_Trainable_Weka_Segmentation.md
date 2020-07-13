@@ -613,7 +613,7 @@ output.setDisplayRange( 0, numClusters-1 );
 
 This can be a very useful approach to segment images where the elements contain very distinct colors. Let's see an example using a [public image](https://commons.wikimedia.org/wiki/File:Emphysema_H_and_E.jpg) of hematoxylin and eosin (H\&E) stained lung tissue:
 
-![Emphysema\_H\_and\_E.jpg](/images/pages/Emphysema_H_and_E.jpg "Emphysema_H_and_E.jpg")
+![Emphysema\_H\_and\_E.jpg](/images/pages/Emphysema H and E.jpg "Emphysema H and E.jpg")
 
 Once the image is open, we can call the script and a dialog will pop up:
 

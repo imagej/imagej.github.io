@@ -48,7 +48,7 @@ All methods are implemented to work on 3D datasets.
 
 JACoP has been totaly re-written, based on user feedback. The interface has been re-designed to oﬀer full access to all the options, based on a unique Swing frame.
 
-![JACoP v2.0: The new interface](/images/pages/Jacop_interface.jpg "JACoP v2.0: The new interface")
+![JACoP v2.0: The new interface](/images/pages/Jacop interface.jpg "JACoP v2.0: The new interface")
 
 It includes a “Zoom/Reset button” which allows the user to set the two selected images side-by-side, automatically adapting the zoom. For each method selected, the user’s attention is drawn on options to set, by highlighting the appropriate tab by turning its caption to red.
 

@@ -198,7 +198,7 @@ It was written to add track descriptor that would help characterize the track mo
 
 Please note that the feature values listed in this paragraph are only properly defined bor **linear tracks**, that is tracks with no fusion nor split events.
 
-![TrackMate\_track\_features.png](/images/pages/TrackMate_track_features.png "TrackMate_track_features.png")
+![TrackMate\_track\_features.png](/images/pages/TrackMate track features.png "TrackMate track features.png")
 
 #### Total distance traveled.
 
@@ -405,7 +405,7 @@ Each track initiated from a pair of spots is used to create an instance of a Kal
 
 Then, all the predicted positions are linked against the actual spot positions in the frame, using again the Jaqaman LAP framework, with the square distance as costs. The user can set how far can be an actual position from a predicted position for linking with the <b>Search radius</b> setting.
 
-![TrackMate\_KalmanTrackerPrinciple.png](/images/pages/TrackMate_KalmanTrackerPrinciple.png "TrackMate_KalmanTrackerPrinciple.png")
+![TrackMate\_KalmanTrackerPrinciple.png](/images/pages/TrackMate KalmanTrackerPrinciple.png "TrackMate KalmanTrackerPrinciple.png")
 
 Now of course, after linking, some Kalman filters might not get linked to a found spot. This event is called an occlusion: the predicted position did not correspond to an actual measurement (spot). The good thing with Kalman filters is that they are fine with this, and are still able to make a prediction for the next frame even with a missing detection. If the number of successive occlusions is too large, the track is considered terminated. The user can set the maximal number of successive occlusions allowed before a track is terminated with the <b>Max frame gap</b> setting.
 
@@ -415,7 +415,7 @@ It is important to note here that the cost functions we use is the square distan
 
 #### Implementation
 
-The code can be found on {% include github org='fiji' repo='TrackMate' path='/src/main/java/fiji/plugin/trackmate/tracking/kalman/KalmanTracker.java' %}. We now repeat the section above in pseudo-language. When you see the word <b>link</b> below, this means:
+The code can be found on {% include github org='fiji ' repo='TrackMate ' path='/src/main/java/fiji/plugin/trackmate/tracking/kalman/KalmanTracker.java ' %}. We now repeat the section above in pseudo-language. When you see the word <b>link</b> below, this means:
 
 1.  Take all the source detections in frame t and the target detections in frame t+1.
 2.  Compute the costs for all possible physical assignment (potential links) between source and target detections and store them in the cost matrix.

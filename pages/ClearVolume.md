@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='ClearVolume' repo='imglib2-clearvolume' %}
+{% include github org='ClearVolume ' repo='imglib2-clearvolume ' %}
 {% endcapture %}
-{% include info-box name='ClearVolume' logo='![ClearVolumeLogo.png](/images/pages/ClearVolumeLogo.png "ClearVolumeLogo.png")' software='Fiji' author=author maintainer=maintainer source=source status='active' category='[Visualization](:Category:Visualization "wikilink")' website='https://clearvolume.github.io/' %}== Problems and Solutions == We work constantly on improving the Fiji and KNIME plugins. Help us doing so by letting us know if you encounter problems.
+{% include info-box name='ClearVolume ' logo='![ClearVolumeLogo.png](/images/pages/ClearVolumeLogo.png "ClearVolumeLogo.png") ' software='Fiji ' author=author maintainer=maintainer source=source status='active ' category='[Visualization](:Category:Visualization "wikilink") ' website='https://clearvolume.github.io/ ' %}== Problems and Solutions == We work constantly on improving the Fiji and KNIME plugins. Help us doing so by letting us know if you encounter problems.
 
   - **Problem:** on a Linux machine ClearVolume would not start but throw an ugly exception like
       -   
@@ -36,7 +36,7 @@ description: test description
 
 ## What is ClearVolume?
 
-{% include testimonial quote='I checked out ClearVolume. Extremely well-made plugin\! Does exactly what I want :)' person='komodovaran' source='http://forum.imagej.net/t/1907/3' width='30%' float='right' %}ClearVolume is a volume renderer developed at MPI-CBG. Its sources are open and can be cloned [from GitHub](https://github.com/ClearVolume). If you use ClearVolume in your research, please cite it—see reference below.
+{% include testimonial quote='I checked out ClearVolume. Extremely well-made plugin\! Does exactly what I want :) ' person='komodovaran ' source='http://forum.imagej.net/t/1907/3 ' width='30% ' float='right ' %}ClearVolume is a volume renderer developed at MPI-CBG. Its sources are open and can be cloned [from GitHub](https://github.com/ClearVolume). If you use ClearVolume in your research, please cite it—see reference below.
 
 ## Screenshots
 

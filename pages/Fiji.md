@@ -12,7 +12,7 @@ description: test description
 [Fiji](https://fiji.sc/) is an image processing package—a "batteries-included" distribution of [ImageJ](ImageJ "wikilink"), bundling a lot of plugins which facilitate scientific image analysis.
 
   - **[For users](Fiji_Usage "wikilink")** - Fiji is [easy to install](Fiji/Downloads "wikilink") and has an automatic update function, bundles a [lot of plugins](:Category:Plugins "wikilink") and offers comprehensive [documentation](documentation "wikilink").
-  - **[For developers](Developing_Fiji "wikilink")** - Fiji is an open source project hosted in a [Git](Git "wikilink") version control {% include github repo='fiji' label='repository' %}, with access to the source code of all internals, libraries and plugins, and eases the [development](Development "wikilink") and [scripting](Scripting_Help "wikilink") of plugins.
+  - **[For developers](Developing_Fiji "wikilink")** - Fiji is an open source project hosted in a [Git](Git "wikilink") version control {% include github repo='fiji ' label='repository ' %}, with access to the source code of all internals, libraries and plugins, and eases the [development](Development "wikilink") and [scripting](Scripting_Help "wikilink") of plugins.
 
 ## Downloads
 
@@ -25,7 +25,7 @@ Fiji is released as [open source](open_source "wikilink") under the [GNU General
 
 Fiji builds on top of the [ImageJ2](ImageJ2 "wikilink") core, which is licensed under the permissive [BSD 2-Clause license](BSD "wikilink").
 
-Plugins and other components have {% include github repo='fiji' path='LICENSES' label='their own licenses' %}.
+Plugins and other components have {% include github repo='fiji ' path='LICENSES ' label='their own licenses ' %}.
 
 See the [Licensing](Licensing "wikilink") page for details.
 

@@ -10,19 +10,19 @@ description: test description
 
 
 {% capture source%}
-{% include github org='LMCF-IMG' repo='Wavelet\_Denoise' %}
+{% include github org='LMCF-IMG ' repo='Wavelet\_Denoise ' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='Wavelet\_Denoise' author=' [Martin Čapek](https://imagej.net/User:LMCF-IMG) ' maintainer='Martin Čapek' source=source released='04/09/2020' latest-version='05/21/2020' %}
+{% include info-box software='ImageJ/Fiji ' name='Wavelet\_Denoise ' author=' [Martin Čapek](https://imagej.net/User:LMCF-IMG) ' maintainer='Martin Čapek ' source=source released='04/09/2020 ' latest-version='05/21/2020 ' %}
 
 ## Plugin for wavelet-based denoising/filtering image data
 
-![Wavelet\_Denoise\_Pics\_ImageJ\_SyncWins.jpg](/images/pages/Wavelet_Denoise_Pics_ImageJ_SyncWins.jpg "Wavelet_Denoise_Pics_ImageJ_SyncWins.jpg")
+![Wavelet\_Denoise\_Pics\_ImageJ\_SyncWins.jpg](/images/pages/Wavelet Denoise Pics ImageJ SyncWins.jpg "Wavelet Denoise Pics ImageJ SyncWins.jpg")
 
 When starting the plugin, pictures and <i>Sync Wins</i> dialog appear, like in the picture above, together with the plugin dialog. The first picture is the input image, the second one is the filtered picture (“Filtered-” prefix), the third one contains the wavelet coefficients (“WT-“ prefix), that are converted to 8-bit and are intensity scaled for good visualization, the fourth picture (“WT-NoStretch-” prefix) contains float values of the wavelet coefficients without intensity scaling. The third and fourth pictures appear only after checking corresponding boxes in the main dialog. <i>Applying Synchronize All</i> in the <i>Sync Wins</i> dialog is helpful when navigating through image stacks.
 
 We should mention here that sizes of input image matrices must be of power of 2, common sizes are: 64, 128, 256, 512, 1024, 2048 etc., otherwise the plugin will not start and a warning message appears again. This is due to the proper computation of levels of wavelet decomposition of images, see below.
 
-![Wavelet\_Denoise\_dialog.jpg](/images/pages/Wavelet_Denoise_dialog.jpg "Wavelet_Denoise_dialog.jpg")
+![Wavelet\_Denoise\_dialog.jpg](/images/pages/Wavelet Denoise dialog.jpg "Wavelet Denoise dialog.jpg")
 
 ## Description of functionality of items in the plugin window
 

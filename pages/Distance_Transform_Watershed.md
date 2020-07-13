@@ -18,15 +18,19 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='ijpb' repo='ijpb-plugins' %}
+{% include github org='ijpb ' repo='ijpb-plugins ' %}
 {% endcapture %}
-{% include info-box name='Distance Transform Watershed (2D and 3D)' software='IJPB-plugins' author=author maintainer=maintainer source=source released='August 25<sup>th</sup>, 2016' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1)' status='stable, active' category='[Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink")' %}
+{% include info-box name='Distance Transform Watershed (2D and 3D) ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='August 25<sup>th</sup>, 2016 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink") ' %}
 
 ## Introduction
 
 A classic way of separating touching objects in binary images makes use of the distance transform and the watershed method. The idea is to create a border as far as possible from the center of the overlapping objects. This strategy works very well on rounded objects and it is called Distance Transform Watershed. It consists on calculating the distance transform of the binary image, inverting it (so the darkest parts of the image are the centers of the objects) and then applying watershed on it using the original image as mask (see figure below). In our implementation, we include an option to use watershed with extended minima so the user can control the number of object splits and merges.
 
-![**Basics of the Distance Transform Watershed algorithm**. From left to right: sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope, binary mask calculated after filtering and thresholding input image, inverse of the distance transform applied to the binary mask (Chamfer distance map using normalized Chessknight weights and 32-bit output) and resulting labeled image after applying watershed to the inverse distance image using the binary mask (dynamic of 1 and 4-connectivity).](/images/pages/MorphoLibJ-distance-transform-watershed-basics.png "Basics of the Distance Transform Watershed algorithm. From left to right: sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope, binary mask calculated after filtering and thresholding input image, inverse of the distance transform applied to the binary mask (Chamfer distance map using normalized Chessknight weights and 32-bit output) and resulting labeled image after applying watershed to the inverse distance image using the binary mask (dynamic of 1 and 4-connectivity).")
+
+{% capture title%}
+ **Basics of the Distance Transform Watershed algorithm**. From left to right: sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope, binary mask calculated after filtering and thresholding input image, inverse of the distance transform applied to the binary mask (Chamfer distance map using normalized Chessknight weights and 32-bit output) and resulting labeled image after applying watershed to the inverse distance image using the binary mask (dynamic of 1 and 4-connectivity). 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-distance-transform-watershed-basics.png" title=title %}
 
 [MorphoLibJ](MorphoLibJ "wikilink") provides two plugins under the {% include bc content='Plugins | MorphoLibJ | Binary Images...'%} menu to apply this strategy on 2D and 3D images:
 

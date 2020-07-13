@@ -443,11 +443,11 @@ Link to a video demo: https://youtu.be/YZsSWBxcdDM><span style="color:#ce181e;">
 
 Download and install the latest FIJI available for your OS (from https://fiji.sc/). Launch FIJI.
 
-![images37.png](/images/pages/images37.png "images37.png")
+![images37.png](/images/pages/Images37.png "images37.png")
 
 Press “Help \> Update...”
 
-![images38.png](/images/pages/images38.png "images38.png")
+![images38.png](/images/pages/Images38.png "images38.png")
 
 Press “Manage update sites”
 
@@ -461,7 +461,7 @@ locate EZFig and select it. Alternatively press "Add update site" (or just “Ad
 
 Fiji offers to install EZFig. Press "Apply Changes".
 
-![images42.png](/images/pages/images42.png "images42.png")
+![images42.png](/images/pages/Images42.png "images42.png")
 
 Press "Ok" and <span style="color:#ff0000;">close</span><span style="color:#ff0000;"> FIJI</span><span style="color:#000000;"> </span><span style="color:#000000;">(this is very important)</span>
 
@@ -499,37 +499,37 @@ Nb : please note that the content of the "<span style="color:#0000ff;">availabl
 
 **zoom in**
 
-![images30.png](/images/pages/images30.png "images30.png")
+![images30.png](/images/pages/Images30.png "images30.png")
 
 press this button to zoom in.
 
 **zoom out**
 
-![images31.png](/images/pages/images31.png "images31.png")
+![images31.png](/images/pages/Images31.png "images31.png")
 
 press this button to zoom out.
 
 **best fit**
 
-![images32.png](/images/pages/images32.png "images32.png")
+![images32.png](/images/pages/Images32.png "images32.png")
 
 press this button to fit the figure in width and in height to the field of view.
 
 **best fit width or height**
 
-![images33.png](/images/pages/images33.png "images33.png")
+![images33.png](/images/pages/Images33.png "images33.png")
 
 press this button to fit the figure in width to the field of view.
 
-![images35.png](/images/pages/images35.png "images35.png")
+![images35.png](/images/pages/Images35.png "images35.png")
 
-![images34.png](/images/pages/images34.png "images34.png")
+![images34.png](/images/pages/Images34.png "images34.png")
 
 press again the same button to fit height. Note that the green rectangle indicates page size for the selected journal.
 
 **reset zoom**
 
-![images36.png](/images/pages/images36.png "images36.png")
+![images36.png](/images/pages/Images36.png "images36.png")
 
 press this button to restore default magnification
 
@@ -539,35 +539,35 @@ The easiest way to import files in EZFig is to use <span style="color:#ff0000;">
 
 ## 3.1) Importing files : Drag and drop
 
-![images1.png](/images/pages/images1.png "images1.png")
+![images1.png](/images/pages/Images1.png "images1.png")
 
 To load image(s) with EZFig, you can select images in a folder then drag and drop them anywhere onto the EZFig user interface.
 
-![images2.png](/images/pages/images2.png "images2.png")
+![images2.png](/images/pages/Images2.png "images2.png")
 
 Dropped images are added as a single row by default (organisation can be changed later on).
 
 ## 3.2) Importing files via the EZFig menu
 
-![images4.png](/images/pages/images4.png "images4.png")
+![images4.png](/images/pages/Images4.png "images4.png")
 
 Press "File \> Import images"
 
-![images3.png](/images/pages/images3.png "images3.png")
+![images3.png](/images/pages/Images3.png "images3.png")
 
 A dialog opens to select files. Supported formats are : jpg, tif, png, bmp, tga, lsm, svg, figur, gif.
 
 ## 3.3) Importing files from ImageJ/FIJI
 
-![images6.png](/images/pages/images6.png "images6.png")
+![images6.png](/images/pages/Images6.png "images6.png")
 
 Open an image or a stack in ImageJ (here I opened the ImageJ sample image 'blobs.gif')
 
-![images5.png](/images/pages/images5.png "images5.png")
+![images5.png](/images/pages/Images5.png "images5.png")
 
 Select "import single image from ImageJ" if you want to import the currently displayed image. Alternatively select "import stack from ImageJ", if you want to be able to activate/deactivate channels, change channel color, or browse slices or frames of the image.
 
-![images7.png](/images/pages/images7.png "images7.png")
+![images7.png](/images/pages/Images7.png "images7.png")
 
 The image has been successfully imported in EZFig.
 
@@ -579,13 +579,13 @@ EZFig has its own native format (.ezf). <span style="color:#ff0000;">It is very 
 
 The simplest way to load an ezf or a yf5m file is to drag and drop it onto EZFig.
 
-![images60.png](/images/pages/images60.png "images60.png")
+![images60.png](/images/pages/Images60.png "images60.png")
 
 Alternatively, press “File \> Open”
 
 ## 4.2) Save .ezf files
 
-![images61.png](/images/pages/images61.png "images61.png")
+![images61.png](/images/pages/Images61.png "images61.png")
 
 Press “File \> Save as...” to save an “ezf” file. Note that if the figure contains stacks, they will be saved in a folder with the same name as the “ezf” file with an extra .files. <span style="color:#ff0000;">Please always store the .ezf and the .ezf.files folder together, otherwise stack data will be lost</span>. Nb: You can use the Ctrl/Cmd + S shortcut to save.
 
@@ -677,19 +677,19 @@ Selection can be reset anytime by clicking outside of the figure/images
 
 </div>
 
-![images56.png](/images/pages/images56.png "images56.png")
+![images56.png](/images/pages/Images56.png "images56.png")
 
 Clicking the upper right image selects the whole “Figure”, the highest level container in EZFig (note the yellow color of the selection and the "Figure" keyword drawn in the center of the figure object)
 
-![images57.png](/images/pages/images57.png "images57.png")
+![images57.png](/images/pages/Images57.png "images57.png")
 
 Clicking the upper right image again selects a "Row", a lower level container in EZFig. (Note the cyan color of the selection and the "Row" keyword drawn in the center of the “row” object).
 
-![images58.png](/images/pages/images58.png "images58.png")
+![images58.png](/images/pages/Images58.png "images58.png")
 
 Clicking the upper right image again selects a "Panel/Montage", yet another lower level container. (Note the magenta color of the selection and the "Panel" keyword drawn in the center of the Panel object).
 
-![images59.png](/images/pages/images59.png "images59.png")
+![images59.png](/images/pages/Images59.png "images59.png")
 
 Clicking the upper right image again finally selects the image, the lowest level object in the figure hierachy. (Note the red color of the selection and the "Img" keyword drawn in the center of the “image” object).
 
@@ -833,7 +833,7 @@ The content of the right side of the EZFig will change dynamically according to 
 
 ### 8.1.1) "Size" tab
 
-![images10.png](/images/pages/images10.png "images10.png")
+![images10.png](/images/pages/Images10.png "images10.png")
 
 **Width (px)** : sets the size of the selected figure(s) in pixels
 
@@ -845,7 +845,7 @@ The content of the right side of the EZFig will change dynamically according to 
 
 ### 8.1.2) "Labels" tab
 
-![images43.png](/images/pages/images43.png "images43.png")
+![images43.png](/images/pages/Images43.png "images43.png")
 
 **1<sup>st</sup> letter** : put the first letter of the selected figure here and hit "Enter" on your keyboard or press the "Update letters" to get your figure letters incremented automatically. Tip : if you put a space instead of a letter then letters from the selected Figure will be removed.
 
@@ -853,7 +853,7 @@ The content of the right side of the EZFig will change dynamically according to 
 
 ### 8.1.3) "Layout" tab (only available in free mode)
 
-![images48.png](/images/pages/images48.png "images48.png")
+![images48.png](/images/pages/Images48.png "images48.png")
 
 **Pack/Stack **: select several figures and press this button to pack these figures close to each other.
 
@@ -865,7 +865,7 @@ The content of the right side of the EZFig will change dynamically according to 
 
 ### 8.1.4) "Misc" tab
 
-![images44.png](/images/pages/images44.png "images44.png")
+![images44.png](/images/pages/Images44.png "images44.png")
 
 **Create a Figure or a Row with an empty image **: creates a Figure that just contains an empty image. You may use this empty image to draw arrows to logically connect independent figure objects.
 
@@ -873,7 +873,7 @@ The content of the right side of the EZFig will change dynamically according to 
 
 ### .2.1) "Size" tab
 
-![images45.png](/images/pages/images45.png "images45.png")
+![images45.png](/images/pages/Images45.png "images45.png")
 
 **Width (px)** : sets the size of the selected row(s) in pixels
 
@@ -885,9 +885,9 @@ The content of the right side of the EZFig will change dynamically according to 
 
 ### 8.2.2) "Labels" tab
 
-![images46.png](/images/pages/images46.png "images46.png")
+![images46.png](/images/pages/Images46.png "images46.png")
 
-![images47.png](/images/pages/images47.png "images47.png")
+![images47.png](/images/pages/Images47.png "images47.png")
 
 Below are the row specific labels.
 
@@ -905,7 +905,7 @@ Below are the row specific labels.
 
 ### 8.3.1) "Layout" tab
 
-![images54.png](/images/pages/images54.png "images54.png")
+![images54.png](/images/pages/Images54.png "images54.png")
 
 **Number Of Rows** : sets the number of rows of the panel (a panel is a 2D table of images).
 
@@ -919,7 +919,7 @@ NB : if **Number Of Rows \* Number of Columns \< Number of Images contained in 
 
 ### 8.3.2) "AutoCrops" tab
 
-![images55.png](/images/pages/images55.png "images55.png")
+![images55.png](/images/pages/Images55.png "images55.png")
 
 Since **panels** are containers that **“*should”*** contain only images of the **same size** (or same **aspect ratio**) and that might not always be the case, "**AutoCrops**" contains tools to automatically crop images so that they end up having the same size or the same aspect ratio.
 
@@ -937,7 +937,7 @@ Since **panels** are containers that **“*should”*** contain only images of t
 
 ### 8.4.1) "Labels" tab
 
-![images49.png](/images/pages/images49.png "images49.png")
+![images49.png](/images/pages/Images49.png "images49.png")
 
 **+ text, scalebar, inset** : Use this to annotate an image, e.g. add letter or text at predefined positions on the image, add scale bars, add/remove insets, set inset size, add comments to the image. (See also the “Annotating images” section).
 
@@ -947,7 +947,7 @@ Since **panels** are containers that **“*should”*** contain only images of t
 
 ### 8.4.2) "Crop" tab
 
-![images50.png](/images/pages/images50.png "images50.png")
+![images50.png](/images/pages/Images50.png "images50.png")
 
 **Left** : defines by which amount the image must be cropped from the left
 
@@ -971,7 +971,7 @@ NB: Crops can be used to change image size or aspect ratio, to fit images in pan
 
 ### 8.4.3) "Orientation/Rotation" tab
 
-![images51.png](/images/pages/images51.png "images51.png")
+![images51.png](/images/pages/Images51.png "images51.png")
 
 **Rotate (°)** : Rotate selected images by some user defined number of degrees (a rotated image is displayed interpolated for all rotation except 0°)
 
@@ -983,7 +983,7 @@ NB: Crops can be used to change image size or aspect ratio, to fit images in pan
 
 ### 8.4.4) "Stack/Video" tab
 
-![images52.png](/images/pages/images52.png "images52.png")
+![images52.png](/images/pages/Images52.png "images52.png")
 
 The "Stack/Video" tab is only enabled if the selected image is an ImagePlus or an ImagePlus stack (see the “Imports” section).
 
@@ -1007,21 +1007,21 @@ The "Stack/Video" tab is only enabled if the selected image is an ImagePlus or a
 
 ### 8.4.5) "Misc" tab
 
-![images53.png](/images/pages/images53.png "images53.png")
+![images53.png](/images/pages/Images53.png "images53.png")
 
 **Make The Selected Image Color Blind Friendly/Split Channels** : splits the image to individual gray channels or to pairwise (magenta/green) combinations of channels. This is useful to make the figure colour blind friendly.
 
-![images66.png](/images/pages/images66.png "images66.png")
+![images66.png](/images/pages/Images66.png "images66.png")
 
 Select an image (left arrow). Select the “Misc” tab. Press “Split channels”.
 
-![images67.png](/images/pages/images67.png "images67.png")
+![images67.png](/images/pages/Images67.png "images67.png")
 
 Select “Single gray channels and merge” to split image into gray channels and merge. Or press “Magenta green combinations and merge” to get pairwaise (magenta/green) combinations of channels and merge (Select the image and press the “Del” or “Suppr” keyboard keys to remove unwanted combinations). See below for the result of the two types of outputs.
 
-![images68.png](/images/pages/images68.png "images68.png")
+![images68.png](/images/pages/Images68.png "images68.png")
 
-![images69.png](/images/pages/images69.png "images69.png")
+![images69.png](/images/pages/Images69.png "images69.png")
 
 # 9\) Figure layout
 
@@ -1119,19 +1119,19 @@ Also a crop corresponding to the biggest rectangle is added as a new row (arrow)
 
 ## 10.4) Add labels outside images/rows
 
-![images62.png](/images/pages/images62.png "images62.png")
+![images62.png](/images/pages/Images62.png "images62.png")
 
 Select a row, the selection should be surrounded by a cyan rectangle (left arrow) (see also the “Selections” section). Then select the “Labels” tab (right arrow).
 
-![images63.png](/images/pages/images63.png "images63.png")
+![images63.png](/images/pages/Images63.png "images63.png")
 
 Press “+ text labels above images” (right most arrow). Select “1” for begin and end (middle arrows). This means the label will be over the first image of the row only. Type in your text (bottom arrow).
 
-![images64.png](/images/pages/images64.png "images64.png")
+![images64.png](/images/pages/Images64.png "images64.png")
 
 Press “Add” (bottom arrow). Set begin to “2” and end to “3” (upper arrows), this means the label will span over the second and third images in the row. Type in your text (middle arrow).
 
-![images65.png](/images/pages/images65.png "images65.png")
+![images65.png](/images/pages/Images65.png "images65.png")
 
 Labels have been added above images. Labels can also be added left, right and below rows.
 
@@ -1331,17 +1331,17 @@ Note that removed insets are not deleted, they are added to the "Keep For Later"
 
 ## 15.1) Select a journal style
 
-![images8.png](/images/pages/images8.png "images8.png")
+![images8.png](/images/pages/Images8.png "images8.png")
 
 Before performing an editorial check you must always select a journal style first (arrow)
 
-![images9.png](/images/pages/images9.png "images9.png")
+![images9.png](/images/pages/Images9.png "images9.png")
 
 If the journal you look for is not available you can create your own journal style (See after).
 
 ## 15.2) Create a new journal style
 
-![images11.png](/images/pages/images11.png "images11.png")
+![images11.png](/images/pages/Images11.png "images11.png")
 
 Press "Journals \> Create new Journal"
 
@@ -1355,19 +1355,19 @@ When submitting a manuscript to a journal one needs to obey several editorial gu
 
 ## 16.1) Check Size
 
-![images14.png](/images/pages/images14.png "images14.png")
+![images14.png](/images/pages/Images14.png "images14.png")
 
 Select a journal style
 
-![images15.png](/images/pages/images15.png "images15.png")
+![images15.png](/images/pages/Images15.png "images15.png")
 
 To check image size, i.e. that the created figure fits the journal style guidelines, press “Checks \> Size".
 
-![images12.png](/images/pages/images12.png "images12.png")
+![images12.png](/images/pages/Images12.png "images12.png")
 
 A dialog pops and offers to change the size of the image to the closest available column journal size, feel free to accept or reject the offered solution.
 
-![images13.png](/images/pages/images13.png "images13.png")
+![images13.png](/images/pages/Images13.png "images13.png")
 
 Upon acceptance, the image is resized (in that case the image has been resized to two journal columns as indicated by the alignment of the figure with the green rectangle on the drawing panel).
 
@@ -1377,7 +1377,7 @@ Most journal have stylistic guidelines, for example the text should not be colou
 
 Select a journal style
 
-![images16.png](/images/pages/images16.png "images16.png")
+![images16.png](/images/pages/Images16.png "images16.png")
 
 Press "Checks \> Style".
 
@@ -1389,19 +1389,19 @@ The dialog shows the problematic image styles and offers a solution. Here, it of
 
 Most journals ask to use a specific font and font size for the text, lettering and text annotations. To check figure for Fonts :
 
-![images17.png](/images/pages/images17.png "images17.png")
+![images17.png](/images/pages/Images17.png "images17.png")
 
 Select a journal style
 
-![images20.png](/images/pages/images20.png "images20.png")
+![images20.png](/images/pages/Images20.png "images20.png")
 
 Select "Fonts" in the “Checks” menu
 
-![images18.png](/images/pages/images18.png "images18.png")
+![images18.png](/images/pages/Images18.png "images18.png")
 
 if the fonts do not respect journal guidelines, you will be offered to replace fonts. Feel free to accept or reject the offer.
 
-![images19.png](/images/pages/images19.png "images19.png")
+![images19.png](/images/pages/Images19.png "images19.png")
 
 Upon acceptance, all fonts will be changed and EZFig will take care of the text layout for you.
 
@@ -1409,19 +1409,19 @@ Upon acceptance, all fonts will be changed and EZFig will take care of the text 
 
 Most journals ask to have specific line width for ROIs and figire line arts, to check figure line arts :
 
-![images21.png](/images/pages/images21.png "images21.png")
+![images21.png](/images/pages/Images21.png "images21.png")
 
 Select a journal style
 
-![images23.png](/images/pages/images23.png "images23.png")
+![images23.png](/images/pages/Images23.png "images23.png")
 
 Select "Line arts" in the “Checks” menu.
 
-![images22.png](/images/pages/images22.png "images22.png")
+![images22.png](/images/pages/Images22.png "images22.png")
 
 If line arts are not in conformity with the journal guidelines you will be offered a replacement solution. Feel free to accept it or not.
 
-![images24.png](/images/pages/images24.png "images24.png")
+![images24.png](/images/pages/Images24.png "images24.png")
 
 Upon acceptance, line arts width is changed.
 
@@ -1429,11 +1429,11 @@ Upon acceptance, line arts width is changed.
 
 Journals have naming conventions text, for example they dictate how to write speed units should be written, … To check the figure text :
 
-![images25.png](/images/pages/images25.png "images25.png")
+![images25.png](/images/pages/Images25.png "images25.png")
 
 Select a journal style then press "Checks \> Text"
 
-![images26.png](/images/pages/images26.png "images26.png")
+![images26.png](/images/pages/Images26.png "images26.png")
 
 If the text did not pass the test, a solution will be offered. Feel free to accept it or reject it. Please pay attention to the offered solutions as text checks are irreversible, are programmatically hard to implement and thereby require careful human inspection.
 
@@ -1441,15 +1441,15 @@ If the text did not pass the test, a solution will be offered. Feel free to acce
 
 Most journals have guideline regarding graphs (for example regarding units, background colours, ...). To check graphs (<span style="color:#ce181e;">please note that EZFig can only check graphs generated with FiguR, a tool included in the EZFig package</span>) :
 
-![images27.png](/images/pages/images27.png "images27.png")
+![images27.png](/images/pages/Images27.png "images27.png")
 
 Select a journal style (left arrow) and ensure that EZFig is connected to R (green button, right arrow)
 
-![images28.png](/images/pages/images28.png "images28.png")
+![images28.png](/images/pages/Images28.png "images28.png")
 
 Press "Checks \> Graphs"
 
-![images29.png](/images/pages/images29.png "images29.png")
+![images29.png](/images/pages/Images29.png "images29.png")
 
 Read the comments regarding your graph, perform changes or ignore suggestions if you think they are not appropriate. If you accept the solution your graphs will be changed (most changes are irreversible).
 

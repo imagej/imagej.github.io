@@ -16,7 +16,7 @@ Nivetha Govindaraju, {% include person content='M farna' %}
 {% capture maintainer%}
 {% include person content='M farna' %} (<mai.elfarnawany@gmail.com>)
 {% endcapture %}
-{% include info-box name='Vessel Analysis' software='Fiji' author=author maintainer=maintainer filename=' [Vessel Analysis.zip](https://imagej.net/File:Vessel_Analysis.zip) ' released='June 14<sup>th</sup>, 2016' latest-version='1.1' status='stable' category='[Plugins](:Category:Plugins "wikilink"), [Analysis](:Category:Analysis "wikilink")' %}
+{% include info-box name='Vessel Analysis ' software='Fiji ' author=author maintainer=maintainer filename=' [Vessel Analysis.zip](https://imagej.net/File:Vessel_Analysis.zip) ' released='June 14<sup>th</sup>, 2016 ' latest-version='1.1 ' status='stable ' category='[Plugins](:Category:Plugins "wikilink"), [Analysis](:Category:Analysis "wikilink") ' %}
 
 ## **Description:**
 
@@ -52,7 +52,7 @@ As the image is processed, new images will be generated and automatically saved 
 
 You will now be prompted to perform either vascular density or diameter measurements. At the end of each individual program, you can choose to analyze the other metric as well.
 
-![Vessel\_Analysis\_RGB.png](/images/pages/Vessel_Analysis_RGB.png "Vessel_Analysis_RGB.png") ![Vessel\_Analysis\_Binary.png](/images/pages/Vessel_Analysis_Binary.png "Vessel_Analysis_Binary.png") ![Vessel\_Analysis\_DiameterM.png](/images/pages/Vessel_Analysis_DiameterM.png "Vessel_Analysis_DiameterM.png")
+![Vessel\_Analysis\_RGB.png](/images/pages/Vessel Analysis RGB.png "Vessel Analysis RGB.png") ![Vessel\_Analysis\_Binary.png](/images/pages/Vessel Analysis Binary.png "Vessel Analysis Binary.png") ![Vessel\_Analysis\_DiameterM.png](/images/pages/Vessel Analysis DiameterM.png "Vessel Analysis DiameterM.png")
 
 ## **Recommended Citation:**
 

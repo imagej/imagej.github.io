@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='ijpb' repo='ijpb-plugins' %}
+{% include github org='ijpb ' repo='ijpb-plugins ' %}
 {% endcapture %}
-{% include info-box name='Interactive Marker-controlled Watershed' software='IJPB-plugins' author=author maintainer=maintainer source=source released='September 9<sup>th</sup>, 2017' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1)' status='stable, active' category='[Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink")' %}
+{% include info-box name='Interactive Marker-controlled Watershed ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='September 9<sup>th</sup>, 2017 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink") ' %}
 
 ## Introduction
 
@@ -36,7 +36,11 @@ The user can pan, zoom in and out, or scroll between slices (if the input image 
 
 In this plugin the markers are introduced interactively by the user using any of the selection tools. By default, the point selection tool will be enabled in the main ImageJ toolbar. To select markers on different slices, one option is to use the point selection tool and keep the SHIFT key pressed each time you click to set a new marker. Another possibility is to use the ROI Manager. In that case, all selected ROIs in the manager will be used as markers
 
-![Examples of ROIs used as markers by the plugin.](/images/pages/Interactive-Marker-controlled-Watershed-markers.png "Examples of ROIs used as markers by the plugin.")
+
+{% capture title%}
+ Examples of ROIs used as markers by the plugin. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Interactive-Marker-controlled-Watershed-markers.png" title=title %}
 
 ### Watershed Segmentation panel
 
@@ -59,7 +63,11 @@ In this plugin the markers are introduced interactively by the user using any of
   - **Show result overlay**: toggle result overlay.
   - **Create image button**: create a new image with the results displayed in the canvas.
 
-![Examples of the 4 different display options.](/images/pages/Morphological-segmentation-result-examples.png "Examples of the 4 different display options.")
+
+{% capture title%}
+ Examples of the 4 different display options. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Morphological-segmentation-result-examples.png" title=title %}
 
 ### Post-processing panel
 

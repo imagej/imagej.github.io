@@ -14,7 +14,7 @@ In early September, the [LOCI](LOCI "wikilink") team in Madison, WI hosted the [
 
 Today we are pleased to announce that the presentation recordings have been posted:
 
-{% include big-link link='Presentations' %}
+{% include big-link link='Presentations ' %}
 
 Many thanks to all the presenters—the conference was a huge success because of your efforts\!
 

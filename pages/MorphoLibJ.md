@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='ijpb' repo='MorphoLibJ' %}
+{% include github org='ijpb ' repo='MorphoLibJ ' %}
 {% endcapture %}
-{% include info-box name='MorphoLibJ' software='IJPB-plugins' update-site='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1)' status='stable, active' category='[Analysis](:Category:Analysis "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink")' %}MorphoLibJ is a collection of [mathematical morphology](wikipedia:Mathematical_morphology "wikilink") methods and **plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital Imaging lab](http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/).
+{% include info-box name='MorphoLibJ ' software='IJPB-plugins ' update-site='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Analysis](:Category:Analysis "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink") ' %}MorphoLibJ is a collection of [mathematical morphology](wikipedia:Mathematical_morphology "wikilink") methods and **plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital Imaging lab](http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/).
 
 The library implements several functionalities that were missing in ImageJ, and that were not or only partially covered by other plugins. Namely:
 
@@ -50,9 +50,13 @@ Morphological filters are defined according to a **structuring element** of a gi
 
 ### Principles
 
-The original idea was to define a methodology to describe shapes by using another shape as test probe (Serra, 1982\[1\]{% include cite content='journal' title='An overview of morphological filtering' author='Serra, Jean and Vincent, Luc' journal='Circuits, Systems and Signal Processing' volume='11' number='1' pages='47-108' year='1992' publisher='Springer' doi='10.1007/BF01189221' %}</ref>). The most basic morphological filters are the **morphological dilation** and the **morphological erosion**. The principle of morphological dilation is to test for each point of the plane, if the structuring element centered on this point **intersects** the structure of interest (see figure below). It results in a set larger than the original set. The principle of morphological erosion is to test for each point of the plane if the structuring element centred on this point **is contained** within the original set. It results in a set smaller than original set.
+The original idea was to define a methodology to describe shapes by using another shape as test probe (Serra, 1982\[1\]{% include cite content='journal' title='An overview of morphological filtering ' author='Serra, Jean and Vincent, Luc ' journal='Circuits, Systems and Signal Processing ' volume='11 ' number='1 ' pages='47-108 ' year='1992 ' publisher='Springer ' doi='10.1007/BF01189221 ' %}</ref>). The most basic morphological filters are the **morphological dilation** and the **morphological erosion**. The principle of morphological dilation is to test for each point of the plane, if the structuring element centered on this point **intersects** the structure of interest (see figure below). It results in a set larger than the original set. The principle of morphological erosion is to test for each point of the plane if the structuring element centred on this point **is contained** within the original set. It results in a set smaller than original set.
 
-![Principle of morphological dilation and erosion on a binary set, using a disk-shaped structuring element.](/images/pages/Principle-of-morphological-dilation-and-erosion.png "Principle of morphological dilation and erosion on a binary set, using a disk-shaped structuring element.")
+
+{% capture title%}
+ Principle of morphological dilation and erosion on a binary set, using a disk-shaped structuring element. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Principle-of-morphological-dilation-and-erosion.png" title=title %}
 
 Morphological dilation and erosion change the size and the resulting set. It may also change its topology: after a dilation, components may merge and holes be filled. After an erosion, components may disappear, or components be separated into several parts.
 
@@ -60,7 +64,11 @@ Morphological dilation and erosion change the size and the resulting set. It may
 
 #### Grayscale erosion and dilation
 
-Morphological erosion and dilation may also be applied on grayscale images. In that case, the morphological dilation computes for each pixel the maximum within its neighborhood (defined by the structuring element), whereas the morphological erosion considers the minimum value within the neighborhood. ![Some examples of morphological filters on a grey level image. From left to right: original image, result of dilation with a square structuring element, and result of erosion with the same structuring element.](/images/pages/MorphoLibJ-grains-dilation-erosion.png "Some examples of morphological filters on a grey level image. From left to right: original image, result of dilation with a square structuring element, and result of erosion with the same structuring element.") Applying a dilation or an erosion changes the size of the structures in the image: the grains in the result of the dilated image are larger. Morphological erosion can also be used on binary images to help separating touching particles.
+Morphological erosion and dilation may also be applied on grayscale images. In that case, the morphological dilation computes for each pixel the maximum within its neighborhood (defined by the structuring element), whereas the morphological erosion considers the minimum value within the neighborhood. 
+{% capture title%}
+ Some examples of morphological filters on a grey level image. From left to right: original image, result of dilation with a square structuring element, and result of erosion with the same structuring element. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-grains-dilation-erosion.png" title=title %} Applying a dilation or an erosion changes the size of the structures in the image: the grains in the result of the dilated image are larger. Morphological erosion can also be used on binary images to help separating touching particles.
 
 #### Opening and closing
 
@@ -68,7 +76,11 @@ Morphological dilation and erosion are often used in combination. For example, t
 
 In a symmetric way, the result of an erosion followed by a dilation is called a **morphological opening**, and removes bright structures smaller than the structuring element.
 
-![Some examples of composed morphological filters. From left to right: morphological closing, and morphological opening.](/images/pages/MorphoLibJ-grains-closing-opening.png "Some examples of composed morphological filters. From left to right: morphological closing, and morphological opening.")
+
+{% capture title%}
+ Some examples of composed morphological filters. From left to right: morphological closing, and morphological opening. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-grains-closing-opening.png" title=title %}
 
 Note that even if opening and closing better preserve the size of the structures in the original image, the shape is slightly altered. For example, the result of morphological closing on the figure above creates artificial connections between grains. Choosing the best size for the structuring element is often a compromise between noise removal and preservation of structure shape.
 
@@ -78,17 +90,29 @@ More complicated combinations of elementary operations can be used. The **morpho
 
 #### Top-hats
 
-The **white top-hat** first computes a morphological opening (resulting in removing bright structures smaller than structuring elements), and removes the result from the original image. When applied with a large structuring element, the result is an homogenization of the background, making bright structures easier to segment. Similarly, the **dark top-hat** can be used to enhance dark structures observed on an non-homogeneous background. ![More examples of composed morphological filters. From left to right: morphological gradient, morphological Laplacian, morphological white top-hat.](/images/pages/MorphoLibJ-grains-gradient-Laplacian-whiteTopHat.png "More examples of composed morphological filters. From left to right: morphological gradient, morphological Laplacian, morphological white top-hat.")
+The **white top-hat** first computes a morphological opening (resulting in removing bright structures smaller than structuring elements), and removes the result from the original image. When applied with a large structuring element, the result is an homogenization of the background, making bright structures easier to segment. Similarly, the **dark top-hat** can be used to enhance dark structures observed on an non-homogeneous background. 
+{% capture title%}
+ More examples of composed morphological filters. From left to right: morphological gradient, morphological Laplacian, morphological white top-hat. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-grains-gradient-Laplacian-whiteTopHat.png" title=title %}
 
 ### Directional filters
 
 For images containing very thin curvilinear structures (for example blood vessels, cell wall sections...), the application of common filters may be difficult due to the small size of the structures. Even for small structuring elements, the application of a morphological opening or closing let the structure disappear. Moreover, it may be difficult to preserve the whole thickness of the structure.
 
-![Filtering of a thin structure. (a) Original image representing apple cells observed with confocal microscopy. The application of a Gaussian filter (b) or median filter (c) results in noise reduction, but also in a loss of the signal along the cell walls. The directional filtering (d) better preserves the thickness of the structure.](/images/pages/MorphoLibJ-directional-filtering-example.png "Filtering of a thin structure. (a) Original image representing apple cells observed with confocal microscopy. The application of a Gaussian filter (b) or median filter (c) results in noise reduction, but also in a loss of the signal along the cell walls. The directional filtering (d) better preserves the thickness of the structure.")
+
+{% capture title%}
+ Filtering of a thin structure. (a) Original image representing apple cells observed with confocal microscopy. The application of a Gaussian filter (b) or median filter (c) results in noise reduction, but also in a loss of the signal along the cell walls. The directional filtering (d) better preserves the thickness of the structure. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-directional-filtering-example.png" title=title %}
 
 An alternative is to apply directional filtering. The principle is to consider an oriented structuring element such as a line segment of a given length, and to perform morphological operations for various orientations of the structuring element (Soille *et al.*, 2001\[2\]; Heneghan *et al.*, 2002\[3\]; Hendriks *et al.*, 2003\[4\]). For example, applying a median filter or a morphological opening with horizontal direction results in the enhancement of horizontal parts of bright structures. Similarly, using a vertical structuring element results in the enhancement of the vertical portions of the structures.
 
-![Principle of directional filtering of a thin structure. (a) and (b): result of median filter using an horizontal and a vertical linear structuring element. (c) and (d): combination of the results obtained from two directions (horizontal and vertical) and four directions (by adding diagonal directions).](/images/pages/MorphoLibJ-directional-filtering-principle.png "Principle of directional filtering of a thin structure. (a) and (b): result of median filter using an horizontal and a vertical linear structuring element. (c) and (d): combination of the results obtained from two directions (horizontal and vertical) and four directions (by adding diagonal directions).")
+
+{% capture title%}
+ Principle of directional filtering of a thin structure. (a) and (b): result of median filter using an horizontal and a vertical linear structuring element. (c) and (d): combination of the results obtained from two directions (horizontal and vertical) and four directions (by adding diagonal directions). 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-directional-filtering-principle.png" title=title %}
 
 The results of oriented filters for each direction can be combined by computing the maximum value over all orientations. The figure above shows the results obtained when combining two or four directions. Here, 32 orientations of line with length 25 were used. This results in the enhancement of the image while preserving the thickness of the bright structures.
 
@@ -169,15 +193,27 @@ The morphological reconstruction is at the basis of many useful algorithms, such
 
 The principle of geodesic reconstruction is to repeat **conditional dilations or erosions** until idempotence. Conditional dilation is the result of a dilation, combined with a mask image using a logical operation. Conditional dilations are repeated until no more modification occur (idempotence condition).
 
-The following figure shows several steps of a geodesic reconstruction by dilation on a pair of binary images. The mask image is shown in gray, and the marker image is shown in black on the first image. The reconstructed images at each step are shown in black. The markers propagates within the mask until they fill the chosen regions. ![Principle of the geodesic reconstruction algorithm. From left to right: original image in gray with marker superimposed in black, and result of conditional dilations with increasing sizes.](/images/pages/MorphoLibJ-geodesic-reconstruction.png "Principle of the geodesic reconstruction algorithm. From left to right: original image in gray with marker superimposed in black, and result of conditional dilations with increasing sizes.")
+The following figure shows several steps of a geodesic reconstruction by dilation on a pair of binary images. The mask image is shown in gray, and the marker image is shown in black on the first image. The reconstructed images at each step are shown in black. The markers propagates within the mask until they fill the chosen regions. 
+{% capture title%}
+ Principle of the geodesic reconstruction algorithm. From left to right: original image in gray with marker superimposed in black, and result of conditional dilations with increasing sizes. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-geodesic-reconstruction.png" title=title %}
 
 #### Applications to binary images
 
-By choosing the marker image, several operations may be automatized. For example, computing geodesic reconstruction with image of borders, and combining with original image will **remove particles or regions touching the borders**. In a similar way, computing geodesic reconstruction by using the border of the complement of the image makes it possible to **fill holes** that may appear in particles. ![Some applications of geodesic reconstruction. From left to right: original image, result of kill borders, result of fill holes.](/images/pages/MorphoLibJ-kill-borders-fill-holes.png "Some applications of geodesic reconstruction. From left to right: original image, result of kill borders, result of fill holes.")
+By choosing the marker image, several operations may be automatized. For example, computing geodesic reconstruction with image of borders, and combining with original image will **remove particles or regions touching the borders**. In a similar way, computing geodesic reconstruction by using the border of the complement of the image makes it possible to **fill holes** that may appear in particles. 
+{% capture title%}
+ Some applications of geodesic reconstruction. From left to right: original image, result of kill borders, result of fill holes. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-kill-borders-fill-holes.png" title=title %}
 
 #### Applications to grey level images
 
-Geodesic reconstructions can be applied to grey level images. By manually choosing binary markers such that they overlay specific structures, and after applying a geodesic reconstruction by dilation, it is possible to obtain a grey level image containing only the chosen structures. The **border kill** operation can also be applied on grey level images, making possible to rapidly remove structures touching the image borders. ![Some applications of geodesic reconstruction on grey level images. From left to right: original image with superimposed markers, result of geodesic reconstruction by dilation, result of border kill operation.](/images/pages/MorphoLibJ-grains-markers-reconstruction-by-dilation-border-kill.png "Some applications of geodesic reconstruction on grey level images. From left to right: original image with superimposed markers, result of geodesic reconstruction by dilation, result of border kill operation.")
+Geodesic reconstructions can be applied to grey level images. By manually choosing binary markers such that they overlay specific structures, and after applying a geodesic reconstruction by dilation, it is possible to obtain a grey level image containing only the chosen structures. The **border kill** operation can also be applied on grey level images, making possible to rapidly remove structures touching the image borders. 
+{% capture title%}
+ Some applications of geodesic reconstruction on grey level images. From left to right: original image with superimposed markers, result of geodesic reconstruction by dilation, result of border kill operation. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-grains-markers-reconstruction-by-dilation-border-kill.png" title=title %}
 
 #### Usage
 
@@ -199,7 +235,11 @@ The kill borders and fill holes operations are also provided as plugins. Both wo
 
 One problem arising with regional minima or maxima is that they are very sensitive to noise. It is often more convenient to use so-called extended extrema. The principle is to define a tolerance value for filtering the extrema. For example, **extended maxima** are defined as a connected region containing elements such that the difference of the value of each element within the region with the maximal value within the region is lower than the tolerance, and such that the neighbors of the regions all have values smaller than the maximum within the region minus the tolerance. This definition allows the identification of larger extrema, that better takes into account the noise within the image. The **extended minima** are defined in a similar way, and are efficiently used as pre-processing step for watershed segmentation.
 
-Both extended maxima and minima are computed using the geodesic reconstruction algorithm. More details can be found in the book of Soille (2003). ![Regional and extended maxima on a grey-level image. Left: original image. Middle: result of regional maxima. Right: result of extended maxima.](/images/pages/MorphoLibJ-grains-regional-and-extended-maxima.png "Regional and extended maxima on a grey-level image. Left: original image. Middle: result of regional maxima. Right: result of extended maxima.")
+Both extended maxima and minima are computed using the geodesic reconstruction algorithm. More details can be found in the book of Soille (2003). 
+{% capture title%}
+ Regional and extended maxima on a grey-level image. Left: original image. Middle: result of regional maxima. Right: result of extended maxima. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-grains-regional-and-extended-maxima.png" title=title %}
 
 The following operations are available in the {% include bc content='Plugins | MorphoLibJ'%} menu:
 
@@ -216,13 +256,21 @@ Attribute filters aim at removing components of an image based on a certain size
 
 #### Application to binary images
 
-When applied to a binary image, attribute opening consists in identifying each connected component, computing the attribute measurement of each component, and retain only the connected components whose measurement is above a specified value. This kind of processing is often used to clean-up segmentation results. ![Example of area opening on a binary image. Left: original binary image. Middle: identification of connected components. Right: only the connected components with a sufficient size (defined by the area), have been retained.](/images/pages/MorphoLibJ-binary-area-opening.png "Example of area opening on a binary image. Left: original binary image. Middle: identification of connected components. Right: only the connected components with a sufficient size (defined by the area), have been retained.")
+When applied to a binary image, attribute opening consists in identifying each connected component, computing the attribute measurement of each component, and retain only the connected components whose measurement is above a specified value. This kind of processing is often used to clean-up segmentation results. 
+{% capture title%}
+ Example of area opening on a binary image. Left: original binary image. Middle: identification of connected components. Right: only the connected components with a sufficient size (defined by the area), have been retained. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-binary-area-opening.png" title=title %}
 
 #### Application to grayscale images
 
 When applied to a grayscale image, attribute opening consists in generating a series of binary images by thresholding at each distinct gray level in the image. The binary attribute opening described above is then applied independently to each binary image and the grayscale output is computed as the union of the binary results. The final output is a grayscale image whose bright structures with the attribute below a given value have disappeared. A great advantage of this filter is that the contours of the structures area better preserved than opening with a structuring element.
 
-![Example of area opening on a grayscale image. Left: original grayscale image of a leaf (image courtesy of Eric Biot, INRA Versailles). Middle: grayscale size opening making bright spots disappear. Right: comparison with morphological closing with square structuring element of radius 1: bright spots are removed, but some veins also disappear.](/images/pages/MorphoLibJ-grayscale-area-opening.png "Example of area opening on a grayscale image. Left: original grayscale image of a leaf (image courtesy of Eric Biot, INRA Versailles). Middle: grayscale size opening making bright spots disappear. Right: comparison with morphological closing with square structuring element of radius 1: bright spots are removed, but some veins also disappear.")
+
+{% capture title%}
+ Example of area opening on a grayscale image. Left: original grayscale image of a leaf (image courtesy of Eric Biot, INRA Versailles). Middle: grayscale size opening making bright spots disappear. Right: comparison with morphological closing with square structuring element of radius 1: bright spots are removed, but some veins also disappear. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-grayscale-area-opening.png" title=title %}
 
 As for classical morphological filters, grayscale attribute closing or tophat can be defined. Grayscale attribute closing consists in removing dark connected components whose size is smaller than a specified value. White \[resp. Black\] Attribute Top-Hat considers the difference of the attribute opening \[resp. closing\] with the original image, and can help identifying bright \[resp. dark\] structures with small size.
 
@@ -238,10 +286,14 @@ So far, the following attribute filtering plugins are available within MorphoLib
 
 ## Watershed segmentation
 
-![Overlay of watershed lines on blurred blobs.](/images/pages/Classic-Watershed-lines-blur-blobs.png "Overlay of watershed lines on blurred blobs.") The watershed algorithm assimilates the grey level image to a digital elevation model, and aims at detecting the different catchment basins. In the grey-level image, the catchment basins correspond to dark regions surrounded by bright structures (the "crests"). It is a very popular technique specially used to segment touching objects. The MorphoLibJ suite contains several implementations of the algorithm and plugins that make use of it:
 
-  - [Classic Watershed](Classic_Watershed "wikilink"), plugin implementing the original watershed algorithm by Pierre Soille and Luc M. Vincent (1990)\<ref name="Soille1990\>{% include cite content='conference' title='Determining watersheds in digital pictures via flooding simulations' author='Soille, Pierre and Vincent, Luc M' booktitle='Proc. SPIE' volume='1360' pages='240-250' year='1990' organization='International Society for Optics and Photonics' doi='10.1117/12.24211' url='http://dx.doi.org/10.1117/12.24211' %}</ref> to segment 2D/3D grayscale images.
-  - [Marker-controlled Watershed](Marker-controlled_Watershed "wikilink"), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers by Meyer and Beucher (1990)\<ref name="Meyer1990\>{% include cite content='journal' title='Morphological segmentation' author='F. Meyer and S. Beucher' journal='Journal of Visual Communication and Image Representation' volume='1' number='1' pages='21-46' year='1990' doi='10.1016/1047-3203(90)90014-M' url='http://www.sciencedirect.com/science/article/pii/104732039090014M' %}</ref>.
+{% capture title%}
+ Overlay of watershed lines on blurred blobs. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Classic-Watershed-lines-blur-blobs.png" title=title %} The watershed algorithm assimilates the grey level image to a digital elevation model, and aims at detecting the different catchment basins. In the grey-level image, the catchment basins correspond to dark regions surrounded by bright structures (the "crests"). It is a very popular technique specially used to segment touching objects. The MorphoLibJ suite contains several implementations of the algorithm and plugins that make use of it:
+
+  - [Classic Watershed](Classic_Watershed "wikilink"), plugin implementing the original watershed algorithm by Pierre Soille and Luc M. Vincent (1990)\<ref name="Soille1990\>{% include cite content='conference' title='Determining watersheds in digital pictures via flooding simulations ' author='Soille, Pierre and Vincent, Luc M ' booktitle='Proc. SPIE ' volume='1360 ' pages='240-250 ' year='1990 ' organization='International Society for Optics and Photonics ' doi='10.1117/12.24211 ' url='http://dx.doi.org/10.1117/12.24211 ' %}</ref> to segment 2D/3D grayscale images.
+  - [Marker-controlled Watershed](Marker-controlled_Watershed "wikilink"), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers by Meyer and Beucher (1990)\<ref name="Meyer1990\>{% include cite content='journal' title='Morphological segmentation ' author='F. Meyer and S. Beucher ' journal='Journal of Visual Communication and Image Representation ' volume='1 ' number='1 ' pages='21-46 ' year='1990 ' doi='10.1016/1047-3203(90)90014-M ' url='http://www.sciencedirect.com/science/article/pii/104732039090014M ' %}</ref>.
   - [Interactive Marker-controlled Watershed](Interactive_Marker-controlled_Watershed "wikilink"), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers introduced interactively by the user.
   - [Morphological Segmentation](Morphological_Segmentation "wikilink"), a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
   - [Distance Transform Watershed](Distance_Transform_Watershed "wikilink"), two plugins (2D and 3D) that work on binary images and allow to separate touching objects by combining the distance transform and watershed methods.
@@ -256,9 +308,13 @@ This section describes the methods implemented in MorphoLibJ for describing indi
 
 #### Intrinsic volumes
 
-![Illustration of Euler Number definition. Left: three particles with Euler numbers equal to 1, 0 and -1, respectively. Right: example of a 3D particle with an Euler number equal to -1, corresponding to the subtraction of 1 connected components minus two handles.](/images/pages/MorphoLibJ-Euler-number.png "Illustration of Euler Number definition. Left: three particles with Euler numbers equal to 1, 0 and -1, respectively. Right: example of a 3D particle with an Euler number equal to -1, corresponding to the subtraction of 1 connected components minus two handles.")The intrinsic volumes are a set of features with interesting mathematical properties that are commonly used for describing individual particles as well as binary microstructrues. In the planar case, they correspond to the area, the perimeter and the Euler number. The Euler number is a topological characteristic that equals the number of connected components minus the number of holes.
 
-For 3D particles, intrinsic volumes correspond to the volume, the surface area, the mean breadth (a quantity proportional to the integral of the mean curvature over the surface) and the Euler number. In 3D the Euler number equals the number of connected components minus the number of "handles" or "tunnels" through the structure, plus the number of bubbles within the particles (Serra, 1982\[6\]{% include cite content='conference' booktitle='3D Images of Materials Structures: processing and analysis' title='Image Processing' author='Joachim Ohser and Katja Schladitz' publisher='Wiley-VCH Verlag GmbH & Co. KGaA' year='2009' doi='10.1002/9783527628308.ch4' url='http://dx.doi.org/10.1002/9783527628308.ch4' %}</ref>).
+{% capture title%}
+ Illustration of Euler Number definition. Left: three particles with Euler numbers equal to 1, 0 and -1, respectively. Right: example of a 3D particle with an Euler number equal to -1, corresponding to the subtraction of 1 connected components minus two handles. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-Euler-number.png" title=title %}The intrinsic volumes are a set of features with interesting mathematical properties that are commonly used for describing individual particles as well as binary microstructrues. In the planar case, they correspond to the area, the perimeter and the Euler number. The Euler number is a topological characteristic that equals the number of connected components minus the number of holes.
+
+For 3D particles, intrinsic volumes correspond to the volume, the surface area, the mean breadth (a quantity proportional to the integral of the mean curvature over the surface) and the Euler number. In 3D the Euler number equals the number of connected components minus the number of "handles" or "tunnels" through the structure, plus the number of bubbles within the particles (Serra, 1982\[6\]{% include cite content='conference' booktitle='3D Images of Materials Structures: processing and analysis ' title='Image Processing ' author='Joachim Ohser and Katja Schladitz ' publisher='Wiley-VCH Verlag GmbH & Co. KGaA ' year='2009 ' doi='10.1002/9783527628308.ch4 ' url='http://dx.doi.org/10.1002/9783527628308.ch4 ' %}</ref>).
 
 ##### Estimation from 2D or 3D images
 
@@ -298,7 +354,11 @@ A binary particle may be described mathematically by its moments which correspon
 
 #### Geodesic measurements
 
-![Computation of perimeter and geodesic diameter. Left: principle of perimeter estimation by counting intersections with set of lines. Right: illustration of the geodesic diameter measured on a non convex particle.](/images/pages/MorphoLibJ-perimiter-geodesic-diameter-computation.png "Computation of perimeter and geodesic diameter. Left: principle of perimeter estimation by counting intersections with set of lines. Right: illustration of the geodesic diameter measured on a non convex particle.")For particles with complex shapes, the geodesic diameter may be of interest. It corresponds of the largest geodesic distance between two points within a region, the geodesic distance being the length of the shortest path joining the two points while staying inside the region (Lantuejoul *et al.*, 1981\[13\]).
+
+{% capture title%}
+ Computation of perimeter and geodesic diameter. Left: principle of perimeter estimation by counting intersections with set of lines. Right: illustration of the geodesic diameter measured on a non convex particle. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-perimiter-geodesic-diameter-computation.png" title=title %}For particles with complex shapes, the geodesic diameter may be of interest. It corresponds of the largest geodesic distance between two points within a region, the geodesic distance being the length of the shortest path joining the two points while staying inside the region (Lantuejoul *et al.*, 1981\[13\]).
 
 #### Plugins
 
@@ -323,7 +383,11 @@ This plugin computes for each label the largest disk that can be enclosed within
   - **yi**: the y-coordinate of the inscribed circle.
   - **radius**: the radius of the inscribed circle.
 
-![Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal *et al*., 2004\[14\]). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay.](Longest-geodesic-path-DRIVE.png "Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal et al., 2004). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay.")
+
+{% capture title%}
+ Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal *et al*., 2004\[14\]). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Longest-geodesic-path-DRIVE.png" title=title %}
 
 ##### Geodesic diameter
 
@@ -356,7 +420,7 @@ The plugin calculates the **mean**, **standard deviation**, **maximum**, **minim
 
 ### Label Overlap Measures
 
-Given two label images, there are different measures that allow us to evaluate the overlap agreement (or error) between the labels. Following Tustison & Gee (2009)\<ref name="Tustison2009\>{% include cite content='journal' title='Introducing Dice, Jaccard, and other label overlap measures to ITK' author='Tustison, NJ and Gee, JC' journal='The Insight Journal' pages='1-4' issue='July-December' year='2009' doi='10.1007/BF01189221' %}</ref>, and given a source image \(S\) and a target image \(T\), this plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Label Overlap Measures'%}) provides the following overlap measurements in two different result tables (one with the total values for all labels and one with values for individual labels):
+Given two label images, there are different measures that allow us to evaluate the overlap agreement (or error) between the labels. Following Tustison & Gee (2009)\<ref name="Tustison2009\>{% include cite content='journal' title='Introducing Dice, Jaccard, and other label overlap measures to ITK ' author='Tustison, NJ and Gee, JC ' journal='The Insight Journal ' pages='1-4 ' issue='July-December ' year='2009 ' doi='10.1007/BF01189221 ' %}</ref>, and given a source image \(S\) and a target image \(T\), this plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Label Overlap Measures'%}) provides the following overlap measurements in two different result tables (one with the total values for all labels and one with values for individual labels):
 
   - Target Overlap for each individual labeled region \(r\):
 
@@ -410,7 +474,11 @@ Given two label images, there are different measures that allow us to evaluate t
 
 The region adjacency graph plugin gives access to the neighborhood relationship between adjacent regions. This can be particularly informative for exploring collections of cells within cellular tissues (Florindo *et al.*, 2016\[15\]).
 
-![Computation of the Region Adjacency Graph on a microscopy image of plant tissue. Left: original image. Middle: result of watershed segmentation. Right: overlay of edges representing adjacent regions.](/images/pages/MorphoLibJ-region-adjacency-graph.png "Computation of the Region Adjacency Graph on a microscopy image of plant tissue. Left: original image. Middle: result of watershed segmentation. Right: overlay of edges representing adjacent regions.")
+
+{% capture title%}
+ Computation of the Region Adjacency Graph on a microscopy image of plant tissue. Left: original image. Middle: result of watershed segmentation. Right: overlay of edges representing adjacent regions. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-region-adjacency-graph.png" title=title %}
 
 The plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Region Adjacency Graph'%}) works for both 2D and 3D images, and requires a label image as input. A typical input is the result of a watershed segmentation (see [Watershed Segmentation](MorphoLibJ#Watershed_segmentation "wikilink")), eventually followed by [manual edition of the labels](MorphoLibJ#Label_Edition_plugin "wikilink"). The output of the plugin is a results table with as many rows as the number of pairs of adjacent regions, containing the labels of the two adjacent regions.
 
@@ -424,7 +492,11 @@ The MorphoLibJ library provides several utility functions for the processing and
 
 When analyzing images, it is often necessary to compute distances to a particular structure or position. A convenient operator for binary images is the **distance transform**. Its principle is to compute, for each foreground pixel, the distance to the nearest background pixel. The result is commonly referred to as **Distance Map**.
 
-![Binary image, and result of computation of the distance transform.](/images/pages/MorphoLibJ-distance-transform-on-binary-leaf.png "Binary image, and result of computation of the distance transform.")
+
+{% capture title%}
+ Binary image, and result of computation of the distance transform. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-distance-transform-on-binary-leaf.png" title=title %}
 
 Several methods exist for computing distance maps. The MorphoLibJ library implements distance transforms based on chamfer distances, that approximate Euclidean distances but are simpler to compute.
 
@@ -435,7 +507,11 @@ Several methods exist for computing distance maps. The MorphoLibJ library implem
 
 In some cases it may be useful to restrict the propagation of distances to a specific region or mask. For example, one may be interested in the distance between two points in a vasculature network, while staying within the network. The **geodesic distance transform** consists in computing the distance from a given binary marker, while constraining the propagation of the distance within a binary mask. An illustration is given in the figure below:
 
-![Computation of the geodesic distance map on a binary image from the DRIVE database (Staal *et al.*, 2004\[16\]). Left: original image with marker superimposed in red. Right: result of geodesic distance map, hot colors correspond to large distances, cold colors correspond to small distances.](MorphoLibJ-geodesic-distance-example.png "Computation of the geodesic distance map on a binary image from the DRIVE database (Staal et al., 2004). Left: original image with marker superimposed in red. Right: result of geodesic distance map, hot colors correspond to large distances, cold colors correspond to small distances.")
+
+{% capture title%}
+ Computation of the geodesic distance map on a binary image from the DRIVE database (Staal *et al.*, 2004\[16\]). Left: original image with marker superimposed in red. Right: result of geodesic distance map, hot colors correspond to large distances, cold colors correspond to small distances. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-geodesic-distance-example.png" title=title %}
 
   - **Geodesic Distance Map** computes the geodesic distance between each foreground pixel of a binary mask image to the closest pixel of a marker image, while staying within the particle represented by the mask image.
   - **Interactive Geodesic Distance Map** computes the geodesic distance between each foreground pixel of a the currently selected image (considered the mask image) to the closest pixel of a marker image defined by the user ROIs, while staying within the particle represented by the mask image.
@@ -450,7 +526,11 @@ Label images can be represented either using shades of gray, or using color maps
 
 The different structures within a binary images can be labeled by using a connected component labeling algorithm. Each label will correspond to a set of connected pixels or voxels.
 
-![Binary image, result of connected components labeling, and computation of distance map on the complement of binary image.](/images/pages/MorphoLibJ-grains-binary-label-distance.png "Binary image, result of connected components labeling, and computation of distance map on the complement of binary image.")
+
+{% capture title%}
+ Binary image, result of connected components labeling, and computation of distance map on the complement of binary image. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-grains-binary-label-distance.png" title=title %}
 
 Different connectivities may be chosen. For planar images, the most current ones are the 4-connectivity, that consider only orthogonal neighbors of a given pixel, and the 8-connectivity, that also considers the diagonals. For 3D images, the 6-connectivity considers only orthogonal neighbors in the three main directions, whereas the 26-connectivity considers all the direct neighbors of a given voxel.
 
@@ -460,7 +540,11 @@ Different connectivities may be chosen. For planar images, the most current ones
 
 Several plugins allow to control the appearance of label images. It is possible to choose a given color map, or to transform a label image into a color image. In both cases, the background color can be specified, and the color order can be shuffled to facilitate the discrimination of neighbor regions with similar labels.
 
-![Assign result of a measurement to a label image. In this example, the elongation is represented using a color code, between dark purple (circular) to yellow (very elongated).](/images/pages/MorphoLibJ-grains-labels-assign-measure.png "Assign result of a measurement to a label image. In this example, the elongation is represented using a color code, between dark purple (circular) to yellow (very elongated).")
+
+{% capture title%}
+ Assign result of a measurement to a label image. In this example, the elongation is represented using a color code, between dark purple (circular) to yellow (very elongated). 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-grains-labels-assign-measure.png" title=title %}
 
   - **Assign Measure To Label** combines a label image with a results table, and creates a new image for which each pixel/voxel is assigned the measurement value corresponding to the label it belongs to.
   - **Set Label Map** allows to choose the color map used to display a label image. In particular, shuffling the color map and/or choosing a specific color for background allows better visualization that only grey levels.
@@ -479,7 +563,11 @@ Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is us
 
 #### Label images
 
-![MorphoLibJ utilities for label images. From left to right: original label image, remove border labels, remove largest region, apply size opening for keeping only regions with at least 150 pixels.](/images/pages/MorphoLibJ-grains-binary-label-remove-border-largest-size-opening.png "MorphoLibJ utilities for label images. From left to right: original label image, remove border labels, remove largest region, apply size opening for keeping only regions with at least 150 pixels.")
+
+{% capture title%}
+ MorphoLibJ utilities for label images. From left to right: original label image, remove border labels, remove largest region, apply size opening for keeping only regions with at least 150 pixels. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-grains-binary-label-remove-border-largest-size-opening.png" title=title %}
 
   - **Remove Border Labels** is similar to "kill borders" function, but operates faster as no morphological reconstruction is required.
   - **Select Label(s)** enters a set of labels, and creates a new label image containing only the selected labels.
@@ -491,7 +579,11 @@ Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is us
 
 ### Label Edition plugin
 
-![Label Edition plugin overview.](/images/pages/Label-Edition-plugin.png "Label Edition plugin overview.")To ease the processing of label images, [MorphoLibJ](MorphoLibJ "wikilink") provides the Label Edition plugin (available under {% include bc content='Plugins | MorphoLibJ | Labels | Label Edition'%}). This plugin contains a graphical user interface (GUI) where the users can perform the following set of editing tasks:
+
+{% capture title%}
+ Label Edition plugin overview. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Label-Edition-plugin.png" title=title %}To ease the processing of label images, [MorphoLibJ](MorphoLibJ "wikilink") provides the Label Edition plugin (available under {% include bc content='Plugins | MorphoLibJ | Labels | Label Edition'%}). This plugin contains a graphical user interface (GUI) where the users can perform the following set of editing tasks:
 
   - Manually merge labels after their selection using the point selection tool (in 2D and 3D).
   - Apply morphological erosion, dilation, opening and closing with a square/cube of radius 1 as structuring element.
@@ -685,7 +777,11 @@ for( i=0; i<labels.length; i++ )
 sc = new SmoothControl( univ );
 ```
 
-At the end of the script a dialog is shown to smooth the surfaces at will. Each label is added to the 3D scene independently with the nanme "label-X" where X is its label value. ![From left to right: input label image, script output, smoothed label surfaces and example of individually translated surfaces in the 3D viewer.](/images/pages/MorphoLibJ-visualize-labels-in-3d-viewer.png "From left to right: input label image, script output, smoothed label surfaces and example of individually translated surfaces in the 3D viewer.")
+At the end of the script a dialog is shown to smooth the surfaces at will. Each label is added to the 3D scene independently with the nanme "label-X" where X is its label value. 
+{% capture title%}
+ From left to right: input label image, script output, smoothed label surfaces and example of individually translated surfaces in the 3D viewer. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/MorphoLibJ-visualize-labels-in-3d-viewer.png" title=title %}
 
 ## Documentation
 
@@ -725,28 +821,28 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Analysis](Category:Analysis "wikilink") [Category:Filtering](Category:Filtering "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Mathematical\_morphology](Category:Mathematical_morphology "wikilink") [Category:Citable](Category:Citable "wikilink")
 
 1.  
-2.  {% include cite content='journal' title='Directional morphological filtering' author='Soille, Pierre and Talbot, Hugues' publisher='IEEE' year='2001' volume='23' number='11' pages='1313-1329' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence' doi='10.1109/34.969120' %}
+2.  {% include cite content='journal' title='Directional morphological filtering ' author='Soille, Pierre and Talbot, Hugues ' publisher='IEEE ' year='2001 ' volume='23 ' number='11 ' pages='1313-1329 ' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence ' doi='10.1109/34.969120 ' %}
 
-3.  {% include cite content='journal' title='Characterization of changes in blood vessel width and tortuosity in retinopathy of prematurity using image analysis' author='Conor Heneghan and John Flynn and Michael O Keefe and Mark Cahill' journal='Medical Image Analysis' volume='6' number='4' pages='407-429' year='2002' publisher='Elsevier' doi='10.1016/S1361-8415(02)00058-0' %}
+3.  {% include cite content='journal' title='Characterization of changes in blood vessel width and tortuosity in retinopathy of prematurity using image analysis ' author='Conor Heneghan and John Flynn and Michael O Keefe and Mark Cahill ' journal='Medical Image Analysis ' volume='6 ' number='4 ' pages='407-429 ' year='2002 ' publisher='Elsevier ' doi='10.1016/S1361-8415(02)00058-0 ' %}
 
-4.  {% include cite content='conference' title='Discrete Morphology with Line Structuring Elements' author='Hendriks, CL Luengo and van Vliet, Lucas J' booktitle='International Conference on Computer Analysis of Images and Patterns' pages='722-729' year='2003' organization='Springer' doi='10.1007/978-3-540-45179-2\_88' %}
+4.  {% include cite content='conference' title='Discrete Morphology with Line Structuring Elements ' author='Hendriks, CL Luengo and van Vliet, Lucas J ' booktitle='International Conference on Computer Analysis of Images and Patterns ' pages='722-729 ' year='2003 ' organization='Springer ' doi='10.1007/978-3-540-45179-2\_88 ' %}
 
-5.  {% include cite content='conference' title='Attribute Opening, Thinnings, and Granulometries' author='Edmond J. Breen and Ronald Jones' journal='Computer Vision and Image Understanding' year='1996' month='Nov.' number='3' pages='377--389' volume='64' doi='10.1006/cviu.1996.0066' url='http://www.sciencedirect.com/science/article/pii/S1077314296900661' %}
+5.  {% include cite content='conference' title='Attribute Opening, Thinnings, and Granulometries ' author='Edmond J. Breen and Ronald Jones ' journal='Computer Vision and Image Understanding ' year='1996 ' month='Nov. ' number='3 ' pages='377--389 ' volume='64 ' doi='10.1006/cviu.1996.0066 ' url='http://www.sciencedirect.com/science/article/pii/S1077314296900661 ' %}
 
 6.  
-7.  {% include cite content='conference' title='Computation of Minkowski measures on 2D and 3D binary images' author='Legland, David and Kiêu, Kiên and Devaux, Marie-Françoise' journal='Image Analysis and Stereology' year='2007' month='June' number='6' pages='83-92' volume='26' doi='10.5566/ias.v26.p83-92' url='http://www.ias-iss.org/ojs/IAS/article/view/811' %}
+7.  {% include cite content='conference' title='Computation of Minkowski measures on 2D and 3D binary images ' author='Legland, David and Kiêu, Kiên and Devaux, Marie-Françoise ' journal='Image Analysis and Stereology ' year='2007 ' month='June ' number='6 ' pages='83-92 ' volume='26 ' doi='10.5566/ias.v26.p83-92 ' url='http://www.ias-iss.org/ojs/IAS/article/view/811 ' %}
 
-8.  {% include cite content='conference' title='Measuring the length of a curve' author='Moran, PAP' journal='Biometrika' year='1966' volume='53' number='3-4' pages='359-364' doi='10.1093/biomet/53.3-4.359' URL='http://biomet.oxfordjournals.org/content/53/3-4/359.abstract' %}
+8.  {% include cite content='conference' title='Measuring the length of a curve ' author='Moran, PAP ' journal='Biometrika ' year='1966 ' volume='53 ' number='3-4 ' pages='359-364 ' doi='10.1093/biomet/53.3-4.359 ' URL='http://biomet.oxfordjournals.org/content/53/3-4/359.abstract ' %}
 
 9.  
-10. {% include cite content='journal' title='Efficient N-Dimensional surface estimation using [Crofton formula](wikipedia:Crofton_formula "wikilink") and run-length encoding' author='Lehmann, Gaetan and Legland, David' journal='Insight Journal' year='2012' pages='1-11' url='http://hdl.handle.net/10380/3342' %}
+10. {% include cite content='journal' title='Efficient N-Dimensional surface estimation using [Crofton formula](wikipedia:Crofton_formula "wikilink") and run-length encoding ' author='Lehmann, Gaetan and Legland, David ' journal='Insight Journal ' year='2012 ' pages='1-11 ' url='http://hdl.handle.net/10380/3342 ' %}
 
 11. 
 12. 
-13. {% include cite content='conference' title='On the use of geodesic metric in image analysis' author='Lantuejoul, C. and Beucher, S.' journal='Journal of Microscopy' year='1981' month='Jan.' number='1,' pages='39-40' volume='121' doi='10.1111/j.1365-2818.1981.tb01197.x' url='http://dx.doi.org/10.1111/j.1365-2818.1981.tb01197.x' %}
+13. {% include cite content='conference' title='On the use of geodesic metric in image analysis ' author='Lantuejoul, C. and Beucher, S. ' journal='Journal of Microscopy ' year='1981 ' month='Jan. ' number='1, ' pages='39-40 ' volume='121 ' doi='10.1111/j.1365-2818.1981.tb01197.x ' url='http://dx.doi.org/10.1111/j.1365-2818.1981.tb01197.x ' %}
 
-14. {% include cite content='journal' title='Ridge based vessel segmentation in color images of the retina' author='J.J. Staal and M.D. Abramoff and M. Niemeijer and M.A. Viergever and B. van Ginneken' journal='IEEE Transactions on Medical Imaging' year='2004' pages='501-509' volume='23' doi='10.1109/TMI.2004.825627' %}
+14. {% include cite content='journal' title='Ridge based vessel segmentation in color images of the retina ' author='J.J. Staal and M.D. Abramoff and M. Niemeijer and M.A. Viergever and B. van Ginneken ' journal='IEEE Transactions on Medical Imaging ' year='2004 ' pages='501-509 ' volume='23 ' doi='10.1109/TMI.2004.825627 ' %}
 
-15. {% include cite content='conference' title='Identifying plant species using architectural features in leaf microscopy images' author='Joao Batista Florindo and Odemir Martinez Bruno and Davi Rodrigo Rossatto and Rosana Marta Kolb and Maria Cecilia Gomez and Gabriel Landini' journal='Botany' year='2016' number='1' pages='15-21' volume='94' doi='10.1139/cjb-2015-0075' url='http://dx.doi.org/10.1139/cjb-2015-0075' %}
+15. {% include cite content='conference' title='Identifying plant species using architectural features in leaf microscopy images ' author='Joao Batista Florindo and Odemir Martinez Bruno and Davi Rodrigo Rossatto and Rosana Marta Kolb and Maria Cecilia Gomez and Gabriel Landini ' journal='Botany ' year='2016 ' number='1 ' pages='15-21 ' volume='94 ' doi='10.1139/cjb-2015-0075 ' url='http://dx.doi.org/10.1139/cjb-2015-0075 ' %}
 
 16.

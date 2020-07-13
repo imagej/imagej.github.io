@@ -8,11 +8,11 @@ categories:
 description: test description
 ---
 
-This page is for developer only. It is used to store various metrics related to the {% include github org='fiji' repo='TrackMate3' %} project.
+This page is for developer only. It is used to store various metrics related to the {% include github org='fiji ' repo='TrackMate3 ' %} project.
 
 ## Model creation time and space used
 
-From the branch {% include github org='fiji' repo='TrackMate3' tag='trackmate-model' %} branch, on Feb 13th, 2015. Using the net.trackmate.CreateLargeModelExample and the [ClassMexer](http://www.javamex.com/classmexer/) agent.
+From the branch {% include github org='fiji ' repo='TrackMate3 ' tag='trackmate-model ' %} branch, on Feb 13th, 2015. Using the net.trackmate.CreateLargeModelExample and the [ClassMexer](http://www.javamex.com/classmexer/) agent.
 
 ``` 
 

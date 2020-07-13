@@ -19,9 +19,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='morphonets' repo='SNT' %}
+{% include github org='morphonets ' repo='SNT ' %}
 {% endcapture %}
-{% include info-box name='SNT' software='complete framework for quantification of neuronal anatomy' logo='![SNTLogo512.png](/images/pages/SNTLogo512.png "SNTLogo512.png")' author=author maintainer=maintainer source=source status='stable, active' category='[Neuroanatomy](:Category:Neuroanatomy "wikilink")' %}{% include toc content='right' %}
+{% include info-box name='SNT ' software='complete framework for quantification of neuronal anatomy ' logo='![SNTLogo512.png](/images/pages/SNTLogo512.png "SNTLogo512.png") ' author=author maintainer=maintainer source=source status='stable, active ' category='[Neuroanatomy](:Category:Neuroanatomy "wikilink") ' %}{% include toc content='right' %}
 
 ## Overview
 
@@ -36,7 +36,11 @@ SNT's documentation is extensive. Please use the navigation bar on too of the pa
   - **[Analysis](SNT:_Analysis "wikilink")** Overview of all analysis commands, accessible in either the tracing interface or [Reconstruction Viewer](SNT:_Reconstruction_Viewer "wikilink")
   - **[Scripting](SNT:_Scripting "wikilink")** Details on how to use SNT as a scripting library
 
-![SNT Overview. A key feature of SNT is that *every* aspect of the program can be [scripted](/images/pages/SNT:_Scripting "wikilink") in any of Fiji's supported languages, or from Python through [pyimagej](https://github.com/imagej/pyimagej). ](SimpleNeuriteTracer2.png "SNT Overview. A key feature of SNT is that every aspect of the program can be scripted in any of Fiji's supported languages, or from Python through pyimagej. ")
+
+{% capture title%}
+ SNT Overview. A key feature of SNT is that *every* aspect of the program can be [scripted](SNT:_Scripting "wikilink") in any of Fiji's supported languages, or from Python through [pyimagej](https://github.com/imagej/pyimagej). 
+{% endcapture %}
+{% include thumbnail src="/images/pages/SimpleNeuriteTracer2.png" title=title %}
 
 ## Features
 

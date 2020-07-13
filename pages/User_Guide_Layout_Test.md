@@ -51,13 +51,13 @@ dropdown choices will be indeícated ***bold/italic***
 
 ## Boxes
 
-    {% include box width='30%' %}
+    {% include box width='30% ' %}
 
-{% include box width='30%' %}  
+{% include box width='30% ' %}  
 
-    {% include box title='Modifies Box with a title!' text='As a standard box for additional info.' width='30%' float='left' %}
+    {% include box title='Modifies Box with a title! ' text='As a standard box for additional info. ' width='30% ' float='left ' %}
 
-{% include box title='Modifies Sidebox with title\!' text='As a standard box for additional info.' width='30%' float='left' %}
+{% include box title='Modifies Sidebox with title\! ' text='As a standard box for additional info. ' width='30% ' float='left ' %}
 
   
   

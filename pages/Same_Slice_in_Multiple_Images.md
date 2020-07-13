@@ -10,7 +10,7 @@ description: test description
 
 ## Purpose
 
-An example JRuby script, which needs to be customized to be useful to you - the source code is {% include github repo='fiji' path='plugins/Examples/Same\_Slice\_in\_Multiple\_Images.rb' label='here' %}.
+An example JRuby script, which needs to be customized to be useful to you - the source code is {% include github repo='fiji ' path='plugins/Examples/Same\_Slice\_in\_Multiple\_Images.rb ' label='here ' %}.
 
 ## Code
 

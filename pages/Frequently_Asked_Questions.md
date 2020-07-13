@@ -19,7 +19,7 @@ See the [Batch Processing](Batch_Processing "wikilink") page.
 
 ## What is the largest size image that ImageJ can open?
 
-There is a 2 gigapixel limit when opening and displaying image planes using the [ImageJ 1.x](ImageJ_1.x "wikilink") user interface's default image viewer. However, one major goal of the [ImageJ2](ImageJ2 "wikilink") project is to break this limit. ImageJ2 uses the [ImgLib2](ImgLib2 "wikilink") library as its data model, which has much larger limits on the number of pixels (theoretically: \~2^63 per dimension, up to \~2^31 dimensions, totaling \~2^63^31 pixels). Hence, you can open larger images using the {% include github org='imagej' repo='tutorials' label='ImageJ2 API' %}. But you will not be able to display them in the user interface yet.
+There is a 2 gigapixel limit when opening and displaying image planes using the [ImageJ 1.x](ImageJ_1.x "wikilink") user interface's default image viewer. However, one major goal of the [ImageJ2](ImageJ2 "wikilink") project is to break this limit. ImageJ2 uses the [ImgLib2](ImgLib2 "wikilink") library as its data model, which has much larger limits on the number of pixels (theoretically: \~2^63 per dimension, up to \~2^31 dimensions, totaling \~2^63^31 pixels). Hence, you can open larger images using the {% include github org='imagej ' repo='tutorials ' label='ImageJ2 API ' %}. But you will not be able to display them in the user interface yet.
 
 Furthermore, the [SCIFIO](SCIFIO "wikilink") library (what ImageJ2 uses for data I/O) supports opening such images on-demand as "cell images" such that blocks are read from disk as you iterate over the image. This is similar to (but more powerful than) ImageJ 1.x's virtual stacks feature. In this way, you can write code to process these large images without displaying them.
 
@@ -179,7 +179,7 @@ ImageJ2 user interfaces are just plugins; ImageJ2 runs with the "ImageJ1 legacy 
 
 ## Does ImageJ2 support the ImageJ macro language? Is it deprecated?
 
-Thanks to the {% include github org='imagej' repo='imagej-legacy' label='ImageJ legacy layer' %}, [ImageJ1](ImageJ1 "wikilink") [macros](macros "wikilink") will run unchanged in [ImageJ2](ImageJ2 "wikilink"), while also allowing to harness ImageJ2's new parameterized [scripting](scripting "wikilink") paradigm—something that was previously not possible with the macro language.
+Thanks to the {% include github org='imagej ' repo='imagej-legacy ' label='ImageJ legacy layer ' %}, [ImageJ1](ImageJ1 "wikilink") [macros](macros "wikilink") will run unchanged in [ImageJ2](ImageJ2 "wikilink"), while also allowing to harness ImageJ2's new parameterized [scripting](scripting "wikilink") paradigm—something that was previously not possible with the macro language.
 
 The ImageJ1 macro language has been extremely useful to many users. However, it has a substantial limitation: its functions are separate from those available from Java and the other scripting languages.
 
@@ -355,7 +355,7 @@ If you develop a Fiji plugin, the result will be in the form of one or more jars
 
 ## How can I call ImageJ from my software?
 
-If your software is written in Java, we recommend using [Maven](Maven "wikilink") to structure your project. You can then add dependencies to portions of ImageJ that are of interest to you. See the {% include github org='imagej' repo='tutorials' label='ImageJ tutorials' %} for examples.
+If your software is written in Java, we recommend using [Maven](Maven "wikilink") to structure your project. You can then add dependencies to portions of ImageJ that are of interest to you. See the {% include github org='imagej ' repo='tutorials ' label='ImageJ tutorials ' %} for examples.
 
 If your software is written in another language such as C or Python, there are [many ways to integrate Java functionality](http://loci.wisc.edu/bio-formats/interfacing-non-java-code). You must choose which one is best for your particular requirements.
 
@@ -363,7 +363,7 @@ To facilitate some use cases, we provide a script for generating a combined bund
 
 > `mvn -Pdeps package`
 
-For convenience, we provide a [build of this combined JAR file](http://jenkins.imagej.net/job/ImageJ/lastSuccessfulBuild/artifact/target/) (with suffix `-all`) from the latest DEVELOPMENT, UNSTABLE version of ImageJ. This build includes the latest changes on the {% include github repo='imagej' label='master branch of the source repository' %}. It has not been thoroughly tested and may contain new bugs.
+For convenience, we provide a [build of this combined JAR file](http://jenkins.imagej.net/job/ImageJ/lastSuccessfulBuild/artifact/target/) (with suffix `-all`) from the latest DEVELOPMENT, UNSTABLE version of ImageJ. This build includes the latest changes on the {% include github repo='imagej ' label='master branch of the source repository ' %}. It has not been thoroughly tested and may contain new bugs.
 
 In some cases, use of this JAR file is appropriate and convenient; for example, [CellProfiler](http://cellprofiler.org/) uses it to integrate with ImageJ. However, you should consider carefully what would be best for your project; see the [Uber-JAR](Uber-JAR "wikilink") page for further information.
 

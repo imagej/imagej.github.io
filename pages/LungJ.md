@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='LWollatz' repo='LungJ' %}
+{% include github org='LWollatz ' repo='LungJ ' %}
 {% endcapture %}
-{% include info-box name='LungJ' author='[Lasse Wollatz](User:LungJ "wikilink")' maintainer='[Lasse Wollatz](User:LungJ "wikilink")' software='ImageJ/Fiji' logo='![LungJ-logo.png](/images/pages/LungJ-logo.png "LungJ-logo.png")' source=source released='Nov 10<sup>st</sup>, 2016' latest-version='0.5.1, November 10<sup>th</sup>, 2016 (LungJ v0.5.1)' status='stable, new' category='[Segmentation](:Category:Segmentation "wikilink"), [Binary](:Category:Binary "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Image annotation](:Category:Image_annotation "wikilink")' %}{% include toc%}
+{% include info-box name='LungJ ' author='[Lasse Wollatz](User:LungJ "wikilink") ' maintainer='[Lasse Wollatz](User:LungJ "wikilink") ' software='ImageJ/Fiji ' logo='![LungJ-logo.png](/images/pages/LungJ-logo.png "LungJ-logo.png") ' source=source released='Nov 10<sup>st</sup>, 2016 ' latest-version='0.5.1, November 10<sup>th</sup>, 2016 (LungJ v0.5.1) ' status='stable, new ' category='[Segmentation](:Category:Segmentation "wikilink"), [Binary](:Category:Binary "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Image annotation](:Category:Image_annotation "wikilink") ' %}{% include toc%}
 
 
 ## Installation
@@ -209,6 +209,6 @@ Allows to compare WEKA filters visually. Note that the Gabor filter is currently
 
 Please note that LungJ, as well as other plug-ins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
-  - {% include citation last1='Wollatz' first1='Lasse' last2='Johnston' first2='Steven J.' last3='Lackie' first3='Peter M.' last4='Cox' first4='Simon J.' title='LungJ v0.5.1' type='Code' year='2016' month='November' publisher='University of Southampton' doi='10.5258/SOTON/401280' url='http://eprints.soton.ac.uk/id/eprint/401280' %}
+  - {% include citation last1='Wollatz ' first1='Lasse ' last2='Johnston ' first2='Steven J. ' last3='Lackie ' first3='Peter M. ' last4='Cox ' first4='Simon J. ' title='LungJ v0.5.1 ' type='Code ' year='2016 ' month='November ' publisher='University of Southampton ' doi='10.5258/SOTON/401280 ' url='http://eprints.soton.ac.uk/id/eprint/401280 ' %}
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Citable](Category:Citable "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Binary](Category:Binary "wikilink") [Category:Filtering](Category:Filtering "wikilink") [Category:Image\_annotation](Category:Image_annotation "wikilink")

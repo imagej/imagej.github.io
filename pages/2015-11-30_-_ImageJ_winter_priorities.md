@@ -14,7 +14,7 @@ Here is a status update from the ImageJ team at [LOCI](LOCI "wikilink"): where w
 
 First and foremost, we're on the cusp of submitting a paper describing the structure of ImageJ2, which is a critical step towards future funding efforts.
 
-On the technical side, {% include person content='Rueden' %} just wrote the first ImageJ code using Java 8 functionality, which will continue drive our {% include github org='imagej' repo='imagej' issue='135' label='need to migrate' %}. One recent and fundamental step in this direction is the release of the {% include list-of-update-sites content='3D update site' %}: providing Java 7- and 8-compatible versions of 3D ImageJ plugins (previously relegated to Java 6).
+On the technical side, {% include person content='Rueden' %} just wrote the first ImageJ code using Java 8 functionality, which will continue drive our {% include github org='imagej ' repo='imagej ' issue='135 ' label='need to migrate ' %}. One recent and fundamental step in this direction is the release of the {% include list-of-update-sites content='3D update site' %}: providing Java 7- and 8-compatible versions of 3D ImageJ plugins (previously relegated to Java 6).
 
 ## Next steps
 
@@ -26,7 +26,7 @@ In the coming months we have several projects of interest. In approximate order 
   - Increasing the sophistication of [ImageJ Ops](ImageJ_Ops "wikilink")
   - [SciJava-Common 3.x](https://github.com/scijava/scijava-common/milestones/3.0.0)
   - Increased collaboration with KNIME ([LOCI](LOCI "wikilink") is pleased to have {% include person content='gab1one' %} on loan from Konstanz\!)
-  - Improved {% include github org='imagej' repo='imagej-legacy' issue='86' label='ImageJ1-ImageJ2 synchronization' %}
+  - Improved {% include github org='imagej ' repo='imagej-legacy ' issue='86 ' label='ImageJ1-ImageJ2 synchronization ' %}
   - [Formalizing developer roles and responsibilities](http://forum.imagej.net/t/project-developer-roles/206) (which will make an "Adopt-a-plugin" program possible\!)
 
 ## Long-term plans

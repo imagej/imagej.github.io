@@ -13,9 +13,9 @@ description: test description
 
 See the [Wikipedia article on BSD licenses](wikipedia:BSD_licenses "wikilink") for more information.
 
-{% include license name='Simplified BSD License' shortname='BSD-2' description='The """Simplified BSD""" (or """BSD 2-clause""") license is the simplest BSD license. A licensee of BSD-licensed software can:
+{% include license name='Simplified BSD License ' shortname='BSD-2 ' description='The """Simplified BSD""" (or """BSD 2-clause""") license is the simplest BSD license. A licensee of BSD-licensed software can:
 
   - Use, copy and distribute the unmodified source or binary forms of the licensed program
-  - Use, copy and distribute modified source or binary forms of the licensed program, provided that all distributed copies are accompanied by the license' url='http://choosealicense.com/licenses/bsd-2-clause/' choosealicense='bsd-2-clause' osi='BSD-2-Clause' %}
+  - Use, copy and distribute modified source or binary forms of the licensed program, provided that all distributed copies are accompanied by the license ' url='http://choosealicense.com/licenses/bsd-2-clause/ ' choosealicense='bsd-2-clause ' osi='BSD-2-Clause ' %}
 
-{% include license name='Modified BSD License' shortname='BSD-3' description='The """Modified""" or """New BSD""" (or """BSD 3-clause""") license is the same as BSD-2, but with an additional clause prohibiting the names of the authors from being used to endorse or promote products relating to the software.' url='http://choosealicense.com/licenses/bsd-3-clause/' choosealicense='bsd-3-clause' osswatch='modbsd' osi='BSD-3-Clause' %}
+{% include license name='Modified BSD License ' shortname='BSD-3 ' description='The """Modified""" or """New BSD""" (or """BSD 3-clause""") license is the same as BSD-2, but with an additional clause prohibiting the names of the authors from being used to endorse or promote products relating to the software. ' url='http://choosealicense.com/licenses/bsd-3-clause/ ' choosealicense='bsd-3-clause ' osswatch='modbsd ' osi='BSD-3-Clause ' %}

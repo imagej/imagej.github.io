@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='LauLauThom' repo='MultiTemplateMatching' %}
+{% include github org='LauLauThom ' repo='MultiTemplateMatching ' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Multi-Template Matching' author=author maintainer=maintainer update-site='Multi-Template-Matching' source=source released='2019' status='active' category='[Analysis](:Category:Analysis "wikilink") [Feature Extraction](:Category:Feature_Extraction "wikilink")' %}
+{% include info-box software='ImageJ ' name='Multi-Template Matching ' author=author maintainer=maintainer update-site='Multi-Template-Matching ' source=source released='2019 ' status='active ' category='[Analysis](:Category:Analysis "wikilink") [Feature Extraction](:Category:Feature_Extraction "wikilink") ' %}
 
 ![Multi-Template-Matching-MontageGUI.png](/images/pages/Multi-Template-Matching-MontageGUI.png "Multi-Template-Matching-MontageGUI.png")
 

@@ -8,7 +8,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include info-box software='ImageJ' name='Test Java3D' author='Benjamin Schmid' maintainer='Benjamin Schmid' filename='http://132.187.25.13/home/imagej/Test\_Java3D.jar' source='http://132.187.25.13/home/imagej/Test\_Java3D.jar' released='-' latest-version='-' status='stable' category='[Plugins](:Category:Plugins "wikilink")' %}
+{% include info-box software='ImageJ ' name='Test Java3D ' author='Benjamin Schmid ' maintainer='Benjamin Schmid ' filename='http://132.187.25.13/home/imagej/Test\_Java3D.jar ' source='http://132.187.25.13/home/imagej/Test\_Java3D.jar ' released='- ' latest-version='- ' status='stable ' category='[Plugins](:Category:Plugins "wikilink") ' %}
 
 ## Purpose
 
@@ -22,7 +22,7 @@ These dependencies on the system lead sometimes to problems with Java3D. If a pr
 
 This plugin uses very basic Java3D features, and thereby provides a way to check if Java3D is working correctly. All it does is to show a rotating coloured cube, as shown in the figure below.
 
-![Test\_Java3D.png](/images/pages/Test_Java3D.png "Test_Java3D.png")
+![Test\_Java3D.png](/images/pages/Test Java3D.png "Test Java3D.png")
 
 If you encounter problems, you might want to consult the [Java 3D Application Development page](http://wiki.java.net/bin/view/Javadesktop/Java3DApplicationDevelopment). In particular, you might want to restart Fiji with [specific Java 3D properties set](http://wiki.java.net/bin/view/Javadesktop/Java3DApplicationDevelopment#Java_3D_System_Properties).
 

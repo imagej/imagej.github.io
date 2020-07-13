@@ -127,7 +127,7 @@ PlotData=
   - continued work on the [Scenery](Scenery "wikilink") 3D rendering backend for [ThreeDViewer](ThreeDViewer "wikilink") and [ClearVolume](ClearVolume "wikilink") 2.0:
       - introduced the library and its features to the community
       - fixed native code dependencies, included CI builds
-      - worked on the Vulkan ([1](https://www.khronos.org/vulkan)) backend for higher rendering performance, which finally got merged (see {% include github org='ClearVolume' repo='scenery' pr='31' label='ClearVolume/scenery\#31' %})
+      - worked on the Vulkan ([1](https://www.khronos.org/vulkan)) backend for higher rendering performance, which finally got merged (see {% include github org='ClearVolume ' repo='scenery ' pr='31 ' label='ClearVolume/scenery\#31 ' %})
       - helped various people getting scenery running on their machine
   - fixed some bugs in [ClearVolume](ClearVolume "wikilink"), together with {% include person content='royerloic' %}
   - discussed future directions for [ThreeDViewer](ThreeDViewer "wikilink")/[ClearVolume](ClearVolume "wikilink")/[BigDataViewer](BigDataViewer "wikilink") with {% include person content='Kharrington' %}, {% include person content='royerloic' %}, {% include person content='tpietzsch' %} and {% include person content='Saalfeld' %}
@@ -148,7 +148,7 @@ PlotData=
 
 ### Florian Jug
 
-  - With {% include person content='Rueden' %}, overhauled the [SciJava Common](SciJava_Common "wikilink") [logging](logging "wikilink") mechanism ({% include github org='scijava' repo='scijava-common' pr='253' label='scijava/scijava-common\#253' %}).
+  - With {% include person content='Rueden' %}, overhauled the [SciJava Common](SciJava_Common "wikilink") [logging](logging "wikilink") mechanism ({% include github org='scijava ' repo='scijava-common ' pr='253 ' label='scijava/scijava-common\#253 ' %}).
   - With {% include person content='Rueden' %},{% include person content='Haesleinhuepf' %},{% include person content='Pietzsch' %}, and {% include person content='Saalfeld' %} split up the necessary work in order to cut stable releases of Fiji (biannually). This 'earned' me the status of 'Grand Poobah'. ;)
   - Worked on an 'indago' parent POM for DAIS related projects and started using it for the new tracker 'Tr2d'.
   - Worked on the new tracker 'Tr2d'. New features: improved leveraged editing; tracklet export; improved BDV overlays.
@@ -158,9 +158,9 @@ PlotData=
 ### Curtis Rueden
 
   - With {% include person content='Alecneevel' %} and {% include person content='Saalfeld' %}, completed update of ImageJ web resources to support HTTPS (see [separate news post](2016-12-29_-_ImageJ_web_resources_now_support_HTTPS "wikilink")).
-  - With {% include person content='Jug' %}, overhauled the [SciJava Common](SciJava_Common "wikilink") [logging](logging "wikilink") mechanism ({% include github org='scijava' repo='scijava-common' pr='253' label='scijava/scijava-common\#253' %}).
-  - With {% include person content='Rdom' %}, improved [SciJava Common](SciJava_Common "wikilink") context injection to be recursive, to fix bugs with service population of commands ({% include github org='scijava' repo='scijava-common' commit='b0c981b24fc8ec845656574d95f9eddbc285728e' label='scijava/scijava-common@b0c981b2' %}, {% include github org='imagej' repo='imagej-ops' commit='4f78eca5b061881865c2a2c1702a98e634248aa5' label='imagej/imagej-ops@4f78eca5' %}).
-  - With {% include person content='Rdom' %}, add a validater callback for parameter validation ({% include github org='scijava' repo='scijava-common' commit='66ed844ee76a264ca83629f0fef50c9b726c8897' label='scijava/scijava-common@66ed844e' %}, {% include github org='scijava' repo='scijava-common' commit='70c50f48cc20cec0a747a000778f013c7380155d' label='scijava/scijava-common@70c50f48' %}).
+  - With {% include person content='Jug' %}, overhauled the [SciJava Common](SciJava_Common "wikilink") [logging](logging "wikilink") mechanism ({% include github org='scijava ' repo='scijava-common ' pr='253 ' label='scijava/scijava-common\#253 ' %}).
+  - With {% include person content='Rdom' %}, improved [SciJava Common](SciJava_Common "wikilink") context injection to be recursive, to fix bugs with service population of commands ({% include github org='scijava ' repo='scijava-common ' commit='b0c981b24fc8ec845656574d95f9eddbc285728e ' label='scijava/scijava-common@b0c981b2 ' %}, {% include github org='imagej ' repo='imagej-ops ' commit='4f78eca5b061881865c2a2c1702a98e634248aa5 ' label='imagej/imagej-ops@4f78eca5 ' %}).
+  - With {% include person content='Rdom' %}, add a validater callback for parameter validation ({% include github org='scijava ' repo='scijava-common ' commit='66ed844ee76a264ca83629f0fef50c9b726c8897 ' label='scijava/scijava-common@66ed844e ' %}, {% include github org='scijava ' repo='scijava-common ' commit='70c50f48cc20cec0a747a000778f013c7380155d ' label='scijava/scijava-common@70c50f48 ' %}).
   - With {% include person content='maarzt' %}, began work on a `PlotService` for ImageJ2 (\[https://github.com/imagej/imagej-ui-swing/compare/plot-service...maarzt:plot-service maarzt/imagej-ui-swing@plot-service\]).
   - Participated in technical discussions with various people, including a "big-picture" status update for ImageJ2 covering my [primary priorities](User:Rueden#Primary_projects "wikilink"); see [Technical discussions](#Technical_discussions "wikilink") section below.
 
@@ -203,7 +203,7 @@ PlotData=
 
 ### Jonas Massa
 
-  - implemented an ilastik HDF5 import/export plugin for Imagej ({% include github org='Beinabih' repo='ilastik-Fiji-Plugin' label='Beinabih/ilastik-Fiji-Plugin' %})
+  - implemented an ilastik HDF5 import/export plugin for Imagej ({% include github org='Beinabih ' repo='ilastik-Fiji-Plugin ' label='Beinabih/ilastik-Fiji-Plugin ' %})
 
 ### HongKee Moon
 

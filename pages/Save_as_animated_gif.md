@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='fiji' repo='IO' source='io/Gif\_Stack\_Writer.java' %}
+{% include github org='fiji ' repo='IO ' source='io/Gif\_Stack\_Writer.java ' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Save as animated gif' author='Ryan Raz' maintainer='Johannes Schindelin' filename='IO\_.jar' source=source latest-version='March 2002' status='stable' category='[Import/Export](:Category:Import-Export "wikilink")' %}
+{% include info-box software='ImageJ ' name='Save as animated gif ' author='Ryan Raz ' maintainer='Johannes Schindelin ' filename='IO\_.jar ' source=source latest-version='March 2002 ' status='stable ' category='[Import/Export](:Category:Import-Export "wikilink") ' %}
 
 1.  Go to menu {% include bc content='Images | Stacks | Tools | Animation options...'%}
 2.  In the dialog, set the desired frames per second, or "Speed".

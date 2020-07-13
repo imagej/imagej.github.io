@@ -71,7 +71,7 @@ The project would consist of
 
 <!-- end list -->
 
-  - integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at {% include github repo='fiji' path='src-plugins/JRuby\_Interpreter/src/main/java/JRuby/JRuby\_Interpreter.java' label='the JRuby Interpreter' %} for an example,
+  - integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at {% include github repo='fiji ' path='src-plugins/JRuby\_Interpreter/src/main/java/JRuby/JRuby\_Interpreter.java ' label='the JRuby Interpreter ' %} for an example,
 
 <!-- end list -->
 

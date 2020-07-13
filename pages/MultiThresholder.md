@@ -12,9 +12,9 @@ description: test description
 {% capture reason%}
 This plugin was removed, as the [Auto Threshold](Auto_Threshold "wikilink") plugin from {% include person content='Landini' %} does a better job.
 {% endcapture %}
-{% include pluginremoved reason=reason date='April 2009' %}
+{% include pluginremoved reason=reason date='April 2009 ' %}
 
-{% include info-box software='ImageJ' name='MultiThresholder' author='Kevin (Gali) Baler' filename=' [Multi\_Thresholder.jar](https://imagej.net/plugins/download/jars/Multi_Thresholder.jar) (30,729 Bytes)' source='in .jar file' released='21 July 2005' latest-version='25 January 2007' status='unknown' category='[Segmentation](:Category:Segmentation "wikilink")' website='https://imagej.net/plugins/multi-thresholder.html' %}
+{% include info-box software='ImageJ ' name='MultiThresholder ' author='Kevin (Gali) Baler ' filename=' [Multi\_Thresholder.jar](https://imagej.net/plugins/download/jars/Multi_Thresholder.jar) (30,729 Bytes) ' source='in .jar file ' released='21 July 2005 ' latest-version='25 January 2007 ' status='unknown ' category='[Segmentation](:Category:Segmentation "wikilink") ' website='https://imagej.net/plugins/multi-thresholder.html ' %}
 
 ## Purpose
 

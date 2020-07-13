@@ -309,7 +309,7 @@ There are some gotchas: some feature analyzers require other numerical features 
 Finally, depending on their type, numerical features are not stored at the same place:
 
   - Spot features are simply conveyed by the spot object, and you can access them through `spot.getFeature('FEATURE_NAME')`
-  - Edge and track features are stored in a sub-component of the model object called the FeatureModel ({% include github repo='fiji' path='src-plugins/TrackMate\_/src/main/java/fiji/plugin/trackmate/FeatureModel.java' label='FeatureModel.java' %}).
+  - Edge and track features are stored in a sub-component of the model object called the FeatureModel ({% include github repo='fiji ' path='src-plugins/TrackMate\_/src/main/java/fiji/plugin/trackmate/FeatureModel.java ' label='FeatureModel.java ' %}).
 
 Check the script below to see a working example.
 
@@ -482,7 +482,7 @@ This script just shows you how to use this construct to build and populate a mod
 
 Spot quality and link cost are typically useful to quantify automatic spot detection and linking. We typically use negative values for these two numbers when doing manual edits.
 
-The script below does this: ![TrackMate\_AnimatedName.gif](/images/pages/TrackMate_AnimatedName.gif "TrackMate_AnimatedName.gif")
+The script below does this: ![TrackMate\_AnimatedName.gif](/images/pages/TrackMate AnimatedName.gif "TrackMate AnimatedName.gif")
 
 ``` python
 import ij.gui.NewImage as NewImage
@@ -922,7 +922,7 @@ TrackMate allows for the addition of jar files that contain extra TrackMate modu
 
 As any other module it can be used in a script, provided the jar file is in the plugins or jars folder of Fiji:
 
-{% include github-embed org='fiji' repo='TrackMate' source='../../../scripts/CallTrackMateMultiChannel.py' %}
+{% include github-embed org='fiji ' repo='TrackMate ' source='../../../scripts/CallTrackMateMultiChannel.py ' %}
 
 ## Making TrackMate macro recordable with a 64-line script
 
@@ -930,7 +930,7 @@ Contributed by {% include person content='Eglinger' %} during a NEUBIAS course. 
 
 > "The macro language is too limited to work with such awesome things as TrackMate, but that you can do everything with a more powerful scripting language. So when using a 64-line script to call it, it actually is macro recordable."
 
-{% include github-embed org='fiji' repo='TrackMate' source='../../../scripts/Run\_TrackMate\_Headless.groovy' %}
+{% include github-embed org='fiji ' repo='TrackMate ' source='../../../scripts/Run\_TrackMate\_Headless.groovy ' %}
 
 ## Add 3D maximas in the ROI Manager using TrackMate
 

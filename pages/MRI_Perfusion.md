@@ -18,13 +18,17 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='CSIM-Toolkits' repo='ImageJ/tree/master/plugins/MRI-Perfusion' label='GitHub CSIM-ImageJ MRI Perfusion repository' %}
+{% include github org='CSIM-Toolkits ' repo='ImageJ/tree/master/plugins/MRI-Perfusion ' label='GitHub CSIM-ImageJ MRI Perfusion repository ' %}
 {% endcapture %}
-{% include info-box name='MRI Perfusion PlugIn' software='Fiji' author=author maintainer=maintainer source=source released='February 04<sup>th</sup>, 2015' latest-version='February 04<sup>th</sup>, 2015' status='experimental, active' category='[Plugins](:Category:Plugins "wikilink"), [MRI](:Category:Perfusion "wikilink")' %}
+{% include info-box name='MRI Perfusion PlugIn ' software='Fiji ' author=author maintainer=maintainer source=source released='February 04<sup>th</sup>, 2015 ' latest-version='February 04<sup>th</sup>, 2015 ' status='experimental, active ' category='[Plugins](:Category:Plugins "wikilink"), [MRI](:Category:Perfusion "wikilink") ' %}
 
 ## Perfusion in MRI
 
-![Example of the perfusion curve obtained in the peritumoral region on brain cancer.](/images/pages/Perfusion.png "Example of the perfusion curve obtained in the peritumoral region on brain cancer.")
+
+{% capture title%}
+ Example of the perfusion curve obtained in the peritumoral region on brain cancer. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Perfusion.png" title=title %}
 
 Perfusion is defined as the passage of fluid through the lymphatic system or blood vessels to an organ or a tissue. The practice of perfusion scanning, is the process by which this perfusion can be observed, recorded and quantified. The term perfusion scanning encompasses a wide range of [medical imaging](wikipedia:Medical_imaging "wikilink") modalities.
 

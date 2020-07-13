@@ -10,6 +10,6 @@ description: test description
 
 {% include learn content='languages' %} A thin wrapper around [Scala](http://www.scala-lang.org/) is currently available on the {% include list-of-update-sites content='Java 8 update site' %}, providing Scala scripting capabilities in ImageJ. However, support is *very new* and *largely untested*. Support will be improved later, as time allows.
 
-See also {% include github org='scijava' repo='scripting-scala' label='scripting-scala on GitHub' %}.
+See also {% include github org='scijava ' repo='scripting-scala ' label='scripting-scala on GitHub ' %}.
 
 [Category:Scripting](Category:Scripting "wikilink")

@@ -18,9 +18,13 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='ijpb' repo='MorphoLibJ' %}
+{% include github org='ijpb ' repo='MorphoLibJ ' %}
 {% endcapture %}
-{% include info-box name='Morphological Segmentation' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1)' status='stable, active' category='[Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink")' %}{| |style="vertical-align:top" |![Visual description of the different steps of the Morphological Segmentation plugin.](/images/pages/Morphological-Segmentation-animation-blobs.gif "Visual description of the different steps of the Morphological Segmentation plugin.") |}
+{% include info-box name='Morphological Segmentation ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink") ' %}{| |style="vertical-align:top" |
+{% capture title%}
+ Visual description of the different steps of the Morphological Segmentation plugin. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Morphological-Segmentation-animation-blobs.gif" title=title %} |}
 
 ## Introduction
 
@@ -36,7 +40,11 @@ The user can pan, zoom in and out, or scroll between slices (if the input image 
 
 ### Input Image panel
 
-![Input Image panel](/images/pages/Morphological-segmentation-input-image-panel.png "Input Image panel")First, you need to indicate the nature of the input image to process. This is a **key parameter** since the watershed algorithm is expecting an image where the boundaries of objects present high intensity values (usually as a result of a gradient or edge detection filtering).
+
+{% capture title%}
+ Input Image panel 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Morphological-segmentation-input-image-panel.png" title=title %}First, you need to indicate the nature of the input image to process. This is a **key parameter** since the watershed algorithm is expecting an image where the boundaries of objects present high intensity values (usually as a result of a gradient or edge detection filtering).
 
 You should select:
 
@@ -77,7 +85,11 @@ If your segmentation is taking too long or you want **to stop it** for any reaso
   - **Show result overlay**: toggle result overlay.
   - **Create image button**: create a new image with the results displayed in the canvas.
 
-![Examples of the 4 different display options](/images/pages/Morphological-segmentation-result-examples.png "Examples of the 4 different display options")
+
+{% capture title%}
+ Examples of the 4 different display options 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Morphological-segmentation-result-examples.png" title=title %}
 
 ### Post-processing panel
 
@@ -223,9 +235,13 @@ You should now find the plugin under the sub-menu {% include bc content='Plugins
 
 ## Examples
 
-|                                                                                                                                                                                                                                                                                                                                                                         |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![3d reconstruction of an *Arabidopsis thaliana* embryo using the Morphological Segmentation plugin. Image courtesy of Jean-Christophe Palauqui (INRA-Versailles)](/images/pages/Arabidopsis-embryo-3d-animation.gif "3d reconstruction of an Arabidopsis thaliana embryo using the Morphological Segmentation plugin. Image courtesy of Jean-Christophe Palauqui (INRA-Versailles)") |
+|                                                                                                                                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 
+{% capture title%}
+ 3d reconstruction of an *Arabidopsis thaliana* embryo using the Morphological Segmentation plugin. Image courtesy of Jean-Christophe Palauqui (INRA-Versailles) 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Arabidopsis-embryo-3d-animation.gif" title=title %} |
 
 ## Citation
 

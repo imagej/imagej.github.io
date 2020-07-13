@@ -12,6 +12,8 @@ Adelson's_Squares,reader,
 Alida,pandoc,
 Architecture,reader,
 BigDataServer,pandoc,
+Classic_Watershed,linquid,syntax with image attached to infobox is not converted
+Cover_Maker,liquid,include captures in tables don't work
 Deconvolution,pandoc,
 Description_of_ImageJ's_plugin_architecture,reader,
 DiameterJ,reader,

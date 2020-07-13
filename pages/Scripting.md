@@ -80,7 +80,7 @@ You can create, edit and run scripts using the built-in [Script Editor](Script_E
 
 For the script to appear in the ImageJ menus, the following must apply:
 
-{% include box text='".txt" is not a supported script extension' width='30%' float='right' %}
+{% include box text='".txt" is not a supported script extension ' width='30% ' float='right ' %}
 
 1.  The script file is saved in the `ImageJ.app/scripts` or the `ImageJ.app/plugins/Scripts` directory (or a subdirectory thereof).
 2.  The script name ends in a supported script extension. For example

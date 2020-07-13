@@ -14,9 +14,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='mcib3d' repo='tapas-core' %}
+{% include github org='mcib3d ' repo='tapas-core ' %}
 {% endcapture %}
-{% include info-box name='TAPAS' software='tapas' update-site='TAPAS' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d) ' source=source released='14/08/2019, V0.4' latest-version='22/06/2020, V0.6.3' status='stable, active' category='[Automation](:Category:Automation "wikilink"), [Analysis](:Category:Analysis "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Segmentation](:Category:Segmentation "wikilink")' %}
+{% include info-box name='TAPAS ' software='tapas ' update-site='TAPAS ' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d) ' source=source released='14/08/2019, V0.4 ' latest-version='22/06/2020, V0.6.3 ' status='stable, active ' category='[Automation](:Category:Automation "wikilink"), [Analysis](:Category:Analysis "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Segmentation](:Category:Segmentation "wikilink") ' %}
 
 ## TAPAS : An integrated tool for batch processing
 
@@ -92,11 +92,11 @@ A list of tutorials :
   - How to use the **analyzeParticles** module for segmentation and measurement [here](https://imagejdocu.list.lu/plugin/utilities/tapas_tutorial/2d_measurements_with_analyze_particles/start).
   - How to quantify **layers distribution** [here](https://imagejdocu.list.lu/plugin/utilities/layers_analysis/start).
 
-The list of available modules is described in ![Tapas\_description0.6.3.pdf](/images/pages/Tapas_description0.6.3.pdf "Tapas_description0.6.3.pdf").
+The list of available modules is described in ![Tapas\_description0.6.3.pdf](/images/pages/Tapas description0.6.3.pdf "Tapas description0.6.3.pdf").
 
 ## Citation
 
-2018 Whitehead, L., Wimmer, V., Lafouresse, F., Ratnayake, D., Currie, P., Groom, J., Rogers, K. and Boudier, T. Towards an Automated Processing and Analysis System for multi-dimensional light-sheet microscopy big data using ImageJ and OMERO. International Microscopy Congress IMC 19. (![Abstract\_1848\_thomasboudier.pdf](/images/pages/Abstract_1848_thomasboudier.pdf "Abstract_1848_thomasboudier.pdf"))
+2018 Whitehead, L., Wimmer, V., Lafouresse, F., Ratnayake, D., Currie, P., Groom, J., Rogers, K. and Boudier, T. Towards an Automated Processing and Analysis System for multi-dimensional light-sheet microscopy big data using ImageJ and OMERO. International Microscopy Congress IMC 19. (![Abstract\_1848\_thomasboudier.pdf](/images/pages/Abstract 1848 thomasboudier.pdf "Abstract 1848 thomasboudier.pdf"))
 
 ## License
 

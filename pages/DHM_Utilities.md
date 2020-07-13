@@ -10,11 +10,11 @@ description: test description
 
 
 {% capture devStatus%}
-{% include devstatus developer='yes' incubating='no' obsolete='no' %}
+{% include devstatus developer='yes ' incubating='no ' obsolete='no ' %}
 {% endcapture %}
 
 {% capture supportStatus%}
-{% include supportstatus debugger='yes' reviewer='yes' support='yes' %}
+{% include supportstatus debugger='yes ' reviewer='yes ' support='yes ' %}
 {% endcapture %}
 
 {% capture founders%}
@@ -44,7 +44,7 @@ description: test description
 {% capture maintainers%}
 {% include person content='David Cohoe' %}
 {% endcapture %}
-{% include component project='ImageJ' name='DHM Utilities' license='[LGPLv3](LGPLv3 "wikilink")' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
+{% include component project='ImageJ ' name='DHM Utilities ' license='[LGPLv3](LGPLv3 "wikilink") ' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
 
 DHM Utilities is a collection of plugins for use in Digital Holographic Microscopy. There are three main plugins packaged with DHM Utilities:
 

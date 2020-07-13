@@ -39,7 +39,7 @@ Methods of getting the patch to Wayne include:
 
   - Send the modified code in a [private mail to Wayne](mailto:rasbandw@mail.nih.gov). He prefers not to discuss code on the ImageJ mailing list.
   - Send a patch to [Wayne via private mail](mailto:rasbandw@mail.nih.gov). It should apply to [the latest revision](https://github.com/imagej/imagej1/commit/master) and must not use any Git extension because Wayne uses `patch(1)` to apply the patch.
-  - Submit a pull request on GitHub against {% include github org='imagej' repo='imagej1' label='the ImageJ1 repository' %}. Please note, though, that none of [the past Pull Requests](https://github.com/imagej/imagej1/pulls?q=is%3Apr+is%3Aclosed) were merged using the standard Git workflow.
+  - Submit a pull request on GitHub against {% include github org='imagej ' repo='imagej1 ' label='the ImageJ1 repository ' %}. Please note, though, that none of [the past Pull Requests](https://github.com/imagej/imagej1/pulls?q=is%3Apr+is%3Aclosed) were merged using the standard Git workflow.
 
 The important part is that Wayne receive the code/patch, since he is the only one with the authority to merge it.
 

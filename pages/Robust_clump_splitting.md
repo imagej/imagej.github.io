@@ -16,7 +16,7 @@ description: test description
 {% capture maintainer%}
 {% include person content='LouiseBloch' %}, {% include person content='Twagner' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='Robust Clump Splitting' author=author maintainer=maintainer filename='ij\_robust\_split.jar \[\]' source='Github https://github.com/thorstenwagner/ij-robust-split' latest-version='v1.0.0 (04 Sep 2016)' status='active' %}
+{% include info-box software='Fiji ' name='Robust Clump Splitting ' author=author maintainer=maintainer filename='ij\_robust\_split.jar \[\] ' source='Github https://github.com/thorstenwagner/ij-robust-split ' latest-version='v1.0.0 (04 Sep 2016) ' status='active ' %}
 
 ## Purpose
 

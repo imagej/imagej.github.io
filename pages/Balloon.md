@@ -19,7 +19,7 @@ A plugin\[1\] that allows the segmentation off cell wall boundaries from microsc
   - All previous segmentation steps are automatic, but it is possible to make manual modifications at each step;
   - Settings are saved in properties files for different types of images to be segmented
 
-![Plugin\_screencapture.jpg](/images/pages/Plugin_screencapture.jpg "Plugin_screencapture.jpg")
+![Plugin\_screencapture.jpg](/images/pages/Plugin screencapture.jpg "Plugin screencapture.jpg")
 
 ### Segmentation process
 
@@ -61,4 +61,4 @@ The plugin is still work in progress. Things to be done includes use of threadin
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Citable](Category:Citable "wikilink")
 
-1.  {% include cite content='journal' author='Federici Fernán, Dupuy Lionel, Laplaze Laurent, Heisler Marcus, Haseloff Jim.' title='Integrated genetic and computation methods for in planta cytometry' journal='Nature Methods' year='2012' volume='advance online publication' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1940.html' %}
+1.  {% include cite content='journal' author='Federici Fernán, Dupuy Lionel, Laplaze Laurent, Heisler Marcus, Haseloff Jim. ' title='Integrated genetic and computation methods for in planta cytometry ' journal='Nature Methods ' year='2012 ' volume='advance online publication ' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1940.html ' %}

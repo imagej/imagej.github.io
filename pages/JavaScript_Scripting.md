@@ -20,7 +20,7 @@ ImageJ supports JavaScript via Java's built-in [Nashorn JavaScript engine](wikip
 
 ### Importing classes
 
-{% include importing-classes lang='JavaScript' %} You can specify imports in JavaScript as follows:
+{% include importing-classes lang='JavaScript ' %} You can specify imports in JavaScript as follows:
 
 ``` javascript
 importClass(Packages.java.io.File)
@@ -240,7 +240,7 @@ var imp = createImage(400, 400, "RGB");
 imp.show();
 ```
 
-For a complex example see the example script {% include github repo='fiji' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js' label='Multithreaded Image Processing in Javascript' %}, which, beyond parallelization, illustrates how to pass functions as arguments to other functions, and how to invoke them with variable number of arguments.
+For a complex example see the example script {% include github repo='fiji ' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js ' label='Multithreaded Image Processing in Javascript ' %}, which, beyond parallelization, illustrates how to pass functions as arguments to other functions, and how to invoke them with variable number of arguments.
 
 #### Functions as Objects
 
@@ -879,7 +879,7 @@ Always remember: only <b>completely</b> independent tasks can be parallelized ef
 
 A good strategy for multithreading involves carefully considering the task to parallelize: how small can the chunks be? For an image, a chunk could be a pixel or a line, but often those are too small to overcome the overhead of parallelization.
 
-Despite the simple example below, the <i>multithreader</i> framework function allows variable amount of arguments to be passed, as illustrated in the complete plugin {% include github repo='fiji' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js' label='Multithreaded\_Image\_Processing\_in\_Javascript.js' %}. The script shows how to generate an image with random pixel values in a multithreaded manner, and how the choice of chunks to process in parallel is made for reasonable effectiveness.
+Despite the simple example below, the <i>multithreader</i> framework function allows variable amount of arguments to be passed, as illustrated in the complete plugin {% include github repo='fiji ' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js ' label='Multithreaded\_Image\_Processing\_in\_Javascript.js ' %}. The script shows how to generate an image with random pixel values in a multithreaded manner, and how the choice of chunks to process in parallel is made for reasonable effectiveness.
 
 ``` javascript
 // Import all classes that are used more than once:
@@ -929,7 +929,7 @@ function printer(i) {
  multithreader(printer, 0, 10);
 ```
 
-See the complete file here: {% include github repo='fiji' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js' label='Multithreaded\_Image\_Processing\_in\_Javascript.js' %}
+See the complete file here: {% include github repo='fiji ' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js ' label='Multithreaded\_Image\_Processing\_in\_Javascript.js ' %}
 
 # Links
 

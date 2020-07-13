@@ -82,7 +82,7 @@ We also integrated a first version of the Script Editor, using the opportunity t
 
 In preparation for the final move to Fiji2 (which will bring up ImageJ2's GUI by default), we will provide a command to switch between the ImageJ2 and the legacy mode. Until Fiji2, the default user interface will still be ImageJ 1.x.
 
-![**ImageJ2 legacy mode**](/images/pages/ij2-legacy-mode.png "ImageJ2 legacy mode")
+![**ImageJ2 legacy mode**](/images/pages/Ij2-legacy-mode.png "ImageJ2 legacy mode")
 
 ## What does this mean for you?
 

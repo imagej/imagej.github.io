@@ -18,7 +18,7 @@ This tutorial explains how to upload changes to core [ImageJ](ImageJ "wikilink")
 
 The typical workflow is:
 
-1.  Update {% include github org='fiji' repo='fiji' label='Fiji.git' %} to depend on the latest {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %}
+1.  Update {% include github org='fiji ' repo='fiji ' label='Fiji.git ' %} to depend on the latest {% include github org='scijava ' repo='pom-scijava ' label='pom-scijava ' %}
 2.  Use `mvn -Dimagej.app.directory=$HOME/Desktop/Fiji.app/ -Ddelete.other.versions=true` to install into an existing (up-to-date) Fiji installation
 3.  NOTE: if there are any version downgrades at this point, this indicates dependency skew. Fiji.git should be updated appropriately, restarting from step 1
 4.  Upload changes to ImageJ update site
@@ -66,7 +66,7 @@ In the *Manage update sites* dialog, on the Fiji update site line, add the follo
 
 Note that your username will always start with an upper case letter. It should look like this:
 
-![Update\_site\_fiji\_creds.png](/images/pages/Update_site_fiji_creds.png "Update_site_fiji_creds.png")
+![Update\_site\_fiji\_creds.png](/images/pages/Update site fiji creds.png "Update site fiji creds.png")
 
 You can now close the *Manage update sites* window and go on to [ Uploading your resources](#Uploading_your_resources "wikilink").
 
@@ -81,7 +81,7 @@ In the *Manage update sites* dialog, on the ImageJ update site line, add the fol
 
 It should look like this:
 
-![Update\_site\_ij2\_creds.png](/images/pages/Update_site_ij2_creds.png "Update_site_ij2_creds.png")
+![Update\_site\_ij2\_creds.png](/images/pages/Update site ij2 creds.png "Update site ij2 creds.png")
 
 You can now close the *Manage update sites* window and go on to [ Uploading your resources](#Uploading_your_resources "wikilink").
 

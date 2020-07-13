@@ -8,7 +8,7 @@ categories: Fiji,Plugins,Color processing
 description: test description
 ---
 
-{% include info-box software='Fiji' name='Simulate Color Blindness' author='Johannes Schindelin' maintainer='Johannes Schindelin' filename='Dichromacy\_.jar' source=' [GitHub](https://github.com/fiji/Dichromacy/blob/8f1cd16a74b89f4761840e9df9e47209afc8dc7c/src/main/java/Daltonize_.java) ' released='2009' latest-version='2009' status='active' category='[Color processing](:Category:Color_processing "wikilink")' %}
+{% include info-box software='Fiji ' name='Simulate Color Blindness ' author='Johannes Schindelin ' maintainer='Johannes Schindelin ' filename='Dichromacy\_.jar ' source=' [GitHub](https://github.com/fiji/Dichromacy/blob/8f1cd16a74b89f4761840e9df9e47209afc8dc7c/src/main/java/Daltonize_.java) ' released='2009 ' latest-version='2009 ' status='active ' category='[Color processing](:Category:Color_processing "wikilink") ' %}
 
 This plugin simulates color blindness.
 
@@ -18,12 +18,16 @@ It is based on http://quarkphysics.ca/phys1/light/u-light.htm .
 
 Choose one of the color blindness modes in the dialog, then press OK:
 
-![Simulate\_Color\_Blindness\_Dialog.png](/images/pages/Simulate_Color_Blindness_Dialog.png "Simulate_Color_Blindness_Dialog.png")
+![Simulate\_Color\_Blindness\_Dialog.png](/images/pages/Simulate Color Blindness Dialog.png "Simulate Color Blindness Dialog.png")
 
 Here's how the results look like when applied to the *Clown* sample image:
 
-|                                                                                                                                                                            |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Simulate Color Blindness: overview of the nine different modes.](/images/pages/Simulate_Color_Blindness_Results.png "Simulate Color Blindness: overview of the nine different modes.") |
+|                                                                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 
+{% capture title%}
+ Simulate Color Blindness: overview of the nine different modes. 
+{% endcapture %}
+{% include thumbnail src="/images/pages/Simulate Color Blindness Results.png" title=title %} |
 
 [Category:Fiji](Category:Fiji "wikilink") [Category:Plugins](Category:Plugins "wikilink") [Category:Color processing](Category:Color_processing "wikilink")

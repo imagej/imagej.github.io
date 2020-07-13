@@ -10,15 +10,15 @@ description: test description
 
 
 {% capture source%}
-{% include github org='ptbiop' repo='ijp-max-inscribed-circles' %}
+{% include github org='ptbiop ' repo='ijp-max-inscribed-circles ' %}
 {% endcapture %}
-{% include info-box name='Max Inscribed Circles' software='Fiji' author='Olivier Burri, Romain Guiet' maintainer='Olivier Burri' filename='Max\_Inscribed\_Circle.jar' released='August 2015' latest-version='July 2016' source=source status='stable' website=' [BIOP Staff Page](https://www.epfl.ch/research/facilities/ptbiop/staff/) ' %}
+{% include info-box name='Max Inscribed Circles ' software='Fiji ' author='Olivier Burri, Romain Guiet ' maintainer='Olivier Burri ' filename='Max\_Inscribed\_Circle.jar ' released='August 2015 ' latest-version='July 2016 ' source=source status='stable ' website=' [BIOP Staff Page](https://www.epfl.ch/research/facilities/ptbiop/staff/) ' %}
 
 ## Purpose
 
 This is an implementation of the Largest Inscribed Circle algorithm using an euclidean distance map. The algorithm is looped until a circle diameter smaller than the defined minimum diameter is found. The code for this plugin was inspired by this [Matlab Central function](http://www.mathworks.ch/matlabcentral/fileexchange/30805-maximum-inscribed-circle-using-distance-transform)
 
-![Plugin Dialog choices](/images/pages/Max_largest_circ_dialog2.png "Plugin Dialog choices")
+![Plugin Dialog choices](/images/pages/Max largest circ dialog2.png "Plugin Dialog choices")
 
 ## Details
 
@@ -47,7 +47,7 @@ It will add all the found circles to the ROI Manager.
 
 Setting the Minimum Disk Diameter to 0 will return a single ROI with the largest inscribed circle.
 
-![Result of Plugin on whole image](/images/pages/Max_largest_circ_beforeafter.png "Result of Plugin on whole image")
+![Result of Plugin on whole image](/images/pages/Max largest circ beforeafter.png "Result of Plugin on whole image")
 
 ## Macro Recordable
 

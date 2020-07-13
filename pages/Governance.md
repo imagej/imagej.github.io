@@ -278,7 +278,7 @@ Birgit Möller</p></td>
 </table>
 
 <sup>1</sup> Pietzsch leads on day to day issues. Pietzsch, Preibisch and Saalfeld vote on primary decisions, with Pietzsch's vote breaking ties.  
-<sup>2</sup> Barber leads development of the {% include github org='slim-curve' repo='slim-curve' label='SLIM Curve C library' %}; Rueden leads development of the {% include github org='slim-curve' repo='slim-plugin' label='SLIM Curve plugin for ImageJ' %}.
+<sup>2</sup> Barber leads development of the {% include github org='slim-curve ' repo='slim-curve ' label='SLIM Curve C library ' %}; Rueden leads development of the {% include github org='slim-curve ' repo='slim-plugin ' label='SLIM Curve plugin for ImageJ ' %}.
 
 ## Further reading
 

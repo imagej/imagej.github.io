@@ -12,9 +12,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='mobie-org' repo='mobie-viewer-fiji' %}
+{% include github org='mobie-org ' repo='mobie-viewer-fiji ' %}
 {% endcapture %}
-{% include info-box name='MoBIE' software='Fiji' update-site='MoBIE' author='Christian Tischer' maintainer='Christian Tischer' source=source %}
+{% include info-box name='MoBIE ' software='Fiji ' update-site='MoBIE ' author='Christian Tischer ' maintainer='Christian Tischer ' source=source %}
 
   
   

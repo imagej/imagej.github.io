@@ -19,9 +19,9 @@ A TrackMate action takes the shape of an item in a drop-down list in the last pa
 
 In this tutorial, we will use it to launch the event logger we created in the [previous tutorial](How_to_write_your_own_viewer_for_TrackMate "wikilink") of this series. If you remember, we saw in the last paragraph how to use the `visible = false` parameter the [SciJava](SciJava "wikilink") annotation to hide it from the view menu. Hereby preventing the user to access it. No problem, we will now build an action that will launch it as a supplementary view.
 
-## The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/TrackMateActionFactory.java' label='TrackMateActionFactory' %} interface.
+## The {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/action/TrackMateActionFactory.java ' label='TrackMateActionFactory ' %} interface.
 
-Again, the action behavior and its integration in TrackMate are split in two classes. The behavior is described by the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/TrackMateAction.java' label='TrackMateAction' %} interface. The integration mechanism is controlled by the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/TrackMateActionFactory.java' label='TrackMateActionFactory' %} interface, which extends the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/TrackMateModule.java' label='TrackMateModule' %} interface.
+Again, the action behavior and its integration in TrackMate are split in two classes. The behavior is described by the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/action/TrackMateAction.java ' label='TrackMateAction ' %} interface. The integration mechanism is controlled by the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/action/TrackMateActionFactory.java ' label='TrackMateActionFactory ' %} interface, which extends the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/TrackMateModule.java ' label='TrackMateModule ' %} interface.
 
 ### [SciJava](SciJava "wikilink") parameters recap.
 
@@ -48,7 +48,7 @@ The method specific to actions is more interesting:
 public TrackMateAction create( final TrackMateGUIController controller )
 ```
 
-This means that when we create our specific action, we have access to the some of GUI context through the controller. We therefore have to check its {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/gui/TrackMateGUIController.java' label='API' %} to know what we can get. It gives us access to:
+This means that when we create our specific action, we have access to the some of GUI context through the controller. We therefore have to check its {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/gui/TrackMateGUIController.java ' label='API ' %} to know what we can get. It gives us access to:
 
   - The GUI window itself (`public TrackMateWizard getGUI()`), that we can use as parent for dialogs, wild live GUI editing...
   - The trackmate plugin (`public TrackMate getPlugin()`), hereby the model and settings objects.
@@ -114,7 +114,7 @@ public class LaunchEventLoggerActionFactory implements TrackMateActionFactory
 
 Nothing complicated.
 
-## The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/TrackMateAction.java' label='TrackMateAction' %} interface.
+## The {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/action/TrackMateAction.java ' label='TrackMateAction ' %} interface.
 
 This interface is just made of two methods:
 
@@ -176,7 +176,7 @@ public class LaunchEventLoggerAction implements TrackMateAction
 
 And here are the results:
 
-![TrackMate\_CustomAction\_1.png](/images/pages/TrackMate_CustomAction_1.png "TrackMate_CustomAction_1.png")
+![TrackMate\_CustomAction\_1.png](/images/pages/TrackMate CustomAction 1.png "TrackMate CustomAction 1.png")
 
 You can imagine a lot of applications for Actions. Since they give you access to most of the plugin context, you can basically plug anything there. The one limitation is that it does not fit perfectly in the existing GUI: actions just appear as items in a drop-down list. But in most cases it does not matter much. Actions are very useful to quickly graft a piece of new functionality on TrackMate.
 

@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='fiji' repo='M\_I\_P' %}
+{% include github org='fiji ' repo='M\_I\_P ' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Multiple Image Processor' maintainer='[at rcm.upr.edu](mailto:ngonzalez)' author='Nathaniel Gonzalez Santiago' source=source released='10/10/2005' latest-version='10/10/2005' status='stable' category='[:Category:Plugins](:Category:Plugins "wikilink")' website=' [Center for Information Architecture in Research](http://ciar.rcm.upr.edu/projects/imageprocessor/multiples) ' %}
+{% include info-box software='ImageJ ' name='Multiple Image Processor ' maintainer='[at rcm.upr.edu](mailto:ngonzalez) ' author='Nathaniel Gonzalez Santiago ' source=source released='10/10/2005 ' latest-version='10/10/2005 ' status='stable ' category='[:Category:Plugins](:Category:Plugins "wikilink") ' website=' [Center for Information Architecture in Research](http://ciar.rcm.upr.edu/projects/imageprocessor/multiples) ' %}
 
 ## Multiple Image Processor
 
@@ -20,6 +20,6 @@ The Multiple Image Processor allows the researchers to work on large images with
 
 **Note**: The plugin ignores all input files which do are not of one of the supported file types.
 
-![Multiple\_Image\_Processor.jpg](/images/pages/Multiple_Image_Processor.jpg "Multiple_Image_Processor.jpg")
+![Multiple\_Image\_Processor.jpg](/images/pages/Multiple Image Processor.jpg "Multiple Image Processor.jpg")
 
 [Category:Plugins](Category:Plugins "wikilink")

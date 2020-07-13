@@ -10,9 +10,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='imagej' repo='imagej-plugins-commands' source='net/imagej/plugins/commands/upload/SampleImageUploader.java' %}
+{% include github org='imagej ' repo='imagej-plugins-commands ' source='net/imagej/plugins/commands/upload/SampleImageUploader.java ' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Upload Sample Image' maintainer='Johannes Schindelin' author='Johannes Schindelin' source=source released='2009-06-11' latest-version='2014-07-01' status='stable' category='[:Category:Plugins](:Category:Plugins "wikilink")' website='' %}== Upload Sample Image ==
+{% include info-box software='ImageJ ' name='Upload Sample Image ' maintainer='Johannes Schindelin ' author='Johannes Schindelin ' source=source released='2009-06-11 ' latest-version='2014-07-01 ' status='stable ' category='[:Category:Plugins](:Category:Plugins "wikilink") ' website=' ' %}== Upload Sample Image ==
 
 Use the {% include bc content='Help | Upload Sample Image'%} command to upload a file (not just images) meant for the ImageJ developers. You might need to do this e.g. when the file is too large for email attachments, or when you want to accompany a [bug report](Report_a_Bug "wikilink") with a large image.
 

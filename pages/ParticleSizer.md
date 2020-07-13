@@ -16,7 +16,7 @@ description: test description
 {% capture maintainer%}
 {% include person content='Twagner' %}
 {% endcapture %}
-{% include info-box software='Fiji' update-site='Biomedgroup & ParticleSizer' name='ParticleSizer' author=author maintainer=maintainer filename='ParticleSizer\_.jar [\[1](https://github.com/thorstenwagner/ij-particlesizer/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-particlesizer) \]' latest-version='v1.0.7 (28. Ocotober 2016)' status='active' %}
+{% include info-box software='Fiji ' update-site='Biomedgroup & ParticleSizer ' name='ParticleSizer ' author=author maintainer=maintainer filename='ParticleSizer\_.jar [\[1](https://github.com/thorstenwagner/ij-particlesizer/releases/latest) \] ' source='Github [\[2](https://github.com/thorstenwagner/ij-particlesizer) \] ' latest-version='v1.0.7 (28. Ocotober 2016) ' status='active ' %}
 
 # Purpose
 
@@ -38,7 +38,7 @@ You can now start the ParticleSizer via *Plugins -\> NanoDefine -\> ParticleSize
 
 # Settings
 
-**Segmentation:**![Psizer\_gui.png](/images/pages/Psizer_gui.png "Psizer_gui.png")
+**Segmentation:**![Psizer\_gui.png](/images/pages/Psizer gui.png "Psizer gui.png")
 
   - Circular window radius: This is a parameter of the local thresholding technique. The ParticleSizer does not use a global threshold to binarize the image. Instead it uses a local threshold which is estimated for a specific circular region with the configured radius.
   - Rolling ball radius: The background is removed by rolling a ball with this radius over the surface (intensity interpreded as hight) of the image. It should be at least as large as the largest object in image which does not belongs to the background.
@@ -99,17 +99,17 @@ The ParticleSizer supports the [NanoDefiner e-tool](https://labs.inf.fh-dortmund
 
 ## Gold 8 nm, Settings: Default
 
-![Gold\_nooverlay.png](/images/pages/Gold_nooverlay.png "Gold_nooverlay.png") ![Gold\_overlay.png](/images/pages/Gold_overlay.png "Gold_overlay.png") ![Hist\_gold\_normal.png](/images/pages/Hist_gold_normal.png "Hist_gold_normal.png")
+![Gold\_nooverlay.png](/images/pages/Gold nooverlay.png "Gold nooverlay.png") ![Gold\_overlay.png](/images/pages/Gold overlay.png "Gold overlay.png") ![Hist\_gold\_normal.png](/images/pages/Hist gold normal.png "Hist gold normal.png")
 
 ## Gold 8 nm, Settings: +Ellipse fitting mode
 
-![Gold\_nooverlay.png](/images/pages/Gold_nooverlay.png "Gold_nooverlay.png") ![Gold\_overlay\_ellipsefitting.png](/images/pages/Gold_overlay_ellipsefitting.png "Gold_overlay_ellipsefitting.png") ![Gold\_overlay\_ellipsefitting\_size.png](/images/pages/Gold_overlay_ellipsefitting_size.png "Gold_overlay_ellipsefitting_size.png")
+![Gold\_nooverlay.png](/images/pages/Gold nooverlay.png "Gold nooverlay.png") ![Gold\_overlay\_ellipsefitting.png](/images/pages/Gold overlay ellipsefitting.png "Gold overlay ellipsefitting.png") ![Gold\_overlay\_ellipsefitting\_size.png](/images/pages/Gold overlay ellipsefitting size.png "Gold overlay ellipsefitting size.png")
 
-\== Gold 10 nm, Settings: +Min. OTB difference=30 == ![10nm\_gold\_nooverlay.png](/images/pages/10nm_gold_nooverlay.png "10nm_gold_nooverlay.png") ![10nm\_gold\_overlay.png](/images/pages/10nm_gold_overlay.png "10nm_gold_overlay.png") ![10nm\_gold\_overlay\_size.png](/images/pages/10nm_gold_overlay_size.png "10nm_gold_overlay_size.png")
+\== Gold 10 nm, Settings: +Min. OTB difference=30 == ![10nm\_gold\_nooverlay.png](/images/pages/10nm gold nooverlay.png "10nm gold nooverlay.png") ![10nm\_gold\_overlay.png](/images/pages/10nm gold overlay.png "10nm gold overlay.png") ![10nm\_gold\_overlay\_size.png](/images/pages/10nm gold overlay size.png "10nm gold overlay size.png")
 
 ## Kaolin, Settings: +Single particle mode
 
-![Kaolin\_ohne\_overlay.png](/images/pages/Kaolin_ohne_overlay.png "Kaolin_ohne_overlay.png") ![Kaolin\_overlay.png](/images/pages/Kaolin_overlay.png "Kaolin_overlay.png") ![Kaolin\_size\_distr.png](/images/pages/Kaolin_size_distr.png "Kaolin_size_distr.png")
+![Kaolin\_ohne\_overlay.png](/images/pages/Kaolin ohne overlay.png "Kaolin ohne overlay.png") ![Kaolin\_overlay.png](/images/pages/Kaolin overlay.png "Kaolin overlay.png") ![Kaolin\_size\_distr.png](/images/pages/Kaolin size distr.png "Kaolin size distr.png")
 
 # How to cite
 

@@ -8,15 +8,15 @@ categories: Plugins,Image annotation
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Arrow\_' %} ![Arrow\_example.png](/images/pages/Arrow_example.png "Arrow_example.png")
+{% include component-stats content=':sc.fiji:Arrow\_' %} ![Arrow\_example.png](/images/pages/Arrow example.png "Arrow example.png")
 
 This version replaces the old `Arrow_.class` tool that was present in Fiji before. The main changes are the ability to draw the arrow as a floating selection, and to tune its shape.
 
-Warning: Since `ImageJ version 1.43n`, a similar tool, made by {% include person content='Rasband' %}, does a similar thing from the ImageJ core, see {% include github org='imagej' repo='ImageJA' path='ij/gui/Arrow.java' label='here' %}.
+Warning: Since `ImageJ version 1.43n`, a similar tool, made by {% include person content='Rasband' %}, does a similar thing from the ImageJ core, see {% include github org='imagej ' repo='ImageJA ' path='ij/gui/Arrow.java ' label='here ' %}.
 
 ## Usage
 
-![Arrow\_example2.png](/images/pages/Arrow_example2.png "Arrow_example2.png")
+![Arrow\_example2.png](/images/pages/Arrow example2.png "Arrow example2.png")
 
 Launch the plugin from the menu. A tool appear in ImageJ toolbar: If there is no space for a spare tool in the toolbar, an error message is displayed.
 
@@ -28,11 +28,11 @@ The user can drag the arrow head, base or he whole arrow by clicking and draggin
 
 If the shift key is pressed while dragging the head, only direction multiple of 45º will be allowed.
 
-![Arrow\_example3.png](/images/pages/Arrow_example3.png "Arrow_example3.png") To customize the arrow shape and type, double click the arrow tool. A dialog is displayed that allow to select the line thickness, the arrow head length and the arrow type. Changes made to the configuration panel are reflected to the arrow immediately.
+![Arrow\_example3.png](/images/pages/Arrow example3.png "Arrow example3.png") To customize the arrow shape and type, double click the arrow tool. A dialog is displayed that allow to select the line thickness, the arrow head length and the arrow type. Changes made to the configuration panel are reflected to the arrow immediately.
 
 It is possible to change the arrow shape using the mouse wheel. To change its thickness or the arrow head length, press shift and rotate the mouse wheel respectively near the arrow body and head. To change the arrow style, press {% include key content='Ctrl' %}+{% include key content='Shift' %} and rotate the mouse wheel near the arrow.
 
-![Arrow\_example4.png](/images/pages/Arrow_example4.png "Arrow_example4.png") So far, 4 types of arrow head are implemented:
+![Arrow\_example4.png](/images/pages/Arrow example4.png "Arrow example4.png") So far, 4 types of arrow head are implemented:
 
   - Delta
   - Thick

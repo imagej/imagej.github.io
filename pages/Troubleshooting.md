@@ -188,7 +188,7 @@ While ImageJ strives for [reproducible](reproducible "wikilink") analysis, there
 
 ## OutOfMemoryError
 
-{% include box float='right' %} The error means ImageJ ran out of available [computer memory](wikipedia:Random-access_memory "wikilink") (*not* hard drive space).
+{% include box float='right ' %} The error means ImageJ ran out of available [computer memory](wikipedia:Random-access_memory "wikilink") (*not* hard drive space).
 
 The first thing to do is make sure that ImageJ has a large enough "maximum heap" size:
 
@@ -216,7 +216,7 @@ This error usually means that your image planes are larger than the maximum supp
 
 If you are using Bio-Formats to open a file, however, the size limit is a bit more complicated. Instead of using `short[]` as in ImageJ1, Bio-Formats store data in `byte[]` when reading planes. If the source image is in 16 bit or in 32 bit (4 bytes, eg. floating point TIFF), the maximum pixel numbers allowed per plane will be 1/2 (1 gigapixels) or 1/4 (0.5 gigapixels), respectively.
 
-[ImageJ2](ImageJ2 "wikilink") supports larger image planes internally, but uses the [ImageJ1](ImageJ1 "wikilink") user interface by default, which once again limits visualization to 2 gigapixels. The [ImageJ2 team](Contributors "wikilink") is working to lift these size restrictions; see {% include github org='imagej' repo='imagej' issue='87' label='imagej/imagej\#87' %}.
+[ImageJ2](ImageJ2 "wikilink") supports larger image planes internally, but uses the [ImageJ1](ImageJ1 "wikilink") user interface by default, which once again limits visualization to 2 gigapixels. The [ImageJ2 team](Contributors "wikilink") is working to lift these size restrictions; see {% include github org='imagej ' repo='imagej ' issue='87 ' label='imagej/imagej\#87 ' %}.
 
 ## UnsupportedClassVersionError
 

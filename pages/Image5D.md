@@ -53,6 +53,6 @@ A sample [16-bit RGB data set](https://imagej.net/macros/images/MyoblastCells.zi
 
 ## History
 
-See the {% include github org='imagej' repo='image5d' path='doc/Image5D-changes.txt' label='release notes' %} for details on changes.
+See the {% include github org='imagej ' repo='image5d ' path='doc/Image5D-changes.txt ' label='release notes ' %} for details on changes.
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Visualization](Category:Visualization "wikilink")

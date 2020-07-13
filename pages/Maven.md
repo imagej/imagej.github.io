@@ -13,8 +13,8 @@ description: test description
   - [What is Maven?](https://maven.apache.org/what-is-maven.html)
   - [Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)' %}
 
-{% include develop-menu content='tools' %}{% include minibox logo='Maven-icon.png' size='51px' blurb='  
-"""Apache Maven""" is a [convention over configuration](wikipedia:Convention_over_configuration "wikilink") build automation tool.' %}[ImageJ](ImageJ "wikilink"), [Fiji](Fiji "wikilink") and other [SciJava](SciJava "wikilink") projects use [Maven](https://maven.apache.org/) for their project infrastructure.
+{% include develop-menu content='tools' %}{% include minibox logo='Maven-icon.png ' size='51px ' blurb='  
+"""Apache Maven""" is a [convention over configuration](wikipedia:Convention_over_configuration "wikilink") build automation tool. ' %}[ImageJ](ImageJ "wikilink"), [Fiji](Fiji "wikilink") and other [SciJava](SciJava "wikilink") projects use [Maven](https://maven.apache.org/) for their project infrastructure.
 
 Maven artifacts are published to the [SciJava Maven repository](SciJava_Maven_repository "wikilink").
 
@@ -117,7 +117,7 @@ There are two different sorts of Maven artifacts (i.e., JAR files): releases and
 
 ## Producing multiple JAR files
 
-So what if you have multiple *.jar* files you want to build in the same project? Then these need to live in their own subdirectories and there needs to be a common parent POM, a so-called *aggregator* or *multi-module* POM (only this POM needs to have the SciJava POM as parent, of course). {% include github org='imagej' repo='tutorials' tag='577286474be8399eb38d30d66cf0c35ee50bd929' path='pom.xml\#L47-L62' label='Here is an example' %}. Basically, it is adding the <packaging>`pom`</packaging> entry at the top, as well as some subdirectory names to the <modules> section.
+So what if you have multiple *.jar* files you want to build in the same project? Then these need to live in their own subdirectories and there needs to be a common parent POM, a so-called *aggregator* or *multi-module* POM (only this POM needs to have the SciJava POM as parent, of course). {% include github org='imagej ' repo='tutorials ' tag='577286474be8399eb38d30d66cf0c35ee50bd929 ' path='pom.xml\#L47-L62 ' label='Here is an example ' %}. Basically, it is adding the <packaging>`pom`</packaging> entry at the top, as well as some subdirectory names to the <modules> section.
 
 Note, however, that most projects of the [SciJava component collection](Architecture "wikilink") (e.g., [SciJava](SciJava "wikilink"), [ImgLib2](ImgLib2 "wikilink"), [SCIFIO](SCIFIO "wikilink"), [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink")) now structure each component as its own single-module project in its own Git repository, since using multi-module projects can complicate versioning.
 
@@ -137,7 +137,7 @@ Most popular open source libraries upon which you might want to depend are store
 
 For example, let's suppose you want to depend on the [snakeyaml](http://snakeyaml.org) library. Typing "snakeyaml" into the search box at [maven.scijava.org](https://maven.scijava.org) tells us to use a `groupId` of `org.yaml`, `artifactId` of `snakeyaml`, with available versions ranging from `1.4` to `1.10`. In the case of many results, you can click the "Drill down" link to view more details of that specific GAV combination. You can also click an entry to get a formatted `dependency` block for direct copy-pasting into your POM.
 
-{% include tip tip='If your dependencies are in Maven Central, you can use the [quickdeps](https://github.com/ingenieux/quickdeps) tool to quickly generate dependency blocks, by scanning your project"s bytecode.' %}
+{% include tip tip='If your dependencies are in Maven Central, you can use the [quickdeps](https://github.com/ingenieux/quickdeps) tool to quickly generate dependency blocks, by scanning your project"s bytecode. ' %}
 
 # Depending on libraries outside the core repositories
 

@@ -116,7 +116,7 @@ If you would like to use the script editor, see the sections for the [other supp
 
 # Getting started with Maven
 
-The {% include github org='imagej' repo='example-legacy-plugin' label='example-legacy-plugin project' %} provides a working example, and documentation, illustrating how an ImageJ plugin should be structured from a "best practices in Maven" point of view.
+The {% include github org='imagej ' repo='example-legacy-plugin ' label='example-legacy-plugin project ' %} provides a working example, and documentation, illustrating how an ImageJ plugin should be structured from a "best practices in Maven" point of view.
 
 Using this project requires a basic understanding of [Git](Git "wikilink") and [Maven](Maven "wikilink"); thus if you are already familiar with the ImageJ 1.x API, this is a reasonable starting point to learn the [project management](Project_management "wikilink") tools used in [ImageJ2 development](Writing_plugins "wikilink").
 
@@ -137,7 +137,7 @@ The source of the various Fiji-related projects is spread over several source co
 
 ## The class *IJ*
 
-The class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/IJ.java' label='ij.IJ' %} is a convenience class with many static functions. Two of them are particularly useful for debugging:
+The class {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/IJ.java ' label='ij.IJ ' %} is a convenience class with many static functions. Two of them are particularly useful for debugging:
 
 ``` java
 // output into the Log window
@@ -149,7 +149,7 @@ IJ.showMessage(“Hello, World!”);
 
 ## The class *ImageJ*
 
-The class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/ImageJ.java' label='ij.ImageJ' %} implements the main window of ImageJ / Fiji, and you can access it via *ij.IJ*'s static method *getInstance()*:
+The class {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/ImageJ.java ' label='ij.ImageJ ' %} implements the main window of ImageJ / Fiji, and you can access it via *ij.IJ*'s static method *getInstance()*:
 
 ``` java
 // check if ImageJ is used interactively
@@ -161,7 +161,7 @@ Typically, all you do with that instance is to test whether ImageJ is used as a 
 
 ## The class *WindowManager*
 
-Use the class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/WindowManager.java' label='ij.WindowManager' %} to access the ImageJ windows / images:
+Use the class {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/WindowManager.java ' label='ij.WindowManager ' %} to access the ImageJ windows / images:
 
 ``` java
 // how many windows / images are active?
@@ -176,9 +176,9 @@ When implementing a filter plugin, you usually do not need to access *WindowMana
 
 ## The hierarchy of the classes representing an image
 
-All images are represented as instances of {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/ImagePlus.java' label='ij.ImagePlus' %}. This class wraps an {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/ImageStack.java' label='ij.ImageStack' %} of slices. Slices are data-type dependent instances of {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ImageProcessor.java' label='ij.process.ImageProcessor' %}: {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ByteProcessor.java' label='ij.process.ByteProcessor' %}, {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ShortProcessor.java' label='ij.process.ShortProcessor' %}, {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/FloatProcessor.java' label='ij.process.FloatProcessor' %}, and {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ColorProcessor.java' label='ij.process.ColorProcessor' %}. Or graphically:
+All images are represented as instances of {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/ImagePlus.java ' label='ij.ImagePlus ' %}. This class wraps an {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/ImageStack.java ' label='ij.ImageStack ' %} of slices. Slices are data-type dependent instances of {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/ImageProcessor.java ' label='ij.process.ImageProcessor ' %}: {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/ByteProcessor.java ' label='ij.process.ByteProcessor ' %}, {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/ShortProcessor.java ' label='ij.process.ShortProcessor ' %}, {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/FloatProcessor.java ' label='ij.process.FloatProcessor ' %}, and {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/ColorProcessor.java ' label='ij.process.ColorProcessor ' %}. Or graphically:
 
-![Image\_Class\_Hierarchy.png](/images/pages/Image_Class_Hierarchy.png "Image_Class_Hierarchy.png")
+![Image\_Class\_Hierarchy.png](/images/pages/Image Class Hierarchy.png "Image Class Hierarchy.png")
 
 Example usage:
 
@@ -303,7 +303,7 @@ IJ.showStatus(“Hello, world!”);
 
 ## Frequently used operators
 
-The {% include javadoc-ij1 package='ij/process' class='ImageProcessor' %} class has a few methods such as *smooth()*, *sharpen()*, *findEdges()*, etc
+The {% include javadoc-ij1 package='ij/process ' class='ImageProcessor ' %} class has a few methods such as *smooth()*, *sharpen()*, *findEdges()*, etc
 
 **Tip:** use the Script Editor's functions in the *Tools* menu:
 
@@ -313,7 +313,7 @@ The {% include javadoc-ij1 package='ij/process' class='ImageProcessor' %} class 
 
 ## Plots
 
-You can show a plot window very easily using the {% include javadoc-ij1 package='ij/gui' class='Plot' %} class:
+You can show a plot window very easily using the {% include javadoc-ij1 package='ij/gui ' class='Plot ' %} class:
 
 ``` java
 void plot(double[] values) {
@@ -340,7 +340,7 @@ void plot(double[] values, double[] values2) {
 }
 ```
 
-To update the contents of a plot window, remember the return value of *plot.show()* which is a {% include javadoc-ij1 package='ij/gui' class='PlotWindow' %}, and use its *drawPlot()* method:
+To update the contents of a plot window, remember the return value of *plot.show()* which is a {% include javadoc-ij1 package='ij/gui ' class='PlotWindow ' %}, and use its *drawPlot()* method:
 
 ``` java
 void plot(double[] values) {
@@ -412,9 +412,9 @@ image.setRoi(roi);
 
 You can use ImageJ2-specific functionality from within an ImageJ 1.x plugin. For example, ImageJ2 provides a spreadsheet-like results table that supports string cells. You can write an ImageJ 1.x plugin that produces such a spreadsheet, displaying it onscreen.
 
-See the {% include github org='imagej' repo='tutorials' path='maven-projects/call-modern-from-legacy' label='call-modern-from-legacy' %} example of the ImageJ Tutorials:
+See the {% include github org='imagej ' repo='tutorials ' path='maven-projects/call-modern-from-legacy ' label='call-modern-from-legacy ' %} example of the ImageJ Tutorials:
 
-> {% include github org='imagej' repo='tutorials' path='maven-projects/call-modern-from-legacy/src/main/java/DisplayATable.java' label='DisplayATable.java' %}
+> {% include github org='imagej ' repo='tutorials ' path='maven-projects/call-modern-from-legacy/src/main/java/DisplayATable.java ' label='DisplayATable.java ' %}
 
 ## Further tips
 

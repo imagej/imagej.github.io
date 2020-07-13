@@ -19,7 +19,7 @@ Miji(false)
 
 ## Creating a new ImgLib2 image in MATLAB
 
-In [MATLAB](MATLAB "wikilink"), we are limited to native type images (float, uint8, uint16, ...) represented as native arrays. The matching ImgLib2 container for this is the {% include github repo='imglib' path='core/src/main/java/net/imglib2/img/array/ArrayImg.java' label='ArrayImg' %}.
+In [MATLAB](MATLAB "wikilink"), we are limited to native type images (float, uint8, uint16, ...) represented as native arrays. The matching ImgLib2 container for this is the {% include github repo='imglib ' path='core/src/main/java/net/imglib2/img/array/ArrayImg.java ' label='ArrayImg ' %}.
 
 Because ImgLib2 authors wrote nice static utilities, our work is relatively easy. The class `ArrayImgs` has all the methods you need, one per native type.
 
@@ -30,7 +30,7 @@ Because ImgLib2 authors wrote nice static utilities, our work is relatively easy
 >> imshow(X,[]) % [[MATLAB]] display
 ```
 
-![MatlabToImglib2\_clown.png](/images/pages/MatlabToImglib2_clown.png "MatlabToImglib2_clown.png")
+![MatlabToImglib2\_clown.png](/images/pages/MatlabToImglib2 clown.png "MatlabToImglib2 clown.png")
 
 We note that the ImageJ display is rotated and flipped regarding the [MATLAB](MATLAB "wikilink") image. This is because [MATLAB](MATLAB "wikilink") arrays are expected to be arranged along columns, whereas Java arrays are arranged along lines. We would need to permute dimension 0 and dimension 1 to display the data in ImageJ as expected in [MATLAB](MATLAB "wikilink").
 
@@ -38,7 +38,7 @@ Note also that the raw data was cast from 64-bit double data to 32-bit float for
 
 ## MATLAB to ImgLib2 bridge functions
 
-The exacts method in `ArrayImgs` depend on the native type you want to use, so you would have to deal with all possible cases. But there is already some [MATLAB](MATLAB "wikilink") functions in Fiji that does that in the `scripts` folder of your Fiji installation: {% include github repo='fiji' path='scripts/copytoImg.m' label='copytoImg' %} and {% include github repo='fiji' path='scripts/copytoImgPlus.m' label='copytoImgPlus' %}. You need therefore to add `scripts` to your [MATLAB](MATLAB "wikilink") path, but this is most likely already done since it also contains `Miji` which you need to call already.
+The exacts method in `ArrayImgs` depend on the native type you want to use, so you would have to deal with all possible cases. But there is already some [MATLAB](MATLAB "wikilink") functions in Fiji that does that in the `scripts` folder of your Fiji installation: {% include github repo='fiji ' path='scripts/copytoImg.m ' label='copytoImg ' %} and {% include github repo='fiji ' path='scripts/copytoImgPlus.m ' label='copytoImgPlus ' %}. You need therefore to add `scripts` to your [MATLAB](MATLAB "wikilink") path, but this is most likely already done since it also contains `Miji` which you need to call already.
 
 The first function generates a plain `Img`. The second one generates and `ImgPlus` which allows you specifying the spatial calibration, image name and axis types. Check the help of these functions for details.
 
@@ -89,7 +89,7 @@ This just builds an acceptable [MATLAB](MATLAB "wikilink") uint8 image and a Uns
 >> imshow(J', [])
 ```
 
-![MatlabToImglib2\_int8.png](/images/pages/MatlabToImglib2_int8.png "MatlabToImglib2_int8.png")
+![MatlabToImglib2\_int8.png](/images/pages/MatlabToImglib2 int8.png "MatlabToImglib2 int8.png")
 
 What happened here? The gray levels are all messed up. Checking the class of the returned array gives a clue:
 
@@ -114,7 +114,7 @@ But when we call the `getCurrentStorageArray` method, we retrieve this internal 
 >> imshow(K')
 ```
 
-But of course, there is a [MATLAB](MATLAB "wikilink") function that does all of this for you, and that you can also find in the scripts folder of your Fiji installation: {% include github repo='fiji' path='scripts/copytoMatlab.m' label='copytoMatlab' %}.
+But of course, there is a [MATLAB](MATLAB "wikilink") function that does all of this for you, and that you can also find in the scripts folder of your Fiji installation: {% include github repo='fiji ' path='scripts/copytoMatlab.m ' label='copytoMatlab ' %}.
 
 ## MATLAB arrays are not shared
 

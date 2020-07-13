@@ -18,9 +18,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='PreibischLab' repo='BigStitcher' %}
+{% include github org='PreibischLab ' repo='BigStitcher ' %}
 {% endcapture %}
-{% include info-box content='Plugin' software='BigStitcher' name='BigStitcher' author=author maintainer=maintainer source=source status='beta' %}
+{% include info-box content='Plugin' software='BigStitcher ' name='BigStitcher ' author=author maintainer=maintainer source=source status='beta ' %}
 
 ## Introduction & Overview
 
@@ -44,7 +44,7 @@ Specifically intended for lightsheet acquisitions of cleared samples (e.g. by CL
 
 A **beta**-Version of BigStitcher is available via the Fiji Updater. Just go to {% include bc content='Help | Update...'%}, click `Manage update sites` and select `BigStitcher` in the list. After applying the changes and restarting Fiji, BigStitcher will be available under {% include bc content='Plugins | BigStitcher | BigStitcher'%}.
 
-The source code is available {% include github org='PreibischLab' repo='BigStitcher' %}, please also report feature requests & bugs there.
+The source code is available {% include github org='PreibischLab ' repo='BigStitcher ' %}, please also report feature requests & bugs there.
 
 ## Documentation
 

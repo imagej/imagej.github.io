@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include project content='ImageJ1' %}There are a [substantial number of unit tests](2011-10-07_-_Unit_tests_for_ImageJ_1.45 "wikilink") to exercise [ImageJ 1.x](ImageJ_1.x "wikilink") functionality. You can find them in the {% include github org='imagej' repo='ij1-tests' label='ij1-tests repository' %}:
+{% include project content='ImageJ1' %}There are a [substantial number of unit tests](2011-10-07_-_Unit_tests_for_ImageJ_1.45 "wikilink") to exercise [ImageJ 1.x](ImageJ_1.x "wikilink") functionality. You can find them in the {% include github org='imagej ' repo='ij1-tests ' label='ij1-tests repository ' %}:
 
 ``` bash
 git clone git://github.com/imagej/ij1-tests

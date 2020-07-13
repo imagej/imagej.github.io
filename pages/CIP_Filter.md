@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include toc limit='1' %}
+{% include toc limit='1 ' %}
 
 This page provides user documentation for the filter functions of the [CIP](CIP "wikilink") package
 
@@ -32,7 +32,7 @@ gauss creates a gaussian blurred image. it convolves the image with a gaussian w
     **outputImage**: the processed image. it always as the same size as the input image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.gauss( img1 , 5 )` ![CIP\_gauss.PNG](/images/pages/CIP_gauss.PNG "CIP_gauss.PNG")  
+    `img2 = cip.gauss( img1 , 5 )` ![CIP\_gauss.PNG](/images/pages/CIP gauss.PNG "CIP gauss.PNG")  
 <span style="font-size:110%">**Implementation**</span>  
 CIP gauss implementation wraps the gauss ops, itself relying on the [imglib2 gauss3 implementation](https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/gauss3).
 
@@ -55,7 +55,7 @@ Erosion shrinks the region in an image by a certain radius. It works both with b
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.erode( img1 , 2 )` ![CIP\_erode.PNG](/images/pages/CIP_erode.PNG "CIP_erode.PNG")  
+    `img2 = cip.erode( img1 , 2 )` ![CIP\_erode.PNG](/images/pages/CIP erode.PNG "CIP erode.PNG")  
 <span style="font-size:115%">**Implementation**</span>  
 CIP function wraps the [imglib2 Erosion class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Erosion.java) from the morphology package.
 
@@ -78,7 +78,7 @@ this filter dilate the region in an image by a certain radius. It works both wit
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.dilate( img1 , 2 )` ![CIP\_dilate.PNG](/images/pages/CIP_dilate.PNG "CIP_dilate.PNG")  
+    `img2 = cip.dilate( img1 , 2 )` ![CIP\_dilate.PNG](/images/pages/CIP dilate.PNG "CIP dilate.PNG")  
 <span style="font-size:110%">**Implementation**</span>  
 CIP function wraps the [imglib2 Dilation class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Dilation.java) from the morphology package.
 
@@ -101,7 +101,7 @@ This filter performs an erosion followed by a dilation. It erases small and thin
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.opening( img1 , 5 )` ![CIP\_opening.PNG](/images/pages/CIP_opening.PNG "CIP_opening.PNG")  
+    `img2 = cip.opening( img1 , 5 )` ![CIP\_opening.PNG](/images/pages/CIP opening.PNG "CIP opening.PNG")  
 <span style="font-size:110%">**Implementation**</span>  
 CIP function wraps the [imglib2 Opening class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Opening.java) from the morphology package.
 
@@ -124,7 +124,7 @@ This filter performs a dilation followed by an erosion. It closes small holes an
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.closing( img1 , 16, 'disk' )` ![CIP\_closing.PNG](/images/pages/CIP_closing.PNG "CIP_closing.PNG")  
+    `img2 = cip.closing( img1 , 16, 'disk' )` ![CIP\_closing.PNG](/images/pages/CIP closing.PNG "CIP closing.PNG")  
 <span style="font-size:110%">**Implementation**</span>  
 The implementation successively applies CIP erosion and dilation functions.
 
@@ -147,7 +147,7 @@ This filter subtract an opening of the input image to the input image. It remove
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.tophat( img1 , 5, 'disk' )` ![CIP\_tophat.PNG](/images/pages/CIP_tophat.PNG "CIP_tophat.PNG")  
+    `img2 = cip.tophat( img1 , 5, 'disk' )` ![CIP\_tophat.PNG](/images/pages/CIP tophat.PNG "CIP tophat.PNG")  
 <span style="font-size:110%">**Implementation**</span>  
 The function relies on ops for subtraction and CIP for the opening.
 
@@ -168,8 +168,8 @@ this function create an image where each pixel value correspond between the dist
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.distance( img1 , 500 )` or `img2 = cip.distance( img1 , 'threshold', 500 )` ![CIP\_distance1.PNG](/images/pages/CIP_distance1.PNG "CIP_distance1.PNG")  
-    `img2 = cip.distance( img1 )` will build the distance map for a binary image. ![CIP\_distance2.PNG](/images/pages/CIP_distance2.PNG "CIP_distance2.PNG")  
+    `img2 = cip.distance( img1 , 500 )` or `img2 = cip.distance( img1 , 'threshold', 500 )` ![CIP\_distance1.PNG](/images/pages/CIP distance1.PNG "CIP distance1.PNG")  
+    `img2 = cip.distance( img1 )` will build the distance map for a binary image. ![CIP\_distance2.PNG](/images/pages/CIP distance2.PNG "CIP distance2.PNG")  
 <span style="font-size:110%">**Implementation**</span>  
 The function relies on ops distance function implementation.
 
@@ -192,7 +192,7 @@ This filter is used to denoise image. It is well suited to remove impulse noise.
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.median( img1 , 5 )` ![CIP\_median.PNG](/images/pages/CIP_median.PNG "CIP_median.PNG")  
+    `img2 = cip.median( img1 , 5 )` ![CIP\_median.PNG](/images/pages/CIP median.PNG "CIP median.PNG")  
 <span style="font-size:110%">**Implementation**</span>  
 The function relies on ops that implement a brute force approach of the median filtering. It would be possible to implement more efficient approach using histogram and cord decomposition such ImageJ1 implementation for 2D image.
 
@@ -210,6 +210,6 @@ This function invert the gray value of the input image such that each pixel valu
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.invert( img1 )` ![CIP\_invert.PNG](/images/pages/CIP_invert.PNG "CIP_invert.PNG")  
+    `img2 = cip.invert( img1 )` ![CIP\_invert.PNG](/images/pages/CIP invert.PNG "CIP invert.PNG")  
 <span style="font-size:110%">**Implementation**</span>  
 The function implementation uses ops map function

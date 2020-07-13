@@ -8,7 +8,7 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-{% include info-box software='ImageJ' name='RGB to Montage' author='unknown' maintainer='None' filename='RGB\_to\_Montage.class' source='not found' released='unknown' latest-version='unknown' status='Unmaintained' category='[Color processing](:Category:Color_processing "wikilink")' %}
+{% include info-box software='ImageJ ' name='RGB to Montage ' author='unknown ' maintainer='None ' filename='RGB\_to\_Montage.class ' source='not found ' released='unknown ' latest-version='unknown ' status='Unmaintained ' category='[Color processing](:Category:Color_processing "wikilink") ' %}
 
 ## Purpose
 
@@ -18,6 +18,6 @@ From the MacBiophotonics webpage:
 
 See also [Color Image Processing\#\#Splitting\_multi-channel\_Images](Color_Image_Processing##Splitting_multi-channel_Images "wikilink").
 
-![RGB\_to\_montage\_example.png](/images/pages/RGB_to_montage_example.png "RGB_to_montage_example.png")
+![RGB\_to\_montage\_example.png](/images/pages/RGB to montage example.png "RGB to montage example.png")
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Color processing](Category:Color_processing "wikilink")

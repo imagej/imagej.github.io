@@ -8,7 +8,7 @@ categories: Plugins,Filtering
 description: test description
 ---
 
-{% include info-box software='ImageJ' name='Sigma Filter' author='Michael Schmid and Tony Collins' filename=' [Sigma\_Filter\_Plus.class](https://imagej.net/plugins/download/Sigma_Filter_Plus.class) ' source=' [Sigma\_Filter\_Plus.java](https://imagej.net/plugins/download/Sigma_Filter_Plus.java) ' released='25 October 2007' status='1st version' category='[Filtering](:Category:Filtering "wikilink")' website='https://imagej.net/plugins/sigma-filter.html' %}
+{% include info-box software='ImageJ ' name='Sigma Filter ' author='Michael Schmid and Tony Collins ' filename=' [Sigma\_Filter\_Plus.class](https://imagej.net/plugins/download/Sigma_Filter_Plus.class) ' source=' [Sigma\_Filter\_Plus.java](https://imagej.net/plugins/download/Sigma_Filter_Plus.java) ' released='25 October 2007 ' status='1st version ' category='[Filtering](:Category:Filtering "wikilink") ' website='https://imagej.net/plugins/sigma-filter.html ' %}
 
 ## Purpose
 
@@ -18,7 +18,7 @@ This plugin implement a spatial filter similar to the mean filter. Its particula
 
 This filter is based on the algorithm described in the following paper:
 
-{% include citation last='Lee' first='Jong-Sen' title='Digital image smoothing and the sigma filter' journal='Computer vision, graphics, and image processing' volume='24' issue='2' pages='255-269' date='1983' issn='0734-189X' id='CODEN: CVGPDB' %}
+{% include citation last='Lee ' first='Jong-Sen ' title='Digital image smoothing and the sigma filter ' journal='Computer vision, graphics, and image processing ' volume='24 ' issue='2 ' pages='255-269 ' date='1983 ' issn='0734-189X ' id='CODEN: CVGPDB ' %}
 
 From the website:
 

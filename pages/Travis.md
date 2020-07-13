@@ -8,7 +8,7 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu content='tools' %}{% include minibox logo='Travis.png' blurb='"""Travis CI:""" Build your code in the cloud\!' %}[Travis CI](https://travis-ci.org/) is a tool for [continuous integration](Project_management#Continuous_integration "wikilink"). It has excellent integration with [GitHub](GitHub "wikilink"), and is very useful for automating builds, deployment and other tasks. {% include toc%}
+{% include develop-menu content='tools' %}{% include minibox logo='Travis.png ' blurb='"""Travis CI:""" Build your code in the cloud\! ' %}[Travis CI](https://travis-ci.org/) is a tool for [continuous integration](Project_management#Continuous_integration "wikilink"). It has excellent integration with [GitHub](GitHub "wikilink"), and is very useful for automating builds, deployment and other tasks. {% include toc%}
 
 
 # Services

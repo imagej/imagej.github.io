@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include info-box name='SPIM Workflow Manager for HPC' software='Fiji' author='Jan Kožusznik, Petr Bainar, Jana Klímová, Michal Krumnikl, Pavel Moravec, Pavel Tomancak' maintainer='jan.kozusznik@vsb.cz' released='August 2018' latest-version='March 2019' category='[Transform](:Category:Transform "wikilink"), [Registration](:Category:Registration "wikilink"), [Deconvolution](:Category:Deconvolution "wikilink")' source=' [on github](https://github.com/fiji-hpc/hpc-workflow-manager/) ' %}
+{% include info-box name='SPIM Workflow Manager for HPC ' software='Fiji ' author='Jan Kožusznik, Petr Bainar, Jana Klímová, Michal Krumnikl, Pavel Moravec, Pavel Tomancak ' maintainer='jan.kozusznik@vsb.cz ' released='August 2018 ' latest-version='March 2019 ' category='[Transform](:Category:Transform "wikilink"), [Registration](:Category:Registration "wikilink"), [Deconvolution](:Category:Deconvolution "wikilink") ' source=' [on github](https://github.com/fiji-hpc/hpc-workflow-manager/) ' %}
 
 # About the plugin
 
@@ -50,7 +50,7 @@ For creating a new job, right click in the main window and choose *Create a new 
 
 The plugin provides a wizard allowing you to set up a configuration file *config.yaml*, which effectively characterizes the dataset and defines settings for individual workflow tasks. The plugin supports uploading local input image data to the remote HPC resource, providing information on the progress and estimated remaining time.
 
-Once a job execution is selected by you, the configuration file is sent to the cluster via HEAppE, which is responsible for the job life cycle from this point on. You can display a detailed progress dashboard showing current states of all individual computational tasks for the selected job as well as output logs useful for debugging. ![ui\_screens.PNG](/images/pages/ui_screens.PNG "ui_screens.PNG")
+Once a job execution is selected by you, the configuration file is sent to the cluster via HEAppE, which is responsible for the job life cycle from this point on. You can display a detailed progress dashboard showing current states of all individual computational tasks for the selected job as well as output logs useful for debugging. ![ui\_screens.PNG](/images/pages/Ui screens.PNG "ui screens.PNG")
 
 Following a successfully finished pipeline, you can interactively examine the processed SPIM image data using the [BigDataServer](https://imagej.net/BigDataServer) as well as download resultant data and a summary file containing key information about the performed job. Importantly, you can edit the corresponding local configuration file in a common text editor, and restart an interrupted, finished, or failed job.
 

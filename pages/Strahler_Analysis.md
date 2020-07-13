@@ -22,15 +22,15 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='tferr' repo='hIPNAT' %}
+{% include github org='tferr ' repo='hIPNAT ' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='Strahler Analysis' maintainer=maintainer author=author filename='hIPNAT\_.jar ([Neuroanatomy update site](User:Neuroanatomy "wikilink"))' source=source released='April 2016' category='[Plugins](:Category:Plugins "wikilink"), [Neuroanatomy](:Category:Neuroanatomy "wikilink"), [Analysis](:Category:Analysis "wikilink"), [Skeleton](:Category:Skeleton "wikilink")' %}
+{% include info-box software='Fiji ' name='Strahler Analysis ' maintainer=maintainer author=author filename='hIPNAT\_.jar ([Neuroanatomy update site](User:Neuroanatomy "wikilink")) ' source=source released='April 2016 ' category='[Plugins](:Category:Plugins "wikilink"), [Neuroanatomy](:Category:Neuroanatomy "wikilink"), [Analysis](:Category:Analysis "wikilink"), [Skeleton](:Category:Skeleton "wikilink") ' %}
 
 </div>
 
 A plugin from the [Neuroanatomy update site](User:Neuroanatomy "wikilink") that performs Strahler analysis on topographic skeletons (2D/3D). [Strahler numbering](wikipedia:Strahler_number "wikilink") is a numerical procedure that summarizes the branching complexity of mathematical trees.
 
-{% include ambox text='This page describes how to perform Strahler Analysis on skeletonized images. For analysis of traced structures have a look at [SNT](SNT "wikilink").' %}
+{% include ambox text='This page describes how to perform Strahler Analysis on skeletonized images. For analysis of traced structures have a look at [SNT](SNT "wikilink"). ' %}
 
 ## Description
 
@@ -92,7 +92,7 @@ The problem with undiscriminated elimination of terminal branches is that a root
 |                                                                                                                                                                                                                                                                                                                                                    |                                          |                                                   |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------: | :-----------------------------------------------: |
 |                                                                                                                                                     Arbor with rectangular ROI containing root                                                                                                                                                     | Analysis ignoring ROI: Inaccurate result | Analysis taking ROI into account: Accurate result |
-|                                                                                                                             ![Strahler\_RootProtection.png](/images/pages/Strahler_RootProtection.png "Strahler_RootProtection.png")                                                                                                                             |                                          |                                                   |
+|                                                                                                                             ![Strahler\_RootProtection.png](/images/pages/Strahler RootProtection.png "Strahler RootProtection.png")                                                                                                                             |                                          |                                                   |
 | Root branches are spared from the iterative elimination procedure if marked by a rectangular ROI. Middle image: ROI is ignored. As a consequence, root-branch is interpreted as any other terminal-branch. Right image: Analysis infers that end-point contained by ROI belongs to a root-branch and marked branch is excluded from the iteration. |                                          |                                                   |
 
 </center>
@@ -143,15 +143,15 @@ To install *Strahler Analysis* you must use Java 8 and subscribe to the [Neuroan
 
 Original publications by [Robert E. Horton](wikipedia:Robert_E._Horton "wikilink") and [Arthur N. Strahler](wikipedia:Arthur_Newell_Strahler "wikilink"):
 
-  - {% include citation first='R. E.' last='Horton' title='Erosional development of streams and their drainage basins: hydro-physical approach to quantitative morphology' journal='Geological Society of America Bulletin' volume='56' issue='3' year='1945' pages='275–370' doi='10.1130/0016-7606(1945)56\[275:EDOSAT\]2.0.CO;2' %}.
+  - {% include citation first='R. E. ' last='Horton ' title='Erosional development of streams and their drainage basins: hydro-physical approach to quantitative morphology ' journal='Geological Society of America Bulletin ' volume='56 ' issue='3 ' year='1945 ' pages='275–370 ' doi='10.1130/0016-7606(1945)56\[275:EDOSAT\]2.0.CO;2 ' %}.
 
 <!-- end list -->
 
-  - {% include citation last='Strahler' first='A. N.' year='1952' title='Hypsometric (area-altitude) analysis of erosional topology' journal='Geological Society of America Bulletin' volume='63' issue='11' pages='1117–1142' doi='10.1130/0016-7606(1952)63\[1117:HAAOET\]2.0.CO;2' %}.
+  - {% include citation last='Strahler ' first='A. N. ' year='1952 ' title='Hypsometric (area-altitude) analysis of erosional topology ' journal='Geological Society of America Bulletin ' volume='63 ' issue='11 ' pages='1117–1142 ' doi='10.1130/0016-7606(1952)63\[1117:HAAOET\]2.0.CO;2 ' %}.
 
 <!-- end list -->
 
-  - {% include citation last='Strahler' first='A. N.' year='1957' title='Quantitative analysis of watershed geomorphology' journal='Transactions of the American Geophysical Union' volume='38' issue='6' pages='913–920' %} ([PDF](http://www.uvm.edu/~pdodds/files/papers/others/1957/strahler1957a.pdf)).
+  - {% include citation last='Strahler ' first='A. N. ' year='1957 ' title='Quantitative analysis of watershed geomorphology ' journal='Transactions of the American Geophysical Union ' volume='38 ' issue='6 ' pages='913–920 ' %} ([PDF](http://www.uvm.edu/~pdodds/files/papers/others/1957/strahler1957a.pdf)).
 
 ## Citing
 

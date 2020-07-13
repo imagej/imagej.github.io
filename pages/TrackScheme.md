@@ -10,7 +10,7 @@ description: test description
 
 TrackScheme displays a kind of "track map", where a track is laid on pane, arranged vertically over time, as a Parisian subway train map. Each spot is displayed as a cell in the map. Each cell displays a thumbnail of the spot.
 
-![TrackScheme\_Start.png](/images/pages/TrackScheme_Start.png "TrackScheme_Start.png")
+![TrackScheme\_Start.png](/images/pages/TrackScheme Start.png "TrackScheme Start.png")
 
 ## TrackScheme in a nutshell
 
@@ -46,7 +46,7 @@ You can create a link between two cells in TrackScheme simply by enabling the li
 
 This is pictured below, where the first cell of the top track is attached to the track number 2, as it should. For visibility, I brought on this screenshot the target cell closer to the lane of the track 2. You can normally find it either on its own lane or on the far right of the panel.
 
-![TrackMate\_CreateLinksInTrackScheme\_annotated.png](/images/pages/TrackMate_CreateLinksInTrackScheme_annotated.png "TrackMate_CreateLinksInTrackScheme_annotated.png")
+![TrackMate\_CreateLinksInTrackScheme\_annotated.png](/images/pages/TrackMate CreateLinksInTrackScheme annotated.png "TrackMate CreateLinksInTrackScheme annotated.png")
 
 Press the **Redo layout** button to see the arranged result. The first spot is now incorporated in the right track.
 
@@ -73,7 +73,7 @@ The newly created link is displayed in magenta. Note that the track arrangement 
 
 This can be used to create branching links, as picture below:
 
-![TrackMate\_BranchingTrack.png](/images/pages/TrackMate_BranchingTrack.png "TrackMate_BranchingTrack.png")
+![TrackMate\_BranchingTrack.png](/images/pages/TrackMate BranchingTrack.png "TrackMate BranchingTrack.png")
 
 ### Creating several links at once
 

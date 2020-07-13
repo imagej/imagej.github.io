@@ -53,11 +53,11 @@ The toolbar mostly contains selection tools: the rectangle, ellipse, polygon, fr
 
 Some tools offer option dialogs which you can open by double clicking the icon. This example shows the option dialog of the Oval Tool:
 
-![Oval\_Tool\_Option\_Dialog.png](/images/pages/Oval_Tool_Option_Dialog.png "Oval_Tool_Option_Dialog.png")
+![Oval\_Tool\_Option\_Dialog.png](/images/pages/Oval Tool Option Dialog.png "Oval Tool Option Dialog.png")
 
 If there is a small red arrow in the lower right corner of the tool icon, you can right-click ({% include key content='Ctrl' %}+{% include key content='click' %} on an Apple mouse) and select an alternative selection tool (e.g. a circular brush selection tool which shares the icon with the ellipse selection tool). Example:
 
-![Alternative\_Tools.png](/images/pages/Alternative_Tools.png "Alternative_Tools.png")
+![Alternative\_Tools.png](/images/pages/Alternative Tools.png "Alternative Tools.png")
 
 ## The status bar
 
