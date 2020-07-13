@@ -134,19 +134,70 @@ def process_file(str_content):
     content_tmp = replace_template(content_tmp)
 
     #convert image links into working links - this can be improved, it should not run on all File: links..
-    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\|[ ]*link=(?!http)([^\]]*)[ ]*\]\]',
-                         r'<a href="\3"><img src="\1" width="\2"/></a>', content_tmp)
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\]\]',
+                         fix_src_width_link_match, content_tmp)
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)\|[ ]*([^x ][^ |]*)[ ]*[ ]*\]\]',
+                         fix_src_link_width_match, content_tmp)
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)\|[ ]*(x[^ |]*)[ ]*[ ]*\]\]',
+                         fix_src_link_height_match, content_tmp)
     content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*x([^ |]*)[ ]*\|[ ]*link=([^\]]*)\]\]',
-                         r'<a href="\3"><img src="\1" height="\2"/></a>', content_tmp)
+                         fix_src_height_link_match, content_tmp)
 
-    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\]\]',
-                         r'[[File:\1 |\3|link=\2 ]]', content_tmp)
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*thumb[ ]*\|[ ]*([^|]*)[ ]*\]\]',
+                         fix_thumbnail_match, content_tmp)
+
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|\|([ ]*[^\]]*[ ]*)\]\]',
+                         fix_simple_image_match, content_tmp)
+
+    # content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\]\]',
+    #                      r'[[File:\1 |\3|link=\2 ]]', content_tmp)
 
     content_tmp = content_tmp.replace("{{-}}", "")
     content_tmp = content_tmp.replace("{{}}", "")
     content_tmp = content_tmp.replace("{{!}}", "")
 
     return content_tmp
+
+
+def fix_simple_image_match(match):
+    return fix_simple_image(match.group(1), match.group(2))
+
+
+def fix_simple_image(src, title):
+    return "[[File:" + src.capitalize() + "|" + title + "]]"
+
+
+def fix_thumbnail_match(match):
+    return fix_thumbnail(match.group(1), match.group(2))
+
+
+def fix_thumbnail(src, title):
+    return txt_include_start + 'thumbnail src="/images/pages/' + src.capitalize() + '" title="' + title + '" ' + txt_liquid_end
+
+
+def fix_src_width_link_match(match):
+    return fix_src_link_width(match.group(1), match.group(3), match.group(2))
+
+
+def fix_src_link_width_match(match):
+    return fix_src_link_width(match.group(1), match.group(2), match.group(3))
+
+
+def fix_src_link_height_match(match):
+    return fix_src_link_height(match.group(1), match.group(2), match.group(3))
+
+
+def fix_src_height_link_match(match):
+    return fix_src_link_height(match.group(1), match.group(3), match.group(2))
+
+
+def fix_src_link_width(src, link, width):
+    return '<a href="' + link + '"><img src="' + src.capitalize() + '" width="' + width + '"/></a>'
+
+
+def fix_src_link_height(src, link, height):
+    return '<a href="' + link + '"><img src="' + src.capitalize() + '" height="' + height + '"/></a>'
+
 
 
 def reveal_includes(content_tmp):
@@ -188,8 +239,8 @@ def replace_template_match(document_content, match_content, template_name, templ
     template_name = fix_template_name(template_name)
     template_content.strip()
 
+    # filter out {{}}, {{1}}, {{-}} etc.
     if len(template_name) < 2 or template_name.isdigit():
-        # not a template
         return document_content, False
 
     if len(template_content) == 0:
@@ -204,10 +255,10 @@ def replace_template_match(document_content, match_content, template_name, templ
         matched_parameters, captures = match_content_parameters(template_content)
         if len(captures) > 0:
             document_content = document_content.replace(match_content, captures +
-                                                    txt_include_start + template_name + " " + matched_parameters + txt_liquid_end)
+                                                        txt_include_start + template_name + " " + matched_parameters + txt_liquid_end)
         else:
             document_content = document_content.replace(match_content,
-                                                    txt_include_start + template_name + " " + matched_parameters + txt_liquid_end)
+                                                        txt_include_start + template_name + " " + matched_parameters + txt_liquid_end)
     return document_content, False
 
 
@@ -366,7 +417,7 @@ def convert(path_in, path_out, layout, title):
         content_tmp = reveal_includes(content_tmp)
         content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
         content_tmp = re.sub(r'<img src=\"(?!http)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
-        content_tmp = re.sub(r'(\!\[[^\]]*\]\()([^"\)]*[ \n]\"[^\"]*\"[ ]*\))', r'\1/images/pages/\2"', content_tmp)
+        content_tmp = re.sub(r'(\!\[[^\]]*\]\()([^"\)]*[ \n]\"[^\"]*\"[ ]*\))', r'\1/images/pages/\2', content_tmp)
 
         # pattern = re.compile(include_regex)
         # for match in re.findall(pattern, content_tmp):

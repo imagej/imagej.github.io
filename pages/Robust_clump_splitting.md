@@ -38,13 +38,13 @@ It depends on the [IJ-Blob](https://imagej.net/IJ_Blob) library, the [Vecmath](h
 
 If you start the plugin you can choose between two main uses, you either want to split clumps of an image or want to train a SVM to optimize parameters \(c_1\) and \(c_2\). To train the SVM you need to have input data already.
 
-![Eingabemaske2.png](/images/pages/Eingabemaske2.png "Eingabemaske2.png")"
+![Eingabemaske2.png](/images/pages/Eingabemaske2.png "Eingabemaske2.png")
 
 ### Detection Types
 
 The plugin supports different types of split lines, concavity region detection and concavity pixel detection. If you want to split a clump you have to choose, what kind of detection you want to use.
 
-![PluginScreenshot1.png](/images/pages/PluginScreenshot1.png "PluginScreenshot1.png")"
+![PluginScreenshot1.png](/images/pages/PluginScreenshot1.png "PluginScreenshot1.png")
 
 #### Split Lines
 
@@ -52,27 +52,27 @@ The plugin supports different split line types, which should be specified:
 
 **Straight Split Line:** The straight split line is a straight line between two concavity pixels. When to use? : If no intensity information for better split lines is available use this line.
 
-![StraightSplitline.png](/images/pages/StraightSplitline.png "StraightSplitline.png")"
+![StraightSplitline.png](/images/pages/StraightSplitline.png "StraightSplitline.png")
 
 **Geodesic Distance Split Line:** The geodesic distance split line uses the path of maximum intensity change between two concavity pixels. It is detected by the algorithm of *Wang et al.* When to use? : If the individual objects can be distinguished by intensity and the split lines are not to convex.
 
-![GeodesicDistanceSplitLine.png](/images/pages/GeodesicDistanceSplitLine.png "GeodesicDistanceSplitLine.png")"
+![GeodesicDistanceSplitLine.png](/images/pages/GeodesicDistanceSplitLine.png "GeodesicDistanceSplitLine.png")
 
 **Maximum Intensity Split Line:** The maximum intensity split line uses the path of maximum intensity between two concavity pixels. It is detected by the algorithm of *Wang et al.* When to use? : If the intensity of the individual objects is higher at the edge, than in the center and the split lines are not to convex.
 
-![MaximumIntensitySplitLine.png](/images/pages/MaximumIntensitySplitLine.png "MaximumIntensitySplitLine.png")"
+![MaximumIntensitySplitLine.png](/images/pages/MaximumIntensitySplitLine.png "MaximumIntensitySplitLine.png")
 
 **Minimum Intensity Split Line:** The minimum intensity split line uses the path of minimum intensity between two concavity pixels. It is detected by the algorithm of *Wang et al.* When to use? : If the intensity of the individual objects is lower at the edge, than in the center and the split lines are not to convex.
 
-![MinimumIntensitySplitLine.png](/images/pages/MinimumIntensitySplitLine.png "MinimumIntensitySplitLine.png")"
+![MinimumIntensitySplitLine.png](/images/pages/MinimumIntensitySplitLine.png "MinimumIntensitySplitLine.png")
 
 **Maximum Intensity Split Line Farhan:** The maximum intensity split line uses the path of maximum intensity between two concavity pixels. It is detected by the algorithm of *Wang et al.* When to use? : If the intensity of the individual objects is higher at the edge, than in the center and there are no clumps without intensity information, and the split line does not change orientation to often.
 
-![MaximumIntensitySplitLine.png](/images/pages/MaximumIntensitySplitLine.png "MaximumIntensitySplitLine.png")"
+![MaximumIntensitySplitLine.png](/images/pages/MaximumIntensitySplitLine.png "MaximumIntensitySplitLine.png")
 
 **Minimum Intensity Split Line Farhan:** The minimum intensity split line uses the path of minimum intensity between two concavity pixels. It is detected by the algorithm of *Farhan et al.* When to use? : If the intensity of the individual objects is lower at the edge, than in the center and there are no clumps without intensity information, and the split line does not change orientation to often.
 
-![MinimumIntensitySplitLine.png](/images/pages/MinimumIntensitySplitLine.png "MinimumIntensitySplitLine.png")"
+![MinimumIntensitySplitLine.png](/images/pages/MinimumIntensitySplitLine.png "MinimumIntensitySplitLine.png")
 
 #### Concavity Region Detection
 
@@ -80,11 +80,11 @@ The plugin supports different concavity region detection types. It specifies, in
 
 **Detect outer concavity regions by convex hull:** The concavity region detection by convex hull corresponds to the algorithm of *Kumar et al.* Concavity regions are detected, if there is a difference between convex hull and contour of the clump. Use this detection, if there are few clumps with less complex concavity regions. The blue shaded regions are the detected concavity regions.
 
-![ConvexHull.png](/images/pages/ConvexHull.png "ConvexHull.png")"
+![ConvexHull.png](/images/pages/ConvexHull.png "ConvexHull.png")
 
 **Detect outer concavity regions locally:** The local concavity region detection follows the algorithm of *Farhan et al.* Concavity regions are detected, by iterating along the contour and look for local concavity regions. Use this detection, if there are complex clumps consisting of many individual objects.
 
-![Farhan.png](/images/pages/Farhan.png "Farhan.png")"
+![Farhan.png](/images/pages/Farhan.png "Farhan.png")
 
 #### Concavity Pixel Detection
 
@@ -92,11 +92,11 @@ The plugin supports different concavity pixel detection types. The chosen type s
 
 **Detect all concavity pixels:** If all concavity pixels should be detected, the plugin is looking for all local concavity pixels. Use it, if you have chosen the concavity region detection by convex hull.
 
-![AllPixels.png](/images/pages/AllPixels.png "AllPixels.png")"
+![AllPixels.png](/images/pages/AllPixels.png "AllPixels.png")
 
 **Detect all concavity pixels with largest concavity depth:** If all concavity pixel with largest concavity depth should be detected, the plugin is looking for the global concavity pixels of a concavity region. Use it, if you have choosen the local concavity region detection.
 
-![LargestPixels.png](/images/pages/LargestPixels.png "LargestPixels.png")"
+![LargestPixels.png](/images/pages/LargestPixels.png "LargestPixels.png")
 
 ### SVM
 
@@ -108,23 +108,23 @@ Firstly you have to generate an image with optimal split lines manually. This ma
 
 Now you have to look for a good cost- and epsilon parameter of the SVM. This could happen by a grid search for example.
 
-![SVMParameter.png](/images/pages/SVMParameter.png "SVMParameter.png")"
+![SVMParameter.png](/images/pages/SVMParameter.png "SVMParameter.png")
 
 After this the SVM starts training. This could take some time. The duration depends on complexity and size of the training data.
 
 Once the SVM was trained, there are two windows, showing the results. In the first window you can see a graphical representation of the SVM model. The blue points represent the split line class, the red points represent the no split line class data and the green line represents the dividing line of the SVM.
 
-![SVMModellGraphic.png](/images/pages/SVMModellGraphic.png "SVMModellGraphic.png")"
+![SVMModellGraphic.png](/images/pages/SVMModellGraphic.png "SVMModellGraphic.png")
 
 The second window shows the parameters of this model. The optimum for \(c_1\) and \(c_2\) parameters, are given together with the number of support vectors and a confidencial matrix to evaluate the model.
 
-![SVMModelNumbers.png](/images/pages/SVMModelNumbers.png "SVMModelNumbers.png")"
+![SVMModelNumbers.png](/images/pages/SVMModelNumbers.png "SVMModelNumbers.png")
 
 ## Parameters
 
 As already mentioned the main algorithm follows the publication of *Kumar et al.* The presented algorithm to specify a valid split line depends on lots of parameters, as you can see below. Not every parameter is needed for every split line type and concavity region detection
 
-![PluginScreenshot3.png](/images/pages/PluginScreenshot3.png "PluginScreenshot3.png")"
+![PluginScreenshot3.png](/images/pages/PluginScreenshot3.png "PluginScreenshot3.png")
 
 **background color:** Choose the color of your background. Choose white, if the objects are darker than the background, and black if the objects are lighter than the background.
 
@@ -144,15 +144,15 @@ As already mentioned the main algorithm follows the publication of *Kumar et al.
 
 **concavity-concavity-alignment-threshold:** Angle between orientation of the two concavity regions. \(CC_{ij}= \pi - \cos^{-1}(v_i \cdot v_j)\). Threshold should be greater than \(\max{|180-|\theta_i-\theta_j||}\) of all valid split lines.
 
-![ConcavityConcavityAlignment.png](/images/pages/ConcavityConcavityAlignment.png "ConcavityConcavityAlignment.png")"
+![ConcavityConcavityAlignment.png](/images/pages/ConcavityConcavityAlignment.png "ConcavityConcavityAlignment.png")
 
 **concavity-line-alignment-threshold:** Angle between orientation of a split lines concavity pixel and the split line. \(CL_{ij}=\max{\cos^{-1}(v_i \cdot u_{ij}),\cos^{-1}(v_j \cdot (-u_{ij})))}\)
 
-![ConcavityLineAlignment.png](/images/pages/ConcavityLineAlignment.png "ConcavityLineAlignment.png")"
+![ConcavityLineAlignment.png](/images/pages/ConcavityLineAlignment.png "ConcavityLineAlignment.png")
 
 **concavity-angle-threshold:** Angle of a concavity region. \(CA=\angle C_{i1}C_iC_{i2}\) Threshold should be larger, than the maximum angle of a concavity region where a split line between concavity pixel and contour point is expected.
 
-![ConcavityAngle.png](/images/pages/ConcavityAngle.png "ConcavityAngle.png")"
+![ConcavityAngle.png](/images/pages/ConcavityAngle.png "ConcavityAngle.png")
 
 **concavity-ratio-threshold:** Ratio between first and second largest concavity regions. \(CR=\frac{CD_m}{CD_n}\) Threshold should be smaller than the maximum ratio of valid split line between concavity pixel and contour point.
 
@@ -162,7 +162,7 @@ As already mentioned the main algorithm follows the publication of *Kumar et al.
 
 **picture section for intensity:** For split line detection of *Wang et al.* you need to determine a picture section, in which the split line should be detected. Choose a large value if clumps and split lines are large and a small value if clumps and split lines are small.
 
-![PictureSelection.png](/images/pages/PictureSelection.png "PictureSelection.png")"
+![PictureSelection.png](/images/pages/PictureSelection.png "PictureSelection.png")
 
 **\(c_1\):** Parameter to validate a split line, for an optimal value train SVM.
 

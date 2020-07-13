@@ -84,7 +84,7 @@ When you run this tool, it will keep prompting you for '.label' files. When you 
 
 You will then be prompted to select some basic parameters:
 
-![LabelRegistration3D-1.png](/images/pages/LabelRegistration3D-1.png "LabelRegistration3D-1.png")"
+![LabelRegistration3D-1.png](/images/pages/LabelRegistration3D-1.png "LabelRegistration3D-1.png")
 
   - "Select Channel (0 - 255):" allows you to select which of the labels (tissues/objects) within the '.label' files should be registered. Empty space/background will have a value of '0', while the first (possibly only) label will have a value of '1' and this is the default setting.
 

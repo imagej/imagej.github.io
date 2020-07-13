@@ -21,17 +21,17 @@ In the initial setup we need to ensure:
 
 In our test case, we have 19,600 images, i.e. 140 sections of 10x14 tiles:
 
-![Screenshot-File-Browser-Sequence.png](/images/pages/Screenshot-File-Browser-Sequence.png "Screenshot-File-Browser-Sequence.png")"
+![Screenshot-File-Browser-Sequence.png](/images/pages/Screenshot-File-Browser-Sequence.png "Screenshot-File-Browser-Sequence.png")
 
 ## Stitching
 
 As a first step, we start Fiji and go to '{% include bc content='Plugins | Stitching | Stitch Sequence of Grids of Images'%}':
 
-![Stitching-Menu-Grid-Sequence.png](/images/pages/Stitching-Menu-Grid-Sequence.png "Stitching-Menu-Grid-Sequence.png")"
+![Stitching-Menu-Grid-Sequence.png](/images/pages/Stitching-Menu-Grid-Sequence.png "Stitching-Menu-Grid-Sequence.png")
 
 Then, the next dialog pops up to choose the stitching parameters:
 
-![Screenshot-Stitch\_Image\_Grid\_Sequence.png](/images/pages/Screenshot-Stitch_Image_Grid_Sequence.png "Screenshot-Stitch_Image_Grid_Sequence.png")"
+![Screenshot-Stitch\_Image\_Grid\_Sequence.png](/images/pages/Screenshot-Stitch_Image_Grid_Sequence.png "Screenshot-Stitch_Image_Grid_Sequence.png")
 
 Here we have to set some important parameters (the ones we don't mention can be left with their default values):
 
@@ -46,11 +46,11 @@ We then click on OK and the stitching will take place. The plugin will display a
 
 After processing the last grid/section, the plugin will display the following message:
 
-![Screenshot-Message-Sequence-Stitching.png](/images/pages/Screenshot-Message-Sequence-Stitching.png "Screenshot-Message-Sequence-Stitching.png")"
+![Screenshot-Message-Sequence-Stitching.png](/images/pages/Screenshot-Message-Sequence-Stitching.png "Screenshot-Message-Sequence-Stitching.png")
 
 As result, the stitched images are stored in the output folder:
 
-![Screenshot-File-Browser-Stitched-Sequence.png](/images/pages/Screenshot-File-Browser-Stitched-Sequence.png "Screenshot-File-Browser-Stitched-Sequence.png")"
+![Screenshot-File-Browser-Stitched-Sequence.png](/images/pages/Screenshot-File-Browser-Stitched-Sequence.png "Screenshot-File-Browser-Stitched-Sequence.png")
 
 **Performance**: The stitching of the 19,600 images (732x732 pixels each) took around 117 minutes in a Intel Core Duo at 3GHz, 4GB of RAM, running on Linux 64-bit.
 
@@ -58,11 +58,11 @@ As result, the stitched images are stored in the output folder:
 
 For the alignment of the stitched slices we will use the plugin *Register Virtual Stack Slices*, under {% include bc content='Plugins | Registration'%}:
 
-![Screenshot-RVSS-Menu.png](/images/pages/Screenshot-RVSS-Menu.png "Screenshot-RVSS-Menu.png")"
+![Screenshot-RVSS-Menu.png](/images/pages/Screenshot-RVSS-Menu.png "Screenshot-RVSS-Menu.png")
 
 As before, a dialog will pop up where we have to choose the registration parameters:
 
-![Screenshot-Register\_Virtual\_Stack.png](/images/pages/Screenshot-Register_Virtual_Stack.png "Screenshot-Register_Virtual_Stack.png")"
+![Screenshot-Register\_Virtual\_Stack.png](/images/pages/Screenshot-Register_Virtual_Stack.png "Screenshot-Register_Virtual_Stack.png")
 
 The relevant parameters are:
 
@@ -77,7 +77,7 @@ And we click on the first two check-boxes:
 
 When we click on OK, another dialog pops up to select the Feature extraction parameters:
 
-![Screenshot-Feature\_extraction.png](/images/pages/Screenshot-Feature_extraction.png "Screenshot-Feature_extraction.png")"
+![Screenshot-Feature\_extraction.png](/images/pages/Screenshot-Feature_extraction.png "Screenshot-Feature_extraction.png")
 
 Here, we only increase the **steps per octave scale** to 5 to find more point candidates to correspondences, and the **maximum image size** to 1400 pixels, to use more image information.
 

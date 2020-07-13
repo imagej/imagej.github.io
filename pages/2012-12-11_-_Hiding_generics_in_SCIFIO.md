@@ -35,6 +35,6 @@ To avoid creating differently named method signatures, we followed the base/type
 
 This does mean that when you are programming with concrete implementations, you may see some extra (less specific) method signatures in the API that will throw `IllegalArgumentExceptions` if given incorrect parameters. But we think it's worth it to avoid code like this:
 
-![**The Evolution of SCIFIO:** Generics can be terrifying.](/images/pages/Terrifying-generics.jpg "The Evolution of SCIFIO: Generics can be terrifying.")"
+![**The Evolution of SCIFIO:** Generics can be terrifying.](/images/pages/Terrifying-generics.jpg "The Evolution of SCIFIO: Generics can be terrifying.")
 
 [Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")

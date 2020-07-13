@@ -14,7 +14,7 @@ description: test description
 
 <div style="overflow: hidden">
 
-<tabs> <tab name="Windows"> ![ x32px](/images/pages/Win.png " x32px")" **Windows**
+<tabs> <tab name="Windows"> ![ x32px](/images/pages/Win.png " x32px") **Windows**
 
 Install [Git](Git "wikilink"), [Maven](Maven "wikilink"), and Java SE using [Chocolatey](https://chocolatey.org/):
 
@@ -28,7 +28,7 @@ We also heartily recommend installing [Cygwin](https://www.cygwin.com/):
 choco install -y cyg-get
 ```
 
-</tab> <tab name="OS X"> ![ x32px](/images/pages/Osx.png " x32px")" **OS X**
+</tab> <tab name="OS X"> ![ x32px](/images/pages/Osx.png " x32px") **OS X**
 
 Install [Git](Git "wikilink") and [Maven](Maven "wikilink") using [Homebrew](http://brew.sh/):
 
@@ -36,7 +36,7 @@ Install [Git](Git "wikilink") and [Maven](Maven "wikilink") using [Homebrew](htt
 brew install git maven bash-completion
 ```
 
-Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/) from Oracle. </tab> <tab name="Linux"> ![ x32px](/images/pages/Tux.png " x32px")" **Linux**
+Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/) from Oracle. </tab> <tab name="Linux"> ![ x32px](/images/pages/Tux.png " x32px") **Linux**
 
 ``` bash
 sudo apt-get install default-jdk git maven

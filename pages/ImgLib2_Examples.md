@@ -75,7 +75,7 @@ By using the concept of **Views** it is possible to display only parts of the im
 
 A **View** almost behaves similar to an **Img**, and in fact they share important concepts. Both are **RandomAccessible**, and **Views** that are not infinite are also an **Interval** (i.e. those **Views** have a defined size) and can therefore be made **Iterable** (see example 2c). In ImgLib2, all algorithms are implemented for abstract concepts like **RandomAccessible**, **Iterable** or **Interval**. This enables us, as can be seen below, to display a **View** the exact same way we would also display an **Img**.
 
-![ImgLib2example1d.jpg](/images/pages/ImgLib2example1d.jpg "ImgLib2example1d.jpg")" *Shows the original image, the View of an interval, as well as the by 90 degree rotated version of the view. Note that only the original image in kept in memory, both Views are completely virtual.*
+![ImgLib2example1d.jpg](/images/pages/ImgLib2example1d.jpg "ImgLib2example1d.jpg") *Shows the original image, the View of an interval, as well as the by 90 degree rotated version of the view. Note that only the original image in kept in memory, both Views are completely virtual.*
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example1d.java' %}
 
@@ -122,7 +122,7 @@ public < T extends Type< T > > Img< T > copyImage( ... )
 
 <span style="color:#FF0000">**WARNING:** The **copyImageWrong** method in this example makes a mistake on purpose\!</span> It intends to show that the iteration order of **Cursors** is important to consider. The goal is to copy the content of an **ArrayImg** (i.e. an **Img** that was created using an **ArrayImgFactory**) into a **CellImg**. Using only **Cursors** for both images will have a wrong result as an **ArrayImg** and a **CellImg** have different iteration orders. An **ArrayImg** is iterated linearly, while a **CellImg** is iterate cell-by-cell, but linearly within each cell.
 
-![ImgLib2example2b.png](/images/pages/ImgLib2example2b.png "ImgLib2example2b.png")" *Shows the result if two Cursors are used that have a different iteration order. Here we are wrongly copying an ArrayImg (left) into a CellImg (right).*
+![ImgLib2example2b.png](/images/pages/ImgLib2example2b.png "ImgLib2example2b.png") *Shows the result if two Cursors are used that have a different iteration order. Here we are wrongly copying an ArrayImg (left) into a CellImg (right).*
 
 <span style="color:#FF0000">The correct code for the copy-method (in **copyImageCorrect**) requires the use of a **RandomAccess**.</span> We use a **Cursor** to iterate over all pixels of the input and a **RandomAccess** which we set to the same location the output. Note that the *setPosition()* call of the **RandomAccess** directly takes the **Cursor** as input, which is possible because **Cursor** implements **Localizable**. Please also note that we use a **LocalizingCursor** instead of a normal **Cursor** because we need the location of the **Cursor** at every pixel.
 
@@ -196,7 +196,7 @@ This example illustrates the use of specialized **Iterables**, and emphasizes th
 
 Another interesting aspect of this example is the use of the **ImagePlusImgFactory**, which is the compatibility container for ImageJ. If the required dimensionality and **Type** is available in ImageJ, it will internally create an ImagePlus and work on it directly. In this case, one can request the ImagePlus and show it directly. It will, however, fail if **Type** and dimensionality is not supported by ImageJ and throw a **ImgLibException**.
 
-![ManySpheres.jpg](/images/pages/ManySpheres.jpg "ManySpheres.jpg")" *Shows the result of example 4a for the (a) two-dimensional, (b) three-dimensional and (c) four-dimensional case. The image series in (c) represents a movie of a three-dimensional rendering. The images of (b) and (c) were rendered using the ImageJ 3d Viewer.*
+![ManySpheres.jpg](/images/pages/ManySpheres.jpg "ManySpheres.jpg") *Shows the result of example 4a for the (a) two-dimensional, (b) three-dimensional and (c) four-dimensional case. The image series in (c) represents a movie of a three-dimensional rendering. The images of (b) and (c) were rendered using the ImageJ 3d Viewer.*
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example4a.java' %}
 
@@ -223,7 +223,7 @@ The generic method for minima detection has some more interesting properties. Th
 
 Please note as well that if one would increase the radius of the **RectangleShape** to more than 1 (without at the same time changing the **View** on source that creates an inset border of exactly this one pixel), this example would fail as we would try to write image data outside of the defined boundary. **OutOfBoundsStrategies** which define how to handle such cases is discussed in example 5.
 
-![AllMinima.jpg](/images/pages/AllMinima.jpg "AllMinima.jpg")" *Shows the result of the detection of local minima after the Gaussian blurring. (a) depicts the input image, (b) the blurred version (sigma=1) and (c) all local mimina drawn as circles with radius 1.*
+![AllMinima.jpg](/images/pages/AllMinima.jpg "AllMinima.jpg") *Shows the result of the detection of local minima after the Gaussian blurring. (a) depicts the input image, (b) the blurred version (sigma=1) and (c) all local mimina drawn as circles with radius 1.*
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example4b.java' %}
 
@@ -235,7 +235,7 @@ Many algorithms like *convolutions* require to access pixels outside of an **Int
 
 Which **OutOfBoundsStrategies** to use depends on task you want to perform. For convolutions we suggest the mirror strategy as it introduces the least artifacts. When working on Fourier images, the periodic strategy applies best as it correctly mimics its spatial properties. Random Value strategies might be useful to avoid accidental correlations and constant value strategies are the most performant and might work well for simple operations or to avoid exceptions when accidental writing or reading outside of the Interval occurs.
 
-![OutOfBounds.jpg](/images/pages/OutOfBounds.jpg "OutOfBounds.jpg")" *Illustrates the effect of various OutOfBoundsStrategies. (a) shows out of bounds with a constant value, (b) shows a mirroring strategy, (c) shows the periodic strategy, and (d) shows a strategy that uses random values.*
+![OutOfBounds.jpg](/images/pages/OutOfBounds.jpg "OutOfBounds.jpg") *Illustrates the effect of various OutOfBoundsStrategies. (a) shows out of bounds with a constant value, (b) shows a mirroring strategy, (c) shows the periodic strategy, and (d) shows a strategy that uses random values.*
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example5.java' %}
 
@@ -251,7 +251,7 @@ Typically algorithms provide static methods for simple calling, but they also ha
 
 The Gaussian convolution has its own [ wiki page](Gauss_Package_ImgLib2 "wikilink"). You can apply the Gaussian convolution with different sigmas in any dimension. It will work on any kind **RandomAccessibleInterval**. Below we show a examples of a simple gaussian convolution (variation 1), convolution using a different **OutOfBoundsStrategy** (variation 2), convolution of a part of an **Interval** (variation 3), and convolution of in a lower dimensionality than the image data (variation 4).
 
-![GaussExamples.jpg](/images/pages/GaussExamples.jpg "GaussExamples.jpg")" *Shows the result of the four examples for Gaussian convolution. (a) shows a simple Gaussian convolution with sigma=8. (b) shows the same Gaussian convolution but using an OutOfBoundsConstantValue instead. (c) shows the result when convolving part of the image in-place. (d) shows the result when individually convolving 1-dimensional parts on the image.*
+![GaussExamples.jpg](/images/pages/GaussExamples.jpg "GaussExamples.jpg") *Shows the result of the four examples for Gaussian convolution. (a) shows a simple Gaussian convolution with sigma=8. (b) shows the same Gaussian convolution but using an OutOfBoundsConstantValue instead. (c) shows the result when convolving part of the image in-place. (d) shows the result when individually convolving 1-dimensional parts on the image.*
 
 #### Example 6a - Gaussian convolution (variation 1 - simple)
 
@@ -287,7 +287,7 @@ In image processing it is sometimes necessary to convolve images with non-separa
 
 *Note that it is useful to normalize the kernel prior to Fourier convolution so that the sum of all pixels is one. Otherwise, the resulting intensities will be increased.*
 
-![FourierConvolution.jpg](/images/pages/FourierConvolution.jpg "FourierConvolution.jpg")" *Shows the effect of the Fourier convolution. The left image was convolved with the kernel depicted in the lower left corner, the right panel shows the convolved image. Note that the computation speed does not depend on the size or the shape of the kernel.*
+![FourierConvolution.jpg](/images/pages/FourierConvolution.jpg "FourierConvolution.jpg") *Shows the effect of the Fourier convolution. The left image was convolved with the kernel depicted in the lower left corner, the right panel shows the convolved image. Note that the computation speed does not depend on the size or the shape of the kernel.*
 
 <span style="color:#FF0000">*Important: This source code is only GPLv2\!*</span>
 
@@ -305,7 +305,7 @@ Note that for inverting the kernel we use methods defined for **ComplexType**, a
 
 The final convolution of the inverse template with the image is performed using the FourierConvolution (see example 6b). Note that all possible locations of the template in the image have been tested. The peak in the result image clearly marks the location of the template, while the computation time for the whole operation takes less than a second.
 
-![Fourier.jpg](/images/pages/Fourier.jpg "Fourier.jpg")" *Shows the result and intermediate steps of the template matching using the Fourier space. In the upper panel you see the input image as well as the template that we use from matching. Below we show four different views of the Fast Fourier Transform of the template: the power spectrum, the phase spectrum, the real values, and the imaginary values. In the lower panel you see the result of the convolution of the inverse template with the image. The position where the template was located in the image is significantly visible. In the bottom right corner you see the inverse FFT of the inverse kernel.*
+![Fourier.jpg](/images/pages/Fourier.jpg "Fourier.jpg") *Shows the result and intermediate steps of the template matching using the Fourier space. In the upper panel you see the input image as well as the template that we use from matching. Below we show four different views of the Fast Fourier Transform of the template: the power spectrum, the phase spectrum, the real values, and the imaginary values. In the lower panel you see the result of the convolution of the inverse template with the image. The position where the template was located in the image is significantly visible. In the bottom right corner you see the inverse FFT of the inverse kernel.*
 
 <span style="color:#FF0000">*Important: This source code is only GPLv2\!*</span>
 
@@ -321,7 +321,7 @@ Interpolation is a basic operation required in many image processing tasks. In t
 
 In the example we magnify a given real interval in the **RealRandomAccessible** which is based on the interpolation on an **Img** and compare the results of all three interpolation methods.
 
-![Interpolation.jpg](/images/pages/Interpolation.jpg "Interpolation.jpg")" *Shows the result for three different interpolators when magnifying a small part of the image by 10x. The nearest neighbor interpolation is computed fastest and is the most versatile as it requires no computation but just a lookout. The result is, however, very pixelated. The linear interpolation produces reasonable results and computes quite fast. The Lanczos interpolation shows visually most pleasing results but also introduces slight artifacts in the background.*
+![Interpolation.jpg](/images/pages/Interpolation.jpg "Interpolation.jpg") *Shows the result for three different interpolators when magnifying a small part of the image by 10x. The nearest neighbor interpolation is computed fastest and is the most versatile as it requires no computation but just a lookout. The result is, however, very pixelated. The linear interpolation produces reasonable results and computes quite fast. The Lanczos interpolation shows visually most pleasing results but also introduces slight artifacts in the background.*
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example7.java' %}
 
@@ -337,7 +337,7 @@ In order to display sparse data ImgLib2 currently supports two interpolation sch
 
 In this example we create a certain number of random samples with random intensities inside a certain **Interval**. Using nearest neighbor interpolation we wrap it into a **RealRandomAccessible**, wrap it again into a **RandomAccessible**, define an **Interval** on it and display it. On the same *virtual* data we perform a Gaussian convolution and show it, too.
 
-![SparseImage1.jpg](/images/pages/SparseImage1.jpg "SparseImage1.jpg")" *On the left hand side it shows nearest-neighbor rendered random sparse data as created in example 8a. The right hand side shows the result of a Gaussian convolution, run directly on the virtual RandomAccessibleInterval.*
+![SparseImage1.jpg](/images/pages/SparseImage1.jpg "SparseImage1.jpg") *On the left hand side it shows nearest-neighbor rendered random sparse data as created in example 8a. The right hand side shows the result of a Gaussian convolution, run directly on the virtual RandomAccessibleInterval.*
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example8a.java' %}
 
@@ -345,7 +345,7 @@ In this example we create a certain number of random samples with random intensi
 
 In this example we sample an existing image at random locations and render the result using a nearest neighbor interpolation as well as a distance-weighted average of the k nearest neighbors.
 
-![SparseImage2.jpg](/images/pages/SparseImage2.jpg "SparseImage2.jpg")"  
+![SparseImage2.jpg](/images/pages/SparseImage2.jpg "SparseImage2.jpg")  
 *Shows the result of sparse sampling of an existing image using a varying number of random samples. The upper panel shows the rendering using nearest neighbor interpolation, the lower panel uses an interpolated, distance-weighted value of the k nearest neighbors relative to each sampled location (i.e. each pixel).*
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example8b.java' %}

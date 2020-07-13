@@ -25,15 +25,15 @@ See also [How do I launch ImageJ with a different version of Java?](Frequently_A
 
 To diagnose problems with ImageJ, it is often helpful to launch it in debug mode:
 
-  - ![Tux.png](/images/pages/Tux.png "Tux.png")" On Linux 64-bit (from a console):
+  - ![Tux.png](/images/pages/Tux.png "Tux.png") On Linux 64-bit (from a console):
     ``` bash
     DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64
     ```
-  - ![Osx.png](/images/pages/Osx.png "Osx.png")" On OS X (from Terminal):
+  - ![Osx.png](/images/pages/Osx.png "Osx.png") On OS X (from Terminal):
     ``` bash
     DEBUG=1 /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx
     ```
-  - ![Win.png](/images/pages/Win.png "Win.png")" On Windows 64-bit:
+  - ![Win.png](/images/pages/Win.png "Win.png") On Windows 64-bit:
       - Make a copy of `ImageJ-win64.exe` called `debug.exe`
       - Run `debug.exe`
 
@@ -67,13 +67,13 @@ There are two ways to create such a snapshot, known as a "thread dump" or "stack
 If the first method does not work, and you can reproduce the hang:
 
 1.  Launch ImageJ again, this time [from the console](#Launching_ImageJ_from_the_console "wikilink") as described above.
-      - ![Win.png](/images/pages/Win.png "Win.png")" On Windows, you will need to download and run [this batch file](https://raw.githubusercontent.com/imagej/imagej/master/bin/ImageJ.bat), which launches ImageJ with an attached Command Prompt window.
+      - ![Win.png](/images/pages/Win.png "Win.png") On Windows, you will need to download and run [this batch file](https://raw.githubusercontent.com/imagej/imagej/master/bin/ImageJ.bat), which launches ImageJ with an attached Command Prompt window.
 2.  Generate and copy the stack trace:
-      - ![Osx.png](/images/pages/Osx.png "Osx.png")" ![Tux.png](/images/pages/Tux.png "Tux.png")" On non-Windows platforms:
+      - ![Osx.png](/images/pages/Osx.png "Osx.png") ![Tux.png](/images/pages/Tux.png "Tux.png") On non-Windows platforms:
         1.  Press {% include key content='Ctrl|\\' %} in the console window to print the stack trace.
         2.  Select the stack trace by dragging with the left mouse button.
         3.  Right click and select "Copy" to copy it to the clipboard.
-      - ![Win.png](/images/pages/Win.png "Win.png")" On Windows:
+      - ![Win.png](/images/pages/Win.png "Win.png") On Windows:
         1.  Press {% include key content='Ctrl|Pause' %} in the Command Prompt window to print the stack trace. (**Note:** this shortcut actually uses the [Break key](Wikipedia:Break_key "wikilink"))
         2.  Click the Command Prompt icon in the upper left corner of the window, and choose {% include bc content='Edit|Mark'%}.
         3.  Select the stack trace by dragging with the left mouse button.
@@ -93,7 +93,7 @@ If ImageJ [crashes](wikipedia:Crash_\(computing\) "wikilink")—i.e., the progra
 
 ### On a fresh installation
 
-![Win.png](/images/pages/Win.png "Win.png")" On some 32-bit Windows systems, ImageJ may initially request more memory than Windows can handle. If you launch ImageJ in debug mode (see above), and receive a message like:
+![Win.png](/images/pages/Win.png "Win.png") On some 32-bit Windows systems, ImageJ may initially request more memory than Windows can handle. If you launch ImageJ in debug mode (see above), and receive a message like:
 
     Could not reserve enough space for 1253376KB object heap
 
@@ -200,7 +200,7 @@ Note that in most cases, the [ImageJ launcher](Launcher "wikilink") will make an
 
 You can confirm how much memory is actually available by clicking on the [status bar](status_bar "wikilink"). You will see a "\[used\] of \[max\]" memory message, as pictured here:
 
-![MemoryStatus.png](/images/pages/MemoryStatus.png "MemoryStatus.png")"
+![MemoryStatus.png](/images/pages/MemoryStatus.png "MemoryStatus.png")
 
 If you are already at the limits of your computer's physical memory, the next step would be to add more.
 

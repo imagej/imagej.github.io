@@ -12,11 +12,11 @@ description: test description
 
 |                                                                                                                     |
 | ------------------------------------------------------------------------------------------------------------------- |
-| ![Example of AnalyzeSkeleton performance](/images/pages/Analyze_skeleton_09_13_2009.png "Example of AnalyzeSkeleton performance")" |
+| ![Example of AnalyzeSkeleton performance](/images/pages/Analyze_skeleton_09_13_2009.png "Example of AnalyzeSkeleton performance") |
 
 ## General Description
 
-![Example of voxel classification](/images/pages/Tagging_example.png "Example of voxel classification")" This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {% include bc content='Analyze | Skeleton | Analyze Skeleton (2D/3D)'%}. See [Skeletonize3D](Skeletonize3D "wikilink") for an example of how to produce skeleton images.
+![Example of voxel classification](/images/pages/Tagging_example.png "Example of voxel classification") This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {% include bc content='Analyze | Skeleton | Analyze Skeleton (2D/3D)'%}. See [Skeletonize3D](Skeletonize3D "wikilink") for an example of how to produce skeleton images.
 
 The voxels are classified into three different categories depending on their 26 neighbors:
 
@@ -30,7 +30,7 @@ Notice here that, following this notation, the number of junction voxels can be 
 
 ## Main options
 
-![Main dialog of the AnalyzeSkeleton plugin](/images/pages/Screenshot-AnalyzeSkeleton-dialog.png "Main dialog of the AnalyzeSkeleton plugin")" In the main dialog of the plugin the user can select some options to
+![Main dialog of the AnalyzeSkeleton plugin](/images/pages/Screenshot-AnalyzeSkeleton-dialog.png "Main dialog of the AnalyzeSkeleton plugin") In the main dialog of the plugin the user can select some options to
 
   - **Prune the possible loops** in the skeleton (by choosing one of the pruning cycle methods).
   - **Prune any branch that ends in an end-point** (by checking "Prune ends"), as implemented by [Michael Doube](http://doube.org/) in [BoneJ](http://bonej.org/).
@@ -41,7 +41,7 @@ Notice here that, following this notation, the number of junction voxels can be 
 
 ## Loop detection and pruning
 
-![Example of cycle detection and pruning](/images/pages/Cycle_detection.png "Example of cycle detection and pruning")" Since the 2009/09/02 version of the code, the possible cycles or loops in the skeleton can be detected and pruned previous to the analysis. In this sense, the initial plugin dialog offers 4 options:
+![Example of cycle detection and pruning](/images/pages/Cycle_detection.png "Example of cycle detection and pruning") Since the 2009/09/02 version of the code, the possible cycles or loops in the skeleton can be detected and pruned previous to the analysis. In this sense, the initial plugin dialog offers 4 options:
 
   - **none**: no cycle detection nor pruning is performed.
   - **shortest branch**: the shortest branch among the loop branches will be cut in its middle point.
@@ -54,7 +54,7 @@ The only known limitation of this approach is shown in the presence of nested lo
 
 ## Table of results
 
-![Example of AnalyzeSkeleton Results table](/images/pages/AnalyzeSkeleton-Results-table.png "Example of AnalyzeSkeleton Results table")" After classification, a “Results” window is displayed showing for each skeleton in the image:
+![Example of AnalyzeSkeleton Results table](/images/pages/AnalyzeSkeleton-Results-table.png "Example of AnalyzeSkeleton Results table") After classification, a “Results” window is displayed showing for each skeleton in the image:
 
   - The number of branches (slab segments, usually connecting end-points, end-points and junctions or junctions and junctions). The special case of a circular skeleton is also contemplated here.
   - The number of voxels of every type: end-point, slab and junction voxels.
@@ -66,7 +66,7 @@ AnalyzeSkeleton is able to process up to **2<sup>31</sup>-1 skeletons in one sin
 
 #### Detailed information
 
-![Example of AnalyzeSkeleton Branch information window](/images/pages/AnalyzeSkeleton_Branch_information.png "Example of AnalyzeSkeleton Branch information window")" When calling the plugin, if the "Show detailed information" checkbox is marked, a complementary results table called "Branch information" is shown.
+![Example of AnalyzeSkeleton Branch information window](/images/pages/AnalyzeSkeleton_Branch_information.png "Example of AnalyzeSkeleton Branch information window") When calling the plugin, if the "Show detailed information" checkbox is marked, a complementary results table called "Branch information" is shown.
 
 In this table we display all branches information:
 
@@ -95,7 +95,7 @@ Using the [3D\_Viewer](3D_Viewer "wikilink") libraries we can easily display the
 
 |                                                                                                                                                                            |                                                                                                                                                                                                            |                                                                                                                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer](/images/pages/Bat_cochlea_3D.gif "Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer")" | ![3D skeleton of bat cochlea volume rendered in the viewer after voxel classification](/images/pages/Movie_skeleton_rendering.gif "3D skeleton of bat cochlea volume rendered in the viewer after voxel classification")" | ![Bat cochlea volume rendered in the viewer with its corresponding classified skeleton](/images/pages/Movie_bat_skel.gif "Bat cochlea volume rendered in the viewer with its corresponding classified skeleton")" |
+| ![Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer](/images/pages/Bat_cochlea_3D.gif "Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer") | ![3D skeleton of bat cochlea volume rendered in the viewer after voxel classification](/images/pages/Movie_skeleton_rendering.gif "3D skeleton of bat cochlea volume rendered in the viewer after voxel classification") | ![Bat cochlea volume rendered in the viewer with its corresponding classified skeleton](/images/pages/Movie_bat_skel.gif "Bat cochlea volume rendered in the viewer with its corresponding classified skeleton") |
 
 ## Scripting AnalyzeSkeleton
 

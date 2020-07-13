@@ -81,7 +81,7 @@ Press {% include key content='press|F8' %} to bring up a transformation type sel
 
 |                                                                          |                                                                                   |
 | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| ![Bigwarp\_selectTps.png](/images/pages/Bigwarp_selectTps.png "Bigwarp_selectTps.png")" | ![Bigwarp\_selectAffine.png](/images/pages/Bigwarp_selectAffine.png "Bigwarp_selectAffine.png")" |
+| ![Bigwarp\_selectTps.png](/images/pages/Bigwarp_selectTps.png "Bigwarp_selectTps.png") | ![Bigwarp\_selectAffine.png](/images/pages/Bigwarp_selectAffine.png "Bigwarp_selectAffine.png") |
 | Example of a thin plate spline transformation                            | Example of an affine transformation                                               |
 
 #### Table of transformation types
@@ -156,7 +156,7 @@ Landmarks can be exported and imported from plain text files using the drop down
 Export the warped moving image by clicking *File {% include arrow%}
  \> Export as ImagePlus* or using the {% include key content='press|Ctrl' %}+{% include key content='press|E' %} keyboard shortcut.
 
-![Bigwarp\_export.png](/images/pages/Bigwarp_export.png "Bigwarp_export.png")"
+![Bigwarp\_export.png](/images/pages/Bigwarp_export.png "Bigwarp_export.png")
 
 The default parameters will result in the exported image having the same dimensions as the target image. *Note: Take care when exporting very large data sets as they can cause out-of-memory exceptions.*
 
@@ -174,7 +174,7 @@ The default parameters will result in the exported image having the same dimensi
 
 The warped moving image can be exported as an in-memory or [virtual](https://imagej.net/docs/guide/146-8.html) ImagePlus. A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
-![BigwarpLandmarkCenteredExport.png](/images/pages/BigwarpLandmarkCenteredExport.png "BigwarpLandmarkCenteredExport.png")"
+![BigwarpLandmarkCenteredExport.png](/images/pages/BigwarpLandmarkCenteredExport.png "BigwarpLandmarkCenteredExport.png")
 
 ### Apply transforms
 
@@ -222,7 +222,7 @@ The results are shown in the "Inverse example" below.
 
 |                                                                                     |                                                                                     |
 | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| ![bigwarp\_warp\_roi\_fwd.png](/images/pages/bigwarp_warp_roi_fwd.png "bigwarp_warp_roi_fwd.png")" | ![bigwarp\_warp\_roi\_inv.png](/images/pages/bigwarp_warp_roi_inv.png "bigwarp_warp_roi_inv.png")" |
+| ![bigwarp\_warp\_roi\_fwd.png](/images/pages/bigwarp_warp_roi_fwd.png "bigwarp_warp_roi_fwd.png") | ![bigwarp\_warp\_roi\_inv.png](/images/pages/bigwarp_warp_roi_inv.png "bigwarp_warp_roi_inv.png") |
 | Forward example (click to expand)                                                   | Inverse example (click to expand)                                                   |
 
 Note, at this time ImageJ ROIs are 2D objects. We recommend using another approach for 3D regions of interest.

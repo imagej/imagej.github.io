@@ -17,7 +17,7 @@ Automatic particle counting can be done if the image does not have too many indi
 
 [Segmentation](Segmentation "wikilink"), or the ability to distinguish an object from its background, can be a difficult issue to deal with. Once this has been done, however, the object can then be analyzed.
 
-**RAW Threshold Watershed “AnalyzeParticles”** ![266\*177px](/images/pages/Raw_Threshold_Watershed_AnalyzeParticles2.jpg "266*177px")"
+**RAW Threshold Watershed “AnalyzeParticles”** ![266\*177px](/images/pages/Raw_Threshold_Watershed_AnalyzeParticles2.jpg "266*177px")
 
 ### Setting a threshold
 
@@ -25,11 +25,11 @@ Automatic particle counting can be done if the image does not have too many indi
 
 Automatic particle analysis requires a “binary”, black and white, image. A threshold range is set to tell the objects of interest apart from the background. All pixels in the image whose values lie under the threshold are converted to black and all pixels with values above the threshold are converted to white, or vice-versa.
 
-|                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![black\_white\_threshold.png](/images/pages/black_white_threshold.png "black_white_threshold.png")" | There are several ways to set thresholds. Monochrome images are most simply thresholded via the menu command {% include bc content='Image | Adjust | Threshold'%}. The threshold can be set using the slider bars. The pixels within the threshold range are displayed in red. When you are satisfied with the threshold settings, you can then hit *Apply*. This will permanently apply the threshold settings and convert the image to binary. You have different options for setting a manual threshold. The drop-down menu set to *Default* allows you to choose between *Default* and 15 other threshold techniques. The drop-down menu set to *Red* allows you to choose between a red on white color scheme, a black on white color scheme, or an over and under color scheme. The *Dark Background* box will flip the foreground color with the background color. You can also choose to check the Stack histogram box to produce a histogram for an entire stack. |
+|                                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src="/images/pages/Black\_white\_threshold.png" title="left" %} | There are several ways to set thresholds. Monochrome images are most simply thresholded via the menu command {% include bc content='Image | Adjust | Threshold'%}. The threshold can be set using the slider bars. The pixels within the threshold range are displayed in red. When you are satisfied with the threshold settings, you can then hit *Apply*. This will permanently apply the threshold settings and convert the image to binary. You have different options for setting a manual threshold. The drop-down menu set to *Default* allows you to choose between *Default* and 15 other threshold techniques. The drop-down menu set to *Red* allows you to choose between a red on white color scheme, a black on white color scheme, or an over and under color scheme. The *Dark Background* box will flip the foreground color with the background color. You can also choose to check the Stack histogram box to produce a histogram for an entire stack. |
 
-![color\_thresholding\_manual\_threshold2.png](/images/pages/color_thresholding_manual_threshold2.png "color_thresholding_manual_threshold2.png")" For color images, setting the threshold is done with the command sequence {% include bc content='Image | Adjust | Color Threshold...'%}. The *Thresholding method* option allows you to choose a thresholding techniqe other than the default. The *Threshold color* option allows you to choose between Red, White, Black, or B\&W as the thresholding color. The *Color space* option allows you to choose between HSB, RGB, Lab, and YUV. The background of the thresholded image can be made light or dark. The image can be converted to a binary image via the menu command {% include bc content='Image | Type | 8-bit'%}.
+{% include thumbnail src="/images/pages/Color\_thresholding\_manual\_threshold2.png" title="right" %} For color images, setting the threshold is done with the command sequence {% include bc content='Image | Adjust | Color Threshold...'%}. The *Thresholding method* option allows you to choose a thresholding techniqe other than the default. The *Threshold color* option allows you to choose between Red, White, Black, or B\&W as the thresholding color. The *Color space* option allows you to choose between HSB, RGB, Lab, and YUV. The background of the thresholded image can be made light or dark. The image can be converted to a binary image via the menu command {% include bc content='Image | Type | 8-bit'%}.
 
 **Automatic thresholding**
 
@@ -39,7 +39,7 @@ There are many algorithms you can use to calculate the threshold without introdu
 
 Fiji has several plugins found in the menu {% include bc content='Image | Adjust | Threshold'%} for automatic calculation of an image threshold. These include Otsu's thresholding, maximum entropy threshold, and mixture modelling thresholding. For a complete list of the methods available with Fiji see the Plugins section located in the Documentation section under the Content tab at the top of this page.
 
-![automatic\_thresholding\_5.1.1.2.jpg](/images/pages/automatic_thresholding_5.1.1.2.jpg "automatic_thresholding_5.1.1.2.jpg")"
+![automatic\_thresholding\_5.1.1.2.jpg](/images/pages/automatic_thresholding_5.1.1.2.jpg "automatic_thresholding_5.1.1.2.jpg")
 
 ### Watershed separation
 
@@ -49,7 +49,7 @@ First convert the image to binary by thresholding. The black pixels are then rep
 
 ### Analyze Particles
 
-To analyze the particles in a segmented image, use the menu command {% include bc content='Analyze | Analyze particles...'%}. This will provide you with information about each particle in the image.![|right](/images/pages/analyze_particles_screenshot.png "|right")".
+To analyze the particles in a segmented image, use the menu command {% include bc content='Analyze | Analyze particles...'%}. This will provide you with information about each particle in the image.![|right](/images/pages/analyze_particles_screenshot.png "|right").
 
 Set the minimum size and maximum pixel area size to exclude anything that is not an object of interest in the image. Roundness values between 0.0 and 1.0 can also be selected to help exclude unwanted objects. Select the *Show: Outlines* option to display an image of the detected objects. The *Show* drop-down menu also allows the user to show Nothing, Bare Outlines, Ellipses, Masks, Count Masks, Overlay Outlines, and Overlay Masks. The user can choose whether to *Display results*, *Clear Results*, *Summarize*, *Add to Manager*, *Exclude on edges*, *Include holes*, *Record starts*, and/or *In situ Show*.
 
@@ -59,7 +59,7 @@ The particle analysis can be automated via plugins or macros once the correct th
 
 This plugin automates many of the steps discussed above.
 
-1.  Enter the size range to be counted![nucleus\_counter\_1.jpg](/images/pages/nucleus_counter_1.jpg "nucleus_counter_1.jpg")".
+1.  Enter the size range to be counted![nucleus\_counter\_1.jpg](/images/pages/nucleus_counter_1.jpg "nucleus_counter_1.jpg").
 2.  Select the automatic thresholding method. This can be either *Current*, *Otsu*, Maximum Entropy'', *Mixture Modelling* or *k-means* clustering. *Current* uses the threshold that has been set manually, see above.
 3.  Perform a background correction.
 4.  Use a *Smooth* filter.
@@ -71,7 +71,7 @@ Other options can easily be added on request.
 
 The count, area, and average size are returned as a text window and the outlined particles are overlaid on a duplicate of the original image.
 
-![nucleus\_counter\_2.jpg](/images/pages/nucleus_counter_2.jpg "nucleus_counter_2.jpg")"
+![nucleus\_counter\_2.jpg](/images/pages/nucleus_counter_2.jpg "nucleus_counter_2.jpg")
 
 ## Manual Counting
 

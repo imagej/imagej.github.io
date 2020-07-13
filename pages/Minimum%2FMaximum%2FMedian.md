@@ -22,4 +22,4 @@ The neighborhood is defined by a kernel, which has a diameter of 3 voxels.
 
 The image below shows the effect of each of the filters, using the MRI sample image which comes with ImageJ and Fiji.
 
-![MinMaxMedian.png](/images/pages/MinMaxMedian.png "MinMaxMedian.png")"
+![MinMaxMedian.png](/images/pages/MinMaxMedian.png "MinMaxMedian.png")

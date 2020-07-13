@@ -10,7 +10,7 @@ description: test description
 
 # Wiscan Data Acquisition
 
-![Microscope setup](/images/pages/OWS_1.jpg "Microscope setup")"
+![Microscope setup](/images/pages/OWS_1.jpg "Microscope setup")
 
 1.  Make sure the image being used has been set up correctly:
     1.  On the computer, click and hold the shutter button until it turns yellow. The shutter is now activated
@@ -131,13 +131,13 @@ Once Wiscan has run, your output will be a series of images that can be stitched
 
 ## Generate the grid
 
-![BasicGrid.png](/images/pages/BasicGrid.png "BasicGrid.png")"
+![BasicGrid.png](/images/pages/BasicGrid.png "BasicGrid.png")
 
 ### The basic grid
 
 1.  Fill in the Dimensions of X and Y in \#X and \#Y respectively
 
-![OverlappedGrid.png](/images/pages/OverlappedGrid.png "OverlappedGrid.png")"
+![OverlappedGrid.png](/images/pages/OverlappedGrid.png "OverlappedGrid.png")
 
 <li>
 
@@ -168,7 +168,7 @@ Select "OK"
 
 ### Calculating grid using total sample size
 
-![SampleSize.png](/images/pages/SampleSize.png "SampleSize.png")"
+![SampleSize.png](/images/pages/SampleSize.png "SampleSize.png")
 
 1.  Enter the total size dimensions of your stitched image in microns into the "Total Size" boxes
 2.  Enter the step size or the overlap for you stitched images and select "Calculate total size from \# Pos"
@@ -178,7 +178,7 @@ Select "OK"
 
 1.  Determine your step size using either a pre-calculated value or the overlap slider
 
-![StageGrid.png](/images/pages/StageGrid.png "StageGrid.png")"
+![StageGrid.png](/images/pages/StageGrid.png "StageGrid.png")
 
 <li>
 

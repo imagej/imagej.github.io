@@ -28,7 +28,7 @@ The dual problem is the Voronoi Diagram: given a set of points, visualize those 
 
 A picture says more than thousand words:
 
-![The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black](/images/pages/Delaunay-voronoi.png "The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black")"
+![The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black](/images/pages/Delaunay-voronoi.png "The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black")
 
 ## Usage
 
@@ -42,7 +42,7 @@ This plugin operates on a point selection consisting of multiple points.
 
 The plugin shows this dialog when it is called:
 
-![Delaunay-dialog.png](/images/pages/Delaunay-dialog.png "Delaunay-dialog.png")"
+![Delaunay-dialog.png](/images/pages/Delaunay-dialog.png "Delaunay-dialog.png")
 
 Options include:
 

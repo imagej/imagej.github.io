@@ -20,6 +20,6 @@ The Multiple Image Processor allows the researchers to work on large images with
 
 **Note**: The plugin ignores all input files which do are not of one of the supported file types.
 
-![Multiple\_Image\_Processor.jpg](/images/pages/Multiple_Image_Processor.jpg "Multiple_Image_Processor.jpg")"
+![Multiple\_Image\_Processor.jpg](/images/pages/Multiple_Image_Processor.jpg "Multiple_Image_Processor.jpg")
 
 [Category:Plugins](Category:Plugins "wikilink")

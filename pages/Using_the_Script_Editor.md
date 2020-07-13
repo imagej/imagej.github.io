@@ -68,7 +68,7 @@ description: test description
 
 To get started, start up the script editor:
 
-![Script-Editor-new.jpg](/images/pages/Script-Editor-new.jpg "Script-Editor-new.jpg")"
+![Script-Editor-new.jpg](/images/pages/Script-Editor-new.jpg "Script-Editor-new.jpg")
 
 There is also the keyboard shortcut {% include key content='\[' %} (open square bracket) to open the editor.
 
@@ -76,23 +76,23 @@ There is also the keyboard shortcut {% include key content='\[' %} (open square 
 
 Then choose a language from the language menu:
 
-![Script-Editor-choose-language.jpg](/images/pages/Script-Editor-choose-language.jpg "Script-Editor-choose-language.jpg")"
+![Script-Editor-choose-language.jpg](/images/pages/Script-Editor-choose-language.jpg "Script-Editor-choose-language.jpg")
 
 Now you can write your script. In this tutorial, Jython was chosen as scripting language, but the process is really the same for all scripting languages.
 
-![Script-Editor-first-script.jpg](/images/pages/Script-Editor-first-script.jpg "Script-Editor-first-script.jpg")"
+![Script-Editor-first-script.jpg](/images/pages/Script-Editor-first-script.jpg "Script-Editor-first-script.jpg")
 
 ### Running the script
 
 Once you are satisfied with the script, run it. This does not require saving, but of course you should save your script later when it works.
 
-![Script-Editor-run.jpg](/images/pages/Script-Editor-run.jpg "Script-Editor-run.jpg")"
+![Script-Editor-run.jpg](/images/pages/Script-Editor-run.jpg "Script-Editor-run.jpg")
 
 Note that while the script is running, the window title shows the tell-tale *(Running)*.
 
 You can use all of ImageJ's classes right away. Here is an example that shows a dialog where the user can input a number. For details how to write dialogs in the different scripting languages, see [Scripting comparisons](Scripting_comparisons "wikilink")
 
-![Script-Editor-dialog.jpg](/images/pages/Script-Editor-dialog.jpg "Script-Editor-dialog.jpg")"
+![Script-Editor-dialog.jpg](/images/pages/Script-Editor-dialog.jpg "Script-Editor-dialog.jpg")
 
 ## Further reading
 

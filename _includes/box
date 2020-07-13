@@ -1,1 +1,3 @@
-<div class="sidebox-right" markdown="1">{{include.text}}</div>
+<div class="sidebox-right">
+    {{include.text | markdownify}}
+</div>

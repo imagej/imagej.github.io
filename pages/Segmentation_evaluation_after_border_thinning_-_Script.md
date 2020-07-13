@@ -119,13 +119,13 @@ if( calculateVInfoAfterThinning )
 
 If you run it while two images are open, the following dialog will pop up:
 
-![Script-segmentation-evaluation-thinning-dialog.png](/images/pages/Script-segmentation-evaluation-thinning-dialog.png "Script-segmentation-evaluation-thinning-dialog.png")"
+![Script-segmentation-evaluation-thinning-dialog.png](/images/pages/Script-segmentation-evaluation-thinning-dialog.png "Script-segmentation-evaluation-thinning-dialog.png")
 
 Here you can select among the open images which ones are the original and the proposed labels, along with the specific metrics you want to apply to evaluate the segmentation results. If the proposed labels are binary (not a probability image) then you can click on "Binary proposal" to avoid using many threshold values.
 
 After clicking OK the metrics will be applied and the results will be shown in the Log window:
 
-![Script-segmentation-evaluation-thinning-log.png](/images/pages/Script-segmentation-evaluation-thinning-log.png "Script-segmentation-evaluation-thinning-log.png")"
+![Script-segmentation-evaluation-thinning-log.png](/images/pages/Script-segmentation-evaluation-thinning-log.png "Script-segmentation-evaluation-thinning-log.png")
 
 # References
 

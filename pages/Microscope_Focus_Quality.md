@@ -8,7 +8,7 @@ categories: Citable
 description: test description
 ---
 
-![Mifqc.png](/images/pages/Mifqc.png "Mifqc.png")" 
+![Mifqc.png](/images/pages/Mifqc.png "Mifqc.png") 
 {% capture source%}
 {% include github org='fiji' repo='microscope-image-quality' tag='microscope-image-quality-0.1.0' %}
 {% endcapture %}

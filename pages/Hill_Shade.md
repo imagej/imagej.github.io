@@ -20,7 +20,7 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 
 ## Dialog parameters
 
-![|Dialog screen shot](/images/pages/Hillshade-screenshot.jpg "|Dialog screen shot")"
+![Dialog screen shot](/images/pages/Hillshade-screenshot.jpg "Dialog screen shot")
 
   - **x Pixel Size** - Size of one pixel in x direction, in the same units as the height (pixel value).
   - **y Pixel Size** - Size of one pixel in y direction, in the same units as the height (pixel value).
@@ -31,7 +31,7 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 
 ## Tips
 
-![Topographic map created by superposition, click to enlarge](/images/pages/Hillshade-overlay-example.jpg "Topographic map created by superposition, click to enlarge")"
+![Topographic map created by superposition, click to enlarge](/images/pages/Hillshade-overlay-example.jpg "Topographic map created by superposition, click to enlarge")
 
   - If the slopes are very gentle, you can try setting smaller values of the pixel size to enhance the contrast.
   - To create an output like a topographic map, display the input (elevation data) with a suitable lookup table and superimpose the hill shade output:

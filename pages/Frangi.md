@@ -14,7 +14,7 @@ In my experience, this method produces consistently better results than the [Tub
 
 These screenshots show the results on an example file:
 
-![Frangi-before-and-after.png](/images/pages/Frangi-before-and-after.png "Frangi-before-and-after.png")"
+![Frangi-before-and-after.png](/images/pages/Frangi-before-and-after.png "Frangi-before-and-after.png")
 
 <references/>
 

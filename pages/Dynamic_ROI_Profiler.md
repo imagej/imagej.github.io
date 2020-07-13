@@ -18,6 +18,6 @@ Dynamically updates a profile plot for an image with a line, freeline, polyline 
 
 |                                                                                                                                                                                                                                                                |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Dragging a line ROI across an image shows the pixel intensity profile across that line in a separate image window.](/images/pages/Profiler-movie.gif "Dragging a line ROI across an image shows the pixel intensity profile across that line in a separate image window.")" |
+| ![Dragging a line ROI across an image shows the pixel intensity profile across that line in a separate image window.](/images/pages/Profiler-movie.gif "Dragging a line ROI across an image shows the pixel intensity profile across that line in a separate image window.") |
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Scripting](Category:Scripting "wikilink") [Category:Unmaintained](Category:Unmaintained "wikilink")

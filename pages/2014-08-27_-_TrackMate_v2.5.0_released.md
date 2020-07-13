@@ -32,13 +32,13 @@ There are tiny differences with the previous version, notably in the way cost th
 
 [TrackScheme](TrackScheme "wikilink") now features a search box and proper row and column headers.
 
-![TrachSchemeSearchBar.png](/images/pages/TrachSchemeSearchBar.png "TrachSchemeSearchBar.png")"
+![TrachSchemeSearchBar.png](/images/pages/TrachSchemeSearchBar.png "TrachSchemeSearchBar.png")
 
 ## Other improvement
 
 A new action, called *Branch hierarchy analysis* features a branch-based analysis of tracks. The output is an ImageJ results table that contains for each branch the number of predecessors, the number of successors and its duration. The results table is clickable and will set the selection to be the clicked branch.
 
-![TrackMateBranchAnalysis.png](/images/pages/TrackMateBranchAnalysis.png "TrackMateBranchAnalysis.png")"
+![TrackMateBranchAnalysis.png](/images/pages/TrackMateBranchAnalysis.png "TrackMateBranchAnalysis.png")
 
 <references/>
 

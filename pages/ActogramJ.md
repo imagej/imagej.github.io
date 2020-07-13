@@ -28,7 +28,7 @@ description: test description
 
   - {% include publication content='ActogramJ' %}
 
-![ActogramJ.png](/images/pages/ActogramJ.png "ActogramJ.png")"
+![ActogramJ.png](/images/pages/ActogramJ.png "ActogramJ.png")
 
 More information is available at https://bene51.github.io/ActogramJ.
 

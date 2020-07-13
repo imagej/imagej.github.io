@@ -10,7 +10,7 @@ description: test description
 
 {% include info-box name='Pendent Drop' software='Fiji' author=' [Adrian Daerr](http://www.msc.univ-paris-diderot.fr/~daerr/) ' maintainer=' [Adrian Daerr](http://www.msc.univ-paris-diderot.fr/~daerr/) ' update-site=' [\[List of update sites]([List_of_update_sites "wikilink") http://sites.imagej.net/Daerr/\] ' source='https://github.com/adaerr/pendent-drop' released='September 28, 2010' latest-version='version 2 (September 20, 2015)' status='stable, active' %}
 
-![eauContrasteMaxFit.jpg](/images/pages/eauContrasteMaxFit.jpg "eauContrasteMaxFit.jpg")"
+![eauContrasteMaxFit.jpg](/images/pages/eauContrasteMaxFit.jpg "eauContrasteMaxFit.jpg")
 
 *Pendent drop profile integration and fitting*
 

@@ -299,7 +299,7 @@ Suggested by Quentin de Robillard.
 
 ## Integrate ImageFlow into Fiji
 
-![ImageFlow.png](/images/pages/ImageFlow.png "ImageFlow.png")"
+![ImageFlow.png](/images/pages/ImageFlow.png "ImageFlow.png")
 
 ImageFlow provides a graphical way to construct macros. Every action is represented by a node which the user can connect with lines to define a workflow.
 

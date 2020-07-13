@@ -32,23 +32,23 @@ If you are using NanoTrackJ in a scientific publication, please cite:
 
 The *maxima method* utilizes the ["Process -\> Find Maxima"](http://rsbweb.nih.gov/ij/docs/menus/process.html#find-maxima) method of ImageJ. A "Spot Assistant" helps the user to select an appropriate mean filter size and tolerance value.
 
-![Spotassistant.png](/images/pages/Spotassistant.png "Spotassistant.png")"
+![Spotassistant.png](/images/pages/Spotassistant.png "Spotassistant.png")
 
 This is the recommended method and it is also usable with RGB image series. The found maxima are used as centroids to track the particles.
 
-![Spots.png](/images/pages/Spots.png "Spots.png")" ![SpotsMax.png](/images/pages/SpotsMax.png "SpotsMax.png")"
+![Spots.png](/images/pages/Spots.png "Spots.png") ![SpotsMax.png](/images/pages/SpotsMax.png "SpotsMax.png")
 
 The *maxima method & gaussian fit* also utilizes the ["Process -\> Find Maxima"](http://rsbweb.nih.gov/ij/docs/menus/process.html#find-maxima) method of ImageJ but do an gaussian fit after that to improve the estimation qualtity. Theoretically it achieves sub-pixel accuracy. However, diffraction patterns often suffers from saturation and sometimes they do not even have a gaussian shape so that sub-pixel accuracy is not achievable.
 
 **Diffusion-Coefficient-Estimator:** Two methods are available: The regression method and the covariance method. The *regression method* is the most used in literature to estimate the diffusion coefficient. It evaluates the mean squared displacement for different time lags. Then it fits a regression line to the data points. This regression line is not constrained to go through the point of origin (0,0). The slope of this regression line is proportional to diffusion coefficient. This method is very simple but unfortunately error prone. Up to now its not clear, how many data points lead to the best estimate. Therefore, the plugin allows the user to determine what minimum and maximum time lag should be used.
 
-![Regression.png](/images/pages/Regression.png "Regression.png")"
+![Regression.png](/images/pages/Regression.png "Regression.png")
 
 There are several recommendations in the literature. Vestergaard \[2\] states that only the first two time lags should be used and as more time lags are used as greater is the error in the estimate. However, Ernst and Köhler \[1\] recommends to use the time lags 2 to 5.
 
 The *covariance estimator* is a good alternative to the regression estimator. It is an unbiased estimator and shows a fast convergence to Cramer-Rao lower bound \[2\]. It need no further parameters and accounting for localization errors.
 
-**Search-Radius:** One particle in a frame is matched to another particle in a successive frame only if the distance between their centroids is lower than this radius. It is recommended that the software automatically calculate the radius. This is done by using the expected diffusion coefficient D of a particle with size specified in "Min. Exp. Particle Size". The search radius estimated by ![Searchradius.gif](/images/pages/Searchradius.gif "Searchradius.gif")" ensures that 99% of the distances a particle moved between two frames is not greater than the search radius.\[4\]
+**Search-Radius:** One particle in a frame is matched to another particle in a successive frame only if the distance between their centroids is lower than this radius. It is recommended that the software automatically calculate the radius. This is done by using the expected diffusion coefficient D of a particle with size specified in "Min. Exp. Particle Size". The search radius estimated by ![Searchradius.gif](/images/pages/Searchradius.gif "Searchradius.gif") ensures that 99% of the distances a particle moved between two frames is not greater than the search radius.\[4\]
 
 **Min. Exp. Particle Size:** The minimal expected particle size in the suspension
 
@@ -70,7 +70,7 @@ The *covariance estimator* is a good alternative to the regression estimator. It
 
 **Draw Tracks:** If this checkbox is activated all tracks are drawn on an ImageJ overlay. Yellow tracks have reached the minimum number of steps. Furthermore the size estimate followed by the track id is shown.
 
-![Drawtracks.png](/images/pages/Drawtracks.png "Drawtracks.png")"
+![Drawtracks.png](/images/pages/Drawtracks.png "Drawtracks.png")
 
 **Size Distribution Estimation by Walker's Method:** If this checkbox is activated the size distribution is estimated by a maximum likelihood method described in \[3\]. The method exploits the fact that the mean squared displacements are gamma distributed. Please note, that the mean squared displacements used for this algorithm are measured indirectly. First, the diffusion coefficient D is estimated by the method specified in "Diffusion-Coefficient-Estimator". Multiplying this diffusion coefficient by 4 and the framerate results in the corresponding mean squared displacement. If Walker's Method is used, the result will only be a size distribution (no diffusion coefficient distribution)
 
@@ -78,7 +78,7 @@ The *covariance estimator* is a good alternative to the regression estimator. It
 
 If the plugin finishes analyzing it opens histogram plots for the size distribution and the diffusion coefficient distribution. Please note that for calculating the distribution the track length is used as weighting factor. Furthermore the plugins open result tables for the histogram data (ideal for plotting with other software). The following plot shows a size distribution (using walker's method & covariance estimator) estimated from a suspension with 100nm polystyrene beads (in water, 22C). The video used was captured with a nanosight LM10 microscope. The reported modal value is 98nm.
 
-![Size100nm\_walker.png](/images/pages/Size100nm_walker.png "Size100nm_walker.png")"
+![Size100nm\_walker.png](/images/pages/Size100nm_walker.png "Size100nm_walker.png")
 
 ## Simulation
 

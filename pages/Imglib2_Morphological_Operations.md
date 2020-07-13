@@ -97,7 +97,7 @@ Each of these classes contains only static methods that performs the desired ope
 Img< FloatType > result = Dilation.dilate( img, strel, 1 );
 ```
 
-![DilatedToNewImgExample.png](/images/pages/DilatedToNewImgExample.png "DilatedToNewImgExample.png")"
+![DilatedToNewImgExample.png](/images/pages/DilatedToNewImgExample.png "DilatedToNewImgExample.png")
 
   - You want to perform to **full** dilation or erosion on a source Img. Full version of these operations means the new image will have a size increased or shrunk as if the structuring element would actually dilate or erode the source border:
 
@@ -107,7 +107,7 @@ Img< FloatType > result = Dilation.dilate( img, strel, 1 );
 Img< FloatType > result = Dilation.dilateFull( img, strel, 1 );
 ```
 
-![DilatedToNewFullImgExample.png](/images/pages/DilatedToNewFullImgExample.png "DilatedToNewFullImgExample.png")"
+![DilatedToNewFullImgExample.png](/images/pages/DilatedToNewFullImgExample.png "DilatedToNewFullImgExample.png")
 
   - You want to operate on a source [RandomAccessibleInterval](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/RandomAccessibleInterval.java), in place (write the results in the source):
 
@@ -117,7 +117,7 @@ Img< FloatType > result = Dilation.dilateFull( img, strel, 1 );
 Dilation.dilateInPlace( rai, interval, strel, 1 );
 ```
 
-![DilatedInPlaceExample.png](/images/pages/DilatedInPlaceExample.png "DilatedInPlaceExample.png")"
+![DilatedInPlaceExample.png](/images/pages/DilatedInPlaceExample.png "DilatedInPlaceExample.png")
 
   - You want to operate on a source [RandomAccessible](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/RandomAccessible.java), and write the results in a provided [IterableInterval](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/IterableInterval.java):
 
@@ -127,7 +127,7 @@ Dilation.dilateInPlace( rai, interval, strel, 1 );
 Dilation.dilate( source, target, strel, 1 )
 ```
 
-![DilatedToTargetExample.png](/images/pages/DilatedToTargetExample.png "DilatedToTargetExample.png")"
+![DilatedToTargetExample.png](/images/pages/DilatedToTargetExample.png "DilatedToTargetExample.png")
 
 Now, each of these category are declined in 4 specifics methods:
 

@@ -24,7 +24,7 @@ If you run MATLAB R2017b and later, you don"t need to do this, as it ships and u
   - Add the {% include list-of-update-sites content='ImageJ-MATLAB' %} update site. See [Following an update site](Following_an_update_site "wikilink") for more detail.
     1.  You go to `Help > Update...`
     2.  Once checking status is done, open `Manage update sites`
-    3.  Tick `ImageJ-MATLAB` and then `Close` ![Manage\_update\_sites\_ImageJ\_MATLAB.png](/images/pages/Manage_update_sites_ImageJ_MATLAB.png "Manage_update_sites_ImageJ_MATLAB.png")"
+    3.  Tick `ImageJ-MATLAB` and then `Close` ![Manage\_update\_sites\_ImageJ\_MATLAB.png](/images/pages/Manage_update_sites_ImageJ_MATLAB.png "Manage_update_sites_ImageJ_MATLAB.png")
     4.  And then click `Apply changes` on ImageJ Updater
     5.  This will literally update and replace the existing, non-functional `ImageJ.m` file in the scripts folder with the genuine one.
   - You will need to install your own licensed copy of [MATLAB](http://www.mathworks.com/products/matlab/). All that is provided with ImageJ are adapters for evaluating scripts written in ImageJ to [MATLAB](MATLAB "wikilink"), and converters between ImageJ and [MATLAB](MATLAB "wikilink") data structures.
@@ -36,7 +36,7 @@ If you run MATLAB R2017b and later, you don"t need to do this, as it ships and u
 ### Memory issue
 
   - In order to handle large images, the default Java Heap Memory size assigned won't be enough and you may get the error `java.lang.OutOfMemoryError: Java heap space`.
-  - From MATLAB R2010a onward, you can increase the Jave Heap Memory size from **Preferences \> General \> Java Heap Memory**. ![MATLAB\_java\_heap\_memory.png](/images/pages/MATLAB_java_heap_memory.png "MATLAB_java_heap_memory.png")"
+  - From MATLAB R2010a onward, you can increase the Jave Heap Memory size from **Preferences \> General \> Java Heap Memory**. ![MATLAB\_java\_heap\_memory.png](/images/pages/MATLAB_java_heap_memory.png "MATLAB_java_heap_memory.png")
   - However, the maximum value allowed in the Preferences can still be too small for your purpose. In that case, you can directly edit `matlab.prf` file in the folder specified by the <code>prefdir\<\\code\> MATLAB function (eg. `C:\Users\xxxxxxx\AppData\Roaming\MathWorks\MATLAB\R2018b`). Find the parameter `JavaMemHeapMax` in the file and increase the number that follows the capital I (in MB) to increase the maximum Java heap memory size. The change will be reflected by the Preferences as above.
 
 <!-- end list -->
@@ -79,7 +79,7 @@ Actually running a [MATLAB](MATLAB "wikilink") script from ImageJ is effectively
 
 Options for controlling the startup of [MATLAB](MATLAB "wikilink"), or killing existing [MATLAB](MATLAB "wikilink") processes (e.g. if hidden) can be accessed via: {% include bc content='Edit | Options | MATLAB...'%}
 
-![MATLAB\_options.png](/images/pages/MATLAB_options.png "MATLAB_options.png")"
+![MATLAB\_options.png](/images/pages/MATLAB_options.png "MATLAB_options.png")
 
 > NB: because the script is being passed from ImageJ to a remote [MATLAB](MATLAB "wikilink"), [MATLAB](MATLAB "wikilink") will not have access to ImageJ's classpath. Objects can be passed as variables to [MATLAB](MATLAB "wikilink") (e.g. by using @ annotation) but only if they are valid [MATLAB](MATLAB "wikilink") classes or specially handled classes.
 > 
@@ -153,7 +153,7 @@ addpath '/Applications/Fiji.app/scripts' % Update for your ImageJ installation a
 ImageJ;
 ```
 
-Now, you should see a new ImageJ instance shows up as a window. ![ImageJ\_launched\_from\_MATLAB.png](/images/pages/ImageJ_launched_from_MATLAB.png "ImageJ_launched_from_MATLAB.png")"
+Now, you should see a new ImageJ instance shows up as a window. ![ImageJ\_launched\_from\_MATLAB.png](/images/pages/ImageJ_launched_from_MATLAB.png "ImageJ_launched_from_MATLAB.png")
 
 In your MATLAB base workspace, you'll find a variable `IJM`, which is a `net.imagej.matlab.ImageJMATLABCommands` Java object. `IJM` offers a few useful methods as below:
 
@@ -300,7 +300,7 @@ imp = ij.IJ.openImage("http://imagej.nih.gov/ij/images/boats.gif");
 imp.show()
 ```
 
-![boats\_screenshot.png](/images/pages/boats_screenshot.png "boats_screenshot.png")"
+![boats\_screenshot.png](/images/pages/boats_screenshot.png "boats_screenshot.png")
 
 #### Opening a MATLAB array as an image in ImageJ
 
@@ -314,7 +314,7 @@ corn_gray_tp = corn_gray'; % transpose array
 IJM.show('corn_gray_tp'); % show in ImageJ properly
 ```
 
-![corn\_gray\_matlab.png](/images/pages/corn_gray_matlab.png "corn_gray_matlab.png")" ![corn\_gray.png](/images/pages/corn_gray.png "corn_gray.png")" ![corn\_gray\_transposed.png](/images/pages/corn_gray_transposed.png "corn_gray_transposed.png")"
+![corn\_gray\_matlab.png](/images/pages/corn_gray_matlab.png "corn_gray_matlab.png") ![corn\_gray.png](/images/pages/corn_gray.png "corn_gray.png") ![corn\_gray\_transposed.png](/images/pages/corn_gray_transposed.png "corn_gray_transposed.png")
 
 A more general solution to this issue of X-Y transposition can be achieved by `permute` function of MATLAB. But please beware of [memory demands by `permute`](https://stackoverflow.com/questions/36065182/why-does-matlabs-permute-not-need-extra-memory).
 
@@ -388,9 +388,9 @@ imp4 = copytoImagePlus(I16,'XYCZT') % ImagePlus, 16-bit, 171x196x2x5x51
 imp4.show(); 
 ```
 
-`IJM.show(name)` cannot reproduce the dimensions and the data type. Channels (C), slices (Z), and frames (T) are all treated as frames. Image type is 32 bit. ![IJMshow\_Image006.png](/images/pages/IJMshow_Image006.png "IJMshow_Image006.png")"
+`IJM.show(name)` cannot reproduce the dimensions and the data type. Channels (C), slices (Z), and frames (T) are all treated as frames. Image type is 32 bit. ![IJMshow\_Image006.png](/images/pages/IJMshow_Image006.png "IJMshow_Image006.png")
 
-`copytoImagePlus` can keep the dimensions and the data type. ![Image003.png](/images/pages/Image003.png "Image003.png")"
+`copytoImagePlus` can keep the dimensions and the data type. ![Image003.png](/images/pages/Image003.png "Image003.png")
 
 # Source
 

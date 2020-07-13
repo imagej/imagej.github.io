@@ -41,7 +41,7 @@ Both options work in the exactly same way and have very similar options. The add
 
 ## How to use the plugin
 
-![Shows the dialog for the bead-based registration](/images/pages/Spim_beads_singlechannel.jpg "Shows the dialog for the bead-based registration")"
+![Shows the dialog for the bead-based registration](/images/pages/Spim_beads_singlechannel.jpg "Shows the dialog for the bead-based registration")
 
   - **SPIM data directory**: Fill in the directory name that contains all the image files (or directories with equally sized 2d image planes). You can either drag\&drop the directory, browse for it or type the name directly.
 
@@ -100,7 +100,7 @@ Both options work in the exactly same way and have very similar options. The add
 
 ## How timelapse registration works
 
-![Shows the panel that displays the registration quality of an entire timelapse registration. The reference timepoint can be chosen manually by clicking or automatically by the plugin. The error should be as low as possible (around 1px), the correspondence ratio as high as possible (between 90-100%).](/images/pages/Spim_beads_timelapse.jpg "Shows the panel that displays the registration quality of an entire timelapse registration. The reference timepoint can be chosen manually by clicking or automatically by the plugin. The error should be as low as possible (around 1px), the correspondence ratio as high as possible (between 90-100%).")"
+![Shows the panel that displays the registration quality of an entire timelapse registration. The reference timepoint can be chosen manually by clicking or automatically by the plugin. The error should be as low as possible (around 1px), the correspondence ratio as high as possible (between 90-100%).](/images/pages/Spim_beads_timelapse.jpg "Shows the panel that displays the registration quality of an entire timelapse registration. The reference timepoint can be chosen manually by clicking or automatically by the plugin. The error should be as low as possible (around 1px), the correspondence ratio as high as possible (between 90-100%).")
 
 Processing a timelapse acquisition works in two steps. In the first step the registration for each individual timepoint will be computed and automatically stored. Based on these results, a reference timepoint will be selected either manually or automatically (see figure). Note that the panel will be also displayed when choosing automatic reference timepoint selection, but it cannot be changed. Based on the selected timepoint, all other timepoints of the series will be registered relative to it which leads to a properly aligned timeseries.
 

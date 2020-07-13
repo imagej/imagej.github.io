@@ -12,7 +12,7 @@ Just in time for the new year, we are proud to announce a new release of [ImageJ
 
 The most significant improvement is a new search bar integrated with the main ImageJ window:
 
-![Search-bar.png](/images/pages/Search-bar.png "Search-bar.png")"
+![Search-bar.png](/images/pages/Search-bar.png "Search-bar.png")
 
 In this initial incarnation, the search bar finds commands, and can search the ImageJ wiki as well as the [ImageJ Forum](http://forum.imagej.net/) if you check those respective checkboxes.
 

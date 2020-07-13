@@ -16,7 +16,7 @@ Since imageJ can set the image scale to any unit you want, this plugin sets it t
 
 ## **Gallery**
 
-![Temp.jpg](/images/pages/Temp.jpg "Temp.jpg")" ![Temp2.jpg](/images/pages/Temp2.jpg "Temp2.jpg")"
+![Temp.jpg](/images/pages/Temp.jpg "Temp.jpg") ![Temp2.jpg](/images/pages/Temp2.jpg "Temp2.jpg")
 
 ## **Directions**
 
@@ -31,7 +31,7 @@ This means that any stack can be used. For example, the fly brain stack that com
 
 ### **Main Window**
 
-The main window is shown to the right. It puts the controls at your fingertips from the beginning. In most cases after you click "OK" on this window, the plugin will proceed directly to building your montage unless you have selected the "Yes" option for editing the stack order. ![Window1.jpg](/images/pages/Window1.jpg "Window1.jpg")"
+The main window is shown to the right. It puts the controls at your fingertips from the beginning. In most cases after you click "OK" on this window, the plugin will proceed directly to building your montage unless you have selected the "Yes" option for editing the stack order. ![Window1.jpg](/images/pages/Window1.jpg "Window1.jpg")
 
 1.  **Number of Rows:** This sets the number of rows in your montage.
 2.  **Number of Columns:** This sets the number of columns in your montage.
@@ -42,13 +42,13 @@ The main window is shown to the right. It puts the controls at your fingertips f
 7.  **Include filename/label?** This gives you a couple of options on how you want the images labeled in the montage. The filename can be entered into a text window, a letter label can be added, or nothing can be added to the images.
 8.  **Include Border?** If you wish to include a border around the montage, then select "Yes". This is useful if you want a few images to appear as a single page appended to a word document. This feature combined with a image width entry of 8.5 inches, will create a "page" with the same width as a standard piece of letter paper. You can append the image to a pdf of your word file in most pdf editors.
 
-![Window2.jpg](/images/pages/Window2.jpg "Window2.jpg")"
+![Window2.jpg](/images/pages/Window2.jpg "Window2.jpg")
 
 ### **Optional Stack Editing**
 
-The easiest way to open a bunch of images in imageJ is to drag and drop your selected bunch of images onto the imageJ user interface. However, if you do it this way, the order in which the stack is built will probably not be the order you want. This option lets you edit your stack before the plugin builds the montage. ![Window3.jpg](/images/pages/Window3.jpg "Window3.jpg")" The plugin is interrupted and two windows popup. One is an "Action Required" window that just pauses the plugin until you select "OK", i.e. after you are satisfied with the stack. The other window is a stack sorter that imageJ supplies. It has a lot of useful options, but the side facing arrows will move the active slice around in the stack, the first and last buttons move the active slice to the first or last position, and delete will delete the active slice. For more info on how to use it please click [here](http://www.optinav.info/Stack-Sorter.htm).
+The easiest way to open a bunch of images in imageJ is to drag and drop your selected bunch of images onto the imageJ user interface. However, if you do it this way, the order in which the stack is built will probably not be the order you want. This option lets you edit your stack before the plugin builds the montage. ![Window3.jpg](/images/pages/Window3.jpg "Window3.jpg") The plugin is interrupted and two windows popup. One is an "Action Required" window that just pauses the plugin until you select "OK", i.e. after you are satisfied with the stack. The other window is a stack sorter that imageJ supplies. It has a lot of useful options, but the side facing arrows will move the active slice around in the stack, the first and last buttons move the active slice to the first or last position, and delete will delete the active slice. For more info on how to use it please click [here](http://www.optinav.info/Stack-Sorter.htm).
 
-![Window4.jpg](/images/pages/Window4.jpg "Window4.jpg")"
+![Window4.jpg](/images/pages/Window4.jpg "Window4.jpg")
 
 ### **Fly Brain Example**
 

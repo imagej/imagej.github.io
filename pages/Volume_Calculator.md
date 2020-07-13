@@ -8,7 +8,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Volume\_Calculator' %}{| |style="vertical-align:top" |![Volume Calculator user interface.](/images/pages/VolCal.png "Volume Calculator user interface.")" |}
+{% include component-stats content=':sc.fiji:Volume\_Calculator' %}{| |style="vertical-align:top" |![Volume Calculator user interface.](/images/pages/VolCal.png "Volume Calculator user interface.") |}
 
 ## Introduction
 
@@ -26,7 +26,7 @@ The section explains how to use Volume Calculator. A Magnetic Resonance Angiogra
 
 ### Image Acquistion
 
-![Figure 1. 3D view of mouse hindlimb vasculature.](/images/pages/VolCal-2.png "Figure 1. 3D view of mouse hindlimb vasculature.")"The image can come from any source. But be aware of the plugin's limitation: see the Introduction above. Figure 1 shows a 3D rendering of the example MRA. This MRA consists of 150 slices, each 512 X 512 in size.
+![Figure 1. 3D view of mouse hindlimb vasculature.](/images/pages/VolCal-2.png "Figure 1. 3D view of mouse hindlimb vasculature.")The image can come from any source. But be aware of the plugin's limitation: see the Introduction above. Figure 1 shows a 3D rendering of the example MRA. This MRA consists of 150 slices, each 512 X 512 in size.
 
 ### Thresholding
 
@@ -38,11 +38,11 @@ The Volume Calculator is located at {% include bc content='Plugins | Analyze'%} 
 
 #### User Interface
 
-![Figure 2. Volume Calculator user interface.](/images/pages/VolCal-3.png "Figure 2. Volume Calculator user interface.")" Because the [3D Viewer](3D_Viewer "wikilink") plugin is used for display, its menu is available at the top of the window. Below this menu line is the image area where the image can be manipulated with all of the available 3D Viewer commands. At the bottom of the window is an additional area that Volume Calculator uses to display volume results. It will be discussed in more detail in the next section. Below this area are two check boxes. These check boxes alter the display and behavior of the 3D Viewer. Checking the <i>Bounding Box</i> will cause the 3d Viewer boundary box to be displayed. Checking <i>Key Nav. Only</i> allows you to perform 3d transformations such as rotation with the just the directional keys.
+![Figure 2. Volume Calculator user interface.](/images/pages/VolCal-3.png "Figure 2. Volume Calculator user interface.") Because the [3D Viewer](3D_Viewer "wikilink") plugin is used for display, its menu is available at the top of the window. Below this menu line is the image area where the image can be manipulated with all of the available 3D Viewer commands. At the bottom of the window is an additional area that Volume Calculator uses to display volume results. It will be discussed in more detail in the next section. Below this area are two check boxes. These check boxes alter the display and behavior of the 3D Viewer. Checking the <i>Bounding Box</i> will cause the 3d Viewer boundary box to be displayed. Checking <i>Key Nav. Only</i> allows you to perform 3d transformations such as rotation with the just the directional keys.
 
 #### Selection
 
-![Figure 3. Selection of a line.](/images/pages/VolCal-4.png "Figure 3. Selection of a line.")" The selection of the lines (vessel segments in a vasculature) is performed entirely with mouse clicks. For the purpose of selection, lines (segments) are delimited by the end of a line and/or a line branching from it.
+![Figure 3. Selection of a line.](/images/pages/VolCal-4.png "Figure 3. Selection of a line.") The selection of the lines (vessel segments in a vasculature) is performed entirely with mouse clicks. For the purpose of selection, lines (segments) are delimited by the end of a line and/or a line branching from it.
 
 Selected lines are shown in the current measurement color; double clicking a line will change the color of that line and measure the volume based its corresponding voxels in the original, thresholded image (Figure 3). The voluem is shown next to the measurement color. The unit of measurement can be seen at the bottom of the image. Volume Calculator will attempt to find unit information in the image. If that is not possible, the unit of measurement is in voxels. Often a measurement will appear to be too short but rotating the image will show that selection stopped at a branch point - possibly very small. The algorithm used to calculate the volume is a variation of dilation (reverse skeletonization) that is bound by the voxels in the original image. Bifurcations and such are dealt with by sharing the voxels at the junctions.
 
@@ -52,7 +52,7 @@ Another form of selection is to click a ponit on a line once and then click anot
 
 #### Grouping Measurements
 
-![Figure 4. Two groups of measurements.](/images/pages/VolCal-5.png "Figure 4. Two groups of measurements.")"The Volume Calculator allows you to gather measurements into an arbitrary number of groups. The lines in each group are distinguished by the color given to them when they are selected for measurement. Initially there is only one color available: Red. It is shown, selected, in the bottom area of the window in Figure 3. To create another group of measurements, you push the New Volume Color button. A color dialog will be presented. Create a color and press OK. A new entry will appear with that color. The color will be automatically selected so that any new selections will be shown in that color. In Figure 4, a second color has been added and a measurement made.
+![Figure 4. Two groups of measurements.](/images/pages/VolCal-5.png "Figure 4. Two groups of measurements.")The Volume Calculator allows you to gather measurements into an arbitrary number of groups. The lines in each group are distinguished by the color given to them when they are selected for measurement. Initially there is only one color available: Red. It is shown, selected, in the bottom area of the window in Figure 3. To create another group of measurements, you push the New Volume Color button. A color dialog will be presented. Create a color and press OK. A new entry will appear with that color. The color will be automatically selected so that any new selections will be shown in that color. In Figure 4, a second color has been added and a measurement made.
 
 The Volume Calculator keeps track of the what measurements are associated with a color. If you select a line with a color different from the measurement color, the volume of that line is subtracted from the original color total and added to the measurement color total.
 

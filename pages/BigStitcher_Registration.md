@@ -29,7 +29,7 @@ In the first dialog, you will be asked for some **basic parameters** for the reg
   - **Interest points**: the interest points to use for registration.
   - **Group Tiles** and **Group illuminations**: (Only available if you have multiple Tiles or Illuminations in your dataset) Tick this to group the Tiles and/or illumination directions within one Channel/Angle/TimePoint. Grouped views will be moved together. Use this if you already aligned Tiles in Stitching mode. Since we also have to do less comparisons this way, this will also speed up the registration process.
 
-![BigStitcher\_Register\_basic.png](/images/pages/BigStitcher_Register_basic.png "BigStitcher_Register_basic.png")"
+![BigStitcher\_Register\_basic.png](/images/pages/BigStitcher_Register_basic.png "BigStitcher_Register_basic.png")
 
 ## Specific Registration Options
 
@@ -39,7 +39,7 @@ Depending on the choices you made in the previous dialog, you will be asked for 
   - 2\) **View Fixing and map-back Transformations** (not available when registering relative to a **refenence timepoint**)
   - 3\) **Registration Algorithm Parameters**
 
-![BigStitcher\_Register\_scpecific.png](/images/pages/BigStitcher_Register_scpecific.png "BigStitcher_Register_scpecific.png")"
+![BigStitcher\_Register\_scpecific.png](/images/pages/BigStitcher_Register_scpecific.png "BigStitcher_Register_scpecific.png")
 
 ### Time Series Registration Options
 
@@ -73,13 +73,13 @@ If you chose to **manually** select the views to fix or map back to, you will be
 
 When **registering timepoints individually**, you will be asked whether you want to fix/map back to the same view in each timepoint or select different ones for each time point.
 
-![BigStitcher\_Register\_fix\_same\_all\_tps.png](/images/pages/BigStitcher_Register_fix_same_all_tps.png "BigStitcher_Register_fix_same_all_tps.png")"
+![BigStitcher\_Register\_fix\_same\_all\_tps.png](/images/pages/BigStitcher_Register_fix_same_all_tps.png "BigStitcher_Register_fix_same_all_tps.png")
 
 When manually selecting **views to fix**, you can choose to fix multiple views (optionally, this is repeated for each timepoint, see above).
 
 When **mapping back**, you can select a single view to map back to.
 
-![BigStitcher\_Register\_fix\_select.png](/images/pages/BigStitcher_Register_fix_select.png "BigStitcher_Register_fix_select.png")"![BigStitcher\_Register\_map\_back\_select.png](/images/pages/BigStitcher_Register_map_back_select.png "BigStitcher_Register_map_back_select.png")"
+![BigStitcher\_Register\_fix\_select.png](/images/pages/BigStitcher_Register_fix_select.png "BigStitcher_Register_fix_select.png")![BigStitcher\_Register\_map\_back\_select.png](/images/pages/BigStitcher_Register_map_back_select.png "BigStitcher_Register_map_back_select.png")
 
   
 
@@ -93,7 +93,7 @@ Depending on which **Registration algorithm** you selected in the first dialog, 
 
 #### Fast descriptor-based (rotation invariant)
 
-![Parameters for Fast descriptor-based (rotation invariant) registration](/images/pages/BigStitcher_Register_fast_desc_rot.png "Parameters for Fast descriptor-based (rotation invariant) registration")"
+![Parameters for Fast descriptor-based (rotation invariant) registration](/images/pages/BigStitcher_Register_fast_desc_rot.png "Parameters for Fast descriptor-based (rotation invariant) registration")
 
 The **Fast descriptor-based (rotation invariant) registration** is the default choice for aligning views from multiple angles. It first constructs a *descriptor* for every point based on the "constellation" of its 3 nearest neighbors and matches it to the most similar point in other views. By using a special local coordinate system, we can find the points in other views even if they were imaged from different angles.
 
@@ -120,7 +120,7 @@ The parameters for this algorithm and their meaning is the same as for the rotat
 
 #### Precise descriptor-based (translation invariant)
 
-![Parameters for Precise descriptor-based (translation invariant) registration](/images/pages/BigStitcher_Register_prec_desc_tr.png "Parameters for Precise descriptor-based (translation invariant) registration")"
+![Parameters for Precise descriptor-based (translation invariant) registration](/images/pages/BigStitcher_Register_prec_desc_tr.png "Parameters for Precise descriptor-based (translation invariant) registration")
 
 The **Precise descriptor-based (translation invariant) registration** work essentially the same as the fast descriptor-based registration algorithms with the main difference being that you can manually specify the **number of neighbors** of an interest point to use for constructing the point descriptor. Due to the more flexible descriptors, it lacks the specific optimizations for 3 neighbors and is slightly slower than the fast versions.
 
@@ -142,7 +142,7 @@ This method has a single parameter:
 
 #### Assign closest points with ICP (no invariance)
 
-![Parameters for ICP-based (no invariance) registration](/images/pages/BigStitcher_Register_icp.png "Parameters for ICP-based (no invariance) registration")"
+![Parameters for ICP-based (no invariance) registration](/images/pages/BigStitcher_Register_icp.png "Parameters for ICP-based (no invariance) registration")
 
 In addition to the descriptor-based registration algorithm, we also offer registration via a slightly modified version of the \[https://en.wikipedia.org/wiki/Point_set_registration#Iterative_closest_point| Iterative Closest Point (ICP)\] algorithm.
 
@@ -159,13 +159,13 @@ In the parameter dialog, you can set the two parameters described above:
 
 If you opted for **Regularization** of the transform in the previous dialog, you will be asked for the type of the second transformation model to estimate and a **lambda** (\(\in[0,1]\)), i.e. how much weight you want to give to the regularizing model in the final averaged result.
 
-![BigStitcher\_regularize\_model.png](/images/pages/BigStitcher_regularize_model.png "BigStitcher_regularize_model.png")"
+![BigStitcher\_regularize\_model.png](/images/pages/BigStitcher_regularize_model.png "BigStitcher_regularize_model.png")
 
 ### Grouping Options
 
 If you chose to **group tiles or illuminations** in the first dialog, you will be asked how to perform the grouping in another dialog.
 
-![BigStitcher\_register\_grouping.png](/images/pages/BigStitcher_register_grouping.png "BigStitcher_register_grouping.png")"
+![BigStitcher\_register\_grouping.png](/images/pages/BigStitcher_register_grouping.png "BigStitcher_register_grouping.png")
 
 The options for **Interest point grouping** are:
 
