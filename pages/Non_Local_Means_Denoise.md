@@ -64,4 +64,4 @@ and
 
 **Implementation:**
 
-![Zenodo.35114.svg](/images/pages/Zenodo.35114.svg "Zenodo.35114.svg")
+<a href="https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-nl-means"><img src="/images/pages/Zenodo.35114.svg" width="174px"/></a>

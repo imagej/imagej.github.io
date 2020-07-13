@@ -129,4 +129,4 @@ We think the best way is to cite the formal method and the used implementation:
 
 **Implementation**:
 
-![Ij-ridgedetection.svg](/images/pages/Ij-ridgedetection.svg "Ij-ridgedetection.svg")
+<a href="https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ridgedetection"><img src="/images/pages/Ij-ridgedetection.svg" width="174px"/></a>

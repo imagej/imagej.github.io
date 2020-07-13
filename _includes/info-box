@@ -1,15 +1,41 @@
 {% capture info_content %}
-<div info="content" markdown="1">{{include.content}}</div>
+<div info="content">
+    {{include.content | markdownify}}
+</div>
 {% endcapture %}
+
 {% capture info_tags %}
-{% if include.name %}<tr><td>Name</td><td>{{include.name}}</td></tr>{% endif %}
-{% if include.software %}<tr><td>Software</td><td>{{include.software}}</td></tr>{% endif %}
-{% if include.author %}<tr><td>Author</td><td>{{include.author}}</td></tr>{% endif %}
-{% if include.maintainer %}<tr><td>Maintainer</td><td>{{include.maintainer}}</td></tr>{% endif %}
-{% if include.source %}<tr><td>Source</td><td>{{include.source}}</td></tr>{% endif %}
-{% if include.status %}<tr><td>Status</td><td>{{include.status}}</td></tr>{% endif %}
-{% if include.category %}<tr><td>Category</td><td>{{include.category}}</td></tr>{% endif %}
+{% if include.name %}
+<tr><td>Name</td><td>{{include.name}}</td></tr>
+{% endif %}
+{% if include.software %}
+<tr><td>Software</td><td>{{include.software}}</td></tr>
+{% endif %}
+{% if include.author %}
+<tr><td>Author</td><td>{{include.author}}</td></tr>
+{% endif %}
+{% if include.maintainer %}
+<tr><td>Maintainer</td><td>
+{{include.maintainer}}
+</td></tr>
+{% endif %}
+{% if include.source %}
+<tr><td>Source</td><td>
+{{include.source}}
+</td></tr>
+{% endif %}
+{% if include.status %}
+<tr><td>Status</td><td>
+{{include.status}}
+</td></tr>
+{% endif %}
+{% if include.category %}
+<tr><td>Category</td><td>
+{{include.category}}
+</td></tr>
+{% endif %}
 {% endcapture %}
+
 {% capture logo %}
 {% if include.logo %}
 <p markdown="1">{{include.logo}}</p>

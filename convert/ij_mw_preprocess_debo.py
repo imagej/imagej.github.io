@@ -134,8 +134,12 @@ def process_file(str_content):
     content_tmp = replace_template(content_tmp)
 
     #convert image links into working links - this can be improved, it should not run on all File: links..
-    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\|[ ]*link=(?!http)([^\]]*)[ ]*\]\]',
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\]\]',
                          r'<a href="\3"><img src="\1" width="\2"/></a>', content_tmp)
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)\|[ ]*([^x ][^ |]*)[ ]*[ ]*\]\]',
+                         r'<a href="\2"><img src="\1" width="\3"/></a>', content_tmp)
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)\|[ ]*(x[^ |]*)[ ]*[ ]*\]\]',
+                         r'<a href="\2"><img src="\1" height="\3"/></a>', content_tmp)
     content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*x([^ |]*)[ ]*\|[ ]*link=([^\]]*)\]\]',
                          r'<a href="\3"><img src="\1" height="\2"/></a>', content_tmp)
 
@@ -188,8 +192,8 @@ def replace_template_match(document_content, match_content, template_name, templ
     template_name = fix_template_name(template_name)
     template_content.strip()
 
+    # filter out {{}}, {{1}}, {{-}} etc.
     if len(template_name) < 2 or template_name.isdigit():
-        # not a template
         return document_content, False
 
     if len(template_content) == 0:
@@ -204,10 +208,10 @@ def replace_template_match(document_content, match_content, template_name, templ
         matched_parameters, captures = match_content_parameters(template_content)
         if len(captures) > 0:
             document_content = document_content.replace(match_content, captures +
-                                                    txt_include_start + template_name + " " + matched_parameters + txt_liquid_end)
+                                                        txt_include_start + template_name + " " + matched_parameters + txt_liquid_end)
         else:
             document_content = document_content.replace(match_content,
-                                                    txt_include_start + template_name + " " + matched_parameters + txt_liquid_end)
+                                                        txt_include_start + template_name + " " + matched_parameters + txt_liquid_end)
     return document_content, False
 
 
