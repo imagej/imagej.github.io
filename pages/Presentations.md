@@ -27,7 +27,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="http://imagej.github.io/presentations/fiji-introduction/"><img src="/images/pages/fiji-intro-slide.png" width="300px"/></a></p></td>
+<td><p><a href="http://imagej.github.io/presentations/fiji-introduction/"><img src="/images/pages/Fiji-intro-slide.png" width="300px"/></a></p></td>
 <td><p>Introduction to Fiji</p></td>
 <td><p>Spring 2017: <a href="https://imagej.github.io/presentations/2017-05/fiji-introduction/">slides</a>, <a href="https://vimeo.com/218520761">video</a><br />
 Spring 2019: <a href="http://imagej.github.io/presentations/fiji-introduction/">slides</a><br />

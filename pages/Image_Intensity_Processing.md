@@ -13,7 +13,7 @@ description: test description
 
 ## Brightness and Contrast
 
-![brightness\_contrast\_pic.png](/images/pages/brightness_contrast_pic.png "brightness_contrast_pic.png") Brightness is the visual perception of reflected light. Increased brightness refers to an image's increased luminance.
+{% include thumbnail src="/images/pages/Brightness\_contrast\_pic.png" title="right" %} Brightness is the visual perception of reflected light. Increased brightness refers to an image's increased luminance.
 
 Contrast is the separation of the lightest and darkest parts of an image. An increase in contrast will darken shadows and lighten highlights. Increasing contrast is generally used to make objects in an image more distinguishable.
 

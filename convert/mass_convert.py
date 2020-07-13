@@ -24,7 +24,7 @@ def images_dir():
 
 def catch_media(path_in, root_out):
     content = read_file(path_in)
-    pattern = re.compile(r'\[\[File\:([^ |]*)[ ]*\|[ ]*[^ |]*[ ]*\|[ ]*link=[^\]]*[ ]*\]\]')
+    pattern = re.compile(r'\[\[File\:([^ |]*)[ ]*\|[ ]*[^|]*[ ]*\|[ ]*[^\]]*[ ]*\]\]')
     for (file_name) in re.findall(pattern, content):
         copy_media(file_name, path_in, root_out)
     pattern = re.compile(r'\[\[Image:([^\|\]]*)[^\]]*\]\]')
@@ -33,6 +33,7 @@ def catch_media(path_in, root_out):
 
 
 def copy_media(file_name, path_in, root_out):
+    file_name = file_name.capitalize()
     file_out = os.path.join(root_out, file_name)
     file_in = os.path.join(os.path.dirname(path_in), file_name)
     if not os.path.exists(file_in):

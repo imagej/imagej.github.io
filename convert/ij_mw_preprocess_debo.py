@@ -135,22 +135,69 @@ def process_file(str_content):
 
     #convert image links into working links - this can be improved, it should not run on all File: links..
     content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\]\]',
-                         r'<a href="\3"><img src="\1" width="\2"/></a>', content_tmp)
+                         fix_src_width_link_match, content_tmp)
     content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)\|[ ]*([^x ][^ |]*)[ ]*[ ]*\]\]',
-                         r'<a href="\2"><img src="\1" width="\3"/></a>', content_tmp)
+                         fix_src_link_width_match, content_tmp)
     content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)\|[ ]*(x[^ |]*)[ ]*[ ]*\]\]',
-                         r'<a href="\2"><img src="\1" height="\3"/></a>', content_tmp)
+                         fix_src_link_height_match, content_tmp)
     content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*x([^ |]*)[ ]*\|[ ]*link=([^\]]*)\]\]',
-                         r'<a href="\3"><img src="\1" height="\2"/></a>', content_tmp)
+                         fix_src_height_link_match, content_tmp)
 
-    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\]\]',
-                         r'[[File:\1 |\3|link=\2 ]]', content_tmp)
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*thumb[ ]*\|[ ]*([^|]*)[ ]*\]\]',
+                         fix_thumbnail_match, content_tmp)
+
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|\|([ ]*[^\]]*[ ]*)\]\]',
+                         fix_simple_image_match, content_tmp)
+
+    # content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\]\]',
+    #                      r'[[File:\1 |\3|link=\2 ]]', content_tmp)
 
     content_tmp = content_tmp.replace("{{-}}", "")
     content_tmp = content_tmp.replace("{{}}", "")
     content_tmp = content_tmp.replace("{{!}}", "")
 
     return content_tmp
+
+
+def fix_simple_image_match(match):
+    return fix_simple_image(match.group(1), match.group(2))
+
+
+def fix_simple_image(src, title):
+    return "[[File:" + src.capitalize() + "|" + title + "]]"
+
+
+def fix_thumbnail_match(match):
+    return fix_thumbnail(match.group(1), match.group(2))
+
+
+def fix_thumbnail(src, title):
+    return txt_include_start + 'thumbnail src="/images/pages/' + src.capitalize() + '" title="' + title + '" ' + txt_liquid_end
+
+
+def fix_src_width_link_match(match):
+    return fix_src_link_width(match.group(1), match.group(3), match.group(2))
+
+
+def fix_src_link_width_match(match):
+    return fix_src_link_width(match.group(1), match.group(2), match.group(3))
+
+
+def fix_src_link_height_match(match):
+    return fix_src_link_height(match.group(1), match.group(2), match.group(3))
+
+
+def fix_src_height_link_match(match):
+    return fix_src_link_height(match.group(1), match.group(3), match.group(2))
+
+
+def fix_src_link_width(src, link, width):
+    return '<a href="' + link + '"><img src="' + src.capitalize() + '" width="' + width + '"/></a>'
+
+
+def fix_src_link_height(src, link, height):
+    return '<a href="' + link + '"><img src="' + src.capitalize() + '" height="' + height + '"/></a>'
+
 
 
 def reveal_includes(content_tmp):

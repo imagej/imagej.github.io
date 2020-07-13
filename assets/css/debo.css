@@ -1,0 +1,17 @@
+.thumbnail {
+    width: 400px;
+    display: block;
+    float: right;
+    background-color: #f1f1f3;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+a.thumbnail:hover {
+    border: 0;
+    background: #e1e1e3;
+}

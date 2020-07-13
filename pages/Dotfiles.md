@@ -23,7 +23,7 @@ You can find the dotfiles in the following repositories:
 {% include github org='scijava' repo='dotfiles' label='scijava/dotfiles' %}</p></td>
 <td><p><a href="ImageJ"><img src="/images/pages/Imagej2-icon.png" width="48px"/></a><br />
 {% include github org='imagej' repo='dotfiles' label='imagej/dotfiles' %}</p></td>
-<td><p><a href="LOCI"><img src="/images/pages/loci-logo.png" width="48px"/></a><br />
+<td><p><a href="LOCI"><img src="/images/pages/Loci-logo.png" width="48px"/></a><br />
 {% include github org='uw-loci' repo='dotfiles' label='uw-loci/dotfiles' %}</p></td>
 </tr>
 <tr class="even">
