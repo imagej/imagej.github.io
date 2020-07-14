@@ -136,7 +136,7 @@ For images that have more than one channel, there will also be a checkbox to *Di
 {% capture title%}
  Controlling the default excitation 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Excitation.png" title=title %} As loading/saving excitation file is something user need to do every time, the process has been simplified. Whatever macro user wants to set as default excitation, user should load the sdt file normally, set transient start/end time and save the file as \*irf file. Then from the drop down user should select "Set as default". This way, the excitation with the transient start/end time is saved as default excitation. Later, when needed to load the default excitation, selecting "Use default excitation" will load the default one.
+{% include thumbnail src='/images/pages/Excitation.png' title=title %} As loading/saving excitation file is something user need to do every time, the process has been simplified. Whatever macro user wants to set as default excitation, user should load the sdt file normally, set transient start/end time and save the file as \*irf file. Then from the drop down user should select "Set as default". This way, the excitation with the transient start/end time is saved as default excitation. Later, when needed to load the default excitation, selecting "Use default excitation" will load the default one.
 
 ### Macro language support
 
@@ -144,7 +144,7 @@ All the operations in SLIM Plugin operation are completely compatible with the p
 {% capture title%}
  Example of macro recording SLIM Curve 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Screenshot slim final.png" title=title %}
+{% include thumbnail src='/images/pages/Screenshot slim final.png' title=title %}
 
 The list of command are as follows
 

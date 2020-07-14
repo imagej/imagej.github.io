@@ -28,10 +28,10 @@ The non-linear non-invertible transformations as estimated using the Moving Leas
 {% capture title%}
  Two snapshots from the ImageJ Conference 2008 registered into each other using an affine transformation as estimated from automatically extracted Feature Correspondences. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Transform Roi-linear.jpg" title=title %} 
+{% include thumbnail src='/images/pages/Transform Roi-linear.jpg' title=title %} 
 {% capture title%}
  A photograph and a cartoon registered into each other using the Moving Least Squares method and a similarity transformation as estimated from manually set landmark correspondences. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Transform Roi-mls.jpg" title=title %}
+{% include thumbnail src='/images/pages/Transform Roi-mls.jpg' title=title %}
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Transform](Category:Transform "wikilink") [Category:Registration](Category:Registration "wikilink")

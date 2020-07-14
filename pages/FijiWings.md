@@ -43,7 +43,7 @@ If you would like to reference FijiWings in a publication, you can cite:
 
 ## Tutorials
 
-{% include youtube url='https://www.youtube.com/embed/'%} {% include youtube url='https://www.youtube.com/embed/'%} {% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/kkwbRaN51ww'%} {% include youtube url='https://www.youtube.com/embed/nlYZyJxV5Bw'%} {% include youtube url='https://www.youtube.com/embed/YDZHy\_5mPko'%}
 
   - [All FijiWings videos](http://www.youtube.com/user/Fijiwingsadmin/videos)
 

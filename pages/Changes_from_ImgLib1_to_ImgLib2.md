@@ -24,7 +24,7 @@ description: test description
 {% capture title%}
  **Fig. 1** ImgLib2 interfaces for data collections in *n*-dimensional Euclidean space. The key feature is distinction between random access vs. iteration and real vs. integer coordinate access. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Imglib2-data.png" title=title %} In *ImgLib*, the *Image* class was a wrapper for a limited subset of possible meta-data and a *Container* that provided access to the actual pixels. The overwhelming majority of methods in both *Image* and *Container* were almost identical. Furthermore, implementing algorithms for *Image* limited their portability to situations where different meta-data or less meta-data was required or different strategies for pixel access were appropriate.
+{% include thumbnail src='/images/pages/Imglib2-data.png' title=title %} In *ImgLib*, the *Image* class was a wrapper for a limited subset of possible meta-data and a *Container* that provided access to the actual pixels. The overwhelming majority of methods in both *Image* and *Container* were almost identical. Furthermore, implementing algorithms for *Image* limited their portability to situations where different meta-data or less meta-data was required or different strategies for pixel access were appropriate.
 
 In ImgLib2, the Image class has been abandoned. Instead, there is a set of interfaces that describe how data elements (pixels) can be accessed. Fig. 2 shows a UML-diagram visualizing the interface inheritance graph. The most important interfaces are
 
@@ -41,7 +41,7 @@ Opposed to the intuitive shortcut that you would just replace *Image* by *Img* t
 {% capture title%}
  **Fig. 2** ImgLib2 interfaces for access to sample data and to real and integer coordinates in *n*-dimensional Euclidean space. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Imglib2-access.png" title=title %} Iteration in ImgLib2 (as in ImgLib) implies constant and thus repeatable order. Therefore a *Cursor* can always localize itself, either by going the hard way and reasoning the position from it's iteration index or by tracking the position per move. There is no extra interface required to distinguish this behavior but you can choose which *Cursor* to acquire by *Iterable(Real)Interval.cursor()* and *Iterable(Real)Interval.localizingCursor()*. Fig. 2 shows a UML-diagram visualizing the interface inheritance graph.
+{% include thumbnail src='/images/pages/Imglib2-access.png' title=title %} Iteration in ImgLib2 (as in ImgLib) implies constant and thus repeatable order. Therefore a *Cursor* can always localize itself, either by going the hard way and reasoning the position from it's iteration index or by tracking the position per move. There is no extra interface required to distinguish this behavior but you can choose which *Cursor* to acquire by *Iterable(Real)Interval.cursor()* and *Iterable(Real)Interval.localizingCursor()*. Fig. 2 shows a UML-diagram visualizing the interface inheritance graph.
 
 {% include clear%}
 

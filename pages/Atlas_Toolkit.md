@@ -64,63 +64,9 @@ The complete list of tools is as follows:
 
 The following screencast demonstrates Label Registration 3D in use.
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/paUFYucNHa4}}
 
-### Before starting...
-
-You will begin with a number of image stacks that you want to register together.
-
-Prior to registration, the particular tissue(s) or object(s) of interest must be distinguished from the rest of their image stack through the process of manual segmentation. This involves generating a new 8-bit image stack (a '.label' file) in which each tissue or region of interest is represented by a unique numerical value, usually visualised by a unique colour.
-
-The [Segmentation Editor](Segmentation_Editor "wikilink") plugin is a convenient tool for efficiently segmenting multiple tissues of interest from a single image stack.
-
-The resulting ‘.label’ files can then be used to perform non-rigid registration of equivalent tissues or objects from different image stacks [using Label Registration 3D](#Using_"Label_Registration_3D" "wikilink").
-
-### Using "Label Registration 3D"
-
-Once you have your '.label' files, you can use Label Registration 3D to register them together.
-
-When you run this tool, it will keep prompting you for '.label' files. When you have told it where to find the last '.label' file, just click 'Cancel' to proceed to the registration.
-
-You will then be prompted to select some basic parameters:
-
-![LabelRegistration3D-1.png](/images/pages/LabelRegistration3D-1.png "LabelRegistration3D-1.png")
-
-  - "Select Channel (0 - 255):" allows you to select which of the labels (tissues/objects) within the '.label' files should be registered. Empty space/background will have a value of '0', while the first (possibly only) label will have a value of '1' and this is the default setting.
-
-<!-- end list -->
-
-  - "Number of iterations:" determines how many times the tool will attempt to register the '.label' files. More complex or dissimilar tissues/objects may require more iterations. Similarly, the more '.label' files you are registering, the more iterations may be required.
-
-<!-- end list -->
-
-  - "First Orthogonal Plane:" allows you to tell the tool which direction it should start from. Some tissues/objects may be more asymmetric in one particular plane and it may be advantageous to perform the first 2D registration in that plane.
-
-On clicking "OK" the tool will register the specified '.label' files, displaying its progress as it does so.
-
-Once the registration is complete, you will be prompted for a folder in which to store the results.
-
-The results consist of the following files:
-
-  - Multiple '.tif' files, each containing a transformed version of one tissue/object.
-
-<!-- end list -->
-
-  - A single 'consensus.tif' file, which contains the consensus morphology for all registered tissue/objects.
-
-<!-- end list -->
-
-  - Multiple '.ots' files, each containing instructions for reproducing the transformation of a particular tissue/object. These '.ots' files can be used with the [Apply Label Registration](#Apply_Label_Registration "wikilink") tool in order to reproduce a particular transformation, for example on the corresponding original image stack.
-
-## Apply Label Registration
-
-Once a set of ‘.label’ files has been registered using [Label Registration 3D](#Label_Registration_3D "wikilink"), the resulting ‘.ots’ files can be used to transform the original image stacks towards their shared consensus tissue/object morphology.
-
-### Video demonstration
-
-The following screencast demonstrates Apply Label Registration in use.
-
-{% include youtube url='https://www.youtube.com/embed/'%}
+\===Before'%}
 
 ## Reference
 

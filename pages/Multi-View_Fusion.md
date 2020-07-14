@@ -50,7 +50,7 @@ The fused images will be saved in the *output* directory of the dataset as a col
 {% capture title%}
  Shows the first dialog that queries the location of the multi-view files 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Spim multiview dialog1.jpg" title=title %}
+{% include thumbnail src='/images/pages/Spim multiview dialog1.jpg' title=title %}
 
 The multi-view fusion consists of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset. Please note that all the parameters will be looked up in the [bead-based registration](SPIM_Bead_Registration "wikilink") or [segmentation-based registration](segmentation-based_registration "wikilink"), so typically just pressing ok is sufficient, except you process a timeseries. These are the options of the first dialog:
 
@@ -78,7 +78,7 @@ After entering the data the program will check which kind of registrations are a
 {% capture title%}
  Shows the second dialog that queries the details of the multi-view fusion 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Spim multiview dialog2.jpg" title=title %}
+{% include thumbnail src='/images/pages/Spim multiview dialog2.jpg' title=title %}
 
 In the second dialog, you have to define the details of the multi-view fusion. It offers the following options:
 

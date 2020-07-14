@@ -16,7 +16,7 @@ description: test description
 {% capture maintainer%}
 {% include person content='Saalfeld' %}
 {% endcapture %}
-{% include info-box name='Integral Image Filters ' software='Fiji ' author=author maintainer=maintainer source=' [GitHub](https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/integral) ' released='March 21<sup>st</sup>, 2011 ' latest-version='February 22<sup>nd</sup>, 2012 ' status='stable, active ' category='[Plugins](:Category:Plugins "wikilink"), [Filtering](:Category:Filtering "wikilink") ' %}{% include youtube url='https://www.youtube.com/embed/'%}
+{% include info-box name='Integral Image Filters ' software='Fiji ' author=author maintainer=maintainer source=' [GitHub](https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/integral) ' released='March 21<sup>st</sup>, 2011 ' latest-version='February 22<sup>nd</sup>, 2012 ' status='stable, active ' category='[Plugins](:Category:Plugins "wikilink"), [Filtering](:Category:Filtering "wikilink") ' %}{% include youtube url='https://www.youtube.com/embed/p1mhZqj2VTY'%}
 
 Integral images have been introduced in by Crow (1984)\[1\] as a technique to improve texture rendering speed at multiple scales in perspective projections. The technique has since then been used for a number of applications. The most popular examples are fast normalized cross-correlation\[2\], the [Viola-Jones object detection framework](wikipedia:Viola%E2%80%93Jones_object_detection_framework "wikilink")\[3\], and the [Speeded Up Robust Feature (SURF)](wikipedia:SURF "wikilink") transform\[4\]. In Fiji, we currently use Integral Images for a number of basic statistic block filters.
 
@@ -66,7 +66,7 @@ Both sums can be generated from two Integral Images over \(I(\vec{x})\) and \(I(
 
 <div style="float: right">
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/MZfnTL9e\_fA'%}
 
 </div>
 

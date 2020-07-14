@@ -28,7 +28,7 @@ Promote plugins, macros and scripts created by the Computing in Signal and Image
 {% capture title%}
  CSIM Laboratory. See more details about our research group in the web site: http://dcm.ffclrp.usp.br/csim 
 {% endcapture %}
-{% include thumbnail src="/images/pages/CSIM-logo.png" title=title %}
+{% include thumbnail src='/images/pages/CSIM-logo.png' title=title %}
 
 ## Available Methods
 

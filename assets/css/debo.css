@@ -15,3 +15,7 @@ a.thumbnail:hover {
     border: 0;
     background: #e1e1e3;
 }
+
+.bc {
+    font-style: italic;
+}

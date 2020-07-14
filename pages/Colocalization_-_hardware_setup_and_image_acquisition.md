@@ -38,7 +38,7 @@ Estimating colocalisation by looking for yellow colour in images where the green
 {% capture title%}
  **Figure 1**: The *spirals* color illusion 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Spirals.png" title=title %}
+{% include thumbnail src='/images/pages/Spirals.png' title=title %}
 
   
 What we need are objective quantitative methods to estimate/measure colocalisation in 2 colour channel images. These will output colocalisation coefficients that should be:

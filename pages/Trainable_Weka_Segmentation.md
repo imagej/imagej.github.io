@@ -45,7 +45,7 @@ The main goal of this plugin is to work as a **bridge between the Machine Learni
 {% capture title%}
  Example of the first look of the plugin window when using it on a TEM image 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Trainable-Weka-Segmentation-GUI.png" title=title %} [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") runs on any 2D or 3D image (grayscale or color). To use 2D features, you need to select the menu command {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation'%}. For 3D features, call the plugin under {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation 3D'%}. Both commands will use the same GUI but offer different feature options in their settings.
+{% include thumbnail src='/images/pages/Trainable-Weka-Segmentation-GUI.png' title=title %} [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") runs on any 2D or 3D image (grayscale or color). To use 2D features, you need to select the menu command {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation'%}. For 3D features, call the plugin under {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation 3D'%}. Both commands will use the same GUI but offer different feature options in their settings.
 
 By default, the plugin starts with two classes, i.e. it will produce **binary pixel classification**. The user can add traces to both classes using the whole set of [tools for ROI](https://imagej.net/docs/guide/userguide-19b.html#toc-Section-19) (region of interest) drawing available in Fiji. That includes rectangular, round rectangular, oval, elliptical, brush polygon and freehand selections. By default, the freehand selection tool (of 1 pixel width) is automatically selected.
 
@@ -57,7 +57,7 @@ The user can pan, zoom in and out, or scroll between slices (if the input image 
 {% capture title%}
  Example of the aspect of the plugin window after training on a TEM image 
 {% endcapture %}
-{% include thumbnail src="/images/pages/TWS-GUI-after-training.png" title=title %}
+{% include thumbnail src='/images/pages/TWS-GUI-after-training.png' title=title %}
 
 #### Train classifier
 
@@ -73,7 +73,7 @@ If the training ends correctly, then the displayed image will be completely segm
 {% capture title%}
  Example of resulting probability map displayed as a hyperstack 
 {% endcapture %}
-{% include thumbnail src="/images/pages/AWS-Probability-maps.png" title=title %} This button activates and deactivates the overlay of the result image. The transparency of the overlay image can be adjusted in the [Settings dialog](Advanced_Weka_Segmentation#Settings "wikilink").
+{% include thumbnail src='/images/pages/AWS-Probability-maps.png' title=title %} This button activates and deactivates the overlay of the result image. The transparency of the overlay image can be adjusted in the [Settings dialog](Advanced_Weka_Segmentation#Settings "wikilink").
 
 #### Create result
 
@@ -93,7 +93,7 @@ These curves allow to visualize the performance of the classifier based on the d
 {% capture title%}
  Weka model performance chart. Displayed after clicking on "Plot result" 
 {% endcapture %}
-{% include thumbnail src="/images/pages/AWS-Plot-result.png" title=title %}
+{% include thumbnail src='/images/pages/AWS-Plot-result.png' title=title %}
 
 ### Options panel
 
@@ -131,7 +131,7 @@ The default number of classes of the plugin is two, but through this button we c
 {% capture title%}
  Settings dialog of the Trainable Weka Segmentation plugin (2D features) 
 {% endcapture %}
-{% include thumbnail src="/images/pages/TWS-settings-dialog-2D.png" title=title %} The rest of tunable parameters of the plugin can be changed on the Settings dialog, which is displayed when clicking on this button.
+{% include thumbnail src='/images/pages/TWS-settings-dialog-2D.png' title=title %} The rest of tunable parameters of the plugin can be changed on the Settings dialog, which is displayed when clicking on this button.
 
 ##### Training features (2D)
 
@@ -198,7 +198,7 @@ The detailed implementation of these 2D filters can be found in the [source code
 {% capture title%}
  Settings dialog for the Trainable Weka Segmentation 3D plugin. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/TWS-3D-Settings-dialog.png" title=title %}When calling the plugin from the menu command {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation 3D'%} the set of available image features will be as follows:
+{% include thumbnail src='/images/pages/TWS-3D-Settings-dialog.png' title=title %}When calling the plugin from the menu command {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation 3D'%} the set of available image features will be as follows:
 
   - **Gaussian blur**: performs \(n\) individual 3D convolutions with Gaussian kernels with the normal \(n\) variations of \(\sigma\). The larger the radius the more blurred the image becomes until the pixels are homogeneous.
   - **Hessian**: using [FeatureJ](FeatureJ "wikilink") it computes for each image element (voxel) the eigenvalues of the Hessian, which can be used for example to discriminate locally between plate-like, line-like, and blob-like image structures. More specifically, it calculates the magnitude of the largest, middle and smallest eigenvalue of the Hessian tensor. It requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater. It uses smoothing scale \(\sigma\).
@@ -224,7 +224,7 @@ The detailed implementation of these 2D filters can be found in the [source code
 {% capture title%}
  Classifier selection in the Trainable Weka Segmentation [Settings dialog](Advanced_Weka_Segmentation#Settings "wikilink"). 
 {% endcapture %}
-{% include thumbnail src="/images/pages/AWS-Classifier-selection.png" title=title %} The default classifier is [FastRandomForest](https://code.google.com/p/fast-random-forest/), a **multi-threaded** version of [random forest](wikipedia:Random_forest "wikilink") by [Fran Supek](https://scholar.google.com/citations?user=Rz3rPeUAAAAJ), initialized with 200 trees and 2 random features per node. However the user can select any available classifier in the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
+{% include thumbnail src='/images/pages/AWS-Classifier-selection.png' title=title %} The default classifier is [FastRandomForest](https://code.google.com/p/fast-random-forest/), a **multi-threaded** version of [random forest](wikipedia:Random_forest "wikilink") by [Fran Supek](https://scholar.google.com/citations?user=Rz3rPeUAAAAJ), initialized with 200 trees and 2 random features per node. However the user can select any available classifier in the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
 
 **If you do not find the classifier you want**, you might have to install the Weka package that includes it. For that, you need to launch the Weka GUI Chooser (by clicking on the Weka button of the left panel of the plugin GUI) and use the [ Weka Package Manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink") (under {% include bc content='Tools | Package manager'%}). For a step-by-step description on how to install new packages, have a look at this [tutorial](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink").
 
@@ -261,7 +261,7 @@ For a complete step-by-step description on how to compare classifiers for image 
 {% capture title%}
  Example of macro recording of the Trainable Weka Segmentation tools. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/AWS-macro-recording.png" title=title %}
+{% include thumbnail src='/images/pages/AWS-macro-recording.png' title=title %}
 
 The complete list of commands is as follows:
 

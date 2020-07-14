@@ -54,34 +54,8 @@ description: test description
 
 See ClearVolume in action\!
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/IyUpkgTJJvc}}
 
-## Installing ClearVolume in Fiji or ImageJ2
-
-1.  Download Fiji or ImageJ2 from [here](https://imagej.net/Downloads).
-2.  Start Fiji/ImageJ2 and launch the updater (**Help - Update...**)
-3.  Click on **Manage update sites**, tick the box next to **ClearVolume**, and hit **Close**.
-4.  If you use an older Fiji installation you MUST also check and install the **Java-8** update site. For more recent Fiji installations this update site will already be selected.
-5.  Confirm the update/installation by clicking **Apply changes** and restart Fiji/ImageJ as suggested by the updater.
-
-## Other ways to use ClearVolume
-
-  - KNIME  
-    The ClearVolume team provides a plugin for [KNIME Image Processing](KNIME_Image_Processing "wikilink"). See [this page](http://tech.knime.org/book/clearvolume) for details.
-  - Stand-alone  
-    The original purpose of ClearVolume is to bring live volumetric rendering to modern microscopy. Please check the [wiki on GibHub](https://clearvolume.github.io/ClearVolume/) for detailed informations.
-
-## Contact
-
-Feature requests and bug reports can be posted on GitHub. For any further questions please contact any of us
-
-  - Florian Jug (jug@mpi-cbg.de)
-  - Loic Royer (royer@mpi-cbg.de)
-  - Martin Weigert (weigert@mpi-cbg.de)
-  - Ulrik Günther (guenther@mpi-cbg.de)
-
-## Publication
-
-  - {% include publication content='ClearVolume' %}
+\=='%}
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Visualization](Category:Visualization "wikilink") [Category:Citable](Category:Citable "wikilink")

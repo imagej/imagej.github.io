@@ -28,7 +28,7 @@ description: test description
 {% capture title%}
  Example of the perfusion curve obtained in the peritumoral region on brain cancer. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Perfusion.png" title=title %}
+{% include thumbnail src='/images/pages/Perfusion.png' title=title %}
 
 Perfusion is defined as the passage of fluid through the lymphatic system or blood vessels to an organ or a tissue. The practice of perfusion scanning, is the process by which this perfusion can be observed, recorded and quantified. The term perfusion scanning encompasses a wide range of [medical imaging](wikipedia:Medical_imaging "wikilink") modalities.
 

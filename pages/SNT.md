@@ -40,7 +40,7 @@ SNT's documentation is extensive. Please use the navigation bar on too of the pa
 {% capture title%}
  SNT Overview. A key feature of SNT is that *every* aspect of the program can be [scripted](SNT:_Scripting "wikilink") in any of Fiji's supported languages, or from Python through [pyimagej](https://github.com/imagej/pyimagej). 
 {% endcapture %}
-{% include thumbnail src="/images/pages/SimpleNeuriteTracer2.png" title=title %}
+{% include thumbnail src='/images/pages/SimpleNeuriteTracer2.png' title=title %}
 
 ## Features
 

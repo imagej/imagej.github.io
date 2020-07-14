@@ -11,6 +11,7 @@ txt_liquid_linebreak_end = "%GG%"
 txt_capture_start = "%HH%"
 txt_capture_start_end = txt_liquid_linebreak_end
 txt_capture_end = "%JJ%"
+txt_youtube = "%KK%"
 
 template_regex = r'(((?<=\n)[ ]*)*(?<!<nowiki>)\{\{[\n ]*([A-Za-z0-9_]*)[ \n]*\|?[ \n]*(([\s\S]*?))\}\})'
 template_parameter_regex = r'(\w+([ ]\w+)*)[ ]*=[ ]*([^|]*)'
@@ -27,7 +28,8 @@ global_shadows = [
     ("%}\n", txt_liquid_linebreak_end),
     ("\n{% endcapture %}\n", txt_capture_end),
     ("\n{% capture ", txt_capture_start),
-    ("\n%}\n", txt_capture_start_end)
+    ("\n%}\n", txt_capture_start_end),
+    ("https://www.youtube.com/embed/", txt_youtube)
 ]
 
 def read_file(file_path):
@@ -82,6 +84,7 @@ def get_breadcrumb(file_path):
 
     # replace underscores with spaces
     breadcrumb =  re.sub(r'_', ' ', breadcrumb)
+    breadcrumb =  re.sub(r':', ' ', breadcrumb)
 
     return breadcrumb
 
@@ -121,8 +124,8 @@ def process_file(str_content):
     # content_tmp = re.sub(r'\|[ \n]text =', '', content_tmp)
 
     # fix youtube template
-    content_tmp = re.sub(r'{{[\\]*#widget:YouTube\|id=([\w\d\-_]*)[a-z=|\d]*}}',
-                         r'' + txt_include_start + 'youtube url' + txt_param_start + 'https://www.youtube.com/embed/\1' + txt_param_end + txt_liquid_end, content_tmp)
+    content_tmp = re.sub(r'\{\{[\\]?\#widget\:YouTube\|id\=([^ \|]*)[^\}]*\}\}',
+                         youtube_match, content_tmp)
     content_tmp = re.sub(r'{{[\\]*#widget:Vimeo\|[^}]*}}', r'TODO VIMEO WIDGET', content_tmp)
     # TODO parse flash template?!, removing for now because it creates liquid issues
     content_tmp = re.sub(r'{{[\\]*#widget:flash\|[^}]*}}', r'TODO FLASH WIDGET', content_tmp)
@@ -141,6 +144,10 @@ def process_file(str_content):
     content_tmp = content_tmp.replace("{{!}}", "")
 
     return content_tmp
+
+
+def youtube_match(match):
+    return txt_include_start + 'youtube url' + txt_param_start + txt_youtube + match.group(1) + txt_param_end + txt_liquid_end
 
 
 def file_match(match):
@@ -184,9 +191,18 @@ def fix_thumbnail_match2(match):
 
 
 def fix_thumbnail(src, title):
-    title = re.sub(r'([^|\[]*\|)*(([^\|]|\[.*\])*)$', r'\2', title)
-    capture = txt_capture_start + "title" + txt_capture_start_end + " " + title + " " + txt_capture_end
-    return capture + txt_include_start + 'thumbnail src="/images/pages/' + fix_image_name(src) + '" title=title ' + txt_liquid_end
+    title = re.sub(r'(?:right\||left\||center\|)?([x]?\d*px\|)?(?:right\||left\||center\|)?((?:.*|\n)*)$', r'\2', title)
+    if title.startswith("link="):
+        link = re.sub(r'^link\=[\[]?([^|]*)[\]]?\|((?:.*|\n)*)$', r'\2', title)
+        title = re.sub(r'^link\=[^|]*\|((?:.*|\n)*)$', r'\1', title)
+        capture = txt_capture_start + "title" + txt_capture_start_end + " " + title + " " + txt_capture_end
+        return capture + txt_include_start + 'thumbnail-link src="/images/pages/' \
+               + fix_image_name(src) + '" title' + txt_param_var_start + 'title' \
+               + ' link' + txt_param_start + link + ' ' + txt_param_end + txt_liquid_end
+    else:
+        capture = txt_capture_start + "title" + txt_capture_start_end + " " + title + " " + txt_capture_end
+        return capture + txt_include_start + 'thumbnail src' + txt_param_start + '/images/pages/' \
+               + fix_image_name(src) + txt_param_end + ' title' + txt_param_var_start + 'title ' + txt_liquid_end
 
 
 def fix_image_name(src):
@@ -267,8 +283,16 @@ def replace_template_match(document_content, match_content, template_name, templ
     # handle inline templates
     template_content = re.sub(r'\'', r'"', template_content)
     if template_name == "bc":
-        document_content = document_content.replace(match_content,
-                                                    txt_include_start + template_name + " content" + txt_param_start + cleanup(template_content) + txt_param_end + txt_liquid_end)
+        color_match = re.match(r'color=([\w]*)\|', template_content)
+        if color_match:
+            template_content = re.sub(r'color=[\w]*\|(.*)', r'\1', template_content)
+            document_content = document_content.replace(match_content,
+                                                        txt_include_start + template_name + " content" + txt_param_start + cleanup(template_content) + txt_param_end
+                                                        + " color" + txt_param_start + color_match[1] + txt_param_end + txt_liquid_end)
+        else:
+            document_content = document_content.replace(match_content,
+                                    txt_include_start + template_name + " content" + txt_param_start + cleanup(
+                                    template_content) + txt_param_end + txt_liquid_end)
     else:
         matched_parameters, captures = match_content_parameters(template_content)
         if len(captures) > 0:
@@ -386,6 +410,7 @@ def cleanup(value):
 def add_front_matter(str_content, file_path, layout, title):
 
     # scrap necessary info fom page and populate the front matter.
+    title = title.replace(":", " ›")
     breadcrumb = get_breadcrumb(file_path)
     author = "test author"
     categories = get_categories(file_path)

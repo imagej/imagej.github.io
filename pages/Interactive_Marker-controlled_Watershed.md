@@ -40,7 +40,7 @@ In this plugin the markers are introduced interactively by the user using any of
 {% capture title%}
  Examples of ROIs used as markers by the plugin. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Interactive-Marker-controlled-Watershed-markers.png" title=title %}
+{% include thumbnail src='/images/pages/Interactive-Marker-controlled-Watershed-markers.png' title=title %}
 
 ### Watershed Segmentation panel
 
@@ -67,7 +67,7 @@ In this plugin the markers are introduced interactively by the user using any of
 {% capture title%}
  Examples of the 4 different display options. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Morphological-segmentation-result-examples.png" title=title %}
+{% include thumbnail src='/images/pages/Morphological-segmentation-result-examples.png' title=title %}
 
 ### Post-processing panel
 

@@ -41,7 +41,7 @@ The Stitching package comes with 4 different plugins:
 {% capture title%}
  Shows the 3D Stitching Dialog. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/3dstitching.png" title=title %}  
+{% include thumbnail src='/images/pages/3dstitching.png' title=title %}  
 The plugins 2D/3D Stitching take two 2D/3D images as input. They can contain rectangular ROIs which limit the search to those areas, however, the full images will be stitched together. If the input images are RGB images the user can select which channels will be used to determine the correct overlap. Note: If the stitching was not successful using ROIs on the obviously overlapping area might solve the problem.
 
 Windowing should be always used, except the user knows well about properties of the Fourier Transform and its drawbacks.
@@ -62,7 +62,7 @@ There are 5 fusion methods available right now.
 {% capture title%}
  Shows the Stitch Grid Dialog. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/StitchGrid.png" title=title %}  
+{% include thumbnail src='/images/pages/StitchGrid.png' title=title %}  
 This plugin is able to stitch a grid of images, it does not matter if it is 2D or 3D images as long as all images are of the same type. In contrast to the 2D/3D stitching of two images, this plugins will load the images from harddisc.
 
 The user has to define the grid size, that means how the input tiles are arranged (e.g. 7 x 7 image tiles). The overlap is a rough estimate. Note: Smaller overlap reduces computation time, but if the correct alignment is not found try increasing this value first.
@@ -101,7 +101,7 @@ This plugin complements the previous one by stitching a sequence of grid of imag
 {% capture title%}
  Shows the Stitch Image Collection Dialog. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/StitchCollection.png" title=title %}  
+{% include thumbnail src='/images/pages/StitchCollection.png' title=title %}  
 This plugin takes an arbitrary tile configuration as input which has to be stored in a file.
 
 The plugin Stitch Grid of Images will for example create such a file.

@@ -4,6 +4,7 @@ name,failing component,reason
 2010-06-14_-_Fiji_Heidelberg_is_out,liquid,one bc template is not closed
 2010-08-04_-_The_Script_Editor's_font_and_tab_size_are_now_adjustable,reader,
 2012-03-20_-_Unit_tests_for_ImageJ_1.46,pandoc,
+2016-04-19_-_Writing_ImageJ2_Plugins:_A_Beginner's_Perspective,reader,
 2014-07-11_-_Fiji_won't_quit!,reader,
 2014-07-11_-_Fiji_won't_quit,reader,
 2016-07-21_-_KNIME_Image_Processing_hackathon,liquid,gallery messing with include
@@ -28,10 +29,12 @@ Ops_Deconvolution,liquid,math formulas look like liquid
 Overview_of_Fiji's_source_code,reader,
 Rand_error,liquid,math formulas
 Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012,liquid,line break in cite creates code block
+Simple_Neurite_Tracer:_"Export_to_SWC"_Tutorial,reader,
 Shape_Index_Map,reader,
 Sholl_Analysis,liquid,intended lines create weird conversions
 Topology_preserving_warping_error,liquid,line break in cite creates code block
 TrakEM2_Scripting,liquid, whitespace before list items -> code blocks
 Tree_and_Menu_Demo,liquid,mediawiki demo page
+User:Freetrashbox%2FDiameterJ,reader,
 Versioning,pandoc,
 VisBio_Fiji_plugin,reader,

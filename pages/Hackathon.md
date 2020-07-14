@@ -14,7 +14,7 @@ In the context of ImageJ, a [hackathon](wikipedia:Hackathon "wikilink") is a cod
 
 <div style="float: right">
 
-{% include youtube url='https://www.youtube.com/embed/'%}  
+{% include youtube url='https://www.youtube.com/embed/ZDZvoJX3PDM'%}  
 **The "hackathon effect" in effect\!**
 
 </div>

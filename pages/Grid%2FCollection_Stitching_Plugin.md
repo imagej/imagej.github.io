@@ -65,7 +65,7 @@ Another speed reduction will occur if the tiles used have varying z coordinates.
 {% capture title%}
  Out of memory error message. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Out of memory.png" title=title %}
+{% include thumbnail src='/images/pages/Out of memory.png' title=title %}
 
 ## Memory
 
@@ -73,7 +73,7 @@ Even using virtual memory with maximum memory allocation can still be too much f
 {% capture title%}
  Example of a dataset with z-variance. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Z variance.png" title=title %}
+{% include thumbnail src='/images/pages/Z variance.png' title=title %}
 
 # Other Pitfalls
 

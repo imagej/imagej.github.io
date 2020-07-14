@@ -26,7 +26,7 @@ Available on the list of [ImageJ updates sites](Update_Sites "wikilink"). Requir
 {% capture title%}
  Correlation Image 
 {% endcapture %}
-{% include thumbnail src="/images/pages/ColocByCorrelation-CorrelationImage.jpg" title=title %}
+{% include thumbnail src='/images/pages/ColocByCorrelation-CorrelationImage.jpg' title=title %}
 
 The plugin performs a cross-correlation in frequency space to create a correlation image. To remove non-specific correlations (from background, or high signal density), a correlation image generated from randomized images is then subtracted from the original correlation image. This occurs through cycles of:
 
@@ -40,7 +40,7 @@ After the subtraction of non-specific correlations, we generate a radial profile
 {% capture title%}
  Radial profile of correlation image shown above 
 {% endcapture %}
-{% include thumbnail src="/images/pages/ColocByCorrelate-Graph.jpeg" title=title %}
+{% include thumbnail src='/images/pages/ColocByCorrelate-Graph.jpeg' title=title %}
 
 **Preparing images:**
 

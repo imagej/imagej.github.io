@@ -44,7 +44,7 @@ This is a **complementary plugin** of [Register Virtual Stack Slices](Register_V
 {% capture title%}
  Transform Virtual Stack main dialog 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Main-Dialog-Transform Virtual Stack.png" title=title %} **Step 2**: choose the source, output and transform folders:
+{% include thumbnail src='/images/pages/Main-Dialog-Transform Virtual Stack.png' title=title %} **Step 2**: choose the source, output and transform folders:
 
   - Select a source folder containing the slices, at one slice per image file.
   - Select the target folder where resulting transformed slices will be automatically stored as TIFF files.

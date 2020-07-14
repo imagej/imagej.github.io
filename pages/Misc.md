@@ -18,7 +18,7 @@ If you want to trust everybody, [read this](http://cm.bell-labs.com/who/ken/trus
 
 If you are curious and want to see what a peek into the future would have been like, look at this:
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/LBrDzZCOQtI'%}
 
 If you do not like the Google search in your Firefox to be localized, change it. In a file that might be named /usr/lib/firefox-addons/searchplugins/google.xml... (you have to remove the \&hl=.. part).
 

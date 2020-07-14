@@ -10,17 +10,17 @@ description: test description
 
 {% include component-stats content=':sc.fiji:Skeletonize3D\_' %}2D and 3D skeletonization of binary images.
 
-|                                                                                                                                  |                                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                          |                                                                                                                                                  |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 
 {% capture title%}
  Smoothed bat cochlea volume 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Smoothed-bat-cochlea-volume.gif" title=title %} | 
+{% include thumbnail src='/images/pages/Smoothed-bat-cochlea-volume.gif' title=title %} | 
 {% capture title%}
  3D skeleton from bat cochlea volume 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Skeleton-bat-cochlea-volume.gif" title=title %} |
+{% include thumbnail src='/images/pages/Skeleton-bat-cochlea-volume.gif' title=title %} |
 
 ## General Description
 

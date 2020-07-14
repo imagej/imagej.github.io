@@ -31,7 +31,7 @@ We are grateful to Jan Brocher and Masanari Takamiya for comments and bug report
 
   - Semi-automatic tracking: Select one (or more) spot, TrackMate will find its most likely successors:
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/fAOpKTenSaU'%}
 
   - Re-design of TrackScheme. TrackScheme is now about 40 times faster to launch, even on large dataset. By default it uses the 'simple' style, and the update of the small thumbnails can be switched on/off.
   - The 'Load' button was removed from the GUI. TrackMate files can be loaded from the {% include bc content='Plugins | Tracking | Load a TrackMate file'%} menu item.

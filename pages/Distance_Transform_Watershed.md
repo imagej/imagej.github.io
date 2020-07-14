@@ -30,7 +30,7 @@ A classic way of separating touching objects in binary images makes use of the d
 {% capture title%}
  **Basics of the Distance Transform Watershed algorithm**. From left to right: sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope, binary mask calculated after filtering and thresholding input image, inverse of the distance transform applied to the binary mask (Chamfer distance map using normalized Chessknight weights and 32-bit output) and resulting labeled image after applying watershed to the inverse distance image using the binary mask (dynamic of 1 and 4-connectivity). 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-distance-transform-watershed-basics.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-distance-transform-watershed-basics.png' title=title %}
 
 [MorphoLibJ](MorphoLibJ "wikilink") provides two plugins under the {% include bc content='Plugins | MorphoLibJ | Binary Images...'%} menu to apply this strategy on 2D and 3D images:
 

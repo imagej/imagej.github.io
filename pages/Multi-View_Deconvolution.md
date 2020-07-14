@@ -46,7 +46,7 @@ It is highly recommended that before starting the multi-view deconvolution, to u
 {% capture title%}
  Shows the first dialog that queries the location of the multi-view files 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Spim multiview dialog1.jpg" title=title %}
+{% include thumbnail src='/images/pages/Spim multiview dialog1.jpg' title=title %}
 
 The multi-view deconvolution consists like the multi-view fusion of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset, i.e. locate the image files, the registration information and the location of the corresponding beads if applicable. Please note that all the parameters will be transferred from the [Multi-view fusion](Multi-View_Fusion "wikilink") dialog that you used before to set the bounding box (cropping area).
 
@@ -58,7 +58,7 @@ After providing the data the plugin will check which kind of registrations are a
 {% capture title%}
  Shows the second dialog that queries detailed parameters 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Mv deconvolution.png" title=title %}
+{% include thumbnail src='/images/pages/Mv deconvolution.png' title=title %}
 
 In the second dialog, you have to define the detailed instruction of how to run the multi-view deconvolution.
 

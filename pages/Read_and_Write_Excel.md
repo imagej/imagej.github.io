@@ -39,7 +39,7 @@ class="nowrap" | Release version dates
 ## Usage
 
 <span style="float:right; margin-left:10px;"> **Youtube tutorial:**  
-{% include youtube url='https://www.youtube.com/embed/'%} </span> This plugin can be called from a macro using:
+{% include youtube url='https://www.youtube.com/embed/dLkoB25MTIY'%} </span> This plugin can be called from a macro using:
 
 ``` javascript
  

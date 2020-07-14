@@ -12,11 +12,11 @@ description: test description
 {% capture title%}
  MOPS feature correspondences (example 1) 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Tem-42-33-f.png" title=title %} 
+{% include thumbnail src='/images/pages/Tem-42-33-f.png' title=title %} 
 {% capture title%}
  MOPS feature correspondences (example 2) 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Lab-404-403-f.png" title=title %}
+{% include thumbnail src='/images/pages/Lab-404-403-f.png' title=title %}
 
 
 {% capture source%}

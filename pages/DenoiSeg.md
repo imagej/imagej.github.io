@@ -12,7 +12,7 @@ description: test description
 {% capture title%}
  Teaser of what DenoiSeg can compute on your data. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/DenoiSeg-teaser.png" title=title %}
+{% include thumbnail src='/images/pages/DenoiSeg-teaser.png' title=title %}
 
 DenoiSeg is a neural network based algorithm for instance segmentation. The interesting thing about DenoiSeg is, that - although primarily meant for segmentation - the algorithm also learns to denoise your images. The knowledge acquired by denoising the images, improves the segmentation results. DenoiSeg can solve hard segmentation tasks, just like other neural network bases algorithms. But it requires less training data, you only need to manually generate segmentation for about 2 to 10 images. (Other methods usually require much manual segmentations for at least 50 image.)
 
@@ -76,7 +76,7 @@ Please note: You may not use this training data to segment your images. You need
 {% capture title%}
  N2V train parameters 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Denoiseg-train-parameters.png" title=title %}
+{% include thumbnail src='/images/pages/Denoiseg-train-parameters.png' title=title %}
 
 1.  Start ImageJ / Fiji
 2.  Click on `Plugins > CSBDeep > DenoiSeg > DenoiSeg train` and adjust the following parameters:
@@ -98,7 +98,7 @@ Please note: You may not use this training data to segment your images. You need
 {% capture title%}
  N2V train & predict parameters 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Denoiseg-trainpredict-parameters.png" title=title %}
+{% include thumbnail src='/images/pages/Denoiseg-trainpredict-parameters.png' title=title %}
 
 1.  Start ImageJ / Fiji
 2.  Open a noisy image you want to denoise and segment directly after training
@@ -115,11 +115,11 @@ Please note: You may not use this training data to segment your images. You need
 {% capture title%}
  DenoiSeg training progress window 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Denoiseg-train-progress.png" title=title %} 
+{% include thumbnail src='/images/pages/Denoiseg-train-progress.png' title=title %} 
 {% capture title%}
  N2V training preview window 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Denoiseg-train-preview.png" title=title %} During training, you will see two windows:
+{% include thumbnail src='/images/pages/Denoiseg-train-preview.png' title=title %} During training, you will see two windows:
 
   - The progress window keeps you updated of the steps the training process is going through. It also plots the current training and validation loss.
   - The preview window is generated from the first validation batch. It is split into five parts.
@@ -152,7 +152,7 @@ You can <b>open the model directly</b>:
 {% capture title%}
  DenoiSeg prediction from model parameters 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Denoiseg-modelpredict-parameters.png" title=title %}
+{% include thumbnail src='/images/pages/Denoiseg-modelpredict-parameters.png' title=title %}
 
 1.  Start Fiji
 2.  Open an image you want to denoise and segment and for which you have a pretrained model available as ZIP file
@@ -165,7 +165,7 @@ Alternatively, you can <b>use the DenoiSeg menu</b>:
 {% capture title%}
  DenoiSeg prediction parameters 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Denoiseg-predict-parameters.png" title=title %}
+{% include thumbnail src='/images/pages/Denoiseg-predict-parameters.png' title=title %}
 
 1.  Start Fiji
 2.  Open an image you want to denoise and for which you have a pretrained model available as ZIP file
@@ -188,15 +188,15 @@ There are many possibilities for how to create labelings. But since we get this 
 {% capture title%}
  Update site Labkit 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Updatesite-labkit.png" title=title %} 
+{% include thumbnail src='/images/pages/Updatesite-labkit.png' title=title %} 
 {% capture title%}
  Labkit 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Labkit.png" title=title %} 
+{% include thumbnail src='/images/pages/Labkit.png' title=title %} 
 {% capture title%}
  3D Objects counter options 
 {% endcapture %}
-{% include thumbnail src="/images/pages/3Dobjectscounter.png" title=title %}
+{% include thumbnail src='/images/pages/3Dobjectscounter.png' title=title %}
 
 1.  Install the Labkit update site via `Help > Update...`, clicking on `Manage update sites`, and selecting `Labkit`
 2.  Restart Fiji

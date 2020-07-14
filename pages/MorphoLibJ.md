@@ -56,7 +56,7 @@ The original idea was to define a methodology to describe shapes by using anothe
 {% capture title%}
  Principle of morphological dilation and erosion on a binary set, using a disk-shaped structuring element. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Principle-of-morphological-dilation-and-erosion.png" title=title %}
+{% include thumbnail src='/images/pages/Principle-of-morphological-dilation-and-erosion.png' title=title %}
 
 Morphological dilation and erosion change the size and the resulting set. It may also change its topology: after a dilation, components may merge and holes be filled. After an erosion, components may disappear, or components be separated into several parts.
 
@@ -68,7 +68,7 @@ Morphological erosion and dilation may also be applied on grayscale images. In t
 {% capture title%}
  Some examples of morphological filters on a grey level image. From left to right: original image, result of dilation with a square structuring element, and result of erosion with the same structuring element. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-grains-dilation-erosion.png" title=title %} Applying a dilation or an erosion changes the size of the structures in the image: the grains in the result of the dilated image are larger. Morphological erosion can also be used on binary images to help separating touching particles.
+{% include thumbnail src='/images/pages/MorphoLibJ-grains-dilation-erosion.png' title=title %} Applying a dilation or an erosion changes the size of the structures in the image: the grains in the result of the dilated image are larger. Morphological erosion can also be used on binary images to help separating touching particles.
 
 #### Opening and closing
 
@@ -80,7 +80,7 @@ In a symmetric way, the result of an erosion followed by a dilation is called a 
 {% capture title%}
  Some examples of composed morphological filters. From left to right: morphological closing, and morphological opening. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-grains-closing-opening.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-grains-closing-opening.png' title=title %}
 
 Note that even if opening and closing better preserve the size of the structures in the original image, the shape is slightly altered. For example, the result of morphological closing on the figure above creates artificial connections between grains. Choosing the best size for the structuring element is often a compromise between noise removal and preservation of structure shape.
 
@@ -94,7 +94,7 @@ The **white top-hat** first computes a morphological opening (resulting in remov
 {% capture title%}
  More examples of composed morphological filters. From left to right: morphological gradient, morphological Laplacian, morphological white top-hat. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-grains-gradient-Laplacian-whiteTopHat.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-grains-gradient-Laplacian-whiteTopHat.png' title=title %}
 
 ### Directional filters
 
@@ -104,7 +104,7 @@ For images containing very thin curvilinear structures (for example blood vessel
 {% capture title%}
  Filtering of a thin structure. (a) Original image representing apple cells observed with confocal microscopy. The application of a Gaussian filter (b) or median filter (c) results in noise reduction, but also in a loss of the signal along the cell walls. The directional filtering (d) better preserves the thickness of the structure. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-directional-filtering-example.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-directional-filtering-example.png' title=title %}
 
 An alternative is to apply directional filtering. The principle is to consider an oriented structuring element such as a line segment of a given length, and to perform morphological operations for various orientations of the structuring element (Soille *et al.*, 2001\[2\]; Heneghan *et al.*, 2002\[3\]; Hendriks *et al.*, 2003\[4\]). For example, applying a median filter or a morphological opening with horizontal direction results in the enhancement of horizontal parts of bright structures. Similarly, using a vertical structuring element results in the enhancement of the vertical portions of the structures.
 
@@ -112,7 +112,7 @@ An alternative is to apply directional filtering. The principle is to consider a
 {% capture title%}
  Principle of directional filtering of a thin structure. (a) and (b): result of median filter using an horizontal and a vertical linear structuring element. (c) and (d): combination of the results obtained from two directions (horizontal and vertical) and four directions (by adding diagonal directions). 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-directional-filtering-principle.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-directional-filtering-principle.png' title=title %}
 
 The results of oriented filters for each direction can be combined by computing the maximum value over all orientations. The figure above shows the results obtained when combining two or four directions. Here, 32 orientations of line with length 25 were used. This results in the enhancement of the image while preserving the thickness of the bright structures.
 
@@ -197,7 +197,7 @@ The following figure shows several steps of a geodesic reconstruction by dilatio
 {% capture title%}
  Principle of the geodesic reconstruction algorithm. From left to right: original image in gray with marker superimposed in black, and result of conditional dilations with increasing sizes. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-geodesic-reconstruction.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-geodesic-reconstruction.png' title=title %}
 
 #### Applications to binary images
 
@@ -205,7 +205,7 @@ By choosing the marker image, several operations may be automatized. For example
 {% capture title%}
  Some applications of geodesic reconstruction. From left to right: original image, result of kill borders, result of fill holes. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-kill-borders-fill-holes.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-kill-borders-fill-holes.png' title=title %}
 
 #### Applications to grey level images
 
@@ -213,7 +213,7 @@ Geodesic reconstructions can be applied to grey level images. By manually choosi
 {% capture title%}
  Some applications of geodesic reconstruction on grey level images. From left to right: original image with superimposed markers, result of geodesic reconstruction by dilation, result of border kill operation. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-grains-markers-reconstruction-by-dilation-border-kill.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-grains-markers-reconstruction-by-dilation-border-kill.png' title=title %}
 
 #### Usage
 
@@ -239,7 +239,7 @@ Both extended maxima and minima are computed using the geodesic reconstruction a
 {% capture title%}
  Regional and extended maxima on a grey-level image. Left: original image. Middle: result of regional maxima. Right: result of extended maxima. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-grains-regional-and-extended-maxima.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-grains-regional-and-extended-maxima.png' title=title %}
 
 The following operations are available in the {% include bc content='Plugins | MorphoLibJ'%} menu:
 
@@ -260,7 +260,7 @@ When applied to a binary image, attribute opening consists in identifying each c
 {% capture title%}
  Example of area opening on a binary image. Left: original binary image. Middle: identification of connected components. Right: only the connected components with a sufficient size (defined by the area), have been retained. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-binary-area-opening.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-binary-area-opening.png' title=title %}
 
 #### Application to grayscale images
 
@@ -270,7 +270,7 @@ When applied to a grayscale image, attribute opening consists in generating a se
 {% capture title%}
  Example of area opening on a grayscale image. Left: original grayscale image of a leaf (image courtesy of Eric Biot, INRA Versailles). Middle: grayscale size opening making bright spots disappear. Right: comparison with morphological closing with square structuring element of radius 1: bright spots are removed, but some veins also disappear. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-grayscale-area-opening.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-grayscale-area-opening.png' title=title %}
 
 As for classical morphological filters, grayscale attribute closing or tophat can be defined. Grayscale attribute closing consists in removing dark connected components whose size is smaller than a specified value. White \[resp. Black\] Attribute Top-Hat considers the difference of the attribute opening \[resp. closing\] with the original image, and can help identifying bright \[resp. dark\] structures with small size.
 
@@ -290,7 +290,7 @@ So far, the following attribute filtering plugins are available within MorphoLib
 {% capture title%}
  Overlay of watershed lines on blurred blobs. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Classic-Watershed-lines-blur-blobs.png" title=title %} The watershed algorithm assimilates the grey level image to a digital elevation model, and aims at detecting the different catchment basins. In the grey-level image, the catchment basins correspond to dark regions surrounded by bright structures (the "crests"). It is a very popular technique specially used to segment touching objects. The MorphoLibJ suite contains several implementations of the algorithm and plugins that make use of it:
+{% include thumbnail src='/images/pages/Classic-Watershed-lines-blur-blobs.png' title=title %} The watershed algorithm assimilates the grey level image to a digital elevation model, and aims at detecting the different catchment basins. In the grey-level image, the catchment basins correspond to dark regions surrounded by bright structures (the "crests"). It is a very popular technique specially used to segment touching objects. The MorphoLibJ suite contains several implementations of the algorithm and plugins that make use of it:
 
   - [Classic Watershed](Classic_Watershed "wikilink"), plugin implementing the original watershed algorithm by Pierre Soille and Luc M. Vincent (1990)\<ref name="Soille1990\>{% include cite content='conference' title='Determining watersheds in digital pictures via flooding simulations ' author='Soille, Pierre and Vincent, Luc M ' booktitle='Proc. SPIE ' volume='1360 ' pages='240-250 ' year='1990 ' organization='International Society for Optics and Photonics ' doi='10.1117/12.24211 ' url='http://dx.doi.org/10.1117/12.24211 ' %}</ref> to segment 2D/3D grayscale images.
   - [Marker-controlled Watershed](Marker-controlled_Watershed "wikilink"), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers by Meyer and Beucher (1990)\<ref name="Meyer1990\>{% include cite content='journal' title='Morphological segmentation ' author='F. Meyer and S. Beucher ' journal='Journal of Visual Communication and Image Representation ' volume='1 ' number='1 ' pages='21-46 ' year='1990 ' doi='10.1016/1047-3203(90)90014-M ' url='http://www.sciencedirect.com/science/article/pii/104732039090014M ' %}</ref>.
@@ -312,7 +312,7 @@ This section describes the methods implemented in MorphoLibJ for describing indi
 {% capture title%}
  Illustration of Euler Number definition. Left: three particles with Euler numbers equal to 1, 0 and -1, respectively. Right: example of a 3D particle with an Euler number equal to -1, corresponding to the subtraction of 1 connected components minus two handles. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-Euler-number.png" title=title %}The intrinsic volumes are a set of features with interesting mathematical properties that are commonly used for describing individual particles as well as binary microstructrues. In the planar case, they correspond to the area, the perimeter and the Euler number. The Euler number is a topological characteristic that equals the number of connected components minus the number of holes.
+{% include thumbnail src='/images/pages/MorphoLibJ-Euler-number.png' title=title %}The intrinsic volumes are a set of features with interesting mathematical properties that are commonly used for describing individual particles as well as binary microstructrues. In the planar case, they correspond to the area, the perimeter and the Euler number. The Euler number is a topological characteristic that equals the number of connected components minus the number of holes.
 
 For 3D particles, intrinsic volumes correspond to the volume, the surface area, the mean breadth (a quantity proportional to the integral of the mean curvature over the surface) and the Euler number. In 3D the Euler number equals the number of connected components minus the number of "handles" or "tunnels" through the structure, plus the number of bubbles within the particles (Serra, 1982\[6\]{% include cite content='conference' booktitle='3D Images of Materials Structures: processing and analysis ' title='Image Processing ' author='Joachim Ohser and Katja Schladitz ' publisher='Wiley-VCH Verlag GmbH & Co. KGaA ' year='2009 ' doi='10.1002/9783527628308.ch4 ' url='http://dx.doi.org/10.1002/9783527628308.ch4 ' %}</ref>).
 
@@ -358,7 +358,7 @@ A binary particle may be described mathematically by its moments which correspon
 {% capture title%}
  Computation of perimeter and geodesic diameter. Left: principle of perimeter estimation by counting intersections with set of lines. Right: illustration of the geodesic diameter measured on a non convex particle. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-perimiter-geodesic-diameter-computation.png" title=title %}For particles with complex shapes, the geodesic diameter may be of interest. It corresponds of the largest geodesic distance between two points within a region, the geodesic distance being the length of the shortest path joining the two points while staying inside the region (Lantuejoul *et al.*, 1981\[13\]).
+{% include thumbnail src='/images/pages/MorphoLibJ-perimiter-geodesic-diameter-computation.png' title=title %}For particles with complex shapes, the geodesic diameter may be of interest. It corresponds of the largest geodesic distance between two points within a region, the geodesic distance being the length of the shortest path joining the two points while staying inside the region (Lantuejoul *et al.*, 1981\[13\]).
 
 #### Plugins
 
@@ -387,7 +387,7 @@ This plugin computes for each label the largest disk that can be enclosed within
 {% capture title%}
  Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal *et al*., 2004\[14\]). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Longest-geodesic-path-DRIVE.png" title=title %}
+{% include thumbnail src='/images/pages/Longest-geodesic-path-DRIVE.png' title=title %}
 
 ##### Geodesic diameter
 
@@ -478,7 +478,7 @@ The region adjacency graph plugin gives access to the neighborhood relationship 
 {% capture title%}
  Computation of the Region Adjacency Graph on a microscopy image of plant tissue. Left: original image. Middle: result of watershed segmentation. Right: overlay of edges representing adjacent regions. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-region-adjacency-graph.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-region-adjacency-graph.png' title=title %}
 
 The plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Region Adjacency Graph'%}) works for both 2D and 3D images, and requires a label image as input. A typical input is the result of a watershed segmentation (see [Watershed Segmentation](MorphoLibJ#Watershed_segmentation "wikilink")), eventually followed by [manual edition of the labels](MorphoLibJ#Label_Edition_plugin "wikilink"). The output of the plugin is a results table with as many rows as the number of pairs of adjacent regions, containing the labels of the two adjacent regions.
 
@@ -496,7 +496,7 @@ When analyzing images, it is often necessary to compute distances to a particula
 {% capture title%}
  Binary image, and result of computation of the distance transform. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-distance-transform-on-binary-leaf.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-distance-transform-on-binary-leaf.png' title=title %}
 
 Several methods exist for computing distance maps. The MorphoLibJ library implements distance transforms based on chamfer distances, that approximate Euclidean distances but are simpler to compute.
 
@@ -511,7 +511,7 @@ In some cases it may be useful to restrict the propagation of distances to a spe
 {% capture title%}
  Computation of the geodesic distance map on a binary image from the DRIVE database (Staal *et al.*, 2004\[16\]). Left: original image with marker superimposed in red. Right: result of geodesic distance map, hot colors correspond to large distances, cold colors correspond to small distances. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-geodesic-distance-example.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-geodesic-distance-example.png' title=title %}
 
   - **Geodesic Distance Map** computes the geodesic distance between each foreground pixel of a binary mask image to the closest pixel of a marker image, while staying within the particle represented by the mask image.
   - **Interactive Geodesic Distance Map** computes the geodesic distance between each foreground pixel of a the currently selected image (considered the mask image) to the closest pixel of a marker image defined by the user ROIs, while staying within the particle represented by the mask image.
@@ -530,7 +530,7 @@ The different structures within a binary images can be labeled by using a connec
 {% capture title%}
  Binary image, result of connected components labeling, and computation of distance map on the complement of binary image. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-grains-binary-label-distance.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-grains-binary-label-distance.png' title=title %}
 
 Different connectivities may be chosen. For planar images, the most current ones are the 4-connectivity, that consider only orthogonal neighbors of a given pixel, and the 8-connectivity, that also considers the diagonals. For 3D images, the 6-connectivity considers only orthogonal neighbors in the three main directions, whereas the 26-connectivity considers all the direct neighbors of a given voxel.
 
@@ -544,7 +544,7 @@ Several plugins allow to control the appearance of label images. It is possible 
 {% capture title%}
  Assign result of a measurement to a label image. In this example, the elongation is represented using a color code, between dark purple (circular) to yellow (very elongated). 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-grains-labels-assign-measure.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-grains-labels-assign-measure.png' title=title %}
 
   - **Assign Measure To Label** combines a label image with a results table, and creates a new image for which each pixel/voxel is assigned the measurement value corresponding to the label it belongs to.
   - **Set Label Map** allows to choose the color map used to display a label image. In particular, shuffling the color map and/or choosing a specific color for background allows better visualization that only grey levels.
@@ -567,7 +567,7 @@ Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is us
 {% capture title%}
  MorphoLibJ utilities for label images. From left to right: original label image, remove border labels, remove largest region, apply size opening for keeping only regions with at least 150 pixels. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-grains-binary-label-remove-border-largest-size-opening.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-grains-binary-label-remove-border-largest-size-opening.png' title=title %}
 
   - **Remove Border Labels** is similar to "kill borders" function, but operates faster as no morphological reconstruction is required.
   - **Select Label(s)** enters a set of labels, and creates a new label image containing only the selected labels.
@@ -583,7 +583,7 @@ Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is us
 {% capture title%}
  Label Edition plugin overview. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Label-Edition-plugin.png" title=title %}To ease the processing of label images, [MorphoLibJ](MorphoLibJ "wikilink") provides the Label Edition plugin (available under {% include bc content='Plugins | MorphoLibJ | Labels | Label Edition'%}). This plugin contains a graphical user interface (GUI) where the users can perform the following set of editing tasks:
+{% include thumbnail src='/images/pages/Label-Edition-plugin.png' title=title %}To ease the processing of label images, [MorphoLibJ](MorphoLibJ "wikilink") provides the Label Edition plugin (available under {% include bc content='Plugins | MorphoLibJ | Labels | Label Edition'%}). This plugin contains a graphical user interface (GUI) where the users can perform the following set of editing tasks:
 
   - Manually merge labels after their selection using the point selection tool (in 2D and 3D).
   - Apply morphological erosion, dilation, opening and closing with a square/cube of radius 1 as structuring element.
@@ -781,7 +781,7 @@ At the end of the script a dialog is shown to smooth the surfaces at will. Each 
 {% capture title%}
  From left to right: input label image, script output, smoothed label surfaces and example of individually translated surfaces in the 3D viewer. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/MorphoLibJ-visualize-labels-in-3d-viewer.png" title=title %}
+{% include thumbnail src='/images/pages/MorphoLibJ-visualize-labels-in-3d-viewer.png' title=title %}
 
 ## Documentation
 

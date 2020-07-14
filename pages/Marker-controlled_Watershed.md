@@ -24,7 +24,7 @@ description: test description
 {% capture title%}
  Marker-controlled flooding on the gradient image of the blobs sample. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Watershed-flooding-markers-blobs-gradient.gif" title=title %} |}
+{% include thumbnail src='/images/pages/Watershed-flooding-markers-blobs-gradient.gif' title=title %} |}
 
 ## Introduction
 
@@ -36,7 +36,7 @@ Marker-controlled Watershed is an ImageJ/Fiji plugin to segment grayscale images
 {% capture title%}
  Main dialog of the Marker-controlled Watershed plugin 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Marker-controlled-Watershed-dialog.png" title=title %} Marker-controlled Watershed needs at least two images to run:
+{% include thumbnail src='/images/pages/Marker-controlled-Watershed-dialog.png' title=title %} Marker-controlled Watershed needs at least two images to run:
 
   - The **Input** image: a 2D or 3D grayscale image to flood, usually the gradient of an image.
   - The **Marker** image: an image of the same dimensions as the input containing the seed points or markers as connected regions of voxels, each of them with a different label. They correspond usually to the local minima of the input image, but they can be set arbitrarily.
@@ -59,7 +59,7 @@ Output:
 {% capture title%}
  Example of marker-controlled watershed segmentation on nucleus of *Arabidopsis thaliana* (image courtesy of Kaori Sakai and Javier Arpon, INRA-Versailles) 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Arabidopsis-nucleus-segmentation.png" title=title %}
+{% include thumbnail src='/images/pages/Arabidopsis-nucleus-segmentation.png' title=title %}
 
 ## Installation
 

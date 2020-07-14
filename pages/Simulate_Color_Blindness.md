@@ -22,12 +22,12 @@ Choose one of the color blindness modes in the dialog, then press OK:
 
 Here's how the results look like when applied to the *Clown* sample image:
 
-|                                                                                                                                                                           |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                   |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 
 {% capture title%}
  Simulate Color Blindness: overview of the nine different modes. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Simulate Color Blindness Results.png" title=title %} |
+{% include thumbnail src='/images/pages/Simulate Color Blindness Results.png' title=title %} |
 
 [Category:Fiji](Category:Fiji "wikilink") [Category:Plugins](Category:Plugins "wikilink") [Category:Color processing](Category:Color_processing "wikilink")

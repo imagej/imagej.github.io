@@ -91,11 +91,11 @@ The first video shows a developing *Drosophila* embryo expressing His-YFP in all
 </tbody>
 </table>
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/NJHoP8RBIaw'%}
 
 The second video shows a fixed *C. elegans* larvae in L1 stage expressing Lamin-GFP and stained with Hoechst. The four-view dataset was acquired using the Zeiss Lightsheet Z.1 microscope. It illustrates the increase in resolution that can be achieved through multiview imaging combined with multiview deconvolution. The top row shows one of the four input views, the bottom row the result of the multiview deconvolution.
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/16gq2WUm-50'%}
 
 ## Detailed Tutorials
 
@@ -172,13 +172,13 @@ During the [EMBO Practical Course on Lightsheet Microscopy](http://openspim.org/
 
 ### Talk: Registration of Multiview Lightsheet Fluorescence Microscopy (LSFM) Images
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/IupXS\_On2rg'%}
 
 This 30-minute talk by {% include person content='StephanP' %} covers the theory behind registration of multiview lightsheet microscopy data and it also quickly addresses the problem of multiview fusion & deconvolution.
 
 ### Tutorial: Fiji Multiview Lightsheet Reconstruction Software
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/0IkaSwfPYw0'%}
 
 This one hour tutorial by {% include person content='StephanP' %} covers the basic usage of this multiview reconstruction software for Fiji. Documentation, source code, bug reports and feature requests can be found [on SourceForge](https://sourceforge.net/projects/multiviewreconstruction/).
 

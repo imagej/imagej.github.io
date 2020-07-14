@@ -16,12 +16,12 @@ description: test description
 
 Dynamically updates a profile plot for an image with a line, freeline, polyline or a rectangular ROI, as the ROI is moved across the image. Written in [Clojure](Clojure_Scripting "wikilink").
 
-|                                                                                                                                                                                                            |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 
 {% capture title%}
  Dragging a line ROI across an image shows the pixel intensity profile across that line in a separate image window. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Profiler-movie.gif" title=title %} |
+{% include thumbnail src='/images/pages/Profiler-movie.gif' title=title %} |
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Scripting](Category:Scripting "wikilink") [Category:Unmaintained](Category:Unmaintained "wikilink")

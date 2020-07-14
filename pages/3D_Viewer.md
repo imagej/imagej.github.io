@@ -16,7 +16,7 @@ description: test description
 
 Here you are a demo screencast separated into two different videos (\~15 min in total) showing many of the features of the 3D viewer:
 
-{% include youtube url='https://www.youtube.com/embed/'%} {% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/cD3Hc3NYkaU'%} {% include youtube url='https://www.youtube.com/embed/GqG\_RcK3kYg'%}
 
 Beyond this, a lot more screencasts can be found [here](3D_Viewer:_Screencasts "wikilink"), covering the following topics:
 

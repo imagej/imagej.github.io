@@ -24,7 +24,7 @@ description: test description
 {% capture title%}
  Visual description of the different steps of the Morphological Segmentation plugin. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Morphological-Segmentation-animation-blobs.gif" title=title %} |}
+{% include thumbnail src='/images/pages/Morphological-Segmentation-animation-blobs.gif' title=title %} |}
 
 ## Introduction
 
@@ -44,7 +44,7 @@ The user can pan, zoom in and out, or scroll between slices (if the input image 
 {% capture title%}
  Input Image panel 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Morphological-segmentation-input-image-panel.png" title=title %}First, you need to indicate the nature of the input image to process. This is a **key parameter** since the watershed algorithm is expecting an image where the boundaries of objects present high intensity values (usually as a result of a gradient or edge detection filtering).
+{% include thumbnail src='/images/pages/Morphological-segmentation-input-image-panel.png' title=title %}First, you need to indicate the nature of the input image to process. This is a **key parameter** since the watershed algorithm is expecting an image where the boundaries of objects present high intensity values (usually as a result of a gradient or edge detection filtering).
 
 You should select:
 
@@ -89,7 +89,7 @@ If your segmentation is taking too long or you want **to stop it** for any reaso
 {% capture title%}
  Examples of the 4 different display options 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Morphological-segmentation-result-examples.png" title=title %}
+{% include thumbnail src='/images/pages/Morphological-segmentation-result-examples.png' title=title %}
 
 ### Post-processing panel
 
@@ -112,13 +112,13 @@ If your segmentation is taking too long or you want **to stop it** for any reaso
 
 This introductory screencast (which needs audio) explains the basic use of the plugin:
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/gF4nhq7I2Eo'%}
 
 ### Segmentation of a 3D image
 
 This video tutorial (with audio as well) shows how to use the plugin segment a 3D image (confocal image of an *Arabidopsis thaliana* embryo, courtesy of Jean-Christophe Palauqui (INRA-Versailles)):
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/lm4hQhLlnHU'%}
 
 ## Macro language compatibility
 
@@ -235,13 +235,13 @@ You should now find the plugin under the sub-menu {% include bc content='Plugins
 
 ## Examples
 
-|                                                                                                                                                                                                                                                                          |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                                                                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 
 {% capture title%}
  3d reconstruction of an *Arabidopsis thaliana* embryo using the Morphological Segmentation plugin. Image courtesy of Jean-Christophe Palauqui (INRA-Versailles) 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Arabidopsis-embryo-3d-animation.gif" title=title %} |
+{% include thumbnail src='/images/pages/Arabidopsis-embryo-3d-animation.gif' title=title %} |
 
 ## Citation
 

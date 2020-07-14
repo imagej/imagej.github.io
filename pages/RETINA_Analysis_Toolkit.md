@@ -27,7 +27,7 @@ TUNEL Cell Counter is a customizable tool that processes digital images from ret
 {% capture title%}
  **TUNEL Cell Counter**: Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/RETINA Cell Counter Montage.png " title=title %}
+{% include thumbnail src='/images/pages/RETINA Cell Counter Montage.png ' title=title %}
 
 ## Required Components
 
@@ -40,7 +40,7 @@ The following are required to execute this tool:
 
 ## How to Use: 2 Minute Tutorial
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/NyCXqNA-NTc'%}
 
 ## Processing Settings
 
@@ -48,7 +48,7 @@ The following are required to execute this tool:
 {% capture title%}
  **Settings Dialog**: Input the spatial scale obtained from the image metadata or microscope. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/RETINA Cell Counter Dialog.png" title=title %} After importing a TIFF image and executing the counter, the following settings should be selected:
+{% include thumbnail src='/images/pages/RETINA Cell Counter Dialog.png' title=title %} After importing a TIFF image and executing the counter, the following settings should be selected:
 
 1.  <b>Microscope Magnification</b>: Displays the working 20x objective magnification.
 2.  <b>Image Native Resolution</b>: Displays the imported image resolution.
@@ -61,21 +61,21 @@ The following are required to execute this tool:
 9.  <b>Channels</b>: Choose the cells of interest in either the green, red, or combined channels.
 10. <b>Help</b>: Links directly to this site.
 
-|                                                                                                                                                                     |                                                                                                                                                                               |                                                                                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                             |                                                                                                                                                                                       |                                                                                                                                                                                            |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 
 {% capture title%}
  **Cell Roundness**: Select the desired morphology for cells. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/RETINA Cell Counter Roundness.png" title=title %} | 
+{% include thumbnail src='/images/pages/RETINA Cell Counter Roundness.png' title=title %} | 
 {% capture title%}
  **Retina Area Selection**: Choose between automated or manual segmentation. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/RETINA Cell Counter Area.png" title=title %} | 
+{% include thumbnail src='/images/pages/RETINA Cell Counter Area.png' title=title %} | 
 {% capture title%}
  **Threshold Sensitivity**: Select the threshold protocol for cell counting. 
 {% endcapture %}
-{% include thumbnail src="/images/pages/RETINA Cell Counter Threshold.png" title=title %} |
+{% include thumbnail src='/images/pages/RETINA Cell Counter Threshold.png' title=title %} |
 
 ## Results
 
@@ -120,7 +120,7 @@ Yes, we know there is a lot to improve\!
 ## How to Download and Install ImageJ Macros
 
   
-{% include youtube url='https://www.youtube.com/embed/'%}  
+{% include youtube url='https://www.youtube.com/embed/CvhPjZ62cik'%}  
 \----
 
 [Category:](Category: "wikilink")

@@ -36,7 +36,7 @@ A comprehensive dataset can be found at [this link](https://zenodo.org/record/36
 
 The following video shows an example of Fijiyama application: the registration of two stacks of MRI 3D images, collected on a grapevine cutting at different dates(see the "Training tutorial" for details).
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/QG\_i50XJRfc'%}
 
 ## Plugin features
 
@@ -63,7 +63,7 @@ and add the **Fijiyama** repository (by clicking on the button **Add update site
 
 The following video shows a tutorial for Fijiyama installation:
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/scm6UPlfgzU'%}
 
 ## Preparing your data
 
@@ -115,7 +115,7 @@ In order to achieve an efficient registration of two 3D images, we recommend the
 
 Once comfortable with the "two images registration" module, try a “series registration” following these steps. If you feel lost, you can rely on the tutorial here :
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/DVr3LBH5ayY'%}
 
   - '''Step 1 : ''' Prepare your data or download the example data set : [case study 4, times series registration](https://imagej.net/_images/c/c8/Test_dataset_04_time_series.zip)
 
@@ -148,13 +148,13 @@ This module is a helper function to apply an ITK transformation to a 3D image. S
 
 Fijiyama plugin has been tested on several data (including vegetal and human tissues), at different scales (from micro to macro imaging), and on different imaging modalities (microscopy, MRI, X-rays, and photographies).
 
-See an example in the video below : Human abdomen CT-scan and MRI registration (Courtesy of Dr. Samuel Mérigeaud, Tridilogy SARL) {% include youtube url='https://www.youtube.com/embed/'%}
+See an example in the video below : Human abdomen CT-scan and MRI registration (Courtesy of Dr. Samuel Mérigeaud, Tridilogy SARL) {% include youtube url='https://www.youtube.com/embed/ETCnWIqoDI0'%}
 
 ## Accuracy Test
 
 Fijiyama can be used to quantify the resulting mismatch. This measurement process is integrated in the plugin as an extra functionality, to help users evaluating their results, as illustrated in this video : “Fijiyama : quantifying average mismatch after registration”
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/xTOQIHieH0o'%}
 
 ## Versions of Fijiyama
 

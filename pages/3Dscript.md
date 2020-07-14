@@ -64,7 +64,7 @@ More information is available at https://bene51.github.io/3Dscript.
 
 See 3Dscript in action below:
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/eRrSoAubv6w'%}
 
 More examples can be found on https://bene51.github.io/3Dscript/gallery.html.
 

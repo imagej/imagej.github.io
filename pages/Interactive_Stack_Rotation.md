@@ -24,7 +24,7 @@ description: test description
 
 Here is a screencast how to use the Interactive Stack Rotation plugin:
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/7so6zkwvNeQ'%}
 
 For a quick overview of keyboard shortcuts, please press the {% include key content='F1' %} key to be shown this usage:
 

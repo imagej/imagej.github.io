@@ -261,7 +261,7 @@ The "normal" BigWarp plugin accessible through *Plugins {% include arrow%}
 
   - An example of a 2d warping by [Nicolas Chiaruttini](http://kiaru.eu/cv-rapide/) in response to [this forum post.](https://forum.image.sc/t/superimpose-atlas-image-onto-microscope-picture/20593)
 
-{% include youtube url='https://www.youtube.com/embed/'%}
+{% include youtube url='https://www.youtube.com/embed/zNur6mk9VXg'%}
 
 # Publication
 

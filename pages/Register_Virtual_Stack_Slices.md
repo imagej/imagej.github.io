@@ -59,7 +59,7 @@ On success, a virtual stack will open showing all the registered images containe
 {% capture title%}
  Shrinkage constrain checkbox 
 {% endcapture %}
-{% include thumbnail src="/images/pages/RVS shrink option.png" title=title %} Since the 09/13/2009 version and thanks to [Daniel Berger](http://hebb.mit.edu/), Register Virtual Stack Slices has the option of constraining the registration to avoid section shrinking for large sets of images.
+{% include thumbnail src='/images/pages/RVS shrink option.png' title=title %} Since the 09/13/2009 version and thanks to [Daniel Berger](http://hebb.mit.edu/), Register Virtual Stack Slices has the option of constraining the registration to avoid section shrinking for large sets of images.
 
 If this option is used, **no reference image needs to be selected**. All images will be transformed into the same common space by initializing first the system with a rigid transformation and then relaxing it based on the desired registration model.
 
@@ -69,7 +69,7 @@ If you check as well the "Advance setup" checkbox from the same dialog, then a n
 {% capture title%}
  Shrinkage regularization parameters 
 {% endcapture %}
-{% include thumbnail src="/images/pages/RVS regularization params.png" title=title %}
+{% include thumbnail src='/images/pages/RVS regularization params.png' title=title %}
 
   - the [shear](wikipedia:Shear_mapping "wikilink"),
   - the [scaling](wikipedia:Scaling_\(geometry\) "wikilink"),

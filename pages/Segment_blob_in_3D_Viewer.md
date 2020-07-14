@@ -14,7 +14,7 @@ Running the plugin "Plugins - Segmentation - Segment blob in 3D Viewer" will add
 {% capture title%}
  Segment blob in 3D Viewer: example of resulting mesh (in green) overlaid on the original image volume (the sample file "bat cochlea volume"). 
 {% endcapture %}
-{% include thumbnail src="/images/pages/Blob-segmentation.jpg" title=title %}
+{% include thumbnail src='/images/pages/Blob-segmentation.jpg' title=title %}
 
 # Segmenting a blob
 
