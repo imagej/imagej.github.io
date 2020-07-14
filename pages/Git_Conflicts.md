@@ -116,6 +116,6 @@ For complicated conflicts, you may find it easier to do the resolution using an 
 
 ... which will offer you a choice of tools. Here is a screenshot of using `git mergetool --tool=meld`:
 
-![Meld-example.png](/images/pages/Meld-example.png "Meld-example.png")
+<img src="/images/pages/Meld-example.png" width="750"/>
 
 [Category:Git](Category:Git "wikilink")

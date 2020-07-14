@@ -26,4 +26,4 @@ And more particulary for
 
 The diagram below depicts the relation between the different classes composing ImageJ1.
 
-![ImageJ1-API-diagram.jpg](/images/pages/ImageJ1-API-diagram.jpg "ImageJ1-API-diagram.jpg")
+<img src="/images/pages/ImageJ1-API-diagram.jpg" width="1100"/>

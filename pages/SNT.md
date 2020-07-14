@@ -21,7 +21,7 @@ description: test description
 {% capture source%}
 {% include github org='morphonets ' repo='SNT ' %}
 {% endcapture %}
-{% include info-box name='SNT ' software='complete framework for quantification of neuronal anatomy ' logo='![SNTLogo512.png](/images/pages/SNTLogo512.png "SNTLogo512.png") ' author=author maintainer=maintainer source=source status='stable, active ' category='[Neuroanatomy](:Category:Neuroanatomy "wikilink") ' %}{% include toc content='right' %}
+{% include info-box name='SNT ' software='complete framework for quantification of neuronal anatomy ' logo='<img src="/images/pages/SNTLogo512.png" width="150"/> ' author=author maintainer=maintainer source=source status='stable, active ' category='[Neuroanatomy](:Category:Neuroanatomy "wikilink") ' %}{% include toc content='right' %}
 
 ## Overview
 
@@ -37,9 +37,7 @@ SNT's documentation is extensive. Please use the navigation bar on too of the pa
   - **[Scripting](SNT:_Scripting "wikilink")** Details on how to use SNT as a scripting library
 
 
-{% capture title%}
- SNT Overview. A key feature of SNT is that *every* aspect of the program can be [scripted](SNT:_Scripting "wikilink") in any of Fiji's supported languages, or from Python through [pyimagej](https://github.com/imagej/pyimagej). 
-{% endcapture %}
+{% capture title%}SNT Overview. A key feature of SNT is that *every* aspect of the program can be [scripted](SNT:_Scripting "wikilink") in any of Fiji's supported languages, or from Python through [pyimagej](https://github.com/imagej/pyimagej).{% endcapture %}
 {% include thumbnail src='/images/pages/SimpleNeuriteTracer2.png' title=title %}
 
 ## Features

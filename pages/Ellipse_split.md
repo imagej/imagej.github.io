@@ -45,7 +45,7 @@ Suppose you have the following input image:
 
 Then the watershed approach (*Process -\> Binary -\> Watershed*) would give this result:
 
-![Ellipsesplit\_watershed.png](/images/pages/Ellipsesplit watershed.png "Ellipsesplit watershed.png")
+<img src="/images/pages/Ellipsesplit watershed.png" width="300"/>
 
 The ellipse splitting plugin applied to the input image will combine the watershed result and direct ellipse fitting. This leads to the following result:
 
@@ -53,7 +53,7 @@ The ellipse splitting plugin applied to the input image will combine the watersh
 
 Furthermore it outputs several important features:
 
-![Ellipsesplit\_resultstable.png](/images/pages/Ellipsesplit resultstable.png "Ellipsesplit resultstable.png")
+<img src="/images/pages/Ellipsesplit resultstable.png" width="600"/>
 
 ## Parameters
 

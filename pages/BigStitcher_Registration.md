@@ -79,7 +79,7 @@ When manually selecting **views to fix**, you can choose to fix multiple views (
 
 When **mapping back**, you can select a single view to map back to.
 
-![BigStitcher\_Register\_fix\_select.png](/images/pages/BigStitcher Register fix select.png "BigStitcher Register fix select.png")![BigStitcher\_Register\_map\_back\_select.png](/images/pages/BigStitcher Register map back select.png "BigStitcher Register map back select.png")
+<img src="/images/pages/BigStitcher Register fix select.png" width="400"/><img src="/images/pages/BigStitcher Register map back select.png" width="400"/>
 
   
 

@@ -30,9 +30,7 @@ Here we summarize some of the tracking plugins in ImageJ.
 <li>Provides several visualization and analysis tools that aid in assessing results</li>
 <li>A very modular design, that makes it easy to extend</li>
 </ul></td>
-<td><figure>
-<img src="/images/pages/TrackMateGUI.png" title="TrackMateGUI.png" alt="TrackMateGUI.png" width="500" /><figcaption>TrackMateGUI.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/TrackMateGUI.png" width="500"/></p></td>
 </tr>
 </tbody>
 </table>

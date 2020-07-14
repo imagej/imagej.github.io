@@ -16,7 +16,7 @@ description: test description
 {% capture source%}
 {% include github org='slim-curve ' repo='slim-plugin ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='FLIMJ plugin ' logo='![Slim-curve-icon.png](/images/pages/Slim-curve-icon.png "Slim-curve-icon.png") ' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
+{% include info-box software='ImageJ ' name='FLIMJ plugin ' logo='<img src="/images/pages/Slim-curve-icon.png" width="64"/> ' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
 [UW-Madison LOCI](http://loci.wisc.edu/) ' maintainer=maintainer filename='flimlib.jar, flimlib-""arch""-""ver"".jar,  
 flimj-ops-""ver"".jar ' source=source latest-version='1.0.0 ' website='https://flimlib.github.io/ ' category='[:Category:Analysis](:Category:Analysis "wikilink") ' %}
 
@@ -53,17 +53,17 @@ With the desired dataset window active, launch FLIMJ from the menu under {% incl
 
 {% include info-box content='"""FLIMJ plugin accepts only 3- or 4-dimensional datasets.""" If the dataset is opened from a file supported by [SCIFIO](SCIFIO "wikilink") (such as a .sdt), the dataset likely has metadata attached, which helps FLIM plugin infer the order of the X, Y, and T axes as well as the time bin size. Otherwise, the user may be asked to provide the information:
 
-![FLIMJ\_Lifetime\_Axis\_Not\_Detected.png](/images/pages/FLIMJ Lifetime Axis Not Detected.png "FLIMJ Lifetime Axis Not Detected.png")![FLIMJ\_Time\_Base\_Info\_Not\_Detected.png](/images/pages/FLIMJ Time Base Info Not Detected.png "FLIMJ Time Base Info Not Detected.png")
+<img src="/images/pages/FLIMJ Lifetime Axis Not Detected.png" width="350"/><img src="/images/pages/FLIMJ Time Base Info Not Detected.png" width="200"/>
 
 If the dataset comes with a (fourth) spectral dimension, the user has to choose the spectral channel to analyze as well:
 
-![FLIMJ\_Multiple\_Channel\_Detected.png](/images/pages/FLIMJ Multiple Channel Detected.png "FLIMJ Multiple Channel Detected.png")' %}
+<img src="/images/pages/FLIMJ Multiple Channel Detected.png" width="350"/>' %}
 
 ### Fit preview
 
 Before fitting the entire dataset, the user may click on the intensity image or type in the coordinates in **Preview** panel to preview the fitted curve and parameters of the pixel under the cursor:
 
-![FLIMJ\_preview\_preview.png](/images/pages/FLIMJ preview preview.png "FLIMJ preview preview.png") ![FLIMJ\_preview\_plot.png](/images/pages/FLIMJ preview plot.png "FLIMJ preview plot.png") ![FLIMJ\_preview\_settings.png](/images/pages/FLIMJ preview settings.png "FLIMJ preview settings.png")
+<img src="/images/pages/FLIMJ preview preview.png" width="200"/> <img src="/images/pages/FLIMJ preview plot.png" width="400"/> <img src="/images/pages/FLIMJ preview settings.png" width="200"/>
 
 In the screenshots above,
 

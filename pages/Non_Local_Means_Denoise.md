@@ -44,7 +44,7 @@ Both, the value for the (estimated) sigma and the smoothing factor are saved in 
 
 # Example
 
-The left image shows a noisy (sigma=25) image of lena and right image the denoised version using the non local means plugin: ![Lena-noise-25.png](/images/pages/Lena-noise-25.png "Lena-noise-25.png") ![Lena-denoised.png](/images/pages/Lena-denoised.png "Lena-denoised.png")
+The left image shows a noisy (sigma=25) image of lena and right image the denoised version using the non local means plugin: <img src="/images/pages/Lena-noise-25.png" width="250"/> <img src="/images/pages/Lena-denoised.png" width="250"/>
 
 # Installation
 

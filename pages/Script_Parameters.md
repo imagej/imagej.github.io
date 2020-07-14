@@ -32,7 +32,7 @@ done by lunchtime ' person=person gravatar='9e4ed4484fd425f3f178bfeed4777b31 ' s
 
 We see that an input parameter `name` of type `String` is declared. `@Parameters` are handled automatically by the framework; if we run this script when the User Interface is available (e.g. from the script editor), the `name` parameter will automatically be harvested via a pop-up dialog:
 
-![ScriptParams.png](/images/pages/ScriptParams.png "ScriptParams.png")
+<img src="/images/pages/ScriptParams.png" width="450"/>
 
 We could also run this script [headlessly](Scripting_Headless "wikilink"), thanks to the general nature of `@parameters`.
 
@@ -76,7 +76,7 @@ Different styles are also possible.
 #@ Float   (label="Slider with float", style="slider", min=0, max=1, stepSize=0.1) myfloat
 ```
 
-![ScriptParameters-IntegerStyles.JPG](/images/pages/ScriptParameters-IntegerStyles.JPG "ScriptParameters-IntegerStyles.JPG")
+<img src="/images/pages/ScriptParameters-IntegerStyles.JPG" width="450"/>
 
 ## Parameter properties
 

@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='fpBioimage ' repo='FPBioimageHelper-FIJI ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='FPBioimage Helper Plugin ' logo='![FPB\_Logo.png](/images/pages/FPB Logo.png "FPB Logo.png") ' author=' [FPBioimage](http://fpb.ceb.cam.ac.uk)  
+{% include info-box software='ImageJ ' name='FPBioimage Helper Plugin ' logo='<img src="/images/pages/FPB Logo.png" width="96"/> ' author=' [FPBioimage](http://fpb.ceb.cam.ac.uk)  
 Marcus Fantham ' Maintainer='Marcus Fantham ' source=source %}FPBioimage is an interactive tool for viewing volumetric data in the web browser. To quickly share 3D data with your collaborators using FPBioimage, we provide this useful plugin for ImageJ and FIJI. {% include toc%}
 
 

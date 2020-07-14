@@ -47,7 +47,7 @@ Source repository for each core update site:
 
 First of all, start the [updater](updater "wikilink") with {% include bc content='Help | Update'%} and click on the *Manage update sites* button:
 
-![Mamed-3.jpg](/images/pages/Mamed-3.jpg "Mamed-3.jpg")
+<img src="/images/pages/Mamed-3.jpg" width="770"/>
 
 From this dialog, you can edit the desired update site(s) to add your authentication information.
 
@@ -66,7 +66,7 @@ In the *Manage update sites* dialog, on the Fiji update site line, add the follo
 
 Note that your username will always start with an upper case letter. It should look like this:
 
-![Update\_site\_fiji\_creds.png](/images/pages/Update site fiji creds.png "Update site fiji creds.png")
+<img src="/images/pages/Update site fiji creds.png" width="770"/>
 
 You can now close the *Manage update sites* window and go on to [ Uploading your resources](#Uploading_your_resources "wikilink").
 
@@ -81,7 +81,7 @@ In the *Manage update sites* dialog, on the ImageJ update site line, add the fol
 
 It should look like this:
 
-![Update\_site\_ij2\_creds.png](/images/pages/Update site ij2 creds.png "Update site ij2 creds.png")
+<img src="/images/pages/Update site ij2 creds.png" width="770"/>
 
 You can now close the *Manage update sites* window and go on to [ Uploading your resources](#Uploading_your_resources "wikilink").
 

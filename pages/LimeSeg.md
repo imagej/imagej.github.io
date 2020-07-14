@@ -96,7 +96,7 @@ Also the 3D viewer should give a 3D View of the vesicle:
 
 ![LimeSeg\_3DView\_Vesicle.png](/images/pages/LimeSeg 3DView Vesicle.png "LimeSeg 3DView Vesicle.png")
 
-Other outputs are provided as an ImageJ table: ![LimeSeg\_Results\_Vesicle.png](/images/pages/LimeSeg Results Vesicle.png "LimeSeg Results Vesicle.png")
+Other outputs are provided as an ImageJ table: <img src="/images/pages/LimeSeg Results Vesicle.png" width="1000"/>
 
   - **Cell\_Name** : each 3D object that LimeSeg generated is a "Cell" object. By default, these objects have a String identifier: Cell\_0, Cell\_1, Cell\_2...
   - **Number of Surfels** : number of surface elements in the generated 3D object. This number is also the number of vertex within the 3D Mesh.
@@ -151,7 +151,7 @@ It is possible to define more precisely the seeds used to segment images. This c
 
 2\. Using a few ROIs approximately define the contour of the embryo at certains slices, like in the image shown above:
 
-![LimeSeg\_Skeleton\_Example.png](/images/pages/LimeSeg Skeleton Example.png "LimeSeg Skeleton Example.png")
+<img src="/images/pages/LimeSeg Skeleton Example.png" width="1000"/>
 
 You need to begin and end with a single point ROI, otherwise the shape will not be closed. Also, the ROIs need to be drawn clockwise and should starts always at the same angle (start on top for instance).
 

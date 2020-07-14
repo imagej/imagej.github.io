@@ -153,7 +153,7 @@ addpath '/Applications/Fiji.app/scripts' % Update for your ImageJ installation a
 ImageJ;
 ```
 
-Now, you should see a new ImageJ instance shows up as a window. ![ImageJ\_launched\_from\_MATLAB.png](/images/pages/ImageJ launched from MATLAB.png "ImageJ launched from MATLAB.png")
+Now, you should see a new ImageJ instance shows up as a window. <img src="/images/pages/ImageJ launched from MATLAB.png" width="400"/>
 
 In your MATLAB base workspace, you'll find a variable `IJM`, which is a `net.imagej.matlab.ImageJMATLABCommands` Java object. `IJM` offers a few useful methods as below:
 
@@ -300,7 +300,7 @@ imp = ij.IJ.openImage("http://imagej.nih.gov/ij/images/boats.gif");
 imp.show()
 ```
 
-![boats\_screenshot.png](/images/pages/Boats screenshot.png "boats screenshot.png")
+<img src="/images/pages/Boats screenshot.png" width="400"/>
 
 #### Opening a MATLAB array as an image in ImageJ
 
@@ -314,7 +314,7 @@ corn_gray_tp = corn_gray'; % transpose array
 IJM.show('corn_gray_tp'); % show in ImageJ properly
 ```
 
-![corn\_gray\_matlab.png](/images/pages/Corn gray matlab.png "corn gray matlab.png") ![corn\_gray.png](/images/pages/Corn gray.png "corn gray.png") ![corn\_gray\_transposed.png](/images/pages/Corn gray transposed.png "corn gray transposed.png")
+<img src="/images/pages/Corn gray matlab.png" width="250"/> <img src="/images/pages/Corn gray.png" width="250"/> <img src="/images/pages/Corn gray transposed.png" width="250"/>
 
 A more general solution to this issue of X-Y transposition can be achieved by `permute` function of MATLAB. But please beware of [memory demands by `permute`](https://stackoverflow.com/questions/36065182/why-does-matlabs-permute-not-need-extra-memory).
 
@@ -388,9 +388,9 @@ imp4 = copytoImagePlus(I16,'XYCZT') % ImagePlus, 16-bit, 171x196x2x5x51
 imp4.show(); 
 ```
 
-`IJM.show(name)` cannot reproduce the dimensions and the data type. Channels (C), slices (Z), and frames (T) are all treated as frames. Image type is 32 bit. ![IJMshow\_Image006.png](/images/pages/IJMshow Image006.png "IJMshow Image006.png")
+`IJM.show(name)` cannot reproduce the dimensions and the data type. Channels (C), slices (Z), and frames (T) are all treated as frames. Image type is 32 bit. <img src="/images/pages/IJMshow Image006.png" width="150"/>
 
-`copytoImagePlus` can keep the dimensions and the data type. ![Image003.png](/images/pages/Image003.png "Image003.png")
+`copytoImagePlus` can keep the dimensions and the data type. <img src="/images/pages/Image003.png" width="150"/>
 
 # Source
 

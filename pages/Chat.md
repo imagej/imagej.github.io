@@ -16,15 +16,15 @@ description: test description
 
 The [Gitter](wikipedia:Gitter "wikilink") chat service, while relatively new, is a great way to discuss *programming* issues with developers of the [SciJava](SciJava "wikilink") component collection. All you need is either a [GitHub](https://github.com/) or [Twitter](https://twitter.com/) account. Advantages of Gitter include a nice "21st century" web interface, email notification when participants miss messages, and a full searchable history.
 
-|                                                          |                               |                                                   |
-| -------------------------------------------------------- | ----------------------------- | ------------------------------------------------- |
-| **Logo**                                                 | **Organization**              | **Chat rooms**                                    |
-| ![Imagej2-icon.png](/images/pages/Imagej2-icon.png "Imagej2-icon.png") | [ImageJ](ImageJ "wikilink")   | [imagej](https://gitter.im/orgs/imagej/rooms)     |
-| ![Fiji-icon.png](/images/pages/Fiji-icon.png "Fiji-icon.png")          | [Fiji](Fiji "wikilink")       | [fiji](https://gitter.im/orgs/fiji/rooms)         |
-| ![Knime-icon.png](/images/pages/Knime-icon.png "Knime-icon.png")       | [KNIME](KNIME "wikilink")     | [knime-ip](https://gitter.im/orgs/knime-ip/rooms) |
-| ![Imglib2-icon.png](/images/pages/Imglib2-icon.png "Imglib2-icon.png") | [ImgLib2](ImgLib2 "wikilink") | [imglib](https://gitter.im/orgs/imglib/rooms)     |
-| ![Scifio-icon.png](/images/pages/Scifio-icon.png "Scifio-icon.png")    | [SCIFIO](SCIFIO "wikilink")   | [scifio](https://gitter.im/orgs/scifio/rooms)     |
-| ![Scijava-icon.png](/images/pages/Scijava-icon.png "Scijava-icon.png") | [SciJava](SciJava "wikilink") | [scijava](https://gitter.im/orgs/scijava/rooms)   |
+|                                          |                               |                                                   |
+| ---------------------------------------- | ----------------------------- | ------------------------------------------------- |
+| **Logo**                                 | **Organization**              | **Chat rooms**                                    |
+| <img src="/images/pages/Imagej2-icon.png" width="48"/> | [ImageJ](ImageJ "wikilink")   | [imagej](https://gitter.im/orgs/imagej/rooms)     |
+| <img src="/images/pages/Fiji-icon.png" width="48"/>    | [Fiji](Fiji "wikilink")       | [fiji](https://gitter.im/orgs/fiji/rooms)         |
+| <img src="/images/pages/Knime-icon.png" width="48"/>   | [KNIME](KNIME "wikilink")     | [knime-ip](https://gitter.im/orgs/knime-ip/rooms) |
+| <img src="/images/pages/Imglib2-icon.png" width="48"/> | [ImgLib2](ImgLib2 "wikilink") | [imglib](https://gitter.im/orgs/imglib/rooms)     |
+| <img src="/images/pages/Scifio-icon.png" width="48"/>  | [SCIFIO](SCIFIO "wikilink")   | [scifio](https://gitter.im/orgs/scifio/rooms)     |
+| <img src="/images/pages/Scijava-icon.png" width="48"/> | [SciJava](SciJava "wikilink") | [scijava](https://gitter.im/orgs/scijava/rooms)   |
 
 ## IRC
 

@@ -18,7 +18,7 @@ description: test description
 {% capture source%}
 {% include github org='slim-curve ' repo='slim-plugin ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='SLIM Curve plugin ' logo='![Slim-curve-icon.png](/images/pages/Slim-curve-icon.png "Slim-curve-icon.png") ' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
+{% include info-box software='ImageJ ' name='SLIM Curve plugin ' logo='<img src="/images/pages/Slim-curve-icon.png" width="64"/> ' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
 [UW-Madison LOCI](http://loci.wisc.edu/) ' maintainer=maintainer filename='slim\_plugin-2.0.0-SNAPSHOT.jar ' source=source latest-version='2.0.0-SNAPSHOT ' status='discontinued in favor of [FLIMJ](FLIMJ "wikilink") ' website='https://slim-curve.github.io/ ' category='[:Category:Analysis](:Category:Analysis "wikilink") ' %}
 
 ## Introduction

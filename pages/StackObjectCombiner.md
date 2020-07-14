@@ -36,9 +36,9 @@ Finally "Actualise" allow you to refresh the folder, for example if you have del
 In the shift box, set the positions and dimensions of the cubes. To shift the meshes at their coordinates in the reconstructed volume, give the values of the shift in X, Y and Z. (See the illustration bellow to see to what each value correspond). X, Y and Z correspond respectively to the width, height and depth of the stack A (don't confuse the width, height and depth of the whole volume that you also have to give here, with the width, height and depth of the volume A that match the values of Shift X, Y and Z).  
 Once these values are set, click on "Shift" to shift all the meshes listed. To shift back the mesh to their original positions, click on "Unshift".  
 The values you give here will be used later to merge the meshes. For automatic merging, you have to give the width, height and depth of the whole volume.  
-![SOC\_cubeDimensions.png](/images/pages/SOC cubeDimensions.png "SOC cubeDimensions.png") ![SOC\_cubeSplitting.png](/images/pages/SOC cubeSplitting.png "SOC cubeSplitting.png")
+<img src="/images/pages/SOC cubeDimensions.png" width="400"/> <img src="/images/pages/SOC cubeSplitting.png" width="500"/>
 
-![SOC\_meshes.png](/images/pages/SOC meshes.png "SOC meshes.png") Meshes listing box  
+<img src="/images/pages/SOC meshes.png" width="250"/> Meshes listing box  
 In this box, the meshes are placed in the list corresponding to the different volumes. To be listed, the prefix of the mesh name must match the volume name. For example, a dendrite that need to be placed in the A volume can be called A\_dendrite.obj (a\_dendrite also work). Note that the "\_" after the letter is necessary for the object to be recognized by the plugin.  
 ![SOC\_autoMerge.png](/images/pages/SOC autoMerge.png "SOC autoMerge.png") Automatic merging box  
 This box contain the different parameters to merge the meshes automatically. The parameters correspond to constants inside the plugin, and changing them can help to resolve malfunctioning of the plugin. Here is a description of the different parameters:  

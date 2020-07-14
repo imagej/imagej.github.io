@@ -37,7 +37,7 @@ Here we summarize some of the Registration plugins in ImageJ.
 <li>Established matches are filtered using the <a href="https://en.wikipedia.org/wiki/Random_sample_consensus">Random Sample Consensus (RANSAC)</a></li>
 <li>The extracted sets of corresponding landmarks and the calculated transformations are used in <a href="https://imagej.net/TrakEM2">TrakEM2</a>, <a href="https://imagej.net/Register_Virtual_Stack_Slices">Register Virtual Stack Slices</a> and <a href="https://imagej.net/BUnwarpJ">BUnwarpJ</a> for image registration.</li>
 </ul></td>
-<td><p><img src="/images/pages/Tem-42-33-f.png" title="fig:Tem-42-33-f.png" alt="Tem-42-33-f.png" width="500" /> MOPS feature correspondences (example 1)</p></td>
+<td><p><img src="/images/pages/Tem-42-33-f.png" width="500"/> MOPS feature correspondences (example 1)</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://imagej.net/Linear_Stack_Alignment_with_SIFT">Linear Stack Alignment with SIFT</a></p></td>
@@ -55,9 +55,7 @@ Here we summarize some of the Registration plugins in ImageJ.
 <li>Invertibility of the deformations is enforced through a consistency restriction</li>
 <li>Get started with the detailed <a href="https://imagej.net/BUnwarpJ#User_Manual">BUnwarpJ user manual</a></li>
 </ul></td>
-<td><figure>
-<img src="/images/pages/BUnwarpJ_scheme.png" title="BUnwarpJ_scheme.png" alt="BUnwarpJ_scheme.png" width="500" /><figcaption>BUnwarpJ_scheme.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/BUnwarpJ scheme.png" width="500"/></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://imagej.net/TrakEM2">TrakEM2</a></p></td>
@@ -66,9 +64,7 @@ Here we summarize some of the Registration plugins in ImageJ.
 <li>Registers floating image tiles to each other using SIFT and global optimization algorithms.</li>
 <li>See the <a href="https://www.ini.uzh.ch/~acardona/trakem2_manual.html#registration">TrakEM2 sser manual section on registration</a></li>
 </ul></td>
-<td><figure>
-<img src="/images/pages/Trakem2-snap.jpg" title="Trakem2-snap.jpg" alt="Trakem2-snap.jpg" width="500" /><figcaption>Trakem2-snap.jpg</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/Trakem2-snap.jpg" width="500"/></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://imagej.net/Register_Virtual_Stack_Slices">Register Virtual Stack Slices</a></p></td>
@@ -77,9 +73,7 @@ Here we summarize some of the Registration plugins in ImageJ.
 <li>The plugin can perform 6 types of image registration techniques: Translation, Rigid (translation + rotation), Similarity (translation + rotation + isotropic scaling), Affine, Elastic (via <a href="https://imagej.net/BUnwarpJ">BUnwarpJ</a> with cubic B-splines), and Moving least squares</li>
 <li>All models are aided by automatically extracted <a href="https://imagej.net/Feature_Extraction">SIFT features</a></li>
 </ul></td>
-<td><figure>
-<img src="/images/pages/Rvs_scheme.png" title="Rvs_scheme.png" alt="Rvs_scheme.png" width="500" /><figcaption>Rvs_scheme.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/Rvs scheme.png" width="500"/></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://imagej.net/Fijiyama">Fijiyama</a></p></td>
@@ -95,9 +89,7 @@ Here we summarize some of the Registration plugins in ImageJ.
 <li>Tested on modalities: MRI, X-ray CT, Photograph</li>
 <li>Limitations: should be avoided for big datasets (more than 15 time points or 1GB+).</li>
 </ul></td>
-<td><figure>
-<img src="/images/pages/Reg_present_1.png" title="Reg_present_1.png" alt="Reg_present_1.png" width="500" /><figcaption>Reg_present_1.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/Reg present 1.png" width="500"/></p></td>
 </tr>
 </tbody>
 </table>

@@ -235,7 +235,7 @@ Many algorithms like *convolutions* require to access pixels outside of an **Int
 
 Which **OutOfBoundsStrategies** to use depends on task you want to perform. For convolutions we suggest the mirror strategy as it introduces the least artifacts. When working on Fourier images, the periodic strategy applies best as it correctly mimics its spatial properties. Random Value strategies might be useful to avoid accidental correlations and constant value strategies are the most performant and might work well for simple operations or to avoid exceptions when accidental writing or reading outside of the Interval occurs.
 
-![OutOfBounds.jpg](/images/pages/OutOfBounds.jpg "OutOfBounds.jpg") *Illustrates the effect of various OutOfBoundsStrategies. (a) shows out of bounds with a constant value, (b) shows a mirroring strategy, (c) shows the periodic strategy, and (d) shows a strategy that uses random values.*
+<img src="/images/pages/OutOfBounds.jpg" width="780"/> *Illustrates the effect of various OutOfBoundsStrategies. (a) shows out of bounds with a constant value, (b) shows a mirroring strategy, (c) shows the periodic strategy, and (d) shows a strategy that uses random values.*
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example5.java ' %}
 
@@ -251,7 +251,7 @@ Typically algorithms provide static methods for simple calling, but they also ha
 
 The Gaussian convolution has its own [ wiki page](Gauss_Package_ImgLib2 "wikilink"). You can apply the Gaussian convolution with different sigmas in any dimension. It will work on any kind **RandomAccessibleInterval**. Below we show a examples of a simple gaussian convolution (variation 1), convolution using a different **OutOfBoundsStrategy** (variation 2), convolution of a part of an **Interval** (variation 3), and convolution of in a lower dimensionality than the image data (variation 4).
 
-![GaussExamples.jpg](/images/pages/GaussExamples.jpg "GaussExamples.jpg") *Shows the result of the four examples for Gaussian convolution. (a) shows a simple Gaussian convolution with sigma=8. (b) shows the same Gaussian convolution but using an OutOfBoundsConstantValue instead. (c) shows the result when convolving part of the image in-place. (d) shows the result when individually convolving 1-dimensional parts on the image.*
+<img src="/images/pages/GaussExamples.jpg" width="780"/> *Shows the result of the four examples for Gaussian convolution. (a) shows a simple Gaussian convolution with sigma=8. (b) shows the same Gaussian convolution but using an OutOfBoundsConstantValue instead. (c) shows the result when convolving part of the image in-place. (d) shows the result when individually convolving 1-dimensional parts on the image.*
 
 #### Example 6a - Gaussian convolution (variation 1 - simple)
 
@@ -287,7 +287,7 @@ In image processing it is sometimes necessary to convolve images with non-separa
 
 *Note that it is useful to normalize the kernel prior to Fourier convolution so that the sum of all pixels is one. Otherwise, the resulting intensities will be increased.*
 
-![FourierConvolution.jpg](/images/pages/FourierConvolution.jpg "FourierConvolution.jpg") *Shows the effect of the Fourier convolution. The left image was convolved with the kernel depicted in the lower left corner, the right panel shows the convolved image. Note that the computation speed does not depend on the size or the shape of the kernel.*
+<img src="/images/pages/FourierConvolution.jpg" width="780"/> *Shows the effect of the Fourier convolution. The left image was convolved with the kernel depicted in the lower left corner, the right panel shows the convolved image. Note that the computation speed does not depend on the size or the shape of the kernel.*
 
 <span style="color:#FF0000">*Important: This source code is only GPLv2\!*</span>
 
@@ -305,7 +305,7 @@ Note that for inverting the kernel we use methods defined for **ComplexType**, a
 
 The final convolution of the inverse template with the image is performed using the FourierConvolution (see example 6b). Note that all possible locations of the template in the image have been tested. The peak in the result image clearly marks the location of the template, while the computation time for the whole operation takes less than a second.
 
-![Fourier.jpg](/images/pages/Fourier.jpg "Fourier.jpg") *Shows the result and intermediate steps of the template matching using the Fourier space. In the upper panel you see the input image as well as the template that we use from matching. Below we show four different views of the Fast Fourier Transform of the template: the power spectrum, the phase spectrum, the real values, and the imaginary values. In the lower panel you see the result of the convolution of the inverse template with the image. The position where the template was located in the image is significantly visible. In the bottom right corner you see the inverse FFT of the inverse kernel.*
+<img src="/images/pages/Fourier.jpg" width="780"/> *Shows the result and intermediate steps of the template matching using the Fourier space. In the upper panel you see the input image as well as the template that we use from matching. Below we show four different views of the Fast Fourier Transform of the template: the power spectrum, the phase spectrum, the real values, and the imaginary values. In the lower panel you see the result of the convolution of the inverse template with the image. The position where the template was located in the image is significantly visible. In the bottom right corner you see the inverse FFT of the inverse kernel.*
 
 <span style="color:#FF0000">*Important: This source code is only GPLv2\!*</span>
 
@@ -321,7 +321,7 @@ Interpolation is a basic operation required in many image processing tasks. In t
 
 In the example we magnify a given real interval in the **RealRandomAccessible** which is based on the interpolation on an **Img** and compare the results of all three interpolation methods.
 
-![Interpolation.jpg](/images/pages/Interpolation.jpg "Interpolation.jpg") *Shows the result for three different interpolators when magnifying a small part of the image by 10x. The nearest neighbor interpolation is computed fastest and is the most versatile as it requires no computation but just a lookout. The result is, however, very pixelated. The linear interpolation produces reasonable results and computes quite fast. The Lanczos interpolation shows visually most pleasing results but also introduces slight artifacts in the background.*
+<img src="/images/pages/Interpolation.jpg" width="779"/> *Shows the result for three different interpolators when magnifying a small part of the image by 10x. The nearest neighbor interpolation is computed fastest and is the most versatile as it requires no computation but just a lookout. The result is, however, very pixelated. The linear interpolation produces reasonable results and computes quite fast. The Lanczos interpolation shows visually most pleasing results but also introduces slight artifacts in the background.*
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example7.java ' %}
 
@@ -337,7 +337,7 @@ In order to display sparse data ImgLib2 currently supports two interpolation sch
 
 In this example we create a certain number of random samples with random intensities inside a certain **Interval**. Using nearest neighbor interpolation we wrap it into a **RealRandomAccessible**, wrap it again into a **RandomAccessible**, define an **Interval** on it and display it. On the same *virtual* data we perform a Gaussian convolution and show it, too.
 
-![SparseImage1.jpg](/images/pages/SparseImage1.jpg "SparseImage1.jpg") *On the left hand side it shows nearest-neighbor rendered random sparse data as created in example 8a. The right hand side shows the result of a Gaussian convolution, run directly on the virtual RandomAccessibleInterval.*
+<img src="/images/pages/SparseImage1.jpg" width="777"/> *On the left hand side it shows nearest-neighbor rendered random sparse data as created in example 8a. The right hand side shows the result of a Gaussian convolution, run directly on the virtual RandomAccessibleInterval.*
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example8a.java ' %}
 
@@ -345,7 +345,7 @@ In this example we create a certain number of random samples with random intensi
 
 In this example we sample an existing image at random locations and render the result using a nearest neighbor interpolation as well as a distance-weighted average of the k nearest neighbors.
 
-![SparseImage2.jpg](/images/pages/SparseImage2.jpg "SparseImage2.jpg")  
+<img src="/images/pages/SparseImage2.jpg" width="638"/>  
 *Shows the result of sparse sampling of an existing image using a varying number of random samples. The upper panel shows the rendering using nearest neighbor interpolation, the lower panel uses an interpolated, distance-weighted value of the k nearest neighbors relative to each sampled location (i.e. each pixel).*
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example8b.java ' %}

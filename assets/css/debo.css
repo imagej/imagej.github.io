@@ -1,11 +1,17 @@
 .thumbnail {
     width: 400px;
-    display: block;
     float: right;
     background-color: #f1f1f3;
     border-radius: 10px;
     margin: 20px;
     padding: 10px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.thumbnail-group {
+    float: right;
     display: flex;
     align-items: center;
     flex-grow: 1;

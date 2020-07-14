@@ -43,9 +43,7 @@ One plugin which is designed to be very powerful, yet easy to use for non-expert
 <li>Provides a labeled result based on the training of a chosen classifier</li>
 <li>Ease of use due to its graphical user interfaces</li>
 </ul></td>
-<td><figure>
-<img src="/images/pages/TWS-GUI-after-training.png" title="TWS-GUI-after-training.png" alt="TWS-GUI-after-training.png" width="500" /><figcaption>TWS-GUI-after-training.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/TWS-GUI-after-training.png" width="500"/></p></td>
 </tr>
 <tr class="odd">
 <td></td>

@@ -112,9 +112,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 <li>Provides real-time GPU-based image processing capabilities, such as image sharpness estimation and sample drift tracking</li>
 <li>Enables live streaming of 3D data in real time over the internet</li>
 </ul></td>
-<td><figure>
-<img src="/images/pages/ClearVolumeInFiji.png" title="ClearVolumeInFiji.png" alt="ClearVolumeInFiji.png" width="500" /><figcaption>ClearVolumeInFiji.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/ClearVolumeInFiji.png" width="500"/></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="Volume_Viewer" title="wikilink">Volume Viewer</a></p></td>
@@ -123,9 +121,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 <li>Non-hardware accelerated volume rendering in different modalities.</li>
 <li><a href="https://imagej.net/plugins/volume-viewer.html">Documentation</a></li>
 </ul></td>
-<td><figure>
-<img src="/images/pages/Volviewer.png" title="Volviewer.png" alt="Volviewer.png" width="500" /><figcaption>Volviewer.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/Volviewer.png" width="500"/></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="SciView" title="wikilink">SciView</a></p></td>
@@ -135,9 +131,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 <li>Integrates <a href="ImageJ2" title="wikilink">ImageJ2</a> functionality, including <a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a></li>
 <li>Aims to serve as a modern replacement to <a href="3D_Viewer" title="wikilink">3D Viewer</a></li>
 </ul></td>
-<td><figure>
-<img src="/images/pages/Sciview-gameoflife.gif" title="Sciview-gameoflife.gif" alt="Sciview-gameoflife.gif" width="500" /><figcaption>Sciview-gameoflife.gif</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/Sciview-gameoflife.gif" width="500"/></p></td>
 </tr>
 </tbody>
 </table>
@@ -190,9 +184,7 @@ Here we summarize some of the 'big data' visualization plugins in ImageJ.
 <li>Reusable software components</li>
 <li>Used as data backend and/or visualization frontend by <a href="https://imagej.net/Multiview-Reconstruction">MultiView Reconstruction</a>, <a href="https://imagej.net/MaMuT">MaMuT</a>, <a href="https://imagej.net/BigWarp">BigWarp</a>, etc.</li>
 </ul></td>
-<td><figure>
-<img src="/images/pages/bdv.png" title="bdv.png" alt="bdv.png" width="500" /><figcaption>bdv.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/Bdv.png" width="500"/></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://imagej.net/Multiview-Reconstruction">MultiView Reconstruction</a></p></td>
@@ -202,9 +194,7 @@ Here we summarize some of the 'big data' visualization plugins in ImageJ.
 <li>Applicable to any form of three or higher dimensional imaging modalities</li>
 <li>Interactive viewing and annotation of the data</li>
 </ul></td>
-<td><figure>
-<img src="/images/pages/spim_application.png" title="spim_application.png" alt="spim_application.png" width="500" /><figcaption>spim_application.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/Spim application.png" width="500"/></p></td>
 </tr>
 </tbody>
 </table>
@@ -229,9 +219,7 @@ Here we summarize the more advanced analysis plugins in ImageJ using the above '
 <li>Combines <a href="https://imagej.net/BigDataViewer">BigDataViewer</a> and <a href="https://imagej.net/TrackMate">TrackMate</a></li>
 <li>Ships <a href="https://imagej.net/TrackScheme">TrackScheme</a>, the lineage browser taken from <a href="https://imagej.net/TrackMate">TrackMate</a></li>
 </ul></td>
-<td><figure>
-<img src="/images/pages/MaMuT.png" title="MaMuT.png" alt="MaMuT.png" width="500" /><figcaption>MaMuT.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/MaMuT.png" width="500"/></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://imagej.net/BigWarp">BigWarp</a></p></td>
@@ -241,9 +229,7 @@ Here we summarize the more advanced analysis plugins in ImageJ using the above '
 <li>Uses a <a href="wikipedia:Thin_plate_spline" title="wikilink">Thin Plate Spline</a> implemented {% include github org='saalfeldlab ' repo='bigwarp ' label='in Java ' %} to build a deformation from point correspondences</li>
 <li>Enables landmark pair placement and displays the effects of the warp on-the-fly</li>
 </ul></td>
-<td><figure>
-<img src="/images/pages/BigWarp.png" title="BigWarp.png" alt="BigWarp.png" width="400" /><figcaption>BigWarp.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/BigWarp.png" width="400"/></p></td>
 </tr>
 </tbody>
 </table>

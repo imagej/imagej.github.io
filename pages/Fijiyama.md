@@ -26,7 +26,7 @@ The plugin **Fijiyama** (Yet Another Matching and Alignment tool for Fiji) is a 
 
 **Versatility:** Fijiyama is a generic tool, efficient at any scale, tissue or imaging modality. It has been tested on the most common imaging approaches in biology and medicine: MRI, X-rays, photography...
 
-![Reg\_present\_1.png](/images/pages/Reg present 1.png "Reg present 1.png")
+<img src="/images/pages/Reg present 1.png" width="700"/>
 
 ## Dataset with DOI for testing purpose
 

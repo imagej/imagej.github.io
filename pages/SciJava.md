@@ -12,7 +12,7 @@ description: test description
 {% capture maintainer%}
 {% include person content='Rueden' %}
 {% endcapture %}
-{% include info-box name='SciJava ' software='SciJava ' logo='![Scijava-logo.png](/images/pages/Scijava-logo.png "Scijava-logo.png") ' author=' [SciJava consortium](https://scijava.org/) ' maintainer=maintainer source=' [on GitHub](https://github.com/scijava) ' status='Active ' website='https://scijava.org/ ' %}SciJava is a collaboration of projects providing software for scientific computing—an effort to cooperate and reuse code when feasible.
+{% include info-box name='SciJava ' software='SciJava ' logo='<img src="/images/pages/Scijava-logo.png" width="128"/> ' author=' [SciJava consortium](https://scijava.org/) ' maintainer=maintainer source=' [on GitHub](https://github.com/scijava) ' status='Active ' website='https://scijava.org/ ' %}SciJava is a collaboration of projects providing software for scientific computing—an effort to cooperate and reuse code when feasible.
 
 ## The SciJava component collection
 

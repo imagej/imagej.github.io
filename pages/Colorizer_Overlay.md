@@ -14,7 +14,7 @@ The Colorizer\_Overlay plugin provides the ability to apply a LUT, colorbar, and
 
 ## Features
 
-![Colorizer\_Overlay.jpg](/images/pages/Colorizer Overlay.jpg "Colorizer Overlay.jpg")
+<img src="/images/pages/Colorizer Overlay.jpg" width="600"/>
 
 The process of generating a colorized overlay is best, but not required, done in three stages.
 

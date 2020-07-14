@@ -91,19 +91,19 @@ This method makes the assumption that when two ridges overlap, it is more likely
 
 If you use this method of overlap resolution, it is recommended that you first tune the Ridge Detection parameters with `Preview` enabled to get a minimal starting set of junction points - so that each ridge matches reality as best as possible. For example:
 
-![Slope\_detection\_low\_sigma.png](/images/pages/Slope detection low sigma.png "Slope detection low sigma.png")
+<img src="/images/pages/Slope detection low sigma.png" width="325"/>
 
 This detection with a sigma of 1.6 produces a set of lines and junctions not suited to slope-based overlap detection.
 
-![Slope\_detection\_high\_sigma.png](/images/pages/Slope detection high sigma.png "Slope detection high sigma.png")
+<img src="/images/pages/Slope detection high sigma.png" width="325"/>
 
 The same image with a sigma of 3.0. These are "real" junction points that will allow reasonable overlap detection via line slope.
 
-![Slope\_detection\_bad.png](/images/pages/Slope detection bad.png "Slope detection bad.png")
+<img src="/images/pages/Slope detection bad.png" width="325"/>
 
 In this image we see poor overlap detection. In this case due to a superfluous junction point at the bottom of one arm, leading to a misdiagnosis of what lines are overlapping.
 
-![Slope\_detection\_success.png](/images/pages/Slope detection success.png "Slope detection success.png")
+<img src="/images/pages/Slope detection success.png" width="325"/>
 
 Successful ridge detection with slope-based overlap detection enabled. Line 134 is selected to illustrate the selection of a complete line despite numerous intersections.
 

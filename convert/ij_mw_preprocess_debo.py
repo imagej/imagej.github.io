@@ -164,6 +164,9 @@ def file_match(match):
     res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|[ ]*thumb[ ]*\|[ ]*([^|]*)[ ]*\]\]$',
                          fix_thumbnail_match, res)
 
+    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|([\d]*)px[ ]*\]\]$',
+                         fix_src_width_match, res)
+
     res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|\|([ ]*[^\]]*[ ]*)\]\]$',
                          fix_simple_image_match, res)
 
@@ -210,6 +213,10 @@ def fix_image_name(src):
     return src.replace("_", " ")
 
 
+def fix_src_width_match(match):
+    return fix_src_width(match.group(1), match.group(2))
+
+
 def fix_src_width_link_match(match):
     return fix_src_link_width(match.group(1), match.group(3), match.group(2))
 
@@ -226,8 +233,16 @@ def fix_src_height_link_match(match):
     return fix_src_link_height(match.group(1), match.group(3), match.group(2))
 
 
+def fix_src_width(src, width):
+    return '<img src="' + fix_image_name(src) + '" width="' + width + '"/>'
+
+
 def fix_src_link_width(src, link, width):
     return '<a href="' + link + '"><img src="' + fix_image_name(src) + '" width="' + width + '"/></a>'
+
+
+def fix_src_height(src, link, height):
+    return '<img src="' + fix_image_name(src) + '" height="' + height + '"/>'
 
 
 def fix_src_link_height(src, link, height):

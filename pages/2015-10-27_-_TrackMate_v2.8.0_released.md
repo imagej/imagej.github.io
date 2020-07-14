@@ -79,7 +79,7 @@ To configure how many threads TrackMate can use, Go the the *Edit \> Options \> 
 
 If you need to capture spot images with a larger radius than what the spots have, set the display radius ratio. This is very useful when you need to inspect a larger spatial context around spots.
 
-![TrackSchemeHonorsRadiusRatio.png](/images/pages/TrackSchemeHonorsRadiusRatio.png "TrackSchemeHonorsRadiusRatio.png")
+<img src="/images/pages/TrackSchemeHonorsRadiusRatio.png" width="600"/>
 
 ### The *Extract track stack* action improved.
 

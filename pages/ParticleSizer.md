@@ -109,7 +109,7 @@ The ParticleSizer supports the [NanoDefiner e-tool](https://labs.inf.fh-dortmund
 
 ## Kaolin, Settings: +Single particle mode
 
-![Kaolin\_ohne\_overlay.png](/images/pages/Kaolin ohne overlay.png "Kaolin ohne overlay.png") ![Kaolin\_overlay.png](/images/pages/Kaolin overlay.png "Kaolin overlay.png") ![Kaolin\_size\_distr.png](/images/pages/Kaolin size distr.png "Kaolin size distr.png")
+![Kaolin\_ohne\_overlay.png](/images/pages/Kaolin ohne overlay.png "Kaolin ohne overlay.png") <img src="/images/pages/Kaolin overlay.png" width="300"/> ![Kaolin\_size\_distr.png](/images/pages/Kaolin size distr.png "Kaolin size distr.png")
 
 # How to cite
 
