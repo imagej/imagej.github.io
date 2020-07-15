@@ -77,4 +77,4 @@ If you have an account on this Wiki, you can easily create new tutorials with th
   - [Profiling Java Code](Profiling_Java_Code "wikilink")
   - [Tips for C++ developers](Tips_for_C++_developers "wikilink")
 
-[Category:Development](Category:Development "wikilink") [Category:Fiji](Category:Fiji "wikilink")
+[Category:Development](Category_Development "wikilink") [Category:Fiji](Category_Fiji "wikilink")

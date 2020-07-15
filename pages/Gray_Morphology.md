@@ -8,10 +8,10 @@ categories: Segmentation,Mathematical_morphology,Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Gray\_Morphology' %}This plugin performs [mathematical morphology](wikipedia:Mathematical_morphology "wikilink") on grayscale images. It only works on [8-bit](8-bit "wikilink") grayscale images.
+{% include component-stats content=':sc.fiji:Gray\_Morphology' %}This plugin performs [mathematical morphology](wikipedia_Mathematical_morphology "wikilink") on grayscale images. It only works on [8-bit](8-bit "wikilink") grayscale images.
 
 For more information on morphological operators in image processing, have a look at [this page](http://homepages.inf.ed.ac.uk/rbf/HIPR2/matmorph.htm).
 
 See also [Gray Morphology at the ImageJ 1.x website](https://imagej.net/plugins/gray-morphology.html).
 
-[Category:Segmentation](Category:Segmentation "wikilink") [Category:Mathematical\_morphology](Category:Mathematical_morphology "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Segmentation](Category_Segmentation "wikilink") [Category:Mathematical\_morphology](Category_Mathematical_morphology "wikilink") [Category:Plugins](Category_Plugins "wikilink")

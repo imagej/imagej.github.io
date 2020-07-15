@@ -44,7 +44,7 @@ Please note that :
       - The best way is to submit a PR.
       - You can also open an issue and post an OME-TIFF file which contains additional OME features you would like to see added to the plugin.
 
-![caption OMEVisual Screenshot](/images/pages/OMEVisual Screenshot.png "caption OMEVisual Screenshot")
+![caption OMEVisual Screenshot](OMEVisual_Screenshot.png "caption OMEVisual Screenshot")
 
 ## Related links
 
@@ -52,8 +52,8 @@ Please note that :
 
 ## Authors
 
-`OMEVisual` has been created by [Hadrien Mary](mailto:hadrien.mary@gmail.com).
+`OMEVisual` has been created by [Hadrien Mary](mailto_hadrien.mary@gmail.com).
 
-This work started in 2016 at the [Gary Brouhard laboratory](http://brouhardlab.mcgill.ca/) at the University of McGill.
+This work started in 2016 at the [Gary Brouhard laboratory](http_//brouhardlab.mcgill.ca/) at the University of McGill.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:OME](Category:OME "wikilink")
+[Category_Plugins](Category_Plugins "wikilink") [Category:OME](Category_OME "wikilink")

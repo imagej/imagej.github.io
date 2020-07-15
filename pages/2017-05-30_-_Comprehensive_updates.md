@@ -36,4 +36,4 @@ Several [legacy Fiji plugins](https://sites.imagej.net/Fiji-Legacy/plugins/) as 
 
 Note that the primary intent of the Fiji-Legacy update site is to be used in combination with a Java-6 installation of Fiji—see "New Fiji Life-Line versions" above. Enabling both the Java-8 and Fiji-Legacy sites will result in some components with overlapping classes—e.g., the batik uber-JAR plus all individual batik components.
 
-[Category:News](Category:News "wikilink") [Category:Fiji](Category:Fiji "wikilink")
+[Category:News](Category_News "wikilink") [Category:Fiji](Category_Fiji "wikilink")

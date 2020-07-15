@@ -17,7 +17,7 @@ While the [Interest Point-based registration](BigStitcher_Registration "wikilink
 
 We offer a variety of ways to manage interest points in **MultiView mode**, which can be found in the main menu under `Interest Points`.
 
-![BigStitcher\_ips\_menu.png](/images/pages/BigStitcher ips menu.png "BigStitcher ips menu.png")
+![BigStitcher\_ips\_menu.png](BigStitcher_ips_menu.png "BigStitcher_ips_menu.png")
 
 ## Interest Point Explorer
 
@@ -31,11 +31,11 @@ If you click **Interest Point Explorer (on/off)**, a new window will open that s
 
 You can right-click on a line in the list and click **Delete** to delete the interest points.
 
-![all interest points as an overlay in BigDataViewer](/images/pages/BigStitcher ips explorer bdv all.png "all interest points as an overlay in BigDataViewer")
+![all interest points as an overlay in BigDataViewer](BigStitcher_ips_explorer_bdv_all.png "all interest points as an overlay in BigDataViewer")
 
-![**corresponding** interest points as an overlay in BigDataViewer](/images/pages/BigStitcher ips explorer bdv corresponding.png "corresponding interest points as an overlay in BigDataViewer")
+![**corresponding** interest points as an overlay in BigDataViewer](BigStitcher_ips_explorer_bdv_corresponding.png "corresponding interest points as an overlay in BigDataViewer")
 
-![BigStitcher\_ips\_explorer\_panel.png](/images/pages/BigStitcher ips explorer panel.png "BigStitcher ips explorer panel.png")
+![BigStitcher\_ips\_explorer\_panel.png](BigStitcher_ips_explorer_panel.png "BigStitcher_ips_explorer_panel.png")
 
 If the BigDataViewer is open, clicking on **\#Detections** or **\#Corresponding** will overly the detected or corresponding interest points in the BigDataViewer. All points will be displayed at once, with the points in the currently displayed image plane drawn in **red** and the points from other planes in **green**.
 
@@ -47,17 +47,17 @@ In the **Manage Interest Points** sub-menu, we offer a few ways of filtering and
 
 This allows you to select **just the corresponding interest points** with a given label and save them under a new name. Clicking this opens a dialog allowing you to select for which points to extract correspondences **(Corresponding interest points)** and give a name to the copied points **(New label)**.
 
-![BigStitcher\_ips\_new\_from\_corresponding.png](/images/pages/BigStitcher ips new from corresponding.png "BigStitcher ips new from corresponding.png")
+![BigStitcher\_ips\_new\_from\_corresponding.png](BigStitcher_ips_new_from_corresponding.png "BigStitcher_ips_new_from_corresponding.png")
 
 ### Show distance histogram
 
 Selecting **Show Distance Histogram ...** and clicking on an interest point label in the sub-menu will display the distribution of **distances to the nearest neighbour** for all interest points with the selected label in the selected views.
 
-![BigStitcher\_ips\_dist\_hist.png](/images/pages/BigStitcher ips dist hist.png "BigStitcher ips dist hist.png")
+![BigStitcher\_ips\_dist\_hist.png](BigStitcher_ips_dist_hist.png "BigStitcher_ips_dist_hist.png")
 
 **Show Relative Distance Histogram ...** allows you to plot the distribution of distances from points with one label **to the nearest neighbor among points of another label**. You will be asked for which **Interest points** to use and **Relative to** which other set distances should be computed.
 
-![BigStitcher\_ips\_dist\_hist\_relative.png](/images/pages/BigStitcher ips dist hist relative.png "BigStitcher ips dist hist relative.png")
+![BigStitcher\_ips\_dist\_hist\_relative.png](BigStitcher_ips_dist_hist_relative.png "BigStitcher_ips_dist_hist_relative.png")
 
 ### Remove by distance
 
@@ -69,7 +69,7 @@ Using **Remove by Distance** or **Remove by relative Distance**, you can filter 
   - **Lower threshold** and **Upper threshold**: the range of distances to keep or remove
   - **Defined range:** whether to **Remove** points with a nearest-neighbor-distance in the given range or **Keep** them (removes all otside the range).
 
-![BigStitcher\_ips\_dist\_remove\_dist.png](/images/pages/BigStitcher ips dist remove dist.png "BigStitcher ips dist remove dist.png")
+![BigStitcher\_ips\_dist\_remove\_dist.png](BigStitcher_ips_dist_remove_dist.png "BigStitcher_ips_dist_remove_dist.png")
 
 ### Remove interactively
 
@@ -79,7 +79,7 @@ Clicking one of these will first ask for the name of the **Interest Points** to 
 
 Clicking **OK** will open the selected projection in a new ImageJ window with the interest points highlighted in **green**. You can then select ROIs using the default tools of ImageJ and **Remove all detections INside ROI** or **Remove all detections OUTside ROI** in the new **Remove detections**-window. You can repeat the process if you want. When you are happy with the result, click **Done** to create the new, thinned-out interest points.
 
-![BigStitcher\_ips\_manual\_remove\_example.png](/images/pages/BigStitcher ips manual remove example.png "BigStitcher ips manual remove example.png")
+![BigStitcher\_ips\_manual\_remove\_example.png](BigStitcher_ips_manual_remove_example.png "BigStitcher_ips_manual_remove_example.png")
 
 ## Visualize Interest Points
 
@@ -94,6 +94,6 @@ In the dialog, you can set the following parameters:
 
 Clicking **OK** will produce an interest point rendering *for each selected view*.
 
-![BigStitcher\_ips\_vis\_dialog.png](/images/pages/BigStitcher ips vis dialog.png "BigStitcher ips vis dialog.png")
+![BigStitcher\_ips\_vis\_dialog.png](BigStitcher_ips_vis_dialog.png "BigStitcher_ips_vis_dialog.png")
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")

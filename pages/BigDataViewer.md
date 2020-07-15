@@ -52,7 +52,7 @@ For example, open the sample image {% include bc content='File | Open Samples | 
 
 Assuming you downloaded the *drosophila melanogaster* example dataset, you should see something like this:
 
-![bdv-bdv-start.png](/images/pages/Bdv-bdv-start.png "bdv-bdv-start.png")
+![bdv-bdv-start.png](bdv-bdv-start.png "bdv-bdv-start.png")
 
 On startup, the middle slice of the first source (angle) is shown. You can browse the stack using the keyboard or the mouse. To get started, try the following:
 
@@ -92,7 +92,7 @@ The axis-rotation commands (e.g., {% include key content='press|Shift|X' %}) rot
 
 Using {% include key content='press|I' %} you can switch between nearest-neighbor and trilinear interpolation schemes. The difference is clearly visible when you zoom in such that individual source pixels are visible.
 
-![bdv-interpolation.png](/images/pages/Bdv-interpolation.png "bdv-interpolation.png")
+![bdv-interpolation.png](bdv-interpolation.png "bdv-interpolation.png")
 
 Trilinear interpolation results in smoother images but is a bit more expensive computationally. Nearest-neighbor is faster but looks more pixelated.
 
@@ -102,7 +102,7 @@ BigDataViewer datasets typically contain more than one source. For a SPIM sequen
 
 Select {% include bc content='Settings | Visibility & Grouping'%} from the BigDataViewer menu to bring up a dialog to control source visibility. You can also bring up this dialog by the shortcut {% include key content='press|F6' %}.
 
-![bdv-visibility.png](/images/pages/Bdv-visibility.png "bdv-visibility.png")
+![bdv-visibility.png](bdv-visibility.png "bdv-visibility.png")
 
 Using the current source checkboxes (A in the figure above), you can switch between available sources. The first ten sources can also be made current by the number keys {% include key content='press|1' %} through {% include key content='press|0' %} in the main BigDataViewer window.
 
@@ -110,7 +110,7 @@ To view multiple sources overlaid at the same time, switch to *fused mode* using
 
 Whether in normal or fused mode, the (unselectable) boxes (D) provide feedback on which sources are actually currently displayed. Also the main window provides feedback:
 
-![bdv-overlays-1.png](/images/pages/Bdv-overlays-1.png "bdv-overlays-1.png")
+![bdv-overlays-1.png](bdv-overlays-1.png "bdv-overlays-1.png")
 
 In the top-left corner an overview of the dataset is displayed (E). Visible sources are displayed as green/magenta wireframe boxes, invisible sources are displayed as grey wireframe boxes. The dimensions of the boxes illustrate the size of the source images. The filled grey rectangle illustrates the screen area, i.e., the portion of the currently displayed slice. For the visible sources, the part that is in front of the screen is green, the part that is behind the screen is magenta.
 
@@ -124,7 +124,7 @@ Often there are sets of sources for which visibility is logically related. For e
 
 Source grouping is handled in the visibility and grouping dialog, too (menu {% include bc content='Settings | Visibility & Grouping'%} or shortcut {% include key content='press|F6' %}).
 
-![bdv-grouping.png](/images/pages/Bdv-grouping.png "bdv-grouping.png")
+![bdv-grouping.png](bdv-grouping.png "bdv-grouping.png")
 
 The lower half of the dialog is dedicated to grouping. There are 10 groups available. They are named "group 1" through "group 10" initially, but the names can be edited (A).
 
@@ -136,13 +136,13 @@ Groups can be made current and made active or inactive using the checkboxes (D).
 
 If grouping is enabled, the name of the current group is shown at the top of the main window.
 
-![bdv-overlays-2.png](/images/pages/Bdv-overlays-2.png "bdv-overlays-2.png")
+![bdv-overlays-2.png](bdv-overlays-2.png "bdv-overlays-2.png")
 
 ### Adjusting Brightness and Color
 
 To change the brightness, contrast, or color of particular sources select {% include bc content='Settings | Brightness & Color'%} or press the shortcut {% include key content='press|S' %}. This brings up the brightness and color settings dialog.
 
-![bdv-brightness-1.png](/images/pages/Bdv-brightness-1.png "bdv-brightness-1.png")
+![bdv-brightness-1.png](bdv-brightness-1.png "bdv-brightness-1.png")
 
 The *min* and *max* sliders (A) can be used to adjust the brightness and contrast. They represent minimum and maximum source values that are mapped to the display range. For the screenshot above, this means that source intensity 200 (and everything below) is mapped to black. Source intensity 862 (and everything above) is mapped to white.
 
@@ -150,19 +150,19 @@ When a new dataset is opened, BigDataViewer tries to estimate good initial *min*
 
 BigDataViewer datasets are currently always stored with 16 bits per pixel, however the data does not always exploit the full value range 0 ... 65535. The example drosophila dataset uses values in the range of perhaps 0 ... 1000, except for the much brighter fiducial beads around the specimen. The *min* and *max* sliders in this case are a bit fiddly to use, because they span the full 16 bit range with the interesting region squeezed into the first few pixels. This can be remedied by adjusting the range of the sliders. For this, click on the \>\> dialog button (B). This shows two additional input fields, where the range of the sliders can be adjusted. In the following screenshot, the leftmost value of the slider range has been set to 0 and the rightmost value to 2000, making the sliders much more useful.
 
-![bdv-brightness-2.png](/images/pages/Bdv-brightness-2.png "bdv-brightness-2.png")
+![bdv-brightness-2.png](bdv-brightness-2.png "bdv-brightness-2.png")
 
 So far, all sources share the same *min* and *max* settings. However, these can also be adjusted for each individual source or for groups of sources. The checkboxes (C) assign sources to *min-max-groups*. There is one checkbox per source. In the example drosophila dataset there are two sources, therefore there are two checkboxes. The active checkboxes indicate for which sources the *min* and *max* values apply.
 
 If you uncheck one of the sources, it will move to its own new *min-max-group*. Now you can adjust the values for each source individually. The sliders of new group are initialized as a copy of the old group.
 
-![bdv-brightness-3.png](/images/pages/Bdv-brightness-3.png "bdv-brightness-3.png")
+![bdv-brightness-3.png](bdv-brightness-3.png "bdv-brightness-3.png")
 
 Sources can be assigned to *min-max-groups* by checking/unchecking the checkboxes. The rule is that every source is always assigned to exactly one min-max-group. Thus, if you activate an unchecked source in a min-max-group, this will remove the source from its previous min-max-group and add it to the new one. Unchecking a source will remove it from its min-max-group and move it to a new one. Min-max-groups that become empty are removed. To go back to a single min-max-group in the example, you would simply move all sources to the same group.
 
 Finally, at the bottom of the dialog (D) colors can be assigned to sources. There is one color button per source (two in the example). Clicking a button brings up a color dialog, where you can choose a color for that particular source. In the following screenshot, the sources have been colored magenta and green.
 
-![bdv-brightness-4.png](/images/pages/Bdv-brightness-4.png "bdv-brightness-4.png")
+![bdv-brightness-4.png](bdv-brightness-4.png "bdv-brightness-4.png")
 
 ### Bookmarking Locations and Orientations
 
@@ -172,7 +172,7 @@ Each bookmark has an assigned shortcut key, i.e., you can have bookmarks "a", "A
 
 BigDataViewer provides visual feedback for setting and recalling bookmarks. When you press {% include key content='press|Shift|B' %}, the message "**set bookmark:**" appears in the lower right corner of the main window, prompting to press the bookmark shortcut next.
 
-![bdv-set-bookmark.png](/images/pages/Bdv-set-bookmark.png "bdv-set-bookmark.png")
+![bdv-set-bookmark.png](bdv-set-bookmark.png "bdv-set-bookmark.png")
 
 Now press the key you want to use as a shortcut, for example {% include key content='press|A' %}. The prompt message will change to "**set bookmark: a**" indicating that you have set a bookmark with shortcut {% include key content='press|A' %}. Instead of pressing a shortcut key you can abort using {% include key content='press|esc' %}.
 
@@ -196,7 +196,7 @@ Settings files assume that a specific number of sources are present, therefore s
 
 BigDataViewer may be great for looking at your data, but what if you want to apply other ImageJ algorithms or plugins to the images? You can open individual images from a dataset as ImageJ stacks using {% include bc content='File | Import | BigDataViewer...'%} from the Fiji menu.
 
-![bdv-import.png](/images/pages/Bdv-import.png "bdv-import.png")
+![bdv-import.png](bdv-import.png "bdv-import.png")
 
 Select the XML file of a dataset, then choose the time-point and source (setup) index of the image you want to open. If you enable the *"open as virtual stack"* checkbox the image will open as an ImageJ *virtual stack*. This means that the opened image is backed by BigDataViewer's cache and slices are loaded on demand. Without *"open as virtual stack"*, the full image will be loaded into memory. Virtual stacks will open a bit faster but switching between slices may be less instantaneous.
 
@@ -221,7 +221,7 @@ A dataset comprises an XML file to store meta-data and one or more HDF5 files to
 
 Each *view* has one corresponding image volume which is stored in the HDF5 file. Raw image volumes are stored as multi-resolution pyramids: In addition to the original resolution, several progressively down-scaled resolutions (mipmaps) are stored. This serves two purposes. First, using mipmaps minimizes aliasing effects when rendering a zoomed-out view of the dataset\~\\cite{Williams:1983it}. Second, and more importantly, using mipmaps reduces data access time and thus increases the perceived responsiveness for navigation. Low-resolution mipmaps take up less memory and therefore load faster from disk. New chunks of data must be loaded when the user browses to a part of the dataset that is not currently cached in memory. In this situation, BigDataViewer can rapidly load and render low-resolution data, filling in high resolution detail later as it becomes available. This multi-resolution pyramid scheme is illustrated in the following figure.
 
-![bdvTikz-pyramidblocks.png](/images/pages/BdvTikz-pyramidblocks.png "bdvTikz-pyramidblocks.png")
+![bdvTikz-pyramidblocks.png](bdvTikz-pyramidblocks.png "bdvTikz-pyramidblocks.png")
 
 Each raw image volume is stored in multiple resolutions, the original resolution (left) and successively smaller, downsampled versions (right). Each resolution is stored in a chunked representation, split into small 3D blocks.
 
@@ -229,7 +229,7 @@ Each level of the multi-resolution pyramid is stored as a *chunked multi-dimensi
 
 Rendering a virtual slice requires data contained within a small subset of chunks. Only chunks that touch the slice need to be loaded, as illustrated in the following Figure.
 
-![bdvTikz-sliceblocks.png](/images/pages/BdvTikz-sliceblocks.png "bdvTikz-sliceblocks.png")
+![bdvTikz-sliceblocks.png](bdvTikz-sliceblocks.png "bdvTikz-sliceblocks.png")
 
 When rendering a slice (schematically illustrated by the blue line) the data of only a small subset of blocks is required. In the original resolution 5 blocks are required, while only 2, respectively 1 block is required for lower resolutions. Therefore, less data needs to be loaded to render a low-resolution slice. This allows low-resolution versions to be loaded and rendered rapidly. High-resolution detail is filled in when the user stops browsing to view a certain slice for an extended period of time.
 
@@ -237,7 +237,7 @@ Each of these chunks, however, is loaded in full, although only a subset of voxe
 
 All loaded chunks are cached in RAM. During interactive navigation, subsequent slices typically intersect with a similar set of chunks because their pose has changed only moderately, i.e.. cached data are re-used. Only chunks that are not currently in the cache need to be loaded from disk, as illustrated in the following Figure.
 
-![bdvTikz-cacheblocks.png](/images/pages/BdvTikz-cacheblocks.png "bdvTikz-cacheblocks.png")
+![bdvTikz-cacheblocks.png](bdvTikz-cacheblocks.png "bdvTikz-cacheblocks.png")
 
 For rendering the slice indicated by the red line, only the red blocks need to be loaded. The blue blocks are already cached from rendering the blue slice before. Combined with the multi-resolution mipmap representation, this chunking and caching scheme allows for fluid interactive browsing of very large datasets.
 
@@ -255,7 +255,7 @@ You can export any dataset to BigDataViewer format by opening it as a stack in F
 
 To get started, let's open one of the ImageJ sample images by {% include bc content='File | Open Samples | T1 Head (2.4M, 16-bits)'%}. Selecting {% include bc content='Plugins | BigDataViewer | Export Current Image as XML/HDF5'%} brings up the following dialog.
 
-![bdv-export-stack.png](/images/pages/Bdv-export-stack.png "bdv-export-stack.png")
+![bdv-export-stack.png](bdv-export-stack.png "bdv-export-stack.png")
 
 Parts (A) and (C) of the dialog are optional, so we will explain (B) and (D) first.
 
@@ -269,7 +269,7 @@ In part (B) of the dialog the *value range* of the image must be specified. BigD
 
 After you have specified the value range and selected and export path, press *OK* to export the dataset. Messages about the progress of the operation are displayed in the ImageJ Log window.
 
-![bdv-export-stack-log.png](/images/pages/Bdv-export-stack-log.png "bdv-export-stack-log.png")
+![bdv-export-stack-log.png](bdv-export-stack-log.png "bdv-export-stack-log.png")
 
 When the export is done you can browse the dataset in the BigDataViewer by opening the exported XML file.
 
@@ -304,13 +304,13 @@ We assume that the user has already created an XML/TIFF dataset, as explained in
 
 To convert the dataset to HDF5, select {% include bc content='Plugins | Multiview Reconstruction | Resave | As HDF5'%} form the Fiji menu. This brings up the following dialog.
 
-![bdv-mvr-export1b.png](/images/pages/Bdv-mvr-export1b.png "bdv-mvr-export1b.png")
+![bdv-mvr-export1b.png](bdv-mvr-export1b.png "bdv-mvr-export1b.png")
 
 At the top of the dialog, select the XML file of the dataset you want to convert to HDF5. In the lower part of the dialog, you can select which parts of the dataset you want to resave. For example, assume that the source dataset contains the raw image stacks from the microscope, as well as deconvolved versions. You might decide that you do not need the raw data as HDF5, so you can select only the deconvolved channels. Once you have determined what you want to convert press *OK*.
 
 This brings up the next dialog, in which you need to specify the export path and options.
 
-![bdv-mvr-export2.png](/images/pages/Bdv-mvr-export2.png "bdv-mvr-export2.png")
+![bdv-mvr-export2.png](bdv-mvr-export2.png "bdv-mvr-export2.png")
 
 These parameters are the same as discussed in the previous section: If you want to specify custom mipmap settings, you can do so in the top part of the dialog. Below that, choose whether you want to compress the image data. For the export path, specify the XML file to which you want to export the dataset. Press *OK* to start the export.
 
@@ -328,4 +328,4 @@ A multi-view dataset consisting of 715 six angle time points (altogether 2.1 Ter
 
   - {% include publication content='BigDataViewer' %}
 
-[Category:Visualization](Category:Visualization "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Visualization](Category_Visualization "wikilink") [Category:Citable](Category_Citable "wikilink")

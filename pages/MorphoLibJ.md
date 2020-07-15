@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='ijpb ' repo='MorphoLibJ ' %}
 {% endcapture %}
-{% include info-box name='MorphoLibJ ' software='IJPB-plugins ' update-site='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Analysis](:Category:Analysis "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink") ' %}MorphoLibJ is a collection of [mathematical morphology](wikipedia:Mathematical_morphology "wikilink") methods and **plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital Imaging lab](http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/).
+{% include info-box name='MorphoLibJ ' software='IJPB-plugins ' update-site='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Analysis](_Category_Analysis "wikilink"), [Filtering](_Category_Filtering "wikilink"), [Segmentation](_Category_Segmentation "wikilink"), [Mathematical morphology](_Category_Mathematical_morphology "wikilink") ' %}MorphoLibJ is a collection of [mathematical morphology](wikipedia_Mathematical_morphology "wikilink") methods and **plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital Imaging lab](http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/).
 
 The library implements several functionalities that were missing in ImageJ, and that were not or only partially covered by other plugins. Namely:
 
@@ -120,7 +120,7 @@ Similar results may be obtained for enhancing dark curvilinear structures, by us
 
 ### Plugin Usage
 
-![MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element.](/images/pages/MorphoLibJ-mosaic-filters.png "MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element.") The collection of morphological filters is available in the {% include bc content='Plugins | MorphoLibJ'%} menu. Filters are **implemented both for 2D and 3D images**, and work for binary, gray level or color (RGB) images.
+![MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element.](MorphoLibJ-mosaic-filters.png "MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element.") The collection of morphological filters is available in the {% include bc content='Plugins | MorphoLibJ'%} menu. Filters are **implemented both for 2D and 3D images**, and work for binary, gray level or color (RGB) images.
 
 #### Planar images
 
@@ -370,7 +370,7 @@ The **global geometry** of particles in 2D images can be characterized with the 
 
   - **Label**: the label of the particle measured on the current line (it can be different from the row number if some labels do no exist in original image).
   - **Area**: the number of pixels within each region, multiplied by the area of each pixel.
-  - **Perimeter**: an estimate of the perimeter, using the [Crofton formula](wikipedia:Crofton_formula "wikilink").
+  - **Perimeter**: an estimate of the perimeter, using the [Crofton formula](wikipedia_Crofton_formula "wikilink").
   - **Circularity** the normalized ratio of area by the square of the perimeter: \(4\pi\cdot A/p^{2}\). The value should be comprised between 0 (very elongated) and 1 (close to circular). Values superior to 1 may appear due to discretization effect.
   - **Elongation**: the normalized ratio of the square of the perimeter by the area : \(p^{2}/\left(4\pi\cdot A\right)\), corresponding to the inverse of the circularity. The values range from 1 (round), and increase with elongation of the particle.
 
@@ -408,7 +408,7 @@ The plugin calculating these measurements is found under {% include bc content='
   - **Label**: the label of the particle measured on the current line (it can be different from the row number if some labels do no exist in original image).
   - **Bounding box**: the minimal and maximal coordinates in each direction for each label.
   - **Volume**: computes the number of voxels comprising the particle, multiplied by the volume of an individual voxel.
-  - **Surface area**: the surface area computed using a discretized version of the [Crofton formula](wikipedia:Crofton_formula "wikilink"), that computes intersections with line grids of various orientations (currently either 3 or 13).
+  - **Surface area**: the surface area computed using a discretized version of the [Crofton formula](wikipedia_Crofton_formula "wikilink"), that computes intersections with line grids of various orientations (currently either 3 or 13).
   - **Sphericity index**: defined as \(36\pi V^{2}/S^{3}\).
   - **Inertia ellipse / ellipsoid**: returns the centroid (center of gravity) as well as the size and the orientation of the inertia ellipse or ellipsoid of each particle. Radii are sorted in decreasing order. Angles are given in degrees, and correspond to the azimut ("yaw"), the elevation ("pitch"), and the roll around the main axis.
 
@@ -818,7 +818,7 @@ This program is **free software**; you can redistribute it and/or modify it unde
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Analysis](Category:Analysis "wikilink") [Category:Filtering](Category:Filtering "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Mathematical\_morphology](Category:Mathematical_morphology "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Analysis](Category_Analysis "wikilink") [Category:Filtering](Category_Filtering "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Mathematical\_morphology](Category_Mathematical_morphology "wikilink") [Category:Citable](Category_Citable "wikilink")
 
 1.  
 2.  {% include cite content='journal' title='Directional morphological filtering ' author='Soille, Pierre and Talbot, Hugues ' publisher='IEEE ' year='2001 ' volume='23 ' number='11 ' pages='1313-1329 ' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence ' doi='10.1109/34.969120 ' %}
@@ -835,7 +835,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 8.  {% include cite content='conference' title='Measuring the length of a curve ' author='Moran, PAP ' journal='Biometrika ' year='1966 ' volume='53 ' number='3-4 ' pages='359-364 ' doi='10.1093/biomet/53.3-4.359 ' URL='http://biomet.oxfordjournals.org/content/53/3-4/359.abstract ' %}
 
 9.  
-10. {% include cite content='journal' title='Efficient N-Dimensional surface estimation using [Crofton formula](wikipedia:Crofton_formula "wikilink") and run-length encoding ' author='Lehmann, Gaetan and Legland, David ' journal='Insight Journal ' year='2012 ' pages='1-11 ' url='http://hdl.handle.net/10380/3342 ' %}
+10. {% include cite content='journal' title='Efficient N-Dimensional surface estimation using [Crofton formula](wikipedia_Crofton_formula "wikilink") and run-length encoding ' author='Lehmann, Gaetan and Legland, David ' journal='Insight Journal ' year='2012 ' pages='1-11 ' url='http://hdl.handle.net/10380/3342 ' %}
 
 11. 
 12. 

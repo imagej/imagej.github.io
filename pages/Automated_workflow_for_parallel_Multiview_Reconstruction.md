@@ -8,7 +8,7 @@ categories: Transform,Registration,Deconvolution
 description: test description
 ---
 
-{% include info-box name='An automated workflow for parallel processing of large multiview SPIM recordings ' software='Fiji ' author=' [Christopher Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101) , Peter Steinbach, Pavel Tomancak ' maintainer=' [Christopher Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101) ' released='July 2015 ' latest-version='March 2016 ' category='[Transform](:Category:Transform "wikilink"), [Registration](:Category:Registration "wikilink"), [Deconvolution](:Category:Deconvolution "wikilink") ' source=' [on github](https://github.com/mpicbg-scicomp/snakemake-workflows) ' %}
+{% include info-box name='An automated workflow for parallel processing of large multiview SPIM recordings ' software='Fiji ' author=' [Christopher Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101) , Peter Steinbach, Pavel Tomancak ' maintainer=' [Christopher Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101) ' released='July 2015 ' latest-version='March 2016 ' category='[Transform](_Category_Transform "wikilink"), [Registration](_Category_Registration "wikilink"), [Deconvolution](_Category_Deconvolution "wikilink") ' source=' [on github](https://github.com/mpicbg-scicomp/snakemake-workflows) ' %}
 
 # Citation
 
@@ -639,4 +639,4 @@ Every cluster is different both in terms of the used hardware and the software r
 
 Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system running on the MPI-CBG cluster is LSF. The basic principles of job submission are the same across queuing systems, but the exact syntax will of course differ.
 
-[Category:Transform](Category:Transform "wikilink") [Category:Registration](Category:Registration "wikilink") [Category:Deconvolution](Category:Deconvolution "wikilink")
+[Category:Transform](Category_Transform "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:Deconvolution](Category_Deconvolution "wikilink")

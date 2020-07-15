@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-![ right | 256px](/images/pages/Loci-logo.png " right | 256px") This account is used to manage the [LOCI update site](http://sites.imagej.net/LOCI/). See also {% include list-of-update-sites%}
+![ right | 256px](Loci-logo.png " right | 256px") This account is used to manage the [LOCI update site](http://sites.imagej.net/LOCI/). See also {% include list-of-update-sites%}
 .
 
 To activate it:

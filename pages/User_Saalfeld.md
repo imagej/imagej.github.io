@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [User:Axtimwalde](User:Axtimwalde "wikilink")
+1.  REDIRECT [User:Axtimwalde](User_Axtimwalde "wikilink")

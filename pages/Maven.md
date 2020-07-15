@@ -14,7 +14,7 @@ description: test description
   - [Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)' %}
 
 {% include develop-menu content='tools' %}{% include minibox logo='Maven-icon.png ' size='51px ' blurb='  
-"""Apache Maven""" is a [convention over configuration](wikipedia:Convention_over_configuration "wikilink") build automation tool. ' %}[ImageJ](ImageJ "wikilink"), [Fiji](Fiji "wikilink") and other [SciJava](SciJava "wikilink") projects use [Maven](https://maven.apache.org/) for their project infrastructure.
+"""Apache Maven""" is a [convention over configuration](wikipedia_Convention_over_configuration "wikilink") build automation tool. ' %}[ImageJ](ImageJ "wikilink"), [Fiji](Fiji "wikilink") and other [SciJava](SciJava "wikilink") projects use [Maven](https://maven.apache.org/) for their project infrastructure.
 
 Maven artifacts are published to the [SciJava Maven repository](SciJava_Maven_repository "wikilink").
 
@@ -169,4 +169,4 @@ When in doubt, [contact the community](Help "wikilink") with your questions.
   - [Maven: The Complete Reference](https://books.sonatype.com/mvnref-book/reference/index.html)
   - [Maven by Example](https://books.sonatype.com/mvnex-book/reference/index.html)
 
-[Category:Development](Category:Development "wikilink") [Category:Maven](Category:Maven "wikilink")
+[Category:Development](Category_Development "wikilink") [Category:Maven](Category_Maven "wikilink")

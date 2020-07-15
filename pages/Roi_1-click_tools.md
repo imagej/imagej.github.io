@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='LauLauThom ' repo='Fiji-RoiClickTools ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='ROI 1-click tools ' author=author maintainer=maintainer update-site='ROI 1-click tools ' source=source released='2019 ' status='active ' category='[Analysis](:Category:Analysis "wikilink") ' %}
+{% include info-box software='ImageJ ' name='ROI 1-click tools ' author=author maintainer=maintainer update-site='ROI 1-click tools ' source=source released='2019 ' status='active ' category='[Analysis](_Category_Analysis "wikilink") ' %}
 
 # New versions
 
@@ -63,4 +63,4 @@ Thomas, LS; Gehrig, J (2020)
 ImageJ/Fiji ROI 1-click tools for rapid manual image annotations and measurements  
 microPublication Biology. 10.17912/micropub.biology.000215
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Update Sites](Category:Update_Sites "wikilink") [Category:Macro Tools](Category:Macro_Tools "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Update Sites](Category_Update_Sites "wikilink") [Category:Macro Tools](Category_Macro_Tools "wikilink") [Category:Citable](Category_Citable "wikilink")

@@ -10,15 +10,15 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Saalfeld' %} ([1](mailto:saalfeld@mpi-cbg.de))
+{% include person content='Saalfeld' %} ([1](mailto_saalfeld@mpi-cbg.de))
 {% endcapture %}
 
 {% capture maintainer%}
 {% include person content='Saalfeld' %}
 {% endcapture %}
-{% include info-box name='Integral Image Filters ' software='Fiji ' author=author maintainer=maintainer source=' [GitHub](https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/integral) ' released='March 21<sup>st</sup>, 2011 ' latest-version='February 22<sup>nd</sup>, 2012 ' status='stable, active ' category='[Plugins](:Category:Plugins "wikilink"), [Filtering](:Category:Filtering "wikilink") ' %}{% include youtube url='https://www.youtube.com/embed/p1mhZqj2VTY'%}
+{% include info-box name='Integral Image Filters ' software='Fiji ' author=author maintainer=maintainer source=' [GitHub](https_//github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/integral) ' released='March 21<sup>st</sup>, 2011 ' latest-version='February 22<sup>nd</sup>, 2012 ' status='stable, active ' category='[Plugins](_Category_Plugins "wikilink"), [Filtering](_Category_Filtering "wikilink") ' %}{% include youtube url='https://www.youtube.com/embed/p1mhZqj2VTY'%}
 
-Integral images have been introduced in by Crow (1984)\[1\] as a technique to improve texture rendering speed at multiple scales in perspective projections. The technique has since then been used for a number of applications. The most popular examples are fast normalized cross-correlation\[2\], the [Viola-Jones object detection framework](wikipedia:Viola%E2%80%93Jones_object_detection_framework "wikilink")\[3\], and the [Speeded Up Robust Feature (SURF)](wikipedia:SURF "wikilink") transform\[4\]. In Fiji, we currently use Integral Images for a number of basic statistic block filters.
+Integral images have been introduced in by Crow (1984)\[1\] as a technique to improve texture rendering speed at multiple scales in perspective projections. The technique has since then been used for a number of applications. The most popular examples are fast normalized cross-correlation\[2\], the [Viola-Jones object detection framework](wikipedia_Viola%E2%80%93Jones_object_detection_framework "wikilink")\[3\], and the [Speeded Up Robust Feature (SURF)](wikipedia_SURF "wikilink") transform\[4\]. In Fiji, we currently use Integral Images for a number of basic statistic block filters.
 
 ## Basic Block Statistics with Integral Images (Summed-Area Tables)
 
@@ -122,7 +122,7 @@ with
 
 <references />
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Filtering](Category:Filtering "wikilink") [Category:Integral Image](Category:Integral_Image "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Filtering](Category_Filtering "wikilink") [Category:Integral Image](Category_Integral_Image "wikilink")
 
 1.  {% include cite content='conference' last='Crow ' first='Franklin C. ' title='Summed-area tables for texture mapping ' booktitle='Proceedings of the 11<sup>th</sup> annual conference on Computer graphics and interactive techniques ' series='SIGGRAPH "84 ' year='1984 ' pages='207–212 ' publisher='ACM ' address='New York, NY, USA ' isbn='0-89791-138-5 ' url='http://doi.acm.org/10.1145/800031.808600 ' doi='10.1145/800031.808600 ' %}
 2.  {% include cite content='conference' first='J. P. ' last='Lewis ' booktitle='Vision Interface ' volume='95 ' pages='120–123 ' publisher='Canadian Image Processing and Pattern Recognition Society ' title='Fast template matching ' year='1995 ' %}

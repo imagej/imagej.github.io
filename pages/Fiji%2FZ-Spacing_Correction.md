@@ -10,13 +10,13 @@ description: test description
 
 
 {% capture author%}
-Philipp Hanslovsky, {% include person content='Saalfeld' %} ([1](mailto:saalfelds@janelia.hhmi.org))
+Philipp Hanslovsky, {% include person content='Saalfeld' %} ([1](mailto_saalfelds@janelia.hhmi.org))
 {% endcapture %}
 
 {% capture maintainer%}
 Philipp Hanslovsky, {% include person content='Saalfeld' %}
 {% endcapture %}
-{% include info-box name='Z-Spacing Correction ' software='Fiji ' author=author maintainer=maintainer source='https://github.com/saalfeldlab/em-thickness-estimation ' released='April 16<sup>th</sup>, 2015 ' latest-version='April 16<sup>th</sup>, 2015 ' status='experimental, active ' category='[Plugins](:Category:Plugins "wikilink"), [TrakEM2](:Category:TrakEM2 "wikilink"), [Transform](:Category:Transform "wikilink") ' %}
+{% include info-box name='Z-Spacing Correction ' software='Fiji ' author=author maintainer=maintainer source='https_//github.com/saalfeldlab/em-thickness-estimation ' released='April 16<sup>th</sup>, 2015 ' latest-version='April 16<sup>th</sup>, 2015 ' status='experimental, active ' category='[Plugins](_Category_Plugins "wikilink"), [TrakEM2](_Category_TrakEM2 "wikilink"), [Transform](_Category_Transform "wikilink") ' %}
 
 ## Citation
 
@@ -43,4 +43,4 @@ Serial section Microscopy, using either optical or physical sectioning, is an es
   - Allow reordering  
     Specifies whether layers/ sections can change their relative order in the series.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:TrakEM2](Category:TrakEM2 "wikilink") [Category:Transform](Category:Transform "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:TrakEM2](Category_TrakEM2 "wikilink") [Category:Transform](Category_Transform "wikilink") [Category:Citable](Category_Citable "wikilink")

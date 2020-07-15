@@ -11,4 +11,4 @@ description: test description
 By using DiameterJ, the mean diameter of the fibers of the SEM images I analyse become negative, I would like to know the reason why this happens.
 
   -   
-    Please post support questions on the [ImageJ forum](http://forum.imagej.net/). See the [Help](Help "wikilink") page for details. —[Rueden](User:Rueden "wikilink") ([talk](User_talk:Rueden "wikilink")) 14:50, 9 December 2015 (CST)
+    Please post support questions on the [ImageJ forum](http://forum.imagej.net/). See the [Help](Help "wikilink") page for details. —[Rueden](User_Rueden "wikilink") ([talk](User_talk_Rueden "wikilink")) 14:50, 9 December 2015 (CST)

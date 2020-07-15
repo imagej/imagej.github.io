@@ -531,4 +531,4 @@ try {
 }
 ```
 
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Scripting](Category_Scripting "wikilink")

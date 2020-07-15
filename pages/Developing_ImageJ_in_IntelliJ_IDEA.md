@@ -63,4 +63,4 @@ When renaming a classname which was annotated with SciJava's `@Plugin` annotatio
 
 The error may be related to some caching mechanism in the IDE. The solution is to clear the caches, e.g. by running `mvn clean` from the maven panel.
 
-[Category:Development](Category:Development "wikilink") [Category:IDEs](Category:IDEs "wikilink")
+[Category:Development](Category_Development "wikilink") [Category:IDEs](Category_IDEs "wikilink")

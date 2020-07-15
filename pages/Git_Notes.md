@@ -390,4 +390,4 @@ git log deadbeef^..deadbeef^2
 
 Explanation: `deadbeef` is a merge commit, so its first parent (`deadbeef^`, can also be written as `deadbeef^1`) was the current `HEAD` when the merge was performed, and the second parent (`deadbeef^2`) is the tip of the branch which was merged. The argument `A..B` is short form of `^A B`, i.e. all commits reachable from `B` excluding those which are also reachable from `A`.
 
-[Category:Git](Category:Git "wikilink")
+[Category:Git](Category_Git "wikilink")

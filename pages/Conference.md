@@ -10,7 +10,7 @@ description: test description
 
 ## ImageJ User and Developer Conferences
 
-![Imagej-conference-logo.png](/images/pages/Imagej-conference-logo.png "Imagej-conference-logo.png")
+![Imagej-conference-logo.png](Imagej-conference-logo.png "Imagej-conference-logo.png")
 
 Approximately every two years from 2006 through 2015, there was a conference focused on [ImageJ](ImageJ "wikilink")-based software, including both the core program itself, as well as applications and [plugins](plugins "wikilink") thereof.
 
@@ -48,4 +48,4 @@ If you have any questions or if you are interested in hosting a future conferenc
 | 1      | [ImageJ User and Developer Conference 2006](Conference_2006 "wikilink")                                    | 18 - 19 May 2006      | [CRP Henri Tudor](http://www.tudor.lu/en), Luxembourg                              |
 |        |                                                                                                            |                       |                                                                                    |
 
-[Category:Conference](Category:Conference "wikilink")
+[Category:Conference](Category_Conference "wikilink")

@@ -8,7 +8,7 @@ categories: Citable
 description: test description
 ---
 
-\_\_NOTOC\_\_![File.png](/images/pages/File.png "File.png"){% include clear%}
+\_\_NOTOC\_\_![File.png](File.png "File.png"){% include clear%}
 
 {% capture author%}
 Alex Dobens, {% include person content='Dobensl' %}
@@ -57,4 +57,4 @@ These macros were written by Alexander Dobens with feedback and direction from L
 
 Many thanks to all of those authors for releasing their code under the GPL.
 
-[Category:Citable](Category:Citable "wikilink")
+[Category:Citable](Category_Citable "wikilink")

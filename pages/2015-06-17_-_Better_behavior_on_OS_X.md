@@ -18,4 +18,4 @@ Fortunately, the ImageJ team is happy to announce that [ImageJ2](ImageJ2 "wikili
 
 There may still be some kinks to iron out. If you are running OS X, please update your installation and [let us know](Mailing_Lists "wikilink") how it works for you\!
 
-[Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:News](Category:News "wikilink")
+[Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:News](Category_News "wikilink")

@@ -47,4 +47,4 @@ git clone becherovka:/path/my-new-repo.git
 
 Magically, all the files flow onto your computer and you can track the changes to your manuscript performed from work or from home on your laptop by pulling and pushing until the next nasty merge conflict appears.
 
-[Category:Git](Category:Git "wikilink")
+[Category:Git](Category_Git "wikilink")

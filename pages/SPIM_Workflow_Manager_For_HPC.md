@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include info-box name='SPIM Workflow Manager for HPC ' software='Fiji ' author='Jan Kožusznik, Petr Bainar, Jana Klímová, Michal Krumnikl, Pavel Moravec, Pavel Tomancak ' maintainer='jan.kozusznik@vsb.cz ' released='August 2018 ' latest-version='March 2019 ' category='[Transform](:Category:Transform "wikilink"), [Registration](:Category:Registration "wikilink"), [Deconvolution](:Category:Deconvolution "wikilink") ' source=' [on github](https://github.com/fiji-hpc/hpc-workflow-manager/) ' %}
+{% include info-box name='SPIM Workflow Manager for HPC ' software='Fiji ' author='Jan Kožusznik, Petr Bainar, Jana Klímová, Michal Krumnikl, Pavel Moravec, Pavel Tomancak ' maintainer='jan.kozusznik@vsb.cz ' released='August 2018 ' latest-version='March 2019 ' category='[Transform](_Category_Transform "wikilink"), [Registration](_Category_Registration "wikilink"), [Deconvolution](_Category_Deconvolution "wikilink") ' source=' [on github](https://github.com/fiji-hpc/hpc-workflow-manager/) ' %}
 
 # About the plugin
 

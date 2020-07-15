@@ -24,7 +24,7 @@ All program state, such as available plugins, is accessible from a root object k
 
 ## Services
 
-{% include imagej1 content='Whereas [ImageJ1](ImageJ1 "wikilink") is a [singleton](wikipedia:Singleton_pattern "wikilink"), with static methods to access much of its functionality, [ImageJ2](ImageJ2 "wikilink") encapsulates its program state in the application context, allowing multiple simultaneous such contexts in the same JVM.' %}ImageJ encapsulates its various parts as separate "services" that provide related state functionality and track related program state. An instance of the {% include javadoc package='net/imagej ' class='ImageJ ' %} class is nothing more than a collection of these services; this instance is referred to as the "application gateway." Services are defined as interfaces, with concrete implementations as plugins. This design provides [seams](http://c2.com/cgi/wiki?SoftwareSeam) in the right places so that behavior at every level can be customized and overridden.
+{% include imagej1 content='Whereas [ImageJ1](ImageJ1 "wikilink") is a [singleton](wikipedia_Singleton_pattern "wikilink"), with static methods to access much of its functionality, [ImageJ2](ImageJ2 "wikilink") encapsulates its program state in the application context, allowing multiple simultaneous such contexts in the same JVM.' %}ImageJ encapsulates its various parts as separate "services" that provide related state functionality and track related program state. An instance of the {% include javadoc package='net/imagej ' class='ImageJ ' %} class is nothing more than a collection of these services; this instance is referred to as the "application gateway." Services are defined as interfaces, with concrete implementations as plugins. This design provides [seams](http://c2.com/cgi/wiki?SoftwareSeam) in the right places so that behavior at every level can be customized and overridden.
 
 ### SciJava services
 
@@ -32,7 +32,7 @@ Here are a few of SciJava Common's major core services:
 
   - **{% include javadoc project='SciJava ' package='org/scijava/app ' class='AppService ' %}** - Tracks software applications (SCIFIO, ImageJ, etc.) present in the context.
   - **{% include javadoc project='SciJava ' package='org/scijava/display ' class='DisplayService ' %}** - Tracks available displays, as well as the active display, and provides the means to create new displays to visualize data.
-  - **{% include javadoc project='SciJava ' package='org/scijava/event ' class='EventService ' %}** - Publishes events to the [event bus](wikipedia:Publish%E2%80%93subscribe_pattern "wikilink"), and allows interested parties to subscribe to them. The service provides the central means of communication between various parts of the codebase.
+  - **{% include javadoc project='SciJava ' package='org/scijava/event ' class='EventService ' %}** - Publishes events to the [event bus](wikipedia_Publish%E2%80%93subscribe_pattern "wikilink"), and allows interested parties to subscribe to them. The service provides the central means of communication between various parts of the codebase.
   - **{% include javadoc project='SciJava ' package='org/scijava/io ' class='IOService ' %}** - General tools for opening and saving data within the context.
   - **{% include javadoc project='SciJava ' package='org/scijava/menu ' class='MenuService ' %}** - Builds the application menu structure.
   - **{% include javadoc project='SciJava ' package='org/scijava/module ' class='ModuleService ' %}** - Tracks available modules, and provides the infrastructure for executing them.

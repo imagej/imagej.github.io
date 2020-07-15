@@ -166,4 +166,4 @@ The following table provides a few examples of how various Fiji components are s
 <sup>1</sup> A "core" project is one distributed on the Fiji update site. These projects are subject to the requirements discussed on this page.  
 <sup>2</sup> See the [Licensing](Licensing "wikilink") page for further details.
 
-[Category:Fiji](Category:Fiji "wikilink")
+[Category:Fiji](Category_Fiji "wikilink")

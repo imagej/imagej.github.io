@@ -43,4 +43,4 @@ While not directly tied to any one issue or reportable task, [LOCI](LOCI "wikili
   - [LOCI](http://loci.wisc.edu/) scientific collaborations
   - Technical training, via continued [presentations, workshops](https://imagej.net/Presentations#Workshops) and wiki guides.
 
-[Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:News](Category:News "wikilink")
+[Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:News](Category_News "wikilink")

@@ -15,4 +15,4 @@ description: test description
 
 # How to Use Colocalize
 
-[Category:Colocalization](Category:Colocalization "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Colocalization](Category_Colocalization "wikilink") [Category:Plugins](Category_Plugins "wikilink")

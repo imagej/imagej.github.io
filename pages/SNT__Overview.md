@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SNT: Manual](SNT:_Manual "wikilink")
+1.  REDIRECT [SNT: Manual](SNT__Manual "wikilink")

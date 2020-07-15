@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SNT:\_Step-By-Step\_Instructions\#Accurate\_Point\_Placement](SNT:_Step-By-Step_Instructions#Accurate_Point_Placement "wikilink")
+1.  REDIRECT [SNT:\_Step-By-Step\_Instructions\#Accurate\_Point\_Placement](SNT__Step-By-Step_Instructions#Accurate_Point_Placement "wikilink")

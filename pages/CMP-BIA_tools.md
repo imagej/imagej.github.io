@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='Borda ' repo='ij-CMP-BIA ' label='GitHub.com ' %}
 {% endcapture %}
-{% include info-box name='CMP-BIA tools ' software='ImagejJ/Fiji ' author='Jiří Borovec ( [web](http://cmp.felk.cvut.cz/~borovji3/) ) ' maintainer='Jiří Borovec ([email](mailto:jiri.borovec\(at\)fel.cvut.cz)) ' filename=' [CMP\_BIA-0.2.jar](http://sites.imagej.net/CMP-BIA/plugins/) ' source=source released='2013 ' version='0.2 ' latest-version='December 20<sup>th</sup>, 2013 ' license='GPLv2 ' category='[Segmentation](:Category:Segmentation "wikilink") ' %}
+{% include info-box name='CMP-BIA tools ' software='ImagejJ/Fiji ' author='Jiří Borovec ( [web](http://cmp.felk.cvut.cz/~borovji3/) ) ' maintainer='Jiří Borovec ([email](mailto_jiri.borovec\(at\)fel.cvut.cz)) ' filename=' [CMP\_BIA-0.2.jar](http_//sites.imagej.net/CMP-BIA/plugins/) ' source=source released='2013 ' version='0.2 ' latest-version='December 20<sup>th</sup>, 2013 ' license='GPLv2 ' category='[Segmentation](_Category_Segmentation "wikilink") ' %}
 
 # About
 
@@ -40,7 +40,7 @@ We made a Java-based open source implementation jSLIC - the superpixel clusterin
 
 ### How to use the plugin
 
-![jSLIC interface](/images/pages/Fiji jSLIC gui.jpg "jSLIC interface") As you can see the Interface to the plugin contains a parameters for superpixel configuration and also its final visualisation.
+![jSLIC interface](Fiji_jSLIC_gui.jpg "jSLIC interface") As you can see the Interface to the plugin contains a parameters for superpixel configuration and also its final visualisation.
 
 #### Parameters
 
@@ -56,7 +56,7 @@ To show of handle segmentation results we presented a few approaches:
   - *Overlap contours* - simply draw the contours on resulting superpixels into the image by chosen colour.
   - *Export segments as ROIs* - all superpixels are exported as polygons into the [ROI Manager](https://imagej.net/plugins/roi-manager-tools/index.html).
   - *Show final segmentation* - add one more layer and fill each superpixel by a random colour.
-  - *Save segmentation into file* - export the superpixel segmentation into a text file as segmentation matrix with labels. The first line mark the image dimensions (*Dims: {width} {height}*) and then follow the labeling where each number represents the superpixel index. (Note, number of lines is equal to *{image width}* and there is *{image height}* number of indexes which are splitted by blanc space.) Have a look at sample file ![ jSLIC-AuPbSn40](/images/pages/JSLIC-AuPbSn40.zip " jSLIC-AuPbSn40").
+  - *Save segmentation into file* - export the superpixel segmentation into a text file as segmentation matrix with labels. The first line mark the image dimensions (*Dims: {width} {height}*) and then follow the labeling where each number represents the superpixel index. (Note, number of lines is equal to *{image width}* and there is *{image height}* number of indexes which are splitted by blanc space.) Have a look at sample file ![ jSLIC-AuPbSn40](jSLIC-AuPbSn40.zip " jSLIC-AuPbSn40").
 
 Image:jSLIC-Lena-ROIs.jpg|Sample of jSLIC segmented Lena with ROI manager. Image:jSLIC-Lena-ROIs-2.jpg|Sample of jSLIC segmented Lena with ROI manager. Image:Human Breast Cytokeratin jSLIC.jpg|Sample of jSLIC segmented histological tissue. Image:Human Breast Cytokeratin jSLIC 50px 0-2.png|Sample of jSLIC segmented histological tissue. Image:jSLIC-AuPbSn40.jpg|Sample of jSLIC segmented AuPbSn40. Image:jSLIC-Leaf.jpg|Sample of jSLIC segmented Leaf.
 

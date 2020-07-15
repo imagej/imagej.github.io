@@ -20,6 +20,6 @@ description: test description
       - [Distribution Plotter](https://imagejdocu.tudor.lu/doku.php?id=macro:distribution_plotter) †
       - [ROI Manager Tools](https://imagej.nih.gov/ij/plugins/roi-manager-tools/) †
 
-You can reach him [here](mailto:tiago_dot_tferr_at_gmail_dot_com) (obviously, replacing *\_dot\_* with a de facto `.`)
+You can reach him [here](mailto_tiago_dot_tferr_at_gmail_dot_com) (obviously, replacing *\_dot\_* with a de facto `.`)
 
 † Legacy website, yet to be migrated to [imagej.net](Home "wikilink")

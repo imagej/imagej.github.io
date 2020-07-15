@@ -73,4 +73,4 @@ This option is more convenient to distribute macros with keyboard shortcuts to c
 The second possibility consist in saving the macro code as a small script file into the `./Fiji.app/scripts/Plugins/` folder, so that it appears in the menu upon restart.  
 Then you can register a shortcut using {% include bc content='Plugins|Shortcuts|Add Shortcut…'%}
 
-[Category:User interface](Category:User_interface "wikilink")
+[Category:User interface](Category_User_interface "wikilink")

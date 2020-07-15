@@ -175,7 +175,7 @@ The preferred mechanism to contribute improvements to [ImageJ](ImageJ "wikilink"
 ## Roadmap links
 
   - [News](News "wikilink") about ImageJ and Fiji developments, including status updates, observations and comments about ImageJ programming.
-  - [Recent changes](Special:RecentChanges "wikilink") to this web site (*not* the ImageJ code itself).
+  - [Recent changes](Special_RecentChanges "wikilink") to this web site (*not* the ImageJ code itself).
   - [BugZilla](https://fiji.sc/bugzilla) database of user-reported bugs from the [Report a Bug](Report_a_Bug "wikilink") plugin.
 
 ## Citable code
@@ -188,4 +188,4 @@ To this end, developers can now use [digital archives like Zenodo](https://guide
 
   - The [Releases](Releases "wikilink") page, for more about how these resources are used to release SciJava software artifacts.
 
-[Category:Development](Category:Development "wikilink")
+[Category:Development](Category_Development "wikilink")

@@ -18,35 +18,35 @@ Having LUTs to handle display of images with more than 3 channels. Visit [Color 
 
 Classical color space are RGB and CMY. Expressed as RGB value, CMY are equal combination of 2 components of RGB, ie Cyan is obtained by combining Green and Blue in equal proportion.
 
-[200px ](File:RGB_hex.png "wikilink") [200px ](File:CMY_hex.png "wikilink")
+[200px ](File_RGB_hex.png "wikilink") [200px ](File_CMY_hex.png "wikilink")
 
 Here, we propose to use 6 LUTs, which are obtained by combining Red Green and Blue, by two, in different proportion.
 
-[400px ](File:BIOP6Luts_hex.png "wikilink")
+[400px ](File_BIOP6Luts_hex.png "wikilink")
 
 ## On 3 channels image
 
-![3 channels, each in Grays levels. ](/images/pages/3chs Grays cell.jpg "3 channels, each in Grays levels. ")
+![3 channels, each in Grays levels. ](3chs_Grays_cell.jpg "3 channels, each in Grays levels. ")
 
 ### RGB
 
-![3 channels image, in Red Green Blue and Merge. ](/images/pages/3chs RGB cell.jpg "3 channels image, in Red Green Blue and Merge. ")
+![3 channels image, in Red Green Blue and Merge. ](3chs_RGB_cell.jpg "3 channels image, in Red Green Blue and Merge. ")
 
 ### CMY
 
-![3 channels image, in Red Green Blue and Merge. ](/images/pages/3chs CMY cell.jpg "3 channels image, in Red Green Blue and Merge. ")
+![3 channels image, in Red Green Blue and Merge. ](3chs_CMY_cell.jpg "3 channels image, in Red Green Blue and Merge. ")
 
 ## On 4 (to 6) channels image
 
-![4 channels image, each in Grays levels. ](/images/pages/4chs Grays cell.jpg "4 channels image, each in Grays levels. ")
+![4 channels image, each in Grays levels. ](4chs_Grays_cell.jpg "4 channels image, each in Grays levels. ")
 
 ### Appropriate BIOP-LUTs selection
 
-![4 channels image, biop luts good choice](/images/pages/4chs biop-lut cell ok.jpg "4 channels image, biop luts good choice")
+![4 channels image, biop luts good choice](4chs_biop-lut_cell_ok.jpg "4 channels image, biop luts good choice")
 
 ### Unappropriate BIOP-LUTs selection
 
-![4 channels image, biop luts poor choice](/images/pages/4chs biop-lut cell bad.jpg "4 channels image, biop luts poor choice")
+![4 channels image, biop luts poor choice](4chs_biop-lut_cell_bad.jpg "4 channels image, biop luts poor choice")
 
 Here, channels 2 and 3 are tubular structure and it's difficult to distinguish them if both are greenish.
 

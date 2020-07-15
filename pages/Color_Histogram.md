@@ -13,4 +13,4 @@ description: test description
 
 See also [Color Inspector 3D](Color_Inspector_3D "wikilink").
 
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Plugins](Category_Plugins "wikilink")

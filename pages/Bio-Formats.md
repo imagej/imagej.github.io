@@ -16,7 +16,7 @@ description: test description
 {% include info-box software='ImageJ ' name='OME Bio-Formats plugins ' logo='<img src="/images/pages/Bio-formats-icon.png" width="96"/> ' author=' [Open Microscopy Environment](https://www.openmicroscopy.org/) :  
 \- [UW-Madison LOCI](LOCI "wikilink")  
 \- [Glencoe Software](https://www.glencoesoftware.com/)  
-\- [University of Dundee](https://www.dundee.ac.uk/) ' maintainer='OME development team ' filename=' [See Bio-Formats Downloads page](https://downloads.openmicroscopy.org/bio-formats/) ' source=source latest-version=' [See Bio-Formats Downloads page](https://downloads.openmicroscopy.org/bio-formats/) ' status='active ' category='[:Category:Import-Export](:Category:Import-Export "wikilink") ' %}{% include toc%}
+\- [University of Dundee](https://www.dundee.ac.uk/) ' maintainer='OME development team ' filename=' [See Bio-Formats Downloads page](https://downloads.openmicroscopy.org/bio-formats/) ' source=source latest-version=' [See Bio-Formats Downloads page](https://downloads.openmicroscopy.org/bio-formats/) ' status='active ' category='[:Category:Import-Export](_Category_Import-Export "wikilink") ' %}{% include toc%}
 
 
 ## Purpose
@@ -155,11 +155,11 @@ To enable the Bio-Formats update site:
 
 1.  Launch the updater: **Update** from the **Help** menu.
 2.  Click the **Manage update sites** button.
-3.  Tick the **Bio-Formats** box: ![Bf-manage-update-sites.png](/images/pages/Bf-manage-update-sites.png "Bf-manage-update-sites.png")
-4.  Click the **Close** button. The updater should want to update some files now: ![Bf-jars-to-update.png](/images/pages/Bf-jars-to-update.png "Bf-jars-to-update.png")
+3.  Tick the **Bio-Formats** box: ![Bf-manage-update-sites.png](Bf-manage-update-sites.png "Bf-manage-update-sites.png")
+4.  Click the **Close** button. The updater should want to update some files now: ![Bf-jars-to-update.png](Bf-jars-to-update.png "Bf-jars-to-update.png")
 5.  Click the **Apply changes** button.
 6.  Restart Fiji when prompted.
-7.  To verify the upgrade, choose **Bio-Formats Plugins...** from **About Plugins** beneath the **Help** menu: ![Bf-about-plugins.png](/images/pages/Bf-about-plugins.png "Bf-about-plugins.png")
+7.  To verify the upgrade, choose **Bio-Formats Plugins...** from **About Plugins** beneath the **Help** menu: ![Bf-about-plugins.png](Bf-about-plugins.png "Bf-about-plugins.png")
 
 ## Source code
 
@@ -173,4 +173,4 @@ To report a bug in Bio-Formats, please see [reporting a bug in Bio-Formats](http
 
   - {% include publication content='Bio-Formats' %}
 
-[Category:Related Software](Category:Related_Software "wikilink") [Category:Citable](Category:Citable "wikilink") [Category:SciJava](Category:SciJava "wikilink") [Category:OME](Category:OME "wikilink")
+[Category:Related Software](Category_Related_Software "wikilink") [Category:Citable](Category_Citable "wikilink") [Category:SciJava](Category_SciJava "wikilink") [Category:OME](Category_OME "wikilink")

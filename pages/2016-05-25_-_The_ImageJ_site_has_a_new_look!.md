@@ -18,4 +18,4 @@ What do you think? Thumbs up? Thumbs down?
 
 [Cast your vote on the forum](http://forum.imagej.net/t/1730)\!
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

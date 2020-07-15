@@ -149,4 +149,4 @@ But later this year, we will migrate the latest Java-8 components back to the co
 
 Please be aware that [Java 3D](Java_3D "wikilink") is essentially a dead technology. The future of 3D visualization in ImageJ is the [ClearVolume](ClearVolume "wikilink") and [SciView](SciView "wikilink") plugins. But it will be a lot of work to rewrite all [3D Viewer](3D_Viewer "wikilink") functionality, so the ImageJ and Fiji teams are still exploring the best ways to proceed here.
 
-[Category:News](Category:News "wikilink") [Category:Fiji](Category:Fiji "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:News](Category_News "wikilink") [Category:Fiji](Category_Fiji "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")

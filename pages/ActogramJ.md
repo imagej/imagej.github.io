@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='bene51 ' repo='ActogramJ ' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='ActogramJ ' maintainer=maintainer author=author source=source status='active ' released='2010 ' category='[Visualization](:Category:Visualization "wikilink"), [:Category:Plugins](:Category:Plugins "wikilink") ' %}
+{% include info-box software='Fiji ' name='ActogramJ ' maintainer=maintainer author=author source=source status='active ' released='2010 ' category='[Visualization](_Category_Visualization "wikilink"), [:Category:Plugins](_Category_Plugins "wikilink") ' %}
 
 **ActogramJ** - Visualizing and analyzing activity diagrams in behavioral experiments
 
@@ -28,8 +28,8 @@ description: test description
 
   - {% include publication content='ActogramJ' %}
 
-![ActogramJ.png](/images/pages/ActogramJ.png "ActogramJ.png")
+![ActogramJ.png](ActogramJ.png "ActogramJ.png")
 
 More information is available at https://bene51.github.io/ActogramJ.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Visualization](Category:Visualization "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Visualization](Category_Visualization "wikilink") [Category:Citable](Category_Citable "wikilink")

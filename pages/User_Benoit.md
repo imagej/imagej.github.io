@@ -14,11 +14,11 @@ I am doing Image analysis consulting at Scionics GmbH and the Max Planck Institu
 
 -----
 
-![Minimum Cost S surface projection](/images/pages/MinCostSurf Ex2 SurfaceSelection.PNG "Minimum Cost S surface projection")
+![Minimum Cost S surface projection](MinCostSurf_Ex2_SurfaceSelection.PNG "Minimum Cost S surface projection")
 
-![Interactive watershed](/images/pages/InteractiveWatershed illustration.PNG "Interactive watershed")
+![Interactive watershed](InteractiveWatershed_illustration.PNG "Interactive watershed")
 
-![CIP: simple script for simple analysis](/images/pages/CIP basic concept.PNG "CIP: simple script for simple analysis")
+![CIP: simple script for simple analysis](CIP_basic_concept.PNG "CIP: simple script for simple analysis")
 
 ## Image analysis tools I developped
 

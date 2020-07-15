@@ -56,7 +56,7 @@ There are various problems that need to be understood and overcome while collect
 
 ### Blur
 
-![ColocBlur.gif](/images/pages/ColocBlur.gif "ColocBlur.gif")
+![ColocBlur.gif](ColocBlur.gif "ColocBlur.gif")
 
 *`Definition:`*` The Fourier spectrum of the `  
 `image lacks proper high frequencies. `
@@ -89,7 +89,7 @@ If the blurring of you images is too much, you might want to consider [deconvolu
 
 ### Background
 
-![ColocBGnoise.gif](/images/pages/ColocBGnoise.gif "ColocBGnoise.gif")
+![ColocBGnoise.gif](ColocBGnoise.gif "ColocBGnoise.gif")
 
 *`Definition:`*` Unspecific signal. `
 
@@ -136,7 +136,7 @@ One must have a signal strong enough to allow a good enough signal:noise ratio, 
 
 So... this one is *the* very worst and most dangerous problem in colocalization experiments. It can be explained with the following spectra:
 
-![500px-CrossTalkBleedThrough.jpg](/images/pages/500px-CrossTalkBleedThrough.jpg "500px-CrossTalkBleedThrough.jpg")
+![500px-CrossTalkBleedThrough.jpg](500px-CrossTalkBleedThrough.jpg "500px-CrossTalkBleedThrough.jpg")
 
   
 In this picture, the detection setup is configured so as to measure emitted light from the second fluorophore. The problem is that in this detection channel, some of the light emitted by the first fluorophore is also collected and integrated to the channel 2 signal. This is called **bleed-through**. When you are going to compute colocalization of this channel with the first one, there will be a part of the signal that will colocalize with it whatever it is, since signal coming from the first fluorophore is present in both channels. That is, you generated false-positive result.
@@ -162,7 +162,7 @@ As a general rule, you should have each object you image sampled over many pixel
 
 Let's suppose that you have two objects each with different colour, and you would like to assess if they colocalize in space. If we assume that they don't colcocalise, if the colocalization procedure you are using is working, it should give you a negative result. Consider one molecule of each dye. They are sitting close to each other, but they are not colocalized (in the same place). Now, if the pixel size is so big that these two molecules are imaged on the same pixel, the procedure tells you that they are colocalized. Once again, you are producing false-positive results.
 
-![500px-ColocalizationSampling.png](/images/pages/500px-ColocalizationSampling.png "500px-ColocalizationSampling.png")
+![500px-ColocalizationSampling.png](500px-ColocalizationSampling.png "500px-ColocalizationSampling.png")
 
   
 Also remember: since we are doing light microscopy, two objects closer and smaller than the diffraction limit will appear colocalized whatever you do. Particular care must be taken in the case of Z-stack, where the resolution in the Z axis is generally lower than in the XY plane. In order to get around the diffraction limit, and to confirm your colocalisation result, you can do other methods too, such as FRET or FLIM, and immuno precipitation or cellular cofractionation. 
@@ -191,4 +191,4 @@ Also, for a review of the hardware part, read *Zucker, 2006, Cytometry*.
 
 [The 39 steps: a cautionary tale of quantitative 3-D fluorescence microscopy](http://www.ncbi.nlm.nih.gov/pubmed/10818693) by J. Pawley.
 
-[Category:Colocalization](Category:Colocalization "wikilink") [Category:Tutorials](Category:Tutorials "wikilink") [Category:Color processing](Category:Color_processing "wikilink")
+[Category:Colocalization](Category_Colocalization "wikilink") [Category:Tutorials](Category_Tutorials "wikilink") [Category:Color processing](Category_Color_processing "wikilink")

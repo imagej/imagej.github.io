@@ -20,4 +20,4 @@ Or if you have a GitHub account, please feel welcome to report issues [on GitHub
 
 Thank you\! 😁
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:Plugins](Category:Plugins "wikilink") [Category:Bug Reporting](Category:Bug_Reporting "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Bug Reporting](Category_Bug_Reporting "wikilink")

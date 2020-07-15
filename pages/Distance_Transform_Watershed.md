@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='ijpb ' repo='ijpb-plugins ' %}
 {% endcapture %}
-{% include info-box name='Distance Transform Watershed (2D and 3D) ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='August 25<sup>th</sup>, 2016 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink") ' %}
+{% include info-box name='Distance Transform Watershed (2D and 3D) ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='August 25<sup>th</sup>, 2016 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Segmentation](_Category_Segmentation "wikilink"), [Mathematical morphology](_Category_Mathematical_morphology "wikilink") ' %}
 
 ## Introduction
 
@@ -38,7 +38,7 @@ A classic way of separating touching objects in binary images makes use of the d
 
 Distance Transform Watershed needs one 2D 8-bit binary image to run. If that's the case, a dialog like the following will pop up:
 
-![Distance-Transform-Watershed-2D-menu.png](/images/pages/Distance-Transform-Watershed-2D-menu.png "Distance-Transform-Watershed-2D-menu.png")
+![Distance-Transform-Watershed-2D-menu.png](Distance-Transform-Watershed-2D-menu.png "Distance-Transform-Watershed-2D-menu.png")
 
 The plugin parameters are divided between the distance transform and the watershed options:
 
@@ -65,7 +65,7 @@ Finally, the result with the current plugin configuration can be visualize click
 
 Distance Transform Watershed 3D needs one 3D 8-bit binary image to run. If that's the case, a dialog like the following will pop up:
 
-![Distance-Transform-Watershed-3D-menu.png](/images/pages/Distance-Transform-Watershed-3D-menu.png "Distance-Transform-Watershed-3D-menu.png")
+![Distance-Transform-Watershed-3D-menu.png](Distance-Transform-Watershed-3D-menu.png "Distance-Transform-Watershed-3D-menu.png")
 
 The parameters are the same as in the 2D version but some of them are adapted for 3D images:
 
@@ -118,4 +118,4 @@ This program is **free software**; you can redistribute it and/or modify it unde
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Mathematical\_morphology](Category:Mathematical_morphology "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Mathematical\_morphology](Category_Mathematical_morphology "wikilink")

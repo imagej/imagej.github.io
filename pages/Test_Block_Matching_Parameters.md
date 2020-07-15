@@ -10,13 +10,13 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Saalfeld' %} ([1](mailto:saalfeld@mpi-cbg.de))
+{% include person content='Saalfeld' %} ([1](mailto_saalfeld@mpi-cbg.de))
 {% endcapture %}
 
 {% capture maintainer%}
 {% include person content='Saalfeld' %}
 {% endcapture %}
-{% include info-box name='Test Block Matching Parameters ' software='Fiji ' author=author maintainer=maintainer source='https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/clahe ' released='March 27<sup>th</sup>, 2012 ' latest-version='March 27<sup>th</sup>, 2012 ' status='experimental, active ' category='[Plugins](:Category:Plugins "wikilink"), [Registration](:Category:Registration "wikilink") ' %} The plugin **Test Block Matching Parameters** is a helper plugin to explore the parameter space for block matching as used in the plugins for [elastic serial section registration](Elastic_Alignment_and_Montage "wikilink"). It takes as input a stack of pre-aligned RGB images with background rendered in green (rgb 0,255,0). It then asks for block matching parameters using the same dialog as in the alignment plugins. It will try to match all to all slices of the stack and render a matrix that displays all matching results as a color-coded translation field. That field will have blank entries where the matching result did not pass the filters.
+{% include info-box name='Test Block Matching Parameters ' software='Fiji ' author=author maintainer=maintainer source='https_//fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/clahe ' released='March 27<sup>th</sup>, 2012 ' latest-version='March 27<sup>th</sup>, 2012 ' status='experimental, active ' category='[Plugins](_Category_Plugins "wikilink"), [Registration](_Category_Registration "wikilink") ' %} The plugin **Test Block Matching Parameters** is a helper plugin to explore the parameter space for block matching as used in the plugins for [elastic serial section registration](Elastic_Alignment_and_Montage "wikilink"). It takes as input a stack of pre-aligned RGB images with background rendered in green (rgb 0,255,0). It then asks for block matching parameters using the same dialog as in the alignment plugins. It will try to match all to all slices of the stack and render a matrix that displays all matching results as a color-coded translation field. That field will have blank entries where the matching result did not pass the filters.
 
 ## What to look for?
 

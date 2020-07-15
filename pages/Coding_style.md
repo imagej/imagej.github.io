@@ -45,8 +45,8 @@ We try to write Javadoc as code is added, rather than earmarking it for addition
 
 We also have several comment tokens we use in various situations:
 
-  - Anywhere the code may be unintuitive or surprising, we add an ["NB"](wikipedia:Nota_bene "wikilink") comment that provides an explanation.
-  - For code that is considered "dirty" or less than ideal, but necessary from a practical perspective, we add a ["HACK"](wikipedia:Kludge#In_computer_science "wikilink") comment explaining it.
+  - Anywhere the code may be unintuitive or surprising, we add an ["NB"](wikipedia_Nota_bene "wikilink") comment that provides an explanation.
+  - For code that is considered "dirty" or less than ideal, but necessary from a practical perspective, we add a ["HACK"](wikipedia_Kludge#In_computer_science "wikilink") comment explaining it.
   - For code (or lack thereof) that is considered wrong or broken, and in need of repair, we add a "FIXME" comment with the relevant developer's initials, to serve as a reminder to address it as soon as time allows.
   - When additional work is needed somewhere, but not urgently, we add a "TODO" comment marking it.
   - For temporary code intended to be removed as soon as possible, we label it with a "TEMP" token.
@@ -98,4 +98,4 @@ All of that said, there are times when use of the `protected` modifier is approp
 
 [Eclipse code style profiles and IntelliJ](Eclipse_code_style_profiles_and_IntelliJ "wikilink")
 
-[Category:Development](Category:Development "wikilink")
+[Category:Development](Category_Development "wikilink")

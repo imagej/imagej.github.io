@@ -44,4 +44,4 @@ For this to work, you will need to add compile-time dependencies to `ij-core`, `
 
 Note that as of this writing, there is a bug with the Swing SDI user interface (and maybe other UIs) that causes the display to initially appear white. Hit minus (-) and then plus (+), which will zoom out then back in, to force the image window to repack and redraw.
 
-[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")

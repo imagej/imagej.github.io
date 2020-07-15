@@ -8,7 +8,7 @@ categories: Scripting
 description: test description
 ---
 
-Super sloppy surface reconstruction from planetary surface photographs or [Scanning Electron Micrographs (SEM)](wikipedia:Scanning_electron_microscope "wikilink").
+Super sloppy surface reconstruction from planetary surface photographs or [Scanning Electron Micrographs (SEM)](wikipedia_Scanning_electron_microscope "wikilink").
 
 ## Motivation
 
@@ -101,4 +101,4 @@ for ( int i = 0; i < source.getHeight(); ++i ) {
   - [Scripting\_comparisons](Scripting_comparisons "wikilink")
   - [Script Editor](Script_Editor "wikilink")
 
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Scripting](Category_Scripting "wikilink")

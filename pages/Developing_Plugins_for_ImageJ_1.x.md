@@ -178,7 +178,7 @@ When implementing a filter plugin, you usually do not need to access *WindowMana
 
 All images are represented as instances of {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/ImagePlus.java ' label='ij.ImagePlus ' %}. This class wraps an {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/ImageStack.java ' label='ij.ImageStack ' %} of slices. Slices are data-type dependent instances of {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/ImageProcessor.java ' label='ij.process.ImageProcessor ' %}: {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/ByteProcessor.java ' label='ij.process.ByteProcessor ' %}, {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/ShortProcessor.java ' label='ij.process.ShortProcessor ' %}, {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/FloatProcessor.java ' label='ij.process.FloatProcessor ' %}, and {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/ColorProcessor.java ' label='ij.process.ColorProcessor ' %}. Or graphically:
 
-![Image\_Class\_Hierarchy.png](/images/pages/Image Class Hierarchy.png "Image Class Hierarchy.png")
+![Image\_Class\_Hierarchy.png](Image_Class_Hierarchy.png "Image_Class_Hierarchy.png")
 
 Example usage:
 
@@ -430,4 +430,4 @@ See guides on:
   - [Debugging practice](Debugging_Exercises "wikilink")
   - [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet "wikilink")
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:Development](Category:Development "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:Development](Category_Development "wikilink")

@@ -23,7 +23,7 @@ To enable GPU hardware accelerated processing, you might want to download the **
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
-  - S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media:Nmeth0610-418.pdf "wikilink") [Supplement](Media:Nmeth0610-418-S1.pdf "wikilink")
+  - S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media_Nmeth0610-418.pdf "wikilink") [Supplement](Media_Nmeth0610-418-S1.pdf "wikilink")
   - S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", *Nature Methods*, **11**(6):645-648. [Webpage](http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html)
 
 For technical details about the registration method and SPIM imaging see also [SPIM Registration Method](SPIM_Registration_Method "wikilink").
@@ -198,4 +198,4 @@ Multi-view SPIM datasets are typically rather large, therefore it is recommended
 
 See the dedicated [page](Automated_workflow_for_parallel_Multiview_Reconstruction "wikilink") describing an automated workflow for processing SPIM data from Lighsheet.Z1 and OpenSPIM on the MPI-CBG cluster.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Citable](Category:Citable "wikilink") [Category:Transform](Category:Transform "wikilink") [Category:Registration](Category:Registration "wikilink") [Category:Deconvolution](Category:Deconvolution "wikilink") [Category:ImgLib](Category:ImgLib "wikilink") [Category:Integral Image](Category:Integral_Image "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Citable](Category_Citable "wikilink") [Category:Transform](Category_Transform "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:Deconvolution](Category_Deconvolution "wikilink") [Category:ImgLib](Category_ImgLib "wikilink") [Category:Integral Image](Category_Integral_Image "wikilink")

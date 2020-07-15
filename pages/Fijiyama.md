@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='Rocsg ' repo='Fijiyama ' %}
 {% endcapture %}
-{% include info-box name='Fijiyama ' software='Fiji ' author='Romain Fernandez & Cédric Moisy ' maintainer='Romain Fernandez ' source=source released='February 10<sup>th</sup>, 2020 ' status='stable, active ' category='[Registration](:Category:Registration "wikilink") ' %}
+{% include info-box name='Fijiyama ' software='Fiji ' author='Romain Fernandez & Cédric Moisy ' maintainer='Romain Fernandez ' source=source released='February 10<sup>th</sup>, 2020 ' status='stable, active ' category='[Registration](_Category_Registration "wikilink") ' %}
 
 <i>Current Fijiyama version : Gorgeous Grapevine (last release : March 21<sup>th</sup>, 2020).</i>
 
@@ -83,7 +83,7 @@ Once signal intensity and voxel sizes have been checked, save your modified imag
 
 ## The registration manager window
 
-![Fijiyama\_reg\_manager.png](/images/pages/Fijiyama reg manager.png "Fijiyama reg manager.png") Once a registration scenario starts, you can interact with the registration manager window through (see image) :
+![Fijiyama\_reg\_manager.png](Fijiyama_reg_manager.png "Fijiyama_reg_manager.png") Once a registration scenario starts, you can interact with the registration manager window through (see image) :
 
   - The log window : a guide to remember last operations, and to understand what the plugin expects from you
 
@@ -164,7 +164,7 @@ Major updates include new features released, or major refactoring, while minor u
 
 Major updates are symbolized with a change in the plugin version name. For minor updates, only the release time is modified.
 
-![Versioning\_Fijiyama.jpeg](/images/pages/Versioning Fijiyama.jpeg "Versioning Fijiyama.jpeg")
+![Versioning\_Fijiyama.jpeg](Versioning_Fijiyama.jpeg "Versioning_Fijiyama.jpeg")
 
 |                                               |                      |                     |                                                                                                                                                                                                                 |                                                                                                                                                                         |
 | --------------------------------------------- | -------------------- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -251,4 +251,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 -----
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Registration](Category:Registration "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:Citable](Category_Citable "wikilink")

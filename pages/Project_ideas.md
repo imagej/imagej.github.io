@@ -122,7 +122,7 @@ Implement a simple inpainting method (i.e. restore missing/unwanted parts of the
 
 ## Add JMathLib (MATLAB clone) support
 
-Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB "wikilink") scripts. While it is [wrong to think of pixels as little squares](ftp://ftp.alvyray.com/Acrobat/6_Pixel.pdf), and literally all [MATLAB](MATLAB "wikilink") scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB "wikilink") licenses just for that purpose.
+Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB "wikilink") scripts. While it is [wrong to think of pixels as little squares](ftp_//ftp.alvyray.com/Acrobat/6_Pixel.pdf), and literally all [MATLAB](MATLAB "wikilink") scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB "wikilink") licenses just for that purpose.
 
 MATLAB bundles a Java runtime (and in fact, all of [MATLAB](MATLAB "wikilink")'s GUI is implemented in Java\!) and allows the user to instantiate Java classes and call methods on them:
 
@@ -190,7 +190,7 @@ For Tcl, the Script Editor would need minimal adjustments, as RSyntaxTextArea al
 
 We already have a mechanism to jump between compile errors and locations of a stack trace. The same mechanism could be used to present results from a search through multiple files.
 
-## Add a ["REPL" (Read-Eval-Print-Loop)](wikipedia:Read-eval-print_loop "wikilink") to the [Script Editor](Script_Editor "wikilink")
+## Add a ["REPL" (Read-Eval-Print-Loop)](wikipedia_Read-eval-print_loop "wikilink") to the [Script Editor](Script_Editor "wikilink")
 
 ## Detect loops after macro recording
 
@@ -299,7 +299,7 @@ Suggested by Quentin de Robillard.
 
 ## Integrate ImageFlow into Fiji
 
-![ImageFlow.png](/images/pages/ImageFlow.png "ImageFlow.png")
+![ImageFlow.png](ImageFlow.png "ImageFlow.png")
 
 ImageFlow provides a graphical way to construct macros. Every action is represented by a node which the user can connect with lines to define a workflow.
 

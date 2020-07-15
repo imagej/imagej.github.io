@@ -10,4 +10,4 @@ description: test description
 
 ## JavaScript scripting
 
-Wayne did release that in the core ImageJ in November. Shall we go beyond? [JeanYvesTinevez](User:JeanYvesTinevez "wikilink") 10:04, 26 November 2009 (CET)
+Wayne did release that in the core ImageJ in November. Shall we go beyond? [JeanYvesTinevez](User_JeanYvesTinevez "wikilink") 10:04, 26 November 2009 (CET)

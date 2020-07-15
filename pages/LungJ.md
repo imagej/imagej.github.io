@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='LWollatz ' repo='LungJ ' %}
 {% endcapture %}
-{% include info-box name='LungJ ' author='[Lasse Wollatz](User:LungJ "wikilink") ' maintainer='[Lasse Wollatz](User:LungJ "wikilink") ' software='ImageJ/Fiji ' logo='![LungJ-logo.png](/images/pages/LungJ-logo.png "LungJ-logo.png") ' source=source released='Nov 10<sup>st</sup>, 2016 ' latest-version='0.5.1, November 10<sup>th</sup>, 2016 (LungJ v0.5.1) ' status='stable, new ' category='[Segmentation](:Category:Segmentation "wikilink"), [Binary](:Category:Binary "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Image annotation](:Category:Image_annotation "wikilink") ' %}{% include toc%}
+{% include info-box name='LungJ ' author='[Lasse Wollatz](User_LungJ "wikilink") ' maintainer='[Lasse Wollatz](User_LungJ "wikilink") ' software='ImageJ/Fiji ' logo='![LungJ-logo.png](LungJ-logo.png "LungJ-logo.png") ' source=source released='Nov 10<sup>st</sup>, 2016 ' latest-version='0.5.1, November 10<sup>th</sup>, 2016 (LungJ v0.5.1) ' status='stable, new ' category='[Segmentation](_Category_Segmentation "wikilink"), [Binary](_Category_Binary "wikilink"), [Filtering](_Category_Filtering "wikilink"), [Image annotation](_Category_Image_annotation "wikilink") ' %}{% include toc%}
 
 
 ## Installation
@@ -211,4 +211,4 @@ Please note that LungJ, as well as other plug-ins available through Fiji, is bas
 
   - {% include citation last1='Wollatz ' first1='Lasse ' last2='Johnston ' first2='Steven J. ' last3='Lackie ' first3='Peter M. ' last4='Cox ' first4='Simon J. ' title='LungJ v0.5.1 ' type='Code ' year='2016 ' month='November ' publisher='University of Southampton ' doi='10.5258/SOTON/401280 ' url='http://eprints.soton.ac.uk/id/eprint/401280 ' %}
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Citable](Category:Citable "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Binary](Category:Binary "wikilink") [Category:Filtering](Category:Filtering "wikilink") [Category:Image\_annotation](Category:Image_annotation "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Citable](Category_Citable "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Binary](Category_Binary "wikilink") [Category:Filtering](Category_Filtering "wikilink") [Category:Image\_annotation](Category_Image_annotation "wikilink")

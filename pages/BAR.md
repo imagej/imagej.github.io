@@ -24,7 +24,7 @@ description: test description
 {% capture latest-version%}
 """1.1.13 March 2017""" ({% include github org='tferr ' repo='Scripts/releases ' label='Changelog ' %})
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji ' name='BAR ' maintainer=maintainer source=source released='June 2014 ' latest-version=latest-version category='[Analysis](:Category:Analysis "wikilink"), [Annotation](:Category:Image_annotation "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Segmentation](:Category:Segmentation "wikilink"), [Scripting](:Category:Scripting "wikilink") ' %}
+{% include info-box software='ImageJ/Fiji ' name='BAR ' maintainer=maintainer source=source released='June 2014 ' latest-version=latest-version category='[Analysis](_Category_Analysis "wikilink"), [Annotation](_Category_Image_annotation "wikilink"), [Filtering](_Category_Filtering "wikilink"), [Segmentation](_Category_Segmentation "wikilink"), [Scripting](_Category_Scripting "wikilink") ' %}
 
 </div>
 
@@ -45,7 +45,7 @@ Some of the scripts have a dedicated documentation page, others feature built-in
 
 ### List of BARs
 
-[right|Overview of BAR (v1.0.0)](File:BARsnapshot.png "wikilink")
+[right|Overview of BAR (v1.0.0)](File_BARsnapshot.png "wikilink")
 
   - {% include github org='tferr ' repo='Scripts ' path='README.md\#analysis ' label='Analysis ' %}<span id="Analysis"></span>  
     {% include github org='tferr ' repo='Scripts ' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#log-dog-spot-counter ' label='LoG-DoG Spot Counter ' %}, {% include github org='tferr ' repo='Scripts ' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multi-roi-profiler ' label='Multi ROI Profiler ' %}, {% include github org='tferr ' repo='Scripts ' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multichannel-plot-profile ' label='Multichannel Plot Profile ' %}, {% include github org='tferr ' repo='Scripts ' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multichannel-zt-axis-profile ' label='Multichannel ZT-axis Profile ' %}, {% include github org='tferr ' repo='Scripts ' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#smoothed-plot-profile ' label='Smoothed Plot Profile ' %}
@@ -90,7 +90,7 @@ You can open any BAR script by holding {% include key content='press|Shift' %} w
 
 ### Context Menu
 
-![BAR features a neat mechanism that allows <span style="border-bottom:1px dotted #ccc;">BAR▷</span> commands to shuttle between the main menu bar and the image's context menu.](/images/pages/TransposableBarMenu.png "BAR features a neat mechanism that allows BAR▷ commands to shuttle between the main menu bar and the image's context menu.") <span style="border-bottom:1px dotted #ccc;">BAR▷ </span> submenus can be appended to the image's context menu (the menu that pops up when right-clicking on the image canvas) by running <span style="border-bottom:1px dotted #ccc;">BAR▷ <i>Submenu</i>▷Move Menu (Context\<\>Main)</span>. The transfer is bidirectional: once in the context menu, running the same command will place the submenu back in the main menu bar.
+![BAR features a neat mechanism that allows <span style="border-bottom:1px dotted #ccc;">BAR▷</span> commands to shuttle between the main menu bar and the image's context menu.](TransposableBarMenu.png "BAR features a neat mechanism that allows BAR▷ commands to shuttle between the main menu bar and the image's context menu.") <span style="border-bottom:1px dotted #ccc;">BAR▷ </span> submenus can be appended to the image's context menu (the menu that pops up when right-clicking on the image canvas) by running <span style="border-bottom:1px dotted #ccc;">BAR▷ <i>Submenu</i>▷Move Menu (Context\<\>Main)</span>. The transfer is bidirectional: once in the context menu, running the same command will place the submenu back in the main menu bar.
 
 The shuttling mechanism is not permanent, i.e., it will not be remembered across restarts. However, it is macro recordable which means it can be imposed at startup, using the ImageJ macro language. So, e.g., to install <span style="border-bottom:1px dotted #ccc;">BAR▷ Segmentation▷</span> in the context menu, one would:
 
@@ -102,7 +102,7 @@ It may be wise to allow ImageJ enough time to register all scripts before trigge
 
 <center>
 
-![StartupBAR.png](/images/pages/StartupBAR.png "StartupBAR.png")
+![StartupBAR.png](StartupBAR.png "StartupBAR.png")
 
 </center>
 
@@ -113,7 +113,7 @@ It may be wise to allow ImageJ enough time to register all scripts before trigge
 
 ### Commander
 
-![Commander overview (BAR 1.1.2).](/images/pages/CommanderOverview.png "Commander overview (BAR 1.1.2).") Since the majority of BARs are scripts stored in dedicated files, BAR features Commander ({% include bc content='BAR|BAR Commander...'%}), a keyboard-based file browser that produces filtered lists of directory contents.
+![Commander overview (BAR 1.1.2).](CommanderOverview.png "Commander overview (BAR 1.1.2).") Since the majority of BARs are scripts stored in dedicated files, BAR features Commander ({% include bc content='BAR|BAR Commander...'%}), a keyboard-based file browser that produces filtered lists of directory contents.
 
 It is a productivity tool that applies the principles of [Command Launcher](Using_the_Command_Launcher "wikilink") to file browsing, providing instant access to files just by typing abbreviations of filenames. It serves two purposes: 1) to expedite the opening of files and 2) to produce filtered lists of directory contents. Features include: drag-and-drop support, interaction with native file manager, regex filtering, and a built-in console for common operations.
 
@@ -149,7 +149,7 @@ You can use BARs as a starting point for your own workflows. Whether you are jus
 
 ### Snippets
 
-![{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)](/images/pages/SnippetCreator.png "{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)") BAR contains a directory, *plugins/Scripts/BAR/Snippets/*, containing multi-language [examples](https://github.com/tferr/Scripts/tree/master/Snippets) that you can customize and recycle in your own scripts. You can, of course, also retrieve code and inspiration from the more complete BARs in the remaining *plugins/Scripts/BAR/* subdirectories. Any script or macro file stored in the *Snippets/*, folder with an underscore "\_" in the filename will be listed in <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷</span>. The <span style="border-bottom:1px dotted #ccc;">Snippets▷</span> menu contains some utilities to help you manage your scripts:
+![{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)](SnippetCreator.png "{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)") BAR contains a directory, *plugins/Scripts/BAR/Snippets/*, containing multi-language [examples](https://github.com/tferr/Scripts/tree/master/Snippets) that you can customize and recycle in your own scripts. You can, of course, also retrieve code and inspiration from the more complete BARs in the remaining *plugins/Scripts/BAR/* subdirectories. Any script or macro file stored in the *Snippets/*, folder with an underscore "\_" in the filename will be listed in <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷</span>. The <span style="border-bottom:1px dotted #ccc;">Snippets▷</span> menu contains some utilities to help you manage your scripts:
 
   - List Snippets:Prints a table listing all scripts in *plugins/Scripts/BAR/Snippets/*. Files can then be opened in the [Script Editor](Script_Editor "wikilink") by double-clicking on their filename.  
     New Snippet: A java plugin that speeds up the creation of new scripts, pre-configured to use [BAR lib](#lib "wikilink").  
@@ -249,7 +249,7 @@ def myRoutines(image):
     image.setTitle( str(uuid.uuid4()) )
 ```
 
-In more detail: Pass the active image - an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.htm) object - to `myRoutines()`. Retrieve a random [UUID](wikipedia:Universally_unique_identifier "wikilink") (e.g., `f7dfd6a9-f745-42c2-8874-0af67380c3f5`), convert it to a string, then use that string to rename the image using the \[http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html#setTitle(java.lang.String) setTitle()\] method in `ij.ImagePlus`.
+In more detail: Pass the active image - an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.htm) object - to `myRoutines()`. Retrieve a random [UUID](wikipedia_Universally_unique_identifier "wikilink") (e.g., `f7dfd6a9-f745-42c2-8874-0af67380c3f5`), convert it to a string, then use that string to rename the image using the \[http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html#setTitle(java.lang.String) setTitle()\] method in `ij.ImagePlus`.
 
 But because [BAR libs](#lib "wikilink") already contain such a function, we can just call the `randomString()` function in {% include github org='tferr ' repo='Scripts ' path='lib/BARlib.py ' label='BARlib.py ' %}, after loading the file:
 
@@ -361,7 +361,7 @@ function randomString(length, spacers) {
 }
 ```
 
-As such, calling `randomString(50, true)` would produce e.g., `E_ZXTQO_8E9XM_45WG7_8S39`. As with the [Python](#Python "wikilink") implementation, we could also use [BAR lib](#lib "wikilink") (in this case {% include github org='tferr ' repo='Scripts ' path='lib/BARlib.ijm ' label='BARlib.ijm ' %}). First, we need to load the file [before running our macro](#faq:ijm-lib "wikilink"), using the code generated by <span style="border-bottom:1px dotted #ccc;">Bar▷ Snippets▷ New Snippet</span>:<span id="IJMlib"></span>
+As such, calling `randomString(50, true)` would produce e.g., `E_ZXTQO_8E9XM_45WG7_8S39`. As with the [Python](#Python "wikilink") implementation, we could also use [BAR lib](#lib "wikilink") (in this case {% include github org='tferr ' repo='Scripts ' path='lib/BARlib.ijm ' label='BARlib.ijm ' %}). First, we need to load the file [before running our macro](#faq_ijm-lib "wikilink"), using the code generated by <span style="border-bottom:1px dotted #ccc;">Bar▷ Snippets▷ New Snippet</span>:<span id="IJMlib"></span>
 
 ``` java
 libPath = call('bar.Utils.getLibDir') + 'BARlib.ijm';
@@ -455,4 +455,4 @@ BAR scripts can be cited using the DOI associated with the repository:
 
 These scripts are free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[Category:Analysis](Category:Analysis "wikilink") [Category:Citable](Category:Citable "wikilink") [Category:Filtering](Category:Filtering "wikilink") [Category:Image annotation](Category:Image_annotation "wikilink") [Category:Plugins](Category:Plugins "wikilink") [Category:Scripting](Category:Scripting "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Analysis](Category_Analysis "wikilink") [Category:Citable](Category_Citable "wikilink") [Category:Filtering](Category_Filtering "wikilink") [Category:Image annotation](Category_Image_annotation "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Scripting](Category_Scripting "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")

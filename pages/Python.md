@@ -21,4 +21,4 @@ You can use ImageJ from [Python](https://python.org/):
       - **Advantage:** It is possible to combine ImageJ with other image analysis libraries like [scikit-image](scikit-image "wikilink"), [ITK](ITK "wikilink"), [OpenCV](OpenCV "wikilink") and more in a single Python program.
       - **Disadvantage:** Wrapping ImageJ in Python has some limitations and bugs, particularly surrounding use of [ImageJ1](ImageJ1 "wikilink") features, compared to using ImageJ from Java-based kernels such as [BeakerX](https://beakerx.com/).
 
-[Category:Development](Category:Development "wikilink")
+[Category:Development](Category_Development "wikilink")

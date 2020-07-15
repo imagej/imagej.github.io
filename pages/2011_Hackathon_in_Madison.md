@@ -126,7 +126,7 @@ PlotData=
 
 Some locals were not present at the hackathon on weekends.
 
-![ link=<File:2011-madison-hackathon.jpg> | frame | Thanks to all participants\!](/images/pages/2011-madison-hackathon-small.jpg " link=File:2011-madison-hackathon.jpg | frame | Thanks to all participants!")
+![ link=<File:2011-madison-hackathon.jpg> | frame | Thanks to all participants\!](2011-madison-hackathon-small.jpg " link=File:2011-madison-hackathon.jpg | frame | Thanks to all participants!")
 
 ## Locations
 
@@ -231,4 +231,4 @@ All of these discussions benefited incredibly from the fact that all the people 
   - Plans for releases via the Fiji Updater (once it supports multiple update sites) (Arthur Edelstein).
   - Combining Micro-Manager and Fiji for automatic acquisition of insitus using a feedback loop to find the samples (Erwin Frise).
 
-[Category:Hackathons](Category:Hackathons "wikilink")
+[Category:Hackathons](Category_Hackathons "wikilink")

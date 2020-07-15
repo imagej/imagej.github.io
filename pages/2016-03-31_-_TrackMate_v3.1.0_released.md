@@ -14,7 +14,7 @@ We just release the version 3.1.0 of [TrackMate](TrackMate "wikilink"), a Fiji p
 
   - Add an action that export all visible spots statistics, regardless of whether they belong in a track or not.
 
-![TrackMate\_ExportAllSpotsStatistics.png](/images/pages/TrackMate ExportAllSpotsStatistics.png "TrackMate ExportAllSpotsStatistics.png")
+![TrackMate\_ExportAllSpotsStatistics.png](TrackMate_ExportAllSpotsStatistics.png "TrackMate_ExportAllSpotsStatistics.png")
 
   - New display mode: show only selection.
 
@@ -32,7 +32,7 @@ This track display mode only shows the content of the current selection, for spo
 
   - There is now a step-wise time browsing ('à la MaMuT'): press 'F' and 'G' to move in time by jumping to frames, spaced by a number set in the Spot edit tool of TrackMate (double-click on the icon in the ImageJ toolbar).
 
-![TrackMate\_StepwiseTimeBrowsing.png](/images/pages/TrackMate StepwiseTimeBrowsing.png "TrackMate StepwiseTimeBrowsing.png")
+![TrackMate\_StepwiseTimeBrowsing.png](TrackMate_StepwiseTimeBrowsing.png "TrackMate_StepwiseTimeBrowsing.png")
 
   - The manual editing of spot radius (press 'Q' and 'E') is fully reversible (if you press 3 times 'Q' then 3 times 'E', you get back the initial radius).
 
@@ -52,6 +52,6 @@ This track display mode only shows the content of the current selection, for spo
 
   - Also, to keep the 3D Viewer tidy, it is not kept in sync with the manual edits made on the model. It just shows a snapshot of the model at the time when it was launched. It was not working properly before anyway, so we officially disable this feature.
 
-[JeanYvesTinevez](User:JeanYvesTinevez "wikilink") ([talk](User_talk:JeanYvesTinevez "wikilink")) 06:46, 31 March 2016 (CDT)
+[JeanYvesTinevez](User_JeanYvesTinevez "wikilink") ([talk](User_talk_JeanYvesTinevez "wikilink")) 06:46, 31 March 2016 (CDT)
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

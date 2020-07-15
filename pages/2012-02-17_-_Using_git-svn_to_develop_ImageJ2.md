@@ -16,7 +16,7 @@ One such third-party program is called [Git](Git "wikilink")... While Git is usu
 
 ## The `git svn` workflow
 
-Our recommended `git svn` workflow was described in our chatroom by [Barry](User:Bdezonia "wikilink"):
+Our recommended `git svn` workflow was described in our chatroom by [Barry](User_Bdezonia "wikilink"):
 
 1.  `git svn fetch`
 2.  `git checkout -b NewBranch trunk`
@@ -66,4 +66,4 @@ In step 4, `git svn` indeed picks up those pre-imported branches.
 
 Lastly, we initialize the local *master* branch to track Subversion's *trunk*.
 
-[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")

@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% include toc%}
-[Thresholding](wikipedia:Thresholding_\(image_processing\) "wikilink") is a technique for dividing an image into two (or more) classes of pixels, which are typically called "foreground" and "background."
+[Thresholding](wikipedia_Thresholding_\(image_processing\) "wikilink") is a technique for dividing an image into two (or more) classes of pixels, which are typically called "foreground" and "background."
 
 ## Global thresholding
 
@@ -36,4 +36,4 @@ In short, you can't. It will always be, to some extent, in the eye of the user/o
 
 For more detailed information on thresholding and image segmentation basics and some quality evaluation see the [Principles](https://imagej.net/Principles#Considerations_during_image_segmentation_.28binarization.29) page.
 
-[Category:Techniques](Category:Techniques "wikilink")
+[Category:Techniques](Category_Techniques "wikilink")

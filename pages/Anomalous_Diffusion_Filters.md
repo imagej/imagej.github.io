@@ -10,7 +10,7 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Acsenrafilho' %} ([1](mailto:acsenrafilho@gmail.com))
+{% include person content='Acsenrafilho' %} ([1](mailto_acsenrafilho@gmail.com))
 {% endcapture %}
 
 {% capture maintainer%}
@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='CSIM-Toolkits ' repo='ImageJ/tree/master/plugins/AnomalousDiffusionFilters ' label='GitHub CSIM-ImageJ AnomalousDiffusionFilters repository ' %}
 {% endcapture %}
-{% include info-box name='Anomalous Diffusion Filters PlugIn ' software='Fiji ' author=author maintainer=maintainer source=source released='February 03<sup>rd</sup>, 2015 ' latest-version='February 03<sup>rd</sup>, 2015 ' status='experimental, active ' category='[Plugins](:Category:Plugins "wikilink"), [Filtering](:Category:Filtering "wikilink") ' %}
+{% include info-box name='Anomalous Diffusion Filters PlugIn ' software='Fiji ' author=author maintainer=maintainer source=source released='February 03<sup>rd</sup>, 2015 ' latest-version='February 03<sup>rd</sup>, 2015 ' status='experimental, active ' category='[Plugins](_Category_Plugins "wikilink"), [Filtering](_Category_Filtering "wikilink") ' %}
 
 ## Anomalous Diffusion Filters
 
@@ -58,7 +58,7 @@ Numerical approaches were implemented using differential operators in one dimens
 
 \(I_{\phi,t+1} = I_{\phi,t} + \lambda.\overrightarrow{\nabla} \Big[ D_q. \overrightarrow{\nabla} I_{\phi,t}^{2 - q} \Big]\)
 
-Where \(I_{\phi,t}\) and \(I_{\phi,t+1}\) are the evaluated images in \(t_i\) iterations, and \(I_{\phi,0}\) is the original image. \(D_{q}\) is the diffusion coefficient regulated by a power law with \(\textit{q}\), and \(\phi\) are the possible orientations with respect to the central pixel. The equation above assumes the time step is a constant (\(\lambda \propto \Delta t/\Delta x^2\)) and it depends on the numerical discretization. A careful time step determination plays an important role for numerical stability. The time step determination have a direct influence on the numeric discretization of the diffusion equation and here it follows the same assumptions made for the classical anisotropic diffusion algorithm. More details about the time step parameters and numerical stability can be found in [references section](User:Acsenrafilho "wikilink") of the CSIM main wiki site.
+Where \(I_{\phi,t}\) and \(I_{\phi,t+1}\) are the evaluated images in \(t_i\) iterations, and \(I_{\phi,0}\) is the original image. \(D_{q}\) is the diffusion coefficient regulated by a power law with \(\textit{q}\), and \(\phi\) are the possible orientations with respect to the central pixel. The equation above assumes the time step is a constant (\(\lambda \propto \Delta t/\Delta x^2\)) and it depends on the numerical discretization. A careful time step determination plays an important role for numerical stability. The time step determination have a direct influence on the numeric discretization of the diffusion equation and here it follows the same assumptions made for the classical anisotropic diffusion algorithm. More details about the time step parameters and numerical stability can be found in [references section](User_Acsenrafilho "wikilink") of the CSIM main wiki site.
 
 ## Filters parameters
 
@@ -72,7 +72,7 @@ Basically, the common parameters that are used for both anomalous filtering meth
 
 Now, the only different parameters that have to be set for each filter method are: Condutance and Generalized diffusion coefficient. In summary, both parameters have an intrinsic relationship with the diffusion intensity.
 
-In the case of isotropic filtering, the diffusion intensity is set as a fixed parameter for all filtering process, given by the Generalized diffusion coefficient value (\(D_q\)). This approach is similar with the [Gaussian blur](wikipedia:Gaussian_blur "wikilink") and have the physical process, where all the image space have the same diffusion intensity applied. A further idea, the anisotropic filtering set a local diffusion intensity based on the neighborhood characteristic. The local gradient magnitude is the general parameter to set what will be the filter behavior in that specific region of the image, given by its pixel neighbors. This kind of solution for the local diffusion intensity (gradient magnitude) is similar with the Perona and Malik anisotropic filter and for this case the Condutance parameters plays the edge detection role. See the [Classic Anisotropic Filter](wikipedia:Anisotropic_diffusion "wikilink") to get more information about the condutance parameter.
+In the case of isotropic filtering, the diffusion intensity is set as a fixed parameter for all filtering process, given by the Generalized diffusion coefficient value (\(D_q\)). This approach is similar with the [Gaussian blur](wikipedia_Gaussian_blur "wikilink") and have the physical process, where all the image space have the same diffusion intensity applied. A further idea, the anisotropic filtering set a local diffusion intensity based on the neighborhood characteristic. The local gradient magnitude is the general parameter to set what will be the filter behavior in that specific region of the image, given by its pixel neighbors. This kind of solution for the local diffusion intensity (gradient magnitude) is similar with the Perona and Malik anisotropic filter and for this case the Condutance parameters plays the edge detection role. See the [Classic Anisotropic Filter](wikipedia_Anisotropic_diffusion "wikilink") to get more information about the condutance parameter.
 
 ## Indicated Usage
 

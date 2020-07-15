@@ -10,7 +10,7 @@ description: test description
 
 # Introduction
 
-The following [Beanshell script](Beanshell_Scripting "wikilink") allows you to evaluate the performance of your [segmentation](:Category:Segmentation "wikilink") method after thinning the borders of the image segments to 1-pixel width.
+The following [Beanshell script](Beanshell_Scripting "wikilink") allows you to evaluate the performance of your [segmentation](_Category_Segmentation "wikilink") method after thinning the borders of the image segments to 1-pixel width.
 
 Retrospective evaluation of the original [ISBI-2012 segmentation challenge](http://brainiac2.mit.edu/isbi_challenge/) scoring system revealed that it was not sufficiently robust to variations in the widths of neurite borders. After evaluating all of these metrics and associated variants, it was found that specially normalized versions of the [Rand error](Rand_error "wikilink") and [Variation of Information](https://en.wikipedia.org/wiki/Variation_of_information) best matched our qualitative judgements of segmentation quality:
 
@@ -119,16 +119,16 @@ if( calculateVInfoAfterThinning )
 
 If you run it while two images are open, the following dialog will pop up:
 
-![Script-segmentation-evaluation-thinning-dialog.png](/images/pages/Script-segmentation-evaluation-thinning-dialog.png "Script-segmentation-evaluation-thinning-dialog.png")
+![Script-segmentation-evaluation-thinning-dialog.png](Script-segmentation-evaluation-thinning-dialog.png "Script-segmentation-evaluation-thinning-dialog.png")
 
 Here you can select among the open images which ones are the original and the proposed labels, along with the specific metrics you want to apply to evaluate the segmentation results. If the proposed labels are binary (not a probability image) then you can click on "Binary proposal" to avoid using many threshold values.
 
 After clicking OK the metrics will be applied and the results will be shown in the Log window:
 
-![Script-segmentation-evaluation-thinning-log.png](/images/pages/Script-segmentation-evaluation-thinning-log.png "Script-segmentation-evaluation-thinning-log.png")
+![Script-segmentation-evaluation-thinning-log.png](Script-segmentation-evaluation-thinning-log.png "Script-segmentation-evaluation-thinning-log.png")
 
 # References
 
   - Ignacio Arganda-Carreras, Srinivas C. Turaga, Daniel R. Berger, Dan Ciresan, Alessandro Giusti, Luca M. Gambardella, Jürgen Schmidhuber, Dmtry Laptev, Sarversh Dwivedi, Joachim M. Buhmann, Ting Liu, Mojtaba Seyedhosseini, Tolga Tasdizen, Lee Kamentsky, Radim Burget, Vaclav Uher, Xiao Tan, Chanming Sun, Tuan D. Pham, Eran Bas, Mustafa G. Uzunbas, Albert Cardona, Johannes Schindelin, and H. Sebastian Seung. [Crowdsourcing the creation of image segmentation algorithms for connectomics](http://journal.frontiersin.org/article/10.3389/fnana.2015.00142/abstract). Frontiers in Neuroanatomy, vol. 9, no. 142, 2015.
 
-[Category:Segmentation](Category:Segmentation "wikilink") [Category:Scripting](Category:Scripting "wikilink")
+[Category:Segmentation](Category_Segmentation "wikilink") [Category:Scripting](Category_Scripting "wikilink")

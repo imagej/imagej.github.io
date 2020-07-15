@@ -56,7 +56,7 @@ Sorry, I can't reproduce (on Win7, Java8, ImageJ 2.0.0-rc-49/1.51d)
 
 What are the steps you were taking? What update sites do you have activated?
 
-\--[eglinger](User:Eglinger "wikilink") ([talk](User_talk:Eglinger "wikilink")) 06:03, 28 June 2016 (CDT)
+\--[eglinger](User_Eglinger "wikilink") ([talk](User_talk_Eglinger "wikilink")) 06:03, 28 June 2016 (CDT)
 
 -----
 
@@ -74,7 +74,7 @@ Right?
 
 In the future, let's post discussions like this one on the [forum](http://forum.imagej.net/), where the chance is higher that someone else than the last author of this page will actually respond.
 
-\--[eglinger](User:Eglinger "wikilink") ([talk](User_talk:Eglinger "wikilink")) 06:11, 28 June 2016 (CDT)
+\--[eglinger](User_Eglinger "wikilink") ([talk](User_talk_Eglinger "wikilink")) 06:11, 28 June 2016 (CDT)
 
 -----
 

@@ -10,7 +10,7 @@ description: test description
 
 A new plugin entered this world: [Tutorial Maker](Tutorial_Maker "wikilink"). This plugin is meant to [make writing tutorials on the Wiki real fun](How_to_make_a_new_tutorial "wikilink").
 
-Up until now, writing a [tutorial](:Category:Tutorials "wikilink") was a hassle, mainly due to having to make snapshots in ImageJ, sometimes using the [Delayed Snapshot](Delayed_Snapshot "wikilink") script, saving all of them, uploading them one by one, starting a new page, repeating the image names all over again when referencing them, and then finally editing the page, touching it up previewing frequently.
+Up until now, writing a [tutorial](_Category_Tutorials "wikilink") was a hassle, mainly due to having to make snapshots in ImageJ, sometimes using the [Delayed Snapshot](Delayed_Snapshot "wikilink") script, saving all of them, uploading them one by one, starting a new page, repeating the image names all over again when referencing them, and then finally editing the page, touching it up previewing frequently.
 
 Now, the snapshotting business is much easier, with a window that stays always on top and allows immediate and delayed snapshots, triggered by a click or by hovering over the buttons for some time.
 
@@ -20,4 +20,4 @@ A menu entry in the *Wiki* menu of the editor allows you to preview and upload t
 
 So now the flood-gates are open, and this Wiki will hopefully see a flurry of new tutorials\!
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

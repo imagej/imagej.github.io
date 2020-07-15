@@ -16,4 +16,4 @@ The CMP-BIA tools is a package for ImageJ/Fiji which will perform image segmenta
 
 We are exploiting here our Czech connections and are looking forward to many more cool tools coming to Fiji from CMP-BIA.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

@@ -14,4 +14,4 @@ The aim of this hackathon is to enhance Fiji's 3D visualization and time-lapse a
 
 Look out for some light blogging from Heidelberg on this page and hopefully another major leap in Fiji functionality upon completion of the two weeks long coding spree.
 
-[Category:News](Category:News "wikilink") [Category:Hackathons](Category:Hackathons "wikilink")
+[Category:News](Category_News "wikilink") [Category:Hackathons](Category_Hackathons "wikilink")

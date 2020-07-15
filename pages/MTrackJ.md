@@ -20,10 +20,10 @@ description: test description
 {% capture source%}
 {% include github org='imagescience ' repo='MTrackJ ' %}
 {% endcapture %}
-{% include info-box software='ImageScience ' name='MTrackJ ' maintainer=maintainer author=author source=source status=' ' category='[:Category:Plugins](:Category:Plugins "wikilink") ' website='http://imagescience.org/meijering/software/mtrackj/ ' %}[MTrackJ](http://www.imagescience.org/meijering/software/mtrackj/) is an ImageJ plugin to facilitate motion tracking and analysis.
+{% include info-box software='ImageScience ' name='MTrackJ ' maintainer=maintainer author=author source=source status=' ' category='[:Category:Plugins](_Category_Plugins "wikilink") ' website='http://imagescience.org/meijering/software/mtrackj/ ' %}[MTrackJ](http://www.imagescience.org/meijering/software/mtrackj/) is an ImageJ plugin to facilitate motion tracking and analysis.
 
 The plugin can handle up to five-dimensional (5D) images of any type supported by ImageJ.
 
 MTrackJ is available from the [ImageScience](ImageScience "wikilink") update site.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Tracking](Category:Tracking "wikilink") [Category:ImageScience](Category:ImageScience "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Tracking](Category_Tracking "wikilink") [Category:ImageScience](Category_ImageScience "wikilink")

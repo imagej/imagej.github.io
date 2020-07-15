@@ -240,7 +240,7 @@ Hopefully it should be obvious how I derived the 'projection\_options' string in
 
 Some example output:
 
-![Example anaglyph image](/images/pages/Anaglyph.png "Example anaglyph image")
+![Example anaglyph image](Anaglyph.png "Example anaglyph image")
 
 ## Script Parameters
 
@@ -260,4 +260,4 @@ JRuby offers some more nice features, have a look at them in the JRuby documenta
 
 And of course, if you want to know how to use a class from ImageJ or any of its projects, visit: https://javadoc.imagej.net.
 
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Scripting](Category_Scripting "wikilink")

@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SNT: Tubular Geodesics](SNT:_Tubular_Geodesics "wikilink")
+1.  REDIRECT [SNT: Tubular Geodesics](SNT__Tubular_Geodesics "wikilink")

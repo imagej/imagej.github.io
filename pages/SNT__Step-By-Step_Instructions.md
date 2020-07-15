@@ -15,17 +15,17 @@ description: test description
 
 # Tracing
 
-These instructions assume that you have read the [Overview](SNT:_Overview "wikilink") page, including starting up the plugin, enabling [Cursor Auto-snapping](SNT:_Overview#Auto-snapping "wikilink"), and [Auto-tracing](SNT:_Overview#Auto-tracing "wikilink") options. This section is also documented in a [Screencast](SNT:_Screencasts#Introduction_To_Tracing "wikilink").
+These instructions assume that you have read the [Overview](SNT__Overview "wikilink") page, including starting up the plugin, enabling [Cursor Auto-snapping](SNT__Overview#Auto-snapping "wikilink"), and [Auto-tracing](SNT__Overview#Auto-tracing "wikilink") options. This section is also documented in a [Screencast](SNT__Screencasts#Introduction_To_Tracing "wikilink").
 
 ## Starting A Path
 
 ### I. Pick The Starting Point
 
-![Choosing a starting point](/images/pages/Snt-cropped-before-starting-2.png "Choosing a starting point") You may notice that, by default, the cursor [snaps](SNT:_Overview#Auto-snapping "wikilink") to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {% include key content='S' %}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
+![Choosing a starting point](Snt-cropped-before-starting-2.png "Choosing a starting point") You may notice that, by default, the cursor [snaps](SNT__Overview#Auto-snapping "wikilink") to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {% include key content='S' %}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
 
 ### II. Pick A Subsequent Point
 
-![First point of a path selected](/images/pages/Snt-cropped-after-starting-2.png "First point of a path selected") ![A\* search animated progress](/images/pages/Snt-cropped-mid-tracing-2.png "A* search animated progress") A small circle should appear, highlighting the start of the path. Move through the stack to find a subsequent point further along the same structure to be traced (neuron, blood vessel, etc.), and click there.
+![First point of a path selected](Snt-cropped-after-starting-2.png "First point of a path selected") ![A\* search animated progress](Snt-cropped-mid-tracing-2.png "A* search animated progress") A small circle should appear, highlighting the start of the path. Move through the stack to find a subsequent point further along the same structure to be traced (neuron, blood vessel, etc.), and click there.
 
 If a path between the two points cannot be found immediately, you may see the animated progress of the search. You can scroll through the stack while such a search progresses: If it appears to not be making good progress, it's probably best to press the "Cancel/Esc" button (shortcut: {% include key content='C' %}/{% include key content='Esc' %}) and pick a point closer to the start point. {% include tip id='external-traces ' tip='Increase""Z"" in the ""Cursor Auto-snapping"" panel for automated Z-navigation on signal mouseover. ' %}
 
@@ -35,9 +35,9 @@ Once the search has reached the target point, the path is shown in cyan (to indi
 
 <div align="center">
 
-  - ![A\* search completed](/images/pages/Snt-cropped-confirmation-2.png "A* search completed")
-  - ![A confirmed segment](/images/pages/Snt-cropped-confirmed-2.png "A confirmed segment")
-  - ![A completed path](/images/pages/Snt-cropped-completed-path-2.png "A completed path")
+  - ![A\* search completed](Snt-cropped-confirmation-2.png "A* search completed")
+  - ![A confirmed segment](Snt-cropped-confirmed-2.png "A confirmed segment")
+  - ![A completed path](Snt-cropped-completed-path-2.png "A completed path")
 
 </div>
 
@@ -45,11 +45,11 @@ Once the search has reached the target point, the path is shown in cyan (to indi
 
 ### I. Select The Path To Branch Off
 
-To select the path you want to branch off from, you can either select it in the Path Manager, or press {% include key content='G' %} while the mouse pointer is near the path. When the path is first selected, it will be shown in the default green color. ![[Holding 'G'](/images/pages/SNT: Key Shortcuts#Path Handling "wikilink") (*Group paths around cursor*) will select the closest path to the mouse pointer](Snt-sb-selecting-by-G.gif "Holding 'G' (Group paths around cursor) will select the closest path to the mouse pointer")
+To select the path you want to branch off from, you can either select it in the Path Manager, or press {% include key content='G' %} while the mouse pointer is near the path. When the path is first selected, it will be shown in the default green color. ![[Holding 'G'](SNT__Key_Shortcuts#Path_Handling "wikilink") (*Group paths around cursor*) will select the closest path to the mouse pointer](Snt-sb-selecting-by-G.gif "Holding 'G' (Group paths around cursor) will select the closest path to the mouse pointer")
 
 ### II. Select The Fork Point
 
-![A newly created fork point](/images/pages/Snt-sb-started-branch-2.png "A newly created fork point") To force the start of the new path to be a branch of the selected path, hold down the {% include key content='Alt|Shift' %} keys while you move the mouse to find the branch point under the red cross-hairs, now decorated with a "Fork Point" annotation. With {% include key content='Alt|Shift' %} held down, click with the left mouse button. Finally, release the keys. Note that it is also possible to zoom into the branch point, right-click on the image and choose *Fork at Nearest Node* from the contextual menu.
+![A newly created fork point](Snt-sb-started-branch-2.png "A newly created fork point") To force the start of the new path to be a branch of the selected path, hold down the {% include key content='Alt|Shift' %} keys while you move the mouse to find the branch point under the red cross-hairs, now decorated with a "Fork Point" annotation. With {% include key content='Alt|Shift' %} held down, click with the left mouse button. Finally, release the keys. Note that it is also possible to zoom into the branch point, right-click on the image and choose *Fork at Nearest Node* from the contextual menu.
 
 ### III. Extend The Path
 
@@ -57,9 +57,9 @@ From this point on, you can carry on adding nodes to the branched path as [above
 
 <div align="center">
 
-  - ![1) Temporary path branching-off](/images/pages/Snt-sb-temporary-path-2.png "1) Temporary path branching-off")
-  - ![2) Temporary path confirmed](/images/pages/Snt-sb-confirmed-path-2.png "2) Temporary path confirmed")
-  - ![3) Branched (child) path completed](/images/pages/Snt-sb-completed-branch-2.png "3) Branched (child) path completed")
+  - ![1) Temporary path branching-off](Snt-sb-temporary-path-2.png "1) Temporary path branching-off")
+  - ![2) Temporary path confirmed](Snt-sb-confirmed-path-2.png "2) Temporary path confirmed")
+  - ![3) Branched (child) path completed](Snt-sb-completed-branch-2.png "3) Branched (child) path completed")
 
 </div>
 
@@ -76,9 +76,9 @@ From this point on, you can carry on adding nodes to the branched path as [above
 
 Two paths can be merged or joined in *Edit Mode*. To do so:
 
-1.  Select a path and enter *Edit Mode* (by right-clicking on the image canvas to access its [Contextual menu](SNT:_Overview#Contextual_Menu "wikilink"))
+1.  Select a path and enter *Edit Mode* (by right-clicking on the image canvas to access its [Contextual menu](SNT__Overview#Contextual_Menu "wikilink"))
 2.  Activate the node to be merged by hovering over it
-3.  Select the second path by using the {% include key content='G' %} [shortcut](SNT:_Key_Shortcuts "wikilink") and activate the second merging node by hovering over it
+3.  Select the second path by using the {% include key content='G' %} [shortcut](SNT__Key_Shortcuts "wikilink") and activate the second merging node by hovering over it
 4.  Open the contextual menu and select the initial path from the *Connect To (Start Join)* / *Connect To (End Join)* menu.
 
 If both nodes are terminal, the paths are merged together. Otherwise, one path will become a child of the other. Note that one of the nodes must be terminal, to ensure no loops are created.
@@ -115,22 +115,22 @@ It remains possible to trace in the legacy 3D Viewer. ![](SNT-3D-Dialog.png)
 
 ### I.Starting the Viewer
 
-To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see 3 parameters: ![SNT-Image-Resampling-Factor.png](/images/pages/SNT-Image-Resampling-Factor.png "SNT-Image-Resampling-Factor.png")
+To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see 3 parameters_ ![SNT-Image-Resampling-Factor.png](SNT-Image-Resampling-Factor.png "SNT-Image-Resampling-Factor.png")
 
   - Select *New with image* from the *Viewer* drop-down menu (selecting *New without image* would only allow you to look at reconstructions without the underlying signal). Note that you can recycle existing viewers you may have open by choosing their window titles from the drop-down menu.
   - Select the preferred rendering style from the *Mode* drop-down menu.
   - Once you *Apply* the viewer choice, a prompt will appear asking you to choose the resampling factor for the image. Then, the viewer window will appear with the currently open image.
 
-![3D viewer showing OP\_1.tif](/images/pages/SNT-Legacy-3D-Viewer.png "3D viewer showing OP 1.tif")
+![3D viewer showing OP\_1.tif](SNT-Legacy-3D-Viewer.png "3D viewer showing OP_1.tif")
 
 ### II.Tracing and Navigation
 
-  - **Selecting points for tracing** Select the *Wand tool* ({% include key content='W' %} [shortcut](SNT:_Key_Shortcuts#Legacy_3D_Viewer "wikilink")) in the main ImageJ toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment as described [above](#Tracing "wikilink"). Similarly, branching occurs as [described for 2D canvas(es)](#Branching:_Start_A_Path_On_An_Existing_Path "wikilink"), by holding the {% include key content='Alt|Shift' %} modifier.
-  - **Rotation** Either use the *Hand tool* ({% include key content='H' %} [shortcut](SNT:_Key_Shortcuts#Legacy_3D_Viewer "wikilink")) tool and left-click while dragging the mouse or drag mouse while holding the scroll wheel.
+  - **Selecting points for tracing** Select the *Wand tool* ({% include key content='W' %} [shortcut](SNT__Key_Shortcuts#Legacy_3D_Viewer "wikilink")) in the main ImageJ toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment as described [above](#Tracing "wikilink"). Similarly, branching occurs as [described for 2D canvas(es)](#Branching__Start_A_Path_On_An_Existing_Path "wikilink"), by holding the {% include key content='Alt|Shift' %} modifier.
+  - **Rotation** Either use the *Hand tool* ({% include key content='H' %} [shortcut](SNT__Key_Shortcuts#Legacy_3D_Viewer "wikilink")) tool and left-click while dragging the mouse or drag mouse while holding the scroll wheel.
   - **Translation** Hold {% include key content='Shift' %} and the scroll wheel while dragging the mouse.
   - **Adjusting zoom depth** Scroll the mouse wheel.
 
-Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {% include key content='Esc' %} key. See [Key Shortcuts](SNT:_Key_Shortcuts#Legacy_3D_Viewer "wikilink") for the list of all supported shortcuts. ![Fiji-toolbar-wand-and-hand-2.png](/images/pages/Fiji-toolbar-wand-and-hand-2.png "Fiji-toolbar-wand-and-hand-2.png")
+Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {% include key content='Esc' %} key. See [Key Shortcuts](SNT__Key_Shortcuts#Legacy_3D_Viewer "wikilink") for the list of all supported shortcuts. ![Fiji-toolbar-wand-and-hand-2.png](Fiji-toolbar-wand-and-hand-2.png "Fiji-toolbar-wand-and-hand-2.png")
 
 # Filling
 
@@ -142,7 +142,7 @@ First, select the one or more paths that you want to fill out from in the Path M
 
 ![A few seconds after selecting "Fill Out..." with 1 path selected](Snt-initial-filling-2.png "A few seconds after selecting \"Fill Out...\" with 1 path selected")
 
-The filler continues to explore the image starting from the path until you click "Pause" or "Stop" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog. ![The filling-related part of the dialog.](/images/pages/Snt-filling-statistics-2.png "The filling-related part of the dialog.") The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". Two lines above, the "Current threshold distance:" shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The "Max. explored distance:" state under this line shows the maximum distance from the path that has been completely explored.
+The filler continues to explore the image starting from the path until you click "Pause" or "Stop" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog. ![The filling-related part of the dialog.](Snt-filling-statistics-2.png "The filling-related part of the dialog.") The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". Two lines above, the "Current threshold distance:" shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The "Max. explored distance:" state under this line shows the maximum distance from the path that has been completely explored.
 
 ### II.Adjusting the Fill Threshold
 
@@ -160,9 +160,9 @@ As you can see in the middle image, the threshold is set too far from the path, 
 
 <div align="center">
 
-  - ![Fill, opaque](/images/pages/Snt-zoomed-filling-2.png "Fill, opaque")
+  - ![Fill, opaque](Snt-zoomed-filling-2.png "Fill, opaque")
   - ![Fill, with "Transparent overlay" on](Snt-transparent-filling-2.png "Fill, with \"Transparent overlay\" on")
-  - ![Fill, refined](/images/pages/Snt-refined-filling-2.png "Fill, refined")
+  - ![Fill, refined](Snt-refined-filling-2.png "Fill, refined")
 
 </div>
 
@@ -181,7 +181,7 @@ The image stack you would get from the image used in this example might look som
 
 # Generating *Filtered Images*
 
-This section describes how to generate [Filtered Images](SNT:_Overview#Tracing_on_Filtered_Image "wikilink") outside SNT. Note that the filtering used in this walk-through (*[Frangi](Frangi "wikilink") Vesselness*) is already supported directly by SNT. This tutorial will assume you need to perform the filtering with adjusted parameters.
+This section describes how to generate [Filtered Images](SNT__Overview#Tracing_on_Filtered_Image "wikilink") outside SNT. Note that the filtering used in this walk-through (*[Frangi](Frangi "wikilink") Vesselness*) is already supported directly by SNT. This tutorial will assume you need to perform the filtering with adjusted parameters.
 
 #### A Single Image
 
@@ -193,12 +193,12 @@ To get the spatial calibration for your image, go to {% include bc content='Imag
 
 <div align="center">
 
-  - ![Step 1](/images/pages/Filtered-image-load.png "Step 1")
-  - ![Step 2](/images/pages/Filtered-image-toggle.png "Step 2")
+  - ![Step 1](filtered-image-load.png "Step 1")
+  - ![Step 2](filtered-image-toggle.png "Step 2")
 
 </div>
 
-To display the image in a separate window, from the SNT dialog use {% include bc content='Show Cached Image'%} from the *gear* menu or {% include bc content='View | Show Cached ""Secondary Image""'%}. ![Secondary Image MIP](/images/pages/Display-filtered-image.png "Secondary Image MIP")
+To display the image in a separate window, from the SNT dialog use {% include bc content='Show Cached Image'%} from the *gear* menu or {% include bc content='View | Show Cached ""Secondary Image""'%}. ![Secondary Image MIP](display-filtered-image.png "Secondary Image MIP")
 
 #### Multiple Images
 
@@ -392,4 +392,4 @@ At this point, you should adjust a suitable <a href="SNT:_Overview#Cursor_Auto-s
 {% include sntnavbar%}
 
 
-[Category:SNT](Category:SNT "wikilink") [Category:Neuroanatomy](Category:Neuroanatomy "wikilink")
+[Category:SNT](Category_SNT "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink")

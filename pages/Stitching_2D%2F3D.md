@@ -126,7 +126,7 @@ For loading microscopic images we use the LOCI Bioformats importer. If you exper
 
 ## Results & Computation time
 
-![Example of Stitching of 3D confocal stacks.](/images/pages/ResultsStitching.jpg "Example of Stitching of 3D confocal stacks.")  
+![Example of Stitching of 3D confocal stacks.](ResultsStitching.jpg "Example of Stitching of 3D confocal stacks.")  
 The figure shows stitched images of 3D confocal tiles. (A) shows a Drosophila melanogaster pupae expressing a GFP reporter under the regulation of the yellow gene, imaged few hours before eclosion using a 4× dry lens on an Optiphot confocal microscope (Nikon). It was stitched from three image stacks arranged in a 1 × 3 grid (Table 1 first row). The maximum intensity projection is shown. (B) shows the Drosophila larval nervous system stained with three dyes, stitched from a grid of 2 × 3 RGB images (see table 1 second row), the maximum intensity projection is shown. (C) shows a zone in the dorsal telencephalon of human embryonic tissue from week 17 post conception, incubated for 24 hours at 37°C in DiI. It was imaged using a 63×/1.4 objective on Zeiss LSM 510 equipped with a motorized stage. The final image was created from 24 image stacks arranged in a 4 × 6 grid (see table 1 third row), slice 18 is shown. Special thanks to Nicolas Gompel, James W. Truman, Simone Fietz and Wieland B. Huttner for providing the images.
 
 [For interactive examples of these datasets have a look here.](http://fly.mpi-cbg.de/~preibisch/stitching.html)
@@ -151,4 +151,4 @@ For any type of comment, questions or input please write to preibisch@mpi-cbg.de
   - [TrakEM2](TrakEM2 "wikilink") for non-destructive stitching with floating, adjustable images.
   - [XuvTools](http://www.xuvtools.org/doku.php) similar stitching software from the University of Freiburg and the [abstract](http://dx.doi.org/10.1111/j.1365-2818.2008.03094.x) of the accompying publication
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Registration](Category:Registration "wikilink") [Category:Stitching](Category:Stitching "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:Stitching](Category_Stitching "wikilink")

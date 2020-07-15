@@ -181,4 +181,4 @@ actually gives you the newest hottest version of that submodule, that is potenti
 
 So what happens if I do "git submodule update", but in the submodule I am on an experimental branch, that is not valid for the superproject? This will set the submodule to the status valid for your current fiji commit, if you are not on the branch specified, it will detach the HEAD you are on. This means you will be on a no-name branch in the submodule now (for this to work you must not have any uncommited changes in the submodule branch you were on before)
 
-[Category:Git](Category:Git "wikilink")
+[Category:Git](Category_Git "wikilink")

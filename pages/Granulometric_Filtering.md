@@ -34,4 +34,4 @@ This plugin and technique is described by its author (and colleagues) in the fol
 
 Image:Gran\_an\_example\_1.png|Original segmented image Image:Gran\_an\_example\_2.png|Selecting blobs of radius 10 to 12 px Image:Gran\_an\_example\_3.png|Selecting blobs of radius 5 to 7 px Image:Gran\_an\_example\_4.png|The three images merged
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Particle analysis](Category:Particle_analysis "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Particle analysis](Category_Particle_analysis "wikilink")

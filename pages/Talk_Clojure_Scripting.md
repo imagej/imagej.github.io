@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-This page starts to be really large. How about splitting in 3 pages, one per paragraph? [JeanYvesTinevez](User:JeanYvesTinevez "wikilink") 13:58, 3 February 2009 (CET)
+This page starts to be really large. How about splitting in 3 pages, one per paragraph? [JeanYvesTinevez](User_JeanYvesTinevez "wikilink") 13:58, 3 February 2009 (CET)

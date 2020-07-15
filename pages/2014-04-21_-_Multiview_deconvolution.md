@@ -10,7 +10,7 @@ description: test description
 
 **Stephan Preibisch's** multiview deconvolution algorithm and the associated Fiji plugin was published at [Nature Methods](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2929.html). The approach is relevant especially as a fusion strategy for SPIM data,
 
-Stephan Preibisch, Fernando Amat, Evangelia Stamataki, Mihail Sarov, Robert H Singer, Eugene Myers & Pavel Tomancak (2014) **Efficient Bayesian-based multiview deconvolution** *Nature Methods* AOP <doi:10.1038/nmeth.2929> [**PDF**](Media:Nmeth.2929.pdf "wikilink"), [**Supplement**](Media:Nmeth.2929-S1.pdf "wikilink")
+Stephan Preibisch, Fernando Amat, Evangelia Stamataki, Mihail Sarov, Robert H Singer, Eugene Myers & Pavel Tomancak (2014) **Efficient Bayesian-based multiview deconvolution** *Nature Methods* AOP <doi:10.1038/nmeth.2929> [**PDF**](Media_Nmeth.2929.pdf "wikilink"), [**Supplement**](Media_Nmeth.2929-S1.pdf "wikilink")
 
 Check out the extensive supplement that provides the derivation of the algorithm (for the mathematically inclined) and extensive evaluation and benchmarking against other approaches. The GPU code was developed by **Fernando Amat** from Philipp Keller's lab at the Janelia Farm.
 
@@ -22,8 +22,8 @@ The [**documentation**](Multi-View_Deconvolution "wikilink") for the Fiji plugin
 
 Finally, a Figure from the paper showing that multi-view deconvolution matters\!
 
-[700px](FIle:MV_deconv_examples.jpg "wikilink")
+[700px](FIle_MV_deconv_examples.jpg "wikilink")
 
 This is probably not the last answer to SPIM data deconvolution. We are looking forward to the input from the computer vision community to this hard problem.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

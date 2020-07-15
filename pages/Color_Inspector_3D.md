@@ -12,4 +12,4 @@ description: test description
 
 Not hardware accelerated.
 
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Plugins](Category_Plugins "wikilink")

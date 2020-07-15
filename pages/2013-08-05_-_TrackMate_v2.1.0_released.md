@@ -19,15 +19,15 @@ We are grateful to Jan Brocher and Masanari Takamiya for comments and bug report
   - Major rewrite of the core track model to achieve a far better performance when manually editing a very large datasets. You can now interactively edit large datasets without the GUI becoming too sluggish.
   - You can now preview the detection parameters on the current frame before applying it to the whole data:
 
-![TrackMate\_v2.1.0\_PreviewDetection.png](/images/pages/TrackMate v2.1.0 PreviewDetection.png "TrackMate v2.1.0 PreviewDetection.png")
+![TrackMate\_v2.1.0\_PreviewDetection.png](TrackMate_v2.1.0_PreviewDetection.png "TrackMate_v2.1.0_PreviewDetection.png")
 
   - The detection step is now interruptible in the GUI. A click on the cancel button will gracefully interrupt the detection process, and yields the spots found so far. They can be used later on normally.
 
-![TrackMate\_v2.1.0\_InterruptDetection.png](/images/pages/TrackMate v2.1.0 InterruptDetection.png "TrackMate v2.1.0 InterruptDetection.png")
+![TrackMate\_v2.1.0\_InterruptDetection.png](TrackMate_v2.1.0_InterruptDetection.png "TrackMate_v2.1.0_InterruptDetection.png")
 
   - The HyperStack viewer and editor has now a configuration panel that has a log window and some tools for manual annotation:
 
-![TrackMate\_v2.1.0\_TrackMateTools.png](/images/pages/TrackMate v2.1.0 TrackMateTools.png "TrackMate v2.1.0 TrackMateTools.png")
+![TrackMate\_v2.1.0\_TrackMateTools.png](TrackMate_v2.1.0_TrackMateTools.png "TrackMate_v2.1.0_TrackMateTools.png")
 
   - Semi-automatic tracking: Select one (or more) spot, TrackMate will find its most likely successors:
 
@@ -51,6 +51,6 @@ We are grateful to Jan Brocher and Masanari Takamiya for comments and bug report
   - A 'Locale' problem prevented the entering of numerical features correctly on system relying on other decimal separators that the dot. TrackMate now enforces the dot to be used as a decimal separator on all Locales. <b>However</b> there are still reports that this fails on Windows machine with exotic (*i.e.* non dot as decimal separator) locales.
   - Numerous other bugfixes.
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 05:03, 5 August 2013 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 05:03, 5 August 2013 (CDT)
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

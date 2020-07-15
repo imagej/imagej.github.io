@@ -8,7 +8,7 @@ categories: Jython,Scripting
 description: test description
 ---
 
-Here is a [Jython](:Category:Jython "wikilink") script that does the analysis of a FRAP movie. It was developed during the [Image Processing School Pilsen 2009](Image_Processing_School_Pilsen_2009 "wikilink"), and updated to modern Fiji.
+Here is a [Jython](_Category_Jython "wikilink") script that does the analysis of a FRAP movie. It was developed during the [Image Processing School Pilsen 2009](Image_Processing_School_Pilsen_2009 "wikilink"), and updated to modern Fiji.
 
 Once the user has loaded a good FRAP movie, [well aligned with no drift](Correcting_drift_in_FRAP_experiments‎ "wikilink"), and has specified the ROI for the FRAP zone and another for the control zone, it should be possible to automate the analysis of the FRAP curve. This is what this script aims to do:
 
@@ -150,4 +150,4 @@ str2 = "Mobile fraction = %.1f %%" % (100 * mobile_fraction)
 IJ.log( str2 )
 ```
 
-[Category:Jython](Category:Jython "wikilink") [Category:Scripting](Category:Scripting "wikilink")
+[Category:Jython](Category_Jython "wikilink") [Category:Scripting](Category_Scripting "wikilink")

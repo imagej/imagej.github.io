@@ -82,4 +82,4 @@ There was a big focus this time on machine learning, particularly deep learning 
       - In case the DFG grant comes in and we hired the 2 people they will start implementing the new way of cutting stable releases. This will be great\!
   - How to integrate ImageJ, KNIME and machine learning frameworks (particularly Keras and TensorFlow)
 
-[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:Fiji](Category:Fiji "wikilink")
+[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Fiji](Category_Fiji "wikilink")

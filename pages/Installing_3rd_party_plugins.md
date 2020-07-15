@@ -19,7 +19,7 @@ description: test description
 <!-- end list -->
 
   -   
-    ![Install-Plugin-DragNDrop.png](/images/pages/Install-Plugin-DragNDrop.png "Install-Plugin-DragNDrop.png")
+    ![Install-Plugin-DragNDrop.png](Install-Plugin-DragNDrop.png "Install-Plugin-DragNDrop.png")
 
 <!-- end list -->
 
@@ -33,7 +33,7 @@ description: test description
 <!-- end list -->
 
   -   
-    ![Install-Plugin.png](/images/pages/Install-Plugin.png "Install-Plugin.png")
+    ![Install-Plugin.png](Install-Plugin.png "Install-Plugin.png")
 
 <!-- end list -->
 
@@ -75,4 +75,4 @@ Please make sure that your .config file is designed such that the menus fit in s
 
 Then just "make", and the plugin will be automatically installed.
 
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink")

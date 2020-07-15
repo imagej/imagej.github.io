@@ -10,7 +10,7 @@ description: test description
 
 {% include component-stats content=':sc.fiji:3D\_Viewer' %}This plugin offers hardware-accelerated visualization possibilities for image stacks, using the [Java 3D](Java_3D "wikilink") library. Stacks can be displayed as texture-based volume renderings, surfaces or orthoslices.
 
-![3D\_Viewer\_overview.png](/images/pages/3D Viewer overview.png "3D Viewer overview.png")
+![3D\_Viewer\_overview.png](3D_Viewer_overview.png "3D_Viewer_overview.png")
 
 ## Screencasts
 
@@ -18,7 +18,7 @@ Here you are a demo screencast separated into two different videos (\~15 min in 
 
 {% include youtube url='https://www.youtube.com/embed/cD3Hc3NYkaU'%} {% include youtube url='https://www.youtube.com/embed/GqG\_RcK3kYg'%}
 
-Beyond this, a lot more screencasts can be found [here](3D_Viewer:_Screencasts "wikilink"), covering the following topics:
+Beyond this, a lot more screencasts can be found [here](3D_Viewer__Screencasts "wikilink"), covering the following topics:
 
   - Display stacks
   - Rendering modes and attributes
@@ -31,7 +31,7 @@ Beyond this, a lot more screencasts can be found [here](3D_Viewer:_Screencasts "
 
 ## For users
 
-Comprehensive usage guidelines in form of FAQs and tutorials can be found [here](3D_Viewer:_User_FAQs "wikilink").
+Comprehensive usage guidelines in form of FAQs and tutorials can be found [here](3D_Viewer__User_FAQs "wikilink").
 
 ## For developers
 
@@ -46,7 +46,7 @@ univ.addMesh(yourImagePlus, null, "somename", 50, new boolean[] {true, true, tru
 ...
 ```
 
-Full documentation for developers with tutorials and explained code snippets can be found [here](3D_Viewer:_Developer_Documentation "wikilink").
+Full documentation for developers with tutorials and explained code snippets can be found [here](3D_Viewer__Developer_Documentation "wikilink").
 
 ### Javadocs
 
@@ -80,4 +80,4 @@ As with 3D Viewer crashes, there are quite a large number of possible reasons. P
 
   - {% include publication content='3D Viewer' %}
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Visualization](Category:Visualization "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Visualization](Category_Visualization "wikilink") [Category:Citable](Category_Citable "wikilink")

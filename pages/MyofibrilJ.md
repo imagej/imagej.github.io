@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='giocard ' repo='MyofibrilJ ' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji ' name='MyofribilJ ' maintainer=maintainer author=author source=source released='November 2017 ' category='[Analysis](:Category:Analysis "wikilink"), [Scripting](:Category:Scripting "wikilink"), [Plugins](:Category:Plugins "wikilink") ' %}
+{% include info-box software='ImageJ/Fiji ' name='MyofribilJ ' maintainer=maintainer author=author source=source released='November 2017 ' category='[Analysis](_Category_Analysis "wikilink"), [Scripting](_Category_Scripting "wikilink"), [Plugins](_Category_Plugins "wikilink") ' %}
 
 ## Introduction
 
@@ -67,4 +67,4 @@ The easiest way to install *MyofibrilJ* is by [adding](Following_an_update_site#
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[Category:Scripting](Category:Scripting "wikilink") [Category:Analysis](Category:Analysis "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Scripting](Category_Scripting "wikilink") [Category:Analysis](Category_Analysis "wikilink") [Category:Plugins](Category_Plugins "wikilink")

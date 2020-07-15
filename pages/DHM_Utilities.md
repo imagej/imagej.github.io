@@ -18,7 +18,7 @@ description: test description
 {% endcapture %}
 
 {% capture founders%}
-{% include person content='David Cohoe' %} ([1](mailto:dcohoe@pdx.edu))
+{% include person content='David Cohoe' %} ([1](mailto_dcohoe@pdx.edu))
 {% endcapture %}
 
 {% capture leads%}
@@ -54,4 +54,4 @@ DHM Utilities is a collection of plugins for use in Digital Holographic Microsco
 
 The plugins use ImageJ2's plugin system, and are highly configurable. If you wish to add to one of these plugins, please check its own page.
 
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Plugins](Category_Plugins "wikilink")

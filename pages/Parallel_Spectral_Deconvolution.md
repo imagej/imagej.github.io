@@ -8,7 +8,7 @@ categories: Plugins,Deconvolution
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Parallel Spectral Deconvolution 2D and 3D ' author='Piotr Wendykier ' filename=' [parallel\_spectral\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-bin.zip) ' source=' [parallel\_spectral\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-src.zip) ' released='27 September 2007 ' latest-version='11 April 2009 ' category='[Deconvolution](:Category:Deconvolution "wikilink") ' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution ' %}
+{% include info-box software='ImageJ ' name='Parallel Spectral Deconvolution 2D and 3D ' author='Piotr Wendykier ' filename=' [parallel\_spectral\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-bin.zip) ' source=' [parallel\_spectral\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-src.zip) ' released='27 September 2007 ' latest-version='11 April 2009 ' category='[Deconvolution](_Category_Deconvolution "wikilink") ' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution ' %}
 
 ## Purpose
 
@@ -36,7 +36,7 @@ Parallel Spectral Deconvolution is an ImageJ plugin for spectral image deblurrin
 
 ## How to use
 
-![ParallelSpectralDeconvolutionDialog.jpg](/images/pages/ParallelSpectralDeconvolutionDialog.jpg "ParallelSpectralDeconvolutionDialog.jpg")
+![ParallelSpectralDeconvolutionDialog.jpg](ParallelSpectralDeconvolutionDialog.jpg "ParallelSpectralDeconvolutionDialog.jpg")
 
 There are seven drop-down lists (combo-boxes) available in the GUI. From the Image list, you can choose a blurred image. PSF list is for selection of a point spread function image. The content of these two lists depends on what is currently open in ImageJ - if no image windows are displayed then both lists are empty. The next two lists (Method and Stencil) allow you to choose an algorithm used for deconvolution (Generalized Tikhonov, Tikhonov or TSVD) and a stencil (for Generalized Tikhonov only). The stencil is used for creating a regularization matrix (an approximation of a derivative operator). A detailed explanation of all algorithms can be found in Deblurring Images: Matrices, Spectra, and Filtering. In the Resizing combo-box you can choose whether the blurred image will be padded to the next power-of-two size before processing. This feature is available mainly for performance reasons (FFT works faster when the size of the data is a power-of-two number). Note that if the size of each dimension of a blurred image is already a power-of-two number, then the image will not be padded even if the Next power of two option is selected. To display a padded image, the Show padded image check-box needs to be selected. The Output list is used to specify the type of an output (reconstructed image). Finally, in the Precision combo-box you can choose a floating-point precision used in computations. Practice shows that a single precision is sufficient for most problems.
 
@@ -58,21 +58,21 @@ To use these tools you need to know some parameters of your microscope setup and
 
 After opening the image to deconvolve and the image of the PSF, start {% include bc content='Plugins | Deconvolution | 2D Spectral Deconvolution...'%}
 
-![ParallelSpectralDeconvolution2DExample.jpg](/images/pages/ParallelSpectralDeconvolution2DExample.jpg "ParallelSpectralDeconvolution2DExample.jpg")
+![ParallelSpectralDeconvolution2DExample.jpg](ParallelSpectralDeconvolution2DExample.jpg "ParallelSpectralDeconvolution2DExample.jpg")
 
 Clicking on the Deconvolve button results in this:
 
-![ParallelSpectralDeconvolution2DExampleResult.jpg](/images/pages/ParallelSpectralDeconvolution2DExampleResult.jpg "ParallelSpectralDeconvolution2DExampleResult.jpg")
+![ParallelSpectralDeconvolution2DExampleResult.jpg](ParallelSpectralDeconvolution2DExampleResult.jpg "ParallelSpectralDeconvolution2DExampleResult.jpg")
 
 ## 3D Example
 
 After opening the image to deconvolve and the image of the PSF, start {% include bc content='Plugins | Deconvolution | 3D Spectral Deconvolution...'%}
 
-![ParallelSpectralDeconvolution3DExample.jpg](/images/pages/ParallelSpectralDeconvolution3DExample.jpg "ParallelSpectralDeconvolution3DExample.jpg")
+![ParallelSpectralDeconvolution3DExample.jpg](ParallelSpectralDeconvolution3DExample.jpg "ParallelSpectralDeconvolution3DExample.jpg")
 
 Clicking on the Deconvolve button results in this:
 
-![ParallelSpectralDeconvolution3DExampleResult.jpg](/images/pages/ParallelSpectralDeconvolution3DExampleResult.jpg "ParallelSpectralDeconvolution3DExampleResult.jpg")
+![ParallelSpectralDeconvolution3DExampleResult.jpg](ParallelSpectralDeconvolution3DExampleResult.jpg "ParallelSpectralDeconvolution3DExampleResult.jpg")
 
 ## See also
 
@@ -145,4 +145,4 @@ Clicking on the Deconvolve button results in this:
       - Refactoring and cosmetic changes.
       - The plugin is updated to use Parallel Colt 0.7.2.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Deconvolution](Category:Deconvolution "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Deconvolution](Category_Deconvolution "wikilink")

@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji ' repo='VIB ' source='Delaunay\_Voronoi.java ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Delaunay/Voronoi ' author='Johannes Schindelin, L. Paul Chew ' maintainer='Johannes Schindelin ' source=source released='14 August 2006 ' latest-version='11 December 2008 ' status='stable ' category='[Image annotation](:Category:Image_annotation "wikilink") ' %}
+{% include info-box software='ImageJ ' name='Delaunay/Voronoi ' author='Johannes Schindelin, L. Paul Chew ' maintainer='Johannes Schindelin ' source=source released='14 August 2006 ' latest-version='11 December 2008 ' status='stable ' category='[Image annotation](_Category_Image_annotation "wikilink") ' %}
 
 ## Purpose
 
@@ -28,7 +28,7 @@ The dual problem is the Voronoi Diagram: given a set of points, visualize those 
 
 A picture says more than thousand words:
 
-![The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black](/images/pages/Delaunay-voronoi.png "The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black")
+![The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black](Delaunay-voronoi.png "The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black")
 
 ## Usage
 
@@ -42,7 +42,7 @@ This plugin operates on a point selection consisting of multiple points.
 
 The plugin shows this dialog when it is called:
 
-![Delaunay-dialog.png](/images/pages/Delaunay-dialog.png "Delaunay-dialog.png")
+![Delaunay-dialog.png](Delaunay-dialog.png "Delaunay-dialog.png")
 
 Options include:
 
@@ -61,4 +61,4 @@ Options include:
   - 2007/07/20: Optionally generate a ROI instead of an overlay or drawing the lines
   - 2008/11/27: Optionally export the lines of the Delaunay Triangulation into the Results table
 
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Plugins](Category_Plugins "wikilink")

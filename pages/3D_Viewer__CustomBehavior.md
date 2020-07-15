@@ -8,12 +8,12 @@ categories:
 description: test description
 ---
 
-(Return to the [Developer Documentation](3D_Viewer:_Developer_Documentation "wikilink") page)  
+(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation "wikilink") page)  
 (Return to the main [3D\_Viewer](3D_Viewer "wikilink") page)
 
 ## How to catch and handle events on the 3D canvas
 
-You can download example source code for this HowTo [here](3D_Viewer:_Example_code "wikilink").
+You can download example source code for this HowTo [here](3D_Viewer__Example_code "wikilink").
 
 This howto shows how to catch and handle mouse or key events:
 

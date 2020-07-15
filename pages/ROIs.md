@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% include wip%}
- In [image processing](wikipedia:Image_processing "wikilink"), two of the most often needed yet complex operations are [segmentation](wikipedia:Segmentation_\(image_processing\) "wikilink") and [registration](wikipedia:Image_registration "wikilink"). Regions of interest (ROIs) are an effective way of expressing and visualizing the results of a segmentation. For the current implementation of ROIs in ImageJ, see the [imglib2-roi](https://github.com/imglib/imglib2-roi) repository.
+ In [image processing](wikipedia_Image_processing "wikilink"), two of the most often needed yet complex operations are [segmentation](wikipedia_Segmentation_\(image_processing\) "wikilink") and [registration](wikipedia_Image_registration "wikilink"). Regions of interest (ROIs) are an effective way of expressing and visualizing the results of a segmentation. For the current implementation of ROIs in ImageJ, see the [imglib2-roi](https://github.com/imglib/imglib2-roi) repository.
 
 # Introduction
 
@@ -86,7 +86,7 @@ The boundary behavior of a ROI may change as a result of the operation. The belo
 | transform<sup>1<sup> | open         |
 | transform<sup>2<sup> | unspecified  |
 
-style="caption-side:bottom; text-align: left; font-size: 0.9em; font-weight: normal;"|<sup>1</sup> Transform is [continuous](wikipedia:Continuous_function "wikilink") (preserves boundary behavior) and will preserve the interval bounds  
+style="caption-side:bottom; text-align: left; font-size: 0.9em; font-weight: normal;"|<sup>1</sup> Transform is [continuous](wikipedia_Continuous_function "wikilink") (preserves boundary behavior) and will preserve the interval bounds  
 <sup>2</sup> Transform is discontinuous or doesn't preserve bounds
 
 ### Binary Operators

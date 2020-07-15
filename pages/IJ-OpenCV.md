@@ -20,4 +20,4 @@ Several ImageJ plugins have been developed using this library and can be easily 
 
   - {% include publication content='IJ-OpenCV' %}
 
-[Category:Citable](Category:Citable "wikilink")
+[Category:Citable](Category_Citable "wikilink")

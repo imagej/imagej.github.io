@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Adiposoft ' author=' [CIMA](https://cima.unav.edu/) , [University of Navarra](http://www.unav.edu/) . ' maintainer='[Mikel Ariz](mailto:mikelariz@unav.es) ' released='April 2012 ' latest-version='January 2019 ' status='stable, active ' publications=' [JLR](http://www.jlr.org/content/53/12/2791.short) ' category='[Segmentation](:Category:Segmentation "wikilink") ' %}
+{% include info-box software='ImageJ ' name='Adiposoft ' author=' [CIMA](https://cima.unav.edu/) , [University of Navarra](http://www.unav.edu/) . ' maintainer='[Mikel Ariz](mailto_mikelariz@unav.es) ' released='April 2012 ' latest-version='January 2019 ' status='stable, active ' publications=' [JLR](http_//www.jlr.org/content/53/12/2791.short) ' category='[Segmentation](_Category_Segmentation "wikilink") ' %}
 
 <img src="/images/pages/Screenshot1.jpg" width="350"/>
 
@@ -20,7 +20,7 @@ A **paper validating Adiposoft** was published by [Journal of Lipid Research](ht
 
 The accurate estimation of the number and size of adipocytes provides relevant information about the growth kinetics and the physiological status of a given tissue or organ. Adiposoft is an automated, open source software for the analysis of white adipose tissue cellularity on histological, hematoxylin and eosin (H\&E) stained sections.
 
-![datasetim.png](/images/pages/Datasetim.png "datasetim.png")
+![datasetim.png](datasetim.png "datasetim.png")
 
 ## Download and Installation
 

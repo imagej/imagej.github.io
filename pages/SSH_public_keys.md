@@ -16,7 +16,7 @@ For such case, you can set up a public/private key pair. Create them with
 
 Usually, it is a good idea to create a public/private key pair for specific purposes, so that a single compromised key (see [an example](http://www.debian.org/security/2008/dsa-1576) how that can happen even if you did not do anything wrong) does not affect all of your machines. So, change the default name *id\_dsa* to something like *id\_dsa.fiji* before hitting *Return*.
 
-You can password-protect your private key, in which case you have to use the program [ssh-agent](wikipedia:Ssh-agent "wikilink"), but is is usually more convenient to leave the password empty, in which case you are not even asked for it anymore.
+You can password-protect your private key, in which case you have to use the program [ssh-agent](wikipedia_Ssh-agent "wikilink"), but is is usually more convenient to leave the password empty, in which case you are not even asked for it anymore.
 
 Now you should have a file *id\_dsa.fiji.pub* (the public key) in addition to *id\_dsa.fiji* (the private key).
 
@@ -41,4 +41,4 @@ With this, you can connect to the remote machine with
 
 See also [GitHub's documentation on SSH keys](http://help.github.com/win-set-up-git/).
 
-[Category:Git](Category:Git "wikilink") [Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Git](Category_Git "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")

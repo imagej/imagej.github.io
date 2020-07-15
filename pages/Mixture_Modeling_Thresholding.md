@@ -8,7 +8,7 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Mixture Modeling ' author='Christopher Mei, Maxime Dauphin ' filename=' [Mixture\_Modeling.jar](https://imagej.net/plugins/download/jars/Mixture_Modeling.jar) (18,454 Bytes) ' source='in .jar file ' released='15 December 2003 ' status='unknown ' category='[Segmentation](:Category:Segmentation "wikilink") ' website='https://imagej.net/plugins/mixture-modeling.html ' %}
+{% include info-box software='ImageJ ' name='Mixture Modeling ' author='Christopher Mei, Maxime Dauphin ' filename=' [Mixture\_Modeling.jar](https://imagej.net/plugins/download/jars/Mixture_Modeling.jar) (18,454 Bytes) ' source='in .jar file ' released='15 December 2003 ' status='unknown ' category='[Segmentation](_Category_Segmentation "wikilink") ' website='https://imagej.net/plugins/mixture-modeling.html ' %}
 
 ## Purpose
 
@@ -22,4 +22,4 @@ The plugin returns a histogram with the two Gaussians, the parameters obtained (
 
 It has the same drawbacks as the [Otsu Thresholding](Otsu_Thresholding "wikilink") plugin (by the same author), which is that it behaves annoyingly with stacks.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")

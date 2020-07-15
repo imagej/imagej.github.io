@@ -21,7 +21,7 @@ In ImgLib2, images are manipulated using *Accessors*. For pixel images, you can 
 
 The accessors provided by ImgLib2 typically implement **Cursor** or **RandomAccess**. **Cursor** and **RandomAccess** are aggregations of interfaces covering the above three points. A simplified UML diagram for the interface hierarchy is shown below. (The simplification is with respect to real-coordinate interfaces for continuous images that are left out for now.)
 
-![Simplified UML for ImgLib2 accessor interfaces](/images/pages/Imglib2-accessors-simplified-integer.png "Simplified UML for ImgLib2 accessor interfaces")
+![Simplified UML for ImgLib2 accessor interfaces](imglib2-accessors-simplified-integer.png "Simplified UML for ImgLib2 accessor interfaces")
 
 ImgLib2 supports two basic access patterns:
 
@@ -483,7 +483,7 @@ ImgLib2 is not restricted to rasterized images and integer coordinates It also s
 
 The following image shows the UML diagram for the ImgLib2 accessor interface hierarchy. The real-coordinate counterparts that were missing in the simplified version [ above](ImgLib2_-_Accessors#Introduction "wikilink") are highlighted.
 
-![UML for ImgLib2 accessor interfaces](/images/pages/Imglib2-accessors-real.png "UML for ImgLib2 accessor interfaces")
+![UML for ImgLib2 accessor interfaces](imglib2-accessors-real.png "UML for ImgLib2 accessor interfaces")
 
 Real equivalents of the **Positionable** and **Localizable** interfaces have been added by which real-valued coordinates can be accessed.
 
@@ -497,7 +497,7 @@ Both, **RealRandomAccess** and **RealCursor** are **RealLocalizable**. Note that
 
 ### A RealRandomAccess to Render Mandelbrot Fractals
 
-Let's look at an example. The following code defines a **RealRandomAccess** which computes the [Mandelbrot set](wikipedia:Mandelbrot_set "wikilink"). More precisely, our **RealRandomAccess** can be positioned at an arbitray 2D coordinate in the complex plane. When we **get()** its value, it computes an iteration count for its current position using an [Escape time algorithm](wikipedia:Mandelbrot_set#Escape_time_algorithm "wikilink")
+Let's look at an example. The following code defines a **RealRandomAccess** which computes the [Mandelbrot set](wikipedia_Mandelbrot_set "wikilink"). More precisely, our **RealRandomAccess** can be positioned at an arbitray 2D coordinate in the complex plane. When we **get()** its value, it computes an iteration count for its current position using an [Escape time algorithm](wikipedia_Mandelbrot_set#Escape_time_algorithm "wikilink")
 
 ``` java
 import net.imglib2.RealPoint;
@@ -570,7 +570,7 @@ Our super class [RealPoint](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/i
 
 Finally, we provide the **copy()** and **copyRealRandomAccess()** methods to complete the **RealRandomAccess** interface implementation. A copied accessor is supposed to refer to the same position and value, therefore we **setPosition** in line *051*.
 
-![UML for abstract RealRandomAccess class hierarchy](/images/pages/Imglib2-abstract-accessors-real-new-vertical.png "UML for abstract RealRandomAccess class hierarchy")
+![UML for abstract RealRandomAccess class hierarchy](imglib2-abstract-accessors-real-new-vertical.png "UML for abstract RealRandomAccess class hierarchy")
 
 Now let's use the **MandelbrotRealRandomAccess** to render a pixel image:
 
@@ -639,7 +639,7 @@ cursor.get().set( mb.get() );
 
 **cursor.get()** gives the **UnsignedByteType** reference to the value under the cursor. **mb.get()** gives the **UnsignedByteType** reference to the value computed by the **MandelbrotRealRandomAccess**. Then we **set()** the value of the former to the value of the latter.
 
-When you run the code you will see this: ![Mandelbrot fractal](/images/pages/Mandelbrot-1.png "Mandelbrot fractal")
+When you run the code you will see this: ![Mandelbrot fractal](mandelbrot-1.png "Mandelbrot fractal")
 
 Because we have a **RealRandomAccess** you can zoom in indefinitely (until you hit the **double** precision limit). If you like, you can play around with the scale and offset values. Here is another example obtained with
 
@@ -648,7 +648,7 @@ final double scale = 0.000125;
 final double[] offset = new double[] { -1.3875, 0.045 };
 ```
 
-![Mandelbrot fractal](/images/pages/Mandelbrot-2.png "Mandelbrot fractal")
+![Mandelbrot fractal](mandelbrot-2.png "Mandelbrot fractal")
 
 ### Notes
 

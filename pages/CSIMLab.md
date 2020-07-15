@@ -10,7 +10,7 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Acsenrafilho' %} ([1](mailto:acsenrafilho@gmail.com))
+{% include person content='Acsenrafilho' %} ([1](mailto_acsenrafilho@gmail.com))
 {% endcapture %}
 
 {% capture maintainer%}
@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='CSIM-Toolkits ' repo='ImageJ ' label='GitHub CSIM-ImageJ repository ' %}
 {% endcapture %}
-{% include info-box name='CSIM Laboratory ImageJ ' software='Fiji ' author=author maintainer=maintainer source=source released='February 01<sup>st</sup>, 2015 ' latest-version='February 01<sup>st</sup>, 2015 ' status='experimental, active ' category='[Plugins](:Category:Plugins "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Feature](:Category:Noise_Generator "wikilink") ' %}== Purpose ==
+{% include info-box name='CSIM Laboratory ImageJ ' software='Fiji ' author=author maintainer=maintainer source=source released='February 01<sup>st</sup>, 2015 ' latest-version='February 01<sup>st</sup>, 2015 ' status='experimental, active ' category='[Plugins](_Category_Plugins "wikilink"), [Filtering](_Category_Filtering "wikilink"), [Feature](_Category_Noise_Generator "wikilink") ' %}== Purpose ==
 
 Promote plugins, macros and scripts created by the Computing in Signal and Image in Medicine research group (CSIM). All the code implemented here have a specific applications, where are related with the basic image analysis such as image filtering, registration, feature extraction and others. Please, be free to install our plugins, macros and scripts from the ImageJ Updater or even contribute with our codes on GitHub repository ({% include github org='CSIM-Toolkits ' repo='ImageJ ' label='GitHub CSIM-ImageJ repository ' %}).
 

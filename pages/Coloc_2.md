@@ -10,7 +10,7 @@ description: test description
 
 {% include component-stats content=':sc.fiji:Colocalisation\_Analysis' %}= What is Coloc 2 =
 
-Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs the pixel intensity correlation over space methods of [Pearson](wikipedia:Pearson_product-moment_correlation_coefficient "wikilink"), [Manders](Media:Manders.pdf "wikilink"), [Costes](Media:Costes_etalColoc.pdf "wikilink"), [Li](Media:LietAlColoc.pdf "wikilink") and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
+Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs the pixel intensity correlation over space methods of [Pearson](wikipedia_Pearson_product-moment_correlation_coefficient "wikilink"), [Manders](Media_Manders.pdf "wikilink"), [Costes](Media_Costes_etalColoc.pdf "wikilink"), [Li](Media_LietAlColoc.pdf "wikilink") and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 
 Coloc 2 does NOT perform object based colocalization measurements, where objects are first segmented from the image, then their spatial relationships like overlap etc. are measured. This complementary approach is implemented in many ways elsewhere.
 
@@ -20,10 +20,10 @@ Coloc 2 does NOT perform object based colocalization measurements, where objects
 
 1.  Read the original papers describing the analysis you are about to perform.
     1.  Don't treat this tool as a black box - try to understand what the strengths and limitations are and what the results could mean.
-        1.  [Pearson's correlation, r](wikipedia:Pearson_product-moment_correlation_coefficient "wikilink")
-        2.  [Manders paper](Media:Manders.pdf "wikilink")
-        3.  [Costes paper](Media:Costes_etalColoc.pdf "wikilink")
-        4.  [Li paper](Media:LietAlColoc.pdf "wikilink")
+        1.  [Pearson's correlation, r](wikipedia_Pearson_product-moment_correlation_coefficient "wikilink")
+        2.  [Manders paper](Media_Manders.pdf "wikilink")
+        3.  [Costes paper](Media_Costes_etalColoc.pdf "wikilink")
+        4.  [Li paper](Media_LietAlColoc.pdf "wikilink")
 2.  Open images to analyze.
     1.  You need a 2 color channel image. If the image has more than 2 channels, identify the two you want to analyze with each other, then split the channels into separate images (Image- Color - Split Channels)
     2.  Z stacks work fine. But time series will fail until that is fixed. For now, please split the time series into a numbered set of images and analyse those one by one. See https://github.com/fiji/Colocalisation_Analysis/issues/6
@@ -44,7 +44,7 @@ Coloc 2 does NOT perform object based colocalization measurements, where objects
     2.  Turn the options on/off by clicking the selection button at the left of the Algorithm description
     3.  Also choose the approximate size of the point spread function (PSF) in your images, as well as the number of iterations to run the Costes statistical significance test (We suggest a large number... the larger the number, the longer the analysis will take. Do, at the very very least, 10 iterations (100 would be better).)
         1.  You should know approximately how big the PSF is (in pixels) in your images.
-        2.  If you don't, go back and read about: What is the PSF? Why is it important in colocalization analysis? (for instance: read the [Costes paper](Media:Costes_etalColoc.pdf "wikilink") )
+        2.  If you don't, go back and read about: What is the PSF? Why is it important in colocalization analysis? (for instance: read the [Costes paper](Media_Costes_etalColoc.pdf "wikilink") )
         3.  This size determines what size of image 'chunks' are shuffled in the randomization process. (PSF-sized image pieces make physical sense, as that's the size of the smallest features visible in the image.)
 7.  Click OK to run the analysis.
 8.  The results gui will open showing a table of numbers and one of several images
@@ -63,7 +63,7 @@ That means it does not like images with high zero offset, where no light detecte
 
 Notice: the image contains large areas of background, with similar low values of pixel intensities in both channels. This means there is strong correlation in the background areas, which interferes with the interesting biological correlation in the high signal areas where the biology is located. This means it is important to set a biologically relevant region of interest (ROI) and not analyse the whole image. We must avoid analyzing the highly correlated, but uninteresting, background areas. See the section below...
 
-![BadOffsetConfusesCostesAutoThreshold.png](/images/pages/BadOffsetConfusesCostesAutoThreshold.png "BadOffsetConfusesCostesAutoThreshold.png")
+![BadOffsetConfusesCostesAutoThreshold.png](BadOffsetConfusesCostesAutoThreshold.png "BadOffsetConfusesCostesAutoThreshold.png")
 
 ## Effect of noise on Pearson's and Manders' coefficients
 
@@ -75,13 +75,13 @@ Background and digital offset should be subtracted (this doesn't affect Pearson'
 
 As is often true for DAPI nuclear stain and GFP dye pairs, when images are captured at the same time, with both dyes being excited and detected simultaneously, fluorescence emission bleed through gives misleading results, as the signal from the DAPI also appears in the GFP detection channel\! Where there is more DAPI, there is also more signal in the GFP channel. This looks like really good colocalization, but of course it is totally false\! It is a problem with the imaging systems not being set up correctly or not used correctly. This can also happen with many other dye combinations, if they have overlapping emission spectra. Always check your spectra. You can do that here: [Invitrogen Fluorescent Dye Spectra Viewer](http://probes.invitrogen.com/servlets/spectraviewer). To be safe, check your emission filter sets don't allow in the wrong signal, and do **"sequential imaging"**, so you only excite and image one dye at a time.
 
-![ColocBleedThru.png](/images/pages/ColocBleedThru.png "ColocBleedThru.png")
+![ColocBleedThru.png](ColocBleedThru.png "ColocBleedThru.png")
 
 ## Regions of interest (ROIs)
 
 Whether or not to consider zero - zero pixels as part of the interesting data for the algorithms to deal with. If you think about it, in a fluorescence image there is typically quite a large area which is black in both channels. For instance where there is space between cells, or just no signal in either channel since that area is not part of an interesting area of the sample. A philosophical point but a significant one: Why bother taking images of black areas? Why bother analyzing black areas for colocalisation? Surely you are not interested in those regions, as they contain no information of use to you? If you perform these pixel intensity correlation methods and include zero zero pixels, then of course these pixels have a very high correlation\! They have the same value. But they are totally uninteresting\! Sure, the auto threshold method excludes them from the tM1 and tM2 figures, but why include them in the first place? Probably better not to include them unless there is a good reason to do that. Why not just image the area, or just analyze the area where your biology is happening? If you analyse an image with large areas of close to zero and zero intensities, then the autothreshold method will tend to lower the thresholds to include more of that non interesting background. If you image the same sample, but only image a patch of the interesting part, say cytoplasm, then the autothreshold will probably give higher thresholds, and exclude more non interesting background, so the thresholded Manders coefficients will better reflect the biologically interesting parts of the image data - right? You can analyze only a region of interest by making an ROI then selecting the use ROI option in the plugin. You can use a regular shape (rectangle or ellipse) or even a freehand ROI to manually select the interesting part of the image and ignore the part you know is background. Yes, this is a subjective decision, so be careful\! You can see in the following example screenshot that for the same misbehaving data set, using an ROI which roughly gets just the cell, the thresholds were calculated properly and the tM1 and tM2 are sensible and lower than 1.00:
 
-![ColocWithROI.png](/images/pages/ColocWithROI.png "ColocWithROI.png")
+![ColocWithROI.png](ColocWithROI.png "ColocWithROI.png")
 
 ## Other pitfalls
 
@@ -144,4 +144,4 @@ You can then refer to consecutive files using consecutive numbers in the array i
 
 "
 
-[Category:Colocalization](Category:Colocalization "wikilink") [Category:Color processing](Category:Color_processing "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Colocalization](Category_Colocalization "wikilink") [Category:Color processing](Category_Color_processing "wikilink") [Category:Plugins](Category_Plugins "wikilink")

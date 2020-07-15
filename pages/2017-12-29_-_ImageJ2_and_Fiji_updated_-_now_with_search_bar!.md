@@ -22,4 +22,4 @@ Developers can extend the capabilities of the search bar by writing [Searcher](h
 
 ImageJ 2.0.0-rc-64 has many other updates as well, including an updated Console/Log window, as well as an updated macOS launcher compatible with Java 9.
 
-[Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:Fiji](Category:Fiji "wikilink") [Category:News](Category:News "wikilink")
+[Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Fiji](Category_Fiji "wikilink") [Category:News](Category_News "wikilink")

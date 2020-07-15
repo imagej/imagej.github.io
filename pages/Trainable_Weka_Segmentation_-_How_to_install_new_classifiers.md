@@ -20,19 +20,19 @@ We assume you are familiar with the [Trainable Weka Segmentation](Trainable_Weka
 
 To get started, from the main plugin GUI click on the Weka button (on the bottom left corner of the window):
 
-![TWS-GUI-ubuntu.png](/images/pages/TWS-GUI-ubuntu.png "TWS-GUI-ubuntu.png")
+![TWS-GUI-ubuntu.png](TWS-GUI-ubuntu.png "TWS-GUI-ubuntu.png")
 
 This will launch the Weka GUI Chooser and, if it is the first time, a warning dialog will be displayed to warn you about the package manager:
 
-![Weka-GUI-Chooser-package-warning-ubuntu.png](/images/pages/Weka-GUI-Chooser-package-warning-ubuntu.png "Weka-GUI-Chooser-package-warning-ubuntu.png")
+![Weka-GUI-Chooser-package-warning-ubuntu.png](Weka-GUI-Chooser-package-warning-ubuntu.png "Weka-GUI-Chooser-package-warning-ubuntu.png")
 
 We can just click OK, go the Weka GUI Chooser window and look for the package manager under the menu {% include bc content='Tools | Package manager'%}, or by pressing {% include key content='Ctrl|U' %}:
 
-![Weka-GUI-Chooser-package-manager.png](/images/pages/Weka-GUI-Chooser-package-manager.png "Weka-GUI-Chooser-package-manager.png")
+![Weka-GUI-Chooser-package-manager.png](Weka-GUI-Chooser-package-manager.png "Weka-GUI-Chooser-package-manager.png")
 
 This will open the Weka Package Manager window:
 
-![Weka-package-manager-window.png](/images/pages/Weka-package-manager-window.png "Weka-package-manager-window.png")
+![Weka-package-manager-window.png](Weka-package-manager-window.png "Weka-package-manager-window.png")
 
 ### Adding a new classifier
 
@@ -40,22 +40,22 @@ Once the package manager is open, we can select any "package" from the displayed
 
 In this tutorial we show how to install a new classifier, in particular the *ClassificationViaClustering* classifier. For that reason, we scroll down until we find the packaged called "classificationViaClustering" and click on "Install":
 
-![Weka-package-manager-classificationViaClustering.png](/images/pages/Weka-package-manager-classificationViaClustering.png "Weka-package-manager-classificationViaClustering.png")
+![Weka-package-manager-classificationViaClustering.png](Weka-package-manager-classificationViaClustering.png "Weka-package-manager-classificationViaClustering.png")
 
 A confirmation dialog will pop up:
 
-![Weka-package-manager-confirmation.png](/images/pages/Weka-package-manager-confirmation.png "Weka-package-manager-confirmation.png")
+![Weka-package-manager-confirmation.png](Weka-package-manager-confirmation.png "Weka-package-manager-confirmation.png")
 
 We click on "Yes" and another dialog will pop up to warn us about closing any active Weka application window that we might have open:
 
-![Weka-warning-install-package.png](/images/pages/Weka-warning-install-package.png "Weka-warning-install-package.png")
+![Weka-warning-install-package.png](Weka-warning-install-package.png "Weka-warning-install-package.png")
 
 We click OK and the package will be installed. If everything goes right, the package should be listed with a "Yes" in the "Loaded" column:
 
-![Weka-package-manager-loaded-package.png](/images/pages/Weka-package-manager-loaded-package.png "Weka-package-manager-loaded-package.png")
+![Weka-package-manager-loaded-package.png](Weka-package-manager-loaded-package.png "Weka-package-manager-loaded-package.png")
 
 This means the *ClassificationViaClustering* classifier **is now installed** and ready to use. We can check it out by going to the settings dialog of the [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") plugin and confirming the classifier is now listed:
 
-![TWS-settings-new-classifier.png](/images/pages/TWS-settings-new-classifier.png "TWS-settings-new-classifier.png")
+![TWS-settings-new-classifier.png](TWS-settings-new-classifier.png "TWS-settings-new-classifier.png")
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Machine Learning](Category:Machine_Learning "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Machine Learning](Category_Machine_Learning "wikilink")

@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='icbm-iupui ' repo='volumetric-tissue-exploration-analysis ' %}
 {% endcapture %}
-{% include info-box name='VTEA ' software='Fiji ' author='Seth Winfree ([1](mailto:winfrees@iu.edu)) ' maintainer='Seth Winfree ([2](mailto:winfrees@iu.edu)) ' source=source status='v0.7, alpha, 1.0.a on deck. ' category='[Segmentation](:Category:Segmentation "wikilink"),[Visualization](:Category:Visualization "wikilink"),[Plugins](:Category:Plugins "wikilink") ' %} \_\_TOC\_\_
+{% include info-box name='VTEA ' software='Fiji ' author='Seth Winfree ([1](mailto_winfrees@iu.edu)) ' maintainer='Seth Winfree ([2](mailto_winfrees@iu.edu)) ' source=source status='v0.7, alpha, 1.0.a on deck. ' category='[Segmentation](_Category_Segmentation "wikilink"),[Visualization](_Category_Visualization "wikilink"),[Plugins](_Category_Plugins "wikilink") ' %} \_\_TOC\_\_
 
 # Volumetric Tissue Exploration and Analysis
 
@@ -30,7 +30,7 @@ description: test description
 
 {% include info-box content='VTEA is still under active development. Version 1.0 is tentatively planned for an October release..' %}
 
-This brief [video](Media:Demostration.mov "wikilink") describes VTEA's core behaviors. VTEA's utility has been demonstrated in this [paper](http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full).
+This brief [video](Media_Demostration.mov "wikilink") describes VTEA's core behaviors. VTEA's utility has been demonstrated in this [paper](http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full).
 
 We developed VTEA out of a need to unify the various tasks involved in image processing, segmenting, exploring and analyzing large 3D fluorescence light microscopy image volumes ranging from 50-100s of microns thick. Our solution is predicated upon the idea that *image processing, segmentation and analysis of 3D image volumes is best implemented with a bidirectional interactive user interface from image processing to analysis*.
 
@@ -89,4 +89,4 @@ The utility of VTEA and 3D tissue cytometry was demonstrated in the following pu
 
 [**Quantitative Three-Dimensional Tissue Cytometry to Study Kidney Tissue and Resident Immune Cells**](http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full) Seth Winfree, Shehnaz Khan, Radmila Micanovic, Michael T. Eadon, Katherine J. Kelly, Timothy A. Sutton, Carrie L. Phillips, Kenneth W. Dunn, and Tarek M. El-Achkar JASN ASN.2016091027; published ahead of print February 2, 2017, <doi:10.1681/ASN.2016091027>
 
-[Category:Segmentation](Category:Segmentation "wikilink") [Category:Visualization](Category:Visualization "wikilink") [Category:Plugins](Category:Plugins "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Segmentation](Category_Segmentation "wikilink") [Category:Visualization](Category_Visualization "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Citable](Category_Citable "wikilink")

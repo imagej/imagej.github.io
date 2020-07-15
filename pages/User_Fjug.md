@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [:User:Jug](:User:Jug "wikilink")
+1.  REDIRECT [:User:Jug](_User_Jug "wikilink")

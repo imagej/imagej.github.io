@@ -26,4 +26,4 @@ Both jobs (and likewise the siblings of the ImageJ synchronizer used to synchron
 
 The synchronizer for Git repositories was designed with flexibility in mind: the information which repositories should be synchronized is passed as command-line parameters. Should it be required, it will be easy to adjust the synchronizer for the Git-SVN mirror to be as flexible.
 
-[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")

@@ -167,4 +167,4 @@ This means that you can refer to the state \_before\_ the rebase by "branch-name
 
 Note: the same is not true for "HEAD@{1}": the reflog for "HEAD" follows every single revision that was current at some stage in the repository.
 
-[Category:Git](Category:Git "wikilink")
+[Category:Git](Category_Git "wikilink")

@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-I do not know where to categorize this plugin as a technique. Filtering? Any suggestion is welcome [JeanYvesTinevez](User:JeanYvesTinevez "wikilink") 18:17, 6 October 2008 (CEST)
+I do not know where to categorize this plugin as a technique. Filtering? Any suggestion is welcome [JeanYvesTinevez](User_JeanYvesTinevez "wikilink") 18:17, 6 October 2008 (CEST)

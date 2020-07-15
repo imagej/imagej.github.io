@@ -22,7 +22,7 @@ If you are passingly familiar with Git, but wish it wasn"t so arcane, check out:
 
 ## Why do we use Git?
 
-  - Git is a first-class [distributed](wikipedia:Distributed_version_control "wikilink") [version control](wikipedia:Version_control "wikilink") system, so we use it to keep a record of changes to avoid loss-of-work and to appropriately explain/document changes as projects develop.
+  - Git is a first-class [distributed](wikipedia_Distributed_version_control "wikilink") [version control](wikipedia_Version_control "wikilink") system, so we use it to keep a record of changes to avoid loss-of-work and to appropriately explain/document changes as projects develop.
   - Git history, which is composed of "snapshots" of the source code, can be used to go back at any point in time, which leads to reproducible science.
 
 ## Git tutorials
@@ -51,4 +51,4 @@ One of the most powerful things Git can do is rewrite a series of patches after 
 
 </div>
 
-[Category:Development](Category:Development "wikilink") [Category:Git](Category:Git "wikilink")
+[Category:Development](Category_Development "wikilink") [Category:Git](Category_Git "wikilink")

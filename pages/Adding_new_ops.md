@@ -326,4 +326,4 @@ There are many conveniences in Op development that have not been covered in this
 
 However, all of this is done in the core {% include github org='imagej ' repo='imagej-ops ' label='imagej-ops ' %} project and could be deduced by careful study. If you do take the time to independently attempt any of these topics, consider documenting your experience and sharing it as a tutorial on this wiki.
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:Development](Category:Development "wikilink") [Category:Ops](Category:Ops "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Development](Category_Development "wikilink") [Category:Ops](Category_Ops "wikilink")

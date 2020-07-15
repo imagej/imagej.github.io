@@ -665,4 +665,4 @@ Let's surf to http://github.com/git/hello-world and inspect the history
   - The original repository hoster: http://repo.or.cz/
   - The Git Wiki: https://git.wiki.kernel.org/index.php/Main_Page
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:Git](Category:Git "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:Git](Category_Git "wikilink")

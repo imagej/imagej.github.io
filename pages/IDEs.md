@@ -17,7 +17,7 @@ many [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") developers use [Ecl
 
 </center>
 
-' %} {% include develop-menu content='tools' %}An [integrated development environment](wikipedia:Integrated_development_environment "wikilink") (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of a source code editor, build automation tools and a debugger. Most modern IDEs offer intelligent code completion features.
+' %} {% include develop-menu content='tools' %}An [integrated development environment](wikipedia_Integrated_development_environment "wikilink") (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of a source code editor, build automation tools and a debugger. Most modern IDEs offer intelligent code completion features.
 
 [ImageJ](ImageJ "wikilink") can be developed using any IDE which supports [Maven](Maven "wikilink"), which includes:
 
@@ -42,4 +42,4 @@ There are many advantages of using an IDE for software development:
 
 The main disadvantage of modern IDEs is that they are quite large and require a lot of resources—RAM and screen size in particular.
 
-[Category:Development](Category:Development "wikilink") [Category:IDEs](Category:IDEs "wikilink")
+[Category:Development](Category_Development "wikilink") [Category:IDEs](Category_IDEs "wikilink")

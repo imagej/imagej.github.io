@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% include menu-platforms%}
-{% include minibox logo='Osx.png ' blurb='[Think different](wikipedia:Think_different "wikilink"). ' %}[macOS](wikipedia:macOS "wikilink") (formerly called Mac OS X, then OS X) is [Apple](wikipedia:Apple_Inc. "wikilink")'s desktop operating system. It is [the second most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](Windows "wikilink"). This page details issues specific to using [ImageJ](ImageJ "wikilink") on macOS systems.
+{% include minibox logo='Osx.png ' blurb='[Think different](wikipedia_Think_different "wikilink"). ' %}[macOS](wikipedia_macOS "wikilink") (formerly called Mac OS X, then OS X) is [Apple](wikipedia_Apple_Inc. "wikilink")'s desktop operating system. It is [the second most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](Windows "wikilink"). This page details issues specific to using [ImageJ](ImageJ "wikilink") on macOS systems.
 
 {% include toc%}
 
@@ -66,4 +66,4 @@ Unfortunately, El Capitan has some new java-related issues. If you upgraded to E
 2.  If that does not work, see [this guide](https://oliverdowling.com.au/2015/10/09/oracles-jre-8-on-mac-os-x-el-capitan/) for steps which could get things working again.
 3.  Alternately, ImageJ still works on El Capitan with Java 6 (see above).
 
-[Category:Platforms](Category:Platforms "wikilink")
+[Category:Platforms](Category_Platforms "wikilink")

@@ -22,7 +22,7 @@ description: test description
 {% endcapture %}
 
 {% capture founders%}
-{% include person content='David Cohoe' %} ([1](mailto:dcohoe@pdx.edu))
+{% include person content='David Cohoe' %} ([1](mailto_dcohoe@pdx.edu))
 {% endcapture %}
 
 {% capture leads%}
@@ -118,4 +118,4 @@ To use this algorithm in ImageJ, run the command "Plugins \> DHM \> Phase Unwrap
 
 It is also possible to unwrap a single image or a stack of images programmatically using the DoubleWavelengthOp and DoubleWavelengthStackOp Ops. See the documentation for more details on how to do this.
 
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Plugins](Category_Plugins "wikilink")

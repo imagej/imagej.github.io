@@ -22,4 +22,4 @@ In Fiji, corresponding commands are:
 
 For more info see [LSM ToolBox documentation on ImageJ documentation Wiki](http://imagejdocu.tudor.lu/doku.php?id=plugin:inputoutput:lsmtoolbox:start).
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Import-Export](Category:Import-Export "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Import-Export](Category_Import-Export "wikilink")

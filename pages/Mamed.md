@@ -23,19 +23,19 @@ Go to [Fiji wiki](https://fiji.sc/Downloads) and download Fiji for your operatin
 
 The Fiji packages are re-built whenever something has been uploaded to the update site, therefore it is unlikely you need to update -- unless someone pushed something new within the past few minutes. You should see a window like this:
 
-![Mamed-1.jpg](/images/pages/Mamed-1.jpg "Mamed-1.jpg")
+![Mamed-1.jpg](Mamed-1.jpg "Mamed-1.jpg")
 
 Now we need to get a special plugin called BigDataViewer. Its a bit involved, but its WORTH IT. BigDataVIewer is not yet published, but we can get it from a specific update site. Click **Advanced mode**.
 
-![Mamed-2.jpg](/images/pages/Mamed-2.jpg "Mamed-2.jpg")
+![Mamed-2.jpg](Mamed-2.jpg "Mamed-2.jpg")
 
 Now click **Manage update sites**. You get a list of default update sites.
 
-![Mamed-3.jpg](/images/pages/Mamed-3.jpg "Mamed-3.jpg")
+![Mamed-3.jpg](Mamed-3.jpg "Mamed-3.jpg")
 
 Now we need to add an update site by clicking **Add**
 
-![Pietzsch\_update\_site.png](/images/pages/Pietzsch update site.png "Pietzsch update site.png")
+![Pietzsch\_update\_site.png](Pietzsch_update_site.png "Pietzsch_update_site.png")
 
 In the field **URL** type *http://sites.imagej.net/Pietzsch*
 
@@ -43,11 +43,11 @@ In the field **URL** type *http://sites.imagej.net/Pietzsch*
 
 Now after you click enter you will likely get an error message. Click **Ok** because it IS ok. Its not a feature but a bug. Finally we have to click on the check box next to the **New** update site to include it - the error message may pop up again - ignore it, click Ok.
 
-![Mamed-5.jpg](/images/pages/Mamed-5.jpg "Mamed-5.jpg")
+![Mamed-5.jpg](Mamed-5.jpg "Mamed-5.jpg")
 
 Now we are ready to proceed by clicking **close**. A new screen pops up with a lot of giberish, this is the stuff we need.
 
-![Mamed-6.jpg](/images/pages/Mamed-6.jpg "Mamed-6.jpg")
+![Mamed-6.jpg](Mamed-6.jpg "Mamed-6.jpg")
 
 Click **Apply changes** to download and install the big data viewer. You need to restart Fiji and once you do that you should have a new item in the plugins folder called **BigDataViewer**.
 
@@ -61,4 +61,4 @@ Since its difficult, lets do it the old fashion way by passing a USB stick. MAKE
 
 The data are on that USB stick in a folder called MAMED. The file is called *platynereis.tar*. You can unpack it by double clicking after you download it. Beware it is 1.4GB.
 
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink")

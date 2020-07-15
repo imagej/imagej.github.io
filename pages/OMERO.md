@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='openmicroscopy ' repo='openmicroscopy ' %}
 {% endcapture %}
-{% include info-box content='Plugin' software='OMERO ' name='OMERO ' logo='![Omero-logo.png](/images/pages/Omero-logo.png "Omero-logo.png") ' author=' [Open Microscopy Environment](http://openmicroscopy.org/) ' maintainer=' [Open Microscopy Environment](http://openmicroscopy.org/) ' source=source status='active ' website='http://www.openmicroscopy.org/info/omero ' %}OMERO is client-server software for visualization, management and analysis of biological microscope images.
+{% include info-box content='Plugin' software='OMERO ' name='OMERO ' logo='![Omero-logo.png](Omero-logo.png "Omero-logo.png") ' author=' [Open Microscopy Environment](http://openmicroscopy.org/) ' maintainer=' [Open Microscopy Environment](http://openmicroscopy.org/) ' source=source status='active ' website='http://www.openmicroscopy.org/info/omero ' %}OMERO is client-server software for visualization, management and analysis of biological microscope images.
 
 ## Publication
 
@@ -22,4 +22,4 @@ description: test description
 
   - The [ImageJ-OMERO](https://github.com/imagej/imagej-omero) project for bidirectional interoperability between ImageJ and OMERO.
 
-[Category:Related Software](Category:Related_Software "wikilink") [Category:Citable](Category:Citable "wikilink") [Category:SciJava](Category:SciJava "wikilink") [Category:OME](Category:OME "wikilink")
+[Category:Related Software](Category_Related_Software "wikilink") [Category:Citable](Category_Citable "wikilink") [Category:SciJava](Category_SciJava "wikilink") [Category:OME](Category_OME "wikilink")

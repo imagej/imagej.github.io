@@ -46,7 +46,7 @@ The [Jython plugin installation rules](https://fiji.sc/Jython_Scripting#Using_a_
 7.  If stage position values cannot be read or the calculated tile configuration doesn’t match the number of detected folders, the plugin will ask the user for the x and y tile number and overlap percentage.
 8.  If you plan to add or modify files inside the acquisition directories, because you need to merge interrupted acquisition jobs for example, you have to modify the numbering so that the final 4 digits of the file name match the z position of the image in the stack. Z positions are not being read from the metadata exactly to accommodate for situations like this.  
     Tip: doing this by hand is tedious and error prone; there are however free software applications that can automate this file renaming job easily.
-9.  If you run the slightly modified version, ‘TrakEM2 import list’, you can choose another file format other than .dm3, choose another folder pattern (these are [Regular Expression](wikipedia:Regular_expression "wikilink") patterns) or a different file name for the final text file. However, the image files still need to have metadata for stage coordinates and pixel dimension (size), in the same units, for the automatic calculations to work. Currently I don’t have any ‘non-automatic’ version that will take all required information for the user.  
+9.  If you run the slightly modified version, ‘TrakEM2 import list’, you can choose another file format other than .dm3, choose another folder pattern (these are [Regular Expression](wikipedia_Regular_expression "wikilink") patterns) or a different file name for the final text file. However, the image files still need to have metadata for stage coordinates and pixel dimension (size), in the same units, for the automatic calculations to work. Currently I don’t have any ‘non-automatic’ version that will take all required information for the user.  
     Note 1: The numbering in the files must have 4 digits. I *may* fix this in the future.  
     Note 2: The file format input is case sensitive: '.tif' is not the same as '.TIF'
 10. To automate or call the plugin from another script, you need to provide the details mentioned in the previous point. See the file 'TrakEM2\_import\_list.py' for an example.
@@ -327,4 +327,4 @@ All comments, questions or suggestions are very welcome. Please send an email to
 
   - [Importing list](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#importing_list) How the text file should look like.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:TrakEM2](Category:TrakEM2 "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:TrakEM2](Category_TrakEM2 "wikilink")

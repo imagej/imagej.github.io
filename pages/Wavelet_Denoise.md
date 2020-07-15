@@ -22,7 +22,7 @@ When starting the plugin, pictures and <i>Sync Wins</i> dialog appear, like in t
 
 We should mention here that sizes of input image matrices must be of power of 2, common sizes are: 64, 128, 256, 512, 1024, 2048 etc., otherwise the plugin will not start and a warning message appears again. This is due to the proper computation of levels of wavelet decomposition of images, see below.
 
-![Wavelet\_Denoise\_dialog.jpg](/images/pages/Wavelet Denoise dialog.jpg "Wavelet Denoise dialog.jpg")
+![Wavelet\_Denoise\_dialog.jpg](Wavelet_Denoise_dialog.jpg "Wavelet_Denoise_dialog.jpg")
 
 ## Description of functionality of items in the plugin window
 
@@ -150,4 +150,4 @@ Two possibilities, how to do it:
 
 3\. Čapek, M., Efenberková, M., Novotný, I., Horváth, O. [The wavelet-based denoising of images in Fiji/ImageJ, with example applications in structured illumination microscopy.](https://imagej.net/_images/5/5f/2019_AinDM_Capek_et_al_Wavelet_Denoising_Fiji.pdf) In: Advances in Disease Models, Edited by Petr Bartůněk, Institute of Molecular Genetics AS CR, 2019, 1th publication, ISBN 978-80-88011-06-4 Publisher: OPTIO CZ.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Filtering](Category:Filtering "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Filtering](Category_Filtering "wikilink")

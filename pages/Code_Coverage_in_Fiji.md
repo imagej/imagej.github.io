@@ -56,8 +56,8 @@ Now generate an HTML report of the coverage data with:
 
 `$ firefox coverage/index.html`
 
-You should see a summary like the following: ![Coverage-summary.png](/images/pages/Coverage-summary.png "Coverage-summary.png")
+You should see a summary like the following: ![Coverage-summary.png](Coverage-summary.png "Coverage-summary.png")
 
 ... and can click through to line-by-line coverage of a source file, like the example below. (The green lines were executed, while the red ones were not. Yellow lines were partially executed, e.g. if only one branch of the ternary operator (?:) was run, as explained in the [EMMA FAQ](http://emma.sourceforge.net/faq.html#faq-N101CF).
 
-![Coverage-file.png](/images/pages/Coverage-file.png "Coverage-file.png")
+![Coverage-file.png](Coverage-file.png "Coverage-file.png")

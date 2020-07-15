@@ -12,7 +12,7 @@ Gaussian downsampling of an image with ImageJ on-board tools.
 
 ## Motivation
 
-Sound downsampling of an image requires the elimination of image frequencies higher than half the sampling frequency in the result image (see the [Nyquist–Shannon sampling theorem](wikipedia:Nyquist%E2%80%93Shannon_sampling_theorem "wikilink")). The exclusive tool for this is [Gaussian convolution](wikipedia:Gaussian_function "wikilink").
+Sound downsampling of an image requires the elimination of image frequencies higher than half the sampling frequency in the result image (see the [Nyquist–Shannon sampling theorem](wikipedia_Nyquist%E2%80%93Shannon_sampling_theorem "wikilink")). The exclusive tool for this is [Gaussian convolution](wikipedia_Gaussian_function "wikilink").
 
 ## Download
 
@@ -32,7 +32,7 @@ A picture is worth a thousand words, so here is an example. You see a 2,048×2,0
 
 |                                                                                     |                                                                                                                        |                                                                                                                     |
 | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| ![ImageJ interpolated scaling](/images/pages/Downsample-imagej.png "ImageJ interpolated scaling") | ![Gaussian downsampling with target sigma=0.25](/images/pages/Downsample-ts-0.25.png "Gaussian downsampling with target sigma=0.25") | ![Gaussian downsampling with target sigma=0.5](/images/pages/Downsample-ts-0.5.png "Gaussian downsampling with target sigma=0.5") |
+| ![ImageJ interpolated scaling](Downsample-imagej.png "ImageJ interpolated scaling") | ![Gaussian downsampling with target sigma=0.25](Downsample-ts-0.25.png "Gaussian downsampling with target sigma=0.25") | ![Gaussian downsampling with target sigma=0.5](Downsample-ts-0.5.png "Gaussian downsampling with target sigma=0.5") |
 
 ## Code
 
@@ -153,4 +153,4 @@ else
   - [Scripting Help](Scripting_Help "wikilink")
   - [Scripting\_comparisons](Scripting_comparisons "wikilink")
 
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Scripting](Category_Scripting "wikilink")

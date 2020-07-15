@@ -12,4 +12,4 @@ Thanks to the effort of {% include person content='Iarganda' %}, we have a [chan
 
 This channel has a few tutorials and a fun view of the Fiji development already, and we will add other movies as we make them.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

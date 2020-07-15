@@ -19,7 +19,7 @@ You can find more information about me in my website: http://sites.google.com/si
   - [AnalyzeSkeleton](AnalyzeSkeleton "wikilink")
   - [BUnwarpJ](BUnwarpJ "wikilink")
   - [Register Virtual Stack Slices](Register_Virtual_Stack_Slices "wikilink")
-  - [SIOX: Simple Interactive Object Extraction](SIOX:_Simple_Interactive_Object_Extraction "wikilink")
+  - [SIOX: Simple Interactive Object Extraction](SIOX__Simple_Interactive_Object_Extraction "wikilink")
   - [Skeletonize3D](Skeletonize3D "wikilink")
   - [Spline Deformation Generator](Spline_Deformation_Generator "wikilink")
   - [Transform Virtual Stack Slices](Transform_Virtual_Stack_Slices "wikilink")

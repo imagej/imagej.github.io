@@ -10,11 +10,11 @@ description: test description
 
 The following is a status update on the [ImageJ2](ImageJ2 "wikilink") project as of 26 December 2010.
 
-![**ImageJ2 user interface with discovered plugins:** We have created a very simple Swing user interface, with menus populated with both IJ1 and IJ2 plugins loaded using the new plugin discovery mechanism. (We will address the out-of-order menus very soon.)](/images/pages/Ij2-gui-ij1-plugins.png "ImageJ2 user interface with discovered plugins: We have created a very simple Swing user interface, with menus populated with both IJ1 and IJ2 plugins loaded using the new plugin discovery mechanism. (We will address the out-of-order menus very soon.)")
+![**ImageJ2 user interface with discovered plugins:** We have created a very simple Swing user interface, with menus populated with both IJ1 and IJ2 plugins loaded using the new plugin discovery mechanism. (We will address the out-of-order menus very soon.)](ij2-gui-ij1-plugins.png "ImageJ2 user interface with discovered plugins: We have created a very simple Swing user interface, with menus populated with both IJ1 and IJ2 plugins loaded using the new plugin discovery mechanism. (We will address the out-of-order menus very soon.)")
 
-![**ImageJ2 user interface loading data:** The new interface invokes an IJ2 plugin to load images.](/images/pages/Ij2-gui-open-dialog.png "ImageJ2 user interface loading data: The new interface invokes an IJ2 plugin to load images.")
+![**ImageJ2 user interface loading data:** The new interface invokes an IJ2 plugin to load images.](ij2-gui-open-dialog.png "ImageJ2 user interface loading data: The new interface invokes an IJ2 plugin to load images.")
 
-![**ImageJ2 user interface displaying an image:** The new interface displays the image in a simple N-dimensional image browser.](/images/pages/Ij2-gui-image-window.png "ImageJ2 user interface displaying an image: The new interface displays the image in a simple N-dimensional image browser.")
+![**ImageJ2 user interface displaying an image:** The new interface displays the image in a simple N-dimensional image browser.](ij2-gui-image-window.png "ImageJ2 user interface displaying an image: The new interface displays the image in a simple N-dimensional image browser.")
 
 ### Core ImageJDev work
 
@@ -36,10 +36,10 @@ We are actively developing tools for working with combined spectral-lifetime (SL
 
 ### Integrating web applications with ImageJ
 
-Web tools and [cloud computing](wikipedia:Cloud_computing "wikilink") are rapidly becoming more powerful and have many advantages versus traditional desktop applications. We want to leverage such tools where appropriate, and are exploring ways to integrate such web-based software with the ImageJ client application. Currently we have two such plugins: {% include github org='imagej ' repo='workflow-pipes ' label='Work Flow Pipes ' %} and a [Deep Zoom plugin](Deep_Zoom "wikilink").
+Web tools and [cloud computing](wikipedia_Cloud_computing "wikilink") are rapidly becoming more powerful and have many advantages versus traditional desktop applications. We want to leverage such tools where appropriate, and are exploring ways to integrate such web-based software with the ImageJ client application. Currently we have two such plugins: {% include github org='imagej ' repo='workflow-pipes ' label='Work Flow Pipes ' %} and a [Deep Zoom plugin](Deep_Zoom "wikilink").
 
 ### OpenCL-based image processing
 
 We spent some time exploring how to integrate GPU processing with Java, with the ultimate goal of enabling use of multi-core OpenCL programs from ImageJ. At the moment, we have created a {% include github org='uw-loci ' repo='opencl-demo ' label='web-services-based OpenCL plugin ' %} that performs 3D iterative deconvolution.
 
-[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")

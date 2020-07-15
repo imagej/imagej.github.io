@@ -42,7 +42,7 @@ We began developing a GUI based java application separate from the FIJI platform
 
 <div style="text-align: center;">
 
-![FuzzySetFormula.gif](/images/pages/FuzzySetFormula.gif "FuzzySetFormula.gif")
+![FuzzySetFormula.gif](FuzzySetFormula.gif "FuzzySetFormula.gif")
 
 </div>
 
@@ -72,7 +72,7 @@ Launch the FIJI application until the following window appears.
 
 <div style="text-align: center;">
 
-![OpeningAnImage.jpg](/images/pages/OpeningAnImage.jpg "OpeningAnImage.jpg")
+![OpeningAnImage.jpg](OpeningAnImage.jpg "OpeningAnImage.jpg")
 
 </div>
 
@@ -84,9 +84,9 @@ Select the Plugin from the application window. See diagram below.
 
 <div style="text-align: center;">
 
-![LaunchingPlugin.jpg](/images/pages/LaunchingPlugin.jpg "LaunchingPlugin.jpg")
+![LaunchingPlugin.jpg](LaunchingPlugin.jpg "LaunchingPlugin.jpg")
 
-![LaunchingPlugin2.jpg](/images/pages/LaunchingPlugin2.jpg "LaunchingPlugin2.jpg")
+![LaunchingPlugin2.jpg](LaunchingPlugin2.jpg "LaunchingPlugin2.jpg")
 
 </div>
 
@@ -94,7 +94,7 @@ A user may now set the appropriate user defined values.
 
 <div style="text-align: center;">
 
-![SelectValues.jpg](/images/pages/SelectValues.jpg "SelectValues.jpg")
+![SelectValues.jpg](SelectValues.jpg "SelectValues.jpg")
 
 </div>
 
@@ -106,7 +106,7 @@ Below is an example of a histogram window.
 
 <div style="text-align: center;">
 
-![HistogramWindow.jpg](/images/pages/HistogramWindow.jpg "HistogramWindow.jpg")
+![HistogramWindow.jpg](HistogramWindow.jpg "HistogramWindow.jpg")
 
 </div>
 
@@ -116,7 +116,7 @@ Below is an example of the modified Histogram
 
 <div style="text-align: center;">
 
-![ModifiedHistogramWindow.jpg](/images/pages/ModifiedHistogramWindow.jpg "ModifiedHistogramWindow.jpg")
+![ModifiedHistogramWindow.jpg](ModifiedHistogramWindow.jpg "ModifiedHistogramWindow.jpg")
 
 </div>
 
@@ -126,7 +126,7 @@ Following is an example of the Modified Image Window (image supplied by author)
 
 <div style="text-align: center;">
 
-![`ModifiedWindow.jpg`](/images/pages/ModifiedWindow.jpg "ModifiedWindow.jpg")
+![`ModifiedWindow.jpg`](ModifiedWindow.jpg "ModifiedWindow.jpg")
 
 </div>
 
@@ -136,21 +136,21 @@ Following is an example of the Modified Image Window (image supplied by author)
 
 ## DEMO
 
-We did many experiments with the application, but to show case one such result, we have included a demo below. ![2.jpg](/images/pages/2.jpg "2.jpg") ![ModAE.jpg](/images/pages/ModAE.jpg "ModAE.jpg")
+We did many experiments with the application, but to show case one such result, we have included a demo below. ![2.jpg](2.jpg "2.jpg") ![ModAE.jpg](ModAE.jpg "ModAE.jpg")
 
 <div>
 
-![Hist2.jpg](/images/pages/Hist2.jpg "Hist2.jpg") Histogram of Image Before Transformation
+![Hist2.jpg](Hist2.jpg "Hist2.jpg") Histogram of Image Before Transformation
 
 </div>
 
-![HistMod.jpg](/images/pages/HistMod.jpg "HistMod.jpg") Histogram of Image After Transformation
+![HistMod.jpg](HistMod.jpg "HistMod.jpg") Histogram of Image After Transformation
 
 ## ACKNOWLEDGEMENTS
 
 <div style="text-align: center;">
 
-![Dr.jpg](/images/pages/Dr.jpg "Dr.jpg")
+![Dr.jpg](Dr.jpg "Dr.jpg")
 
 </div>
 

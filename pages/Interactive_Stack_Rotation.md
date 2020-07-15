@@ -10,7 +10,7 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Saalfeld' %} ([1](mailto:saalfeld@mpi-cbg.de))
+{% include person content='Saalfeld' %} ([1](mailto_saalfeld@mpi-cbg.de))
 {% endcapture %}
 
 {% capture maintainer%}
@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='axtimwalde ' repo='mpicbg ' path='mpicbg\_/src/main/java/Stack\_Rotate.java ' %}
 {% endcapture %}
-{% include info-box name='Interactive Stack Rotation ' software='Fiji ' author=author maintainer=maintainer source=source released='September 29<sup>th</sup>, 2009 ' latest-version='February 26<sup>th</sup>, 2010 ' status='stable, active ' category='[Plugins](:Category:Plugins "wikilink"), [Transform](:Category:Transform "wikilink") ' %}
+{% include info-box name='Interactive Stack Rotation ' software='Fiji ' author=author maintainer=maintainer source=source released='September 29<sup>th</sup>, 2009 ' latest-version='February 26<sup>th</sup>, 2010 ' status='stable, active ' category='[Plugins](_Category_Plugins "wikilink"), [Transform](_Category_Transform "wikilink") ' %}
 
 Here is a screencast how to use the Interactive Stack Rotation plugin:
 
@@ -28,6 +28,6 @@ Here is a screencast how to use the Interactive Stack Rotation plugin:
 
 For a quick overview of keyboard shortcuts, please press the {% include key content='F1' %} key to be shown this usage:
 
-![InteractiveStackRotation.jpg](/images/pages/InteractiveStackRotation.jpg "InteractiveStackRotation.jpg")
+![InteractiveStackRotation.jpg](InteractiveStackRotation.jpg "InteractiveStackRotation.jpg")
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Transform](Category:Transform "wikilink") [Category:Interactive](Category:Interactive "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Transform](Category_Transform "wikilink") [Category:Interactive](Category_Interactive "wikilink")

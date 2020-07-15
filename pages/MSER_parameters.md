@@ -32,8 +32,8 @@ MSER detected regions as shown as red ellipses. The line along which each of the
 
 As an example we show in the animation below how during a collision including the children of the component tree makes sub-elliptical regions inside the main MSER ellipse, when the assignment of the end points is done it is more likely to do a proper assignment during such a collision when the value of min diversity was set to a value less than unity (0.8 in this case), on the right side of the animation this parameter was unity and was more likely to make a mistake in doing the assignment of the end points (was avoided due to good initial guesses given to the optimizer).
 
-![Mindiv.gif](/images/pages/Mindiv.gif "Mindiv.gif")
+![Mindiv.gif](Mindiv.gif "Mindiv.gif")
 
 MSER panel in the advanced mode appears as shown below, after clicking on "find endpoints" a next button would appear along with the prev button, allowing user to flip to the next panel.
 
-![Advanced3.png](/images/pages/Advanced3.png "Advanced3.png")
+![Advanced3.png](Advanced3.png "Advanced3.png")

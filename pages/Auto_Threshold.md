@@ -48,11 +48,11 @@ It you are processing a stack, two additional options are available: **Stack** c
 
 Which method segments your data best? One can attempt to answer this question using the **Try all** option. This produces a montage with results from all the methods, allowing to explore how the different algorithms perform on a particular image or stack. When using stacks, in some cases it might not be a good idea to segment each slice individually rather than with a single threshold for all slices (try the mri-stack.tif from the sample images to better understand this issue).
 
-![lymp.png](/images/pages/Lymp.png "lymp.png")
+![lymp.png](lymp.png "lymp.png")
 
 Original image
 
-![lympm2.png](/images/pages/Lympm2.png "lympm2.png")
+![lympm2.png](lympm2.png "lympm2.png")
 
 Try all methods.
 
@@ -158,7 +158,7 @@ Otsu's threshold clustering algorithm searches for the threshold that minimizes 
 
   - {% include citation last='Otsu ' first='N ' year='1979 ' journal='IEEE Trans. Sys., Man., Cyber. ' url='http://ieeexplore.ieee.org/xpl/freeabs\_all.jsp?\&arnumber=4310076 ' title='A threshold selection method from gray-level histograms ' volume='9 ' pages='62-66 ' doi='10.1109/TSMC.1979.4310076 ' %}
 
-See also the [Wikipedia article on Otsu's method](wikipedia:Otsu's_method "wikilink").
+See also the [Wikipedia article on Otsu's method](wikipedia_Otsu's_method "wikilink").
 
 Ported from C++ code by Jordan Bevik.
 
@@ -208,4 +208,4 @@ Implements Yen's thresholding method from:
 
 Ported from ME Celebi's fourier\_0.8 routines [13](http://sourceforge.net/projects/fourier-ipal) and [14](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")

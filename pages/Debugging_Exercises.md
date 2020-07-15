@@ -45,7 +45,7 @@ Learning to use debugging tools is, understandably, a burden: it's "one more thi
 
 # Using this guide
 
-The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, most do not explicitly use ImageJ. But once you learn how to [debug an external Java application](#Exercise_4:_ImageJ_plugins "wikilink"), you will have the knowledge to apply any of these techniques to a rich, and complex, application like [ImageJ](ImageJ "wikilink").
+The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, most do not explicitly use ImageJ. But once you learn how to [debug an external Java application](#Exercise_4__ImageJ_plugins "wikilink"), you will have the knowledge to apply any of these techniques to a rich, and complex, application like [ImageJ](ImageJ "wikilink").
 
 Because this project is intended to help new developers practice troubleshooting skills, you may find these examples contrived - indeed, they are. Exercises are kept simple and focused to allow practice of targeted techniques. If you have complete knowledge and understanding of the code there isn't really a need for troubleshooting: it is trivial to see why something is behaving incorrectly. Thus the source of these exercises is divided into `hidden` and `visible` packages. Users are strongly recommended to only inspect and set breakpoints from the `visible` classes. From a development point of view, consider the `hidden` package a 3rd-party library that you may not have control over, or access to the source code.
 
@@ -72,9 +72,9 @@ Breakpoints are a fundamental tool of debugging. They provide a way to instruct 
 
 To get started in this exercise, open up the source file - `E1BasicBreakpoints` - and *run* it to get an idea of what's going on. We should see a simple stack trace:
 
-![E1StackTrace.png](/images/pages/E1StackTrace.png "E1StackTrace.png")
+![E1StackTrace.png](E1StackTrace.png "E1StackTrace.png")
 
-[Stack traces](Wikipedia:Stack_trace "wikilink") are a common starting point for debugging, as they are typically automatically produced when something goes wrong that the program was not prepared to handle. Java programs are executed in [Last In, First Out](Wikipedia:Stack_\(abstract_data_type\) "wikilink") order; that is, starting with the `main` method, as methods are called they are added to the top of the *stack*, the method at the top is what's currently running, and when a method completes it is removed from the stack, returning the program to the next method in line. When an exception occurs, a *stack trace* is printed, showing the order that methods have been queued, with the top of the stack being the location of the exception (and thus a likely place to start looking for problems\!).
+[Stack traces](Wikipedia_Stack_trace "wikilink") are a common starting point for debugging, as they are typically automatically produced when something goes wrong that the program was not prepared to handle. Java programs are executed in [Last In, First Out](Wikipedia_Stack_\(abstract_data_type\) "wikilink") order; that is, starting with the `main` method, as methods are called they are added to the top of the *stack*, the method at the top is what's currently running, and when a method completes it is removed from the stack, returning the program to the next method in line. When an exception occurs, a *stack trace* is printed, showing the order that methods have been queued, with the top of the stack being the location of the exception (and thus a likely place to start looking for problems\!).
 
 So looking back at the stack trace we got, we can see *what* went wrong (tried to use a `null` object) and *where* it happened (the line number at the top of the stack), but we don't know *why* the object was `null` at that point - which would be the actual root cause of the exception.
 
@@ -106,7 +106,7 @@ Although breakpoints allow us a chance to peek inside running code, many times w
 
 Start by opening the `E2EffectiveExpressions` source and running it. Like the previous exercise, we have a stack trace to start from:
 
-![E2StackTrace.png](/images/pages/E2StackTrace.png "E2StackTrace.png")
+![E2StackTrace.png](E2StackTrace.png "E2StackTrace.png")
 
 Try setting a breakpoint on the conditional line:
 
@@ -118,13 +118,13 @@ if (index < 0 || index >= list.size()) {
 
 Since we are only interested in the `processElementAtIndex` method when a problem actually occurs, let's try something different:
 
-![Setting a breakpoint on an exception](/images/pages/E2BreakOnException.png "Setting a breakpoint on an exception")
+![Setting a breakpoint on an exception](E2BreakOnException.png "Setting a breakpoint on an exception")
 
 1.  From the *Breakpoints* window in the *Debug* perspective, delete the old breakpoint
 2.  Now use the *Add Java Exception Breakpoint* button to add a breakpoint to *IllegalArgumentException*
 3.  Debug the program. When it stops, inspect the *Variables* window.
 
-![Inspecting the variables window](/images/pages/E2Variables.png "Inspecting the variables window")
+![Inspecting the variables window](E2Variables.png "Inspecting the variables window")
 
 At this point, we know there is a problem accessing the `99999th` element of the list, but the variables window doesn't tell us exactly what the problem is. We can manually expand and explore the `list` variable - but given its size that could be cumbersome.
 
@@ -157,9 +157,9 @@ Breakpoints trigger *every* time the corresponding line would be executed, which
 
 Start by opening the `E3ConditionalCrisis` source and running it. This time our console output looks a bit different:
 
-![E3StackTrace.png](/images/pages/E3StackTrace.png "E3StackTrace.png")
+![E3StackTrace.png](E3StackTrace.png "E3StackTrace.png")
 
-In addition to the exception stack trace, the program itself appears to have found an invalid object, causing the processing to go unfinished. Although we could set a breakpoint on the exception, as we did in [exercise 2](#Exercise_2:_Expressions "wikilink"), the exception is actually happening *after* the more interesting part of the program - the loop. As we learned in exercise 2, breakpoints in code that is called repeatedly are annoying, so let's see what we can find by attaching conditions to our breakpoint.
+In addition to the exception stack trace, the program itself appears to have found an invalid object, causing the processing to go unfinished. Although we could set a breakpoint on the exception, as we did in [exercise 2](#Exercise_2__Expressions "wikilink"), the exception is actually happening *after* the more interesting part of the program - the loop. As we learned in exercise 2, breakpoints in code that is called repeatedly are annoying, so let's see what we can find by attaching conditions to our breakpoint.
 
 First set a breakpoint on the line *after* the `everythingIsOK` assignment:
 
@@ -170,7 +170,7 @@ i++;
 
 Then try the following:
 
-![Setting a hit count](/images/pages/E3CountBreakpoint.png "Setting a hit count")
+![Setting a hit count](E3CountBreakpoint.png "Setting a hit count")
 
 1.  Open the *Breakpoints* window
 2.  Right-click our breakpoint and select *Breakpoint Properties...*
@@ -181,7 +181,7 @@ Then try the following:
 
 Using `count`-based conditional breakpoints can be very useful if the error is deterministic. In this case we need to try something different. We know the `everythingIsOK` flag reflects the integrity of the object at a given index - so what we really want to use here is a breakpoint that stops in the loop when the `everythingIsOK` flag is set to **false**. Fortunately, breakpoints have an optional "Conditional" flag - where we can enter any Java statement that resolves to a boolean value. Try it out:
 
-![Setting a conditional expression](/images/pages/E3ConditionalBreakpoint.png "Setting a conditional expression")
+![Setting a conditional expression](E3ConditionalBreakpoint.png "Setting a conditional expression")
 
 1.  Open the *Breakpoints* window again
 2.  Open the properties of our breakpoint
@@ -225,7 +225,7 @@ Note that the menu path of the plugin is specified in the class's annotation:
 
 So, you can now run the `E4 - Print ConsoleService` command either via the menus or [command finder](Command_Finder "wikilink"). You should get an exception:
 
-![E4StackTrace.png](/images/pages/E4StackTrace.png "E4StackTrace.png")
+![E4StackTrace.png](E4StackTrace.png "E4StackTrace.png")
 
 In order to connect Eclipse to ImageJ, we need to close our running instance and [launch ImageJ from the command line](Troubleshooting#Launching_ImageJ_from_the_console "wikilink"), which allows us to set the [debug flag](Debugging#Attaching_to_ImageJ_instances "wikilink"), e.g.:
 
@@ -235,7 +235,7 @@ In order to connect Eclipse to ImageJ, we need to close our running instance and
 
     ImageJ.app/ImageJ-linux64 --debugger=8000 --console
 
-![Remote Java Application debug configuration](/images/pages/E4DebugConfig.png "Remote Java Application debug configuration") This will start up ImageJ in a mode that's able to communicate with Eclipse. Next we need to connect Eclipse to the running ImageJ instance:
+![Remote Java Application debug configuration](E4DebugConfig.png "Remote Java Application debug configuration") This will start up ImageJ in a mode that's able to communicate with Eclipse. Next we need to connect Eclipse to the running ImageJ instance:
 
 1.  Right-click the `E4RemoteResearch` source file in the Package Explorer
 2.  Select `Debug As > Debug Configurations...`
@@ -327,7 +327,7 @@ After marking the last commit good or bad, bisect will print out the first bad c
 
 When debugging we're trying to identify why a program isn't behaving as expected. Often this starts in response to an unhandled Java exception, which comes with a helpful stack trace to point us in the right direction. Unfortunately, there are also times when no information as given - such as when the [JVM hangs (gets stuck)](Debugging#Debugging_JVM_hangs "wikilink") or [crashes without warning](Debugging#Debugging_hard_JVM_crashes "wikilink"). In this exercise we'll look at another way to extract information from our application: by forcing a stack trace to be printed.
 
-As we did [in exercise 4](#Exercise_4:_ImageJ_plugins "wikilink"), the first thing to do is build the `imagej-troubleshooting .jar` and install it in your `ImageJ.app/jars` directory. Then you can start up ImageJ and run the command for this exercise:
+As we did [in exercise 4](#Exercise_4__ImageJ_plugins "wikilink"), the first thing to do is build the `imagej-troubleshooting .jar` and install it in your `ImageJ.app/jars` directory. Then you can start up ImageJ and run the command for this exercise:
 
     Plugins > Troubleshooting > E6 - Start Looping
 
@@ -351,7 +351,7 @@ To investigate further, close ImageJ (if it's running) and launch it again from 
 
 We actually don't need any extra flags this time, as this technique isn't specific to ImageJ. When you run a program from the command line, your console is directly tied to the running instance:
 
-![Waiting for input after launching ImageJ](/images/pages/E6Console.png "Waiting for input after launching ImageJ")
+![Waiting for input after launching ImageJ](E6Console.png "Waiting for input after launching ImageJ")
 
 In this state, we can still send signals to the running application (for example - {% include key content='ctrl|c' %} to [kill the app](http://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)).
 
@@ -395,11 +395,11 @@ for (int i = 0; i < 100; i++) {
 }
 ```
 
-We see that objects are being created, but we aren't storing any references to them. They should just be printed and discarded. So presumably one of these methods is doing something nasty, and it's up to us to figure out which by analyzing the heap space. In particular, we want to analyze the heap space *at the time of the error*. `jvisualvm` is used to attach to running Java programs; so we will need to set a breakpoint on the `OutOfMemoryError` itself - similar to what we did in [Exercise 2: Expressions](#Exercise_2:_Expressions "wikilink") - and debug the `E7` program.
+We see that objects are being created, but we aren't storing any references to them. They should just be printed and discarded. So presumably one of these methods is doing something nasty, and it's up to us to figure out which by analyzing the heap space. In particular, we want to analyze the heap space *at the time of the error*. `jvisualvm` is used to attach to running Java programs; so we will need to set a breakpoint on the `OutOfMemoryError` itself - similar to what we did in [Exercise 2: Expressions](#Exercise_2__Expressions "wikilink") - and debug the `E7` program.
 
 Once the `OutOfMemoryError` is encountered our breakpoint will trigger. To acquire the heap dump:
 
-![Heap dump acquisition in jvisualvm](/images/pages/E7HeapDump.png "Heap dump acquisition in jvisualvm")
+![Heap dump acquisition in jvisualvm](E7HeapDump.png "Heap dump acquisition in jvisualvm")
 
 1.  Open `jvisualvm`
 2.  From the list of local applications, right-click on `net.imagej.trouble.visible.E7InvestigateImpressions` and select the "Heap Dump" option.
@@ -442,12 +442,12 @@ Exercise 8 in pretty straightforward with the main function calling two function
 
 1.  Insert a breakpoint on the `while` statement in main method
 2.  Launch JvisualVM. All running Java applications are shown in the in Applications Tab (left margin) of JvisualVM. Double Click to select E8PerceivingPerformance. Go to the profiler tab and click the CPU option.
-3.  Click on the settings checkbox on upper right corner of Jvisualvm. In CPU settings , make sure the class being profiled is **`net.imagej.trouble.**`** instead of `net.imagej.trouble.visible.**`, or the profiler won't be looking in the right place ![Adjust settings](/images/pages/E8Settings.png "Adjust settings")
+3.  Click on the settings checkbox on upper right corner of Jvisualvm. In CPU settings , make sure the class being profiled is **`net.imagej.trouble.**`** instead of `net.imagej.trouble.visible.**`, or the profiler won't be looking in the right place ![Adjust settings](E8Settings.png "Adjust settings")
 4.  Switch to Eclipse and resume the execution of code
 5.  Wait for the stipulated time , twiddle your thumbs. Or you can switch to JvisualVM and see how much time is taken by each of function in real time.
 6.  Example output
 
-![Profiling Results](/images/pages/E8ProfilingResults.PNG "Profiling Results")
+![Profiling Results](E8ProfilingResults.PNG "Profiling Results")
 
 {% include expanding-box content='Which method takes more time? ""doStuff"" or ""doMoreStuff""? |Answer - """doStuff""". Exact timing will vary per computer, but in our case ""doStuff"" took 954 ms while ""doMoreStuff"" took 710 ms.' %}
 
@@ -467,7 +467,7 @@ Developing codes may often involve using multiple threads instead of sequential 
 
 E9 exercise on multiple threads focuses on this issue and also highlight an additional property of breakpoint that can be helpful in debugging program (Stop Virtual Machine).
 
-Even though no code changes, sometimes debugging affects code execution. The Exercise 9 creates two parallel processes which are interdependent on each other. Each process throws up an error if the other process introduces a delay more than one second. So pausing for more than one second ,while debugging the program throws up an exception. So the act of debugging introduces errors in this case. ![Setting a VM-wide breakpoint](/images/pages/E9StopVM.PNG "Setting a VM-wide breakpoint")
+Even though no code changes, sometimes debugging affects code execution. The Exercise 9 creates two parallel processes which are interdependent on each other. Each process throws up an error if the other process introduces a delay more than one second. So pausing for more than one second ,while debugging the program throws up an exception. So the act of debugging introduces errors in this case. ![Setting a VM-wide breakpoint](E9StopVM.PNG "Setting a VM-wide breakpoint")
 
 **Steps for the exercise**
 

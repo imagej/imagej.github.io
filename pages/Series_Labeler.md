@@ -14,7 +14,7 @@ It aims to combine the functionality of these plugins and refine and enhance the
 
 ## Screen Shot of features
 
-![Series\_Labeler\_Screen\_shot.png](/images/pages/Series Labeler Screen shot.png "Series Labeler Screen shot.png")
+![Series\_Labeler\_Screen\_shot.png](Series_Labeler_Screen_shot.png "Series_Labeler_Screen_shot.png")
 
 ## What it works with
 
@@ -59,4 +59,4 @@ Hyperstacks can be labeled with the imageJ builtin Label command, if you want to
 
 Macro recording is broken due to the use of a non blocking (non modal) GUI... which is needed for the preview functionality and being able to use built in imageJ font and color choosers. To fix this we need to make some new infrastructure in ImageJ/Fiji.... or wait for imageJ2 n-dimensional data support.
 
-[Category:Image annotation](Category:Image_annotation "wikilink")
+[Category:Image annotation](Category_Image_annotation "wikilink")

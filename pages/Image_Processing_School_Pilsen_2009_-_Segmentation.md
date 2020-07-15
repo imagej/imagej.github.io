@@ -18,7 +18,7 @@ Thresholding is a very simple segmentation method. You just specify a gray value
 
   - open the blobs sample image (this image is so popular that it got a hotkey: ctrl+shift b)
 
-![blobs.jpg](/images/pages/Blobs.jpg "blobs.jpg")
+![blobs.jpg](blobs.jpg "blobs.jpg")
 
   - now try to segment the blobs with a threshold: Image - Adjust - Threshold
   - play a bit with different possible values:
@@ -29,11 +29,11 @@ Thresholding is a very simple segmentation method. You just specify a gray value
 
 It is hard to segment the image without a very small blobb in the center. We will have a look now on how to get rid of such small blobs. The following image shows a possible segmentation and the small annoying blob and some others we do not want to have:
 
-![thresholdSegmentation.jpg](/images/pages/ThresholdSegmentation.jpg "thresholdSegmentation.jpg")
+![thresholdSegmentation.jpg](thresholdSegmentation.jpg "thresholdSegmentation.jpg")
 
 We now want to filter these small blobs using morphology operations. You can find these under Process - Binary Besides the basic four operations (erode, dilate, open, close) there is also an options dialog:
 
-![morphOptions.jpg](/images/pages/MorphOptions.jpg "morphOptions.jpg")
+![morphOptions.jpg](morphOptions.jpg "morphOptions.jpg")
 
 Here you can specify how often (iterations) the operator (choose in Do drop down menu) should be applied and how big the template is (count). Try to play a bit with the parameters. You should at least notice two things:
 
@@ -62,17 +62,17 @@ For our test we are going to generate our testimage ourselves.
   - create a new small image (100x100 pixels)
   - Now draw a filled black circle on the white background (The fill command is in the Edit menu)
 
-![levelSetCircle.jpg](/images/pages/LevelSetCircle.jpg "levelSetCircle.jpg")
+![levelSetCircle.jpg](levelSetCircle.jpg "levelSetCircle.jpg")
 
 Okay, this image basically is already segmented. But lets just try the rubberband levelset look for a sanity check. Open the level set plugin under Plugins - Segmentation (gives an error) Seems we have to specify a region first. This is because the level sets need an initial contour that is then refinded. So draw something crude in the circle
 
-![levelSetCircleSelection.jpg](/images/pages/LevelSetCircleSelection.jpg "levelSetCircleSelection.jpg")
+![levelSetCircleSelection.jpg](levelSetCircleSelection.jpg "levelSetCircleSelection.jpg")
 
 Now we can open the plugin (Plugins - Segmentation - Level Sets)
 
 You will see the following dialog appear:
 
-![LevelSet\_Dialog.jpg](/images/pages/LevelSet Dialog.jpg "LevelSet Dialog.jpg")
+![LevelSet\_Dialog.jpg](LevelSet_Dialog.jpg "LevelSet_Dialog.jpg")
 
 The fast marching method is not very interesting for our purpose at the moment. You are free to play with it later. For now please uncheck that box.
 
@@ -85,7 +85,7 @@ So far not very impressive. Let's make this a bit more complicated.
 
   - Cut a part out of the black circle by drawing a white ellipse onto it:
 
-![LevelSets\_CirclePackman.jpg](/images/pages/LevelSets CirclePackman.jpg "LevelSets CirclePackman.jpg")
+![LevelSets\_CirclePackman.jpg](LevelSets_CirclePackman.jpg "LevelSets_CirclePackman.jpg")
 
 Now again try to segment this shape with level sets:
 
@@ -93,7 +93,7 @@ Now again try to segment this shape with level sets:
   - And from the outside
   - What do you have to do to get a segmentation that fills the gap?
 
-![LevelSets\_Packman\_closed.jpg](/images/pages/LevelSets Packman closed.jpg "LevelSets Packman closed.jpg")
+![LevelSets\_Packman\_closed.jpg](LevelSets_Packman_closed.jpg "LevelSets_Packman_closed.jpg")
 
 Now take the same image and add some noise (Process - Noise - Add noise)
 
@@ -114,14 +114,14 @@ A nice all purpose 3d manual segmentation plugin is the segmentation editor. It 
 
 As you can see, the newer version has two additional buttons:
 
-![segmentationEditor\_update.jpg](/images/pages/SegmentationEditor update.jpg "segmentationEditor update.jpg")
+![segmentationEditor\_update.jpg](segmentationEditor_update.jpg "segmentationEditor_update.jpg")
 
 They are labeled O and C like open and close. Sounds familiar :-)
 
 In order to have some fun, I recommend to use the head sample file from the File - Open samples menu. You can segment the brain of that guy and afterwards make a nice animation with the volume viewer:
 
-![manWithBrain.jpg](/images/pages/ManWithBrain.jpg "manWithBrain.jpg")
+![manWithBrain.jpg](manWithBrain.jpg "manWithBrain.jpg")
 
 Hope you had fun\!
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")

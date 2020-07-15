@@ -10,7 +10,7 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Saalfeld' %} ([1](mailto:saalfeld@mpi-cbg.de))
+{% include person content='Saalfeld' %} ([1](mailto_saalfeld@mpi-cbg.de))
 {% endcapture %}
 
 {% capture maintainer%}
@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='axtimwalde ' repo='mpicbg ' path='mpicbg\_/src/main/java/Transform\_Roi.java ' %}
 {% endcapture %}
-{% include info-box name='(Transform by) Landmark Correspondences ' software='Fiji ' author=author maintainer=maintainer source=source released='August 7<sup>th</sup>, 2008 ' latest-version='October 19<sup>th</sup>, 2010 ' status='stable, active ' category='[Plugins](:Category:Plugins "wikilink"), [Transform](:Category:Transform "wikilink"),[Registration](:Category:Registration "wikilink") ' %} The plugin **Landmark Correspondences** calculates a transformation between two corresponding landmark clouds and renders a transformed image. The landmarks are read from point selections over two images. The transformation is estimated by a least squares or Moving Least Squares fit for the available models.
+{% include info-box name='(Transform by) Landmark Correspondences ' software='Fiji ' author=author maintainer=maintainer source=source released='August 7<sup>th</sup>, 2008 ' latest-version='October 19<sup>th</sup>, 2010 ' status='stable, active ' category='[Plugins](_Category_Plugins "wikilink"), [Transform](_Category_Transform "wikilink"),[Registration](_Category_Registration "wikilink") ' %} The plugin **Landmark Correspondences** calculates a transformation between two corresponding landmark clouds and renders a transformed image. The landmarks are read from point selections over two images. The transformation is estimated by a least squares or Moving Least Squares fit for the available models.
 
 The non-linear non-invertible transformations as estimated using the Moving Least Squares method are rendered through a mesh of triangles whose resolution is a parameter of the plugin, see [Interactive Moving Least Squares](Interactive_Moving_Least_Squares "wikilink") for an intuitive explanation.
 
@@ -34,4 +34,4 @@ The non-linear non-invertible transformations as estimated using the Moving Leas
 {% endcapture %}
 {% include thumbnail src='/images/pages/Transform Roi-mls.jpg' title=title %}
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Transform](Category:Transform "wikilink") [Category:Registration](Category:Registration "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Transform](Category_Transform "wikilink") [Category:Registration](Category_Registration "wikilink")

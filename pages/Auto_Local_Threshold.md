@@ -36,11 +36,11 @@ It you are processing a stack, one additional option is available: **Stack** can
 
 Which method segments your data best? You can attempt to answer this question using the **Try all** option. This produces a montage with results from all the methods, so one can explore how the different algorithms perform on an image or stack.
 
-![Epith.png](/images/pages/Epith.png "Epith.png")
+![Epith.png](Epith.png "Epith.png")
 
 Original image
 
-![epithm2.png](/images/pages/Epithm2.png "epithm2.png")
+![epithm2.png](epithm2.png "epithm2.png")
 
 Try all methods.
 
@@ -133,7 +133,7 @@ Implements a local version of Otsu's global threshold clustering. The algorithm 
 
   - {% include citation last='Otsu ' first='N ' year='1979 ' journal='IEEE Trans. Sys., Man., Cyber. ' url='http://ieeexplore.ieee.org/xpl/freeabs\_all.jsp?\&arnumber=4310076 ' title='A threshold selection method from gray-level histograms ' volume='9 ' pages='62-66 ' doi='10.1109/TSMC.1979.4310076 ' %}
 
-See also the [Wikipedia article on Otsu's method](wikipedia:Otsu's_method "wikilink").
+See also the [Wikipedia article on Otsu's method](wikipedia_Otsu's_method "wikilink").
 
 Ported from C++ code by Jordan Bevik.
 
@@ -169,4 +169,4 @@ Implements Sauvola's thresholding method, which is a variation of Niblack's meth
 
 Ported from ME Celebi's fourier\_0.8 routines [5](http://sourceforge.net/projects/fourier-ipal) and [6](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")

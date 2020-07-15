@@ -18,4 +18,4 @@ This work uses [TrakEM2](TrakEM2 "wikilink") to trace and identify neuronal line
 
 See the manual page of the [Neurite Identification Tool](http://www.ini.uzh.ch/~acardona/nit/) for all details.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

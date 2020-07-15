@@ -10,7 +10,7 @@ description: test description
 
 # What is a hackathon?
 
-In the context of ImageJ, a [hackathon](wikipedia:Hackathon "wikilink") is a coding spree, or if you want, a one or two-week brainstorm session where scientists with programming skills sit together and work in a low-distraction, high-energy environment to advance the software side of their research. Typically, results get accomplished much faster (read: days instead of weeks or months) than without hackathons, because the setting is ideal to discuss advanced ideas with similar-thinking scientists and ideas can sprout much faster. Sometimes, results are achieved that would not have been possible without a hackathon at all.
+In the context of ImageJ, a [hackathon](wikipedia_Hackathon "wikilink") is a coding spree, or if you want, a one or two-week brainstorm session where scientists with programming skills sit together and work in a low-distraction, high-energy environment to advance the software side of their research. Typically, results get accomplished much faster (read: days instead of weeks or months) than without hackathons, because the setting is ideal to discuss advanced ideas with similar-thinking scientists and ideas can sprout much faster. Sometimes, results are achieved that would not have been possible without a hackathon at all.
 
 <div style="float: right">
 
@@ -27,9 +27,9 @@ Also, hackathons are the perfect excuse to concentrate on a particular subject w
 
 # Origin of the term *hackathon*
 
-The term comes from the original meaning of [hack](wikipedia:Hack_%28technology%29 "wikilink"), i.e. a clever and unforeseen way to use or improve a technical system.
+The term comes from the original meaning of [hack](wikipedia_Hack_%28technology%29 "wikilink"), i.e. a clever and unforeseen way to use or improve a technical system.
 
-It is [not clear whether Sun's marketing team or OpenBSD were first](wikipedia:Hackathon "wikilink"), combining the words *hack* and *marathon* to form *hackathon*.
+It is [not clear whether Sun's marketing team or OpenBSD were first](wikipedia_Hackathon "wikilink"), combining the words *hack* and *marathon* to form *hackathon*.
 
 Ever since, OpenBSD held annual hackathons during which OpenBSD was improved in leaps and bounds.
 
@@ -395,4 +395,4 @@ Ostrava, Czech Republic</p></td>
 </tbody>
 </table>
 
-[Category:Hackathons](Category:Hackathons "wikilink")
+[Category:Hackathons](Category_Hackathons "wikilink")

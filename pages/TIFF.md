@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% include menu-formats%}
-The [TIFF file format](wikipedia:TIFF "wikilink") is one of the most widely used formats in biosciences. Many commercial instruments write images using some flavor of TIFF. It is used in [open source](open_source "wikilink") efforts as well; for example, the [Open Microscopy Environment](OME "wikilink") developed the [OME-TIFF format](http://www.openmicroscopy.org/site/support/ome-model/ome-tiff/) as an open exchange standard for microscopy data.
+The [TIFF file format](wikipedia_TIFF "wikilink") is one of the most widely used formats in biosciences. Many commercial instruments write images using some flavor of TIFF. It is used in [open source](open_source "wikilink") efforts as well; for example, the [Open Microscopy Environment](OME "wikilink") developed the [OME-TIFF format](http://www.openmicroscopy.org/site/support/ome-model/ome-tiff/) as an open exchange standard for microscopy data.
 
 ## ImageJ 1.x support
 
@@ -33,4 +33,4 @@ The [SCIFIO](SCIFIO "wikilink") library, the I/O library of [ImageJ2](ImageJ2 "w
 
 You can tell ImageJ2 to use SCIFIO by default via the {% include bc content='Edit | Options | ImageJ2...'%} menu's "Use SCIFIO when opening files (BETA\!)" checkbox.
 
-[Category:Import-Export](Category:Import-Export "wikilink")
+[Category:Import-Export](Category_Import-Export "wikilink")

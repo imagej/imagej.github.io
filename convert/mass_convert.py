@@ -130,7 +130,7 @@ def convert_all():
         if filename.endswith(".mw"):
             title = filename.replace(".mw", "")
             # print("trying to convert " + title + "...")
-            _convert(title, recursive=True)
+            _convert(title, recursive=False)
 
 
 def load_blacklist(blacklist_path):
@@ -163,7 +163,7 @@ def get_unused_media():
 def save_status():
     write_list(converted_pages, converted_pages_path)
     write_list(converted_media, converted_media_path)
-    write_list(missing_pages, missing_pages_path)
+    # write_list(missing_pages, missing_pages_path)
     write_list(missing_media, missing_media_path)
     write_list(get_unused_pages(), unused_pages_path)
     write_list(get_unused_media(), unused_media_path)

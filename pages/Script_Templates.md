@@ -26,4 +26,4 @@ Ideally, a template will be focused on an a single objective (e.g. opening an im
 
 It is especially helpful to document how the template can be adapted to meet the user's needs.
 
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Scripting](Category_Scripting "wikilink")

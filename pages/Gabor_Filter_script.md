@@ -12,7 +12,7 @@ description: test description
 {% capture title%}
  Example of a two-dimensional Gabor filter kernel (with a spectrum LUT). 
 {% endcapture %}
-{% include thumbnail src='/images/pages/Kernel-Gabor-filter.png' title=title %} This is an example of how to create [Gabor filters](wikipedia:Gabor_filter "wikilink") in Fiji using Beanshell scripting. The script will create and apply a set of Gabor filters to the currently selected image.
+{% include thumbnail src='/images/pages/Kernel-Gabor-filter.png' title=title %} This is an example of how to create [Gabor filters](wikipedia_Gabor_filter "wikilink") in Fiji using Beanshell scripting. The script will create and apply a set of Gabor filters to the currently selected image.
 
 Five different parameters can be adjusted:
 
@@ -171,4 +171,4 @@ result.show();
   - [Scripting Help](Scripting_Help "wikilink")
   - [Scripting comparisons](Scripting_comparisons "wikilink")
 
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Scripting](Category_Scripting "wikilink")

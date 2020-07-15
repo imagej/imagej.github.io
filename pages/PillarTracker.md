@@ -22,7 +22,7 @@ description: test description
 {% capture source%}
 {% include github org='scottreen ' repo='PillarTracker ' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji ' name='PillarTracker ' author=author maintainer=maintainer source=source released='June 2017 ' latest-version='"""1.1.6 May 2018""" ' status='stable, active ' category='[Tracking](:Category:Tracking "wikilink"), [Visualization](:Category:Visualization "wikilink"), [Filtering](:Category:Filtering "wikilink"), [Analysis](:Category:Analysis "wikilink"), [Plugins](:Category:Plugins "wikilink") ' %}
+{% include info-box software='ImageJ/Fiji ' name='PillarTracker ' author=author maintainer=maintainer source=source released='June 2017 ' latest-version='"""1.1.6 May 2018""" ' status='stable, active ' category='[Tracking](_Category_Tracking "wikilink"), [Visualization](_Category_Visualization "wikilink"), [Filtering](_Category_Filtering "wikilink"), [Analysis](_Category_Analysis "wikilink"), [Plugins](_Category_Plugins "wikilink") ' %}
 
 </div>
 
@@ -110,4 +110,4 @@ MR Xu Xiaochun (mbixxc@nus.edu.sg)
 
 DR Felix Martin Margadant (mbifmm@nus.edu.sg)
 
-[Category:Tracking](Category:Tracking "wikilink") [Category:Visualization](Category:Visualization "wikilink") [Category:Analysis](Category:Analysis "wikilink") [Category:Filtering](Category:Filtering "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Tracking](Category_Tracking "wikilink") [Category:Visualization](Category_Visualization "wikilink") [Category:Analysis](Category_Analysis "wikilink") [Category:Filtering](Category_Filtering "wikilink") [Category:Plugins](Category_Plugins "wikilink")

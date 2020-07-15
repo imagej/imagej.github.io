@@ -18,7 +18,7 @@ description: test description
   - Otherwise, choose your language from the *Language* menu.
   - Grab code snippets for common tasks from the [Scripting toolbox](Scripting_toolbox "wikilink").
   - See [Scripting comparisons](Scripting_comparisons "wikilink") for a side-by-side comparison of scripting languages.
-  - See [:Category:Scripting](:Category:Scripting "wikilink") for a list of all scripting-related pages on this wiki.
+  - See [:Category:Scripting](_Category_Scripting "wikilink") for a list of all scripting-related pages on this wiki.
 
 # Supported languages
 
@@ -115,4 +115,4 @@ ImageJ2 (and therefore Fiji) looks for scripts in subfolders of `./scripts/` as 
 
 See the [Scripting Headless](Scripting_Headless "wikilink") page for instructions on executing scripts headlessly.
 
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Scripting](Category_Scripting "wikilink")

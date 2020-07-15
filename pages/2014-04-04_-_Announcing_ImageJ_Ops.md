@@ -10,7 +10,7 @@ description: test description
 
 Today, the [ImageJ](ImageJ "wikilink") and [KNIME](KNIME "wikilink") teams are pleased to announce {% include github org='imagej ' repo='imagej-ops ' label='ImageJ Ops ' %}: a framework for reusable image processing operations. This library is the direct result of an extremely successful hackathon hosted by Michael Berthold's team at the University of Konstanz, Germany.
 
-![Happy hackers: 502 commits in five days\!](/images/pages/Konstanz-hackathon.jpg "Happy hackers: 502 commits in five days!")
+![Happy hackers: 502 commits in five days\!](Konstanz-hackathon.jpg "Happy hackers: 502 commits in five days!")
 
 ## Motivation
 
@@ -126,4 +126,4 @@ Composite sinusoidal gradient image:
 
 And it looks très cool.
 
-[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:Ops](Category:Ops "wikilink")
+[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Ops](Category_Ops "wikilink")

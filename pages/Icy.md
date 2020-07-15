@@ -14,4 +14,4 @@ description: test description
 
   - {% include publication content='Icy' %}
 
-[Category:Related Software](Category:Related_Software "wikilink") [Category:SciJava](Category:SciJava "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Related Software](Category_Related_Software "wikilink") [Category:SciJava](Category_SciJava "wikilink") [Category:Citable](Category_Citable "wikilink")

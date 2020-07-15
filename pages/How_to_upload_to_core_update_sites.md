@@ -53,11 +53,11 @@ From this dialog, you can edit the desired update site(s) to add your authentica
 
 ## Configuring Fiji update site
 
-The Fiji update site uses [webDAV](wikipedia:WebDAV "wikilink") authentication. To upload something, you will need to:
+The Fiji update site uses [webDAV](wikipedia_WebDAV "wikilink") authentication. To upload something, you will need to:
 
   - [Create a wiki account](https://imagej.net/index.php?title=Special:UserLogin&type=signup)
   - Ask an administrator has to add you to the [*uploaders* group](https://imagej.net/Special:ListUsers?group=uploaders)
-  - Once you have been added, [initialize your upload password for "Fiji's main update site"](Special:ChangeUploadPassword "wikilink").
+  - Once you have been added, [initialize your upload password for "Fiji's main update site"](Special_ChangeUploadPassword "wikilink").
 
 In the *Manage update sites* dialog, on the Fiji update site line, add the following information:
 
@@ -72,7 +72,7 @@ You can now close the *Manage update sites* window and go on to [ Uploading your
 
 ## Configuring the ImageJ update site
 
-The ImageJ update site uses [ssh](wikipedia:Secure_Shell "wikilink") authentication. You will need a login with [the imageJ update site](http://update.imagej.net) that some administrator will have to add to the *ij-update* group.
+The ImageJ update site uses [ssh](wikipedia_Secure_Shell "wikilink") authentication. You will need a login with [the imageJ update site](http://update.imagej.net) that some administrator will have to add to the *ij-update* group.
 
 In the *Manage update sites* dialog, on the ImageJ update site line, add the following information:
 

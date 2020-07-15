@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SNT:\_Screencasts](SNT:_Screencasts "wikilink")
+1.  REDIRECT [SNT:\_Screencasts](SNT__Screencasts "wikilink")

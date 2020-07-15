@@ -252,6 +252,6 @@ trackmate = TrackMate(model, settings);
 trackmate.setNumThreads(3); % As many threads as you want.
 ```
 
-[JeanYvesTinevez](User:JeanYvesTinevez "wikilink") ([talk](User_talk:JeanYvesTinevez "wikilink")) 13:44, 17 January 2017 (CST)
+[JeanYvesTinevez](User_JeanYvesTinevez "wikilink") ([talk](User_talk_JeanYvesTinevez "wikilink")) 13:44, 17 January 2017 (CST)
 
-[Category:Matlab](Category:Matlab "wikilink") [Category:Scripting](Category:Scripting "wikilink") [Category:Tracking](Category:Tracking "wikilink")
+[Category:Matlab](Category_Matlab "wikilink") [Category:Scripting](Category_Scripting "wikilink") [Category:Tracking](Category_Tracking "wikilink")

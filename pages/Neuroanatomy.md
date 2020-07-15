@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='morphonets ' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='Neuroanatomy update site ' author=author maintainer=maintainer source=source status='Active ' category='[Plugins](:Category:Plugins "wikilink"), [Analysis](:Category:Analysis "wikilink"), [Neuroanatomy](:Category:Neuroanatomy "wikilink") ' %} The Neuroanatomy update site is used for distribution of [SNT](SNT "wikilink"). A few other (legacy) plugins for *Image Processing for NeuroAnatomy and Tree-like Structures* are also included. For a list of all pages in this wiki related to Neuroanatomy have a look at [:Category:Neuroanatomy](:Category:Neuroanatomy "wikilink").
+{% include info-box software='Fiji ' name='Neuroanatomy update site ' author=author maintainer=maintainer source=source status='Active ' category='[Plugins](_Category_Plugins "wikilink"), [Analysis](_Category_Analysis "wikilink"), [Neuroanatomy](_Category_Neuroanatomy "wikilink") ' %} The Neuroanatomy update site is used for distribution of [SNT](SNT "wikilink"). A few other (legacy) plugins for *Image Processing for NeuroAnatomy and Tree-like Structures* are also included. For a list of all pages in this wiki related to Neuroanatomy have a look at [:Category:Neuroanatomy](_Category_Neuroanatomy "wikilink").
 
 # Installation
 
@@ -50,6 +50,6 @@ SNT has its own [documentation](sNT "wikilink"). The list of *Image Processing f
 
 # Further information
 
-  - A list of all pages in this wiki related to image processing in the neurosciences can be found [here](:Category:Neuroanatomy "wikilink").
+  - A list of all pages in this wiki related to image processing in the neurosciences can be found [here](_Category_Neuroanatomy "wikilink").
 
-[Category:Neuroanatomy](Category:Neuroanatomy "wikilink")
+[Category:Neuroanatomy](Category_Neuroanatomy "wikilink")

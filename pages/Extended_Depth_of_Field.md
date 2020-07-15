@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji ' repo='Extended\_Depth\_Field ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Extended Depth of Field ' maintainer='Daniel Sage ' author='Alex Prudencio ' source=source released='24/12/2010 ' latest-version='24/12/2010 ' status='stable ' category='[:Category:Plugins](:Category:Plugins "wikilink") ' website=' http://bigwww.epfl.ch/demo/edf/ ' %}
+{% include info-box software='ImageJ ' name='Extended Depth of Field ' maintainer='Daniel Sage ' author='Alex Prudencio ' source=source released='24/12/2010 ' latest-version='24/12/2010 ' status='stable ' category='[:Category:Plugins](_Category_Plugins "wikilink") ' website=' http://bigwww.epfl.ch/demo/edf/ ' %}
 
 ## Extended Depth of Field
 
@@ -20,4 +20,4 @@ This plugin provides an extended depth of field algorithm to obtain in focus mic
 
 For details, please refer to the [home page of the plugin](http://bigwww.epfl.ch/demo/edf/).
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")

@@ -28,4 +28,4 @@ In the future, with SezPoz support, you would still have to create an `Adapter`,
 
 \~{% include person content='Hinerm' %}
 
-[Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:News](Category:News "wikilink")
+[Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:News](Category_News "wikilink")

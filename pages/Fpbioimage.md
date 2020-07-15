@@ -22,8 +22,8 @@ Add FPBioimage to your 'Update' sites:
 
 1.  Launch the updater by selecting **Update** from the **Help** menu.
 2.  Click the **Manage update sites** button.
-3.  Tick the **FPBioimage** box: ![FPB-manage-update-sites.png](/images/pages/FPB-manage-update-sites.png "FPB-manage-update-sites.png")
-4.  Click the **Close** button. The updater should now want to install or update some files: ![FPB-jars-to-update.png](/images/pages/FPB-jars-to-update.png "FPB-jars-to-update.png")
+3.  Tick the **FPBioimage** box: ![FPB-manage-update-sites.png](FPB-manage-update-sites.png "FPB-manage-update-sites.png")
+4.  Click the **Close** button. The updater should now want to install or update some files: ![FPB-jars-to-update.png](FPB-jars-to-update.png "FPB-jars-to-update.png")
 5.  Click the **Apply changes** button.
 6.  Restart Fiji when prompted.
 

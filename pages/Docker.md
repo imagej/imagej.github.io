@@ -175,4 +175,4 @@ If you run into any problems or have questions about ImageJ + Docker, please use
   - [GitHub](https://github.com/fiji/dockerfiles/issues)
   - The [mailing lists](Mailing_Lists "wikilink")
 
-[Category:Docker](Category:Docker "wikilink")
+[Category:Docker](Category_Docker "wikilink")

@@ -20,10 +20,10 @@ A *label field* is an 8-bit image stack where the numbers attached to each pixel
 
 The *Show Color Surfaces* command calculates surfaces embedded into the [3D Viewer](3D_Viewer "wikilink") from label fields:
 
-![Show-color-surfaces-reduced.png](/images/pages/Show-color-surfaces-reduced.png "Show-color-surfaces-reduced.png")
+![Show-color-surfaces-reduced.png](Show-color-surfaces-reduced.png "Show-color-surfaces-reduced.png")
 
 ## Menu path
 
 {% include bc content='Plugins | Process | Show Color Surfaces'%}
 
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Plugins](Category_Plugins "wikilink")

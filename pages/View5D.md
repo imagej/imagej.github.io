@@ -14,4 +14,4 @@ description: test description
 
 Rainer and friends have written a lot of tutorials and help around the user interface, so as to maximize usability of this plugin. Have a look here for more info: [View5D homepage](http://www.nanoimaging.de/View5D/).
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Visualization](Category:Visualization "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Visualization](Category_Visualization "wikilink")

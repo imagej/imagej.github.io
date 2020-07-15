@@ -8,7 +8,7 @@ categories: Plugins,Registration,Citable
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:bUnwarpJ\_' %}{| |style="vertical-align:top" |![bUnwarpJ scheme: bidirectional Unwarping in Java.](/images/pages/BUnwarpJ scheme.png "bUnwarpJ scheme: bidirectional Unwarping in Java.") |}
+{% include component-stats content=':sc.fiji:bUnwarpJ\_' %}{| |style="vertical-align:top" |![bUnwarpJ scheme: bidirectional Unwarping in Java.](BUnwarpJ_scheme.png "bUnwarpJ scheme: bidirectional Unwarping in Java.") |}
 
 This ImageJ/Fiji plugin performs **2D image registration based on elastic deformations** represented by B-splines. The invertibility of the deformations is enforced through a consistency restriction.
 
@@ -354,7 +354,7 @@ The weights need to be chosen experimentally, test and error is the only way of 
 
 The divergence and curl weights regularize the deformation by penalizing the [divergence](https://en.wikipedia.org/wiki/Divergence) and [curl](https://en.wikipedia.org/wiki/Curl_%28mathematics%29) of the deformation vector field. In other words, we penalize vector fields with **many** points like this:
 
-![Divergence-curl-2d-examples.png](/images/pages/Divergence-curl-2d-examples.png "Divergence-curl-2d-examples.png")
+![Divergence-curl-2d-examples.png](Divergence-curl-2d-examples.png "Divergence-curl-2d-examples.png")
 
 These are attractor points that make the deformation too rough. One of them would not be a problem (it could be just a rotation), but many yes. So controlling them we make the deformation **smooth**. If you see that your transformations get too rough, it is a good idea to use them. **0.1 and 0.1 are usually good values** if there's no prior knowledge about the deformation shape.
 
@@ -463,4 +463,4 @@ Many of the plugin updates and improvements would have never been possible witho
 
 -----
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Registration](Category:Registration "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:Citable](Category_Citable "wikilink")

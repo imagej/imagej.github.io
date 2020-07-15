@@ -20,11 +20,11 @@ Enabled [ThreeDViewer](ThreeDViewer "wikilink") update site
 
 ### Steps
 
-1.  Launch SciView ![launch\_threedviewer.png](/images/pages/Launch threedviewer.png "launch threedviewer.png")
-2.  Import a 3D mesh (at the time of this writing OBJ, STL, and Isosurfaces taken from a 3D image opened in ImageJ, all work) ![import\_obj.png](/images/pages/Import obj.png "import obj.png")
-3.  Convert mesh to image ![mesh\_to\_image.png](/images/pages/Mesh to image.png "mesh to image.png")
-4.  Select output dimensions ![mesh\_to\_image\_dimensions.png](/images/pages/Mesh to image dimensions.png "mesh to image dimensions.png")
-5.  Inspect the result ![voxelization\_output.png](/images/pages/Voxelization output.png "voxelization output.png")
+1.  Launch SciView ![launch\_threedviewer.png](launch_threedviewer.png "launch_threedviewer.png")
+2.  Import a 3D mesh (at the time of this writing OBJ, STL, and Isosurfaces taken from a 3D image opened in ImageJ, all work) ![import\_obj.png](import_obj.png "import_obj.png")
+3.  Convert mesh to image ![mesh\_to\_image.png](mesh_to_image.png "mesh_to_image.png")
+4.  Select output dimensions ![mesh\_to\_image\_dimensions.png](mesh_to_image_dimensions.png "mesh_to_image_dimensions.png")
+5.  Inspect the result ![voxelization\_output.png](voxelization_output.png "voxelization_output.png")
 
 ### Optional additional steps
 
@@ -32,4 +32,4 @@ This voxelization procedures creates an image that represents the \*surface\* of
 
 If a filled volume is desired, then take a watertight image (see above) and use the Flood Fill (3D) utility available within [Fiji](Fiji "wikilink") under the {% include bc content='Plugins|Process|Flood Fill (3D)'%}.
 
-[Category:Techniques](Category:Techniques "wikilink")
+[Category:Techniques](Category_Techniques "wikilink")

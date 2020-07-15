@@ -26,4 +26,4 @@ description: test description
 
 For further details, see the [ImageJFX web site](http://www.imagejfx.net/).
 
-[Category:Related Software](Category:Related_Software "wikilink")
+[Category:Related Software](Category_Related_Software "wikilink")

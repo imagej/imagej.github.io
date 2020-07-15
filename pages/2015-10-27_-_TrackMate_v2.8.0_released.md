@@ -65,7 +65,7 @@ TrackMate initial design always favored speed over memory consumption. This can 
 
 To deal with this TrackMate now ships a **Block LoG detector**. It is identical to the LoG detector, except that it splits the image in smaller XY blocks and processes them independently. If you process each of this block sequentially, you can drastically reduce memory usage.
 
-![TrackMate\_BlockLogDetector.png](/images/pages/TrackMate BlockLogDetector.png "TrackMate BlockLogDetector.png")
+![TrackMate\_BlockLogDetector.png](TrackMate_BlockLogDetector.png "TrackMate_BlockLogDetector.png")
 
 Of course there is a price to pay: Spots that are present exactly on the block borders might be detected twice on two different blocks. This will have a very detrimental effect on the subsequent tracking step. To temper this problem, this detector prunes spots that are found inside other spots.
 
@@ -131,6 +131,6 @@ This bug was first reported by Anna Gilles though many may have feel the pain.
 
 Now fixed. Bug reported by Jan Eglinger.
 
-{% include person content='JeanYvesTinevez' %} [CCCT](User:CCCT "wikilink") ([talk](User_talk:CCCT "wikilink")) 10:53, 27 October 2015 (CDT)
+{% include person content='JeanYvesTinevez' %} [CCCT](User_CCCT "wikilink") ([talk](User_talk_CCCT "wikilink")) 10:53, 27 October 2015 (CDT)
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

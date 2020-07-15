@@ -14,7 +14,7 @@ description: test description
 {% endcapture %}
 {% include info-box name='Stitching ' software='ImageJ ' author='Stephan Preibisch ' maintainer='Stephan Preibisch  
 Mark Hiner  
-Curtis Rueden ' filename='Stitching\_.jar ' source=source released='October 2008 ' status='active ' category='[Stitching](:Category:Stitching "wikilink") ' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch) ' %}{% include toc%}
+Curtis Rueden ' filename='Stitching\_.jar ' source=source released='October 2008 ' status='active ' category='[Stitching](_Category_Stitching "wikilink") ' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch) ' %}{% include toc%}
 
 
 # What is Grid/Collection Stitching?
@@ -79,4 +79,4 @@ Even using virtual memory with maximum memory allocation can still be too much f
 
 Please see the [Image Stitching](Image_Stitching "wikilink") page for other precautions.
 
-[Category:Registration](Category:Registration "wikilink") [Category:Stitching](Category:Stitching "wikilink")
+[Category:Registration](Category_Registration "wikilink") [Category:Stitching](Category_Stitching "wikilink")

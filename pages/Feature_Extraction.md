@@ -22,15 +22,15 @@ description: test description
 {% capture source%}
 {% include github org='axtimwalde ' repo='mpicbg ' label='on GitHub ' %}
 {% endcapture %}
-{% include info-box name='Feature Extraction SIFT/MOPS ' software='Fiji ' author='Stephan Saalfeld ([1](mailto:saalfeld@mpi-cbg.de)) ' maintainer='Stephan Saalfeld ' source=source released='2008 ' latest-version='September 29<sup>th</sup>, 2009 ' status='stable, active ' category='[Feature Extraction](:Category:Feature_Extraction "wikilink"), [Registration](:Category:Registration "wikilink"), [Plugins](:Category:Plugins "wikilink") ' %} The plugins "Extract SIFT Correspondences" and "Extract MOPS Correspondences" identify a set of corresponding points of interest in two images and export them as PointRoi. Interest points are detected using the [Difference of Gaussian detector](wikipedia:Blob_detection "wikilink") thus providing similarity-invariance. Corresponding points are best matches from local feature descriptors that are consistent with respect to a common geometric transformation.
+{% include info-box name='Feature Extraction SIFT/MOPS ' software='Fiji ' author='Stephan Saalfeld ([1](mailto_saalfeld@mpi-cbg.de)) ' maintainer='Stephan Saalfeld ' source=source released='2008 ' latest-version='September 29<sup>th</sup>, 2009 ' status='stable, active ' category='[Feature Extraction](_Category_Feature_Extraction "wikilink"), [Registration](_Category_Registration "wikilink"), [Plugins](_Category_Plugins "wikilink") ' %} The plugins "Extract SIFT Correspondences" and "Extract MOPS Correspondences" identify a set of corresponding points of interest in two images and export them as PointRoi. Interest points are detected using the [Difference of Gaussian detector](wikipedia_Blob_detection "wikilink") thus providing similarity-invariance. Corresponding points are best matches from local feature descriptors that are consistent with respect to a common geometric transformation.
 
-The plugins use the [Scale Invariant Feature Transform](wikipedia:Scale-invariant_feature_transform "wikilink") (SIFT) and [Multi-Scale Oriented Patches](http://research.microsoft.com/research/pubs/view.aspx?msr_tr_id=MSR-TR-2004-133) (MOPS) for local feature description. The thus established matches are filtered using the [Random Sample Consensus](wikipedia:RANSAC "wikilink") (RANSAC).
+The plugins use the [Scale Invariant Feature Transform](wikipedia_Scale-invariant_feature_transform "wikilink") (SIFT) and [Multi-Scale Oriented Patches](http://research.microsoft.com/research/pubs/view.aspx?msr_tr_id=MSR-TR-2004-133) (MOPS) for local feature description. The thus established matches are filtered using the [Random Sample Consensus](wikipedia_RANSAC "wikilink") (RANSAC).
 
 The extracted sets of corresponding landmarks and the calculated transformations are used in [TrakEM2](TrakEM2 "wikilink"), [Register Virtual Stack Slices](Register_Virtual_Stack_Slices "wikilink") and [BUnwarpJ](BUnwarpJ "wikilink") for image registration.
 
 ## Parameters
 
-![SIFT parameters](/images/pages/SIFT Dialog.png "SIFT parameters")
+![SIFT parameters](SIFT_Dialog.png "SIFT parameters")
 
 ### Scale Invariant Interest Point Detector
 
@@ -77,6 +77,6 @@ This software embodies methods for which the following patents have been issued:
 
 1.  Lowe, David G. (2004). ["Distinctive Image Features from Scale-Invariant Keypoints"](http://citeseer.ist.psu.edu/lowe04distinctive.html). *International Journal of Computer Vision* **60** (2): 91–110. [doi:\[http://dx.doi.org/10.1023%2FB%3AVISI.0000029664.99615.94](doi:%5Bhttp://dx.doi.org/10.1023%2FB%3AVISI.0000029664.99615.94) 10.1023/B:VISI.0000029664.99615.94\].
 2.  Brown, Matthew; Szeliski, Richard; Winder, Simon (2005). ["Multi-Image Matching Using Multi-Scale Oriented Patches"](http://www.cs.ubc.ca/~mbrown/papers/cvpr05.pdf). *Proceedings of the 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)* Volume 1: 510–517. [doi:\[http://dx.doi.org/10.1109/CVPR.2005.235](doi:%5Bhttp://dx.doi.org/10.1109/CVPR.2005.235) 10.1109/CVPR.2005.235\].
-3.  Fischler, Martin A.; Bolles, Robert C. (1981). "Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography". *Communications of the ACM* **24** (6): 381–395. [doi:\[http://doi.acm.org/10.1145/358669.358692](doi:%5Bhttp://doi.acm.org/10.1145/358669.358692) 10.1145/358669.358692\]
+3.  Fischler, Martin A.; Bolles, Robert C. (1981). "Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography". *Communications of the ACM* **24** (6): 381–395. [doi:\[http://doi.acm.org/10.1145/358669.358692](doi_%5Bhttp_//doi.acm.org/10.1145/358669.358692) 10.1145/358669.358692\]
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Registration](Category:Registration "wikilink") [Category:Feature Extraction](Category:Feature_Extraction "wikilink")
+[Category_Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:Feature Extraction](Category_Feature_Extraction "wikilink")

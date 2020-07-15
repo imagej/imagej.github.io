@@ -154,4 +154,4 @@ Some locals were not present at the hackathon on weekends.
 
 <File:Fiji_Hackathon_Galleria5.jpg> <File:Fiji_Hackathon_Galleria4.jpg> <File:Fiji_Hackathon_Galleria3.jpg> <File:Fiji_Hackathon_Galleria2.jpg> <File:Fiji_Hackathon_Galeria.jpg> <File:Fiji_Hackathon_thinking.jpg> <File:Fiji_Hackathon_thinking2.jpg> <File:Fiji_Hackathon_hacking.jpg> <File:Fiji_Hackathon_Curtis.jpg> <File:Fiji_Hackathon_Josh2.jpg> <File:Fiji_Hackathon_Josh_Johannes.jpg> <File:Fiji_Hackathon_Melissa.jpg> <File:Fiji_Hackathon_Dan_Jurgen.jpg> <File:Fiji_Hackathon_Icy.jpg> <File:Fiji_Hackathon_Josh4.jpg> <File:Fiji_Hackathon_Josh3.jpg> <File:Fiji_Hackathon_Josh1.jpg> <File:Fiji_Hackathon_Kevin.jpg> <File:Fiji_Hackathon_Ferdi.jpg> <File:Fiji_Hackathon_Jean-Marie.jpg>
 
-[Category:News](Category:News "wikilink") [Category:Hackathons](Category:Hackathons "wikilink")
+[Category:News](Category_News "wikilink") [Category:Hackathons](Category_Hackathons "wikilink")

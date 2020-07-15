@@ -54,7 +54,7 @@ Here is logged all modification made to the structure of this wiki (not its cont
 
 <!-- end list -->
 
-  - 10/02/21 - JES - install (and fix) the [PdfExport extension](Special:PdfPrint "wikilink")
+  - 10/02/21 - JES - install (and fix) the [PdfExport extension](Special_PdfPrint "wikilink")
 
 <!-- end list -->
 
@@ -66,7 +66,7 @@ Here is logged all modification made to the structure of this wiki (not its cont
 
 <!-- end list -->
 
-  - 10/01/21 - JES - installed newly written FijiRandomSnapshot extension to show random featured projects listed in [Fiji:Featured\_Projects](Fiji:Featured_Projects "wikilink") (fixed format)
+  - 10/01/21 - JES - installed newly written FijiRandomSnapshot extension to show random featured projects listed in [Fiji:Featured\_Projects](Fiji_Featured_Projects "wikilink") (fixed format)
 
 <!-- end list -->
 

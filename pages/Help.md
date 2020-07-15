@@ -35,4 +35,4 @@ If you encounter problems, check the [Troubleshooting](Troubleshooting "wikilink
 
 If you have found a bug, you can help the project by [reporting it](Report_a_Bug "wikilink").
 
-[Category:Help](Category:Help "wikilink")
+[Category:Help](Category_Help "wikilink")

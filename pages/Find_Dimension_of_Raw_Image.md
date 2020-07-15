@@ -72,4 +72,4 @@ if gd.wasCanceled():
 
   - [Jython Scripting](Jython_Scripting "wikilink")
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Scripting](Category:Scripting "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Scripting](Category_Scripting "wikilink")

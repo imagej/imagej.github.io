@@ -12,4 +12,4 @@ This is a great day for Fiji. Thanks to Erik Meijering, we are permitted to ship
 
 Thank you, Erik\!
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

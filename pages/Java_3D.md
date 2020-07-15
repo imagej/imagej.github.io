@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-[Java 3D](wikipedia:Java_3D "wikilink") is a technology used for 3D visualization in Java. In [ImageJ](ImageJ "wikilink"), it is used by the [3D Viewer](3D_Viewer "wikilink") plugin, and hence transitively by other plugins which rely on the 3D Viewer for their visualization, such as the [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink") and [TrakEM2](TrakEM2 "wikilink").
+[Java 3D](wikipedia_Java_3D "wikilink") is a technology used for 3D visualization in Java. In [ImageJ](ImageJ "wikilink"), it is used by the [3D Viewer](3D_Viewer "wikilink") plugin, and hence transitively by other plugins which rely on the 3D Viewer for their visualization, such as the [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink") and [TrakEM2](TrakEM2 "wikilink").
 
 ## Status of Java 3D
 
@@ -32,6 +32,6 @@ The Java 6 version of ImageJ works with Java 3D 1.5.2, by launching the 3D Viewe
 
 ### Java 3D 1.6
 
-Java 3D 1.6 is the community version maintained by JogAmp. It was rewritten to work on top of [JOGL](wikipedia:Java_OpenGL "wikilink"), and requires Java 7 or newer.
+Java 3D 1.6 is the community version maintained by JogAmp. It was rewritten to work on top of [JOGL](wikipedia_Java_OpenGL "wikilink"), and requires Java 7 or newer.
 
 The Java 8 version of ImageJ includes Java 3D 1.6; see [this page](2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D "wikilink") for further details.

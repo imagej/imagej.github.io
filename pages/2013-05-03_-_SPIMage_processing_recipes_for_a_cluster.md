@@ -16,4 +16,4 @@ The pipeline was developed for processing of data from the commercial SPIM solut
 
 It would be nice if other's contribute their scripts and experience...
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

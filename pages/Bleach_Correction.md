@@ -19,8 +19,8 @@ This plugin contains three different methods for correcting the intensity decay 
       - [MBF ImageJ](MBF_ImageJ "wikilink") suggests to use “Exponential” equation for fitting, whereas this plugin uses “Exponential with Offset”
   - Histogram Matching Method:
       - A brand-new method for bleach correction.
-      - This algorithm first samples the histogram of initial frame, and for the successive frames, [histograms are matched](wikipedia:Histogram_matching "wikilink") to the first frame. This avoids the increase in noise in the latter part of the sequence which is a problem in the above two methods.
+      - This algorithm first samples the histogram of initial frame, and for the successive frames, [histograms are matched](wikipedia_Histogram_matching "wikilink") to the first frame. This avoids the increase in noise in the latter part of the sequence which is a problem in the above two methods.
       - This method does much better restoration of bleaching sequence for segmentation but not appropriate for intensity quantification.
       - See the blog entry, [a bit more detail on this issue](http://cmci.embl.de/blogtng/2010-05-04/photobleaching_correction_3d_time_series)
 
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Plugins](Category_Plugins "wikilink")

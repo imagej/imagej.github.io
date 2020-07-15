@@ -90,4 +90,4 @@ If you know CVS or Subversion, you are in for some surprises:
   - In Git, you *git add* <u>content</u>, not files. In other words, when the file *README* is already tracked, *git add README* will tell Git that you want the changes in said file to be part of the next commit.
   - In Git, you <u>never, ever</u> try to integrate remote changes into an uncommitted state. In other words, if you have uncommitted changes, you <u>always</u> commit them before calling *git fetch origin; git merge origin/master*.
 
-[Category:Git](Category:Git "wikilink")
+[Category:Git](Category_Git "wikilink")

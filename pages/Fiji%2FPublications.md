@@ -11,7 +11,7 @@ description: test description
 {% include info-box content='This page lists publications relating to the [Fiji](Fiji "wikilink") project.
 
   - For general instructions on citing [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink"), see [Citing](Citing "wikilink").
-  - For an index of citable software, see [:Category:Citable](:Category:Citable "wikilink").' %}
+  - For an index of citable software, see [:Category:Citable](_Category_Citable "wikilink").' %}
 
 {% include fijimenu%}
 == Publications introducing Fiji ==
@@ -152,7 +152,7 @@ description: test description
 
 <references />
 
-[Category:Fiji](Category:Fiji "wikilink")
+[Category:Fiji](Category_Fiji "wikilink")
 
 1.  {% include cite content='journal' author='Johannes Schindelin, Ignacio Arganda-Carreras, Erwin Frise, Verena Kaynig, Mark Longair, Tobias Pietzsch, Stephan Preibisch, Curtis Rueden, Stephan Saalfeld, Benjamin Schmid, Jean-Yves Tinevez, Daniel James White, Volker Hartenstein, Kevin Eliceiri, Pavel Tomancak and Albert Cardona ' title='Fiji: an open-source platform for biological-image analysis ' journal='Nature Methods ' year='2012 ' volume='9(7) ' pages='676-682 ' url='http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html ' %}
 2.  {% include cite content='journal' author='Johannes Schindelin, Curtis T. Rueden, Mark C. Hiner and Kevin W. Eliceiri ' title='The ImageJ ecosystem: An open platform for biomedical image analysis ' journal='Molecular Reproduction and Development ' year='2015 ' volume='82(7-8) ' pages=':518-29 ' url='http://onlinelibrary.wiley.com/doi/10.1002/mrd.22489/full ' %}

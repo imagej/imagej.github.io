@@ -19,7 +19,7 @@ description: test description
 
 We ask users to cite:
 
-1.  Any [specific publications](:Category:Citable "wikilink") of [plugins](plugins "wikilink") used.
+1.  Any [specific publications](_Category_Citable "wikilink") of [plugins](plugins "wikilink") used.
 2.  The general paper of ImageJ distribution(s) used—e.g., if you used [Fiji](Fiji "wikilink"), cite the [Fiji](Fiji "wikilink") paper.
 3.  The general [ImageJ](ImageJ "wikilink") paper.
 
@@ -49,4 +49,4 @@ Thank you for your support.
 |                                      |                                             |                                                    |
 |                                      |                                             |                                                    |
 
-See the [list of citable software](:Category:Citable "wikilink") and [publications using Fiji](Fiji/Publications "wikilink") for additional citation information.
+See the [list of citable software](_Category_Citable "wikilink") and [publications using Fiji](Fiji/Publications "wikilink") for additional citation information.

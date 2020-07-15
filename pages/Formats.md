@@ -21,7 +21,7 @@ ImageJ has some built-in support for the DICOM format, and there are also plugin
 
 ## HDF
 
-The HDF5 [update site](update_site "wikilink") enables support for reading and writing [HDF5](wikipedia:https://en.wikipedia.org/wiki/Hierarchical_Data_Format "wikilink") image data. Note that HDF5 is a very broad specification; the HDF5 plugin will not support all manner of HDF files, but only those written according to its constraints.
+The HDF5 [update site](update_site "wikilink") enables support for reading and writing [HDF5](wikipedia_https_//en.wikipedia.org/wiki/Hierarchical_Data_Format "wikilink") image data. Note that HDF5 is a very broad specification; the HDF5 plugin will not support all manner of HDF files, but only those written according to its constraints.
 
 ## Video
 
@@ -31,4 +31,4 @@ Out of the box, ImageJ has limited support for some video formats such as AVI an
 
   - The ImageJ Documentation Wiki page [FAQ: Which file formats are supported by ImageJ](http://imagejdocu.tudor.lu/doku.php?id=faq:general:which_file_formats_are_supported_by_imagej) (though it is outdated).
 
-[Category:Import-Export](Category:Import-Export "wikilink")
+[Category:Import-Export](Category_Import-Export "wikilink")

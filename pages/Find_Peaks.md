@@ -20,13 +20,13 @@ description: test description
 {% capture source%}
 {% include github org='tferr ' repo='Scripts ' path='README.md\#data-analysis ' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji ' name='Find Peaks ' maintainer='[ BAR update site](BAR "wikilink") ' author=author filename=filename source=source released='February 2014 ' category='[Analysis](:Category:Analysis "wikilink"), [Scripting](:Category:Scripting "wikilink"), [Plugins](:Category:Plugins "wikilink") ' %}
+{% include info-box software='ImageJ/Fiji ' name='Find Peaks ' maintainer='[ BAR update site](BAR "wikilink") ' author=author filename=filename source=source released='February 2014 ' category='[Analysis](_Category_Analysis "wikilink"), [Scripting](_Category_Scripting "wikilink"), [Plugins](_Category_Plugins "wikilink") ' %}
 
 A [BAR](BAR "wikilink") script (written in [BeanShell](Beanshell_Scripting "wikilink")) that retrieves local maxima and minima from an ImageJ plot. The easiest way to install *Find Peaks* is by [subscribing](BAR#Installation "wikilink") to the BAR {% include list-of-update-sites content='update site' %}.
 
 ## Options
 
-![Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using <span style="border-bottom:1px dotted #ccc;">File▷ Import▷ Results</span>. Once [options](/images/pages/#options "wikilink") are specified, coordinates of retrieved peaks are logged to the table of a new plot window](FindPeaksSnapshot.png "Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using File▷ Import▷ Results. Once options are specified, coordinates of retrieved peaks are logged to the table of a new plot window")
+![Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using <span style="border-bottom:1px dotted #ccc;">File▷ Import▷ Results</span>. Once [options](#options "wikilink") are specified, coordinates of retrieved peaks are logged to the table of a new plot window](FindPeaksSnapshot.png "Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using File▷ Import▷ Results. Once options are specified, coordinates of retrieved peaks are logged to the table of a new plot window")
 
   - Peak amplitude  
     The smallest depth (in Y-axis units) that a qualified valley must exceed. By default, it is set to one standard deviation of the data.
@@ -95,4 +95,4 @@ The easiest way to install *Find Peaks* is by [subscribing to the BAR update sit
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[Category:Scripting](Category:Scripting "wikilink") [Category:Analysis](Category:Analysis "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Scripting](Category_Scripting "wikilink") [Category:Analysis](Category_Analysis "wikilink") [Category:Plugins](Category_Plugins "wikilink")

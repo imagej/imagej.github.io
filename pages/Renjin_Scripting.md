@@ -12,4 +12,4 @@ description: test description
 
 See also [scripting-renjin on GitHub](https://github.com/scijava/scripting-renjin).
 
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Scripting](Category_Scripting "wikilink")

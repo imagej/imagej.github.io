@@ -10,7 +10,7 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Acsenrafilho' %} ([1](mailto:acsenrafilho@gmail.com))
+{% include person content='Acsenrafilho' %} ([1](mailto_acsenrafilho@gmail.com))
 {% endcapture %}
 
 {% capture maintainer%}
@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='CSIM-Toolkits ' repo='ImageJ/tree/master/plugins/MRI-Perfusion ' label='GitHub CSIM-ImageJ MRI Perfusion repository ' %}
 {% endcapture %}
-{% include info-box name='MRI Perfusion PlugIn ' software='Fiji ' author=author maintainer=maintainer source=source released='February 04<sup>th</sup>, 2015 ' latest-version='February 04<sup>th</sup>, 2015 ' status='experimental, active ' category='[Plugins](:Category:Plugins "wikilink"), [MRI](:Category:Perfusion "wikilink") ' %}
+{% include info-box name='MRI Perfusion PlugIn ' software='Fiji ' author=author maintainer=maintainer source=source released='February 04<sup>th</sup>, 2015 ' latest-version='February 04<sup>th</sup>, 2015 ' status='experimental, active ' category='[Plugins](_Category_Plugins "wikilink"), [MRI](_Category_Perfusion "wikilink") ' %}
 
 ## Perfusion in MRI
 
@@ -30,7 +30,7 @@ description: test description
 {% endcapture %}
 {% include thumbnail src='/images/pages/Perfusion.png' title=title %}
 
-Perfusion is defined as the passage of fluid through the lymphatic system or blood vessels to an organ or a tissue. The practice of perfusion scanning, is the process by which this perfusion can be observed, recorded and quantified. The term perfusion scanning encompasses a wide range of [medical imaging](wikipedia:Medical_imaging "wikilink") modalities.
+Perfusion is defined as the passage of fluid through the lymphatic system or blood vessels to an organ or a tissue. The practice of perfusion scanning, is the process by which this perfusion can be observed, recorded and quantified. The term perfusion scanning encompasses a wide range of [medical imaging](wikipedia_Medical_imaging "wikilink") modalities.
 
 The ultimate goal of perfusion MRI is to measure or assess the blood flow irrigating the explored organ, expressed in milliliters per 100 gram of tissue per minute. This flow corresponds to microcirculatory tissue perfusion rather than the flow of the main vascular axes. There are different techniques of detecting perfusion parameters with the use of MRI, the most common being dynamic susceptibility contrast imaging (DSC-MRI) and arterial spin labelling (ASL). In DSC-MRI, Gadolinium contrast agent is injected and a time series of fast T2\*-weighted images is acquired. As Gadolinium passes through the tissues, it produces a reduction of T2\* intensity depending on the local concentration. The acquired data are then postprocessed to obtain perfusion maps with different parameters, such as CBV (cerebral blood volume), CBF (cerebral blood flow), MTT (mean transit time) and TTP (time to peak).
 

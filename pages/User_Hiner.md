@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [User:Hinerm](User:Hinerm "wikilink")
+1.  REDIRECT [User:Hinerm](User_Hinerm "wikilink")

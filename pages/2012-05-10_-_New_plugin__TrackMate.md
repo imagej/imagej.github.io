@@ -20,6 +20,6 @@ Hope you like it\!
 
 *Jean-Yves, Nick, Johannes, Ricardo & Spencer*
 
-![TrackMate\_Split\_Merge\_Gapclosing.gif](/images/pages/TrackMate Split Merge Gapclosing.gif "TrackMate Split Merge Gapclosing.gif")
+![TrackMate\_Split\_Merge\_Gapclosing.gif](TrackMate_Split_Merge_Gapclosing.gif "TrackMate_Split_Merge_Gapclosing.gif")
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

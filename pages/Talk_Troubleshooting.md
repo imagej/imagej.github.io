@@ -23,4 +23,4 @@ Other improvements
   - Unsupported Class Version Error, How to upgrade Java version – can add link
   - NoSuchMethodError: “Once you determine which update site(s) causes the issue, you can create a separate copy of ImageJ with only the unproblematic site(s) enabled” – needs to be reworded to clarify that multiple ImageJ installations are being recommended
 
-[Hinerm](User:Hinerm "wikilink") ([talk](User_talk:Hinerm "wikilink"))
+[Hinerm](User_Hinerm "wikilink") ([talk](User_talk_Hinerm "wikilink"))

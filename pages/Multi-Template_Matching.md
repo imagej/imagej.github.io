@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='LauLauThom ' repo='MultiTemplateMatching ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Multi-Template Matching ' author=author maintainer=maintainer update-site='Multi-Template-Matching ' source=source released='2019 ' status='active ' category='[Analysis](:Category:Analysis "wikilink") [Feature Extraction](:Category:Feature_Extraction "wikilink") ' %}
+{% include info-box software='ImageJ ' name='Multi-Template Matching ' author=author maintainer=maintainer update-site='Multi-Template-Matching ' source=source released='2019 ' status='active ' category='[Analysis](_Category_Analysis "wikilink") [Feature Extraction](_Category_Feature_Extraction "wikilink") ' %}
 
 <img src="/images/pages/Multi-Template-Matching-MontageGUI.png" width="800"/>
 
@@ -47,4 +47,4 @@ BMC Bioinformatics 21, 44 (2020). https://doi.org/10.1186/s12859-020-3363-7
 
 Check our serie of [video tutorials](https://www.youtube.com/watch?v=KlzIqSG5XBU&list=PLHZOgc1s26MJ8QjYau7NcG5k0zh9SjHpo)\!
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Citable](Category:Citable "wikilink") [Category:Feature Extraction](Category:Feature_Extraction "wikilink") [Category:Jython](Category:Jython "wikilink") [Category:Object Detection](Category:Object_Detection "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Citable](Category_Citable "wikilink") [Category:Feature Extraction](Category_Feature_Extraction "wikilink") [Category:Jython](Category_Jython "wikilink") [Category:Object Detection](Category_Object_Detection "wikilink")

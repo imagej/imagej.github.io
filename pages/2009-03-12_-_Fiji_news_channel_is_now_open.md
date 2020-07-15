@@ -22,4 +22,4 @@ If you need to post a news event, simly use the Fiji wiki to do so:
 
 That's all\! Enjoy\!
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

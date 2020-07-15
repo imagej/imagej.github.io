@@ -19,7 +19,7 @@ description: test description
 
 <!-- end list -->
 
-  - [Transform](:Category:Transform "wikilink")
+  - [Transform](_Category_Transform "wikilink")
 
 <!-- end list -->
 
@@ -55,11 +55,11 @@ description: test description
   - Manual (via [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html))
   - [Level Sets](Level_Sets "wikilink")
   - [Trainable Segmentation](Trainable_Weka_Segmentation "wikilink")
-  - [SIOX: Simple Interactive Object Extraction](SIOX:_Simple_Interactive_Object_Extraction "wikilink")
+  - [SIOX: Simple Interactive Object Extraction](SIOX__Simple_Interactive_Object_Extraction "wikilink")
 
 <!-- end list -->
 
-  - [Tracking](:Category:Tracking "wikilink")
+  - [Tracking](_Category_Tracking "wikilink")
 
 <!-- end list -->
 
@@ -71,7 +71,7 @@ description: test description
 
 <!-- end list -->
 
-  - [Skeletons and tree analysis](:Category:Skeleton "wikilink")
+  - [Skeletons and tree analysis](_Category_Skeleton "wikilink")
 
 <!-- end list -->
 
@@ -97,4 +97,4 @@ description: test description
 
   - [ImageJ2](ImageJ2 "wikilink")
 
-[Category:Fiji](Category:Fiji "wikilink")
+[Category:Fiji](Category_Fiji "wikilink")

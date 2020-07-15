@@ -83,4 +83,4 @@ public class MyScriptHeader extends AbstractScriptHeader {
 }
 ```
 
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Scripting](Category_Scripting "wikilink")

@@ -202,7 +202,7 @@ public class EventLoggerViewFactory implements ViewFactory
 }
 ```
 
-![TrackMate\_CustomView\_2.png](/images/pages/TrackMate CustomView 2.png "TrackMate CustomView 2.png")
+![TrackMate\_CustomView\_2.png](TrackMate_CustomView_2.png "TrackMate_CustomView_2.png")
 
 Just note that the [SciJava](SciJava "wikilink") annotation mention the `ViewFactory` class. This is enough to have the view selectable in the GUI menu:
 
@@ -210,7 +210,7 @@ Note that this time, TrackMate good use of the `getName()` and `getInfoText()` m
 
 And here is what you get after a few manipulations:
 
-![TrackMate\_CustomView\_1.png](/images/pages/TrackMate CustomView 1.png "TrackMate CustomView 1.png")
+![TrackMate\_CustomView\_1.png](TrackMate_CustomView_1.png "TrackMate_CustomView_1.png")
 
 ## Controlling the visibility of your view with the SciJava `visible` parameter.
 
@@ -231,6 +231,6 @@ is enough to hide it in the menu. This is different from the `enabled` parameter
 
 But how could I make use of it then? you want to ask. Fortunately, this is just the subject of the next tutorial, on TrackMate actions. See you there.
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 10:51, 17 March 2014 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 10:51, 17 March 2014 (CDT)
 
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink")

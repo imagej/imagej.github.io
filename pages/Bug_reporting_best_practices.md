@@ -119,7 +119,7 @@ In cases where it is clear which class or classes are causing problems, you can 
 
 ### Binary search through your external plugins
 
-If it is not clear which update sites or external plugins are causing problems in your installation, a simple technique to help identify the cause of your problem is a [binary search](wikipedia:Binary_search_algorithm "wikilink"). The general procedure is such:
+If it is not clear which update sites or external plugins are causing problems in your installation, a simple technique to help identify the cause of your problem is a [binary search](wikipedia_Binary_search_algorithm "wikilink"). The general procedure is such:
 
 1.  Start from your current installation
 2.  Remove half of your non-core update sites and/or local plugins.
@@ -134,4 +134,4 @@ Note: if the "erroneous behavior" is [catastrophic](#Catastrophic_failure "wikil
 
 We maintain lifeline ImageJ distributions on the [Downloads page](Downloads "wikilink"). You can use these until any outstanding issues are resolved.
 
-[Category:Bug Reporting](Category:Bug_Reporting "wikilink")
+[Category:Bug Reporting](Category_Bug_Reporting "wikilink")

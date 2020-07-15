@@ -91,7 +91,7 @@ MIJ.help
 Further descriptions and example code can be found on [the home page for MIJ](http://bigwww.epfl.ch/sage/soft/mij/). Eventually, detailed documentation about the class MIJ can be found [here](http://bigwww.epfl.ch/sage/soft/mij/doc/index.html) (suitable if you have a bit of experience with Java).
 
   
-![MIJ\_Splash.jpg](/images/pages/MIJ Splash.jpg "MIJ Splash.jpg")
+![MIJ\_Splash.jpg](MIJ_Splash.jpg "MIJ_Splash.jpg")
 
 # Alternative: do not start the Fiji GUI
 
@@ -105,4 +105,4 @@ Miji(false);
 
 A related project is [MatlabControl](http://code.google.com/p/matlabcontrol/) which allows you to start [MATLAB](MATLAB "wikilink") conveniently from within Java.
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:Matlab](Category:Matlab "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:Matlab](Category_Matlab "wikilink")

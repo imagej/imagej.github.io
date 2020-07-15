@@ -14,4 +14,4 @@ This video tutorial was made and edited by {% include person content='Iarganda' 
 
 The sample image used in the tutorial can be found here: [1](http://neuromorpho.org/neuroMorpho/neuron_info.jsp?neuron_name=LAB4Lskeleton)
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:Analysis](Category:Analysis "wikilink") [Category:Skeleton](Category:Skeleton "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:Analysis](Category_Analysis "wikilink") [Category:Skeleton](Category_Skeleton "wikilink")

@@ -102,7 +102,7 @@ The same is valid when you delete a link or a spot. For instance, let's create 3
 
 ## Track and spot features are updated live
 
-![TrackMate\_GUIManualTracking.png](/images/pages/TrackMate GUIManualTracking.png "TrackMate GUIManualTracking.png")
+![TrackMate\_GUIManualTracking.png](TrackMate_GUIManualTracking.png "TrackMate_GUIManualTracking.png")
 
 TrackMate uses computes and uses some numerical features for its spots, edges and tracks. You can use these features to color the TrackMate objects.
 
@@ -119,7 +119,7 @@ Since v2.1.0, TrackMate includes a tool that can automatically find spots and au
 
 This tool is configured in the TrackMate tool option panel. It is not part of the classic GUI; to make it appear, double-click on the TrackMate tool in the ImageJ toolbar. You should see something like this:
 
-![TrackMate\_v2.1.0\_TrackMateTools.png](/images/pages/TrackMate v2.1.0 TrackMateTools.png "TrackMate v2.1.0 TrackMateTools.png")
+![TrackMate\_v2.1.0\_TrackMateTools.png](TrackMate_v2.1.0_TrackMateTools.png "TrackMate_v2.1.0_TrackMateTools.png")
 
 We are interested in the **Semi-automatic tracking** panel. The bottom panel has just convenience buttons that allow you to select tracks or parts of tracks from the current selection (great to delete faulty tracks at once), and the right panel is a log. The semi-automatic tracking tool itself works as follow: It takes the single spot in the selection, and use its radius to build a neighborhood of this spot, but in the next frame. It then searches this neighborhood for a bright blob with a similar radius. If the found spot is close enough and have a quality high enough, it is linked to the first spot. The process is then repeated, until no suitable spot can be found or until there is no time-point to inspect anymore.
 
@@ -137,6 +137,6 @@ Great, no?
 
 These are the tools that should allow you to work very quickly. For fun: redo this tutorial with a [TrackScheme](TrackScheme "wikilink") window open. You should see that it works very well with manual annotation.
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 10:54, 5 August 2013 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 10:54, 5 August 2013 (CDT)
 
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink")

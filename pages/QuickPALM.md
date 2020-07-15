@@ -16,4 +16,4 @@ description: test description
 
 For Full Documentation, and details of how to build your own super resolution system, please visit: [QuickPALM pages at Google Code](http://code.google.com/p/quickpalm/)
 
-[ Super Resolution](Category:Superresolution "wikilink") [Category:Citable](Category:Citable "wikilink")
+[ Super Resolution](Category_Superresolution "wikilink") [Category:Citable](Category_Citable "wikilink")

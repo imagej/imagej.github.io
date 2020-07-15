@@ -21,7 +21,7 @@ GPU support is available for Linux and Windows machines with NVIDIA graphics car
 3.  Wait until the library is downloaded and installed (a popup will tell you when it’s done)
 4.  Restart Fiji
 
-![Edit \> Options \> TensorFlow…](/images/pages/Tensorflow-installer.png "Edit \> Options \> TensorFlow…")
+![Edit \> Options \> TensorFlow…](tensorflow-installer.png "Edit \> Options \> TensorFlow…")
 
 You can for example switch from CPU to GPU by finding the option which is already selected (in the screenshot, `TF 1.15.0 CPU`) and choose the same TensorFlow version but with GPU support (e.g. `TF 1.15.0 GPU`).
 

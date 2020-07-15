@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% include fijimenu%}
-The complete Fiji distribution of ImageJ consists of over a hundred individual components. Most of these components are ImageJ [plugins](plugins "wikilink"); the rest are core libraries, [scripts](scripts "wikilink") and several other resources (such as the [Fiji logo](:File:Fiji-icon.png "wikilink") and the README).
+The complete Fiji distribution of ImageJ consists of over a hundred individual components. Most of these components are ImageJ [plugins](plugins "wikilink"); the rest are core libraries, [scripts](scripts "wikilink") and several other resources (such as the [Fiji logo](_File_Fiji-icon.png "wikilink") and the README).
 
 In the past, Fiji used to be built from one monolithic source code repository, which became unmanageable over time. These days, therefore, developers start from a fully-populated *Fiji.app/* directory and build only the parts they would like to change.
 
@@ -89,4 +89,4 @@ Of course, this assumes that you followed the suggestion and unpacked your Fiji 
 
 Note that the exact dependency versions, as specified by the project in the *pom.xml* file, are copied into the *Fiji.app/* directory, possibly replacing other versions. You will want to make sure to use not-too-different versions from the current versions.
 
-[Category:Development](Category:Development "wikilink") [Category:Fiji](Category:Fiji "wikilink")
+[Category:Development](Category_Development "wikilink") [Category:Fiji](Category_Fiji "wikilink")

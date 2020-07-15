@@ -9,9 +9,9 @@ description: test description
 ---
 
 \_\_NOTOC\_\_{% include info-box content='For a summary of [SciJava](SciJava "wikilink") licensing, see the [Licensing](Licensing "wikilink") page.' %} {% include menu-licenses%}
-**BSD licenses** are a family of **permissive** [free software](Open_Source "wikilink") licenses, imposing minimal restrictions on the redistribution of covered software. This is in contrast to [copyleft](wikipedia:Copyleft "wikilink") licenses like the [GPL](GPL "wikilink"), which have reciprocity share-alike requirements. The original BSD license was used for its namesake, the Berkeley Software Distribution (BSD), a Unix-like operating system. The original version has since been revised and its descendants are more properly termed modified BSD licenses.
+**BSD licenses** are a family of **permissive** [free software](Open_Source "wikilink") licenses, imposing minimal restrictions on the redistribution of covered software. This is in contrast to [copyleft](wikipedia_Copyleft "wikilink") licenses like the [GPL](GPL "wikilink"), which have reciprocity share-alike requirements. The original BSD license was used for its namesake, the Berkeley Software Distribution (BSD), a Unix-like operating system. The original version has since been revised and its descendants are more properly termed modified BSD licenses.
 
-See the [Wikipedia article on BSD licenses](wikipedia:BSD_licenses "wikilink") for more information.
+See the [Wikipedia article on BSD licenses](wikipedia_BSD_licenses "wikilink") for more information.
 
 {% include license name='Simplified BSD License ' shortname='BSD-2 ' description='The """Simplified BSD""" (or """BSD 2-clause""") license is the simplest BSD license. A licensee of BSD-licensed software can:
 

@@ -10,7 +10,7 @@ description: test description
 
 The *Spirals* sample is designed to disspell the all-too-common idea that human beings are able to quantify color. If you ever hear a scientist say: <span style='font-size: 20px;'>"But I can see it\!"</span> show them this image, it is an example of [Munker's illusion](http://engineering.utep.edu/novick/colors/) :
 
-![Spirals.png](/images/pages/Spirals.png "Spirals.png")
+![Spirals.png](Spirals.png "Spirals.png")
 
 Ask them to point to the green and then to the blue spiral arms. And then explain to them that most human beings see this, it is quite normal, there is nothing to be ashamed of, but there are no green or blue spiral arms. The arms have the *exact* same color. They do not have a different color.
 
@@ -30,4 +30,4 @@ You cannot quantify color by eye. Nobody can. The only thing you can quantify by
 
 See also this wired article. http://www.wired.com/2015/02/science-one-agrees-color-dress/
 
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink")

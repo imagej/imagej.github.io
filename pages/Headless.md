@@ -69,7 +69,7 @@ the `getArgument()` is used to grab the parameter string itself, and it is then 
 
 ## Xvfb
 
-Another method is to have a virtual desktop, e.g. [Xvfb](wikipedia:Xvfb "wikilink"). This will allow ImageJ to start with a virtualised graphical desktop.
+Another method is to have a virtual desktop, e.g. [Xvfb](wikipedia_Xvfb "wikilink"). This will allow ImageJ to start with a virtualised graphical desktop.
 
 **Advantage:** No run-time patching is required.
 

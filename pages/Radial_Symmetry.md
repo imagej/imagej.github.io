@@ -46,15 +46,15 @@ Open the image with the beads and navigate to the 'Plugins' \> 'Radial Symmetry 
 
 You will see the dialog window:
 
-![Calculate-anisotropy-coefficient.png](/images/pages/Calculate-anisotropy-coefficient.png "Calculate-anisotropy-coefficient.png")
+![Calculate-anisotropy-coefficient.png](Calculate-anisotropy-coefficient.png "Calculate-anisotropy-coefficient.png")
 
 Choose the image for detection and set 'Gauss Fit' as a detection method. You can also try to use Radial Symmetry as a detection method but in this case Gauss fit gives better results.
 
 Once ok is pressed you will see 2 windows:
 
-![Adjust-difference-of-gaussian-values.png](/images/pages/Adjust-difference-of-gaussian-values.png "Adjust-difference-of-gaussian-values.png")
+![Adjust-difference-of-gaussian-values.png](Adjust-difference-of-gaussian-values.png "Adjust-difference-of-gaussian-values.png")
 
-![One-spot-overlay.png](/images/pages/One-spot-overlay.png "One-spot-overlay.png")
+![One-spot-overlay.png](One-spot-overlay.png "One-spot-overlay.png")
 
 Adjust 'Sigma' and 'Threshold' values so that only beads are detected.
 
@@ -78,7 +78,7 @@ Open the image and navigate to the 'Plugins' menu under 'Radial Symmetry Localiz
 
 Window will pop up.
 
-![Radial-symmetry-initital-gui-ransac-on.png](/images/pages/Radial-symmetry-initital-gui-ransac-on.png "Radial-symmetry-initital-gui-ransac-on.png")
+![Radial-symmetry-initital-gui-ransac-on.png](Radial-symmetry-initital-gui-ransac-on.png "Radial-symmetry-initital-gui-ransac-on.png")
 
 Ensure that the correct image is chosen.
 
@@ -106,11 +106,11 @@ After that you will see multiple windows.
 
 Difference of Gaussian window to adjust the corresponding parameters. This window is necessary to get rid of the false pre-detections. In general, we could skip this part but then the computations would take too much time. Adjust the parameters so that you do not have too many false detections. But also do not try to get rid of all of them – they will be discarded in the next computation step anyways.
 
-![Adjust-difference-of-gaussian-values.png](/images/pages/Adjust-difference-of-gaussian-values.png "Adjust-difference-of-gaussian-values.png")
+![Adjust-difference-of-gaussian-values.png](Adjust-difference-of-gaussian-values.png "Adjust-difference-of-gaussian-values.png")
 
 RANSAC window is the 'main' window of the whole plugin. Therefore, we will give a more detailed explanation for the parameters here.
 
-![Interactive-adjust-ransac-values.png](/images/pages/Interactive-adjust-ransac-values.png "Interactive-adjust-ransac-values.png")
+![Interactive-adjust-ransac-values.png](Interactive-adjust-ransac-values.png "Interactive-adjust-ransac-values.png")
 
 'Support region radius' defines the radius of the spots we are looking for. You might want to play with this parameter. Sometimes it is useful to increase the radius and decrease the inlier ratio at the same time.
 
@@ -120,7 +120,7 @@ RANSAC window is the 'main' window of the whole plugin. Therefore, we will give 
 
 While moving the sliders you will see the updates in the two images.
 
-[File:Multipe-dots-interactive-dog-rs-roi.png|Pre-detecions](File:Multipe-dots-interactive-dog-rs-roi.png%7CPre-detecions) [File:Multipe-dots-interactive-error-ransac.png|RANSAC](File:Multipe-dots-interactive-error-ransac.png%7CRANSAC) Support Regions
+[File:Multipe-dots-interactive-dog-rs-roi.png|Pre-detecions](File_Multipe-dots-interactive-dog-rs-roi.png%7CPre-detecions) [File_Multipe-dots-interactive-error-ransac.png|RANSAC](File_Multipe-dots-interactive-error-ransac.png%7CRANSAC) Support Regions
 
 One of them shows the pre-detections (red circles) and detections (orange crosses) in the provided region. Another one shows the pixels that were used by RANSAC and the error values at each of the used pixels.
 
@@ -128,20 +128,20 @@ Once the parameters are adjusted hit any of the 'Done' buttons and wait a bit wh
 
 You will see the result table with the coordinates, time, channel and intensity values in the corresponding columns.
 
-![Histogram-detections.png](/images/pages/Histogram-detections.png "Histogram-detections.png")
+![Histogram-detections.png](Histogram-detections.png "Histogram-detections.png")
 
-![Results-interactive.png](/images/pages/Results-interactive.png "Results-interactive.png")
+![Results-interactive.png](Results-interactive.png "Results-interactive.png")
 
 Besides that you will get 2 images: one of them showing the overlay of the initial image with the regions that we used for the spots search, another one showing the 3D overlay for the detected spots.
 
-[File:Inliers-ransac.png|RANSAC](File:Inliers-ransac.png%7CRANSAC) Support Regions [File:Multiple-dots-detections.png|Detected](File:Multiple-dots-detections.png%7CDetected) Spots
+[File:Inliers-ransac.png|RANSAC](File_Inliers-ransac.png%7CRANSAC) Support Regions [File_Multiple-dots-detections.png|Detected](File_Multiple-dots-detections.png%7CDetected) Spots
 
-''' Manual mode: '''
+''' Manual mode_ '''
 
 In the manual mode you can skip all the hassle of the parameters adjustment and jump directly to the computations on the dataset.
 
 After you choose 'Parameters's mode' manual in the 'Setup window' you will see all the parameters you have set already in the interactive mode. All you have to do now is to press 'OK' button and wait for the results.
 
-![Manual-set-parameters.png](/images/pages/Manual-set-parameters.png "Manual-set-parameters.png")
+![Manual-set-parameters.png](Manual-set-parameters.png "Manual-set-parameters.png")
 
-![Results-interactive.png](/images/pages/Results-interactive.png "Results-interactive.png")
+![Results-interactive.png](Results-interactive.png "Results-interactive.png")

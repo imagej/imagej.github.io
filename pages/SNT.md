@@ -21,23 +21,25 @@ description: test description
 {% capture source%}
 {% include github org='morphonets ' repo='SNT ' %}
 {% endcapture %}
-{% include info-box name='SNT ' software='complete framework for quantification of neuronal anatomy ' logo='<img src="/images/pages/SNTLogo512.png" width="150"/> ' author=author maintainer=maintainer source=source status='stable, active ' category='[Neuroanatomy](:Category:Neuroanatomy "wikilink") ' %}{% include toc content='right' %}
+{% include info-box name='SNT ' software='complete framework for quantification of neuronal anatomy ' logo='<img src="/images/pages/SNTLogo512.png" width="150"/> ' author=author maintainer=maintainer source=source status='stable, active ' category='[Neuroanatomy](_Category_Neuroanatomy "wikilink") ' %}{% include toc content='right' %}
 
 ## Overview
 
-SNT is ImageJ's framework for semi-automated tracing, visualization, quantitative analyses and modeling of neuronal morphology. For tracing, SNT supports modern multi-dimensional microscopy data, and highly-customizable routines. For data analysis, SNT features advanced visualization tools, access to all major morphology databases, and support for whole-brain circuitry data. It supersedes the original [Simple Neurite Tracer](SNT:_FAQ#snt "wikilink") plug-in.
+SNT is ImageJ's framework for semi-automated tracing, visualization, quantitative analyses and modeling of neuronal morphology. For tracing, SNT supports modern multi-dimensional microscopy data, and highly-customizable routines. For data analysis, SNT features advanced visualization tools, access to all major morphology databases, and support for whole-brain circuitry data. It supersedes the original [Simple Neurite Tracer](SNT__FAQ#snt "wikilink") plug-in.
 
 SNT's documentation is extensive. Please use the navigation bar on too of the page to access the different sections. The major sections are organized as follows:
 
-  - **[Manual](SNT:_Manual "wikilink")**: SNT's user guide for tracing operations
-  - **[Walk-throughs](SNT:_Step-By-Step_Instructions "wikilink")**: Detailed step-by-step instructions for specific tasks
-  - **[Screencasts](SNT:_Screencasts "wikilink")**: Video tutorials. If you are using SNT for the first time you probably want to start here
-  - **[Reconstruction Viewer](SNT:_Reconstruction_Viewer "wikilink")**: SNT's entry point for visualization of pre-existing data. If you are analyzing reconstructions you may want to start here
-  - **[Analysis](SNT:_Analysis "wikilink")** Overview of all analysis commands, accessible in either the tracing interface or [Reconstruction Viewer](SNT:_Reconstruction_Viewer "wikilink")
-  - **[Scripting](SNT:_Scripting "wikilink")** Details on how to use SNT as a scripting library
+  - **[Manual](SNT__Manual "wikilink")**: SNT's user guide for tracing operations
+  - **[Walk-throughs](SNT__Step-By-Step_Instructions "wikilink")**: Detailed step-by-step instructions for specific tasks
+  - **[Screencasts](SNT__Screencasts "wikilink")**: Video tutorials. If you are using SNT for the first time you probably want to start here
+  - **[Reconstruction Viewer](SNT__Reconstruction_Viewer "wikilink")**: SNT's entry point for visualization of pre-existing data. If you are analyzing reconstructions you may want to start here
+  - **[Analysis](SNT__Analysis "wikilink")** Overview of all analysis commands, accessible in either the tracing interface or [Reconstruction Viewer](SNT__Reconstruction_Viewer "wikilink")
+  - **[Scripting](SNT__Scripting "wikilink")** Details on how to use SNT as a scripting library
 
 
-{% capture title%}SNT Overview. A key feature of SNT is that *every* aspect of the program can be [scripted](SNT:_Scripting "wikilink") in any of Fiji's supported languages, or from Python through [pyimagej](https://github.com/imagej/pyimagej).{% endcapture %}
+{% capture title%}
+ SNT Overview. A key feature of SNT is that *every* aspect of the program can be [scripted](SNT__Scripting "wikilink") in any of Fiji's supported languages, or from Python through [pyimagej](https://github.com/imagej/pyimagej). 
+{% endcapture %}
 {% include thumbnail src='/images/pages/SimpleNeuriteTracer2.png' title=title %}
 
 ## Features
@@ -59,12 +61,12 @@ SNT's documentation is extensive. Please use the navigation bar on too of the pa
   - Direct access to public databases, including [MouseLight](https://ml-neuronbrowser.janelia.org/), [FlyCircuit](http://www.flycircuit.tw) and [NeuroMorpho](http://neuromorpho.org/)
   - Built-in commands for *immediate* retrieval of summary statistics, comparison plots and histograms
   - Image processing: Reconstructions can be skeletonized, converted to masks or ROIs, and voxel intensities profiled
-  - [Sholl](SNT:_Analysis#Sholl_Analysis "wikilink") and [Horton-Strahler](SNT:_Analysis#Strahler_Analysis "wikilink") analyses. [Graph theory](https://en.wikipedia.org/wiki/Graph_theory) and [Persistent homology](https://en.wikipedia.org/wiki/Persistent_homology) -based analyses
-  - Modeling: access to the [Cx3D simulation engine](SNT:_Modeling "wikilink")
+  - [Sholl](SNT__Analysis#Sholl_Analysis "wikilink") and [Horton-Strahler](SNT__Analysis#Strahler_Analysis "wikilink") analyses. [Graph theory](https://en.wikipedia.org/wiki/Graph_theory) and [Persistent homology](https://en.wikipedia.org/wiki/Persistent_homology) -based analyses
+  - Modeling: access to the [Cx3D simulation engine](SNT__Modeling "wikilink")
 
 ### Visualization
 
-  - [Reconstruction Viewer](SNT:_Reconstruction_Viewer "wikilink"): Standalone hardware-accelerated 3D visualization tool for both meshes and reconstructions.
+  - [Reconstruction Viewer](SNT__Reconstruction_Viewer "wikilink"): Standalone hardware-accelerated 3D visualization tool for both meshes and reconstructions.
       - Interactive and programmatic scenes (controlled rotations, panning, zoom, scaling, animation, “dark/light mode”, etc.)
       - Customizable views: Interactive management of scene elements, controls for transparency, color interpolation, lightning, path smoothing, etc.. Ability to render both local and remote files on the same scene
       - Built-in support for several template brains: Drosophila, zebrafish, and Allen CCF (Allen Mouse Brain Atlas)
@@ -73,7 +75,7 @@ SNT's documentation is extensive. Please use the navigation bar on too of the pa
 
 ### Backwards Compatibility
 
-  - Special effort was put into backwards compatibility with older Simple Neurite Tracer releases (including [TrakEM2](TrakEM2 "wikilink") and [ITK interaction](SNT:_Tubular_Geodesics "wikilink")). Inherited functionality has been improved, namely:
+  - Special effort was put into backwards compatibility with older Simple Neurite Tracer releases (including [TrakEM2](TrakEM2 "wikilink") and [ITK interaction](SNT__Tubular_Geodesics "wikilink")). Inherited functionality has been improved, namely:
       - Extended support for sub-pixel accuracy
       - Improved synchronization of XY, ZY, and XZ views
       - Improved calls to Dijkstra’s filling and Path-fitting routines
@@ -88,7 +90,7 @@ SNT is currently distributed through the [Neuroanatomy](Neuroanatomy "wikilink")
 3.  Select the *Neuroanatomy* checkbox
 4.  Click *Apply changes* and restart Fiji.
 
-**Optional**: For [SciView](https://imagej.net/SciView) and [Cx3D](SNT:_Modeling "wikilink") functionality, you need to subscribe to the *SciView-Unstable* update site. Note that there is nothing inherently *unstable* with this procedure: this nomenclature is adopted from the [Debian release cycle](https://www.debian.org/releases/). The minor annoyance here is that this *Bleeding Edge* site is not included in the official list (this may change in the future), so you'll have to specify its location to the updater:
+**Optional**: For [SciView](https://imagej.net/SciView) and [Cx3D](SNT__Modeling "wikilink") functionality, you need to subscribe to the *SciView-Unstable* update site. Note that there is nothing inherently *unstable* with this procedure: this nomenclature is adopted from the [Debian release cycle](https://www.debian.org/releases/). The minor annoyance here is that this *Bleeding Edge* site is not included in the official list (this may change in the future), so you'll have to specify its location to the updater:
 
 1.  Re-run the updater and click on *Manage update sites*
 2.  If you are currently subscribing to the *SciView* *regular* channel, please unselect its checkbox to minimize version conflicts
@@ -101,4 +103,4 @@ SNT is currently distributed through the [Neuroanatomy](Neuroanatomy "wikilink")
 {% include sntnavbar%}
 
 
-[Category:Citable](Category:Citable "wikilink") [Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Neuroanatomy](Category:Neuroanatomy "wikilink") [Category:SNT](Category:SNT "wikilink")
+[Category:Citable](Category_Citable "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink") [Category:SNT](Category_SNT "wikilink")

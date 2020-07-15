@@ -8,12 +8,12 @@ categories:
 description: test description
 ---
 
-(Return to the [Developer Documentation](3D_Viewer:_Developer_Documentation "wikilink") page)  
+(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation "wikilink") page)  
 (Return to the main [3D\_Viewer](3D_Viewer "wikilink") page)
 
 ## How to create a universe and display an image stack as volume rendering, orthoslices, isosurface or surface plot
 
-You can download example source code for this HowTo [here](3D_Viewer:_Example_code "wikilink").
+You can download example source code for this HowTo [here](3D_Viewer__Example_code "wikilink").
 
 Creating a virtual universe and displaying an image stack in it is only a matter of a few steps.
 

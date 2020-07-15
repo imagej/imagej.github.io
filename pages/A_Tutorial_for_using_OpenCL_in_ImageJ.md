@@ -191,15 +191,15 @@ We have included the necessary JOCL native libraries for Windows 32/64, Apple, a
 
 For these samples, three native libraries are needed: gluegen-rt, jocl, and JOCL-'platform'-'arch'. If you look in the lib folder, you will find -natives-xyz.jar files containing the respective libraries. You need to unzip each of the three jar files and copy the dynamic files (.so, .dylib, or .dll) into the parent directory if they are not already present. Notice the below example where the `libgluegen-rt.dylib`, `libJOCL-apple-x86_64.dylib`, and `libjocl.dylib` files are in the platform specific directory.
 
-![2011-opencl-01.png](/images/pages/2011-opencl-01.png "2011-opencl-01.png")
+![2011-opencl-01.png](2011-opencl-01.png "2011-opencl-01.png")
 
 Then ensure that the platform specific jar is exported during the project build. For example notice that the JOCL-0-1.4-beta1.jar file is referenced in the project. (To see this menu right click the project and choose Properties -\> Java Build Path -\> Libraries.)
 
-![2011-opencl-00.png](/images/pages/2011-opencl-00.png "2011-opencl-00.png")
+![2011-opencl-00.png](2011-opencl-00.png "2011-opencl-00.png")
 
 Finally, ensure that the platform specific files are exported:
 
-![2011-opencl-02.png](/images/pages/2011-opencl-02.png "2011-opencl-02.png")
+![2011-opencl-02.png](2011-opencl-02.png "2011-opencl-02.png")
 
 Start exploring the examples by viewing the developer comments in the file `src/publication/SobelFilterExample.java`. Notice the `Main()` method calls `run()` which use an `awt.Image` type as an input parameter. Modify and run the `Main()` method as a Java application and adjust the VM Arguments (E.g. `-Xmx1024m`) if needed.
 
@@ -383,4 +383,4 @@ Image inImg = LOCI.openLOCIFloatType( file.getPath(), arrayContainerFactory );
 
 Note: OpenCL may use page-locked host memory when the "CL\_MEM\_ALLOC\_HOST\_PTR" flag is set.
 
-[Category:Outdated](Category:Outdated "wikilink")
+[Category:Outdated](Category_Outdated "wikilink")

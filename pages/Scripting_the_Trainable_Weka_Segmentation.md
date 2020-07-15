@@ -516,7 +516,7 @@ IJ.log( "** Finished script in " + estimatedTime + " ms **" );
 
 # Example: color-based segmentation using clustering
 
-The following [Beanshell](Beanshell "wikilink") script shows how to segment a 2D color image or stack in an automatic fashion using the [CIELab color space](wikipedia:CIELAB "wikilink") and two possible clustering schemes: [k-means](wikipedia:K-means "wikilink") and [expectation maximization](wikipedia:Expectation–maximization_algorithm "wikilink") (note: if you do not have Weka's ClassificationViaClustering classifier installed, check [how to install new classifiers via Weka's package manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink")).
+The following [Beanshell](Beanshell "wikilink") script shows how to segment a 2D color image or stack in an automatic fashion using the [CIELab color space](wikipedia_CIELAB "wikilink") and two possible clustering schemes: [k-means](wikipedia_K-means "wikilink") and [expectation maximization](wikipedia_Expectation–maximization_algorithm "wikilink") (note: if you do not have Weka's ClassificationViaClustering classifier installed, check [how to install new classifiers via Weka's package manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink")).
 
 ``` java
 #@ ImagePlus image
@@ -613,18 +613,18 @@ output.setDisplayRange( 0, numClusters-1 );
 
 This can be a very useful approach to segment images where the elements contain very distinct colors. Let's see an example using a [public image](https://commons.wikimedia.org/wiki/File:Emphysema_H_and_E.jpg) of hematoxylin and eosin (H\&E) stained lung tissue:
 
-![Emphysema\_H\_and\_E.jpg](/images/pages/Emphysema H and E.jpg "Emphysema H and E.jpg")
+![Emphysema\_H\_and\_E.jpg](Emphysema_H_and_E.jpg "Emphysema_H_and_E.jpg")
 
 Once the image is open, we can call the script and a dialog will pop up:
 
-![TWS-color-segmentation-script-menu.png](/images/pages/TWS-color-segmentation-script-menu.png "TWS-color-segmentation-script-menu.png")
+![TWS-color-segmentation-script-menu.png](TWS-color-segmentation-script-menu.png "TWS-color-segmentation-script-menu.png")
 
 Here we can select the number of expected clusters, the number of samples per cluster used for training and the clustering method. The default values of 5 clusters, 1000 samples and “SimpleKMeans” involve that 5000 pixels will be used for training (\(5\times1000=5000\)) a k-means classifier and the resulting image will be an integer image containing labels in the range of \[0-4\].
 
 This would be a possible output of the script with 3 clusters, 2000 samples and “SimpleKMeans”:
 
-![TWS-result-H-and-E-k-means-3-clusters-2000-samples.png](/images/pages/TWS-result-H-and-E-k-means-3-clusters-2000-samples.png "TWS-result-H-and-E-k-means-3-clusters-2000-samples.png")
+![TWS-result-H-and-E-k-means-3-clusters-2000-samples.png](TWS-result-H-and-E-k-means-3-clusters-2000-samples.png "TWS-result-H-and-E-k-means-3-clusters-2000-samples.png")
 
 The actual label values may vary between different executions of the same clustering due to its random seed initialization. In any case, the blood cells (originally in red), the cell nuclei (in blue-purple), other cell bodies (in pink) and the extracellular space get usually a very reasonable segmentation.
 
-[Category:Scripting](Category:Scripting "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Machine Learning](Category:Machine_Learning "wikilink")
+[Category:Scripting](Category_Scripting "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Machine Learning](Category_Machine_Learning "wikilink")

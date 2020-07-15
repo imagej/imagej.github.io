@@ -600,6 +600,6 @@ resultImp.show();
 
 ## Wish list for this plugin
 
-We are interested into knowing how we should extend this plugin so that it suits your need. Tell us in the [discussion page](Talk:Image_Expression_Parser "wikilink").
+We are interested into knowing how we should extend this plugin so that it suits your need. Tell us in the [discussion page](Talk_Image_Expression_Parser "wikilink").
 
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Plugins](Category_Plugins "wikilink")

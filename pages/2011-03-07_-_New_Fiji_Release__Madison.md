@@ -272,4 +272,4 @@ You can use the short-cut URL https://fiji.sc/><filename for source files in Fij
 
 Added IntegralImages as library components to the mpicbg submodule for rapid box-filter operations (mean, scale, difference of mean, ...). Thanks to Stephan Saalfeld.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

@@ -18,17 +18,17 @@ For these two steps... wording is weird and confusing - so I'm not sure exactly 
 
 maybe another image - snapshot - would be helpful here?? something a bit more concrete - since this is really the point of this exercise - expressions...</s>
 
-[Etarena](User:Etarena "wikilink") ([talk](User_talk:Etarena "wikilink"))
+[Etarena](User_Etarena "wikilink") ([talk](User_talk_Etarena "wikilink"))
 
 ### Response from Mark
 
 <s>There's a line that's like "any number of Java expressions".. before this there should be a robust description (and links, including examples) of precisely what java expressions \*\*are\*\*..</s>
 
-[Hinerm](User:Hinerm "wikilink") ([talk](User_talk:Hinerm "wikilink"))
+[Hinerm](User_Hinerm "wikilink") ([talk](User_talk_Hinerm "wikilink"))
 
 <s>TODO: Emphasize the utility of Exception Breakpoints - that we don't need to know where the failure occurred</s>
 
-[Hinerm](User:Hinerm "wikilink") ([talk](User_talk:Hinerm "wikilink"))
+[Hinerm](User_Hinerm "wikilink") ([talk](User_talk_Hinerm "wikilink"))
 
 ## Exercise 3 - Ellen's Questions
 
@@ -38,7 +38,7 @@ Can you give me a concrete conditional statement as an example in the conditiona
 
 As a first-first-first timer... I have no idea what to even write\! Sorry. I know... stupid, but true.</s>
 
-[Etarena](User:Etarena "wikilink") ([talk](User_talk:Etarena "wikilink"))
+[Etarena](User_Etarena "wikilink") ([talk](User_talk_Etarena "wikilink"))
 
 ### Response from Mark
 
@@ -46,11 +46,11 @@ As a first-first-first timer... I have no idea what to even write\! Sorry. I kno
 
 Or at the least, we could have an expand/hide box that provides the conditional statement</s>
 
-[Hinerm](User:Hinerm "wikilink") ([talk](User_talk:Hinerm "wikilink"))
+[Hinerm](User_Hinerm "wikilink") ([talk](User_talk_Hinerm "wikilink"))
 
 <s>Need clearer explanation of when and why to use hit count</s>
 
-[Hinerm](User:Hinerm "wikilink") ([talk](User_talk:Hinerm "wikilink"))
+[Hinerm](User_Hinerm "wikilink") ([talk](User_talk_Hinerm "wikilink"))
 
 ## Exercise 4 - Ellen's Questions
 
@@ -74,11 +74,11 @@ So this command is intended to be run from the command line, to launch ImageJ fr
 
 I wonder if there is a general scheme that could be used to quickly and unambiguously convey this kind of instruction.. like.. green = do this in eclipse, red = do this on the command line, etc...?
 
-[Hinerm](User:Hinerm "wikilink") ([talk](User_talk:Hinerm "wikilink"))
+[Hinerm](User_Hinerm "wikilink") ([talk](User_talk_Hinerm "wikilink"))
 
 <s>Also should add a link to [Troubleshooting\#Launching\_ImageJ\_from\_the\_console](Troubleshooting#Launching_ImageJ_from_the_console "wikilink")</s>
 
-[Hinerm](User:Hinerm "wikilink") ([talk](User_talk:Hinerm "wikilink"))
+[Hinerm](User_Hinerm "wikilink") ([talk](User_talk_Hinerm "wikilink"))
 
 ## Exercise 5 - Ellen's Questions
 
@@ -90,7 +90,7 @@ but i didn't get the same 'bad' commit as was indicated... mine said something l
 
 <s>Note that this was the result of just \*\*one step\*\* of the bisect process. ;)</s>
 
-[Hinerm](User:Hinerm "wikilink") ([talk](User_talk:Hinerm "wikilink"))
+[Hinerm](User_Hinerm "wikilink") ([talk](User_talk_Hinerm "wikilink"))
 
 ## Exercise 6 Notes
 
@@ -98,7 +98,7 @@ but i didn't get the same 'bad' commit as was indicated... mine said something l
 
 And again the goals could be clearer - that we are looking at situations where stack traces are not generated, so we have to take extra steps to collect this information.</s>
 
-[Hinerm](User:Hinerm "wikilink") ([talk](User_talk:Hinerm "wikilink"))
+[Hinerm](User_Hinerm "wikilink") ([talk](User_talk_Hinerm "wikilink"))
 
 ## Ellen's General point...
 
@@ -106,14 +106,14 @@ And again the goals could be clearer - that we are looking at situations where s
 
 my last two cents - promise.</s>
 
-[Etarena](User:Etarena "wikilink") ([talk](User_talk:Etarena "wikilink"))
+[Etarena](User_Etarena "wikilink") ([talk](User_talk_Etarena "wikilink"))
 
 <s>Yes I think that's a good idea.. otherwise it may feel empty to complete an exercise, since you don't actually "solve" anything.</s>
 
-[Hinerm](User:Hinerm "wikilink") ([talk](User_talk:Hinerm "wikilink"))
+[Hinerm](User_Hinerm "wikilink") ([talk](User_talk_Hinerm "wikilink"))
 
 ## Add a Test section?
 
 I was just thinking that it might be fun to add a companion test section, where the reader has to pick the appropriate debugging method for a variety of tasks? I don't know.. just a thought.
 
-[Hinerm](User:Hinerm "wikilink") ([talk](User_talk:Hinerm "wikilink"))
+[Hinerm](User_Hinerm "wikilink") ([talk](User_talk_Hinerm "wikilink"))

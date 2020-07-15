@@ -11,4 +11,4 @@ description: test description
 There are several popular communication channels: {% include communication%}
 
 
-[Category:Help](Category:Help "wikilink")
+[Category:Help](Category_Help "wikilink")

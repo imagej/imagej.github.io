@@ -8,7 +8,7 @@ categories: Tutorials,News,Tutorials|F
 description: test description
 ---
 
-By popular (AAAAaaaaahem - Cough\!) demand the Fiji presentation from the ImageJ workshop at [ELMI 2009](http://www.elmi2009.org/) in Glasgow is now available as a pdf here on the Fiji Wiki: ![Fiji-ELMI2009.pdf](/images/pages/Fiji-ELMI2009.pdf "Fiji-ELMI2009.pdf"). This was made for infecting new ImageJ users with the joys of Fiji by Dan White. The tutorials were very well attended, with close to 60 new and more experienced users discovering ImageJ as an image processing and analysis tool, learning why Fiji is just ImageJ - batteries included, and why Fiji is useful to them as normal users and as developers.
+By popular (AAAAaaaaahem - Cough\!) demand the Fiji presentation from the ImageJ workshop at [ELMI 2009](http://www.elmi2009.org/) in Glasgow is now available as a pdf here on the Fiji Wiki: ![Fiji-ELMI2009.pdf](Fiji-ELMI2009.pdf "Fiji-ELMI2009.pdf"). This was made for infecting new ImageJ users with the joys of Fiji by Dan White. The tutorials were very well attended, with close to 60 new and more experienced users discovering ImageJ as an image processing and analysis tool, learning why Fiji is just ImageJ - batteries included, and why Fiji is useful to them as normal users and as developers.
 
 During those tutorials, several Fiji Wiki page tutorials were used, which were created for teaching at that event:
 
@@ -20,6 +20,6 @@ During those tutorials, several Fiji Wiki page tutorials were used, which were c
 
 Some other tutorial are also already present there.
 
-We encourage everyone to add more tutorials: Simply create a page, fill it with tutorial content, and make sure to add the \[\[Category:Tutorials\]\] tag to the bottom of the page, so it appears in the tutorial category, which can be found [here](:Category:Tutorials "wikilink")
+We encourage everyone to add more tutorials: Simply create a page, fill it with tutorial content, and make sure to add the \[\[Category:Tutorials\]\] tag to the bottom of the page, so it appears in the tutorial category, which can be found [here](_Category_Tutorials "wikilink")
 
-[Category:News](Category:News "wikilink") [F](Category:Tutorials "wikilink")
+[Category:News](Category_News "wikilink") [F](Category_Tutorials "wikilink")

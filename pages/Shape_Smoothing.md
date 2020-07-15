@@ -36,7 +36,7 @@ Some theoretical background of FD-filtering: the result of step 1 is a series of
 
 # Parameters
 
-![Shape-Smoothing parameters](/images/pages/Shape smoothing GUI.png "Shape-Smoothing parameters")
+![Shape-Smoothing parameters](Shape_smoothing_GUI.png "Shape-Smoothing parameters")
 
 At first users have to choose on how they want to define the smoothing: via relative or absolute number of FDs to be “kept”.
 
@@ -54,9 +54,9 @@ At first users have to choose on how they want to define the smoothing: via rela
 
 <div>
 
-  - ![Original image](/images/pages/Shape-smoothing-original-image.png "Original image")
-  - ![Smoothed object (4% of FDs retained)](/images/pages/Shape-smoothing-smoothed-object.png "Smoothed object (4% of FDs retained)")
-  - ![Smoothed contour (2% of FDs retained)](/images/pages/Shape-smoothing-smoothed-contour.png "Smoothed contour (2% of FDs retained)")
+  - ![Original image](shape-smoothing-original-image.png "Original image")
+  - ![Smoothed object (4% of FDs retained)](shape-smoothing-smoothed-object.png "Smoothed object (4% of FDs retained)")
+  - ![Smoothed contour (2% of FDs retained)](shape-smoothing-smoothed-contour.png "Smoothed contour (2% of FDs retained)")
 
 </div>
 

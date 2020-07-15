@@ -24,4 +24,4 @@ See [all news here.](http://t2.ini.uzh.ch/trakem2.html)
 
 Thanks to {% include person content='Saalfeld' %} for commits, testing, and bug reports.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

@@ -28,4 +28,4 @@ For now, the first Docker images are Fiji distributions with various Java versio
 
 Please note that Docker use of Fiji is still highly experimental, but any feedback and contributions would be welcome\!
 
-[Category:Docker](Category:Docker "wikilink") [Category:Fiji](Category:Fiji "wikilink") [Category:News](Category:News "wikilink")
+[Category:Docker](Category_Docker "wikilink") [Category:Fiji](Category_Fiji "wikilink") [Category:News](Category_News "wikilink")

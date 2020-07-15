@@ -21,7 +21,7 @@ However, you still need to understand how we store and manipulate links in Track
 
 TrackMate stores the results of the detection step as spots in a [SpotCollection](https://fiji.sc/javadoc/fiji/plugin/trackmate/SpotCollection.html). The tracking results are mainly links between these spots so we needed a structure to hold them. We went for the most general one, and picked a mathematical graph.
 
-[Mathematical graphs](wikipedia:Graph_\(mathematics\) "wikilink") are mathematical structures that hold objects (**vertices**) and links between them (**edges**, we will use the two terms interchangeably). TrackMate relies specifically on a specialization: it uses an undirected, simple weighted graph.
+[Mathematical graphs](wikipedia_Graph_\(mathematics\) "wikilink") are mathematical structures that hold objects (**vertices**) and links between them (**edges**, we will use the two terms interchangeably). TrackMate relies specifically on a specialization: it uses an undirected, simple weighted graph.
 
   - Undirected means that a link between A and B is the same as a link between B and A. There is no specific direction and it cannot be exploited. However, you will see that the API offers specific tools that can fake a direction. Indeed, since we deal mainly with time-lapse data, we would like to make it possible to say that we iterate a graph following the time direction.
   - Simple is not related to the efforts that must be made to grasp this mathematical field, but to the fact that there can be only 1 or no link between two spots, and that we do not authorize a link going from one spots to this same spot (no loop).
@@ -50,8 +50,8 @@ This restrictions do not harm the generality of what you can represent in Life S
 On a side note, this is important if you plan to build analysis tools for TrackMate results. TrackMate philosophy is to offer managing the most general case (when it comes to linking), but your analysis tools might require special use cases.
 
   - For instance, when you are tracking vesicles that do not fuse nor split, you just have a linear data structure (an array of objects for each particle).
-  - When you follow a cell lineage, you have a [rooted mathematical tree](wikipedia:Tree_\(data_structure\) "wikilink").
-  - And if all cells divide in two daughters, then you have a [rooted binary tree](wikipedia:Binary_tree "wikilink").
+  - When you follow a cell lineage, you have a [rooted mathematical tree](wikipedia_Tree_\(data_structure\) "wikilink").
+  - And if all cells divide in two daughters, then you have a [rooted binary tree](wikipedia_Binary_tree "wikilink").
 
 They all are specialization of the simple graph, and offer special tools that can be very useful. But *TrackMate assumes none of these specializations*. It stores and manipulate a graph.
 
@@ -265,7 +265,7 @@ Used to pretty-print the settings map specific to this tracker.
 
 The rest is classic. Here is what it looks like for our tracker:
 
-![TrackaMateExample\_RandomCellDivision.png](/images/pages/TrackaMateExample RandomCellDivision.png "TrackaMateExample RandomCellDivision.png")
+![TrackaMateExample\_RandomCellDivision.png](TrackaMateExample_RandomCellDivision.png "TrackaMateExample_RandomCellDivision.png")
 
 TrackMate recognize there were two tracks. You did not have to worry about that.
 
@@ -273,6 +273,6 @@ TrackMate recognize there were two tracks. You did not have to worry about that.
 
 The full code, as well as the code for another tracker example can be found on [github](https://github.com/fiji/TrackMate-examples/tree/master/src/main/java/plugin/trackmate/examples/tracker). And this concludes flatly our series of tutorials on how to extend TrackMate. Go forth now, and bend it to your needs; it is *your* tool.
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 09:26, 5 September 2014 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 09:26, 5 September 2014 (CDT)
 
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink")

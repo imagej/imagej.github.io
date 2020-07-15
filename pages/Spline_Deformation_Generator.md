@@ -43,4 +43,4 @@ This program is **free software**; you can redistribute it and/or modify it unde
 
 -----
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Transform](Category:Transform "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Transform](Category_Transform "wikilink")

@@ -14,4 +14,4 @@ The plugin is useful if you recorded a sample at different focal depths and you 
 
 Merry Christmas\!
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

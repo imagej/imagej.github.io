@@ -226,4 +226,4 @@ PlotData=
 
   - {% include person content='kephale' %} - Explore updating the [3D Viewer](3D_Viewer "wikilink") to use [Ops](Ops "wikilink") and [ClearVolume](ClearVolume "wikilink") under the hood.
 
-[Category:News](Category:News "wikilink") [Category:Hackathons](Category:Hackathons "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:KNIME](Category:KNIME "wikilink")
+[Category:News](Category_News "wikilink") [Category:Hackathons](Category_Hackathons "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:KNIME](Category_KNIME "wikilink")

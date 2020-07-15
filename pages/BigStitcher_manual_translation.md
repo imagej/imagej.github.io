@@ -12,7 +12,7 @@ description: test description
 
 In the **right-click menu** you can find various functions for manually arranging the views in your dataset under {% include bc content='Preprocessing|Arrange Views'%}.
 
-![BigStitcher\_Arrange\_Views001.png](/images/pages/BigStitcher Arrange Views001.png "BigStitcher Arrange Views001.png")
+![BigStitcher\_Arrange\_Views001.png](BigStitcher_Arrange_Views001.png "BigStitcher_Arrange_Views001.png")
 
 ### Manually translate views
 
@@ -25,7 +25,7 @@ Clicking **Manually translate Views** will bring up a new window that allows you
 
 {% include info-box content='The range of movement is limited, if you wish to move views by a large amount, you have to repeatedly apply a translation' %}
 
-![BigStitcher\_Arrange\_Views002.png](/images/pages/BigStitcher Arrange Views002.png "BigStitcher Arrange Views002.png")
+![BigStitcher\_Arrange\_Views002.png](BigStitcher_Arrange_Views002.png "BigStitcher_Arrange_Views002.png")
 
 ### Read Locations From File
 
@@ -58,7 +58,7 @@ Clicking **Read Locations From File** will bring up a new window that allows you
   - Lines starting with **\#** (comments) are ignored:
         # this is a comment. 
 
-![BigStitcher\_Arrange\_Views003.png](/images/pages/BigStitcher Arrange Views003.png "BigStitcher Arrange Views003.png")
+![BigStitcher\_Arrange\_Views003.png](BigStitcher_Arrange_Views003.png "BigStitcher_Arrange_Views003.png")
 
 ### Move Tiles To Regular Grid ...
 
@@ -71,6 +71,6 @@ Clicking **Move Tiles To Regular Grid ...** will bring up a new window that allo
 
 {% include warning-box content='Clicking """Apply""" will overwrite the transformations stored in your dataset (except for the pixel calibration, the translation from the tile configuration and, optionally, a rotation)' %}
 
-![BigStitcher\_Arrange\_Views004.png](/images/pages/BigStitcher Arrange Views004.png "BigStitcher Arrange Views004.png")
+![BigStitcher\_Arrange\_Views004.png](BigStitcher_Arrange_Views004.png "BigStitcher_Arrange_Views004.png")
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")

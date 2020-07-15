@@ -15,7 +15,7 @@ description: test description
 
 Welcome to the most useful and also unfortunately the hardest part in this tutorial series on how to extend [TrackMate](TrackMate "wikilink") with custom modules.
 
-The detection algorithms in TrackMate are basic: they are all based or approximated from the [Laplacian of Gaussian](wikipedia:Blob_detection#The_Laplacian_of_Gaussian "wikilink") technique. They work well even in the presence of noise for round or spherical and well separated objects. As soon as you move away from these requirements, you will feel the need to implement your own custom detector.
+The detection algorithms in TrackMate are basic: they are all based or approximated from the [Laplacian of Gaussian](wikipedia_Blob_detection#The_Laplacian_of_Gaussian "wikilink") technique. They work well even in the presence of noise for round or spherical and well separated objects. As soon as you move away from these requirements, you will feel the need to implement your own custom detector.
 
 This is the subject of this tutorial, which I promised to be rather difficult. Not because implementing a custom detection algorithm is difficult. It *is* difficult, even very difficult if you are not familiar with the [ImgLib2](ImgLib2 "wikilink") library. But we will skip this difficulty here by not making a true detector, but just a dummy one that returns detections irrespective of the image content. This involved task is left to your Java and ImgLib2 skills.
 
@@ -548,15 +548,15 @@ Ouf\! That was a lot of information and a lot of coding for a single piece of fu
 
 Here is what our dummy example looks. To maximize your user experience, I let it run on a 512 x 512 x 200 frames image, and tracked them.
 
-![TrackMateCustomDetector\_01.gif](/images/pages/TrackMateCustomDetector 01.gif "TrackMateCustomDetector 01.gif")
+![TrackMateCustomDetector\_01.gif](TrackMateCustomDetector_01.gif "TrackMateCustomDetector_01.gif")
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 08:28, 3 April 2014 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 08:28, 3 April 2014 (CDT)
 
 \_\_\_\_\_
 
 <references/>
 
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink")
 
 1.  The reason behind this is that TrackMate wants to break free of the source data. Keeping all the coordinates in physical units allow exchanging results without having to keep a reference to the original image.
 2.  Careful, this will not be mandatory in TrackMate v2.3.0

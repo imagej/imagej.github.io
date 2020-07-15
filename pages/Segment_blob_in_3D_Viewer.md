@@ -34,4 +34,4 @@ Push the {% include key content='Esc' %} key. You may have to do so while having
 
 Internally, the [Level Sets](Level_Sets "wikilink") plugin is used. To adjust its many parameters, do a {% include key content='Shift' %}+{% include key content='click' %} with the magic wand. The dialog will open; it's the same dialog as shown in the [Level Sets](Level_Sets "wikilink") documentation page.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")

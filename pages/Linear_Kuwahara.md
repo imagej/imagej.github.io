@@ -14,10 +14,10 @@ You can specify how large the generated kernels should be, and for how many diff
 
 Example:
 
-![Noisy-lines.png](/images/pages/Noisy-lines.png "Noisy-lines.png")
+![Noisy-lines.png](Noisy-lines.png "Noisy-lines.png")
 
 With 30 angles at line length 17 with the criterion *Variance*, the filtered image looks like this:
 
-![Noisy-lines-kuwahara.png](/images/pages/Noisy-lines-kuwahara.png "Noisy-lines-kuwahara.png")
+![Noisy-lines-kuwahara.png](Noisy-lines-kuwahara.png "Noisy-lines-kuwahara.png")
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")

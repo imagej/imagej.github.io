@@ -154,4 +154,4 @@ Room 224 [Animal Sciences](http://ansci.wisc.edu/), 1675 Observatory Dr. [http:/
 
 The hackathon formally concluded on September 15 at 3:30pm.
 
-[Category:Hackathons](Category:Hackathons "wikilink")
+[Category:Hackathons](Category_Hackathons "wikilink")

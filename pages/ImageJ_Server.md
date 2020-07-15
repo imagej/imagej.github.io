@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='imagej ' repo='imagej-server ' %}
 {% endcapture %}
-{% include info-box content='Plugin' software='ImageJ ' name='ImageJ Server ' author='ImageJ developers ' maintainer='ImageJ developers ' status='Experimental ' source=source %}The ImageJ Server is an extension and [update site](update_site "wikilink") for ImageJ that enables ImageJ to act as a [RESTful](wikipedia:Representational_state_transfer "wikilink") image server.
+{% include info-box content='Plugin' software='ImageJ ' name='ImageJ Server ' author='ImageJ developers ' maintainer='ImageJ developers ' status='Experimental ' source=source %}The ImageJ Server is an extension and [update site](update_site "wikilink") for ImageJ that enables ImageJ to act as a [RESTful](wikipedia_Representational_state_transfer "wikilink") image server.
 
 Client software can:
 
@@ -29,4 +29,4 @@ Client software can:
 
 See the {% include github org='imagej ' repo='imagej-server ' label='GitHub site ' %}.
 
-[Category:SciJava](Category:SciJava "wikilink")
+[Category:SciJava](Category_SciJava "wikilink")

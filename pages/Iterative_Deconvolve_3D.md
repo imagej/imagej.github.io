@@ -8,7 +8,7 @@ categories: Plugins,Deconvolution
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Iterative Deconvolve 3D ' author='Bob Dougherty ' filename=' [Iterative\_Deconvolve\_3D.class](http://www.optinav.info/download/Iterative_Deconvolve_3D.class) ' source=' [Iterative\_Deconvolve\_3D.java](http://www.optinav.info/download/Iterative_Deconvolve_3D.java) ' released='1 May 2005 ' latest-version='4 June 2005 ' status='stable ' category='[Deconvolution](:Category:Deconvolution "wikilink") ' website='http://www.optinav.info/Iterative-Deconvolve-3D.htm ' %}
+{% include info-box software='ImageJ ' name='Iterative Deconvolve 3D ' author='Bob Dougherty ' filename=' [Iterative\_Deconvolve\_3D.class](http://www.optinav.info/download/Iterative_Deconvolve_3D.class) ' source=' [Iterative\_Deconvolve\_3D.java](http://www.optinav.info/download/Iterative_Deconvolve_3D.java) ' released='1 May 2005 ' latest-version='4 June 2005 ' status='stable ' category='[Deconvolution](_Category_Deconvolution "wikilink") ' website='http://www.optinav.info/Iterative-Deconvolve-3D.htm ' %}
 
 ## Purpose
 
@@ -36,4 +36,4 @@ The plugin was also the subject of a conference paper: {% include citation last=
   - Version 5.1 6/3/2005. Improved test for 0 gamma (no Wiener filter). Renamed low pass fiter parameter for z in dialog.
   - Version 5.2 6/4/2005. Changed the recommended low pass filter settings from 4 to 1 pixels.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Deconvolution](Category:Deconvolution "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Deconvolution](Category_Deconvolution "wikilink")

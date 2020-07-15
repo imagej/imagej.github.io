@@ -20,7 +20,7 @@ The deconvolution can be started by selecting the views you wish to deconvolve a
 
 After clicking **(MultiView) Deconvolution**, you will be presented with a dialog asking for the main parameters for deconvolution:
 
-![BigStitcher\_Deconvolution\_Main.png](/images/pages/BigStitcher Deconvolution Main.png "BigStitcher Deconvolution Main.png")
+![BigStitcher\_Deconvolution\_Main.png](BigStitcher_Deconvolution_Main.png "BigStitcher_Deconvolution_Main.png")
 
 Since you are also producing a fused image for the deconvolution, some parameters are the same as in [BigStitcher\_Fuse](BigStitcher_Fuse "wikilink"):
 
@@ -51,21 +51,21 @@ If you chose to **Initialize from TIFF file** in the main dialog, you will be as
 
 You can choose whether to do **Exact avg and max computation from input** or not. TODO: explain...
 
-![BigStitcher\_Deconvolution\_fromFile.png](/images/pages/BigStitcher Deconvolution fromFile.png "BigStitcher Deconvolution fromFile.png")
+![BigStitcher\_Deconvolution\_fromFile.png](BigStitcher_Deconvolution_fromFile.png "BigStitcher_Deconvolution_fromFile.png")
 
 Using this option, you can **continue a previous deconvolution** if you think that additional iterations will improve the results.
 
 ### Manual block size setup
 
-![BigStitcher\_Deconvolution\_blocksize.png](/images/pages/BigStitcher Deconvolution blocksize.png "BigStitcher Deconvolution blocksize.png")
+![BigStitcher\_Deconvolution\_blocksize.png](BigStitcher_Deconvolution_blocksize.png "BigStitcher_Deconvolution_blocksize.png")
 
 ### Blending & grouping parameters
 
-![BigStitcher\_Deconvolution\_blending.png](/images/pages/BigStitcher Deconvolution blending.png "BigStitcher Deconvolution blending.png")
+![BigStitcher\_Deconvolution\_blending.png](BigStitcher_Deconvolution_blending.png "BigStitcher_Deconvolution_blending.png")
 
 ### Debug mode
 
-![BigStitcher\_Deconvolution\_debug.png](/images/pages/BigStitcher Deconvolution debug.png "BigStitcher Deconvolution debug.png")
+![BigStitcher\_Deconvolution\_debug.png](BigStitcher_Deconvolution_debug.png "BigStitcher_Deconvolution_debug.png")
 
 ### Deconvolution on GPU
 

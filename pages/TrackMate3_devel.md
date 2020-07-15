@@ -62,4 +62,4 @@ Total memory used by the model: 3.6 GB
 
 It seems that the memory used while creating the model is much higher than the final one, but it's properly garbage collected at the end. Also notice the impact of the initial capacity: the model is never below 256 MB.
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 10:16, 13 February 2015 (CST)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 10:16, 13 February 2015 (CST)

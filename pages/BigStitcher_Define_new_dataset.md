@@ -10,9 +10,9 @@ description: test description
 
 When clicking {% include bc content='Plugins|BigStitcher| BigStitcher'%} in the the Fiji menu, it will open a macro-scriptable dialog that looks as following:
 
-![BigStitcher\_import\_exisitng\_0.png](/images/pages/BigStitcher import exisitng 0.png "BigStitcher import exisitng 0.png")
+![BigStitcher\_import\_exisitng\_0.png](BigStitcher_import_exisitng_0.png "BigStitcher_import_exisitng_0.png")
 
-![Select the importer and the name of the xml file to save the metadata to.](/images/pages/BigStitcher importer 1.png "Select the importer and the name of the xml file to save the metadata to.") In order to **define a new dataset**, please click the respective button on the left side of the dialog. This will open a new window in which you can define how to import the image data. Since there is huge variety of data formats produced by various microscopy companies and self-built setups, we developed multiple types of importers:
+![Select the importer and the name of the xml file to save the metadata to.](BigStitcher_importer_1.png "Select the importer and the name of the xml file to save the metadata to.") In order to **define a new dataset**, please click the respective button on the left side of the dialog. This will open a new window in which you can define how to import the image data. Since there is huge variety of data formats produced by various microscopy companies and self-built setups, we developed multiple types of importers:
 
   - **[Automatic Loader (Bioformats)](BigStitcher_AutoLoader "wikilink")**
 

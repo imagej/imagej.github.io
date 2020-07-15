@@ -8,9 +8,9 @@ categories: Location
 description: test description
 ---
 
-The [Eliceiri](User:Eliceiri "wikilink") lab, also known as the [Laboratory for Optical and Computational Instrumentation](http://loci.wisc.edu/), is an interdisciplinary biophotonics laboratory at the [University of Wisconsin-Madison](http://wisc.edu/).
+The [Eliceiri](User_Eliceiri "wikilink") lab, also known as the [Laboratory for Optical and Computational Instrumentation](http://loci.wisc.edu/), is an interdisciplinary biophotonics laboratory at the [University of Wisconsin-Madison](http://wisc.edu/).
 
-![ 250px | border](/images/pages/Loci-logo.png " 250px | border")
+![ 250px | border](Loci-logo.png " 250px | border")
 
 LOCI plays a very active role in the ImageJ community:
 
@@ -45,6 +45,6 @@ LOCI is a founding member of the [SciJava](SciJava "wikilink") collaboration, an
 
 ## See also
 
-  - The [LOCI update site](User:LOCI "wikilink")
+  - The [LOCI update site](User_LOCI "wikilink")
 
-[Category:Location](Category:Location "wikilink")
+[Category:Location](Category_Location "wikilink")

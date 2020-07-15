@@ -8,7 +8,7 @@ categories: Segmentation,Scripting
 description: test description
 ---
 
-The following [Beanshell script](Beanshell_Scripting "wikilink") allows you to evaluate the performance of your [segmentation](:Category:Segmentation "wikilink") method.
+The following [Beanshell script](Beanshell_Scripting "wikilink") allows you to evaluate the performance of your [segmentation](_Category_Segmentation "wikilink") method.
 
 Just copy/paste it in the [Script Editor](Script_Editor "wikilink") or save it into a .bsh file and run it ({% include bc content='File | Open'%}):
 
@@ -111,12 +111,12 @@ if( calculateRandError )
 
 If you run it, the following dialog will pop up:
 
-![Challenge-segmentation-metrics-script.png](/images/pages/Challenge-segmentation-metrics-script.png "Challenge-segmentation-metrics-script.png")
+![Challenge-segmentation-metrics-script.png](Challenge-segmentation-metrics-script.png "Challenge-segmentation-metrics-script.png")
 
 Here you can select among the open images which ones are the original and the proposed labels, along with the specific metrics you want to apply to evaluate the segmentation results.
 
 After clicking OK the metrics will be applied and the results will be shown in the Log window:
 
-![Challenge-script-log-window.png](/images/pages/Challenge-script-log-window.png "Challenge-script-log-window.png")
+![Challenge-script-log-window.png](Challenge-script-log-window.png "Challenge-script-log-window.png")
 
-[Category:Segmentation](Category:Segmentation "wikilink") [Category:Scripting](Category:Scripting "wikilink")
+[Category:Segmentation](Category_Segmentation "wikilink") [Category:Scripting](Category_Scripting "wikilink")

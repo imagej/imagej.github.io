@@ -20,4 +20,4 @@ You can find an in-depth writeup on the use of the Stitching plugin on the [Stit
 
 We're very excited to have deeper integration with Stitching, and would love to hear your use cases, wish lists and success stories\!
 
-[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")

@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [User:Mdoube](User:Mdoube "wikilink")
+1.  REDIRECT [User:Mdoube](User_Mdoube "wikilink")

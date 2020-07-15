@@ -14,4 +14,4 @@ We timed the publication of the source code and the compiled plugin to coincide 
 
 Thanks Lionel\!
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

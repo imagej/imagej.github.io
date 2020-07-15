@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SNT:\_Scripting\#Python\_Notebooks](SNT:_Scripting#Python_Notebooks "wikilink")
+1.  REDIRECT [SNT:\_Scripting\#Python\_Notebooks](SNT__Scripting#Python_Notebooks "wikilink")

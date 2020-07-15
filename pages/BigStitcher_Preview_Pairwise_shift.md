@@ -12,7 +12,7 @@ The second step of the stitching process after the pairwise shifts between views
 
 If you are running the **Stitching Wizard**, you will be taken to **Interactive Link Explorer** immediately after calculating pairwise shifts. Otherwise, you can find the link verification functions in the right-click menu under **Step-by-step Stitching**:
 
-![BigStitcher\_stitch\_4\_0.png](/images/pages/BigStitcher stitch 4 0.png "BigStitcher stitch 4 0.png")
+![BigStitcher\_stitch\_4\_0.png](BigStitcher_stitch_4_0.png "BigStitcher_stitch_4_0.png")
 
   - **Interactive Link Explorer ...** will open a window allowing you to preview the calculated pairwise shifts, filer them based on criteria such as cross correlation and remove individual bad links.
 
@@ -43,6 +43,6 @@ The Interactive Link Explorer allows you to to preview the pairwise links of a v
 
   - Once you are satisfied with the results, you can click **Apply & Run Global Optimization** to continue with the [global optimization](BigStitcher_Global_optimization "wikilink") immediately.
 
-![BigStitcher\_stitch\_4\_1.png](/images/pages/BigStitcher stitch 4 1.png "BigStitcher stitch 4 1.png")
+![BigStitcher\_stitch\_4\_1.png](BigStitcher_stitch_4_1.png "BigStitcher_stitch_4_1.png")
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")

@@ -20,15 +20,15 @@ description: test description
 {% capture source%}
 {% include github org='bene51 ' repo='3Dscript ' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='3Dscript ' maintainer=maintainer author=author source=source status='active ' released='January 2019 ' category='[Visualization](:Category:Visualization "wikilink"), [:Category:Plugins](:Category:Plugins "wikilink") ' %}
+{% include info-box software='Fiji ' name='3Dscript ' maintainer=maintainer author=author source=source status='active ' released='January 2019 ' category='[Visualization](_Category_Visualization "wikilink"), [:Category:Plugins](_Category_Plugins "wikilink") ' %}
 
-![3Dscript-Logo.png](/images/pages/3Dscript-Logo.png "3Dscript-Logo.png") **3Dscript** - Create high-quality 3D/4D animations using a natural-language based syntax
+![3Dscript-Logo.png](3Dscript-Logo.png "3Dscript-Logo.png") **3Dscript** - Create high-quality 3D/4D animations using a natural-language based syntax
 
 In state-of-the-art 3D rendering and animation software the user typically creates an animation by specifying a number of keyframes. While intuitive, this approach becomes tedious for complex motions like simultaneous rotations around multiple axes, and even worse for accelerated and decelerated motions: The number of required keyframes increases, and creating them becomes hardly reproducible.
 
 In 3Dscript, animations are defined by a syntax based on natural English language, in sentences such as "From frame 0 to frame 100 rotate by 360 degrees horizontally ease-in".
 
-![3Dscript-wiki-01.jpg](/images/pages/3Dscript-wiki-01.jpg "3Dscript-wiki-01.jpg")
+![3Dscript-wiki-01.jpg](3Dscript-wiki-01.jpg "3Dscript-wiki-01.jpg")
 
 \_\_TOC\_\_
 
@@ -70,4 +70,4 @@ More examples can be found on https://bene51.github.io/3Dscript/gallery.html.
 
 A full manual as [PDF](https://bene51.github.io/3Dscript/Manual.pdf).
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Visualization](Category:Visualization "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Visualization](Category_Visualization "wikilink") [Category:Citable](Category_Citable "wikilink")

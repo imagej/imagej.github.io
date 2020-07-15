@@ -22,7 +22,7 @@ description: test description
 {% endcapture %}
 
 {% capture founders%}
-{% include person content='David Cohoe' %} ([1](mailto:dcohoe@pdx.edu))
+{% include person content='David Cohoe' %} ([1](mailto_dcohoe@pdx.edu))
 {% endcapture %}
 
 {% capture leads%}

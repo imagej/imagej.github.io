@@ -18,4 +18,4 @@ You will notice, that the result is not exactly the same as in the exact per-pix
 
 There is also a [standalone plugin](http://fly.mpi-cbg.de/saalfeld/download/clahe_.jar) for [ImageJ](https://imagej.net/) available.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

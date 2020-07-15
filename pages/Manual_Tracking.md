@@ -16,4 +16,4 @@ See pdf documentation [here](https://imagej.net/plugins/track/Manual%20Tracking%
 
   - [ImageJ 1.x website](https://imagej.net/plugins/track/track.html)
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Particle analysis](Category:Particle_analysis "wikilink") [Category:Tracking](Category:Tracking "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Particle analysis](Category_Particle_analysis "wikilink") [Category:Tracking](Category_Tracking "wikilink")

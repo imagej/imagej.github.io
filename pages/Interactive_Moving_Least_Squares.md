@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='axtimwalde ' repo='mpicbg ' path='mpicbg\_/src/main/java/Transform\_MovingLeastSquaresMesh.java ' %}
 {% endcapture %}
-{% include info-box name='Interactive Moving Least Squares ' software='Fiji ' author='Stephan Saalfeld ' maintainer='Stephan Saalfeld ' source=source released='July 18, 2008 ' latest-version='May 26, 2009 ' status='stable, active ' category='[Transform](:Category:Transform "wikilink"), [Plugins](:Category:Plugins "wikilink") ' %}{% include youtube url='https://www.youtube.com/embed/NwOxRmX03xs'%}
+{% include info-box name='Interactive Moving Least Squares ' software='Fiji ' author='Stephan Saalfeld ' maintainer='Stephan Saalfeld ' source=source released='July 18, 2008 ' latest-version='May 26, 2009 ' status='stable, active ' category='[Transform](_Category_Transform "wikilink"), [Plugins](_Category_Plugins "wikilink") ' %}{% include youtube url='https://www.youtube.com/embed/NwOxRmX03xs'%}
 
 ## License
 
@@ -22,4 +22,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 -----
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Transform](Category:Transform "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Transform](Category_Transform "wikilink")

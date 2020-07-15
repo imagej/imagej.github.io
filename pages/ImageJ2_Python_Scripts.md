@@ -61,4 +61,4 @@ Note that all the scripts of this page are links from https://github.com/imagej/
   - [Jython Scripting](Jython_Scripting "wikilink")
   - [Jython Examples](Jython_Scripting_Examples "wikilink")
 
-[Category:Scripting](Category:Scripting "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:Ops](Category:Ops "wikilink") [Category:SciJava](Category:SciJava "wikilink")
+[Category:Scripting](Category_Scripting "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Ops](Category_Ops "wikilink") [Category:SciJava](Category_SciJava "wikilink")

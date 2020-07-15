@@ -19,7 +19,7 @@ The dialog is based on the {% include list-of-update-sites%}
 
 ## How do I remove a file from my update site?
 
-An update site is a [revision control](wikipedia:Revision_control "wikilink") system where nothing is ever really deleted from the history.
+An update site is a [revision control](wikipedia_Revision_control "wikilink") system where nothing is ever really deleted from the history.
 
 Hence, there are two levels of removal:
 
@@ -65,7 +65,7 @@ Please see the [Personal Update Site Terms of Service](Personal_Update_Site_Term
 
 ## How do I set a password for my personal update site?
 
-Use [this page](Special:ChangeUploadPassword "wikilink") to set a password for *uploading* content.
+Use [this page](Special_ChangeUploadPassword "wikilink") to set a password for *uploading* content.
 
 If you want to restrict which users can *access* your update site, please note that the [Personal Update Sites](Personal_Update_Sites "wikilink") service is only intended for freely available plugins. To restrict user access, you will need to host the update site yourself, sharing the URL only with your customers. Implementing an authentication scheme on top of an ImageJ update site is outside the scope of ImageJ—consider using something like [OAuth](http://oauth.net/).
 
@@ -97,5 +97,5 @@ The *View changes* option is helpful to identify what downloads are pending. Onc
 
 Other options to check if still not resolved:
 
-  - Be sure to set your upload password for your currently logged-in wiki account. Just click [Set/change upload password](Special:ChangeUploadPassword "wikilink") under the MORE TOOLS section at the bottom of any wiki page.
+  - Be sure to set your upload password for your currently logged-in wiki account. Just click [Set/change upload password](Special_ChangeUploadPassword "wikilink") under the MORE TOOLS section at the bottom of any wiki page.
   - Be sure that under “Manage update sites” that your credentials are inserted for your update site. See [Uploading files to your update site](How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site "wikilink") on the ImageJ wiki to double-check how to do this.

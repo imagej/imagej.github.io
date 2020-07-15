@@ -11,7 +11,7 @@ description: test description
 Hi all, see https://github.com/chalkie666/imagejMacros/blob/master/exponentialChirpImag.ijm it would be cool to port this to use ops deconv? Anyone interested? Brian?
 
   -   
-    Care to start a forum topic in the Development category for this? Much more likely that someone will act on it... —[Rueden](User:Rueden "wikilink") ([talk](User_talk:Rueden "wikilink")) 11:17, 21 March 2016 (CDT)
+    Care to start a forum topic in the Development category for this? Much more likely that someone will act on it... —[Rueden](User_Rueden "wikilink") ([talk](User_talk_Rueden "wikilink")) 11:17, 21 March 2016 (CDT)
 
 <!-- end list -->
 

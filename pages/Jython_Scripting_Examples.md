@@ -616,7 +616,7 @@ One could easily add more color channels. But there are already lots.
 
 The script uses [Imglib](Imglib "wikilink") scripting to normalize images and generate the color composite. See this [imglib scripting tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/#s10) for in-depth explanations.
 
-![Corti-multi-channel.png](/images/pages/Corti-multi-channel.png "Corti-multi-channel.png")
+![Corti-multi-channel.png](Corti-multi-channel.png "Corti-multi-channel.png")
 
 ``` python
 # 2010-12-03 Albert Cardona and Arnim Jenett
@@ -1824,7 +1824,7 @@ w.subtract(img, 10)
 imp.updateAndDraw()
 ```
 
-Of course the Weaver is a java library, and may be used from any scripting language such as [Javascript](Javascript_Scripting "wikilink"), [JRuby](JRuby_Scripting "wikilink"), and [others](:Category:Scripting "wikilink").
+Of course the Weaver is a java library, and may be used from any scripting language such as [Javascript](Javascript_Scripting "wikilink"), [JRuby](JRuby_Scripting "wikilink"), and [others](_Category_Scripting "wikilink").
 
 All the above is inspired by the [Scientific Python Weaver, or scipy Weaver](http://www.scipy.org/Cookbook/Weave), which inlines C code inside a python file.
 
@@ -2035,4 +2035,4 @@ Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just
   - Albert Cardona's crash course in [Jython scripting with Fiji](http://www.ini.uzh.ch/~acardona/fiji-tutorial/index.html).
   - Jython for [TrakEM2 Scripting](TrakEM2_Scripting "wikilink").
 
-[Category:Scripting](Category:Scripting "wikilink") [Category:Jython](Category:Jython "wikilink")
+[Category:Scripting](Category_Scripting "wikilink") [Category:Jython](Category_Jython "wikilink")

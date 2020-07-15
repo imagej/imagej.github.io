@@ -14,7 +14,7 @@ description: test description
 
 # A short story about Fiji
 
-This story is not about [the island called *Fiji*](wikipedia:Fiji "wikilink"). This story is how [Fiji Is Just ImageJ](https://fiji.sc) became born.
+This story is not about [the island called *Fiji*](wikipedia_Fiji "wikilink"). This story is how [Fiji Is Just ImageJ](https://fiji.sc) became born.
 
 ## The beginning
 

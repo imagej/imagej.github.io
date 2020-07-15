@@ -12,13 +12,13 @@ description: test description
 {% capture source%}
 {% include github org='Luxor001 ' repo='DS4H-Image-Alignment ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='DS4H Image Alignment ' maintainer='DS4H ' author='Stefano Belli; Antonella Carbonaro; Filippo Piccinini ' source=source released='08/06/2019 ' latest-version='13/08/2019 ' status='stable ' category='[:Category:Registration](:Category:Registration "wikilink") ' %}
+{% include info-box software='ImageJ ' name='DS4H Image Alignment ' maintainer='DS4H ' author='Stefano Belli; Antonella Carbonaro; Filippo Piccinini ' source=source released='08/06/2019 ' latest-version='13/08/2019 ' status='stable ' category='[:Category:Registration](_Category_Registration "wikilink") ' %}
 
 ## Goal of the plugin
 
 Align (i.e. co-register) 2D images
 
-![DS4H\_IA\_Modified\_TsujikawaCellReports2017.png](/images/pages/DS4H IA Modified TsujikawaCellReports2017.png "DS4H IA Modified TsujikawaCellReports2017.png")
+![DS4H\_IA\_Modified\_TsujikawaCellReports2017.png](DS4H_IA_Modified_TsujikawaCellReports2017.png "DS4H_IA_Modified_TsujikawaCellReports2017.png")
 
 ## Description
 
@@ -74,4 +74,4 @@ The Data Science for Health (DS4H) group:
 
 \- Filippo Piccinini, Istituto Scientifico Romagnolo per lo Studio e la Cura dei Tumori (IRST) IRCCS, Meldola (FC), Italy, email: filippo.piccinini@irst.emr.it
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:Plugins](Category:Plugins "wikilink") [Category:Registration](Category:Registration "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink")

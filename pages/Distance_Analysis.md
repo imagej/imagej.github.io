@@ -22,7 +22,7 @@ The plugin can be used with labelled images, but it also integrates tools for th
 
 Jean-François Gilles, Institute of Biology Paris Seine (France). jean-francois.gilles (at) upmc.fr
 
-Thomas Boudier ![EmailBoudier.png](/images/pages/EmailBoudier.png "EmailBoudier.png"), [Academia Sinica](https://www.sinica.edu.tw/en), Taipei, Taiwan.
+Thomas Boudier ![EmailBoudier.png](EmailBoudier.png "EmailBoudier.png"), [Academia Sinica](https://www.sinica.edu.tw/en), Taipei, Taiwan.
 
 ## Features
 
@@ -92,9 +92,9 @@ choose a threshold value
 
 Filter objects by size and remove objects from image edges is possible
 
-\- Spot segmentation method : a tutorial for this method is found [here](plugin:segmentation:3d_spots_segmentation:start "wikilink")
+\- Spot segmentation method : a tutorial for this method is found [here](plugin_segmentation_3d_spots_segmentation_start "wikilink")
 
-\- Iterative segmentation method : a tutorial for this method is found [here](plugin:segmentation:3d_spots_segmentation:start "wikilink")
+\- Iterative segmentation method : a tutorial for this method is found [here](plugin_segmentation_3d_spots_segmentation_start "wikilink")
 
 \- Filter objects by size is possible
 
@@ -174,4 +174,4 @@ GPL distribution (see [3](http://www.cecill.info/index.en.html%7Clicence)). Sour
   - 24/02/2020 v.1.47: bug fixed with the shuffle in macro line
   - 28/04/2020 v1.48: add integrated density measure
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Analysis](Category:Analysis "wikilink") [Category:Colocalization‏‎](Category:Colocalization‏‎ "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Analysis](Category_Analysis "wikilink") [Category:Colocalization‏‎](Category_Colocalization‏‎ "wikilink") [Category:Citable](Category_Citable "wikilink")

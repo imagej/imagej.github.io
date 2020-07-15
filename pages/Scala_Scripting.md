@@ -12,4 +12,4 @@ description: test description
 
 See also {% include github org='scijava ' repo='scripting-scala ' label='scripting-scala on GitHub ' %}.
 
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Scripting](Category_Scripting "wikilink")

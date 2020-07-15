@@ -20,8 +20,8 @@ description: test description
 {% capture source%}
 {% include github org='imagescience ' repo='TransformJ ' %}
 {% endcapture %}
-{% include info-box software='ImageScience ' name='TransformJ ' maintainer=maintainer author=author source=source status=' ' category='[:Category:Plugins](:Category:Plugins "wikilink") ' website='http://imagescience.org/meijering/software/transformj/ ' %}The [TransformJ](http://imagescience.org/meijering/software/transformj/) suite of plugins offers geometrical image transformation and manipulation.
+{% include info-box software='ImageScience ' name='TransformJ ' maintainer=maintainer author=author source=source status=' ' category='[:Category:Plugins](_Category_Plugins "wikilink") ' website='http://imagescience.org/meijering/software/transformj/ ' %}The [TransformJ](http://imagescience.org/meijering/software/transformj/) suite of plugins offers geometrical image transformation and manipulation.
 
 TransformJ is available from the [ImageScience](ImageScience "wikilink") update site.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:ImageScience](Category:ImageScience "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:ImageScience](Category_ImageScience "wikilink")

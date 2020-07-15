@@ -19,4 +19,4 @@ The plugin [Register Virtual Stack Slices](Register_Virtual_Stack_Slices "wikili
   - Elastic model: with splines, interfacing with bUnwarpJ
   - Moving Least Squares model: allows maximal local deformation.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

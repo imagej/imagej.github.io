@@ -16,7 +16,7 @@ description: test description
 {% include aboutmenu%}
 The [ImageJ](ImageJ "wikilink") project, and related projects in the [SciJava](SciJava "wikilink") software ecosystem, are governed as [open source](open_source "wikilink") software projects. Everybody is welcome to [contribute](contribute "wikilink") with [plugins](plugins "wikilink"), patches, [bug reports](Bugs "wikilink"), [tutorials](tutorials "wikilink"), [documentation](documentation "wikilink"), and artwork.
 
-That said, every project needs leaders: the ones who participate in *governance* of the project, [maintaining](wikipedia:Software_maintenance "wikilink") the software and making key decisions.
+That said, every project needs leaders: the ones who participate in *governance* of the project, [maintaining](wikipedia_Software_maintenance "wikilink") the software and making key decisions.
 
 ## Project roles
 
@@ -286,4 +286,4 @@ Birgit Möller</p></td>
   - Eric S. Raymond's [Homesteading the Noosphere](http://catb.org/~esr/writings/homesteading/homesteading/)
   - Eric S. Raymond's [The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/)
 
-[Category:Development](Category:Development "wikilink")
+[Category:Development](Category_Development "wikilink")

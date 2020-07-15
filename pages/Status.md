@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [:Category:Status](:Category:Status "wikilink")
+1.  REDIRECT [:Category:Status](_Category_Status "wikilink")

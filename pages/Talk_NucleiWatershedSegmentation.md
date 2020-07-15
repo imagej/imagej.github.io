@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Talk:Nuclei Watershed Separation](Talk:Nuclei_Watershed_Separation "wikilink")
+1.  REDIRECT [Talk:Nuclei Watershed Separation](Talk_Nuclei_Watershed_Separation "wikilink")

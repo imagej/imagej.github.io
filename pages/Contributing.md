@@ -17,7 +17,7 @@ If you are interested in helping to tackle open issues, see the [wish list](wish
 
 ## This web site
 
-This site, imagej.net, is a wiki (similar to the [Wikipedia](wikipedia:Wikipedia "wikilink") project). This site is built by the ImageJ community, and anyone can contribute\!
+This site, imagej.net, is a wiki (similar to the [Wikipedia](wikipedia_Wikipedia "wikilink") project). This site is built by the ImageJ community, and anyone can contribute\!
 
 If you are an ImageJ user, contributing documentation is an easy way to give back to the community without needing to learn software development skills.
 

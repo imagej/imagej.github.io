@@ -70,6 +70,6 @@ There exists one flag that can remove the Z dimension in 2D case. And another th
 
 There are some specialized tools in [MATLAB](MATLAB "wikilink") that can exploit TrackMate results. For instance, here is a [MATLAB](MATLAB "wikilink") class that performs [mean-square displacement analysis](http://www.mathworks.com/matlabcentral/fileexchange/40692-mean-square-displacement-analysis-of-particles-trajectories). It is hopefully well documented in this [[MATLAB](MATLAB "wikilink") tutorial](http://www.mathworks.com/matlabcentral/fileexchange/40692-mean-square-displacement-analysis-of-particles-trajectories/content/msdanalyzer/MSDTuto.html).
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 10:35, 8 August 2013 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 10:35, 8 August 2013 (CDT)
 
-[Category:Tracking](Category:Tracking "wikilink") [Category:Matlab](Category:Matlab "wikilink")
+[Category:Tracking](Category_Tracking "wikilink") [Category:Matlab](Category_Matlab "wikilink")

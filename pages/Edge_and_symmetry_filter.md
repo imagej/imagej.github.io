@@ -22,13 +22,13 @@ This plugin will compute the gradients of the image based on the [Canny edge det
 
 **Alpha parameter** refers to the smoothing in canny edge detection, the smaller the value, the smoother the edges.
 
-![Edgeandsymmetry.png](/images/pages/Edgeandsymmetry.png "Edgeandsymmetry.png")
+![Edgeandsymmetry.png](Edgeandsymmetry.png "Edgeandsymmetry.png")
 
 The **radius** parameter refer to the radius of the object whose symmetry is to be detected. Normalization and scaling refer to internal values of the algorithm, see Gertych *et al.* for references. The smoothed version is smoothed using ImageJ 3D Gaussian filter with a radius 2.
 
 The **improved seed detection** refer to a modified implementation to better detect seeds inside objects rather than objects themselves.
 
-![Edgesymmetry.png](/images/pages/Edgesymmetry.png "Edgesymmetry.png")
+![Edgesymmetry.png](Edgesymmetry.png "Edgesymmetry.png")
 
 The gradient vector is perpendicular to the edges, voxels along the direction of the gradient are highlighted and *vote* for the symmetry.
 

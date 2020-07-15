@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='L-EL ' repo='TreeJ ' %}
 {% endcapture %}
-{% include info-box name='TreeJ ' software='ImageJ and Fiji ' author=' [Elise Laruelle](https://github.com/L-EL) , Philippe Andrey, Jean-Christophe Palauqui, Alain Trubuil ' maintainer=' [Elise Laruelle](https://github.com/L-EL) ' filename=' [TreeJ\_-1.0.0-SNAPSHOT.jar](https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar) ' source=source Initial-released='July, 2016 ' category='[Analysis](:Category:Analysis "wikilink"), [Plugins](:Category:Plugins "wikilink") ' %}
+{% include info-box name='TreeJ ' software='ImageJ and Fiji ' author=' [Elise Laruelle](https://github.com/L-EL) , Philippe Andrey, Jean-Christophe Palauqui, Alain Trubuil ' maintainer=' [Elise Laruelle](https://github.com/L-EL) ' filename=' [TreeJ\_-1.0.0-SNAPSHOT.jar](https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar) ' source=source Initial-released='July, 2016 ' category='[Analysis](_Category_Analysis "wikilink"), [Plugins](_Category_Plugins "wikilink") ' %}
 
 This plugin contains an interface to reconstruct interactively and recursively a cell lineage from a static labeled image. It allows to :
 
@@ -22,7 +22,7 @@ This plugin contains an interface to reconstruct interactively and recursively a
   - extract some set of images related to TreeJ functions
   - save as a tree file compatible with other tree viewer and/or TreeJ
 
-![treeJExample.png](/images/pages/TreeJExample.png "treeJExample.png") {% include toc%}
+![treeJExample.png](treeJExample.png "treeJExample.png") {% include toc%}
 
 
 ## Usage
@@ -89,10 +89,10 @@ From a segmented image of an Arabidospsi thaliana embryo of 122 cells (FigA), a 
   - For each domain we can reconstruct the lineage and obtain a tree with TreeJ (see Fig right : a tree of an external apical domain).
   - We tagged internal domains of the embryo and extracted the corresponding image them with **From Tag** (figC).
 
-![FiliationTools.png](/images/pages/FiliationTools.png "FiliationTools.png")
+![FiliationTools.png](FiliationTools.png "FiliationTools.png")
 
 ## Installation
 
 Download [.jar](https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar) and put into "plugin" directory of ImageJ or Fiji directory. Reload ImageJ/Fiji and TreeJ will be accessible in the {% include bc content='Plugin | TreeJ'%} menu.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Analysis](Category:Analysis "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Analysis](Category_Analysis "wikilink")

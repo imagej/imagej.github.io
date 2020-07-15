@@ -8,15 +8,15 @@ categories:
 description: test description
 ---
 
-![ 64px | left | link=https://opensource.org/](/images/pages/Osi symbol.png " 64px | left | link=https://opensource.org/") The [ImageJ](ImageJ "wikilink") project, and related projects in the [SciJava](SciJava "wikilink") software ecosystem, are open source software projects. See the [Licensing](Licensing "wikilink") page for details.
+![ 64px | left | link=https://opensource.org/](Osi_symbol.png " 64px | left | link=https://opensource.org/") The [ImageJ](ImageJ "wikilink") project, and related projects in the [SciJava](SciJava "wikilink") software ecosystem, are open source software projects. See the [Licensing](Licensing "wikilink") page for details.
 
 Everybody is welcome to [contribute](contribute "wikilink") with [plugins](plugins "wikilink"), patches, [bug reports](Bugs "wikilink"), [tutorials](tutorials "wikilink"), [documentation](documentation "wikilink"), and artwork.
 
-The [SciJava](SciJava "wikilink") ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](Source_Code "wikilink"), public [communication](communication "wikilink") channels, public [project management](project_management "wikilink") resources, and of course, this [community editable website](Help:Contents "wikilink"). See the [Philosophy](Philosophy "wikilink") page for more information.
+The [SciJava](SciJava "wikilink") ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](Source_Code "wikilink"), public [communication](communication "wikilink") channels, public [project management](project_management "wikilink") resources, and of course, this [community editable website](Help_Contents "wikilink"). See the [Philosophy](Philosophy "wikilink") page for more information.
 
 ## Why open source?
 
-One core principle of the [scientific method](wikipedia:Scientific_method "wikilink") is repeatability: the ability to continually retest and refine hypotheses. As computer software plays an increasingly large role in science, it is vital that that software be fully transparent and available to researchers: software is simply too complex to be easily [reproduced](Reproducibility "wikilink") from scratch by every research group. In contrast, closed source software presents a barrier to [open research](wikipedia:Open_research_computation#Reproducibility_and_open_research_computing "wikilink"), because the implementation details of algorithms cannot be freely modified or even necessarily verified.
+One core principle of the [scientific method](wikipedia_Scientific_method "wikilink") is repeatability: the ability to continually retest and refine hypotheses. As computer software plays an increasingly large role in science, it is vital that that software be fully transparent and available to researchers: software is simply too complex to be easily [reproduced](Reproducibility "wikilink") from scratch by every research group. In contrast, closed source software presents a barrier to [open research](wikipedia_Open_research_computation#Reproducibility_and_open_research_computing "wikilink"), because the implementation details of algorithms cannot be freely modified or even necessarily verified.
 
 The [Science Code Manifesto](http://sciencecodemanifesto.org/discussion) provides a clear and succinct list of five principles surrounding scientific software. There have also been a number of publications in recent years discussing these issues and ideas:
 
@@ -26,13 +26,13 @@ The [Science Code Manifesto](http://sciencecodemanifesto.org/discussion) provide
   - [Publish your computer code: it is good enough](http://www.nature.com/news/2010/101013/full/467753a.html) (Nature, Oct 2010)
   - [Metadata matters: access to image data in the real world](http://jcb.rupress.org/content/189/5/777.full) (Journal of Cell Biology, May 2010)
 
-Further, we strive for ImageJ to be a community driven project. It is not merely an [open source](wikipedia:Open_source "wikilink") *product*, but an open source *process*. ImageJ follows open development practices, and provides open development tools online:
+Further, we strive for ImageJ to be a community driven project. It is not merely an [open source](wikipedia_Open_source "wikilink") *product*, but an open source *process*. ImageJ follows open development practices, and provides open development tools online:
 
   - Public [source code](source_code "wikilink") repositories including complete development history.
   - Public [issue trackers](Issues "wikilink").
   - Public [communication channels](Communication "wikilink") for open discussion.
   - Public [wiki](https://imagej.net/) for community contributed content.
-  - [Travis CI](Travis_CI "wikilink"), ImageJ's public [continuous integration](wikipedia:Continuous_integration "wikilink") system.
+  - [Travis CI](Travis_CI "wikilink"), ImageJ's public [continuous integration](wikipedia_Continuous_integration "wikilink") system.
   - Public [Maven repository](SciJava_Maven_repository "wikilink") for ImageJ binaries.
 
 Using these resources, you can always observe the latest progress of the project, get an idea of where the project is heading, contribute code to the project yourself using GitHub, or write documentation, tutorials and other information on the wiki.

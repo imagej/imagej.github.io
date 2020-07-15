@@ -16,7 +16,7 @@ description: test description
 {% capture source%}
 {% include github org='GrocottLab ' repo='Atlas-Toolkit ' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='Atlas Toolkit ' author=' [Grocott Lab](http://www.grocottlab.com) ' maintainer=maintainer filename='Atlas\_Toolkit\_1.0-SNAPSHOT.jar ' source=source released='November 16<sup>th</sup>, 2015 ' latest-version='1.0, May 6<sup>th</sup>, 2015 ' status='stable, active ' category='[Registration](:Category:Registration "wikilink") ' website=' [www.grocottlab.com](http://www.grocottlab.com/software) ' %}The Atlas Toolkit plugin is a collection of tools developed to achieve group-wise elastic registration of 3D objects by decomposing the alignment problem into a sequence of orthogonal 2D elastic registrations, for which each object is registered to every other. These 2D elastic registrations are powered by the [BUnwarpJ](BUnwarpJ "wikilink") plugin, and registration is guided by the gross morphology of the corresponding 3D objects, which can be defined using the [Segmentation Editor](Segmentation_Editor "wikilink") plugin.
+{% include info-box software='Fiji ' name='Atlas Toolkit ' author=' [Grocott Lab](http://www.grocottlab.com) ' maintainer=maintainer filename='Atlas\_Toolkit\_1.0-SNAPSHOT.jar ' source=source released='November 16<sup>th</sup>, 2015 ' latest-version='1.0, May 6<sup>th</sup>, 2015 ' status='stable, active ' category='[Registration](_Category_Registration "wikilink") ' website=' [www.grocottlab.com](http://www.grocottlab.com/software) ' %}The Atlas Toolkit plugin is a collection of tools developed to achieve group-wise elastic registration of 3D objects by decomposing the alignment problem into a sequence of orthogonal 2D elastic registrations, for which each object is registered to every other. These 2D elastic registrations are powered by the [BUnwarpJ](BUnwarpJ "wikilink") plugin, and registration is guided by the gross morphology of the corresponding 3D objects, which can be defined using the [Segmentation Editor](Segmentation_Editor "wikilink") plugin.
 
 ## Installation of the plugin
 
@@ -82,4 +82,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 -----
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Registration](Category:Registration "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:Citable](Category_Citable "wikilink")

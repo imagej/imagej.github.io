@@ -10,7 +10,7 @@ description: test description
 
 {% include user-box name='Daniel James White ' title='Ambassador of Fiji ' affiliation='GE Healthcare (Applied Precision, Inc.) ' forum='chalkie666 ' github='chalkie666 ' linkedin='pub/daniel-james-white/8/8b4/8a1 ' %}Hi there,
 
-I have been nicknamed *Ambassador of Fiji* by the [Mother of Fiji](User:Schindelin "wikilink").
+I have been nicknamed *Ambassador of Fiji* by the [Mother of Fiji](User_Schindelin "wikilink").
 
 ## Maintained plugins
 

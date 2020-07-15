@@ -57,7 +57,7 @@ Welcome to the Wiki\!
 
 <div style="font-size: 1.2em; padding: 7px">
 
-This [wiki](wikipedia:wiki "wikilink") documents all aspects of the **ImageJ ecosystem**, including:
+This [wiki](wikipedia_wiki "wikilink") documents all aspects of the **ImageJ ecosystem**, including:
 
 </div>
 
@@ -86,7 +86,7 @@ Tools & Features
 
 |                                              |                                                                                                                                                                                                                                                                              |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Open source](Open_source "wikilink")        | ImageJ is a tool for the [scientific community](wikipedia:Scientific_method#Communication_and_community "wikilink"). To maintain transparency, the [ImageJ application](Downloads "wikilink") and its [source code](source_code "wikilink") will always be freely available. |
+| [Open source](Open_source "wikilink")        | ImageJ is a tool for the [scientific community](wikipedia_Scientific_method#Communication_and_community "wikilink"). To maintain transparency, the [ImageJ application](Downloads "wikilink") and its [source code](source_code "wikilink") will always be freely available. |
 | [Reproducible](Reproducibility "wikilink")   | Powerful tools such as the [Script Editor](Script_Editor "wikilink") and [personal update sites](personal_update_sites "wikilink") help you develop and share reproducible analysis workflows.                                                                               |
 | [Interoperable](Interoperability "wikilink") | ImageJ is [not an island](SciJava "wikilink"). Use the best tool for the job, including [KNIME](KNIME "wikilink"), [ITK](ITK "wikilink"), [MATLAB](MATLAB "wikilink"), and a multitude of [scripting](scripting "wikilink") languages.                                       |
 

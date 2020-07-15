@@ -44,13 +44,13 @@ The other parameters are related to the **minimal and maximal volumes** of the o
 
 For **8-bits** images it is recommended to use the method *Step* with *value* between 1 and 5. For **16-bits** images try *Step* with values between 5 and 100 depending on the dynamic of your data. Note that the more threshold tested the more memory used. In order not to test low thresholds you can specify to start with the **mean value** of the image as the lowest threshold or specify manually the lowest threshold to start with. The image can be \*\*filtered\*\* before thresholding with a 3D median filter with radii proportional to the minimal volume. The **contrast** refers to the range of thresholds where the object exists, noise or very faint objects may have very low contrast as opposed to very contrasted object.
 
-![600](/images/pages/IterativeDotblot.png "600")
+![600](IterativeDotblot.png "600")
 
 Iterative thresholding using different criteria, bottom left elongation, top right volume and bottom right MSER.
 
 Testing all thresholds may lead to **objects being divided into smaller objects** for high thresholds. For instance **touching cells** may result in close nuclei, at low contrast and low threshold the two nuclei may seem like touching and form only one object, however at high threshold and contrast two separate objects are being seen.
 
-![600](/images/pages/IterativeTouching.png "600")
+![600](IterativeTouching.png "600")
 
 Dividing objects with thresholds, top left raw image with high brightness, top right raw image with adjusted contrast to distinguish the dividing nuclei, bottom left first channel of Iterative thresholding showing brighter and smaller objects, bottom right second channel of Iterative thresholding showing merged nuclei for lower threshold.
 
@@ -62,9 +62,9 @@ The plugin works with two images, one containing the **seeds** of the objects, t
 
 Three methods are available for computing the value of the local threshold and 3 methods for clustering are also proposed. The option **watershed** can be chosen to avoid merging of close spots.
 
-A tutorial is also available : [Media:3d seg spot tutorial.pdf](Media:3d_seg_spot_tutorial.pdf "wikilink")
+A tutorial is also available : [Media:3d seg spot tutorial.pdf](Media_3d_seg_spot_tutorial.pdf "wikilink")
 
-![Heck-orig.png](/images/pages/Heck-orig.png "Heck-orig.png") ![Heck-watershed.png](/images/pages/Heck-watershed.png "Heck-watershed.png")![Heck-seg.png](/images/pages/Heck-seg.png "Heck-seg.png")
+![Heck-orig.png](Heck-orig.png "Heck-orig.png") ![Heck-watershed.png](Heck-watershed.png "Heck-watershed.png")![Heck-seg.png](Heck-seg.png "Heck-seg.png")
 
 Left, slice of a 3D raw image with crowded objects with different intensities. Middle, the zones around each detected local maxima, computed using watershed. Right, the final segmentation of the objects.
 

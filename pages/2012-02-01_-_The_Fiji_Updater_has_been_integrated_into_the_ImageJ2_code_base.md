@@ -20,4 +20,4 @@ A few minor things need to be done still: regression tests need to be added for 
 
 In related news, the Updater was enhanced such that it could—in theory—handle an update site for projects which are only loosely related to Fiji/ImageJ2, such as [OMERO](OMERO "wikilink").
 
-[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")

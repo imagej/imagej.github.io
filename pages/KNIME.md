@@ -32,4 +32,4 @@ As part of the KNIP extension, there is an [ImageJ extension for KNIME](http://t
   - {% include publication content='KNIP' %}
   - {% include publication content='KNIME' %}
 
-[Category:Related Software](Category:Related_Software "wikilink") [Category:SciJava](Category:SciJava "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Related Software](Category_Related_Software "wikilink") [Category:SciJava](Category_SciJava "wikilink") [Category:Citable](Category_Citable "wikilink")

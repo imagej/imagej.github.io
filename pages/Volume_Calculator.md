@@ -8,7 +8,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Volume\_Calculator' %}{| |style="vertical-align:top" |![Volume Calculator user interface.](/images/pages/VolCal.png "Volume Calculator user interface.") |}
+{% include component-stats content=':sc.fiji:Volume\_Calculator' %}{| |style="vertical-align:top" |![Volume Calculator user interface.](VolCal.png "Volume Calculator user interface.") |}
 
 ## Introduction
 
@@ -22,7 +22,7 @@ Volume Calculator uses three Fiji plugins:
 
 ## Usage
 
-The section explains how to use Volume Calculator. A Magnetic Resonance Angiogram [Magnetic resonance angiography](wikipedia:Magnetic_resonance_angiography "wikilink")|(MRA) is used as an example image. This MRA is of the hindlimb vasculature of a mouse and was performed in vivo.
+The section explains how to use Volume Calculator. A Magnetic Resonance Angiogram [Magnetic resonance angiography](wikipedia_Magnetic_resonance_angiography "wikilink")|(MRA) is used as an example image. This MRA is of the hindlimb vasculature of a mouse and was performed in vivo.
 
 ### Image Acquistion
 
@@ -91,4 +91,4 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Plugins](Category_Plugins "wikilink")

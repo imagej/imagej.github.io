@@ -20,4 +20,4 @@ description: test description
 
   - The [Groovy Quick Start](http://groovy-lang.org/documentation.html#gettingstarted) guide
 
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Scripting](Category_Scripting "wikilink")

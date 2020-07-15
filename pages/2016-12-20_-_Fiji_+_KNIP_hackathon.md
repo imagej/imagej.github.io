@@ -112,7 +112,7 @@ PlotData=
 
 ## Gallery
 
-[File:hackdd16-beautiful-dresden.jpg|caption|Beautiful](File:hackdd16-beautiful-dresden.jpg%7Ccaption%7CBeautiful) Dresden [File:hackdd16-beer-and-code.jpg|caption|Beer](File:hackdd16-beer-and-code.jpg%7Ccaption%7CBeer) and code [File:hackdd16-better-software.jpg|caption|Better](File:hackdd16-better-software.jpg%7Ccaption%7CBetter) software, better research\! [File:hackdd16-day1.jpg|caption|First](File:hackdd16-day1.jpg%7Ccaption%7CFirst) day [File:hackdd16-hackers.jpg|caption|Hackers](File:hackdd16-hackers.jpg%7Ccaption%7CHackers) at work [File:hackdd16-hacking.jpg|caption|Hacking](File:hackdd16-hacking.jpg%7Ccaption%7CHacking) [File:hackdd16-mpicbg-xmas-party.jpg|caption|MPI-CBG](File:hackdd16-mpicbg-xmas-party.jpg%7Ccaption%7CMPI-CBG) Christmas party [File:hackdd16-waldschlosschen.jpg|caption|Waldschloßchen](File:hackdd16-waldschlosschen.jpg%7Ccaption%7CWaldschloßchen) [File:hackdd16-xmas.jpg|caption|Merry](File:hackdd16-xmas.jpg%7Ccaption%7CMerry) Christmas\!
+[File:hackdd16-beautiful-dresden.jpg|caption|Beautiful](File_hackdd16-beautiful-dresden.jpg%7Ccaption%7CBeautiful) Dresden [File_hackdd16-beer-and-code.jpg|caption|Beer](File_hackdd16-beer-and-code.jpg%7Ccaption%7CBeer) and code [File_hackdd16-better-software.jpg|caption|Better](File_hackdd16-better-software.jpg%7Ccaption%7CBetter) software, better research\! [File_hackdd16-day1.jpg|caption|First](File_hackdd16-day1.jpg%7Ccaption%7CFirst) day [File_hackdd16-hackers.jpg|caption|Hackers](File_hackdd16-hackers.jpg%7Ccaption%7CHackers) at work [File_hackdd16-hacking.jpg|caption|Hacking](File_hackdd16-hacking.jpg%7Ccaption%7CHacking) [File_hackdd16-mpicbg-xmas-party.jpg|caption|MPI-CBG](File_hackdd16-mpicbg-xmas-party.jpg%7Ccaption%7CMPI-CBG) Christmas party [File_hackdd16-waldschlosschen.jpg|caption|Waldschloßchen](File_hackdd16-waldschlosschen.jpg%7Ccaption%7CWaldschloßchen) [File_hackdd16-xmas.jpg|caption|Merry](File_hackdd16-xmas.jpg%7Ccaption%7CMerry) Christmas\!
 
 ## Hackathon progress
 
@@ -162,7 +162,7 @@ PlotData=
   - With {% include person content='Rdom' %}, improved [SciJava Common](SciJava_Common "wikilink") context injection to be recursive, to fix bugs with service population of commands ({% include github org='scijava ' repo='scijava-common ' commit='b0c981b24fc8ec845656574d95f9eddbc285728e ' label='scijava/scijava-common@b0c981b2 ' %}, {% include github org='imagej ' repo='imagej-ops ' commit='4f78eca5b061881865c2a2c1702a98e634248aa5 ' label='imagej/imagej-ops@4f78eca5 ' %}).
   - With {% include person content='Rdom' %}, add a validater callback for parameter validation ({% include github org='scijava ' repo='scijava-common ' commit='66ed844ee76a264ca83629f0fef50c9b726c8897 ' label='scijava/scijava-common@66ed844e ' %}, {% include github org='scijava ' repo='scijava-common ' commit='70c50f48cc20cec0a747a000778f013c7380155d ' label='scijava/scijava-common@70c50f48 ' %}).
   - With {% include person content='maarzt' %}, began work on a `PlotService` for ImageJ2 (\[https://github.com/imagej/imagej-ui-swing/compare/plot-service...maarzt:plot-service maarzt/imagej-ui-swing@plot-service\]).
-  - Participated in technical discussions with various people, including a "big-picture" status update for ImageJ2 covering my [primary priorities](User:Rueden#Primary_projects "wikilink"); see [Technical discussions](#Technical_discussions "wikilink") section below.
+  - Participated in technical discussions with various people, including a "big-picture" status update for ImageJ2 covering my [primary priorities](User_Rueden#Primary_projects "wikilink"); see [Technical discussions](#Technical_discussions "wikilink") section below.
 
 ### Tobias Pietzsch
 
@@ -269,4 +269,4 @@ PlotData=
       - GUI tools/widgets will go into scijava-ui-swing
       - {% include person content='skalarproduktraum' %} will continue to develop Scenery for the core 3D rendering functionality
 
-[Category:News](Category:News "wikilink") [Category:Fiji](Category:Fiji "wikilink")
+[Category:News](Category_News "wikilink") [Category:Fiji](Category_Fiji "wikilink")

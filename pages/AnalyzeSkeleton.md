@@ -47,7 +47,7 @@ Notice here that, following this notation, the number of junction voxels can be 
   - **Prune the possible loops** in the skeleton (by choosing one of the pruning cycle methods).
   - **Prune any branch that ends in an end-point** (by checking "Prune ends"), as implemented by [Michael Doube](http://doube.org/) in [BoneJ](http://bonej.org/).
       - In this case, if a ROI was selected in the input image, another option is enabled: *Exclude ROI from pruning*. If selected, pruning will not be applied to end-points contained by the ROI. An application of this feature is described in [Strahler Analysis](Strahler#Root_Detection "wikilink").
-  - **Calculate the largest shortest path** of each skeleton using the [APSP (all pairs shortest path)](wikipedia:Floyd-Warshall_algorithm "wikilink"). In this case, the shortest path will be displayed in a new window containing the skeleton in white and the shortest path in **magenta**. Implemented by Huub Hovens.
+  - **Calculate the largest shortest path** of each skeleton using the [APSP (all pairs shortest path)](wikipedia_Floyd-Warshall_algorithm "wikilink"). In this case, the shortest path will be displayed in a new window containing the skeleton in white and the shortest path in **magenta**. Implemented by Huub Hovens.
   - **Show detailed info** about the branches of each skeleton in the image.
   - **Display labeled skeletons**. An extra output image will be displayed containing each skeleton labeled with its corresponding skeleton ID.
 
@@ -64,7 +64,7 @@ Notice here that, following this notation, the number of junction voxels can be 
   - **lowest intensity voxel**: the darkest voxel among the loop voxels will be cut (set to 0) in the input image.
   - **lowest intensity branch**: the darkest (in average) branch among the loop branches will be cut in its darkest voxel.
 
-For the two last methods, another dialog will pop up asking the user to select the original (gray-scale) image among the open images in order to perform the intensity calculations. The cycle detection is based on a classical [**Depth-First Search**](wikipedia:Depth-first_search "wikilink") (DFS) in the skeleton. The skeleton is treated as an [undirected graph](wikipedia:Undirected_graph#Undirected_graph "wikilink"), where the end-points and junctions are the nodes and the slab-branches are the edges. While traversing the graph in the DFS fashion, the edges/branches pointing to unvisited nodes are marked as **TREE** edges, while the edges to visited nodes are marked as **BACK** edges, which involves the presence of a loop. After the edge classification, the BACK edges are backtracked following their predecessors in order to calculate all the edges belonging to each cycle and proceed with the pruning.
+For the two last methods, another dialog will pop up asking the user to select the original (gray-scale) image among the open images in order to perform the intensity calculations. The cycle detection is based on a classical [**Depth-First Search**](wikipedia_Depth-first_search "wikilink") (DFS) in the skeleton. The skeleton is treated as an [undirected graph](wikipedia_Undirected_graph#Undirected_graph "wikilink"), where the end-points and junctions are the nodes and the slab-branches are the edges. While traversing the graph in the DFS fashion, the edges/branches pointing to unvisited nodes are marked as **TREE** edges, while the edges to visited nodes are marked as **BACK** edges, which involves the presence of a loop. After the edge classification, the BACK edges are backtracked following their predecessors in order to calculate all the edges belonging to each cycle and proceed with the pruning.
 
 The only known limitation of this approach is shown in the presence of nested loops. In those cases, a second call to the plugin is usually enough to eliminate all the remaining loops.
 
@@ -97,7 +97,7 @@ In this table we display all branches information:
   - skeleton ID,
   - calibrated branch length,
   - 3D coordinates of the extremes of the branch (the so-called V1 and V2 vertices),
-  - and the Euclidean distance between those extreme points. This value has proven to be a good indicator of the [tortuosity](wikipedia:Tortuosity "wikilink") of the 3D object.
+  - and the Euclidean distance between those extreme points. This value has proven to be a good indicator of the [tortuosity](wikipedia_Tortuosity "wikilink") of the 3D object.
 
 The branches are sorted by decreasing length.
 
@@ -385,4 +385,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 -----
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Skeleton](Category:Skeleton "wikilink") [Category:Analysis](Category:Analysis "wikilink") [Category:Neuroanatomy](Category:Neuroanatomy "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Skeleton](Category_Skeleton "wikilink") [Category:Analysis](Category_Analysis "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink") [Category:Citable](Category_Citable "wikilink")

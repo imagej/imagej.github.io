@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SNT:\_Scripting](SNT:_Scripting "wikilink")
+1.  REDIRECT [SNT:\_Scripting](SNT__Scripting "wikilink")

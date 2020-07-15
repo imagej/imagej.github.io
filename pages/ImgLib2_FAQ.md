@@ -28,4 +28,4 @@ int w = 768, h = 512, timepoints = 20;
 Img<FloatType> img = ArrayImgs.floats(w, h, timepoints);
 ```
 
-[Category:ImgLib](Category:ImgLib "wikilink")
+[Category:ImgLib](Category_ImgLib "wikilink")

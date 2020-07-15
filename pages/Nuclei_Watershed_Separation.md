@@ -12,7 +12,7 @@ description: test description
 
 ### Introduction to the problem
 
-  - A very common biological sample for microscopy is DAPI stained DNA in cell nuclei. The staining delineates the nuclei pretty well, since in a metaphase cell there is DNA all over the nucleus. however, the staining is not homogenous, as there are areas of more or less condensation of the chromosomes. This makes the nuclei appear granular. Worse still, in many tissues that are interesting for developmental biology, the cells are tightly packed, and are composed mostly of nucleus with very little cytoplasm separating them. The nuclei often seem to touch each other, which in reality, of course, they can not. There is a membrane or two at least between them, but an optical microscope cannot resolve that. The [PSF](wikipedia:Point_spread_function "wikilink") is much bigger than the width of a membrane\! Just to make matters even worse the image is quite noisy, because it was made with a fast scan on a confocal laser scanning microscope, which inherently has a low signal/noise ratio. That gives objects fuzzy edges and adds uncertainty to the intensity values of each pixel, making it harder to segment properly.
+  - A very common biological sample for microscopy is DAPI stained DNA in cell nuclei. The staining delineates the nuclei pretty well, since in a metaphase cell there is DNA all over the nucleus. however, the staining is not homogenous, as there are areas of more or less condensation of the chromosomes. This makes the nuclei appear granular. Worse still, in many tissues that are interesting for developmental biology, the cells are tightly packed, and are composed mostly of nucleus with very little cytoplasm separating them. The nuclei often seem to touch each other, which in reality, of course, they can not. There is a membrane or two at least between them, but an optical microscope cannot resolve that. The [PSF](wikipedia_Point_spread_function "wikilink") is much bigger than the width of a membrane\! Just to make matters even worse the image is quite noisy, because it was made with a fast scan on a confocal laser scanning microscope, which inherently has a low signal/noise ratio. That gives objects fuzzy edges and adds uncertainty to the intensity values of each pixel, making it harder to segment properly.
 
 <!-- end list -->
 
@@ -28,13 +28,13 @@ description: test description
 
 ### Open the sample image
 
-  - open the [sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope.](Media:NucleiDAPIconfocal.png "wikilink")
+  - open the [sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope.](Media_NucleiDAPIconfocal.png "wikilink")
 
-![ 250px](/images/pages/NucleiDAPIconfocal.png " 250px")
+![ 250px](NucleiDAPIconfocal.png " 250px")
 
-  - Run a [Gaussian Blur filter](http://imagejdocu.tudor.lu/doku.php?id=gui:process:filters) on the image to blur out the "speckle", actually Poisson distributed, statistical "photon [shot noise](wikipedia:Shot_noise "wikilink")", and also to smooth out the inhomogeneity of the nuclear staining. We will use a large sigma value of 3 for this task. A value of sigma too small will mean that the segmentation will be disturbed by the noise and staining pattern. Too high a sigma value, and the objects will be too blurred, making it harder to find their edges precisely and separate them later. Run menu command: Process - Filters - Gaussian Blur, with a sigma value of 3 pixels. You can preview other values to see how they look also. You should get an image that looks like this:
+  - Run a [Gaussian Blur filter](http://imagejdocu.tudor.lu/doku.php?id=gui:process:filters) on the image to blur out the "speckle", actually Poisson distributed, statistical "photon [shot noise](wikipedia_Shot_noise "wikilink")", and also to smooth out the inhomogeneity of the nuclear staining. We will use a large sigma value of 3 for this task. A value of sigma too small will mean that the segmentation will be disturbed by the noise and staining pattern. Too high a sigma value, and the objects will be too blurred, making it harder to find their edges precisely and separate them later. Run menu command: Process - Filters - Gaussian Blur, with a sigma value of 3 pixels. You can preview other values to see how they look also. You should get an image that looks like this:
 
-![ 250px](/images/pages/NucleiDAPIconfocalGauss3pxSigma.png " 250px")
+![ 250px](NucleiDAPIconfocalGauss3pxSigma.png " 250px")
 
 ### Pixel Intensity Threshold - find the foreground areas
 
@@ -44,7 +44,7 @@ description: test description
 
   - Do menu command Image - Adjust - Threshold. Turn on the check box for "Dark background" . Indeed, in this case the background is dark\! The default method will be previewed automatically when you launch the menu command, and a threshold will be set, something close to 100 intensity. If you are happy with the automatically calculate threshold, then click "Apply", which will give you a binary image. Black is background, and white is foreground. It should look like this:
 
-![ 250px](/images/pages/NucleiDAPIconfocalAutoDefaultThresh.png " 250px")
+![ 250px](NucleiDAPIconfocalAutoDefaultThresh.png " 250px")
 
   - So far so good... But we still don't have objects... only background and foreground pixels. Also it is clear that some nuclei are connected to adjacent ones... and we want them to be separated. We will use the watershed method built into Fiji for that:
 
@@ -52,7 +52,7 @@ description: test description
 
   - To run the built in [ImageJ watershed method](https://imagej.net/docs/menus/process.html#watershed) choose menu item: Process - Binary - Watershed. This method finds the centre of each object (using a morphological erode operation), then calculates a distance map from the object centre points to the edges of the objects, then fills that "topological map" with imaginary water. Where 2 "Watersheds" meet, it builds a dam to separate them\! One could do all these steps manually, but the watershed function automates that for you, which is nice. Your watershed image should look like this:
 
-![ 250 px](/images/pages/NucleiDAPIconfocalWatershed.png " 250 px")
+![ 250 px](NucleiDAPIconfocalWatershed.png " 250 px")
 
   - Notice how the nuclei have been split away from each other. This method only works robustly for roughly circular objects. Why?
 
@@ -70,7 +70,7 @@ description: test description
 
 [documentation for analyze particles.](http://imagejdocu.tudor.lu/doku.php?id=gui:analyze:analyze_particles)
 
-![ 500px](/images/pages/NulceiDAPIconfocalAnalyzeParticles.png " 500px")
+![ 500px](NulceiDAPIconfocalAnalyzeParticles.png " 500px")
 
   - You can filter out different sizes of particles. For example, you might only be interested in large objects, like nuclei. So you can exclude small objects that you know are junk. Change the area number range in the Size field and see what happens.
 
@@ -90,6 +90,6 @@ description: test description
 
   - It also spits out lots of useful statistics:
 
-![ 700px](/images/pages/NulceiDAPIconfocalSegmentationResults.png " 700px")
+![ 700px](NulceiDAPIconfocalSegmentationResults.png " 700px")
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")

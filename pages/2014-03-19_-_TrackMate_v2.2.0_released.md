@@ -61,7 +61,7 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
   - The user can now define a *depth of drawing* display setting, that limits the number of Z-slices on which we draw the model. This is useful on very thick samples where the drawing of all the data across all Zs can become confusing.
 
-![DepthOfDrawing.png](/images/pages/DepthOfDrawing.png "DepthOfDrawing.png")
+![DepthOfDrawing.png](DepthOfDrawing.png "DepthOfDrawing.png")
 
   - Minor improvement for the track display on the main view, for large models.
 
@@ -113,6 +113,6 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
   - Fix several issues with zooming and decorations in TrackScheme. Fix a bug that caused the sliders to disappear for the simple style and with some zoom levels. Zooming should be now more efficient, and offers more zoom levels.
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 05:32, 19 March 2014 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 05:32, 19 March 2014 (CDT)
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

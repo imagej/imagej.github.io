@@ -8,7 +8,7 @@ categories: Segmentation,Tracking,Tutorials,Plugins,Citable
 description: test description
 ---
 
-![TrackMate-Logo85x50-color-300p.png](/images/pages/TrackMate-Logo85x50-color-300p.png "TrackMate-Logo85x50-color-300p.png") {% include component-stats content=':sc.fiji:TrackMate\_' %}
+![TrackMate-Logo85x50-color-300p.png](TrackMate-Logo85x50-color-300p.png "TrackMate-Logo85x50-color-300p.png") {% include component-stats content=':sc.fiji:TrackMate\_' %}
 
 ## Citation
 
@@ -22,23 +22,23 @@ Please note that TrackMate is available through Fiji, and is based on a publicat
 
 ### Examples
 
-![TrackMate\_Celegans\_devel.gif](/images/pages/TrackMate Celegans devel.gif "TrackMate Celegans devel.gif")
+![TrackMate\_Celegans\_devel.gif](TrackMate_Celegans_devel.gif "TrackMate_Celegans_devel.gif")
 
 The first 2 hours of a *C.elegans* embryo development, followed in 3D over time using TrackMate (strain: [AZ212](http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain))
 
-![TrackMate\_Celegans\_lineage\_detail.png](/images/pages/TrackMate Celegans lineage detail.png "TrackMate Celegans lineage detail.png")
+![TrackMate\_Celegans\_lineage\_detail.png](TrackMate_Celegans_lineage_detail.png "TrackMate_Celegans_lineage_detail.png")
 
-A detail of the corresponding unannotated lineage visualized in TrackScheme. The full lineage of this one hour of imaging is [there](:Image:TrackMate_Celegans_lineage.pdf "wikilink").
+A detail of the corresponding unannotated lineage visualized in TrackScheme. The full lineage of this one hour of imaging is [there](_Image_TrackMate_Celegans_lineage.pdf "wikilink").
 
-![TrackMate\_Split\_Merge\_Gapclosing.gif](/images/pages/TrackMate Split Merge Gapclosing.gif "TrackMate Split Merge Gapclosing.gif")
+![TrackMate\_Split\_Merge\_Gapclosing.gif](TrackMate_Split_Merge_Gapclosing.gif "TrackMate_Split_Merge_Gapclosing.gif")
 
 TrackMate can be set to detect and deal with gap-closing events, splitting events and merging events.
 
-![TrackMate Celegans CellDiameter.png](/images/pages/TrackMate Celegans CellDiameter.png "TrackMate Celegans CellDiameter.png")
+![TrackMate Celegans CellDiameter.png](TrackMate_Celegans_CellDiameter.png "TrackMate Celegans CellDiameter.png")
 
 TrackMate can also be used for basic track analysis. Here is plotted the estimated diameter of a *C.elegans* cell as it divides over time.
 
-![TrackMate\_CelegansCellFollowed.gif](/images/pages/TrackMate CelegansCellFollowed.gif "TrackMate CelegansCellFollowed.gif")
+![TrackMate\_CelegansCellFollowed.gif](TrackMate_CelegansCellFollowed.gif "TrackMate_CelegansCellFollowed.gif")
 
 A movie following one cell of a *C.elegans* embryo tracked over 3 hours, as it divides. The track follows the lineage from cell AB to ABaraapap.
 
@@ -97,7 +97,7 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 
 The [TrackMate paper](http://www.sciencedirect.com/science/article/pii/S1046202316303346) contains a polished, pdf version of the documentation below. But we host it here:
 
-![TrackMate-manual.pdf](/images/pages/TrackMate-manual.pdf "TrackMate-manual.pdf") 14 MB
+![TrackMate-manual.pdf](TrackMate-manual.pdf "TrackMate-manual.pdf") 14 MB
 
   - TrackMate version history: Please look at the gihub page for TrackMate releases:
 
@@ -254,7 +254,7 @@ TrackMate actually depends on many other Fiji plugins or libraries. The [Fiji Bu
   - [ImgLib2](ImgLib2 "wikilink") is used everywhere we need dealing with pixels. Relying on imglib made it trivial to have a plugin that deals indifferently with 2D or 3D images. In particular, we use code from Stephan Preibisch, {% include person content='Saalfeld' %}, Larry Lindsey and Lee Kamentsky.
   - [ImageJA](ImageJA "wikilink") is of course the entry point for the plugin. We use it display the images as 2D slices and in the HyperStack displayer.
   - The [3D Viewer](3D_Viewer "wikilink") is used for 3D display.
-  - Internally, the tracks are represented by a mathematical [graph](wikipedia:Graph_%28mathematics%29 "wikilink"). To manipulate it, we take advantage of the excellent [JGraphT](http://www.jgrapht.org/) library.
+  - Internally, the tracks are represented by a mathematical [graph](wikipedia_Graph_%28mathematics%29 "wikilink"). To manipulate it, we take advantage of the excellent [JGraphT](http://www.jgrapht.org/) library.
   - TrackScheme, the TrackMate component that is used to visualize and edit tracks uses [JGraphX](http://www.jgraph.com/jgraph.html) for its UI.
   - To display plots and histograms we use [JFreeChart](http://www.jfree.org/jfreechart/).
   - Some algorithm in TrackMate rely on the [JAMA](http://math.nist.gov/javanumerics/jama/) matrix package.
@@ -270,6 +270,6 @@ JYT acknowledges funding from the European commission FP7 ICT ([project â€œMEMIâ
 
 <references/>
 
-[Category:Segmentation](Category:Segmentation "wikilink") [Category:Tracking](Category:Tracking "wikilink") [Category:Tutorials](Category:Tutorials "wikilink") [Category:Plugins](Category:Plugins "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Segmentation](Category_Segmentation "wikilink") [Category:Tracking](Category_Tracking "wikilink") [Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Citable](Category_Citable "wikilink")
 
 1.  Jaqaman et al. *Robust single-particle tracking in live-cell time-lapse sequences*. **Nat Methods** (2008) vol. 5 (8) pp. 695-702

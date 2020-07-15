@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [User:White](User:White "wikilink")
+1.  REDIRECT [User:White](User_White "wikilink")

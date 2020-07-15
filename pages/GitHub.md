@@ -73,4 +73,4 @@ Please note that
   - after testing, you should switch back to, say, *master* using `git checkout master`
   - once the Pull Request is merged, the pseudo-branch will reflect the final merge result, not a tentative one.
 
-[Category:Development](Category:Development "wikilink") [Category:Git](Category:Git "wikilink")
+[Category:Development](Category_Development "wikilink") [Category:Git](Category_Git "wikilink")

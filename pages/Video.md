@@ -19,7 +19,7 @@ There are several ways to enable support for more video formats:
 
 <!-- end list -->
 
-  - Enable the *beta-quality* FFMPEG [update site](update_site "wikilink"), which uses native bindings to the [FFmpeg](wikipedia:FFmpeg "wikilink") library to read many video formats. The source code for this update site is [embedded in the scifio-javacv history](https://github.com/scifio/scifio-javacv/tree/ffmpeg).
+  - Enable the *beta-quality* FFMPEG [update site](update_site "wikilink"), which uses native bindings to the [FFmpeg](wikipedia_FFmpeg "wikilink") library to read many video formats. The source code for this update site is [embedded in the scifio-javacv history](https://github.com/scifio/scifio-javacv/tree/ffmpeg).
 
 <!-- end list -->
 
@@ -35,4 +35,4 @@ For files larger than 4GB, you may run into trouble with otherwise excellent tra
 
 The {% include github org='scifio ' repo='scifio-javacv ' label='SCIFIO-JavaCV ' %} project will offer out-of-the-box support for video formats supported by [OpenCV](OpenCV "wikilink") including those supported by FFmpeg. At the moment, the SCIFIO-JavaCV project is inactive due to lack of development resources.
 
-[Category:Import-Export](Category:Import-Export "wikilink")
+[Category:Import-Export](Category_Import-Export "wikilink")

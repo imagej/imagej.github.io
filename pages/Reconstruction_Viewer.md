@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SNT: Reconstruction Viewer](SNT:_Reconstruction_Viewer "wikilink")
+1.  REDIRECT [SNT: Reconstruction Viewer](SNT__Reconstruction_Viewer "wikilink")

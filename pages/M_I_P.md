@@ -11,4 +11,4 @@ description: test description
 {% include component-stats content=':sc.fiji:M\_I\_P' %}{% include stub%}
 
 
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Plugins](Category_Plugins "wikilink")

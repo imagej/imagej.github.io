@@ -8,15 +8,15 @@ categories: Tutorials,Segmentation
 description: test description
 ---
 
-{% include biginfo-box content='See [:Category:Segmentation](:Category:Segmentation "wikilink") for pages about image segmentation.' %} {% include learn content='techniques' %}
+{% include biginfo-box content='See [:Category:Segmentation](_Category_Segmentation "wikilink") for pages about image segmentation.' %} {% include learn content='techniques' %}
 
 {% include tip tip='See [this helpful workshop on Image Segmentation](https://imagej.net/_images/8/87/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf) for another great overview of Segmentation\! ' %}
 
 # Introduction
 
-Image segmentation is "the process of partitioning a digital image into multiple segments." ([Wikipedia](wikipedia:Image_segmentation "wikilink"))
+Image segmentation is "the process of partitioning a digital image into multiple segments." ([Wikipedia](wikipedia_Image_segmentation "wikilink"))
 
-![Segmentation-overlay.jpg](/images/pages/Segmentation-overlay.jpg "Segmentation-overlay.jpg") ![Segmentation-boundaries.jpg](/images/pages/Segmentation-boundaries.jpg "Segmentation-boundaries.jpg")
+![Segmentation-overlay.jpg](Segmentation-overlay.jpg "Segmentation-overlay.jpg") ![Segmentation-boundaries.jpg](Segmentation-boundaries.jpg "Segmentation-boundaries.jpg")
 
 It is typically used to locate *objects* and *boundaries*.
 
@@ -70,14 +70,14 @@ One good workflow for segmentation in ImageJ is as follows:
 
 Preprocess the image using filters, to make later thresholding more effective. Which filter(s) to use is highly dependent on your data, but some commonly useful filters include:
 
-  - [Deconvolution](:Category:Deconvolution "wikilink")
+  - [Deconvolution](_Category_Deconvolution "wikilink")
   - \[https://imagej.net/docs/guide/146-29.html#sub:Subtract-Background... Subtract Background\]
   - \[https://imagej.net/docs/guide/146-29.html#sub:Gaussian-Blur... Gaussian Blur\]
   - [Find Edges](https://imagej.net/docs/guide/146-29.html#sub:Find-Edges)
 
 ## Adjusting Threshold
 
-![Tree ring sample image with a threshold applied for a B\&W image](/images/pages/Threshold tree.png "Tree ring sample image with a threshold applied for a B&W image")
+![Tree ring sample image with a threshold applied for a B\&W image](Threshold_tree.png "Tree ring sample image with a threshold applied for a B&W image")
 
 Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
 
@@ -89,7 +89,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 
 ## Creating Masks
 
-![Over-saturated mask is eroded around the center tree ring](/images/pages/Eroded tree.png "Over-saturated mask is eroded around the center tree ring")
+![Over-saturated mask is eroded around the center tree ring](Eroded_tree.png "Over-saturated mask is eroded around the center tree ring")
 
   - Select {% include bc content='Edit | Selection | Create Mask'%}
   - Based on the image and set threshold, some portions of the image may be over/under saturated
@@ -100,7 +100,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 
 ## Selections
 
-![Selections on the mask](/images/pages/Selection tree.png "Selections on the mask")
+![Selections on the mask](Selection_tree.png "Selections on the mask")
 
 ### Creating Selections
 
@@ -108,7 +108,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
   - To deselect a portion of the image, select {% include key content='Shift' %}+{% include key content='click' %}
       - [More information](https://imagej.net/docs/guide/146-27.html#sub:Create-Selection)
 
-![Selections on the reverted image](/images/pages/Reverted tree.png "Selections on the reverted image")
+![Selections on the reverted image](Reverted_tree.png "Selections on the reverted image")
 
 ### Transferring Selections
 
@@ -130,6 +130,6 @@ Do some numerical analysis on the selected data:
 
   - The [Introduction to Image Segmentation using ImageJ/Fiji](https://imagej.net/_images/8/87/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf) workshop.
   - The [Segmentation with Fiji workshop slides](http://imagej.github.io/presentations/fiji-segmentation/).
-  - [:Category:Segmentation](:Category:Segmentation "wikilink"), a list of pages about image segmentation.
+  - [:Category:Segmentation](_Category_Segmentation "wikilink"), a list of pages about image segmentation.
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")

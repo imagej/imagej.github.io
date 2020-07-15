@@ -23,4 +23,4 @@ See [all news here.](http://t2.ini.uzh.ch/trakem2.html)
 
 Thanks to Javier Cabrera Chaves, Christian Niedworok and {% include person content='Saalfeld' %} for testing, bug reports, features and fixes.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

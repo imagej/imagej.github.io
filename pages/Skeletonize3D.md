@@ -24,7 +24,7 @@ description: test description
 
 ## General Description
 
-Skeletonize3D is a Fiji and ImageJ plugin that performs the [skeletonization](wikipedia:Topological_skeleton "wikilink") of 2D and 3D binary images (8-bit images). In Fiji, you can find it under {% include bc content='Plugins | Skeleton | Skeletonize (2D/3D)'%}. If you need to analyze a 2D/3D skeleton image, you may be interested on having a look at [AnalyzeSkeleton](AnalyzeSkeleton "wikilink").
+Skeletonize3D is a Fiji and ImageJ plugin that performs the [skeletonization](wikipedia_Topological_skeleton "wikilink") of 2D and 3D binary images (8-bit images). In Fiji, you can find it under {% include bc content='Plugins | Skeleton | Skeletonize (2D/3D)'%}. If you need to analyze a 2D/3D skeleton image, you may be interested on having a look at [AnalyzeSkeleton](AnalyzeSkeleton "wikilink").
 
 ## Video tutorial
 
@@ -66,4 +66,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 -----
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Skeleton](Category:Skeleton "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Skeleton](Category_Skeleton "wikilink")

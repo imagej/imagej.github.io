@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% include menu-formats%}
-[Digital Imaging and Communications in Medicine (DICOM)](wikipedia:DICOM "wikilink") is a standard for handling, storing, printing, and transmitting information in medical imaging.
+[Digital Imaging and Communications in Medicine (DICOM)](wikipedia_DICOM "wikilink") is a standard for handling, storing, printing, and transmitting information in medical imaging.
 
 ## How to read DICOM files into ImageJ?
 
@@ -66,4 +66,4 @@ See also these past threads from the ImageJ [mailing list](mailing_list "wikilin
   - 2012-04-19 - [Accessing a DICOM header](http://imagej.1557.x6.nabble.com/Accessing-a-DICOM-header-tt4898551.html)
   - 2012-04-13 - [Query Dicom Header](http://imagej.1557.x6.nabble.com/Query-Dicom-Header-tp4877985.html)
 
-[Category:Import-Export](Category:Import-Export "wikilink")
+[Category:Import-Export](Category_Import-Export "wikilink")

@@ -20,7 +20,7 @@ The test image we will use for this tutorial has now a link in Fiji. You can fin
 
 ![](TrackMate_FakeTracks.png)
 
-This is 128x128 stack of 50 frames, uncalibrated. It is noisy, but is still a very easy use case: there is at most 4 spots per frame, they are well separated, they are about the same size and the background is uniform. It is such an ideal case that you would not need TrackMate to deal with it. But for this first tutorial, it will help us getting through TrackMate without being bothered by difficulties.
+This is 128x128 stack of 50 frames, uncalibrated. It is noisy, but is still a very easy use case_ there is at most 4 spots per frame, they are well separated, they are about the same size and the background is uniform. It is such an ideal case that you would not need TrackMate to deal with it. But for this first tutorial, it will help us getting through TrackMate without being bothered by difficulties.
 
 Also, if you look carefully, you will see that there are two splitting events - where a spot seems to divide in two spots in the next frame, one merging event - the opposite, and a gap closing event - where a spot disappear for one frame then reappear a bit further. TrackMate is made to handle these events, and we will see how.
 
@@ -56,7 +56,7 @@ What is critical is also to check the dimensionality of the image. In our case, 
 
 If the calibration or dimensionality of your data is not right, I recommend changing it in the image metadata itself, using {% include bc content='Image | Properties'%} ({% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='P' %}). The press the 'Refresh source' button on the TrackMate start panel to grab changes.
 
-You can also define a sub-region for processing: if you are only interested in finding spots in a defined region of the image, you can use any of the ROI tools of ImageJ to draw a closed area on the image. Once you are happy with it, press the **Refresh source** button on the panel to pass it to TrackMate. You should see that the **X** **Y** start and end values change to reflect the bounding box of the ROI you defined. The ROI needs not to be a square. It can be any closed shape.
+You can also define a sub-region for processing_ if you are only interested in finding spots in a defined region of the image, you can use any of the ROI tools of ImageJ to draw a closed area on the image. Once you are happy with it, press the **Refresh source** button on the panel to pass it to TrackMate. You should see that the **X** **Y** start and end values change to reflect the bounding box of the ROI you defined. The ROI needs not to be a square. It can be any closed shape.
 
 If you want to define the min and max **Z** and/ or **T**, you have to edit manually the fields on the panel.
 
@@ -71,10 +71,10 @@ Defining a smaller area to analyze can be very beneficial to test and inspect fo
 
 You are now offered to choose a detection algorithm ("detector") amongst the currently implemented ones.
 
-The choice is actually quite limited. Apart from the **Manual annotation**, you will find 3 detectors, but they are all based on [LoG (Laplacian of Gaussian) segmentation](wikipedia:Blob_detection#The_Laplacian_of_Gaussian "wikilink"). They are described in detail elsewhere, but here is what you need to know.
+The choice is actually quite limited. Apart from the **Manual annotation**, you will find 3 detectors, but they are all based on [LoG (Laplacian of Gaussian) segmentation](wikipedia_Blob_detection#The_Laplacian_of_Gaussian "wikilink"). They are described in detail elsewhere, but here is what you need to know.
 
   - The **LoG detector** applies a plain LoG segmentation on the image. All calculations are made in the Fourier space, which makes it optimal for intermediate spot sizes, between ≈5 and ≈20 pixels in diameter.
-  - The **DoG detector** uses the [difference of Gaussians](wikipedia:Blob_detection#The_difference_of_Gaussians_approach "wikilink") approach to approximate a LoG filter by the difference of 2 Gaussians. Calculations are made in the direct space, and it is optimal for small spot sizes, below ≈5 pixels.
+  - The **DoG detector** uses the [difference of Gaussians](wikipedia_Blob_detection#The_difference_of_Gaussians_approach "wikilink") approach to approximate a LoG filter by the difference of 2 Gaussians. Calculations are made in the direct space, and it is optimal for small spot sizes, below ≈5 pixels.
   - The **Downsample LoG detector** uses the LoG detector, but downsizes the image by an integer factor before filtering. This makes it optimal for large spot sizes, above ≈20 pixels in diameter, at the cost of localization precision.
 
 In our case, let us just use the **Dog detector**.
@@ -86,13 +86,13 @@ In our case, let us just use the **Dog detector**.
 
 ![](TrackMate_SegmenterConfig.png)
 
-The LoG-based detectors fortunately demand very few parameters to tune them. The only really important one is the *Estimated blob diameter*'. Just enter the approximate size of the spots you are looking to tracks. Careful: you are expected to enter it in <u>physical units</u>. In our dummy example, there is no calibration (`1 pixel = 1 pixel`), so it does not appear here.
+The LoG-based detectors fortunately demand very few parameters to tune them. The only really important one is the *Estimated blob diameter*'. Just enter the approximate size of the spots you are looking to tracks. Careful_ you are expected to enter it in <u>physical units</u>. In our dummy example, there is no calibration (`1 pixel = 1 pixel`), so it does not appear here.
 
 There are extra fields that you can configure also. The **Threshold** numerical value aims at helping dealing with situation where a gigantic number of spots can be found. Every spot with a quality value below this threshold value will not be retained, which can help saving memory. You set this field manually, and check how it fares with the **Preview button** button.
 
-You can check **Use median filter**: this will apply a 3x3 median filter prior to any processing. This can help dealing with images that have a marked salt & pepper noise which generates spurious spots.
+You can check **Use median filter**_ this will apply a 3x3 median filter prior to any processing. This can help dealing with images that have a marked salt & pepper noise which generates spurious spots.
 
-We hope that TrackMate will be used in experiments requiring **Sub-pixel localization**, such as following motor proteins in biophysical experiments, so we added schemes to achieve this. The one currently implemented uses a quadratic fitting scheme (made by Stephan Saalfeld and Stephan Preibisch) based on [David Lowe SIFT work](http://www.cs.ubc.ca/~lowe/keypoints/)\[1\]. It has the advantage of being very quick, compared to the segmentation time itself.
+We hope that TrackMate will be used in experiments requiring **Sub-pixel localization**, such as following motor proteins in biophysical experiments, so we added schemes to achieve this. The one currently implemented uses a quadratic fitting scheme (made by Stephan Saalfeld and Stephan Preibisch) based on [David Lowe SIFT work](http_//www.cs.ubc.ca/~lowe/keypoints/)\[1\]. It has the advantage of being very quick, compared to the segmentation time itself.
 
 Finally, there is a **Preview button** that allows to quickly check your parameters on the current data. After some computations, you can check the results overlaid on the image. Most likely, you will see plenty of spurious spots that you will be tempted to discard by adjusting the **Threshold** value. This is a very good approach for large problems. Here, we care little for that, just leave the threshold at 0.
 
@@ -107,11 +107,11 @@ In our case, the spots we want to track are about 5 pixels in diameter, so this 
 
 ![](TrackMate_Segmenting.png)
 
-Once you are happy with the segmentation parameters, press the **Next** button and the segmentation will start. The TrackMate GUI displays the **log panel**, that you will meet several times during the process. It is basically made of a text area that recapitulates your choices and send information on the current process, and of a progress bar on top. You can copy-paste the text if you want to keep track of the process somewhere. You can even add comments as text in it: it is editable, and everything you type there is saved in the XML file, and retrieved upon loading. You can access the log panel anytime, by clicking on the log button at the bottom of the TrackMate window.
+Once you are happy with the segmentation parameters, press the **Next** button and the segmentation will start. The TrackMate GUI displays the **log panel**, that you will meet several times during the process. It is basically made of a text area that recapitulates your choices and send information on the current process, and of a progress bar on top. You can copy-paste the text if you want to keep track of the process somewhere. You can even add comments as text in it_ it is editable, and everything you type there is saved in the XML file, and retrieved upon loading. You can access the log panel anytime, by clicking on the log button at the bottom of the TrackMate window.
 
 Should the process be long enough, you should be able to see that the **Next** button turned into a **Cancel** button. If you press it while the detection is running, TrackMate will finish the detection of the current frames, and stop. You could now go on with the spots it found, or go back and restart.
 
-TrackMate takes advantage of multi-core computers, which seems to be the standard nowadays. It will segment one time-frame per core available. On computers with many cores, the progress bar will seems to move in a bulky way: if you have 16 cores, 16 time-points will be segmented at once, and it is likely that they will be finished approximately on the same time. So don't be worried if the progress bar does not move in the beginning for large images.
+TrackMate takes advantage of multi-core computers, which seems to be the standard nowadays. It will segment one time-frame per core available. On computers with many cores, the progress bar will seems to move in a bulky way_ if you have 16 cores, 16 time-points will be segmented at once, and it is likely that they will be finished approximately on the same time. So don't be worried if the progress bar does not move in the beginning for large images.
 
 On our dummy image, this is clearly something we need to worry about, and the segmentation should be over in a few seconds. Typically, this is the step that takes the longer. Once the segmentation is done, the **Next** button is re-enabled.
 
@@ -128,9 +128,9 @@ TrackMate uses generic segmentation algorithms for which there is only a little 
 
 This is why there is spot features and feature filters. In the next steps, each spot will have a series of numerical features calculated using its location, radius and the image it is found in, such as the mean pixel intensity. You will be able to define filters on these features, to retain only the ones that are relevant to your study.
 
-But for a very large number of spots - let's say: more than 1 million of them - performance issues can kick in. Those millions of spots will be stored in the model, and saved in the TrackMate file, in case you want to step back and change the filters, because for instance you realized you are not happy with the end results (you can do that). Some visualization tools - the 3D displayer for instance - will generate the renderings for those millions of spots at once and hide or show them depending on the filter values, because it is too expensive to recreate the renderings while tuning the filter values.
+But for a very large number of spots - let's say_ more than 1 million of them - performance issues can kick in. Those millions of spots will be stored in the model, and saved in the TrackMate file, in case you want to step back and change the filters, because for instance you realized you are not happy with the end results (you can do that). Some visualization tools - the 3D displayer for instance - will generate the renderings for those millions of spots at once and hide or show them depending on the filter values, because it is too expensive to recreate the renderings while tuning the filter values.
 
-To deal with that, we added a first filter prior to any other step, that uses the **Quality** value. The quality value is set by the segmenter, and is an arbitrary measure of the likelihood of each spot to be relevant. This panel collects all the quality values for all spots, and display their histogram (Y-scale is logarithmic). You can manually set a threshold on this histogram by clicking and dragging in its window. All spots with a quality value below this threshold will be **discarded**. That is: they will be deleted from the process, not saved in the file, they won't be displayed, nor their features will be calculated. Which is what we want when meeting a gigantic number of spurious spots. Note that this step is **irreversible**: if you step back to this panel, you will see the original histogram, but beware that the spots you have discarded cannot be recovered by changing the threshold. The only way is to step back further and restart the segmentation step.
+To deal with that, we added a first filter prior to any other step, that uses the **Quality** value. The quality value is set by the segmenter, and is an arbitrary measure of the likelihood of each spot to be relevant. This panel collects all the quality values for all spots, and display their histogram (Y-scale is logarithmic). You can manually set a threshold on this histogram by clicking and dragging in its window. All spots with a quality value below this threshold will be **discarded**. That is_ they will be deleted from the process, not saved in the file, they won't be displayed, nor their features will be calculated. Which is what we want when meeting a gigantic number of spurious spots. Note that this step is **irreversible**_ if you step back to this panel, you will see the original histogram, but beware that the spots you have discarded cannot be recovered by changing the threshold. The only way is to step back further and restart the segmentation step.
 
 In our case, we see from the histogram that we could make sense of this step. There is a big peak at low quality (around a value of 1.2) that contains the majority of spots and is most likely represent spurious spots. So we could put the threshold around let's say 5.5 and probably ending in having only relevant spots. But with less than 10 000 spots, we are very very far from 1 million so we need not to use this trick. Leave the threshold bar close to 0 and proceed to the next step.
 
@@ -145,7 +145,7 @@ Here, you can choose between the two visualization tools that will be used to di
 
 Honestly, choose the HyperStack displayer. Unless you have a very specific and complicated case that needs to inspect results in 3D immediately, you do not need the 3D viewer. The HyperStack displayer is simpler, lighter, allow to manually edit spots, and you will be able to launch a 3D viewer at the end of the process and still get the benefits.
 
-When you press the **Next** button, two processes start:
+When you press the **Next** button, two processes start_
 
   - the features of all spots (well, those you left after the initial filtering step) are calculated;
   - the displayer selected does everything it needs to prepare displaying them.
@@ -175,16 +175,16 @@ We will therefore add a filter based on this feature. Click the green **+** butt
 
 ![](TrackMate_FilterSpots_2.png)
 
-We note that the histogram has a very desirable shape: a massive peak at low intensity represent most of the spots. There are other smaller peaks at higher intensity, and fortunately, they are very well separated from the large peak.
+We note that the histogram has a very desirable shape_ a massive peak at low intensity represent most of the spots. There are other smaller peaks at higher intensity, and fortunately, they are very well separated from the large peak.
 
 To move the threshold, simply click and drag inside the histogram window. Notice how the overlay is updated to display only the remaining spots after filtering.
 
-<u>Interlude</u>: A word on the GUI: I put some effort into having a GUI that can be navigated almost solely with the keyboard. Any of the small filter panel can be controlled with the keyboard. For instance: give the histogram the focus by either pressing the Tab key or clicking into it.
+<u>Interlude</u>_ A word on the GUI_ I put some effort into having a GUI that can be navigated almost solely with the keyboard. Any of the small filter panel can be controlled with the keyboard. For instance_ give the histogram the focus by either pressing the Tab key or clicking into it.
 
   - The floating threshold value should turn from orange to dark red. You can now type a numerical value (including decimals using the dot '.' as separator); wait two seconds, and the threshold value will be updated to what you just typed.
-  - Ot use the arrow keys: the left and right arrow keys will change the threshold value by 10%, the up and down arrow will set it to the max and min value respectively.
+  - Ot use the arrow keys_ the left and right arrow keys will change the threshold value by 10%, the up and down arrow will set it to the max and min value respectively.
 
-A filter can be set to be above or below the given threshold. You change this behavior using the radio buttons below the histogram window. In our case, we want it to be above of course. The **Auto** button uses [Otsu's method](wikipedia:Otsu%27s_method "wikilink") to determine automatically a threshold. In our case, we will put it manually around 33.
+A filter can be set to be above or below the given threshold. You change this behavior using the radio buttons below the histogram window. In our case, we want it to be above of course. The **Auto** button uses [Otsu's method](wikipedia_Otsu%27s_method "wikilink") to determine automatically a threshold. In our case, we will put it manually around 33.
 
 You can inspect the data by scrolling on the hyperstack window and check that only mostly good spots are retained. This is an easy image. The spots you have filtered out are not discarded; they are simply not shown and they will not be taken into account when doing particle linking. In a later stage, you can step back to this step, and retrieve the filtered out spots by removing or changing the filters.
 
@@ -213,7 +213,7 @@ These LAP algorithm exists in TrackMate in two flavors: a simple one and a not s
 
   - The not simple one allows to detect any kind of event, so if you need to build tracks that are splitting or merging, you must go for this one. If you want to forbid the detection of gap-closing events, you want to use it as well. Also, you can alter the cost calculation to disfavor the linking of spots that have very different feature values.
 
-There is also a 3rd tracker, the [**Nearest neighbor search**](wikipedia:Nearest_neighbor_search "wikilink") tracker. This is the most simple tracker you can build, and it is mostly here for demonstration purposes. Each spot in one frame is linked to another one in the next frame, disregarding any other spot, thus achieving only a very local optimum. You can set a maximal linking distance to prevent the results to be totally pathological, but this is as far as it goes. It may be of use for very large and easy datasets: its memory consumption is very limited (at maximum only two frames need to be in memory) and is quick (the nearest neighbor search is performed using [Kd-trees](wikipedia:Kd_tree "wikilink")).
+There is also a 3rd tracker, the [**Nearest neighbor search**](wikipedia_Nearest_neighbor_search "wikilink") tracker. This is the most simple tracker you can build, and it is mostly here for demonstration purposes. Each spot in one frame is linked to another one in the next frame, disregarding any other spot, thus achieving only a very local optimum. You can set a maximal linking distance to prevent the results to be totally pathological, but this is as far as it goes. It may be of use for very large and easy datasets: its memory consumption is very limited (at maximum only two frames need to be in memory) and is quick (the nearest neighbor search is performed using [Kd-trees](wikipedia_Kd_tree "wikilink")).
 
 Then of course, there is the option to skip the automated tracking using **Manual tracking**.
 
@@ -221,7 +221,7 @@ Right now, in our first trial, let us pick the **Simple fast LAP tracker**.
 
 ## Configuring the simple LAP tracker
 
-![TrackMate TrackerConfiguration 1.png](/images/pages/TrackMate TrackerConfiguration 1.png "TrackMate TrackerConfiguration 1.png")
+![TrackMate TrackerConfiguration 1.png](TrackMate_TrackerConfiguration_1.png "TrackMate TrackerConfiguration 1.png")
 
 As promised, there is only three configuration fields.
 
@@ -241,7 +241,7 @@ Press **Next** to start the tracking computation.
 
 You are now shown the log panel, where the tracking process is logged. Since our dataset is very small, it should complete very quickly. Press **Next** again to see the results. They should look like this:
 
-![TrackMate TrackingResults 1.png](/images/pages/TrackMate TrackingResults 1.png "TrackMate TrackingResults 1.png")
+![TrackMate TrackingResults 1.png](TrackMate_TrackingResults_1.png "TrackMate TrackingResults 1.png")
 
 Basically, the tracker held its promises: there is 6 tracks (the two immobile spots at the bottom left part of the image contributed a track each). These tracks are not branching. The red track indeed contains a gap closing event, that did not generate a track break. That would have been different if we would have used the **Nearest neighbor search** tracker: as it cannot deal with gap-closing events, we would have 7 tracks.
 
@@ -251,7 +251,7 @@ Now, we would like the shape of these tracks to change. We see that the yellow t
 
 ## Configuring a not so simple tracker
 
-![TrackMate\_TrackerConfiguration\_2.png](/images/pages/TrackMate TrackerConfiguration 2.png "TrackMate TrackerConfiguration 2.png")
+![TrackMate\_TrackerConfiguration\_2.png](TrackMate_TrackerConfiguration_2.png "TrackMate_TrackerConfiguration_2.png")
 
 Look at the configuration panel. It is quite more complex than for the simple tracker, obviously, and it is the price for flexibility. Since it is quite long, the panel has to be scrolled to its bottom to venture on all fields.
 
@@ -279,19 +279,19 @@ For <u>track splitting</u>, the middle of a segment is offered to bridge to the 
 
 As an exercise, try to find the parameters the will fuse the central track segments in a single large track, with two splitting events and a merge event. You should obtain the track layout pictured below.
 
-![TrackMate\_TrackingResults\_2.png](/images/pages/TrackMate TrackingResults 2.png "TrackMate TrackingResults 2.png")
+![TrackMate\_TrackingResults\_2.png](TrackMate_TrackingResults_2.png "TrackMate_TrackingResults_2.png")
 
 ## Filtering tracks
 
 The next panel is just the equivalent of the spot filtering step we met before, but this time we use track features,. The filter principles are the same: you simply add filters, choosing a target feature, until you are happy with the remaining tracks. As for the spots, the tracks are not really deleted; they are just hidden and you can retrieve them by switching back to this panel and delete the filters.
 
-![TrackMate\_TrackingFiltering.png](/images/pages/TrackMate TrackingFiltering.png "TrackMate TrackingFiltering.png")
+![TrackMate\_TrackingFiltering.png](TrackMate_TrackingFiltering.png "TrackMate_TrackingFiltering.png")
 
 Here, we have a total of 4 tracks. The two immobile spots of the bottom left contribute one track each, that we can barely see because they do not move much. Let us say that we want to get rid of them. There are several ways to do that, but the simple is simply to add a filter on track displacement, as picture above.
 
 ## The end or so
 
-![TrackMate\_DisplayPanel.png](/images/pages/TrackMate DisplayPanel.png "TrackMate DisplayPanel.png")
+![TrackMate\_DisplayPanel.png](TrackMate_DisplayPanel.png "TrackMate_DisplayPanel.png")
 
 We are now close to the end of a typical workflow for a tracking problem. The panel you see now is the one that recapitulates display option. You can set spot color by feature, hide them, show their name, etc... Find out what they do, display options are pretty much self-explanatory.
 
@@ -314,13 +314,13 @@ That is the end of this introductory tutorial. As you can see, it is quite long.
 
 Now that you know how the plugin works, you should be able to reach the end result in less than 30 seconds...
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 04:18, 1 August 2013 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 04:18, 1 August 2013 (CDT)
 
 ## References
 
 <references/>
 
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink")
 
 1.  David G. Lowe, "Distinctive image features from scale-invariant keypoints", International Journal of Computer Vision, 60, 2 (2004), pp. 91-110.
 

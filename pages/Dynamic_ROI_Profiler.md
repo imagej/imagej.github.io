@@ -24,4 +24,4 @@ Dynamically updates a profile plot for an image with a line, freeline, polyline 
 {% endcapture %}
 {% include thumbnail src='/images/pages/Profiler-movie.gif' title=title %} |
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Scripting](Category:Scripting "wikilink") [Category:Unmaintained](Category:Unmaintained "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Scripting](Category_Scripting "wikilink") [Category:Unmaintained](Category_Unmaintained "wikilink")

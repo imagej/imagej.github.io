@@ -14,6 +14,6 @@ This plugin works on 8-bit and 16-bit grayscale images only.
 
 To start the plugin, go to {% include bc content='Analyze | Classification | IsoData Classifier'%}.
 
-![Configuration dialog of the IsoData Classifier plugin](/images/pages/IsoData Classifier.png "Configuration dialog of the IsoData Classifier plugin")
+![Configuration dialog of the IsoData Classifier plugin](IsoData_Classifier.png "Configuration dialog of the IsoData Classifier plugin")
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")

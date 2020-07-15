@@ -12,4 +12,4 @@ Thanks to {% include person content='Saalfeld' %}, TrakEM2 has been upgraded to 
 
 Additionaly, TrakEM2 0.9a brings enhancements in the rendering and export of images, reading and saving compressed XML files, and many others. See the TrakEM2 website for the [complete release notes](http://www.ini.uzh.ch/~acardona/trakem2.html).
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

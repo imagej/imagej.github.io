@@ -198,7 +198,7 @@ It was written to add track descriptor that would help characterize the track mo
 
 Please note that the feature values listed in this paragraph are only properly defined bor **linear tracks**, that is tracks with no fusion nor split events.
 
-![TrackMate\_track\_features.png](/images/pages/TrackMate track features.png "TrackMate track features.png")
+![TrackMate\_track\_features.png](TrackMate_track_features.png "TrackMate_track_features.png")
 
 #### Total distance traveled.
 
@@ -378,7 +378,7 @@ As before, we modified the way costs are calculated, and re-used the feature pen
 
 #### Main differences with the Jaqaman paper\[8\]
 
-The nominal implementation of the paper remains the one developed under [Matlab](:Category:Matlab "wikilink") by Khuloud Jaqaman <i>et al.</i> and published in Nature Methods. The software is called u-track and can be found on [Khuloud Jaqaman homepage](http://www.utsouthwestern.edu/labs/jaqaman/software/).
+The nominal implementation of the paper remains the one developed under [Matlab](_Category_Matlab "wikilink") by Khuloud Jaqaman <i>et al.</i> and published in Nature Methods. The software is called u-track and can be found on [Khuloud Jaqaman homepage](http://www.utsouthwestern.edu/labs/jaqaman/software/).
 
 TrackMate was initially developed to simplify <i>C.elegans</i> lineaging. It therefore just bundles a stripped down version of this framework.
 
@@ -405,7 +405,7 @@ Each track initiated from a pair of spots is used to create an instance of a Kal
 
 Then, all the predicted positions are linked against the actual spot positions in the frame, using again the Jaqaman LAP framework, with the square distance as costs. The user can set how far can be an actual position from a predicted position for linking with the <b>Search radius</b> setting.
 
-![TrackMate\_KalmanTrackerPrinciple.png](/images/pages/TrackMate KalmanTrackerPrinciple.png "TrackMate KalmanTrackerPrinciple.png")
+![TrackMate\_KalmanTrackerPrinciple.png](TrackMate_KalmanTrackerPrinciple.png "TrackMate_KalmanTrackerPrinciple.png")
 
 Now of course, after linking, some Kalman filters might not get linked to a found spot. This event is called an occlusion: the predicted position did not correspond to an actual measurement (spot). The good thing with Kalman filters is that they are fine with this, and are still able to make a prediction for the next frame even with a missing detection. If the number of successive occlusions is too large, the track is considered terminated. The user can set the maximal number of successive occlusions allowed before a track is terminated with the <b>Max frame gap</b> setting.
 

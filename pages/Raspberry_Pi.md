@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% include menu-platforms%}
-{% include minibox logo='Pi.svg ' blurb='Learn programming through fun, practical projects\! ' %}The [Raspberry Pi](wikipedia:Raspberry_Pi "wikilink") is an inexpensive single-board computer system which runs the [Raspbian](wikipedia:Raspbian "wikilink") operating system, a flavor of Debian [Linux](Linux "wikilink"). This page provides advice and guidance for running [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") on Raspberry Pi systems.
+{% include minibox logo='Pi.svg ' blurb='Learn programming through fun, practical projects\! ' %}The [Raspberry Pi](wikipedia_Raspberry_Pi "wikilink") is an inexpensive single-board computer system which runs the [Raspbian](wikipedia_Raspbian "wikilink") operating system, a flavor of Debian [Linux](Linux "wikilink"). This page provides advice and guidance for running [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") on Raspberry Pi systems.
 
 {% include toc%}
 
@@ -78,4 +78,4 @@ See the [Frequently Asked Questions](Frequently_Asked_Questions "wikilink") page
   - Topics tagged [raspberry-pi](https://forum.image.sc/tags/raspberry-pi) on the [Image.sc Forum](Image.sc_Forum "wikilink").
   - The [Linux](Linux "wikilink") page, for general information about ImageJ on Linux systems.
 
-[Category:Platforms](Category:Platforms "wikilink")
+[Category:Platforms](Category_Platforms "wikilink")

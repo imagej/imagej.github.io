@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SIOX: Simple Interactive Object Extraction](SIOX:_Simple_Interactive_Object_Extraction "wikilink")
+1.  REDIRECT [SIOX: Simple Interactive Object Extraction](SIOX__Simple_Interactive_Object_Extraction "wikilink")

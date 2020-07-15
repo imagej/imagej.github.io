@@ -14,4 +14,4 @@ It was great meeting with developers of related projects, including [OME](OME "w
 
 Download the talk in [PDF](http://bigwww.epfl.ch/eurobioimaging/presentation-rueden.pdf) or [ODP](http://conference.imagej.net/2012-ISBI/2012-04-30-imagej2-barcelona.odp) format.
 
-[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")

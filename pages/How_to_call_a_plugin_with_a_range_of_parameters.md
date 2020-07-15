@@ -34,4 +34,4 @@ The easiest way to adjust this macro to your needs is to use the Macro Recorder 
 
 Note: you might need to call **close();** twice if the plugin you are calling processes images not in place, but rather opens a new image.
 
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink")

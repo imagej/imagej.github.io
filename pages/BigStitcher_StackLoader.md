@@ -20,13 +20,13 @@ In the first dialog, you can specify which attributes (time points, channels, il
 
 When using the **Manual Loader (Bioformats)**, we also support one file to contain multiple instances (e.g. all channels in one file)
 
-![Step 1: Defining attributes of data in Manual loader.](/images/pages/BigStitcher Stack Import1.png "Step 1: Defining attributes of data in Manual loader.")
+![Step 1: Defining attributes of data in Manual loader.](BigStitcher_Stack_Import1.png "Step 1: Defining attributes of data in Manual loader.")
 
 ### Step 2: File pattern and additional options
 
 #### File pattern
 
-![Step 2: Defining file pattern and additional options.](/images/pages/BigStitcher Stack Import2.png "Step 2: Defining file pattern and additional options.")
+![Step 2: Defining file pattern and additional options.](BigStitcher_Stack_Import2.png "Step 2: Defining file pattern and additional options.")
 
 In the next dialog, you will be asked to specify the **Image File directory**, i.e. the directory that contain all the files to include in the dataset.
 
@@ -59,13 +59,13 @@ You can choose which **ImgLib2 data container** to use. This is explained in det
 
 Finally, you can choose to **Show list of filenames**. If you select this and press **OK**, we will list all the files you specified via the pattern in a new dialog (indicating whether they actually exist or not) and allow you to manually deselect some of them. Deselecting a file will mark the corresponding view in the dataset as **missing**. You can use this to ignore specific parts of the data, e.g. time points at which the sample moved, etc.
 
-![ Verification of files in dataset.](/images/pages/BigStitcher Stack Import3.png " Verification of files in dataset.")
+![ Verification of files in dataset.](BigStitcher_Stack_Import3.png " Verification of files in dataset.")
 
 ### Step 3: Verify calibration
 
 If you chose to manually specify the voxel sizes or load them from metadata and display for verification, you can modify them in the next dialog. If you opted to use a different voxel size for each view, you can set the pixel distances and units for each view in this dialog, otherwise, one calibration will be used for all.
 
-![Step 3: Verifying/modifying calibration.](/images/pages/BigStitcher Stack Import4.png "Step 3: Verifying/modifying calibration.")
+![Step 3: Verifying/modifying calibration.](BigStitcher_Stack_Import4.png "Step 3: Verifying/modifying calibration.")
 
 Once you click **OK**, your dataset should be displayed in the [BigStitcher main window](BigStitcher_Stitching_Mode "wikilink").
 

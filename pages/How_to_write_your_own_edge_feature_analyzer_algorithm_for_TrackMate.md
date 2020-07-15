@@ -354,7 +354,7 @@ Just the line `@Plugin( type = EdgeAnalyzer.class )` is enough. There are also m
 
 Right now, just compile your project, and drop the resulting jar in the Fiji plugins folder. Here is what you get:
 
-![TrackMate\_DevelopEdgeAnalyzer.png](/images/pages/TrackMate DevelopEdgeAnalyzer.png "TrackMate DevelopEdgeAnalyzer.png")
+![TrackMate\_DevelopEdgeAnalyzer.png](TrackMate_DevelopEdgeAnalyzer.png "TrackMate_DevelopEdgeAnalyzer.png")
 
 ## Wrapping up
 
@@ -362,6 +362,6 @@ Great, no?
 
 You can find the full source for this example {% include github org='fiji ' repo='TrackMate-examples ' source='plugin/trackmate/examples/edgeanalyzer/EdgeAngleAnalyzer.java ' label='here ' %}. It can also be used as a template for your analyzer.
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 10:25, 27 January 2014 (CST)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 10:25, 27 January 2014 (CST)
 
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink")

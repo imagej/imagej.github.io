@@ -8,7 +8,7 @@ categories: Tutorials
 description: test description
 ---
 
-<i>This tutorial is brought to you by Joao Firmino, Knust lab, MPI-CBG. It relates how to correct for the drift of your biological samples during long-term timelapse imaging for subsequent analysis using Fiji. Comments on the content of this tutorial are welcome in the [disscussion page](Talk:Correcting_drift_in_FRAP_experiments&action "wikilink"). </i>
+<i>This tutorial is brought to you by Joao Firmino, Knust lab, MPI-CBG. It relates how to correct for the drift of your biological samples during long-term timelapse imaging for subsequent analysis using Fiji. Comments on the content of this tutorial are welcome in the [disscussion page](Talk_Correcting_drift_in_FRAP_experiments&action "wikilink"). </i>
 
 ## Fluorescence Recovery After Photobleaching in Drosophila embryos
 
@@ -36,4 +36,4 @@ You can normalize your values by using the following equation:
 
 You will get values between 0 and 1 already normalized. All you have to do now is to plot your normalized values against time and you will get a rough curve of recovery. If you want to further analyse this you will have to fit this curve... For this, you can always talk to the Image Processing Facility in house, or if you already have a good knowledge of [MATLAB](MATLAB "wikilink") do it yourself...
 
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink")

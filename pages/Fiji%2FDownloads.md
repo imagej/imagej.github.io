@@ -40,7 +40,7 @@ We used to offer Debian packages of Fiji. Unfortunately, for a variety of reason
 
 If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us in [chat](chat "wikilink") or on the [forum](http://forum.imagej.net/c/development) .
 
-' %} Fiji is distributed as a [portable application](wikipedia:Portable_application "wikilink"). That means that you do not have to run an installer; just download, unpack and start it.
+' %} Fiji is distributed as a [portable application](wikipedia_Portable_application "wikilink"). That means that you do not have to run an installer; just download, unpack and start it.
 
 # Troubleshooting
 

@@ -10,13 +10,13 @@ description: test description
 
 ## Wish list for this plugin
 
-We are interested into knowing how we should extend this plugin so that it suits your need. Tell us here. [JeanYvesTinevez](User:JeanYvesTinevez "wikilink")
+We are interested into knowing how we should extend this plugin so that it suits your need. Tell us here. [JeanYvesTinevez](User_JeanYvesTinevez "wikilink")
 
 ## Additional scripts
 
 I would like additional scripting examples. In particular... I want to be able to call it from a ImageJ Macro.
 
-Here is an example I was able to create using javascript instead. [Jchanson](User:Jchanson "wikilink") ([talk](User_talk:Jchanson "wikilink")) 15:49, 5 November 2013 (CST)
+Here is an example I was able to create using javascript instead. [Jchanson](User_Jchanson "wikilink") ([talk](User_talk_Jchanson "wikilink")) 15:49, 5 November 2013 (CST)
 
 ``` javascript
 // This script was created as an javascript equivalent of the Python example here:

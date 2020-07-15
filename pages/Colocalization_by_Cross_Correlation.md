@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='andmccall ' repo='Colocalization\_by\_Cross\_Correlation ' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='Colocalization by Cross Correlation ' maintainer=' [Andrew McCall](https://imagej.net/User:Amccall) ' author=' [Andrew McCall](https://imagej.net/User:Amccall) ' source=source status='active ' released='2020 ' category='[:Category:Plugins](:Category:Plugins "wikilink"), [:Category:Colocalization](:Category:Colocalization "wikilink") ' %}
+{% include info-box software='Fiji ' name='Colocalization by Cross Correlation ' maintainer=' [Andrew McCall](https://imagej.net/User:Amccall) ' author=' [Andrew McCall](https://imagej.net/User:Amccall) ' source=source status='active ' released='2020 ' category='[:Category:Plugins](_Category_Plugins "wikilink"), [:Category:Colocalization](_Category_Colocalization "wikilink") ' %}
 
 This plugin attempts to determine the average distance between non-randomly spatially associated particles, the standard deviation of that distance (which should also reflect the width of the PSF in the image for diffraction limited images), and a statistical measure of confidence of the association. It currently works on 2D/3D single-channel images, and requires a mask of all possible localizations for the signal in one of the images.
 
@@ -30,7 +30,7 @@ Available on the list of [ImageJ updates sites](Update_Sites "wikilink"). Requir
 
 The plugin performs a cross-correlation in frequency space to create a correlation image. To remove non-specific correlations (from background, or high signal density), a correlation image generated from randomized images is then subtracted from the original correlation image. This occurs through cycles of:
 
-1\. Randomizing Image1 using the [Costes randomization method](Media:Costes_etalColoc.pdf "wikilink") and a mask of all theoretically possible localizations for the signal in Image1 (i.e. a mask of the cells, or the nuclei).
+1\. Randomizing Image1 using the [Costes randomization method](Media_Costes_etalColoc.pdf "wikilink") and a mask of all theoretically possible localizations for the signal in Image1 (i.e. a mask of the cells, or the nuclei).
 
 2\. Calculating the cross-correlation of the randomized image with Image2, then averaging this over successive cycles.
 
@@ -54,10 +54,10 @@ The plugin can be found in the plugins menu (near the bottom) and should be star
 
 After the plugin has finished, two new windows will be open:
 
-![ColocByCorrelate-GaussFit.jpg](/images/pages/ColocByCorrelate-GaussFit.jpg "ColocByCorrelate-GaussFit.jpg")
+![ColocByCorrelate-GaussFit.jpg](ColocByCorrelate-GaussFit.jpg "ColocByCorrelate-GaussFit.jpg")
 
 Correlation plot: A radial profile plot will be displayed, it contains the radial profile of the original correlation image (black line), the radial profile of the correlation after subtraction of random associations (red line), and a Gaussian curve fit to the subtracted profile (blue dots). The Y-axis is the result of the average correlation function at a given distance. While not arbitrary, it is most easily viewed as a measure of relative correlation. The range of the graph is set automatically to fit the Gaussian curve. If you wish to view all the data select More\>Set Range to Fit all…
 
 Gaussian fit analysis: This text window will contain (in scaled units), the mean distance for the discovered correlation, and the standard deviation of that correlation (sigma), as well as an estimation of confidence for this correlation (range 0-100). The confidence is determined by taking the area under the curve (AUC) of the subtracted correlation radial profile (in range of mean ± 3×sigma) divided by the AUC of the original correlation radial profile (in same range). Values closer to 100 indicate a strong likelihood of true correlation. Values near zero indicate low to no correlation between the two images. I currently estimate that values of \~20 or greater indicate some degree of correlation (within the range specified by the Gaussian curve), though this is with very limited data. Confidence values can be affected by many things, including image noise and background, an inappropriate randomization mask, and optical abberations. Performing a simple background subtraction can improve confidence scores signficantly.
 
-[Category:Colocalization](Category:Colocalization "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Colocalization](Category_Colocalization "wikilink") [Category:Plugins](Category_Plugins "wikilink")

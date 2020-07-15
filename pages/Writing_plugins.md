@@ -34,7 +34,7 @@ For the complete "developer experience", you can go through the [GitHub Bootcamp
 
 Conceptually, a **plugin** is a new piece of functionality added to ImageJ. Nearly all aspects of ImageJ are *pluggable*, meaning plugins can be provided *ad hoc* to perform specified functions. The ImageJ core needs only know what general operations are available; then when the program is running, the options for how to complete a requested operation will be determined by which plugins are available at that time.
 
-Technically, ImageJ is built on the [SciJava Common](SciJava_Common "wikilink") plugin framework. Within this framework, a plugin is a Java class [annotated](https://docs.oracle.com/javase/tutorial/java/annotations/index.html) with the {% include github org='scijava ' repo='scijava-common ' tag='scijava-common-2.47.0 ' source='org/scijava/plugin/Plugin.java ' label='@Plugin ' %} annotation. Classes annotated in this way are then automatically discovered and indexed at [*runtime*](wikipedia:Run_time_\(program_lifecycle_phase\) "wikilink"), when the application is launched by a user (as opposed to [*compile-time*](wikipedia:Compile_time "wikilink")).
+Technically, ImageJ is built on the [SciJava Common](SciJava_Common "wikilink") plugin framework. Within this framework, a plugin is a Java class [annotated](https://docs.oracle.com/javase/tutorial/java/annotations/index.html) with the {% include github org='scijava ' repo='scijava-common ' tag='scijava-common-2.47.0 ' source='org/scijava/plugin/Plugin.java ' label='@Plugin ' %} annotation. Classes annotated in this way are then automatically discovered and indexed at [*runtime*](wikipedia_Run_time_\(program_lifecycle_phase\) "wikilink"), when the application is launched by a user (as opposed to [*compile-time*](wikipedia_Compile_time "wikilink")).
 
 ### Plugin types
 
@@ -144,7 +144,7 @@ public class MyService {
 
 Services provide two important functions to the SciJava framework: utility methods and persistent state. If you want to add reusable Java methods that can be used throughout the SciJava framework, then you should create a `Service` to provide this functionality. If you need to track Context-wide variables or configuration, a `Service` should be used to encapsulate that state.
 
-Conceptually, a `Service` satisfies the role of [static utility classes](wikipedia:Utility_class "wikilink") on a per-Context basis. In this way, only one [instance](http://math.hws.edu/javanotes/c5/s1.html) of each `Service` class can be associated with a given `Context` instance; an association that occurs automatically during `Context` creation. Furthermore, when a `Context` is asked for an implementation of a given `Service`, only the highest priority instance will be returned.
+Conceptually, a `Service` satisfies the role of [static utility classes](wikipedia_Utility_class "wikilink") on a per-Context basis. In this way, only one [instance](http://math.hws.edu/javanotes/c5/s1.html) of each `Service` class can be associated with a given `Context` instance; an association that occurs automatically during `Context` creation. Furthermore, when a `Context` is asked for an implementation of a given `Service`, only the highest priority instance will be returned.
 
 Services often build on or reuse functionality defined in each other. For example, the {% include github org='scijava ' repo='scijava-common ' tag='scijava-common-2.47.0 ' source='org/scijava/plugin/PluginService.java ' label='PluginService ' %} sees ubiquitous use in retrieving and working with plugin instances. For such reuse, {% include github org='scijava ' repo='scijava-common ' tag='scijava-common-2.47.0 ' source='org/scijava/plugin/Parameter.java ' label='@Parameter annotation ' %} can be used to declare inter-service requirements. During `Context` startup, these relationships will be resolved automatically.
 
@@ -297,4 +297,4 @@ Once you have completed plugins and want to get them out to users, you can famil
 
 As always, if you ever need assistance, [just ask](Help "wikilink")\!
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:Development](Category:Development "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Development](Category_Development "wikilink")

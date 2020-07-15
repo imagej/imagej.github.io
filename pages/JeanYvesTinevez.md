@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [User:JeanYvesTinevez](User:JeanYvesTinevez "wikilink")
+1.  REDIRECT [User:JeanYvesTinevez](User_JeanYvesTinevez "wikilink")

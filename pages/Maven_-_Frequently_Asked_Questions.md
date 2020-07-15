@@ -134,4 +134,4 @@ mvn -Dtest='TestCircle#mytest' test
 
 See the [Maven](Maven "wikilink") page\!
 
-[Category:Development](Category:Development "wikilink") [Category:Maven](Category:Maven "wikilink")
+[Category:Development](Category_Development "wikilink") [Category:Maven](Category_Maven "wikilink")

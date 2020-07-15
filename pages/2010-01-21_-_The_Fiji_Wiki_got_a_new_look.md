@@ -8,10 +8,10 @@ categories: News
 description: test description
 ---
 
-Thanks to Alexander Wende and Tim Cross, the Fiji Wiki has a new look and feel (named ["Viti Levu"](wikipedia:Viti_Levu "wikilink")). {% include person content='Iarganda' %} also had a big hand in debugging and enhancing it.
+Thanks to Alexander Wende and Tim Cross, the Fiji Wiki has a new look and feel (named ["Viti Levu"](wikipedia_Viti_Levu "wikilink")). {% include person content='Iarganda' %} also had a big hand in debugging and enhancing it.
 
 In the same run, it must be mentioned that [Benjamin Schmid](http://www.neurofly.de/) put in a <u>lot</u> of work to make the nice new snapshots happen, by accomodating the new {% include github repo='fiji ' path='bin/prepare-wiki-screenshot.py ' label='generator script ' %} with the 3D viewer's API.
 
 Stephan Saalfeld made the menu work on the iPhone (click/tap on a menu button and the menu will stay open).
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

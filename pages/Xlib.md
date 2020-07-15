@@ -10,7 +10,7 @@ description: test description
 
 ## 'Xlib' plugins
 
-{% include info-box software='ImageJ / Fiji plugins ' name='Xlib ' maintainer='Beat Münch ' author='Beat Münch ' filename='install from ImageJ Updater (Help--\>Update--\>Manage update sites--\>Xlib). Takes repository from https://sites.imagej.net/Xlib ' released='01.06.2015 ' latest-version='09.05.2020 ' status='maintained actively as of May 2020 ' category='[Plugins](:Category:Plugins "wikilink") ' website='http://wiki.imagej.net/Xlib ' %}
+{% include info-box software='ImageJ / Fiji plugins ' name='Xlib ' maintainer='Beat Münch ' author='Beat Münch ' filename='install from ImageJ Updater (Help--\>Update--\>Manage update sites--\>Xlib). Takes repository from https://sites.imagej.net/Xlib ' released='01.06.2015 ' latest-version='09.05.2020 ' status='maintained actively as of May 2020 ' category='[Plugins](_Category_Plugins "wikilink") ' website='http://wiki.imagej.net/Xlib ' %}
 
 \_\_TOC\_\_
 
@@ -76,7 +76,7 @@ Plugins of this section offer importing, handling or analysis of special data fo
 
 This plugin provides an engine for finding the most probable chemical compositions of some given energy dispersive spectroscopy (EDS) data. From a set of proposed chemical formula, a ranking of the probability of matching with the candidate EDS data is calculated.
 
-A step by step tutorial for the clustering and phase identification of EDS maps is provided in the manual entitled ["Instructions for the Phase Clustering and Identification Using the Plugins for ImageJ"](Media:xClusteringPhaseIdentification.pdf "wikilink").
+A step by step tutorial for the clustering and phase identification of EDS maps is provided in the manual entitled ["Instructions for the Phase Clustering and Identification Using the Plugins for ImageJ"](Media_xClusteringPhaseIdentification.pdf "wikilink").
 
 The program can be used in combination with the ["Cluster Image"](#Cluster_Image "wikilink") plugin. Thereby for a resulting set of cluster centers, the program provides the most probable cluster membership.
 
@@ -180,7 +180,7 @@ Fuzzy c-means clustering \[Bezdek1984\] allows a data point to be assigned to mo
 
 Expectation-maximization (EM) clustering \[Dempster1977\] iteratively finds the maximum likelyhood estimation of a Gaussian distribution fit of the original N-dimensional distribution of pixel values. The EM iteration alternates between performing an expectation (E) step, which creates a function for the expectation of the log-likelihood evaluated using the current estimate for the parameters, and a maximization (M) step, which computes parameters maximizing the expected log-likelihood found on the E step.
 
-The plugin also allows clustering by using ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) (Environment for Developing KDD-Applications Supported by Index-Structures, developed by the ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) team http://elki.dbs.ifi.lmu.de/wiki/Team). ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) is an open source data mining software written in Java. In addition to multiple features, ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) offers various ways for clustering. A ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) wrapper for the clustering of images is included into the ["Image Clustering"](#Image_Clustering "wikilink") plugin. As soon as the respective elki.jar bundle is copied to the "plugins" directory of the current ImageJ version, image clustering with ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) is possible. The required specification parameters for the ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) clustering algorithm together with its parameters (details see ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) documentation) can be defined by the user.
+The plugin also allows clustering by using ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) (Environment for Developing KDD-Applications Supported by Index-Structures, developed by the ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) team http://elki.dbs.ifi.lmu.de/wiki/Team). ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) is an open source data mining software written in Java. In addition to multiple features, ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) offers various ways for clustering. A ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) wrapper for the clustering of images is included into the ["Image Clustering"](#Image_Clustering "wikilink") plugin. As soon as the respective elki.jar bundle is copied to the "plugins" directory of the current ImageJ version, image clustering with ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) is possible. The required specification parameters for the ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) clustering algorithm together with its parameters (details see ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) documentation) can be defined by the user.
 
 As an example, ESEM images of a natural cement analogue (Maqarin, Jordania) is provided in the figure to the upper right. A backscatter electron microscope (BSE) image (top left) and image maps acquired from energy-dispersive X-ray spectroscopy (EDX) at the same location forked into 14 different elements (see figure above) are used as the basis for clustering. Thus together with the BSE image, the clustering is achieved from a 15-dimensional vector space. In the figure below, some results from different clustering algorithms and parameter settings are displayed. The first row shows results from the k-means, the second one from the mean shift, and the third one from fuzzy c-means clustering. K-means clustering (1st row) requires the number of clusters as an input parameter. The results for 2 (left), 3, 5 and 16 (right) clusters are provided. Slightly different results provides mean shift clustering (2nd row) which requires the size of the seeking perimeter as input parameter. It is determined at 100 (left), 70, 60 and at 50 (right). Fuzzy c-means clustering (3rd row) requires the number of clusters and the fuzziness as input parameters. The results are displayed for 5 clusters at fuzziness 1.1 (left) and 4.0, for 16 clusters at fuzziness 2.0, as well as an image showing its fuzziness membership to the cluster with the highest respective ranking at each location (right).
 
@@ -274,7 +274,7 @@ The figure to the right shows a sample FIB-nt image from cement paste (left) wit
 
 Many image calculators allowing various arithmetic operations are already implemented in ImageJ, including the "Image Calculator", the "Calculator Plus" as well as the entire list of functions in "math", all of them under "Process". So why "yet another image calculator", you might ask. The reason is that our image calculator is easily able to perform the possible tasks of all of the above listed plugins and much more. The conceptual idea is to provide a list of all the images and image stacks that are currently opened in ImageJ and assign them to symbolic names (i0, i1, i2,...). In a text field, the user can then provide his own code he wants to be applied to the images.
 
-[right|440px|thumb|left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2](Image:xFig6_7_01.jpg "wikilink") For instance,
+[right|440px|thumb|left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2](Image_xFig6_7_01.jpg "wikilink") For instance,
 
 ``` java
  
@@ -287,7 +287,7 @@ will return an image providing the mean value of the images i0, i1 and i2 (see r
   
   
   
-[right|300px|thumb|left: image i0, right: mask where regions higher than 170 are colored in red](Image:xFig6_7_02.jpg "wikilink") The operation
+[right|300px|thumb|left: image i0, right: mask where regions higher than 170 are colored in red](Image_xFig6_7_02.jpg "wikilink") The operation
 
 ``` java
  
@@ -302,7 +302,7 @@ displays a mask where regions higher than 170 are red.
   
   
   
-[right|440px|thumb|left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2](Image:xFig6_7_03.jpg "wikilink") The operation
+[right|440px|thumb|left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2](Image_xFig6_7_03.jpg "wikilink") The operation
 
 ``` java
  
@@ -315,7 +315,7 @@ takes three binary images i0, i1, i2 and creates a colored mask out of it (see r
   
   
   
-[right|300px|thumb|left: image i0, right: power of two of image i0](Image:xFig6_7_04.jpg "wikilink") The operation
+[right|300px|thumb|left: image i0, right: power of two of image i0](Image_xFig6_7_04.jpg "wikilink") The operation
 
 ``` java
  
@@ -329,7 +329,7 @@ yields the power of two of the image i0.
   
   
   
-[right|300px|thumb|left: image i0, right: copy of the image i0 overlayed by a horizontal ramp](Image:xFig6_7_05.jpg "wikilink") Or the operation
+[right|300px|thumb|left: image i0, right: copy of the image i0 overlayed by a horizontal ramp](Image_xFig6_7_05.jpg "wikilink") Or the operation
 
 ``` java
  
@@ -344,7 +344,7 @@ will calculate a copy of the image i0 overlayed by a horizontal ramp.
   
   
   
-[right|300px|thumb|left: image i0, right: ramp with the same size as image i0](Image:xFig6_7_06.jpg "wikilink") And the code line
+[right|300px|thumb|left: image i0, right: ramp with the same size as image i0](Image_xFig6_7_06.jpg "wikilink") And the code line
 
 ``` java
  
@@ -357,7 +357,7 @@ In this case, instead of a simple command "x" (which would create no image), a c
   
   
   
-[right|350px|thumb|left: image i0 defining image size, right: halo centered at (100, 200)](Image:xFig6_7_07.jpg "wikilink") The code
+[right|350px|thumb|left: image i0 defining image size, right: halo centered at (100, 200)](Image_xFig6_7_07.jpg "wikilink") The code
 
 ``` java
  
@@ -371,7 +371,7 @@ calculates an image of the same size as image i0, but containing only a halo cen
   
   
   
-[right|300px|thumb|left: image i0, right: binary thresholding of i0 by value 128](Image:xFig6_7_08.jpg "wikilink") The line
+[right|300px|thumb|left: image i0, right: binary thresholding of i0 by value 128](Image_xFig6_7_08.jpg "wikilink") The line
 
 ``` java
  
@@ -386,7 +386,7 @@ creates a binary image mask by thresholding the image i0 with the value 128.
   
   
   
-[right|300px|thumb|left: image i0, right: circular mask around (100, 200)](Image:xFig6_7_09.jpg "wikilink") The command
+[right|300px|thumb|left: image i0, right: circular mask around (100, 200)](Image_xFig6_7_09.jpg "wikilink") The command
 
 ``` java
  
@@ -400,7 +400,7 @@ creates an image of the same size as i0 containing a circular mask around point 
   
   
   
-[right|320px|thumb|left: image i3, right: content of image i3 inside of a circle only](Image:xFig6_7_10.jpg "wikilink")
+[right|320px|thumb|left: image i3, right: content of image i3 inside of a circle only](Image_xFig6_7_10.jpg "wikilink")
 
 The code
 
@@ -416,7 +416,7 @@ takes the content of the image inside of a circle only and removes the regions o
   
   
   
-[right|360px|thumb|left: image i0, center: image i1, right: exclusive OR of images i0 and i1](Image:xFig6_7_11.jpg "wikilink")
+[right|360px|thumb|left: image i0, center: image i1, right: exclusive OR of images i0 and i1](Image_xFig6_7_11.jpg "wikilink")
 
 Finally,
 
@@ -437,7 +437,7 @@ for (int ii = 0; ii < out.length; ii++)
 return new Object[] { m0, out };
 ```
 
-performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" above. [right|350px|thumb|left: image i0, right: message box with number of pixel values \>= 10](Image:xFig6_7_13.jpg "wikilink") The code fragment
+performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" above. [right|350px|thumb|left: image i0, right: message box with number of pixel values \>= 10](Image_xFig6_7_13.jpg "wikilink") The code fragment
 
 ``` java
  
@@ -450,7 +450,7 @@ IJ.showMessage(" ", "Number of pixels: " + anz);
 return new Object[] { mm, null };
 ```
 
-[right|500px|thumb|left: image i3, center: image i5, right: image i5 embedded at the center area of image i3](Image:xFig6_7_14.jpg "wikilink") Counts all pixels (or voxels) in the image (or volume) with a value larger or equal 10.  
+[right|500px|thumb|left: image i3, center: image i5, right: image i5 embedded at the center area of image i3](Image_xFig6_7_14.jpg "wikilink") Counts all pixels (or voxels) in the image (or volume) with a value larger or equal 10.  
   
   
   
@@ -472,7 +472,7 @@ return new Object[] { m3, out };
 
 takes the smaller image i5 and adds it to the center of the larger image i3.  
   
-[right|500px|thumb|left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1](Image:xFig6_7_15.jpg "wikilink") The code fragment
+[right|500px|thumb|left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1](Image_xFig6_7_15.jpg "wikilink") The code fragment
 
 ``` java
  
@@ -490,7 +490,7 @@ return null;
 
 just calculates the overall mean value of image i0 within the ROI defined by i1 and displays it in a check box.
 
-![xFig6\_7\_16.jpg](/images/pages/XFig6 7 16.jpg "xFig6 7 16.jpg")  
+![xFig6\_7\_16.jpg](xFig6_7_16.jpg "xFig6_7_16.jpg")  
   
 Moreover, it is even possible to create your own images without any input image:
 
@@ -506,7 +506,7 @@ return new Object[] { new int[] { mx, my }, out };
 
 creates an image containing a ramp (see image to the right), or
 
-![xFig6\_7\_17.jpg](/images/pages/XFig6 7 17.jpg "xFig6 7 17.jpg")
+![xFig6\_7\_17.jpg](xFig6_7_17.jpg "xFig6_7_17.jpg")
 
 ``` java
  
@@ -522,7 +522,7 @@ for (int jj = 0; jj < my; jj++)
 return new Object[] { new int[] { mx, my }, out };
 ```
 
-![xFig6\_7\_18.jpg](/images/pages/XFig6 7 18.jpg "xFig6 7 18.jpg") creates an image containing a circle mask in the center (see image to the right). For more information about the syntax, please consult the help function of the plugin itself.
+![xFig6\_7\_18.jpg](xFig6_7_18.jpg "xFig6_7_18.jpg") creates an image containing a circle mask in the center (see image to the right). For more information about the syntax, please consult the help function of the plugin itself.
 
 As a final example, we show that it is also possible to create even more 'cute' images with that tool:
 
@@ -560,7 +560,7 @@ Particle analysis requires labeling of the previously determined particle mask w
 
 |                                                                                                                 |
 | --------------------------------------------------------------------------------------------------------------- |
-| ![Particle image (left) and its labeling (right)](/images/pages/XFig6 8.jpg "Particle image (left) and its labeling (right)") |
+| ![Particle image (left) and its labeling (right)](xFig6_8.jpg "Particle image (left) and its labeling (right)") |
 
 An example of labeling is given in the center and right images in the ["Disconnect Particles"](#Disconnect_Particles "wikilink") section, where the center image shows the particle mask before the disconnection procedure and before labeling. The disconnection procedure separates the single particles. After this step, the object mask is still binary and labeling is applied to colorize the particles in order to be able to distinguish them by their object values.
 
@@ -570,7 +570,7 @@ This plugin supports conventional as well as geometric 2D and 3D median filterin
 
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Color image containing multiple phases (top left) and different types of median filtering: conventional band-wise (top right), multidimensional geometrical (bottom left), and multidimensional geometrical by choosing the closest available vectors.](/images/pages/XFig6 09 1 PhasesMedianFiltering.png "Color image containing multiple phases (top left) and different types of median filtering: conventional band-wise (top right), multidimensional geometrical (bottom left), and multidimensional geometrical by choosing the closest available vectors.") |
+| ![Color image containing multiple phases (top left) and different types of median filtering: conventional band-wise (top right), multidimensional geometrical (bottom left), and multidimensional geometrical by choosing the closest available vectors.](xFig6_09_1_PhasesMedianFiltering.png "Color image containing multiple phases (top left) and different types of median filtering: conventional band-wise (top right), multidimensional geometrical (bottom left), and multidimensional geometrical by choosing the closest available vectors.") |
 
 The example color image (top right) shows multiple noisy phases. Conventional median filtering on each of the R,G,B bands separately yields the top right image. As can be perceived due to the RGB bands, new colors appear that are not present on the original image. Multidimensional geometrical filtering (in the RGB case, 3-dimensional) by using the Weiszfeld algorithm yields the bottom left image. When additionally confining to already existing color vectors only, the bottom right image results.
 
@@ -909,6 +909,6 @@ As an example, a triangulated view of the segmented 3D volume is presented in th
 
   - {% include citation last='Artzy ' first='E ' last2='Frieder ' first2='G ' last3='Herman ' first3='G T ' title='The Theory, Design, Implementation and Evaluation of a Three-Dimensional Surface Detection Algorithm ' journal='Computer Graphics and Image Processing ' volume='15 ' pages='1-24 ' year='1981 ' %}
 
-\--[Beat](User:Beat "wikilink") ([talk](User_talk:Beat "wikilink")) 06:26, 1 June 2015 (CDT)
+\--[Beat](User_Beat "wikilink") ([talk](User_talk_Beat "wikilink")) 06:26, 1 June 2015 (CDT)
 
-[Category:Analysis](Category:Analysis "wikilink") [Category:Data](Category:Data "wikilink") [Category:Filtering](Category:Filtering "wikilink") [Category:Fundamental](Category:Fundamental "wikilink") [Category:Matlab](Category:Matlab "wikilink") [Category:Particle analysis](Category:Particle_analysis "wikilink") [Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Skeleton](Category:Skeleton "wikilink")
+[Category:Analysis](Category_Analysis "wikilink") [Category:Data](Category_Data "wikilink") [Category:Filtering](Category_Filtering "wikilink") [Category:Fundamental](Category_Fundamental "wikilink") [Category:Matlab](Category_Matlab "wikilink") [Category:Particle analysis](Category_Particle_analysis "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Skeleton](Category_Skeleton "wikilink")

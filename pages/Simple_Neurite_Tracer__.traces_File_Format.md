@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SNT: .traces File Format](SNT:_.traces_File_Format "wikilink")
+1.  REDIRECT [SNT: .traces File Format](SNT__.traces_File_Format "wikilink")

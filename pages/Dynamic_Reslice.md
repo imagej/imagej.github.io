@@ -98,7 +98,7 @@ IJ.showStatus('Done')
 
 ## Example
 
-![DynamicresliceROI.gif](/images/pages/DynamicresliceROI.gif "DynamicresliceROI.gif") ![Dynamicreslice.gif](/images/pages/Dynamicreslice.gif "Dynamicreslice.gif")
+![DynamicresliceROI.gif](DynamicresliceROI.gif "DynamicresliceROI.gif") ![Dynamicreslice.gif](Dynamicreslice.gif "Dynamicreslice.gif")
 
 ## Version history
 
@@ -117,4 +117,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Plugins](Category_Plugins "wikilink")

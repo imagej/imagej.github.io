@@ -10,7 +10,7 @@ description: test description
 
 ## Plugins of library [Xlib](http://wiki.imagej.net/Xlib)
 
-{% include info-box software='ImageJ / Fiji ' name='Xlib ' maintainer='Beat Münch ' author='Beat Münch ' filename='[xlib\_.jar](#https://sites.imagej.net/Xlib/plugins/xlib_.jar-20191001174205 "wikilink") ' released='01.06.2015 ' latest-version='01.12.2019 ' status='maintained actively as of December 2019 ' category='[Plugins](:Category:Plugins "wikilink") ' website='http://wiki.imagej.net/Xlib ' %} This plugin contains various powerful utilities for basic image analysis, filtering, segmentation, pore and particle size analysis, reconstruction, 2D / 3D editing and viewing. All plugins run on images or image stacks. Almost all plugins are capable to run either in two or in three dimensions (i.e. 2D images or 3D image volumes provided by image stacks). Full documentation can be found [here](http://wiki.imagej.net/Xlib).
+{% include info-box software='ImageJ / Fiji ' name='Xlib ' maintainer='Beat Münch ' author='Beat Münch ' filename='[xlib\_.jar](#https_//sites.imagej.net/Xlib/plugins/xlib_.jar-20191001174205 "wikilink") ' released='01.06.2015 ' latest-version='01.12.2019 ' status='maintained actively as of December 2019 ' category='[Plugins](_Category_Plugins "wikilink") ' website='http://wiki.imagej.net/Xlib ' %} This plugin contains various powerful utilities for basic image analysis, filtering, segmentation, pore and particle size analysis, reconstruction, 2D / 3D editing and viewing. All plugins run on images or image stacks. Almost all plugins are capable to run either in two or in three dimensions (i.e. 2D images or 3D image volumes provided by image stacks). Full documentation can be found [here](http://wiki.imagej.net/Xlib).
 
 The plugins includes:
 
@@ -57,4 +57,4 @@ The plugins includes:
 
 -----
 
-\--[Xlib](User:Xlib "wikilink") ([talk](User_talk:Xlib "wikilink")) 06:26, 1 June 2015 (CDT)
+\--[Xlib](User_Xlib "wikilink") ([talk](User_talk_Xlib "wikilink")) 06:26, 1 June 2015 (CDT)

@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='ijpb ' repo='ijpb-plugins ' %}
 {% endcapture %}
-{% include info-box name='Marker-controlled Watershed ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink") ' %}{| |style="vertical-align:top" |
+{% include info-box name='Marker-controlled Watershed ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Segmentation](_Category_Segmentation "wikilink"), [Mathematical morphology](_Category_Mathematical_morphology "wikilink") ' %}{| |style="vertical-align:top" |
 {% capture title%}
  Marker-controlled flooding on the gradient image of the blobs sample. 
 {% endcapture %}
@@ -97,4 +97,4 @@ This program is **free software**; you can redistribute it and/or modify it unde
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Mathematical\_morphology](Category:Mathematical_morphology "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Mathematical\_morphology](Category_Mathematical_morphology "wikilink")

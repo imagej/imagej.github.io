@@ -117,12 +117,6 @@ def process_file(str_content):
     # perform regex replacements
     content_tmp = str_content
 
-    # remove unused sidebox details
-    # content_tmp = re.sub(r'title[ \n]=[ \n]', '', content_tmp)
-    # content_tmp = re.sub(r'\|[ \n]width = (.*)\n', '', content_tmp)
-    # content_tmp = re.sub(r'\|[ \n]float = (.*)\n', '', content_tmp)
-    # content_tmp = re.sub(r'\|[ \n]text =', '', content_tmp)
-
     # fix youtube template
     content_tmp = re.sub(r'\{\{[\\]?\#widget\:YouTube\|id\=([^ \|]*)[^\}]*\}\}',
                          youtube_match, content_tmp)
@@ -474,8 +468,9 @@ def convert(path_in, path_out, layout, title):
         # do replacements in md format
         content_tmp = reveal_includes(content_tmp)
         content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
+        content_tmp = re.sub(r'(\[[^\]]*\]\()((?!http)[^\"]*)(\"[^\"]*\"\))', fix_link_match, content_tmp)
         content_tmp = re.sub(r'<img src=\"(?!http)(?!/images/pages/)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
-        content_tmp = re.sub(r'(\!\[[^\]]*\]\()((?!/images/pages/)[^\"\)]*)([ \n]\"[^\"]*\"[ ]*\))', fix_md_image, content_tmp)
+        content_tmp = re.sub(r'(\!\[[^\]]*\]\()((?!/images/pages/)[^\"\)]*)([ \n]\"[^\"]*\)[ ]*\))', fix_md_image, content_tmp)
 
         # pattern = re.compile(include_regex)
         # for match in re.findall(pattern, content_tmp):
@@ -497,8 +492,12 @@ def convert(path_in, path_out, layout, title):
     return None
 
 
+def fix_link_match(match):
+    return match.group(1) + match.group(2).replace(":", "_") + match.group(3)
+
+
 def fix_md_image(match):
-    return match.group(1) + "/images/pages/" + fix_image_name(match.group(2) + match.group(3))
+    return match.group(1) + "/images/pages/" + fix_image_name(match.group(2)) + match.group(3)
 
 
 def run_pandoc(path_in, path_out):

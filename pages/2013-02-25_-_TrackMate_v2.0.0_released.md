@@ -26,17 +26,17 @@ Most changes in this version are for developers and are not displayed in the tex
   - TrackMate now computes edge features (on top of spot and track features). These features enable the immediate measure of velocity, displacement, etc...
   - Tracks can be colored in the Hyperstack displayer, in the 3D viewer and in TrackScheme using indifferently track or edge features.
 
-![caption](/images/pages/TrackMate EdgeColoring.png "caption")
+![caption](TrackMate_EdgeColoring.png "caption")
 
   - All spot, edge and track features are computed automatically and kept in sync even versus manual modifications.
   - All spot, edge and track features are saved in the XML file.
   - All spot, edge and track features can be exported as ImageJ results tables. Then they can be exported to text files, readable by let's say Excel. (Please note that the authors of the plugin do not deem Excel as a proper solution for scientific analysis and recommend more professional solutions.)
 
-![TrackMate\_AnalysisButton.png](/images/pages/TrackMate AnalysisButton.png "TrackMate AnalysisButton.png")
+![TrackMate\_AnalysisButton.png](TrackMate_AnalysisButton.png "TrackMate_AnalysisButton.png")
 
   - All spot, edge and track features can be plotted as specialized graphs, thanks to a dedicated GUI panel.
 
-![caption](/images/pages/TrackMate GrapherPanel.png "caption")
+![caption](TrackMate_GrapherPanel.png "caption")
 
   - Tracks can be named in TrackScheme. These names are used to sort alphanumerically the tracks as they are laid out. To change the name of a track, just double-click its current name in the TrackScheme view.
   - We use [semantic versioning](http://semver.org/) for release numbers from now on. The rules about backward incompatible changes - described below - required a major version change. However, we reserve the right to make a major number change only when there is backward incompatible changes to the user only. API changes might not trigger a major version change.
@@ -74,4 +74,4 @@ Even if the detectors and trackers are still the same that of versions 1.x, ther
   - Fix a bug causing TrackScheme and XML files to sometimes receive empty tracks.
   - Numerous minor bugfixes.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

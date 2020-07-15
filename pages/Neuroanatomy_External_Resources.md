@@ -38,4 +38,4 @@ description: test description
 
 Software packages for neuronal tracing not based on ImageJ: [Neuromantic](http://www.reading.ac.uk/neuromantic/), [NeuronStudio](http://research.mssm.edu/cnic/tools-ns.html), [neuTube](http://www.neutracing.com), [Vaa3D](http://www.vaa3d.org/)
 
-[Category:Neuroanatomy](Category:Neuroanatomy "wikilink")
+[Category:Neuroanatomy](Category_Neuroanatomy "wikilink")

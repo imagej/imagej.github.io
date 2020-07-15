@@ -43,4 +43,4 @@ From Sunday, July 27, 2015 through Friday, July 31, 2015, {% include person cont
   - Completion of development on the SCIFIO "blockization" and unification of ImgLib2 data structures and caching.
   - Convert KLB native code to a pure Java SCIFIO format implementation.
 
-[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:SCIFIO](Category:SCIFIO "wikilink") [Category:Hackathons](Category:Hackathons "wikilink")
+[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:SCIFIO](Category_SCIFIO "wikilink") [Category:Hackathons](Category_Hackathons "wikilink")

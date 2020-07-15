@@ -57,4 +57,4 @@ SCIFIO is focused on robust and extensible support for reading and writing image
 
   - {% include publication content='SCIFIO' %}
 
-[Category:Citable](Category:Citable "wikilink")
+[Category:Citable](Category_Citable "wikilink")

@@ -8,7 +8,7 @@ categories: Plugins,Visualization,Transform,Registration,Citable
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:bigwarp\_fiji' %}Bigwarp is a tool for manual, interactive, landmark-based deformable image alignment. It uses the [BigDataViewer](BigDataViewer "wikilink") for visualization and navigation, and uses a [Thin Plate Spline](wikipedia:Thin_plate_spline "wikilink") implemented {% include github org='saalfeldlab ' repo='bigwarp ' label='in Java ' %} to build a deformation from point correspondences.
+{% include component-stats content=':sc.fiji:bigwarp\_fiji' %}Bigwarp is a tool for manual, interactive, landmark-based deformable image alignment. It uses the [BigDataViewer](BigDataViewer "wikilink") for visualization and navigation, and uses a [Thin Plate Spline](wikipedia_Thin_plate_spline "wikilink") implemented {% include github org='saalfeldlab ' repo='bigwarp ' label='in Java ' %} to build a deformation from point correspondences.
 
 The interface enables landmark pair placement and displays the effects of the warp on-the-fly.
 
@@ -81,7 +81,7 @@ Press {% include key content='press|F8' %} to bring up a transformation type sel
 
 |                                                                          |                                                                                   |
 | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| ![Bigwarp\_selectTps.png](/images/pages/Bigwarp selectTps.png "Bigwarp selectTps.png") | ![Bigwarp\_selectAffine.png](/images/pages/Bigwarp selectAffine.png "Bigwarp selectAffine.png") |
+| ![Bigwarp\_selectTps.png](Bigwarp_selectTps.png "Bigwarp_selectTps.png") | ![Bigwarp\_selectAffine.png](Bigwarp_selectAffine.png "Bigwarp_selectAffine.png") |
 | Example of a thin plate spline transformation                            | Example of an affine transformation                                               |
 
 #### Table of transformation types
@@ -156,7 +156,7 @@ Landmarks can be exported and imported from plain text files using the drop down
 Export the warped moving image by clicking *File {% include arrow%}
  \> Export as ImagePlus* or using the {% include key content='press|Ctrl' %}+{% include key content='press|E' %} keyboard shortcut.
 
-![Bigwarp\_export.png](/images/pages/Bigwarp export.png "Bigwarp export.png")
+![Bigwarp\_export.png](Bigwarp_export.png "Bigwarp_export.png")
 
 The default parameters will result in the exported image having the same dimensions as the target image. *Note: Take care when exporting very large data sets as they can cause out-of-memory exceptions.*
 
@@ -174,7 +174,7 @@ The default parameters will result in the exported image having the same dimensi
 
 The warped moving image can be exported as an in-memory or [virtual](https://imagej.net/docs/guide/146-8.html) ImagePlus. A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
-![BigwarpLandmarkCenteredExport.png](/images/pages/BigwarpLandmarkCenteredExport.png "BigwarpLandmarkCenteredExport.png")
+![BigwarpLandmarkCenteredExport.png](BigwarpLandmarkCenteredExport.png "BigwarpLandmarkCenteredExport.png")
 
 ### Apply transforms
 
@@ -222,7 +222,7 @@ The results are shown in the "Inverse example" below.
 
 |                                                                                     |                                                                                     |
 | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| ![bigwarp\_warp\_roi\_fwd.png](/images/pages/Bigwarp warp roi fwd.png "bigwarp warp roi fwd.png") | ![bigwarp\_warp\_roi\_inv.png](/images/pages/Bigwarp warp roi inv.png "bigwarp warp roi inv.png") |
+| ![bigwarp\_warp\_roi\_fwd.png](bigwarp_warp_roi_fwd.png "bigwarp_warp_roi_fwd.png") | ![bigwarp\_warp\_roi\_inv.png](bigwarp_warp_roi_inv.png "bigwarp_warp_roi_inv.png") |
 | Forward example (click to expand)                                                   | Inverse example (click to expand)                                                   |
 
 Note, at this time ImageJ ROIs are 2D objects. We recommend using another approach for 3D regions of interest.
@@ -278,4 +278,4 @@ The "normal" BigWarp plugin accessible through *Plugins {% include arrow%}
 7.  Wan et al. ["Single-Cell Reconstruction of Emerging Population Activity in an Entire Developing Circuit."](https://www.sciencedirect.com/science/article/pii/S0092867419309584) Cell 179(2) 2019.
 8.  Hoffman, Shtengel et al. ["Correlative three-dimensional super-resolution and block-face electron microscopy of whole vitreously frozen cells."](https://science.sciencemag.org/content/367/6475/eaaz5357) Science 367 (6475) 2020.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Visualization](Category:Visualization "wikilink") [Category:Transform](Category:Transform "wikilink") [Category:Registration](Category:Registration "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Visualization](Category_Visualization "wikilink") [Category:Transform](Category_Transform "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:Citable](Category_Citable "wikilink")

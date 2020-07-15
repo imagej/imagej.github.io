@@ -22,4 +22,4 @@ The script was originally written by {% include person content='Albertcardona' %
 
   - [Parslow A, Cardona A and Bryson-Richardson RJ (2014) Sample drift correction following 4D confocal time-lapse imaging. J Vis Exp. 2014 Apr 12;(86). doi: 10.3791/51086](http://http://www.jove.com/video/51086/sample-drift-correction-following-4d-confocal-time-lapse-imaging).
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Registration](Category:Registration "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:Citable](Category_Citable "wikilink")

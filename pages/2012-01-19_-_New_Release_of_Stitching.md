@@ -36,4 +36,4 @@ Last but not least, it would be really nice if you could cite the publication th
 
   - S. Preibisch, S. Saalfeld, P. Tomancak (2009) "Globally optimal stitching of tiled 3D microscopic image acquisitions", *Bioinformatics*, **25**(11):1463-1465. [Webpage](http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184) [PDF](http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf)
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

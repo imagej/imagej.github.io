@@ -32,4 +32,4 @@ After the publication of the evaluation ranking, teams will be invited to submit
 
 Please, feel free to spread the word to whoever you consider that may be interested on participating.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

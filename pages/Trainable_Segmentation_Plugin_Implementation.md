@@ -24,17 +24,17 @@ The plug in creates a set of features for each input image pixel by individually
 
 The plugin creates a stack of images - one image for each feature. For instance, if only Gaussian Blur is selected as a feature, the classifier will be trained on the original image and four blurred images with four different \(\sigma\) parameters for the Gaussian, so each pixel will have 5 features. If the mean is added as a feature, then each pixel will have nine features (the value of the pixel's location in the original image, four Gaussian blur images, and four mean images with different radii).
 
-### [Gaussian Blur](wikipedia:Gaussian_blur "wikilink")
+### [Gaussian Blur](wikipedia_Gaussian_blur "wikilink")
 
 Performs four individual [convolutions](http://homepages.inf.ed.ac.uk/rbf/HIPR2/convolve.htm) with Gaussian [kernels](http://homepages.inf.ed.ac.uk/rbf/HIPR2/convolve.htm) with \(\sigma\) equal to 1, 2, 4, and 8. The larger the radius the more blurred the image becomes until the pixels are homogeneous.
 
-### [Sobel filter](wikipedia:Sobel_operator "wikilink")
+### [Sobel filter](wikipedia_Sobel_operator "wikilink")
 
 Calculates the gradient at each pixel. Gaussian blurs with \(\sigma\) = 1, 2, 4 and 8 are performed prior to the filter.
 
 ### Hessian
 
-Calculates a [Hessian matrix](wikipedia:Hessian_matrix "wikilink") H at each pixel: \(H(f) = \begin{bmatrix}
+Calculates a [Hessian matrix](wikipedia_Hessian_matrix "wikilink") H at each pixel: \(H(f) = \begin{bmatrix}
 \dfrac{\partial^2f}{\partial x^2} & \dfrac{\partial^2f}{\partial x \partial y} \\
 \dfrac{\partial^2f}{\partial x \partial y}  & \dfrac{\partial^2f}{\partial y^2} \\
 \end{bmatrix}\)
@@ -78,8 +78,8 @@ Once the selected features have been calculated for each pixel (each feature sto
 
 The plugin's classifier is the [Fast Random Forest](http://code.google.com/p/fast-random-forest/) (FRF) algorithm, which is based on the (wait for it) [Random Forest](http://www.springerlink.com/content/u0p06167n6173512/) algorithm. The FRF algorithm is a re-implementation of the RF code as implemented in [Weka](http://www.cs.waikato.ac.nz/ml/weka/).
 
-The RF algorithm uses numerous (default 200) [classification trees](wikipedia:Decision_tree_learning "wikilink") (CTs) to 'vote' for which class a pixel, with its corresponding set of features, belongs to. The algorithm builds multiple trees from the same dataset by [bootstrapping](wikipedia:Bootstrapping_%28statistics%29 "wikilink") (sampling with replacement).
+The RF algorithm uses numerous (default 200) [classification trees](wikipedia_Decision_tree_learning "wikilink") (CTs) to 'vote' for which class a pixel, with its corresponding set of features, belongs to. The algorithm builds multiple trees from the same dataset by [bootstrapping](wikipedia_Bootstrapping_%28statistics%29 "wikilink") (sampling with replacement).
 
 Once the classifier is built from the user chosen pixels (with their associated feature data)/class assignments and the entire training image or a new image is staged for classification, each pixel is classified by all the trees and is assigned to the class with the highest 'vote.'
 
-[Category:Segmentation](Category:Segmentation "wikilink") [Category:Tutorials](Category:Tutorials "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Segmentation](Category_Segmentation "wikilink") [Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")

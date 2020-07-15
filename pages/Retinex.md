@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji ' repo='Fiji\_Plugins ' source='Retinex\_.java ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Retinex ' maintainer='[Francisco Jiménez Hernández](mailto:jimenezf_at_fi.uaemex.mx) ' author='Francisco Jiménez Hernández ' source=source released='02/08/2010 ' latest-version='02/08/2010 ' status=' ' category='[:Category:Plugins](:Category:Plugins "wikilink") ' website=' ' %}
+{% include info-box software='ImageJ ' name='Retinex ' maintainer='[Francisco Jiménez Hernández](mailto_jimenezf_at_fi.uaemex.mx) ' author='Francisco Jiménez Hernández ' source=source released='02/08/2010 ' latest-version='02/08/2010 ' status=' ' category='[_Category_Plugins](_Category_Plugins "wikilink") ' website=' ' %}
 
 ## Retinex
 
@@ -48,12 +48,12 @@ Retinex filtering is based on Land's theory of image perception, proposed to exp
 
 ## Example
 
-Original: ![Photo1.jpg](/images/pages/Photo1.jpg "Photo1.jpg")
+Original: ![Photo1.jpg](Photo1.jpg "Photo1.jpg")
 
-After Retinex (default parameters): ![Photo1-Retinex.jpg](/images/pages/Photo1-Retinex.jpg "Photo1-Retinex.jpg")
+After Retinex (default parameters): ![Photo1-Retinex.jpg](Photo1-Retinex.jpg "Photo1-Retinex.jpg")
 
 ## Homepage
 
 Please find the original page for the Retinex plugin [here](http://www.mecourse.com/landinig/software/retinex/retinex.html).
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")

@@ -20,11 +20,11 @@ description: test description
 {% capture source%}
 {% include github org='ijpb ' repo='ijpb-plugins ' %}
 {% endcapture %}
-{% include info-box name='Interactive Marker-controlled Watershed ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='September 9<sup>th</sup>, 2017 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink") ' %}
+{% include info-box name='Interactive Marker-controlled Watershed ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='September 9<sup>th</sup>, 2017 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Segmentation](_Category_Segmentation "wikilink"), [Mathematical morphology](_Category_Mathematical_morphology "wikilink") ' %}
 
 ## Introduction
 
-![Interactive-Marker-controlled-Watershed-plugin-overview.png](/images/pages/Interactive-Marker-controlled-Watershed-plugin-overview.png "Interactive-Marker-controlled-Watershed-plugin-overview.png") Similar to the [Marker-controlled Watershed](Marker-controlled_Watershed "wikilink") plugin, this ImageJ/Fiji plugin segments grayscale images of any type (8, 16 and 32-bit) in 2D and 3D using the marker-controlled watershed algorithm by Meyer and Beucher (1990) and it floods the image from specific seed points, **but this time the points are introduced interactively by the user**.
+![Interactive-Marker-controlled-Watershed-plugin-overview.png](Interactive-Marker-controlled-Watershed-plugin-overview.png "Interactive-Marker-controlled-Watershed-plugin-overview.png") Similar to the [Marker-controlled Watershed](Marker-controlled_Watershed "wikilink") plugin, this ImageJ/Fiji plugin segments grayscale images of any type (8, 16 and 32-bit) in 2D and 3D using the marker-controlled watershed algorithm by Meyer and Beucher (1990) and it floods the image from specific seed points, **but this time the points are introduced interactively by the user**.
 
 ## Usage
 
@@ -44,7 +44,7 @@ In this plugin the markers are introduced interactively by the user using any of
 
 ### Watershed Segmentation panel
 
-![Watershed panel.](/images/pages/Interactive-Marker-controlled-Watershed-WS-panel.png "Watershed panel.")This panel is reserved to the parameters involved in the segmentation pipeline:
+![Watershed panel.](Interactive-Marker-controlled-Watershed-WS-panel.png "Watershed panel.")This panel is reserved to the parameters involved in the segmentation pipeline:
 
   - **Calculate dams**: un-check this option to produce segmentations without watershed lines.
   - **Connectivity**: voxel connectivity (4-8 in 2D, and 6-26 in 3D). Selecting non-diagonal connectivity (4 or 6) usually provides more rounded objects.
@@ -53,7 +53,7 @@ In this plugin the markers are introduced interactively by the user using any of
 
 ### Results panel
 
-![Results panel.](/images/pages/Morphological-segmentation-results-panel.png "Results panel.")Only enabled after running the segmentation.
+![Results panel.](Morphological-segmentation-results-panel.png "Results panel.")Only enabled after running the segmentation.
 
   - **Display**: list of options to display the segmentation results.
       - **Overlaid basins**: colored objects overlaying the input image (with or without dams depending on the selected option in the Watershed Segmentation panel).
@@ -71,7 +71,7 @@ In this plugin the markers are introduced interactively by the user using any of
 
 ### Post-processing panel
 
-![Post-processing panel.](/images/pages/Morphological-segmentation-post-processing-panel.png "Post-processing panel.")Similarly to the Results panel, this panel only gets enabled after running the segmentation pipeline.
+![Post-processing panel.](Morphological-segmentation-post-processing-panel.png "Post-processing panel.")Similarly to the Results panel, this panel only gets enabled after running the segmentation pipeline.
 
   - **Merge labels**: merge together labels selected by either the **“freehand” selection too**l (on a single slice) **or the point tool** (on single or multiple slices). The zero-value label belongs to the watershed dams, therefore it will ignored in case of being selected. The first selected label value will be assigned to the rest of selected labels, which will share its color.
 
@@ -119,4 +119,4 @@ This program is **free software**; you can redistribute it and/or modify it unde
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Mathematical\_morphology](Category:Mathematical_morphology "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Mathematical\_morphology](Category_Mathematical_morphology "wikilink")

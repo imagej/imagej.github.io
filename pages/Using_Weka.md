@@ -75,7 +75,7 @@ public Instances insertIntoWeka(final List <Point3d> points, final String name)
 
 ### Setting up the KDTree
 
-Setting up the [KDTree](wikipedia:Kd-tree "wikilink") is rather simple. The tricky part is the Euclidean Distance measure. It is very nice that Weka automatically figures out how to compute the Euclidean Distance as we use only simple numeric attributes. However, by default it nomalizes the data independently for each dimension which might cause problems as in my case. If you want to prevent him from doing so you have to assign a new EuclideanDistance object that does not normalize.
+Setting up the [KDTree](wikipedia_Kd-tree "wikilink") is rather simple. The tricky part is the Euclidean Distance measure. It is very nice that Weka automatically figures out how to compute the Euclidean Distance as we use only simple numeric attributes. However, by default it nomalizes the data independently for each dimension which might cause problems as in my case. If you want to prevent him from doing so you have to assign a new EuclideanDistance object that does not normalize.
 
 ``` java
 //

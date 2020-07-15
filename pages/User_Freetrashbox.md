@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-A Japanese wikipedian. See [wikipedia:ja:user:freetrashbox](wikipedia:ja:user:freetrashbox "wikilink").
+A Japanese wikipedian. See [wikipedia:ja:user:freetrashbox](wikipedia_ja_user_freetrashbox "wikilink").

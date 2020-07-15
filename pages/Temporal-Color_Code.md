@@ -8,7 +8,7 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-![ 256px | Stack of Listeria Movement ](/images/pages/K listeria animated.gif " 256px | Stack of Listeria Movement ") ![ 256px | Temporal-Color Coded](/images/pages/K temporal color coded listeria.png " 256px | Temporal-Color Coded")
+![ 256px | Stack of Listeria Movement ](K_listeria_animated.gif " 256px | Stack of Listeria Movement ") ![ 256px | Temporal-Color Coded](K_temporal_color_coded_listeria.png " 256px | Temporal-Color Coded")
 
 
 {% capture author%}
@@ -18,7 +18,7 @@ description: test description
 {% capture source%}
 {% include github repo='fiji ' path='plugins/Scripts/Image/Hyperstacks/Temporal-Color\_Code.ijm ' %}
 {% endcapture %}
-{% include info-box name='Temporal-Color Code ' software='Fiji ' author=author maintainer=' [Kota Miura](http://cmci.embl.de) ([1](mailto:miura@embl.de)) ' source=source released='29 Nov 2010 ' latest-version='29 Nov 2010 ' status='beta ' %}
+{% include info-box name='Temporal-Color Code ' software='Fiji ' author=author maintainer=' [Kota Miura](http://cmci.embl.de) ([1](mailto_miura@embl.de)) ' source=source released='29 Nov 2010 ' latest-version='29 Nov 2010 ' status='beta ' %}
 
 ## Temporal-Color Code
 
@@ -32,4 +32,4 @@ With a hyperstack window activated (at the most front among other images), selec
 
 In dialog window, select a LUT from drop down menu. Selected LUT will be used for color coding the time. You could also set the range of frames to be coded. Default is full frames. There is also an option check-box for generating color-scale bar in separate window. This will show correspondence between color and frame number in the color coded image.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Color processing](Category:Color_processing "wikilink")
+[Category_Plugins](Category_Plugins "wikilink") [Category:Color processing](Category_Color_processing "wikilink")

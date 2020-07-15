@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [:Category:Techniques](:Category:Techniques "wikilink")
+1.  REDIRECT [:Category:Techniques](_Category_Techniques "wikilink")

@@ -10,4 +10,4 @@ description: test description
 
 The [SPIM Registration](SPIM_Registration "wikilink") finally supports the registration of multiple channels, they can be registered to each other but are fused seperately.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

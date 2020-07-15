@@ -22,4 +22,4 @@ The source code can be found {% include github org='imagej ' repo='imagej-search
 
 We hope this site makes it easier for the community to quickly locate information about ImageJ.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

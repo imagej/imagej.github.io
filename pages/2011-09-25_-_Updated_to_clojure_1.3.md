@@ -12,4 +12,4 @@ The clojure library has been upgraded to the newly released version 1.3. Among o
 
 The practical consequences of the above is that, finally, abstract mathematical functions can be written which, with the aid of a macro, can be made fully specific for a numerical primitive of choice such as byte, short, int, long, float or double, without any boxing/unboxing issues that could potentially degrade performance.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

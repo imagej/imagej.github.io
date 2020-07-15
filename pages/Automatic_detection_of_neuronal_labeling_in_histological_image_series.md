@@ -16,7 +16,7 @@ Axonal tracers such as biotinylated dextran amine (BDA) and *Phaseolus vulgaris*
 
 Download files to the ImageJ/plugins or ImageJ/plugins/Macros directory. The zip package is organized into the right folder structure and can be extracted directly to the ImageJ directory. Processing of image series is primarily handled by the macros, available from the ImageJ menu Plugins -\> Macros. The NeSys Pixel Counter plugin can be used on individual images by placing the .class file into the ImageJ/plugins directory, or compiling the Java source code (.java) in the same place (Plugins -\> Compile and run), and thereafter running the plugin from the Plugins menu. The CDgetPrimaryChannel plugin is intended for usage together with the NeSys Labeling Detection macro and is not available from the Plugins menu.
 
-<u>**Download the complete package:**</u> ![Nesys-labeling-detection.zip](/images/pages/Nesys-labeling-detection.zip "Nesys-labeling-detection.zip")
+<u>**Download the complete package:**</u> ![Nesys-labeling-detection.zip](Nesys-labeling-detection.zip "Nesys-labeling-detection.zip")
 
 **Package contents**
 
@@ -34,7 +34,7 @@ After installation, the macros are available from the Plugins -\> Macros menu. I
 
 ### **1. Detection of labeling in series of microscopic images**
 
-The NeSys Labeling Detection macro uses the CDgetPrimaryChannel plugin to perform [Colour Deconvolution](plugin:color:colour_deconvolution:start "wikilink") on series of color (RGB) images using a shortened version of the plugin from G. Landini based on the method of \[http://www.ncbi.nlm.nih.gov/pubmed/11531144>| A.C. Ruifrok\]. Vectors for Colour Deconvolution are expected to be acquired in advance using the original plugin and saved in the colourdeconvolution.txt file located in the Imagej/plugins/Macros folder. The parameter file is formatted according to the example provided by Benjamin Pavie (bpavie) on \[<https://github.com/bpavie/Colour_Deconvolution/tree/externaltxt/src/main/java/sc/fiji/colourDeconvolution| GitHub\]. Requires ImageJ version 1.39f or later.
+The NeSys Labeling Detection macro uses the CDgetPrimaryChannel plugin to perform [Colour Deconvolution](plugin_color_colour_deconvolution_start "wikilink") on series of color (RGB) images using a shortened version of the plugin from G. Landini based on the method of \[http://www.ncbi.nlm.nih.gov/pubmed/11531144>| A.C. Ruifrok\]. Vectors for Colour Deconvolution are expected to be acquired in advance using the original plugin and saved in the colourdeconvolution.txt file located in the Imagej/plugins/Macros folder. The parameter file is formatted according to the example provided by Benjamin Pavie (bpavie) on \[<https://github.com/bpavie/Colour_Deconvolution/tree/externaltxt/src/main/java/sc/fiji/colourDeconvolution| GitHub\]. Requires ImageJ version 1.39f or later.
 
 <u>We recorded Colour Deconvolution vectors for the following staining combinations (see colourdeconvolution.txt):</u> <a href="|Staining combinations"><img src="/images/pages/Staining-combinations.png" width="600px"/></a>
 
@@ -67,7 +67,7 @@ The NeSys Pixel Counter macro uses the NeSys Pixel Counter plugin to record the 
 
 ## See also
 
-[Colour Deconvolution](plugin:color:colour_deconvolution:start "wikilink") [Optimizing handling of 3D unitary optical density vectors with polar coordinates](plugin:color:colour_deconvolution:optimizing_selection_of_unitary_optical_density_vectors:start "wikilink")
+[Colour Deconvolution](plugin_color_colour_deconvolution_start "wikilink") [Optimizing handling of 3D unitary optical density vectors with polar coordinates](plugin_color_colour_deconvolution_optimizing_selection_of_unitary_optical_density_vectors_start "wikilink")
 
 ## How to cite
 
@@ -77,4 +77,4 @@ Papp EA, Leergaard TB, Csucs G, Bjaalie JG (2016) Brain-wide mapping of axonal c
 
 Ruifrok AC and Johnston DA (2001) Quantification of histochemical staining by color deconvolution. Anal Quant Cytol Histol 23, 291-299 \[http://www.ncbi.nlm.nih.gov/pubmed/11531144>| PubMed\] Zakiewicz IM, Van Dongen YC, Leergaard TB, and Bjaalie JG (2011) Workflow and atlas system for brain-wide mapping of axonal connectivity in rat. PLoS One 6, e22669 \[<http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0022669| doi: 10.1371/journal.pone.0022669\]
 
-[Category:Analysis](Category:Analysis "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Analysis](Category_Analysis "wikilink") [Category:Plugins](Category_Plugins "wikilink")

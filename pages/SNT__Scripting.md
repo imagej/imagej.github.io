@@ -19,7 +19,7 @@ The most up-to-date SNT API can be found at https://morphonets.github.io/SNT.
 
 ## Script Templates
 
-![SNT Scripts Menu](/images/pages/Snt-Scripts-Menu-Full-List.png "SNT Scripts Menu") SNT comes packaged with script templates demonstrating various analysis, tracing, image processing and batch processing routines. These templates can be found both in the *Scripts* menu of the SNT dialog and in the {% include bc content='Templates|Neuroanatomy'%} menu of Fiji's Script Editor. Scripts can be written in any language supported by Fiji's Script Editor.
+![SNT Scripts Menu](Snt-Scripts-Menu-Full-List.png "SNT Scripts Menu") SNT comes packaged with script templates demonstrating various analysis, tracing, image processing and batch processing routines. These templates can be found both in the *Scripts* menu of the SNT dialog and in the {% include bc content='Templates|Neuroanatomy'%} menu of Fiji's Script Editor. Scripts can be written in any language supported by Fiji's Script Editor.
 
 ### Analysis
 
@@ -43,7 +43,7 @@ The most up-to-date SNT API can be found at https://morphonets.github.io/SNT.
 
 <!-- end list -->
 
-  - **Reconstruction\_Viewer\_Demo.py** Exemplifies how to render reconstructions and neuropil annotations in a stand-alone [Reconstruction Viewer](SNT:_Reconstruction_Viewer "wikilink").
+  - **Reconstruction\_Viewer\_Demo.py** Exemplifies how to render reconstructions and neuropil annotations in a stand-alone [Reconstruction Viewer](SNT__Reconstruction_Viewer "wikilink").
 
 <!-- end list -->
 
@@ -85,7 +85,7 @@ This menu hosts scripts that process files in bulk. Namely:
 
 <!-- end list -->
 
-  - **Render\_Cell\_Collection.groovy** Exemplifies how to quickly render large collections of cells from a directory of files in [Reconstruction Viewer](SNT:_Reconstruction_Viewer "wikilink").
+  - **Render\_Cell\_Collection.groovy** Exemplifies how to quickly render large collections of cells from a directory of files in [Reconstruction Viewer](SNT__Reconstruction_Viewer "wikilink").
 
 <!-- end list -->
 
@@ -142,7 +142,7 @@ Did you write a useful script? Please submit a [pull request](https://github.com
 
 ### Scripting Reconstruction Viewer
 
-Programmatic control over an open instance of [Reconstruction Viewer](SNT:_Reconstruction_Viewer "wikilink") (either called from within SNT or as a standalone application) can be achieved by selecting the {% include bc content='Tools & Utilities|Script This Viewer...'%} [command](SNT:_Reconstruction_Viewer#Utilities "wikilink"). It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [script parameters](Script_Parameters "wikilink"). The default programming language for this template can be chosen from the drop-down menu of the *Preferred Language* [option](SNT:_Reconstruction_Viewer#Settings "wikilink").
+Programmatic control over an open instance of [Reconstruction Viewer](SNT__Reconstruction_Viewer "wikilink") (either called from within SNT or as a standalone application) can be achieved by selecting the {% include bc content='Tools & Utilities|Script This Viewer...'%} [command](SNT__Reconstruction_Viewer#Utilities "wikilink"). It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [script parameters](Script_Parameters "wikilink"). The default programming language for this template can be chosen from the drop-down menu of the *Preferred Language* [option](SNT__Reconstruction_Viewer#Settings "wikilink").
 
 The following script exemplifies how to extend the boilerplate template to control the Viewer in real-time.
 
@@ -258,9 +258,9 @@ do_stuff(viewer)
 
 ### Script Interpreter
 
-Some of SNT's functionality is accessible in the [Script Interpreter](Script_Interpreter "wikilink"). Here is an example: ![SNT-ScriptInterpreter.png](/images/pages/SNT-ScriptInterpreter.png "SNT-ScriptInterpreter.png")
+Some of SNT's functionality is accessible in the [Script Interpreter](Script_Interpreter "wikilink"). Here is an example: ![SNT-ScriptInterpreter.png](SNT-ScriptInterpreter.png "SNT-ScriptInterpreter.png")
 
 {% include sntnavbar%}
 
 
-[Category:SNT](Category:SNT "wikilink") [Category:Neuroanatomy](Category:Neuroanatomy "wikilink") [Category:Scripting](Category:Scripting "wikilink")
+[Category:SNT](Category_SNT "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink") [Category:Scripting](Category_Scripting "wikilink")

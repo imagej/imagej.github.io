@@ -21,8 +21,8 @@ description: test description
   - An open-source project hosted on [GitHub](GitHub "wikilink")
   - Logging in to [Travis CI](https://travis-ci.org/auth) with your corresponding GitHub account
   - [Travis command line tools](https://github.com/travis-ci/travis.rb#installation)
-  - An [account on this wiki](Special:CreateAccount "wikilink")
-  - An [initialized upload password](Special:ChangeUploadPassword "wikilink"). (**NOTE** - *not* necessarily the same as your Wiki password)
+  - An [account on this wiki](Special_CreateAccount "wikilink")
+  - An [initialized upload password](Special_ChangeUploadPassword "wikilink"). (**NOTE** - *not* necessarily the same as your Wiki password)
 
 # Additional resources
 
@@ -98,7 +98,7 @@ by your informations.
 
 ## Encrypting your password
 
-To upload to your wiki update site, you will need to provide Travis CI with a `WIKI_UPLOAD_PASS` environment variable, which should evaluate to the [upload password](Special:ChangeUploadPassword "wikilink") of the Wiki account performing the upload. To do so securely, follow the instructions on the [encrypting environment variables](https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key).
+To upload to your wiki update site, you will need to provide Travis CI with a `WIKI_UPLOAD_PASS` environment variable, which should evaluate to the [upload password](Special_ChangeUploadPassword "wikilink") of the Wiki account performing the upload. To do so securely, follow the instructions on the [encrypting environment variables](https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key).
 
 Note that when you run:
 
@@ -125,7 +125,7 @@ This is also true if you have custom scripts, macros, etc... if these files are 
 {% include warning-box content='"""USE CAUTION HERE"""
 
 1.  You are configuring Travis CI to upload the state of an ImageJ installation to your update site. The current working directory IS the ImageJ.app that will be uploaded. If your build artifacts are not located in the `jars` or `plugins` directory, or you don"t manually copy scripts to the correct location, ImageJ will see these items as having been deleted—"""effectively removing all content from your update site.""" You can mitigate this danger by customizing your `.travis-deploy.sh` to download your own update site into the base ImageJ.app; only changes to the update site state will be uploaded.
-2.  By default—building the master branch of your repository—your update site will be updated with \*\*every change\*\* to the source code. Although we encourage the master branch to be "[release ready](Development_Lifecycle#Phase_2:_On_master "wikilink")", a safer practice would be to configure Travis CI to [only build specific branches](https://docs.travis-ci.com/user/customizing-the-build/#Building-Specific-Branches)—and set it to build [release versions](Reproducible_builds "wikilink") only—e.g. with a release version integration branch.
+2.  By default—building the master branch of your repository—your update site will be updated with \*\*every change\*\* to the source code. Although we encourage the master branch to be "[release ready](Development_Lifecycle#Phase_2__On_master "wikilink")", a safer practice would be to configure Travis CI to [only build specific branches](https://docs.travis-ci.com/user/customizing-the-build/#Building-Specific-Branches)—and set it to build [release versions](Reproducible_builds "wikilink") only—e.g. with a release version integration branch.
 3.  Using the Maven-based `.travis.yml` as suggested implies that you are conforming to the managed dependencies of the parent pom.xml. If you are not staying up-to-date with the ImageJ and Fiji update sites (by using the latest ImageJ or Fiji [bill of materials](Architecture#Bill_of_Materials "wikilink")) then this automation may break your own update site.' %}
 
 # See Also

@@ -12,4 +12,4 @@ We got accepted into Google's Summer of Code program\!
 
 Our ideas can be found [here](SoC2009Ideas "wikilink"), but we are looking forward to your ideas, too\!
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

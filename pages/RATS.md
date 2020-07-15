@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [RATS: Robust Automatic Threshold Selection](RATS:_Robust_Automatic_Threshold_Selection "wikilink")
+1.  REDIRECT [RATS: Robust Automatic Threshold Selection](RATS__Robust_Automatic_Threshold_Selection "wikilink")

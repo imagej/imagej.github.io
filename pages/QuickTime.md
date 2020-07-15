@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% include menu-formats%}
-The [QuickTime movie format](wikipedia:QuickTime_File_Format "wikilink") is a multimedia container format with extension `.mov`.
+The [QuickTime movie format](wikipedia_QuickTime_File_Format "wikilink") is a multimedia container format with extension `.mov`.
 
 QuickTime MOV files come in many flavors, which are known as codecs. Whether you can open an MOV file in ImageJ will depend on several factors, including the codec used to store the movie, which version of which operating system you have, and which ImageJ [plugin](plugin "wikilink") is used.
 
@@ -25,7 +25,7 @@ See the [Bio-Formats QuickTime supported codecs](https://www.openmicroscopy.org/
 
 ## QuickTime for Java
 
-ImageJ has built-in support for MOV files, but only via the [QuickTime for Java](wikipedia:QuickTime_for_Java "wikilink") (QTJ) library, which is Apple's library for reading and writing QuickTime files from Java. QTJ is only available on Windows and OS X platforms, and only when running a 32-bit version of Java. On OS X, this means [using Apple Java 6](Frequently_Asked_Questions#How_do_I_set_up_Java_6_on_OS_X.3F "wikilink").
+ImageJ has built-in support for MOV files, but only via the [QuickTime for Java](wikipedia_QuickTime_for_Java "wikilink") (QTJ) library, which is Apple's library for reading and writing QuickTime files from Java. QTJ is only available on Windows and OS X platforms, and only when running a 32-bit version of Java. On OS X, this means [using Apple Java 6](Frequently_Asked_Questions#How_do_I_set_up_Java_6_on_OS_X.3F "wikilink").
 
 {% include warning-box content='QuickTime for Java has been deprecated for many years, and Apple is steadily phasing it out. It is likely that it will no longer be possible to use QTJ at all in future operating system versions.
 
@@ -43,7 +43,7 @@ mkdir -p $HOME/Library/Java/Extensions && for f in QTJava.zip libQTJNative.jnili
 
 ## FFMPEG
 
-There is an [update site](update_site "wikilink") called FFMPEG which enables support for opening movie files via the [FFMPEG library](wikipedia:FFMPEG "wikilink"). This update site ships native libraries, which should work on Windows, OS X and Linux platforms, but not other platforms (AIX, Solaris, etc.).
+There is an [update site](update_site "wikilink") called FFMPEG which enables support for opening movie files via the [FFMPEG library](wikipedia_FFMPEG "wikilink"). This update site ships native libraries, which should work on Windows, OS X and Linux platforms, but not other platforms (AIX, Solaris, etc.).
 
 See the [FFMPEG supported codecs](https://www.ffmpeg.org/general.html#Video-Codecs) page for a list of supported codecs.
 
@@ -51,4 +51,4 @@ See the [FFMPEG supported codecs](https://www.ffmpeg.org/general.html#Video-Code
 
 You can use a video conversion tool such as [HandBrake](https://handbrake.fr/), [VLC](http://www.videolan.org/), [libav](https://libav.org/), [ffmpeg](https://ffmpeg.org/) or [VirtualDub](http://www.virtualdub.org/) to convert your MOV files into a different format which ImageJ is able to read more easily.
 
-[Category:Import-Export](Category:Import-Export "wikilink")
+[Category:Import-Export](Category_Import-Export "wikilink")

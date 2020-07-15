@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Talk:Script Parameters](Talk:Script_Parameters "wikilink")
+1.  REDIRECT [Talk:Script Parameters](Talk_Script_Parameters "wikilink")

@@ -10,4 +10,4 @@ description: test description
 
 <fijirandomsnapshot all="true" />
 
-If you want your screenshot to show up, use {% include bc content='Plugins | Utilities | Fiji | New Fiji Wiki Screenshot'%} to prepare the active (= foreground) image and upload it, and then add an entry to the [Fiji:Featured\_Projects](Fiji:Featured_Projects "wikilink") page.
+If you want your screenshot to show up, use {% include bc content='Plugins | Utilities | Fiji | New Fiji Wiki Screenshot'%} to prepare the active (= foreground) image and upload it, and then add an entry to the [Fiji:Featured\_Projects](Fiji_Featured_Projects "wikilink") page.

@@ -10,11 +10,11 @@ description: test description
 
 {% include displaytitle content=':Working with ImageJ' %}
 
-This part introduces some basic aspects of ImageJ so that you can use the software more efficiently. It also introduces some important terms and concepts used throughout this guide. You may skip it if you already use the program efficiently and are familiar with terms such as [Virtual Stacks↓](#sub:Virtual-Stacks "wikilink"), [Hyperstacks↓](#sub:Hyperstacks-Intro "wikilink"), [Pseudocolor Images↓](#sub:Pseudocolor-Images "wikilink"), [Color Composite Images↓](#sub:Color-Composites "wikilink") or [Composite Selections↓](#sub:Composite-selections "wikilink").
+This part introduces some basic aspects of ImageJ so that you can use the software more efficiently. It also introduces some important terms and concepts used throughout this guide. You may skip it if you already use the program efficiently and are familiar with terms such as [Virtual Stacks↓](#sub_Virtual-Stacks "wikilink"), [Hyperstacks↓](#sub_Hyperstacks-Intro "wikilink"), [Pseudocolor Images↓](#sub_Pseudocolor-Images "wikilink"), [Color Composite Images↓](#sub_Color-Composites "wikilink") or [Composite Selections↓](#sub_Composite-selections "wikilink").
 
 ## Using Keyboard Shortcuts
 
-You’ll learn more and more [↓](#index-Keyboard "wikilink")[↓shortcut](#index-Shortcuts "wikilink") keys as you use ImageJ, because (almost) all shortcuts are listed throughout ImageJ menus. Similarly, in this guide each command has its shortcut key listed on its name (flanked by square brackets). Please note that the notation for these key-bindings is case sensitive, i.e., Shift-modifiers are not explicitly mentioned (a capital <span class="sans">A</span> means <span class="sans">Shift--A</span>) and assumes that *Require control key for shortcuts* in <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Options ▷ [Misc…↓](#sub:Misc... "wikilink")</span></span></span> is unchecked (i.e., except when using the IJ [Editor↓](#sub:ImageJ-Macro-Editor "wikilink") or the [Text Tool↓](#sec:Text-Tool "wikilink"), you won’t have to hold down the Control key to use menu shortcuts). For example, the command <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ \[\[\#sub:Invert-%5BI%5D|Invert \[I\]↓\]\]</span></span></span> can be evoked by <span class="Keystroke">Shift</span> <span class="Keystroke">I</span> or <span class="Keystroke">Ctrl</span> <span class="Keystroke">Shift</span> <span class="Keystroke">I</span> if *Require control key for shortcuts* is checked. The full list of ImageJ shortcuts (*see* [Keyboard Shortcuts↓](#sec:Keyboard-Shortcuts "wikilink")) can be retrieved at any time using the <span class="sans"><span class="menuitem"><span class="sans">Plugins ▷ Utilities ▷ [List Shortcuts…↓](#sub:List-Shortcuts... "wikilink")</span></span></span> command.
+You’ll learn more and more [↓](#index-Keyboard "wikilink")[↓shortcut](#index-Shortcuts "wikilink") keys as you use ImageJ, because (almost) all shortcuts are listed throughout ImageJ menus. Similarly, in this guide each command has its shortcut key listed on its name (flanked by square brackets). Please note that the notation for these key-bindings is case sensitive, i.e., Shift-modifiers are not explicitly mentioned (a capital <span class="sans">A</span> means <span class="sans">Shift--A</span>) and assumes that *Require control key for shortcuts* in <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Options ▷ [Misc…↓](#sub_Misc... "wikilink")</span></span></span> is unchecked (i.e., except when using the IJ [Editor↓](#sub_ImageJ-Macro-Editor "wikilink") or the [Text Tool↓](#sec_Text-Tool "wikilink"), you won’t have to hold down the Control key to use menu shortcuts). For example, the command <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ \[\[\#sub:Invert-%5BI%5D|Invert \[I\]↓\]\]</span></span></span> can be evoked by <span class="Keystroke">Shift</span> <span class="Keystroke">I</span> or <span class="Keystroke">Ctrl</span> <span class="Keystroke">Shift</span> <span class="Keystroke">I</span> if *Require control key for shortcuts* is checked. The full list of ImageJ shortcuts (*see* [Keyboard Shortcuts↓](#sec_Keyboard-Shortcuts "wikilink")) can be retrieved at any time using the <span class="sans"><span class="menuitem"><span class="sans">Plugins ▷ Utilities ▷ [List Shortcuts…↓](#sub_List-Shortcuts... "wikilink")</span></span></span> command.
 
 There are three [↓modifier](#index-Modifier-keys "wikilink") keys in ImageJ:
 
@@ -38,7 +38,7 @@ There are three [↓modifier](#index-Modifier-keys "wikilink") keys in ImageJ:
 
 <div class="See">
 
-[Keyboard Shortcuts↓](#sec:Keyboard-Shortcuts "wikilink"), <span class="menuitem">Plugins ▷ [Shortcuts ▷ ↓](#sub:Shortcuts "wikilink")</span>
+[Keyboard Shortcuts↓](#sec_Keyboard-Shortcuts "wikilink"), <span class="menuitem">Plugins ▷ [Shortcuts ▷ ↓](#sub_Shortcuts "wikilink")</span>
 
 </div>
 
@@ -62,7 +62,7 @@ In ImageJ, all operations are performed on the active (frontmost) image (which h
 
 <div class="PlainVisible">
 
-Pressing <span class="Keystroke">Enter</span> on any image will bring the [The-ImageJ-window](#fig:The-ImageJ-window "wikilink")
+Pressing <span class="Keystroke">Enter</span> on any image will bring the [The-ImageJ-window](#fig_The-ImageJ-window "wikilink")
 
 <div class="PlainVisible">
 
@@ -70,7 +70,7 @@ Main ImageJ window
 
 </div>
 
-↓ to the foreground. In addition, it is also possible to permanently place the main window above all other windows (*see* [Floating Behavior of Main Window↓](#sub:FloatingMainWin "wikilink")).
+↓ to the foreground. In addition, it is also possible to permanently place the main window above all other windows (*see* [Floating Behavior of Main Window↓](#sub_FloatingMainWin "wikilink")).
 
 </div>
 
@@ -82,9 +82,9 @@ Main ImageJ window
 
 Navigating through the extensive list of ImageJ commands, macros and plugins may be quite cumbersome. Through its built-in Command Finder / Launcher<span class="bibcites">[48]([#biblio-48 "wikilink")\]</span>, ImageJ offers an expedite alternative that allows you to retrieve commands extremely fast: <span class="sans"><span class="menuitem"><span class="sans">Plugins ▷ Utilities ▷ \[\[\#sub:Command-Finder|Find Commands… \[l\]↓\]\]</span></span></span>.
 
-In addition, ImageJ features a find function that locates macros, scripts and plugins source (<span class="Filename">.java</span>) files on your computer: the <span class="sans"><span class="menuitem"><span class="sans">Plugins ▷ Utilities ▷ [<span class="menuitem">Search…</span>↓](#sub:Search... "wikilink")</span></span></span> command. Because most of IJ source files contain circumstanced comments, you can use this utility to retrieve files related not only to a image processing routine (e.g., *background* or *co-localization*) but also to a practical context such as *radiogram*, *cell* or *histology*. Indeed, ImageJ source files contain detailed annotations useful to both developers and regular users that want to know more about ImageJ routines and algorithms.
+In addition, ImageJ features a find function that locates macros, scripts and plugins source (<span class="Filename">.java</span>) files on your computer: the <span class="sans"><span class="menuitem"><span class="sans">Plugins ▷ Utilities ▷ [<span class="menuitem">Search…</span>↓](#sub_Search... "wikilink")</span></span></span> command. Because most of IJ source files contain circumstanced comments, you can use this utility to retrieve files related not only to a image processing routine (e.g., *background* or *co-localization*) but also to a practical context such as *radiogram*, *cell* or *histology*. Indeed, ImageJ source files contain detailed annotations useful to both developers and regular users that want to know more about ImageJ routines and algorithms.
 
-<span class="sans"><span class="menuitem"><span class="sans">[<span class="menuitem">Search…</span>↓](#sub:Search... "wikilink")</span></span></span> and <span class="sans"><span class="menuitem"><span class="sans">\[\[\#sub:Command-Finder|Find Commands… \[l\]↓\]\]</span></span></span> are described in detail in <span class="sans"><span class="menuitem"><span class="sans">Plugins ▷ [Utilities ▷ ↓](#sub:Utilities "wikilink")</span></span></span>.
+<span class="sans"><span class="menuitem"><span class="sans">[<span class="menuitem">Search…</span>↓](#sub_Search... "wikilink")</span></span></span> and <span class="sans"><span class="menuitem"><span class="sans">\[\[\#sub:Command-Finder|Find Commands… \[l\]↓\]\]</span></span></span> are described in detail in <span class="sans"><span class="menuitem"><span class="sans">Plugins ▷ [Utilities ▷ ↓](#sub_Utilities "wikilink")</span></span></span>.
 
 <div class="float">
 
@@ -104,7 +104,7 @@ In addition, ImageJ features a find function that locates macros, scripts and pl
 
 <div class="center">
 
-![figure images/CommandFinderAndSearch.png](/images/pages/Images/CommandFinderAndSearch.png "figure images/CommandFinderAndSearch.png")
+![figure images/CommandFinderAndSearch.png](images/CommandFinderAndSearch.png "figure images/CommandFinderAndSearch.png")
 
 </div>
 
@@ -114,7 +114,7 @@ In addition, ImageJ features a find function that locates macros, scripts and pl
 
 <div class="center">
 
-<span class="sans"><span class="small">Plugins ▷ Utilities ▷ [<span class="menuitem">Search…</span>↓](#sub:Search... "wikilink")</span></span>
+<span class="sans"><span class="small">Plugins ▷ Utilities ▷ [<span class="menuitem">Search…</span>↓](#sub_Search... "wikilink")</span></span>
 
 </div>
 
@@ -126,13 +126,13 @@ In addition, ImageJ features a find function that locates macros, scripts and pl
 
 <div class="See">
 
-\[\[\#sub:Control-Panel...|Control Panel… \[U\]↓\]\], [Keyboard Shortcuts↓](#sec:Keyboard-Shortcuts "wikilink") and <span class="Filename">[SourceCodeRetriever](http://imagej.nih.gov/ij/macros/SourceCodeRetriever.txt)</span>, a macro that searches for a menu entry and retrieves the source file of the respective command
+\[\[\#sub:Control-Panel...|Control Panel… \[U\]↓\]\], [Keyboard Shortcuts↓](#sec_Keyboard-Shortcuts "wikilink") and <span class="Filename">[SourceCodeRetriever](http://imagej.nih.gov/ij/macros/SourceCodeRetriever.txt)</span>, a macro that searches for a menu entry and retrieves the source file of the respective command
 
 </div>
 
 ## Undo and Redo
 
-Probably the first thing you will notice is that ImageJ does not have a large [↓undo](#index-Undo "wikilink")/redo buffer. Undo (<span class="sans"><span class="menuitem"><span class="sans">Edit ▷ \[\[\#sub:Undo-%5Bz%5D|Undo \[z\]↓\]\]</span></span></span>) is currently limited to the most recent image editing / filtering operation. With time you will appreciate that this is necessary to minimize memory overhead. Nevertheless, with IJ 1.45 and later, <span class="sans"><span class="menuitem"><span class="sans">\[\[\#sub:Undo-%5Bz%5D|Undo \[z\]↓\]\]</span></span></span> is, in most cases, undoable and can be applied to multiple images if *Keep multiple undo buffers* is checked in <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Options ▷ [Memory & Threads…↓](#sub:Memory-&-Threads... "wikilink")</span></span></span>
+Probably the first thing you will notice is that ImageJ does not have a large [↓undo](#index-Undo "wikilink")/redo buffer. Undo (<span class="sans"><span class="menuitem"><span class="sans">Edit ▷ \[\[\#sub:Undo-%5Bz%5D|Undo \[z\]↓\]\]</span></span></span>) is currently limited to the most recent image editing / filtering operation. With time you will appreciate that this is necessary to minimize memory overhead. Nevertheless, with IJ 1.45 and later, <span class="sans"><span class="menuitem"><span class="sans">\[\[\#sub:Undo-%5Bz%5D|Undo \[z\]↓\]\]</span></span></span> is, in most cases, undoable and can be applied to multiple images if *Keep multiple undo buffers* is checked in <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Options ▷ [Memory & Threads…↓](#sub_Memory-&-Threads... "wikilink")</span></span></span>
 
 If you cannot recover from a mistake, you can always use <span class="sans"><span class="menuitem"><span class="sans">File ▷ \[\[\#sub:Revert%5Br%5D|Revert \[r\]↓\]\]</span></span></span> to reset the image lo its last saved state. For selections, <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Selection ▷ \[\[\#sub:Restore-Selection-%5BE%5D|Restore Selection \[E\]↓\]\]</span></span></span> can be used to recover any misdealt selection.
 
@@ -140,13 +140,13 @@ In ImageJ the equivalent to [↓](#index-Redo "wikilink")‘Redo’ is the <span
 
 <div class="See">
 
-<span class="sans"><span class="menuitem"><span class="sans">Plugins ▷ Utilities ▷ [Reset…↓](#sub:Reset... "wikilink")</span></span></span>, [Multi Undo](http://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:multi_undo:start) plugin
+<span class="sans"><span class="menuitem"><span class="sans">Plugins ▷ Utilities ▷ [Reset…↓](#sub_Reset... "wikilink")</span></span></span>, [Multi Undo](http://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:multi_undo:start) plugin
 
 </div>
 
 ## Image Types and Formats
 
-[↓Digital](#index-Image-types "wikilink") Images are two-dimensional grids of pixel[↓](#nom-pixel "wikilink") intensities values with the width and height of the image being defined by the number of pixels in <span class="formula">*x*</span> (rows) and <span class="formula">*y*</span> (columns) direction. Thus, pixels (picture elements) are the smallest single components of images, holding numeric values — pixel intensities — that range between black and white. The characteristics of this range, i.e., the number of unique intensity (brightness) values that can exist in the image is defined as the bit[↓](#nom-bit "wikilink")--depth of the image and specifies the level of precision in which intensities are coded, e.g.: A 2--bit image has <span class="formula">2<sup>2</sup> = 4</span> tones: 00 (black), 01 (gray), 10 (gray), and 11 (white). A 4--bit image has <span class="formula">2<sup>4</sup> = 16</span> tones ranging from 0000 (0) to 1111 (16), etc. In terms of bits per pixel (bpp[↓](#nom-bpp "wikilink")), the most frequent types of images (<span class="menuitem">Image ▷ [Type ▷ ↓](#sub:Type "wikilink")</span>) that ImageJ deals with are ([↓](#index-ImageJ2 "wikilink")[ImageJ2↑](#sub:ImageJ2intro "wikilink") supports [many more types of image data](http://imagejdev.org/imagej2-pixel-types)):
+[↓Digital](#index-Image-types "wikilink") Images are two-dimensional grids of pixel[↓](#nom-pixel "wikilink") intensities values with the width and height of the image being defined by the number of pixels in <span class="formula">*x*</span> (rows) and <span class="formula">*y*</span> (columns) direction. Thus, pixels (picture elements) are the smallest single components of images, holding numeric values — pixel intensities — that range between black and white. The characteristics of this range, i.e., the number of unique intensity (brightness) values that can exist in the image is defined as the bit[↓](#nom-bit "wikilink")--depth of the image and specifies the level of precision in which intensities are coded, e.g.: A 2--bit image has <span class="formula">2<sup>2</sup> = 4</span> tones: 00 (black), 01 (gray), 10 (gray), and 11 (white). A 4--bit image has <span class="formula">2<sup>4</sup> = 16</span> tones ranging from 0000 (0) to 1111 (16), etc. In terms of bits per pixel (bpp[↓](#nom-bpp "wikilink")), the most frequent types of images (<span class="menuitem">Image ▷ [Type ▷ ↓](#sub_Type "wikilink")</span>) that ImageJ deals with are ([↓](#index-ImageJ2 "wikilink")[ImageJ2↑](#sub_ImageJ2intro "wikilink") supports [many more types of image data](http://imagejdev.org/imagej2-pixel-types)):
 
 <div class="Labeling">
 
@@ -168,25 +168,25 @@ In ImageJ the equivalent to [↓](#index-Redo "wikilink")‘Redo’ is the <span
 
 <div class="Labeling">
 
-**RGB Color** [Color Images↓](#sec:Color-Images "wikilink") that can display 256 values in the Red, Green and Blue channel. These are 24--bit (<span class="formula">2<sup>3 × 8</sup></span>) images. RGB[↓](#nom-rgb "wikilink") color images can also be 32--bit color images (24--bit color images with additional eight bits coding alpha blending values, i.e., transparency).
+**RGB Color** [Color Images↓](#sec_Color-Images "wikilink") that can display 256 values in the Red, Green and Blue channel. These are 24--bit (<span class="formula">2<sup>3 × 8</sup></span>) images. RGB[↓](#nom-rgb "wikilink") color images can also be 32--bit color images (24--bit color images with additional eight bits coding alpha blending values, i.e., transparency).
 
 </div>
 
 ### Native Formats
 
-Natively (i.e. without the need of third-party plugins) ImageJ opens the following formats: **TIFF**[↓](#nom-tiff "wikilink"), **GIF**[↓](#nom-gif "wikilink"), **JPEG**[↓](#nom-jpeg "wikilink"), **PNG**[↓](#nom-png "wikilink"), **DICOM**[↓](#nom-dicom "wikilink"), **BMP**[↓](#nom-bmp "wikilink"), **PGM**[↓](#nom-pgm "wikilink") and **FITS**[↓](#nom-fits "wikilink"). [↓Many](#index-Image-formats-Native "wikilink") more formats are supported with the aid of plugins. These are discussed in [Non--native Formats ↓](#sub:Non-native-Supported-Formats "wikilink").
+Natively (i.e. without the need of third-party plugins) ImageJ opens the following formats: **TIFF**[↓](#nom-tiff "wikilink"), **GIF**[↓](#nom-gif "wikilink"), **JPEG**[↓](#nom-jpeg "wikilink"), **PNG**[↓](#nom-png "wikilink"), **DICOM**[↓](#nom-dicom "wikilink"), **BMP**[↓](#nom-bmp "wikilink"), **PGM**[↓](#nom-pgm "wikilink") and **FITS**[↓](#nom-fits "wikilink"). [↓Many](#index-Image-formats-Native "wikilink") more formats are supported with the aid of plugins. These are discussed in [Non--native Formats ↓](#sub_Non-native-Supported-Formats "wikilink").
 
 <div class="Labeling">
 
-**TIFF** (Tagged Image File Format) is the ‘default’ format of ImageJ (cf. <span class="sans"><span class="menuitem"><span class="sans">File ▷ \[\[\#sub:Save%5Bs%5D|Save \[s\]↓\]\]</span></span></span>). Images can be 1--bit, 8--bit, 16--bit (unsigned<span class="FootOuter"><span class="SupFootMarker"> \[C\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[C\] </span>A numeric variable is signed if it can represent both positive and negative numbers, and unsigned if it can only represent positive numbers.</span></span>), 32--bit (real) or RGB color. [↓TIFF](#index-TIFF "wikilink") files with multiple images of the same type and size open as [Stacks↓](#sub:Stacks-Intro "wikilink") or [Hyperstacks↓](#sub:Hyperstacks-Intro "wikilink"). ImageJ opens [↓lossless](#index-Lossless-compression "wikilink") compressed TIFF files (*see* [3↓](#infobox:Formats "wikilink") [Image Types: Lossy Compression and Metadata↓](#infobox:Formats "wikilink")) by the LZW[↓](#nom-lzw "wikilink")[↓](#index-LZW-compression "wikilink"), [↓PackBits](#index-PackBits-compression "wikilink") and [↓ZIP](#index-ZIP-Lossless-compression "wikilink") ([↓Deflate](#index-Deflate "wikilink")/Inflate) <span class="bibcites">[2]([#biblio-2 "wikilink")\]</span> compression schemes. In addition, TIFF files can be opened and saved as [↓ZIP](#index-ZIP-Archived-TIFF-files "wikilink") archives.  
-Tiff tags and information needed to import the file (number of images, offset to first images, gap between images) are printed to the [Log Window↓](#sec:Log-Window "wikilink") when ImageJ is running in *Debug Mode* (<span class="menuitem">Edit ▷ Options ▷ [Misc…↓](#sub:Misc... "wikilink")</span>, *see* [Settings and Preferences↓](#sec:Settings-and-Preferences "wikilink")).
+**TIFF** (Tagged Image File Format) is the ‘default’ format of ImageJ (cf. <span class="sans"><span class="menuitem"><span class="sans">File ▷ \[\[\#sub:Save%5Bs%5D|Save \[s\]↓\]\]</span></span></span>). Images can be 1--bit, 8--bit, 16--bit (unsigned<span class="FootOuter"><span class="SupFootMarker"> \[C\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[C\] </span>A numeric variable is signed if it can represent both positive and negative numbers, and unsigned if it can only represent positive numbers.</span></span>), 32--bit (real) or RGB color. [↓TIFF](#index-TIFF "wikilink") files with multiple images of the same type and size open as [Stacks↓](#sub_Stacks-Intro "wikilink") or [Hyperstacks↓](#sub_Hyperstacks-Intro "wikilink"). ImageJ opens [↓lossless](#index-Lossless-compression "wikilink") compressed TIFF files (*see* [3↓](#infobox_Formats "wikilink") [Image Types: Lossy Compression and Metadata↓](#infobox_Formats "wikilink")) by the LZW[↓](#nom-lzw "wikilink")[↓](#index-LZW-compression "wikilink"), [↓PackBits](#index-PackBits-compression "wikilink") and [↓ZIP](#index-ZIP-Lossless-compression "wikilink") ([↓Deflate](#index-Deflate "wikilink")/Inflate) <span class="bibcites">[2]([#biblio-2 "wikilink")\]</span> compression schemes. In addition, TIFF files can be opened and saved as [↓ZIP](#index-ZIP-Archived-TIFF-files "wikilink") archives.  
+Tiff tags and information needed to import the file (number of images, offset to first images, gap between images) are printed to the [Log Window↓](#sec_Log-Window "wikilink") when ImageJ is running in *Debug Mode* (<span class="menuitem">Edit ▷ Options ▷ [Misc…↓](#sub_Misc... "wikilink")</span>, *see* [Settings and Preferences↓](#sec_Settings-and-Preferences "wikilink")).
 
 </div>
 
 <div class="Labeling">
 
-**DICOM** (Digital Imaging and Communications in Medicine) is a standard popular in the medical imaging community. Support in ImageJ is limited to uncompressed [↓DICOM](#index-DICOM "wikilink") files. DICOM files containing multiple images open as [Stacks↓](#sub:Stacks-Intro "wikilink").  
-Use <span class="sans"><span class="menuitem"><span class="sans">Image ▷ [Show-Info...](#sub:Show-Info... "wikilink")</span></span></span>
+**DICOM** (Digital Imaging and Communications in Medicine) is a standard popular in the medical imaging community. Support in ImageJ is limited to uncompressed [↓DICOM](#index-DICOM "wikilink") files. DICOM files containing multiple images open as [Stacks↓](#sub_Stacks-Intro "wikilink").  
+Use <span class="sans"><span class="menuitem"><span class="sans">Image ▷ [Show-Info...](#sub_Show-Info... "wikilink")</span></span></span>
 
 <div class="PlainVisible">
 
@@ -200,13 +200,13 @@ Show Info… \[i\]
 
 </div>
 
-↓ to display the DICOM header information. A DICOM sequence can be opened using <span class="sans"><span class="menuitem"><span class="sans">File ▷ Import ▷ [<span class="menuitem">Image Sequence…</span>↓](#sub:Image-Sequence... "wikilink")</span></span></span> or by dragging and dropping the folder on the ‘ImageJ’ window. Imported sequences are sorted by image number instead of filename and the tags are preserved when DICOM images are saved in TIFF format. ImageJ supports custom DICOM dictionaries, such as the one at http://imagej.nih.gov/ij/download/docs/DICOM_Dictionary.txt. More information can be found at the [Center for Advanced Brain Imaging](http://www.cabiatl.com/mricro/dicom/index.html).
+↓ to display the DICOM header information. A DICOM sequence can be opened using <span class="sans"><span class="menuitem"><span class="sans">File ▷ Import ▷ [<span class="menuitem">Image Sequence…</span>↓](#sub_Image-Sequence... "wikilink")</span></span></span> or by dragging and dropping the folder on the ‘ImageJ’ window. Imported sequences are sorted by image number instead of filename and the tags are preserved when DICOM images are saved in TIFF format. ImageJ supports custom DICOM dictionaries, such as the one at http://imagej.nih.gov/ij/download/docs/DICOM_Dictionary.txt. More information can be found at the [Center for Advanced Brain Imaging](http://www.cabiatl.com/mricro/dicom/index.html).
 
 </div>
 
 <div class="Labeling">
 
-**FITS** (Flexible Image Transport System) image is the format adopted by the astronomical community for data interchange and archival storage. Use <span class="sans"><span class="menuitem"><span class="sans">Image ▷ [Show-Info...](#sub:Show-Info... "wikilink")</span></span></span>
+**FITS** (Flexible Image Transport System) image is the format adopted by the astronomical community for data interchange and archival storage. Use <span class="sans"><span class="menuitem"><span class="sans">Image ▷ [Show-Info...](#sub_Show-Info... "wikilink")</span></span></span>
 
 <div class="PlainVisible">
 
@@ -238,7 +238,7 @@ Show Info… \[i\]
 
 <div class="See">
 
-[Non--native Formats ↓](#sub:Non-native-Supported-Formats "wikilink"), [3↓](#infobox:Formats "wikilink") [Image Types: Lossy Compression and Metadata↓](#infobox:Formats "wikilink"), [11↓](#infobox:JpegAlert "wikilink") [Warning on JPEG Compression↓](#infobox:JpegAlert "wikilink")
+[Non--native Formats ↓](#sub_Non-native-Supported-Formats "wikilink"), [3↓](#infobox_Formats "wikilink") [Image Types: Lossy Compression and Metadata↓](#infobox_Formats "wikilink"), [11↓](#infobox_JpegAlert "wikilink") [Warning on JPEG Compression↓](#infobox_JpegAlert "wikilink")
 
 </div>
 
@@ -256,7 +256,7 @@ In addition, the ImageJ web site lists [more than sixty plugins](http://imagej.n
 
 <div class="See">
 
-[Native Formats↑](#sub:Native-Formats "wikilink"), <span class="sans"><span class="menuitem"><span class="sans">File ▷ [Import ▷ ↓](#sub:Import "wikilink")</span></span></span>, [3↓](#infobox:Formats "wikilink") [Image Types: Lossy Compression and Metadata↓](#infobox:Formats "wikilink"), [11↓](#infobox:JpegAlert "wikilink") [Warning on JPEG Compression↓](#infobox:JpegAlert "wikilink"), [Acquisition plugins](http://imagej.nih.gov/ij/plugins/#acq), [Input/Output plugins](http://imagej.nih.gov/ij/plugins/#io)
+[Native Formats↑](#sub_Native-Formats "wikilink"), <span class="sans"><span class="menuitem"><span class="sans">File ▷ [Import ▷ ↓](#sub_Import "wikilink")</span></span></span>, [3↓](#infobox_Formats "wikilink") [Image Types: Lossy Compression and Metadata↓](#infobox_Formats "wikilink"), [11↓](#infobox_JpegAlert "wikilink") [Warning on JPEG Compression↓](#infobox_JpegAlert "wikilink"), [Acquisition plugins](http://imagej.nih.gov/ij/plugins/#acq), [Input/Output plugins](http://imagej.nih.gov/ij/plugins/#io)
 
 </div>
 
@@ -276,13 +276,13 @@ Two critical aspects to keep in mind when converting images:
 
 <div class="Description">
 
-<span class="Description-entry">[]( "wikilink")</span> [Lossy]( "wikilink") compression Transcoding an image into a format that uses [↓lossy](#index-Lossy-compression "wikilink") compression will alter the original data, introducing artifacts (*see* [11↓](#infobox:JpegAlert "wikilink") [Warning on JPEG Compression↓](#infobox:JpegAlert "wikilink")). This is the case, e.g., for JPEG formats (with the exception of some [↓JPEG](#index-JPEG2000 "wikilink")2000 images that use lossless compression). As such, these types of data are intended for human interpretation only and are not suitable for quantitative analyses
+<span class="Description-entry">[]( "wikilink")</span> [Lossy]( "wikilink") compression Transcoding an image into a format that uses [↓lossy](#index-Lossy-compression "wikilink") compression will alter the original data, introducing artifacts (*see* [11↓](#infobox_JpegAlert "wikilink") [Warning on JPEG Compression↓](#infobox_JpegAlert "wikilink")). This is the case, e.g., for JPEG formats (with the exception of some [↓JPEG](#index-JPEG2000 "wikilink")2000 images that use lossless compression). As such, these types of data are intended for human interpretation only and are not suitable for quantitative analyses
 
 </div>
 
 <div class="Description">
 
-<span class="Description-entry">[]( "wikilink")</span> [Metadata]( "wikilink") In ImageJ, [↓metadata](#index-Metadata "wikilink") associated with the image, such as scale, gray value calibration and user comments is only supported in tiff and zip (compressed tiff) images. In addition, selections and [Overlays↓](#sub:Overlay-Intro "wikilink") are also saved in the TIFF header (cf. <span class="sans"><span class="menuitem">File ▷ \[\[\#sub:Save%5Bs%5D|Save \[s\]↓\]\]</span></span>). None of the above is saved in other formats (cf. [Native Formats↑](#sub:Native-Formats "wikilink")).
+<span class="Description-entry">[]( "wikilink")</span> [Metadata]( "wikilink") In ImageJ, [↓metadata](#index-Metadata "wikilink") associated with the image, such as scale, gray value calibration and user comments is only supported in tiff and zip (compressed tiff) images. In addition, selections and [Overlays↓](#sub_Overlay-Intro "wikilink") are also saved in the TIFF header (cf. <span class="sans"><span class="menuitem">File ▷ \[\[\#sub:Save%5Bs%5D|Save \[s\]↓\]\]</span></span>). None of the above is saved in other formats (cf. [Native Formats↑](#sub_Native-Formats "wikilink")).
 
 </div>
 
@@ -298,7 +298,7 @@ ImageJ can display multiple spatially or temporally related images in a single w
 
 All the slices in a stack must be the same size and bit depth. A scrollbar provides the ability to move through the slices and the slider is preceded by a play/pause icon that can be used to start/stop stack animation. Right-clicking on this icon runs the <span class="menuitem">\[\[\#sub:Animation-Options...|Animation Options… \[Alt /\]↓\]\]</span> dialog box.
 
-Most ImageJ filters will, as an option, process all the slices in a stack. ImageJ opens multi-image TIFF files as a stack, and saves stacks as multi-image TIFFs. The <span class="menuitem"><span class="sans">File ▷ Import ▷ </span>[Raw…↓](#sub:Import%3ERaw "wikilink")</span> command opens other multi-image, uncompressed files. A folder of images can be opened as a stack either by dragging and dropping the folder onto the ‘ImageJ’ window or or by choosing <span class="menuitem"><span class="sans">File ▷ Import ▷ </span>[<span class="menuitem">Image Sequence…</span>↓](#sub:Image-Sequence... "wikilink")</span> To create a new stack, simply choose <span class="menuitem">File ▷ New ▷ \[\[\#sub:Image...%5Bn%5D|Image… \[n\]↓\]\]</span> and set the *Slices* field to a value greater than one. The <span class="menuitem">Image ▷ [Stacks ▷ ↓](#sub:Stacks "wikilink")</span> submenu contains commands for common stack operations.
+Most ImageJ filters will, as an option, process all the slices in a stack. ImageJ opens multi-image TIFF files as a stack, and saves stacks as multi-image TIFFs. The <span class="menuitem"><span class="sans">File ▷ Import ▷ </span>[Raw…↓](#sub_Import%3ERaw "wikilink")</span> command opens other multi-image, uncompressed files. A folder of images can be opened as a stack either by dragging and dropping the folder onto the ‘ImageJ’ window or or by choosing <span class="menuitem"><span class="sans">File ▷ Import ▷ </span>[<span class="menuitem">Image Sequence…</span>↓](#sub_Image-Sequence... "wikilink")</span> To create a new stack, simply choose <span class="menuitem">File ▷ New ▷ \[\[\#sub:Image...%5Bn%5D|Image… \[n\]↓\]\]</span> and set the *Slices* field to a value greater than one. The <span class="menuitem">Image ▷ [Stacks ▷ ↓](#sub_Stacks "wikilink")</span> submenu contains commands for common stack operations.
 
 <div class="float">
 
@@ -306,11 +306,11 @@ Most ImageJ filters will, as an option, process all the slices in a stack. Image
 
 <div class="figure">
 
-![figure images/StacksHyperstacks.png](/images/pages/Images/StacksHyperstacks.png "figure images/StacksHyperstacks.png")
+![figure images/StacksHyperstacks.png](images/StacksHyperstacks.png "figure images/StacksHyperstacks.png")
 
 <div class="caption">
 
-Figure 2 **Stacks and Hyperstacks in ImageJ:<span class="sans"></span>** <span class="menuitem">File ▷ Open Samples ▷ Mitosis (26MB, 5D stack)</span>. Hyperstacks dimensionality can be reduced using <span class="menuitem">Image ▷ Hyperstacks ▷ [Reduce Dimensionality…↓](#sub:Reduce-Dimensionality... "wikilink")</span>, <span class="menuitem">Image ▷ Stacks ▷ [<span class="menuitem">Z Project…</span>↓](#sub:Z-Project... "wikilink")</span> or <span class="menuitem">Image ▷ Hyperstacks ▷ \[\[\#sub:Channels...%5BZ%5D|Channels Tool… \[Z\]↓\]\]</span> The ‘(V)’ on the window title denotes a virtual image (*see* [Virtual Stacks↓](#sub:Virtual-Stacks "wikilink")).
+Figure 2 **Stacks and Hyperstacks in ImageJ:<span class="sans"></span>** <span class="menuitem">File ▷ Open Samples ▷ Mitosis (26MB, 5D stack)</span>. Hyperstacks dimensionality can be reduced using <span class="menuitem">Image ▷ Hyperstacks ▷ [Reduce Dimensionality…↓](#sub_Reduce-Dimensionality... "wikilink")</span>, <span class="menuitem">Image ▷ Stacks ▷ [<span class="menuitem">Z Project…</span>↓](#sub_Z-Project... "wikilink")</span> or <span class="menuitem">Image ▷ Hyperstacks ▷ \[\[\#sub:Channels...%5BZ%5D|Channels Tool… \[Z\]↓\]\]</span> The ‘(V)’ on the window title denotes a virtual image (*see* [Virtual Stacks↓](#sub_Virtual-Stacks "wikilink")).
 
 </div>
 
@@ -320,7 +320,7 @@ Figure 2 **Stacks and Hyperstacks in ImageJ:<span class="sans"></span>** <span
 
 <div class="See">
 
-<span class="small">[Stacks Menu↓](#sub:StacksMenu "wikilink"), [Stack Manipulations](https://fiji.sc/wiki/index.php/Stack_Manipulation) on Fiji website, [Image5D](http://imagej.nih.gov/ij/plugins/image5d.html)</span>
+<span class="small">[Stacks Menu↓](#sub_StacksMenu "wikilink"), [Stack Manipulations](https://fiji.sc/wiki/index.php/Stack_Manipulation) on Fiji website, [Image5D](http://imagej.nih.gov/ij/plugins/image5d.html)</span>
 
 </div>
 
@@ -328,8 +328,8 @@ Figure 2 **Stacks and Hyperstacks in ImageJ:<span class="sans"></span>** <span
 
 [↓](#index-Stacks-Virtual "wikilink")[↓Virtual](#index-Virtual-stacks "wikilink") stacks are disk resident (as opposed to RAM[↓](#nom-ram "wikilink") resident) and are the only way to load image sequences that do not fit in RAM. There are several things to keep in mind when working with virtual stacks:
 
-  - Virtual stacks are read-only, so changes made to the pixel data are not saved when you switch to a different slice. You can work around this by using macros (e.g., <span class="small">[Process Virtual Stack](http://imagej.nih.gov/ij/macros/Process_Virtual_Stack.txt)</span><span class="default">) or the <span class="sans"><span class="menuitem"><span class="sans">Process ▷ Batch ▷ [<span class="menuitem">Virtual Stack…</span>↓](#sub:Virtual-Stack... "wikilink")</span></span></span> command</span>
-  - You can easily run out of memory using commands like <span class="sans"><span class="menuitem"><span class="sans">Image ▷ </span>[Crop-%5BX%5D](#sub:Crop-%5BX%5D "wikilink")</span></span>
+  - Virtual stacks are read-only, so changes made to the pixel data are not saved when you switch to a different slice. You can work around this by using macros (e.g., <span class="small">[Process Virtual Stack](http://imagej.nih.gov/ij/macros/Process_Virtual_Stack.txt)</span><span class="default">) or the <span class="sans"><span class="menuitem"><span class="sans">Process ▷ Batch ▷ [<span class="menuitem">Virtual Stack…</span>↓](#sub_Virtual-Stack... "wikilink")</span></span></span> command</span>
+  - You can easily run out of memory using commands like <span class="sans"><span class="menuitem"><span class="sans">Image ▷ </span>[Crop-%5BX%5D](#sub_Crop-%5BX%5D "wikilink")</span></span>
     <div class="PlainVisible">
     <span class="menuitem"></span>
     <div class="PlainVisible">
@@ -337,9 +337,9 @@ Figure 2 **Stacks and Hyperstacks in ImageJ:<span class="sans"></span>** <span
     </div>
     </div>
     ↓ because any stack generated from commands that do not generate virtual stacks will be RAM resident.
-  - TIFF virtual stacks can usually be accessed faster than [↓JPEG](#index-JPEG "wikilink") virtual stacks. A JPEG sequence can be converted to TIFF by opening the JPEG images as a virtual stack and using <span class="sans"><span class="menuitem"><span class="sans">File ▷ Save As ▷ </span>[<span class="menuitem">Image Sequence…</span>↓](#sub:SaveAs%3EImage-Seq... "wikilink")</span></span> to save in TIFF format
+  - TIFF virtual stacks can usually be accessed faster than [↓JPEG](#index-JPEG "wikilink") virtual stacks. A JPEG sequence can be converted to TIFF by opening the JPEG images as a virtual stack and using <span class="sans"><span class="menuitem"><span class="sans">File ▷ Save As ▷ </span>[<span class="menuitem">Image Sequence…</span>↓](#sub_SaveAs%3EImage-Seq... "wikilink")</span></span> to save in TIFF format
 
-ImageJ appends a ‘(V)’ to the window title of virtual stacks and hyperstacks (*see* [Hyperstacks↓](#sub:Hyperstacks-Intro "wikilink")). Several built-in ImageJ commands in the <span class="sans"><span class="menuitem"><span class="sans">File ▷ </span>[Import ▷ ↓](#sub:Import "wikilink")</span></span> submenu have the ability to open virtual stacks, namely: <span class="menuitem">[TIFF Virtual Stack…↓](#sub:Import%3ETIFF-Virtual-Stack "wikilink")</span>, <span class="menuitem">[<span class="menuitem">Image Sequence…</span>↓](#sub:Image-Sequence... "wikilink")</span>, <span class="menuitem">[Raw…↓](#sub:Import%3ERaw "wikilink")</span>,<span class="sans"> </span><span class="menuitem">[<span class="menuitem">Stack From List…</span>↓](#sub:Stack-From-List... "wikilink")</span>,<span class="sans"> </span><span class="menuitem">[<span class="menuitem">AVI…</span>↓](#sub:Import%3EAVI... "wikilink")</span> (cf. [Virtual Stack Opener](http://imagej.nih.gov/ij/plugins/virtual-opener.html)). In addition, TIFF stacks can be open as virtual stacks by drag and drop (cf. [4↓](#infobox:VirtualTiff "wikilink") [Opening Virtual Stacks by Drag & Drop↓](#infobox:VirtualTiff "wikilink")).
+ImageJ appends a ‘(V)’ to the window title of virtual stacks and hyperstacks (*see* [Hyperstacks↓](#sub_Hyperstacks-Intro "wikilink")). Several built-in ImageJ commands in the <span class="sans"><span class="menuitem"><span class="sans">File ▷ </span>[Import ▷ ↓](#sub_Import "wikilink")</span></span> submenu have the ability to open virtual stacks, namely: <span class="menuitem">[TIFF Virtual Stack…↓](#sub_Import%3ETIFF-Virtual-Stack "wikilink")</span>, <span class="menuitem">[<span class="menuitem">Image Sequence…</span>↓](#sub_Image-Sequence... "wikilink")</span>, <span class="menuitem">[Raw…↓](#sub_Import%3ERaw "wikilink")</span>,<span class="sans"> </span><span class="menuitem">[<span class="menuitem">Stack From List…</span>↓](#sub_Stack-From-List... "wikilink")</span>,<span class="sans"> </span><span class="menuitem">[<span class="menuitem">AVI…</span>↓](#sub_Import%3EAVI... "wikilink")</span> (cf. [Virtual Stack Opener](http://imagej.nih.gov/ij/plugins/virtual-opener.html)). In addition, TIFF stacks can be open as virtual stacks by drag and drop (cf. [4↓](#infobox_VirtualTiff "wikilink") [Opening Virtual Stacks by Drag & Drop↓](#infobox_VirtualTiff "wikilink")).
 
 <div class="See">
 
@@ -359,7 +359,7 @@ float-infobox4 Opening Virtual Stacks by Drag & Drop
 
 </div>
 
-TIFF stacks with a <span class="Filename">.tif</span> extension open as virtual stacks when dragged and dropped on the<span class="sans"> ![figure images/tools/Switcher-small.png](/images/pages/Images/tools/Switcher-small.png "figure images/tools/Switcher-small.png")  </span>toolbar icon.
+TIFF stacks with a <span class="Filename">.tif</span> extension open as virtual stacks when dragged and dropped on the<span class="sans"> ![figure images/tools/Switcher-small.png](images/tools/Switcher-small.png "figure images/tools/Switcher-small.png")  </span>toolbar icon.
 
 <div class="medskip">
 
@@ -369,7 +369,7 @@ TIFF stacks with a <span class="Filename">.tif</span> extension open as virtual 
 
 <div class="center">
 
-![figure images/DragAndDropVirtualTiff.png](/images/pages/Images/DragAndDropVirtualTiff.png "figure images/DragAndDropVirtualTiff.png")
+![figure images/DragAndDropVirtualTiff.png](images/DragAndDropVirtualTiff.png "figure images/DragAndDropVirtualTiff.png")
 
 </div>
 
@@ -381,11 +381,11 @@ TIFF stacks with a <span class="Filename">.tif</span> extension open as virtual 
 
 ### Hyperstacks
 
-[↓Hyperstacks](#index-Stacks-Hyperstacks "wikilink") are multidimensional images, extending image stacks to four (4D) or five (5D) dimensions: <span class="formula">*x*</span> (width), <span class="formula">*y*</span> (height), <span class="formula">*z*</span> (slices), <span class="formula">*c*</span> (channels or wavelengths) and <span class="formula">*t*</span> (time frames). Hyperstacks are displayed in a window with three labelled scrollbars (*see* [Stacks and Hyperstacks↑](#fig:Stacks-and-Hyperstacks "wikilink")). Similarly to the scrollbar in [Stacks↑](#sub:Stacks-Intro "wikilink"), the frame slider (*t*) has a play/pause icon.
+[↓Hyperstacks](#index-Stacks-Hyperstacks "wikilink") are multidimensional images, extending image stacks to four (4D) or five (5D) dimensions: <span class="formula">*x*</span> (width), <span class="formula">*y*</span> (height), <span class="formula">*z*</span> (slices), <span class="formula">*c*</span> (channels or wavelengths) and <span class="formula">*t*</span> (time frames). Hyperstacks are displayed in a window with three labelled scrollbars (*see* [Stacks and Hyperstacks↑](#fig_Stacks-and-Hyperstacks "wikilink")). Similarly to the scrollbar in [Stacks↑](#sub_Stacks-Intro "wikilink"), the frame slider (*t*) has a play/pause icon.
 
 <div class="See">
 
-<span class="menuitem"><span class="sans">Image</span> ▷ [Hyperstacks ▷ ↓](#sub:Hyperstacks "wikilink")</span> submenu
+<span class="menuitem"><span class="sans">Image</span> ▷ [Hyperstacks ▷ ↓](#sub_Hyperstacks "wikilink")</span> submenu
 
 </div>
 
@@ -397,17 +397,17 @@ TIFF stacks with a <span class="Filename">.tif</span> extension open as virtual 
 
 A pseudocolor (or indexed color) image is a single channel gray image (8, 16 or 32--bit) that has color assigned to it via a lookup table or LUT[↓](#nom-lut "wikilink")[↓](#index-LUT "wikilink"). A LUT is literally a predefined table of gray values with matching red, green and blue values so that shadows of gray are displayed as colorized pixels. Thus, differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged.
 
-8-bit indexed color images (such as GIFs) are a special case of pseudocolor images as their lookup table is stored in the file with the image. These images are limited to 256 colors (24--bit RGB images allow 16.7 million of colors, *see* [Image Types and Formats↑](#sec:Image-Types "wikilink")) and concomitantly smaller file sizes. Reduction of true color values to a 256 [↓color](#index-Color-palette "wikilink") palette is performed by color quantization algorithms. ImageJ uses the [↓](#index-Color-Quantization "wikilink")[↓](#index-Heckbert-quantization "wikilink")[↓Heckbert](#index-Algorithm-Heckbert-quantization "wikilink")’s median-cut color quantization algorithm (*see* <span class="menuitem">Image ▷ [Type ▷ ↓](#sub:Type "wikilink")</span> menu), which, in most cases, allows indexed color images to look nearly identical to their 24-bit originals.
+8-bit indexed color images (such as GIFs) are a special case of pseudocolor images as their lookup table is stored in the file with the image. These images are limited to 256 colors (24--bit RGB images allow 16.7 million of colors, *see* [Image Types and Formats↑](#sec_Image-Types "wikilink")) and concomitantly smaller file sizes. Reduction of true color values to a 256 [↓color](#index-Color-palette "wikilink") palette is performed by color quantization algorithms. ImageJ uses the [↓](#index-Color-Quantization "wikilink")[↓](#index-Heckbert-quantization "wikilink")[↓Heckbert](#index-Algorithm-Heckbert-quantization "wikilink")’s median-cut color quantization algorithm (*see* <span class="menuitem">Image ▷ [Type ▷ ↓](#sub_Type "wikilink")</span> menu), which, in most cases, allows indexed color images to look nearly identical to their 24-bit originals.
 
 <div class="See">
 
-<span class="menuitem"><span class="sans">Image</span> ▷ [Lookup Tables ▷ ↓](#sub:Lookup-Tables "wikilink")</span> and [LUT Menu↓](#sub:LUTMenu "wikilink")
+<span class="menuitem"><span class="sans">Image</span> ▷ [Lookup Tables ▷ ↓](#sub_Lookup-Tables "wikilink")</span> and [LUT Menu↓](#sub_LUTMenu "wikilink")
 
 </div>
 
 ### True Color Images
 
-As described in [Image Types and Formats↑](#sec:Image-Types "wikilink"), true color images such as RGB images reflect genuine colors, i.e., the green in an RGB image reflects green color in the specimen. Color images are typically produced by color CCD[↓](#nom-ccd "wikilink") cameras, in which [↓color](#index-Color-filter-array "wikilink") filter arrays ([Bayer masks](http://en.wikipedia.org/wiki/Bayer_filter)) are placed over the image sensor.[↓](#index-CCD "wikilink")
+As described in [Image Types and Formats↑](#sec_Image-Types "wikilink"), true color images such as RGB images reflect genuine colors, i.e., the green in an RGB image reflects green color in the specimen. Color images are typically produced by color CCD[↓](#nom-ccd "wikilink") cameras, in which [↓color](#index-Color-filter-array "wikilink") filter arrays ([Bayer masks](http://en.wikipedia.org/wiki/Bayer_filter)) are placed over the image sensor.[↓](#index-CCD "wikilink")
 
 #### Color Spaces and Color Separation
 
@@ -419,7 +419,7 @@ As described in [Image Types and Formats↑](#sec:Image-Types "wikilink"), true 
 
 <div class="figure" style="max-width: 100%;">
 
-![figure images/RGB-HSBcolorModels.png](/images/pages/Images/RGB-HSBcolorModels.png "figure images/RGB-HSBcolorModels.png")
+![figure images/RGB-HSBcolorModels.png](images/RGB-HSBcolorModels.png "figure images/RGB-HSBcolorModels.png")
 
 <div class="caption">
 
@@ -431,9 +431,9 @@ Figure 3 **Representation of an eight pixel color image in the RGB and HSB col
 
 </div>
 
-RGB (Red, Green, Blue) is the most commonly-used color space. However, other alternatives such as HSB (Hue, Saturation, Brightness) provide significant advantages when processing color information. In the HSB color space, *Hue* describes the attribute of pure color, and therefore distinguishes between colors. *Saturation* (sometimes called “purity” or “vibrancy”) characterizes the shade of color, i.e., how much white is added to the pure color. *Brightness* (also know as *Value* — HSV system) describes the overall brightness of the color (*see* e.g., the color palette of [Color Picker window↓](#fig:CPtool "wikilink")). In terms of digital imaging processing, using the HSB system over the traditional RGB is often advantageous: e.g., since the Brightness component of an HSB image corresponds to the grayscale version of that image, processing only the brightness channel in routines that require grayscale images is a significant computational gain<span class="FootOuter"><span class="SupFootMarker"> \[E\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[E\] </span>*See* Wootton R, Springall DR, Polak JM. Image Analysis in Histology: Conventional and Confocal Microscopy. *Cambridge University Press*, 1995*,* ISBN 0521434823</span></span>. You can read more about the HSB color model [here](http://en.wikipedia.org/wiki/HSB_color_space).
+RGB (Red, Green, Blue) is the most commonly-used color space. However, other alternatives such as HSB (Hue, Saturation, Brightness) provide significant advantages when processing color information. In the HSB color space, *Hue* describes the attribute of pure color, and therefore distinguishes between colors. *Saturation* (sometimes called “purity” or “vibrancy”) characterizes the shade of color, i.e., how much white is added to the pure color. *Brightness* (also know as *Value* — HSV system) describes the overall brightness of the color (*see* e.g., the color palette of [Color Picker window↓](#fig_CPtool "wikilink")). In terms of digital imaging processing, using the HSB system over the traditional RGB is often advantageous: e.g., since the Brightness component of an HSB image corresponds to the grayscale version of that image, processing only the brightness channel in routines that require grayscale images is a significant computational gain<span class="FootOuter"><span class="SupFootMarker"> \[E\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[E\] </span>*See* Wootton R, Springall DR, Polak JM. Image Analysis in Histology: Conventional and Confocal Microscopy. *Cambridge University Press*, 1995*,* ISBN 0521434823</span></span>. You can read more about the HSB color model [here](http://en.wikipedia.org/wiki/HSB_color_space).
 
-In ImageJ, conversions between image types are performed using the <span class="menuitem"><span class="sans"><span class="small">Image</span></span><span class="default"> ▷ [Type ▷ ↓](#sub:Type "wikilink")</span></span> submenu. Segmentation on the HSB, RGB, CIE Lab and YUV color spaces can be performed by the <span class="menuitem"><span class="sans"><span class="small">Image</span></span><span class="default"> ▷ Adjust ▷ [Color Threshold…↓](#sub:Color-Threshold... "wikilink")</span></span> command <span class="bibcites">[20]([#biblio-20 "wikilink")\]</span>. Segregation of color components (specially useful for quantification of [↓](#index-Color-Deconvolution "wikilink")[↓](#index-Color-Separation "wikilink")[↓histochemical](#index-Immunohistochemistry "wikilink") staining) is also possible using Gabriel Landini’s [Colour Deconvolution](http://www.dentistry.bham.ac.uk/landinig/software/cdeconv/cdeconv.html) plugin. In addition, several other plugins related to color processing can be obtained from the [ImageJ website](http://imagej.nih.gov/ij/plugins/index.html#color).
+In ImageJ, conversions between image types are performed using the <span class="menuitem"><span class="sans"><span class="small">Image</span></span><span class="default"> ▷ [Type ▷ ↓](#sub_Type "wikilink")</span></span> submenu. Segmentation on the HSB, RGB, CIE Lab and YUV color spaces can be performed by the <span class="menuitem"><span class="sans"><span class="small">Image</span></span><span class="default"> ▷ Adjust ▷ [Color Threshold…↓](#sub_Color-Threshold... "wikilink")</span></span> command <span class="bibcites">[20]([#biblio-20 "wikilink")\]</span>. Segregation of color components (specially useful for quantification of [↓](#index-Color-Deconvolution "wikilink")[↓](#index-Color-Separation "wikilink")[↓histochemical](#index-Immunohistochemistry "wikilink") staining) is also possible using Gabriel Landini’s [Colour Deconvolution](http://www.dentistry.bham.ac.uk/landinig/software/cdeconv/cdeconv.html) plugin. In addition, several other plugins related to color processing can be obtained from the [ImageJ website](http://imagej.nih.gov/ij/plugins/index.html#color).
 
 #### Conveying Color Information<span class="FootOuter"><span class="SupFootMarker"> \[F\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[F\] </span>This section is partially extracted from Masataka Okabe and Kei Ito, *Color Universal Design (CUD) — How to make figures and presentations that are friendly to Colorblind people*, http://jfly.iam.u-tokyo.ac.jp/color/>, accessed 2009.01.15</span></span
 
@@ -451,11 +451,11 @@ People see color with significant variations. Indeed, the popular phrase “One 
 
 <div class="figure" style="max-width: 100%;">
 
-![figure images/Dichromacy.png](/images/pages/Images/Dichromacy.png "figure images/Dichromacy.png")
+![figure images/Dichromacy.png](images/Dichromacy.png "figure images/Dichromacy.png")
 
 <div class="caption">
 
-Figure 4 **Red--green images and partial color blindness.** Deuteranopia (second panel), protanopia (third panel) are the most common types of partial color blindness (red / green confusion). Tritanopia (blue / orange confusion, fourth panel) is quite rare. [Replacing Red with Magenta in RGB Images↓](#infobox:Replacing-Red-w-Magenta "wikilink") (bottom row) is a simple way to compensate for color vision deficiencies.
+Figure 4 **Red--green images and partial color blindness.** Deuteranopia (second panel), protanopia (third panel) are the most common types of partial color blindness (red / green confusion). Tritanopia (blue / orange confusion, fourth panel) is quite rare. [Replacing Red with Magenta in RGB Images↓](#infobox_Replacing-Red-w-Magenta "wikilink") (bottom row) is a simple way to compensate for color vision deficiencies.
 
 </div>
 
@@ -463,7 +463,7 @@ Figure 4 **Red--green images and partial color blindness.** Deuteranopia (seco
 
 </div>
 
-One practical point defined by the [Color Universal Design](http://jfly.iam.u-tokyo.ac.jp/color/) is the use of magenta in red--green overlays (*see also* <span class="bibcites">[<span class="bib-index">47</span>]([#biblio-97 "wikilink")\]</span>). Magenta is the equal mixture of red and blue. Colorblind people that have difficulties recognizing the red component can easily recognize the blue hue. The region of double positive becomes white, which is easily distinguishable for colorblind. In ImageJ this is easily accomplished using the <span class="menuitem">Image ▷ Color ▷ [<span class="menuitem">Merge Channels…</span>↓](#sub:Merge-Channels... "wikilink")</span>, or using the ImageJ macro language (*see* [5↓](#infobox:Replacing-Red-w-Magenta "wikilink") [Replacing Red with Magenta in RGB Images↓](#infobox:Replacing-Red-w-Magenta "wikilink")).
+One practical point defined by the [Color Universal Design](http://jfly.iam.u-tokyo.ac.jp/color/) is the use of magenta in red--green overlays (*see also* <span class="bibcites">[<span class="bib-index">47</span>]([#biblio-97 "wikilink")\]</span>). Magenta is the equal mixture of red and blue. Colorblind people that have difficulties recognizing the red component can easily recognize the blue hue. The region of double positive becomes white, which is easily distinguishable for colorblind. In ImageJ this is easily accomplished using the <span class="menuitem">Image ▷ Color ▷ [<span class="menuitem">Merge Channels…</span>↓](#sub_Merge-Channels... "wikilink")</span>, or using the ImageJ macro language (*see* [5↓](#infobox_Replacing-Red-w-Magenta "wikilink") [Replacing Red with Magenta in RGB Images↓](#infobox_Replacing-Red-w-Magenta "wikilink")).
 
 <div class="float">
 
@@ -477,7 +477,7 @@ float-infobox5 Replacing Red with Magenta in RGB Images
 
 </div>
 
-When building RGB images, magenta can be obtained using the <span class="menuitem">Image ▷ Color ▷ [<span class="menuitem">Merge Channels…</span>↓](#sub:Merge-Channels... "wikilink")</span> Previously created RGB images can be converted to [↓](#index-Magenta-Green-Blue-\(MGB\) "wikilink")‘MGB’ using <span class="menuitem">Image ▷ Color ▷ \[\[\#sub:Channels...%5BZ%5D|Channels Tool… \[Z\]↓\]\]</span>. Alternatively, the <span class="sans"><span class="menuitem"><span class="sans">Process ▷ [Image Calculator…↓](#sub:Image-Calculator... "wikilink")</span></span></span> command can be used to add the red channel to the blue channel. Both these approaches can be automated using the ImageJ macro language as exemplified by Macros [(11↓)](#lis:RGBtoMGB1 "wikilink") and [(7↓)](#lis:RGBtoMGB2 "wikilink"). Once saved in the <span class="Directory">ImageJ/plugins/</span> folder these [Macros↓](#sub:Macros-ExtendingIJ "wikilink") are treated as regular ImageJ commands.
+When building RGB images, magenta can be obtained using the <span class="menuitem">Image ▷ Color ▷ [<span class="menuitem">Merge Channels…</span>↓](#sub_Merge-Channels... "wikilink")</span> Previously created RGB images can be converted to [↓](#index-Magenta-Green-Blue-\(MGB\) "wikilink")‘MGB’ using <span class="menuitem">Image ▷ Color ▷ \[\[\#sub:Channels...%5BZ%5D|Channels Tool… \[Z\]↓\]\]</span>. Alternatively, the <span class="sans"><span class="menuitem"><span class="sans">Process ▷ [Image Calculator…↓](#sub_Image-Calculator... "wikilink")</span></span></span> command can be used to add the red channel to the blue channel. Both these approaches can be automated using the ImageJ macro language as exemplified by Macros [(11↓)](#lis_RGBtoMGB1 "wikilink") and [(7↓)](#lis_RGBtoMGB2 "wikilink"). Once saved in the <span class="Directory">ImageJ/plugins/</span> folder these [Macros↓](#sub_Macros-ExtendingIJ "wikilink") are treated as regular ImageJ commands.
 
 <div class="medskip">
 
@@ -485,7 +485,7 @@ When building RGB images, magenta can be obtained using the <span class="menuite
 
 <div class="PlainVisible">
 
-In [Fiji↑](#sub:Fiji-intro "wikilink"), as expected, the procedure of modifying RGB images is simpler: one just needs to run <span class="sans"><span class="menuitem"><span class="sans">Image ▷ Color ▷ Replace Red with Magenta</span></span></span>. For even more convenience, Fiji provides an analogous command that replaces the system clipboard’s image with a magenta-green one.
+In [Fiji↑](#sub_Fiji-intro "wikilink"), as expected, the procedure of modifying RGB images is simpler: one just needs to run <span class="sans"><span class="menuitem"><span class="sans">Image ▷ Color ▷ Replace Red with Magenta</span></span></span>. For even more convenience, Fiji provides an analogous command that replaces the system clipboard’s image with a magenta-green one.
 
 </div>
 
@@ -493,7 +493,7 @@ In [Fiji↑](#sub:Fiji-intro "wikilink"), as expected, the procedure of modifyin
 
 </div>
 
-It is also possible to simulate color blindness using the [Vischeck](http://www.vischeck.com/downloads/) or [Dichromacy](http://www.dentistry.bham.ac.uk/landinig/software/dichromacy/dichromacy.html) plugins<span class="FootOuter"><span class="SupFootMarker"> \[G\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[G\] </span>One advantage of Dichromacy over the Vischeck plugin is that it can be recorded and called from scripts and macros, without user interaction.</span></span>, or in [↓](#index-Fiji "wikilink")[Fiji↑](#sub:Fiji-intro "wikilink"), using the <span class="menuitem">Image ▷ Color ▷ Simulate Color Blindness</span> command.
+It is also possible to simulate color blindness using the [Vischeck](http://www.vischeck.com/downloads/) or [Dichromacy](http://www.dentistry.bham.ac.uk/landinig/software/dichromacy/dichromacy.html) plugins<span class="FootOuter"><span class="SupFootMarker"> \[G\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[G\] </span>One advantage of Dichromacy over the Vischeck plugin is that it can be recorded and called from scripts and macros, without user interaction.</span></span>, or in [↓](#index-Fiji "wikilink")[Fiji↑](#sub_Fiji-intro "wikilink"), using the <span class="menuitem">Image ▷ Color ▷ Simulate Color Blindness</span> command.
 
 <div class="listing">
 
@@ -552,7 +552,7 @@ In a [↓composite](#index-Color-Composites "wikilink") image colors are handled
 
 ## Selections
 
-Selections (regions of interest, ROIs[↓](#nom-roi "wikilink")), are typically created using the [Toolbar↓](#sub:Toolbar "wikilink") [Tools↓](#sec:IJ-Tools "wikilink"). Although ImageJ can display simultaneously several [↓](#index-Selection "wikilink")[↓ROIs](#index-ROI "wikilink") (see [Overlays↓](#sub:Overlay-Intro "wikilink") and [ROI Manager↓](#fig:The-ROI-Manager "wikilink")) only one selection can be active at a time. Selections can be measured (<span class="sans"><span class="menuitem"><span class="sans">Analyze ▷ </span>[Measure...%5Bm%5D](#sub:Measure...%5Bm%5D "wikilink")</span></span>
+Selections (regions of interest, ROIs[↓](#nom-roi "wikilink")), are typically created using the [Toolbar↓](#sub_Toolbar "wikilink") [Tools↓](#sec_IJ-Tools "wikilink"). Although ImageJ can display simultaneously several [↓](#index-Selection "wikilink")[↓ROIs](#index-ROI "wikilink") (see [Overlays↓](#sub_Overlay-Intro "wikilink") and [ROI Manager↓](#fig_The-ROI-Manager "wikilink")) only one selection can be active at a time. Selections can be measured (<span class="sans"><span class="menuitem"><span class="sans">Analyze ▷ </span>[Measure...%5Bm%5D](#sub_Measure...%5Bm%5D "wikilink")</span></span>
 
 <div class="PlainVisible">
 
@@ -566,9 +566,9 @@ Measure… \[m\]
 
 </div>
 
-↓), drawn (<span class="menuitem"><span class="sans">Edit ▷ </span>\[\[\#sub:Draw-%5Bd%5D|Draw \[d\]↓\]\]</span>), filled (<span class="sans"><span class="menuitem"><span class="sans">Edit ▷ </span>\[\[\#sub:Fill-%5Bf%5D|Fill \[f\]↓\]\]</span></span>) or filtered (<span class="menuitem"><span class="sans">Process ▷ </span>[<span class="menuitem">Filters ▷ </span>↓](#sub:Filters "wikilink")</span> submenu), in the case of area selections. In addition it is also possible to hold multiple ROIs as non-destructive [Overlays↓](#sub:Overlay-Intro "wikilink").
+↓), drawn (<span class="menuitem"><span class="sans">Edit ▷ </span>\[\[\#sub:Draw-%5Bd%5D|Draw \[d\]↓\]\]</span>), filled (<span class="sans"><span class="menuitem"><span class="sans">Edit ▷ </span>\[\[\#sub:Fill-%5Bf%5D|Fill \[f\]↓\]\]</span></span>) or filtered (<span class="menuitem"><span class="sans">Process ▷ </span>[<span class="menuitem">Filters ▷ </span>↓](#sub_Filters "wikilink")</span> submenu), in the case of area selections. In addition it is also possible to hold multiple ROIs as non-destructive [Overlays↓](#sub_Overlay-Intro "wikilink").
 
-Selections can be initially outlined in one of the nine ImageJ default colors (*Red*, *Green*, *Blue*, *Magenta*, *Cyan*, *Yellow*, *Orange*, *Black* and White). Once created, selections can be contoured or painted with any other color using<span class="sans"> <span class="menuitem"><span class="sans">Edit ▷ Selection ▷ </span>[Properties...](#sub:Properties... "wikilink")</span></span>
+Selections can be initially outlined in one of the nine ImageJ default colors (*Red*, *Green*, *Blue*, *Magenta*, *Cyan*, *Yellow*, *Orange*, *Black* and White). Once created, selections can be contoured or painted with any other color using<span class="sans"> <span class="menuitem"><span class="sans">Edit ▷ Selection ▷ </span>[Properties...](#sub_Properties... "wikilink")</span></span>
 
 <div class="PlainVisible">
 
@@ -582,7 +582,7 @@ Properties… \[y\]
 
 </div>
 
-↓. Selection Color can be changed in <span class="menuitem"><span class="sans">Edit ▷ Options ▷ </span>[Colors…↓](#sub:Colors... "wikilink")</span>, by double clicking on the [Point Tool↓](#sec:Point-Tool "wikilink"), or using hot keys (*see* [(27.13.9↓)](#lis:ChangeSelectionColor "wikilink") [Colors…↓](#lis:ChangeSelectionColor "wikilink")). It is highlighted in the center of the [Point Tool↓](#sec:Point-Tool "wikilink") and [Multi-point Tool↓](#sec:Multi-point-Tool "wikilink").
+↓. Selection Color can be changed in <span class="menuitem"><span class="sans">Edit ▷ Options ▷ </span>[Colors…↓](#sub_Colors... "wikilink")</span>, by double clicking on the [Point Tool↓](#sec_Point-Tool "wikilink"), or using hot keys (*see* [(27.13.9↓)](#lis_ChangeSelectionColor "wikilink") [Colors…↓](#lis_ChangeSelectionColor "wikilink")). It is highlighted in the center of the [Point Tool↓](#sec_Point-Tool "wikilink") and [Multi-point Tool↓](#sec_Multi-point-Tool "wikilink").
 
 <div class="float">
 
@@ -590,11 +590,11 @@ Properties… \[y\]
 
 <div class="figure" style="max-width: 88%;">
 
-![figure images/Selections.png](/images/pages/Images/Selections.png "figure images/Selections.png")
+![figure images/Selections.png](images/Selections.png "figure images/Selections.png")
 
 <div class="caption">
 
-Figure 5 **Three types of area selections In ImageJ.** Notice the cursor changes: to an *arrow* when it is within the selection, to a *cross-hair* when outside the selection, to a *hand* when over a selection vertex or ‘handler’. Notice also the filled handler in the polygon selection and the absence of point handlers in [Composite Selections↓](#sub:Composite-selections "wikilink"). [Overlays↓](#sub:Overlay-Intro "wikilink"), i.e., non-active selections displayed in the non-destructive image overlay, are also displayed without handlers.
+Figure 5 **Three types of area selections In ImageJ.** Notice the cursor changes: to an *arrow* when it is within the selection, to a *cross-hair* when outside the selection, to a *hand* when over a selection vertex or ‘handler’. Notice also the filled handler in the polygon selection and the absence of point handlers in [Composite Selections↓](#sub_Composite-selections "wikilink"). [Overlays↓](#sub_Overlay-Intro "wikilink"), i.e., non-active selections displayed in the non-destructive image overlay, are also displayed without handlers.
 
 </div>
 
@@ -604,29 +604,29 @@ Figure 5 **Three types of area selections In ImageJ.** Notice the cursor chang
 
 ### Manipulating ROIs
 
-Most of commands that can be useful in defining or drawing selections are available in the <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ </span>[<span class="menuitem">Selection ▷ </span>↓](#sub:SelectionSubMenu "wikilink")</span></span> submenu and summarized in [ROI manipulations↓](#fig:ROI-manipulations "wikilink"). Listed below are the most frequent manipulations involving [↓selections](#index-ROI "wikilink"):
+Most of commands that can be useful in defining or drawing selections are available in the <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ </span>[<span class="menuitem">Selection ▷ </span>↓](#sub_SelectionSubMenu "wikilink")</span></span> submenu and summarized in [ROI manipulations↓](#fig_ROI-manipulations "wikilink"). Listed below are the most frequent manipulations involving [↓selections](#index-ROI "wikilink"):
 
 <div class="Labeling">
 
-**Adjusting** Area selections can be adjusted with the [Brush Selection Tool↓](#sub:Brush-Selection-Tool "wikilink"). In addition, vertexes of selections created with the [Polygon Selection Too<span class="sans">l</span>↓](#sub:Polygon-Selection-Tool "wikilink") and [Segmented Line Selection Tool↓](#sub:Segmented-Line-Selection "wikilink") can be adjusted by Alt/Shift-clicking.
+**Adjusting** Area selections can be adjusted with the [Brush Selection Tool↓](#sub_Brush-Selection-Tool "wikilink"). In addition, vertexes of selections created with the [Polygon Selection Too<span class="sans">l</span>↓](#sub_Polygon-Selection-Tool "wikilink") and [Segmented Line Selection Tool↓](#sub_Segmented-Line-Selection "wikilink") can be adjusted by Alt/Shift-clicking.
 
 </div>
 
 <div class="Labeling">
 
-**Deleting** Choose any of the selection tools and click outside the selection, or use <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Selection ▷ </span>\[\[\#sub:Select-None-%5BA%5D|Select None \[A\]↓\]\]</span></span>. Use<span class="sans"> <span class="menuitem"><span class="sans">Edit ▷ Selection ▷ </span>\[\[\#sub:Restore-Selection-%5BE%5D|Restore Selection \[E\]↓\]\]</span></span> to restore a selection back after having deleted it. With [Overlays↓](#sub:Overlay-Intro "wikilink"), an activated ROI can be deleted by pressing the <span class="Keystroke">Backspace</span> (<span class="Keystroke">Delete</span> on Mac) key.
+**Deleting** Choose any of the selection tools and click outside the selection, or use <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Selection ▷ </span>\[\[\#sub:Select-None-%5BA%5D|Select None \[A\]↓\]\]</span></span>. Use<span class="sans"> <span class="menuitem"><span class="sans">Edit ▷ Selection ▷ </span>\[\[\#sub:Restore-Selection-%5BE%5D|Restore Selection \[E\]↓\]\]</span></span> to restore a selection back after having deleted it. With [Overlays↓](#sub_Overlay-Intro "wikilink"), an activated ROI can be deleted by pressing the <span class="Keystroke">Backspace</span> (<span class="Keystroke">Delete</span> on Mac) key.
 
 </div>
 
 <div class="Labeling">
 
-**Managing** A selection can be transferred from one image window to another by activating the destination window and runnig <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Selection ▷ </span>\[\[\#sub:Restore-Selection-%5BE%5D|Restore Selection \[E\]↓\]\]</span></span>. Alternatively, <span class="sans"><span class="menuitem"><span class="sans">Analyze ▷ Tools ▷ </span>[<span class="menuitem">Synchronize Windows</span>↓](#sub:SynchronizeWindows "wikilink")</span></span> to create ROIs across multiple images. Multiple selections can be stored as [Overlays↓](#sub:Overlay-Intro "wikilink") or in the [ROI Manager↓](#fig:The-ROI-Manager "wikilink") list (<span class="sans"><span class="menuitem"><span class="sans">Analyze ▷ Tools ▷ </span>[<span class="menuitem">ROI Manager…</span>↓](#sub:ROI-Manager... "wikilink")</span></span>).
+**Managing** A selection can be transferred from one image window to another by activating the destination window and runnig <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Selection ▷ </span>\[\[\#sub:Restore-Selection-%5BE%5D|Restore Selection \[E\]↓\]\]</span></span>. Alternatively, <span class="sans"><span class="menuitem"><span class="sans">Analyze ▷ Tools ▷ </span>[<span class="menuitem">Synchronize Windows</span>↓](#sub_SynchronizeWindows "wikilink")</span></span> to create ROIs across multiple images. Multiple selections can be stored as [Overlays↓](#sub_Overlay-Intro "wikilink") or in the [ROI Manager↓](#fig_The-ROI-Manager "wikilink") list (<span class="sans"><span class="menuitem"><span class="sans">Analyze ▷ Tools ▷ </span>[<span class="menuitem">ROI Manager…</span>↓](#sub_ROI-Manager... "wikilink")</span></span>).
 
 </div>
 
 <div class="Labeling">
 
-**Moving** Selections can be moved by clicking and dragging as long as the cursor is within the selection and has changed to an ![figure images/pointers/Pointer-Arrow.png](/images/pages/Images/pointers/Pointer-Arrow.png "figure images/pointers/Pointer-Arrow.png") . The status bar displays the coordinates of the upper left corner of the selection (or the bounding rectangle for non-rectangular selections) as it is being moved. To move the contents of a selection, rather than the selection itself, <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ \[\[\#sub:Copy%5Bc%5D|Copy \[c\]↓\]\]</span></span></span>, <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ \[\[\#sub:Paste%5Bv%5D|Paste \[v\]↓\]\]</span></span></span>, and then click within the selection and drag.
+**Moving** Selections can be moved by clicking and dragging as long as the cursor is within the selection and has changed to an ![figure images/pointers/Pointer-Arrow.png](images/pointers/Pointer-Arrow.png "figure images/pointers/Pointer-Arrow.png") . The status bar displays the coordinates of the upper left corner of the selection (or the bounding rectangle for non-rectangular selections) as it is being moved. To move the contents of a selection, rather than the selection itself, <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ \[\[\#sub:Copy%5Bc%5D|Copy \[c\]↓\]\]</span></span></span>, <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ \[\[\#sub:Paste%5Bv%5D|Paste \[v\]↓\]\]</span></span></span>, and then click within the selection and drag.
 
 </div>
 
@@ -638,11 +638,11 @@ Most of commands that can be useful in defining or drawing selections are availa
 
 <div class="Labeling">
 
-**Resizing** The [Brush Selection Tool↓](#sub:Brush-Selection-Tool "wikilink") can be used to perform fine adjustments of ROI contours. Most ROIs can be resized one pixel at a time by holding <span class="Keystroke">Alt</span> while using the arrow keys. In general (*see* [Area Selection Tools↓](#sec:Area-selection-tools "wikilink") and [Line Selection Tools↓](#sec:Line-Selection-Tools "wikilink") for details), selections are resized by dragging one of the selection handlers. While dragging, holding <span class="Keystroke">Ctrl</span> resizes the selection around its center, holding <span class="Keystroke">Alt</span> imposes a fixed aspect ratio and holding <span class="Keystroke">Shift</span> forces a 1:1 aspect ratio.
+**Resizing** The [Brush Selection Tool↓](#sub_Brush-Selection-Tool "wikilink") can be used to perform fine adjustments of ROI contours. Most ROIs can be resized one pixel at a time by holding <span class="Keystroke">Alt</span> while using the arrow keys. In general (*see* [Area Selection Tools↓](#sec_Area-selection-tools "wikilink") and [Line Selection Tools↓](#sec_Line-Selection-Tools "wikilink") for details), selections are resized by dragging one of the selection handlers. While dragging, holding <span class="Keystroke">Ctrl</span> resizes the selection around its center, holding <span class="Keystroke">Alt</span> imposes a fixed aspect ratio and holding <span class="Keystroke">Shift</span> forces a 1:1 aspect ratio.
 
 <div class="See">
 
-[Key Modifiers↓](#sec:Key-Modifiers "wikilink")
+[Key Modifiers↓](#sec_Key-Modifiers "wikilink")
 
 </div>
 
@@ -652,13 +652,13 @@ Most of commands that can be useful in defining or drawing selections are availa
 
 <div class="figure">
 
-![figure images/compositeROI.png](/images/pages/Images/compositeROI.png "figure images/compositeROI.png")
+![figure images/compositeROI.png](images/compositeROI.png "figure images/compositeROI.png")
 
 </div>
 
 </div>
 
-Composite selections are non-contiguous ROIs containing more than one cluster of pixels and/or ROIs containing internal holes. Composite ROIs are typically originated with the [Brush Selection Tool↓](#sub:Brush-Selection-Tool "wikilink") but they can be defined with any other selection tool using key modifiers.
+Composite selections are non-contiguous ROIs containing more than one cluster of pixels and/or ROIs containing internal holes. Composite ROIs are typically originated with the [Brush Selection Tool↓](#sub_Brush-Selection-Tool "wikilink") but they can be defined with any other selection tool using key modifiers.
 
 The following modifier keys can be use to create composite selections:[↓](#index-Selection-Composite "wikilink")
 
@@ -674,17 +674,17 @@ The following modifier keys can be use to create composite selections:[↓](#ind
 
 </div>
 
-Note that some operations may not be performed properly on complex ROIs. In these cases, it may be useful to convert a composite ROI into a polygon using the <span class="menuitem">Edit ▷ Selection ▷ [Enlarge…↓](#sub:Enlarge... "wikilink")</span> command as explained in [14↓](#infobox:Composites "wikilink") [Converting Composite Selections↓](#infobox:Composites "wikilink").
+Note that some operations may not be performed properly on complex ROIs. In these cases, it may be useful to convert a composite ROI into a polygon using the <span class="menuitem">Edit ▷ Selection ▷ [Enlarge…↓](#sub_Enlarge... "wikilink")</span> command as explained in [14↓](#infobox_Composites "wikilink") [Converting Composite Selections↓](#infobox_Composites "wikilink").
 
 <div class="See">
 
-[Wand Tool↓](#sub:Wand-Tool "wikilink"), [ROI2PolylineROI](http://imagejdocu.tudor.lu/doku.php?id=wishlist:completed:freehand_and_selection_brush_roi_conversion) macro
+[Wand Tool↓](#sub_Wand-Tool "wikilink"), [ROI2PolylineROI](http://imagejdocu.tudor.lu/doku.php?id=wishlist:completed:freehand_and_selection_brush_roi_conversion) macro
 
 </div>
 
 ### Selections With Sub-pixel Coordinates[↓](#index-Sub-pixel-selections "wikilink")<span class="unknown">\\feature</span>Selections with sub-pixel resolution
 
-Since ImageJ 1.46, selections can be defined with [subpixel accuracy](http://en.wikipedia.org/wiki/Sub-pixel_resolution), beyond the nominal pixel resolution of the image: [Floating point selections↓](#fig:Subpixel-selections "wikilink"). Line Selections (*see* [Line Selection Tools↓](#sec:Line-Selection-Tools "wikilink")) are created with floating-point coordinates if the *Sub-pixel resolution* checkbox is active in <span class="menuitem">Edit ▷ Options ▷ [<span class="menuitem">Profile Plot Options…</span>↓](#sub:Profile-Plot-Options... "wikilink")</span> Sub-pixel coordinates of pre-existing selections can be interpolated using the <span class="menuitem">Edit ▷ Selection ▷ [<span class="menuitem">Interpolate</span>↓](#sub:Interpolate "wikilink")</span> command. Interpolated points are easily noticeable on small selections created on images zoomed 1200% or greater.
+Since ImageJ 1.46, selections can be defined with [subpixel accuracy](http://en.wikipedia.org/wiki/Sub-pixel_resolution), beyond the nominal pixel resolution of the image: [Floating point selections↓](#fig_Subpixel-selections "wikilink"). Line Selections (*see* [Line Selection Tools↓](#sec_Line-Selection-Tools "wikilink")) are created with floating-point coordinates if the *Sub-pixel resolution* checkbox is active in <span class="menuitem">Edit ▷ Options ▷ [<span class="menuitem">Profile Plot Options…</span>↓](#sub_Profile-Plot-Options... "wikilink")</span> Sub-pixel coordinates of pre-existing selections can be interpolated using the <span class="menuitem">Edit ▷ Selection ▷ [<span class="menuitem">Interpolate</span>↓](#sub_Interpolate "wikilink")</span> command. Interpolated points are easily noticeable on small selections created on images zoomed 1200% or greater.
 
 <div class="float">
 
@@ -692,11 +692,11 @@ Since ImageJ 1.46, selections can be defined with [subpixel accuracy](http://en.
 
 <div class="figure">
 
-![figure images/SubPixel.png](/images/pages/Images/SubPixel.png "figure images/SubPixel.png")
+![figure images/SubPixel.png](images/SubPixel.png "figure images/SubPixel.png")
 
 <div class="caption">
 
-Figure 7 **Interpolated selections.** ROIs drawn with (left) or without (middle) sub-pixel accuracy. For line selections (*see* [Line Selection Tools↓](#sec:Line-Selection-Tools "wikilink")), this option can be enabled in '''''' <span class="menuitem">Edit ▷ Options ▷ [<span class="menuitem">Profile Plot Options…</span>↓](#sub:Profile-Plot-Options... "wikilink")</span> by activating the *Sub-pixel resolution* checkbox. Pixel coordinates of area selections (*see* [Area Selection Tools↓](#sec:Area-selection-tools "wikilink")), can be interpolated using <span class="menuitem">Edit ▷ Selection ▷ [<span class="menuitem">Interpolate</span>↓](#sub:Interpolate "wikilink")</span>. The image on the right is the output of <span class="Filename">[SubPixelSelections.js](http://imagej.nih.gov/ij/macros/js/SubPixelSelections.js)</span>, a script that demonstrates how to create selections at sub-pixel resolution without the need of setting any option in ImageJ.
+Figure 7 **Interpolated selections.** ROIs drawn with (left) or without (middle) sub-pixel accuracy. For line selections (*see* [Line Selection Tools↓](#sec_Line-Selection-Tools "wikilink")), this option can be enabled in '''''' <span class="menuitem">Edit ▷ Options ▷ [<span class="menuitem">Profile Plot Options…</span>↓](#sub_Profile-Plot-Options... "wikilink")</span> by activating the *Sub-pixel resolution* checkbox. Pixel coordinates of area selections (*see* [Area Selection Tools↓](#sec_Area-selection-tools "wikilink")), can be interpolated using <span class="menuitem">Edit ▷ Selection ▷ [<span class="menuitem">Interpolate</span>↓](#sub_Interpolate "wikilink")</span>. The image on the right is the output of <span class="Filename">[SubPixelSelections.js](http://imagej.nih.gov/ij/macros/js/SubPixelSelections.js)</span>, a script that demonstrates how to create selections at sub-pixel resolution without the need of setting any option in ImageJ.
 
 </div>
 
@@ -706,13 +706,13 @@ Figure 7 **Interpolated selections.** ROIs drawn with (left) or without (middl
 
 <div class="See">
 
-[Zoom ▷ ↓](#sub:Zoom "wikilink"), [Magnifying Glass↓](#sec:Magnifying-Glass "wikilink")
+[Zoom ▷ ↓](#sub_Zoom "wikilink"), [Magnifying Glass↓](#sec_Magnifying-Glass "wikilink")
 
 </div>
 
 ## Overlays[]( "wikilink")<span class="unknown">\\improvement</span>Improved handling of Overlays
 
-[↓](#index-Overlay "wikilink")[↓](#index-Non-destructive-annotations "wikilink")[↓Overlays](#index-Annotations-Non-destructive-image-overlay "wikilink") are non-active selections displayed ‘over’ the pixel data, on the image overlay, and are the core of non-destructive image processing in ImageJ. In a way you can think of the image overlay as an invisible [ROI Manager↓](#fig:The-ROI-Manager "wikilink") in which selections are being added, allowing ROIs to be on ‘hold’. This concept of multiple distinct selections has been dramatically improved in [ImageJ2↑](#sub:ImageJ2intro "wikilink") so we urge you to download IJ2 if multiple ROIs are important in your workflows.
+[↓](#index-Overlay "wikilink")[↓](#index-Non-destructive-annotations "wikilink")[↓Overlays](#index-Annotations-Non-destructive-image-overlay "wikilink") are non-active selections displayed ‘over’ the pixel data, on the image overlay, and are the core of non-destructive image processing in ImageJ. In a way you can think of the image overlay as an invisible [ROI Manager↓](#fig_The-ROI-Manager "wikilink") in which selections are being added, allowing ROIs to be on ‘hold’. This concept of multiple distinct selections has been dramatically improved in [ImageJ2↑](#sub_ImageJ2intro "wikilink") so we urge you to download IJ2 if multiple ROIs are important in your workflows.
 
 <div class="float">
 
@@ -720,11 +720,11 @@ Figure 7 **Interpolated selections.** ROIs drawn with (left) or without (middl
 
 <div class="figure" style="max-width: 75%;">
 
-![figure images/OverlayShowcase.png](/images/pages/Images/OverlayShowcase.png "figure images/OverlayShowcase.png")
+![figure images/OverlayShowcase.png](images/OverlayShowcase.png "figure images/OverlayShowcase.png")
 
 <div class="caption">
 
-Figure 8 **Non-destructive operations using the image overlay.** Overlays can be used to annotate images, store ROIs and blend images (ImageROIs) at multiple opacity levels. Refer to the <span class="menuitem">Image ▷ [Overlay ▷ ↓](#sub:Overlay "wikilink")</span>documentation for further [examples↓](#fig:image-overlays "wikilink"). You can [download the frontmost](http://imagej.nih.gov/ij/docs/guide/images/ImageWithOverlay.tif) image to practice overlay editing.
+Figure 8 **Non-destructive operations using the image overlay.** Overlays can be used to annotate images, store ROIs and blend images (ImageROIs) at multiple opacity levels. Refer to the <span class="menuitem">Image ▷ [Overlay ▷ ↓](#sub_Overlay "wikilink")</span>documentation for further [examples↓](#fig_image-overlays "wikilink"). You can [download the frontmost](http://imagej.nih.gov/ij/docs/guide/images/ImageWithOverlay.tif) image to practice overlay editing.
 
 </div>
 
@@ -732,13 +732,13 @@ Figure 8 **Non-destructive operations using the image overlay.** Overlays can 
 
 </div>
 
-Importantly, overlay selections are [vector graphics](http://en.wikipedia.org/wiki/Vector_graphics) composed of mathematically-defined paths (as opposed to [raster graphics](http://en.wikipedia.org/wiki/Raster_graphics) in which objects are defined by pixels) and are not affected by scaling, i.e., do not become pixelated. Most of overlay-related commands are listed in the <span class="menuitem">Image ▷ [Overlay ▷ ↓](#sub:Overlay "wikilink")</span>, and in the ROI Manager window (<span class="menuitem">Analyze ▷ Tools ▷ [<span class="menuitem">ROI Manager…</span>↓](#sub:ROI-Manager... "wikilink")</span>). Appearance of overlay selections can be adjusted using <span class="menuitem">Image ▷ Overlay ▷ [<span class="menuitem">Overlay Options…</span>↓](#sub:Overlay-Options... "wikilink")</span>/<span class="menuitem">[<span class="menuitem">Labels…</span>↓](#sub:Labels... "wikilink")</span>
+Importantly, overlay selections are [vector graphics](http://en.wikipedia.org/wiki/Vector_graphics) composed of mathematically-defined paths (as opposed to [raster graphics](http://en.wikipedia.org/wiki/Raster_graphics) in which objects are defined by pixels) and are not affected by scaling, i.e., do not become pixelated. Most of overlay-related commands are listed in the <span class="menuitem">Image ▷ [Overlay ▷ ↓](#sub_Overlay "wikilink")</span>, and in the ROI Manager window (<span class="menuitem">Analyze ▷ Tools ▷ [<span class="menuitem">ROI Manager…</span>↓](#sub_ROI-Manager... "wikilink")</span>). Appearance of overlay selections can be adjusted using <span class="menuitem">Image ▷ Overlay ▷ [<span class="menuitem">Overlay Options…</span>↓](#sub_Overlay-Options... "wikilink")</span>/<span class="menuitem">[<span class="menuitem">Labels…</span>↓](#sub_Labels... "wikilink")</span>
 
-As mentioned in [3↑](#infobox:Formats "wikilink") [Image Types: Lossy Compression and Metadata↑](#infobox:Formats "wikilink"), overlays are saved in the header of tif images, and do not need to be saved externally when using TIFF, the default file format of ImageJ. The major advantages of overlays are summarized below:
+As mentioned in [3↑](#infobox_Formats "wikilink") [Image Types: Lossy Compression and Metadata↑](#infobox_Formats "wikilink"), overlays are saved in the header of tif images, and do not need to be saved externally when using TIFF, the default file format of ImageJ. The major advantages of overlays are summarized below:
 
 <div class="Description">
 
-<span class="Description-entry">Storage of ROIs</span> In ImageJ it is only possible to have a single ROI at a time. However, it is possible to add selections to the image overlay using <span class="Keystroke">B</span> (<span class="menuitem">Image ▷ Overlay ▷ [Add-Selection...%5Bb%5D](#sub:Add-Selection...%5Bb%5D "wikilink")</span>
+<span class="Description-entry">Storage of ROIs</span> In ImageJ it is only possible to have a single ROI at a time. However, it is possible to add selections to the image overlay using <span class="Keystroke">B</span> (<span class="menuitem">Image ▷ Overlay ▷ [Add-Selection...%5Bb%5D](#sub_Add-Selection...%5Bb%5D "wikilink")</span>
 
 <div class="PlainVisible">
 
@@ -752,25 +752,25 @@ Add Selection… \[b\]
 
 </div>
 
-↓).<span class="unknown">\\feature</span> Once added to the image overlay, ROIs can be re-activated by Alt-clicking, Control-clicking or long-pressing (<span class="formula"><span class="fraction"><sup>1</sup>⁄<sub>4</sub></span></span> second or longer). Activated ROIs can be deleted by pressing the <span class="Keystroke">Backspace</span> key. Selections can also be added and recovered in bulk, using the <span class="menuitem">Image ▷ Overlay ▷ [From ROI Manager↓](#sub:From-ROI-Manager "wikilink")</span>/<span class="menuitem">[To ROI Manager↓](#sub:To-ROI-Manager "wikilink")</span> commands.
+↓).<span class="unknown">\\feature</span> Once added to the image overlay, ROIs can be re-activated by Alt-clicking, Control-clicking or long-pressing (<span class="formula"><span class="fraction"><sup>1</sup>⁄<sub>4</sub></span></span> second or longer). Activated ROIs can be deleted by pressing the <span class="Keystroke">Backspace</span> key. Selections can also be added and recovered in bulk, using the <span class="menuitem">Image ▷ Overlay ▷ [From ROI Manager↓](#sub_From-ROI-Manager "wikilink")</span>/<span class="menuitem">[To ROI Manager↓](#sub_To-ROI-Manager "wikilink")</span> commands.
 
 </div>
 
 <div class="Description">
 
-<span class="Description-entry">Non-destructive annotations</span> Overlays are the best way of annotating images in ImageJ ([examples↓](#fig:image-overlays "wikilink")). As vector graphics, overlays do not change pixel values, can be scaled without loss of quality even at high zoom levels (*see* [19↓](#infobox:ZoomedCanvas "wikilink") [Working with Zoomed Canvases↓](#infobox:ZoomedCanvas "wikilink")) and can be displayed at different opacity values (*see* [20↓](#infobox:HEX "wikilink") [Hexadecimal Color Values↓](#infobox:HEX "wikilink")). RGB snapshots of the image with embedded overlays can be created by holding <span class="Keystroke">Shif</span> <span class="Keystroke">F</span>, the shortcut for <span class="menuitem">Image ▷ Overlay ▷ \[\[\#sub:Flatten-%5BF%5D|Flatten \[F\]↓\]\]</span>. ‘Flattened’ images with the overlay rendered as pixel data are also created when saving the image as PNG or JPEG (<span class="menuitem">File ▷ [Save As ▷ ↓](#sub:SaveAs "wikilink")</span>), or when printing the image canvas (<span class="menuitem">File ▷ \[\[\#sub:Print...%5Bp%5D|Print… \[p\]↓\]\]</span>). The <span class="menuitem">Flatten</span> command is also listed in the [ROI Manager↓](#fig:The-ROI-Manager "wikilink").
+<span class="Description-entry">Non-destructive annotations</span> Overlays are the best way of annotating images in ImageJ ([examples↓](#fig_image-overlays "wikilink")). As vector graphics, overlays do not change pixel values, can be scaled without loss of quality even at high zoom levels (*see* [19↓](#infobox_ZoomedCanvas "wikilink") [Working with Zoomed Canvases↓](#infobox_ZoomedCanvas "wikilink")) and can be displayed at different opacity values (*see* [20↓](#infobox_HEX "wikilink") [Hexadecimal Color Values↓](#infobox_HEX "wikilink")). RGB snapshots of the image with embedded overlays can be created by holding <span class="Keystroke">Shif</span> <span class="Keystroke">F</span>, the shortcut for <span class="menuitem">Image ▷ Overlay ▷ \[\[\#sub:Flatten-%5BF%5D|Flatten \[F\]↓\]\]</span>. ‘Flattened’ images with the overlay rendered as pixel data are also created when saving the image as PNG or JPEG (<span class="menuitem">File ▷ [Save As ▷ ↓](#sub_SaveAs "wikilink")</span>), or when printing the image canvas (<span class="menuitem">File ▷ \[\[\#sub:Print...%5Bp%5D|Print… \[p\]↓\]\]</span>). The <span class="menuitem">Flatten</span> command is also listed in the [ROI Manager↓](#fig_The-ROI-Manager "wikilink").
 
 </div>
 
 <div class="Description">
 
-<span class="Description-entry">Image ROIs</span> An [↓](#index-Image-selection "wikilink")[↓imageROI](#index-ImageROI "wikilink") (image selection) is a ROI that displays an image as an overlay. As described in <span class="menuitem">Edit ▷ Selection ▷ [<span class="menuitem">Image to Selection…</span>↓](#sub:Image-to-Selection... "wikilink")</span> and <span class="menuitem">Image ▷ Overlay ▷ [<span class="menuitem">Add Image…</span>↓](#sub:Add-Image... "wikilink")</span>, this allows multiple images to be [↓blended](#index-Blend "wikilink") on a single image canvas.
+<span class="Description-entry">Image ROIs</span> An [↓](#index-Image-selection "wikilink")[↓imageROI](#index-ImageROI "wikilink") (image selection) is a ROI that displays an image as an overlay. As described in <span class="menuitem">Edit ▷ Selection ▷ [<span class="menuitem">Image to Selection…</span>↓](#sub_Image-to-Selection... "wikilink")</span> and <span class="menuitem">Image ▷ Overlay ▷ [<span class="menuitem">Add Image…</span>↓](#sub_Add-Image... "wikilink")</span>, this allows multiple images to be [↓blended](#index-Blend "wikilink") on a single image canvas.
 
 </div>
 
 ## 3D Volumes
 
-Currently, the support for [↓](#index-ThreeD-ROIs_3D-ROIs "wikilink")[↓](#index-3D-ROIs "wikilink")3D ROIs (selections containing contiguous cluster of voxels) is somewhat limited in ImageJ. This limitation has been addressed by [ImageJ2↑](#sub:ImageJ2intro "wikilink") and several IJ1 plugins. The list below summarizes some of the ImageJ plugins that deal effectively with multi-dimensional objects. Note that a manual installation of these tools as standalone ImageJ plugins is a challenging task given their special dependencies, reason why they are all bundled as part of [↓](#index-Fiji "wikilink")[Fiji↑](#sub:Fiji-intro "wikilink").
+Currently, the support for [↓](#index-ThreeD-ROIs_3D-ROIs "wikilink")[↓](#index-3D-ROIs "wikilink")3D ROIs (selections containing contiguous cluster of voxels) is somewhat limited in ImageJ. This limitation has been addressed by [ImageJ2↑](#sub_ImageJ2intro "wikilink") and several IJ1 plugins. The list below summarizes some of the ImageJ plugins that deal effectively with multi-dimensional objects. Note that a manual installation of these tools as standalone ImageJ plugins is a challenging task given their special dependencies, reason why they are all bundled as part of [↓](#index-Fiji "wikilink")[Fiji↑](#sub_Fiji-intro "wikilink").
 
 <div class="float">
 
@@ -778,11 +778,11 @@ Currently, the support for [↓](#index-ThreeD-ROIs_3D-ROIs "wikilink")[↓](#in
 
 <div class="figure" style="max-width: 70%;">
 
-![figure images/3Dviewer.png](/images/pages/Images/3Dviewer.png "figure images/3Dviewer.png")
+![figure images/3Dviewer.png](images/3Dviewer.png "figure images/3Dviewer.png")
 
 <div class="caption">
 
-Figure 9 **3D Viewer (Fiji 1.46o), bringing hardware-accelerated 3D visualization to ImageJ.** As explained in [3D Volumes↑](#sub:3D-Intro "wikilink"), most of plugins that truly extend ImageJ functionally to multi-dimentional data are bundled as part of Fiji.
+Figure 9 **3D Viewer (Fiji 1.46o), bringing hardware-accelerated 3D visualization to ImageJ.** As explained in [3D Volumes↑](#sub_3D-Intro "wikilink"), most of plugins that truly extend ImageJ functionally to multi-dimentional data are bundled as part of Fiji.
 
 </div>
 
@@ -792,19 +792,19 @@ Figure 9 **3D Viewer (Fiji 1.46o), bringing hardware-accelerated 3D visualiz
 
 <div class="Description">
 
-<span class="Description-entry">3D Filters</span> Specialized [↓](#index-ThreeD-Filters_3D-Filters "wikilink")[↓](#index-3D-Filters "wikilink")3D filters such as <span class="menuitem">Process ▷ Filters ▷ [<span class="menuitem">Gaussian Blur 3D…</span>↓](#sub:Gaussian-Blur-3D... "wikilink")</span> can be installed to perform 3D operations. Examples are the [3D processing package](http://imagejdocu.tudor.lu/doku.php?id=plugin:morphology:3d_binary_morphological_filters:start) by Thomas Boudier <span class="bibcites">[<span class="bib-index">34</span>]([#biblio-84 "wikilink")\]</span> and the [3D binary filters](https://fiji.sc/wiki/index.php/3D_Binary_Filters) by Benjamin Schmid.
+<span class="Description-entry">3D Filters</span> Specialized [↓](#index-ThreeD-Filters_3D-Filters "wikilink")[↓](#index-3D-Filters "wikilink")3D filters such as <span class="menuitem">Process ▷ Filters ▷ [<span class="menuitem">Gaussian Blur 3D…</span>↓](#sub_Gaussian-Blur-3D... "wikilink")</span> can be installed to perform 3D operations. Examples are the [3D processing package](http://imagejdocu.tudor.lu/doku.php?id=plugin:morphology:3d_binary_morphological_filters:start) by Thomas Boudier <span class="bibcites">[<span class="bib-index">34</span>]([#biblio-84 "wikilink")\]</span> and the [3D binary filters](https://fiji.sc/wiki/index.php/3D_Binary_Filters) by Benjamin Schmid.
 
 </div>
 
 <div class="Description">
 
-<span class="Description-entry">3D Object Counter</span> [3D Object Counter](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:3d_object_counter:start) (3D-OC) [↓](#index-ThreeD-Object-Counter_3D-Object-Counter "wikilink")[↓counts](#index-3D-Object-Counter "wikilink") and qualifies 3D objects in a stack <span class="bibcites">[<span class="bib-index">97</span>]([#biblio-147 "wikilink")\]</span>, similarly to the 2D analysis performed by <span class="menuitem">Analyze ▷ [Analyze Particles…↓](#sub:Analyze-Particles... "wikilink")</span> It is complemented by [3D Roi Manager](http://imagejdocu.tudor.lu/doku.php?id=plugin:stacks:3d_roi_manager:start) <span class="bibcites">[<span class="bib-index">34</span>]([#biblio-84 "wikilink")\]</span>, a companion plugin that adds a 3D [ROI Manager↓](#fig:The-ROI-Manager "wikilink") to ImageJ
+<span class="Description-entry">3D Object Counter</span> [3D Object Counter](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:3d_object_counter:start) (3D-OC) [↓](#index-ThreeD-Object-Counter_3D-Object-Counter "wikilink")[↓counts](#index-3D-Object-Counter "wikilink") and qualifies 3D objects in a stack <span class="bibcites">[<span class="bib-index">97</span>]([#biblio-147 "wikilink")\]</span>, similarly to the 2D analysis performed by <span class="menuitem">Analyze ▷ [Analyze Particles…↓](#sub_Analyze-Particles... "wikilink")</span> It is complemented by [3D Roi Manager](http://imagejdocu.tudor.lu/doku.php?id=plugin:stacks:3d_roi_manager:start) <span class="bibcites">[<span class="bib-index">34</span>]([#biblio-84 "wikilink")\]</span>, a companion plugin that adds a 3D [ROI Manager↓](#fig_The-ROI-Manager "wikilink") to ImageJ
 
 </div>
 
 <div class="Description">
 
-<span class="Description-entry">3D Viewer</span> [3D Viewer](http://3dviewer.neurofly.de/) [↓](#index-ThreeD-Viewer_3D-Viewer "wikilink")[↓brings](#index-3D-Viewer "wikilink") powerful hardware-accelerated 3D visualization to ImageJ <span class="bibcites">[<span class="bib-index">15</span>]([#biblio-65 "wikilink")\]</span>, extending the limited functionality of <span class="menuitem">Image ▷ Stacks ▷ [<span class="menuitem">3D Project…</span>↓](#sub:3D-Project... "wikilink")</span> In the ImageJ [3D Viewer↑](#fig:-3D-Viewer "wikilink") stacks can be displayed as texture-based volume renderings, surfaces or orthoslices. It is macro-recordable and can be used by other plugins as a high-level programming library for 3D visualization
+<span class="Description-entry">3D Viewer</span> [3D Viewer](http://3dviewer.neurofly.de/) [↓](#index-ThreeD-Viewer_3D-Viewer "wikilink")[↓brings](#index-3D-Viewer "wikilink") powerful hardware-accelerated 3D visualization to ImageJ <span class="bibcites">[<span class="bib-index">15</span>]([#biblio-65 "wikilink")\]</span>, extending the limited functionality of <span class="menuitem">Image ▷ Stacks ▷ [<span class="menuitem">3D Project…</span>↓](#sub_3D-Project... "wikilink")</span> In the ImageJ [3D Viewer↑](#fig_-3D-Viewer "wikilink") stacks can be displayed as texture-based volume renderings, surfaces or orthoslices. It is macro-recordable and can be used by other plugins as a high-level programming library for 3D visualization
 
 </div>
 
@@ -816,21 +816,21 @@ Figure 9 **3D Viewer (Fiji 1.46o), bringing hardware-accelerated 3D visualiz
 
 <div class="Description">
 
-<span class="Description-entry">TrakEM2</span> As mentioned earlier, [Software Packages Built on Top of ImageJ↑](#misc:TrakEM2 "wikilink") features powerful tools for multi-dimensional regions of interest <span class="bibcites">[<span class="bib-index">7</span>]([#biblio-57 "wikilink")\]</span>
+<span class="Description-entry">TrakEM2</span> As mentioned earlier, [Software Packages Built on Top of ImageJ↑](#misc_TrakEM2 "wikilink") features powerful tools for multi-dimensional regions of interest <span class="bibcites">[<span class="bib-index">7</span>]([#biblio-57 "wikilink")\]</span>
 
 </div>
 
 <div class="See">
 
-<span class="menuitem">Image ▷ Stacks ▷ [<span class="menuitem">3D Project…</span>↓](#sub:3D-Project... "wikilink")</span>/<span class="menuitem">\[\[\#sub:Orthogonal-Views|Orthogonal Views \[H\]↓\]\]</span>, <span class="menuitem">Analyze ▷ [Surface Plot…↓](#sub:Surface-Plot... "wikilink")</span>, [22↓](#infobox:Skeletonize-vs-Skeletonize3D "wikilink") [Skeletonize vs Skeletonize 3D↓](#infobox:Skeletonize-vs-Skeletonize3D "wikilink"), [3D tools in Fiji](https://fiji.sc/wiki/index.php/Special:Search?search=3d&fulltext=Search), [Three Pane Crop](http://www.longair.net/edinburgh/imagej/three-pane-crop/), [3D image processing tutorials](http://imagejdocu.tudor.lu/doku.php?id=tutorial:working:3d_image_processing_and_analysis_with_imagej) on the ImageJ wikipage
+<span class="menuitem">Image ▷ Stacks ▷ [<span class="menuitem">3D Project…</span>↓](#sub_3D-Project... "wikilink")</span>/<span class="menuitem">\[\[\#sub:Orthogonal-Views|Orthogonal Views \[H\]↓\]\]</span>, <span class="menuitem">Analyze ▷ [Surface Plot…↓](#sub_Surface-Plot... "wikilink")</span>, [22↓](#infobox_Skeletonize-vs-Skeletonize3D "wikilink") [Skeletonize vs Skeletonize 3D↓](#infobox_Skeletonize-vs-Skeletonize3D "wikilink"), [3D tools in Fiji](https://fiji.sc/wiki/index.php/Special:Search?search=3d&fulltext=Search), [Three Pane Crop](http://www.longair.net/edinburgh/imagej/three-pane-crop/), [3D image processing tutorials](http://imagejdocu.tudor.lu/doku.php?id=tutorial:working:3d_image_processing_and_analysis_with_imagej) on the ImageJ wikipage
 
 </div>
 
 ## Settings and Preferences[]( "wikilink")<span class="unknown">\\improvement</span>
 
-[↓](#index-Settings "wikilink")[↓](#index-Preferences "wikilink")[↓ImageJ](#index-Options "wikilink") preferences are automatically saved in a preferences file, the<span class="Filename">IJ\_prefs.txt</span> text file. This file is stored in <span class="Directory"><span class="formula"> \~ </span>/Library/Preferences/</span> on Mac OS X, in <span class="Directory"><span class="formula"> \~ </span>/.imagej/</span> on Linux and Windows (with <span class="formula"> \~ </span> referring to the user’s home directory). Several macros and plugins also write parameters to this file. If the <span class="Filename">IJ\_prefs.txt</span> is erased using <span class="menuitem">Edit ▷ Options ▷ [<span class="menuitem">Reset…</span>↓](#sub:ResetOptions "wikilink")</span>, ImageJ will create a new one the next time it is opened resetting all parameters to their default values.
+[↓](#index-Settings "wikilink")[↓](#index-Preferences "wikilink")[↓ImageJ](#index-Options "wikilink") preferences are automatically saved in a preferences file, the<span class="Filename">IJ\_prefs.txt</span> text file. This file is stored in <span class="Directory"><span class="formula"> \~ </span>/Library/Preferences/</span> on Mac OS X, in <span class="Directory"><span class="formula"> \~ </span>/.imagej/</span> on Linux and Windows (with <span class="formula"> \~ </span> referring to the user’s home directory). Several macros and plugins also write parameters to this file. If the <span class="Filename">IJ\_prefs.txt</span> is erased using <span class="menuitem">Edit ▷ Options ▷ [<span class="menuitem">Reset…</span>↓](#sub_ResetOptions "wikilink")</span>, ImageJ will create a new one the next time it is opened resetting all parameters to their default values.
 
-Sometimes, it may be useful to override (or restore) certain settings that may have been changed during a working session. For example, the *Limit to threshold* option (<span class="menuitem"><span class="sans">Analyze ▷ </span>[<span class="menuitem">Set Measurements…</span>↓](#sub:Set-Measurements... "wikilink")</span>) will affect most measurements performed on thresholded images. Thus, it may be wise to check the status of this parameter before each analysis, specially when working on multiple computers.
+Sometimes, it may be useful to override (or restore) certain settings that may have been changed during a working session. For example, the *Limit to threshold* option (<span class="menuitem"><span class="sans">Analyze ▷ </span>[<span class="menuitem">Set Measurements…</span>↓](#sub_Set-Measurements... "wikilink")</span>) will affect most measurements performed on thresholded images. Thus, it may be wise to check the status of this parameter before each analysis, specially when working on multiple computers.
 
 <div class="listing">
 
@@ -855,19 +855,19 @@ Sometimes, it may be useful to override (or restore) certain settings that may h
 
 </div>
 
-The `setOption()` [macro function](http://imagej.nih.gov/ij/developer/macro/functions.html#setOption) can be used to set this and several other ImageJ options. Calling this function from the [↓](#index-StartupMacros "wikilink")[↓](#index-AutoRun "wikilink")“AutoRun” macro in the <span class="Filename">StartupMacros.txt</span> file ensures preferences are set each time ImageJ starts. The macro [(13↑)](#lis:setOption "wikilink") [Settings and Preferences↑](#lis:setOption "wikilink") exemplifies this approach ensuring that the following settings are enforced at startup:
+The `setOption()` [macro function](http://imagej.nih.gov/ij/developer/macro/functions.html#setOption) can be used to set this and several other ImageJ options. Calling this function from the [↓](#index-StartupMacros "wikilink")[↓](#index-AutoRun "wikilink")“AutoRun” macro in the <span class="Filename">StartupMacros.txt</span> file ensures preferences are set each time ImageJ starts. The macro [(13↑)](#lis_setOption "wikilink") [Settings and Preferences↑](#lis_setOption "wikilink") exemplifies this approach ensuring that the following settings are enforced at startup:
 
-1.  TIFF tag values are displayed by ImageJ (*Debug Mode* in <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Options ▷ </span>[Misc…↓](#sub:Misc... "wikilink")</span></span>)
-2.  Bicubic interpolation is preferred over bilinear (e.g.,<span class="sans"> </span><span class="menuitem"><span class="sans">Edit ▷ Selection ▷ </span>[Straighten…↓](#sub:Straighten... "wikilink")</span>)
-3.  The name of the measured image name is recorded in the first column of the [Results Table↓](#sec:Results-Table "wikilink") (*Display Label* in <span class="menuitem"><span class="sans">Analyze ▷ </span>[<span class="menuitem">Set Measurements…</span>↓](#sub:Set-Measurements... "wikilink")</span>)
-4.  Measurements are not restricted to thresholded pixels (*Limit to Threshold* in <span class="menuitem"><span class="sans">Analyze ▷ </span>[<span class="menuitem">Set Measurements…</span>↓](#sub:Set-Measurements... "wikilink")</span>)
-5.  Binary images are processed assuming white objects on a black background (*Black background* in <span class="menuitem"><span class="sans">Process ▷ Binary ▷ </span>[<span class="menuitem">Options…</span>↓](#sub:BinaryOptions... "wikilink")</span>, *see* [23↓](#infobox:blackBackground "wikilink") [Interpreting Binary Images↓](#infobox:blackBackground "wikilink"))
-6.  *Background color* is black and *foreground color* is white (<span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Options ▷ </span>[Colors…↓](#sub:Colors... "wikilink")</span></span>)
-7.  ImageJ plots contain grid lines and are always <span class="formula">350 × 200</span> pixels in size (<span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Options ▷ </span>[<span class="menuitem">Profile Plot Options…</span>↓](#sub:Profile-Plot-Options... "wikilink")</span></span>)
+1.  TIFF tag values are displayed by ImageJ (*Debug Mode* in <span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Options ▷ </span>[Misc…↓](#sub_Misc... "wikilink")</span></span>)
+2.  Bicubic interpolation is preferred over bilinear (e.g.,<span class="sans"> </span><span class="menuitem"><span class="sans">Edit ▷ Selection ▷ </span>[Straighten…↓](#sub_Straighten... "wikilink")</span>)
+3.  The name of the measured image name is recorded in the first column of the [Results Table↓](#sec_Results-Table "wikilink") (*Display Label* in <span class="menuitem"><span class="sans">Analyze ▷ </span>[<span class="menuitem">Set Measurements…</span>↓](#sub_Set-Measurements... "wikilink")</span>)
+4.  Measurements are not restricted to thresholded pixels (*Limit to Threshold* in <span class="menuitem"><span class="sans">Analyze ▷ </span>[<span class="menuitem">Set Measurements…</span>↓](#sub_Set-Measurements... "wikilink")</span>)
+5.  Binary images are processed assuming white objects on a black background (*Black background* in <span class="menuitem"><span class="sans">Process ▷ Binary ▷ </span>[<span class="menuitem">Options…</span>↓](#sub_BinaryOptions... "wikilink")</span>, *see* [23↓](#infobox_blackBackground "wikilink") [Interpreting Binary Images↓](#infobox_blackBackground "wikilink"))
+6.  *Background color* is black and *foreground color* is white (<span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Options ▷ </span>[Colors…↓](#sub_Colors... "wikilink")</span></span>)
+7.  ImageJ plots contain grid lines and are always <span class="formula">350 × 200</span> pixels in size (<span class="sans"><span class="menuitem"><span class="sans">Edit ▷ Options ▷ </span>[<span class="menuitem">Profile Plot Options…</span>↓](#sub_Profile-Plot-Options... "wikilink")</span></span>)
 8.  Open the B\&C widget at its last saved screen position (<span class="sans"><span class="menuitem"><span class="sans">Image ▷ Adjust ▷ </span>\[\[\#sub:Brightness/Contrast...%5BC%5D|Brightness/Contrast… \[C\]↓\]\]</span></span>)
 
 <div class="See">
 
-[Customizing the ImageJ Interface↓](#sec:GUIcustomization "wikilink"), FAQs[↓](#nom-faq "wikilink") on [ImageJ wikipage](http://imagejdocu.tudor.lu/doku.php?id=faq:technical:how_do_i_set_up_imagej_to_deal_with_white_particles_on_a_black_background_by_default), [8↓](#infobox:Organizing-Commands "wikilink") [Organizing Commands in the Menu Bar↓](#infobox:Organizing-Commands "wikilink")
+[Customizing the ImageJ Interface↓](#sec_GUIcustomization "wikilink"), FAQs[↓](#nom-faq "wikilink") on [ImageJ wikipage](http://imagejdocu.tudor.lu/doku.php?id=faq:technical:how_do_i_set_up_imagej_to_deal_with_white_particles_on_a_black_background_by_default), [8↓](#infobox_Organizing-Commands "wikilink") [Organizing Commands in the Menu Bar↓](#infobox_Organizing-Commands "wikilink")
 
 </div>

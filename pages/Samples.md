@@ -20,4 +20,4 @@ If you are looking for additional sample images, check out these resources:
   - [Example images](http://cellprofiler.org/examples/) from [CellProfiler](CellProfiler "wikilink")
   - [Scientific pictures and images on Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Scientific_pictures_and_images)
 
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Plugins](Category_Plugins "wikilink")

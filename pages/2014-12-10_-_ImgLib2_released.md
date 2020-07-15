@@ -52,4 +52,4 @@ All ImgLib2 subprojects have been adapted to these changes and released (in some
 
 One thing still pending is to upload these new ImgLib2 releases to the ImageJ and [Fiji](Fiji "wikilink") [update sites](update_sites "wikilink"), making them available to users of ImageJ and Fiji. This change has been rather involved, since there is a lot of downstream code affected by the API changes. But we expect to make the new ImgLib2 available to users before the end of the calendar year. Stay tuned for further announcements\!
 
-[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")

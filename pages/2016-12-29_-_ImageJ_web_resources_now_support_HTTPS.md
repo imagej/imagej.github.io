@@ -29,4 +29,4 @@ More work is still needed to make the [ImageJ Updater](ImageJ_Updater "wikilink"
 
 This work will make ImageJ and Fiji more secure, preventing potential man-in-the-middle attacks and arbitrary code injection.
 
-[Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:News](Category:News "wikilink")
+[Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:News](Category_News "wikilink")

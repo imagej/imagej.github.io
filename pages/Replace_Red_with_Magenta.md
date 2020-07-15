@@ -16,7 +16,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji ' repo='Fiji\_Plugins ' source='fiji/color/Convert\_Red\_To\_Magenta.java ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Replace Red with Magenta ' maintainer=maintainer author='Johannes Schindelin ' source=source released='27/06/2011 ' latest-version='27/06/2011 ' status=' ' category='[:Category:Plugins](:Category:Plugins "wikilink") ' %}
+{% include info-box software='ImageJ ' name='Replace Red with Magenta ' maintainer=maintainer author='Johannes Schindelin ' source=source released='27/06/2011 ' latest-version='27/06/2011 ' status=' ' category='[:Category:Plugins](_Category_Plugins "wikilink") ' %}
 
 This plugin converts all occurrences of red in a red/green image with magenta, effectively replacing it with a magenta/green merge.
 
@@ -26,7 +26,7 @@ Example:
 
 |                                     |                                                             |
 | ----------------------------------- | ----------------------------------------------------------- |
-| ![Clown.jpg](/images/pages/Clown.jpg "Clown.jpg") | ![Clown-magenta.jpg](/images/pages/Clown-magenta.jpg "Clown-magenta.jpg") |
+| ![Clown.jpg](Clown.jpg "Clown.jpg") | ![Clown-magenta.jpg](Clown-magenta.jpg "Clown-magenta.jpg") |
 
 ## Replace Red with Magenta (system clipboard)
 
@@ -42,4 +42,4 @@ As a demonstration, call Fiji's {% include bc content='File | Open Samples | Spi
 
 However, in the 21st century, one should always use proper [Colocalization](Colocalization "wikilink") with scatter plots and statistics. It is [too easy not to](Coloc_2 "wikilink").
 
-[Category:Tutorials](Category:Tutorials "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")

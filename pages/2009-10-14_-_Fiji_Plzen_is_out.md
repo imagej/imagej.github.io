@@ -77,4 +77,4 @@ The list is so long because we did not get the opportunity to meet and get a new
 
 A big thanks goes to all the contributors and users, especially those who helped us find and fix bugs\!
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

@@ -8,7 +8,7 @@ categories: Plugins,Filtering
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Rolling Ball Background Subtraction ' author='Michael Castle and Janice Keller (Mental Health Research Institute, University of Michigan) ' filename='Rolling\_Ball\_Background.class ' source=' [Rolling\_Ball\_Background.java](https://imagej.net/plugins/download/Rolling_Ball_Background.java) ' released='22 November 2007 ' status='first version ' category='[Filtering](:Category:Filtering "wikilink") ' website='https://imagej.net/plugins/rolling-ball.html ' %}
+{% include info-box software='ImageJ ' name='Rolling Ball Background Subtraction ' author='Michael Castle and Janice Keller (Mental Health Research Institute, University of Michigan) ' filename='Rolling\_Ball\_Background.class ' source=' [Rolling\_Ball\_Background.java](https://imagej.net/plugins/download/Rolling_Ball_Background.java) ' released='22 November 2007 ' status='first version ' category='[Filtering](_Category_Filtering "wikilink") ' website='https://imagej.net/plugins/rolling-ball.html ' %}
 
 ## Documentation
 
@@ -20,4 +20,4 @@ This plugin implements (differently) the same algorithm as the one built-in Imag
 
 The rolling-ball algorithm was inspired by Stanley Sternberg's article, "Biomedical Image Processing", IEEE Computer, January 1983.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Filtering](Category:Filtering "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Filtering](Category_Filtering "wikilink")

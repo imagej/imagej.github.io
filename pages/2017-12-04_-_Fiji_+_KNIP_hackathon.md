@@ -230,4 +230,4 @@ We discussed opportunities to improvement for the Bdv design:
 
   - Prototype of a 3D viewer for [TrackMate](TrackMate "wikilink") and [MaMuT](MaMuT "wikilink") based on [SciView](SciView "wikilink") and [Scenery](Scenery "wikilink").
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

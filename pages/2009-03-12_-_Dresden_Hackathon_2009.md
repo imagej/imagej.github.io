@@ -12,4 +12,4 @@ A hackathon dedicated to the development of [Fiji](https://fiji.sc) is going to 
 
 The focus this time will be aimed at *segmentation*. Stay tuned for the Fiji release that will follow this event, and contact us for any idea or suggestions.
 
-[Category:News](Category:News "wikilink") [Category:Hackathons](Category:Hackathons "wikilink")
+[Category:News](Category_News "wikilink") [Category:Hackathons](Category_Hackathons "wikilink")

@@ -120,7 +120,7 @@ Optional practical for you to do on your own:
 Git repos to clone:
 
   - Morning Session on ClearVolume and BDV VisTools:
-      - [Slides](Media:Jug_BigDataAnd3dViz.pdf "wikilink")
+      - [Slides](Media_Jug_BigDataAnd3dViz.pdf "wikilink")
       - https://github.com/fjug/TutorialClearVolume.git
       - https://github.com/fjug/TutorialBigDataViewer.git
       - https://github.com/imglib/imglib2-cache-examples.git (optional but awesome)

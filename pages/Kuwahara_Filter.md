@@ -11,4 +11,4 @@ description: test description
 {% include component-stats content=':sc.fiji:Kuwahara\_Filter' %}{% include stub%}
 
 
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Plugins](Category_Plugins "wikilink")

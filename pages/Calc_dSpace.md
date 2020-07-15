@@ -16,7 +16,7 @@ This plugin can be used to quickly calculate the interplanar spacing values *(d)
 
 Use imageJ’s circle tool (shift + oval tool) to measure the spot/ring patterns concentric to the (000) direct beam. From the area measurement, the radius (G) is found. From G = 1/d in reciprocal space, the d-spacing is calculated for each measurement made. This plugin has three different modes in which it can operate.
 
-![Modes.jpeg](/images/pages/Modes.jpeg "Modes.jpeg")
+![Modes.jpeg](Modes.jpeg "Modes.jpeg")
 
 The first, and most basic mode, is **calculate** where the calculated values for G and d are added to the imageJ Results window in new columns. G is in nanometers and d is in Angstroms. There is also a 2% error column, which is just 2 % of d in angstroms.
 
@@ -24,7 +24,7 @@ The first, and most basic mode, is **calculate** where the calculated values for
 
 The final mode is **Overlay & Crop**, which is more of a publication-ready mode that actually crops the diffraction pattern down to the size of the measured region. This is more suitable for publication, as it zooms to the measured region and makes the image square. This image is best saved as a jpeg first and then saved as a tiff if that is the preferred format.
 
-![CropExample.jpeg](/images/pages/CropExample.jpeg "CropExample.jpeg")
+![CropExample.jpeg](CropExample.jpeg "CropExample.jpeg")
 
 ## **Image Requirements**
 
@@ -34,7 +34,7 @@ The preferred image is a .dm3 file (Gatan’s format) that is properly calibrate
 
 ## **Strontium Titanate Example**
 
-The example below is from a single crystalline STO (strontium titanate) sample. It illustrates how the measurements should be made in order to ensure the plugin is calculating the d-spacing values accurately. Make your measurements working from the inner most spots/rings outwards. ![New\_Fig\_1.jpg](/images/pages/New Fig 1.jpg "New Fig 1.jpg") The table on the left shows the raw imageJ measurements that were made by drawing a circle and pressing the "m" key on the keyboard. The table on the right is the result of the plugin. Just go to the TEM menu and select *calc dSpace*. The calculation is automatic. ![New\_Fig\_2.jpg](/images/pages/New Fig 2.jpg "New Fig 2.jpg") There are 3 new columns in the Results window: G, d, 2% error. The scalar component of the G vector in reciprocal space is found and measured in 1/nm since these are the image units. The d-spacing is listed in Angstroms, and the 2% error is just 2% of the d-spacing. While it is *not* an actual uncertainty measurement, it can help you index your sample.
+The example below is from a single crystalline STO (strontium titanate) sample. It illustrates how the measurements should be made in order to ensure the plugin is calculating the d-spacing values accurately. Make your measurements working from the inner most spots/rings outwards. ![New\_Fig\_1.jpg](New_Fig_1.jpg "New_Fig_1.jpg") The table on the left shows the raw imageJ measurements that were made by drawing a circle and pressing the "m" key on the keyboard. The table on the right is the result of the plugin. Just go to the TEM menu and select *calc dSpace*. The calculation is automatic. ![New\_Fig\_2.jpg](New_Fig_2.jpg "New_Fig_2.jpg") There are 3 new columns in the Results window: G, d, 2% error. The scalar component of the G vector in reciprocal space is found and measured in 1/nm since these are the image units. The d-spacing is listed in Angstroms, and the 2% error is just 2% of the d-spacing. While it is *not* an actual uncertainty measurement, it can help you index your sample.
 
 ## **Tips**
 

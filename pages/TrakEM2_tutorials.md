@@ -158,4 +158,4 @@ In the tutorial, the layers are imported following an existing set of layers, i.
   - [TrakEM2](TrakEM2 "wikilink") wiki page
   - [TrakEM2 web page](http://www.ini.uzh.ch/~acardona/trakem2.html)
 
-[Category:TrakEM2](Category:TrakEM2 "wikilink") [Category:Tutorials](Category:Tutorials "wikilink")
+[Category:TrakEM2](Category_TrakEM2 "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")

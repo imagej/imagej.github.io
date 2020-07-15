@@ -20,7 +20,7 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 
 ## Dialog parameters
 
-![Dialog screen shot](/images/pages/Hillshade-screenshot.jpg "Dialog screen shot")
+![Dialog screen shot](Hillshade-screenshot.jpg "Dialog screen shot")
 
   - **x Pixel Size** - Size of one pixel in x direction, in the same units as the height (pixel value).
   - **y Pixel Size** - Size of one pixel in y direction, in the same units as the height (pixel value).
@@ -31,7 +31,7 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 
 ## Tips
 
-![Topographic map created by superposition, click to enlarge](/images/pages/Hillshade-overlay-example.jpg "Topographic map created by superposition, click to enlarge")
+![Topographic map created by superposition, click to enlarge](Hillshade-overlay-example.jpg "Topographic map created by superposition, click to enlarge")
 
   - If the slopes are very gentle, you can try setting smaller values of the pixel size to enhance the contrast.
   - To create an output like a topographic map, display the input (elevation data) with a suitable lookup table and superimpose the hill shade output:
@@ -50,11 +50,11 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 
   - Copy [Hill\_Shade.java](https://imagejdocu.tudor.lu/_media/plugin/filter/hill_shade/hill_shade.java) into the ImageJ plugins folder or a subfolder thereof (make sure you name the downloaded file ”Hill\_Shade.java”; uppercase/lowercase matters).
   - Compile with “Compile and run”.
-  - Alternatively, directly save the compiled class file [Hill\_Shade.class](Media:Hill_Shade.class "wikilink") into the ImageJ/plugins directory or an immediate subdirectory thereof. Again, make sure that you name the file correctly.
+  - Alternatively, directly save the compiled class file [Hill\_Shade.class](Media_Hill_Shade.class "wikilink") into the ImageJ/plugins directory or an immediate subdirectory thereof. Again, make sure that you name the file correctly.
 
 ## Related Links
 
   - Find out the elevation and azimuth of the Sun (or Moon) at any day/time for a given location: http://aa.usno.navy.mil/data/docs/AltAz.php
   - Get elevation maps for a given place at this website: http://srtm.csi.cgiar.org/SELECTION/inputCoord.asp
 
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Plugins](Category_Plugins "wikilink")

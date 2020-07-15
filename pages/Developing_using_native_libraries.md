@@ -461,4 +461,4 @@ Usually, you should not need to worry about these issues, as Fiji hides them con
 
 For full information on JNI, see [Sun's/Oracle's programmer guide on JNI](http://java.sun.com/docs/books/jni/html/jniTOC.html).
 
-[Category:Development](Category:Development "wikilink")
+[Category:Development](Category_Development "wikilink")

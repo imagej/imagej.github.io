@@ -13,7 +13,7 @@ description: test description
 
 ## Image formats
 
-![save\_as1.png](/images/pages/Save as1.png "save as1.png") ![save\_as2.png](/images/pages/Save as2.png "save as2.png")The “*File/Save*” (hotkey: S) menu command will save the image as a TIF file. Other formats are available (see menu image on the right) and can be accessed by “*File/Save As...*”. When the “*Save as*” dialog is opened, Fiji will enter the image window’s name, plus the appropriate file suffix, as the “File Name".
+![save\_as1.png](save_as1.png "save_as1.png") ![save\_as2.png](save_as2.png "save_as2.png")The “*File/Save*” (hotkey: S) menu command will save the image as a TIF file. Other formats are available (see menu image on the right) and can be accessed by “*File/Save As...*”. When the “*Save as*” dialog is opened, Fiji will enter the image window’s name, plus the appropriate file suffix, as the “File Name".
 
 *Animated GIF…* Choosing this option from the "*Save as*" menu saves a stack as an animated GIF. It is only compatible on RGB or 8 bit images. A more suitable option would be saving as *GIF*, where the only limitation is that any RGB color stacks must be converted to 8 bit color.
 
@@ -53,4 +53,4 @@ Files may also be exported to many file types using {% include bc content='Plugi
 
 See the Export column of the [Bio-Formats list of supported formats](http://openmicroscopy.org/site/support/bio-formats5/supported-formats.html) for an up-to-date list of formats which can be exported.
 
-[Category:Cookbook](Category:Cookbook "wikilink") [Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Cookbook](Category_Cookbook "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")

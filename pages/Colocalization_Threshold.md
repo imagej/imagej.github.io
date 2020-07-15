@@ -32,4 +32,4 @@ Use of this plugin should be followed by use of the [Colocalization Test](Coloca
 
 See also the [Colocalization Analysis](Colocalization_Analysis "wikilink") tutorial.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Colocalization](Category:Colocalization "wikilink") [Category:Color processing](Category:Color_processing "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Colocalization](Category_Colocalization "wikilink") [Category:Color processing](Category_Color_processing "wikilink")

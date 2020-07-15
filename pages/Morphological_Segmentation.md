@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='ijpb ' repo='MorphoLibJ ' %}
 {% endcapture %}
-{% include info-box name='Morphological Segmentation ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink") ' %}{| |style="vertical-align:top" |
+{% include info-box name='Morphological Segmentation ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Segmentation](_Category_Segmentation "wikilink"), [Mathematical morphology](_Category_Mathematical_morphology "wikilink") ' %}{| |style="vertical-align:top" |
 {% capture title%}
  Visual description of the different steps of the Morphological Segmentation plugin. 
 {% endcapture %}
@@ -28,7 +28,7 @@ description: test description
 
 ## Introduction
 
-![Morphological-segmentation-front.png](/images/pages/Morphological-segmentation-front.png "Morphological-segmentation-front.png")Morphological Segmentation is an ImageJ/Fiji plugin that combines morphological operations, such as extended minima and morphological gradient, with watershed flooding algorithms to segment grayscale images of any type (8, 16 and 32-bit) in 2D and 3D.
+![Morphological-segmentation-front.png](Morphological-segmentation-front.png "Morphological-segmentation-front.png")Morphological Segmentation is an ImageJ/Fiji plugin that combines morphological operations, such as extended minima and morphological gradient, with watershed flooding algorithms to segment grayscale images of any type (8, 16 and 32-bit) in 2D and 3D.
 
 ## Usage
 
@@ -55,7 +55,7 @@ When selecting “Object Image”, an additional set of options is enabled to ch
 
 ### Watershed Segmentation panel
 
-![Watershed Segmentation panel](/images/pages/Morphological-segmentation-watershed-segmentation-panel.png "Watershed Segmentation panel")This panel is reserved to the parameters involved in the segmentation pipeline. By default, only the tolerance can be changed. Clicking on “Advanced options” enables the rest of options.
+![Watershed Segmentation panel](Morphological-segmentation-watershed-segmentation-panel.png "Watershed Segmentation panel")This panel is reserved to the parameters involved in the segmentation pipeline. By default, only the tolerance can be changed. Clicking on “Advanced options” enables the rest of options.
 
   - **Tolerance**: dynamic of intensity for the search of regional minima (in the extended-minima transform, which is the regional minima of the H-minima transform, value of h). Increasing the tolerance value reduces the number of segments in the final result, while decreasing its value produces more object splits.
 
@@ -75,7 +75,7 @@ If your segmentation is taking too long or you want **to stop it** for any reaso
 
 ### Results panel
 
-![Results panel](/images/pages/Morphological-segmentation-results-panel.png "Results panel")Only enabled after running the segmentation.
+![Results panel](Morphological-segmentation-results-panel.png "Results panel")Only enabled after running the segmentation.
 
   - **Display**: list of options to display the segmentation results.
       - **Overlaid basins**: colored objects overlaying the input image (with or without dams depending on the selected option in the Watershed Segmentation panel).
@@ -93,7 +93,7 @@ If your segmentation is taking too long or you want **to stop it** for any reaso
 
 ### Post-processing panel
 
-![Post-processing panel](/images/pages/Morphological-segmentation-post-processing-panel.png "Post-processing panel")Similarly to the Results panel, this panel only gets enabled after running the segmentation pipeline.
+![Post-processing panel](Morphological-segmentation-post-processing-panel.png "Post-processing panel")Similarly to the Results panel, this panel only gets enabled after running the segmentation pipeline.
 
   - **Merge labels**: merge together labels selected by either the **“freehand” selection too**l (on a single slice) **or the point tool** (on single or multiple slices). The zero-value label belongs to the watershed dams, therefore it will ignored in case of being selected. The first selected label value will be assigned to the rest of selected labels, which will share its color.
 
@@ -269,4 +269,4 @@ This program is **free software**; you can redistribute it and/or modify it unde
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Mathematical\_morphology](Category:Mathematical_morphology "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Mathematical\_morphology](Category_Mathematical_morphology "wikilink") [Category:Citable](Category_Citable "wikilink")

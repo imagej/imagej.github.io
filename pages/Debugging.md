@@ -44,7 +44,7 @@ After starting the Java Virtual Machine in a special mode, debuggers (such as Ec
 ImageJ.app/ImageJ-linux64 --debugger=8000
 ```
 
-In Eclipse (or whatever [JDWP](wikipedia:JDWP "wikilink")-enabled debugger) select the correct project so that the source code can be found, mark the break-points where you want execution to halt (e.g. to inspect variables' values), and after clicking on *Run\>Debug Configurations...* right-click on the *Remote Java Application* item in the left-hand side list and select *New*. Now you only need to make sure that the port matches the value that you specified (in the example above, *8000*, Eclipse's default port number).
+In Eclipse (or whatever [JDWP](wikipedia_JDWP "wikilink")-enabled debugger) select the correct project so that the source code can be found, mark the break-points where you want execution to halt (e.g. to inspect variables' values), and after clicking on *Run\>Debug Configurations...* right-click on the *Remote Java Application* item in the left-hand side list and select *New*. Now you only need to make sure that the port matches the value that you specified (in the example above, *8000*, Eclipse's default port number).
 
 If you require more control over the ImageJ side -- such as picking a semi-random port if port 8000 is already in use -- you can also use the *-agentlib:jdwp=...* Java option directly (*--debugger=<port>* is just a shortcut for convenience):
 
@@ -629,4 +629,4 @@ Since this provides a shared [GNU screen](http://savannah.gnu.org/projects/scree
 
 After the debugging party is over, the user can log out securely by hitting {% include key content='Ctrl' %}+{% include key content='D' %} to log out from the local machine (since the user typed in their password in the GNU screen session herself, there is no way for the developer to log back in without the user's explicit consent). Another {% include key content='Ctrl' %}+{% include key content='D' %} will terminate the GNU screen session, and yet another {% include key content='Ctrl' %}+{% include key content='D' %} will log out from the shared account on the SSH server.
 
-[Category:Development](Category:Development "wikilink")
+[Category:Development](Category_Development "wikilink")

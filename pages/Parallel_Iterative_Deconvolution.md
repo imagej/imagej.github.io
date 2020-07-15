@@ -8,7 +8,7 @@ categories: Plugins,Deconvolution
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Parallel Iterative Deconvolution 2D and 3D ' author='Piotr Wendykier ' maintainer='None ' filename=' [parallel\_iterative\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260515&filename=parallel_iterative_deconvolution-1.9-bin.zip) ' source=' [parallel\_iterative\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260515&filename=parallel_iterative_deconvolution-1.9-src.zip) ' released='30 January 2008 ' latest-version='11 April 2009 ' status='active ' category='[Deconvolution](:Category:Deconvolution "wikilink") ' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/paralleliterativedeconvolution ' %}
+{% include info-box software='ImageJ ' name='Parallel Iterative Deconvolution 2D and 3D ' author='Piotr Wendykier ' maintainer='None ' filename=' [parallel\_iterative\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260515&filename=parallel_iterative_deconvolution-1.9-bin.zip) ' source=' [parallel\_iterative\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260515&filename=parallel_iterative_deconvolution-1.9-src.zip) ' released='30 January 2008 ' latest-version='11 April 2009 ' status='active ' category='[Deconvolution](_Category_Deconvolution "wikilink") ' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/paralleliterativedeconvolution ' %}
 
 ## Purpose
 
@@ -37,11 +37,11 @@ In applications such as astronomy, medicine, physics and biology, scientists use
 
 With iterative deconvolution methods, a sequence of approximations is constructed, where hopefully subsequent approximations provide better reconstructions. Mathematically this is equivalent to solving a particular optimization problem involving a PSF and a blurred image, which could be formulated as something simple like a least squares problem, or something more complicated that incorporates (possibly nonlinear) constraints. As with spectral filtering methods, regularization must be incorporated using, for example, a priori constraints, or through appropriate convergence criteria, or even a combination of such techniques. Well known examples of iterative image reconstruction algorithms include expectation maximization (EM) type approaches (such as the Richardson-Lucy algorithm), conjugate gradient (CG) type methods, and many others. One important advantage of using iterative algorithms is that they can be used on a much wider class of blurring models, including spatially variant blurs. Although iterative methods are generally more expensive than spectral filtering methods for simple spatially invariant blurs, they are much more efficient for difficult spatially variant blurs. Moreover, it is possible to incorporate constraints (e.g., nonnegativity) in the algorithms. The challenges in iterative algorithms concern the regularization (how to stabilize the iterative method in the presence of noise), and determination of an appropriate stopping iteration.
 
-Parallel Iterative Deconvolution is an ImageJ plugin for iterative image deblurring. The code is derived from [RestoreTools](http://mathcs.emory.edu/%7Enagy/RestoreTools/index.html): An Object Oriented [MATLAB](MATLAB "wikilink") Package for Image Restoration written by James G. Nagy and several of his students, including Julianne Chung, Katrina Palmer, Lisa Perrone, and Ryan Wright and also from [Iterative Deconvolve 3D](Iterative_Deconvolve_3D "wikilink") written by Robert Dougherty. The current version implements four iterative algorithms: Modified Residual Norm Steepest Descent [(MRNSD)](ftp://ftp.mathcs.emory.edu/pub/nagy/papers/NagStr00.ps.gz), Wiener Filter Preconditioned Landweber [(WPL)](http://www.optinav.com/Iterative-Deconvolve-3D.htm), Conjugate Gradient for Least Squares [(CGLS)](http://www.mai.liu.se/%7Eakbjo/LSPbook.html) and Hybrid Bidiagonalization Regularization [(HyBR)](http://www.mathcs.emory.edu/%7Enagy/WGCV/). Although the plugin can handle arbitrary-sized 2- and 3-dimensional images, its usage is limited to grayscale images. To deconvolve a color image, you would have to split the channels and deblur each channel separately.
+Parallel Iterative Deconvolution is an ImageJ plugin for iterative image deblurring. The code is derived from [RestoreTools](http://mathcs.emory.edu/%7Enagy/RestoreTools/index.html): An Object Oriented [MATLAB](MATLAB "wikilink") Package for Image Restoration written by James G. Nagy and several of his students, including Julianne Chung, Katrina Palmer, Lisa Perrone, and Ryan Wright and also from [Iterative Deconvolve 3D](Iterative_Deconvolve_3D "wikilink") written by Robert Dougherty. The current version implements four iterative algorithms: Modified Residual Norm Steepest Descent [(MRNSD)](ftp_//ftp.mathcs.emory.edu/pub/nagy/papers/NagStr00.ps.gz), Wiener Filter Preconditioned Landweber [(WPL)](http_//www.optinav.com/Iterative-Deconvolve-3D.htm), Conjugate Gradient for Least Squares [(CGLS)](http_//www.mai.liu.se/%7Eakbjo/LSPbook.html) and Hybrid Bidiagonalization Regularization [(HyBR)](http_//www.mathcs.emory.edu/%7Enagy/WGCV/). Although the plugin can handle arbitrary-sized 2- and 3-dimensional images, its usage is limited to grayscale images. To deconvolve a color image, you would have to split the channels and deblur each channel separately.
 
 ## How to use
 
-![ParallelIterativeDeconvolutionDialog.jpg](/images/pages/ParallelIterativeDeconvolutionDialog.jpg "ParallelIterativeDeconvolutionDialog.jpg")
+![ParallelIterativeDeconvolutionDialog.jpg](ParallelIterativeDeconvolutionDialog.jpg "ParallelIterativeDeconvolutionDialog.jpg")
 
 There are eight drop-down lists (combo-boxes) available in the GUI. From the Blurred image list, you can choose a blurred image. PSF list is for selection of a point spread function image. The content of these two lists depends on what is currently open in ImageJ - if no image windows are displayed then both lists are empty. The next two lists (Method and Preconditioner) allow you to select an algorithm used for deconvolution (MRNSD, WPL, CGLS, HyBR) and a preconditioner. The preconditioner is used for speeding up the convergence (so that you will get a better reconstruction after fewer iterations). Currently only the fast Fourier transform-based preconditioner is available (WPL uses the Wiener Filter as a preconditioner). The tolerance for the preconditioner is computed automatically by default (Auto check-box), but it is also possible to specify the value manually. In the Boundary combo-box you can choose from three types of boundary conditions: Reflexive, Periodic and Zero. The first ones are usually the best choice. The Resizing combo-box allows you to specify how the blurred image will be padded before processing. The Minimal resizing means that the pixel data in each dimension of a blurred image are padded by the size of the corresponding dimension of a PSF image. If the Next power of two option is selected, then the pixel data in each dimension of a blurred image are padded to the next power-of-two size that is greater or equal to the size of an image obtained by minimal padding. Finally, the Auto option chooses between the two other options to maximize the performance. The Output list is used to specify the type of an output (reconstructed image) and in the Precision combo-box you can choose a floating-point precision used in computations. Practice shows that a single precision is sufficient for most problems.
 
@@ -51,35 +51,35 @@ The Options button (next to the Method combo-box) is used to display a dialog wi
 
 ### MRNSD Options
 
-![MRNSDOptions.jpg](/images/pages/MRNSDOptions.jpg "MRNSDOptions.jpg")
+![MRNSDOptions.jpg](MRNSDOptions.jpg "MRNSDOptions.jpg")
 
 MRNSD has only three advanced properties. The Stopping tolerance text field allows you to manually specify the value that will be used as a stopping criterion. By default that value is computed automatically. When the Threshold option is enabled, then all values in the reconstructed image that are less than the value specified in the threshold text field are replaced by zero. However, since MRNSD is a nonnegatively constrained algorithm, this option is not very useful and is disabled by default. Finally, selecting Log convergence effects in displaying the record of the convergence in a separate Log window.
 
 ### WPL Options
 
-![WPLOptions.jpg](/images/pages/WPLOptions.jpg "WPLOptions.jpg")
+![WPLOptions.jpg](WPLOptions.jpg "WPLOptions.jpg")
 
 WPL, similarly to MRNSD, is a nonnegatively constrained algorithm, therefore the Threshold option is also disabled by default. Moreover, the Log mean pixel value to track convergence has the same functionality as in the case of MRNSD - the record of the convergence is displayed in the separate Log window. If Normalize PSF is selected then the point spread function is normalized before processing. To reduce artifacts from features near the boundary of the imaging volume you should use the Perform anti-ringing step option. The Detect divergence property stops the iteration if the changes appear to be increasing. You may try to increase the low pass filter size if this problem occurs. For WPL, the inputs in decibels are permitted (Data (image, psf and result) in dB). This is uncommon in optical image processing, but is the norm in acoustics. The Wiener filter gamma is a tolerance for the preconditioner. It is intended to speed up the convergence, but can produce spurious artifacts. Setting this parameter to zero turns off the preconditioner (Wiener Filter). The Low pass filter x and y settings, in pixels, provide a way to smooth the results and accelerate convergence. Choose 0 to disable this function. Finally, the Terminate iteration if mean delta less than x% is used as a stopping criterion.
 
 ### CGLS Options
 
-![CGLSOptions.jpg](/images/pages/CGLSOptions.jpg "CGLSOptions.jpg")
+![CGLSOptions.jpg](CGLSOptions.jpg "CGLSOptions.jpg")
 
 CGLS options panel looks exactly the same as the MRNSD options panel. The only difference is that the Threshold option is enabled by default, since it is not a nonnegativity constrained method.
 
 ### HyBR Options
 
-![HYBROptions.jpg](/images/pages/HYBROptions.jpg "HYBROptions.jpg")
+![HYBROptions.jpg](HYBROptions.jpg "HYBROptions.jpg")
 
-To understand all the details about advanced properties of HyBR you should first read [this](ftp://ftp.mathcs.emory.edu/pub/techreport/TR-2007-004-A.pdf) paper. In the HyBR options panel the properties relevant to regularization are grouped in the box called Regularization options. The Method combo-box allows you to decide how the regularization parameter will be computed. If you select None, then the value of the parameter has to entered in the Parameter text field. When WGCV (Weighted Generalized Cross-Validation) is chosen then you have to specify the weight (Omega) manually. In the Begin regularization after this iteration text field you can decide after which iteration the regularization will begin. Before that iteration the QR factorization is used to solve the least squares problem.
+To understand all the details about advanced properties of HyBR you should first read [this](ftp_//ftp.mathcs.emory.edu/pub/techreport/TR-2007-004-A.pdf) paper. In the HyBR options panel the properties relevant to regularization are grouped in the box called Regularization options. The Method combo-box allows you to decide how the regularization parameter will be computed. If you select None, then the value of the parameter has to entered in the Parameter text field. When WGCV (Weighted Generalized Cross-Validation) is chosen then you have to specify the weight (Omega) manually. In the Begin regularization after this iteration text field you can decide after which iteration the regularization will begin. Before that iteration the QR factorization is used to solve the least squares problem.
 
 Besides regularization properties, you can adjust five other options. In the Inner solver combo-box you can choose the solver that will be used at each iteration. Currently it can be either Tikhonov or None. If None is selected as an inner solver, then the QR factorization is used to solve the least squares problem. In the Stopping tolerance text field you can enter a value that will be used to detect flatness in the GCV curve as a stopping criteria. If Reorthogonalize Lanczos subspaces is selected, then during the process of Lanczos bidiagonalization, the subspaces will be reorthogonalized. Usually this is not required, so by default this option is unused. The Threshold check-box should be selected, because HyBR does not compute a nonnegative solution. The Log Convergence has the same functionality as for all other methods.
 
 ### Spatially Variant PSF
 
-![CreateSpatiallyVariantPSFDialog.jpg](/images/pages/CreateSpatiallyVariantPSFDialog.jpg "CreateSpatiallyVariantPSFDialog.jpg")
+![CreateSpatiallyVariantPSFDialog.jpg](CreateSpatiallyVariantPSFDialog.jpg "CreateSpatiallyVariantPSFDialog.jpg")
 
-![EditSpatiallyVariantPSFDialog.jpg](/images/pages/EditSpatiallyVariantPSFDialog.jpg "EditSpatiallyVariantPSFDialog.jpg")
+![EditSpatiallyVariantPSFDialog.jpg](EditSpatiallyVariantPSFDialog.jpg "EditSpatiallyVariantPSFDialog.jpg")
 
 There are three elements in the GUI that have not been described above, namely: Spatially variant PSF check-box, Define and Edit buttons. These controls allow you to work with spatially variant PSFs (i.e. if you have multiple PSF images associated with a single blurred image). Fig. In the Create Spatially Variant PSF panel you can specify the number of PSFs in the form of 2D (or 3D) matrix. Then, after clicking OK button, the Edit Spatially Variant PSF panel will appear. This dialog contains a grid of buttons that you can use to enter paths to the PSF files.
 
@@ -97,39 +97,39 @@ To use these tools you need to know some parameters of your microscope setup and
 
 After opening the image to deconvolve and the image of the PSF, start {% include bc content='Plugins | Deconvolution | 2D Iterative Deconvolution...'%}
 
-![ParallelIterativeDeconvolution2DSpatiallyInvariantExample.jpg](/images/pages/ParallelIterativeDeconvolution2DSpatiallyInvariantExample.jpg "ParallelIterativeDeconvolution2DSpatiallyInvariantExample.jpg")
+![ParallelIterativeDeconvolution2DSpatiallyInvariantExample.jpg](ParallelIterativeDeconvolution2DSpatiallyInvariantExample.jpg "ParallelIterativeDeconvolution2DSpatiallyInvariantExample.jpg")
 
 Clicking on the Deconvolve button results in this:
 
-![ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg](/images/pages/ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg "ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg")
+![ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg](ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg "ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg")
 
 ## 2D Spatially Variant Example
 
 After opening the image to deconvolve, start {% include bc content='Plugins | Deconvolution | 2D Iterative Deconvolution...'%}, select Spatially variant PSF check-box and click on the Define button
 
-![ParallelIterativeDeconvolution2DSpatiallyVariantExample1.jpg](/images/pages/ParallelIterativeDeconvolution2DSpatiallyVariantExample1.jpg "ParallelIterativeDeconvolution2DSpatiallyVariantExample1.jpg")
+![ParallelIterativeDeconvolution2DSpatiallyVariantExample1.jpg](ParallelIterativeDeconvolution2DSpatiallyVariantExample1.jpg "ParallelIterativeDeconvolution2DSpatiallyVariantExample1.jpg")
 
 Enter 5 x 5 and click OK button in the Create Spatially Variant PSF panel, then in the Edit Spatially Variant PSF panel you have to define all 25 PSFs
 
-![ParallelIterativeDeconvolution2DSpatiallyVariantExample2.jpg](/images/pages/ParallelIterativeDeconvolution2DSpatiallyVariantExample2.jpg "ParallelIterativeDeconvolution2DSpatiallyVariantExample2.jpg")
+![ParallelIterativeDeconvolution2DSpatiallyVariantExample2.jpg](ParallelIterativeDeconvolution2DSpatiallyVariantExample2.jpg "ParallelIterativeDeconvolution2DSpatiallyVariantExample2.jpg")
 
 Enter 40 in the Max number of iterations text field and click on the Deconvolve button. You have to adjust the color balance of both images ({% include bc content='Image | Adjust | Color Balance...'%}\>Auto from Fiji menu).
 
-![ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg](/images/pages/ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg "ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg")
+![ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg](ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg "ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg")
 
 ## 3D Spatially Invariant Example
 
 After opening the image to deconvolve and the image of the PSF, start {% include bc content='Plugins | Deconvolution | 3D Iterative Deconvolution...'%}
 
-![ParallelIterativeDeconvolution3DSpatiallyInvariantExample1.jpg](/images/pages/ParallelIterativeDeconvolution3DSpatiallyInvariantExample1.jpg "ParallelIterativeDeconvolution3DSpatiallyInvariantExample1.jpg")
+![ParallelIterativeDeconvolution3DSpatiallyInvariantExample1.jpg](ParallelIterativeDeconvolution3DSpatiallyInvariantExample1.jpg "ParallelIterativeDeconvolution3DSpatiallyInvariantExample1.jpg")
 
 Choose WPL method, click on the Options button and set all the properties as shown below
 
-![ParallelIterativeDeconvolution3DSpatiallyInvariantExample2.jpg](/images/pages/ParallelIterativeDeconvolution3DSpatiallyInvariantExample2.jpg "ParallelIterativeDeconvolution3DSpatiallyInvariantExample2.jpg")
+![ParallelIterativeDeconvolution3DSpatiallyInvariantExample2.jpg](ParallelIterativeDeconvolution3DSpatiallyInvariantExample2.jpg "ParallelIterativeDeconvolution3DSpatiallyInvariantExample2.jpg")
 
 Enter 20 in the Max number of iterations text field and click on the Deconvolve button
 
-![ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg](/images/pages/ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg "ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg")
+![ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg](ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg "ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg")
 
 ## See also
 
@@ -216,4 +216,4 @@ Enter 20 in the Max number of iterations text field and click on the Deconvolve 
       - Refactoring and cosmetic changes.
       - The plugin is updated to use Parallel Colt 0.7.2.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Deconvolution](Category:Deconvolution "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Deconvolution](Category_Deconvolution "wikilink")

@@ -72,4 +72,4 @@ The changes:
 
 Thanks to all the people who helped this release come about\!
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

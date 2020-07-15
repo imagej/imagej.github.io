@@ -34,4 +34,4 @@ Alternately, the LuraWave decoder is proprietary software which you can (theoret
   - [OME Blog - Supporting complex formats - what we will and won't do, and what you can do to help](http://blog.openmicroscopy.org/file-formats/community/2016/01/06/format-support/)
   - [Why scientists should use open source software](Open_Source "wikilink")
 
-[Category:Import-Export](Category:Import-Export "wikilink")
+[Category:Import-Export](Category_Import-Export "wikilink")

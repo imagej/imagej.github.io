@@ -12,7 +12,7 @@ description: test description
 
 A number of screencasts exist to help new users getting a particular job done with the 3D Viewer.
 
-For remaining questions, there is also a detailed [User FAQs](3D_Viewer:_User_FAQs "wikilink") page.
+For remaining questions, there is also a detailed [User FAQs](3D_Viewer__User_FAQs "wikilink") page.
 
 ## Display stacks
 

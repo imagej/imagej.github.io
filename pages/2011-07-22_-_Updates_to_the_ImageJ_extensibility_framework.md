@@ -30,4 +30,4 @@ What's next:
 3.  More module invocation routines:
       - It would be nice to have run methods of `ModuleService` and `PluginService` that accept parameters programmatically, either as a list or as a map. Grant's `InvokePluginTest` shows what we are going for.
 
-[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")

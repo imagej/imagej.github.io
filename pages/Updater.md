@@ -23,7 +23,7 @@ The Updater is a mechanism to update individual packages. It is automatically ru
 
 If there were updates since the Updater was run the last time, the user will be asked whether you want to run the Updater now or later:
 
-![Up-to-date-check.png](/images/pages/Up-to-date-check.png "Up-to-date-check.png")
+![Up-to-date-check.png](Up-to-date-check.png "Up-to-date-check.png")
 
 In case you do not want to run the Updater upon startup, you can choose *Never*.
 
@@ -35,7 +35,7 @@ The Updater can be run via {% include bc content='Help | Update...'%}.
 
 The Updater has two modes, the *Easy Mode* and the *Advanced Mode*. In the easy mode, you will only see the files that can be updated. The easy mode looks like this:
 
-![Updater-easy-mode.png](/images/pages/Updater-easy-mode.png "Updater-easy-mode.png")
+![Updater-easy-mode.png](Updater-easy-mode.png "Updater-easy-mode.png")
 
 For technical reasons, a restart of ImageJ is required before the changes take effect. You can read about technical details [here](Uploading_plugins "wikilink").
 
@@ -43,7 +43,7 @@ For technical reasons, a restart of ImageJ is required before the changes take e
 
 Some plugins require other components to be updated. For example, the [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink") needs the [3D Viewer](3D_Viewer "wikilink"). If you have a locally modified version of the dependency (i.e. the Updater does not know that particular version), the Updater will ask you what to do:
 
-![Updater-Resolve\_dependencies.png](/images/pages/Updater-Resolve dependencies.png "Updater-Resolve dependencies.png")
+![Updater-Resolve\_dependencies.png](Updater-Resolve_dependencies.png "Updater-Resolve_dependencies.png")
 
 A typical scenario when you can have a locally modified version of a component is when you asked the respective plugin author for a change in a certain component and got a test version that you [installed manually](Installing_3rd_party_plugins "wikilink").
 
@@ -55,13 +55,13 @@ In the advanced mode, you can see details about the files, choose to skip updati
 
 Note: in the advanced mode you can also upload plugins to your [update site](Update_Sites "wikilink"). The details for each component can be edited by writing below the respective entry. To save the changes, you have to upload the plugin to the server.
 
-![Snapshot\_of\_the\_Advanced\_Mode\_of\_the\_Updater.png](/images/pages/Snapshot of the Advanced Mode of the Updater.png "Snapshot of the Advanced Mode of the Updater.png")
+![Snapshot\_of\_the\_Advanced\_Mode\_of\_the\_Updater.png](Snapshot_of_the_Advanced_Mode_of_the_Updater.png "Snapshot_of_the_Advanced_Mode_of_the_Updater.png")
 
 ## Starting the Updater manually
 
 Just click on the {% include bc content='Help | Update...'%} menu item:
 
-![Fiji\_Updater-screenshot.png](/images/pages/Fiji Updater-screenshot.png "Fiji Updater-screenshot.png")
+![Fiji\_Updater-screenshot.png](Fiji_Updater-screenshot.png "Fiji_Updater-screenshot.png")
 
 ## Adding update sites
 
@@ -200,4 +200,4 @@ Johannes Schindelin got stuck with the maintainership and introduced third-party
 
 As of September 2012, the Fiji Updater has moved to [ImageJ2](ImageJ2 "wikilink"). Details can be found in the announcement: [2012-09-14 - The Updater moved](2012-09-14_-_The_Updater_moved "wikilink").
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")

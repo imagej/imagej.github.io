@@ -37,21 +37,21 @@ description: test description
 
 # Outdated Screencasts
 
-These are old [Simple Neurite Tracer](SNT:_FAQ#snt "wikilink") screencasts that are likely too outdated to be useful.
+These are old [Simple Neurite Tracer](SNT__FAQ#snt "wikilink") screencasts that are likely too outdated to be useful.
 
-### Basic Usage of [Simple Neurite Tracer](SNT:_FAQ#snt "wikilink")
+### Basic Usage of [Simple Neurite Tracer](SNT__FAQ#snt "wikilink")
 
   
 {% include youtube url='https://www.youtube.com/embed/y6ZPdDfUOjI'%}  
   
 
-### Using MIP overlays in [Simple Neurite Tracer](SNT:_FAQ#snt "wikilink")
+### Using MIP overlays in [Simple Neurite Tracer](SNT__FAQ#snt "wikilink")
 
   
 {% include youtube url='https://www.youtube.com/embed/pXpMRb1AC4I'%}  
   
 
-### Using The [Legacy 3D Viewer](SNT:_Step-By-Step_Instructions#Tracing_in_the_Legacy_3D_Viewer "wikilink")
+### Using The [Legacy 3D Viewer](SNT__Step-By-Step_Instructions#Tracing_in_the_Legacy_3D_Viewer "wikilink")
 
   
 {% include youtube url='https://www.youtube.com/embed/SrPeSwu31Zs'%}  

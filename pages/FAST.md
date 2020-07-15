@@ -27,7 +27,7 @@ New commands should then appear in ImageJ '{% include bc content='Plugins | FAST
 
 ## Image Processing
 
-![Description of the Image processing pipeline of FAST macro.](/images/pages/FAST Processing.png "Description of the Image processing pipeline of FAST macro.")
+![Description of the Image processing pipeline of FAST macro.](FAST_Processing.png "Description of the Image processing pipeline of FAST macro.")
 
 ### Step 1: Auto processing of images within the selected work directory
 
@@ -43,7 +43,7 @@ New commands should then appear in ImageJ '{% include bc content='Plugins | FAST
 
 ## Startup Options
 
-![Options dialog box](/images/pages/FAST Options.png "Options dialog box") The macro displays a dialog box to set analysis options:
+![Options dialog box](FAST_Options.png "Options dialog box") The macro displays a dialog box to set analysis options:
 
   - **File type** : Select image type between CZI (Carl Zeiss Image), ZVI (Zeiss Vision Image), ND2 (Nikon) or TIFF (Tagged Image File Format).  
     'Other' allow to enter a specific file extension.  
@@ -59,7 +59,7 @@ New commands should then appear in ImageJ '{% include bc content='Plugins | FAST
 
 ## Validation of selected Regions Of Interest
 
-![User validation of defined ROI](/images/pages/FAST ROI-check.png "User validation of defined ROI") After completion of Step 1 of image processing, images and their corresponding ROIs need to be validated by the user.
+![User validation of defined ROI](FAST_ROI-check.png "User validation of defined ROI") After completion of Step 1 of image processing, images and their corresponding ROIs need to be validated by the user.
 
 Each image and the corresponding ROI are opened automatically. An options dialog box is displayed.
 
@@ -69,11 +69,11 @@ Each image and the corresponding ROI are opened automatically. An options dialog
 
 Just select the radio button option needed then click {% include key content='press|OK' %} or {% include key content='press|⏎ENTER' %} to continue.
 
-![Dialog box to redefine area](/images/pages/FAST ROI-edition.png "Dialog box to redefine area") If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
+![Dialog box to redefine area](FAST_ROI-edition.png "Dialog box to redefine area") If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
 
-![Example of thresholded image and corrected ROI](/images/pages/FAST Thr-ROI.png "Example of thresholded image and corrected ROI")
+![Example of thresholded image and corrected ROI](FAST_Thr-ROI.png "Example of thresholded image and corrected ROI")
 
-Select the appropriate tool in ImageJ toolbar: ![Freehand.png](/images/pages/Freehand.png "Freehand.png") Freehand (default) OR ![Wand-tool.png](/images/pages/Wand-tool.png "Wand-tool.png") Wand tool.
+Select the appropriate tool in ImageJ toolbar: ![Freehand.png](Freehand.png "Freehand.png") Freehand (default) OR ![Wand-tool.png](Wand-tool.png "Wand-tool.png") Wand tool.
 
   - To remove non-specific fluorescence, use selected tool and hold {% include key content='press|Alt' %} while unwanted area to remove it from ROI.
   - To add area to the previously selected ROI, hold {% include key content='press|Shift' %} while selecting new area to add.
@@ -90,4 +90,4 @@ This program is free software; you can redistribute it and/or modify it under th
 
 This program has been developed within the framework of the [OECD Work plan for the Test Guidelines Programme (TGP)](http://www.oecd.org/chemicalsafety/testing/oecd-guidelines-testing-chemicals-related-documents.htm) - Project 2.46: New Test Guideline for the Detection of Endocrine Active Substances, acting through estrogen receptors using transgenic cyp 19a1b-GFP Zebrafish Embryos (EASZY assay).
 
-[Category:Analysis‏‎](Category:Analysis‏‎ "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Analysis‏‎](Category_Analysis‏‎ "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")

@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Imglib: iterating through pixel data](Imglib:_iterating_through_pixel_data "wikilink")
+1.  REDIRECT [Imglib: iterating through pixel data](Imglib__iterating_through_pixel_data "wikilink")

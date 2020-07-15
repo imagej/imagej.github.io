@@ -8,4 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Talk:Otsu Thresholding](Talk:Otsu_Thresholding "wikilink")
+1.  REDIRECT [Talk:Otsu Thresholding](Talk_Otsu_Thresholding "wikilink")

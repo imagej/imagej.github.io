@@ -18,10 +18,10 @@ Is the "Other info" useful? Most of those things should be linked from the main 
 
 Thoughts?
 
-—[Rueden](User:Rueden "wikilink") ([talk](User_talk:Rueden "wikilink"))
+—[Rueden](User_Rueden "wikilink") ([talk](User_talk_Rueden "wikilink"))
 
 ### Ellen's Reply
 
 no worries... we can remove it. I was motivated to include that mainly for the satellite workshop for the ABRF meeting... but you are right - less is more (and easier to maintain) I'll remove it now.
 
-[Etarena](User:Etarena "wikilink") ([talk](User_talk:Etarena "wikilink"))
+[Etarena](User_Etarena "wikilink") ([talk](User_talk_Etarena "wikilink"))

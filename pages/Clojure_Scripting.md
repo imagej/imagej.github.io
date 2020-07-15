@@ -8,7 +8,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='languages' %}[Clojure](wikipedia:Clojure "wikilink") is a dialect of the [Lisp programming language](wikipedia:Lisp_\(programming_language\) "wikilink"). Clojure is a general-purpose programming language with an emphasis on functional programming.
+{% include learn content='languages' %}[Clojure](wikipedia_Clojure "wikilink") is a dialect of the [Lisp programming language](wikipedia_Lisp_\(programming_language\) "wikilink"). Clojure is a general-purpose programming language with an emphasis on functional programming.
 
 # Clojure tutorial for ImageJ
 
@@ -1147,7 +1147,7 @@ Otherwise, it would just return the <i>:ok</i> keyword.
 
 A beautiful example of using lazy sequences and applying functions to one or more sequences at a time.
 
-Below, the sequence <i>fibs</i> is defined in such a way that it contains all possible [fibonacci numbers](wikipedia:Fibonacci_number "wikilink"). Since such sequence is infinite, we declared it as <i>lazy</i> sequence, that creates new elements only when they are asked for.
+Below, the sequence <i>fibs</i> is defined in such a way that it contains all possible [fibonacci numbers](wikipedia_Fibonacci_number "wikilink"). Since such sequence is infinite, we declared it as <i>lazy</i> sequence, that creates new elements only when they are asked for.
 
 The <i>lazy-cat</i> clojure function creates such lazy sequence by concatenation of two sequences: the first sequence is <i>0, 1</i> (which takes the role of feeder or initialization sequence), and the second sequence is the result of a <i>map</i> operation over two subsets of the <i>fibs</i> sequence itself: the full and the full minus the first element (hence the <i>rest</i> operation to obtain the list of all elements without the first).
 
@@ -1253,7 +1253,7 @@ So now any changes to the original <i>pixels</i> array will not affect the new s
 
 ## Generating java classes in .class files from clojure code
 
-Using ahead of time (AOT) compilation with [gen-class](http://clojure.org/compilation), any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [jython](Jython_Scripting "wikilink"), [jruby](JRuby_Scripting "wikilink"), [javascript](Javascript_Scripting "wikilink"), and [any other](:Category:Scripting "wikilink").
+Using ahead of time (AOT) compilation with [gen-class](http://clojure.org/compilation), any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [jython](Jython_Scripting "wikilink"), [jruby](JRuby_Scripting "wikilink"), [javascript](Javascript_Scripting "wikilink"), and [any other](_Category_Scripting "wikilink").
 
 One way to do so is to place a [gen-class](http://clojure.org/compilation) declaration in a namespace block.
 
@@ -1672,4 +1672,4 @@ user=> sa
 (.show (ij.ImagePlus. "nile bend" img))
 ```
 
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Scripting](Category_Scripting "wikilink")

@@ -15,4 +15,4 @@ I was just wondering why we can't find the following lines of code
 are not to be found here? As a newbe I would not immediatly expect that this is the proper way to use it instead of creating an instance...
 
   -   
-    Please post support questions on the [Forum](Forum "wikilink"). —[Rueden](User:Rueden "wikilink") ([talk](User_talk:Rueden "wikilink")) 11:19, 22 March 2016 (CDT)
+    Please post support questions on the [Forum](Forum "wikilink"). —[Rueden](User_Rueden "wikilink") ([talk](User_talk_Rueden "wikilink")) 11:19, 22 March 2016 (CDT)

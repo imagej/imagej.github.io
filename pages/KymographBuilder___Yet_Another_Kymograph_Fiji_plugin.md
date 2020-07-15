@@ -44,7 +44,7 @@ How to use :
 
 ## Scripting
 
-You can script the plugin. Here is an example :
+You can script the plugin. Here is an example _
 
 {% include github-embed org='fiji ' repo='KymographBuilder ' path='src/main/resources/script\_templates/Examples/MultiKymographBuilder.py ' label='MultiKymographBuilder.py ' %}
 

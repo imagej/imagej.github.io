@@ -8,7 +8,7 @@ categories: Filtering,Plugins
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Kalman Stack Filter ' author='Christopher Philip Mauer ' filename='Kalman\_Stack\_Filter.class ' source=' [Kalman\_Stack\_Filter.java](https://imagej.net/plugins/download/Kalman_Stack_Filter.java) ' released='23 May 2003 ' latest-version='17 November 2006 ' status='stable (not yet in fiji update) ' category='[Filtering](:Category:Filtering "wikilink") ' website='https://imagej.net/plugins/kalman.html ' %}
+{% include info-box software='ImageJ ' name='Kalman Stack Filter ' author='Christopher Philip Mauer ' filename='Kalman\_Stack\_Filter.class ' source=' [Kalman\_Stack\_Filter.java](https://imagej.net/plugins/download/Kalman_Stack_Filter.java) ' released='23 May 2003 ' latest-version='17 November 2006 ' status='stable (not yet in fiji update) ' category='[Filtering](_Category_Filtering "wikilink") ' website='https://imagej.net/plugins/kalman.html ' %}
 
 ## Purpose
 
@@ -18,4 +18,4 @@ This plugin implements a recursive prediction/correction algorithm which is base
 
 The [ImageJ website](https://imagej.net/plugins/kalman.html) offer a very complete documentation for its usage. Please refer to it.
 
-[Category:Filtering](Category:Filtering "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Filtering](Category_Filtering "wikilink") [Category:Plugins](Category_Plugins "wikilink")

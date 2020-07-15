@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='ClearVolume ' repo='imglib2-clearvolume ' %}
 {% endcapture %}
-{% include info-box name='ClearVolume ' logo='![ClearVolumeLogo.png](/images/pages/ClearVolumeLogo.png "ClearVolumeLogo.png") ' software='Fiji ' author=author maintainer=maintainer source=source status='active ' category='[Visualization](:Category:Visualization "wikilink") ' website='https://clearvolume.github.io/ ' %}== Problems and Solutions == We work constantly on improving the Fiji and KNIME plugins. Help us doing so by letting us know if you encounter problems.
+{% include info-box name='ClearVolume ' logo='![ClearVolumeLogo.png](ClearVolumeLogo.png "ClearVolumeLogo.png") ' software='Fiji ' author=author maintainer=maintainer source=source status='active ' category='[Visualization](_Category_Visualization "wikilink") ' website='https://clearvolume.github.io/ ' %}== Problems and Solutions == We work constantly on improving the Fiji and KNIME plugins. Help us doing so by letting us know if you encounter problems.
 
   - **Problem:** on a Linux machine ClearVolume would not start but throw an ugly exception like
       -   
@@ -42,13 +42,13 @@ description: test description
 
 <center>
 
-![The main ClearVolume plugin can render volumetric multi-channel data. Channel LUTs, transparency, rendering quality, etc. can easily be set in the plugins user interface. We thank Tzumin Lee's group at Janelia for being allowed to use their twin-spot MARCM (Yu et al., Nature Neuroscience, 2009) labeled neurons.](/images/pages/ClearVolumeInFiji.png "The main ClearVolume plugin can render volumetric multi-channel data. Channel LUTs, transparency, rendering quality, etc. can easily be set in the plugins user interface. We thank Tzumin Lee's group at Janelia for being allowed to use their twin-spot MARCM (Yu et al., Nature Neuroscience, 2009) labeled neurons.")
+![The main ClearVolume plugin can render volumetric multi-channel data. Channel LUTs, transparency, rendering quality, etc. can easily be set in the plugins user interface. We thank Tzumin Lee's group at Janelia for being allowed to use their twin-spot MARCM (Yu et al., Nature Neuroscience, 2009) labeled neurons.](ClearVolumeInFiji.png "The main ClearVolume plugin can render volumetric multi-channel data. Channel LUTs, transparency, rendering quality, etc. can easily be set in the plugins user interface. We thank Tzumin Lee's group at Janelia for being allowed to use their twin-spot MARCM (Yu et al., Nature Neuroscience, 2009) labeled neurons.")
 
 </center>
 
 <center>
 
-![The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute.](/images/pages/ClearVolumeNetworkClientInFiji.png "The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute.")
+![The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute.](ClearVolumeNetworkClientInFiji.png "The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute.")
 
 </center>
 
@@ -58,4 +58,4 @@ See ClearVolume in action\!
 
 \=='%}
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Visualization](Category:Visualization "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Visualization](Category_Visualization "wikilink") [Category:Citable](Category_Citable "wikilink")

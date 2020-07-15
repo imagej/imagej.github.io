@@ -49,7 +49,7 @@ We are having good success packaging ImageJ via [Oracle's Java packaging mechani
 
   - As a self-contained application—i.e., platform native launcher (.exe on Windows, .app on OS X, etc.)
   - As a standalone application—i.e., double-clickable JAR file.
-  - As a [Java Web Start](wikipedia:Java_Web_Start "wikilink") application
+  - As a [Java Web Start](wikipedia_Java_Web_Start "wikilink") application
   - As an embedded web page—i.e., a Java applet.
 
 The **self-contained application** bundles are the most relevant to ImageJ specifically (although all of the above may be useful to various niches of software development). With Java's built-in bundling tools, we will be able to provide:
@@ -77,4 +77,4 @@ For a complete list of deployment-related issues we are tackling over the summer
 
 As you can see, it's going to be a busy summer. We will push hard to have a newer, stronger ImageJ ready to go for [this fall's ImageJ conference](Conference_2015 "wikilink")\!
 
-[Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:News](Category:News "wikilink")
+[Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:News](Category_News "wikilink")

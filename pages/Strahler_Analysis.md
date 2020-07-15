@@ -24,17 +24,17 @@ description: test description
 {% capture source%}
 {% include github org='tferr ' repo='hIPNAT ' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='Strahler Analysis ' maintainer=maintainer author=author filename='hIPNAT\_.jar ([Neuroanatomy update site](User:Neuroanatomy "wikilink")) ' source=source released='April 2016 ' category='[Plugins](:Category:Plugins "wikilink"), [Neuroanatomy](:Category:Neuroanatomy "wikilink"), [Analysis](:Category:Analysis "wikilink"), [Skeleton](:Category:Skeleton "wikilink") ' %}
+{% include info-box software='Fiji ' name='Strahler Analysis ' maintainer=maintainer author=author filename='hIPNAT\_.jar ([Neuroanatomy update site](User_Neuroanatomy "wikilink")) ' source=source released='April 2016 ' category='[Plugins](_Category_Plugins "wikilink"), [Neuroanatomy](_Category_Neuroanatomy "wikilink"), [Analysis](_Category_Analysis "wikilink"), [Skeleton](_Category_Skeleton "wikilink") ' %}
 
 </div>
 
-A plugin from the [Neuroanatomy update site](User:Neuroanatomy "wikilink") that performs Strahler analysis on topographic skeletons (2D/3D). [Strahler numbering](wikipedia:Strahler_number "wikilink") is a numerical procedure that summarizes the branching complexity of mathematical trees.
+A plugin from the [Neuroanatomy update site](User_Neuroanatomy "wikilink") that performs Strahler analysis on topographic skeletons (2D/3D). [Strahler numbering](wikipedia_Strahler_number "wikilink") is a numerical procedure that summarizes the branching complexity of mathematical trees.
 
 {% include ambox text='This page describes how to perform Strahler Analysis on skeletonized images. For analysis of traced structures have a look at [SNT](SNT "wikilink"). ' %}
 
 ## Description
 
-<span id="StrahlerAnimation"></span>![Strahler Analysis by iterative elimination of end-point branches](/images/pages/StrahlerAnimation.gif "Strahler Analysis by iterative elimination of end-point branches") The analysis occurs through progressive pruning of terminal branches, *iterative tree simplification*, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them.
+<span id="StrahlerAnimation"></span>![Strahler Analysis by iterative elimination of end-point branches](StrahlerAnimation.gif "Strahler Analysis by iterative elimination of end-point branches") The analysis occurs through progressive pruning of terminal branches, *iterative tree simplification*, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them.
 
 *Strahler Analysis* takes a <u>binary</u> or <u>8-bit grayscale</u> image (2D or 3D) containing a <u>single arbor</u>, and calls [AnalyzeSkeleton](AnalyzeSkeleton "wikilink") iteratively to retrieve [Horton-Strahler numbers](#References "wikilink") from the [skeletonized centerlines](Skeletonize3D "wikilink") of the input image. Each iteration includes three operations: 1) a (re)-skeletonization step to ensure that arbor remains represented by its centerlines, 2) an elimination step in which terminal-branches are pruned from the image and 3) an analysis step in which pruned branches are counted and measured. The iteration ceases as soon as all branches have been eliminated or a unresolved [closed loop](#Elimination_of_Skeleton_Loops "wikilink") has been detected in the pruned arbor.
 
@@ -92,7 +92,7 @@ The problem with undiscriminated elimination of terminal branches is that a root
 |                                                                                                                                                                                                                                                                                                                                                    |                                          |                                                   |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------: | :-----------------------------------------------: |
 |                                                                                                                                                     Arbor with rectangular ROI containing root                                                                                                                                                     | Analysis ignoring ROI: Inaccurate result | Analysis taking ROI into account: Accurate result |
-|                                                                                                                             ![Strahler\_RootProtection.png](/images/pages/Strahler RootProtection.png "Strahler RootProtection.png")                                                                                                                             |                                          |                                                   |
+|                                                                                                                             ![Strahler\_RootProtection.png](Strahler_RootProtection.png "Strahler_RootProtection.png")                                                                                                                             |                                          |                                                   |
 | Root branches are spared from the iterative elimination procedure if marked by a rectangular ROI. Middle image: ROI is ignored. As a consequence, root-branch is interpreted as any other terminal-branch. Right image: Analysis infers that end-point contained by ROI belongs to a root-branch and marked branch is excluded from the iteration. |                                          |                                                   |
 
 </center>
@@ -123,7 +123,7 @@ The plugin produces three types of outputs:
   - 
     
       -   
-        Ramification or [bifurcation ratios](wikipedia:Strahler_number#Bifurcation_ratio "wikilink") are the quotients between branches of consecutive orders. An overall ratio may be obtained by averaging ratios across orders.
+        Ramification or [bifurcation ratios](wikipedia_Strahler_number#Bifurcation_ratio "wikilink") are the quotients between branches of consecutive orders. An overall ratio may be obtained by averaging ratios across orders.
 
 <!-- end list -->
 
@@ -132,7 +132,7 @@ The plugin produces three types of outputs:
 
 ## Installation
 
-To install *Strahler Analysis* you must use Java 8 and subscribe to the [Neuroanatomy update site](User:Neuroanatomy "wikilink").
+To install *Strahler Analysis* you must use Java 8 and subscribe to the [Neuroanatomy update site](User_Neuroanatomy "wikilink").
 
 ## Related Links
 
@@ -141,7 +141,7 @@ To install *Strahler Analysis* you must use Java 8 and subscribe to the [Neuroan
 
 ## References
 
-Original publications by [Robert E. Horton](wikipedia:Robert_E._Horton "wikilink") and [Arthur N. Strahler](wikipedia:Arthur_Newell_Strahler "wikilink"):
+Original publications by [Robert E. Horton](wikipedia_Robert_E._Horton "wikilink") and [Arthur N. Strahler](wikipedia_Arthur_Newell_Strahler "wikilink"):
 
   - {% include citation first='R. E. ' last='Horton ' title='Erosional development of streams and their drainage basins: hydro-physical approach to quantitative morphology ' journal='Geological Society of America Bulletin ' volume='56 ' issue='3 ' year='1945 ' pages='275–370 ' doi='10.1130/0016-7606(1945)56\[275:EDOSAT\]2.0.CO;2 ' %}.
 
@@ -155,7 +155,7 @@ Original publications by [Robert E. Horton](wikipedia:Robert_E._Horton "wikilink
 
 ## Citing
 
-Plugins from the [Neuroanatomy update site](User:Neuroanatomy "wikilink"):
+Plugins from the [Neuroanatomy update site](User_Neuroanatomy "wikilink"):
 
 :\* Tiago Ferreira (2016) [<img src="https://zenodo.org/badge/doi/10.5281/zenodo.49399.svg" alt="10.5281/zenodo.49399">](http://dx.doi.org/10.5281/zenodo.49399)
 
@@ -173,4 +173,4 @@ To all the developers of [AnalyzeSkeleton](https://github.com/fiji/AnalyzeSkelet
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[Category:Skeleton](Category:Skeleton "wikilink") [Category:Analysis](Category:Analysis "wikilink") [Category:Plugins](Category:Plugins "wikilink") [Category:Neuroanatomy](Category:Neuroanatomy "wikilink")
+[Category:Skeleton](Category_Skeleton "wikilink") [Category:Analysis](Category_Analysis "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink")

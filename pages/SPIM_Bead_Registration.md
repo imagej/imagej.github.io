@@ -8,13 +8,13 @@ categories:
 description: test description
 ---
 
-{% include info-box name='Selective Plane Illumination Microscopy Bead-based Registration ' software='ImageJ ' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak ' maintainer='Stephan Preibisch ' filename='SPIM\_Registration.jar ' released='February 2010 ' latest-version='October 2011 ' category='[SPIM Registration](:Category:Registration "wikilink") ' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch) ' %}
+{% include info-box name='Selective Plane Illumination Microscopy Bead-based Registration ' software='ImageJ ' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak ' maintainer='Stephan Preibisch ' filename='SPIM\_Registration.jar ' released='February 2010 ' latest-version='October 2011 ' category='[SPIM Registration](_Category_Registration "wikilink") ' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch) ' %}
 
 ## Citation
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
-  - S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media:Nmeth0610-418.pdf "wikilink") [Supplement](Media:Nmeth0610-418-S1.pdf "wikilink")
+  - S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media_Nmeth0610-418.pdf "wikilink") [Supplement](Media_Nmeth0610-418-S1.pdf "wikilink")
 
 For technical details about the registration method and SPIM imaging see [SPIM Registration Method](SPIM_Registration_Method "wikilink").
 

@@ -12,7 +12,7 @@ description: test description
 
 ## Usage
 
-![Directionality\_Example.png](/images/pages/Directionality Example.png "Directionality Example.png")
+![Directionality\_Example.png](Directionality_Example.png "Directionality_Example.png")
 
 This plugin is used to infer the preferred orientation of structures present in the input image. It computes a histogram indicating the amount of structures in a given direction. Images with completely isotropic content are expected to give a flat histogram, whereas images in which there is a preferred orientation are expected to give a histogram with a peak at that orientation.
 
@@ -271,4 +271,4 @@ Possible way for further developments:
 
 A discussion with A. Leroy and another one with J. Schindelin are greatly acknowledged.
 
-[Category:Analysis](Category:Analysis "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+[Category:Analysis](Category_Analysis "wikilink") [Category:Plugins](Category_Plugins "wikilink")

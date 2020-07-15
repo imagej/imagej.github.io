@@ -95,7 +95,7 @@ IJ.run(imp, "Enhance Local Contrast (CLAHE)", "blocksize=127"
 
 To set the script to all images, save the above to a file named "whatever.bsh" (notice the filename extension ".bsh") and then right-click on the TrakEM2 canvas and choose "Script - Set preprocessor script layer-wise", and choose the whole range of layers. This will set the script to every image of every layer, and trigger mipmap regeneration for every image. When TrakEM2 loads the image, the script will run on the image before TrakEM2 ever sees its contents.
 
-The preprocessor script gives you maximum power: do whatever you want with the image. For example, [ normalize the image](Jython_Scripting_Examples#Correct_illumination_in_a_stack:_apply_the_illumination_of_one_slice_to_all_others "wikilink") relative to a known good mean and standard deviation for your data set.
+The preprocessor script gives you maximum power: do whatever you want with the image. For example, [ normalize the image](Jython_Scripting_Examples#Correct_illumination_in_a_stack__apply_the_illumination_of_one_slice_to_all_others "wikilink") relative to a known good mean and standard deviation for your data set.
 
 ### For regenerating mipmaps the fastest possible
 
@@ -153,7 +153,7 @@ As for a graphics card buy the largest you can afford, both in computing power a
 {% capture title%}
  TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each. 
 {% endcapture %}
-{% include thumbnail src='/images/pages/Trakem2-snap.jpg' title=title %} ![TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right).](/images/pages/TrakEM2 Display.png "TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right).") 
+{% include thumbnail src='/images/pages/Trakem2-snap.jpg' title=title %} ![TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right).](TrakEM2_Display.png "TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right).") 
 {% capture title%}
  3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes. Above, secondary lineages of <i>Drosophila</i> third instar larval brain segmented in TrakEM2. 
 {% endcapture %}
@@ -187,4 +187,4 @@ As for a graphics card buy the largest you can afford, both in computing power a
 
   - {% include publication content='TrakEM2' %}
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Registration](Category:Registration "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:TrakEM2](Category:TrakEM2 "wikilink") [Category:Image annotation](Category:Image_annotation "wikilink") [Category:Neuroanatomy](Category:Neuroanatomy "wikilink") [Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:TrakEM2](Category_TrakEM2 "wikilink") [Category:Image annotation](Category_Image_annotation "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink") [Category:Citable](Category_Citable "wikilink")

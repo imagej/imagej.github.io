@@ -69,7 +69,7 @@ Interestingly, the LoG detector seems to become the slowest at intermediate size
 
 We used a 1024x1024 *uint16* image, with 200 gaussian spots, the size of which we varied. The detector was tuned to this radius.
 
-![TrackMate\_DoGandLoGTimeVsRadius2D.png](/images/pages/TrackMate DoGandLoGTimeVsRadius2D.png "TrackMate DoGandLoGTimeVsRadius2D.png")
+![TrackMate\_DoGandLoGTimeVsRadius2D.png](TrackMate_DoGandLoGTimeVsRadius2D.png "TrackMate_DoGandLoGTimeVsRadius2D.png")
 
 We find that for the DoG detector, the processing time to increase linearly with the specified radius, following approximately *t (ms) = 20.5 x radius + 260*. As the difference-of-gaussians is calculated in the direct space, a marked increase is expected as there is more pixels to iterate over. Without optimization, we should however have found the time to be increasing with the square of the radius, and find the same dependence that for the image size. Thanks to the clever implementation of gaussian filtering\[1\], this is avoided.
 

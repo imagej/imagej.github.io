@@ -66,10 +66,10 @@ It is the responsibility of individual update site maintainers to decide if and 
 |                 |                                        |                                            |                                                                  |
 | --------------- | -------------------------------------- | ------------------------------------------ | ---------------------------------------------------------------- |
 | **Name**        | **Site**                               | **Maintainer**                             | **Issue**                                                        |
-| **ClearVolume** | http://sites.imagej.net/ClearVolume/ | [ClearVolume](User:ClearVolume "wikilink") | [BugZilla \#1209](https://fiji.sc/bugzilla/show_bug.cgi?id=1209) |
+| **ClearVolume** | http://sites.imagej.net/ClearVolume/ | [ClearVolume](User_ClearVolume "wikilink") | [BugZilla \#1209](https://fiji.sc/bugzilla/show_bug.cgi?id=1209) |
 
 ## Feedback
 
 Please post any comments to the [ImageJ forum](Help "wikilink"). Thank you for the continued feedback and support\!
 
-[Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:Fiji](Category:Fiji "wikilink") [Category:News](Category:News "wikilink")
+[Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Fiji](Category_Fiji "wikilink") [Category:News](Category_News "wikilink")

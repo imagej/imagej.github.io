@@ -214,7 +214,7 @@ The whole code for the analyzer can be found {% include github org='fiji ' repo=
 
 Et ca marche \!
 
-![TrackMate\_TrackAnalyzerExample.png](/images/pages/TrackMate TrackAnalyzerExample.png "TrackMate TrackAnalyzerExample.png")
+![TrackMate\_TrackAnalyzerExample.png](TrackMate_TrackAnalyzerExample.png "TrackMate_TrackAnalyzerExample.png")
 
 In the next article we will build a spot analyzer and complicate things a bit, by introducing the notion of *priority*. But before this, a short word on how to disable a module.
 
@@ -236,6 +236,6 @@ Like this:
 
 Disabled modules are not even instantiated. They are as good as dead, except that you can change your mind easily. By the way, you can see that the TrackMate source tree has many of these disabled modules...
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 14:23, 11 March 2014 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 14:23, 11 March 2014 (CDT)
 
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink")

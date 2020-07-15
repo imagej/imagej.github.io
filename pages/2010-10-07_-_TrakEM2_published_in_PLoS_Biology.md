@@ -18,4 +18,4 @@ All papers, software and data are Open Access showing the way of how science sho
 
 Congratulations to Albert Cardona, also known as the "Father of Fiji", for this <i>tour de force</i> effort\!
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

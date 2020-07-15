@@ -18,4 +18,4 @@ Moving the updater to ImageJ2 was not without problems -- sorry\! -- most of whi
 
 The file Fiji\_Updater.jar still exists, but just hands off to the ImageJ updater. This paves the way for a smooth upgrade path in the future, when we will make full use of ImageJ2.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

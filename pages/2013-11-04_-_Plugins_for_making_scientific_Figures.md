@@ -24,4 +24,4 @@ Finally the OMERO team is also rolling out a Figure making plugin showcased here
 
 Making figures will never be the same.
 
-[Category:News](Category:News "wikilink")
+[Category:News](Category_News "wikilink")

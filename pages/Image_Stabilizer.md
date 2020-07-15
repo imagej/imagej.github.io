@@ -8,13 +8,13 @@ categories: Plugins,Registration
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Image Stabilizer ' maintainer='[Christophe Leterrier](mailto:christophe_dot_leterrier_at_gmail_dot_com) ' author='[Kang Li](mailto:kangli_at_cs_dot_cmu_dot_edu) & [Steven Kang](mailto:skang_at_andrew_dot_cmu_dot_edu) ' filename=' [Image\_Stabilizer.class](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.class) and [Image\_Stabilizer\_Log\_Applier.class](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer_Log_Applier.class) ' source=' [Image\_Stabilizer.java](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.java) and [Image\_Stabilizer\_Log\_Applier.java](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer_Log_Applier.java) ' released='07/02/2008 ' latest-version='06/12/2009 ' status='unknown ' category='[Registration](:Category:Registration "wikilink") ' website='http://www.cs.cmu.edu/\~kangli/code/Image\_Stabilizer.html ' %}
+{% include info-box software='ImageJ ' name='Image Stabilizer ' maintainer='[Christophe Leterrier](mailto_christophe_dot_leterrier_at_gmail_dot_com) ' author='[Kang Li](mailto_kangli_at_cs_dot_cmu_dot_edu) & [Steven Kang](mailto_skang_at_andrew_dot_cmu_dot_edu) ' filename=' [Image\_Stabilizer.class](http_//www.cs.cmu.edu/~kangli/code/Image_Stabilizer.class) and [Image\_Stabilizer\_Log\_Applier.class](http_//www.cs.cmu.edu/~kangli/code/Image_Stabilizer_Log_Applier.class) ' source=' [Image\_Stabilizer.java](http_//www.cs.cmu.edu/~kangli/code/Image_Stabilizer.java) and [Image\_Stabilizer\_Log\_Applier.java](http_//www.cs.cmu.edu/~kangli/code/Image_Stabilizer_Log_Applier.java) ' released='07/02/2008 ' latest-version='06/12/2009 ' status='unknown ' category='[Registration](_Category_Registration "wikilink") ' website='http://www.cs.cmu.edu/\~kangli/code/Image\_Stabilizer.html ' %}
 
 ## What does it do?
 
 This plugin stabilizes jittery image stacks using the Lucas-Kanade algorithm. It supports both grayscale and color images.
 
-![Image\_Stabilizer\_example.gif](/images/pages/Image Stabilizer example.gif "Image Stabilizer example.gif") ![Image\_Stabilizer\_examplecolor.gif](/images/pages/Image Stabilizer examplecolor.gif "Image Stabilizer examplecolor.gif")
+![Image\_Stabilizer\_example.gif](Image_Stabilizer_example.gif "Image_Stabilizer_example.gif") ![Image\_Stabilizer\_examplecolor.gif](Image_Stabilizer_examplecolor.gif "Image_Stabilizer_examplecolor.gif")
 
 ## How does it work?
 
@@ -56,4 +56,4 @@ Permission to use, copy, modify, and distribute this software for any purpose wi
 
 THIS SOFTWARE IS BEING PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTY. IN PARTICULAR, THE AUTHOR DOES NOT MAKE ANY REPRESENTATION OR WARRANTY OF ANY KIND CONCERNING THE MERCHANTABILITY OF THIS SOFTWARE OR ITS FITNESS FOR ANY PARTICULAR PURPOSE.
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Registration](Category:Registration "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink")

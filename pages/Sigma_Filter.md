@@ -8,7 +8,7 @@ categories: Plugins,Filtering
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Sigma Filter ' author='Michael Schmid and Tony Collins ' filename=' [Sigma\_Filter\_Plus.class](https://imagej.net/plugins/download/Sigma_Filter_Plus.class) ' source=' [Sigma\_Filter\_Plus.java](https://imagej.net/plugins/download/Sigma_Filter_Plus.java) ' released='25 October 2007 ' status='1st version ' category='[Filtering](:Category:Filtering "wikilink") ' website='https://imagej.net/plugins/sigma-filter.html ' %}
+{% include info-box software='ImageJ ' name='Sigma Filter ' author='Michael Schmid and Tony Collins ' filename=' [Sigma\_Filter\_Plus.class](https://imagej.net/plugins/download/Sigma_Filter_Plus.class) ' source=' [Sigma\_Filter\_Plus.java](https://imagej.net/plugins/download/Sigma_Filter_Plus.java) ' released='25 October 2007 ' status='1st version ' category='[Filtering](_Category_Filtering "wikilink") ' website='https://imagej.net/plugins/sigma-filter.html ' %}
 
 ## Purpose
 
@@ -26,4 +26,4 @@ From the website:
 
 If the number of pixels in this range is too low (less than "Minimum Pixel Fraction"), averaging over all neighboring pixels is performed. With the "Outlier Aware" option, averaging over all neighboring pixels excludes the center pixel. Thus, outliers having a value very different from the surrounding are not included in the average and, thus, completely eliminated."
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Filtering](Category:Filtering "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Filtering](Category_Filtering "wikilink")

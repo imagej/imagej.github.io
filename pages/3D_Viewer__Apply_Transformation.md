@@ -8,12 +8,12 @@ categories:
 description: test description
 ---
 
-(Return to the [Developer Documentation](3D_Viewer:_Developer_Documentation "wikilink") page)  
+(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation "wikilink") page)  
 (Return to the main [3D\_Viewer](3D_Viewer "wikilink") page)
 
 ## How to apply a specific transformation to a Content
 
-You can download example source code for this HowTo [here](3D_Viewer:_Example_code "wikilink").
+You can download example source code for this HowTo [here](3D_Viewer__Example_code "wikilink").
 
 Each Content may be transformed separately. In the application, this is for example done by the user by selecting a content and dragging with the mouse.
 

@@ -36,4 +36,4 @@ We will leave the current versions of the ImageScience plugins on the Fiji updat
 
 As always, thanks for your support, and [let us know](Contact "wikilink") if you have any questions or concerns with this change.
 
-[Category:News](Category:News "wikilink") [Category:Fiji](Category:Fiji "wikilink") [Category:ImageScience](Category:ImageScience "wikilink")
+[Category:News](Category_News "wikilink") [Category:Fiji](Category_Fiji "wikilink") [Category:ImageScience](Category_ImageScience "wikilink")

@@ -21,7 +21,7 @@ description: test description
 
 Whether adding new features, fixing bugs, improving performance, etc... **development** is the process of making changes, with the goal of exposing these changes to users. To accomplish this, actively developed projects cycle through five general "phases":
 
-{% include box title='What are Maven artifacts? ' width='30% ' float='right ' text='Artifacts are files, most commonly a """[JAR](wikipedia:JAR_%28file_format%29 "wikilink")""" encapsulating the compiled classes for a component. Other files that may be produced as artifacts include:
+{% include box title='What are Maven artifacts? ' width='30% ' float='right ' text='Artifacts are files, most commonly a """[JAR](wikipedia_JAR_%28file_format%29 "wikilink")""" encapsulating the compiled classes for a component. Other files that may be produced as artifacts include:
 
   - The project"s """ [POM](https://maven.apache.org/pom.html) """
   - A jar with the original source files
@@ -134,7 +134,7 @@ The script will verify that your master branch is ready to go, then create and p
 
 For core projects, there is an intermediate layer tying User-facing and Developer-facing components together: the [Bill of Materials](BOM "wikilink") (BOM). To ensure users and developers see the same functionality, components should only be uploaded to the core update sites when their version is also updated in the {% include github org='scijava ' repo='pom-scijava ' label='pom-scijava ' %} BOM.
 
-To update the version of your component listed in the {% include github org='scijava ' repo='pom-scijava ' label='pom-scijava ' %} BOM, you should follow the [External developer](#Phase_1:_In_development "wikilink") instructions for contributing to {% include github org='scijava ' repo='pom-scijava ' label='pom-scijava ' %}. By [submitting a pull request](https://help.github.com/articles/using-pull-requests/) that simply modifies the managed version of your component, you will signal to the core SciJava developers that your project is ready for upload. For example, {% include github org='scijava ' repo='pom-scijava ' pr='40 ' label='this PR ' %} updates the managed version of [Bio-Formats](Bio-Formats "wikilink") to 5.5.0.
+To update the version of your component listed in the {% include github org='scijava ' repo='pom-scijava ' label='pom-scijava ' %} BOM, you should follow the [External developer](#Phase_1__In_development "wikilink") instructions for contributing to {% include github org='scijava ' repo='pom-scijava ' label='pom-scijava ' %}. By [submitting a pull request](https://help.github.com/articles/using-pull-requests/) that simply modifies the managed version of your component, you will signal to the core SciJava developers that your project is ready for upload. For example, {% include github org='scijava ' repo='pom-scijava ' pr='40 ' label='this PR ' %} updates the managed version of [Bio-Formats](Bio-Formats "wikilink") to 5.5.0.
 
 ## Phase 5: Uploaded
 
@@ -160,4 +160,4 @@ See the [documentation on update sites](Update_Sites "wikilink") for further ins
 
   - The SciJava [versioning guidelines](Architecture#Versioning "wikilink") will help you choose appropriate version numbers for your software when performing Maven releases.
 
-[Category:Development](Category:Development "wikilink") [Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Development](Category_Development "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")

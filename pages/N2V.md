@@ -44,7 +44,7 @@ The field of image denoising is currently dominated by discriminative deep learn
 
 You should now have access to these plugins:
 
-![Available N2V plugins](/images/pages/N2v-plugins.png "Available N2V plugins")
+![Available N2V plugins](N2v-plugins.png "Available N2V plugins")
 
 # Usage
 
@@ -127,7 +127,7 @@ Training without GPU support is possible, but will take ages. Please read the no
 
 After training, two additional windows should appear. They represent two trained models. One is the model from the epoch with the lowest validation loss, the other one the model from the last epoch step. For N2V, using the model from the last epoch is almost always recommended. The windows will look similar to this:
 
-![N2V model archive window](/images/pages/N2v-model.png "N2V model archive window")
+![N2V model archive window](n2v-model.png "N2V model archive window")
 
 They are stored to a temporary location which you can see in the Overview section of the model window under `Saved to..`.
 
