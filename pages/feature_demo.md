@@ -23,6 +23,7 @@ description: This page is a feature demo.
 | Insert math | [math]({{"/pages/demo-math" | relative_url}}) |
 | Insert person details | [person]({{"/pages/demo-person" | relative_url}})
 | Insert a sidebox | [sidebox]({{"/pages/demo-sidebox" | relative_url}})
+| Insert the SNT nav bar | [SNT-nav]({{"/pages/demo-SNT-nav" | relative_url}})|
 | Insert a tech box | [tech-box]({{"/pages/demo-tech-box" | relative_url}})
 | Insert a warning | [warning-box]({{"/pages/demo-warning-box" | relative_url}})
 
