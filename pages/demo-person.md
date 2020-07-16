@@ -3,7 +3,7 @@ title: Demo people
 layout: page
 author: 
 categories: 
-description: this page demonstrates how to use the person include tag
+description: this page demonstrates how to use the person include tag.
 ---
 
 ## Usage
