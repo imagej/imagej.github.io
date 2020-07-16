@@ -1,1 +1,4 @@
-<div class="menu">{{include.content}}</div>
+<div class="menu" markdown="1">
+<center><strong><h3>{{include.title}}</h3></strong></center>
+{{include.content}}
+</div>
