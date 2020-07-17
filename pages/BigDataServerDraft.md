@@ -22,8 +22,6 @@ description: test description
 {% endcapture %}
 {% include info-box name='BigDataServer ' software='Fiji ' author=author maintainer=maintainer source=source latest-version='1.0.5 ' status='experimental ' category='[Visualization](_Category_Visualization "wikilink"), [Transform](_Category_Transform "wikilink") ' %}
 
-\_\_TOC\_\_
-
 ## Description
 
 BigDataServer is a minimalistic HTTP server that serves XML/HDF5 datasets to the [BigDataViewer](BigDataViewer "wikilink") Fiji plugin for visualisation.

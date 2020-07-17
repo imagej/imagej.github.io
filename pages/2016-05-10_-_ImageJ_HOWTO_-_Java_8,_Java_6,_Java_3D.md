@@ -12,8 +12,6 @@ description: test description
 
 However, at the moment, it is still possible to run a (slightly outdated now) version of [Fiji](Fiji "wikilink") with Java 6.
 
-\_\_TOC\_\_
-
 ## Current recommendations and possibilities
 
 <table>

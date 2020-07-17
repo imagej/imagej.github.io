@@ -12,8 +12,6 @@ description: test description
 
 This part provides basic information on ImageJ installation, troubleshooting and update strategies. It discusses [Fiji↓](#sub_Fiji-intro "wikilink")[↓](#nom-fiji "wikilink") and [ImageJ2↓](#sub_ImageJ2intro "wikilink") as well as third-party software related to ImageJ. Being impossible to document all the capabilities of ImageJ without exploring technical aspects of image processing, external resources allowing willing readers to know more about digital signal processing are also provided.
 
-\_\_TOC\_\_
-
 ## Introduction
 
 ImageJ is a [public domain](http://rsb.info.nih.gov/ij/disclaimer.html) Java image processing and analysis program inspired by [NIH Image](http://rsb.info.nih.gov/nih-image/) for the Macintosh. It runs, either as an online applet or as a downloadable application, on any computer with a Java 1.5 or later virtual machine. [Downloadable distributions](http://imagej.nih.gov/ij/download.html) are available for Windows, Mac OS X and Linux. It can display, edit, analyze, process, save and print 8--bit, 16--bit and 32--bit images. It can read many image formats including TIFF, GIF, JPEG, BMP, DICOM, FITS and ‘raw’. It supports ‘stacks’ (and hyperstacks), a series of images that share a single window. It is multithreaded, so time-consuming operations such as image file reading can be performed in parallel with other operations<span class="FootOuter"><span class="SupFootMarker"> \[A\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[A\] </span>A somehow outdated list of ImageJ’s features is available at http://imagej.nih.gov/ij/features.html></span></span.

@@ -8,7 +8,7 @@ categories: Cookbook,Tutorials
 description: test description
 ---
 
-\_\_FORCETOC\_\_ {% include menu-cookbook%}
+{% include menu-cookbook%}
 
 
 ## Stack-Projections

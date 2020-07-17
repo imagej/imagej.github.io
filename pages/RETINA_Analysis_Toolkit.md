@@ -17,7 +17,7 @@ Email: [Daniel Maidana](mailto_dmaida3@uic.edu) ' filename=' [TUNEL Cell Counter
 ' released='August 18<sup>th</sup>, 2015 ' latest-version='July 21<sup>th</sup>, 2016 ' status='Active and validated with Fiji (ImageJ 1.51d) ' website=' [RETINA Analysis Toolkit at YouTube](https_//www.youtube.com/channel/UCqGMCPY9ViyAPWhYciRNuKQ) ' %}  
 **RETINA Analysis Toolkit** is a free macro toolkit designed and developed for Fiji (ImageJ). The purpose of the RETINA Analysis Toolkit is to perform fast quantitation of digital RGB images from retina cryosections, acquired by fluorescent microscopes. The current components of these toolkit are_ TUNEL Cell Counter and RETINA Cell Heatmap.
 
-\_\_TOC\_\_  
+  
 \----
 
 # TUNEL Cell Counter

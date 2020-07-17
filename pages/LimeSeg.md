@@ -26,8 +26,6 @@ description: test description
 
 [`Enable``   ``the``   ``LimeSeg``   ``update``   ``site`](https://imagej.net/Following_an_update_site)` to get it.`
 
-\_\_TOC\_\_
-
 ## Publication.
 
 LimeSeg: a coarse-grained lipid membrane simulation for 3D image segmentation

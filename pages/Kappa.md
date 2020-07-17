@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='brouhardlab ' repo='Kappa ' %}
 {% endcapture %}
-{% include info-box name='Kappa ' logo=' ' software='Fiji ' author=author maintainer=maintainer source=source released='13/10/2017 ' status='v1.5.6, Stable ' category='Analysis, Curvature ' %} \_\_TOC\_\_
+{% include info-box name='Kappa ' logo=' ' software='Fiji ' author=author maintainer=maintainer source=source released='13/10/2017 ' status='v1.5.6, Stable ' category='Analysis, Curvature ' %}
 
 ## Presentation
 

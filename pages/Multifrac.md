@@ -16,8 +16,6 @@ description: test description
 
 **Multifrac** is an ImageJ plugin for fractal, multifractal and scaling analysis and characterization of 2D and 3D gray and B\&W stack images. It has been particularly developed for the study of CT-scan images on soil science but it is recommended for complexity analysis in any kind of image.
 
-\_\_TOC\_\_
-
 ## Citation
 
 Please when using the plugin, cite:

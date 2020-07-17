@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% include imglibmenu%}
-\_\_TOC\_\_
+
 
 ## Creating and Displaying an Image
 

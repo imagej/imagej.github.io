@@ -16,8 +16,6 @@ If you find MaMuT useful for your research, please cite it:
 
 {% include publication content='MaMuT' %}
 
-\_\_TOC\_\_
-
 ## Installation.
 
 MaMuT is a Fiji plugin that depends on its components to run. Download Fiji from [its website](https://fiji.sc/#download) if you do not have it already.

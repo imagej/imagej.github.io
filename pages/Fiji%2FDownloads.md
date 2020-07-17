@@ -10,8 +10,6 @@ description: test description
 
 <div style="float: right">
 
-\_\_TOC\_\_
-
 </div>
 
 {% include project content='Fiji' %}

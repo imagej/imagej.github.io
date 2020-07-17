@@ -12,8 +12,6 @@ This page describes how to visualize the various data sets provided as part of t
 
 If you have any comments or suggestions relating to this page, please email <em>mark-diadem</em> at <em>longair</em> dot <em>net</em>.
 
-\_\_TOC\_\_
-
 ## Olfactory Project Neurons
 
 This data set [is described here](http://www.diademchallenge.org/olfactory_projection_fibers_readme.html). I will go through loading the example "OP\_1". Each image stack in this data set is distributed as a directory of TIFF files, one per slice. To load such a stack, go to {% include bc content='File | Import | Image Sequence'%} and select the file "1.tif". You should be shown a dialog like this:

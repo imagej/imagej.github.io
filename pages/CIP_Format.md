@@ -8,8 +8,6 @@ categories:
 description: test description
 ---
 
-\_\_TOC\_\_
-
 This page provides user documentation for the Format category of the [CIP](CIP "wikilink") scripting package.
 
 {% include cip content='Navigation' %}

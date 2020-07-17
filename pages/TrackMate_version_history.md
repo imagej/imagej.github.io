@@ -14,8 +14,6 @@ This page contains the version history for the [TrackMate](TrackMate "wikilink")
 
 <div class="nonumtoc">
 
-\_\_TOC\_\_
-
 </div>
 
 ## 10/05/2012 - v.1.0

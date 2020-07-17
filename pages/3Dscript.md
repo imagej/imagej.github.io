@@ -30,8 +30,6 @@ In 3Dscript, animations are defined by a syntax based on natural English languag
 
 ![3Dscript-wiki-01.jpg](/images/pages/3Dscript-wiki-01.jpg "3Dscript-wiki-01.jpg")
 
-\_\_TOC\_\_
-
 ## Publication
 
   - {% include publication content='3Dscript' %}

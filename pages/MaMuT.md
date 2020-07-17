@@ -26,8 +26,6 @@ description: test description
 
 Enable the [MaMuT update site](http://sites.imagej.net/MaMuT/) to get it.
 
-\_\_TOC\_\_
-
 ## Publication.
 
   - {% include publication content='MaMuT' %}

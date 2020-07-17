@@ -8,8 +8,6 @@ categories:
 description: test description
 ---
 
-\_\_TOC\_\_
-
 This page describes the segmentation function of the [CIP scripting](CIP "wikilink") package
 
 {% include cip content='Navigation' %}

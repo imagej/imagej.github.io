@@ -10,8 +10,6 @@ description: test description
 
 <div style="float: right; padding-left: 1em">
 
-\_\_TOC\_\_
-
 </div>
 
 For {% include github org='imagej ' repo='imagej ' issue='135 ' label='many reasons ' %}, ImageJ needs to switch to Java 8. Hence, in recent months, the ImageJ team at [LOCI](LOCI "wikilink") has been [taking steps toward migrating ImageJ and Fiji toward Java 8](2015-06-15_-_Major_updates_in_the_works "wikilink"). This week marks a significant milestone in that effort:

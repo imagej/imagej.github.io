@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='icbm-iupui ' repo='volumetric-tissue-exploration-analysis ' %}
 {% endcapture %}
-{% include info-box name='VTEA ' software='Fiji ' author='Seth Winfree ([1](mailto_winfrees@iu.edu)) ' maintainer='Seth Winfree ([2](mailto_winfrees@iu.edu)) ' source=source status='v0.7, alpha, 1.0.a on deck. ' category='[Segmentation](_Category_Segmentation "wikilink"),[Visualization](_Category_Visualization "wikilink"),[Plugins](_Category_Plugins "wikilink") ' %} \_\_TOC\_\_
+{% include info-box name='VTEA ' software='Fiji ' author='Seth Winfree ([1](mailto_winfrees@iu.edu)) ' maintainer='Seth Winfree ([2](mailto_winfrees@iu.edu)) ' source=source status='v0.7, alpha, 1.0.a on deck. ' category='[Segmentation](_Category_Segmentation "wikilink"),[Visualization](_Category_Visualization "wikilink"),[Plugins](_Category_Plugins "wikilink") ' %}
 
 # Volumetric Tissue Exploration and Analysis
 

@@ -8,8 +8,6 @@ categories:
 description: test description
 ---
 
-\_\_TOC\_\_
-
 ## TrackMate scripting principle
 
 [TrackMate\_](TrackMate_ "wikilink") can also be used without the GUI, using a scripting language that allows making calls to Java. The most simple way to get started is to use the [Script Editor](Script_Editor "wikilink"), which takes care of the difficult & boring part for you (such as path). The examples proposed on this page all use Jython, but can be adapted to anything.

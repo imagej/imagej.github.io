@@ -12,8 +12,6 @@ description: test description
 
 {% include info-box software='ImageJ / Fiji plugins ' name='Xlib ' maintainer='Beat Münch ' author='Beat Münch ' filename='install from ImageJ Updater (Help--\>Update--\>Manage update sites--\>Xlib). Takes repository from https://sites.imagej.net/Xlib ' released='01.06.2015 ' latest-version='09.05.2020 ' status='maintained actively as of May 2020 ' category='[Plugins](_Category_Plugins "wikilink") ' website='http://wiki.imagej.net/Xlib ' %}
 
-\_\_TOC\_\_
-
 ## Overview of 'Xlib'
 
 A set of prospective ImageJ plugins is maintained by the group for 3D-Microscopy, Analysis and Modeling of the Laboratory for Concrete and Construction Chemistry at Empa Dübendorf, Switzerland. The plugins include automated imaging tools for filtering, data reconstruction, quantitative data evaluation and data import, as well as tools for interactive segmentation, visualization and management of image data.

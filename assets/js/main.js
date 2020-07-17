@@ -29,4 +29,9 @@
 	// Scrolly.
 		$('.scrolly').scrolly();
 
+	// remove TOC if few headings exist
+	if($('#content h1, #content h2').length < 3) {
+		$('.toc').remove();
+	}
+
 })(jQuery);

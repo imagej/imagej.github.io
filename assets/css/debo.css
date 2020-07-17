@@ -25,3 +25,39 @@ a.thumbnail:hover {
 .bc {
     font-style: italic;
 }
+
+#info-box {
+    float: right;
+    min-width: 500px;
+}
+
+.toc {
+    margin-right: 40px;
+    max-width: 500px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.toc ol {
+    margin: 0;
+    padding-left: 1.4em;
+    border-left: 1px solid black;
+}
+
+.toc > ol {
+    background: #f1f1f4;
+    border: none;
+    padding: 20px 40px 20px 40px;
+}
+
+.toc a {
+    color: black;
+}
+
+.toc ol li {
+  margin-bottom: 0px;
+}
+
+.page-content h1, h2 {
+    clear: left;
+}

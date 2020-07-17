@@ -14,8 +14,6 @@ description: test description
 
 <div style="float: left; padding-right: 1em">
 
-\_\_TOC\_\_
-
 </div>
 
 {% include develop-menu content='tutorials' %}== Introduction == Sometimes you may want to contribute to an already existing ImageJ plugin or library. For example, a bug is found in one plugin and you want to fix it, or you would like to improve one library by adding more functions. This tutorial describes step by step how to do it with a practical case.

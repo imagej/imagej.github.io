@@ -117,6 +117,10 @@ def process_file(str_content):
     # perform regex replacements
     content_tmp = str_content
 
+    content_tmp = re.sub(r'\_\_FORCETOC\_\_[ ]?', r'', content_tmp)
+    content_tmp = re.sub(r'\_\_TOC\_\_[ ]?', r'', content_tmp)
+    content_tmp = re.sub(r'\_\_NOTOC\_\_[ ]?', r'', content_tmp)
+
     # fix youtube template
     content_tmp = re.sub(r'\{\{[\\]?\#widget\:YouTube\|id\=([^ \|]*)[^\}]*\}\}',
                          youtube_match, content_tmp)

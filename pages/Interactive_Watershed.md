@@ -8,8 +8,6 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-\_\_TOC\_\_
-
 
 {% capture source%}
 {% include github org='mpicbg-scicomp ' repo='Interactive-H-Watershed ' %}

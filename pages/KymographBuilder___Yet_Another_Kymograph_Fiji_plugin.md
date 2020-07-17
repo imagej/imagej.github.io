@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji ' repo='KymographBuilder ' %}
 {% endcapture %}
-{% include info-box name='KymographBuilder ' logo=' ' software='Fiji ' author=author maintainer=maintainer source=source released='24/04/2016 ' status='v1.2.2, stable ' category=' ' %} \_\_TOC\_\_
+{% include info-box name='KymographBuilder ' logo=' ' software='Fiji ' author=author maintainer=maintainer source=source released='24/04/2016 ' status='v1.2.2, stable ' category=' ' %}
 
 ## Presentation
 

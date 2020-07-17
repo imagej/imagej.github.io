@@ -8,8 +8,6 @@ categories:
 description: test description
 ---
 
-\_\_TOC\_\_
-
 {% include info-box software='ImageJ/Fiji ' name='CIP ' update-site='CIP ' author='[Benoit Lombardot](User_Benoit "wikilink") ' maintainer='[Benoit Lombardot](User_Benoit "wikilink") ' released='January 2018 ' filename='CIP update site ' source='https://github.com/benoalo/CIP ' category='[Scripting](_Category_Scripting "wikilink") ' %}
 
 ![CIP: ](/images/pages/CIP basic concept.PNG "CIP: ")

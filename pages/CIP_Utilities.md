@@ -8,8 +8,6 @@ categories:
 description: test description
 ---
 
-\_\_TOC\_\_
-
 This page provides user documentation for the utility functions of the [CIP](CIP "wikilink") package
 
 {% include cip content='Navigation' %}
