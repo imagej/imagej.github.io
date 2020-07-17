@@ -54,7 +54,7 @@ The plugin can be found in the plugins menu (near the bottom) and should be star
 
 After the plugin has finished, two new windows will be open:
 
-![ColocByCorrelate-GaussFit.jpg](ColocByCorrelate-GaussFit.jpg "ColocByCorrelate-GaussFit.jpg")
+![ColocByCorrelate-GaussFit.jpg](/images/pages/ColocByCorrelate-GaussFit.jpg "ColocByCorrelate-GaussFit.jpg")
 
 Correlation plot: A radial profile plot will be displayed, it contains the radial profile of the original correlation image (black line), the radial profile of the correlation after subtraction of random associations (red line), and a Gaussian curve fit to the subtracted profile (blue dots). The Y-axis is the result of the average correlation function at a given distance. While not arbitrary, it is most easily viewed as a measure of relative correlation. The range of the graph is set automatically to fit the Gaussian curve. If you wish to view all the data select More\>Set Range to Fit all…
 

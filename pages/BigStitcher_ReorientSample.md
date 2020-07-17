@@ -12,7 +12,7 @@ In addition to the manual view alignment functionality in **Stitching mode** (se
 
 These functions can be found under `Calibration/Transformations` in the main menu of the MultiView mode.
 
-![BigStitcher\_registration\_menu.png](BigStitcher_registration_menu.png "BigStitcher_registration_menu.png")
+<img src="/images/pages/BigStitcher registration menu.png" width="700"/>
 
 ## Registration Explorer
 
@@ -22,7 +22,7 @@ Each **Transformation** consists of a 3x4 matrix (3D affine transformation + tra
 
 Note that the final transformation of a view is determined by applying the individual transformations **last-to-first**.
 
-![BigStitcher\_registration\_explorer.png](BigStitcher_registration_explorer.png "BigStitcher_registration_explorer.png")
+<img src="/images/pages/BigStitcher registration explorer.png" width="900"/>
 
 You have a few options of modifying the transformations here:
 
@@ -38,7 +38,7 @@ If the BigDataViewer is open, you can immediately see the effects of your change
 
 Using **Specify Calibration**, you can change the voxel distance and length unit for the selected views.
 
-![BigStitcher\_registration\_calibration.png](BigStitcher_registration_calibration.png "BigStitcher_registration_calibration.png")
+<img src="/images/pages/BigStitcher registration calibration.png" width="500"/>
 
 {% include warning-box content='As mentioned in the dialog, this will only change the metadata and leave computed registrations (including the scaling to isotropic x,y and z-resolution) as-is. Use """Apply Transformation(s)""" and """Apply on top of Calibration""" to update the isotropy scaling. This will remove other transformations however, so please make sure that the calibration is set correctly """before""" starting any registration/stitching.' %}
 
@@ -61,22 +61,22 @@ Also, you have to select what to **Append** the new transformation on top of:
 
 Furthermore, you can select **Same transformation for all angles** to generate one transformation for all views. Otherwise, you will be asked to specify a separate transformation for all angles of the selected views.
 
-![BigStitcher\_registration\_apply\_main.png](BigStitcher_registration_apply_main.png "BigStitcher_registration_apply_main.png")
+<img src="/images/pages/BigStitcher registration apply main.png" width="500"/>
 
 For **Translation** or **Affine Models**, you will be asked for the shift vector or the transformation matrix in the next dialog (if you chose NOT to use the same transformation for all angles, you will be asked for multiple vectors/matrices). Please provide them as **comma-separated numbers** (for matrices: row-by-row).
 
-![BigStitcher\_registration\_translation.png](BigStitcher_registration_translation.png "BigStitcher_registration_translation.png") ![BigStitcher\_registration\_affine.png](BigStitcher_registration_affine.png "BigStitcher_registration_affine.png")
+<img src="/images/pages/BigStitcher registration translation.png" width="600"/> <img src="/images/pages/BigStitcher registration affine.png" width="600"/>
 
   
 For **Rigid models**, you can specify how to define the transformation(s):
 
-![BigStitcher\_registration\_rigid.png](BigStitcher_registration_rigid.png "BigStitcher_registration_rigid.png")
+<img src="/images/pages/BigStitcher registration rigid.png" width="500"/>
 
   - **Matrix**: same as for **Affine** (see above)
   - **Interactively using the BigDataViewer**: same as **Interactively Reorient Sample** (see below)
   - **Rotation around axis**: allows you to specify an axis around which to to rotate and by how many degrees
 
-![BigStitcher\_registration\_rotation.png](BigStitcher_registration_rotation.png "BigStitcher_registration_rotation.png")
+<img src="/images/pages/BigStitcher registration rotation.png" width="500"/>
 
 ## Bake BDV manual transform
 
@@ -100,7 +100,7 @@ Clicking this will open up a new window that listens for the **global transforma
 
 You can choose to **Ignore scaling factor from BigDataViewer** - this way, we will extract the sample rotation, but not any effects of zooming. Note that the scaling depends on the BDV window size, among other things, and you can achieve a zoom-out when fusing by using downsampling - we suggest to ignore the scaling unless you know what you are doing.
 
-![BigStitcher\_registration\_reorient.png](BigStitcher_registration_reorient.png "BigStitcher_registration_reorient.png")
+<img src="/images/pages/BigStitcher registration reorient.png" width="500"/>
 
 Note that the identity transformation corresponds to an xy-View of the data in BDV. To avoid confusion, we advise to reset the view (by clicking {% include key content='Shift|Z' %} in the BDV window) before you start the interactive reorientation.
 

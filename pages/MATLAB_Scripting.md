@@ -24,7 +24,7 @@ If you run MATLAB R2017b and later, you don"t need to do this, as it ships and u
   - Add the {% include list-of-update-sites content='ImageJ-MATLAB' %} update site. See [Following an update site](Following_an_update_site "wikilink") for more detail.
     1.  You go to `Help > Update...`
     2.  Once checking status is done, open `Manage update sites`
-    3.  Tick `ImageJ-MATLAB` and then `Close` ![Manage\_update\_sites\_ImageJ\_MATLAB.png](Manage_update_sites_ImageJ_MATLAB.png "Manage_update_sites_ImageJ_MATLAB.png")
+    3.  Tick `ImageJ-MATLAB` and then `Close` ![Manage\_update\_sites\_ImageJ\_MATLAB.png](/images/pages/Manage update sites ImageJ MATLAB.png "Manage_update_sites_ImageJ_MATLAB.png")
     4.  And then click `Apply changes` on ImageJ Updater
     5.  This will literally update and replace the existing, non-functional `ImageJ.m` file in the scripts folder with the genuine one.
   - You will need to install your own licensed copy of [MATLAB](http://www.mathworks.com/products/matlab/). All that is provided with ImageJ are adapters for evaluating scripts written in ImageJ to [MATLAB](MATLAB "wikilink"), and converters between ImageJ and [MATLAB](MATLAB "wikilink") data structures.
@@ -36,7 +36,7 @@ If you run MATLAB R2017b and later, you don"t need to do this, as it ships and u
 ### Memory issue
 
   - In order to handle large images, the default Java Heap Memory size assigned won't be enough and you may get the error `java.lang.OutOfMemoryError: Java heap space`.
-  - From MATLAB R2010a onward, you can increase the Jave Heap Memory size from **Preferences \> General \> Java Heap Memory**. ![MATLAB\_java\_heap\_memory.png](MATLAB_java_heap_memory.png "MATLAB_java_heap_memory.png")
+  - From MATLAB R2010a onward, you can increase the Jave Heap Memory size from **Preferences \> General \> Java Heap Memory**. ![MATLAB\_java\_heap\_memory.png](/images/pages/MATLAB java heap memory.png "MATLAB_java_heap_memory.png")
   - However, the maximum value allowed in the Preferences can still be too small for your purpose. In that case, you can directly edit `matlab.prf` file in the folder specified by the <code>prefdir\<\\code\> MATLAB function (eg. `C:\Users\xxxxxxx\AppData\Roaming\MathWorks\MATLAB\R2018b`). Find the parameter `JavaMemHeapMax` in the file and increase the number that follows the capital I (in MB) to increase the maximum Java heap memory size. The change will be reflected by the Preferences as above.
 
 <!-- end list -->
@@ -79,7 +79,7 @@ Actually running a [MATLAB](MATLAB "wikilink") script from ImageJ is effectively
 
 Options for controlling the startup of [MATLAB](MATLAB "wikilink"), or killing existing [MATLAB](MATLAB "wikilink") processes (e.g. if hidden) can be accessed via: {% include bc content='Edit | Options | MATLAB...'%}
 
-![MATLAB\_options.png](MATLAB_options.png "MATLAB_options.png")
+![MATLAB\_options.png](/images/pages/MATLAB options.png "MATLAB_options.png")
 
 > NB: because the script is being passed from ImageJ to a remote [MATLAB](MATLAB "wikilink"), [MATLAB](MATLAB "wikilink") will not have access to ImageJ's classpath. Objects can be passed as variables to [MATLAB](MATLAB "wikilink") (e.g. by using @ annotation) but only if they are valid [MATLAB](MATLAB "wikilink") classes or specially handled classes.
 > 

@@ -8,7 +8,7 @@ categories: Plugins,Registration
 description: test description
 ---
 
-{% include info-box software='Fiji ' name='Manual drift correction ' author='[Benoit Lombardot](User_Benoit "wikilink") ' maintainer='[Benoit Lombardot](User_Benoit "wikilink") ' released='22 March 2016 ' filename='![Manual\_Drift\_Correction-1.0.0.jar.zip](Manual_Drift_Correction-1.0.0.jar.zip "Manual_Drift_Correction-1.0.0.jar.zip") ' source=' [github](https://github.com/mpicbg-scicomp/Manual_drift_correction) ' category='[Plugins](_Category_Plugins "wikilink"), [Registration](_Category_Registration "wikilink") ' %}
+{% include info-box software='Fiji ' name='Manual drift correction ' author='[Benoit Lombardot](User_Benoit "wikilink") ' maintainer='[Benoit Lombardot](User_Benoit "wikilink") ' released='22 March 2016 ' filename='![Manual\_Drift\_Correction-1.0.0.jar.zip](/images/pages/Manual Drift Correction-1.0.0.jar.zip "Manual_Drift_Correction-1.0.0.jar.zip") ' source=' [github](https://github.com/mpicbg-scicomp/Manual_drift_correction) ' category='[Plugins](_Category_Plugins "wikilink"), [Registration](_Category_Registration "wikilink") ' %}
 
 ## Goal of the plugin
 
@@ -18,7 +18,7 @@ Manual Drift Correction plugin allows to correct drift in an image sequence by u
 
 ### Installation
 
-To get started with the plugin first download it (![Manual\_Drift\_Correction-1.0.0.jar.zip](Manual_Drift_Correction-1.0.0.jar.zip "Manual_Drift_Correction-1.0.0.jar.zip")), unzip it and install it (Fiji menu Plugins\>Install...). Alternatively you can manually copy the unzipped file in <Fiji folder>/plugins.Once the file is installed, restart Fiji. A new entry will be available in the menu Plugins\>Registration\>Manual drift correction meaning that the plugin was properly installed.
+To get started with the plugin first download it (![Manual\_Drift\_Correction-1.0.0.jar.zip](/images/pages/Manual Drift Correction-1.0.0.jar.zip "Manual_Drift_Correction-1.0.0.jar.zip")), unzip it and install it (Fiji menu Plugins\>Install...). Alternatively you can manually copy the unzipped file in <Fiji folder>/plugins.Once the file is installed, restart Fiji. A new entry will be available in the menu Plugins\>Registration\>Manual drift correction meaning that the plugin was properly installed.
 
 ### Tutorial
 

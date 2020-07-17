@@ -22,17 +22,17 @@ You can install LRoi (and all future plugins) by simply adding the following upd
 
 The main purpose of LRoi is to create equally sized regions of interest (ROIs) along a seeding line (hence LRoi). To create a number of ROIs, simply select the line drawing tool of ImageJ and draw a line on an opened image or image stack.
 
-![LineTool.png](LineTool.png "LineTool.png") ![SeedingLine.png](SeedingLine.png "SeedingLine.png")
+![LineTool.png](/images/pages/LineTool.png "LineTool.png") ![SeedingLine.png](/images/pages/SeedingLine.png "SeedingLine.png")
 
 Open the LRoi plugin and specify the number of ROIs you want to create, the ROI width and height.
 
-![LRoi\_example.png](LRoi_example.png "LRoi_example.png") ![LRoi-length.png](LRoi-length.png "LRoi-length.png")
+![LRoi\_example.png](/images/pages/LRoi example.png "LRoi_example.png") ![LRoi-length.png](/images/pages/LRoi-length.png "LRoi-length.png")
 
 The ROI height is used to adjust the length of your seed line w.r.t. its center point. This can be used as an drawing aid, since it might sometimes be difficult to draw a line with a speciffic length by hand. LRoi ensures, that your seeding line will have the exact length you specified.
 
 This line is then subdivided into the number of ROIs you want to create with your specified width. In our example, we create 25 ROIs along a 350µm seeding line, each having a width of 50 µm. This will result in iach ROI having an area of 14µm x 50 µm = 700 µm.
 
-![ROIs\_example.png](ROIs_example.png "ROIs_example.png")
+![ROIs\_example.png](/images/pages/ROIs example.png "ROIs_example.png")
 
 In this example, we have created 25 ROIs, each having an area of 700 µm².
 

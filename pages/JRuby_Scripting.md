@@ -240,7 +240,7 @@ Hopefully it should be obvious how I derived the 'projection\_options' string in
 
 Some example output:
 
-![Example anaglyph image](Anaglyph.png "Example anaglyph image")
+![Example anaglyph image](/images/pages/Anaglyph.png "Example anaglyph image")
 
 ## Script Parameters
 

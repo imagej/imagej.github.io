@@ -22,7 +22,7 @@ This plugin contains an interface to reconstruct interactively and recursively a
   - extract some set of images related to TreeJ functions
   - save as a tree file compatible with other tree viewer and/or TreeJ
 
-![treeJExample.png](treeJExample.png "treeJExample.png") {% include toc%}
+<img src="/images/pages/TreeJExample.png" width="900"/> {% include toc%}
 
 
 ## Usage
@@ -89,7 +89,7 @@ From a segmented image of an Arabidospsi thaliana embryo of 122 cells (FigA), a 
   - For each domain we can reconstruct the lineage and obtain a tree with TreeJ (see Fig right : a tree of an external apical domain).
   - We tagged internal domains of the embryo and extracted the corresponding image them with **From Tag** (figC).
 
-![FiliationTools.png](FiliationTools.png "FiliationTools.png")
+![FiliationTools.png](/images/pages/FiliationTools.png "FiliationTools.png")
 
 ## Installation
 

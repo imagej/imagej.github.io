@@ -19,7 +19,7 @@ description: test description
 <!-- end list -->
 
   -   
-    ![Install-Plugin-DragNDrop.png](Install-Plugin-DragNDrop.png "Install-Plugin-DragNDrop.png")
+    <img src="/images/pages/Install-Plugin-DragNDrop.png" width="750"/>
 
 <!-- end list -->
 
@@ -33,7 +33,7 @@ description: test description
 <!-- end list -->
 
   -   
-    ![Install-Plugin.png](Install-Plugin.png "Install-Plugin.png")
+    <img src="/images/pages/Install-Plugin.png" width="550"/>
 
 <!-- end list -->
 

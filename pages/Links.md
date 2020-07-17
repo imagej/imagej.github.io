@@ -31,12 +31,12 @@ Links to the contributors' personal pages can be found [here](Contributors "wiki
 
 ## Related projects
 
-|                                                             |                                                                                                                                                                                                                         |
-| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Knime-logo.jpg](Knime-logo.jpg "Knime-logo.jpg")          | The [Konstanz kNowledge Information Mining Environment](http://tech.knime.org/community/image-processing).                                                                                                              |
-| ![Mm-icon.jpg](Mm-icon.jpg "Mm-icon.jpg")                   | [µManager](http://micro-manager.org/) is an extensive software suite to interact with microscopes. It integrates nicely as an ImageJ plugin ({% include bc content='Plugins | Micro-Manager | Micro-Manager Studio'%}). |
-| ![OpenSPIM-logo.png](OpenSPIM-logo.png "OpenSPIM-logo.png") | [OpenSPIM](http://openspim.org/) is an Open Access and Open Source project to make Single Plane Illumination Microscopy (SPIM) accessible to researchers working with, or on, SPIM technology.                          |
-| ![SlideSet-logo.png](SlideSet-logo.png "SlideSet-logo.png") | [Slide Set](http://b.nanes.org/slideset/) is a batch processing system for ImageJ, already leveraging the power of [ImageJ2](ImageJ2 "wikilink").                                                                       |
+|                                            |                                                                                                                                                                                                                         |
+| ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="/images/pages/Knime-logo.jpg" width="150"/>    | The [Konstanz kNowledge Information Mining Environment](http://tech.knime.org/community/image-processing).                                                                                                              |
+| <img src="/images/pages/Mm-icon.jpg" width="150"/>       | [µManager](http://micro-manager.org/) is an extensive software suite to interact with microscopes. It integrates nicely as an ImageJ plugin ({% include bc content='Plugins | Micro-Manager | Micro-Manager Studio'%}). |
+| <img src="/images/pages/OpenSPIM-logo.png" width="150"/> | [OpenSPIM](http://openspim.org/) is an Open Access and Open Source project to make Single Plane Illumination Microscopy (SPIM) accessible to researchers working with, or on, SPIM technology.                          |
+| <img src="/images/pages/SlideSet-logo.png" width="90"/>  | [Slide Set](http://b.nanes.org/slideset/) is a batch processing system for ImageJ, already leveraging the power of [ImageJ2](ImageJ2 "wikilink").                                                                       |
 
 ## Image Processing and Ethics
 

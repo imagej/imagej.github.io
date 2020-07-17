@@ -23,7 +23,7 @@ SNT's Reconstruction Viewer is a powerful OpenGL 3D visualization tool for both 
       - Ability to render both local and remote files on the same scene
       - Loading of surface meshes of several template brains (Drosophila and Allen CCF (Allen Mouse Brain Atlas))
 
-![reconstruction-viewer-animated-gif.gif](reconstruction-viewer-animated-gif.gif "reconstruction-viewer-animated-gif.gif")
+![reconstruction-viewer-animated-gif.gif](/images/pages/Reconstruction-viewer-animated-gif.gif "reconstruction-viewer-animated-gif.gif")
 
 # Starting the Viewer
 
@@ -45,8 +45,8 @@ The display canvas supports multiple modes of interaction, including controlled 
 
 <div align="left">
 
-  - ![Stretch-to-Fill - disabled](reconstruction-viewer-not-stretched.png "Stretch-to-Fill - disabled")
-  - ![Stretch-to-Fill - enabled](reconstruction-viewer-stretched.png "Stretch-to-Fill - enabled")
+  - ![Stretch-to-Fill - disabled](/images/pages/Reconstruction-viewer-not-stretched.png "Stretch-to-Fill - disabled")
+  - ![Stretch-to-Fill - enabled](/images/pages/Reconstruction-viewer-stretched.png "Stretch-to-Fill - enabled")
 
 </div>
 
@@ -54,8 +54,8 @@ The display canvas supports multiple modes of interaction, including controlled 
 
 <div align="left">
 
-  - ![Impose Isotropic Scale - None](reconstruction-viewer-aspect-ratio-none.png "Impose Isotropic Scale - None")
-  - ![Impose Isotropic Scale - ZY](reconstruction-viewer-aspect-ratio-ZY.png "Impose Isotropic Scale - ZY")
+  - ![Impose Isotropic Scale - None](/images/pages/Reconstruction-viewer-aspect-ratio-none.png "Impose Isotropic Scale - None")
+  - ![Impose Isotropic Scale - ZY](/images/pages/Reconstruction-viewer-aspect-ratio-ZY.png "Impose Isotropic Scale - ZY")
 
 </div>
 
@@ -87,7 +87,7 @@ This menu relates to the import, customization and management of rendered recons
 
 <div align="left">
 
-  - ![Branch Order and Ice LUT](reconstruction-viewer-color-mapping-individual.png "Branch Order and Ice LUT")
+  - ![Branch Order and Ice LUT](/images/pages/Reconstruction-viewer-color-mapping-individual.png "Branch Order and Ice LUT")
 
 </div>
 
@@ -95,7 +95,7 @@ This menu relates to the import, customization and management of rendered recons
 
 <div align="left">
 
-  - ![No. Branch Points and Ice LUT](reconstruction-viewer-color-mapping-group.png "No. Branch Points and Ice LUT")
+  - ![No. Branch Points and Ice LUT](/images/pages/Reconstruction-viewer-color-mapping-group.png "No. Branch Points and Ice LUT")
 
 </div>
 
@@ -103,7 +103,7 @@ This menu relates to the import, customization and management of rendered recons
 
 <div align="left">
 
-  - ![Unique Color Coding](reconstruction-viewer-color-mapping-unique.png "Unique Color Coding")
+  - ![Unique Color Coding](/images/pages/Reconstruction-viewer-color-mapping-unique.png "Unique Color Coding")
 
 </div>
 
@@ -111,8 +111,8 @@ This menu relates to the import, customization and management of rendered recons
 
 <div align="left">
 
-  - ![Thickness = 1.0](reconstruction-viewer-thickness-1.png "Thickness = 1.0")
-  - ![Thickness = 5.0](reconstruction-viewer-thickness-5.png "Thickness = 5.0")
+  - ![Thickness = 1.0](/images/pages/Reconstruction-viewer-thickness-1.png "Thickness = 1.0")
+  - ![Thickness = 5.0](/images/pages/Reconstruction-viewer-thickness-5.png "Thickness = 5.0")
 
 </div>
 
@@ -125,7 +125,7 @@ This menu relates to the import, customization and management of rendered recons
 
 ## Manage and Customize 3D Meshes
 
-![](reconstruction-viewer-mesh-controls.png) ![{% include bc content='Customize|All Parameters...'%}](reconstruction-viewer-customize-mesh-controls.png "{% include bc content='Customize|All Parameters...'%}")
+![](reconstruction-viewer-mesh-controls.png) ![{% include bc content='Customize|All Parameters...'%}](/images/pages/Reconstruction-viewer-customize-mesh-controls.png "{% include bc content='Customize|All Parameters...'%}")
 
 ### Add
 
@@ -144,8 +144,8 @@ This menu relates to the import, customization and management of rendered recons
 
 <div align="left">
 
-  - ![Transparency = 5%](reconstruction-viewer-obj-transparency-5.png "Transparency = 5%")
-  - ![Transparency = 95%](reconstruction-viewer-obj-transparency-95.png "Transparency = 95%")
+  - ![Transparency = 5%](/images/pages/Reconstruction-viewer-obj-transparency-5.png "Transparency = 5%")
+  - ![Transparency = 95%](/images/pages/Reconstruction-viewer-obj-transparency-95.png "Transparency = 95%")
 
 </div>
 
@@ -162,8 +162,8 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 <div align="left">
 
-  - ![Allen CCF Navigator](reconstruction-viewer-allen-ccf-ontology.png "Allen CCF Navigator")
-  - ![Allen CCF Ontology Info](reconstruction-viewer-allen-ccf-thalamus-info.png "Allen CCF Ontology Info")
+  - ![Allen CCF Navigator](/images/pages/Reconstruction-viewer-allen-ccf-ontology.png "Allen CCF Navigator")
+  - ![Allen CCF Ontology Info](/images/pages/Reconstruction-viewer-allen-ccf-thalamus-info.png "Allen CCF Ontology Info")
 
 </div>
 
@@ -183,9 +183,9 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 <div align="center">
 
-  - ![FlyCircuit Drosophila (Adult)](reconstruction-flycircuit-reference.png "FlyCircuit Drosophila (Adult)")
-  - ![Allen Adult Mouse Whole Brain + Thalamus](reconstruction-viewer-whole-mouse-thalamus.png "Allen Adult Mouse Whole Brain + Thalamus")
-  - ![Max Planck ZBA](reconstruction-viewer-zebrafish-reference.png "Max Planck ZBA")
+  - ![FlyCircuit Drosophila (Adult)](/images/pages/Reconstruction-flycircuit-reference.png "FlyCircuit Drosophila (Adult)")
+  - ![Allen Adult Mouse Whole Brain + Thalamus](/images/pages/Reconstruction-viewer-whole-mouse-thalamus.png "Allen Adult Mouse Whole Brain + Thalamus")
+  - ![Max Planck ZBA](/images/pages/Reconstruction-viewer-zebrafish-reference.png "Max Planck ZBA")
 
 </div>
 
@@ -204,7 +204,7 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 <div align="left">
 
-  - ![AA0100 Measurements](reconstruction-viewer-measurements-AA0100.png "AA0100 Measurements")
+  - ![AA0100 Measurements](/images/pages/Reconstruction-viewer-measurements-AA0100.png "AA0100 Measurements")
 
 </div>
 
@@ -215,14 +215,14 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 <div align="left">
 
-  - ![AA0100: Branch Order](reconstruction-viewer-AA0100-distribution-analysis.png "AA0100: Branch Order")
-  - ![9 OP fibers: \# Branch Points](reconstruction-viewer-OP-distribution-analysis.png "9 OP fibers: # Branch Points")
+  - ![AA0100: Branch Order](/images/pages/Reconstruction-viewer-AA0100-distribution-analysis.png "AA0100: Branch Order")
+  - ![9 OP fibers: \# Branch Points](/images/pages/Reconstruction-viewer-OP-distribution-analysis.png "9 OP fibers: # Branch Points")
 
 </div>
 
 ### Single-Cell Analysis
 
-![Brain Area Analyis: Cable Length](reconstruction-viewer-brain-area-analysis.png "Brain Area Analyis: Cable Length")
+![Brain Area Analyis: Cable Length](/images/pages/Reconstruction-viewer-brain-area-analysis.png "Brain Area Analyis: Cable Length")
 
   - {% include bc content='Brain Area Analysis...'%} Measures the amount of cable length, number of terminal nodes, or both that occur in distinct anatomical regions of the brain, with the option to restrict the analysis up to a maximum depth in the ontology hierarchy. Note that only one reconstruction may be selected at a time with this option.
   - {% include bc content='Create Dendrogram...'%} Runs the {% include bc content='Utilities|Create Dendrogram...'%} command found in the main SNT dialog. See [Dendrogram Viewer](SNT__Analysis#Dendrogram_Viewer "wikilink"). Note only one reconstruction may be selected at a time with this option.
@@ -230,8 +230,8 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 <div align="left">
 
-  - ![AA0100 Sholl Table](reconstruction-viewer-AA0100-sholl-table.png "AA0100 Sholl Table")
-  - ![AA0100 Sholl Plot](reconstruction-viewer-AA0100-sholl-plot.png "AA0100 Sholl Plot")
+  - ![AA0100 Sholl Table](/images/pages/Reconstruction-viewer-AA0100-sholl-table.png "AA0100 Sholl Table")
+  - ![AA0100 Sholl Plot](/images/pages/Reconstruction-viewer-AA0100-sholl-plot.png "AA0100 Sholl Plot")
 
 </div>
 
@@ -239,8 +239,8 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 <div align="left">
 
-  - ![AA0100 Strahler Table](reconstruction-viewer-AA0100-strahler-table.png "AA0100 Strahler Table")
-  - ![AA0100 Strahler Plot](reconstruction-viewer-AA0100-strahler-plot.png "AA0100 Strahler Plot")
+  - ![AA0100 Strahler Table](/images/pages/Reconstruction-viewer-AA0100-strahler-table.png "AA0100 Strahler Table")
+  - ![AA0100 Strahler Plot](/images/pages/Reconstruction-viewer-AA0100-strahler-plot.png "AA0100 Strahler Plot")
 
 </div>
 
@@ -249,7 +249,7 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 ## Utilities
 
-![reconstruction-viewer-tools-menu.png](reconstruction-viewer-tools-menu.png "reconstruction-viewer-tools-menu.png")
+![reconstruction-viewer-tools-menu.png](/images/pages/Reconstruction-viewer-tools-menu.png "reconstruction-viewer-tools-menu.png")
 
 ### Actions & Utilities
 
@@ -270,7 +270,7 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 ## Settings
 
-![reconstruction-viewer-settings-menu.png](reconstruction-viewer-settings-menu.png "reconstruction-viewer-settings-menu.png")
+![reconstruction-viewer-settings-menu.png](/images/pages/Reconstruction-viewer-settings-menu.png "reconstruction-viewer-settings-menu.png")
 
 ### Keyboard & Mouse Sensitivity
 

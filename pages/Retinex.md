@@ -48,9 +48,9 @@ Retinex filtering is based on Land's theory of image perception, proposed to exp
 
 ## Example
 
-Original: ![Photo1.jpg](Photo1.jpg "Photo1.jpg")
+Original: ![Photo1.jpg](/images/pages/Photo1.jpg "Photo1.jpg")
 
-After Retinex (default parameters): ![Photo1-Retinex.jpg](Photo1-Retinex.jpg "Photo1-Retinex.jpg")
+After Retinex (default parameters): ![Photo1-Retinex.jpg](/images/pages/Photo1-Retinex.jpg "Photo1-Retinex.jpg")
 
 ## Homepage
 

@@ -14,7 +14,7 @@ It aims to combine the functionality of these plugins and refine and enhance the
 
 ## Screen Shot of features
 
-![Series\_Labeler\_Screen\_shot.png](Series_Labeler_Screen_shot.png "Series_Labeler_Screen_shot.png")
+![Series\_Labeler\_Screen\_shot.png](/images/pages/Series Labeler Screen shot.png "Series_Labeler_Screen_shot.png")
 
 ## What it works with
 

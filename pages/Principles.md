@@ -74,7 +74,7 @@ In JPEG lossy compression, therefore, the stored image is not the same as the or
 
 Example: a section of the famous [Mandrill](http://sampl.ece.ohio-state.edu/data/stills/color/mandrill.png) image. From left to right, you see the original (with an 8-bit colormap), the hue channel of the original, and the hue channel after saving as a JPEG with ImageJ's default options -- note in particular the vertical and horizontal artifacts:
 
-![Original (8-bit colormap)](Mandrill-orig.png "Original (8-bit colormap)")![Hue of the original image](Mandrill-hue-png.png "Hue of the original image")![Hue of the JPEG image (default ImageJ settings)](Mandrill-hue-jpg.png "Hue of the JPEG image (default ImageJ settings)")
+![Original (8-bit colormap)](/images/pages/Mandrill-orig.png "Original (8-bit colormap)")![Hue of the original image](/images/pages/Mandrill-hue-png.png "Hue of the original image")![Hue of the JPEG image (default ImageJ settings)](/images/pages/Mandrill-hue-jpg.png "Hue of the JPEG image (default ImageJ settings)")
 
 While most digital cameras save in JPEG format by default, it is very likely that they also support some non-lossy format (such as TIFF or a custom RAW format). Use those formats instead. A format called JPEG2000 supported by various slide scanners and used in "virtual slide" products was created to improve image quality and compression rates, however both lossy and non-lossy versions the JPEG2000 format exist. Use only the non-lossy formats.
 

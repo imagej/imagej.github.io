@@ -22,7 +22,7 @@ When starting the plugin, pictures and <i>Sync Wins</i> dialog appear, like in t
 
 We should mention here that sizes of input image matrices must be of power of 2, common sizes are: 64, 128, 256, 512, 1024, 2048 etc., otherwise the plugin will not start and a warning message appears again. This is due to the proper computation of levels of wavelet decomposition of images, see below.
 
-![Wavelet\_Denoise\_dialog.jpg](Wavelet_Denoise_dialog.jpg "Wavelet_Denoise_dialog.jpg")
+![Wavelet\_Denoise\_dialog.jpg](/images/pages/Wavelet Denoise dialog.jpg "Wavelet_Denoise_dialog.jpg")
 
 ## Description of functionality of items in the plugin window
 

@@ -16,7 +16,7 @@ This tool may be used to adjust the brightness and contrast of an active image.
 
 The Brightness and Contrast tool may be accessed through {% include bc content='Image | Adjust | Brightness/Contrast'%} or {% include key content='Ctrl|Shift|C' %}.
 
-![Brightness\_Contrast\_Window.png](Brightness_Contrast_Window.png "Brightness_Contrast_Window.png")
+![Brightness\_Contrast\_Window.png](/images/pages/Brightness Contrast Window.png "Brightness_Contrast_Window.png")
 
 The upper and lower limits of the display range can be adjusted by modifying the minimum and maximum settings. Image brightness and image contrast can be modified by using the brightness and contrast sliders or by using the arrows on the right of the window to adjust the range.
 
@@ -30,10 +30,10 @@ The below images show the effects of adjusting brightness and contrast settings.
 
 **Before**
 
-![Brightness\_Contrast\_Before.png](Brightness_Contrast_Before.png "Brightness_Contrast_Before.png")
+![Brightness\_Contrast\_Before.png](/images/pages/Brightness Contrast Before.png "Brightness_Contrast_Before.png")
 
 **After**
 
-![Brightness\_Contrast\_After.png](Brightness_Contrast_After.png "Brightness_Contrast_After.png")
+![Brightness\_Contrast\_After.png](/images/pages/Brightness Contrast After.png "Brightness_Contrast_After.png")
 
 [Category:Cookbook](Category_Cookbook "wikilink")

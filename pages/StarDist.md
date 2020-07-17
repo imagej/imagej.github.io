@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='stardist ' repo='stardist-imagej ' %}
 {% endcapture %}
-{% include info-box name='StarDist ' software='ImageJ ' update-site='StarDist ' author='Uwe Schmidt, Martin Weigert ' maintainer='Uwe Schmidt, Martin Weigert ' source=source website='https://github.com/mpicbg-csbd/stardist ' %} ![StarDist\_logo.jpg](StarDist_logo.jpg "StarDist_logo.jpg")
+{% include info-box name='StarDist ' software='ImageJ ' update-site='StarDist ' author='Uwe Schmidt, Martin Weigert ' maintainer='Uwe Schmidt, Martin Weigert ' source=source website='https://github.com/mpicbg-csbd/stardist ' %} <img src="/images/pages/StarDist logo.jpg" width="128"/>
 
 ## Overview
 
@@ -20,7 +20,7 @@ This is the ImageJ/Fiji plugin for [StarDist](https://github.com/mpicbg-csbd/sta
 
 *The plugin currently only supports 2D image and time lapse data. If you have 3D data, please use our [python library](https://github.com/mpicbg-csbd/stardist).*
 
-![Stardist\_screenshot\_small.jpg](Stardist_screenshot_small.jpg "Stardist_screenshot_small.jpg")
+<img src="/images/pages/Stardist screenshot small.jpg" width="640"/>
 
 ## Installation
 
@@ -29,7 +29,7 @@ This is the ImageJ/Fiji plugin for [StarDist](https://github.com/mpicbg-csbd/sta
 3.  Click on the button `Manage update sites`.
 4.  Scroll down the list and tick the checkboxes for update sites `CSBDeep` and `StarDist`, then click the `Close` button.  
     (If `StarDist` is missing, click `Update URLs` to refresh the list of update sites.)  
-    ![StarDist\_update\_site2.png](StarDist_update_site2.png "StarDist_update_site2.png")![StarDist\_update\_site.png](StarDist_update_site.png "StarDist_update_site.png")
+    <img src="/images/pages/StarDist update site2.png" width="320"/><img src="/images/pages/StarDist update site.png" width="320"/>
 5.  Click on `Apply changes` to install the plugin.
 6.  Restart Fiji.
 
@@ -39,16 +39,14 @@ This is the ImageJ/Fiji plugin for [StarDist](https://github.com/mpicbg-csbd/sta
 
 Open the image that should be segmented. Note, that currently only 2D and 2D+time images are supported. Suitable test images can for instance be found at the [Broad Bioimage Benchmark Collection](https://data.broadinstitute.org/bbbc/BBBC008/BBBC008_v1_images.zip)\[1\]:
 
-![StarDist\_usage\_input.png](StarDist_usage_input.png "StarDist_usage_input.png")
+<img src="/images/pages/StarDist usage input.png" height="240"/>
 
 Start the plugin from `Plugins > StarDist > StarDist 2D`. The following parameters can be set:
 
 <table>
 <tbody>
 <tr class="odd">
-<td><figure>
-<img src="/images/pages/StarDist_usage_param_pred.jpg" title="StarDist_usage_param_pred.jpg" alt="StarDist_usage_param_pred.jpg" width="400" /><figcaption>StarDist_usage_param_pred.jpg</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/StarDist usage param pred.jpg" width="400"/></p></td>
 <td><p>Select a neural network model from the dropdown list, which can be one of the following:</p>
 <ul>
 <li><em>A built-in model</em>. We currently provide:
@@ -61,9 +59,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
 <p>If necessary, one can change/disable the percentile-based input image normalization.</p></td>
 </tr>
 <tr class="even">
-<td><figure>
-<img src="/images/pages/StarDist_usage_param_nms.jpg" title="StarDist_usage_param_nms.jpg" alt="StarDist_usage_param_nms.jpg" width="400" /><figcaption>StarDist_usage_param_nms.jpg</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/StarDist usage param nms.jpg" width="400"/></p></td>
 <td><p>Adjust the NMS (non-maximum suppression) postprocessing parameters:</p>
 <ul>
 <li><em>Probability/Score Threshold</em> - higher values lead to fewer segmented objects, but will likely avoid false positives.</li>
@@ -73,9 +69,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
 <p>The segmented objects can be returned as a <em>Label Image</em> or in the <em>ROI Manager</em> (or both).</p></td>
 </tr>
 <tr class="odd">
-<td><figure>
-<img src="/images/pages/StarDist_usage_param_advanced.jpg" title="StarDist_usage_param_advanced.jpg" alt="StarDist_usage_param_advanced.jpg" width="400" /><figcaption>StarDist_usage_param_advanced.jpg</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/StarDist usage param advanced.jpg" width="400"/></p></td>
 <td><p>Advanced options:</p>
 <ul>
 <li>Specify a user-trained model file or URL</li>
@@ -93,7 +87,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
 
 Example of running the plugin, showing the returned label image and ROIs overlaid on the input image (check `Show All` in the ROI Manager):
 
-![StarDist\_usage\_output.png](StarDist_usage_output.png "StarDist_usage_output.png")
+<img src="/images/pages/StarDist usage output.png" height="240"/>
 
 ### Scripting/Batch-Processing
 

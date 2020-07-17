@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-![MTracker\_NewLogo-04.png](MTracker_NewLogo-04.png "MTracker_NewLogo-04.png") {% include component-stats content=':net.imagej:MTrack' %}
+<img src="/images/pages/MTracker NewLogo-04.png" width="250"/> {% include component-stats content=':net.imagej:MTrack' %}
 
 MTrack is a tool, which detects, tracks, and measures the behavior of fluorescently labeled microtubules imaged by TIRF (total internal reflection fluorescence) microscopy. In such an in vitro reconstitution approach, stabilized, non-dynamic microtubule seeds serve as nucleation points for dynamically growing microtubules. 
 
@@ -35,7 +35,7 @@ A typical dataset consists of a single two-dimensional (2d) image of the non-dyn
 
 The welcome panel will open.
 
-![WelcomeA.png](WelcomeA.png "WelcomeA.png")
+<img src="/images/pages/WelcomeA.png" width="500"/>
 
 #### Choose Mode
 
@@ -71,13 +71,13 @@ The default algorithm to identify the seeds as objects is called Maximally Stabl
 
 The end-points will be displayed as green circles. A “Next” button appears on the panel, which allows the user to flip to the next panel.
 
-![MserSimple.png](MserSimple.png "MserSimple.png")
+<img src="/images/pages/MserSimple.png" width="300"/>
 
 #### Options
 
 Before starting the actual tracking of the dynamically growing microtubules, the program will give you several options:
 
-![Options.png](Options.png "Options.png")
+<img src="/images/pages/Options.png" width="300"/>
 
 **Deselect and select ends**
 
@@ -101,7 +101,7 @@ Clicking "Auto Compute Velocity and Frequencies" auto computes the polymerizatio
 
 In addition, the user can obtain microtubule length distribution for a certain time point or a time-averaged distribution. In the length distribution plot, the mean length, and the standard deviation will be displayed after fitting an exponential decay curve to the obtained distribution.
 
-![RansacPanel.png](RansacPanel.png "RansacPanel.png") Click here to see some examples of the [MTrack-Ransac fits](MTrack-Ransac_fits "wikilink").
+<img src="/images/pages/RansacPanel.png" width="600"/> Click here to see some examples of the [MTrack-Ransac fits](MTrack-Ransac_fits "wikilink").
 
 ## Example
 

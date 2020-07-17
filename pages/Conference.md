@@ -10,7 +10,7 @@ description: test description
 
 ## ImageJ User and Developer Conferences
 
-![Imagej-conference-logo.png](Imagej-conference-logo.png "Imagej-conference-logo.png")
+![Imagej-conference-logo.png](/images/pages/Imagej-conference-logo.png "Imagej-conference-logo.png")
 
 Approximately every two years from 2006 through 2015, there was a conference focused on [ImageJ](ImageJ "wikilink")-based software, including both the core program itself, as well as applications and [plugins](plugins "wikilink") thereof.
 

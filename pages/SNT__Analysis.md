@@ -19,7 +19,7 @@ There are two [Sholl Analysis](https://imagej.net/Sholl_Analysis) commands avail
 
 ## Sholl Analysis (by Focal Point)
 
-![Initiating Sholl Analysis: coarse method](Snt-Sholl-Coarse-Intructions.png "Initiating Sholl Analysis: coarse method") It is also possible to initiate [Sholl Analysis](https://imagej.net/Sholl_Analysis) on a tracing in the canvas by manually selecting a focal point. You can do it coarsely by right-clicking near a node and choosing *Sholl Analysis at Nearest Node* from the contextual menu (Shortcut: {% include key content='Alt' %} + {% include key content='Shift' %} + {% include key content='A' %}.
+![Initiating Sholl Analysis: coarse method](/images/pages/Snt-Sholl-Coarse-Intructions.png "Initiating Sholl Analysis: coarse method") It is also possible to initiate [Sholl Analysis](https://imagej.net/Sholl_Analysis) on a tracing in the canvas by manually selecting a focal point. You can do it coarsely by right-clicking near a node and choosing *Sholl Analysis at Nearest Node* from the contextual menu (Shortcut: {% include key content='Alt' %} + {% include key content='Shift' %} + {% include key content='A' %}.
 
 Alternatively, for precise positioning of the center of analysis:
 
@@ -29,9 +29,9 @@ Alternatively, for precise positioning of the center of analysis:
 
 <div align="center">
 
-  - ![1) Select path](Snt-Sholl-Precise-Step-1.png "1) Select path")
-  - ![2) Snap cursor to node](Snt-Sholl-Precise-Step-2.png "2) Snap cursor to node")
-  - ![3) Sholl dialog](Snt-Sholl-Precise-Step-3.png "3) Sholl dialog")
+  - ![1) Select path](/images/pages/Snt-Sholl-Precise-Step-1.png "1) Select path")
+  - ![2) Snap cursor to node](/images/pages/Snt-Sholl-Precise-Step-2.png "2) Snap cursor to node")
+  - ![3) Sholl dialog](/images/pages/Snt-Sholl-Precise-Step-3.png "3) Sholl dialog")
 
 </div>
 
@@ -40,8 +40,8 @@ Alternatively, for precise positioning of the center of analysis:
 
 <div align="center">
 
-  - ![Step Size = 0](Snt-Sholl-preview-step-size-1.png "Step Size = 0")
-  - ![Step Size = 5](Snt-Sholl-preview-step-size-2.png "Step Size = 5")
+  - ![Step Size = 0](/images/pages/Snt-Sholl-preview-step-size-1.png "Step Size = 0")
+  - ![Step Size = 5](/images/pages/Snt-Sholl-preview-step-size-2.png "Step Size = 5")
 
 </div>
 
@@ -49,10 +49,10 @@ In addition to the Sholl Profile plot and table, the output of the analysis can 
 
 <div align="center">
 
-  - ![Sholl Profile Plot](Snt-Sholl-Profile-Plot-New.png "Sholl Profile Plot")
-  - ![Sholl Profile Table](Snt-Sholl-Profile-Table-New.png "Sholl Profile Table")
-  - ![Color Coded Tracing - Ice Lut](Snt-Sholl-Color-Map.png "Color Coded Tracing - Ice Lut")
-  - ![Sholl Image - Ice Lut](Snt-Sholl-Color-Map-Mask.png "Sholl Image - Ice Lut")
+  - ![Sholl Profile Plot](/images/pages/Snt-Sholl-Profile-Plot-New.png "Sholl Profile Plot")
+  - ![Sholl Profile Table](/images/pages/Snt-Sholl-Profile-Table-New.png "Sholl Profile Table")
+  - ![Color Coded Tracing - Ice Lut](/images/pages/Snt-Sholl-Color-Map.png "Color Coded Tracing - Ice Lut")
+  - ![Sholl Image - Ice Lut](/images/pages/Snt-Sholl-Color-Map-Mask.png "Sholl Image - Ice Lut")
 
 </div>
 
@@ -62,8 +62,8 @@ To conduct [Strahler Analysis](https://imagej.net/Strahler_Analysis) on the curr
 
 <div align="left">
 
-  - ![Strahler Analysis table](SNT-Strahler-Analysis-Table.png "Strahler Analysis table")
-  - ![Strahler Analysis plot](SNT-Strahler-Analysis-Plot.png "Strahler Analysis plot")
+  - ![Strahler Analysis table](/images/pages/SNT-Strahler-Analysis-Table.png "Strahler Analysis table")
+  - ![Strahler Analysis plot](/images/pages/SNT-Strahler-Analysis-Plot.png "Strahler Analysis plot")
 
 </div>
 
@@ -73,14 +73,14 @@ Found at {% include bc content='Analysis|Path Order Analysis'%} in the main SNT 
 
 <div align="left">
 
-  - ![Path Order Analysis table](SNT-Path-Order-Analysis-Table.png "Path Order Analysis table")
-  - ![Path Order Analysis plot](SNT-Path-Order-Analysis-Plot.png "Path Order Analysis plot")
+  - ![Path Order Analysis table](/images/pages/SNT-Path-Order-Analysis-Table.png "Path Order Analysis table")
+  - ![Path Order Analysis plot](/images/pages/SNT-Path-Order-Analysis-Plot.png "Path Order Analysis plot")
 
 </div>
 
 # Measurements
 
-![*Measure...* dialog](Snt-Measurements-List.png "Measure... dialog") SNT provides several ways to measure reconstructions. A comprehensive selection of measurements can be found by going to {% include bc content='Analysis|Measure...'%}. in the main SNT dialog. Note that for this option, if multiple rooted tree structures exist in the Path Manger, you will be prompted to choose one for analysis.
+![*Measure...* dialog](/images/pages/Snt-Measurements-List.png "Measure... dialog") SNT provides several ways to measure reconstructions. A comprehensive selection of measurements can be found by going to {% include bc content='Analysis|Measure...'%}. in the main SNT dialog. Note that for this option, if multiple rooted tree structures exist in the Path Manger, you will be prompted to choose one for analysis.
 
 To quickly measure all existing paths with a common set of statistics, choose {% include bc content='Analysis|Quick Measurements'%}. In both cases the results of the measurements are displayed in a table.
 
@@ -95,11 +95,11 @@ Batch measurements of reconstructions can be accomplished via scripting. See *Me
 
 # Dendrogram Viewer
 
-![Dendrogram Viewer shortcuts](Snt-Dendrogram-Shortcuts.png "Dendrogram Viewer shortcuts") Found at {% include bc content='Utilities|Create Dendrogram'%}, this option generates a [Dendrogram](https://en.wikipedia.org/wiki/Dendrogram) from one connected component (i.e., a single rooted tree structure) in the Path Manager, providing a high-level overview of neurite branching topology. Note that if multiple rooted trees exist in the Path Manager, you will be prompted to choose one of them.
+![Dendrogram Viewer shortcuts](/images/pages/Snt-Dendrogram-Shortcuts.png "Dendrogram Viewer shortcuts") Found at {% include bc content='Utilities|Create Dendrogram'%}, this option generates a [Dendrogram](https://en.wikipedia.org/wiki/Dendrogram) from one connected component (i.e., a single rooted tree structure) in the Path Manager, providing a high-level overview of neurite branching topology. Note that if multiple rooted trees exist in the Path Manager, you will be prompted to choose one of them.
 
 The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to display vertex labels and edge weights (which by default are the euclidean distances between adjacent vertices). To see the available key shortcuts, right click on the viewer and choose *Available Shortcuts...*. The plot may be exported in several file formats, including HTML, PNG and SVG.
 
-Fine-grained programmatic control over SNT's Graph objects is achieved using the [JGraphT API](https://jgrapht.org/javadoc/) in a script. Also relevant is the [sc.fiji.snt.analysis.graph](http://fiji.github.io/SNT/sc/fiji/snt/analysis/graph/package-frame.html) package which provides high-level tools for Graph creation and conversion. See *Graph\_Analysis.py* in the SNT [Script Templates](https://imagej.net/SNT:_Scripting#Script_Templates) for a basic example. ![Dendrogram Viewer](Snt-Dendrogram-Viewer.png "Dendrogram Viewer")
+Fine-grained programmatic control over SNT's Graph objects is achieved using the [JGraphT API](https://jgrapht.org/javadoc/) in a script. Also relevant is the [sc.fiji.snt.analysis.graph](http://fiji.github.io/SNT/sc/fiji/snt/analysis/graph/package-frame.html) package which provides high-level tools for Graph creation and conversion. See *Graph\_Analysis.py* in the SNT [Script Templates](https://imagej.net/SNT:_Scripting#Script_Templates) for a basic example. ![Dendrogram Viewer](/images/pages/Snt-Dendrogram-Viewer.png "Dendrogram Viewer")
 
 # Comparing Reconstructions
 
@@ -129,7 +129,7 @@ The file selection prompt for this option allows selection of up to four directo
 
 <div align="center">
 
-  - ![Snt-Compare-Reconstruction-Group-Statistics-Window.png](Snt-Compare-Reconstruction-Group-Statistics-Window.png "Snt-Compare-Reconstruction-Group-Statistics-Window.png")
+  - ![Snt-Compare-Reconstruction-Group-Statistics-Window.png](/images/pages/Snt-Compare-Reconstruction-Group-Statistics-Window.png "Snt-Compare-Reconstruction-Group-Statistics-Window.png")
   - ![](Snt-Compare-Reconstruction-Group-Box-Plot.png)
   - ![](Snt-Compare-Reconstruction-Group-Histogram.png)
 

@@ -38,7 +38,7 @@ Specifically intended for lightsheet acquisitions of cleared samples (e.g. by CL
   - Support of non-regular acquisition grids, which includes 'intelligent acquisitions' where some of the image blocks can be missing if only background is present
   - Support of image data acquired at different resolutions to combine overview scans with high resolution acquisitions of specific areas of interest
 
-![Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy. Each tile of size 1920x1920x1000 pixels is depicted in a random color.](BigStitcherTitle-1.jpg "Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy. Each tile of size 1920x1920x1000 pixels is depicted in a random color.")
+![Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy. Each tile of size 1920x1920x1000 pixels is depicted in a random color.](/images/pages/BigStitcherTitle-1.jpg "Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy. Each tile of size 1920x1920x1000 pixels is depicted in a random color.")
 
 ## Download
 

@@ -24,7 +24,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji ' repo='register\_virtual\_stack\_slices ' %}
 {% endcapture %}
-{% include info-box name='Transform Virtual Stack Slices ' software='Fiji ' author=author maintainer=maintainer filename=filename source=source released='September 24<sup>th</sup>, 2009 ' latest-version='3.0.0, February 17<sup>th</sup>, 2016 ' status='stable, active ' category='[Registration](_Category_Registration "wikilink"), [Transform](_Category_Transform "wikilink") ' %}{| |style="vertical-align:top" | ![Transform Virtual Stack scheme - All images are transformed based on the XML files](Transform_Virtual_Stack_scheme.png "Transform Virtual Stack scheme - All images are transformed based on the XML files") |}
+{% include info-box name='Transform Virtual Stack Slices ' software='Fiji ' author=author maintainer=maintainer filename=filename source=source released='September 24<sup>th</sup>, 2009 ' latest-version='3.0.0, February 17<sup>th</sup>, 2016 ' status='stable, active ' category='[Registration](_Category_Registration "wikilink"), [Transform](_Category_Transform "wikilink") ' %}{| |style="vertical-align:top" | ![Transform Virtual Stack scheme - All images are transformed based on the XML files](/images/pages/Transform Virtual Stack scheme.png "Transform Virtual Stack scheme - All images are transformed based on the XML files") |}
 
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of transformed image slices (with enlarged canvas) applying a list of transforms stored as **.XML** files in another folder.
 

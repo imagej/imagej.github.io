@@ -32,7 +32,7 @@ The associated project for automation is available in [TAPAS](TAPAS "wikilink").
 
 ## Author
 
-{% include person content='Tboudier' %} ![EmailBoudier.png](EmailBoudier.png "EmailBoudier.png"), [Academia Sinica](https://www.sinica.edu.tw/en), Taipei, Taiwan.
+{% include person content='Tboudier' %} ![EmailBoudier.png](/images/pages/EmailBoudier.png "EmailBoudier.png"), [Academia Sinica](https://www.sinica.edu.tw/en), Taipei, Taiwan.
 
 With many contributions from J. Ollion, Laboratoire Jean Perrin, Paris, France.
 

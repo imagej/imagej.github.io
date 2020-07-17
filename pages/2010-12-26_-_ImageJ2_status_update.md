@@ -10,11 +10,11 @@ description: test description
 
 The following is a status update on the [ImageJ2](ImageJ2 "wikilink") project as of 26 December 2010.
 
-![**ImageJ2 user interface with discovered plugins:** We have created a very simple Swing user interface, with menus populated with both IJ1 and IJ2 plugins loaded using the new plugin discovery mechanism. (We will address the out-of-order menus very soon.)](ij2-gui-ij1-plugins.png "ImageJ2 user interface with discovered plugins: We have created a very simple Swing user interface, with menus populated with both IJ1 and IJ2 plugins loaded using the new plugin discovery mechanism. (We will address the out-of-order menus very soon.)")
+![**ImageJ2 user interface with discovered plugins:** We have created a very simple Swing user interface, with menus populated with both IJ1 and IJ2 plugins loaded using the new plugin discovery mechanism. (We will address the out-of-order menus very soon.)](/images/pages/Ij2-gui-ij1-plugins.png "ImageJ2 user interface with discovered plugins: We have created a very simple Swing user interface, with menus populated with both IJ1 and IJ2 plugins loaded using the new plugin discovery mechanism. (We will address the out-of-order menus very soon.)")
 
-![**ImageJ2 user interface loading data:** The new interface invokes an IJ2 plugin to load images.](ij2-gui-open-dialog.png "ImageJ2 user interface loading data: The new interface invokes an IJ2 plugin to load images.")
+![**ImageJ2 user interface loading data:** The new interface invokes an IJ2 plugin to load images.](/images/pages/Ij2-gui-open-dialog.png "ImageJ2 user interface loading data: The new interface invokes an IJ2 plugin to load images.")
 
-![**ImageJ2 user interface displaying an image:** The new interface displays the image in a simple N-dimensional image browser.](ij2-gui-image-window.png "ImageJ2 user interface displaying an image: The new interface displays the image in a simple N-dimensional image browser.")
+![**ImageJ2 user interface displaying an image:** The new interface displays the image in a simple N-dimensional image browser.](/images/pages/Ij2-gui-image-window.png "ImageJ2 user interface displaying an image: The new interface displays the image in a simple N-dimensional image browser.")
 
 ### Core ImageJDev work
 

@@ -176,7 +176,7 @@ public class LaunchEventLoggerAction implements TrackMateAction
 
 And here are the results:
 
-![TrackMate\_CustomAction\_1.png](TrackMate_CustomAction_1.png "TrackMate_CustomAction_1.png")
+![TrackMate\_CustomAction\_1.png](/images/pages/TrackMate CustomAction 1.png "TrackMate_CustomAction_1.png")
 
 You can imagine a lot of applications for Actions. Since they give you access to most of the plugin context, you can basically plug anything there. The one limitation is that it does not fit perfectly in the existing GUI: actions just appear as items in a drop-down list. But in most cases it does not matter much. Actions are very useful to quickly graft a piece of new functionality on TrackMate.
 

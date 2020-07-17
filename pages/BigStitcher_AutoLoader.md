@@ -12,7 +12,11 @@ description: test description
 
 In the first window, you can choose which files to include in the dataset.
 
-![Select the files to include in the dataset.](BigStitcherAutoLoader1.png "Select the files to include in the dataset.")
+
+{% capture title%}
+ Select the files to include in the dataset. 
+{% endcapture %}
+{% include thumbnail src='/images/pages/BigStitcherAutoLoader1.png' title=title %}
 
 You can either **Browse** for files or directories, drag and drop them to the **path**-field or enter a path manually.
 
@@ -27,7 +31,11 @@ All files that match the pattern you enter will be included in the dataset.
 
 As you change the path and wildcards, a preview of the files to be included in the dataset will be displayed:
 
-![Preview of selected files](BigStitcherAutoLoader2.png "Preview of selected files")
+
+{% capture title%}
+ Preview of selected files 
+{% endcapture %}
+{% include thumbnail src='/images/pages/BigStitcherAutoLoader2.png' title=title %}
 
 To prevent the inclusion of small files like operating-system metadata, you can specify a **minimal size** for the files to include - smaller files will be ignored (the default of 10KB works fine in most cases).
 
@@ -37,7 +45,11 @@ After you click **OK** in the previous window, the Automatic loader will investi
 
 In the next window, you can review and correct the automatic metadata definition:
 
-![Defining metadata for Views.](BigStitcherAutoLoader3.png "Defining metadata for Views.")
+
+{% capture title%}
+ Defining metadata for Views. 
+{% endcapture %}
+{% include thumbnail src='/images/pages/BigStitcherAutoLoader3.png' title=title %}
 
 ### Views within files
 
@@ -91,7 +103,11 @@ If there are multiple angles in the dataset, the dialog will be shown for each o
 
 If you specify more than one layer in z, the x and y pattern will be repeated for every layer.
 
-![Options for manually moving tiles to a grid (macro-scriptable).](BigStitcherAutoLoader6a.png "Options for manually moving tiles to a grid (macro-scriptable).")
+
+{% capture title%}
+ Options for manually moving tiles to a grid (macro-scriptable). 
+{% endcapture %}
+{% include thumbnail src='/images/pages/BigStitcherAutoLoader6a.png' title=title %}
 
 ## Loading/Re-saving option
 
@@ -107,7 +123,11 @@ If your raw data are stored as multiple stacks per file, a bug in BioFormats wil
 
 You will also be able to specify the **dataset save path**, i.e. the directory the XML dataset definition (and HDF5 file if you choose to re-save immediately) will be saved to.
 
-![Options for loading or re-saving the dataset.](BigStitcherAutoLoader4.png "Options for loading or re-saving the dataset.")
+
+{% capture title%}
+ Options for loading or re-saving the dataset. 
+{% endcapture %}
+{% include thumbnail src='/images/pages/BigStitcherAutoLoader4.png' title=title %}
 
 ### Options for re-saving as HDF5
 
@@ -129,7 +149,11 @@ If you chose to resave your dataset as HDF5 in the previous dialog, you will be 
 
 {% include info-box content='Be aware that re-saving a multi-terabyte dataset ""may take several hours"". However, since most processing steps of BigStitcher can be done on downsampled versions of the data, this will save you a lot of time down the road.' %}
 
-![Options for re-saving as multi-resolution HDF5.](BigStitcherAutoLoader5.png "Options for re-saving as multi-resolution HDF5.")
+
+{% capture title%}
+ Options for re-saving as multi-resolution HDF5. 
+{% endcapture %}
+{% include thumbnail src='/images/pages/BigStitcherAutoLoader5.png' title=title %}
 
 ## (Optional) Move Tiles to regular grid interactively
 
@@ -139,7 +163,11 @@ You will be presented with a dialog to specify the parameters of the grid, i.e. 
 
 As with the macro-scriptable version of this dialog, if there are multiple angles in the dataset, the dialog will be shown for each of them and if you specify more than one layer in z, the x and y pattern will be repeated for every layer.
 
-![Interactive grid alignment window.](BigStitcher_Arrange_Views004.png "Interactive grid alignment window.")
+
+{% capture title%}
+ Interactive grid alignment window. 
+{% endcapture %}
+{% include thumbnail src='/images/pages/BigStitcher Arrange Views004.png' title=title %}
 
 Go back to the [dataset definition overview](BigStitcher_Define_new_dataset "wikilink")
 

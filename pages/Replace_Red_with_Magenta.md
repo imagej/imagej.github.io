@@ -26,7 +26,7 @@ Example:
 
 |                                     |                                                             |
 | ----------------------------------- | ----------------------------------------------------------- |
-| ![Clown.jpg](Clown.jpg "Clown.jpg") | ![Clown-magenta.jpg](Clown-magenta.jpg "Clown-magenta.jpg") |
+| ![Clown.jpg](/images/pages/Clown.jpg "Clown.jpg") | ![Clown-magenta.jpg](/images/pages/Clown-magenta.jpg "Clown-magenta.jpg") |
 
 ## Replace Red with Magenta (system clipboard)
 

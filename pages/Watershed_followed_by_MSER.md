@@ -10,7 +10,7 @@ description: test description
 
 After making this choice of segmentation in the advanced mode the following panel appears
 
-![TrackAdvancedWater.png](TrackAdvancedWater.png "TrackAdvancedWater.png")
+<img src="/images/pages/TrackAdvancedWater.png" width="300"/>
 
 Here the user can again make a choice of increasing or decreasing the edge enhancement factor.
 
@@ -22,7 +22,7 @@ The MSER parameters that appear here as explained in [MSER parameters](MSER_para
 
 After making suitable parameter selection the user can then go over the tracking options where they can see some advanced parameter selections for the optimizer and assignment layer of the program. This panel is shown here
 
-![ModelChoice.png](ModelChoice.png "ModelChoice.png")
+<img src="/images/pages/ModelChoice.png" width="800"/>
 
 Read more about [sub-pixel localization parameter selection](sub-pixel_localization_parameter_selection "wikilink").
 

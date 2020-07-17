@@ -14,7 +14,7 @@ description: test description
 {% endcapture %}
 {% include info-box software='ImageJ ' name='Deep Zoom ' author=' [Aivar Grislis](http://loci.wisc.edu/people/aivar-grislis) ' source=source status='inactive ' category='[Import-Export](_Category_Import-Export "wikilink") ' %}== Introduction ==
 
-![Deep-zoom-1.png](Deep-zoom-1.png "Deep-zoom-1.png") ![Deep-zoom-2.png](Deep-zoom-2.png "Deep-zoom-2.png")
+![Deep-zoom-1.png](/images/pages/Deep-zoom-1.png "Deep-zoom-1.png") ![Deep-zoom-2.png](/images/pages/Deep-zoom-2.png "Deep-zoom-2.png")
 
 The Deep Zoom Plugin is useful for exporting a large image to the [Deep Zoom](wikipedia_Deep_Zoom "wikilink") format.  It builds an HTML and an XML file and an associated collection of folders for different zoom levels containing image tiles.  If these are created within or moved to a folder on a web server, the image can subsequently be viewed, zoomed, and panned over the 'Net in a browser window.  (It can also be viewed from the local filesystem in a browser window.)
 

@@ -20,7 +20,7 @@ An update site is available: http://sites.imagej.net/SciView/
 
 There have been a number of contributors to the project: {% include person content='Saalfeld' %}, {% include person content='Pietzsch' %}, {% include person content='royerloic' %}, and {% include person content='Haesleinhuepf' %}. Development has taken place at hackathons such as the first [SciView hackathon](2018-04-04_22-_SciView_hackathon "wikilink").
 
-![align=right](Sciview-gameoflife.gif "align=right")
+![align=right](/images/pages/Sciview-gameoflife.gif "align=right")
 
 ### Shortcuts
 

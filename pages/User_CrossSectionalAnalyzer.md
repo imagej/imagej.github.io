@@ -14,7 +14,7 @@ description: test description
 
 *Date*: 2020/05/14
 
-*Source*: ![Cross-sectional-analysis.zip](Cross-sectional-analysis.zip "Cross-sectional-analysis.zip")
+*Source*: ![Cross-sectional-analysis.zip](/images/pages/Cross-sectional-analysis.zip "Cross-sectional-analysis.zip")
 
 You can access the source files at [1](https://github.com/mattrothman/cross-sectional-analysis).
 
@@ -30,4 +30,4 @@ You can access the source files at [1](https://github.com/mattrothman/cross-sect
 
 *Description*: This plugin takes in an image of muscle fibers, outlines and numbers all of the fibers, and outputs a table of each fiber’s area as well as an RGB Color image of the numbered fiber outlines on a black background.
 
-![Input Image](Fibers.png "Input Image") ![Output Image](FiberOutlines.png "Output Image")
+![Input Image](/images/pages/Fibers.png "Input Image") ![Output Image](/images/pages/FiberOutlines.png "Output Image")

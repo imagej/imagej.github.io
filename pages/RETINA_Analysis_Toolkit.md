@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include info-box logo='![ 96px](Fiji-icon.png " 96px") ' software='ImageJ ' name='RETINA Analysis Toolkit ' author=' ["""Daniel E. Maidana"""](https://www.researchgate.net/profile/Daniel_Maidana2)  
+{% include info-box logo='![ 96px](/images/pages/Fiji-icon.png " 96px") ' software='ImageJ ' name='RETINA Analysis Toolkit ' author=' ["""Daniel E. Maidana"""](https://www.researchgate.net/profile/Daniel_Maidana2)  
 ["""Demetrios G. Vavvas"""](https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g) ' maintainer='"""Daniel E. Maidana"""  
 Angiogenesis Laboratory  
 Massachusetts Eye and Ear Infirmary  

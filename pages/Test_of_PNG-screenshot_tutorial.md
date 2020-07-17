@@ -12,6 +12,6 @@ description: test description
 
 This is a test tutorial.
 
-![Test\_of\_PNG-screenshot\_tutorial-1.png](Test_of_PNG-screenshot_tutorial-1.png "Test_of_PNG-screenshot_tutorial-1.png")
+<img src="/images/pages/Test of PNG-screenshot tutorial-1.png" width="750"/>
 
 [Category:Tutorials](Category_Tutorials "wikilink")

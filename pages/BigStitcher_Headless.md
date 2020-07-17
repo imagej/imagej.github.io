@@ -12,7 +12,7 @@ description: test description
 
 In addition to the main application available in the Fiji menu via {% include bc content='Plugins|BigStitcher|BigStitcher'%}, we offer macro-recordable versions of most processing steps under the {% include bc content='Plugins|BigStitcher|Batch Processing'%} menu.
 
-![BigStitcher\_Headless\_Menu.png](BigStitcher_Headless_Menu.png "BigStitcher_Headless_Menu.png")
+<img src="/images/pages/BigStitcher Headless Menu.png" width="600"/>
 
 The operation of the Batch versions of the processing steps is essentially the same as in the main application, though with a more rudimentary UI that just asks for parameters before performing the processing step.
 
@@ -28,7 +28,7 @@ In the following example, we performed the following macro-recordable steps of B
   - Perform pairwise shift calculation via Phase correlation, filter the links by thresholding on the correlation coefficient and globally optimize the alignment.
   - Fuse the Tiles and save the results as TIFF
 
-![BigStitcher\_Headless\_Recorder.png](BigStitcher_Headless_Recorder.png "BigStitcher_Headless_Recorder.png")
+<img src="/images/pages/BigStitcher Headless Recorder.png" width="800"/>
 
 Clicking **Generate** in the macro recorder will pop up the Fiji script editor with a new script containing the recorded commands. You can save or **Run** the created script.
 

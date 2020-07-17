@@ -180,7 +180,7 @@ Fuzzy c-means clustering \[Bezdek1984\] allows a data point to be assigned to mo
 
 Expectation-maximization (EM) clustering \[Dempster1977\] iteratively finds the maximum likelyhood estimation of a Gaussian distribution fit of the original N-dimensional distribution of pixel values. The EM iteration alternates between performing an expectation (E) step, which creates a function for the expectation of the log-likelihood evaluated using the current estimate for the parameters, and a maximization (M) step, which computes parameters maximizing the expected log-likelihood found on the E step.
 
-The plugin also allows clustering by using ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) (Environment for Developing KDD-Applications Supported by Index-Structures, developed by the ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) team http://elki.dbs.ifi.lmu.de/wiki/Team). ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) is an open source data mining software written in Java. In addition to multiple features, ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) offers various ways for clustering. A ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) wrapper for the clustering of images is included into the ["Image Clustering"](#Image_Clustering "wikilink") plugin. As soon as the respective elki.jar bundle is copied to the "plugins" directory of the current ImageJ version, image clustering with ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) is possible. The required specification parameters for the ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) clustering algorithm together with its parameters (details see ![here|30px](xFig6_3_3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) documentation) can be defined by the user.
+The plugin also allows clustering by using ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) (Environment for Developing KDD-Applications Supported by Index-Structures, developed by the ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) team http://elki.dbs.ifi.lmu.de/wiki/Team). ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) is an open source data mining software written in Java. In addition to multiple features, ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) offers various ways for clustering. A ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) wrapper for the clustering of images is included into the ["Image Clustering"](#Image_Clustering "wikilink") plugin. As soon as the respective elki.jar bundle is copied to the "plugins" directory of the current ImageJ version, image clustering with ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) is possible. The required specification parameters for the ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) clustering algorithm together with its parameters (details see ![here|30px](/images/pages/XFig6 3 3.jpg "here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) documentation) can be defined by the user.
 
 As an example, ESEM images of a natural cement analogue (Maqarin, Jordania) is provided in the figure to the upper right. A backscatter electron microscope (BSE) image (top left) and image maps acquired from energy-dispersive X-ray spectroscopy (EDX) at the same location forked into 14 different elements (see figure above) are used as the basis for clustering. Thus together with the BSE image, the clustering is achieved from a 15-dimensional vector space. In the figure below, some results from different clustering algorithms and parameter settings are displayed. The first row shows results from the k-means, the second one from the mean shift, and the third one from fuzzy c-means clustering. K-means clustering (1st row) requires the number of clusters as an input parameter. The results for 2 (left), 3, 5 and 16 (right) clusters are provided. Slightly different results provides mean shift clustering (2nd row) which requires the size of the seeking perimeter as input parameter. It is determined at 100 (left), 70, 60 and at 50 (right). Fuzzy c-means clustering (3rd row) requires the number of clusters and the fuzziness as input parameters. The results are displayed for 5 clusters at fuzziness 1.1 (left) and 4.0, for 16 clusters at fuzziness 2.0, as well as an image showing its fuzziness membership to the cluster with the highest respective ranking at each location (right).
 
@@ -490,7 +490,7 @@ return null;
 
 just calculates the overall mean value of image i0 within the ROI defined by i1 and displays it in a check box.
 
-![xFig6\_7\_16.jpg](xFig6_7_16.jpg "xFig6_7_16.jpg")  
+<img src="/images/pages/XFig6 7 16.jpg" width="200"/>  
   
 Moreover, it is even possible to create your own images without any input image:
 
@@ -506,7 +506,7 @@ return new Object[] { new int[] { mx, my }, out };
 
 creates an image containing a ramp (see image to the right), or
 
-![xFig6\_7\_17.jpg](xFig6_7_17.jpg "xFig6_7_17.jpg")
+<img src="/images/pages/XFig6 7 17.jpg" width="200"/>
 
 ``` java
  
@@ -522,7 +522,7 @@ for (int jj = 0; jj < my; jj++)
 return new Object[] { new int[] { mx, my }, out };
 ```
 
-![xFig6\_7\_18.jpg](xFig6_7_18.jpg "xFig6_7_18.jpg") creates an image containing a circle mask in the center (see image to the right). For more information about the syntax, please consult the help function of the plugin itself.
+![xFig6\_7\_18.jpg](/images/pages/XFig6 7 18.jpg "xFig6_7_18.jpg") creates an image containing a circle mask in the center (see image to the right). For more information about the syntax, please consult the help function of the plugin itself.
 
 As a final example, we show that it is also possible to create even more 'cute' images with that tool:
 
@@ -560,7 +560,7 @@ Particle analysis requires labeling of the previously determined particle mask w
 
 |                                                                                                                 |
 | --------------------------------------------------------------------------------------------------------------- |
-| ![Particle image (left) and its labeling (right)](xFig6_8.jpg "Particle image (left) and its labeling (right)") |
+| ![Particle image (left) and its labeling (right)](/images/pages/XFig6 8.jpg "Particle image (left) and its labeling (right)") |
 
 An example of labeling is given in the center and right images in the ["Disconnect Particles"](#Disconnect_Particles "wikilink") section, where the center image shows the particle mask before the disconnection procedure and before labeling. The disconnection procedure separates the single particles. After this step, the object mask is still binary and labeling is applied to colorize the particles in order to be able to distinguish them by their object values.
 
@@ -570,7 +570,7 @@ This plugin supports conventional as well as geometric 2D and 3D median filterin
 
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Color image containing multiple phases (top left) and different types of median filtering: conventional band-wise (top right), multidimensional geometrical (bottom left), and multidimensional geometrical by choosing the closest available vectors.](xFig6_09_1_PhasesMedianFiltering.png "Color image containing multiple phases (top left) and different types of median filtering: conventional band-wise (top right), multidimensional geometrical (bottom left), and multidimensional geometrical by choosing the closest available vectors.") |
+| ![Color image containing multiple phases (top left) and different types of median filtering: conventional band-wise (top right), multidimensional geometrical (bottom left), and multidimensional geometrical by choosing the closest available vectors.](/images/pages/XFig6 09 1 PhasesMedianFiltering.png "Color image containing multiple phases (top left) and different types of median filtering: conventional band-wise (top right), multidimensional geometrical (bottom left), and multidimensional geometrical by choosing the closest available vectors.") |
 
 The example color image (top right) shows multiple noisy phases. Conventional median filtering on each of the R,G,B bands separately yields the top right image. As can be perceived due to the RGB bands, new colors appear that are not present on the original image. Multidimensional geometrical filtering (in the RGB case, 3-dimensional) by using the Weiszfeld algorithm yields the bottom left image. When additionally confining to already existing color vectors only, the bottom right image results.
 

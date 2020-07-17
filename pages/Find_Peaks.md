@@ -26,7 +26,11 @@ A [BAR](BAR "wikilink") script (written in [BeanShell](Beanshell_Scripting "wiki
 
 ## Options
 
-![Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using <span style="border-bottom:1px dotted #ccc;">File▷ Import▷ Results</span>. Once [options](#options "wikilink") are specified, coordinates of retrieved peaks are logged to the table of a new plot window](FindPeaksSnapshot.png "Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using File▷ Import▷ Results. Once options are specified, coordinates of retrieved peaks are logged to the table of a new plot window")
+
+{% capture title%}
+ Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using <span style="border-bottom:1px dotted #ccc;">File▷ Import▷ Results</span>. Once [options](#options "wikilink") are specified, coordinates of retrieved peaks are logged to the table of a new plot window 
+{% endcapture %}
+{% include thumbnail src='/images/pages/FindPeaksSnapshot.png' title=title %}
 
   - Peak amplitude  
     The smallest depth (in Y-axis units) that a qualified valley must exceed. By default, it is set to one standard deviation of the data.

@@ -32,27 +32,27 @@ Open a maximum intensity projection of the multi-channel image to be analyzed, t
 
 ### General configuration
 
-![Configuration dialog](SproutAnalyzer_Configuration.png "Configuration dialog")
+![Configuration dialog](/images/pages/SproutAnalyzer Configuration.png "Configuration dialog")
 
 ### Bead detection
 
-![Bead detection](SproutAnalyzer_BeadDetection.png "Bead detection")
+![Bead detection](/images/pages/SproutAnalyzer BeadDetection.png "Bead detection")
 
 ### Sprout detection
 
-![Sprout detection](SproutAnalyzer_SproutDetection.png "Sprout detection")
+![Sprout detection](/images/pages/SproutAnalyzer SproutDetection.png "Sprout detection")
 
 ### Nucleus segmentation
 
-![Nucleus segmentation](SproutAnalyzer_NucleusSegmentation.png "Nucleus segmentation")
+![Nucleus segmentation](/images/pages/SproutAnalyzer NucleusSegmentation.png "Nucleus segmentation")
 
 ### Endothelial cell/Pericyte classification
 
-![Cell classification of ECs and pericytes](SproutAnalyzer_CellClassification.png "Cell classification of ECs and pericytes")
+![Cell classification of ECs and pericytes](/images/pages/SproutAnalyzer CellClassification.png "Cell classification of ECs and pericytes")
 
 ### Pericyte coverage
 
-![Pericyte coverage measurement](SproutAnalyzer_PericyteCoverage.png "Pericyte coverage measurement")
+![Pericyte coverage measurement](/images/pages/SproutAnalyzer PericyteCoverage.png "Pericyte coverage measurement")
 
 ## Publication
 

@@ -8,7 +8,7 @@ categories: Plugins,Segmentation,Machine Learning,Citable
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Trainable\_Segmentation' %}{| |style="vertical-align:top" |![Trainable Weka Segmentation pipeline overview.](TWS-pipeline.png "Trainable Weka Segmentation pipeline overview.") |}{% include toc%}
+{% include component-stats content=':sc.fiji:Trainable\_Segmentation' %}{| |style="vertical-align:top" |![Trainable Weka Segmentation pipeline overview.](/images/pages/TWS-pipeline.png "Trainable Weka Segmentation pipeline overview.") |}{% include toc%}
  **Trainable**: this plugin can be trained to learn from the user input and perform later the same task in unknown (test) data.
 
 **Weka**: it makes use of all the powerful tools and classifiers from the latest version of [Weka](http://www.cs.waikato.ac.nz/ml/weka/).
@@ -543,7 +543,11 @@ The **[API](http://javadoc.scijava.org/Fiji/?trainableSegmentation/package-summa
 
 ## Versatility
 
-![**Examples of application of Trainable Weka Segmentation**. From left to right and from top to bottom: original image of the [Berkeley Segmentation Dataset (Test Image \#42049 (color)](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300/html/dataset/images/color/42049.html)), probability of boundaries after training, semantic segmentation into 3 classes (sky, tree, eagle), and detected object using the probability maps of the semantic segmentation and some post-processing ([Level Sets](Level_Sets "wikilink") from maximum and bounding box selection).](TWS-application-examples.png "Examples of application of Trainable Weka Segmentation. From left to right and from top to bottom: original image of the Berkeley Segmentation Dataset (Test Image #42049 (color)), probability of boundaries after training, semantic segmentation into 3 classes (sky, tree, eagle), and detected object using the probability maps of the semantic segmentation and some post-processing (Level Sets from maximum and bounding box selection).") As a **pixel classifier**, the Trainable Weka Segmentation presents a wide range of applications such as [boundary detection](https://en.wikipedia.org/wiki/Edge_detection), semantic segmentation, or [object detection](https://en.wikipedia.org/wiki/Object_detection) and localization. All of them at the distance of a few clicks on the plugin GUI and sometimes in combination with other Fiji tools or plugins.
+
+{% capture title%}
+ **Examples of application of Trainable Weka Segmentation**. From left to right and from top to bottom: original image of the [Berkeley Segmentation Dataset (Test Image \#42049 (color)](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300/html/dataset/images/color/42049.html)), probability of boundaries after training, semantic segmentation into 3 classes (sky, tree, eagle), and detected object using the probability maps of the semantic segmentation and some post-processing ([Level Sets](Level_Sets "wikilink") from maximum and bounding box selection). 
+{% endcapture %}
+{% include thumbnail src='/images/pages/TWS-application-examples.png' title=title %} As a **pixel classifier**, the Trainable Weka Segmentation presents a wide range of applications such as [boundary detection](https://en.wikipedia.org/wiki/Edge_detection), semantic segmentation, or [object detection](https://en.wikipedia.org/wiki/Object_detection) and localization. All of them at the distance of a few clicks on the plugin GUI and sometimes in combination with other Fiji tools or plugins.
 
 To see **who is using Trainable Weka Segmentation** and its multiple applications, you can have a look at [these publications](https://scholar.google.es/scholar?q=%22Trainable+Weka+Segmentation%22+OR+%22Advanced+Weka+Segmentation%22&btnG=&hl=es&as_sdt=0%2C5).
 

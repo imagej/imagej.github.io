@@ -34,7 +34,7 @@ You can activate some advanced parameterization by selecting **Define anisotropy
 
 If the views you selected contain multiple *tiles* or *illumination directions*, you can choose to **group** the views. The same minimum and maximum intensity will be used for all views in a group (see explanation below). This will virtually fuse the views into one image for the interest point detection preview, which can be very time consuming if you are not using a multi-resolution ImgLoader (i.e. if you have not re-saved the data as HDF5).
 
-![BigStitcher\_Register\_1.png](BigStitcher_Register_1.png "BigStitcher_Register_1.png")
+![BigStitcher\_Register\_1.png](/images/pages/BigStitcher Register 1.png "BigStitcher_Register_1.png")
 
 ### Advanced Parameters
 
@@ -61,7 +61,7 @@ If you chose to **Limit amount of detections** in the previous dialog, you will 
 
 Finally, when doing Difference-of-Gaussian detection, you can choose whether to compute the necessary convolution operations on the CPU or a GPU under **"Compute on"**. GPU-accelerated detection requires a CUDA-capable NVIDA graphics card. You also have to compile the [required libraries](Multiview-Reconstruction#Download "wikilink") for your system first (see the corresponding GitHib pages for details). There is an *approximate* and an *accurate* version of the GPU-accelerated convolutions - the *approximate* version is slightly faster but might produce some artifacts around the edges of your images.
 
-![BigStitcher\_Register\_2.png](BigStitcher_Register_2.png "BigStitcher_Register_2.png")
+<img src="/images/pages/BigStitcher Register 2.png" width="600"/>
 
 ### Interactive detection preview
 
@@ -71,13 +71,13 @@ If you are using **grouped views**, you can specify how much percentage in z of 
 
 Furthermore, if you are using **grouped views**, you can choose to **Use min/max of this fusion for all groups** (see above for details about the meaning of the min/max values).
 
-![BigStitcher\_Register\_3.png](BigStitcher_Register_3.png "BigStitcher_Register_3.png")
+![BigStitcher\_Register\_3.png](/images/pages/BigStitcher Register 3.png "BigStitcher_Register_3.png")
 
 If you click OK, the (fused) image will appear in an ImageJ-window together with a window in which the values for the interest point detection parameters can be specified. You can change **Sigma 1** (Difference-of-Gaussian) or **Radius 1** (Difference-of-Mean) to specify the size of objects to look as well as the **Threshold** (intensity of objects to look for) and whether to look for minima, maxima or both. The results will be previewed in the ImageJ-window. You can interactively go through the Z-stack and preview the detected interest points. To start the detection process in all selected views, click "Done".
 
 {% include info-box content='The interest point detection can take a long time, especially if you do little or no downsampling. Have a look at the log widow for updates on the progress.' %}
 
-![BigStitcher\_Register\_4\_1.png](BigStitcher_Register_4_1.png "BigStitcher_Register_4_1.png")![BigStitcher\_Register\_4\_2.png](BigStitcher_Register_4_2.png "BigStitcher_Register_4_2.png")
+![BigStitcher\_Register\_4\_1.png](/images/pages/BigStitcher Register 4 1.png "BigStitcher_Register_4_1.png")![BigStitcher\_Register\_4\_2.png](/images/pages/BigStitcher Register 4 2.png "BigStitcher_Register_4_2.png")
 
 ### GPU-accelerated Difference-of-Gaussian
 
@@ -85,16 +85,16 @@ If you chose to use GPU-accelerated detection and compiled the library for separ
 
 First, you have to specify the **CUDA directory** in which to look for the compiled library (an .so file on Linux/Mac or a .dll on Windows).
 
-![BigStitcher\_interestpoint\_gpu-1.png](BigStitcher_interestpoint_gpu-1.png "BigStitcher_interestpoint_gpu-1.png")
+![BigStitcher\_interestpoint\_gpu-1.png](/images/pages/BigStitcher interestpoint gpu-1.png "BigStitcher_interestpoint_gpu-1.png")
 
 Next, you have to select the actual library file to use (there might be multiple, be sure to pick the library for **separable convolution**, not the *Fourier convolution* used in [Multi-View\_Deconvolution](Multi-View_Deconvolution "wikilink")).
 
-![BigStitcher\_interestpoint\_gpu-2.png](BigStitcher_interestpoint_gpu-2.png "BigStitcher_interestpoint_gpu-2.png")
+![BigStitcher\_interestpoint\_gpu-2.png](/images/pages/BigStitcher interestpoint gpu-2.png "BigStitcher_interestpoint_gpu-2.png")
 
 In the last dialog, you can choose which **Device** (GPU) to use (if you have multiple) and how many **Percent of GPU Memory to use**. We advice to stick to \~80 percent to avoid collisions with other processes that might be using the GPU.
 
 Click **OK** once more to start the interest point detection.
 
-![BigStitcher\_interestpoint\_gpu-3.png](BigStitcher_interestpoint_gpu-3.png "BigStitcher_interestpoint_gpu-3.png")
+![BigStitcher\_interestpoint\_gpu-3.png](/images/pages/BigStitcher interestpoint gpu-3.png "BigStitcher_interestpoint_gpu-3.png")
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")

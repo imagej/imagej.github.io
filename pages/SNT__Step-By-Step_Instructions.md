@@ -21,11 +21,11 @@ These instructions assume that you have read the [Overview](SNT__Overview "wikil
 
 ### I. Pick The Starting Point
 
-![Choosing a starting point](Snt-cropped-before-starting-2.png "Choosing a starting point") You may notice that, by default, the cursor [snaps](SNT__Overview#Auto-snapping "wikilink") to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {% include key content='S' %}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
+![Choosing a starting point](/images/pages/Snt-cropped-before-starting-2.png "Choosing a starting point") You may notice that, by default, the cursor [snaps](SNT__Overview#Auto-snapping "wikilink") to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {% include key content='S' %}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
 
 ### II. Pick A Subsequent Point
 
-![First point of a path selected](Snt-cropped-after-starting-2.png "First point of a path selected") ![A\* search animated progress](Snt-cropped-mid-tracing-2.png "A* search animated progress") A small circle should appear, highlighting the start of the path. Move through the stack to find a subsequent point further along the same structure to be traced (neuron, blood vessel, etc.), and click there.
+![First point of a path selected](/images/pages/Snt-cropped-after-starting-2.png "First point of a path selected") ![A\* search animated progress](/images/pages/Snt-cropped-mid-tracing-2.png "A* search animated progress") A small circle should appear, highlighting the start of the path. Move through the stack to find a subsequent point further along the same structure to be traced (neuron, blood vessel, etc.), and click there.
 
 If a path between the two points cannot be found immediately, you may see the animated progress of the search. You can scroll through the stack while such a search progresses: If it appears to not be making good progress, it's probably best to press the "Cancel/Esc" button (shortcut: {% include key content='C' %}/{% include key content='Esc' %}) and pick a point closer to the start point. {% include tip id='external-traces ' tip='Increase""Z"" in the ""Cursor Auto-snapping"" panel for automated Z-navigation on signal mouseover. ' %}
 
@@ -35,9 +35,9 @@ Once the search has reached the target point, the path is shown in cyan (to indi
 
 <div align="center">
 
-  - ![A\* search completed](Snt-cropped-confirmation-2.png "A* search completed")
-  - ![A confirmed segment](Snt-cropped-confirmed-2.png "A confirmed segment")
-  - ![A completed path](Snt-cropped-completed-path-2.png "A completed path")
+  - ![A\* search completed](/images/pages/Snt-cropped-confirmation-2.png "A* search completed")
+  - ![A confirmed segment](/images/pages/Snt-cropped-confirmed-2.png "A confirmed segment")
+  - ![A completed path](/images/pages/Snt-cropped-completed-path-2.png "A completed path")
 
 </div>
 
@@ -45,11 +45,11 @@ Once the search has reached the target point, the path is shown in cyan (to indi
 
 ### I. Select The Path To Branch Off
 
-To select the path you want to branch off from, you can either select it in the Path Manager, or press {% include key content='G' %} while the mouse pointer is near the path. When the path is first selected, it will be shown in the default green color. ![[Holding 'G'](SNT__Key_Shortcuts#Path_Handling "wikilink") (*Group paths around cursor*) will select the closest path to the mouse pointer](Snt-sb-selecting-by-G.gif "Holding 'G' (Group paths around cursor) will select the closest path to the mouse pointer")
+To select the path you want to branch off from, you can either select it in the Path Manager, or press {% include key content='G' %} while the mouse pointer is near the path. When the path is first selected, it will be shown in the default green color. ![[Holding 'G'](/images/pages/SNT  Key Shortcuts#Path Handling "wikilink") (*Group paths around cursor*) will select the closest path to the mouse pointer](Snt-sb-selecting-by-G.gif "Holding 'G' (Group paths around cursor) will select the closest path to the mouse pointer")
 
 ### II. Select The Fork Point
 
-![A newly created fork point](Snt-sb-started-branch-2.png "A newly created fork point") To force the start of the new path to be a branch of the selected path, hold down the {% include key content='Alt|Shift' %} keys while you move the mouse to find the branch point under the red cross-hairs, now decorated with a "Fork Point" annotation. With {% include key content='Alt|Shift' %} held down, click with the left mouse button. Finally, release the keys. Note that it is also possible to zoom into the branch point, right-click on the image and choose *Fork at Nearest Node* from the contextual menu.
+![A newly created fork point](/images/pages/Snt-sb-started-branch-2.png "A newly created fork point") To force the start of the new path to be a branch of the selected path, hold down the {% include key content='Alt|Shift' %} keys while you move the mouse to find the branch point under the red cross-hairs, now decorated with a "Fork Point" annotation. With {% include key content='Alt|Shift' %} held down, click with the left mouse button. Finally, release the keys. Note that it is also possible to zoom into the branch point, right-click on the image and choose *Fork at Nearest Node* from the contextual menu.
 
 ### III. Extend The Path
 
@@ -57,9 +57,9 @@ From this point on, you can carry on adding nodes to the branched path as [above
 
 <div align="center">
 
-  - ![1) Temporary path branching-off](Snt-sb-temporary-path-2.png "1) Temporary path branching-off")
-  - ![2) Temporary path confirmed](Snt-sb-confirmed-path-2.png "2) Temporary path confirmed")
-  - ![3) Branched (child) path completed](Snt-sb-completed-branch-2.png "3) Branched (child) path completed")
+  - ![1) Temporary path branching-off](/images/pages/Snt-sb-temporary-path-2.png "1) Temporary path branching-off")
+  - ![2) Temporary path confirmed](/images/pages/Snt-sb-confirmed-path-2.png "2) Temporary path confirmed")
+  - ![3) Branched (child) path completed](/images/pages/Snt-sb-completed-branch-2.png "3) Branched (child) path completed")
 
 </div>
 
@@ -115,13 +115,13 @@ It remains possible to trace in the legacy 3D Viewer. ![](SNT-3D-Dialog.png)
 
 ### I.Starting the Viewer
 
-To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see 3 parameters_ ![SNT-Image-Resampling-Factor.png](SNT-Image-Resampling-Factor.png "SNT-Image-Resampling-Factor.png")
+To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see 3 parameters_ ![SNT-Image-Resampling-Factor.png](/images/pages/SNT-Image-Resampling-Factor.png "SNT-Image-Resampling-Factor.png")
 
   - Select *New with image* from the *Viewer* drop-down menu (selecting *New without image* would only allow you to look at reconstructions without the underlying signal). Note that you can recycle existing viewers you may have open by choosing their window titles from the drop-down menu.
   - Select the preferred rendering style from the *Mode* drop-down menu.
   - Once you *Apply* the viewer choice, a prompt will appear asking you to choose the resampling factor for the image. Then, the viewer window will appear with the currently open image.
 
-![3D viewer showing OP\_1.tif](SNT-Legacy-3D-Viewer.png "3D viewer showing OP_1.tif")
+![3D viewer showing OP\_1.tif](/images/pages/SNT-Legacy-3D-Viewer.png "3D viewer showing OP_1.tif")
 
 ### II.Tracing and Navigation
 
@@ -130,7 +130,7 @@ To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Leg
   - **Translation** Hold {% include key content='Shift' %} and the scroll wheel while dragging the mouse.
   - **Adjusting zoom depth** Scroll the mouse wheel.
 
-Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {% include key content='Esc' %} key. See [Key Shortcuts](SNT__Key_Shortcuts#Legacy_3D_Viewer "wikilink") for the list of all supported shortcuts. ![Fiji-toolbar-wand-and-hand-2.png](Fiji-toolbar-wand-and-hand-2.png "Fiji-toolbar-wand-and-hand-2.png")
+Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {% include key content='Esc' %} key. See [Key Shortcuts](SNT__Key_Shortcuts#Legacy_3D_Viewer "wikilink") for the list of all supported shortcuts. ![Fiji-toolbar-wand-and-hand-2.png](/images/pages/Fiji-toolbar-wand-and-hand-2.png "Fiji-toolbar-wand-and-hand-2.png")
 
 # Filling
 
@@ -142,7 +142,7 @@ First, select the one or more paths that you want to fill out from in the Path M
 
 ![A few seconds after selecting "Fill Out..." with 1 path selected](Snt-initial-filling-2.png "A few seconds after selecting \"Fill Out...\" with 1 path selected")
 
-The filler continues to explore the image starting from the path until you click "Pause" or "Stop" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog. ![The filling-related part of the dialog.](Snt-filling-statistics-2.png "The filling-related part of the dialog.") The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". Two lines above, the "Current threshold distance:" shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The "Max. explored distance:" state under this line shows the maximum distance from the path that has been completely explored.
+The filler continues to explore the image starting from the path until you click "Pause" or "Stop" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog. ![The filling-related part of the dialog.](/images/pages/Snt-filling-statistics-2.png "The filling-related part of the dialog.") The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". Two lines above, the "Current threshold distance:" shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The "Max. explored distance:" state under this line shows the maximum distance from the path that has been completely explored.
 
 ### II.Adjusting the Fill Threshold
 
@@ -160,9 +160,9 @@ As you can see in the middle image, the threshold is set too far from the path, 
 
 <div align="center">
 
-  - ![Fill, opaque](Snt-zoomed-filling-2.png "Fill, opaque")
+  - ![Fill, opaque](/images/pages/Snt-zoomed-filling-2.png "Fill, opaque")
   - ![Fill, with "Transparent overlay" on](Snt-transparent-filling-2.png "Fill, with \"Transparent overlay\" on")
-  - ![Fill, refined](Snt-refined-filling-2.png "Fill, refined")
+  - ![Fill, refined](/images/pages/Snt-refined-filling-2.png "Fill, refined")
 
 </div>
 
@@ -193,12 +193,12 @@ To get the spatial calibration for your image, go to {% include bc content='Imag
 
 <div align="center">
 
-  - ![Step 1](filtered-image-load.png "Step 1")
-  - ![Step 2](filtered-image-toggle.png "Step 2")
+  - ![Step 1](/images/pages/Filtered-image-load.png "Step 1")
+  - ![Step 2](/images/pages/Filtered-image-toggle.png "Step 2")
 
 </div>
 
-To display the image in a separate window, from the SNT dialog use {% include bc content='Show Cached Image'%} from the *gear* menu or {% include bc content='View | Show Cached ""Secondary Image""'%}. ![Secondary Image MIP](display-filtered-image.png "Secondary Image MIP")
+To display the image in a separate window, from the SNT dialog use {% include bc content='Show Cached Image'%} from the *gear* menu or {% include bc content='View | Show Cached ""Secondary Image""'%}. ![Secondary Image MIP](/images/pages/Display-filtered-image.png "Secondary Image MIP")
 
 #### Multiple Images
 
@@ -346,41 +346,29 @@ This section describes methods to increase the accuracy of node placement.
 </tr>
 <tr class="even">
 <td><p>Find the approximate location of your start point by moving your mouse in the XY window, holding down {% include key content='Shift' %} to synchronize the view in the other panes. At this point, you should enable cursor <a href="SNT:_Overview#Cursor_Auto-snapping" title="wikilink">auto-snapping</a> in the <a href="SNT:_Overview#Main_Tab" title="wikilink">Main tab</a> using suitable parameters for your image.</p></td>
-<td><figure>
-<img src="/images/pages/SNT-Accurate-Point-Placement-Walkthrough-Updated-1.png" title="SNT-Accurate-Point-Placement-Walkthrough-Updated-1.png" alt="SNT-Accurate-Point-Placement-Walkthrough-Updated-1.png" width="350" /><figcaption>SNT-Accurate-Point-Placement-Walkthrough-Updated-1.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/SNT-Accurate-Point-Placement-Walkthrough-Updated-1.png" width="350"/></p></td>
 </tr>
 <tr class="odd">
 <td><p>When you press {% include key content='+' %} to zoom in, all the panes will zoom in on the point that the crosshair is over, so each time you press {% include key content='+' %}, make sure you move your mouse pointer so that it's still over the structure of interest. You may want to adjust in the <a href="SNT:_Overview#Views" title="wikilink">Views</a> widget (<a href="SNT:_Overview#Options_Tab" title="wikilink">Options tab</a>) whether all views should zoom synchronously.<br />
 At this point, you should adjust a suitable <a href="SNT:_Overview#Cursor_Auto-snapping" title="wikilink">snapping neighborhood</a> both in 2D (XY) and 3D (Z). Note that when Z-snapping is enabled, all views become synchronized,</p></td>
-<td><figure>
-<img src="/images/pages/SNT-Accurate-Point-Placement-Walkthrough-Updated-2.png" title="SNT-Accurate-Point-Placement-Walkthrough-Updated-2.png" alt="SNT-Accurate-Point-Placement-Walkthrough-Updated-2.png" width="350" /><figcaption>SNT-Accurate-Point-Placement-Walkthrough-Updated-2.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/SNT-Accurate-Point-Placement-Walkthrough-Updated-2.png" width="350"/></p></td>
 </tr>
 <tr class="even">
 <td><p>Locate the center of the structure to be clicked on. If <a href="SNT:_Overview#Cursor_Auto-snapping" title="wikilink">cursor auto-snapping</a> is enabled, simply mouse over the structure, otherwise, try moving the mouse and scroll wheel in each of the panes (holding down {% include key content='Shift' %} so synchronize the views in all three panes). Note that you can toggle the cursor auto-snapping feature at will, by pressing the <a href="SNT:_Key_Shortcuts" title="wikilink">shortcut</a> {% include key content='S' %}. Also, note that you can "click" on the <a href="SNT:_Key_Shortcuts#Tracing" title="wikilink">brightest voxel</a> of a voxel column, by pressing {% include key content='M' %}.</p>
 <p>When you're happy with the point under the crosshairs, left-click to start the path:</p></td>
-<td><figure>
-<img src="/images/pages/SNT-Accurate-Point-Placement-Walkthrough-Updated-3.png" title="SNT-Accurate-Point-Placement-Walkthrough-Updated-3.png" alt="SNT-Accurate-Point-Placement-Walkthrough-Updated-3.png" width="350" /><figcaption>SNT-Accurate-Point-Placement-Walkthrough-Updated-3.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/SNT-Accurate-Point-Placement-Walkthrough-Updated-3.png" width="350"/></p></td>
 </tr>
 <tr class="odd">
 <td><p>Zoom out again with the {% include key content='-' %} key, and similarly zoom in on the next point you want to be on your path to place it precisely:</p></td>
-<td><figure>
-<img src="/images/pages/SNT-Accurate-Point-Placement-Walkthrough-Updated-4.png" title="SNT-Accurate-Point-Placement-Walkthrough-Updated-4.png" alt="SNT-Accurate-Point-Placement-Walkthrough-Updated-4.png" width="350" /><figcaption>SNT-Accurate-Point-Placement-Walkthrough-Updated-4.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/SNT-Accurate-Point-Placement-Walkthrough-Updated-4.png" width="350"/></p></td>
 </tr>
 <tr class="even">
 <td><p>The path along the neuron may not follow the center line perfectly:</p></td>
-<td><figure>
-<img src="/images/pages/SNT-Accurate-Point-Placement-Walkthrough-Updated-5.png" title="SNT-Accurate-Point-Placement-Walkthrough-Updated-5.png" alt="SNT-Accurate-Point-Placement-Walkthrough-Updated-5.png" width="350" /><figcaption>SNT-Accurate-Point-Placement-Walkthrough-Updated-5.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/SNT-Accurate-Point-Placement-Walkthrough-Updated-5.png" width="350"/></p></td>
 </tr>
 <tr class="odd">
 <td><p>... but you can later improve that with the {% include bc content='Refine/Fit|Fit Path...'%} option in the <a href="SNT:_Overview#Path_Manager" title="wikilink">Path Manager</a>, which tries to align the path to the midline of the structure to sub-voxel accuracy:</p></td>
-<td><figure>
-<img src="/images/pages/SNT-Accurate-Point-Placement-Walkthrough-Updated-6.png" title="SNT-Accurate-Point-Placement-Walkthrough-Updated-6.png" alt="SNT-Accurate-Point-Placement-Walkthrough-Updated-6.png" width="350" /><figcaption>SNT-Accurate-Point-Placement-Walkthrough-Updated-6.png</figcaption>
-</figure></td>
+<td><p><img src="/images/pages/SNT-Accurate-Point-Placement-Walkthrough-Updated-6.png" width="350"/></p></td>
 </tr>
 <tr class="even">
 <td></td>

@@ -32,7 +32,7 @@ Purpose: The "Extended Particle Analyzer" is based on the ImageJ "Analyze Partic
 
 Example: If you want to extract/analyze only particles with a certain Feret's Angle or exclude elongated structures using the aspect ratio (AR) or circilarity you can specify so in the initial dialog box.
 
-![ExtendedParticleAnalyzer\_v2.png](ExtendedParticleAnalyzer_v2.png "ExtendedParticleAnalyzer_v2.png")
+![ExtendedParticleAnalyzer\_v2.png](/images/pages/ExtendedParticleAnalyzer v2.png "ExtendedParticleAnalyzer_v2.png")
 
 How to: Key in minimal and maximal exclusion values connected with a hyphen. You can use integers as well as numbers containing decimal places. "Redirect" redirects the analysis to a grayscale image which enables to analyze skewness, kurtosis as well as the new measure coefficient of variance (cov). The option "Keep borders (correction)" eliminates particles from 2 edges and keeps particles touching the two borders of choice. This corrects the particle count for edge touching particles.
 
@@ -234,7 +234,7 @@ Purpose: This plugin enables you to test a certain range of radii of a specified
 
 How to: Choose a filter method from the drop down menu, key in a starting and an end radius. The image will be filtered in individual integer steps between the start and stop radius and presented in an image stack containing all the filtered images. The filter can also be applied to only a ROI. This is recommended for filters which are cost intensive, like the "Gaussian Weighted Median". The parameter setting is only needed for the "Bilateral Filter" (range radius) , "Mean Shift Filter" (Color Distance) and the "Linear Kuwahara" (line length).
 
-![Filter\_Check.png](Filter_Check.png "Filter_Check.png")
+![Filter\_Check.png](/images/pages/Filter Check.png "Filter_Check.png")
 
 Form: plugin
 
@@ -272,7 +272,7 @@ How to: The user can choose between Gaussian, Median and Mean convolution filter
 
 Method: The convoluted images are directly subtracted from the original with exception of the median filtered one. The latter additionally receives a grayscale dilation by application of a maximum filter with the factor (1.5\*(radius/10)). This should reduce artifacts around object borders.
 
-![Convoluted\_Background\_Subtraction.png](Convoluted_Background_Subtraction.png "Convoluted_Background_Subtraction.png")
+![Convoluted\_Background\_Subtraction.png](/images/pages/Convoluted Background Subtraction.png "Convoluted_Background_Subtraction.png")
 
 Distribution: plugin, recordable
 
@@ -320,7 +320,7 @@ The *Shape* option enables a basic pre-selection of pixels from the kernel neigh
 
 In the image below the upper pannels show the original photograph and a version with artificial shot noise added. The lower pannels depict the noisy image after a median filter (radius=2) or after the Adaptive Filter (radius = 2 and tolerance set to 0.2) using a circle-like kernel.
 
-![AdaptiveFilter.png](AdaptiveFilter.png "AdaptiveFilter.png")
+![AdaptiveFilter.png](/images/pages/AdaptiveFilter.png "AdaptiveFilter.png")
 
 Output: The filter will be applied directly on the input image. It is undoable (by pressing \[z\]).
 

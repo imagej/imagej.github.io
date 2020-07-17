@@ -50,7 +50,7 @@ The page is still under construction. Usage instructions will be added.
 
 The plugin is for the analysis of a stack of time lapse microscopic images of a bending crystal. User is instructed to select specific parts on the reference crystal image which includes: the point on the tip of free crystal's end, the point on the attached end of the crystal, the point in the middle of the crystal and a rectangle around a stable part of the image (a part supposed to be immobile during the whole process, a tip of holder or capillary to which the crystal is attached, for one).
 
-![400pix|left|Crystal shape tracking in process](photobend_processing.jpg "400pix|left|Crystal shape tracking in process") ![photobend\_deformation\_plot.jpg](photobend_deformation_plot.jpg "photobend_deformation_plot.jpg") ![photobend\_curvature\_plot.jpg](photobend_curvature_plot.jpg "photobend_curvature_plot.jpg")
+![400pix|left|Crystal shape tracking in process](/images/pages/Photobend processing.jpg "400pix|left|Crystal shape tracking in process") ![photobend\_deformation\_plot.jpg](/images/pages/Photobend deformation plot.jpg "photobend_deformation_plot.jpg") ![photobend\_curvature\_plot.jpg](/images/pages/Photobend curvature plot.jpg "photobend_curvature_plot.jpg")
 
 The plugin code uses the selected regions of the image as reference templates to find them in the series of the time lapse images. Automatic picture stabilization is provided by detection of the stable part displacement. Then the free crystal's end and its middle part are detected in new positions of the image (accounting for the displacement and rotation) with the template matching technique. The coordinates of the three points (two ends and the middle part) are used to calculate the curvature and deformation (elongation or shortening) of the crystal.
 
@@ -66,7 +66,7 @@ The plugin's goal is to automate the registering and analysis for the so-called 
 
 The plugin was developed to analyze weak photobending of thick crystals. To utilize the technique tiny mirror is attached to the free crystal's end. The bending then causes tilt of the mirror and corresponding deflection of the laser beam.
 
-![400pix|left|Laser spot tracking in process](LaserSpotTrack.jpg "400pix|left|Laser spot tracking in process")
+![400pix|left|Laser spot tracking in process](/images/pages/LaserSpotTrack.jpg "400pix|left|Laser spot tracking in process")
 
 The movement of the laser spot is registered with a camera to give the series of the time-lapse photographs (or a movie which should be transformed to the series for the analysis). The laser spot should be registered on the screen with the template attached which contains 4 marks placed in corners of a square. The usage of the template provides automatic image stabilization and correction of perspective distortion (note that only linear perspective is corrected; no spherical distortion can be corrected by the plugin, so usage of wide-angle lenses is not recommeded). The template should be made prior to the registering by any appropriate technique. For example by printing a prepared image like the one from this [archive](Media_LaserDeflectionMeasurementTemplate.zip "wikilink"). The archive contains various vector formats of the image having measurement marks placed in the corners of the square of 100 mm side. Depending on the printer model the scale of the image may be distorted differently in vertical or horizontal direction, so the final scale should be checked and corrected if necessary (for example, by editing one of the vector file suggested).
 

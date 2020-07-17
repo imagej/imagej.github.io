@@ -38,13 +38,13 @@ It depends on the [IJ-Blob](https://imagej.net/IJ_Blob) library, the [Vecmath](h
 
 If you start the plugin you can choose between two main uses, you either want to split clumps of an image or want to train a SVM to optimize parameters \(c_1\) and \(c_2\). To train the SVM you need to have input data already.
 
-![Eingabemaske2.png](Eingabemaske2.png "Eingabemaske2.png")
+![Eingabemaske2.png](/images/pages/Eingabemaske2.png "Eingabemaske2.png")
 
 ### Detection Types
 
 The plugin supports different types of split lines, concavity region detection and concavity pixel detection. If you want to split a clump you have to choose, what kind of detection you want to use.
 
-![PluginScreenshot1.png](PluginScreenshot1.png "PluginScreenshot1.png")
+![PluginScreenshot1.png](/images/pages/PluginScreenshot1.png "PluginScreenshot1.png")
 
 #### Split Lines
 
@@ -108,13 +108,13 @@ Firstly you have to generate an image with optimal split lines manually. This ma
 
 Now you have to look for a good cost- and epsilon parameter of the SVM. This could happen by a grid search for example.
 
-![SVMParameter.png](SVMParameter.png "SVMParameter.png")
+![SVMParameter.png](/images/pages/SVMParameter.png "SVMParameter.png")
 
 After this the SVM starts training. This could take some time. The duration depends on complexity and size of the training data.
 
 Once the SVM was trained, there are two windows, showing the results. In the first window you can see a graphical representation of the SVM model. The blue points represent the split line class, the red points represent the no split line class data and the green line represents the dividing line of the SVM.
 
-![SVMModellGraphic.png](SVMModellGraphic.png "SVMModellGraphic.png")
+![SVMModellGraphic.png](/images/pages/SVMModellGraphic.png "SVMModellGraphic.png")
 
 The second window shows the parameters of this model. The optimum for \(c_1\) and \(c_2\) parameters, are given together with the number of support vectors and a confidencial matrix to evaluate the model.
 
@@ -124,7 +124,7 @@ The second window shows the parameters of this model. The optimum for \(c_1\) an
 
 As already mentioned the main algorithm follows the publication of *Kumar et al.* The presented algorithm to specify a valid split line depends on lots of parameters, as you can see below. Not every parameter is needed for every split line type and concavity region detection
 
-![PluginScreenshot3.png](PluginScreenshot3.png "PluginScreenshot3.png")
+![PluginScreenshot3.png](/images/pages/PluginScreenshot3.png "PluginScreenshot3.png")
 
 **background color:** Choose the color of your background. Choose white, if the objects are darker than the background, and black if the objects are lighter than the background.
 

@@ -145,23 +145,29 @@ def youtube_match(match):
 
 
 def file_match(match):
-    res = re.sub(r'^\[\[Image:([^|]*)\|[ ]*thumb[ ]*\|(.*)\]\]$', fix_thumbnail_match, match[0])
-    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\]\]$',
+    res = re.sub(r'^\[\[(?:Image|File)[ ]*:([^|]*)\|[ ]*thumb[ ]*\|(.*)\]\]$', fix_thumbnail_match, match[0])
+    res = re.sub(r'^\[\[(?:Image|File)[ ]*\:([^ |]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\]\]$',
                          fix_src_width_link_match, res)
-    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)\|[ ]*([^x ][^ |]*)[ ]*[ ]*\]\]$',
+    res = re.sub(r'^\[\[(?:Image|File)[ ]*\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)\|[ ]*([^x ][^ |]*)[ ]*[ ]*\]\]$',
                          fix_src_link_width_match, res)
-    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)\|[ ]*(x[^ |]*)[ ]*[ ]*\]\]$',
+    res = re.sub(r'^\[\[(?:Image|File)[ ]*\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)\|[ ]*(x[^ |]*)[ ]*[ ]*\]\]$',
                          fix_src_link_height_match, res)
-    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|[ ]*x([^ |]*)[ ]*\|[ ]*link=([^\]]*)\]\]$',
+    res = re.sub(r'^\[\[(?:Image|File)[ ]*\:([^ |]*)[ ]*\|[ ]*x([^ |]*)[ ]*\|[ ]*link=([^\]]*)\]\]$',
                          fix_src_height_link_match, res)
 
-    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|[ ]*thumb[ ]*\|[ ]*([^|]*)[ ]*\]\]$',
+    res = re.sub(r'^\[\[(?:Image|File)[ ]*\:([^ |]*)[ ]*\|[ ]*thumb[ ]*\|[ ]*([^|]*)[ ]*\]\]$',
                          fix_thumbnail_match, res)
 
-    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|([\d]*)px[ ]*\]\]$',
+    res = re.sub(r'^\[\[(?:Image|File)[ ]*\:([^ |]*)[ ]*\|([\d]*)px[ ]*\]\]$',
                          fix_src_width_match, res)
 
-    res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|\|([ ]*[^\]]*[ ]*)\]\]$',
+    res = re.sub(r'^\[\[(?:Image|File)[ ]*\:[ ]*([^ |]*)[ ]*\|(?:right\||left\||center\|)?([\d]*)px[ ]*\]\]$',
+                         fix_src_width_match, res)
+
+    res = re.sub(r'^\[\[(?:Image|File)[ ]*\:[ ]*([^ |]*)[ ]*\|(?:right\||left\||center\|)?x([\d]*)px[ ]*\]\]$',
+                         fix_src_height_match, res)
+
+    res = re.sub(r'^\[\[(?:Image|File)[ ]*\:([^ |]*)[ ]*\|\|([ ]*[^\]]*[ ]*)\]\]$',
                          fix_simple_image_match, res)
 
     res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\]\]$',
@@ -211,6 +217,10 @@ def fix_src_width_match(match):
     return fix_src_width(match.group(1), match.group(2))
 
 
+def fix_src_height_match(match):
+    return fix_src_height(match.group(1), match.group(2))
+
+
 def fix_src_width_link_match(match):
     return fix_src_link_width(match.group(1), match.group(3), match.group(2))
 
@@ -235,7 +245,7 @@ def fix_src_link_width(src, link, width):
     return '<a href="' + link + '"><img src="' + fix_image_name(src) + '" width="' + width + '"/></a>'
 
 
-def fix_src_height(src, link, height):
+def fix_src_height(src, height):
     return '<img src="' + fix_image_name(src) + '" height="' + height + '"/>'
 
 
@@ -470,7 +480,7 @@ def convert(path_in, path_out, layout, title):
         content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
         content_tmp = re.sub(r'(\[[^\]]*\]\()((?!http)[^\"]*)(\"[^\"]*\"\))', fix_link_match, content_tmp)
         content_tmp = re.sub(r'<img src=\"(?!http)(?!/images/pages/)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
-        content_tmp = re.sub(r'(\!\[[^\]]*\]\()((?!/images/pages/)[^\"\)]*)([ \n]\"[^\"]*\)[ ]*\))', fix_md_image, content_tmp)
+        content_tmp = re.sub(r'(\!\[[^\]]*\]\()((?!\/images\/pages\/)[^\"\)]*)([ \n]*\"[^\"]*\"[ ]*\))', fix_md_image, content_tmp)
 
         # pattern = re.compile(include_regex)
         # for match in re.findall(pattern, content_tmp):

@@ -38,7 +38,7 @@ You can now start the ParticleSizer via *Plugins -\> NanoDefine -\> ParticleSize
 
 # Settings
 
-**Segmentation:**![Psizer\_gui.png](Psizer_gui.png "Psizer_gui.png")
+**Segmentation:**![Psizer\_gui.png](/images/pages/Psizer gui.png "Psizer_gui.png")
 
   - Circular window radius: This is a parameter of the local thresholding technique. The ParticleSizer does not use a global threshold to binarize the image. Instead it uses a local threshold which is estimated for a specific circular region with the configured radius.
   - Rolling ball radius: The background is removed by rolling a ball with this radius over the surface (intensity interpreded as hight) of the image. It should be at least as large as the largest object in image which does not belongs to the background.
@@ -99,17 +99,17 @@ The ParticleSizer supports the [NanoDefiner e-tool](https://labs.inf.fh-dortmund
 
 ## Gold 8 nm, Settings: Default
 
-![Gold\_nooverlay.png](Gold_nooverlay.png "Gold_nooverlay.png") ![Gold\_overlay.png](Gold_overlay.png "Gold_overlay.png") ![Hist\_gold\_normal.png](Hist_gold_normal.png "Hist_gold_normal.png")
+![Gold\_nooverlay.png](/images/pages/Gold nooverlay.png "Gold_nooverlay.png") ![Gold\_overlay.png](/images/pages/Gold overlay.png "Gold_overlay.png") ![Hist\_gold\_normal.png](/images/pages/Hist gold normal.png "Hist_gold_normal.png")
 
 ## Gold 8 nm, Settings: +Ellipse fitting mode
 
-![Gold\_nooverlay.png](Gold_nooverlay.png "Gold_nooverlay.png") ![Gold\_overlay\_ellipsefitting.png](Gold_overlay_ellipsefitting.png "Gold_overlay_ellipsefitting.png") ![Gold\_overlay\_ellipsefitting\_size.png](Gold_overlay_ellipsefitting_size.png "Gold_overlay_ellipsefitting_size.png")
+![Gold\_nooverlay.png](/images/pages/Gold nooverlay.png "Gold_nooverlay.png") ![Gold\_overlay\_ellipsefitting.png](/images/pages/Gold overlay ellipsefitting.png "Gold_overlay_ellipsefitting.png") ![Gold\_overlay\_ellipsefitting\_size.png](/images/pages/Gold overlay ellipsefitting size.png "Gold_overlay_ellipsefitting_size.png")
 
-\== Gold 10 nm, Settings: +Min. OTB difference=30 == ![10nm\_gold\_nooverlay.png](10nm_gold_nooverlay.png "10nm_gold_nooverlay.png") ![10nm\_gold\_overlay.png](10nm_gold_overlay.png "10nm_gold_overlay.png") ![10nm\_gold\_overlay\_size.png](10nm_gold_overlay_size.png "10nm_gold_overlay_size.png")
+\== Gold 10 nm, Settings: +Min. OTB difference=30 == ![10nm\_gold\_nooverlay.png](/images/pages/10nm gold nooverlay.png "10nm_gold_nooverlay.png") ![10nm\_gold\_overlay.png](/images/pages/10nm gold overlay.png "10nm_gold_overlay.png") ![10nm\_gold\_overlay\_size.png](/images/pages/10nm gold overlay size.png "10nm_gold_overlay_size.png")
 
 ## Kaolin, Settings: +Single particle mode
 
-![Kaolin\_ohne\_overlay.png](Kaolin_ohne_overlay.png "Kaolin_ohne_overlay.png") <img src="/images/pages/Kaolin overlay.png" width="300"/> ![Kaolin\_size\_distr.png](Kaolin_size_distr.png "Kaolin_size_distr.png")
+![Kaolin\_ohne\_overlay.png](/images/pages/Kaolin ohne overlay.png "Kaolin_ohne_overlay.png") <img src="/images/pages/Kaolin overlay.png" width="300"/> ![Kaolin\_size\_distr.png](/images/pages/Kaolin size distr.png "Kaolin_size_distr.png")
 
 # How to cite
 

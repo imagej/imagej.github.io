@@ -30,7 +30,7 @@ Because ImgLib2 authors wrote nice static utilities, our work is relatively easy
 >> imshow(X,[]) % [[MATLAB]] display
 ```
 
-![MatlabToImglib2\_clown.png](MatlabToImglib2_clown.png "MatlabToImglib2_clown.png")
+![MatlabToImglib2\_clown.png](/images/pages/MatlabToImglib2 clown.png "MatlabToImglib2_clown.png")
 
 We note that the ImageJ display is rotated and flipped regarding the [MATLAB](MATLAB "wikilink") image. This is because [MATLAB](MATLAB "wikilink") arrays are expected to be arranged along columns, whereas Java arrays are arranged along lines. We would need to permute dimension 0 and dimension 1 to display the data in ImageJ as expected in [MATLAB](MATLAB "wikilink").
 
@@ -89,7 +89,7 @@ This just builds an acceptable [MATLAB](MATLAB "wikilink") uint8 image and a Uns
 >> imshow(J', [])
 ```
 
-![MatlabToImglib2\_int8.png](MatlabToImglib2_int8.png "MatlabToImglib2_int8.png")
+![MatlabToImglib2\_int8.png](/images/pages/MatlabToImglib2 int8.png "MatlabToImglib2_int8.png")
 
 What happened here? The gray levels are all messed up. Checking the class of the returned array gives a clue:
 

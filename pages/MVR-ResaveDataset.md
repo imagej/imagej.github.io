@@ -13,9 +13,9 @@ Resaving a dataset is a simple two step process:
   - select existing dataset
   - define resaving parameters
 
-![MVR\_resave1.png](MVR_resave1.png "MVR_resave1.png")
+![MVR\_resave1.png](/images/pages/MVR resave1.png "MVR_resave1.png")
 
-![MVR\_resave2.png](MVR_resave2.png "MVR_resave2.png")
+![MVR\_resave2.png](/images/pages/MVR resave2.png "MVR_resave2.png")
 
 Some log output shows the resaving process.
 
@@ -32,4 +32,4 @@ Some log output shows the resaving process.
 
 Finally you can use [BigDataViewer](BigDataViewer "wikilink") to view your data set.
 
-![MVR\_resave3.png](MVR_resave3.png "MVR_resave3.png")
+![MVR\_resave3.png](/images/pages/MVR resave3.png "MVR_resave3.png")

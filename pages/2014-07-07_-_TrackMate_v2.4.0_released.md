@@ -14,7 +14,7 @@ We just released a new minor version of [TrackMate](TrackMate "wikilink"), that 
 
   - TrackScheme now has an outline panel, useful to navigate in large models.
 
-![TrackMate\_TrackSchemeOutline.png](TrackMate_TrackSchemeOutline.png "TrackMate_TrackSchemeOutline.png")
+![TrackMate\_TrackSchemeOutline.png](/images/pages/TrackMate TrackSchemeOutline.png "TrackMate_TrackSchemeOutline.png")
 
   - TrackScheme has a better layout for tracks that have merge and split events.
 
@@ -26,7 +26,7 @@ We just released a new minor version of [TrackMate](TrackMate "wikilink"), that 
 
   - TrackMate has new logos and icons, made by Agnieszka Kawska @ [IlluScientia](http://www.illuscientia.com/).
 
-![TrackMate-Logo85x50-color-300p.png](TrackMate-Logo85x50-color-300p.png "TrackMate-Logo85x50-color-300p.png")
+![TrackMate-Logo85x50-color-300p.png](/images/pages/TrackMate-Logo85x50-color-300p.png "TrackMate-Logo85x50-color-300p.png")
 
 ## Bugfixes
 

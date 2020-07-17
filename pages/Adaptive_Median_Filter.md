@@ -26,7 +26,7 @@ This plugin ***Adaptive Median Filter*** (AMF) will handle this type of problems
 
 1\. Add the [Adaptive\_Median\_Filter-0.1.0.jar](https://github.com/WeisongZhao/AdaptiveMedian.imagej/releases/download/v0.1.0/Adaptive_Median_Filter-0.1.0.jar) to your imageJ plugin folder as usual and it will show up in ***Process -\> Adaptive median filter***:
 
-`                                 `![`AMF_plugin.png`](AMF_plugin.png "AMF_plugin.png")
+`                                 `![`AMF_plugin.png`](/images/pages/AMF plugin.png "AMF_plugin.png")
 
 The window and weight to filter the pulse pixels. Radius should be odd **3, 5 or 7**. Threshold should be **2\~20**.
 

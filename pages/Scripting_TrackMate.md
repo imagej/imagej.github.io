@@ -482,7 +482,7 @@ This script just shows you how to use this construct to build and populate a mod
 
 Spot quality and link cost are typically useful to quantify automatic spot detection and linking. We typically use negative values for these two numbers when doing manual edits.
 
-The script below does this: ![TrackMate\_AnimatedName.gif](TrackMate_AnimatedName.gif "TrackMate_AnimatedName.gif")
+The script below does this: ![TrackMate\_AnimatedName.gif](/images/pages/TrackMate AnimatedName.gif "TrackMate_AnimatedName.gif")
 
 ``` python
 import ij.gui.NewImage as NewImage

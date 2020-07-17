@@ -30,7 +30,7 @@ description: test description
 
 <div style="overflow: hidden">
 
-<tabs> <tab name="Windows"> ![ x32px](Win.png " x32px") **Windows**
+<tabs> <tab name="Windows"> ![ x32px](/images/pages/Win.png " x32px") **Windows**
 
 **Avoid permissions issues.** We recommend installing Eclipse *outside* of the `Program Files` directory. E.g.: **`C:\Users\frood\Programs\eclipse`**, where **`C:\Users\frood`** is your user directory.
 
@@ -46,9 +46,9 @@ Now update Eclipse's JRE to be JDK-aware:
   - Click Search..., navigate to your JDK installation folder (e.g., **`C:\Program Files\Java\jdk1.8.0_11`**) and click OK
   - Check the box next to the JRE that appears and click OK
 
-</tab> <tab name="OS X"> ![ x32px](Osx.png " x32px") **OS X**
+</tab> <tab name="OS X"> ![ x32px](/images/pages/Osx.png " x32px") **OS X**
 
-**Understand Java 6 vs. Java 8.** Eclipse should work on OS X with no further configuration. However, we recommend reading the [OS X section of the FAQ](FAQ#Mac_OS_X "wikilink"), as there are several Java-related issues on OS X. </tab> <tab name="Linux"> ![ x32px](Tux.png " x32px") **Linux**
+**Understand Java 6 vs. Java 8.** Eclipse should work on OS X with no further configuration. However, we recommend reading the [OS X section of the FAQ](FAQ#Mac_OS_X "wikilink"), as there are several Java-related issues on OS X. </tab> <tab name="Linux"> ![ x32px](/images/pages/Tux.png " x32px") **Linux**
 
 **Avoid permissions issues.** We recommend installing to `$HOME/eclipse`.
 
@@ -185,7 +185,11 @@ public static void main(String[] args) {
 
 ## Testing your plugin in an existing installation
 
-When you run your plugin from Eclipse, you're only testing with the classpath *of this project*—which may or may not reflect the environment of an actual user's installation. To test your plugin in an existing installation you can either simply copy the jar, or use Maven to install your plugin and its dependencies. ![Setting up a new Maven Build configuration](MavenRunConfig.png "Setting up a new Maven Build configuration")
+When you run your plugin from Eclipse, you're only testing with the classpath *of this project*—which may or may not reflect the environment of an actual user's installation. To test your plugin in an existing installation you can either simply copy the jar, or use Maven to install your plugin and its dependencies. 
+{% capture title%}
+ Setting up a new Maven Build configuration 
+{% endcapture %}
+{% include thumbnail src='/images/pages/MavenRunConfig.png' title=title %}
 
 ### Option 1: Copying the jar
 

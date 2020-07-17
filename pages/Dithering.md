@@ -28,7 +28,7 @@ Dithering results are best rendered when the image is displayed or printed using
 
 The following images have been magnified by a factor of 2 to show the individual pixels.
 
-![DitheringMontage.png](DitheringMontage.png "DitheringMontage.png")
+![DitheringMontage.png](/images/pages/DitheringMontage.png "DitheringMontage.png")
 
 ## Macro code
 

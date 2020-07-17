@@ -48,11 +48,11 @@ It you are processing a stack, two additional options are available: **Stack** c
 
 Which method segments your data best? One can attempt to answer this question using the **Try all** option. This produces a montage with results from all the methods, allowing to explore how the different algorithms perform on a particular image or stack. When using stacks, in some cases it might not be a good idea to segment each slice individually rather than with a single threshold for all slices (try the mri-stack.tif from the sample images to better understand this issue).
 
-![lymp.png](lymp.png "lymp.png")
+![lymp.png](/images/pages/Lymp.png "lymp.png")
 
 Original image
 
-![lympm2.png](lympm2.png "lympm2.png")
+![lympm2.png](/images/pages/Lympm2.png "lympm2.png")
 
 Try all methods.
 

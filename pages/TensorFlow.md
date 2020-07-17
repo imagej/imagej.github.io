@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='tensorflow ' repo='tensorflow ' %}
 {% endcapture %}
-{% include info-box content='Plugin' software='TensorFlow ' name='TensorFlow ' logo='![Tensorflow-logo.png](Tensorflow-logo.png "Tensorflow-logo.png") ' author='[Google Brain](wikipedia_Google_Brain "wikilink") team ' maintainer='TensorFlow developers ' source=source website='https://www.tensorflow.org/ ' %}[TensorFlow](https://www.tensorflow.org/) is an [open-source](open-source "wikilink") software library for [machine intelligence](wikipedia_Artificial_intelligence "wikilink").
+{% include info-box content='Plugin' software='TensorFlow ' name='TensorFlow ' logo='<img src="/images/pages/Tensorflow-logo.png" width="128"/> ' author='[Google Brain](wikipedia_Google_Brain "wikilink") team ' maintainer='TensorFlow developers ' source=source website='https://www.tensorflow.org/ ' %}[TensorFlow](https://www.tensorflow.org/) is an [open-source](open-source "wikilink") software library for [machine intelligence](wikipedia_Artificial_intelligence "wikilink").
 
 The [ImageJ-TensorFlow](https://github.com/imagej/imagej-tensorflow) project enables TensorFlow to be used from ImageJ commands and scripts. Some ImageJ plugins currently use TensorFlow to classify images according to pre-trained models. Future plugins are planned which will support refining models based on additional training images from ImageJ.
 

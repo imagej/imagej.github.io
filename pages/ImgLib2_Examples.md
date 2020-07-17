@@ -75,7 +75,7 @@ By using the concept of **Views** it is possible to display only parts of the im
 
 A **View** almost behaves similar to an **Img**, and in fact they share important concepts. Both are **RandomAccessible**, and **Views** that are not infinite are also an **Interval** (i.e. those **Views** have a defined size) and can therefore be made **Iterable** (see example 2c). In ImgLib2, all algorithms are implemented for abstract concepts like **RandomAccessible**, **Iterable** or **Interval**. This enables us, as can be seen below, to display a **View** the exact same way we would also display an **Img**.
 
-![ImgLib2example1d.jpg](ImgLib2example1d.jpg "ImgLib2example1d.jpg") *Shows the original image, the View of an interval, as well as the by 90 degree rotated version of the view. Note that only the original image in kept in memory, both Views are completely virtual.*
+<img src="/images/pages/ImgLib2example1d.jpg" width="780"/> *Shows the original image, the View of an interval, as well as the by 90 degree rotated version of the view. Note that only the original image in kept in memory, both Views are completely virtual.*
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example1d.java ' %}
 
@@ -122,7 +122,7 @@ public < T extends Type< T > > Img< T > copyImage( ... )
 
 <span style="color:#FF0000">**WARNING:** The **copyImageWrong** method in this example makes a mistake on purpose\!</span> It intends to show that the iteration order of **Cursors** is important to consider. The goal is to copy the content of an **ArrayImg** (i.e. an **Img** that was created using an **ArrayImgFactory**) into a **CellImg**. Using only **Cursors** for both images will have a wrong result as an **ArrayImg** and a **CellImg** have different iteration orders. An **ArrayImg** is iterated linearly, while a **CellImg** is iterate cell-by-cell, but linearly within each cell.
 
-![ImgLib2example2b.png](ImgLib2example2b.png "ImgLib2example2b.png") *Shows the result if two Cursors are used that have a different iteration order. Here we are wrongly copying an ArrayImg (left) into a CellImg (right).*
+<img src="/images/pages/ImgLib2example2b.png" width="780"/> *Shows the result if two Cursors are used that have a different iteration order. Here we are wrongly copying an ArrayImg (left) into a CellImg (right).*
 
 <span style="color:#FF0000">The correct code for the copy-method (in **copyImageCorrect**) requires the use of a **RandomAccess**.</span> We use a **Cursor** to iterate over all pixels of the input and a **RandomAccess** which we set to the same location the output. Note that the *setPosition()* call of the **RandomAccess** directly takes the **Cursor** as input, which is possible because **Cursor** implements **Localizable**. Please also note that we use a **LocalizingCursor** instead of a normal **Cursor** because we need the location of the **Cursor** at every pixel.
 
@@ -196,7 +196,7 @@ This example illustrates the use of specialized **Iterables**, and emphasizes th
 
 Another interesting aspect of this example is the use of the **ImagePlusImgFactory**, which is the compatibility container for ImageJ. If the required dimensionality and **Type** is available in ImageJ, it will internally create an ImagePlus and work on it directly. In this case, one can request the ImagePlus and show it directly. It will, however, fail if **Type** and dimensionality is not supported by ImageJ and throw a **ImgLibException**.
 
-![ManySpheres.jpg](ManySpheres.jpg "ManySpheres.jpg") *Shows the result of example 4a for the (a) two-dimensional, (b) three-dimensional and (c) four-dimensional case. The image series in (c) represents a movie of a three-dimensional rendering. The images of (b) and (c) were rendered using the ImageJ 3d Viewer.*
+<img src="/images/pages/ManySpheres.jpg" width="780"/> *Shows the result of example 4a for the (a) two-dimensional, (b) three-dimensional and (c) four-dimensional case. The image series in (c) represents a movie of a three-dimensional rendering. The images of (b) and (c) were rendered using the ImageJ 3d Viewer.*
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example4a.java ' %}
 
@@ -223,7 +223,7 @@ The generic method for minima detection has some more interesting properties. Th
 
 Please note as well that if one would increase the radius of the **RectangleShape** to more than 1 (without at the same time changing the **View** on source that creates an inset border of exactly this one pixel), this example would fail as we would try to write image data outside of the defined boundary. **OutOfBoundsStrategies** which define how to handle such cases is discussed in example 5.
 
-![AllMinima.jpg](AllMinima.jpg "AllMinima.jpg") *Shows the result of the detection of local minima after the Gaussian blurring. (a) depicts the input image, (b) the blurred version (sigma=1) and (c) all local mimina drawn as circles with radius 1.*
+<img src="/images/pages/AllMinima.jpg" width="780"/> *Shows the result of the detection of local minima after the Gaussian blurring. (a) depicts the input image, (b) the blurred version (sigma=1) and (c) all local mimina drawn as circles with radius 1.*
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example4b.java ' %}
 

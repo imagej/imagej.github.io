@@ -96,7 +96,7 @@ When calling the plugin, the image will be embedded into the [SIOX](SIOX "wikili
 <!-- end list -->
 
   -   
-    ![Fiji-selection-tools.png](Fiji-selection-tools.png "Fiji-selection-tools.png")
+    ![Fiji-selection-tools.png](/images/pages/Fiji-selection-tools.png "Fiji-selection-tools.png")
 
 <!-- end list -->
 
@@ -203,13 +203,13 @@ You can apply a previously saved SIOX segmentator to any open image or set of im
 
 **Step 2**: Click on {% include bc content='Plugins | Segmentation | Apply SIOX segmentator'%}, and the following dialog will pop up:
 
-![ left | thumb | 600 px | Apply SIOX segmentator input dialog](Screenshot-Load-SIOX-segmentator.png " left | thumb | 600 px | Apply SIOX segmentator input dialog")
+![ left | thumb | 600 px | Apply SIOX segmentator input dialog](/images/pages/Screenshot-Load-SIOX-segmentator.png " left | thumb | 600 px | Apply SIOX segmentator input dialog")
 
 **Step 3**: Select the siox segmentator file (or just drag and drop it) and click "OK".
 
 The segmentator will be applied to the selected image or stack and the result will pop up.
 
-![ left | thumb | 1014px | Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample](Combined-SIOX-Stacks.gif " left | thumb | 1014px | Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample")
+![ left | thumb | 1014px | Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample](/images/pages/Combined-SIOX-Stacks.gif " left | thumb | 1014px | Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample")
 
 **Note**: when applying a saved segmentator there is no information about the size of the expected foreground components so the largest component will be used as reference. The multiple component option will be consistent with what it was used during the segmentator calculation.
 

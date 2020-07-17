@@ -22,4 +22,4 @@ After the watershedding has been performed the user has to set up parameters for
 
   - Size of Hough space in rho: This parameter determines the size of Hough space in rho, ideally it's size is kept the same as that of the size in theta and also a value of 0.5 - 1 is recommended here.
 
-![Advanced2.png](Advanced2.png "Advanced2.png")
+<img src="/images/pages/Advanced2.png" width="300"/>

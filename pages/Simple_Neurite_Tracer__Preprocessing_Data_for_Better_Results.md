@@ -17,11 +17,11 @@ Simple Neurite Tracer's "Hessian-based analysis" option for filtering for tube-l
 
 If the file you are tracing was originally called "example.tif" or "example.lsm", then the plugin will check for the existence of a file in the same directory called "example.tubes.tif". If such a file exists, the plugin will offer to load it for you:
 
-![Snt-confirm-tubes-tif.png](Snt-confirm-tubes-tif.png "Snt-confirm-tubes-tif.png")
+![Snt-confirm-tubes-tif.png](/images/pages/Snt-confirm-tubes-tif.png "Snt-confirm-tubes-tif.png")
 
 The "\*.tubes.tif" file must be a 32-bit float image. Then, if you select the "Use preprocessed image" option:
 
-![Snt-use-preprocessed-image.png](Snt-use-preprocessed-image.png "Snt-use-preprocessed-image.png")
+![Snt-use-preprocessed-image.png](/images/pages/Snt-use-preprocessed-image.png "Snt-use-preprocessed-image.png")
 
 ... then tracing will take place on the preprocessed image rather than the raw image data or the "Hessian-based analysis" filtered values.
 

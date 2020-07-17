@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='openmicroscopy ' repo='openmicroscopy ' %}
 {% endcapture %}
-{% include info-box content='Plugin' software='OMERO ' name='OMERO ' logo='![Omero-logo.png](Omero-logo.png "Omero-logo.png") ' author=' [Open Microscopy Environment](http://openmicroscopy.org/) ' maintainer=' [Open Microscopy Environment](http://openmicroscopy.org/) ' source=source status='active ' website='http://www.openmicroscopy.org/info/omero ' %}OMERO is client-server software for visualization, management and analysis of biological microscope images.
+{% include info-box content='Plugin' software='OMERO ' name='OMERO ' logo='<img src="/images/pages/Omero-logo.png" width="128"/> ' author=' [Open Microscopy Environment](http://openmicroscopy.org/) ' maintainer=' [Open Microscopy Environment](http://openmicroscopy.org/) ' source=source status='active ' website='http://www.openmicroscopy.org/info/omero ' %}OMERO is client-server software for visualization, management and analysis of biological microscope images.
 
 ## Publication
 

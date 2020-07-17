@@ -8,7 +8,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:level\_sets' %}![LS.2b.progress.png](LS.2b.progress.png "LS.2b.progress.png")
+{% include component-stats content=':sc.fiji:level\_sets' %}<img src="/images/pages/LS.2b.progress.png" width="300"/>
 
 ## Level Sets and Fast Marching
 
@@ -70,25 +70,25 @@ An upcoming future implementation will add geodesic active contours as described
 
 Open the example image "Dot Blot (7k)" in the menu File, Open Samples
 
-![Dot\_Blot.jpg](Dot_Blot.jpg "Dot_Blot.jpg")
+![Dot\_Blot.jpg](/images/pages/Dot Blot.jpg "Dot_Blot.jpg")
 
 Using the "Point selections", select a seed point as a start.
 
-![Fiji-pointselection.png](Fiji-pointselection.png "Fiji-pointselection.png")
+![Fiji-pointselection.png](/images/pages/Fiji-pointselection.png "Fiji-pointselection.png")
 
 Selecting a point is very similar to selecting a location for filling an object - in fact, fast marching is very similar to flood fill with a more sophisticated boundary detection. In the following picture, a point inside one of the dots is selected:
 
-![FM.1.seed.png](FM.1.seed.png "FM.1.seed.png")
+![FM.1.seed.png](/images/pages/FM.1.seed.png "FM.1.seed.png")
 
 Go to the Level Sets dialog, deselect the Level Sets option and select the Fast Marching option. Keep the parameters the same:
 
-![FM.0.dialog.png](FM.0.dialog.png "FM.0.dialog.png")
+![FM.0.dialog.png](/images/pages/FM.0.dialog.png "FM.0.dialog.png")
 
 Click on OK and you'll see a constantly updated progress window and, after completion, a result window. The segmented points will be shown in green in the progress window.
 
-Progress: ![FM.2.progress.png](FM.2.progress.png "FM.2.progress.png")
+Progress: ![FM.2.progress.png](/images/pages/FM.2.progress.png "FM.2.progress.png")
 
-Result: ![FM.3.result.png](FM.3.result.png "FM.3.result.png")
+Result: ![FM.3.result.png](/images/pages/FM.3.result.png "FM.3.result.png")
 
 **Level Sets**
 
@@ -96,17 +96,17 @@ Open the example image "Dot Blot (7k)" in the menu File, Open Samples
 
 Using an object selector, select an approximate shape inside or outside the object. In the first example, a oval inside one of the Dots is selected.
 
-![LS.1.seed.png](LS.1.seed.png "LS.1.seed.png")
+![LS.1.seed.png](/images/pages/LS.1.seed.png "LS.1.seed.png")
 
 Go to the Level Sets dialog, deselect Fast Marching and make sure Level Sets is selected. Keep the parameters and click OK. Note that the "Region expands to" option is set to outside, i.e. the contour will grow to the outside of the initial selection. Thus, make sure that the setting "Region expands to" matches the initial selection relative to the object of interest.
 
-![LS.0.dialog.png](LS.0.dialog.png "LS.0.dialog.png")
+![LS.0.dialog.png](/images/pages/LS.0.dialog.png "LS.0.dialog.png")
 
 Level Sets advance a contour until it hits a boundary. Thus, the progress window shows the currently active contour in red and the previously active contour in yellow. The contour will advance until it hits the border of the dot.
 
-Progress: ![LS.2.progress.png](LS.2.progress.png "LS.2.progress.png")
+Progress: ![LS.2.progress.png](/images/pages/LS.2.progress.png "LS.2.progress.png")
 
-Result: ![LS.3.result.png](LS.3.result.png "LS.3.result.png")
+Result: ![LS.3.result.png](/images/pages/LS.3.result.png "LS.3.result.png")
 
 Note the output in the debug window:
 
@@ -130,17 +130,17 @@ More important is the output of the convergence. If the convergence in the dialo
 
 In the following example, the contour will advance to the inside with a rectangular selection as starting point. Note, that with Level Set segmentation, several objects can be selected at the same time. During the contour advancement, the contour will separate into the separate objects. Select a rectangular region outside the object of interest:
 
-![LS.1b.seed.png](LS.1b.seed.png "LS.1b.seed.png")
+![LS.1b.seed.png](/images/pages/LS.1b.seed.png "LS.1b.seed.png")
 
 Go to the Level Sets plugin dialog, select "Region expands to **inside**"
 
-![LS.0b.dialog.png](LS.0b.dialog.png "LS.0b.dialog.png")
+![LS.0b.dialog.png](/images/pages/LS.0b.dialog.png "LS.0b.dialog.png")
 
 The end result looks slightly different because the local differences are not the same when the contour approaches the dot from the outside or the inside.
 
-Progress: ![LS.2b.progress.png](LS.2b.progress.png "LS.2b.progress.png")
+Progress: ![LS.2b.progress.png](/images/pages/LS.2b.progress.png "LS.2b.progress.png")
 
-Result: ![LS.3b.result.png](LS.3b.result.png "LS.3b.result.png")
+Result: ![LS.3b.result.png](/images/pages/LS.3b.result.png "LS.3b.result.png")
 
 All three dots were segmented into distinct objects.
 

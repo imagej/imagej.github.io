@@ -16,7 +16,7 @@ description: test description
 
 Image segmentation is "the process of partitioning a digital image into multiple segments." ([Wikipedia](wikipedia_Image_segmentation "wikilink"))
 
-![Segmentation-overlay.jpg](Segmentation-overlay.jpg "Segmentation-overlay.jpg") ![Segmentation-boundaries.jpg](Segmentation-boundaries.jpg "Segmentation-boundaries.jpg")
+![Segmentation-overlay.jpg](/images/pages/Segmentation-overlay.jpg "Segmentation-overlay.jpg") ![Segmentation-boundaries.jpg](/images/pages/Segmentation-boundaries.jpg "Segmentation-boundaries.jpg")
 
 It is typically used to locate *objects* and *boundaries*.
 
@@ -77,7 +77,7 @@ Preprocess the image using filters, to make later thresholding more effective. W
 
 ## Adjusting Threshold
 
-![Tree ring sample image with a threshold applied for a B\&W image](Threshold_tree.png "Tree ring sample image with a threshold applied for a B&W image")
+![Tree ring sample image with a threshold applied for a B\&W image](/images/pages/Threshold tree.png "Tree ring sample image with a threshold applied for a B&W image")
 
 Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
 
@@ -89,7 +89,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 
 ## Creating Masks
 
-![Over-saturated mask is eroded around the center tree ring](Eroded_tree.png "Over-saturated mask is eroded around the center tree ring")
+![Over-saturated mask is eroded around the center tree ring](/images/pages/Eroded tree.png "Over-saturated mask is eroded around the center tree ring")
 
   - Select {% include bc content='Edit | Selection | Create Mask'%}
   - Based on the image and set threshold, some portions of the image may be over/under saturated
@@ -100,7 +100,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 
 ## Selections
 
-![Selections on the mask](Selection_tree.png "Selections on the mask")
+![Selections on the mask](/images/pages/Selection tree.png "Selections on the mask")
 
 ### Creating Selections
 
@@ -108,7 +108,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
   - To deselect a portion of the image, select {% include key content='Shift' %}+{% include key content='click' %}
       - [More information](https://imagej.net/docs/guide/146-27.html#sub:Create-Selection)
 
-![Selections on the reverted image](Reverted_tree.png "Selections on the reverted image")
+![Selections on the reverted image](/images/pages/Reverted tree.png "Selections on the reverted image")
 
 ### Transferring Selections
 

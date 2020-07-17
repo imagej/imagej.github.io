@@ -22,7 +22,7 @@ To install this plugin check the "ValelabUtils" update site in the Fiji updater.
 
 ## Description
 
-SAIM (Scanning Angle Interference Microscopy) is a technique to measure the distance of fluorescent dyes to the surface at nm resolution. To use it, one needs to place the sample on a silicon chip (that acts as a mirror) with a solicon oxide (glass) spacer). The reflection of coherent excitation light will interfere with the incoming beam and set up a standing wave pattern, resulting in fluorescence intensity that varies with distance to the surface. By varying the angle of incidence, the standing wave pattern changes in predictable ways, and a series of images at different angles can be used to deduce the height of fluorescence molecules, independent of their intensity. This technique is very well described by [Paszek et al.](http://www.nature.com/nmeth/journal/v9/n8/abs/nmeth.2077.html), and this plugin uses the equations from the Paszek et al. paper with a few ![SAIM\_Math.pdf](SAIM_Math.pdf "SAIM_Math.pdf") extensions. A thorough description can be found in [our manuscript](http://www.nature.com/nmeth/journal/v13/n11/full/nmeth.4030.html) or in [the preprint version on BiorXiv](http://biorxiv.org/content/early/2016/04/26/050468). . If you use this plugin, please do cite that paper.
+SAIM (Scanning Angle Interference Microscopy) is a technique to measure the distance of fluorescent dyes to the surface at nm resolution. To use it, one needs to place the sample on a silicon chip (that acts as a mirror) with a solicon oxide (glass) spacer). The reflection of coherent excitation light will interfere with the incoming beam and set up a standing wave pattern, resulting in fluorescence intensity that varies with distance to the surface. By varying the angle of incidence, the standing wave pattern changes in predictable ways, and a series of images at different angles can be used to deduce the height of fluorescence molecules, independent of their intensity. This technique is very well described by [Paszek et al.](http://www.nature.com/nmeth/journal/v9/n8/abs/nmeth.2077.html), and this plugin uses the equations from the Paszek et al. paper with a few ![SAIM\_Math.pdf](/images/pages/SAIM Math.pdf "SAIM_Math.pdf") extensions. A thorough description can be found in [our manuscript](http://www.nature.com/nmeth/journal/v13/n11/full/nmeth.4030.html) or in [the preprint version on BiorXiv](http://biorxiv.org/content/early/2016/04/26/050468). . If you use this plugin, please do cite that paper.
 
 This plugin consists of three parts. "Saim Plot" plots theoretical predictions for the intensity distribution as a function of height.
 
@@ -30,11 +30,11 @@ This plugin consists of three parts. "Saim Plot" plots theoretical predictions f
 
 "Saim Inspect" and "Saim Fit" are very similar, however, Saim Inspect will act on the average values of the ROI (for instance, the pixel under the cursor) and executes only a single fit, whereas Saim Fit will analyze all pixels of the image stack. You will likely want to play with Saim Inspect first and determine reasonable guesses for A, B, and height. Note that you can fit with multiple guesses for the height (enter these as comma values, i.e. "50.0, 200.0, 350.0"), which is needed when the heights in your image span more than \~150nm. Use Saim Inspect to establish best guesses for A, B, and height (starting with a guess that is close to the final value will decrease the computation time).
 
-![SaimInspect.png](SaimInspect.png "SaimInspect.png") <img src="/images/pages/SaimInspectOutput.png" width="500"/>
+![SaimInspect.png](/images/pages/SaimInspect.png "SaimInspect.png") <img src="/images/pages/SaimInspectOutput.png" width="500"/>
 
 Saim Fit will fit each pixel in the input stack and output a stack with 4 images, the first one is the height map (in nm), the second image has the r-squared values (an indication of the goodness of fit with values between 0 and 1, the closer to 1, the better the fit), the third image shows the values for "A", and the last image the values for "B". Saim Fit will use as many thread as you allow in Edit \> Options \> Memory\&Threads and it is best to set that value to the number of cores in your computer. If there is significant movement while taking the stack, you will first need to "de-jitter" using another ImageJ plugin (such as StackReg). The output image will have the Fire LUT by default. Do note the "Threshold" parameter. Only pixels that are higher in intensity than the threshold will be analyzed. This can greatly reduce the analysis time ("dark" pixels will be hard to fit and are usually uninteresting anyways).
 
-![SaimFit.png](SaimFit.png "SaimFit.png") ![SaimFitOutput.jpg](SaimFitOutput.jpg "SaimFitOutput.jpg")
+![SaimFit.png](/images/pages/SaimFit.png "SaimFit.png") ![SaimFitOutput.jpg](/images/pages/SaimFitOutput.jpg "SaimFitOutput.jpg")
 
 ## Usage in a macro
 
@@ -52,11 +52,11 @@ These datasets were obtained by imaging a phospho-lipid bilayer stained with DiO
 
 [640 data set](http://valelab.ucsf.edu/~nstuurman/SAIM/160302_bilayer2_cal2_pos3_640-crop.tif)
 
-![488\_fit\_parameters.png](488_fit_parameters.png "488_fit_parameters.png")![561\_fit\_parameters.png](561_fit_parameters.png "561_fit_parameters.png")![640\_fit\_parameters.png](640_fit_parameters.png "640_fit_parameters.png")
+![488\_fit\_parameters.png](/images/pages/488 fit parameters.png "488_fit_parameters.png")![561\_fit\_parameters.png](/images/pages/561 fit parameters.png "561_fit_parameters.png")![640\_fit\_parameters.png](/images/pages/640 fit parameters.png "640_fit_parameters.png")
 
 Some of the single pixels fits we obtained look as follows:
 
-![Example\_single\_pixel\_fits.png](Example_single_pixel_fits.png "Example_single_pixel_fits.png")
+![Example\_single\_pixel\_fits.png](/images/pages/Example single pixel fits.png "Example_single_pixel_fits.png")
 
 ## History
 

@@ -40,7 +40,7 @@ You can export profiles by clicking on "Save Profile" which will prompt for a CS
 
 <div style="width:800px">
 
-![Simple\_Neurite\_Tracer-\_Sholl\_analysis-10.jpg](Simple_Neurite_Tracer-_Sholl_analysis-10.jpg "Simple_Neurite_Tracer-_Sholl_analysis-10.jpg")![Simple\_Neurite\_Tracer-\_Sholl\_analysis-11.jpg](Simple_Neurite_Tracer-_Sholl_analysis-11.jpg "Simple_Neurite_Tracer-_Sholl_analysis-11.jpg")
+![Simple\_Neurite\_Tracer-\_Sholl\_analysis-10.jpg](/images/pages/Simple Neurite Tracer- Sholl analysis-10.jpg "Simple_Neurite_Tracer-_Sholl_analysis-10.jpg")![Simple\_Neurite\_Tracer-\_Sholl\_analysis-11.jpg](/images/pages/Simple Neurite Tracer- Sholl analysis-11.jpg "Simple_Neurite_Tracer-_Sholl_analysis-11.jpg")
 
 </div>
 

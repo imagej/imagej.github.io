@@ -157,7 +157,7 @@ By convention, if your feature analyzer depends on the features calculated by N 
 
 Apart from the discussion on the priority and execution order, there is not much to say. It works\!
 
-![TrackMate\_CustomSpotAnalyzer\_01.png](TrackMate_CustomSpotAnalyzer_01.png "TrackMate_CustomSpotAnalyzer_01.png")
+![TrackMate\_CustomSpotAnalyzer\_01.png](/images/pages/TrackMate CustomSpotAnalyzer 01.png "TrackMate_CustomSpotAnalyzer_01.png")
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 07:32, 11 March 2014 (CDT)
 

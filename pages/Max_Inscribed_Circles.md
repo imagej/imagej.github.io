@@ -18,11 +18,11 @@ description: test description
 
 This is an implementation of the Largest Inscribed Circle algorithm using an euclidean distance map. The algorithm is looped until a circle diameter smaller than the defined minimum diameter is found. The code for this plugin was inspired by this [Matlab Central function](http://www.mathworks.ch/matlabcentral/fileexchange/30805-maximum-inscribed-circle-using-distance-transform)
 
-![Plugin Dialog choices](Max_largest_circ_dialog2.png "Plugin Dialog choices")
+![Plugin Dialog choices](/images/pages/Max largest circ dialog2.png "Plugin Dialog choices")
 
 ## Details
 
-As of July 26th 2016, the plugin has been rewritten with a new algorithm to make it run much faster.. See the faster implementation details figure. ![Faster implementation details](Max-Circles-Algorithm-Overview.png "Faster implementation details")
+As of July 26th 2016, the plugin has been rewritten with a new algorithm to make it run much faster.. See the faster implementation details figure. ![Faster implementation details](/images/pages/Max-Circles-Algorithm-Overview.png "Faster implementation details")
 
 The previous implementation would calculate a distance map, then find the max value, place a circle and repeat. This was making it very slow for small circle diameters or large images as it needed to make one distance map calculation per circle on the whole image.
 
@@ -47,7 +47,7 @@ It will add all the found circles to the ROI Manager.
 
 Setting the Minimum Disk Diameter to 0 will return a single ROI with the largest inscribed circle.
 
-![Result of Plugin on whole image](Max_largest_circ_beforeafter.png "Result of Plugin on whole image")
+![Result of Plugin on whole image](/images/pages/Max largest circ beforeafter.png "Result of Plugin on whole image")
 
 ## Macro Recordable
 

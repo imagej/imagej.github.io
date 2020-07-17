@@ -69,7 +69,7 @@ More examples could be found in
 
 ## Parameters
 
-![Trajclassifier\_gui.png](Trajclassifier_gui.png "Trajclassifier_gui.png") **Minimal track length:** Minimal number of positions in a trajectory. It has to be greater than the window size. As the window size should be at least 30, the same is true for the minimal track length.
+![Trajclassifier\_gui.png](/images/pages/Trajclassifier gui.png "Trajclassifier_gui.png") **Minimal track length:** Minimal number of positions in a trajectory. It has to be greater than the window size. As the window size should be at least 30, the same is true for the minimal track length.
 
 **Window size:** The parameter determines how many positions are used in the sliding window.
 

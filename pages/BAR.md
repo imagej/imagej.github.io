@@ -90,7 +90,7 @@ You can open any BAR script by holding {% include key content='press|Shift' %} w
 
 ### Context Menu
 
-![BAR features a neat mechanism that allows <span style="border-bottom:1px dotted #ccc;">BAR▷</span> commands to shuttle between the main menu bar and the image's context menu.](TransposableBarMenu.png "BAR features a neat mechanism that allows BAR▷ commands to shuttle between the main menu bar and the image's context menu.") <span style="border-bottom:1px dotted #ccc;">BAR▷ </span> submenus can be appended to the image's context menu (the menu that pops up when right-clicking on the image canvas) by running <span style="border-bottom:1px dotted #ccc;">BAR▷ <i>Submenu</i>▷Move Menu (Context\<\>Main)</span>. The transfer is bidirectional: once in the context menu, running the same command will place the submenu back in the main menu bar.
+![BAR features a neat mechanism that allows <span style="border-bottom:1px dotted #ccc;">BAR▷</span> commands to shuttle between the main menu bar and the image's context menu.](/images/pages/TransposableBarMenu.png "BAR features a neat mechanism that allows BAR▷ commands to shuttle between the main menu bar and the image's context menu.") <span style="border-bottom:1px dotted #ccc;">BAR▷ </span> submenus can be appended to the image's context menu (the menu that pops up when right-clicking on the image canvas) by running <span style="border-bottom:1px dotted #ccc;">BAR▷ <i>Submenu</i>▷Move Menu (Context\<\>Main)</span>. The transfer is bidirectional: once in the context menu, running the same command will place the submenu back in the main menu bar.
 
 The shuttling mechanism is not permanent, i.e., it will not be remembered across restarts. However, it is macro recordable which means it can be imposed at startup, using the ImageJ macro language. So, e.g., to install <span style="border-bottom:1px dotted #ccc;">BAR▷ Segmentation▷</span> in the context menu, one would:
 
@@ -102,7 +102,7 @@ It may be wise to allow ImageJ enough time to register all scripts before trigge
 
 <center>
 
-![StartupBAR.png](StartupBAR.png "StartupBAR.png")
+<img src="/images/pages/StartupBAR.png" width="380"/>
 
 </center>
 
@@ -113,7 +113,7 @@ It may be wise to allow ImageJ enough time to register all scripts before trigge
 
 ### Commander
 
-![Commander overview (BAR 1.1.2).](CommanderOverview.png "Commander overview (BAR 1.1.2).") Since the majority of BARs are scripts stored in dedicated files, BAR features Commander ({% include bc content='BAR|BAR Commander...'%}), a keyboard-based file browser that produces filtered lists of directory contents.
+![Commander overview (BAR 1.1.2).](/images/pages/CommanderOverview.png "Commander overview (BAR 1.1.2).") Since the majority of BARs are scripts stored in dedicated files, BAR features Commander ({% include bc content='BAR|BAR Commander...'%}), a keyboard-based file browser that produces filtered lists of directory contents.
 
 It is a productivity tool that applies the principles of [Command Launcher](Using_the_Command_Launcher "wikilink") to file browsing, providing instant access to files just by typing abbreviations of filenames. It serves two purposes: 1) to expedite the opening of files and 2) to produce filtered lists of directory contents. Features include: drag-and-drop support, interaction with native file manager, regex filtering, and a built-in console for common operations.
 
@@ -149,7 +149,7 @@ You can use BARs as a starting point for your own workflows. Whether you are jus
 
 ### Snippets
 
-![{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)](SnippetCreator.png "{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)") BAR contains a directory, *plugins/Scripts/BAR/Snippets/*, containing multi-language [examples](https://github.com/tferr/Scripts/tree/master/Snippets) that you can customize and recycle in your own scripts. You can, of course, also retrieve code and inspiration from the more complete BARs in the remaining *plugins/Scripts/BAR/* subdirectories. Any script or macro file stored in the *Snippets/*, folder with an underscore "\_" in the filename will be listed in <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷</span>. The <span style="border-bottom:1px dotted #ccc;">Snippets▷</span> menu contains some utilities to help you manage your scripts:
+![{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)](/images/pages/SnippetCreator.png "{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)") BAR contains a directory, *plugins/Scripts/BAR/Snippets/*, containing multi-language [examples](https://github.com/tferr/Scripts/tree/master/Snippets) that you can customize and recycle in your own scripts. You can, of course, also retrieve code and inspiration from the more complete BARs in the remaining *plugins/Scripts/BAR/* subdirectories. Any script or macro file stored in the *Snippets/*, folder with an underscore "\_" in the filename will be listed in <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷</span>. The <span style="border-bottom:1px dotted #ccc;">Snippets▷</span> menu contains some utilities to help you manage your scripts:
 
   - List Snippets:Prints a table listing all scripts in *plugins/Scripts/BAR/Snippets/*. Files can then be opened in the [Script Editor](Script_Editor "wikilink") by double-clicking on their filename.  
     New Snippet: A java plugin that speeds up the creation of new scripts, pre-configured to use [BAR lib](#lib "wikilink").  

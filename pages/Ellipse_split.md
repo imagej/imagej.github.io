@@ -41,7 +41,7 @@ The generall approach of the ellipse fitting plugin is as follows:
 
 Suppose you have the following input image:
 
-![Ellipsesplit\_input.png](Ellipsesplit_input.png "Ellipsesplit_input.png")
+![Ellipsesplit\_input.png](/images/pages/Ellipsesplit input.png "Ellipsesplit_input.png")
 
 Then the watershed approach (*Process -\> Binary -\> Watershed*) would give this result:
 
@@ -49,7 +49,7 @@ Then the watershed approach (*Process -\> Binary -\> Watershed*) would give this
 
 The ellipse splitting plugin applied to the input image will combine the watershed result and direct ellipse fitting. This leads to the following result:
 
-![Ellipsesplit\_result.png](Ellipsesplit_result.png "Ellipsesplit_result.png")
+![Ellipsesplit\_result.png](/images/pages/Ellipsesplit result.png "Ellipsesplit_result.png")
 
 Furthermore it outputs several important features:
 
@@ -57,7 +57,7 @@ Furthermore it outputs several important features:
 
 ## Parameters
 
-![GUI of Ellipse Split Plugin](EllipseSplit.png "GUI of Ellipse Split Plugin")
+![GUI of Ellipse Split Plugin](/images/pages/EllipseSplit.png "GUI of Ellipse Split Plugin")
 
 **Binary splitted image:** If set to "Use standard watershed" it will use ImageJ's watershed technique to split the binary object. If there are better techniques for splitting available, you could select here the binary image splitted by that technique.
 

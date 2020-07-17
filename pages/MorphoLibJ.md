@@ -120,7 +120,7 @@ Similar results may be obtained for enhancing dark curvilinear structures, by us
 
 ### Plugin Usage
 
-![MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element.](MorphoLibJ-mosaic-filters.png "MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element.") The collection of morphological filters is available in the {% include bc content='Plugins | MorphoLibJ'%} menu. Filters are **implemented both for 2D and 3D images**, and work for binary, gray level or color (RGB) images.
+![MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element.](/images/pages/MorphoLibJ-mosaic-filters.png "MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element.") The collection of morphological filters is available in the {% include bc content='Plugins | MorphoLibJ'%} menu. Filters are **implemented both for 2D and 3D images**, and work for binary, gray level or color (RGB) images.
 
 #### Planar images
 

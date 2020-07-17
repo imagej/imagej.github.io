@@ -12,7 +12,7 @@ description: test description
 
 ## Script Parameters
 
-![Script-parameters.png](Script-parameters.png "Script-parameters.png") [Script parameters](Script_parameters "wikilink") are a fast, succinct option to make a GUI in ImageJ and beyond. Scripts written using the `#@` parameter syntax can also be consumed by other tools in the [SciJava](SciJava "wikilink") ecosystem, including [KNIME](KNIME "wikilink"), [OMERO](OMERO "wikilink") and others. They are independent of user interface, meaning alternative GUIs coded in other frameworks—such as [ImageJFX](ImageJFX "wikilink") coded using JavaFX—can also present a GUI for your plugin/script that matches the application.
+![Script-parameters.png](/images/pages/Script-parameters.png "Script-parameters.png") [Script parameters](Script_parameters "wikilink") are a fast, succinct option to make a GUI in ImageJ and beyond. Scripts written using the `#@` parameter syntax can also be consumed by other tools in the [SciJava](SciJava "wikilink") ecosystem, including [KNIME](KNIME "wikilink"), [OMERO](OMERO "wikilink") and others. They are independent of user interface, meaning alternative GUIs coded in other frameworks—such as [ImageJFX](ImageJFX "wikilink") coded using JavaFX—can also present a GUI for your plugin/script that matches the application.
 
 Each parameter (integer, string input, etc.) corresponds to a user interface element, and is created by using a generic notation in the form `#@ ParameterType variableName` that is put at the top of the script.
 
@@ -22,6 +22,6 @@ See the [script parameters](script_parameters "wikilink") page for further detai
 
 ## GenericDialog
 
-![Multi-column-dialog.png](Multi-column-dialog.png "Multi-column-dialog.png") The [GenericDialog](generic_dialog "wikilink") class—part of [ImageJ1](ImageJ1 "wikilink")—offers more flexibility than the [script parameters](script_parameters "wikilink"), including custom layout and buttons, but requires more coding—e.g., successive calls to the plugin do not automatically remember previously entered values. Plugins coded using `GenericDialog` are also not automatically usable in other [SciJava](SciJava "wikilink") tools such as [KNIME](KNIME "wikilink") or [ImageJFX](ImageJFX "wikilink").
+![Multi-column-dialog.png](/images/pages/Multi-column-dialog.png "Multi-column-dialog.png") The [GenericDialog](generic_dialog "wikilink") class—part of [ImageJ1](ImageJ1 "wikilink")—offers more flexibility than the [script parameters](script_parameters "wikilink"), including custom layout and buttons, but requires more coding—e.g., successive calls to the plugin do not automatically remember previously entered values. Plugins coded using `GenericDialog` are also not automatically usable in other [SciJava](SciJava "wikilink") tools such as [KNIME](KNIME "wikilink") or [ImageJFX](ImageJFX "wikilink").
 
 See the [generic dialog](generic_dialog "wikilink") page for further details.

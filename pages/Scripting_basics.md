@@ -152,7 +152,7 @@ ip = stack.getProcessor(nframe)
 stack.addSlice(ip)
 ```
 
-The following scheme depicts the relations between the different classes. ![Image\_Class\_Hierarchy.png](Image_Class_Hierarchy.png "Image_Class_Hierarchy.png")
+The following scheme depicts the relations between the different classes. ![Image\_Class\_Hierarchy.png](/images/pages/Image Class Hierarchy.png "Image_Class_Hierarchy.png")
 
 # Loop over Roi in Roi Manager
 

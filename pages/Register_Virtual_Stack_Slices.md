@@ -8,7 +8,7 @@ categories: Plugins,Registration,TrakEM2
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:register\_virtual\_stack\_slices' %}{| |style="vertical-align:top" |![Register Virtual Stack scheme - All images are transformed to match the reference](Rvs_scheme.png "Register Virtual Stack scheme - All images are transformed to match the reference") |}
+{% include component-stats content=':sc.fiji:register\_virtual\_stack\_slices' %}{| |style="vertical-align:top" |![Register Virtual Stack scheme - All images are transformed to match the reference](/images/pages/Rvs scheme.png "Register Virtual Stack scheme - All images are transformed to match the reference") |}
 
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas). One of the images in the sequence can be selected by the user as **reference** and it will remain intact.
 
@@ -35,7 +35,7 @@ Images may have different dimensions and be of different type.
 
 <b>Step 1</b>: launch the "Plugins - Registration - Register Virtual Stack Slices" plugin.
 
-![Register Virtual Stack main window](Rvs_main_window.png "Register Virtual Stack main window")
+![Register Virtual Stack main window](/images/pages/Rvs main window.png "Register Virtual Stack main window")
 
 <b>Step 2</b>: choose the appropriate options:  
 
@@ -102,7 +102,7 @@ The transforms are saved as **.XML** files, following [TrakEM2](TrakEM2 "wikilin
 3.  All types of images are accepted (8-bit, 16-bit, 32-bit and RGB) but only in .tif, .jpg, .png, .gif, .tiff, .jpeg, .bmp, .pgm, or .ima format. Output images are saved as TIFF.
 4.  If you selected the "Advanced setup" and "Elastic" as registration model, another window to adjust the elastic registration parameters will be shown.
 
-![Elastic registration options](Rvs_elastic_options_351x446.png "Elastic registration options")
+![Elastic registration options](/images/pages/Rvs elastic options 351x446.png "Elastic registration options")
 
 This is actually a reduced version of the [ bUnwarpJ](BUnwarpJ "wikilink") main window.
 
@@ -147,13 +147,13 @@ Example of registration results using the shrinking constraint:
 
 <td>
 
-![input data](RVS_Tem_example.gif "input data")
+![input data](/images/pages/RVS Tem example.gif "input data")
 
 </td>
 
 <td>
 
-![output data](RVS_Registered_tem.gif "output data")
+![output data](/images/pages/RVS Registered tem.gif "output data")
 
 </td>
 
@@ -187,13 +187,13 @@ Even this sequence of rather noisy transmission electron microscopy images, with
 
 <td>
 
-![Stack4.gif](Stack4.gif "Stack4.gif")
+![Stack4.gif](/images/pages/Stack4.gif "Stack4.gif")
 
 </td>
 
 <td>
 
-![Stack4-2.gif](Stack4-2.gif "Stack4-2.gif")
+![Stack4-2.gif](/images/pages/Stack4-2.gif "Stack4-2.gif")
 
 </td>
 

@@ -26,10 +26,13 @@ def images_dir():
 
 def catch_media(path_in, root_out):
     content = read_file(path_in)
-    pattern = re.compile(r'\[\[(?:File|Image)\:([^ |\]]*)[ ]*(?:\|[ ]*[^|\]]*[ ]*)?\|[ ]*[^\]]*[ ]*\]\]')
+    pattern = re.compile(r'\!\[[^\]]*\]\(((?!\/images\/pages\/)[^\"\)]*)[ \n]*\"[^\"]*\"[ ]*\)')
+    for (file_name) in re.findall(pattern, content):
+        copy_media(file_name.strip(), path_in, root_out)
+    pattern = re.compile(r'\[\[(?:File|Image)[ ]?\:[ ]*([^ |\]]*)[ ]*(?:\|[ ]*[^|\]]*[ ]*)?\|[ ]*[^\]]*[ ]*\]\]')
     for (file_name) in re.findall(pattern, content):
         copy_media(file_name, path_in, root_out)
-    pattern = re.compile(r'\[\[(?:File|Image)\:([^ |\]]*)\]\]')
+    pattern = re.compile(r'\[\[(?:File|Image)[ ]?\:([^ |\]]*)\]\]')
     for (file_name) in re.findall(pattern, content):
         copy_media(file_name, path_in, root_out)
 

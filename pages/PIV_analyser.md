@@ -70,7 +70,7 @@ The plugin is part of the Fiji distribution. You can find it in the {% include b
 
 ## Usage
 
-![PIV\_analyser\_window.png](PIV_analyser_window.png "PIV_analyser_window.png")
+![PIV\_analyser\_window.png](/images/pages/PIV analyser window.png "PIV_analyser_window.png")
 
 Options are the following:
 
