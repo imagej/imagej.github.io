@@ -2980,10 +2980,10 @@ input, select, textarea {
 		.sidebar a {font-size: 18px;}
 	}
 
-/* About-menu */
+/* Menu */
 
-	.about-menu {
-		max-width: 25%;
+	.menu {
+		max-width: 40%;
 		float: right;
 		z-index: 1;
 		top: 0;
@@ -2995,11 +2995,11 @@ input, select, textarea {
 		padding: 0.5em 1em 0.5em 1em;
 	}
 
-	.about-menu h3 {
+	.menu h3 {
 		margin: 0 0 0.5em 0 !important;
 	}
 
-	.about-menu table {
+	.menu table {
 		background-color: #f9f9f9;
 		border-collapse: collapse;
 		table-layout: fixed;
@@ -3007,20 +3007,24 @@ input, select, textarea {
 		text-align: left;
 	}
 
-	.about-menu tbody {
+	.menu tbody {
 		background-color: #f9f9f9;
 		text-align: left;
 	}
 
-	.about-menu tr {
+	.menu table tbody tr:nth-child(2n+1) {
+		background-color: #f9f9f9;
+	}
+
+	.menu tr {
 		text-align: left;
 	}
 
-	.about-menu td {
+	.menu td {
 		padding: 0 0 0 0;
 	}
 
-	.about-menu th {
+	.menu th {
 		background: lightgray;
 		font-variant: small-caps;
 		text-align: center;
@@ -3029,7 +3033,7 @@ input, select, textarea {
 		padding: 0 0.5em 0 0.5em;
 	}
 
-	.about-menu a {
+	.menu a {
 		padding: 0.1em 0 0 0;
 		text-decoration: none;
 		text-align: justify;
@@ -3041,7 +3045,7 @@ input, select, textarea {
 		margin-bottom: 0;
 	}
 
-	.about-menu p {
+	.menu p {
 		font-size: large;
 		text-align: justify;
 		font-weight: 500;

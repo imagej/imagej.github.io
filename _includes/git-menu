@@ -1,0 +1,18 @@
+{% include menu title="Git Tutorials" content=
+"
+| :---: |
+| [Git for dummies](/pages/Git_for_dummies) |
+| [Git in Eclipse(EGit)](/pages/EGit) |
+| |
+| [Git mini howto](/pages/Git_mini_howto) |
+| [Git workshop](/pages/Git_workshop) |
+| [Git conflicts](/pages/Git_Conflicts) |
+| [Git topic branches](/pages/Git_topic_branches) |
+| [Git Notes](/pages/Git_Notes) |
+| [Git reflogs](/pages/Git_reflogs) |
+| [Git submodule tutorial](/pages/Git_submodule_tutorial) |
+| [Pinpoint regressions with Git](/pages/Pinpoint_regressions_with_Git) |
+| [How to publish a Git repository](/pages/How_to_publish_a_Git_repository) |
+| [How to extract a subproject](/pages/How_to_extract_a_subproject)
+"
+%}

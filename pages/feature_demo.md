@@ -16,6 +16,7 @@ description: This page is a feature demo.
 | Generate info/details box | [details-box]({{"/pages/demo-details-box" | relative_url}}) | 
 | Insert figure | [figure]({{"/pages/demo-figure" | relative_url}})
 | Link to github files | [github]({{"/pages/demo-github" | relative_url}}) |
+| Insert Git menu | [git-menu]({{"/pages/demo-git-menu" | relative_url}}) |
 | Insert images | [image]({{"/pages/demo-image" | relative_url}}) |
 | Insert a notice | [info-box]({{"/pages/demo-info-box" | relative_url}})
 | Insert logos | [logo]({{"/pages/demo-logo" | relative_url}}) |
@@ -25,7 +26,7 @@ description: This page is a feature demo.
 | Insert a sidebox | [sidebox]({{"/pages/demo-sidebox" | relative_url}})
 | Insert the SNT nav bar | [SNT-nav]({{"/pages/demo-SNT-nav" | relative_url}})|
 | Insert a tech box | [tech-box]({{"/pages/demo-tech-box" | relative_url}})
-| Insert a warning | [warning-box]({{"/pages/demo-warning-box" | relative_url}})
+| Insert a warning | [warning-box]({{"/pages/demo-warning-box" | relative_url}}) |
 
 {% include sidebar title="Demo" content="Introduction, |, Left image, Right image, Center image, Fit image, Figure left, Figure right,Figure center, Figure row, Markdown table, YouTube video, Embedded images in table, Math equations, Sidebox, Syntax highlighting, Menu breadcrumbs" %}
 
