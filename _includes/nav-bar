@@ -2,13 +2,13 @@
     <div class="topnav">
         <a href="{{"/index" | relative_url}}">Home</a>
         <a href="{{"/search" | relative_url}}" class="icon solid fa-search">Search</a>
-        <a href="{{"/pages/Downloads" | relative_url}}">Downloads</a>
-        <a href="{{"/pages/Introduction" | relative_url}}">Learn</a>
+        <a href="{{"/Downloads" | relative_url}}">Downloads</a>
+        <a href="{{"/Introduction" | relative_url}}">Learn</a>
         <a href="{{"/categories" | relative_url}}">Browse</a>
-        <a href="{{"/pages/Development" | relative_url}}">Develop</a>
-        <a href="{{"/pages/News" | relative_url}}">News</a>
-        <a href="{{"/pages/Upcoming_Events" | relative_url}}">Events</a>
-        <a href="{{"/pages/Help" | relative_url}}">Help</a>
+        <a href="{{"/Development" | relative_url}}">Develop</a>
+        <a href="{{"/News" | relative_url}}">News</a>
+        <a href="{{"/Upcoming_Events" | relative_url}}">Events</a>
+        <a href="{{"/Help" | relative_url}}">Help</a>
 
         <div id="ham-nav" class="ham-drop" onclick="hamActivate(this)">
             <div class="bar1"></div>
@@ -17,13 +17,13 @@
             <div id="drop-menu" class="ham-drop-content">
                 <a href="{{"/index" | relative_url}}">Home</a>
                 <a href="{{"/search" | relative_url}}" class="icon solid fa-search">Search</a>
-                <a href="{{"/pages/Downloads" | relative_url}}">Downloads</a>
-                <a href="{{"/pages/Introduction" | relative_url}}">Learn</a>
+                <a href="{{"/Downloads" | relative_url}}">Downloads</a>
+                <a href="{{"/Introduction" | relative_url}}">Learn</a>
                 <a href="{{"/categories" | relative_url}}">Browse</a>
-                <a href="{{"/pages/Development" | relative_url}}">Develop</a>
-                <a href="{{"/pages/News" | relative_url}}">News</a>
-                <a href="{{"/pages/Upcoming_Events" | relative_url}}">Events</a>
-                <a href="{{"/pages/Help" | relative_url}}">Help</a>
+                <a href="{{"/Development" | relative_url}}">Develop</a>
+                <a href="{{"/News" | relative_url}}">News</a>
+                <a href="{{"/Upcoming_Events" | relative_url}}">Events</a>
+                <a href="{{"/Help" | relative_url}}">Help</a>
             </div>
         </div>
     </div>

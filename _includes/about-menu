@@ -4,7 +4,7 @@
     <tbody>
         <tr>
             <td>
-                <a href="/pages/ImageJ">ImageJ</a>
+                <a href="/ImageJ">ImageJ</a>
             </td>
         </tr>
     </tbody>
@@ -13,7 +13,7 @@
     <tbody>
         <tr>
             <td>
-                <a href="/pages/Usage">Usage</a>
+                <a href="/Usage">Usage</a>
             </td>
         </tr>
     </tbody>
@@ -22,7 +22,7 @@
     <tbody>
         <tr>
             <td>
-                <a href="/pages/Contributors">Contributors</a>
+                <a href="/Contributors">Contributors</a>
             </td>
         </tr>
     </tbody>
@@ -31,7 +31,7 @@
     <tbody>
         <tr>
             <td>
-                <a href="/pages/Governance">Governance</a>
+                <a href="/Governance">Governance</a>
             </td>
         </tr>
     </tbody>
@@ -40,7 +40,7 @@
     <tbody>
         <tr>
             <td>
-                <a href="/pages/Funding">Funding</a>
+                <a href="/Funding">Funding</a>
             </td>
         </tr>
     </tbody>
@@ -49,7 +49,7 @@
     <tbody>
         <tr>
             <td>
-                <a href="/pages/Citing">Citing</a>
+                <a href="/Citing">Citing</a>
             </td>
         </tr>
     </tbody>
@@ -58,7 +58,7 @@
     <tbody>
         <tr>
             <td>
-                <a href="/pages/Contributing">Contributing</a>
+                <a href="/Contributing">Contributing</a>
             </td>
         </tr>
     </tbody>
@@ -67,7 +67,7 @@
     <tbody>
         <tr>
             <td>
-                <a href="/pages/Wish_list">Wish list</a>
+                <a href="/Wish_list">Wish list</a>
             </td>
         </tr>
     </tbody>

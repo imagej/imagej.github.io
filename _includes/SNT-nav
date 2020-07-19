@@ -6,31 +6,31 @@
                         <a href="{{"/index" | relative_url}}"><strong>Home</strong></a>
                 </td>
                 <td>
-                    <a href="{{"/pages/SNT__Manual" | relative_url}}">Manual</a>
+                    <a href="{{"/SNT__Manual" | relative_url}}">Manual</a>
                 </td>
                 <td>
-                    <a href="{{"/pages/SNT__Step-By-Step_Instructions" | relative_url}}">Walk-throughs</a>
+                    <a href="{{"/SNT__Step-By-Step_Instructions" | relative_url}}">Walk-throughs</a>
                 </td>
                 <td>
-                    <a href="{{"/pages/SNT__Screencasts" | relative_url}}">Screencasts</a>
+                    <a href="{{"/SNT__Screencasts" | relative_url}}">Screencasts</a>
                 </td>
                 <td>
-                    <a href="{{"/pages/SNT__Key_Shortcuts" | relative_url}}">Shortcuts</a>
+                    <a href="{{"/SNT__Key_Shortcuts" | relative_url}}">Shortcuts</a>
                 </td>
                 <td>
-                    <a href="{{"/pages/SNT__Reconstruction_Viewer" | relative_url}}">Rec. Viewer</a>
+                    <a href="{{"/SNT__Reconstruction_Viewer" | relative_url}}">Rec. Viewer</a>
                 </td>
                 <td>
-                    <a href="{{"/pages/SNT__Analysis" | relative_url}}">Analysis</a>
+                    <a href="{{"/SNT__Analysis" | relative_url}}">Analysis</a>
                 </td>
                 <td>
-                    <a href="{{"/pages/SNT__Scripting" | relative_url}}">Scripting</a>
+                    <a href="{{"/SNT__Scripting" | relative_url}}">Scripting</a>
                 </td>
                 <td>
-                    <a href="{{"/pages/SNT__Modeling" | relative_url}}">Modeling</a>
+                    <a href="{{"/SNT__Modeling" | relative_url}}">Modeling</a>
                 </td>
                 <td>
-                    <a href="{{"/pages/SNT__FAQ" | relative_url}}">FAQ</a>
+                    <a href="{{"/SNT__FAQ" | relative_url}}">FAQ</a>
                 </td>
             </tr>
         </tbody>

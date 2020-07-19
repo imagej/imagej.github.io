@@ -11,22 +11,22 @@ description: This page is a feature demo.
 
 | Action | Link to demo page|
 | : --- : | :---: |
-| Insert the about menu | [about-menu]({{"/pages/demo-about-menu" | relative_url}})
-| Insert conference info | [conference]({{"/pages/demo-conference" | relative_url}})
-| Generate info/details box | [details-box]({{"/pages/demo-details-box" | relative_url}}) | 
-| Insert figure | [figure]({{"/pages/demo-figure" | relative_url}})
-| Link to github files | [github]({{"/pages/demo-github" | relative_url}}) |
-| Insert Git menu | [git-menu]({{"/pages/demo-git-menu" | relative_url}}) |
-| Insert images | [image]({{"/pages/demo-image" | relative_url}}) |
-| Insert a notice | [info-box]({{"/pages/demo-info-box" | relative_url}})
-| Insert logos | [logo]({{"/pages/demo-logo" | relative_url}}) |
-| Insert menu breadcrumb | [menu-bc]({{"/pages/demo-menu-breadcrumb" | relative_url}}) |
-| Insert math | [math]({{"/pages/demo-math" | relative_url}}) |
-| Insert person details | [person]({{"/pages/demo-person" | relative_url}})
-| Insert a sidebox | [sidebox]({{"/pages/demo-sidebox" | relative_url}})
-| Insert the SNT nav bar | [SNT-nav]({{"/pages/demo-SNT-nav" | relative_url}})|
-| Insert a tech box | [tech-box]({{"/pages/demo-tech-box" | relative_url}})
-| Insert a warning | [warning-box]({{"/pages/demo-warning-box" | relative_url}}) |
+| Insert the about menu | [about-menu]({{"/demo-about-menu" | relative_url}})
+| Insert conference info | [conference]({{"/demo-conference" | relative_url}})
+| Generate info/details box | [details-box]({{"/demo-details-box" | relative_url}}) | 
+| Insert figure | [figure]({{"/demo-figure" | relative_url}})
+| Link to github files | [github]({{"/demo-github" | relative_url}}) |
+| Insert Git menu | [git-menu]({{"/demo-git-menu" | relative_url}}) |
+| Insert images | [image]({{"/demo-image" | relative_url}}) |
+| Insert a notice | [info-box]({{"/demo-info-box" | relative_url}})
+| Insert logos | [logo]({{"/demo-logo" | relative_url}}) |
+| Insert menu breadcrumb | [menu-bc]({{"/demo-menu-breadcrumb" | relative_url}}) |
+| Insert math | [math]({{"/demo-math" | relative_url}}) |
+| Insert person details | [person]({{"/demo-person" | relative_url}})
+| Insert a sidebox | [sidebox]({{"/demo-sidebox" | relative_url}})
+| Insert the SNT nav bar | [SNT-nav]({{"/demo-SNT-nav" | relative_url}})|
+| Insert a tech box | [tech-box]({{"/demo-tech-box" | relative_url}})
+| Insert a warning | [warning-box]({{"/demo-warning-box" | relative_url}}) |
 
 {% include sidebar title="Demo" content="Introduction, |, Left image, Right image, Center image, Fit image, Figure left, Figure right,Figure center, Figure row, Markdown table, YouTube video, Embedded images in table, Math equations, Sidebox, Syntax highlighting, Menu breadcrumbs" %}
 

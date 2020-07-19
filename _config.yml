@@ -4,3 +4,7 @@ kramdown:
   syntax_highlighter: rogue
 plugins:
   - jekyll-sitemap
+collections:
+  pages:
+    output: true
+    permalink: /:path
