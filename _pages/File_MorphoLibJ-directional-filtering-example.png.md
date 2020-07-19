@@ -1,0 +1,1 @@
+Filtering of a thin structure. (a) Original image representing apple cells observed with confocal microscopy (Legland et al., 2009). The application of a Gaussian filter (b) or median filter (c) results in noise reduction, but also in a loss of the signal along the cell walls. The directional filtering (d) better preserves the thickness of the structure.

@@ -1,0 +1,3 @@
+Windows logo
+
+[[Category:Logos]]

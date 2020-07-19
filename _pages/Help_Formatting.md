@@ -1,0 +1,1 @@
+#REDIRECT [[mediawikiwiki:Help:Formatting]]

@@ -1,0 +1,6 @@
+* [[About]]
+* [[News]]
+* [[Events]]
+* [[Source]]
+* [[Status]]
+* [[Help]]

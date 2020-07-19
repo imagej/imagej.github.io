@@ -1,0 +1,1 @@
+The Void Whizzard is a free plugin for FIJI, created to simplify and expedite quantification of the spontaneous void spot assay. It is designed to objectively quantify urinary function without sophisticated computer programming requirements.

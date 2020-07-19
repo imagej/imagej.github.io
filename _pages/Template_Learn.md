@@ -1,0 +1,65 @@
+{{ Menu | Learn
+|
+{{!}}-
+{{!}}
+{{Submenu | Topics |
+{{MenuItem | [[Introduction]] }}
+{{MenuItem | [[Getting Started]] }}
+{{MenuItem | [[User Guides]] }}
+{{MenuItem | [[:Category:Tutorials|Tutorials]] }}
+{{MenuItem | [[Tips and Tricks]] }}
+{{MenuItem | [[Presentations]] }}
+{{MenuItem | [[Plugins]] }}
+| {{#if:{{{1|}}}|collapsed|}}
+}}
+{{!}}-
+{{!}}
+{{Submenu | Techniques |
+{{MenuItem | [[:Category:Techniques|All Techniques]] }}
+{{MenuItem | [[Colocalization Analysis | Colocalization]] }}
+{{MenuItem | [[Deconvolution]] }}
+{{MenuItem | [[Registration]] }}
+{{MenuItem | [[Segmentation]] }}
+{{MenuItem | [[Image Stitching | Stitching]] }}
+{{MenuItem | [[Tracking]] }}
+{{MenuItem | [[Visualization]] }}
+| {{#ifeq:{{{1}}}|techniques||collapsed}}
+}}
+{{!}}-
+{{!}}
+{{Submenu | Scripting |
+{{MenuItem | [[Scripting|Overview]] }}
+{{MenuItem | [[User input|User input]] }}
+{{MenuItem | [[Scripting basics|Basics of script writing]] }}
+{{MenuItem | [[How to use the Javadoc|How to use the Javadoc]] }}
+{{MenuItem | [[Batch Processing|Batch processing]] }}
+{{MenuItem | [[Using the Script Editor|Script Editor]] }}
+{{MenuItem | [[Script Editor Auto Import|Auto Imports]] }}
+{{MenuItem | [[Script_Templates|Templates]] }}
+{{MenuItem | [[Scripting_Headless|Running headlessly]] }}
+{{MenuItem | [[Scripting comparisons|Comparisons]] }}
+{{MenuItem | [[Scripting toolbox|Toolbox]] }}
+{{MenuItem | [[Multithreaded Image Processing in Clojure|Multithreading in Clojure]] }}
+{{MenuItem | [[Multithreaded Image Processing in JavaScript|Multithreading in JavaScript]] }}
+{{MenuItem | [[Chess]] in Jython }}
+| {{#ifeq:{{{1}}}|scripting||collapsed}}
+}}
+{{!}}-
+{{!}}
+{{Submenu | Languages |
+{{MenuItem | [[BeanShell Scripting|BeanShell]] }}
+{{MenuItem | [[Groovy Scripting|Groovy]] }}
+{{MenuItem | [[Introduction into Macro Programming|ImageJ Macro]] }}
+{{MenuItem | [[JavaScript Scripting|JavaScript]] }}
+{{MenuItem | [[Clojure Scripting|Lisp (Clojure)]] }}
+{{MenuItem | [[MATLAB Scripting|MATLAB]] }}
+{{MenuItem | [[Jython Scripting|Python (Jython)]] }}
+{{MenuItem | [[Renjin_Scripting|R (Renjin)]] }}
+{{MenuItem | [[JRuby Scripting|Ruby (JRuby)]] }}
+{{MenuItem | [[Scala Scripting|Scala]] }}
+| {{#ifeq:{{{1}}}|languages||collapsed}}
+}}
+}}
+<noinclude>
+[[Category:Menu]]
+</noinclude>

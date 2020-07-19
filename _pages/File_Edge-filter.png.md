@@ -1,0 +1,1 @@
+Edge response filter.  The ratio of the two principal curvatures (Hessian eigenvalues) of at a detection determines how well it is defined in both dimensions.  A large ratio signalizes an edge response.

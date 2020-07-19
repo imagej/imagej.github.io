@@ -1,0 +1,1 @@
+Upload Cover_in_progress.jpg for CoverMaker_plugin

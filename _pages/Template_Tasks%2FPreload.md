@@ -1,0 +1,16 @@
+{{tasks
+  |requests=
+  |copyedit=
+  |wikify=
+  |merge=
+  |split=
+  |verify=
+  |cleanup=
+  |expand=
+  |disambiguation=
+  |stubs=
+  |update=
+  |npov=
+  |infobox=
+  |other=
+}}

@@ -1,0 +1,1 @@
+Automatic Loader metadata asignment

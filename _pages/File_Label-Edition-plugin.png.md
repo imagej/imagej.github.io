@@ -1,0 +1,1 @@
+Label Edition plugin. From left to right and from top to bottom: overview of the plugin GUI on a 2D label image, result of label merging by manual selection, removal of selected labels, label erosion and removal of largest label.

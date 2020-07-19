@@ -1,0 +1,2 @@
+[[Category:Logos]]
+[[Category:Conference]]

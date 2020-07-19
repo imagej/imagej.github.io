@@ -1,0 +1,1 @@
+HUGE update, DiameterJ now has a user interface on start up, is more streamlined for image analysis, can batch combine analyses, can analyze custom locations in an image, can open .tif, .png, .jpg, .bmp, and .gif files, and can automatically convert units in the output files.
