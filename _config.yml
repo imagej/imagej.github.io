@@ -2,3 +2,5 @@ name: ImageJ
 markdown: kramdown
 kramdown:
   syntax_highlighter: rogue
+plugins:
+  - jekyll-sitemap
