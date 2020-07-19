@@ -1,4 +1,4 @@
-name: ImageJ Webpage Demo 2
+name: ImageJ
 markdown: kramdown
 kramdown:
   syntax_highlighter: rogue
