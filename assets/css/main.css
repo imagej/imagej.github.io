@@ -3056,6 +3056,11 @@ input, select, textarea {
 		margin: 0 0 0 0;
 	}
 
+	.menu hr {
+		border-bottom: solid 1px #000000;
+		margin: 0.5em 0 0 0;
+	}
+
 
 /* Sidebox */
 
