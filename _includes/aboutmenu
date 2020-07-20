@@ -1,1 +1,75 @@
-<span class="aboutmenu">{{include.content}}</span>
+<div class="menu">
+<center><strong><h3>About</h3></strong></center>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <a href="/ImageJ">ImageJ</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <a href="/Usage">Usage</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <a href="/Contributors">Contributors</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <a href="/Governance">Governance</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <a href="/Funding">Funding</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <a href="/Citing">Citing</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <a href="/Contributing">Contributing</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <a href="/Wish_list">Wish list</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
