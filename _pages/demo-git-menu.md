@@ -10,11 +10,11 @@ description: This page demonstrates how to insert the Git menu.
 
 {% raw %}
 ```
-{% include git-menu %}
+{% include gitmenu %}
 ```
 {% endraw %}
 
-{% include git-menu %}
+{% include gitmenu %}
 
 Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
 
