@@ -8,7 +8,7 @@ categories: Development
 description: test description
 ---
 
-\_\_NOTOC\_\_{% include develop-menu content='tutorials' %}If you create a useful extension of ImageJ—e.g., a [plugin](plugin "wikilink"), [script](script "wikilink") or [macro](macro "wikilink")—the next step is to *distribute* it to others, including:
+{% include develop-menu content='tutorials' %}If you create a useful extension of ImageJ—e.g., a [plugin](plugin "wikilink"), [script](script "wikilink") or [macro](macro "wikilink")—the next step is to *distribute* it to others, including:
 
   - **Distribute** the extension itself to users
   - Share the extension's **source code**

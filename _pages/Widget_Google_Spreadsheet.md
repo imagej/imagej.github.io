@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-<noinclude>\_\_NOTOC\_\_ This widget allows you to add **[Google Spreadsheets](http://documents.google.com/support/spreadsheets/)** to your wiki page.
+<noinclude> This widget allows you to add **[Google Spreadsheets](http://documents.google.com/support/spreadsheets/)** to your wiki page.
 
   - Created by [Sergey Chernyshev](http://www.mediawikiwidgets.org/User:Sergey_Chernyshev)
 

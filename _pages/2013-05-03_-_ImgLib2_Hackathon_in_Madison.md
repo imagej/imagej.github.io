@@ -8,7 +8,7 @@ categories: News,ImageJ2,Hackathons
 description: test description
 ---
 
-\_\_NOTOC\_\_ From Saturday, April 27, 2013 through Friday, May 3, 2013, LOCI in Madison hosted Tobias Pietzsch and Stephan Preibisch, two [ImgLib2](ImgLib2 "wikilink") main developers, for a hackathon. Here is a brief summary of overall accomplishments and topics of discussion:
+From Saturday, April 27, 2013 through Friday, May 3, 2013, LOCI in Madison hosted Tobias Pietzsch and Stephan Preibisch, two [ImgLib2](ImgLib2 "wikilink") main developers, for a hackathon. Here is a brief summary of overall accomplishments and topics of discussion:
 
   - Initial version of SCIFIOCellImg
   - Much discussion and ideas and proofs of concept for better OPS

@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-<noinclude>\_\_NOTOC\_\_ This widget allows you to add **[SWF](wikipedia_SWF "wikilink")** content to your wiki page:
+<noinclude> This widget allows you to add **[SWF](wikipedia_SWF "wikilink")** content to your wiki page:
 
 1.  [Upload](Special_Upload "wikilink") the SWF file.
 2.  Embed it in a page using

@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% include sntdeprecation%}
- \_\_NOTOC\_\_
+
 
 This is a list of the most commonly requested (or most important) wishlist items for Simple Neurite Tracer.
 

@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% include sntnavbar%}
-\_\_NOTOC\_\_
+
 
 ## SNT's File Format
 

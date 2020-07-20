@@ -15,7 +15,7 @@ description: test description
   - For information on ""citing"" these projects, see [Citing](Citing "wikilink").' %}
 
 {% include aboutmenu%}
-\_\_NOTOC\_\_== Who we are ==
+== Who we are ==
 
 <div style="font-size: small">
 

@@ -9,7 +9,9 @@ description: test description
 ---
 
 {% include sntnavbar%}
- \_\_NOTOC\_\_ This page contains a list of screencasts that describe SNT capabilities.
+
+
+This page contains a list of screencasts that describe SNT capabilities.
 
 ### Introduction To Tracing
 

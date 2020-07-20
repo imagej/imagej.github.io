@@ -93,8 +93,6 @@ Link to a video demo: https://youtu.be/YZsSWBxcdDM><span style="color:#ce181e;">
 
 </div>
 
-\_\_NOTOC\_\_
-
 ## **Table of Contents**
 
 [1) Install EZFig](#RefHeadingToc27213566485089 "wikilink")

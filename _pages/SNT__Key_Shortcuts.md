@@ -17,8 +17,6 @@ Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically s
 {% endcapture %}
 {% include ambox text=text %}
 
-\_\_NOTOC\_\_
-
 #### Interactive Prompt
 
 These shortcuts are always available:

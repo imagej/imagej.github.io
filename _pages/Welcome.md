@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-<seo google-site-verification="hF8k34axd16e2Zul9i4zyRriSL-W77CVBPnt1j_XDmM" /> \_\_NOTOC\_\_
+<seo google-site-verification="hF8k34axd16e2Zul9i4zyRriSL-W77CVBPnt1j_XDmM" />
 
 <div style="margin: 0 auto; padding: 0 3em 0.5em 0;" align="center">
 

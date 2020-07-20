@@ -15,7 +15,7 @@ description: test description
   - For information on ""citing"" these projects, see [Citing](Citing "wikilink").' %}
 
 {% include aboutmenu%}
-\_\_NOTOC\_\_== ImageJ 1.x ==
+== ImageJ 1.x ==
 
 Historically, [ImageJ 1.x](ImageJ_1.x "wikilink") was funded internally by the [Research Services](http://rsbweb.nih.gov/) branch of the [National Institutes of Health](http://nih.gov/). It is developed by {% include person content='Rasband' %}, who is now retired, and continues his work on ImageJ1 as an NIH special volunteer.
 
