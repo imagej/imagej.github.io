@@ -1,15 +1,17 @@
-{% include menu title="<b>F</b>iji <b>I</b>s <b>J</b>ust <b>I</b>mageJ" content=
+{% include menu title="Git Tutorials" content=
 "
 | :---: |
-| [Overview](/Fiji) |
-| [Using Fiji](/Using_Fiji) |
-| [Featured Fiji Projects](/Featured_Fiji_Projects) |
-| [Fiji/Publications](/Fiji%2FPublications) |
-| [Links](/Links) |
-| {::nomarkdown}<hr>{:/} |
-| <center><b>Developing Fiji</b></center> |
-| [Building Fiji from source](/Downloading_and_Building_Fiji_From_Source) |
-| [Developing Fiji](/Developing_Fiji)
-| [Contribution requirements](/Fiji%2FContribution_requirements) |
+| [Git for dummies](/Git_for_dummies) |
+| [Git in Eclipse(EGit)](/EGit) |
+| [Git mini howto](/Git_mini_howto) |
+| [Git workshop](/Git_workshop) |
+| [Git conflicts](/Git_Conflicts) |
+| [Git topic branches](/Git_topic_branches) |
+| [Git Notes](Git_Notes) |
+| [Git reflogs](Git_reflogs) |
+| [Git submodule tutorial](Git_submodule_tutorial) |
+| [Pinpoint regressions with Git](Pinpoint_regressions_with_Git) |
+| [How to publish a Git repository](How_to_publish_a_Git_repository) |
+| [How to extract a subproject](How_to_extract_a_subproject) |
 "
 %}
