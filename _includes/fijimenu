@@ -1,1 +1,15 @@
-<span class="fijimenu">{{include.content}}</span>
+{% include menu title="<b>F</b>iji <b>I</b>s <b>J</b>ust <b>I</b>mageJ" content=
+"
+| :---: |
+| [Overview](/Fiji) |
+| [Using Fiji](/Using_Fiji) |
+| [Featured Fiji Projects](/Featured_Fiji_Projects) |
+| [Fiji/Publications](/Fiji%2FPublications) |
+| [Links](/Links) |
+| {::nomarkdown}<hr>{:/} |
+| <center><b>Developing Fiji</b></center> |
+| [Building Fiji from source](/Downloading_and_Building_Fiji_From_Source) |
+| [Developing Fiji](/Developing_Fiji)
+| [Contribution requirements](/Fiji%2FContribution_requirements) |
+"
+%}
