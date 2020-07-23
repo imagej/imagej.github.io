@@ -2418,6 +2418,56 @@ input, select, textarea {
 			width: 25%;
 		}
 
+		.image-gallery {
+			display: block;
+			margin: 0 auto;
+			padding: 0.25em;
+		}
+
+/* Gallery */
+
+		.gallery {
+			margin: 2px;
+			padding: 2px;
+			display: block;
+		}
+
+		.gallery a {
+			text-decoration: none;
+		}
+
+		.gallery-item {
+			margin: 20.5px auto;
+		}
+
+		.gallery-text {
+			overflow: hidden;
+			font-size: 94%;
+			padding: 2px 4px;
+			word-wrap: break-word;
+		}
+
+		.gallery-box {
+			text-align: center;
+			border: 1px solid #ccc;
+			background-color: #f9f9f9;
+			margin: 2px;
+
+		}
+
+		.gallery-frame {
+			vertical-align: top;
+			display: inline-block;
+			margin-bottom: 0.375em;
+			margin-top: 0.375em;
+		}
+
+		.gallery-block {
+			margin: 2px;
+			padding: 2px;
+			display: block;
+		}
+
 /* Figure*/
 
 	.figure.left {
