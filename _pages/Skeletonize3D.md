@@ -7,7 +7,7 @@ categories: Plugins,Skeleton
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Skeletonize3D\_' %}2D and 3D skeletonization of binary images.
+{% include component-stats content='sc.fiji:Skeletonize3D\_' %}2D and 3D skeletonization of binary images.
 
 |                                                                                                                     |                                                                                                                             |
 | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |

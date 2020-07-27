@@ -7,7 +7,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:M\_I\_P' %}{% include stub%}
+{% include component-stats content='sc.fiji:M\_I\_P' %}{% include stub%}
 
 
 [Category:Plugins](Category_Plugins "wikilink")

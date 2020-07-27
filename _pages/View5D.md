@@ -7,7 +7,7 @@ categories: Plugins,Visualization
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:View5D\_' %}View5D conveniently allows for the display and navigation through up to 5 dimensional volumetric datasets. It also features some analysis tools such as semiautomatic tracking and scattergrams.
+{% include component-stats content='sc.fiji:View5D\_' %}View5D conveniently allows for the display and navigation through up to 5 dimensional volumetric datasets. It also features some analysis tools such as semiautomatic tracking and scattergrams.
 
 ## Documentation
 

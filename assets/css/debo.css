@@ -5,6 +5,10 @@
     border-radius: 10px;
     margin: 20px;
     padding: 10px;
+}
+
+.thumbnail > a {
+    border-radius: 10px;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -17,7 +21,7 @@
     flex-grow: 1;
 }
 
-a.thumbnail:hover {
+.thumbnail > a:hover {
     border: 0;
     background: #e1e1e3;
 }

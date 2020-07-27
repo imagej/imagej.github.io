@@ -7,7 +7,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:level\_sets' %}<img src="/images/pages/LS.2b.progress.png" width="300"/>
+{% include component-stats content='sc.fiji:level\_sets' %}<img src="/images/pages/LS.2b.progress.png" width="300"/>
 
 ## Level Sets and Fast Marching
 

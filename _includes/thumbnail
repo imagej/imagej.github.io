@@ -1,4 +1,6 @@
-<a class="thumbnail" href="{{include.src}}" data-lightbox="image-{{include.src | split: "/" | last | replace: ".", "-" }}">
-<span class="thumbnail-group"><img src="{{include.src}}"/></span>
-<span markdown="1">{{include.title}}</span>
-</a>
+<div class="thumbnail">
+    <a href="{{include.src}}" data-lightbox="image-{{include.src | split: "/" | last | replace: ".", "-" }}">
+        <span class="thumbnail-group"><img src="{{include.src}}"/></span>
+    </a>
+    <span markdown="1">{{include.title}}</span>
+</div>

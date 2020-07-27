@@ -7,7 +7,7 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Lasso\_and\_Blow\_Tool' %}\[this is under construction\]
+{% include component-stats content='sc.fiji:Lasso\_and\_Blow\_Tool' %}\[this is under construction\]
 
 This selection tool is run from {% include bc content='Plugins | Segmentation | Lasso'%}. Running the plugin adds a new button to the toolbar.
 

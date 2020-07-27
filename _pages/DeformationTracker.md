@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include component-stats content=':net.imagej:ETrack' %} ETrack is a tool, which computes the deformation of elliptically shaped deformed cells such as Embryo cells, imaged by either bright-field or fluorescent microscopy.
+{% include component-stats content='net.imagej:ETrack' %} ETrack is a tool, which computes the deformation of elliptically shaped deformed cells such as Embryo cells, imaged by either bright-field or fluorescent microscopy.
 
 For using ETrack you have to provide a superpixel segmentation map of your cells in the timelapse image along with the original timelapse images coming out of the microscope.
 

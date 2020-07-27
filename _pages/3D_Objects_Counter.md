@@ -7,7 +7,7 @@ categories: Plugins,Particle analysis
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:3D\_Objects\_Counter' %}
+{% include component-stats content='sc.fiji:3D\_Objects\_Counter' %}
 
 ## What does it do ?
 

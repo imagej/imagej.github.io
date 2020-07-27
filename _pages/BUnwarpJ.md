@@ -7,7 +7,7 @@ categories: Plugins,Registration,Citable
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:bUnwarpJ\_' %}{| |style="vertical-align:top" |![bUnwarpJ scheme: bidirectional Unwarping in Java.](/images/pages/BUnwarpJ scheme.png "bUnwarpJ scheme: bidirectional Unwarping in Java.") |}
+{% include component-stats content='sc.fiji:bUnwarpJ\_' %}{| |style="vertical-align:top" |![bUnwarpJ scheme: bidirectional Unwarping in Java.](/images/pages/BUnwarpJ scheme.png "bUnwarpJ scheme: bidirectional Unwarping in Java.") |}
 
 This ImageJ/Fiji plugin performs **2D image registration based on elastic deformations** represented by B-splines. The invertibility of the deformations is enforced through a consistency restriction.
 

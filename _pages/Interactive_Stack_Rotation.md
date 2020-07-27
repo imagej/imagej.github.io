@@ -9,7 +9,7 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Saalfeld' %} ([1](mailto_saalfeld@mpi-cbg.de))
+{% include person content='Saalfeld' %} ([1](mailto:saalfeld@mpi-cbg.de))
 {% endcapture %}
 
 {% capture maintainer%}

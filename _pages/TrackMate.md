@@ -7,7 +7,7 @@ categories: Segmentation,Tracking,Tutorials,Plugins,Citable
 description: test description
 ---
 
-<img src="/images/pages/TrackMate-Logo85x50-color-300p.png" width="160"/> {% include component-stats content=':sc.fiji:TrackMate\_' %}
+<img src="/images/pages/TrackMate-Logo85x50-color-300p.png" width="160"/> {% include component-stats content='sc.fiji:TrackMate\_' %}
 
 ## Citation
 

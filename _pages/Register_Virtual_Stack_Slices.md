@@ -7,7 +7,7 @@ categories: Plugins,Registration,TrakEM2
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:register\_virtual\_stack\_slices' %}{| |style="vertical-align:top" |![Register Virtual Stack scheme - All images are transformed to match the reference](/images/pages/Rvs scheme.png "Register Virtual Stack scheme - All images are transformed to match the reference") |}
+{% include component-stats content='sc.fiji:register\_virtual\_stack\_slices' %}{| |style="vertical-align:top" |![Register Virtual Stack scheme - All images are transformed to match the reference](/images/pages/Rvs scheme.png "Register Virtual Stack scheme - All images are transformed to match the reference") |}
 
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas). One of the images in the sequence can be selected by the user as **reference** and it will remain intact.
 

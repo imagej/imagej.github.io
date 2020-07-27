@@ -7,7 +7,7 @@ categories: Plugins,Segmentation,Citable
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:BalloonSegmentation\_' %}== Balloon Segmentation for multicellular images ==
+{% include component-stats content='sc.fiji:BalloonSegmentation\_' %}== Balloon Segmentation for multicellular images ==
 
 ### Introduction
 

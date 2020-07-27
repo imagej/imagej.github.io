@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-<img src="/images/pages/MTracker NewLogo-04.png" width="250"/> {% include component-stats content=':net.imagej:MTrack' %}
+<img src="/images/pages/MTracker NewLogo-04.png" width="250"/> {% include component-stats content='net.imagej:MTrack' %}
 
 MTrack is a tool, which detects, tracks, and measures the behavior of fluorescently labeled microtubules imaged by TIRF (total internal reflection fluorescence) microscopy. In such an in vitro reconstitution approach, stabilized, non-dynamic microtubule seeds serve as nucleation points for dynamically growing microtubules. 
 

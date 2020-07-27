@@ -9,7 +9,7 @@ description: test description
 
 {% include ambox text='Please note that, this plugin is focused on biology research. This web page doesn"t provide a complete explanation of usability. Deep detailed information can be found in the manuscript: ["""EpiGraph: an open-source platform to quantify epithelial organization"""](https://www.biorxiv.org/content/10.1101/217521v2) , and in the official lab website: https://www.scutoids.es/ ' %}
 
-{% include component-stats content=':EpiGraph' %}{| |style="vertical-align:top" | |}{% include toc%}
+{% include component-stats content='EpiGraph' %}{| |style="vertical-align:top" | |}{% include toc%}
 
 
 ## **Introduction**

@@ -7,7 +7,7 @@ categories: Plugins,Segmentation,Tutorials
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:RATS\_' %}Robust Automatic Threshold Selection (RATS) computes a threshold map for a 2d image based upon the value of pixels and their gradients.
+{% include component-stats content='sc.fiji:RATS\_' %}Robust Automatic Threshold Selection (RATS) computes a threshold map for a 2d image based upon the value of pixels and their gradients.
 
 ## Background
 

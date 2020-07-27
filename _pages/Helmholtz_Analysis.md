@@ -7,7 +7,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Helmholtz\_Analysis' %}This plugin allows to analyze local direction and frequency of sinusoidal waves. The output are optionally smoothed *lambda* (inversely proportional to the frequency) and *phi* (direction in degrees).
+{% include component-stats content='sc.fiji:Helmholtz\_Analysis' %}This plugin allows to analyze local direction and frequency of sinusoidal waves. The output are optionally smoothed *lambda* (inversely proportional to the frequency) and *phi* (direction in degrees).
 
 See also http://www.optinav.info/Helmholtz_Analysis.htm
 

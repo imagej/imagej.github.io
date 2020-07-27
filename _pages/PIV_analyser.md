@@ -7,7 +7,7 @@ categories: Plugins,Optic Flow,Citable
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:PIV\_analyser' %}This plugin calculates the optic flow for each pair of images made with the given stack.
+{% include component-stats content='sc.fiji:PIV\_analyser' %}This plugin calculates the optic flow for each pair of images made with the given stack.
 
 ## Principle
 

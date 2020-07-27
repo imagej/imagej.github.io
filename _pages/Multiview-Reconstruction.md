@@ -7,7 +7,7 @@ categories: Plugins,Citable,Transform,Registration,Deconvolution,ImgLib,Integral
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:SPIM\_Registration' %}
+{% include component-stats content='sc.fiji:SPIM\_Registration' %}
 
 ## Download
 

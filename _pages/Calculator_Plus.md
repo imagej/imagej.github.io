@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Calculator\_Plus' %}See https://imagej.net/plugins/calculator-plus.html for documentation.
+{% include component-stats content='sc.fiji:Calculator\_Plus' %}See https://imagej.net/plugins/calculator-plus.html for documentation.

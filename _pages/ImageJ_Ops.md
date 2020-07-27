@@ -7,7 +7,7 @@ categories: Ops
 description: test description
 ---
 
-{% include component-stats content=':net.imagej:imagej-ops' %}ImageJ Ops is a framework for reusable image processing operations. Ops extends Java's mantra of "write once, run anywhere" to image processing algorithms.
+{% include component-stats content='net.imagej:imagej-ops' %}ImageJ Ops is a framework for reusable image processing operations. Ops extends Java's mantra of "write once, run anywhere" to image processing algorithms.
 
 The central goal is to enable programmers to code an image processing algorithm in the Ops framework, which is then usable as-is from any [SciJava](SciJava "wikilink")-compatible software project, such as [ImageJ](ImageJ "wikilink"), [CellProfiler](CellProfiler "wikilink"), [KNIME](KNIME "wikilink"), [OMERO](OMERO "wikilink") and [Alida](Alida "wikilink"). {% include toc content='small' %} {% include develop-menu content='tutorials' %}
 

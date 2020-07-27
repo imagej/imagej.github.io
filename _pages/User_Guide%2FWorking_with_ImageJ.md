@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include displaytitle content=':Working with ImageJ' %}
+{% include displaytitle content='Working with ImageJ' %}
 
 This part introduces some basic aspects of ImageJ so that you can use the software more efficiently. It also introduces some important terms and concepts used throughout this guide. You may skip it if you already use the program efficiently and are familiar with terms such as [Virtual Stacks↓](#sub_Virtual-Stacks "wikilink"), [Hyperstacks↓](#sub_Hyperstacks-Intro "wikilink"), [Pseudocolor Images↓](#sub_Pseudocolor-Images "wikilink"), [Color Composite Images↓](#sub_Color-Composites "wikilink") or [Composite Selections↓](#sub_Composite-selections "wikilink").
 

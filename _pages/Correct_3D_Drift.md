@@ -7,7 +7,7 @@ categories: Plugins,Registration,Citable
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Correct\_3D\_Drift' %}This Fiji menu command is implemented by the script {% include github org='fiji ' repo='Correct\_3D\_Drift ' path='src/main/resources/scripts/Plugins/Registration/Correct\_3D\_drift.py ' label='Correct\_3D\_Drift.py ' %}.
+{% include component-stats content='sc.fiji:Correct\_3D\_Drift' %}This Fiji menu command is implemented by the script {% include github org='fiji ' repo='Correct\_3D\_Drift ' path='src/main/resources/scripts/Plugins/Registration/Correct\_3D\_drift.py ' label='Correct\_3D\_Drift.py ' %}.
 
 1.  The script expects the currently open and active image to be a hyperstack (or virtual hyperstack) consisting of 2D or 3D volumes over time. The script registers the time points to each other using the phase correlation implementation of [ImgLib 1](Imglib "wikilink").
 2.  Once implemented a dialogue box will request the use to select the color channel to use for registration.

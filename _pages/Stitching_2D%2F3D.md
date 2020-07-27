@@ -9,7 +9,7 @@ description: test description
 
 {% include warning-box content='""Please note that this version of the Stitching is deprecated. A new version is available here: [Image Stitching](Image_Stitching "wikilink")""' %}
 
-{% include component-stats content=':sc.fiji:Stitching\_' %}
+{% include component-stats content='sc.fiji:Stitching\_' %}
 
 ## Citation
 

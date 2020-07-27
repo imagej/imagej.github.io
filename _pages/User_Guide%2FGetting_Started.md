@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include displaytitle content=':Getting Started' %}
+{% include displaytitle content='Getting Started' %}
 
 This part provides basic information on ImageJ installation, troubleshooting and update strategies. It discusses [Fiji↓](#sub_Fiji-intro "wikilink")[↓](#nom-fiji "wikilink") and [ImageJ2↓](#sub_ImageJ2intro "wikilink") as well as third-party software related to ImageJ. Being impossible to document all the capabilities of ImageJ without exploring technical aspects of image processing, external resources allowing willing readers to know more about digital signal processing are also provided.
 

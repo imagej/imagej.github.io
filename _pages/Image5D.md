@@ -7,7 +7,7 @@ categories: Plugins,Visualization
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Image\_5D' %}This page supersedes the [original Image5D page](https://imagej.net/plugins/image5d.html) from the ImageJ 1.x documentation.
+{% include component-stats content='sc.fiji:Image\_5D' %}This page supersedes the [original Image5D page](https://imagej.net/plugins/image5d.html) from the ImageJ 1.x documentation.
 
 {% include info-box content='Please consider using the built-in [hyperstacks](https://imagej.net/docs/guide/146-8.html) functionality in ImageJ, since it is newer and more well-integrated than this old Image5D plugin.' %}
 

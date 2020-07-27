@@ -7,7 +7,7 @@ categories: Citable
 description: test description
 ---
 
-{% include component-stats content=':io.scif:scifio' %}[SCIFIO](https://scif.io/) is a flexible framework for **SC**ientific **I**mage **F**ormat **I**nput and **O**utput. In other words, it is a library for reading and writing N-dimensional image data—e.g., to and from files on disk. SCIFIO is built on the [SciJava Common](SciJava_Common "wikilink") library.
+{% include component-stats content='io.scif:scifio' %}[SCIFIO](https://scif.io/) is a flexible framework for **SC**ientific **I**mage **F**ormat **I**nput and **O**utput. In other words, it is a library for reading and writing N-dimensional image data—e.g., to and from files on disk. SCIFIO is built on the [SciJava Common](SciJava_Common "wikilink") library.
 
 [ImageJ2](ImageJ2 "wikilink") uses SCIFIO by default for most image input tasks. You can change this behavior at any time by running {% include bc content='Edit | Options | ImageJ2'%} and modifying the *Use SCIFIO when opening files* option.
 

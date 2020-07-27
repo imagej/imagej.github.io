@@ -7,7 +7,7 @@ categories: Plugins,Segmentation,Machine Learning,Citable
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Trainable\_Segmentation' %}{| |style="vertical-align:top" |![Trainable Weka Segmentation pipeline overview.](/images/pages/TWS-pipeline.png "Trainable Weka Segmentation pipeline overview.") |}{% include toc%}
+{% include component-stats content='sc.fiji:Trainable\_Segmentation' %}{| |style="vertical-align:top" |![Trainable Weka Segmentation pipeline overview.](/images/pages/TWS-pipeline.png "Trainable Weka Segmentation pipeline overview.") |}{% include toc%}
  **Trainable**: this plugin can be trained to learn from the user input and perform later the same task in unknown (test) data.
 
 **Weka**: it makes use of all the powerful tools and classifiers from the latest version of [Weka](http://www.cs.waikato.ac.nz/ml/weka/).

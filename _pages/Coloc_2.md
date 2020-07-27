@@ -7,7 +7,7 @@ categories: Colocalization,Color processing,Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Colocalisation\_Analysis' %}= What is Coloc 2 =
+{% include component-stats content='sc.fiji:Colocalisation\_Analysis' %}= What is Coloc 2 =
 
 Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs the pixel intensity correlation over space methods of {% include wikipedia title='Pearson product-moment correlation coefficient' text='Pearson'%}, [Manders](Media_Manders.pdf "wikilink"), [Costes](Media_Costes_etalColoc.pdf "wikilink"), [Li](Media_LietAlColoc.pdf "wikilink") and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 

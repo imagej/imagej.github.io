@@ -7,7 +7,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:CorrectBleach\_' %}The plugin was made available by {% include person content='Miura' %} and Jens Rietdorf and the full documentation is available [at EMBL's site](http://cmci.embl.de/downloads/bleach_corrector).
+{% include component-stats content='sc.fiji:CorrectBleach\_' %}The plugin was made available by {% include person content='Miura' %} and Jens Rietdorf and the full documentation is available [at EMBL's site](http://cmci.embl.de/downloads/bleach_corrector).
 
 This plugin contains three different methods for correcting the intensity decay due to photobleaching. They all work with either 2D or 3D time series. In case of 3D time series, image properties should be appropriately set. If you are not sure, check your image header by \[Image → Properties\].
 

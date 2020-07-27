@@ -7,7 +7,7 @@ categories: Plugins,TrakEM2
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Fiji\_Archipelago' %}Fiji Archipelago is a plugin that brings Cluster functionality to Fiji
+{% include component-stats content='sc.fiji:Fiji\_Archipelago' %}Fiji Archipelago is a plugin that brings Cluster functionality to Fiji
 
 ## Overview
 

@@ -7,5 +7,5 @@ categories:
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:CPU\_Meter' %}{% include stub%}
+{% include component-stats content='sc.fiji:CPU\_Meter' %}{% include stub%}
 

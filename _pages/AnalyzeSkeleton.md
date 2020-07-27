@@ -7,7 +7,7 @@ categories: Plugins,Skeleton,Analysis,Neuroanatomy,Citable
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:AnalyzeSkeleton\_' %}Analysis of 2D and 3D skeleton images. For the ImageJ 1.x plugin, see [this page](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start).
+{% include component-stats content='sc.fiji:AnalyzeSkeleton\_' %}Analysis of 2D and 3D skeleton images. For the ImageJ 1.x plugin, see [this page](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start).
 
 |                                                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------------------ |

@@ -7,7 +7,7 @@ categories: Analysis,Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Directionality\_' %}
+{% include component-stats content='sc.fiji:Directionality\_' %}
 
 ## Usage
 

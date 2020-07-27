@@ -9,7 +9,7 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Acsenrafilho' %} ([1](mailto_acsenrafilho@gmail.com))
+{% include person content='Acsenrafilho' %} ([1](mailto:acsenrafilho@gmail.com))
 {% endcapture %}
 
 {% capture maintainer%}

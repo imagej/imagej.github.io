@@ -7,7 +7,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Time\_Lapse' %}{% include stub%}
+{% include component-stats content='sc.fiji:Time\_Lapse' %}{% include stub%}
 
 
 [Category:Plugins](Category_Plugins "wikilink")

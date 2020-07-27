@@ -7,7 +7,7 @@ categories: Visualization,Citable
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:bigdataviewer\_fiji' %}
+{% include component-stats content='sc.fiji:bigdataviewer\_fiji' %}
 
 ## Description
 

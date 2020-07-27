@@ -51,8 +51,8 @@ Please note that :
 
 ## Authors
 
-`OMEVisual` has been created by [Hadrien Mary](mailto_hadrien.mary@gmail.com).
+`OMEVisual` has been created by [Hadrien Mary](mailto:hadrien.mary@gmail.com).
 
-This work started in 2016 at the [Gary Brouhard laboratory](http_//brouhardlab.mcgill.ca/) at the University of McGill.
+This work started in 2016 at the [Gary Brouhard laboratory](http://brouhardlab.mcgill.ca/) at the University of McGill.
 
-[Category_Plugins](Category_Plugins "wikilink") [Category:OME](Category_OME "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:OME](Category_OME "wikilink")

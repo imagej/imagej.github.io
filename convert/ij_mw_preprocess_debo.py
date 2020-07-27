@@ -16,7 +16,7 @@ txt_capture_end = "%JJ%"
 txt_youtube = "%KK%"
 txt_single_quote = "%LL%"
 
-template_regex = r'(((?<=\n)[ ]*)*(?<!<nowiki>)\{\{[\n ]*([A-Za-z0-9_]*)[ \n]*\|?[ \n]*(([\s\S]*?))\}\})'
+template_regex = r'(((?<=\n)[ ]*)*(?<!<nowiki>)\{\{[\n ]*([A-Za-z0-9_]*)[ \n]*\:?\|?[ \n]*(([\s\S]*?))\}\})'
 template_parameter_regex = r'(\w+([ ]\w+)*)[ ]*=[ ]*([^|]*)'
 include_regex = r'((\n )*\{\%[\n ]*include\ ([^\ \n]*)([^\%]*)\%\})'
 include_shadowed_regex = r'(' + txt_include_start + '.+?(?=(' + txt_liquid_linebreak_end + '|' + txt_liquid_end + '))(' + txt_liquid_linebreak_end + '|' + txt_liquid_end + '))'
@@ -515,7 +515,7 @@ def convert(path_in, path_out, layout, title):
         # do replacements in md format
         content_tmp = reveal_includes(content_tmp)
         content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
-        content_tmp = re.sub(r'(\[[^\]]*\]\()((?!http)[^\"]*)(\"[^\"]*\"\))', fix_link_match, content_tmp)
+        content_tmp = re.sub(r'(\[[^\]]*\]\()((?!http)(?!mailto\:)[^\"]*)(\"[^\"]*\"\))', fix_link_match, content_tmp)
         content_tmp = re.sub(r'<img src=\"(?!http)(?!/images/pages/)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
         content_tmp = re.sub(r'(\!\[[^\]]*\]\()((?!\/images\/pages\/)[^\"\)]*)([ \n]*\"[^\"]*\"[ ]*\))', fix_md_image, content_tmp)
 

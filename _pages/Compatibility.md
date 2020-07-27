@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include component-stats content=':net.imagej:imagej-legacy' %}Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing plugins and macros with new versions of [ImageJ](ImageJ "wikilink").
+{% include component-stats content='net.imagej:imagej-legacy' %}Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing plugins and macros with new versions of [ImageJ](ImageJ "wikilink").
 
 ## ImageJ Legacy
 

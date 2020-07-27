@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include component-stats content=':net.imagej:imagej-common' %}The ImageJ Common library contains ImageJ's core image data model, based on the [ImgLib2](ImgLib2 "wikilink") library for multidimensional image data processing, as well as the corresponding core image display logic for user interfaces, based on the [SciJava Common](SciJava_Common "wikilink") application framework.
+{% include component-stats content='net.imagej:imagej-common' %}The ImageJ Common library contains ImageJ's core image data model, based on the [ImgLib2](ImgLib2 "wikilink") library for multidimensional image data processing, as well as the corresponding core image display logic for user interfaces, based on the [SciJava Common](SciJava_Common "wikilink") application framework.
 
 
 {% capture person%}

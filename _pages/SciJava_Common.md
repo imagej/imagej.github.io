@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include component-stats content=':org.scijava:scijava-common' %}SciJava Common is a common library for [SciJava](SciJava "wikilink") software. It provides a plugin framework, with an extensible mechanism for service discovery, backed by its own annotation processor, so that plugins can be loaded dynamically. It is used by both [ImageJ](ImageJ "wikilink") and [SCIFIO](SCIFIO "wikilink").
+{% include component-stats content='org.scijava:scijava-common' %}SciJava Common is a common library for [SciJava](SciJava "wikilink") software. It provides a plugin framework, with an extensible mechanism for service discovery, backed by its own annotation processor, so that plugins can be loaded dynamically. It is used by both [ImageJ](ImageJ "wikilink") and [SCIFIO](SCIFIO "wikilink").
 
 # Plugin framework
 

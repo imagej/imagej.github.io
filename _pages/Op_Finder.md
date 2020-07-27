@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include component-stats content=':net.imagej:op-finder' %}The Op Finder is a utility for the browsing, learning, and running of all available {% include github org='imagej ' groupId='imagej-ops ' label='Ops ' %}. Because Ops are plugins and can be dynamically extended and specialized for particular inputs, it is not practical to have static documentation on a given Op. By using the Op Finder, you are able to explore the actual list of Ops available in *your* installation. The purpose of this guide is to familiarize yourself with the basic capabilities of the Op Finder, enabling you to learn and experiment with Ops.
+{% include component-stats content='net.imagej:op-finder' %}The Op Finder is a utility for the browsing, learning, and running of all available {% include github org='imagej ' groupId='imagej-ops ' label='Ops ' %}. Because Ops are plugins and can be dynamically extended and specialized for particular inputs, it is not practical to have static documentation on a given Op. By using the Op Finder, you are able to explore the actual list of Ops available in *your* installation. The purpose of this guide is to familiarize yourself with the basic capabilities of the Op Finder, enabling you to learn and experiment with Ops.
 
 # Getting started
 

@@ -30,7 +30,7 @@ As a consequence of its generic aims, the library allows and requires a differen
 ## References
 
 1.  [ImageJ Conference 2010](http://imagejconf.tudor.lu/program/doku.php?id=:program:workshops:preibisch:start) programme entry
-2.  [Fiji-devel mailing list](mailto_fiji@fiji.sc) discusses imglib development and questions
+2.  [Fiji-devel mailing list](mailto:fiji@fiji.sc) discusses imglib development and questions
 3.  [More about ImgLib on the Fiji wiki](Imglib "wikilink")
 
 [Category:ImgLib](Category_ImgLib "wikilink")

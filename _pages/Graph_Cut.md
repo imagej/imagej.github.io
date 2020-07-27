@@ -7,7 +7,7 @@ categories: Segmentation,Tutorials,Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Graph\_Cut' %} <img src="/images/pages/Mito-sample.png" width="350"/>
+{% include component-stats content='sc.fiji:Graph\_Cut' %} <img src="/images/pages/Mito-sample.png" width="350"/>
 
 The Graph Cut plugin provides a way to obtain a globally smooth binary segmentation. As input, you have to provide a gray-scale image that represents the pixel affinities for belonging to the foreground. Via a single parameter you can adjust the smoothness of the segmentation.
 

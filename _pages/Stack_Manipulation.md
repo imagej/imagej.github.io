@@ -7,7 +7,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Stack\_Manipulation' %}
+{% include component-stats content='sc.fiji:Stack\_Manipulation' %}
 
 ## Content and purpose
 

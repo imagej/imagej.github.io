@@ -7,7 +7,7 @@ categories: Plugins,Visualization
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Volume\_Viewer' %}3D reslicing and threshold-enabled 3D visualization.
+{% include component-stats content='sc.fiji:Volume\_Viewer' %}3D reslicing and threshold-enabled 3D visualization.
 
 Non-hardware accelerated volume rendering in different modalities.
 

@@ -7,7 +7,7 @@ categories: Plugins,Import-Export
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Vaa3d\_Reader' %}{% include stub%}
+{% include component-stats content='sc.fiji:Vaa3d\_Reader' %}{% include stub%}
 
 
 [Category:Plugins](Category_Plugins "wikilink") [Category:Import-Export](Category_Import-Export "wikilink")

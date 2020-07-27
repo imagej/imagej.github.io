@@ -7,7 +7,7 @@ categories: Plugins,Registration
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:SPIM\_Registration' %}
+{% include component-stats content='sc.fiji:SPIM\_Registration' %}
 
 ## Important Note
 

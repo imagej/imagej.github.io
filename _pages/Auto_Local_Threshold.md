@@ -7,7 +7,7 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Auto\_Threshold' %}This plugin binarises 8-bit images using various **local** thresholding methods. By 'local' here is meant that the threshold is computed for each pixel according to the image characteristings within a window of radius **r** (in pixel units) around it. The segmented phase is always shown as white (255).
+{% include component-stats content='sc.fiji:Auto\_Threshold' %}This plugin binarises 8-bit images using various **local** thresholding methods. By 'local' here is meant that the threshold is computed for each pixel according to the image characteristings within a window of radius **r** (in pixel units) around it. The segmented phase is always shown as white (255).
 
 For **global** thresholding rather than local, see the [Auto Threshold](Auto_Threshold "wikilink") plugin.
 

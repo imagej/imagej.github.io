@@ -9,7 +9,7 @@ description: test description
 
 {% include user-box name='Nick Perry ' github='nickp ' %}== Contact ==
 
-You can contact me by [courier pigeon](mailto_nicholas.m.perry_at_gmail.com).
+You can contact me by [courier pigeon](mailto:nicholas.m.perry_at_gmail.com).
 
 ## Plugins
 

@@ -7,5 +7,5 @@ categories:
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Archipelago\_Plugins' %}{% include stub%}
+{% include component-stats content='sc.fiji:Archipelago\_Plugins' %}{% include stub%}
 

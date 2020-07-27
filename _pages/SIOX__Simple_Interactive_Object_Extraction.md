@@ -7,7 +7,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Siox\_Segmentation' %}
+{% include component-stats content='sc.fiji:Siox\_Segmentation' %}
 
 <div style="float: left">
 

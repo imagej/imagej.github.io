@@ -50,7 +50,7 @@ description: test description
 
 ## For developers
 
-{% include template content=':Outdated' %}
+{% include template content='Outdated' %}
 
 Please try to avoid closed-source plugins.
 

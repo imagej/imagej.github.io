@@ -17,7 +17,7 @@ description: test description
 {% capture source%}
 {% include github repo='fiji ' path='plugins/Scripts/Image/Hyperstacks/Temporal-Color\_Code.ijm ' %}
 {% endcapture %}
-{% include info-box name='Temporal-Color Code ' software='Fiji ' author=author maintainer=' [Kota Miura](http://cmci.embl.de) ([1](mailto_miura@embl.de)) ' source=source released='29 Nov 2010 ' latest-version='29 Nov 2010 ' status='beta ' %}
+{% include info-box name='Temporal-Color Code ' software='Fiji ' author=author maintainer=' [Kota Miura](http://cmci.embl.de) ([1](mailto:miura@embl.de)) ' source=source released='29 Nov 2010 ' latest-version='29 Nov 2010 ' status='beta ' %}
 
 ## Temporal-Color Code
 
@@ -31,4 +31,4 @@ With a hyperstack window activated (at the most front among other images), selec
 
 In dialog window, select a LUT from drop down menu. Selected LUT will be used for color coding the time. You could also set the range of frames to be coded. Default is full frames. There is also an option check-box for generating color-scale bar in separate window. This will show correspondence between color and frame number in the color coded image.
 
-[Category_Plugins](Category_Plugins "wikilink") [Category:Color processing](Category_Color_processing "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Color processing](Category_Color_processing "wikilink")
