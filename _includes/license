@@ -1,1 +1,17 @@
-<div class="license">{{include.content}}</div>
+{% include menu title="Licenses" content=
+"
+| :---: |
+| [Overview](/Licensing) |
+| {::nomarkdown}<hr>{:/} |
+| <center><b>Open Source</b></center> |
+| [Apache](/Apache) |
+| [BSD](/BSD) |
+| [GPL](/GPL) |
+| [LGPL](/LGPL) |
+| [MIT](/MIT) |
+| [Public domain](/Public_Domain) |
+| {::nomarkdown}<hr>{:/} |
+| <center><b>Proprietary</b></center> |
+| [BIG](/BIG_License) |
+" 
+%}
