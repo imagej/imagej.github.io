@@ -18,7 +18,7 @@ ImageJ is funded by taxpayer money, so the project strives to be as transparent 
 
 ## Independent learning
 
-> Tell me and I forget. Teach me and I remember. Involve me and I learn. —[Xunzi](wikipedia_Xun_Kuang "wikilink")
+> Tell me and I forget. Teach me and I remember. Involve me and I learn. —{% include wikipedia title='Xun Kuang' text='Xunzi'%}
 
 The ImageJ and SciJava communities intend to foster not only scientific *independent thinking*, but just as importantly, *[independent learning](http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf)*. We want to not only [teach people how to fish](https://en.wiktionary.org/wiki/give_a_man_a_fish_and_you_feed_him_for_a_day;_teach_a_man_to_fish_and_you_feed_him_for_a_lifetime), but *teach them how to learn*.
 
@@ -30,7 +30,7 @@ We are always looking for more ways to improve the software to meet this goal of
 
 [Extensibility](Extensibility "wikilink") is [ImageJ](ImageJ "wikilink")'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](_Category_Visualization "wikilink"), [segmentation](segmentation "wikilink"), [registration](_Category_Registration "wikilink"), and [analysis](_Category_Analysis "wikilink") routines.
 
-Isaac Newton attributed his success to [standing on the shoulders of giants](wikipedia_Standing_on_the_shoulders_of_giants "wikilink"). The [SciJava component collection](Architecture "wikilink")'s powerful [plugin](plugin "wikilink") mechanism and [open source](open_source "wikilink") software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](Extensibility "wikilink") page for details.
+Isaac Newton attributed his success to {% include wikipedia title='Standing on the shoulders of giants' text='standing on the shoulders of giants'%}. The [SciJava component collection](Architecture "wikilink")'s powerful [plugin](plugin "wikilink") mechanism and [open source](open_source "wikilink") software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](Extensibility "wikilink") page for details.
 
 ## Interoperability
 
@@ -170,13 +170,13 @@ More
 
 </table>
 
-' %} ImageJ subscribes to the [release early, release often](wikipedia_Release_early,_release_often "wikilink") (RERO) mantra often cited in software engineering circles. In particular—and especially because there is a small core development team—the project is driven by [Boyd's Law of Iteration](http://blog.codinghorror.com/boyds-law-of-iteration/): **speed of iteration beats quality of iteration**. That is not to say that we do not strive for quality—we do. But we have found through experience that more releases, together with guiding user feedback, push a project forward more efficiently than a slower release cycle does.
+' %} ImageJ subscribes to the {% include wikipedia title='Release early, release often' text='release early, release often'%} (RERO) mantra often cited in software engineering circles. In particular—and especially because there is a small core development team—the project is driven by [Boyd's Law of Iteration](http://blog.codinghorror.com/boyds-law-of-iteration/): **speed of iteration beats quality of iteration**. That is not to say that we do not strive for quality—we do. But we have found through experience that more releases, together with guiding user feedback, push a project forward more efficiently than a slower release cycle does.
 
 To ensure releases can happen quickly, each SciJava component is independently released and versioned, using [reproducible builds](Architecture#Reproducible_builds "wikilink") with a "release ready" `master` branch. This allows individual SciJava components to be released with the [push of a button](Travis_CI "wikilink"), in a *timespan less than five minutes*. This puts bug-fixes into the hands of users as quickly as possible.
 
 ## Convention over configuration
 
-With increased [modularity](modularity "wikilink") often comes increased complexity. One key way of addressing this issue is to provide sensible defaults (e.g., the [big green Xerox button](http://athinkingperson.com/2010/06/02/where-the-big-green-copier-button-came-from/)) as a way of dealing with complex software programs. We embrace the philosophy of [convention over configuration](wikipedia_Convention_over_configuration "wikilink") utilized by many large software projects in recent years. For this reason, SciJava projects use the [Maven](Maven "wikilink") build tool for [project management](project_management "wikilink").
+With increased [modularity](modularity "wikilink") often comes increased complexity. One key way of addressing this issue is to provide sensible defaults (e.g., the [big green Xerox button](http://athinkingperson.com/2010/06/02/where-the-big-green-copier-button-came-from/)) as a way of dealing with complex software programs. We embrace the philosophy of {% include wikipedia title='Convention over configuration' text='convention over configuration'%} utilized by many large software projects in recent years. For this reason, SciJava projects use the [Maven](Maven "wikilink") build tool for [project management](project_management "wikilink").
 
 ## Why Java?
 

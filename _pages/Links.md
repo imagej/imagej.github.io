@@ -14,8 +14,8 @@ description: test description
   - [Fluorescence image analysis introduction](http://blogs.qub.ac.uk/ccbg/fluorescence-image-analysis-intro/)
   - [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php)
   - [About the relationship between ImageJ2 and Fiji](http://imagej-dev.org/2010/04/07/recent-fiji-imagej2-presentations)
-  - [Wikipedia page on ImageJ](wikipedia_ImageJ "wikilink")
-  - [Wikipedia page on Fiji](wikipedia_Fiji_\(software\) "wikilink")
+  - {% include wikipedia title='ImageJ' text='Wikipedia page on ImageJ'%}
+  - {% include wikipedia title='Fiji (software)' text='Wikipedia page on Fiji'%}
   - [Fiji on OHLOH](http://www.ohloh.net/p/therealfiji)
   - [ObjectJ](http://simon.bio.uva.nl/objectj/)
 

@@ -58,8 +58,8 @@ A more detailed explanation of the algorithm can be found at following links:
 
   - Book: [Insight Into Images Principles and Practice for Segmentation, Registration and Image Analysis](http://www.akpeters.com/product.asp?ProdCode=2175)
   - [ITK online documentation](http://www.itk.org/ItkSoftwareGuide.pdf), Chapter 9.3
-  - [Wikipedia Fast Marching](wikipedia_Fast_marching "wikilink")
-  - [Wikipedia Level Sets](wikipedia_Level_set "wikilink")
+  - {% include wikipedia title='Fast marching' text='Wikipedia Fast Marching'%}
+  - {% include wikipedia title='Level set' text='Wikipedia Level Sets'%}
 
 An upcoming future implementation will add geodesic active contours as described by Caselles et.al.
 

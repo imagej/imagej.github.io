@@ -8,7 +8,7 @@ description: test description
 ---
 
 {% include menu-formats%}
-[Digital Imaging and Communications in Medicine (DICOM)](wikipedia_DICOM "wikilink") is a standard for handling, storing, printing, and transmitting information in medical imaging.
+{% include wikipedia title='DICOM' text='Digital Imaging and Communications in Medicine (DICOM)'%} is a standard for handling, storing, printing, and transmitting information in medical imaging.
 
 ## How to read DICOM files into ImageJ?
 

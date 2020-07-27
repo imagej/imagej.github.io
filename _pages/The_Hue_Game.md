@@ -17,7 +17,7 @@ This game is based on an online demonstration of [xrite.com](http://www.xrite.co
   - how to override ImageJ1's mouse listeners from a script
   - that you can have fun in Fiji
 
-It is also educating to play with the hues that are displayed. The script represents colors in the [CIELab space](wikipedia_CIELAB "wikilink"). The *L* axis represents the luminance. The *a* and *b* axes represent the hue (*a* is often referred to as the green/red axis and *b* as yellow/blue one, but this is not quite an accurate notion).
+It is also educating to play with the hues that are displayed. The script represents colors in the {% include wikipedia title='CIELAB' text='CIELab space'%}. The *L* axis represents the luminance. The *a* and *b* axes represent the hue (*a* is often referred to as the green/red axis and *b* as yellow/blue one, but this is not quite an accurate notion).
 
 The four grid lines of the game display evenly spaced color samples along the sides of a quadrilateral in the plane defined by *L = 72*.
 

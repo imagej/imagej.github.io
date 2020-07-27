@@ -496,7 +496,7 @@ Both, **RealRandomAccess** and **RealCursor** are **RealLocalizable**. Note that
 
 ### A RealRandomAccess to Render Mandelbrot Fractals
 
-Let's look at an example. The following code defines a **RealRandomAccess** which computes the [Mandelbrot set](wikipedia_Mandelbrot_set "wikilink"). More precisely, our **RealRandomAccess** can be positioned at an arbitray 2D coordinate in the complex plane. When we **get()** its value, it computes an iteration count for its current position using an [Escape time algorithm](wikipedia_Mandelbrot_set#Escape_time_algorithm "wikilink")
+Let's look at an example. The following code defines a **RealRandomAccess** which computes the {% include wikipedia title='Mandelbrot set' text='Mandelbrot set'%}. More precisely, our **RealRandomAccess** can be positioned at an arbitray 2D coordinate in the complex plane. When we **get()** its value, it computes an iteration count for its current position using an {% include wikipedia title='Mandelbrot set\#Escape\_time\_algorithm' text='Escape time algorithm'%}
 
 ``` java
 import net.imglib2.RealPoint;

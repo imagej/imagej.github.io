@@ -228,9 +228,9 @@ def myRoutines():
 
 
 {% capture tip%}
-Note also that there is an \_\_\_SHADOW2\_\_\_ (but less flexible) way to \_\_\_SHADOW3\_\_\_ a folder: The built-in <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span> \_\_\_SHADOW4\_\_\_.
+Note also that there is an \_\_\_SHADOW3\_\_\_ (but less flexible) way to \_\_\_SHADOW4\_\_\_ a folder: The built-in <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span> \_\_\_SHADOW5\_\_\_.
 
-In this case, you only need to paste the contents of your `myRoutines()` function into the text area of the command. However, by default, <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span> assumes you want to process ""all"" the files in a directory. If that is not the case, i.e., you want to restrict the processing to certain file types, you will have to use \_\_\_SHADOW5\_\_\_ to instruct the built-in command on the file extensions to be considered (see \_\_\_SHADOW6\_\_\_"s built-in help for several regex examples). E.g., typing the following in the ""File name contains"" field of <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span>, would restrict processing to `.tif`, `.stk` and `.oib` files (the default extensions specified in the `validExtension()` function of {% include github org='tferr ' repo='Scripts ' path='Snippets/Process\_Folder\_IJM.ijm ' label='Process\_Folder\_IJM.ijm ' %}):
+In this case, you only need to paste the contents of your `myRoutines()` function into the text area of the command. However, by default, <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span> assumes you want to process ""all"" the files in a directory. If that is not the case, i.e., you want to restrict the processing to certain file types, you will have to use {% include wikipedia title='Regular expression' text='regex'%} to instruct the built-in command on the file extensions to be considered (see \_\_\_SHADOW6\_\_\_"s built-in help for several regex examples). E.g., typing the following in the ""File name contains"" field of <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span>, would restrict processing to `.tif`, `.stk` and `.oib` files (the default extensions specified in the `validExtension()` function of {% include github org='tferr ' repo='Scripts ' path='Snippets/Process\_Folder\_IJM.ijm ' label='Process\_Folder\_IJM.ijm ' %}):
 
 ``` java
 (.*(\.(?i)(tif
@@ -248,7 +248,7 @@ def myRoutines(image):
     image.setTitle( str(uuid.uuid4()) )
 ```
 
-In more detail: Pass the active image - an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.htm) object - to `myRoutines()`. Retrieve a random [UUID](wikipedia_Universally_unique_identifier "wikilink") (e.g., `f7dfd6a9-f745-42c2-8874-0af67380c3f5`), convert it to a string, then use that string to rename the image using the \[http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html#setTitle(java.lang.String) setTitle()\] method in `ij.ImagePlus`.
+In more detail: Pass the active image - an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.htm) object - to `myRoutines()`. Retrieve a random {% include wikipedia title='Universally unique identifier' text='UUID'%} (e.g., `f7dfd6a9-f745-42c2-8874-0af67380c3f5`), convert it to a string, then use that string to rename the image using the \[http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html#setTitle(java.lang.String) setTitle()\] method in `ij.ImagePlus`.
 
 But because [BAR libs](#lib "wikilink") already contain such a function, we can just call the `randomString()` function in {% include github org='tferr ' repo='Scripts ' path='lib/BARlib.py ' label='BARlib.py ' %}, after loading the file:
 

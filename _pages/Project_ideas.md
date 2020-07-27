@@ -189,7 +189,7 @@ For Tcl, the Script Editor would need minimal adjustments, as RSyntaxTextArea al
 
 We already have a mechanism to jump between compile errors and locations of a stack trace. The same mechanism could be used to present results from a search through multiple files.
 
-## Add a ["REPL" (Read-Eval-Print-Loop)](wikipedia_Read-eval-print_loop "wikilink") to the [Script Editor](Script_Editor "wikilink")
+## Add a {% include wikipedia title='Read-eval-print loop' text='"REPL" (Read-Eval-Print-Loop)'%} to the [Script Editor](Script_Editor "wikilink")
 
 ## Detect loops after macro recording
 

@@ -21,7 +21,7 @@ If you are passingly familiar with Git, but wish it wasn"t so arcane, check out:
 
 ## Why do we use Git?
 
-  - Git is a first-class [distributed](wikipedia_Distributed_version_control "wikilink") [version control](wikipedia_Version_control "wikilink") system, so we use it to keep a record of changes to avoid loss-of-work and to appropriately explain/document changes as projects develop.
+  - Git is a first-class {% include wikipedia title='Distributed version control' text='distributed'%} {% include wikipedia title='Version control' text='version control'%} system, so we use it to keep a record of changes to avoid loss-of-work and to appropriately explain/document changes as projects develop.
   - Git history, which is composed of "snapshots" of the source code, can be used to go back at any point in time, which leads to reproducible science.
 
 ## Git tutorials

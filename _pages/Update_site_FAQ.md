@@ -18,7 +18,7 @@ The dialog is based on the {% include list-of-update-sites%}
 
 ## How do I remove a file from my update site?
 
-An update site is a [revision control](wikipedia_Revision_control "wikilink") system where nothing is ever really deleted from the history.
+An update site is a {% include wikipedia title='Revision control' text='revision control'%} system where nothing is ever really deleted from the history.
 
 Hence, there are two levels of removal:
 

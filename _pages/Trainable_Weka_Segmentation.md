@@ -34,17 +34,13 @@ The [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") is a F
 
   - ease of use due to its graphical user interfaces
 
-[Weka](http://www.cs.waikato.ac.nz/ml/weka/) supports several standard [data mining](wikipedia_Data_mining "wikilink") tasks, more specifically, data preprocessing, [clustering](wikipedia_Cluster_analysis "wikilink"), [classification](wikipedia_Classification_\(machine_learning\) "wikilink"), [regression](wikipedia_Regression_analysis "wikilink"), visualization, and [feature selection](wikipedia_Feature_selection "wikilink").
+[Weka](http://www.cs.waikato.ac.nz/ml/weka/) supports several standard {% include wikipedia title='Data mining' text='data mining'%} tasks, more specifically, data preprocessing, {% include wikipedia title='Cluster analysis' text='clustering'%}, {% include wikipedia title='Classification (machine learning)' text='classification'%}, {% include wikipedia title='Regression analysis' text='regression'%}, visualization, and {% include wikipedia title='Feature selection' text='feature selection'%}.
 
 The main goal of this plugin is to work as a **bridge between the Machine Learning and the Image Processing** fields. It provides the framework to use and, more important, **compare** any available classifier to perform image segmentation based on pixel classification.
 
 ## The Graphical User Interface
 
-
-{% capture title%}
- Example of the first look of the plugin window when using it on a TEM image 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Trainable-Weka-Segmentation-GUI.png' title=title %} [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") runs on any 2D or 3D image (grayscale or color). To use 2D features, you need to select the menu command {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation'%}. For 3D features, call the plugin under {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation 3D'%}. Both commands will use the same GUI but offer different feature options in their settings.
+{% include thumbnail src='/images/pages/Trainable-Weka-Segmentation-GUI.png' title='Example of the first look of the plugin window when using it on a TEM image'%} [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") runs on any 2D or 3D image (grayscale or color). To use 2D features, you need to select the menu command {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation'%}. For 3D features, call the plugin under {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation 3D'%}. Both commands will use the same GUI but offer different feature options in their settings.
 
 By default, the plugin starts with two classes, i.e. it will produce **binary pixel classification**. The user can add traces to both classes using the whole set of [tools for ROI](https://imagej.net/docs/guide/userguide-19b.html#toc-Section-19) (region of interest) drawing available in Fiji. That includes rectangular, round rectangular, oval, elliptical, brush polygon and freehand selections. By default, the freehand selection tool (of 1 pixel width) is automatically selected.
 
@@ -52,11 +48,7 @@ The user can pan, zoom in and out, or scroll between slices (if the input image 
 
 ### Training panel
 
-
-{% capture title%}
- Example of the aspect of the plugin window after training on a TEM image 
-{% endcapture %}
-{% include thumbnail src='/images/pages/TWS-GUI-after-training.png' title=title %}
+{% include thumbnail src='/images/pages/TWS-GUI-after-training.png' title='Example of the aspect of the plugin window after training on a TEM image'%}
 
 #### Train classifier
 
@@ -68,11 +60,7 @@ If the training ends correctly, then the displayed image will be completely segm
 
 #### Toggle overlay
 
-
-{% capture title%}
- Example of resulting probability map displayed as a hyperstack 
-{% endcapture %}
-{% include thumbnail src='/images/pages/AWS-Probability-maps.png' title=title %} This button activates and deactivates the overlay of the result image. The transparency of the overlay image can be adjusted in the [Settings dialog](Advanced_Weka_Segmentation#Settings "wikilink").
+{% include thumbnail src='/images/pages/AWS-Probability-maps.png' title='Example of resulting probability map displayed as a hyperstack'%} This button activates and deactivates the overlay of the result image. The transparency of the overlay image can be adjusted in the [Settings dialog](Advanced_Weka_Segmentation#Settings "wikilink").
 
 #### Create result
 
@@ -84,15 +72,11 @@ Based on the current classifier, the probability that each pixel belongs to each
 
 #### Plot result
 
-This button calls the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) core to generate the model performance chart, i.e. the [ROC](wikipedia_Receiver_operating_characteristic "wikilink"), [precision/recall](wikipedia_Precision_and_recall "wikilink"), etc. curves based on the training data.
+This button calls the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) core to generate the model performance chart, i.e. the {% include wikipedia title='Receiver operating characteristic' text='ROC'%}, {% include wikipedia title='Precision and recall' text='precision/recall'%}, etc. curves based on the training data.
 
 These curves allow to visualize the performance of the classifier based on the different thresholds that can be applied to the probability maps.
 
-
-{% capture title%}
- Weka model performance chart. Displayed after clicking on "Plot result" 
-{% endcapture %}
-{% include thumbnail src='/images/pages/AWS-Plot-result.png' title=title %}
+{% include thumbnail src='/images/pages/AWS-Plot-result.png' title='Weka model performance chart. Displayed after clicking on "Plot result"'%}
 
 ### Options panel
 
@@ -126,23 +110,19 @@ The default number of classes of the plugin is two, but through this button we c
 
 #### Settings
 
-
-{% capture title%}
- Settings dialog of the Trainable Weka Segmentation plugin (2D features) 
-{% endcapture %}
-{% include thumbnail src='/images/pages/TWS-settings-dialog-2D.png' title=title %} The rest of tunable parameters of the plugin can be changed on the Settings dialog, which is displayed when clicking on this button.
+{% include thumbnail src='/images/pages/TWS-settings-dialog-2D.png' title='Settings dialog of the Trainable Weka Segmentation plugin (2D features)'%} The rest of tunable parameters of the plugin can be changed on the Settings dialog, which is displayed when clicking on this button.
 
 ##### Training features (2D)
 
-Here we can select and deselect the training features, which are the key of the learning procedure. The plugin creates a stack of images ---one image for each feature. For instance, if only [Gaussian blur](wikipedia_Gaussian_blur "wikilink") is selected as a feature, the classifier will be trained on the original image and some blurred versions to it with different \(\sigma\) parameters for the Gaussian. \(\sigma\) is commonly equal to \(\sigma_\mathrm{min}, 2\sigma_\mathrm{min}, 4\sigma_\mathrm{min},..., 2^{n-1}\sigma_\mathrm{min}\), where \(2^{n-1}\sigma_\mathrm{min}\le \sigma_\mathrm{max}\). By default \(\sigma_\mathrm{min}=1, \sigma_\mathrm{max}=16\) and therefore \(n=5\).
+Here we can select and deselect the training features, which are the key of the learning procedure. The plugin creates a stack of images ---one image for each feature. For instance, if only {% include wikipedia title='Gaussian blur' text='Gaussian blur'%} is selected as a feature, the classifier will be trained on the original image and some blurred versions to it with different \(\sigma\) parameters for the Gaussian. \(\sigma\) is commonly equal to \(\sigma_\mathrm{min}, 2\sigma_\mathrm{min}, 4\sigma_\mathrm{min},..., 2^{n-1}\sigma_\mathrm{min}\), where \(2^{n-1}\sigma_\mathrm{min}\le \sigma_\mathrm{max}\). By default \(\sigma_\mathrm{min}=1, \sigma_\mathrm{max}=16\) and therefore \(n=5\).
 
 If the input image is grayscale, the features will be calculated using double precision (32-bit images). In the case of RGB input images, the features will be RGB as well.
 
 The different available 2D image features are:
 
   - **Gaussian blur**: performs \(n\) individual convolutions with Gaussian kernels with the normal \(n\) variations of \(\sigma\). The larger the radius the more blurred the image becomes until the pixels are homogeneous.
-  - **Sobel filter**: calculates an [approximation of the gradient of the image intensity](wikipedia_Sobel_filter "wikilink") at each pixel. [Gaussian blurs](wikipedia_Gaussian_blur "wikilink") with \(\sigma\) varying as usual are performed prior to the filter.
-  - **Hessian**: Calculates a [Hessian matrix](wikipedia_Hessian_matrix "wikilink") \(H\) at each pixel. Prior to the application of any filters, a [Gaussian blur](wikipedia_Gaussian_blur "wikilink") with varying \(\sigma\) is performed. The final features used for pixel classification, given the Hessian matrix <math>\\left(\\begin{array}{cc}
+  - **Sobel filter**: calculates an {% include wikipedia title='Sobel filter' text='approximation of the gradient of the image intensity'%} at each pixel. {% include wikipedia title='Gaussian blur' text='Gaussian blurs'%} with \(\sigma\) varying as usual are performed prior to the filter.
+  - **Hessian**: Calculates a {% include wikipedia title='Hessian matrix' text='Hessian matrix'%} \(H\) at each pixel. Prior to the application of any filters, a {% include wikipedia title='Gaussian blur' text='Gaussian blur'%} with varying \(\sigma\) is performed. The final features used for pixel classification, given the Hessian matrix <math>\\left(\\begin{array}{cc}
 
 a & b\\\\ c & d\\end{array}\\right)</math> are calculated thus:
 
@@ -155,7 +135,7 @@ a & b\\\\ c & d\\end{array}\\right)</math> are calculated thus:
       - Gamma-normalized square eigenvalue difference: \(t^{4}(a-d)^{2}\left((a-d)^{2}+4b^{2}\right)\), where \(t=1^{3/4}\).
       - Square of Gamma-normalized eigenvalue difference: \(t^{2}\left((a-d)^{2}+4b^{2}\right)\), where \(t=1^{3/4}\).
 
-  - **Difference of gaussians**: calculates two [Gaussian blur](wikipedia_Gaussian_blur "wikilink") images from the original image and subtracts one from the other. \(\sigma\) values are varied as usual, so \(\frac{n(n-1)}{2}\) feature images are added to the stack.
+  - **Difference of gaussians**: calculates two {% include wikipedia title='Gaussian blur' text='Gaussian blur'%} images from the original image and subtracts one from the other. \(\sigma\) values are varied as usual, so \(\frac{n(n-1)}{2}\) feature images are added to the stack.
 
   - **Membrane projections**: enhances membrane-like structures of the image through directional filtering. The initial kernel for this operation is hardcoded as a \(19\times19\) zero matrix with the middle column entries set to 1. Multiple kernels are created by rotating the original kernel by 6 degrees up to a total rotation of 180 degrees, giving 30 kernels. Each kernel is convolved with the image and then the set of 30 images are Z-projected into a single image via 6 methods:
     
@@ -178,7 +158,7 @@ a & b\\\\ c & d\\end{array}\\right)</math> are calculated thus:
   - **Bilateral filter**: is very similar to the Mean filter but better preserves edges while averaging/blurring other parts of the image. The filter accomplishes this task by only averaging the values around the current pixel that are close in color value to the current pixel. The 'closeness' of other neighborhood pixels to the current pixels is determined by the specified threshold. I.e. for a value of 10 each pixel that contributes to the current mean have to be within 10 values of the current pixel. In our case, we combine spatial radius of \(5\) and \(10\), with a range radius of \(50\) and \(100\).
   - **Lipschitz filter**: from [Mikulas Stencel plugin](https://imagej.net/plugins/lipschitz/). This plugin implements Lipschitz cover of an image that is equivalent to a grayscale opening by a cone. The Lipschitz cover can be applied for the elimination of a slowly varying image background by subtraction of the lower Lipschitz cover (a top-hat procedure). A sequential double scan algorithm is used. We use down and top hats combination, with slope \(s = 5, 10, 15, 20, 25\).
   - **Kuwahara filter**: another noise-reduction filter that preserves edges. This is a version of the [ Kuwahara filter that uses linear kernels](Linear_Kuwahara "wikilink") rather than square ones. We use the membrane patch size as kernel size, 30 angles and the three different criteria (Variance, Variance / Mean and Variance / Mean^2).
-  - **Gabor filter**: at the moment this option may take some time and memory because it generates a very diverse range of [Gabor filters](wikipedia_Gabor_filter "wikilink") (**22**). *' This may undergo changes in the future*'. The implementation details are included in this [script](Gabor_Filter_script "wikilink"). The Gabor filter is an edge detection and texture filter, which convolves several kernels at different angles with an image. Each point in a kernel is calculated as \(\frac{\cos \left(2\pi f \frac{x_p}{s_x}+\psi \right) e^{-0.5 \left( \frac{x_p^2}{\sigma_x^2} + \frac{y_p^2}{\sigma_y^2} \right)} }{ 2\pi \sigma_x \sigma_y }\). Gabor filters are band-pass filters and therefore implement a frequency transformation.
+  - **Gabor filter**: at the moment this option may take some time and memory because it generates a very diverse range of {% include wikipedia title='Gabor filter' text='Gabor filters'%} (**22**). *' This may undergo changes in the future*'. The implementation details are included in this [script](Gabor_Filter_script "wikilink"). The Gabor filter is an edge detection and texture filter, which convolves several kernels at different angles with an image. Each point in a kernel is calculated as \(\frac{\cos \left(2\pi f \frac{x_p}{s_x}+\psi \right) e^{-0.5 \left( \frac{x_p^2}{\sigma_x^2} + \frac{y_p^2}{\sigma_y^2} \right)} }{ 2\pi \sigma_x \sigma_y }\). Gabor filters are band-pass filters and therefore implement a frequency transformation.
   - **Derivatives filter**: calculates high order derivatives of the input image (\(\frac{d^4}{dx^2dy^2},\frac{d^6}{dx^3dy^3},\frac{d^8}{dx^4dy^4},\frac{d^{10}}{dx^5dy^5}\)) using [FeatureJ](FeatureJ "wikilink") (it requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater).
   - **Laplacian filter**: computes the Laplacian of the input image using [FeatureJ](FeatureJ "wikilink") (it requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater). It uses smoothing scale \(\sigma\).
   - **Structure filter**: calculates for all elements in the input image, the eigenvalues (smallest and largest) of the so-called structure tensor using [FeatureJ](FeatureJ "wikilink") (it requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater). It uses smoothing scale \(\sigma\) and integration scales 1 and 3.
@@ -193,11 +173,7 @@ The detailed implementation of these 2D filters can be found in the [source code
 
 ##### Training features (3D)
 
-
-{% capture title%}
- Settings dialog for the Trainable Weka Segmentation 3D plugin. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/TWS-3D-Settings-dialog.png' title=title %}When calling the plugin from the menu command {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation 3D'%} the set of available image features will be as follows:
+{% include thumbnail src='/images/pages/TWS-3D-Settings-dialog.png' title='Settings dialog for the Trainable Weka Segmentation 3D plugin.'%}When calling the plugin from the menu command {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation 3D'%} the set of available image features will be as follows:
 
   - **Gaussian blur**: performs \(n\) individual 3D convolutions with Gaussian kernels with the normal \(n\) variations of \(\sigma\). The larger the radius the more blurred the image becomes until the pixels are homogeneous.
   - **Hessian**: using [FeatureJ](FeatureJ "wikilink") it computes for each image element (voxel) the eigenvalues of the Hessian, which can be used for example to discriminate locally between plate-like, line-like, and blob-like image structures. More specifically, it calculates the magnitude of the largest, middle and smallest eigenvalue of the Hessian tensor. It requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater. It uses smoothing scale \(\sigma\).
@@ -205,7 +181,7 @@ The detailed implementation of these 2D filters can be found in the [source code
   - **Laplacian**: computes the Laplacian of the input image using [FeatureJ](FeatureJ "wikilink") (it requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater). It uses smoothing scale \(\sigma\).
   - **Structure**: calculates for all elements in the input image, the eigenvalues (smallest and largest) of the so-called structure tensor using [FeatureJ](FeatureJ "wikilink") (it requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater). It uses smoothing scale \(\sigma\) and integration scales 1 and 3.
   - **Edges**: detects edges using Canny edge detection, which involves computation of the gradient magnitude, suppression of locally non-maximum gradient magnitudes, and (hysteresis) thresholding. Again, this feature uses [FeatureJ](FeatureJ "wikilink") so it requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater. It uses smoothing scale \(\sigma\).
-  - **Difference of Gaussian**: calculates two [Gaussian blur](wikipedia_Gaussian_blur "wikilink") images from the original image and subtracts one from the other. \(\sigma\) values are varied as usual, so \(\frac{n(n-1)}{2}\) feature images are added to the stack.
+  - **Difference of Gaussian**: calculates two {% include wikipedia title='Gaussian blur' text='Gaussian blur'%} images from the original image and subtracts one from the other. \(\sigma\) values are varied as usual, so \(\frac{n(n-1)}{2}\) feature images are added to the stack.
   - **Minimum, Maximum, Mean, Variance, Median**: the voxels within a radius of \(\sigma\) voxels from the target pixel are subjected to the pertinent operation (mean/min etc.) and the target voxel is set to that value.
 
 **Sigma units**: all 3D features use a common sigma which is in voxel units. However, since the voxel can be anisotropic, the sigma size will be adjusted accordingly to account for it. Therefore, you need to make sure the input image calibration is correct when you call the plugin.
@@ -219,11 +195,7 @@ The detailed implementation of these 2D filters can be found in the [source code
 
 ##### Classifier options
 
-
-{% capture title%}
- Classifier selection in the Trainable Weka Segmentation [Settings dialog](Advanced_Weka_Segmentation#Settings "wikilink"). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/AWS-Classifier-selection.png' title=title %} The default classifier is [FastRandomForest](https://code.google.com/p/fast-random-forest/), a **multi-threaded** version of [random forest](wikipedia_Random_forest "wikilink") by [Fran Supek](https://scholar.google.com/citations?user=Rz3rPeUAAAAJ), initialized with 200 trees and 2 random features per node. However the user can select any available classifier in the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
+{% include thumbnail src='/images/pages/AWS-Classifier-selection.png' title='Classifier selection in the Trainable Weka Segmentation [Settings dialog](Advanced_Weka_Segmentation#Settings "wikilink").'%} The default classifier is [FastRandomForest](https://code.google.com/p/fast-random-forest/), a **multi-threaded** version of {% include wikipedia title='Random forest' text='random forest'%} by [Fran Supek](https://scholar.google.com/citations?user=Rz3rPeUAAAAJ), initialized with 200 trees and 2 random features per node. However the user can select any available classifier in the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
 
 **If you do not find the classifier you want**, you might have to install the Weka package that includes it. For that, you need to launch the Weka GUI Chooser (by clicking on the Weka button of the left panel of the plugin GUI) and use the [ Weka Package Manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink") (under {% include bc content='Tools | Package manager'%}). For a step-by-step description on how to install new packages, have a look at this [tutorial](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink").
 
@@ -256,11 +228,7 @@ For a complete step-by-step description on how to compare classifiers for image 
 
 ### Macro language compatibility
 
-[Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") is completely compatible with the popular [ImageJ macro language](https://imagej.net/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file. 
-{% capture title%}
- Example of macro recording of the Trainable Weka Segmentation tools. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/AWS-macro-recording.png' title=title %}
+[Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") is completely compatible with the popular [ImageJ macro language](https://imagej.net/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file. {% include thumbnail src='/images/pages/AWS-macro-recording.png' title='Example of macro recording of the Trainable Weka Segmentation tools.'%}
 
 The complete list of commands is as follows:
 
@@ -542,11 +510,7 @@ The **[API](http://javadoc.scijava.org/Fiji/?trainableSegmentation/package-summa
 
 ## Versatility
 
-
-{% capture title%}
- **Examples of application of Trainable Weka Segmentation**. From left to right and from top to bottom: original image of the [Berkeley Segmentation Dataset (Test Image \#42049 (color)](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300/html/dataset/images/color/42049.html)), probability of boundaries after training, semantic segmentation into 3 classes (sky, tree, eagle), and detected object using the probability maps of the semantic segmentation and some post-processing ([Level Sets](Level_Sets "wikilink") from maximum and bounding box selection). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/TWS-application-examples.png' title=title %} As a **pixel classifier**, the Trainable Weka Segmentation presents a wide range of applications such as [boundary detection](https://en.wikipedia.org/wiki/Edge_detection), semantic segmentation, or [object detection](https://en.wikipedia.org/wiki/Object_detection) and localization. All of them at the distance of a few clicks on the plugin GUI and sometimes in combination with other Fiji tools or plugins.
+{% include thumbnail src='/images/pages/TWS-application-examples.png' title='\'\'\'Examples of application of Trainable Weka Segmentation\'\'\'. From left to right and from top to bottom: original image of the [Berkeley Segmentation Dataset (Test Image \#42049 (color)](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300/html/dataset/images/color/42049.html)), probability of boundaries after training, semantic segmentation into 3 classes (sky, tree, eagle), and detected object using the probability maps of the semantic segmentation and some post-processing ([Level Sets](Level_Sets "wikilink") from maximum and bounding box selection).'%} As a **pixel classifier**, the Trainable Weka Segmentation presents a wide range of applications such as [boundary detection](https://en.wikipedia.org/wiki/Edge_detection), semantic segmentation, or [object detection](https://en.wikipedia.org/wiki/Object_detection) and localization. All of them at the distance of a few clicks on the plugin GUI and sometimes in combination with other Fiji tools or plugins.
 
 To see **who is using Trainable Weka Segmentation** and its multiple applications, you can have a look at [these publications](https://scholar.google.es/scholar?q=%22Trainable+Weka+Segmentation%22+OR+%22Advanced+Weka+Segmentation%22&btnG=&hl=es&as_sdt=0%2C5).
 

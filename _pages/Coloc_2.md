@@ -9,7 +9,7 @@ description: test description
 
 {% include component-stats content=':sc.fiji:Colocalisation\_Analysis' %}= What is Coloc 2 =
 
-Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs the pixel intensity correlation over space methods of [Pearson](wikipedia_Pearson_product-moment_correlation_coefficient "wikilink"), [Manders](Media_Manders.pdf "wikilink"), [Costes](Media_Costes_etalColoc.pdf "wikilink"), [Li](Media_LietAlColoc.pdf "wikilink") and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
+Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs the pixel intensity correlation over space methods of {% include wikipedia title='Pearson product-moment correlation coefficient' text='Pearson'%}, [Manders](Media_Manders.pdf "wikilink"), [Costes](Media_Costes_etalColoc.pdf "wikilink"), [Li](Media_LietAlColoc.pdf "wikilink") and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 
 Coloc 2 does NOT perform object based colocalization measurements, where objects are first segmented from the image, then their spatial relationships like overlap etc. are measured. This complementary approach is implemented in many ways elsewhere.
 
@@ -19,7 +19,7 @@ Coloc 2 does NOT perform object based colocalization measurements, where objects
 
 1.  Read the original papers describing the analysis you are about to perform.
     1.  Don't treat this tool as a black box - try to understand what the strengths and limitations are and what the results could mean.
-        1.  [Pearson's correlation, r](wikipedia_Pearson_product-moment_correlation_coefficient "wikilink")
+        1.  {% include wikipedia title='Pearson product-moment correlation coefficient' text='Pearson\'s correlation, r'%}
         2.  [Manders paper](Media_Manders.pdf "wikilink")
         3.  [Costes paper](Media_Costes_etalColoc.pdf "wikilink")
         4.  [Li paper](Media_LietAlColoc.pdf "wikilink")

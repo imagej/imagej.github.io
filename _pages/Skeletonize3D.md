@@ -9,21 +9,13 @@ description: test description
 
 {% include component-stats content=':sc.fiji:Skeletonize3D\_' %}2D and 3D skeletonization of binary images.
 
-|                                                                                                                                          |                                                                                                                                                  |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 
-{% capture title%}
- Smoothed bat cochlea volume 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Smoothed-bat-cochlea-volume.gif' title=title %} | 
-{% capture title%}
- 3D skeleton from bat cochlea volume 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Skeleton-bat-cochlea-volume.gif' title=title %} |
+|                                                                                                                     |                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/Smoothed-bat-cochlea-volume.gif' title='Smoothed bat cochlea volume'%} | {% include thumbnail src='/images/pages/Skeleton-bat-cochlea-volume.gif' title='3D skeleton from bat cochlea volume'%} |
 
 ## General Description
 
-Skeletonize3D is a Fiji and ImageJ plugin that performs the [skeletonization](wikipedia_Topological_skeleton "wikilink") of 2D and 3D binary images (8-bit images). In Fiji, you can find it under {% include bc content='Plugins | Skeleton | Skeletonize (2D/3D)'%}. If you need to analyze a 2D/3D skeleton image, you may be interested on having a look at [AnalyzeSkeleton](AnalyzeSkeleton "wikilink").
+Skeletonize3D is a Fiji and ImageJ plugin that performs the {% include wikipedia title='Topological skeleton' text='skeletonization'%} of 2D and 3D binary images (8-bit images). In Fiji, you can find it under {% include bc content='Plugins | Skeleton | Skeletonize (2D/3D)'%}. If you need to analyze a 2D/3D skeleton image, you may be interested on having a look at [AnalyzeSkeleton](AnalyzeSkeleton "wikilink").
 
 ## Video tutorial
 

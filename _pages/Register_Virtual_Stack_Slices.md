@@ -54,25 +54,17 @@ On success, a virtual stack will open showing all the registered images containe
 
 ### Shrinkage constrain
 
-
-{% capture title%}
- Shrinkage constrain checkbox 
-{% endcapture %}
-{% include thumbnail src='/images/pages/RVS shrink option.png' title=title %} Since the 09/13/2009 version and thanks to [Daniel Berger](http://hebb.mit.edu/), Register Virtual Stack Slices has the option of constraining the registration to avoid section shrinking for large sets of images.
+{% include thumbnail src='/images/pages/RVS shrink option.png' title='Shrinkage constrain checkbox'%} Since the 09/13/2009 version and thanks to [Daniel Berger](http://hebb.mit.edu/), Register Virtual Stack Slices has the option of constraining the registration to avoid section shrinking for large sets of images.
 
 If this option is used, **no reference image needs to be selected**. All images will be transformed into the same common space by initializing first the system with a rigid transformation and then relaxing it based on the desired registration model.
 
 To do so, in the main dialog, you have to check the "Shrinkage constrain" option (see attached window).
 
-If you check as well the "Advance setup" checkbox from the same dialog, then a new window will appear to select the corresponding parameters to regularize the section shrinkage based on the properties of the transformation. If we choose "affine" as registration model, then we will be able to regularize: 
-{% capture title%}
- Shrinkage regularization parameters 
-{% endcapture %}
-{% include thumbnail src='/images/pages/RVS regularization params.png' title=title %}
+If you check as well the "Advance setup" checkbox from the same dialog, then a new window will appear to select the corresponding parameters to regularize the section shrinkage based on the properties of the transformation. If we choose "affine" as registration model, then we will be able to regularize: {% include thumbnail src='/images/pages/RVS regularization params.png' title=' Shrinkage regularization parameters '%}
 
-  - the [shear](wikipedia_Shear_mapping "wikilink"),
-  - the [scaling](wikipedia_Scaling_\(geometry\) "wikilink"),
-  - and the [isotropy](wikipedia_Isotropy "wikilink") or aspect ratio.
+  - the {% include wikipedia title='Shear mapping' text='shear'%},
+  - the {% include wikipedia title='Scaling (geometry)' text='scaling'%},
+  - and the {% include wikipedia title='Isotropy' text='isotropy'%} or aspect ratio.
 
 For the registration models "translation" and "rigid", no regularization is needed since these linear transformations don't apply. In the case of the "similarity" registration model, only the shearing and scaling will be regularized.
 

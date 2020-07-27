@@ -20,13 +20,13 @@ This page provides an overview of ImageJ from the perspective of software develo
 <table>
 <tbody>
 <tr class="odd">
-<td><p>An end-user <a href="wikipedia:Application_software" title="wikilink">software application</a></p></td>
+<td><p>An end-user {% include wikipedia title='Application software' text='software application'%}</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="Getting started"><img src="/images/pages/Imagej-app.png" width="500px"/></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>Reusable <a href="wikipedia:Library_(computing)" title="wikilink">software libraries</a></p></td>
+<td><p>Reusable {% include wikipedia title='Library (computing)' text='software libraries'%}</p></td>
 </tr>
 <tr class="even">
 <td><div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">public</span> <span class="dt">void</span> <span class="fu">loadAndDisplay</span>(<span class="bu">File</span> file) {</a>
@@ -104,12 +104,12 @@ There are four indispensable software development tools on which ImageJ relies:
 <tr class="even">
 <td><p>{% include logo content='Git' %}</p></td>
 <td><p><a href="Git" title="wikilink">Git</a></p></td>
-<td><p>A first-class <a href="wikipedia:Distributed_version_control" title="wikilink">distributed</a> <a href="wikipedia:Version_control" title="wikilink">version control</a> system. Git saves "snapshots" of the source code, keeping a history of changes.</p></td>
+<td><p>A first-class {% include wikipedia title='Distributed version control' text='distributed'%} {% include wikipedia title='Version control' text='version control'%} system. Git saves "snapshots" of the source code, keeping a history of changes.</p></td>
 </tr>
 <tr class="odd">
 <td><p>{% include logo content='Maven' %}</p></td>
 <td><p><a href="Maven" title="wikilink">Maven</a></p></td>
-<td><p>A <a href="wikipedia:Build_automation" title="wikilink">build automation</a> tool with great dependency management. Maven converts source code into program binaries, and much more.</p></td>
+<td><p>A {% include wikipedia title='Build automation' text='build automation'%} tool with great dependency management. Maven converts source code into program binaries, and much more.</p></td>
 </tr>
 <tr class="even">
 <td><p>{% include logo content='Eclipse' %}</p></td>

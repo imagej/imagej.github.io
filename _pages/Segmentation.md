@@ -13,7 +13,7 @@ description: test description
 
 # Introduction
 
-Image segmentation is "the process of partitioning a digital image into multiple segments." ([Wikipedia](wikipedia_Image_segmentation "wikilink"))
+Image segmentation is "the process of partitioning a digital image into multiple segments." ({% include wikipedia title='Image segmentation' text='Wikipedia'%})
 
 ![Segmentation-overlay.jpg](/images/pages/Segmentation-overlay.jpg "Segmentation-overlay.jpg") ![Segmentation-boundaries.jpg](/images/pages/Segmentation-boundaries.jpg "Segmentation-boundaries.jpg")
 

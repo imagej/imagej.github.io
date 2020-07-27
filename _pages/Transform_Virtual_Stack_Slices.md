@@ -39,11 +39,7 @@ This is a **complementary plugin** of [Register Virtual Stack Slices](Register_V
   - **Transform folder**: You have a folder with the transform files (from a [Register Virtual Stack Slices](Register_Virtual_Stack_Slices "wikilink") execution).
   - **Interpolate**: Toggle the interpolation for the result images.
 
-**Step 1**: launch the "Plugins - Transform - Transform Virtual Stack Slices" plugin. 
-{% capture title%}
- Transform Virtual Stack main dialog 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Main-Dialog-Transform Virtual Stack.png' title=title %} **Step 2**: choose the source, output and transform folders:
+**Step 1**: launch the "Plugins - Transform - Transform Virtual Stack Slices" plugin. {% include thumbnail src='/images/pages/Main-Dialog-Transform Virtual Stack.png' title='Transform Virtual Stack main dialog'%} **Step 2**: choose the source, output and transform folders:
 
   - Select a source folder containing the slices, at one slice per image file.
   - Select the target folder where resulting transformed slices will be automatically stored as TIFF files.

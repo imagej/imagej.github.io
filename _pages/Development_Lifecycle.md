@@ -20,12 +20,16 @@ description: test description
 
 Whether adding new features, fixing bugs, improving performance, etc... **development** is the process of making changes, with the goal of exposing these changes to users. To accomplish this, actively developed projects cycle through five general "phases":
 
-{% include box title='What are Maven artifacts? ' width='30% ' float='right ' text='Artifacts are files, most commonly a """[JAR](wikipedia_JAR_%28file_format%29 "wikilink")""" encapsulating the compiled classes for a component. Other files that may be produced as artifacts include:
+
+{% capture text%}
+Artifacts are files, most commonly a """{% include wikipedia title='JAR\_%28file\_format%29' text='JAR'%}""" encapsulating the compiled classes for a component. Other files that may be produced as artifacts include:
 
   - The project"s """ [POM](https://maven.apache.org/pom.html) """
   - A jar with the original source files
   - A jar with any generated javadoc
-  - A jar with any test files ' %}
+  - A jar with any test files
+{% endcapture %}
+{% include box title='What are Maven artifacts? ' width='30% ' float='right ' text=text %}
 
 <!-- end list -->
 

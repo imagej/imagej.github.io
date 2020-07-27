@@ -21,11 +21,7 @@ Available on the list of [ImageJ updates sites](Update_Sites "wikilink"). Requir
 
 **How it works:**
 
-
-{% capture title%}
- Correlation Image 
-{% endcapture %}
-{% include thumbnail src='/images/pages/ColocByCorrelation-CorrelationImage.jpg' title=title %}
+{% include thumbnail src='/images/pages/ColocByCorrelation-CorrelationImage.jpg' title='Correlation Image'%}
 
 The plugin performs a cross-correlation in frequency space to create a correlation image. To remove non-specific correlations (from background, or high signal density), a correlation image generated from randomized images is then subtracted from the original correlation image. This occurs through cycles of:
 
@@ -35,11 +31,7 @@ The plugin performs a cross-correlation in frequency space to create a correlati
 
 After the subtraction of non-specific correlations, we generate a radial profile of this data and fit a gaussian curve to it, showing the correlation between the images at different offsets. We also generate a radial profile for the original correlation data before subtraction, as this is needed to establish a measure of confidence. The confidence is calculated as the area under the curve (AUC) of the subtracted correlation radial profile (in the range of mean ± 3×sigma) divided by the AUC of the original correlation radial profile (in same range) as a percentage. The confidence value, along with the mean and sigma of the gaussian fit are displayed in a log window. Higher values of confidence, closer to 100, indicate that two images likely have a true spatial correlation at the indicated distance.
 
-
-{% capture title%}
- Radial profile of correlation image shown above 
-{% endcapture %}
-{% include thumbnail src='/images/pages/ColocByCorrelate-Graph.jpeg' title=title %}
+{% include thumbnail src='/images/pages/ColocByCorrelate-Graph.jpeg' title='Radial profile of correlation image shown above'%}
 
 **Preparing images:**
 

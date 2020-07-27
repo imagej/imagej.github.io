@@ -35,11 +35,7 @@ The user can pan, zoom in and out, or scroll between slices (if the input image 
 
 In this plugin the markers are introduced interactively by the user using any of the selection tools. By default, the point selection tool will be enabled in the main ImageJ toolbar. To select markers on different slices, one option is to use the point selection tool and keep the SHIFT key pressed each time you click to set a new marker. Another possibility is to use the ROI Manager. In that case, all selected ROIs in the manager will be used as markers
 
-
-{% capture title%}
- Examples of ROIs used as markers by the plugin. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Interactive-Marker-controlled-Watershed-markers.png' title=title %}
+{% include thumbnail src='/images/pages/Interactive-Marker-controlled-Watershed-markers.png' title='Examples of ROIs used as markers by the plugin.'%}
 
 ### Watershed Segmentation panel
 
@@ -62,11 +58,7 @@ In this plugin the markers are introduced interactively by the user using any of
   - **Show result overlay**: toggle result overlay.
   - **Create image button**: create a new image with the results displayed in the canvas.
 
-
-{% capture title%}
- Examples of the 4 different display options. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Morphological-segmentation-result-examples.png' title=title %}
+{% include thumbnail src='/images/pages/Morphological-segmentation-result-examples.png' title='Examples of the 4 different display options.'%}
 
 ### Post-processing panel
 

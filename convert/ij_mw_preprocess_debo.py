@@ -1,6 +1,8 @@
 import os
 import re
 import regex
+import sys
+import codecs
 
 txt_include_start = "%AA%"
 txt_param_start = "%BB%"
@@ -12,6 +14,7 @@ txt_capture_start = "%HH%"
 txt_capture_start_end = txt_liquid_linebreak_end
 txt_capture_end = "%JJ%"
 txt_youtube = "%KK%"
+txt_single_quote = "%LL%"
 
 template_regex = r'(((?<=\n)[ ]*)*(?<!<nowiki>)\{\{[\n ]*([A-Za-z0-9_]*)[ \n]*\|?[ \n]*(([\s\S]*?))\}\})'
 template_parameter_regex = r'(\w+([ ]\w+)*)[ ]*=[ ]*([^|]*)'
@@ -29,7 +32,8 @@ global_shadows = [
     ("\n{% endcapture %}\n", txt_capture_end),
     ("\n{% capture ", txt_capture_start),
     ("\n%}\n", txt_capture_start_end),
-    ("https://www.youtube.com/embed/", txt_youtube)
+    ("https://www.youtube.com/embed/", txt_youtube),
+    ("\\\'", txt_single_quote)
 ]
 
 def read_file(file_path):
@@ -132,10 +136,11 @@ def process_file(str_content):
     # TODO parse SWITCHtube template, removing for now because it creates liquid issues
     content_tmp = re.sub(r'{{[\\]*#widget:SWITCHtube\|[^}]*}}', r'TODO GOOGLE SPREADSHEET WIDGET', content_tmp)
 
+    content_tmp = regex.sub(r'\[((?>[^\[\]]+|(?R))*)\]', file_match, content_tmp)
+
     # replace '{{ stuff }}' mediawiki syntax with '{% include stuff %}` liquid
     content_tmp = replace_template(content_tmp)
 
-    content_tmp = regex.sub(r'\[((?>[^\[\]]+|(?R))*)\]', file_match, content_tmp)
 
     content_tmp = content_tmp.replace("{{-}}", "")
     content_tmp = content_tmp.replace("{{}}", "")
@@ -177,7 +182,16 @@ def file_match(match):
     res = re.sub(r'^\[\[File\:([^ |]*)[ ]*\|[ ]*link=([^\]]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\]\]$',
                          r'[[File:\1 |\3|link=\2 ]]', res)
 
+    res = re.sub(r'\[\[[ ]*wikipedia[ ]*:[ ]*(http[^\|]*\|[^\]]*\]\])', r'[[\1', res)
+    res = re.sub(r'\[\[[ ]*wikipedia[ ]*:([^\|]*)\|([^\]]*)\]\]', wikipedia_match, res)
+
     return res
+
+
+def wikipedia_match(match):
+    res = txt_include_start + 'wikipedia title' + txt_param_start + match.group(1) \
+          + txt_param_end + ' text' + txt_param_start + match.group(2) + txt_param_end + txt_liquid_end
+    return res.replace("\'", txt_single_quote)
 
 
 def fix_simple_image_match(match):
@@ -198,18 +212,38 @@ def fix_thumbnail_match2(match):
 
 
 def fix_thumbnail(src, title):
+    title = replace_template(title)
+    title = regex.sub(r'\[((?>[^\[\]]+|(?R))*)\]', file_match, title)
     title = re.sub(r'(?:right\||left\||center\|)?([x]?\d*px\|)?(?:right\||left\||center\|)?((?:.*|\n)*)$', r'\2', title)
     if title.startswith("link="):
         link = re.sub(r'^link\=[\[]?([^|]*)[\]]?\|((?:.*|\n)*)$', r'\2', title)
         title = re.sub(r'^link\=[^|]*\|((?:.*|\n)*)$', r'\1', title)
-        capture = txt_capture_start + "title" + txt_capture_start_end + " " + title + " " + txt_capture_end
-        return capture + txt_include_start + 'thumbnail-link src="/images/pages/' \
-               + fix_image_name(src) + '" title' + txt_param_var_start + 'title' \
-               + ' link' + txt_param_start + link + ' ' + txt_param_end + txt_liquid_end
+        if txt_include_start in title:
+            capture = txt_capture_start + 'title' + txt_capture_start_end + title + txt_capture_end
+            return capture + txt_include_start + 'thumbnail-link src="/images/pages/' \
+                   + fix_image_name(src) + '" title' + txt_param_var_start + 'title ' \
+                   + ' link' + txt_param_start + link + ' ' + txt_param_end + txt_liquid_end
+        else:
+            title = title.replace("\'", txt_single_quote)
+            if txt_include_start in title:
+                capture = txt_capture_start + 'title' + txt_capture_start_end + title + txt_capture_end
+                return capture + txt_include_start + 'thumbnail-link src="/images/pages/' \
+                       + fix_image_name(src) + '" title' + txt_param_var_start + 'title ' \
+                       + ' link' + txt_param_start + link + ' ' + txt_param_end + txt_liquid_end
+            else:
+                return txt_include_start + 'thumbnail-link src="/images/pages/' \
+                       + fix_image_name(src) + '" title' + txt_param_start + title + txt_param_end \
+                       + ' link' + txt_param_start + link + ' ' + txt_param_end + txt_liquid_end
     else:
-        capture = txt_capture_start + "title" + txt_capture_start_end + " " + title + " " + txt_capture_end
-        return capture + txt_include_start + 'thumbnail src' + txt_param_start + '/images/pages/' \
-               + fix_image_name(src) + txt_param_end + ' title' + txt_param_var_start + 'title ' + txt_liquid_end
+        if txt_include_start in title:
+            capture = txt_capture_start + 'title' + txt_capture_start_end + title + txt_capture_end
+            return capture + txt_include_start + 'thumbnail src' + txt_param_start + '/images/pages/' \
+                   + fix_image_name(src) + txt_param_end + ' title' + txt_param_var_start + 'title ' + txt_liquid_end
+        else:
+            title = title.replace("\'", txt_single_quote)
+            return txt_include_start + 'thumbnail src' + txt_param_start + '/images/pages/' \
+                   + fix_image_name(
+                src) + txt_param_end + ' title' + txt_param_start + title + txt_param_end + txt_liquid_end
 
 
 def fix_image_name(src):

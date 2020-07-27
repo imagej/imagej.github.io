@@ -13,7 +13,7 @@ description: test description
 
 ## Gitter
 
-The [Gitter](wikipedia_Gitter "wikilink") chat service, while relatively new, is a great way to discuss *programming* issues with developers of the [SciJava](SciJava "wikilink") component collection. All you need is either a [GitHub](https://github.com/) or [Twitter](https://twitter.com/) account. Advantages of Gitter include a nice "21st century" web interface, email notification when participants miss messages, and a full searchable history.
+The {% include wikipedia title='Gitter' text='Gitter'%} chat service, while relatively new, is a great way to discuss *programming* issues with developers of the [SciJava](SciJava "wikilink") component collection. All you need is either a [GitHub](https://github.com/) or [Twitter](https://twitter.com/) account. Advantages of Gitter include a nice "21st century" web interface, email notification when participants miss messages, and a full searchable history.
 
 |                                          |                               |                                                   |
 | ---------------------------------------- | ----------------------------- | ------------------------------------------------- |
@@ -27,7 +27,7 @@ The [Gitter](wikipedia_Gitter "wikilink") chat service, while relatively new, is
 
 ## IRC
 
-Some community members frequent [IRC](wikipedia_Internet_Relay_Chat "wikilink") on [irc.freenode.net](http://freenode.net/), in chat rooms:
+Some community members frequent {% include wikipedia title='Internet Relay Chat' text='IRC'%} on [irc.freenode.net](http://freenode.net/), in chat rooms:
 
 | Channel                                           | Description                                                          | Chat logs                                                     |
 | ------------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------- |

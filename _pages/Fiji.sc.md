@@ -11,4 +11,4 @@ Fiji.sc is our server; it hosts [this Wiki](Fiji "wikilink"), [the downloadable 
 
 ## Former name
 
-The artist known as *fiji.sc* was formerly known under the name *Pacific*, which happens to be also [the ocean](wikipedia_Pacific_Ocean "wikilink") in which the country called *Fiji* is located.
+The artist known as *fiji.sc* was formerly known under the name *Pacific*, which happens to be also {% include wikipedia title='Pacific Ocean' text='the ocean'%} in which the country called *Fiji* is located.

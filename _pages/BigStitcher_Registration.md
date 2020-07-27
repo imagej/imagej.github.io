@@ -92,11 +92,7 @@ Depending on which **Registration algorithm** you selected in the first dialog, 
 
 #### Fast descriptor-based (rotation invariant)
 
-
-{% capture title%}
- Parameters for Fast descriptor-based (rotation invariant) registration 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BigStitcher Register fast desc rot.png' title=title %}
+{% include thumbnail src='/images/pages/BigStitcher Register fast desc rot.png' title='Parameters for Fast descriptor-based (rotation invariant) registration'%}
 
 The **Fast descriptor-based (rotation invariant) registration** is the default choice for aligning views from multiple angles. It first constructs a *descriptor* for every point based on the "constellation" of its 3 nearest neighbors and matches it to the most similar point in other views. By using a special local coordinate system, we can find the points in other views even if they were imaged from different angles.
 
@@ -123,11 +119,7 @@ The parameters for this algorithm and their meaning is the same as for the rotat
 
 #### Precise descriptor-based (translation invariant)
 
-
-{% capture title%}
- Parameters for Precise descriptor-based (translation invariant) registration 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BigStitcher Register prec desc tr.png' title=title %}
+{% include thumbnail src='/images/pages/BigStitcher Register prec desc tr.png' title='Parameters for Precise descriptor-based (translation invariant) registration'%}
 
 The **Precise descriptor-based (translation invariant) registration** work essentially the same as the fast descriptor-based registration algorithms with the main difference being that you can manually specify the **number of neighbors** of an interest point to use for constructing the point descriptor. Due to the more flexible descriptors, it lacks the specific optimizations for 3 neighbors and is slightly slower than the fast versions.
 
@@ -149,11 +141,7 @@ This method has a single parameter:
 
 #### Assign closest points with ICP (no invariance)
 
-
-{% capture title%}
- Parameters for ICP-based (no invariance) registration 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BigStitcher Register icp.png' title=title %}
+{% include thumbnail src='/images/pages/BigStitcher Register icp.png' title='Parameters for ICP-based (no invariance) registration'%}
 
 In addition to the descriptor-based registration algorithm, we also offer registration via a slightly modified version of the \[https://en.wikipedia.org/wiki/Point_set_registration#Iterative_closest_point| Iterative Closest Point (ICP)\] algorithm.
 

@@ -35,7 +35,7 @@ We are actively developing tools for working with combined spectral-lifetime (SL
 
 ### Integrating web applications with ImageJ
 
-Web tools and [cloud computing](wikipedia_Cloud_computing "wikilink") are rapidly becoming more powerful and have many advantages versus traditional desktop applications. We want to leverage such tools where appropriate, and are exploring ways to integrate such web-based software with the ImageJ client application. Currently we have two such plugins: {% include github org='imagej ' repo='workflow-pipes ' label='Work Flow Pipes ' %} and a [Deep Zoom plugin](Deep_Zoom "wikilink").
+Web tools and {% include wikipedia title='Cloud computing' text='cloud computing'%} are rapidly becoming more powerful and have many advantages versus traditional desktop applications. We want to leverage such tools where appropriate, and are exploring ways to integrate such web-based software with the ImageJ client application. Currently we have two such plugins: {% include github org='imagej ' repo='workflow-pipes ' label='Work Flow Pipes ' %} and a [Deep Zoom plugin](Deep_Zoom "wikilink").
 
 ### OpenCL-based image processing
 

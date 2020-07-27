@@ -9,12 +9,8 @@ description: test description
 
 An example ImageJ plugin illustrating how to create and display 3D tubes and 3D spheres in the [3D Viewer](3D_Viewer "wikilink").
 
-|                                                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 
-{% capture title%}
- Example of tubes, spheres and discs in 3D. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Spheres and tubes 3D.jpg' title=title %} |
+|                                                                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/Spheres and tubes 3D.jpg' title='Example of tubes, spheres and discs in 3D.'%} |
 
 [Category:Plugins](Category_Plugins "wikilink") [Category:Unmaintained](Category_Unmaintained "wikilink")

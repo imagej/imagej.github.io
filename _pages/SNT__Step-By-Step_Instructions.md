@@ -84,27 +84,11 @@ If both nodes are terminal, the paths are merged together. Otherwise, one path w
 
 <div align="center">
 
-  - 
-{% capture title%}
- none|250px|1) Select parent path and activate first join node 
-{% endcapture %}
-{% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Step-1.png' title=title %}
-  - 
-{% capture title%}
- none|250px|2) Select child path and activate second join node 
-{% endcapture %}
-{% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Step-2.png' title=title %}
-  - 
-{% capture title%}
- none|250px|3) Use contextual-menu option to connect child path to parent path 
-{% endcapture %}
-{% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Step-3.png' title=title %}
-  - 
-{% capture title%}
- none|250px|4) Joined result  
-      
-{% endcapture %}
-{% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Result.png' title=title %}
+  - {% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Step-1.png' title='none|250px|1) Select parent path and activate first join node'%}
+  - {% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Step-2.png' title='none|250px|2) Select child path and activate second join node'%}
+  - {% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Step-3.png' title='none|250px|3) Use contextual-menu option to connect child path to parent path'%}
+  - {% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Result.png' title='none|250px|4) Joined result  
+     '%}
 
 </div>
 

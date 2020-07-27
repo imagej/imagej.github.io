@@ -23,11 +23,7 @@ description: test description
 
 ## Anomalous Diffusion Filters
 
-
-{% capture title%}
- Filtering examples with the T1w MRI stack available in Fiji examples images. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Filters-examples.png' title=title %}
+{% include thumbnail src='/images/pages/Filters-examples.png' title='Filtering examples with the T1w MRI stack available in Fiji examples images.'%}
 
 A PlugInFilter for the two different methods for image filtering: Anisotropic Anomalous Diffusion and Isotropic Anomalous Diffusion. Both methods description can be found in the Physics in Medicine and Biology article [weblink](http://dx.doi.org/10.1088/0031-9155/60/6/2355) and have a discrete solution of generalized diffusion heat equation (also know as a porous media equation).
 
@@ -61,17 +57,13 @@ Where \(I_{\phi,t}\) and \(I_{\phi,t+1}\) are the evaluated images in \(t_i\) it
 
 ## Filters parameters
 
-
-{% capture title%}
- Filter's parameters for both isotropic and anisotropic approaches. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Filters-parameters.png' title=title %}
+{% include thumbnail src='/images/pages/Filters-parameters.png' title='Filter\'s parameters for both isotropic and anisotropic approaches.'%}
 
 Basically, the common parameters that are used for both anomalous filtering methods are the number of iterations and the anomalous parameter (q value). The number of iterations is directly related to the time parameter and it must be a positive and integer number, because of the forward and discrete filter implementation. The anomalous parameter, or q value, is the general parameters to define what anomalous probability distribution that will be used for all filtering process in the image.
 
 Now, the only different parameters that have to be set for each filter method are: Condutance and Generalized diffusion coefficient. In summary, both parameters have an intrinsic relationship with the diffusion intensity.
 
-In the case of isotropic filtering, the diffusion intensity is set as a fixed parameter for all filtering process, given by the Generalized diffusion coefficient value (\(D_q\)). This approach is similar with the [Gaussian blur](wikipedia_Gaussian_blur "wikilink") and have the physical process, where all the image space have the same diffusion intensity applied. A further idea, the anisotropic filtering set a local diffusion intensity based on the neighborhood characteristic. The local gradient magnitude is the general parameter to set what will be the filter behavior in that specific region of the image, given by its pixel neighbors. This kind of solution for the local diffusion intensity (gradient magnitude) is similar with the Perona and Malik anisotropic filter and for this case the Condutance parameters plays the edge detection role. See the [Classic Anisotropic Filter](wikipedia_Anisotropic_diffusion "wikilink") to get more information about the condutance parameter.
+In the case of isotropic filtering, the diffusion intensity is set as a fixed parameter for all filtering process, given by the Generalized diffusion coefficient value (\(D_q\)). This approach is similar with the {% include wikipedia title='Gaussian blur' text='Gaussian blur'%} and have the physical process, where all the image space have the same diffusion intensity applied. A further idea, the anisotropic filtering set a local diffusion intensity based on the neighborhood characteristic. The local gradient magnitude is the general parameter to set what will be the filter behavior in that specific region of the image, given by its pixel neighbors. This kind of solution for the local diffusion intensity (gradient magnitude) is similar with the Perona and Malik anisotropic filter and for this case the Condutance parameters plays the edge detection role. See the {% include wikipedia title='Anisotropic diffusion' text='Classic Anisotropic Filter'%} to get more information about the condutance parameter.
 
 ## Indicated Usage
 

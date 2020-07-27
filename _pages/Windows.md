@@ -8,7 +8,11 @@ description: test description
 ---
 
 {% include menu-platforms%}
-{% include minibox logo='Win.png ' blurb='[Where do you want to go today?](wikipedia_Where_do_you_want_to_go_today? "wikilink") ' %}[Windows](wikipedia_Microsoft_Windows "wikilink") is [Microsoft](wikipedia_Microsoft "wikilink")'s family of operating systems. It is [the most prevalent desktop computer platform](https://www.netmarketshare.com/operating-system-market-share.aspx). This page details issues specific to using [ImageJ](ImageJ "wikilink") on Windows systems.
+
+{% capture blurb%}
+{% include wikipedia title='Where do you want to go today?' text='Where do you want to go today?'%}
+{% endcapture %}
+{% include minibox logo='Win.png ' blurb=blurb %}{% include wikipedia title='Microsoft Windows' text='Windows'%} is {% include wikipedia title='Microsoft' text='Microsoft'%}'s family of operating systems. It is [the most prevalent desktop computer platform](https://www.netmarketshare.com/operating-system-market-share.aspx). This page details issues specific to using [ImageJ](ImageJ "wikilink") on Windows systems.
 
 {% include toc%}
 
@@ -24,7 +28,7 @@ See also the [Troubleshooting](Troubleshooting "wikilink") page.
 
 ## HiDPI displays
 
-If text and other UI elements appear tiny on your [HiDPI](wikipedia_HiDPI "wikilink") display, then check the following:
+If text and other UI elements appear tiny on your {% include wikipedia title='HiDPI' text='HiDPI'%} display, then check the following:
 
   - [Double check that you are running the 64-bit version of Java](Troubleshooting#Checking_the_Java_version "wikilink").
   - Verify that you are running Windows 10 (Windows 7 and 8 do not do HiDPI scaling).

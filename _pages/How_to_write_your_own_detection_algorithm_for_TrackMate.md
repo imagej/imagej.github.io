@@ -14,7 +14,7 @@ description: test description
 
 Welcome to the most useful and also unfortunately the hardest part in this tutorial series on how to extend [TrackMate](TrackMate "wikilink") with custom modules.
 
-The detection algorithms in TrackMate are basic: they are all based or approximated from the [Laplacian of Gaussian](wikipedia_Blob_detection#The_Laplacian_of_Gaussian "wikilink") technique. They work well even in the presence of noise for round or spherical and well separated objects. As soon as you move away from these requirements, you will feel the need to implement your own custom detector.
+The detection algorithms in TrackMate are basic: they are all based or approximated from the {% include wikipedia title='Blob detection\#The\_Laplacian\_of\_Gaussian' text='Laplacian of Gaussian'%} technique. They work well even in the presence of noise for round or spherical and well separated objects. As soon as you move away from these requirements, you will feel the need to implement your own custom detector.
 
 This is the subject of this tutorial, which I promised to be rather difficult. Not because implementing a custom detection algorithm is difficult. It *is* difficult, even very difficult if you are not familiar with the [ImgLib2](ImgLib2 "wikilink") library. But we will skip this difficulty here by not making a true detector, but just a dummy one that returns detections irrespective of the image content. This involved task is left to your Java and ImgLib2 skills.
 

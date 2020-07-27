@@ -50,13 +50,11 @@ With the desired dataset window active, launch FLIMJ from the menu under {% incl
 
 ![FLIMJ\_first\_launch.png](/images/pages/FLIMJ first launch.png "FLIMJ_first_launch.png")
 
-{% include info-box content='"""FLIMJ plugin accepts only 3- or 4-dimensional datasets.""" If the dataset is opened from a file supported by [SCIFIO](SCIFIO "wikilink") (such as a .sdt), the dataset likely has metadata attached, which helps FLIM plugin infer the order of the X, Y, and T axes as well as the time bin size. Otherwise, the user may be asked to provide the information:
-
-<img src="/images/pages/FLIMJ Lifetime Axis Not Detected.png" width="350"/><img src="/images/pages/FLIMJ Time Base Info Not Detected.png" width="200"/>
+{% include info-box img-src='"FLIMJ Lifetime Axis Not Detected.png" width="350"/\><img src="/images/pages/FLIMJ Time Base Info Not Detected.png" width="200"/>
 
 If the dataset comes with a (fourth) spectral dimension, the user has to choose the spectral channel to analyze as well:
 
-<img src="/images/pages/FLIMJ Multiple Channel Detected.png" width="350"/>' %}
+<img src="/images/pages/FLIMJ Multiple Channel Detected.png" width="350"/> ' %}
 
 ### Fit preview
 

@@ -25,11 +25,7 @@ description: test description
 
 A quiver plot is a 2D array of vector arrows that can be used to visualize dynamic processes such as flow or wave propagation. Vectors have both magnitude and direction; therefore to generate a vector plot, there needs to be a corresponding 2D array of the direction of each vector, and a 2D array of the magnitude of each vector.
 
-
-{% capture title%}
- **Intro to generating a quiver plot** From left to right: The original data showing a wave moving through time (blue = start time, red = end time). Vector analysis was performed on the wave to generate a corresponding array of vector angles and vector speeds for points in space. (NOTE: The actual pixel values in these images needs to be the angle in degrees, and the magnitude of the vector). The Quiver Plot plugin was then used to make a quiver plot based off of the angle and speed arrays. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Intro Quiver Plot Image.jpg' title=title %}
+{% include thumbnail src='/images/pages/Intro Quiver Plot Image.jpg' title='\'\'\'Intro to generating a quiver plot\'\'\' From left to right: The original data showing a wave moving through time (blue = start time, red = end time). Vector analysis was performed on the wave to generate a corresponding array of vector angles and vector speeds for points in space. (NOTE: The actual pixel values in these images needs to be the angle in degrees, and the magnitude of the vector). The Quiver Plot plugin was then used to make a quiver plot based off of the angle and speed arrays.'%}
 
 ## Running the Quiver Plot Plugin
 

@@ -8,9 +8,9 @@ description: test description
 ---
 
 {% include info-box content='For a summary of [SciJava](SciJava "wikilink") licensing, see the [Licensing](Licensing "wikilink") page.' %} {% include menu-licenses%}
-The **MIT License** is a **permissive** [free software](Open_Source "wikilink") license, imposing minimal restrictions on the redistribution of covered software. This is in contrast to [copyleft](wikipedia_Copyleft "wikilink") licenses like the [GPL](GPL "wikilink"), which have reciprocity share-alike requirements. The MIT license is named for the [Massachusetts Institute of Technology](http://mit.edu/), where it originated.
+The **MIT License** is a **permissive** [free software](Open_Source "wikilink") license, imposing minimal restrictions on the redistribution of covered software. This is in contrast to {% include wikipedia title='Copyleft' text='copyleft'%} licenses like the [GPL](GPL "wikilink"), which have reciprocity share-alike requirements. The MIT license is named for the [Massachusetts Institute of Technology](http://mit.edu/), where it originated.
 
-See the [Wikipedia article on the MIT license](wikipedia_MIT_License "wikilink") for more information.
+See the {% include wikipedia title='MIT License' text='Wikipedia article on the MIT license'%} for more information.
 
 {% include license name='MIT License ' shortname='MIT ' description='The """MIT""" license is a simple permissive license, functionally equivalent to the [Simplified BSD License](BSD-2 "wikilink"). A licensee of MIT-licensed software can:
 

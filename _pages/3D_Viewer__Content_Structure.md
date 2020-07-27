@@ -14,11 +14,7 @@ description: test description
 
 You can download example source code for this HowTo [here](3D_Viewer__Example_code "wikilink").
 
-The following figure shows a simplified class diagram which shows the class hierarchy and relationship of the most important classes for users ofthe API: 
-{% capture title%}
- Simplified class diagram showing the core classes of the 3D Viewer. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/3DViewer-class-diagram.png' title=title %}
+The following figure shows a simplified class diagram which shows the class hierarchy and relationship of the most important classes for users ofthe API: {% include thumbnail src='/images/pages/3DViewer-class-diagram.png' title='Simplified class diagram showing the core classes of the 3D Viewer.'%}
 
 ### The class hierarchy of the universe classes
 

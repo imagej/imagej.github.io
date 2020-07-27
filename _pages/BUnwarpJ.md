@@ -31,11 +31,7 @@ Where the weights of every term are set by the user in the main window of the pl
 
 The plugin can be called from the main ImageJ/Fiji menu under Plugins \> Registration \> bUnwarpJ. Two images (**8, 16, 32-bit grayscale or RGB Color**) need to be opened in order to be able to use the plugin. If so, the maing dialog window of the plugin will open.
 
-
-{% capture title%}
- bUnwarpJ main dialog 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-main-dialog.png' title=title %}
+{% include thumbnail src='/images/pages/BUnwarpJ-main-dialog.png' title='bUnwarpJ main dialog'%}
 
 **Both selected images will work simultaneously as source and target**, their tags are there only for the sake of clarification. The registration mode can be "Accurate", "Fast" and "Mono". The registration mode "**Mono**" (included since version 2.5) makes the program to perform only **unidirectional** registration, i.e. from source to target. The two registration modes "Accurate" and "Fast" involve performing **bidirectional** registration and affect the stopping criteria internally used by the program. More internal options can be modified in the "Advanced Options" panel. This panel gives you access to most of the internal parameters of the algorithm. The "Initial" and "Final" deformation lists allow you to select the coarsest and finest scale of the spline deformation field. "Very coarse" corresponds to 4 splines (one in each corner of the image). As you increase the deformation level, the number of splines is doubled in each direction (horizontal and vertical).
 
@@ -57,11 +53,7 @@ The final registration values appear in a separate ("Results") window.
 
 The following figure shows one of the **resulting stacks** from registering a source (moving) Lena image to a target (fixed) warped version of the same image:
 
-
-{% capture title%}
- From left to right, consecutive slices of the resulting stack: elastic-transformed image, original moving image and warped moving mask. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-lena-basic-result.png' title=title %}
+{% include thumbnail src='/images/pages/BUnwarpJ-lena-basic-result.png' title='From left to right, consecutive slices of the resulting stack: elastic-transformed image, original moving image and warped moving mask.'%}
 
 The **verbose mode** produces more information:
 
@@ -69,11 +61,7 @@ The **verbose mode** produces more information:
 2.  The grid obtained after deforming the fixed image with the vector field described above;
 3.  The step values of the optimization process in a separate ("Results") window.
 
-
-{% capture title%}
- From left to right: the last consecutive slices of the resulting stack in verbose mode (deformation field and deformation grid) and the Log window with the optimization steps, final optimal values and execution time. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-lena-verbose-result.png' title=title %}
+{% include thumbnail src='/images/pages/BUnwarpJ-lena-verbose-result.png' title='From left to right: the last consecutive slices of the resulting stack in verbose mode (deformation field and deformation grid) and the Log window with the optimization steps, final optimal values and execution time.'%}
 
 Since both, source and target images work as moving and fixed images, **there are two sets (stacks) of results**: from source to target and from target to source.
 
@@ -81,23 +69,15 @@ The "Mono" mode produces only results from the source to the target image.
 
 During the registration process, the current difference images and a mapping of the grid from the fixed images onto the moving images are shown:
 
-|                                                                                                                                                                                                                                  |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-lena-during-registration.png' title=title %} |
+|                                                                                                                                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/BUnwarpJ-lena-during-registration.png' title='Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image.'%} |
 
 During the registration process the toolbar will be changed to
 
-|                                                                                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 
-{% capture title%}
- bUnwarpJ toolbar when the registration process has started. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-toolbar-when-registering.png' title=title %} |
+|                                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/BUnwarpJ-toolbar-when-registering.png' title='bUnwarpJ toolbar when the registration process has started. '%} |
 
 Click on the stop button to stop the process. The output at the current state of the optimization will be returned in the normal way.
 
@@ -105,43 +85,27 @@ Click on the stop button to stop the process. The output at the current state of
 
 When the plugin is called and before pressing "OK" in the main window, the toolbar changes its appearance and it is possible to manually add landmarks to the selected images:
 
-|                                                                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 
-{% capture title%}
- bUnwarpJ toolbar before starting registration. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-toolbar-add-crosses.png' title=title %} |
+|                                                                                                                                         |
+| --------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/BUnwarpJ-toolbar-add-crosses.png' title='bUnwarpJ toolbar before starting registration.'%} |
 
 The depressed button indicates that you may **add a landmark** now. Landmarks are added in either image. The landmark will be automatically placed in the same position on both images. The new landmark becomes the "current landmark" (indicated by a thicker \[+\] sign in the current image and a \[×\] sign in the other image, while all the rest are represented by \[+\] signs). To move any landmark, press on the "**Move crosses**" button:
 
-|                                                                                                                                                                      |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- bUnwarpJ toolbar with "Move crosses" button selected. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-toolbar-move-crosses.png' title=title %} |
+|                                                                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/BUnwarpJ-toolbar-move-crosses.png' title='bUnwarpJ toolbar with "Move crosses" button selected.'%} |
 
 Click and drag on any landmark to make it correspond to the same position in both images. Here goes an example of the two Lena images with corresponding landmarks:
 
-|                                                                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 
-{% capture title%}
- Example of landmarks on moving and fixed images. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-landmarks-example.png' title=title %} |
+|                                                                                                                                         |
+| --------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/BUnwarpJ-landmarks-example.png' title='Example of landmarks on moving and fixed images.'%} |
 
 Landmarks can be removed through the "**Remove crosses**" button:
 
-|                                                                                                                                                                                                           |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- bUnwarpJ toolbar with "Remove crosses" button selected so the user can remove landmarks. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-toolbar-remove-crosses.png' title=title %} |
+|                                                                                                                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| {% include thumbnail src='/images/pages/BUnwarpJ-toolbar-remove-crosses.png' title='bUnwarpJ toolbar with "Remove crosses" button selected so the user can remove landmarks.'%} |
 
 This is the way of manually adding landmarks to the registration process. However, **since bUnwarpJ v2.0** there is the option as well of using automatic landmarks as explained in the section SIFT and MOPS support, **or manually adding point selections in both images before calling the plugin**. If the number of point selections is the same in both images, they will be transformed into landmarks.
 
@@ -151,28 +115,16 @@ This is the way of manually adding landmarks to the registration process. Howeve
 
 This program allows you using masks in **two mutually exclusive ways**. In the first way, masks are introduced together with the input images. In this mode, input images must be a stack of images (first slice: the image itself, second slice: the mask). In this way, the mask can have any shape. In the second way, the input images must not be stacks and simple polygonal masks can be used. These masks are defined using the two buttons ("**Draw an inner mask**" and "**Draw an outer mask**") shown below:
 
-|                                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- bUnwarpJ toolbar with "Draw an inner mask" button selected. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-toolbar-draw-inner-mask.png' title=title %} |
-| 
-{% capture title%}
- bUnwarpJ toolbar with "Draw an outer mask" button selected. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-toolbar-draw-outer-mask.png' title=title %} |
+|                                                                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/BUnwarpJ-toolbar-draw-inner-mask.png' title='bUnwarpJ toolbar with "Draw an inner mask" button selected.'%} |
+| {% include thumbnail src='/images/pages/BUnwarpJ-toolbar-draw-outer-mask.png' title='bUnwarpJ toolbar with "Draw an outer mask" button selected.'%} |
 
 The inner mask keeps the information in the interior of the polygon, while the outer mask keeps the information in the exterior of the polygon. The thrown-out information is grayed. Here goes an example of an inner mask:
 
-|                                                                                                                                                            |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- bUnwarpJ example of inner mask on Lena image. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-inner-mask-example.png' title=title %} |
+|                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/BUnwarpJ-inner-mask-example.png' title='bUnwarpJ example of inner mask on Lena image.'%} |
 
 Masks can be used for one of the images, both, or none. You can put a mask in one of the images and not in the other, you can put a mask (with different shapes) in both images, or you may not use masks at all. After calling the plugin, the masks are erased and the initial images are restored.
 
@@ -180,19 +132,11 @@ Masks can be used for one of the images, both, or none. You can put a mask in on
 
 When using the "**Input/Output Menu**" from the toolbar, we have the possibility of processing different input and output files that will affect the registration.
 
-|                                                                                                                                                                      |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- bUnwarpJ toolbar with "Input/Output menu" button selected. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-toolbar-IO-menu.png' title=title %} |
+|                                                                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/BUnwarpJ-toolbar-IO-menu.png' title='bUnwarpJ toolbar with "Input/Output menu" button selected.'%} |
 
-
-{% capture title%}
- bUnwarpJ Input/Output menu. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-IO-menu.png' title=title %}
+{% include thumbnail src='/images/pages/BUnwarpJ-IO-menu.png' title='bUnwarpJ Input/Output menu.'%}
 
 In the last release, the plugin presents the following Input/Output options:
 
@@ -319,11 +263,7 @@ One important advantage of [bUnwarpJ](bUnwarpJ "wikilink") over the previous met
 
 ### SIFT and MOPS plugin support
 
-
-{% capture title%}
- bUnwarpJ: example of SIFT correspondences converted to registration landmarks. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BUnwarpJ-lena-SIFT-landmarks-example.png' title=title %}The last release of bUnwarpJ has compatibility with Stephan Saalfeld's plugin for automatic [ feature extraction](Feature_Extraction "wikilink") (implementations of SIFT and MOPS algorithms).
+{% include thumbnail src='/images/pages/BUnwarpJ-lena-SIFT-landmarks-example.png' title='bUnwarpJ: example of SIFT correspondences converted to registration landmarks.'%}The last release of bUnwarpJ has compatibility with Stephan Saalfeld's plugin for automatic [ feature extraction](Feature_Extraction "wikilink") (implementations of SIFT and MOPS algorithms).
 
 An explanation of the parameters is [ here](Feature_Extraction#Parameters "wikilink"). This plugin is also integrated in Fiji.
 

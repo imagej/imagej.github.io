@@ -17,11 +17,7 @@ When views have more than one illumination, you can select the best one by selec
 
   - In the **Selection method** you can choose by which method the best illumination is determined. Currently, we support the following selection methods:
 
-
-{% capture title%}
- **Figure 1:** Performance of the illumination selection methods on the images of a 2 angle, dual-illumination, 2x3 grid dataset. All methods correctly identify the right/left side illumination for the right and left images of the grid. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BigStitcher Illumselect benchmark.png' title=title %}
+{% include thumbnail src='/images/pages/BigStitcher Illumselect benchmark.png' title='\'\'\'Figure 1:\'\'\' Performance of the illumination selection methods on the images of a 2 angle, dual-illumination, 2x3 grid dataset. All methods correctly identify the right/left side illumination for the right and left images of the grid.'%}
 
   -   - **Pick brightest** will pick the illumination direction with the highest mean intensity (for multiresolution datasets, it will be calculated on the lowest resolution images).
       - **Pick highest mean gradient magnitude** will calculate the mean gradient magnitude in the images via central differences and pick the illumination with the highest value (for multiresolution datasets, it will be calculated on the lowest resolution images).

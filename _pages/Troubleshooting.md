@@ -52,7 +52,7 @@ There is another debug mode, which can be enabled in the {% include bc content='
 
 ## If ImageJ freezes or hangs
 
-If ImageJ appears to [hang](wikipedia_Hang_\(computing\) "wikilink")—i.e., it stops responding to inputs—it is often helpful to take a "snapshot" of where the program is at after the hang occurs. This information can give the developers valuable hints about how to fix the problem.
+If ImageJ appears to {% include wikipedia title='Hang (computing)' text='hang'%}—i.e., it stops responding to inputs—it is often helpful to take a "snapshot" of where the program is at after the hang occurs. This information can give the developers valuable hints about how to fix the problem.
 
 There are two ways to create such a snapshot, known as a "thread dump" or "stack trace".
 
@@ -82,7 +82,7 @@ Once you have the stack trace. you can paste it into a [bug report](Bugs "wikili
 
 ## If ImageJ crashes
 
-If ImageJ [crashes](wikipedia_Crash_\(computing\) "wikilink")—i.e., the program suddenly terminates, with or without an error message—it is very helpful to identify the steps which can reliably reproduce the crash:
+If ImageJ {% include wikipedia title='Crash (computing)' text='crashes'%}—i.e., the program suddenly terminates, with or without an error message—it is very helpful to identify the steps which can reliably reproduce the crash:
 
   - Launch ImageJ [from the console](#Launching_ImageJ_from_the_console "wikilink") as described above.
   - Perform the same actions which previously resulted in the crash.
@@ -187,7 +187,7 @@ While ImageJ strives for [reproducible](reproducible "wikilink") analysis, there
 
 ## OutOfMemoryError
 
-{% include box float='right ' %} The error means ImageJ ran out of available [computer memory](wikipedia_Random-access_memory "wikilink") (*not* hard drive space).
+{% include box float='right ' %} The error means ImageJ ran out of available {% include wikipedia title='Random-access memory' text='computer memory'%} (*not* hard drive space).
 
 The first thing to do is make sure that ImageJ has a large enough "maximum heap" size:
 
@@ -236,7 +236,7 @@ The number given in the `UnsupportedClassVersionError` error messages is an inte
 | 51.0          | Java SE 7    |
 | 52.0          | Java SE 8    |
 
-See [Java version history](wikipedia_Java_version_history "wikilink") for more information about these different versions.
+See {% include wikipedia title='Java version history' text='Java version history'%} for more information about these different versions.
 
 To control the version of Java that ImageJ uses, see [How do I launch ImageJ with a different version of Java](Frequently_Asked_Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F "wikilink").
 

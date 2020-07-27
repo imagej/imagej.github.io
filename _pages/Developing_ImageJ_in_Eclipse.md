@@ -184,11 +184,7 @@ public static void main(String[] args) {
 
 ## Testing your plugin in an existing installation
 
-When you run your plugin from Eclipse, you're only testing with the classpath *of this project*—which may or may not reflect the environment of an actual user's installation. To test your plugin in an existing installation you can either simply copy the jar, or use Maven to install your plugin and its dependencies. 
-{% capture title%}
- Setting up a new Maven Build configuration 
-{% endcapture %}
-{% include thumbnail src='/images/pages/MavenRunConfig.png' title=title %}
+When you run your plugin from Eclipse, you're only testing with the classpath *of this project*—which may or may not reflect the environment of an actual user's installation. To test your plugin in an existing installation you can either simply copy the jar, or use Maven to install your plugin and its dependencies. {% include thumbnail src='/images/pages/MavenRunConfig.png' title='Setting up a new Maven Build configuration'%}
 
 ### Option 1: Copying the jar
 

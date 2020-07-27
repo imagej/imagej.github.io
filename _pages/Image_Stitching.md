@@ -46,11 +46,7 @@ Although both plugins make use of layered context-dependent Generic Dialogs, the
 
 ## Pairwise Stitching
 
-
-{% capture title%}
- Shows the selection of input images. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/PairwiseStitching1.png' title=title %} The Pairwise Stitching first queries for two input images that you intend to stitch. They can contain rectangular ROIs which limit the search to those areas, however, the full images will be stitched together. Once you selected the input images it will show the actual dialog for the Pairwise Stitching. The dialog will depend on the dimensionality of the input images. Please note that RGB input images will be converted into 8-Bit composite images.
+{% include thumbnail src='/images/pages/PairwiseStitching1.png' title='Shows the selection of input images.'%} The Pairwise Stitching first queries for two input images that you intend to stitch. They can contain rectangular ROIs which limit the search to those areas, however, the full images will be stitched together. Once you selected the input images it will show the actual dialog for the Pairwise Stitching. The dialog will depend on the dimensionality of the input images. Please note that RGB input images will be converted into 8-Bit composite images.
 
   - **Linear blending**: In the overlapping area the intensity are smoothly adjusted between the two images.
   - **Average**: In the overlapping area the average intensity between all images is computed ({% include github org='fiji ' repo='Stitching ' source='mpicbg/stitching/fusion/AveragePixelFusion.java ' label='example source code ' %}).
@@ -60,11 +56,7 @@ Although both plugins make use of layered context-dependent Generic Dialogs, the
   - **Overlay into Composite**: all channels of all input images will be put into the output image as separate channels.
   - **Do not fuse images**: no output images will be computed, just the overlap is computed.
 
-
-{% capture title%}
- Shows the Pairwise Stitching dialog. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/PairwiseStitching2.png' title=title %}
+{% include thumbnail src='/images/pages/PairwiseStitching2.png' title='Shows the Pairwise Stitching dialog.'%}
 
 The *number of peaks* defines the number of maxima in the Phase Correlation Matrix which are examined. If the stitching was not correct increasing this number might help.
 
@@ -80,11 +72,7 @@ If the input stacks are time-lapse images, you will have different choices on ho
   - **Register images adjacently over time**: The stitching will compute the shift between all images of all time-points, as well as of each image to the same image of the next time-point. A global optimization scheme will be used to minimize the global error and reject outliers. The parameters for this global optimization will be queried in an additional dialog.
   - **Register all images over all time-points globally (expensive\!)**: The stitching will compute the shift between all time-points and all images which will take a considerable amount of time. A global optimization scheme will be used to minimize the global error and reject outliers. The parameters for this global optimization will be queried in an additional dialog.
 
-
-{% capture title%}
- Shows the extra option for Pairwise Stitching when aligning all timepoints to each other. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/PairwiseStitching3.png' title=title %}
+{% include thumbnail src='/images/pages/PairwiseStitching3.png' title='Shows the extra option for Pairwise Stitching when aligning all timepoints to each other.'%}
 
 If a global optimization is necessary for time-point registration another dialog will pop up to ask for more parameters:
 
@@ -96,11 +84,7 @@ If a global optimization is necessary for time-point registration another dialog
 
 This plugin is able to stitch an arbitrary collection or grid of images, it does not matter if it is 2d, 3d, 4d or 5d images as long as all images are of the same type. In contrast to the Pairwise Stitching of two images, this plugins will load (and potentially save) the images from/to harddisc.
 
-
-{% capture title%}
- Shows the grid/collection selection dialog. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/GridStitching1.png' title=title %} Please note that you should take the chance to give the Grid/Collection Stitching a clue of what the approximate layout of the tiles is if you can. This will reduce the computational effort significantly and is much more likely to succeed. If this is not possible, choose the option **Unknown positions** and the Stitching will try to figure out the correct alignment without any help.
+{% include thumbnail src='/images/pages/GridStitching1.png' title='Shows the grid/collection selection dialog.'%} Please note that you should take the chance to give the Grid/Collection Stitching a clue of what the approximate layout of the tiles is if you can. This will reduce the computational effort significantly and is much more likely to succeed. If this is not possible, choose the option **Unknown positions** and the Stitching will try to figure out the correct alignment without any help.
 
 The first dialog queries the type image collection or image grid that you want to assemble. For each major type there are typically several subtypes you can choose from. For an easier understanding each option is supported by a small figure:
 

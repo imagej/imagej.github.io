@@ -15,7 +15,7 @@ description: test description
 [ImageJ](ImageJ "wikilink") and [SciJava](SciJava "wikilink") projects use Travis in a variety of ways:
 
   - Perform builds of SciJava projects. Travis deploys `SNAPSHOT` builds to the [SciJava Maven repository](https://maven.scijava.org/) in response to pushes to each code repository's `master` branch. So any downstream projects depending on a version of `LATEST` for a given component will match the last successful Travis build—i.e., the latest code on `master`.
-  - Run each project's associated [unit tests](wikipedia_Unit_testing "wikilink"). Travis is instrumental in early detection of new bugs introduced to the codebase.
+  - Run each project's associated {% include wikipedia title='Unit testing' text='unit tests'%}. Travis is instrumental in early detection of new bugs introduced to the codebase.
   - Perform [releases](releases "wikilink") of [SciJava](SciJava "wikilink") projects. Travis deploys release builds to the appropriate Maven repository—typically either the SciJava Maven repository or [OSS Sonatype](https://oss.sonatype.org/).
   - Keep the [javadoc](javadoc "wikilink") site updated.
   - Keep other web resources updated.

@@ -48,7 +48,7 @@ We are having good success packaging ImageJ via [Oracle's Java packaging mechani
 
   - As a self-contained application—i.e., platform native launcher (.exe on Windows, .app on OS X, etc.)
   - As a standalone application—i.e., double-clickable JAR file.
-  - As a [Java Web Start](wikipedia_Java_Web_Start "wikilink") application
+  - As a {% include wikipedia title='Java Web Start' text='Java Web Start'%} application
   - As an embedded web page—i.e., a Java applet.
 
 The **self-contained application** bundles are the most relevant to ImageJ specifically (although all of the above may be useful to various niches of software development). With Java's built-in bundling tools, we will be able to provide:

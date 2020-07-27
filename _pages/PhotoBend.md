@@ -25,11 +25,7 @@ description: test description
 
 A collection of specialized plugins for ImageJ providing tracking of a needle-like crystal shape changing during photobending process. Photobending is a phenomenon of crystal deformation caused by non-uniform crystal structure transformation due to photochemical reaction. Bending of crystals caused by light irradiation is only one of various types of mechanical response observed in chemically transforming solid substances (see the review by Naumov *et al.*, 2015\[1\]{% include cite content='journal' title='Quantification of photoinduced bending of dynamic molecular crystals: from macroscopic strain to kinetic constants and activation energies ' author='Stanislav Chizhik, Anatoly Sidelnikov, Boris Zakharov, Panče Naumov and Elena Boldyreva ' journal='Chemical Science ' volume='9 ' number='8 ' pages='2319-2335 ' year='2018 ' publisher='The Royal Society of Chemistry ' doi='10.1039/C7SC04863G ' %}</ref> ).
 
-
-{% capture title%}
- Animation of the photobend time lapse (\~1500x playback speed) 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Photobend demo.gif' title=title %}
+{% include thumbnail src='/images/pages/Photobend demo.gif' title='Animation of the photobend time lapse (\~1500x playback speed)'%}
 
 There are two plugins in the collection providing two methods of crystal bending measurement: Bending\_Crystal\_Track and Laser\_Spot\_Track4. Both use the template matching technique based on OpenCV library to track the movement of specific targets in the series of time lapse images organized in the virtual stack. Direct usage of movies opened as image stacks is not supported currently (movies can be transformed in the image sequences with tools like ffmpeg. <span style="color:red"> UPDATE\! - movies can be used directly with the Bending\_Crystal\_Track plugin\! </span> Laser\_Spot\_Track4 stil requires a series of images). Timeline of the registered process is based on exif timestamps in the images or on the constant time step if the metadata are not available.
 
@@ -55,11 +51,7 @@ The plugin code uses the selected regions of the image as reference templates to
 
 ## Laser\_Spot\_Track4 plugin
 
-
-{% capture title%}
- Animation of the laser spot movement obtained while registering the photobending with the laser beam deflection technique (\~70x playback speed) 
-{% endcapture %}
-{% include thumbnail src='/images/pages/LaserSpotMove.gif' title=title %}
+{% include thumbnail src='/images/pages/LaserSpotMove.gif' title='Animation of the laser spot movement obtained while registering the photobending with the laser beam deflection technique (\~70x playback speed)'%}
 
 The plugin's goal is to automate the registering and analysis for the so-called laser beam deflection technique. The technique is the general purpose method to study various processes in which objects undergo weak change of their geometry. A laser beam reflecting from the object itself or from a mirror attached to the object deflects while the object's geometry changes. The spot of the deflected laser beam moves on a distant screen (e.g. wall). Due to long distance between the object and the screen an amplification of the geometry change is provided.
 

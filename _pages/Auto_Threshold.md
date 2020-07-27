@@ -157,7 +157,7 @@ Otsu's threshold clustering algorithm searches for the threshold that minimizes 
 
   - {% include citation last='Otsu ' first='N ' year='1979 ' journal='IEEE Trans. Sys., Man., Cyber. ' url='http://ieeexplore.ieee.org/xpl/freeabs\_all.jsp?\&arnumber=4310076 ' title='A threshold selection method from gray-level histograms ' volume='9 ' pages='62-66 ' doi='10.1109/TSMC.1979.4310076 ' %}
 
-See also the [Wikipedia article on Otsu's method](wikipedia_Otsu's_method "wikilink").
+See also the {% include wikipedia title='Otsu\'s\_method' text='Wikipedia article on Otsu\'s method'%}.
 
 Ported from C++ code by Jordan Bevik.
 

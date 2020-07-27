@@ -104,17 +104,17 @@ There are currently two tracking algorithms available:
 
 ### GaussianML
 
-This algorithm implements the [maximum likelihood estimator](wikipedia_Maximum_likelihood_estimator "wikilink") based on a [shot noise](wikipedia_Shot_noise "wikilink") model. This means it considers the statistics of photon distribution in the image generation process to find the optimal location estimate. In our publication this is referred to as the inner loop.
+This algorithm implements the {% include wikipedia title='Maximum likelihood estimator' text='maximum likelihood estimator'%} based on a {% include wikipedia title='Shot noise' text='shot noise'%} model. This means it considers the statistics of photon distribution in the image generation process to find the optimal location estimate. In our publication this is referred to as the inner loop.
 
 ### EMCCD-GaussianML
 
-This algorithm implements the maximum likelihood estimator based on a more sophisticated model which in addition includes the stochastic amplification process in an [EMCCD](wikipedia_Electron-multiplying_CCD "wikilink") camera. We have shown, that it yields more accurate results in situations with low light levels. In our publication this algorithm is referred to as the **Nested Maximum Likelihood Algorithm**.
+This algorithm implements the maximum likelihood estimator based on a more sophisticated model which in addition includes the stochastic amplification process in an {% include wikipedia title='Electron-multiplying CCD' text='EMCCD'%} camera. We have shown, that it yields more accurate results in situations with low light levels. In our publication this algorithm is referred to as the **Nested Maximum Likelihood Algorithm**.
 
 ## Pick session options
 
 ![SessionOptions.png](/images/pages/SessionOptions.png "SessionOptions.png")
 
-After clicking **OK**, a new window will open. In this window you can choose a **σ** value, which denotes the standard deviation (in pixels) of the Gaussian used to approximate the [Point Spread Function](wikipedia_Point_spread_function "wikilink") (PSF) of the tracked objects. If you select **Automatic σ**, this value is used only as initialization. In this case **Min** and **Max** are used as bounds for the estimation. These values will be the default values for all new traces you make in this session.
+After clicking **OK**, a new window will open. In this window you can choose a **σ** value, which denotes the standard deviation (in pixels) of the Gaussian used to approximate the {% include wikipedia title='Point spread function' text='Point Spread Function'%} (PSF) of the tracked objects. If you select **Automatic σ**, this value is used only as initialization. In this case **Min** and **Max** are used as bounds for the estimation. These values will be the default values for all new traces you make in this session.
 
 You also can set your quality threshold. Smaller numbers are higher quality, while larger numbers are lower quality but faster.
 
@@ -195,7 +195,7 @@ You can change the default behavior in the edit menu.
 
 ![MScaleOptions.png](/images/pages/MScaleOptions.png "MScaleOptions.png")
 
-The algorithm builds a [pyramid](wikipedia_Pyramid_%28image_processing%29 "wikilink") by repetitively smothing the image with a Gaussian kernel with the standard deviation given in the **Smoothing σ** field and than down-sampling it by a factor set in the **Downscaling** field. The pyramid's hight (i.e. the number of repetitions) can be set in the **iterations** field. Localization is than first performed on the top level of the pyramid and repeated until its bottom, which is the original image.
+The algorithm builds a {% include wikipedia title='Pyramid %28image processing%29' text='pyramid'%} by repetitively smothing the image with a Gaussian kernel with the standard deviation given in the **Smoothing σ** field and than down-sampling it by a factor set in the **Downscaling** field. The pyramid's hight (i.e. the number of repetitions) can be set in the **iterations** field. Localization is than first performed on the top level of the pyramid and repeated until its bottom, which is the original image.
 
 # Tips
 

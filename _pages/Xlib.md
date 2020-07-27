@@ -123,11 +123,7 @@ The corresponding partial differential equation had first been numerically appro
 <table>
 <tbody>
 <tr class="odd">
-<td><p>
-{% capture title%}
- CT slice after strong alcali aggregate reactions (top) and edge preserving / smoothing filtering with a 4x4 median (bottom left) and anisotropic diffusion (bottom right). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 1.jpg' title=title %}<br />
+<td><p>{% include thumbnail src='/images/pages/XFig6 1.jpg' title='CT slice after strong alcali aggregate reactions (top) and edge preserving / smoothing filtering with a 4x4 median (bottom left) and anisotropic diffusion (bottom right).'%}<br />
 </p></td>
 </tr>
 </tbody>
@@ -147,13 +143,9 @@ The filter works in 2D as well as in 3D.
 
 In 1986, J. Canny has proposed an excellent edge detection filter \[Canny1986\] that due to its performance became famous. The filter is based on a fast numeric approach for the calculation of the direction-dependent first derivative, i.e. the gradient vector function of an image. The Canny filter is well known for 2D imaging, yet it is barely supported in 3D. This plugin supports both, the 2D and the 3D implementation. It additionally supports preceding Gauss filtering, optional non-maxima suppression for the extraction of the edges, as well as a function for double thresholding and joining the connected regions. Double thresholding means that an upper threshold is used for extracting the relevant edges, while a lower threshold is provided for adding residing connections between the extracted edges. The plugin returns the magnitudes and the angles of the gradient vector functions.
 
-|                                                                                                                                                                                                                                                                                                                                                                            |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Valve image (left) and the results from the Canny filter. Top: original image, 2nd row: magnitudes of gradient vectors, angles of gradient vectors, 3rd row: magnitudes after non-maxima suppression, and the connected regions after double thresholding the maximal magnitudes. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 2.jpg' title=title %} |
+|                                                                                                                                                                                                                                                                                                                                                       |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/XFig6 2.jpg' title='Valve image (left) and the results from the Canny filter. Top: original image, 2nd row: magnitudes of gradient vectors, angles of gradient vectors, 3rd row: magnitudes after non-maxima suppression, and the connected regions after double thresholding the maximal magnitudes.'%} |
 
 The results of a Canny filtered image of a valve image is shown in the upper figure (top: original image). The gradient magnitude and angles are presented (2nd row), as well as the magnitudes after non-maxima suppression and also after joining the connected regions (3rd row).
 
@@ -161,11 +153,7 @@ The results of a Canny filtered image of a valve image is shown in the upper fig
 
 ### Cluster Image
 
-
-{% capture title%}
- Image acquired by BSE and EDX maps at the same local position showing the amounts of Ca, C (1st row), Al, Cl, Fe, K (2nd row), Mg, Mn, Na, O (3rd row), P, Si, S, Ti (4th row). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 3 1.jpg' title=title %} Cluster analysis is a technique of statistical data analysis for grouping sets of objects. It is used in machine learning, data mining, pattern recognition, information retrieval, bio-informatics and can also be applied to image analysis. Different clustering definitions and algorithms have been proposed using connectivity, distance to the cluster center, statistical distribution, or density rates as optimization parameters for building clusters.
+{% include thumbnail src='/images/pages/XFig6 3 1.jpg' title='Image acquired by BSE and EDX maps at the same local position showing the amounts of Ca, C (1st row), Al, Cl, Fe, K (2nd row), Mg, Mn, Na, O (3rd row), P, Si, S, Ti (4th row).'%} Cluster analysis is a technique of statistical data analysis for grouping sets of objects. It is used in machine learning, data mining, pattern recognition, information retrieval, bio-informatics and can also be applied to image analysis. Different clustering definitions and algorithms have been proposed using connectivity, distance to the cluster center, statistical distribution, or density rates as optimization parameters for building clusters.
 
 In image analysis, mainly two algorithms are prominent: the k-means algorithm and the mean shift algorithm. They have been implemented together with a third one, fuzzy c-means clustering.
 
@@ -181,13 +169,9 @@ The plugin also allows clustering by using ![here|30px](/images/pages/XFig6 3 3.
 
 As an example, ESEM images of a natural cement analogue (Maqarin, Jordania) is provided in the figure to the upper right. A backscatter electron microscope (BSE) image (top left) and image maps acquired from energy-dispersive X-ray spectroscopy (EDX) at the same location forked into 14 different elements (see figure above) are used as the basis for clustering. Thus together with the BSE image, the clustering is achieved from a 15-dimensional vector space. In the figure below, some results from different clustering algorithms and parameter settings are displayed. The first row shows results from the k-means, the second one from the mean shift, and the third one from fuzzy c-means clustering. K-means clustering (1st row) requires the number of clusters as an input parameter. The results for 2 (left), 3, 5 and 16 (right) clusters are provided. Slightly different results provides mean shift clustering (2nd row) which requires the size of the seeking perimeter as input parameter. It is determined at 100 (left), 70, 60 and at 50 (right). Fuzzy c-means clustering (3rd row) requires the number of clusters and the fuzziness as input parameters. The results are displayed for 5 clusters at fuzziness 1.1 (left) and 4.0, for 16 clusters at fuzziness 2.0, as well as an image showing its fuzziness membership to the cluster with the highest respective ranking at each location (right).
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Results from clustering of the 15-dimensional image data space displayed in the figure above. First row: k-means for 2 (left), 3, 5 and 16 (right) clusters. Second row: mean shift for the seeking perimeters 100 (left), 70, 60 and 50 (right). Third row: fuzzy c-means clustering for 5 clusters at fuzziness 1.1 (left) and 4.0, 16 clusters at fuzziness 2.0, and its fuzziness membership values (right). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 3 2.jpg' title=title %} |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/XFig6 3 2.jpg' title='Results from clustering of the 15-dimensional image data space displayed in the figure above. First row: k-means for 2 (left), 3, 5 and 16 (right) clusters. Second row: mean shift for the seeking perimeters 100 (left), 70, 60 and 50 (right). Third row: fuzzy c-means clustering for 5 clusters at fuzziness 1.1 (left) and 4.0, 16 clusters at fuzziness 2.0, and its fuzziness membership values (right).'%} |
 
 Clustering can also be applied to one dimensional spaces (i.e. from a single gray level image), or for color images where the R, G, B color channels provide a 3-dimensional vector space. Clustering thus provides an elegant way for automatic segmentation of 2D images or 3D image volumes containing different phases.
 
@@ -209,13 +193,9 @@ Clustering can also be applied to one dimensional spaces (i.e. from a single gra
 
 In particle analysis from imaging due to the resolution limits, the particles might be wrongly connected at various locations if they are located too close to each other. To remedy such connections, an algorithm for disconnecting them at their bottle necks has been implemented \[Münch2006\]. If requires a parameter k ranking from \[0...1\] controlling the disconnection. At k=1, particle separation occurs at any bottle necks while at k=0, no separation at all is being performed. The optimum depends on the data and is usually somewhere around k=0.7 inducing marked bottle necks to be carved and small bottle necks to be left unchanged.
 
-|                                                                                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- 3D FIB-nanotomography of cement grains (left), subsequent thresholding (center), disconnected (k=0.7) and labeled particles (right). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 4.jpg' title=title %} |
+|                                                                                                                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/XFig6 4.jpg' title='3D FIB-nanotomography of cement grains (left), subsequent thresholding (center), disconnected (k=0.7) and labeled particles (right).'%} |
 
 Results from cement grains acquired by 3D FIB-nanotomography are displayed in the figure above. To the left, the original data volume is visualized. The center image shows the mask after image thresholding. Particles close to each other are erroneously interconnected at various locations. The image to the right shows the volume disconnected at k=0.7 and labeled subsequently.
 
@@ -225,23 +205,15 @@ Results from cement grains acquired by 3D FIB-nanotomography are displayed in th
 
 Fast distance transform of image masks is useful for many morphological imaging applications. In an age of increasing data size, processing speed is of ultimate priority. A modern approach \[Saito1994,Meijster2000\] allows the generation of the distance transform even in linear time. The implementation in this plugin allows the calculation of Euclidian, Chessboard, or Citymap distance transform in both, 2D and 3D.
 
-|                                                                                                                                                                                                                       |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Binary mask from cement particles (left) and Euclidian distance transform of it (center) and of its reversed mask (right). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 5 1.jpg' title=title %} |
+|                                                                                                                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| {% include thumbnail src='/images/pages/XFig6 5 1.jpg' title='Binary mask from cement particles (left) and Euclidian distance transform of it (center) and of its reversed mask (right).'%} |
 
 In the upper figure, a binary mask from cement particles (left) is processed by using the Euclidian distance transform (center). The transform of the inverse mask is also given (right). The distances are visualized by using a color lookup table from blue (low values) to red (high values). The effect of different distance metrics is displayed in the lower figure. A simple mask consisting of 3 single black dots is provided (left). Next to it, the results of the Euclidian, Chessboard and Citymap (right) distance transform is shown.
 
-|                                                                                                                                                                                                           |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Mask containing 3 black dots only (left) and its Euclidian, Chessboard and Citymap (right) distance transform. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 5 2.jpg' title=title %} |
+|                                                                                                                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| {% include thumbnail src='/images/pages/XFig6 5 2.jpg' title='Mask containing 3 black dots only (left) and its Euclidian, Chessboard and Citymap (right) distance transform.'%} |
 
   - {% include citation last='Saito ' first='T ' last2='Toriwaki ' first2='J-I ' title='New algorithms for Euclidean Distance Transformation of an N-Dimensional Digitized Picture with Applications ' journal='Pattern Recognition ' volume='27(11) ' pages='1551-1565 ' year='1994 ' %}
 
@@ -249,11 +221,7 @@ In the upper figure, a binary mask from cement particles (left) is processed by 
 
   - {% include citation last='Meijster ' first='A ' last2='Roerdink ' first2='J B T M ' last3='Hesselink ' first3='W H ' title='A General Algorithm for Computing Distance Transform in Linear Time ' journal='in Proc. Mathematical Morphology and its Applications to Image and Signal Processing, Kluwer ' pages='331-340 ' year='2000 ' %}
 
-
-{% capture title%}
- FIB-nt image (427x768 pixels) from cement paste (left) and the magnitudes (center) and angles (right) of its Fourier transform. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 6.jpg' title=title %}
+{% include thumbnail src='/images/pages/XFig6 6.jpg' title='FIB-nt image (427x768 pixels) from cement paste (left) and the magnitudes (center) and angles (right) of its Fourier transform.'%}
 
 ### FFT 2D 3D
 
@@ -577,25 +545,17 @@ The example color image (top right) shows multiple noisy phases. Conventional me
 
 If an image is subject to consistent global shifts of the image values depending on the location, this might be due to inconsistencies in the data acquisition rather than to real changes in the material properties. In that case, background removal techniques might be appropriate. A typical example is image data from FIB-nanotomography (FIB-nt). Thereby, FIB-nt is applied onto cubes that are engraved into the flat sample surface prior to data acquisition. Due to shadowing effects, the subsequent 3D data acquisition lacks in loss of brightness and contrast towards the lower boundaries of the slices. This erroneously causes systematic inhomogeneities of the image values impeding reliable quantitative imaging. Correction of such deficits can be obtained by determining a global polynomial of low degree over the entire image and by subsequently subtracting the values of the polynomial function from the original image. The global polynomial function is determined by performing least squares optimization. Accordingly, systematic brightness variations can be globally corrected. The necessary assumption is that the overall image values remain more or less constant over the entire image, at least in an average sense.
 
-|                                                                                                                                                                                                                                                                                                                         |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- FIB-nt image with strong shadowing effects (top left), its thresholding (top centre), global polynomial of degree 1 (top right), its subtraction from the original image (bottom left), and its thresholding (bottom right). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 9 1.jpg' title=title %} |
+|                                                                                                                                                                                                                                                                                                    |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/XFig6 9 1.jpg' title='FIB-nt image with strong shadowing effects (top left), its thresholding (top centre), global polynomial of degree 1 (top right), its subtraction from the original image (bottom left), and its thresholding (bottom right).'%} |
 
 An example from a FIB-nt image and its shadowing effects is given in the above figure (top left). After thresholding, the systematic brightness loss towards the lower boundary becomes obvious (top center). The determination of a global polynomial of degree 1 results in a background image (top right). After subtraction (bottom left), the brightness drop disappears, as subsequent thresholding (bottom right) approves.
 
 In addition to the global homogeneization of the brightness values, the plugin also allows the correction of contrast values. However as an additional prerequisite, the image must be assumed to consist of a certain number of phases of more or less stable image values. In that case, a global polynomial can be calculated from the phase containing the lowermost image values, and a second polynomial from the phase containing the uppermost image values. The drifts are corrected by flattening both polynomial functions. The procedure hereby requires the number of phases as input parameter.
 
-|                                                                                                                                                                                                                                    |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- FIB-nt image of a fuel cell and its shadowing effects (left), and the image after correction (right) by assuming three existing phases. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 9 2.jpg' title=title %} |
+|                                                                                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/XFig6 9 2.jpg' title='FIB-nt image of a fuel cell and its shadowing effects (left), and the image after correction (right) by assuming three existing phases.'%} |
 
 The results of this kind of correction is displayed in the above figure. To the left, the original image is displayed. It consists of three different phases. Towards the lower border, a substantial drop of both, brightness and contrast occurs. Assuming a three phase image and after correction, the corrected image appears to be free from brightness and contrast drops (right).
 
@@ -616,13 +576,9 @@ Roundness values are useful to provide a metric of how closely the shape of an o
 
 In shape analysis, topological features can be captured from skeletons of the masks. Skeletons have several different mathematical definitions in the technical literature. Many different algorithms have been proposed. Many of them lack in retaining the original topology. A good conservation of the topology in 2D as well as in 3D was the main reason for the choice of the algorithm (Palagyi, \[Palagyi1998\]). This feature is displayed in the figure below, where a set of geometrical 3D objects is provided (left). After skeletonization (center), the topology is mainly being preserved. If the diameter of the skeletoized pipes is inflated up to the values from the distance transform of original volume (right), the thus restored objects obtain high similarity to the original ones.
 
-|                                                                                                                                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Some 3D objects (top), their skeletonization (bottom left) and their restoration by inflating the pipes up to the distance transform values of the original objects (bottom right). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 11.jpg' title=title %} |
+|                                                                                                                                                                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/XFig6 11.jpg' title='Some 3D objects (top), their skeletonization (bottom left) and their restoration by inflating the pipes up to the distance transform values of the original objects (bottom right).'%} |
 
   - {% include citation last='Palagyi ' first='K ' last2='Kuba ' first2='A ' title='A 3D-Subiteration Thinning Algorithm for Extracting Medial Lines ' journal='Pattern Recognition Letters ' volume='19 ' pages='613-227 ' year='1998 ' %}
 
@@ -630,31 +586,19 @@ In shape analysis, topological features can be captured from skeletons of the ma
 
 Striping artifacts may occur due to undesired effects during data acquisition. Defect detector pixels might be the reason of stripes in the projections of computed tomography measurements resulting in ring artifacts after reconstruction. Waterfall artifacts might be the reason for stripes when accessing 3D data using FIB-nanotomography. Both types of artifacts can be erased by a technique for stripe filtering based on the combination of wavelet and Fourier transform \[Münch2009\]. The potential of the stripe filtering plugin is shown in the figure below by applying it to a gray level image (top) and to a RGB image (bottom).
 
-|                                                                                                                                                                                                                                  |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Gray level (top) and RGB (bottom) image containing horizontal stripes (left) and the results of the stripe filtering plugin (right). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 12 1.jpg' title=title %} |
+|                                                                                                                                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/XFig6 12 1.jpg' title='Gray level (top) and RGB (bottom) image containing horizontal stripes (left) and the results of the stripe filtering plugin (right).'%} |
 
 In the next figure, the stripes in CT projections (top) and the resulting ring artifacts in the reconstructed images (bottom) is presented, the original situation to the left and the results after stripe filtering to the right.
 
-|                                                                                                                                                                                                                                                                                                                                               |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Projection image in a CT slice (top) before (left) and after (right) stripe filtering. The stripes in the projections yield ring artifacts in the reconstructed image (bottom). An original (left) and its filtered version (right) is displayed. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 12 2.jpg' title=title %} |
+|                                                                                                                                                                                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| {% include thumbnail src='/images/pages/XFig6 12 2.jpg' title='Projection image in a CT slice (top) before (left) and after (right) stripe filtering. The stripes in the projections yield ring artifacts in the reconstructed image (bottom). An original (left) and its filtered version (right) is displayed.'%} |
 
   - {% include citation last='Münch ' first='B ' last2='Trtik ' first2='P ' last3='Marone ' first3='F ' last4='Stampanoni ' first4='M ' title='Stripe and Ring Artifact Removal with Combined Wavelet-Fourier Filtering ' journal='Optical Express ' volume='17(10) ' pages='8567-8591 ' year='2009 ' %}
 
-
-{% capture title%}
- Flowers image (top left), its transform into polar coordinates (top right), its scaling followed by a rotation (bottom left), its rotation followed by a scaling (bottom right). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 13.jpg' title=title %}
+{% include thumbnail src='/images/pages/XFig6 13.jpg' title='Flowers image (top left), its transform into polar coordinates (top right), its scaling followed by a rotation (bottom left), its rotation followed by a scaling (bottom right).'%}
 
 ### Transform 2D 3D
 
@@ -672,11 +616,7 @@ defines a scaling by (0.5, 0.8, 1.5) followed by a rotation by (-10, 20, 30) in 
 
 The corresponding homogeneous 4x4 (for 3D, or 3x3 for 2D) matrix operation is always indicated on the fly. Of course, the specification of the 4x4 (or 3x3) homogeneous matrix itself is possible as well. Moreover, the transformation of cartesian to cylindrical or spherical coordinates or vice versa is supported. Also, resampling into another pixel size is feasible.
 
-
-{% capture title%}
- Well known Lenna image (left), its wavelet decomposition at decomposition level 2 by using the Haar wavelet when providing a nice view (top center) and a reconstructible format (bottom center), and finally, its reconstruction (right). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig6 15 lenna.jpg' title=title %}
+{% include thumbnail src='/images/pages/XFig6 15 lenna.jpg' title='Well known Lenna image (left), its wavelet decomposition at decomposition level 2 by using the Haar wavelet when providing a nice view (top center) and a reconstructible format (bottom center), and finally, its reconstruction (right).'%}
 
 ### Wavelets 2D
 
@@ -706,23 +646,15 @@ This plugin provides the reconstruction of virtual 3D phase volumes from 2D phas
 
 The algorithm assumes that the 2-point autocorrelation function of similar structures is being preserved. The essential idea is to solve the 3D-reconstruction problem time efficiently in the Fourier space by applying the Wiener-Khinchin theorem. Basically, the autocorrelation function of the 2D image is extended to 3D and Fourier transformed. In the Fourier space, the arguments of the complex values are randomly chosen while keeping the magnitudes. Inverse Fourier transform then yields the newly estimated 3D volumes.
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Segmented masks from cement paste (top left, OPC CEM 1, 42.5, w/c 0.35, 28 days hydration) and from the contact zone of the anode membrane of a solid oxide fuel cell (bottom left). A virtual 3D reconstrucion was applied to the original structures (center). A single slice from the 3D image stack is displayed for both cases (right), showing different structures than the original ones, with however closely resembling characteristics. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig7 3 1.jpg' title=title %} |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| {% include thumbnail src='/images/pages/XFig7 3 1.jpg' title='Segmented masks from cement paste (top left, OPC CEM 1, 42.5, w/c 0.35, 28 days hydration) and from the contact zone of the anode membrane of a solid oxide fuel cell (bottom left). A virtual 3D reconstrucion was applied to the original structures (center). A single slice from the 3D image stack is displayed for both cases (right), showing different structures than the original ones, with however closely resembling characteristics.'%} |
 
 Examples of the 2D-to-3D reconstruction are given in the figure above for a structure from cement paste (top left) and for a structure from a solid oxide fuel cell (bottom left). The original gray level images have been acquired by SEM (scanning electron microscopy) at a pixel resolution of 20nm. Segmentation has been achieved by thresholding. After reconstruction of the 3D stack, a single slice of the reconstructed volume is displayed (right), revealing a "similar" structural appearance as the original one. The shaded surface of the reconstructed 3D mask is presented in the figure below for the cement (left) and the fuel cell (right).
 
-|                                                                                                                                                                                                                                             |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Shaded 3D representation of the reconstructed 3D stacks from the reconstructed volume of the cement paste (left) and the anode membrane (right). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig7 3 2.jpg' title=title %} |
+|                                                                                                                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/XFig7 3 2.jpg' title='Shaded 3D representation of the reconstructed 3D stacks from the reconstructed volume of the cement paste (left) and the anode membrane (right).'%} |
 
 ## Evaluation
 
@@ -754,13 +686,9 @@ Per default, the function plots a parameter set for each particle separately. Ad
 
 An example of a 2D particle image, of its mask and some particle evaluations is given in the figure below.
 
-|                                                                                                                                                                                                                                           |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Grainy structure (top left), segmented mask of the grains (top right), and the evaluation of its particle size distribution (center and bottom). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig8 1.jpg' title=title %} |
+|                                                                                                                                                                                                                      |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/XFig8 1.jpg' title='Grainy structure (top left), segmented mask of the grains (top right), and the evaluation of its particle size distribution (center and bottom).'%} |
 
   - {% include citation last='Münch ' first='B ' last2='Gasser ' first2='P ' last3='Holzer ' first3='L ' last4='Flatt ' first4='R ' title='FIB Nanotomography of Particulate Systems - Part II: Particle Recognition and Effect of Boundary Truncation ' journal='Journal American Ceramics Society ' volume='89(8) ' pages='2586-2595 ' year='2006 ' %}
 
@@ -772,13 +700,9 @@ The phase image evaluation calculates some parameters of all phases, including t
 
 Furthermore, the plugin supports a peeling evaluation. Peeling starts from a specifically defined phase to its surroundings and requires a set of peeling radii defining toroidal regions around the starting phase. The peeling evaluation yields a data line at each peeling radius, including the peeling distance, number of pixels, mean value, and the percental phase contents for each phase. For image stacks, true 3D evaluations can be performed.
 
-|                                                                                                                                                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Phase image (top, left) and the parameters provided for the phase image evaluation (top, right). The resulting plots and the list of parameters are displayed below. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig8 2.jpg' title=title %} |
+|                                                                                                                                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/XFig8 2.jpg' title='Phase image (top, left) and the parameters provided for the phase image evaluation (top, right). The resulting plots and the list of parameters are displayed below.'%} |
 
 An image defining some phases is given in the above figure (top, left). The cyan colored center particle is supposed to act as the location from where peeling is initiated. The percental areas of the phases "Pores", "Matter", "Artificial" and "Unspecified" are plotted below. As it is evident from the calling parameters (see above figure, top, right) two gray level data images associated to the pore mask are provided (center field). Their mean values depending on the peeling radius are displayed in the graph at the bottom. The parameters are provided in a text file as well (bottom).
 
@@ -798,13 +722,9 @@ PDS's can be defined in different ways and must be chosen according to the speci
   - Continuous PSD: the pore space is categorized into regions of different radii in the sense that the regions can be filled with balls of different radii. The sizes of those radii are then attached to the respective locations. The histogram of radii then acts as continuous PSD.
   - Continuous PSD with MIP simulation: same PSD definition as for the continuous PSD. However, the balls of different radii are intruded into the pore volume from one of the faces of the image cube (3D), or from one of the edges of the image (2D), respectively. This definition of the PSD corresponds to the pore size data that is retrieved by mercury intrusion porosimetry (MIP).
 
-|                                                                                                                                                                                                                                                                                              |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- 3D volume of cement paste (OPC CEM 1, 42.5, w/c 0.35, 28 days hydration) acquired by FIB-nanotomography (top) and its pore size distributions of varying definition (bottom, see referenced paper). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig8 3.jpg' title=title %} |
+|                                                                                                                                                                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/XFig8 3.jpg' title='3D volume of cement paste (OPC CEM 1, 42.5, w/c 0.35, 28 days hydration) acquired by FIB-nanotomography (top) and its pore size distributions of varying definition (bottom, see referenced paper).'%} |
 
 The above figure (top) shows a picture of a 3D volume of cement paste measured by FIB-nanotomography at a pixel size of 14.84 x 18.84 x 30.0 nm^3. The pores have been segmented by thresholding and different definitions of PSD's have been calculated in slice-wise 2D as well as in real 3D (bottom graph, containing the results of the PSD calculations visualized by [MATLAB](MATLAB "wikilink")).
 
@@ -824,13 +744,9 @@ As the plugin is activated, the orthogonal slicer acts like a common image stack
 
 Tip: if you add a shortcut for the "Display Volume" plugin, it is easily possible to switch back and forth from a conventional image stack to an orthogonal slicer and vice verca.
 
-|                                                                                                                                                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the ["Pore Size Distribution"](#Pore_Size_Distribution "wikilink") plugin (top). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig9 1.jpg' title=title %} |
+|                                                                                                                                                                                                                                                                |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/XFig9 1.jpg' title='Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the ["Pore Size Distribution"](#Pore_Size_Distribution "wikilink") plugin (top).'%} |
 
 As an example, the above figure displays the view of the orthogonal slicer applied to the 3D volume displayed in the ["Pore Size Distribution"](#Pore_Size_Distribution "wikilink") section (top). The red cross-lines of the slicer show the current 3D cursor position which allows interactively focusing any point in the 3D space. The position vector and the associated image value are plotted to the ImageJ window (top).
 
@@ -840,11 +756,7 @@ As an example, the above figure displays the view of the orthogonal slicer appli
 
 This plugin provides an engine for interactive editing of label images or label volumes (i.e. stacks of images). Label images are images holding a set of regions at one specific gray level or color per region (example see figure in ["Disconnect Particles"](#Disconnect_Particles "wikilink"), right). Operations such as deleting, joining, eroding, dilating, opening, or closing of manually selected 3D objects are supported. There is also an operation for deleting objects smaller than a certain size. For stacks of images, all operations can be performed either in slice-wise 2D, or truly volumetrically in 3D. The interface of the engine is visualized in the figure to the right.
 
-
-{% capture title%}
- Engine for 3D segmentation (top right) which is currently operating on two gray level images (left). The image at the bottom right is the interactively segmented phase image which is currently containing four different phases (see top left figure for the plugin ["Phase Image Evaluation"](#Phase_Image_Evaluation "wikilink")). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig9 3.jpg' title=title %}
+{% include thumbnail src='/images/pages/XFig9 3.jpg' title='Engine for 3D segmentation (top right) which is currently operating on two gray level images (left). The image at the bottom right is the interactively segmented phase image which is currently containing four different phases (see top left figure for the plugin ["Phase Image Evaluation"](#Phase_Image_Evaluation "wikilink")).'%}
 
 ### Segment Phases 3D
 
@@ -880,11 +792,7 @@ For understanding the basic principle of working, consider the following example
 
 The segmentation engine is visualized in the figure to the right while operating on two SEM images of cement paste (OPC CEM 1) acquired at the same location but at different microscope settings. The color image to the bottom right shows the currently constructed phase image consisting of 4 different overlapping phases. The same image in non-overlapping mode is displayed in the section for the ["Phase Image Evaluation"](#Phase_Image_Evaluation "wikilink") plugin, top left. Currently, the phase named "Grain" is active and overlayed to the top left gray level image in transparent blue. Like this, any current operation would now be achieved to the "Grain" phase. The rectangle and heart shapes were drawn manually with the selection tools.
 
-
-{% capture title%}
- Triangulated and shaded visualization of the 3D volume in the plugin for ["Pore Size Distribution"](#Pore_Size_Distribution "wikilink") and ["Display Volume"](#Display_Volume "wikilink"). 
-{% endcapture %}
-{% include thumbnail src='/images/pages/XFig9 4.jpg' title=title %}
+{% include thumbnail src='/images/pages/XFig9 4.jpg' title='Triangulated and shaded visualization of the 3D volume in the plugin for ["Pore Size Distribution"](#Pore_Size_Distribution "wikilink") and ["Display Volume"](#Display_Volume "wikilink").'%}
 
 ### View 3D Mask
 

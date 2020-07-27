@@ -26,11 +26,7 @@ New commands should then appear in ImageJ '{% include bc content='Plugins | FAST
 
 ## Image Processing
 
-
-{% capture title%}
- Description of the Image processing pipeline of FAST macro. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/FAST Processing.png' title=title %}
+{% include thumbnail src='/images/pages/FAST Processing.png' title='Description of the Image processing pipeline of FAST macro.'%}
 
 ### Step 1: Auto processing of images within the selected work directory
 
@@ -46,11 +42,7 @@ New commands should then appear in ImageJ '{% include bc content='Plugins | FAST
 
 ## Startup Options
 
-
-{% capture title%}
- Options dialog box 
-{% endcapture %}
-{% include thumbnail src='/images/pages/FAST Options.png' title=title %} The macro displays a dialog box to set analysis options:
+{% include thumbnail src='/images/pages/FAST Options.png' title='Options dialog box'%} The macro displays a dialog box to set analysis options:
 
   - **File type** : Select image type between CZI (Carl Zeiss Image), ZVI (Zeiss Vision Image), ND2 (Nikon) or TIFF (Tagged Image File Format).  
     'Other' allow to enter a specific file extension.  

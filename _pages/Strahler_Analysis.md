@@ -27,7 +27,7 @@ description: test description
 
 </div>
 
-A plugin from the [Neuroanatomy update site](User_Neuroanatomy "wikilink") that performs Strahler analysis on topographic skeletons (2D/3D). [Strahler numbering](wikipedia_Strahler_number "wikilink") is a numerical procedure that summarizes the branching complexity of mathematical trees.
+A plugin from the [Neuroanatomy update site](User_Neuroanatomy "wikilink") that performs Strahler analysis on topographic skeletons (2D/3D). {% include wikipedia title='Strahler number' text='Strahler numbering'%} is a numerical procedure that summarizes the branching complexity of mathematical trees.
 
 {% include ambox text='This page describes how to perform Strahler Analysis on skeletonized images. For analysis of traced structures have a look at [SNT](SNT "wikilink"). ' %}
 
@@ -122,7 +122,7 @@ The plugin produces three types of outputs:
   - 
     
       -   
-        Ramification or [bifurcation ratios](wikipedia_Strahler_number#Bifurcation_ratio "wikilink") are the quotients between branches of consecutive orders. An overall ratio may be obtained by averaging ratios across orders.
+        Ramification or {% include wikipedia title='Strahler number\#Bifurcation\_ratio' text='bifurcation ratios'%} are the quotients between branches of consecutive orders. An overall ratio may be obtained by averaging ratios across orders.
 
 <!-- end list -->
 
@@ -140,7 +140,7 @@ To install *Strahler Analysis* you must use Java 8 and subscribe to the [Neuroan
 
 ## References
 
-Original publications by [Robert E. Horton](wikipedia_Robert_E._Horton "wikilink") and [Arthur N. Strahler](wikipedia_Arthur_Newell_Strahler "wikilink"):
+Original publications by {% include wikipedia title='Robert E. Horton' text='Robert E. Horton'%} and {% include wikipedia title='Arthur Newell Strahler' text='Arthur N. Strahler'%}:
 
   - {% include citation first='R. E. ' last='Horton ' title='Erosional development of streams and their drainage basins: hydro-physical approach to quantitative morphology ' journal='Geological Society of America Bulletin ' volume='56 ' issue='3 ' year='1945 ' pages='275–370 ' doi='10.1130/0016-7606(1945)56\[275:EDOSAT\]2.0.CO;2 ' %}.
 

@@ -13,7 +13,7 @@ description: test description
 
 Logging is a technique for reporting messages and/or events during program execution. It can be useful for many purposes: debugging, informing the user of things, keeping a permanent record of what transpired, etc.
 
-See [Wikipedia's article on Java logging frameworks](wikipedia_Java_logging_framework "wikilink") for further reading.
+See {% include wikipedia title='Java logging framework' text='Wikipedia\'s article on Java logging frameworks'%} for further reading.
 
 See also this nice article: [The State of Logging in Java](https://stackify.com/logging-java/) (May 2018).
 
@@ -33,7 +33,7 @@ Unfortunately, SLF4J suffers from a couple of downsides:
   - It complicates application deployment by requiring the inclusion of a logging binding [not explicitly declared in the project's dependency tree](http://slf4j.org/faq.html#maven2).
   - By inventing a new standard for logging, there is [now one more competing standard](http://xkcd.com/927/).
 
-Still, SLF4J is a nice thing, so the SciJava project does provide a {% include github org='scijava ' repo='scijava-log-slf4j ' path='src/main/java/org/scijava/log/slf4j/SLF4JLogService.java ' label='LogService implementation backed by SLF4J ' %}, which zealous developers can use to redirect all SciJava logging to the SLF4J framework, which they can then [further redirect](wikipedia_Fundamental_theorem_of_software_engineering "wikilink") using an SLF4J binding of their choosing\!
+Still, SLF4J is a nice thing, so the SciJava project does provide a {% include github org='scijava ' repo='scijava-log-slf4j ' path='src/main/java/org/scijava/log/slf4j/SLF4JLogService.java ' label='LogService implementation backed by SLF4J ' %}, which zealous developers can use to redirect all SciJava logging to the SLF4J framework, which they can then {% include wikipedia title='Fundamental theorem of software engineering' text='further redirect'%} using an SLF4J binding of their choosing\!
 
 ## How does logging work in ImageJ?
 
@@ -47,7 +47,7 @@ Therefore, as long as logging messages end up on stdout or stderr somehow (which
 
 ## How does logging work in Fiji?
 
-The [Fiji](Fiji "wikilink") distribution of ImageJ is a more complicated beast, because it ships many plugins, each of which may do its own thing with respect to logging. Rather than [herd cats](wikipedia_Herding_cats "wikilink"), Fiji simply ships each plugin's required logging framework so that it can function unimpeded.
+The [Fiji](Fiji "wikilink") distribution of ImageJ is a more complicated beast, because it ships many plugins, each of which may do its own thing with respect to logging. Rather than {% include wikipedia title='Herding cats' text='herd cats'%}, Fiji simply ships each plugin's required logging framework so that it can function unimpeded.
 
 However, ultimately, the Fiji distribution needs to ship one, and *only* one, SLF4J binding; otherwise, SLF4J-based logging does not function properly. As of this writing, Fiji ships the [logback-classic](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22logback-classic%22) binding, meaning that SLF4J-based logging can be [configured in all the usual Logback ways](http://logback.qos.ch/manual/configuration.html). Fiji ships a default Logback configuration in the [scijava-config](http://maven.imagej.net/index.html#nexus-search;gav~org.scijava~scijava-config) library, which sends `INFO` level events to stdout, and more serious levels (`WARN`, `ERROR` and `FATAL`) to stderr. If you want to override the configuration, you will need to delete or modify that JAR file, replacing the `logback.xml` with one of your own design. The reason `logback-classic` was chosen is because the [Bio-Formats](Bio-Formats "wikilink") project explicitly depends on it; rather than work around that, Fiji goes with the flow and converges on the same dependency.
 

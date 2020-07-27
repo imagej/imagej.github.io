@@ -25,11 +25,11 @@ Supplementary videos demonstrating the performance of the method are available [
 
 
 {% capture title%}
- Example 2: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a *Drosophila melanogaster* first instar larva, detail at 100% pixel resolution. Image courtesy of {% include person content=':Albertcardona' %}. 
+Example 2: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a *Drosophila melanogaster* first instar larva, detail at 100% pixel resolution. Image courtesy of {% include person content=':Albertcardona' %}.
 {% endcapture %}
 {% include thumbnail src='/images/pages/Aligned-series-crop-512.gif' title=title %}
 {% capture title%}
- Example 1: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a *Drosophila melanogaster* first instar larva, downscaled by a factor of 12. Image courtesy of {% include person content=':Albertcardona' %}. 
+Example 1: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a *Drosophila melanogaster* first instar larva, downscaled by a factor of 12. Image courtesy of {% include person content=':Albertcardona' %}.
 {% endcapture %}
 {% include thumbnail src='/images/pages/Aligned-series-512.gif' title=title %} We describe here our elastic alignment method for series or groups of overlapping 2d-images. The method is accessible through the plugins **Elastic Stack Alignment** and **Elastic Montage** and incorporated in the **[TrakEM2](TrakEM2 "wikilink")** software. Applications are:
 
@@ -44,11 +44,7 @@ Images are warped such that corresponding regions overlap optimally. The warp fo
 
 ## Elastic Deformation with Spring Meshes
 
-
-{% capture title%}
- Fig. 1: Triangular section mesh with a resolution of 5 vertices per each long row. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Mesh.png' title=title %} We achieve this globally minimized deformation by simulating the alignment as an elastic system of spring connected vertices. Zero-length springs connect corresponding locations between two overlapping images and warp the images towards perfect overlap. Non-zero length springs within the image preserve each images shape at locally rigid transformation. That way, the system penalizes arbitrary warp and distributes the deformation evenly among all images.
+{% include thumbnail src='/images/pages/Mesh.png' title='Fig. 1: Triangular section mesh with a resolution of 5 vertices per each long row.'%} We achieve this globally minimized deformation by simulating the alignment as an elastic system of spring connected vertices. Zero-length springs connect corresponding locations between two overlapping images and warp the images towards perfect overlap. Non-zero length springs within the image preserve each images shape at locally rigid transformation. That way, the system penalizes arbitrary warp and distributes the deformation evenly among all images.
 
 Each image is tessellated into a mesh of regular triangles with each vertex being connected to its neighboring vertices by a spring (see Fig. 1). A triangle of springs has two families of cost minima in the plane: 1) at rigid transformations and 2) at rigid transformations flipped. That is, for all local deformations smaller than the size of a triangle, the mesh will drag towards a rigid transformation. For larger deformation, it may fold. The vertices of a triangle define an affine transformation for all pixels in the triangle.
 
@@ -62,9 +58,9 @@ Both relaxing the system of meshes and identifying corresponding locations betwe
 
 
 {% capture title%}
- Fig. 2: Match filter based on the correlation surface. Starting from an approximate alignment (e.g. affine), for each vertex of the spring mesh, an offset is searched calculating the PMCC coefficient r of a block at all possible x,y translations in a given local vicinity over the overlapping image. The above windows display six examples of such correlation surfaces for translations in a square region with the origin in the middle. The [PMCC coefficent](wikipedia_Pearson_product-moment_correlation_coefficient "wikilink") r is grey-coded in the range from -0.7 to 0.7. The candidate for the translational offset is the translation with maximal r. Candidates are rejected if either r was too low (not similar), there was more than one maximum with very similar r (ambiguous), the maximum is not well localized in both dimensions (an edge pattern that fits everywhere alongside the edge). 
+Fig. 2: Match filter based on the correlation surface. Starting from an approximate alignment (e.g. affine), for each vertex of the spring mesh, an offset is searched calculating the PMCC coefficient r of a block at all possible x,y translations in a given local vicinity over the overlapping image. The above windows display six examples of such correlation surfaces for translations in a square region with the origin in the middle. The {% include wikipedia title='Pearson product-moment correlation coefficient' text='PMCC coefficent'%} r is grey-coded in the range from -0.7 to 0.7. The candidate for the translational offset is the translation with maximal r. Candidates are rejected if either r was too low (not similar), there was more than one maximum with very similar r (ambiguous), the maximum is not well localized in both dimensions (an edge pattern that fits everywhere alongside the edge). 
 {% endcapture %}
-{% include thumbnail src='/images/pages/Correlation.png' title=title %} Corresponding locations are searched through block matching. Initialized from an approximate linear pairwise alignment that is estimated using [local image features](Feature_Extraction "wikilink"), the local vicinity around each vertex is inspected for an optimal match. We use the The [PMCC coefficent](wikipedia_Pearson_product-moment_correlation_coefficient "wikilink") *r* of a patch around the vertex and the overlapping patch in the other image as the quality measure for a match. The location with maximal *r* specifies the offset of the vertex relative to the initial linear alignment.
+{% include thumbnail src='/images/pages/Correlation.png' title=title %} Corresponding locations are searched through block matching. Initialized from an approximate linear pairwise alignment that is estimated using [local image features](Feature_Extraction "wikilink"), the local vicinity around each vertex is inspected for an optimal match. We use the The {% include wikipedia title='Pearson product-moment correlation coefficient' text='PMCC coefficent'%} *r* of a patch around the vertex and the overlapping patch in the other image as the quality measure for a match. The location with maximal *r* specifies the offset of the vertex relative to the initial linear alignment.
 
 We perform block matching at a reasonably down-scaled version of the images. The ideal scaling factor depends on the application and quality of the signal. To overcome the reduced accuracy of the estimated offset, we use Brown's method\[2\] to estimate an approximate sub-pixel offset. Furthermore, in order to reject wrong matches, three local filters based on the correlation surface are in place:
 
@@ -81,11 +77,7 @@ See also [Test Block Matching Parameters](Test_Block_Matching_Parameters "wikili
 
 All parameters that specify a distance in pixels refer to the original scale of the image.
 
-
-{% capture title%}
- Fig. 3: Edge response filter. The ratio of the two principal curvatures (Hessian eigenvalues) of at a detection determines how well it is defined in both dimensions. A large ratio signalizes an edge response. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Edge-filter.png' title=title %}
+{% include thumbnail src='/images/pages/Edge-filter.png' title='Fig. 3: Edge response filter. The ratio of the two principal curvatures (Hessian eigenvalues) of at a detection determines how well it is defined in both dimensions. A large ratio signalizes an edge response.'%}
 
   - Input  
     Both plugins work with stacks of images. The stacks might be virtual, which is strongly suggested for very large images.
@@ -101,16 +93,12 @@ All parameters that specify a distance in pixels refer to the original scale of 
   - Block Matching  
     Here you specify the **scale** factor at which matching is performed. Choose this size such that 1) high level noise is effectively invisible, 2) for series alignment such that a pixel is approximately as large as (or larger than) the section thickness. All further distances are specified in pixels of the *original image size*. The **search radius** for block matching must include the largest non-linear deformation expected relative to an approximate linear alignment. At the same time it should be kept as small as possible to increase speed and to prevent false matches. Similarly, the **block radius** should be large enough to include recognizable texture but not too large. Usually, setting both radii to similar values is a good choice. **Resolution** specifies the number of vertices in a long row of the spring mesh as depicted in Fig. 1. [TrakEM2](TrakEM2 "wikilink") does not require all image tiles in a montage to have the same size. Therefore, it asks for the side-length of a triangle in the mesh to be specified. That way, the individual mesh resolution for each image can be calculated such that all tiles are modeled by meshes of approximately equal resolution.
 
-
-{% capture title%}
- Fig. 4: The effect of block matching filters. (ssTEM image data courtesy of [Richard Fetter](http://janelia.org/people/scientist/richard-fetter)) 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Filters.jpg' title=title %}
+{% include thumbnail src='/images/pages/Filters.jpg' title='Fig. 4: The effect of block matching filters. (ssTEM image data courtesy of [Richard Fetter](http://janelia.org/people/scientist/richard-fetter))'%}
 
   - Correlation Filters  
     The threshold for **minimal PMCC *r*** can be higher for montaging (same signal) than for series alignment (changing signal). Higher values will lead to more matches rejected and thus less false positives. The **maximal curvature ratio** is the threshold for edge responses as depicted in Figs. 2 and 3. The value must be \>1.0. Higher values will accept more matches alongside elongated structures and thus lead to potentially more false positives. **maximal second best *r* / best *r*** is the maximal threshold for non-ambiguous detections. Higher values will accept more potentially ambiguous matches that may be false positives.
   - Local Smoothness Filter  
-    Particularly for *series alignment*, the local filters based on block correlation will either reject too many matches (false negatives) or let some false matches pass (false positives). Since loosing correct matches will degrade the quality of the alignment, we want to keep the false negatives rate minimal by using only moderate local correlation filters. The remaining false positives can be identified and rejected exploiting the smoothness of the deformation field (Fig. 4). The local smoothness filter inspects each match and compares how well the estimated translational offset agrees with all other matches weighted by their distance to the inspected match. To that end, a local linear transformation (typically rigid) is calculated using weighted least squares. The weight for each match is defined by a [Gaussian](wikipedia_Gaussian_function "wikilink") [radial distribution function (RDF)](wikipedia_Radial_distribution_function "wikilink") centered at the reference match. A match is rejected if its transfer error relative to the estimated linear transformation is larger than an **absolute** threshold or larger than *k*× the average transfer error of all weighted matches (*k* is specified in the **relative** field).
+    Particularly for *series alignment*, the local filters based on block correlation will either reject too many matches (false negatives) or let some false matches pass (false positives). Since loosing correct matches will degrade the quality of the alignment, we want to keep the false negatives rate minimal by using only moderate local correlation filters. The remaining false positives can be identified and rejected exploiting the smoothness of the deformation field (Fig. 4). The local smoothness filter inspects each match and compares how well the estimated translational offset agrees with all other matches weighted by their distance to the inspected match. To that end, a local linear transformation (typically rigid) is calculated using weighted least squares. The weight for each match is defined by a {% include wikipedia title='Gaussian function' text='Gaussian'%} {% include wikipedia title='Radial distribution function' text='radial distribution function (RDF)'%} centered at the reference match. A match is rejected if its transfer error relative to the estimated linear transformation is larger than an **absolute** threshold or larger than *k*× the average transfer error of all weighted matches (*k* is specified in the **relative** field).
   - Miscellaneous  
     ImageJ lacking support for alpha-channels, you can choose to ignore perfectly green (rgb:0,255,0) pixels during *series alignment*. This is a hack to cope with montages not covering the whole canvas. [TrakEM2](TrakEM2 "wikilink") supports an alpha-channel such that background pixels are automatically treated correctly. Both [TrakEM2](TrakEM2 "wikilink") and **Elastic Stack Alignment** offer to consider a series or montage as pre-aligned (**checkbox**) by which the feature based pre-alignment step can be skipped. For series alignment, the range of layers to be compared can be limited.
 

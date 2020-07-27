@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include biginfo-box content='See [:Category:Visualization](_Category_Visualization "wikilink") for pages about scientific visualization.' %} {% include learn content='techniques' %}[Scientific visualization](wikipedia_Scientific_visualization "wikilink") is a set of techniques for graphically illustrating scientific data, enabling scientists to better understand, illustrate, and glean insight from their data.
+{% include biginfo-box content='See [:Category:Visualization](_Category_Visualization "wikilink") for pages about scientific visualization.' %} {% include learn content='techniques' %}{% include wikipedia title='Scientific visualization' text='Scientific visualization'%} is a set of techniques for graphically illustrating scientific data, enabling scientists to better understand, illustrate, and glean insight from their data.
 
 ## Getting Started with Simple Visualization Options in ImageJ
 
@@ -225,7 +225,7 @@ Here we summarize the more advanced analysis plugins in ImageJ using the above '
 <td><p>A tool for manual, interactive, landmark-based deformable image alignment.</p></td>
 <td><ul>
 <li>Uses <a href="https://imagej.net/BigDataViewer">BigDataViewer</a> for visualization and navigation</li>
-<li>Uses a <a href="wikipedia:Thin_plate_spline" title="wikilink">Thin Plate Spline</a> implemented {% include github org='saalfeldlab ' repo='bigwarp ' label='in Java ' %} to build a deformation from point correspondences</li>
+<li>Uses a {% include wikipedia title='Thin_plate_spline' text='Thin Plate Spline'%} implemented {% include github org='saalfeldlab ' repo='bigwarp ' label='in Java ' %} to build a deformation from point correspondences</li>
 <li>Enables landmark pair placement and displays the effects of the warp on-the-fly</li>
 </ul></td>
 <td><p><img src="/images/pages/BigWarp.png" width="400"/></p></td>

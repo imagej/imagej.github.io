@@ -15,7 +15,7 @@ description: test description
 {% include aboutmenu%}
 The [ImageJ](ImageJ "wikilink") project, and related projects in the [SciJava](SciJava "wikilink") software ecosystem, are governed as [open source](open_source "wikilink") software projects. Everybody is welcome to [contribute](contribute "wikilink") with [plugins](plugins "wikilink"), patches, [bug reports](Bugs "wikilink"), [tutorials](tutorials "wikilink"), [documentation](documentation "wikilink"), and artwork.
 
-That said, every project needs leaders: the ones who participate in *governance* of the project, [maintaining](wikipedia_Software_maintenance "wikilink") the software and making key decisions.
+That said, every project needs leaders: the ones who participate in *governance* of the project, {% include wikipedia title='Software maintenance' text='maintaining'%} the software and making key decisions.
 
 ## Project roles
 

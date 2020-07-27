@@ -19,13 +19,13 @@ In this implementation the input gradient of the input image is computed using t
 
 ![RATS\_sobel.png](/images/pages/RATS sobel.png "RATS_sobel.png")
 
-The kernel operators are detailed in many sources including [here](wikipedia_Sobel_operator "wikilink"). However, Wilkinson shows that eliminating the square root yields suitable results with out the added cost of a final scan across the image to compute the root. In the plugin the gradient is left simply as the sum of the squares of the kernel operations.
+The kernel operators are detailed in many sources including {% include wikipedia title='Sobel operator' text='here'%}. However, Wilkinson shows that eliminating the square root yields suitable results with out the added cost of a final scan across the image to compute the root. In the plugin the gradient is left simply as the sum of the squares of the kernel operations.
 
 ![RATS\_sobel2.png](/images/pages/RATS sobel2.png "RATS_sobel2.png")
 
 Pixels with gradients that fall below a user specified threshold, ![RATS\_lambdasigma.png](/images/pages/RATS lambdasigma.png "RATS_lambdasigma.png") , are rejected. The threshold is defined by an estimate of the noise (![RATS\_sigma.png](/images/pages/RATS sigma.png "RATS_sigma.png") ,the standard deviation of the expected background is a good starting point) and a scaling factor (![RATS\_lambda.png](/images/pages/RATS lambda.png "RATS_lambda.png"), 3 is a good starting point). Estimate the noise by selecting a "background" portion of the image and using ImageJ to determine the standard deviation of gray values.
 
-The input image is then subdivided into a quadtree architecture (for more info see [Wikipedia:Quadtree](wikipedia_Quadtree "wikilink")). Within each of the smallest subregions, a regional threshold, ![RATS\_Tr.png](/images/pages/RATS Tr.png "RATS_Tr.png") , is computed as the gradient weighted sum of the pixels, P.
+The input image is then subdivided into a quadtree architecture (for more info see {% include wikipedia title='Quadtree' text='Wikipedia:Quadtree'%}). Within each of the smallest subregions, a regional threshold, ![RATS\_Tr.png](/images/pages/RATS Tr.png "RATS_Tr.png") , is computed as the gradient weighted sum of the pixels, P.
 
 ![RATS\_Tr2.png](/images/pages/RATS Tr2.png "RATS_Tr2.png")
 

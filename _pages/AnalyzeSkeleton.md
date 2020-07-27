@@ -9,21 +9,13 @@ description: test description
 
 {% include component-stats content=':sc.fiji:AnalyzeSkeleton\_' %}Analysis of 2D and 3D skeleton images. For the ImageJ 1.x plugin, see [this page](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start).
 
-|                                                                                                                                                     |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Example of AnalyzeSkeleton performance 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Analyze skeleton 09 13 2009.png' title=title %} |
+|                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------ |
+| {% include thumbnail src='/images/pages/Analyze skeleton 09 13 2009.png' title='Example of AnalyzeSkeleton performance'%} |
 
 ## General Description
 
-
-{% capture title%}
- Example of voxel classification 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Tagging example.png' title=title %} This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {% include bc content='Analyze | Skeleton | Analyze Skeleton (2D/3D)'%}. See [Skeletonize3D](Skeletonize3D "wikilink") for an example of how to produce skeleton images.
+{% include thumbnail src='/images/pages/Tagging example.png' title='Example of voxel classification'%} This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {% include bc content='Analyze | Skeleton | Analyze Skeleton (2D/3D)'%}. See [Skeletonize3D](Skeletonize3D "wikilink") for an example of how to produce skeleton images.
 
 The voxels are classified into three different categories depending on their 26 neighbors:
 
@@ -37,43 +29,31 @@ Notice here that, following this notation, the number of junction voxels can be 
 
 ## Main options
 
-
-{% capture title%}
- Main dialog of the AnalyzeSkeleton plugin 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Screenshot-AnalyzeSkeleton-dialog.png' title=title %} In the main dialog of the plugin the user can select some options to
+{% include thumbnail src='/images/pages/Screenshot-AnalyzeSkeleton-dialog.png' title='Main dialog of the AnalyzeSkeleton plugin'%} In the main dialog of the plugin the user can select some options to
 
   - **Prune the possible loops** in the skeleton (by choosing one of the pruning cycle methods).
   - **Prune any branch that ends in an end-point** (by checking "Prune ends"), as implemented by [Michael Doube](http://doube.org/) in [BoneJ](http://bonej.org/).
       - In this case, if a ROI was selected in the input image, another option is enabled: *Exclude ROI from pruning*. If selected, pruning will not be applied to end-points contained by the ROI. An application of this feature is described in [Strahler Analysis](Strahler#Root_Detection "wikilink").
-  - **Calculate the largest shortest path** of each skeleton using the [APSP (all pairs shortest path)](wikipedia_Floyd-Warshall_algorithm "wikilink"). In this case, the shortest path will be displayed in a new window containing the skeleton in white and the shortest path in **magenta**. Implemented by Huub Hovens.
+  - **Calculate the largest shortest path** of each skeleton using the {% include wikipedia title='Floyd-Warshall algorithm' text='APSP (all pairs shortest path)'%}. In this case, the shortest path will be displayed in a new window containing the skeleton in white and the shortest path in **magenta**. Implemented by Huub Hovens.
   - **Show detailed info** about the branches of each skeleton in the image.
   - **Display labeled skeletons**. An extra output image will be displayed containing each skeleton labeled with its corresponding skeleton ID.
 
 ## Loop detection and pruning
 
-
-{% capture title%}
- Example of cycle detection and pruning 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Cycle detection.png' title=title %} Since the 2009/09/02 version of the code, the possible cycles or loops in the skeleton can be detected and pruned previous to the analysis. In this sense, the initial plugin dialog offers 4 options:
+{% include thumbnail src='/images/pages/Cycle detection.png' title='Example of cycle detection and pruning'%} Since the 2009/09/02 version of the code, the possible cycles or loops in the skeleton can be detected and pruned previous to the analysis. In this sense, the initial plugin dialog offers 4 options:
 
   - **none**: no cycle detection nor pruning is performed.
   - **shortest branch**: the shortest branch among the loop branches will be cut in its middle point.
   - **lowest intensity voxel**: the darkest voxel among the loop voxels will be cut (set to 0) in the input image.
   - **lowest intensity branch**: the darkest (in average) branch among the loop branches will be cut in its darkest voxel.
 
-For the two last methods, another dialog will pop up asking the user to select the original (gray-scale) image among the open images in order to perform the intensity calculations. The cycle detection is based on a classical [**Depth-First Search**](wikipedia_Depth-first_search "wikilink") (DFS) in the skeleton. The skeleton is treated as an [undirected graph](wikipedia_Undirected_graph#Undirected_graph "wikilink"), where the end-points and junctions are the nodes and the slab-branches are the edges. While traversing the graph in the DFS fashion, the edges/branches pointing to unvisited nodes are marked as **TREE** edges, while the edges to visited nodes are marked as **BACK** edges, which involves the presence of a loop. After the edge classification, the BACK edges are backtracked following their predecessors in order to calculate all the edges belonging to each cycle and proceed with the pruning.
+For the two last methods, another dialog will pop up asking the user to select the original (gray-scale) image among the open images in order to perform the intensity calculations. The cycle detection is based on a classical {% include wikipedia title='Depth-first search' text='\'\'\'Depth-First Search\'\'\''%} (DFS) in the skeleton. The skeleton is treated as an {% include wikipedia title='Undirected graph\#Undirected\_graph' text='undirected graph'%}, where the end-points and junctions are the nodes and the slab-branches are the edges. While traversing the graph in the DFS fashion, the edges/branches pointing to unvisited nodes are marked as **TREE** edges, while the edges to visited nodes are marked as **BACK** edges, which involves the presence of a loop. After the edge classification, the BACK edges are backtracked following their predecessors in order to calculate all the edges belonging to each cycle and proceed with the pruning.
 
 The only known limitation of this approach is shown in the presence of nested loops. In those cases, a second call to the plugin is usually enough to eliminate all the remaining loops.
 
 ## Table of results
 
-
-{% capture title%}
- Example of AnalyzeSkeleton Results table 
-{% endcapture %}
-{% include thumbnail src='/images/pages/AnalyzeSkeleton-Results-table.png' title=title %} After classification, a “Results” window is displayed showing for each skeleton in the image:
+{% include thumbnail src='/images/pages/AnalyzeSkeleton-Results-table.png' title='Example of AnalyzeSkeleton Results table'%} After classification, a “Results” window is displayed showing for each skeleton in the image:
 
   - The number of branches (slab segments, usually connecting end-points, end-points and junctions or junctions and junctions). The special case of a circular skeleton is also contemplated here.
   - The number of voxels of every type: end-point, slab and junction voxels.
@@ -85,18 +65,14 @@ AnalyzeSkeleton is able to process up to **2<sup>31</sup>-1 skeletons in one sin
 
 #### Detailed information
 
-
-{% capture title%}
- Example of AnalyzeSkeleton Branch information window 
-{% endcapture %}
-{% include thumbnail src='/images/pages/AnalyzeSkeleton Branch information.png' title=title %} When calling the plugin, if the "Show detailed information" checkbox is marked, a complementary results table called "Branch information" is shown.
+{% include thumbnail src='/images/pages/AnalyzeSkeleton Branch information.png' title='Example of AnalyzeSkeleton Branch information window'%} When calling the plugin, if the "Show detailed information" checkbox is marked, a complementary results table called "Branch information" is shown.
 
 In this table we display all branches information:
 
   - skeleton ID,
   - calibrated branch length,
   - 3D coordinates of the extremes of the branch (the so-called V1 and V2 vertices),
-  - and the Euclidean distance between those extreme points. This value has proven to be a good indicator of the [tortuosity](wikipedia_Tortuosity "wikilink") of the 3D object.
+  - and the Euclidean distance between those extreme points. This value has proven to be a good indicator of the {% include wikipedia title='Tortuosity' text='tortuosity'%} of the 3D object.
 
 The branches are sorted by decreasing length.
 
@@ -116,21 +92,9 @@ The tutorial describes step by step how to:
 
 Using the [3D\_Viewer](3D_Viewer "wikilink") libraries we can easily display the results of both, the skeletonization and the analysis:
 
-|                                                                                                                                                                          |                                                                                                                                                                                               |                                                                                                                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 
-{% capture title%}
- Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Bat cochlea 3D.gif' title=title %} | 
-{% capture title%}
- 3D skeleton of bat cochlea volume rendered in the viewer after voxel classification 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Movie skeleton rendering.gif' title=title %} | 
-{% capture title%}
- Bat cochlea volume rendered in the viewer with its corresponding classified skeleton 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Movie bat skel.gif' title=title %} |
+|                                                                                                                                                     |                                                                                                                                                                          |                                                                                                                                                                 |
+| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/Bat cochlea 3D.gif' title='Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer'%} | {% include thumbnail src='/images/pages/Movie skeleton rendering.gif' title='3D skeleton of bat cochlea volume rendered in the viewer after voxel classification'%} | {% include thumbnail src='/images/pages/Movie bat skel.gif' title='Bat cochlea volume rendered in the viewer with its corresponding classified skeleton'%} |
 
 ## Scripting AnalyzeSkeleton
 

@@ -11,22 +11,14 @@ description: test description
 
 <div style="float: left">
 
-
-{% capture title%}
- Embryos original sample 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Embryos775x581.png' title=title %}
+{% include thumbnail src='/images/pages/Embryos775x581.png' title='Embryos original sample'%}
 
 </div>
 
 <div style="float:
  left">
 
-
-{% capture title%}
- SIOX segmentation result 
-{% endcapture %}
-{% include thumbnail src='/images/pages/SIOX result embryos775x581.png' title=title %}
+{% include thumbnail src='/images/pages/SIOX result embryos775x581.png' title='SIOX segmentation result'%}
 
 </div>
 
@@ -54,17 +46,9 @@ After clicking on {% include bc content='Plugins | Segmentation | SIOX: Simple I
   - **Step 3:** Reset or Create mask.  
     Click the "Reset" button to restart the process or click on the "Create mask" button to create a binary image. Please, note that the binary image polarity will follow the option set in {% include bc content='Process | Binary | Options'%}.
 
-|                                                                                                                                                                                 |                                                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 
-{% capture title%}
- SIOX segmentation Graphical User Interface applied to Leaf sample 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Screenshot-SIOX Segmentation.png' title=title %} | 
-{% capture title%}
- Resulting mask of Leaf sample after SIOX segmentation 
-{% endcapture %}
-{% include thumbnail src='/images/pages/SIOX-Mask.png' title=title %} |
+|                                                                                                                                                            |                                                                                                                             |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/Screenshot-SIOX Segmentation.png' title='SIOX segmentation Graphical User Interface applied to Leaf sample'%} | {% include thumbnail src='/images/pages/SIOX-Mask.png' title='Resulting mask of Leaf sample after SIOX segmentation'%} |
 
 ## User Manual
 
@@ -74,11 +58,7 @@ When calling the plugin, the image will be embedded into the [SIOX](SIOX "wikili
 
 ### Initial Segmentation
 
-
-{% capture title%}
- SIOX initial segmentation panel 
-{% endcapture %}
-{% include thumbnail src='/images/pages/SIOX-Initial-Segmentation.png' title=title %} This is the **first step** of the procedure where one defines the ROIs that correspond to typical areas of foreground or background.
+{% include thumbnail src='/images/pages/SIOX-Initial-Segmentation.png' title='SIOX initial segmentation panel'%} This is the **first step** of the procedure where one defines the ROIs that correspond to typical areas of foreground or background.
 
   - **Defining foreground and background**
 
@@ -124,11 +104,7 @@ When calling the plugin, the image will be embedded into the [SIOX](SIOX "wikili
 
   - **Segmentation**
 
-
-{% capture title%}
- Example of SIOX result after initial segmentation 
-{% endcapture %}
-{% include thumbnail src='/images/pages/SIOX Segmentation GUI step1.png' title=title %}
+{% include thumbnail src='/images/pages/SIOX Segmentation GUI step1.png' title='Example of SIOX result after initial segmentation'%}
 
   -   
     In order to proceed with the initial segmentation, click on *Segment*.
@@ -150,11 +126,7 @@ When calling the plugin, the image will be embedded into the [SIOX](SIOX "wikili
 
 ### Detail Refinement Brush
 
-
-{% capture title%}
- SIOX detail refinement brush panel 
-{% endcapture %}
-{% include thumbnail src='/images/pages/SIOX-Detail-Refinement-Brush.png' title=title %} This is the **second step** in the [SIOX](SIOX "wikilink") segmentation process.
+{% include thumbnail src='/images/pages/SIOX-Detail-Refinement-Brush.png' title='SIOX detail refinement brush panel'%} This is the **second step** in the [SIOX](SIOX "wikilink") segmentation process.
 
 At this point, the method can be called again to refine the results obtained so far to subtract or add new areas to the background or foreground components **as many times needed**.
 
@@ -168,11 +140,7 @@ Finally, by clicking on *Refine*, the segmentation is recalculated for the selec
 
 ### Reset or Create mask
 
-
-{% capture title%}
- SIOX Reset/Create mask panel 
-{% endcapture %}
-{% include thumbnail src='/images/pages/SIOX-Reset-Create-mask.png' title=title %} This panel is enabled during any of the other segmentation steps.
+{% include thumbnail src='/images/pages/SIOX-Reset-Create-mask.png' title='SIOX Reset/Create mask panel'%} This panel is enabled during any of the other segmentation steps.
 
   - **Reset**
 

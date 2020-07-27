@@ -11,7 +11,7 @@ Gaussian downsampling of an image with ImageJ on-board tools.
 
 ## Motivation
 
-Sound downsampling of an image requires the elimination of image frequencies higher than half the sampling frequency in the result image (see the [Nyquist–Shannon sampling theorem](wikipedia_Nyquist%E2%80%93Shannon_sampling_theorem "wikilink")). The exclusive tool for this is [Gaussian convolution](wikipedia_Gaussian_function "wikilink").
+Sound downsampling of an image requires the elimination of image frequencies higher than half the sampling frequency in the result image (see the {% include wikipedia title='Nyquist%E2%80%93Shannon sampling theorem' text='Nyquist–Shannon sampling theorem'%}). The exclusive tool for this is {% include wikipedia title='Gaussian function' text='Gaussian convolution'%}.
 
 ## Download
 

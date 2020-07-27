@@ -45,7 +45,7 @@ ImageJ2 provides a wealth of new features and capabilities:
   - New and enhanced file format support via the [SCIFIO](SCIFIO "wikilink") library ([see below](#Improved_image_I.2FO_with_the_SCIFIO_library "wikilink")).
   - More powerful [Script Editor](Script_Editor "wikilink") with support for several scripting languages.
   - New commands:
-      - {% include bc content='Plugins | Debug | Dump Stack'%} for debugging when things [hang](wikipedia_Hang_\(computing\) "wikilink").
+      - {% include bc content='Plugins | Debug | Dump Stack'%} for debugging when things {% include wikipedia title='Hang (computing)' text='hang'%}.
       - {% include bc content='Plugins | Debug | System Information'%} for reporting on versions of installed plugins and libraries.
   - Use ImageJ2's N-dimensional [ImgLib2](ImgLib2 "wikilink")-based data structures (still in beta).
   - Write parameterized commands and scripts:

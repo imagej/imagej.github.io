@@ -10,7 +10,7 @@ description: test description
 {% include imglib1-deprecation-info-box%}
 
 
-The [Imglib](Imglib "wikilink") library makes extensive use of [Java generics](wikipedia_Generics_in_Java "wikilink"). Generics appeared in Java from version 1.5, and they introduce new semantic items that can be puzzling if you never used them before. The programming techniques associated are quite new to the ImageJ world, and using Imglib inside your plugins will change their typical layout.
+The [Imglib](Imglib "wikilink") library makes extensive use of {% include wikipedia title='Generics in Java' text='Java generics'%}. Generics appeared in Java from version 1.5, and they introduce new semantic items that can be puzzling if you never used them before. The programming techniques associated are quite new to the ImageJ world, and using Imglib inside your plugins will change their typical layout.
 
 This short page does not aim at being an introduction on generics, but rather is a quick and dirty introduction on how to tune your java files to use Imglib. The deep meaning of semantics is skipped, and we will try to provide a quick template to start with. However, we will attempt to be quite pedestrian when ImageJ itself is involved, and try to display the code and the commands needed to generate a plugin from scratch.
 

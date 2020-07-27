@@ -22,11 +22,7 @@ Email: [Daniel Maidana](mailto_dmaida3@uic.edu) ' filename=' [TUNEL Cell Counter
 # TUNEL Cell Counter
 
   
-TUNEL Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. 
-{% capture title%}
- **TUNEL Cell Counter**_ Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/RETINA Cell Counter Montage.png ' title=title %}
+TUNEL Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. {% include thumbnail src='/images/pages/RETINA Cell Counter Montage.png ' title='\'\'\'TUNEL Cell Counter\'\'\'_ Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.'%}
 
 ## Required Components
 
@@ -43,11 +39,7 @@ The following are required to execute this tool_
 
 ## Processing Settings
 
-
-{% capture title%}
- **Settings Dialog**_ Input the spatial scale obtained from the image metadata or microscope. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/RETINA Cell Counter Dialog.png' title=title %} After importing a TIFF image and executing the counter, the following settings should be selected_
+{% include thumbnail src='/images/pages/RETINA Cell Counter Dialog.png' title='\'\'\'Settings Dialog\'\'\'_ Input the spatial scale obtained from the image metadata or microscope.'%} After importing a TIFF image and executing the counter, the following settings should be selected_
 
 1.  <b>Microscope Magnification</b>_ Displays the working 20x objective magnification.
 2.  <b>Image Native Resolution</b>_ Displays the imported image resolution.
@@ -60,21 +52,9 @@ The following are required to execute this tool_
 9.  <b>Channels</b>_ Choose the cells of interest in either the green, red, or combined channels.
 10. <b>Help</b>_ Links directly to this site.
 
-|                                                                                                                                                                             |                                                                                                                                                                                       |                                                                                                                                                                                            |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 
-{% capture title%}
- **Cell Roundness**_ Select the desired morphology for cells. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/RETINA Cell Counter Roundness.png' title=title %} | 
-{% capture title%}
- **Retina Area Selection**_ Choose between automated or manual segmentation. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/RETINA Cell Counter Area.png' title=title %} | 
-{% capture title%}
- **Threshold Sensitivity**_ Select the threshold protocol for cell counting. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/RETINA Cell Counter Threshold.png' title=title %} |
+|                                                                                                                                                                            |                                                                                                                                                                                      |                                                                                                                                                                                           |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {% include thumbnail src='/images/pages/RETINA Cell Counter Roundness.png' title='\'\'\'Cell Roundness\'\'\'_ Select the desired morphology for cells.'%} | {% include thumbnail src='/images/pages/RETINA Cell Counter Area.png' title='\'\'\'Retina Area Selection\'\'\'_ Choose between automated or manual segmentation.'%} | {% include thumbnail src='/images/pages/RETINA Cell Counter Threshold.png' title='\'\'\'Threshold Sensitivity\'\'\'_ Select the threshold protocol for cell counting.'%} |
 
 ## Results
 

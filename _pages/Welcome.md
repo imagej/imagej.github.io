@@ -56,7 +56,7 @@ Welcome to the Wiki\!
 
 <div style="font-size: 1.2em; padding: 7px">
 
-This [wiki](wikipedia_wiki "wikilink") documents all aspects of the **ImageJ ecosystem**, including:
+This {% include wikipedia title='wiki' text='wiki'%} documents all aspects of the **ImageJ ecosystem**, including:
 
 </div>
 
@@ -83,11 +83,11 @@ Tools & Features
 
 </h2>
 
-|                                              |                                                                                                                                                                                                                                                                              |
-| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Open source](Open_source "wikilink")        | ImageJ is a tool for the [scientific community](wikipedia_Scientific_method#Communication_and_community "wikilink"). To maintain transparency, the [ImageJ application](Downloads "wikilink") and its [source code](source_code "wikilink") will always be freely available. |
-| [Reproducible](Reproducibility "wikilink")   | Powerful tools such as the [Script Editor](Script_Editor "wikilink") and [personal update sites](personal_update_sites "wikilink") help you develop and share reproducible analysis workflows.                                                                               |
-| [Interoperable](Interoperability "wikilink") | ImageJ is [not an island](SciJava "wikilink"). Use the best tool for the job, including [KNIME](KNIME "wikilink"), [ITK](ITK "wikilink"), [MATLAB](MATLAB "wikilink"), and a multitude of [scripting](scripting "wikilink") languages.                                       |
+|                                              |                                                                                                                                                                                                                                                                                                     |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Open source](Open_source "wikilink")        | ImageJ is a tool for the {% include wikipedia title='Scientific\_method\#Communication\_and\_community' text='scientific community'%}. To maintain transparency, the [ImageJ application](Downloads "wikilink") and its [source code](source_code "wikilink") will always be freely available. |
+| [Reproducible](Reproducibility "wikilink")   | Powerful tools such as the [Script Editor](Script_Editor "wikilink") and [personal update sites](personal_update_sites "wikilink") help you develop and share reproducible analysis workflows.                                                                                                      |
+| [Interoperable](Interoperability "wikilink") | ImageJ is [not an island](SciJava "wikilink"). Use the best tool for the job, including [KNIME](KNIME "wikilink"), [ITK](ITK "wikilink"), [MATLAB](MATLAB "wikilink"), and a multitude of [scripting](scripting "wikilink") languages.                                                              |
 
 <h2 class="header-stripe" style="margin-left: -20px; margin-right: -20px; border:solid black; border-left: 2px; border-right: 2px">
 

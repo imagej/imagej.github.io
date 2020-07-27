@@ -7,7 +7,7 @@ categories: Scripting
 description: test description
 ---
 
-Super sloppy surface reconstruction from planetary surface photographs or [Scanning Electron Micrographs (SEM)](wikipedia_Scanning_electron_microscope "wikilink").
+Super sloppy surface reconstruction from planetary surface photographs or {% include wikipedia title='Scanning electron microscope' text='Scanning Electron Micrographs (SEM)'%}.
 
 ## Motivation
 
@@ -24,21 +24,9 @@ If these requirements are met, your picture is an arbitrarily scaled <em>x</em>-
 
 See here a photograph of the [lunar crater Hohmann](http://commons.wikimedia.org/wiki/File:Hohmann_crater.png) original, integrated, and rendered as a [3D Surface Plot](3D_Surface_Plot "wikilink").
 
-|                                                                                                                |                                                                                                                                  |                                                                                                                             |
-| -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 
-{% capture title%}
- Original image 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Hohmann-crater.jpg' title=title %} | 
-{% capture title%}
- Integral in <em>x</em> 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Hohmann-crater-xintegral.jpg' title=title %} | 
-{% capture title%}
- 3D Surface Plot 
-{% endcapture %}
-{% include thumbnail src='/images/pages/Hohmann-crater-surfaceplot.jpg' title=title %} |
+|                                                                                           |                                                                                                             |                                                                                                        |
+| ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| {% include thumbnail src='/images/pages/Hohmann-crater.jpg' title='Original image'%} | {% include thumbnail src='/images/pages/Hohmann-crater-xintegral.jpg' title='Integral in <em>x</em>'%} | {% include thumbnail src='/images/pages/Hohmann-crater-surfaceplot.jpg' title='3D Surface Plot'%} |
 
 ## Shortcomings
 

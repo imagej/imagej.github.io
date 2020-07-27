@@ -30,17 +30,9 @@ If you click **Interest Point Explorer (on/off)**, a new window will open that s
 
 You can right-click on a line in the list and click **Delete** to delete the interest points.
 
+{% include thumbnail src='/images/pages/BigStitcher ips explorer bdv all.png' title='all interest points as an overlay in BigDataViewer'%}
 
-{% capture title%}
- all interest points as an overlay in BigDataViewer 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BigStitcher ips explorer bdv all.png' title=title %}
-
-
-{% capture title%}
- **corresponding** interest points as an overlay in BigDataViewer 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BigStitcher ips explorer bdv corresponding.png' title=title %}
+{% include thumbnail src='/images/pages/BigStitcher ips explorer bdv corresponding.png' title='\'\'\'corresponding\'\'\' interest points as an overlay in BigDataViewer'%}
 
 <img src="/images/pages/BigStitcher ips explorer panel.png" width="600"/>
 

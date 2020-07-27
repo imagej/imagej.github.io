@@ -7,7 +7,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='languages' %}[Clojure](wikipedia_Clojure "wikilink") is a dialect of the [Lisp programming language](wikipedia_Lisp_\(programming_language\) "wikilink"). Clojure is a general-purpose programming language with an emphasis on functional programming.
+{% include learn content='languages' %}{% include wikipedia title='Clojure' text='Clojure'%} is a dialect of the {% include wikipedia title='Lisp (programming\_language)' text='Lisp programming language'%}. Clojure is a general-purpose programming language with an emphasis on functional programming.
 
 # Clojure tutorial for ImageJ
 
@@ -1146,7 +1146,7 @@ Otherwise, it would just return the <i>:ok</i> keyword.
 
 A beautiful example of using lazy sequences and applying functions to one or more sequences at a time.
 
-Below, the sequence <i>fibs</i> is defined in such a way that it contains all possible [fibonacci numbers](wikipedia_Fibonacci_number "wikilink"). Since such sequence is infinite, we declared it as <i>lazy</i> sequence, that creates new elements only when they are asked for.
+Below, the sequence <i>fibs</i> is defined in such a way that it contains all possible {% include wikipedia title='Fibonacci number' text='fibonacci numbers'%}. Since such sequence is infinite, we declared it as <i>lazy</i> sequence, that creates new elements only when they are asked for.
 
 The <i>lazy-cat</i> clojure function creates such lazy sequence by concatenation of two sequences: the first sequence is <i>0, 1</i> (which takes the role of feeder or initialization sequence), and the second sequence is the result of a <i>map</i> operation over two subsets of the <i>fibs</i> sequence itself: the full and the full minus the first element (hence the <i>rest</i> operation to obtain the list of all elements without the first).
 

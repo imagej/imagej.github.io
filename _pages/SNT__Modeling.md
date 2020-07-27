@@ -10,7 +10,7 @@ description: test description
 {% include sntnavbar%}
  
 {% capture title%}
- Synthetic neuron generated using the {% include bc content='Demo|Cx3D|Random Branching'%} command ([source code](https://github.com/morphonets/cx3d/blob/master/src/main/java/sc/iview/cx3d/commands/RandomBranchingDemo.java)), accessible from SciView's main menu. 
+Synthetic neuron generated using the {% include bc content='Demo|Cx3D|Random Branching'%} command ([source code](https://github.com/morphonets/cx3d/blob/master/src/main/java/sc/iview/cx3d/commands/RandomBranchingDemo.java)), accessible from SciView's main menu.
 {% endcapture %}
 {% include thumbnail src='/images/pages/Cx3d-sciview.png' title=title %} Modeling in SNT is performed through [Cortex3D (Cx3D)](https://github.com/morphonets/cx3d) and [SciView](SciView "wikilink"). Cx3D was developed in 2009\[1\] as a computational modeling tool for simulating neurodevelopmental processes and is well known for generative models of cortical circuits.
 

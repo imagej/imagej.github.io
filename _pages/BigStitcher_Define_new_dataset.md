@@ -11,11 +11,7 @@ When clicking {% include bc content='Plugins|BigStitcher| BigStitcher'%} in the 
 
 ![BigStitcher\_import\_exisitng\_0.png](/images/pages/BigStitcher import exisitng 0.png "BigStitcher_import_exisitng_0.png")
 
-
-{% capture title%}
- Select the importer and the name of the xml file to save the metadata to. 
-{% endcapture %}
-{% include thumbnail src='/images/pages/BigStitcher importer 1.png' title=title %} In order to **define a new dataset**, please click the respective button on the left side of the dialog. This will open a new window in which you can define how to import the image data. Since there is huge variety of data formats produced by various microscopy companies and self-built setups, we developed multiple types of importers:
+{% include thumbnail src='/images/pages/BigStitcher importer 1.png' title='Select the importer and the name of the xml file to save the metadata to.'%} In order to **define a new dataset**, please click the respective button on the left side of the dialog. This will open a new window in which you can define how to import the image data. Since there is huge variety of data formats produced by various microscopy companies and self-built setups, we developed multiple types of importers:
 
   - **[Automatic Loader (Bioformats)](BigStitcher_AutoLoader "wikilink")**
 

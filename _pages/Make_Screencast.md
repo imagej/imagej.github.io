@@ -13,7 +13,7 @@ description: test description
 {% endcapture %}
 {% include info-box software='Fiji ' name='Make\_Screencast.bsh ' author='Johannes Schindelin ' maintainer='Johannes Schindelin ' filename='Make\_Screencast.bsh ' source=source status='stable ' %}
 
-**Make Screencast** is a [Beanshell](Beanshell_Scripting "wikilink") script to record a screencast in [Ogg](wikipedia_Ogg "wikilink") or [Quicktime](wikipedia_QuickTime_File_Format "wikilink") video formats.
+**Make Screencast** is a [Beanshell](Beanshell_Scripting "wikilink") script to record a screencast in {% include wikipedia title='Ogg' text='Ogg'%} or {% include wikipedia title='QuickTime File Format' text='Quicktime'%} video formats.
 
 Access it via {% include bc content='File | Make Screencast'%}.
 
