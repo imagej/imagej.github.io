@@ -435,10 +435,9 @@ def add_front_matter(str_content, file_path, layout, title):
     # scrap necessary info fom page and populate the front matter.
     title = title.replace(":", " ›")
     breadcrumb = get_breadcrumb(file_path)
-    author = "test author"
     categories = get_categories(file_path)
     description = "test description"
-    front_matter_content = "---\ntitle: {0}\nbreadcrumb: {1}\nlayout: {2}\nauthor: {3}\ncategories: {4}\ndescription: {5}\n---\n\n{6}".format(title, breadcrumb, layout, author, categories, description, str_content)
+    front_matter_content = "---\ntitle: {0}\nbreadcrumb: {1}\nlayout: {2}\ncategories: {3}\ndescription: {4}\n---\n\n{5}".format(title, breadcrumb, layout, categories, description, str_content)
 
     return front_matter_content
 
