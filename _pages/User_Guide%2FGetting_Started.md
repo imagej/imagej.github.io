@@ -268,8 +268,8 @@ Below is a list of the ImageJ [↓help](#index-Help-resources "wikilink") resour
     http://imagej.nih.gov/ij/links.html> and <http://imagej.nih.gov/ij/docs/examples/
 7.  Mailing lists:[↓](#index-Mailing-lists "wikilink")
     1.  **ImageJ** — http://imagej.nih.gov/ij/list.html  
-        General user and developer discussion about ImageJ. Can be accessed via the <span class="sans"><span class="menuitem"><span class="sans">Help ▷ [<span class="menuitem">Mailing List…</span>↓](#sub_List-Archives... "wikilink")</span></span></span> command. This list is also mirrored at [Nabble](http://imagej.1557.n6.nabble.com/) and [Gmane](http://dir.gmane.org/gmane.comp.java.imagej). You may find it easier to search and browse the list archives on these mirrors. Specially useful are the [RSS feeds](feed_//rss.gmane.org/topics/excerpts/gmane.comp.java.imagej) and the *[frames and threads](http_//news.gmane.org/gmane.comp.java.imagej)* view provided by Gmane.
-    2.  **Fiji users** --- http_//groups.google.com/group/fiji-users  
+        General user and developer discussion about ImageJ. Can be accessed via the <span class="sans"><span class="menuitem"><span class="sans">Help ▷ [<span class="menuitem">Mailing List…</span>↓](#sub_List-Archives... "wikilink")</span></span></span> command. This list is also mirrored at [Nabble](http://imagej.1557.n6.nabble.com/) and [Gmane](http://dir.gmane.org/gmane.comp.java.imagej). You may find it easier to search and browse the list archives on these mirrors. Specially useful are the [RSS feeds](feed_//rss.gmane.org/topics/excerpts/gmane.comp.java.imagej) and the *[frames and threads](http://news.gmane.org/gmane.comp.java.imagej)* view provided by Gmane.
+    2.  **Fiji users** --- http://groups.google.com/group/fiji-users  
         For user discussion specific to [Fiji↑](#sub_Fiji-intro "wikilink") (rather than core ImageJ).
     3.  **Fiji-devel** — http://groups.google.com/group/fiji-devel  
         For developer discussion specific to Fiji.

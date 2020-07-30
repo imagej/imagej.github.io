@@ -136,9 +136,9 @@ The file selection prompt for this option allows selection of up to four directo
 
 # Custom Analyses
 
-It is possible to script your own analysis routines. See [SNT_\_Scripting](https_//imagej.net/SNT__Scripting) for the link to SNT's API as well as script templates demonstrating a range of analysis possibilities.
+It is possible to script your own analysis routines. See [SNT:\_Scripting](https://imagej.net/SNT:_Scripting) for the link to SNT's API as well as script templates demonstrating a range of analysis possibilities.
 
 {% include sntnavbar%}
 
 
-[Category_SNT](Category_SNT "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink")
+[Category:SNT](Category_SNT "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink")

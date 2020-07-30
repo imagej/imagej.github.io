@@ -1,13 +1,9 @@
 2009-11-23_-_New_Plugin:_SIOX_(Simple_Interactive_Object_Extraction).mw
 2009-12-17_-_New_Plugin:_RATS_(Robust_Automatic_Threshold_Selection).mw
-2010-04-27_-_Fiji's_Script_Editor_now_understands_ImageJ_Macros.mw
 2010-06-14_-_Fiji_"Heidelberg"_is_out.mw
-2010-08-04_-_The_Script_Editor's_font_and_tab_size_are_now_adjustable.mw
 2010-09-17_-_Snakuscule_(and_other_BIG_plugins)_in_Fiji!.mw
 2011-10-25_-_EM_segmentation_challenge_(ISBI_-_2012).mw
 2012-03-20_-_Unit_tests_for_ImageJ_1.46.mw
-2014-07-11_-_Fiji_won't_quit!.mw
-2014-07-11_-_Fiji_won't_quit.mw
 2016-04-19_-_Writing_ImageJ2_Plugins:_A_Beginner's_Perspective.mw
 2016-07-21_-_KNIME_Image_Processing_hackathon.mw
 2D_Histogram.mw
@@ -16,7 +12,6 @@ Adelson's_Squares_(Macro).mw
 Advanced_mode(MTrack).mw
 Alida.mw
 Analyze_Skeleton_(2D%2F3D).mw
-Architecture.mw
 Auto_Crop_(guess_background_color).mw
 Batch_mode(MTrack).mw
 BigDataServer.mw
@@ -28,9 +23,7 @@ Cover_Maker.mw
 Create_3D_calibration_(requires_astigmatism).mw
 Crop_(3D).mw
 Deconvolution.mw
-Description_of_ImageJ's_plugin_architecture.mw
 Descriptor-based_registration_(2d%2F3d).mw
-DiameterJ.mw
 Dilate_(3D).mw
 DokuWiki_Migration.mw
 Downloads.mw
@@ -39,10 +32,8 @@ Erode_(3D).mw
 Extended_Depth_of_Field_(Easy_mode)....mw
 Extended_Depth_of_Field_(Expert_mode)....mw
 Fiji%2FYouTube_Channel.mw
-Fiji's_Menu.mw
 Find_maxima_(Trackmate_module).mw
 First-instar_brain_(6.3MB).mw
-GSoC_2011_Ideas.mw
 ImageJ.mw
 ImgLib1_(deprecated).mw
 Load_Particles_(.tif_file_-_fast).mw
@@ -54,7 +45,6 @@ Microtubule_polarity_and_(+)_end_vs._(-)_end_tracking.mw
 Minimum_(3D).mw
 Minimum_Splits_and_Mergers_Warping_error.mw
 Ops_Deconvolution.mw
-Overview_of_Fiji's_source_code.mw
 Preprocessing(MTrack).mw
 Rand_error.mw
 Read_more_on_microtubule_polarity_and_(+)_end_vs._(-)_end_tracking.mw
@@ -65,10 +55,8 @@ SPIM_Registration_on_cluster_(deprecated).mw
 Save_Particles_(.tif_file_-_fast).mw
 Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012.mw
 Select_Bounding_Box_(guess_background_color).mw
-Shape_Index_Map.mw
 Shepp-Logan_Phantom_(Plugin).mw
 Sholl_Analysis.mw
-Simple_Neurite_Tracer:_"Export_to_SWC"_Tutorial.mw
 Sintered_Alumina_(2.6MB).mw
 Skeletonize_(2D%2F3D).mw
 Sort_Particles_by_frame_(in_a_.tif_particle_table_file).mw
@@ -84,5 +72,4 @@ TrakEM2_Scripting.mw
 Tree_and_Menu_Demo.mw
 User:Freetrashbox%2FDiameterJ.mw
 Versioning.mw
-VisBio_Fiji_plugin.mw
 Watershed_Algorithm_(ImageJ_plugin).mw

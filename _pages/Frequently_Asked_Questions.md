@@ -410,7 +410,7 @@ Please feel free to enhance the Wiki\! We are thankful for all contributions\!
 
 ## How do I find more information about Command X?
 
-The first place to check is this wiki. The [Fiji's Menu](Fiji's_Menu "wikilink") page is especially helpful as it includes links to all the menu commands that ship as part of Fiji.
+The first place to check is this wiki. The [Fiji's Menu](Fijis_Menu "wikilink") page is especially helpful as it includes links to all the menu commands that ship as part of Fiji.
 
 If documentation is missing for the command you're interested in, you can always view the source directly:
 

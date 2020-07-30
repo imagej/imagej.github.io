@@ -1,3 +1,4 @@
+02b Hotaling Visual Abstract.png
 1 Update Fiji.png
 1-bit-histogram.png
 1-select-op.png
@@ -13,6 +14,7 @@
 24bit rgb images.jpg
 3 Enable cookbook.png
 3-op-signature.png
+3-way-view.png
 3D Viewer overview.png
 3D-Viewer.jpg
 3DViewer-class-diagram-customnode.png
@@ -47,6 +49,7 @@ AddPluginSite-5.jpg
 AddPluginSite-6.jpg
 AddPluginSite-7.jpg
 AddPluginSite-8.jpg
+Adelsons-squares.png
 Adjust Threshold 1.jpg
 Adjust-difference-of-gaussian-values.png
 Advanced2.png
@@ -559,6 +562,7 @@ Farhan.png
 FeatureExtractor1.png
 FiberOutlines.png
 Fibers.png
+Figure 1.png
 Figure HMax HWatershed v3.PNG
 Figure IWS controlPanel.PNG
 Figure IWS customBgImage.PNG
@@ -628,6 +632,7 @@ GitHub-pull-request-review-create-tutorial.png
 Glasbey-labeling.png
 Glasbey.png
 Gnu Plot.jpg
+Good vs Bad Seg.PNG
 GreenYellowSimultColourIllusion.png
 GridStitching1.png
 GridStitching1013.png
@@ -710,6 +715,7 @@ Image5D-color.jpg
 Image5D-gray.jpg
 Image5D-overlay.jpg
 ImageFlow.png
+ImageJ Macro in the Script-Editor.png
 ImageJ launched from MATLAB.png
 ImageJ1-API-diagram.jpg
 ImageProperties.png
@@ -1067,6 +1073,7 @@ Plugin screencapture.jpg
 PluginScreenshot1.png
 PluginScreenshot3.png
 Polar.png
+Pore Outlines.png
 Pre alignment.png
 Principle-of-morphological-dilation-and-erosion.png
 Process folder ij1.png
@@ -1098,6 +1105,7 @@ RVS shrink option.png
 Radial-symmetry-initital-gui-ransac-on.png
 Radial.png
 Radii.png
+Radius Histogram.png
 Randomized-Image-Histogram-phase.png
 RansacPanel.png
 Raw Threshold Watershed AnalyzeParticles2.jpg
@@ -1153,6 +1161,9 @@ Rotation chamber.png
 Rvs elastic options 351x446.png
 Rvs main window.png
 Rvs scheme.png
+S1.png
+S2.png
+S3.png
 SAIM Math.pdf
 SIFT Dialog.png
 SIOX Segmentation GUI step1.png
@@ -1253,6 +1264,7 @@ SampleSize.png
 SaturatedDAPIHistogram.png
 Save as1.png
 Save as2.png
+Save-all-as-swc.png
 Scale.png
 ScaledIntensityPlots.png
 Scatterplotcoloc.jpg
@@ -1327,12 +1339,15 @@ Segmentation Editor 3.png
 Segmentation Editor medulla r labels rotating.gif
 Segmentation-boundaries.jpg
 Segmentation-overlay.jpg
+Segmentation.png
 SegmentationEditor update.jpg
 SelectValues.jpg
 Selection tree.png
 Selections.png
 SessionOptions.png
 Set scale plugin.png
+Shape Index-map.jpg
+Shape Index-orig.jpg
 Shape smoothing GUI.png
 Shape-smoothing-original-image.png
 Shape-smoothing-smoothed-contour.png
@@ -1352,6 +1367,8 @@ Sigma-palette-location.png
 Sigma-palette-max.png
 Sigma-palette-mid.png
 Sigma-palette-min.png
+Simple Neurite Tracer "Export to SWC" Tutorial-1.png
+Simple Neurite Tracer "Export to SWC" Tutorial-3.png
 SimpleNeuriteTracer2.png
 Simulate Color Blindness Dialog.png
 Skeleton-bat-cochlea-volume.gif
@@ -1393,6 +1410,7 @@ Snt-Sholl-Profile-Plot-New.png
 Snt-Sholl-Profile-Table-New.png
 Snt-Sholl-preview-step-size-1.png
 Snt-Sholl-preview-step-size-2.png
+Snt-after-setting-swc-types.png
 Snt-confirm-tubes-tif.png
 Snt-confirmed-path.png
 Snt-cropped-after-starting-2.png
@@ -1433,6 +1451,7 @@ Snt-sb-started-branch.png
 Snt-sb-temporary-path-2.png
 Snt-sb-temporary-path.png
 Snt-searching-for-path.png
+Snt-set-to-soma.png
 Snt-temporary-path.png
 Snt-tracer-starting.png
 Snt-transparent-filling-2.png

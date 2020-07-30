@@ -98,7 +98,7 @@ It remains possible to trace in the legacy 3D Viewer. ![](SNT-3D-Dialog.png)
 
 ### I.Starting the Viewer
 
-To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see 3 parameters_ ![SNT-Image-Resampling-Factor.png](/images/pages/SNT-Image-Resampling-Factor.png "SNT-Image-Resampling-Factor.png")
+To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see 3 parameters: ![SNT-Image-Resampling-Factor.png](/images/pages/SNT-Image-Resampling-Factor.png "SNT-Image-Resampling-Factor.png")
 
   - Select *New with image* from the *Viewer* drop-down menu (selecting *New without image* would only allow you to look at reconstructions without the underlying signal). Note that you can recycle existing viewers you may have open by choosing their window titles from the drop-down menu.
   - Select the preferred rendering style from the *Mode* drop-down menu.

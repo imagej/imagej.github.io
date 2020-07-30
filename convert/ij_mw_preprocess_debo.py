@@ -515,7 +515,7 @@ def convert(path_in, path_out, layout, title):
         # do replacements in md format
         content_tmp = reveal_includes(content_tmp)
         content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
-        content_tmp = re.sub(r'(\[[^\]]*\]\()((?!http)(?!mailto\:)[^\"]*)(\"[^\"]*\"\))', fix_link_match, content_tmp)
+        content_tmp = re.sub(r'(\[[^\]]*\]\()((?!http)(?!mailto\:)[^\"\)]*)((?:\"[^\"]*\")?\))', fix_link_match, content_tmp)
         content_tmp = re.sub(r'<img src=\"(?!http)(?!/images/pages/)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
         content_tmp = re.sub(r'(\!\[[^\]]*\]\()((?!\/images\/pages\/)[^\"\)]*)([ \n]*\"[^\"]*\"[ ]*\))', fix_md_image, content_tmp)
 
@@ -540,7 +540,7 @@ def convert(path_in, path_out, layout, title):
 
 
 def fix_link_match(match):
-    return match.group(1) + match.group(2).replace(":", "_") + match.group(3)
+    return match.group(1) + match.group(2).replace(":", "_").replace("\'", "").replace("\"", "") + match.group(3)
 
 
 def fix_md_image(match):

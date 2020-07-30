@@ -96,7 +96,7 @@ This plugin helps exploring the relaxation curves on a point, the neighbourhood 
 
 ![Application panels](/images/pages/Full-1.jpg "Application panels")
 
-[File:Panel\_1-1.jpg|Left](File_Panel_1-1.jpg%7CLeft) panels_ spin echo images from T1 (top) and T2 (bottom) sequences. The yellow square shows the interest area where the tissue parameters are estimated. Its size and position can be modified dynamically. [File_Panel3-1.jpg|T1](File_Panel3-1.jpg%7CT1) relaxation curve (red) estimated from MRI data (blue crosses), given the measured noise level (black) [File_Panel4-1.jpg|T2](File_Panel4-1.jpg%7CT2) relaxation curve (dark green=mono-exponential, light green=bi-exponential) estimated from MRI data (blue crosses). The blue crosses display the mean MR value over all the pixels in the interest area (the yellow square), and the std within these data is displayed as a vertical blue bar. The measured noise level used for noise-corrected estimation is displayed as a black line. [File_Panel5-1.jpg|Values](File_Panel5-1.jpg%7CValues) of T1 (red) and T2 (green) estimated from the mean values (blue crosses on the curves panel). Marker thickness are proportional to the relative proton density. The three graphs (from bottom to top) shows the values in this area for the three successive timepoints of the 5D MR Hyperimage. [File_Panel6-1.jpg|Distribution](File_Panel6-1.jpg%7CDistribution) of the T1 and T2 values estimated from each individual pixel of the current region of interest.
+[File:Panel\_1-1.jpg|Left](File_Panel_1-1.jpg%7CLeft) panels: spin echo images from T1 (top) and T2 (bottom) sequences. The yellow square shows the interest area where the tissue parameters are estimated. Its size and position can be modified dynamically. [File:Panel3-1.jpg|T1](File_Panel3-1.jpg%7CT1) relaxation curve (red) estimated from MRI data (blue crosses), given the measured noise level (black) [File:Panel4-1.jpg|T2](File_Panel4-1.jpg%7CT2) relaxation curve (dark green=mono-exponential, light green=bi-exponential) estimated from MRI data (blue crosses). The blue crosses display the mean MR value over all the pixels in the interest area (the yellow square), and the std within these data is displayed as a vertical blue bar. The measured noise level used for noise-corrected estimation is displayed as a black line. [File:Panel5-1.jpg|Values](File_Panel5-1.jpg%7CValues) of T1 (red) and T2 (green) estimated from the mean values (blue crosses on the curves panel). Marker thickness are proportional to the relative proton density. The three graphs (from bottom to top) shows the values in this area for the three successive timepoints of the 5D MR Hyperimage. [File:Panel6-1.jpg|Distribution](File_Panel6-1.jpg%7CDistribution) of the T1 and T2 values estimated from each individual pixel of the current region of interest.
 
 ### Preparing your data
 
@@ -114,23 +114,23 @@ A window appear, that let you explore your data clicking on your images. Control
 
 ## References
 
-  - José G. Raya, Olaf Dietrich, Annie Horng, Jürgen Weber, Maximilian F. Reiser, Christian Glaser, 2010. « T2 measurement in articular cartilage_ Impact of the fitting method on accuracy and precision at low SNR ». Magnetic Resonance in Medicine 63_181–193 (2010)
+  - José G. Raya, Olaf Dietrich, Annie Horng, Jürgen Weber, Maximilian F. Reiser, Christian Glaser, 2010. « T2 measurement in articular cartilage: Impact of the fitting method on accuracy and precision at low SNR ». Magnetic Resonance in Medicine 63:181–193 (2010)
 
   
 
 ## Software dependencies acknowledgements
 
-  - Johannes Schindelin et al for [Fiji](https_//imagej.net/Fiji) (Schindelin et al., 2012)
+  - Johannes Schindelin et al for [Fiji](https://imagej.net/Fiji) (Schindelin et al., 2012)
   - Karl Schmidt and Curtis Rueden for tips seen in the MRI Analysis Calculator and in the CurveFitters
 
   
 
 ## License
 
-This program is an open-source **free software**_ it can be redistributed and/or modified under the terms of the **GNU General Public License** as published by the Free Software Foundation (http_//www.gnu.org/licenses/gpl.txt).
+This program is an open-source **free software**: it can be redistributed and/or modified under the terms of the **GNU General Public License** as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 -----
 
-[Category_Plugins](Category_Plugins "wikilink") [Category:Analysis](Category_Analysis "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Analysis](Category_Analysis "wikilink")

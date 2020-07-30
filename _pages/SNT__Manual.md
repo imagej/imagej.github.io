@@ -41,11 +41,11 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy: ![](SN
 
 <!-- end list -->
 
-  - {% include bc content='Import| Labels (AmiraMesh)...'%} This option assumes you are tracing on the same spatial coordinates of an annotated neuropil, for which compartments have been segmented (*labeled*) and stored in an [Amira](https_//amira.zib.de/) labels file. Once loaded, SNT will report the name of the compartments in the ImageJ status bar when hovering over the image.
+  - {% include bc content='Import| Labels (AmiraMesh)...'%} This option assumes you are tracing on the same spatial coordinates of an annotated neuropil, for which compartments have been segmented (*labeled*) and stored in an [Amira](https://amira.zib.de/) labels file. Once loaded, SNT will report the name of the compartments in the ImageJ status bar when hovering over the image.
 
 ![](SNT-MouseLight-Remote-Loader-Prompt.png)
 
-  - {% include bc content='Import| Remote Databases| '%} Allows import of neuronal reconstructions from the [FlyCircuit](http_//www.flycircuit.tw/), [MouseLight](https_//ml-neuronbrowser.janelia.org/) and [NeuroMorpho](http_//neuromorpho.org/) remote databases.
+  - {% include bc content='Import| Remote Databases| '%} Allows import of neuronal reconstructions from the [FlyCircuit](http://www.flycircuit.tw/), [MouseLight](https://ml-neuronbrowser.janelia.org/) and [NeuroMorpho](http://neuromorpho.org/) remote databases.
 
 <!-- end list -->
 

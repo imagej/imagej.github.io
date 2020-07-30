@@ -24,7 +24,7 @@ Before you pick a start point for your first path, the tracer will look like thi
 
 ### 2\. Click a subsequent point
 
-A small blue square should appear, showing the start of the path_ ![Snt-cropped-after-starting.png](/images/pages/Snt-cropped-after-starting.png "Snt-cropped-after-starting.png") Move through the stack to find a subsequent point further along the same neuron, blood vessel, or whatever, and click there. During tracing, if a part cannot be found immediately, you may see the progress of the search in cyan: ![Snt-cropped-mid-tracing.png](/images/pages/Snt-cropped-mid-tracing.png "Snt-cropped-mid-tracing.png") You can scroll through the stack while such a search is in progress - if it appears not be making good progress, it's probably best to click "Abandon search" (or press {% include key content='Esc' %}) and pick a point closer to the start point.
+A small blue square should appear, showing the start of the path: ![Snt-cropped-after-starting.png](/images/pages/Snt-cropped-after-starting.png "Snt-cropped-after-starting.png") Move through the stack to find a subsequent point further along the same neuron, blood vessel, or whatever, and click there. During tracing, if a part cannot be found immediately, you may see the progress of the search in cyan: ![Snt-cropped-mid-tracing.png](/images/pages/Snt-cropped-mid-tracing.png "Snt-cropped-mid-tracing.png") You can scroll through the stack while such a search is in progress - if it appears not be making good progress, it's probably best to click "Abandon search" (or press {% include key content='Esc' %}) and pick a point closer to the start point.
 
 ### 3\. Confirm the temporary path
 

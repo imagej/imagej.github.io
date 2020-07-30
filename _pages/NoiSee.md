@@ -83,21 +83,21 @@ We provide a small set of [sample data](https://sites.imagej.net/NoiSee/samples/
 
 Running the beads macro on the above sample data will give the following results:
 
-[File:Noisee-Beads-Original-Data.png|Beads](File_Noisee-Beads-Original-Data.png%7CBeads) Input Data [File_Noisee-Beads-SNR.png|SNR](File_Noisee-Beads-SNR.png%7CSNR) [File_Noisee-Beads-Kymographs.png|Kymographs](File_Noisee-Beads-Kymographs.png%7CKymographs) [File_Noisee-Beads-Plots.png|SNR](File_Noisee-Beads-Plots.png%7CSNR) Plots
+[File:Noisee-Beads-Original-Data.png|Beads](File_Noisee-Beads-Original-Data.png%7CBeads) Input Data [File:Noisee-Beads-SNR.png|SNR](File_Noisee-Beads-SNR.png%7CSNR) [File:Noisee-Beads-Kymographs.png|Kymographs](File_Noisee-Beads-Kymographs.png%7CKymographs) [File:Noisee-Beads-Plots.png|SNR](File_Noisee-Beads-Plots.png%7CSNR) Plots
 
 ## Fluorescein Method Example Results
 
-  - [Fluorescein Sample Image](https_//sites.imagej.net/NoiSee/samples/fluorescein.ome.tif) (300 Kb)
-  - [Dark Field Sample Image](https_//sites.imagej.net/NoiSee/samples/darkfield.ome.tif) (55 Kb)
+  - [Fluorescein Sample Image](https://sites.imagej.net/NoiSee/samples/fluorescein.ome.tif) (300 Kb)
+  - [Dark Field Sample Image](https://sites.imagej.net/NoiSee/samples/darkfield.ome.tif) (55 Kb)
 
-Running the fluorescein macro on the above sample data will give the following results_
+Running the fluorescein macro on the above sample data will give the following results:
 
-[File_Noisee-Fluorescein-Original-Data.png|Fluorescein](File_Noisee-Fluorescein-Original-Data.png%7CFluorescein) Input Data [File_Noisee-Fluorescein-Darkfield.png|Dark](File_Noisee-Fluorescein-Darkfield.png%7CDark) Field Input Data [File_Noisee-Fluorescein-Absolute-Signal.png|Absolute](File_Noisee-Fluorescein-Absolute-Signal.png%7CAbsolute) Signal [File_Noisee-Fluorescein-Histogram.png|Histogram](File_Noisee-Fluorescein-Histogram.png%7CHistogram) of the Absolute Signal
+[File:Noisee-Fluorescein-Original-Data.png|Fluorescein](File_Noisee-Fluorescein-Original-Data.png%7CFluorescein) Input Data [File:Noisee-Fluorescein-Darkfield.png|Dark](File_Noisee-Fluorescein-Darkfield.png%7CDark) Field Input Data [File:Noisee-Fluorescein-Absolute-Signal.png|Absolute](File_Noisee-Fluorescein-Absolute-Signal.png%7CAbsolute) Signal [File:Noisee-Fluorescein-Histogram.png|Histogram](File_Noisee-Fluorescein-Histogram.png%7CHistogram) of the Absolute Signal
 
 # Citation
 
-Please note that NoiSee is based on a publication. If you use it for related research please be so kind to cite our work_
+Please note that NoiSee is based on a publication. If you use it for related research please be so kind to cite our work:
 
-*Alexia Ferrand, Kai D Schleicher, Nikolaus Ehrenfeuchter, Wolf Heusermann, Oliver Biehlmaier*_ **Signal-to-Noise ratio made easy_ A tool to assess your confocal performance** [bioRxiv 291500](https_//doi.org/10.1101/291500).
+*Alexia Ferrand, Kai D Schleicher, Nikolaus Ehrenfeuchter, Wolf Heusermann, Oliver Biehlmaier*: **Signal-to-Noise ratio made easy: A tool to assess your confocal performance** [bioRxiv 291500](https://doi.org/10.1101/291500).
 
-[Category_Plugins](Category_Plugins "wikilink") [Category:Citable](Category_Citable "wikilink")
+[Category:Plugins](Category_Plugins "wikilink") [Category:Citable](Category_Citable "wikilink")

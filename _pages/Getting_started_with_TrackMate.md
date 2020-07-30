@@ -19,7 +19,7 @@ The test image we will use for this tutorial has now a link in Fiji. You can fin
 
 ![](TrackMate_FakeTracks.png)
 
-This is 128x128 stack of 50 frames, uncalibrated. It is noisy, but is still a very easy use case_ there is at most 4 spots per frame, they are well separated, they are about the same size and the background is uniform. It is such an ideal case that you would not need TrackMate to deal with it. But for this first tutorial, it will help us getting through TrackMate without being bothered by difficulties.
+This is 128x128 stack of 50 frames, uncalibrated. It is noisy, but is still a very easy use case: there is at most 4 spots per frame, they are well separated, they are about the same size and the background is uniform. It is such an ideal case that you would not need TrackMate to deal with it. But for this first tutorial, it will help us getting through TrackMate without being bothered by difficulties.
 
 Also, if you look carefully, you will see that there are two splitting events - where a spot seems to divide in two spots in the next frame, one merging event - the opposite, and a gap closing event - where a spot disappear for one frame then reappear a bit further. TrackMate is made to handle these events, and we will see how.
 
@@ -55,7 +55,7 @@ What is critical is also to check the dimensionality of the image. In our case, 
 
 If the calibration or dimensionality of your data is not right, I recommend changing it in the image metadata itself, using {% include bc content='Image | Properties'%} ({% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='P' %}). The press the 'Refresh source' button on the TrackMate start panel to grab changes.
 
-You can also define a sub-region for processing_ if you are only interested in finding spots in a defined region of the image, you can use any of the ROI tools of ImageJ to draw a closed area on the image. Once you are happy with it, press the **Refresh source** button on the panel to pass it to TrackMate. You should see that the **X** **Y** start and end values change to reflect the bounding box of the ROI you defined. The ROI needs not to be a square. It can be any closed shape.
+You can also define a sub-region for processing: if you are only interested in finding spots in a defined region of the image, you can use any of the ROI tools of ImageJ to draw a closed area on the image. Once you are happy with it, press the **Refresh source** button on the panel to pass it to TrackMate. You should see that the **X** **Y** start and end values change to reflect the bounding box of the ROI you defined. The ROI needs not to be a square. It can be any closed shape.
 
 If you want to define the min and max **Z** and/ or **T**, you have to edit manually the fields on the panel.
 

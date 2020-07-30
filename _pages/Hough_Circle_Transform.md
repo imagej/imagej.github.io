@@ -25,7 +25,7 @@ description: test description
 
 A {% include wikipedia title='Circle Hough Transform' text='Hough circle transform'%} is an image transform that allows for circular objects to be extracted from an image, even if the circle is incomplete. The transform is also selective for circles, and will generally ignore elongated ellipses. The transform effectively searches for objects with a high degree of radial symmetry, with each degree of symmetry receiving one "vote" in the search space. By searching a 3D Hough search space, the transform can measure the centroid and radius of each circlular object in an image.
 
-\[\[[File:Hough\_Intro2.png|thumb|1000px|center](File:Hough_Intro2.png%7Cthumb%7C1000px%7Ccenter)|**Hough circle transform is specific to circular objects.** *Left Panel:* This panel shown the input data for the Hough circle transform. The data includes (clockwise from top left) a circle (radius 37 pixels), a square (length 37 pixels), an ellipse (minor axis 37 pixels), and a sectored circle (radius 37 pixels).
+\[\[[File:Hough\_Intro2.png|thumb|1000px|center](File_Hough_Intro2.png%7Cthumb%7C1000px%7Ccenter)|**Hough circle transform is specific to circular objects.** *Left Panel:* This panel shown the input data for the Hough circle transform. The data includes (clockwise from top left) a circle (radius 37 pixels), a square (length 37 pixels), an ellipse (minor axis 37 pixels), and a sectored circle (radius 37 pixels).
 
 *Right Panel:* This panel shows the output of a 24 step Hough circle transform. As you can see, the circle and the sectored circle converge to local maxima, while the square and ellipse do not, show the specificity of the transform for circular objects.\]\]
 

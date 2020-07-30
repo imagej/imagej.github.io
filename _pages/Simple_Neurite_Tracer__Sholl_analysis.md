@@ -17,13 +17,13 @@ This tutorial assumes that you've already traced an image with Simple Neurite Tr
 
 When you've loaded the traces, that should look something like this: ![](Simple_Neurite_Tracer-_Sholl_analysis-1.jpg)
 
-Now you have to pick a centre point for the analysis. This might be the soma or a [relevant focal point](http_//forum.imagej.net/t/sholl-analysis-validation-parameters/3065/2). The centre point must be on one of your existing paths. First, select the path on which your centre point lies_ ![](Simple_Neurite_Tracer-_Sholl_analysis-2.jpg)
+Now you have to pick a centre point for the analysis. This might be the soma or a [relevant focal point](http://forum.imagej.net/t/sholl-analysis-validation-parameters/3065/2). The centre point must be on one of your existing paths. First, select the path on which your centre point lies: ![](Simple_Neurite_Tracer-_Sholl_analysis-2.jpg)
 
-Now hold down {% include key content='Ctrl' %}+{% include key content='Shift' %} (on Windows or Linux) or {% include key content='Alt' %}+{% include key content='Shift' %} (on Mac) and move the mouse along the path. A red cross-hair should track along the path_ ![](Simple_Neurite_Tracer-_Sholl_analysis-3.jpg)
+Now hold down {% include key content='Ctrl' %}+{% include key content='Shift' %} (on Windows or Linux) or {% include key content='Alt' %}+{% include key content='Shift' %} (on Mac) and move the mouse along the path. A red cross-hair should track along the path: ![](Simple_Neurite_Tracer-_Sholl_analysis-3.jpg)
 
-... when you've got the red cross-hairs at a suitable point, <i>still</i> holding down {% include key content='Ctrl' %} / {% include key content='Alt' %} and {% include key content='Shift' %}, press the {% include key content='A' %} key. Then you can release the other keys. You should see the Sholl analysis interface appear like this_ ![](Simple_Neurite_Tracer-_Sholl_analysis-4.jpg)
+... when you've got the red cross-hairs at a suitable point, <i>still</i> holding down {% include key content='Ctrl' %} / {% include key content='Alt' %} and {% include key content='Shift' %}, press the {% include key content='A' %} key. Then you can release the other keys. You should see the Sholl analysis interface appear like this: ![](Simple_Neurite_Tracer-_Sholl_analysis-4.jpg)
 
-Consider the first two options_ you should probably select the top option *Use all N paths in analysis?* unless you're only wanting to include a subset of the paths, for example if your image stack contains multiple separate neurons. Next you can click on *Plot Profile* so that you can visualize how the intersections with concentric spheres vary with distance from your centre point_ ![](Simple_Neurite_Tracer-_Sholl_analysis-6.jpg)
+Consider the first two options: you should probably select the top option *Use all N paths in analysis?* unless you're only wanting to include a subset of the paths, for example if your image stack contains multiple separate neurons. Next you can click on *Plot Profile* so that you can visualize how the intersections with concentric spheres vary with distance from your centre point: ![](Simple_Neurite_Tracer-_Sholl_analysis-6.jpg)
 
 This graph shows exactly how many times a sphere of a particular radius will intersect with paths (i.e., *continuos sampling*). To consider spheres of evenly spaced radii (see definition of [Step size](Sholl_Analysis#StepSize "wikilink")), you have to enter a value into the *Radius step size* box. E.g., ![](Simple_Neurite_Tracer-_Sholl_analysis-7.jpg)
 
@@ -54,6 +54,6 @@ Press *Analyze Profile* to run the [Sholl Analysis](Sholl_Analysis "wikilink") p
 
 Another option that might be useful is *Make Sholl image*, equivalent to the [Intersections mask](Sholl#Output_Options "wikilink") created by the [Sholl Analysis](Sholl_Analysis "wikilink") plugin when parsing images directly. This will produce a stack which shows the number of intersections at each distance from the centre point on a colour scale. You can see the exact number of intersections corresponding to a colour by mousing over that region and looking in the status bar. For example, this shows you that the orange colour corresponds to 2 intersections ("value=2"): ![](Simple_Neurite_Tracer-_Sholl_analysis-12.jpg)
 
-If you go back to the main tracer interface, keeping that *Sholl image stack* open, you can visualize those colours on the traces by switching the *Use colors / labels from* option to *Sholl analysis of all paths* (volume of original image made transparent for clarity)_ ![](Simple_Neurite_Tracer-_Sholl_analysis-13.jpg)
+If you go back to the main tracer interface, keeping that *Sholl image stack* open, you can visualize those colours on the traces by switching the *Use colors / labels from* option to *Sholl analysis of all paths* (volume of original image made transparent for clarity): ![](Simple_Neurite_Tracer-_Sholl_analysis-13.jpg)
 
-[Category_Tutorials](Category_Tutorials "wikilink")
+[Category:Tutorials](Category_Tutorials "wikilink")

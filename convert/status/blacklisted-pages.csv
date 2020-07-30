@@ -1,40 +1,26 @@
 name,failing component,reason
-2010-04-27_-_Fiji's_Script_Editor_now_understands_ImageJ_Macros,reader,
 2010-06-14_-_Fiji_"Heidelberg"_is_out,liquid,one bc template is not closed
 2010-06-14_-_Fiji_Heidelberg_is_out,liquid,one bc template is not closed
-2010-08-04_-_The_Script_Editor's_font_and_tab_size_are_now_adjustable,reader,
 2012-03-20_-_Unit_tests_for_ImageJ_1.46,pandoc,
 2016-04-19_-_Writing_ImageJ2_Plugins:_A_Beginner's_Perspective,reader,
-2014-07-11_-_Fiji_won't_quit!,reader,
-2014-07-11_-_Fiji_won't_quit,reader,
 2016-07-21_-_KNIME_Image_Processing_hackathon,liquid,gallery messing with include
 2D_Histogram,pandoc,
-Adelson's_Squares,reader,
 Alida,pandoc,
-Architecture,reader,
 BigDataServer,pandoc,
 Classic_Watershed,linquid,syntax with image attached to infobox is not converted
 Cover_Maker,liquid,include captures in tables don't work
 Deconvolution,pandoc,
-Description_of_ImageJ's_plugin_architecture,reader,
-DiameterJ,reader,
 DokuWiki_Migration,liquid,
 Fiji_Contribution_requirements,pandoc,
-Fiji's_Menu,reader,
 Fiji%2FYouTube_Channel,liquid,youtube playlist
-GSoC_2011_Ideas,reader,
 ImageJ,liquid,timline needs to be replaced before conversion
 Minimum_Splits_and_Mergers_Warping_error,liquid,indendation in cite block converts to code block
 Ops_Deconvolution,liquid,math formulas look like liquid
-Overview_of_Fiji's_source_code,reader,
 Rand_error,liquid,math formulas
 Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012,liquid,line break in cite creates code block
-Simple_Neurite_Tracer:_"Export_to_SWC"_Tutorial,reader,
-Shape_Index_Map,reader,
 Sholl_Analysis,liquid,intended lines create weird conversions
 Topology_preserving_warping_error,liquid,line break in cite creates code block
 TrakEM2_Scripting,liquid, whitespace before list items -> code blocks
 Tree_and_Menu_Demo,liquid,mediawiki demo page
-User:Freetrashbox%2FDiameterJ,reader,
+User:Freetrashbox%2FDiameterJ,reader,chinese symbols
 Versioning,pandoc,
-VisBio_Fiji_plugin,reader,

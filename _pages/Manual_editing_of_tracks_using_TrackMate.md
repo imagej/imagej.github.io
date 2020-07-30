@@ -121,14 +121,14 @@ We now wish to correct for segmentation mistakes, that caused some nuclei to be 
 
 ![](TrackMate_Toolbar.png)
 
-The HyperStack displayer let you edit spots in two ways_
+The HyperStack displayer let you edit spots in two ways:
 
 ### With the mouse
 
 #### Moving an existing spot
 
   - Double-click *inside* a spot on the displayer to select it for editing. It becomes green with a dashed line.
-  - Click and drag inside the selected spot to move its center around. To move it Z or in time, simply move the sliders at the bottom of the window and the spot will follow (shortcuts_ '\<' & '\>' for Z, 'Alt + \>' & 'Alt + \<' to move in time).
+  - Click and drag inside the selected spot to move its center around. To move it Z or in time, simply move the sliders at the bottom of the window and the spot will follow (shortcuts: '\<' & '\>' for Z, 'Alt + \>' & 'Alt + \<' to move in time).
   - When you are happy with its new location, double-click anywhere to leave the editing mode. You should notice that its thumbnail in TrackScheme gets updated.
 
 #### Creating a new spot
@@ -181,7 +181,7 @@ By default, the new spot has the radius of the last spot edited with the mouse. 
 
 ## Adding missed spots
 
-You now have the tools to correct the mistakes our crude detection made. Unfortunately for is exercise, there is just one_ At the last time-point the leftmost cell just divided, but one of the daughter cell has been missed.
+You now have the tools to correct the mistakes our crude detection made. Unfortunately for is exercise, there is just one: At the last time-point the leftmost cell just divided, but one of the daughter cell has been missed.
 
 Notice that when you add spots, they also appear in the TrackScheme window as a magenta cells, on the far right in a lane without track number (under the column **Unlaid spots**). As long as you do not incorporate them in a track, they will remain there.
 
@@ -189,7 +189,7 @@ Also, if you feel courageous, you can improve the look of your TrackScheme layou
 
 You should end up in having a corrected segmentation, where every nuclei correspond to one spot in TrackMate, and it at the right location. Time yourself doing so, so that you learn how much you have to invest on manually correcting segmentation results, and decide if it is acceptable.
 
-## Editing tracks_ creating links
+## Editing tracks: creating links
 
 Now we want to connect the lonesome spots to the track they belong to. This is all about creating links, and there are two ways to do that.
 
