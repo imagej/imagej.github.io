@@ -1,20 +1,39 @@
 ---
-title: Feature Demo
-breadcrumb: Feature Demo
+title: Howto - Authoring a page
+breadcrumb: Howto - Authoring  a page
 layout: page
-author: Edward Evans
 categories: plugins, demo, help
-description: This page is a feature demo.
+description: This page explains how to write pages.
 ---
 
-# DEMO LINKS
+# GitHub pages and Jekyll
+
+Click [here](https://pages.github.com/) to learn more about GitHub pages.
+Click [here](https://jekyllrb.com/) to learn more about Jekyll.
+
+# Getting started
+
+Creating or editing a page on GitHub pages is super easy! Pages can be created or modified online via GitHub's online file editor (clicking "Edit page" on the top right of this page will bring you to this specific page's source) or via a local installation of jekyll and the imagej.github.io site. We recommend installing jekyll and generating the site locally. The advantage of this is that changes can be viewed very quickly without pushing code up to GitHub and waiting for the site to render. This process is slow espcially if you just simply want to check how your page is rendering so far.
+
+## Setup a local jekyll installation (optional)
+
+The jekyll static site generator can be installed on Linux, MacOS and Windows. To install a local version of jekyll follow the instructions for your respective operating system [here](https://jekyllrb.com/docs/installation/). Once jekyll has been installed, clone the the imagej.github.io repository. Navigate to the cloned repository and run `bundle install` to install the specific gems used in imagej.github.io. Once this is complete you can run the static site generator by navigating where imagej.github.io was saved to and running `bundle exec jekyll serve`. Wait for a minute or two while it generates and then in your browser navigate to `http://127.0.0.1:4000`. Any changes you make to any file in the directory will be detected by jekyll, regenerating the site to reflect the new changes.
+
+## Page - front matter
+
+## Page - content
+
+## Page - using includes
+
+# Avaliable "includes"
 
 | Action | Link to demo page|
 | : --- : | :---: |
 | Insert the about menu | [about-menu]({{"/demo-about-menu" | relative_url}})
 | Insert conference info | [conference]({{"/demo-conference" | relative_url}})
 | Generate info/details box | [details-box]({{"/demo-details-box" | relative_url}}) | 
-| Insert figure | [figure]({{"/demo-figure" | relative_url}})
+| Insert figure | [figure]({{"/demo-figure" | relative_url}}) |
+| Insert a gallery | [gallery]({{"/demo-gallery" | relative_url}}) |
 | Link to github files | [github]({{"/demo-github" | relative_url}}) |
 | Insert Git menu | [git-menu]({{"/demo-git-menu" | relative_url}}) |
 | Insert images | [image]({{"/demo-image" | relative_url}}) |
