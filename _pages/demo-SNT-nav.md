@@ -10,8 +10,8 @@ description: This page demonstrates how to insert the SNT nav bar.
 
 {% raw %}
 ```
-{% include SNT-nav %}
+{% include sntnavbar %}
 ```
 {% endraw %}
 
-{% include SNT-nav %}
+{% include sntnavbar %}
