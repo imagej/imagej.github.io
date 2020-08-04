@@ -2653,6 +2653,7 @@ input, select, textarea {
 		border-collapse: collapse;
 		clear: both;
 		font-size: 85%;
+		margin-bottom: 1em;
 	}
 
 	.snt-nav strong {
