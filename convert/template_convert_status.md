@@ -255,7 +255,7 @@
 | Key_press%2Fcore | --- | --- |
 | Key_press | --- | --- |
 | Learn | --- | --- |
-| License | --- | --- |
+| License | **Y** | license |
 | LicensesMenu | --- | --- |
 | Linear-gradient | --- | --- |
 | Link | --- | --- |
@@ -276,7 +276,7 @@
 | Notice | **Y** | info-box |
 | OSX | --- | --- |
 | Otheruses4 | --- | --- |
-| Outdated | --- | --- |
+| Outdated | **Y** | outdated |
 | Path | --- | --- |
 | PersonList | --- | --- |
 | Person | **Y** | person |
@@ -287,10 +287,10 @@
 | Project | --- | --- |
 | Publication | --- | --- |
 | Recipe | --- | --- |
-| RecommendedContact | --- | --- |
+| RecommendedContact | **Y** | recommendedcontact |
 | Reflist | --- | --- |
 | Scholar | --- | --- |
-| SNTDeprecation | --- | --- |
+| SNTDeprecation | **Y** | sntdeprecation |
 | SNTNavBar | **Y** | sntnavbar |
 | Stub | --- | --- |
 | Submenu | **NOT USED** | --- |
