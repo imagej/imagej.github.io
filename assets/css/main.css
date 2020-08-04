@@ -3033,7 +3033,7 @@ input, select, textarea {
 /* Menu */
 
 	.menu {
-		max-width: 40%;
+		max-width: 25%;
 		float: right;
 		z-index: 1;
 		top: 0;
