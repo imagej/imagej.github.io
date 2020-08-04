@@ -1,3 +1,39 @@
-<div class="user-box">
-    {{include.content}}
+{% assign aff = include.affiliation | strip %}
+{% assign forum = include.forum | strip %}
+{% assign github = include.github | strip %}
+{% assign loci = include.loci | strip %}
+{% assign name = include.name | strip %}
+{% assign gravatar = include.gravatar | strip %}
+{% assign stackoverflow = include.stackoverflow | strip %}
+{% assign openhub = include.openhub | strip %}
+{% assign linkedin = include.linkedin | strip %}
+{% assign researchgate = include.researchgate | strip %}
+{% assign orcid = include.orcid | strip %}
+{% assign researcherid = include.researcherid | strip %}
+{% assign scopus = include.scopus | strip %}
+{% assign arxiv = include.arxiv | strip %}
+{% assign scholar = include.scholar | strip %}
+{% assign website = include.website | strip %}
+
+{% capture user-content %}
+{% if aff != "" %}
+| Affiliation | {{aff}} |
+{% endif %}
+{% if forum != "" %}
+| Image.sc Forum | [{{forum}}](https://forum.image.sc/users/{{include.forum}}) |
+{% endif %}
+{% if github != "" %}
+| GitHub | [{{github}}](https://github.com/{{include.github}}) |
+{% endif %}
+{% if loci != "" %}
+| LOCI profile | [{{loci}}](https://loci.wisc.edu/people/{{loci}}) |
+{% endif %}
+{% if website != "" %}
+| Website | [{{website}}]({{website}}) |
+{% endif %}
+{% endcapture %}
+
+<div class="menu" markdown="1">
+<center><strong><h3>{{include.name | strip}}</h3></strong></center>
+{{user-content}}
 </div>
