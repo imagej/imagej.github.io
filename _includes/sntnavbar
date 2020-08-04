@@ -1,1 +1,38 @@
-<span class="sntnavbar">{{include.content}}</span>
+<div class="snt-nav">
+    <table>
+        <tbody>
+            <tr>
+                <td style="background:#EEF3E2 !important">
+                        <a href="{{"/index" | relative_url}}"><strong>Home</strong></a>
+                </td>
+                <td>
+                    <a href="{{"/SNT__Manual" | relative_url}}">Manual</a>
+                </td>
+                <td>
+                    <a href="{{"/SNT__Step-By-Step_Instructions" | relative_url}}">Walk-throughs</a>
+                </td>
+                <td>
+                    <a href="{{"/SNT__Screencasts" | relative_url}}">Screencasts</a>
+                </td>
+                <td>
+                    <a href="{{"/SNT__Key_Shortcuts" | relative_url}}">Shortcuts</a>
+                </td>
+                <td>
+                    <a href="{{"/SNT__Reconstruction_Viewer" | relative_url}}">Rec. Viewer</a>
+                </td>
+                <td>
+                    <a href="{{"/SNT__Analysis" | relative_url}}">Analysis</a>
+                </td>
+                <td>
+                    <a href="{{"/SNT__Scripting" | relative_url}}">Scripting</a>
+                </td>
+                <td>
+                    <a href="{{"/SNT__Modeling" | relative_url}}">Modeling</a>
+                </td>
+                <td>
+                    <a href="{{"/SNT__FAQ" | relative_url}}">FAQ</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
