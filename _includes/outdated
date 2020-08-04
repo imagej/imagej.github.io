@@ -1,1 +1,1 @@
-<span class="outdated">{{include.content}}</span>
+{% include warning-box content="This section is out of date, potentially misleading or invalid. Be careful with any instructions here. When in doubt, [ask for help from the community](/Help)." %}
