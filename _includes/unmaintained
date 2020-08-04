@@ -1,1 +1,1 @@
-<span class="unmaintained%">{{include.content}}</span>
+{% include warning-box content="This page describes a [plugin](/Plugin) which is **_UNMAINTAINED_**! While the plugin and documentation remain available for use, no one is pledged to fix bugs or respond to support questions about it. You can try [asking for help from the community](/Help), but your mileage may vary." %}
