@@ -1,1 +1,1 @@
-<span class="sntdeprecation">{{include.content}}</span>
+{% include warning-box content="This page is outdated and and likely irrelevant. The latest SNT documentation can be found [here](/SNT)" %}
