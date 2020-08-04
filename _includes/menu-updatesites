@@ -1,1 +1,13 @@
-<span class="updatesites-menu">{{include.content}}</span>
+{% include menu title="Update Sites" content=
+"
+| :---: |
+| [Introduction](/Update_sites) |
+| [Following an update site](/Following_an_update_site) |
+| [Creating your own update site](/How_to_set_up_and_populate_an_update_site) |
+| [ToS for personal update sites](/Personal_Update_Site_Terms_of_Service) |
+| [Automatically upload your site](/Automatic_Update_Site_Uploads) |
+| [Uploading to core update sites](/How_to_upload_to_core_update_sites) |
+| [List of update sites](/list-of-update-sites) |
+| [Update site FAQ](/Update_site_FAQ) |
+" 
+%}
