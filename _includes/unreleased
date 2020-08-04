@@ -1,1 +1,1 @@
-<span class="unreleased">{{include.content}}</span>
+{% include warning-box content="This page documents software that is **not yet released!**" %}
