@@ -15,4 +15,4 @@ To start the plugin, go to {% include bc content='Analyze | Classification | Iso
 
 ![Configuration dialog of the IsoData Classifier plugin](/images/pages/IsoData Classifier.png "Configuration dialog of the IsoData Classifier plugin")
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+ 

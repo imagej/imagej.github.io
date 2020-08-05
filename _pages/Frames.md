@@ -148,4 +148,4 @@ Unzip [Frames.zip](https://imagej.net/_images/3/3d/Frames.zip) into ImageJ1 plug
 ` * 1 April 2018 - Initial Version.`  
 ` * 1 April 2019 - Updated.`
 
-[Category:Import-Export‏‎](Category_Import-Export‏‎ "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

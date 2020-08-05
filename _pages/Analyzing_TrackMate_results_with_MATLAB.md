@@ -71,4 +71,4 @@ There are some specialized tools in [MATLAB](MATLAB "wikilink") that can exploit
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 10:35, 8 August 2013 (CDT)
 
-[Category:Tracking](Category_Tracking "wikilink") [Category:Matlab](Category_Matlab "wikilink")
+ 

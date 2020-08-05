@@ -161,4 +161,4 @@ Ext.openFile(path, groupNum-1, levelNum-1); // Open last level of the last group
 
 This plugin uses jai-imageio.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Import-Export](Category_Import-Export "wikilink")
+ 

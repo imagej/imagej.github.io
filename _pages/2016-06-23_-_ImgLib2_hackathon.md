@@ -118,4 +118,4 @@ There is also an experimental repository for the hackathon at:
 
   - https://github.com/imagej/janelia-hackathon-2016
 
-[Category:News](Category_News "wikilink") [Category:Hackathons](Category_Hackathons "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+  

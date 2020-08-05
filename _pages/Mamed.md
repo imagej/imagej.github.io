@@ -60,4 +60,4 @@ Since its difficult, lets do it the old fashion way by passing a USB stick. MAKE
 
 The data are on that USB stick in a folder called MAMED. The file is called *platynereis.tar*. You can unpack it by double clicking after you download it. Beware it is 1.4GB.
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

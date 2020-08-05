@@ -96,4 +96,4 @@ Note: instead of using a temporary tag, you can use the [reflog](Git_reflogs "wi
 
   - [Binary search tutorial](http://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search) in the Git book
 
-[Category:Git](Category_Git "wikilink")
+

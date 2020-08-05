@@ -47,4 +47,4 @@ P.S. We [added regression tests](https://github.com/imagej/imagej-legacy/commit/
 
 P.P.S. The "Fiji won't quit" T-shirt is coming soon\! :-)
 
-[Category:News](Category_News "wikilink")
+

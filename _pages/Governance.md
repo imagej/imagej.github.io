@@ -285,4 +285,4 @@ Birgit Möller</p></td>
   - Eric S. Raymond's [Homesteading the Noosphere](http://catb.org/~esr/writings/homesteading/homesteading/)
   - Eric S. Raymond's [The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/)
 
-[Category:Development](Category_Development "wikilink")
+

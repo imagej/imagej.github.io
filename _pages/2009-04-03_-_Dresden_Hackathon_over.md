@@ -13,4 +13,4 @@ For [developers](Developing_Fiji "wikilink"): 267 files changed, 24538 insertion
 
 For users: stay tuned for [news](News "wikilink") and a release in the near future\!
 
-[Category:News](Category_News "wikilink")
+

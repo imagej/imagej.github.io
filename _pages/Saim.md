@@ -67,4 +67,4 @@ Some of the single pixels fits we obtained look as follows:
   - 1.0.2 (2016-01-22): Added capability to export predicted data from Plot module
   - 1.0.1 (2016-01-12): Changed calculation of rTE to what appears to be the correct formula
 
-[Category:Techniques](Category_Techniques "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

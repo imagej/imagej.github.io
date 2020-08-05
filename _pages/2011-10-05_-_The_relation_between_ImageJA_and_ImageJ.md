@@ -42,4 +42,4 @@ Some cases are hybrids, where the code will be moved outside ij.jar and be avail
 
 In general, this should clean up a lot of unnecessary modifications in IJ1 and let us (read: [me](User_Schindelin "wikilink")) concentrate much more on IJ2.
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Fiji](Category_Fiji "wikilink")
+  

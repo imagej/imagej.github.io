@@ -29,4 +29,4 @@ Big congratulation to the entire Fiji, ImageJ and bioimage analysis community as
 
 The papers will be open access for three months so hurry up, download, read and please cite ;-).
 
-[Category:News](Category_News "wikilink")
+

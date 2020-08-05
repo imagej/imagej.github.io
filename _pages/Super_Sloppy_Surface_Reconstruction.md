@@ -88,4 +88,4 @@ for ( int i = 0; i < source.getHeight(); ++i ) {
   - [Scripting\_comparisons](Scripting_comparisons "wikilink")
   - [Script Editor](Script_Editor "wikilink")
 
-[Category:Scripting](Category_Scripting "wikilink")
+

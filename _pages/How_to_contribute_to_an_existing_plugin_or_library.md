@@ -239,4 +239,4 @@ This tutorial has been written using the following references:
   - [GitHub: how to sync a fork](https://help.github.com/articles/syncing-a-fork/)
   - [GitHub: About Git rebase](https://help.github.com/articles/about-git-rebase/)
 
-[Category:Development](Category_Development "wikilink") [Category:Tutorials](Category_Tutorials "wikilink") [Category:Git](Category_Git "wikilink")
+  

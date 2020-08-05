@@ -23,6 +23,6 @@ To assess the performance of the new and old trackers, we re-run the ISBI tracki
 
 <references/>
 
-[Category:News](Category_News "wikilink")
+
 
 1.  [Chenouard *et al.*, "Objective comparison of particle tracking methods", '''Nature Methods, 2014 '''](http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html)

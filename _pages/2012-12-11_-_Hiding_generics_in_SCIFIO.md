@@ -36,4 +36,4 @@ This does mean that when you are programming with concrete implementations, you 
 
 ![**The Evolution of SCIFIO:** Generics can be terrifying.](/images/pages/Terrifying-generics.jpg "The Evolution of SCIFIO: Generics can be terrifying.")
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

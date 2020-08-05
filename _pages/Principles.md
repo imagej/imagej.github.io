@@ -221,4 +221,4 @@ If converting to grayscale damages or distorts the information desired from a pa
 
 The following principles help with the analysis of processed images.
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

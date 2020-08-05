@@ -296,4 +296,4 @@ Once you have completed plugins and want to get them out to users, you can famil
 
 As always, if you ever need assistance, [just ask](Help "wikilink")\!
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Development](Category_Development "wikilink")
+  

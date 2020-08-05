@@ -19,4 +19,4 @@ See also [Color Image Processing\#\#Splitting\_multi-channel\_Images](Color_Imag
 
 ![RGB\_to\_montage\_example.png](/images/pages/RGB to montage example.png "RGB_to_montage_example.png")
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Color processing](Category_Color_processing "wikilink")
+ 

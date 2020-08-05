@@ -30,4 +30,4 @@ And the threads for [ImageJX](http://groups.google.com/group/imagejx):
 
 Please reply on whichever threads are of interest to you. {% include person content='Rueden' %} will be on holiday for the rest of the year, but will be back before January 7th, and will try to chime in as time allows. Hopefully this great dialogue will continue as we all refine the roadmap for ImageJ over the next few weeks and months\!
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

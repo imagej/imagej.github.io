@@ -35,4 +35,4 @@ The below images show the effects of adjusting brightness and contrast settings.
 
 ![Brightness\_Contrast\_After.png](/images/pages/Brightness Contrast After.png "Brightness_Contrast_After.png")
 
-[Category:Cookbook](Category_Cookbook "wikilink")
+

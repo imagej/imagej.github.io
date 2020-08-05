@@ -31,4 +31,4 @@ MiToBo is based on the [Alida](Alida "wikilink") framework. MiToBo's operators a
 
   - {% include publication content='MiToBo' %}
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Related Software](Category_Related_Software "wikilink") [Category:SciJava](Category_SciJava "wikilink") [Category:Citable](Category_Citable "wikilink")
+   

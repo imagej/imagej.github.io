@@ -13,4 +13,4 @@ On October 24 - 26 we attended the [ImageJ User & Developer Conference 2012](Con
 
 Once again it was great meeting with users, as well as developers of related projects such as [KNIME Image Processing](http://tech.knime.org/community/image-processing) and [Bio7](http://bio7.org/)\!
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Conference](Category_Conference "wikilink")
+  

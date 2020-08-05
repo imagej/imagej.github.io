@@ -81,4 +81,4 @@ run "RGB Merge...", merge_options
 
 [JRuby Scripting](JRuby_Scripting "wikilink")
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Scripting](Category_Scripting "wikilink") [Category:Unmaintained](Category_Unmaintained "wikilink")
+  

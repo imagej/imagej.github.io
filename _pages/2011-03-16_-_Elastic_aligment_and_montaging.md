@@ -17,4 +17,4 @@ Find the (still experimental) plugins for series alignment and montaging in an u
 
 Many thanks to {% include person content='Albertcardona' %} and {% include person content='Iarganda' %} for pushing and helping.
 
-[Category:News](Category_News "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink")
+  

@@ -205,4 +205,4 @@ The same result could be obtained using the built-in clojure <i>pmap</i> functio
 
 [Clojure Scripting](Clojure_Scripting "wikilink")
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Scripting](Category_Scripting "wikilink") [Category:Unmaintained](Category_Unmaintained "wikilink")
+  

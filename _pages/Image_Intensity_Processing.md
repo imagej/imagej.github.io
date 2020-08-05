@@ -304,4 +304,4 @@ More sophisticated masking can be done by *thresholding* the image and subtracti
 5.  This can be smoothed with the command {% include bc content='Process | Smooth'%} and the black area enlarged slightly with {% include bc content='Process | Binary | Dilate'%} to give a better mask.
 6.  Using the regular Image calculator {% include bc content='Process | Image calculator'%} subtract this black and white "mask" image from your original image or stack.
 
-[Category:Cookbook](Category_Cookbook "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+ 

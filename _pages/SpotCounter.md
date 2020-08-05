@@ -23,4 +23,4 @@ To install this plugin check the "ValelabUtils" update site in the Fiji updater.
 2018-01-18 - Version 0.14: Updated build system. Now is compiled to Java 8 bytecode.  
 2017-08-10 - Version 0.13: Added "append" option. Also adds the name of the data to the table.  
 
-[Category:Particle\_analysis](Category_Particle_analysis "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

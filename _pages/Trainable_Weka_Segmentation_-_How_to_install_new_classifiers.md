@@ -57,4 +57,4 @@ This means the *ClassificationViaClustering* classifier **is now installed** and
 
 ![TWS-settings-new-classifier.png](/images/pages/TWS-settings-new-classifier.png "TWS-settings-new-classifier.png")
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Machine Learning](Category_Machine_Learning "wikilink")
+  

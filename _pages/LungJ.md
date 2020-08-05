@@ -210,4 +210,4 @@ Please note that LungJ, as well as other plug-ins available through Fiji, is bas
 
   - {% include citation last1='Wollatz ' first1='Lasse ' last2='Johnston ' first2='Steven J. ' last3='Lackie ' first3='Peter M. ' last4='Cox ' first4='Simon J. ' title='LungJ v0.5.1 ' type='Code ' year='2016 ' month='November ' publisher='University of Southampton ' doi='10.5258/SOTON/401280 ' url='http://eprints.soton.ac.uk/id/eprint/401280 ' %}
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Citable](Category_Citable "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Binary](Category_Binary "wikilink") [Category:Filtering](Category_Filtering "wikilink") [Category:Image\_annotation](Category_Image_annotation "wikilink")
+     

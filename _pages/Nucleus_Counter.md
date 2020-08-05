@@ -11,4 +11,4 @@ description: test description
 
 This plugin is part of the [MBF ImageJ](MBF_ImageJ "wikilink") bundle. Author, version history and status is unknown.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Particle analysis](Category_Particle_analysis "wikilink")
+ 

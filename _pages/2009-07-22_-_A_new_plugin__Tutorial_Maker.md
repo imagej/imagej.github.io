@@ -19,4 +19,4 @@ A menu entry in the *Wiki* menu of the editor allows you to preview and upload t
 
 So now the flood-gates are open, and this Wiki will hopefully see a flurry of new tutorials\!
 
-[Category:News](Category_News "wikilink")
+

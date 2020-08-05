@@ -13,4 +13,4 @@ For the time being, we will support them, even if you cannot get Java 1.6 (with 
 
 If you are interested, [download it](https://fiji.sc/downloads/Heidelberg/fiji-macosx-ppc-20100802.dmg), but please also read the section labeled *Limited PowerPC (G4/G5) Mac support* in the [MacOSX tips](MacOSX_tips "wikilink").
 
-[Category:News](Category_News "wikilink")
+

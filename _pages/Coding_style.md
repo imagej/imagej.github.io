@@ -97,4 +97,4 @@ All of that said, there are times when use of the `protected` modifier is approp
 
 [Eclipse code style profiles and IntelliJ](Eclipse_code_style_profiles_and_IntelliJ "wikilink")
 
-[Category:Development](Category_Development "wikilink")
+

@@ -301,4 +301,4 @@ Danielle Bower, {% include person content='Albertcardona' %}, Nicolas Gompel, Wi
   - [TrakEM2](TrakEM2 "wikilink") for non-destructive stitching with floating, adjustable images.
   - [XuvTools](http://www.xuvtools.org/doku.php) similar stitching software (but you cannot access XuvTools' source code freely) from the University of Freiburg and the [abstract](http://dx.doi.org/10.1111/j.1365-2818.2008.03094.x) of the accompying publication
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:Stitching](Category_Stitching "wikilink") [Category:Cookbook](Category_Cookbook "wikilink") [Category:Citable](Category_Citable "wikilink")
+    

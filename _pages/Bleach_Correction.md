@@ -22,4 +22,4 @@ This plugin contains three different methods for correcting the intensity decay 
       - This method does much better restoration of bleaching sequence for segmentation but not appropriate for intensity quantification.
       - See the blog entry, [a bit more detail on this issue](http://cmci.embl.de/blogtng/2010-05-04/photobleaching_correction_3d_time_series)
 
-[Category:Plugins](Category_Plugins "wikilink")
+

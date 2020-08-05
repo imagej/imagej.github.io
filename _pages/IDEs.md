@@ -41,4 +41,4 @@ There are many advantages of using an IDE for software development:
 
 The main disadvantage of modern IDEs is that they are quite large and require a lot of resources—RAM and screen size in particular.
 
-[Category:Development](Category_Development "wikilink") [Category:IDEs](Category_IDEs "wikilink")
+ 

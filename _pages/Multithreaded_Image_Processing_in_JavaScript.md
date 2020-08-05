@@ -179,4 +179,4 @@ imp.show();
   - [Javascript Scripting](Javascript_Scripting "wikilink")
   - [Multithreaded Image Processing in Clojure](Multithreaded_Image_Processing_in_Clojure "wikilink")
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Scripting](Category_Scripting "wikilink") [Category:Unmaintained](Category_Unmaintained "wikilink")
+  

@@ -55,4 +55,4 @@ This is the after-hackathon release, and so far we have these changes (please co
 
 NOTE: as often, Johannes forgot to acknowledge himself :)
 
-[Category:News](Category_News "wikilink")
+

@@ -133,4 +133,4 @@ Note: if the "erroneous behavior" is [catastrophic](#Catastrophic_failure "wikil
 
 We maintain lifeline ImageJ distributions on the [Downloads page](Downloads "wikilink"). You can use these until any outstanding issues are resolved.
 
-[Category:Bug Reporting](Category_Bug_Reporting "wikilink")
+

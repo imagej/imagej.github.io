@@ -17,4 +17,4 @@ Speaking of shots: here is a screenshot:
 
 ![Script-Editor-first-script.jpg](/images/pages/Script-Editor-first-script.jpg "Script-Editor-first-script.jpg")
 
-[Category:News](Category_News "wikilink")
+

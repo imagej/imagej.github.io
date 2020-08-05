@@ -13,4 +13,4 @@ The MPI-CBG is also the place where the [Fiji](Fiji "wikilink") project was star
 
 ![cbgbuilding.jpg](/images/pages/Cbgbuilding.jpg "cbgbuilding.jpg")
 
-[Category:Location](Category_Location "wikilink")
+

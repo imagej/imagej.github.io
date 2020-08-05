@@ -178,4 +178,4 @@ While many Clusters may exist on a single root node, only one is "official." Thi
 
 An example may be found in {% include github repo='fiji ' path='src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Cluster\_SIFT.java ' label='Cluster\_SIFT ' %}. An example that demonstrates the breakage of deep equality may be found in {% include github repo='fiji ' path='src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Equality\_Example.java ' label='Equality\_Example ' %}
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:TrakEM2](Category_TrakEM2 "wikilink")
+ 

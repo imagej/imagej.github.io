@@ -55,4 +55,4 @@ Once all the tests pass, [Jenkins](Jenkins "wikilink") can run them automaticall
 </tbody>
 </table>
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

@@ -41,4 +41,4 @@ Web tools and {% include wikipedia title='Cloud computing' text='cloud computing
 
 We spent some time exploring how to integrate GPU processing with Java, with the ultimate goal of enabling use of multi-core OpenCL programs from ImageJ. At the moment, we have created a {% include github org='uw-loci ' repo='opencl-demo ' label='web-services-based OpenCL plugin ' %} that performs 3D iterative deconvolution.
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

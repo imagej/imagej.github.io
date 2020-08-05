@@ -53,4 +53,4 @@ If you use this program to generate a publication, please cite the following:
 
 \[1\] McRae TD, Oleksyn D, Miller J, Gao Y-R (2019) Robust blind spectral unmixing for fluorescence microscopy using unsupervised learning. PLoS ONE 14(12): e0225410. https://doi.org/10.1371/journal.pone.0225410
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Color processing](Category_Color_processing "wikilink") [Category:Colocalization](Category_Colocalization "wikilink")
+  

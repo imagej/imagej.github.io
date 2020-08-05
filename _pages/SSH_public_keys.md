@@ -40,4 +40,4 @@ With this, you can connect to the remote machine with
 
 See also [GitHub's documentation on SSH keys](http://help.github.com/win-set-up-git/).
 
-[Category:Git](Category_Git "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+ 

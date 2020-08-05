@@ -10,4 +10,4 @@ description: test description
 {% include component-stats content='sc.fiji:Thread\_Killer' %}{% include stub%}
 
 
-[Category:Plugins](Category_Plugins "wikilink")
+

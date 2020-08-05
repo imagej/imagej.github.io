@@ -182,4 +182,4 @@ The Angular Spectrum plugin can cache a lot of its processing to speed up the pr
 
 To create your own plugin type, you must implement `ReconstructionPlugin`. If you want the plugin to show up in the normal command, you must use the `@Plugin` annotation. If you do this, you must implement either `MainReconstructionPlugin` or `SubReconstructionPlugin`. The plugin interface has methods for all of the different parts of the reconstruction pipeline. Override whichever you wish, and your plugin will be executed along with all of the other plugins. For more information on how to make your own plugin, please consult the documentation on github.
 
-[Category:Plugins](Category_Plugins "wikilink")
+

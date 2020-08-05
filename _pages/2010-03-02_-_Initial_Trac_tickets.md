@@ -19,4 +19,4 @@ You can use the [roadmap view](http://trac.imagej.net/roadmap) to see milestone 
 
 Many of the tickets are quite high level at the moment, and will ultimately need to be broken down into more concrete tasks. But hopefully the tickets there now help to clarify the ImageJDev project's directions.
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

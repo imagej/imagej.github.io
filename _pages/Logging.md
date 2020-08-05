@@ -79,4 +79,4 @@ If you prefer environment variables, setting the `DEBUG` environment variable wi
 
 The `LogService` is accessible from a SciJava plugin in the same way as any other [service](Services "wikilink"): as a field annotated with `@Parameter`. See the [Writing plugins](Writing_plugins "wikilink") guide for details.
 
-[Category:Development](Category_Development "wikilink")
+

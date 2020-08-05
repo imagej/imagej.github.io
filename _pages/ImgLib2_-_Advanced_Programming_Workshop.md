@@ -26,4 +26,4 @@ Browse to the location of the unzipped directory. ![workshop-2012-import-2.png](
 
 Click "Finish". You're done.
 
-[Category:ImgLib](Category_ImgLib "wikilink")
+

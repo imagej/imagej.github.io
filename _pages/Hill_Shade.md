@@ -56,4 +56,4 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
   - Find out the elevation and azimuth of the Sun (or Moon) at any day/time for a given location: http://aa.usno.navy.mil/data/docs/AltAz.php
   - Get elevation maps for a given place at this website: http://srtm.csi.cgiar.org/SELECTION/inputCoord.asp
 
-[Category:Plugins](Category_Plugins "wikilink")
+

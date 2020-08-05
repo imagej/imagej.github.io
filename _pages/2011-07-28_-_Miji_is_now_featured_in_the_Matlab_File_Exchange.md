@@ -9,4 +9,4 @@ description: test description
 
 Thanks to the hard work of Jean-Yves Tinevez, [Miji](Miji "wikilink") -- our convenience script to make all of Fiji available for use from within [MATLAB](MATLAB "wikilink") -- is explained in the [[MATLAB](MATLAB "wikilink") File Exchange](http://www.mathworks.com/matlabcentral/fileexchange/32344-hardware-accelerated-3d-viewer-for-matlab).
 
-[Category:News](Category_News "wikilink")
+

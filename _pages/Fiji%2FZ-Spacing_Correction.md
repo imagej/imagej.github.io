@@ -42,4 +42,4 @@ Serial section Microscopy, using either optical or physical sectioning, is an es
   - Allow reordering  
     Specifies whether layers/ sections can change their relative order in the series.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:TrakEM2](Category_TrakEM2 "wikilink") [Category:Transform](Category_Transform "wikilink") [Category:Citable](Category_Citable "wikilink")
+   

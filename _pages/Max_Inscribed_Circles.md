@@ -81,4 +81,4 @@ to true if you want to fit circles in the current selection. If you'd like to us
 
 The accuracy is not perfect as we are using the distance map which has finite values. But for most practical purposes (Circles larger than 2 pixels in diameter), it should be sufficient.
 
-[Category:Plugins](Category_Plugins "wikilink")
+

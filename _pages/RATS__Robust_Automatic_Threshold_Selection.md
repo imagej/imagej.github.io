@@ -57,4 +57,4 @@ The plugin is recordable and can be called from a macro ....
 
 `run("RATS ", "noise=25 lambda=3 min=81 verbose")`
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+  

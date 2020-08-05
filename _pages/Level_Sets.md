@@ -191,4 +191,4 @@ The value here is used as criterion for converging. If the changes in the contou
 
 As described in the tutorial, this setting determines if the contour will evolve to the inside of the selection or the outside.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+ 

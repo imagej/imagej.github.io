@@ -62,4 +62,4 @@ The CHAINED code is [here](https://github.com/uw-loci/deep-zoom-plugin/tree/mast
 
 (Currently both SINGLEINSTANCE and MULTIINSTANCE versions pop up the browser window before the file/folder structure is completely written.  So to actually view the image in the browser you have to wait and refresh.)
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Unmaintained](Category_Unmaintained "wikilink")
+ 

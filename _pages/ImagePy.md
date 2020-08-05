@@ -25,4 +25,4 @@ description: test description
 
   - {% include publication content='ImagePy' %}
 
-[Category:Related Software](Category_Related_Software "wikilink") [Category:Citable](Category_Citable "wikilink")
+ 

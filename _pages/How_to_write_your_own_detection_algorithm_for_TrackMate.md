@@ -555,7 +555,7 @@ Here is what our dummy example looks. To maximize your user experience, I let it
 
 <references/>
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+
 
 1.  The reason behind this is that TrackMate wants to break free of the source data. Keeping all the coordinates in physical units allow exchanging results without having to keep a reference to the original image.
 2.  Careful, this will not be mandatory in TrackMate v2.3.0

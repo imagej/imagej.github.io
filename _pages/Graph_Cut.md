@@ -47,4 +47,4 @@ Finally, we merge the original image and the segmentation for illustration purpo
 
 ![200px](/images/pages/Mito-comp.png "200px")
 
-[Category:Segmentation](Category_Segmentation "wikilink") [Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+  

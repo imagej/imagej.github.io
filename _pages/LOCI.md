@@ -46,4 +46,4 @@ LOCI is a founding member of the [SciJava](SciJava "wikilink") collaboration, an
 
   - The [LOCI update site](User_LOCI "wikilink")
 
-[Category:Location](Category_Location "wikilink")
+

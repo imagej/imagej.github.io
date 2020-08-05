@@ -52,4 +52,4 @@ We are grateful to Jan Brocher and Masanari Takamiya for comments and bug report
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 05:03, 5 August 2013 (CDT)
 
-[Category:News](Category_News "wikilink")
+

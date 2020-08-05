@@ -52,4 +52,4 @@ Files may also be exported to many file types using {% include bc content='Plugi
 
 See the Export column of the [Bio-Formats list of supported formats](http://openmicroscopy.org/site/support/bio-formats5/supported-formats.html) for an up-to-date list of formats which can be exported.
 
-[Category:Cookbook](Category_Cookbook "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+ 

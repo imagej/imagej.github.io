@@ -214,4 +214,4 @@ History of version available of SCF\_MPI\_CBG update site
       - the exported image name is also updated the reflect more faithfully the name of the input image
       - the threshold and seed slider are now linear: as a result the value displayed in the user interface is directly related to image intensity. which make parameter reading easier.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+ 

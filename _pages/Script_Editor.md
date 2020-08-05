@@ -9,4 +9,4 @@ description: test description
 
 1.  REDIRECT [Using\_the\_Script\_Editor](Using_the_Script_Editor "wikilink")
 
-[Category:Scripting](Category_Scripting "wikilink")
+

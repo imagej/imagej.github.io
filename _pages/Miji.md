@@ -104,4 +104,4 @@ Miji(false);
 
 A related project is [MatlabControl](http://code.google.com/p/matlabcontrol/) which allows you to start [MATLAB](MATLAB "wikilink") conveniently from within Java.
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Matlab](Category_Matlab "wikilink")
+ 

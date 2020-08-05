@@ -2034,4 +2034,4 @@ Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just
   - Albert Cardona's crash course in [Jython scripting with Fiji](http://www.ini.uzh.ch/~acardona/fiji-tutorial/index.html).
   - Jython for [TrakEM2 Scripting](TrakEM2_Scripting "wikilink").
 
-[Category:Scripting](Category_Scripting "wikilink") [Category:Jython](Category_Jython "wikilink")
+ 

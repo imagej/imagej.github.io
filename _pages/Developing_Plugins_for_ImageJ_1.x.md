@@ -429,4 +429,4 @@ See guides on:
   - [Debugging practice](Debugging_Exercises "wikilink")
   - [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet "wikilink")
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Development](Category_Development "wikilink")
+ 

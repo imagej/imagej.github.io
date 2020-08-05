@@ -61,4 +61,4 @@ Restart ImageJ as instructed to finish the install. Check to see that the plugin
 
 ...and that's all there is to it.
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

@@ -138,4 +138,4 @@ These are the tools that should allow you to work very quickly. For fun: redo th
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 10:54, 5 August 2013 (CDT)
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

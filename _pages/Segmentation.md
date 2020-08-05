@@ -131,4 +131,4 @@ Do some numerical analysis on the selected data:
   - The [Segmentation with Fiji workshop slides](http://imagej.github.io/presentations/fiji-segmentation/).
   - [:Category:Segmentation](_Category_Segmentation "wikilink"), a list of pages about image segmentation.
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+ 

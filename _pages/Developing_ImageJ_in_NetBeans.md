@@ -75,4 +75,4 @@ To expand the projects you can also right click on the top-level "ImageJ Project
   - {% include github org='imagej ' repo='example-legacy-plugin ' label='example-legacy-plugin ' %} project template
   - [Developing Plugins for ImageJ 1.x](Developing_Plugins_for_ImageJ_1.x "wikilink") tutorial
 
-[Category:Development](Category_Development "wikilink") [Category:IDEs](Category_IDEs "wikilink")
+ 

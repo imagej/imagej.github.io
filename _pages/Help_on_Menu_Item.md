@@ -13,4 +13,4 @@ The convenient command {% include bc content='Help | Help on Menu Item'%} allows
 
 The mouse cursor will change to an arrow with a question mark and the next menu item on which you click will not execute that command but open the page on this Wiki that corresponds to the selected command.
 
-[Category:Help](Category_Help "wikilink")
+

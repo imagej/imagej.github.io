@@ -1671,4 +1671,4 @@ user=> sa
 (.show (ij.ImagePlus. "nile bend" img))
 ```
 
-[Category:Scripting](Category_Scripting "wikilink")
+

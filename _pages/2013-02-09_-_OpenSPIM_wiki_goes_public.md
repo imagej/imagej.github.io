@@ -28,4 +28,4 @@ The motto of OpenSPIM is best summarized by this statement crafted by Pavel Toma
 `that the benefits brought to science by the Open Source approach`  
 `apply equally well to hardware.`
 
-[Category:News](Category_News "wikilink")
+

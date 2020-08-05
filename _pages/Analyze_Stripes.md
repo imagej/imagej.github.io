@@ -23,4 +23,4 @@ Complete documentation may be found at the [Analyze\_Stripes website](http://ima
 
 v2.6 fixes a new issue with the roiManager("Combine") function.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Analysis](Category_Analysis "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+  

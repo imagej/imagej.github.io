@@ -59,4 +59,4 @@ The following pages are tutorials that will guide you through MaMuT and walk you
 
 ## Developer documentation.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Citable](Category_Citable "wikilink")
+ 

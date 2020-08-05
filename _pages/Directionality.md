@@ -270,4 +270,4 @@ Possible way for further developments:
 
 A discussion with A. Leroy and another one with J. Schindelin are greatly acknowledged.
 
-[Category:Analysis](Category_Analysis "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

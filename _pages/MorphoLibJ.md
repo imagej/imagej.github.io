@@ -721,7 +721,7 @@ This program is **free software**; you can redistribute it and/or modify it unde
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Analysis](Category_Analysis "wikilink") [Category:Filtering](Category_Filtering "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Mathematical\_morphology](Category_Mathematical_morphology "wikilink") [Category:Citable](Category_Citable "wikilink")
+     
 
 1.  
 2.  {% include cite content='journal' title='Directional morphological filtering ' author='Soille, Pierre and Talbot, Hugues ' publisher='IEEE ' year='2001 ' volume='23 ' number='11 ' pages='1313-1329 ' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence ' doi='10.1109/34.969120 ' %}

@@ -31,4 +31,4 @@ This voxelization procedures creates an image that represents the \*surface\* of
 
 If a filled volume is desired, then take a watertight image (see above) and use the Flood Fill (3D) utility available within [Fiji](Fiji "wikilink") under the {% include bc content='Plugins|Process|Flood Fill (3D)'%}.
 
-[Category:Techniques](Category_Techniques "wikilink")
+

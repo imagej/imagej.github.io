@@ -17,4 +17,4 @@ Hence, rather than using the MBF ImageJ plugins, we encourage users to peruse th
 
   - Collins, T. J. (2007). [ImageJ for microscopy](https://medicine.osu.edu/neuroscience/Documents/Biotechniques%20ImageJ%20overview%202013.pdf). Biotechniques, 43(1 Suppl), 25-30.
 
-[Category:Related Software](Category_Related_Software "wikilink") [Category:Citable](Category_Citable "wikilink")
+ 

@@ -25,4 +25,4 @@ Here's how the results look like when applied to the *Clown* sample image:
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | {% include thumbnail src='/images/pages/Simulate Color Blindness Results.png' title='Simulate Color Blindness: overview of the nine different modes.'%} |
 
-[Category:Fiji](Category_Fiji "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Color processing](Category_Color_processing "wikilink")
+  

@@ -37,4 +37,4 @@ When using FigureJ for a research article, you can cite the following [article f
 
   - {% include publication content='FigureJ' %}
 
-[Category:Citable](Category_Citable "wikilink")
+

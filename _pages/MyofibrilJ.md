@@ -66,4 +66,4 @@ The easiest way to install *MyofibrilJ* is by [adding](Following_an_update_site#
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[Category:Scripting](Category_Scripting "wikilink") [Category:Analysis](Category_Analysis "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+  

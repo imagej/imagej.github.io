@@ -19,4 +19,4 @@ A VCell plugin for ImageJ is currently in the works\! Stay tuned\!
 
   - {% include publication content='VCell' %}
 
-[Category:Related Software](Category_Related_Software "wikilink") [Category:SciJava](Category_SciJava "wikilink") [Category:Citable](Category_Citable "wikilink")
+  

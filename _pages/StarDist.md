@@ -100,6 +100,6 @@ Please cite the paper if you are using the plugin in your research:
 
 ## References
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Deep Learning](Category_Deep_Learning "wikilink")
+  
 
 1.  Carpenter et al., Genome Biology, 2006

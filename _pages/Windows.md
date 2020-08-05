@@ -38,4 +38,4 @@ If text and other UI elements appear tiny on your {% include wikipedia title='Hi
 
 See the [Frequently Asked Questions](Frequently_Asked_Questions "wikilink") page.
 
-[Category:Platforms](Category_Platforms "wikilink")
+

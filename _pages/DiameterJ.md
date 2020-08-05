@@ -356,7 +356,7 @@ Help is welcome in any/all of these improvements\!
   - [OrientationJ](http://bigwww.epfl.ch/demo/orientation/)
   - [NIST](http://www.nist.gov/)
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Analysis](Category_Analysis "wikilink")
+ 
 
 1.  Hotaling NA, Bharti K, Kriel H, Simon Jr. CG. DiameterJ: A validated open source nanofiber diameter measurement tool. Biomaterials 2015;61:327–38. <doi:10.1016/j.biomaterials.2015.05.015> http://www.sciencedirect.com/science/article/pii/S0142961215004652
 

@@ -203,4 +203,4 @@ This example starts a new thread (make sure to implement the *run()* method but 
 
 It also registers itself as a key listener so it can stop the process when the user hits the Escape key when the main window is in focus.
 
-[Category:Scripting](Category_Scripting "wikilink")
+

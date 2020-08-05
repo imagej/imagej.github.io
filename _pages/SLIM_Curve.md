@@ -405,4 +405,4 @@ The result of the SLIM Curve plugin compares reasonably with standard lifetime a
 
 If you have questions, please ask on the [Image.sc Forum](https://forum.image.sc/) with the [`slim-curve` tag](https://forum.image.sc/tags/slim-curve).
 
-[Category:Plugins](Category_Plugins "wikilink")
+

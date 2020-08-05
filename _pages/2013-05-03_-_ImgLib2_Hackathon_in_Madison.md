@@ -97,4 +97,4 @@ These changes don't immediately allow for opening large single planes in IJ2—j
 
 See the [thread on imagej-devel](https://imagej.net/pipermail/imagej-devel/2013-May/001488.html).
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Hackathons](Category_Hackathons "wikilink")
+  

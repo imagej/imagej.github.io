@@ -157,7 +157,7 @@ With this strategy, [MATLAB](MATLAB "wikilink") steps aside a bit, since we use 
 
 <references/>
 
-[Category:ImgLib](Category_ImgLib "wikilink") [Category:Matlab](Category_Matlab "wikilink")
+ 
 
 1.  Check [here](http://darksleep.com/player/JavaAndUnsignedTypes.html) for the details of unsigned types story.
 2.  For C++, you can write a Mex wrapper that will force [MATLAB](MATLAB "wikilink") to operate on the reference of an array.

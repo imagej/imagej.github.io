@@ -114,4 +114,4 @@ ImageJ2 (and therefore Fiji) looks for scripts in subfolders of `./scripts/` as 
 
 See the [Scripting Headless](Scripting_Headless "wikilink") page for instructions on executing scripts headlessly.
 
-[Category:Scripting](Category_Scripting "wikilink")
+

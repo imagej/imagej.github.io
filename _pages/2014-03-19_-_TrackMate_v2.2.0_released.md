@@ -114,4 +114,4 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 05:32, 19 March 2014 (CDT)
 
-[Category:News](Category_News "wikilink")
+

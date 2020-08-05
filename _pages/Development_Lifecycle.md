@@ -163,4 +163,4 @@ See the [documentation on update sites](Update_Sites "wikilink") for further ins
 
   - The SciJava [versioning guidelines](Architecture#Versioning "wikilink") will help you choose appropriate version numbers for your software when performing Maven releases.
 
-[Category:Development](Category_Development "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+ 

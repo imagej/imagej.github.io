@@ -17,4 +17,4 @@ This plugin allows you to perform several differentiation operations on images, 
 
 The plugin is described in detail on the [BIG website](http://bigwww.epfl.ch/thevenaz/differentials/).
 
-[Category:Plugins](Category_Plugins "wikilink")
+

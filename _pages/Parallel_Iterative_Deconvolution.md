@@ -215,4 +215,4 @@ Enter 20 in the Max number of iterations text field and click on the Deconvolve 
       - Refactoring and cosmetic changes.
       - The plugin is updated to use Parallel Colt 0.7.2.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Deconvolution](Category_Deconvolution "wikilink")
+ 

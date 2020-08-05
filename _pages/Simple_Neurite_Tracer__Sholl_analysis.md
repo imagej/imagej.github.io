@@ -56,4 +56,4 @@ Another option that might be useful is *Make Sholl image*, equivalent to the [In
 
 If you go back to the main tracer interface, keeping that *Sholl image stack* open, you can visualize those colours on the traces by switching the *Use colors / labels from* option to *Sholl analysis of all paths* (volume of original image made transparent for clarity): ![](Simple_Neurite_Tracer-_Sholl_analysis-13.jpg)
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

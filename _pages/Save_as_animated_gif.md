@@ -25,4 +25,4 @@ Done\!
 
 or use Ctrl+Shift+F.
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

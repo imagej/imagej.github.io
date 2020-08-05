@@ -36,4 +36,4 @@ To get more pleasing results, you can increase the number of samples (i.e., the 
 
 Open the image you would like to denoise and start the plugin. Try the default settings first and click "Denoise". After some seconds, the denoised image will pop up. You can change the settings and retry - the denoised image will get updated.
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

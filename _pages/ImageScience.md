@@ -39,4 +39,4 @@ Some files should appear on the list with *Status/Action* of *Update it*.
   - Click *Apply changes*
   - Restart ImageJ
 
-[Category:Libraries](Category_Libraries "wikilink") [Category:ImageScience](Category_ImageScience "wikilink")
+ 

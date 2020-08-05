@@ -244,7 +244,7 @@ We want to thank [Carl Zeiss Microimaging](http://www.zeiss.de/micro) for access
 
 <references />
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink")
+ 
 
 1.  {% include cite content='journal' author='J. Huisken and J. Swoger and F. D. Bene and J. Wittbrodt and E. H. K. Stelzer ' title='Optical Sectioning Deep Inside Live Embryos by Selective Plane Illumination Microscopy ' journal='Science ' volume='305 ' number='5686 ' pages='1007 1010 ' year='2004 ' %}
 

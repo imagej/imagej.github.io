@@ -21,4 +21,4 @@ Hope you like it\!
 
 ![TrackMate\_Split\_Merge\_Gapclosing.gif](/images/pages/TrackMate Split Merge Gapclosing.gif "TrackMate_Split_Merge_Gapclosing.gif")
 
-[Category:News](Category_News "wikilink")
+

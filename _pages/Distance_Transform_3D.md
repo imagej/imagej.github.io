@@ -15,6 +15,6 @@ Computes the 3D discrete (values 0 to 255) distance transform, distance is dista
 
 <references />
 
-[Category:Binary](Category_Binary "wikilink") [Category:Unmaintained](Category_Unmaintained "wikilink")
+ 
 
 1.  [Gunilla Borgefors: On Digital Distance Transforms in Three Dimensions (1996)](http://dx.doi.org/10.1006/cviu.1996.0065)

@@ -200,4 +200,4 @@ Other available methods, such as Fay and Van Steensel, do the same thing but ran
 
 Again, as for the [Colocalization Threshold](Colocalization_Threshold "wikilink") plugin, using an ROI here may well make very good sense, as you are only interested in the correlation between the 2 colour channels in parts of the image where the biology you are interested in is located. Background its typically uninteresting, and you can exclude it from the analysis. Its probably sensible to to use the same ROI as you used in the [Colocalization Threshold](Colocalization_Threshold "wikilink") plugin\!
 
-[Category:Cookbook](Category_Cookbook "wikilink") [Category:Tutorials](Category_Tutorials "wikilink") [Category:Colocalization](Category_Colocalization "wikilink") [Category:Color processing](Category_Color_processing "wikilink")
+   

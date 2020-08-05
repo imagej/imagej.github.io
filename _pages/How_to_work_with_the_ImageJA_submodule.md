@@ -32,4 +32,4 @@ If you update the ImageJA submodule with *git submodule update modules/ImageJA* 
 `$ cd modules/ImageJA/`  
 `$ git checkout master && git pull`
 
-[Category:Git](Category_Git "wikilink")
+

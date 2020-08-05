@@ -11,4 +11,4 @@ ImageJX was created by Grant Harris as a means to discuss and explore improvemen
 
 The ImageJX software prototype was a proof of concept—an attempt to reorganize ImageJ's internals to make it more flexible. The prototype demonstrated this flexibility by recasting the program in Swing. The ImageJX project formed the basis of an application to NIH for funding, which is what launched the [ImageJ2](ImageJ2 "wikilink") project.
 
-[Category:Software](Category_Software "wikilink")
+

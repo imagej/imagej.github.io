@@ -30,4 +30,4 @@ Clicking on **Synchronize All** starts synchronizing all windows, clicking on **
 
 <img src="/images/pages/Sync Win.png" width="750"/>
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:User interface](Category_User_interface "wikilink")
+ 

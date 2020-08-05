@@ -33,4 +33,4 @@ The author of this plugin is {% include person content='Lindsey' %}
 
 -----
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:TrakEM2](Category_TrakEM2 "wikilink")
+ 

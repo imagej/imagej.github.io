@@ -23,4 +23,4 @@ description: test description
 
 RandomJ is available from the [ImageScience](ImageScience "wikilink") update site.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:ImageScience](Category_ImageScience "wikilink")
+ 

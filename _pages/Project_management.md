@@ -187,4 +187,4 @@ To this end, developers can now use [digital archives like Zenodo](https://guide
 
   - The [Releases](Releases "wikilink") page, for more about how these resources are used to release SciJava software artifacts.
 
-[Category:Development](Category_Development "wikilink")
+

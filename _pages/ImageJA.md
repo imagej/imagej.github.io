@@ -60,4 +60,4 @@ ImageJA was originally [launched in 2005](https://list.nih.gov/cgi-bin/wa.exe?A2
 
 However, these days, needed changes to ImageJ 1.x are instead patched at runtime; see the [Compatibility](Compatibility "wikilink") page for details.
 
-[Category:Software](Category_Software "wikilink")
+

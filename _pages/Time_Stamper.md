@@ -40,4 +40,4 @@ Options:
 
 ![Time\_Stamper\_Result.png](/images/pages/Time Stamper Result.png "Time_Stamper_Result.png")
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Image annotation](Category_Image_annotation "wikilink")
+ 

@@ -98,4 +98,4 @@ SNT is currently distributed through the [Neuroanatomy](Neuroanatomy "wikilink")
 {% include sntnavbar%}
 
 
-[Category:Citable](Category_Citable "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink") [Category:SNT](Category_SNT "wikilink")
+    

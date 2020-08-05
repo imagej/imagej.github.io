@@ -23,6 +23,6 @@ The algorithm is described in X. Xiao, V. F. Geyer, H. Bowne-Anderson, J. Howard
 
 <references />
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+ 
 
 1.  X. Xiao, V. F. Geyer, H. Bowne-Anderson, J. Howard, and I. F. Sbalzarini. [Automatic optimal filament segmentation with sub-pixel accuracy using generalized linear models and B-spline level-sets.](http://mosaic.mpi-cbg.de/docs/Xiao2016.pdf) Med. Image Anal., 32:157–172, 2016

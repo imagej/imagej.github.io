@@ -249,4 +249,4 @@ http://sites.imagej.net/ResultsToExcel
   - Press 'Apply changes'
   - After the update has been applied successfully, restart ImageJ
 
-[Category:Plugins](Category_Plugins "wikilink")
+

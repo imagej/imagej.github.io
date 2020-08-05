@@ -15,4 +15,4 @@ If you have any questions or comments, please let us know [via the forum](http:/
 
 Thank you.
 
-[Category:News](Category_News "wikilink")
+

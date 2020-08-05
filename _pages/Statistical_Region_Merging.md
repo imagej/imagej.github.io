@@ -29,6 +29,6 @@ This is a result for a low value of *Q*:
 
 <references />
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+  
 
 1.  {% include cite content='journal' author='R. Nock, F. Nielsen ' title='Statistical Region Merging ' journal='IEEE Trans. Pattern Anal. Mach. Intell. ' volume='26 ' number='11 ' pages='1452-1458 ' year='2004 ' %}

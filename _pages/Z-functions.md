@@ -231,4 +231,4 @@ Surface rendered anaglyph movies can be constructed using VolumeJ following an a
 5.  Merge the stacks using the menu command *"Image/Color/RGB merge"*.
 6.  Assign the duplicate stack as red and the original stack as green. For Red-Green anaglyphs, set blue to be none. For red-cyan anaglyphs, set the blue channel to be the same as green.
 
-[Category:Cookbook](Category_Cookbook "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+ 

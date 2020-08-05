@@ -454,4 +454,4 @@ BAR scripts can be cited using the DOI associated with the repository:
 
 These scripts are free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[Category:Analysis](Category_Analysis "wikilink") [Category:Citable](Category_Citable "wikilink") [Category:Filtering](Category_Filtering "wikilink") [Category:Image annotation](Category_Image_annotation "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Scripting](Category_Scripting "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+      

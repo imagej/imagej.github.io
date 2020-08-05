@@ -555,4 +555,4 @@ There is NO WARRANTY of functionality for those macros.
 
 In no event neither {% include person content='BioVoxxel' %} nor BioVoxxel shall be liable to any party for direct, indirect, special, incidental, or consequential damages or data loss of any kind arising out of the use of this software and its documentation, even if advised of the possibility thereof.
 
-[Category: Particle analysis](Category__Particle_analysis "wikilink")
+

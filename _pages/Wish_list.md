@@ -32,4 +32,4 @@ You can also browse the [open issues on GitHub](https://github.com/search?q=is%3
 
   - Headless ROI manager – see {% include github org='imagej ' repo='imagej-legacy ' issue='153 ' label='imagej/imagej-legacy\#153 ' %}
 
-[Category:Development](Category_Development "wikilink")
+

@@ -66,4 +66,4 @@ A plugin typically instantiates *ij.gui.GenericDialog* in its *run()* method. Th
 
 *Fiji note:* we have a workaround, where we have *alternative* implementations of some classes, which no longer extend AWT classes. These implementations live in *misc/headless.jar*, and are prepended to the class path when Fiji was called in headless mode, so that those implementations are found before ImageJ's. The downside is that plugins relying on the AWT classes being base classes will stop working, but at least some plugins run that way even without a graphical user interface.
 
-[Category:Development](Category_Development "wikilink")
+

@@ -25,4 +25,4 @@ From the website:
 
 If the number of pixels in this range is too low (less than "Minimum Pixel Fraction"), averaging over all neighboring pixels is performed. With the "Outlier Aware" option, averaging over all neighboring pixels excludes the center pixel. Thus, outliers having a value very different from the surrounding are not included in the average and, thus, completely eliminated."
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Filtering](Category_Filtering "wikilink")
+ 

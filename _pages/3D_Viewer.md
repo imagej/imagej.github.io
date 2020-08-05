@@ -79,4 +79,4 @@ As with 3D Viewer crashes, there are quite a large number of possible reasons. P
 
   - {% include publication content='3D Viewer' %}
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Visualization](Category_Visualization "wikilink") [Category:Citable](Category_Citable "wikilink")
+  

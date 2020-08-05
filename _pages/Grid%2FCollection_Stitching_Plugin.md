@@ -70,4 +70,4 @@ Even using virtual memory with maximum memory allocation can still be too much f
 
 Please see the [Image Stitching](Image_Stitching "wikilink") page for other precautions.
 
-[Category:Registration](Category_Registration "wikilink") [Category:Stitching](Category_Stitching "wikilink")
+ 

@@ -67,4 +67,4 @@ More examples can be found on https://bene51.github.io/3Dscript/gallery.html.
 
 A full manual as [PDF](https://bene51.github.io/3Dscript/Manual.pdf).
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Visualization](Category_Visualization "wikilink") [Category:Citable](Category_Citable "wikilink")
+  

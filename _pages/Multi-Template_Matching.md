@@ -46,4 +46,4 @@ BMC Bioinformatics 21, 44 (2020). https://doi.org/10.1186/s12859-020-3363-7
 
 Check our serie of [video tutorials](https://www.youtube.com/watch?v=KlzIqSG5XBU&list=PLHZOgc1s26MJ8QjYau7NcG5k0zh9SjHpo)\!
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Citable](Category_Citable "wikilink") [Category:Feature Extraction](Category_Feature_Extraction "wikilink") [Category:Jython](Category_Jython "wikilink") [Category:Object Detection](Category_Object_Detection "wikilink")
+    

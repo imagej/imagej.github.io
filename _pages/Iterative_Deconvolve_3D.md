@@ -35,4 +35,4 @@ The plugin was also the subject of a conference paper: {% include citation last=
   - Version 5.1 6/3/2005. Improved test for 0 gamma (no Wiener filter). Renamed low pass fiter parameter for z in dialog.
   - Version 5.2 6/4/2005. Changed the recommended low pass filter settings from 4 to 1 pixels.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Deconvolution](Category_Deconvolution "wikilink")
+ 

@@ -19,4 +19,4 @@ The plugin requires a 8-bit image to process. It outputs directly the thresholde
 
 It processes stacks correctly, by operating on the whole stack histogram to determine the threshold. A new, thresholded stack replace the original one.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+ 

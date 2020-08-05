@@ -17,4 +17,4 @@ If that does not work, please delete the files *ij-ui-swing-updater-2.0.0-SNAPSH
 If that still fails, please download a fresh copy from here: {% include downloadfiji%}
 
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

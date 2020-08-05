@@ -37,4 +37,4 @@ There is an example for ToAST in Fiji: {% include bc content='File | Open Sample
 
   - Automated classification of *Plasmodium* sporozoite movement patterns reveals a shift towards productive motility during salivary gland infection, Hegge S, Kudryashev M, Smith A, Frischknecht F, *Biotechnology Journal* , 2009, 4, 6 pp: 903-913
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Tracking](Category_Tracking "wikilink") [Category:Citable](Category_Citable "wikilink")
+  

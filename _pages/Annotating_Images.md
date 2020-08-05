@@ -116,4 +116,4 @@ The *Event Stamper* plugin can be used to add text to a movie for a designated n
 
 The [Series Labeler](Series_Labeler "wikilink") plugin, allows quite flexible text labeling for movies and z stacks, with preview functionality, so you can see what you are going to get.
 
-[Category:Cookbook](Category_Cookbook "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+ 

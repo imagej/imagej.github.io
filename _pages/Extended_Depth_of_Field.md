@@ -19,4 +19,4 @@ This plugin provides an extended depth of field algorithm to obtain in focus mic
 
 For details, please refer to the [home page of the plugin](http://bigwww.epfl.ch/demo/edf/).
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

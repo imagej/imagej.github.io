@@ -56,4 +56,4 @@ These macros were written by Alexander Dobens with feedback and direction from L
 
 Many thanks to all of those authors for releasing their code under the GPL.
 
-[Category:Citable](Category_Citable "wikilink")
+

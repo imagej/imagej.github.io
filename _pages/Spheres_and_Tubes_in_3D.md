@@ -13,4 +13,4 @@ An example ImageJ plugin illustrating how to create and display 3D tubes and 3D 
 | --------------------------------------------------------------------------------------------------------------------------- |
 | {% include thumbnail src='/images/pages/Spheres and tubes 3D.jpg' title='Example of tubes, spheres and discs in 3D.'%} |
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Unmaintained](Category_Unmaintained "wikilink")
+ 

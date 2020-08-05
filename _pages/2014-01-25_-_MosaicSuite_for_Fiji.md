@@ -29,4 +29,4 @@ The plugins are available in Fiji through a dedicated {% include list-of-update-
 
 We are looking forward to more contributions from the MOSAIC group in the future.
 
-[Category:News](Category_News "wikilink")
+

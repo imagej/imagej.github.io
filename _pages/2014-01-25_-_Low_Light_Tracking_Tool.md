@@ -17,4 +17,4 @@ As usual it is available through its own {% include list-of-update-sites content
 
 Thanks to Alex for this great work and Iva for being such a steadfast supporter of Fiji.
 
-[Category:News](Category_News "wikilink")
+

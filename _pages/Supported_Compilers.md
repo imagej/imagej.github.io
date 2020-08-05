@@ -10,4 +10,4 @@ description: test description
 {% include fijimenu%}
 All components of the Fiji project are built using OpenJDK 8.
 
-[Category:Development](Category_Development "wikilink") [Category:Fiji](Category_Fiji "wikilink")
+ 

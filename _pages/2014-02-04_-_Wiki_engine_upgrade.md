@@ -11,4 +11,4 @@ The Wiki engine was upgraded and the [VisualEditor](https://www.mediawiki.org/wi
 
 Enjoy\!
 
-[Category:News](Category_News "wikilink")
+

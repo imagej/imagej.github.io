@@ -108,4 +108,4 @@ This page summarizes translation of basic operations of ImageJ1 and ImageJ2 API.
 
 https://github.com/mpicbg-scicomp/ij2course-images/blob/master/slides/ij_legacy_cheetsheet.pdf
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Development](Category_Development "wikilink")
+ 

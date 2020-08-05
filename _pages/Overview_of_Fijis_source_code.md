@@ -53,4 +53,4 @@ Quite a few tasks -- such as committing a new submodule or sources for a plugin,
 
 Some of these scripts are shell scripts, others are Jython scripts with special {% include wikipedia title='Shebang (Unix)' text='shebang'%} lines which trigger them to be called with the current Fiji launcher.
 
-[Category:Development](Category_Development "wikilink")
+

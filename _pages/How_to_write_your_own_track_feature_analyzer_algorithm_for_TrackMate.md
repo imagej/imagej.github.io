@@ -237,4 +237,4 @@ Disabled modules are not even instantiated. They are as good as dead, except tha
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 14:23, 11 March 2014 (CDT)
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

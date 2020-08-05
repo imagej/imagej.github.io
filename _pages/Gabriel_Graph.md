@@ -61,4 +61,4 @@ ResultsTable results = GabrielGraph.getGabrielGraph(final ImagePlus imp, final b
 
 It makes little sense not to use parallel processing, the only issue might be that the order of the points will be different on multiple runs, as this will depend on how Java will manage the threads.
 
-[Category:Plugins](Category_Plugins "wikilink")
+

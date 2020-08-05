@@ -23,4 +23,4 @@ The two images composed are shown below:
 
 ![The original banana and the straightened version](/images/pages/Tutorial-bananas-result.jpg "The original banana and the straightened version")
 
-[Category:Plugins](Category_Plugins "wikilink")
+

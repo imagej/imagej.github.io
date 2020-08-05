@@ -13,4 +13,4 @@ description: test description
 
 This plugin separately measures the red, green and blue channels of an RGB image between user-definable threshold levels per channel. The aforementioned thresholds can be set using the [Threshold Colour](Threshold_Colour "wikilink") plugin.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Color processing](Category_Color_processing "wikilink")
+ 

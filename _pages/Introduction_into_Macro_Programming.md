@@ -718,4 +718,4 @@ before the `exec` call. (since ImageJ 1.52u38)
 
 A complete description of the macro language, a reference of the built-in functions, and examples can be found [here](https://imagej.net/developer/index.html).
 
-[Category:Scripting](Category_Scripting "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+ 

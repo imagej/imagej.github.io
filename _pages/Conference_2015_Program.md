@@ -436,4 +436,4 @@ The Biomedical Imaging Group (BIG) is part of the Dept. of Computer Sciences at 
 
 \[ [Poster](https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/poster.pdf) \]
 
-[Category:Conference](Category_Conference "wikilink")
+

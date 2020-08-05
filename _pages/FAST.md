@@ -89,4 +89,4 @@ This program is free software; you can redistribute it and/or modify it under th
 
 This program has been developed within the framework of the [OECD Work plan for the Test Guidelines Programme (TGP)](http://www.oecd.org/chemicalsafety/testing/oecd-guidelines-testing-chemicals-related-documents.htm) - Project 2.46: New Test Guideline for the Detection of Endocrine Active Substances, acting through estrogen receptors using transgenic cyp 19a1b-GFP Zebrafish Embryos (EASZY assay).
 
-[Category:Analysis‏‎](Category_Analysis‏‎ "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+ 

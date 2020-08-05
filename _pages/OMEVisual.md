@@ -55,4 +55,4 @@ Please note that :
 
 This work started in 2016 at the [Gary Brouhard laboratory](http://brouhardlab.mcgill.ca/) at the University of McGill.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:OME](Category_OME "wikilink")
+ 

@@ -9,4 +9,4 @@ description: test description
 
 We updated the default skin for [imagej.net](https://imagej.net/). In particular, this new skin ([Modern](http://www.mediawiki.org/wiki/Skin:Modern)) has a white background, which better matches the content of some pages—particularly those containing images with white backgrounds.
 
-[Category:News](Category_News "wikilink")
+

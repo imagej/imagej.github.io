@@ -15,4 +15,4 @@ The [SPIM Registration](SPIM_Registration "wikilink") plugin has been updated. T
   - By default, overriding of axial and lateral calibration is possible
   - Various transformation models are supported now: Translation, Rigid, Affine
 
-[Category:News](Category_News "wikilink")
+

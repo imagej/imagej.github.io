@@ -33,4 +33,4 @@ As a consequence of its generic aims, the library allows and requires a differen
 2.  [Fiji-devel mailing list](mailto:fiji@fiji.sc) discusses imglib development and questions
 3.  [More about ImgLib on the Fiji wiki](Imglib "wikilink")
 
-[Category:ImgLib](Category_ImgLib "wikilink")
+

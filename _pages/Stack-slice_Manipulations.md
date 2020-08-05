@@ -110,4 +110,4 @@ After
 
 ![after\_alignment.png](/images/pages/After alignment.png "after_alignment.png")
 
-[Category:Cookbook](Category_Cookbook "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+ 

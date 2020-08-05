@@ -17,4 +17,4 @@ This plugin implements a recursive prediction/correction algorithm which is base
 
 The [ImageJ website](https://imagej.net/plugins/kalman.html) offer a very complete documentation for its usage. Please refer to it.
 
-[Category:Filtering](Category_Filtering "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

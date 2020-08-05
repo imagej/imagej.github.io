@@ -626,4 +626,4 @@ This would be a possible output of the script with 3 clusters, 2000 samples and 
 
 The actual label values may vary between different executions of the same clustering due to its random seed initialization. In any case, the blood cells (originally in red), the cell nuclei (in blue-purple), other cell bodies (in pink) and the extracellular space get usually a very reasonable segmentation.
 
-[Category:Scripting](Category_Scripting "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Machine Learning](Category_Machine_Learning "wikilink")
+  

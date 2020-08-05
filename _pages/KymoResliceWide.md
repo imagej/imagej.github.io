@@ -52,4 +52,4 @@ version 0.5 (2017/04/01): hyperstacks reslice fixed (now time, not Z) and image 
 
 version 0.4 (2015/10/21): now it works with hyperstacks and RGB images.
 
-[Category:Stacks](Category_Stacks "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

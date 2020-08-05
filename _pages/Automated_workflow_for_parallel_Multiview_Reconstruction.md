@@ -638,4 +638,4 @@ Every cluster is different both in terms of the used hardware and the software r
 
 Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system running on the MPI-CBG cluster is LSF. The basic principles of job submission are the same across queuing systems, but the exact syntax will of course differ.
 
-[Category:Transform](Category_Transform "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:Deconvolution](Category_Deconvolution "wikilink")
+  

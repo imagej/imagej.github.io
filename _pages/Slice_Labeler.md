@@ -15,4 +15,4 @@ This plugin adds a label in the top-left corner of each slice of a stack or to t
 
 For Example, if we have a stack with 30 slices of MRI sections of a rat brain, running the plugin and introducing "Rat203-" as text, "1" as starting value, "1" as increment between slices and "2" as the number of digits, slices of the stack will be labeled as follows: "Rat203-01", "Rat203-02", "Rat203-03"..."Rat203-30".
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Image annotation](Category_Image_annotation "wikilink")
+ 

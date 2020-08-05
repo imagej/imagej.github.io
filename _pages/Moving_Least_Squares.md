@@ -45,6 +45,6 @@ And you get the result:
 
 <references />
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 
 
 1.  {% include cite content='journal' title='Image Deformation Using Moving Least Squares ' author='Schaefer S., McPhail T., Warrent J. ' journal='ACM Transactions on Graphics ' volume='25 ' issue='3 ' month='July ' year='2006 ' pages='533-540 ' %}

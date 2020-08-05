@@ -21,4 +21,4 @@ The Multiple Image Processor allows the researchers to work on large images with
 
 ![Multiple\_Image\_Processor.jpg](/images/pages/Multiple Image Processor.jpg "Multiple_Image_Processor.jpg")
 
-[Category:Plugins](Category_Plugins "wikilink")
+

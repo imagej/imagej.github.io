@@ -88,4 +88,4 @@ Removing a link often splits a track in 2 new tracks. To have them properly re-a
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 09:21, 5 August 2013 (CDT)
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

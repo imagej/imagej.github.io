@@ -62,4 +62,4 @@ Thomas, LS; Gehrig, J (2020)
 ImageJ/Fiji ROI 1-click tools for rapid manual image annotations and measurements  
 microPublication Biology. 10.17912/micropub.biology.000215
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Update Sites](Category_Update_Sites "wikilink") [Category:Macro Tools](Category_Macro_Tools "wikilink") [Category:Citable](Category_Citable "wikilink")
+   

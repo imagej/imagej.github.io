@@ -19,4 +19,4 @@ This plugin implements (differently) the same algorithm as the one built-in Imag
 
 The rolling-ball algorithm was inspired by Stanley Sternberg's article, "Biomedical Image Processing", IEEE Computer, January 1983.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Filtering](Category_Filtering "wikilink")
+ 

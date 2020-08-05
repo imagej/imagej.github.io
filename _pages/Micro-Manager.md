@@ -17,4 +17,4 @@ description: test description
 
   - {% include publication content='Micro-Manager' %}
 
-[Category:Related Software](Category_Related_Software "wikilink") [Category:Citable](Category_Citable "wikilink")
+ 

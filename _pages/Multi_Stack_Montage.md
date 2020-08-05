@@ -134,4 +134,4 @@ The Dialog is limited to 10 elements so as not to make a window potentially larg
 
 You do not need to enter "\*None\*" as the last stack.
 
-[Category:Plugins](Category_Plugins "wikilink")
+

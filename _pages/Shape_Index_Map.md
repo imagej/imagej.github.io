@@ -35,4 +35,4 @@ With radius 2, this results in the following shape index map (bright spots corre
 
 ![Shape\_Index-map.jpg](/images/pages/Shape Index-map.jpg "Shape_Index-map.jpg")
 
-[Category:Plugins](Category_Plugins "wikilink")
+

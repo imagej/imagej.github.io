@@ -25,4 +25,4 @@ The plugin can handle up to five-dimensional (5D) images of any type supported b
 
 MTrackJ is available from the [ImageScience](ImageScience "wikilink") update site.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Tracking](Category_Tracking "wikilink") [Category:ImageScience](Category_ImageScience "wikilink")
+  

@@ -17,4 +17,4 @@ For those who are interested in some trivia:
   - Only the main project is built (*fiji.git*; subprojects, such as [TrakEM2](TrakEM2 "wikilink") are not being rebuilt).
   - To ensure compatibility with [32-bit MacOSX](MacOSX_tips "wikilink"), we build against Java 5 (update 19, to be precise).
 
-[Category:News](Category_News "wikilink")
+

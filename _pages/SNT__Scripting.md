@@ -262,4 +262,4 @@ Some of SNT's functionality is accessible in the [Script Interpreter](Script_Int
 {% include sntnavbar%}
 
 
-[Category:SNT](Category_SNT "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink") [Category:Scripting](Category_Scripting "wikilink")
+  

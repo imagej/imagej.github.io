@@ -15,4 +15,4 @@ Furthermore, there are still [dozens of tickets](http://trac.imagej.net/query?mi
 
 We apologize to everyone for the delay, but hope that taking the needed time now will ultimately result in better software for many years to come.
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

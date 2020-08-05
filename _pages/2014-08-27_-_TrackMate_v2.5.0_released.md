@@ -41,6 +41,6 @@ A new action, called *Branch hierarchy analysis* features a branch-based analysi
 
 <references/>
 
-[Category:News](Category_News "wikilink")
+
 
 1.  [Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)

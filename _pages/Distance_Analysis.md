@@ -173,4 +173,4 @@ GPL distribution (see [3](http://www.cecill.info/index.en.html%7Clicence)). Sour
   - 24/02/2020 v.1.47: bug fixed with the shuffle in macro line
   - 28/04/2020 v1.48: add integrated density measure
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Analysis](Category_Analysis "wikilink") [Category:Colocalization‏‎](Category_Colocalization‏‎ "wikilink") [Category:Citable](Category_Citable "wikilink")
+   

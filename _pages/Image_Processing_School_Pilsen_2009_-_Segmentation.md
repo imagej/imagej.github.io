@@ -123,4 +123,4 @@ In order to have some fun, I recommend to use the head sample file from the File
 
 Hope you had fun\!
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+ 

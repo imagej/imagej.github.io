@@ -540,6 +540,8 @@ def convert(path_in, path_out, layout, title):
 
 
 def fix_link_match(match):
+    if match.group(1).startswith('[Category:'):
+        return ''
     return match.group(1) + match.group(2).replace(":", "_").replace("\'", "").replace("\"", "") + match.group(3)
 
 

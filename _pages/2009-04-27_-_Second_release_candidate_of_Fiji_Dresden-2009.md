@@ -29,4 +29,4 @@ This is the list of changes in addition to the changes in the first release cand
 
 We are really close now to a final release, with just a few changes pending. Stay tuned\!
 
-[Category:News](Category_News "wikilink")
+

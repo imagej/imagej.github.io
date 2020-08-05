@@ -11,4 +11,4 @@ The [Center for Systems Biology Dresden (CSBD)](http://www.csbdresden.de) is an 
 
 ![csbdbuilding.jpg](/images/pages/Csbdbuilding.jpg "csbdbuilding.jpg")
 
-[Category:Location](Category_Location "wikilink")
+

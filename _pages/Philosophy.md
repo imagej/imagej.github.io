@@ -190,4 +190,4 @@ So the true reason why we use Java is probably: it makes [ImageJ](ImageJ "wikili
 
 See also [Isn't Java too slow?](http://loci.wisc.edu/faq/isnt-java-too-slow) and [Why is your software written in Java?](http://loci.wisc.edu/faq/why-java) from the LOCI FAQ.
 
-[Category:Development](Category_Development "wikilink")
+

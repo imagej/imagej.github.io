@@ -210,4 +210,4 @@ SciJava components use the [Semantic Versioning](Semantic_Versioning "wikilink")
 
 See the [Versioning](Versioning "wikilink") page for a detailed discussion of SciJava versioning.
 
-[Category:Development](Category_Development "wikilink")
+

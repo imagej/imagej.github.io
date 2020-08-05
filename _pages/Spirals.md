@@ -29,4 +29,4 @@ You cannot quantify color by eye. Nobody can. The only thing you can quantify by
 
 See also this wired article. http://www.wired.com/2015/02/science-one-agrees-color-dress/
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

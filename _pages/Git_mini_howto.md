@@ -153,4 +153,4 @@ When you are comfortable with the staged changes, just commit with
 
 Even more advanced Git usage involved [topic branches](Git_topic_branches "wikilink").
 
-[Category:Git](Category_Git "wikilink")
+

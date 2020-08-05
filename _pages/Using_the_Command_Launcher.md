@@ -21,4 +21,4 @@ If you want to know what menu the entries are in, or from which .jar files they 
 
 ![Snapshot\_of\_full\_info\_Command\_Launcher.png](/images/pages/Snapshot of full info Command Launcher.png "Snapshot_of_full_info_Command_Launcher.png")
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

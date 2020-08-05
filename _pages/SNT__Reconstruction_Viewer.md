@@ -287,4 +287,4 @@ A sub-menu with options for sensitivity of mouse and keyboard scene interaction.
 {% include sntnavbar%}
 
 
-[Category:SNT](Category_SNT "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink")
+ 

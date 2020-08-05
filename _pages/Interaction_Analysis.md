@@ -25,7 +25,7 @@ A. Shivanandan, A. Radenovic, and I. F. Sbalzarini. MosaicIA: an ImageJ/Fiji plu
 
 <references />
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Particle analysis](Category_Particle_analysis "wikilink") [Category:Colocalization](Category_Colocalization "wikilink")
+  
 
 1.  J. A. Helmuth, G. Paul, and I. F. Sbalzarini. [Beyond co-localization: inferring spatial interactions between sub-cellular structures from microscopy images](http://dx.doi.org/10.1186/1471-2105-14-349), BMC Bioinformatics., 11:372, 2010
 2.  A. Shivanandan, A. Radenovic, and I. F. Sbalzarini. [MosaicIA: an ImageJ/Fiji plugin for spatial pattern and interaction analysis](http://dx.doi.org/10.1186/1471-2105-11-372), BMC Bioinformatics., 14:349, 2013

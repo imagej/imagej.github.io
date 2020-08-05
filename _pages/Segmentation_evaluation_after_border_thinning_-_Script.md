@@ -130,4 +130,4 @@ After clicking OK the metrics will be applied and the results will be shown in t
 
   - Ignacio Arganda-Carreras, Srinivas C. Turaga, Daniel R. Berger, Dan Ciresan, Alessandro Giusti, Luca M. Gambardella, Jürgen Schmidhuber, Dmtry Laptev, Sarversh Dwivedi, Joachim M. Buhmann, Ting Liu, Mojtaba Seyedhosseini, Tolga Tasdizen, Lee Kamentsky, Radim Burget, Vaclav Uher, Xiao Tan, Chanming Sun, Tuan D. Pham, Eran Bas, Mustafa G. Uzunbas, Albert Cardona, Johannes Schindelin, and H. Sebastian Seung. [Crowdsourcing the creation of image segmentation algorithms for connectomics](http://journal.frontiersin.org/article/10.3389/fnana.2015.00142/abstract). Frontiers in Neuroanatomy, vol. 9, no. 142, 2015.
 
-[Category:Segmentation](Category_Segmentation "wikilink") [Category:Scripting](Category_Scripting "wikilink")
+ 

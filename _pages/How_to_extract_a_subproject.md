@@ -69,4 +69,4 @@ Assuming you are using [Maven](Maven "wikilink") to build the subproject:
 1.  Edit the relevant web page(s) to reflect the new Git repository location
 2.  Update any other known links to the project
 
-[Category:Development](Category_Development "wikilink")
+

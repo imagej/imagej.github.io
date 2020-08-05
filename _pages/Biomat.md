@@ -49,4 +49,4 @@ Example: [Image of capillaries in embryonic heart](https://imagej.net/_images/e/
 
 **2D Tensor Statistics** - summary of tensor image (in ROI). "Value" is average trace of the tensor, "shape" is the ratio of its eigenvalues and "angle" of the first eigenvector is measured counterclockwise from the horizontal axis.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Filtering](Category_Filtering "wikilink")
+ 

@@ -29,4 +29,4 @@ For a quick overview of keyboard shortcuts, please press the {% include key cont
 
 ![InteractiveStackRotation.jpg](/images/pages/InteractiveStackRotation.jpg "InteractiveStackRotation.jpg")
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Transform](Category_Transform "wikilink") [Category:Interactive](Category_Interactive "wikilink")
+  

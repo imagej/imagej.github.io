@@ -50,4 +50,4 @@ See the [FFMPEG supported codecs](https://www.ffmpeg.org/general.html#Video-Code
 
 You can use a video conversion tool such as [HandBrake](https://handbrake.fr/), [VLC](http://www.videolan.org/), [libav](https://libav.org/), [ffmpeg](https://ffmpeg.org/) or [VirtualDub](http://www.virtualdub.org/) to convert your MOV files into a different format which ImageJ is able to read more easily.
 
-[Category:Import-Export](Category_Import-Export "wikilink")
+

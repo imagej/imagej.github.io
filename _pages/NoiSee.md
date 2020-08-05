@@ -100,4 +100,4 @@ Please note that NoiSee is based on a publication. If you use it for related res
 
 *Alexia Ferrand, Kai D Schleicher, Nikolaus Ehrenfeuchter, Wolf Heusermann, Oliver Biehlmaier*: **Signal-to-Noise ratio made easy: A tool to assess your confocal performance** [bioRxiv 291500](https://doi.org/10.1101/291500).
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Citable](Category_Citable "wikilink")
+ 

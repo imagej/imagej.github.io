@@ -74,4 +74,4 @@ Please make sure that your .config file is designed such that the menus fit in s
 
 Then just "make", and the plugin will be automatically installed.
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

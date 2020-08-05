@@ -63,4 +63,4 @@ Here alternative user interface based git-related tools are listed.
 
 1.  [Source Tree](https://www.sourcetreeapp.com/)
 
-[Category:Git](Category_Git "wikilink")
+

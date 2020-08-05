@@ -394,4 +394,4 @@ Ostrava, Czech Republic</p></td>
 </tbody>
 </table>
 
-[Category:Hackathons](Category_Hackathons "wikilink")
+

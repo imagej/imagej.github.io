@@ -26,4 +26,4 @@ There are a few problem areas remaining before ImageJ will fully support multipl
 
 In particular, calling either of the above static methods from the EDT or other generic thread will fail, so the architecture must be structured to work properly without ever doing so. Unfortunately, there are currently many places where these methods (particularly the `Events` methods) are called in such a way. So for now, we have hardcoded `ImageJ.getContext()` to return `ImageJ.getContext(0)` by default, which effectively keeps ImageJ restricted to a singleton application. We will revisit this issue in the future, but for the time being there are more pressing matters ([\#632](http://trac.imagej.net/ticket/632), [\#694](http://trac.imagej.net/ticket/694), [\#660](http://trac.imagej.net/ticket/660), and [many more](http://trac.imagej.net/query?status=accepted&status=assigned&status=new&status=reopened&group=milestone&col=id&col=summary&col=type&col=priority&col=milestone&col=component&order=priority)).
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

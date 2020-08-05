@@ -94,4 +94,4 @@ From a segmented image of an Arabidospsi thaliana embryo of 122 cells (FigA), a 
 
 Download [.jar](https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar) and put into "plugin" directory of ImageJ or Fiji directory. Reload ImageJ/Fiji and TreeJ will be accessible in the {% include bc content='Plugin | TreeJ'%} menu.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Analysis](Category_Analysis "wikilink")
+ 

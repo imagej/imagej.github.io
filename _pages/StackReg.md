@@ -15,4 +15,4 @@ description: test description
 
 This plugin is described in detail on the [BIG website](http://bigwww.epfl.ch/thevenaz/stackreg/).
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Transform](Category_Transform "wikilink") [Category:Registration](Category_Registration "wikilink")
+  

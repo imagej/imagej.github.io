@@ -80,4 +80,4 @@ mvn -Dscijava.ui=awt -Pexec
 
   - [Dotfiles](Dotfiles "wikilink") if you want to twink out your shell
 
-[Category:Development](Category_Development "wikilink") [Category:IDEs](Category_IDEs "wikilink")
+ 

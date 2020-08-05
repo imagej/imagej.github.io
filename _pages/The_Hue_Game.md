@@ -23,4 +23,4 @@ The four grid lines of the game display evenly spaced color samples along the si
 
 To play with the script, hold down the {% include key content='Shift' %} key and then open the {% include bc content='Plugins | Examples'%} menu and click on *The Hue Game* (hold the {% include key content='Shift' %} key pressed down all while doing that). This will open the script in the [Script Editor](Script_Editor "wikilink"). Just change the numbers in the second-to-last line of the script (the *72* is the luminance, the next parameter is a list of the *a* coordinates of the quadrilateral, followed by the *b* coordinates). Then call the script with *Run\>Run*.
 
-[Category:Scripting](Category_Scripting "wikilink")
+

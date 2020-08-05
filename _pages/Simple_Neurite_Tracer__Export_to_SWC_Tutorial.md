@@ -58,4 +58,4 @@ Note: setting an SWC type for every point is **required** by some software, such
 
   - The root node in an exported SWC file will be the first point in the primary path of the group in Simple Neurite Tracer. So, if you care about this, then before saving you should pick the path in the group which starts with what you consider to be the root node, and click "Make Primary" in the Path Window before exporting.
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

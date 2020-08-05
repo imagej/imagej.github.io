@@ -15,4 +15,4 @@ new mpicbg.ij.integral.InteractiveTilt().run("");
 
 [File:Mpi-cbg.jpg|People](File_Mpi-cbg.jpg%7CPeople) sitting in the MPI-CBG cafeteria. [File:Street.jpg|A](File_Street.jpg%7CA) crossroad in NYC. [File:Dc.jpg|A](File_Dc.jpg%7CA) view over DC. [File:Car.jpg|Some](File_Car.jpg%7CSome) cars in front of a restaurant. [File:Traveler.jpg|A](File_Traveler.jpg%7CA) traveler in the mountains. [File:Wood.jpg|Landscape](File_Wood.jpg%7CLandscape).
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Filtering](Category_Filtering "wikilink") [Category:Interactive](Category_Interactive "wikilink") [Category:Integral Image](Category_Integral_Image "wikilink") [Category:Photography](Category_Photography "wikilink")
+    

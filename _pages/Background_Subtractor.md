@@ -17,4 +17,4 @@ description: test description
 
 Documentation is available as [pdf](http://mosaic.mpi-cbg.de/Downloads/BGS_manual.pdf)
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Filtering](Category_Filtering "wikilink")
+ 

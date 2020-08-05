@@ -298,4 +298,4 @@ public class LocalizableByDim_Cursors<T extends RealType<T>> implements PlugIn {
 
 ## Advanced dimension independent iterating
 
-[Category:ImgLib](Category_ImgLib "wikilink") [Category:Tutorials](Category_Tutorials "wikilink") [Category:Development](Category_Development "wikilink")
+  

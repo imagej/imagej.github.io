@@ -29,4 +29,4 @@ and the smoothed versions thereof:
 
 <img src="/images/pages/HelmholtzAnalysisAverageOutput.png" width="750"/>
 
-[Category:Plugins](Category_Plugins "wikilink")
+

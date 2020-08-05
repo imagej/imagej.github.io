@@ -125,4 +125,4 @@ Composite sinusoidal gradient image:
 
 And it looks très cool.
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Ops](Category_Ops "wikilink")
+  

@@ -11,4 +11,4 @@ We have implemented and released a new and advanced machine-learning-based segme
 
 The plugin is still experimental, but please, go ahead and use it. Any feedback is welcome\!
 
-[Category:News](Category_News "wikilink")
+

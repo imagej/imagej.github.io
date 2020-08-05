@@ -35,4 +35,4 @@ The data are provided here for the sole purpose of demonstrating the visualisati
 
 To view it in BigDataViewer, download [catmaid-abd1.5.xml](http://fly.mpi-cbg.de/~pietzsch/bdv-examples/catmaid-abd1.5.xml) and open with {% include bc content='Plugins | BigDataViewer | Open XML/HDF5'%} from the Fiji menu.
 
-[Category:Example Data](Category_Example_Data "wikilink")
+

@@ -13,4 +13,4 @@ Analyze\_Stripes is a Fiji (or ImageJ) macro designed to automatically measure t
 
 Check out its [Fiji page](https://fiji.sc/Analyze_Stripes) or its [ImageJ page](http://imagejdocu.tudor.lu/doku.php?id=macro:analyze_stripes).
 
-[Category:News](Category_News "wikilink")
+

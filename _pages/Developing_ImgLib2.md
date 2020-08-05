@@ -53,4 +53,4 @@ You can use the mvn command line tool to build ImgLib2. Just type "mvn" with no 
 
 For more on using the Maven command line tool, see [Building a Project with Maven](http://maven.apache.org/run-maven/index.html) on the Maven web site.
 
-[Category:ImgLib](Category_ImgLib "wikilink") [Category:Tutorials](Category_Tutorials "wikilink") [Category:Development](Category_Development "wikilink")
+  

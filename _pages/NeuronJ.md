@@ -23,4 +23,4 @@ description: test description
 
 NeuronJ features a friendly interface and a detailed [online manual](https://imagescience.org/meijering/software/neuronj/manual/) but can only be used to reconstruct 2D images and is not capable of [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) export, the most common format used in neuronal reconstructions. If you need to reconstruct three-dimensional imagery and require a program aware of SWC, we recommend using [SNT](SNT "wikilink") instead.
 
-[ImageScience](Category_ImageScience "wikilink") [Neuroanatomy](Category_Neuroanatomy "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:ImageScience](Category_ImageScience "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink")
+[ImageScience](Category_ImageScience "wikilink") [Neuroanatomy](Category_Neuroanatomy "wikilink")   

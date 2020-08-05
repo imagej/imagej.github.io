@@ -24,4 +24,4 @@ Since FlowJ is maintained inside Fiji, the following changes have been made:
 
 {% include bc content='Analyze | Optic Flow | FlowJ'%}
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Optic Flow](Category_Optic_Flow "wikilink")
+ 

@@ -319,7 +319,7 @@ Now that you know how the plugin works, you should be able to reach the end resu
 
 <references/>
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+
 
 1.  David G. Lowe, "Distinctive image features from scale-invariant keypoints", International Journal of Computer Vision, 60, 2 (2004), pp. 91-110.
 

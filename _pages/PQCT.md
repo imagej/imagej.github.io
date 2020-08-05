@@ -359,4 +359,4 @@ If you use this program, or the Stratec pQCT file format reader in your work, pl
 
 -----
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Citable](Category_Citable "wikilink")
+ 

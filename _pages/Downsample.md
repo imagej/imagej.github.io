@@ -152,4 +152,4 @@ else
   - [Scripting Help](Scripting_Help "wikilink")
   - [Scripting\_comparisons](Scripting_comparisons "wikilink")
 
-[Category:Scripting](Category_Scripting "wikilink")
+

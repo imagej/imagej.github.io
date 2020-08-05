@@ -154,4 +154,4 @@ As for a graphics card buy the largest you can afford, both in computing power a
 
   - {% include publication content='TrakEM2' %}
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:TrakEM2](Category_TrakEM2 "wikilink") [Category:Image annotation](Category_Image_annotation "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink") [Category:Citable](Category_Citable "wikilink")
+      

@@ -123,7 +123,7 @@ The peak height is just the value of the correlation peak for each pixels. This 
 
 <references/>
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Optic Flow](Category_Optic_Flow "wikilink") [Category:Citable](Category_Citable "wikilink")
+  
 
 1.  {% include citation last='Raffael ' first='M. ' last2='Willert ' first2='C. ' last3='Kompenhans ' first3='J. ' title='Particle Image Velocimetry: A Practical Guide ' place='Berlin ' publisher='Springer-Verlag ' year='2007 ' volume=' ' edition='2nd ' url='http://www.springer.com/new+%26+forthcoming+titles+(default)/book/978-3-540-72307-3 ' doi=' ' id=' ' isbn='978-3-540-72307-3 ' %}
 2.  {% include citation last='Supatto ' first='W. ' last2='Débarre ' first2='D. ' last3='Moulia ' first3='B. ' last4='Martin ' first4='J-L. ' last5='Farge ' first5='E. ' last6='Beaurepaire ' first6='E. ' title='In vivo modulation of morphogenetic movements in Drosophila embryos with femtosecond laser pulses ' journal='PNAS ' volume='102 ' pages='1047-1052 ' year='2005 ' PMID='15657140 ' %}

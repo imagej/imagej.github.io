@@ -11,4 +11,4 @@ This video tutorial was made by Javier Cabrera-Chaves and edited by {% include p
 
 TODO FLASH WIDGET
 
-[Category:Registration](Category_Registration "wikilink") [Category:TrakEM2](Category_TrakEM2 "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+  

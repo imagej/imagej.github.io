@@ -178,4 +178,4 @@ And this is it\!
 
 You can test this plugin on all possible image types ImageJ supports, and it will still yield a result. <b>And you did not have to write code for each particular data type.</b>
 
-[Category:ImgLib](Category_ImgLib "wikilink") [Category:Tutorials](Category_Tutorials "wikilink") [Category:Development](Category_Development "wikilink")
+  

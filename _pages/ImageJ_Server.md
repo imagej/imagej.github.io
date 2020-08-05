@@ -28,4 +28,4 @@ Client software can:
 
 See the {% include github org='imagej ' repo='imagej-server ' label='GitHub site ' %}.
 
-[Category:SciJava](Category_SciJava "wikilink")
+

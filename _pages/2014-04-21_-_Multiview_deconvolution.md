@@ -25,4 +25,4 @@ Finally, a Figure from the paper showing that multi-view deconvolution matters\!
 
 This is probably not the last answer to SPIM data deconvolution. We are looking forward to the input from the computer vision community to this hard problem.
 
-[Category:News](Category_News "wikilink")
+

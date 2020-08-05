@@ -349,4 +349,4 @@ In this example we sample an existing image at random locations and render the r
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example8b.java ' %}
 
-[Category:ImgLib](Category_ImgLib "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+ 

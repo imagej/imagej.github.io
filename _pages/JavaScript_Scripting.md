@@ -939,4 +939,4 @@ See the complete file here: {% include github repo='fiji ' path='plugins/Example
 
 See also the [Scripting comparisons](Scripting_comparisons "wikilink").
 
-[Category:Scripting](Category_Scripting "wikilink")
+

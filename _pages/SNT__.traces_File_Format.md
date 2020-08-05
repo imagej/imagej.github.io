@@ -91,4 +91,4 @@ The `<fill>` element represents a fill around a path. It contains all the points
 {% include sntnavbar%}
 
 
-[Category:SNT](Category_SNT "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink") [Category:Import-Export](Category_Import-Export "wikilink") [Category:Data](Category_Data "wikilink")
+   

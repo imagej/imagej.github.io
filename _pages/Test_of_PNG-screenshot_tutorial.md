@@ -13,4 +13,4 @@ This is a test tutorial.
 
 <img src="/images/pages/Test of PNG-screenshot tutorial-1.png" width="750"/>
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

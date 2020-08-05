@@ -19,4 +19,4 @@ More information on github.
 
 For automatic installation in Fiji, add update site SimonKlein.
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

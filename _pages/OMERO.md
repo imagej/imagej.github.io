@@ -21,4 +21,4 @@ description: test description
 
   - The [ImageJ-OMERO](https://github.com/imagej/imagej-omero) project for bidirectional interoperability between ImageJ and OMERO.
 
-[Category:Related Software](Category_Related_Software "wikilink") [Category:Citable](Category_Citable "wikilink") [Category:SciJava](Category_SciJava "wikilink") [Category:OME](Category_OME "wikilink")
+   

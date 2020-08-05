@@ -19,4 +19,4 @@ To prevent abuse of this facility, access to the uploaded images is restricted t
 
 If you upload a sample image and would like it to be deleted, just let us know [on the forum](http://forum.imagej.net/) with a post or private message to an admin.
 
-[Category:Plugins](Category_Plugins "wikilink")
+

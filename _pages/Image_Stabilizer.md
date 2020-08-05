@@ -55,4 +55,4 @@ Permission to use, copy, modify, and distribute this software for any purpose wi
 
 THIS SOFTWARE IS BEING PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTY. IN PARTICULAR, THE AUTHOR DOES NOT MAKE ANY REPRESENTATION OR WARRANTY OF ANY KIND CONCERNING THE MERCHANTABILITY OF THIS SOFTWARE OR ITS FITNESS FOR ANY PARTICULAR PURPOSE.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink")
+ 

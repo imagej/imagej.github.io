@@ -460,4 +460,4 @@ For those that are familiar with it, AWT has the `Composite` interface to specif
 
 For ImgLib2, we could have the composition principle generalized and provide some special purpose implementations (stacking, AWT raster composition, TrakEM2-alike images).
 
-[Category:ImgLib](Category_ImgLib "wikilink")
+

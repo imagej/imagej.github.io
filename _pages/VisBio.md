@@ -27,4 +27,4 @@ VisBio is based on the [VisAD](http://visad.ssec.wisc.edu/) Java component libra
 
   - [VisBio Fiji plugins](http://loci.wisc.edu/software/visbio-fiji-plugins)
 
-[Category:Related Software](Category_Related_Software "wikilink") [Category:Citable](Category_Citable "wikilink")
+ 

@@ -11,4 +11,4 @@ Thanks to Nico Stuurman of [Micro-Manager](http://www.micro-manager.org/) fame, 
 
 It has been reported that the download speeds to our server were not always high, as reported by some users, who were happy to report that the download mirror fixed their issues\!
 
-[Category:News](Category_News "wikilink")
+

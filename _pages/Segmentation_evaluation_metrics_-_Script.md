@@ -118,4 +118,4 @@ After clicking OK the metrics will be applied and the results will be shown in t
 
 ![Challenge-script-log-window.png](/images/pages/Challenge-script-log-window.png "Challenge-script-log-window.png")
 
-[Category:Segmentation](Category_Segmentation "wikilink") [Category:Scripting](Category_Scripting "wikilink")
+ 

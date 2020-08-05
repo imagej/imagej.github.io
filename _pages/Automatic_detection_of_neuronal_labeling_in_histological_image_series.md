@@ -76,4 +76,4 @@ Papp EA, Leergaard TB, Csucs G, Bjaalie JG (2016) Brain-wide mapping of axonal c
 
 Ruifrok AC and Johnston DA (2001) Quantification of histochemical staining by color deconvolution. Anal Quant Cytol Histol 23, 291-299 \[http://www.ncbi.nlm.nih.gov/pubmed/11531144>| PubMed\] Zakiewicz IM, Van Dongen YC, Leergaard TB, and Bjaalie JG (2011) Workflow and atlas system for brain-wide mapping of axonal connectivity in rat. PLoS One 6, e22669 \[<http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0022669| doi: 10.1371/journal.pone.0022669\]
 
-[Category:Analysis](Category_Analysis "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

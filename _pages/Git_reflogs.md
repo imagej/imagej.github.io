@@ -113,4 +113,4 @@ So you can also refer to the reflog with something like "HEAD@{1 day ago}". For 
 
 Reflogs are pretty useful to refer to commits when [bisecting](Git_bisection "wikilink"): you might happen to know that something worked two weeks ago ("git bisect good HEAD@{2.weeks.ago}", but stopped working in the current revision: ("git bisect bad HEAD").
 
-[Category:Git](Category_Git "wikilink")
+

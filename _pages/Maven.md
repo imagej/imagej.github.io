@@ -172,4 +172,4 @@ When in doubt, [contact the community](Help "wikilink") with your questions.
   - [Maven: The Complete Reference](https://books.sonatype.com/mvnref-book/reference/index.html)
   - [Maven by Example](https://books.sonatype.com/mvnex-book/reference/index.html)
 
-[Category:Development](Category_Development "wikilink") [Category:Maven](Category_Maven "wikilink")
+ 

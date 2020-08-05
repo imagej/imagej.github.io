@@ -19,4 +19,4 @@ Plugin for ImageJ to measure domains (e.g. phases) in images using a grid of poi
 
 For automatic installation in Fiji, add update site SimonKlein.
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

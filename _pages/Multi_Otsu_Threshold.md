@@ -23,4 +23,4 @@ For example, by setting the desired number of classes to 3 (the algorithm then n
 
 Image:Blobs.png|Original image: blobs on a dark background Image:Blobs\_MultiOtsu\_1.png|First class: the dark pixels as background Image:Blobs\_MultiOtsu\_2.png|Second class: the intermediate pixels delineate the edges Image:Blobs\_MultiOtsu\_3.png|Third class: the bright pixels form the blobs centers
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+ 

@@ -51,4 +51,4 @@ SNT has its own [documentation](sNT "wikilink"). The list of *Image Processing f
 
   - A list of all pages in this wiki related to image processing in the neurosciences can be found [here](_Category_Neuroanatomy "wikilink").
 
-[Category:Neuroanatomy](Category_Neuroanatomy "wikilink")
+

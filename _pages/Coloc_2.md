@@ -143,4 +143,4 @@ You can then refer to consecutive files using consecutive numbers in the array i
 
 "
 
-[Category:Colocalization](Category_Colocalization "wikilink") [Category:Color processing](Category_Color_processing "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+  

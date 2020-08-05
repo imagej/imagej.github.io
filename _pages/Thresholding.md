@@ -35,4 +35,4 @@ In short, you can't. It will always be, to some extent, in the eye of the user/o
 
 For more detailed information on thresholding and image segmentation basics and some quality evaluation see the [Principles](https://imagej.net/Principles#Considerations_during_image_segmentation_.28binarization.29) page.
 
-[Category:Techniques](Category_Techniques "wikilink")
+

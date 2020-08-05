@@ -117,4 +117,4 @@ For complicated conflicts, you may find it easier to do the resolution using an 
 
 <img src="/images/pages/Meld-example.png" width="750"/>
 
-[Category:Git](Category_Git "wikilink")
+

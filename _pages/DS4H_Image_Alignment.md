@@ -73,4 +73,4 @@ The Data Science for Health (DS4H) group:
 
 \- Filippo Piccinini, Istituto Scientifico Romagnolo per lo Studio e la Cura dei Tumori (IRST) IRCCS, Meldola (FC), Italy, email: filippo.piccinini@irst.emr.it
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink")
+  

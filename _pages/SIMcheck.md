@@ -11,4 +11,4 @@ SIMcheck is a package of ImageJ tools for assessing the quality and reliability 
 
 See its [online manual](https://www.micron.ox.ac.uk/software/SIMcheck/) for documentation.
 
-[Category:Plugins](Category_Plugins "wikilink")
+

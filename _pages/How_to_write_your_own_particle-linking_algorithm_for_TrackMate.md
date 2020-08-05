@@ -274,4 +274,4 @@ The full code, as well as the code for another tracker example can be found on [
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 09:26, 5 September 2014 (CDT)
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

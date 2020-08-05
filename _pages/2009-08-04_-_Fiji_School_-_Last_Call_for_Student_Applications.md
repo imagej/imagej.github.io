@@ -28,4 +28,4 @@ Important data:
   - [School webpage](http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/)
   - [Student application form](http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/course-application-form/).
 
-[Category:News](Category_News "wikilink")
+

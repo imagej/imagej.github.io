@@ -31,4 +31,4 @@ Now, start the plugin. If there was more than one other image with an active lin
 
 ![Aligned-Blue-Parrot-Fish.jpg](/images/pages/Aligned-Blue-Parrot-Fish.jpg "Aligned-Blue-Parrot-Fish.jpg")
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink")
+  

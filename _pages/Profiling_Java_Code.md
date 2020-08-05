@@ -136,4 +136,4 @@ When looking at a Heap Dump, make sure you click on the *Classes* button in the 
 
 Note: at no time will JVisualVM stop the virtual machine it is attached to, so if the issues you experience are time-sensitive, you definitely want to put stop-gaps into the code to be able to look at things closely.
 
-[Category:Development](Category_Development "wikilink")
+

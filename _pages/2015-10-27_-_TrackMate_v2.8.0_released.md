@@ -132,4 +132,4 @@ Now fixed. Bug reported by Jan Eglinger.
 
 {% include person content='JeanYvesTinevez' %} [CCCT](User_CCCT "wikilink") ([talk](User_talk_CCCT "wikilink")) 10:53, 27 October 2015 (CDT)
 
-[Category:News](Category_News "wikilink")
+

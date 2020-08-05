@@ -248,4 +248,4 @@ Plus or minus the localization errors and some incorrect cell radii, you now hav
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 11:30, 1 August 2013 (CDT)
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

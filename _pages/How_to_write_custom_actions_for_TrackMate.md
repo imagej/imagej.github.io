@@ -181,4 +181,4 @@ You can imagine a lot of applications for Actions. Since they give you access to
 
 This concludes this tutorial, which was pretty quick and simple. This is unfortunately the last time in this series that things are simple and short. The next tutorial will be about implementing a custom detector, which will turn to be quite complicated for apparently wrong reasons. See you there\!
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

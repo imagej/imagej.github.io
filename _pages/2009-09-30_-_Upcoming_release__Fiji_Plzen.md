@@ -15,4 +15,4 @@ The biggest news is certainly the new Fiji Updater, result of our second [Summer
 
 Stay tuned for the full release notes\!
 
-[Category:News](Category_News "wikilink")
+

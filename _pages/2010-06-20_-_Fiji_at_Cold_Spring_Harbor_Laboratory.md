@@ -9,4 +9,4 @@ description: test description
 
 The [Workshop on Circuit & Molecular Architecture of the Vertebrate Brain](http://meetings.cshl.edu/courses/c-circuits10.shtml) hosted today a Fiji hands-on session for neuronal reconstruction. Our deep thanks to [CSHL](http://www.cshl.edu) and the organizer [Partha Mitra](http://www.mitralab.org/group-members/partha-mitra). We have learned that Fiji is already in extensive use at CSHL and we are looking forward to see great results\!
 
-[Category:News](Category_News "wikilink")
+

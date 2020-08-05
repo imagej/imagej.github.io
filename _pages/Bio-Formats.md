@@ -172,4 +172,4 @@ To report a bug in Bio-Formats, please see [reporting a bug in Bio-Formats](http
 
   - {% include publication content='Bio-Formats' %}
 
-[Category:Related Software](Category_Related_Software "wikilink") [Category:Citable](Category_Citable "wikilink") [Category:SciJava](Category_SciJava "wikilink") [Category:OME](Category_OME "wikilink")
+   

@@ -122,7 +122,7 @@ We will further investigate in automatic selection of appropriate parameters dep
 
 <references />
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:TrakEM2](Category_TrakEM2 "wikilink") [Category:Citable](Category_Citable "wikilink")
+   
 
 1.  {% include cite content='journal' title='As-rigid-as-possible mosaicking and serial section registration of large ssTEM datasets ' author='S. Saalfeld, A. Cardona, V. Hartenstein, P. Tomancak ' journal='Bioinformatics ' pages='i57–i63 ' volume='26 ' number='12 ' year='2010 ' doi='10.1093/bioinformatics/btq219 ' %}
 

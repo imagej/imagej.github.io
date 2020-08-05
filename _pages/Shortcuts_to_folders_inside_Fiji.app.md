@@ -23,4 +23,4 @@ Do the same drag and drop with option and cmd to make aliases of all folders ins
 
 When you will need access to those folders, for exemple the "luts" folder in the Dialog opened by {% include bc content='Color | Edit LUT | Open...'%}, you will be able to get into the folder easily using the alias: <img src="/images/pages/Shortcuts to folders inside Fiji.app-11.png" width="750"/>
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

@@ -96,4 +96,4 @@ Also If the plugin allows to detect only two surface with one input function, th
   - the reslicing from script uses linear interpolation.
   - from script, a new relative surface weight can be used to support surface detection
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Projection](Category_Projection "wikilink")
+ 

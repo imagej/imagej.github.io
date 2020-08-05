@@ -233,4 +233,4 @@ The `File[]` parameter supports the styles "*files*", "*directories*", "*both*".
 
 You can influence the visual style of some of the input widgets. See previous paragraph for widget-specific style examples.
 
-[Category:Scripting](Category_Scripting "wikilink")
+

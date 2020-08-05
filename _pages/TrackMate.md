@@ -269,6 +269,6 @@ JYT acknowledges funding from the European commission FP7 ICT ([project â€œMEMIâ
 
 <references/>
 
-[Category:Segmentation](Category_Segmentation "wikilink") [Category:Tracking](Category_Tracking "wikilink") [Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Citable](Category_Citable "wikilink")
+    
 
 1.  Jaqaman et al. *Robust single-particle tracking in live-cell time-lapse sequences*. **Nat Methods** (2008) vol. 5 (8) pp. 695-702

@@ -583,4 +583,4 @@ Section 5 contains miscellaneous notes
 
   - replace use of ImagePlus::getBytesPerPixel() with ImagePlus::getActualBytesPerPixel() where needed
 
-[Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Development](Category_Development "wikilink")
+ 

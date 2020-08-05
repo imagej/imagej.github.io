@@ -15,4 +15,4 @@ This list is generated automatically from a {% include github repo='fiji ' path=
 
 {% include template content='PluginList' %}
 
-[Category:Plugins](Category_Plugins "wikilink")
+

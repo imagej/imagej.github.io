@@ -88,4 +88,4 @@ This will upload all the images (asking you how to proceed when an image exists 
 
 As the graphical user interface allows to open modal dialogs which block input to any other window in the same application (including the *Tutorial Maker* windows), it is often wise to open a second Fiji instance in which you start the *Tutorial Maker*.
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

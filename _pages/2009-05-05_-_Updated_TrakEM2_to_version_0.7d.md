@@ -18,4 +18,4 @@ The update includes:
 
 The [TrakEM2 manual](http://t2.ini.uzh.ch/trakem2_manual.html) has been updated to explain details on new [automatic image registration](http://t2.ini.uzh.ch/trakem2_manual.html#registration) capabilities in versions 0.7, particularly its [image registration models](http://t2.ini.uzh.ch/trakem2_manual.html#registration_models).
 
-[Category:News](Category_News "wikilink")
+

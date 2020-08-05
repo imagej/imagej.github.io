@@ -27,4 +27,4 @@ To remove the overall slope of the surface, click on the {% include bc content='
 
 ![TopoJ-Remove\_Slope.jpg](/images/pages/TopoJ-Remove Slope.jpg "TopoJ-Remove_Slope.jpg")
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

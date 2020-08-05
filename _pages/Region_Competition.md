@@ -25,7 +25,7 @@ J. A. Helmuth, C. J. Burckhardt, U. F. Greber, and I. F. Sbalzarini. Shape recon
 
 <references />
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Deconvolution](Category_Deconvolution "wikilink")
+  
 
 1.  J. A. Helmuth, C. J. Burckhardt, U. F. Greber, and I. F. Sbalzarini. [Shape reconstruction of subcellular structures from live cell fluorescence microscopy images](http://dx.doi.org/10.1016/j.jsb.2009.03.017), Journal of Structural Biology, 167:1–10, 2009
 2.  J. A. Helmuth and I. F. Sbalzarini. [Deconvolving active contours for fluorescence microscopy images](http://mosaic.mpi-cbg.de/docs/Helmuth2009a.pdf), In Proc. Intl. Symp. Visual Computing (ISVC), volume 5875 of Lecture Notes in Computer Science, pages 544–553, Las Vegas, USA, November 2009. Springer.

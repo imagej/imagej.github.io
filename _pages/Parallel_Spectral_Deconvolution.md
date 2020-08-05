@@ -144,4 +144,4 @@ Clicking on the Deconvolve button results in this:
       - Refactoring and cosmetic changes.
       - The plugin is updated to use Parallel Colt 0.7.2.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Deconvolution](Category_Deconvolution "wikilink")
+ 

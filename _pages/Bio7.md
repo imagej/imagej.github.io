@@ -17,4 +17,4 @@ description: test description
 
 {% include publication content='Bio7' %}
 
-[Category:Related Software](Category_Related_Software "wikilink") [Category:Citable](Category_Citable "wikilink")
+ 

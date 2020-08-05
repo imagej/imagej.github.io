@@ -19,4 +19,4 @@ ImageJ2 is slated to become the new core of Fiji (since ImageJ2 is going to be a
 
 Read the full announcement [here](http://developer.imagej.net/2012/04/09/imagej-v200-beta1).
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

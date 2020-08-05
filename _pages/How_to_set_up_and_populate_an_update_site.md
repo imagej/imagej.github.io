@@ -167,4 +167,4 @@ If you want your update site to be listed in the ImageJ update manager, follow t
 
 For additional information on common topics regarding update site maintenance, please see the [update site FAQ](Update_site_FAQ "wikilink").
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

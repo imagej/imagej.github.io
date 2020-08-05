@@ -268,4 +268,4 @@ PlotData=
       - GUI tools/widgets will go into scijava-ui-swing
       - {% include person content='skalarproduktraum' %} will continue to develop Scenery for the core 3D rendering functionality
 
-[Category:News](Category_News "wikilink") [Category:Fiji](Category_Fiji "wikilink")
+ 

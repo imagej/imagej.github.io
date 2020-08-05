@@ -58,4 +58,4 @@ Hyperstacks can be labeled with the imageJ builtin Label command, if you want to
 
 Macro recording is broken due to the use of a non blocking (non modal) GUI... which is needed for the preview functionality and being able to use built in imageJ font and color choosers. To fix this we need to make some new infrastructure in ImageJ/Fiji.... or wait for imageJ2 n-dimensional data support.
 
-[Category:Image annotation](Category_Image_annotation "wikilink")
+

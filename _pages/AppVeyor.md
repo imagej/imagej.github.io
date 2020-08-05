@@ -16,4 +16,4 @@ Most [ImageJ](ImageJ "wikilink") and [SciJava](SciJava "wikilink") builds use [T
 
 See e.g. the [ImageJ Launcher](https://ci.appveyor.com/project/scijava/imagej-launcher) build.
 
-[Category:Development](Category_Development "wikilink")
+

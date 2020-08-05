@@ -36,4 +36,4 @@ Some community members frequent {% include wikipedia title='Internet Relay Chat'
 
 Advantages of IRC include anonymity, and maximum compatibility with a huge variety of existing chat clients.
 
-[Category:Help](Category_Help "wikilink")
+

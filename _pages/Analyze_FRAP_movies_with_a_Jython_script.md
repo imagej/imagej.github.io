@@ -149,4 +149,4 @@ str2 = "Mobile fraction = %.1f %%" % (100 * mobile_fraction)
 IJ.log( str2 )
 ```
 
-[Category:Jython](Category_Jython "wikilink") [Category:Scripting](Category_Scripting "wikilink")
+ 

@@ -199,4 +199,4 @@ Johannes Schindelin got stuck with the maintainership and introduced third-party
 
 As of September 2012, the Fiji Updater has moved to [ImageJ2](ImageJ2 "wikilink"). Details can be found in the announcement: [2012-09-14 - The Updater moved](2012-09-14_-_The_Updater_moved "wikilink").
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

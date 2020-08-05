@@ -44,4 +44,4 @@ When the plugin does not work on your stack, or if it only works on the first im
   - 2018-01-18 - Version 0.3. Updated to match changes in jfreechart library  
   - 2017-07-04 - Version 0.22. Use Gaussian blur to determine background rather than rolling ball. Use floats rather than longs in calculations to avoid clipping and negative values. Should result in better precision and better background estimate.  
 
-[Category:Particle\_analysis](Category_Particle_analysis "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

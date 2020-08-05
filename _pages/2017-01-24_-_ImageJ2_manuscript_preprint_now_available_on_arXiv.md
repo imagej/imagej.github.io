@@ -21,4 +21,4 @@ This manuscript provides a technical overview of [ImageJ2](ImageJ2 "wikilink"), 
 
 **Conclusions.** Scientific imaging benefits from open-source programs that advance new method development and deployment to a diverse audience. ImageJ has excelled in this regard; however, due to new and emerging challenges, it is at a critical development crossroads. The described improvements provide a framework adaptable to future needs, enabling continued success and innovation. Future efforts will focus on implementing new algorithms in this framework and expanding collaborations with other popular scientific software suites.
 
-[Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:News](Category_News "wikilink")
+ 

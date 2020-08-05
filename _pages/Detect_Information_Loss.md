@@ -37,4 +37,4 @@ Questions you should ask before quantifying information from images:
   - Q) Is the intensity information saturated / clipped / overexposed?
   - Q) Is there a problem with uniform background / detector offset?
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

@@ -149,4 +149,4 @@ Two possibilities, how to do it:
 
 3\. Čapek, M., Efenberková, M., Novotný, I., Horváth, O. [The wavelet-based denoising of images in Fiji/ImageJ, with example applications in structured illumination microscopy.](https://imagej.net/_images/5/5f/2019_AinDM_Capek_et_al_Wavelet_Denoising_Fiji.pdf) In: Advances in Disease Models, Edited by Petr Bartůněk, Institute of Molecular Genetics AS CR, 2019, 1th publication, ISBN 978-80-88011-06-4 Publisher: OPTIO CZ.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Filtering](Category_Filtering "wikilink")
+ 

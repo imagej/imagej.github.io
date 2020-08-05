@@ -67,4 +67,4 @@ The heater makes that noise revealing that it just turned itself off because it 
 
 *Disclaimer: in the interest of the narrative, a few facts have been bent or shortened. Similarities with persons, both living or dead, would not be purely coincidental.*
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

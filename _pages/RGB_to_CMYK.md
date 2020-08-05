@@ -116,4 +116,4 @@ new ImagePlus( "K visualized", ipKVis ).show();
   - [Scripting\_comparisons](Scripting_comparisons "wikilink")
   - [Script Editor](Script_Editor "wikilink")
 
-[Category:Scripting](Category_Scripting "wikilink")
+

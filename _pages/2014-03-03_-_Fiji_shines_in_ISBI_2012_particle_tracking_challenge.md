@@ -23,4 +23,4 @@ The algorithm has originally been published in:
 
 I. F. Sbalzarini and P. Koumoutsakos. Feature Point Tracking and Trajectory Analysis for Video Imaging in Cell Biology, Journal of Structural Biology 151(2):182-195, 2005.
 
-[Category:News](Category_News "wikilink")
+

@@ -19,4 +19,4 @@ description: test description
 
   - {% include publication content='SME' %}
 
-[Category:Citable](Category_Citable "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Analysis](Category_Analysis "wikilink")
+  

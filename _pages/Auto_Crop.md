@@ -23,4 +23,4 @@ In the version labeled with *(guess background color)*, the plugin tries to dete
 
 Instead of cropping right away, you can set the selection to the rectangle that would be cropped to using {% include bc content='Edit | Selection | Select Bounding Box'%}.
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

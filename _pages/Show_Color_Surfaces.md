@@ -25,4 +25,4 @@ The *Show Color Surfaces* command calculates surfaces embedded into the [3D View
 
 {% include bc content='Plugins | Process | Show Color Surfaces'%}
 
-[Category:Plugins](Category_Plugins "wikilink")
+

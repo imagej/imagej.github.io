@@ -32,4 +32,4 @@ The [SCIFIO](SCIFIO "wikilink") library, the I/O library of [ImageJ2](ImageJ2 "w
 
 You can tell ImageJ2 to use SCIFIO by default via the {% include bc content='Edit | Options | ImageJ2...'%} menu's "Use SCIFIO when opening files (BETA\!)" checkbox.
 
-[Category:Import-Export](Category_Import-Export "wikilink")
+

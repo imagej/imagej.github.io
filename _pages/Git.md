@@ -50,4 +50,4 @@ One of the most powerful things Git can do is rewrite a series of patches after 
 
 </div>
 
-[Category:Development](Category_Development "wikilink") [Category:Git](Category_Git "wikilink")
+ 

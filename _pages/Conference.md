@@ -47,4 +47,4 @@ If you have any questions or if you are interested in hosting a future conferenc
 | 1      | [ImageJ User and Developer Conference 2006](Conference_2006 "wikilink")                                    | 18 - 19 May 2006      | [CRP Henri Tudor](http://www.tudor.lu/en), Luxembourg                              |
 |        |                                                                                                            |                       |                                                                                    |
 
-[Category:Conference](Category_Conference "wikilink")
+

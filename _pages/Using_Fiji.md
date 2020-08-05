@@ -24,4 +24,4 @@ Useful information about using Fiji can be found here:
   - [Find contact information, mailing list, IRC (chat) and help](Help "wikilink")
   - [Frequently Asked Questions](Frequently_Asked_Questions "wikilink")
 
-[Category:Fiji](Category_Fiji "wikilink")
+

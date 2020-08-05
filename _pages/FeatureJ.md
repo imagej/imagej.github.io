@@ -23,4 +23,4 @@ description: test description
 
 FeatureJ is available from the [ImageScience](ImageScience "wikilink") update site.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:ImageScience](Category_ImageScience "wikilink")
+ 

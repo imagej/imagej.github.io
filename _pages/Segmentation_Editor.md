@@ -65,4 +65,4 @@ call("Segmentation_Editor.addMaterial", "MyMaterial1", 255, 255, 0);
 call("Segmentation_Editor.addMaterial", "MyMaterial2", 255, 0, 0);
 ```
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+ 

@@ -76,4 +76,4 @@ For a complete list of deployment-related issues we are tackling over the summer
 
 As you can see, it's going to be a busy summer. We will push hard to have a newer, stronger ImageJ ready to go for [this fall's ImageJ conference](Conference_2015 "wikilink")\!
 
-[Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:News](Category_News "wikilink")
+ 

@@ -66,4 +66,4 @@ By Tony Collins, initially part of his wonderful [MBF Plugin Collection](MBF_Plu
 
 <references/>
 
-[Category:Plugins](Category_Plugins "wikilink")
+

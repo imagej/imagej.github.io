@@ -73,4 +73,4 @@ Even if the detectors and trackers are still the same that of versions 1.x, ther
   - Fix a bug causing TrackScheme and XML files to sometimes receive empty tracks.
   - Numerous minor bugfixes.
 
-[Category:News](Category_News "wikilink")
+

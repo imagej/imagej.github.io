@@ -15,4 +15,4 @@ For details, see the Google Research Blog post [Using Deep Learning to Facilitat
 
   - {% include publication content='Microscope Image Quality' %}
 
-[Category:Fiji](Category_Fiji "wikilink") [Category:News](Category_News "wikilink")
+ 

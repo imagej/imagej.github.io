@@ -15,4 +15,4 @@ description: test description
 
 This plugin creates a non-destructive grid of lines , crosses or points on the current image or stack. You can specify the the grid type (lines, crosses or points), the area per point (in pixels or physical units), and the color.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Image annotation](Category_Image_annotation "wikilink") [Category:Unmaintained](Category_Unmaintained "wikilink")
+  

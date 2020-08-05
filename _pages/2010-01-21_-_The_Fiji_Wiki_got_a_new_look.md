@@ -13,4 +13,4 @@ In the same run, it must be mentioned that [Benjamin Schmid](http://www.neurofly
 
 Stephan Saalfeld made the menu work on the iPhone (click/tap on a menu button and the menu will stay open).
 
-[Category:News](Category_News "wikilink")
+

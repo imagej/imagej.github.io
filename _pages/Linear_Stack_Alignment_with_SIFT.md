@@ -19,6 +19,6 @@ See also [JavaSIFT](http://fly.mpi-cbg.de/~saalfeld/Projects/javasift.html) (the
 
 <references />
 
-[Category:Registration](Category_Registration "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 
 
 1.  {% include cite content='journal' author='Lowe D ' title='Distinctive Image Features from Scale-Invariant Keypoints ' journal='International Journal of Computer Vision ' year='2004 ' volume='60 ' number='2 ' pages='91-110 ' %}

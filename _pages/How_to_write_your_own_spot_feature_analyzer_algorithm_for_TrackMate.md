@@ -160,4 +160,4 @@ Apart from the discussion on the priority and execution order, there is not much
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 07:32, 11 March 2014 (CDT)
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

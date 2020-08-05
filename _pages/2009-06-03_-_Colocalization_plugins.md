@@ -9,4 +9,4 @@ description: test description
 
 By request of Daniel James White, we now have Colocalization plugins in [Fiji](Fiji "wikilink"). We took two plugins from the [MBF Plugin Collection](MBF_Plugin_Collection "wikilink"), fixed them to work with newer [ImageJ](ImageJ "wikilink") versions, and put them into the Fiji [Updater](Updater "wikilink"). Oh, and of course, they are {% include github org='fiji ' repo='Colocalisation\_Analysis ' %}, too.
 
-[Category:News](Category_News "wikilink") [Category:Colocalization](Category_Colocalization "wikilink")
+ 

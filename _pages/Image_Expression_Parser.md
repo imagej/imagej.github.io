@@ -601,4 +601,4 @@ resultImp.show();
 
 We are interested into knowing how we should extend this plugin so that it suits your need. Tell us in the [discussion page](Talk_Image_Expression_Parser "wikilink").
 
-[Category:Plugins](Category_Plugins "wikilink")
+

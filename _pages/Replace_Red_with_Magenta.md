@@ -41,4 +41,4 @@ As a demonstration, call Fiji's {% include bc content='File | Open Samples | Spi
 
 However, in the 21st century, one should always use proper [Colocalization](Colocalization "wikilink") with scatter plots and statistics. It is [too easy not to](Coloc_2 "wikilink").
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

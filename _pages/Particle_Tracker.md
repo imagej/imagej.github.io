@@ -25,7 +25,7 @@ N. Chenouard, I. Smal, F. de Chaumont, M. Maska, I. F. Sbalzarini, Y. Gong, J. C
 
 <references />
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Particle analysis](Category_Particle_analysis "wikilink") [Category:Tracking](Category_Tracking "wikilink")
+  
 
 1.  I. F. Sbalzarini and P. Koumoutsakos. [Feature point tracking and trajectory analysis for video imaging in cell biology](http://dx.doi.org/10.1016/j.jsb.2005.06.002), J. Struct. Biol., 151(2):182-195, 2005
 2.  N. Chenouard et al. [Objective comparison of particle tracking methods](http://dx.doi.org/doi:10.1038/nMeth.2808), Nature Methods, 11(3):281-289, 2014

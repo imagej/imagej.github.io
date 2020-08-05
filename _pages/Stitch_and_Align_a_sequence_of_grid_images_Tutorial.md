@@ -90,4 +90,4 @@ After few minutes (depending on the computer and number of CPUs), when the align
 
 **Performance**: the alignment of the 140 slices (and their resizing) took around 20 minutes in a 8-CPUs Intel Core Duo at 3.4GHz, 32GB of RAM, running on Linux 64-bit.
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Stitching](Category_Stitching "wikilink") [Category:Registration](Category_Registration "wikilink")
+  

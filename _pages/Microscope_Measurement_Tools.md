@@ -137,4 +137,4 @@ I used the following plugins as inspiration: [Correct\_3D\_drift](Correct_3D_dri
 
 Please see the GitHub page for issues needing coding work, and ideas for improvement. You are always welcome to contribute code to the GitHub project, it is remarkably simple due to FIJI's excellent Python API\!
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink")
+ 

@@ -186,4 +186,4 @@ Also, for a review of the hardware part, read *Zucker, 2006, Cytometry*.
 
 [The 39 steps: a cautionary tale of quantitative 3-D fluorescence microscopy](http://www.ncbi.nlm.nih.gov/pubmed/10818693) by J. Pawley.
 
-[Category:Colocalization](Category_Colocalization "wikilink") [Category:Tutorials](Category_Tutorials "wikilink") [Category:Color processing](Category_Color_processing "wikilink")
+  

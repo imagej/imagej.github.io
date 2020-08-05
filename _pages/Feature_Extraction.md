@@ -70,4 +70,4 @@ This software embodies methods for which the following patents have been issued:
 2.  Brown, Matthew; Szeliski, Richard; Winder, Simon (2005). ["Multi-Image Matching Using Multi-Scale Oriented Patches"](http://www.cs.ubc.ca/~mbrown/papers/cvpr05.pdf). *Proceedings of the 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)* Volume 1: 510–517. [doi:\[http://dx.doi.org/10.1109/CVPR.2005.235](doi_%5Bhttp_//dx.doi.org/10.1109/CVPR.2005.235) 10.1109/CVPR.2005.235\].
 3.  Fischler, Martin A.; Bolles, Robert C. (1981). "Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography". *Communications of the ACM* **24** (6): 381–395. [doi:\[http://doi.acm.org/10.1145/358669.358692](doi_%5Bhttp_//doi.acm.org/10.1145/358669.358692) 10.1145/358669.358692\]
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink") [Category:Feature Extraction](Category_Feature_Extraction "wikilink")
+  

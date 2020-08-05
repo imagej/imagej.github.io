@@ -17,4 +17,4 @@ This plugin has been edited to include the option for users to pre-subtract a fr
 
 See also [Color\_Image\_Processing](Color_Image_Processing "wikilink").
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Color processing](Category_Color_processing "wikilink")
+ 

@@ -363,4 +363,4 @@ You can find the full source for this example {% include github org='fiji ' repo
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 10:25, 27 January 2014 (CST)
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

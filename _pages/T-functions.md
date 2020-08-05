@@ -116,4 +116,4 @@ The options with three text-entry boxes along side represent x, y and z values.
 
 “*Render surface plot*”: starts surface plotting.
 
-[Category:Cookbook](Category_Cookbook "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+ 

@@ -17,4 +17,4 @@ These are the three projects:
 
 Let the party begin\!
 
-[Category:News](Category_News "wikilink")
+

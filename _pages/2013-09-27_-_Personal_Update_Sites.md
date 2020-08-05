@@ -19,4 +19,4 @@ From now on, there is no excuse anymore for articles demonstrating or using Imag
 
 [Find out how...](Personal_Update_Sites "wikilink")
 
-[Category:News](Category_News "wikilink")
+

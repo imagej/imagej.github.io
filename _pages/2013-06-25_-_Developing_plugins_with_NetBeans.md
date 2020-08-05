@@ -11,4 +11,4 @@ If you want to develop plugins conveniently with NetBeans, have a look at our ne
 
 It explains in eight minutes and fourteen seconds how to use NetBeans to write ImageJ 1.x plugins.
 
-[Category:News](Category_News "wikilink")
+

@@ -21,4 +21,4 @@ The update includes:
 
 Thanks to [German Koestinger](http://www.ini.uzh.ch/people/german) and {% include person content='Saalfeld' %} for testing and bug reports.
 
-[Category:News](Category_News "wikilink")
+

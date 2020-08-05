@@ -181,4 +181,4 @@ The information displayed in the *Test output* panel is controlled by the curren
 
 The results shown in the *Test output* panel can be saved to a file by clicking *Save output*. Only one set of results can be saved at a time but Weka permits the user to save all results to the same file by saving them one at a time and using the *Append* option instead of the *Overwrite* option for the second and subsequent saves.
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Machine Learning](Category_Machine_Learning "wikilink")
+  

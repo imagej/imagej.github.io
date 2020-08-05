@@ -61,4 +61,4 @@ Add the following macros to *ImageJ/macros/StartupMacros.txt*, restart ImageJ, a
   - <u>2009/07/01</u>: Fixed "Load Markers" bug
   - <u>2010/12/07</u>: Uses less memory
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Particle analysis](Category_Particle_analysis "wikilink")
+ 

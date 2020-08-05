@@ -15,4 +15,4 @@ The Squassh workflow critically depends on Fiji as its software processing pipel
 
 A. Rizk, G. Paul, P. Incardona, M. Bugarski, M. Mansouri, A. Niemann, U. Ziegler, P. Berger, and I. F. Sbalzarini. Segmentation and quantification of subcellular structures in fluorescence microscopy images using Squassh. Nature Protocols, 9(3):586–596, 2014.
 
-[Category:News](Category_News "wikilink")
+

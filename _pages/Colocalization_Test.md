@@ -33,4 +33,4 @@ The methods implemented are White Noise Image Approximation of Costes' image ran
 
 See also the [Colocalization Analysis](Colocalization_Analysis "wikilink") tutorial.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Colocalization](Category_Colocalization "wikilink") [Category:Color processing](Category_Color_processing "wikilink")
+  

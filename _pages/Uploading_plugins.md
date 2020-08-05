@@ -152,4 +152,4 @@ The files corresponding to the database entries are also stored as flat files of
 
 in the same directory as the databases. The *relative path* refers to the path inside the Fiji directory, e.g. *plugins/Fiji\_Updater.jar*.
 
-[Category:Development](Category_Development "wikilink")
+

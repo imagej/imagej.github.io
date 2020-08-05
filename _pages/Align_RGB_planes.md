@@ -34,4 +34,4 @@ Note: When using stacks, 2 buttons \[\< Prev\] and \[Next \>\] are added to the 
   - v1.6 12/Jun/2005 fixed window closing
   - v1.7 28/Mar/2007 supports RGB stacks
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Color processing](Category_Color_processing "wikilink")
+ 

@@ -25,7 +25,7 @@ The Tubular Geodesics plugins were developed several years ago\[1\] for [Simple 
 
 </references>
 
-[Category:Citable](Category_Citable "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink") [Category:SNT](Category_SNT "wikilink")
+    
 
 1.  
 2.  Türetken E, Benmansour F, Fua P. [Automated Reconstruction of Tree Structures using Path Classifiers and Mixed Integer Programming](https://infoscience.epfl.ch/record/176222/files/turetken_et_al_2012.pdf?version=1). <i>IEEE Conference on Computer Vision and Pattern Recognition</i>, Providence, Rhode Island, 2012.

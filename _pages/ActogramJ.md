@@ -31,4 +31,4 @@ description: test description
 
 More information is available at https://bene51.github.io/ActogramJ.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Visualization](Category_Visualization "wikilink") [Category:Citable](Category_Citable "wikilink")
+  

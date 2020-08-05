@@ -26,4 +26,4 @@ The [AxoNet](https://github.com/ethier-lab/axonet-fiji) plugin enables AxoNet to
   - {% include github org='ethier-lab ' repo='axonet-fiji ' label='AxoNet on GitHub ' %}.
   - The AxoNet [update site](update_site "wikilink") to make AxoNet available in ImageJ.
 
-[Category:Related Software](Category_Related_Software "wikilink") [Category:Citable](Category_Citable "wikilink") [Category:SciJava](Category_SciJava "wikilink")
+  

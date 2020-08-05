@@ -52,4 +52,4 @@ The Cookbook technical writer team includes:
 
 The plugins featured in the Cookbook were collated from various sources and have various authors and licenses.
 
-[Category:Cookbook](Category_Cookbook "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+ 

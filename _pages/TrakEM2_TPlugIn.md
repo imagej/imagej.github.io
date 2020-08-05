@@ -41,4 +41,4 @@ Project Tree, "Some PlugIn", full.package.and.class.to.SomePlugIn
 
 to add to the Project Tree menu. This file may contain multiple lines.
 
-[Category:TrakEM2](Category_TrakEM2 "wikilink")
+

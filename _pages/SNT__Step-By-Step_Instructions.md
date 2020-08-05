@@ -363,4 +363,4 @@ At this point, you should adjust a suitable <a href="SNT:_Overview#Cursor_Auto-s
 {% include sntnavbar%}
 
 
-[Category:SNT](Category_SNT "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink")
+ 

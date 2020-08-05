@@ -257,4 +257,4 @@ Packages hep.aida.\*
 
 Written by Pavel Binko, Dino Ferrero Merlino, Wolfgang Hoschek, Tony Johnson, Andreas Pfeiffer, and others. Check the FreeHEP homepage for more info. Permission to use and/or redistribute this work is granted under the terms of the LGPL License, with the exception that any usage related to military applications is expressly forbidden. The software and documentation made available under the terms of this license are provided with no warranty.
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

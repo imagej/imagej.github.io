@@ -326,4 +326,4 @@ All comments, questions or suggestions are very welcome. Please send an email to
 
   - [Importing list](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#importing_list) How the text file should look like.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:TrakEM2](Category_TrakEM2 "wikilink")
+ 

@@ -30,4 +30,4 @@ Out of the box, ImageJ has limited support for some video formats such as AVI an
 
   - The ImageJ Documentation Wiki page [FAQ: Which file formats are supported by ImageJ](http://imagejdocu.tudor.lu/doku.php?id=faq:general:which_file_formats_are_supported_by_imagej) (though it is outdated).
 
-[Category:Import-Export](Category_Import-Export "wikilink")
+

@@ -15,4 +15,4 @@ In Fiji, we do not use ImageJ directly, as we need some special enhancements, or
 
 The update is available via {% include bc content='Help | Update Fiji'%} (as *ij.jar*).
 
-[Category:News](Category_News "wikilink")
+

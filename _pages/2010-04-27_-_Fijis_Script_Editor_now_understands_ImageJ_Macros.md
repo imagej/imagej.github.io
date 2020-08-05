@@ -15,4 +15,4 @@ For further convenience, the Macro Recorder opens newly created macros in the Sc
 
 Another nice consequence is that Ctrl+Shift+N (or on Macs, Apple+Shift+N) opens up the Script Editor.
 
-[Category:News](Category_News "wikilink")
+

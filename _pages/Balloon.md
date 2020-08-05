@@ -58,6 +58,6 @@ The plugin is still work in progress. Things to be done includes use of threadin
 
 <references />
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink") [Category:Citable](Category_Citable "wikilink")
+  
 
 1.  {% include cite content='journal' author='Federici Fernán, Dupuy Lionel, Laplaze Laurent, Heisler Marcus, Haseloff Jim. ' title='Integrated genetic and computation methods for in planta cytometry ' journal='Nature Methods ' year='2012 ' volume='advance online publication ' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1940.html ' %}

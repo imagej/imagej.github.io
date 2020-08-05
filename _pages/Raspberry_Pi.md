@@ -77,4 +77,4 @@ See the [Frequently Asked Questions](Frequently_Asked_Questions "wikilink") page
   - Topics tagged [raspberry-pi](https://forum.image.sc/tags/raspberry-pi) on the [Image.sc Forum](Image.sc_Forum "wikilink").
   - The [Linux](Linux "wikilink") page, for general information about ImageJ on Linux systems.
 
-[Category:Platforms](Category_Platforms "wikilink")
+

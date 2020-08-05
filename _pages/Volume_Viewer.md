@@ -17,4 +17,4 @@ Documentation: https://imagej.net/plugins/volume-viewer.html
 
 [3D Viewer](3D_Viewer "wikilink"): hardware-accelerated 3D visualization of image volumes, orthoslices, and 3D meshes.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Visualization](Category_Visualization "wikilink")
+ 

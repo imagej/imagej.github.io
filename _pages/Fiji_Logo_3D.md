@@ -101,4 +101,4 @@ universe.show();
   - [Javascript Scripting](Javascript_Scripting "wikilink")
   - [3D Viewer](3D_Viewer "wikilink")
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Scripting](Category_Scripting "wikilink")
+ 

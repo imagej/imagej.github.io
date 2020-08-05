@@ -87,4 +87,4 @@ Please direct questions about Ops to the [ImageJ forum](http://forum.imagej.net/
 
 Thanks to everyone involved for all the hard work, patience and enthusiasm\!
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Hackathons](Category_Hackathons "wikilink") [Category:Ops](Category_Ops "wikilink")
+   

@@ -11,4 +11,4 @@ description: test description
 
 Documentation is available as [pdf](http://www.optinav.info/LocalThicknessEd.pdf) file.
 
-[Category:Plugins](Category_Plugins "wikilink")
+

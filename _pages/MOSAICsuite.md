@@ -35,4 +35,4 @@ N. Chenouard, I. Smal, F. de Chaumont, M. Maska, I. F. Sbalzarini, Y. Gong, J. C
 
 <references />
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Particle analysis](Category_Particle_analysis "wikilink") [Category:Filtering](Category_Filtering "wikilink") [Category:Colocalization](Category_Colocalization "wikilink") [Category:Deconvolution](Category_Deconvolution "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+     

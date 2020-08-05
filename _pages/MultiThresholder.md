@@ -23,4 +23,4 @@ This plugin allows the user to apply four different automatic thresholding algor
 
 This plugin is quite convenient, for it groups different techniques in one. It has nevertheless a major drawback when used on stacks. When operating on a stack, it computes the threshold on the *single* image currently displayed, and will apply this threshold value to *all* of the other images, which might not be relevant.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+ 

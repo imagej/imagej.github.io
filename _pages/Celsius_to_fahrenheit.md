@@ -74,4 +74,4 @@ The example is taken from the [Clojure](http://clojure.org) website.
 
   - [Clojure Scripting](Clojure_Scripting "wikilink").
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Scripting](Category_Scripting "wikilink") [Category:Unmaintained](Category_Unmaintained "wikilink")
+  

@@ -628,4 +628,4 @@ Since this provides a shared [GNU screen](http://savannah.gnu.org/projects/scree
 
 After the debugging party is over, the user can log out securely by hitting {% include key content='Ctrl' %}+{% include key content='D' %} to log out from the local machine (since the user typed in their password in the GNU screen session herself, there is no way for the developer to log back in without the user's explicit consent). Another {% include key content='Ctrl' %}+{% include key content='D' %} will terminate the GNU screen session, and yet another {% include key content='Ctrl' %}+{% include key content='D' %} will log out from the shared account on the SSH server.
 
-[Category:Development](Category_Development "wikilink")
+

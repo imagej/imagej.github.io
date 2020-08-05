@@ -39,4 +39,4 @@ We just released a new minor version of [TrackMate](TrackMate "wikilink"), that 
 
   - Fixed a detector crash when running a preview detection with 0 spots found.
 
-[Category:News](Category_News "wikilink")
+

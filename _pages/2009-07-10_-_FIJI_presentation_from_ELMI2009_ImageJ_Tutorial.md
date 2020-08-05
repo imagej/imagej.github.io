@@ -21,4 +21,4 @@ Some other tutorial are also already present there.
 
 We encourage everyone to add more tutorials: Simply create a page, fill it with tutorial content, and make sure to add the \[\[Category:Tutorials\]\] tag to the bottom of the page, so it appears in the tutorial category, which can be found [here](_Category_Tutorials "wikilink")
 
-[Category:News](Category_News "wikilink") [F](Category_Tutorials "wikilink")
+ [F](Category_Tutorials "wikilink")

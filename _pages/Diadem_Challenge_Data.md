@@ -197,4 +197,4 @@ That script may be useful as a basis for a smarter selection of images to stitch
 
 You should then be able to adjust the SWC import options in order to import the reconstructions in the correct positions - you will need to understand the translations described for the reconstructions [on the web page](http://www.diademchallenge.org/neuromuscular_projection_fibers_readme.html) in order to get this right. (I haven't had time to do this accurately myself yet.)
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

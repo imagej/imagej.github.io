@@ -15,4 +15,4 @@ description: test description
 
 This plugin is described in detail on the [BIG website](http://bigwww.epfl.ch/thevenaz/turboreg/).
 
-[Category:Plugins](Category_Plugins "wikilink")
+

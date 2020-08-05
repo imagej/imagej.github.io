@@ -38,4 +38,4 @@ This plugin implements the method described in the following paper:
 
 {% include bc content='Image | Color | Colour Deconvolution'%}
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Color processing](Category_Color_processing "wikilink")
+ 

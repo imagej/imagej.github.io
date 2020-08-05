@@ -218,4 +218,4 @@ The Fiji plugin GUI, developed by {% include person content='Iarganda' %}, [Step
   - Original SIOX project: http://www.siox.org/
   - SIOX project FAQs: http://www.siox.org/faq.html
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+ 

@@ -86,4 +86,4 @@ We also plan to update the ImageJ web site. In particular, we will deploy a new 
 
 For more information on future directions, see the [ImageJ roadmap](http://trac.imagej.net/roadmap).
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

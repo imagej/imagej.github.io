@@ -37,4 +37,4 @@ Our focus on a flexible and powerful infrastructure pays off in a particularly n
 
 Looking forward, 2014 will be a big year for ImageJ2: we are targeting a stable release of the ImageJ2 core this summer, with a focus on continued compatibility and synergy with ImageJ 1.x development. We will continue to post updates on this site as well as on the [Mailing Lists](Mailing_Lists "wikilink") keeping the community apprised of developments in ImageJ2 and Fiji.
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

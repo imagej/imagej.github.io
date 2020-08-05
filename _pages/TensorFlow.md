@@ -29,4 +29,4 @@ The [ImageJ-TensorFlow](https://github.com/imagej/imagej-tensorflow) project ena
   - The TensorFlow [update site](update_site "wikilink") to make TensorFlow features available in ImageJ.
   - [Microscope Focus Quality](Microscope_Focus_Quality "wikilink"), an ImageJ plugin which uses TensorFlow.
 
-[Category:Related Software](Category_Related_Software "wikilink") [Category:Citable](Category_Citable "wikilink") [Category:SciJava](Category_SciJava "wikilink")
+  

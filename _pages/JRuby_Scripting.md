@@ -259,4 +259,4 @@ JRuby offers some more nice features, have a look at them in the JRuby documenta
 
 And of course, if you want to know how to use a class from ImageJ or any of its projects, visit: https://javadoc.imagej.net.
 
-[Category:Scripting](Category_Scripting "wikilink")
+

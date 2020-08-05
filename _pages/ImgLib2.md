@@ -62,4 +62,4 @@ A history of API changes is available at: https://abi-laboratory.pro/java/tracke
 
 Pietzsch, T., Preibisch, S., Tomančák, P., & Saalfeld, S. (2012). [ImgLib2—generic image processing in Java](http://bioinformatics.oxfordjournals.org/content/28/22/3009.full). Bioinformatics, 28(22), 3009-3011.
 
-[Category:ImgLib](Category_ImgLib "wikilink") [Category:Citable](Category_Citable "wikilink")
+ 

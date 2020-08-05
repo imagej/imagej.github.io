@@ -104,4 +104,4 @@ There are two more options: RGB stack and HSV stack, which can turn a 2-dimensio
 
 Have a look at the list of [tutorials](_Category_Tutorials "wikilink") on this Wiki.
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

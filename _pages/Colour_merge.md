@@ -21,4 +21,4 @@ The {% include bc content='Plugins | Color functions | Color Merge'%} function g
 
 Run the plugin and select the two images or stacks to be merged. It can be 8-bit, 16-bit, RGB... Select the desired colors from the drop-down options. <Current> uses the LUT that the image currently has (this is often the desired LUT). The “Difference” option performs a “difference” arithmetic operation rather than a “addition”. If the “Pre-sub 2 from 1” option is checked the second image is subtracted from the first prior to merging.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Color processing](Category_Color_processing "wikilink")
+ 

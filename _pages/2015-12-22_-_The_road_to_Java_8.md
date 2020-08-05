@@ -69,4 +69,4 @@ It is the responsibility of individual update site maintainers to decide if and 
 
 Please post any comments to the [ImageJ forum](Help "wikilink"). Thank you for the continued feedback and support\!
 
-[Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Fiji](Category_Fiji "wikilink") [Category:News](Category_News "wikilink")
+  

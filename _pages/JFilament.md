@@ -21,4 +21,4 @@ M. B. Smith, H. Li, T. Shen, X. Huang, E. Yusuf, and D. Vavylonis, "Segmentation
 
 H. Li, T. Shen, M. B. Smith, I. Fujiwara, D. Vavylonis, and X. Huang, "Automated Actin Filament Segmentation, Tracking, and Tip Elongation Measurements based on Open Active Contour Models," In Proc. of the IEEE International Symposium on Biomedical Imaging: From Nano to Macro, ISBI-09, Boston, 2009 [2](http://www.ncbi.nlm.nih.gov/pubmed/20072703)
 
-[Category:Plugins](Category_Plugins "wikilink")
+

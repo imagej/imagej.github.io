@@ -17,4 +17,4 @@ This plugin generates theoretical PSFs, assuming they arise only from diffractio
 
 [Iterative Deconvolve 3D](Iterative_Deconvolve_3D "wikilink")
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Deconvolution](Category_Deconvolution "wikilink")
+ 

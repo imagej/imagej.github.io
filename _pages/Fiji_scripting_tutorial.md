@@ -9,4 +9,4 @@ description: test description
 
 Here is a link to Albert Cardona's [Fiji scripting tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/) using python (jython)
 
-[Category:Scripting](Category_Scripting "wikilink")
+

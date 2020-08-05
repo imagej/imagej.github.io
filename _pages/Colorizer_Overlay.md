@@ -80,4 +80,4 @@ GPL distribution licence.
 
 Let me know.
 
-[Category:Image annotation](Category_Image_annotation "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

@@ -17,4 +17,4 @@ We attended the [ImageJ User & Developer Conference 2010](Conference_2010 "wikil
 
 </div>
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Conference](Category_Conference "wikilink") [Category:Presentations](Category_Presentations "wikilink")
+   

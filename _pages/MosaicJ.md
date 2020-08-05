@@ -17,4 +17,4 @@ This plugin is described in detail on the [BIG website](http://bigwww.epfl.ch/th
 
 [Enable the BIG-EPFL update site](Following_an_update_site "wikilink") to gain access to the MosaicJ plugin. Find it in the menus at {% include bc content='Plugins | Stitching | MosaicJ'%}.
 
-[Category:Plugins](Category_Plugins "wikilink")
+

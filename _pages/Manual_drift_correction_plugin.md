@@ -65,4 +65,4 @@ This implementation could be improved. Here are a few feature that could be adde
   - Output transformations for analysis purpose.
   - Allow to choose the dimension along which to register (Z, time or channel).
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Registration](Category_Registration "wikilink")
+ 

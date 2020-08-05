@@ -10,4 +10,4 @@ description: test description
 {% include component-stats content='sc.fiji:blockmatching\_' %}{% include stub%}
 
 
-[Category:Plugins](Category_Plugins "wikilink")
+

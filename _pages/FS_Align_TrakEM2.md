@@ -10,4 +10,4 @@ description: test description
 {% include component-stats content='sc.fiji:FS\_Align\_TrakEM2' %}{% include stub%}
 
 
-[Category:Plugins](Category_Plugins "wikilink")
+

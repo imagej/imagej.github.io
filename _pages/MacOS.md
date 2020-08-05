@@ -69,4 +69,4 @@ Unfortunately, El Capitan has some new java-related issues. If you upgraded to E
 2.  If that does not work, see [this guide](https://oliverdowling.com.au/2015/10/09/oracles-jre-8-on-mac-os-x-el-capitan/) for steps which could get things working again.
 3.  Alternately, ImageJ still works on El Capitan with Java 6 (see above).
 
-[Category:Platforms](Category_Platforms "wikilink")
+

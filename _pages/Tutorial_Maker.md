@@ -19,4 +19,4 @@ This plugin makes writing tutorials on this Wiki a breeze.
 
 For details, see the [instructions](How_to_make_a_new_tutorial "wikilink")
 
-[Category:Plugins](Category_Plugins "wikilink")
+

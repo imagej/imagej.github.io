@@ -45,4 +45,4 @@ If you'd like to share an idea or project, please [share them with the community
 
   - {% include publication content='Fiji' %}
 
-[Category:Fiji](Category_Fiji "wikilink") [Category:Related Software](Category_Related_Software "wikilink") [Category:Citable](Category_Citable "wikilink")
+  

@@ -65,4 +65,4 @@ In step 4, `git svn` indeed picks up those pre-imported branches.
 
 Lastly, we initialize the local *master* branch to track Subversion's *trunk*.
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

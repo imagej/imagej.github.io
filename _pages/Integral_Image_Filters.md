@@ -121,7 +121,7 @@ with
 
 <references />
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Filtering](Category_Filtering "wikilink") [Category:Integral Image](Category_Integral_Image "wikilink")
+  
 
 1.  {% include cite content='conference' last='Crow ' first='Franklin C. ' title='Summed-area tables for texture mapping ' booktitle='Proceedings of the 11<sup>th</sup> annual conference on Computer graphics and interactive techniques ' series='SIGGRAPH "84 ' year='1984 ' pages='207–212 ' publisher='ACM ' address='New York, NY, USA ' isbn='0-89791-138-5 ' url='http://doi.acm.org/10.1145/800031.808600 ' doi='10.1145/800031.808600 ' %}
 2.  {% include cite content='conference' first='J. P. ' last='Lewis ' booktitle='Vision Interface ' volume='95 ' pages='120–123 ' publisher='Canadian Image Processing and Pattern Recognition Society ' title='Fast template matching ' year='1995 ' %}

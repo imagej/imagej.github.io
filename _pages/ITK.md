@@ -55,4 +55,4 @@ See also:
 
   - [How do I cite the use of ITK in a publication?](https://itk.org/Wiki/ITK/FAQ#How_do_I_cite_the_use_of_ITK_in_a_publication.3F)
 
-[Category:Related Software](Category_Related_Software "wikilink") [Category:Citable](Category_Citable "wikilink")
+ 

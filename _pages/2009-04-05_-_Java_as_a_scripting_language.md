@@ -15,4 +15,4 @@ The best thing about it: you can change the source in the .java file, and Fiji p
 
 So indeed, Java becomes a scripting language\!
 
-[Category:News](Category_News "wikilink")
+

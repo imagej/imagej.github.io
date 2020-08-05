@@ -50,4 +50,4 @@ To be compatible with the previous Arrow\_ tool, this plugin has a legacy mode t
 
 If you need this tool to do something more, do not hesitate to mail the maintainer. He will be pleased to implement it.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Image annotation](Category_Image_annotation "wikilink")
+ 

@@ -29,4 +29,4 @@ git remote set-url origin git://code.imagej.net/imagej.git
 
 We hope the new domain is less confusing and easier to remember\!
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

@@ -382,4 +382,4 @@ Image inImg = LOCI.openLOCIFloatType( file.getPath(), arrayContainerFactory );
 
 Note: OpenCL may use page-locked host memory when the "CL\_MEM\_ALLOC\_HOST\_PTR" flag is set.
 
-[Category:Outdated](Category_Outdated "wikilink")
+

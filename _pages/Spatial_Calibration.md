@@ -30,4 +30,4 @@ If you want to see the spatial calibration of an image, or even change it manual
   - Q) Can you measure the area of one of the spots?
   - Q) The pixel size on the camera CCD chip used to take the images is 16 micrometers in x and y. What is the real magnification of the 60x lens that was used?
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Techniques](Category_Techniques "wikilink")
+ 

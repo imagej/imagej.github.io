@@ -119,4 +119,4 @@ For the moment, we suggest using "The ImageJ ecosystem" paper for citations. But
 
   - [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet "wikilink")
 
-[Category:Software](Category_Software "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:SciJava](Category_SciJava "wikilink") [Category:Citable](Category_Citable "wikilink")
+   

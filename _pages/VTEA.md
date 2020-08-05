@@ -88,4 +88,4 @@ The utility of VTEA and 3D tissue cytometry was demonstrated in the following pu
 
 [**Quantitative Three-Dimensional Tissue Cytometry to Study Kidney Tissue and Resident Immune Cells**](http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full) Seth Winfree, Shehnaz Khan, Radmila Micanovic, Michael T. Eadon, Katherine J. Kelly, Timothy A. Sutton, Carrie L. Phillips, Kenneth W. Dunn, and Tarek M. El-Achkar JASN ASN.2016091027; published ahead of print February 2, 2017, <doi:10.1681/ASN.2016091027>
 
-[Category:Segmentation](Category_Segmentation "wikilink") [Category:Visualization](Category_Visualization "wikilink") [Category:Plugins](Category_Plugins "wikilink") [Category:Citable](Category_Citable "wikilink")
+   

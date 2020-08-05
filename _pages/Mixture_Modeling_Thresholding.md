@@ -21,4 +21,4 @@ The plugin returns a histogram with the two Gaussians, the parameters obtained (
 
 It has the same drawbacks as the [Otsu Thresholding](Otsu_Thresholding "wikilink") plugin (by the same author), which is that it behaves annoyingly with stacks.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+ 

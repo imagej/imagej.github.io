@@ -55,4 +55,4 @@ After Retinex (default parameters): ![Photo1-Retinex.jpg](/images/pages/Photo1-R
 
 Please find the original page for the Retinex plugin [here](http://www.mecourse.com/landinig/software/retinex/retinex.html).
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

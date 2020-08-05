@@ -73,4 +73,4 @@ Now you should mark the corresponding points in this image in the same way as fo
 
 ![Landmarks-09-registered-and-overlayed.png](/images/pages/Landmarks-09-registered-and-overlayed.png "Landmarks-09-registered-and-overlayed.png")
 
-[Category:Plugins](Category_Plugins "wikilink")
+

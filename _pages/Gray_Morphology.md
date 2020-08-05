@@ -13,4 +13,4 @@ For more information on morphological operators in image processing, have a look
 
 See also [Gray Morphology at the ImageJ 1.x website](https://imagej.net/plugins/gray-morphology.html).
 
-[Category:Segmentation](Category_Segmentation "wikilink") [Category:Mathematical\_morphology](Category_Mathematical_morphology "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+  

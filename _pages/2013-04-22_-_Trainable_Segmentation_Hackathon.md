@@ -35,4 +35,4 @@ Hence, once Trainable Segmentation is ported to work on ImgLib2 structures, it w
 
 All in all, a very productive hackathon\!
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink") [Category:Hackathons](Category_Hackathons "wikilink")
+  

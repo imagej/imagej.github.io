@@ -63,4 +63,4 @@ IJ.run("Images to Stack", "name=TaggedMovie title=Tagged use")
 IJ.log("Done!")
 ```
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Jython](Category_Jython "wikilink") [Category:Scripting](Category_Scripting "wikilink") [Category:Analysis](Category_Analysis "wikilink") [Category:Skeleton](Category_Skeleton "wikilink")
+    

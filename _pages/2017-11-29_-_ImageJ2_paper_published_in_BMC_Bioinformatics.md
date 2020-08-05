@@ -15,4 +15,4 @@ Please [cite it](Citing "wikilink") if you use ImageJ2 in your work\! Thank you\
 
 P.S. You can also [find the LaTeX source on GitHub](https://github.com/imagej/imagej2-manuscript-2017).
 
-[Category:News](Category_News "wikilink") [Category:ImageJ2](Category_ImageJ2 "wikilink")
+ 

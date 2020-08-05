@@ -509,4 +509,4 @@ This menu contains several options which provide quick ways to analyze and visua
 Provides controls for all filling operations. It is described in more detail in the [Filling: Step-By-Step Instructions](SNT__Step-By-Step_Instructions#Filling "wikilink"). {% include sntnavbar%}
 
 
-[Category:SNT](Category_SNT "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink")
+ 

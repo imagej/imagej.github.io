@@ -70,4 +70,4 @@ Normally, the Segmentation Editor opens during the software execution and asks t
 
 ![VIB\_Protocol\_4.png](/images/pages/VIB Protocol 4.png "VIB_Protocol_4.png")
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Segmentation](Category_Segmentation "wikilink")
+ 

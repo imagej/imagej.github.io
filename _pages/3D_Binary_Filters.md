@@ -31,4 +31,4 @@ The image below shows the effect of the 'Erode' and 'Dilate' filters, using the 
 
 ![ErodeDilate.png](/images/pages/ErodeDilate.png "ErodeDilate.png")
 
-[Category:Binary](Category_Binary "wikilink")
+

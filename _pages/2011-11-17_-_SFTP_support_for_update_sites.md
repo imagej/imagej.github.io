@@ -11,4 +11,4 @@ Thanks to [Jarek Sacha](http://ij-plugins.sourceforge.net/), our [Fiji Updater](
 
 To enable SFTP support, just prefix *sftp:* in front of the SSH host in the [update site configuration](Adding_Update_Sites "wikilink").
 
-[Category:News](Category_News "wikilink")
+

@@ -65,4 +65,4 @@ See also these past threads from the ImageJ [mailing list](mailing_list "wikilin
   - 2012-04-19 - [Accessing a DICOM header](http://imagej.1557.x6.nabble.com/Accessing-a-DICOM-header-tt4898551.html)
   - 2012-04-13 - [Query Dicom Header](http://imagej.1557.x6.nabble.com/Query-Dicom-Header-tp4877985.html)
 
-[Category:Import-Export](Category_Import-Export "wikilink")
+

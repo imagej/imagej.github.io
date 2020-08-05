@@ -230,4 +230,4 @@ All of these discussions benefited incredibly from the fact that all the people 
   - Plans for releases via the Fiji Updater (once it supports multiple update sites) (Arthur Edelstein).
   - Combining Micro-Manager and Fiji for automatic acquisition of insitus using a feedback loop to find the samples (Erwin Frise).
 
-[Category:Hackathons](Category_Hackathons "wikilink")
+

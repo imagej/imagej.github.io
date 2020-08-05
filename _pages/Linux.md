@@ -30,4 +30,4 @@ See the [Troubleshooting](Troubleshooting "wikilink") page.
 
 See the [Frequently Asked Questions](Frequently_Asked_Questions "wikilink") page.
 
-[Category:Platforms](Category_Platforms "wikilink")
+

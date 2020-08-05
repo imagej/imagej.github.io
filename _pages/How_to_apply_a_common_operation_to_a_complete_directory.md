@@ -123,4 +123,4 @@ The dialog would need to be filled out like this:
 
 ![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-9.jpg](/images/pages/How to apply a common operation to a complete directory-9.jpg "How_to_apply_a_common_operation_to_a_complete_directory-9.jpg")
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

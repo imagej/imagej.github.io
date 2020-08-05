@@ -20,4 +20,4 @@ description: test description
 
   - [the sources for this workshop, completed examples and pictures](_File_ImgLib2_Introduction.zip "wikilink")
 
-[Category:ImgLib](Category_ImgLib "wikilink")
+

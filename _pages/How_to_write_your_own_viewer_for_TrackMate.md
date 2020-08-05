@@ -232,4 +232,4 @@ But how could I make use of it then? you want to ask. Fortunately, this is just 
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 10:51, 17 March 2014 (CDT)
 
-[Category:Tutorials](Category_Tutorials "wikilink")
+

@@ -15,4 +15,4 @@ In related news, we added the [Google +1 button](http://www.google.com/+1/button
 
 As always, [your feedback](mailto:fiji-devel@googlegroups.com) is welcome\!
 
-[Category:News](Category_News "wikilink")
+

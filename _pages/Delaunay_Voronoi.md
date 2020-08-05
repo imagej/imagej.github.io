@@ -60,4 +60,4 @@ Options include:
   - 2007/07/20: Optionally generate a ROI instead of an overlay or drawing the lines
   - 2008/11/27: Optionally export the lines of the Delaunay Triangulation into the Results table
 
-[Category:Plugins](Category_Plugins "wikilink")
+

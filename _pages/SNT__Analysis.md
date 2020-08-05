@@ -141,4 +141,4 @@ It is possible to script your own analysis routines. See [SNT:\_Scripting](https
 {% include sntnavbar%}
 
 
-[Category:SNT](Category_SNT "wikilink") [Category:Neuroanatomy](Category_Neuroanatomy "wikilink")
+ 

@@ -81,4 +81,4 @@ The RF algorithm uses numerous (default 200) {% include wikipedia title='Decisio
 
 Once the classifier is built from the user chosen pixels (with their associated feature data)/class assignments and the entire training image or a new image is staged for classification, each pixel is classified by all the trees and is assigned to the class with the highest 'vote.'
 
-[Category:Segmentation](Category_Segmentation "wikilink") [Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+  

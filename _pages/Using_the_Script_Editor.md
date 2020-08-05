@@ -97,4 +97,4 @@ You can use all of ImageJ's classes right away. Here is an example that shows a 
 
 See the [Scripting Help](Scripting_Help "wikilink") page for an introduction to scripting. For more information about each specific language, see the Languages section of top right sidebar.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Tutorials](Category_Tutorials "wikilink") [Category:Scripting](Category_Scripting "wikilink")
+  

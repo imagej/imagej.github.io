@@ -47,4 +47,4 @@ BoneJ and pQCT plug-ins are in the process of separation. The latter have their 
 
   - {% include publication content='BoneJ' %}
 
-[Category:Related Software](Category_Related_Software "wikilink") [Category:Citable](Category_Citable "wikilink")
+ 

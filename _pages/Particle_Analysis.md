@@ -84,4 +84,4 @@ You can use the built-in [Multi-point Tool](https://imagej.net/docs/guide/146-19
 
 **Manual Tracking** Use the menu command {% include bc content='Plugins | Tracking | Manual Tracking'%}. This tool allows you to keep track of the movement of a cell.
 
-[Category:Cookbook](Category_Cookbook "wikilink") [Category:Tutorials](Category_Tutorials "wikilink")
+ 

@@ -28,4 +28,4 @@ The packager includes files from the following subdirectories of *Fiji.app/*:
 
 It also includes the ImageJ launcher and the updater database including the current list of update sites.
 
-[Category:Tutorials](Category_Tutorials "wikilink") [Category:Plugins](Category_Plugins "wikilink")
+ 

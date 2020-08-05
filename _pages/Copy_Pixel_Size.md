@@ -21,4 +21,4 @@ A second dialog allows to enter the scale factors.
 
 Available as part of the [Cookbook](Cookbook "wikilink") suite of plugins.
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Image annotation](Category_Image_annotation "wikilink")
+ 

@@ -17,4 +17,4 @@ From the plugin webpage:
 
 Image:RGB\_profile\_example\_1.png|Original RGB image and line selection (black) Image:RGB\_profile\_example\_2.png|Resulting profile
 
-[Category:Plugins](Category_Plugins "wikilink") [Category:Color processing](Category_Color_processing "wikilink")
+ 
