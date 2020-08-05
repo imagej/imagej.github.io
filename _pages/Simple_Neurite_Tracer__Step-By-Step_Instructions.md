@@ -20,7 +20,7 @@ These "step-by-step" instructions below assume that you have done the preliminar
 
 ### 1\. Pick a start point
 
-Before you pick a start point for your first path, the tracer will look like this: ![](Snt-cropped-before-starting.png) Move through the image stack to find the start point of a path, then click there with the left mouse button.
+Before you pick a start point for your first path, the tracer will look like this: ![](/images/pages/Snt-cropped-before-starting.png) Move through the image stack to find the start point of a path, then click there with the left mouse button.
 
 ### 2\. Click a subsequent point
 

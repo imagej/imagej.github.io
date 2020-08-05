@@ -119,7 +119,7 @@ Press the **Redo layout** button when you are done. There should be four tracks 
 
 We now wish to correct for segmentation mistakes, that caused some nuclei to be missed. Creating new spots is made directly in the HyperStack displayer. First, make sure the TrackMate tool (represented by a blue track over a green background) is selected in the ImageJ toolbar, as pictured below:
 
-![](TrackMate_Toolbar.png)
+![](/images/pages/TrackMate Toolbar.png)
 
 The HyperStack displayer let you edit spots in two ways:
 

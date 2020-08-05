@@ -750,7 +750,7 @@ Tip: if you add a shortcut for the "Display Volume" plugin, it is easily possibl
 
 As an example, the above figure displays the view of the orthogonal slicer applied to the 3D volume displayed in the ["Pore Size Distribution"](#Pore_Size_Distribution "wikilink") section (top). The red cross-lines of the slicer show the current 3D cursor position which allows interactively focusing any point in the 3D space. The position vector and the associated image value are plotted to the ImageJ window (top).
 
-![](xFig9_2.jpg)
+![](/images/pages/XFig9 2.jpg)
 
 ### Edit Label Region
 

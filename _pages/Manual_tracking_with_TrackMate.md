@@ -11,7 +11,7 @@ The previous TrackMate tutorial - [Manual editing of tracks using TrackMate](Man
 
 ## Setting up
 
-![](TrackMate_ManualTrackingEntryPoint.png)
+![](/images/pages/TrackMate ManualTrackingEntryPoint.png)
 
 There is not much to do. We will use the same, simple dataset that for [Getting started with TrackMate](Getting_started_with_TrackMate ). You can find it in {% include bc content='File | Open Samples | Tracks for TrackMate (807K)'%}.
 
@@ -26,13 +26,13 @@ You should should get the layout pictured on the right. Notice that we are alrea
 
 The default view (the one that re-uses the HyperStack viewer of ImageJ) can readily edit the tracks. You just have to make sure that the TrackMate tool is selected in the ImageJ toolbar:
 
-![](TrackMate_Toolbar.png)
+![](/images/pages/TrackMate Toolbar.png)
 
 With this tool selected, you can now make the image window active and use the mouse of the keyboard to create spots. Here are the commands for the mouse:
 
   - **Double-click** anywhere in the image to create a spot and enter the edit mode. The edited spot is highlighted with a green, dashed circle, as pictured below:
 
-![](TrackMate_SpotEditMode.png)
+![](/images/pages/TrackMate SpotEditMode.png)
 
   - To leave the edit mode, **double-click** again anywhere. The spot is then added to the data model.
   - To edit it again, **double-click inside the spot**. Its outline is now dashed; you are back in the edit mode.
@@ -48,11 +48,11 @@ This is how you edit the data with the mouse. You can also use the keyboard:
 
 And that's it for spot creation.
 
-![](TrackMate_CreateSpots.png)
+![](/images/pages/TrackMate CreateSpots.png)
 
 ## Create and removing single links
 
-![](TrackMate_CreateSingleLink.png)
+![](/images/pages/TrackMate CreateSingleLink.png)
 
 All we have done so far was to create single spots, that are not part of any tracks. Tracks are created on the fly when you link several spots together. You can do it in [TrackScheme](TrackScheme ), as explained elsewhere. Here is how to do it directly on the image. To go on, create a few spots above the bright blob of the source image. We need at least a couple of them in consecutive frames.
 
@@ -68,7 +68,7 @@ Removing a link is done the same way: Select exactly two spots that are connecte
 
 ## The auto-linking mode
 
-![](TrackMate_ManualTracking_1.png)
+![](/images/pages/TrackMate ManualTracking 1.png)
 
 Creating long tracks this way would be tedious, as you would always have to select a spot before creating a link. There is way to simplify this.
 
@@ -79,7 +79,7 @@ Let's apply this to our data. First create a spot over the bright blob at the to
 {% include clear%}
 
 
-![](TrackMate_ManualTracking_2.png)
+![](/images/pages/TrackMate ManualTracking 2.png)
 
 Tracks created this way do not have to be linear. You can create branching segments simply by remembering that in the auto-linking mode, links are created between the last selected spot.
 
@@ -90,7 +90,7 @@ Therefore, to create the branch that goes on the right, go back on the frame 9 (
 
 ## Tracks are updated live
 
-![](TrackMate_ManualTracking_3.png)
+![](/images/pages/TrackMate ManualTracking 3.png)
 
 Note that you do not have to worry about what track a spot belongs to when creating a link. Tracks are automatically managed on the fly. If you now create a second link between a pair of spots that are not connected with anything, a new track will be created automatically, and the color of the first ones will change.
 

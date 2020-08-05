@@ -39,7 +39,7 @@ How to use :
   - Launch KymographBuilder : {% include bc content='Plugins|Kymograph|KymographBuilder'%}
   - You're done.
 
-![](Kymograph_Construction.png)
+![](/images/pages/Kymograph Construction.png)
 
 ## Scripting
 

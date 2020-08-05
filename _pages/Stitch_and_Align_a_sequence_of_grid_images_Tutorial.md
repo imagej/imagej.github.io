@@ -86,7 +86,7 @@ We then click on OK and the alignment starts.
 
 After few minutes (depending on the computer and number of CPUs), when the alignment is done, aligned images are saved to the specified output folder and results will be displayed as a virtual stack.
 
-![Screenshot-aligned-stack-(V).png](Screenshot-aligned-stack-\(V\).png "Screenshot-aligned-stack-(V).png")
+![Screenshot-aligned-stack-(V).png](/images/pages/Screenshot-aligned-stack-\(V\).png "Screenshot-aligned-stack-(V).png")
 
 **Performance**: the alignment of the 140 slices (and their resizing) took around 20 minutes in a 8-CPUs Intel Core Duo at 3.4GHz, 32GB of RAM, running on Linux 64-bit.
 

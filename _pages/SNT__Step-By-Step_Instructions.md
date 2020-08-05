@@ -94,7 +94,7 @@ If both nodes are terminal, the paths are merged together. Otherwise, one path w
 
 ## Tracing in the Legacy 3D Viewer
 
-It remains possible to trace in the legacy 3D Viewer. ![](SNT-3D-Dialog.png)
+It remains possible to trace in the legacy 3D Viewer. ![](/images/pages/SNT-3D-Dialog.png)
 
 ### I.Starting the Viewer
 
@@ -168,7 +168,7 @@ This section describes how to generate [Filtered Images](SNT__Overview#Tracing_o
 
 #### A Single Image
 
-To process a single image with the Frangi Vesselness filter, pause SNT, and select {% include bc content='Process | Filters | Frangi Vesselness'%}. By way of example, let's say you need to enhance strucutres at two scales: twice the x voxel separation and five times that value. We apply a Gaussian convolution at each scale. Assuming your image has isotropic resolution with pixel width = pixel height = voxel depth = 1, the parameters would be: ![](frangi-parameters.png) 
+To process a single image with the Frangi Vesselness filter, pause SNT, and select {% include bc content='Process | Filters | Frangi Vesselness'%}. By way of example, let's say you need to enhance strucutres at two scales: twice the x voxel separation and five times that value. We apply a Gaussian convolution at each scale. Assuming your image has isotropic resolution with pixel width = pixel height = voxel depth = 1, the parameters would be: ![](/images/pages/Frangi-parameters.png) 
 {% capture tip%}
 To get the spatial calibration for your image, go to {% include bc content='Image|Properties...'%} ({% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='P' %}) in the main Fiji dialog.
 {% endcapture %}

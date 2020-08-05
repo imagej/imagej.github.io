@@ -30,14 +30,14 @@ The Reconstruction Viewer may be used as either a standalone program or from wit
 
 # Scene Interaction
 
-The display canvas supports multiple modes of interaction, including controlled rotations, panning, zoom, scaling, animation, and alternation between "dark" and "light" modes. The full list of keyboard shortcuts is found by navigating to {% include bc content='Scene Controls|Scene Shortcuts...'%} from RV Controls, or by pressing {% include key content='H' %} (notification) or {% include key content='F1' %} (separate window) in the Viewer scene. ![](reconstruction-viewer-shortcuts.png) {% include clear%}
+The display canvas supports multiple modes of interaction, including controlled rotations, panning, zoom, scaling, animation, and alternation between "dark" and "light" modes. The full list of keyboard shortcuts is found by navigating to {% include bc content='Scene Controls|Scene Shortcuts...'%} from RV Controls, or by pressing {% include key content='H' %} (notification) or {% include key content='F1' %} (separate window) in the Viewer scene. ![](/images/pages/Reconstruction-viewer-shortcuts.png) {% include clear%}
 
 
 # RV Controls
 
 ## Scene Controls
 
-![](reconstruction-viewer-scene-controls.png) This menu provides control over the rendered scene.
+![](/images/pages/Reconstruction-viewer-scene-controls.png) This menu provides control over the rendered scene.
 
   - {% include bc content='Fit to Visible Objects'%} {% include key content='F' %} Computes a bounding box containing all objects of the scene and adjusts the zoom level to ensure all objects are within the camera view.
   - {% include bc content='Stretch-to-Fill'%} Stretches the projection on the whole viewport.
@@ -71,7 +71,7 @@ This menu relates to the import, customization and management of rendered recons
 
 ### Add
 
-![](reconstruction-manage-arbors-menu.png)
+![](/images/pages/Reconstruction-manage-arbors-menu.png)
 
   - {% include bc content='Import File...'%} Imports and renders a single reconstruction file (".swc" or ".traces"). A color may be chosen on import or applied later using the "Customize & Adjust" sub-menu. Note that loaded files will not be listed in the Path Manager.
   - {% include bc content='Import Directory...'%} Imports and renders all reconstruction files in a directory. A single color may be applied to all reconstructions or they may be colored uniquely. Note that loaded files will not be listed in the Path Manager.
@@ -124,7 +124,7 @@ This menu relates to the import, customization and management of rendered recons
 
 ## Manage and Customize 3D Meshes
 
-![](reconstruction-viewer-mesh-controls.png) ![{% include bc content='Customize|All Parameters...'%}](/images/pages/Reconstruction-viewer-customize-mesh-controls.png "{% include bc content='Customize|All Parameters...'%}")
+![](/images/pages/Reconstruction-viewer-mesh-controls.png) ![{% include bc content='Customize|All Parameters...'%}](/images/pages/Reconstruction-viewer-customize-mesh-controls.png "{% include bc content='Customize|All Parameters...'%}")
 
 ### Add
 
@@ -153,7 +153,7 @@ This menu relates to the import, customization and management of rendered recons
 
 ## Reference Brains
 
-This menu allows import of several Drosophila, Zebrafish and Mouse reference brains and anatomical compartments. ![](reconstruction-reference-brains-menu.png)
+This menu allows import of several Drosophila, Zebrafish and Mouse reference brains and anatomical compartments. ![](/images/pages/Reconstruction-reference-brains-menu.png)
 
 ### Mouse
 
@@ -193,7 +193,7 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 ## Analyze and Measure
 
-![](reconstruction-viewer-measurement-menu.png) This menu houses several functions to measure and analyze loaded reconstructions.
+![](/images/pages/Reconstruction-viewer-measurement-menu.png) This menu houses several functions to measure and analyze loaded reconstructions.
 
 ### Tabular Results
 

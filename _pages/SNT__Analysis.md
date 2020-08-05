@@ -104,33 +104,33 @@ Fine-grained programmatic control over SNT's Graph objects is achieved using the
 
 The {% include bc content='Utilities|Compare Reconstructions...'%} command will bring up a prompt which gives the user the option to compare two single reconstruction files against multiple metrics, or multiple groups of reconstruction files against a single metric.
 
-![](Snt-Compare-Reconstructions-Single-Or-Group-Choice.png)
+![](/images/pages/Snt-Compare-Reconstructions-Single-Or-Group-Choice.png)
 
 If you select, *Compare two files* and press *OK*, a file chooser dialog will appear allowing the user to select two SWC files and their respective colors for display in Reconstruction Viewer.
 
-![](Snt-Compare-Reconstructions-Single-File-Chooser.png)
+![](/images/pages/Snt-Compare-Reconstructions-Single-File-Chooser.png)
 
-![](Snt-Compare-Reconstructions-Single-3DViewer-Result.png)
+![](/images/pages/Snt-Compare-Reconstructions-Single-3DViewer-Result.png)
 
-Use the *Browse* button to select the two files and press 'OK' to run the analysis. The results will include a table containing results of the *Quick Measurements* function for both reconstructions, as well as an instance of the 3D Reconstruction Viewer displaying both reconstructions. ![](Snt-Compare-Reconstructions-Single-Measurements-Table.png) {% include clear%}
+Use the *Browse* button to select the two files and press 'OK' to run the analysis. The results will include a table containing results of the *Quick Measurements* function for both reconstructions, as well as an instance of the 3D Reconstruction Viewer displaying both reconstructions. ![](/images/pages/Snt-Compare-Reconstructions-Single-Measurements-Table.png) {% include clear%}
  To instead compare multiple groups of reconstruction files against a single metric, choose *Compare groups of cells (two or more)* in the initial prompt.
 
-![](Snt-Compare-Reconstructions-Group-File-Chooser.png)
+![](/images/pages/Snt-Compare-Reconstructions-Group-File-Chooser.png)
 
 The file selection prompt for this option allows selection of up to four directories containing SWC files. The metric to compare against is chosen from the *Metric* drop-down menu. Optionally, the user may restrict the analysis to specific neurite compartments. After making your selections, press *OK* to run the analysis. The result include multi-panel figure(s) rendering up to ten reconstructions from each group, a window with the metric statistics on each group, a box-plot and a histogram. These figures can all be exported as PNG or SVG.
 
 <div align="center">
 
-  - ![](Snt-Compare-Reconstruction-Group-Render1.png)
-  - ![](Snt-Compare-Reconstruction-Group-Render2.png)
+  - ![](/images/pages/Snt-Compare-Reconstruction-Group-Render1.png)
+  - ![](/images/pages/Snt-Compare-Reconstruction-Group-Render2.png)
 
 </div>
 
 <div align="center">
 
   - ![Snt-Compare-Reconstruction-Group-Statistics-Window.png](/images/pages/Snt-Compare-Reconstruction-Group-Statistics-Window.png "Snt-Compare-Reconstruction-Group-Statistics-Window.png")
-  - ![](Snt-Compare-Reconstruction-Group-Box-Plot.png)
-  - ![](Snt-Compare-Reconstruction-Group-Histogram.png)
+  - ![](/images/pages/Snt-Compare-Reconstruction-Group-Box-Plot.png)
+  - ![](/images/pages/Snt-Compare-Reconstruction-Group-Histogram.png)
 
 </div>
 

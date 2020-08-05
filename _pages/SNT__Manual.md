@@ -35,7 +35,7 @@ SNT registers three commands in Fiji's menu structure in the {% include bc conte
 
 ### File
 
-Lists commands for I/O operations. Most are self-explanatory. Noteworthy: ![](SNT-From-Open-Image-Prompt.png)
+Lists commands for I/O operations. Most are self-explanatory. Noteworthy: ![](/images/pages/SNT-From-Open-Image-Prompt.png)
 
   - {% include bc content='Choose Tracing Image| '%} Specifies the image to trace on without having to restart SNT. To trace on an image currently open in ImageJ, use *From Open Image...*. A prompt with the currently open images will appear, allowing selection of one. To browse for an image file, use *From File...*. You should toggle the *validate spatial calibration* checkbox to ensure the image to be imported is compatible with the existing one.
 
@@ -43,7 +43,7 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy: ![](SN
 
   - {% include bc content='Import| Labels (AmiraMesh)...'%} This option assumes you are tracing on the same spatial coordinates of an annotated neuropil, for which compartments have been segmented (*labeled*) and stored in an [Amira](https://amira.zib.de/) labels file. Once loaded, SNT will report the name of the compartments in the ImageJ status bar when hovering over the image.
 
-![](SNT-MouseLight-Remote-Loader-Prompt.png)
+![](/images/pages/SNT-MouseLight-Remote-Loader-Prompt.png)
 
   - {% include bc content='Import| Remote Databases| '%} Allows import of neuronal reconstructions from the [FlyCircuit](http://www.flycircuit.tw/), [MouseLight](https://ml-neuronbrowser.janelia.org/) and [NeuroMorpho](http://neuromorpho.org/) remote databases.
 
@@ -203,7 +203,7 @@ Any combination of these options may be toggled simultaneously. Note that these 
 
 ### Default Path Colors
 
-![](Default-path-colors.png) ![CMYK color selection UI](/images/pages/CMYK-color-model.png "CMYK color selection UI") By default, finished paths are colored by their selection status (only selected paths can be edited, or extended). The default colors are <font color="#00FF00">Green</font> (selected paths) and <font color="#FF00FF">Magenta</font> (deselected). Default colors can be customized by pressing the respective button in the widget and using the [CMYK color chooser](https://en.wikipedia.org/wiki/CMYK_color_model). For customizing unconfirmed and temporary paths, see the *Colors* option in the [UI Interaction](#UI_Interaction "wikilink") widget.
+![](/images/pages/Default-path-colors.png) ![CMYK color selection UI](/images/pages/CMYK-color-model.png "CMYK color selection UI") By default, finished paths are colored by their selection status (only selected paths can be edited, or extended). The default colors are <font color="#00FF00">Green</font> (selected paths) and <font color="#FF00FF">Magenta</font> (deselected). Default colors can be customized by pressing the respective button in the widget and using the [CMYK color chooser](https://en.wikipedia.org/wiki/CMYK_color_model). For customizing unconfirmed and temporary paths, see the *Colors* option in the [UI Interaction](#UI_Interaction "wikilink") widget.
 
 **Enforce default colors (ignore color tags)** If active, SNT will force all paths to conform to the default "Selected" and "Deselected" color buttons. Any custom color tags will be ignored until the option is toggled off. Note that this options does not apply to [Rec. Viewer](SNT__Reconstruction_Viewer ) and [SciView](SciView ).
 
@@ -233,7 +233,7 @@ This tab aggregated widgets for advanced settings.
 
 ### Views
 
-![](SNT-views-widget.png)
+![](/images/pages/SNT-views-widget.png)
 
   - **Overlay MIP(s) at X% opacity** Overlays the [Maximum Intensity Projection](https://en.wikipedia.org/wiki/Maximum_intensity_projection) of the image "over" the image canvas at the specified opacity. The overlaid projection is only used as a visualization aid and is ignored by the auto-tracing algorithms. It is rendered using the LUT of the channel currently being traced. To reload the overlay (e.g., in case the image being traced changes during a tracing session) toggle the checkbox twice.
 
@@ -270,7 +270,7 @@ This tab aggregated widgets for advanced settings.
 
 ### UI Interaction
 
-![](SNT-UI-interaction-widget.png)
+![](/images/pages/SNT-UI-interaction-widget.png)
 
   - **Colors** Specifies how components should be rendered, including:
       - **Canvas annotations** The label shown on the top-left corner of the views indicating the state of the UI ("Tracing Paused", "Choosing Sigma", etc.)
@@ -460,7 +460,7 @@ This menu contains several options which provide quick ways to analyze and visua
 |                                        |
 | -------------------------------------- |
 | Intensity profile for Path 0 of OP\_1. |
-| ![](SNT-Path-Profile-Graph.png)        |
+| ![](/images/pages/SNT-Path-Profile-Graph.png)        |
 |                                        |
 
 </center>
@@ -494,7 +494,7 @@ This menu contains several options which provide quick ways to analyze and visua
 
 ## Filter Toolbar
 
-![](SNT-Path-Manager-Text-Filter.png) The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The {% include key content='down' %} and {% include key content='up' %} arrow keys find the next/previous occurrence of the entered phrase, while the ![SNT-Text-Filter-Balloon-Button.png](/images/pages/SNT-Text-Filter-Balloon-Button.png "SNT-Text-Filter-Balloon-Button.png") button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the ![SNT-Text-Filter-Menu-Button.png](/images/pages/SNT-Text-Filter-Menu-Button.png "SNT-Text-Filter-Menu-Button.png") button, including wildcard support, case sensitive matching, and replace-by-pattern. In addition, the ![SNT-Text-Filter-Advanced-Button.png](/images/pages/SNT-Text-Filter-Advanced-Button.png "SNT-Text-Filter-Advanced-Button.png") button restricts filtering to the selected subset of Path(s). Other means of filtering Paths include: !["Color Filters" menu](SNT-Path-Manager-Text-Filter-Color-Filters.png "\"Color Filters\" menu")
+![](/images/pages/SNT-Path-Manager-Text-Filter.png) The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The {% include key content='down' %} and {% include key content='up' %} arrow keys find the next/previous occurrence of the entered phrase, while the ![SNT-Text-Filter-Balloon-Button.png](/images/pages/SNT-Text-Filter-Balloon-Button.png "SNT-Text-Filter-Balloon-Button.png") button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the ![SNT-Text-Filter-Menu-Button.png](/images/pages/SNT-Text-Filter-Menu-Button.png "SNT-Text-Filter-Menu-Button.png") button, including wildcard support, case sensitive matching, and replace-by-pattern. In addition, the ![SNT-Text-Filter-Advanced-Button.png](/images/pages/SNT-Text-Filter-Advanced-Button.png "SNT-Text-Filter-Advanced-Button.png") button restricts filtering to the selected subset of Path(s). Other means of filtering Paths include: !["Color Filters" menu](SNT-Path-Manager-Text-Filter-Color-Filters.png "\"Color Filters\" menu")
 
   - **Color Filters** ![SNT-Text-Filter-Color-Button.png](/images/pages/SNT-Text-Filter-Color-Button.png "SNT-Text-Filter-Color-Button.png") Allows filtering of Paths by color tags. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
   - **Morphology Filters** ![SNT-Text-Filter-Morphology-Button.png](/images/pages/SNT-Text-Filter-Morphology-Button.png "SNT-Text-Filter-Morphology-Button.png") Allows filtering of Paths by selected morphological properties (including cell identity). Note that these filters do not require Paths to be labeled using {% include bc content='Tag|Morphology| '%}.

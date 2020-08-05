@@ -539,7 +539,7 @@ def convert(path_in, path_out, layout, title):
         content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
         content_tmp = re.sub(r'((?<!\!)\[[^\]]*\]\()((?!#)(?!http)(?!mailto\:)(?:[^\)\"]|(?:\\\)))*)([.]*(?:\"[^\"]*\")?(?<!\\)\))', fix_link_match, content_tmp)
         content_tmp = re.sub(r'<img src=\"(?!http)(?!/images/pages/)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
-        content_tmp = re.sub(r'(\!\[[^\]]*\]\()((?!\/images\/pages\/)[^\"\)]*)([ \n]*\"[^\"]*\"[ ]*\))', fix_md_image, content_tmp)
+        content_tmp = re.sub(r'((?<!-)\!\[(?!\[)[^\]]*\]\()((?!http)(?!\/images\/pages\/)[^\"\)]*)([ \n]*(?:\"[^\"]*\")?[ ]*\))', fix_md_image, content_tmp)
 
         # pattern = re.compile(include_regex)
         # for match in re.findall(pattern, content_tmp):
