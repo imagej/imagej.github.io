@@ -1,2 +1,0 @@
-<div class="references-small {{#if: {{{colwidth|}}} | references-column-width | {{#iferror: {{#ifexpr: {{{1|1}}}>1 | references-column-count references-column-count-{{{1}}} }} }} }}" {{#if: {{{colwidth|}}}| style="-moz-column-width:{{{colwidth}}}; column-width:{{{colwidth}}};" | {{#if: {{{1|}}}| style="-moz-column-count:{{{1}}}; column-count:{{{1}}};" }} }}>
-{{#tag:references||group={{{group|}}}}}</div><noinclude>{{pp-template|small=yes}}{{documentation}}</noinclude>
