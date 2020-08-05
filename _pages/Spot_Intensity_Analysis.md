@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='nicost ' repo='spotIntensityAnalysis ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Spot Intensity Analysis ' author='Nico Stuurman (nico.stuurman at ucsf.edu), algorithm and testing by Ankur Jain (ankurjain85 at gmail.com) ' maintainer=' [Nico Stuurman](http://valelab.ucsf.edu/external/people/p-stuurman.htm) ' source=source released='2015/09/15 ' latest-version='2018/01/18 - version 0.3 ' status=' ' category='[:Category:Particle\_analysis](_Category_Particle_analysis ) ' %}
+{% include info-box software='ImageJ ' name='Spot Intensity Analysis ' author='Nico Stuurman (nico.stuurman at ucsf.edu), algorithm and testing by Ankur Jain (ankurjain85 at gmail.com) ' maintainer=' [Nico Stuurman](http://valelab.ucsf.edu/external/people/p-stuurman.htm) ' source=source released='2015/09/15 ' latest-version='2018/01/18 - version 0.3 ' status=' ' category='[:Category:Particle\_analysis](Category_Particle_analysis ) ' %}
 
 Simple ImageJ/Fiji plugin to plot intensity of a spot over time.
 

@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji ' repo='PointPicker ' source='PointPicker\_.java ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='PointPicker ' maintainer='Philippe Thévenaz ' author='Philippe Thévenaz ' source=source released='16/09/2010 ' latest-version='16/09/2010 ' status=' ' category='[:Category:Plugins](_Category_Plugins ) ' website='http://bigwww.epfl.ch/thevenaz/pointpicker/ ' %}
+{% include info-box software='ImageJ ' name='PointPicker ' maintainer='Philippe Thévenaz ' author='Philippe Thévenaz ' source=source released='16/09/2010 ' latest-version='16/09/2010 ' status=' ' category='[:Category:Plugins](Category_Plugins ) ' website='http://bigwww.epfl.ch/thevenaz/pointpicker/ ' %}
 
 This plugin is described in detail on the [BIG website](http://bigwww.epfl.ch/thevenaz/pointpicker/).
 

@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include info-box name='Scijava-parallel ' software='Fiji ' author='Petr Bainar, Jan Kožusznik ' maintainer='Jan Kožusznik ' released='October 2019 ' latest-version='October 2019 ' category='[:Category:Development](_Category_Development ) ' source=' [on github](https://github.com/fiji-hpc/scijava-parallel) ' %}
+{% include info-box name='Scijava-parallel ' software='Fiji ' author='Petr Bainar, Jan Kožusznik ' maintainer='Jan Kožusznik ' released='October 2019 ' latest-version='October 2019 ' category='[:Category:Development](Category_Development ) ' source=' [on github](https://github.com/fiji-hpc/scijava-parallel) ' %}
 
 Scijava-parallel is a framework that provides an access point for using computational resources such as remote computers or HPC clusters. It hides details about configuration and initialization of such resources.
 

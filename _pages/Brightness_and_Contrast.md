@@ -7,7 +7,7 @@ categories: Cookbook
 description: test description
 ---
 
-**Note:** This page refers to the version of [ImageJ2](ImageJ2 ) currently in development. For more information on using [Fiji](Fiji ) and [ImageJ 1.x](ImageJ_1.x ), please reference the [Fiji tutorials](_Category_Tutorials ) and [ImageJ 1.x documentation](https://imagej.net/docs/).
+**Note:** This page refers to the version of [ImageJ2](ImageJ2 ) currently in development. For more information on using [Fiji](Fiji ) and [ImageJ 1.x](ImageJ_1.x ), please reference the [Fiji tutorials](Category_Tutorials ) and [ImageJ 1.x documentation](https://imagej.net/docs/).
 
 This tool may be used to adjust the brightness and contrast of an active image.
 

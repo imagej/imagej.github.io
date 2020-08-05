@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='Luxor001 ' repo='DS4H-Image-Alignment ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='DS4H Image Alignment ' maintainer='DS4H ' author='Stefano Belli; Antonella Carbonaro; Filippo Piccinini ' source=source released='08/06/2019 ' latest-version='13/08/2019 ' status='stable ' category='[:Category:Registration](_Category_Registration ) ' %}
+{% include info-box software='ImageJ ' name='DS4H Image Alignment ' maintainer='DS4H ' author='Stefano Belli; Antonella Carbonaro; Filippo Piccinini ' source=source released='08/06/2019 ' latest-version='13/08/2019 ' status='stable ' category='[:Category:Registration](Category_Registration ) ' %}
 
 ## Goal of the plugin
 

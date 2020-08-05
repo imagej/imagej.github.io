@@ -15,7 +15,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji ' repo='Descriptor\_based\_registration ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Descriptor-based registration ' maintainer=maintainer author='Stephan Preibisch ' source=source released='30/11/2011 ' latest-version='30/11/2011 ' status=' ' category='[:Category:Plugins](_Category_Plugins ) ' website=' ' %}
+{% include info-box software='ImageJ ' name='Descriptor-based registration ' maintainer=maintainer author='Stephan Preibisch ' source=source released='30/11/2011 ' latest-version='30/11/2011 ' status=' ' category='[:Category:Plugins](Category_Plugins ) ' website=' ' %}
 
 I uploaded two HowTos to YouTube that illustrate the basic usage of the plugin, which makes use of the algorithms implemented in [BigStitcher](BigStitcher ).
 

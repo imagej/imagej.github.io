@@ -17,7 +17,7 @@ description: test description
   - Otherwise, choose your language from the *Language* menu.
   - Grab code snippets for common tasks from the [Scripting toolbox](Scripting_toolbox ).
   - See [Scripting comparisons](Scripting_comparisons ) for a side-by-side comparison of scripting languages.
-  - See [:Category:Scripting](_Category_Scripting ) for a list of all scripting-related pages on this wiki.
+  - See [:Category:Scripting](Category_Scripting ) for a list of all scripting-related pages on this wiki.
 
 # Supported languages
 

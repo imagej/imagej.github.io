@@ -23,7 +23,7 @@ description: test description
 {% capture source%}
 {% include github org='tferr ' repo='hIPNAT ' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='Strahler Analysis ' maintainer=maintainer author=author filename='hIPNAT\_.jar ([Neuroanatomy update site](User_Neuroanatomy )) ' source=source released='April 2016 ' category='[Plugins](_Category_Plugins ), [Neuroanatomy](_Category_Neuroanatomy ), [Analysis](_Category_Analysis ), [Skeleton](_Category_Skeleton ) ' %}
+{% include info-box software='Fiji ' name='Strahler Analysis ' maintainer=maintainer author=author filename='hIPNAT\_.jar ([Neuroanatomy update site](User_Neuroanatomy )) ' source=source released='April 2016 ' category='[Plugins](Category_Plugins ), [Neuroanatomy](Category_Neuroanatomy ), [Analysis](Category_Analysis ), [Skeleton](Category_Skeleton ) ' %}
 
 </div>
 

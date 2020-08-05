@@ -7,7 +7,7 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Multi Otsu Threshold ' author='Yasunari Tosa ' filename='Multi\_OtsuThreshold.class ' source=' [Multi\_OtsuThreshold.java](https://imagej.net/plugins/download/Multi_OtsuThreshold.java) ' released='14 April 2006 ' status='stable ' category='[Segmentation](_Category_Segmentation ) ' website='https://imagej.net/plugins/multi-otsu-threshold.html ' %}
+{% include info-box software='ImageJ ' name='Multi Otsu Threshold ' author='Yasunari Tosa ' filename='Multi\_OtsuThreshold.class ' source=' [Multi\_OtsuThreshold.java](https://imagej.net/plugins/download/Multi_OtsuThreshold.java) ' released='14 April 2006 ' status='stable ' category='[Segmentation](Category_Segmentation ) ' website='https://imagej.net/plugins/multi-otsu-threshold.html ' %}
 
 ## Purpose
 

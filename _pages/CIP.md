@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include info-box software='ImageJ/Fiji ' name='CIP ' update-site='CIP ' author='[Benoit Lombardot](User_Benoit ) ' maintainer='[Benoit Lombardot](User_Benoit ) ' released='January 2018 ' filename='CIP update site ' source='https://github.com/benoalo/CIP ' category='[Scripting](_Category_Scripting ) ' %}
+{% include info-box software='ImageJ/Fiji ' name='CIP ' update-site='CIP ' author='[Benoit Lombardot](User_Benoit ) ' maintainer='[Benoit Lombardot](User_Benoit ) ' released='January 2018 ' filename='CIP update site ' source='https://github.com/benoalo/CIP ' category='[Scripting](Category_Scripting ) ' %}
 
 ![CIP: ](/images/pages/CIP basic concept.PNG "CIP: ")
 

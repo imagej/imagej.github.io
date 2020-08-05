@@ -7,7 +7,7 @@ categories: Plugins,Projection
 description: test description
 ---
 
-{% include info-box software='ImageJ/Fiji ' name='Min Cost Z Surface ' author='[Benoit Lombardot](User_Benoit ) ' maintainer='[Benoit Lombardot](User_Benoit ) ' released='03 August 2016 ' filename='![MinCostZSurface\_-1.1.0.jar.zip](/images/pages/MinCostZSurface -1.1.0.jar.zip "MinCostZSurface_-1.1.0.jar.zip") ' source=' [MPI-CBG git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection) ' category='[Plugins](_Category_Plugins ), [Projection](_Category_Projection ) ' %}
+{% include info-box software='ImageJ/Fiji ' name='Min Cost Z Surface ' author='[Benoit Lombardot](User_Benoit ) ' maintainer='[Benoit Lombardot](User_Benoit ) ' released='03 August 2016 ' filename='![MinCostZSurface\_-1.1.0.jar.zip](/images/pages/MinCostZSurface -1.1.0.jar.zip "MinCostZSurface_-1.1.0.jar.zip") ' source=' [MPI-CBG git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection) ' category='[Plugins](Category_Plugins ), [Projection](Category_Projection ) ' %}
 
 ## Introduction
 

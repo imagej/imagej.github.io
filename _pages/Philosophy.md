@@ -28,7 +28,7 @@ We are always looking for more ways to improve the software to meet this goal of
 
 ## Extensibility
 
-[Extensibility](Extensibility ) is [ImageJ](ImageJ )'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](_Category_Visualization ), [segmentation](segmentation ), [registration](_Category_Registration ), and [analysis](_Category_Analysis ) routines.
+[Extensibility](Extensibility ) is [ImageJ](ImageJ )'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](Category_Visualization ), [segmentation](segmentation ), [registration](Category_Registration ), and [analysis](Category_Analysis ) routines.
 
 Isaac Newton attributed his success to {% include wikipedia title='Standing on the shoulders of giants' text='standing on the shoulders of giants'%}. The [SciJava component collection](Architecture )'s powerful [plugin](plugin ) mechanism and [open source](open_source ) software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](Extensibility ) page for details.
 
@@ -36,7 +36,7 @@ Isaac Newton attributed his success to {% include wikipedia title='Standing on t
 
 One of the central goals of the [SciJava component collection](Architecture ) is to extend Java's mantra of "write once, run anywhere" in new directions: [ImageJ Ops](ImageJ_Ops ) for image processing algorithms, and [SCIFIO](SCIFIO ) for scientific image I/O.
 
-[ImageJ2](ImageJ2 ) commands work not only in the [ImageJ](ImageJ ) user interface, but also from many [other applications](_Category_Related_Software ) in the [SciJava ecosystem](SciJava ), including [CellProfiler](CellProfiler ), [OMERO](OMERO ), [KNIME](KNIME ) and [Alida](Alida ).
+[ImageJ2](ImageJ2 ) commands work not only in the [ImageJ](ImageJ ) user interface, but also from many [other applications](Category_Related_Software ) in the [SciJava ecosystem](SciJava ), including [CellProfiler](CellProfiler ), [OMERO](OMERO ), [KNIME](KNIME ) and [Alida](Alida ).
 
 ## Compatibility
 

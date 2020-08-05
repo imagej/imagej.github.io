@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='andmccall ' repo='Colocalization\_by\_Cross\_Correlation ' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='Colocalization by Cross Correlation ' maintainer=' [Andrew McCall](https://imagej.net/User:Amccall) ' author=' [Andrew McCall](https://imagej.net/User:Amccall) ' source=source status='active ' released='2020 ' category='[:Category:Plugins](_Category_Plugins ), [:Category:Colocalization](_Category_Colocalization ) ' %}
+{% include info-box software='Fiji ' name='Colocalization by Cross Correlation ' maintainer=' [Andrew McCall](https://imagej.net/User:Amccall) ' author=' [Andrew McCall](https://imagej.net/User:Amccall) ' source=source status='active ' released='2020 ' category='[:Category:Plugins](Category_Plugins ), [:Category:Colocalization](Category_Colocalization ) ' %}
 
 This plugin attempts to determine the average distance between non-randomly spatially associated particles, the standard deviation of that distance (which should also reflect the width of the PSF in the image for diffraction limited images), and a statistical measure of confidence of the association. It currently works on 2D/3D single-channel images, and requires a mask of all possible localizations for the signal in one of the images.
 

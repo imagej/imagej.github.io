@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='tferr ' repo='Scripts ' path='README.md\#data-analysis ' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji ' name='Find Peaks ' maintainer='[ BAR update site](BAR ) ' author=author filename=filename source=source released='February 2014 ' category='[Analysis](_Category_Analysis ), [Scripting](_Category_Scripting ), [Plugins](_Category_Plugins ) ' %}
+{% include info-box software='ImageJ/Fiji ' name='Find Peaks ' maintainer='[ BAR update site](BAR ) ' author=author filename=filename source=source released='February 2014 ' category='[Analysis](Category_Analysis ), [Scripting](Category_Scripting ), [Plugins](Category_Plugins ) ' %}
 
 A [BAR](BAR ) script (written in [BeanShell](Beanshell_Scripting )) that retrieves local maxima and minima from an ImageJ plot. The easiest way to install *Find Peaks* is by [subscribing](BAR#Installation ) to the BAR {% include list-of-update-sites content='update site' %}.
 

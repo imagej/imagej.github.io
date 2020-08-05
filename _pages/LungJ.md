@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='LWollatz ' repo='LungJ ' %}
 {% endcapture %}
-{% include info-box name='LungJ ' author='[Lasse Wollatz](User_LungJ ) ' maintainer='[Lasse Wollatz](User_LungJ ) ' software='ImageJ/Fiji ' logo='![LungJ-logo.png](/images/pages/LungJ-logo.png "LungJ-logo.png") ' source=source released='Nov 10<sup>st</sup>, 2016 ' latest-version='0.5.1, November 10<sup>th</sup>, 2016 (LungJ v0.5.1) ' status='stable, new ' category='[Segmentation](_Category_Segmentation ), [Binary](_Category_Binary ), [Filtering](_Category_Filtering ), [Image annotation](_Category_Image_annotation ) ' %}{% include toc%}
+{% include info-box name='LungJ ' author='[Lasse Wollatz](User_LungJ ) ' maintainer='[Lasse Wollatz](User_LungJ ) ' software='ImageJ/Fiji ' logo='![LungJ-logo.png](/images/pages/LungJ-logo.png "LungJ-logo.png") ' source=source released='Nov 10<sup>st</sup>, 2016 ' latest-version='0.5.1, November 10<sup>th</sup>, 2016 (LungJ v0.5.1) ' status='stable, new ' category='[Segmentation](Category_Segmentation ), [Binary](Category_Binary ), [Filtering](Category_Filtering ), [Image annotation](Category_Image_annotation ) ' %}{% include toc%}
 
 
 ## Installation

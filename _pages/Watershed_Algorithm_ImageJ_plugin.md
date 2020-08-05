@@ -7,7 +7,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include otheruses4 content='the Watershed ImageJ plugin|the Watershed Algorithm in general|Watershed Algorithm' %} {% include info-box software='ImageJ ' name='Watershed Algorithm ' author='Christopher Mei ' filename=' [Watershed\_Algorithm.jar](https://imagej.net/plugins/download/jars/Watershed_Algorithm.jar) ' source='included in .jar ' released='15 December 2003 ' latest-version=' ' status='unknown ' category='[Segmentation](_Category_Segmentation ) ' website='https://imagej.net/plugins/watershed.html ' %}
+{% include otheruses4 content='the Watershed ImageJ plugin|the Watershed Algorithm in general|Watershed Algorithm' %} {% include info-box software='ImageJ ' name='Watershed Algorithm ' author='Christopher Mei ' filename=' [Watershed\_Algorithm.jar](https://imagej.net/plugins/download/jars/Watershed_Algorithm.jar) ' source='included in .jar ' released='15 December 2003 ' latest-version=' ' status='unknown ' category='[Segmentation](Category_Segmentation ) ' website='https://imagej.net/plugins/watershed.html ' %}
 
 `   This algorithm is an implementation of the watershed immersion algorithm written by Vincent and Soille (1991).`
 

@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji ' repo='M\_I\_P ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Multiple Image Processor ' maintainer='[at rcm.upr.edu](mailto:ngonzalez) ' author='Nathaniel Gonzalez Santiago ' source=source released='10/10/2005 ' latest-version='10/10/2005 ' status='stable ' category='[:Category:Plugins](_Category_Plugins ) ' website=' [Center for Information Architecture in Research](http://ciar.rcm.upr.edu/projects/imageprocessor/multiples) ' %}
+{% include info-box software='ImageJ ' name='Multiple Image Processor ' maintainer='[at rcm.upr.edu](mailto:ngonzalez) ' author='Nathaniel Gonzalez Santiago ' source=source released='10/10/2005 ' latest-version='10/10/2005 ' status='stable ' category='[:Category:Plugins](Category_Plugins ) ' website=' [Center for Information Architecture in Research](http://ciar.rcm.upr.edu/projects/imageprocessor/multiples) ' %}
 
 ## Multiple Image Processor
 

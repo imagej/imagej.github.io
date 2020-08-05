@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='ijpb ' repo='ijpb-plugins ' %}
 {% endcapture %}
-{% include info-box name='Distance Transform Watershed (2D and 3D) ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='August 25<sup>th</sup>, 2016 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ ) v1.4.1) ' status='stable, active ' category='[Segmentation](_Category_Segmentation ), [Mathematical morphology](_Category_Mathematical_morphology ) ' %}
+{% include info-box name='Distance Transform Watershed (2D and 3D) ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='August 25<sup>th</sup>, 2016 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ ) v1.4.1) ' status='stable, active ' category='[Segmentation](Category_Segmentation ), [Mathematical morphology](Category_Mathematical_morphology ) ' %}
 
 ## Introduction
 

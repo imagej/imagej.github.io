@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='CSIM-Toolkits ' repo='ImageJ/tree/master/plugins/AnomalousDiffusionFilters ' label='GitHub CSIM-ImageJ AnomalousDiffusionFilters repository ' %}
 {% endcapture %}
-{% include info-box name='Anomalous Diffusion Filters PlugIn ' software='Fiji ' author=author maintainer=maintainer source=source released='February 03<sup>rd</sup>, 2015 ' latest-version='February 03<sup>rd</sup>, 2015 ' status='experimental, active ' category='[Plugins](_Category_Plugins ), [Filtering](_Category_Filtering ) ' %}
+{% include info-box name='Anomalous Diffusion Filters PlugIn ' software='Fiji ' author=author maintainer=maintainer source=source released='February 03<sup>rd</sup>, 2015 ' latest-version='February 03<sup>rd</sup>, 2015 ' status='experimental, active ' category='[Plugins](Category_Plugins ), [Filtering](Category_Filtering ) ' %}
 
 ## Anomalous Diffusion Filters
 

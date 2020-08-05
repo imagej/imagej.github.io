@@ -7,7 +7,7 @@ categories: Cookbook,Tutorials,Colocalization,Color processing
 description: test description
 ---
 
-{% include biginfo-box content='See [:Category:Colocalization](_Category_Colocalization ) for pages about colocalization.' %} {% include learn content='techniques' %}
+{% include biginfo-box content='See [:Category:Colocalization](Category_Colocalization ) for pages about colocalization.' %} {% include learn content='techniques' %}
 
 ## What is colocalization?
 
@@ -70,7 +70,7 @@ If you like, you can change the look up tables of the images (LUTs) so one is "g
 
 ## ImageJ plugins for colocalization analysis
 
-There are several plugins available for performing colocalization analysis. In addition to the options described below, see also the [index of pages related to colocalization](_Category_Colocalization ).
+There are several plugins available for performing colocalization analysis. In addition to the options described below, see also the [index of pages related to colocalization](Category_Colocalization ).
 
 ### Coloc 2
 

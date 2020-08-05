@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='giocard ' repo='MyofibrilJ ' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji ' name='MyofribilJ ' maintainer=maintainer author=author source=source released='November 2017 ' category='[Analysis](_Category_Analysis ), [Scripting](_Category_Scripting ), [Plugins](_Category_Plugins ) ' %}
+{% include info-box software='ImageJ/Fiji ' name='MyofribilJ ' maintainer=maintainer author=author source=source released='November 2017 ' category='[Analysis](Category_Analysis ), [Scripting](Category_Scripting ), [Plugins](Category_Plugins ) ' %}
 
 ## Introduction
 

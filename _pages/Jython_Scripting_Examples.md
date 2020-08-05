@@ -1823,7 +1823,7 @@ w.subtract(img, 10)
 imp.updateAndDraw()
 ```
 
-Of course the Weaver is a java library, and may be used from any scripting language such as [Javascript](Javascript_Scripting ), [JRuby](JRuby_Scripting ), and [others](_Category_Scripting ).
+Of course the Weaver is a java library, and may be used from any scripting language such as [Javascript](Javascript_Scripting ), [JRuby](JRuby_Scripting ), and [others](Category_Scripting ).
 
 All the above is inspired by the [Scientific Python Weaver, or scipy Weaver](http://www.scipy.org/Cookbook/Weave), which inlines C code inside a python file.
 

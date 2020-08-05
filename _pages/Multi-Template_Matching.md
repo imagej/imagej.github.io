@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='LauLauThom ' repo='MultiTemplateMatching ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Multi-Template Matching ' author=author maintainer=maintainer update-site='Multi-Template-Matching ' source=source released='2019 ' status='active ' category='[Analysis](_Category_Analysis ) [Feature Extraction](_Category_Feature_Extraction ) ' %}
+{% include info-box software='ImageJ ' name='Multi-Template Matching ' author=author maintainer=maintainer update-site='Multi-Template-Matching ' source=source released='2019 ' status='active ' category='[Analysis](Category_Analysis ) [Feature Extraction](Category_Feature_Extraction ) ' %}
 
 <img src="/images/pages/Multi-Template-Matching-MontageGUI.png" width="800"/>
 

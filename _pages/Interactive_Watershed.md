@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='mpicbg-scicomp ' repo='Interactive-H-Watershed ' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji ' name='Interactive H\_Watershed ' author='[Benoit Lombardot](User_Benoit ) ' maintainer='[Benoit Lombardot](User_Benoit ) ' released='08 May 2017 ' filename='SCF-MPI-CBG update site ' source=source category='[Plugins](_Category_Plugins ), [Segmentation](_Category_Segmentation ) ' %}
+{% include info-box software='ImageJ/Fiji ' name='Interactive H\_Watershed ' author='[Benoit Lombardot](User_Benoit ) ' maintainer='[Benoit Lombardot](User_Benoit ) ' released='08 May 2017 ' filename='SCF-MPI-CBG update site ' source=source category='[Plugins](Category_Plugins ), [Segmentation](Category_Segmentation ) ' %}
 
 <img src="/images/pages/InteractiveWatershed illustration.PNG" width="500"/>
 

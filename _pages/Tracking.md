@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include biginfo-box content='See [:Category:Tracking](_Category_Tracking ) for pages about particle tracking.' %} {% include learn content='techniques' %} Particle tracking algorithms identify and link objects across multiple images over time.
+{% include biginfo-box content='See [:Category:Tracking](Category_Tracking ) for pages about particle tracking.' %} {% include learn content='techniques' %} Particle tracking algorithms identify and link objects across multiple images over time.
 
 ## Recommended ImageJ Plugins for Tracking
 

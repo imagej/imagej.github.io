@@ -7,7 +7,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='The Hue Game ' maintainer='Johannes Schindelin ' author='Johannes Schindelin ' source=' [in GitWeb](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/The_Hue_Game.bsh;hb=refs/heads/master) ' released='16/04/2012 ' latest-version='16/04/2012 ' status='stable ' category='[:Category:Scripting](_Category_Scripting ) ' website='http://www.xrite.com/custom\_page.aspx?PageID=77\&Lang=en ' %}
+{% include info-box software='ImageJ ' name='The Hue Game ' maintainer='Johannes Schindelin ' author='Johannes Schindelin ' source=' [in GitWeb](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/The_Hue_Game.bsh;hb=refs/heads/master) ' released='16/04/2012 ' latest-version='16/04/2012 ' status='stable ' category='[:Category:Scripting](Category_Scripting ) ' website='http://www.xrite.com/custom\_page.aspx?PageID=77\&Lang=en ' %}
 
 ## The Hue Game
 

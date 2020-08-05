@@ -7,7 +7,7 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='RGB to Montage ' author='unknown ' maintainer='None ' filename='RGB\_to\_Montage.class ' source='not found ' released='unknown ' latest-version='unknown ' status='Unmaintained ' category='[Color processing](_Category_Color_processing ) ' %}
+{% include info-box software='ImageJ ' name='RGB to Montage ' author='unknown ' maintainer='None ' filename='RGB\_to\_Montage.class ' source='not found ' released='unknown ' latest-version='unknown ' status='Unmaintained ' category='[Color processing](Category_Color_processing ) ' %}
 
 ## Purpose
 

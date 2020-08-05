@@ -7,7 +7,7 @@ categories: Plugins,Filtering
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Sigma Filter ' author='Michael Schmid and Tony Collins ' filename=' [Sigma\_Filter\_Plus.class](https://imagej.net/plugins/download/Sigma_Filter_Plus.class) ' source=' [Sigma\_Filter\_Plus.java](https://imagej.net/plugins/download/Sigma_Filter_Plus.java) ' released='25 October 2007 ' status='1st version ' category='[Filtering](_Category_Filtering ) ' website='https://imagej.net/plugins/sigma-filter.html ' %}
+{% include info-box software='ImageJ ' name='Sigma Filter ' author='Michael Schmid and Tony Collins ' filename=' [Sigma\_Filter\_Plus.class](https://imagej.net/plugins/download/Sigma_Filter_Plus.class) ' source=' [Sigma\_Filter\_Plus.java](https://imagej.net/plugins/download/Sigma_Filter_Plus.java) ' released='25 October 2007 ' status='1st version ' category='[Filtering](Category_Filtering ) ' website='https://imagej.net/plugins/sigma-filter.html ' %}
 
 ## Purpose
 

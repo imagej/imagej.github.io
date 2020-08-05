@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='axtimwalde ' repo='mpicbg ' path='mpicbg\_/src/main/java/Stack\_Rotate.java ' %}
 {% endcapture %}
-{% include info-box name='Interactive Stack Rotation ' software='Fiji ' author=author maintainer=maintainer source=source released='September 29<sup>th</sup>, 2009 ' latest-version='February 26<sup>th</sup>, 2010 ' status='stable, active ' category='[Plugins](_Category_Plugins ), [Transform](_Category_Transform ) ' %}
+{% include info-box name='Interactive Stack Rotation ' software='Fiji ' author=author maintainer=maintainer source=source released='September 29<sup>th</sup>, 2009 ' latest-version='February 26<sup>th</sup>, 2010 ' status='stable, active ' category='[Plugins](Category_Plugins ), [Transform](Category_Transform ) ' %}
 
 Here is a screencast how to use the Interactive Stack Rotation plugin:
 

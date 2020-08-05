@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='ClearVolume ' repo='imglib2-clearvolume ' %}
 {% endcapture %}
-{% include info-box name='ClearVolume ' logo='![ClearVolumeLogo.png](/images/pages/ClearVolumeLogo.png "ClearVolumeLogo.png") ' software='Fiji ' author=author maintainer=maintainer source=source status='active ' category='[Visualization](_Category_Visualization ) ' website='https://clearvolume.github.io/ ' %}== Problems and Solutions == We work constantly on improving the Fiji and KNIME plugins. Help us doing so by letting us know if you encounter problems.
+{% include info-box name='ClearVolume ' logo='![ClearVolumeLogo.png](/images/pages/ClearVolumeLogo.png "ClearVolumeLogo.png") ' software='Fiji ' author=author maintainer=maintainer source=source status='active ' category='[Visualization](Category_Visualization ) ' website='https://clearvolume.github.io/ ' %}== Problems and Solutions == We work constantly on improving the Fiji and KNIME plugins. Help us doing so by letting us know if you encounter problems.
 
   - **Problem:** on a Linux machine ClearVolume would not start but throw an ugly exception like
       -   

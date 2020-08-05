@@ -13,4 +13,4 @@ This page shows the latest announcements and updates about ImageJ. You can also 
 
 <listnews limit="20" />
 
-You can also browse the [news archive](_Category_News ).
+You can also browse the [news archive](Category_News ).

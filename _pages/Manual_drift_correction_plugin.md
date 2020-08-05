@@ -7,7 +7,7 @@ categories: Plugins,Registration
 description: test description
 ---
 
-{% include info-box software='Fiji ' name='Manual drift correction ' author='[Benoit Lombardot](User_Benoit ) ' maintainer='[Benoit Lombardot](User_Benoit ) ' released='22 March 2016 ' filename='![Manual\_Drift\_Correction-1.0.0.jar.zip](/images/pages/Manual Drift Correction-1.0.0.jar.zip "Manual_Drift_Correction-1.0.0.jar.zip") ' source=' [github](https://github.com/mpicbg-scicomp/Manual_drift_correction) ' category='[Plugins](_Category_Plugins ), [Registration](_Category_Registration ) ' %}
+{% include info-box software='Fiji ' name='Manual drift correction ' author='[Benoit Lombardot](User_Benoit ) ' maintainer='[Benoit Lombardot](User_Benoit ) ' released='22 March 2016 ' filename='![Manual\_Drift\_Correction-1.0.0.jar.zip](/images/pages/Manual Drift Correction-1.0.0.jar.zip "Manual_Drift_Correction-1.0.0.jar.zip") ' source=' [github](https://github.com/mpicbg-scicomp/Manual_drift_correction) ' category='[Plugins](Category_Plugins ), [Registration](Category_Registration ) ' %}
 
 ## Goal of the plugin
 

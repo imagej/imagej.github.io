@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='bigdataviewer ' repo='bigdataviewer-server ' %}
 {% endcapture %}
-{% include info-box name='BigDataServer ' software='Fiji ' author=author maintainer=maintainer source=source latest-version='1.0.5 ' status='experimental ' category='[Visualization](_Category_Visualization ), [Transform](_Category_Transform ) ' %}
+{% include info-box name='BigDataServer ' software='Fiji ' author=author maintainer=maintainer source=source latest-version='1.0.5 ' status='experimental ' category='[Visualization](Category_Visualization ), [Transform](Category_Transform ) ' %}
 
 ## Description
 

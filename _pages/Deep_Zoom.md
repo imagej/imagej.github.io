@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='uw-loci ' repo='deep-zoom-plugin ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Deep Zoom ' author=' [Aivar Grislis](http://loci.wisc.edu/people/aivar-grislis) ' source=source status='inactive ' category='[Import-Export](_Category_Import-Export ) ' %}== Introduction ==
+{% include info-box software='ImageJ ' name='Deep Zoom ' author=' [Aivar Grislis](http://loci.wisc.edu/people/aivar-grislis) ' source=source status='inactive ' category='[Import-Export](Category_Import-Export ) ' %}== Introduction ==
 
 ![Deep-zoom-1.png](/images/pages/Deep-zoom-1.png "Deep-zoom-1.png") ![Deep-zoom-2.png](/images/pages/Deep-zoom-2.png "Deep-zoom-2.png")
 

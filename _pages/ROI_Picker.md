@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji ' repo='Stitching ' source='tools/RoiPicker.java ' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='ROI Picker ' author='Mark Hiner ' maintainer='Mark Hiner ' source=source released='30 August 2013 ' latest-version='22 October 2013 ' status='second version ' category='[Plugins](_Category_Plugins ) ' %}
+{% include info-box software='Fiji ' name='ROI Picker ' author='Mark Hiner ' maintainer='Mark Hiner ' source=source released='30 August 2013 ' latest-version='22 October 2013 ' status='second version ' category='[Plugins](Category_Plugins ) ' %}
 
 ## Purpose
 

@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='llamero ' repo='Quiver\_Plot ' %}
 {% endcapture %}
-{% include info-box name='Quiver Plot ' software='plugin ' author=author maintainer=maintainer source=source released='January 11<sup>th</sup>, 2017 ' latest-version='March 17<sup>th</sup>, 2017 (v0.2.0) ' status='stable, active ' category='[Visualization](_Category_Visualization ) ' %}
+{% include info-box name='Quiver Plot ' software='plugin ' author=author maintainer=maintainer source=source released='January 11<sup>th</sup>, 2017 ' latest-version='March 17<sup>th</sup>, 2017 (v0.2.0) ' status='stable, active ' category='[Visualization](Category_Visualization ) ' %}
 
 ## Introduction
 

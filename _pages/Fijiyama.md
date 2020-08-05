@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='Rocsg ' repo='Fijiyama ' %}
 {% endcapture %}
-{% include info-box name='Fijiyama ' software='Fiji ' author='Romain Fernandez & Cédric Moisy ' maintainer='Romain Fernandez ' source=source released='February 10<sup>th</sup>, 2020 ' status='stable, active ' category='[Registration](_Category_Registration ) ' %}
+{% include info-box name='Fijiyama ' software='Fiji ' author='Romain Fernandez & Cédric Moisy ' maintainer='Romain Fernandez ' source=source released='February 10<sup>th</sup>, 2020 ' status='stable, active ' category='[Registration](Category_Registration ) ' %}
 
 <i>Current Fijiyama version : Gorgeous Grapevine (last release : March 21<sup>th</sup>, 2020).</i>
 

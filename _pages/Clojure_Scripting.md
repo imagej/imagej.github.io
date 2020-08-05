@@ -1252,7 +1252,7 @@ So now any changes to the original <i>pixels</i> array will not affect the new s
 
 ## Generating java classes in .class files from clojure code
 
-Using ahead of time (AOT) compilation with [gen-class](http://clojure.org/compilation), any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [jython](Jython_Scripting ), [jruby](JRuby_Scripting ), [javascript](Javascript_Scripting ), and [any other](_Category_Scripting ).
+Using ahead of time (AOT) compilation with [gen-class](http://clojure.org/compilation), any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [jython](Jython_Scripting ), [jruby](JRuby_Scripting ), [javascript](Javascript_Scripting ), and [any other](Category_Scripting ).
 
 One way to do so is to place a [gen-class](http://clojure.org/compilation) declaration in a namespace block.
 

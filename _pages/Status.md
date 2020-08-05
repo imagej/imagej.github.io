@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [:Category:Status](_Category_Status )
+1.  REDIRECT [:Category:Status](Category_Status )

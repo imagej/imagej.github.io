@@ -15,7 +15,7 @@ Philipp Hanslovsky, {% include person content='Saalfeld' %} ([1](mailto:saalfeld
 {% capture maintainer%}
 Philipp Hanslovsky, {% include person content='Saalfeld' %}
 {% endcapture %}
-{% include info-box name='Z-Spacing Correction ' software='Fiji ' author=author maintainer=maintainer source='https://github.com/saalfeldlab/em-thickness-estimation ' released='April 16<sup>th</sup>, 2015 ' latest-version='April 16<sup>th</sup>, 2015 ' status='experimental, active ' category='[Plugins](_Category_Plugins ), [TrakEM2](_Category_TrakEM2 ), [Transform](_Category_Transform ) ' %}
+{% include info-box name='Z-Spacing Correction ' software='Fiji ' author=author maintainer=maintainer source='https://github.com/saalfeldlab/em-thickness-estimation ' released='April 16<sup>th</sup>, 2015 ' latest-version='April 16<sup>th</sup>, 2015 ' status='experimental, active ' category='[Plugins](Category_Plugins ), [TrakEM2](Category_TrakEM2 ), [Transform](Category_Transform ) ' %}
 
 ## Citation
 

@@ -10,7 +10,7 @@ description: test description
 {% include info-box content='This page lists publications relating to the [Fiji](Fiji ) project.
 
   - For general instructions on citing [ImageJ](ImageJ ) and [Fiji](Fiji ), see [Citing](Citing ).
-  - For an index of citable software, see [:Category:Citable](_Category_Citable ).' %}
+  - For an index of citable software, see [:Category:Citable](Category_Citable ).' %}
 
 {% include fijimenu%}
 == Publications introducing Fiji ==

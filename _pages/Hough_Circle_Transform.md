@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='llamero ' repo='Local\_Hough\_Circle ' %}
 {% endcapture %}
-{% include info-box name='Hough Circle Transform ' software='plugin ' update-site='UCB Vision Sciences ' author=author maintainer=maintainer source=source released='February 4<sup>th</sup>, 2017 ' latest-version='September 21<sup>st</sup>, 2018 (v1.0.0) ' status='stable, active ' category='[Analysis](_Category_Analysis ), [Feature Extraction](_Category_Feature_Extraction ) ' %}
+{% include info-box name='Hough Circle Transform ' software='plugin ' update-site='UCB Vision Sciences ' author=author maintainer=maintainer source=source released='February 4<sup>th</sup>, 2017 ' latest-version='September 21<sup>st</sup>, 2018 (v1.0.0) ' status='stable, active ' category='[Analysis](Category_Analysis ), [Feature Extraction](Category_Feature_Extraction ) ' %}
 
 ## Introduction
 

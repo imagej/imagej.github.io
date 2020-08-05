@@ -18,7 +18,7 @@ description: test description
 
 <!-- end list -->
 
-  - [Transform](_Category_Transform )
+  - [Transform](Category_Transform )
 
 <!-- end list -->
 
@@ -58,7 +58,7 @@ description: test description
 
 <!-- end list -->
 
-  - [Tracking](_Category_Tracking )
+  - [Tracking](Category_Tracking )
 
 <!-- end list -->
 
@@ -70,7 +70,7 @@ description: test description
 
 <!-- end list -->
 
-  - [Skeletons and tree analysis](_Category_Skeleton )
+  - [Skeletons and tree analysis](Category_Skeleton )
 
 <!-- end list -->
 
