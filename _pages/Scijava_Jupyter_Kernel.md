@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SciJava Jupyter Kernel](SciJava_Jupyter_Kernel "wikilink")
+1.  REDIRECT [SciJava Jupyter Kernel](SciJava_Jupyter_Kernel )

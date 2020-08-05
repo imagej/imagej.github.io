@@ -9,15 +9,15 @@ description: test description
 
 
 {% capture reason%}
-This plugin was removed, as the [Auto Threshold](Auto_Threshold "wikilink") plugin from {% include person content='Landini' %} does a better job.
+This plugin was removed, as the [Auto Threshold](Auto_Threshold ) plugin from {% include person content='Landini' %} does a better job.
 {% endcapture %}
 {% include pluginremoved reason=reason date='April 2009 ' %}
 
-{% include info-box software='ImageJ ' name='MultiThresholder ' author='Kevin (Gali) Baler ' filename=' [Multi\_Thresholder.jar](https://imagej.net/plugins/download/jars/Multi_Thresholder.jar) (30,729 Bytes) ' source='in .jar file ' released='21 July 2005 ' latest-version='25 January 2007 ' status='unknown ' category='[Segmentation](_Category_Segmentation "wikilink") ' website='https://imagej.net/plugins/multi-thresholder.html ' %}
+{% include info-box software='ImageJ ' name='MultiThresholder ' author='Kevin (Gali) Baler ' filename=' [Multi\_Thresholder.jar](https://imagej.net/plugins/download/jars/Multi_Thresholder.jar) (30,729 Bytes) ' source='in .jar file ' released='21 July 2005 ' latest-version='25 January 2007 ' status='unknown ' category='[Segmentation](_Category_Segmentation ) ' website='https://imagej.net/plugins/multi-thresholder.html ' %}
 
 ## Purpose
 
-This plugin allows the user to apply four different automatic thresholding algorithms. The four algorithms are ImageJ's built in IsoData algorithm, [Maximum Entropy Threshold](Maximum_Entropy_Threshold "wikilink"), [Otsu Thresholding](Otsu_Thresholding "wikilink"), and [Mixture Modeling](Mixture_Modeling_Thresholding "wikilink"). More information about thresholding and the algorithms employed here can be found at the [Image Thresholding Tutorial](http://www.ph.tn.tudelft.nl/Courses/FIP/noframes/fip-Segmenta.html).
+This plugin allows the user to apply four different automatic thresholding algorithms. The four algorithms are ImageJ's built in IsoData algorithm, [Maximum Entropy Threshold](Maximum_Entropy_Threshold ), [Otsu Thresholding](Otsu_Thresholding ), and [Mixture Modeling](Mixture_Modeling_Thresholding ). More information about thresholding and the algorithms employed here can be found at the [Image Thresholding Tutorial](http://www.ph.tn.tudelft.nl/Courses/FIP/noframes/fip-Segmenta.html).
 
 ## Usage
 

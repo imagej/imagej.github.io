@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Microscope Focus Quality](Microscope_Focus_Quality "wikilink")
+1.  REDIRECT [Microscope Focus Quality](Microscope_Focus_Quality )

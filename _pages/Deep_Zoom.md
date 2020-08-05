@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='uw-loci ' repo='deep-zoom-plugin ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Deep Zoom ' author=' [Aivar Grislis](http://loci.wisc.edu/people/aivar-grislis) ' source=source status='inactive ' category='[Import-Export](_Category_Import-Export "wikilink") ' %}== Introduction ==
+{% include info-box software='ImageJ ' name='Deep Zoom ' author=' [Aivar Grislis](http://loci.wisc.edu/people/aivar-grislis) ' source=source status='inactive ' category='[Import-Export](_Category_Import-Export ) ' %}== Introduction ==
 
 ![Deep-zoom-1.png](/images/pages/Deep-zoom-1.png "Deep-zoom-1.png") ![Deep-zoom-2.png](/images/pages/Deep-zoom-2.png "Deep-zoom-2.png")
 
@@ -29,7 +29,7 @@ The plugin currently has a bug in that it creates an excess number of levels, wh
 
 ## Installation
 
-The plugin can be downloaded from the [SciJava Maven repository](SciJava_Maven_repository "wikilink") as [loci:deep\_zoom-plugin](https://maven.scijava.org/#nexus-search;gav~loci~deep_zoom-plugin).
+The plugin can be downloaded from the [SciJava Maven repository](SciJava_Maven_repository ) as [loci:deep\_zoom-plugin](https://maven.scijava.org/#nexus-search;gav~loci~deep_zoom-plugin).
 
 Copy the plugin jar to ImageJ's plugins folder.  Once restarted the plugin will appear in ImageJ's 'File/Save As...' menu as 'Deep Zoom...'.
 

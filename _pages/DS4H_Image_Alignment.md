@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='Luxor001 ' repo='DS4H-Image-Alignment ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='DS4H Image Alignment ' maintainer='DS4H ' author='Stefano Belli; Antonella Carbonaro; Filippo Piccinini ' source=source released='08/06/2019 ' latest-version='13/08/2019 ' status='stable ' category='[:Category:Registration](_Category_Registration "wikilink") ' %}
+{% include info-box software='ImageJ ' name='DS4H Image Alignment ' maintainer='DS4H ' author='Stefano Belli; Antonella Carbonaro; Filippo Piccinini ' source=source released='08/06/2019 ' latest-version='13/08/2019 ' status='stable ' category='[:Category:Registration](_Category_Registration ) ' %}
 
 ## Goal of the plugin
 
@@ -27,7 +27,7 @@ The implemented least-squares method automatically approximates the solution of 
 
 ## Implementation
 
-DS4H Image Alignment has been implemented in Java as a plugin for ImageJ/Fiji. It works with “.svs” files, but also all the medical imaging formats included in the [Bio-formats](Bio-formats "wikilink") library.
+DS4H Image Alignment has been implemented in Java as a plugin for ImageJ/Fiji. It works with “.svs” files, but also all the medical imaging formats included in the [Bio-formats](Bio-formats ) library.
 
 ## Download
 

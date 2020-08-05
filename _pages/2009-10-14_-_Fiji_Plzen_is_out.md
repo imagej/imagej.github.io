@@ -7,13 +7,13 @@ categories: News
 description: test description
 ---
 
-It is a great pleasure to announce [a new Fiji version](Downloads "wikilink") nick-named Plzen. It was named after the city in which we had a very successful image processing school, where we tested a few of the shiny new components which are the goodies of this release. The two most prominent new features are
+It is a great pleasure to announce [a new Fiji version](Downloads ) nick-named Plzen. It was named after the city in which we had a very successful image processing school, where we tested a few of the shiny new components which are the goodies of this release. The two most prominent new features are
 
-  - the new and shiny [Fiji Updater](Update_Fiji "wikilink"). The updater knows whether your files are up-to-date, obsolete or locally modified. It will check at startup whether there are updates available, and if so, offer you to run the updater. You can also choose to be reminded later, or not ever again.
+  - the new and shiny [Fiji Updater](Update_Fiji ). The updater knows whether your files are up-to-date, obsolete or locally modified. It will check at startup whether there are updates available, and if so, offer you to run the updater. You can also choose to be reminded later, or not ever again.
 
 <!-- end list -->
 
-  - the [Script Editor](Using_the_Script_Editor "wikilink"). Just call {% include bc content='File | New | Script'%}, select a language and start writing a script. The editor has syntax highlighting and you can run the script without even saving it.
+  - the [Script Editor](Using_the_Script_Editor ). Just call {% include bc content='File | New | Script'%}, select a language and start writing a script. The editor has syntax highlighting and you can run the script without even saving it.
 
 For an introduction to the power of scripting, see e.g. [our page on Javascript](https://fiji.sc/wiki/index.php/Javascript_Scripting).
 

@@ -38,21 +38,21 @@ This page contains a list of screencasts that describe SNT capabilities.
 
 # Outdated Screencasts
 
-These are old [Simple Neurite Tracer](SNT__FAQ#snt "wikilink") screencasts that are likely too outdated to be useful.
+These are old [Simple Neurite Tracer](SNT__FAQ#snt ) screencasts that are likely too outdated to be useful.
 
-### Basic Usage of [Simple Neurite Tracer](SNT__FAQ#snt "wikilink")
+### Basic Usage of [Simple Neurite Tracer](SNT__FAQ#snt )
 
   
 {% include youtube url='https://www.youtube.com/embed/y6ZPdDfUOjI'%}  
   
 
-### Using MIP overlays in [Simple Neurite Tracer](SNT__FAQ#snt "wikilink")
+### Using MIP overlays in [Simple Neurite Tracer](SNT__FAQ#snt )
 
   
 {% include youtube url='https://www.youtube.com/embed/pXpMRb1AC4I'%}  
   
 
-### Using The [Legacy 3D Viewer](SNT__Step-By-Step_Instructions#Tracing_in_the_Legacy_3D_Viewer "wikilink")
+### Using The [Legacy 3D Viewer](SNT__Step-By-Step_Instructions#Tracing_in_the_Legacy_3D_Viewer )
 
   
 {% include youtube url='https://www.youtube.com/embed/SrPeSwu31Zs'%}  

@@ -7,7 +7,7 @@ categories: News
 description: test description
 ---
 
-A new minor version of [TrackMate\_](TrackMate_ "wikilink") has been released. This page lists the changes that are visible to the user.
+A new minor version of [TrackMate\_](TrackMate_ ) has been released. This page lists the changes that are visible to the user.
 
 Version 2.2.0 focuses mainly on extendability, tracking performance and detection accuracy.
 
@@ -21,7 +21,7 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 <!-- end list -->
 
-  - We also took the chance to rewrite all the detectors from scratch, using the latest development in [ImgLib2](ImgLib2 "wikilink"). This prompted **major performance improvement for the detection process**. Here are the results of a quick benchmark:
+  - We also took the chance to rewrite all the detectors from scratch, using the latest development in [ImgLib2](ImgLib2 ). This prompted **major performance improvement for the detection process**. Here are the results of a quick benchmark:
 
 | Detector                   | v2.1.1 | v2.2.0 | speedup factor |
 | -------------------------- | ------ | ------ | -------------- |
@@ -30,13 +30,13 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 | LoG detector for 3D images | 291s   | 18.2s  | x15            |
 | DoG detector for 3D images | 21.6s  | 15.1s  | x1.4           |
 
-(This benchmark was done with the ISBI challenge datasets). You can find more benchmarks [here](TrackMate_Performance "wikilink").
+(This benchmark was done with the ISBI challenge datasets). You can find more benchmarks [here](TrackMate_Performance ).
 
-  - Complete rewrite of the way we handle modules in TrackMate. TrackMate now uses [SciJava](http://www.scijava.org/) and exploit its automatic discovery mechanism for modules. Practically, **it is now very easy to extend TrackMate**, and you do not depend on us anymore at all for anything. We could completely disappear and you would still be able to extend TrackMate so that it suits your need, without requiring any of our help. Several [tutorials](TrackMate#For_developers_2 "wikilink") describe how to do this. This is made possible thanks to the enormous efforts of the SciJava team. Thanks to them\!
+  - Complete rewrite of the way we handle modules in TrackMate. TrackMate now uses [SciJava](http://www.scijava.org/) and exploit its automatic discovery mechanism for modules. Practically, **it is now very easy to extend TrackMate**, and you do not depend on us anymore at all for anything. We could completely disappear and you would still be able to extend TrackMate so that it suits your need, without requiring any of our help. Several [tutorials](TrackMate#For_developers_2 ) describe how to do this. This is made possible thanks to the enormous efforts of the SciJava team. Thanks to them\!
 
 #### Improvements
 
-  - In [TrackScheme](TrackScheme "wikilink"), the tracks can be navigated through using the keyboard:
+  - In [TrackScheme](TrackScheme ), the tracks can be navigated through using the keyboard:
       - UP: previous spot in time.
       - DOWN: next spot in time.
       - LEFT: next sibling within the same track
@@ -46,11 +46,11 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 <!-- end list -->
 
-  - Major performance improvement when launching [TrackScheme](TrackScheme "wikilink") on a large models.
+  - Major performance improvement when launching [TrackScheme](TrackScheme ) on a large models.
 
 <!-- end list -->
 
-  - Major performance improvement when selecting/deselecting in [TrackScheme](TrackScheme "wikilink")
+  - Major performance improvement when selecting/deselecting in [TrackScheme](TrackScheme )
 
 <!-- end list -->
 
@@ -66,7 +66,7 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 <!-- end list -->
 
-  - Ship a [MATLAB](MATLAB "wikilink") function to import in [MATLAB](MATLAB "wikilink") the tracks exported by TrackMate. Check [this](Using_TrackMate_with_MATLAB "wikilink").
+  - Ship a [MATLAB](MATLAB ) function to import in [MATLAB](MATLAB ) the tracks exported by TrackMate. Check [this](Using_TrackMate_with_MATLAB ).
 
 <!-- end list -->
 
@@ -112,6 +112,6 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
   - Fix several issues with zooming and decorations in TrackScheme. Fix a bug that caused the sliders to disappear for the simple style and with some zoom levels. Zooming should be now more efficient, and offers more zoom levels.
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 05:32, 19 March 2014 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez )) 05:32, 19 March 2014 (CDT)
 
 

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SME Projection](SME_Projection "wikilink")
+1.  REDIRECT [SME Projection](SME_Projection )

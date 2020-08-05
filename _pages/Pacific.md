@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Fiji.sc](Fiji.sc "wikilink")
+1.  REDIRECT [Fiji.sc](Fiji.sc )

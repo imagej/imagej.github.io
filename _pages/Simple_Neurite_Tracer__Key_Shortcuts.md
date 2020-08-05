@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SNT:\_Key\_Shortcuts](SNT__Key_Shortcuts "wikilink")
+1.  REDIRECT [SNT:\_Key\_Shortcuts](SNT__Key_Shortcuts )

@@ -21,14 +21,14 @@ Functions for assigning PSFs to images and managing PSFs can be found in **Multi
 
 ### Extracting PSFs
 
-**Extracting** PSFs is the process of taking previously [detected interest points](BigStitcher_Interest_points "wikilink") and creating PSFs from them. Clicking this menu entry will bring up the PSF extraction dialog:
+**Extracting** PSFs is the process of taking previously [detected interest points](BigStitcher_Interest_points ) and creating PSFs from them. Clicking this menu entry will bring up the PSF extraction dialog:
 
 <img src="/images/pages/BigStitcher psf extraction.png" width="500"/>
 
 Here, you have a few options:
 
   - **Interest Points**: which interest points to use for PSF creation.
-  - **Use corresponding interest points**: check this to only use interest points that have a correspondence in another image. This only works if you have already performed [registration](BigStitcher_Registration "wikilink") with those points. This is useful to quickly exclude spurious detections, but for the best results, you might want to [manually curate a set of points that only consists of beads](BigStitcher_Interest_point_management#Remove_interactively "wikilink").
+  - **Use corresponding interest points**: check this to only use interest points that have a correspondence in another image. This only works if you have already performed [registration](BigStitcher_Registration ) with those points. This is useful to quickly exclude spurious detections, but for the best results, you might want to [manually curate a set of points that only consists of beads](BigStitcher_Interest_point_management#Remove_interactively ).
   - **Remove min intensity projection from PSF**: check this to remove the minimal intensity projection (thrice, in x, y and z) from the resulting averaged PSF. This should reduce background noise.
   - **PSF size**: the volume (in raw image pixels) to cut around the interest points for PSF generation. The default typically works well for reasonably sampled images, but you might want to increase the size if you have oversampling.
 
@@ -72,4 +72,4 @@ You can use the function in this sub-menu to quickly display your PSFs as ImageJ
   - **Maximum Projection of averaged PSF**: show a Maximum intensity projection of the averaged PSF of all selected views. Note that the projection will be done **along the smallest (px) axis of the PSF**.
   - **Maximum Projection of averaged transformed PSF**: show a maximum intensity projection of the averaged PSF transformed to world coordinates according to the view registrations.
 
-Go back to the [main page](BigStitcher#Documentation "wikilink")
+Go back to the [main page](BigStitcher#Documentation )

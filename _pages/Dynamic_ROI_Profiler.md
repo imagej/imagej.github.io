@@ -13,7 +13,7 @@ description: test description
 {% endcapture %}
 {% include info-box name='Dynamic ROI Profiler ' software='Clojure ' author='Albert Cardona ' maintainer=' ' filename='Dynamic\_ROI\_Profiler.clj ' source=source latest-version='16 November 2008 ' status='unknown ' %}
 
-Dynamically updates a profile plot for an image with a line, freeline, polyline or a rectangular ROI, as the ROI is moved across the image. Written in [Clojure](Clojure_Scripting "wikilink").
+Dynamically updates a profile plot for an image with a line, freeline, polyline or a rectangular ROI, as the ROI is moved across the image. Written in [Clojure](Clojure_Scripting ).
 
 |                                                                                                                                                                                               |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

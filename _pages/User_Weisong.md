@@ -9,4 +9,4 @@ description: test description
 
 {% include user-box name='Weisong Zhao ' affiliation=' [Harbin Institute of Technology](http://ise.hit.edu.cn/) ' forum='WeisongZhao ' github='WeisongZhao ' %} Weisong Zao is a Ph.D. student at the Harbin Institute of Technology and has contributed and is maintaining serveral plugins:
 
-  - [Adaptive Median Filter](Adaptive_Median_Filter "wikilink")
+  - [Adaptive Median Filter](Adaptive_Median_Filter )

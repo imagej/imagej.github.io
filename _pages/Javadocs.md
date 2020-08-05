@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Javadoc](Javadoc "wikilink")
+1.  REDIRECT [Javadoc](Javadoc )

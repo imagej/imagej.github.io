@@ -13,7 +13,7 @@ description: test description
 {% endcapture %}
 {% include info-box content='Plugin' software='AxoNet ' name='AxoNet ' author='Matthew Ritch (mritch3) ' maintainer='Matthew Ritch (mritch3) ' source=source website='https://github.com/ethier-lab/AxoNet-fiji ' %}
 
-AxoNet is an [open-source](open-source "wikilink") plugin for axon counting using deep learning.
+AxoNet is an [open-source](open-source ) plugin for axon counting using deep learning.
 
 The [AxoNet](https://github.com/ethier-lab/axonet-fiji) plugin enables AxoNet to be used from ImageJ and Fiji. This allows you to deploy the tool to your own optic nerve images for axon counting.
 
@@ -24,6 +24,6 @@ The [AxoNet](https://github.com/ethier-lab/axonet-fiji) plugin enables AxoNet to
 ## See also
 
   - {% include github org='ethier-lab ' repo='axonet-fiji ' label='AxoNet on GitHub ' %}.
-  - The AxoNet [update site](update_site "wikilink") to make AxoNet available in ImageJ.
+  - The AxoNet [update site](update_site ) to make AxoNet available in ImageJ.
 
   

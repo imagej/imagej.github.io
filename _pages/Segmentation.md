@@ -7,7 +7,7 @@ categories: Tutorials,Segmentation
 description: test description
 ---
 
-{% include biginfo-box content='See [:Category:Segmentation](_Category_Segmentation "wikilink") for pages about image segmentation.' %} {% include learn content='techniques' %}
+{% include biginfo-box content='See [:Category:Segmentation](_Category_Segmentation ) for pages about image segmentation.' %} {% include learn content='techniques' %}
 
 {% include tip tip='See [this helpful workshop on Image Segmentation](https://imagej.net/_images/8/87/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf) for another great overview of Segmentation\! ' %}
 
@@ -59,17 +59,17 @@ Give it a try—you might like it\!
 
 One good workflow for segmentation in ImageJ is as follows:
 
-1.  [ Preprocess](Segmentation#Preprocessing "wikilink") the given images
-2.  Apply an [ Auto Threshold](Segmentation#Adjusting_Threshold "wikilink")
-3.  Create and manipulate a [ mask](Segmentation#Creating_Masks "wikilink")
-4.  [ Create and transfer](Segmentation#Selections#Creating_Selections "wikilink") a selection from a mask to your original image
-5.  [ Analyze](Segmentation#Analysis "wikilink") the resulting data
+1.  [ Preprocess](Segmentation#Preprocessing ) the given images
+2.  Apply an [ Auto Threshold](Segmentation#Adjusting_Threshold )
+3.  Create and manipulate a [ mask](Segmentation#Creating_Masks )
+4.  [ Create and transfer](Segmentation#Selections#Creating_Selections ) a selection from a mask to your original image
+5.  [ Analyze](Segmentation#Analysis ) the resulting data
 
 ## Preprocessing
 
 Preprocess the image using filters, to make later thresholding more effective. Which filter(s) to use is highly dependent on your data, but some commonly useful filters include:
 
-  - [Deconvolution](_Category_Deconvolution "wikilink")
+  - [Deconvolution](_Category_Deconvolution )
   - \[https://imagej.net/docs/guide/146-29.html#sub:Subtract-Background... Subtract Background\]
   - \[https://imagej.net/docs/guide/146-29.html#sub:Gaussian-Blur... Gaussian Blur\]
   - [Find Edges](https://imagej.net/docs/guide/146-29.html#sub:Find-Edges)
@@ -123,12 +123,12 @@ Do some numerical analysis on the selected data:
       - Control which measurements are done using \[https://imagej.net/docs/guide/146-30.html#sub:Set-Measurements... Set Measurements\].
   - Use \[https://imagej.net/docs/guide/146-30.html#sub:Analyze-Particles... Analyze Particles\] to extract desirable objects from your selection and report individual statistics on them.
   - Use the [ROI Manager](https://imagej.net/docs/guide/146-30.html#fig:The-ROI-Manager) to **Add** the selection and then **Split** it (under the **More** button), then use **Multi Measure** (also under **More**) to report statistics on the objects.
-  - [Write a macro](Macros_Intro "wikilink") to automate this sort of analysis, loop over objects in the ROI manager, measure and manipulate them, etc.
+  - [Write a macro](Macros_Intro ) to automate this sort of analysis, loop over objects in the ROI manager, measure and manipulate them, etc.
 
 # See also
 
   - The [Introduction to Image Segmentation using ImageJ/Fiji](https://imagej.net/_images/8/87/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf) workshop.
   - The [Segmentation with Fiji workshop slides](http://imagej.github.io/presentations/fiji-segmentation/).
-  - [:Category:Segmentation](_Category_Segmentation "wikilink"), a list of pages about image segmentation.
+  - [:Category:Segmentation](_Category_Segmentation ), a list of pages about image segmentation.
 
  

@@ -8,17 +8,17 @@ description: test description
 ---
 
 {% include menu-formats%}
-Out of the box, ImageJ has limited support for some video formats such as AVI and [QuickTime](QuickTime "wikilink").
+Out of the box, ImageJ has limited support for some video formats such as AVI and [QuickTime](QuickTime ).
 
 ## Plugins
 
 There are several ways to enable support for more video formats:
 
-  - [Bio-Formats](Bio-Formats "wikilink") includes support for reading additional codecs for some video formats. See the Bio-Formats [AVI](https://www.openmicroscopy.org/site/support/bio-formats5.4/formats/avi.html) and [QuickTime](https://www.openmicroscopy.org/site/support/bio-formats/formats/quicktime-movie.html) pages for the list of supported codecs. Bio-Formats is included with the [Fiji](Fiji "wikilink") distribution of ImageJ.
+  - [Bio-Formats](Bio-Formats ) includes support for reading additional codecs for some video formats. See the Bio-Formats [AVI](https://www.openmicroscopy.org/site/support/bio-formats5.4/formats/avi.html) and [QuickTime](https://www.openmicroscopy.org/site/support/bio-formats/formats/quicktime-movie.html) pages for the list of supported codecs. Bio-Formats is included with the [Fiji](Fiji ) distribution of ImageJ.
 
 <!-- end list -->
 
-  - Enable the *beta-quality* FFMPEG [update site](update_site "wikilink"), which uses native bindings to the {% include wikipedia title='FFmpeg' text='FFmpeg'%} library to read many video formats. The source code for this update site is [embedded in the scifio-javacv history](https://github.com/scifio/scifio-javacv/tree/ffmpeg).
+  - Enable the *beta-quality* FFMPEG [update site](update_site ), which uses native bindings to the {% include wikipedia title='FFmpeg' text='FFmpeg'%} library to read many video formats. The source code for this update site is [embedded in the scifio-javacv history](https://github.com/scifio/scifio-javacv/tree/ffmpeg).
 
 <!-- end list -->
 
@@ -32,6 +32,6 @@ For files larger than 4GB, you may run into trouble with otherwise excellent tra
 
 ## Future directions
 
-The {% include github org='scifio ' repo='scifio-javacv ' label='SCIFIO-JavaCV ' %} project will offer out-of-the-box support for video formats supported by [OpenCV](OpenCV "wikilink") including those supported by FFmpeg. At the moment, the SCIFIO-JavaCV project is inactive due to lack of development resources.
+The {% include github org='scifio ' repo='scifio-javacv ' label='SCIFIO-JavaCV ' %} project will offer out-of-the-box support for video formats supported by [OpenCV](OpenCV ) including those supported by FFmpeg. At the moment, the SCIFIO-JavaCV project is inactive due to lack of development resources.
 
 

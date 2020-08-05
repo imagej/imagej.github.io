@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-This page provides user documentation for the Format category of the [CIP](CIP "wikilink") scripting package.
+This page provides user documentation for the Format category of the [CIP](CIP ) scripting package.
 
 {% include cip content='Navigation' %}
 

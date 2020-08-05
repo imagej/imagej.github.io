@@ -7,32 +7,32 @@ categories: News,Fiji,ImageScience
 description: test description
 ---
 
-Resulting from [a discussion](https://github.com/imagescience/ImageScience/pull/1) with {% include person content='ImageScience' %}, the [ImageScience](ImageScience "wikilink") plugins have moved to their own dedicated [update site](update_site "wikilink"), and will no longer be distributed as part of core [Fiji](Fiji "wikilink").
+Resulting from [a discussion](https://github.com/imagescience/ImageScience/pull/1) with {% include person content='ImageScience' %}, the [ImageScience](ImageScience ) plugins have moved to their own dedicated [update site](update_site ), and will no longer be distributed as part of core [Fiji](Fiji ).
 
 ## What moved?
 
 The ImageScience plugins include:
 
-  - [FeatureJ](FeatureJ "wikilink")
-  - [MTrackJ](MTrackJ "wikilink")
-  - [RandomJ](RandomJ "wikilink")
-  - [TransformJ](TransformJ "wikilink")
+  - [FeatureJ](FeatureJ )
+  - [MTrackJ](MTrackJ )
+  - [RandomJ](RandomJ )
+  - [TransformJ](TransformJ )
 
-There is also a fifth plugin, [NeuronJ](NeuronJ "wikilink"), which is now part of the ImageScience update site, not part of Fiji previously.
+There is also a fifth plugin, [NeuronJ](NeuronJ ), which is now part of the ImageScience update site, not part of Fiji previously.
 
 ## Why?
 
 The main reasons for the switch are:
 
-  - To give Erik more control over the [development lifecycle](development_lifecycle "wikilink") ([versioning](versioning "wikilink"), [releases](releases "wikilink"), etc.).
-  - To avoid a licensing conflict between Fiji's [GPL](GPL "wikilink") license and [ImageScience's proprietary one](http://www.imagescience.org/meijering/software/imagescience/).
+  - To give Erik more control over the [development lifecycle](development_lifecycle ) ([versioning](versioning ), [releases](releases ), etc.).
+  - To avoid a licensing conflict between Fiji's [GPL](GPL ) license and [ImageScience's proprietary one](http://www.imagescience.org/meijering/software/imagescience/).
 
 ## How does this affect users?
 
-If you are using these plugins in your own workflows ([scripts](scripts "wikilink"), [macros](macros "wikilink"), [plugins](plugins "wikilink"), etc.), then you will need to [enable the ImageScience update site](How_to_follow_a_3rd_party_update_site "wikilink") for those workflows to remain functional.
+If you are using these plugins in your own workflows ([scripts](scripts ), [macros](macros ), [plugins](plugins ), etc.), then you will need to [enable the ImageScience update site](How_to_follow_a_3rd_party_update_site ) for those workflows to remain functional.
 
 We will leave the current versions of the ImageScience plugins on the Fiji update site for a few more weeks, to give people time to transition to the update site. We anticipate a "spring cleaning" announcement in a couple of months, announcing the removal of several plugins, including the ImageScience ones.
 
-As always, thanks for your support, and [let us know](Contact "wikilink") if you have any questions or concerns with this change.
+As always, thanks for your support, and [let us know](Contact ) if you have any questions or concerns with this change.
 
   

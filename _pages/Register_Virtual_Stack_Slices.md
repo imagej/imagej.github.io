@@ -17,10 +17,10 @@ The plugin can perform*' 6 types of image registration techniques*':
   - Rigid (translation + rotation)
   - Similarity (translation + rotation + isotropic scaling)
   - Affine
-  - Elastic (via [ bUnwarpJ](BUnwarpJ "wikilink") with cubic B-splines)
+  - Elastic (via [ bUnwarpJ](BUnwarpJ ) with cubic B-splines)
   - Moving least squares
 
-All models are aided by automatically extracted [ SIFT features](Feature_Extraction "wikilink").
+All models are aided by automatically extracted [ SIFT features](Feature_Extraction ).
 
 ## User Manual
 
@@ -42,9 +42,9 @@ Images may have different dimensions and be of different type.
   - **Select the output folder** where resulting registered slices are automatically stored as TIFF files.
   - **Feature extraction model**. The expected transformation model finding inliers (i.e. correspondences or landmarks between images) in the feature extraction: translation, rigid, similarity or affine.
   - **Registration model**. The image transformation model: translation, rigid, similarity, affine, elastic or moving least squares.
-  - **Advanced setup**. The advanced checkbox: whether to see the [ feature extraction parameters](Feature_Extraction#Parameters "wikilink") setup dialog, and if elastic, the [ bUnwarpJ](BUnwarpJ "wikilink") dialog. Otherwise the plugin operates on reasonable, default parameters.
+  - **Advanced setup**. The advanced checkbox: whether to see the [ feature extraction parameters](Feature_Extraction#Parameters ) setup dialog, and if elastic, the [ bUnwarpJ](BUnwarpJ ) dialog. Otherwise the plugin operates on reasonable, default parameters.
   - **Shrinkage constrain**. Option to regularize the registration in order to avoid section shrinking.
-  - **Save transforms**. Option to save the resulting transforms into files, that can be loaded using [Transform Virtual Stack Slices](Transform_Virtual_Stack_Slices "wikilink").
+  - **Save transforms**. Option to save the resulting transforms into files, that can be loaded using [Transform Virtual Stack Slices](Transform_Virtual_Stack_Slices ).
 
 <b>Step 3</b>: choose the **reference** image (only if the "Shrinkage constraint" checkbox was not marked):  
 
@@ -70,7 +70,7 @@ For the registration models "translation" and "rigid", no regularization is need
 
 **TODO**: the "elastic" and "moving least squares" registration models do not have a proper shrinkage regularization implementation yet.
 
-In the case of the "elastic" model, only a rigid registration will be performed. If you need to regularize the elastic transformation between the sections, you better do it through the bUnwarpJ paramters (see [ Notes](Register_Virtual_Stack_Slices#Notes "wikilink") below).
+In the case of the "elastic" model, only a rigid registration will be performed. If you need to regularize the elastic transformation between the sections, you better do it through the bUnwarpJ paramters (see [ Notes](Register_Virtual_Stack_Slices#Notes ) below).
 
 For the "moving least squares" model, the maximal warping will still take place with no regularization.
 
@@ -78,16 +78,16 @@ We can visualize the relaxation of the system into the desired registration mode
 
 ### Save Transforms
 
-Since the 09/24/2009 version, the plugin has the option to store the resulting transforms into files. This way, the results can be reproduce later on the same images or on a difference sequence by using the plugin [Transform Virtual Stack Slices](Transform_Virtual_Stack_Slices "wikilink").
+Since the 09/24/2009 version, the plugin has the option to store the resulting transforms into files. This way, the results can be reproduce later on the same images or on a difference sequence by using the plugin [Transform Virtual Stack Slices](Transform_Virtual_Stack_Slices ).
 
 To save the transforms, you just have to click on the "Save transforms" check-box of the main dialog. Then, after selecting the source and output directories, a new dialog will pop up to select the folder to store the transforms in.
 
-The transforms are saved as **.XML** files, following [TrakEM2](TrakEM2 "wikilink") format.
+The transforms are saved as **.XML** files, following [TrakEM2](TrakEM2 ) format.
 
 ### Notes
 
 1.  The plugin is multithreaded: more CPU cores means faster execution.
-2.  The two most relevant parameters in the [ SIFT feature extraction](Feature_Extraction "wikilink") are:  
+2.  The two most relevant parameters in the [ SIFT feature extraction](Feature_Extraction ) are:  
       - <b>maximum image size</b>, which limits the low-end size of the features (i.e. decrease maximum image size to increase the size of the smallest features to extract.)
       - <b>inlier ratio</b>, which determines when to reject the intersection set of feature correspondences between two images (ratio between correspondent features vs. all extracted features.)
 3.  All types of images are accepted (8-bit, 16-bit, 32-bit and RGB) but only in .tif, .jpg, .png, .gif, .tiff, .jpeg, .bmp, .pgm, or .ima format. Output images are saved as TIFF.
@@ -95,7 +95,7 @@ The transforms are saved as **.XML** files, following [TrakEM2](TrakEM2 "wikilin
 
 ![Elastic registration options](/images/pages/Rvs elastic options 351x446.png "Elastic registration options")
 
-This is actually a reduced version of the [ bUnwarpJ](BUnwarpJ "wikilink") main window.
+This is actually a reduced version of the [ bUnwarpJ](BUnwarpJ ) main window.
 
 Briefly, the options are:
 
@@ -228,14 +228,14 @@ reference_name, p, use_shrinking_constraint)
 
 ## See also
 
-  - [Transform Virtual Stack Slices](Transform_Virtual_Stack_Slices "wikilink"), to see how to load the saved transforms.
+  - [Transform Virtual Stack Slices](Transform_Virtual_Stack_Slices ), to see how to load the saved transforms.
   - [FloatArray2DSIFT.java](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/imagefeatures/FloatArray2DSIFT.java;hb=HEAD) which contains the subclass Param which is the 'sift' member of the Register\_Virtual\_Stack\_Slices.Param subclass.
   - {% include github org='fiji ' repo='register\_virtual\_stack\_slices ' source='register\_virtual\_stack/Register\_Virtual\_Stack\_MT.java ' label='Register\_Virtual\_Stack\_MT.java ' %}, including the Param subclass.
-  - [Elastic Alignment and Montage plugin](Elastic_Alignment_and_Montage "wikilink"), for elastic registration/montage of large datasets using spring meshes (local deformations).
+  - [Elastic Alignment and Montage plugin](Elastic_Alignment_and_Montage ), for elastic registration/montage of large datasets using spring meshes (local deformations).
 
 ## References
 
-The algorithm implemented for elastic registration ([bUnwarpJ](BUnwarpJ "wikilink")) and its technical explanations are detailed on the paper:
+The algorithm implemented for elastic registration ([bUnwarpJ](BUnwarpJ )) and its technical explanations are detailed on the paper:
 
   - I. Arganda-Carreras, C. O. S. Sorzano, R. Marabini, J.-M. Carazo, C. Ortiz-de Solorzano, and J. Kybic, ["Consistent and Elastic Registration of Histological Sections using Vector-Spline Regularization,"](http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/downloads/arganda_carreras_CVAMIA06.pdf) Lecture Notes in Computer Science, Springer Berlin / Heidelberg, volume 4241/2006, CVAMIA: Computer Vision Approaches to Medical Image Analysis, pages 85-95, 2006.
 

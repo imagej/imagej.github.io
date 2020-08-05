@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include warning-box content='The """Batch Processor""" plugin is currently in development, and its functionality is still subject to substantial changes in the near future. For an overview of current batch processing options, see the [Batch Processing](Batch_Processing "wikilink") page.' %}
+{% include warning-box content='The """Batch Processor""" plugin is currently in development, and its functionality is still subject to substantial changes in the near future. For an overview of current batch processing options, see the [Batch Processing](Batch_Processing ) page.' %}
 
 
 {% capture maintainer%}

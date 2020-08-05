@@ -9,7 +9,7 @@ description: test description
 
 ## Introduction
 
-This tutorial is designed to give you a first impression of the segmentation tools available in Fiji. It covers basic thresholding and morphology operations (erode, dilate, open, close), [Level Sets](Level_Sets "wikilink"), the [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink") and the [Segmentation Editor](Segmentation_Editor "wikilink").
+This tutorial is designed to give you a first impression of the segmentation tools available in Fiji. It covers basic thresholding and morphology operations (erode, dilate, open, close), [Level Sets](Level_Sets ), the [Simple Neurite Tracer](Simple_Neurite_Tracer ) and the [Segmentation Editor](Segmentation_Editor ).
 
 ## Thresholding and Morphology
 
@@ -99,7 +99,7 @@ Now take the same image and add some noise (Process - Noise - Add noise)
   - Can you still get a good segmentation?
   - What difficulties arrise?
 
-If you want to know more about the plugin, you can look at the [documentation](Level_Sets "wikilink").
+If you want to know more about the plugin, you can look at the [documentation](Level_Sets ).
 
 ## Simple Neurite Tracer
 

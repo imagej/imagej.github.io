@@ -10,7 +10,7 @@ description: test description
 This account is used to manage the [OMERO 5.1 update site](http://sites.imagej.net/OMERO-5.1/). See also {% include list-of-update-sites%}
 .{% include warning-box content='Java 7 or later is required to use this update site\!' %} To activate it:
 
-  - [*Help\>Update*](Update_Sites "wikilink")
+  - [*Help\>Update*](Update_Sites )
   - Click *Manage update sites*
   - Check *OMERO 5.1*
   - Click *Close*

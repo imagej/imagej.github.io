@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Developing ImageJ in NetBeans](Developing_ImageJ_in_NetBeans "wikilink")
+1.  REDIRECT [Developing ImageJ in NetBeans](Developing_ImageJ_in_NetBeans )

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  redirect [Stitching\#Stitch\_Image\_Grid\_Sequence](Stitching#Stitch_Image_Grid_Sequence "wikilink")
+1.  redirect [Stitching\#Stitch\_Image\_Grid\_Sequence](Stitching#Stitch_Image_Grid_Sequence )

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Java 3D](Java_3D "wikilink")
+1.  REDIRECT [Java 3D](Java_3D )

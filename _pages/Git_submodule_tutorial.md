@@ -24,7 +24,7 @@ Submodules, although existing as folders inside the fiji repository, are differe
 
 Each submodule is a proper full-fledged git repository, so any git commands executed within the folders of the submodule will affect that git repository, not fiji's.
 
-However, to work with a submodule you must clone that repository. See the [Submodules](Downloading_and_Building_Fiji_From_Source#Submodules "wikilink") section of the [Downloading and Building Fiji From Source](Downloading_and_Building_Fiji_From_Source "wikilink") page for details.
+However, to work with a submodule you must clone that repository. See the [Submodules](Downloading_and_Building_Fiji_From_Source#Submodules ) section of the [Downloading and Building Fiji From Source](Downloading_and_Building_Fiji_From_Source ) page for details.
 
 ### Submodule workflow
 
@@ -64,7 +64,7 @@ When merging and rebasing fiji, you are likely to end up having to fix conflicts
 
 ### Submodule Conflicts while Merging
 
-You are most likely to have submodule conflicts while merging when you run "git merge" or "git pull" (which effectively runs "git fetch" followed by "git merge"). How to resolve those conflicts can be read on the [Git Conflicts](Git_Conflicts#Submodule_conflicts "wikilink") wiki page.
+You are most likely to have submodule conflicts while merging when you run "git merge" or "git pull" (which effectively runs "git fetch" followed by "git merge"). How to resolve those conflicts can be read on the [Git Conflicts](Git_Conflicts#Submodule_conflicts ) wiki page.
 
 ### Submodule Conflicts while Rebasing
 

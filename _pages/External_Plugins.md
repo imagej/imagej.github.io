@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [How to extract a subproject](How_to_extract_a_subproject "wikilink")
+1.  REDIRECT [How to extract a subproject](How_to_extract_a_subproject )

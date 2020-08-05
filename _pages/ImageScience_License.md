@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [ImageScience](ImageScience "wikilink")
+1.  REDIRECT [ImageScience](ImageScience )

@@ -19,7 +19,7 @@ Today, ImageJ has a flexible and extensible automatic import mechanism: the [Scr
 
 # How ScriptHeaders works
 
-ScriptHeaders are [SciJava](SciJava "wikilink") plugins, so they can be distributed with any part of ImageJ or Fiji and will automatically be discovered.
+ScriptHeaders are [SciJava](SciJava ) plugins, so they can be distributed with any part of ImageJ or Fiji and will automatically be discovered.
 
 When using the script editor to make a script for a particular language, all ScriptHeaders compatible with that language will add their contents to the beginning of the script.
 
@@ -29,7 +29,7 @@ The result is that the script-writer sees exactly what is added. If they need to
 
 # How to: Activate a Header
 
-1.  Open the [Script Editor](Using_the_Script_Editor "wikilink")
+1.  Open the [Script Editor](Using_the_Script_Editor )
 2.  Select a language from the Language Menu
 
 That's it\! If one or more ScriptHeader(s) exist for the selected language, they will be added automatically to the top of your script.

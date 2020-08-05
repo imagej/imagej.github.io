@@ -14,7 +14,7 @@ description: test description
 
 ## How to find which commit introduced a regression
 
-So you found a regression? I.e. you know that the version worked perfectly that you had yesterday of, say, the [ImageJ Ops](ImageJ_Ops "wikilink") library, but today it crashes?
+So you found a regression? I.e. you know that the version worked perfectly that you had yesterday of, say, the [ImageJ Ops](ImageJ_Ops ) library, but today it crashes?
 
 Git-bisect to the rescue\!
 
@@ -74,7 +74,7 @@ and go back to the branch you came from:
 git checkout master
 ```
 
-If you are unsure which branch you came from, look at the [reflog](Git_reflogs "wikilink") first.
+If you are unsure which branch you came from, look at the [reflog](Git_reflogs ) first.
 
 Now you can cherry-pick (or forward-port) your patch:
 
@@ -90,7 +90,7 @@ After that, you can get rid of the now-obsolete tag:
 git tag -d my-fix
 ```
 
-Note: instead of using a temporary tag, you can use the [reflog](Git_reflogs "wikilink") of the HEAD ref (`git cherry-pick HEAD@{1}`), but if you are not familiar with the concept, tags are probably easier to handle.
+Note: instead of using a temporary tag, you can use the [reflog](Git_reflogs ) of the HEAD ref (`git cherry-pick HEAD@{1}`), but if you are not familiar with the concept, tags are probably easier to handle.
 
 # See also
 

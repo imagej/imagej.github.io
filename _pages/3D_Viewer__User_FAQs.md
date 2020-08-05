@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-(Return to the main [3D Viewer](3D_Viewer "wikilink") page)
+(Return to the main [3D Viewer](3D_Viewer ) page)
 
 ## Basic Usage
 

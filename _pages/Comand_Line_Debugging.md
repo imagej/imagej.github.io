@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Command Line Debugging](Command_Line_Debugging "wikilink")
+1.  REDIRECT [Command Line Debugging](Command_Line_Debugging )

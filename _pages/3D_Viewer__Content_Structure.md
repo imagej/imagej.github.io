@@ -7,12 +7,12 @@ categories:
 description: test description
 ---
 
-(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation "wikilink") page)  
-(Return to the main [3D\_Viewer](3D_Viewer "wikilink") page)
+(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation ) page)  
+(Return to the main [3D\_Viewer](3D_Viewer ) page)
 
 ## The relation between Content and Universe
 
-You can download example source code for this HowTo [here](3D_Viewer__Example_code "wikilink").
+You can download example source code for this HowTo [here](3D_Viewer__Example_code ).
 
 The following figure shows a simplified class diagram which shows the class hierarchy and relationship of the most important classes for users ofthe API: {% include thumbnail src='/images/pages/3DViewer-class-diagram.png' title='Simplified class diagram showing the core classes of the 3D Viewer.'%}
 

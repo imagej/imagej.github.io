@@ -15,15 +15,15 @@ Here are the plugins released I am responsible for. If you detect any problem wi
 
 ## Maintained plugins
 
-  - [FlowJ](FlowJ "wikilink")
-  - [LSM Toolbox](LSM_Toolbox "wikilink")
-  - The [Stack Manipulation](Stack_Manipulation "wikilink") package
-  - [View5D](View5D "wikilink")
+  - [FlowJ](FlowJ )
+  - [LSM Toolbox](LSM_Toolbox )
+  - The [Stack Manipulation](Stack_Manipulation ) package
+  - [View5D](View5D )
 
 ## Authored plugins documented here
 
-  - [Arrow\_](Arrow_ "wikilink")
-  - [Directionality\_](Directionality_ "wikilink")
-  - [Image Expression Parser](Image_Expression_Parser "wikilink")
-  - [PIV analysis](PIV_analysis "wikilink")
-  - [TrackMate\_](TrackMate_ "wikilink")
+  - [Arrow\_](Arrow_ )
+  - [Directionality\_](Directionality_ )
+  - [Image Expression Parser](Image_Expression_Parser )
+  - [PIV analysis](PIV_analysis )
+  - [TrackMate\_](TrackMate_ )

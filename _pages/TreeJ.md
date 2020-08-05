@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='L-EL ' repo='TreeJ ' %}
 {% endcapture %}
-{% include info-box name='TreeJ ' software='ImageJ and Fiji ' author=' [Elise Laruelle](https://github.com/L-EL) , Philippe Andrey, Jean-Christophe Palauqui, Alain Trubuil ' maintainer=' [Elise Laruelle](https://github.com/L-EL) ' filename=' [TreeJ\_-1.0.0-SNAPSHOT.jar](https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar) ' source=source Initial-released='July, 2016 ' category='[Analysis](_Category_Analysis "wikilink"), [Plugins](_Category_Plugins "wikilink") ' %}
+{% include info-box name='TreeJ ' software='ImageJ and Fiji ' author=' [Elise Laruelle](https://github.com/L-EL) , Philippe Andrey, Jean-Christophe Palauqui, Alain Trubuil ' maintainer=' [Elise Laruelle](https://github.com/L-EL) ' filename=' [TreeJ\_-1.0.0-SNAPSHOT.jar](https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar) ' source=source Initial-released='July, 2016 ' category='[Analysis](_Category_Analysis ), [Plugins](_Category_Plugins ) ' %}
 
 This plugin contains an interface to reconstruct interactively and recursively a cell lineage from a static labeled image. It allows to :
 

@@ -7,7 +7,7 @@ categories: Scripting,Segmentation,Machine Learning
 description: test description
 ---
 
-[Scripting](Script_Editor "wikilink") is one of the reasons Fiji is so powerful, and the Trainable Weka Segmentation library (that includes the [ Trainable Weka Segmentation plugin](Trainable_Weka_Segmentation "wikilink")) is one of the best examples for scriptable Fiji components.
+[Scripting](Script_Editor ) is one of the reasons Fiji is so powerful, and the Trainable Weka Segmentation library (that includes the [ Trainable Weka Segmentation plugin](Trainable_Weka_Segmentation )) is one of the best examples for scriptable Fiji components.
 
 # Getting started
 
@@ -32,7 +32,7 @@ input  = IJ.openImage( "input-grayscale-or-color-image.tif" );
 segmentator = new WekaSegmentation( input );
 ```
 
-As it is now, the segmentator has default parameters and default classifier. That means that it will use the same features that are set by default in the [ Trainable Weka Segmentation plugin](Trainable_Weka_Segmentation "wikilink"), 2 classes (named "class 1" and "class 2") and a random forest classifier with 200 trees and 2 random features per node. If we are fine with that, we can now add some labels for our training data and train the classifier based on them.
+As it is now, the segmentator has default parameters and default classifier. That means that it will use the same features that are set by default in the [ Trainable Weka Segmentation plugin](Trainable_Weka_Segmentation ), 2 classes (named "class 1" and "class 2") and a random forest classifier with 200 trees and 2 random features per node. If we are fine with that, we can now add some labels for our training data and train the classifier based on them.
 
 ### Adding training samples
 
@@ -196,7 +196,7 @@ segmentator.setClassifier( rf );
 
 # Example: apply classifier to all images in folder
 
-Very frequently we might end up having to process a large number of images using a classifier that we interactively trained with the GUI of the [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") plugin. The following [Beanshell](Beanshell "wikilink") script shows how to load a classifier from file, apply it to all images contained in a folder and save the results in another folder defined by the user:
+Very frequently we might end up having to process a large number of images using a classifier that we interactively trained with the GUI of the [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) plugin. The following [Beanshell](Beanshell ) script shows how to load a classifier from file, apply it to all images contained in a folder and save the results in another folder defined by the user:
 
 ``` java
 #@ File(label="Input directory", description="Select the directory with input images", style="directory") inputDir
@@ -257,7 +257,7 @@ IJ.log( "** Finished processing folder in " + estimatedTime + " ms **" );
 
 # Example: apply classifier to all images in folder **by tiles**
 
-In some cases, we may have to apply a saved classifier to very large images, which together with a large number of image features may fill the RAM of our machine. To prevent running into out-of-memory exceptions, the following [Beanshell](Beanshell "wikilink") script shows how to load a classifier from file, apply it to all images contained in a folder by subdividing them into smaller pieces, and save the results in another folder defined by the user:
+In some cases, we may have to apply a saved classifier to very large images, which together with a large number of image features may fill the RAM of our machine. To prevent running into out-of-memory exceptions, the following [Beanshell](Beanshell ) script shows how to load a classifier from file, apply it to all images contained in a folder by subdividing them into smaller pieces, and save the results in another folder defined by the user:
 
 ``` java
 #@ File(label="Input directory", description="Select the directory with input images", style="directory") inputDir
@@ -331,7 +331,7 @@ System.gc();
 
 # Example: define your own features
 
-Although Trainable Segmentation provides a large set of predefined image features, it might happen that you need to define your own features for a specific problem. You can do that with a simple set of instructions. Here is a little [Beanshell](Beanshell "wikilink") script that makes two features from the Clown example and uses them to train a classifier (see the inline comments for more information):
+Although Trainable Segmentation provides a large set of predefined image features, it might happen that you need to define your own features for a specific problem. You can do that with a simple set of instructions. Here is a little [Beanshell](Beanshell ) script that makes two features from the Clown example and uses them to train a classifier (see the inline comments for more information):
 
 ``` java
 import ij.IJ;
@@ -515,7 +515,7 @@ IJ.log( "** Finished script in " + estimatedTime + " ms **" );
 
 # Example: color-based segmentation using clustering
 
-The following [Beanshell](Beanshell "wikilink") script shows how to segment a 2D color image or stack in an automatic fashion using the {% include wikipedia title='CIELAB' text='CIELab color space'%} and two possible clustering schemes: {% include wikipedia title='K-means' text='k-means'%} and {% include wikipedia title='Expectation–maximization\_algorithm' text='expectation maximization'%} (note: if you do not have Weka's ClassificationViaClustering classifier installed, check [how to install new classifiers via Weka's package manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink")).
+The following [Beanshell](Beanshell ) script shows how to segment a 2D color image or stack in an automatic fashion using the {% include wikipedia title='CIELAB' text='CIELab color space'%} and two possible clustering schemes: {% include wikipedia title='K-means' text='k-means'%} and {% include wikipedia title='Expectation–maximization\_algorithm' text='expectation maximization'%} (note: if you do not have Weka's ClassificationViaClustering classifier installed, check [how to install new classifiers via Weka's package manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers )).
 
 ``` java
 #@ ImagePlus image

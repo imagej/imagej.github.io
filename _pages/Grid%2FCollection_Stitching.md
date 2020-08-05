@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Grid/Collection Stitching Plugin](Grid/Collection_Stitching_Plugin "wikilink")
+1.  REDIRECT [Grid/Collection Stitching Plugin](Grid/Collection_Stitching_Plugin )

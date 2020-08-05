@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Launcher](Launcher "wikilink")
+1.  REDIRECT [Launcher](Launcher )

@@ -7,7 +7,7 @@ categories: News
 description: test description
 ---
 
-**Alexander Krull** developed a [low light tracking tool](Low_Light_Tracking_Tool "wikilink") while working in [**Iva Tolic-Norrelykke**](http://www.mpi-cbg.de/en/research/research-groups/iva-tolic-norrelykke.html) lab at MPI-CBG.
+**Alexander Krull** developed a [low light tracking tool](Low_Light_Tracking_Tool ) while working in [**Iva Tolic-Norrelykke**](http://www.mpi-cbg.de/en/research/research-groups/iva-tolic-norrelykke.html) lab at MPI-CBG.
 
 The software is a tool for the tracking of low-light sub-resolution objects in fluorescent microscopy, but it can be applied in other fields as well. The plugin implements the localization algorithm described in the following paper:
 

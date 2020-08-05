@@ -15,7 +15,7 @@ Nivetha Govindaraju, {% include person content='M farna' %}
 {% capture maintainer%}
 {% include person content='M farna' %} (<mai.elfarnawany@gmail.com>)
 {% endcapture %}
-{% include info-box name='Vessel Analysis ' software='Fiji ' author=author maintainer=maintainer filename=' [Vessel Analysis.zip](https://imagej.net/File:Vessel_Analysis.zip) ' released='June 14<sup>th</sup>, 2016 ' latest-version='1.1 ' status='stable ' category='[Plugins](_Category_Plugins "wikilink"), [Analysis](_Category_Analysis "wikilink") ' %}
+{% include info-box name='Vessel Analysis ' software='Fiji ' author=author maintainer=maintainer filename=' [Vessel Analysis.zip](https://imagej.net/File:Vessel_Analysis.zip) ' released='June 14<sup>th</sup>, 2016 ' latest-version='1.1 ' status='stable ' category='[Plugins](_Category_Plugins ), [Analysis](_Category_Analysis ) ' %}
 
 ## **Description:**
 

@@ -52,8 +52,10 @@ AddPluginSite-8.jpg
 Adelsons-squares.png
 Adjust Threshold 1.jpg
 Adjust-difference-of-gaussian-values.png
+Advanced1.png
 Advanced2.png
 Advanced3.png
+Advanced4.png
 After alignment.png
 After-fitting.png
 Aliased text.png
@@ -591,9 +593,12 @@ Filtered-image-load.png
 Filtered-image-toggle.png
 Filters-examples.png
 Filters-parameters.png
+FinalOverlay.jpg
 Find-commands.jpg
 FindPeaksSnapshot.png
 First Window 2.jpg
+FirstNegativeExample.jpg
+FirstPositiveExample.jpg
 Fit-manager.png
 Fit-parameter-prompt.png
 Flat field correction.gif
@@ -965,6 +970,7 @@ Movie skeleton rendering.gif
 MserSimple.png
 Multi-Template-Matching-MontageGUI.png
 Multi-column-dialog.png
+MultiAnnotations.jpg
 Multiple Image Processor.jpg
 Multiple-uis.jpg
 Mv deconvolution.png
@@ -1061,7 +1067,10 @@ Personal-Update-Site-1.png
 Personal-Update-Site-7.png
 PhaseChanges.png
 Photo1-Retinex.jpg
+Photo1-clahe-150-256-3.jpg
 Photo1.jpg
+Photo3-clahe-50-256-3.jpg
+Photo3.jpg
 Photobend curvature plot.jpg
 Photobend deformation plot.jpg
 Photobend demo.gif
@@ -1069,6 +1078,8 @@ Photobend processing.jpg
 PictureSelection.png
 Pietzsch update site.png
 Plasma-cloud.png
+Playground.jpg
+PlaygroundFirstAnnotation.jpg
 Plugin screencapture.jpg
 PluginScreenshot1.png
 PluginScreenshot3.png
@@ -1535,6 +1546,7 @@ Tagging example.png
 Tapas description0.6.3.pdf
 Tem-42-33-f.png
 Tem-clahe-50-256-2.5.jpg
+Tem.jpg
 Temp.jpg
 Temp2.jpg
 Tensorflow-installer.png
@@ -1568,6 +1580,8 @@ TrackSchemeHonorsRadiusRatio.png
 TrackSchemeToolbarExplanation.png
 Trackadvanced.png
 Trainable-Weka-Segmentation-GUI.png
+TrainedClassifier.jpg
+TrainingImage.jpg
 Trajclassifier gui.png
 TrakEM2 Display segmentations.png
 TrakEM2 Display.png
@@ -1639,6 +1653,7 @@ Weka-package-manager-window.png
 Weka-warning-install-package.png
 WelcomeA.png
 WelcomeEtrack.png
+WholeImageClassified.jpg
 Win.png
 Window1.jpg
 Window2.jpg

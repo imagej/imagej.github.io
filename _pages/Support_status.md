@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Governance\#Support\_status](Governance#Support_status "wikilink")
+1.  REDIRECT [Governance\#Support\_status](Governance#Support_status )

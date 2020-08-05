@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Report a Bug](Report_a_Bug "wikilink")
+1.  REDIRECT [Report a Bug](Report_a_Bug )

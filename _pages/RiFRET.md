@@ -16,7 +16,7 @@ description: test description
 {% include github%}
 
 {% endcapture %}
-{% include info-box name='RiFRET ' software='ImageJ ' author='J. Roszik, D. Lisboa, J. Szöllosi, G. Vereb ' maintainer=maintainer source=source released='2009 ' status='active ' category='[:Category:Plugins](_Category_Plugins "wikilink") [:Category:Citable](_Category_Citable "wikilink") ' website=' https://biophys.med.unideb.hu/en/rifret ' %}
+{% include info-box name='RiFRET ' software='ImageJ ' author='J. Roszik, D. Lisboa, J. Szöllosi, G. Vereb ' maintainer=maintainer source=source released='2009 ' status='active ' category='[:Category:Plugins](_Category_Plugins ) [:Category:Citable](_Category_Citable ) ' website=' https://biophys.med.unideb.hu/en/rifret ' %}
 
 **An ImageJ plugin for intensity-based three filter-set FRET**
 
@@ -34,4 +34,4 @@ This software is based on a publication. If you use it in your work, please cite
 
 ## See also
 
-If you are using the acceptor photobleaching FRET method, we recommend our other FRET plugin [AccPbFRET](AccPbFRET "wikilink").
+If you are using the acceptor photobleaching FRET method, we recommend our other FRET plugin [AccPbFRET](AccPbFRET ).

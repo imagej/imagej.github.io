@@ -7,7 +7,7 @@ categories: News,ImageJ2
 description: test description
 ---
 
-We are done filing an initial set of Trac tickets for the [ImageJDev](ImageJ2 "wikilink") project. We have defined five initial milestones:
+We are done filing an initial set of Trac tickets for the [ImageJDev](ImageJ2 ) project. We have defined five initial milestones:
 
 1.  [Progress report](http://trac.imagej.net/milestone/progress-report), for 7/1/2010
 2.  [ImageJ 2.0 beta](http://trac.imagej.net/milestone/imagej-2.0-beta), for 1/1/2011

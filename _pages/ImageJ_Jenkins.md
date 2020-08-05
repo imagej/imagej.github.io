@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Jenkins](Jenkins "wikilink")
+1.  REDIRECT [Jenkins](Jenkins )

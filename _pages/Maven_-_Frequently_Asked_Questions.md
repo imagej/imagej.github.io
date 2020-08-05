@@ -15,13 +15,13 @@ The version of `pom-scijava` (`14.0.0` as of this writing) indicates the version
 
 The version of `example-legacy-plugin` itself (`0.1.0-SNAPSHOT` as of this writing) is the version of your plugin. This string is appended to the JAR file name (e.g., example-legacy-plugin-0.1.0-SNAPSHOT.jar), so that you can differentiate between multiple versions of your plugin. Use whatever versioning scheme you want.
 
-However, once you become more comfortable with Maven, we suggest using [a SNAPSHOT version during development](http://stackoverflow.com/questions/5901378/what-exactly-is-a-maven-snapshot-and-why-do-we-need-it), and a release (i.e., non-SNAPSHOT) version when distributing your plugin. The reason is to avoid two different JAR files both called `my-plugin-1.2.3` but with different contents. (This is part of what Maven calls [reproducible builds](reproducible_builds "wikilink").)
+However, once you become more comfortable with Maven, we suggest using [a SNAPSHOT version during development](http://stackoverflow.com/questions/5901378/what-exactly-is-a-maven-snapshot-and-why-do-we-need-it), and a release (i.e., non-SNAPSHOT) version when distributing your plugin. The reason is to avoid two different JAR files both called `my-plugin-1.2.3` but with different contents. (This is part of what Maven calls [reproducible builds](reproducible_builds ).)
 
 For example, while you develop your plugin, you might use the version `1.0.0-SNAPSHOT` to indicate that this is not the final `1.0.0` version but leads up to it. Once you are happy with the plugin in its current form, switch to `1.0.0`. Note, however, that you will cause problems if you later change the sources of the final `1.0.0` version (i.e., without first advancing the version in the `pom.xml` file).
 
 # How are dependency versions determined?
 
-In many `pom.xml` files which extend `pom-scijava`, you can see that the dependency versions are omitted. The versions are defined (or "managed") by the pom-scijava parent configuration as part of its [Bill of Materials](Bill_of_Materials "wikilink")—e.g., {% include github org='scijava ' repo='pom-scijava ' tag='pom-scijava-14.0.0 ' path='pom.xml\#L218-L219 ' label='here ' %} is where the ImageJ 1.x version is defined.
+In many `pom.xml` files which extend `pom-scijava`, you can see that the dependency versions are omitted. The versions are defined (or "managed") by the pom-scijava parent configuration as part of its [Bill of Materials](Bill_of_Materials )—e.g., {% include github org='scijava ' repo='pom-scijava ' tag='pom-scijava-14.0.0 ' path='pom.xml\#L218-L219 ' label='here ' %} is where the ImageJ 1.x version is defined.
 
   - Browse the latest `pom-scijava` {% include github org='scijava ' repo='pom-scijava ' path='pom.xml ' label='here ' %}.
   - Browse the available versions of ImageJ 1.x [here](http://maven.imagej.net/content/groups/public/net/imagej/ij/).
@@ -119,7 +119,7 @@ import org.scijava.util.VersionUtils;
 
 # How do I make my modified project available to a depending project using Maven?
 
-See [Using snapshot couplings during development](Architecture#Using_snapshot_couplings_during_development "wikilink").
+See [Using snapshot couplings during development](Architecture#Using_snapshot_couplings_during_development ).
 
 # How can I run individual tests with Maven?
 
@@ -131,6 +131,6 @@ mvn -Dtest='TestCircle#mytest' test
 
 # Where can I find more information about Maven?
 
-See the [Maven](Maven "wikilink") page\!
+See the [Maven](Maven ) page\!
 
  

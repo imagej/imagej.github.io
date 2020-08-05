@@ -7,11 +7,11 @@ categories: ImageJ2,News
 description: test description
 ---
 
-A 36-page technical manuscript describing [ImageJ2](ImageJ2 "wikilink") in depth is now available on [arXiv](https://arxiv.org/):
+A 36-page technical manuscript describing [ImageJ2](ImageJ2 ) in depth is now available on [arXiv](https://arxiv.org/):
 
 {% include big-link url='http://arxiv.org/abs/1701.05940 ' %}
 
-This manuscript provides a technical overview of [ImageJ2](ImageJ2 "wikilink"), including in-depth description of the [architecture](architecture "wikilink"), with sections on [SciJava Common](SciJava_Common "wikilink"), [ImageJ Common](ImageJ_Common "wikilink"), [SCIFIO](SCIFIO "wikilink"), [ImageJ Ops](ImageJ_Ops "wikilink"), [ImageJ Legacy](ImageJ_Legacy "wikilink"), and the [ImageJ Updater](ImageJ_Updater "wikilink"), as well as a discussion on how ImageJ2 improves upon key areas of functionality, [extensibility](extensibility "wikilink"), [reproducibility](reproducibility "wikilink"), usability, performance, [compatibility](compatibility "wikilink") and [community](community "wikilink").
+This manuscript provides a technical overview of [ImageJ2](ImageJ2 ), including in-depth description of the [architecture](architecture ), with sections on [SciJava Common](SciJava_Common ), [ImageJ Common](ImageJ_Common ), [SCIFIO](SCIFIO ), [ImageJ Ops](ImageJ_Ops ), [ImageJ Legacy](ImageJ_Legacy ), and the [ImageJ Updater](ImageJ_Updater ), as well as a discussion on how ImageJ2 improves upon key areas of functionality, [extensibility](extensibility ), [reproducibility](reproducibility ), usability, performance, [compatibility](compatibility ) and [community](community ).
 
 ## Abstract
 

@@ -11,6 +11,6 @@ Please see [this list on the Image.sc Forum](https://forum.image.sc/t/upcoming-i
 
 ## Past events
 
-  - [Presentations](Presentations "wikilink") – from past conferences and workshops
-  - [Conferences](Conferences "wikilink") – past conferences focused on ImageJ
-  - [Hackathons](Hackathons "wikilink") – past software developer gatherings
+  - [Presentations](Presentations ) – from past conferences and workshops
+  - [Conferences](Conferences ) – past conferences focused on ImageJ
+  - [Hackathons](Hackathons ) – past software developer gatherings

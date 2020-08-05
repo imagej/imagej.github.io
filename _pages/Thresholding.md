@@ -14,10 +14,10 @@ description: test description
 
 Global thresholding works by choosing a value cutoff, such that every pixel less than that value is considered one class, while every pixel greater than that value is considered the other class.
 
-[ImageJ](ImageJ "wikilink") provides several built-in methods for automatically computing a global threshold. For details, see:
+[ImageJ](ImageJ ) provides several built-in methods for automatically computing a global threshold. For details, see:
 
   - Documentation for the \[https://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D Threshold...\] command.
-  - The [Auto Threshold](Auto_Threshold "wikilink") plugin page
+  - The [Auto Threshold](Auto_Threshold ) plugin page
 
 ## Local thresholding
 
@@ -25,7 +25,7 @@ Local thresholding techniques adapt the threshold value on each pixel to the loc
 
 ## ImageJ Ops
 
-The [ImageJ Ops](ImageJ_Ops "wikilink") project provides algorithms for both global and local thresholding.
+The [ImageJ Ops](ImageJ_Ops ) project provides algorithms for both global and local thresholding.
 
 ## FAQ
 

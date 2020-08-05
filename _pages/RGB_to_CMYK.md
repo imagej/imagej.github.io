@@ -32,7 +32,7 @@ That is, at least one of the CMY channels is always zero.
 
 ## Code
 
-This is BeanShell and can be executed via [Script Editor](Script_Editor "wikilink") or [BeanShell Interpreter](BeanShell_Interpreter "wikilink") or by dragging it as a file with extension \`.bsh' into the Fiji toolbar. This script performs per-pixel operations in an interpreted language and, therefore, is very slow. If you really need more speed, compile the source into a Java class which is straight forward for BeanShell code.
+This is BeanShell and can be executed via [Script Editor](Script_Editor ) or [BeanShell Interpreter](BeanShell_Interpreter ) or by dragging it as a file with extension \`.bsh' into the Fiji toolbar. This script performs per-pixel operations in an interpreted language and, therefore, is very slow. If you really need more speed, compile the source into a Java class which is straight forward for BeanShell code.
 
 ``` java
 import ij.*;
@@ -112,8 +112,8 @@ new ImagePlus( "K visualized", ipKVis ).show();
 
 ## See also
 
-  - [Scripting Help](Scripting_Help "wikilink")
-  - [Scripting\_comparisons](Scripting_comparisons "wikilink")
-  - [Script Editor](Script_Editor "wikilink")
+  - [Scripting Help](Scripting_Help )
+  - [Scripting\_comparisons](Scripting_comparisons )
+  - [Script Editor](Script_Editor )
 
 

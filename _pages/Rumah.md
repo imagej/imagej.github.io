@@ -9,7 +9,7 @@ description: test description
 
 ## Rumah
 
-Rumah adalah tempat untuk tinggal bersama anggota keluarga. Setiap keluarga pada umumnya terdiri dari ayah, ibu, dan anak. Rumah merupakan salah satu tempat ternyaman di dunia. Pada saat orang lelah beraktivitas maka rumah menjadi tempat untuk melepas penat. Rumah juga mencerminkan tingkat ekonomi keluarga. [Architecture](Architecture "wikilink") rumah terdiri dari yang paling sederhana. Model rumah minimalis. Dan model rumah mewah dan megah.
+Rumah adalah tempat untuk tinggal bersama anggota keluarga. Setiap keluarga pada umumnya terdiri dari ayah, ibu, dan anak. Rumah merupakan salah satu tempat ternyaman di dunia. Pada saat orang lelah beraktivitas maka rumah menjadi tempat untuk melepas penat. Rumah juga mencerminkan tingkat ekonomi keluarga. [Architecture](Architecture ) rumah terdiri dari yang paling sederhana. Model rumah minimalis. Dan model rumah mewah dan megah.
 
 ## macam-macam rumah
 

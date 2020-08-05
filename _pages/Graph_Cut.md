@@ -31,7 +31,7 @@ Assume we want to segment the following image into foreground/background, such t
 
 ### Probability Image
 
-First, we create a probability image that reflects the per-pixel probability of belonging to the foreground. For that, we can use the [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") plugin. We train a classifier for the mitochondria and everything else. Instead of using the classifier directly for the segmentation, however, we create a probability image:
+First, we create a probability image that reflects the per-pixel probability of belonging to the foreground. For that, we can use the [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) plugin. We train a classifier for the mitochondria and everything else. Instead of using the classifier directly for the segmentation, however, we create a probability image:
 
 <img src="/images/pages/Mito-prob.png" width="200"/>
 

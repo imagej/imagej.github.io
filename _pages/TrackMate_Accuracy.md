@@ -9,17 +9,17 @@ description: test description
 
 **The problem with tracking algorithms is that they always give an answer.**
 
-This answer can be completely irrelevant, even non-physical, and there is no built-in flags that would indicate something wrong. The best way to avoid basing your downstream analysis on faulty tracking results is to know in what situation the tracker works the best, and what are its limitations. This is the aim of this page for the trackers and detectors shipped with [TrackMate](TrackMate "wikilink").
+This answer can be completely irrelevant, even non-physical, and there is no built-in flags that would indicate something wrong. The best way to avoid basing your downstream analysis on faulty tracking results is to know in what situation the tracker works the best, and what are its limitations. This is the aim of this page for the trackers and detectors shipped with [TrackMate](TrackMate ).
 
 ## The ISBI 2012 single particle challenge.
 
 In 2011-2012, an ISBI Grand Challenge was organized for the [Single-Particle Tracking algorithms](http://bioimageanalysis.org/track/). Though TrackMate does not offer a completely new algorithm, product of an original Research work, we took the chance and participated in the challenge. The results and the methodology to compute the accuracy of a tracking algorithms were published\[1\] thereafter.
 
-Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman *et al.* LAP framework\[2\]. See the [LAP trackers section](TrackMate_algorithms#LAP_trackers "wikilink") for algorithm details. Plus, TrackMate was was young at the time, and some bugs did not help.
+Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman *et al.* LAP framework\[2\]. See the [LAP trackers section](TrackMate_algorithms#LAP_trackers ) for algorithm details. Plus, TrackMate was was young at the time, and some bugs did not help.
 
 ## TrackMate v2.7.x series accuracy against the ISBI dataset.
 
-From v2.7.x, TrackMate ships a new tracker that can deal specifically with linear motion. We though it was the right time to re-run the accuracy assessment with the ISBI challenge data. The people behind [Icy](Icy "wikilink") offered the website to host the challenge data, and it is still available today\[3\] for download.
+From v2.7.x, TrackMate ships a new tracker that can deal specifically with linear motion. We though it was the right time to re-run the accuracy assessment with the ISBI challenge data. The people behind [Icy](Icy ) offered the website to host the challenge data, and it is still available today\[3\] for download.
 
 The figures below shows the comparison of accuracy for the 3 classes of tracking algorithms available in TrackMate:
 
@@ -72,17 +72,17 @@ Contrast stretched to the 0-50 8-bit range.
 
 For each scenario and condition, the method returns numerous values that characterizes the accuracy of a tracking algorithm. They are detailed on [this technical paper](http://bioimageanalysis.org/track/PerformanceMeasures.pdf). We plot below only three of them:
 
-  - The <b>Jaccard similarity between tracks</b>, that quantifies how well the tracks returned by the algorithm match the ground truth. This value assesses the accuracy of the [spot tracker](TrackMate_algorithms#Spot_trackers "wikilink") you pick in TrackMate. It ranges from 0 (terrible) to 1 (found tracks = ground truth).
+  - The <b>Jaccard similarity between tracks</b>, that quantifies how well the tracks returned by the algorithm match the ground truth. This value assesses the accuracy of the [spot tracker](TrackMate_algorithms#Spot_trackers ) you pick in TrackMate. It ranges from 0 (terrible) to 1 (found tracks = ground truth).
 
 <!-- end list -->
 
-  - The <b>Jaccard similarity between detections</b>, that quantifies how well the particle detected by the detection algorithm match the ground truth. It depends strongly on the [spot detector](TrackMate_algorithms#Spot_detectors "wikilink") you pick in TrackMate, and ranges from 0 to 1 like the above quantity.
+  - The <b>Jaccard similarity between detections</b>, that quantifies how well the particle detected by the detection algorithm match the ground truth. It depends strongly on the [spot detector](TrackMate_algorithms#Spot_detectors ) you pick in TrackMate, and ranges from 0 to 1 like the above quantity.
 
 <!-- end list -->
 
   - The <b>RMSE of detection positions</b> that quantifies how precise is the location of the detected particles. The smaller the better.
 
-I fully relied on [Icy](Icy "wikilink") to compute these values. TrackMate ships an action that exports tracking results to the XML format imposed by the ISBI challenge, and that can be found [here](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/action/ISBIChallengeExporter.java). I generated these files for all the conditions of a scenario, and used the [Icy ISBI challenge scoring plugin](http://icy.bioimageanalysis.org/plugin/ISBI_Tracking_Challenge_Batch_Scoring) to yield metrics. I then used [MATLAB](MATLAB "wikilink") to plot them.
+I fully relied on [Icy](Icy ) to compute these values. TrackMate ships an action that exports tracking results to the XML format imposed by the ISBI challenge, and that can be found [here](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/action/ISBIChallengeExporter.java). I generated these files for all the conditions of a scenario, and used the [Icy ISBI challenge scoring plugin](http://icy.bioimageanalysis.org/plugin/ISBI_Tracking_Challenge_Batch_Scoring) to yield metrics. I then used [MATLAB](MATLAB ) to plot them.
 
 ### Parameter used.
 
@@ -94,10 +94,10 @@ The three spot trackers were configured as indicated in the table below. It's no
 
 | Spot tracker                                                                                 | Parameter             | Value |
 | -------------------------------------------------------------------------------------------- | --------------------- | ----- |
-| rowspan =3 | [Linear motion tracker](TrackMate_algorithms#Linear_motion_tracker. "wikilink") | Initial search radius | 10    |
+| rowspan =3 | [Linear motion tracker](TrackMate_algorithms#Linear_motion_tracker. ) | Initial search radius | 10    |
 | Search radius                                                                                | 7                     |       |
 | Max frame gap                                                                                | 3                     |       |
-| rowspan = 3 | [LAP Brownian motion](TrackMate_algorithms#LAP_trackers "wikilink")            | Max linking distance  | 7     |
+| rowspan = 3 | [LAP Brownian motion](TrackMate_algorithms#LAP_trackers )            | Max linking distance  | 7     |
 | Max gap-closing distance                                                                     | 10                    |       |
 | Max frame gap                                                                                | 3                     |       |
 | Nearest neighbor                                                                             | Max search distance   | 10    |
@@ -150,7 +150,7 @@ The parameters and strategy used for this accuracy assessment are pretty basic a
 
 #### What was in the challenge that TrackMate did not exploit.
 
-We saw that at low SNR, the detection step dominates and its inability to robustly detect faint particles is the cause for low scores. Here I did not try to improve the detection results via pre-processing. One could have denoised the image, or averaged succeeding frames to improve the SNR. Or a better detector could have dealt with low SNR in a better way (the [Low Light Tracking Tool](Low_Light_Tracking_Tool "wikilink") maybe).
+We saw that at low SNR, the detection step dominates and its inability to robustly detect faint particles is the cause for low scores. Here I did not try to improve the detection results via pre-processing. One could have denoised the image, or averaged succeeding frames to improve the SNR. Or a better detector could have dealt with low SNR in a better way (the [Low Light Tracking Tool](Low_Light_Tracking_Tool ) maybe).
 
 #### What is in TrackMate that we could not exploit for the challenge.
 
@@ -162,7 +162,7 @@ The challenge data does offer that possibility: all particles have roughly the s
 
 <references/>
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 03:49, 25 January 2015 (CST)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez )) 03:49, 25 January 2015 (CST)
 
 1.  [Chenouard *et al.*, "Objective comparison of particle tracking methods", '''Nature Methods, 2014 '''](http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html)
 

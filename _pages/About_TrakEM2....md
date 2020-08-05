@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  redirect [TrakEM2](TrakEM2 "wikilink")
+1.  redirect [TrakEM2](TrakEM2 )

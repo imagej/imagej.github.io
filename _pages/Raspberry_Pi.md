@@ -8,14 +8,14 @@ description: test description
 ---
 
 {% include menu-platforms%}
-{% include minibox logo='Pi.svg ' blurb='Learn programming through fun, practical projects\! ' %}The {% include wikipedia title='Raspberry Pi' text='Raspberry Pi'%} is an inexpensive single-board computer system which runs the {% include wikipedia title='Raspbian' text='Raspbian'%} operating system, a flavor of Debian [Linux](Linux "wikilink"). This page provides advice and guidance for running [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") on Raspberry Pi systems.
+{% include minibox logo='Pi.svg ' blurb='Learn programming through fun, practical projects\! ' %}The {% include wikipedia title='Raspberry Pi' text='Raspberry Pi'%} is an inexpensive single-board computer system which runs the {% include wikipedia title='Raspbian' text='Raspbian'%} operating system, a flavor of Debian [Linux](Linux ). This page provides advice and guidance for running [ImageJ](ImageJ ) and [Fiji](Fiji ) on Raspberry Pi systems.
 
 {% include toc%}
 
 
 # Installation
 
-{% include imagej1 content='You might notice there is as an `imagej` package available from your package manager. Please be aware that this provides [ImageJ 1.x](ImageJ_1.x "wikilink") only, packaged by a third party, without cooperation from the core ImageJ development team. You will not have access to any [ImageJ2](ImageJ2 "wikilink")-specific features such as [parameterized scripts](Script_parameters "wikilink"), and you will likely have permissions errors because it is a system-wide ImageJ installation.' %}The following steps describe how to install ImageJ on a Raspberry Pi:
+{% include imagej1 content='You might notice there is as an `imagej` package available from your package manager. Please be aware that this provides [ImageJ 1.x](ImageJ_1.x ) only, packaged by a third party, without cooperation from the core ImageJ development team. You will not have access to any [ImageJ2](ImageJ2 )-specific features such as [parameterized scripts](Script_parameters ), and you will likely have permissions errors because it is a system-wide ImageJ installation.' %}The following steps describe how to install ImageJ on a Raspberry Pi:
 
 1.  Open the terminal.
 2.  Install Java 8 on your Pi (`sudo apt-get install openjdk-8-jre`).
@@ -29,7 +29,7 @@ description: test description
 
 You may also need to disable (comment out) `assistive_technologies=org.GNOME.Accessibility.AtkWrapper` in `/etc/java-8-openjdk/accessibility.properties`.
 
-Note that the shell script supports only a subset of the functionality of the native [ImageJ Launcher](ImageJ_Launcher "wikilink"), but it should be able to run ImageJ successfully.
+Note that the shell script supports only a subset of the functionality of the native [ImageJ Launcher](ImageJ_Launcher ), but it should be able to run ImageJ successfully.
 
 The following steps describe how to create a desktop icon to launch Fiji on a Raspberry Pi:
 
@@ -60,21 +60,21 @@ Categories=Education
 
 # 3D Visualization
 
-It is supposedly possible to run [Java 3D](Java_3D "wikilink") on the Pi; see [this StackOverflow thread](http://stackoverflow.com/questions/28529344/how-to-run-java3d-on-rpi-2). However, there have been no official reported successes on ImageJ community channels yet. If you get it working, please edit this section to describe the steps you used\!
+It is supposedly possible to run [Java 3D](Java_3D ) on the Pi; see [this StackOverflow thread](http://stackoverflow.com/questions/28529344/how-to-run-java3d-on-rpi-2). However, there have been no official reported successes on ImageJ community channels yet. If you get it working, please edit this section to describe the steps you used\!
 
-Even better, if you get [ClearVolume](ClearVolume "wikilink") and/or [SciView](SciView "wikilink") working on the Pi, please update this page, and announce it on the [Image.sc Forum](Image.sc_Forum "wikilink")\!
+Even better, if you get [ClearVolume](ClearVolume ) and/or [SciView](SciView ) working on the Pi, please update this page, and announce it on the [Image.sc Forum](Image.sc_Forum )\!
 
 # Troubleshooting
 
-See the [Troubleshooting](Troubleshooting "wikilink") page.
+See the [Troubleshooting](Troubleshooting ) page.
 
 # Frequently Asked Questions
 
-See the [Frequently Asked Questions](Frequently_Asked_Questions "wikilink") page.
+See the [Frequently Asked Questions](Frequently_Asked_Questions ) page.
 
 # See also
 
-  - Topics tagged [raspberry-pi](https://forum.image.sc/tags/raspberry-pi) on the [Image.sc Forum](Image.sc_Forum "wikilink").
-  - The [Linux](Linux "wikilink") page, for general information about ImageJ on Linux systems.
+  - Topics tagged [raspberry-pi](https://forum.image.sc/tags/raspberry-pi) on the [Image.sc Forum](Image.sc_Forum ).
+  - The [Linux](Linux ) page, for general information about ImageJ on Linux systems.
 
 

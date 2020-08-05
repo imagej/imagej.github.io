@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Brian Northan ' gravatar='d8227018a0426724486d856f17f68976 ' affiliation=' [True North Intelligent Algorithms](http://www.truenorth-ia.com/) ' forum='bnorthan ' github='bnorthan ' researchgate='Brian\_Northan ' linkedin='in/brian-northan-3a78606 ' %}Brian is a consultant who works on image analysis problems. He is a contributor to the [ImageJ Ops](ImageJ_Ops "wikilink") project.
+{% include user-box name='Brian Northan ' gravatar='d8227018a0426724486d856f17f68976 ' affiliation=' [True North Intelligent Algorithms](http://www.truenorth-ia.com/) ' forum='bnorthan ' github='bnorthan ' researchgate='Brian\_Northan ' linkedin='in/brian-northan-3a78606 ' %}Brian is a consultant who works on image analysis problems. He is a contributor to the [ImageJ Ops](ImageJ_Ops ) project.
 
 ## What is Brian working on
 

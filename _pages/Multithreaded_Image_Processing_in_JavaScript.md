@@ -9,7 +9,7 @@ description: test description
 
 {% include learn content='scripting' %}== Purpose ==
 
-An example [Javascript](Javascript_Scripting "wikilink") ImageJ script illustrating how to create java Threads for concurrent execution.
+An example [Javascript](Javascript_Scripting ) ImageJ script illustrating how to create java Threads for concurrent execution.
 
 The example illustrates as well the use of functions with variable arguments.
 
@@ -176,7 +176,7 @@ imp.show();
 
 ## See also
 
-  - [Javascript Scripting](Javascript_Scripting "wikilink")
-  - [Multithreaded Image Processing in Clojure](Multithreaded_Image_Processing_in_Clojure "wikilink")
+  - [Javascript Scripting](Javascript_Scripting )
+  - [Multithreaded Image Processing in Clojure](Multithreaded_Image_Processing_in_Clojure )
 
   

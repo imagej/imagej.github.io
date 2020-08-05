@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BoneJ2\#Surface\_area](BoneJ2#Surface_area "wikilink")
+1.  REDIRECT [BoneJ2\#Surface\_area](BoneJ2#Surface_area )

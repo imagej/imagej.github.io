@@ -13,7 +13,7 @@ description: test description
 
 ## Introduction
 
-This tutorial explains how to upload changes to core [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") libraries.
+This tutorial explains how to upload changes to core [ImageJ](ImageJ ) and [Fiji](Fiji ) libraries.
 
 The typical workflow is:
 
@@ -27,7 +27,7 @@ The typical workflow is:
 
 ## Responsibility of uploaders
 
-To facilitate [reproducibility](Architecture#Reproducible_builds "wikilink") and present a unified application to both users and developers, uploaders should strive to keep each core update site synchronized with its corresponding source code.
+To facilitate [reproducibility](Architecture#Reproducible_builds ) and present a unified application to both users and developers, uploaders should strive to keep each core update site synchronized with its corresponding source code.
 
 Because releases are tied to the source code (and the update site contents are not explicitly versioned), the order of update should always be:
 
@@ -44,7 +44,7 @@ Source repository for each core update site:
 
 ## Getting started
 
-First of all, start the [updater](updater "wikilink") with {% include bc content='Help | Update'%} and click on the *Manage update sites* button:
+First of all, start the [updater](updater ) with {% include bc content='Help | Update'%} and click on the *Manage update sites* button:
 
 <img src="/images/pages/Mamed-3.jpg" width="770"/>
 
@@ -56,7 +56,7 @@ The Fiji update site uses {% include wikipedia title='WebDAV' text='webDAV'%} au
 
   - [Create a wiki account](https://imagej.net/index.php?title=Special:UserLogin&type=signup)
   - Ask an administrator has to add you to the [*uploaders* group](https://imagej.net/Special:ListUsers?group=uploaders)
-  - Once you have been added, [initialize your upload password for "Fiji's main update site"](Special_ChangeUploadPassword "wikilink").
+  - Once you have been added, [initialize your upload password for "Fiji's main update site"](Special_ChangeUploadPassword ).
 
 In the *Manage update sites* dialog, on the Fiji update site line, add the following information:
 
@@ -86,4 +86,4 @@ You can now close the *Manage update sites* window and go on to [ Uploading your
 
 ## Uploading your resources
 
-See the [ Uploading files to your update site](How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site "wikilink") section of the set up and populate tutorial.
+See the [ Uploading files to your update site](How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site ) section of the set up and populate tutorial.

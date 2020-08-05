@@ -7,7 +7,7 @@ categories: News
 description: test description
 ---
 
-In the aftermath of our hackathon in Dresden, we have a [first release candidate](Downloads "wikilink") now\!
+In the aftermath of our hackathon in Dresden, we have a [first release candidate](Downloads ) now\!
 
 Here is the impressive list of changes:
 

@@ -9,8 +9,8 @@ description: test description
 
 This page shows the latest announcements and updates about ImageJ. You can also follow [\#imagej on Twitter](https://twitter.com/hashtag/imagej).
 
-[ImageJ1](ImageJ1 "wikilink") release notes are listed on the [IJ1 news page](https://imagej.net/notes.html).
+[ImageJ1](ImageJ1 ) release notes are listed on the [IJ1 news page](https://imagej.net/notes.html).
 
 <listnews limit="20" />
 
-You can also browse the [news archive](_Category_News "wikilink").
+You can also browse the [news archive](_Category_News ).

@@ -15,32 +15,32 @@ See also the [Image Processing School](http://www.neuroinformatics2009.org/cours
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- | ------------------------------------------------------------------------------ | ---------------------------------------- |
 | Session 1: 9:30 - 11:00  | [Welcome](#Welcome_and_Introduction "wikilink") and [Installing Fiji](#Overview_of_installing_and_using_Fiji "wikilink") | [Quantitative Imaging](#Quantitative_Imaging "wikilink") | [Segmentation](#Segmentation "wikilink")                                       | [Registration](#Registration "wikilink") |
 | Session 2: 11:30 - 12:30 | [Image Processing Fundamentals](#Image_Processing_fundamentals "wikilink")                                               | [Colocalization](#Colocalization "wikilink")             | [Beyond 3D](#Beyond_3D "wikilink")                                             |                                          |
-| Session 3: 14:00 - 15:30 | [Fiji scripting: Python](#Fiji_scripting__Python "wikilink")                                                             | [TrakEM2](#TrakEM2 "wikilink")                           | [Fiji scripting: advanced Python](#Fiji_scripting__advanced_Python "wikilink") |                                          |
+| Session 3: 14:00 - 15:30 | [Fiji scripting: Python](#Fiji_scripting:_Python "wikilink")                                                             | [TrakEM2](#TrakEM2 "wikilink")                           | [Fiji scripting: advanced Python](#Fiji_scripting:_advanced_Python "wikilink") |                                          |
 | Session 4: 16:00 - 17:30 | [Show your images\!](#Work_sessions "wikilink")                                                                          | [Work session](#Work_sessions "wikilink")                | [Work session](#Work_sessions "wikilink")                                      |                                          |
 
 ## Wednesday
 
 ### Welcome and Introduction
 
-[Albert Cardona](Albert_Cardona "wikilink")
+[Albert Cardona](Albert_Cardona )
 
 ### Overview of installing and using Fiji
 
 Setup: installing Fiji and getting familiar with it; overview of major features.
 
-Lead instructor: [Johannes Schindelin](Johannes_Schindelin "wikilink")
+Lead instructor: [Johannes Schindelin](Johannes_Schindelin )
 
 ### Image Processing fundamentals
 
 Fundamentals of image processing: anatomy of a digital image, image formats. Includes notes on image acquisition (effects of dynamic range and exposure times)
 
-Lead instructor: [Albert Cardona](Albert_Cardona "wikilink")
+Lead instructor: [Albert Cardona](Albert_Cardona )
 
 ### Fiji scripting: Python
 
 Introduction to Fiji scripting in Python
 
-Lead instructor: [Johannes Schindelin](Johannes_Schindelin "wikilink")
+Lead instructor: [Johannes Schindelin](Johannes_Schindelin )
 
 ## Thursday
 
@@ -50,7 +50,7 @@ Quantitative image acquisition and analysis: Spectroscopy not photography, simpl
 
 The presentation is available online (PDF) [here\!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
 
-Lead instructor: [Dan White](Dan_White "wikilink")
+Lead instructor: [Dan White](Dan_White )
 
 ### Colocalization
 
@@ -58,13 +58,13 @@ Quantitative Image analysis: What you need to know about Colocalization Analysis
 
 The presentation is available online (PDF) [here\!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
 
-Lead instructor: [Dan White](Dan_White "wikilink")
+Lead instructor: [Dan White](Dan_White )
 
 ### TrakEM2
 
-[TrakEM2](TrakEM2 "wikilink"): image registration and manual segmentation.
+[TrakEM2](TrakEM2 ): image registration and manual segmentation.
 
-Lead instructor: [Albert Cardona](Albert_Cardona "wikilink")
+Lead instructor: [Albert Cardona](Albert_Cardona )
 
 ## Friday
 
@@ -77,7 +77,7 @@ Introduction to image segmentation.
 
 Plugins: Simple Neurite Tracer, Segmentation Editor, VIB protocol, TrakEM2, Level Sets.
 
-Lead instructor: [Verena Kaynig](Verena_Kaynig "wikilink")
+Lead instructor: [Verena Kaynig](Verena_Kaynig )
 
 ### Beyond 3D
 
@@ -93,15 +93,15 @@ Lead instructors: {% include person content='JeanYvesTinevez' %}
 
 ### Writing Fiji plugins in Java
 
-Introduction to Fiji programming in Java (this will be an add-on to the [advanced scripting](#Fiji_scripting__advanced_Python "wikilink")).
+Introduction to Fiji programming in Java (this will be an add-on to the [advanced scripting](#Fiji_scripting:_advanced_Python "wikilink")).
 
-Lead instructor: [Johannes Schindelin](Johannes_Schindelin "wikilink")
+Lead instructor: [Johannes Schindelin](Johannes_Schindelin )
 
 ## Saturday
 
 ### Registration
 
-Image registration: rigid, affine, elastic, maximal warping... ([Register Virtual Stack Slices](Register_Virtual_Stack_Slices "wikilink"), [TrakEM2](TrakEM2 "wikilink"), [BUnwarpJ](BUnwarpJ "wikilink"))
+Image registration: rigid, affine, elastic, maximal warping... ([Register Virtual Stack Slices](Register_Virtual_Stack_Slices ), [TrakEM2](TrakEM2 ), [BUnwarpJ](BUnwarpJ ))
 
 Lead instructor: {% include person content='Iarganda' %}
 

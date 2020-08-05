@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Source code](Source_code "wikilink")
+1.  REDIRECT [Source code](Source_code )

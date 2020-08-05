@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Cover\_Maker\#Prepare\_CoverMaker\_Database](Cover_Maker#Prepare_CoverMaker_Database "wikilink")
+1.  REDIRECT [Cover\_Maker\#Prepare\_CoverMaker\_Database](Cover_Maker#Prepare_CoverMaker_Database )

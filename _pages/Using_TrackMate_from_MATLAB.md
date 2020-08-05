@@ -7,9 +7,9 @@ categories: Matlab,Scripting,Tracking
 description: test description
 ---
 
-This page shows how to use and control TrackMate directly from *within [MATLAB](MATLAB "wikilink")*. This is great and made possible thanks to the great [Miji](Miji "wikilink") tool, that make the Fiji classes visible from [MATLAB](MATLAB "wikilink"). Check this page first if you have not already. Note however that as 2016, Mark Hinerm and friends built a stronger replacement from Miji, [ImageJ-MATLAB](MATLAB_Scripting "wikilink"). This page still clings to using Miji, but moving to ImageJ-MATLAB should be painless.
+This page shows how to use and control TrackMate directly from *within [MATLAB](MATLAB )*. This is great and made possible thanks to the great [Miji](Miji ) tool, that make the Fiji classes visible from [MATLAB](MATLAB ). Check this page first if you have not already. Note however that as 2016, Mark Hinerm and friends built a stronger replacement from Miji, [ImageJ-MATLAB](MATLAB_Scripting ). This page still clings to using Miji, but moving to ImageJ-MATLAB should be painless.
 
-All the following examples assume you have launched [MATLAB](MATLAB "wikilink"), and properly initiated Miji, using for instance
+All the following examples assume you have launched [MATLAB](MATLAB ), and properly initiated Miji, using for instance
 
 ``` matlab
 Miji(false)
@@ -23,13 +23,13 @@ Miji(true)
 
 if you want the Fiji window to be visible.
 
-Apart from that, the collections of examples that follow just look like several scripts. Which is actually the case: We use the [MATLAB](MATLAB "wikilink") interpreter as a scripting interface for TrackMate, as we did in the [Scripting TrackMate](Scripting_TrackMate "wikilink") page. We separated this page to highlight [MATLAB](MATLAB "wikilink") specificities and to exploit its capabilities better.
+Apart from that, the collections of examples that follow just look like several scripts. Which is actually the case: We use the [MATLAB](MATLAB ) interpreter as a scripting interface for TrackMate, as we did in the [Scripting TrackMate](Scripting_TrackMate ) page. We separated this page to highlight [MATLAB](MATLAB ) specificities and to exploit its capabilities better.
 
 ## A simple tracking example
 
-Here we open an image though Fiji (not though [MATLAB](MATLAB "wikilink")) and track its content. The results are displayed in a Fiji window as well. [MATLAB](MATLAB "wikilink") is used here only to control TrackMate and does not really plays a role in the process. This example is actually the same that in the first [Scripting TrackMate](Scripting_TrackMate "wikilink") example.
+Here we open an image though Fiji (not though [MATLAB](MATLAB )) and track its content. The results are displayed in a Fiji window as well. [MATLAB](MATLAB ) is used here only to control TrackMate and does not really plays a role in the process. This example is actually the same that in the first [Scripting TrackMate](Scripting_TrackMate ) example.
 
-Note that we used the fully qualified name for TrackMate classes, *e.g.* `fiji.plugin.trackmate.TrackMate` instead of `TrackMate`. This is the first way to import classes in a [MATLAB](MATLAB "wikilink") script. We will see another way later.
+Note that we used the fully qualified name for TrackMate classes, *e.g.* `fiji.plugin.trackmate.TrackMate` instead of `TrackMate`. This is the first way to import classes in a [MATLAB](MATLAB ) script. We will see another way later.
 
 ``` matlab
 % Get currently selected image
@@ -241,7 +241,7 @@ display(model.toString())
 
 ## Why is this greater than it seems?
 
-Because your just ran a [MATLAB](MATLAB "wikilink") script that uses and benefits from multithreading without relying on any toolbox\! Here is how to tune the number of threads used by TrackMate:
+Because your just ran a [MATLAB](MATLAB ) script that uses and benefits from multithreading without relying on any toolbox\! Here is how to tune the number of threads used by TrackMate:
 
 ``` matlab
 % ... Do initialization before.
@@ -251,6 +251,6 @@ trackmate = TrackMate(model, settings);
 trackmate.setNumThreads(3); % As many threads as you want.
 ```
 
-[JeanYvesTinevez](User_JeanYvesTinevez "wikilink") ([talk](User_talk_JeanYvesTinevez "wikilink")) 13:44, 17 January 2017 (CST)
+[JeanYvesTinevez](User_JeanYvesTinevez ) ([talk](User_talk_JeanYvesTinevez )) 13:44, 17 January 2017 (CST)
 
   

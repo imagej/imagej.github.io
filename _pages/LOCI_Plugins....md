@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  redirect [Bio-Formats](Bio-Formats "wikilink")
+1.  redirect [Bio-Formats](Bio-Formats )

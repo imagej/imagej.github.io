@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Colour Deconvolution](Colour_Deconvolution "wikilink")
+1.  REDIRECT [Colour Deconvolution](Colour_Deconvolution )

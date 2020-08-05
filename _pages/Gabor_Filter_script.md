@@ -158,8 +158,8 @@ result.show();
 
 ## See also
 
-  - [Beanshell Scripting](Beanshell_Scripting "wikilink")
-  - [Scripting Help](Scripting_Help "wikilink")
-  - [Scripting comparisons](Scripting_comparisons "wikilink")
+  - [Beanshell Scripting](Beanshell_Scripting )
+  - [Scripting Help](Scripting_Help )
+  - [Scripting comparisons](Scripting_comparisons )
 
 

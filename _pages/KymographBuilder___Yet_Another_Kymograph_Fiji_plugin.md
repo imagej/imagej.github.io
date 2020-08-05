@@ -49,7 +49,7 @@ You can script the plugin. Here is an example :
 
 ## Related links
 
-  - [Multi\_Kymograph](Multi_Kymograph "wikilink") : The first kymograph bundled with Fiji, with support for multiple Line ROIs
+  - [Multi\_Kymograph](Multi_Kymograph ) : The first kymograph bundled with Fiji, with support for multiple Line ROIs
   - Source code on GitHub : https://github.com/fiji/KymographBuilder
   - Maven : https://maven.scijava.org/#nexus-search;quick~kymographbuilder
   - Travis CI : https://travis-ci.org/fiji/KymographBuilder

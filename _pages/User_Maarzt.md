@@ -9,6 +9,6 @@ description: test description
 
 Matthias Arzt is a software developer at the Max Planck Institute of Molecular Cell Biology and Genetics.
 
-Main developer of the [Labkit](Labkit "wikilink") plugin.
+Main developer of the [Labkit](Labkit ) plugin.
 
 {% include user-box name='Matthias Arzt ' affiliation=' [MPI-CBG](https://www.mpi-cbg.de/) ' forum='maarzt ' github='maarzt ' %}

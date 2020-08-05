@@ -7,7 +7,7 @@ categories: Development,Git
 description: test description
 ---
 
-{% include develop-menu content='tools' %}In the [ImageJ](ImageJ "wikilink") and related [SciJava](SciJava "wikilink") projects, we make extensive use of [GitHub](https://github.com/), a web site that hosts [open source](open_source "wikilink") projects for free.
+{% include develop-menu content='tools' %}In the [ImageJ](ImageJ ) and related [SciJava](SciJava ) projects, we make extensive use of [GitHub](https://github.com/), a web site that hosts [open source](open_source ) projects for free.
 
 Here are a few tips how to interact via GitHub more effectively:
 
@@ -40,7 +40,7 @@ Sometimes, a commit will mix whitespace changes with other changes, making the f
 
 # Editing files
 
-If you want to modify some file's contents and you are certain that the changes do not need to be tested locally, you can hit the `Edit` button on the upper right corner after navigating to the file in question (in case you don't have *Push* permission on the repository in question, this will *fork* the project at the same time). This will let you edit the file online and commit the changes after providing a commit message (you should still try to write a [meaningful commit message](Coding_style#SCM_history "wikilink"), of course).
+If you want to modify some file's contents and you are certain that the changes do not need to be tested locally, you can hit the `Edit` button on the upper right corner after navigating to the file in question (in case you don't have *Push* permission on the repository in question, this will *fork* the project at the same time). This will let you edit the file online and commit the changes after providing a commit message (you should still try to write a [meaningful commit message](Coding_style#SCM_history ), of course).
 
 # Working with Pull Requests
 
@@ -48,7 +48,7 @@ Pull Requests are a really neat way to work together. The idea is that Git makes
 
 ## Common workflow
 
-Let's assume that you want to provide a fix for a vexing bug in one of your favorite [Fiji](Fiji "wikilink") plugins. The first thing is to *fork* it – meaning to copy the entire revision history into your personal GitHub space – unless you have done so already. Then you clone that onto your computer (again, unless you have done so already). Make your changes, commit them, push them and then make a Pull Request. See the excellent page [How to contribute to an existing plugin or library](How_to_contribute_to_an_existing_plugin_or_library "wikilink") for a detailed walk-through.
+Let's assume that you want to provide a fix for a vexing bug in one of your favorite [Fiji](Fiji ) plugins. The first thing is to *fork* it – meaning to copy the entire revision history into your personal GitHub space – unless you have done so already. Then you clone that onto your computer (again, unless you have done so already). Make your changes, commit them, push them and then make a Pull Request. See the excellent page [How to contribute to an existing plugin or library](How_to_contribute_to_an_existing_plugin_or_library ) for a detailed walk-through.
 
 ## Testing Pull Requests before merging them
 

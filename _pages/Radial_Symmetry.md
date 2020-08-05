@@ -119,7 +119,7 @@ RANSAC window is the 'main' window of the whole plugin. Therefore, we will give 
 
 While moving the sliders you will see the updates in the two images.
 
-[File:Multipe-dots-interactive-dog-rs-roi.png|Pre-detecions](File_Multipe-dots-interactive-dog-rs-roi.png%7CPre-detecions) [File:Multipe-dots-interactive-error-ransac.png|RANSAC](File_Multipe-dots-interactive-error-ransac.png%7CRANSAC) Support Regions
+[File:Multipe-dots-interactive-dog-rs-roi.png|Pre-detecions](File:Multipe-dots-interactive-dog-rs-roi.png%7CPre-detecions) [File:Multipe-dots-interactive-error-ransac.png|RANSAC](File:Multipe-dots-interactive-error-ransac.png%7CRANSAC) Support Regions
 
 One of them shows the pre-detections (red circles) and detections (orange crosses) in the provided region. Another one shows the pixels that were used by RANSAC and the error values at each of the used pixels.
 
@@ -133,7 +133,7 @@ You will see the result table with the coordinates, time, channel and intensity 
 
 Besides that you will get 2 images: one of them showing the overlay of the initial image with the regions that we used for the spots search, another one showing the 3D overlay for the detected spots.
 
-[File:Inliers-ransac.png|RANSAC](File_Inliers-ransac.png%7CRANSAC) Support Regions [File:Multiple-dots-detections.png|Detected](File_Multiple-dots-detections.png%7CDetected) Spots
+[File:Inliers-ransac.png|RANSAC](File:Inliers-ransac.png%7CRANSAC) Support Regions [File:Multiple-dots-detections.png|Detected](File:Multiple-dots-detections.png%7CDetected) Spots
 
 ''' Manual mode: '''
 

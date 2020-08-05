@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include project content='SNT' %}This account is used to manage the [Neuroanatomy update site](Neuroanatomy "wikilink").
+{% include project content='SNT' %}This account is used to manage the [Neuroanatomy update site](Neuroanatomy ).

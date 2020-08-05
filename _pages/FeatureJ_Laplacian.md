@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [FeatureJ](FeatureJ "wikilink")
+1.  REDIRECT [FeatureJ](FeatureJ )

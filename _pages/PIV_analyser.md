@@ -51,15 +51,30 @@ with α=25 and Xm and Ym half of the image width. This effectively generate a so
 
 Below is what the PIV analysis found, with a window of 64x64 (the max displacement the algorithm can find is given by half of the window size, so we had to go for at least 50x50), no masking and no interpolation. The color encode flow direction and magnitude, using the reference that can be seen in the color wheel.
 
-Image:Testpiv3.gif|The original 2 frame sequence Image:Testpiv3-fd.png|The resulting flow encoded in color Image:Color coded orientation.png|Color coded orientation and magnitude
+
+{% capture content%}
+
+{% endcapture %}
+{% include gallery content=content%}
+
 
 Here are two other examples, taken from the [MatPIV page](http://www.math.uio.no/~jks/matpiv/) of J. Kristian Sveen. The first one depict a surface wave in water:
 
-Image:Surface wave.gif|Consecutive images of small particles in water during wave propagation Image:Surface wave-fd.png|Result from analysis
+
+{% capture content%}
+
+{% endcapture %}
+{% include gallery content=content%}
+
 
 The second one depict the internal wave. Notice the shearing in the middle of the frame.
 
-Image:Internal wave.gif|Consecutive images of small particles in water during wave propagation Image:Internal wave-fd.png|Result from analysis
+
+{% capture content%}
+
+{% endcapture %}
+{% include gallery content=content%}
+
 
 ## Installation
 

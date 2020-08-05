@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='giocard ' repo='MyofibrilJ ' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji ' name='MyofribilJ ' maintainer=maintainer author=author source=source released='November 2017 ' category='[Analysis](_Category_Analysis "wikilink"), [Scripting](_Category_Scripting "wikilink"), [Plugins](_Category_Plugins "wikilink") ' %}
+{% include info-box software='ImageJ/Fiji ' name='MyofribilJ ' maintainer=maintainer author=author source=source released='November 2017 ' category='[Analysis](_Category_Analysis ), [Scripting](_Category_Scripting ), [Plugins](_Category_Plugins ) ' %}
 
 ## Introduction
 
@@ -51,7 +51,7 @@ An initial estimate of the diameter of the fibrils is obtained by finding the fi
 
 ## Installation
 
-The easiest way to install *MyofibrilJ* is by [adding](Following_an_update_site#Add_update_sites "wikilink") its update site. Specifically:
+The easiest way to install *MyofibrilJ* is by [adding](Following_an_update_site#Add_update_sites ) its update site. Specifically:
 
   - launch Fiji and go to the menu *Help/Update...*
   - once the dialog window *ImageJ Updater* is opened, click on the *Manage update sites* button

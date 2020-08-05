@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2010-09-21 - Fiji comes with complete source code now -- thanks to TransformJ\!](2010-09-21_-_Fiji_comes_with_complete_source_code_now_--_thanks_to_TransformJ! "wikilink")
+1.  REDIRECT [2010-09-21 - Fiji comes with complete source code now -- thanks to TransformJ\!](2010-09-21_-_Fiji_comes_with_complete_source_code_now_--_thanks_to_TransformJ! )

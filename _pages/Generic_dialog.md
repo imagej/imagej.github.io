@@ -9,7 +9,7 @@ description: test description
 
 ## Introduction
 
-The {% include javadoc project='ImageJ1 ' package='ij/gui ' class='GenericDialog ' %} class is part of [ImageJ1](ImageJ1 "wikilink") and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more of work than with the [script parameters](Script_Parameters "wikilink") option but offers more possibilities.  
+The {% include javadoc project='ImageJ1 ' package='ij/gui ' class='GenericDialog ' %} class is part of [ImageJ1](ImageJ1 ) and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more of work than with the [script parameters](Script_Parameters ) option but offers more possibilities.  
 Fiji offers an additional {% include javadoc project='Fiji ' package='fiji/util/gui ' class='GenericDialogPlus ' %} subclass which include additional GUI item like a file input with a browse button.  
 Like the script parameters, plugins using the Generic Dialog (or one of its subclass) are macro recordable.
 

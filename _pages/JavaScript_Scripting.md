@@ -7,7 +7,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='languages' %}{% include wikipedia title='JavaScript' text='JavaScript'%} is a high-level, dynamic, untyped programming language, supporting multiple paradigms including object-oriented, imperative and functional programming styles. Although there are similarities between JavaScript and [Java](Java "wikilink"), including language name and syntax, the two are distinct languages and differ greatly in their design.
+{% include learn content='languages' %}{% include wikipedia title='JavaScript' text='JavaScript'%} is a high-level, dynamic, untyped programming language, supporting multiple paradigms including object-oriented, imperative and functional programming styles. Although there are similarities between JavaScript and [Java](Java ), including language name and syntax, the two are distinct languages and differ greatly in their design.
 
 # A note about JavaScript engines
 
@@ -866,7 +866,7 @@ new Thread( function () { IJ.log("Running!"); } ).start();
 
 What the code above did: to look for an interface that could take a method with no arguments, represented by the function, and instantiate an anonymous class that implements such interface with the function mapped to its method.
 
-See also an [example plugin](Scripting_comparisons#In_Javascript "wikilink") for ImageJ written in javascript.
+See also an [example plugin](Scripting_comparisons#In_Javascript ) for ImageJ written in javascript.
 
 ## Multithreaded Image Processing in Javascript
 
@@ -937,6 +937,6 @@ See the complete file here: {% include github repo='fiji ' path='plugins/Example
   - [Performance tips](http://www.mozilla.org/rhino/perf.html) (Java 6).
   - [Tutorial](http://winterbe.com/posts/2014/04/05/java8-nashorn-tutorial/) on Oracle Nashorn (Java 8).
 
-See also the [Scripting comparisons](Scripting_comparisons "wikilink").
+See also the [Scripting comparisons](Scripting_comparisons ).
 
 

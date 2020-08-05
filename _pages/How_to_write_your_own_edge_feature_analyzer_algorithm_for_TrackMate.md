@@ -361,6 +361,6 @@ Great, no?
 
 You can find the full source for this example {% include github org='fiji ' repo='TrackMate-examples ' source='plugin/trackmate/examples/edgeanalyzer/EdgeAngleAnalyzer.java ' label='here ' %}. It can also be used as a template for your analyzer.
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 10:25, 27 January 2014 (CST)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez )) 10:25, 27 January 2014 (CST)
 
 

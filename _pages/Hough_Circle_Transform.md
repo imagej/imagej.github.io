@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='llamero ' repo='Local\_Hough\_Circle ' %}
 {% endcapture %}
-{% include info-box name='Hough Circle Transform ' software='plugin ' update-site='UCB Vision Sciences ' author=author maintainer=maintainer source=source released='February 4<sup>th</sup>, 2017 ' latest-version='September 21<sup>st</sup>, 2018 (v1.0.0) ' status='stable, active ' category='[Analysis](_Category_Analysis "wikilink"), [Feature Extraction](_Category_Feature_Extraction "wikilink") ' %}
+{% include info-box name='Hough Circle Transform ' software='plugin ' update-site='UCB Vision Sciences ' author=author maintainer=maintainer source=source released='February 4<sup>th</sup>, 2017 ' latest-version='September 21<sup>st</sup>, 2018 (v1.0.0) ' status='stable, active ' category='[Analysis](_Category_Analysis ), [Feature Extraction](_Category_Feature_Extraction ) ' %}
 
 ## Introduction
 
@@ -221,19 +221,19 @@ If no circles were found in a frame, than that frame is excluded from the result
 
 ## Installing the Plugin
 
-The Hough Circle Transform plugin is part of the [UCB Vision Sciences](UCB_Vision_Sciences "wikilink") library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites "wikilink") the UCB Vision Sciences update site:
+The Hough Circle Transform plugin is part of the [UCB Vision Sciences](UCB_Vision_Sciences ) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites ) the UCB Vision Sciences update site:
 
 1\) Select {% include bc content='Help | Update...'%} from the Fiji menu to start the updater.
 
 2\) Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
 
-3\) Activate the [UCB Vision Sciences](UCB_Vision_Sciences "wikilink") update site and close the dialog. Now you should see additional jar files for download.
+3\) Activate the [UCB Vision Sciences](UCB_Vision_Sciences ) update site and close the dialog. Now you should see additional jar files for download.
 
 4\) Click *Apply changes* and restart Fiji.
 
 You should now find the plugin under the sub-menu {% include bc content='Plugins | UCB Vision Sciences | Hough Circle Transform'%}.
 
-NOTE: Hough Circle Transform is only one of the plugins included in the [UCB Vision Sciences](UCB_Vision_Sciences "wikilink") suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
+NOTE: Hough Circle Transform is only one of the plugins included in the [UCB Vision Sciences](UCB_Vision_Sciences ) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
 ## Acknowledgements
 

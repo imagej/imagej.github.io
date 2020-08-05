@@ -8,7 +8,7 @@ description: test description
 ---
 
 {% include develop-menu content='tutorials' %}{% include toc%}
-This tutorial is designed to guide developers through the options, processes and motivations for adding Ops outside the core {% include github org='imagej ' repo='imagej-ops ' label='imagej-ops ' %} project. Because this tutorial caters to external developers, in this tutorial we show how a [BAR](BAR "wikilink") function could be converted to an Op.
+This tutorial is designed to guide developers through the options, processes and motivations for adding Ops outside the core {% include github org='imagej ' repo='imagej-ops ' label='imagej-ops ' %} project. Because this tutorial caters to external developers, in this tutorial we show how a [BAR](BAR ) function could be converted to an Op.
 
 # Make your first Op
 
@@ -83,7 +83,7 @@ public class DefaultGCD implements GCD extends AbstractOp {
 
 ## Use your Op
 
-With these two components, you can start using your Op - for example, in the [script editor](Scripting "wikilink"):
+With these two components, you can start using your Op - for example, in the [script editor](Scripting ):
 
 ``` python
 # @OpService ops
@@ -294,7 +294,7 @@ print(ops.help(bar))
 
 ## Distribute scripts demonstrating how your Ops should be used
 
-The ImageJ [script editor](Scripting "wikilink") automatically collects scripts located in `src/main/resources/script_templates`. For example, if we create a file:
+The ImageJ [script editor](Scripting ) automatically collects scripts located in `src/main/resources/script_templates`. For example, if we create a file:
 
 `src/main/resources/script_templates/BAR/GCD.py`
 

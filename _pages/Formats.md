@@ -8,23 +8,23 @@ description: test description
 ---
 
 {% include menu-formats%}
-Thanks to ImageJ's [extensibility](extensibility "wikilink") via [plugins](plugins "wikilink"), it supports a lot of image formats\!
+Thanks to ImageJ's [extensibility](extensibility ) via [plugins](plugins ), it supports a lot of image formats\!
 
 ## Life sciences
 
-The [OME Bio-Formats](Bio-Formats "wikilink") plugins provide support for over 130 file formats in microscopy, medical imaging, and related life science formats. Bio-Formats is included with the [Fiji](Fiji "wikilink") distribution of ImageJ. See also the Bio-Formats [list of supported formats](https://www.openmicroscopy.org/site/support/bio-formats/supported-formats.html).
+The [OME Bio-Formats](Bio-Formats ) plugins provide support for over 130 file formats in microscopy, medical imaging, and related life science formats. Bio-Formats is included with the [Fiji](Fiji ) distribution of ImageJ. See also the Bio-Formats [list of supported formats](https://www.openmicroscopy.org/site/support/bio-formats/supported-formats.html).
 
 ## DICOM
 
-ImageJ has some built-in support for the DICOM format, and there are also plugins for working with DICOM files. See the [DICOM](DICOM "wikilink") page for full details.
+ImageJ has some built-in support for the DICOM format, and there are also plugins for working with DICOM files. See the [DICOM](DICOM ) page for full details.
 
 ## HDF
 
-The HDF5 [update site](update_site "wikilink") enables support for reading and writing [HDF5](https://en.wikipedia.org/wiki/Hierarchical_Data_Format "wikilink") image data. Note that HDF5 is a very broad specification; the HDF5 plugin will not support all manner of HDF files, but only those written according to its constraints.
+The HDF5 [update site](update_site ) enables support for reading and writing [HDF5](https://en.wikipedia.org/wiki/Hierarchical_Data_Format "wikilink") image data. Note that HDF5 is a very broad specification; the HDF5 plugin will not support all manner of HDF files, but only those written according to its constraints.
 
 ## Video
 
-Out of the box, ImageJ has limited support for some video formats such as AVI and [QuickTime](QuickTime "wikilink"), and there are also plugins which extend ImageJ's support for videos. See the [Video](Video "wikilink") page for details.
+Out of the box, ImageJ has limited support for some video formats such as AVI and [QuickTime](QuickTime ), and there are also plugins which extend ImageJ's support for videos. See the [Video](Video ) page for details.
 
 ## See also
 

@@ -30,7 +30,7 @@ The automatic image segmentation functionality is comparable to Trainable Weka S
 
 ## Installation
 
-Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Labkit/ (For details on how to install an update site click [here](Following_an_update_site "wikilink").)
+Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Labkit/ (For details on how to install an update site click [here](Following_an_update_site ).)
 
 To start Labkit in ImageJ, first open the image you want to work with, and then select Plugins \> Segmentation \> Labkit from the main menu.
 
@@ -48,7 +48,7 @@ Follow these steps to segment an image:
 
 ## Basic Navigation
 
-Labkit is based on Big Data Viewer. Navigation the image works as in Big Data Viewer, and many short cuts work too. Click [here](BigDataViewer "wikilink") for a description of the short cuts.
+Labkit is based on Big Data Viewer. Navigation the image works as in Big Data Viewer, and many short cuts work too. Click [here](BigDataViewer ) for a description of the short cuts.
 
   - {% include key content='press|Ctrl|Shift|mouse-wheel' %} to zoom in and out
   - {% include key content='press|right-click|drag' %} to move the image

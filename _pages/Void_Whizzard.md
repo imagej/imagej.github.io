@@ -13,7 +13,7 @@ Void Whizzard facilitates analysis of images from the Void Spot Assay (VSA, also
 
 ## INSTRUCTIONS
 
-A user guide with download and installation instructions is available here: [Media:Void Whizzard User Guide v1.4.pdf](Media_Void_Whizzard_User_Guide_v1.4.pdf "wikilink")
+A user guide with download and installation instructions is available here: [Media:Void Whizzard User Guide v1.4.pdf](Media_Void_Whizzard_User_Guide_v1.4.pdf )
 
 ## HOW TO CITE:
 

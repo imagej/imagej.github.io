@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-This is an example JRuby script, which is described in the page on [JRuby Scripting](JRuby_Scripting#Converting_ImageJ_Macros_to_JRuby "wikilink").
+This is an example JRuby script, which is described in the page on [JRuby Scripting](JRuby_Scripting#Converting_ImageJ_Macros_to_JRuby ).

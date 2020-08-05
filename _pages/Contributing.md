@@ -8,11 +8,11 @@ description: test description
 ---
 
 {% include aboutmenu%}
-The community encourages discussion about proposed changes on ImageJ's [communication](communication "wikilink") channels. Submit your ideas\!
+The community encourages discussion about proposed changes on ImageJ's [communication](communication ) channels. Submit your ideas\!
 
-Start on the [forum](forum "wikilink"), searching for discussions related to your contribution to get some context & background. It can also be helpful to [search](search "wikilink") for applicable issues and plans across the spectrum of ImageJ resources. The ImageJ community believes that [public discussion is important](Philosophy#Open_source "wikilink") so that ideas are exposed to healthy alternate points of view rather than lost.
+Start on the [forum](forum ), searching for discussions related to your contribution to get some context & background. It can also be helpful to [search](search ) for applicable issues and plans across the spectrum of ImageJ resources. The ImageJ community believes that [public discussion is important](Philosophy#Open_source ) so that ideas are exposed to healthy alternate points of view rather than lost.
 
-If you are interested in helping to tackle open issues, see the [wish list](wish_list "wikilink") page.
+If you are interested in helping to tackle open issues, see the [wish list](wish_list ) page.
 
 ## This web site
 
@@ -20,19 +20,19 @@ This site, imagej.net, is a wiki (similar to the {% include wikipedia title='Wik
 
 If you are an ImageJ user, contributing documentation is an easy way to give back to the community without needing to learn software development skills.
 
-If you are a plugin author, please consider [documenting your plugin on this site](Distribution#Documenting_your_extension "wikilink"). You can have a look at the page [How\_to\_make\_a\_new\_tutorial](How_to_make_a_new_tutorial "wikilink").
+If you are a plugin author, please consider [documenting your plugin on this site](Distribution#Documenting_your_extension ). You can have a look at the page [How\_to\_make\_a\_new\_tutorial](How_to_make_a_new_tutorial ).
 
-When in doubt, discuss your ideas publicly on the Image.sc [Forum](Forum "wikilink")\!
+When in doubt, discuss your ideas publicly on the Image.sc [Forum](Forum )\!
 
 ## ImageJ2
 
-Submit patches to [ImageJ2](ImageJ2 "wikilink") via [pull requests](https://help.github.com/articles/using-pull-requests/) against [ImageJ2's source on GitHub](https://github.com/imagej).
+Submit patches to [ImageJ2](ImageJ2 ) via [pull requests](https://help.github.com/articles/using-pull-requests/) against [ImageJ2's source on GitHub](https://github.com/imagej).
 
-Note that since ImageJ2 has a modular [architecture](architecture "wikilink"), it is possible that your change would be more applicable to one of the supporting technologies such as [ImgLib2](https://github.com/imglib), [SCIFIO](https://github.com/scifio) or [SciJava](https://github.com/scijava).
+Note that since ImageJ2 has a modular [architecture](architecture ), it is possible that your change would be more applicable to one of the supporting technologies such as [ImgLib2](https://github.com/imglib), [SCIFIO](https://github.com/scifio) or [SciJava](https://github.com/scijava).
 
 ## ImageJ1
 
-Changes to [ImageJ1](ImageJ1 "wikilink") are made by {% include person content='Rasband' %}, who is the sole [ImageJ1](ImageJ1 "wikilink") developer. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [ImageJ1's Release Notes/News](https://imagej.net/notes.html)).
+Changes to [ImageJ1](ImageJ1 ) are made by {% include person content='Rasband' %}, who is the sole [ImageJ1](ImageJ1 ) developer. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [ImageJ1's Release Notes/News](https://imagej.net/notes.html)).
 
 Methods of getting the patch to Wayne include:
 

@@ -9,7 +9,7 @@ description: test description
 
 ## Stack-based dataset import
 
-See also: the [dataset definition documentation](MVR-DefineDataset "wikilink") in [Multiview-Reconstruction](Multiview-Reconstruction "wikilink").
+See also: the [dataset definition documentation](MVR-DefineDataset ) in [Multiview-Reconstruction](Multiview-Reconstruction ).
 
 The **Manual Loader (Bioformats)** and **Manual Loader (TIFF Only, ImageJ Opener)** provide a robust way of importing datasets into BigStitcher. They allow you to manually specify the contents of a set of files and combine them into a dataset.
 
@@ -66,8 +66,8 @@ If you chose to manually specify the voxel sizes or load them from metadata and 
 
 {% include thumbnail src='/images/pages/BigStitcher Stack Import4.png' title='Step 3: Verifying/modifying calibration.'%}
 
-Once you click **OK**, your dataset should be displayed in the [BigStitcher main window](BigStitcher_Stitching_Mode "wikilink").
+Once you click **OK**, your dataset should be displayed in the [BigStitcher main window](BigStitcher_Stitching_Mode ).
 
-Go back to the [dataset definition overview](BigStitcher_Define_new_dataset "wikilink")
+Go back to the [dataset definition overview](BigStitcher_Define_new_dataset )
 
-Go back to the [main page](BigStitcher#Documentation "wikilink")
+Go back to the [main page](BigStitcher#Documentation )

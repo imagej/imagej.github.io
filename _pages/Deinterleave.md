@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Stack Manipulation](Stack_Manipulation "wikilink")
+1.  REDIRECT [Stack Manipulation](Stack_Manipulation )

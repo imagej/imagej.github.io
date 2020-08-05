@@ -40,9 +40,9 @@ description: test description
 
 <div style="text-align: left; font-size: 1.3em; padding: 1.5em; background-color: #fec; border: 2px solid black; border-radius: 10px">
 
-[ImageJ](ImageJ "wikilink") is an [open source](open_source "wikilink") image processing program designed for scientific multidimensional images.
+[ImageJ](ImageJ ) is an [open source](open_source ) image processing program designed for scientific multidimensional images.
 
-[ImageJ](ImageJ "wikilink") is highly [extensible](Extensibility "wikilink"), with thousands of [plugins](plugins "wikilink") and [scripts](scripts "wikilink") for performing a wide variety of tasks, and a [large user community](Usage "wikilink").
+[ImageJ](ImageJ ) is highly [extensible](Extensibility ), with thousands of [plugins](plugins ) and [scripts](scripts ) for performing a wide variety of tasks, and a [large user community](Usage ).
 
 </div>
 
@@ -85,9 +85,9 @@ Tools & Features
 
 |                                              |                                                                                                                                                                                                                                                                                                     |
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Open source](Open_source "wikilink")        | ImageJ is a tool for the {% include wikipedia title='Scientific\_method\#Communication\_and\_community' text='scientific community'%}. To maintain transparency, the [ImageJ application](Downloads "wikilink") and its [source code](source_code "wikilink") will always be freely available. |
-| [Reproducible](Reproducibility "wikilink")   | Powerful tools such as the [Script Editor](Script_Editor "wikilink") and [personal update sites](personal_update_sites "wikilink") help you develop and share reproducible analysis workflows.                                                                                                      |
-| [Interoperable](Interoperability "wikilink") | ImageJ is [not an island](SciJava "wikilink"). Use the best tool for the job, including [KNIME](KNIME "wikilink"), [ITK](ITK "wikilink"), [MATLAB](MATLAB "wikilink"), and a multitude of [scripting](scripting "wikilink") languages.                                                              |
+| [Open source](Open_source )        | ImageJ is a tool for the {% include wikipedia title='Scientific\_method\#Communication\_and\_community' text='scientific community'%}. To maintain transparency, the [ImageJ application](Downloads ) and its [source code](source_code ) will always be freely available. |
+| [Reproducible](Reproducibility )   | Powerful tools such as the [Script Editor](Script_Editor ) and [personal update sites](personal_update_sites ) help you develop and share reproducible analysis workflows.                                                                                                      |
+| [Interoperable](Interoperability ) | ImageJ is [not an island](SciJava ). Use the best tool for the job, including [KNIME](KNIME ), [ITK](ITK ), [MATLAB](MATLAB ), and a multitude of [scripting](scripting ) languages.                                                              |
 
 <h2 class="header-stripe" style="margin-left: -20px; margin-right: -20px; border:solid black; border-left: 2px; border-right: 2px">
 
@@ -98,14 +98,14 @@ Join the Community
 |                                          |                                                                                                                                          |
 | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | [Image.sc Forum](https://forum.image.sc) | A great place to ask and answer questions, and become part of the community that has driven ImageJ's success.                            |
-| [GitHub Issues](Issues "wikilink")       | The [ImageJ team](Contributors "wikilink") uses [GitHub](GitHub "wikilink") for bug reports, technical suggestions and feature requests. |
-| [Contact and Help](Help "wikilink")      | For more ways to communicate: [mailing lists](mailing_lists "wikilink"), [chat](chat "wikilink") services and more.                      |
+| [GitHub Issues](Issues )       | The [ImageJ team](Contributors ) uses [GitHub](GitHub ) for bug reports, technical suggestions and feature requests. |
+| [Contact and Help](Help )      | For more ways to communicate: [mailing lists](mailing_lists ), [chat](chat ) services and more.                      |
 
 <div align="left">
 
 <hr>
 
-<span style="font-size: 0.9em;">ImageJ is developed by [contributors worldwide](Contributors "wikilink"). This web site is hosted by [LOCI](LOCI "wikilink") at the University of Wisconsin-Madison.</span>
+<span style="font-size: 0.9em;">ImageJ is developed by [contributors worldwide](Contributors ). This web site is hosted by [LOCI](LOCI ) at the University of Wisconsin-Madison.</span>
 
 </div>
 

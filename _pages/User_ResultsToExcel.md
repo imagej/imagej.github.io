@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Read\_and\_Write\_Excel](Read_and_Write_Excel "wikilink")
+1.  REDIRECT [Read\_and\_Write\_Excel](Read_and_Write_Excel )

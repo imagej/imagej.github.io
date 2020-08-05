@@ -7,6 +7,6 @@ categories: Plugins,Particle analysis,Colocalization
 description: test description
 ---
 
-1.  REDIRECT [Interaction\_Analysis](Interaction_Analysis "wikilink")
+1.  REDIRECT [Interaction\_Analysis](Interaction_Analysis )
 
   

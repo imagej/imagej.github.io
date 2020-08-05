@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Nuclei Watershed Separation](Nuclei_Watershed_Separation "wikilink")
+1.  REDIRECT [Nuclei Watershed Separation](Nuclei_Watershed_Separation )

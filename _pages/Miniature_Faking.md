@@ -7,12 +7,12 @@ categories: Plugins,Filtering,Interactive,Integral Image,Photography
 description: test description
 ---
 
-This is an interactive non-scientific fun plugin to {% include wikipedia title='Miniature faking' text='fake miniature photographs'%} from existing images. The plugin fakes an effect that can be achieved optically by {% include wikipedia title='Tilt-shift' text='tilting'%} the projection plane behind the lens in a camera. It uses {% include wikipedia title='Summed area table' text='Integral Images'%} to smooth the image with a variant smoothing kernel whose size increases in proportion with its distance to the 'tilt axis'. The 'tilt axis' is a line where the images remains maximally sharp. The location and orientation of the 'tilt axis' and the intensity of the effect can be adjusted using the line tool which is activated by the plugin by default. The plugin is not (yet) in the menus but can be executed from the [Javascript/ Jython/ Beanshell terminal](Scripting_Help "wikilink") using:
+This is an interactive non-scientific fun plugin to {% include wikipedia title='Miniature faking' text='fake miniature photographs'%} from existing images. The plugin fakes an effect that can be achieved optically by {% include wikipedia title='Tilt-shift' text='tilting'%} the projection plane behind the lens in a camera. It uses {% include wikipedia title='Summed area table' text='Integral Images'%} to smooth the image with a variant smoothing kernel whose size increases in proportion with its distance to the 'tilt axis'. The 'tilt axis' is a line where the images remains maximally sharp. The location and orientation of the 'tilt axis' and the intensity of the effect can be adjusted using the line tool which is activated by the plugin by default. The plugin is not (yet) in the menus but can be executed from the [Javascript/ Jython/ Beanshell terminal](Scripting_Help ) using:
 
 ``` java
 new mpicbg.ij.integral.InteractiveTilt().run("");
 ```
 
-[File:Mpi-cbg.jpg|People](File_Mpi-cbg.jpg%7CPeople) sitting in the MPI-CBG cafeteria. [File:Street.jpg|A](File_Street.jpg%7CA) crossroad in NYC. [File:Dc.jpg|A](File_Dc.jpg%7CA) view over DC. [File:Car.jpg|Some](File_Car.jpg%7CSome) cars in front of a restaurant. [File:Traveler.jpg|A](File_Traveler.jpg%7CA) traveler in the mountains. [File:Wood.jpg|Landscape](File_Wood.jpg%7CLandscape).
+[File:Mpi-cbg.jpg|People](File:Mpi-cbg.jpg%7CPeople) sitting in the MPI-CBG cafeteria. [File:Street.jpg|A](File:Street.jpg%7CA) crossroad in NYC. [File:Dc.jpg|A](File:Dc.jpg%7CA) view over DC. [File:Car.jpg|Some](File:Car.jpg%7CSome) cars in front of a restaurant. [File:Traveler.jpg|A](File:Traveler.jpg%7CA) traveler in the mountains. [File:Wood.jpg|Landscape](File:Wood.jpg%7CLandscape).
 
     

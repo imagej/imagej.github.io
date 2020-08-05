@@ -34,7 +34,7 @@ To remark here that [Clojure](http://clojure.org) is **not** a scripting languag
 
 ## In Java
 
-See also the [Introduction into Developing Plugins](Introduction_into_Developing_Plugins "wikilink") documentation page.
+See also the [Introduction into Developing Plugins](Introduction_into_Developing_Plugins ) documentation page.
 
 ``` java
 import ij.IJ;
@@ -105,7 +105,7 @@ Note that above the loop is only set as an example. It's easier to simply query 
 
 ## In Jython
 
-See also the [Jython Scripting](Jython_Scripting "wikilink") documentation page.
+See also the [Jython Scripting](Jython_Scripting ) documentation page.
 
 ``` python
 from java.awt import Color
@@ -144,7 +144,7 @@ prompt.setForeground(Color.red)
 
 ## In Clojure
 
-See also the [Clojure Scripting](Clojure_Scripting "wikilink") documentation page.
+See also the [Clojure Scripting](Clojure_Scripting ) documentation page.
 
 ``` lisp
 (import '(java.awt Color)
@@ -197,7 +197,7 @@ A second version, lispier, rewritten from the above by Clojure's author [Rich Hi
 
 ## In Javascript
 
-See also the [Javascript Scripting](Javascript_Scripting "wikilink") documentation page.
+See also the [Javascript Scripting](Javascript_Scripting ) documentation page.
 
 ``` javascript
 // All ImageJ and java.lang.* classes have been automatically imported
@@ -229,7 +229,7 @@ if (!gd.wasCanceled())
 
 ## In JRuby
 
-For some tutorial material on using JRuby to script ImageJ, please see [JRuby Scripting](JRuby_Scripting "wikilink").
+For some tutorial material on using JRuby to script ImageJ, please see [JRuby Scripting](JRuby_Scripting ).
 
 ``` ruby
 include_class 'java.awt.Color'
@@ -275,7 +275,7 @@ end
 
 ## In BeanShell
 
-See also the [Beanshell Scripting](Beanshell_Scripting "wikilink") documentation page.
+See also the [Beanshell Scripting](Beanshell_Scripting ) documentation page.
 
 For some tutorial material on using BeanShell, see [BeanShell's Quickstart](http://www.beanshell.org/manual/quickstart.html#Java_Statements_and_Expressions).
 

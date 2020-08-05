@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Diadem Challenge Data](Diadem_Challenge_Data "wikilink")
+1.  REDIRECT [Diadem Challenge Data](Diadem_Challenge_Data )

@@ -7,14 +7,14 @@ categories: Fiji
 description: test description
 ---
 
-{% include info-box content='There is another good way to distribute your extension: your own [update site](update_site "wikilink"). See the [Distribution](Distribution "wikilink") page for details.' %} {% include fijimenu%}
-Distributing your software component as part of [Fiji](Fiji "wikilink") is an effective way to immediately and easily put it into the hands of many users, as well as to actively participate in the community of ImageJ software development. However, doing so comes with a few corresponding rules.
+{% include info-box content='There is another good way to distribute your extension: your own [update site](update_site ). See the [Distribution](Distribution ) page for details.' %} {% include fijimenu%}
+Distributing your software component as part of [Fiji](Fiji ) is an effective way to immediately and easily put it into the hands of many users, as well as to actively participate in the community of ImageJ software development. However, doing so comes with a few corresponding rules.
 
-The following document describes these requirements, as well as associated best practices, for shipping your component as part of the [Fiji](Fiji "wikilink") update site.
+The following document describes these requirements, as well as associated best practices, for shipping your component as part of the [Fiji](Fiji ) update site.
 
 # Definition
 
-A "core" [Fiji](Fiji "wikilink") project is one distributed on the [Fiji update site](http://update.fiji.sc). Such projects are subject to the requirements discussed below. Conversely, if you distribute your [ImageJ](ImageJ "wikilink") extension on a separate update site, this page does not apply.
+A "core" [Fiji](Fiji ) project is one distributed on the [Fiji update site](http://update.fiji.sc). Such projects are subject to the requirements discussed below. Conversely, if you distribute your [ImageJ](ImageJ ) extension on a separate update site, this page does not apply.
 
 # Requirements
 
@@ -26,17 +26,17 @@ A key principle of the Fiji project is:
     *If you want to go fast, go alone. If you want to go far, go together.*
     \- *African proverb*
 
-There are many corollaries to this wisdom, the most prominent: if you write software in your endeavor to discover new insights, [Open Source](Open_Source "wikilink") is the way that brings you farthest. Withholding the source code—like any other method to obstruct other researchers' work, e.g. refusing to share materials and methods—will [invariably have the opposite effect](Why_Closed-Source_Is_Wrong "wikilink") in the long run. Likewise, working with interested parties to improve one's project will invariably lead to a much better and stronger result.
+There are many corollaries to this wisdom, the most prominent: if you write software in your endeavor to discover new insights, [Open Source](Open_Source ) is the way that brings you farthest. Withholding the source code—like any other method to obstruct other researchers' work, e.g. refusing to share materials and methods—will [invariably have the opposite effect](Why_Closed-Source_Is_Wrong ) in the long run. Likewise, working with interested parties to improve one's project will invariably lead to a much better and stronger result.
 
 As such, components distributed with Fiji must be licensed in a way [compatible with the GNU General Public License](https://www.gnu.org/licenses/license-list.html).
 
 ## Source hosted on GitHub
 
-Core Fiji development takes place on [GitHub](GitHub "wikilink"). This ensures continuity and visibility, and facilitates collaboration.
+Core Fiji development takes place on [GitHub](GitHub ). This ensures continuity and visibility, and facilitates collaboration.
 
 There are two possibilities for where to host your project:
 
-1.  **Standard.** Repository is hosted in the [fiji organization](https://github.com/fiji), or a descendant organization (e.g., [trakem2](https://github.com/trakem2)). [Fiji maintainers](Governance "wikilink") help maintain the project.
+1.  **Standard.** Repository is hosted in the [fiji organization](https://github.com/fiji), or a descendant organization (e.g., [trakem2](https://github.com/trakem2)). [Fiji maintainers](Governance ) help maintain the project.
 2.  **External.** Repository is hosted in a GitHub organization you control. You alone maintain the project (though Fiji maintainers may submit PRs to help).
 
 ### Standard projects
@@ -44,15 +44,15 @@ There are two possibilities for where to host your project:
 The following criteria apply to projects hosted in the [fiji organization](https://github.com/fiji):
 
   - Each component (i.e., JAR file) lives in its own repository.
-  - Components use [Maven](Maven "wikilink") to build:
+  - Components use [Maven](Maven ) to build:
       - As single-module projects
       - With the standard Maven directory layout
-      - Extending the [pom-scijava parent POM](Architecture#Maven_component_structure "wikilink")
+      - Extending the [pom-scijava parent POM](Architecture#Maven_component_structure )
   - Components use the groupId `sc.fiji`.
-  - Components are [versioned according to SemVer](Versioning "wikilink").
-  - The project uses [GitHub Issues](Issues "wikilink") for issue tracking.
+  - Components are [versioned according to SemVer](Versioning ).
+  - The project uses [GitHub Issues](Issues ) for issue tracking.
   - The project has a dedicated page here on the ImageJ wiki.
-  - The [Fiji maintainers](Governance "wikilink") may make commits and [release new versions](Releases "wikilink") of the component as needed, so that Fiji as a whole continues to work as intended.
+  - The [Fiji maintainers](Governance ) may make commits and [release new versions](Releases ) of the component as needed, so that Fiji as a whole continues to work as intended.
   - The `master` branch is considered *release ready* at all times, meaning it compiles with passing tests, and is ready for downstream consumption.
 
 ### External projects
@@ -61,13 +61,13 @@ Projects that reside outside the [fiji organization](https://github.com/fiji) ar
 
 ## Continuous integration: Travis CI
 
-To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a [Travis CI](Travis_CI "wikilink") job that builds and tests the source code, and deploys the [Maven artifacts](#Maven_artifacts "wikilink"), whenever a new revision is made available.
+To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a [Travis CI](Travis_CI ) job that builds and tests the source code, and deploys the [Maven artifacts](#Maven_artifacts "wikilink"), whenever a new revision is made available.
 
-Have a look at the [Travis](Travis "wikilink") page for instructions on setting it up.
+Have a look at the [Travis](Travis ) page for instructions on setting it up.
 
 ## Versioning and dependency convergence
 
-Most Fiji projects use the [SemVer versioning scheme](Versioning "wikilink"): a standard to encourage API consistency without obstructing API improvements.
+Most Fiji projects use the [SemVer versioning scheme](Versioning ): a standard to encourage API consistency without obstructing API improvements.
 
 The minimum requirement for core Fiji projects is to abide by the **MAJOR** digit portion of [SemVer](http://semver.org/)—i.e., if the first digit of the version string increases, it means that the new version is *not* backwards compatible with the old version. Conversely, if any later digit of the version string increases, it means that the new version *is* backwards compatible.
 
@@ -75,13 +75,13 @@ This requirement exists to facilitate automated tooling for dependency convergen
 
 From example, Apache Commons Math v3.x breaks backwards compatibility with Apache Commons Math v2.x. Since both versions share the same package and class names, only one of these versions can be shipped with Fiji. Therefore, all components of Fiji must rely on the same major version: either v2 or v3.
 
-In general, if the rest of the Fiji distribution upgrades to a new major version of a library on which your component depends, your component must also be upgraded to use the new version. Such decisions are typically reached after [discussion on public channels](Communication "wikilink").
+In general, if the rest of the Fiji distribution upgrades to a new major version of a library on which your component depends, your component must also be upgraded to use the new version. Such decisions are typically reached after [discussion on public channels](Communication ).
 
 ### Best practice: version constants
 
-Many plugins in Fiji contain explicit version constants. Without [Maven](Maven "wikilink"), in-code constants may make sense as a way to track compatibility. But by Mavenizing for contribution to Fiji, the pom.xml provides a standard mechanism for versioning, allowing migration away from constants in the source code.
+Many plugins in Fiji contain explicit version constants. Without [Maven](Maven ), in-code constants may make sense as a way to track compatibility. But by Mavenizing for contribution to Fiji, the pom.xml provides a standard mechanism for versioning, allowing migration away from constants in the source code.
 
-Versioning through the pom.xml has several advantages to facilitate [reproducible builds](Reproducibility "wikilink"), including:
+Versioning through the pom.xml has several advantages to facilitate [reproducible builds](Reproducibility ), including:
 
   - Standardized scripts to increment versions appropriately.
   - No risk of accidentally double-releasing a given version.
@@ -94,12 +94,12 @@ Furthermore, for backwards-compatibility a version can be automatically deduced:
 
 ## Maven artifacts
 
-[Fiji](Fiji "wikilink") and related [SciJava](SciJava "wikilink") software uses [Maven](Maven "wikilink"), an industry standard to declare metadata about a project, to build projects using said metadata, and to *deploy* the resulting artifacts to a [Maven repository](Architecture#Maven_repositories "wikilink"). Such repositories are essentially for developers what [update sites](update_sites "wikilink") are for users.
+[Fiji](Fiji ) and related [SciJava](SciJava ) software uses [Maven](Maven ), an industry standard to declare metadata about a project, to build projects using said metadata, and to *deploy* the resulting artifacts to a [Maven repository](Architecture#Maven_repositories ). Such repositories are essentially for developers what [update sites](update_sites ) are for users.
 
-  - The minimum requirement for core Fiji projects is to use a build system (e.g., [Maven](Maven "wikilink") or Gradle) that automatically deploys required artifacts to the [ImageJ Maven repository](http://maven.imagej.net/), such that they can be consumed by downstream code, including other Fiji projects. Required artifacts to deploy include the main JAR and POM files, `-tests` JAR, `-sources` JAR and `-javadoc` JAR.
-  - To facilitate this, most Fiji projects inherit a common Maven configuration from the [pom-fiji](https://github.com/fiji/pom-fiji) parent project. This configuration ensures that not only the compiled *.jar* files are deployed, but also the Javadocs and the sources. Therefore, it is strongly encouraged to extend this parent; see the [Maven component structure](Architecture#Maven_component_structure "wikilink") section for details.
-  - All of Fiji's components are deployed by [Travis CI](Travis_CI "wikilink") to the [ImageJ Maven repository](Architecture#Maven_repositories "wikilink") or to [OSS Sonatype](http://oss.sonatype.org/). That way, all Fiji components can be added easily as dependencies to downstream projects.
-  - All Fiji components are declared in the toplevel [fiji](https://github.com/fiji/fiji) project's POM as dependencies, and declared in the [pom-fiji](https://github.com/fiji/pom-fiji) parent as *managed dependencies*, as part of Fiji's [Bill of Materials](Architecture#Bill_of_Materials "wikilink").
+  - The minimum requirement for core Fiji projects is to use a build system (e.g., [Maven](Maven ) or Gradle) that automatically deploys required artifacts to the [ImageJ Maven repository](http://maven.imagej.net/), such that they can be consumed by downstream code, including other Fiji projects. Required artifacts to deploy include the main JAR and POM files, `-tests` JAR, `-sources` JAR and `-javadoc` JAR.
+  - To facilitate this, most Fiji projects inherit a common Maven configuration from the [pom-fiji](https://github.com/fiji/pom-fiji) parent project. This configuration ensures that not only the compiled *.jar* files are deployed, but also the Javadocs and the sources. Therefore, it is strongly encouraged to extend this parent; see the [Maven component structure](Architecture#Maven_component_structure ) section for details.
+  - All of Fiji's components are deployed by [Travis CI](Travis_CI ) to the [ImageJ Maven repository](Architecture#Maven_repositories ) or to [OSS Sonatype](http://oss.sonatype.org/). That way, all Fiji components can be added easily as dependencies to downstream projects.
+  - All Fiji components are declared in the toplevel [fiji](https://github.com/fiji/fiji) project's POM as dependencies, and declared in the [pom-fiji](https://github.com/fiji/pom-fiji) parent as *managed dependencies*, as part of Fiji's [Bill of Materials](Architecture#Bill_of_Materials ).
 
 # Guidelines
 
@@ -109,7 +109,7 @@ The following guidelines are less technical and more philosophical, but represen
 
 Developers of Fiji components should invite others to contribute. That entails welcoming developers, acknowledging and working on pull requests, encouraging improvements, working together, enhancing upon each others' work, share insights, etc.
 
-To leverage the power of [open source](open_source "wikilink"), the default for discussions should be to use [public channels](Communication "wikilink"). In other words, the question to ask should be "Is there any good reason why this conversation should be private?" instead of the opposite.
+To leverage the power of [open source](open_source ), the default for discussions should be to use [public channels](Communication ). In other words, the question to ask should be "Is there any good reason why this conversation should be private?" instead of the opposite.
 
 ## Active bug management
 
@@ -129,7 +129,7 @@ In particular when fixing a bug, it is a good idea to write a regression test *f
 
 ## Separation of concerns
 
-New features should be put into the appropriate component. E.g., when adding a general purpose utility, consider contributing to [SciJava Common](SciJava_Common "wikilink") or [ImageJ Common](ImageJ_Common "wikilink") instead of bundling it with your specific extension.
+New features should be put into the appropriate component. E.g., when adding a general purpose utility, consider contributing to [SciJava Common](SciJava_Common ) or [ImageJ Common](ImageJ_Common ) instead of bundling it with your specific extension.
 
 # Examples
 
@@ -137,32 +137,32 @@ The following table provides a few examples of how various Fiji components are s
 
 |                                                           |                                             |                                                   |
 | --------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------- |
-| **Basics**                                                | **[GitHub](GitHub "wikilink")**             | **[Maven](Maven "wikilink")**                     |
+| **Basics**                                                | **[GitHub](GitHub )**             | **[Maven](Maven )**                     |
 | **Classification**                                        | **Component**                               | **Core?<sup>1</sup>**                             |
-| **Standard**                                              | [3D Viewer](3D_Viewer "wikilink")           | {% include yes%}
+| **Standard**                                              | [3D Viewer](3D_Viewer )           | {% include yes%}
                                        |
-| [Coloc 2](Coloc_2 "wikilink")                             | {% include yes%}
+| [Coloc 2](Coloc_2 )                             | {% include yes%}
                                  | [Fiji](http://update.fiji.sc/)                    |
-| [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink") | {% include yes%}
+| [Simple Neurite Tracer](Simple_Neurite_Tracer ) | {% include yes%}
                                  | [Fiji](http://update.fiji.sc/)                    |
-| [TrackMate](TrackMate "wikilink")                         | {% include yes%}
+| [TrackMate](TrackMate )                         | {% include yes%}
                                  | [Fiji](http://update.fiji.sc/)                    |
-| **External**                                              | [Sholl Analysis](Sholl_Analysis "wikilink") | {% include yes%}
+| **External**                                              | [Sholl Analysis](Sholl_Analysis ) | {% include yes%}
                                        |
-| [Bio-Formats](Bio-Formats "wikilink")                     | {% include yes%}
+| [Bio-Formats](Bio-Formats )                     | {% include yes%}
                                  | [Fiji](http://update.fiji.sc/)                    |
-| **Subproject**                                            | [BigDataViewer](BigDataViewer "wikilink")   | {% include yes%}
+| **Subproject**                                            | [BigDataViewer](BigDataViewer )   | {% include yes%}
                                        |
-| [TrakEM2](TrakEM2 "wikilink")                             | {% include yes%}
+| [TrakEM2](TrakEM2 )                             | {% include yes%}
                                  | [Fiji](http://update.fiji.sc/)                    |
-| **Third party**                                           | [Cookbook](Cookbook "wikilink")             | {% include no%}
+| **Third party**                                           | [Cookbook](Cookbook )             | {% include no%}
                                         |
-| [MaMuT](MaMuT "wikilink")                                 | {% include no%}
+| [MaMuT](MaMuT )                                 | {% include no%}
                                   | [MaMuT](http://sites.imagej.net/MaMuT/)           |
-| [SLIM Curve](SLIM_Curve "wikilink")                       | {% include no%}
+| [SLIM Curve](SLIM_Curve )                       | {% include no%}
                                   | [SLIM-Curve](http://sites.imagej.net/SLIM-Curve/) |
 
 <sup>1</sup> A "core" project is one distributed on the Fiji update site. These projects are subject to the requirements discussed on this page.  
-<sup>2</sup> See the [Licensing](Licensing "wikilink") page for further details.
+<sup>2</sup> See the [Licensing](Licensing ) page for further details.
 
 

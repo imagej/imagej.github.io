@@ -12,18 +12,18 @@ description: test description
 {% capture blurb%}
 {% include wikipedia title='Think different' text='Think different'%}.
 {% endcapture %}
-{% include minibox logo='Osx.png ' blurb=blurb %}{% include wikipedia title='macOS' text='macOS'%} (formerly called Mac OS X, then OS X) is {% include wikipedia title='Apple Inc.' text='Apple'%}'s desktop operating system. It is [the second most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](Windows "wikilink"). This page details issues specific to using [ImageJ](ImageJ "wikilink") on macOS systems.
+{% include minibox logo='Osx.png ' blurb=blurb %}{% include wikipedia title='macOS' text='macOS'%} (formerly called Mac OS X, then OS X) is {% include wikipedia title='Apple Inc.' text='Apple'%}'s desktop operating system. It is [the second most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](Windows ). This page details issues specific to using [ImageJ](ImageJ ) on macOS systems.
 
 {% include toc%}
 
 
 # Installation
 
-See also the [Java 8](Java_8 "wikilink") page for OS-X-specific issues.
+See also the [Java 8](Java_8 ) page for OS-X-specific issues.
 
 # Troubleshooting
 
-See also the [Troubleshooting](Troubleshooting "wikilink") page.
+See also the [Troubleshooting](Troubleshooting ) page.
 
 ## ImageJ becomes very slow after running for a while
 
@@ -49,7 +49,7 @@ As a workaround, you can check "Use JFileChooser to open/save" in the {% include
 
 # Frequently Asked Questions
 
-See also the [Frequently Asked Questions](Frequently_Asked_Questions "wikilink") page.
+See also the [Frequently Asked Questions](Frequently_Asked_Questions ) page.
 
 ## How do I run ImageJ with Java 6?
 

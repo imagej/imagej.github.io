@@ -15,7 +15,7 @@ description: test description
 {% capture source%}
 {% include github org='mcib3d ' repo='tapas-core ' %}
 {% endcapture %}
-{% include info-box name='TAPAS ' software='tapas ' update-site='TAPAS ' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d) ' source=source released='14/08/2019, V0.4 ' latest-version='22/06/2020, V0.6.3 ' status='stable, active ' category='[Automation](_Category_Automation "wikilink"), [Analysis](_Category_Analysis "wikilink"), [Filtering](_Category_Filtering "wikilink"), [Segmentation](_Category_Segmentation "wikilink") ' %}
+{% include info-box name='TAPAS ' software='tapas ' update-site='TAPAS ' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d) ' source=source released='14/08/2019, V0.4 ' latest-version='22/06/2020, V0.6.3 ' status='stable, active ' category='[Automation](_Category_Automation ), [Analysis](_Category_Analysis ), [Filtering](_Category_Filtering ), [Segmentation](_Category_Segmentation ) ' %}
 
 ## TAPAS : An integrated tool for batch processing
 
@@ -33,7 +33,7 @@ Thomas Boudier
 
 ## Features
 
-Basically we will propose modules from the [3D\_ImageJ\_Suite](3D_ImageJ_Suite "wikilink"), ImageJ/Fiji, along with other modules.
+Basically we will propose modules from the [3D\_ImageJ\_Suite](3D_ImageJ_Suite ), ImageJ/Fiji, along with other modules.
 
 As for stable version 0.5 the following modules are available :
 
@@ -52,7 +52,7 @@ As for stable version 0.5 the following modules are available :
 
 <!-- end list -->
 
-  - Install [3D\_ImageJ\_Suite](3D_ImageJ_Suite "wikilink"). It is also available as a update site in Fiji. **ImageScience** should be installed too, either from [here](http://www.imagescience.org/meijering/software/featurej/) or via the update site in Fiji.
+  - Install [3D\_ImageJ\_Suite](3D_ImageJ_Suite ). It is also available as a update site in Fiji. **ImageScience** should be installed too, either from [here](http://www.imagescience.org/meijering/software/featurej/) or via the update site in Fiji.
 
 <!-- end list -->
 

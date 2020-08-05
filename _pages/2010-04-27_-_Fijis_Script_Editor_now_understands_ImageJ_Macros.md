@@ -7,7 +7,7 @@ categories: News
 description: test description
 ---
 
-Thanks to a lot of help by Robert Futrell, [Fiji's Script Editor](Script_Editor "wikilink") learnt [ImageJ's macro language](Introduction_into_Macro_Programming "wikilink"). Now you can enjoy the power of full undo and of syntax highlighting when writing macros\!
+Thanks to a lot of help by Robert Futrell, [Fiji's Script Editor](Script_Editor ) learnt [ImageJ's macro language](Introduction_into_Macro_Programming ). Now you can enjoy the power of full undo and of syntax highlighting when writing macros\!
 
 ![ImageJ\_Macro\_in\_the\_Script-Editor.png](/images/pages/ImageJ Macro in the Script-Editor.png "ImageJ_Macro_in_the_Script-Editor.png")
 

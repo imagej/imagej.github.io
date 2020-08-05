@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [ImageJ\#History](ImageJ#History "wikilink")
+1.  REDIRECT [ImageJ\#History](ImageJ#History )

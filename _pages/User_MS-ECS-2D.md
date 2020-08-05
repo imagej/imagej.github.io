@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [MS-ECS-2D update site](MS-ECS-2D_update_site "wikilink")
+1.  REDIRECT [MS-ECS-2D update site](MS-ECS-2D_update_site )

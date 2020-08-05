@@ -26,7 +26,7 @@ This tutorial describes how to split part of a Git repository into its own dedic
 
 ## Update the Maven build
 
-Assuming you are using [Maven](Maven "wikilink") to build the subproject:
+Assuming you are using [Maven](Maven ) to build the subproject:
 
 1.  Add an *<scm>* section to the *pom.xml* to reflect the new remote repository's URL (see [example](https://github.com/scijava/jep/commit/b76f4a1df830c090fc96ab99bb145dd67e8e69ce)):
     ``` bash
@@ -53,7 +53,7 @@ Assuming you are using [Maven](Maven "wikilink") to build the subproject:
     ``` bash
     git add . && git commit -s
     ```
-3.  Create a new repository somewhere for the new project—we recommend [GitHub](GitHub "wikilink").
+3.  Create a new repository somewhere for the new project—we recommend [GitHub](GitHub ).
 4.  Connect your repository with the remote one:
     ``` bash
     git remote set-url origin git@github.com:my-org/my-new-project

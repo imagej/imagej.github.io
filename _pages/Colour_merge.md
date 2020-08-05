@@ -7,7 +7,7 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Colour merge ' author='unknown ' filename='Colour\_merge.class ' source='not found ' released='unknown ' latest-version='unknown ' status='unknown ' category='[Color processing](_Category_Color_processing "wikilink") ' %}
+{% include info-box software='ImageJ ' name='Colour merge ' author='unknown ' filename='Colour\_merge.class ' source='not found ' released='unknown ' latest-version='unknown ' status='unknown ' category='[Color processing](_Category_Color_processing ) ' %}
 
 ## Purpose
 
@@ -15,7 +15,7 @@ This plugin allows you to merge two grayscale stacks into a single RGB stack. It
 
 ## Documentation
 
-Adapted from the [MBF ImageJ](MBF_ImageJ "wikilink") manual:
+Adapted from the [MBF ImageJ](MBF_ImageJ ) manual:
 
 The {% include bc content='Plugins | Color functions | Color Merge'%} function gives the user the option of using the **Difference** arithmetic processing on the image stacks you select. This is not strictly a merge (when cyan and magenta merge they produce white, not yellow) but facilitates visualization of the separate channels (See {% include citation last='Demandolx ' first='D. ' last2='Davoust ' first2='J. ' title='Multicolour analysis and local image correlation in confocal microscopy ' journal='Journal of microscopy ' volume='185 ' pages='21-36 ' year='1997 ' %}. You can perform a true merge if you turn off the “Difference” option.
 

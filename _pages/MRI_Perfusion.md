@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='CSIM-Toolkits ' repo='ImageJ/tree/master/plugins/MRI-Perfusion ' label='GitHub CSIM-ImageJ MRI Perfusion repository ' %}
 {% endcapture %}
-{% include info-box name='MRI Perfusion PlugIn ' software='Fiji ' author=author maintainer=maintainer source=source released='February 04<sup>th</sup>, 2015 ' latest-version='February 04<sup>th</sup>, 2015 ' status='experimental, active ' category='[Plugins](_Category_Plugins "wikilink"), [MRI](_Category_Perfusion "wikilink") ' %}
+{% include info-box name='MRI Perfusion PlugIn ' software='Fiji ' author=author maintainer=maintainer source=source released='February 04<sup>th</sup>, 2015 ' latest-version='February 04<sup>th</sup>, 2015 ' status='experimental, active ' category='[Plugins](_Category_Plugins ), [MRI](_Category_Perfusion ) ' %}
 
 ## Perfusion in MRI
 

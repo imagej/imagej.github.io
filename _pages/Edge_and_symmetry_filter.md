@@ -33,7 +33,7 @@ The gradient vector is perpendicular to the edges, voxels along the direction of
 
 ## Download
 
-For details go to the [3D ImageJ Suite](3D_ImageJ_Suite "wikilink").
+For details go to the [3D ImageJ Suite](3D_ImageJ_Suite ).
 
 ## Citation
 

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Register Virtual Stack Slices](Register_Virtual_Stack_Slices "wikilink")
+1.  REDIRECT [Register Virtual Stack Slices](Register_Virtual_Stack_Slices )

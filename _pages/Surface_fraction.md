@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BoneJ2\#Surface\_fraction](BoneJ2#Surface_fraction "wikilink")
+1.  REDIRECT [BoneJ2\#Surface\_fraction](BoneJ2#Surface_fraction )

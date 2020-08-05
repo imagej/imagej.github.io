@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [I2K 2018](I2K_2018 "wikilink")
+1.  REDIRECT [I2K 2018](I2K_2018 )

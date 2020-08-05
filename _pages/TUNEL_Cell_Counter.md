@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [RETINA Analysis Toolkit](RETINA_Analysis_Toolkit "wikilink")
+1.  REDIRECT [RETINA Analysis Toolkit](RETINA_Analysis_Toolkit )
 
   
 Please visit https://imagej.net/RETINA_Analysis_Toolkit to download this macro.

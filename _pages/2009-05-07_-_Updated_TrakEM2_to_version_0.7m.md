@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2009-12-04 - Updated TrakEM2 to version 0.7m](2009-12-04_-_Updated_TrakEM2_to_version_0.7m "wikilink")
+1.  REDIRECT [2009-12-04 - Updated TrakEM2 to version 0.7m](2009-12-04_-_Updated_TrakEM2_to_version_0.7m )

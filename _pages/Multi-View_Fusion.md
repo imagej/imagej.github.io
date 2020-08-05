@@ -7,20 +7,20 @@ categories:
 description: test description
 ---
 
-{% include info-box name='Multi-view fusion plugin ' software='ImageJ ' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak ' maintainer='Stephan Preibisch ' filename='SPIM\_Registration.jar ' released='February 2010 ' latest-version='October 2011 ' category='[SPIM Registration](_Category_Registration "wikilink") ' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch) ' %}
+{% include info-box name='Multi-view fusion plugin ' software='ImageJ ' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak ' maintainer='Stephan Preibisch ' filename='SPIM\_Registration.jar ' released='February 2010 ' latest-version='October 2011 ' category='[SPIM Registration](_Category_Registration ) ' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch) ' %}
 
 ## Citation
 
 Please note that the multi-view fusion plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
-  - S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media_Nmeth0610-418.pdf "wikilink") [Supplement](Media_Nmeth0610-418-S1.pdf "wikilink")
+  - S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media_Nmeth0610-418.pdf ) [Supplement](Media_Nmeth0610-418-S1.pdf )
 
 ## Overview of the multi-view fusion plugin
 
-The multi-view fusion plugin is able to combine several 3d acquistions of the same specimen taken from different viewpoints (this includes different tiles) into one single output image. This can be done for single timepoints or an entire timeseries. Prerequisite for the fusion is an aligned dataset, an overview of the complete registration and fusion process can be found [here](SPIM_Registration "wikilink"). The registration can be achieved using one the following plugins:
+The multi-view fusion plugin is able to combine several 3d acquistions of the same specimen taken from different viewpoints (this includes different tiles) into one single output image. This can be done for single timepoints or an entire timeseries. Prerequisite for the fusion is an aligned dataset, an overview of the complete registration and fusion process can be found [here](SPIM_Registration ). The registration can be achieved using one the following plugins:
 
-  - [Bead-based registration](SPIM_Bead_Registration "wikilink")
-  - [Segmentation-based registration](Segmentation-based_registration "wikilink")
+  - [Bead-based registration](SPIM_Bead_Registration )
+  - [Segmentation-based registration](Segmentation-based_registration )
 
 The multi-view fusion plugins offers two registration options:
 
@@ -47,7 +47,7 @@ The fused images will be saved in the *output* directory of the dataset as a col
 
 {% include thumbnail src='/images/pages/Spim multiview dialog1.jpg' title='Shows the first dialog that queries the location of the multi-view files'%}
 
-The multi-view fusion consists of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset. Please note that all the parameters will be looked up in the [bead-based registration](SPIM_Bead_Registration "wikilink") or [segmentation-based registration](segmentation-based_registration "wikilink"), so typically just pressing ok is sufficient, except you process a timeseries. These are the options of the first dialog:
+The multi-view fusion consists of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset. Please note that all the parameters will be looked up in the [bead-based registration](SPIM_Bead_Registration ) or [segmentation-based registration](segmentation-based_registration ), so typically just pressing ok is sufficient, except you process a timeseries. These are the options of the first dialog:
 
   - **SPIM data directory:** Fill in the directory name that contains all the image files (or directories with equally sized 2d image planes). You can either drag\&drop the directory, browse for it or type the name directly.
 

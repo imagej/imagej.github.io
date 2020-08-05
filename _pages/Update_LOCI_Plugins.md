@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Bio-Formats\#Update LOCI Plugins](Bio-Formats#Update_LOCI_Plugins "wikilink")
+1.  REDIRECT [Bio-Formats\#Update LOCI Plugins](Bio-Formats#Update_LOCI_Plugins )

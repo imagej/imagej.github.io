@@ -159,9 +159,9 @@ When the timer in the “Download” column has finished and the state is “Don
 
 ### Prerequisites
 
-If you are new to Macro programming it is suggested to read [Introduction into Macro Programming](Introduction_into_Macro_Programming "wikilink") first. This will provide you with a sufficient introduction to the basics of Macro programming in Fiji.
+If you are new to Macro programming it is suggested to read [Introduction into Macro Programming](Introduction_into_Macro_Programming ) first. This will provide you with a sufficient introduction to the basics of Macro programming in Fiji.
 
-If you opt to use the script editor you may also find [Using the Script Editor](Using_the_Script_Editor "wikilink") useful. Using the script editor is suggested as it supports autocompletion for the functions added by HPC Workflow Manager.
+If you opt to use the script editor you may also find [Using the Script Editor](Using_the_Script_Editor ) useful. Using the script editor is suggested as it supports autocompletion for the functions added by HPC Workflow Manager.
 
 You should also be familiar with the graphical user interface of the HPC Workflow Client.
 

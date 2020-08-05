@@ -7,12 +7,12 @@ categories:
 description: test description
 ---
 
-(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation "wikilink") page)  
-(Return to the main [3D\_Viewer](3D_Viewer "wikilink") page)
+(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation ) page)  
+(Return to the main [3D\_Viewer](3D_Viewer ) page)
 
 ## How to animate the universe and create movies
 
-You can download example source code for this HowTo [here](3D_Viewer__Example_code "wikilink").
+You can download example source code for this HowTo [here](3D_Viewer__Example_code ).
 
 It is very easy to animate the virtual universe and to record the animation, so that it can be stored as a video file and as such easily embedded into presentations.
 

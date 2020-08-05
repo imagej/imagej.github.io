@@ -9,6 +9,6 @@ description: test description
 
 {% include info-box software='ImageJ ' name='Point Picker ' author=' [Philippe Thévenaz](http://bigwww.epfl.ch/thevenaz/) ' filename=' [PC](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.zip)  
 [Macintosh](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.sit)  
-[Unix](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.tar.Z) ' source=' [Java API](http://bigwww.epfl.ch/thevenaz/pointpicker/api/) ' released=' ' latest-version='27 September 2003 ' status='probably not active ' category='[Particle analysis](_Category_Particle_analysis "wikilink") ' website='http://bigwww.epfl.ch/thevenaz/pointpicker/ ' %}
+[Unix](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.tar.Z) ' source=' [Java API](http://bigwww.epfl.ch/thevenaz/pointpicker/api/) ' released=' ' latest-version='27 September 2003 ' status='probably not active ' category='[Particle analysis](_Category_Particle_analysis ) ' website='http://bigwww.epfl.ch/thevenaz/pointpicker/ ' %}
 
  

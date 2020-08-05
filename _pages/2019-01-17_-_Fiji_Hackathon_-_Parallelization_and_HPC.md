@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-From Thursday, January 17, 2019 through Tuesday, January 29, 2019, [VŠB - Technical University of Ostrava](https://www.vsb.cz/en/) hosts \~20 developers at the [IT4Innovations national supercomputing center](https://www.it4i.cz/?lang=en/) in Ostrava, Czech Republic for a [hackathon](hackathon "wikilink") to develop [ImageJ2](ImageJ2 "wikilink") and [Fiji](Fiji "wikilink") core infrastructure and [plugins](plugins "wikilink").
+From Thursday, January 17, 2019 through Tuesday, January 29, 2019, [VŠB - Technical University of Ostrava](https://www.vsb.cz/en/) hosts \~20 developers at the [IT4Innovations national supercomputing center](https://www.it4i.cz/?lang=en/) in Ostrava, Czech Republic for a [hackathon](hackathon ) to develop [ImageJ2](ImageJ2 ) and [Fiji](Fiji ) core infrastructure and [plugins](plugins ).
 
 ## Useful links
 

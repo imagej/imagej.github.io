@@ -16,7 +16,7 @@ For a verbose list of keyboard shortcuts, call {% include bc content='Plugins | 
 
 ## The Command Launcher
 
-Use {% include key content='Ctrl' %}+{% include key content='L' %} (on Mac, {% include key content='Command' %}+{% include key content='L' %}) to open the [Command Launcher](Using_the_Command_Launcher "wikilink"), to call menu entries by name.
+Use {% include key content='Ctrl' %}+{% include key content='L' %} (on Mac, {% include key content='Command' %}+{% include key content='L' %}) to open the [Command Launcher](Using_the_Command_Launcher ), to call menu entries by name.
 
 ## Recent Commands
 

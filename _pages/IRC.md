@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Chat\#IRC](Chat#IRC "wikilink")
+1.  REDIRECT [Chat\#IRC](Chat#IRC )

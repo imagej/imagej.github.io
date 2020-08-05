@@ -15,26 +15,26 @@ description: test description
 
 ## The SciJava component collection
 
-The following component layers are part of the **[SciJava component collection](Architecture "wikilink")**:
+The following component layers are part of the **[SciJava component collection](Architecture )**:
 
-  - **SciJava** - foundational layer unspecific to image processing, including the [SciJava Common](SciJava_Common "wikilink") shared library with powerful plugin framework and application container, and plugins built on it.
-  - [ImgLib2](ImgLib2 "wikilink") - core libraries for N-dimensional image processing.
-  - [SCIFIO](SCIFIO "wikilink") - core libraries for N-dimensional image I/O.
-  - [ImageJ2](ImageJ2 "wikilink") - core libraries and application for N-dimensional image processing.
-  - [Fiji](Fiji "wikilink") - "batteries-included" distribution of ImageJ, bundling a lot of plugins which facilitate scientific image analysis.
-  - [BigDataViewer](BigDataViewer "wikilink") - re-slicing browser and Fiji plugin for terabyte-sized multi-view image sequences
-  - [TrakEM2](TrakEM2 "wikilink") - Fiji plugin suite for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
-  - [Bio-Formats](Bio-Formats "wikilink") - libraries and ImageJ plugins for life sciences image format I/O.
+  - **SciJava** - foundational layer unspecific to image processing, including the [SciJava Common](SciJava_Common ) shared library with powerful plugin framework and application container, and plugins built on it.
+  - [ImgLib2](ImgLib2 ) - core libraries for N-dimensional image processing.
+  - [SCIFIO](SCIFIO ) - core libraries for N-dimensional image I/O.
+  - [ImageJ2](ImageJ2 ) - core libraries and application for N-dimensional image processing.
+  - [Fiji](Fiji ) - "batteries-included" distribution of ImageJ, bundling a lot of plugins which facilitate scientific image analysis.
+  - [BigDataViewer](BigDataViewer ) - re-slicing browser and Fiji plugin for terabyte-sized multi-view image sequences
+  - [TrakEM2](TrakEM2 ) - Fiji plugin suite for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
+  - [Bio-Formats](Bio-Formats ) - libraries and ImageJ plugins for life sciences image format I/O.
 
-All components in this collection are managed by SciJava's [Bill of Materials](Bill_of_Materials "wikilink") to make it easier for downstream components to use them without version conflicts.
+All components in this collection are managed by SciJava's [Bill of Materials](Bill_of_Materials ) to make it easier for downstream components to use them without version conflicts.
 
 ## The SciJava pledge
 
-The following projects are part of the **[SciJava pledge](_Category_SciJava "wikilink")** to work together, reuse code and synergize wherever possible:
+The following projects are part of the **[SciJava pledge](_Category_SciJava )** to work together, reuse code and synergize wherever possible:
 
 |                                      |                                                                             |                                                               |                                                               |                                                                                                      |
 | ------------------------------------ | --------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | {% include logo content='ImageJ2' %} | <a href="CellProfiler"><img src="/images/pages/Cellprofiler-logo.png" height="64px"/></a> | <a href="KNIME"><img src="/images/pages/Knime-logo.jpg" height="54px"/></a> | <a href="OMERO"><img src="/images/pages/Omero-logo.png" height="32px"/></a> | <a href="https://github.com/scenerygraphics/scenery"><img src="/images/pages/Scenery-logo.png" height="72px"/></a> |
 | {% include logo content='Fiji' %}    | <a href="Icy"><img src="/images/pages/Icy-logo.png" height="48px"/></a>                   | {% include logo content='Micro-Manager' size='48px ' %}  | {% include logo content='VCell' size='48px ' %}          | <a href="Bio-Formats"><img src="/images/pages/Bio-formats-logo.png" height="28px"/></a>                            |
 
-See the [Architecture](Architecture "wikilink") and [Governance](Governance "wikilink") pages, as well as the [SciJava web site](https://scijava.org/), for further details.
+See the [Architecture](Architecture ) and [Governance](Governance ) pages, as well as the [SciJava web site](https://scijava.org/), for further details.

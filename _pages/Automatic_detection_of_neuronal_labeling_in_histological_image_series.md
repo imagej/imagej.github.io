@@ -33,7 +33,7 @@ After installation, the macros are available from the Plugins -\> Macros menu. I
 
 ### **1. Detection of labeling in series of microscopic images**
 
-The NeSys Labeling Detection macro uses the CDgetPrimaryChannel plugin to perform [Colour Deconvolution](plugin_color_colour_deconvolution_start "wikilink") on series of color (RGB) images using a shortened version of the plugin from G. Landini based on the method of \[http://www.ncbi.nlm.nih.gov/pubmed/11531144>| A.C. Ruifrok\]. Vectors for Colour Deconvolution are expected to be acquired in advance using the original plugin and saved in the colourdeconvolution.txt file located in the Imagej/plugins/Macros folder. The parameter file is formatted according to the example provided by Benjamin Pavie (bpavie) on \[<https://github.com/bpavie/Colour_Deconvolution/tree/externaltxt/src/main/java/sc/fiji/colourDeconvolution| GitHub\]. Requires ImageJ version 1.39f or later.
+The NeSys Labeling Detection macro uses the CDgetPrimaryChannel plugin to perform [Colour Deconvolution](plugin_color_colour_deconvolution_start ) on series of color (RGB) images using a shortened version of the plugin from G. Landini based on the method of \[http://www.ncbi.nlm.nih.gov/pubmed/11531144>| A.C. Ruifrok\]. Vectors for Colour Deconvolution are expected to be acquired in advance using the original plugin and saved in the colourdeconvolution.txt file located in the Imagej/plugins/Macros folder. The parameter file is formatted according to the example provided by Benjamin Pavie (bpavie) on \[<https://github.com/bpavie/Colour_Deconvolution/tree/externaltxt/src/main/java/sc/fiji/colourDeconvolution| GitHub\]. Requires ImageJ version 1.39f or later.
 
 <u>We recorded Colour Deconvolution vectors for the following staining combinations (see colourdeconvolution.txt):</u> <a href="|Staining combinations"><img src="/images/pages/Staining-combinations.png" width="600px"/></a>
 
@@ -66,7 +66,7 @@ The NeSys Pixel Counter macro uses the NeSys Pixel Counter plugin to record the 
 
 ## See also
 
-[Colour Deconvolution](plugin_color_colour_deconvolution_start "wikilink") [Optimizing handling of 3D unitary optical density vectors with polar coordinates](plugin_color_colour_deconvolution_optimizing_selection_of_unitary_optical_density_vectors_start "wikilink")
+[Colour Deconvolution](plugin_color_colour_deconvolution_start ) [Optimizing handling of 3D unitary optical density vectors with polar coordinates](plugin_color_colour_deconvolution_optimizing_selection_of_unitary_optical_density_vectors_start )
 
 ## How to cite
 

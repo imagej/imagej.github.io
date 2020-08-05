@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [User:Joshmoore](User_Joshmoore "wikilink")
+1.  REDIRECT [User:Joshmoore](User_Joshmoore )

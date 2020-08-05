@@ -12,24 +12,24 @@ description: test description
 
 ## Introduction.
 
-Developing a custom view for [TrackMate](TrackMate "wikilink") is *hard* and painful. Of course it must be a graphical representation of the model: the tracking results with all intermediate steps. If you want to build something really useful, it has to be interactive and should allow modifying the model. And be aware that modifications might happen somewhere else. Performance is also critical: since it stands at the user interface, it must be responsive, and possibly deal with large models (millions of detections).
+Developing a custom view for [TrackMate](TrackMate ) is *hard* and painful. Of course it must be a graphical representation of the model: the tracking results with all intermediate steps. If you want to build something really useful, it has to be interactive and should allow modifying the model. And be aware that modifications might happen somewhere else. Performance is also critical: since it stands at the user interface, it must be responsive, and possibly deal with large models (millions of detections).
 
 Honestly, I think that one of the main good reason to extend TrackMate is that there is ready some views available.
 
 Still, it is perfectly possible to build something useful without fulfilling all these requirements. And I still hope that someday someone will contribute a view that displays the model in the orthogonal slicer of Fiji.
 
-This tutorial introduces the <u>view interfaces</u> of TrackMate, and since they deal with user interactions, we will also review the <u>TrackMate event system</u>. As for the [SciJava](SciJava "wikilink") discovery system, we will see how to make a TrackMate module available in TrackMate, but not visible to the user, using the `visible` parameter.
+This tutorial introduces the <u>view interfaces</u> of TrackMate, and since they deal with user interactions, we will also review the <u>TrackMate event system</u>. As for the [SciJava](SciJava ) discovery system, we will see how to make a TrackMate module available in TrackMate, but not visible to the user, using the `visible` parameter.
 
 ## A custom TrackMate view.
 
-Like for the [spot feature analyzers](How_to_write_your_own_spot_feature_analyzer_algorithm_for_TrackMate "wikilink"), a TrackMate view is separated in two parts, that each extends a different interface:
+Like for the [spot feature analyzers](How_to_write_your_own_spot_feature_analyzer_algorithm_for_TrackMate ), a TrackMate view is separated in two parts, that each extends a different interface:
 
   - The {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/visualization/TrackMateModelView.java ' label='TrackMateModelView ' %}, that is the actual view of the model. All the hard work is done here.
-  - The {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/visualization/ViewFactory.java ' label='ViewFactory ' %} that is a factory in charge of instantiating the view and of the integration in TrackMate. This interface extends the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/TrackMateModule.java ' label='TrackMateModule ' %} interface, so we expect to find there some of the methods we discussed earlier, and the [SciJava](SciJava "wikilink") annotation.
+  - The {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/visualization/ViewFactory.java ' label='ViewFactory ' %} that is a factory in charge of instantiating the view and of the integration in TrackMate. This interface extends the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/TrackMateModule.java ' label='TrackMateModule ' %} interface, so we expect to find there some of the methods we discussed earlier, and the [SciJava](SciJava ) annotation.
 
 In this tutorial, we will build something simple. We will limit ourselves to develop a view that simple messages the user every time something happens in TrackMate. For instance, when the spots are detected, how many there are; if he selects spots and edges, how many of them; etc. And we will just reuse the Fiji log window for this, which will save us from the full development of a graphical view of the model.
 
-But because this is a bit limited, we will not let the user pick this view as the main one, just after the detection step. A [SciJava](SciJava "wikilink") parameter will be used to make it invisible in the view selection menu. To make good use of it, we still need some way to launch this view, but this will be the subject of the next tutorial.
+But because this is a bit limited, we will not let the user pick this view as the main one, just after the detection step. A [SciJava](SciJava ) parameter will be used to make it invisible in the view selection menu. To make good use of it, we still need some way to launch this view, but this will be the subject of the next tutorial.
 
 Right now, we just focus on building the view.
 
@@ -203,7 +203,7 @@ public class EventLoggerViewFactory implements ViewFactory
 
 ![TrackMate\_CustomView\_2.png](/images/pages/TrackMate CustomView 2.png "TrackMate_CustomView_2.png")
 
-Just note that the [SciJava](SciJava "wikilink") annotation mention the `ViewFactory` class. This is enough to have the view selectable in the GUI menu:
+Just note that the [SciJava](SciJava ) annotation mention the `ViewFactory` class. This is enough to have the view selectable in the GUI menu:
 
 Note that this time, TrackMate good use of the `getName()` and `getInfoText()` methods.
 
@@ -226,10 +226,10 @@ So editing the header of our ViewFactory to make it look like:
 public class EventLoggerViewFactory implements ViewFactory
 ```
 
-is enough to hide it in the menu. This is different from the `enabled` parameter we saw in [one the previous tutorial](How_to_write_your_own_track_feature_analyzer_algorithm_for_TrackMate "wikilink"). The factory is instantiated and available in TrackMate; it just does not show up in the menu.
+is enough to hide it in the menu. This is different from the `enabled` parameter we saw in [one the previous tutorial](How_to_write_your_own_track_feature_analyzer_algorithm_for_TrackMate ). The factory is instantiated and available in TrackMate; it just does not show up in the menu.
 
 But how could I make use of it then? you want to ask. Fortunately, this is just the subject of the next tutorial, on TrackMate actions. See you there.
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 10:51, 17 March 2014 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez )) 10:51, 17 March 2014 (CDT)
 
 

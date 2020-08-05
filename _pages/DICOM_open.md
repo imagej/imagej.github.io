@@ -7,7 +7,7 @@ categories: Import-Export‏‎,Plugins
 description: test description
 ---
 
-{% include info-box software='ImageJ1 ' name='DICOM\_open ' author='Fred Damen ' filename='DICOM\_open.jar ' source=' [DICOM\_open.zip](https://imagej.net/_images/5/56/DICOM_open.zip) ' released='1 April 2019 ' status='stable ' category='[Import-Export‏‎](_Category_Import-Export‏‎ "wikilink") ' website=' ' %}
+{% include info-box software='ImageJ1 ' name='DICOM\_open ' author='Fred Damen ' filename='DICOM\_open.jar ' source=' [DICOM\_open.zip](https://imagej.net/_images/5/56/DICOM_open.zip) ' released='1 April 2019 ' status='stable ' category='[Import-Export‏‎](_Category_Import-Export‏‎ ) ' website=' ' %}
 
 The DICOM\_open plugin provides additional functionality on top of the DICOM plugin. There were three main impetuses for developing this plugin, first was to be able to search the DICOM files for a series to open, second was to open the series and get at the actual voxel data, and, third was to properly arrange the images in a hyperstack.
 

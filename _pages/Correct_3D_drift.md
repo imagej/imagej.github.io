@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Correct 3D Drift](Correct_3D_Drift "wikilink")
+1.  REDIRECT [Correct 3D Drift](Correct_3D_Drift )

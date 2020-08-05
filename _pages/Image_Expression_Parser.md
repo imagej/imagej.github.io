@@ -24,9 +24,9 @@ This plugin parses arbitrary mathematical expressions and compute results using 
 
 where A,B and C are opened images of the same dimensions.
 
-As of version 2.x, pixel per pixel based operations are supported and [Imglib](Imglib "wikilink") algorithm are supported.
+As of version 2.x, pixel per pixel based operations are supported and [Imglib](Imglib ) algorithm are supported.
 
-The parsing ability is provided by the JEP library: Java Expression Parser v.jep-2.4.1-ext-1.1.1-gpl. This is the last version released under the GPL by its authors Nathan Funk and Richard Morris, see [Singular System](http://www.singularsys.com/jep/). Internally, this plugin uses [Imglib](Imglib "wikilink") to deal with images.
+The parsing ability is provided by the JEP library: Java Expression Parser v.jep-2.4.1-ext-1.1.1-gpl. This is the last version released under the GPL by its authors Nathan Funk and Richard Morris, see [Singular System](http://www.singularsys.com/jep/). Internally, this plugin uses [Imglib](Imglib ) to deal with images.
 
 Internally, images are handled by copying them to a new float type image, so as to avoid clipping effect. The result image returned is of float type as well.
 
@@ -558,7 +558,7 @@ result_imp.resetDisplayRange()
 result_imp.updateAndDraw()
 ```
 
-Here is another example in [Javascript](Javascript "wikilink") contributed by Jeff Hanson:
+Here is another example in [Javascript](Javascript ) contributed by Jeff Hanson:
 
 ``` javascript
 // This script was created as an javascript equivalent of the Python example here:
@@ -599,6 +599,6 @@ resultImp.show();
 
 ## Wish list for this plugin
 
-We are interested into knowing how we should extend this plugin so that it suits your need. Tell us in the [discussion page](Talk_Image_Expression_Parser "wikilink").
+We are interested into knowing how we should extend this plugin so that it suits your need. Tell us in the [discussion page](Talk_Image_Expression_Parser ).
 
 

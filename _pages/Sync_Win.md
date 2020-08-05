@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Sync Windows](Sync_Windows "wikilink")
+1.  REDIRECT [Sync Windows](Sync_Windows )

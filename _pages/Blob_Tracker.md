@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Low Light Tracking Tool](Low_Light_Tracking_Tool "wikilink")
+1.  REDIRECT [Low Light Tracking Tool](Low_Light_Tracking_Tool )

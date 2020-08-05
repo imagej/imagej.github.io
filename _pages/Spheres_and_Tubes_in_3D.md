@@ -7,7 +7,7 @@ categories: Plugins,Unmaintained
 description: test description
 ---
 
-An example ImageJ plugin illustrating how to create and display 3D tubes and 3D spheres in the [3D Viewer](3D_Viewer "wikilink").
+An example ImageJ plugin illustrating how to create and display 3D tubes and 3D spheres in the [3D Viewer](3D_Viewer ).
 
 |                                                                                                                             |
 | --------------------------------------------------------------------------------------------------------------------------- |

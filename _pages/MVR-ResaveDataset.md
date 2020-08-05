@@ -29,6 +29,6 @@ Some log output shows the resaving process.
 
 ## View with BigDataViewer
 
-Finally you can use [BigDataViewer](BigDataViewer "wikilink") to view your data set.
+Finally you can use [BigDataViewer](BigDataViewer ) to view your data set.
 
 ![MVR\_resave3.png](/images/pages/MVR resave3.png "MVR_resave3.png")

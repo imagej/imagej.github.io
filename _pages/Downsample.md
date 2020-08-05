@@ -148,8 +148,8 @@ else
 
 ## See also
 
-  - [Javascript Scripting](Javascript_Scripting "wikilink")
-  - [Scripting Help](Scripting_Help "wikilink")
-  - [Scripting\_comparisons](Scripting_comparisons "wikilink")
+  - [Javascript Scripting](Javascript_Scripting )
+  - [Scripting Help](Scripting_Help )
+  - [Scripting\_comparisons](Scripting_comparisons )
 
 

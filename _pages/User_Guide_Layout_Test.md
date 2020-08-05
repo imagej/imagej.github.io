@@ -73,7 +73,7 @@ Press the {% include key content='L' %} key to access ImageJ"s most useful featu
 
 
 {% capture tip%}
-Press the {% include key content='L' %} key to access ImageJ"s most useful feature: the [Command Finder](Command_Finder "wikilink").
+Press the {% include key content='L' %} key to access ImageJ"s most useful feature: the [Command Finder](Command_Finder ).
 {% endcapture %}
 {% include tip tip=tip %}
 

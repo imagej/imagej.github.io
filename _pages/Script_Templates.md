@@ -7,13 +7,13 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='scripting' %}Templates are pre-written scripts in a particular scripting language. They can be distributed as any other plugin, and automatically discovered by the [Script Editor](Script_Editor "wikilink"). Templates thus present an excellent way to demonstrate a particular operation to a wide audience of users.
+{% include learn content='scripting' %}Templates are pre-written scripts in a particular scripting language. They can be distributed as any other plugin, and automatically discovered by the [Script Editor](Script_Editor ). Templates thus present an excellent way to demonstrate a particular operation to a wide audience of users.
 
-Available templates are sorted by language under the `Templates` menu of the [Script Editor](Script_Editor "wikilink"). The contents of a template will be loaded into the editor window when selected. The script can then be inspected, executed and modified as normal.
+Available templates are sorted by language under the `Templates` menu of the [Script Editor](Script_Editor ). The contents of a template will be loaded into the editor window when selected. The script can then be inspected, executed and modified as normal.
 
 # Adding a new template
 
-The [Script Editor](Script_Editor "wikilink") will automatically search the `script_templates` directory and register any discovered scripts as templates. For example, a [Mavenized](Maven "wikilink") project could add a sample script in `src/main/resources/script_templates` and it would be packaged into the appropriate location of the resultant `.jar`.
+The [Script Editor](Script_Editor ) will automatically search the `script_templates` directory and register any discovered scripts as templates. For example, a [Mavenized](Maven ) project could add a sample script in `src/main/resources/script_templates` and it would be packaged into the appropriate location of the resultant `.jar`.
 
 For examples of how the existing templates are structured and distributed, take a look at the [`imagej-legacy` project](https://github.com/imagej/imagej-legacy/tree/master/src/main/resources/script_templates) (which maintains the script templates that were previously shipped with Fiji's script editor) as well as the [`imagej-scripting` project](https://github.com/imagej/imagej-scripting).
 

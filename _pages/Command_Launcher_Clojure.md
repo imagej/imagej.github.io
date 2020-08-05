@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Clojure Scripting](Clojure_Scripting "wikilink")
+1.  REDIRECT [Clojure Scripting](Clojure_Scripting )

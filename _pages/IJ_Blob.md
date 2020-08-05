@@ -39,7 +39,7 @@ If you are using IJBlob in a scientific publication, please cite:
 
 *Wagner, T and Lipinski, H 2013. IJBlob: An ImageJ Library for Connected Component Analysis and Shape Analysis. Journal of Open Research Software 1(1):e6, DOI: http://dx.doi.org/10.5334/jors.ae*
 
-The [Shape Filter](Shape_Filter "wikilink") plugin uses the ij-blob library to characterize and filter objects in binary scenes by its shape. Therefore, several features are calculated as shown below.
+The [Shape Filter](Shape_Filter ) plugin uses the ij-blob library to characterize and filter objects in binary scenes by its shape. Therefore, several features are calculated as shown below.
 
 ## Features of IJBlob
 

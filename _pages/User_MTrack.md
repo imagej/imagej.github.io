@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [User:VarunKapoor](User_VarunKapoor "wikilink")
+1.  REDIRECT [User:VarunKapoor](User_VarunKapoor )

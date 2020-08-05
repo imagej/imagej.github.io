@@ -31,6 +31,11 @@ This plugin and technique is described by its author (and colleagues) in the fol
 
 {% include citation last='Prodanov ' first='D. ' last2='Heeroma ' first2='J. ' last3='Marani ' first3='E. ' title='Automatic morphometry of synaptic boutons of cultured cells using granulometric analysis of digital images ' journal='Journal of Neuroscience Methods ' volume='151 ' pages='168-177 ' year='2006 ' PMID='16157388 ' %}
 
-Image:Gran\_an\_example\_1.png|Original segmented image Image:Gran\_an\_example\_2.png|Selecting blobs of radius 10 to 12 px Image:Gran\_an\_example\_3.png|Selecting blobs of radius 5 to 7 px Image:Gran\_an\_example\_4.png|The three images merged
+
+{% capture content%}
+
+{% endcapture %}
+{% include gallery content=content%}
+
 
  

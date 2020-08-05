@@ -15,6 +15,7 @@ txt_capture_start_end = txt_liquid_linebreak_end
 txt_capture_end = "%JJ%"
 txt_youtube = "%KK%"
 txt_single_quote = "%LL%"
+txt_newline = "%MM"
 
 template_regex = r'(((?<=\n)[ ]*)*(?<!<nowiki>)\{\{[\n ]*([A-Za-z0-9_]*)[ \n]*\:?\|?[ \n]*(([\s\S]*?))\}\})'
 template_parameter_regex = r'(\w+([ ]\w+)*)[ ]*=[ ]*([^|]*)'
@@ -33,7 +34,8 @@ global_shadows = [
     ("\n{% capture ", txt_capture_start),
     ("\n%}\n", txt_capture_start_end),
     ("https://www.youtube.com/embed/", txt_youtube),
-    ("\\\'", txt_single_quote)
+    ("\\\'", txt_single_quote),
+    ("\n", txt_newline)
 ]
 
 def read_file(file_path):
@@ -136,6 +138,8 @@ def process_file(str_content):
     # TODO parse SWITCHtube template, removing for now because it creates liquid issues
     content_tmp = re.sub(r'{{[\\]*#widget:SWITCHtube\|[^}]*}}', r'TODO GOOGLE SPREADSHEET WIDGET', content_tmp)
 
+    content_tmp = re.sub(r'\<gallery\>[ \n]*([^\<]*(?!\<\/gallery\>)*)\<\/gallery\>', gallery_match, content_tmp)
+
     content_tmp = regex.sub(r'\[((?>[^\[\]]+|(?R))*)\]', file_match, content_tmp)
 
     # replace '{{ stuff }}' mediawiki syntax with '{% include stuff %}` liquid
@@ -151,6 +155,24 @@ def process_file(str_content):
 
 def youtube_match(match):
     return txt_include_start + 'youtube url' + txt_param_start + txt_youtube + match.group(1) + txt_param_end + txt_liquid_end
+
+
+def gallery_content_match(gallery_content):
+    imgs = re.findall(r'([^\n|]*)\|caption\|([^\n]*)', gallery_content)
+    res = ""
+    for match in imgs:
+        path = match[0]
+        if path.startswith("File:"):
+            filename = path.replace('File:', '')
+            filename = filename[0].capitalize() + filename[1:]
+            path = '/images/pages/' + filename
+        res += path + ' | ' + match[1] + txt_newline
+    return res[:-len(txt_newline)]
+
+
+def gallery_match(match):
+    capture = txt_capture_start + 'content' + txt_capture_start_end + gallery_content_match(match.group(1)) + txt_capture_end
+    return capture + txt_include_start + 'gallery content' + txt_param_var_start + 'content' + txt_liquid_linebreak_end;
 
 
 def file_match(match):
@@ -515,7 +537,7 @@ def convert(path_in, path_out, layout, title):
         # do replacements in md format
         content_tmp = reveal_includes(content_tmp)
         content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
-        content_tmp = re.sub(r'(\[[^\]]*\]\()((?!http)(?!mailto\:)[^\"\)]*)((?:\"[^\"]*\")?\))', fix_link_match, content_tmp)
+        content_tmp = re.sub(r'((?<!\!)\[[^\]]*\]\()((?!#)(?!http)(?!mailto\:)(?:[^\)\"]|(?:\\\)))*)([.]*(?:\"[^\"]*\")?(?<!\\)\))', fix_link_match, content_tmp)
         content_tmp = re.sub(r'<img src=\"(?!http)(?!/images/pages/)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
         content_tmp = re.sub(r'(\!\[[^\]]*\]\()((?!\/images\/pages\/)[^\"\)]*)([ \n]*\"[^\"]*\"[ ]*\))', fix_md_image, content_tmp)
 
@@ -540,9 +562,12 @@ def convert(path_in, path_out, layout, title):
 
 
 def fix_link_match(match):
+    if match.group(1).startswith('[File:'):
+        # return '![/images/pages/' + match.group(2)
+        return match.group(0)
     if match.group(1).startswith('[Category:'):
         return ''
-    return match.group(1) + match.group(2).replace(":", "_").replace("\'", "").replace("\"", "") + match.group(3)
+    return match.group(1) + match.group(2).replace(":", "_").replace("\'", "").replace("\"", "").replace("\(", "").replace("\)", "") + match.group(3).replace("\"wikilink\"", "")
 
 
 def fix_md_image(match):

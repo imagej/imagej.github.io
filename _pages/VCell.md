@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Virtual Cell](Virtual_Cell "wikilink")
+1.  REDIRECT [Virtual Cell](Virtual_Cell )

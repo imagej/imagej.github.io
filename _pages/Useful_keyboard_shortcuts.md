@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Keyboard shortcuts](Keyboard_shortcuts "wikilink")
+1.  REDIRECT [Keyboard shortcuts](Keyboard_shortcuts )

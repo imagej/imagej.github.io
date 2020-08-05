@@ -7,7 +7,7 @@ categories: Tutorials
 description: test description
 ---
 
-<i>This tutorial is brought to you by Joao Firmino, Knust lab, MPI-CBG. It relates how to correct for the drift of your biological samples during long-term timelapse imaging for subsequent analysis using Fiji. Comments on the content of this tutorial are welcome in the [disscussion page](Talk_Correcting_drift_in_FRAP_experiments&action "wikilink"). </i>
+<i>This tutorial is brought to you by Joao Firmino, Knust lab, MPI-CBG. It relates how to correct for the drift of your biological samples during long-term timelapse imaging for subsequent analysis using Fiji. Comments on the content of this tutorial are welcome in the [disscussion page](Talk_Correcting_drift_in_FRAP_experiments&action ). </i>
 
 ## Fluorescence Recovery After Photobleaching in Drosophila embryos
 
@@ -25,7 +25,7 @@ Now you have to establish the duration of the experiment - this depends on the k
 
 Load the 4 different time series in Fiji.
 
-The next step will be to unite the 4 movies in a single one. For this I use the **Concatenator plugin** for ImageJ which can be found here (https://imagej.net/plugins/concatenator.html). Once you have done this, you should carefully look at your specimen. If it has moved during image acquisition, so will have your bleaching ROI. You can minimize this by using the [Linear Stack Alignment with SIFT](Linear_Stack_Alignment_with_SIFT "wikilink") plugin designed by Stephan Saalfeld which basically compares a frame with its previous one and tries to compensate eventual movement by rigidly moving the whole image so that they better overlap. This way you are not playing around with the fluorescence intensity values and you do not have to manually adjusting your ROI frame by frame. Of course, this plugin does not always work - if your sample moved a lot or if the signal does not allow for efficient comparison, the resulting movie will be pointless.
+The next step will be to unite the 4 movies in a single one. For this I use the **Concatenator plugin** for ImageJ which can be found here (https://imagej.net/plugins/concatenator.html). Once you have done this, you should carefully look at your specimen. If it has moved during image acquisition, so will have your bleaching ROI. You can minimize this by using the [Linear Stack Alignment with SIFT](Linear_Stack_Alignment_with_SIFT ) plugin designed by Stephan Saalfeld which basically compares a frame with its previous one and tries to compensate eventual movement by rigidly moving the whole image so that they better overlap. This way you are not playing around with the fluorescence intensity values and you do not have to manually adjusting your ROI frame by frame. Of course, this plugin does not always work - if your sample moved a lot or if the signal does not allow for efficient comparison, the resulting movie will be pointless.
 
 Once you have an aligned movie you can draw the bleaching ROI and run **Plot Z-axis profile** (under {% include bc content='Images | Stacks'%}). This will not only show you a graph with the mean intensity values over time but will also open a measurement window with raw data. Copy these values to an excel spreadsheet. You still have to normalize these values - the acquisition of images also bleaches somehow the sample and this effect has to be minimized. For that, all you need to do is draw a non-bleached ROI and take out all its values using the above mentioned method.
 
@@ -33,6 +33,6 @@ You can normalize your values by using the following equation:
 
 \(I_{\text{norm}} = \frac{ I_{\text{bleach}} - I_{\text{nonbleach}} }{ \max (I_{\text{bleach}}-I_{\text{nonbleach}})-\min (I_{\text{bleach}}-I_{\text{nonbleach}}) }\)
 
-You will get values between 0 and 1 already normalized. All you have to do now is to plot your normalized values against time and you will get a rough curve of recovery. If you want to further analyse this you will have to fit this curve... For this, you can always talk to the Image Processing Facility in house, or if you already have a good knowledge of [MATLAB](MATLAB "wikilink") do it yourself...
+You will get values between 0 and 1 already normalized. All you have to do now is to plot your normalized values against time and you will get a rough curve of recovery. If you want to further analyse this you will have to fit this curve... For this, you can always talk to the Image Processing Facility in house, or if you already have a good knowledge of [MATLAB](MATLAB ) do it yourself...
 
 

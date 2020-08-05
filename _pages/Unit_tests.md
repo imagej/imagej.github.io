@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Architecture\#Unit\_tests](Architecture#Unit_tests "wikilink")
+1.  REDIRECT [Architecture\#Unit\_tests](Architecture#Unit_tests )

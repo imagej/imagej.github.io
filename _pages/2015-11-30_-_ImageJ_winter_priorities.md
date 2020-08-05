@@ -7,7 +7,7 @@ categories: ImageJ2,News
 description: test description
 ---
 
-Here is a status update from the ImageJ team at [LOCI](LOCI "wikilink"): where we're at, what's next, and what tasks we see as the most important to keep ImageJ moving forward.
+Here is a status update from the ImageJ team at [LOCI](LOCI ): where we're at, what's next, and what tasks we see as the most important to keep ImageJ moving forward.
 
 ## Top priority
 
@@ -19,12 +19,12 @@ On the technical side, {% include person content='Rueden' %} just wrote the firs
 
 In the coming months we have several projects of interest. In approximate order of our priority:
 
-  - [SCIFIO blockization](https://github.com/scifio/scifio/tree/blocks-are-so-plane) - better-integrating the [ImgLib2](ImgLib2 "wikilink") data model and moving from Planes to a general block-based API
+  - [SCIFIO blockization](https://github.com/scifio/scifio/tree/blocks-are-so-plane) - better-integrating the [ImgLib2](ImgLib2 ) data model and moving from Planes to a general block-based API
   - [Rich images](https://github.com/imagej/imagej-common/tree/rich-image) - a polishing pass at the ImageJ data model
   - [Robust-IO](https://github.com/scifio/scifio/tree/location-robust-io) - generalizing image I/O sources
-  - Increasing the sophistication of [ImageJ Ops](ImageJ_Ops "wikilink")
+  - Increasing the sophistication of [ImageJ Ops](ImageJ_Ops )
   - [SciJava-Common 3.x](https://github.com/scijava/scijava-common/milestones/3.0.0)
-  - Increased collaboration with KNIME ([LOCI](LOCI "wikilink") is pleased to have {% include person content='gab1one' %} on loan from Konstanz\!)
+  - Increased collaboration with KNIME ([LOCI](LOCI ) is pleased to have {% include person content='gab1one' %} on loan from Konstanz\!)
   - Improved {% include github org='imagej ' repo='imagej-legacy ' issue='86 ' label='ImageJ1-ImageJ2 synchronization ' %}
   - [Formalizing developer roles and responsibilities](http://forum.imagej.net/t/project-developer-roles/206) (which will make an "Adopt-a-plugin" program possible\!)
 
@@ -36,7 +36,7 @@ In the coming months we have several projects of interest. In approximate order 
 
 ## Continued support
 
-While not directly tied to any one issue or reportable task, [LOCI](LOCI "wikilink") will continue to support:
+While not directly tied to any one issue or reportable task, [LOCI](LOCI ) will continue to support:
 
   - The ImageJ community—especially with the success of the new [forum](http://forum.imagej.net/)
   - [LOCI](http://loci.wisc.edu/) scientific collaborations

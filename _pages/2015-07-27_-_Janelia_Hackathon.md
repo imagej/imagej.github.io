@@ -7,15 +7,15 @@ categories: News,ImageJ2,SCIFIO,Hackathons
 description: test description
 ---
 
-From Sunday, July 27, 2015 through Friday, July 31, 2015, {% include person content='Saalfeld' %} at HHMI Janelia in Ashburn, Virginia hosted [LOCI](LOCI "wikilink")'s {% include person content='Rueden' %} and {% include person content='Hinerm' %} for a hackathon to unify [SCIFIO](SCIFIO "wikilink")/[ImgLib2](ImgLib2 "wikilink") development efforts (with MPI-CBG's {% include person content='Pietzsch' %}), improve support for the [Janelia KLB format](https://bitbucket.org/fernandoamat/keller-lab-block-filetype) (with Janelia's Burkhard Hoeckendorf), and improve the development tools available for [Fiji](Fiji "wikilink") developers.
+From Sunday, July 27, 2015 through Friday, July 31, 2015, {% include person content='Saalfeld' %} at HHMI Janelia in Ashburn, Virginia hosted [LOCI](LOCI )'s {% include person content='Rueden' %} and {% include person content='Hinerm' %} for a hackathon to unify [SCIFIO](SCIFIO )/[ImgLib2](ImgLib2 ) development efforts (with MPI-CBG's {% include person content='Pietzsch' %}), improve support for the [Janelia KLB format](https://bitbucket.org/fernandoamat/keller-lab-block-filetype) (with Janelia's Burkhard Hoeckendorf), and improve the development tools available for [Fiji](Fiji ) developers.
 
 ## Executive summary
 
   - SCIFIO is headed in a great direction:
-      - Will integrate it better into modern, powerful software tools including ImgLib2 and [BigDataViewer](BigDataViewer "wikilink").
-      - Big step toward breaking the limitations of [ImageJ1](ImageJ1 "wikilink"), in particular the 2GPix plane barrier and limited image types.
+      - Will integrate it better into modern, powerful software tools including ImgLib2 and [BigDataViewer](BigDataViewer ).
+      - Big step toward breaking the limitations of [ImageJ1](ImageJ1 ), in particular the 2GPix plane barrier and limited image types.
       - Will make possible things like more transparent and rapid ability to work with multi-position and multi-angle datasets (mosaics, light sheet, etc.).
-  - Stability of [ImageJ](ImageJ "wikilink") and Fiji—and other applications built on [SciJava](SciJava "wikilink") components—is now easier to validate.
+  - Stability of [ImageJ](ImageJ ) and Fiji—and other applications built on [SciJava](SciJava ) components—is now easier to validate.
 
 ## Technical discussions
 

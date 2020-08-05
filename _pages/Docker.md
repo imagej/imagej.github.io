@@ -7,7 +7,7 @@ categories: Docker
 description: test description
 ---
 
-[Docker](https://www.docker.com/whatisdocker/) provides a platform for distribution of application state. This facilitates the highest level of scientific [reproducibility](reproducibility "wikilink") - as a Docker image can bundle operating system, Java version, update site and plugin state, and even sample data. These images can then be reused by remote users and scientists worldwide, with no dependency concerns (beyond Docker itself).
+[Docker](https://www.docker.com/whatisdocker/) provides a platform for distribution of application state. This facilitates the highest level of scientific [reproducibility](reproducibility ) - as a Docker image can bundle operating system, Java version, update site and plugin state, and even sample data. These images can then be reused by remote users and scientists worldwide, with no dependency concerns (beyond Docker itself).
 
 # Pre-Requisites
 
@@ -33,7 +33,7 @@ The following sections cover [headless](#Running_headless "wikilink") and [graph
 
 # Running headless
 
-Running ImageJ headlessly in Docker is not much different than normal headless operation - see the [headless guide](Headless "wikilink") for general information. To start a headless ImageJ invocation from Docker, use:
+Running ImageJ headlessly in Docker is not much different than normal headless operation - see the [headless guide](Headless ) for general information. To start a headless ImageJ invocation from Docker, use:
 
 ` docker run -it --rm fiji/fiji fiji-linux64 --headless`
 
@@ -170,6 +170,6 @@ In these docker images, you will find Fiji installed in the `/fiji` directory, w
 If you run into any problems or have questions about ImageJ + Docker, please use:
 
   - [GitHub](https://github.com/fiji/dockerfiles/issues)
-  - The [mailing lists](Mailing_Lists "wikilink")
+  - The [mailing lists](Mailing_Lists )
 
 

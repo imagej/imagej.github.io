@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Using\_the\_Command\_Launcher](Using_the_Command_Launcher "wikilink")
+1.  REDIRECT [Using\_the\_Command\_Launcher](Using_the_Command_Launcher )

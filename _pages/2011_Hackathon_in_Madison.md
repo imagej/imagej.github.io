@@ -7,7 +7,7 @@ categories: Hackathons
 description: test description
 ---
 
-The 2011 Madison [Fiji](Fiji "wikilink")/ImageJDev [hackathon](hackathon "wikilink") took place from Friday, January 28 until Friday, February 11. The topic was "Multidimensional Visualization and Analysis in Fiji."
+The 2011 Madison [Fiji](Fiji )/ImageJDev [hackathon](hackathon ) took place from Friday, January 28 until Friday, February 11. The topic was "Multidimensional Visualization and Analysis in Fiji."
 
 ## Participants
 
@@ -129,7 +129,7 @@ Some locals were not present at the hackathon on weekends.
 
 ## Locations
 
-Our initial meeting place from Friday, January 28 through Sunday, January 30 was the Laboratory for Optical and Computational Instrumentation ([LOCI](LOCI "wikilink")), located at Room 271 Animal Sciences, 1675 Observatory Dr. [http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI See map](http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI_See_map "wikilink")
+Our initial meeting place from Friday, January 28 through Sunday, January 30 was the Laboratory for Optical and Computational Instrumentation ([LOCI](LOCI )), located at Room 271 Animal Sciences, 1675 Observatory Dr. [http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI See map](http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI_See_map "wikilink")
 
 Starting Monday morning, the hackathon took place at the newly completed [Wisconsin Institutes for Discovery](http://www.discovery.wisc.edu/) (WID), located at 330 N. Orchard St. [http://maps.google.com/maps?q=330+N.+Orchard+Street,+Madison,+WI See map](http://maps.google.com/maps?q=330+N.+Orchard+Street,+Madison,+WI_See_map "wikilink")
 

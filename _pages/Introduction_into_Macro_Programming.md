@@ -17,7 +17,7 @@ Macros can be used to
   - add tools to the toolbar
   - add keyboard shortcuts
 
-{% include info-box message='Please be aware that there are several other available [scripting](scripting "wikilink") languages that are more powerful than macros, too\! See the sidebar on the right, as well as the [Overcoming limitations](#Overcoming_limitations "wikilink") section below. ' %}
+{% include info-box message='Please be aware that there are several other available [scripting](scripting ) languages that are more powerful than macros, too\! See the sidebar on the right, as well as the [Overcoming limitations](#Overcoming_limitations "wikilink") section below. ' %}
 
 # Variables
 
@@ -64,7 +64,7 @@ msg = "Those days are over, " + name;
 
 **Note:** a common pitfall is to include the name of a variable in a string. The following code demonstrates this:
 
-(**BAD** lines are commented out to discourage copying them. If you paste this code in the [script editor](Script_Editor "wikilink"), you can uncomment these lines to see their errors)
+(**BAD** lines are commented out to discourage copying them. If you paste this code in the [script editor](Script_Editor ), you can uncomment these lines to see their errors)
 
 ``` java
 title = "Macro";
@@ -311,9 +311,9 @@ macro "Title of the macro" {
 
 Then you need to *install* them:
 
-Simply save your macro in a "Plugins" subfolder of *./Fiji.app/scripts/* (e.g. *./Fiji.app/scripts/Plugins/MyScripts/My\_Macro.ijm*), and it will appear in the respective menu (e.g. *Plugins \> MyScripts \> My Macro*) upon restart of [Fiji](Fiji "wikilink").
+Simply save your macro in a "Plugins" subfolder of *./Fiji.app/scripts/* (e.g. *./Fiji.app/scripts/Plugins/MyScripts/My\_Macro.ijm*), and it will appear in the respective menu (e.g. *Plugins \> MyScripts \> My Macro*) upon restart of [Fiji](Fiji ).
 
-Note: The *Plugins \> Macro \> Install...* command is an ImageJ 1.x command that does not yet support the SciJava [Script Parameters](Script_Parameters "wikilink") syntax (@) that was introduced with ImageJ2.
+Note: The *Plugins \> Macro \> Install...* command is an ImageJ 1.x command that does not yet support the SciJava [Script Parameters](Script_Parameters ) syntax (@) that was introduced with ImageJ2.
 
 ## Keyboard shortcuts
 
@@ -364,7 +364,7 @@ macro "Save As JPEG Action Tool Options" {
 
 This section contains a number of macros which you can use as starting points to write your own macros.
 
-If you're interested in performing a certain procedure for all files in a given folder, you might want to have a look a the tutorial *[How to apply a common operation to a complete directory](How_to_apply_a_common_operation_to_a_complete_directory "wikilink")* or at the macro template that you can open in the [Script Editor](Script_Editor "wikilink") via {% include bc content='Templates | Macros | Process Folder'%}.
+If you're interested in performing a certain procedure for all files in a given folder, you might want to have a look a the tutorial *[How to apply a common operation to a complete directory](How_to_apply_a_common_operation_to_a_complete_directory )* or at the macro template that you can open in the [Script Editor](Script_Editor ) via {% include bc content='Templates | Macros | Process Folder'%}.
 
 ## Resizing to a given width of the selection bounds
 
@@ -669,11 +669,11 @@ There are quite a lot of macros on the [ImageJ website](https://imagej.net/macro
 
 # Overcoming limitations
 
-Macros have a major limitation compared to the other [scripting](scripting "wikilink") languages: they have only a [fixed set of built-in functions](https://imagej.net/developer/macro/functions.html). Sometimes, though, one needs access to functions outside this realm; in that case, there are three primary means of overcoming this limitation:
+Macros have a major limitation compared to the other [scripting](scripting ) languages: they have only a [fixed set of built-in functions](https://imagej.net/developer/macro/functions.html). Sometimes, though, one needs access to functions outside this realm; in that case, there are three primary means of overcoming this limitation:
 
 ## Macro extensions
 
-It is possible to implement code in [Java](Java "wikilink") which extends the macro language via the [`Ext` prefix](https://imagej.net/developer/macro/functions.html#Ext). However, this cannot be done within the macro itself.
+It is possible to implement code in [Java](Java ) which extends the macro language via the [`Ext` prefix](https://imagej.net/developer/macro/functions.html#Ext). However, this cannot be done within the macro itself.
 
 ## The call function
 
@@ -681,9 +681,9 @@ The [`call` function](https://imagej.net/developer/macro/functions.html#call) ca
 
 ## The eval function
 
-The [`eval` function](https://imagej.net/developer/macro/functions.html#eval) can execute [JavaScript](JavaScript "wikilink") (or [BeanShell](BeanShell "wikilink") or [Python](Python "wikilink")) code directly. This is a powerful and flexible approach which can invoke nearly any Java API without needing to write external Java code.
+The [`eval` function](https://imagej.net/developer/macro/functions.html#eval) can execute [JavaScript](JavaScript ) (or [BeanShell](BeanShell ) or [Python](Python )) code directly. This is a powerful and flexible approach which can invoke nearly any Java API without needing to write external Java code.
 
-Here is an example which sets the position of a [3D Viewer](3D_Viewer "wikilink") window:
+Here is an example which sets the position of a [3D Viewer](3D_Viewer ) window:
 
 ``` java
 run("MRI Stack (528K)");

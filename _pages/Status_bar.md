@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Getting started\#The\_status\_bar](Getting_started#The_status_bar "wikilink")
+1.  REDIRECT [Getting started\#The\_status\_bar](Getting_started#The_status_bar )

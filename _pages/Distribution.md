@@ -7,7 +7,7 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %}If you create a useful extension of ImageJ—e.g., a [plugin](plugin "wikilink"), [script](script "wikilink") or [macro](macro "wikilink")—the next step is to *distribute* it to others, including:
+{% include develop-menu content='tutorials' %}If you create a useful extension of ImageJ—e.g., a [plugin](plugin ), [script](script ) or [macro](macro )—the next step is to *distribute* it to others, including:
 
   - **Distribute** the extension itself to users
   - Share the extension's **source code**
@@ -18,13 +18,13 @@ description: test description
 Here is a quick summary of the most recommended options:
 
   - **Distribution.**
-      - A) **[create your own update site](How_to_set_up_and_populate_an_update_site "wikilink")**; or
-      - B) **[bundle your plugin with Fiji](Fiji_contribution_requirements "wikilink")**.
+      - A) **[create your own update site](How_to_set_up_and_populate_an_update_site )**; or
+      - B) **[bundle your plugin with Fiji](Fiji_contribution_requirements )**.
   - **Source code.**
-      - Make your project **[open source](open_source "wikilink")**.
-      - Host it on **[GitHub](GitHub "wikilink")**.
-      - Use **[Maven](Maven "wikilink")** to build and SemVer for **[versioning](versioning "wikilink")**.
-      - Use **[Travis](Travis "wikilink")** for continuous integration and artifact deployment to the [SciJava Maven repository](SciJava_Maven_repository "wikilink").
+      - Make your project **[open source](open_source )**.
+      - Host it on **[GitHub](GitHub )**.
+      - Use **[Maven](Maven )** to build and SemVer for **[versioning](versioning )**.
+      - Use **[Travis](Travis )** for continuous integration and artifact deployment to the [SciJava Maven repository](SciJava_Maven_repository ).
   - **Documentation.**
       - Create a page here on the **[ImageJ Wiki](https://imagej.net/)**.
 
@@ -84,7 +84,7 @@ The first goal is to get your extension into the hands of users.
 
 ## Sharing your source code
 
-If you want to facilitate good science, please [share your source code](Open_Source "wikilink"). Otherwise, your extension is a black box and its results are not verifiable.
+If you want to facilitate good science, please [share your source code](Open_Source ). Otherwise, your extension is a black box and its results are not verifiable.
 
 <table>
 <tbody>

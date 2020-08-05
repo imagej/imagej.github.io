@@ -7,9 +7,9 @@ categories: News
 description: test description
 ---
 
-We are happy to announce [TrackMate](TrackMate "wikilink") version 2.5.0, but aren't we each time?
+We are happy to announce [TrackMate](TrackMate ) version 2.5.0, but aren't we each time?
 
-This version brings mainly a complete rewrite of the [LAP tracker](TrackMate_algorithms#LAP_trackers "wikilink"), that brings major improvement in speed performance and memory usage, as well as several enhancement in the UI of [TrackScheme](TrackScheme "wikilink").
+This version brings mainly a complete rewrite of the [LAP tracker](TrackMate_algorithms#LAP_trackers ), that brings major improvement in speed performance and memory usage, as well as several enhancement in the UI of [TrackScheme](TrackScheme ).
 
 ## The new LAP tracker
 
@@ -29,7 +29,7 @@ There are tiny differences with the previous version, notably in the way cost th
 
 ## TrackScheme UI improvement
 
-[TrackScheme](TrackScheme "wikilink") now features a search box and proper row and column headers.
+[TrackScheme](TrackScheme ) now features a search box and proper row and column headers.
 
 <img src="/images/pages/TrachSchemeSearchBar.png" width="600"/>
 

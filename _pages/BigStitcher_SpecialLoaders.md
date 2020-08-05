@@ -9,7 +9,7 @@ description: test description
 
 # Special Dataset Importers
 
-In addition to the more generic [Automatic Loader](BigStitcher_AutoLoader "wikilink") and [Stack loaders](BigStitcher_StackLoader "wikilink"), we also offer single-purpose loaders for images acquired on a **Zeiss Lightsheet Z.1** or a **diSPIM** controlled via **MicroManager**.
+In addition to the more generic [Automatic Loader](BigStitcher_AutoLoader ) and [Stack loaders](BigStitcher_StackLoader ), we also offer single-purpose loaders for images acquired on a **Zeiss Lightsheet Z.1** or a **diSPIM** controlled via **MicroManager**.
 
 ## Zeiss Lightsheet Z.1 Dataset (Bioformats)
 
@@ -36,12 +36,12 @@ If you chose to modify the calibration or the rotation axis, a third dialog will
   - The unit the pixel distance is measured in.
   - Which axis the different acquisition angles are rotated around.
 
-After working through these steps, your dataset will be opened in [BigStitcher](BigStitcher "wikilink").
+After working through these steps, your dataset will be opened in [BigStitcher](BigStitcher ).
 
 ## MicroManager diSPIM Dataset
 
 **TODO**
 
-Go back to the [dataset definition overview](BigStitcher_Define_new_dataset "wikilink")
+Go back to the [dataset definition overview](BigStitcher_Define_new_dataset )
 
-Go back to the [main page](BigStitcher#Documentation "wikilink")
+Go back to the [main page](BigStitcher#Documentation )

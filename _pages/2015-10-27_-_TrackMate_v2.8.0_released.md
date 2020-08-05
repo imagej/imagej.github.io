@@ -7,15 +7,15 @@ categories: News
 description: test description
 ---
 
-It is our please to announce the release of the version 2.8.0 of [TrackMate](TrackMate "wikilink"), after a quieter pace of development.
+It is our please to announce the release of the version 2.8.0 of [TrackMate](TrackMate ), after a quieter pace of development.
 
-This version ships mainly small utilities, improvement and bugfixes. But more importantly, I would like to highlight several contributed [TrackMate modules](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate "wikilink") since the last release.
+This version ships mainly small utilities, improvement and bugfixes. But more importantly, I would like to highlight several contributed [TrackMate modules](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate ) since the last release.
 
 ## Contributed modules.
 
 Pardon the informal tone this developer announcement will take but Ah\! the joy this part causes me\! All of us that wrote documentation for an academic open-source project know this pain and doubt very well: Is spending an excruciating time redacting tutorials for others to use an API worth anything? Is there any good that will come of it? Will this ever reach anyone? I am doing this for naught?
 
-Picture yourself at work, leaned over the keyboard, this Wiki edit page opened, pondering the best way to make your message on [SciJava](SciJava "wikilink") extension mechanism through. When your boss knock at the door and says "I hope you are not writing tutorials for TrackMate. There is still papers X and Y to write, project Z has a report coming, and N users waiting for you to train them."
+Picture yourself at work, leaned over the keyboard, this Wiki edit page opened, pondering the best way to make your message on [SciJava](SciJava ) extension mechanism through. When your boss knock at the door and says "I hope you are not writing tutorials for TrackMate. There is still papers X and Y to write, project Z has a report coming, and N users waiting for you to train them."
 
 Picture yourself at home. It's night. It's cold. The kids approach the desk, full of expectations.
 
@@ -130,6 +130,6 @@ This bug was first reported by Anna Gilles though many may have feel the pain.
 
 Now fixed. Bug reported by Jan Eglinger.
 
-{% include person content='JeanYvesTinevez' %} [CCCT](User_CCCT "wikilink") ([talk](User_talk_CCCT "wikilink")) 10:53, 27 October 2015 (CDT)
+{% include person content='JeanYvesTinevez' %} [CCCT](User_CCCT ) ([talk](User_talk_CCCT )) 10:53, 27 October 2015 (CDT)
 
 

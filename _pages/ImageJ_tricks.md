@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Tips and Tricks](Tips_and_Tricks "wikilink")
+1.  REDIRECT [Tips and Tricks](Tips_and_Tricks )

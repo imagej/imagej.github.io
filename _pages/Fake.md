@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Fiji Build System](Fiji_Build_System "wikilink")
+1.  REDIRECT [Fiji Build System](Fiji_Build_System )

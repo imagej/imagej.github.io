@@ -7,7 +7,7 @@ categories: Import-Export‏‎,Plugins
 description: test description
 ---
 
-{% include info-box software='ImageJ1 ' name='Frames ' author='Fred Damen ' maintainer='Fred Damen ' filename='Frames.jar ' source=' [Frames.zip](https://imagej.net/_images/3/3d/Frames.zip) ' released='1 April 2019 ' latest-version='1 April 2020 ' status='stable ' category='[Analysis‏‎‏‎](_Category_Analysis‏‎‏‎ "wikilink") ' website=' ' %}
+{% include info-box software='ImageJ1 ' name='Frames ' author='Fred Damen ' maintainer='Fred Damen ' filename='Frames.jar ' source=' [Frames.zip](https://imagej.net/_images/3/3d/Frames.zip) ' released='1 April 2019 ' latest-version='1 April 2020 ' status='stable ' category='[Analysis‏‎‏‎](_Category_Analysis‏‎‏‎ ) ' website=' ' %}
 
 These are a set of plugins that are used to work with data in the frame direction. The F\_Project plugin projects the images in the frame direction into a lower dimension using different methods. The F\_Profiler pulgin plots the contents of an ROI through the frame direction. The Frame\_Slider provides sliders to step though the frames of a hyperstacks based on the variable/values in the slice labels.
 

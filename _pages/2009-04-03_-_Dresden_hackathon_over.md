@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2009-04-03 - Dresden Hackathon over](2009-04-03_-_Dresden_Hackathon_over "wikilink")
+1.  REDIRECT [2009-04-03 - Dresden Hackathon over](2009-04-03_-_Dresden_Hackathon_over )

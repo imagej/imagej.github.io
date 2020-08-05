@@ -7,7 +7,7 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='RGB to Montage ' author='unknown ' maintainer='None ' filename='RGB\_to\_Montage.class ' source='not found ' released='unknown ' latest-version='unknown ' status='Unmaintained ' category='[Color processing](_Category_Color_processing "wikilink") ' %}
+{% include info-box software='ImageJ ' name='RGB to Montage ' author='unknown ' maintainer='None ' filename='RGB\_to\_Montage.class ' source='not found ' released='unknown ' latest-version='unknown ' status='Unmaintained ' category='[Color processing](_Category_Color_processing ) ' %}
 
 ## Purpose
 
@@ -15,7 +15,7 @@ From the MacBiophotonics webpage:
 
 "The plugin {% include bc content='Plugins | Colour Function | RGB to Montage'%} works with single slice RGB images. A new RGB stack is created, channel1 being the red channel; 2 the green and 3 the blue. The fourth slice is the merged slice. If a channel is empty (e.g. a red-green merged image will have no blue) then the slice is omitted. The then plugin prompts you for the layout of the montage. You have the option to alter the width of the white border between the image panels."
 
-See also [Color Image Processing\#\#Splitting\_multi-channel\_Images](Color_Image_Processing##Splitting_multi-channel_Images "wikilink").
+See also [Color Image Processing\#\#Splitting\_multi-channel\_Images](Color_Image_Processing##Splitting_multi-channel_Images ).
 
 ![RGB\_to\_montage\_example.png](/images/pages/RGB to montage example.png "RGB_to_montage_example.png")
 

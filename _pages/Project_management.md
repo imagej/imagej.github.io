@@ -8,23 +8,23 @@ description: test description
 ---
 
 {% include develop-menu%}
-The [ImageJ](ImageJ "wikilink") and related [SciJava](SciJava "wikilink") projects take advantage of several project management tools.
+The [ImageJ](ImageJ ) and related [SciJava](SciJava ) projects take advantage of several project management tools.
 
 ## Git
 
-ImageJ uses the [Git](Git "wikilink") revision control system to manage its [source code](source_code "wikilink").
+ImageJ uses the [Git](Git ) revision control system to manage its [source code](source_code ).
 
-See the [Git](Git "wikilink") pages for more information, tutorials, etc.
+See the [Git](Git ) pages for more information, tutorials, etc.
 
 ## Maven
 
-ImageJ uses [Maven](Maven "wikilink") for its project infrastructure.
+ImageJ uses [Maven](Maven ) for its project infrastructure.
 
 SciJava projects use the [SciJava Maven repository](https://maven.scijava.org/) (using [Sonatype Nexus](http://www.sonatype.com/nexus)) for managing SciJava libraries. Such a repository serves two main purposes:
 
 ### Deployment
 
-The main purpose of the SciJava Maven repository is to serve the artifacts that are not yet ready to be deployed to OSS Sonatype. Typically, these components are [versioned at 0.x](Versioning "wikilink")—i.e., still in incubation. Once components reach 1.0.0, we try to [release them to the central Maven repository via OSS Sonatype](http://maven.apache.org/guides/mini/guide-central-repository-upload.html).
+The main purpose of the SciJava Maven repository is to serve the artifacts that are not yet ready to be deployed to OSS Sonatype. Typically, these components are [versioned at 0.x](Versioning )—i.e., still in incubation. Once components reach 1.0.0, we try to [release them to the central Maven repository via OSS Sonatype](http://maven.apache.org/guides/mini/guide-central-repository-upload.html).
 
 This purpose is also crucial for agile development across multiple components. For more details, see [Nine Reasons to Use a Repository Manager](http://blog.sonatype.com/2008/11/nine-reasons-to-use-a-repository-manager-sonatype-nexus/) and [Repository Management with Nexus](http://books.sonatype.com/nexus-book/reference/repoman.html).
 
@@ -52,7 +52,7 @@ Developers can benefit from the mirror by adding the following section to their 
 
 ## Continuous integration
 
-ImageJ uses [Travis CI](Travis_CI "wikilink"), a cloud-based continuous integration (CI) system, which automatically checks the code for build and test errors.
+ImageJ uses [Travis CI](Travis_CI ), a cloud-based continuous integration (CI) system, which automatically checks the code for build and test errors.
 
 ## Issue tracking
 
@@ -146,7 +146,7 @@ To meet these needs, we use the following conventions with GitHub issues:
   - For short-term active development, use names m1, m2, etc.
       - These milestones themselves have no due date and never close, and contain only open issues
       - When an issue is closed, it is moved to match its corresponding release milestone.
-  - Future planned breaking changes should go in [SemVer](Versioning "wikilink")-named milestones.
+  - Future planned breaking changes should go in [SemVer](Versioning )-named milestones.
   - All projects should have an "unscheduled" milestone.
       - Issues in "unscheduled" are things that core developers and maintainers cannot make time to address.
 
@@ -169,22 +169,22 @@ Note that the relationship between milestones and software releases can be one-t
 
 ## Patch submissions
 
-The preferred mechanism to contribute improvements to [ImageJ](ImageJ "wikilink") and other [SciJava](SciJava "wikilink") components is using [GitHub pull requests](https://help.github.com/articles/using-pull-requests/)\! See the [Contributing](Contributing "wikilink") page for details.
+The preferred mechanism to contribute improvements to [ImageJ](ImageJ ) and other [SciJava](SciJava ) components is using [GitHub pull requests](https://help.github.com/articles/using-pull-requests/)\! See the [Contributing](Contributing ) page for details.
 
 ## Roadmap links
 
-  - [News](News "wikilink") about ImageJ and Fiji developments, including status updates, observations and comments about ImageJ programming.
-  - [Recent changes](Special_RecentChanges "wikilink") to this web site (*not* the ImageJ code itself).
-  - [BugZilla](https://fiji.sc/bugzilla) database of user-reported bugs from the [Report a Bug](Report_a_Bug "wikilink") plugin.
+  - [News](News ) about ImageJ and Fiji developments, including status updates, observations and comments about ImageJ programming.
+  - [Recent changes](Special_RecentChanges ) to this web site (*not* the ImageJ code itself).
+  - [BugZilla](https://fiji.sc/bugzilla) database of user-reported bugs from the [Report a Bug](Report_a_Bug ) plugin.
 
 ## Citable code
 
-Many of these tools are employed to facilitate [reproducibility](Reproducible_builds "wikilink") from a technical perspective. From a social perspective, we are writing software for science - in which [scholarly citations](Citations "wikilink") provide another currency for reproducibility.
+Many of these tools are employed to facilitate [reproducibility](Reproducible_builds ) from a technical perspective. From a social perspective, we are writing software for science - in which [scholarly citations](Citations ) provide another currency for reproducibility.
 
 To this end, developers can now use [digital archives like Zenodo](https://guides.github.com/activities/citable-code/) to provide consistent methods for citation.
 
 ## See also
 
-  - The [Releases](Releases "wikilink") page, for more about how these resources are used to release SciJava software artifacts.
+  - The [Releases](Releases ) page, for more about how these resources are used to release SciJava software artifacts.
 
 

@@ -9,7 +9,7 @@ description: test description
 
 ## Purpose
 
-This is an example JRuby script, which is described in the page on [JRuby Scripting](JRuby_Scripting#Example__Generating_Red.2FCyan_Anaglyphs "wikilink").
+This is an example JRuby script, which is described in the page on [JRuby Scripting](JRuby_Scripting#Example__Generating_Red.2FCyan_Anaglyphs ).
 
 ## Code
 
@@ -79,6 +79,6 @@ run "RGB Merge...", merge_options
 
 ## See also
 
-[JRuby Scripting](JRuby_Scripting "wikilink")
+[JRuby Scripting](JRuby_Scripting )
 
   

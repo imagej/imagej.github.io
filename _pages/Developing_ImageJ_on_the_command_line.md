@@ -7,7 +7,7 @@ categories: Development,IDEs
 description: test description
 ---
 
-{% include develop-menu content='tools' %}This article explains how to install and configure command line tools for use with [ImageJ](ImageJ "wikilink") development.
+{% include develop-menu content='tools' %}This article explains how to install and configure command line tools for use with [ImageJ](ImageJ ) development.
 
 ## Install and configure command line tools
 
@@ -15,7 +15,7 @@ description: test description
 
 <tabs> <tab name="Windows"> ![ x32px](/images/pages/Win.png " x32px") **Windows**
 
-Install [Git](Git "wikilink"), [Maven](Maven "wikilink"), and Java SE using [Chocolatey](https://chocolatey.org/):
+Install [Git](Git ), [Maven](Maven ), and Java SE using [Chocolatey](https://chocolatey.org/):
 
 ``` bash
 choco install -y git maven jdk8
@@ -29,7 +29,7 @@ choco install -y cyg-get
 
 </tab> <tab name="OS X"> ![ x32px](/images/pages/Osx.png " x32px") **OS X**
 
-Install [Git](Git "wikilink") and [Maven](Maven "wikilink") using [Homebrew](http://brew.sh/):
+Install [Git](Git ) and [Maven](Maven ) using [Homebrew](http://brew.sh/):
 
 ``` bash
 brew install git maven bash-completion
@@ -51,7 +51,7 @@ sudo apt-get install default-jdk git maven
 git clone git://github.com/imagej/imagej
 ```
 
-See the [Source Code](Source_Code "wikilink") page for further details.
+See the [Source Code](Source_Code ) page for further details.
 
 ## Build the source
 
@@ -78,6 +78,6 @@ mvn -Dscijava.ui=awt -Pexec
 
 ## See also
 
-  - [Dotfiles](Dotfiles "wikilink") if you want to twink out your shell
+  - [Dotfiles](Dotfiles ) if you want to twink out your shell
 
  

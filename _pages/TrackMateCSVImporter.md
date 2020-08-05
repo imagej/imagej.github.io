@@ -13,7 +13,7 @@ This plugin allows for importing detections and tracks contained in CSV files in
 
 ## Installation.
 
-This plugin lives on a separate {% include list-of-update-sites content='update site' %}. If you want to use it, you first need to subscribe to the update site named `TrackMateCSVImporter`, as explained [here](Following_an_update_site "wikilink").
+This plugin lives on a separate {% include list-of-update-sites content='update site' %}. If you want to use it, you first need to subscribe to the update site named `TrackMateCSVImporter`, as explained [here](Following_an_update_site ).
 
 The importer can be found in the {% include bc content='Plugins | Tracking | TrackMate CSV importer'%} menu.
 
@@ -29,7 +29,7 @@ Depending on whether you specify to import the track values or not, the TrackMat
 
 ## Running the exporter from the command line.
 
-After installation, a Jython script called `CsvToTrackMate.py` will be addede to the `scripts` folder of your Fiji installation. It is meant to be called in [headless mode](Headless "wikilink") to directly convert a CSV file and an image file into a TrackMate file.
+After installation, a Jython script called `CsvToTrackMate.py` will be addede to the `scripts` folder of your Fiji installation. It is meant to be called in [headless mode](Headless ) to directly convert a CSV file and an image file into a TrackMate file.
 
 You can use Fiji in headless mode, to call the Jython script `CsvToTrackMate.py` that will parse arguments and configure the importer properly. Here is an example:
 

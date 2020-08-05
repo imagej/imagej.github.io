@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-MiniMaven is a minimal build and dependency management system. It reads project configurations in the same format as [Maven](Maven "wikilink") (*pom.xml* files).
+MiniMaven is a minimal build and dependency management system. It reads project configurations in the same format as [Maven](Maven ) (*pom.xml* files).
 
 ## Why Maven?
 
@@ -19,7 +19,7 @@ Maven is a standard way to do exactly that.
 
 The only reason for MiniMaven to exist is that Maven -- while powerful -- is also pretty resource-hungry. In contrast to MiniMaven, Maven requires many more CPU cycles, takes longer, and downloads many more bytes (due to downloading and running requiring Maven plugins and their dependencies).
 
-Therefore we needed a system to build [ImageJ1](ImageJ1 "wikilink"), [ImageJ2](ImageJ2 "wikilink") and [Fiji](Fiji "wikilink") quickly from the same type of project description files as Maven interprets, to be maximally flexible and interoperable.
+Therefore we needed a system to build [ImageJ1](ImageJ1 ), [ImageJ2](ImageJ2 ) and [Fiji](Fiji ) quickly from the same type of project description files as Maven interprets, to be maximally flexible and interoperable.
 
 ## Command-line options
 

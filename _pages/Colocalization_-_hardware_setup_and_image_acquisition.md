@@ -78,7 +78,7 @@ Some things we can't do anything about (hey, that's the *light* microscopy facil
 
   - Diffraction: The spatial resolution of the conventional widefield or confocal (as typically used - noise limited) light microscope is limited by diffraction, and is dependent on the wavelength of the light (shorter is better) and the numerical aperture (NA) of the objective lens (higher is better). XY resolution is better than resolution in Z direction (about 3x better for a high NA objective. Spatial sampling should be done so that there are not less than and not too many more than 2.3 pixels across the resolution limit (according to Nyqvist). For a high NA lens (say a 63x 1.4 oil immersion) this means the pixels in XY should be about 80-100 nm, and in Z about 250 nm. Also see Sampling below.
 
-If the blurring of you images is too much, you might want to consider [deconvolution](deconvolution "wikilink"). Have a look at [this page](http://support.svi.nl/wiki/BlurAndNoiseAffectColocalization) from SVI (the guys that provides [Huygens](Huygens "wikilink") software to see how it can help.
+If the blurring of you images is too much, you might want to consider [deconvolution](deconvolution ). Have a look at [this page](http://support.svi.nl/wiki/BlurAndNoiseAffectColocalization) from SVI (the guys that provides [Huygens](Huygens ) software to see how it can help.
 
   
 
@@ -164,13 +164,13 @@ Also remember: since we are doing light microscopy, two objects closer and small
 
 ### Detector Saturation
 
-The problem with "saturated pixels" occurs mainly when we use pixel-based colocalization (*i.e.* when we are interested in intensity correlation over space). It is possible to derive the quantitative error made with saturation. See [here](Colocalization/ErrorDueToSaturation "wikilink"). If pixels/images are saturated (that is having pixels with an intensity level at the top of the range, ie 255 for 8 bit data) then they are missing information about the real spatial intensity distribution in the sample. This is the most important data in your analysis, as you are usually most interested in the brightest objects - right?\! That means its a really bad idea to throw that information away when you collect the images.
+The problem with "saturated pixels" occurs mainly when we use pixel-based colocalization (*i.e.* when we are interested in intensity correlation over space). It is possible to derive the quantitative error made with saturation. See [here](Colocalization/ErrorDueToSaturation ). If pixels/images are saturated (that is having pixels with an intensity level at the top of the range, ie 255 for 8 bit data) then they are missing information about the real spatial intensity distribution in the sample. This is the most important data in your analysis, as you are usually most interested in the brightest objects - right?\! That means its a really bad idea to throw that information away when you collect the images.
 
 ### Chromatic Shift
 
 If the microscope has poor quality or non chromatically corrected objective lenses and / or has other alignment problems, then images of the same object in different colour channels will appear in different places. Even expensive lenses have a little residual chromatic shift. This is very bad, as it means that, especially for smaller objects, you miss some of the real colocalisation. The microscope should be checked with multi colour 1 or 0.5 micron bead samples before imaging to see if there is a significant problem. Images can be corrected for x y and z chromatic shift if a bead image has been taken under identical conditions.
 
-For more details and possible chromatic shift measurement and correction strategies see [Chromatic\_shift\_origins\_measurement\_and\_correction](Chromatic_shift_origins_measurement_and_correction "wikilink")
+For more details and possible chromatic shift measurement and correction strategies see [Chromatic\_shift\_origins\_measurement\_and\_correction](Chromatic_shift_origins_measurement_and_correction )
 
 ### Conclusion
 

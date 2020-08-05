@@ -13,11 +13,11 @@ The ImageJ launcher is a native application for launching ImageJ.
 
 The launcher supports the following flavors of ImageJ:
 
-  - [ImageJ1](ImageJ1 "wikilink")
-  - [ImageJ2](ImageJ2 "wikilink")
-  - [Fiji](Fiji "wikilink")
+  - [ImageJ1](ImageJ1 )
+  - [ImageJ2](ImageJ2 )
+  - [Fiji](Fiji )
 
-The launcher is a native executable whose purpose is to start up a Java Virtual Machine and run ImageJ 1.x, Fiji or ImageJ2 in it. It is used in the [Fiji](Fiji "wikilink") distribution as well as in [ImageJ2](ImageJ2 "wikilink").
+The launcher is a native executable whose purpose is to start up a Java Virtual Machine and run ImageJ 1.x, Fiji or ImageJ2 in it. It is used in the [Fiji](Fiji ) distribution as well as in [ImageJ2](ImageJ2 ).
 
 ## Source
 
@@ -38,8 +38,8 @@ where xyz is your platform.
 The launcher can do all kinds of things, like:
 
   - Launch ImageJ with a different amount of memory (`--mem` option)
-  - Run [macros and scripts in headless mode](Headless "wikilink")
-  - Control the [Updater](Updater "wikilink") from the command line
+  - Run [macros and scripts in headless mode](Headless )
+  - Control the [Updater](Updater ) from the command line
   - Open images: **./ImageJ-<platform> example.jpg**
   - Call Jython scripts: **./ImageJ-<platform> example.py** (also works for JRuby scripts when they have an **.rb** extension, for Beanshell scripts with **.bsh** extension, **.clj** for Clojure and **.js** for Javascript)
   - Call the Jython interpreter: **./ImageJ-<platform> --jython** (the classpath will be the same as when calling ImageJA), and likewise **--jruby**, **--bsh** and **--js** for the respective language's command-line interpreters
@@ -47,7 +47,7 @@ The launcher can do all kinds of things, like:
   - Show the java command line instead of running Fiji: **./ImageJ-<platform> --dry-run**
   - Compile a Java class: **./ImageJ-<platform> --javac example.java**
   - Run a Java class' main() method: **./ImageJ-<platform> --main-class=example**
-  - Pass some [Java options](JavaOptions "wikilink"): **./ImageJ-<platform> -server --** (everything that comes before a **--** is interpreted as Java option)
+  - Pass some [Java options](JavaOptions ): **./ImageJ-<platform> -server --** (everything that comes before a **--** is interpreted as Java option)
   - Add **.** to the classpath and execute the given class' **main()** method: **./ImageJ-<platform> Example.class**
   - Link Fiji into the PATH: **ln -s $(pwd)/ImageJ-<platform> $HOME/bin/fiji && fiji**
   - Start Fiji and run a menu entry directly: **./ImageJ-<platform> --run System\_Clipboard** (the underscore was used in place of a space to avoid having to quote the argument)

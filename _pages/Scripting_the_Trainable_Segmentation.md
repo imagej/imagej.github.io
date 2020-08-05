@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Scripting the Trainable Weka Segmentation](Scripting_the_Trainable_Weka_Segmentation "wikilink")
+1.  REDIRECT [Scripting the Trainable Weka Segmentation](Scripting_the_Trainable_Weka_Segmentation )

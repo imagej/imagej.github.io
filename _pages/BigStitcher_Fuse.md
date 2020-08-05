@@ -9,15 +9,15 @@ description: test description
 
 ## Introduction
 
-While BigStitcher (using [BigDataViewer](BigDataViewer "wikilink")) is great for displaying the alignment results and manually inspecting your data, subsequent processing steps by other ImageJ-plugins or different programms typically require "classical" (single) images (the aligned "image" that the BigDataViewer shows is calculated on-the-fly from the input images and not saved).
+While BigStitcher (using [BigDataViewer](BigDataViewer )) is great for displaying the alignment results and manually inspecting your data, subsequent processing steps by other ImageJ-plugins or different programms typically require "classical" (single) images (the aligned "image" that the BigDataViewer shows is calculated on-the-fly from the input images and not saved).
 
-The process of creating single image stacks from multiple transformed/aligned input images is called **Image Fusion**. We offer two ways of creating fused images in BigStitcher and [Multiview-Reconstruction](Multiview-Reconstruction "wikilink"):
+The process of creating single image stacks from multiple transformed/aligned input images is called **Image Fusion**. We offer two ways of creating fused images in BigStitcher and [Multiview-Reconstruction](Multiview-Reconstruction ):
 
 ## Quick fusion
 
 The **quick fusion** can be accessed by selecting **Quick Display Transformed/Fused Image(s)** from the main menu in both Stitching (under `Fusion`) and Multiview mode (under `Displaying`).
 
-Selecting the menu item will open a sub-menu showing all [Bounding Boxes](BigStitcher_BoundingBox "wikilink") as well as the **fusion mode** (**Virtual**, **Cached** or **Precompute Image**, see below for details).
+Selecting the menu item will open a sub-menu showing all [Bounding Boxes](BigStitcher_BoundingBox ) as well as the **fusion mode** (**Virtual**, **Cached** or **Precompute Image**, see below for details).
 
 The currently selected fusion mode is highlighted in red, clicking on another one will switch to that mode.
 
@@ -35,7 +35,7 @@ This will bring up a new dialog showing the fusion options:
 
 ![BigStitcher\_Fusion\_1.png](/images/pages/BigStitcher Fusion 1.png "BigStitcher_Fusion_1.png")
 
-  - **Bounding Box:** Here, you can select which sub-volume ([Bounding Box](BigStitcher_BoundingBox "wikilink")) of the dataset to fuse. The options **All Views** and **Currently Selected Views** are always available, even if you did not manually specify a bounding box.
+  - **Bounding Box:** Here, you can select which sub-volume ([Bounding Box](BigStitcher_BoundingBox )) of the dataset to fuse. The options **All Views** and **Currently Selected Views** are always available, even if you did not manually specify a bounding box.
 
 <!-- end list -->
 
@@ -88,6 +88,6 @@ Finally, click **OK** to start the fusion process.
 
 If you chose to save the result as a new project, you will be asked where to save the .xml project file and the TIFF/HDF5 files for the fused views in a new dialog.
 
-Furthermore, if you chose to save to the current or a new project as HDF5, you will be asked for [options on how to save to HDF5](BigStitcher_AutoLoader#Options_for_re-saving_as_HDF5 "wikilink").
+Furthermore, if you chose to save to the current or a new project as HDF5, you will be asked for [options on how to save to HDF5](BigStitcher_AutoLoader#Options_for_re-saving_as_HDF5 ).
 
-Go back to the [main page](BigStitcher#Documentation "wikilink")
+Go back to the [main page](BigStitcher#Documentation )

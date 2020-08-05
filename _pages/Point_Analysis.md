@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='kleinsimon ' repo='PointAnalysis ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Point Analysis ' maintainer='Simon Klein ' author='Simon Klein ' source=source released='29/12/2016 ' latest-version='29/12/2016 ' status='Alpha ' category='[:Category:Plugins](_Category_Plugins "wikilink") ' website=' ' %}
+{% include info-box software='ImageJ ' name='Point Analysis ' maintainer='Simon Klein ' author='Simon Klein ' source=source released='29/12/2016 ' latest-version='29/12/2016 ' status='Alpha ' category='[:Category:Plugins](_Category_Plugins ) ' website=' ' %}
 
 PointAnalysis
 

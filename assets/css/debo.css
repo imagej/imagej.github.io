@@ -26,6 +26,25 @@
     background: #e1e1e3;
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery .thumbnail {
+    width: 200px;
+    float: none;
+    display: inline-block;
+}
+
+.gallery .thumbnail > a {
+    height: 200px;
+}
+
+.gallery .thumbnail-group {
+    float: none;
+}
+
 .bc {
     font-style: italic;
 }

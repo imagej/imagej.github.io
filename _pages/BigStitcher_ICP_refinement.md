@@ -39,7 +39,7 @@ Finally, you can start the refinement by clicking:
 
 Click **Expert...** in the **Refine with ICP** menu to bring up advanced options.
 
-First, if you did not detect any interest points yet, you will be taken to the [interest point detection](BigStitcher_Interest_points "wikilink") immediately.
+First, if you did not detect any interest points yet, you will be taken to the [interest point detection](BigStitcher_Interest_points ) immediately.
 
 Once you have detected interest points, a dialog with expert options will pop up. In this dialog, you can set the following parameters:
 
@@ -57,4 +57,4 @@ If you opted for **Regularization** of the transform in the previous dialog, you
 
 <img src="/images/pages/BigStitcher regularize model.png" width="400"/>
 
-Go back to the [main page](BigStitcher#Documentation "wikilink")
+Go back to the [main page](BigStitcher#Documentation )

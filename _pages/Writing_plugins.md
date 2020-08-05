@@ -7,23 +7,23 @@ categories: Tutorials,ImageJ2,Development
 description: test description
 ---
 
-{% include info-box content='This guide provides a technical overview of [plugins](plugins "wikilink"), including how to """create new plugins""".  
-\* If you are interested in developing an """existing""" plugin instead, see [Contributing to a plugin](How_to_contribute_to_an_existing_plugin_or_library "wikilink").  
-\* If you have completed a plugin that you would like to """share with the community""", see [Distributing your plugins](Distribution "wikilink").
+{% include info-box content='This guide provides a technical overview of [plugins](plugins ), including how to """create new plugins""".  
+\* If you are interested in developing an """existing""" plugin instead, see [Contributing to a plugin](How_to_contribute_to_an_existing_plugin_or_library ).  
+\* If you have completed a plugin that you would like to """share with the community""", see [Distributing your plugins](Distribution ).
 
-  - For instructions on plugin development for [ImageJ 1.x](ImageJ_1.x "wikilink"), see [Developing Plugins for ImageJ 1.x](Developing_Plugins_for_ImageJ_1.x "wikilink").' %}
+  - For instructions on plugin development for [ImageJ 1.x](ImageJ_1.x ), see [Developing Plugins for ImageJ 1.x](Developing_Plugins_for_ImageJ_1.x ).' %}
 
 {% include develop-menu content='tutorials' %} {% include toc%}
 
 
 ## Requirements
 
-As ImageJ is built using the [SciJava principles of project management](Project_management "wikilink"), this guide assumes a basic familiarity with these topics and tools, especially:
+As ImageJ is built using the [SciJava principles of project management](Project_management ), this guide assumes a basic familiarity with these topics and tools, especially:
 
 |                                                          |                                                              |
 | -------------------------------------------------------- | ------------------------------------------------------------ |
 | <a href="Git"><img src="/images/pages/Git-icon.png" width="64px"/></a> | <a href="Maven"><img src="/images/pages/Maven-icon.png" width="64px"/></a> |
-| [Git](Git "wikilink")                                    | [Maven](Maven "wikilink")                                    |
+| [Git](Git )                                    | [Maven](Maven )                                    |
 
 Additionally, at a minimum, you should clone the {% include github org='imagej ' repo='tutorials ' label='imagej/tutorials repository ' %}. This will give you a local copy of the tutorials discussed in this guide, as well as templates for use in your own development.
 
@@ -33,7 +33,7 @@ For the complete "developer experience", you can go through the [GitHub Bootcamp
 
 Conceptually, a **plugin** is a new piece of functionality added to ImageJ. Nearly all aspects of ImageJ are *pluggable*, meaning plugins can be provided *ad hoc* to perform specified functions. The ImageJ core needs only know what general operations are available; then when the program is running, the options for how to complete a requested operation will be determined by which plugins are available at that time.
 
-Technically, ImageJ is built on the [SciJava Common](SciJava_Common "wikilink") plugin framework. Within this framework, a plugin is a Java class [annotated](https://docs.oracle.com/javase/tutorial/java/annotations/index.html) with the {% include github org='scijava ' repo='scijava-common ' tag='scijava-common-2.47.0 ' source='org/scijava/plugin/Plugin.java ' label='@Plugin ' %} annotation. Classes annotated in this way are then automatically discovered and indexed at {% include wikipedia title='Run\_time\_(program\_lifecycle\_phase)' text='\'\'runtime\'\''%}, when the application is launched by a user (as opposed to {% include wikipedia title='Compile\_time' text='\'\'compile-time\'\''%}).
+Technically, ImageJ is built on the [SciJava Common](SciJava_Common ) plugin framework. Within this framework, a plugin is a Java class [annotated](https://docs.oracle.com/javase/tutorial/java/annotations/index.html) with the {% include github org='scijava ' repo='scijava-common ' tag='scijava-common-2.47.0 ' source='org/scijava/plugin/Plugin.java ' label='@Plugin ' %} annotation. Classes annotated in this way are then automatically discovered and indexed at {% include wikipedia title='Run\_time\_(program\_lifecycle\_phase)' text='\'\'runtime\'\''%}, when the application is launched by a user (as opposed to {% include wikipedia title='Compile\_time' text='\'\'compile-time\'\''%}).
 
 ### Plugin types
 
@@ -51,13 +51,13 @@ public class MyService implements Service { }
 public class SpecialService implements Service { }
 ```
 
-{% include expanding-box content='Which of these plugins would we expect back if asking the [Context](Writing_plugins#The_Context "wikilink") for plugins of type `Service` plugin? | \> It would give back both the `MyService` and `SpecialService` plugins, since `SpecialService` is a subclass of `Service`.' %}
+{% include expanding-box content='Which of these plugins would we expect back if asking the [Context](Writing_plugins#The_Context ) for plugins of type `Service` plugin? | \> It would give back both the `MyService` and `SpecialService` plugins, since `SpecialService` is a subclass of `Service`.' %}
 
 {% include expanding-box content='What if we asked for plugins of type `SpecialService`? | \> It would just return the `SpecialService` plugin, since `MyService` is """not""" a `SpecialService`.' %}
 
 ### Plugin priority
 
-When plugins are retrieved from a [Context](Writing_plugins#The_Context "wikilink") it's possible to get more than one match. In these cases, the plugin classes are returned in order of the **priority** of the class's [@Plugin annotation](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/plugin/Plugin.java#L108-L129). Priorities are simply double values; as a starting point, priority constants can be used from the {% include github org='scijava ' repo='scijava-common ' tag='scijava-common-2.47.0 ' source='org/scijava/Priority.java ' label='Priority ' %} class.
+When plugins are retrieved from a [Context](Writing_plugins#The_Context ) it's possible to get more than one match. In these cases, the plugin classes are returned in order of the **priority** of the class's [@Plugin annotation](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/plugin/Plugin.java#L108-L129). Priorities are simply double values; as a starting point, priority constants can be used from the {% include github org='scijava ' repo='scijava-common ' tag='scijava-common-2.47.0 ' source='org/scijava/Priority.java ' label='Priority ' %} class.
 
 For example, given the following plugins:
 
@@ -153,23 +153,23 @@ Whereas [Services](#Services "wikilink") provide internal functionality, `Comman
 
 When writing `Commands` you will often declare {% include github org='scijava ' repo='scijava-common ' tag='scijava-common-2.47.0 ' source='org/scijava/plugin/Parameter.java ' label='@Parameters ' %} on fields that **can not** be resolved automatically by the `Context`—for example, numeric values or file paths. Instead of being instantiated at `Context` startup as a `Service` would be, `Commands` are created and executed on demand.
 
-When a `Command` is executed, it goes through a series of pre-processing steps to populate its `@Parameters` using its associated [Context](#The_Context "wikilink"). If any parameters are left unresolved and a UI is available, the framework will automatically build and display an appropriate dialog to get user input. In this way, input harvesting is decoupled from functional operation—allowing developers to focus on what's really important without repetition of code. This also means that Commands can typically run [headlessly](Headless "wikilink") without any extra development effort.
+When a `Command` is executed, it goes through a series of pre-processing steps to populate its `@Parameters` using its associated [Context](#The_Context "wikilink"). If any parameters are left unresolved and a UI is available, the framework will automatically build and display an appropriate dialog to get user input. In this way, input harvesting is decoupled from functional operation—allowing developers to focus on what's really important without repetition of code. This also means that Commands can typically run [headlessly](Headless ) without any extra development effort.
 
 A common pattern in `Command` development is to wrap `Service` functionality. For example, opening an image from a path is a fundamental operation in ImageJ. To this end, developers can directly use the {% include github org='scifio ' repo='scifio ' tag='scifio-0.25.0 ' source='io/scif/services/DatasetIOService.java ' label='DatasetIOService ' %}. Users then get this same functionality from the menus via the {% include github org='imagej ' repo='imagej-plugins-commands ' tag='imagej-plugins-commands-0.6.0 ' source='net/imagej/plugins/commands/io/OpenDataset.java ' label='OpenDataset command ' %}—which itself simply calls into the `DatasetIOService`.
 
 ### Other plugins
 
-Because virtually everything is a plugin in ImageJ, there are too many to explicitly enumerate, let alone cover in a tutorial. To get ideas for functionality that can be added, a good starting point is to look for services in the [javadoc](Javadoc "wikilink"), or the [ImageJ search portal](http://search.imagej.net/). Many service types have supplemental plugins for easy functional extension. In particular, the {% include github org='imagej ' repo='imagej-common ' label='imagej-common ' %} and {% include github org='scijava ' repo='scijava-common ' label='scijava-common ' %} repositories will contain plugin definitions for many essential operations.
+Because virtually everything is a plugin in ImageJ, there are too many to explicitly enumerate, let alone cover in a tutorial. To get ideas for functionality that can be added, a good starting point is to look for services in the [javadoc](Javadoc ), or the [ImageJ search portal](http://search.imagej.net/). Many service types have supplemental plugins for easy functional extension. In particular, the {% include github org='imagej ' repo='imagej-common ' label='imagej-common ' %} and {% include github org='scijava ' repo='scijava-common ' label='scijava-common ' %} repositories will contain plugin definitions for many essential operations.
 
 A brief list of some of the more useful plugin types to extend:
 
-  - [Ops](Ops "wikilink") provide a reusable set of image processing algorithms.
-  - [Image formats](Adding_new_file_formats "wikilink") allow new types of images to be opened in ImageJ.
+  - [Ops](Ops ) provide a reusable set of image processing algorithms.
+  - [Image formats](Adding_new_file_formats ) allow new types of images to be opened in ImageJ.
   - {% include github org='scijava ' repo='scijava-common ' tag='scijava-common-2.47.0 ' source='org/scijava/convert/Converter.java ' label='Converters ' %} allow the framework to interchange types, outside of normal Java class hierarchy restrictions.
   - {% include github org='scijava ' repo='scijava-common ' tag='scijava-common-2.47.0 ' source='org/scijava/module/process/PreprocessorPlugin.java ' label='Input Preprocessors ' %} give you control over the population of `@Parameters`.
   - {% include github org='scijava ' repo='scijava-common ' tag='scijava-common-2.47.0 ' source='org/scijava/display/Display.java ' label='Displays ' %} control how UI elements are presented to users.
 
-If you know the function you want to modify but can't determine its location in the code, please [ask other developers.](Help "wikilink") You're part of the community now\!
+If you know the function you want to modify but can't determine its location in the code, please [ask other developers.](Help ) You're part of the community now\!
 
 ## Example projects
 
@@ -179,7 +179,7 @@ Because the ImageJ API is designed to be maximally flexible and extensible, if y
 
 You do not need to understand every project in this repository, nor must you go through them in a particular order\! Instead, you should read through the following topics and focus on the projects that look particularly interesting and relevant to your goals. Your target for learning should be to understand the code in these selected projects, and how changes to that code will be reflected in the experiences of users and other developers.
 
-Because these tutorials use [Git](Git "wikilink") for source control, you have complete freedom to modify and play with the code. Worst-case scenario, you always have a big reset button via the command:
+Because these tutorials use [Git](Git ) for source control, you have complete freedom to modify and play with the code. Worst-case scenario, you always have a big reset button via the command:
 
 ``` bash
 git reset --hard origin/master
@@ -190,13 +190,13 @@ There are always other options for saving or restoring your work—[stashing](ht
 ### Tips
 
   - Most of these examples have a [Main method](https://docs.oracle.com/javase/tutorial/getStarted/application/index.html) to see the code in action.
-  - All of these projects are [Mavenized](Maven "wikilink").
-  - You can look at the [pom.xml](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) to figure out [which libraries](Source "wikilink") that particular project is using.
+  - All of these projects are [Mavenized](Maven ).
+  - You can look at the [pom.xml](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) to figure out [which libraries](Source ) that particular project is using.
   - You can [compile and build](http://maven.apache.org/archives/maven-1.x/start/quick-start.html) from the command line by running `mvn` from any project's top-level directory (any directory containing a `pom.xml`).
   - Building a project results in a `jar` output in the `$PROJECT/target/` directory.
-  - For a more "real-world" experience, you can drop the `jar` you built into the `ImageJ.app/jars/` directory of an [ImageJ installation](Downloads "wikilink") to try out any of the example plugins.
-  - If you're not sure how to find your plugin within ImageJ, use the [Command Finder](Command_Finder "wikilink")\!
-  - You can also import each project into [Eclipse](Eclipse "wikilink")/[NetBeans](NetBeans "wikilink")/[IntelliJ IDEA](IntelliJ_IDEA "wikilink") as a [maven project](https://books.sonatype.com/m2eclipse-book/reference/creating-sect-importing-projects.html).
+  - For a more "real-world" experience, you can drop the `jar` you built into the `ImageJ.app/jars/` directory of an [ImageJ installation](Downloads ) to try out any of the example plugins.
+  - If you're not sure how to find your plugin within ImageJ, use the [Command Finder](Command_Finder )\!
+  - You can also import each project into [Eclipse](Eclipse )/[NetBeans](NetBeans )/[IntelliJ IDEA](IntelliJ_IDEA ) as a [maven project](https://books.sonatype.com/m2eclipse-book/reference/creating-sect-importing-projects.html).
 
 ### First steps
 
@@ -239,7 +239,7 @@ These projects are examples of specific *use cases* within the ImageJ API.
 
 ### General guidelines
 
-ImageJ adheres to [interface-driven design](Coding_style#Interface-driven_design "wikilink"). From a practical point of view, this means:
+ImageJ adheres to [interface-driven design](Coding_style#Interface-driven_design ). From a practical point of view, this means:
 
 If you are **creating** a new plugin type...
 
@@ -255,17 +255,17 @@ If you are **implementing** an existing plugin type...
 
 You already [created your own GitHub repository](#Requirements "wikilink"), right??
 
-When you're just getting started with tools like [Git](Git "wikilink") and [Maven](Maven "wikilink"), it's not easy to comprehend the nuances of how new projects should be set up and configured. It's much easier to copy a working project to use as a starting point and go from there.
+When you're just getting started with tools like [Git](Git ) and [Maven](Maven ), it's not easy to comprehend the nuances of how new projects should be set up and configured. It's much easier to copy a working project to use as a starting point and go from there.
 
 The [example projects](#Example_projects "wikilink") are designed precisely to serve as such starting points for new projects. Once you have a solid idea of what kind of plugin you want to write, pick the project that discusses your area of choice and simply copy it to your own GitHub repo. From there, you can make changes as needed.
 
-At this point, if you haven't already, we **STRONGLY RECOMMEND** importing your project into an [IDE](IDE "wikilink") like [Eclipse](Eclipse "wikilink"). This will make [development](Developing_Fiji_in_Eclipse "wikilink") and [refactoring](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-menu-refactor.htm) much easier. Modern IDEs also have excellent [Git](Git "wikilink") and [Maven](Maven "wikilink") integration, which will allow you to take advantage of the fact that the example projects are already set up as Mavenized Git repositories.
+At this point, if you haven't already, we **STRONGLY RECOMMEND** importing your project into an [IDE](IDE ) like [Eclipse](Eclipse ). This will make [development](Developing_Fiji_in_Eclipse ) and [refactoring](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-menu-refactor.htm) much easier. Modern IDEs also have excellent [Git](Git ) and [Maven](Maven ) integration, which will allow you to take advantage of the fact that the example projects are already set up as Mavenized Git repositories.
 
 In addition to modifying and developing the source code itself, there are several things you should do to properly identify and configure your project:
 
 #### Update your POM
 
-  - For your [parent pom](https://maven.apache.org/pom.html#Inheritance), we recommend that you extend [`pom-scijava`](https://github.com/scijava/pom-scijava). This will provide [dependency management](https://maven.apache.org/pom.html#Dependency_Management) of a lot of common useful dependencies, including the entire [ImageJ software stack](Architecture#Definitions "wikilink") and all [Fiji](Fiji "wikilink") components. Try to use the newest available version of `pom-scijava`.
+  - For your [parent pom](https://maven.apache.org/pom.html#Inheritance), we recommend that you extend [`pom-scijava`](https://github.com/scijava/pom-scijava). This will provide [dependency management](https://maven.apache.org/pom.html#Dependency_Management) of a lot of common useful dependencies, including the entire [ImageJ software stack](Architecture#Definitions ) and all [Fiji](Fiji ) components. Try to use the newest available version of `pom-scijava`.
   - Update your [groupId](https://maven.apache.org/pom.html#Maven_Coordinates). ImageJ projects use a `net.imagej` groupId, while Fiji projects use `sc.fiji`—or you may use your own if you do not plan to distribute your plugin with the core ImageJ or Fiji projects.
   - Update your [artifactId](https://maven.apache.org/pom.html#Maven_Coordinates) to something appropriate based on the intended use of your project.
   - Update your <name> and <description> to something appropriate for your new artifactId.
@@ -277,23 +277,23 @@ In addition to modifying and developing the source code itself, there are severa
 
 #### Optional changes
 
-  - If you want to use additional [ImageJ or Fiji projects](Source_code "wikilink") as libraries, you will need to add them as dependencies in the [dependency block](https://maven.apache.org/pom.html#Dependencies) of your `pom.xml`. Note that you will not need to specify a <version>, as these are managed by the `pom-scijava` parent pom.
+  - If you want to use additional [ImageJ or Fiji projects](Source_code ) as libraries, you will need to add them as dependencies in the [dependency block](https://maven.apache.org/pom.html#Dependencies) of your `pom.xml`. Note that you will not need to specify a <version>, as these are managed by the `pom-scijava` parent pom.
   - If your copied `pom.xml` has a [main method specification](https://github.com/imagej/tutorials/blob/249c699dbdb9308f8a5539f0f39cf84d2612b273/simple-commands/pom.xml#L22-L24) you will likely need to remove or update it as appropriate.
-  - If you want to add non-Java files to your plugin, such as sample images or [demo scripts](Scripting "wikilink"), refer to the [standard maven layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html).
+  - If you want to add non-Java files to your plugin, such as sample images or [demo scripts](Scripting ), refer to the [standard maven layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html).
 
 ## Next Steps
 
 There are further guides available dedicated to developing particular types of plugins:
 
-  - [Adding new ops](Adding_new_ops "wikilink")
-  - [Adding new file formats](Adding_new_file_formats "wikilink")
+  - [Adding new ops](Adding_new_ops )
+  - [Adding new file formats](Adding_new_file_formats )
 
 Once you have completed plugins and want to get them out to users, you can familiarize yourself with the articles on:
 
-  - [Plugin distribution](Distribution "wikilink")
-  - [The development lifecycle](Development_Lifecycle "wikilink")
-  - [Core contribution requirements](Fiji_contribution_requirements "wikilink")
+  - [Plugin distribution](Distribution )
+  - [The development lifecycle](Development_Lifecycle )
+  - [Core contribution requirements](Fiji_contribution_requirements )
 
-As always, if you ever need assistance, [just ask](Help "wikilink")\!
+As always, if you ever need assistance, [just ask](Help )\!
 
   

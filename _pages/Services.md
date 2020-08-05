@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SciJava Common\#Services](SciJava_Common#Services "wikilink")
+1.  REDIRECT [SciJava Common\#Services](SciJava_Common#Services )

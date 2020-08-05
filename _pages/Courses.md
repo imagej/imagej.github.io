@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Events](Events "wikilink")
+1.  REDIRECT [Events](Events )

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  Redirect [Save as animated gif](Save_as_animated_gif "wikilink")
+1.  Redirect [Save as animated gif](Save_as_animated_gif )

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Gabby Campagnola ' affiliation='UW-Madison [LOCI](LOCI "wikilink") (former) ' %}
+{% include user-box name='Gabby Campagnola ' affiliation='UW-Madison [LOCI](LOCI ) (former) ' %}

@@ -14,13 +14,13 @@ description: test description
 
 # Tracing
 
-These instructions assume that you have read the [Overview](SNT__Overview "wikilink") page, including starting up the plugin, enabling [Cursor Auto-snapping](SNT__Overview#Auto-snapping "wikilink"), and [Auto-tracing](SNT__Overview#Auto-tracing "wikilink") options. This section is also documented in a [Screencast](SNT__Screencasts#Introduction_To_Tracing "wikilink").
+These instructions assume that you have read the [Overview](SNT__Overview ) page, including starting up the plugin, enabling [Cursor Auto-snapping](SNT__Overview#Auto-snapping ), and [Auto-tracing](SNT__Overview#Auto-tracing ) options. This section is also documented in a [Screencast](SNT__Screencasts#Introduction_To_Tracing ).
 
 ## Starting A Path
 
 ### I. Pick The Starting Point
 
-![Choosing a starting point](/images/pages/Snt-cropped-before-starting-2.png "Choosing a starting point") You may notice that, by default, the cursor [snaps](SNT__Overview#Auto-snapping "wikilink") to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {% include key content='S' %}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
+![Choosing a starting point](/images/pages/Snt-cropped-before-starting-2.png "Choosing a starting point") You may notice that, by default, the cursor [snaps](SNT__Overview#Auto-snapping ) to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {% include key content='S' %}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
 
 ### II. Pick A Subsequent Point
 
@@ -44,7 +44,7 @@ Once the search has reached the target point, the path is shown in cyan (to indi
 
 ### I. Select The Path To Branch Off
 
-To select the path you want to branch off from, you can either select it in the Path Manager, or press {% include key content='G' %} while the mouse pointer is near the path. When the path is first selected, it will be shown in the default green color. ![[Holding 'G'](/images/pages/SNT  Key Shortcuts#Path Handling "wikilink") (*Group paths around cursor*) will select the closest path to the mouse pointer](Snt-sb-selecting-by-G.gif "Holding 'G' (Group paths around cursor) will select the closest path to the mouse pointer")
+To select the path you want to branch off from, you can either select it in the Path Manager, or press {% include key content='G' %} while the mouse pointer is near the path. When the path is first selected, it will be shown in the default green color. ![[Holding 'G'](SNT__Key_Shortcuts#Path_Handling ) (*Group paths around cursor*) will select the closest path to the mouse pointer](Snt-sb-selecting-by-G.gif "Holding 'G' (Group paths around cursor) will select the closest path to the mouse pointer")
 
 ### II. Select The Fork Point
 
@@ -75,9 +75,9 @@ From this point on, you can carry on adding nodes to the branched path as [above
 
 Two paths can be merged or joined in *Edit Mode*. To do so:
 
-1.  Select a path and enter *Edit Mode* (by right-clicking on the image canvas to access its [Contextual menu](SNT__Overview#Contextual_Menu "wikilink"))
+1.  Select a path and enter *Edit Mode* (by right-clicking on the image canvas to access its [Contextual menu](SNT__Overview#Contextual_Menu ))
 2.  Activate the node to be merged by hovering over it
-3.  Select the second path by using the {% include key content='G' %} [shortcut](SNT__Key_Shortcuts "wikilink") and activate the second merging node by hovering over it
+3.  Select the second path by using the {% include key content='G' %} [shortcut](SNT__Key_Shortcuts ) and activate the second merging node by hovering over it
 4.  Open the contextual menu and select the initial path from the *Connect To (Start Join)* / *Connect To (End Join)* menu.
 
 If both nodes are terminal, the paths are merged together. Otherwise, one path will become a child of the other. Note that one of the nodes must be terminal, to ensure no loops are created.
@@ -108,12 +108,12 @@ To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Leg
 
 ### II.Tracing and Navigation
 
-  - **Selecting points for tracing** Select the *Wand tool* ({% include key content='W' %} [shortcut](SNT__Key_Shortcuts#Legacy_3D_Viewer "wikilink")) in the main ImageJ toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment as described [above](#Tracing "wikilink"). Similarly, branching occurs as [described for 2D canvas(es)](#Branching__Start_A_Path_On_An_Existing_Path "wikilink"), by holding the {% include key content='Alt|Shift' %} modifier.
-  - **Rotation** Either use the *Hand tool* ({% include key content='H' %} [shortcut](SNT__Key_Shortcuts#Legacy_3D_Viewer "wikilink")) tool and left-click while dragging the mouse or drag mouse while holding the scroll wheel.
+  - **Selecting points for tracing** Select the *Wand tool* ({% include key content='W' %} [shortcut](SNT__Key_Shortcuts#Legacy_3D_Viewer )) in the main ImageJ toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment as described [above](#Tracing "wikilink"). Similarly, branching occurs as [described for 2D canvas(es)](#Branching:_Start_A_Path_On_An_Existing_Path "wikilink"), by holding the {% include key content='Alt|Shift' %} modifier.
+  - **Rotation** Either use the *Hand tool* ({% include key content='H' %} [shortcut](SNT__Key_Shortcuts#Legacy_3D_Viewer )) tool and left-click while dragging the mouse or drag mouse while holding the scroll wheel.
   - **Translation** Hold {% include key content='Shift' %} and the scroll wheel while dragging the mouse.
   - **Adjusting zoom depth** Scroll the mouse wheel.
 
-Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {% include key content='Esc' %} key. See [Key Shortcuts](SNT__Key_Shortcuts#Legacy_3D_Viewer "wikilink") for the list of all supported shortcuts. ![Fiji-toolbar-wand-and-hand-2.png](/images/pages/Fiji-toolbar-wand-and-hand-2.png "Fiji-toolbar-wand-and-hand-2.png")
+Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {% include key content='Esc' %} key. See [Key Shortcuts](SNT__Key_Shortcuts#Legacy_3D_Viewer ) for the list of all supported shortcuts. ![Fiji-toolbar-wand-and-hand-2.png](/images/pages/Fiji-toolbar-wand-and-hand-2.png "Fiji-toolbar-wand-and-hand-2.png")
 
 # Filling
 
@@ -158,13 +158,13 @@ If you are happy with this, then you might as well click "Pause" so that your co
 
   - Save the fill (which will add it to the fill list) by clicking "Stash Progress".
   - Discard the fill by either clicking "Stop" while filling is in progress or, if you stashed the fill, select it in the fill list and click "Delete Fill(s)".
-  - Use the "Image Stack..." button to view the same image stack, but with only the points in that fill preserved. You can choose either a grayscale image or a binary mask. One reason why you might want to do this is that you can then smooth that image and use the [3D Viewer](3D_Viewer "wikilink") to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [tutorials](Simple_Neurite_Tracer#Tutorials "wikilink")). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
+  - Use the "Image Stack..." button to view the same image stack, but with only the points in that fill preserved. You can choose either a grayscale image or a binary mask. One reason why you might want to do this is that you can then smooth that image and use the [3D Viewer](3D_Viewer ) to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [tutorials](Simple_Neurite_Tracer#Tutorials )). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
 
 The image stack you would get from the image used in this example might look something like this: ![Having selected the "Image Stack... -\> As Grayscale Image..." option](Snt-filling-viewed-2.png "Having selected the \"Image Stack... -\> As Grayscale Image...\" option")
 
 # Generating *Filtered Images*
 
-This section describes how to generate [Filtered Images](SNT__Overview#Tracing_on_Filtered_Image "wikilink") outside SNT. Note that the filtering used in this walk-through (*[Frangi](Frangi "wikilink") Vesselness*) is already supported directly by SNT. This tutorial will assume you need to perform the filtering with adjusted parameters.
+This section describes how to generate [Filtered Images](SNT__Overview#Tracing_on_Filtered_Image ) outside SNT. Note that the filtering used in this walk-through (*[Frangi](Frangi ) Vesselness*) is already supported directly by SNT. This tutorial will assume you need to perform the filtering with adjusted parameters.
 
 #### A Single Image
 
@@ -209,7 +209,7 @@ for( i = 0; i < files.length; ++i ) {
 }
 ```
 
-The same process can be accomplished more completely in a script using [ImageJ Ops](ImageJ_Ops "wikilink"). For example, in Jython:
+The same process can be accomplished more completely in a script using [ImageJ Ops](ImageJ_Ops ). For example, in Jython:
 
 ``` python
 # @ImageJ ij

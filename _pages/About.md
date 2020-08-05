@@ -11,11 +11,11 @@ So you want to know about ImageJ, do you? What would you like to know?
 
 | Question                        | See                                     |
 | ------------------------------- | --------------------------------------- |
-| **What is ImageJ?**             | [ImageJ](ImageJ "wikilink")             |
-| **Why ImageJ?**                 | [Philosophy](Philosophy "wikilink")     |
-| **Who uses ImageJ?**            | [Usage](Usage "wikilink")               |
-| **Who develops ImageJ?**        | [Contributors](Contributors "wikilink") |
-| **Who maintains ImageJ?**       | [Governance](Governance "wikilink")     |
-| **How is ImageJ funded?**       | [Funding](Funding "wikilink")           |
-| **How do I cite ImageJ?**       | [Citing](Citing "wikilink")             |
-| **How can I help the project?** | [Contributing](Contributing "wikilink") |
+| **What is ImageJ?**             | [ImageJ](ImageJ )             |
+| **Why ImageJ?**                 | [Philosophy](Philosophy )     |
+| **Who uses ImageJ?**            | [Usage](Usage )               |
+| **Who develops ImageJ?**        | [Contributors](Contributors ) |
+| **Who maintains ImageJ?**       | [Governance](Governance )     |
+| **How is ImageJ funded?**       | [Funding](Funding )           |
+| **How do I cite ImageJ?**       | [Citing](Citing )             |
+| **How can I help the project?** | [Contributing](Contributing ) |

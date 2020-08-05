@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Bio-Formats\#Bio-Formats Windowless Importer](Bio-Formats#Bio-Formats_Windowless_Importer "wikilink")
+1.  REDIRECT [Bio-Formats\#Bio-Formats Windowless Importer](Bio-Formats#Bio-Formats_Windowless_Importer )

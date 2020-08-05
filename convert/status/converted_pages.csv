@@ -43,7 +43,9 @@
 2009-11-02_-_Auto_Threshold_plugin_updated.mw
 2009-11-06_-_Bio-Formats_+_CellProfiler.mw
 2009-11-06_-_Bio-Formats_B_CellProfiler.mw
+2009-11-23_-_New_Plugin:_SIOX_(Simple_Interactive_Object_Extraction).mw
 2009-12-04_-_Updated_TrakEM2_to_version_0.7m.mw
+2009-12-17_-_New_Plugin:_RATS_(Robust_Automatic_Threshold_Selection).mw
 2009-12-23_-_ImageJ_development_discussion.mw
 2010-01-21_-_The_Fiji_Wiki_got_a_new_look.mw
 2010-03-01_-_Fiji_featured_in_Nature_Methods_review_on_visualization.mw
@@ -63,6 +65,7 @@
 2010-08-12_-_CLAHE_speed_up.mw
 2010-08-23_-_Neurite_Identification_Tool_for_Drosophila_brain_lineages.mw
 2010-08_-_Neurite_Identification_Tool_for_Drosophila_brain_lineages.mw
+2010-09-17_-_Snakuscule_(and_other_BIG_plugins)_in_Fiji!.mw
 2010-09-21_-_Fiji_comes_with_complete_source_code_now_--_thanks_to_TransformJ!.mw
 2010-09-21_-_Fiji_fully_Open_Source_now_--_thanks_to_TransformJ!.mw
 2010-09-27_-_SPIM_Registration_update_--_multichannel_support.mw
@@ -96,6 +99,7 @@
 2011-10-05_-_The_relation_between_ImageJA_and_ImageJ.mw
 2011-10-07_-_Unit_tests_for_ImageJ_1.45.mw
 2011-10-16_-_The_Art_of_Debugging.mw
+2011-10-25_-_EM_segmentation_challenge_(ISBI_-_2012).mw
 2011-10-31_-_Updated_SPIM_Registration.mw
 2011-11-17_-_SFTP_support_for_update_sites.mw
 2011-12-14_-_Fiji_Hackathon_in_Dresden.mw
@@ -274,6 +278,7 @@ Adding_Update_Sites.mw
 Adding_new_file_formats.mw
 Adding_new_formats.mw
 Adding_new_ops.mw
+Adelson's_Squares_(Macro).mw
 Adelsons_Squares.mw
 Adiposoft.mw
 Advanced_Fiji_Usage.mw
@@ -281,6 +286,7 @@ Advanced_Registration.mw
 Advanced_Usage.mw
 Advanced_Weka_Segmentation.mw
 Advanced_Weka_Segmentation_-_How_to_compare_classifiers.mw
+Advanced_mode(MTrack).mw
 Advanced_mode.mw
 Align_Image_by_line_ROI.mw
 Align_RGB_planes.mw
@@ -291,6 +297,7 @@ Analyse_Particles.mw
 Analyse_Skeleton.mw
 AnalyzeSkeleton.mw
 Analyze_FRAP_movies_with_a_Jython_script.mw
+Analyze_Skeleton_(2D%2F3D).mw
 Analyze_Skeleton_2D_3D.mw
 Analyze_Skeleton_2D_time_series.mw
 Analyze_Stripes.mw
@@ -315,6 +322,7 @@ Arrow.mw
 Asd.mw
 Atlas_Toolkit.mw
 Auto_Crop.mw
+Auto_Crop_(guess_background_color).mw
 Auto_Local_Threshold.mw
 Auto_Threshold.mw
 Automated_workflow_for_parallel_Multiview_Reconstruction.mw
@@ -343,6 +351,7 @@ Batch.mw
 Batch_Mode.mw
 Batch_Processing.mw
 Batch_Processor.mw
+Batch_mode(MTrack).mw
 Batch_mode.mw
 Batch_processing.mw
 BeanShell.mw
@@ -389,6 +398,8 @@ BigWarp.mw
 Bigdataviewer_Scijava.mw
 Bill_of_Materials.mw
 Bio-Formats.mw
+Bio-Formats_(Remote).mw
+Bio-Formats_(Windowless).mw
 Bio-Formats_Exporter.mw
 Bio-Formats_Importer.mw
 Bio-Formats_Macro_Extensions.mw
@@ -609,10 +620,13 @@ Cookbook.mw
 Copy_Pixel_Size.mw
 Correct_3D_Drift.mw
 Correct_3D_drift.mw
+Correct_Particles_Drift_(based_on_ROI).mw
 Correcting_drift_in_FRAP_experiments.mw
 Courses.mw
 CoverMaker_plugin.mw
+Create_3D_calibration_(requires_astigmatism).mw
 Creating_Imglib2_images_in_MATLAB.mw
+Crop_(3D).mw
 Customize.mw
 Cutting_releases.mw
 DAIS.mw
@@ -645,6 +659,7 @@ Delayed_Snapshot.mw
 Delete_Slice_Range.mw
 DenoiSeg.mw
 Description_of_ImageJ's_plugin_architecture.mw
+Descriptor-based_registration_(2d%2F3d).mw
 Descriptor_based_registration.mw
 DetectInformationLoss.mw
 Detect_Information_Loss.mw
@@ -675,6 +690,7 @@ Diameterj.mw
 Dichromacy.mw
 Differentials.mw
 Diffraction_PSF_3D.mw
+Dilate_(3D).mw
 Directionality.mw
 Distance_Analysis.mw
 Distance_Map_to_Distance_Ridge.mw
@@ -706,12 +722,16 @@ Elastic_Alignment_and_Montage.mw
 Elastix.mw
 Ellipse_split.mw
 Endrov.mw
+Enhance_Local_Contrast_(CLAHE).mw
 EpiGraph.mw
+Erode_(3D).mw
 Events.mw
 Example_mamut.properties_file.mw
 Excessive_Traffic.mw
 Extended_Depth_Field.mw
 Extended_Depth_of_Field.mw
+Extended_Depth_of_Field_(Easy_mode)....mw
+Extended_Depth_of_Field_(Expert_mode)....mw
 Extended_Depth_of_Focus.mw
 Extensibility.mw
 Extensible.mw
@@ -787,7 +807,9 @@ Find_Connected_Regions.mw
 Find_Dimension_of_Raw_Image.mw
 Find_Maxima....mw
 Find_Peaks.mw
+Find_maxima_(Trackmate_module).mw
 Finer_Grained_Debian_Packages.mw
+First-instar_brain_(6.3MB).mw
 Fit_Sphere.mw
 Fit_ellipsoid.mw
 Fix_non-functional_Fiji_after_Update.mw
@@ -966,6 +988,7 @@ Image_Synthesizer.mw
 Imagescience.mw
 ImgLib1.mw
 ImgLib1:_iterating_through_pixel_data.mw
+ImgLib1_(deprecated).mw
 ImgLib2.mw
 ImgLib2_-_Accessibles.mw
 ImgLib2_-_Accessors.mw
@@ -1110,7 +1133,9 @@ Linux.mw
 Linux_command_line_tutorial.mw
 Lisp.mw
 List_all_threads.mw
+Load_Particles_(.tif_file_-_fast).mw
 Local_Thickness.mw
+Local_Thickness_(complete_process).mw
 Local_Thickness_to_Cleaned-Up_Local_Thickness.mw
 Logging.mw
 LoopBuilder.mw
@@ -1163,6 +1188,7 @@ Main_Page.mw
 Maintainer_page.mw
 Make_Fiji_Package.mw
 Make_Screencast.mw
+Malaria_Sporozoites_(9.2MB).mw
 Mamed.mw
 Manual.mw
 Manual_Tracking.mw
@@ -1177,7 +1203,9 @@ Maven.mw
 Maven_-_Frequently_Asked_Questions.mw
 Maven_FAQ.mw
 Max_Inscribed_Circles.mw
+Maximum_(3D).mw
 Maximum_Entropy_Threshold.mw
+Median_(3D).mw
 Merge_Conflicts.mw
 Metadata.mw
 MiNA_-_Mitochondrial_Network_Analysis.mw
@@ -1187,10 +1215,12 @@ Microscope_Focus_Quality.mw
 Microscope_Image_Quality.mw
 Microscope_Measurement_Tools.mw
 MicrotubuleTracker.mw
+Microtubule_polarity_and_(+)_end_vs._(-)_end_tracking.mw
 Miji.mw
 MiniMaven.mw
 Miniature_Faking.mw
 Minimum%2FMaximum%2FMedian.mw
+Minimum_(3D).mw
 Minimum_Cost_Z_surface_Projection.mw
 Misc.mw
 Mission.mw
@@ -1303,6 +1333,7 @@ PointPicker.mw
 Point_Analysis.mw
 Point_Picker.mw
 Prepare_Cover_Maker_Database.mw
+Preprocessing(MTrack).mw
 Preprocessing.mw
 Presentations.mw
 Principles.mw
@@ -1348,6 +1379,7 @@ Read_more_about_MSER_parameters.mw
 Read_more_about_Preprocessing.mw
 Read_more_about_the_RANSAC_parameters.mw
 Read_more_on_RANSAC_models.mw
+Read_more_on_microtubule_polarity_and_(+)_end_vs._(-)_end_tracking.mw
 RecViewer.mw
 Reconstruct_Dataset.mw
 Reconstruct_Reader.mw
@@ -1367,6 +1399,7 @@ Remove_Slope.mw
 Renjin.mw
 Renjin_Scripting.mw
 Replace_Red_with_Magenta.mw
+Replace_Red_with_Magenta_(system_clipboard).mw
 Report_a_Bug.mw
 Reproducibility.mw
 Reproducible.mw
@@ -1411,10 +1444,12 @@ SNT:_Scripting.mw
 SNT:_Step-By-Step_Instructions.mw
 SNT:_Tubular_Geodesics.mw
 SPIM_Bead_Registration.mw
+SPIM_Bead_Registration_(deprecated).mw
 SPIM_Opener.mw
 SPIM_Registration.mw
 SPIM_Registration_Method.mw
 SPIM_Registration_on_cluster.mw
+SPIM_Registration_on_cluster_(deprecated).mw
 SPIM_Workflow_Manager_For_HPC.mw
 SPIMage_processing_course.mw
 SSH_public_keys.mw
@@ -1423,6 +1458,7 @@ Same_Slice_in_Multiple_Images.mw
 SampEn2D.mw
 Samples.mw
 Sandbox:Test.mw
+Save_Particles_(.tif_file_-_fast).mw
 Save_as_animated_gif.mw
 Saving_and_Exporting.mw
 Scala.mw
@@ -1464,6 +1500,7 @@ Segmentation_Editor.mw
 Segmentation_evaluation_after_border_thinning_-_Script.mw
 Segmentation_evaluation_metrics_-_Script.mw
 Select_Bounding_Box.mw
+Select_Bounding_Box_(guess_background_color).mw
 SemVer.mw
 Semantic_Versioning.mw
 Semantic_versioning.mw
@@ -1476,6 +1513,7 @@ Shape_Smoothing.mw
 Share.mw
 Shepp-Logan.mw
 Shepp-Logan_Phantom.mw
+Shepp-Logan_Phantom_(Plugin).mw
 SheppLogan.mw
 Sholl.mw
 Sholl_Analysis....mw
@@ -1502,10 +1540,12 @@ Simple_Neurite_Tracer:_Using_MIP_Overlays.mw
 Simple_Neurite_Tracer:_Using_the_three_pane_view.mw
 Simple_Neurite_Tracer:_Wishlist.mw
 Simulate_Color_Blindness.mw
+Sintered_Alumina_(2.6MB).mw
 Siox_Segmentation.mw
 Skeleton_analysis_video_tutorial.mw
 Skeletonise.mw
 Skeletonize3D.mw
+Skeletonize_(2D%2F3D).mw
 Slice_Geometry.mw
 Slice_Labeler.mw
 Slice_Remover.mw
@@ -1524,6 +1564,7 @@ SoC_2010_Ideas.mw
 SoC_2010_Template.mw
 SoC_2011_Application.mw
 SoC_2011_Ideas.mw
+Sort_Particles_by_frame_(in_a_.tif_particle_table_file).mw
 Source.mw
 Source_Code.mw
 Source_code.mw
@@ -1532,11 +1573,13 @@ Spatial_Calibration.mw
 Spectral_Unmixing.mw
 Spheres_and_Tubes_in_3D.mw
 Spirals.mw
+Spirals_(Macro).mw
 SplineDeformationGenerator.mw
 Spline_Deformation_Generator.mw
 SpotCounter.mw
 SpotTracker.mw
 Spot_Intensity_Analysis.mw
+Spots_colocalization_(ComDet).mw
 Sprout_Morphology.mw
 Squassh.mw
 Stack-slice_Manipulations.mw
@@ -1560,6 +1603,7 @@ Status_bar.mw
 StereoMate.mw
 Stereoscopic_3D_Projection.mw
 Stitch_Collection_of_Images.mw
+Stitch_Directory_with_Images_(unknown_configuration).mw
 Stitch_Grid_of_Images.mw
 Stitch_Multiple_Series_or_Tile_Scan_File.mw
 Stitch_Sequence_of_Grids_of_Images.mw
@@ -1572,6 +1616,7 @@ Stitching_2D%2F3D.mw
 Stitching_data_acquisition.mw
 Stochastic_Denoise.mw
 Stochastic_Denoising.mw
+Stop_Analyse_Particles_(kills_the_threads).mw
 Strahler.mw
 Strahler_Analysis.mw
 Straighten....mw
@@ -1592,31 +1637,6 @@ TIA_.ser_folder_export.mw
 TIFF.mw
 TUNEL_Cell_Counter.mw
 TWS.mw
-Talk:Analyze_FRAP_movies_with_a_Jython_script.mw
-Talk:Auto_Threshold.mw
-Talk:Clojure_Scripting.mw
-Talk:Debugging_Exercises.mw
-Talk:DiameterJ.mw
-Talk:Distance_Transform_3D.mw
-Talk:Fiji.mw
-Talk:Image_Expression_Parser.mw
-Talk:Logging.mw
-Talk:Low_Light_Tracking_Tool.mw
-Talk:Manual_Tracking.mw
-Talk:Multithreaded_Image_Processing_in_JavaScript.mw
-Talk:NucleiWatershedSegmentation.mw
-Talk:Nuclei_Watershed_Separation.mw
-Talk:Ops_Deconvolution.mw
-Talk:Otsu_Thresholding%2Fto_do.mw
-Talk:Otsu_Thresholding.mw
-Talk:PlugIn_Design_Guidelines.mw
-Talk:Project_ideas.mw
-Talk:Script_Parameters.mw
-Talk:Script_parameters.mw
-Talk:TrackMate.mw
-Talk:Troubleshooting.mw
-Talk:Upcoming_Events.mw
-Talk:User_Guide_Layout_Test.mw
 TaskList.mw
 Team.mw
 Techniques.mw
@@ -1663,11 +1683,14 @@ Tracking.mw
 Tracks.mw
 Trainable_Segmentation.mw
 Trainable_Segmentation_Plugin.mw
+Trainable_Segmentation_Plugin_(deprecated).mw
 Trainable_Segmentation_Plugin_Implementation.mw
 Trainable_Weka_Segmentation.mw
 Trainable_Weka_Segmentation_-_How_to_compare_classifiers.mw
 Trainable_Weka_Segmentation_-_How_to_install_new_classifiers.mw
 TrakEM2.mw
+TrakEM2_(blank).mw
+TrakEM2_(from_template).mw
 TrakEM2_Archipelago.mw
 TrakEM2_TPlugIn.mw
 TrakEM2_add_more_sections%2Flayers_tutorial.mw
@@ -2015,6 +2038,7 @@ Volume_Calculator.mw
 Volume_Viewer.mw
 Voxelization.mw
 WCIF_ImageJ.mw
+Watershed_Algorithm_(ImageJ_plugin).mw
 Watershed_followed_by_MSER.mw
 Watershedding_and_Hough_transform_parameters.mw
 Wavefront_.OBJ_....mw

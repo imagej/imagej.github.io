@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Trainable Weka Segmentation - How to compare classifiers](Trainable_Weka_Segmentation_-_How_to_compare_classifiers "wikilink")
+1.  REDIRECT [Trainable Weka Segmentation - How to compare classifiers](Trainable_Weka_Segmentation_-_How_to_compare_classifiers )

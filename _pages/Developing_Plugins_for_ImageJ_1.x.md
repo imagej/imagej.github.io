@@ -7,15 +7,15 @@ categories: Tutorials,Development
 description: test description
 ---
 
-{% include imagej1 content='This page explains how to develop plugins with the ImageJ 1.x API. If you start developing a new plugin today, it is highly recommended to [develop for ImageJ2](Writing_plugins "wikilink").' %}
+{% include imagej1 content='This page explains how to develop plugins with the ImageJ 1.x API. If you start developing a new plugin today, it is highly recommended to [develop for ImageJ2](Writing_plugins ).' %}
 
 {% include develop-menu content='tutorials' %}{% include project content='ImageJ1 | describes content related to' %}
 
 # Plugin, script or macro?
 
-If you want to add a new feature to ImageJ, you can either [write a script or macro](Scripting_Help "wikilink"), or do it as a plugin. Scripts and macros are easier to learn, and hence often faster to develop. However, Java offers numerous advantages including better performance in many cases, as well as compile-time safety of the code.
+If you want to add a new feature to ImageJ, you can either [write a script or macro](Scripting_Help ), or do it as a plugin. Scripts and macros are easier to learn, and hence often faster to develop. However, Java offers numerous advantages including better performance in many cases, as well as compile-time safety of the code.
 
-If you are not sure which to choose, take a look at the [Scripting Help](Scripting_Help "wikilink") and try your hand at a script in a language that appeals to you. You can always convert it to a Java plugin later if the execution speed becomes an issue.
+If you are not sure which to choose, take a look at the [Scripting Help](Scripting_Help ) and try your hand at a script in a language that appeals to you. You can always convert it to a Java plugin later if the execution speed becomes an issue.
 
 If you are certain that you want to write a plugin in Java, keep on reading\!
 
@@ -93,13 +93,13 @@ public class My_Plugin implements PlugIn {
   - Some functions which are easy to call via macros are not available via the public Java API (e.g. {% include bc content='Image | Stacks | Plot Z-axis profile...'%})
   - It is often quicker to write macros
 
-# Rapid prototyping with the [Script Editor](Script_Editor "wikilink")
+# Rapid prototyping with the [Script Editor](Script_Editor )
 
 {% include warning-box content='Using the Script Editor for Java development is not currently recommended.  
 For Java development, proceed to the [Getting Started with Maven](#Getting_started_with_Maven "wikilink") section.  
-If you would like to use the script editor, see the sections for the [other supported languages](Scripting#Supported_languages "wikilink").' %}
+If you would like to use the script editor, see the sections for the [other supported languages](Scripting#Supported_languages ).' %}
 
-<s>There a few good reasons why you should try the [Script Editor](Script_Editor "wikilink") for rapid prototyping of your plugins or scripts:
+<s>There a few good reasons why you should try the [Script Editor](Script_Editor ) for rapid prototyping of your plugins or scripts:
 
   - Supports Jython, JRuby, Javascript, Clojure, Java, BeanShell, and ImageJ's Macro Language
   - Syntax highlighting
@@ -111,21 +111,21 @@ If you would like to use the script editor, see the sections for the [other supp
 
 ## Quick Start
 
-<s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [Script Editor](Script_Editor "wikilink") ({% include bc content='File | New | Script'%}), and select the *Process Pixels* menu item from the {% include bc content='Templates | Java'%} menu. Then, run the plugin with *Run\>Run*.</s>
+<s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [Script Editor](Script_Editor ) ({% include bc content='File | New | Script'%}), and select the *Process Pixels* menu item from the {% include bc content='Templates | Java'%} menu. Then, run the plugin with *Run\>Run*.</s>
 
 # Getting started with Maven
 
 The {% include github org='imagej ' repo='example-legacy-plugin ' label='example-legacy-plugin project ' %} provides a working example, and documentation, illustrating how an ImageJ plugin should be structured from a "best practices in Maven" point of view.
 
-Using this project requires a basic understanding of [Git](Git "wikilink") and [Maven](Maven "wikilink"); thus if you are already familiar with the ImageJ 1.x API, this is a reasonable starting point to learn the [project management](Project_management "wikilink") tools used in [ImageJ2 development](Writing_plugins "wikilink").
+Using this project requires a basic understanding of [Git](Git ) and [Maven](Maven ); thus if you are already familiar with the ImageJ 1.x API, this is a reasonable starting point to learn the [project management](Project_management ) tools used in [ImageJ2 development](Writing_plugins ).
 
 # Basic workflow
 
 All plugin development tends to follow a consistent "Design - Build - Test" workflow. Practically, this looks like:
 
-  - Make changes to the source code (e.g. in [Eclipse](Eclipse "wikilink"))
-  - Build your plugin's .jar from the source code (e.g. with [Maven](Maven "wikilink"))
-  - Move the plugin to the [plugins directory](Plugin#Installing_plugins_manually "wikilink") of an existing ImageJ installation
+  - Make changes to the source code (e.g. in [Eclipse](Eclipse ))
+  - Build your plugin's .jar from the source code (e.g. with [Maven](Maven ))
+  - Move the plugin to the [plugins directory](Plugin#Installing_plugins_manually ) of an existing ImageJ installation
   - (Re)start ImageJ and run the plugin to test the behavior
 
 ... and repeat until your plugin is working as intended.
@@ -208,7 +208,7 @@ int index = image.getStackIndex(channel, slice, frame);
 ImageProcessor ip = stack.getProcessor(index);
 ```
 
-**Note:** for historical reasons, slice indices (and channel and frame indices as well) start at <u>1</u>. This is in contrast, e.g. to the x, y coordinates, which start at <u>0</u> (as one might be used to from other computer languages except BASIC, Pascal and [MATLAB](MATLAB "wikilink")).
+**Note:** for historical reasons, slice indices (and channel and frame indices as well) start at <u>1</u>. This is in contrast, e.g. to the x, y coordinates, which start at <u>0</u> (as one might be used to from other computer languages except BASIC, Pascal and [MATLAB](MATLAB )).
 
 ## Working with the pixels' values
 
@@ -307,7 +307,7 @@ The {% include javadoc-ij1 package='ij/process ' class='ImageProcessor ' %} clas
 **Tip:** use the Script Editor's functions in the *Tools* menu:
 
   - *Open Help for Class...* (opens the JavaDoc for a class in a browser),
-  - *Open .java file for class...* (requires the respective source files to be present in the Fiji directory, such as after [Downloading and Building Fiji From Source](Downloading_and_Building_Fiji_From_Source "wikilink"), or
+  - *Open .java file for class...* (requires the respective source files to be present in the Fiji directory, such as after [Downloading and Building Fiji From Source](Downloading_and_Building_Fiji_From_Source ), or
   - *Open .java file for menu item...* (also needs the source files).
 
 ## Plots
@@ -417,16 +417,16 @@ See the {% include github org='imagej ' repo='tutorials ' path='maven-projects/c
 
 ## Further tips
 
-Please see also the developers tips how to [use ImageJ's API effectively](Tips_for_developers#Using_ImageJ_effectively "wikilink").
+Please see also the developers tips how to [use ImageJ's API effectively](Tips_for_developers#Using_ImageJ_effectively ).
 
 # Next steps
 
 See guides on:
 
-  - [Developing in Eclipse](Developing_Fiji_in_Eclipse#Create_the_Eclipse_Projects "wikilink")
-  - [Plugin distribution](Distribution "wikilink")
-  - [Development lifecycle](Development_Lifecycle "wikilink")
-  - [Debugging practice](Debugging_Exercises "wikilink")
-  - [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet "wikilink")
+  - [Developing in Eclipse](Developing_Fiji_in_Eclipse#Create_the_Eclipse_Projects )
+  - [Plugin distribution](Distribution )
+  - [Development lifecycle](Development_Lifecycle )
+  - [Debugging practice](Debugging_Exercises )
+  - [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet )
 
  

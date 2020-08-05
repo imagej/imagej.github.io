@@ -7,15 +7,15 @@ categories:
 description: test description
 ---
 
-{% include info-box name='Selective Plane Illumination Microscopy Bead-based Registration ' software='ImageJ ' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak ' maintainer='Stephan Preibisch ' filename='SPIM\_Registration.jar ' released='February 2010 ' latest-version='October 2011 ' category='[SPIM Registration](_Category_Registration "wikilink") ' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch) ' %}
+{% include info-box name='Selective Plane Illumination Microscopy Bead-based Registration ' software='ImageJ ' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak ' maintainer='Stephan Preibisch ' filename='SPIM\_Registration.jar ' released='February 2010 ' latest-version='October 2011 ' category='[SPIM Registration](_Category_Registration ) ' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch) ' %}
 
 ## Citation
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
-  - S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media_Nmeth0610-418.pdf "wikilink") [Supplement](Media_Nmeth0610-418-S1.pdf "wikilink")
+  - S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media_Nmeth0610-418.pdf ) [Supplement](Media_Nmeth0610-418-S1.pdf )
 
-For technical details about the registration method and SPIM imaging see [SPIM Registration Method](SPIM_Registration_Method "wikilink").
+For technical details about the registration method and SPIM imaging see [SPIM Registration Method](SPIM_Registration_Method ).
 
 ## Introduction
 
@@ -25,18 +25,18 @@ The developed bead-based registration framework is able to reconstruct long-term
 
 ## Overview of the SPIM bead-based registration plugin
 
-***Please note:*** *the bead-based registration has been rewritten and now replaces the "old" plugin collection (Registration, Advanced Registration, MultiChannel Registration) which has been moved to the deprecated folder. For information regarding these outdated plugins please refer to this [page](SPIM_Bead_Registration_\(deprecated\) "wikilink").*
+***Please note:*** *the bead-based registration has been rewritten and now replaces the "old" plugin collection (Registration, Advanced Registration, MultiChannel Registration) which has been moved to the deprecated folder. For information regarding these outdated plugins please refer to this [page](SPIM_Bead_Registration_deprecated ).*
 
 The bead-registration plugins offers two registration options:
 
   - Single-channel
   - Multi-channel (same beads are visible in different channels)
 
-The typical option is single-channel registration, even if you want to process a multi-channel acquisitions. You can apply the registration of one channel later to other channels in the [multi-view fusion plugin](Multi-View_Fusion "wikilink"). Multi-channel registration is only required if the **same beads** are visible in several channels.
+The typical option is single-channel registration, even if you want to process a multi-channel acquisitions. You can apply the registration of one channel later to other channels in the [multi-view fusion plugin](Multi-View_Fusion ). Multi-channel registration is only required if the **same beads** are visible in several channels.
 
 Both options work in the exactly same way and have very similar options. The additional options of multi-channel registration are explained in the last section.
 
-***Important note:** the output of the plugin are not images, but only registration matrices that serve as basis for either the [multi-view fusion plugin](Multi-View_Fusion "wikilink") or the [multi-view deconvolution plugin](multi-view_deconvolution_plugin "wikilink"). An overview of the complete registration and fusion process can be found [here](SPIM_Registration "wikilink").*
+***Important note:** the output of the plugin are not images, but only registration matrices that serve as basis for either the [multi-view fusion plugin](Multi-View_Fusion ) or the [multi-view deconvolution plugin](multi-view_deconvolution_plugin ). An overview of the complete registration and fusion process can be found [here](SPIM_Registration ).*
 
 ## How to use the plugin
 

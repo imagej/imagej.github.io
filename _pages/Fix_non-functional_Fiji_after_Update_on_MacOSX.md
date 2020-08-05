@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Fix non-functional Fiji after Update](Fix_non-functional_Fiji_after_Update "wikilink")
+1.  REDIRECT [Fix non-functional Fiji after Update](Fix_non-functional_Fiji_after_Update )

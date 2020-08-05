@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji ' repo='StackReg ' source='StackReg\_.java ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='StackReg ' maintainer='Philippe Thévenaz ' author='Philippe Thévenaz ' source=source released='16/09/2010 ' latest-version='16/09/2010 ' status=' ' category='[:Category:Plugins](_Category_Plugins "wikilink") ' website='http://bigwww.epfl.ch/thevenaz/stackreg/ ' %}
+{% include info-box software='ImageJ ' name='StackReg ' maintainer='Philippe Thévenaz ' author='Philippe Thévenaz ' source=source released='16/09/2010 ' latest-version='16/09/2010 ' status=' ' category='[:Category:Plugins](_Category_Plugins ) ' website='http://bigwww.epfl.ch/thevenaz/stackreg/ ' %}
 
 This plugin is described in detail on the [BIG website](http://bigwww.epfl.ch/thevenaz/stackreg/).
 

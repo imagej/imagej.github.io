@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Developing using native libraries](Developing_using_native_libraries "wikilink")
+1.  REDIRECT [Developing using native libraries](Developing_using_native_libraries )

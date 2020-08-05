@@ -15,9 +15,9 @@ description: test description
 
 This tutorial will explain how to **add an update site to your install of ImageJ** such that the plugins maintained there will be installed and updated just like core ImageJ plugins.
 
-## Start the [Updater](Updater "wikilink")
+## Start the [Updater](Updater )
 
-First, start the [updater](updater "wikilink"):
+First, start the [updater](updater ):
 
 ![How\_to\_setup\_a\_plugin\_distribution\_site-1.jpg](/images/pages/How to setup a plugin distribution site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
 
@@ -37,7 +37,7 @@ After you have selected your desired update site(s), close the dialog. The list 
 
 {% include warning-box content='If an entry"s action is """Update It""", that means it is changing an existing plugin. This action is dangerous and can break other plugins, or ImageJ itself.  
 Ideally the maintainers of these sites would work with the core ImageJ maintainers to centralize important plugins.  
-When you find plugin conflicts between update sites, you can greatly help the community by [starting a discussion](Help "wikilink") with the maintainers\!' %}
+When you find plugin conflicts between update sites, you can greatly help the community by [starting a discussion](Help ) with the maintainers\!' %}
 
 ## Choose and download plugins
 

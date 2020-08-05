@@ -15,7 +15,7 @@ Ask them to point to the green and then to the blue spiral arms. And then explai
 
 ## The macro
 
-Any self-respecting scientist will doubt your statement. This is where the source code comes in. In Fiji, press the {% include key content='Shift' %} key and then open {% include bc content='File | Open Samples | Spirals (macro)'%} which will open the macro in the [Script Editor](Script_Editor "wikilink") instead of running it directly.
+Any self-respecting scientist will doubt your statement. This is where the source code comes in. In Fiji, press the {% include key content='Shift' %} key and then open {% include bc content='File | Open Samples | Spirals (macro)'%} which will open the macro in the [Script Editor](Script_Editor ) instead of running it directly.
 
 Alternatively, you can drag & drop [this link](https://raw.github.com/fiji/fiji/master/plugins/Scripts/File/Open_Samples/Spirals_.ijm) to your main window.
 

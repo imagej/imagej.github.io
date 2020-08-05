@@ -7,7 +7,7 @@ categories: News
 description: test description
 ---
 
-We just released a new major version of [TrackMate\_](TrackMate_ "wikilink"), our framework to perform automated and manual tracking of blob-like structures.
+We just released a new major version of [TrackMate\_](TrackMate_ ), our framework to perform automated and manual tracking of blob-like structures.
 
 Most visible changes involve data export and basic analysis, user interface, performance improvement ... There is no new tracking and detection algorithm in this release. We hope nevertheless that you will enjoy this brand new version.
 
@@ -21,7 +21,7 @@ Most changes in this version are for developers and are not displayed in the tex
 
 #### Highlights
 
-  - TrackMate now uses [ImgLib2](ImgLib2 "wikilink") internally, and is therefore ready to be moved to [ImageJ2](ImageJ2 "wikilink").
+  - TrackMate now uses [ImgLib2](ImgLib2 ) internally, and is therefore ready to be moved to [ImageJ2](ImageJ2 ).
   - TrackMate now computes edge features (on top of spot and track features). These features enable the immediate measure of velocity, displacement, etc...
   - Tracks can be colored in the Hyperstack displayer, in the 3D viewer and in TrackScheme using indifferently track or edge features.
 

@@ -27,7 +27,7 @@ There are two ways to start up the Op Finder:
 2.  Toggle button to change between a [user](#For_Users "wikilink") and [developer](#For_Developers "wikilink") view.
 3.  Play button for [running the selected Op](#Running_Ops "wikilink").
 4.  Copy button to copy the selected cell contents.
-5.  Help button to open up the [Wiki reference](ImageJ_Ops "wikilink") page in your browser.
+5.  Help button to open up the [Wiki reference](ImageJ_Ops ) page in your browser.
 6.  Status area showing success/failure notifications e.g., for copying or running Ops.
 7.  Namespaces and Op types: these can be expanded to explore the tree-based organization of Ops.
 8.  Op implementation: the leaves of this tree tell us what parameter options are available for each Op type. We interpret this particular example as "There is an Add Op in the Math namespace, that operates on an image and a numeric value".
@@ -75,7 +75,7 @@ This view provides a comprehensive list of available Ops implementations. For ex
 
 ## Filtering
 
-The Op Finder includes [fuzzy filtering](Wikipedia_Approximate_string_matching "wikilink") to find Ops of interest. When filtering:
+The Op Finder includes [fuzzy filtering](Wikipedia_Approximate_string_matching ) to find Ops of interest. When filtering:
 
   - Namespaces are hidden
   - In [User view](#For_Users "wikilink"), the complete simplified Op entry is filtered.
@@ -92,14 +92,14 @@ Code snippets are available in the [Developer view](#For_Developers "wikilink").
   -   
     ![1-select-op.png](/images/pages/1-select-op.png "1-select-op.png")
 
-2\. In the [Script Editor](Script_Editor "wikilink") (the keyboard shortcut {% include key content='{' %} (open curly bracket) opens the editor), we need to add a reference to the `OpService` which will be our entry point for Op usage:
+2\. In the [Script Editor](Script_Editor ) (the keyboard shortcut {% include key content='{' %} (open curly bracket) opens the editor), we need to add a reference to the `OpService` which will be our entry point for Op usage:
 
 ``` python
 # @OpService ops
 ```
 
   -   
-    **Note:** this guide is written in [Python](Jython_Scripting "wikilink") but any scripting language will work
+    **Note:** this guide is written in [Python](Jython_Scripting ) but any scripting language will work
 
 3\. Now we need the code call for our Convolve Op, so we switch to the [Developer view](#For_Developers "wikilink"). The code is long, but remember we can [copy](#Parts_of_the_Op_Finder "wikilink"):
 
@@ -137,7 +137,7 @@ ops.run("filter.convolve", Img, Img, RandomAccessibleInterval, long[], OutOfBoun
 out = ops.run("filter.convolve", Img, RandomAccessibleInterval)
 ```
 
-5\. At this stage, we can not actually run our code yet. The pasted snippet serves as a guideline for what types of parameters are needed and produced. The next step is to ask the framework for instances of these parameters by adding [@Parameters](Script_parameters "wikilink") to our script:
+5\. At this stage, we can not actually run our code yet. The pasted snippet serves as a guideline for what types of parameters are needed and produced. The next step is to ask the framework for instances of these parameters by adding [@Parameters](Script_parameters ) to our script:
 
 ``` python
 # @OpService ops
@@ -153,16 +153,16 @@ out = ops.run("filter.convolve", input, kernel)
 
 6\. Our script is done\! If we open a base image and kernel in ImageJ we can run our script. The `OpService` is populated automatically by the ImageJ framework, and an input window is automatically created to select the images:
 
-[border"1200px](File_4-run-op.png "wikilink")
+[border"1200px](File_4-run-op.png )
 
 ## Running Ops
 
 Although you can run selected Ops through the Op Finder, this method **lacks reproducibility** and should not be used as a substitute for a proper script or plugin when using Ops in a scientific workflow. This functionality *is* intended to allow a rapid preview of what effect an Op will have on a dataset.
 
-The [play button](#Parts_of_the_Op_Finder "wikilink") essentially automates the process of turning an Op [into a script](#Code_Snippets "wikilink"): optional parameters are discarded and required parameters are [annotated](Script_parameters "wikilink"). Because of this, Ops with arcane or unusual parameters may fail to run because the framework does not know how to provide them.
+The [play button](#Parts_of_the_Op_Finder "wikilink") essentially automates the process of turning an Op [into a script](#Code_Snippets "wikilink"): optional parameters are discarded and required parameters are [annotated](Script_parameters ). Because of this, Ops with arcane or unusual parameters may fail to run because the framework does not know how to provide them.
 
 Thus it is recommended to run Ops primarily from the [User view](#For_Users "wikilink"), as these Ops focus on images and numbers, which can automatically be provided by the framework (via open images and input panels, respectively).
 
 # Further Reading
 
-  - For more in-depth development information, see [the guide to writing plugins](Writing_plugins "wikilink").
+  - For more in-depth development information, see [the guide to writing plugins](Writing_plugins ).

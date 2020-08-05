@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [:Category:Tutorials](_Category_Tutorials "wikilink")
+1.  REDIRECT [:Category:Tutorials](_Category_Tutorials )

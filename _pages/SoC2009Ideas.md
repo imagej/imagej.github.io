@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SoC 2009 Ideas](SoC_2009_Ideas "wikilink")
+1.  REDIRECT [SoC 2009 Ideas](SoC_2009_Ideas )

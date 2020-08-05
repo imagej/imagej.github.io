@@ -7,6 +7,6 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Kyle Harrington ' affiliation='University of Idaho, Moscow ' github='kephale ' gravatar='9e4ed4484fd425f3f178bfeed4777b31 ' website='http://kyleharrington.com/ ' %}Kyle Harrington developed the [FunImageJ](FunImageJ "wikilink") plugin to facilitate concise [Clojure](Clojure "wikilink") code, which is also an easy way to write standalone [ImageJ](ImageJ "wikilink")/[ImgLib2](ImgLib2 "wikilink")-based programs in Clojure.
+{% include user-box name='Kyle Harrington ' affiliation='University of Idaho, Moscow ' github='kephale ' gravatar='9e4ed4484fd425f3f178bfeed4777b31 ' website='http://kyleharrington.com/ ' %}Kyle Harrington developed the [FunImageJ](FunImageJ ) plugin to facilitate concise [Clojure](Clojure ) code, which is also an easy way to write standalone [ImageJ](ImageJ )/[ImgLib2](ImgLib2 )-based programs in Clojure.
 
-Kyle is also a developer on the [SciView](SciView "wikilink") project for development of a replacement 3D visualization tool for [ImageJ](ImageJ "wikilink") and [KNIME](KNIME "wikilink").
+Kyle is also a developer on the [SciView](SciView ) project for development of a replacement 3D visualization tool for [ImageJ](ImageJ ) and [KNIME](KNIME ).

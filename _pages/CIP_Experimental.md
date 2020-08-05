@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-This page provides user documentation for some experimental functions of the [CIP](CIP "wikilink") package
+This page provides user documentation for some experimental functions of the [CIP](CIP ) package
 
 {% include cip content='Navigation' %}
 
@@ -27,11 +27,11 @@ This function allow to track the region defined in a list of label map image and
     **gap radius** : a scalar representing the maximum distance, in pixel, at which to search the next region when closing a gap (i.e. if the region was not detected in some frames). This value could be larger than radius as the region is likely to be further away if not detected for a few frames.  
     **split** : a boolean value indicating whether or not to allow track splitting. Default is False. Set it to True if you want to detect some mitosis event for instance.  
     **merge** : a boolean value indicating whether or not to allow track merging. Default is False. Set it to True if you want to detect some vesicles fusion for instance.  
-    **output** : a string in {'measure', 'trackmate', 'all'} determining how the tracking is returned. If value is set to 'measure' a [measure table](CIP_Utilities#measure "wikilink") is returned, if set to 'trackmate' a TrackmateModel object is returned.
+    **output** : a string in {'measure', 'trackmate', 'all'} determining how the tracking is returned. If value is set to 'measure' a [measure table](CIP_Utilities#measure ) is returned, if set to 'trackmate' a TrackmateModel object is returned.
 
 <span style="font-size:110%">**Output**</span>  
     **measure**: a measure table providing all the necessary information to analyze and display the tracks. The measure rows provide spot position ordered by trackId, branchId (i.e. the sub branch of a track) and time. The branch graph for each track is defined by the parameter branchIn and branch out indicatin the branchId of the connected branch. The measure table can be visualized with cip.show  
-    **trackmate model**: a TrackmateModel instance that can be further used for visualisation or saving the track information to disk. One can refer to [ trackmate scripting resource](Scripting_TrackMate "wikilink") for more information on how to use trackmate model. [cip.show](CIP_Utilities#show "wikilink") also provide some convenience to display result in trackschme or in image overlay.
+    **trackmate model**: a TrackmateModel instance that can be further used for visualisation or saving the track information to disk. One can refer to [ trackmate scripting resource](Scripting_TrackMate ) for more information on how to use trackmate model. [cip.show](CIP_Utilities#show ) also provide some convenience to display result in trackschme or in image overlay.
 
 <span style="font-size:110%">**Example**</span>  
 one can find an example script [here](https://github.com/benoalo/CIP/blob/master/scripts/tracking_cip.py)

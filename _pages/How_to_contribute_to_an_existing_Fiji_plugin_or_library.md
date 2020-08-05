@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [How to contribute to an existing plugin or library](How_to_contribute_to_an_existing_plugin_or_library "wikilink")
+1.  REDIRECT [How to contribute to an existing plugin or library](How_to_contribute_to_an_existing_plugin_or_library )

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Shepp-Logan Phantom](Shepp-Logan_Phantom "wikilink")
+1.  REDIRECT [Shepp-Logan Phantom](Shepp-Logan_Phantom )

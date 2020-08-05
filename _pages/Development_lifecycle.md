@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Development Lifecycle](Development_Lifecycle "wikilink")
+1.  REDIRECT [Development Lifecycle](Development_Lifecycle )

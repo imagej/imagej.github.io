@@ -37,7 +37,7 @@ So far, this has been extensively tested only on Linux machines, but it should b
 
 ### Existing Archipelago Plugins
 
-The following plugins are available by [ adding](How_to_follow_a_3rd_party_update_site#Add_update_sites "wikilink") the Archipelago update site.
+The following plugins are available by [ adding](How_to_follow_a_3rd_party_update_site#Add_update_sites ) the Archipelago update site.
 
 #### TrakEM2 Archipelago
 
@@ -45,7 +45,7 @@ This plugin allows clusterized least-squares and elastic alignment in TrakEM2. R
 
 #### Batch Weka Segmentation
 
-This plugin accelerates image classification with the [ Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") plugin. To use it, create a classifier and save it (ie, a .model file).
+This plugin accelerates image classification with the [ Trainable Weka Segmentation](Trainable_Weka_Segmentation ) plugin. To use it, create a classifier and save it (ie, a .model file).
 
 Run the batch segmentation plugin by selecting Plugins -\> Batch -\> Weka Segmentation 2D
 

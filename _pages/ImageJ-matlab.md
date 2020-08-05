@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [MATLAB\_Scripting](MATLAB_Scripting "wikilink")
+1.  REDIRECT [MATLAB\_Scripting](MATLAB_Scripting )

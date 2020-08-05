@@ -15,7 +15,7 @@ Voxelization is the process of converting a data structures that store geometric
 
 ### Requirements
 
-Enabled [ThreeDViewer](ThreeDViewer "wikilink") update site
+Enabled [ThreeDViewer](ThreeDViewer ) update site
 
 ### Steps
 
@@ -29,6 +29,6 @@ Enabled [ThreeDViewer](ThreeDViewer "wikilink") update site
 
 This voxelization procedures creates an image that represents the \*surface\* of the mesh. Firstly, it may be possible that the geometry of the surface does not voxelize well at particular resolutions, resulting in gaps in the output image (i.e. the result is not "watertight"). In these cases either try another resolution, or try filling in the gaps with either manual touchup, or image processing routines, such as dilation.
 
-If a filled volume is desired, then take a watertight image (see above) and use the Flood Fill (3D) utility available within [Fiji](Fiji "wikilink") under the {% include bc content='Plugins|Process|Flood Fill (3D)'%}.
+If a filled volume is desired, then take a watertight image (see above) and use the Flood Fill (3D) utility available within [Fiji](Fiji ) under the {% include bc content='Plugins|Process|Flood Fill (3D)'%}.
 
 

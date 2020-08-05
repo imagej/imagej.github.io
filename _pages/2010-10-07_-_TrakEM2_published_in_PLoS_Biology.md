@@ -7,7 +7,7 @@ categories: News
 description: test description
 ---
 
-Big day for Fiji. [TrakEM2](TrakEM2 "wikilink") which is a BIG part of Fiji played a central role in the paper published this week in [PLoS Biology](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.1000502) titled
+Big day for Fiji. [TrakEM2](TrakEM2 ) which is a BIG part of Fiji played a central role in the paper published this week in [PLoS Biology](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.1000502) titled
 
 "An Integrated Micro- and Macroarchitectural Analysis of the Drosophila Brain by Computer-Assisted Serial Section Electron Microscopy."
 

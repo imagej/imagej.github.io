@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [LUMoS Spectral Unmixing](LUMoS_Spectral_Unmixing "wikilink")
+1.  REDIRECT [LUMoS Spectral Unmixing](LUMoS_Spectral_Unmixing )

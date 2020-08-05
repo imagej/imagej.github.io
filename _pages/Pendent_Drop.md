@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include info-box name='Pendent Drop ' software='Fiji ' author=' [Adrian Daerr](http://www.msc.univ-paris-diderot.fr/~daerr/) ' maintainer=' [Adrian Daerr](http://www.msc.univ-paris-diderot.fr/~daerr/) ' update-site=' [\[List of update sites]([List_of_update_sites "wikilink") http://sites.imagej.net/Daerr/\] ' source='https://github.com/adaerr/pendent-drop ' released='September 28, 2010 ' latest-version='version 2 (September 20, 2015) ' status='stable, active ' %}
+{% include info-box name='Pendent Drop ' software='Fiji ' author=' [Adrian Daerr](http://www.msc.univ-paris-diderot.fr/~daerr/) ' maintainer=' [Adrian Daerr](http://www.msc.univ-paris-diderot.fr/~daerr/) ' update-site=' [\[List of update sites]([List_of_update_sites ) http://sites.imagej.net/Daerr/\] ' source='https://github.com/adaerr/pendent-drop ' released='September 28, 2010 ' latest-version='version 2 (September 20, 2015) ' status='stable, active ' %}
 
 ![eauContrasteMaxFit.jpg](/images/pages/EauContrasteMaxFit.jpg "eauContrasteMaxFit.jpg")
 
@@ -25,7 +25,7 @@ The pendent drop method is commonly used to measure surface tensions of liquids.
 
 The latest stable version is uploaded to the Fiji update site http://sites.imagej.net/Daerr/
 
-Follow the procedure described on the Fiji wiki at [How to follow a 3rd party update site](How_to_follow_a_3rd_party_update_site "wikilink") to have Fiji download and install the plugin (Fiji will keep track of updates).
+Follow the procedure described on the Fiji wiki at [How to follow a 3rd party update site](How_to_follow_a_3rd_party_update_site ) to have Fiji download and install the plugin (Fiji will keep track of updates).
 
 ## Documentation, links and ressources
 

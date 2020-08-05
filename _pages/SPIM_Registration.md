@@ -11,16 +11,16 @@ description: test description
 
 ## Important Note
 
-{% include warning-box content='"""""Please Note: This version of the software is outdated. It will be part of Fiji for the time being, but I highly recommend using the new [Multiview Reconstruction Plugin](Multiview-Reconstruction "wikilink"). It is much more powerful, flexible and completely integrated with the [BigDataViewer](BigDataViewer "wikilink")."""""' %}
+{% include warning-box content='"""""Please Note: This version of the software is outdated. It will be part of Fiji for the time being, but I highly recommend using the new [Multiview Reconstruction Plugin](Multiview-Reconstruction ). It is much more powerful, flexible and completely integrated with the [BigDataViewer](BigDataViewer )."""""' %}
 
 ## Citation
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
-  - S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media_Nmeth0610-418.pdf "wikilink") [Supplement](Media_Nmeth0610-418-S1.pdf "wikilink")
+  - S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media_Nmeth0610-418.pdf ) [Supplement](Media_Nmeth0610-418-S1.pdf )
   - S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", *Nature Methods*, **11**(6):645-648. [Webpage](http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html)
 
-For technical details about the registration method and SPIM imaging see also [SPIM Registration Method](SPIM_Registration_Method "wikilink").
+For technical details about the registration method and SPIM imaging see also [SPIM Registration Method](SPIM_Registration_Method ).
 
 ## Introduction & Overview
 
@@ -32,17 +32,17 @@ We developed several algorithms for the registration and fusion of multi-angle S
 
   - **Multi-view registration:** Aligns all views of the dataset  
       
-    \* [Bead-based registration](SPIM_Bead_Registration "wikilink"): Uses flourescent beads to achieve the alignment. This method is very fast and solves timeseries registration, but relies on the incorporation of fluorescent beads. The plugin can be found in Plugins-\>SPIM Registration-\>Bead-based registration.
-      - [Segmentation-based registration](Segmentation-based_registration "wikilink"): Uses structures within the sample like nuclei to achieve registration. It is slower and timelapse registration might be a sample dependent problem, but does not require any special sample prepration.
+    \* [Bead-based registration](SPIM_Bead_Registration ): Uses flourescent beads to achieve the alignment. This method is very fast and solves timeseries registration, but relies on the incorporation of fluorescent beads. The plugin can be found in Plugins-\>SPIM Registration-\>Bead-based registration.
+      - [Segmentation-based registration](Segmentation-based_registration ): Uses structures within the sample like nuclei to achieve registration. It is slower and timelapse registration might be a sample dependent problem, but does not require any special sample prepration.
 
 <!-- end list -->
 
   - **Multi-view fusion:** Computes the output image(s) based on the registration results  
       
-    \* [Multi-view fusion](Multi-View_Fusion "wikilink"): Performs a weighted average fusion of the dataset, which includes blending and/or content-based weightening. The plugin can be found in Plugins-\>SPIM Registration-\>Multi-view fusion.
-      - [Multi-view deconvolution](Multi-View_Deconvolution "wikilink"): Performs a multi-view deconvolution of the dataset which requires an estimation of the point spread function.
+    \* [Multi-view fusion](Multi-View_Fusion ): Performs a weighted average fusion of the dataset, which includes blending and/or content-based weightening. The plugin can be found in Plugins-\>SPIM Registration-\>Multi-view fusion.
+      - [Multi-view deconvolution](Multi-View_Deconvolution ): Performs a multi-view deconvolution of the dataset which requires an estimation of the point spread function.
 
-***Please note:*** *the SPIM registration has been rewritten and now replaces the "old" plugin collection (Registration, Advanced Registration, MultiChannel Registration) which has been moved to the deprecated folder. For information regarding these outdated plugins please refer to this [page](SPIM_Bead_Registration_\(deprecated\) "wikilink").*
+***Please note:*** *the SPIM registration has been rewritten and now replaces the "old" plugin collection (Registration, Advanced Registration, MultiChannel Registration) which has been moved to the deprecated folder. For information regarding these outdated plugins please refer to this [page](SPIM_Bead_Registration_deprecated ).*
 
 ## Detailed tutorials
 
@@ -70,6 +70,6 @@ Multi-view SPIM datasets are typically rather large, therefore it is recommended
 
 ## Cluster processing
 
-See the dedicated [page](Automated_workflow_for_parallel_Multiview_Reconstruction "wikilink") describing an automated workflow for processing SPIM data from Lighsheet.Z1 and OpenSPIM on the MPI-CBG cluster.
+See the dedicated [page](Automated_workflow_for_parallel_Multiview_Reconstruction ) describing an automated workflow for processing SPIM data from Lighsheet.Z1 and OpenSPIM on the MPI-CBG cluster.
 
  

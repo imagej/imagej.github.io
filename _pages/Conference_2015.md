@@ -11,7 +11,7 @@ description: test description
 
 # Information
 
-The 2015 [ImageJ User and Developer Conference](Conference "wikilink") complemented the EU meetings in Luxembourg and offered workshops to improve software knowledge and usage covering both beginner/user and advanced/developer topics. The conference provided a community forum for ImageJ development over the past three years and also featured shorter presentations highlighting case studies, plugins, and solutions to common problems.
+The 2015 [ImageJ User and Developer Conference](Conference ) complemented the EU meetings in Luxembourg and offered workshops to improve software knowledge and usage covering both beginner/user and advanced/developer topics. The conference provided a community forum for ImageJ development over the past three years and also featured shorter presentations highlighting case studies, plugins, and solutions to common problems.
 
 ## Location
 
@@ -39,7 +39,7 @@ The focus of this conference was on community, so *tools being presented were ma
 
 ## Registration
 
-Due to generous support from the University of Wisconsin-Madison and [LOCI](LOCI "wikilink"), there was no registration fee for this conference.
+Due to generous support from the University of Wisconsin-Madison and [LOCI](LOCI ), there was no registration fee for this conference.
 
 ## Visiting Madison
 
@@ -105,16 +105,16 @@ With this conference, there were no registration fees, and there was a free rece
 TODO GOOGLE SPREADSHEET WIDGET {% include clear%}
 
 
-For full details including abstracts and presentation recordings, see the [Conference 2015 Program](Conference_2015_Program "wikilink") page.
+For full details including abstracts and presentation recordings, see the [Conference 2015 Program](Conference_2015_Program ) page.
 
 # Organization
 
 ## Organizers
 
-  - {% include person content='Eliceiri' %}, [Laboratory for Optical and Computational Instrumentation](LOCI "wikilink") (LOCI) at [UW-Madison](http://wisc.edu/)
-  - Kristy Wendt, [Laboratory for Optical and Computational Instrumentation](LOCI "wikilink") (LOCI) at [UW-Madison](http://wisc.edu/)
-  - {% include person content='Rueden' %}, [Laboratory for Optical and Computational Instrumentation](LOCI "wikilink") (LOCI) at [UW-Madison](http://wisc.edu/)
-  - {% include person content='Hinerm' %}, [Laboratory for Optical and Computational Instrumentation](LOCI "wikilink") (LOCI) at [UW-Madison](http://wisc.edu/)
+  - {% include person content='Eliceiri' %}, [Laboratory for Optical and Computational Instrumentation](LOCI ) (LOCI) at [UW-Madison](http://wisc.edu/)
+  - Kristy Wendt, [Laboratory for Optical and Computational Instrumentation](LOCI ) (LOCI) at [UW-Madison](http://wisc.edu/)
+  - {% include person content='Rueden' %}, [Laboratory for Optical and Computational Instrumentation](LOCI ) (LOCI) at [UW-Madison](http://wisc.edu/)
+  - {% include person content='Hinerm' %}, [Laboratory for Optical and Computational Instrumentation](LOCI ) (LOCI) at [UW-Madison](http://wisc.edu/)
   - Andreas Jahnen, [Luxembourg Institute of Science and Technology](http://www.list.lu/)
 
 ## Advisory committee

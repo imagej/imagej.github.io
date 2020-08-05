@@ -58,4 +58,4 @@ You will be asked for the following parameters:
 
 After clicking **OK**, the bounding box will be estimated and another dialog will show a preview of the bounding box size and expected memory/disk space requirements for a fused image of the contents of the bounding box. Click **OK** again to complete the definition.
 
-Go back to the [main page](BigStitcher#Documentation "wikilink")
+Go back to the [main page](BigStitcher#Documentation )

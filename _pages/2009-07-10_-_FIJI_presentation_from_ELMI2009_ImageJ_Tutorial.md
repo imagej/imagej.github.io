@@ -11,14 +11,14 @@ By popular (AAAAaaaaahem - Cough\!) demand the Fiji presentation from the ImageJ
 
 During those tutorials, several Fiji Wiki page tutorials were used, which were created for teaching at that event:
 
-[SpatialCalibration](SpatialCalibration "wikilink")
+[SpatialCalibration](SpatialCalibration )
 
-[ColocalizationAnalysis](ColocalizationAnalysis "wikilink")
+[ColocalizationAnalysis](ColocalizationAnalysis )
 
-[DetectInformationLoss](DetectInformationLoss "wikilink")
+[DetectInformationLoss](DetectInformationLoss )
 
 Some other tutorial are also already present there.
 
-We encourage everyone to add more tutorials: Simply create a page, fill it with tutorial content, and make sure to add the \[\[Category:Tutorials\]\] tag to the bottom of the page, so it appears in the tutorial category, which can be found [here](_Category_Tutorials "wikilink")
+We encourage everyone to add more tutorials: Simply create a page, fill it with tutorial content, and make sure to add the \[\[Category:Tutorials\]\] tag to the bottom of the page, so it appears in the tutorial category, which can be found [here](_Category_Tutorials )
 
- [F](Category_Tutorials "wikilink")
+ [F](Category_Tutorials )

@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-From Monday, December 3, 2018 through Friday, December 7, 2018, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosts \~10 developers at the [Center for Systems Biology](http://www.csbdresden.de/) in Dresden, Germany for a [hackathon](hackathon "wikilink") to develop KNIME Image Processing and [ImageJ2](ImageJ2 "wikilink")/[Fiji](Fiji "wikilink") core infrastructure and [plugins](plugins "wikilink").
+From Monday, December 3, 2018 through Friday, December 7, 2018, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosts \~10 developers at the [Center for Systems Biology](http://www.csbdresden.de/) in Dresden, Germany for a [hackathon](hackathon ) to develop KNIME Image Processing and [ImageJ2](ImageJ2 )/[Fiji](Fiji ) core infrastructure and [plugins](plugins ).
 
 Gitter channel: https://gitter.im/juglab/Hack1812
 
@@ -54,7 +54,7 @@ rsync mirror to pacific.mpi-cbg.de
 
 ### Labkit as Labeling Editor for KNIME Image Processing
 
-  - Node for editing labels in KNIME based on [Labkit](Labkit "wikilink") was created.
+  - Node for editing labels in KNIME based on [Labkit](Labkit ) was created.
   - Work is not entirely finish. We plan to finish this work during the Ostrava Hackathon.
   - Labkit was extended, and is now able to handle multiple images.
   - A labeling datatype to store labels, and track modifications was developed.

@@ -12,11 +12,11 @@ description: test description
 
 ## Introduction
 
-This article is the second in the series dedicated to extending TrackMate with your own modules. Here we focus on creating **feature analyzers**: small algorithms that calculate one or several numerical values for the TrackMate results. The [previous article](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate "wikilink") focused on writing edge analyzers: algorithms that allocate a numerical value to the link between two spots.
+This article is the second in the series dedicated to extending TrackMate with your own modules. Here we focus on creating **feature analyzers**: small algorithms that calculate one or several numerical values for the TrackMate results. The [previous article](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate ) focused on writing edge analyzers: algorithms that allocate a numerical value to the link between two spots.
 
 In this article, we will create a **feature analyzer for tracks** that calculate numerical values for whole tracks. To make it simple, and also to answer the request of a colleague, we will make an analyzer that reports the location of the starting and ending points of a track.
 
-Actually, we will not learn much beyond what we saw previously. The only little change is that our analyzer will generate 6 numerical values instead of 1. We will use the [SciJava](SciJava "wikilink") discovery mechanism as before, but just for the sake of it, we will introduce how to **disable** modules.
+Actually, we will not learn much beyond what we saw previously. The only little change is that our analyzer will generate 6 numerical values instead of 1. We will use the [SciJava](SciJava ) discovery mechanism as before, but just for the sake of it, we will introduce how to **disable** modules.
 
 ## Track analyzers
 
@@ -37,7 +37,7 @@ the does the actual feature calculation for the specified tracks, and
 public boolean isLocal();
 ```
 
-that specified whether the calculation of the features for one track affects only this track or all the tracks. For the discussion on local *vs* non-local feature analyzers, I report you to the [previous article item](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate#isLocal.28.29 "wikilink").
+that specified whether the calculation of the features for one track affects only this track or all the tracks. For the discussion on local *vs* non-local feature analyzers, I report you to the [previous article item](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate#isLocal.28.29 ).
 
 ## Track feature analyzer header
 
@@ -219,7 +219,7 @@ In the next article we will build a spot analyzer and complicate things a bit, b
 
 ## How to disable a module
 
-Suppose you have in your code tree a TrackMate module you wish not to use anymore. The trivial way would be to delete its class, but here is another one what allows us to introduce [SciJava](SciJava "wikilink") plugin annotation parameters.
+Suppose you have in your code tree a TrackMate module you wish not to use anymore. The trivial way would be to delete its class, but here is another one what allows us to introduce [SciJava](SciJava ) plugin annotation parameters.
 
 The `@Plugin( type = TrackAnalyzer.class )` annotation accepts extra parameters on top of the `type` one. They all take the shape of a `key = value` pair, and a few of them allow the fine tuning of the TrackMate module integration.
 
@@ -235,6 +235,6 @@ Like this:
 
 Disabled modules are not even instantiated. They are as good as dead, except that you can change your mind easily. By the way, you can see that the TrackMate source tree has many of these disabled modules...
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 14:23, 11 March 2014 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez )) 14:23, 11 March 2014 (CDT)
 
 

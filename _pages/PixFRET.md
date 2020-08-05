@@ -15,15 +15,15 @@ description: test description
 {% capture source%}
 {% include github org='fmi-basel ' repo='pixfret ' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='PixFRET ' author='Jerome Feige, Daniel Sage, Walter Wahli, Beatrice Desvergne, Laurent Gelman ' maintainer=maintainer source=source released='2005 ' latest-version='1.5.2 ' status='stable ' category='[Analysis](_Category_Analysis "wikilink") ' %}
+{% include info-box software='Fiji ' name='PixFRET ' author='Jerome Feige, Daniel Sage, Walter Wahli, Beatrice Desvergne, Laurent Gelman ' maintainer=maintainer source=source released='2005 ' latest-version='1.5.2 ' status='stable ' category='[Analysis](_Category_Analysis ) ' %}
 
 ## Installation
 
-To install the plugin, activate the **PixFRET** [update site](How_to_follow_a_3rd_party_update_site "wikilink") and restart Fiji.
+To install the plugin, activate the **PixFRET** [update site](How_to_follow_a_3rd_party_update_site ) and restart Fiji.
 
 ## Usage
 
-Please refer to the [user guide (PDF)](Media_PixFRET_userguide.pdf "wikilink").
+Please refer to the [user guide (PDF)](Media_PixFRET_userguide.pdf ).
 
 ## Publication
 

@@ -27,7 +27,7 @@ The first 2 hours of a *C.elegans* embryo development, followed in 3D over time 
 
 ![TrackMate\_Celegans\_lineage\_detail.png](/images/pages/TrackMate Celegans lineage detail.png "TrackMate_Celegans_lineage_detail.png")
 
-A detail of the corresponding unannotated lineage visualized in TrackScheme. The full lineage of this one hour of imaging is [there](_Image_TrackMate_Celegans_lineage.pdf "wikilink").
+A detail of the corresponding unannotated lineage visualized in TrackScheme. The full lineage of this one hour of imaging is [there](_Image_TrackMate_Celegans_lineage.pdf ).
 
 ![TrackMate\_Split\_Merge\_Gapclosing.gif](/images/pages/TrackMate Split Merge Gapclosing.gif "TrackMate_Split_Merge_Gapclosing.gif")
 
@@ -66,9 +66,9 @@ The segmentation / filtering / particle-linking processes and results are visual
 
 Several automated segmentation and linking algorithms are provided. But you are also offered to edit the results manually, or even to completely skip the automatic steps, and perform fully manual segmentation and/or linking.
 
-Some tools for track and spot analysis are included. Various plots can be made directly from the plugin and for instance used to derive numerical results from the tracks. If they are not enough, functions are provided to export the whole results to other analysis software such as [MATLAB](MATLAB "wikilink").
+Some tools for track and spot analysis are included. Various plots can be made directly from the plugin and for instance used to derive numerical results from the tracks. If they are not enough, functions are provided to export the whole results to other analysis software such as [MATLAB](MATLAB ).
 
-TrackMate relies on several different libraries and plugins for data manipulation, analysis and visualization. This can be a pitfall when distributing a complex plugin, but this is where the Fiji magic comes into play. All dependencies are dealt with by through the Fiji updater. Installing TrackMate is easy as calling the [Fiji Updater](Fiji_Updater "wikilink"), and the plugin must work out of the box. If this does not work for you, then it is a bug and we commit to fix it.
+TrackMate relies on several different libraries and plugins for data manipulation, analysis and visualization. This can be a pitfall when distributing a complex plugin, but this is where the Fiji magic comes into play. All dependencies are dealt with by through the Fiji updater. Installing TrackMate is easy as calling the [Fiji Updater](Fiji_Updater ), and the plugin must work out of the box. If this does not work for you, then it is a bug and we commit to fix it.
 
 A strong emphasis is made on performance, and TrackMate will take advantage of multi-cores hardware.
 
@@ -88,7 +88,7 @@ We spent a considerable amount of time making TrackMate extensible in every aspe
 
 You can even modify the GUI, and remove, edit or insert new steps in the wizard. This can be useful for instance if you want to implement a tracking scheme that solves simultaneously the segmentation part and the particle linking part, but still want to take advantage of TrackMate components.
 
-Do you want to make your new algorithms usable by the reviewers of your submitted paper? Upload your extended version of TrackMate to a private update site, as [explained here](How_to_set_up_and_populate_an_update_site "wikilink"), then send the link to the reviewers. Now that the paper has been accepted (congratulations), you want to make it accessible to anyone? Just put the link to the update site in the article. All of this can happen without us even noticing.
+Do you want to make your new algorithms usable by the reviewers of your submitted paper? Upload your extended version of TrackMate to a private update site, as [explained here](How_to_set_up_and_populate_an_update_site ), then send the link to the reviewers. Now that the paper has been accepted (congratulations), you want to make it accessible to anyone? Just put the link to the update site in the article. All of this can happen without us even noticing.
 
 TrackMate was developed to serve as a tool for Life-Science image analysis community, so that new tracking tools can be developed more easily and quickly, and so that end-users can use them to perform their own research. We will support you if need help to reuse it.
 
@@ -102,26 +102,26 @@ The [TrackMate paper](http://www.sciencedirect.com/science/article/pii/S10462023
 
 https://github.com/fiji/TrackMate/releases
 
-  - [TrackMate FAQ](TrackMate_FAQ "wikilink")
+  - [TrackMate FAQ](TrackMate_FAQ )
 
 ### For users
 
-  - [Getting started with TrackMate](Getting_started_with_TrackMate "wikilink") is a basic tutorial that explains how TrackMate works on an easy image. You should start here.
-  - [TrackScheme](TrackScheme "wikilink"): the tool for the visualization, editing and analysis of tracks.
-  - [Manual tracking with TrackMate](Manual_tracking_with_TrackMate "wikilink")
-  - [Manual editing of tracks using TrackMate](Manual_editing_of_tracks_using_TrackMate "wikilink") shows how to manually curate and edit tracking results.
-  - [Track analysis using TrackMate](Track_analysis_using_TrackMate "wikilink")
-  - [TrackMate Algorithms](TrackMate_Algorithms "wikilink") details and documents the automated segmentation algorithms, particle-linking algorithms, etc.. currently implemented in TrackMate.
-  - [Using TrackMate with MATLAB](Using_TrackMate_with_MATLAB "wikilink") documents the [MATLAB](MATLAB "wikilink") functions shipped with Fiji that allows importing data generated with TrackMate into [MATLAB](MATLAB "wikilink").
-  - [TrackMate Performance](TrackMate_Performance "wikilink") reports various measures of the performance of its components. Performance reports include execution time and memory usage.
-  - [TrackMate Accuracy](TrackMate_Accuracy "wikilink") reports various measures of the accuracy of its components. Accuracy reports how well TrackMate can generate scientifically correct results, and compare its output to known ground truth.
+  - [Getting started with TrackMate](Getting_started_with_TrackMate ) is a basic tutorial that explains how TrackMate works on an easy image. You should start here.
+  - [TrackScheme](TrackScheme ): the tool for the visualization, editing and analysis of tracks.
+  - [Manual tracking with TrackMate](Manual_tracking_with_TrackMate )
+  - [Manual editing of tracks using TrackMate](Manual_editing_of_tracks_using_TrackMate ) shows how to manually curate and edit tracking results.
+  - [Track analysis using TrackMate](Track_analysis_using_TrackMate )
+  - [TrackMate Algorithms](TrackMate_Algorithms ) details and documents the automated segmentation algorithms, particle-linking algorithms, etc.. currently implemented in TrackMate.
+  - [Using TrackMate with MATLAB](Using_TrackMate_with_MATLAB ) documents the [MATLAB](MATLAB ) functions shipped with Fiji that allows importing data generated with TrackMate into [MATLAB](MATLAB ).
+  - [TrackMate Performance](TrackMate_Performance ) reports various measures of the performance of its components. Performance reports include execution time and memory usage.
+  - [TrackMate Accuracy](TrackMate_Accuracy ) reports various measures of the accuracy of its components. Accuracy reports how well TrackMate can generate scientifically correct results, and compare its output to known ground truth.
   - Various very useful tips and tricks contributed by users:
       - Dave Mason on using pivot tables to get track statistics based on spot features: [1](https://forum.image.sc/t/mean-intensity-of-tracks-using-trackmate/11848/5)
 
 ### For developers
 
-  - [Scripting TrackMate](Scripting_TrackMate "wikilink") shows how to do tracking using a scripting language, *e.g.* from the Fiji [Script Editor](Script_Editor "wikilink"). These example scripts will show you how to use TrackMate as a library and familiarize yourself with the API.
-  - [Using TrackMate from MATLAB](Using_TrackMate_from_MATLAB "wikilink") shows how to use [MATLAB](MATLAB "wikilink") as a scripting language for TrackMate, and benefit from [MATLAB](MATLAB "wikilink") facilities.
+  - [Scripting TrackMate](Scripting_TrackMate ) shows how to do tracking using a scripting language, *e.g.* from the Fiji [Script Editor](Script_Editor ). These example scripts will show you how to use TrackMate as a library and familiarize yourself with the API.
+  - [Using TrackMate from MATLAB](Using_TrackMate_from_MATLAB ) shows how to use [MATLAB](MATLAB ) as a scripting language for TrackMate, and benefit from [MATLAB](MATLAB ) facilities.
 
 But the really interesting part for developers is the ability to extend TrackMate.
 
@@ -133,13 +133,13 @@ The subject of extending TrackMate is not completely trivial. However, recent ad
 
 The following tutorials show how to integrate a module of each kind in TrackMate. They are listed by increasing complexity, and it is a good idea to practice them in this order.
 
-  - [How to write your own edge feature analyzer algorithm for TrackMate](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate "wikilink")
-  - [How to write your own track feature analyzer algorithm for TrackMate](How_to_write_your_own_track_feature_analyzer_algorithm_for_TrackMate "wikilink")
-  - [How to write your own spot feature analyzer algorithm for TrackMate](How_to_write_your_own_spot_feature_analyzer_algorithm_for_TrackMate "wikilink")
-  - [How to write your own viewer for TrackMate](How_to_write_your_own_viewer_for_TrackMate "wikilink")
-  - [How to write custom actions for TrackMate](How_to_write_custom_actions_for_TrackMate "wikilink")
-  - [How to write your own detection algorithm for TrackMate](How_to_write_your_own_detection_algorithm_for_TrackMate "wikilink")
-  - [How to write your own particle-linking algorithm for TrackMate](How_to_write_your_own_particle-linking_algorithm_for_TrackMate "wikilink")
+  - [How to write your own edge feature analyzer algorithm for TrackMate](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate )
+  - [How to write your own track feature analyzer algorithm for TrackMate](How_to_write_your_own_track_feature_analyzer_algorithm_for_TrackMate )
+  - [How to write your own spot feature analyzer algorithm for TrackMate](How_to_write_your_own_spot_feature_analyzer_algorithm_for_TrackMate )
+  - [How to write your own viewer for TrackMate](How_to_write_your_own_viewer_for_TrackMate )
+  - [How to write custom actions for TrackMate](How_to_write_custom_actions_for_TrackMate )
+  - [How to write your own detection algorithm for TrackMate](How_to_write_your_own_detection_algorithm_for_TrackMate )
+  - [How to write your own particle-linking algorithm for TrackMate](How_to_write_your_own_particle-linking_algorithm_for_TrackMate )
 
 ## Known problems
 
@@ -240,7 +240,7 @@ Principle:
 
 ### Documentation
 
-  - [Find maxima detector](Find_maxima_\(Trackmate_module\) "wikilink") from Thorsten Wagner.
+  - [Find maxima detector](Find_maxima_Trackmate_module ) from Thorsten Wagner.
 
 ## Who uses TrackMate
 
@@ -248,11 +248,11 @@ It turns out that TrackMate has a decent user base, as exemplified by a crude se
 
 ## TrackMate components
 
-TrackMate actually depends on many other Fiji plugins or libraries. The [Fiji Build System](Fiji_Build_System "wikilink") system and the [Fiji Updater](Fiji_Updater "wikilink") ensures that these dependencies will not bother you. We list them here, with their author when they are not obviously linked:
+TrackMate actually depends on many other Fiji plugins or libraries. The [Fiji Build System](Fiji_Build_System ) system and the [Fiji Updater](Fiji_Updater ) ensures that these dependencies will not bother you. We list them here, with their author when they are not obviously linked:
 
-  - [ImgLib2](ImgLib2 "wikilink") is used everywhere we need dealing with pixels. Relying on imglib made it trivial to have a plugin that deals indifferently with 2D or 3D images. In particular, we use code from Stephan Preibisch, {% include person content='Saalfeld' %}, Larry Lindsey and Lee Kamentsky.
-  - [ImageJA](ImageJA "wikilink") is of course the entry point for the plugin. We use it display the images as 2D slices and in the HyperStack displayer.
-  - The [3D Viewer](3D_Viewer "wikilink") is used for 3D display.
+  - [ImgLib2](ImgLib2 ) is used everywhere we need dealing with pixels. Relying on imglib made it trivial to have a plugin that deals indifferently with 2D or 3D images. In particular, we use code from Stephan Preibisch, {% include person content='Saalfeld' %}, Larry Lindsey and Lee Kamentsky.
+  - [ImageJA](ImageJA ) is of course the entry point for the plugin. We use it display the images as 2D slices and in the HyperStack displayer.
+  - The [3D Viewer](3D_Viewer ) is used for 3D display.
   - Internally, the tracks are represented by a mathematical {% include wikipedia title='Graph %28mathematics%29' text='graph'%}. To manipulate it, we take advantage of the excellent [JGraphT](http://www.jgrapht.org/) library.
   - TrackScheme, the TrackMate component that is used to visualize and edit tracks uses [JGraphX](http://www.jgraph.com/jgraph.html) for its UI.
   - To display plots and histograms we use [JFreeChart](http://www.jfree.org/jfreechart/).

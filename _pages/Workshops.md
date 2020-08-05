@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Presentations\#Workshops](Presentations#Workshops "wikilink")
+1.  REDIRECT [Presentations\#Workshops](Presentations#Workshops )

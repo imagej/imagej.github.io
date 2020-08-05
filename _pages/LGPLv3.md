@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [LGPL](LGPL "wikilink")
+1.  REDIRECT [LGPL](LGPL )

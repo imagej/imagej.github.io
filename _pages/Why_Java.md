@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Philosophy\#Why\_Java.3F](Philosophy#Why_Java.3F "wikilink")
+1.  REDIRECT [Philosophy\#Why\_Java.3F](Philosophy#Why_Java.3F )

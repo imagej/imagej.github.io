@@ -7,13 +7,13 @@ categories: News,Hackathons
 description: test description
 ---
 
-A great [Fiji](Fiji "wikilink") hackathon took place between Saturday, December 10 and Sunday, December 18, 2011 at the [MPI-CBG](http://www.mpi-cbg.de/), which besides hosting also provided generous sponsoring of food and accommodation, and again brought together biologists and developers associated with the various bioimage analysis projects.
+A great [Fiji](Fiji ) hackathon took place between Saturday, December 10 and Sunday, December 18, 2011 at the [MPI-CBG](http://www.mpi-cbg.de/), which besides hosting also provided generous sponsoring of food and accommodation, and again brought together biologists and developers associated with the various bioimage analysis projects.
 
 ## Topic
 
-The topic was Integration, including: [Fiji](Fiji "wikilink") + [ImageJ2](ImageJ2 "wikilink"), [OMERO](OMERO "wikilink") + [ImageJ](ImageJ "wikilink"), [KNIME](KNIME "wikilink") + [ImageJ](ImageJ "wikilink"), [Icy](Icy "wikilink") + [ImageJ](ImageJ "wikilink"), [OMERO](OMERO "wikilink") + [Icy](Icy "wikilink"), [KNIME](KNIME "wikilink") + [OMERO](OMERO "wikilink") and more.
+The topic was Integration, including: [Fiji](Fiji ) + [ImageJ2](ImageJ2 ), [OMERO](OMERO ) + [ImageJ](ImageJ ), [KNIME](KNIME ) + [ImageJ](ImageJ ), [Icy](Icy ) + [ImageJ](ImageJ ), [OMERO](OMERO ) + [Icy](Icy ), [KNIME](KNIME ) + [OMERO](OMERO ) and more.
 
-This is the hackathon where the [SciJava](SciJava "wikilink") idea was originally born\!
+This is the hackathon where the [SciJava](SciJava ) idea was originally born\!
 
 ## Participants
 
@@ -23,29 +23,29 @@ Here is the list of participants together with their primary affiliation:
 
 |                        |                                                               |
 | ---------------------- | ------------------------------------------------------------- |
-| Kevin Eliceiri         | [ImageJ2](ImageJ2 "wikilink")                                 |
-| Curtis Rueden          | [IJ2](IJ2 "wikilink")/[Fiji](Fiji "wikilink")                 |
-| Barry DeZonia          | [IJ2](IJ2 "wikilink")                                         |
-| Johannes Schindelin    | [Fiji](Fiji "wikilink")                                       |
-| Christian Dietz        | [KNIME](KNIME "wikilink")                                     |
-| Martin Horn            | [KNIME](KNIME "wikilink")                                     |
-| Melissa Linkert        | [OME](OME "wikilink") ([Bio-Formats](Bio-Formats "wikilink")) |
-| Erwin Frise            | [Fiji](Fiji "wikilink")/[uManager](uManager "wikilink")       |
-| Mark Longair           | [Fiji](Fiji "wikilink")                                       |
-| Josh Moore             | [OMERO](OMERO "wikilink")                                     |
-| Jean-Marie Burel       | [OMERO](OMERO "wikilink")                                     |
+| Kevin Eliceiri         | [ImageJ2](ImageJ2 )                                 |
+| Curtis Rueden          | [IJ2](IJ2 )/[Fiji](Fiji )                 |
+| Barry DeZonia          | [IJ2](IJ2 )                                         |
+| Johannes Schindelin    | [Fiji](Fiji )                                       |
+| Christian Dietz        | [KNIME](KNIME )                                     |
+| Martin Horn            | [KNIME](KNIME )                                     |
+| Melissa Linkert        | [OME](OME ) ([Bio-Formats](Bio-Formats )) |
+| Erwin Frise            | [Fiji](Fiji )/[uManager](uManager )       |
+| Mark Longair           | [Fiji](Fiji )                                       |
+| Josh Moore             | [OMERO](OMERO )                                     |
+| Jean-Marie Burel       | [OMERO](OMERO )                                     |
 | Jurgen Mayer           | CRG Barcelona                                                 |
-| Stephan Preibisch      | [Fiji](Fiji "wikilink")/[ImgLib](ImgLib "wikilink")           |
-| Benjamin Schmid        | [Fiji](Fiji "wikilink")/[3D Viewer](3D_Viewer "wikilink")     |
-| Pavel Tomancak         | [Fiji](Fiji "wikilink")                                       |
-| Daniel James White     | [Fiji](Fiji "wikilink")/[Coloc 2](Coloc_2 "wikilink")/SPIM    |
-| Michael Doube          | [Fiji](Fiji "wikilink")/[BoneJ](BoneJ "wikilink")             |
-| Tobias Pietzsch        | [Fiji](Fiji "wikilink")/[ImgLib](ImgLib "wikilink")           |
+| Stephan Preibisch      | [Fiji](Fiji )/[ImgLib](ImgLib )           |
+| Benjamin Schmid        | [Fiji](Fiji )/[3D Viewer](3D_Viewer )     |
+| Pavel Tomancak         | [Fiji](Fiji )                                       |
+| Daniel James White     | [Fiji](Fiji )/[Coloc 2](Coloc_2 )/SPIM    |
+| Michael Doube          | [Fiji](Fiji )/[BoneJ](BoneJ )             |
+| Tobias Pietzsch        | [Fiji](Fiji )/[ImgLib](ImgLib )           |
 | Peter Pitrone          | SPIM                                                          |
-| Fernando Carrillo      | [Fiji](Fiji "wikilink")                                       |
-| Fabrice de Chaumont    | [Icy](Icy "wikilink")                                         |
-| Stephane Dallongeville | [Icy](Icy "wikilink")                                         |
-| Alex Krull             | [Fiji](Fiji "wikilink")                                       |
+| Fernando Carrillo      | [Fiji](Fiji )                                       |
+| Fabrice de Chaumont    | [Icy](Icy )                                         |
+| Stephane Dallongeville | [Icy](Icy )                                         |
+| Alex Krull             | [Fiji](Fiji )                                       |
 | Jiri Matas             | Computer Vision (Prague) special guest                        |
 | Boris Flach            | Computer Vision (Prague) special guest                        |
 

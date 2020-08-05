@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='mutterer ' repo='figurej ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='FigureJ ' maintainer=maintainer author=author source=source status='stable ' category='[Visualization](_Category_Visualization "wikilink"), [Plugins](_Category_Plugins "wikilink") ' website='https://imagejdocu.tudor.lu/plugin/utilities/figurej/start ' %}This plugin allows easy creation of figures for publications, reports, projects.
+{% include info-box software='ImageJ ' name='FigureJ ' maintainer=maintainer author=author source=source status='stable ' category='[Visualization](_Category_Visualization ), [Plugins](_Category_Plugins ) ' website='https://imagejdocu.tudor.lu/plugin/utilities/figurej/start ' %}This plugin allows easy creation of figures for publications, reports, projects.
 
 The idea of FigureJ is to consider **figure panels as views into datasets**.
 

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BoneJ2\#Inter-trabecular\_angles](BoneJ2#Inter-trabecular_angles "wikilink")
+1.  REDIRECT [BoneJ2\#Inter-trabecular\_angles](BoneJ2#Inter-trabecular_angles )

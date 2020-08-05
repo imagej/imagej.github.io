@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Local Thickness](Local_Thickness "wikilink")
+1.  REDIRECT [Local Thickness](Local_Thickness )

@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Curtis Rueden ' gravatar='63df759e2779af56fd050a968ff98d09 ' affiliation='UW-Madison [LOCI](LOCI "wikilink") ' loci='curtis-rueden ' forum='ctrueden ' github='ctrueden ' stackoverflow='1207769/ctrueden ' openhub='ctrueden ' osrc='ctrueden ' linkedin='pub/curtis-rueden/15/372/52a ' researchgate='Curtis\_Rueden ' scholar='VqKfxYcAAAAJ ' orcid='0000-0001-7055-6707 ' arxiv='rueden\_c\_1 ' website='https://restlesscoder.net/ ' %}Curtis Rueden directs the [software development efforts](https://loci.wisc.edu/software/home) of [LOCI](LOCI "wikilink"). He is the principal architect of [ImageJ2](ImageJ2 "wikilink"), and the current maintainer of the [Fiji](Fiji "wikilink") distribution of ImageJ.
+{% include user-box name='Curtis Rueden ' gravatar='63df759e2779af56fd050a968ff98d09 ' affiliation='UW-Madison [LOCI](LOCI ) ' loci='curtis-rueden ' forum='ctrueden ' github='ctrueden ' stackoverflow='1207769/ctrueden ' openhub='ctrueden ' osrc='ctrueden ' linkedin='pub/curtis-rueden/15/372/52a ' researchgate='Curtis\_Rueden ' scholar='VqKfxYcAAAAJ ' orcid='0000-0001-7055-6707 ' arxiv='rueden\_c\_1 ' website='https://restlesscoder.net/ ' %}Curtis Rueden directs the [software development efforts](https://loci.wisc.edu/software/home) of [LOCI](LOCI ). He is the principal architect of [ImageJ2](ImageJ2 ), and the current maintainer of the [Fiji](Fiji ) distribution of ImageJ.
 
 ## What is Curtis working on?
 
@@ -16,15 +16,15 @@ description: test description
 Here is a summary of my current projects, in priority order. (Last updated: 2020-May-01)
 
 1.  [pom-scijava](https://github.com/scijava/pom-scijava) 29.0.0 release.
-2.  **[LOCI](LOCI "wikilink") web server downsizing.** Retiring and migrating services.
-3.  Update [Fiji](Fiji "wikilink") distribution to use [JBRSDK8](https://confluence.jetbrains.com/display/JBR/JetBrains+Runtime) version of Java.
+2.  **[LOCI](LOCI ) web server downsizing.** Retiring and migrating services.
+3.  Update [Fiji](Fiji ) distribution to use [JBRSDK8](https://confluence.jetbrains.com/display/JBR/JetBrains+Runtime) version of Java.
 4.  [PyImageJ](https://github.com/imagej/pyimagej) 1.0.0 bug-fixes + release.
 5.  Reconcile latest ImageJ 1.x version with ImageJ2 patching logic ([imagej/ij1-patcher\#47](https://github.com/imagej/ij1-patcher/pull/47))
 6.  [JPMS/Jigsaw](https://openjdk.java.net/projects/jigsaw/) modularization. ([scijava/incubator](https://github.com/scijava/incubator))
 7.  **Document community expectations.** Formally define and clarify who is responsible for maintaining which plugins, to what extents ([Project developer roles](https://forum.image.sc/t/project-developer-roles/206), [ctrueden/ctr-scripts:dev-find](https://github.com/ctrueden/ctr-scripts/blob/master/dev-find), [fiji/fiji:bin/team-hints.perl](https://github.com/fiji/fiji/blob/master/bin/team-hints.perl))
 8.  **ImageJ + Java 8.** Complete the migration to Java 8 with a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to Java 8 if needed. Retire the Java-8 update site, distributing its contents back onto the ImageJ and Fiji update sites.
-9.  **GitHub issue reporting plugin.** The Fiji BugZilla and ImageJ Trac are now static content only. The [Report a Bug](Report_a_Bug "wikilink") plugin needs to send reports to GitHub instead. ([scijava/scijava-plugins-issues-github](https://github.com/scijava/scijava-plugins-issues-github))
-10. **Rich Image.** Improve the [ImageJ Common](ImageJ_Common "wikilink") data model to support metadata (e.g., spatial transformations) as a first-class citizen. ([imagej/imagej-common@rich](https://github.com/imagej/imagej-common/compare/rich), [imagej/janelia-hackathon-2016](https://github.com/imagej/janelia-hackathon-2016))
+9.  **GitHub issue reporting plugin.** The Fiji BugZilla and ImageJ Trac are now static content only. The [Report a Bug](Report_a_Bug ) plugin needs to send reports to GitHub instead. ([scijava/scijava-plugins-issues-github](https://github.com/scijava/scijava-plugins-issues-github))
+10. **Rich Image.** Improve the [ImageJ Common](ImageJ_Common ) data model to support metadata (e.g., spatial transformations) as a first-class citizen. ([imagej/imagej-common@rich](https://github.com/imagej/imagej-common/compare/rich), [imagej/janelia-hackathon-2016](https://github.com/imagej/janelia-hackathon-2016))
 11. **SCIFIO blockization.** ([scifio/scifio\#283](https://github.com/scifio/scifio/issues/283))
 12. **ImageJ Launcher.** Switch to a JavaFX-based native launcher. Retire the current ImageJ Launcher. ([imagej/imagej-launcher\#33](https://github.com/imagej/imagej-launcher/issues/33))
 13. **ImageJ Electron app.** Shared memory between Java, JavaScript and Python. ([imagej/imagej-electron-app](https://github.com/imagej/imagej-electron-app))
@@ -35,22 +35,22 @@ I am fully committed to all of the above projects. They are driven by me, making
 
 I am also coordinating and/or leading and/or advising and/or helping with, but not sole implementer for, the following additional projects:
 
-1.  (with {% include person content='Xanthorapedia' %}) **[FLIMJ](FLIMJ "wikilink").**
-2.  (with {% include person content='gselzer' %}) **SciJava Ops** ([scijava/scijava-ops](https://github.com/scijava/scijava-ops)) and **[ImageJ Ops](ImageJ_Ops "wikilink").**
+1.  (with {% include person content='Xanthorapedia' %}) **[FLIMJ](FLIMJ ).**
+2.  (with {% include person content='gselzer' %}) **SciJava Ops** ([scijava/scijava-ops](https://github.com/scijava/scijava-ops)) and **[ImageJ Ops](ImageJ_Ops ).**
 3.  (with {% include person content='elevans' %}) New ImageJ web site. ([imagej/imagej.github.io](https://github.com/imagej/imagej.github.io/tree/jekyll-prototype))
-4.  (with {% include person content='etarena' %}) **[Coloc 2](Coloc_2 "wikilink")** algorithms in [ImageJ Ops](ImageJ_Ops "wikilink").
-5.  (with {% include person content='Kharrington' %} and {% include person content='skalarproduktraum' %}) **ImageJ in 3D.** Unification of ImageJ 3D visualization efforts around [SciView](SciView "wikilink").
-6.  (with {% include person content='Pietzsch' %}) **Visualization of big data.** Unification of visualization in general around the [BigDataViewer](BigDataViewer "wikilink"). ([imagej/imagej-common\#66](https://github.com/imagej/imagej-common/issues/66))
+4.  (with {% include person content='etarena' %}) **[Coloc 2](Coloc_2 )** algorithms in [ImageJ Ops](ImageJ_Ops ).
+5.  (with {% include person content='Kharrington' %} and {% include person content='skalarproduktraum' %}) **ImageJ in 3D.** Unification of ImageJ 3D visualization efforts around [SciView](SciView ).
+6.  (with {% include person content='Pietzsch' %}) **Visualization of big data.** Unification of visualization in general around the [BigDataViewer](BigDataViewer ). ([imagej/imagej-common\#66](https://github.com/imagej/imagej-common/issues/66))
 
 ### Constant priorities
 
 Finally, I have the following continuous priorities:
 
-1.  Mentoring student programmers at [LOCI](LOCI "wikilink")
-2.  Coordinating programming efforts at [LOCI](LOCI "wikilink")
-3.  User support – questions on the [Image.sc Forum](Image.sc_Forum "wikilink"), [bug reports](Bugs "wikilink"), [pull requests](https://github.com/search?q=is%3Apr+is%3Aopen+user%3Afiji+user%3Aimagej+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve&type=Issues), email
+1.  Mentoring student programmers at [LOCI](LOCI )
+2.  Coordinating programming efforts at [LOCI](LOCI )
+3.  User support – questions on the [Image.sc Forum](Image.sc_Forum ), [bug reports](Bugs ), [pull requests](https://github.com/search?q=is%3Apr+is%3Aopen+user%3Afiji+user%3Aimagej+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve&type=Issues), email
 4.  Server maintenance and troubleshooting
-5.  Project management tasks (e.g., managing [issues](issues "wikilink"))
+5.  Project management tasks (e.g., managing [issues](issues ))
 
 On average, I spend \~0-2 hours per day on my primary projects above. The rest is spent on these constant priorities.
 
@@ -205,6 +205,6 @@ So you want to be an effective software developer? Use tools\!
 
 See also:
 
-  - The [Dotfiles](Dotfiles "wikilink") setup guide
-  - [Key developer tools](Development#Key_developer_tools "wikilink") on this wiki
+  - The [Dotfiles](Dotfiles ) setup guide
+  - [Key developer tools](Development#Key_developer_tools ) on this wiki
   - [LOCI developer getting started guide](https://loci.wisc.edu/software/developing-loci-software)

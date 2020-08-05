@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Ricardo Henriques ' affiliation=' [LMCB](http://www.ucl.ac.uk/lmcb/) at [UCL](http://www.ucl.ac.uk/) ' website='http://www.ucl.ac.uk/lmcb/users/ricardo-henriques ' %}Dr. Henriques is the author of the [QuickPALM](QuickPALM "wikilink") plugin.
+{% include user-box name='Ricardo Henriques ' affiliation=' [LMCB](http://www.ucl.ac.uk/lmcb/) at [UCL](http://www.ucl.ac.uk/) ' website='http://www.ucl.ac.uk/lmcb/users/ricardo-henriques ' %}Dr. Henriques is the author of the [QuickPALM](QuickPALM ) plugin.

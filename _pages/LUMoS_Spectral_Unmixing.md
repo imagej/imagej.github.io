@@ -7,7 +7,7 @@ categories: Plugins,Color processing,Colocalization
 description: test description
 ---
 
-{% include info-box software='ImageJ/Fiji ' name='LUMoS Spectral Unmixing ' author='Tristan McRae ' maintainer='Tristan McRae ' released='June 2019 ' source=' [GitHub](https://github.com/tristan-mcrae-rochester/Multiphoton-Image-Analysis/blob/master/Spectral%20Unmixing/Code/ImageJ-FIJI/LUMoS_Spectral_Unmixing.java) ' category='[Plugins](_Category_Plugins "wikilink"), [Color Processing](_Category_Color_processing "wikilink"), [Colocalization](_Category_Colocalization "wikilink") ' %}
+{% include info-box software='ImageJ/Fiji ' name='LUMoS Spectral Unmixing ' author='Tristan McRae ' maintainer='Tristan McRae ' released='June 2019 ' source=' [GitHub](https://github.com/tristan-mcrae-rochester/Multiphoton-Image-Analysis/blob/master/Spectral%20Unmixing/Code/ImageJ-FIJI/LUMoS_Spectral_Unmixing.java) ' category='[Plugins](_Category_Plugins ), [Color Processing](_Category_Color_processing ), [Colocalization](_Category_Colocalization ) ' %}
 
 # Introduction
 
@@ -33,11 +33,11 @@ In the context of spectral unmixing, the inputs to *k*-means are individual pixe
 
 # Usage
 
-To install the plugin in your ImageJ or Fiji installation, add the update site LUMoS. The procedure to follow an update site [can be found here](Following_an_update_site "wikilink").
+To install the plugin in your ImageJ or Fiji installation, add the update site LUMoS. The procedure to follow an update site [can be found here](Following_an_update_site ).
 
 Alternatively, a full Fiji distribution with LUMoS already packaged can be downloaded. Unlike the update site, this packaged download is PC only. [PC only download](https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/multiphoton-core/documents/Fiji-app-for-LUMoS-spectral-unmixing.zip).
 
-A user guide for this plugin with step by step instructions can be found [ here](Media_Spectral_Unmixing_User_Guide.pdf "wikilink").
+A user guide for this plugin with step by step instructions can be found [ here](Media_Spectral_Unmixing_User_Guide.pdf ).
 
 # See Also
 

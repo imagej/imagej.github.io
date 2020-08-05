@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Update Fiji\#Configuring the Updater](Update_Fiji#Configuring_the_Updater "wikilink")
+1.  REDIRECT [Update Fiji\#Configuring the Updater](Update_Fiji#Configuring_the_Updater )

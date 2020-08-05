@@ -12,24 +12,24 @@ description: test description
 
 ## Introduction
 
-This third article in the series dedicated to extending [TrackMate](TrackMate "wikilink") deals with spot feature analyzer. This is the last of the three kind of feature analyzers you can create, and it focuses on spots, or detections.
+This third article in the series dedicated to extending [TrackMate](TrackMate ) deals with spot feature analyzer. This is the last of the three kind of feature analyzers you can create, and it focuses on spots, or detections.
 
 Spot features are typically calculated from the spot location and the image data. For instance, there is a spot feature that reports the mean intensity within the spot radius. You need to have the spot location, its radius and the image data to compute it.
 
-In this tutorial, we will generate an analyzer that is not directly calculated from the image data. This will enable us to skip over introducing [ImgLib2](ImgLib2 "wikilink") API, which would have considerably augmented the length of this series. But this choice does not only aim at nurturing my laziness: We will make our feature **depend on other features** which will allow us to introduce **analyzers priority**.
+In this tutorial, we will generate an analyzer that is not directly calculated from the image data. This will enable us to skip over introducing [ImgLib2](ImgLib2 ) API, which would have considerably augmented the length of this series. But this choice does not only aim at nurturing my laziness: We will make our feature **depend on other features** which will allow us to introduce **analyzers priority**.
 
 But before this, let's visit the spot feature analyzers specificities.
 
 ## Spot analyzers and spot analyzer factories
 
-In the two previous articles we dealt with [edge](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate "wikilink") and [track](How_to_write_your_own_track_feature_analyzer_algorithm_for_TrackMate "wikilink") analyzers. We could make them in a single class, and this class embedded both the code for
+In the two previous articles we dealt with [edge](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate ) and [track](How_to_write_your_own_track_feature_analyzer_algorithm_for_TrackMate ) analyzers. We could make them in a single class, and this class embedded both the code for
 
   - TrackMate integration (feature names, dimensions, declaration, etc...);
   - and actual feature calculation.
 
 For spot analyzer, the two are separated.
 
-You must first create a {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/features/spot/SpotAnalyzerFactory.java ' label='SpotAnalyzerFactory ' %}. This factory will be in charge of the TrackMate integration. The interface extends both the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/TrackMateModule.java ' label='TrackMateModule ' %} and the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java ' label='FeatureAnalyzer ' %} interfaces. It is the class you will need to annotate with a [SciJava](SciJava "wikilink") annotation for automatic discovery.
+You must first create a {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/features/spot/SpotAnalyzerFactory.java ' label='SpotAnalyzerFactory ' %}. This factory will be in charge of the TrackMate integration. The interface extends both the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/TrackMateModule.java ' label='TrackMateModule ' %} and the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java ' label='FeatureAnalyzer ' %} interfaces. It is the class you will need to annotate with a [SciJava](SciJava ) annotation for automatic discovery.
 
 But it is also in charge of instantiating {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/features/spot/SpotAnalyzer.java ' label='SpotAnalyzer ' %}s. As you can see, this interface just extends ImgLib2 {% include github repo='imglib ' path='algorithms/core/src/main/java/net/imglib2/algorithm/Algorithm.java ' label='Algorithm ' %}, so all parameters will have to be passed in the constructor, which can be what you want thanks to the factory. We do not need a return value method, because results are stored directly inside the spot objects. But we will see this later.
 
@@ -138,7 +138,7 @@ Now it's time to discuss the delicate subject of dependency.
 
 As stated above, our new analyzer depends on some other features to compute. Therefore, the analyzers that calculate these other features need to run *before* our analyzer. Or else you will bet `NullPointerException`s randomly.
 
-TrackMate does not offer a real in-depth module dependency management. It simply offers to **determine** the order of analyzer execution thanks to the [SciJava](SciJava "wikilink") plugin **priority parameter**.
+TrackMate does not offer a real in-depth module dependency management. It simply offers to **determine** the order of analyzer execution thanks to the [SciJava](SciJava ) plugin **priority parameter**.
 
 For instance, if you check the annotation part of the spot analyzer factory, you can see that there is an extra parameter, `priority`:
 
@@ -158,6 +158,6 @@ Apart from the discussion on the priority and execution order, there is not much
 
 ![TrackMate\_CustomSpotAnalyzer\_01.png](/images/pages/TrackMate CustomSpotAnalyzer 01.png "TrackMate_CustomSpotAnalyzer_01.png")
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 07:32, 11 March 2014 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez )) 07:32, 11 March 2014 (CDT)
 
 

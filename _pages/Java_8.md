@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2016-05-10 - ImageJ HOWTO - Java 8, Java 6, Java 3D](2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D "wikilink")
+1.  REDIRECT [2016-05-10 - ImageJ HOWTO - Java 8, Java 6, Java 3D](2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D )

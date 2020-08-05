@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Building a POM](Building_a_POM "wikilink")
+1.  REDIRECT [Building a POM](Building_a_POM )

@@ -89,6 +89,6 @@ result.show
 
 ## See also
 
-[JRuby Scripting](JRuby_Scripting "wikilink")
+[JRuby Scripting](JRuby_Scripting )
 
   

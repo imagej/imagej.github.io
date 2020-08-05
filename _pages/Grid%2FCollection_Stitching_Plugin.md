@@ -13,7 +13,7 @@ description: test description
 {% endcapture %}
 {% include info-box name='Stitching ' software='ImageJ ' author='Stephan Preibisch ' maintainer='Stephan Preibisch  
 Mark Hiner  
-Curtis Rueden ' filename='Stitching\_.jar ' source=source released='October 2008 ' status='active ' category='[Stitching](_Category_Stitching "wikilink") ' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch) ' %}{% include toc%}
+Curtis Rueden ' filename='Stitching\_.jar ' source=source released='October 2008 ' status='active ' category='[Stitching](_Category_Stitching ) ' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch) ' %}{% include toc%}
 
 
 # What is Grid/Collection Stitching?
@@ -22,7 +22,7 @@ When a large biological specimen must be pictured in high resolution, it must be
 
 The Grid/Collection stitching plugin allows several tiles placed in varying dimensions to be stitched together.
 
-To learn more about Stitching, please read the [Stitching](Stitching "wikilink") section of [Techniques](Techniques "wikilink").
+To learn more about Stitching, please read the [Stitching](Stitching ) section of [Techniques](Techniques ).
 
 # How to use the Grid/Collection Stitching plugin
 
@@ -33,11 +33,11 @@ To learn more about Stitching, please read the [Stitching](Stitching "wikilink")
       - If Prairie was used for data collection, ensure that the file selected is a .xml or .cfg
   - Select a fusion method.
       - Linear blending will obscure the seams between tiles, but will take a longer amount of time. Without it, tile lines will be clearly seen if the image is to be blown up. To save time, only use linear blending for presentation pieces.
-          - To learn about other fusion methods, please visit the [Stitching](Image_Stitching#Pairwise_Stitching "wikilink") page.
+          - To learn about other fusion methods, please visit the [Stitching](Image_Stitching#Pairwise_Stitching ) page.
   - if Prairie or Wiscan are used, uncheck “compute overlap.” Both softwares calculate fairly accurate coordinates beforehand.
   - Reduce “Increase overlap” to 0 and uncheck subpixel accuracy
   - If the data computed is too large for computer memory, check “use virtual memory.” This will be considerably slower, but will save RAM
-      - Alternatively, [more memory can be allocated](Grid/Collection_Stitching_Plugin#Memory_Allocation "wikilink") to the Fiji operation
+      - Alternatively, [more memory can be allocated](Grid/Collection_Stitching_Plugin#Memory_Allocation ) to the Fiji operation
   - Click ok and the images will begin to be stitched together.
 
 # Troubleshooting with the Grid/Collection Stitching plugin
@@ -64,10 +64,10 @@ Another speed reduction will occur if the tiles used have varying z coordinates.
 
 ## Memory
 
-Even using virtual memory with maximum memory allocation can still be too much for some computers to handle, especially given the size of larger image files. The limited amount of memory available to most computers means that during the stitching of a large image file, the plugin will be trying to store more pixels within memory than there is space for. When this event occurs, Fiji will either stall and need to be force closed, or will display the message "<Out of Memory>." To fix this issue, select "Downsampling" in the Stitching GUI to allow for the image to be stitched in pieces. Please see the [Downsampling](Downsample "wikilink") page for more information. {% include thumbnail src='/images/pages/Z variance.png' title='Example of a dataset with z-variance.'%}
+Even using virtual memory with maximum memory allocation can still be too much for some computers to handle, especially given the size of larger image files. The limited amount of memory available to most computers means that during the stitching of a large image file, the plugin will be trying to store more pixels within memory than there is space for. When this event occurs, Fiji will either stall and need to be force closed, or will display the message "<Out of Memory>." To fix this issue, select "Downsampling" in the Stitching GUI to allow for the image to be stitched in pieces. Please see the [Downsampling](Downsample ) page for more information. {% include thumbnail src='/images/pages/Z variance.png' title='Example of a dataset with z-variance.'%}
 
 # Other Pitfalls
 
-Please see the [Image Stitching](Image_Stitching "wikilink") page for other precautions.
+Please see the [Image Stitching](Image_Stitching ) page for other precautions.
 
  

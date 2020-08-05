@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Developing ImageJ in Eclipse](Developing_ImageJ_in_Eclipse "wikilink")
+1.  REDIRECT [Developing ImageJ in Eclipse](Developing_ImageJ_in_Eclipse )

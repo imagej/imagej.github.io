@@ -9,7 +9,7 @@ description: test description
 
 ## 'Xlib' plugins
 
-{% include info-box software='ImageJ / Fiji plugins ' name='Xlib ' maintainer='Beat Münch ' author='Beat Münch ' filename='install from ImageJ Updater (Help--\>Update--\>Manage update sites--\>Xlib). Takes repository from https://sites.imagej.net/Xlib ' released='01.06.2015 ' latest-version='09.05.2020 ' status='maintained actively as of May 2020 ' category='[Plugins](_Category_Plugins "wikilink") ' website='http://wiki.imagej.net/Xlib ' %}
+{% include info-box software='ImageJ / Fiji plugins ' name='Xlib ' maintainer='Beat Münch ' author='Beat Münch ' filename='install from ImageJ Updater (Help--\>Update--\>Manage update sites--\>Xlib). Takes repository from https://sites.imagej.net/Xlib ' released='01.06.2015 ' latest-version='09.05.2020 ' status='maintained actively as of May 2020 ' category='[Plugins](_Category_Plugins ) ' website='http://wiki.imagej.net/Xlib ' %}
 
 ## Overview of 'Xlib'
 
@@ -26,7 +26,7 @@ The following plugins are included:
 **Data Analysis:**
 
   - ["Closest Cluster"](#Closest_Cluster "wikilink"): Engine for finding the closest candidate to a list of chemical substances
-  - ["Import DMP"](#Import_DMP "wikilink"): Import elementary image data from ".dmp" files (e.g. originating from [MATLAB](MATLAB "wikilink"))
+  - ["Import DMP"](#Import_DMP "wikilink"): Import elementary image data from ".dmp" files (e.g. originating from [MATLAB](MATLAB ))
 
 **Filtering:**
 
@@ -73,7 +73,7 @@ Plugins of this section offer importing, handling or analysis of special data fo
 
 This plugin provides an engine for finding the most probable chemical compositions of some given energy dispersive spectroscopy (EDS) data. From a set of proposed chemical formula, a ranking of the probability of matching with the candidate EDS data is calculated.
 
-A step by step tutorial for the clustering and phase identification of EDS maps is provided in the manual entitled ["Instructions for the Phase Clustering and Identification Using the Plugins for ImageJ"](Media_xClusteringPhaseIdentification.pdf "wikilink").
+A step by step tutorial for the clustering and phase identification of EDS maps is provided in the manual entitled ["Instructions for the Phase Clustering and Identification Using the Plugins for ImageJ"](Media_xClusteringPhaseIdentification.pdf ).
 
 The program can be used in combination with the ["Cluster Image"](#Cluster_Image "wikilink") plugin. Thereby for a resulting set of cluster centers, the program provides the most probable cluster membership.
 
@@ -83,7 +83,7 @@ The program can be used in combination with the ["Cluster Image"](#Cluster_Image
 
 DMP is a simple data format for the storage of 2D images. It is used at IBT from the ETH and University of Zürich. The first two short integer entries of the data file are reserved for providing the width and the heigth of the image. The next short integer is reserved. Thereafter (i.e. after the first 6 bytes) follows the image data itself, each pixel given by a 32-bit floating number.
 
-A short [MATLAB](MATLAB "wikilink") code for writing such an image variable "image" with the size "width" and "heigth" is given below:
+A short [MATLAB](MATLAB ) code for writing such an image variable "image" with the size "width" and "heigth" is given below:
 
 ``` matlab
  
@@ -95,7 +95,7 @@ fwrite(fid,image','float32');
 fclose(fid);
 ```
 
-Reading the a DMP image with [MATLAB](MATLAB "wikilink") can be achieved like this:
+Reading the a DMP image with [MATLAB](MATLAB ) can be achieved like this:
 
 ``` matlab
  
@@ -239,7 +239,7 @@ The figure to the right shows a sample FIB-nt image from cement paste (left) wit
 
 Many image calculators allowing various arithmetic operations are already implemented in ImageJ, including the "Image Calculator", the "Calculator Plus" as well as the entire list of functions in "math", all of them under "Process". So why "yet another image calculator", you might ask. The reason is that our image calculator is easily able to perform the possible tasks of all of the above listed plugins and much more. The conceptual idea is to provide a list of all the images and image stacks that are currently opened in ImageJ and assign them to symbolic names (i0, i1, i2,...). In a text field, the user can then provide his own code he wants to be applied to the images.
 
-[right|440px|thumb|left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2](Image_xFig6_7_01.jpg "wikilink") For instance,
+[right|440px|thumb|left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2](Image_xFig6_7_01.jpg ) For instance,
 
 ``` java
  
@@ -252,7 +252,7 @@ will return an image providing the mean value of the images i0, i1 and i2 (see r
   
   
   
-[right|300px|thumb|left: image i0, right: mask where regions higher than 170 are colored in red](Image_xFig6_7_02.jpg "wikilink") The operation
+[right|300px|thumb|left: image i0, right: mask where regions higher than 170 are colored in red](Image_xFig6_7_02.jpg ) The operation
 
 ``` java
  
@@ -267,7 +267,7 @@ displays a mask where regions higher than 170 are red.
   
   
   
-[right|440px|thumb|left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2](Image_xFig6_7_03.jpg "wikilink") The operation
+[right|440px|thumb|left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2](Image_xFig6_7_03.jpg ) The operation
 
 ``` java
  
@@ -280,7 +280,7 @@ takes three binary images i0, i1, i2 and creates a colored mask out of it (see r
   
   
   
-[right|300px|thumb|left: image i0, right: power of two of image i0](Image_xFig6_7_04.jpg "wikilink") The operation
+[right|300px|thumb|left: image i0, right: power of two of image i0](Image_xFig6_7_04.jpg ) The operation
 
 ``` java
  
@@ -294,7 +294,7 @@ yields the power of two of the image i0.
   
   
   
-[right|300px|thumb|left: image i0, right: copy of the image i0 overlayed by a horizontal ramp](Image_xFig6_7_05.jpg "wikilink") Or the operation
+[right|300px|thumb|left: image i0, right: copy of the image i0 overlayed by a horizontal ramp](Image_xFig6_7_05.jpg ) Or the operation
 
 ``` java
  
@@ -309,7 +309,7 @@ will calculate a copy of the image i0 overlayed by a horizontal ramp.
   
   
   
-[right|300px|thumb|left: image i0, right: ramp with the same size as image i0](Image_xFig6_7_06.jpg "wikilink") And the code line
+[right|300px|thumb|left: image i0, right: ramp with the same size as image i0](Image_xFig6_7_06.jpg ) And the code line
 
 ``` java
  
@@ -322,7 +322,7 @@ In this case, instead of a simple command "x" (which would create no image), a c
   
   
   
-[right|350px|thumb|left: image i0 defining image size, right: halo centered at (100, 200)](Image_xFig6_7_07.jpg "wikilink") The code
+[right|350px|thumb|left: image i0 defining image size, right: halo centered at (100, 200)](Image_xFig6_7_07.jpg ) The code
 
 ``` java
  
@@ -336,7 +336,7 @@ calculates an image of the same size as image i0, but containing only a halo cen
   
   
   
-[right|300px|thumb|left: image i0, right: binary thresholding of i0 by value 128](Image_xFig6_7_08.jpg "wikilink") The line
+[right|300px|thumb|left: image i0, right: binary thresholding of i0 by value 128](Image_xFig6_7_08.jpg ) The line
 
 ``` java
  
@@ -351,7 +351,7 @@ creates a binary image mask by thresholding the image i0 with the value 128.
   
   
   
-[right|300px|thumb|left: image i0, right: circular mask around (100, 200)](Image_xFig6_7_09.jpg "wikilink") The command
+[right|300px|thumb|left: image i0, right: circular mask around (100, 200)](Image_xFig6_7_09.jpg ) The command
 
 ``` java
  
@@ -365,7 +365,7 @@ creates an image of the same size as i0 containing a circular mask around point 
   
   
   
-[right|320px|thumb|left: image i3, right: content of image i3 inside of a circle only](Image_xFig6_7_10.jpg "wikilink")
+[right|320px|thumb|left: image i3, right: content of image i3 inside of a circle only](Image_xFig6_7_10.jpg )
 
 The code
 
@@ -381,7 +381,7 @@ takes the content of the image inside of a circle only and removes the regions o
   
   
   
-[right|360px|thumb|left: image i0, center: image i1, right: exclusive OR of images i0 and i1](Image_xFig6_7_11.jpg "wikilink")
+[right|360px|thumb|left: image i0, center: image i1, right: exclusive OR of images i0 and i1](Image_xFig6_7_11.jpg )
 
 Finally,
 
@@ -402,7 +402,7 @@ for (int ii = 0; ii < out.length; ii++)
 return new Object[] { m0, out };
 ```
 
-performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" above. [right|350px|thumb|left: image i0, right: message box with number of pixel values \>= 10](Image_xFig6_7_13.jpg "wikilink") The code fragment
+performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" above. [right|350px|thumb|left: image i0, right: message box with number of pixel values \>= 10](Image_xFig6_7_13.jpg ) The code fragment
 
 ``` java
  
@@ -415,7 +415,7 @@ IJ.showMessage(" ", "Number of pixels: " + anz);
 return new Object[] { mm, null };
 ```
 
-[right|500px|thumb|left: image i3, center: image i5, right: image i5 embedded at the center area of image i3](Image_xFig6_7_14.jpg "wikilink") Counts all pixels (or voxels) in the image (or volume) with a value larger or equal 10.  
+[right|500px|thumb|left: image i3, center: image i5, right: image i5 embedded at the center area of image i3](Image_xFig6_7_14.jpg ) Counts all pixels (or voxels) in the image (or volume) with a value larger or equal 10.  
   
   
   
@@ -437,7 +437,7 @@ return new Object[] { m3, out };
 
 takes the smaller image i5 and adds it to the center of the larger image i3.  
   
-[right|500px|thumb|left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1](Image_xFig6_7_15.jpg "wikilink") The code fragment
+[right|500px|thumb|left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1](Image_xFig6_7_15.jpg ) The code fragment
 
 ``` java
  
@@ -726,7 +726,7 @@ PDS's can be defined in different ways and must be chosen according to the speci
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | {% include thumbnail src='/images/pages/XFig8 3.jpg' title='3D volume of cement paste (OPC CEM 1, 42.5, w/c 0.35, 28 days hydration) acquired by FIB-nanotomography (top) and its pore size distributions of varying definition (bottom, see referenced paper).'%} |
 
-The above figure (top) shows a picture of a 3D volume of cement paste measured by FIB-nanotomography at a pixel size of 14.84 x 18.84 x 30.0 nm^3. The pores have been segmented by thresholding and different definitions of PSD's have been calculated in slice-wise 2D as well as in real 3D (bottom graph, containing the results of the PSD calculations visualized by [MATLAB](MATLAB "wikilink")).
+The above figure (top) shows a picture of a 3D volume of cement paste measured by FIB-nanotomography at a pixel size of 14.84 x 18.84 x 30.0 nm^3. The pores have been segmented by thresholding and different definitions of PSD's have been calculated in slice-wise 2D as well as in real 3D (bottom graph, containing the results of the PSD calculations visualized by [MATLAB](MATLAB )).
 
   - {% include citation last='Münch ' first='B ' last2='Holzer ' first2='L ' title='Contradicting Geometrical Concepts in Pore Size Analysis Attained with Electron Microscopy and Mercury Intrusion ' journal='Journal of American Ceramics Society ' volume='91(12) ' pages='4059-4067 ' year='2008 ' %}
 
@@ -814,6 +814,6 @@ As an example, a triangulated view of the segmented 3D volume is presented in th
 
   - {% include citation last='Artzy ' first='E ' last2='Frieder ' first2='G ' last3='Herman ' first3='G T ' title='The Theory, Design, Implementation and Evaluation of a Three-Dimensional Surface Detection Algorithm ' journal='Computer Graphics and Image Processing ' volume='15 ' pages='1-24 ' year='1981 ' %}
 
-\--[Beat](User_Beat "wikilink") ([talk](User_talk_Beat "wikilink")) 06:26, 1 June 2015 (CDT)
+\--[Beat](User_Beat ) ([talk](User_talk_Beat )) 06:26, 1 June 2015 (CDT)
 
         

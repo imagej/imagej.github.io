@@ -11,17 +11,17 @@ description: test description
 
 ## Purpose
 
-Having LUTs to handle display of images with more than 3 channels. Visit [Color Image Processing](Color_Image_Processing "wikilink") page to know more about LUTs.
+Having LUTs to handle display of images with more than 3 channels. Visit [Color Image Processing](Color_Image_Processing ) page to know more about LUTs.
 
 ## Details
 
 Classical color space are RGB and CMY. Expressed as RGB value, CMY are equal combination of 2 components of RGB, ie Cyan is obtained by combining Green and Blue in equal proportion.
 
-[200px ](File_RGB_hex.png "wikilink") [200px ](File_CMY_hex.png "wikilink")
+[200px ](File_RGB_hex.png ) [200px ](File_CMY_hex.png )
 
 Here, we propose to use 6 LUTs, which are obtained by combining Red Green and Blue, by two, in different proportion.
 
-[400px ](File_BIOP6Luts_hex.png "wikilink")
+[400px ](File_BIOP6Luts_hex.png )
 
 ## On 3 channels image
 

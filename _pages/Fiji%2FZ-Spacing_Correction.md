@@ -15,7 +15,7 @@ Philipp Hanslovsky, {% include person content='Saalfeld' %} ([1](mailto:saalfeld
 {% capture maintainer%}
 Philipp Hanslovsky, {% include person content='Saalfeld' %}
 {% endcapture %}
-{% include info-box name='Z-Spacing Correction ' software='Fiji ' author=author maintainer=maintainer source='https://github.com/saalfeldlab/em-thickness-estimation ' released='April 16<sup>th</sup>, 2015 ' latest-version='April 16<sup>th</sup>, 2015 ' status='experimental, active ' category='[Plugins](_Category_Plugins "wikilink"), [TrakEM2](_Category_TrakEM2 "wikilink"), [Transform](_Category_Transform "wikilink") ' %}
+{% include info-box name='Z-Spacing Correction ' software='Fiji ' author=author maintainer=maintainer source='https://github.com/saalfeldlab/em-thickness-estimation ' released='April 16<sup>th</sup>, 2015 ' latest-version='April 16<sup>th</sup>, 2015 ' status='experimental, active ' category='[Plugins](_Category_Plugins ), [TrakEM2](_Category_TrakEM2 ), [Transform](_Category_Transform ) ' %}
 
 ## Citation
 
@@ -25,7 +25,7 @@ P. Hanslovsky, J. Bogovic, S. Saalfeld (2015) Post-acquisition image based compe
 
 ## Introduction
 
-Serial section Microscopy, using either optical or physical sectioning, is an established method for volumetric anatomy reconstruction. Section series imaged with Electron Microscopy are currently vital for the reconstruction of the synaptic connectivity of entire animal brains such as that of *Drosophila melanogaster*. The process of removing ultrathin layers from a solid block containing the specimen, however, is a fragile procedure and has limited precision with respect to section thickness. Optical sectioning techniques often suffer from increasing distortion as sections deeper inside the tissue are imaged. On summary, section thickness that is supposed to be constant, in practice is not and has to be corrected where precise measurement is desired. We have developed a method to estimate the relative *z*-position of each individual section as a function of signal change across the section series. The Fiji plugin **Transform** \> **Z-Spacing Correction** and the [TrakEM2](TrakEM2 "wikilink") plugin **Plugins** \> **LayerZPosition** implement this method.
+Serial section Microscopy, using either optical or physical sectioning, is an established method for volumetric anatomy reconstruction. Section series imaged with Electron Microscopy are currently vital for the reconstruction of the synaptic connectivity of entire animal brains such as that of *Drosophila melanogaster*. The process of removing ultrathin layers from a solid block containing the specimen, however, is a fragile procedure and has limited precision with respect to section thickness. Optical sectioning techniques often suffer from increasing distortion as sections deeper inside the tissue are imaged. On summary, section thickness that is supposed to be constant, in practice is not and has to be corrected where precise measurement is desired. We have developed a method to estimate the relative *z*-position of each individual section as a function of signal change across the section series. The Fiji plugin **Transform** \> **Z-Spacing Correction** and the [TrakEM2](TrakEM2 ) plugin **Plugins** \> **LayerZPosition** implement this method.
 
 ## Parameters
 

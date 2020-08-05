@@ -10,7 +10,7 @@ description: test description
 {% include sntdeprecation%}
 
 
-There are three ways of selecting a particular path in [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink").
+There are three ways of selecting a particular path in [Simple Neurite Tracer](Simple_Neurite_Tracer ).
 
 ### In the Path Window
 

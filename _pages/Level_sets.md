@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Level Sets](Level_Sets "wikilink")
+1.  REDIRECT [Level Sets](Level_Sets )

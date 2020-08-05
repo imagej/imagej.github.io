@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Image5D](Image5D "wikilink")
+1.  REDIRECT [Image5D](Image5D )

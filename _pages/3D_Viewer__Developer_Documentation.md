@@ -7,40 +7,40 @@ categories:
 description: test description
 ---
 
-(Return to the main [3D Viewer](3D_Viewer "wikilink") page)
+(Return to the main [3D Viewer](3D_Viewer ) page)
 
 The 3D viewer is more than a 3D visualization application. It was designed to serve as a high-level programming library for 3D visualization, especially for the visualization of 3D biomedical images.
 
-The document in hand is intended to provide a set of examples and use-cases. The HowTo's are ordered with increasing complexity. Each HowTo itself starts by explaining a basic example, referring to example code. The example code can be downloaded from the [Examples' site](3D_Viewer__Example_code "wikilink"). Each HowTo then continues to describe more detailed aspects, as well as other background information.
+The document in hand is intended to provide a set of examples and use-cases. The HowTo's are ordered with increasing complexity. Each HowTo itself starts by explaining a basic example, referring to example code. The example code can be downloaded from the [Examples' site](3D_Viewer__Example_code ). Each HowTo then continues to describe more detailed aspects, as well as other background information.
 
 The fastest way to get started is to look at the examples, which should be pretty much self-explaining. For the features of interest, it is recommended to read the corresponding HowTo.
 
 ### How To...
 
-... [create a universe and display an image stack as volume rendering, orthoslices, iso-surface or surface plot](3D_Viewer__Display_a_Stack "wikilink")
+... [create a universe and display an image stack as volume rendering, orthoslices, iso-surface or surface plot](3D_Viewer__Display_a_Stack )
 
-... [change color, transparency etc of a 3D object (=Content)](3D_Viewer__Change_Attributes "wikilink")
+... [change color, transparency etc of a 3D object (=Content)](3D_Viewer__Change_Attributes )
 
-... [apply a specific transformation to a Content](3D_Viewer__Apply_Transformation "wikilink")
+... [apply a specific transformation to a Content](3D_Viewer__Apply_Transformation )
 
-... [highlight specific points of a Content](3D_Viewer__Highlight_Points "wikilink")
+... [highlight specific points of a Content](3D_Viewer__Highlight_Points )
 
-... [create movie recordings](3D_Viewer__Record_a_Movie "wikilink")
+... [create movie recordings](3D_Viewer__Record_a_Movie )
 
-... [understand the relation between Content and Universe](3D_Viewer__Content_Structure "wikilink")
+... [understand the relation between Content and Universe](3D_Viewer__Content_Structure )
 
-... [to work with volume renderings](3D_Viewer__Volume_Rendering "wikilink")
+... [to work with volume renderings](3D_Viewer__Volume_Rendering )
 
-... [to work with orthoslices](3D_Viewer__Orthoslices "wikilink")
+... [to work with orthoslices](3D_Viewer__Orthoslices )
 
-... [to work with surface plots](3D_Viewer__Surface_Plot "wikilink")
+... [to work with surface plots](3D_Viewer__Surface_Plot )
 
-... [to work with isosurfaces](3D_Viewer__Isosurface "wikilink")
+... [to work with isosurfaces](3D_Viewer__Isosurface )
 
-... [add custom surfaces to a universe](3D_Viewer__Custom_Surface "wikilink")
+... [add custom surfaces to a universe](3D_Viewer__Custom_Surface )
 
-... [display 4D data](3D_Viewer__4D_Viewer "wikilink")
+... [display 4D data](3D_Viewer__4D_Viewer )
 
-... [display two canvasses showing the same universe](3D_Viewer__Two_Canvasses "wikilink")
+... [display two canvasses showing the same universe](3D_Viewer__Two_Canvasses )
 
-... [catch and handle mouse and key events](3D_Viewer__CustomBehavior "wikilink")
+... [catch and handle mouse and key events](3D_Viewer__CustomBehavior )

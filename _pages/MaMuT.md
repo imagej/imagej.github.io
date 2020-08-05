@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji ' repo='MaMuT ' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='MaMuT ' logo='![MaMuT\_logo-256x256.png](/images/pages/MaMuT logo-256x256.png "MaMuT_logo-256x256.png") ' maintainer=maintainer author=author source=source status='v0.27.0, active ' released='06/01/2015 ' category='[Segmentation](_Category_Segmentation "wikilink"), [Tracking](_Category_Tracking "wikilink"), [:Category:Plugins](_Category_Plugins "wikilink") ' %}
+{% include info-box software='Fiji ' name='MaMuT ' logo='![MaMuT\_logo-256x256.png](/images/pages/MaMuT logo-256x256.png "MaMuT_logo-256x256.png") ' maintainer=maintainer author=author source=source status='v0.27.0, active ' released='06/01/2015 ' category='[Segmentation](_Category_Segmentation ), [Tracking](_Category_Tracking ), [:Category:Plugins](_Category_Plugins ) ' %}
 
 '''A Fiji plugin for the annotation of massive, multi-view data. '''
 
@@ -31,15 +31,15 @@ Enable the [MaMuT update site](http://sites.imagej.net/MaMuT/) to get it.
 
 ## Presentation.
 
-MaMuT is an end user plugin that combines the [BigDataViewer](BigDataViewer "wikilink") and [TrackMate](TrackMate "wikilink") to provide an application that allow browsing, annotating and curating annotations for large image data.
+MaMuT is an end user plugin that combines the [BigDataViewer](BigDataViewer ) and [TrackMate](TrackMate ) to provide an application that allow browsing, annotating and curating annotations for large image data.
 
 ![MaMuT\_presentation.png](/images/pages/MaMuT presentation.png "MaMuT_presentation.png")
 
-The main window resembles the display panel of [TrackMate](TrackMate "wikilink"). It controls how the annotations are displayed. Using the *MaMuT Viewer* button, several views of the data can be launched. They will all be in sync. Each of them is an instance of the [BigDataViewer](BigDataViewer "wikilink").
+The main window resembles the display panel of [TrackMate](TrackMate ). It controls how the annotations are displayed. Using the *MaMuT Viewer* button, several views of the data can be launched. They will all be in sync. Each of them is an instance of the [BigDataViewer](BigDataViewer ).
 
 ![MaMuT\_WindowsInSync.png](/images/pages/MaMuT WindowsInSync.png "MaMuT_WindowsInSync.png")
 
-We privileged annotations that are like lineages, or object followed over time (which is what [TrackMate](TrackMate "wikilink") does). MaMuT ships [TrackScheme](TrackScheme "wikilink"), the lineage browser taken from TrackMate.
+We privileged annotations that are like lineages, or object followed over time (which is what [TrackMate](TrackMate ) does). MaMuT ships [TrackScheme](TrackScheme ), the lineage browser taken from TrackMate.
 
 ![MaMuT\_WithTrackScheme.png](/images/pages/MaMuT WithTrackScheme.png "MaMuT_WithTrackScheme.png")
 
@@ -51,11 +51,11 @@ However, MaMuT itself does not ship any fully-automated or tracking algorithm. I
 
 The following pages are tutorials that will guide you through MaMuT and walk you though its features.
 
-  - [Getting started with MaMuT](Getting_started_with_MaMuT "wikilink") is an introduction tutorial. It will show you how to prepare a dataset for MaMuT and make your first annotations with it.
+  - [Getting started with MaMuT](Getting_started_with_MaMuT ) is an introduction tutorial. It will show you how to prepare a dataset for MaMuT and make your first annotations with it.
 
 <!-- end list -->
 
-  - [Example mamut.properties file](Example_mamut.properties_file "wikilink") contains an example of a `mamut.properties` file, that is used to customize the key-bindings in the MaMuT viewer.
+  - [Example mamut.properties file](Example_mamut.properties_file ) contains an example of a `mamut.properties` file, that is used to customize the key-bindings in the MaMuT viewer.
 
 ## Developer documentation.
 

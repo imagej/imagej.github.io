@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2012-04-18 - New Plugin: Bleach Correction](2012-04-18_-_New_Plugin__Bleach_Correction "wikilink")
+1.  REDIRECT [2012-04-18 - New Plugin: Bleach Correction](2012-04-18_-_New_Plugin__Bleach_Correction )

@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Matt McCormick ' affiliation='Kitware ' github='thewtex ' %}Matt is co-maintainer of the integration components linking [ImageJ](ImageJ "wikilink") with [ITK](ITK "wikilink"), including:
+{% include user-box name='Matt McCormick ' affiliation='Kitware ' github='thewtex ' %}Matt is co-maintainer of the integration components linking [ImageJ](ImageJ ) with [ITK](ITK ), including:
 
   - {% include github org='imagej ' repo='imagej-itk ' label='imagej-itk ' %}
   - {% include github org='scifio ' repo='scifio-itk-bridge ' label='scifio-itk-bridge ' %}

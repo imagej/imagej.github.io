@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-Empty [Scijava-parallel](Scijava-parallel "wikilink")
+Empty [Scijava-parallel](Scijava-parallel )

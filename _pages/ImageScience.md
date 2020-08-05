@@ -19,17 +19,17 @@ description: test description
 {% capture source%}
 {% include github org='imagescience ' repo='ImageScience ' %}
 {% endcapture %}
-{% include info-box software='ImageScience ' name='ImageScience ' maintainer=maintainer author=author source=source status=' ' category='[:Category:Libraries](_Category_Libraries "wikilink") ' website='http://imagescience.org/meijering/software/imagescience/ ' %}The ImageScience library supports the ImageScience suite of plugins:
+{% include info-box software='ImageScience ' name='ImageScience ' maintainer=maintainer author=author source=source status=' ' category='[:Category:Libraries](_Category_Libraries ) ' website='http://imagescience.org/meijering/software/imagescience/ ' %}The ImageScience library supports the ImageScience suite of plugins:
 
-  - [FeatureJ](FeatureJ "wikilink")
-  - [MTrackJ](MTrackJ "wikilink")
-  - [NeuronJ](NeuronJ "wikilink")
-  - [RandomJ](RandomJ "wikilink")
-  - [TransformJ](TransformJ "wikilink")
+  - [FeatureJ](FeatureJ )
+  - [MTrackJ](MTrackJ )
+  - [NeuronJ](NeuronJ )
+  - [RandomJ](RandomJ )
+  - [TransformJ](TransformJ )
 
 To install them, enable the ImageScience update site:
 
-  - [{% include bc content='Help|Update...'%}](Update_Sites "wikilink")
+  - [{% include bc content='Help|Update...'%}](Update_Sites )
   - Click *Manage update sites*
   - Check *ImageScience*
   - Click *Close*

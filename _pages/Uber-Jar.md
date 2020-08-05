@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Uber-JAR](Uber-JAR "wikilink")
+1.  REDIRECT [Uber-JAR](Uber-JAR )

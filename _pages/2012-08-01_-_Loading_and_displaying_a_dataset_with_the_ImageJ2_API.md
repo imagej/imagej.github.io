@@ -7,7 +7,7 @@ categories: News,ImageJ2
 description: test description
 ---
 
-Recently, someone [someone asked on the mailing list](https://imagej.net/pipermail/imagej-devel/2012-July/001117.html) how to load and display a dataset using the [ImageJ2](ImageJ2 "wikilink") API. Here is code that does so:
+Recently, someone [someone asked on the mailing list](https://imagej.net/pipermail/imagej-devel/2012-July/001117.html) how to load and display a dataset using the [ImageJ2](ImageJ2 ) API. Here is code that does so:
 
 ``` java
 import imagej.ImageJ;

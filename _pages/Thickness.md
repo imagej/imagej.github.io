@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BoneJ2\#Thickness](BoneJ2#Thickness "wikilink")
+1.  REDIRECT [BoneJ2\#Thickness](BoneJ2#Thickness )

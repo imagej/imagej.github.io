@@ -201,4 +201,9 @@ Select "OK"
 
 # Gallery
 
-<File:Frame> mover.jpg | (xyz computer controller) <File:Lever> 1.jpg| (Internal microscope lever) <File:X> y z.jpg| (XYZ controller) <File:Pockel> cell.jpg| (Pockel Cell machine) <File:Ti> saph.jpg | (Ti Sapph Shutter control) <File:Photosensor.jpg> | Detector
+
+{% capture content%}
+
+{% endcapture %}
+{% include gallery content=content%}
+

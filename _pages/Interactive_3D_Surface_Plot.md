@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [3D Surface Plot](3D_Surface_Plot "wikilink")
+1.  REDIRECT [3D Surface Plot](3D_Surface_Plot )

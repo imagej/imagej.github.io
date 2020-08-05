@@ -7,9 +7,9 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='scripting' %}All scripting languages have access to a universal `#@parameter` notation for declaring inputs and outputs. This approach is preferred over the ImageJ 1.x [GenericDialog](Generic_dialog "wikilink") because it is totally agnostic of the user interface, allowing such scripts to run in a variety of contexts. As with [ImageJ2 plugins](Writing_ImageJ2_plugins "wikilink"), script parameterization is based on the [SciJava](SciJava "wikilink") [parameter annotation](https://github.com/scijava/scijava-common/blob/scijava-common-2.40.0/src/main/java/org/scijava/plugin/Parameter.java)—so experience with plugin writing directly translates to scripting, and vice versa.
+{% include learn content='scripting' %}All scripting languages have access to a universal `#@parameter` notation for declaring inputs and outputs. This approach is preferred over the ImageJ 1.x [GenericDialog](Generic_dialog ) because it is totally agnostic of the user interface, allowing such scripts to run in a variety of contexts. As with [ImageJ2 plugins](Writing_ImageJ2_plugins ), script parameterization is based on the [SciJava](SciJava ) [parameter annotation](https://github.com/scijava/scijava-common/blob/scijava-common-2.40.0/src/main/java/org/scijava/plugin/Parameter.java)—so experience with plugin writing directly translates to scripting, and vice versa.
 
-{% include info-box content='Script parameters are a feature of [ImageJ2](ImageJ2 "wikilink"); they will not work in plain [ImageJ1](ImageJ1 "wikilink"). The [Fiji](Fiji "wikilink") distribution of ImageJ is built on ImageJ2, so they also work in Fiji.' %}
+{% include info-box content='Script parameters are a feature of [ImageJ2](ImageJ2 ); they will not work in plain [ImageJ1](ImageJ1 ). The [Fiji](Fiji ) distribution of ImageJ is built on ImageJ2, so they also work in Fiji.' %}
 
 ## Basic syntax
 
@@ -25,7 +25,7 @@ The rules for `#@` parameter use are as follows:
 Clojure developer
 {% endcapture %}
 {% include testimonial quote='zomg UIs are so easy now  
-done by lunchtime ' person=person gravatar='9e4ed4484fd425f3f178bfeed4777b31 ' source='https://gitter.im/fiji/fiji?at=5717afbc98c544f1396cef2f ' float='right ' %} For example, if we look at the [Greeting.py](https://github.com/scijava/scripting-jython/blob/scripting-jython-0.2.0/src/main/resources/script_templates/Python/Greeting.py) [template](Script_Templates "wikilink") supplied with Fiji:
+done by lunchtime ' person=person gravatar='9e4ed4484fd425f3f178bfeed4777b31 ' source='https://gitter.im/fiji/fiji?at=5717afbc98c544f1396cef2f ' float='right ' %} For example, if we look at the [Greeting.py](https://github.com/scijava/scripting-jython/blob/scripting-jython-0.2.0/src/main/resources/script_templates/Python/Greeting.py) [template](Script_Templates ) supplied with Fiji:
 
 {% include github-embed org='scijava ' repo='scripting-jython ' path='src/main/resources/script\_templates/Intro/Greeting.py ' %}
 
@@ -33,7 +33,7 @@ We see that an input parameter `name` of type `String` is declared. `@Parameters
 
 <img src="/images/pages/ScriptParams.png" width="450"/>
 
-We could also run this script [headlessly](Scripting_Headless "wikilink"), thanks to the general nature of `@parameters`.
+We could also run this script [headlessly](Scripting_Headless ), thanks to the general nature of `@parameters`.
 
 When the script is completed, any `#@output` variables are handled by the framework, based on their type. In this case we expect the `greeting` variable to be printed, since it is a `string`.
 
@@ -203,7 +203,7 @@ for (i=0;i<listOfPaths.length;i++) {
 }
 ```
 
-The exact same code works for the [ImageJ1 Macro language](Macros "wikilink"), too.
+The exact same code works for the [ImageJ1 Macro language](Macros ), too.
 
 If you want to select files or folders exclusively, use a `style` property:
 

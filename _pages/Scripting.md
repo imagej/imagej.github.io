@@ -12,38 +12,38 @@ description: test description
 # Getting started
 
   - Read the [ImageJ tutorial notebooks](https://imagej.github.io/tutorials) to learn how to write ImageJ scripts.
-  - Press the {% include key content='\[' %} key to open the [Script Editor](Script_Editor "wikilink") (or {% include key content='Shift' %}-{% include key content='\[' %} to open the [Script Interpreter](Script_Interpreter "wikilink")).
+  - Press the {% include key content='\[' %} key to open the [Script Editor](Script_Editor ) (or {% include key content='Shift' %}-{% include key content='\[' %} to open the [Script Interpreter](Script_Interpreter )).
   - Optionally, choose a template from the *Templates* menu to get you started.
   - Otherwise, choose your language from the *Language* menu.
-  - Grab code snippets for common tasks from the [Scripting toolbox](Scripting_toolbox "wikilink").
-  - See [Scripting comparisons](Scripting_comparisons "wikilink") for a side-by-side comparison of scripting languages.
-  - See [:Category:Scripting](_Category_Scripting "wikilink") for a list of all scripting-related pages on this wiki.
+  - Grab code snippets for common tasks from the [Scripting toolbox](Scripting_toolbox ).
+  - See [Scripting comparisons](Scripting_comparisons ) for a side-by-side comparison of scripting languages.
+  - See [:Category:Scripting](_Category_Scripting ) for a list of all scripting-related pages on this wiki.
 
 # Supported languages
 
-ImageJ's [Script Editor](Script_Editor "wikilink") supports many different languages. The following table summarizes the possibilities.
+ImageJ's [Script Editor](Script_Editor ) supports many different languages. The following table summarizes the possibilities.
 
 |                                                                |
 | -------------------------------------------------------------- |
 | Recommended options                                            |
-| [Groovy](Groovy_Scripting "wikilink")                          |
-| [ImageJ Macro](Introduction_into_Macro_Programming "wikilink") |
-| [Python (Jython)](Jython_Scripting "wikilink")                 |
-| [JavaScript](Javascript_Scripting "wikilink")                  |
-| [Ruby (JRuby)](JRuby_Scripting "wikilink")                     |
-| [Lisp (Clojure)](Clojure_Scripting "wikilink")                 |
-| [R (Renjin)](Renjin_Scripting "wikilink")                      |
+| [Groovy](Groovy_Scripting )                          |
+| [ImageJ Macro](Introduction_into_Macro_Programming ) |
+| [Python (Jython)](Jython_Scripting )                 |
+| [JavaScript](Javascript_Scripting )                  |
+| [Ruby (JRuby)](JRuby_Scripting )                     |
+| [Lisp (Clojure)](Clojure_Scripting )                 |
+| [R (Renjin)](Renjin_Scripting )                      |
 | Other options                                                  |
-| [Java](Java "wikilink")                                        |
-| [MATLAB](MATLAB_Scripting "wikilink")                          |
-| [BeanShell](Beanshell_Scripting "wikilink")                    |
-| [Scala](Scala_Scripting "wikilink")                            |
+| [Java](Java )                                        |
+| [MATLAB](MATLAB_Scripting )                          |
+| [BeanShell](Beanshell_Scripting )                    |
+| [Scala](Scala_Scripting )                            |
 
 # Script parameters
 
 There is a universal `@parameter` notation available across all scripts for declaring inputs and outputs. This approach is preferred to using ImageJ 1.x `GenericDialog` because it is totally agnostic to the user interface, allowing such scripts to run in a variety of contexts.
 
-See the [script parameters](script_parameters "wikilink") page for details.
+See the [script parameters](script_parameters ) page for details.
 
 # Using an interpreter
 
@@ -73,7 +73,7 @@ On selecting text, a popup offers to:
 
 # Using the script editor
 
-You can create, edit and run scripts using the built-in [Script Editor](Script_Editor "wikilink"). For details, please see [the Script Editor documentation](Using_the_Script_Editor "wikilink").
+You can create, edit and run scripts using the built-in [Script Editor](Script_Editor ). For details, please see [the Script Editor documentation](Using_the_Script_Editor ).
 
 # Adding scripts to the Plugins menu
 
@@ -98,9 +98,9 @@ The extension will be stripped and any underscores will be turned into spaces be
 
 Scripts in the top-level `ImageJ.app/plugins` directory will appear at the bottom of the *Plugins* menu. Scripts can be placed in other menus by nesting subdirectories, for example placing a script in the `ImageJ.app/scripts/File` directory will add it to the *File* menu.
 
-If you aren't able to find your script, you can always run the [Command Finder](Using_the_Command_Launcher "wikilink") to verify its location (or absence).
+If you aren't able to find your script, you can always run the [Command Finder](Using_the_Command_Launcher ) to verify its location (or absence).
 
-Commands added to the menu in the described way can be called from other scripts. Use the [macro recorder](macro_recorder "wikilink") to get the required code for doing so.
+Commands added to the menu in the described way can be called from other scripts. Use the [macro recorder](macro_recorder ) to get the required code for doing so.
 
 ## Adding JAR-packaged scripts to the menu
 
@@ -112,6 +112,6 @@ ImageJ2 (and therefore Fiji) looks for scripts in subfolders of `./scripts/` as 
 
 # Running scripts in headless mode
 
-See the [Scripting Headless](Scripting_Headless "wikilink") page for instructions on executing scripts headlessly.
+See the [Scripting Headless](Scripting_Headless ) page for instructions on executing scripts headlessly.
 
 

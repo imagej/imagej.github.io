@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Project management](Project_management "wikilink")
+1.  REDIRECT [Project management](Project_management )

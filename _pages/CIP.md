@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include info-box software='ImageJ/Fiji ' name='CIP ' update-site='CIP ' author='[Benoit Lombardot](User_Benoit "wikilink") ' maintainer='[Benoit Lombardot](User_Benoit "wikilink") ' released='January 2018 ' filename='CIP update site ' source='https://github.com/benoalo/CIP ' category='[Scripting](_Category_Scripting "wikilink") ' %}
+{% include info-box software='ImageJ/Fiji ' name='CIP ' update-site='CIP ' author='[Benoit Lombardot](User_Benoit ) ' maintainer='[Benoit Lombardot](User_Benoit ) ' released='January 2018 ' filename='CIP update site ' source='https://github.com/benoalo/CIP ' category='[Scripting](_Category_Scripting ) ' %}
 
 ![CIP: ](/images/pages/CIP basic concept.PNG "CIP: ")
 
@@ -39,7 +39,7 @@ Classic Image Processing (CIP) is an image procesing toolbox which provides func
 
 ## Installation
 
-If you want to use CIP in ImageJ script editor, simply add the CIP update site to your imageJ installation ([instruction to follow an update site](https://imagej.net/Following_an_update_site)) restart imagej, open the script editor and you are good to go. For inspiration, one can look at one of the [example scripts](CIP#Script_example "wikilink").
+If you want to use CIP in ImageJ script editor, simply add the CIP update site to your imageJ installation ([instruction to follow an update site](https://imagej.net/Following_an_update_site)) restart imagej, open the script editor and you are good to go. For inspiration, one can look at one of the [example scripts](CIP#Script_example ).
 
 If one would like to contribute or simply toy with the source code of the library, its source code and the instruction for the project set up in an IDE can be found on the [project repository](https://github.com/benoalo/CIP).
 
@@ -47,9 +47,9 @@ If one would like to contribute or simply toy with the source code of the librar
 
 To build a script with CIP, follow one of the examples below or try one of the [repository](https://github.com/benoalo/CIP/tree/master/scripts%7Cproject) examples.
 
-To get information on a function follow the link in the function table in the [categories](CIP#Tools_categories "wikilink") section or directly go to one of the category pages: [Format](CIP_Format "wikilink"), [Filter](CIP_Filter "wikilink"), [Math](CIP_Math "wikilink"), [Segment](CIP_Segmentation "wikilink"), [Assess](CIP_Utilities "wikilink").
+To get information on a function follow the link in the function table in the [categories](CIP#Tools_categories ) section or directly go to one of the category pages: [Format](CIP_Format ), [Filter](CIP_Filter ), [Math](CIP_Math ), [Segment](CIP_Segmentation ), [Assess](CIP_Utilities ).
 
-For information on the parameters, their type, whether they are optionnal or required and more one can consult the [ Parameters](CIP_Parameters "wikilink") page.
+For information on the parameters, their type, whether they are optionnal or required and more one can consult the [ Parameters](CIP_Parameters ) page.
 
 # Tools categories
 
@@ -63,38 +63,38 @@ Image analysis workflows require the user to perform stereotypic steps: enhance 
 
 </div>
 
-  - **[Format](CIP_Format "wikilink")**: These functions are used to managed image data, combine them or reduce their dimensionnality. They take one or multiple image as input and return one image as output. These function will generally provide an ouput which size and/or dimensionality can be different from the input
+  - **[Format](CIP_Format )**: These functions are used to managed image data, combine them or reduce their dimensionnality. They take one or multiple image as input and return one image as output. These function will generally provide an ouput which size and/or dimensionality can be different from the input
 
 <!-- end list -->
 
-  - **[Filter](CIP_Filter "wikilink")**: filters act on image graylevel. They creates an output image the same size as the input. Filters are used to remove noise, filter out unwanted background or enhance feature of interest such as spots and lines.
+  - **[Filter](CIP_Filter )**: filters act on image graylevel. They creates an output image the same size as the input. Filters are used to remove noise, filter out unwanted background or enhance feature of interest such as spots and lines.
 
 <!-- end list -->
 
-  - **[Math](CIP_Math "wikilink") operations and functions**: These category gathers usual mathematical operations such as addition, subtraction or trigonometric functions for instance. They can be used with scalars, images or image and scalar in combination. When use with images the operation are applied pixel wise.
+  - **[Math](CIP_Math ) operations and functions**: These category gathers usual mathematical operations such as addition, subtraction or trigonometric functions for instance. They can be used with scalars, images or image and scalar in combination. When use with images the operation are applied pixel wise.
 
 <!-- end list -->
 
-  - **[Segmentation](CIP_Segmentation "wikilink")**: Segmentation functions allow to define regions in an image. Applied to an input image they create so called label image that defines the pixel where the object lays. Each region is attributed a particular label, an integer value, that can be used to retrieve the object later. Watershed, thresholding spot and line detection can be found here.
+  - **[Segmentation](CIP_Segmentation )**: Segmentation functions allow to define regions in an image. Applied to an input image they create so called label image that defines the pixel where the object lays. Each region is attributed a particular label, an integer value, that can be used to retrieve the object later. Watershed, thresholding spot and line detection can be found here.
 
 <!-- end list -->
 
-  - **[Assess](CIP_Utilities "wikilink")**: in that category are tools to facilitate data visualisation and measures that will be needed in every pipeline once the image processing is done.
+  - **[Assess](CIP_Utilities )**: in that category are tools to facilitate data visualisation and measures that will be needed in every pipeline once the image processing is done.
 
 Link to function user documentation are provided in the table below.
 
 | Filter                                     | Segmentation                                       | Format                                       | Math                                                                                                                                 | Assess                                      | Experimental                               |
 | ------------------------------------------ | -------------------------------------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------- | ------------------------------------------ |
-| [gauss](CIP_Filter#gauss "wikilink")       | [threshold](CIP_Segmentation#threshold "wikilink") | [create](CIP_Format#create "wikilink")       | [add](CIP_Math#binary_operator "wikilink"), [sub](CIP_Math#binary_operator "wikilink")                                               | [measure](CIP_Utilities#measure "wikilink") | [track](CIP_Experimental#track "wikilink") |
-| [erosion](CIP_Filter#erosion "wikilink")   | [maxima](CIP_Segmentation#maxima "wikilink")       | [duplicate](CIP_Format#duplicate "wikilink") | [mul](CIP_Math#binary_operator "wikilink"), [div](CIP_Math#binary_operator "wikilink")                                               | [show](CIP_Utilities#show "wikilink")       |                                            |
-| [dilation](CIP_Filter#dilation "wikilink") | [watershed](CIP_Segmentation#watershed "wikilink") | [slice](CIP_Format#slice "wikilink")         | [cos](CIP_Math#unary_operator "wikilink"), [sin](CIP_Math#unary_operator "wikilink"), [tan](CIP_Math#unary_operator "wikilink")      | [region](CIP_Utilities#region "wikilink")   |                                            |
-| [opening](CIP_Filter#opening "wikilink")   | [label](CIP_Segmentation#label "wikilink")         | [project](CIP_Format#project "wikilink")     | [acos](CIP_Math#unary_operator "wikilink"), [asin](CIP_Math#unary_operator "wikilink"), [atan](CIP_Math#unary_operator "wikilink")   | [toIJ1](CIP_Utilities#toIJ1 "wikilink")     |                                            |
-| [closing](CIP_Filter#closing "wikilink")   |                                                    |                                              | [min](CIP_Math#binary_operator "wikilink"), [max](CIP_Math#binary_operator "wikilink")                                               | [toIJ2](CIP_Utilities#toIJ2 "wikilink")     |                                            |
-| [tophat](CIP_Filter#tophat "wikilink")     |                                                    |                                              | [pow](CIP_Math#binary_operator "wikilink"), [sqrt](CIP_Math#unary_operator "wikilink")                                               | [spacing](CIP_Utilities#spacing "wikilink") |                                            |
-| [distance](CIP_Filter#distance "wikilink") |                                                    |                                              | [floor](CIP_Math#unary_operator "wikilink"), [ceil](CIP_Math#unary_operator "wikilink"), [round](CIP_Math#unary_operator "wikilink") | [unit](CIP_Utilities#unit "wikilink")       |                                            |
-| [median](CIP_Filter#median "wikilink")     |                                                    |                                              | [log](CIP_Math#unary_operator "wikilink"), [exp](CIP_Math#unary_operator "wikilink")                                                 | [axes](CIP_Utilities#axes "wikilink")       |                                            |
-| [invert](CIP_Filter#invert "wikilink")     |                                                    |                                              | [sign](CIP_Math#unary_operator "wikilink"), [abs](CIP_Math#unary_operator "wikilink")                                                | [list](CIP_Utilities#list "wikilink")       |                                            |
-|                                            |                                                    |                                              |                                                                                                                                      | [help](CIP_Utilities#help "wikilink")       |                                            |
+| [gauss](CIP_Filter#gauss )       | [threshold](CIP_Segmentation#threshold ) | [create](CIP_Format#create )       | [add](CIP_Math#binary_operator ), [sub](CIP_Math#binary_operator )                                               | [measure](CIP_Utilities#measure ) | [track](CIP_Experimental#track ) |
+| [erosion](CIP_Filter#erosion )   | [maxima](CIP_Segmentation#maxima )       | [duplicate](CIP_Format#duplicate ) | [mul](CIP_Math#binary_operator ), [div](CIP_Math#binary_operator )                                               | [show](CIP_Utilities#show )       |                                            |
+| [dilation](CIP_Filter#dilation ) | [watershed](CIP_Segmentation#watershed ) | [slice](CIP_Format#slice )         | [cos](CIP_Math#unary_operator ), [sin](CIP_Math#unary_operator ), [tan](CIP_Math#unary_operator )      | [region](CIP_Utilities#region )   |                                            |
+| [opening](CIP_Filter#opening )   | [label](CIP_Segmentation#label )         | [project](CIP_Format#project )     | [acos](CIP_Math#unary_operator ), [asin](CIP_Math#unary_operator ), [atan](CIP_Math#unary_operator )   | [toIJ1](CIP_Utilities#toIJ1 )     |                                            |
+| [closing](CIP_Filter#closing )   |                                                    |                                              | [min](CIP_Math#binary_operator ), [max](CIP_Math#binary_operator )                                               | [toIJ2](CIP_Utilities#toIJ2 )     |                                            |
+| [tophat](CIP_Filter#tophat )     |                                                    |                                              | [pow](CIP_Math#binary_operator ), [sqrt](CIP_Math#unary_operator )                                               | [spacing](CIP_Utilities#spacing ) |                                            |
+| [distance](CIP_Filter#distance ) |                                                    |                                              | [floor](CIP_Math#unary_operator ), [ceil](CIP_Math#unary_operator ), [round](CIP_Math#unary_operator ) | [unit](CIP_Utilities#unit )       |                                            |
+| [median](CIP_Filter#median )     |                                                    |                                              | [log](CIP_Math#unary_operator ), [exp](CIP_Math#unary_operator )                                                 | [axes](CIP_Utilities#axes )       |                                            |
+| [invert](CIP_Filter#invert )     |                                                    |                                              | [sign](CIP_Math#unary_operator ), [abs](CIP_Math#unary_operator )                                                | [list](CIP_Utilities#list )       |                                            |
+|                                            |                                                    |                                              |                                                                                                                                      | [help](CIP_Utilities#help )       |                                            |
 
 # Script example
 

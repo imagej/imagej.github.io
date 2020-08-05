@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include develop-menu content='tools' %}There are several [dotfiles](https://dotfiles.github.io/) repositories filled with command line configuration goodness for the different [layers](Architecture "wikilink") of the [SciJava](SciJava "wikilink") component collection.
+{% include develop-menu content='tools' %}There are several [dotfiles](https://dotfiles.github.io/) repositories filled with command line configuration goodness for the different [layers](Architecture ) of the [SciJava](SciJava ) component collection.
 
 ## Repositories
 
@@ -44,7 +44,7 @@ There are several tools for which configuration and customization is provided:
 
   - Shells: [bash](https://www.gnu.org/software/bash/) and [zsh](http://www.zsh.org/)
   - Editors: [Vim](http://www.vim.org/)
-  - SCM tools: [Git](Git "wikilink") and [myrepos](https://myrepos.branchable.com/)
+  - SCM tools: [Git](Git ) and [myrepos](https://myrepos.branchable.com/)
 
 Where possible, configuration is driven by plugin managers:
 

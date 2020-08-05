@@ -7,15 +7,15 @@ categories: News,ImageJ2
 description: test description
 ---
 
-We are happy to announce the first stable release version of the [ImgLib2](ImgLib2 "wikilink") core library\!
+We are happy to announce the first stable release version of the [ImgLib2](ImgLib2 ) core library\!
 
-This release was a central goal of the recent [hackathon](hackathon "wikilink") at [LOCI](LOCI "wikilink") in Madison, during the week of October 13 - 17.
+This release was a central goal of the recent [hackathon](hackathon ) at [LOCI](LOCI ) in Madison, during the week of October 13 - 17.
 
-The ImgLib2 core library is now [available on Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22net.imglib2%22), and the [source code](source_code "wikilink") for all ImgLib2 projects is [accessible on GitHub](https://github.com/imglib).
+The ImgLib2 core library is now [available on Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22net.imglib2%22), and the [source code](source_code ) for all ImgLib2 projects is [accessible on GitHub](https://github.com/imglib).
 
-Like the [SciJava](SciJava "wikilink") and [ImageJ2](ImageJ2 "wikilink") projects, ImgLib2 releases now follow the [semantic versioning](semantic_versioning "wikilink") scheme. Also, the project and [git](git "wikilink") repository structure has changed. The main imglib repository has been [split into multiple repositories](Architecture#Git_repositories "wikilink"), named consistently with the artifact names and java package prefixes. Projects are now coupled using non-SNAPSHOT versions, in order to achieve [reproducible builds](reproducible_builds "wikilink").
+Like the [SciJava](SciJava ) and [ImageJ2](ImageJ2 ) projects, ImgLib2 releases now follow the [semantic versioning](semantic_versioning ) scheme. Also, the project and [git](git ) repository structure has changed. The main imglib repository has been [split into multiple repositories](Architecture#Git_repositories ), named consistently with the artifact names and java package prefixes. Projects are now coupled using non-SNAPSHOT versions, in order to achieve [reproducible builds](reproducible_builds ).
 
-For further technical details on project structure, see the [Architecture](Architecture "wikilink") page.
+For further technical details on project structure, see the [Architecture](Architecture ) page.
 
 Before coming out of beta, we have made several last-minute changes to the code:
 
@@ -49,6 +49,6 @@ Before coming out of beta, we have made several last-minute changes to the code:
 
 All ImgLib2 subprojects have been adapted to these changes and released (in some cases as new beta versions).
 
-One thing still pending is to upload these new ImgLib2 releases to the ImageJ and [Fiji](Fiji "wikilink") [update sites](update_sites "wikilink"), making them available to users of ImageJ and Fiji. This change has been rather involved, since there is a lot of downstream code affected by the API changes. But we expect to make the new ImgLib2 available to users before the end of the calendar year. Stay tuned for further announcements\!
+One thing still pending is to upload these new ImgLib2 releases to the ImageJ and [Fiji](Fiji ) [update sites](update_sites ), making them available to users of ImageJ and Fiji. This change has been rather involved, since there is a lot of downstream code affected by the API changes. But we expect to make the new ImgLib2 available to users before the end of the calendar year. Stay tuned for further announcements\!
 
  

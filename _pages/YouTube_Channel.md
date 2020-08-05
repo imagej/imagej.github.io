@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Fiji/YouTube Channel](Fiji/YouTube_Channel "wikilink")
+1.  REDIRECT [Fiji/YouTube Channel](Fiji/YouTube_Channel )

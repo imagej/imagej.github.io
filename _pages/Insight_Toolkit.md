@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [ITK](ITK "wikilink")
+1.  REDIRECT [ITK](ITK )

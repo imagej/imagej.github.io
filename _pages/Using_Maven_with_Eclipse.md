@@ -52,6 +52,6 @@ Now update Eclipse's JRE to be JDK-aware:
 
 ### On Mac OS X, behind a firewall
 
-I ([Jean-Yves](JeanYvesTinevez "wikilink") speaking) noticed a very annoying problem. At work, I live behind a firewall, and whatever I did, the version of maven shipped with Eclipse (Indigo or Juno) never managed to reach out the outside world (even tweaking proxy configuration). This resulted in the impossibility to import any maven project.
+I ([Jean-Yves](JeanYvesTinevez ) speaking) noticed a very annoying problem. At work, I live behind a firewall, and whatever I did, the version of maven shipped with Eclipse (Indigo or Juno) never managed to reach out the outside world (even tweaking proxy configuration). This resulted in the impossibility to import any maven project.
 
 One solution that worked for me was to configure Eclipse no to use the maven version it shipped. Instead, I used the one shipped with [fink](http://pdb.finkproject.org/pdb/package.php/maven) accessible from the command line, and with a system proxy configured correctly.

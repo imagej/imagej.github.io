@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='Rocsg ' repo='Fijiyama ' %}
 {% endcapture %}
-{% include info-box name='Fijiyama ' software='Fiji ' author='Romain Fernandez & Cédric Moisy ' maintainer='Romain Fernandez ' source=source released='February 10<sup>th</sup>, 2020 ' status='stable, active ' category='[Registration](_Category_Registration "wikilink") ' %}
+{% include info-box name='Fijiyama ' software='Fiji ' author='Romain Fernandez & Cédric Moisy ' maintainer='Romain Fernandez ' source=source released='February 10<sup>th</sup>, 2020 ' status='stable, active ' category='[Registration](_Category_Registration ) ' %}
 
 <i>Current Fijiyama version : Gorgeous Grapevine (last release : March 21<sup>th</sup>, 2020).</i>
 
@@ -175,7 +175,7 @@ Major updates are symbolized with a change in the plugin version name. For minor
 
 ## Possible issues and recommendations
 
-  - '''Dealing with large datasets : ''' biological images are sometimes very large. In the field of time-lapse microscopy, [BigStitcher](BigStitcher "wikilink") plugin handles such data, using BigDataViewer, as its registration algorithm, perfect for monomodal data of lightsheet microscopy, is well fitted to this task.
+  - '''Dealing with large datasets : ''' biological images are sometimes very large. In the field of time-lapse microscopy, [BigStitcher](BigStitcher ) plugin handles such data, using BigDataViewer, as its registration algorithm, perfect for monomodal data of lightsheet microscopy, is well fitted to this task.
 
 Fijiyama is based on the Blockmatching registration algorithm, robust for inter-modality. This algorithm is memory consuming and computation intensive. When starting Fijiyama, the plugin analyzes your computer settings and might propose to subsample your dataset to fasten the registration process. This will not impact the appearance of the final results since the exportation procedure is performed using the initial images, at the chosen resolution.
 
@@ -205,11 +205,11 @@ Common categories of registration optimizers, associated with different registra
 
   - **[ITK](https://itk.org/about/)** (Yoo <i>et al.</i> 2002)*' iconic algorithm*' optimizes iteratively a transformation. The optimization process is guided by the superposition improvement measured using a global similarity measure between the two 3D images. Choosing this measure, we assume a relationship between intensities of reference and moving images, and that this relationship is valid and identical in any point of the image. That weak assumption can lead to robustness issues when dealing with multi-modal registration.
   - **The Block-Matching algorithm** [(Ourselin <i>et al.</i> 2000)](https://link.springer.com/content/pdf/10.1007/978-3-540-40899-4_57.pdf) is a hybrid method, using a similarity measure to establish correspondences between subparts of images, then using these correspondences to compute a global transformation for the whole image. Assuming that the relationship between intensities of reference and moving images can be valid in a local neighborhood, blockmatching uses it to compare subparts of the 3D images to identify correspondences. This algorithm is the default one in Fijiyama.
-  - Fijiyama does not have a "geometric" registration algorithm yet. Principle of such algorithms is to extract features from each image, and to establish correspondences between extracted features. Such approach can lead to faster but less robust algorithms as it is difficult to define a feature extraction method that is modality-independent, object-independent, and scale-independent. But for monomodal registration, such algorithms can provide great success, like [BigStitcher](BigStitcher "wikilink") with microscopy images
+  - Fijiyama does not have a "geometric" registration algorithm yet. Principle of such algorithms is to extract features from each image, and to establish correspondences between extracted features. Such approach can lead to faster but less robust algorithms as it is difficult to define a feature extraction method that is modality-independent, object-independent, and scale-independent. But for monomodal registration, such algorithms can provide great success, like [BigStitcher](BigStitcher ) with microscopy images
 
 ## Limitations
 
-For large datasets (15 and more timepoints) or images (1GB+), specific tools should be used. Here is a non-exhaustive list of plugins for [ImageJ](ImageJ "wikilink") / [Fiji](Fiji "wikilink"), available for 3D registration of large datasets: [BigStitcher](BigStitcher "wikilink"), [Atlas\_Toolkit](Atlas_Toolkit "wikilink"), [TrakEM2](TrakEM2 "wikilink") or [Elastix](Elastix "wikilink") wrapping plugin. Outside from the ImageJ world, for people who are not afraid to script, [Elastix](http://elastix.isi.uu.nl/) is a proper tool for series, and [Slicer](https://www.slicer.org/) can also do a great job. Limited to two-images registration, [MedInria](https://med.inria.fr/) is a very powerful and popular tool for medical images, which shares a lot of algorithmic basis with Fijiyama.
+For large datasets (15 and more timepoints) or images (1GB+), specific tools should be used. Here is a non-exhaustive list of plugins for [ImageJ](ImageJ ) / [Fiji](Fiji ), available for 3D registration of large datasets: [BigStitcher](BigStitcher ), [Atlas\_Toolkit](Atlas_Toolkit ), [TrakEM2](TrakEM2 ) or [Elastix](Elastix ) wrapping plugin. Outside from the ImageJ world, for people who are not afraid to script, [Elastix](http://elastix.isi.uu.nl/) is a proper tool for series, and [Slicer](https://www.slicer.org/) can also do a great job. Limited to two-images registration, [MedInria](https://med.inria.fr/) is a very powerful and popular tool for medical images, which shares a lot of algorithmic basis with Fijiyama.
 
 ## Citing this work
 

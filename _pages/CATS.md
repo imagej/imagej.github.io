@@ -19,6 +19,6 @@ CATS is a FIJI plugin for context aware trainable segmentation of big image data
 
 ## Installation
 
-CATS can be installed from the ImageJ update site: http://sites.imagej.net/EMBL-CBA/. For details on how to install an update site click [here](Following_an_update_site "wikilink").
+CATS can be installed from the ImageJ update site: http://sites.imagej.net/EMBL-CBA/. For details on how to install an update site click [here](Following_an_update_site ).
 
 To start CATS in ImageJ, select Plugins \> Segmentation \> CATS from the main menu.

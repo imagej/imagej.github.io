@@ -13,7 +13,7 @@ description: test description
 
 {% include project content='Fiji' %}
 
-<span id="Fiji"></span> [Fiji](Fiji "wikilink") is a distribution of ImageJ which includes many useful plugins [contributed by the community](Fiji_contribution_requirements "wikilink").
+<span id="Fiji"></span> [Fiji](Fiji ) is a distribution of ImageJ which includes many useful plugins [contributed by the community](Fiji_contribution_requirements ).
 
 {% include downloadfiji%}
 
@@ -35,18 +35,18 @@ However, Fiji (like ImageJ) should run on any system for which a Java 8 runtime 
 
 We used to offer Debian packages of Fiji. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.
 
-If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us in [chat](chat "wikilink") or on the [forum](http://forum.imagej.net/c/development) .
+If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us in [chat](chat ) or on the [forum](http://forum.imagej.net/c/development) .
 
 ' %} Fiji is distributed as a {% include wikipedia title='Portable application' text='portable application'%}. That means that you do not have to run an installer; just download, unpack and start it.
 
 # Troubleshooting
 
-  - Many common questions are answered on the [FAQ](FAQ "wikilink").
-  - If you encounter bugs, please see the [Getting Help](Help "wikilink") page.
+  - Many common questions are answered on the [FAQ](FAQ ).
+  - If you encounter bugs, please see the [Getting Help](Help ) page.
 
 # Source code
 
-See the [source code](source_code "wikilink") page for details on obtaining the Fiji source code.
+See the [source code](source_code ) page for details on obtaining the Fiji source code.
 
 # Other downloads
 
@@ -82,5 +82,5 @@ Here are Life-Line versions from before Fiji switched to Java 8.
 
 ## See also
 
-  - https://downloads.imagej.net/fiji/ for early versions of [Fiji](Fiji "wikilink"), and other miscellany.
-  - The main [Downloads](Downloads "wikilink") page, for a version of ImageJ without the Fiji extensions.
+  - https://downloads.imagej.net/fiji/ for early versions of [Fiji](Fiji ), and other miscellany.
+  - The main [Downloads](Downloads ) page, for a version of ImageJ without the Fiji extensions.

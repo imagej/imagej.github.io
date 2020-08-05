@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [QuickPALM](QuickPALM "wikilink")
+1.  REDIRECT [QuickPALM](QuickPALM )

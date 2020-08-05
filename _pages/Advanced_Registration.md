@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SPIM Registration](SPIM_Registration "wikilink")
+1.  REDIRECT [SPIM Registration](SPIM_Registration )

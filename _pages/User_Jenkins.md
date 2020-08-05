@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-This bot account was used by ImageJ [Jenkins](Jenkins "wikilink") jobs.
+This bot account was used by ImageJ [Jenkins](Jenkins ) jobs.

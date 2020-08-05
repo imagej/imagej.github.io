@@ -19,7 +19,7 @@ description: test description
   - [Fiji on OHLOH](http://www.ohloh.net/p/therealfiji)
   - [ObjectJ](http://simon.bio.uva.nl/objectj/)
 
-Links to the contributors' personal pages can be found [here](Contributors "wikilink").
+Links to the contributors' personal pages can be found [here](Contributors ).
 
 ## More ImageJ plugins
 
@@ -35,23 +35,23 @@ Links to the contributors' personal pages can be found [here](Contributors "wiki
 | <img src="/images/pages/Knime-logo.jpg" width="150"/>    | The [Konstanz kNowledge Information Mining Environment](http://tech.knime.org/community/image-processing).                                                                                                              |
 | <img src="/images/pages/Mm-icon.jpg" width="150"/>       | [µManager](http://micro-manager.org/) is an extensive software suite to interact with microscopes. It integrates nicely as an ImageJ plugin ({% include bc content='Plugins | Micro-Manager | Micro-Manager Studio'%}). |
 | <img src="/images/pages/OpenSPIM-logo.png" width="150"/> | [OpenSPIM](http://openspim.org/) is an Open Access and Open Source project to make Single Plane Illumination Microscopy (SPIM) accessible to researchers working with, or on, SPIM technology.                          |
-| <img src="/images/pages/SlideSet-logo.png" width="90"/>  | [Slide Set](http://b.nanes.org/slideset/) is a batch processing system for ImageJ, already leveraging the power of [ImageJ2](ImageJ2 "wikilink").                                                                       |
+| <img src="/images/pages/SlideSet-logo.png" width="90"/>  | [Slide Set](http://b.nanes.org/slideset/) is a batch processing system for ImageJ, already leveraging the power of [ImageJ2](ImageJ2 ).                                                                       |
 
 ## Image Processing and Ethics
 
-See the [Principles](Principles "wikilink") page.
+See the [Principles](Principles ) page.
 
 ## Input/Output
 
-See the [Formats](Formats "wikilink") page.
+See the [Formats](Formats ) page.
 
 ### Movie support
 
-See the [Video](Video "wikilink") page.
+See the [Video](Video ) page.
 
 ## Image Processing
 
-See the [Principles](Principles "wikilink") page.
+See the [Principles](Principles ) page.
 
 [A pixel is not a little square](http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf). Really. It is not. Pixels may be spaced on a regular grid. But that does not make them square. Even thinking about them as squares will harm your analysis, since it is simply wrong.
 
@@ -61,7 +61,7 @@ The University of Edinburgh also has the rather complete [CVonline](http://homep
 
 A scientific image [is not a photograph](http://www.4p8.com/eric.brasseur/gamma.html)\!
 
-[External tutorials](External_tutorials "wikilink").
+[External tutorials](External_tutorials ).
 
 ## Programming in science
 

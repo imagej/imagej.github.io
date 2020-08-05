@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Profiling\_Java\_Code](Profiling_Java_Code "wikilink")
+1.  REDIRECT [Profiling\_Java\_Code](Profiling_Java_Code )

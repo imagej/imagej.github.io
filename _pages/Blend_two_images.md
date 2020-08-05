@@ -9,7 +9,7 @@ description: test description
 
 ## Purpose
 
-A [Clojure](Clojure_Scripting "wikilink") script illustrating how to:
+A [Clojure](Clojure_Scripting ) script illustrating how to:
 
   - Fetch images from the internet
   - Extract and iterate/loop the pixels on an image
@@ -57,6 +57,6 @@ The script is maintained by Albert Cardona.
 
 ## See also
 
-[Clojure Scripting](Clojure_Scripting "wikilink")
+[Clojure Scripting](Clojure_Scripting )
 
  

@@ -19,8 +19,8 @@ description: test description
 {% capture source%}
 {% include github org='imagescience ' repo='FeatureJ ' %}
 {% endcapture %}
-{% include info-box software='ImageScience ' name='FeatureJ ' maintainer=maintainer author=author source=source status=' ' category='[:Category:Plugins](_Category_Plugins "wikilink") ' website='http://imagescience.org/meijering/software/featurej/ ' %}The [FeatureJ](http://imagescience.org/meijering/software/featurej/) suite of plugins offers extraction of differential features of images.
+{% include info-box software='ImageScience ' name='FeatureJ ' maintainer=maintainer author=author source=source status=' ' category='[:Category:Plugins](_Category_Plugins ) ' website='http://imagescience.org/meijering/software/featurej/ ' %}The [FeatureJ](http://imagescience.org/meijering/software/featurej/) suite of plugins offers extraction of differential features of images.
 
-FeatureJ is available from the [ImageScience](ImageScience "wikilink") update site.
+FeatureJ is available from the [ImageScience](ImageScience ) update site.
 
  

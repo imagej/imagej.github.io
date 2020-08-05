@@ -8,14 +8,14 @@ description: test description
 ---
 
 {% include outdated%}
- **Note**: Please make sure that you have a clean build of the plugin you try to upload. You can ensure a clean build by calling the [Fiji Build System](Fiji_Build_System "wikilink") with the *-clean* suffix before building the actual target. Example:
+ **Note**: Please make sure that you have a clean build of the plugin you try to upload. You can ensure a clean build by calling the [Fiji Build System](Fiji_Build_System ) with the *-clean* suffix before building the actual target. Example:
 
 `./Build.sh plugins/Fiji_Plugins.jar-clean`  
 `./Build.sh plugins/Fiji_Plugins.jar`
 
 ## The graphical way (recommended)
 
-You can use the [Fiji Updater](Update_Fiji "wikilink") to upload new plugins (or new versions thereof). First start {% include bc content='Help | Update Fiji'%}. It will tell you that there are *locally modified files*:
+You can use the [Fiji Updater](Update_Fiji ) to upload new plugins (or new versions thereof). First start {% include bc content='Help | Update Fiji'%}. It will tell you that there are *locally modified files*:
 
 ![Updater-locally-modified.png](/images/pages/Updater-locally-modified.png "Updater-locally-modified.png")
 
@@ -31,7 +31,7 @@ Please make sure also that the files you are about to upload are clean. You shou
 
 Once everything is ready for upload, just click the button *Upload to Server*.
 
-**Note:** you will need to have an account on [fiji.sc](fiji.sc "wikilink") which is in the group *updaters*, and you will only be offered the upload option by the Updater if you work from a working directory with source files.
+**Note:** you will need to have an account on [fiji.sc](fiji.sc ) which is in the group *updaters*, and you will only be offered the upload option by the Updater if you work from a working directory with source files.
 
 ## Using the command line
 
@@ -50,7 +50,7 @@ It will refuse to upload a file that has locally-modified dependencies, and list
 
 ## Internals
 
-The original [Fiji Updater](Update_Fiji "wikilink") was very limited; it only allowed to download new versions of files, and it did not have an option to determine whether a local version was previously installed via the Updater or not.
+The original [Fiji Updater](Update_Fiji ) was very limited; it only allowed to download new versions of files, and it did not have an option to determine whether a local version was previously installed via the Updater or not.
 
 However, it already set the scene for the current Updater, as many people happily used the old one.
 
@@ -66,7 +66,7 @@ The reason why *.jar* files are different is that they are really nothing more t
 
 ### The database
 
-Originally, the database was stored in the file *current.txt*, which is stored in the *update/* directory of [fiji.sc](fiji.sc "wikilink")'s web server. Its format was simply lines in the form
+Originally, the database was stored in the file *current.txt*, which is stored in the *update/* directory of [fiji.sc](fiji.sc )'s web server. Its format was simply lines in the form
 
 <filename>` `<timestamp>` `<checksum>
 

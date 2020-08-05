@@ -15,11 +15,11 @@ The CSBDeep family is growing. Here is an overview of related topics relevant to
 
 ## Which plugins are available in ImageJ / Fiji?
 
-  - [CARE](CARE "wikilink") (CSBDeep update site)
-  - [StarDist](StarDist "wikilink") (StarDist update site)
-  - [N2V](N2V "wikilink") (CSBDeep update site)
-  - [DenoiSeg](DenoiSeg "wikilink") (CSBDeep update site)
+  - [CARE](CARE ) (CSBDeep update site)
+  - [StarDist](StarDist ) (StarDist update site)
+  - [N2V](N2V ) (CSBDeep update site)
+  - [DenoiSeg](DenoiSeg ) (CSBDeep update site)
 
 ## GPU support
 
-  - go to the [TensorFlow-GPU](TensorFlow-GPU "wikilink") wiki page for support
+  - go to the [TensorFlow-GPU](TensorFlow-GPU ) wiki page for support

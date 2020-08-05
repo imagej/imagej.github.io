@@ -16,7 +16,7 @@ description: test description
 {% include github%}
 
 {% endcapture %}
-{% include info-box name='AccPbFRET ' software='ImageJ ' author='J. Roszik, J. Szöllosi, G. Vereb ' maintainer=maintainer source=source released='2008 ' status='active ' category='[:Category:Plugins](_Category_Plugins "wikilink") [:Category:Citable](_Category_Citable "wikilink") ' website=' https://biophys.med.unideb.hu/en/accpbfret ' %}
+{% include info-box name='AccPbFRET ' software='ImageJ ' author='J. Roszik, J. Szöllosi, G. Vereb ' maintainer=maintainer source=source released='2008 ' status='active ' category='[:Category:Plugins](_Category_Plugins ) [:Category:Citable](_Category_Citable ) ' website=' https://biophys.med.unideb.hu/en/accpbfret ' %}
 
 **An ImageJ plugin for analysis of acceptor photobleaching FRET images**
 
@@ -32,4 +32,4 @@ This software is based on a publication. If you use it in your work, please cite
 
 ## See also
 
-For time lapse and 3D imaging, we recommend our other FRET plugin [RiFRET](RiFRET "wikilink").
+For time lapse and 3D imaging, we recommend our other FRET plugin [RiFRET](RiFRET ).

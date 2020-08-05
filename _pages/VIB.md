@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [VIB Protocol](VIB_Protocol "wikilink")
+1.  REDIRECT [VIB Protocol](VIB_Protocol )

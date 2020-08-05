@@ -8,7 +8,7 @@ description: test description
 ---
 
 {% include unmaintained%}
- {% include biginfo-box content='As this plugin is no longer maintained... you can check out [ImageJ Ops](ImageJ_Ops "wikilink") for Ridge Detection algorithms.' %}
+ {% include biginfo-box content='As this plugin is no longer maintained... you can check out [ImageJ Ops](ImageJ_Ops ) for Ridge Detection algorithms.' %}
 
 
 {% capture author%}
@@ -108,7 +108,7 @@ Successful ridge detection with slope-based overlap detection enabled. Line 134 
 
 # Installation
 
-Simply turn on the [Biomedgroup update site](How_to_follow_a_3rd_party_update_site "wikilink"), which includes the ridge detection plugin.
+Simply turn on the [Biomedgroup update site](How_to_follow_a_3rd_party_update_site ), which includes the ridge detection plugin.
 
 If you use ImageJ just copy the RidgeDetection.jar file in your plugins folder and copy the [apache-commons-lang 3](http://commons.apache.org/proper/commons-lang/) jar file into the plugins/jars folder.
 

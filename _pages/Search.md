@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Help\#Searching\_ImageJ\_resources](Help#Searching_ImageJ_resources "wikilink")
+1.  REDIRECT [Help\#Searching\_ImageJ\_resources](Help#Searching_ImageJ_resources )

@@ -26,7 +26,7 @@ The most up-to-date SNT API can be found at https://morphonets.github.io/SNT.
 
 <!-- end list -->
 
-  - **Analysis\_Demo.py** A [Jython](Jython "wikilink") demo of how SNT can analyze neuronal reconstructions fetched from online databases such as MouseLight, NeuroMorpho or FlyCircuit.
+  - **Analysis\_Demo.py** A [Jython](Jython ) demo of how SNT can analyze neuronal reconstructions fetched from online databases such as MouseLight, NeuroMorpho or FlyCircuit.
 
 <!-- end list -->
 
@@ -42,7 +42,7 @@ The most up-to-date SNT API can be found at https://morphonets.github.io/SNT.
 
 <!-- end list -->
 
-  - **Reconstruction\_Viewer\_Demo.py** Exemplifies how to render reconstructions and neuropil annotations in a stand-alone [Reconstruction Viewer](SNT__Reconstruction_Viewer "wikilink").
+  - **Reconstruction\_Viewer\_Demo.py** Exemplifies how to render reconstructions and neuropil annotations in a stand-alone [Reconstruction Viewer](SNT__Reconstruction_Viewer ).
 
 <!-- end list -->
 
@@ -50,11 +50,11 @@ The most up-to-date SNT API can be found at https://morphonets.github.io/SNT.
 
 <!-- end list -->
 
-  - **Extensive\_Sholl\_Stats.groovy** Exemplifies how to perform linear and polynomial regression on tabular [Sholl](Sholl "wikilink") data.
+  - **Extensive\_Sholl\_Stats.groovy** Exemplifies how to perform linear and polynomial regression on tabular [Sholl](Sholl ) data.
 
 ### Boilerplate
 
-This menu hosts script templates containing extensible boilerplate code in several programming languages, namely [BeanShell](BeanShell "wikilink"), [Groovy](Groovy "wikilink") and [Jython](Jython_Scripting "wikilink"). The most essential imports and [script parameters](Script_Parameters "wikilink") are included to facilitate rapid development.
+This menu hosts script templates containing extensible boilerplate code in several programming languages, namely [BeanShell](BeanShell ), [Groovy](Groovy ) and [Jython](Jython_Scripting ). The most essential imports and [script parameters](Script_Parameters ) are included to facilitate rapid development.
 
 ### Tracing
 
@@ -84,7 +84,7 @@ This menu hosts scripts that process files in bulk. Namely:
 
 <!-- end list -->
 
-  - **Render\_Cell\_Collection.groovy** Exemplifies how to quickly render large collections of cells from a directory of files in [Reconstruction Viewer](SNT__Reconstruction_Viewer "wikilink").
+  - **Render\_Cell\_Collection.groovy** Exemplifies how to quickly render large collections of cells from a directory of files in [Reconstruction Viewer](SNT__Reconstruction_Viewer ).
 
 <!-- end list -->
 
@@ -141,7 +141,7 @@ Did you write a useful script? Please submit a [pull request](https://github.com
 
 ### Scripting Reconstruction Viewer
 
-Programmatic control over an open instance of [Reconstruction Viewer](SNT__Reconstruction_Viewer "wikilink") (either called from within SNT or as a standalone application) can be achieved by selecting the {% include bc content='Tools & Utilities|Script This Viewer...'%} [command](SNT__Reconstruction_Viewer#Utilities "wikilink"). It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [script parameters](Script_Parameters "wikilink"). The default programming language for this template can be chosen from the drop-down menu of the *Preferred Language* [option](SNT__Reconstruction_Viewer#Settings "wikilink").
+Programmatic control over an open instance of [Reconstruction Viewer](SNT__Reconstruction_Viewer ) (either called from within SNT or as a standalone application) can be achieved by selecting the {% include bc content='Tools & Utilities|Script This Viewer...'%} [command](SNT__Reconstruction_Viewer#Utilities ). It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [script parameters](Script_Parameters ). The default programming language for this template can be chosen from the drop-down menu of the *Preferred Language* [option](SNT__Reconstruction_Viewer#Settings ).
 
 The following script exemplifies how to extend the boilerplate template to control the Viewer in real-time.
 
@@ -257,7 +257,7 @@ do_stuff(viewer)
 
 ### Script Interpreter
 
-Some of SNT's functionality is accessible in the [Script Interpreter](Script_Interpreter "wikilink"). Here is an example: ![SNT-ScriptInterpreter.png](/images/pages/SNT-ScriptInterpreter.png "SNT-ScriptInterpreter.png")
+Some of SNT's functionality is accessible in the [Script Interpreter](Script_Interpreter ). Here is an example: ![SNT-ScriptInterpreter.png](/images/pages/SNT-ScriptInterpreter.png "SNT-ScriptInterpreter.png")
 
 {% include sntnavbar%}
 

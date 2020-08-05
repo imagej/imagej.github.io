@@ -151,7 +151,7 @@ git rebase -i
 # Change the undesirable commit to "noop"
 ```
 
-For more on branching, see [Git topic branches](Git_topic_branches "wikilink").
+For more on branching, see [Git topic branches](Git_topic_branches ).
 
 ### Rename the current branch
 

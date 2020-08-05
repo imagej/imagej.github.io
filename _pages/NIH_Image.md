@@ -7,7 +7,7 @@ categories: Related Software,Citable
 description: test description
 ---
 
-[NIH Image](http://imagej.nih.gov/nih-image/) is the precursor to [ImageJ](ImageJ "wikilink"). NIH Image was originally written by {% include person content='Rasband' %} in Pascal for the Macintosh. It was first released in 1987, shared on floppy disks.
+[NIH Image](http://imagej.nih.gov/nih-image/) is the precursor to [ImageJ](ImageJ ). NIH Image was originally written by {% include person content='Rasband' %} in Pascal for the Macintosh. It was first released in 1987, shared on floppy disks.
 
 ## Publication
 

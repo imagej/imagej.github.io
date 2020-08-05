@@ -9,17 +9,17 @@ description: test description
 
 ### Introduction
 
-In this tutorial we describe step by step **how to compare the performance of different classifiers** in the same segmentation problem using the [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") plugin.
+In this tutorial we describe step by step **how to compare the performance of different classifiers** in the same segmentation problem using the [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) plugin.
 
 Most of the information contained here has been extracted from the [WEKA manual for version 3.7.3](http://iweb.dl.sourceforge.net/project/weka/documentation/3.7.x/WekaManual-3-7-3.pdf), chapter 6.
 
 ### Starting the plugin
 
-To get started, open the 2D image or stack you want to work on and launch the [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") plugin (under {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation'%}):
+To get started, open the 2D image or stack you want to work on and launch the [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) plugin (under {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation'%}):
 
 <img src="/images/pages/Screenshot-open-AWS.png" width="700"/>
 
-For this tutorial, we used one of the TEM sections from [ Albert Cardona's public data set](public_data_sets "wikilink").
+For this tutorial, we used one of the TEM sections from [ Albert Cardona's public data set](public_data_sets ).
 
 After loading, the main GUI of the plugin will pop up: <img src="/images/pages/Screenshot-AWS-startup.png" width="700"/>
 

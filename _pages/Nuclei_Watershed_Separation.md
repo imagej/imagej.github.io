@@ -27,7 +27,7 @@ description: test description
 
 ### Open the sample image
 
-  - open the [sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope.](Media_NucleiDAPIconfocal.png "wikilink")
+  - open the [sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope.](Media_NucleiDAPIconfocal.png )
 
 ![ 250px](/images/pages/NucleiDAPIconfocal.png " 250px")
 
@@ -37,7 +37,7 @@ description: test description
 
 ### Pixel Intensity Threshold - find the foreground areas
 
-  - Next we need to separate the objects from the background using pixel intensity thresholding. Fiji has a number of built in [Automatic Thresholding](Auto_Threshold "wikilink") methods that try to distinguish the background from the foreground. In this case the default method works pretty well, but you can see there is a long list of methods, which give slightly different threshold results for this image. You can play with different methods if you like. You might get a different answer in the end\!
+  - Next we need to separate the objects from the background using pixel intensity thresholding. Fiji has a number of built in [Automatic Thresholding](Auto_Threshold ) methods that try to distinguish the background from the foreground. In this case the default method works pretty well, but you can see there is a long list of methods, which give slightly different threshold results for this image. You can play with different methods if you like. You might get a different answer in the end\!
 
 <!-- end list -->
 

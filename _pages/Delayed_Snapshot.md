@@ -44,6 +44,6 @@ if not gd.wasCanceled():
 
 ## See also
 
-[Jython Scripting](Jython_Scripting "wikilink")
+[Jython Scripting](Jython_Scripting )
 
  

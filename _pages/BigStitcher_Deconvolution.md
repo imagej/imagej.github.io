@@ -9,7 +9,7 @@ description: test description
 
 ## Overview
 
-In BigStitcher we offer deconvolution using a multi-view variant of the iterative Richardson-Lucy algorithm with various optimizations. Details about the previous version of the MultiView deconvolution as well as the corresponding publication with mathematical details can be found at [Multi-View\_Deconvolution](Multi-View_Deconvolution "wikilink").
+In BigStitcher we offer deconvolution using a multi-view variant of the iterative Richardson-Lucy algorithm with various optimizations. Details about the previous version of the MultiView deconvolution as well as the corresponding publication with mathematical details can be found at [Multi-View\_Deconvolution](Multi-View_Deconvolution ).
 
 **TODO: nice deconvolved image**
 
@@ -21,7 +21,7 @@ After clicking **(MultiView) Deconvolution**, you will be presented with a dialo
 
 <img src="/images/pages/BigStitcher Deconvolution Main.png" width="600"/>
 
-Since you are also producing a fused image for the deconvolution, some parameters are the same as in [BigStitcher\_Fuse](BigStitcher_Fuse "wikilink"):
+Since you are also producing a fused image for the deconvolution, some parameters are the same as in [BigStitcher\_Fuse](BigStitcher_Fuse ):
 
   - the **BoundingBox** to use for the deconvolved output
   - by how much to **Downsample** the output
@@ -70,6 +70,6 @@ Using this option, you can **continue a previous deconvolution** if you think th
 
 ## Usage of Previous version
 
-As this usage guide is still work in progress, please refer to [Multi-View\_Deconvolution](Multi-View_Deconvolution "wikilink") for now.
+As this usage guide is still work in progress, please refer to [Multi-View\_Deconvolution](Multi-View_Deconvolution ) for now.
 
-Go back to the [main page](BigStitcher#Documentation "wikilink")
+Go back to the [main page](BigStitcher#Documentation )

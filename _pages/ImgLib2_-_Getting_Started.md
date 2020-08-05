@@ -117,7 +117,7 @@ final ImgOpener opener = new ImgOpener();
 
 When opening an image, we can specify which memory layout to use and as which value type we want to load the image. We want to use the `ArrayImg` layout again, and we want to have `UnsignedByteType` values again.
 
-Similar to the [ above example](ImgLib2_-_Getting_Started#Creating_and_Displaying_an_Image "wikilink") we need an `ImgFactory` and an instance of the value type:
+Similar to the [ above example](ImgLib2_-_Getting_Started#Creating_and_Displaying_an_Image ) we need an `ImgFactory` and an instance of the value type:
 
 ``` java
 final ImgFactory< UnsignedByteType > factory = new ArrayImgFactory< UnsignedByteType >();
@@ -135,4 +135,4 @@ If there is a problem reading the image, `openImg()` throws an [`ImgIOException`
 ## Notes
 
   - Note that `Img` is just convenience interface. When you get more proficient with ImgLib2 you will find yourself using it less and less. You will either be more concrete or more general than that. In the above example, we could be more concrete -- the result of the `ArrayImgFactory< UnsignedByteType >.create()` is actually an `ArrayImg< UnsignedByteType, ByteArray >`. In algorithm implementations, you want to be as generic as possible to not constrain yourself to specific image types. You will specify only the super-interfaces of `Img` that you really need. For instance, if you need something which has boundaries and can be iterated you would use `IterableInterval`.
-  - There are more [ImgLib2 Examples](ImgLib2_Examples "wikilink") on [ Opening, creating and displaying images](ImgLib2_Examples#Example_1_-_Opening,_creating_and_displaying_images "wikilink").
+  - There are more [ImgLib2 Examples](ImgLib2_Examples ) on [ Opening, creating and displaying images](ImgLib2_Examples#Example_1_-_Opening,_creating_and_displaying_images ).

@@ -15,17 +15,17 @@ description: test description
 {% capture maintainer%}
 {% include person content='Alex-krull' %}, {% include person content='Damienrj' %}
 {% endcapture %}
-{% include info-box name='Blob Tracking ' software='Fiji ' author=author maintainer=maintainer source='https://github.com/alex-krull/fiji ' released='May 22<sup>nd</sup>, 2013 ' latest-version='May 22<sup>nd</sup>, 2013 ' status='PreRelease, active ' category='[Tracking](_Category_Tracking "wikilink") ' %}
+{% include info-box name='Blob Tracking ' software='Fiji ' author=author maintainer=maintainer source='https://github.com/alex-krull/fiji ' released='May 22<sup>nd</sup>, 2013 ' latest-version='May 22<sup>nd</sup>, 2013 ' status='PreRelease, active ' category='[Tracking](_Category_Tracking ) ' %}
 
 This software is a tool for the tracking of low-light sub-resolution objects in fluorescent microscopy. It can be applied in other fields as well. The plugin implements the localization algorithm described in the following paper: "A Divide and Conquer Strategy for the Maximum Likelihood localization of Low Intensity Objects" by Alexander Krull et al, 2013 Optics Express, Vol. 22, Issue 1, pp. 210-228 (2014).
 
 # Installation of the plugin
 
-The plugin can be quickly installed via the projects update site. This is unfortunately may not possible if you are using a Fiji version installed via package management system. If you encounter this problem, please use the Fiji version obtainable [ here](Downloads "wikilink").
+The plugin can be quickly installed via the projects update site. This is unfortunately may not possible if you are using a Fiji version installed via package management system. If you encounter this problem, please use the Fiji version obtainable [ here](Downloads ).
 
 ## Add the project's update site to your Fiji installation
 
-Please refer to the [ **tutorial**](Update_Sites "wikilink") on how to add our update site to your Fiji installation. Our update site has the following URL:
+Please refer to the [ **tutorial**](Update_Sites ) on how to add our update site to your Fiji installation. Our update site has the following URL:
 
 ` `**`http://sites.imagej.net/Alex-krull/`**
 
@@ -68,7 +68,7 @@ They are:
   - Electrons per A/D count  
     Finally you have to provide the ratio at which the analog digital unit in your camera converts photo electrons into A/D counts.
 
-Please consult you camera's specs sheet to obtain this information. The **EMCCD gain** and **Electrons per A/D count** are required for tracking with the [ EMCCD-GaussianML method](Low_Light_Tracking_Tool#EMCCD-GaussianML "wikilink"). The [ GaussianML method](Low_Light_Tracking_Tool#GaussianML "wikilink") uses these values to correct the measured flux of the object and background.
+Please consult you camera's specs sheet to obtain this information. The **EMCCD gain** and **Electrons per A/D count** are required for tracking with the [ EMCCD-GaussianML method](Low_Light_Tracking_Tool#EMCCD-GaussianML ). The [ GaussianML method](Low_Light_Tracking_Tool#GaussianML ) uses these values to correct the measured flux of the object and background.
 
 # The User Interface
 
@@ -78,9 +78,9 @@ When the plugin starts on a 2D image stack you have three windows and the contro
 
 ![Opendatasmall.png](/images/pages/Opendatasmall.png "Opendatasmall.png") ![Controlwindownew.png](/images/pages/Controlwindownew.png "Controlwindownew.png")
 
-If you would like the windows to become larger or smaller, change the size of the main data window and then select **Arrange Windows**, from the **View** menu. Alternatively you can use the [ hot-key](Low_Light_Tracking_Tool#Hot-Keys "wikilink") {% include key content='Ctrl' %}+{% include key content='W' %} (when the focus is on the control panel) or {% include key content='W' %} (when the focus is on one of the other windows). This will also organize the windows if they have become scattered.
+If you would like the windows to become larger or smaller, change the size of the main data window and then select **Arrange Windows**, from the **View** menu. Alternatively you can use the [ hot-key](Low_Light_Tracking_Tool#Hot-Keys ) {% include key content='Ctrl' %}+{% include key content='W' %} (when the focus is on the control panel) or {% include key content='W' %} (when the focus is on one of the other windows). This will also organize the windows if they have become scattered.
 
-If you close some of the windows you can bring them back using the **Windows** menu in the control panel. If you close the control panel, this will terminate the program. Don't forget to [ **Save**](Low_Light_Tracking_Tool#Saving_and_Loading "wikilink") your results before.
+If you close some of the windows you can bring them back using the **Windows** menu in the control panel. If you close the control panel, this will terminate the program. Don't forget to [ **Save**](Low_Light_Tracking_Tool#Saving_and_Loading ) your results before.
 
 ## Navigation
 
@@ -154,7 +154,7 @@ The table now contains more information, with the first frame of the trace, and 
 
 ## Saving and loading
 
-The tracking results are already saved automatically by default. You can turn that off by un-checking the **Auto Save** box. The results can than be saved using the **Save** button. They are by default stored in the directory of the image stack you are working on. The file format is described [ below](Low_Light_Tracking_Tool#File_format "wikilink"). When you start the plugin again with the same data file your results will be automatically loaded. You can also reload previously tracked data and undo any unsaved changes by pressing the reload button. If you want to open data which is stored in a different location you can load it by clicking on the address bar and navigating to the data's location. You can then re-track, or examine the data.
+The tracking results are already saved automatically by default. You can turn that off by un-checking the **Auto Save** box. The results can than be saved using the **Save** button. They are by default stored in the directory of the image stack you are working on. The file format is described [ below](Low_Light_Tracking_Tool#File_format ). When you start the plugin again with the same data file your results will be automatically loaded. You can also reload previously tracked data and undo any unsaved changes by pressing the reload button. If you want to open data which is stored in a different location you can load it by clicking on the address bar and navigating to the data's location. You can then re-track, or examine the data.
 
 ## Deleting and manipulating traces and sessions
 
@@ -216,7 +216,7 @@ The tracking results are stored in text files with the ending '.trcT'. Each file
 
 **<name of image file>\_<name of session>\_<label of trace>\_<id of trace>.trcT**
 
-The files are created in the working directory. Each file begins with some lines starting with '\#'. These lines store information for the tracking program they will be ignored by most programs like [MATLAB](MATLAB "wikilink") or gnuplot potentially used to further analyze the data. This meta information is followed by columns of data holding the actual tracking results. The columns have the following meaning:
+The files are created in the working directory. Each file begins with some lines starting with '\#'. These lines store information for the tracking program they will be ignored by most programs like [MATLAB](MATLAB ) or gnuplot potentially used to further analyze the data. This meta information is followed by columns of data holding the actual tracking results. The columns have the following meaning:
 
   - column 1 frame number
   - column 2 trace id
@@ -237,7 +237,7 @@ The files are created in the working directory. Each file begins with some lines
 
 # Example Data
 
-This link contains the data used to generate this tutorial, and a two channel 3D data set to try. [Media:Example\_Data.zip‎](Media_Example_Data.zip‎ "wikilink")
+This link contains the data used to generate this tutorial, and a two channel 3D data set to try. [Media:Example\_Data.zip‎](Media_Example_Data.zip‎ )
 
 # License
 

@@ -81,7 +81,7 @@ CtMethod method = clazz.getMethod("foo", "()V");
 InstructionPrinter.print(method, System.err);
 ```
 
-If you absolutely do not want the output to go to *System.err*, you could substitute it by *new PrintStream(new IJLogOutputStream())* (the class *IJLogOutputStream* is defined in [Fiji Updater](Update_Fiji "wikilink")'s *fiji.updater.util* class for you to reuse).
+If you absolutely do not want the output to go to *System.err*, you could substitute it by *new PrintStream(new IJLogOutputStream())* (the class *IJLogOutputStream* is defined in [Fiji Updater](Update_Fiji )'s *fiji.updater.util* class for you to reuse).
 
 # VerifyError
 

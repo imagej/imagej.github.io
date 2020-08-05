@@ -15,7 +15,7 @@ description: test description
 
 ## General Description
 
-{% include thumbnail src='/images/pages/Tagging example.png' title='Example of voxel classification'%} This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {% include bc content='Analyze | Skeleton | Analyze Skeleton (2D/3D)'%}. See [Skeletonize3D](Skeletonize3D "wikilink") for an example of how to produce skeleton images.
+{% include thumbnail src='/images/pages/Tagging example.png' title='Example of voxel classification'%} This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {% include bc content='Analyze | Skeleton | Analyze Skeleton (2D/3D)'%}. See [Skeletonize3D](Skeletonize3D ) for an example of how to produce skeleton images.
 
 The voxels are classified into three different categories depending on their 26 neighbors:
 
@@ -33,7 +33,7 @@ Notice here that, following this notation, the number of junction voxels can be 
 
   - **Prune the possible loops** in the skeleton (by choosing one of the pruning cycle methods).
   - **Prune any branch that ends in an end-point** (by checking "Prune ends"), as implemented by [Michael Doube](http://doube.org/) in [BoneJ](http://bonej.org/).
-      - In this case, if a ROI was selected in the input image, another option is enabled: *Exclude ROI from pruning*. If selected, pruning will not be applied to end-points contained by the ROI. An application of this feature is described in [Strahler Analysis](Strahler#Root_Detection "wikilink").
+      - In this case, if a ROI was selected in the input image, another option is enabled: *Exclude ROI from pruning*. If selected, pruning will not be applied to end-points contained by the ROI. An application of this feature is described in [Strahler Analysis](Strahler#Root_Detection ).
   - **Calculate the largest shortest path** of each skeleton using the {% include wikipedia title='Floyd-Warshall algorithm' text='APSP (all pairs shortest path)'%}. In this case, the shortest path will be displayed in a new window containing the skeleton in white and the shortest path in **magenta**. Implemented by Huub Hovens.
   - **Show detailed info** about the branches of each skeleton in the image.
   - **Display labeled skeletons**. An extra output image will be displayed containing each skeleton labeled with its corresponding skeleton ID.
@@ -78,19 +78,19 @@ The branches are sorted by decreasing length.
 
 ## Video tutorial
 
-For a fast introduction to [Skeletonize3D](Skeletonize3D "wikilink") and [AnalyzeSkeleton](AnalyzeSkeleton "wikilink") and an example of a real application, you can have a look at this [ video tutorial](Skeleton_analysis_video_tutorial "wikilink").
+For a fast introduction to [Skeletonize3D](Skeletonize3D ) and [AnalyzeSkeleton](AnalyzeSkeleton ) and an example of a real application, you can have a look at this [ video tutorial](Skeleton_analysis_video_tutorial ).
 
 The tutorial describes step by step how to:
 
   - Pre-process a 3D image to extract the relevant morphological information by
       - removing the noise
       - and binarizing
-  - Extract the skeleton of a binary image with [Skeletonize3D](Skeletonize3D "wikilink")
-  - Analyze the resulting skeletons in the 3D image with [AnalyzeSkeleton](AnalyzeSkeleton "wikilink")
+  - Extract the skeleton of a binary image with [Skeletonize3D](Skeletonize3D )
+  - Analyze the resulting skeletons in the 3D image with [AnalyzeSkeleton](AnalyzeSkeleton )
 
 ## Visualization
 
-Using the [3D\_Viewer](3D_Viewer "wikilink") libraries we can easily display the results of both, the skeletonization and the analysis:
+Using the [3D\_Viewer](3D_Viewer ) libraries we can easily display the results of both, the skeletonization and the analysis:
 
 |                                                                                                                                                     |                                                                                                                                                                          |                                                                                                                                                                 |
 | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -148,7 +148,7 @@ IJ.log(cumulativeLengthOfShortestPaths);
 
 ### Pruning branches by length
 
-The following [Beanshell](Beanshell "wikilink") script prunes the branches of an input skeleton if they are under a certain length:
+The following [Beanshell](Beanshell ) script prunes the branches of an input skeleton if they are under a certain length:
 
 ``` java
 // @ImagePlus(label="Skeleton image", description="Binary image skeletonized with Skeletonize3D") image
@@ -210,7 +210,7 @@ Be aware that small branches might be created due to the elimination of end-poin
 
 ### Visualizing the skeleton in the 3D viewer
 
-The following [Beanshell](Beanshell "wikilink") script shows the voxel classification of the skeleton in the 3D viewer:
+The following [Beanshell](Beanshell ) script shows the voxel classification of the skeleton in the 3D viewer:
 
 ``` java
 // @ImagePlus(label="Skeleton image", description="Binary image skeletonized with Skeletonize3D") image
@@ -336,7 +336,7 @@ The shortest path calculation and its applications have been published as:
 
   - G. Polder, H.L.E Hovens and A.J Zweers, Measuring shoot length of submerged aquatic plants using graph analysis (2010), In: Proceedings of the ImageJ User and Developer Conference, Centre de Recherche Public Henri Tudor, Luxembourg, 27-29 October, pp 172-177.
 
-[AnalyzeSkeleton](AnalyzeSkeleton "wikilink") makes also part of [BoneJ](http://bonej.org/), a plugin for bone image analysis in [ImageJ](https://imagej.net/):
+[AnalyzeSkeleton](AnalyzeSkeleton ) makes also part of [BoneJ](http://bonej.org/), a plugin for bone image analysis in [ImageJ](https://imagej.net/):
 
   - Michael Doube, Michal M. Klosowski, Ignacio Arganda-Carreras, Fabrice P. Cordelieres, Robert P. Dougherty, Jonathan S. Jackson, Benjamin Schmid, John R. Hutchinson, Sandra J. Shefelbine, [BoneJ: Free and extensible bone image analysis in ImageJ](http://dx.doi.org/10.1016/j.bone.2010.08.023), Bone, Volume 47, Issue 6, December 2010, Pages 1076-1079.
 

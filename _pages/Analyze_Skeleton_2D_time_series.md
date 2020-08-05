@@ -9,13 +9,13 @@ description: test description
 
 ## Introduction:
 
-This is a Python script that can be run from Fiji (is just imageJ - batteries incuded), using the builtin Jython interpreter Jython is a java implementation of Python which runs natively on the Java Virtual machine. You can use all java classes and imagej classes from it, which is nice. For more info on Jython scripting in Fiji look at [Jython\_Scripting](Jython_Scripting "wikilink")
+This is a Python script that can be run from Fiji (is just imageJ - batteries incuded), using the builtin Jython interpreter Jython is a java implementation of Python which runs natively on the Java Virtual machine. You can use all java classes and imagej classes from it, which is nice. For more info on Jython scripting in Fiji look at [Jython\_Scripting](Jython_Scripting )
 
 Thanks to Albert Cardona for tips on how to do this.
 
 ## Purpose of this script:
 
-There is a limitation in the [ Analyze Skeleton 2D/3D plugin](AnalyzeSkeleton "wikilink") where it can not handle a 2D time series stack as such. It just treats it as a z series, meaning that the results are not as expected since it treats the data as a single 3D dataset instead of as many 2D time points.
+There is a limitation in the [ Analyze Skeleton 2D/3D plugin](AnalyzeSkeleton ) where it can not handle a 2D time series stack as such. It just treats it as a z series, meaning that the results are not as expected since it treats the data as a single 3D dataset instead of as many 2D time points.
 
 ## Solution:
 

@@ -184,13 +184,13 @@ If the image has `M` pixels, and that the rectangle is a square of side `R`, the
 
 The performance improvement should therefore be equal to `R / 2`. A linear fit of the actual curve rather shows that the law is `0.73 × R + 0.37`. This extra benefit - I don't why it's there.
 
-[File:RectangleStrel2DPerformance.png|Processing](File_RectangleStrel2DPerformance.png%7CProcessing) time for the dilation of a 100x100 image. [File:RectangleStrel2DPerformanceComparison.png|Processing](File_RectangleStrel2DPerformanceComparison.png%7CProcessing) time ratio.
+[File:RectangleStrel2DPerformance.png|Processing](File:RectangleStrel2DPerformance.png%7CProcessing) time for the dilation of a 100x100 image. [File:RectangleStrel2DPerformanceComparison.png|Processing](File:RectangleStrel2DPerformanceComparison.png%7CProcessing) time ratio.
 
 #### 3D case.
 
 Here the standard case takes a time proportional to `M × R³`, and the optimized case a time proportional to `3 × M × R`. Therefore the performance ratio should be `R² / 3`. A fit shows that this ratio follows `0.63 × R² + 0.57 × R + 0.48`.
 
-[File:RectangleStrel3DPerformance.png|Processing](File_RectangleStrel3DPerformance.png%7CProcessing) time for the dilation of a 40x40x40 image. [File:RectangleStrel3DPerformanceComparison.png|Processing](File_RectangleStrel3DPerformanceComparison.png%7CProcessing) time ratio.
+[File:RectangleStrel3DPerformance.png|Processing](File:RectangleStrel3DPerformance.png%7CProcessing) time for the dilation of a 40x40x40 image. [File:RectangleStrel3DPerformanceComparison.png|Processing](File:RectangleStrel3DPerformanceComparison.png%7CProcessing) time ratio.
 
 ## Square structuring element
 
@@ -200,11 +200,11 @@ The square is just a special case of the rectangle, implemented for convenience.
 
 #### 2D case.
 
-[File:SquareStrel2DPerformance.png|Processing](File_SquareStrel2DPerformance.png%7CProcessing) time for the dilation of a 100x100 image. [File:SquareStrel2DPerformanceComparison.png|Processing](File_SquareStrel2DPerformanceComparison.png%7CProcessing) time ratio. [File:SquareStrel2DPerformanceWMATLAB.png|First](File_SquareStrel2DPerformanceWMATLAB.png%7CFirst) image zoomed to highlight [MATLAB](MATLAB "wikilink") performance.
+[File:SquareStrel2DPerformance.png|Processing](File:SquareStrel2DPerformance.png%7CProcessing) time for the dilation of a 100x100 image. [File:SquareStrel2DPerformanceComparison.png|Processing](File:SquareStrel2DPerformanceComparison.png%7CProcessing) time ratio. [File:SquareStrel2DPerformanceWMATLAB.png|First](File:SquareStrel2DPerformanceWMATLAB.png%7CFirst) image zoomed to highlight [MATLAB](MATLAB ) performance.
 
 #### 3D case.
 
-[File:SquareStrel3DPerformance.png|Processing](File_SquareStrel3DPerformance.png%7CProcessing) time for the dilation of a 49x49x49 image. [File:SquareStrel3DPerformanceComparison.png|Processing](File_SquareStrel3DPerformanceComparison.png%7CProcessing) time ratio. [File:SquareStrel3DPerformanceWMATLAB.png|First](File_SquareStrel3DPerformanceWMATLAB.png%7CFirst) image zoomed to highlight [MATLAB](MATLAB "wikilink") performance.
+[File:SquareStrel3DPerformance.png|Processing](File:SquareStrel3DPerformance.png%7CProcessing) time for the dilation of a 49x49x49 image. [File:SquareStrel3DPerformanceComparison.png|Processing](File:SquareStrel3DPerformanceComparison.png%7CProcessing) time ratio. [File:SquareStrel3DPerformanceWMATLAB.png|First](File:SquareStrel3DPerformanceWMATLAB.png%7CFirst) image zoomed to highlight [MATLAB](MATLAB ) performance.
 
 ## Diamond structuring element
 
@@ -245,25 +245,25 @@ In 3D and higher dimensionalities, the logarithmic decomposition cannot be done,
 
 #### 2D performance
 
-[File:DiamondStrel2DPerformance.png|Processing](File_DiamondStrel2DPerformance.png%7CProcessing) time for the dilation of a 100x100 image. [File:DiamondStrel2DPerformanceComparison.png|Processing](File_DiamondStrel2DPerformanceComparison.png%7CProcessing) time ratio.
+[File:DiamondStrel2DPerformance.png|Processing](File:DiamondStrel2DPerformance.png%7CProcessing) time for the dilation of a 100x100 image. [File:DiamondStrel2DPerformanceComparison.png|Processing](File:DiamondStrel2DPerformanceComparison.png%7CProcessing) time ratio.
 
 It is worth using a decomposition above a radius of 4.
 
 #### 3D performance.
 
-[File:DiamondStrel3DPerformance.png|Processing](File_DiamondStrel3DPerformance.png%7CProcessing) time for the dilation of a 40x40x40 image. [File:DiamondStrel3DPerformanceComparison.png|Processing](File_DiamondStrel3DPerformanceComparison.png%7CProcessing) time ratio.
+[File:DiamondStrel3DPerformance.png|Processing](File:DiamondStrel3DPerformance.png%7CProcessing) time for the dilation of a 40x40x40 image. [File:DiamondStrel3DPerformanceComparison.png|Processing](File:DiamondStrel3DPerformanceComparison.png%7CProcessing) time ratio.
 
 It is worth using a decomposition in almost any cases.
 
 #### Comparison with MATLAB.
 
-MATLAB comes with a very nice morphology package. I actually took inspiration from to it to write the Imglib2 code. It is tempting to compare the performance of [MATLAB](MATLAB "wikilink") vs Imglib2, even if this kind of comparison is always tricky and clumsy. Anyway, here it is. I just timed the duration required to perform the dilation of a provided source image, including the time required to generate the structuring element. Imglib2 tests above time the same process. But of course, the time required to generate the source image and to start [MATLAB](MATLAB "wikilink") or to launch the Java tests are not included. I took care to include a 'warm-up' run to allow the JIT compiler to kick-in in all cases.
+MATLAB comes with a very nice morphology package. I actually took inspiration from to it to write the Imglib2 code. It is tempting to compare the performance of [MATLAB](MATLAB ) vs Imglib2, even if this kind of comparison is always tricky and clumsy. Anyway, here it is. I just timed the duration required to perform the dilation of a provided source image, including the time required to generate the structuring element. Imglib2 tests above time the same process. But of course, the time required to generate the source image and to start [MATLAB](MATLAB ) or to launch the Java tests are not included. I took care to include a 'warm-up' run to allow the JIT compiler to kick-in in all cases.
 
-[File:DiamondStrel2DPerformanceWMATLAB.png|Processing](File_DiamondStrel2DPerformanceWMATLAB.png%7CProcessing) time for the dilation of a 100x100 image. [File:DiamondStrel3DPerformanceWMATLAB.png|Processing](File_DiamondStrel3DPerformanceWMATLAB.png%7CProcessing) time for the dilation of a 40x40x40 image.
+[File:DiamondStrel2DPerformanceWMATLAB.png|Processing](File:DiamondStrel2DPerformanceWMATLAB.png%7CProcessing) time for the dilation of a 100x100 image. [File:DiamondStrel3DPerformanceWMATLAB.png|Processing](File:DiamondStrel3DPerformanceWMATLAB.png%7CProcessing) time for the dilation of a 40x40x40 image.
 
-For the 2D case (only), [MATLAB](MATLAB "wikilink") offers to generate optimized structuring elements, like for this Imglib2 code. This is why there is two [MATLAB](MATLAB "wikilink") curves on the 2D graph. We can see that in all cases, the [MATLAB](MATLAB "wikilink") code is faster than the Imglib2 code (respective to optimized vs optimized and the converse). This may be explained by the fact that [MATLAB](MATLAB "wikilink") benefitiates on my computer (a 2012 MacPro) from the Intel Integrated Performance Primitives ([IPP](http://software.intel.com/en-us/intel-ipp)), that strongly improves block processing algorithms. Fortunately, the difference is not too taxing in the optimized case.
+For the 2D case (only), [MATLAB](MATLAB ) offers to generate optimized structuring elements, like for this Imglib2 code. This is why there is two [MATLAB](MATLAB ) curves on the 2D graph. We can see that in all cases, the [MATLAB](MATLAB ) code is faster than the Imglib2 code (respective to optimized vs optimized and the converse). This may be explained by the fact that [MATLAB](MATLAB ) benefitiates on my computer (a 2012 MacPro) from the Intel Integrated Performance Primitives ([IPP](http://software.intel.com/en-us/intel-ipp)), that strongly improves block processing algorithms. Fortunately, the difference is not too taxing in the optimized case.
 
-In 3D, [MATLAB](MATLAB "wikilink") does not offer a structuring element decomposition (yet). So the performance curve as the expected cubic shape, though it outperforms Imglib2 in the non-optimized case. For large radius, the Imglib2 optimization manages to beat it.
+In 3D, [MATLAB](MATLAB ) does not offer a structuring element decomposition (yet). So the performance curve as the expected cubic shape, though it outperforms Imglib2 in the non-optimized case. For large radius, the Imglib2 optimization manages to beat it.
 
 ## Disk structuring element.
 
@@ -271,11 +271,11 @@ In 3D, [MATLAB](MATLAB "wikilink") does not offer a structuring element decompos
 
 In the 2D case, a disk structuring element can be decomposed in a succession of 4, 6 or 8 periodic lines\[4\]. Doing so, the shape of the disk is only an approximate one. The first plot below indicates the percentage of pixels that are a mismatch compared to the "true" disk (by "true" I mean as best as digitizing a disk on a square matrix can be). In practice, this plot is rather uninformative. The second plot gives the effective aspect of the decomposed disks:
 
-[File:DiskDecompError.png|Error](File_DiskDecompError.png%7CError) percentage when approximating a disk STREL with a PL decomposition. [File:DiskDecompErrorLook.png|Aspect](File_DiskDecompErrorLook.png%7CAspect) of the disk STREL decomposition in periodic lines, with varying radius.
+[File:DiskDecompError.png|Error](File:DiskDecompError.png%7CError) percentage when approximating a disk STREL with a PL decomposition. [File:DiskDecompErrorLook.png|Aspect](File:DiskDecompErrorLook.png%7CAspect) of the disk STREL decomposition in periodic lines, with varying radius.
 
 As for performance, you can see below that it is always best to use any decomposition as soon as the radius is larger than 3. This is a lucky limit, because the periodic line decomposition gives very approximated shapes for small radii.
 
-[File:DiskDecompPerformance.png|Processing](File_DiskDecompPerformance.png%7CProcessing) time for the dilation of a 100x100 image. [File:DiskDecompPerformanceComparison.png|Processing](File_DiskDecompPerformanceComparison.png%7CProcessing) time ratio.
+[File:DiskDecompPerformance.png|Processing](File:DiskDecompPerformance.png%7CProcessing) time for the dilation of a 100x100 image. [File:DiskDecompPerformanceComparison.png|Processing](File:DiskDecompPerformanceComparison.png%7CProcessing) time ratio.
 
 ### Decomposition for other dimensionalities.
 
@@ -285,7 +285,7 @@ I am unable to derive an efficient decomposition of the disk STREL for the 3D ca
 
 <references/>
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez "wikilink")) 09:33, 5 December 2014 (CST)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez )) 09:33, 5 December 2014 (CST)
 
 1.  These are the 35 words added by the Oxford Online Dictionary during summer 2012. And another one.
 

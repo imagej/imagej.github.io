@@ -7,9 +7,9 @@ categories: News,Fiji,ImageJ2
 description: test description
 ---
 
-[ImageJ2](ImageJ2 "wikilink") (and hence also [Fiji](Fiji "wikilink")) is currently in the midst of a [transition to Java 8](2015-12-22_-_The_road_to_Java_8 "wikilink").
+[ImageJ2](ImageJ2 ) (and hence also [Fiji](Fiji )) is currently in the midst of a [transition to Java 8](2015-12-22_-_The_road_to_Java_8 ).
 
-However, at the moment, it is still possible to run a (slightly outdated now) version of [Fiji](Fiji "wikilink") with Java 6.
+However, at the moment, it is still possible to run a (slightly outdated now) version of [Fiji](Fiji ) with Java 6.
 
 ## Current recommendations and possibilities
 
@@ -118,12 +118,12 @@ version</p></th>
 
 ## Upgrading an old installation
 
-If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you probably have the Java 6 version ([how do I find out?](Troubleshooting#Checking_the_Java_version "wikilink")). So when you update, you will not receive the latest plugin releases anymore, as described above.
+If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you probably have the Java 6 version ([how do I find out?](Troubleshooting#Checking_the_Java_version )). So when you update, you will not receive the latest plugin releases anymore, as described above.
 
   - If you **still need Java 6, do nothing.**
-      - For now, you will keep receiving updates of [ImageJ 1.x](ImageJ_1.x "wikilink").
+      - For now, you will keep receiving updates of [ImageJ 1.x](ImageJ_1.x ).
       - But you will no longer receive updates for most ImageJ2 or Fiji components—they have all migrated to Java 8.
-  - If you **want the latest updates**, [update your ImageJ installation to use Java 8](FAQ#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F "wikilink") and then [enable the Java-8 update site](How_to_follow_a_3rd_party_update_site "wikilink").
+  - If you **want the latest updates**, [update your ImageJ installation to use Java 8](FAQ#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F ) and then [enable the Java-8 update site](How_to_follow_a_3rd_party_update_site ).
       - **Make sure you switch your ImageJ over to Java 8 *before* enabling the Java-8 update site\!**
 
 {% include warning-box content='If you enable the Java-8 update site while still running Java 6, your installation will become non-functional\!' %}
@@ -138,12 +138,12 @@ But later this year, we will migrate the latest Java-8 components back to the co
 
 ## About Java 3D
 
-  - [Java 3D](Java_3D "wikilink") 1.6 requires Java 7 or newer. Hence, we ship it **on the Java-8 update site only**.
-  - [Java 3D](Java_3D "wikilink") 1.5 works with Java 6, but:
+  - [Java 3D](Java_3D ) 1.6 requires Java 7 or newer. Hence, we ship it **on the Java-8 update site only**.
+  - [Java 3D](Java_3D ) 1.5 works with Java 6, but:
       - It has a restrictive license.
       - It does not work with Java 7 or 8 on macOS.
       - It does not work with Java 8 (or 7?) on some Windows systems.
 
-Please be aware that [Java 3D](Java_3D "wikilink") is essentially a dead technology. The future of 3D visualization in ImageJ is the [ClearVolume](ClearVolume "wikilink") and [SciView](SciView "wikilink") plugins. But it will be a lot of work to rewrite all [3D Viewer](3D_Viewer "wikilink") functionality, so the ImageJ and Fiji teams are still exploring the best ways to proceed here.
+Please be aware that [Java 3D](Java_3D ) is essentially a dead technology. The future of 3D visualization in ImageJ is the [ClearVolume](ClearVolume ) and [SciView](SciView ) plugins. But it will be a lot of work to rewrite all [3D Viewer](3D_Viewer ) functionality, so the ImageJ and Fiji teams are still exploring the best ways to proceed here.
 
   

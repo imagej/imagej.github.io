@@ -7,6 +7,6 @@ categories: News
 description: test description
 ---
 
-Thanks to Daniel James White, and Fabrice Cordelières, we have the newest version of the [Object Counter3D](Object_Counter3D "wikilink") plugin in Fiji now. Please use {% include bc content='Help | Update Fiji'%} to get it.
+Thanks to Daniel James White, and Fabrice Cordelières, we have the newest version of the [Object Counter3D](Object_Counter3D ) plugin in Fiji now. Please use {% include bc content='Help | Update Fiji'%} to get it.
 
 

@@ -7,11 +7,11 @@ categories:
 description: test description
 ---
 
-**Critical:** if you update and Fiji does not work anymore, you need to follow [these instructions](Fix_non-functional_Fiji_after_Update_on_MacOSX "wikilink").
+**Critical:** if you update and Fiji does not work anymore, you need to follow [these instructions](Fix_non-functional_Fiji_after_Update_on_MacOSX ).
 
 ## Installing Fiji
 
-1.  Download the .dmg package from the [Downloads](Downloads "wikilink") page, and then double-click it to open it.
+1.  Download the .dmg package from the [Downloads](Downloads ) page, and then double-click it to open it.
 2.  Create a folder under /Applications/, such as /Applications/Fiji
 3.  Drag the 3 items (Fiji.app, and the plugins and macros symlinks) into the /Applications/Fiji folder.
 
@@ -58,7 +58,7 @@ Alternatively, right-click (or {% include key content='Ctrl' %}+{% include key c
 
 ## Adding new plugins and macros
 
-For plugins, please follow the instructions about [Installing 3rd party plugins](Installing_3rd_party_plugins "wikilink"). Otherwise, access the plugins folder as explained above and just drag and drop any plugin into the plugins folder, like you would do for ImageJ. Same for macros.
+For plugins, please follow the instructions about [Installing 3rd party plugins](Installing_3rd_party_plugins ). Otherwise, access the plugins folder as explained above and just drag and drop any plugin into the plugins folder, like you would do for ImageJ. Same for macros.
 
 ## Installing OpenJDK for MacOSX
 
@@ -94,7 +94,7 @@ Contents/MacOS/ImageJ-macosx
 
 **Note for Windows users**: A backslash is not the same as a slash. So: *Contents\\MacOS\\ImageJ-macosx* will **not** work.
 
-Now you can pass, say, [Java Options](Java_Options "wikilink"):
+Now you can pass, say, [Java Options](Java_Options ):
 
 ``` bash
 Contents/MacOS/ImageJ-macosx -verbose:gc --

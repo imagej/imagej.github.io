@@ -10,7 +10,7 @@ description: test description
 {% include fijimenu%}
  Fiji is home to quite a few nice ImageJ plugins\! Here is a non-exhaustive list:
 
-  - [3D Viewer](3D_Viewer "wikilink")
+  - [3D Viewer](3D_Viewer )
 
 <!-- end list -->
 
@@ -18,51 +18,51 @@ description: test description
 
 <!-- end list -->
 
-  - [Transform](_Category_Transform "wikilink")
+  - [Transform](_Category_Transform )
 
 <!-- end list -->
 
-  - Interactive image transformation ([rigid](Interactive_Rigid "wikilink"), [similarity](Interactive_Similarity "wikilink"), [affine](Interactive_Affine "wikilink"), [perspective](Interactive_Perspective "wikilink"), [deform](Interactive_Moving_Least_Squares "wikilink"))
-  - [Interactive Stack Rotation](Interactive_Stack_Rotation "wikilink")
-  - [Landmark based transformation and deformation](Landmark_Correspondences "wikilink")
+  - Interactive image transformation ([rigid](Interactive_Rigid ), [similarity](Interactive_Similarity ), [affine](Interactive_Affine ), [perspective](Interactive_Perspective ), [deform](Interactive_Moving_Least_Squares ))
+  - [Interactive Stack Rotation](Interactive_Stack_Rotation )
+  - [Landmark based transformation and deformation](Landmark_Correspondences )
   - [Panorama Viewer](http://fly.mpi-cbg.de/saalfeld/Projects/panorama.html)
-  - [Distortion correction](Distortion_correction "wikilink"): correct lens deformation induced by the microscope (optical and electron microscopy). See the [Distortion Correction plugin manual](http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf).
+  - [Distortion correction](Distortion_correction ): correct lens deformation induced by the microscope (optical and electron microscopy). See the [Distortion Correction plugin manual](http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf).
 
 <!-- end list -->
 
-  - [Image registration](Plugins_Menu#Plugins_.3E_Registration "wikilink")
+  - [Image registration](Plugins_Menu#Plugins_.3E_Registration )
 
 <!-- end list -->
 
-  - [Elastic Alignment and Montage](Elastic_Alignment_and_Montage "wikilink")
-  - [SPIM Registration](SPIM_Registration "wikilink") Registration and fusion of Selective Plane Illumination Microscopy data.
-  - [Image Stitching](Image_Stitching "wikilink") Stitch multiple image stacks across X,Y,Z,T and C.
-  - [Feature Extraction](Feature_Extraction "wikilink") SIFT and MOPS.
+  - [Elastic Alignment and Montage](Elastic_Alignment_and_Montage )
+  - [SPIM Registration](SPIM_Registration ) Registration and fusion of Selective Plane Illumination Microscopy data.
+  - [Image Stitching](Image_Stitching ) Stitch multiple image stacks across X,Y,Z,T and C.
+  - [Feature Extraction](Feature_Extraction ) SIFT and MOPS.
   - Consistent and elastic 2D registration ([bUnwarpJ](http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/))
-  - [Stack slice registration](Register_Virtual_Stack_Slices "wikilink")
+  - [Stack slice registration](Register_Virtual_Stack_Slices )
   - Image montage (via [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html)) with global optimization (in 2D and across sections)
-  - [VIB Protocol](VIB_Protocol "wikilink") Label-based 3D alignment of image stacks.
+  - [VIB Protocol](VIB_Protocol ) Label-based 3D alignment of image stacks.
 
 <!-- end list -->
 
-  - [Segmentation](Plugins_Menu#Plugins_.3E_Segmentation "wikilink")
+  - [Segmentation](Plugins_Menu#Plugins_.3E_Segmentation )
 
 <!-- end list -->
 
-  - [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink") (SNT)
+  - [Simple Neurite Tracer](Simple_Neurite_Tracer ) (SNT)
   - [Segmentation Editor](http://132.187.25.13/home/?category=Download&page=SegmentationEditor)
   - Manual (via [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html))
-  - [Level Sets](Level_Sets "wikilink")
-  - [Trainable Segmentation](Trainable_Weka_Segmentation "wikilink")
-  - [SIOX: Simple Interactive Object Extraction](SIOX__Simple_Interactive_Object_Extraction "wikilink")
+  - [Level Sets](Level_Sets )
+  - [Trainable Segmentation](Trainable_Weka_Segmentation )
+  - [SIOX: Simple Interactive Object Extraction](SIOX__Simple_Interactive_Object_Extraction )
 
 <!-- end list -->
 
-  - [Tracking](_Category_Tracking "wikilink")
+  - [Tracking](_Category_Tracking )
 
 <!-- end list -->
 
-  - [TrackMate](TrackMate "wikilink")
+  - [TrackMate](TrackMate )
 
 <!-- end list -->
 
@@ -70,11 +70,11 @@ description: test description
 
 <!-- end list -->
 
-  - [Skeletons and tree analysis](_Category_Skeleton "wikilink")
+  - [Skeletons and tree analysis](_Category_Skeleton )
 
 <!-- end list -->
 
-  - [ImgLib2](ImgLib2 "wikilink")
+  - [ImgLib2](ImgLib2 )
 
 <!-- end list -->
 
@@ -82,7 +82,7 @@ description: test description
 
 <!-- end list -->
 
-  - [TrakEM2](TrakEM2 "wikilink")
+  - [TrakEM2](TrakEM2 )
 
 <!-- end list -->
 
@@ -94,6 +94,6 @@ description: test description
 
 <!-- end list -->
 
-  - [ImageJ2](ImageJ2 "wikilink")
+  - [ImageJ2](ImageJ2 )
 
 

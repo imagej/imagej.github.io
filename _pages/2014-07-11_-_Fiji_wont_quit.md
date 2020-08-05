@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2014-07-11 - Fiji won't quit\!](2014-07-11_-_Fiji_wont_quit! "wikilink")
+1.  REDIRECT [2014-07-11 - Fiji won't quit\!](2014-07-11_-_Fiji_wont_quit! )

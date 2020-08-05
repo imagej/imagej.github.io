@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [TopoJ\#Remove Slope](TopoJ#Remove_Slope "wikilink")
+1.  REDIRECT [TopoJ\#Remove Slope](TopoJ#Remove_Slope )

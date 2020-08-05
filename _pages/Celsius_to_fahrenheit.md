@@ -9,7 +9,7 @@ description: test description
 
 ## Purpose
 
-An example [Clojure](Clojure_Scripting "wikilink") script illustrating how to use a GenericDialog and how to show information to the user.
+An example [Clojure](Clojure_Scripting ) script illustrating how to use a GenericDialog and how to show information to the user.
 
 The example is taken from the [Clojure](http://clojure.org) website.
 
@@ -72,6 +72,6 @@ The example is taken from the [Clojure](http://clojure.org) website.
 
 ## See also
 
-  - [Clojure Scripting](Clojure_Scripting "wikilink").
+  - [Clojure Scripting](Clojure_Scripting ).
 
   

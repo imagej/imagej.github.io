@@ -30,7 +30,7 @@ The *Snapshot* window supports two modes with two different delays:
 
 To take snapshots of opened menus, the more convenient method is to snap by hover, but that does not work when there is an open modal dialog; in this case, you have to revert to snapshot by click.
 
-To take snapshots of modal dialogs (which block events to the *Snapshot* window, including a hover), it is more convenient to click on "Snap (3sec delay)" and quickly open the modal dialog. See also the [tip at the end](How_to_make_a_new_tutorial#Tip__use_two_different_Fiji_instances "wikilink").
+To take snapshots of modal dialogs (which block events to the *Snapshot* window, including a hover), it is more convenient to click on "Snap (3sec delay)" and quickly open the modal dialog. See also the [tip at the end](How_to_make_a_new_tutorial#Tip__use_two_different_Fiji_instances ).
 
 In any of the two modes, the snapshot window will hide itself before taking the snapshot.
 

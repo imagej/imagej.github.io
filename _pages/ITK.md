@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='InsightSoftwareConsortium ' repo='ITK ' %}
 {% endcapture %}
-{% include info-box name='ITK ' software='ITK ' logo='<img src="/images/pages/Itk-logo.png" width="96"/> ' author=' [Insight Software Consortium](http://itk.org/) ' maintainer=' [Insight Software Consortium](http://itk.org/) ' source=source status='Active ' website='http://itk.org/ ' %}The Insight Toolkit (ITK) is a cross-platform, [open-source](open-source "wikilink") application development framework widely used for the development of image [segmentation](segmentation "wikilink") and image registration programs.
+{% include info-box name='ITK ' software='ITK ' logo='<img src="/images/pages/Itk-logo.png" width="96"/> ' author=' [Insight Software Consortium](http://itk.org/) ' maintainer=' [Insight Software Consortium](http://itk.org/) ' source=source status='Active ' website='http://itk.org/ ' %}The Insight Toolkit (ITK) is a cross-platform, [open-source](open-source ) application development framework widely used for the development of image [segmentation](segmentation ) and image registration programs.
 
 # ITK integration with ImageJ
 
@@ -23,9 +23,9 @@ Enabling this functionality in ImageJ is simply a matter of turning on the {% in
 
 SimpleITK 0.90 is distributed with this update. After update all SimpleITK classes can be called from the script editor.
 
-When using `@itkImage` [parameters](Script_parameters "wikilink") in scripts, ImageJ `Dataset` objects will be automatically converted to SimpleITK `Image` objects.
+When using `@itkImage` [parameters](Script_parameters ) in scripts, ImageJ `Dataset` objects will be automatically converted to SimpleITK `Image` objects.
 
-There are several templates in the [Script Editor](Script_Editor "wikilink") demonstrating ITK use. The following example shows how to perform Otsu multilevel threshold using SimpleITK.
+There are several templates in the [Script Editor](Script_Editor ) demonstrating ITK use. The following example shows how to perform Otsu multilevel threshold using SimpleITK.
 
 ``` python
 # @itkImage image

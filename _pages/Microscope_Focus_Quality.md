@@ -55,7 +55,7 @@ description: test description
 {% capture contributors%}
 {% include person content='samueljyang' %}, {% include person content='asimshankar' %}
 {% endcapture %}
-{% include component name='Microscope Image Focus Quality Classifier ' url='https://imagej.net/Microscope\_Focus\_Quality ' source=source license='[Apache](Apache "wikilink") ' release=release devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers contributors=contributors %}This plugin assesses the focus quality of microscope images, classifying the image in tiles.
+{% include component name='Microscope Image Focus Quality Classifier ' url='https://imagej.net/Microscope\_Focus\_Quality ' source=source license='[Apache](Apache ) ' release=release devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers contributors=contributors %}This plugin assesses the focus quality of microscope images, classifying the image in tiles.
 
 ## Summary
 
@@ -63,7 +63,7 @@ The plugin predicts an absolute measure of image focus on a single image in isol
 
 ## Installation
 
-  - [Enable](Following_an_update_site "wikilink") the TensorFlow [update site](update_site "wikilink").
+  - [Enable](Following_an_update_site ) the TensorFlow [update site](update_site ).
   - The command is in {% include bc content='Plugins | Classification | Microscope Image Focus Quality'%}.
 
 ## Usage
@@ -78,7 +78,7 @@ The plugin predicts an absolute measure of image focus on a single image in isol
 
 The screenshot above uses the "Overlay probability patches" option with a thickness of 5.
 
-If you wish to access the results of the classification quantitatively (e.g., as part of an automated workflow via [scripting](scripting "wikilink")), use the "Generate probability image" option.
+If you wish to access the results of the classification quantitatively (e.g., as part of an automated workflow via [scripting](scripting )), use the "Generate probability image" option.
 
 You can can remove the probability patches overlay via the {% include bc content='Image | Overlay | Remove Overlay'%} command.
 
@@ -92,7 +92,7 @@ The plugin is currently limited to single (i.e., 2D) images of 16-bit integer da
 
 ## See also
 
-  - [TensorFlow](TensorFlow "wikilink"), the machine learning library this plugin uses.
+  - [TensorFlow](TensorFlow ), the machine learning library this plugin uses.
   - [Using Deep Learning to Facilitate Scientific Image Analysis](https://research.googleblog.com/2018/03/using-deep-learning-to-facilitate.html) post on Google Research Blog
 
 

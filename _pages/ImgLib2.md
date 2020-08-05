@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='imglib ' repo='imglib2 ' %}
 {% endcapture %}
-{% include info-box name='ImgLib2 ' software='Generic Image Processing for Java ' logo='![imglib2-logo.png](/images/pages/Imglib2-logo.png "imglib2-logo.png") ' author=author maintainer=maintainer source=source status='stable, active ' category='[:Category:ImgLib](_Category_ImgLib "wikilink") ' %}{% include imglibmenu%}
+{% include info-box name='ImgLib2 ' software='Generic Image Processing for Java ' logo='![imglib2-logo.png](/images/pages/Imglib2-logo.png "imglib2-logo.png") ' author=author maintainer=maintainer source=source status='stable, active ' category='[:Category:ImgLib](_Category_ImgLib ) ' %}{% include imglibmenu%}
 ImgLib2 is a general-purpose, multidimensional image processing library.
 
 It provides an interface-driven design that supports numeric and non-numeric data types (8-bit unsigned integer, 32-bit floating point, etc.) in an extensible way. It implements several data sources and sample organizations, including one single primitive array, one array per plane, N-dimensional array "cells" cached to and from disk on demand, and planes read on demand from disk.
@@ -27,12 +27,12 @@ It provides an interface-driven design that supports numeric and non-numeric dat
 ## Resources
 
   - [ImgLib2 paper](http://bioinformatics.oxfordjournals.org/content/28/22/3009.full)
-  - [ImgLib2 Documentation](ImgLib2_Documentation "wikilink")
-  - [ImgLib2 Examples](ImgLib2_Examples "wikilink")
+  - [ImgLib2 Documentation](ImgLib2_Documentation )
+  - [ImgLib2 Examples](ImgLib2_Examples )
   - {% include javadoc project='ImgLib2 ' %} javadoc
-  - [How To Migrate Code From ImgLib To ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 "wikilink")
-  - ["Introduction to ImgLib2"](ImgLib2_-_Introductory_Workshop "wikilink") workshop
-  - ["Advanced Programming with ImgLib2"](ImgLib2_-_Advanced_Programming_Workshop "wikilink") workshop
+  - [How To Migrate Code From ImgLib To ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 )
+  - ["Introduction to ImgLib2"](ImgLib2_-_Introductory_Workshop ) workshop
+  - ["Advanced Programming with ImgLib2"](ImgLib2_-_Advanced_Programming_Workshop ) workshop
 
 ## Source code
 
@@ -42,11 +42,11 @@ There is also a continuous integration system that builds ImgLib2 [every time th
 
 ## ImgLib2 vs. ImgLib1
 
-[ImgLib1](ImgLib1_\(deprecated\) "wikilink") is the previous incarnation of the library. We encourage developers to use ImgLib2 instead, and [migrate existing ImgLib1 programs to ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 "wikilink") whenever possible.
+[ImgLib1](ImgLib1_deprecated ) is the previous incarnation of the library. We encourage developers to use ImgLib2 instead, and [migrate existing ImgLib1 programs to ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 ) whenever possible.
 
-For an explanation of how ImgLib2 has changed from ImgLib1, see the [Changes from ImgLib1 to ImgLib2](Changes_from_ImgLib1_to_ImgLib2 "wikilink") page.
+For an explanation of how ImgLib2 has changed from ImgLib1, see the [Changes from ImgLib1 to ImgLib2](Changes_from_ImgLib1_to_ImgLib2 ) page.
 
-See the [How To Migrate Code From ImgLib To ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 "wikilink") page for details on how to update your ImgLib1-based code to use ImgLib2.
+See the [How To Migrate Code From ImgLib To ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 ) page for details on how to update your ImgLib1-based code to use ImgLib2.
 
 ## API Version History
 
@@ -54,9 +54,9 @@ A history of API changes is available at: https://abi-laboratory.pro/java/tracke
 
 ## Other links
 
-  - [ImgLib2 development discussion](ImgLib2_Discussion "wikilink")
-  - [ImgLib2 performance benchmarks](ImgLib2_Benchmarks "wikilink")
-  - [ImageJ2](ImageJ2 "wikilink") uses ImgLib2 as its core data model
+  - [ImgLib2 development discussion](ImgLib2_Discussion )
+  - [ImgLib2 performance benchmarks](ImgLib2_Benchmarks )
+  - [ImageJ2](ImageJ2 ) uses ImgLib2 as its core data model
 
 ## Publication
 

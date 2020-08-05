@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [GPL](GPL "wikilink")
+1.  REDIRECT [GPL](GPL )

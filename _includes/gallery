@@ -4,25 +4,10 @@
 {% for i in (1..gallery_end_index) %}
 {% assign image_path = gallery-entries[i] | split: "|" | first | strip %}
 {% assign image_text = gallery-entries[i] | split: "|" | last | strip %}
-<li class="gallery-frame">
-    <div style="width: 155px">
-        <div class="gallery-box">
-            <div class="gallery-item">
-                <a href="#"><img class="image-gallery" alt="" src="{{image_path}}" width="120" height="112"></a>
-            </div>
-        </div>
-        <div class="gallery-text">
-            <p>
-                {{image_text}}
-            </p>
-        </div>
-    </div>
-</li>
+{%include thumbnail src=image_path title=image_text %}
 {% endfor %}
 {%- endcapture -%}
 
 <div class="gallery">
-<ul class="gallery block">
 {{gallery-content}}
-</ul>
 </div>

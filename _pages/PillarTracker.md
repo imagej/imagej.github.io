@@ -21,7 +21,7 @@ description: test description
 {% capture source%}
 {% include github org='scottreen ' repo='PillarTracker ' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji ' name='PillarTracker ' author=author maintainer=maintainer source=source released='June 2017 ' latest-version='"""1.1.6 May 2018""" ' status='stable, active ' category='[Tracking](_Category_Tracking "wikilink"), [Visualization](_Category_Visualization "wikilink"), [Filtering](_Category_Filtering "wikilink"), [Analysis](_Category_Analysis "wikilink"), [Plugins](_Category_Plugins "wikilink") ' %}
+{% include info-box software='ImageJ/Fiji ' name='PillarTracker ' author=author maintainer=maintainer source=source released='June 2017 ' latest-version='"""1.1.6 May 2018""" ' status='stable, active ' category='[Tracking](_Category_Tracking ), [Visualization](_Category_Visualization ), [Filtering](_Category_Filtering ), [Analysis](_Category_Analysis ), [Plugins](_Category_Plugins ) ' %}
 
 </div>
 

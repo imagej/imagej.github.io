@@ -14,32 +14,32 @@ description: test description
 
 ## How do I apply an operation or macro to multiple images?
 
-See the [Batch Processing](Batch_Processing "wikilink") page.
+See the [Batch Processing](Batch_Processing ) page.
 
 ## What is the largest size image that ImageJ can open?
 
-There is a 2 gigapixel limit when opening and displaying image planes using the [ImageJ 1.x](ImageJ_1.x "wikilink") user interface's default image viewer. However, one major goal of the [ImageJ2](ImageJ2 "wikilink") project is to break this limit. ImageJ2 uses the [ImgLib2](ImgLib2 "wikilink") library as its data model, which has much larger limits on the number of pixels (theoretically: \~2^63 per dimension, up to \~2^31 dimensions, totaling \~2^63^31 pixels). Hence, you can open larger images using the {% include github org='imagej ' repo='tutorials ' label='ImageJ2 API ' %}. But you will not be able to display them in the user interface yet.
+There is a 2 gigapixel limit when opening and displaying image planes using the [ImageJ 1.x](ImageJ_1.x ) user interface's default image viewer. However, one major goal of the [ImageJ2](ImageJ2 ) project is to break this limit. ImageJ2 uses the [ImgLib2](ImgLib2 ) library as its data model, which has much larger limits on the number of pixels (theoretically: \~2^63 per dimension, up to \~2^31 dimensions, totaling \~2^63^31 pixels). Hence, you can open larger images using the {% include github org='imagej ' repo='tutorials ' label='ImageJ2 API ' %}. But you will not be able to display them in the user interface yet.
 
-Furthermore, the [SCIFIO](SCIFIO "wikilink") library (what ImageJ2 uses for data I/O) supports opening such images on-demand as "cell images" such that blocks are read from disk as you iterate over the image. This is similar to (but more powerful than) ImageJ 1.x's virtual stacks feature. In this way, you can write code to process these large images without displaying them.
+Furthermore, the [SCIFIO](SCIFIO ) library (what ImageJ2 uses for data I/O) supports opening such images on-demand as "cell images" such that blocks are read from disk as you iterate over the image. This is similar to (but more powerful than) ImageJ 1.x's virtual stacks feature. In this way, you can write code to process these large images without displaying them.
 
-The [Fiji](Fiji "wikilink") project also includes the [BigDataViewer](BigDataViewer "wikilink") (BDV) plugin, which currently functions as an alternative viewer, to display arbitrarily large images backed by ImgLib2. In the future we hope to integrate BDV-driven UI technology more completely into ImageJ core. But there are a couple of limitations right now:
+The [Fiji](Fiji ) project also includes the [BigDataViewer](BigDataViewer ) (BDV) plugin, which currently functions as an alternative viewer, to display arbitrarily large images backed by ImgLib2. In the future we hope to integrate BDV-driven UI technology more completely into ImageJ core. But there are a couple of limitations right now:
 
 1.  BDV was originally designed for large SPIM data; opening large image files more generally currently requires some coding. But we want to change this.
-2.  Many ImageJ 1.x plugins assume the data is stored in an ImageJ 1.x data structure, which is not what BDV uses. So ["mixing and matching" IJ1 and IJ2 functionality](ImageJ_Legacy "wikilink") is tricky here. But we are working to lift these restrictions as time goes on.
+2.  Many ImageJ 1.x plugins assume the data is stored in an ImageJ 1.x data structure, which is not what BDV uses. So ["mixing and matching" IJ1 and IJ2 functionality](ImageJ_Legacy ) is tricky here. But we are working to lift these restrictions as time goes on.
 
 # Mac OS X
 
 ## How do I set up Java 6 on OS X?
 
-See the [MacOS](MacOS "wikilink") page.
+See the [MacOS](MacOS ) page.
 
 ## How do I run ImageJ on Yosemite?
 
-See the [MacOS](MacOS "wikilink") page.
+See the [MacOS](MacOS ) page.
 
 ## How do I run ImageJ on El Capitan?
 
-See the [MacOS](MacOS "wikilink") page.
+See the [MacOS](MacOS ) page.
 
 # Running
 
@@ -97,13 +97,13 @@ You will then see two icons in the dock, the one of the launcher app and the one
 
 ## What is this *headless* mode and what do I need it for?
 
-The term *headless* refers to running ImageJ without a graphical desktop, e.g. on a cluster. See the [Headless](Headless "wikilink") page for more information.
+The term *headless* refers to running ImageJ without a graphical desktop, e.g. on a cluster. See the [Headless](Headless ) page for more information.
 
 # Installing/Updating
 
 ## How can I verify that my ImageJ is really 100% up to date?
 
-ImageJ will report itself as "up to date" as long as all files installed in your ImageJ match the latest versions from the remote update sites. However, there are cases where your ImageJ may report itself as "up to date" but still be missing critical files, or have mismatching versions (e.g., the dreaded [`NoSuchMethodError`](Troubleshooting#NoSuchMethodError_or_NoClassDefFoundError "wikilink")).
+ImageJ will report itself as "up to date" as long as all files installed in your ImageJ match the latest versions from the remote update sites. However, there are cases where your ImageJ may report itself as "up to date" but still be missing critical files, or have mismatching versions (e.g., the dreaded [`NoSuchMethodError`](Troubleshooting#NoSuchMethodError_or_NoClassDefFoundError )).
 
 To be certain, run {% include bc content='Help | Update...'%}, and click the "Advanced mode" button. Then verify the following View Options:
 
@@ -115,23 +115,23 @@ If you flag any changes to be made, press the "Apply changes" to update your Ima
 
 ## How do I install additional plugins?
 
-If the plugin is published on an [ImageJ update site](Update_Sites "wikilink"), you can run {% include bc content='Help | Update'%} then click the *Manage update sites* button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
+If the plugin is published on an [ImageJ update site](Update_Sites ), you can run {% include bc content='Help | Update'%} then click the *Manage update sites* button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
 
-Otherwise, you can drag 'n drop the .jar files onto the ImageJ window, or use {% include bc content='Plugins | Install Plugin...'%} with .jar, .class and .java files, or copy the plugins to *ImageJ.app/plugins/* and restart ImageJ. See the [walk-through with screenshots](Installing_3rd_party_plugins "wikilink").
+Otherwise, you can drag 'n drop the .jar files onto the ImageJ window, or use {% include bc content='Plugins | Install Plugin...'%} with .jar, .class and .java files, or copy the plugins to *ImageJ.app/plugins/* and restart ImageJ. See the [walk-through with screenshots](Installing_3rd_party_plugins ).
 
 ## How do I downgrade ImageJ?
 
 Downgrading is generally not recommended as a long-term solution, but can be handy to avoid new bugs that crop up.
 
-*If you need to downgrade to avoid a critical bug, please [report that bug](Bugs "wikilink") to the developers so that it can be fixed in a future version\!*
+*If you need to downgrade to avoid a critical bug, please [report that bug](Bugs ) to the developers so that it can be fixed in a future version\!*
 
-  - You can change the version of [ImageJ 1.x](ImageJ_1.x "wikilink") used via the {% include bc content='Help | Update ImageJ...'%} menu item. This *only* changes the version of ImageJ 1.x—not all ImageJ components, [plugins](plugins "wikilink"), etc.
+  - You can change the version of [ImageJ 1.x](ImageJ_1.x ) used via the {% include bc content='Help | Update ImageJ...'%} menu item. This *only* changes the version of ImageJ 1.x—not all ImageJ components, [plugins](plugins ), etc.
   - You can [switch to a different version of Java](#How_do_I_launch_ImageJ_with_a_different_version_of_Java? "wikilink").
-  - You can [download a Fiji Life-Line version](Downloads#Fiji "wikilink").
+  - You can [download a Fiji Life-Line version](Downloads#Fiji ).
 
 Lastly, if you have not yet upgraded, and have a currently working configuration, you can make a backup copy of your ImageJ folder before upgrading. Then if the upgrade has undesirable consequences, switch back to the old copy.
 
-## My plugin runs fine in the [Script Editor](Script_Editor "wikilink"), but it does not show up in the menus when I install it. What's wrong?
+## My plugin runs fine in the [Script Editor](Script_Editor ), but it does not show up in the menus when I install it. What's wrong?
 
 To be picked up as a plugin, the *.jar*'s file name must contain an underscore, and it either needs to contain an appropriate *plugins.config* file or the class name needs to contain an underscore, too.
 
@@ -139,17 +139,17 @@ The safest way to ensure these conventions is to use the {% include bc content='
 
 ## I tried to update ImageJ via {% include bc content='Help | Update'%}, but it throws an exception instead?
 
-Please download a fresh copy from [here](Downloads "wikilink").
+Please download a fresh copy from [here](Downloads ).
 
 ## I updated ImageJ via {% include bc content='Help | Update'%}, and now it does not start anymore\!
 
-See [If ImageJ does not start up](Troubleshooting#If_ImageJ_does_not_start_up "wikilink") on the Troubleshooting page.
+See [If ImageJ does not start up](Troubleshooting#If_ImageJ_does_not_start_up ) on the Troubleshooting page.
 
 ## The Updater always says *Connection refused*. Maybe it does not use the proxy?
 
-Indeed, an earlier version of the Updater does not use your system-wide network proxy settings. You can [download a new ImageJ](Downloads "wikilink") to receive the fix. Or you can update the Updater manually like this:
+Indeed, an earlier version of the Updater does not use your system-wide network proxy settings. You can [download a new ImageJ](Downloads ) to receive the fix. Or you can update the Updater manually like this:
 
-  - open the [Script Editor](Script_Editor "wikilink") with {% include bc content='File | New | Script'%}
+  - open the [Script Editor](Script_Editor ) with {% include bc content='File | New | Script'%}
   - set the language to *BeanShell* in the *Language* menu of the editor
   - paste the following code (and adjust it to match your settings):
 
@@ -168,7 +168,7 @@ IJ.run("Update...");
 
 ## What is the difference between ImageJ1 and ImageJ2?
 
-[ImageJ1](ImageJ1 "wikilink") is an extensible platform for scientific image analysis. [ImageJ2](ImageJ "wikilink") is redesigned from the ground up to meet the same needs, yet engineered with future-proof flexibility to adapt to researchers' growing requirements (new data types, higher dimensionality, huge images, etc...).
+[ImageJ1](ImageJ1 ) is an extensible platform for scientific image analysis. [ImageJ2](ImageJ ) is redesigned from the ground up to meet the same needs, yet engineered with future-proof flexibility to adapt to researchers' growing requirements (new data types, higher dimensionality, huge images, etc...).
 
 ## Will ImageJ1 macros, plugins and scripts still work in ImageJ2?
 
@@ -178,15 +178,15 @@ ImageJ2 user interfaces are just plugins; ImageJ2 runs with the "ImageJ1 legacy 
 
 ## Does ImageJ2 support the ImageJ macro language? Is it deprecated?
 
-Thanks to the {% include github org='imagej ' repo='imagej-legacy ' label='ImageJ legacy layer ' %}, [ImageJ1](ImageJ1 "wikilink") [macros](macros "wikilink") will run unchanged in [ImageJ2](ImageJ2 "wikilink"), while also allowing to harness ImageJ2's new parameterized [scripting](scripting "wikilink") paradigm—something that was previously not possible with the macro language.
+Thanks to the {% include github org='imagej ' repo='imagej-legacy ' label='ImageJ legacy layer ' %}, [ImageJ1](ImageJ1 ) [macros](macros ) will run unchanged in [ImageJ2](ImageJ2 ), while also allowing to harness ImageJ2's new parameterized [scripting](scripting ) paradigm—something that was previously not possible with the macro language.
 
 The ImageJ1 macro language has been extremely useful to many users. However, it has a substantial limitation: its functions are separate from those available from Java and the other scripting languages.
 
-In ImageJ2, the goal is to provide one unified set of functions, which is fully accessible from Java and all scripting languages. Hence, ImageJ2 plugins and scripts are more flexible than [ImageJ1](ImageJ1 "wikilink") [plugins](plugins "wikilink") and [macros](macros "wikilink"). They can run [headless](headless "wikilink") on a server, and are accessible from various applications such as CellProfiler, [KNIME](KNIME "wikilink"), OMERO, and headless from the command line. We would encourage newly developed scripts and plugins to use the ImageJ2 API since it offers these advantages, but the ImageJ1 API will remain accessible, too.
+In ImageJ2, the goal is to provide one unified set of functions, which is fully accessible from Java and all scripting languages. Hence, ImageJ2 plugins and scripts are more flexible than [ImageJ1](ImageJ1 ) [plugins](plugins ) and [macros](macros ). They can run [headless](headless ) on a server, and are accessible from various applications such as CellProfiler, [KNIME](KNIME ), OMERO, and headless from the command line. We would encourage newly developed scripts and plugins to use the ImageJ2 API since it offers these advantages, but the ImageJ1 API will remain accessible, too.
 
 ## Can I call ImageJ1 API from an ImageJ2 command?
 
-Yes, although it is not recommended. You will lose most of the advantages of ImageJ2 if you embed calls to ImageJ1 within your command. ImageJ1 is rather tightly coupled to AWT and hence does not work well headless. For details, see the [Headless](Headless "wikilink") page.
+Yes, although it is not recommended. You will lose most of the advantages of ImageJ2 if you embed calls to ImageJ1 within your command. ImageJ1 is rather tightly coupled to AWT and hence does not work well headless. For details, see the [Headless](Headless ) page.
 
 ## Can I call ImageJ2 API from an ImageJ1 plugin?
 
@@ -194,9 +194,9 @@ Yes, see the [call-modern-from-legacy](https://github.com/imagej/tutorials/tree/
 
 ## How do I find equivalent commands between ImageJ1 and ImageJ2 API?
 
-[ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet "wikilink") is available.
+[ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet ) is available.
 
-# [Fiji](Fiji "wikilink")
+# [Fiji](Fiji )
 
 ## What is the difference between Fiji and ImageJ?
 
@@ -204,29 +204,29 @@ Fiji is a *distribution* of ImageJ: it bundles the core ImageJ application with 
 
 ## How do I install Fiji?
 
-The installation of Fiji is described on specific pages for [MacOSX](Install_Fiji_on_MacOSX "wikilink"), [Windows](Install_Fiji_on_Windows "wikilink") and [Linux](Install_Fiji_on_Linux "wikilink").
+The installation of Fiji is described on specific pages for [MacOSX](Install_Fiji_on_MacOSX ), [Windows](Install_Fiji_on_Windows ) and [Linux](Install_Fiji_on_Linux ).
 
 ## How do I turn my ImageJ installation into a Fiji one?
 
-Fiji is just ImageJ. If you are running [ImageJ2](ImageJ2 "wikilink"), simply run {% include bc content='Help | Update'%}, click *Manage update sites*, and enable the *Fiji* update site.
+Fiji is just ImageJ. If you are running [ImageJ2](ImageJ2 ), simply run {% include bc content='Help | Update'%}, click *Manage update sites*, and enable the *Fiji* update site.
 
-Or if you are running [ImageJ1](ImageJ1 "wikilink"), you can bootstrap the updater by drag 'n dropping [this link](http://update.imagej.net/bootstrap.js) onto your running ImageJ and run the Javascript that was opened in a text window. After that, you can run Fiji/ImageJ using the [ImageJ launcher](Launcher "wikilink") that was installed into the ImageJ directory.
+Or if you are running [ImageJ1](ImageJ1 ), you can bootstrap the updater by drag 'n dropping [this link](http://update.imagej.net/bootstrap.js) onto your running ImageJ and run the Javascript that was opened in a text window. After that, you can run Fiji/ImageJ using the [ImageJ launcher](Launcher ) that was installed into the ImageJ directory.
 
 ## How do I develop Fiji in Eclipse?
 
-Please refer to the page *[Developing Fiji in Eclipse](Developing_Fiji_in_Eclipse "wikilink")*.
+Please refer to the page *[Developing Fiji in Eclipse](Developing_Fiji_in_Eclipse )*.
 
 ## How can I build Fiji from the command-line?
 
-[Download and build it](Downloading_and_Building_Fiji_From_Source "wikilink"). You need Git for that (if you are on Windows, please use [Git for Windows](https://msysgit.github.io/)).
+[Download and build it](Downloading_and_Building_Fiji_From_Source ). You need Git for that (if you are on Windows, please use [Git for Windows](https://msysgit.github.io/)).
 
-## How do I install a Fiji plugin into vanilla [ImageJ 1.x](ImageJ_1.x "wikilink")?
+## How do I install a Fiji plugin into vanilla [ImageJ 1.x](ImageJ_1.x )?
 
 Doing this is not recommended:
 
-  - Fiji plugin authors test their plugins in Fiji, not vanilla [ImageJ 1.x](ImageJ_1.x "wikilink").
-  - An increasing number of plugins use features of [ImageJ2](ImageJ2 "wikilink"), which are not available in [ImageJ 1.x](ImageJ_1.x "wikilink").
-  - If you install multiple plugins with complex dependency chains in this manner, you may have dependency [version](version "wikilink") conflicts. For things to work, you will need to ensure that all the library versions are compatible. The [ Fiji maintainers](Governance "wikilink") have already solved this problem for the [Fiji](Fiji "wikilink") distribution.
+  - Fiji plugin authors test their plugins in Fiji, not vanilla [ImageJ 1.x](ImageJ_1.x ).
+  - An increasing number of plugins use features of [ImageJ2](ImageJ2 ), which are not available in [ImageJ 1.x](ImageJ_1.x ).
+  - If you install multiple plugins with complex dependency chains in this manner, you may have dependency [version](version ) conflicts. For things to work, you will need to ensure that all the library versions are compatible. The [ Fiji maintainers](Governance ) have already solved this problem for the [Fiji](Fiji ) distribution.
 
 So you could save yourself a lot of pain by using Fiji instead.
 
@@ -240,13 +240,13 @@ mvn dependency:copy-dependencies
 
 Then copy `target/dependency/*.jar` into your ImageJ installation.
 
-You will need [Git](Git "wikilink") and [Maven](Maven "wikilink") installed for this to work.
+You will need [Git](Git ) and [Maven](Maven ) installed for this to work.
 
 # Interoperability
 
 ## How can I call ImageJ from MATLAB, or vice versa?
 
-Use the ImageJ-MATLAB [update site](update_site "wikilink"). See the [MATLAB](MATLAB "wikilink") page for details.
+Use the ImageJ-MATLAB [update site](update_site ). See the [MATLAB](MATLAB ) page for details.
 
 # Development
 
@@ -266,19 +266,19 @@ Maven is a system to build *.jar* files from source code, and to manage dependen
 
 We picked it because we need a standard way to interact and collaborate with other projects and with each other. For starters, it allows developers to stay with their favorite development environment (Eclipse, Netbeans, IntelliJ, etc).
 
-For details, please refer to our page on [Maven](Maven "wikilink").
+For details, please refer to our page on [Maven](Maven ).
 
 ## What is MiniMaven and why did you create it?
 
-Please refer to the [MiniMaven](MiniMaven "wikilink") and [Supported Compilers](Supported_Compilers "wikilink") pages for an explanation.
+Please refer to the [MiniMaven](MiniMaven ) and [Supported Compilers](Supported_Compilers ) pages for an explanation.
 
 ## How do I create a new ImageJ plugin using Maven?
 
-Please refer to our page on [Maven](Maven "wikilink").
+Please refer to our page on [Maven](Maven ).
 
 ## How do I upload a new release of an ImageJ plugin?
 
-Please refer to the [Uploading plugins](Uploading_plugins "wikilink") tutorial.
+Please refer to the [Uploading plugins](Uploading_plugins ) tutorial.
 
 ## How do I upload a new release of a core ImageJ library such as ImgLib?
 
@@ -293,12 +293,12 @@ Over the years we evolved a development style as follows:
   - merge
   - deal with any fall-out
 
-This development style has been adopted by the [ImageJ team](Contributors "wikilink"), with two additions (making the fall-out step much smaller):
+This development style has been adopted by the [ImageJ team](Contributors ), with two additions (making the fall-out step much smaller):
 
-  - tests are added as automated regression tests (to be run by the [continuous integration](continuous_integration "wikilink") whenever new changes were pushed) whenever possible.
+  - tests are added as automated regression tests (to be run by the [continuous integration](continuous_integration ) whenever new changes were pushed) whenever possible.
   - merges are usually done with *--no-ff*, so that even fast-forwarding branches (i.e. rebased on top of *master*) will get a merge commit in which the branch is described more broadly.
 
-See also [coding style](coding_style "wikilink").
+See also [coding style](coding_style ).
 
 ## Class loading issue in 3-rd party libraries (e.g. JPPF)
 
@@ -324,7 +324,7 @@ Here are several ways to do so:
       - Press {% include key content='Down' %} to select it.
       - Click the Source button.
       - This will open the source from the [ImageJ web site online source](https://imagej.net/source/).
-      - Note: this method is very convenient, but only works for core [ImageJ 1.x](ImageJ_1.x "wikilink") sources (e.g., not [ImageJ2](ImageJ2 "wikilink") code, not [Fiji](Fiji "wikilink") code, etc.).
+      - Note: this method is very convenient, but only works for core [ImageJ 1.x](ImageJ_1.x ) sources (e.g., not [ImageJ2](ImageJ2 ) code, not [Fiji](Fiji ) code, etc.).
 3.  **Using GitHub:**
       - Using the Command Finder, locate your command, taking note of the Class column's value.
           - E.g., if we type "make binary" we see that the class is `ij.plugin.Thresholder`.
@@ -346,7 +346,7 @@ In the future, we plan to make this easier by having one single easy command for
 
 ## What are "external" plugins?
 
-As far as users are concerned, external Fiji plugins are exactly the same as internal Fiji plugins. For developers, ["external plugin"](External_plugins "wikilink") simply implies that the plugin's source code is maintained in its own source code repository. For example, [TrakEM2](TrakEM2 "wikilink") has been an external Fiji plugin since Fiji's inception.
+As far as users are concerned, external Fiji plugins are exactly the same as internal Fiji plugins. For developers, ["external plugin"](External_plugins ) simply implies that the plugin's source code is maintained in its own source code repository. For example, [TrakEM2](TrakEM2 ) has been an external Fiji plugin since Fiji's inception.
 
 ## Where should I put the jars of my plugin?
 
@@ -354,36 +354,36 @@ If you develop a Fiji plugin, the result will be in the form of one or more jars
 
 ## How can I call ImageJ from my software?
 
-If your software is written in Java, we recommend using [Maven](Maven "wikilink") to structure your project. You can then add dependencies to portions of ImageJ that are of interest to you. See the {% include github org='imagej ' repo='tutorials ' label='ImageJ tutorials ' %} for examples.
+If your software is written in Java, we recommend using [Maven](Maven ) to structure your project. You can then add dependencies to portions of ImageJ that are of interest to you. See the {% include github org='imagej ' repo='tutorials ' label='ImageJ tutorials ' %} for examples.
 
 If your software is written in another language such as C or Python, there are [many ways to integrate Java functionality](http://loci.wisc.edu/bio-formats/interfacing-non-java-code). You must choose which one is best for your particular requirements.
 
-To facilitate some use cases, we provide a script for generating a combined bundle of all ImageJ-related JARs in a single [uber-JAR](uber-JAR "wikilink") library. To use, check out the ImageJ [source code](source_code "wikilink") and execute:
+To facilitate some use cases, we provide a script for generating a combined bundle of all ImageJ-related JARs in a single [uber-JAR](uber-JAR ) library. To use, check out the ImageJ [source code](source_code ) and execute:
 
 > `mvn -Pdeps package`
 
 For convenience, we provide a [build of this combined JAR file](http://jenkins.imagej.net/job/ImageJ/lastSuccessfulBuild/artifact/target/) (with suffix `-all`) from the latest DEVELOPMENT, UNSTABLE version of ImageJ. This build includes the latest changes on the {% include github repo='imagej ' label='master branch of the source repository ' %}. It has not been thoroughly tested and may contain new bugs.
 
-In some cases, use of this JAR file is appropriate and convenient; for example, [CellProfiler](http://cellprofiler.org/) uses it to integrate with ImageJ. However, you should consider carefully what would be best for your project; see the [Uber-JAR](Uber-JAR "wikilink") page for further information.
+In some cases, use of this JAR file is appropriate and convenient; for example, [CellProfiler](http://cellprofiler.org/) uses it to integrate with ImageJ. However, you should consider carefully what would be best for your project; see the [Uber-JAR](Uber-JAR ) page for further information.
 
 ## Does ImageJ work on mobile devices such as Android?
 
-Not yet as an end-user application. But since Android is a Java-based platform, there is hope. One of the [ImageJ2](ImageJ2 "wikilink") project's central design goals was a better {% include wikipedia title='Separation of concerns' text='separation of concerns'%}, which could make things like an Android version of ImageJ possible. In particular, the [core components of ImageJ2](ImageJ2#ImageJ2_is_more_than_just_an_application "wikilink") are militant in their avoidance of certain Java SE packages not present in the Android version of Java (which is based on Java ME), such as {% include wikipedia title='Abstract Window Toolkit' text='Java AWT'%}.
+Not yet as an end-user application. But since Android is a Java-based platform, there is hope. One of the [ImageJ2](ImageJ2 ) project's central design goals was a better {% include wikipedia title='Separation of concerns' text='separation of concerns'%}, which could make things like an Android version of ImageJ possible. In particular, the [core components of ImageJ2](ImageJ2#ImageJ2_is_more_than_just_an_application ) are militant in their avoidance of certain Java SE packages not present in the Android version of Java (which is based on Java ME), such as {% include wikipedia title='Abstract Window Toolkit' text='Java AWT'%}.
 
 That said, ImageJ2 has not even been compile-tested yet using an Android SDK, so there are surely many problems which would need to be resolved. In the future, the ImageJ development team hopes to set up some continuous integration surrounding Android. If you are interested in helping drive this effort forward, please see the *Android* tag on the [ImageJ forum](http://forum.imagej.net/tags/android)\!
 
-Another possibility for the future is a client/server version of ImageJ that runs in a web browser using HTML5 and JavaScript, which could include cross-platform support for mobile devices (Android, iPhone, tablets, etc.). Again, much groundwork has been done to make the [ImageJ2](ImageJ2 "wikilink") core design compatible with such an application, but no one has written the server- or client-side yet. If you are seriously interested in helping to pursue such an application, you might also want to check out the [OMERO](OMERO "wikilink") project, which is a client/server application which has some [integration with ImageJ](https://github.com/imagej/imagej-omero).
+Another possibility for the future is a client/server version of ImageJ that runs in a web browser using HTML5 and JavaScript, which could include cross-platform support for mobile devices (Android, iPhone, tablets, etc.). Again, much groundwork has been done to make the [ImageJ2](ImageJ2 ) core design compatible with such an application, but no one has written the server- or client-side yet. If you are seriously interested in helping to pursue such an application, you might also want to check out the [OMERO](OMERO ) project, which is a client/server application which has some [integration with ImageJ](https://github.com/imagej/imagej-omero).
 
 # Community
 
 ## Why is there Fiji when there is already ImageJ? And what is this ImageJ2 about?
 
-The [ImageJ](ImageJ "wikilink"), [Fiji](Fiji "wikilink") and [ImageJ2](ImageJ2 "wikilink") projects are very closely related. See [ImageJ\#Flavors](ImageJ#Flavors "wikilink") for a thorough breakdown of the differences.
+The [ImageJ](ImageJ ), [Fiji](Fiji ) and [ImageJ2](ImageJ2 ) projects are very closely related. See [ImageJ\#Flavors](ImageJ#Flavors ) for a thorough breakdown of the differences.
 
 See also:
 
-  - [an ImageJ2 blog post clarifying specifically the relationship between ImageJ and the version used in Fiji](2011-10-05_-_The_relation_between_ImageJA_and_ImageJ "wikilink")
-  - [an ImageJ2 blog post illustrating that we move code from Fiji to ImageJ2 as appropriate](2012-02-01_-_The_Fiji_Updater_has_been_integrated_into_the_ImageJ2_code_base "wikilink")
+  - [an ImageJ2 blog post clarifying specifically the relationship between ImageJ and the version used in Fiji](2011-10-05_-_The_relation_between_ImageJA_and_ImageJ )
+  - [an ImageJ2 blog post illustrating that we move code from Fiji to ImageJ2 as appropriate](2012-02-01_-_The_Fiji_Updater_has_been_integrated_into_the_ImageJ2_code_base )
 
 In short: we all collaborate, but have slightly different focus, hence the different projects and names.
 
@@ -393,9 +393,9 @@ We are working to create an architecture where the programs work together and pr
 
 ## Would it make sense to merge the ImageJ2 and Fiji projects?
 
-[Fiji](Fiji "wikilink") and [ImageJ2](ImageJ2 "wikilink") are fundamentally the same software, using the same [launcher](launcher "wikilink"). So from the standpoint of development effort, the ImageJ2 and Fiji projects have indeed merged. ImageJ2 is the core software, and several pieces of infrastructure originally developed for Fiji have now migrated to ImageJ2 (e.g., the [Updater](Updater "wikilink"), [Launcher](Launcher "wikilink") and [Script Editor](Script_Editor "wikilink") components). At heart, Fiji is just a big collection of life sciences plugins (though "Fijabcolsp" doesn't have quite the same ring to it). In other words, Fiji is just an ImageJ update site ("Fijaius")—and as such, you can obtain a working Fiji installation by downloading ImageJ2, running the updater, and enabling the Fiji update site.
+[Fiji](Fiji ) and [ImageJ2](ImageJ2 ) are fundamentally the same software, using the same [launcher](launcher ). So from the standpoint of development effort, the ImageJ2 and Fiji projects have indeed merged. ImageJ2 is the core software, and several pieces of infrastructure originally developed for Fiji have now migrated to ImageJ2 (e.g., the [Updater](Updater ), [Launcher](Launcher ) and [Script Editor](Script_Editor ) components). At heart, Fiji is just a big collection of life sciences plugins (though "Fijabcolsp" doesn't have quite the same ring to it). In other words, Fiji is just an ImageJ update site ("Fijaius")—and as such, you can obtain a working Fiji installation by downloading ImageJ2, running the updater, and enabling the Fiji update site.
 
-All of that said, we do not want to get rid of the two distinct project names, since people are familiar with both. But we are integrating resources when feasible: e.g., the [ImageJ wiki](https://imagej.net/) and the [Fiji wiki](https://fiji.sc/) are really both the same wiki with different skins, to make cross-linking more seamless. But we want to ensure it is clear that ImageJ is not a life-sciences-specific project, whereas Fiji is. Historically, because Fiji has a life sciences focus, there have been some users who refused to switch from vanilla [ImageJ1](ImageJ1 "wikilink") to Fiji even though Fiji makes users' lives easier in lots of ways. With ImageJ2, we want to avoid such misconceptions.
+All of that said, we do not want to get rid of the two distinct project names, since people are familiar with both. But we are integrating resources when feasible: e.g., the [ImageJ wiki](https://imagej.net/) and the [Fiji wiki](https://fiji.sc/) are really both the same wiki with different skins, to make cross-linking more seamless. But we want to ensure it is clear that ImageJ is not a life-sciences-specific project, whereas Fiji is. Historically, because Fiji has a life sciences focus, there have been some users who refused to switch from vanilla [ImageJ1](ImageJ1 ) to Fiji even though Fiji makes users' lives easier in lots of ways. With ImageJ2, we want to avoid such misconceptions.
 
 More effort is still needed to clarify web resources, to explain concisely and clearly where people should go in different circumstances. We also have plans to make bug reporting simpler and easier across the projects.
 
@@ -410,34 +410,34 @@ Please feel free to enhance the Wiki\! We are thankful for all contributions\!
 
 ## How do I find more information about Command X?
 
-The first place to check is this wiki. The [Fiji's Menu](Fijis_Menu "wikilink") page is especially helpful as it includes links to all the menu commands that ship as part of Fiji.
+The first place to check is this wiki. The [Fiji's Menu](Fijis_Menu ) page is especially helpful as it includes links to all the menu commands that ship as part of Fiji.
 
 If documentation is missing for the command you're interested in, you can always view the source directly:
 
-1.  Open the [Command Finder](Command_Finder "wikilink") (Shortcut: {% include key content='L' %})
+1.  Open the [Command Finder](Command_Finder ) (Shortcut: {% include key content='L' %})
 2.  Filter to the command you're interested in.
 3.  The \`File\` column will tell you the plugin where the desired command is contained.
 4.  You can then use this information to find the source code on GitHub - for core [ImageJ](https://github.com/imagej) or [Fiji](https://github.com/fiji) plugins.
 5.  From the appropriate project on GitHub, you can find the repository corresponding to the desired plugin.
 6.  Finally, you can search for the actual file for the command of interest (Shortcut: {% include key content='T' %}).
 
-As a complete example, if you were interested in the [2D Histogram](2D_Histogram "wikilink") command:
+As a complete example, if you were interested in the [2D Histogram](2D_Histogram ) command:
 
-  - The [Command Finder](Command_Finder "wikilink") indicates it's located in VIB.jar
+  - The [Command Finder](Command_Finder ) indicates it's located in VIB.jar
   - VIB is a Fiji plugin, so we go to [the VIB repository](https://github.com/fiji/VIB).
   - On GitHub, press {% include key content='T' %}, search for "Histogram", and find [the Histogram 2D](https://github.com/fiji/VIB/blob/master/src/main/java/util/Histogram_2D.java) source.
 
 ## I have a problem that is not covered on this page\!
 
-If you have an issue that is not mentioned here, you might want to [ask on one of the mailing lists, or via IRC](Help "wikilink"), or [enter a bug report](https://fiji.sc/bugzilla/).
+If you have an issue that is not mentioned here, you might want to [ask on one of the mailing lists, or via IRC](Help ), or [enter a bug report](https://fiji.sc/bugzilla/).
 
 ## How to report issues?
 
-Use the {% include bc content='Help | [Report a Bug](Report_a_Bug "wikilink")'%} command, which adds a ticket report to the [Fiji bug tracker](https://fiji.sc/bugzilla/). While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
+Use the {% include bc content='Help | [Report a Bug](Report_a_Bug )'%} command, which adds a ticket report to the [Fiji bug tracker](https://fiji.sc/bugzilla/). While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
 
 ## I reported an issue, but it is still not fixed\! Why not?
 
-[ImageJ](ImageJ "wikilink") is an [Open Source](Open_Source "wikilink") community project. The list of [contributors](contributors "wikilink") is large but most of the people involved are not paid to work on it. We greatly value community contributions and assistance.
+[ImageJ](ImageJ ) is an [Open Source](Open_Source ) community project. The list of [contributors](contributors ) is large but most of the people involved are not paid to work on it. We greatly value community contributions and assistance.
 
 There are not many professional developers whose formal jobs include responding to and addressing bug reports. These developers are not paid *solely* to fix bugs—rather, they are working to solve scientific problems and to advance the software's capabilities. And their attention is spread thin across many projects: [ImageJ](https://github.com/imagej), [Fiji](https://github.com/fiji), [SCIFIO](https://github.com/scifio), [SciJava](https://github.com/scijava), [LOCI](https://github.com/uw-loci), [OME](https://github.com/openmicroscopy), [ImgLib2](https://github.com/imglib), [OpenSPIM](https://github.com/openspim), [SLIM Curve](https://github.com/slim-curve), [NAR plugin for Maven](https://github.com/maven-nar), and others.
 
@@ -447,23 +447,23 @@ So please understand that just because we have not responded to a bug report, do
 
 If you want to increase the chances of your issue being worked on, you can:
 
-  - Report the issue using the [Report a Bug](Report_a_Bug "wikilink") plugin (in the Help menu).
+  - Report the issue using the [Report a Bug](Report_a_Bug ) plugin (in the Help menu).
   - Provide a [minimal, complete, verifiable example](http://stackoverflow.com/help/mcve).
   - [Describe what you already tried](http://whathaveyoutried.com/).
   - [Put as much effort into your question](http://stackoverflow.com/help/how-to-ask) as you expect to be put into its response.
-  - Consider [debugging](debugging "wikilink") the issue yourself and [submitting a fix](Contributing "wikilink") as a [pull request](https://help.github.com/articles/using-pull-requests).
+  - Consider [debugging](debugging ) the issue yourself and [submitting a fix](Contributing ) as a [pull request](https://help.github.com/articles/using-pull-requests).
 
-See the [bug reporting best practices](bug_reporting_best_practices "wikilink") article for details.
+See the [bug reporting best practices](bug_reporting_best_practices ) article for details.
 
 ## How do I contribute a bug fix or patch, or propose an idea for a change?
 
-See the [Contributing](Contributing "wikilink") page\!
+See the [Contributing](Contributing ) page\!
 
 # Miscellaneous
 
 ## Why do you program in Java? Is C++ not much faster?
 
-See the [Philosophy](Philosophy#Why_Java.3F "wikilink") page\!
+See the [Philosophy](Philosophy#Why_Java.3F ) page\!
 
 ## With Oracle buying Sun and Apple deprecating Java, does Java have a future?
 
@@ -473,13 +473,13 @@ Yes. Java is one of the [most popular programming languages](http://langpop.com/
 
 As of June 2014, around 19% of macOS systems still run version 10.6 Snow Leopard or older [http://www.netmarketshare.com/ 1](http://www.netmarketshare.com/_1 "wikilink"). (In December 2013, it was around 25%.) Unfortunately, Apple and the OpenJDK developer community decided to target OS X 10.7 Lion and above for Java 7 and 8. For the time being, to avoid abandoning older machines which cannot be upgraded from Snow Leopard, ImageJ continues to target Java 6.
 
-Furthermore, updating the required version to a newer version of Java would necessitate improvements to the ImageJ [Updater](Updater "wikilink") such that it could also update the bundled version of Java, which would be a substantial undertaking. Otherwise, most existing installations of ImageJ would stop working, and those users would need to download ImageJ from scratch again.
+Furthermore, updating the required version to a newer version of Java would necessitate improvements to the ImageJ [Updater](Updater ) such that it could also update the bundled version of Java, which would be a substantial undertaking. Otherwise, most existing installations of ImageJ would stop working, and those users would need to download ImageJ from scratch again.
 
 See [this mailing list thread](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;29652c34.1412) for further details.
 
 ## How are you addressing the fact that with increased modularity comes increased complexity?
 
-See the [Philosophy](Philosophy#Convention_over_configuration "wikilink") page\!
+See the [Philosophy](Philosophy#Convention_over_configuration ) page\!
 
 ## How about a version of ImageJ for the web browser, mobile devices, etc.?
 
@@ -491,8 +491,8 @@ A shorter term pragmatic solution would be an ImageJ web client that connects to
 
 ## Why is open software vital to science?
 
-See the [Open Source](Open_Source "wikilink") page\!
+See the [Open Source](Open_Source ) page\!
 
 ## Is Java still free and open source? I heard Oracle is charging for Java now\!
 
-Java is still free and open source. The only reason to pay Oracle for a Java license is to continue receiving commercial support from Oracle after January 2019 for the *Oracle version of Java 8*. If you use OpenJDK, you are fine. If you use an older version of Oracle Java 8 (such as the one currently shipping with [Fiji](Fiji "wikilink")), you are fine. See [this article](https://medium.com/@javachampions/java-is-still-free-c02aef8c9e04) for details.
+Java is still free and open source. The only reason to pay Oracle for a Java license is to continue receiving commercial support from Oracle after January 2019 for the *Oracle version of Java 8*. If you use OpenJDK, you are fine. If you use an older version of Oracle Java 8 (such as the one currently shipping with [Fiji](Fiji )), you are fine. See [this article](https://medium.com/@javachampions/java-is-still-free-c02aef8c9e04) for details.

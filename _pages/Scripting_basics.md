@@ -32,7 +32,7 @@ import ij.IJ // classical ImageJ1 import statement
 
 # Get an image and perform an action
 
-First we want to learn different ways to select an image and perform an action on it. In [ImageJ1](ImageJ1 "wikilink") the image is represented by an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html) object. The recommended way to select an ImagePlus object is to use [Script Parameters](Script_parameters "wikilink"):
+First we want to learn different ways to select an image and perform an action on it. In [ImageJ1](ImageJ1 ) the image is represented by an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html) object. The recommended way to select an ImagePlus object is to use [Script Parameters](Script_parameters ):
 
 ``` java
 #@ ImagePlus imp
@@ -47,9 +47,9 @@ IJ.run(imp, "Gaussian Blur...", "sigma=" + sig)
 
 Script Parameters are placed at the beginning of the script file. If only one `@ImagePlus` is used, the front most image is selected. A second Script Parameter is used to get the radius of the gaussion filter. By using `print(imp)` we verify, that an ImagePlus object is assigned to the variable.
 
-To perform an operation on the selected image, we use `IJ.run()`. Therefore we have to import the [class IJ](http://javadoc.imagej.net/ImageJ1/ij/IJ.html). There are three different versions of the \[http://javadoc.imagej.net/ImageJ1/ij/IJ.html#run(java.lang.String) run() method\] of these we need the one with three parameters. The first parameter is the image to perform the action on, the second parameters defines the action (called **command**) and the last parameter is used to configure the action (here we set the filter radius). The easiest way to find a command is to use the [Recorder](Introduction_into_Macro_Programming#The_recorder "wikilink").
+To perform an operation on the selected image, we use `IJ.run()`. Therefore we have to import the [class IJ](http://javadoc.imagej.net/ImageJ1/ij/IJ.html). There are three different versions of the \[http://javadoc.imagej.net/ImageJ1/ij/IJ.html#run(java.lang.String) run() method\] of these we need the one with three parameters. The first parameter is the image to perform the action on, the second parameters defines the action (called **command**) and the last parameter is used to configure the action (here we set the filter radius). The easiest way to find a command is to use the [Recorder](Introduction_into_Macro_Programming#The_recorder ).
 
-The second approach is similar to how to perform this operation using the [macro language](Introduction_into_Macro_Programming "wikilink"):
+The second approach is similar to how to perform this operation using the [macro language](Introduction_into_Macro_Programming ):
 
 ``` java
 import ij.IJ
@@ -78,7 +78,7 @@ This is nearly identical to the use of `IJ.getImage()` and therefore not recomme
 
 In ImageJ there are many different ways to open images (or more general datasets). We want to introduce some of them.
 
-The first example uses the [DatasetIOService](http://javadoc.imagej.net/SCIFIO/io/scif/services/DatasetIOService.html). It is part of [SCIFIO](SCIFIO "wikilink"), a flexible framework for **SC**ientific **I**mage **F**ormat **I**nput and **O**utput. Two types of image files are opened. The first one is an example image, downloaded from the Internet. The second image can be chosen by the user. Both datasets are displayed using the [UIService](http://javadoc.imagej.net/SciJava/org/scijava/ui/UIService.html) that is part of the [SciJava](SciJava "wikilink") project.
+The first example uses the [DatasetIOService](http://javadoc.imagej.net/SCIFIO/io/scif/services/DatasetIOService.html). It is part of [SCIFIO](SCIFIO ), a flexible framework for **SC**ientific **I**mage **F**ormat **I**nput and **O**utput. Two types of image files are opened. The first one is an example image, downloaded from the Internet. The second image can be chosen by the user. Both datasets are displayed using the [UIService](http://javadoc.imagej.net/SciJava/org/scijava/ui/UIService.html) that is part of the [SciJava](SciJava ) project.
 
 ``` java
 #@ DatasetIOService ds

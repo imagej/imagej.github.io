@@ -7,7 +7,7 @@ categories: News,Hackathons,ImageJ2,KNIME
 description: test description
 ---
 
-From Monday, January 11, 2016 through Friday, January 22, 2016, {% include person content='Dietzc' %} of the [University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~30 developers at the [KNIME Konstanz Regional Office](https://www.knime.org/contact) for a [hackathon](hackathon "wikilink") to develop the [KNIME](KNIME "wikilink") Image Processing extensions along with the underlying [ImageJ Ops](ImageJ_Ops "wikilink") library, as well as other supporting technologies such as [ImgLib2](ImgLib2 "wikilink") and [ClearVolume](ClearVolume "wikilink").
+From Monday, January 11, 2016 through Friday, January 22, 2016, {% include person content='Dietzc' %} of the [University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~30 developers at the [KNIME Konstanz Regional Office](https://www.knime.org/contact) for a [hackathon](hackathon ) to develop the [KNIME](KNIME ) Image Processing extensions along with the underlying [ImageJ Ops](ImageJ_Ops ) library, as well as other supporting technologies such as [ImgLib2](ImgLib2 ) and [ClearVolume](ClearVolume ).
 
 ## Timeline
 
@@ -124,10 +124,10 @@ PlotData=
 
 ### Mark Hiner
 
-  - Wrote a guide for developers ([Automatic Update Site Uploads](Automatic_Update_Site_Uploads "wikilink")) on how to automatically upload to their update site via Travis
+  - Wrote a guide for developers ([Automatic Update Site Uploads](Automatic_Update_Site_Uploads )) on how to automatically upload to their update site via Travis
   - Proof-of-concept'd restoring the Add Imports functionality to the script editor ({% include github org='imagej ' repo='imagej-ui-swing ' pr='67 ' label='imagej/imagej-ui-swing\#67 ' %})
   - Added Renjin-flavored R scripting to ImageJ ({% include github org='scijava ' repo='scripting-renjin ' label='scijava/scripting-renjin ' %})
-  - Got the Fiji downloads migrated to Java 8 bundles (see [Downloads](Downloads "wikilink"))
+  - Got the Fiji downloads migrated to Java 8 bundles (see [Downloads](Downloads ))
   - Furthered development of the Ops Browser ({% include github org='imagej ' repo='imagej-ui-swing ' issue='60 ' label='imagej/imagej-ui-swing\#60 ' %}), including:
       - Tailored User/Developer views
       - Fuzzy filtering for Ops
@@ -140,20 +140,20 @@ PlotData=
       - Improved inplace and hybrid op interfaces ({% include github org='imagej ' repo='imagej-ops ' commit='2e4d67f55f439bb49b85bcf700b2909d982784c8 ' label='binary-inplace ' %}, {% include github org='imagej ' repo='imagej-ops ' commit='3e2e8317b193207c266a7e22a81c8b457e620649 ' label='special-lookups ' %})
       - Improved the help op to support filtering by more criteria ({% include github org='imagej ' repo='imagej-ops ' commit='456acc7d8725578c2ac2a8c421645023a477fd7e ' label='special-help ' %})
       - Improved ImageJ tutorials to facilitate community members learning ImageJ2 (\[https://github.com/imagej/tutorials/compare/88c124b504f3f1e603fe106bbb34ff5423012f47%5E...54de6c20a6db7b69514cd7279c98683e850ce657 1\])
-      - Improved structure of [Script Editor](Script_Editor "wikilink") Templates menu, thanks to discussions with {% include person content='kephale' %} ({% include github org='imagej ' repo='imagej-ui-swing ' commit='27342e0b4e05ddc7d21bff6530a588554eea87e2 ' label='templates-menu ' %})
-      - Marked [ImageJ Legacy](ImageJ_Legacy "wikilink") as optional, thanks to feedback from {% include person content='kmader' %} and others ({% include github org='imagej ' repo='imagej ' commit='e8fbfeee858960f4a46aed8e0eb03175385d62fa ' label='imagej/imagej@e8fbfeee ' %})
+      - Improved structure of [Script Editor](Script_Editor ) Templates menu, thanks to discussions with {% include person content='kephale' %} ({% include github org='imagej ' repo='imagej-ui-swing ' commit='27342e0b4e05ddc7d21bff6530a588554eea87e2 ' label='templates-menu ' %})
+      - Marked [ImageJ Legacy](ImageJ_Legacy ) as optional, thanks to feedback from {% include person content='kmader' %} and others ({% include github org='imagej ' repo='imagej ' commit='e8fbfeee858960f4a46aed8e0eb03175385d62fa ' label='imagej/imagej@e8fbfeee ' %})
       - Added a main class to Fiji, for easier launching from an IDE, thanks to a discussion with {% include person content='fjug' %} (\[https://github.com/fiji/fiji/compare/bc128e3d7ab8c9e1269d88b7e534f7025e6f41cd%5E...f45204e32105873f4cddb132740d17deeda49879 1\])
       - Added a View marker interface to ImgLib2, to facilitate "lightweight" ops ({% include github org='imglib ' repo='imglib2 ' pr='116 ' label='view-marker ' %})
       - Helped clean up {% include person content='tibuch' %}'s Ops Views PR ({% include github org='imagej ' repo='imagej-ops ' pr='168 ' label='views ' %})
       - Helped {% include person content='hinerm' %} a bit with the Renjin script language (\[https://github.com/scijava/scripting-renjin/compare/8c65d9ae8ca30ffe3c6b3e70e1dd88222e07a52c%5E...f6fffb4117bed4c37811fa64a114145ce0b5c938 1\])
-      - Helped {% include person content='fjug' %} and {% include person content='tpietzsch' %} establish [Jenkins](Jenkins "wikilink") jobs for [MPI-CBG projects](http://jenkins.imagej.net/view/MPI-CBG/)
+      - Helped {% include person content='fjug' %} and {% include person content='tpietzsch' %} establish [Jenkins](Jenkins ) jobs for [MPI-CBG projects](http://jenkins.imagej.net/view/MPI-CBG/)
 
 <!-- end list -->
 
   - Bugs
-      - Fixed equals/hashCode problems with [ImgLib2](ImgLib2 "wikilink") integer types ({% include github org='imglib ' repo='imglib2 ' pr='111 ' label='imglib/imglib2\#111 ' %})
-      - Fixed a bug in the [SJC](SciJava_Common "wikilink") PrefService, noticed by {% include person content='kephale' %} ({% include github org='scijava ' repo='scijava-common ' commit='ab2a9adae7a8e6e8785874a13bbf805c5f8e71fe ' label='long-pref-keys ' %})
-      - Fixed [SCIFIO](SCIFIO "wikilink") bug with DICOM format, noticed by {% include person content='kmader' %} ({% include github org='scifio ' repo='scifio ' pr='292 ' label='dicom-file-list-npe ' %})
+      - Fixed equals/hashCode problems with [ImgLib2](ImgLib2 ) integer types ({% include github org='imglib ' repo='imglib2 ' pr='111 ' label='imglib/imglib2\#111 ' %})
+      - Fixed a bug in the [SJC](SciJava_Common ) PrefService, noticed by {% include person content='kephale' %} ({% include github org='scijava ' repo='scijava-common ' commit='ab2a9adae7a8e6e8785874a13bbf805c5f8e71fe ' label='long-pref-keys ' %})
+      - Fixed [SCIFIO](SCIFIO ) bug with DICOM format, noticed by {% include person content='kmader' %} ({% include github org='scifio ' repo='scifio ' pr='292 ' label='dicom-file-list-npe ' %})
       - Fixed bug when executing ops as commands, noticed by {% include person content='kephale' %} ({% include github org='imagej ' repo='imagej-ops ' commit='34b5523dfc051741a9ed69d2b5b9f97df24f2677 ' label='ops-as-commands ' %})
       - Investigated SJC bug in class loading, noticed by {% include person content='EikeHeinz' %}, but no solution yet ({% include github org='scijava ' repo='scijava-common ' issue='219 ' label='scijava/scijava-common\#219 ' %})
       - Fixed Eclipse configuration to run enforcer only upon initial configuration ({% include github org='scijava ' repo='pom-scijava ' commit='022a7bea5ebbc5b81ffae7386a26eea8f8677e3f scijava/pom-scijava@022a7bea ' %})
@@ -163,7 +163,7 @@ PlotData=
   - Research
       - Investigated improvements to Ops generic parameter matching. The problem is complex, but a solution is in the works.
       - Explored possible Ops matching performance improvements ({% include github org='imagej ' repo='imagej-ops ' pr='332 ' label='fast-op-index ' %})
-      - Improved Jenkins jobs to build SNAPSHOT javadoc for all core [SciJava](SciJava "wikilink") components (scijava, scifio, imglib2 and imagej). as requested by {% include person content='stelfrich' %} ({% include github org='imagej ' repo='imagej-javadoc ' commit='8cffdfa07c7406ebc8152cbdb84213d8a9774ff8 ' label='1 ' %}, {% include github org='scifio ' repo='scifio-javadoc ' commit='be25fda9f6baaaaa84f62fc6081d7e0ded8891e8 ' label='2 ' %}, {% include github org='imglib ' repo='imglib2-javadoc ' commit='e97cfc7a1e29dd1251297e2858245e7bfb275657 ' label='3 ' %})
+      - Improved Jenkins jobs to build SNAPSHOT javadoc for all core [SciJava](SciJava ) components (scijava, scifio, imglib2 and imagej). as requested by {% include person content='stelfrich' %} ({% include github org='imagej ' repo='imagej-javadoc ' commit='8cffdfa07c7406ebc8152cbdb84213d8a9774ff8 ' label='1 ' %}, {% include github org='scifio ' repo='scifio-javadoc ' commit='be25fda9f6baaaaa84f62fc6081d7e0ded8891e8 ' label='2 ' %}, {% include github org='imglib ' repo='imglib2-javadoc ' commit='e97cfc7a1e29dd1251297e2858245e7bfb275657 ' label='3 ' %})
 
 <!-- end list -->
 
@@ -223,6 +223,6 @@ PlotData=
 
 ## Future directions
 
-  - {% include person content='kephale' %} - Explore updating the [3D Viewer](3D_Viewer "wikilink") to use [Ops](Ops "wikilink") and [ClearVolume](ClearVolume "wikilink") under the hood.
+  - {% include person content='kephale' %} - Explore updating the [3D Viewer](3D_Viewer ) to use [Ops](Ops ) and [ClearVolume](ClearVolume ) under the hood.
 
    

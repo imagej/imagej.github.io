@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Javascript Scripting](Javascript_Scripting "wikilink")
+1.  REDIRECT [Javascript Scripting](Javascript_Scripting )

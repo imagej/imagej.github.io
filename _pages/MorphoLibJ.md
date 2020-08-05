@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='ijpb ' repo='MorphoLibJ ' %}
 {% endcapture %}
-{% include info-box name='MorphoLibJ ' software='IJPB-plugins ' update-site='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1) ' status='stable, active ' category='[Analysis](_Category_Analysis "wikilink"), [Filtering](_Category_Filtering "wikilink"), [Segmentation](_Category_Segmentation "wikilink"), [Mathematical morphology](_Category_Mathematical_morphology "wikilink") ' %}MorphoLibJ is a collection of {% include wikipedia title='Mathematical morphology' text='mathematical morphology'%} methods and **plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital Imaging lab](http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/).
+{% include info-box name='MorphoLibJ ' software='IJPB-plugins ' update-site='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ ) v1.4.1) ' status='stable, active ' category='[Analysis](_Category_Analysis ), [Filtering](_Category_Filtering ), [Segmentation](_Category_Segmentation ), [Mathematical morphology](_Category_Mathematical_morphology ) ' %}MorphoLibJ is a collection of {% include wikipedia title='Mathematical morphology' text='mathematical morphology'%} methods and **plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital Imaging lab](http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/).
 
 The library implements several functionalities that were missing in ImageJ, and that were not or only partially covered by other plugins. Namely:
 
@@ -239,15 +239,15 @@ So far, the following attribute filtering plugins are available within MorphoLib
 
 {% include thumbnail src='/images/pages/Classic-Watershed-lines-blur-blobs.png' title='Overlay of watershed lines on blurred blobs.'%} The watershed algorithm assimilates the grey level image to a digital elevation model, and aims at detecting the different catchment basins. In the grey-level image, the catchment basins correspond to dark regions surrounded by bright structures (the "crests"). It is a very popular technique specially used to segment touching objects. The MorphoLibJ suite contains several implementations of the algorithm and plugins that make use of it:
 
-  - [Classic Watershed](Classic_Watershed "wikilink"), plugin implementing the original watershed algorithm by Pierre Soille and Luc M. Vincent (1990)\<ref name="Soille1990\>{% include cite content='conference' title='Determining watersheds in digital pictures via flooding simulations ' author='Soille, Pierre and Vincent, Luc M ' booktitle='Proc. SPIE ' volume='1360 ' pages='240-250 ' year='1990 ' organization='International Society for Optics and Photonics ' doi='10.1117/12.24211 ' url='http://dx.doi.org/10.1117/12.24211 ' %}</ref> to segment 2D/3D grayscale images.
-  - [Marker-controlled Watershed](Marker-controlled_Watershed "wikilink"), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers by Meyer and Beucher (1990)\<ref name="Meyer1990\>{% include cite content='journal' title='Morphological segmentation ' author='F. Meyer and S. Beucher ' journal='Journal of Visual Communication and Image Representation ' volume='1 ' number='1 ' pages='21-46 ' year='1990 ' doi='10.1016/1047-3203(90)90014-M ' url='http://www.sciencedirect.com/science/article/pii/104732039090014M ' %}</ref>.
-  - [Interactive Marker-controlled Watershed](Interactive_Marker-controlled_Watershed "wikilink"), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers introduced interactively by the user.
-  - [Morphological Segmentation](Morphological_Segmentation "wikilink"), a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
-  - [Distance Transform Watershed](Distance_Transform_Watershed "wikilink"), two plugins (2D and 3D) that work on binary images and allow to separate touching objects by combining the distance transform and watershed methods.
+  - [Classic Watershed](Classic_Watershed ), plugin implementing the original watershed algorithm by Pierre Soille and Luc M. Vincent (1990)\<ref name="Soille1990\>{% include cite content='conference' title='Determining watersheds in digital pictures via flooding simulations ' author='Soille, Pierre and Vincent, Luc M ' booktitle='Proc. SPIE ' volume='1360 ' pages='240-250 ' year='1990 ' organization='International Society for Optics and Photonics ' doi='10.1117/12.24211 ' url='http://dx.doi.org/10.1117/12.24211 ' %}</ref> to segment 2D/3D grayscale images.
+  - [Marker-controlled Watershed](Marker-controlled_Watershed ), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers by Meyer and Beucher (1990)\<ref name="Meyer1990\>{% include cite content='journal' title='Morphological segmentation ' author='F. Meyer and S. Beucher ' journal='Journal of Visual Communication and Image Representation ' volume='1 ' number='1 ' pages='21-46 ' year='1990 ' doi='10.1016/1047-3203(90)90014-M ' url='http://www.sciencedirect.com/science/article/pii/104732039090014M ' %}</ref>.
+  - [Interactive Marker-controlled Watershed](Interactive_Marker-controlled_Watershed ), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers introduced interactively by the user.
+  - [Morphological Segmentation](Morphological_Segmentation ), a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
+  - [Distance Transform Watershed](Distance_Transform_Watershed ), two plugins (2D and 3D) that work on binary images and allow to separate touching objects by combining the distance transform and watershed methods.
 
 ## Measurements
 
-[MorphoLibJ](MorphoLibJ "wikilink") contains several tools for quantifying the size, the shape, or the spatial organization, from **binary or label** 2D and 3D images. The aim is to facilitate the management of label images, contrary to the built-in “Analyze Particles...” function that operates directly on a grayscale image.
+[MorphoLibJ](MorphoLibJ ) contains several tools for quantifying the size, the shape, or the spatial organization, from **binary or label** 2D and 3D images. The aim is to facilitate the management of label images, contrary to the built-in “Analyze Particles...” function that operates directly on a grayscale image.
 
 ### Region analysis
 
@@ -301,7 +301,7 @@ A binary particle may be described mathematically by its moments which correspon
 
 #### Plugins
 
-Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](MorphoLibJ#Utilities_for_binary_images "wikilink")). The output is a results table (ImageJ [Results table](https://imagej.nih.gov/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc content='Plugins | MorphoLibJ | Analyze'%} menu.
+Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](MorphoLibJ#Utilities_for_binary_images )). The output is a results table (ImageJ [Results table](https://imagej.nih.gov/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc content='Plugins | MorphoLibJ | Analyze'%} menu.
 
 ##### Global geometry
 
@@ -411,7 +411,7 @@ The region adjacency graph plugin gives access to the neighborhood relationship 
 
 {% include thumbnail src='/images/pages/MorphoLibJ-region-adjacency-graph.png' title='Computation of the Region Adjacency Graph on a microscopy image of plant tissue. Left: original image. Middle: result of watershed segmentation. Right: overlay of edges representing adjacent regions.'%}
 
-The plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Region Adjacency Graph'%}) works for both 2D and 3D images, and requires a label image as input. A typical input is the result of a watershed segmentation (see [Watershed Segmentation](MorphoLibJ#Watershed_segmentation "wikilink")), eventually followed by [manual edition of the labels](MorphoLibJ#Label_Edition_plugin "wikilink"). The output of the plugin is a results table with as many rows as the number of pairs of adjacent regions, containing the labels of the two adjacent regions.
+The plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Region Adjacency Graph'%}) works for both 2D and 3D images, and requires a label image as input. A typical input is the result of a watershed segmentation (see [Watershed Segmentation](MorphoLibJ#Watershed_segmentation )), eventually followed by [manual edition of the labels](MorphoLibJ#Label_Edition_plugin ). The output of the plugin is a results table with as many rows as the number of pairs of adjacent regions, containing the labels of the two adjacent regions.
 
 ## Binary and label image utilities
 
@@ -490,7 +490,7 @@ Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is us
 
 ### Label Edition plugin
 
-{% include thumbnail src='/images/pages/Label-Edition-plugin.png' title='Label Edition plugin overview.'%}To ease the processing of label images, [MorphoLibJ](MorphoLibJ "wikilink") provides the Label Edition plugin (available under {% include bc content='Plugins | MorphoLibJ | Labels | Label Edition'%}). This plugin contains a graphical user interface (GUI) where the users can perform the following set of editing tasks:
+{% include thumbnail src='/images/pages/Label-Edition-plugin.png' title='Label Edition plugin overview.'%}To ease the processing of label images, [MorphoLibJ](MorphoLibJ ) provides the Label Edition plugin (available under {% include bc content='Plugins | MorphoLibJ | Labels | Label Edition'%}). This plugin contains a graphical user interface (GUI) where the users can perform the following set of editing tasks:
 
   - Manually merge labels after their selection using the point selection tool (in 2D and 3D).
   - Apply morphological erosion, dilation, opening and closing with a square/cube of radius 1 as structuring element.
@@ -557,7 +557,7 @@ One advantage of this organization of the library and the use of public static m
 
 #### Segmentation pipeline prototype
 
-Let's see an example in a complete [Beanshell script](BeanShell_Scripting "wikilink") that takes the active 2D or 3D image and finds a reasonable segmentation combining a set of morphological operations (gradient, extended minima and watershed):
+Let's see an example in a complete [Beanshell script](BeanShell_Scripting ) that takes the active 2D or 3D image and finds a reasonable segmentation combining a set of morphological operations (gradient, extended minima and watershed):
 
 ``` java
 #@ ImagePlus(label="Input image",description="Image to segment") imp
@@ -615,7 +615,7 @@ resultImage.setSlice( imp.getCurrentSlice() );
 
 #### Label visualization in 3D viewer
 
-Making use of MorphoLibJ's label methods and the [ImageJ 3D Viewer](3D_Viewer "wikilink")'s visualization tools it is quite simple to create a script to display each label of an image as 3D surfaces of the corresponding colors provided by the image look-up table:
+Making use of MorphoLibJ's label methods and the [ImageJ 3D Viewer](3D_Viewer )'s visualization tools it is quite simple to create a script to display each label of an image as 3D surfaces of the corresponding colors provided by the image look-up table:
 
 ``` java
 #@ ImagePlus imp
@@ -696,20 +696,20 @@ You can browse the [javadoc](http://ijpb.github.io/MorphoLibJ/javadoc/) for more
 
 ## Installation
 
-  - In [ImageJ 1.x](ImageJ_1.x "wikilink"), download the [latest released jar](https://github.com/ijpb/MorphoLibJ/releases) into the *plugins* folder.
-  - In [ImageJ2](ImageJ2 "wikilink") (including [Fiji](Fiji "wikilink")), you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites "wikilink") the IJPB-plugins site to your list of update sites:
-    1.  Select {% include bc content='Help | Update...'%} from the menu to start the [updater](updater "wikilink").
+  - In [ImageJ 1.x](ImageJ_1.x ), download the [latest released jar](https://github.com/ijpb/MorphoLibJ/releases) into the *plugins* folder.
+  - In [ImageJ2](ImageJ2 ) (including [Fiji](Fiji )), you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites ) the IJPB-plugins site to your list of update sites:
+    1.  Select {% include bc content='Help | Update...'%} from the menu to start the [updater](updater ).
     2.  Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
     3.  Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
     4.  Click *Apply changes* and restart ImageJ.
 
 ## Citation
 
-Please note that [MorphoLibJ](MorphoLibJ "wikilink") is based on a publication. If you use it successfully for your research please be so kind to cite our work:
+Please note that [MorphoLibJ](MorphoLibJ ) is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
   - {% include publication content='MorphoLibJ' %}
 
-[MorphoLibJ](MorphoLibJ "wikilink")'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349/ijpb/MorphoLibJ).
+[MorphoLibJ](MorphoLibJ )'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349/ijpb/MorphoLibJ).
 
 ## References
 

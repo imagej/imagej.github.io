@@ -7,11 +7,11 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Mark Hiner ' title='Champion of ImageJ ' gravatar='02dba515add5d5c4991f6b93520d502c ' affiliation='UW-Madison [LOCI](LOCI "wikilink") ' loci='mark-hiner ' forum='hinerm ' github='hinerm ' stackoverflow='1027800/hinerm ' openhub='hinerm ' osrc='hinerm ' linkedin='pub/mark-hiner/63/984/8b2 ' %}Mark was a member of the core [ImageJ2](ImageJ2 "wikilink") development team at [LOCI](LOCI "wikilink") from 2011-2016, earning the title of Champion of ImageJ for his tireless enthusiasm and dedication to the community. He is co-founder of the [SCIFIO](SCIFIO "wikilink") project, a robust and extensible library for reading and writing scientific image file formats, and accessible foundation for image format processing. He also developed the [ImageJ-MATLAB](ImageJ-MATLAB "wikilink") project for [ImageJ](ImageJ "wikilink")/[MATLAB](MATLAB "wikilink") interoperability. Mark rejoined the ImageJ team in 2020.
+{% include user-box name='Mark Hiner ' title='Champion of ImageJ ' gravatar='02dba515add5d5c4991f6b93520d502c ' affiliation='UW-Madison [LOCI](LOCI ) ' loci='mark-hiner ' forum='hinerm ' github='hinerm ' stackoverflow='1027800/hinerm ' openhub='hinerm ' osrc='hinerm ' linkedin='pub/mark-hiner/63/984/8b2 ' %}Mark was a member of the core [ImageJ2](ImageJ2 ) development team at [LOCI](LOCI ) from 2011-2016, earning the title of Champion of ImageJ for his tireless enthusiasm and dedication to the community. He is co-founder of the [SCIFIO](SCIFIO ) project, a robust and extensible library for reading and writing scientific image file formats, and accessible foundation for image format processing. He also developed the [ImageJ-MATLAB](ImageJ-MATLAB ) project for [ImageJ](ImageJ )/[MATLAB](MATLAB ) interoperability. Mark rejoined the ImageJ team in 2020.
 
 ## My work at LOCI
 
-After working at [LOCI](LOCI "wikilink") for two years as a Research Assistant, Mark completed a M.S. degree in computer science and decided to stay on as a Research Intern. Until 2016 he worked as the lead developer on [SCIFIO](SCIFIO "wikilink"). His primary areas of interest within CS are artificial intelligence, robotics and programming languages.
+After working at [LOCI](LOCI ) for two years as a Research Assistant, Mark completed a M.S. degree in computer science and decided to stay on as a Research Intern. Until 2016 he worked as the lead developer on [SCIFIO](SCIFIO ). His primary areas of interest within CS are artificial intelligence, robotics and programming languages.
 
 You can follow his latest work [on GitHub](https://github.com/hinerm).
 

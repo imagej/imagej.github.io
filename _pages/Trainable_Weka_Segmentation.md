@@ -18,7 +18,7 @@ description: test description
 
 ## Introduction
 
-The [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") is a Fiji plugin that combines a collection of machine learning algorithms with a set of selected image features to produce pixel-based segmentations. [Weka](http://www.cs.waikato.ac.nz/ml/weka/) (Waikato Environment for Knowledge Analysis) can itself be called from the plugin. It contains a collection of visualization tools and algorithms for data analysis and predictive modeling, together with graphical user interfaces for easy access to this functionality. As described on their wikipedia site, the advantages of [Weka](http://www.cs.waikato.ac.nz/ml/weka/) include:
+The [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) is a Fiji plugin that combines a collection of machine learning algorithms with a set of selected image features to produce pixel-based segmentations. [Weka](http://www.cs.waikato.ac.nz/ml/weka/) (Waikato Environment for Knowledge Analysis) can itself be called from the plugin. It contains a collection of visualization tools and algorithms for data analysis and predictive modeling, together with graphical user interfaces for easy access to this functionality. As described on their wikipedia site, the advantages of [Weka](http://www.cs.waikato.ac.nz/ml/weka/) include:
 
   - freely availability under the [GNU General Public License](http://www.gnu.org/licenses/gpl.txt)
 
@@ -40,7 +40,7 @@ The main goal of this plugin is to work as a **bridge between the Machine Learni
 
 ## The Graphical User Interface
 
-{% include thumbnail src='/images/pages/Trainable-Weka-Segmentation-GUI.png' title='Example of the first look of the plugin window when using it on a TEM image'%} [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") runs on any 2D or 3D image (grayscale or color). To use 2D features, you need to select the menu command {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation'%}. For 3D features, call the plugin under {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation 3D'%}. Both commands will use the same GUI but offer different feature options in their settings.
+{% include thumbnail src='/images/pages/Trainable-Weka-Segmentation-GUI.png' title='Example of the first look of the plugin window when using it on a TEM image'%} [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) runs on any 2D or 3D image (grayscale or color). To use 2D features, you need to select the menu command {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation'%}. For 3D features, call the plugin under {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation 3D'%}. Both commands will use the same GUI but offer different feature options in their settings.
 
 By default, the plugin starts with two classes, i.e. it will produce **binary pixel classification**. The user can add traces to both classes using the whole set of [tools for ROI](https://imagej.net/docs/guide/userguide-19b.html#toc-Section-19) (region of interest) drawing available in Fiji. That includes rectangular, round rectangular, oval, elliptical, brush polygon and freehand selections. By default, the freehand selection tool (of 1 pixel width) is automatically selected.
 
@@ -60,7 +60,7 @@ If the training ends correctly, then the displayed image will be completely segm
 
 #### Toggle overlay
 
-{% include thumbnail src='/images/pages/AWS-Probability-maps.png' title='Example of resulting probability map displayed as a hyperstack'%} This button activates and deactivates the overlay of the result image. The transparency of the overlay image can be adjusted in the [Settings dialog](Advanced_Weka_Segmentation#Settings "wikilink").
+{% include thumbnail src='/images/pages/AWS-Probability-maps.png' title='Example of resulting probability map displayed as a hyperstack'%} This button activates and deactivates the overlay of the result image. The transparency of the overlay image can be adjusted in the [Settings dialog](Advanced_Weka_Segmentation#Settings ).
 
 #### Create result
 
@@ -106,7 +106,7 @@ With this button we can save the current trace information into a data file that
 
 #### Create new class
 
-The default number of classes of the plugin is two, but through this button we can increase up to an arbitrary number. The name of the new classes can be changed on the [Settings dialog](Trainable_Weka_Segmentation#Settings "wikilink").
+The default number of classes of the plugin is two, but through this button we can increase up to an arbitrary number. The name of the new classes can be changed on the [Settings dialog](Trainable_Weka_Segmentation#Settings ).
 
 #### Settings
 
@@ -154,14 +154,14 @@ a & b\\\\ c & d\\end{array}\\right)</math> are calculated thus:
 <!-- end list -->
 
   - **Mean, Variance, Median, Minimum, Maximum**: the pixels within a radius of \(\sigma\) pixels from the target pixel are subjected to the pertinent operation (mean/min etc.) and the target pixel is set to that value.
-  - **Anisotropic diffusion**: the [ anisotropic diffusion filtering](Anisotropic_Diffusion_2D "wikilink") from Fiji with \(20\) iterations, \(\sigma\) smoothing per iterations, \(a_{1}=0.10, 0.35\), \(a_{2}=0.9\), and an edge threshold set to the membrane size.
+  - **Anisotropic diffusion**: the [ anisotropic diffusion filtering](Anisotropic_Diffusion_2D ) from Fiji with \(20\) iterations, \(\sigma\) smoothing per iterations, \(a_{1}=0.10, 0.35\), \(a_{2}=0.9\), and an edge threshold set to the membrane size.
   - **Bilateral filter**: is very similar to the Mean filter but better preserves edges while averaging/blurring other parts of the image. The filter accomplishes this task by only averaging the values around the current pixel that are close in color value to the current pixel. The 'closeness' of other neighborhood pixels to the current pixels is determined by the specified threshold. I.e. for a value of 10 each pixel that contributes to the current mean have to be within 10 values of the current pixel. In our case, we combine spatial radius of \(5\) and \(10\), with a range radius of \(50\) and \(100\).
   - **Lipschitz filter**: from [Mikulas Stencel plugin](https://imagej.net/plugins/lipschitz/). This plugin implements Lipschitz cover of an image that is equivalent to a grayscale opening by a cone. The Lipschitz cover can be applied for the elimination of a slowly varying image background by subtraction of the lower Lipschitz cover (a top-hat procedure). A sequential double scan algorithm is used. We use down and top hats combination, with slope \(s = 5, 10, 15, 20, 25\).
-  - **Kuwahara filter**: another noise-reduction filter that preserves edges. This is a version of the [ Kuwahara filter that uses linear kernels](Linear_Kuwahara "wikilink") rather than square ones. We use the membrane patch size as kernel size, 30 angles and the three different criteria (Variance, Variance / Mean and Variance / Mean^2).
-  - **Gabor filter**: at the moment this option may take some time and memory because it generates a very diverse range of {% include wikipedia title='Gabor filter' text='Gabor filters'%} (**22**). *' This may undergo changes in the future*'. The implementation details are included in this [script](Gabor_Filter_script "wikilink"). The Gabor filter is an edge detection and texture filter, which convolves several kernels at different angles with an image. Each point in a kernel is calculated as \(\frac{\cos \left(2\pi f \frac{x_p}{s_x}+\psi \right) e^{-0.5 \left( \frac{x_p^2}{\sigma_x^2} + \frac{y_p^2}{\sigma_y^2} \right)} }{ 2\pi \sigma_x \sigma_y }\). Gabor filters are band-pass filters and therefore implement a frequency transformation.
-  - **Derivatives filter**: calculates high order derivatives of the input image (\(\frac{d^4}{dx^2dy^2},\frac{d^6}{dx^3dy^3},\frac{d^8}{dx^4dy^4},\frac{d^{10}}{dx^5dy^5}\)) using [FeatureJ](FeatureJ "wikilink") (it requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater).
-  - **Laplacian filter**: computes the Laplacian of the input image using [FeatureJ](FeatureJ "wikilink") (it requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater). It uses smoothing scale \(\sigma\).
-  - **Structure filter**: calculates for all elements in the input image, the eigenvalues (smallest and largest) of the so-called structure tensor using [FeatureJ](FeatureJ "wikilink") (it requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater). It uses smoothing scale \(\sigma\) and integration scales 1 and 3.
+  - **Kuwahara filter**: another noise-reduction filter that preserves edges. This is a version of the [ Kuwahara filter that uses linear kernels](Linear_Kuwahara ) rather than square ones. We use the membrane patch size as kernel size, 30 angles and the three different criteria (Variance, Variance / Mean and Variance / Mean^2).
+  - **Gabor filter**: at the moment this option may take some time and memory because it generates a very diverse range of {% include wikipedia title='Gabor filter' text='Gabor filters'%} (**22**). *' This may undergo changes in the future*'. The implementation details are included in this [script](Gabor_Filter_script ). The Gabor filter is an edge detection and texture filter, which convolves several kernels at different angles with an image. Each point in a kernel is calculated as \(\frac{\cos \left(2\pi f \frac{x_p}{s_x}+\psi \right) e^{-0.5 \left( \frac{x_p^2}{\sigma_x^2} + \frac{y_p^2}{\sigma_y^2} \right)} }{ 2\pi \sigma_x \sigma_y }\). Gabor filters are band-pass filters and therefore implement a frequency transformation.
+  - **Derivatives filter**: calculates high order derivatives of the input image (\(\frac{d^4}{dx^2dy^2},\frac{d^6}{dx^3dy^3},\frac{d^8}{dx^4dy^4},\frac{d^{10}}{dx^5dy^5}\)) using [FeatureJ](FeatureJ ) (it requires enabling the [ImageScience](ImageScience ) update site in the updater).
+  - **Laplacian filter**: computes the Laplacian of the input image using [FeatureJ](FeatureJ ) (it requires enabling the [ImageScience](ImageScience ) update site in the updater). It uses smoothing scale \(\sigma\).
+  - **Structure filter**: calculates for all elements in the input image, the eigenvalues (smallest and largest) of the so-called structure tensor using [FeatureJ](FeatureJ ) (it requires enabling the [ImageScience](ImageScience ) update site in the updater). It uses smoothing scale \(\sigma\) and integration scales 1 and 3.
   - **Entropy**: draws a circle of radius \(r\) around each pixel; gets the histogram of that circle split in numBins chunks; then calculates the entropy as \(\sum_{p~\mathrm{in}~\mathrm{histogram}} -p*\mathrm{log}_2(p)\), where \(p\) is the probability of each chunk in the histogram. numBins is equal to \(32, 64, 128, 256\). \(r\) is equal to \(\sigma\).
   - **Neighbors**: shifts the image in 8 directions by an certain number of pixel, \(\sigma\). Therefore creates \(8n\) feature images.
 
@@ -169,18 +169,18 @@ When using grayscale images, the input image will be also included as a feature.
 
 The detailed implementation of these 2D filters can be found in the [source code](https://github.com/fiji/Trainable_Segmentation/blob/master/src/main/java/trainableSegmentation/FeatureStack.java).
 
-**<span style="color:#f80000">NOTE**: The features named *Derivatives*, *Laplacian* and *Structure* belong to the [ImageScience](ImageScience "wikilink") suite and need to be activated [by enabling the ImageScience update site in the updater](https://imagej.net/How_to_follow_a_3rd_party_update_site).
+**<span style="color:#f80000">NOTE**: The features named *Derivatives*, *Laplacian* and *Structure* belong to the [ImageScience](ImageScience ) suite and need to be activated [by enabling the ImageScience update site in the updater](https://imagej.net/How_to_follow_a_3rd_party_update_site).
 
 ##### Training features (3D)
 
 {% include thumbnail src='/images/pages/TWS-3D-Settings-dialog.png' title='Settings dialog for the Trainable Weka Segmentation 3D plugin.'%}When calling the plugin from the menu command {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation 3D'%} the set of available image features will be as follows:
 
   - **Gaussian blur**: performs \(n\) individual 3D convolutions with Gaussian kernels with the normal \(n\) variations of \(\sigma\). The larger the radius the more blurred the image becomes until the pixels are homogeneous.
-  - **Hessian**: using [FeatureJ](FeatureJ "wikilink") it computes for each image element (voxel) the eigenvalues of the Hessian, which can be used for example to discriminate locally between plate-like, line-like, and blob-like image structures. More specifically, it calculates the magnitude of the largest, middle and smallest eigenvalue of the Hessian tensor. It requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater. It uses smoothing scale \(\sigma\).
-  - **Derivatives**: calculates high order derivatives of the input image (\(\frac{d^4}{dx^2dy^2dz^2},\frac{d^6}{dx^3dy^3dz^3},\frac{d^8}{dx^4dy^4dz^4},\frac{d^{10}}{dx^5dy^5dz^5}\)) using [FeatureJ](FeatureJ "wikilink") (it requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater).
-  - **Laplacian**: computes the Laplacian of the input image using [FeatureJ](FeatureJ "wikilink") (it requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater). It uses smoothing scale \(\sigma\).
-  - **Structure**: calculates for all elements in the input image, the eigenvalues (smallest and largest) of the so-called structure tensor using [FeatureJ](FeatureJ "wikilink") (it requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater). It uses smoothing scale \(\sigma\) and integration scales 1 and 3.
-  - **Edges**: detects edges using Canny edge detection, which involves computation of the gradient magnitude, suppression of locally non-maximum gradient magnitudes, and (hysteresis) thresholding. Again, this feature uses [FeatureJ](FeatureJ "wikilink") so it requires enabling the [ImageScience](ImageScience "wikilink") update site in the updater. It uses smoothing scale \(\sigma\).
+  - **Hessian**: using [FeatureJ](FeatureJ ) it computes for each image element (voxel) the eigenvalues of the Hessian, which can be used for example to discriminate locally between plate-like, line-like, and blob-like image structures. More specifically, it calculates the magnitude of the largest, middle and smallest eigenvalue of the Hessian tensor. It requires enabling the [ImageScience](ImageScience ) update site in the updater. It uses smoothing scale \(\sigma\).
+  - **Derivatives**: calculates high order derivatives of the input image (\(\frac{d^4}{dx^2dy^2dz^2},\frac{d^6}{dx^3dy^3dz^3},\frac{d^8}{dx^4dy^4dz^4},\frac{d^{10}}{dx^5dy^5dz^5}\)) using [FeatureJ](FeatureJ ) (it requires enabling the [ImageScience](ImageScience ) update site in the updater).
+  - **Laplacian**: computes the Laplacian of the input image using [FeatureJ](FeatureJ ) (it requires enabling the [ImageScience](ImageScience ) update site in the updater). It uses smoothing scale \(\sigma\).
+  - **Structure**: calculates for all elements in the input image, the eigenvalues (smallest and largest) of the so-called structure tensor using [FeatureJ](FeatureJ ) (it requires enabling the [ImageScience](ImageScience ) update site in the updater). It uses smoothing scale \(\sigma\) and integration scales 1 and 3.
+  - **Edges**: detects edges using Canny edge detection, which involves computation of the gradient magnitude, suppression of locally non-maximum gradient magnitudes, and (hysteresis) thresholding. Again, this feature uses [FeatureJ](FeatureJ ) so it requires enabling the [ImageScience](ImageScience ) update site in the updater. It uses smoothing scale \(\sigma\).
   - **Difference of Gaussian**: calculates two {% include wikipedia title='Gaussian blur' text='Gaussian blur'%} images from the original image and subtracts one from the other. \(\sigma\) values are varied as usual, so \(\frac{n(n-1)}{2}\) feature images are added to the stack.
   - **Minimum, Maximum, Mean, Variance, Median**: the voxels within a radius of \(\sigma\) voxels from the target pixel are subjected to the pertinent operation (mean/min etc.) and the target voxel is set to that value.
 
@@ -195,9 +195,9 @@ The detailed implementation of these 2D filters can be found in the [source code
 
 ##### Classifier options
 
-{% include thumbnail src='/images/pages/AWS-Classifier-selection.png' title='Classifier selection in the Trainable Weka Segmentation [Settings dialog](Advanced_Weka_Segmentation#Settings "wikilink").'%} The default classifier is [FastRandomForest](https://code.google.com/p/fast-random-forest/), a **multi-threaded** version of {% include wikipedia title='Random forest' text='random forest'%} by [Fran Supek](https://scholar.google.com/citations?user=Rz3rPeUAAAAJ), initialized with 200 trees and 2 random features per node. However the user can select any available classifier in the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
+{% include thumbnail src='/images/pages/AWS-Classifier-selection.png' title='Classifier selection in the Trainable Weka Segmentation [Settings dialog](Advanced_Weka_Segmentation#Settings ).'%} The default classifier is [FastRandomForest](https://code.google.com/p/fast-random-forest/), a **multi-threaded** version of {% include wikipedia title='Random forest' text='random forest'%} by [Fran Supek](https://scholar.google.com/citations?user=Rz3rPeUAAAAJ), initialized with 200 trees and 2 random features per node. However the user can select any available classifier in the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
 
-**If you do not find the classifier you want**, you might have to install the Weka package that includes it. For that, you need to launch the Weka GUI Chooser (by clicking on the Weka button of the left panel of the plugin GUI) and use the [ Weka Package Manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink") (under {% include bc content='Tools | Package manager'%}). For a step-by-step description on how to install new packages, have a look at this [tutorial](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink").
+**If you do not find the classifier you want**, you might have to install the Weka package that includes it. For that, you need to launch the Weka GUI Chooser (by clicking on the Weka button of the left panel of the plugin GUI) and use the [ Weka Package Manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers ) (under {% include bc content='Tools | Package manager'%}). For a step-by-step description on how to install new packages, have a look at this [tutorial](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers ).
 
 ##### Class names
 
@@ -224,11 +224,11 @@ The Weka button launches the Weka GUI Chooser, where we can start all the applic
   - **KnowledgeFlow**: this environment supports essentially the same functions as the Explorer but with a drag-and-drop interface. One advantage is that it supports incremental learning.
   - **SimpleCLI**: provides a simple command-line interface that allows direct execution of [Weka](http://www.cs.waikato.ac.nz/ml/weka/) commands for operating systems that do not provide their own command line interface.
 
-For a complete step-by-step description on how to compare classifiers for image segmentation using the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) Explorer, have a look at the [Trainable Weka Segmentation - How to compare classifiers‎](Trainable_Weka_Segmentation_-_How_to_compare_classifiers‎ "wikilink") tutorial.
+For a complete step-by-step description on how to compare classifiers for image segmentation using the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) Explorer, have a look at the [Trainable Weka Segmentation - How to compare classifiers‎](Trainable_Weka_Segmentation_-_How_to_compare_classifiers‎ ) tutorial.
 
 ### Macro language compatibility
 
-[Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") is completely compatible with the popular [ImageJ macro language](https://imagej.net/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file. {% include thumbnail src='/images/pages/AWS-macro-recording.png' title='Example of macro recording of the Trainable Weka Segmentation tools.'%}
+[Trainable Weka Segmentation](Trainable_Weka_Segmentation ) is completely compatible with the popular [ImageJ macro language](https://imagej.net/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file. {% include thumbnail src='/images/pages/AWS-macro-recording.png' title='Example of macro recording of the Trainable Weka Segmentation tools.'%}
 
 The complete list of commands is as follows:
 
@@ -504,13 +504,13 @@ call("trainableSegmentation.Weka_Segmentation.getProbability");
 
 The plugin GUI is independent from the plugin methods. The methods are implemented in a separate file in a library-style fashion, so they can be called from any other Fiji plugin without having to interact with the GUI. This facilitates its integration with other plugins and allows easy scripting.
 
-For examples on how to use the plugin methods from scripts, have a look at the [Trainable Weka Segmentation scripting](Scripting_the_Trainable_Segmentation "wikilink") page.
+For examples on how to use the plugin methods from scripts, have a look at the [Trainable Weka Segmentation scripting](Scripting_the_Trainable_Segmentation ) page.
 
 The **[API](http://javadoc.scijava.org/Fiji/?trainableSegmentation/package-summary.html) of the WekaSegmentation** library is available [here](http://javadoc.scijava.org/Fiji/?trainableSegmentation/package-tree.html).
 
 ## Versatility
 
-{% include thumbnail src='/images/pages/TWS-application-examples.png' title='\'\'\'Examples of application of Trainable Weka Segmentation\'\'\'. From left to right and from top to bottom: original image of the [Berkeley Segmentation Dataset (Test Image \#42049 (color)](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300/html/dataset/images/color/42049.html)), probability of boundaries after training, semantic segmentation into 3 classes (sky, tree, eagle), and detected object using the probability maps of the semantic segmentation and some post-processing ([Level Sets](Level_Sets "wikilink") from maximum and bounding box selection).'%} As a **pixel classifier**, the Trainable Weka Segmentation presents a wide range of applications such as [boundary detection](https://en.wikipedia.org/wiki/Edge_detection), semantic segmentation, or [object detection](https://en.wikipedia.org/wiki/Object_detection) and localization. All of them at the distance of a few clicks on the plugin GUI and sometimes in combination with other Fiji tools or plugins.
+{% include thumbnail src='/images/pages/TWS-application-examples.png' title='\'\'\'Examples of application of Trainable Weka Segmentation\'\'\'. From left to right and from top to bottom: original image of the [Berkeley Segmentation Dataset (Test Image \#42049 (color)](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300/html/dataset/images/color/42049.html)), probability of boundaries after training, semantic segmentation into 3 classes (sky, tree, eagle), and detected object using the probability maps of the semantic segmentation and some post-processing ([Level Sets](Level_Sets ) from maximum and bounding box selection).'%} As a **pixel classifier**, the Trainable Weka Segmentation presents a wide range of applications such as [boundary detection](https://en.wikipedia.org/wiki/Edge_detection), semantic segmentation, or [object detection](https://en.wikipedia.org/wiki/Object_detection) and localization. All of them at the distance of a few clicks on the plugin GUI and sometimes in combination with other Fiji tools or plugins.
 
 To see **who is using Trainable Weka Segmentation** and its multiple applications, you can have a look at [these publications](https://scholar.google.es/scholar?q=%22Trainable+Weka+Segmentation%22+OR+%22Advanced+Weka+Segmentation%22&btnG=&hl=es&as_sdt=0%2C5).
 
@@ -520,7 +520,7 @@ Weka will automatically load plugins installed in `~/wekafiles`. If you already 
 
 ## Weka core version
 
-Since the [3.2.0 release](https://github.com/fiji/Trainable_Segmentation/releases/tag/v3.2.0), [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") uses Weka 3.9.0+ - development version. If you have problems loading models from previous versions of the plugin/library, most likely you need to recreate the models using the new version (see \[http://forums.pentaho.com/showthread.php?204301-New-Weka-3-6-14-3-8-0-and-3-9-0-releases\! note 1 of the Weka official release\]).
+Since the [3.2.0 release](https://github.com/fiji/Trainable_Segmentation/releases/tag/v3.2.0), [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) uses Weka 3.9.0+ - development version. If you have problems loading models from previous versions of the plugin/library, most likely you need to recreate the models using the new version (see \[http://forums.pentaho.com/showthread.php?204301-New-Weka-3-6-14-3-8-0-and-3-9-0-releases\! note 1 of the Weka official release\]).
 
 If you absolutely need to reuse an old model, you can transform it to the new version thanks to a [model migrator tool](http://www.cs.waikato.ac.nz/ml/weka/downloading.html) provided by the Weka developers. For more information, check this [post in the ImageJ forum](http://forum.imagej.net/t/weka-segmentation-error-after-update-29-09-16/2898/24?u=iarganda).
 
@@ -530,11 +530,11 @@ For all **questions, suggestions, bug reports and problems** related to the Trai
 
 ## Citation
 
-Please note that [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") is based on a publication. If you use it successfully for your research please be so kind to cite our work:
+Please note that [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
   - {% include publication content='Trainable Weka Segmentation' %}
 
-The [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") code has its own citable [DOI](http://dx.doi.org/10.5281/zenodo.59290).
+The [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) code has its own citable [DOI](http://dx.doi.org/10.5281/zenodo.59290).
 
 ## License
 

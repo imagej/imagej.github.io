@@ -12,33 +12,33 @@ ImageJ has been extended with thousands of {% include wikipedia title='Plug-in (
 
 ## Available plugins
 
-{% include biginfo-box content='You can browse the [list of available plugins](_Category_Plugins "wikilink").' %}
+{% include biginfo-box content='You can browse the [list of available plugins](_Category_Plugins ).' %}
 
 ## Tiers of plugins
 
 There are four tiers of plugins:
 
 1.  Core ImageJ plugins, bundled with the base ImageJ distribution. (more than 1000 as of this writing)
-2.  Core Fiji plugins, bundled with the [Fiji](Fiji "wikilink") distribution of ImageJ. (nearly 1000 additional plugins as of this writing)
-3.  Plugins installable from an ImageJ [update site](update_site "wikilink").
+2.  Core Fiji plugins, bundled with the [Fiji](Fiji ) distribution of ImageJ. (nearly 1000 additional plugins as of this writing)
+3.  Plugins installable from an ImageJ [update site](update_site ).
 4.  Additional plugins available from various online sources, which must be manually installed.
 
 ## Installing plugins
 
-The ImageJ [Updater](Updater "wikilink") is the best way to install and update plugins. Simply [add the update site](Update_Sites "wikilink") containing your plugins of interest, and they will be installed automatically for you. If the plugin is not available via update site, but packaged as *.jar* file, or as unpackaged directory with *.class* files, see [Installing plugins manually](#Installing_plugins_manually "wikilink") below.
+The ImageJ [Updater](Updater ) is the best way to install and update plugins. Simply [add the update site](Update_Sites ) containing your plugins of interest, and they will be installed automatically for you. If the plugin is not available via update site, but packaged as *.jar* file, or as unpackaged directory with *.class* files, see [Installing plugins manually](#Installing_plugins_manually "wikilink") below.
 
 ## Advanced topics
 
 ### Installing plugins manually
 
-If the plugin you want is not distributed via an ImageJ update site, please encourage the plugin's maintainer to do so\! Anyone can create a [personal update site](personal_update_site "wikilink") as well as additional dedicated update sites (for a particular plugin) hosted on [sites.imagej.net](http://sites.imagej.net/), to easily share and maintain updated plugins.
+If the plugin you want is not distributed via an ImageJ update site, please encourage the plugin's maintainer to do so\! Anyone can create a [personal update site](personal_update_site ) as well as additional dedicated update sites (for a particular plugin) hosted on [sites.imagej.net](http://sites.imagej.net/), to easily share and maintain updated plugins.
 
 In the meantime, to install a plugin manually, follow the plugin's installation instructions, if any. The plugin will consist of one or more files which must be downloaded and (typically) placed in ImageJ's `plugins` folder:
 
   - If the file suffix is `.jar` or `.class` then it is usually enough to simply restart ImageJ after dropping the file into `plugins`.
   - If the file suffix is `.java` then you typically must execute the [Compile and Run](https://imagej.net/docs/guide/146-31.html#toc-Subsection-31.5) command on the file to first compile it to a `.class`. After running this command once and restarting ImageJ, the plugin will become available in ImageJ's `Plugins` menu.
 
-See also the [Installing 3rd party plugins](Installing_3rd_party_plugins "wikilink") guide.
+See also the [Installing 3rd party plugins](Installing_3rd_party_plugins ) guide.
 
 ### User-specific plugins
 

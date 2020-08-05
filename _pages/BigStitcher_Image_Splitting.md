@@ -21,7 +21,7 @@ We support *virtual* splitting of datasets into smaller blocks in BigStitcher. T
 
 The splitting functionality in **not included in the BigStitcher UI**. To split a dataset, you have to select {% include bc content='Plugins|BigStitcher|Tools|Split Images'%} in the **Fiji Main Menu**.
 
-First, you will be asked for the **dataset (XML project file) to split**. Select one as you would when [opening an existing dataset](BigStitcher_Open_existing "wikilink").
+First, you will be asked for the **dataset (XML project file) to split**. Select one as you would when [opening an existing dataset](BigStitcher_Open_existing ).
 
 After selecting the dataset to split and clicking **OK**, the following dialog will appear:
 
@@ -41,4 +41,4 @@ Here, you can set
 
 You can the open the split dataset (XML) as you would any other dataset and reconstruct it in BigStitcher.
 
-Go back to the [main page](BigStitcher#Documentation "wikilink")
+Go back to the [main page](BigStitcher#Documentation )

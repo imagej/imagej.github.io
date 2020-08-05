@@ -7,7 +7,7 @@ categories: News
 description: test description
 ---
 
-Video recordings of our [Introduction to Fiji](http://imagej.github.io/presentations/fiji-introduction/#/), [Segmentation in Fiji](http://imagej.github.io/presentations/fiji-segmentation/#/), and [Scripting with Fiji](http://imagej.github.io/presentations/fiji-scripting/#/) workshops are now available. You can find the links to both the slides and the videos from the [Presentations](Presentations "wikilink") page of the wiki.
+Video recordings of our [Introduction to Fiji](http://imagej.github.io/presentations/fiji-introduction/#/), [Segmentation in Fiji](http://imagej.github.io/presentations/fiji-segmentation/#/), and [Scripting with Fiji](http://imagej.github.io/presentations/fiji-scripting/#/) workshops are now available. You can find the links to both the slides and the videos from the [Presentations](Presentations ) page of the wiki.
 
 Feel free to pass along these links to those who may find them helpful.
 

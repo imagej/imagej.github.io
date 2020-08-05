@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2009-09-30 - Upcoming release: Fiji Plzen](2009-09-30_-_Upcoming_release__Fiji_Plzen "wikilink")
+1.  REDIRECT [2009-09-30 - Upcoming release: Fiji Plzen](2009-09-30_-_Upcoming_release__Fiji_Plzen )

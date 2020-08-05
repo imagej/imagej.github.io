@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Using the Script Editor](Using_the_Script_Editor "wikilink")
+1.  REDIRECT [Using the Script Editor](Using_the_Script_Editor )

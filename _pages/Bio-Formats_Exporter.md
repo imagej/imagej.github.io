@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Bio-Formats\#Bio-Formats Exporter](Bio-Formats#Bio-Formats_Exporter "wikilink")
+1.  REDIRECT [Bio-Formats\#Bio-Formats Exporter](Bio-Formats#Bio-Formats_Exporter )

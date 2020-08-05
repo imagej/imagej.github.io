@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='llamero ' repo='Quiver\_Plot ' %}
 {% endcapture %}
-{% include info-box name='Quiver Plot ' software='plugin ' author=author maintainer=maintainer source=source released='January 11<sup>th</sup>, 2017 ' latest-version='March 17<sup>th</sup>, 2017 (v0.2.0) ' status='stable, active ' category='[Visualization](_Category_Visualization "wikilink") ' %}
+{% include info-box name='Quiver Plot ' software='plugin ' author=author maintainer=maintainer source=source released='January 11<sup>th</sup>, 2017 ' latest-version='March 17<sup>th</sup>, 2017 (v0.2.0) ' status='stable, active ' category='[Visualization](_Category_Visualization ) ' %}
 
 ## Introduction
 
@@ -43,19 +43,19 @@ This plugin is also recordable within ImageJ, and can be implemented as part of 
 
 ## Installing the Quiver Plot Plugin
 
-The Quiver Plot plugin is part of the [UCB Vision Sciences](UCB_Vision_Sciences "wikilink") library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites "wikilink") the UCB Vision Sciences update site:
+The Quiver Plot plugin is part of the [UCB Vision Sciences](UCB_Vision_Sciences ) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites ) the UCB Vision Sciences update site:
 
 1\) Select {% include bc content='Help | Update...'%} from the Fiji menu to start the updater.
 
 2\) Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
 
-3\) Activate the [UCB Vision Sciences](UCB_Vision_Sciences "wikilink") update site and close the dialog. Now you should see additional jar files for download.
+3\) Activate the [UCB Vision Sciences](UCB_Vision_Sciences ) update site and close the dialog. Now you should see additional jar files for download.
 
 4\) Click *Apply changes* and restart Fiji.
 
 You should now find the plugin under the sub-menu {% include bc content='Plugins |UCB Vision Sciences | Quiver Plot'%}.
 
-**Note**: Quiver Plot is only one of the plugins included in the [UCB Vision Sciences](UCB_Vision_Sciences "wikilink") suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
+**Note**: Quiver Plot is only one of the plugins included in the [UCB Vision Sciences](UCB_Vision_Sciences ) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
 ## Acknowledgements
 

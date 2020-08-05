@@ -57,7 +57,7 @@ Note that all the scripts of this page are links from https://github.com/imagej/
 
 # Resources
 
-  - [Jython Scripting](Jython_Scripting "wikilink")
-  - [Jython Examples](Jython_Scripting_Examples "wikilink")
+  - [Jython Scripting](Jython_Scripting )
+  - [Jython Examples](Jython_Scripting_Examples )
 
    

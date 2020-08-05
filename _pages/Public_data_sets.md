@@ -34,7 +34,7 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 
   -   
     30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
-    **The challenge**: use this data set to train machine learning software for the purpose of automatic segmentation of neural structures in ssTEM. More information in the [ 2012 open competition page](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012 "wikilink").
+    **The challenge**: use this data set to train machine learning software for the purpose of automatic segmentation of neural structures in ssTEM. More information in the [ 2012 open competition page](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012 ).
 
 <!-- end list -->
 
@@ -68,7 +68,7 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
   -   
     4D data set, kindly provided by Dirk Sieger and [Francesca Peri](http://www.embl.de/research/units/dev_biology/peri/), EMBL.![Macrophages in 4D](/images/pages/Migrating-macrophages.gif "Macrophages in 4D")
     **The challenge**: trace the macrophages in 4D, and measure their shape volumes, surfaces, positions and pixel value intensities.
-    The file is a tif hyperstack that can be loaded directly into the [3D Viewer](3D_Viewer "wikilink").
+    The file is a tif hyperstack that can be loaded directly into the [3D Viewer](3D_Viewer ).
     The key idea is to setup the tracking system so that it requires minimal user interaction, and is general. For example, a user clicks on one cell in one time point, and the program should find all other time points of the same cell. Then the program should learn about the statistics of that cell, and offer the means to automatically find all other cells in the volume and track them as well. In summary, a machine learning approach to 4D tracking.
 
 <!-- end list -->

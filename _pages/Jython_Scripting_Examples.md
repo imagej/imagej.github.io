@@ -7,13 +7,13 @@ categories: Scripting,Jython
 description: test description
 ---
 
-{% include info-box content='This page is a copy of [Jython Scripting](Jython_Scripting "wikilink"). The original wiki page is in a rewrite progress. When rewriting [Jython Scripting](Jython_Scripting "wikilink") is finished, this wiki page will be shortened to only contain Jython code examples.' %}
+{% include info-box content='This page is a copy of [Jython Scripting](Jython_Scripting ). The original wiki page is in a rewrite progress. When rewriting [Jython Scripting](Jython_Scripting ) is finished, this wiki page will be shortened to only contain Jython code examples.' %}
 
 {% include learn content='scripting' %}[Jython](http://www.jython.org/) is an implementation of the [Python programming language](https://www.python.org/) designed to run on the Java platform.
 
 ## Quickstart
 
-  - Press {% include key content='\[' %} to bring up the [Script Editor](Script_Editor "wikilink").
+  - Press {% include key content='\[' %} to bring up the [Script Editor](Script_Editor ).
   - Select an example Jython script from the {% include bc content='Templates | \[by language\] | Python'%} menu.
   - Press {% include key content='Ctrl|R' %} to run the script\!
 
@@ -21,7 +21,7 @@ description: test description
 
 The interpreter provides a screen and a prompt. Type any jython code on the prompt to interact with ImageJ.
 
-Launch it from {% include bc content='Plugins | Scripting | Jython Interpreter'%}. See [Scripting Help](Scripting_Help "wikilink") for all keybindings, and also [Scripting comparisons](Scripting_comparisons "wikilink").
+Launch it from {% include bc content='Plugins | Scripting | Jython Interpreter'%}. See [Scripting Help](Scripting_Help ) for all keybindings, and also [Scripting comparisons](Scripting_comparisons ).
 
 
 {% capture  content %}
@@ -553,7 +553,7 @@ new_imp = ImagePlus("Normalized " + imp.title, new_stack)
 new_imp.show()
 ```
 
-Notice that this second approach is much slower: accessing every pixel from jython has a high cost. If you would like to do very fast pixel-level manipulations, use java or [Clojure](Clojure_Scripting "wikilink").
+Notice that this second approach is much slower: accessing every pixel from jython has a high cost. If you would like to do very fast pixel-level manipulations, use java or [Clojure](Clojure_Scripting ).
 
 ### Subtract the minimal value to an image
 
@@ -613,7 +613,7 @@ The stacks are accessed in a virtual way, so even 1000 (one thousand) stacks wil
 
 One could easily add more color channels. But there are already lots.
 
-The script uses [Imglib](Imglib "wikilink") scripting to normalize images and generate the color composite. See this [imglib scripting tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/#s10) for in-depth explanations.
+The script uses [Imglib](Imglib ) scripting to normalize images and generate the color composite. See this [imglib scripting tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/#s10) for in-depth explanations.
 
 ![Corti-multi-channel.png](/images/pages/Corti-multi-channel.png "Corti-multi-channel.png")
 
@@ -1218,7 +1218,7 @@ for i in range(0, nseries):
 
 First note that the FFMPEG I/O plugin was a proof-of-concept that is completely **unmaintained**.
 
-Then open the [Fiji Updater](Fiji_Updater "wikilink"), push the "Manage update sites" at the bottom left of the dialog, and install the [FFMPEG](https://fiji.sc/~schindelin/ffmpeg-plugins/) plugin by {% include person content='Schindelin' %} by ticking its checkbox, as [explained in more detail here](How_to_follow_a_3rd_party_update_site "wikilink").
+Then open the [Fiji Updater](Fiji_Updater ), push the "Manage update sites" at the bottom left of the dialog, and install the [FFMPEG](https://fiji.sc/~schindelin/ffmpeg-plugins/) plugin by {% include person content='Schindelin' %} by ticking its checkbox, as [explained in more detail here](How_to_follow_a_3rd_party_update_site ).
 
 See also the Java source code for the {% include github repo='fiji ' tag='8164ae68 ' path='native/FFMPEG\_IO/plugin/src/main/java/fiji/ffmpeg/IO.java ' label='IO ' %} class from the [FFMPEG plugin source code site](https://github.com/fiji/fiji/tree/8164ae68/native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/).
 
@@ -1823,7 +1823,7 @@ w.subtract(img, 10)
 imp.updateAndDraw()
 ```
 
-Of course the Weaver is a java library, and may be used from any scripting language such as [Javascript](Javascript_Scripting "wikilink"), [JRuby](JRuby_Scripting "wikilink"), and [others](_Category_Scripting "wikilink").
+Of course the Weaver is a java library, and may be used from any scripting language such as [Javascript](Javascript_Scripting ), [JRuby](JRuby_Scripting ), and [others](_Category_Scripting ).
 
 All the above is inspired by the [Scientific Python Weaver, or scipy Weaver](http://www.scipy.org/Cookbook/Weave), which inlines C code inside a python file.
 
@@ -2032,6 +2032,6 @@ Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just
 # See also
 
   - Albert Cardona's crash course in [Jython scripting with Fiji](http://www.ini.uzh.ch/~acardona/fiji-tutorial/index.html).
-  - Jython for [TrakEM2 Scripting](TrakEM2_Scripting "wikilink").
+  - Jython for [TrakEM2 Scripting](TrakEM2_Scripting ).
 
  

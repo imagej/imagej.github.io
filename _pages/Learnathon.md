@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Learnathon\_2019](Learnathon_2019 "wikilink")
+1.  REDIRECT [Learnathon\_2019](Learnathon_2019 )

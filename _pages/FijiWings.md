@@ -32,7 +32,7 @@ A packaged version of Fiji for both MacOS and Windows are available for download
 
 ### Feedback
 
-Please report any bugs that you find with Fiji's {% include bc content='Help | Report a Bug'%} menu option. For other feedback please email *dobensl* at *umkc.edu*. There are other ways of giving feedback on Fiji (e.g. the mailing lists, IRC, etc.) listed at [Help](Help "wikilink").
+Please report any bugs that you find with Fiji's {% include bc content='Help | Report a Bug'%} menu option. For other feedback please email *dobensl* at *umkc.edu*. There are other ways of giving feedback on Fiji (e.g. the mailing lists, IRC, etc.) listed at [Help](Help ).
 
 ### Citing FijiWings
 

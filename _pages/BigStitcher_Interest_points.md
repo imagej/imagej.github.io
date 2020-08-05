@@ -9,16 +9,16 @@ description: test description
 
 ## Overview
 
-Many processing steps of BigStitcher and [Multiview-Reconstruction](Multiview-Reconstruction "wikilink") rely on the detection of **Interest Points**, i.e. bright or dark spots, in the images. The classical example is the alignment of multi-angle views by matching corresponding interest points in two images and aligning the points, and thus the images, to each other.
+Many processing steps of BigStitcher and [Multiview-Reconstruction](Multiview-Reconstruction ) rely on the detection of **Interest Points**, i.e. bright or dark spots, in the images. The classical example is the alignment of multi-angle views by matching corresponding interest points in two images and aligning the points, and thus the images, to each other.
 
 In **Multiview Mode**, interest point detection can be started by selecting the desired views, right-clicking and selecting the {% include bc content='Processing|Detect Interest Points...'%} option in the main menu.
 
 Other uses of interest points are:
 
-  - Expert-mode stitching via Interest Points (click [here](BigStitcher_Advanced_stitching#Interest_point-based_shift_calculation "wikilink") for details)
-  - Affine Refinement of Tile registrations and Chromatic aberration correction via ICP (click [here](BigStitcher_ICP_refinement "wikilink") for details)
+  - Expert-mode stitching via Interest Points (click [here](BigStitcher_Advanced_stitching#Interest_point-based_shift_calculation ) for details)
+  - Affine Refinement of Tile registrations and Chromatic aberration correction via ICP (click [here](BigStitcher_ICP_refinement ) for details)
 
-Furthermore, detecting sub-diffraction-sized beads is the default way of extracting a [Point Spread Function (PSF)](BigStitcher_PSF "wikilink") for [(MultiView) Deconvolution](BigStitcher_Deconvolution "wikilink").
+Furthermore, detecting sub-diffraction-sized beads is the default way of extracting a [Point Spread Function (PSF)](BigStitcher_PSF ) for [(MultiView) Deconvolution](BigStitcher_Deconvolution ).
 
 ### Basic Parameters
 
@@ -58,7 +58,7 @@ If you chose to **Limit amount of detections** in the previous dialog, you will 
   - **Weakest (above threshold)**: keep only the "weakest" detections that were not excluded via the threshold (lowest maxima or highest minima)
   - **Around median (of those above threshold)**: keep only the detections closest to the median absolute intensity (of the detections above the threshold)
 
-Finally, when doing Difference-of-Gaussian detection, you can choose whether to compute the necessary convolution operations on the CPU or a GPU under **"Compute on"**. GPU-accelerated detection requires a CUDA-capable NVIDA graphics card. You also have to compile the [required libraries](Multiview-Reconstruction#Download "wikilink") for your system first (see the corresponding GitHib pages for details). There is an *approximate* and an *accurate* version of the GPU-accelerated convolutions - the *approximate* version is slightly faster but might produce some artifacts around the edges of your images.
+Finally, when doing Difference-of-Gaussian detection, you can choose whether to compute the necessary convolution operations on the CPU or a GPU under **"Compute on"**. GPU-accelerated detection requires a CUDA-capable NVIDA graphics card. You also have to compile the [required libraries](Multiview-Reconstruction#Download ) for your system first (see the corresponding GitHib pages for details). There is an *approximate* and an *accurate* version of the GPU-accelerated convolutions - the *approximate* version is slightly faster but might produce some artifacts around the edges of your images.
 
 <img src="/images/pages/BigStitcher Register 2.png" width="600"/>
 
@@ -86,7 +86,7 @@ First, you have to specify the **CUDA directory** in which to look for the compi
 
 ![BigStitcher\_interestpoint\_gpu-1.png](/images/pages/BigStitcher interestpoint gpu-1.png "BigStitcher_interestpoint_gpu-1.png")
 
-Next, you have to select the actual library file to use (there might be multiple, be sure to pick the library for **separable convolution**, not the *Fourier convolution* used in [Multi-View\_Deconvolution](Multi-View_Deconvolution "wikilink")).
+Next, you have to select the actual library file to use (there might be multiple, be sure to pick the library for **separable convolution**, not the *Fourier convolution* used in [Multi-View\_Deconvolution](Multi-View_Deconvolution )).
 
 ![BigStitcher\_interestpoint\_gpu-2.png](/images/pages/BigStitcher interestpoint gpu-2.png "BigStitcher_interestpoint_gpu-2.png")
 
@@ -96,4 +96,4 @@ Click **OK** once more to start the interest point detection.
 
 ![BigStitcher\_interestpoint\_gpu-3.png](/images/pages/BigStitcher interestpoint gpu-3.png "BigStitcher_interestpoint_gpu-3.png")
 
-Go back to the [main page](BigStitcher#Documentation "wikilink")
+Go back to the [main page](BigStitcher#Documentation )

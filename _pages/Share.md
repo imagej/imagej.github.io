@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Distribution](Distribution "wikilink")
+1.  REDIRECT [Distribution](Distribution )

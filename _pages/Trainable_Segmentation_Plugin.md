@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Trainable Segmentation Plugin (deprecated)](Trainable_Segmentation_Plugin_\(deprecated\) "wikilink")
+1.  REDIRECT [Trainable Segmentation Plugin (deprecated)](Trainable_Segmentation_Plugin_deprecated )

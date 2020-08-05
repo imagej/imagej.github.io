@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-This page describes the segmentation function of the [CIP scripting](CIP "wikilink") package
+This page describes the segmentation function of the [CIP scripting](CIP ) package
 
 {% include cip content='Navigation' %}
 
@@ -78,7 +78,7 @@ This function detects the intensity maxima of an imaget and return a labeled ima
     **outputImage** : a label image of the detected maxima  
 <span style="font-size:110%">**Experimental feature**</span>  
 For the multiscale maxima method it is possible to use a parameter defining the type of output returned by the function  
-    **output** : a string in {'image', 'measure', 'both'}, the default value is 'image'. If the parameter value is 'image' the function return a labelMap image. If the value is 'measure' the function a [measure table](CIP_Utilities#measure "wikilink") indicating object position and scale. The idea is to give more flexibility in the visualisation of the detections. Eventually returning sphere regions with appropriate radii could be more convenient as they could be visualized right away with cip.show  
+    **output** : a string in {'image', 'measure', 'both'}, the default value is 'image'. If the parameter value is 'image' the function return a labelMap image. If the value is 'measure' the function a [measure table](CIP_Utilities#measure ) indicating object position and scale. The idea is to give more flexibility in the visualisation of the detections. Eventually returning sphere regions with appropriate radii could be more convenient as they could be visualized right away with cip.show  
 
 <span style="font-size:110%">**Example**</span>  
     `img2 = cip.maxima( img1 , 'hmin', 200 )` ![CIP\_maxima.PNG](/images/pages/CIP maxima.PNG "CIP_maxima.PNG") the illustration above show the contour of the detected region on top of the original data

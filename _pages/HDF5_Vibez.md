@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-This plugin is an HDF5 reader/writer plugin for [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink"). It is a continuation of the [original code](http://lmb.informatik.uni-freiburg.de/resources/opensource/imagej_plugins/hdf5.html) by Matthias Schlachter, Olaf Ronneberger and Kun Liu.
+This plugin is an HDF5 reader/writer plugin for [ImageJ](ImageJ ) and [Fiji](Fiji ). It is a continuation of the [original code](http://lmb.informatik.uni-freiburg.de/resources/opensource/imagej_plugins/hdf5.html) by Matthias Schlachter, Olaf Ronneberger and Kun Liu.
 
 HDF5 is a data format for storing extremely large and complex data collections. For more information, see the [official website](http://hdf.ncsa.uiuc.edu/HDF5/). The plugin uses the [jhdf5 library from ETH SIS](https://wiki-bsse.ethz.ch/display/JHDF5) for reading and writing HDF5 files.
 

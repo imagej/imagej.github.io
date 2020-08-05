@@ -25,7 +25,7 @@ This tool copies randomly selected (image) files to a new subfolder (output fold
 
 <center>
 
-[frame| File Name Encrypter: Basic mode.](File_FileNameEncrypterBasic.PNG "wikilink")
+[frame| File Name Encrypter: Basic mode.](File_FileNameEncrypterBasic.PNG )
 
 </center>
 
@@ -33,7 +33,7 @@ This tool copies randomly selected (image) files to a new subfolder (output fold
 
 <center>
 
-[frame| File Name Encrypter: Advance mode.](File__FileNameEncrypterAdvance.PNG "wikilink")
+[frame| File Name Encrypter: Advance mode.](File__FileNameEncrypterAdvance.PNG )
 
 </center>
 
@@ -76,7 +76,7 @@ This tool facilitates blind image analysis by randomly opening an image and disp
 
 <center>
 
-[frame| Analyse & Decide](File__Analyse&DecideMain.PNG "wikilink")
+[frame| Analyse & Decide](File__Analyse&DecideMain.PNG )
 
 </center>
 
@@ -84,7 +84,7 @@ It is possible to make a **decision** about an opened image, for example, weak/m
 
 <center>
 
-[frame| Analyse & Decide: Setting choices](File__Analyse&DecideSetChoices.PNG "wikilink")
+[frame| Analyse & Decide: Setting choices](File__Analyse&DecideSetChoices.PNG )
 
 </center>
 

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Philosophy\#Release\_early.2C\_release\_often](Philosophy#Release_early.2C_release_often "wikilink")
+1.  REDIRECT [Philosophy\#Release\_early.2C\_release\_often](Philosophy#Release_early.2C_release_often )

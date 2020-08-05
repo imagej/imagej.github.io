@@ -11,11 +11,11 @@ This blog post was originally [a talk at the ImageJ conference 2012](http://imag
 
 ## Introduction
 
-It seems that many projects associated with [Fiji](Fiji "wikilink") attach a "2" to their name... [TrakEM2](TrakEM2 "wikilink"), [ImgLib2](ImgLib2 "wikilink"), [ImageJ2](ImageJ2 "wikilink"). Not to be left behind, Fiji will do the same: the next big Fiji version will be Fiji2 :-)
+It seems that many projects associated with [Fiji](Fiji ) attach a "2" to their name... [TrakEM2](TrakEM2 ), [ImgLib2](ImgLib2 ), [ImageJ2](ImageJ2 ). Not to be left behind, Fiji will do the same: the next big Fiji version will be Fiji2 :-)
 
-In addition, there is a very good, technical reason to go "Fiji2". From the get-go, Fiji set out to make work with ImageJ easier—both for developers and users. For developers in particular, we wanted to have a good infrastructure that helps developing better plugins faster. As part of that, we explored not only new development techniques such as using a [source code management tool](Git "wikilink"), but we also worked toward a more flexible core.
+In addition, there is a very good, technical reason to go "Fiji2". From the get-go, Fiji set out to make work with ImageJ easier—both for developers and users. For developers in particular, we wanted to have a good infrastructure that helps developing better plugins faster. As part of that, we explored not only new development techniques such as using a [source code management tool](Git ), but we also worked toward a more flexible core.
 
-As an example, we provided a way to run some plugins [without a graphical desktop](Headless "wikilink"). Due to the design of [ImageJ 1.x](ImageJ1 "wikilink"), this "headless" mode can work only to a subset to plugins, though. Fiji also started to address other issues with ImageJ 1.x such as the lack of an [updater](updater "wikilink"), a powerful [editor for macros and scripts](Script_Editor "wikilink"), or extension points e.g. to add new tools (ImageJ 1.46d added a limited version of Fiji's `AbstractTool` framework).
+As an example, we provided a way to run some plugins [without a graphical desktop](Headless ). Due to the design of [ImageJ 1.x](ImageJ1 ), this "headless" mode can work only to a subset to plugins, though. Fiji also started to address other issues with ImageJ 1.x such as the lack of an [updater](updater ), a powerful [editor for macros and scripts](Script_Editor ), or extension points e.g. to add new tools (ImageJ 1.46d added a limited version of Fiji's `AbstractTool` framework).
 
 Happily, these and other design limitations are addressed in the next-generation ImageJ\!
 
@@ -33,17 +33,17 @@ But under the hood, ImageJ2 is much more modular. This is something we needed in
 
 In this chart, the dark blue boxes denote three of Fiji's plugins, the light blue boxes three of the projects associated with Fiji and the gray boxes stand for third-party projects which are used, but not actively developed, in the Fiji context. The arrows show the relationship "contributing functionality to".
 
-It is obvious that many of the depicted components share their dependencies with other components. For example, both the [3D Viewer](3D_Viewer "wikilink") and [TrakEM2](TrakEM2 "wikilink") rely on [ImgLib2](ImgLib2 "wikilink"). Now, [ImageJ 1.x](ImageJ1 "wikilink") (and many plugins written for it) try to avoid such dependencies since it is inconvenient to force users to keep track of them. The downside for the developer is that they have to implement the same functionality as other people provided, again. As a consequence, such support is often incomplete, and sometimes bugs hide in that code for years.
+It is obvious that many of the depicted components share their dependencies with other components. For example, both the [3D Viewer](3D_Viewer ) and [TrakEM2](TrakEM2 ) rely on [ImgLib2](ImgLib2 ). Now, [ImageJ 1.x](ImageJ1 ) (and many plugins written for it) try to avoid such dependencies since it is inconvenient to force users to keep track of them. The downside for the developer is that they have to implement the same functionality as other people provided, again. As a consequence, such support is often incomplete, and sometimes bugs hide in that code for years.
 
-But in Fiji, we have the [updater](updater "wikilink"), which makes it easy both for developers and users to manage many dependencies effortlessly.
+But in Fiji, we have the [updater](updater ), which makes it easy both for developers and users to manage many dependencies effortlessly.
 
-On the road to Fiji2, we also adopted ImageJ2's use of [Maven](Maven "wikilink")—it is basically an updater for developers, as it makes it easy to keep track of dependencies' different versions and to inspect their source code. It is also superior to the previous approach (the [Fiji Build System](Fiji_Build_System "wikilink")) that did not allow integration into the many available developer tools (e.g. [Eclipse](Eclipse "wikilink")).
+On the road to Fiji2, we also adopted ImageJ2's use of [Maven](Maven )—it is basically an updater for developers, as it makes it easy to keep track of dependencies' different versions and to inspect their source code. It is also superior to the previous approach (the [Fiji Build System](Fiji_Build_System )) that did not allow integration into the many available developer tools (e.g. [Eclipse](Eclipse )).
 
-This modular architecture allows us to integrate many third-party components without hassle, for example machine-learning libraries, database libraries, libraries to read/write PDF files, the powerful [Bio-Formats](Bio-Formats "wikilink") and [SCIFIO](SCIFIO "wikilink") libraries, etc.
+This modular architecture allows us to integrate many third-party components without hassle, for example machine-learning libraries, database libraries, libraries to read/write PDF files, the powerful [Bio-Formats](Bio-Formats ) and [SCIFIO](SCIFIO ) libraries, etc.
 
 ## Automated testing
 
-Another very important step on the road to Fiji2 is that the components which migrated to ImageJ2 are equipped with automatic regression testing. That is, ImageJ2's trusty server ([Jenkins](Jenkins "wikilink")) runs a series of functions testing certain functionality everytime a developer makes some changes. Whenever these tests break, the developers are notified and can fix the breakage before the respective component is uploaded to the update site.
+Another very important step on the road to Fiji2 is that the components which migrated to ImageJ2 are equipped with automatic regression testing. That is, ImageJ2's trusty server ([Jenkins](Jenkins )) runs a series of functions testing certain functionality everytime a developer makes some changes. Whenever these tests break, the developers are notified and can fix the breakage before the respective component is uploaded to the update site.
 
 This procedure helps us ensure that bugs, once fixed, do not rear their ugly heads again. It will make using Fiji much friendlier to users, too, because they will not need to report as many bugs since they will not even see them. The developers can run those tests, too, to test before the changes hit the server. In the ideal case everything will be green:
 
@@ -51,7 +51,7 @@ This procedure helps us ensure that bugs, once fixed, do not rear their ugly hea
 
 ## Recurrent tasks
 
-Using ImageJ2's Jenkins has further benefits: apart from building the complete Fiji and running automatic regression tests, Jenkins can run all kinds of repeating jobs. One of those jobs keeps an up-to-date Fiji version and packages it into what we call [continuous releases](Downloads "wikilink").
+Using ImageJ2's Jenkins has further benefits: apart from building the complete Fiji and running automatic regression tests, Jenkins can run all kinds of repeating jobs. One of those jobs keeps an up-to-date Fiji version and packages it into what we call [continuous releases](Downloads ).
 
 ![Continuous Fiji releases](/images/pages/Fiji-continuous-releases.jpg "Continuous Fiji releases")
 

@@ -9,7 +9,7 @@ description: test description
 
 ## 3D Filters
 
-3D filtering using ellipsoidal neighbourhood, as part of the [3D ImageJ Suite](3D_ImageJ_Suite "wikilink").
+3D filtering using ellipsoidal neighbourhood, as part of the [3D ImageJ Suite](3D_ImageJ_Suite ).
 
 ## Author
 
@@ -53,9 +53,9 @@ Available filters :
 
 ## Download
 
-For details go to [3D ImageJ Suite](3D_ImageJ_Suite "wikilink").
+For details go to [3D ImageJ Suite](3D_ImageJ_Suite ).
 
-If you want fast version using GPU, please refer to [CLIJ](CLIJ "wikilink").
+If you want fast version using GPU, please refer to [CLIJ](CLIJ ).
 
 ## Citation
 

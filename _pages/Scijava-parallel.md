@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include info-box name='Scijava-parallel ' software='Fiji ' author='Petr Bainar, Jan Kožusznik ' maintainer='Jan Kožusznik ' released='October 2019 ' latest-version='October 2019 ' category='[:Category:Development](_Category_Development "wikilink") ' source=' [on github](https://github.com/fiji-hpc/scijava-parallel) ' %}
+{% include info-box name='Scijava-parallel ' software='Fiji ' author='Petr Bainar, Jan Kožusznik ' maintainer='Jan Kožusznik ' released='October 2019 ' latest-version='October 2019 ' category='[:Category:Development](_Category_Development ) ' source=' [on github](https://github.com/fiji-hpc/scijava-parallel) ' %}
 
 Scijava-parallel is a framework that provides an access point for using computational resources such as remote computers or HPC clusters. It hides details about configuration and initialization of such resources.
 
@@ -44,7 +44,7 @@ The methods cause parallel execution of specified command for parameters. A size
 
 <!-- end list -->
 
-  - [FSTRPCParadigm](FSTRPCParadigm "wikilink") in the module [scijava-parallel-fst](https://github.com/fiji-hpc/scijava-parallel-fst) executes commands in different instances of running Fiji. Fiji can run in a different computer or an HPC cluster. Communication is realized through TCP/IP connection and data are serialized by fst library [fst](https://github.com/RuedigerMoeller/fast-serialization).
+  - [FSTRPCParadigm](FSTRPCParadigm ) in the module [scijava-parallel-fst](https://github.com/fiji-hpc/scijava-parallel-fst) executes commands in different instances of running Fiji. Fiji can run in a different computer or an HPC cluster. Communication is realized through TCP/IP connection and data are serialized by fst library [fst](https://github.com/RuedigerMoeller/fast-serialization).
 
 <!-- end list -->
 
@@ -65,7 +65,7 @@ Profiles can be:
 
 ### Profile creation and editing
 
-During the creation of a profile a user specifies the implementation of an associated paradigm - [FSTRPCParadigm](FSTRPCParadigm "wikilink") is selected in the screenshot - paradigm manager. Paradigm managers are supplied by parallelization paradigm providers together with parallelization paradigm implementations. Paradigm managers manage resources used by a parallelization paradigm implementation. There are three paradigm managers available that differ in the location where they start a server handling requests:
+During the creation of a profile a user specifies the implementation of an associated paradigm - [FSTRPCParadigm](FSTRPCParadigm ) is selected in the screenshot - paradigm manager. Paradigm managers are supplied by parallelization paradigm providers together with parallelization paradigm implementations. Paradigm managers manage resources used by a parallelization paradigm implementation. There are three paradigm managers available that differ in the location where they start a server handling requests:
 
   - *Inprocess FSTPRC* - in an actual running instance of Fiji;
   - *Local FSTRPC* - on a local machine as an another process;

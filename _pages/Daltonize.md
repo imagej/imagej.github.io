@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Simulate Color Blindness](Simulate_Color_Blindness "wikilink")
+1.  REDIRECT [Simulate Color Blindness](Simulate_Color_Blindness )

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Architecture\#Modularity](Architecture#Modularity "wikilink")
+1.  REDIRECT [Architecture\#Modularity](Architecture#Modularity )

@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-This page contains a tutorial for the [MaMuT](MaMuT "wikilink") plugin. It describes and document all its features using a publication related dataset.
+This page contains a tutorial for the [MaMuT](MaMuT ) plugin. It describes and document all its features using a publication related dataset.
 
 ## Publication.
 
@@ -19,7 +19,7 @@ If you find MaMuT useful for your research, please cite it:
 
 MaMuT is a Fiji plugin that depends on its components to run. Download Fiji from [its website](https://fiji.sc/#download) if you do not have it already.
 
-MaMuT is not shipped with Fiji by default; you have to install it in Fiji. Thanks to the ImageJ [**Updater**](Updater "wikilink"), there is not much to do. Simply follow the instructions on how to [**follow a 3rd party site**](How_to_follow_a_3rd_party_update_site "wikilink"), and subscribe to the MaMuT update site. Here is briefly how to do it.
+MaMuT is not shipped with Fiji by default; you have to install it in Fiji. Thanks to the ImageJ [**Updater**](Updater ), there is not much to do. Simply follow the instructions on how to [**follow a 3rd party site**](How_to_follow_a_3rd_party_update_site ), and subscribe to the MaMuT update site. Here is briefly how to do it.
 
 Got to {% include bc content='Help | Update...'%} and click on the **Manage update sites** button. In the window that appear, find the **MaMuT** checkbox and tick it. Then close the window. In the files to update list, there should be a **plugins/MaMuT\_.jar** appearing. Click on **Apply changes** button, then restart Fiji.
 
@@ -27,13 +27,13 @@ Got to {% include bc content='Help | Update...'%} and click on the **Manage upda
 
 ## Data preparation.
 
-MaMuT relies on and exploits the file format of the [**BigDataViewer**](BigDataViewer "wikilink"). You need to prepare your images so that they can be opened in the BigDataViewer and there is no way around it. Actually, MaMuT was written specifically as an annotation platform for the BigDataViewer, specializing in cell lineaging.
+MaMuT relies on and exploits the file format of the [**BigDataViewer**](BigDataViewer ). You need to prepare your images so that they can be opened in the BigDataViewer and there is no way around it. Actually, MaMuT was written specifically as an annotation platform for the BigDataViewer, specializing in cell lineaging.
 
 If you already have such a file, skip to the next section. Otherwise, we lazily rely on the excellent BigDataViewer documentation and point directly to the BigDataViewer instructions to prepare your images, depending on whether
 
-  - they are [**opened as an ImageJ stack**](BigDataViewer#Exporting_from_ImageJ_Stacks "wikilink"), or
-  - they come from a [**SPIM processing pipeline**](BigDataViewer#Integration_with_Fiji.27s_SPIMage_Processing_Tools "wikilink").
-  - they come from a new [**Multiview-Reconstruction**](Multiview-Reconstruction "wikilink") datasets that are automatically in BigDataViewer format.
+  - they are [**opened as an ImageJ stack**](BigDataViewer#Exporting_from_ImageJ_Stacks ), or
+  - they come from a [**SPIM processing pipeline**](BigDataViewer#Integration_with_Fiji.27s_SPIMage_Processing_Tools ).
+  - they come from a new [**Multiview-Reconstruction**](Multiview-Reconstruction ) datasets that are automatically in BigDataViewer format.
 
 Once you have prepared your images for opening in the BigDataViewer, you should have a `.xml` file and a possibly very large `.h5` file on your computer. The `.xml` file must be the output of the BigDataViewer data preparation. It should start with the following lines:
 
@@ -69,7 +69,7 @@ If you are familiar with the BigDataViewer, there is a few useful things to know
 
 To save the annotation to a MaMuT file, press the **Save** button on the main GUI window. This will let you save to a file which is typically named `bdv_file-mamut.xml` if the BigDataViewer file was named `bdv_file.xml`.
 
-The MaMuT files are actually [**TrackMate**](TrackMate "wikilink") files. They are XML files with 3 main sections:
+The MaMuT files are actually [**TrackMate**](TrackMate ) files. They are XML files with 3 main sections:
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -102,7 +102,7 @@ MaMuT offers three kind of views:
 
   - **MaMuT Viewer** is the main view that overlays the image data and the annotations using the physical coordinate system. This is where you will mainly interact with the data, and create, edit and move spots around. This view is based on the BigDataViewer.
   - **TrackScheme** is the track browser, taken from TrackMate. It only shows the annotation data in a hierarchical way, discarding any physical location information. Tracks are laid out along time ranging from top to bottom, and arranged from left to right according to their name. This view is useful to make sense of the annotation data, as well as to edit links between spots.
-  - **3D Viewer** shows a 3D View of the annotation data in the physical coordinate system, without the image data. It is based on the [**ImageJ 3D Viewer**](3D_Viewer "wikilink").
+  - **3D Viewer** shows a 3D View of the annotation data in the physical coordinate system, without the image data. It is based on the [**ImageJ 3D Viewer**](3D_Viewer ).
 
 Let's start with the MaMuT Viewer. Click on its button on the GUI, the one with a picture of a mammoth. A BigDataViewer window should appear.
 
@@ -114,7 +114,7 @@ The MaMuT viewer is really a BigDataViewer window, so if you are familiar with t
 
 A little word on the BigDataViewer: The BigDataViewer was made to deal with very large images of a sample possibly acquired from several different orientations (e.g. rotating the sample in a SPIM). These different orientations (or views, but here we use this word for another notion) of the data amount to a new dimension. This dimension if more complex to handle than e.g. multiple channels, because changing the acquisition orientation generates a data block which is not aligned with the other blocks (rotated, translated, and if you change the magnification, scaled), and does not have necessary the same size. As of today, only a limited numbers of image viewers can deal with multiple orientations, and the BigDataViewer is one of them.
 
-Each of these orientations generate a data block, that we call *source* here. A source is monochromatic: if several fluorescence channels are captured under a single orientation, they each generate a source. The image data is not fully loaded in memory. It is cached efficiently following the caching strategy of the BigDataViewer (detailed [**here**](BigDataViewer#About_the_BigDataViewer_data_format "wikilink")).
+Each of these orientations generate a data block, that we call *source* here. A source is monochromatic: if several fluorescence channels are captured under a single orientation, they each generate a source. The image data is not fully loaded in memory. It is cached efficiently following the caching strategy of the BigDataViewer (detailed [**here**](BigDataViewer#About_the_BigDataViewer_data_format )).
 
 ### The tutorial dataset.
 
@@ -356,7 +356,7 @@ The hierarchical layout of the lineages provided by TrackScheme can be useful fo
 
 <img src="/images/pages/Bdv-MaMuT TrackSchemeExportButtons.png" width="500"/>
 
-  - The **Capture undecorated TrackScheme** button will generate a view of [TrackScheme](TrackScheme "wikilink") and open it in Fiji. The background is set to white and the zoom level is set to the default, regardless of what the actual zoom is in TrackScheme. Once this image is in Fiji, you can modify it, save it, etc using the tools in Fiji.
+  - The **Capture undecorated TrackScheme** button will generate a view of [TrackScheme](TrackScheme ) and open it in Fiji. The background is set to white and the zoom level is set to the default, regardless of what the actual zoom is in TrackScheme. Once this image is in Fiji, you can modify it, save it, etc using the tools in Fiji.
   - The **Capture TrackScheme with decorations** button does the converse. It captures a snapshot of the TrackScheme window as is, and uses the current zoom level to generate an image.
   - The **Export to...** opens file browser on which you can pick the export file format and its location. Many file formats are supported:
       - PNG image file with/without transparent background.
@@ -369,7 +369,7 @@ The hierarchical layout of the lineages provided by TrackScheme can be useful fo
 
 ### Managing a selection in TrackScheme.
 
-[TrackScheme](TrackScheme "wikilink") is useful to build a selection and query its properties. As we said above, TrackScheme does not abide any visibility setting. Spots and links are always visible, which is useful to build a selection. Spots and links are added to the current selection in a classical way:
+[TrackScheme](TrackScheme ) is useful to build a selection and query its properties. As we said above, TrackScheme does not abide any visibility setting. Spots and links are always visible, which is useful to build a selection. Spots and links are added to the current selection in a classical way:
 
   - {% include key content='press|Left-Click' %} on a spot or link to set the selection with this spot or link. The selection is cleared before.
   - {% include key content='press|Left-Click' %} outside a spot to clear the selection.
@@ -518,7 +518,7 @@ This command really reads into the raw data, and therefore generate ImageJ stack
 
 ## Numerical features.
 
-We already skimed over numerical features when we discussed the display settings for spots and tracks. Numerical features are scalar values associated to a spot, a link or a track that measures some useful value. For instance, the X position of a spot, the displacement across a link, and the number of split events in a track. The MaMuT feature system is direcly imported from [TrackMate](TrackMate "wikilink"), but only contains a subset of feature definitions from TrackMate and a few ones related to cell lineaging.
+We already skimed over numerical features when we discussed the display settings for spots and tracks. Numerical features are scalar values associated to a spot, a link or a track that measures some useful value. For instance, the X position of a spot, the displacement across a link, and the number of split events in a track. The MaMuT feature system is direcly imported from [TrackMate](TrackMate ), but only contains a subset of feature definitions from TrackMate and a few ones related to cell lineaging.
 
 Numerical features are automatically kept in sync with the annotation. As soon as you add an annotation or modify and delete and existing one, the recalculation of features is triggered. As mentioned above however, the range display on the main GUI window is not, and you need to click over it to refresh the displayed colormap and its range.
 
@@ -585,7 +585,7 @@ The key-bindings used in the MaMuT viewer can be customized through a text file,
 
 It follows the syntax `key=command`, one per line. Modifier keys such as {% include key content='press|Control' %} and {% include key content='press|Shift' %} are specified by prepending the key with their name, separated by a space escaped with a backslash '\\'. Spaces in commands do not need to be escaped. The dash \# character at the beginning of a line is used to insert comments.
 
-An example of such a file can be found [**here**](Example_mamut.properties_file "wikilink").
+An example of such a file can be found [**here**](Example_mamut.properties_file ).
 
 ### Available commands.
 

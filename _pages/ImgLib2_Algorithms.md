@@ -29,11 +29,11 @@ description: test description
 <!-- end list -->
 
   - Algorithms will be split into Maven subpackages where each subpackage can manage its own dependencies and licenses
-      - [ Gauss](Gauss_ImgLib2 "wikilink")
-      - [ FFT](FFT_ImgLib2 "wikilink")
-      - [ FourierConvolution](FourierConvolution_ImgLib2 "wikilink")
-      - [ IntegralImg](IntegralImg_ImgLib2 "wikilink")
-      - [ ScaleSpace](ScaleSpace_ImgLib2 "wikilink")
+      - [ Gauss](Gauss_ImgLib2 )
+      - [ FFT](FFT_ImgLib2 )
+      - [ FourierConvolution](FourierConvolution_ImgLib2 )
+      - [ IntegralImg](IntegralImg_ImgLib2 )
+      - [ ScaleSpace](ScaleSpace_ImgLib2 )
       - ...
 
 <!-- end list -->

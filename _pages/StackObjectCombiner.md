@@ -67,7 +67,7 @@ Finally click on the "Merge" button or use the shortcut "S".
 
 During this example, you can look at the different step with the [3DViewer](https://fiji.sc/3D_Viewer), or with [Blender](https://www.blender.org/).
 
-1.  Download the meshes of a mitochondria in the shape of a donut divided in 4 parts [Media:MitoDonut Meshes.zip](Media_MitoDonut_Meshes.zip "wikilink")
+1.  Download the meshes of a mitochondria in the shape of a donut divided in 4 parts [Media:MitoDonut Meshes.zip](Media_MitoDonut_Meshes.zip )
 2.  Launch the plugin, and give the directory containing the .obj file
 3.  X shift : 192    Y shift : 214    Z shift : 500
 4.  Width : 600    Height : 600    Depth : 600

@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='CSIM-Toolkits ' repo='ImageJ/tree/master/plugins/AnomalousDiffusionFilters ' label='GitHub CSIM-ImageJ AnomalousDiffusionFilters repository ' %}
 {% endcapture %}
-{% include info-box name='Anomalous Diffusion Filters PlugIn ' software='Fiji ' author=author maintainer=maintainer source=source released='February 03<sup>rd</sup>, 2015 ' latest-version='February 03<sup>rd</sup>, 2015 ' status='experimental, active ' category='[Plugins](_Category_Plugins "wikilink"), [Filtering](_Category_Filtering "wikilink") ' %}
+{% include info-box name='Anomalous Diffusion Filters PlugIn ' software='Fiji ' author=author maintainer=maintainer source=source released='February 03<sup>rd</sup>, 2015 ' latest-version='February 03<sup>rd</sup>, 2015 ' status='experimental, active ' category='[Plugins](_Category_Plugins ), [Filtering](_Category_Filtering ) ' %}
 
 ## Anomalous Diffusion Filters
 
@@ -53,7 +53,7 @@ Numerical approaches were implemented using differential operators in one dimens
 
 \(I_{\phi,t+1} = I_{\phi,t} + \lambda.\overrightarrow{\nabla} \Big[ D_q. \overrightarrow{\nabla} I_{\phi,t}^{2 - q} \Big]\)
 
-Where \(I_{\phi,t}\) and \(I_{\phi,t+1}\) are the evaluated images in \(t_i\) iterations, and \(I_{\phi,0}\) is the original image. \(D_{q}\) is the diffusion coefficient regulated by a power law with \(\textit{q}\), and \(\phi\) are the possible orientations with respect to the central pixel. The equation above assumes the time step is a constant (\(\lambda \propto \Delta t/\Delta x^2\)) and it depends on the numerical discretization. A careful time step determination plays an important role for numerical stability. The time step determination have a direct influence on the numeric discretization of the diffusion equation and here it follows the same assumptions made for the classical anisotropic diffusion algorithm. More details about the time step parameters and numerical stability can be found in [references section](User_Acsenrafilho "wikilink") of the CSIM main wiki site.
+Where \(I_{\phi,t}\) and \(I_{\phi,t+1}\) are the evaluated images in \(t_i\) iterations, and \(I_{\phi,0}\) is the original image. \(D_{q}\) is the diffusion coefficient regulated by a power law with \(\textit{q}\), and \(\phi\) are the possible orientations with respect to the central pixel. The equation above assumes the time step is a constant (\(\lambda \propto \Delta t/\Delta x^2\)) and it depends on the numerical discretization. A careful time step determination plays an important role for numerical stability. The time step determination have a direct influence on the numeric discretization of the diffusion equation and here it follows the same assumptions made for the classical anisotropic diffusion algorithm. More details about the time step parameters and numerical stability can be found in [references section](User_Acsenrafilho ) of the CSIM main wiki site.
 
 ## Filters parameters
 

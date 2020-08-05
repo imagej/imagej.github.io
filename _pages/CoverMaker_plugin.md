@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Cover Maker](Cover_Maker "wikilink")
+1.  REDIRECT [Cover Maker](Cover_Maker )

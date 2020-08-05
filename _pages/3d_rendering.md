@@ -11,14 +11,14 @@ description: test description
 
 ## Currently available options
 
-  - Existing [3D Viewer](3D_Viewer "wikilink")
-  - [BigDataViewer](BigDataViewer "wikilink")
-  - [ClearVolume](ClearVolume "wikilink")
-  - [Volume Viewer](Volume_Viewer "wikilink")
-  - [Vaa3D](Vaa3D "wikilink")
-  - [FluoRender](FluoRender "wikilink")
-  - [VTK](VTK "wikilink")
-  - [Imaris](Imaris "wikilink") (some have linked to it)
+  - Existing [3D Viewer](3D_Viewer )
+  - [BigDataViewer](BigDataViewer )
+  - [ClearVolume](ClearVolume )
+  - [Volume Viewer](Volume_Viewer )
+  - [Vaa3D](Vaa3D )
+  - [FluoRender](FluoRender )
+  - [VTK](VTK )
+  - [Imaris](Imaris ) (some have linked to it)
 
 ## See also
 

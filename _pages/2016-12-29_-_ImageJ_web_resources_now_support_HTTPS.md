@@ -7,7 +7,7 @@ categories: ImageJ2,News
 description: test description
 ---
 
-Over the past many months, we have been incrementally working toward support for HTTPS (i.e., secure) web traffic for ImageJ's web-based resources. At the [recent hackathon at MPI-CBG](2016-12-20_-_Fiji_+_KNIP_hackathon "wikilink"), we largely completed these efforts. Some of the domains which now fully support HTTPS include:
+Over the past many months, we have been incrementally working toward support for HTTPS (i.e., secure) web traffic for ImageJ's web-based resources. At the [recent hackathon at MPI-CBG](2016-12-20_-_Fiji_+_KNIP_hackathon ), we largely completed these efforts. Some of the domains which now fully support HTTPS include:
 
   - https://imagej.net/
   - https://downloads.imagej.net/
@@ -24,7 +24,7 @@ Over the past many months, we have been incrementally working toward support for
   - https://samples.fiji.sc/
   - https://update.fiji.sc/
 
-More work is still needed to make the [ImageJ Updater](ImageJ_Updater "wikilink") always prefer talking to update sites via HTTPS rather than HTTP; see [the relevant forum thread](http://forum.imagej.net/t/https-to-make-imagej-fiji-more-secure/398) for further details.
+More work is still needed to make the [ImageJ Updater](ImageJ_Updater ) always prefer talking to update sites via HTTPS rather than HTTP; see [the relevant forum thread](http://forum.imagej.net/t/https-to-make-imagej-fiji-more-secure/398) for further details.
 
 This work will make ImageJ and Fiji more secure, preventing potential man-in-the-middle attacks and arbitrary code injection.
 

@@ -13,7 +13,7 @@ description: test description
 
 ## Installation
 
-Image5D is distributed as part of [Fiji](Fiji "wikilink"), so no installation is necessary beyond that. If you do not wish to [enable the Fiji update site](Update_Sites "wikilink"), you can download the Image5D JAR file to the plugins folder, restart ImageJ, and there will be new commands (*New Image5D*, *Open Image5D*, etc.) in the {% include bc content='Plugins|Image5D'%} submenu. Image5D requires ImageJ 1.37b or later.
+Image5D is distributed as part of [Fiji](Fiji ), so no installation is necessary beyond that. If you do not wish to [enable the Fiji update site](Update_Sites ), you can download the Image5D JAR file to the plugins folder, restart ImageJ, and there will be new commands (*New Image5D*, *Open Image5D*, etc.) in the {% include bc content='Plugins|Image5D'%} submenu. Image5D requires ImageJ 1.37b or later.
 
 ## Description
 
@@ -46,7 +46,7 @@ A sample [16-bit RGB data set](https://imagej.net/macros/images/MyoblastCells.zi
 
 ## See also
 
-  - [Sync Windows](Sync_Windows "wikilink")
+  - [Sync Windows](Sync_Windows )
   - [Spectral Unmixing Plugins](https://imagej.net/plugins/spectral-unmixing.html)
   - [TransformJ](http://www.imagescience.org/meijering/software/transformj/), [FeatureJ](http://www.imagescience.org/meijering/software/featurej/), [RandomJ](http://www.imagescience.org/meijering/software/randomj/) and [MTrackJ](http://www.imagescience.org/meijering/software/mtrackj/)
 

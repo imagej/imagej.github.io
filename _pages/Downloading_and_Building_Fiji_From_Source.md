@@ -8,13 +8,13 @@ description: test description
 ---
 
 {% include fijimenu%}
-The complete Fiji distribution of ImageJ consists of over a hundred individual components. Most of these components are ImageJ [plugins](plugins "wikilink"); the rest are core libraries, [scripts](scripts "wikilink") and several other resources (such as the [Fiji logo](_File_Fiji-icon.png "wikilink") and the README).
+The complete Fiji distribution of ImageJ consists of over a hundred individual components. Most of these components are ImageJ [plugins](plugins ); the rest are core libraries, [scripts](scripts ) and several other resources (such as the [Fiji logo](_File_Fiji-icon.png ) and the README).
 
 In the past, Fiji used to be built from one monolithic source code repository, which became unmanageable over time. These days, therefore, developers start from a fully-populated *Fiji.app/* directory and build only the parts they would like to change.
 
 # Download Fiji
 
-The first step is the same for developers as it is for users: [Download](Downloads "wikilink") Fiji, and unpack it. The Desktop is the recommended location.
+The first step is the same for developers as it is for users: [Download](Downloads ) Fiji, and unpack it. The Desktop is the recommended location.
 
 # Install Java
 
@@ -28,7 +28,7 @@ Each individual component is maintained in its own repository in the [*fiji* org
 
 If in doubt about the location of the repository, just call {% include bc content='Plugins | Debug | System Information'%} and find the section corresponding to the file in question.
 
-Once the developer has identified which plugin or library she wants to modify or develop further, it is very easy to build and contribute by following [this tutorial](How_to_contribute_to_an_existing_plugin_or_library "wikilink").
+Once the developer has identified which plugin or library she wants to modify or develop further, it is very easy to build and contribute by following [this tutorial](How_to_contribute_to_an_existing_plugin_or_library ).
 
 ## Example
 
