@@ -1,1 +1,0 @@
-Output of Segmentation Montage

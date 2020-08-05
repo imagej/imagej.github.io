@@ -1,1 +1,0 @@
-Upload How_to_make_a_new_tutorial-Editor.jpg for How_to_make_a_new_tutorial

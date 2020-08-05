@@ -1,2 +1,0 @@
-== Licensing ==
-{{cc-by-sa-4.0}}

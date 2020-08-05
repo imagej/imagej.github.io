@@ -1,1 +1,0 @@
-Upload Statistical_Region_Merging-Result.jpg for Statistical_Region_Merging

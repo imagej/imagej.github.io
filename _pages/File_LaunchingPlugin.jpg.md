@@ -1,1 +1,0 @@
-FIJI Launching an Plugin.

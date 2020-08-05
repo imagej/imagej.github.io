@@ -1,1 +1,0 @@
-Image of a stopped spinning disk confocal scan head from Yokogawa, through a 60 x objective lens on an andor camera, on a n olympus ix71 stand. the holes are about 50 micron in dimeter and about 250 microns apart (but remeber this is the image of the disk, not the disk and the image is magnifies about 60x!)

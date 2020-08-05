@@ -1,1 +1,0 @@
-Color image containing multiple phases (top left) and different types of median filtering: conventional band-wise (top right), multidimensional geometrical (bottom left), and multidimensional geometrical by choosing the closest available vectors.

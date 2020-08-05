@@ -1,1 +1,0 @@
-Upload RATS_sobel2.png for RATS:_Robust_Automatic_Threshold_Selection

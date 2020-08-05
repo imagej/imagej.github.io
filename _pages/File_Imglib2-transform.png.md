@@ -1,1 +1,0 @@
-Simplified visualization of the hierarchy of ImgLib2 transforms that can be reduced by concatenation.  Note that the interfaces responsible for concatenation are not implemented by the transform hierarchy.  Necessary access to trivial parameters in specialized transforms is implemented just once in abstract classes.

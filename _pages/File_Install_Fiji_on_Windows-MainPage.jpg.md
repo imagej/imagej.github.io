@@ -1,1 +1,0 @@
-Upload Install_Fiji_on_Windows-MainPage.jpg for Install_Fiji_on_Windows

@@ -1,1 +1,0 @@
-Image containing a ramp.

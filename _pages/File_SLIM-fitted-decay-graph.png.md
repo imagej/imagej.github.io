@@ -1,1 +1,0 @@
-Fitted Decay Graph

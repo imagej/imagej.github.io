@@ -1,1 +1,0 @@
-MRNSD options dialog

@@ -1,1 +1,0 @@
-Upload Install_Fiji_on_Linux-ArchiveManager.jpg for Install_Fiji_on_Linux

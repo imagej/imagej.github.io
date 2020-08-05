@@ -1,1 +1,0 @@
-Extract SIFT correspondences dialog

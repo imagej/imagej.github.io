@@ -1,1 +1,0 @@
-NewWithDot.jpg

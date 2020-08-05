@@ -1,1 +1,0 @@
-Modified Image Window

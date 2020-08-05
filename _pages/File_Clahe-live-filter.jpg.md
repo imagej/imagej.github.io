@@ -1,1 +1,0 @@
-Effect of the [[Enhance Local Contrast (CLAHE)|CLAHE]] live filter in [[TrakEM2]]. Data with high dynamic range is displayed with perceptually boosted local contrast. [[Enhance Local Contrast (CLAHE)|CLAHE parameters]] are relative to display pixels and, therefore, will not result in an effective bandpass when zooming out largely on statically pre-processed images.

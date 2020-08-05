@@ -1,1 +1,0 @@
-Trivial RGB to CMYK conversion. The left panel shows the individual CMYK channels as intensities in range [0(black)...1(white)], the right panel visualizes the individual CMYK channels as printed with the respective ink color on white paper.

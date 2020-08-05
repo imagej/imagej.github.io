@@ -1,1 +1,0 @@
-TrackMate_JaggedLines.png

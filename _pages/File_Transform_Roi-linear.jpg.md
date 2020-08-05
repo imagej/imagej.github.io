@@ -1,1 +1,0 @@
-Two snapshots from the ImageJ Conference 2008 that are registered into each other using an affine transformation as estimated from automatically extracted Feature Correspondences by the Landmark Correspondences transformation plugin.

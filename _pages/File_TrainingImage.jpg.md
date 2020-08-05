@@ -1,1 +1,0 @@
-Upload trainingImage.jpg for Trainable_Segmentation_Plugin

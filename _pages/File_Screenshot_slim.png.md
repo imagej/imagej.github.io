@@ -1,1 +1,0 @@
-SLIM plugin usage screenshot

@@ -1,1 +1,0 @@
-Upload trainedClassifier.jpg for Trainable_Segmentation_Plugin

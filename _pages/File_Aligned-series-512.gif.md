@@ -1,1 +1,0 @@
-Example for elastic alignment and montaging.  7 serial TEM sections of the neuropil of a ''Drosophila melanogaster'' first instar larva, downscaled by a factor of 12.  Image courtesy of [http://albert.rierol.net/ Albert Cardona].

@@ -1,1 +1,0 @@
-Two groups of measurements.

@@ -1,1 +1,0 @@
-Registration Manager main view

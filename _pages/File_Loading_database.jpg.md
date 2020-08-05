@@ -1,1 +1,0 @@
-Upload Loading_database.jpg for CoverMaker_plugin

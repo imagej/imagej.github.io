@@ -1,1 +1,0 @@
-[[TrakEM2]] showing one section of a serial section transmission electron microscopy (ssTEM) data set, with numerous neuronal arbors reconstructed using [http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees treelines] and [http://www.ini.uzh.ch/~acardona/trakem2_manual.html#connectors connectors] (for synapses).

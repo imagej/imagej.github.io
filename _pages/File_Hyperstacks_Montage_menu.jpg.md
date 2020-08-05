@@ -1,1 +1,0 @@
-Menu for hyperstack montage

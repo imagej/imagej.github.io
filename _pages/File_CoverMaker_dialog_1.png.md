@@ -1,1 +1,0 @@
-screeshot for CoverMaker tutorial

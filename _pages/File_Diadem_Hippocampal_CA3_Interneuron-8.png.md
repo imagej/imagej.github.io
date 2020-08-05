@@ -1,1 +1,0 @@
-Upload Diadem_Hippocampal_CA3_Interneuron-8.png for Diadem_Hippocampal_CA3_Interneuron

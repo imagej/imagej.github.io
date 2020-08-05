@@ -1,1 +1,0 @@
-Fitted Image Histogram

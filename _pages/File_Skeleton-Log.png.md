@@ -1,1 +1,0 @@
-AnalyzeSkeleton log window

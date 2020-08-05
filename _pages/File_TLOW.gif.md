@@ -1,1 +1,0 @@
-Formula for ridge detection

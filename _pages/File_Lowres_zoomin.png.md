@@ -1,1 +1,0 @@
-hires cover build up

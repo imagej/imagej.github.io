@@ -1,1 +1,0 @@
-Shows plugins folder location.

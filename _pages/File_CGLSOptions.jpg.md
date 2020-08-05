@@ -1,1 +1,0 @@
-CGLS options dialog

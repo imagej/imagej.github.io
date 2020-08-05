@@ -1,1 +1,0 @@
-Enter IRF picking mode.

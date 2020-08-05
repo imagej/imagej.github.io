@@ -1,1 +1,0 @@
-Example for elastic alignment and montaging.  7 serial TEM sections of the neuropil of a ''Drosophila melanogaster'' first instar larva, detail at 100% pixel resolution. Image courtesy of [http://albert.rierol.net/ Albert Cardona].

@@ -1,1 +1,0 @@
-OpenSPIM supplements

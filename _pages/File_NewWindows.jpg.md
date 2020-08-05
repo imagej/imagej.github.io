@@ -1,1 +1,0 @@
-NewWindows.jpg

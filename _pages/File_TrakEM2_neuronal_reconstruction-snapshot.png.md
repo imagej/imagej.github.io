@@ -1,1 +1,0 @@
-Upload TrakEM2_neuronal_reconstruction-snapshot.png for TrakEM2 neuronal reconstruction

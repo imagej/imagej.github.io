@@ -1,1 +1,0 @@
-A crossroad in NYC.

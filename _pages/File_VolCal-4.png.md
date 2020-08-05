@@ -1,1 +1,0 @@
-Selection of a line.

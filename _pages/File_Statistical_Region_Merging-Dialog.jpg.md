@@ -1,1 +1,0 @@
-Upload Statistical_Region_Merging-Dialog.jpg for Statistical_Region_Merging

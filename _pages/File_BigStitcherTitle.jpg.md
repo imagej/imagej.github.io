@@ -1,1 +1,0 @@
-Illustration of BigStitcher

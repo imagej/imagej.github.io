@@ -1,1 +1,0 @@
-Transmission Electron Micrograph

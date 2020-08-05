@@ -1,1 +1,0 @@
-The banner for the ImageJ conference 2010

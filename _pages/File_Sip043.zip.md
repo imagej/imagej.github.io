@@ -1,1 +1,0 @@
-Demo stack for SIPcharts

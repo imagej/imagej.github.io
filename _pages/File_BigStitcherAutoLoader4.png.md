@@ -1,1 +1,0 @@
-Automatic Loader save option

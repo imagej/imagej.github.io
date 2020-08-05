@@ -1,1 +1,0 @@
-CoverMaker_database_log.png

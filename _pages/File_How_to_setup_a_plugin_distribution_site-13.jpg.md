@@ -1,1 +1,0 @@
-Upload How_to_setup_a_plugin_distribution_site-13.jpg for How_to_setup_a_plugin_distribution_site

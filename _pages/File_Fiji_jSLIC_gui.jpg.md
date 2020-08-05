@@ -1,1 +1,0 @@
-interface of Superpixels plugin

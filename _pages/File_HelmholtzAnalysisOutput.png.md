@@ -1,1 +1,0 @@
-Upload HelmholtzAnalysisOutput.png for Helmholtz_Analysis

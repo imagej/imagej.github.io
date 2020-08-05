@@ -1,1 +1,0 @@
-Upload Install_Fiji_on_MacOSX-Extract.jpg for Install_Fiji_on_MacOSX

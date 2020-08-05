@@ -1,1 +1,0 @@
-Upload How_to_make_a_new_tutorial-Rename1.jpg for How_to_make_a_new_tutorial

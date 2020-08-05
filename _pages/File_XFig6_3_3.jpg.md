@@ -1,3 +1,0 @@
-ELKI logo
-
-[[Category:Logos]]

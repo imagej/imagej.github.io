@@ -1,1 +1,0 @@
-ROI picker tool.

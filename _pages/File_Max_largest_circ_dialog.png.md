@@ -1,1 +1,0 @@
-Max inscribed circles Dialog

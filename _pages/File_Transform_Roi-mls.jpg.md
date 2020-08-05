@@ -1,1 +1,0 @@
-A photograph and a cartoon registered into each other using the Moving Least Squares Method and a similarity transform as estimated from manually set landmark correspondences by the Landmark Correspondences transformation plugin.

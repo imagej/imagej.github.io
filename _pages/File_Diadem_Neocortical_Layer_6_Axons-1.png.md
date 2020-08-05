@@ -1,1 +1,0 @@
-Upload Diadem_Neocortical_Layer_6_Axons-1.png for Diadem_Neocortical_Layer_6_Axons

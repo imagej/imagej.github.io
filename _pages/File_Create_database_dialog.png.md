@@ -1,1 +1,0 @@
-Create Covermaker database dialog

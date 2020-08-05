@@ -1,1 +1,0 @@
-refutation of overlap coefficient
