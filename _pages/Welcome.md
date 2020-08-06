@@ -15,7 +15,8 @@ description: test description
 <tbody>
 <tr class="odd">
 <td><p><a href=""><img src="/images/pages/Imagej2-icon.png" width="320px"/></a></p></td>
-<td><h1 style="font-size: 5em; margin-bottom: 0">
+<td style="vertical-align: top">
+<h1 style="font-size: 5em; margin-bottom: 0">
 <p>ImageJ</p>
 </h1>
 <h3 style="margin-bottom: 1em">
@@ -83,8 +84,8 @@ Tools & Features
 
 </h2>
 
-|                                              |                                                                                                                                                                                                                                                                                                     |
-| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                         |                                                                                                                                                                                                                                                                                                                                          |
+| ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Open source](Open_source )        | ImageJ is a tool for the {% include wikipedia title='Scientific\_method\#Communication\_and\_community' text='scientific community'%}. To maintain transparency, the [ImageJ application](Downloads ) and its [source code](source_code ) will always be freely available. |
 | [Reproducible](Reproducibility )   | Powerful tools such as the [Script Editor](Script_Editor ) and [personal update sites](personal_update_sites ) help you develop and share reproducible analysis workflows.                                                                                                      |
 | [Interoperable](Interoperability ) | ImageJ is [not an island](SciJava ). Use the best tool for the job, including [KNIME](KNIME ), [ITK](ITK ), [MATLAB](MATLAB ), and a multitude of [scripting](scripting ) languages.                                                              |
@@ -95,8 +96,8 @@ Join the Community
 
 </h2>
 
-|                                          |                                                                                                                                          |
-| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                     |                                                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Image.sc Forum](https://forum.image.sc) | A great place to ask and answer questions, and become part of the community that has driven ImageJ's success.                            |
 | [GitHub Issues](Issues )       | The [ImageJ team](Contributors ) uses [GitHub](GitHub ) for bug reports, technical suggestions and feature requests. |
 | [Contact and Help](Help )      | For more ways to communicate: [mailing lists](mailing_lists ), [chat](chat ) services and more.                      |

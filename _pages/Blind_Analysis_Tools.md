@@ -48,7 +48,7 @@ Grouping comes in handy when, for example, different channels are saved in separ
   -   
     {| class="wikitable"
 
-\! style="text-align:left;"| File name \! Part 1 \! Part 2 |- style="color: green;" |1404\_1\_w1TL-BF\_tub0 |1404\_1 |\_w1TL-BF\_tub0 |- style="color: blue;" |1404\_2\_w1TL-BF\_tub1 |1404\_2 |\_w1TL-BF\_tub1 |- style="color: green;" |1404\_1\_w2SD-561 |1404\_1 |\_w2SD-561 |- style="color: green;" |1404\_1\_w3SD-488 |1404\_1 |\_w3SD-488 |- style="color: blue;" |1404\_2\_w2SD-561 |1404\_2 |\_w2SD-561 |- style="color: blue;" |1404\_2\_w3SD-488 |1404\_2 |\_w3SD-488 |}
+\!%NN%text-align:left;%OO% File name \! Part 1 \! Part 2 |- style="color: green;" |1404\_1\_w1TL-BF\_tub0 |1404\_1 |\_w1TL-BF\_tub0 |- style="color: blue;" |1404\_2\_w1TL-BF\_tub1 |1404\_2 |\_w1TL-BF\_tub1 |- style="color: green;" |1404\_1\_w2SD-561 |1404\_1 |\_w2SD-561 |- style="color: green;" |1404\_1\_w3SD-488 |1404\_1 |\_w3SD-488 |- style="color: blue;" |1404\_2\_w2SD-561 |1404\_2 |\_w2SD-561 |- style="color: blue;" |1404\_2\_w3SD-488 |1404\_2 |\_w3SD-488 |}
 
 Part 1 will determine the group and part 2 will determine the suffix of each file in the group. In the above example, all files in a group are shown in the same color.
 
@@ -63,12 +63,12 @@ In advance mode, you can freely choose how many files should be copied in the ou
 Following are some examples of different replicates parameter settings for *n*=6 and no grouping:
 
 | Example | Parameter setting              | Result                                                                                                                                                                                    |
-| ------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1       | Minimum=0, Maximum=1, Total=6  | All six files will be copied once with encrypted names.                                                                                                                                   |
-| 2       | Minimum=1, Maximum=1, Total=6  | All six files will be copied once with encrypted names.                                                                                                                                   |
-| 3       | Minimum=1, Maximum=2, Total=10 | All six files will be copied once with encrypted names. In addition, four files will be randomly chosen and be copied with encrypted names. No file will be repeated more than two times. |
-| 4       | Minimum=1, Maximum=5, Total=20 | All six files will be copied once with encrypted names. In addition, 14 files will be randomly chosen and be copied with encrypted names. No file will be repeated more than five times.  |
-| 5       | Minimum=0, Maximum=5, Total=20 | 20 files will be randomly chosen and be copied with encrypted names. No file will be repeated more than five times.                                                                       |
+| ------------------------------ | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1                              | Minimum=0, Maximum=1, Total=6  | All six files will be copied once with encrypted names.                                                                                                                                   |
+| 2                              | Minimum=1, Maximum=1, Total=6  | All six files will be copied once with encrypted names.                                                                                                                                   |
+| 3                              | Minimum=1, Maximum=2, Total=10 | All six files will be copied once with encrypted names. In addition, four files will be randomly chosen and be copied with encrypted names. No file will be repeated more than two times. |
+| 4                              | Minimum=1, Maximum=5, Total=20 | All six files will be copied once with encrypted names. In addition, 14 files will be randomly chosen and be copied with encrypted names. No file will be repeated more than five times.  |
+| 5                              | Minimum=0, Maximum=5, Total=20 | 20 files will be randomly chosen and be copied with encrypted names. No file will be repeated more than five times.                                                                       |
 
 ## Analyse & Decide
 

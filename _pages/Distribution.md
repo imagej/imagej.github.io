@@ -40,10 +40,11 @@ The first goal is to get your extension into the hands of users.
 <td><p><strong>Create your own update site</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Steps</strong></p></td>
+<td style="background: #dfd"><p> <strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td><ul>
+<td style="background: #dfd vertical-align: top">
+<ul>
 <li><strong><a href="How_to_set_up_and_populate_an_update_site" title="wikilink"> Create your update site</a></strong>, then <strong><a href="How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site" title="wikilink">upload your extension to it</a></strong>.</li>
 <li>You may add your update site to the list of built-in sites by editing the <strong>{% include list-of-update-sites%}
 </strong> page.</li>
@@ -57,10 +58,11 @@ The first goal is to get your extension into the hands of users.
 <td><p><strong>Distribute it as part of Fiji</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Steps</strong></p></td>
+<td style="background: #dfd"><p><strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td><ul>
+<td style="background: #dfd vertical-align: top">
+<ul>
 <li>Make a post on the <strong><a href="Forum" title="wikilink">ImageJ forum</a></strong> to initiate a request.</li>
 </ul></td>
 </tr>
@@ -74,7 +76,8 @@ The first goal is to get your extension into the hands of users.
 <td><p><strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td><ul>
+<td style="vertical-align: top">
+<ul>
 <li>Create an archive (TAR, ZIP, etc.).</li>
 <li>Upload the archive to the relevant web space, and link it.</li>
 </ul></td>
@@ -92,10 +95,11 @@ If you want to facilitate good science, please [share your source code](Open_Sou
 <td><p><strong>Host on GitHub in your userspace or organization</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Steps</strong></p></td>
+<td style="background: #dfd"><p> <strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td><ul>
+<td style="background: #dfd vertical-align: top">
+<ul>
 <li>Create an account on <strong><a href="https://github.com">GitHub</a></strong>.</li>
 <li><strong><a href="https://help.github.com/articles/create-a-repo">Create a new repository</a></strong> for your project.</li>
 <li><strong><a href="https://help.github.com/articles/pushing-to-a-remote">Push your code</a></strong> there.</li>
@@ -109,10 +113,11 @@ If you want to facilitate good science, please [share your source code](Open_Sou
 <td><p><strong>Host on GitHub in the Fiji organization (for <a href="Fiji_contribution_requirements" title="wikilink">extensions distributed with Fiji</a>)</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Steps</strong></p></td>
+<td style="background: #dfd"><p><strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td><ul>
+<td style="background: #dfd vertical-align: top">
+<ul>
 <li>Request a <strong><a href="Governance" title="wikilink">Fiji maintainer</a></strong> create a repository for you and add you as a contributor.</li>
 <li>Meet the <strong><a href="Fiji_contribution_requirements" title="wikilink">Fiji contribution requirements</a></strong>.</li>
 </ul></td>
@@ -127,7 +132,8 @@ If you want to facilitate good science, please [share your source code](Open_Sou
 <td><p><strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td><ul>
+<td style="vertical-align: top">
+<ul>
 <li>Similar to GitHub, but using <a href="https://bitbucket.org/">BitBucket</a> instead.</li>
 </ul></td>
 </tr>
@@ -141,7 +147,8 @@ If you want to facilitate good science, please [share your source code](Open_Sou
 <td><p><strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td><ul>
+<td style="vertical-align: top">
+<ul>
 <li>Similar to GitHub, but using <a href="http://sourceforge.net/">SourceForge</a> instead.</li>
 </ul></td>
 </tr>
@@ -155,7 +162,8 @@ If you want to facilitate good science, please [share your source code](Open_Sou
 <td><p><strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td><ul>
+<td style="vertical-align: top">
+<ul>
 <li>Create an archive (TAR, ZIP, etc.).</li>
 <li>Upload the archive to the relevant web space, and link it.</li>
 <li>Users download and unpack the archive.</li>
@@ -174,10 +182,11 @@ Useful extensions deserve corresponding documentation explaining how to use them
 <td><p><strong>Create an ImageJ wiki page</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Steps</strong></p></td>
+<td style="background: #dfd"><p> <strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td><ul>
+<td style="background: #dfd vertical-align: top">
+<ul>
 <li><strong><a href="https://imagej.net/index.php?title=Special:UserLogin&amp;returnto=Welcome&amp;type=signup">Create an account</a></strong>.</li>
 <li><strong><a href="https://www.mediawiki.org/wiki/Help:Starting_a_new_page">Create a page</a></strong> for your extension.</li>
 </ul></td>
@@ -192,7 +201,8 @@ Useful extensions deserve corresponding documentation explaining how to use them
 <td><p><strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td><ul>
+<td style="vertical-align: top">
+<ul>
 <li>Request an account from an IIDP administrator.</li>
 <li><a href="http://imagejdocu.tudor.lu/doku.php?id=create_new_content">Create a page</a> for your extension.</li>
 </ul></td>
@@ -207,7 +217,8 @@ Useful extensions deserve corresponding documentation explaining how to use them
 <td><p><strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td><ul>
+<td style="vertical-align: top">
+<ul>
 <li>Prepare an HTML page modeled after the <a href="https://imagej.net/plugins/index.html">list of ImageJ 1.x plugins</a>.</li>
 <li>Email it to {% include person content='Rasband' %}, the developer of ImageJ 1.x, and sole maintainer of the <a href="https://imagej.net/index.html">ImageJ 1.x website</a>.</li>
 </ul></td>
@@ -222,7 +233,7 @@ Useful extensions deserve corresponding documentation explaining how to use them
 <td><p><strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td><p>(Varies)</p></td>
+<td style="vertical-align: top"><p> (Varies)</p></td>
 </tr>
 </tbody>
 </table>

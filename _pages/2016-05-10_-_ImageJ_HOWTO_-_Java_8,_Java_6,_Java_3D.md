@@ -20,16 +20,16 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 <th><p>Java<br />
 version</p></th>
 <th><p>Platforms</p></th>
-<th><p>Installation</p></th>
-<th><p>Updates</p></th>
-<th><p><a href="Java_3D" title="wikilink">Java 3D</a></p></th>
+<th style="width: 30%"><p> Installation</p></th>
+<th style="width: 30%"><p> Updates</p></th>
+<th style="width: 30%"><p> <a href="Java_3D" title="wikilink">Java 3D</a></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><a href="Fiji|x64px"><img src="/images/pages/Fiji-icon.png" width="alt=Fiji"/></a></p></td>
 <td><p>Java 8</p></td>
-<td><p><img src="/images/pages/Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
+<td style="white-space: nowrap"><p> <img src="/images/pages/Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
 <img src="/images/pages/Osx.png" title="fig:Osx.png" alt="Osx.png" height="32" /><br />
 <img src="/images/pages/Tux.png" title="fig:Tux.png" alt="Tux.png" height="32" /></p></td>
 <td><p><strong>Recommended.</strong> <a href="Fiji/Downloads" title="wikilink">Download the newest Fiji</a> for your platform. It comes bundled with Java 8, with the Java-8 update site enabled.</p></td>
@@ -38,7 +38,7 @@ version</p></th>
 </tr>
 <tr class="even">
 <td><p>Java 6</p></td>
-<td><p><img src="/images/pages/Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
+<td style="white-space: nowrap"><p> <img src="/images/pages/Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
 <img src="/images/pages/Tux.png" title="fig:Tux.png" alt="Tux.png" height="32" /></p></td>
 <td><p>Download the final (2017-May-30) <a href="Fiji/Downloads#Java_6" title="wikilink">Java-6 version of Fiji</a>. It comes bundled with Java 6 and all platform launchers.</p></td>
 <td><p>Run <a href="Updater" title="wikilink">{% include bc content='Help|Update...'%}</a> to update to the latest Java-6-compatible version. Your Fiji will become outdated over time, stuck on the final Java-6-compatible plugin versions.</p></td>
@@ -70,7 +70,7 @@ version</p></th>
 <tr class="odd">
 <td><p><a href="ImageJ2|x64px"><img src="/images/pages/Imagej2-icon.png" width="alt=ImageJ2"/></a></p></td>
 <td><p>Java 8</p></td>
-<td><p><img src="/images/pages/Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
+<td style="white-space: nowrap"><p> <img src="/images/pages/Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
 <img src="/images/pages/Osx.png" title="fig:Osx.png" alt="Osx.png" height="32" /><br />
 <img src="/images/pages/Tux.png" title="fig:Tux.png" alt="Tux.png" height="32" /></p></td>
 <td><p><a href="Downloads" title="wikilink">Download the newest ImageJ</a> for your platform. It comes bundled <em>without</em> Java, and <em>without</em> the Java-8 update site enabled.</p>
@@ -83,7 +83,7 @@ version</p></th>
 </tr>
 <tr class="even">
 <td><p>Java 6</p></td>
-<td><p><img src="/images/pages/Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
+<td style="white-space: nowrap"><p> <img src="/images/pages/Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
 <img src="/images/pages/Osx.png" title="fig:Osx.png" alt="Osx.png" height="32" /><br />
 <img src="/images/pages/Tux.png" title="fig:Tux.png" alt="Tux.png" height="32" /></p></td>
 <td><p>It is possible to set up a "plain" ImageJ2 with Java 6, but <strong>not recommended</strong>:</p>

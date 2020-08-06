@@ -526,8 +526,8 @@ The next paragraphs list and document the current features in MaMuT.
 
 ### Spot features.
 
-|                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Quality`            | The quality of the spot detection. This feature is normally created by spot detectors (such as the one used in the semi-automatic tracking), and relates to how likely the spot is to be relevant. By convention it is a positive number, and high values indicate good detection. Spot created manually have all a quality value equal to -1.                                                                                                                                                                                                                                                                                                                       |
 | `X`, `Y` & `Z`       | The spot location in the global common coordinate system. Units are whatever physical units used when creating the BigDataViewer file.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | `T`                  | The spot time in physical unit. Units are whatever time units used when creating the BigDataViewer file.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -536,23 +536,23 @@ The next paragraphs list and document the current features in MaMuT.
 | `Source ID`          | The index of the source view in which the spot was created. For instance, if you created the spot with the first source active, then its source ID is 0.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | `Cell division time` | This is a special feature made for cell lineaging. It is expressed in time units how long a the cell tracked by this spot takes to divide. The time is measured from the mother division to the daughter division, so the cell division time value will be the same for all the spots of a branch in a track. The branches that do not start with a cell division or do not finish by a cell division are excluded from calculation, and the value of spots that belong to such branches defaults to `NaN`. This is why if you use this feature in with our demo dataset to color spots, they will all be dark gray, as none of our tracks follow a full cell cycle. |
 | `Manual spot color`  | This is a special feature, that is not automatically calculated. You can assign manually a color to a set of spots. To do so, select some spots and in TrackScheme, right-click to show the pop-up menu. The menu item `Manual color for X spots` will let you set the selected spot color. This color will then be used in the views if you select the `Manual color` item in the **Set color by** menu in the spot panel of the main GUI window. Manual colors are saved to and retrieved from a MaMuT file.                                                                                                                                                       |
-|                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
 ### Link features.
 
-|                                     |                                                                                                                                                                                                                          |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                         |                                                                                                                                                                                                                                              |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Spot source ID` & `Spot target ID` | The ID of the spot that is the source, respectively the target, of this link. In MaMuT and TrackMate, links have a direction, that follows time.                                                                         |
 | `Link cost`                         | The cost associated to the link. This value is normally set by particle-linking algorithms, that can create links between spots following minimization of global cost. Links created manually get a default value of -1. |
 | `Velocity`                          | The velocity calculated between the source and target spots, in physical units.                                                                                                                                          |
 | `Displacement`                      | The displacement calculated between the source and target spots, in physical units.                                                                                                                                      |
 | `Manual edge color`                 | Life for manual spot color, but for links.                                                                                                                                                                               |
-|                                     |                                                                                                                                                                                                                          |
+|                                                         |                                                                                                                                                                                                                                              |
 
 ### Track features.
 
-|                                                      |                                                                                                                                                                                                                                         |
-| ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                          |                                                                                                                                                                                                                                                             |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Track index` & `Track ID`                           | The track index and ID. Track index runs from 0 to the number of tracks. Track IDs are unique numbers generated for every new track.                                                                                                    |
 | `Duration of track`                                  | The track duration in time units. Track duration is calculated from the earliest to the latest spot in time in the track.                                                                                                               |
 | `Track start` & `Track stop`                         | The track start and stop times. They are measured at the earliest and latest spots in the track.                                                                                                                                        |
@@ -564,7 +564,7 @@ The next paragraphs list and document the current features in MaMuT.
 | `Number of merge events`                             | The number of merge events in the track. A merge event happens when a spot is the target to more than one link (but the source to at most one link). When several cell merges into one gives rise to a merge event.                     |
 | `Complex points`                                     | The number of complex points in the track. A complex point is a spot which the source to more than one link and the target of more than one link.                                                                                       |
 | `Mean cell division time` & `Std cell division time` | The mean and standard deviation values of the `Cell division time` spot feature described above, averaged across track branches, and excluding undefined branch values.                                                                 |
-|                                                      |                                                                                                                                                                                                                                         |
+|                                                                          |                                                                                                                                                                                                                                                             |
 
 ## Customizing MaMuT viewer key-bindings.
 
@@ -594,117 +594,117 @@ Here is a list of all available commands.
 <table>
 <tbody>
 <tr class="odd">
-<td><p><code>add spot</code></p></td>
-<td><p>Add a spot at mouse location.</p>
+<td style="padding: 5px;"><p> <code>add spot</code></p></td>
+<td style="padding: 5px;"><p> Add a spot at mouse location.</p>
 <p>If the <code>auto-linking</code> mode is on, also link it with the spot previously in the selection, and set the newly added spot to be the current selection.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>delete spot</code></p></td>
-<td><p>Delete the spot at mouse location.</p></td>
+<td style="padding: 5px;"><p> <code>delete spot</code></p></td>
+<td style="padding: 5px;"><p> Delete the spot at mouse location.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>increase spot radius</code></p></td>
-<td><p>Increase the spot radius at mouse location by 10%.</p></td>
+<td style="padding: 5px;"><p> <code>increase spot radius</code></p></td>
+<td style="padding: 5px;"><p> Increase the spot radius at mouse location by 10%.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>increase spot radius a lot</code></p></td>
-<td><p>Increase the spot radius at mouse location by 100%.</p></td>
+<td style="padding: 5px;"><p> <code>increase spot radius a lot</code></p></td>
+<td style="padding: 5px;"><p> Increase the spot radius at mouse location by 100%.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>increase spot radius a bit</code></p></td>
-<td><p>Increase the spot radius at mouse location by 1%.</p></td>
+<td style="padding: 5px;"><p> <code>increase spot radius a bit</code></p></td>
+<td style="padding: 5px;"><p> Increase the spot radius at mouse location by 1%.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>decrease spot radius</code></p></td>
-<td><p>Decrease the spot radius at mouse location by 9.10%.</p></td>
+<td style="padding: 5px;"><p> <code>decrease spot radius</code></p></td>
+<td style="padding: 5px;"><p> Decrease the spot radius at mouse location by 9.10%.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>decrease spot radius a lot</code></p></td>
-<td><p>Decrease the spot radius at mouse location by 50%.</p></td>
+<td style="padding: 5px;"><p> <code>decrease spot radius a lot</code></p></td>
+<td style="padding: 5px;"><p> Decrease the spot radius at mouse location by 50%.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>decrease spot radius a bit</code></p></td>
-<td><p>Decrease the spot radius at mouse location by 1%.</p></td>
+<td style="padding: 5px;"><p> <code>decrease spot radius a bit</code></p></td>
+<td style="padding: 5px;"><p> Decrease the spot radius at mouse location by 1%.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>toggle link</code></p></td>
-<td><p>Add / Remove a link between two spots in the selection.</p></td>
+<td style="padding: 5px;"><p> <code>toggle link</code></p></td>
+<td style="padding: 5px;"><p> Add / Remove a link between two spots in the selection.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>toggle linking mode</code></p></td>
-<td><p>Toggle the <code>auto-linking</code> mode.</p></td>
+<td style="padding: 5px;"><p> <code>toggle linking mode</code></p></td>
+<td style="padding: 5px;"><p> Toggle the <code>auto-linking</code> mode.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>semi-auto tracking</code></p></td>
-<td><p>Launch semi-automatic tracking from the cells currently selected.</p></td>
+<td style="padding: 5px;"><p> <code>semi-auto tracking</code></p></td>
+<td style="padding: 5px;"><p> Launch semi-automatic tracking from the cells currently selected.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>help</code></p></td>
-<td><p>Display the help window.</p></td>
+<td style="padding: 5px;"><p> <code>help</code></p></td>
+<td style="padding: 5px;"><p> Display the help window.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>brightness settings</code></p></td>
-<td><p>Toggle the brightness settings dialog.</p></td>
+<td style="padding: 5px;"><p> <code>brightness settings</code></p></td>
+<td style="padding: 5px;"><p> Toggle the brightness settings dialog.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>visibility and grouping</code></p></td>
-<td><p>Toggle the visibility and grouping settings dialog.</p></td>
+<td style="padding: 5px;"><p> <code>visibility and grouping</code></p></td>
+<td style="padding: 5px;"><p> Toggle the visibility and grouping settings dialog.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>toggle interpolation</code></p></td>
-<td><p>Toggle interpolation method for pixel drawing between <code>Nearest neighbor</code> and <code>Tri-linear interpolation</code>.</p></td>
+<td style="padding: 5px;"><p> <code>toggle interpolation</code></p></td>
+<td style="padding: 5px;"><p> Toggle interpolation method for pixel drawing between <code>Nearest neighbor</code> and <code>Tri-linear interpolation</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>toggle fused mode</code></p></td>
-<td><p>Toggle fused or single-source display mode.</p></td>
+<td style="padding: 5px;"><p> <code>toggle fused mode</code></p></td>
+<td style="padding: 5px;"><p> Toggle fused or single-source display mode.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>toggle grouping</code></p></td>
-<td><p>Toggle grouping mode.</p></td>
+<td style="padding: 5px;"><p> <code>toggle grouping</code></p></td>
+<td style="padding: 5px;"><p> Toggle grouping mode.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>toggle source visibility X</code></p></td>
-<td><p>Replace X by a digit from 0 to 9. Toggle the visibility of the source X.</p></td>
+<td style="padding: 5px;"><p> <code>toggle source visibility X</code></p></td>
+<td style="padding: 5px;"><p> Replace X by a digit from 0 to 9. Toggle the visibility of the source X.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>align XY plane</code></p></td>
-<td><p>Change the current view to align it with the XY planes of the source currently active.</p></td>
+<td style="padding: 5px;"><p> <code>align XY plane</code></p></td>
+<td style="padding: 5px;"><p> Change the current view to align it with the XY planes of the source currently active.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>align XZ plane</code></p></td>
-<td><p>Change the current view to align it with the XZ planes of the source currently active.</p></td>
+<td style="padding: 5px;"><p> <code>align XZ plane</code></p></td>
+<td style="padding: 5px;"><p> Change the current view to align it with the XZ planes of the source currently active.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>align ZY plane</code></p></td>
-<td><p>Change the current view to align it with the ZY planes of the source currently active.</p></td>
+<td style="padding: 5px;"><p> <code>align ZY plane</code></p></td>
+<td style="padding: 5px;"><p> Change the current view to align it with the ZY planes of the source currently active.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>next timepoint</code></p></td>
-<td><p>Move to the next time-point.</p></td>
+<td style="padding: 5px;"><p> <code>next timepoint</code></p></td>
+<td style="padding: 5px;"><p> Move to the next time-point.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>previous timepoint</code></p></td>
-<td><p>Move to the previous time-point.</p></td>
+<td style="padding: 5px;"><p> <code>previous timepoint</code></p></td>
+<td style="padding: 5px;"><p> Move to the previous time-point.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>step time forward</code></p></td>
-<td><p>Jump to the next time step.</p></td>
+<td style="padding: 5px;"><p> <code>step time forward</code></p></td>
+<td style="padding: 5px;"><p> Jump to the next time step.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>step time backward</code></p></td>
-<td><p>Jump to the previous time step.</p></td>
+<td style="padding: 5px;"><p> <code>step time backward</code></p></td>
+<td style="padding: 5px;"><p> Jump to the previous time step.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>set bookmark</code></p></td>
-<td><p>Store a bookmark for the current view.</p></td>
+<td style="padding: 5px;"><p> <code>set bookmark</code></p></td>
+<td style="padding: 5px;"><p> Store a bookmark for the current view.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>go to bookmark</code></p></td>
-<td><p>Move the view to the specified bookmark.</p></td>
+<td style="padding: 5px;"><p> <code>go to bookmark</code></p></td>
+<td style="padding: 5px;"><p> Move the view to the specified bookmark.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>got to bookmark orientation</code></p></td>
-<td><p>Orient the view to the specified bookmark orientation.</p></td>
+<td style="padding: 5px;"><p> <code>got to bookmark orientation</code></p></td>
+<td style="padding: 5px;"><p> Orient the view to the specified bookmark orientation.</p></td>
 </tr>
 </tbody>
 </table>
@@ -719,8 +719,8 @@ Here we recapitulate the default key-bindings for the MaMuT viewer. This image i
 
 TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list them here.
 
-|                                                                                                                               |                                                                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                   |                                                                                                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | {% include key content='press|F2' %}                                                                                          | Edit current spot name.                                                                                                                                                                             |
 | {% include key content='press|Delete' %}                                                                                      | Delete the current selection.                                                                                                                                                                       |
 | {% include key content='press|Home' %}                                                                                        | Center view on the first spot in current selection.                                                                                                                                                 |
@@ -736,4 +736,4 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
 | {% include key content='press|Page up' %} / {% include key content='press|Page down' %}                                       | Jump to the the previous / next track.                                                                                                                                                              |
 | {% include key content='press|Shift|Mousedrag' %}                                                                             | Pan the view.                                                                                                                                                                                       |
 | {% include key content='press|Shift|Mousewheel' %}                                                                            | Zoom in / out.                                                                                                                                                                                      |
-|                                                                                                                               |                                                                                                                                                                                                     |
+|                                                                                                                                                   |                                                                                                                                                                                                                         |

@@ -30,22 +30,22 @@ Thank you for your support.
 
 ## Publications to cite
 
-|                                      |                                             |                                                    |
-| ------------------------------------ | ------------------------------------------- | -------------------------------------------------- |
-| **Logo**                             | **Project**                                 | **Citation**                                       |
-| Core projects                        |                                             |                                                    |
-| {% include logo content='ImageJ2' %} | [ImageJ2](ImageJ2 )               | {% include publication content='ImageJ2' %}        |
-| {% include logo content='ImageJ1' %} | [ImageJ 1.x](ImageJ_1.x )         | {% include publication content='ImageJ' %}         |
-| Distributions of ImageJ              |                                             |                                                    |
-| {% include logo content='Fiji' %}    | [Fiji](Fiji )                     | {% include publication content='Fiji' %}           |
-| {% include logo content='BoneJ' %}   | [BoneJ](BoneJ )                   | {% include publication content='BoneJ' %}          |
-| {% include logo content='Bio7' %}    | [Bio7](Bio7 )                     | {% include publication content='Bio7' %}           |
-| Supporting libraries                 |                                             |                                                    |
-| {% include logo content='ImgLib2' %} | [ImgLib2](ImgLib2 )               | {% include publication content='ImgLib2' %}        |
+|                                      |                                                                        |                                                    |
+| ------------------------------------ | ---------------------------------------------------------------------- | -------------------------------------------------- |
+| **Logo**                             | **Project**                                                            | **Citation**                                       |
+| Core projects                        |                                                                        |                                                    |
+| {% include logo content='ImageJ2' %} | [ImageJ2](ImageJ2 )                                          | {% include publication content='ImageJ2' %}        |
+| {% include logo content='ImageJ1' %} | [ImageJ 1.x](ImageJ_1.x )                                    | {% include publication content='ImageJ' %}         |
+| Distributions of ImageJ              |                                                                        |                                                    |
+| {% include logo content='Fiji' %}    | [Fiji](Fiji )                                                | {% include publication content='Fiji' %}           |
+| {% include logo content='BoneJ' %}   | [BoneJ](BoneJ )                                              | {% include publication content='BoneJ' %}          |
+| {% include logo content='Bio7' %}    | [Bio7](Bio7 )                                                | {% include publication content='Bio7' %}           |
+| Supporting libraries                 |                                                                        |                                                    |
+| {% include logo content='ImgLib2' %} | [ImgLib2](ImgLib2 )                                          | {% include publication content='ImgLib2' %}        |
 | {% include logo content='SciJava' %} | [SciJava Common](SciJava_Common ) | {% include publication content='SciJava Common' %} |
-| {% include logo content='SCIFIO' %}  | [SCIFIO](SCIFIO )                 | {% include publication content='SCIFIO' %}         |
-| {% include logo content='ImageJ' %}  | [ImageJ Ops](ImageJ_Ops )         | {% include publication content='ImageJ Ops' %}     |
-|                                      |                                             |                                                    |
-|                                      |                                             |                                                    |
+| {% include logo content='SCIFIO' %}  | [SCIFIO](SCIFIO )                                            | {% include publication content='SCIFIO' %}         |
+| {% include logo content='ImageJ' %}  | [ImageJ Ops](ImageJ_Ops )                                    | {% include publication content='ImageJ Ops' %}     |
+|                                      |                                                                        |                                                    |
+|                                      |                                                                        |                                                    |
 
 See the [list of citable software](Category_Citable ) and [publications using Fiji](Fiji/Publications ) for additional citation information.

@@ -12,7 +12,7 @@ This page summarizes translation of basic operations of ImageJ1 and ImageJ2 API.
 <table>
 <thead>
 <tr class="header">
-<th><p>Task</p></th>
+<th style="text-align:left;"><p> Task</p></th>
 <th><p>ImageJ1</p></th>
 <th><p>ImageJ2</p></th>
 </tr>

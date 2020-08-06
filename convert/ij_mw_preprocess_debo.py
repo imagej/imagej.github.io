@@ -16,6 +16,8 @@ txt_capture_end = "%JJ%"
 txt_youtube = "%KK%"
 txt_single_quote = "%LL%"
 txt_newline = "%MM"
+txt_apply_style_start = "%NN%"
+txt_apply_style_end = "%OO%"
 
 template_regex = r'(((?<=\n)[ ]*)*(?<!<nowiki>)\{\{[\n ]*([A-Za-z0-9_]*)[ \n]*\:?\|?[ \n]*(([\s\S]*?))\}\})'
 template_parameter_regex = r'(\w+([ ]\w+)*)[ ]*=[ ]*([^|]*)'
@@ -145,12 +147,37 @@ def process_file(str_content):
     # replace '{{ stuff }}' mediawiki syntax with '{% include stuff %}` liquid
     content_tmp = replace_template(content_tmp)
 
-
     content_tmp = content_tmp.replace("{{-}}", "")
     content_tmp = content_tmp.replace("{{}}", "")
     content_tmp = content_tmp.replace("{{!}}", "")
 
+    content_tmp = re.sub(r'\{\|style=\"([^\n]+)\"[ ]*\n([^\n]+)', match_table_header, content_tmp)
+    content_tmp = re.sub(r'(\||\!) style=\"([^\"]*)\"[ ]*\|', match_table_row_style, content_tmp)
+    content_tmp = re.sub(r'(\!|\|) colspan=(\d*)[ ]*(?:style\=\"([^\"]*)\")?(?:[ ]*\|([^\n]*))', match_table_colspan, content_tmp)
+    # print(content_tmp)
     return content_tmp
+
+
+def match_table_header(match):
+    return txt_apply_style_start + shadow(match.group(1)) + txt_apply_style_end + '\n{|\n' + match.group(2)
+
+
+def match_table_row_style(match):
+    return match.group(1) + txt_apply_style_start + shadow(match.group(2)) + txt_apply_style_end
+
+
+def match_table_colspan(match):
+    emptycols = ''
+    for i in range(int(match.group(2))-1):
+        emptycols += '|\n'
+    return match.group(1) + match.group(4) + '\n' + emptycols
+
+
+def shadow(text):
+    shadowed = text.replace(";", "")
+    shadowed = shadowed.replace(":", "")
+    global_shadows.append((text, shadowed))
+    return shadowed
 
 
 def youtube_match(match):
@@ -225,7 +252,6 @@ def fix_simple_image(src, title):
 
 
 def fix_thumbnail_match(match):
-
     return fix_thumbnail(match.group(1), match.group(2))
 
 
@@ -534,12 +560,19 @@ def convert(path_in, path_out, layout, title):
         # open output file and create list
         content_tmp = read_file(path_out)
 
+        # print(content_tmp)
+
         # do replacements in md format
         content_tmp = reveal_includes(content_tmp)
         content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
         content_tmp = re.sub(r'((?<!\!)\[[^\]]*\]\()((?!#)(?!http)(?!mailto\:)(?:[^\)\"]|(?:\\\)))*)([.]*(?:\"[^\"]*\")?(?<!\\)\))', fix_link_match, content_tmp)
         content_tmp = re.sub(r'<img src=\"(?!http)(?!/images/pages/)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
         content_tmp = re.sub(r'((?<!-)\!\[(?!\[)[^\]]*\]\()((?!http)(?!\/images\/pages\/)[^\"\)]*)([ \n]*(?:\"[^\"]*\")?[ ]*\))', fix_md_image, content_tmp)
+        content_tmp = re.sub(r'(\<td|\<th)(\>.*?(?=' + txt_apply_style_start + '))' + txt_apply_style_start + '(.+?)(?=' + txt_apply_style_end + ')' + txt_apply_style_end, r'\1 style="\3"\2', content_tmp)
+        content_tmp = re.sub(r'' + txt_apply_style_start + '([^\n]*)' + txt_apply_style_end + '[\n ]*(<\w*)', r'\2 style="\1"', content_tmp)
+        content_tmp = re.sub(r'\<p\>\<\/p\>', r'', content_tmp)
+        content_tmp = re.sub(r'\n' + txt_apply_style_start + '.*' + txt_apply_style_end, r'', content_tmp)
+        content_tmp = re.sub(r'\| ' + txt_apply_style_start + '(.+?)(?=' + txt_apply_style_end + ')' + txt_apply_style_end, r'|', content_tmp)
 
         # pattern = re.compile(include_regex)
         # for match in re.findall(pattern, content_tmp):

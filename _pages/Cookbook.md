@@ -22,6 +22,7 @@ The Cookbook is based on the [Fiji](Fiji ) distribution of ImageJ. {% include do
 
 ## Installing the Cookbook plugins
 
+
 |                                                                       |                                                                                        |
 | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | From the Fiji menu, select {% include bc content='Help | Update...'%} | ![1\_Update\_Fiji.png](/images/pages/1 Update Fiji.png "1_Update_Fiji.png")                          |

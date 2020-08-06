@@ -57,7 +57,8 @@ All thresholding algorithms from [ImageJ 1.x](ImageJ_1.x ) have been ported to O
 <li>renyientropy</li>
 <li>shanbhag</li>
 </ul></td>
-<td><ul>
+<td style="vertical-align: top">
+<ul>
 <li>triangle</li>
 <li>yen</li>
 </ul></td>

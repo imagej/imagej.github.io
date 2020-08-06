@@ -62,7 +62,7 @@ Ashburn, VA, USA</p></td>
 <td><p>Neuroscience</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="TaskList" title="wikilink">2008 Apr 21 -<br />
+<td style="white-space: nowrap"><p> <a href="TaskList" title="wikilink">2008 Apr 21 -<br />
 2008 Apr 30</a></p></td>
 <td><p><a href="https://mpi-cbg.de/">MPI-CBG</a><br />
 Dresden, Germany</p></td>
@@ -70,7 +70,7 @@ Dresden, Germany</p></td>
 <td><p><a href="Fiji" title="wikilink">Fiji</a></p></td>
 </tr>
 <tr class="even">
-<td><p>2008 Dec 8 -<br />
+<td style="white-space: nowrap"><p> 2008 Dec 8 -<br />
 2008 Dec 13</p></td>
 <td><p><a href="https://www.ini.uzh.ch/">INI</a><br />
 Zürich, Switzerland</p></td>
@@ -78,7 +78,7 @@ Zürich, Switzerland</p></td>
 <td><p><a href="Fiji" title="wikilink">Fiji</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="2009-03-12_-_Dresden_Hackathon_2009" title="wikilink">2009 Mar 23 -<br />
+<td style="white-space: nowrap"><p> <a href="2009-03-12_-_Dresden_Hackathon_2009" title="wikilink">2009 Mar 23 -<br />
 2009 Apr 03</a></p></td>
 <td><p><a href="https://mpi-cbg.de/">MPI-CBG</a><br />
 Dresden, Germany</p></td>
@@ -86,7 +86,7 @@ Dresden, Germany</p></td>
 <td><p>Segmentation</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="2010-03-14_-_Hackathon_at_EMBL" title="wikilink">2010 Mar 14 -<br />
+<td style="white-space: nowrap"><p> <a href="2010-03-14_-_Hackathon_at_EMBL" title="wikilink">2010 Mar 14 -<br />
 2010 Mar 27</a></p></td>
 <td><p><a href="https://www.embl.de/">EMBL</a><br />
 Heidelberg, Germany</p></td>
@@ -94,7 +94,7 @@ Heidelberg, Germany</p></td>
 <td><p><a href="Fiji" title="wikilink">Fiji</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>2010 Oct 12 -<br />
+<td style="white-space: nowrap"><p> 2010 Oct 12 -<br />
 2010 Oct 23</p></td>
 <td><p><a href="https://www.lbl.gov/">LBNL</a><br />
 Berkeley CA, USA</p></td>
@@ -102,7 +102,7 @@ Berkeley CA, USA</p></td>
 <td><p>Running <a href="Micro-Manager" title="wikilink">Micro-Manager</a> inside <a href="Fiji" title="wikilink">Fiji</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="2011_Hackathon_in_Madison" title="wikilink">2011 Jan 27 -<br />
+<td style="white-space: nowrap"><p> <a href="2011_Hackathon_in_Madison" title="wikilink">2011 Jan 27 -<br />
 2011 Feb 13</a></p></td>
 <td><p><a href="https://discovery.wisc.edu/">WID</a><br />
 Madison, WI, USA</p></td>
@@ -110,7 +110,7 @@ Madison, WI, USA</p></td>
 <td><p>Multidimensional visualization</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="2011-12-14_-_Fiji_Hackathon_in_Dresden" title="wikilink">2011 Dec 9 -<br />
+<td style="white-space: nowrap"><p> <a href="2011-12-14_-_Fiji_Hackathon_in_Dresden" title="wikilink">2011 Dec 9 -<br />
 2011 Dec 19</a></p></td>
 <td><p><a href="https://mpi-cbg.de/">MPI-CBG</a><br />
 Dresden, Germany</p></td>
@@ -118,14 +118,14 @@ Dresden, Germany</p></td>
 <td><p>Interoperability</p></td>
 </tr>
 <tr class="even">
-<td><p>2012 Oct</p></td>
+<td style="white-space: nowrap"><p> 2012 Oct</p></td>
 <td><p><a href="https://www.uni-konstanz.de/en/">Universität Konstanz</a><br />
 Konstanz, Germany</p></td>
 <td><p>{% include person-list content='hornm|Dietzc|Pietzsch|Schindelin' %}</p></td>
 <td><p><a href="KNIME" title="wikilink">KNIME</a>+<a href="Fiji" title="wikilink">Fiji</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>2013 Jan 22 -<br />
+<td style="white-space: nowrap"><p> 2013 Jan 22 -<br />
 2013 Jan 25</p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
@@ -133,7 +133,7 @@ Madison, WI, USA</p></td>
 <td><p>{% include github org='scifio ' repo='scifio-imageio ' label='SCIFIO ImageIO plugin ' %}</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="2013-04-22_-_Trainable_Segmentation_Hackathon" title="wikilink">2013 Apr 14 -<br />
+<td style="white-space: nowrap"><p> <a href="2013-04-22_-_Trainable_Segmentation_Hackathon" title="wikilink">2013 Apr 14 -<br />
 2013 Apr 18</a></p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
@@ -149,7 +149,7 @@ Madison, WI, USA</p></td>
 <td><p><a href="ImgLib2" title="wikilink">ImgLib2</a></p></td>
 </tr>
 <tr class="even">
-<td><p>2013 Sep 9 -<br />
+<td style="white-space: nowrap"><p> 2013 Sep 9 -<br />
 2013 Sep 13</p></td>
 <td><p><a href="https://www.pasteur.fr/en">Institut Pasteur</a><br />
 Paris France</p></td>
@@ -157,7 +157,7 @@ Paris France</p></td>
 <td><p><a href="MaMuT" title="wikilink">MaMuT</a>, <a href="BigDataViewer" title="wikilink">BigDataViewer</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>2013 Nov 14 -<br />
+<td style="white-space: nowrap"><p> 2013 Nov 14 -<br />
 2013 Nov 27</p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
@@ -165,7 +165,7 @@ Madison, WI, USA</p></td>
 <td><p><a href="KNIME" title="wikilink">KNIME</a>+<a href="ImageJ" title="wikilink">ImageJ</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="2014-04-04_-_Announcing_ImageJ_Ops" title="wikilink">2014 Mar 4 -<br />
+<td style="white-space: nowrap"><p> <a href="2014-04-04_-_Announcing_ImageJ_Ops" title="wikilink">2014 Mar 4 -<br />
 2014 Mar 13</a></p></td>
 <td><p><a href="https://www.uni-konstanz.de/en/">Universität Konstanz</a><br />
 Konstanz, Germany</p></td>
@@ -173,7 +173,7 @@ Konstanz, Germany</p></td>
 <td><p><a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a> |- valign="top" |</p></td>
 </tr>
 <tr class="odd">
-<td><p>2014 Mar 20 -<br />
+<td style="white-space: nowrap"><p> 2014 Mar 20 -<br />
 2014 Mar 21</p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
@@ -181,7 +181,7 @@ Madison, WI, USA</p></td>
 <td><p>{% include github org='imagej ' repo='imagej-omero ' label='ImageJ-OMERO ' %}</p></td>
 </tr>
 <tr class="even">
-<td><p>2014 Jul 7 -<br />
+<td style="white-space: nowrap"><p> 2014 Jul 7 -<br />
 2014 Jul 10</p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
@@ -189,7 +189,7 @@ Madison, WI, USA</p></td>
 <td><p><a href="https://micro-manager.org/">Micro-Manager</a> and <a href="https://openspim.org/">OpenSPIM</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="2014-10-01_-_ImageJ_Ops_Hackathon" title="wikilink">2014 Sep 14 -<br />
+<td style="white-space: nowrap"><p> <a href="2014-10-01_-_ImageJ_Ops_Hackathon" title="wikilink">2014 Sep 14 -<br />
 2014 Sep 18</a></p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
@@ -213,7 +213,7 @@ Konstanz, Germany</p></td>
 <td><p><a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a> + <a href="KNIME" title="wikilink">KNIME</a> + <a href="CellProfiler" title="wikilink">CellProfiler</a> + more</p></td>
 </tr>
 <tr class="even">
-<td><p>2015 Apr 12 -<br />
+<td style="white-space: nowrap"><p> 2015 Apr 12 -<br />
 2015 Apr 17</p></td>
 <td><p><a href="https://janelia.org/">HHMI Janelia</a><br />
 Ashburn, VA, USA</p></td>
@@ -221,7 +221,7 @@ Ashburn, VA, USA</p></td>
 <td><p><a href="Multiview-Reconstruction" title="wikilink">Multiview-Reconstruction</a> and <a href="BigDataViewer" title="wikilink">BigDataViewer</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>2015 June 29 -<br />
+<td style="white-space: nowrap"><p> 2015 June 29 -<br />
 2015 July 3</p></td>
 <td><p><a href="https://www.mdc-berlin.de/13800178/en/bimsb">BIMSB/MDC</a><br />
 Berlin, Germany</p></td>
@@ -230,7 +230,7 @@ Berlin, Germany</p></td>
 and integration with ImageJ Ops &amp; KNIME</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="2015-07-27_-_Janelia_Hackathon" title="wikilink">2015 Jul 27 -<br />
+<td style="white-space: nowrap"><p> <a href="2015-07-27_-_Janelia_Hackathon" title="wikilink">2015 Jul 27 -<br />
 2015 Jul 31</a></p></td>
 <td><p><a href="https://janelia.org/">HHMI Janelia</a><br />
 Ashburn, VA, USA</p></td>
@@ -238,7 +238,7 @@ Ashburn, VA, USA</p></td>
 <td><p><a href="SCIFIO" title="wikilink">SCIFIO</a> performance and generality</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="Conference_2015_Hackathon" title="wikilink">2015 Sep 05 -<br />
+<td style="white-space: nowrap"><p> <a href="Conference_2015_Hackathon" title="wikilink">2015 Sep 05 -<br />
 2015 Sep 15</a></p></td>
 <td><p><a href="https://discovery.wisc.edu/">WID</a> + <a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
@@ -246,7 +246,7 @@ Madison, WI, USA</p></td>
 <td><p><a href="ImageJ2" title="wikilink">ImageJ2</a> Learnathon + <a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="2016-01-29_-_KNIME_Image_Processing_hackathon" title="wikilink">2016 Jan 12 -<br />
+<td style="white-space: nowrap"><p> <a href="2016-01-29_-_KNIME_Image_Processing_hackathon" title="wikilink">2016 Jan 12 -<br />
 2016 Jan 22</a></p></td>
 <td><p><a href="https://www.knime.org/contact">KNIME Konstanz Regional Office</a><br />
 Konstanz, Germany</p></td>
@@ -254,7 +254,7 @@ Konstanz, Germany</p></td>
 <td><p><a href="KNIME" title="wikilink">KNIME</a> Image Processing</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="2016-06-23_-_ImgLib2_hackathon" title="wikilink">2016 Jun 19 -<br />
+<td style="white-space: nowrap"><p> <a href="2016-06-23_-_ImgLib2_hackathon" title="wikilink">2016 Jun 19 -<br />
 2016 Jun 28</a></p></td>
 <td><p><a href="https://janelia.org/">HHMI Janelia</a><br />
 Ashburn, VA, USA</p></td>
@@ -262,7 +262,7 @@ Ashburn, VA, USA</p></td>
 <td><p>Metadata rich images</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="2016-07-21_-_KNIME_Image_Processing_hackathon" title="wikilink">2016 Jul 5 -<br />
+<td style="white-space: nowrap"><p> <a href="2016-07-21_-_KNIME_Image_Processing_hackathon" title="wikilink">2016 Jul 5 -<br />
 2016 Jul 14</a></p></td>
 <td><p><a href="https://www.knime.org/contact">KNIME Konstanz Regional Office</a><br />
 Konstanz, Germany</p></td>
@@ -270,7 +270,7 @@ Konstanz, Germany</p></td>
 <td><p><a href="KNIME" title="wikilink">KNIME</a> Image Processing + 3D viz</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="2016-12-20_-_Fiji_+_KNIP_hackathon" title="wikilink">2016 Dec 6 -<br />
+<td style="white-space: nowrap"><p> <a href="2016-12-20_-_Fiji_+_KNIP_hackathon" title="wikilink">2016 Dec 6 -<br />
 2016 Dec 16</a></p></td>
 <td><p><a href="https://mpi-cbg.de/">MPI-CBG</a><br />
 Dresden, Germany</p></td>
@@ -294,7 +294,7 @@ Madison, WI, USA</p></td>
 <td><p><a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="2017-09-25_-_KNIME_Image_Processing_hackathon" title="wikilink">2017 Sep 20 -<br />
+<td style="white-space: nowrap"><p> <a href="2017-09-25_-_KNIME_Image_Processing_hackathon" title="wikilink">2017 Sep 20 -<br />
 2017 Sep 29</a></p></td>
 <td><p><a href="https://www.knime.org/contact">KNIME Konstanz Regional Office</a><br />
 Konstanz, Germany</p></td>
@@ -302,7 +302,7 @@ Konstanz, Germany</p></td>
 <td><p><a href="KNIME" title="wikilink">KNIME</a> Image Processing, <a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a>, <a href="http://ilastik.org/">Ilastik</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>2017 Oct 17 -<br />
+<td style="white-space: nowrap"><p> 2017 Oct 17 -<br />
 2017 Oct 18</p></td>
 <td><p><a href="https://health.uconn.edu/">UConn Health</a><br />
 Farmington, CT, USA</p></td>
@@ -310,7 +310,7 @@ Farmington, CT, USA</p></td>
 <td><p><a href="Virtual_Cell" title="wikilink">Virtual Cell</a> + <a href="ImageJ" title="wikilink">ImageJ</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="2017-12-04_-_Fiji_+_KNIP_hackathon" title="wikilink">2017 Dec 4 -<br />
+<td style="white-space: nowrap"><p> <a href="2017-12-04_-_Fiji_+_KNIP_hackathon" title="wikilink">2017 Dec 4 -<br />
 2017 Dec 15</a></p></td>
 <td><p><a href="https://mpi-cbg.de/">MPI-CBG</a><br />
 Dresden, Germany</p></td>
@@ -318,7 +318,7 @@ Dresden, Germany</p></td>
 <td><p><a href="Fiji" title="wikilink">Fiji</a> &amp; <a href="KNIP" title="wikilink">KNIP</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>2018 Apr 22 -<br />
+<td style="white-space: nowrap"><p> 2018 Apr 22 -<br />
 2018 May 2</p></td>
 <td><p>University of Idaho<br />
 Moscow, ID, USA</p></td>

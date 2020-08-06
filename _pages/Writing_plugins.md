@@ -20,9 +20,9 @@ description: test description
 
 As ImageJ is built using the [SciJava principles of project management](Project_management ), this guide assumes a basic familiarity with these topics and tools, especially:
 
-|                                                          |                                                              |
-| -------------------------------------------------------- | ------------------------------------------------------------ |
-| <a href="Git"><img src="/images/pages/Git-icon.png" width="64px"/></a> | <a href="Maven"><img src="/images/pages/Maven-icon.png" width="64px"/></a> |
+|                                                                                                  |                                                                                                      |
+| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| <a style="text-align: center padding 0.3em%OO% <a href="Git"><img src="/images/pages/Git-icon.png" width="64px"/></a> | %NN%text-align: center padding 0.3em" href="Maven"><img src="/images/pages/Maven-icon.png" width="64px"/></a> |
 | [Git](Git )                                    | [Maven](Maven )                                    |
 
 Additionally, at a minimum, you should clone the {% include github org='imagej ' repo='tutorials ' label='imagej/tutorials repository ' %}. This will give you a local copy of the tutorials discussed in this guide, as well as templates for use in your own development.

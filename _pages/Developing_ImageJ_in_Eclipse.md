@@ -97,33 +97,112 @@ If you're having trouble, how to import and build your Maven + Eclipse project, 
 
 On OS X, replace {% include key content='Ctrl' %} with {% include key content='Cmd' %}
 
-|                                                                          |
-| ------------------------------------------------------------------------ |
-| **Navigation**                                                           |
-| {% include key content='Ctrl|Shift|T' %}                                 |
-| {% include key content='Ctrl|Shift|R' %}                                 |
-| {% include key content='F3' %}                                           |
-| {% include key content='Ctrl|O' %}                                       |
-| {% include key content='Ctrl|T' %}                                       |
-| {% include key content='Ctrl|L' %}                                       |
-| {% include key content='Ctrl|Q' %}                                       |
-| {% include key content='Ctrl|E' %}                                       |
-| **Editing**                                                              |
-| {% include key content='Alt|Up' %}, {% include key content='Alt|Down' %} |
-| {% include key content='Ctrl|D' %}                                       |
-| {% include key content='Ctrl|/' %}                                       |
-| {% include key content='Ctrl|1' %}                                       |
-| {% include key content='Ctrl|Space' %}                                   |
-| **Code cleanup**                                                         |
-| {% include key content='Ctrl|Shift|O' %}                                 |
-| {% include key content='Ctrl|Shift|F' %}                                 |
-| {% include key content='Alt|Shift|S' %}, {% include key content='U' %}   |
-| {% include key content='Alt|Shift|R' %}                                  |
-| **Debugging**                                                            |
-| {% include key content='Ctrl|Shift|B' %}                                 |
-| {% include key content='F5' %}                                           |
-| {% include key content='F6' %}                                           |
-| {% include key content='F7' %}                                           |
+<table>
+<tbody>
+<tr class="odd">
+<td><p><strong>Navigation</strong></p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Ctrl|Shift|T' %}</p></td>
+<td><p>Open a Java class from the workspace</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Ctrl|Shift|R' %}</p></td>
+<td><p>Open a file from the workspace</p></td>
+</tr>
+<tr class="even">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='F3' %}</p></td>
+<td><p>Jump to selected class<br />
+(to edit the code, see <a href="Architecture#Using_snapshot_couplings_during_development" title="wikilink">snapshot coupling</a>)</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Ctrl|O' %}</p></td>
+<td><p>Show superclass/subclass hierarchy</p></td>
+</tr>
+<tr class="even">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Ctrl|T' %}</p></td>
+<td><p>Show implementations of interface or class</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Ctrl|L' %}</p></td>
+<td><p>Go to line number</p></td>
+</tr>
+<tr class="even">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Ctrl|Q' %}</p></td>
+<td><p>Go to last edit location</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Ctrl|E' %}</p></td>
+<td><p>Go to next file in editor</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Editing</strong></p></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Alt|Up' %}, {% include key content='Alt|Down' %}</p></td>
+<td><p>Move current line up or down</p></td>
+</tr>
+<tr class="even">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Ctrl|D' %}</p></td>
+<td><p>Delete the current line</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Ctrl|/' %}</p></td>
+<td><p>Comment/uncomment the selected line(s)</p></td>
+</tr>
+<tr class="even">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Ctrl|1' %}</p></td>
+<td><p>Quick fix selected error</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Ctrl|Space' %}</p></td>
+<td><p>Auto-complete current selection</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Code cleanup</strong></p></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Ctrl|Shift|O' %}</p></td>
+<td><p>Organize imports</p></td>
+</tr>
+<tr class="even">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Ctrl|Shift|F' %}</p></td>
+<td><p>Format code<br />
+(BUT make sure you set the <a href="Coding_style#Eclipse_code_style_profiles" title="wikilink">coding style</a>)</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Alt|Shift|S' %}, {% include key content='U' %}</p></td>
+<td><p>Clean up (does format and much more)</p></td>
+</tr>
+<tr class="even">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Alt|Shift|R' %}</p></td>
+<td><p>Refactor/rename selected class/variable</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Debugging</strong></p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='Ctrl|Shift|B' %}</p></td>
+<td><p>Set/Remove breakpoint</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='F5' %}</p></td>
+<td><p>Step into</p></td>
+</tr>
+<tr class="even">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='F6' %}</p></td>
+<td><p>Step over</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align right vertical-align: top white-space: nowrap"><p> {% include key content='F7' %}</p></td>
+<td><p>Step out</p></td>
+</tr>
+</tbody>
+</table>
 
 </div>
 

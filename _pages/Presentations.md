@@ -20,21 +20,21 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
 <thead>
 <tr class="header">
 <th></th>
-<th><p><strong>Title</strong></p></th>
-<th><p><strong>Resources</strong></p></th>
+<th style="padding-left: 10px !important"><p> <strong>Title</strong></p></th>
+<th style="padding-left: 10px !important"><p> <strong>Resources</strong></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><a href="http://imagej.github.io/presentations/fiji-introduction/"><img src="/images/pages/Fiji-intro-slide.png" width="300px"/></a></p></td>
-<td><p>Introduction to Fiji</p></td>
-<td><p>Spring 2017: <a href="https://imagej.github.io/presentations/2017-05/fiji-introduction/">slides</a>, <a href="https://vimeo.com/218520761">video</a><br />
+<td style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important"><p> Introduction to Fiji</p></td>
+<td style="padding: 0.3em 1em 0.3em 10px !important"><p> Spring 2017: <a href="https://imagej.github.io/presentations/2017-05/fiji-introduction/">slides</a>, <a href="https://vimeo.com/218520761">video</a><br />
 Spring 2019: <a href="http://imagej.github.io/presentations/fiji-introduction/">slides</a><br />
 Fall 2019: <a href="https://docs.google.com/presentation/d/12TUYh2snsOAxcOBNprh70KOqV5gqdzEjGIo2UTHs-DY/edit?usp=sharing/">slides</a></p></td>
 </tr>
 <tr class="even">
-<td><p>Segmentation in Fiji</p></td>
-<td><p>Spring 2017: <a href="https://imagej.github.io/presentations/2017-05/fiji-segmentation/">slides</a>, <a href="https://vimeo.com/218520761#t=1h05m49s">video</a><br />
+<td style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important"><p> Segmentation in Fiji</p></td>
+<td style="padding: 0.3em 1em 0.3em 10px !important"><p> Spring 2017: <a href="https://imagej.github.io/presentations/2017-05/fiji-segmentation/">slides</a>, <a href="https://vimeo.com/218520761#t=1h05m49s">video</a><br />
 Spring 2019: <a href="http://imagej.github.io/presentations/fiji-segmentation/">slides</a><br />
 Winter 2020: <a href="https://docs.google.com/presentation/d/13FKh5BlkmfSjPJp9wRWFEpbgWz5D6rWfPBxGR7JV8PM/edit#slide=id.g7c8e1a894f_0_0/">slides</a></p></td>
 <td></td>
@@ -45,8 +45,8 @@ Winter 2020: <a href="https://docs.google.com/presentation/d/13FKh5BlkmfSjPJp9wR
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Scripting with Fiji</p></td>
-<td><p>Spring 2017: <a href="https://imagej.github.io/presentations/2017-05/fiji-scripting/">slides</a>, <a href="https://vimeo.com/218520432">video</a><br />
+<td style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important"><p> Scripting with Fiji</p></td>
+<td style="padding: 0.3em 1em 0.3em 10px !important"><p> Spring 2017: <a href="https://imagej.github.io/presentations/2017-05/fiji-scripting/">slides</a>, <a href="https://vimeo.com/218520432">video</a><br />
 Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">slides</a></p></td>
 <td></td>
 </tr>

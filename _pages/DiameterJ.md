@@ -130,9 +130,11 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
 <td><h4>
 <p><big> Summaries Folder </big></p>
 </h4></td>
+<td></td>
 </tr>
 <tr class="even">
 <td><p><strong>"File Source Name"_Total Summary.csv</strong></p></td>
+<td><p><strong>"File Source Name"_Total Summary.csv Continued</strong></p></td>
 </tr>
 <tr class="odd">
 <td><ol>
@@ -148,9 +150,21 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
 <li>Diameter Skewness: The third order moment about the mean</li>
 <li>Diameter Kurtosis: The fourth order moment about the mean.</li>
 </ol></td>
+<td><ol>
+<li>Fiber Length: The total length of the Fiber centerlines in the segmented image.</li>
+<li>Mean Pore Area: (Total number of black pixels counted in pores) / (Total number of pores in image)</li>
+<li>Pore Area SD: The standard deviation of all pore areas measured</li>
+<li>Min. Pore Area: The minimum pore area measured</li>
+<li>Max Pore Area: The maximum pore area measured</li>
+<li>Percent Porosity: (Total number of black pixels) / (Total pixels in an image)</li>
+<li>Intersection Density (100x100px): (Number of fiber overlaps)*10000 / (Total pixels in image)</li>
+<li>Characteristic Length: (Total length of all fiber centerlines) / (# of fiber overlaps)</li>
+</ol>
+<p>|- style="text-align:center" valign="top"</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>"File Source Name"_Pore Data.csv</strong></p></td>
+<td><p><strong>"File Source Name"_Histogram.csv</strong></p></td>
 </tr>
 <tr class="odd">
 <td><ol>
@@ -169,9 +183,17 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
 <li>Round: 4 × [Area] / (π × [Major axis]2) or the inverse of Aspect Ratio.</li>
 <li>Solidity: [Area] / [Convex area]</li>
 </ol></td>
+<td><ol>
+<li>Radius Value: Radius length (in pixels)</li>
+<li>Radius Count: Number of times the radius value occurred in the image. Also known as the frequency of occurrence and can also be interpreted as the length of fiber in an image that has a given radius
+<ul>
+<li>The radius or diameter histogram is constructed from the radius value (x-axis) and radius count (frequency of occurrence on y-axis)</li>
+</ul></li>
+</ol></td>
 </tr>
 <tr class="even">
 <td><p><strong>"File Source Name"_Intersection Coordinates.txt</strong></p></td>
+<td><p><strong>"File Source Name"_Radius Histogram.tif</strong></p></td>
 </tr>
 <tr class="odd">
 <td><ol>
@@ -185,9 +207,14 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
 <li>Upper left hand corner is 0,0</li>
 </ul></li>
 </ol></td>
+<td><ol>
+<li>Image of the histogram of all fiber radii in the image</li>
+</ol>
+<p>|- style="text-align:center" valign="top"</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>"File Source Name"_Compare.png</strong></p></td>
+<td><p><strong>"File Source Name"_Orientation.tif</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p>A montage image with four images in it</p>
@@ -200,6 +227,9 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
 <li>Fibers are in greyscale as transformed by the Euclidean distance transform</li>
 </ul></li>
 <li>Bottom Right Image - Pores found and analyzed by Diameterj</li>
+</ol></td>
+<td><ol>
+<li>An image with the frequency of orientation of the centerline of all fibers. This is an output of OrientationJ and was not coded by any developers from DiameterJ</li>
 </ol></td>
 </tr>
 </tbody>
@@ -251,9 +281,13 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 <tbody>
 <tr class="odd">
 <td><p><big> <strong>Download and install <a href="http://rsb.info.nih.gov/ij/download.html">ImageJ 1.48</a> or newer or <a href="Downloads" title="wikilink">Fiji</a> (any version)</strong> </big></p></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td><p><strong>Windows</strong></p></td>
+<td><p><strong>OSX</strong></p></td>
+<td><p><strong>Linux</strong></p></td>
 </tr>
 <tr class="odd">
 <td><ol>
@@ -274,6 +308,15 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 </ul>
 </dd>
 </dl></li>
+<li>Restart ImageJ</li>
+</ol></td>
+<td><ol>
+<li>Follow instructions <a href="http://rsb.info.nih.gov/ij/docs/install/osx.html#dandd">Here</a> or <a href="MacOSX_tips" title="wikilink">Here</a> for installation of ImageJ/Fiji on OSX</li>
+</ol></td>
+<td><ol>
+<li>Download and unzip the DiameterJ files (Find in "File" in the Info box above)</li>
+<li>Move or copy the three folders into the plugins folder of the directory where you have placed ImageJ.
+<p>:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ</p></li>
 <li>Restart ImageJ</li>
 </ol></td>
 </tr>

@@ -137,7 +137,7 @@ To use:
 <table>
 <tbody>
 <tr class="odd">
-<td><p>You can have more control over brightness and contrast adjustments with the {% include bc content='Process | Enhance contrast'%} menu command. With a stack, it analyzes the each slice’s histogram to make the adjustment.</p>
+<td style="border:none;padding:0in;"><p> You can have more control over brightness and contrast adjustments with the {% include bc content='Process | Enhance contrast'%} menu command. With a stack, it analyzes the each slice’s histogram to make the adjustment.</p>
 <p>The <em>Equalize contrast</em> command applies a non-linear stretch of the histogram based on the square root of its intensity.</p></td>
 </tr>
 </tbody>
@@ -185,15 +185,15 @@ With a background that is relatively even across the image, remove it with the *
 
 To fix an uneven background use the menu command {% include bc content='Process | Subtract background'%}. This will use a *rolling ball* algorithm on the uneven background. The radius should be set to at least the size of the largest object that is *not* part of the background. It can also be used to remove background from gels where the background is white. Running the command several times may produce better results. The user can choose whether or not to have a light background, create a background with no subtraction, have a sliding paraboloid, disable smoothing, or preview the results. The default value for the rolling ball radius is 50 pixels.
 
-|                                                                                                        |                                                                                           |                                                                                                                          |
-| ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                          |                                                                                                                             |                                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | *RAW*                                                                                                  |                                                                                           | {% include bc content='Process | Subtract Background...'%}                                                               |
 | ![raw\_rolling\_ball\_back\_corr.jpg](/images/pages/Raw rolling ball back corr.jpg "raw_rolling_ball_back_corr.jpg") | ![rolling\_ball\_back\_corr.jpg](/images/pages/Rolling ball back corr.jpg "rolling_ball_back_corr.jpg") | ![processed\_rolling\_ball\_back\_corr.jpg](/images/pages/Processed rolling ball back corr.jpg "processed_rolling_ball_back_corr.jpg") |
 
 Once the background has been evened, final adjustments can be made with the *Brightness/Contrast* control.
 
-|                                                                                           |                                                                                 |                                                                                                                    |
-| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                             |                                                                                                                   |                                                                                                                                                      |
+| --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![bright\_contr\_roll\_ball.jpg](/images/pages/Bright contr roll ball.jpg "bright_contr_roll_ball.jpg") | ![histogram\_roll\_ball.jpg](/images/pages/Histogram roll ball.jpg "histogram_roll_ball.jpg") | ![bright\_contr\_control\_roll\_ball.jpg](/images/pages/Bright contr control roll ball.jpg "bright_contr_control_roll_ball.jpg") |
 
 ### ROI background correction
@@ -205,26 +205,23 @@ This macro, because it also works with stacks, can be used on time-courses with 
 <table>
 <tbody>
 <tr class="odd">
-<td><center>
+<td style="border:none;padding:0in;">
+<center>
 <p>Before correction</p>
 </center></td>
-<td><center>
+<td style="border:none;padding:0in;">
+<center>
 <p>Background intensity over time</p>
 </center></td>
-<td><center>
+<td style="border:none;padding:0in;">
+<center>
 <p>After <em>ROI_BG_Correction</em></p>
 </center></td>
 </tr>
 <tr class="even">
-<td><figure>
-<img src="/images/pages/roi_back_corr_before.gif" title="roi_back_corr_before.gif" alt="roi_back_corr_before.gif" /><figcaption>roi_back_corr_before.gif</figcaption>
-</figure></td>
-<td><figure>
-<img src="/images/pages/roi_back_corr_during.gif" title="roi_back_corr_during.gif" alt="roi_back_corr_during.gif" /><figcaption>roi_back_corr_during.gif</figcaption>
-</figure></td>
-<td><figure>
-<img src="/images/pages/roi_back_corr_after.gif" title="roi_back_corr_after.gif" alt="roi_back_corr_after.gif" /><figcaption>roi_back_corr_after.gif</figcaption>
-</figure></td>
+<td style="border:none;padding:0in;"><p> <img src="/images/pages/roi_back_corr_before.gif" title="fig:roi_back_corr_before.gif" alt="roi_back_corr_before.gif" /></p></td>
+<td style="border:none;padding:0in;"><p> <img src="/images/pages/roi_back_corr_during.gif" title="fig:roi_back_corr_during.gif" alt="roi_back_corr_during.gif" /></p></td>
+<td style="border:none;padding:0in;"><p> <img src="/images/pages/roi_back_corr_after.gif" title="fig:roi_back_corr_after.gif" alt="roi_back_corr_after.gif" /></p></td>
 </tr>
 </tbody>
 </table>
@@ -272,9 +269,7 @@ This can also be done using the {% include bc content='Process | Image Calculato
 <p>This can also be used with stacks for brightfield time-courses that vary in intensity with time. Doing this with stacks can be time consuming.</p></td>
 </tr>
 <tr class="even">
-<td><figure>
-<img src="/images/pages/pseudoCorrRawCorrected.gif" title="pseudoCorrRawCorrected.gif" alt="pseudoCorrRawCorrected.gif" /><figcaption>pseudoCorrRawCorrected.gif</figcaption>
-</figure></td>
+<td style="border:none;padding:0in;"><p> <img src="/images/pages/pseudoCorrRawCorrected.gif" title="fig:pseudoCorrRawCorrected.gif" alt="pseudoCorrRawCorrected.gif" /></p></td>
 </tr>
 </tbody>
 </table>

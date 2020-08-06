@@ -23,21 +23,21 @@ description: test description
 
 ImageJ's [Script Editor](Script_Editor ) supports many different languages. The following table summarizes the possibilities.
 
-|                                                                |
-| -------------------------------------------------------------- |
-| Recommended options                                            |
-| [Groovy](Groovy_Scripting )                          |
-| [ImageJ Macro](Introduction_into_Macro_Programming ) |
-| [Python (Jython)](Jython_Scripting )                 |
-| [JavaScript](Javascript_Scripting )                  |
-| [Ruby (JRuby)](JRuby_Scripting )                     |
-| [Lisp (Clojure)](Clojure_Scripting )                 |
-| [R (Renjin)](Renjin_Scripting )                      |
-| Other options                                                  |
-| [Java](Java )                                        |
-| [MATLAB](MATLAB_Scripting )                          |
-| [BeanShell](Beanshell_Scripting )                    |
-| [Scala](Scala_Scripting )                            |
+|                                                                           |                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recommended options                                                       |                                                                                                                                                                                                                                                   |
+| [Groovy](Groovy_Scripting )                                     | {% include wikipedia title='Groovy (programming language)' text='Groovy'%} is a flexible and powerful scripting language, Java-like but less verbose and dynamically typed. Learn this, and using Java later (if needed) will become easier. |
+| [ImageJ Macro](Introduction_into_Macro_Programming )            | The [ImageJ 1.x](ImageJ_1.x ) macro language is less powerful than the other scripting languages, but is designed to be easy to learn and use.                                                   |
+| [Python (Jython)](Jython_Scripting ) | {% include wikipedia title='Python (programming language)' text='Python'%} is a popular choice among scientists.                                                                                                                             |
+| [JavaScript](Javascript_Scripting )                             | {% include wikipedia title='JavaScript' text='JavaScript'%} is a popular choice among web developers.                                                                                                                                        |
+| [Ruby (JRuby)](JRuby_Scripting )                                | {% include wikipedia title='Ruby (programming language)' text='Ruby'%} is another popular choice among web developers.                                                                                                                       |
+| [Lisp (Clojure)](Clojure_Scripting )                            | {% include wikipedia title='Lisp (programming language)' text='Lisp'%} is a popular choice among computer scientists.                                                                                                                        |
+| [R (Renjin)](Renjin_Scripting )                                 | {% include wikipedia title='R (programming language)' text='R'%} is a popular choice among scientists and statisticians.                                                                                                                     |
+| Other options                                                             |                                                                                                                                                                                                                                                   |
+| [Java](Java )                                                   | You can code Java plugins in the Script Editor. This is the most difficult path, but also the most powerful.                                                                                                                                      |
+| [MATLAB](MATLAB_Scripting )                                     | ImageJ can interface bidirectionally with MATLAB. See the [MATLAB Scripting](MATLAB_Scripting ) page for details.                                                                                                                       |
+| [BeanShell](Beanshell_Scripting )                               | {% include wikipedia title='BeanShell' text='BeanShell'%} is an old script language, maintained mostly for backwards compatibility. It is nearly 100% compatible with Java syntax, but so is [Groovy](Groovy ).                    |
+| [Scala](Scala_Scripting )                                       | {% include wikipedia title='Scala (programming language)' text='Scala'%} support is currently experimental, and has bugs.                                                                                                                    |
 
 # Script parameters
 

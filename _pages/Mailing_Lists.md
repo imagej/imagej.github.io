@@ -22,13 +22,13 @@ If you have found a bug, please [submit a bug report](Bug_reporting_best_practic
 
 ## ImageJ
 
-| List                                   | Description                                                                                                                                                                                                                                                                          | Nabble                                      | Archives                                             |
+| List               | Description                                                                                                                                                                                                                                                                          | Nabble                                      | Archives                         |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------- | ---------------------------------------------------- |
 | [ImageJ](https://imagej.net/list.html) | For general user and developer discussion about [ImageJ](ImageJ ), mostly focused on [ImageJ1](ImageJ1 ). For a larger community of [ImageJ2](ImageJ2 ) and [Fiji](Fiji ) users, the [Image.sc Forum](https://forum.image.sc/) is preferred. | [Nabble](http://imagej.1557.x6.nabble.com/) | [Archives](http://list.nih.gov/archives/imagej.html) |
 
 ## Supporting and related software
 
-| List                                                                          | Description                                                                                                   | Archives                                                                          |
+| List                                                      | Description                                                                                                   | Archives                                                      |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | [SciJava](http://groups.google.com/group/scijava)                             | For discussion of [SciJava](SciJava ) supporting libraries.                                         | [Archives](http://groups.google.com/group/scijava)                                |
 | [μManager](http://lists.sourceforge.net/lists/listinfo/micro-manager-general) | [Micro-Manager](Micro-Manager ): open source software package for control of automated microscopes. | [Archives](http://sourceforge.net/p/micro-manager/mailman/micro-manager-general/) |

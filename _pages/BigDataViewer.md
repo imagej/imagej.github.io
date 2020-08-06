@@ -62,8 +62,8 @@ On startup, the middle slice of the first source (angle) is shown. You can brows
 
 The following table shows the available navigation commands using the mouse:
 
-|                                                                                                               |                                                                     |
-| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+|                                                                                                                                   |                                                                                         |
+| --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | {% include key content='press|left-click|drag' %}                                                             | Rotate (pan and tilt) around the point where the mouse was clicked. |
 | {% include key content='press|right-click|drag' %} or {% include key content='press|middle-click|drag' %}     | Translate in the XY-plane.                                          |
 | {% include key content='press|mouse-wheel' %}                                                                 | Move along the z-axis.                                              |
@@ -71,8 +71,8 @@ The following table shows the available navigation commands using the mouse:
 
 The following table shows the available navigation commands using keyboard shortcuts:
 
-|                                                                                                               |                                                                                              |
-| ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+|                                                                                                                                   |                                                                                                                  |
+| --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | {% include key content='press|X' %}, {% include key content='press|Y' %}, {% include key content='press|Z' %} | Select keyboard rotation axis.                                                               |
 | {% include key content='press|Left' %}, {% include key content='press|Right' %}                               | Rotate clockwise or counter-clockwise around the choosen rotation axis.                      |
 | {% include key content='press|Up' %}, {% include key content='press|Down' %}                                  | Zoom in or out.                                                                              |

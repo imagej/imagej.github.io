@@ -203,7 +203,7 @@ Gabriella Turek</p></td>
 </tr>
 <tr class="even">
 <td><p>{% include logo content='KNIME' %}</p></td>
-<td><p><strong><a href="KNIME" title="wikilink">KNIME Image Processing</a></strong></p></td>
+<td style="white-space: normal"><p> <strong><a href="KNIME" title="wikilink">KNIME Image Processing</a></strong></p></td>
 <td><p>{% include person content='Dietzc' %}<br />
 Martin Horn</p></td>
 <td><p>{% include person content='Dietzc' %}</p></td>
