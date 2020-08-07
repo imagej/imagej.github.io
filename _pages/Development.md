@@ -26,7 +26,7 @@ This page provides an overview of ImageJ from the perspective of software develo
 <td><p><a href="Getting started"><img src="/images/pages/Imagej-app.png" width="500px"/></a></p></td>
 </tr>
 <tr class="odd">
-<td style="border-top 1px #aaa solid padding: 15px 15px;"><p> Reusable {% include wikipedia title='Library (computing)' text='software libraries'%}</p></td>
+<td style="border-top: 1px #aaa solid; padding: 15px 15px;"><p> Reusable {% include wikipedia title='Library (computing)' text='software libraries'%}</p></td>
 </tr>
 <tr class="even">
 <td style="padding: 0 15px 15px 35px; font-size: small;">
@@ -37,13 +37,13 @@ This page provides an overview of ImageJ from the perspective of software develo
 <a class="sourceLine" id="cb1-5" title="5">}</a></code></pre></div></td>
 </tr>
 <tr class="odd">
-<td style="border-top 1px #aaa solid padding: 15px 15px; 0 15px"><p> An extensible collection of <a href="plugins" title="wikilink">plugins</a> and <a href="services" title="wikilink">services</a></p></td>
+<td style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;"><p> An extensible collection of <a href="plugins" title="wikilink">plugins</a> and <a href="services" title="wikilink">services</a></p></td>
 </tr>
 <tr class="even">
 <td style="padding: 15px 0 30px 45px;"><p> <a href="SciJava"><img src="/images/pages/Scijava-logo.png" height="72px"/></a></p></td>
 </tr>
 <tr class="odd">
-<td style="border-top 1px #aaa solid padding: 15px 15px; 0 15px"><p> <em>"Write once, run anywhere"</em> <a href="Ops" title="wikilink">image processing routines</a></p></td>
+<td style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;"><p> <em>"Write once, run anywhere"</em> <a href="Ops" title="wikilink">image processing routines</a></p></td>
 </tr>
 <tr class="even">
 <td style="padding: 15px 0 15px 25px;"><p> <a href="Ops"><img src="/images/pages/Write-once-run-anywhere.png" width="500px"/></a></p></td>
@@ -78,7 +78,7 @@ ImageJ is divided into three parts:
 <td style="width: 350px"><p> <a href="SciJava"><img src="/images/pages/Scijava-logo.png" height="72px"/></a></p></td>
 </tr>
 <tr class="odd">
-<td style="text-align center vertical-align: top"><p> <span style="font-size: large"><strong>Core image data model</strong></span><br />
+<td style="text-align: center; vertical-align: top"><p> <span style="font-size: large"><strong>Core image data model</strong></span><br />
 </p>
 <ul>
 <li>Extensible pixel types – not just uint8, uint16, float32</li>
@@ -87,7 +87,7 @@ ImageJ is divided into three parts:
 <li>Extensible dimensionality – not just X, Y, Z and time</li>
 <li>Interface-driven design</li>
 </ul></td>
-<td style="text-align center vertical-align: top"><p> <span style="font-size: large"><strong>More general than images</strong></span><br />
+<td style="text-align: center; vertical-align: top"><p> <span style="font-size: large"><strong>More general than images</strong></span><br />
 </p>
 <ul>
 <li>Application container</li>

@@ -43,7 +43,7 @@ The first goal is to get your extension into the hands of users.
 <td style="background: #dfd"><p> <strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td style="background: #dfd vertical-align: top">
+<td style="background: #dfd; vertical-align: top">
 <ul>
 <li><strong><a href="How_to_set_up_and_populate_an_update_site" title="wikilink"> Create your update site</a></strong>, then <strong><a href="How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site" title="wikilink">upload your extension to it</a></strong>.</li>
 <li>You may add your update site to the list of built-in sites by editing the <strong>{% include list-of-update-sites%}
@@ -61,7 +61,7 @@ The first goal is to get your extension into the hands of users.
 <td style="background: #dfd"><p><strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td style="background: #dfd vertical-align: top">
+<td style="background: #dfd; vertical-align: top">
 <ul>
 <li>Make a post on the <strong><a href="Forum" title="wikilink">ImageJ forum</a></strong> to initiate a request.</li>
 </ul></td>
@@ -98,7 +98,7 @@ If you want to facilitate good science, please [share your source code](Open_Sou
 <td style="background: #dfd"><p> <strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td style="background: #dfd vertical-align: top">
+<td style="background: #dfd; vertical-align: top">
 <ul>
 <li>Create an account on <strong><a href="https://github.com">GitHub</a></strong>.</li>
 <li><strong><a href="https://help.github.com/articles/create-a-repo">Create a new repository</a></strong> for your project.</li>
@@ -116,7 +116,7 @@ If you want to facilitate good science, please [share your source code](Open_Sou
 <td style="background: #dfd"><p><strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td style="background: #dfd vertical-align: top">
+<td style="background: #dfd; vertical-align: top">
 <ul>
 <li>Request a <strong><a href="Governance" title="wikilink">Fiji maintainer</a></strong> create a repository for you and add you as a contributor.</li>
 <li>Meet the <strong><a href="Fiji_contribution_requirements" title="wikilink">Fiji contribution requirements</a></strong>.</li>
@@ -185,7 +185,7 @@ Useful extensions deserve corresponding documentation explaining how to use them
 <td style="background: #dfd"><p> <strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td style="background: #dfd vertical-align: top">
+<td style="background: #dfd; vertical-align: top">
 <ul>
 <li><strong><a href="https://imagej.net/index.php?title=Special:UserLogin&amp;returnto=Welcome&amp;type=signup">Create an account</a></strong>.</li>
 <li><strong><a href="https://www.mediawiki.org/wiki/Help:Starting_a_new_page">Create a page</a></strong> for your extension.</li>

@@ -18,6 +18,8 @@ txt_single_quote = "%LL%"
 txt_newline = "%MM"
 txt_apply_style_start = "%NN%"
 txt_apply_style_end = "%OO%"
+txt_colon = "%PP%"
+txt_colon2 = "%QQ%"
 
 template_regex = r'(((?<=\n)[ ]*)*(?<!<nowiki>)\{\{[\n ]*([A-Za-z0-9_]*)[ \n]*\:?\|?[ \n]*(([\s\S]*?))\}\})'
 template_parameter_regex = r'(\w+([ ]\w+)*)[ ]*=[ ]*([^|]*)'
@@ -37,6 +39,8 @@ global_shadows = [
     ("\n%}\n", txt_capture_start_end),
     ("https://www.youtube.com/embed/", txt_youtube),
     ("\\\'", txt_single_quote),
+    (":", txt_colon),
+    (";", txt_colon2),
     ("\n", txt_newline)
 ]
 
@@ -153,7 +157,7 @@ def process_file(str_content):
 
     content_tmp = re.sub(r'\{\|style=\"([^\n]+)\"[ ]*\n([^\n]+)', match_table_header, content_tmp)
     content_tmp = re.sub(r'(\||\!) style=\"([^\"]*)\"[ ]*\|', match_table_row_style, content_tmp)
-    content_tmp = re.sub(r'(\!|\|) colspan=(\d*)[ ]*(?:style\=\"([^\"]*)\")?(?:[ ]*\|([^\n]*))', match_table_colspan, content_tmp)
+    content_tmp = re.sub(r'(\!|\|) colspan=(\d*)[ ]*(?:style\=\"([^\"]*)\")?(?:[ ]*\|([^\n]*))\n', match_table_colspan, content_tmp)
     # print(content_tmp)
     return content_tmp
 
@@ -174,9 +178,8 @@ def match_table_colspan(match):
 
 
 def shadow(text):
-    shadowed = text.replace(";", "")
-    shadowed = shadowed.replace(":", "")
-    global_shadows.append((text, shadowed))
+    shadowed = text.replace(";", txt_colon2)
+    shadowed = shadowed.replace(":", txt_colon)
     return shadowed
 
 
@@ -560,7 +563,7 @@ def convert(path_in, path_out, layout, title):
         # open output file and create list
         content_tmp = read_file(path_out)
 
-        # print(content_tmp)
+        print(content_tmp)
 
         # do replacements in md format
         content_tmp = reveal_includes(content_tmp)
@@ -569,10 +572,10 @@ def convert(path_in, path_out, layout, title):
         content_tmp = re.sub(r'<img src=\"(?!http)(?!/images/pages/)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
         content_tmp = re.sub(r'((?<!-)\!\[(?!\[)[^\]]*\]\()((?!http)(?!\/images\/pages\/)[^\"\)]*)([ \n]*(?:\"[^\"]*\")?[ ]*\))', fix_md_image, content_tmp)
         content_tmp = re.sub(r'(\<td|\<th)(\>.*?(?=' + txt_apply_style_start + '))' + txt_apply_style_start + '(.+?)(?=' + txt_apply_style_end + ')' + txt_apply_style_end, r'\1 style="\3"\2', content_tmp)
+        content_tmp = re.sub(r'\| ' + txt_apply_style_start + '(.+?)(?=' + txt_apply_style_end + ')' + txt_apply_style_end, r'|', content_tmp)
         content_tmp = re.sub(r'' + txt_apply_style_start + '([^\n]*)' + txt_apply_style_end + '[\n ]*(<\w*)', r'\2 style="\1"', content_tmp)
         content_tmp = re.sub(r'\<p\>\<\/p\>', r'', content_tmp)
         content_tmp = re.sub(r'\n' + txt_apply_style_start + '.*' + txt_apply_style_end, r'', content_tmp)
-        content_tmp = re.sub(r'\| ' + txt_apply_style_start + '(.+?)(?=' + txt_apply_style_end + ')' + txt_apply_style_end, r'|', content_tmp)
 
         # pattern = re.compile(include_regex)
         # for match in re.findall(pattern, content_tmp):

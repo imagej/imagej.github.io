@@ -36,8 +36,8 @@ Landmark placements is done in *Landmark mode* which you enter by pressing {% in
 
 The following table shows the available commands and keystrokes for landmark placement, warping.
 
-|                                                                                                                                                                     |                                                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                             |                                                                                                                                                                       |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | {% include key content='press|T' %}                                                                                                             | Toggle between warped view and raw view or moving image.                                                                                  |
 | {% include key content='press|Ctrl' %}+{% include key content='press|O' %}                                                                      | Open landmarks from saved file.                                                                                                           |
 | {% include key content='press|Ctrl' %}+{% include key content='press|S' %}                                                                      | Save current landmarks to a file.                                                                                                         |
@@ -56,8 +56,8 @@ The following table shows the available commands and keystrokes for landmark pla
 
 Some changes to landmarks can be done by interacting with the landmark table.
 
-|                                                                                                          |                                                                             |
-| -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+|                                                                                                                  |                                                                                     |
+| ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | {% include key content='press|left-click' %}                                         | Select row.                                             |
 | {% include key content='press|Ctrl' %}+{% include key content='press|left-click' %}  | Add row to selection.                                   |
 | {% include key content='press|Shift' %}+{% include key content='press|left-click' %} | Select range of rows.                                   |
@@ -85,8 +85,8 @@ Press {% include key content='press|F8' %} to bring up a transformation type sel
 
 #### Table of transformation types
 
-|                                       |                                                                                                                                       |
-| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+|                                               |                                                                                                                                               |
+| --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | Thin Plate Spline | The smoothest deformable transformation that maps moving landmarks exactly to the corresponding target landmarks. |
 | Affine            | Linear transform with translation, rotation, independent scales and shear (12 degrees of freedom)                 |
 | Similarity        | Linear transform with translation, rotation, and one scale parameter (7 degrees of freedom)                       |
@@ -99,8 +99,8 @@ Bigwarp inherits many image [navigation](BigDataViewer#Basic_Navigation ), [visu
 
 The following table shows the available navigation commands using the mouse:
 
-|                                                                                                                                        |                                                                                                       |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                |                                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | {% include key content='press|Q' %}                                                                                | Align the non-active viewer with the active viewer.                               |
 | {% include key content='press|W' %}                                                                                | Align the active viewer with the non-active viewer.                               |
 | {% include key content='press|E' %}                                                                                | Centers the active viewer to the nearest landmark (considers 3D when applicable). |
@@ -122,8 +122,8 @@ The following table shows the available navigation commands using the mouse:
 
 #### Mouse navigation
 
-|                                                                                                                                   |                                                                                         |
-| --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+|                                                                                                                                           |                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | {% include key content='press|left-click|drag' %}                                                             | Rotate (pan and tilt) around the point where the mouse was clicked. |
 | {% include key content='press|right-click|drag' %} or {% include key content='press|middle-click|drag' %}     | Translate in the XY-plane.                                          |
 | {% include key content='press|mouse-wheel' %}                                                                 | Move along the z-axis.                                              |
@@ -131,8 +131,8 @@ The following table shows the available navigation commands using the mouse:
 
 #### Keyboard navigation
 
-|                                                                                                                                   |                                                                                                                  |
-| --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                           |                                                                                                                          |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | {% include key content='press|X' %}, {% include key content='press|Y' %}, {% include key content='press|Z' %} | Select keyboard rotation axis.                                                               |
 | {% include key content='press|Left' %}, {% include key content='press|Right' %}                               | Rotate clockwise or counter-clockwise around the choosen rotation axis.                      |
 | {% include key content='press|Up' %}, {% include key content='press|Down' %}                                  | Zoom in or out.                                                                              |

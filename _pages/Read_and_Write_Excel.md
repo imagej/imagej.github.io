@@ -17,8 +17,8 @@ description: test description
 
 Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 
-| Version | Release Date                        | Notes                                                                                                                                                                    |
-| ------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Version | Release Date                                | Notes                                                                                                                                                                    |
+| ------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | v1.0.0  | 19 Nov 2015 |                                                                                                                                                                          |
 | v1.0.1  | 25 Nov 2015 |                                                                                                                                                                          |
 | v1.0.2  | 10 Apr 2017 |                                                                                                                                                                          |
@@ -220,8 +220,8 @@ Version 1.1.6 changes:
 
 ### Dependencies
 
-| Dependency                    | Maven Repo                                                                                               |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Dependency                    | Maven Repo                                                                                                       |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | jars/commons-collections4.jar | [1](https://mvnrepository.com/artifact/org.apache.commons/commons-collections4) |
 | jars/xmlbeans.jar             | [2](https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans)            |
 | jars/poi-ooxml.jar            | [3](https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml)                |
