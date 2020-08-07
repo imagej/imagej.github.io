@@ -13,7 +13,8 @@ A 36-page technical manuscript describing [ImageJ2](ImageJ2 ) in depth is now av
 
 This manuscript provides a technical overview of [ImageJ2](ImageJ2 ), including in-depth description of the [architecture](architecture ), with sections on [SciJava Common](SciJava_Common ), [ImageJ Common](ImageJ_Common ), [SCIFIO](SCIFIO ), [ImageJ Ops](ImageJ_Ops ), [ImageJ Legacy](ImageJ_Legacy ), and the [ImageJ Updater](ImageJ_Updater ), as well as a discussion on how ImageJ2 improves upon key areas of functionality, [extensibility](extensibility ), [reproducibility](reproducibility ), usability, performance, [compatibility](compatibility ) and [community](community ).
 
-## Abstract
+Abstract
+--------
 
 **Background.** ImageJ is an image analysis program extensively used in the biological sciences and beyond. Due to its ease of use, recordable macro language, and extensible plug-in architecture, ImageJ enjoys contributions from non-programmers, amateur programmers, and professional developers alike---a feat that arguably no other image analysis package, commercial or open source, has yet achieved. Enabling such a diversity of contributors has resulted in a unique community that spans the biological and physical sciences, making ImageJ an invaluable resource across countless disciplines. However, a rapidly growing user base, diverging plugin suites, and technical limitations have revealed a clear need for a concerted software engineering effort to support emerging imaging paradigms, to ensure the software's ability to handle the requirements of modern science.
 

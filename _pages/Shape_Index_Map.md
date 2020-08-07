@@ -17,22 +17,24 @@ description: test description
 {% endcapture %}
 {% include info-box software='ImageJ ' name='Shape Index Map ' maintainer=maintainer author='Johannes Schindelin ' source=source released='18/08/2010 ' latest-version='18/08/2010 ' status=' ' category='[:Category:Plugins](Category_Plugins ) ' website=' ' %}
 
-## Explanation
+Explanation
+-----------
 
 The [shape index](http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=6820324) describes the surface topology of the image interpreted as a [height field](3D_Surface_Plot ):
 
-| shape index | 1   | 0.75 | 0.5   | 0.25         | 0      | \-0.25     | \-0.5 | \-0.75 | \-1 |
-| ----------- | --- | ---- | ----- | ------------ | ------ | ---------- | ----- | ------ | --- |
-| meaning     | cap | dome | ridge | saddle ridge | saddle | saddle rut | rut   | trough | cup |
+| shape index | 1   | 0.75 | 0.5   | 0.25         | 0      | -0.25      | -0.5 | -0.75  | -1  |
+|-------------|-----|------|-------|--------------|--------|------------|------|--------|-----|
+| meaning     | cap | dome | ridge | saddle ridge | saddle | saddle rut | rut  | trough | cup |
 
 The shape index is calculated from the principal curvatures of the Hessian, which is very susceptible to noise. Therefore the plugin asks you to specify a radius for Gaussian blurring as a preprocessing step.
 
-## Example
+Example
+-------
 
-![Shape\_Index-orig.jpg](/images/pages/Shape Index-orig.jpg "Shape_Index-orig.jpg")
+![](/images/pages/Shape Index-orig.jpg "Shape_Index-orig.jpg")
 
 With radius 2, this results in the following shape index map (bright spots correspond to caps, dark to cups):
 
-![Shape\_Index-map.jpg](/images/pages/Shape Index-map.jpg "Shape_Index-map.jpg")
+![](/images/pages/Shape Index-map.jpg "Shape_Index-map.jpg")
 
 

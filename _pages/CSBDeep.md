@@ -9,17 +9,20 @@ description: test description
 
 The CSBDeep family is growing. Here is an overview of related topics relevant to ImageJ / Fiji users:
 
-## What can you do with CSBDeep?
+What can you do with CSBDeep?
+-----------------------------
 
-  - On [csbdeep.bioimagecomputing.com](https://csbdeep.bioimagecomputing.com/scenarios/) you can find examples of bio image data which was enhanced or segmented with CSBDeep based tools
+-   On [csbdeep.bioimagecomputing.com](https://csbdeep.bioimagecomputing.com/scenarios/) you can find examples of bio image data which was enhanced or segmented with CSBDeep based tools
 
-## Which plugins are available in ImageJ / Fiji?
+Which plugins are available in ImageJ / Fiji?
+---------------------------------------------
 
-  - [CARE](CARE ) (CSBDeep update site)
-  - [StarDist](StarDist ) (StarDist update site)
-  - [N2V](N2V ) (CSBDeep update site)
-  - [DenoiSeg](DenoiSeg ) (CSBDeep update site)
+-   [CARE](CARE ) (CSBDeep update site)
+-   [StarDist](StarDist ) (StarDist update site)
+-   [N2V](N2V ) (CSBDeep update site)
+-   [DenoiSeg](DenoiSeg ) (CSBDeep update site)
 
-## GPU support
+GPU support
+-----------
 
-  - go to the [TensorFlow-GPU](TensorFlow-GPU ) wiki page for support
+-   go to the [TensorFlow-GPU](TensorFlow-GPU ) wiki page for support

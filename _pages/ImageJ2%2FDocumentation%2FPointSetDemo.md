@@ -23,8 +23,8 @@ Some examples:
 
 X ranges from 1 to 10, y ranges from 5 to 15: "x=\[1..10\], y=\[5..15\]"
 
-Same set of points but further constrained such that x plus y is less than 20: "x=\[1..10\], y=\[5..15\], x + y \< 20"
+Same set of points but further constrained such that x plus y is less than 20: "x=\[1..10\], y=\[5..15\], x + y &lt; 20"
 
-A circular area centered at 50,50: "x=\[1..100\], y=\[1..100\], (x-50)^2 + (y-50)^2 \<= 400"
+A circular area centered at 50,50: "x=\[1..100\], y=\[1..100\], (x-50)^2 + (y-50)^2 &lt;= 400"
 
 Multiple axes can be defined as well as any number of constraints as long as they are separated by commas. All constraints are applied simultaneously (in an AND fashion). And any function that is defined by the equation language (hyperlinked earlier) can be used in the specification of the constraint.

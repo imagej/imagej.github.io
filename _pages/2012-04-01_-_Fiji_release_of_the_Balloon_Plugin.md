@@ -11,6 +11,6 @@ Lionel Dupuy, the author of the [Balloon](Balloon ) plugin, donated the source c
 
 We timed the publication of the source code and the compiled plugin to coincide with the availability of the corresponding [Nature Methods paper](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1940.html).
 
-Thanks Lionel\!
+Thanks Lionel!
 
 

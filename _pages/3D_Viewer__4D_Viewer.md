@@ -10,39 +10,38 @@ description: test description
 (Return to the [Developer Documentation](3D_Viewer__Developer_Documentation ) page)  
 (Return to the main [3D\_Viewer](3D_Viewer ) page)
 
-## How to visualize 4D data
+How to visualize 4D data
+------------------------
 
 You can download example source code for this HowTo [here](3D_Viewer__Example_code ).
 
 Sometimes, 3D data are recorded over time, and it is desirable to visualize those data, i.e. show it in a time line, being able to animate it, etc. This is possible with the viewer. The following lines of code show how to do it programmatically:
 
-``` java
-// Open a hyperstack
-ImagePlus imp = IJ.openImage(
-      Prefs.getImagesURL() + "Spindly-GFP.zip");
+    // Open a hyperstack
+    ImagePlus imp = IJ.openImage(
+          Prefs.getImagesURL() + "Spindly-GFP.zip");
 
-// Create a universe and show it
-Image3DUniverse univ = new Image3DUniverse();
-univ.show();
+    // Create a universe and show it
+    Image3DUniverse univ = new Image3DUniverse();
+    univ.show();
 
-// load the stack in the viewer
-univ.addVoltex(imp);
+    // load the stack in the viewer
+    univ.addVoltex(imp);
 
-// get the Timeline object
-Timeline tl = univ.getTimeline();
+    // get the Timeline object
+    Timeline tl = univ.getTimeline();
 
-// start playback
-tl.play();
+    // start playback
+    tl.play();
 
-// wait a bit
-try {
-        Thread.sleep(5000);
-} catch(InterruptedException e) {}
+    // wait a bit
+    try {
+            Thread.sleep(5000);
+    } catch(InterruptedException e) {}
 
 
-// Stop animation
-tl.pause();
-```
+    // Stop animation
+    tl.pause();
 
 The 3D viewer automatically recognizes hyperstacks and shows a control panel on demand, providing buttons for playback, pause, etc.
 
@@ -55,30 +54,30 @@ Next to `play()` and `pause()`, the `Timeline` class provides several methods fo
     /** Set bounce-back or repeat */
     public void setBounceBack(boolean bounce);
     public boolean getBounceBack();
-    
+
     /** Speed up the animation. */
     public void faster();
-    
+
     /** Slows the animation down. */
     public void slower();
-    
+
     /** Record the whole timeline */
     public ImagePlus record();
-    
+
     /** Start animation.  */
     public synchronized void play();
-    
+
     /** Stop/pause animation */
     public synchronized void pause();
-    
+
     /** Display next timepoint. */
     public void next();
-    
+
     /** Display previous timepoint. */
     public void previous();
-    
+
     /** Display first timepoint. */
     public void first();
-    
+
     /** Display last timepoint. */
     public void last();

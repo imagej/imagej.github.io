@@ -17,7 +17,8 @@ This plugin copies the pixel size from the calibration of one image or stack to 
 
 A second dialog allows to enter the scale factors.
 
-## Installation
+Installation
+------------
 
 Available as part of the [Cookbook](Cookbook ) suite of plugins.
 

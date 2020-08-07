@@ -10,7 +10,8 @@ description: test description
 {% include menu-cookbook%}
 
 
-## Types of color images
+Types of color images
+---------------------
 
 Images with color come in three different forms: pseudo-color, 24-bit RGB image, or color composite image.
 
@@ -22,7 +23,7 @@ A pseudo-colored image has a single channel, (i.e. grey) image that has color as
 
 The colors in RGB images (24-bit with 8-bits for each of the red, green and blue channels) are used to show multi-channel images. The colors are designed to reflect genuine colors (i.e. the green in an RGB image reflects green color in the specimen). There are several RGB functions in Fiji. Native functions can be found in “Image/Color”.
 
-![24bit\_rgb\_images.jpg](/images/pages/24bit rgb images.jpg "24bit_rgb_images.jpg")
+![](/images/pages/24bit rgb images.jpg "24bit_rgb_images.jpg")
 
 ### Color Composite Images
 
@@ -37,13 +38,14 @@ Color composite images can be converted to 24-bit RGB via the 'Channels Tool' di
 
 The disadvantage of the Composite image type is that this relatively recent Fiji development is not supported by all existing plugins. Sometime the composite can revert to a multi-slice stack. To convert it back to a composite you can use the menu command "Image/Color/Make Composite".
 
-## Merging multi-channel images
+Merging multi-channel images
+----------------------------
 
 ### Interleaved multi-channel experiments
 
 Multi-channel experiments acquired on some systems are imported with the different channels interleaved, i.e. Slice 1 is Timepoint1-channel1 and Slice 2 is Timepoint1-channel2. The stack needs to be “De-interleaved” before it can be RGB-merged. This can be done with “*Image/Stacks/Tools/Deinterleave*” and entering the number of channels in the dialog (typically “2”). You can also choose to check a box for whether or not the source stacks should be kept. The two stacks can then be merged via: “*Image/Color/RGB merge*”.
 
-![deinterleaver.jpg](/images/pages/Deinterleaver.jpg "deinterleaver.jpg")
+![](/images/pages/ deinterleaver.jpg "_deinterleaver.jpg")
 
 ### RGB color merging
 
@@ -57,7 +59,8 @@ This can aid visualization of colocalization due to our poor perception of red a
 
 Run the plugin and select the two images to be merged. Select the desired colors from the drop-down options. <Current> uses the LUT that the image currently has (this is often the desired LUT). The “Difference” option performs a “difference” arithmetic operation rather than an “addition”. If the “Pre-sub 2 from 1” option is checked the second image is subtracted from the first prior to merging.
 
-## Merging transmitted light and fluorescence images
+Merging transmitted light and fluorescence images
+-------------------------------------------------
 
 Fluorescence and transmitted light brightfield images can be merged with the “*Image/Color/Merge Channels...*”. This instruction lets you than choose the C4 (gray) option. This can prevent a 'washed out' look to the fluorescence.
 
@@ -67,9 +70,10 @@ This also reduces 16-bit images to 8-bits (based on the current Brightness and C
 
 The menu command "*Image/Color/Merge Channels...*" opens a dialog to merge grey, red, green, blue, cyan, magenta, and yellow channels to a new composite image.
 
-![merge\_channels.jpg](/images/pages/Merge channels.jpg "merge_channels.jpg")
+![](/images/pages/ merge channels.jpg "_merge_channels.jpg")
 
-## Splitting multi-channel Images
+Splitting multi-channel Images
+------------------------------
 
 An RGB image or stack can be split to the respective red, green and blue image components using the menu command "*Image/Color/Split Channels*".
 
@@ -77,29 +81,31 @@ Sometime a merged RGB image may need to be displayed along with the separate cha
 
 It works with single slice RGB images. A new RGB stack is created, channel 1 being the red channel; 2 the green and 3 the blue. The fourth slice is the merged slice. If a channel is empty (e.g. a red-green merged image will have no blue) then the slice is omitted. Then the plugin prompts you for the layout of the montage. You have the option to alter the width of the white border between the image panels. If the 'Pseudo-color 'option is off, each channel will be greyscale. If scale bar size is set to zero, no scale bar will be added.
 
-![splitting\_multichannel\_pics.jpg](/images/pages/Splitting multichannel pics.jpg "splitting_multichannel_pics.jpg")
+![](/images/pages/ splitting multichannel pics.jpg "_splitting_multichannel_pics.jpg")
 
-## Color Composite
+Color Composite
+---------------
 
 The composite can be reverted to a greyscale stack via the menu command "*Image/Hyperstacks/Hyperstack to Stack*". The channels can be subsequently split to individual images via the menu command "*Image/Stacks/Stack to Images*".
 
-## Pseudo-color
+Pseudo-color
+------------
 
 Judicious use of LUTs can be very useful in highlighting the desired features of an image. The human eye can perceive relatively few shades in one image. Pseudo-coloring images can make data more visible
 
 Traditional “Green” LUT
 
-![traditional\_green\_lut.jpg](/images/pages/Traditional green lut.jpg "traditional_green_lut.jpg")
+![](/images/pages/ traditional green lut.jpg "_traditional_green_lut.jpg")
 
 Enhanced “Green Hot” LUT
 
-![enhanced\_green\_hot\_lut.jpg](/images/pages/Enhanced green hot lut.jpg "enhanced_green_hot_lut.jpg")
+![](/images/pages/ enhanced green hot lut.jpg "_enhanced_green_hot_lut.jpg")
 
 Microtubules under nucleus now more apparent
 
 Have a play and see which LUT helps illustrates the features in your image.
 
-![list\_of\_luts.jpg](/images/pages/List of luts.jpg "list_of_luts.jpg")
+![](/images/pages/ list of luts.jpg "_list_of_luts.jpg")
 
 Montage compiled from a stack generated using the menu commands “*Image/Color/Display LUTs*".
 
@@ -107,7 +113,7 @@ Different LUTs are available via the menu commands “*Image/Lookup Tables*”.
 
 When using a non-standard LUT it may be useful to add a greyscale ramp so the user can judge which color represents which grey-scale value. A ramp can be added with the native function "*Analyze/Tools/Calibration Bar...*". If there is no space for the ramp, try enlarging the image canvas with the menu command "*Image/Adjust/Canvas Size...*".
 
-![analyze\_calibration\_bar.jpg](/images/pages/Analyze calibration bar.jpg "analyze_calibration_bar.jpg")
+![](/images/pages/ analyze calibration bar.jpg "_analyze_calibration_bar.jpg")
 
 Analyze/Tools/Calibration Bar...
 

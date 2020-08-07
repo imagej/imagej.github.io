@@ -7,9 +7,10 @@ categories: News,Hackathons,ImageJ2
 description: test description
 ---
 
-![[ImgLib2](ImgLib2 ) hackers, from left to right: {% include person content='Saalfeld' %}, {% include person content='Dietzc' %}, {% include person content='Rueden' %}, {% include person content='Pietzsch' %}.](Janelia-2016-hackathon.jpg "ImgLib2 hackers, from left to right: {% include person content='Saalfeld' %}, {% include person content='Dietzc' %}, {% include person content='Rueden' %}, {% include person content='Pietzsch' %}.") From Sunday, June 19, 2016 through Tuesday, June 28, 2016, {% include person content='Saalfeld' %} at HHMI Janelia in Ashburn, Virginia hosted {% include person content='Pietzsch' %}, {% include person content='Rueden' %} and {% include person content='Dietzc' %} for a [hackathon](hackathon ) to improve the core [ImageJ2](ImageJ2 ) data model.
+<img src="/images/pages/Janelia-2016-hackathon.jpg" title="fig:ImgLib2 hackers, from left to right: {% include person content='Saalfeld' %}, {% include person content='Dietzc' %}, {% include person content='Rueden' %}, {% include person content='Pietzsch' %}." width="450" alt="ImgLib2 hackers, from left to right: {% include person content='Saalfeld' %}, {% include person content='Dietzc' %}, {% include person content='Rueden' %}, {% include person content='Pietzsch' %}." /> From Sunday, June 19, 2016 through Tuesday, June 28, 2016, {% include person content='Saalfeld' %} at HHMI Janelia in Ashburn, Virginia hosted {% include person content='Pietzsch' %}, {% include person content='Rueden' %} and {% include person content='Dietzc' %} for a [hackathon](hackathon ) to improve the core [ImageJ2](ImageJ2 ) data model.
 
-## Timeline
+Timeline
+--------
 
 The following chart illustrates when everyone was present:
 
@@ -70,29 +71,30 @@ PlotData=
 
 And {% include person content='Kharrington' %} stopped by on the afternoon of the 23rd to discuss some issues for a bit.
 
-## Discussions and progress
+Discussions and progress
+------------------------
 
 We spent the first couple of days discussing use cases and requirements for core [ImageJ2](ImageJ2 ) metadata-rich image structures.
 
 Some of the needed features we considered:
 
-  - [ImageJ1](ImageJ1 ) style calibration
-  - Time space shearing
-  - Transformations for display
-  - Color conversion for display
-  - Intensity conversion for display
-  - Store preprocessed information about raw data (e.g.: min, max, histogram, features, ...)
-  - Projections
-  - Non-linear axes transformations (e.g.: log)
-  - Other arbitrary transformations (e.g.: polar to cartesian)
-  - Some informative strings (metadata)
+-   [ImageJ1](ImageJ1 ) style calibration
+-   Time space shearing
+-   Transformations for display
+-   Color conversion for display
+-   Intensity conversion for display
+-   Store preprocessed information about raw data (e.g.: min, max, histogram, features, ...)
+-   Projections
+-   Non-linear axes transformations (e.g.: log)
+-   Other arbitrary transformations (e.g.: polar to cartesian)
+-   Some informative strings (metadata)
 
 The central use cases we used as litmus tests for our ideas:
 
-  - Interpolate differently across different dimensions of an image (e.g.: treat XYZ as continuous with {% include javadoc project='ImgLib2 ' package='net/imglib2/interpolation/randomaccess ' class='LanczosInterpolator ' label='Lanczos ' %}, but time as discrete with {% include javadoc project='ImgLib2 ' package='net/imglib2/interpolation/randomaccess ' class='NearestNeighborInterpolator ' label='nearest neighbor ' %} or maybe {% include javadoc project='ImgLib2 ' package='net/imglib2/interpolation/randomaccess ' class='NLinearInterpolator ' label='1D linear ' %}.
-  - Register 2D tiles into a larger 2D image, a la [TrakEM2](TrakEM2 ).
-  - Register 2D planes over time (e.g.: correct for shaky cam).
-  - Time skew over samples: each plane/scanline/pixel can have a physical timestamp, which could be taken into account somehow, although in practice doing so is very rare.
+-   Interpolate differently across different dimensions of an image (e.g.: treat XYZ as continuous with {% include javadoc project='ImgLib2 ' package='net/imglib2/interpolation/randomaccess ' class='LanczosInterpolator ' label='Lanczos ' %}, but time as discrete with {% include javadoc project='ImgLib2 ' package='net/imglib2/interpolation/randomaccess ' class='NearestNeighborInterpolator ' label='nearest neighbor ' %} or maybe {% include javadoc project='ImgLib2 ' package='net/imglib2/interpolation/randomaccess ' class='NLinearInterpolator ' label='1D linear ' %}.
+-   Register 2D tiles into a larger 2D image, a la [TrakEM2](TrakEM2 ).
+-   Register 2D planes over time (e.g.: correct for shaky cam).
+-   Time skew over samples: each plane/scanline/pixel can have a physical timestamp, which could be taken into account somehow, although in practice doing so is very rare.
 
 We spent quite some time considering how to create a unified data structure (`SpaceTree`? :-) which would keep multiple images grouped into some tree- or graph-like structure, with attached {% include javadoc project='ImgLib2 ' package='net/imglib2/realtransform ' class='RealTransform ' label='transforms ' %}, in a way which handled all of the above use cases and more.
 
@@ -112,10 +114,10 @@ For the various use cases above (e.g., registration of tiles in a larger space),
 
 Current work on these data structures can be seen at:
 
-  - https://github.com/imagej/imagej-common/compare/rich
+-   https://github.com/imagej/imagej-common/compare/rich
 
 There is also an experimental repository for the hackathon at:
 
-  - https://github.com/imagej/janelia-hackathon-2016
+-   https://github.com/imagej/janelia-hackathon-2016
 
   

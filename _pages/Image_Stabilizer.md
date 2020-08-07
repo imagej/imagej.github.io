@@ -9,19 +9,22 @@ description: test description
 
 {% include info-box software='ImageJ ' name='Image Stabilizer ' maintainer='[Christophe Leterrier](mailto:christophe_dot_leterrier_at_gmail_dot_com) ' author='[Kang Li](mailto:kangli_at_cs_dot_cmu_dot_edu) & [Steven Kang](mailto:skang_at_andrew_dot_cmu_dot_edu) ' filename=' [Image\_Stabilizer.class](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.class) and [Image\_Stabilizer\_Log\_Applier.class](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer_Log_Applier.class) ' source=' [Image\_Stabilizer.java](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.java) and [Image\_Stabilizer\_Log\_Applier.java](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer_Log_Applier.java) ' released='07/02/2008 ' latest-version='06/12/2009 ' status='unknown ' category='[Registration](Category_Registration ) ' website='http://www.cs.cmu.edu/\~kangli/code/Image\_Stabilizer.html ' %}
 
-## What does it do?
+What does it do?
+----------------
 
 This plugin stabilizes jittery image stacks using the Lucas-Kanade algorithm. It supports both grayscale and color images.
 
-![Image\_Stabilizer\_example.gif](/images/pages/Image Stabilizer example.gif "Image_Stabilizer_example.gif") ![Image\_Stabilizer\_examplecolor.gif](/images/pages/Image Stabilizer examplecolor.gif "Image_Stabilizer_examplecolor.gif")
+![](/images/pages/Image Stabilizer example.gif "fig:Image_Stabilizer_example.gif") ![](/images/pages/Image Stabilizer examplecolor.gif "fig:Image_Stabilizer_examplecolor.gif")
 
-## How does it work?
+How does it work?
+-----------------
 
 It uses the currently shown slice in an image stack as the initial reference, or "template"; It estimates the geometrical transformation needed to best align each of the other slices with the "template". The estimation and alignment are performed using the Lucas-Kanade algorithm; Once a slice is aligned, the "template" will be updated on the fly using the formula: new\_template = a \* old\_template + (1 - a) \* newly\_aligned\_slice, where "a" is the "template update coefficient" that can be adjusted when the plugin is run.
 
 Hint: To process very large image stacks, import the stack with the "Use Virtual Stack" option enabled. The plugin will prompt you for an output directory to store the stabilized image sequence.
 
-## Change log
+Change log
+----------
 
 2008/02/07: First version
 
@@ -43,11 +46,13 @@ Hint: To process very large image stacks, import the stack with the "Use Virtual
 
 2009/06/12: Fixed a bug that affected 32-bit float input images (thanks to Derek Bailey)
 
-## Reference
+Reference
+---------
 
 K. Li, "The image stabilizer plugin for ImageJ," http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.html, February, 2008.
 
-## License
+License
+-------
 
 Copyright (C) 2008-2009 Kang Li. All rights reserved.
 

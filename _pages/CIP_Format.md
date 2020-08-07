@@ -11,7 +11,8 @@ This page provides user documentation for the Format category of the [CIP](CIP )
 
 {% include cip content='Navigation' %}
 
-# **create**
+**create**
+==========
 
 <span style="font-size:110%">**Description**</span>  
 this function allows to create image specifying their size, value, pixel type and name.
@@ -35,7 +36,8 @@ this function allows to create image specifying their size, value, pixel type an
 <span style="font-size:110%">**Implementation**</span>  
 the function wraps the ops img function in the namespace create
 
-# **duplicate**
+**duplicate**
+=============
 
 <span style="font-size:110%">**Description**</span>  
 The function duplicate an input image or a crop if the input image
@@ -52,11 +54,12 @@ The function duplicate an input image or a crop if the input image
 <span style="font-size:110%">**Output**</span>  
     **outputImage\*** : the duplicated image  
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.duplicate( img1 , 'origin', [300,200], 'size', [150,150] )` ![CIP\_duplicate.PNG](/images/pages/CIP duplicate.PNG "CIP_duplicate.PNG")  
+    `img2 = cip.duplicate( img1 , 'origin', [300,200], 'size', [150,150] )` <img src="/images/pages/CIP_duplicate.PNG" title="fig:CIP_duplicate.PNG" width="400" alt="CIP_duplicate.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 the shallow copy is done with Views.offsetInterval in ImgLib2 and the deep copy is done with the ops function copy().rai().
 
-# **slice**
+**slice**
+=========
 
 <span style="font-size:110%">**Description**</span>  
 This function reduce input image dimensionality by duplicating a region of the same size as the input except along a selected dimension where the input is duplicated only at a particular position.
@@ -73,11 +76,12 @@ This function reduce input image dimensionality by duplicating a region of the s
 <span style="font-size:110%">**Output**</span>  
     **outputImage\*** : the duplicated image. The singleton dimension(s) are dropped so the image dimensionnality is effectively smaller than the input dimensionnality.  
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.slice( img1 , 'dimension', 2, 'position', 0 )` ![CIP\_slice.PNG](/images/pages/CIP slice.PNG "CIP_slice.PNG")  
+    `img2 = cip.slice( img1 , 'dimension', 2, 'position', 0 )` <img src="/images/pages/CIP_slice.PNG" title="fig:CIP_slice.PNG" width="400" alt="CIP_slice.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The shallow copy is done with Views.offsetInterval in ImgLib2 and the deep copy also apply the ops function copy().rai().
 
-# **project**
+**project**
+===========
 
 <span style="font-size:110%">**Description**</span>  
 This function reduce input image dimensionality by applying an operation to all the pixel along user specified dimension(s). sum, max and ,min operation are currently implemented.
@@ -95,10 +99,11 @@ This function reduce input image dimensionality by applying an operation to all 
     **valMap** : the projected image. The singleton dimension(s) are dropped so the image dimensionnality is effectively smaller than the input dimensionnality.  
     **argMap** : the argument of the projection. that is for a max projection for instance the postions at the pixel value was maximum along the projection dimension.  
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.project( img1 , 'dimension',2 )` ![CIP\_project.PNG](/images/pages/CIP project.PNG "CIP_project.PNG")  
+    `img2 = cip.project( img1 , 'dimension',2 )` <img src="/images/pages/CIP_project.PNG" title="fig:CIP_project.PNG" width="400" alt="CIP_project.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The [projection](https://github.com/benoalo/CIP/blob/master/src/main/java/invizio/cip/misc/Project2CIP.java) is implemented as part of CIP.
 
-# **concatenate**
+**concatenate**
+===============
 
 To be implemented

@@ -10,9 +10,11 @@ description: test description
 {% include gitmenu%}
 
 
-# Git's reflogs
+Git's reflogs
+=============
 
-## What is a "ref"?
+What is a "ref"?
+----------------
 
 In Git, a "ref" is a pointer into the commit graph (to visualize the commit graph, use the wonderful tool *gitk*.
 
@@ -26,19 +28,20 @@ Often, it is cumbersome to write out the whole 40-digit hex string, but you can 
 
 There are a few special refs, which are upper-case by default:
 
-  - HEAD: this is a pointer to the current branch, i.e. it points to something like "refs/heads/master", usually.
+-   HEAD: this is a pointer to the current branch, i.e. it points to something like "refs/heads/master", usually.
 
-<!-- end list -->
+<!-- -->
 
-  - ORIG\_HEAD: when pulling or merging, ORIG\_HEAD refers to the previous revision.
+-   ORIG\_HEAD: when pulling or merging, ORIG\_HEAD refers to the previous revision.
 
-<!-- end list -->
+<!-- -->
 
-  - FETCH\_HEAD: when pulling or fetching, the fetched ref is stored in FETCH\_HEAD. Note: if you use the convenient "git pull" without argument, chances are that FETCH\_HEAD contains more than one ref, and it is not really useful.
+-   FETCH\_HEAD: when pulling or fetching, the fetched ref is stored in FETCH\_HEAD. Note: if you use the convenient "git pull" without argument, chances are that FETCH\_HEAD contains more than one ref, and it is not really useful.
 
 And then, there are reflogs.
 
-## Reflogs
+Reflogs
+-------
 
 As mentioned, commits contain the whole history leading to that commit by inference.
 
@@ -73,40 +76,40 @@ It will show you something like
     Reflog message: pull : Fast forward
     Author: Johannes Schindelin <johannes.schindelin@gmx.de>
     Date:   23 hours ago
-    
+
         Add a Makefile target to create a .dmg file
-    
+
         For the moment, this script only works on MacOSX :-(
-    
+
         Signed-off-by: Johannes Schindelin <johannes.schindelin@gmx.de>
-    
+
     commit e73abb095c1905063c22d3977433edaaa1e5dac9
     Reflog: HEAD@{23 hours ago} (Johannes Schindelin <johannes.schindelin@gmx.de>)
     Reflog message: pull : Fast forward
     Author: Johannes Schindelin <johannes.schindelin@gmx.de>
     Date:   23 hours ago
-    
+
         check-class-versions: do not delete the temporary macro file
-    
+
         check-class-versions creates a temporary macro file which is then
         executed in headless mode.  However, when falling back on MacOSX,
         it was deleted before ImageJ saw it.
-    
+
         Signed-off-by: Johannes Schindelin <johannes.schindelin@gmx.de>
-    
+
     commit 433a55259e0b105420263c433a370ef5423d1976
     Reflog: HEAD@{26 hours ago} (Johannes Schindelin <johannes.schindelin@gmx.de>)
     Reflog message: merge origin/contrib: Fast forward
     Author: Johannes Schindelin <johannes.schindelin@gmx.de>
     Date:   27 hours ago
-    
+
         Fix crash on Win32
-    
+
         When making the error reporting better, a bug slipped in which led to
         NULL being dereferenced.  This commit fixes that.
-    
+
         Signed-off-by: Johannes Schindelin <johannes.schindelin@gmx.de>
-    
+
     ...
 
 So you can also refer to the reflog with something like "HEAD@{1 day ago}". For convenience, you can replace the spaces with dots so you do not have to quote the parameter.

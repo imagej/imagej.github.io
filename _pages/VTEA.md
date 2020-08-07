@@ -13,9 +13,10 @@ description: test description
 {% endcapture %}
 {% include info-box name='VTEA ' software='Fiji ' author='Seth Winfree ([1](mailto:winfrees@iu.edu)) ' maintainer='Seth Winfree ([2](mailto:winfrees@iu.edu)) ' source=source status='v0.7, alpha, 1.0.a on deck. ' category='[Segmentation](Category_Segmentation ),[Visualization](Category_Visualization ),[Plugins](Category_Plugins ) ' %}
 
-# Volumetric Tissue Exploration and Analysis
+Volumetric Tissue Exploration and Analysis
+==========================================
 
-**Three-dimensional tissue cytometry.** Three-dimensional tissue cytometry(3DTC) enables the quantitative measurement of whole cells while retaining their morphology, localization and associations-think of it as *in situ* flow cytometry. How can we do 3DTC? Volumetric tissue exploration and analysis\!
+**Three-dimensional tissue cytometry.** Three-dimensional tissue cytometry(3DTC) enables the quantitative measurement of whole cells while retaining their morphology, localization and associations-think of it as *in situ* flow cytometry. How can we do 3DTC? Volumetric tissue exploration and analysis!
 
 **In order for it to be useful it needs to be:**
 
@@ -35,36 +36,38 @@ We developed VTEA out of a need to unify the various tasks involved in image pro
 
 Importantly, our solution is in its infancy. In fact, the tools are relatively simple ones drawn from ImageJ's core functions. These first tools represent only the beginning of our vision for VTEA. We are currently planning to leverage the SciJava framework to make VTEA easily extensible and continue to build both upon existing tools in ImageJ/Fiji and our own novel approaches.
 
-## Installing
+Installing
+----------
 
-`   To install the VTEA plugin use, `[`How``   ``to``   ``follow``   ``a``   ``3rd``   ``party``   ``update``   ``site`](How_to_follow_a_3rd_party_update_site )` and check the update site:`  
+`   To install the VTEA plugin use, `[`How`` ``to`` ``follow`` ``a`` ``3rd`` ``party`` ``update`` ``site`](How_to_follow_a_3rd_party_update_site )` and check the update site:`  
 `   "Volumetric Tissue Exploration and Analysis" `**`OR`**` follow the following four steps:`
 
-### 1\. Start updater
+### 1. Start updater
 
-![Select "Update..." under "Help".](Step_1.jpg "Select \"Update...\" under \"Help\".")
+<figure><img src="/images/pages/Step_1.jpg" title="Select &quot;Update...&quot; under &quot;Help&quot;." width="500" alt="Select &quot;Update...&quot; under &quot;Help&quot;." /><figcaption aria-hidden="true">Select "Update..." under "Help".</figcaption></figure>
 
 Select "Update..." under "Help".
 
-### 2\. Add update site
+### 2. Add update site
 
-![Select "Manage update sites."](Step_2.jpg "Select \"Manage update sites.\"")
+<figure><img src="/images/pages/Step_2.jpg" title="Select &quot;Manage update sites.&quot;" width="500" alt="Select &quot;Manage update sites.&quot;" /><figcaption aria-hidden="true">Select "Manage update sites."</figcaption></figure>
 
 Select "Manage update sites."
 
-### 3\. Select update site
+### 3. Select update site
 
-![ 500px |Check "Volumetric Tissue Expl..."](Step_3.jpg " 500px |Check \"Volumetric Tissue Expl...\"")
+![ 500px \|Check "Volumetric Tissue Expl..."](Step_3.jpg " 500px |Check "Volumetric Tissue Expl..."")
 
 Check "Volumetric Tissue Expl..." and select "Close"
 
-### 4\. Apply changes
+### 4. Apply changes
 
-![ 500px |Check "Volumetric Tissue Expl..."](Step_4.jpg " 500px |Check \"Volumetric Tissue Expl...\"")
+![ 500px \|Check "Volumetric Tissue Expl..."](Step_4.jpg " 500px |Check "Volumetric Tissue Expl..."")
 
 Select "Apply changes". Upon restart, the plugin will be present under a new menu "IU\_Tools".
 
-## Tutorials
+Tutorials
+---------
 
 ### Image Processing
 
@@ -82,7 +85,8 @@ Select "Apply changes". Upon restart, the plugin will be present under a new men
 
 `      Coming soon!`
 
-## VTEA reference
+VTEA reference
+--------------
 
 The utility of VTEA and 3D tissue cytometry was demonstrated in the following publication:
 

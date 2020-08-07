@@ -13,8 +13,9 @@ description: test description
 {% endcapture %}
 {% include info-box content='Plugin' name='μManager ' software='μManager ' logo='<img src="/images/pages/Mm-icon.jpg" width="96"/> ' author=' [Vale Lab](http://valelab.ucsf.edu/) , [UCSF](http://www.ucsf.edu/) ' maintainer=' [Open Imaging, Inc.](https://open-imaging.com/) ' source=source status='Active ' website='https://micro-manager.org/ ' %}μManager is a software package for control of automated microscopes.
 
-## Publication
+Publication
+-----------
 
-  - {% include publication content='Micro-Manager' %}
+-   {% include publication content='Micro-Manager' %}
 
  

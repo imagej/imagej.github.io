@@ -10,7 +10,8 @@ description: test description
 (Return to the [Developer Documentation](3D_Viewer__Developer_Documentation ) page)  
 (Return to the main [3D\_Viewer](3D_Viewer ) page)
 
-## How to work with orthoslices
+How to work with orthoslices
+----------------------------
 
 You can download example source code for this HowTo [here](3D_Viewer__Example_code ).
 
@@ -18,11 +19,11 @@ Before reading this HowTo, it may be helpful to read [The relation between Conte
 
 When displaying a `Content` as orthoslices, the corresponding `ContentNode` of the `Content` is of type `OrthoGroup`.
 
-`OrthoGroup` extends `VoltexGroup`, and therefore also shares its functionality regarding volume editing. Additionally, `OrthoGroup` provides functions for adjusting the displayed slices (planes) and hiding them: \<source lang="java" first-line="31";\> // Add the image as a volume Content c = univ.addOrthoslice(imp);
+`OrthoGroup` extends `VoltexGroup`, and therefore also shares its functionality regarding volume editing. Additionally, `OrthoGroup` provides functions for adjusting the displayed slices (planes) and hiding them: &lt;source lang="java" first-line="31";&gt; // Add the image as a volume Content c = univ.addOrthoslice(imp);
 
 // Retrieve the OrthoGroup OrthoGroup ortho = (OrthoGroup)c.getContent();
 
-for(int i = 0; i \< 10; i++) {
+for(int i = 0; i &lt; 10; i++) {
 
 `   ortho.increase(AxisConstants.Z_AXIS);`  
 `   sleep(1);`
@@ -39,16 +40,14 @@ for(int i = 0; i \< 10; i++) {
 
 **Important methods of `OrthoGroup`**
 
-``` 
-    public void setSlice(int axis, int v);
+        public void setSlice(int axis, int v);
 
-    public int getSlice(int axis);
+        public int getSlice(int axis);
 
-    public void decrease(int axis);
+        public void decrease(int axis);
 
-    public void increase(int axis);
+        public void increase(int axis);
 
-    public boolean isVisible(int axis);
+        public boolean isVisible(int axis);
 
-    public void setVisible(int axis, boolean b);
-```
+        public void setVisible(int axis, boolean b);

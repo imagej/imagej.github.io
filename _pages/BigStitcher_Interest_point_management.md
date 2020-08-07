@@ -7,26 +7,28 @@ categories:
 description: test description
 ---
 
-## Overview
+Overview
+--------
 
 While the [Interest Point-based registration](BigStitcher_Registration ) is quite resistant to outliers and will typically work even with few actually corresponding points, there are situations in which you might want to manually curate the detected interest points:
 
-  - in very heterogeneous samples you might have a lot of spurious detections that you want to exclude.
-  - for extracting [Point Spread Functions (PSFs)](BigStitcher_PSF ) for [Deconvolution](BigStitcher_Deconvolution ), you want to only use detected beads, but not detections in the sample itself.
+-   in very heterogeneous samples you might have a lot of spurious detections that you want to exclude.
+-   for extracting [Point Spread Functions (PSFs)](BigStitcher_PSF ) for [Deconvolution](BigStitcher_Deconvolution ), you want to only use detected beads, but not detections in the sample itself.
 
 We offer a variety of ways to manage interest points in **MultiView mode**, which can be found in the main menu under `Interest Points`.
 
 <img src="/images/pages/BigStitcher ips menu.png" width="800"/>
 
-## Interest Point Explorer
+Interest Point Explorer
+-----------------------
 
 If you click **Interest Point Explorer (on/off)**, a new window will open that shows the different interest points that were detected in the **selected view(s)**. The table will list:
 
-  - the **Name** of the interest points
-  - the **Number** of interest points
-  - if you already performed registration using the points, the **Number of Corresponding points**, i.e. the number of points that were found in at least one other view, and the **Number of Correspondences**, i.e. the number of points in other views that could be matched to the selected points (note that this number can be larger as one point might have correspondences in multiple other views).
-  - in how many of the selected views points **are present**
-  - the **Parameters** used for detection
+-   the **Name** of the interest points
+-   the **Number** of interest points
+-   if you already performed registration using the points, the **Number of Corresponding points**, i.e. the number of points that were found in at least one other view, and the **Number of Correspondences**, i.e. the number of points in other views that could be matched to the selected points (note that this number can be larger as one point might have correspondences in multiple other views).
+-   in how many of the selected views points **are present**
+-   the **Parameters** used for detection
 
 You can right-click on a line in the list and click **Delete** to delete the interest points.
 
@@ -38,7 +40,8 @@ You can right-click on a line in the list and click **Delete** to delete the int
 
 If the BigDataViewer is open, clicking on **\#Detections** or **\#Corresponding** will overly the detected or corresponding interest points in the BigDataViewer. All points will be displayed at once, with the points in the currently displayed image plane drawn in **red** and the points from other planes in **green**.
 
-## Manage Interest Points
+Manage Interest Points
+----------------------
 
 In the **Manage Interest Points** sub-menu, we offer a few ways of filtering and managing interest points:
 
@@ -62,11 +65,11 @@ Selecting **Show Distance Histogram ...** and clicking on an interest point labe
 
 Using **Remove by Distance** or **Remove by relative Distance**, you can filter interest points by their distance to the nearest neighbor in the same point set or in another point set (relative distance). Clicking this opens a new dialog asking for:
 
-  - **Interest points:** the interest points to filter by (relative) distance
-  - (when using relative distances) **Relative to:** which other points to compute relative distances to.
-  - **New label:** under which name to save the new, thinned-out interest points
-  - **Lower threshold** and **Upper threshold**: the range of distances to keep or remove
-  - **Defined range:** whether to **Remove** points with a nearest-neighbor-distance in the given range or **Keep** them (removes all otside the range).
+-   **Interest points:** the interest points to filter by (relative) distance
+-   (when using relative distances) **Relative to:** which other points to compute relative distances to.
+-   **New label:** under which name to save the new, thinned-out interest points
+-   **Lower threshold** and **Upper threshold**: the range of distances to keep or remove
+-   **Defined range:** whether to **Remove** points with a nearest-neighbor-distance in the given range or **Keep** them (removes all otside the range).
 
 <img src="/images/pages/BigStitcher ips dist remove dist.png" width="400"/>
 
@@ -80,16 +83,17 @@ Clicking **OK** will open the selected projection in a new ImageJ window with th
 
 <img src="/images/pages/BigStitcher ips manual remove example.png" width="1000"/>
 
-## Visualize Interest Points
+Visualize Interest Points
+-------------------------
 
 Finally, the **Visualize Interest Points...** menu item allows you to render interest points as Gaussian spots and display the result as a new image stack in ImageJ.
 
 In the dialog, you can set the following parameters:
 
-  - **Interest points:** which interest points to visualize
-  - **Display:** whether to display **All detections** or only **Corresponding detections** (see above for details).
-  - **Downsample detections rendering:** by how much to downsample the resulting rendered stack (e.g. a full-resolution rendering will have the same size as the corresponding image stack).
-  - **Display input images:** click to also display the corresponding input images as ImageJ-images.
+-   **Interest points:** which interest points to visualize
+-   **Display:** whether to display **All detections** or only **Corresponding detections** (see above for details).
+-   **Downsample detections rendering:** by how much to downsample the resulting rendered stack (e.g. a full-resolution rendering will have the same size as the corresponding image stack).
+-   **Display input images:** click to also display the corresponding input images as ImageJ-images.
 
 Clicking **OK** will produce an interest point rendering *for each selected view*.
 

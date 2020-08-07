@@ -7,10 +7,12 @@ categories:
 description: test description
 ---
 
-# Lasse Wollatz
+Lasse Wollatz
+=============
 
 University of Southampton, L.Wollatz@soton.ac.uk
 
-## Contributions
+Contributions
+-------------
 
-  - LungJ: [1](http://imagej.net/LungJ)
+-   LungJ: [1](http://imagej.net/LungJ)

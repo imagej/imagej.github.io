@@ -14,275 +14,285 @@ description: test description
 
 SNT's Reconstruction Viewer is a powerful OpenGL 3D visualization tool for both surface meshes and reconstructions
 
-  - It can be used as a standalone program or from withing SNT
-  - Features:
-      - Advanced rendering supporting axes, transparency, color interpolation and path smoothing
-      - Interactive scenes (controlled rotations, panning, zoom, scaling, animation, "dark"/"light" mode)
-      - Tools for management and customization of scene elements
-      - Ability to render both local and remote files on the same scene
-      - Loading of surface meshes of several template brains (Drosophila and Allen CCF (Allen Mouse Brain Atlas))
+-   It can be used as a standalone program or from withing SNT
+-   Features:
+    -   Advanced rendering supporting axes, transparency, color interpolation and path smoothing
+    -   Interactive scenes (controlled rotations, panning, zoom, scaling, animation, "dark"/"light" mode)
+    -   Tools for management and customization of scene elements
+    -   Ability to render both local and remote files on the same scene
+    -   Loading of surface meshes of several template brains (Drosophila and Allen CCF (Allen Mouse Brain Atlas))
 
-![reconstruction-viewer-animated-gif.gif](/images/pages/Reconstruction-viewer-animated-gif.gif "reconstruction-viewer-animated-gif.gif")
+![](/images/pages/Reconstruction-viewer-animated-gif.gif "reconstruction-viewer-animated-gif.gif")
 
-# Starting the Viewer
+Starting the Viewer
+===================
 
 The Reconstruction Viewer may be used as either a standalone program or from within SNT. To open Reconstruction Viewer as a standalone program, go to {% include bc content='Plugins|NeuroAnatomy|Reconstruction Viewer'%}. To open the program from within SNT, use the "Open Reconstruction Viewer" option in the 3D tab of the SNT dialog. If there are any tracings currently loaded in SNT, they will be displayed in Reconstruction Viewer after opening. Note that, for performance reasons, some Path Manager changes may need to be synchronized manually from RV controls.
 
-# Scene Interaction
+Scene Interaction
+=================
 
-The display canvas supports multiple modes of interaction, including controlled rotations, panning, zoom, scaling, animation, and alternation between "dark" and "light" modes. The full list of keyboard shortcuts is found by navigating to {% include bc content='Scene Controls|Scene Shortcuts...'%} from RV Controls, or by pressing {% include key content='H' %} (notification) or {% include key content='F1' %} (separate window) in the Viewer scene. ![](/images/pages/Reconstruction-viewer-shortcuts.png) {% include clear%}
+The display canvas supports multiple modes of interaction, including controlled rotations, panning, zoom, scaling, animation, and alternation between "dark" and "light" modes. The full list of keyboard shortcuts is found by navigating to {% include bc content='Scene Controls|Scene Shortcuts...'%} from RV Controls, or by pressing {% include key content='H' %} (notification) or {% include key content='F1' %} (separate window) in the Viewer scene. <img src="/images/pages/reconstruction-viewer-shortcuts.png" title="fig:" width="400" /> {% include clear%}
 
 
-# RV Controls
+RV Controls
+===========
 
-## Scene Controls
+Scene Controls
+--------------
 
-![](/images/pages/Reconstruction-viewer-scene-controls.png) This menu provides control over the rendered scene.
+<img src="/images/pages/reconstruction-viewer-scene-controls.png" title="fig:" width="400" /> This menu provides control over the rendered scene.
 
-  - {% include bc content='Fit to Visible Objects'%} {% include key content='F' %} Computes a bounding box containing all objects of the scene and adjusts the zoom level to ensure all objects are within the camera view.
-  - {% include bc content='Stretch-to-Fill'%} Stretches the projection on the whole viewport.
-
-<div align="left">
-
-  - ![Stretch-to-Fill - disabled](/images/pages/Reconstruction-viewer-not-stretched.png "Stretch-to-Fill - disabled")
-  - ![Stretch-to-Fill - enabled](/images/pages/Reconstruction-viewer-stretched.png "Stretch-to-Fill - enabled")
-
-</div>
-
-  - {% include bc content='Impose Isotropic Scale|  '%} Squares the aspect ratio of the selected dimensions, leaving the others unchanged.
+-   {% include bc content='Fit to Visible Objects'%} {% include key content='F' %} Computes a bounding box containing all objects of the scene and adjusts the zoom level to ensure all objects are within the camera view.
+-   {% include bc content='Stretch-to-Fill'%} Stretches the projection on the whole viewport.
 
 <div align="left">
 
-  - ![Impose Isotropic Scale - None](/images/pages/Reconstruction-viewer-aspect-ratio-none.png "Impose Isotropic Scale - None")
-  - ![Impose Isotropic Scale - ZY](/images/pages/Reconstruction-viewer-aspect-ratio-ZY.png "Impose Isotropic Scale - ZY")
+-   <img src="/images/pages/reconstruction-viewer-not-stretched.png" title="fig:Stretch-to-Fill - disabled" width="200" alt="Stretch-to-Fill - disabled" />
+-   <img src="/images/pages/reconstruction-viewer-stretched.png" title="fig:Stretch-to-Fill - enabled" width="200" alt="Stretch-to-Fill - enabled" />
 
 </div>
 
-  - {% include bc content='Full Screen'%} {% include key content='Shift' %} + {% include key content='F' %} Enters full screen mode. To exit full screen press {% include key content='ESC' %}
-  - {% include bc content='Reset Scene'%} {% include key content='R' %}
-  - {% include bc content='Reload Scene'%} {% include key content='CTRL' %} + {% include key content='R' %} Resets the zoom level to the default, fitting and centering all scene objects into the camera view. The current rotation setting remains unchanged. Note if some drawables in the 3D scene are not being rendered properly when this option is selected, it will prompt to rebuild the scene completely.
-  - {% include bc content='Rebuild Scene...'%} {% include key content='CTRL' %} + {% include key content='SHIFT' %} + {% include key content='R' %} Clears all objects from the scene then rebuilds them from scratch.
-  - {% include bc content='Wipe Scene...'%} Removes all objects from the scene. Note this action cannot be undone.
-  - {% include bc content='Sync Path Manager Changes'%} If the 3D scene contains any trees that are currently stored in the Path Manager, re-render these trees to reflect any change in the path structure given by the Path Manager.
+-   {% include bc content='Impose Isotropic Scale|  '%} Squares the aspect ratio of the selected dimensions, leaving the others unchanged.
 
-## Manage and Customize Neuronal Arbors
+<div align="left">
+
+-   <img src="/images/pages/reconstruction-viewer-aspect-ratio-none.png" title="fig:Impose Isotropic Scale - None" width="200" alt="Impose Isotropic Scale - None" />
+-   <img src="/images/pages/reconstruction-viewer-aspect-ratio-ZY.png" title="fig:Impose Isotropic Scale - ZY" width="200" alt="Impose Isotropic Scale - ZY" />
+
+</div>
+
+-   {% include bc content='Full Screen'%} {% include key content='Shift' %} + {% include key content='F' %} Enters full screen mode. To exit full screen press {% include key content='ESC' %}
+-   {% include bc content='Reset Scene'%} {% include key content='R' %}
+-   {% include bc content='Reload Scene'%} {% include key content='CTRL' %} + {% include key content='R' %} Resets the zoom level to the default, fitting and centering all scene objects into the camera view. The current rotation setting remains unchanged. Note if some drawables in the 3D scene are not being rendered properly when this option is selected, it will prompt to rebuild the scene completely.
+-   {% include bc content='Rebuild Scene...'%} {% include key content='CTRL' %} + {% include key content='SHIFT' %} + {% include key content='R' %} Clears all objects from the scene then rebuilds them from scratch.
+-   {% include bc content='Wipe Scene...'%} Removes all objects from the scene. Note this action cannot be undone.
+-   {% include bc content='Sync Path Manager Changes'%} If the 3D scene contains any trees that are currently stored in the Path Manager, re-render these trees to reflect any change in the path structure given by the Path Manager.
+
+Manage and Customize Neuronal Arbors
+------------------------------------
 
 This menu relates to the import, customization and management of rendered reconstructions.
 
 ### Add
 
-![](/images/pages/Reconstruction-manage-arbors-menu.png)
+<figure><img src="/images/pages/reconstruction-manage-arbors-menu.png" width="400" /></figure>
 
-  - {% include bc content='Import File...'%} Imports and renders a single reconstruction file (".swc" or ".traces"). A color may be chosen on import or applied later using the "Customize & Adjust" sub-menu. Note that loaded files will not be listed in the Path Manager.
-  - {% include bc content='Import Directory...'%} Imports and renders all reconstruction files in a directory. A single color may be applied to all reconstructions or they may be colored uniquely. Note that loaded files will not be listed in the Path Manager.
-  - {% include bc content='Import & Compare Groups...'%} Calls the {% include bc content='Utilities|Compare Reconstructions...'%} command found in the main SNT dialog, allowing import, rendering and comparison of multiple groups of reconstructions.
-  - {% include bc content='Load from Database| '%} Allows import and rendering of reconstruction files fetched from the FlyCircuit, MouseLight and NeuroMorpho remote databases.
+-   {% include bc content='Import File...'%} Imports and renders a single reconstruction file (".swc" or ".traces"). A color may be chosen on import or applied later using the "Customize & Adjust" sub-menu. Note that loaded files will not be listed in the Path Manager.
+-   {% include bc content='Import Directory...'%} Imports and renders all reconstruction files in a directory. A single color may be applied to all reconstructions or they may be colored uniquely. Note that loaded files will not be listed in the Path Manager.
+-   {% include bc content='Import & Compare Groups...'%} Calls the {% include bc content='Utilities|Compare Reconstructions...'%} command found in the main SNT dialog, allowing import, rendering and comparison of multiple groups of reconstructions.
+-   {% include bc content='Load from Database| '%} Allows import and rendering of reconstruction files fetched from the FlyCircuit, MouseLight and NeuroMorpho remote databases.
 
 ### Customize & Adjust
 
-  - {% include bc content='All Parameters...'%} Allows customization of color, transparency and thickness parameters by neurite compartment in a single dialog.
-  - {% include bc content='Color...'%} Assigns the chosen homogeneous color to all selected reconstructions.
-  - {% include bc content='Color Coding|Individual Cells...'%} Applies morphometric color mapping to selected reconstructions. The chosen LUT is used to assign a metric-based color gradient to each reconstruction.
+-   {% include bc content='All Parameters...'%} Allows customization of color, transparency and thickness parameters by neurite compartment in a single dialog.
+-   {% include bc content='Color...'%} Assigns the chosen homogeneous color to all selected reconstructions.
+-   {% include bc content='Color Coding|Individual Cells...'%} Applies morphometric color mapping to selected reconstructions. The chosen LUT is used to assign a metric-based color gradient to each reconstruction.
 
 <div align="left">
 
-  - ![Branch Order and Ice LUT](/images/pages/Reconstruction-viewer-color-mapping-individual.png "Branch Order and Ice LUT")
+-   <img src="/images/pages/reconstruction-viewer-color-mapping-individual.png" title="fig:Branch Order and Ice LUT" width="200" alt="Branch Order and Ice LUT" />
 
 </div>
 
-  - {% include bc content='Color Coding|Group of Cells...'%} Applies morphometric color coding to a selected group of reconstruction. Note that this option uses the chosen LUT to assign a homogeneous color to each reconstruction in the group based on the chosen metric.
+-   {% include bc content='Color Coding|Group of Cells...'%} Applies morphometric color coding to a selected group of reconstruction. Note that this option uses the chosen LUT to assign a homogeneous color to each reconstruction in the group based on the chosen metric.
 
 <div align="left">
 
-  - ![No. Branch Points and Ice LUT](/images/pages/Reconstruction-viewer-color-mapping-group.png "No. Branch Points and Ice LUT")
+-   <img src="/images/pages/reconstruction-viewer-color-mapping-group.png" title="fig:No. Branch Points and Ice LUT" width="200" alt="No. Branch Points and Ice LUT" />
 
 </div>
 
-  - {% include bc content='Color Coding|Color Each Cell Uniquely'%} Applies a unique homogeneous color to each selected reconstruction. Note this option will override any previously applied color mapping to the selected reconstructions.
+-   {% include bc content='Color Coding|Color Each Cell Uniquely'%} Applies a unique homogeneous color to each selected reconstruction. Note this option will override any previously applied color mapping to the selected reconstructions.
 
 <div align="left">
 
-  - ![Unique Color Coding](/images/pages/Reconstruction-viewer-color-mapping-unique.png "Unique Color Coding")
+-   <img src="/images/pages/reconstruction-viewer-color-mapping-unique.png" title="fig:Unique Color Coding" width="200" alt="Unique Color Coding" />
 
 </div>
 
-  - {% include bc content='Thickness...'%} Specifies a constant thickness to be applied to the selected reconstructions. Note this value will only affect how Paths are displayed in the Reconstruction Viewer.
+-   {% include bc content='Thickness...'%} Specifies a constant thickness to be applied to the selected reconstructions. Note this value will only affect how Paths are displayed in the Reconstruction Viewer.
 
 <div align="left">
 
-  - ![Thickness = 1.0](/images/pages/Reconstruction-viewer-thickness-1.png "Thickness = 1.0")
-  - ![Thickness = 5.0](/images/pages/Reconstruction-viewer-thickness-5.png "Thickness = 5.0")
+-   <img src="/images/pages/reconstruction-viewer-thickness-1.png" title="fig:Thickness = 1.0" width="200" alt="Thickness = 1.0" />
+-   <img src="/images/pages/reconstruction-viewer-thickness-5.png" title="fig:Thickness = 5.0" width="200" alt="Thickness = 5.0" />
 
 </div>
 
-  - {% include bc content='Translate...'%} Specifies a translation to be applied to the selected reconstructions. To avoid overwriting data from a tracing session, this command is only available in the standalone viewer.
+-   {% include bc content='Translate...'%} Specifies a translation to be applied to the selected reconstructions. To avoid overwriting data from a tracing session, this command is only available in the standalone viewer.
 
 ### Remove
 
-  - {% include bc content='Remove Selected...'%} Deletes the selected reconstructions from the scene.
-  - {% include bc content='Remove All...'%} Deletes all reconstructions from the scene.
+-   {% include bc content='Remove Selected...'%} Deletes the selected reconstructions from the scene.
+-   {% include bc content='Remove All...'%} Deletes all reconstructions from the scene.
 
-## Manage and Customize 3D Meshes
+Manage and Customize 3D Meshes
+------------------------------
 
-![](/images/pages/Reconstruction-viewer-mesh-controls.png) ![{% include bc content='Customize|All Parameters...'%}](/images/pages/Reconstruction-viewer-customize-mesh-controls.png "{% include bc content='Customize|All Parameters...'%}")
+<img src="/images/pages/reconstruction-viewer-mesh-controls.png" title="fig:" width="250" /> <img src="/images/pages/reconstruction-viewer-customize-mesh-controls.png" title="fig:{% include bc content='Customize|All Parameters...'%}" width="400" alt="{% include bc content='Customize|All Parameters...'%}" />
 
 ### Add
 
-  - {% include bc content='Import OBJ File(s)...'%} Allows import and rendering of Wavefront OBJ files, commonly used to represent surface meshes of anatomical structures.
+-   {% include bc content='Import OBJ File(s)...'%} Allows import and rendering of Wavefront OBJ files, commonly used to represent surface meshes of anatomical structures.
 
 ### Customize
 
-  - {% include bc content='All Parameters...'%} Allows adjustment of the color and transparency of the selected mesh(es) and/or their computed bounding boxes in a single menu.
-  - {% include bc content='Color...'%} Allows choice of mesh color from a generic CMYK profile.
-  - {% include bc content='Transparency...'%} Sets mesh transparency as a percentage value.
+-   {% include bc content='All Parameters...'%} Allows adjustment of the color and transparency of the selected mesh(es) and/or their computed bounding boxes in a single menu.
+-   {% include bc content='Color...'%} Allows choice of mesh color from a generic CMYK profile.
+-   {% include bc content='Transparency...'%} Sets mesh transparency as a percentage value.
 
 ### Remove
 
-  - {% include bc content='Remove Selected...'%} Deletes the selected mesh(es) from the scene.
-  - {% include bc content='Remove All...'%} Deletes all imported mesh(es) from the scene.
+-   {% include bc content='Remove Selected...'%} Deletes the selected mesh(es) from the scene.
+-   {% include bc content='Remove All...'%} Deletes all imported mesh(es) from the scene.
 
 <div align="left">
 
-  - ![Transparency = 5%](/images/pages/Reconstruction-viewer-obj-transparency-5.png "Transparency = 5%")
-  - ![Transparency = 95%](/images/pages/Reconstruction-viewer-obj-transparency-95.png "Transparency = 95%")
+-   <img src="/images/pages/reconstruction-viewer-obj-transparency-5.png" title="fig:Transparency = 5%" width="300" alt="Transparency = 5%" />
+-   <img src="/images/pages/reconstruction-viewer-obj-transparency-95.png" title="fig:Transparency = 95%" width="300" alt="Transparency = 95%" />
 
 </div>
 
 {% include clear%}
 
 
-## Reference Brains
+Reference Brains
+----------------
 
-This menu allows import of several Drosophila, Zebrafish and Mouse reference brains and anatomical compartments. ![](/images/pages/Reconstruction-reference-brains-menu.png)
+This menu allows import of several Drosophila, Zebrafish and Mouse reference brains and anatomical compartments. <img src="/images/pages/reconstruction-reference-brains-menu.png" title="fig:" width="300" />
 
 ### Mouse
 
-  - {% include bc content='Allen CCF Navigator (Adult)'%} Import and navigation system for the Allen Adult Mouse Common Coordinate Framework v3. Selecting this option imports the Whole Brain reference mesh, and presents a GUI allowing search, metadata retrieval, and import/rendering of ontologies contained in the Allen Common Coordinate Framework v3.
+-   {% include bc content='Allen CCF Navigator (Adult)'%} Import and navigation system for the Allen Adult Mouse Common Coordinate Framework v3. Selecting this option imports the Whole Brain reference mesh, and presents a GUI allowing search, metadata retrieval, and import/rendering of ontologies contained in the Allen Common Coordinate Framework v3.
 
 <div align="left">
 
-  - ![Allen CCF Navigator](/images/pages/Reconstruction-viewer-allen-ccf-ontology.png "Allen CCF Navigator")
-  - ![Allen CCF Ontology Info](/images/pages/Reconstruction-viewer-allen-ccf-thalamus-info.png "Allen CCF Ontology Info")
+-   <img src="/images/pages/reconstruction-viewer-allen-ccf-ontology.png" title="fig:Allen CCF Navigator" width="200" alt="Allen CCF Navigator" />
+-   <img src="/images/pages/reconstruction-viewer-allen-ccf-thalamus-info.png" title="fig:Allen CCF Ontology Info" width="200" alt="Allen CCF Ontology Info" />
 
 </div>
 
 ### Zebrafish
 
-  - {% include bc content='Max Planck ZBA'%} Max Planck Zebrafish Brain Atlas
+-   {% include bc content='Max Planck ZBA'%} Max Planck Zebrafish Brain Atlas
 
 ### Drosophila
 
-  - {% include bc content='Adult Brain: FlyCircuit'%} FlyCircuit Drosophila reference brain
-  - {% include bc content='Adult Brain: JFRC 2018'%} Janelia Farm Research Campus 2018 Drosophila reference brain
-  - {% include bc content='Adult Brain: JRFC2 (VFB)'%} Janelia Farm Research Campus Virtual Fly Brain
-  - {% include bc content='Adult Brain: JFRC3'%} Janelia Farm Research Campus Drosophila reference brain (Version 3)
-  - {% include bc content='Adult VNS'%} Adult Drosophila ventral nervous system reference
-  - {% include bc content='Larva L1'%} Drosophila 1st instar larval stage
-  - {% include bc content='Larva L3'%} Drosophila 3rd instar larval stage
+-   {% include bc content='Adult Brain: FlyCircuit'%} FlyCircuit Drosophila reference brain
+-   {% include bc content='Adult Brain: JFRC 2018'%} Janelia Farm Research Campus 2018 Drosophila reference brain
+-   {% include bc content='Adult Brain: JRFC2 (VFB)'%} Janelia Farm Research Campus Virtual Fly Brain
+-   {% include bc content='Adult Brain: JFRC3'%} Janelia Farm Research Campus Drosophila reference brain (Version 3)
+-   {% include bc content='Adult VNS'%} Adult Drosophila ventral nervous system reference
+-   {% include bc content='Larva L1'%} Drosophila 1st instar larval stage
+-   {% include bc content='Larva L3'%} Drosophila 3rd instar larval stage
 
 <div align="center">
 
-  - ![FlyCircuit Drosophila (Adult)](/images/pages/Reconstruction-flycircuit-reference.png "FlyCircuit Drosophila (Adult)")
-  - ![Allen Adult Mouse Whole Brain + Thalamus](/images/pages/Reconstruction-viewer-whole-mouse-thalamus.png "Allen Adult Mouse Whole Brain + Thalamus")
-  - ![Max Planck ZBA](/images/pages/Reconstruction-viewer-zebrafish-reference.png "Max Planck ZBA")
+-   <img src="/images/pages/reconstruction-flycircuit-reference.png" title="fig:FlyCircuit Drosophila (Adult)" width="300" alt="FlyCircuit Drosophila (Adult)" />
+-   <img src="/images/pages/reconstruction-viewer-whole-mouse-thalamus.png" title="fig:Allen Adult Mouse Whole Brain + Thalamus" width="300" alt="Allen Adult Mouse Whole Brain + Thalamus" />
+-   <img src="/images/pages/reconstruction-viewer-zebrafish-reference.png" title="fig:Max Planck ZBA" width="300" alt="Max Planck ZBA" />
 
 </div>
 
 {% include clear%}
 
 
-## Analyze and Measure
+Analyze and Measure
+-------------------
 
-![](/images/pages/Reconstruction-viewer-measurement-menu.png) This menu houses several functions to measure and analyze loaded reconstructions.
+<img src="/images/pages/reconstruction-viewer-measurement-menu.png" title="fig:" width="300" /> This menu houses several functions to measure and analyze loaded reconstructions.
 
 ### Tabular Results
 
-  - {% include bc content='Measure...'%} Calls the {% include bc content='Analysis|Measure...'%} command in the main SNT dialog, allowing selection of specific measurements, with the ability to distinguish neurite compartments. If measuring multiple tracings, the table is sortable by column.
-  - {% include bc content='Quick Measurements'%} Calls the {% include bc content='Analysis|Quick Measurements'%} command in the main SNT dialog, producing a table of summary statistics for the loaded reconstructions.
-  - {% include bc content='Save Table...'%} Saves all measurements computed during a session to a .csv file.
+-   {% include bc content='Measure...'%} Calls the {% include bc content='Analysis|Measure...'%} command in the main SNT dialog, allowing selection of specific measurements, with the ability to distinguish neurite compartments. If measuring multiple tracings, the table is sortable by column.
+-   {% include bc content='Quick Measurements'%} Calls the {% include bc content='Analysis|Quick Measurements'%} command in the main SNT dialog, producing a table of summary statistics for the loaded reconstructions.
+-   {% include bc content='Save Table...'%} Saves all measurements computed during a session to a .csv file.
 
 <div align="left">
 
-  - ![AA0100 Measurements](/images/pages/Reconstruction-viewer-measurements-AA0100.png "AA0100 Measurements")
+-   <img src="/images/pages/reconstruction-viewer-measurements-AA0100.png" title="fig:AA0100 Measurements" width="900" alt="AA0100 Measurements" />
 
 </div>
 
 ### Distribution Analysis
 
-  - {% include bc content='Branch Properties...'%} Measures all branches of the currently selected reconstructions (without considering cell identity) and plots a histogram of the chosen metric, enabling quantification of branch properties across a population.
-  - {% include bc content='Cell Properties...'%} Measures each cell in the currently selected reconstructions individually and plots a histogram of the chosen metric, enabling comparison between individual cells.
+-   {% include bc content='Branch Properties...'%} Measures all branches of the currently selected reconstructions (without considering cell identity) and plots a histogram of the chosen metric, enabling quantification of branch properties across a population.
+-   {% include bc content='Cell Properties...'%} Measures each cell in the currently selected reconstructions individually and plots a histogram of the chosen metric, enabling comparison between individual cells.
 
 <div align="left">
 
-  - ![AA0100: Branch Order](/images/pages/Reconstruction-viewer-AA0100-distribution-analysis.png "AA0100: Branch Order")
-  - ![9 OP fibers: \# Branch Points](/images/pages/Reconstruction-viewer-OP-distribution-analysis.png "9 OP fibers: # Branch Points")
+-   <img src="/images/pages/reconstruction-viewer-AA0100-distribution-analysis.png" title="fig:AA0100: Branch Order" width="200" alt="AA0100: Branch Order" />
+-   <img src="/images/pages/reconstruction-viewer-OP-distribution-analysis.png" title="fig:9 OP fibers: # Branch Points" width="200" alt="9 OP fibers: # Branch Points" />
 
 </div>
 
 ### Single-Cell Analysis
 
-![Brain Area Analyis: Cable Length](/images/pages/Reconstruction-viewer-brain-area-analysis.png "Brain Area Analyis: Cable Length")
+<figure><img src="/images/pages/reconstruction-viewer-brain-area-analysis.png" title="Brain Area Analyis: Cable Length" width="300" alt="Brain Area Analyis: Cable Length" /><figcaption aria-hidden="true">Brain Area Analyis: Cable Length</figcaption></figure>
 
-  - {% include bc content='Brain Area Analysis...'%} Measures the amount of cable length, number of terminal nodes, or both that occur in distinct anatomical regions of the brain, with the option to restrict the analysis up to a maximum depth in the ontology hierarchy. Note that only one reconstruction may be selected at a time with this option.
-  - {% include bc content='Create Dendrogram...'%} Runs the {% include bc content='Utilities|Create Dendrogram...'%} command found in the main SNT dialog. See [Dendrogram Viewer](SNT__Analysis#Dendrogram_Viewer ). Note only one reconstruction may be selected at a time with this option.
-  - {% include bc content='Sholl Analysis...'%} Runs the [Sholl Analysis](Sholl_Analysis ) plugin found in {% include bc content='Analyze|Sholl|Sholl Analysis (From Tracings)'%}. Note only one reconstruction may be analysed at a time.
+-   {% include bc content='Brain Area Analysis...'%} Measures the amount of cable length, number of terminal nodes, or both that occur in distinct anatomical regions of the brain, with the option to restrict the analysis up to a maximum depth in the ontology hierarchy. Note that only one reconstruction may be selected at a time with this option.
+-   {% include bc content='Create Dendrogram...'%} Runs the {% include bc content='Utilities|Create Dendrogram...'%} command found in the main SNT dialog. See [Dendrogram Viewer](SNT__Analysis#Dendrogram_Viewer ). Note only one reconstruction may be selected at a time with this option.
+-   {% include bc content='Sholl Analysis...'%} Runs the [Sholl Analysis](Sholl_Analysis ) plugin found in {% include bc content='Analyze|Sholl|Sholl Analysis (From Tracings)'%}. Note only one reconstruction may be analysed at a time.
 
 <div align="left">
 
-  - ![AA0100 Sholl Table](/images/pages/Reconstruction-viewer-AA0100-sholl-table.png "AA0100 Sholl Table")
-  - ![AA0100 Sholl Plot](/images/pages/Reconstruction-viewer-AA0100-sholl-plot.png "AA0100 Sholl Plot")
+-   <img src="/images/pages/reconstruction-viewer-AA0100-sholl-table.png" title="fig:AA0100 Sholl Table" width="200" alt="AA0100 Sholl Table" />
+-   <img src="/images/pages/reconstruction-viewer-AA0100-sholl-plot.png" title="fig:AA0100 Sholl Plot" width="221" alt="AA0100 Sholl Plot" />
 
 </div>
 
-  - {% include bc content='Strahler Analysis'%} Conducts Strahler Analysis on the selected reconstruction. Note only one reconstruction may be analysed at a time.
+-   {% include bc content='Strahler Analysis'%} Conducts Strahler Analysis on the selected reconstruction. Note only one reconstruction may be analysed at a time.
 
 <div align="left">
 
-  - ![AA0100 Strahler Table](/images/pages/Reconstruction-viewer-AA0100-strahler-table.png "AA0100 Strahler Table")
-  - ![AA0100 Strahler Plot](/images/pages/Reconstruction-viewer-AA0100-strahler-plot.png "AA0100 Strahler Plot")
+-   <img src="/images/pages/reconstruction-viewer-AA0100-strahler-table.png" title="fig:AA0100 Strahler Table" width="227" alt="AA0100 Strahler Table" />
+-   <img src="/images/pages/reconstruction-viewer-AA0100-strahler-plot.png" title="fig:AA0100 Strahler Plot" width="200" alt="AA0100 Strahler Plot" />
 
 </div>
 
 {% include clear%}
 
 
-## Utilities
+Utilities
+---------
 
-![reconstruction-viewer-tools-menu.png](/images/pages/Reconstruction-viewer-tools-menu.png "reconstruction-viewer-tools-menu.png")
+<figure><img src="/images/pages/reconstruction-viewer-tools-menu.png" title="reconstruction-viewer-tools-menu.png" width="400" alt="reconstruction-viewer-tools-menu.png" /><figcaption aria-hidden="true">reconstruction-viewer-tools-menu.png</figcaption></figure>
 
 ### Actions & Utilities
 
-  - {% include bc content='Take Snapshot'%} {% include key content='S' %} Saves a PNG image of the current scene to disk. The default directory may be changed in the Reconstruction Viewer *Preferences*.
-  - {% include bc content='Record Rotation'%} Animates a rotation of the current scene and saves each frame to disk. The save directory, rotation degree, duration and frames per second may be adjusted in the Reconstruction Viewer *Preferences*.
-  - {% include bc content='Color Legends| '%} Contains options relating to the adding and management of LUT-based color legends.
-  - {% include bc content='Light Controls...'%} Adjustments of light and shadows. Note these are currently experimental features, some of which are un-doable.
+-   {% include bc content='Take Snapshot'%} {% include key content='S' %} Saves a PNG image of the current scene to disk. The default directory may be changed in the Reconstruction Viewer *Preferences*.
+-   {% include bc content='Record Rotation'%} Animates a rotation of the current scene and saves each frame to disk. The save directory, rotation degree, duration and frames per second may be adjusted in the Reconstruction Viewer *Preferences*.
+-   {% include bc content='Color Legends| '%} Contains options relating to the adding and management of LUT-based color legends.
+-   {% include bc content='Light Controls...'%} Adjustments of light and shadows. Note these are currently experimental features, some of which are un-doable.
 
 ### Scripting
 
-  - {% include bc content='Script This Viewer'%} Opens an instance of the Script Editor with pre-loaded extensible boilerplate code for advanced scripting of Reconstruction Viewer. For an example of the scripting capabilities of Reconstruction Viewer, see [Scripting Reconstruction Viewer](SNT__Scripting#Scripting_Reconstruction_Viewer ). A related script template can also be found in the Script Editor at {% include bc content='Templates|Neuroanatomy|Analysis|Reconstruction Viewer Demo (Python)'%}.
-  - {% include bc content='Script This Viewer In...'%} Prompts for selection of scripting language before running the previous command.
-  - {% include bc content='Log Scene Details'%} {% include key content='L' %} Logs detailed information about the current scene (e.g., currently visible objects, API calls, etc.) to the Console. This facilitates programmatic control over the Viewer's scene.
-  - {% include bc content='Debug Mode'%} Logs detailed information about plugin usage, including warnings and errors to the Console.
+-   {% include bc content='Script This Viewer'%} Opens an instance of the Script Editor with pre-loaded extensible boilerplate code for advanced scripting of Reconstruction Viewer. For an example of the scripting capabilities of Reconstruction Viewer, see [Scripting Reconstruction Viewer](SNT__Scripting#Scripting_Reconstruction_Viewer ). A related script template can also be found in the Script Editor at {% include bc content='Templates|Neuroanatomy|Analysis|Reconstruction Viewer Demo (Python)'%}.
+-   {% include bc content='Script This Viewer In...'%} Prompts for selection of scripting language before running the previous command.
+-   {% include bc content='Log Scene Details'%} {% include key content='L' %} Logs detailed information about the current scene (e.g., currently visible objects, API calls, etc.) to the Console. This facilitates programmatic control over the Viewer's scene.
+-   {% include bc content='Debug Mode'%} Logs detailed information about plugin usage, including warnings and errors to the Console.
 
 {% include clear%}
 
 
-## Settings
+Settings
+--------
 
-![reconstruction-viewer-settings-menu.png](/images/pages/Reconstruction-viewer-settings-menu.png "reconstruction-viewer-settings-menu.png")
+<figure><img src="/images/pages/reconstruction-viewer-settings-menu.png" title="reconstruction-viewer-settings-menu.png" width="400" alt="reconstruction-viewer-settings-menu.png" /><figcaption aria-hidden="true">reconstruction-viewer-settings-menu.png</figcaption></figure>
 
 ### Keyboard & Mouse Sensitivity
 
 A sub-menu with options for sensitivity of mouse and keyboard scene interaction. Note that a default shared sensitivity parameter can be specified for panning, zooming and rotating (using hotkeys) in the {% include bc content='Global Preferences...'%} dialog.
 
-  - {% include bc content='Pan Accuracy| '%} Sets the responsiveness of panning. A lower step size is more responsive.
-  - {% include bc content='Rotation Steps (Arrow Keys)| '%} Sets the number of degrees of a single rotation step. Note this preference only applies to rotations made with the Left/Right Arrow keys.
-  - {% include bc content='Zoom Steps (+/-) Keys| '%} Sets the percentage of a single zoom step.
+-   {% include bc content='Pan Accuracy| '%} Sets the responsiveness of panning. A lower step size is more responsive.
+-   {% include bc content='Rotation Steps (Arrow Keys)| '%} Sets the number of degrees of a single rotation step. Note this preference only applies to rotations made with the Left/Right Arrow keys.
+-   {% include bc content='Zoom Steps (+/-) Keys| '%} Sets the percentage of a single zoom step.
 
 ### Misc. Preferences
 
-  - {% include bc content='Enable Hardware Acceleration'%} Use hardware accelerated 3D graphics.
-  - {% include bc content='Global Preferences...'%} Configurable preferences for snapshot recordings, keyboard and mouse controls, and the preferred scripting language for the Viewer. Preferences persist across plugin sessions.
+-   {% include bc content='Enable Hardware Acceleration'%} Use hardware accelerated 3D graphics.
+-   {% include bc content='Global Preferences...'%} Configurable preferences for snapshot recordings, keyboard and mouse controls, and the preferred scripting language for the Viewer. Preferences persist across plugin sessions.
 
 {% include sntnavbar%}
 

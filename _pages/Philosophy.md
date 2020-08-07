@@ -10,13 +10,15 @@ description: test description
 {% include develop-menu%}
 [ImageJ](ImageJ ), and the [SciJava](SciJava ) component collection in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
 
-## Open source
+Open source
+-----------
 
 The SciJava ecosystem is strongly committed to [open source](open_source ) software development. But this software is not an [open source](open_source ) software *product*—it is an [open source](open_source ) software *project* following an [open source](open_source ) development *process*.
 
-ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [source code repositories](Source_Code ), public [communication](communication ) channels, public [project management](project_management ) resources, and of course, this [community editable website](Help_Contents ). As you can see, we love [doing it in public](http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/)\!
+ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [source code repositories](Source_Code ), public [communication](communication ) channels, public [project management](project_management ) resources, and of course, this [community editable website](Help_Contents ). As you can see, we love [doing it in public](http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/)!
 
-## Independent learning
+Independent learning
+--------------------
 
 > Tell me and I forget. Teach me and I remember. Involve me and I learn. —{% include wikipedia title='Xun Kuang' text='Xunzi'%}
 
@@ -24,161 +26,139 @@ The ImageJ and SciJava communities intend to foster not only scientific *indepen
 
 As such, responses to questions on [ImageJ public channels](Communication ) will often begin with "What have you tried?" or "Can you make a minimal, complete, verifiable example?"—see the [Bug reporting best practices](Bug_reporting_best_practices ) for details. A good rule of thumb for questioners is to "put as much effort into your question as you expect to be put into its reply"—and for responders, to cordially encourage this behavior in questioners. Responses may give detailed macro or script solutions to image analysis questions, but they will also often include details of *how such solutions were produced*, as well as *how they might be improved or tailored to other similar scenarios*.
 
-We are always looking for more ways to improve the software to meet this goal of encouraging independent learning. Write to the [ImageJ forum](Help ) with your ideas\!
+We are always looking for more ways to improve the software to meet this goal of encouraging independent learning. Write to the [ImageJ forum](Help ) with your ideas!
 
-## Extensibility
+Extensibility
+-------------
 
 [Extensibility](Extensibility ) is [ImageJ](ImageJ )'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](Category_Visualization ), [segmentation](segmentation ), [registration](Category_Registration ), and [analysis](Category_Analysis ) routines.
 
 Isaac Newton attributed his success to {% include wikipedia title='Standing on the shoulders of giants' text='standing on the shoulders of giants'%}. The [SciJava component collection](Architecture )'s powerful [plugin](plugin ) mechanism and [open source](open_source ) software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](Extensibility ) page for details.
 
-## Interoperability
+Interoperability
+----------------
 
 One of the central goals of the [SciJava component collection](Architecture ) is to extend Java's mantra of "write once, run anywhere" in new directions: [ImageJ Ops](ImageJ_Ops ) for image processing algorithms, and [SCIFIO](SCIFIO ) for scientific image I/O.
 
 [ImageJ2](ImageJ2 ) commands work not only in the [ImageJ](ImageJ ) user interface, but also from many [other applications](Category_Related_Software ) in the [SciJava ecosystem](SciJava ), including [CellProfiler](CellProfiler ), [OMERO](OMERO ), [KNIME](KNIME ) and [Alida](Alida ).
 
-## Compatibility
+Compatibility
+-------------
 
 Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing [plugins](plugins ) and [macros](macros ) with new versions of ImageJ. See the [Compatibility](Compatibility ) page for details.
 
-## Release early, release often
+Release early, release often
+----------------------------
 
 {% include box title='What"s the alternative? ' width='30% ' float='right ' text='Some projects opt to release their entire software stack with a single monolithic version number. This has one extremely nice ramification: it clearly communicates which versions of which software components are intended to be compatible with one another.
 
 For example, the [OME](OME ) project (which includes [OMERO](OMERO ) and [Bio-Formats](Bio-Formats )) employs this approach to versioning and release management. Before each release, the entire OME team performs careful and thorough integration testing of all components.
 
 <table class="wikitable" style="width: 100%">
-
 <tr>
-
 <th colspan="3">
 
 Versioning strategies
 
 </th>
-
 <tr>
-
 <td>
 
 ""Versioning""
 
 </td>
-
 <td>
 
 """BOM"""
 
 </td>
-
 <td>
 
 """Monoversioned"""
 
 </td>
-
 </tr>
-
 <tr>
-
 <td style="vertical-align: top">
 
 ""Releases""
 
 </td>
-
 <td>
 
 """RERO"""
 
 </td>
-
 <td>
 
 """"Big bang""""
 
 </td>
-
 </tr>
-
 <tr>
-
 <td style="vertical-align: top">
 
 ""Version compatibility""
 
 </td>
-
 <td>
 
 Compatible components are declared in a [Bill of Materials](Bill_of_Materials ) (BOM)
 
 </td>
-
 <td>
 
 Compatible components have the same version number
 
 </td>
-
 </tr>
-
 <tr>
-
 <td style="vertical-align: top">
 
 ""Frequency of releases""
 
 </td>
-
 <td>
 
 Faster
 
 </td>
-
 <td>
 
 Slower
 
 </td>
-
 </tr>
-
 <tr>
-
 <td style="vertical-align: top">
 
 ""Stability""
 
 </td>
-
 <td>
 
 Less
 
 </td>
-
 <td>
 
 More
 
 </td>
-
 </tr>
-
 </table>
 
 ' %} ImageJ subscribes to the {% include wikipedia title='Release early, release often' text='release early, release often'%} (RERO) mantra often cited in software engineering circles. In particular—and especially because there is a small core development team—the project is driven by [Boyd's Law of Iteration](http://blog.codinghorror.com/boyds-law-of-iteration/): **speed of iteration beats quality of iteration**. That is not to say that we do not strive for quality—we do. But we have found through experience that more releases, together with guiding user feedback, push a project forward more efficiently than a slower release cycle does.
 
 To ensure releases can happen quickly, each SciJava component is independently released and versioned, using [reproducible builds](Architecture#Reproducible_builds ) with a "release ready" `master` branch. This allows individual SciJava components to be released with the [push of a button](Travis_CI ), in a *timespan less than five minutes*. This puts bug-fixes into the hands of users as quickly as possible.
 
-## Convention over configuration
+Convention over configuration
+-----------------------------
 
 With increased [modularity](modularity ) often comes increased complexity. One key way of addressing this issue is to provide sensible defaults (e.g., the [big green Xerox button](http://athinkingperson.com/2010/06/02/where-the-big-green-copier-button-came-from/)) as a way of dealing with complex software programs. We embrace the philosophy of {% include wikipedia title='Convention over configuration' text='convention over configuration'%} utilized by many large software projects in recent years. For this reason, SciJava projects use the [Maven](Maven ) build tool for [project management](project_management ).
 
-## Why Java?
+Why Java?
+---------
 
 While it was once true that Java is always slower than the equivalent in C++, this is no longer the case. [There have been](http://paulbuchheit.blogspot.com/2007/06/java-is-faster-than-c.html) quite [a few benchmarks](http://vanillajava.blogspot.com/2011/08/java-can-be-significantly-faster-than-c.html) comparing Java vs C++ performance, [this one](http://keithlea.com/javabench/) probably being the grandfather of all.
 

@@ -25,9 +25,9 @@ There have been a number of contributors to the project: {% include person conte
 
 The full list of SciView's shortcuts can be accessed through the {% include bc content='Help| '%}menu. Basic navigation is accomplished using the following controls:
 
-  - Drag - Move around
-  - {% include key content='Shift|' %}+Drag - Rotate around selected node
-  - Single-click - Select node
-  - Double-click - Centers clicked node
-  - {% include key content='Shift|' %}+Scroll - Zoom
-  - {% include key content='W' %} {% include key content='A' %} {% include key content='S' %} {% include key content='D' %} - Move around (hold {% include key content='Shift' %} for slow movement)
+-   Drag - Move around
+-   {% include key content='Shift\|' %}+Drag - Rotate around selected node
+-   Single-click - Select node
+-   Double-click - Centers clicked node
+-   {% include key content='Shift\|' %}+Scroll - Zoom
+-   {% include key content='W' %} {% include key content='A' %} {% include key content='S' %} {% include key content='D' %} - Move around (hold {% include key content='Shift' %} for slow movement)

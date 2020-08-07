@@ -11,468 +11,431 @@ description: test description
 
 
 <div style="text-align:center;">
-
 </div>
-
 <div style="text-align:center;">
-
 </div>
-
 <div style="text-align:center;">
 
 EZFig: tutorial
 
 </div>
-
 <div style="text-align:center;">
-
 </div>
-
 <div style="text-align:center;">
-
 </div>
-
 <div style="text-align:center;">
-
 </div>
-
 <div style="text-align:center;">
-
 </div>
-
 <div style="text-align:center;">
-
 </div>
-
 <div style="text-align:center;">
 
 *Version 1.2*
 
 </div>
-
 <div style="text-align:center;">
-
 </div>
-
 <div style="text-align:center;">
-
 </div>
-
 <div style="text-align:center;">
-
 </div>
-
 <div style="text-align:center;">
 
 24/01/2018
 
 </div>
-
 <div style="text-align:center;">
-
 </div>
-
 <div style="text-align:center;">
-
 </div>
-
 <div style="text-align:center;">
-
 </div>
-
 <div style="text-align:center;">
 
 **Author**: Benoit Aigouy
 
 </div>
-
 <div style="text-align:center;">
 
-Link to a video demo: https://youtu.be/YZsSWBxcdDM><span style="color:#ce181e;"> </span
+Link to a video demo: [https://youtu.be/YZsSWBxcdDM>](https://youtu.be/YZsSWBxcdDM)<span style="color:#ce181e;"> </span
 
 </div>
 
-## **Table of Contents**
+**Table of Contents**
+---------------------
 
 [1) Install EZFig](#RefHeadingToc27213566485089 "wikilink")
 
-  -   
-    [1.1) Install as a FIJI plugin](#RefHeadingToc27233566485089 "wikilink")
+  
+[1.1) Install as a FIJI plugin](#RefHeadingToc27233566485089 "wikilink")
 
 [2) User Interface](#RefHeadingToc27273566485089 "wikilink")
 
-  -   
-    [2.1) Quick overview of the EZFig user interface](#RefHeadingToc28843566485089 "wikilink")
+  
+[2.1) Quick overview of the EZFig user interface](#RefHeadingToc28843566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [2.2) Quick description](#RefHeadingToc28863566485089 "wikilink")
+  
+[2.2) Quick description](#RefHeadingToc28863566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [2.3) Magnification buttons](#RefHeadingToc27293566485089 "wikilink")
+  
+[2.3) Magnification buttons](#RefHeadingToc27293566485089 "wikilink")
 
 [3) Imports](#RefHeadingToc27413566485089 "wikilink")
 
-  -   
-    [3.1) Importing files : Drag and drop](#RefHeadingToc27433566485089 "wikilink")
+  
+[3.1) Importing files : Drag and drop](#RefHeadingToc27433566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [3.2) Importing files via the EZFig menu](#RefHeadingToc27453566485089 "wikilink")
+  
+[3.2) Importing files via the EZFig menu](#RefHeadingToc27453566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [3.3) Importing files from ImageJ/FIJI](#RefHeadingToc27473566485089 "wikilink")
+  
+[3.3) Importing files from ImageJ/FIJI](#RefHeadingToc27473566485089 "wikilink")
 
 [4) Load/Save EZFig files](#RefHeadingToc27493566485089 "wikilink")
 
-  -   
-    [4.1) Load .ezf Files](#RefHeading30901992981752 "wikilink")
+  
+[4.1) Load .ezf Files](#RefHeading30901992981752 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [4.2) Save .ezf files](#RefHeading30921992981752 "wikilink")
+  
+[4.2) Save .ezf files](#RefHeading30921992981752 "wikilink")
 
 [5) Exports](#RefHeadingToc27513566485089 "wikilink")
 
-  -   
-    [5.1) Direct exports](#RefHeadingToc27533566485089 "wikilink")
+  
+[5.1) Direct exports](#RefHeadingToc27533566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [5.2) Export to ImageJ](#RefHeadingToc27553566485089 "wikilink")
+  
+[5.2) Export to ImageJ](#RefHeadingToc27553566485089 "wikilink")
 
 [6) Selections](#RefHeadingToc27573566485089 "wikilink")
 
-  -   
-    [6.1) The basics of object selection in EZFig](#RefHeadingToc27593566485089 "wikilink")
+  
+[6.1) The basics of object selection in EZFig](#RefHeadingToc27593566485089 "wikilink")
 
 [7) Menus](#RefHeadingToc27613566485089 "wikilink")
 
-  -   
-    [7.1) File](#RefHeadingToc27633566485089 "wikilink")
+  
+[7.1) File](#RefHeadingToc27633566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [7.2) Edit](#RefHeadingToc27653566485089 "wikilink")
+  
+[7.2) Edit](#RefHeadingToc27653566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [7.3) Journals](#RefHeadingToc27673566485089 "wikilink")
+  
+[7.3) Journals](#RefHeadingToc27673566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [7.4) Keep For Later](#RefHeadingToc27693566485089 "wikilink")
+  
+[7.4) Keep For Later](#RefHeadingToc27693566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [7.5) Checks](#RefHeadingToc27713566485089 "wikilink")
+  
+[7.5) Checks](#RefHeadingToc27713566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [7.6) FiguR](#RefHeadingToc27733566485089 "wikilink")
+  
+[7.6) FiguR](#RefHeadingToc27733566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [7.7) Help](#RefHeadingToc27753566485089 "wikilink")
+  
+[7.7) Help](#RefHeadingToc27753566485089 "wikilink")
 
 [8) Dynamic menus ](#RefHeadingToc27773566485089 "wikilink")
 
-  -   
-    [8.1) "Figure" objects parameters](#RefHeadingToc27793566485089 "wikilink")
+  
+[8.1) "Figure" objects parameters](#RefHeadingToc27793566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        [8.1.1) "Size" tab](#RefHeadingToc27813566485089 "wikilink")
+  
+  
+[8.1.1) "Size" tab](#RefHeadingToc27813566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        [8.1.2) "Labels" tab](#RefHeadingToc27833566485089 "wikilink")
+  
+  
+[8.1.2) "Labels" tab](#RefHeadingToc27833566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        [8.1.3) "Layout" tab (only available in free mode)](#RefHeadingToc27853566485089 "wikilink")
+  
+  
+[8.1.3) "Layout" tab (only available in free mode)](#RefHeadingToc27853566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        [8.1.4) "Misc" tab](#RefHeadingToc27873566485089 "wikilink")
+  
+  
+[8.1.4) "Misc" tab](#RefHeadingToc27873566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [8.2) "Row" objects parameters](#RefHeadingToc27893566485089 "wikilink")
+  
+[8.2) "Row" objects parameters](#RefHeadingToc27893566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        [8.2.1) "Size" tab](#RefHeadingToc27913566485089 "wikilink")
+  
+  
+[8.2.1) "Size" tab](#RefHeadingToc27913566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        [8.2.2) "Labels" tab](#RefHeadingToc27933566485089 "wikilink")
+  
+  
+[8.2.2) "Labels" tab](#RefHeadingToc27933566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [8.3) "Panel/Montage" objects parameters](#RefHeadingToc27953566485089 "wikilink")
+  
+[8.3) "Panel/Montage" objects parameters](#RefHeadingToc27953566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        [8.3.1) "Layout" tab](#RefHeadingToc27973566485089 "wikilink")
+  
+  
+[8.3.1) "Layout" tab](#RefHeadingToc27973566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        [8.3.2) "AutoCrops" tab](#RefHeadingToc27993566485089 "wikilink")
+  
+  
+[8.3.2) "AutoCrops" tab](#RefHeadingToc27993566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [8.4) "Image/ImagePlus/Stack/Graph/Vector Image" objects parameters](#RefHeadingToc28013566485089 "wikilink")
+  
+[8.4) "Image/ImagePlus/Stack/Graph/Vector Image" objects parameters](#RefHeadingToc28013566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        [8.4.1) "Labels" tab](#RefHeadingToc28033566485089 "wikilink")
+  
+  
+[8.4.1) "Labels" tab](#RefHeadingToc28033566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        [8.4.2) "Crop" tab](#RefHeadingToc28053566485089 "wikilink")
+  
+  
+[8.4.2) "Crop" tab](#RefHeadingToc28053566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        [8.4.3) "Orientation/Rotation" tab](#RefHeadingToc28073566485089 "wikilink")
+  
+  
+[8.4.3) "Orientation/Rotation" tab](#RefHeadingToc28073566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        [8.4.4) "Stack/Video" tab](#RefHeadingToc28093566485089 "wikilink")
+  
+  
+[8.4.4) "Stack/Video" tab](#RefHeadingToc28093566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        [8.4.5) "Misc" tab](#RefHeadingToc28113566485089 "wikilink")
+  
+  
+[8.4.5) "Misc" tab](#RefHeadingToc28113566485089 "wikilink")
 
 [9) Figure layout](#RefHeadingToc28133566485089 "wikilink")
 
-  -   
-    [9.1) Change figure size](#RefHeadingToc28153566485089 "wikilink")
+  
+[9.1) Change figure size](#RefHeadingToc28153566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [9.2) Change layout](#RefHeadingToc28173566485089 "wikilink")
+  
+[9.2) Change layout](#RefHeadingToc28173566485089 "wikilink")
 
 [10) Annotating Images](#RefHeadingToc28193566485089 "wikilink")
 
-  -   
-    [10.1) Add letters, labels and scalebar to an image](#RefHeadingToc28213566485089 "wikilink")
+  
+[10.1) Add letters, labels and scalebar to an image](#RefHeadingToc28213566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [10.2) Add ROIs/Floating text labels to an image](#RefHeadingToc28233566485089 "wikilink")
+  
+[10.2) Add ROIs/Floating text labels to an image](#RefHeadingToc28233566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [10.3) Convert ROIs to crop or insets (Picture In Picture, PIP)](#RefHeadingToc28253566485089 "wikilink")
+  
+[10.3) Convert ROIs to crop or insets (Picture In Picture, PIP)](#RefHeadingToc28253566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [10.4) Add labels outside images/rows](#RefHeading3128459311110 "wikilink")
+  
+[10.4) Add labels outside images/rows](#RefHeading3128459311110 "wikilink")
 
 [11) Keep for later](#RefHeadingToc28273566485089 "wikilink")
 
 [12) Manipulate image channels](#RefHeadingToc28293566485089 "wikilink")
 
-  -   
-    [12.1) Select or create an image with channels](#RefHeadingToc28313566485089 "wikilink")
+  
+[12.1) Select or create an image with channels](#RefHeadingToc28313566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [12.2) Activate/inactivate channels](#RefHeadingToc28333566485089 "wikilink")
+  
+[12.2) Activate/inactivate channels](#RefHeadingToc28333566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [12.3) Change channel colour](#RefHeadingToc28353566485089 "wikilink")
+  
+[12.3) Change channel colour](#RefHeadingToc28353566485089 "wikilink")
 
 [13) Use drag and drop to build a figure efficiently](#RefHeadingToc28373566485089 "wikilink")
 
-  -   
-    [13.1) Add inset using drag and drop](#RefHeadingToc28393566485089 "wikilink")
+  
+[13.1) Add inset using drag and drop](#RefHeadingToc28393566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [13.2) Add an image to a row](#RefHeadingToc28413566485089 "wikilink")
+  
+[13.2) Add an image to a row](#RefHeadingToc28413566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [13.3) Create a new row from an image/remove an image from a row](#RefHeadingToc28433566485089 "wikilink")
+  
+[13.3) Create a new row from an image/remove an image from a row](#RefHeadingToc28433566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [13.4) Create a panel, add it to a row and change its layout](#RefHeadingToc28453566485089 "wikilink")
+  
+[13.4) Create a panel, add it to a row and change its layout](#RefHeadingToc28453566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [13.5) List of DND options and their use](#RefHeadingToc28473566485089 "wikilink")
+  
+[13.5) List of DND options and their use](#RefHeadingToc28473566485089 "wikilink")
 
 [14) Add inset/Picture in picture (PIP) from the local drive](#RefHeadingToc28493566485089 "wikilink")
 
 [15) Journal styles](#RefHeadingToc28513566485089 "wikilink")
 
-  -   
-    [15.1) Select a journal style](#RefHeadingToc28533566485089 "wikilink")
+  
+[15.1) Select a journal style](#RefHeadingToc28533566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [15.2) Create a new journal style](#RefHeadingToc28553566485089 "wikilink")
+  
+[15.2) Create a new journal style](#RefHeadingToc28553566485089 "wikilink")
 
 [16) Editorial Checks](#RefHeadingToc28573566485089 "wikilink")
 
-  -   
-    [16.1) Check Size](#RefHeadingToc28593566485089 "wikilink")
+  
+[16.1) Check Size](#RefHeadingToc28593566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [16.2) Check style](#RefHeadingToc28613566485089 "wikilink")
+  
+[16.2) Check style](#RefHeadingToc28613566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [16.3) Check Fonts](#RefHeadingToc28633566485089 "wikilink")
+  
+[16.3) Check Fonts](#RefHeadingToc28633566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [16.4) Check line arts](#RefHeadingToc28653566485089 "wikilink")
+  
+[16.4) Check line arts](#RefHeadingToc28653566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [16.5) Check Text](#RefHeadingToc28673566485089 "wikilink")
+  
+[16.5) Check Text](#RefHeadingToc28673566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [16.6) Check Graphs](#RefHeadingToc28693566485089 "wikilink")
+  
+[16.6) Check Graphs](#RefHeadingToc28693566485089 "wikilink")
 
 [17) FiguR](#RefHeadingToc28713566485089 "wikilink")
 
-  -   
-    [17.1) Install and configure R (required for FiguR to work)](#RefHeadingToc28733566485089 "wikilink")
+  
+[17.1) Install and configure R (required for FiguR to work)](#RefHeadingToc28733566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [17.2) Launch FiguR](#RefHeadingToc28753566485089 "wikilink")
+  
+[17.2) Launch FiguR](#RefHeadingToc28753566485089 "wikilink")
 
 [18) Settings](#RefHeadingToc28773566485089 "wikilink")
 
-  -   
-    [18.1) Undos/Redos](#RefHeadingToc28793566485089 "wikilink")
+  
+[18.1) Undos/Redos](#RefHeadingToc28793566485089 "wikilink")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    [18.2) Shortcuts](#RefHeadingToc28813566485089 "wikilink")
+  
+[18.2) Shortcuts](#RefHeadingToc28813566485089 "wikilink")
 
-# 1\) Install EZFig
+1) Install EZFig
+================
 
-## 1.1) Install as a FIJI plugin
+1.1) Install as a FIJI plugin
+-----------------------------
 
-Download and install the latest FIJI available for your OS (from https://fiji.sc/). Launch FIJI.
+Download and install the latest FIJI available for your OS (from [https://fiji.sc/](https://fiji.sc/)). Launch FIJI.
 
-![images37.png](/images/pages/Images37.png "images37.png")
+![](/images/pages/Images37.png "images37.png")
 
-Press “Help \> Update...”
+Press “Help &gt; Update...”
 
-![images38.png](/images/pages/Images38.png "images38.png")
+![](/images/pages/Images38.png "images38.png")
 
 Press “Manage update sites”
 
-![Image86.png](/images/pages/Image86.png "Image86.png")
+![](/images/pages/Image86.png "Image86.png")
 
-![Image87.png](/images/pages/Image87.png "Image87.png")
+![](/images/pages/Image87.png "Image87.png")
 
-locate EZFig and select it. Alternatively press "Add update site" (or just “Add” depending on the version of FIJI). Then type in the blank URL field : http://sites.imagej.net/EZF/
+locate EZFig and select it. Alternatively press "Add update site" (or just “Add” depending on the version of FIJI). Then type in the blank URL field : [http://sites.imagej.net/EZF/](http://sites.imagej.net/EZF/)
 
-![Image88.png](/images/pages/Image88.png "Image88.png")
+![](/images/pages/Image88.png "Image88.png")
 
 Fiji offers to install EZFig. Press "Apply Changes".
 
-![images42.png](/images/pages/Images42.png "images42.png")
+![](/images/pages/Images42.png "images42.png")
 
 Press "Ok" and <span style="color:#ff0000;">close</span><span style="color:#ff0000;"> FIJI</span><span style="color:#000000;"> </span><span style="color:#000000;">(this is very important)</span>
 
-![Image36.png](/images/pages/Image36.png "Image36.png")
+![](/images/pages/Image36.png "Image36.png")
 
-<span style="color:#ff0000;">Restart</span><span style="color:#ff0000;"> FIJI</span>, press "Plugin \> EZFig \> EZFig" to launch the software
+<span style="color:#ff0000;">Restart</span><span style="color:#ff0000;"> FIJI</span>, press "Plugin &gt; EZFig &gt; EZFig" to launch the software
 
-# 2\) User Interface
+2) User Interface
+=================
 
-## 2.1) Quick overview of the EZFig user interface
+2.1) Quick overview of the EZFig user interface
+-----------------------------------------------
 
-![Image43.png](/images/pages/Image43.png "Image43.png")
+![](/images/pages/Image43.png "Image43.png")
 
-## 2.2) Quick description
+2.2) Quick description
+----------------------
 
 **Journal style** : Select the journal style there. Journal styles help users endorse journal guidelines (See sections “Journal styles” and “Editorial checks”).
 
@@ -488,129 +451,137 @@ Press "Ok" and <span style="color:#ff0000;">close</span><span style="color:#ff00
 
 Nb : please note that the content of the "<span style="color:#0000ff;">available actions</span>" panel depends on current selection type (see the "Dynamic menus" section). 
 
-![Image49.png](/images/pages/Image49.png "Image49.png")
+![](/images/pages/Image49.png "Image49.png")
 
 **Logger :** Finally, EZFig also comes with a logger (arrow), that logs all messages sent by EZFig and FiguR (black) as well as software errors (red).
 
-## 2.3) Magnification buttons
+2.3) Magnification buttons
+--------------------------
 
 **zoom in**
 
-![images30.png](/images/pages/Images30.png "images30.png")
+![](/images/pages/Images30.png "images30.png")
 
 press this button to zoom in.
 
 **zoom out**
 
-![images31.png](/images/pages/Images31.png "images31.png")
+![](/images/pages/Images31.png "images31.png")
 
 press this button to zoom out.
 
 **best fit**
 
-![images32.png](/images/pages/Images32.png "images32.png")
+![](/images/pages/Images32.png "images32.png")
 
 press this button to fit the figure in width and in height to the field of view.
 
 **best fit width or height**
 
-![images33.png](/images/pages/Images33.png "images33.png")
+![](/images/pages/Images33.png "images33.png")
 
 press this button to fit the figure in width to the field of view.
 
-![images35.png](/images/pages/Images35.png "images35.png")
+![](/images/pages/Images35.png "images35.png")
 
-![images34.png](/images/pages/Images34.png "images34.png")
+![](/images/pages/Images34.png "images34.png")
 
 press again the same button to fit height. Note that the green rectangle indicates page size for the selected journal.
 
 **reset zoom**
 
-![images36.png](/images/pages/Images36.png "images36.png")
+![](/images/pages/Images36.png "images36.png")
 
 press this button to restore default magnification
 
-# 3\) Imports
+3) Imports
+==========
 
 The easiest way to import files in EZFig is to use <span style="color:#ff0000;">drag n drop</span>.
 
-## 3.1) Importing files : Drag and drop
+3.1) Importing files : Drag and drop
+------------------------------------
 
-![images1.png](/images/pages/Images1.png "images1.png")
+![](/images/pages/Images1.png "images1.png")
 
 To load image(s) with EZFig, you can select images in a folder then drag and drop them anywhere onto the EZFig user interface.
 
-![images2.png](/images/pages/Images2.png "images2.png")
+![](/images/pages/Images2.png "images2.png")
 
 Dropped images are added as a single row by default (organisation can be changed later on).
 
-## 3.2) Importing files via the EZFig menu
+3.2) Importing files via the EZFig menu
+---------------------------------------
 
-![images4.png](/images/pages/Images4.png "images4.png")
+![](/images/pages/Images4.png "images4.png")
 
-Press "File \> Import images"
+Press "File &gt; Import images"
 
-![images3.png](/images/pages/Images3.png "images3.png")
+![](/images/pages/Images3.png "images3.png")
 
 A dialog opens to select files. Supported formats are : jpg, tif, png, bmp, tga, lsm, svg, figur, gif.
 
-## 3.3) Importing files from ImageJ/FIJI
+3.3) Importing files from ImageJ/FIJI
+-------------------------------------
 
-![images6.png](/images/pages/Images6.png "images6.png")
+![](/images/pages/Images6.png "images6.png")
 
 Open an image or a stack in ImageJ (here I opened the ImageJ sample image 'blobs.gif')
 
-![images5.png](/images/pages/Images5.png "images5.png")
+![](/images/pages/Images5.png "images5.png")
 
 Select "import single image from ImageJ" if you want to import the currently displayed image. Alternatively select "import stack from ImageJ", if you want to be able to activate/deactivate channels, change channel color, or browse slices or frames of the image.
 
-![images7.png](/images/pages/Images7.png "images7.png")
+![](/images/pages/Images7.png "images7.png")
 
 The image has been successfully imported in EZFig.
 
-# 4\) Load/Save EZFig files
+4) Load/Save EZFig files
+========================
 
 EZFig has its own native format (.ezf). <span style="color:#ff0000;">It is very important to always save the figure in “</span><span style="color:#ff0000;">ezf”</span><span style="color:#ff0000;"> format as it is the only format that can be </span><span style="color:#ff0000;">re-edited</span><span style="color:#ff0000;"> by EZFig</span>, all other export formats cannot be dynamically modified. EZFig is backward compatible width ScientiFig, i.e. it can read ScientiFig files (.yf5m). The opposite is not true, ScientiFig cannot read .ezf files.
 
-## 4.1) Load .ezf Files
+4.1) Load .ezf Files
+--------------------
 
 The simplest way to load an ezf or a yf5m file is to drag and drop it onto EZFig.
 
-![images60.png](/images/pages/Images60.png "images60.png")
+![](/images/pages/Images60.png "images60.png")
 
-Alternatively, press “File \> Open”
+Alternatively, press “File &gt; Open”
 
-## 4.2) Save .ezf files
+4.2) Save .ezf files
+--------------------
 
-![images61.png](/images/pages/Images61.png "images61.png")
+![](/images/pages/Images61.png "images61.png")
 
-Press “File \> Save as...” to save an “ezf” file. Note that if the figure contains stacks, they will be saved in a folder with the same name as the “ezf” file with an extra .files. <span style="color:#ff0000;">Please always store the .ezf and the .ezf.files folder together, otherwise stack data will be lost</span>. Nb: You can use the Ctrl/Cmd + S shortcut to save.
+Press “File &gt; Save as...” to save an “ezf” file. Note that if the figure contains stacks, they will be saved in a folder with the same name as the “ezf” file with an extra .files. <span style="color:#ff0000;">Please always store the .ezf and the .ezf.files folder together, otherwise stack data will be lost</span>. Nb: You can use the Ctrl/Cmd + S shortcut to save.
 
-# 5\) Exports
+5) Exports
+==========
 
-## 5.1) Direct exports
+5.1) Direct exports
+-------------------
 
-![Image34.png](/images/pages/Image34.png "Image34.png")
+![](/images/pages/Image34.png "Image34.png")
 
-To export a Figure, press "File\>Export as..." and select one of the export formats available. Please note that exported files cannot be further edited by EZFig, so it is particularly important to also "save" your figures (see Section “Save .ezf files”).
+To export a Figure, press "File&gt;Export as..." and select one of the export formats available. Please note that exported files cannot be further edited by EZFig, so it is particularly important to also "save" your figures (see Section “Save .ezf files”).
 
 EZFig can export figures as raster/bitmap images :
 
 <div style="margin-left:1.251cm;margin-right:0cm;">
 
-\-as **PNG** images (lossless compression) with background transparency (good for office presentations)
+-as **PNG** images (lossless compression) with background transparency (good for office presentations)
 
 </div>
-
 <div style="margin-left:1.251cm;margin-right:0cm;">
 
-\-as flattened **TIF** images (lossless compression, good for scientific publication)
+-as flattened **TIF** images (lossless compression, good for scientific publication)
 
 </div>
-
 <div style="margin-left:1.251cm;margin-right:0cm;">
 
-\-as **JPG** (lossy compression, good for talks but not for publication)
+-as **JPG** (lossy compression, good for talks but not for publication)
 
 </div>
 
@@ -621,19 +592,16 @@ EZFig can export figures as vector images :
 \-<span style="color:#ff0000;">**SVG**</span> can be further edited even text by your favourite vector graphics editor (e.g. Illustrator, Inkscape, …). <span style="color:#ce181e;">I highly recommend this format for vector export.</span>
 
 </div>
-
 <div style="margin-left:1.251cm;margin-right:0cm;">
 
 \-**PDF**
 
 </div>
-
 <div style="margin-left:1.251cm;margin-right:0cm;">
 
 \-**EPS** (encapsulated postscript)
 
 </div>
-
 <div style="margin-left:1.251cm;margin-right:0cm;">
 
 \-**PS** (postscript)
@@ -650,23 +618,26 @@ EZFig can export figures as videos (this only makes sense if the Figure contains
 
 Also Figures can also be **exported to ImageJ**. See below.
 
-## 5.2) Export to ImageJ
+5.2) Export to ImageJ
+---------------------
 
-![Image1.png](/images/pages/Image1.png "Image1.png")
+![](/images/pages/Image1.png "Image1.png")
 
-Press “File \> Export to ImageJ”
+Press “File &gt; Export to ImageJ”
 
-![Image2.png](/images/pages/Image2.png "Image2.png")
+![](/images/pages/Image2.png "Image2.png")
 
 The image is opened in ImageJ as an ImagePlus
 
-Nb : the figure can also be exported as an ImageJ stack (provided the figure itself contains stacks). To do so press “File \> Export to ImageJ Stack”
+Nb : the figure can also be exported as an ImageJ stack (provided the figure itself contains stacks). To do so press “File &gt; Export to ImageJ Stack”
 
-# 6\) Selections
+6) Selections
+=============
 
 EZFig is an object based (vectorial) software. Below are the various EZFig objects you can manipulate as well as informations about their selection.
 
-## 6.1) The basics of object selection in EZFig
+6.1) The basics of object selection in EZFig
+--------------------------------------------
 
 <div style="color:#ce181e;">
 
@@ -674,19 +645,19 @@ Selection can be reset anytime by clicking outside of the figure/images
 
 </div>
 
-![images56.png](/images/pages/Images56.png "images56.png")
+![](/images/pages/Images56.png "images56.png")
 
 Clicking the upper right image selects the whole “Figure”, the highest level container in EZFig (note the yellow color of the selection and the "Figure" keyword drawn in the center of the figure object)
 
-![images57.png](/images/pages/Images57.png "images57.png")
+![](/images/pages/Images57.png "images57.png")
 
 Clicking the upper right image again selects a "Row", a lower level container in EZFig. (Note the cyan color of the selection and the "Row" keyword drawn in the center of the “row” object).
 
-![images58.png](/images/pages/Images58.png "images58.png")
+![](/images/pages/Images58.png "images58.png")
 
 Clicking the upper right image again selects a "Panel/Montage", yet another lower level container. (Note the magenta color of the selection and the "Panel" keyword drawn in the center of the Panel object).
 
-![images59.png](/images/pages/Images59.png "images59.png")
+![](/images/pages/Images59.png "images59.png")
 
 Clicking the upper right image again finally selects the image, the lowest level object in the figure hierachy. (Note the red color of the selection and the "Img" keyword drawn in the center of the “image” object).
 
@@ -696,23 +667,24 @@ Summary of the hierarchy of objects in EZFig and their associated colour selecti
 
 <div style="text-align:center;">
 
-hierarchy : Figure \> Row \> Panel/Montage \> Image
+hierarchy : Figure &gt; Row &gt; Panel/Montage &gt; Image
 
 </div>
-
 <div style="text-align:center;">
 
-<span style="color:#ce181e;">Color when selected :</span><span style="color:#ff950e;">Orange</span><span style="color:#ce181e;"> </span><span style="color:#000000;">\></span><span style="color:#ce181e;"> </span><span style="color:#00ffff;">Cyan</span><span style="color:#ce181e;"> </span><span style="color:#000000;">\></span><span style="color:#ce181e;"> </span><span style="color:#ff00ff;">Magenta</span><span style="color:#ce181e;"> </span><span style="color:#000000;">\></span><span style="color:#ce181e;"> Red </span>
+<span style="color:#ce181e;">Color when selected :</span><span style="color:#ff950e;">Orange</span><span style="color:#ce181e;"> </span><span style="color:#000000;">&gt;</span><span style="color:#ce181e;"> </span><span style="color:#00ffff;">Cyan</span><span style="color:#ce181e;"> </span><span style="color:#000000;">&gt;</span><span style="color:#ce181e;"> </span><span style="color:#ff00ff;">Magenta</span><span style="color:#ce181e;"> </span><span style="color:#000000;">&gt;</span><span style="color:#ce181e;"> Red </span>
 
 </div>
 
-# 7\) Menus
+7) Menus
+========
 
-## 7.1) File
+7.1) File
+---------
 
 Please find below a complete description of the “File” menu :
 
-![Image37.png](/images/pages/Image37.png "Image37.png")
+![](/images/pages/Image37.png "Image37.png")
 
 **New **: Creates a new empty figure.
 
@@ -738,11 +710,12 @@ Please find below a complete description of the “File” menu :
 
 **Quit**: quits/closes EZFig.
 
-## 7.2) Edit
+7.2) Edit
+---------
 
 Please find below a complete description of the "edit" menu :
 
-![Image38.png](/images/pages/Image38.png "Image38.png")
+![](/images/pages/Image38.png "Image38.png")
 
 **Software Preferences** : Set EZFig default preferences. <span style="color:#ff0000;">Undos/Redos </span><span style="color:#ff0000;">can be activated </span><span style="color:#ff0000;">there.</span>
 
@@ -762,11 +735,12 @@ Please find below a complete description of the "edit" menu :
 
 **Remove all ROIs** : removes all ROIs and floating text from the current figure (can be used to clean figure for talks).
 
-## 7.3) Journals
+7.3) Journals
+-------------
 
 Please find below a complete description of the "Journals" menu :
 
-![Image39.png](/images/pages/Image39.png "Image39.png")
+![](/images/pages/Image39.png "Image39.png")
 
 **Create new journal/plot style** : Creates a new journal style (please also see the "Journal styles" section).
 
@@ -774,11 +748,12 @@ Please find below a complete description of the "Journals" menu :
 
 **Permanently Delete journal/plot style** : Delete a journal style (in fact the file is just renamed as .old, so if you change your mind you can still recover it manually).
 
-## 7.4) Keep For Later
+7.4) Keep For Later
+-------------------
 
 Please find below a complete description of the "Keep For Later" menu and its functions :
 
-![Image44.png](/images/pages/Image44.png "Image44.png")
+![](/images/pages/Image44.png "Image44.png")
 
 **Keep current selection for later** : Use this if you don’t want the selection to appear in the current figure, but nevertheless want to keep it, for example because you plan to use it later. The content of the “Keep For Later” menu is stored in the .ezf file. “kept for later” selected objects appear in this menu as new buttons together with an icon (see **Custom content**  below) and the menu turns red.
 
@@ -788,23 +763,26 @@ Please find below a complete description of the "Keep For Later" menu and its fu
 
 **Custom content** : The “Keep For Later” menu may contain custom content added by the user. This content is made available as a button, pressing a button adds its content back to the figure.
 
-## 7.5) Checks
+7.5) Checks
+-----------
 
 Please see the "Editorial Checks" section.
 
-![Image40.png](/images/pages/Image40.png "Image40.png")
+![](/images/pages/Image40.png "Image40.png")
 
-## 7.6) FiguR
+7.6) FiguR
+----------
 
 Please see the "FiguR" section.
 
-![Image41.png](/images/pages/Image41.png "Image41.png")
+![](/images/pages/Image41.png "Image41.png")
 
-## 7.7) Help
+7.7) Help
+---------
 
 Please find below a complete description of the "Help" menu :
 
-![Image42.png](/images/pages/Image42.png "Image42.png")
+![](/images/pages/Image42.png "Image42.png")
 
 **Show/Hide tips** : Hides the EZFig tips widow (if visible), shows it otherwise.
 
@@ -816,21 +794,23 @@ Please find below a complete description of the "Help" menu :
 
 **About/licenses** : Shows the licence file for EZFig and its associated libraries. <span style="color:#ff0000;">If you disagree with these licences please delete EZFig from your computer.</span>
 
-![Image48.png](/images/pages/Image48.png "Image48.png")
+![](/images/pages/Image48.png "Image48.png")
 
 **Citations** : Shows some citations you can use in your manuscripts/talks if you really like EZFig.
 
 **Load random demo images** : Random images (just for me to do some debugging).
 
-# 8\) Dynamic menus 
+8) Dynamic menus 
+=================
 
 The content of the right side of the EZFig will change dynamically according to the selection type (see also the "Selections" section).
 
-## 8.1) "Figure" objects parameters
+8.1) "Figure" objects parameters
+--------------------------------
 
 ### 8.1.1) "Size" tab
 
-![images10.png](/images/pages/Images10.png "images10.png")
+![](/images/pages/Images10.png "images10.png")
 
 **Width (px)** : sets the size of the selected figure(s) in pixels
 
@@ -842,7 +822,7 @@ The content of the right side of the EZFig will change dynamically according to 
 
 ### 8.1.2) "Labels" tab
 
-![images43.png](/images/pages/Images43.png "images43.png")
+![](/images/pages/Images43.png "images43.png")
 
 **1<sup>st</sup> letter** : put the first letter of the selected figure here and hit "Enter" on your keyboard or press the "Update letters" to get your figure letters incremented automatically. Tip : if you put a space instead of a letter then letters from the selected Figure will be removed.
 
@@ -850,7 +830,7 @@ The content of the right side of the EZFig will change dynamically according to 
 
 ### 8.1.3) "Layout" tab (only available in free mode)
 
-![images48.png](/images/pages/Images48.png "images48.png")
+![](/images/pages/Images48.png "images48.png")
 
 **Pack/Stack **: select several figures and press this button to pack these figures close to each other.
 
@@ -862,15 +842,16 @@ The content of the right side of the EZFig will change dynamically according to 
 
 ### 8.1.4) "Misc" tab
 
-![images44.png](/images/pages/Images44.png "images44.png")
+![](/images/pages/Images44.png "images44.png")
 
 **Create a Figure or a Row with an empty image **: creates a Figure that just contains an empty image. You may use this empty image to draw arrows to logically connect independent figure objects.
 
-## .2) "Row" objects parameters
+.2) "Row" objects parameters
+----------------------------
 
 ### .2.1) "Size" tab
 
-![images45.png](/images/pages/Images45.png "images45.png")
+![](/images/pages/Images45.png "images45.png")
 
 **Width (px)** : sets the size of the selected row(s) in pixels
 
@@ -882,9 +863,9 @@ The content of the right side of the EZFig will change dynamically according to 
 
 ### 8.2.2) "Labels" tab
 
-![images46.png](/images/pages/Images46.png "images46.png")
+![](/images/pages/Images46.png "images46.png")
 
-![images47.png](/images/pages/Images47.png "images47.png")
+![](/images/pages/Images47.png "images47.png")
 
 Below are the row specific labels.
 
@@ -898,17 +879,18 @@ Below are the row specific labels.
 
 **+ text labels on the right** : adds text right of a row..
 
-## 8.3) "Panel/Montage" objects parameters
+8.3) "Panel/Montage" objects parameters
+---------------------------------------
 
 ### 8.3.1) "Layout" tab
 
-![images54.png](/images/pages/Images54.png "images54.png")
+![](/images/pages/Images54.png "images54.png")
 
 **Number Of Rows** : sets the number of rows of the panel (a panel is a 2D table of images).
 
 **Number of Columns** : sets the number of columns of the panel.
 
-NB : if **Number Of Rows \* Number of Columns \< Number of Images contained in the panel**, no change will be made to the panel layout and an error message will be displayed. In that case increasing the numbers of rows or columns or both should get rid of the error message.
+NB : if **Number Of Rows \* Number of Columns &lt; Number of Images contained in the panel**, no change will be made to the panel layout and an error message will be displayed. In that case increasing the numbers of rows or columns or both should get rid of the error message.
 
 **Order** : defines the order of images in a panel, i.e. should panels be filled horizontally before or after being filled vertically.
 
@@ -916,7 +898,7 @@ NB : if **Number Of Rows \* Number of Columns \< Number of Images contained in 
 
 ### 8.3.2) "AutoCrops" tab
 
-![images55.png](/images/pages/Images55.png "images55.png")
+![](/images/pages/Images55.png "images55.png")
 
 Since **panels** are containers that **“*should”*** contain only images of the **same size** (or same **aspect ratio**) and that might not always be the case, "**AutoCrops**" contains tools to automatically crop images so that they end up having the same size or the same aspect ratio.
 
@@ -930,11 +912,12 @@ Since **panels** are containers that **“*should”*** contain only images of t
 
 **Reset Crops** : reset crops for all images in the panel, useful if you made a mistake.
 
-## 8.4) "Image/ImagePlus/Stack/Graph/Vector Image" objects parameters
+8.4) "Image/ImagePlus/Stack/Graph/Vector Image" objects parameters
+------------------------------------------------------------------
 
 ### 8.4.1) "Labels" tab
 
-![images49.png](/images/pages/Images49.png "images49.png")
+![](/images/pages/Images49.png "images49.png")
 
 **+ text, scalebar, inset** : Use this to annotate an image, e.g. add letter or text at predefined positions on the image, add scale bars, add/remove insets, set inset size, add comments to the image. (See also the “Annotating images” section).
 
@@ -944,7 +927,7 @@ Since **panels** are containers that **“*should”*** contain only images of t
 
 ### 8.4.2) "Crop" tab
 
-![images50.png](/images/pages/Images50.png "images50.png")
+![](/images/pages/Images50.png "images50.png")
 
 **Left** : defines by which amount the image must be cropped from the left
 
@@ -968,7 +951,7 @@ NB: Crops can be used to change image size or aspect ratio, to fit images in pan
 
 ### 8.4.3) "Orientation/Rotation" tab
 
-![images51.png](/images/pages/Images51.png "images51.png")
+![](/images/pages/Images51.png "images51.png")
 
 **Rotate (°)** : Rotate selected images by some user defined number of degrees (a rotated image is displayed interpolated for all rotation except 0°)
 
@@ -980,7 +963,7 @@ NB: Crops can be used to change image size or aspect ratio, to fit images in pan
 
 ### 8.4.4) "Stack/Video" tab
 
-![images52.png](/images/pages/Images52.png "images52.png")
+![](/images/pages/Images52.png "images52.png")
 
 The "Stack/Video" tab is only enabled if the selected image is an ImagePlus or an ImagePlus stack (see the “Imports” section).
 
@@ -1004,239 +987,256 @@ The "Stack/Video" tab is only enabled if the selected image is an ImagePlus or a
 
 ### 8.4.5) "Misc" tab
 
-![images53.png](/images/pages/Images53.png "images53.png")
+![](/images/pages/Images53.png "images53.png")
 
 **Make The Selected Image Color Blind Friendly/Split Channels** : splits the image to individual gray channels or to pairwise (magenta/green) combinations of channels. This is useful to make the figure colour blind friendly.
 
-![images66.png](/images/pages/Images66.png "images66.png")
+![](/images/pages/Images66.png "images66.png")
 
 Select an image (left arrow). Select the “Misc” tab. Press “Split channels”.
 
-![images67.png](/images/pages/Images67.png "images67.png")
+![](/images/pages/Images67.png "images67.png")
 
 Select “Single gray channels and merge” to split image into gray channels and merge. Or press “Magenta green combinations and merge” to get pairwaise (magenta/green) combinations of channels and merge (Select the image and press the “Del” or “Suppr” keyboard keys to remove unwanted combinations). See below for the result of the two types of outputs.
 
-![images68.png](/images/pages/Images68.png "images68.png")
+![](/images/pages/Images68.png "images68.png")
 
-![images69.png](/images/pages/Images69.png "images69.png")
+![](/images/pages/Images69.png "images69.png")
 
-# 9\) Figure layout
+9) Figure layout
+================
 
-## 9.1) Change figure size
+9.1) Change figure size
+-----------------------
 
-![Image26.png](/images/pages/Image26.png "Image26.png")
+![](/images/pages/Image26.png "Image26.png")
 
 Press Ctrl/Cmd+A to select all elements of the figure.
 
-![Image27.png](/images/pages/Image27.png "Image27.png")
+![](/images/pages/Image27.png "Image27.png")
 
 Select the "Size" tab. Click on "1,5" to set the figure width to 1,5 columns of the selected journal style.
 
-![Image28.png](/images/pages/Image28.png "Image28.png")
+![](/images/pages/Image28.png "Image28.png")
 
 Note that the figure that was initially 2 columns in size (materialized by the green rectangle, upper arrow) is now 1.5 columns in size (materialized by the yellow rectangle, lower arrow).
 
-![Image29.png](/images/pages/Image29.png "Image29.png")
+![](/images/pages/Image29.png "Image29.png")
 
 You can also set the size of the figure in cm (arrow) or in pixels.
 
-## 9.2) Change layout
+9.2) Change layout
+------------------
 
 The most efficient way to change figure layout is as follows.
 
-![Image30.png](/images/pages/Image30.png "Image30.png")
+![](/images/pages/Image30.png "Image30.png")
 
 Select the object to be moved, for example a row of the figure (arrow, labelled in cyan). Then press the keyboard "up" or "left" arrow to move the row up. (Press the “Right” or “down” arrows to move a row down).
 
-![Image31.png](/images/pages/Image31.png "Image31.png")
+![](/images/pages/Image31.png "Image31.png")
 
 The whole row moved up.
 
-![Image32.png](/images/pages/Image32.png "Image32.png")
+![](/images/pages/Image32.png "Image32.png")
 
 To move an inner component of the row, click on it until it gets selected (arrow) (see also “Selections” Section). Then press the keyboard "up" or "left" arrow to move an image left (Press the keyboard “down” or “right” arrow to move an image right).
 
-![Image33.png](/images/pages/Image33.png "Image33.png")
+![](/images/pages/Image33.png "Image33.png")
 
 The two closest images have been swapped (arrows).
 
-# 10\) Annotating Images
+10) Annotating Images
+=====================
 
-## 10.1) Add letters, labels and scalebar to an image
+10.1) Add letters, labels and scalebar to an image
+--------------------------------------------------
 
-![Image13.png](/images/pages/Image13.png "Image13.png")
+![](/images/pages/Image13.png "Image13.png")
 
 Click on an image until you see a red selection around it (left arrow). Most likely you will have to click more than one time (see the “Selections” Section). Upon selection, the image menu appears (middle arrow). Select the "Label" panel then click on the "+Text, scale-bar, ..." button (right arrow).
 
-![Image14.png](/images/pages/Image14.png "Image14.png")
+![](/images/pages/Image14.png "Image14.png")
 
 A menu will appear. Type text, add letters and scale-bars to an image from there.
 
-![Image15.png](/images/pages/Image15.png "Image15.png")
+![](/images/pages/Image15.png "Image15.png")
 
 Select "Upper Left corner" to add text at the upper left corner of the image (top arrow), then type some text (bottom arrow). The text is displayed while you write on the original image (arrowhead).
 
-![Image16.png](/images/pages/Image16.png "Image16.png")
+![](/images/pages/Image16.png "Image16.png")
 
 To add a scale bar, select "Scale Bar" (top arrow), set scale bar size (middle arrow), then set scale bar colour (bottom arrow). The scale bar is displayed dynamically on the original image (arrowhead).
 
-## 10.2) Add ROIs/Floating text labels to an image
+10.2) Add ROIs/Floating text labels to an image
+-----------------------------------------------
 
-![Image17.png](/images/pages/Image17.png "Image17.png")
+![](/images/pages/Image17.png "Image17.png")
 
 Click on an image until you see a red selection around it (left arrow), you will most likely have to click more than one time (see the “ Selections” Section). Upon image selection, the image menu appears (middle arrow). Select the "Label" panel then click on the "+ROIs, arrows, text, ..." button (right arrow).
 
-![Image18.png](/images/pages/Image18.png "Image18.png")
+![](/images/pages/Image18.png "Image18.png")
 
 A new dialog appears that lets you draw ROIs or add floating text to the image. Press "Ok" when done (arrow) and the ROI will be added to the original image. (ROIs can be further edited if needed).
 
-## 10.3) Convert ROIs to crop or insets (Picture In Picture, PIP)
+10.3) Convert ROIs to crop or insets (Picture In Picture, PIP)
+--------------------------------------------------------------
 
 Open the ROI dialog for the image as described in the previous section.
 
-![Image19.png](/images/pages/Image19.png "Image19.png")
+![](/images/pages/Image19.png "Image19.png")
 
 Draw two ROIs (red arrows). Select the biggest ROI by clicking on it.
 
-![Image20.png](/images/pages/Image20.png "Image20.png")
+![](/images/pages/Image20.png "Image20.png")
 
 Press "ROI → Crop(s)" (right arrow) and an information message will appear upon successful conversion (left arrow). A crop corresponding to the ROI is added to the original image, see after.
 
-![Image21.png](/images/pages/Image21.png "Image21.png")
+![](/images/pages/Image21.png "Image21.png")
 
 Select the second ROI by clicking on it (left arrow). Then press "ROIs → inset/PIP" (right arrow). A validation message shows upon success. Press "Ok" to close the dialog, then press "Ok" again to close the ROI dialog.
 
-![Image22.png](/images/pages/Image22.png "Image22.png")
+![](/images/pages/Image22.png "Image22.png")
 
 An inset appears at the top right region of the image (the inset can be moved and resized).
 
-![Image23.png](/images/pages/Image23.png "Image23.png")
+![](/images/pages/Image23.png "Image23.png")
 
 Also a crop corresponding to the biggest rectangle is added as a new row (arrow) at the end of the figure.
 
-## 10.4) Add labels outside images/rows
+10.4) Add labels outside images/rows
+------------------------------------
 
-![images62.png](/images/pages/Images62.png "images62.png")
+![](/images/pages/Images62.png "images62.png")
 
 Select a row, the selection should be surrounded by a cyan rectangle (left arrow) (see also the “Selections” section). Then select the “Labels” tab (right arrow).
 
-![images63.png](/images/pages/Images63.png "images63.png")
+![](/images/pages/Images63.png "images63.png")
 
 Press “+ text labels above images” (right most arrow). Select “1” for begin and end (middle arrows). This means the label will be over the first image of the row only. Type in your text (bottom arrow).
 
-![images64.png](/images/pages/Images64.png "images64.png")
+![](/images/pages/Images64.png "images64.png")
 
 Press “Add” (bottom arrow). Set begin to “2” and end to “3” (upper arrows), this means the label will span over the second and third images in the row. Type in your text (middle arrow).
 
-![images65.png](/images/pages/Images65.png "images65.png")
+![](/images/pages/Images65.png "images65.png")
 
 Labels have been added above images. Labels can also be added left, right and below rows.
 
-# 11\) Keep for later
+11) Keep for later
+==================
 
 Often one needs to hide/remove portions of figures that are not yet finalized, however this unfinished work must still be kept somewhere in order to be added back later. This is what the "Keep For Later" menu is for.
 
-![Image45.png](/images/pages/Image45.png "Image45.png")
+![](/images/pages/Image45.png "Image45.png")
 
-Select the object(s) to remove temporarily/hide from the figure. In this example, I selected the bottom right image (lower arrow). Press "Keep For Later \> Keep current selection for later" (upper arrow).
+Select the object(s) to remove temporarily/hide from the figure. In this example, I selected the bottom right image (lower arrow). Press "Keep For Later &gt; Keep current selection for later" (upper arrow).
 
-![Image46.png](/images/pages/Image46.png "Image46.png")
+![](/images/pages/Image46.png "Image46.png")
 
 Note that the selected image is removed (lower arrow) from the row and added to the "Keep For Later" menu as a button (middle arrow). Note also that the "Keep for later" menu turns red when it contains something (upper arrow).
 
-![Image47.png](/images/pages/Image47.png "Image47.png")
+![](/images/pages/Image47.png "Image47.png")
 
 Pressing the icon button in the "Keep For Later" menu adds the image back to the end of the figure.
 
-# 12\) Manipulate image channels
+12) Manipulate image channels
+=============================
 
-## 12.1) Select or create an image with channels
+12.1) Select or create an image with channels
+---------------------------------------------
 
 Load an image that contains channels, or import one from ImageJ (see the “Imports” section) and select it (see the “Selections” section).
 
-![Image54.png](/images/pages/Image54.png "Image54.png")
+![](/images/pages/Image54.png "Image54.png")
 
 If there are no channels available in the "Ch" panel (upper arrow), you can convert an RGB image to composite by pressing the "To composite" button (lower arrow).
 
-![Image55.png](/images/pages/Image55.png "Image55.png")
+![](/images/pages/Image55.png "Image55.png")
 
 Once the image is composite, its channels are displayed in the "Ch" panel.
 
-## 12.2) Activate/inactivate channels
+12.2) Activate/inactivate channels
+----------------------------------
 
-![Image56.png](/images/pages/Image56.png "Image56.png")
+![](/images/pages/Image56.png "Image56.png")
 
 "ch1" is active (ticked)
 
-![Image57.png](/images/pages/Image57.png "Image57.png")
+![](/images/pages/Image57.png "Image57.png")
 
 Untick the channel (right arrow) and it becomes inactive in the image (left arrow).
 
-## 12.3) Change channel colour
+12.3) Change channel colour
+---------------------------
 
-![Image58.png](/images/pages/Image58.png "Image58.png")
+![](/images/pages/Image58.png "Image58.png")
 
 Make sure "ch1" is active (ticked)
 
-![Image59.png](/images/pages/Image59.png "Image59.png")
+![](/images/pages/Image59.png "Image59.png")
 
 Press the yellow button "<span style="background-color:#fff200;">Y</span>" (right arrow) to turn the green channel to a yellow one. See the channel colour change on the image (left arrow).
 
-# 13\) Use drag and drop to build a figure efficiently
+13) Use drag and drop to build a figure efficiently
+===================================================
 
-## 13.1) Add inset using drag and drop
+13.1) Add inset using drag and drop
+-----------------------------------
 
 The easiest way to add an inset or do anything in EZFig is via mouse **drag and drops**.
 
-![Image63.png](/images/pages/Image63.png "Image63.png")
+![](/images/pages/Image63.png "Image63.png")
 
 Select an image and drag and drop it onto another image above it.
 
-![Image64.png](/images/pages/Image64.png "Image64.png")
+![](/images/pages/Image64.png "Image64.png")
 
 Drop it
 
-![Image65.png](/images/pages/Image65.png "Image65.png")
+![](/images/pages/Image65.png "Image65.png")
 
 A dialog opens. Select "Add dragged selection as inset"
 
-![Image66.png](/images/pages/Image66.png "Image66.png")
+![](/images/pages/Image66.png "Image66.png")
 
 The inset is added to the image.
 
-## 13.2) Add an image to a row
+13.2) Add an image to a row
+---------------------------
 
-![Image67.png](/images/pages/Image67.png "Image67.png")
+![](/images/pages/Image67.png "Image67.png")
 
 Click on an image until it gets selected (i.e. surrounded by a red rectangle) (see the “Selections” section) (arrow).
 
-![Image68.png](/images/pages/Image68.png "Image68.png")
+![](/images/pages/Image68.png "Image68.png")
 
 Drag and drop the image onto the row above it (notice the drop target becomes surrounded by a cyan rectangle).
 
-![Image69.png](/images/pages/Image69.png "Image69.png")
+![](/images/pages/Image69.png "Image69.png")
 
 A dialog opens. Select "add dragged selection to the dropped target row".
 
-![Image70.png](/images/pages/Image70.png "Image70.png")
+![](/images/pages/Image70.png "Image70.png")
 
 The image is added to the row.
 
-## 13.3) Create a new row from an image/remove an image from a row
+13.3) Create a new row from an image/remove an image from a row
+---------------------------------------------------------------
 
-![Image71.png](/images/pages/Image71.png "Image71.png")
+![](/images/pages/Image71.png "Image71.png")
 
 Click on an image until it gets selected (surrounded by a red rectangle) (arrow).
 
-![Image72.png](/images/pages/Image72.png "Image72.png")
+![](/images/pages/Image72.png "Image72.png")
 
 Drop the image into an empty region.
 
-![Image73.png](/images/pages/Image73.png "Image73.png")
+![](/images/pages/Image73.png "Image73.png")
 
 A dialog opens. Select "Add selection to new row" and press “Ok”.
 
-![Image74.png](/images/pages/Image74.png "Image74.png")
+![](/images/pages/Image74.png "Image74.png")
 
 The image is added to a new row.
 
@@ -1246,49 +1246,51 @@ PS : to delete an image from the figure just select it (red selection) and pres
 
 </div>
 
-## 13.4) Create a panel, add it to a row and change its layout
+13.4) Create a panel, add it to a row and change its layout
+-----------------------------------------------------------
 
-![Image75.png](/images/pages/Image75.png "Image75.png")
+![](/images/pages/Image75.png "Image75.png")
 
 Click on an image until it gets surrounded by a red rectangle (arrow).
 
-![Image76.png](/images/pages/Image76.png "Image76.png")
+![](/images/pages/Image76.png "Image76.png")
 
 **Duplicate it** (i.e. press **Ctrl/Cmd + C, Ctrl/Cmd + V**) five times (you should have 6 times the same image in your figure). Here I have six identical leaf image but things would work the same with non identical images having the same aspect ratio (e.g. images in a time series, Z slices, ...).
 
-![Image84.png](/images/pages/Image84.png "Image84.png")
+![](/images/pages/Image84.png "Image84.png")
 
 Select one of the copied images and drop it onto the parent image in the first row.
 
-![Image85.png](/images/pages/Image85.png "Image85.png")
+![](/images/pages/Image85.png "Image85.png")
 
 A dialog opens, select “Add selection to a panel”
 
-![Image77.png](/images/pages/Image77.png "Image77.png")
+![](/images/pages/Image77.png "Image77.png")
 
 Note that a panel/montage containing two images has been added to the first row of the figure (arrow).
 
-![Image79.png](/images/pages/Image79.png "Image79.png")
+![](/images/pages/Image79.png "Image79.png")
 
 Select one of the copied images, maintain the Ctrl/Cmd keyboard key and click on the three other copied images <span style="color:#ce181e;">(Ctrl/Cmd + Click allows for multiple selection)</span>. Note the cyan (or red) rectangles indicating the selected images (arrows).
 
-![Image78.png](/images/pages/Image78.png "Image78.png")
+![](/images/pages/Image78.png "Image78.png")
 
 Drag and drop those four images onto the panel already containing 2 images.
 
-![Image80.png](/images/pages/Image80.png "Image80.png")
+![](/images/pages/Image80.png "Image80.png")
 
 A dialog pops. Select "Add selection to a panel" and press “Ok”.
 
-![Image81.png](/images/pages/Image81.png "Image81.png")
+![](/images/pages/Image81.png "Image81.png")
 
 A panel with six images is now added to the first figure row. Select this panel, it should be surrounded by a magenta rectangle and display the “Panel” label (See also the “Selections” section).
 
-![Image82.png](/images/pages/Image82.png "Image82.png")
+![](/images/pages/Image82.png "Image82.png")
 
 Change the number of rows to 3 (upper arrow) and the number of columns to 2 (lower arrow). Note that the layout of the panel is changed accordingly.
 
-## 13.5) List of DND options and their use
+13.5) List of DND options and their use
+---------------------------------------
 
 **Add dragged selection to the drop target row** : Adds dragged objects to the drop target row.
 
@@ -1310,161 +1312,174 @@ Change the number of rows to 3 (upper arrow) and the number of columns to 2 (low
 
 **Add dragged selection as inset (picture in picture/PIP) to the drop target image** : adds dragged selection as an inset in the drop target image.
 
-# 14\) Add inset/Picture in picture (PIP) from the local drive
+14) Add inset/Picture in picture (PIP) from the local drive
+===========================================================
 
-![Image60.png](/images/pages/Image60.png "Image60.png")
+![](/images/pages/Image60.png "Image60.png")
 
 Select an image (left arrow), select the "Labels" tab (middle arrow) then press the "+text, scalebar, inset" button
 
-![Image61.png](/images/pages/Image61.png "Image61.png")
+![](/images/pages/Image61.png "Image61.png")
 
 Press the "Add/Replace Inset" button to insert an image from the local hard drive (Left arrow). Note that it is only possible to add one inset per image, note also that many journals ask not to use insets. To remove the inset associated with the image press "Remove Inset" (right arrow).
 
-![Image62.png](/images/pages/Image62.png "Image62.png")
+![](/images/pages/Image62.png "Image62.png")
 
 Note that removed insets are not deleted, they are added to the "Keep For Later" menu (arrow) (See also the “Keep for Later” section).
 
-# 15\) Journal styles
+15) Journal styles
+==================
 
-## 15.1) Select a journal style
+15.1) Select a journal style
+----------------------------
 
-![images8.png](/images/pages/Images8.png "images8.png")
+![](/images/pages/Images8.png "images8.png")
 
 Before performing an editorial check you must always select a journal style first (arrow)
 
-![images9.png](/images/pages/Images9.png "images9.png")
+![](/images/pages/Images9.png "images9.png")
 
 If the journal you look for is not available you can create your own journal style (See after).
 
-## 15.2) Create a new journal style
+15.2) Create a new journal style
+--------------------------------
 
-![images11.png](/images/pages/Images11.png "images11.png")
+![](/images/pages/Images11.png "images11.png")
 
-Press "Journals \> Create new Journal"
+Press "Journals &gt; Create new Journal"
 
-![Image25.png](/images/pages/Image25.png "Image25.png")
+![](/images/pages/Image25.png "Image25.png")
 
 Enter the journal parameters based on the journal guidelines such as size of a column, size of 2 columns, fonts to use, letter capitalization rules, style rules, text formatting rules, graph rules, … Provide the name of the journal and it’s all set. Please do not hesitate to send me the journal style you generate so that I can add it to EZFig, you'll be credited for this journal and you may really help other people.
 
-# 16\) Editorial Checks
+16) Editorial Checks
+====================
 
 When submitting a manuscript to a journal one needs to obey several editorial guidelines. EZFig can help you.
 
-## 16.1) Check Size
+16.1) Check Size
+----------------
 
-![images14.png](/images/pages/Images14.png "images14.png")
+![](/images/pages/Images14.png "images14.png")
 
 Select a journal style
 
-![images15.png](/images/pages/Images15.png "images15.png")
+![](/images/pages/Images15.png "images15.png")
 
-To check image size, i.e. that the created figure fits the journal style guidelines, press “Checks \> Size".
+To check image size, i.e. that the created figure fits the journal style guidelines, press “Checks &gt; Size".
 
-![images12.png](/images/pages/Images12.png "images12.png")
+![](/images/pages/Images12.png "images12.png")
 
 A dialog pops and offers to change the size of the image to the closest available column journal size, feel free to accept or reject the offered solution.
 
-![images13.png](/images/pages/Images13.png "images13.png")
+![](/images/pages/Images13.png "images13.png")
 
 Upon acceptance, the image is resized (in that case the image has been resized to two journal columns as indicated by the alignment of the figure with the green rectangle on the drawing panel).
 
-## 16.2) Check style
+16.2) Check style
+-----------------
 
 Most journal have stylistic guidelines, for example the text should not be coloured. To check a figure for style :
 
 Select a journal style
 
-![images16.png](/images/pages/Images16.png "images16.png")
+![](/images/pages/Images16.png "images16.png")
 
-Press "Checks \> Style".
+Press "Checks &gt; Style".
 
-![Image83.png](/images/pages/Image83.png "Image83.png")
+![](/images/pages/Image83.png "Image83.png")
 
 The dialog shows the problematic image styles and offers a solution. Here, it offers to replace multicolour text by white text. Please feel free to accept or reject this suggestion.
 
-## 16.3) Check Fonts
+16.3) Check Fonts
+-----------------
 
 Most journals ask to use a specific font and font size for the text, lettering and text annotations. To check figure for Fonts :
 
-![images17.png](/images/pages/Images17.png "images17.png")
+![](/images/pages/Images17.png "images17.png")
 
 Select a journal style
 
-![images20.png](/images/pages/Images20.png "images20.png")
+![](/images/pages/Images20.png "images20.png")
 
 Select "Fonts" in the “Checks” menu
 
-![images18.png](/images/pages/Images18.png "images18.png")
+![](/images/pages/Images18.png "images18.png")
 
 if the fonts do not respect journal guidelines, you will be offered to replace fonts. Feel free to accept or reject the offer.
 
-![images19.png](/images/pages/Images19.png "images19.png")
+![](/images/pages/Images19.png "images19.png")
 
 Upon acceptance, all fonts will be changed and EZFig will take care of the text layout for you.
 
-## 16.4) Check line arts
+16.4) Check line arts
+---------------------
 
 Most journals ask to have specific line width for ROIs and figire line arts, to check figure line arts :
 
-![images21.png](/images/pages/Images21.png "images21.png")
+![](/images/pages/Images21.png "images21.png")
 
 Select a journal style
 
-![images23.png](/images/pages/Images23.png "images23.png")
+![](/images/pages/Images23.png "images23.png")
 
 Select "Line arts" in the “Checks” menu.
 
-![images22.png](/images/pages/Images22.png "images22.png")
+![](/images/pages/Images22.png "images22.png")
 
 If line arts are not in conformity with the journal guidelines you will be offered a replacement solution. Feel free to accept it or not.
 
-![images24.png](/images/pages/Images24.png "images24.png")
+![](/images/pages/Images24.png "images24.png")
 
 Upon acceptance, line arts width is changed.
 
-## 16.5) Check Text
+16.5) Check Text
+----------------
 
 Journals have naming conventions text, for example they dictate how to write speed units should be written, … To check the figure text :
 
-![images25.png](/images/pages/Images25.png "images25.png")
+![](/images/pages/Images25.png "images25.png")
 
-Select a journal style then press "Checks \> Text"
+Select a journal style then press "Checks &gt; Text"
 
-![images26.png](/images/pages/Images26.png "images26.png")
+![](/images/pages/Images26.png "images26.png")
 
 If the text did not pass the test, a solution will be offered. Feel free to accept it or reject it. Please pay attention to the offered solutions as text checks are irreversible, are programmatically hard to implement and thereby require careful human inspection.
 
-## 16.6) Check Graphs
+16.6) Check Graphs
+------------------
 
 Most journals have guideline regarding graphs (for example regarding units, background colours, ...). To check graphs (<span style="color:#ce181e;">please note that EZFig can only check graphs generated with FiguR, a tool included in the EZFig package</span>) :
 
-![images27.png](/images/pages/Images27.png "images27.png")
+![](/images/pages/Images27.png "images27.png")
 
 Select a journal style (left arrow) and ensure that EZFig is connected to R (green button, right arrow)
 
-![images28.png](/images/pages/Images28.png "images28.png")
+![](/images/pages/Images28.png "images28.png")
 
-Press "Checks \> Graphs"
+Press "Checks &gt; Graphs"
 
-![images29.png](/images/pages/Images29.png "images29.png")
+![](/images/pages/Images29.png "images29.png")
 
 Read the comments regarding your graph, perform changes or ignore suggestions if you think they are not appropriate. If you accept the solution your graphs will be changed (most changes are irreversible).
 
-# 17\) FiguR
+17) FiguR
+=========
 
 Often figures contain graphs and FiguR is a tool to create graphs that can be directly edited by EZFig. FiguR uses R and ggplot2 to draw graphs. The use of ggplot2 is motivated by the fact that this is the only R library (as far as I know) where fonts can be set. Proper font is mandatory for most scientific publications.
 
-## 17.1) Install and configure R (required for FiguR to work)
+17.1) Install and configure R (required for FiguR to work)
+----------------------------------------------------------
 
-![Image6.png](/images/pages/Image6.png "Image6.png")
+![](/images/pages/Image6.png "Image6.png")
 
-Press “Help \> Show R installation guidelines”
+Press “Help &gt; Show R installation guidelines”
 
-![Image5.png](/images/pages/Image5.png "Image5.png")
+![](/images/pages/Image5.png "Image5.png")
 
 A dialog opens. Please follow the instructions within.
 
-![Image50.png](/images/pages/Image50.png "Image50.png")
+![](/images/pages/Image50.png "Image50.png")
 
 Finally launch R and type in (or more simply just copy-paste) the following three lines :
 
@@ -1473,28 +1488,26 @@ Finally launch R and type in (or more simply just copy-paste) the following thre
 if ('Rserve' %in% rownames(installed.packages())==FALSE) install.packages('Rserve')
 
 </div>
-
 <div style="color:#ce181e;">
 
 library(Rserve)
 
 </div>
-
 <div style="color:#ce181e;">
 
 Rserve(args='—vanilla')
 
 </div>
 
-![Image51.png](/images/pages/Image51.png "Image51.png")
+![](/images/pages/Image51.png "Image51.png")
 
 To connect EZFig to R, press the red "R con" button in EZFig.
 
-![Image52.png](/images/pages/Image52.png "Image52.png")
+![](/images/pages/Image52.png "Image52.png")
 
 If connection to R is successful, the "R con" button should turn green.
 
-![Image53.png](/images/pages/Image53.png "Image53.png")
+![](/images/pages/Image53.png "Image53.png")
 
 <div style="color:#ce181e;">
 
@@ -1502,50 +1515,54 @@ Similarly, to connect FiguR to R press the "R status" button (arrow) in FiguR.
 
 </div>
 
-## 17.2) Launch FiguR
+17.2) Launch FiguR
+------------------
 
-![Image3.png](/images/pages/Image3.png "Image3.png")
+![](/images/pages/Image3.png "Image3.png")
 
-To Launch FiguR from EZFig press "FiguR \> Launch FiguR"
+To Launch FiguR from EZFig press "FiguR &gt; Launch FiguR"
 
-![Image4.png](/images/pages/Image4.png "Image4.png")
+![](/images/pages/Image4.png "Image4.png")
 
 The FiguR interface opens
 
-# 18\) Settings
+18) Settings
+============
 
-![Image7.png](/images/pages/Image7.png "Image7.png")
+![](/images/pages/Image7.png "Image7.png")
 
-Press "Edit \> Software Preferences"
+Press "Edit &gt; Software Preferences"
 
-![Image8.png](/images/pages/Image8.png "Image8.png")
+![](/images/pages/Image8.png "Image8.png")
 
 A dialog opens.
 
-## 18.1) Undos/Redos
+18.1) Undos/Redos
+-----------------
 
 Undos/Redos are not active by default in SF.
 
-![Image9.png](/images/pages/Image9.png "Image9.png")
+![](/images/pages/Image9.png "Image9.png")
 
-Press "Edit \> Software Preferences"
+Press "Edit &gt; Software Preferences"
 
-![Image10.png](/images/pages/Image10.png "Image10.png")
+![](/images/pages/Image10.png "Image10.png")
 
-![Image11.png](/images/pages/Image11.png "Image11.png")
+![](/images/pages/Image11.png "Image11.png")
 
 Tick the first checkbox to activate undos/redos
 
-![Image12.png](/images/pages/Image12.png "Image12.png")
+![](/images/pages/Image12.png "Image12.png")
 
 When changes are made to the figure two new buttons will become visible and clickable (arrow). These buttons are the undo and redo buttons.
 
-## 18.2) Shortcuts
+18.2) Shortcuts
+---------------
 
-![Image24.png](/images/pages/Image24.png "Image24.png")
+![](/images/pages/Image24.png "Image24.png")
 
-To edit EZFig shortcuts select "Help \> Shortcuts"
+To edit EZFig shortcuts select "Help &gt; Shortcuts"
 
-![Image35.png](/images/pages/Image35.png "Image35.png")
+![](/images/pages/Image35.png "Image35.png")
 
 A dialog opens, <span style="color:#ce181e;">click </span><span style="color:#ce181e;">a</span><span style="color:#ce181e;"> shortcut to edit it</span>. Press “Ok” when done. Nb : <span style="color:#ce181e;">you can also reset shortcuts to default from this dialog</span>.

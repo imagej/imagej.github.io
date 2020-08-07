@@ -7,24 +7,27 @@ categories: News,ImageJ2
 description: test description
 ---
 
-## Introduction
+Introduction
+------------
 
 Subversion is a decent version control program that does not require much thought to operate. Unfortunately, if you want to avoid clunky, unreviewable monster commits ([a known worst practice](http://www.crealytics.de/blog/2010/07/09/5-reasons-keeping-git-commits-small-mluedtke/)), you will need third-party programs to prepare any non-trivial set of patches.
 
 One such third-party program is called [Git](Git )... While Git is usually meant to be used as a standalone version control system (and we have hints [here](Git_Notes ) and links [here](Git ) how to use it), its [`git rebase -i`](Git_topic_branches ) functionality lends itself to a patch series based workflow.
 
-## The `git svn` workflow
+The `git svn` workflow
+----------------------
 
 Our recommended `git svn` workflow was described in our chatroom by [Barry](User_Bdezonia ):
 
 1.  `git svn fetch`
 2.  `git checkout -b NewBranch trunk`
-3.  \<do some edits and test, git adds, git commits, etc.\>
+3.  &lt;do some edits and test, git adds, git commits, etc.&gt;
 4.  `git svn fetch`
 5.  `gitk ...trunk`
-      - \<if not linear development then\>  
+    -   &lt;if not linear development then&gt;  
         `git rebase -i trunk`
-    \<finally\>
+
+    &lt;finally&gt;
 6.  `git svn dcommit`
 
 The idea is to first synchronize the local branches with the the Subversion repository (step 1).
@@ -35,11 +38,12 @@ When you are ready to publish the patch series in Subversion, synchronize again 
 
 After everything was prepared for Subversion, use the `dcommit` command of `git svn` to commit all changes that are in the current branch but not yet in *trunk*. (If you are interested why it is called `dcommit`: the original `commit` subcommand of `git svn` is a historic wart...)
 
-## Setting up the local working directory
+Setting up the local working directory
+--------------------------------------
 
 To get started with `git svn`, you need an initial `git-svn` clone. The easy way to do this would be to start
 
-` git svn clone -s  `https://code.imagej.net/svn/imagej
+`git svn clone -s `[`https://code.imagej.net/svn/imagej`](https://code.imagej.net/svn/imagej)
 
 However, this is relatively slow since it uses Subversion to check out every revision in the complete history. You can instead hook up a fresh Git working tree with our pre-imported Git repository like this:
 

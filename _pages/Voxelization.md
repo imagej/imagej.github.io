@@ -7,11 +7,13 @@ categories: Techniques
 description: test description
 ---
 
-# Voxelization
+Voxelization
+============
 
 Voxelization is the process of converting a data structures that store geometric information in a continuous domain (such as a 3D triangular mesh) into a rasterized image (a discrete grid).
 
-## Instructions for voxelizing a 3D mesh in ImageJ
+Instructions for voxelizing a 3D mesh in ImageJ
+-----------------------------------------------
 
 ### Requirements
 
@@ -19,11 +21,11 @@ Enabled [ThreeDViewer](ThreeDViewer ) update site
 
 ### Steps
 
-1.  Launch SciView ![launch\_threedviewer.png](/images/pages/Launch threedviewer.png "launch_threedviewer.png")
-2.  Import a 3D mesh (at the time of this writing OBJ, STL, and Isosurfaces taken from a 3D image opened in ImageJ, all work) ![import\_obj.png](/images/pages/Import obj.png "import_obj.png")
-3.  Convert mesh to image ![mesh\_to\_image.png](/images/pages/Mesh to image.png "mesh_to_image.png")
-4.  Select output dimensions ![mesh\_to\_image\_dimensions.png](/images/pages/Mesh to image dimensions.png "mesh_to_image_dimensions.png")
-5.  Inspect the result ![voxelization\_output.png](/images/pages/Voxelization output.png "voxelization_output.png")
+1.  Launch SciView ![](/images/pages/Launch threedviewer.png "fig:launch_threedviewer.png")
+2.  Import a 3D mesh (at the time of this writing OBJ, STL, and Isosurfaces taken from a 3D image opened in ImageJ, all work) ![](/images/pages/Import obj.png "fig:import_obj.png")
+3.  Convert mesh to image ![](/images/pages/Mesh to image.png "fig:mesh_to_image.png")
+4.  Select output dimensions ![](/images/pages/Mesh to image dimensions.png "fig:mesh_to_image_dimensions.png")
+5.  Inspect the result ![](/images/pages/Voxelization output.png "fig:voxelization_output.png")
 
 ### Optional additional steps
 

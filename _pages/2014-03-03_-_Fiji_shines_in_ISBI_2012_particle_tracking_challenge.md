@@ -17,7 +17,7 @@ N. Chenouard, I. Smal, F. de Chaumont, M. Maska, I. F. Sbalzarini, Y. Gong, J. C
 
 Ivo Sbalzarini's tracking algorithm as implemented in the MOSAICsuite for Fiji ("Method 1" in the paper) scores very high. In many cases, it is among the top-three performing methods and it is very fast (see Figure 3 in the paper). It performs particularly well in the case for which it has originally been designed: prior-free random motion of viruses. Moreover, its graphical user interface and low number of parameters render it particularly easy to use, thanks to the system integration of Fiji.
 
-Prompted by the competition results, we are currently extending the algorithm with additional motion models for directed and constant-speed motion, which should further improve performance, e.g., on the "microtubules" data set. A new release is planned soon and will be distributed through the MOSAIC Fiji Update Site\!
+Prompted by the competition results, we are currently extending the algorithm with additional motion models for directed and constant-speed motion, which should further improve performance, e.g., on the "microtubules" data set. A new release is planned soon and will be distributed through the MOSAIC Fiji Update Site!
 
 The algorithm has originally been published in:
 

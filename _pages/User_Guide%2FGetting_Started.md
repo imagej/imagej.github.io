@@ -11,7 +11,8 @@ description: test description
 
 This part provides basic information on ImageJ installation, troubleshooting and update strategies. It discusses [Fiji↓](#sub:Fiji-intro "wikilink")[↓](#nom-fiji "wikilink") and [ImageJ2↓](#sub:ImageJ2intro "wikilink") as well as third-party software related to ImageJ. Being impossible to document all the capabilities of ImageJ without exploring technical aspects of image processing, external resources allowing willing readers to know more about digital signal processing are also provided.
 
-## Introduction
+Introduction
+------------
 
 ImageJ is a [public domain](http://rsb.info.nih.gov/ij/disclaimer.html) Java image processing and analysis program inspired by [NIH Image](http://rsb.info.nih.gov/nih-image/) for the Macintosh. It runs, either as an online applet or as a downloadable application, on any computer with a Java 1.5 or later virtual machine. [Downloadable distributions](http://imagej.nih.gov/ij/download.html) are available for Windows, Mac OS X and Linux. It can display, edit, analyze, process, save and print 8--bit, 16--bit and 32--bit images. It can read many image formats including TIFF, GIF, JPEG, BMP, DICOM, FITS and ‘raw’. It supports ‘stacks’ (and hyperstacks), a series of images that share a single window. It is multithreaded, so time-consuming operations such as image file reading can be performed in parallel with other operations<span class="FootOuter"><span class="SupFootMarker"> \[A\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[A\] </span>A somehow outdated list of ImageJ’s features is available at http://imagej.nih.gov/ij/features.html></span></span.
 
@@ -33,9 +34,10 @@ ImageJ is being developed on Mac OS X using its built in editor and Java compi
 
 </div>
 
-## Installing and Maintaining ImageJ
+Installing and Maintaining ImageJ
+---------------------------------
 
-ImageJ can be downloaded from http://imagej.nih.gov/ij/download.html>. Details on how to install ImageJ on [↓](#index-Linux "wikilink")[Linux](http://imagej.nih.gov/ij/docs/install/linux.html), [Mac OS 9](http://imagej.nih.gov/ij/docs/install/mac.html), [↓](#index-Mac-OS-X "wikilink")[Mac OS X](http://imagej.nih.gov/ij/docs/install/osx.html) and [↓](#index-Windows-\(OS\) "wikilink")[Windows](http://imagej.nih.gov/ij/docs/install/windows.html) <span class="bibcites">[1]([#biblio-1 )\]</span> are available at <http://imagej.nih.gov/ij/docs/install/> (<span class="sans"><span class="menuitem"><span class="sans">Help ▷ [Installation…↓](#sub:Installation... "wikilink")</span></span></span> command). Specially useful are the platform-specific *Troubleshooting* and *Known Problems* sections. [↓](#index-Fiji "wikilink")[Fiji↓](#sub:Fiji-intro "wikilink") installation is described at <https://fiji.sc/wiki/index.php/Downloads.
+ImageJ can be downloaded from http://imagej.nih.gov/ij/download.html>. Details on how to install ImageJ on [↓](#index-Linux "wikilink")[Linux](http://imagej.nih.gov/ij/docs/install/linux.html), [Mac OS 9](http://imagej.nih.gov/ij/docs/install/mac.html), [↓](#index-Mac-OS-X "wikilink")[Mac OS X](http://imagej.nih.gov/ij/docs/install/osx.html) and [↓](#index-Windows-(OS) "wikilink")[Windows](http://imagej.nih.gov/ij/docs/install/windows.html) <span class="bibcites">[1]([#biblio-1 )\]</span> are available at <http://imagej.nih.gov/ij/docs/install/> (<span class="sans"><span class="menuitem"><span class="sans">Help ▷ [Installation…↓](#sub:Installation... "wikilink")</span></span></span> command). Specially useful are the platform-specific *Troubleshooting* and *Known Problems* sections. [↓](#index-Fiji "wikilink")[Fiji↓](#sub:Fiji-intro "wikilink") installation is described at <https://fiji.sc/wiki/index.php/Downloads.
 
 The downloaded package may not contain the latest bug fixes so it is recommended to upgrade ImageJ right after a first installation. [↓Updating](#index-Updates "wikilink") IJ[↓](#nom-ij "wikilink") consists only of running <span class="sans"><span class="menuitem"><span class="sans">Help ▷ [Update ImageJ…↓](#sub:Update-ImageJ... "wikilink")</span></span></span>, which will install the latest <span class="Filename">[ij.jar](http://imagej.nih.gov/ij/upgrade/)</span> in the ImageJ folder (on Linux and Windows) or inside the ImageJ.app (on Mac OS X).
 
@@ -77,62 +79,51 @@ Description of all ImageJ related projects at [ImageDev](http://imagejdev.org/fa
 
 <div class="Description">
 
-<span class="Description-entry">**Bio7**</span> [Bio7](http://bio7.org/) is an integrated development environment for [↓ecological](#index-Bio7 "wikilink") modeling with a main focus on individual based modeling and spatially explicit models. Bio7 features: Statistical analysis (using R); Spatial statistics; Fast communication between [↓R](#index-R-\(GNU-S\) "wikilink") and Java; BeanShell and Groovy support; Sensitivity analysis with an embedded flowchart editor and creation of 3D OpenGL (Jogl) models (*see also* RImageJ in [ImageJ Interoperability↓](#sec:ImageJ-Interoperability "wikilink")).
+<span class="Description-entry">**Bio7**</span> [Bio7](http://bio7.org/) is an integrated development environment for [↓ecological](#index-Bio7 "wikilink") modeling with a main focus on individual based modeling and spatially explicit models. Bio7 features: Statistical analysis (using R); Spatial statistics; Fast communication between [↓R](#index-R-(GNU-S) "wikilink") and Java; BeanShell and Groovy support; Sensitivity analysis with an embedded flowchart editor and creation of 3D OpenGL (Jogl) models (*see also* RImageJ in [ImageJ Interoperability↓](#sec:ImageJ-Interoperability "wikilink")).
 
 </div>
-
 <div class="Description">
 
 <span class="Description-entry">BoneJ</span> [BoneJ](http://bonej.org/) [↓is](#index-BoneJ "wikilink") a collection of tools for trabecular geometry and whole bone shape analysis.
 
 </div>
-
 <div class="Description">
 
 <span class="Description-entry">**<span class="formula"><span class="unknown">\\micro</span></span>Manager**</span> [Micro-Manager](http://www.micro-manager.org/) is a software package for control of automated microscopes. It lets you execute common microscope image acquisition strategies such as time-lapses, multi-channel imaging, z-stacks, and combinations thereof. [↓](#index-Micro_Manager "wikilink")<span class="formula"><span class="unknown">\\micro</span></span>Manager works with microscopes from all four major manufacturers, most scientific-grade cameras and many peripherals used in microscope imaging.
 
 </div>
-
 <div class="Description">
 
 <span class="Description-entry">MRI--CIA***'</span> ***'[MRI Cell Image Analyzer](http://www.mri.cnrs.fr/index.php?m=38), developed by the Montpellier RIO Imaging facility (CNRS), is a rapid image analysis application development framework, adding visual scripting interface to ImageJ’s capabilities. It can create batch applications as well as interactive applications. The applications include the topics “DNA combing”, “quantification of stained proteins in cells”, “comparison of intensity ratios between nuclei and cytoplasm” and “counting nuclei stained in different channels”.
 
 </div>
-
 <div class="Description">
 
 <span class="Description-entry">**ObjectJ**</span> [ObjectJ](http://simon.bio.uva.nl/objectj/index.html), the successor of [object-image](http://simon.bio.uva.nl/Object-Image/object-image.html), supports graphical vector objects that non-destructively mark images on a transparent layer. Vector objects can be placed manually or by macro commands. Composite objects can encapsulate different color-coded marker structures in order to bundle features that belong together. ObjectJ provides back-and-forth navigation between results and images. The results table supports statistics, sorting, color coding, qualifying and macro access.
 
 </div>
-
 <div class="Description">
 
 <span class="Description-entry">**SalsaJ**</span> [SalsaJ](http://www.euhou.net/index.php?option=com_content&task=view&id=7&Itemid=9) is a student-friendly software developed specifically for the [EU-HOU project](http://www.euhou.net/). It is dedicated to image handling and analysis of astronomical images in the classroom. [↓SalsaJ](#index-SalsaJ "wikilink") has been translated into several languages.
 
 </div>
-
 <div class="Description">
 
 <span class="Description-entry">**[TrakEM]( )2**</span> [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html) is a program for morphological [↓data](#index-Data-mining "wikilink") mining, three-dimensional [↓modeling](#index-Modeling "wikilink") and image stitching, registration, editing and annotation <span class="bibcites">[<span class="bib-index">7</span>]([#biblio-57 )\]</span>. [↓](#index-TrakEM2 "wikilink")[↓TrakEM](#index-Fiji "wikilink")2 is [distributed with Fiji](https://fiji.sc/wiki/index.php/TrakEM2) and [capable of](http://www.ini.uzh.ch/~acardona/trakem2_manual.html):
 
 <div class="vspace" style="height: -8pt;">
-
+</div>
 </div>
 
-</div>
+-   <div class="Description">
 
-  - 
-    
-    <div class="Description">
-    
     <span class="Description-entry">**3D modeling**</span> Objects in 3D, defined by sequences of contours, or profiles, from which a skin, or mesh, can be constructed, and visualized in 3D.
-    
+
     </div>
-    
     <div class="Description">
-    
+
     <span class="Description-entry">**Relational modeling**</span> The extraction of the map that describes links between objects. For example, which neuron contacts which other neurons through how many and which synapses.
-    
+
     </div>
 
 <div class="See">
@@ -150,43 +141,36 @@ Several packages exist that allow ImageJ to [↓interact](#index-Interoperabilit
 <span class="Description-entry">Bitplane Imaris</span> [ImarisXT](http://www.bitplane.com/go/products/imarisxt) can load and execute ImageJ plugins. [↓](#index-Imaris "wikilink")[bpImarisAdapter](http://www.bitplane.com/go/products/imarisxt/xtensions/imagej) (Windows only and requiring valid licenses for Imaris and ImarisXT) allows the exchange of images between Imaris and ImageJ.
 
 </div>
-
 <div class="Description">
 
 <span class="Description-entry">CellProfiler</span> [↓](#index-CellProfiler "wikilink")[CellProfiler](http://www.cellprofiler.org/) <span class="bibcites">[<span class="bib-index">11</span>]([#biblio-61 )\]</span> features [RunImageJ](http://cellprofiler.org/CPmanual/RunImageJ.html), a module that allows ImageJ plugins to be run in a CellProfiler pipeline.
 
 </div>
-
 <div class="Description">
 
 <span class="Description-entry">Icy</span> [Icy](http://www.bioimageanalysis.org/icy/), an open source community software for [↓bio](#index-Icy "wikilink")-imaging, executes ImageJ plugins with almost 100% plugin compatibility.
 
 </div>
-
 <div class="Description">
 
 <span class="Description-entry">Knime</span> [↓](#index-Knime "wikilink") [Knime](http://knime.org/) ([↓Konstanz](#nom-knime "wikilink") Information Miner) contains several image processing nodes ([↓](#nom-knip "wikilink")[KNIP](http://tech.knime.org/community/image-processing)[↓](#index-KNIP "wikilink")) that are capable of executing ImageJ plugins and macros.
 
 </div>
-
 <div class="Description">
 
 <span class="Description-entry">Open Microscopy Environment</span> [↓All](#nom-ome "wikilink") [Open Microscopy Environment](http://www.openmicroscopy.org/) projects such as [↓](#index-Bio-Formats "wikilink")[Bio-Formats](http://www.openmicroscopy.org/site/products/bio-formats), [VisBio](http://www.openmicroscopy.org/site/products/visbio) and [OMERO](http://www.openmicroscopy.org/site/products/omero) integrate well with ImageJ.
 
 </div>
-
 <div class="Description">
 
-<span class="Description-entry">RImageJ --- R bindings for ImageJ</span> Bindings between ImageJ and [↓](#index-R-\(GNU-S\) "wikilink")[R (GNU S)](http://www.r-project.org/) — The free software environment for statistical computing and graphics. The documentation for RImageJ is available at http://cran.r-project.org/web/packages/RImageJ/RImageJ.pdf (*see also* Bio7 in [Software Packages Built on Top of ImageJ↑](#sub:Other-Software-Packages "wikilink")).
+<span class="Description-entry">RImageJ --- R bindings for ImageJ</span> Bindings between ImageJ and [↓](#index-R-(GNU-S) "wikilink")[R (GNU S)](http://www.r-project.org/) — The free software environment for statistical computing and graphics. The documentation for RImageJ is available at http://cran.r-project.org/web/packages/RImageJ/RImageJ.pdf (*see also* Bio7 in [Software Packages Built on Top of ImageJ↑](#sub:Other-Software-Packages "wikilink")).
 
 </div>
-
 <div class="Description">
 
 <span class="Description-entry">MIJ --- Matlab--ImageJ bi-directional communication</span> A Java package for bi-directional data exchange between [↓Matlab](#index-MATLAB "wikilink") and ImageJ, allowing to exchange images between the two imaging software. [↓MIJ](#index-MIJ "wikilink") also allows MATLAB to access all built-in functions of ImageJ as well as third-party ImageJ plugins. The developers provide more information on the [MIJ](http://bigwww.epfl.ch/sage/soft/mij/) and [Matlab File Exchange](http://www.mathworks.com/matlabcentral/fileexchange/32344-hardware-accelerated-3d-viewer-for-matlab) websites. [Fiji↑](#sub:Fiji-intro "wikilink") features <span class="code">[Miji.m](https://fiji.sc/wiki/index.php/Miji)</span>, which makes even more convenient to use the libraries and functions provided by Fiji’s components from within Matlab.
 
 </div>
-
 <div class="See">
 
 [ImageJ related links](http://imagej.nih.gov/ij/links.html), list of [related imaging software](http://developer.imagej.net/category/web-links/related-imaging-software) on the [ImageJ2↓](#sub:ImageJ2intro "wikilink") website
@@ -197,15 +181,16 @@ Several packages exist that allow ImageJ to [↓interact](#index-Interoperabilit
 
 [ImageJDev](http://imagejdev.org/) is a [federally funded](http://imagejdev.org/funding), [multi-institution](http://imagejdev.org/collaborators) project dedicated to the development of the next-generation version of ImageJ: “[↓ImageJ](#index-ImageJ2 "wikilink")2”. [↓](#index-ImageJ2 "wikilink")[↓ImageJ](#index-ImageDev "wikilink")2 is a complete rewrite of ImageJ, that includes the current, stable version ImageJ (“ImageJ1”) with a compatibility layer so that old-style plugins and macros can run the same as they currently do in ImageJ1. Below is a [summary](http://imagejdev.org/aims) of the [ImageJDev](http://imagejdev.org/) project aims:
 
-  - To create the next generation version of ImageJ and improve its core architecture based on the needs of the community.
-  - To ensure ImageJ remains useful and relevant to the broadest possible community, maintaining backwards compatibility with ImageJ1 as close to 100% as possible.
-  - Expand functionality by interfacing ImageJ with existing open-source programs.
-  - To lead ImageJ development with a clear vision, avoiding duplication of efforts
-  - To provide a central online resource for ImageJ: program downloads, a plugin repository, developer resources and more.
+-   To create the next generation version of ImageJ and improve its core architecture based on the needs of the community.
+-   To ensure ImageJ remains useful and relevant to the broadest possible community, maintaining backwards compatibility with ImageJ1 as close to 100% as possible.
+-   Expand functionality by interfacing ImageJ with existing open-source programs.
+-   To lead ImageJ development with a clear vision, avoiding duplication of efforts
+-   To provide a central online resource for ImageJ: program downloads, a plugin repository, developer resources and more.
 
 Be sure to follow the ImageJ2 [project news](http://imagejdev.org/recent_changes) and the [ImageDev blog](http://imagejdev.org/blog) for updates on this exciting project.
 
-## Getting Help
+Getting Help
+------------
 
 ### Help on Image Analysis
 
@@ -213,34 +198,35 @@ Be sure to follow the ImageJ2 [project news](http://imagejdev.org/recent_changes
 
 #### Ethics in Scientific Image Processing
 
-  - [Online learning Tool for Research Integrity and Image Processing](http://www.ori.dhhs.gov/education/products/RIandImages/default.html)  
+-   [Online learning Tool for Research Integrity and Image Processing](http://www.ori.dhhs.gov/education/products/RIandImages/default.html)  
     This website, created by the [Office of Research Integrity](http://ori.dhhs.gov/), explains what is appropriate in image processing in science and what is not.
-  - [Digital Imaging: Ethics (at the Cellular Imaging Facily Core, SEHSC)](http://swehsc.pharmacy.arizona.edu/exppath/micro/digimage_ethics.php)  
+-   [Digital Imaging: Ethics (at the Cellular Imaging Facily Core, SEHSC)](http://swehsc.pharmacy.arizona.edu/exppath/micro/digimage_ethics.php)  
     This website, compiled by Douglas Cromey at the University of Alabama -- Birmingham, discusses thoroughly the topic of digital imaging ethics. It is recommended for all scientists. The website contains links to several external resources, including:
     <div class="vspace" style="height: -8pt;">
     </div>
+
     1.  [What's in a picture? The temptation of image manipulation](http://www.jcb.org/cgi/reprint/166/1/11) (2004) M Rossner and K M Yamada, J Cell Biology 166(1):11--15, <doi:10.1083/jcb.200406019>
     2.  [Not picture-perfect](http://www.nature.com/nature/journal/v439/n7079/full/439891b.html) (2006), Nature 439, 891--892, <doi:10.1038/439891b>.
 
 #### Scientific Image Processing
 
-  - [What you need to know about scientific image processing](https://fiji.sc/wiki/index.php/IP_Principles)  
+-   [What you need to know about scientific image processing](https://fiji.sc/wiki/index.php/IP_Principles)  
 
 Simple and clear, this [Fiji↑](#sub:Fiji-intro "wikilink") webpage explains basic aspects of scientific image processing.
 
-  - [imagingbook.com](http://www.imagingbook.com)  
+-   [imagingbook.com](http://www.imagingbook.com)  
 
 Web site of *Digital Image Processing: An Algorithmic Introduction using Java* by Wilhelm Burger and Mark Burge <span class="bibcites">[<span class="bib-index">114</span>]([#biblio-164 )\]</span>. This technical book provides a modern, self-contained, introduction to digital image processing techniques. Numerous complete Java implementations are provided, all of which work within ImageJ.
 
-  - [Hypermedia Image Processing Reference (HIPR2)](http://homepages.inf.ed.ac.uk/rbf/HIPR2/)  
+-   [Hypermedia Image Processing Reference (HIPR2)](http://homepages.inf.ed.ac.uk/rbf/HIPR2/)  
 
 Developed at the Department of Artificial Intelligence in the University of Edinburgh, provides on-line reference and tutorial information on a wide range of image processing operations.
 
-  - [IFN wikipage](https://ifn.mpi-cbg.de/wiki/ifn/index.php/Imaging_Facility_Network)  
+-   [IFN wikipage](https://ifn.mpi-cbg.de/wiki/ifn/index.php/Imaging_Facility_Network)  
 
 The Imaging Facility Network (IFN) in Biopolis Dresden provides access to advanced microscopy systems and image processing. The website hosts high quality [teaching material](https://ifn.mpi-cbg.de/wiki/ifn/index.php/Teaching_Material) and useful links to external resources.
 
-  - [stereology.info](http://www.stereology.info/)  
+-   [stereology.info](http://www.stereology.info/)  
 
 Stereology Information for the Biological Sciences, designed to introduce both basic and advanced concepts in the field of stereology.
 
@@ -284,10 +270,10 @@ If you are having problems with ImageJ, you should inquiry about them in the app
 
 1.  Read the documentation files (described earlier in this section) before posting. Because there will always be a natural lag between the implementation of key features and their documentation it may be wise to check briefly the ImageJ news website (<span class="sans"><span class="menuitem"><span class="sans">Help ▷ [ImageJ News…↓](#sub:ImageJ-News... "wikilink")</span></span></span>).
 2.  Look up the mailing list archives (<span class="sans"><span class="menuitem"><span class="sans">Help ▷ [<span class="menuitem">Mailing List…</span>↓](#sub:List-Archives... "wikilink")</span></span></span>). Most of your questions may have already been answered.
-3.  If you think you are facing a [↓bug](#index-Bug-\(reporting\) "wikilink") try to upgrade to the latest version of ImageJ (<span class="sans"><span class="menuitem"><span class="sans">Help ▷ [Update ImageJ…↓](#sub:Update-ImageJ... "wikilink")</span></span></span>). You should also check if you are running the latest version of the Java Virtual Machine for your operating system. Detailed instructions on how to submit a bug report are found at http://imagej.nih.gov/ij/docs/faqs.html#bug.
+3.  If you think you are facing a [↓bug](#index-Bug-(reporting) "wikilink") try to upgrade to the latest version of ImageJ (<span class="sans"><span class="menuitem"><span class="sans">Help ▷ [Update ImageJ…↓](#sub:Update-ImageJ... "wikilink")</span></span></span>). You should also check if you are running the latest version of the Java Virtual Machine for your operating system. Detailed instructions on how to submit a bug report are found at http://imagej.nih.gov/ij/docs/faqs.html#bug.
 4.  Remember that in most cases you can find answers within your own ImageJ installation without even connecting to the internet since the heuristics for finding commands or writing macros have been significantly improved in later versions (*see* [Finding Commands↓](#sec:Finding-Commands "wikilink") and [Extending ImageJ↓](#sec:Extending-ImageJ "wikilink")).
 5.  As with any other mailing list, you should always follow basic [netiquette](http://en.wikipedia.org/wiki/Netiquette), namely:
-    1.  Use descriptive subject lines — *Re: Problem with Image\>Set Scale command* is much more effective than a general *Re: Problem.*
+    1.  Use descriptive subject lines — *Re: Problem with Image&gt;Set Scale command* is much more effective than a general *Re: Problem.*
     2.  Stay on topic — Do not post off-topic messages, unrelated to the message thread.
     3.  Be careful when sending attachments — Refrain from attaching large files. Use, e.g., a [file hosting service](http://en.wikipedia.org/wiki/File_hosting_service#Comparison_of_notable_file_hosting_services) instead.
     4.  Edit replies — You should include only the minimum content that is necessary to provide a logical flow from the question to the answer, i.e., quote only as much as absolutely necessary and relevant.

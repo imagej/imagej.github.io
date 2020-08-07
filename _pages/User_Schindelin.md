@@ -11,11 +11,13 @@ description: test description
 
 ... was involved in the [Fiji](Fiji ) and [ImageJ2](ImageJ2 ) projects helping with programming, algorithms, educating scientists about the fine points of scientific image analysis, planning experiments, and generally cheering up people.
 
-# A short story about Fiji
+A short story about Fiji
+========================
 
 This story is not about {% include wikipedia title='Fiji' text='the island called \'\'Fiji\'\''%}. This story is how [Fiji Is Just ImageJ](https://fiji.sc) became born.
 
-## The beginning
+The beginning
+-------------
 
 Back when I met [Albert Cardona](http://albert.rierol.net) at the [first ImageJ conference](Conference_2006 ), it became pretty apparent pretty quickly that not only would we become good friends, but also that we had a lot of mutual respect for the work we had done so far. His biggest accomplishment was certainly [TrakEM2](TrakEM2 ), but he had also worked on the macro interpreter (including a so-called [Command Line Interface](Macro_Interpreter ), which is a two-paned window for interactive macro evaluation) and had already turned to [Jython](Jython_Scripting ) as a more powerful way to script ImageJ. At that time, I had not worked all that many years with ImageJ, but I already was maintainer of [ImageJA](ImageJA ).
 
@@ -23,7 +25,7 @@ Over the years, we had more and more contact, meeting briefly in [Würzburg](htt
 
 After an exciting hackathon, you almost always have to take a few breaths for a couple of weeks. In other words, you are no longer as productive, and if you are a workaholic like me, you fall into a depression.
 
-It helped much to stay in contact and chat frequently. I did that a lot, especially with Albert, who kept improving TrakEM2. He also asked me constantly: "Johannes, have you tried it yet? You'll like it, it has a lot of features\!"
+It helped much to stay in contact and chat frequently. I did that a lot, especially with Albert, who kept improving TrakEM2. He also asked me constantly: "Johannes, have you tried it yet? You'll like it, it has a lot of features!"
 
 But I hadn't.
 
@@ -31,7 +33,7 @@ The problem for me was not so much that I did not have time. I had a lot of time
 
 The problem was that TrakEM2 seemed too tedious to set up. It required a database, and not just any database. It had to be [PostgreSQL](http://www.postgresql.org/), back then probably the only popular database system I was <u>not</u> familiar with. TrakEM2 also required a bunch of *.jar* files which you had to install before you could start.
 
-Eventually, Albert told me: "Johannes, we need an installer for TrakEM2\!"
+Eventually, Albert told me: "Johannes, we need an installer for TrakEM2!"
 
 We kept chatting about that over a couple of weeks, if not months. At some stage, Albert had done away with the requirement of the PostgreSQL database. It was still the most efficient way to handle your data if you needed to access them from multiple computers, but now you could also store the intermediate data in plain files.
 
@@ -45,7 +47,8 @@ After a couple of days I showed the result to Albert. So far, there was no insta
 
 To this date, there is no installer, but hey, maybe we get one in another 3 years...
 
-## The surprise
+The surprise
+------------
 
 When I showed the result to Albert, he seemed to be happy. At least he did not run away in disgust. But I did not hear a lot about Fiji from his side, except that he needed a way to contribute.
 
@@ -65,8 +68,9 @@ After some weeks I was reasonably comfortable with Fiji and thought about wrappi
 
 Little did I know just how many people Albert told about this project. I thought it was really focused on TrakEM2, but as Albert's motto is (or at least back then, was) *The sky is the limit*, he had told a few people at the Max-Planck Institute of Molecular Cell Biology and Genetics in Dresden. Sorry for the lengthy title, earlier I always referred to it as "the Max-Planck in Dresden", but there are three. The MPI-CBG just happens to be the biggest one in Dresden. And probably also one of the most important Max-Planck Institutes on this planet. But sorry, I digress.
 
-At one point Albert told me. Apparently the good people in Dresden were not only interested in our little software project, but were actually enthusiastic. Enthusiastic enough that they provided us with a nice, beefy [server](Pacific ), and offered to organize a [hackathon](hackathon ) to kick-start Fiji as a much bigger project\!
+At one point Albert told me. Apparently the good people in Dresden were not only interested in our little software project, but were actually enthusiastic. Enthusiastic enough that they provided us with a nice, beefy [server](Pacific ), and offered to organize a [hackathon](hackathon ) to kick-start Fiji as a much bigger project!
 
-## Fiji won't quit
+Fiji won't quit
+---------------
 
 TBD

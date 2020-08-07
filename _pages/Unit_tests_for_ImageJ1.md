@@ -9,9 +9,7 @@ description: test description
 
 {% include project content='ImageJ1' %}There are a [substantial number of unit tests](2011-10-07_-_Unit_tests_for_ImageJ_1.45 ) to exercise [ImageJ 1.x](ImageJ_1.x ) functionality. You can find them in the {% include github org='imagej ' repo='ij1-tests ' label='ij1-tests repository ' %}:
 
-``` bash
-git clone git://github.com/imagej/ij1-tests
-```
+    git clone git://github.com/imagej/ij1-tests
 
 There is a [Travis](Travis ) job [here](https://travis-ci.com/imagej/ij1-tests) that automatically runs the tests with each new version of ImageJ 1.x.
 
@@ -19,10 +17,8 @@ There is a [Travis](Travis ) job [here](https://travis-ci.com/imagej/ij1-tests) 
 
 If you wish to run the unit tests manually, you can do so from the command line:
 
-``` bash
-cd ij1-tests
-mvn clean test
-```
+    cd ij1-tests
+    mvn clean test
 
 Or from Eclipse:
 
@@ -33,8 +29,6 @@ Or from Eclipse:
 
 You can change which version of ImageJ1 is tested by overriding the `imagej1.version` property:
 
-``` bash
-mvn -Dimagej1.version=1.48a clean test
-```
+    mvn -Dimagej1.version=1.48a clean test
 
 Or whichever version you wish to use (of [those listed here](http://maven.imagej.net/content/groups/public/net/imagej/ij/)). The unit tests were created circa 1.44, and do not compile correctly with earlier versions of ImageJ.

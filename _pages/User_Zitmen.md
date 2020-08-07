@@ -9,4 +9,4 @@ description: test description
 
 {% include user-box name='Martin Ovesný ' github='zitmen ' %}
 
-  - [ThunderSTORM](https://github.com/zitmen/thunderstorm)
+-   [ThunderSTORM](https://github.com/zitmen/thunderstorm)

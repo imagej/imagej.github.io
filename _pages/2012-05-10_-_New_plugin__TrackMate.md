@@ -15,10 +15,10 @@ Also for developers, TrackMate was developed having in mind extensibility and fl
 
 A [step-by-step tutorial](Getting_started_with_TrackMate ) can get you started and show what you can do with the plugin. The [plugin page](TrackMate ) also contains links to the rest of the documentation.
 
-Hope you like it\!
+Hope you like it!
 
 *Jean-Yves, Nick, Johannes, Ricardo & Spencer*
 
-![TrackMate\_Split\_Merge\_Gapclosing.gif](/images/pages/TrackMate Split Merge Gapclosing.gif "TrackMate_Split_Merge_Gapclosing.gif")
+<figure><img src="/images/pages/TrackMate_Split_Merge_Gapclosing.gif" title="TrackMate_Split_Merge_Gapclosing.gif" width="300" alt="TrackMate_Split_Merge_Gapclosing.gif" /><figcaption aria-hidden="true">TrackMate_Split_Merge_Gapclosing.gif</figcaption></figure>
 
 

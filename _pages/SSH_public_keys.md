@@ -19,7 +19,7 @@ You can password-protect your private key, in which case you have to use the pro
 
 Now you should have a file *id\_dsa.fiji.pub* (the public key) in addition to *id\_dsa.fiji* (the private key).
 
-Add the public key (the single line contained in the file *id\_dsa.fiji.pub*) to the file *$HOME/.ssh/authorized\_keys* on the **remote** computer, i.e. the computer you want to connect to without a password. **Note\!** Make sure that the *.ssh/* directory as well as all contained files are owned by the correct user, and that *.ssh/* is accessible to the same user.
+Add the public key (the single line contained in the file *id\_dsa.fiji.pub*) to the file *$HOME/.ssh/authorized\_keys* on the **remote** computer, i.e. the computer you want to connect to without a password. **Note!** Make sure that the *.ssh/* directory as well as all contained files are owned by the correct user, and that *.ssh/* is accessible to the same user.
 
 For convenience, you should now add a section like this to the file *$HOME/.ssh/config* on the **local** computer, i.e. the computer with the private key:
 

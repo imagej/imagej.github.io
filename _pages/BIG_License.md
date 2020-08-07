@@ -14,11 +14,9 @@ These components are licensed under proprietary terms, incompatible with the [GP
 
 However, the [Fiji](Fiji ) project has obtained permission to redistribute them:
 
-> 
-> 
 >     Date: Mon, 26 Jul 2010 10:58:20 +0200
 >     From: Michael Unser <michael.unser@epfl.ch>
->     
+>
 >     [...] we are happy that Fiji distributes our software: you have
 >     my formal authorization for this (in my quality of lab chief).
 >     "You'll be free to use this software for research purposes,  but you
@@ -27,12 +25,13 @@ However, the [Fiji](Fiji ) project has obtained permission to redistribute them:
 >     listed at http://bigwww.epfl.ch/algorithms.html since you have our
 >     consent.
 
-## List of BIG components
+List of BIG components
+----------------------
 
 The following components are expressly or implicitly licensed this way:
 
 |                                                                   |                                                            |
-| ----------------------------------------------------------------- | ---------------------------------------------------------- |
+|-------------------------------------------------------------------|------------------------------------------------------------|
 | **Project**                                                       | **License text**                                           |
 | **[Differentials](Differentials )**                     | http://bigwww.epfl.ch/thevenaz/differentials/#LegalBlurb |
 | **[Extended Depth of Field](Extended_Depth_of_Field )** | http://bigwww.epfl.ch/demo/edf/                          |

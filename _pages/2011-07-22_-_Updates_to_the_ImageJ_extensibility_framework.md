@@ -21,12 +21,12 @@ description: test description
 What's next:
 
 1.  Dynamic plugin implementations:
-      - We are going to update various core plugins which need the dynamic plugin mechanism, to give it a test drive.
+    -   We are going to update various core plugins which need the dynamic plugin mechanism, to give it a test drive.
 2.  Dynamic menus:
-      - Update `ShadowMenu` to listen to `ModulesChangedEvent` and `ModuleUpdatedEvent` and change its internal structure accordingly. This will generally entail surgical changes to its structure rather than a full menu rebuild.
-      - Update the UI-toolkit-specific menu builders to keep the resultant menu structures (e.g., `JMenuBar`) linked to the `ShadowMenu`. When the `ShadowMenu` publishes events indicating menu items have changed, the actual UI menu needs to automatically update to reflect that as well.
-      - Maybe: update `ModuleService` to maintain a `ShadowMenu` data structure, which can be obtained for whatever purpose.
+    -   Update `ShadowMenu` to listen to `ModulesChangedEvent` and `ModuleUpdatedEvent` and change its internal structure accordingly. This will generally entail surgical changes to its structure rather than a full menu rebuild.
+    -   Update the UI-toolkit-specific menu builders to keep the resultant menu structures (e.g., `JMenuBar`) linked to the `ShadowMenu`. When the `ShadowMenu` publishes events indicating menu items have changed, the actual UI menu needs to automatically update to reflect that as well.
+    -   Maybe: update `ModuleService` to maintain a `ShadowMenu` data structure, which can be obtained for whatever purpose.
 3.  More module invocation routines:
-      - It would be nice to have run methods of `ModuleService` and `PluginService` that accept parameters programmatically, either as a list or as a map. Grant's `InvokePluginTest` shows what we are going for.
+    -   It would be nice to have run methods of `ModuleService` and `PluginService` that accept parameters programmatically, either as a list or as a map. Grant's `InvokePluginTest` shows what we are going for.
 
  

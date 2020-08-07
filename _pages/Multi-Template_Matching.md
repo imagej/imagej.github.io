@@ -23,27 +23,32 @@ description: test description
 
 <img src="/images/pages/Multi-Template-Matching-MontageGUI.png" width="800"/>
 
-# Installation
+Installation
+============
 
 Activate the **IJ-OpenCV** update site and the **Multi-Template-Matching update sites**.
 
-# Documentation
+Documentation
+=============
 
-See the [wiki section](https://github.com/LauLauThom/MultiTemplateMatching/wiki) of the github repository for the documentation including video tutorials \!
+See the [wiki section](https://github.com/LauLauThom/MultiTemplateMatching/wiki) of the github repository for the documentation including video tutorials !
 
-# Related work
+Related work
+============
 
 We also distribute a python package for Multi-Template-Matching available on [PyPI](https://pypi.org/project/Multi-Template-Matching/).
 
-# Citations
+Citations
+=========
 
 If you use this plugin for your research please cite:  
 Thomas, L.S.V., Gehrig, J.  
 *Multi-template matching: a versatile tool for object-localization in microscopy images.*  
 BMC Bioinformatics 21, 44 (2020). https://doi.org/10.1186/s12859-020-3363-7
 
-# Video Tutorials
+Video Tutorials
+===============
 
-Check our serie of [video tutorials](https://www.youtube.com/watch?v=KlzIqSG5XBU&list=PLHZOgc1s26MJ8QjYau7NcG5k0zh9SjHpo)\!
+Check our serie of [video tutorials](https://www.youtube.com/watch?v=KlzIqSG5XBU&list=PLHZOgc1s26MJ8QjYau7NcG5k0zh9SjHpo)!
 
     

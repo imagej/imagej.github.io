@@ -13,7 +13,8 @@ However, it acquired [macro](macro ) capabilities, a [batch mode](batch_mode ) f
 
 Naturally, users want to execute such [macros](macros ) or [scripts](scripts ) in environments such as clusters where there is no graphical user interface available.
 
-# The problem
+The problem
+===========
 
 Java *does* support a headless mode via the `java.awt.headless` property; setting this property to `true` enables it.
 
@@ -23,9 +24,11 @@ Since ImageJ 1.x was devised as a desktop application, everything -- including m
 
 On MacOSX, there is no problem: Aqua provides GUI-independent text rendering (mapping to the actual display using anti-aliasing). There, running in headless mode allows instantiating GUI elements such as the menu bar.
 
-# Possible solutions
+Possible solutions
+==================
 
-## The `--headless` mode
+The `--headless` mode
+---------------------
 
 
 {% capture text%}
@@ -66,7 +69,8 @@ the `getArgument()` is used to grab the parameter string itself, and it is then 
 
 {% include warning-box content='Please note that you will not be able to use [script parameters](script_parameters ) with `-macro`. Follow instructions in [Scripting Headless](Scripting_Headless ) instead.' %}
 
-## Xvfb
+Xvfb
+----
 
 Another method is to have a virtual desktop, e.g. {% include wikipedia title='Xvfb' text='Xvfb'%}. This will allow ImageJ to start with a virtualised graphical desktop.
 
@@ -80,44 +84,39 @@ Here are a couple of simple examples.
 
 Passing direct arguments:
 
-``` bash
-$ cat hello.js
-importClass(Packages.ij.IJ);
-IJ.log("hello " + arguments[0]);
-$ xvfb-run -a $IMAGEJ_DIR/ImageJ-linux64 hello.js Emerson
-hello Emerson
-```
+    $ cat hello.js
+    importClass(Packages.ij.IJ);
+    IJ.log("hello " + arguments[0]);
+    $ xvfb-run -a $IMAGEJ_DIR/ImageJ-linux64 hello.js Emerson
+    hello Emerson
 
 With [SciJava script parameters](Script_Parameters ):
 
-``` bash
-$ cat hello-with-params.js
-// @String name
-importClass(Packages.ij.IJ);
-IJ.log("hello " + name);
-$ xvfb-run -a $IMAGEJ_DIR/ImageJ-linux64 --ij2 --headless --run hello-with-params.js 'name="Emerson"'
-hello Emerson
-```
+    $ cat hello-with-params.js
+    // @String name
+    importClass(Packages.ij.IJ);
+    IJ.log("hello " + name);
+    $ xvfb-run -a $IMAGEJ_DIR/ImageJ-linux64 --ij2 --headless --run hello-with-params.js 'name="Emerson"'
+    hello Emerson
 
 A more complex shell script that wraps a macro for use with Xvfb (thanks to Nestor Milyaev):
 
-``` bash
-export DISPLAY=:1
-Xvfb $DISPLAY -auth /dev/null &
-(
-# the '(' starts a new sub shell. In this sub shell we start the worker processes:
+    export DISPLAY=:1
+    Xvfb $DISPLAY -auth /dev/null &
+    (
+    # the '(' starts a new sub shell. In this sub shell we start the worker processes:
 
-script=$scriptDir"lsmrotate2nrrd.ijm \"dir="$1"&angle-x=$2&angle-y=
-$3&angle-z=$4&reverse=$5\" -batch"
-$imagejBin -macro $script # running the actual ijm script
+    script=$scriptDir"lsmrotate2nrrd.ijm \"dir="$1"&angle-x=$2&angle-y=
+    $3&angle-z=$4&reverse=$5\" -batch"
+    $imagejBin -macro $script # running the actual ijm script
 
-wait # waits until all 'program' processes are finished
-# this wait sees only the 'program' processes, not the Xvfb process
-)
-```
+    wait # waits until all 'program' processes are finished
+    # this wait sees only the 'program' processes, not the Xvfb process
+    )
 
 See also [this post on the ImageJ mailing list](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;5ace1ed0.1508).
 
-## Rewriting as scripts or plugins
+Rewriting as scripts or plugins
+-------------------------------
 
 The most robust method is to rewrite macros as scripts that do not require interaction with the GUI to begin with. Unfortunately, this is the most involved solution, too, since it usually takes some time to convert macros.

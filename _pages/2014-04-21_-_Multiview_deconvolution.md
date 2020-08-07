@@ -19,7 +19,7 @@ If you are interested in the paper's genesis under intense but constructive scru
 
 The [**documentation**](Multi-View_Deconvolution ) for the Fiji plugin contains description of parameters and a 'how to' for hacks that didn't yet make it into the plugins menu's. It complements other SPIM related Fiji plugins such as [**bead based registration**](SPIM_Bead_Registration ) & [**Multiview fusion**](Multi-View_Fusion ).
 
-Finally, a Figure from the paper showing that multi-view deconvolution matters\!
+Finally, a Figure from the paper showing that multi-view deconvolution matters!
 
 [700px](FIle_MV_deconv_examples.jpg )
 

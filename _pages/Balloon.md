@@ -11,12 +11,12 @@ description: test description
 
 ### Introduction
 
-A plugin\[1\] that allows the segmentation off cell wall boundaries from microscopy images and to extract cell architectures . It uses a physical “balloon inflation” algorithm for finding the cell boundaries from 8bits images. Features include:
+A plugin[1] that allows the segmentation off cell wall boundaries from microscopy images and to extract cell architectures . It uses a physical “balloon inflation” algorithm for finding the cell boundaries from 8bits images. Features include:
 
-  - Extraction of lists of individual cell shapes
-  - The determination of the cells being in contact each other
-  - All previous segmentation steps are automatic, but it is possible to make manual modifications at each step;
-  - Settings are saved in properties files for different types of images to be segmented
+-   Extraction of lists of individual cell shapes
+-   The determination of the cells being in contact each other
+-   All previous segmentation steps are automatic, but it is possible to make manual modifications at each step;
+-   Settings are saved in properties files for different types of images to be segmented
 
 <img src="/images/pages/Plugin screencapture.jpg" width="700"/>
 
@@ -36,11 +36,11 @@ A plugin\[1\] that allows the segmentation off cell wall boundaries from microsc
 
 2\. Find cell centres: the algorithm needs to be initiated with a seed placed inside each cell of interest. There are three options to carry out this step:
 
-a. select the cells manually with the mouse by pressing the edit button and choosing one of the options add / move / delete points.
+a\. select the cells manually with the mouse by pressing the edit button and choosing one of the options add / move / delete points.
 
-b. use the automatic sampling algorithm provided by the plugin. It uses the path between a of pair point to determine if they are contained within the same cell (in which case one of them is removed). This decision is based on the indicator h\*l. h is the peak of image intensity along the path and l is the distance between the points. Therefore, if the value entered is too small, more than one point will be allowed to be in the same cell. If the value is too large, some cells won’t be detected. Running the algorithm several time can improve the results and find cells that were not detected in the first instance
+b\. use the automatic sampling algorithm provided by the plugin. It uses the path between a of pair point to determine if they are contained within the same cell (in which case one of them is removed). This decision is based on the indicator h\*l. h is the peak of image intensity along the path and l is the distance between the points. Therefore, if the value entered is too small, more than one point will be allowed to be in the same cell. If the value is too large, some cells won’t be detected. Running the algorithm several time can improve the results and find cells that were not detected in the first instance
 
-c. import points from a file. The file is simply be a list of X Y values separated by a tabulation, one set of coordinate per line and saved with the .tab extension. You can download the text file of the cell center for fig. 2 here.
+c\. import points from a file. The file is simply be a list of X Y values separated by a tabulation, one set of coordinate per line and saved with the .tab extension. You can download the text file of the cell center for fig. 2 here.
 
 4\. Inflate the balloon: Inflation of the balloons is achieved by specifying a pressure inside balloons (equivalent to pixel intensity) and pressing the inflate button. This operation is interactive can be repeated until the balloon occupies the area of the cell. Inflation consist of a first step where pressure is added into the balloon and to triger expansion, and a fitting stage where pressure in the balloon is removed and forces are derived from the laplacian of the image.
 
@@ -54,10 +54,11 @@ The plugin is started with a set of predefined parameter values. e.g. initial nu
 
 The plugin is still work in progress. Things to be done includes use of threading, connection with a particle search algorithm to automate selection of seeds, improved interface etc... Any comments to improve the plugin are much welcome.
 
-## Publication
+Publication
+-----------
 
 <references />
 
   
 
-1.  {% include cite content='journal' author='Federici Fernán, Dupuy Lionel, Laplaze Laurent, Heisler Marcus, Haseloff Jim. ' title='Integrated genetic and computation methods for in planta cytometry ' journal='Nature Methods ' year='2012 ' volume='advance online publication ' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1940.html ' %}
+[1] {% include cite content='journal' author='Federici Fernán, Dupuy Lionel, Laplaze Laurent, Heisler Marcus, Haseloff Jim. ' title='Integrated genetic and computation methods for in planta cytometry ' journal='Nature Methods ' year='2012 ' volume='advance online publication ' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1940.html ' %}

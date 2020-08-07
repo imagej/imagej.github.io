@@ -17,51 +17,52 @@ description: test description
 {% endcapture %}
 {% include info-box name='Integral Image Filters ' software='Fiji ' author=author maintainer=maintainer source=' [GitHub](https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/integral) ' released='March 21<sup>st</sup>, 2011 ' latest-version='February 22<sup>nd</sup>, 2012 ' status='stable, active ' category='[Plugins](Category_Plugins ), [Filtering](Category_Filtering ) ' %}{% include youtube url='https://www.youtube.com/embed/p1mhZqj2VTY'%}
 
-Integral images have been introduced in by Crow (1984)\[1\] as a technique to improve texture rendering speed at multiple scales in perspective projections. The technique has since then been used for a number of applications. The most popular examples are fast normalized cross-correlation\[2\], the {% include wikipedia title='Viola%E2%80%93Jones object detection framework' text='Viola-Jones object detection framework'%}\[3\], and the {% include wikipedia title='SURF' text='Speeded Up Robust Feature (SURF)'%} transform\[4\]. In Fiji, we currently use Integral Images for a number of basic statistic block filters.
+Integral images have been introduced in by Crow (1984)[1] as a technique to improve texture rendering speed at multiple scales in perspective projections. The technique has since then been used for a number of applications. The most popular examples are fast normalized cross-correlation[2], the {% include wikipedia title='Viola%E2%80%93Jones object detection framework' text='Viola-Jones object detection framework'%}[3], and the {% include wikipedia title='SURF' text='Speeded Up Robust Feature (SURF)'%} transform[4]. In Fiji, we currently use Integral Images for a number of basic statistic block filters.
 
-## Basic Block Statistics with Integral Images (Summed-Area Tables)
+Basic Block Statistics with Integral Images (Summed-Area Tables)
+----------------------------------------------------------------
 
 ### Mean
 
-The mean $$\mu(X)$$ of a discrete set of random variables $$X=\{x_1,\dots,x_n\}$$ is defined as
+The mean $$*μ*(*X*)$$ of a discrete set of random variables $$*X* = {*x*<sub>1</sub>, …, *x*<sub>*n*</sub>}$$ is defined as
 
-$$\mu=\sum_{i=1}^np_ix_i$$
+$$$\\mu=\\sum\_{i=1}^np\_ix\_i$$$
 
-Let $$X$$ be the set of pixel values in a rectangular block with all pixel values having the same probability $$p_i=\frac{1}{n}$$, then
+Let $$*X*$$ be the set of pixel values in a rectangular block with all pixel values having the same probability $$$p\_i=\\frac{1}{n}$$$, then
 
-$$\mu=\frac{1}{n}\sum_{i=1}^nx_i$$
+$$$\\mu=\\frac{1}{n}\\sum\_{i=1}^nx\_i$$$
 
-The sums can be generated from an Integral Image over $$I(\vec{x})$$ . For a two-dimensional image, the table can be generated in a single loop with, on average, 3\~sums for calculation and 5\~sums for data access per pixel. Using that table, the mean of an arbitrary rectangular block of pixels can be generated in constant time with 1 product and 3 sums for calculation and 2 products and 6 sums for data access.
+The sums can be generated from an Integral Image over $$*I*(*x⃗*)$$ . For a two-dimensional image, the table can be generated in a single loop with, on average, 3\~sums for calculation and 5\~sums for data access per pixel. Using that table, the mean of an arbitrary rectangular block of pixels can be generated in constant time with 1 product and 3 sums for calculation and 2 products and 6 sums for data access.
 
 ### Variance
 
-The variance $$\text{Var}(X)$$ of a discrete set of random variables $$X=\{x_1,\dots,x_n\}$$ is defined as
+The variance $$Var(*X*)$$ of a discrete set of random variables $$*X* = {*x*<sub>1</sub>, …, *x*<sub>*n*</sub>}$$ is defined as
 
-$$\text{Var}(X) = \sum_{i=1}^np_i(x_i-\mu)^2 \quad\text{with}\quad \mu=\sum_{i=1}^np_ix_i$$
+$$$\\text{Var}(X) = \\sum\_{i=1}^np\_i(x\_i-\\mu)^2 \\quad\\text{with}\\quad \\mu=\\sum\_{i=1}^np\_ix\_i$$$
 
-Let $$X$$ be the set of pixel values in a rectangular block with all pixel values having the same probability $$p_i=\frac{1}{n}$$, then
+Let $$*X*$$ be the set of pixel values in a rectangular block with all pixel values having the same probability $$$p\_i=\\frac{1}{n}$$$, then
 
-$$\text{Var}(X) = \frac{1}{n}\sum_{i=1}^n(x_i-\mu)^2 \quad\text{and}\quad \mu=\frac{1}{n}\sum_{i=1}^nx_i$$
+$$$\\text{Var}(X) = \\frac{1}{n}\\sum\_{i=1}^n(x\_i-\\mu)^2 \\quad\\text{and}\\quad \\mu=\\frac{1}{n}\\sum\_{i=1}^nx\_i$$$
 
 which expands to
 
-$$\text{Var}(x) = \frac{1}{n}\sum_{i=1}^n\left(x_i^2-2x_i\mu+\mu^2\right)$$
+$$$\\text{Var}(x) = \\frac{1}{n}\\sum\_{i=1}^n\\left(x\_i^2-2x\_i\\mu+\\mu^2\\right)$$$
 
-$$= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \mu^2$$
+$$$= \\frac{1}{n}\\sum\_{i=1}^nx\_i^2 - \\frac{1}{n}\\sum\_{i=1}^n2x\_i\\mu + \\mu^2$$$
 
-$$= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2$$
+$$$= \\frac{1}{n}\\sum\_{i=1}^nx\_i^2 - \\frac{1}{n}\\sum\_{i=1}^n2x\_i\\mu + \\frac{1}{n^2}\\left(\\sum\_{i=1}^nx\_i\\right)^2$$$
 
-$$= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2\mu}{n}\sum_{i=1}^nx_i + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2$$
+$$$= \\frac{1}{n}\\sum\_{i=1}^nx\_i^2 - \\frac{2\\mu}{n}\\sum\_{i=1}^nx\_i + \\frac{1}{n^2}\\left(\\sum\_{i=1}^nx\_i\\right)^2$$$
 
-$$= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2}{n^2}\left(\sum_{i=1}^nx_i\right)^2 + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2$$
+$$$= \\frac{1}{n}\\sum\_{i=1}^nx\_i^2 - \\frac{2}{n^2}\\left(\\sum\_{i=1}^nx\_i\\right)^2 + \\frac{1}{n^2}\\left(\\sum\_{i=1}^nx\_i\\right)^2$$$
 
-$$= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2$$
+$$$= \\frac{1}{n}\\sum\_{i=1}^nx\_i^2 - \\frac{1}{n^2}\\left(\\sum\_{i=1}^nx\_i\\right)^2$$$
 
-$$= \frac{1}{n}\sum_{i=1}^nx_i^2 - \left(\frac{1}{n}\sum_{i=1}^nx_i\right)^2$$
+$$$= \\frac{1}{n}\\sum\_{i=1}^nx\_i^2 - \\left(\\frac{1}{n}\\sum\_{i=1}^nx\_i\\right)^2$$$
 
-$$= \frac{1}{n}\left(\sum_{i=1}^nx_i^2 - \frac{1}{n}\left(\sum_{i=1}^nx_i\right)^2\right)$$
+$$$= \\frac{1}{n}\\left(\\sum\_{i=1}^nx\_i^2 - \\frac{1}{n}\\left(\\sum\_{i=1}^nx\_i\\right)^2\\right)$$$
 
-Both sums can be generated from two Integral Images over $$I(\vec{x})$$ and $$I(\vec{x})^2$$ respectively. For a two-dimensional image, both tables can be generated in a single loop with, on average, 1 product and 6 sums for calculation and 5 sums for data access per pixel. Using those, the variance of an arbitrary rectangular block of pixels can be generated in constant time with 3 products and 9 sums for calculation and 2 products and 6 sums for data access.
+Both sums can be generated from two Integral Images over $$*I*(*x⃗*)$$ and $$*I*(*x⃗*)<sup>2</sup>$$ respectively. For a two-dimensional image, both tables can be generated in a single loop with, on average, 1 product and 6 sums for calculation and 5 sums for data access per pixel. Using those, the variance of an arbitrary rectangular block of pixels can be generated in constant time with 3 products and 9 sums for calculation and 2 products and 6 sums for data access.
 
 <div style="float: right">
 
@@ -71,59 +72,63 @@ Both sums can be generated from two Integral Images over $$I(\vec{x})$$ and $$I(
 
 ### Block Matching with Integral Images
 
-We may deal with a situation where the intensities in two overlapping image regions $$X$$ and $$Y$$ might vary in brightness and contrast. Then, a simple estimator like e.g. the *Mean Square Error* (MSE) cannot be used as a similarity measure because it is not invariant with respect to a linear transformation. Instead, an appropriate measure for linear dependency would serve the purpose. The *Pearson Product-Moment Correlation Coefficient* (PMCC) $$\rho_{X,Y}$$ is an appropriate measure for linear dependency
+We may deal with a situation where the intensities in two overlapping image regions $$*X*$$ and $$*Y*$$ might vary in brightness and contrast. Then, a simple estimator like e.g. the *Mean Square Error* (MSE) cannot be used as a similarity measure because it is not invariant with respect to a linear transformation. Instead, an appropriate measure for linear dependency would serve the purpose. The *Pearson Product-Moment Correlation Coefficient* (PMCC) $$*ρ*<sub>*X*, *Y*</sub>$$ is an appropriate measure for linear dependency
 
-$$\rho_{XY} = \frac{\sigma_{XY}}{\sigma_{X}\sigma_{Y}}$$
+$$$\\rho\_{XY} = \\frac{\\sigma\_{XY}}{\\sigma\_{X}\\sigma\_{Y}}$$$
 
-which, for $$X$$ and $$\)$$ being a finite sample with $$\(n$$\~elements each gives the *Correlation Coefficient* $$r_{XY}$$
+which, for $$*X*$$ and $$$$ being a finite sample with $$*n*$$\~elements each gives the *Correlation Coefficient* $$*r*<sub>*X**Y*</sub>$$
 
-$$r_{XY} = \frac{\sum_{i=1}^n(x_i-\mu_X)(y_i-\mu_Y)}{\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}}\quad\text{with}\quad\mu_X = \frac{1}{n}\sum_{i=1}^nx_i$$
+$$$r\_{XY} = \\frac{\\sum\_{i=1}^n(x\_i-\\mu\_X)(y\_i-\\mu\_Y)}{\\sqrt{\\sum\_{i=1}^n(x\_i-\\mu\_X)^2}\\sqrt{\\sum\_{i=1}^n(y\_i-\\mu\_Y)^2}}\\quad\\text{with}\\quad\\mu\_X = \\frac{1}{n}\\sum\_{i=1}^nx\_i$$$
 
 that can be transformed yielding a set of independent sums. For the numerator, that is
 
-$$\sum_{i=1}^n(x_i-\mu_X)(y_i-\mu_Y) = \sum_{i=1}^nx_iy_i-\sum_{i=1}^nx_i\mu_Y-\sum_{i=1}^ny_i\mu_X+\sum_{i=1}^n\mu_X\mu_Y$$
+$$$\\sum\_{i=1}^n(x\_i-\\mu\_X)(y\_i-\\mu\_Y) = \\sum\_{i=1}^nx\_iy\_i-\\sum\_{i=1}^nx\_i\\mu\_Y-\\sum\_{i=1}^ny\_i\\mu\_X+\\sum\_{i=1}^n\\mu\_X\\mu\_Y$$$
 
-$$= \sum_{i=1}^nx_iy_i-\mu_Y\sum_{i=1}^nx_i-\mu_X\sum_{i=1}^ny_i+n\mu_X\mu_Y$$
+$$$= \\sum\_{i=1}^nx\_iy\_i-\\mu\_Y\\sum\_{i=1}^nx\_i-\\mu\_X\\sum\_{i=1}^ny\_i+n\\mu\_X\\mu\_Y$$$
 
-$$= \sum_{i=1}^nx_iy_i-\frac{1}{n}\sum_{i=1}^ny_i\sum_{i=1}^nx_i$$
+$$$= \\sum\_{i=1}^nx\_iy\_i-\\frac{1}{n}\\sum\_{i=1}^ny\_i\\sum\_{i=1}^nx\_i$$$
 
-For the denominator, it is handy to multiply with $$\frac{n}{n}$$ first
+For the denominator, it is handy to multiply with $$$\\frac{n}{n}$$$ first
 
-$$r_{XY} = \frac{\sum_{i=1}^nx_iy_i-\frac{1}{n}\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}}$$
+$$$r\_{XY} = \\frac{\\sum\_{i=1}^nx\_iy\_i-\\frac{1}{n}\\sum\_{i=1}^ny\_i\\sum\_{i=1}^nx\_i}{\\sqrt{\\sum\_{i=1}^n(x\_i-\\mu\_X)^2}\\sqrt{\\sum\_{i=1}^n(y\_i-\\mu\_Y)^2}}$$$
 
-$$= \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{n\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}}$$
+$$$= \\frac{n\\sum\_{i=1}^nx\_iy\_i-\\sum\_{i=1}^ny\_i\\sum\_{i=1}^nx\_i}{n\\sqrt{\\sum\_{i=1}^n(x\_i-\\mu\_X)^2}\\sqrt{\\sum\_{i=1}^n(y\_i-\\mu\_Y)^2}}$$$
 
-$$= \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{\sqrt{n\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{n\sum_{i=1}^n(y_i-\mu_Y)^2}}$$
+$$$= \\frac{n\\sum\_{i=1}^nx\_iy\_i-\\sum\_{i=1}^ny\_i\\sum\_{i=1}^nx\_i}{\\sqrt{n\\sum\_{i=1}^n(x\_i-\\mu\_X)^2}\\sqrt{n\\sum\_{i=1}^n(y\_i-\\mu\_Y)^2}}$$$
 
 because
 
-$$n\sum_{i=1}^n(x_i-\mu_X)^2 = n\sum_{i=1}^n(x_i^2-2x_i\mu_X+\mu_X^2)$$
+$$$n\\sum\_{i=1}^n(x\_i-\\mu\_X)^2 = n\\sum\_{i=1}^n(x\_i^2-2x\_i\\mu\_X+\\mu\_X^2)$$$
 
-$$= n\sum_{i=1}^nx_i^2 - 2n\mu_X\sum_{i=1}^nx_i + \left(\sum_{i=1}^nx_i\right)^2$$
+$$$= n\\sum\_{i=1}^nx\_i^2 - 2n\\mu\_X\\sum\_{i=1}^nx\_i + \\left(\\sum\_{i=1}^nx\_i\\right)^2$$$
 
-$$= n\sum_{i=1}^nx_i^2 - 2\left(\sum_{i=1}^nx_i\right)^2 + \left(\sum_{i=1}^nx_i\right)^2$$
+$$$= n\\sum\_{i=1}^nx\_i^2 - 2\\left(\\sum\_{i=1}^nx\_i\\right)^2 + \\left(\\sum\_{i=1}^nx\_i\\right)^2$$$
 
-$$= n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2$$
+$$$= n\\sum\_{i=1}^nx\_i^2 - \\left(\\sum\_{i=1}^nx\_i\\right)^2$$$
 
 yielding
 
-$$r_{XY} = \frac{n\sum_{i=1}^nx_iy_i - \sum_{i=1}^nx_i\sum_{i=1}^ny_i}{\sqrt{n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2}\sqrt{n\sum_{i=1}^ny_i^2 - \left(\sum_{i=1}^ny_i\right)^2}}$$
+$$$r\_{XY} = \\frac{n\\sum\_{i=1}^nx\_iy\_i - \\sum\_{i=1}^nx\_i\\sum\_{i=1}^ny\_i}{\\sqrt{n\\sum\_{i=1}^nx\_i^2 - \\left(\\sum\_{i=1}^nx\_i\\right)^2}\\sqrt{n\\sum\_{i=1}^ny\_i^2 - \\left(\\sum\_{i=1}^ny\_i\\right)^2}}$$$
 
-which means that we can calculate $$r_{XY}$$ for each block at a fix offset of two images from five summed-area tables at constant time. In some situations (e.g. finding an extremum), it is sufficient to estimate $$r_{XY}^2$$ and the sign of $$r_{XY}$$. Then, the calculation of the two square roots can be avoided
+which means that we can calculate $$*r*<sub>*X**Y*</sub>$$ for each block at a fix offset of two images from five summed-area tables at constant time. In some situations (e.g. finding an extremum), it is sufficient to estimate $$*r*<sub>*X**Y*</sub><sup>2</sup>$$ and the sign of $$*r*<sub>*X**Y*</sub>$$. Then, the calculation of the two square roots can be avoided
 
-$$r_{XY}^2 = \frac{a^2}{\left(n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2\right)\left(n\sum_{i=1}^ny_i^2 - \left(\sum_{i=1}^ny_i\right)^2\right)}$$
+$$$r\_{XY}^2 = \\frac{a^2}{\\left(n\\sum\_{i=1}^nx\_i^2 - \\left(\\sum\_{i=1}^nx\_i\\right)^2\\right)\\left(n\\sum\_{i=1}^ny\_i^2 - \\left(\\sum\_{i=1}^ny\_i\\right)^2\\right)}$$$
 
 with
 
-$$a = n\sum_{i=1}^nx_iy_i - \sum_{i=1}^nx_i\sum_{i=1}^ny_i\quad\text{and}\quad{}\sgn(r_{XY}) = \sgn(a)$$
+$$$a = n\\sum\_{i=1}^nx\_iy\_i - \\sum\_{i=1}^nx\_i\\sum\_{i=1}^ny\_i\\quad\\text{and}\\quad{}\\sgn(r\_{XY}) = \\sgn(a)$$$
 
-## References
+References
+----------
 
 <references />
 
   
 
-1.  {% include cite content='conference' last='Crow ' first='Franklin C. ' title='Summed-area tables for texture mapping ' booktitle='Proceedings of the 11<sup>th</sup> annual conference on Computer graphics and interactive techniques ' series='SIGGRAPH "84 ' year='1984 ' pages='207–212 ' publisher='ACM ' address='New York, NY, USA ' isbn='0-89791-138-5 ' url='http://doi.acm.org/10.1145/800031.808600 ' doi='10.1145/800031.808600 ' %}
-2.  {% include cite content='conference' first='J. P. ' last='Lewis ' booktitle='Vision Interface ' volume='95 ' pages='120–123 ' publisher='Canadian Image Processing and Pattern Recognition Society ' title='Fast template matching ' year='1995 ' %}
-3.  {% include cite content='journal' first1='Paul ' last1='Viola ' first2='Michael J. ' last2='Jones ' title='Robust Real-Time Face Detection ' journal='International Journal of Computer Vision ' pages='137–154 ' volume='57 ' number='2 ' year='2004 ' %}
-4.  {% include cite content='journal' first1='Herbert ' last1='Bay ' first2='Andreas ' last2='Ess ' first3='Tinne ' last3='Tuytelaars ' first4='Luc ' last4='Van Gool ' title='SURF: Speeded Up Robust Features ' journal='Computer Vision and Image Understanding (CVIU) ' volume='110 ' number='3 ' pages='346–359 ' year='2008 ' %}
+[1] {% include cite content='conference' last='Crow ' first='Franklin C. ' title='Summed-area tables for texture mapping ' booktitle='Proceedings of the 11<sup>th</sup> annual conference on Computer graphics and interactive techniques ' series='SIGGRAPH "84 ' year='1984 ' pages='207–212 ' publisher='ACM ' address='New York, NY, USA ' isbn='0-89791-138-5 ' url='http://doi.acm.org/10.1145/800031.808600 ' doi='10.1145/800031.808600 ' %}
+
+[2] {% include cite content='conference' first='J. P. ' last='Lewis ' booktitle='Vision Interface ' volume='95 ' pages='120–123 ' publisher='Canadian Image Processing and Pattern Recognition Society ' title='Fast template matching ' year='1995 ' %}
+
+[3] {% include cite content='journal' first1='Paul ' last1='Viola ' first2='Michael J. ' last2='Jones ' title='Robust Real-Time Face Detection ' journal='International Journal of Computer Vision ' pages='137–154 ' volume='57 ' number='2 ' year='2004 ' %}
+
+[4] {% include cite content='journal' first1='Herbert ' last1='Bay ' first2='Andreas ' last2='Ess ' first3='Tinne ' last3='Tuytelaars ' first4='Luc ' last4='Van Gool ' title='SURF: Speeded Up Robust Features ' journal='Computer Vision and Image Understanding (CVIU) ' volume='110 ' number='3 ' pages='346–359 ' year='2008 ' %}

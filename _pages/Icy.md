@@ -9,8 +9,9 @@ description: test description
 
 {% include info-box name='Icy ' software='Icy ' logo='<img src="/images/pages/Icy-icon.png" width="96"/> ' author=' [QuIA](http://www.bioimageanalysis.org/) at [Institut Pasteur](http://www.pasteur.fr/en) ' maintainer=' [QuIA](http://www.bioimageanalysis.org/) at [Institut Pasteur](http://www.pasteur.fr/en) ' source=' [on GitHub](https://github.com/Icy-imaging) ' status='Active ' website='http://icy.bioimageanalysis.org/ ' %}Icy is an open community platform for bioimage informatics, providing software resources to visualize, annotate and quantify bioimaging data.
 
-## Publication
+Publication
+-----------
 
-  - {% include publication content='Icy' %}
+-   {% include publication content='Icy' %}
 
   

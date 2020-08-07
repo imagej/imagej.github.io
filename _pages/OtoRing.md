@@ -11,16 +11,16 @@ OtoRing - An ImageJ plugin to aid otolith ring identification.
 The source code is available at https://github.com/tektonia/otoring  
 To use the ImageJ Updater use the following url: http://sites.imagej.net/OtoRing/
 
-Example: ![Blue Whiting (*Micromesistius poutassou*) otolith](/images/pages/N51x10 20092013 ipma.jpg "Blue Whiting (Micromesistius poutassou) otolith")  
+Example: <img src="/images/pages/N51x10_20092013_ipma.jpg" title="fig:Blue Whiting (Micromesistius poutassou) otolith" width="400" alt="Blue Whiting (Micromesistius poutassou) otolith" />  
 1 - Select a Region Of Interest using the Line tool
 
-![Opaque and Translucent rings](/images/pages/N51x10 20092013 ipma 1.jpg "Opaque and Translucent rings")  
+<img src="/images/pages/N51x10_20092013_ipma_1.jpg" title="fig:Opaque and Translucent rings" width="400" alt="Opaque and Translucent rings" />  
 2 - Execute the OtoRing plugin
 
-![Graph plots intensity by distance](/images/pages/N51x10 20092013 ipma 2.jpg "Graph plots intensity by distance")  
+<img src="/images/pages/N51x10_20092013_ipma_2.jpg" title="fig:Graph plots intensity by distance" width="400" alt="Graph plots intensity by distance" />  
 3 - The result is shown
 
-![OtoRing Parameters](/images/pages/N51x10 20092013 ipma 3.jpg "OtoRing Parameters")  
+<img src="/images/pages/N51x10_20092013_ipma_3.jpg" title="fig:OtoRing Parameters" width="400" alt="OtoRing Parameters" />  
 4 - Use the OtoRing Parameters to improve the results
 
   

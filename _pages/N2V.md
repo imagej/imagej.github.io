@@ -19,7 +19,8 @@ See the paper for a detailed description of the algorithm.
 
 This FIJI plugin is part of CSBDeep. A set of open source neural network algorithms in FIJI. For more information, examples and images, click [here](https://csbdeep.bioimagecomputing.com/tools/n2v/).
 
-# Publication: Noise2Void - Learning Denoising from Single Noisy Images
+Publication: Noise2Void - Learning Denoising from Single Noisy Images
+=====================================================================
 
 **Abstract**
 
@@ -27,7 +28,8 @@ The field of image denoising is currently dominated by discriminative deep learn
 
 **[Full-text](https://arxiv.org/abs/1811.10980)**
 
-# Installation
+Installation
+============
 
 1.  Start ImageJ / Fiji
 2.  Open the updater via `Help > Update...`
@@ -41,9 +43,11 @@ You should now have access to these plugins:
 
 ![Available N2V plugins](/images/pages/N2v-plugins.png "Available N2V plugins")
 
-# Usage
+Usage
+=====
 
-## Training
+Training
+--------
 
 Training without GPU support is possible, but will take ages. Please read the notes on [this page](https://imagej.net/TensorFlow-GPU) for how to run the tools on the GPU.
 
@@ -55,14 +59,14 @@ Training without GPU support is possible, but will take ages. Please read the no
 2.  Open a noisy image of your choice (it should be sufficiently large)
 3.  (optional) open another noisy image for validation (judging how well the training is performing)
 4.  Click on `Plugins > CSBDeep > N2V > N2V train` and adjust the following parameters:
-      - <b>`Image used for training`</b> Choose the image which will be used for training
-      - <b>`Image used for validation`</b> Choose the image which will be used for training (you can also choose the same for both images, in this case 10% of the tiled image will be used for validation and 90% for training)
-      - <b>`Use 3D model instead of 2D`</b> Select this checkbox if you want to train on 3D data (this needs much more GPU memory)
-      - <b>`Number of epochs`</b> How many epochs should be performed during training
-      - <b>`Number of steps per epoch`</b> How many steps per epoch should be performed
-      - <b>`Batch size per step`</b> How many tiles are batch processed by the network per training step
-      - <b>`Patch shape`</b> The length of X, Y (and Z) of one training patch (needs to be a multiple of 16)
-      - <b>`Neighborhood radius`</b> n2V specific parameter describing the distance of the neighbor pixel replacing the center pixel
+    -   <b>`Image used for training`</b> Choose the image which will be used for training
+    -   <b>`Image used for validation`</b> Choose the image which will be used for training (you can also choose the same for both images, in this case 10% of the tiled image will be used for validation and 90% for training)
+    -   <b>`Use 3D model instead of 2D`</b> Select this checkbox if you want to train on 3D data (this needs much more GPU memory)
+    -   <b>`Number of epochs`</b> How many epochs should be performed during training
+    -   <b>`Number of steps per epoch`</b> How many steps per epoch should be performed
+    -   <b>`Batch size per step`</b> How many tiles are batch processed by the network per training step
+    -   <b>`Patch shape`</b> The length of X, Y (and Z) of one training patch (needs to be a multiple of 16)
+    -   <b>`Neighborhood radius`</b> n2V specific parameter describing the distance of the neighbor pixel replacing the center pixel
 5.  Click `Ok`
 6.  Look below at the [What happens during and after training](#What_happens_during_and_after_training "wikilink") section for what happens next
 
@@ -74,10 +78,10 @@ Training without GPU support is possible, but will take ages. Please read the no
 2.  Open a noisy image of your choice (it should be sufficiently large)
 3.  Open another noisy image you want to denoise directly after training (this will also be used for validation)
 4.  Click on `Plugins > CSBDeep > N2V > N2V train & predict` and adjust the following parameters:
-      - <b>`Image used for training`</b> Choose the image which will be used for training
-      - <b>`Image to denoise after training`</b> Choose the image which will be used for prediction
-      - <b>`Axes of prediction input`</b> This parameter helps to figure out how your input data is organized. It's a string with one letter per dimension of the input image. For 2D images, this should be `XY`. If your data has another axis which should be batch processed, set this parameter to `XYB`
-      - Regarding the other parameters please have a look at the descriptions in [Training on a single image](#Training_on_a_single_image "wikilink")
+    -   <b>`Image used for training`</b> Choose the image which will be used for training
+    -   <b>`Image to denoise after training`</b> Choose the image which will be used for prediction
+    -   <b>`Axes of prediction input`</b> This parameter helps to figure out how your input data is organized. It's a string with one letter per dimension of the input image. For 2D images, this should be `XY`. If your data has another axis which should be batch processed, set this parameter to `XYB`
+    -   Regarding the other parameters please have a look at the descriptions in [Training on a single image](#Training_on_a_single_image "wikilink")
 5.  Click `Ok`
 6.  Look below at the [What happens during and after training](#What_happens_during_and_after_training "wikilink") section for what happens next
 
@@ -87,18 +91,19 @@ Training without GPU support is possible, but will take ages. Please read the no
 
 1.  Start ImageJ / Fiji
 2.  Click on `Plugins > CSBDeep > N2V > N2V train on folder` and adjust the following parameters:
-      - <b>`Folder containing images used for training`</b> Choose the folder containing images which should be used for training
-      - <b>`Folder containing images used for validation`</b> Choose the folder containing images which should be used for validation (can be same as training folder, in this case 10% of the generated tiles will be used for validation and 90% for training)
-      - Regarding the other parameters please have a look at the descriptions in [Training on a single image](#Training_on_a_single_image "wikilink")
+    -   <b>`Folder containing images used for training`</b> Choose the folder containing images which should be used for training
+    -   <b>`Folder containing images used for validation`</b> Choose the folder containing images which should be used for validation (can be same as training folder, in this case 10% of the generated tiles will be used for validation and 90% for training)
+    -   Regarding the other parameters please have a look at the descriptions in [Training on a single image](#Training_on_a_single_image "wikilink")
 3.  Click `Ok`
 4.  Look below at the [What happens during and after training](#What_happens_during_and_after_training "wikilink") section for what happens next
 
-## What happens during and after training
+What happens during and after training
+--------------------------------------
 
 {% include thumbnail src='/images/pages/N2v-train-progress.png' title='N2V training progress window'%} {% include thumbnail src='/images/pages/N2v-train-preview.png' title='N2V training preview window'%} During training, you will see two windows:
 
-  - The progress window keeps you updated of the steps the training process is going through. It also plots the current training and validation loss.
-  - The preview window is generated from the first validation batch. It is slit into two parts. The upper left part displays the original noisy data, the lower right part displays the prediction at the current state of the training.
+-   The progress window keeps you updated of the steps the training process is going through. It also plots the current training and validation loss.
+-   The preview window is generated from the first validation batch. It is slit into two parts. The upper left part displays the original noisy data, the lower right part displays the prediction at the current state of the training.
 
 After training, two additional windows should appear. They represent two trained models. One is the model from the epoch with the lowest validation loss, the other one the model from the last epoch step. For N2V, using the model from the last epoch is almost always recommended. The windows will look similar to this:
 
@@ -108,7 +113,8 @@ They are stored to a temporary location which you can see in the Overview sectio
 
 <b>Copy the model from there to another permanent destination on your disk if you want to keep this trained model.</b>
 
-## Prediction
+Prediction
+----------
 
 There are two ways to predict from a trained model.
 
@@ -118,17 +124,18 @@ You can <b>open the model directly</b>: {% include thumbnail src='/images/pages/
 2.  Open an image you want to denoise and for which you have a pretrained model available as ZIP file
 3.  Click `Import > bioimage.io.zip` and choose your trained model. The model will open in a window as depicted above
 4.  Click `Predict` in the model window and adjust the following parameters:
-      - <b>`Input`</b> The image you want to denoise
-      - <b>`Axes of prediction input`</b> This parameter helps to figure out how your input data is organized. It's a string with one letter per dimension of the input image. For 2D images, this should be `XY`. If your data has another axis which should be batch processed, set this parameter to `XYB`
+    -   <b>`Input`</b> The image you want to denoise
+    -   <b>`Axes of prediction input`</b> This parameter helps to figure out how your input data is organized. It's a string with one letter per dimension of the input image. For 2D images, this should be `XY`. If your data has another axis which should be batch processed, set this parameter to `XYB`
 
 Alternatively, you can <b>use the N2V menu</b>: {% include thumbnail src='/images/pages/N2v-predict-parameters.png' title='N2V prediction parameters'%}
 
 1.  Start Fiji
 2.  Open an image you want to denoise and for which you have a pretrained model available as ZIP file
 3.  Click `Plugins > N2V > N2V predict` and adjust the parameters as described above, with this addition:
-      - <b>`Trained model file`</b> The ZIP file containing the pretrained model (it should end with `.bioimage.io.zip`)
+    -   <b>`Trained model file`</b> The ZIP file containing the pretrained model (it should end with `.bioimage.io.zip`)
 
-# Exporting trained models from Python to ImageJ / Fiji
+Exporting trained models from Python to ImageJ / Fiji
+=====================================================
 
 It's possible to train a Noise2Void neural network using Python. The required code and instructions can be found [here](https://github.com/juglab/n2v). The model that has been trained in Python, can be used in FIJI as well:
 
@@ -136,26 +143,30 @@ It's possible to train a Noise2Void neural network using Python. The required co
 2.  Locate the exported model file
 3.  Proceed as described in [Prediction](#Prediction "wikilink")
 
-# How to handle macros / scripts / models from the first early release of N2V for Fiji
+How to handle macros / scripts / models from the first early release of N2V for Fiji
+====================================================================================
 
-Thank you for testing the first early release version\! Here is what changed, if that does not help you getting already trained models or scripts running, please write a post in the forum\!
+Thank you for testing the first early release version! Here is what changed, if that does not help you getting already trained models or scripts running, please write a post in the forum!
 
-## Update Site
+Update Site
+-----------
 
 You don't need the N2V update site any more, the CSBDeep update site is sufficient. Please remove the N2V update site.
 
-## Macros / Scripts
+Macros / Scripts
+----------------
 
-  - the `predict` command was renamed to `N2V predict`
-  - the `train` command was renamed to `N2V train`
-  - the `train + predict` command was renamed to `N2V train + predict`
-  - the `train on folder` command was renamed to `N2V train on folder`
-  - there is a new mandatory prediction parameter called `axes` (see documentation above)
-  - the training parameter `batchDimLength` is gone for good
-  - the training parameter `patchDimLength` was renamed to `patchShape`
-  - the training output `latestTrainedModelPath` changed to `latestTrainedModel` (it's a displayable model object now)
-  - the training output `bestTrainedModelPath` changed to `bestTrainedModel` (it's a displayable model object now)
+-   the `predict` command was renamed to `N2V predict`
+-   the `train` command was renamed to `N2V train`
+-   the `train + predict` command was renamed to `N2V train + predict`
+-   the `train on folder` command was renamed to `N2V train on folder`
+-   there is a new mandatory prediction parameter called `axes` (see documentation above)
+-   the training parameter `batchDimLength` is gone for good
+-   the training parameter `patchDimLength` was renamed to `patchShape`
+-   the training output `latestTrainedModelPath` changed to `latestTrainedModel` (it's a displayable model object now)
+-   the training output `bestTrainedModelPath` changed to `bestTrainedModel` (it's a displayable model object now)
 
-## Trained models
+Trained models
+--------------
 
-Models trained with the first N2V for Fiji version cannot be used with the newer commands for model prediction. Please upgrade them first by using the command `Plugins > CSBDeep > N2V > Upgrade old N2V model`. \! Note: When testing this, I had to unzip and zip the new model before it was usable. I'll try to fix this, but if you run into problems with the converted model, try unzipping and zipping it again.
+Models trained with the first N2V for Fiji version cannot be used with the newer commands for model prediction. Please upgrade them first by using the command `Plugins > CSBDeep > N2V > Upgrade old N2V model`. ! Note: When testing this, I had to unzip and zip the new model before it was usable. I'll try to fix this, but if you run into problems with the converted model, try unzipping and zipping it again.

@@ -17,12 +17,13 @@ description: test description
 
 The best way to install it is via the MOSAIC Fiji Update site, as described on the [MOSAIC web page](http://mosaic.mpi-cbg.de/?q=downloads/imageJ).
 
-The algorithm is described in X. Xiao, V. F. Geyer, H. Bowne-Anderson, J. Howard, and I. F. Sbalzarini (2016\[1\]).
+The algorithm is described in X. Xiao, V. F. Geyer, H. Bowne-Anderson, J. Howard, and I. F. Sbalzarini (2016[1]).
 
-## References
+References
+----------
 
 <references />
 
  
 
-1.  X. Xiao, V. F. Geyer, H. Bowne-Anderson, J. Howard, and I. F. Sbalzarini. [Automatic optimal filament segmentation with sub-pixel accuracy using generalized linear models and B-spline level-sets.](http://mosaic.mpi-cbg.de/docs/Xiao2016.pdf) Med. Image Anal., 32:157–172, 2016
+[1] X. Xiao, V. F. Geyer, H. Bowne-Anderson, J. Howard, and I. F. Sbalzarini. [Automatic optimal filament segmentation with sub-pixel accuracy using generalized linear models and B-spline level-sets.](http://mosaic.mpi-cbg.de/docs/Xiao2016.pdf) Med. Image Anal., 32:157–172, 2016

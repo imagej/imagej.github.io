@@ -13,15 +13,17 @@ description: test description
 {% endcapture %}
 {% include info-box name='Max Inscribed Circles ' software='Fiji ' author='Olivier Burri, Romain Guiet ' maintainer='Olivier Burri ' filename='Max\_Inscribed\_Circle.jar ' released='August 2015 ' latest-version='July 2016 ' source=source status='stable ' website=' [BIOP Staff Page](https://www.epfl.ch/research/facilities/ptbiop/staff/) ' %}
 
-## Purpose
+Purpose
+-------
 
 This is an implementation of the Largest Inscribed Circle algorithm using an euclidean distance map. The algorithm is looped until a circle diameter smaller than the defined minimum diameter is found. The code for this plugin was inspired by this [Matlab Central function](http://www.mathworks.ch/matlabcentral/fileexchange/30805-maximum-inscribed-circle-using-distance-transform)
 
-![Plugin Dialog choices](/images/pages/Max largest circ dialog2.png "Plugin Dialog choices")
+<figure><img src="/images/pages/Max_largest_circ_dialog2.png" title="Plugin Dialog choices" width="500" alt="Plugin Dialog choices" /><figcaption aria-hidden="true">Plugin Dialog choices</figcaption></figure>
 
-## Details
+Details
+-------
 
-As of July 26th 2016, the plugin has been rewritten with a new algorithm to make it run much faster.. See the faster implementation details figure. ![Faster implementation details](/images/pages/Max-Circles-Algorithm-Overview.png "Faster implementation details")
+As of July 26th 2016, the plugin has been rewritten with a new algorithm to make it run much faster.. See the faster implementation details figure. <img src="/images/pages/Max-Circles-Algorithm-Overview.png" title="fig:Faster implementation details" width="400" alt="Faster implementation details" />
 
 The previous implementation would calculate a distance map, then find the max value, place a circle and repeat. This was making it very slow for small circle diameters or large images as it needed to make one distance map calculation per circle on the whole image.
 
@@ -32,13 +34,15 @@ By using a Local Maxima Finder, we can draw multiple circles on a single pass, p
 
 That way when there are plenty of circles that are the same size, we can draw them all at the same time.
 
-## Installation
+Installation
+------------
 
 This plugin is available from the {% include list-of-update-sites content='BIOP Update Site' %} This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
 
-## Use
+Use
+---
 
-Call up the plugin using *Plugins-\>BIOP-\>Max Inscribed Circles...*.
+Call up the plugin using *Plugins-&gt;BIOP-&gt;Max Inscribed Circles...*.
 
 You can select the smallest circle diameter after which it will stop looking, and whether you want the plugin to run on the current selection or the current image mask.
 
@@ -46,30 +50,26 @@ It will add all the found circles to the ROI Manager.
 
 Setting the Minimum Disk Diameter to 0 will return a single ROI with the largest inscribed circle.
 
-![Result of Plugin on whole image](/images/pages/Max largest circ beforeafter.png "Result of Plugin on whole image")
+<figure><img src="/images/pages/Max_largest_circ_beforeafter.png" title="Result of Plugin on whole image" width="400" alt="Result of Plugin on whole image" /><figcaption aria-hidden="true">Result of Plugin on whole image</figcaption></figure>
 
-## Macro Recordable
+Macro Recordable
+----------------
 
 Making use of the GenericDialog class, the plugin is macro-recordable.
 
-``` java
-run("Max Inscribed Circles...", "minimum=20");
-```
+    run("Max Inscribed Circles...", "minimum=20");
 
-## Running from a Plugin
+Running from a Plugin
+---------------------
 
 What you need to run this in a plugin is
 
-``` java
-import ch.epfl.biop.MaxInscribedCircles;
-```
+    import ch.epfl.biop.MaxInscribedCircles;
 
 And then call the static method
 
-``` java
-//imp must be an 8-bit binary image
-ArrayList<Roi> circles = MaxInscribedCircles.findCircles(ImagePlus imp, double minD, boolean isSelectionOnly);
-```
+    //imp must be an 8-bit binary image
+    ArrayList<Roi> circles = MaxInscribedCircles.findCircles(ImagePlus imp, double minD, boolean isSelectionOnly);
 
 Set the last argument
 
@@ -77,7 +77,8 @@ Set the last argument
 
 to true if you want to fit circles in the current selection. If you'd like to use the pixel mask, set it to false.
 
-## Notes
+Notes
+-----
 
 The accuracy is not perfect as we are using the distance map which has finite values. But for most practical purposes (Circles larger than 2 pixels in diameter), it should be sufficient.
 

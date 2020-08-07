@@ -11,7 +11,8 @@ If you want to fuse or deconvolve a sub-volume of your dataset (other than *all 
 
 The Bounding Box Definition can be started by clicking **Define Bounding Box...** in the main menu, located under `Fusion` (Stitching mode) or `Displaying` (MultiView mode).
 
-## Bounding Box Definition
+Bounding Box Definition
+-----------------------
 
 In the first dialog, you can specify how to define you bounding box in the **Bounding Box** drop-down menu. The available options are explained in detail below. In addition, you can give your Bounding box a name under **Bounding Box Name**.
 
@@ -49,10 +50,10 @@ This method will try to automatically find a bounding box around the sample by a
 
 You will be asked for the following parameters:
 
-  - **Background intensity (%)**: relative intensity of background to the maximal intensity in the images, used for thresholding.
-  - **Size of objects to be discarded**: size of the box-minimum-filter that is applied to the image before thresholding, effectively removing isolated objects smaller than that.
-  - **Downsampling**: by how much to downsample the fused image. Since fusion can be a time and memory-consuming process, we recommend to use a large ($$>4$$) downsampling factor, especially if your dataset is big.
-  - *' Display image used for segmentation*': selecting this will show the fused and the filtered images.
+-   **Background intensity (%)**: relative intensity of background to the maximal intensity in the images, used for thresholding.
+-   **Size of objects to be discarded**: size of the box-minimum-filter that is applied to the image before thresholding, effectively removing isolated objects smaller than that.
+-   **Downsampling**: by how much to downsample the fused image. Since fusion can be a time and memory-consuming process, we recommend to use a large ($$ &gt; 4$$) downsampling factor, especially if your dataset is big.
+-   *' Display image used for segmentation*': selecting this will show the fused and the filtered images.
 
 <img src="/images/pages/BigStitcher BBox auto.png" width="600"/>
 

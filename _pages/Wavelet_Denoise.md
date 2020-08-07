@@ -13,7 +13,8 @@ description: test description
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji ' name='Wavelet\_Denoise ' author=' [Martin Čapek](https://imagej.net/User:LMCF-IMG) ' maintainer='Martin Čapek ' source=source released='04/09/2020 ' latest-version='05/21/2020 ' %}
 
-## Plugin for wavelet-based denoising/filtering image data
+Plugin for wavelet-based denoising/filtering image data
+-------------------------------------------------------
 
 <img src="/images/pages/Wavelet Denoise Pics ImageJ SyncWins.jpg" width="800"/>
 
@@ -21,9 +22,10 @@ When starting the plugin, pictures and <i>Sync Wins</i> dialog appear, like in t
 
 We should mention here that sizes of input image matrices must be of power of 2, common sizes are: 64, 128, 256, 512, 1024, 2048 etc., otherwise the plugin will not start and a warning message appears again. This is due to the proper computation of levels of wavelet decomposition of images, see below.
 
-![Wavelet\_Denoise\_dialog.jpg](/images/pages/Wavelet Denoise dialog.jpg "Wavelet_Denoise_dialog.jpg")
+<figure><img src="/images/pages/Wavelet_Denoise_dialog.jpg" title="Wavelet_Denoise_dialog.jpg" width="350" alt="Wavelet_Denoise_dialog.jpg" /><figcaption aria-hidden="true">Wavelet_Denoise_dialog.jpg</figcaption></figure>
 
-## Description of functionality of items in the plugin window
+Description of functionality of items in the plugin window
+----------------------------------------------------------
 
 **Refresh button** – returns all items in the dialog to default values.
 
@@ -67,9 +69,10 @@ When unchecking this checkbox, the whole stack, is also recomputed according to 
 
 Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>) there is a status message showing the progress of computation or warning messages from the plugin.
 
-**Done\!** button closes the dialog, but all image windows stay open for possible next processing.
+**Done!** button closes the dialog, but all image windows stay open for possible next processing.
 
-## Additional remarks
+Additional remarks
+------------------
 
 • Plugin dialog is modeless. It is possible to process the input image prior applying any wavelet denoising/filtration, e.g., by smoothing, sharpening, contrast. In such cases the <i>Refresh</i> button can be useful. However, the size of the input image matrix, number of slices and the bit depth cannot be changed.
 
@@ -77,7 +80,8 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 • If you do not see data in image windows well, use {% include bc content='Image | Adjust-Brightness/Contrast | Auto'%}. Do not press <i>Apply</i> for pixel intensity value recomputation.
 
-## Step-by-step manuals
+Step-by-step manuals
+--------------------
 
 **<u>How to use the plugin for denoising/filtering small data:</u>**
 
@@ -101,7 +105,7 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 9\. Play iteratively with parameters until you are satisfied with the result of denoising/filtration. It is possible to return back to default values of the dialog by pressing <i>Refresh</i>.
 
-10\. If you are satisfied with the result, press <i>Done\!</i> This closes the dialog, but all image windows stay open for possible next processing.
+10\. If you are satisfied with the result, press <i>Done!</i> This closes the dialog, but all image windows stay open for possible next processing.
 
 **<u>How to use the plugin for denoising/filtering big data:</u>**
 
@@ -125,15 +129,16 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 9\. Choose a filtration method and its power by using a corresponding slider.
 
-10\. Press <i>Preview</i> button. The method and its power are applied to the data, but only to a selected slice\!
+10\. Press <i>Preview</i> button. The method and its power are applied to the data, but only to a selected slice!
 
 11\. Play iteratively with parameters until you are satisfied with the result of denoising/filtration. It is also possible to go to various slices to check the quality of filtering there.
 
 12\. **Important:** If you are satisfied with the result, **press <i>Recomputing All Data Required</i>** button (or uncheck <i>Enable 1 Slice Preview</i>). This recomputes the whole data according to active set method and its power.
 
-13\. If you are satisfied with the result, press <i>Done\!</i> This closes the dialog, but all image windows stay open for possible next processing.
+13\. If you are satisfied with the result, press <i>Done!</i> This closes the dialog, but all image windows stay open for possible next processing.
 
-## Installation
+Installation
+------------
 
 Two possibilities, how to do it:
 
@@ -141,7 +146,8 @@ Two possibilities, how to do it:
 
 2\. Download Wavelet\_Denoise.jar file from [GitHub](https://github.com/LMCF-IMG/Wavelet_Denoise) and put it into plugins in ImageJ/Fiji folder.
 
-## References
+References
+----------
 
 1\. Rangarajan, P. et al. Image Denoising Using Wavelets: Wavelets & Time Frequency. University of Michigan, 2002.
 

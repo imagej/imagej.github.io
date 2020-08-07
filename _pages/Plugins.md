@@ -10,11 +10,13 @@ description: test description
 {% include learn%}
 ImageJ has been extended with thousands of {% include wikipedia title='Plug-in (computing)' text='plugins'%}: special-purpose software components that extend ImageJ’s functionality—e.g., by offering additional commands via menu entries.
 
-## Available plugins
+Available plugins
+-----------------
 
 {% include biginfo-box content='You can browse the [list of available plugins](Category_Plugins ).' %}
 
-## Tiers of plugins
+Tiers of plugins
+----------------
 
 There are four tiers of plugins:
 
@@ -23,20 +25,22 @@ There are four tiers of plugins:
 3.  Plugins installable from an ImageJ [update site](update_site ).
 4.  Additional plugins available from various online sources, which must be manually installed.
 
-## Installing plugins
+Installing plugins
+------------------
 
 The ImageJ [Updater](Updater ) is the best way to install and update plugins. Simply [add the update site](Update_Sites ) containing your plugins of interest, and they will be installed automatically for you. If the plugin is not available via update site, but packaged as *.jar* file, or as unpackaged directory with *.class* files, see [Installing plugins manually](#Installing_plugins_manually "wikilink") below.
 
-## Advanced topics
+Advanced topics
+---------------
 
 ### Installing plugins manually
 
-If the plugin you want is not distributed via an ImageJ update site, please encourage the plugin's maintainer to do so\! Anyone can create a [personal update site](personal_update_site ) as well as additional dedicated update sites (for a particular plugin) hosted on [sites.imagej.net](http://sites.imagej.net/), to easily share and maintain updated plugins.
+If the plugin you want is not distributed via an ImageJ update site, please encourage the plugin's maintainer to do so! Anyone can create a [personal update site](personal_update_site ) as well as additional dedicated update sites (for a particular plugin) hosted on [sites.imagej.net](http://sites.imagej.net/), to easily share and maintain updated plugins.
 
 In the meantime, to install a plugin manually, follow the plugin's installation instructions, if any. The plugin will consist of one or more files which must be downloaded and (typically) placed in ImageJ's `plugins` folder:
 
-  - If the file suffix is `.jar` or `.class` then it is usually enough to simply restart ImageJ after dropping the file into `plugins`.
-  - If the file suffix is `.java` then you typically must execute the [Compile and Run](https://imagej.net/docs/guide/146-31.html#toc-Subsection-31.5) command on the file to first compile it to a `.class`. After running this command once and restarting ImageJ, the plugin will become available in ImageJ's `Plugins` menu.
+-   If the file suffix is `.jar` or `.class` then it is usually enough to simply restart ImageJ after dropping the file into `plugins`.
+-   If the file suffix is `.java` then you typically must execute the [Compile and Run](https://imagej.net/docs/guide/146-31.html#toc-Subsection-31.5) command on the file to first compile it to a `.class`. After running this command once and restarting ImageJ, the plugin will become available in ImageJ's `Plugins` menu.
 
 See also the [Installing 3rd party plugins](Installing_3rd_party_plugins ) guide.
 
@@ -54,15 +58,15 @@ For ultimate control, ImageJ also provides support for manually configuring the 
 
 E.g.,
 
-  - on 64-bit Linux:
+-   on 64-bit Linux:
 
 `$IJ_DIR/ImageJ-linux64 -Dij1.plugin.dirs=$IJ_DIR/jars:$IJ_DIR/plugins:$HOME/.plugins`
 
-  - On OS X:
+-   On OS X:
 
 `$IJ_DIR/Contents/MacOS/ImageJ-macosx -Dij1.plugin.dirs=$IJ_DIR/jars:$IJ_DIR/plugins:$HOME/.plugins`
 
-  - On 64-bit Windows:
+-   On 64-bit Windows:
 
 `%IJ_DIR%\ImageJ-win64 -Dij1.plugin.dirs=%IJ_DIR%\jars;%IJ_DIR%\plugins;%HOMEDRIVE%%HOMEPATH%\.plugins`
 

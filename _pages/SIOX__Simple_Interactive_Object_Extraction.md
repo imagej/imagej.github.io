@@ -14,7 +14,6 @@ description: test description
 {% include thumbnail src='/images/pages/Embryos775x581.png' title='Embryos original sample'%}
 
 </div>
-
 <div style="float:
  left">
 
@@ -26,31 +25,31 @@ description: test description
 
 This is a Fiji plugin based on the [SIOX project](http://www.siox.org) **to segment color images**. [SIOX](SIOX ) stands for *Simple Interactive Object Extraction*, a method for **extracting foreground from still images** with very little user interaction. [SIOX](SIOX ) is fast, noise robust and can therefore also be used for the segmentation of videos. It avoids many of the drawbacks of graph-based segmentation methods but performs about equally well on different benchmarks. [SIOX](SIOX ) is open and free (Apache License) and the authors have intentionally not patented any part of the technology. As a result, it has been integrated into several open-source image manipulation programs over the past years. [SIOX](SIOX ) is the underlying algorithm of the foreground extraction tool in the GNU Image Manipulation Program ([GIMP](http://www.gimp.org/)) and is part of the tracer tool in [Inkscape](http://www.inkscape.org/). [SIOX](SIOX ) originates from [E-Chalk](http://www.echalk.de/) where an instructor standing in front of an electronic chalkboard is segmented. Variants of [SIOX](SIOX ) are being used for robotic vision and for improving 3D time-of-flight camera segmentation.
 
-## Quick Start
+Quick Start
+-----------
 
-  - **Premises:**  
-    In order to call the plugin, you need to have at least one **RGB color image** open.
+**Premises:**  
+In order to call the plugin, you need to have at least one **RGB color image** open.
 
 After clicking on {% include bc content='Plugins | Segmentation | SIOX: Simple Interactive Object Extraction'%}, the image will be embedded into the plugin GUI.
 
-  - **Step 1:** Initial Segmentation.  
-    Paint the regions of interest (ROIs) corresponding to the foreground and background. Select any of the ROI tools and mark the areas you consider foreground and background. To segment multiple objects, select "Allow multiple foreground components"
+**Step 1:** Initial Segmentation.  
+Paint the regions of interest (ROIs) corresponding to the foreground and background. Select any of the ROI tools and mark the areas you consider foreground and background. To segment multiple objects, select "Allow multiple foreground components"
 
-<!-- end list -->
+<!-- -->
 
-  - **Step 2:** Detail Refinement Brush.  
-    Select new ROIs to be added or subtracted from the current segmentation. Press "Refine" to add/subtract those areas based on the previous result.
+**Step 2:** Detail Refinement Brush.  
+Select new ROIs to be added or subtracted from the current segmentation. Press "Refine" to add/subtract those areas based on the previous result.
 
-<!-- end list -->
+<!-- -->
 
-  - **Step 3:** Reset or Create mask.  
-    Click the "Reset" button to restart the process or click on the "Create mask" button to create a binary image. Please, note that the binary image polarity will follow the option set in {% include bc content='Process | Binary | Options'%}.
+**Step 3:** Reset or Create mask.  
+Click the "Reset" button to restart the process or click on the "Create mask" button to create a binary image. Please, note that the binary image polarity will follow the option set in {% include bc content='Process | Binary | Options'%}.
 
-|                                                                                                                                                            |                                                                                                                             |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| {% include thumbnail src='/images/pages/Screenshot-SIOX Segmentation.png' title='SIOX segmentation Graphical User Interface applied to Leaf sample'%} | {% include thumbnail src='/images/pages/SIOX-Mask.png' title='Resulting mask of Leaf sample after SIOX segmentation'%} |
+<table><tbody><tr class="odd"><td><p>style="vertical-align:top"|{% include thumbnail src='/images/pages/Screenshot-SIOX Segmentation.png' title='SIOX segmentation Graphical User Interface applied to Leaf sample'%}</p></td><td><p>style="vertical-align:top"|{% include thumbnail src='/images/pages/SIOX-Mask.png' title='Resulting mask of Leaf sample after SIOX segmentation'%}</p></td></tr></tbody></table>
 
-## User Manual
+User Manual
+-----------
 
 [SIOX](SIOX ) is a plugin designed to segment 2D color images. If the image is not RGB color, it can be converted to RGB using the command {% include bc content='Image | Type | RGB Color'%}. However, the [SIOX](SIOX ) algorithm makes uses color information, so it is expected to work better on real RGB images.
 
@@ -60,69 +59,69 @@ When calling the plugin, the image will be embedded into the [SIOX](SIOX ) graph
 
 {% include thumbnail src='/images/pages/SIOX-Initial-Segmentation.png' title='SIOX initial segmentation panel'%} This is the **first step** of the procedure where one defines the ROIs that correspond to typical areas of foreground or background.
 
-  - **Defining foreground and background**
+**Defining foreground and background**  
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    The radio buttons *Foreground* and *Background* switch between the two ROI types. When the foreground ROIs are being defined, the background ROIs are shown in translucent **red**. Similarly, when defining the background ROIs, the foreground ROIs are shown in translucent **green**.
+  
+The radio buttons *Foreground* and *Background* switch between the two ROI types. When the foreground ROIs are being defined, the background ROIs are shown in translucent **red**. Similarly, when defining the background ROIs, the foreground ROIs are shown in translucent **green**.
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    The ROIs can be defined with any of the Selection Tools:
+  
+The ROIs can be defined with any of the Selection Tools:
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    ![Fiji-selection-tools.png](/images/pages/Fiji-selection-tools.png "Fiji-selection-tools.png")
+  
+![](/images/pages/Fiji-selection-tools.png "fig:Fiji-selection-tools.png")
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    **TIP**: Multiple ROIs can be selected with any of the selection tools by pressing the SHIFT key and clicking on different parts of the image.
+  
+**TIP**: Multiple ROIs can be selected with any of the selection tools by pressing the SHIFT key and clicking on different parts of the image.
 
-<!-- end list -->
+<!-- -->
 
-  - **Multiple objects**
+**Multiple objects**  
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    For segmenting **multiple objects**, check *Allow multiple foreground components*. This option tells [SIOX](SIOX ) to look for several objects in the image. If you introduce multiple foreground ROIs, this option will be then assumed.
+  
+For segmenting **multiple objects**, check *Allow multiple foreground components*. This option tells [SIOX](SIOX ) to look for several objects in the image. If you introduce multiple foreground ROIs, this option will be then assumed.
 
-<!-- end list -->
+<!-- -->
 
-  - **Smoothing**
+**Smoothing**  
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    The *Smoothing* slider defines the sharpness of the resulting contours. For example, when segmenting the default sample "Leaf (36K)", reducing the smoothing provides more accurate borders.
+  
+The *Smoothing* slider defines the sharpness of the resulting contours. For example, when segmenting the default sample "Leaf (36K)", reducing the smoothing provides more accurate borders.
 
-<!-- end list -->
+<!-- -->
 
-  - **Segmentation**
+**Segmentation**  
 
 {% include thumbnail src='/images/pages/SIOX Segmentation GUI step1.png' title='Example of SIOX result after initial segmentation'%}
 
-  -   
-    In order to proceed with the initial segmentation, click on *Segment*.
+  
+In order to proceed with the initial segmentation, click on *Segment*.
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    Remember that [SIOX](SIOX ) needs at least one foreground component (ROI) to produce the segmentation, the background ROI is optional.
+  
+Remember that [SIOX](SIOX ) needs at least one foreground component (ROI) to produce the segmentation, the background ROI is optional.
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    After a few seconds (depending on the image size), the result will be shown (darkened background and foreground area(s) in the original colors).
+  
+After a few seconds (depending on the image size), the result will be shown (darkened background and foreground area(s) in the original colors).
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    Following this, the initial segmentation panel is disabled. If the results are not satisfactory, press *Reset* to restart the process. Otherwise, continue to the next refinement step.
+  
+Following this, the initial segmentation panel is disabled. If the results are not satisfactory, press *Reset* to restart the process. Otherwise, continue to the next refinement step.
 
 ### Detail Refinement Brush
 
@@ -142,21 +141,21 @@ Finally, by clicking on *Refine*, the segmentation is recalculated for the selec
 
 {% include thumbnail src='/images/pages/SIOX-Reset-Create-mask.png' title='SIOX Reset/Create mask panel'%} This panel is enabled during any of the other segmentation steps.
 
-  - **Reset**
+**Reset**  
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    Resets the image including the internal status of the confidence matrix (foreground, background and refinement areas). The **initial ROIs are reloaded** so they can be reused.
+  
+Resets the image including the internal status of the confidence matrix (foreground, background and refinement areas). The **initial ROIs are reloaded** so they can be reused.
 
-<!-- end list -->
+<!-- -->
 
-  - **Create mask**
+**Create mask**  
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    Creates a binary (0-255) image based on the current state of the segmentation process. The background color (black or white) is defined in {% include bc content='Process | Binary | Options...'%} This button can be pressed during any of the previous steps.
+  
+Creates a binary (0-255) image based on the current state of the segmentation process. The background color (black or white) is defined in {% include bc content='Process | Binary | Options...'%} This button can be pressed during any of the previous steps.
 
 ### Save segmentator
 
@@ -170,52 +169,57 @@ You can apply a previously saved SIOX segmentator to any open image or set of im
 
 **Step 2**: Click on {% include bc content='Plugins | Segmentation | Apply SIOX segmentator'%}, and the following dialog will pop up:
 
-![ left | thumb | 600 px | Apply SIOX segmentator input dialog](/images/pages/Screenshot-Load-SIOX-segmentator.png " left | thumb | 600 px | Apply SIOX segmentator input dialog")
+![ left \| thumb \| 600 px \| Apply SIOX segmentator input dialog](/images/pages/Screenshot-Load-SIOX-segmentator.png " left | thumb | 600 px | Apply SIOX segmentator input dialog")
 
 **Step 3**: Select the siox segmentator file (or just drag and drop it) and click "OK".
 
 The segmentator will be applied to the selected image or stack and the result will pop up.
 
-![ left | thumb | 1014px | Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample](/images/pages/Combined-SIOX-Stacks.gif " left | thumb | 1014px | Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample")
+![ left \| thumb \| 1014px \| Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample](/images/pages/Combined-SIOX-Stacks.gif " left | thumb | 1014px | Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample")
 
 **Note**: when applying a saved segmentator there is no information about the size of the expected foreground components so the largest component will be used as reference. The multiple component option will be consistent with what it was used during the segmentator calculation.
 
-## API documentation
+API documentation
+-----------------
 
 The latest documentation of the package can be found here:
 
-  - For the SIOX plugin: https://fiji.sc/javadoc/siox/package-summary.html
-  - For the SIOX library: https://fiji.sc/javadoc/org/siox/package-summary.html
+-   For the SIOX plugin: [https://fiji.sc/javadoc/siox/package-summary.html](https://fiji.sc/javadoc/siox/package-summary.html)
+-   For the SIOX library: [https://fiji.sc/javadoc/org/siox/package-summary.html](https://fiji.sc/javadoc/org/siox/package-summary.html)
 
-## References
+References
+----------
 
 Most Comprehensive Work:
 
-  - G. Friedland: Adaptive Audio and Video Processing for Electronic Chalkboard Lectures, [PhD thesis](http://www.diss.fu-berlin.de/2006/514/indexe.html), Department of Computer Science, Freie Universitaet Berlin, October 2006.
+-   G. Friedland: Adaptive Audio and Video Processing for Electronic Chalkboard Lectures, [PhD thesis](http://www.diss.fu-berlin.de/2006/514/indexe.html), Department of Computer Science, Freie Universitaet Berlin, October 2006.
 
 Still Image Approach:
 
-  - G. Friedland, K. Jantz, T. Lenz, F. Wiesel, R. Rojas: Object Cut and Paste in Images and Videos, International Journal of Semantic Computing Vol 1, No 2, pp. 221-247, World Scientific, USA, June 2007.
-  - G. Friedland, K. Jantz, L. Knipping, R. Rojas: Image Segmentation by Uniform Color Clustering -- Approach and Benchmark Results, [Technical Report B-05-07](http://www.siox.org/downloads/tr-b-05-07.pdf), Department of Computer Science, Freie Universitaet Berlin, June 2005 (PDF, 18MB).
-  - G. Friedland, K. Jantz, R. Rojas: SIOX: Simple Interactive Object Extraction in Still Images, Proceedings of the IEEE International Symposium on Multimedia (ISM2005), pp. 253-259, Irvine (California), December, 2005. [Download PDF](http://csdl.computer.org/dl/proceedings/ism/2005/2489/00/24890253.pdf) from IEEE Computer Society Digital Library.
-  - G. Friedland, K. Jantz, T. Lenz, R. Rojas: Extending the SIOX Algorithm: Alternative Clustering Methods, Sub-pixel Accurate Object Extraction from Still Images, and Generic Video Segmentation, [Technical Report B-06-06](http://www.siox.org/downloads/tr-b-06-06.pdf), Department of Computer Science, Freie Universitaet Berlin, January 2006 (PDF, 10MB).
-  - G. Friedland, K. Jantz, T. Lenz, F. Wiesel, R. Rojas: A Practical Approach to Boundary-Accurate Multi-Object Extraction from Still Images and Videos, to appear in Proceedings of the IEEE International Symposium on Multimedia (ISM2006), San Diego (California), December, 2006.
+-   G. Friedland, K. Jantz, T. Lenz, F. Wiesel, R. Rojas: Object Cut and Paste in Images and Videos, International Journal of Semantic Computing Vol 1, No 2, pp. 221-247, World Scientific, USA, June 2007.
+-   G. Friedland, K. Jantz, L. Knipping, R. Rojas: Image Segmentation by Uniform Color Clustering -- Approach and Benchmark Results, [Technical Report B-05-07](http://www.siox.org/downloads/tr-b-05-07.pdf), Department of Computer Science, Freie Universitaet Berlin, June 2005 (PDF, 18MB).
+-   G. Friedland, K. Jantz, R. Rojas: SIOX: Simple Interactive Object Extraction in Still Images, Proceedings of the IEEE International Symposium on Multimedia (ISM2005), pp. 253-259, Irvine (California), December, 2005. [Download PDF](http://csdl.computer.org/dl/proceedings/ism/2005/2489/00/24890253.pdf) from IEEE Computer Society Digital Library.
+-   G. Friedland, K. Jantz, T. Lenz, R. Rojas: Extending the SIOX Algorithm: Alternative Clustering Methods, Sub-pixel Accurate Object Extraction from Still Images, and Generic Video Segmentation, [Technical Report B-06-06](http://www.siox.org/downloads/tr-b-06-06.pdf), Department of Computer Science, Freie Universitaet Berlin, January 2006 (PDF, 10MB).
+-   G. Friedland, K. Jantz, T. Lenz, F. Wiesel, R. Rojas: A Practical Approach to Boundary-Accurate Multi-Object Extraction from Still Images and Videos, to appear in Proceedings of the IEEE International Symposium on Multimedia (ISM2006), San Diego (California), December, 2006.
 
-## ImageJ version
+ImageJ version
+--------------
 
 Thanks to {% include person content='Rasband' %}, there is an [ImageJ](https://imagej.net/plugins/siox/index.html) version of this plugin without Fiji dependencies:
 
-https://imagej.net/plugins/siox/index.html
+[https://imagej.net/plugins/siox/index.html](https://imagej.net/plugins/siox/index.html)
 
-## Licenses
+Licenses
+--------
 
-The [SIOX Java library](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Siox_Segmentation/org;h=902e7e0379b36f7f03b512552fb899861d866fa9;hb=d451306e290fb55a31052cbfc5426eaa70df17d6) developed by [Gerald Friedland](http://www.gerald-friedland.org/), [Kristian Jantz](http://www.inf.fu-berlin.de/~jantz) and [Lars Knipping](http://www.inf.fu-berlin.de/~knipping) is licensed under the **Apache License**, Version 2.0 (the "License"): http://www.apache.org/licenses/LICENSE-2.0. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+The [SIOX Java library](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Siox_Segmentation/org;h=902e7e0379b36f7f03b512552fb899861d866fa9;hb=d451306e290fb55a31052cbfc5426eaa70df17d6) developed by [Gerald Friedland](http://www.gerald-friedland.org/), [Kristian Jantz](http://www.inf.fu-berlin.de/~jantz) and [Lars Knipping](http://www.inf.fu-berlin.de/~knipping) is licensed under the **Apache License**, Version 2.0 (the "License"): [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0). Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
-The Fiji plugin GUI, developed by {% include person content='Iarganda' %}, [Stephan Saalfeld](http://fly.mpi-cbg.de/~saalfeld/) and {% include person content='Schindelin' %} is free software; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
+The Fiji plugin GUI, developed by {% include person content='Iarganda' %}, [Stephan Saalfeld](http://fly.mpi-cbg.de/~saalfeld/) and {% include person content='Schindelin' %} is free software; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 
-## See also
+See also
+--------
 
-  - Original SIOX project: http://www.siox.org/
-  - SIOX project FAQs: http://www.siox.org/faq.html
+-   Original SIOX project: [http://www.siox.org/](http://www.siox.org/)
+-   SIOX project FAQs: [http://www.siox.org/faq.html](http://www.siox.org/faq.html)
 
  

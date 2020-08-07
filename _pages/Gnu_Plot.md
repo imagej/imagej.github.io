@@ -11,9 +11,10 @@ description: test description
 
 The Gnu\_Plot plugin provides the glue between ImageJ and Gnuplot. The main impetus for developing this plugin was that ImageJ is great at interrogating imaging data, Gnuplot is excellent at generating publishable plots, and I'm lazy. The trouble was in having to extract the plottable data, either from a ResultsTable or through a Java plugin, and then pasting into a ascii editor, save, run gnuplot from a terminal, display output image, and repeat. I prefer to just click a button after finding better plottable data or mucking with the Gnuplot script.
 
-## Features
+Features
+--------
 
-!["Gnu\_Plot GUI"](Gnu_Plot.jpg "\"Gnu_Plot GUI\"")
+<figure><img src="/images/pages/Gnu_Plot.jpg" title="&quot;Gnu_Plot GUI&quot;" width="400" alt="&quot;Gnu_Plot GUI&quot;" /><figcaption aria-hidden="true">"Gnu_Plot GUI"</figcaption></figure>
 
 When run as a plugin Gnu\_Plot will collect both the Gnuplot script and data and run this through the gnuplot executable as stdin, and read the image from stdout and display it in a ImagePlus window, and display any errors from stderr in the Log window.  
 **Plot Title** will be the title given to any script or image windows created.  
@@ -27,10 +28,10 @@ The Gnu\_Plot window can be left opened and new scripts or datasets can be disco
 ### Example
 
 Let's say you want to see the histogram of a phase image in polar format.  
-1\) Click *List* Button on the bottom of the *Histogram* window.  
-2\) Start the *Gnu\_Plot* plugin.  
-3\) Select *<new>* for the **GNUPlot Script**.  
-4\) Copy/Paste this script into the *Editor* window.
+1) Click *List* Button on the bottom of the *Histogram* window.  
+2) Start the *Gnu\_Plot* plugin.  
+3) Select *<new>* for the **GNUPlot Script**.  
+4) Copy/Paste this script into the *Editor* window.
 
 >   
 > set terminal pngcairo size 512,512  
@@ -49,10 +50,11 @@ Let's say you want to see the histogram of a phase image in polar format.
 > plot "$data0" using 2:3 with linespoints
 
   
-5\) Select *Histogram of ...* for **$data0**  
-6\) Click on **Generate Plot**
+5) Select *Histogram of ...* for **$data0**  
+6) Click on **Generate Plot**
 
-## Methods
+Methods
+-------
 
 `public static String gnuplot()`  
 `public static String gnuplot(String gp)`  
@@ -70,27 +72,32 @@ Generate complete plot script. Each `arrs` pass(ed) in will generate a separate 
 `public static ImagePlus plot(String title, String code, float[][]... arrs)`  
 Generate ImagePlus. Each `arrs` pass(ed) in will generate a separate *here-document* data block.
 
-## Coding Goodies
+Coding Goodies
+--------------
 
 Generating data, running it through another executable, and using the output.
 
 Dynamically updating Choice(s).
 
-## Install
+Install
+-------
 
-Unzip [Gnu\_Plot.zip](https://imagej.net/_images/2/23/Gnu_Plot.zip) into ImageJ1 plugins (File\>Show Folder\>Plugins) or plugins/jars directories. Source code is in jar file.  
-**Edit\>Options\>Gnu\_Plot...** Configure location of gnuplot executable.  
-**Anaylze\>Tools\>Gnu\_Plot...** Runs Gnu\_Plot.
+Unzip [Gnu\_Plot.zip](https://imagej.net/_images/2/23/Gnu_Plot.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code is in jar file.  
+**Edit&gt;Options&gt;Gnu\_Plot...** Configure location of gnuplot executable.  
+**Anaylze&gt;Tools&gt;Gnu\_Plot...** Runs Gnu\_Plot.
 
-## Licence
+Licence
+-------
 
 GPL distribution licence.
 
-## ChangeLog
+ChangeLog
+---------
 
 1 April 2020 Initial version.
 
-## Known Bugs
+Known Bugs
+----------
 
 Let me know.
 

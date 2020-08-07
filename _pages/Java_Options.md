@@ -7,31 +7,34 @@ categories:
 description: test description
 ---
 
-# Introduction
+Introduction
+============
 
 Fiji's kernel is ImageJ, which is written mainly in Java. Therefore, we rely on the Java virtual machine to do a good job for us. Sometimes, you have to help it, by providing some Java options to Fiji.
 
-# Passing Java options to Fiji
+Passing Java options to Fiji
+============================
 
 There are basically two ways to do that:
 
-  - by passing the parameters to the Fiji launcher, separated by *--* from the ImageJ options. **Note**: even if you do not pass ImageJ options at all, you need to add the separator, otherwise Fiji thinks you passed it an ImageJ option. Example:
+-   by passing the parameters to the Fiji launcher, separated by *--* from the ImageJ options. **Note**: even if you do not pass ImageJ options at all, you need to add the separator, otherwise Fiji thinks you passed it an ImageJ option. Example:
 
 `./fiji -XX:+HeapDumpOnOutOfMemoryError --`
 
-  - by modifying/creating the file *jvm.cfg* in the same directory as the Fiji launcher.
+-   by modifying/creating the file *jvm.cfg* in the same directory as the Fiji launcher.
 
 Note: The options listed in *jvm.cfg* will be passed to the virtual machine before the options passed on the command line, so that the command line can override the options specified in *jvm.cfg*.
 
 Which method is appropriate for you depends on what you want to do: if you want to change Fiji's default, use the *jvm.cfg* method.
 
-## The double-dash (or: how to separate Java options and Fiji options from command line options)
+The double-dash (or: how to separate Java options and Fiji options from command line options)
+---------------------------------------------------------------------------------------------
 
 It can be confusing to pass Fiji and Java options at the same time as command line options to ImageJ (or other programs). So here are a few simple rules:
 
-  - If you do not specify any Java options, you do not need a *--* at all.
-  - If you have a *--* in your command line, the arguments for ImageJ go *after* the double-dash.
-  - In the presence of a double-dash, Fiji options have to go \_before\_ the *--* (this is to allow passing options to the Java program that would be mistaken for Fiji options otherwise).
+-   If you do not specify any Java options, you do not need a *--* at all.
+-   If you have a *--* in your command line, the arguments for ImageJ go *after* the double-dash.
+-   In the presence of a double-dash, Fiji options have to go \_before\_ the *--* (this is to allow passing options to the Java program that would be mistaken for Fiji options otherwise).
 
 Examples:
 
@@ -49,23 +52,25 @@ Examples:
 
 *Note*: in the last example, *Ant* gets to see the option *--help*, which Fiji would have interpreted itself if it were passed before the double dash.
 
-# Useful Java options
+Useful Java options
+===================
 
 These examples are gleaned from [Headius' blog](http://blog.headius.com/2009/01/my-favorite-hotspot-jvm-flags.html):
 
-## The Basics
+The Basics
+----------
 
 Most runs will want to tweak a few simple flags:
 
-  - *-server* turns on the optimizing JIT along with a few other "server-class" settings. Generally you get the best performance out of this setting. The default VM is -client, unless you're on 64-bit (it only has -server).
-  - *-Xms* and *-Xmx* set the minimum and maximum sizes for the heap. Touted as a feature, Hotspot puts a cap on heap size to prevent it from blowing out your system. So once you figure out the max memory your app needs, you cap it to keep rogue code from impacting other apps. Use these flags like *-Xmx512M*, where the *M* stands for *MB*. If you don't include it, you're specifying bytes. Several flags use this format. You can also get a minor startup perf boost by setting minimum higher, since it doesn't have to grow the heap right away.
-  - *-Xshare:dump* can help improve startup performance on some installations. When run as root (or whatever user you have the JVM installed as) it will dump a shared-memory file to disk containing all of the core class data. This file is much faster to load then re-verifying and re-loading all the individual classes, and once in memory it's shared by all JVMs on the system. Note that *-Xshare:off*, *-Xshare:on*, *-Xshare:auto* set whether "Class Data Sharing" is enabled, and it's not available on the -server VM or on 64-bit systems. Mac users: you're already using Apple's version of this feature, upon which Hotspot's version is based.
+-   *-server* turns on the optimizing JIT along with a few other "server-class" settings. Generally you get the best performance out of this setting. The default VM is -client, unless you're on 64-bit (it only has -server).
+-   *-Xms* and *-Xmx* set the minimum and maximum sizes for the heap. Touted as a feature, Hotspot puts a cap on heap size to prevent it from blowing out your system. So once you figure out the max memory your app needs, you cap it to keep rogue code from impacting other apps. Use these flags like *-Xmx512M*, where the *M* stands for *MB*. If you don't include it, you're specifying bytes. Several flags use this format. You can also get a minor startup perf boost by setting minimum higher, since it doesn't have to grow the heap right away.
+-   *-Xshare:dump* can help improve startup performance on some installations. When run as root (or whatever user you have the JVM installed as) it will dump a shared-memory file to disk containing all of the core class data. This file is much faster to load then re-verifying and re-loading all the individual classes, and once in memory it's shared by all JVMs on the system. Note that *-Xshare:off*, *-Xshare:on*, *-Xshare:auto* set whether "Class Data Sharing" is enabled, and it's not available on the -server VM or on 64-bit systems. Mac users: you're already using Apple's version of this feature, upon which Hotspot's version is based.
 
 There are also some basic flags for logging runtime information:
 
-  - *-verbose:gc* logs garbage collector runs and how long they're taking. I generally use this as my first tool to investigate if GC is a bottleneck for a given application.
-  - *-Xprof* turns on a low-impact sampling profiler. I've had Hotspot engineers recommend I "don't use this" but I still think it's a decent (albeit very blunt) tool for finding bottlenecks. Just don't use the results as anything more than a guide.
-  - *-Xrunhprof* turns on a higher-impact instrumenting profiler. The default invocation with no extra parameters records object allocations and high-allocation sites, which is useful for finding excess object creation. *-Xrunhprof:cpu=times* instruments all Java code in the JVM and records the actual CPU time calls take.
+-   *-verbose:gc* logs garbage collector runs and how long they're taking. I generally use this as my first tool to investigate if GC is a bottleneck for a given application.
+-   *-Xprof* turns on a low-impact sampling profiler. I've had Hotspot engineers recommend I "don't use this" but I still think it's a decent (albeit very blunt) tool for finding bottlenecks. Just don't use the results as anything more than a guide.
+-   *-Xrunhprof* turns on a higher-impact instrumenting profiler. The default invocation with no extra parameters records object allocations and high-allocation sites, which is useful for finding excess object creation. *-Xrunhprof:cpu=times* instruments all Java code in the JVM and records the actual CPU time calls take.
 
 ### Examples
 
@@ -73,8 +78,8 @@ There are also some basic flags for logging runtime information:
 
 `./fiji -Xms4000m -Xmx4000m -Xincgc --`
 
-  - The fixed heap size prevents out of memory errors because there isn't ever the need to resize it. If you define -Xms256m and -Xmx4000m, then when in need of exceeding 256m, a greater heap is allocated on the fly and the old one copied into the new one, which will fail when the sum of the sizes of the old and the new are bigger than what the computer can handle (or so I've been told, and indeed fixed heap size helps a lot to prevent incomprehensible out of memory errors.)
-  - The incremental garbage collection runs a garbage collection in a parallel thread, avoiding long pauses and avoiding heap build-up that could lead to incomprehensible out of memory errors when suddenly attempting to allocate a lot of heap.
+-   The fixed heap size prevents out of memory errors because there isn't ever the need to resize it. If you define -Xms256m and -Xmx4000m, then when in need of exceeding 256m, a greater heap is allocated on the fly and the old one copied into the new one, which will fail when the sum of the sizes of the old and the new are bigger than what the computer can handle (or so I've been told, and indeed fixed heap size helps a lot to prevent incomprehensible out of memory errors.)
+-   The incremental garbage collection runs a garbage collection in a parallel thread, avoiding long pauses and avoiding heap build-up that could lead to incomprehensible out of memory errors when suddenly attempting to allocate a lot of heap.
 
 2\. Run the JVM as above, but launching a macro that opens a TrakEM2 project on startup.
 
@@ -108,31 +113,33 @@ I use many of the above combined into a script to launch fiji in a bash shell:
 
 Notice the -- "$@" to pass any script arguments as ImageJ arguments.
 
-## Deeper Magic
+Deeper Magic
+------------
 
 Eventually you may want to tweak deeper details of the JVM:
 
-  - *-XX:+UseParallelGC* turns on the parallel young-generation garbage collector. This is a stop-the-world collector that uses several threads to reduce pause times. There's also *-XX:+UseParallelOldGC* to use a parallel collector for the old generation, but it's generally only useful if you often have large numbers of old objects getting collected.
-  - *-XX:+UseConcMarkSweepGC* turns on the concurrent mark-sweep collector. This one runs most GC operations in parallel to your application's execution, reducing pauses significantly. It still stops the world for its compact phase, but that's usually quicker than pausing for the whole set of GC operations. This is useful if you need to reduce the impact GC has on an application run and don't mind that it's a little slower than the full stop-the-world versions. Also, you obviously would need multiple processors to see full effect. (Incidentally, if you're interested in GC tuning, you should look at [Java SE 6 HotSpot Virtual Machine Garbage Collection Tuning](http://java.sun.com/javase/technologies/hotspot/gc/gc_tuning_6.html). There's a lot more there.)
-  - *-XX:NewRatio=\#* sets the desired ratio of "new" to "old" generations in the heap. The defaults are 1:12 in the *-client* VM and 1:8 in the *-server* VM. You often want a higher ratio if you have a lot more transient data flowing through your application than long-lived data. For example, Ruby's high object churn often means a lower NewRatio (i.e. larger "new" versus "old") helps performance, since it prevents transient objects from getting promoted to old generations.
-  - *-XX:MaxPermSize=\#\#\#M* sets the maximum "permanent generation" size. Hotspot is unusual in that several types of data get stored in the "permanent generation", a separate area of the heap that is only rarely (or never) garbage-collected. The list of perm-gen hosted data is a little fuzzy, but it generally contains things like class metadata, bytecode, interned strings, and so on (and this certainly varies across Hotspot versions). Because this generation is rarely or never collected, you may need to increase its size (or turn on perm-gen sweeping with a couple other flags).
+-   *-XX:+UseParallelGC* turns on the parallel young-generation garbage collector. This is a stop-the-world collector that uses several threads to reduce pause times. There's also *-XX:+UseParallelOldGC* to use a parallel collector for the old generation, but it's generally only useful if you often have large numbers of old objects getting collected.
+-   *-XX:+UseConcMarkSweepGC* turns on the concurrent mark-sweep collector. This one runs most GC operations in parallel to your application's execution, reducing pauses significantly. It still stops the world for its compact phase, but that's usually quicker than pausing for the whole set of GC operations. This is useful if you need to reduce the impact GC has on an application run and don't mind that it's a little slower than the full stop-the-world versions. Also, you obviously would need multiple processors to see full effect. (Incidentally, if you're interested in GC tuning, you should look at [Java SE 6 HotSpot Virtual Machine Garbage Collection Tuning](http://java.sun.com/javase/technologies/hotspot/gc/gc_tuning_6.html). There's a lot more there.)
+-   *-XX:NewRatio=\#* sets the desired ratio of "new" to "old" generations in the heap. The defaults are 1:12 in the *-client* VM and 1:8 in the *-server* VM. You often want a higher ratio if you have a lot more transient data flowing through your application than long-lived data. For example, Ruby's high object churn often means a lower NewRatio (i.e. larger "new" versus "old") helps performance, since it prevents transient objects from getting promoted to old generations.
+-   *-XX:MaxPermSize=\#\#\#M* sets the maximum "permanent generation" size. Hotspot is unusual in that several types of data get stored in the "permanent generation", a separate area of the heap that is only rarely (or never) garbage-collected. The list of perm-gen hosted data is a little fuzzy, but it generally contains things like class metadata, bytecode, interned strings, and so on (and this certainly varies across Hotspot versions). Because this generation is rarely or never collected, you may need to increase its size (or turn on perm-gen sweeping with a couple other flags).
 
 And there are a few more advanced logging and profiling options as well:
 
-  - *-XX:+PrintCompilation* prints out the name of each Java method Hotspot decides to JIT compile. The list will usually show a bunch of core Java class methods initially, and then turn to methods in your application. In JRuby, it eventually starts to show Ruby methods as well.
-  - *-XX:+PrintGCDetails* includes the data from -verbose:gc but also adds information about the size of the new generation and more accurate timings.
-  - *-XX:+TraceClassLoading* and *-XX:+TraceClassUnloading* print information class loads and unloads. Useful for investigating if you have a class leak or if old classes are getting collected or not.
+-   *-XX:+PrintCompilation* prints out the name of each Java method Hotspot decides to JIT compile. The list will usually show a bunch of core Java class methods initially, and then turn to methods in your application. In JRuby, it eventually starts to show Ruby methods as well.
+-   *-XX:+PrintGCDetails* includes the data from -verbose:gc but also adds information about the size of the new generation and more accurate timings.
+-   *-XX:+TraceClassLoading* and *-XX:+TraceClassUnloading* print information class loads and unloads. Useful for investigating if you have a class leak or if old classes are getting collected or not.
 
-## Into The Belly
+Into The Belly
+--------------
 
 Finally here's a list of the deepest options we use to investigate performance. Some of these require a debug build of the JVM, which you can download from java.net.
 
 Also, some of these may require you also pass *-XX:+UnlockDiagnosticVMOptions* to enable them.
 
-  - *-XX:MaxInlineSize=\#* sets the maximum size method Hotspot will consider for inlining. By default it's set at 35 \*bytes\* of bytecode (i.e. pretty small). This is largely why Hotspot really like lots of small methods; it can then decide the best way to inline them based on runtime profiling. You can bump it up, and sometimes it will produce better performance, but at some point the compilation units get large enough that many of Hotspot's optimizations are skipped. Fun to play with though.
-  - *-XX:CompileThreshold=\#* sets the number of method invocations before Hotspot will compile a method to native code. The -server VM defaults to 10000 and -client defaults to 1500. Large numbers allow Hotspot to gather more profile data and make better decisions about inlining and optimizations. Smaller numbers reduce "warm up" time.
-  - *-XX:+LogCompilation* is like *-XX:+PrintCompilation* on steroids. It not only prints out methods that are being JITed, it also prints out why methods may be deoptimized (like if new code is loaded or a new call target is discovered) and information about which methods are being inlined. There's a caveat though: the output is seriously nasty XML without any real structure to it. I use a Sun-internal tool for rendering it in a nicer format, which I'm trying to get open-sourced. Hopefully that will happen soon. Note, this option requires *-XX:+UnlockDiagnosticVMOptions*.
+-   *-XX:MaxInlineSize=\#* sets the maximum size method Hotspot will consider for inlining. By default it's set at 35 \*bytes\* of bytecode (i.e. pretty small). This is largely why Hotspot really like lots of small methods; it can then decide the best way to inline them based on runtime profiling. You can bump it up, and sometimes it will produce better performance, but at some point the compilation units get large enough that many of Hotspot's optimizations are skipped. Fun to play with though.
+-   *-XX:CompileThreshold=\#* sets the number of method invocations before Hotspot will compile a method to native code. The -server VM defaults to 10000 and -client defaults to 1500. Large numbers allow Hotspot to gather more profile data and make better decisions about inlining and optimizations. Smaller numbers reduce "warm up" time.
+-   *-XX:+LogCompilation* is like *-XX:+PrintCompilation* on steroids. It not only prints out methods that are being JITed, it also prints out why methods may be deoptimized (like if new code is loaded or a new call target is discovered) and information about which methods are being inlined. There's a caveat though: the output is seriously nasty XML without any real structure to it. I use a Sun-internal tool for rendering it in a nicer format, which I'm trying to get open-sourced. Hopefully that will happen soon. Note, this option requires *-XX:+UnlockDiagnosticVMOptions*.
 
 And finally, my current absolute favorite option, which requires a debug build of the JVM:
 
-  - *-XX:+PrintOptoAssembly* dumps to the console a log of all assembly being generated for JITed methods. The instructions are basically x86 assembly with a few Hotspot-specific instruction names that get replaced with hardware-specific instructions during the final assembly phase. In addition to the JITed assembly, this flag also shows how registers are being allocated, the probability of various branches being followed (along with multiple assembly blocks for the different paths), and information about calls back into the JVM.
+-   *-XX:+PrintOptoAssembly* dumps to the console a log of all assembly being generated for JITed methods. The instructions are basically x86 assembly with a few Hotspot-specific instruction names that get replaced with hardware-specific instructions during the final assembly phase. In addition to the JITed assembly, this flag also shows how registers are being allocated, the probability of various branches being followed (along with multiple assembly blocks for the different paths), and information about calls back into the JVM.

@@ -10,7 +10,8 @@ description: test description
 (Return to the [Developer Documentation](3D_Viewer__Developer_Documentation ) page)  
 (Return to the main [3D\_Viewer](3D_Viewer ) page)
 
-## How to catch and handle events on the 3D canvas
+How to catch and handle events on the 3D canvas
+-----------------------------------------------
 
 You can download example source code for this HowTo [here](3D_Viewer__Example_code ).
 
@@ -18,26 +19,24 @@ This howto shows how to catch and handle mouse or key events:
 
 Where you set up the universe, call `setInteractiveBehavior(...)`:
 
-``` java
-    univ = new Image3DUniverse();
-    univ.show();
-    Content c = univ.addCustomMesh(...);
+        univ = new Image3DUniverse();
+        univ.show();
+        Content c = univ.addCustomMesh(...);
 
-    // this is necessary for catching the mouse events
-    univ.setInteractiveBehavior(new CustomBehavior(univ, c));
-```
+        // this is necessary for catching the mouse events
+        univ.setInteractiveBehavior(new CustomBehavior(univ, c));
 
 Then create a new (maybe inner) class that extends `ij3d.behaviors.InteractiveBehavior`.
 
     private class CustomBehavior extends InteractiveBehavior {
-    
+
         private Content c;
         
         CustomBehavior(Image3DUniverse univ, Content c) {
             super(univ);
             this.c = c;
         }
-    
+
         public void doProcess(MouseEvent e) {
             if(!e.isControlDown() ||
                 e.getID() != MouseEvent.MOUSE_PRESSED) {
@@ -50,7 +49,7 @@ Then create a new (maybe inner) class that extends `ij3d.behaviors.InteractiveBe
                 getPickPointGeometry(c, e.getX(), e.getY());
             if(p == null)
                 return;
-    
+
             IJ.showMessage("Picked " + new Point3f(p));
         }
     }

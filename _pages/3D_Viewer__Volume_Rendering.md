@@ -10,7 +10,8 @@ description: test description
 (Return to the [Developer Documentation](3D_Viewer__Developer_Documentation ) page)  
 (Return to the main [3D\_Viewer](3D_Viewer ) page)
 
-## How to work with volume renderings
+How to work with volume renderings
+----------------------------------
 
 You can download example source code for this HowTo [here](3D_Viewer__Example_code ).
 
@@ -22,23 +23,21 @@ Because `fillRoi()` is a method which only applies to volume renderings (orthosl
 
 `VoltexGroup` is a subclass of `ContentNode`, and can be retrieved from a `Content` (one which is displayed as a volume rendering) with `getContent()`:
 
-``` java
-    // Add the image as a volume
-    Content c = univ.addVoltex(imp);
+        // Add the image as a volume
+        Content c = univ.addVoltex(imp);
 
 
-    // Retrieve the VoltexGroup
-    VoltexGroup voltex = (VoltexGroup)c.getContent();
+        // Retrieve the VoltexGroup
+        VoltexGroup voltex = (VoltexGroup)c.getContent();
 
-    // Define a ROI
-    Roi roi = new OvalRoi(240, 220, 70, 50);
+        // Define a ROI
+        Roi roi = new OvalRoi(240, 220, 70, 50);
 
-    // Define a fill color
-    byte fillValue = (byte)100;
+        // Define a fill color
+        byte fillValue = (byte)100;
 
-    // Fill the part of the volume which results from the
-    // projection of the polygon onto the volume:
-    voltex.fillRoi(univ.getCanvas(), roi, fillValue);
-```
+        // Fill the part of the volume which results from the
+        // projection of the polygon onto the volume:
+        voltex.fillRoi(univ.getCanvas(), roi, fillValue);
 
 One thing worth to keep in mind is that also the original image is changed, and can in this form be saved, if desired.

@@ -17,7 +17,8 @@ description: test description
 {% endcapture %}
 {% include info-box software='Fiji ' name='Robust Clump Splitting ' author=author maintainer=maintainer filename='ij\_robust\_split.jar \[\] ' source='Github https://github.com/thorstenwagner/ij-robust-split ' latest-version='v1.0.0 (04 Sep 2016) ' status='active ' %}
 
-## Purpose
+Purpose
+-------
 
 This plugin is an implementation of the concavity-based clump splitting algorithms described in:
 
@@ -33,17 +34,18 @@ The plugin provides an alternative to the ImageJ "build-in"-[watershed](https://
 
 It depends on the [IJ-Blob](https://imagej.net/IJ_Blob) library, the [Vecmath](https://github.com/hharrison/vecmath) library, the [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) library and the [JavaML](http://java-ml.sourceforge.net/) library.
 
-## Plugin usage
+Plugin usage
+------------
 
-If you start the plugin you can choose between two main uses, you either want to split clumps of an image or want to train a SVM to optimize parameters $$c_1$$ and $$c_2$$. To train the SVM you need to have input data already.
+If you start the plugin you can choose between two main uses, you either want to split clumps of an image or want to train a SVM to optimize parameters $$*c*<sub>1</sub>$$ and $$*c*<sub>2</sub>$$. To train the SVM you need to have input data already.
 
-![Eingabemaske2.png](/images/pages/Eingabemaske2.png "Eingabemaske2.png")
+![](/images/pages/Eingabemaske2.png "Eingabemaske2.png")
 
 ### Detection Types
 
 The plugin supports different types of split lines, concavity region detection and concavity pixel detection. If you want to split a clump you have to choose, what kind of detection you want to use.
 
-![PluginScreenshot1.png](/images/pages/PluginScreenshot1.png "PluginScreenshot1.png")
+![](/images/pages/PluginScreenshot1.png "PluginScreenshot1.png")
 
 #### Split Lines
 
@@ -99,7 +101,7 @@ The plugin supports different concavity pixel detection types. The chosen type s
 
 ### SVM
 
-The parameters $$c_1$$ and $$c_2$$ can be optimized by a linear SVM. This SVM is integrated in the plugin and uses the [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) library.
+The parameters $$*c*<sub>1</sub>$$ and $$*c*<sub>2</sub>$$ can be optimized by a linear SVM. This SVM is integrated in the plugin and uses the [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) library.
 
 If you want to train the SVM you have to generate training and testdata first. There is currently no easy way of generating those.
 
@@ -107,27 +109,28 @@ Firstly you have to generate an image with optimal split lines manually. This ma
 
 Now you have to look for a good cost- and epsilon parameter of the SVM. This could happen by a grid search for example.
 
-![SVMParameter.png](/images/pages/SVMParameter.png "SVMParameter.png")
+![](/images/pages/SVMParameter.png "SVMParameter.png")
 
 After this the SVM starts training. This could take some time. The duration depends on complexity and size of the training data.
 
 Once the SVM was trained, there are two windows, showing the results. In the first window you can see a graphical representation of the SVM model. The blue points represent the split line class, the red points represent the no split line class data and the green line represents the dividing line of the SVM.
 
-![SVMModellGraphic.png](/images/pages/SVMModellGraphic.png "SVMModellGraphic.png")
+![](/images/pages/SVMModellGraphic.png "SVMModellGraphic.png")
 
-The second window shows the parameters of this model. The optimum for $$c_1$$ and $$c_2$$ parameters, are given together with the number of support vectors and a confidencial matrix to evaluate the model.
+The second window shows the parameters of this model. The optimum for $$*c*<sub>1</sub>$$ and $$*c*<sub>2</sub>$$ parameters, are given together with the number of support vectors and a confidencial matrix to evaluate the model.
 
 <img src="/images/pages/SVMModelNumbers.png" width="300"/>
 
-## Parameters
+Parameters
+----------
 
 As already mentioned the main algorithm follows the publication of *Kumar et al.* The presented algorithm to specify a valid split line depends on lots of parameters, as you can see below. Not every parameter is needed for every split line type and concavity region detection
 
-![PluginScreenshot3.png](/images/pages/PluginScreenshot3.png "PluginScreenshot3.png")
+![](/images/pages/PluginScreenshot3.png "PluginScreenshot3.png")
 
 **background color:** Choose the color of your background. Choose white, if the objects are darker than the background, and black if the objects are lighter than the background.
 
-**is already preprocessed:** Choose whether or not your picture is already preprocessed. If unchecked, preprocessing will be executed before the algorithm starts. The default-preprocessing contains: binarization, erosion, gaussian blur ($$\sigma=2$$), dilation
+**is already preprocessed:** Choose whether or not your picture is already preprocessed. If unchecked, preprocessing will be executed before the algorithm starts. The default-preprocessing contains: binarization, erosion, gaussian blur ($$*σ* = 2$$), dilation
 
 **Show concavity regions:** If checked, an overlay shows detected concavity regions, this could help to detect good thresholds and to detect mistakes in detection.
 
@@ -137,23 +140,23 @@ As already mentioned the main algorithm follows the publication of *Kumar et al.
 
 **binarization threshold:** Threshold to binarize an image. Default: Detected value for the image by ImageJ default method.
 
-**concavity-depth threshold:** Largest distance of a concavity region in pixels $$CD_i$$. Threshold should be smaller than minimum concavity-depth value of a valid concavity pixel.
+**concavity-depth threshold:** Largest distance of a concavity region in pixels $$*C**D*<sub>*i*</sub>$$. Threshold should be smaller than minimum concavity-depth value of a valid concavity pixel.
 
-**saliency-threshold:** The ratio of concavity-depth and distance of two concavity pixels, increases, if less split lines are detected. $$SA_{i,j}=\frac{\min(CD_i,CD_j)}{\min(CD_i,CD_j)+ d(C_i,C_j)}$$
+**saliency-threshold:** The ratio of concavity-depth and distance of two concavity pixels, increases, if less split lines are detected. $$$SA\_{i,j}=\\frac{\\min(CD\_i,CD\_j)}{\\min(CD\_i,CD\_j)+ d(C\_i,C\_j)}$$$
 
-**concavity-concavity-alignment-threshold:** Angle between orientation of the two concavity regions. $$CC_{ij}= \pi - \cos^{-1}(v_i \cdot v_j)$$. Threshold should be greater than $$\max{|180-|\theta_i-\theta_j||}$$ of all valid split lines.
+**concavity-concavity-alignment-threshold:** Angle between orientation of the two concavity regions. $$*C**C*<sub>*i**j*</sub> = *π* − cos<sup> − 1</sup>(*v*<sub>*i*</sub> ⋅ *v*<sub>*j*</sub>)$$. Threshold should be greater than $$max \|180 − \|*θ*<sub>*i*</sub> − *θ*<sub>*j*</sub>\|\|$$ of all valid split lines.
 
 <img src="/images/pages/ConcavityConcavityAlignment.png" width="300"/>
 
-**concavity-line-alignment-threshold:** Angle between orientation of a split lines concavity pixel and the split line. $$CL_{ij}=\max{\cos^{-1}(v_i \cdot u_{ij}),\cos^{-1}(v_j \cdot (-u_{ij})))}$$
+**concavity-line-alignment-threshold:** Angle between orientation of a split lines concavity pixel and the split line. $$*C**L*<sub>*i**j*</sub> = max cos<sup> − 1</sup>(*v*<sub>*i*</sub> ⋅ *u*<sub>*i**j*</sub>), cos<sup> − 1</sup>(*v*<sub>*j*</sub> ⋅ ( − *u*<sub>*i**j*</sub>)))$$
 
 <img src="/images/pages/ConcavityLineAlignment.png" width="300"/>
 
-**concavity-angle-threshold:** Angle of a concavity region. $$CA=\angle C_{i1}C_iC_{i2}$$ Threshold should be larger, than the maximum angle of a concavity region where a split line between concavity pixel and contour point is expected.
+**concavity-angle-threshold:** Angle of a concavity region. $$*C**A* = ∠*C*<sub>*i*1</sub>*C*<sub>*i*</sub>*C*<sub>*i*2</sub>$$ Threshold should be larger, than the maximum angle of a concavity region where a split line between concavity pixel and contour point is expected.
 
 <img src="/images/pages/ConcavityAngle.png" width="300"/>
 
-**concavity-ratio-threshold:** Ratio between first and second largest concavity regions. $$CR=\frac{CD_m}{CD_n}$$ Threshold should be smaller than the maximum ratio of valid split line between concavity pixel and contour point.
+**concavity-ratio-threshold:** Ratio between first and second largest concavity regions. $$$CR=\\frac{CD\_m}{CD\_n}$$$ Threshold should be smaller than the maximum ratio of valid split line between concavity pixel and contour point.
 
 **inner-contour-parameter:** Same as inner contour constant. If the inner contour is large and round, choose a large constant, else choose a small constant.
 
@@ -163,17 +166,19 @@ As already mentioned the main algorithm follows the publication of *Kumar et al.
 
 <img src="/images/pages/PictureSelection.png" width="300"/>
 
-**$$c_1$$:** Parameter to validate a split line, for an optimal value train SVM.
+**$$*c*<sub>1</sub>$$:** Parameter to validate a split line, for an optimal value train SVM.
 
-**$$c_2$$:** Parameter to validate a split line, for an optimal value train SVM.
+**$$*c*<sub>2</sub>$$:** Parameter to validate a split line, for an optimal value train SVM.
 
-**$$\chi$$-threshold:** Parameter to validate a splitline. $$\chi = \frac{c_1*CD_i+c_1*CD_j+c_2}{d(C_i,C_j)+c_1*CD_i+ c_1*CD_j+c_2}$$ Decrease threshold value if there are less split lines.
+**$$*χ*$$-threshold:** Parameter to validate a splitline. $$$\\chi = \\frac{c\_1\*CD\_i+c\_1\*CD\_j+c\_2}{d(C\_i,C\_j)+c\_1\*CD\_i+ c\_1\*CD\_j+c\_2}$$$ Decrease threshold value if there are less split lines.
 
-# Installation
+Installation
+============
 
 If you use ImageJ just copy ij\_robust\_split.jar in your plugins folder and copy the [IJ-Blob](https://imagej.net/IJ_Blob), [Vecmath](https://github.com/hharrison/vecmath), the [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) and the [JavaML](http://java-ml.sourceforge.net/) jars into the plugins/jars folder.
 
-# How to cite
+How to cite
+===========
 
 The best way to cite the formal methods is:
 

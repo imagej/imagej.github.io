@@ -7,7 +7,8 @@ categories:
 description: test description
 ---
 
-## General information
+General information
+-------------------
 
 ### What is HPC Workflow Manager
 
@@ -29,20 +30,21 @@ Access to supercomputers can often be difficult to get. HPC Workflow Manager aim
 
 The HPC Workflow Manager Client supports two workflow types:
 
-  - SPIM; and
-  - Macro.
+-   SPIM; and
+-   Macro.
 
 This guide will only explain how to use the newly added Macro workflow type.
 
 If you are interested in the SPIM workflow type visit [this](https://imagej.net/SPIM_Workflow_Manager_For_HPC) page.
 
-## How to use
+How to use
+----------
 
 ### How to start the plugin
 
-From the Fiji menu bar select Plugins \> Multiview Reconstruction \> HPC Workflow Manager and fill in the Login dialog that will appear. For example, see the filled-in dialog in Figure 1.
+From the Fiji menu bar select Plugins &gt; Multiview Reconstruction &gt; HPC Workflow Manager and fill in the Login dialog that will appear. For example, see the filled-in dialog in Figure 1.
 
-![Figure 1: Example of a filled in login dialog.](/images/pages/Hpc-workflow-manager-login.png "Figure 1: Example of a filled in login dialog.")
+<figure><img src="/images/pages/hpc-workflow-manager-login.png" title="Figure 1: Example of a filled in login dialog." width="500" alt="Figure 1: Example of a filled in login dialog." /><figcaption aria-hidden="true">Figure 1: Example of a filled in login dialog.</figcaption></figure>
 
 ### How to login
 
@@ -54,11 +56,11 @@ Press "Ok" and the dialog should disappear, and a progress dialog should appear.
 
 After the connection to the HPC Cluster is made and the jobs are downloaded from the cluster you should see a window like the one in Figure 2. If it is the first time you run this plugin the table will be empty.
 
-![Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used.](/images/pages/Hpc-workflow-manager-main-empty.png "Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used.")
+<figure><img src="/images/pages/hpc-workflow-manager-main-empty.png" title="Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used." width="500" alt="Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used." /><figcaption aria-hidden="true">Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used.</figcaption></figure>
 
 Right-click in the empty table or an empty row of the table to display the context menu, an example of the context menu is featured in Figure 3.
 
-![ Figure 3: Context menu press right click on an empty row or empty table to display.](/images/pages/Hpc workflow manager context menu.png " Figure 3: Context menu press right click on an empty row or empty table to display.")
+<figure><img src="/images/pages/hpc_workflow_manager_context_menu.png" title=" Figure 3: Context menu press right click on an empty row or empty table to display." width="200" alt=" Figure 3: Context menu press right click on an empty row or empty table to display." /><figcaption aria-hidden="true"> Figure 3: Context menu press right click on an empty row or empty table to display.</figcaption></figure>
 
 Select the first option “Create a new job”. The “Create job” window will appear. From the “Workflow Type” section, select the “Macro Execution” option.
 
@@ -70,19 +72,19 @@ In the “Output data location” section leave the default option, “Job subdi
 
 Now, the filled-in form should look like Figure 4. If you are using Linux save the “HelloWorld” example script in your home directory (“\~/HelloWorld/user.ijm”) and use that path instead of “C:/Documents/HelloWorld”. When you are sure that the form is filled-in correctly press the “Create” button.
 
-![ Figure 4: Example of a new Macro job configuration.](/images/pages/Hpc-workflow-manager-create-job.png " Figure 4: Example of a new Macro job configuration.")
+<figure><img src="/images/pages/hpc-workflow-manager-create-job.png" title=" Figure 4: Example of a new Macro job configuration." width="300" alt=" Figure 4: Example of a new Macro job configuration." /><figcaption aria-hidden="true"> Figure 4: Example of a new Macro job configuration.</figcaption></figure>
 
 ### How to upload the data and the Macro script
 
 If you have created a new job, the main window should look roughly like Figure 5.
 
-![ Figure 5: A new Macro job has been created.](/images/pages/Hpc-workflow-manager-created-job.png " Figure 5: A new Macro job has been created.")
+<figure><img src="/images/pages/hpc-workflow-manager-created-job.png" title=" Figure 5: A new Macro job has been created." width="300" alt=" Figure 5: A new Macro job has been created." /><figcaption aria-hidden="true"> Figure 5: A new Macro job has been created.</figcaption></figure>
 
 Before you can start the job, you need to upload your script (“user.ijm”). To do this you must select the “Upload data” item from the context menu. If your script also needs data, they should also be located in the same directory that the user's script is in. The data will be uploaded along with the Macro script file.
 
 A timer will appear in the download column. When it has completed uploading the data and user's script the cell that corresponds to the job should indicate that it is “Done” (Figure 6).
 
-![ Figure 6: Uploading files (in this case just the user’s script) is done.](/images/pages/Hpc-workflow-manager-upload-job.png " Figure 6: Uploading files (in this case just the user’s script) is done.")
+<figure><img src="/images/pages/hpc-workflow-manager-upload-job.png" title=" Figure 6: Uploading files (in this case just the user’s script) is done." width="300" alt=" Figure 6: Uploading files (in this case just the user’s script) is done." /><figcaption aria-hidden="true"> Figure 6: Uploading files (in this case just the user’s script) is done.</figcaption></figure>
 
 Now that the script file is uploaded the job can be started.
 
@@ -90,22 +92,22 @@ Now that the script file is uploaded the job can be started.
 
 Let's inspect figure 6 closer. In the figure you can see the following columns:
 
-  - “Job ID” - Job’s identification number;
-  - “Status” – The job’s current status which can be:
-      - “Unknown” – the state of the job is not known;
-      - “Configuring” – the job is being configured;
-      - “Queued” – the job is in a queue and when there are available nodes it will be executed;
-      - “Running” – the job was executed and it is currently running;
-      - “Finished” – the job has stopped running successfully, completing its tasks;
-      - “Failed” – the job has stopped running unsuccessfully, it did not complete its tasks;
-      - “Canceled” – the job was stopped by the user; and
-      - Disposed – the job was disposed.
-  - “Creation time” – the time when the job was created.
-  - “Start time” – the time when the job was last started.
-  - “End time” – the time when the job last ended.
-  - “Upload” – whether the job was uploaded.
-  - “Download” – whether the job was downloaded.
-  - “Workflow Type”- whether it is SPIM or Macro workflow type.
+-   “Job ID” - Job’s identification number;
+-   “Status” – The job’s current status which can be:
+    -   “Unknown” – the state of the job is not known;
+    -   “Configuring” – the job is being configured;
+    -   “Queued” – the job is in a queue and when there are available nodes it will be executed;
+    -   “Running” – the job was executed and it is currently running;
+    -   “Finished” – the job has stopped running successfully, completing its tasks;
+    -   “Failed” – the job has stopped running unsuccessfully, it did not complete its tasks;
+    -   “Canceled” – the job was stopped by the user; and
+    -   Disposed – the job was disposed.
+-   “Creation time” – the time when the job was created.
+-   “Start time” – the time when the job was last started.
+-   “End time” – the time when the job last ended.
+-   “Upload” – whether the job was uploaded.
+-   “Download” – whether the job was downloaded.
+-   “Workflow Type”- whether it is SPIM or Macro workflow type.
 
 Right-click on the new job to display the context menu (of Figure 3). You will notice that there are new enabled items.
 
@@ -123,7 +125,7 @@ There are two ways to inspect the progress of a job.
 
 The first one is by looking at the “Status” of a job. This way you can see whether a job is running on the HPC Cluster or not. In the case of Figure 7, the job is “Queued”.
 
-![ Figure 7: Job is queued.](/images/pages/Hpc-workflow-manager-queued-job.png " Figure 7: Job is queued.")
+<figure><img src="/images/pages/hpc-workflow-manager-queued-job.png" title=" Figure 7: Job is queued." width="300" alt=" Figure 7: Job is queued." /><figcaption aria-hidden="true"> Figure 7: Job is queued.</figcaption></figure>
 
 However, this is a very coarse-grained way to see the progress of the job and when it starts running it does not provide any useful information until it has ended (“Finished”, “Failed” etc.).
 
@@ -137,17 +139,17 @@ You can see a snapshot of the progress of the tasks of the running job of the ex
 
 Each line represents a different task, each column represents a different compute-node where the task is executed on, with the exception of the first column that provides task descriptions. Cells that do not have a progress indicator represent nodes that either will not execute the task at all or they have not started executing the task yet. In the second case, a progress indicator will appear when the progress is updated to zero percent (0%) or more.
 
-![ Figure 8: The job is running and the progress indicators display the progress for each task on each compute-node.](/images/pages/Hpc-workflow-manager-progress-running.png " Figure 8: The job is running and the progress indicators display the progress for each task on each compute-node.")
+<figure><img src="/images/pages/hpc-workflow-manager-progress-running.png" title=" Figure 8: The job is running and the progress indicators display the progress for each task on each compute-node." width="300" alt=" Figure 8: The job is running and the progress indicators display the progress for each task on each compute-node." /><figcaption aria-hidden="true"> Figure 8: The job is running and the progress indicators display the progress for each task on each compute-node.</figcaption></figure>
 
 ### Job dashboard
 
 In the “Job dashboard” there are the following five tabs:
 
-  - “Macro Progress” – this tab is described in the previous section Inspecting progress (click [here](https://imagej.net/File:Hpc-workflow-manager-macro-progress.png) );
-  - “Error output” - the error output and warnings that are redirected live from the HPC Cluster (click [here](https://imagej.net/File:Hpc-workflow-manager-error-output.png) );
-  - “Other output”- the live redirected standard output from the cluster in the tab (click [here](https://imagej.net/File:Hpc-workflow-manager-other-output.png) );
-  - “Job directories” – contains a listing of the job directories (Input, Output and Working) (click [here](https://imagej.net/File:Hpc-workflow-manager-job-directories.png) ); and
-  - “Data upload” – contains a listing of the files that were uploaded (click [here](https://imagej.net/File:Hpc-workflow-manager-data-upload.png) );
+-   “Macro Progress” – this tab is described in the previous section Inspecting progress (click [here](https://imagej.net/File:Hpc-workflow-manager-macro-progress.png) );
+-   “Error output” - the error output and warnings that are redirected live from the HPC Cluster (click [here](https://imagej.net/File:Hpc-workflow-manager-error-output.png) );
+-   “Other output”- the live redirected standard output from the cluster in the tab (click [here](https://imagej.net/File:Hpc-workflow-manager-other-output.png) );
+-   “Job directories” – contains a listing of the job directories (Input, Output and Working) (click [here](https://imagej.net/File:Hpc-workflow-manager-job-directories.png) ); and
+-   “Data upload” – contains a listing of the files that were uploaded (click [here](https://imagej.net/File:Hpc-workflow-manager-data-upload.png) );
 
 ### How to download the results
 
@@ -155,7 +157,8 @@ Once the job has finished you can right-click and select the item “Download re
 
 When the timer in the “Download” column has finished and the state is “Done” the files will have been transferred. You can see the downloaded files by right-clicking the job and selecting the item “Open job sub-directory”.
 
-## How to write a parallel Macro
+How to write a parallel Macro
+-----------------------------
 
 ### Prerequisites
 
@@ -175,21 +178,17 @@ Let's write a simple “greeting” Macro script where each node will greet the 
 
 First, we can write a serial version:
 
-``` java
-print("The greeting program.");
-print("Hello I am a single node.");
-print("Bye, from the only node.");
-```
+    print("The greeting program.");
+    print("Hello I am a single node.");
+    print("Bye, from the only node.");
 
 Now let’s parallelize this by adding a call to `parInit()` at the beginning in order to start the parallel execution of the program. We must also add a call to `parFinalize()` at the end of our program to stop the parallelization. The code should now look like this:
 
-``` java
-parInit();
-  print("The greeting program.");
-  print("Hello I am a single node.");
-  print("Bye, from the only node.");
-parFinalize();
-```
+    parInit();
+      print("The greeting program.");
+      print("Hello I am a single node.");
+      print("Bye, from the only node.");
+    parFinalize();
 
 Very well, our program is now parallelized. However, the messages no longer make sense.
 
@@ -197,16 +196,14 @@ We should get the id of the node and print it instead as well as the total numbe
 
 To get the id of the node (that is its rank) we must call `parGetRank()`.
 
-``` java
-parInit();  
-  myRank = parGetRank();
-  if (myRank == 0){
-    print("The greeting program.");
-  }
-  print("Hello I am node number: "+myRank);
-  print("Bye, from node number: "+myRank);
-parFinalize();
-```
+    parInit();  
+      myRank = parGetRank();
+      if (myRank == 0){
+        print("The greeting program.");
+      }
+      print("Hello I am node number: "+myRank);
+      print("Bye, from node number: "+myRank);
+    parFinalize();
 
 Notice that we also nested the first `print()` in an `if` statement comparing the rank with the first one (0), this is done in order to print this message only once.
 
@@ -214,15 +211,11 @@ You may choose any rank of the available nodes, it is not necessary to use the f
 
 To greet all of the nodes let’s add the total number of nodes used to run the script (size) as well by calling get size `parGetSize()`. Add the following line after getting the rank to get the size:
 
-``` java
-  size = parGetSize();
-```
+      size = parGetSize();
 
 And modify the first print to read:
 
-``` java
-  print("Hello to all "+size+" nodes. I am node number: "+myRank);
-```
+      print("Hello to all "+size+" nodes. I am node number: "+myRank);
 
 Very well, our program is now parallelized. Unfortunately, it is incorrect.
 
@@ -230,13 +223,11 @@ If you run it enough times you will notice that sometimes a node will “depart�
 
 For example, if there are two (2) nodes the redirected output in the “Other output” tab could look like this:
 
-``` text
-The greeting program.
-Hello I am node number: 1
-Bye, form node number: 1
-Hello I am node number: 0
-Bye, from node number: 0
-```
+    The greeting program.
+    Hello I am node number: 1
+    Bye, form node number: 1
+    Hello I am node number: 0
+    Bye, from node number: 0
 
 To correct this we will put a barrier to the flow of the execution of the code.
 
@@ -244,44 +235,34 @@ To correct this we will put a barrier to the flow of the execution of the code.
 
 Do this by adding calling `parBarrier()` bellow the greeting and above the announcement of the departure of the node.
 
-``` java
-  print("Hello I am node number: "+myRank);
-  parBarrier();
-  print("Bye, from node number: "+myRank);
-```
+      print("Hello I am node number: "+myRank);
+      parBarrier();
+      print("Bye, from node number: "+myRank);
 
 The script will run correctly now, for example for three (3) nodes the following output may be printed:
 
-``` text
-Hello I am node number: 1
-Hello I am node number: 3
-Hello I am node number: 0
-Bye, form node number: 3
-Bye, from node number: 0
-Bye, from node number: 1
-```
+    Hello I am node number: 1
+    Hello I am node number: 3
+    Hello I am node number: 0
+    Bye, form node number: 3
+    Bye, from node number: 0
+    Bye, from node number: 1
 
 Which is correct. Now let us imagine that node number one (1) and only node number one (1) brought with it a cake. And wants to share that information by printing it. You can have code executed in only specific nodes by using an `if` statement and comparing the rank like so:
 
-``` java
- if(myRank == 1){
-   print("I brought the cake.");
- }
-```
+     if(myRank == 1){
+       print("I brought the cake.");
+     }
 
 Add the above snippet anywhere in the parallel region (that is between `parInit()` and `parFinalize()`) and before calling `parBarrier()`.
 
 Great, now since node one brought the cake it would like to share it with the rest of the nodes. Let’s imagine that the cake is an array made out of numbers. Like the following one:
 
-``` java
-  cake = newArray(1, 2, 3, 4);
-```
+      cake = newArray(1, 2, 3, 4);
 
 There are four pieces of cake. Add the above line inside the `if` statement’s body. Above the `if` statement add the following:
 
-``` java
-  cake = newArray(0);
-```
+      cake = newArray(0);
 
 Which means that the rest of the nodes do not have a cake. You will understand why this is necessary later.
 
@@ -289,35 +270,31 @@ Node number one wants to divide them equally. This is why `parScatterEqually()` 
 
 `parScatterEqually()` will at the same time send and receive the cake piece or pieces (array items). It needs three arguments, the array to split as well as send (scatter), the length of the sent array, and which node is to spit the array and send it. Thus, in this case, you must add the bellow line after the `if` statement’s body:
 
-``` java
-  receivedPieces = parScatterEqually(cake, 4, 1); // Do NOT use lengthOf(cake);
-```
+      receivedPieces = parScatterEqually(cake, 4, 1); // Do NOT use lengthOf(cake);
 
-Remember the rest of the nodes do not have a cake and cannot know its size\! All nodes including one (1) will receive parts of the cake. Since there are more than three pieces of cake the first node (rank == 0) will get the extra piece. (`parScatterEqually()` will always give any extra array elements to the first node, to avoid this one must use `parScatter()` and specify exactly how many elements is each node to receive).
+Remember the rest of the nodes do not have a cake and cannot know its size! All nodes including one (1) will receive parts of the cake. Since there are more than three pieces of cake the first node (rank == 0) will get the extra piece. (`parScatterEqually()` will always give any extra array elements to the first node, to avoid this one must use `parScatter()` and specify exactly how many elements is each node to receive).
 
 Now you may print the piece or pieces that the node received. This is the last step of the example in this section. Overall, the code should now look like this:
 
-``` java
-parInit();
-  myRank = parGetRank();
-  if(myRank == 0){
-    print("The greeting program.");
-  }
-  size = parGetSize();
-  print("Hello to all "+size+" nodes. I am node number: "+myRank);
-  cake = newArray(0);
-  if(myRank == 1){
-    print("I brought the cake.");
-    cake = newArray(1, 2, 3, 4);
-  }
-  receivedPieces = parScatterEqually(cake, 4, 1);
-  parBarrier();
-  for(i = 0; i < lengthOf(receivedPieces); i++){
-    print("I node number "+myRank+" received piece: "+receivedPieces[i]);
-  }
-  print("Bye, from node number: "+myRank);
-parFinalize();
-```
+    parInit();
+      myRank = parGetRank();
+      if(myRank == 0){
+        print("The greeting program.");
+      }
+      size = parGetSize();
+      print("Hello to all "+size+" nodes. I am node number: "+myRank);
+      cake = newArray(0);
+      if(myRank == 1){
+        print("I brought the cake.");
+        cake = newArray(1, 2, 3, 4);
+      }
+      receivedPieces = parScatterEqually(cake, 4, 1);
+      parBarrier();
+      for(i = 0; i < lengthOf(receivedPieces); i++){
+        print("I node number "+myRank+" received piece: "+receivedPieces[i]);
+      }
+      print("Bye, from node number: "+myRank);
+    parFinalize();
 
 Lastly, something important to remember is that nodes do not share memory. Each node is separate, they can only communicate through messages (sending data). Currently only by calling `parScatterEqually()` or `parScatter()`.
 
@@ -358,69 +335,67 @@ Be careful, since the task is added only on node one (1) the indices of the task
 
 For example, the following two nodes will have different task numbers for the same tasks in the list presented earlier in this section:
 
-  - node zero (0) will have: list(1) -\> id(0), list(3) -\> id(1), list(4) -\> id(2).
-  - while node (1) will have: list(1) -\> id(0), list(2) -\> id(1), list(3) -\> id(2), list(4) -\> id(3).
+-   node zero (0) will have: list(1) -&gt; id(0), list(3) -&gt; id(1), list(4) -&gt; id(2).
+-   while node (1) will have: list(1) -&gt; id(0), list(2) -&gt; id(1), list(3) -&gt; id(2), list(4) -&gt; id(3).
 
 This can cause great difficulty, this is why it is suggested to always store the task id returned when adding the task in a variable and use it instead.
 
-``` java
-parInit();
-  introductionTask = parAddTask("Introduction to other nodes.");
-  
-  myRank = parGetRank();
-  size = parGetSize();
-  
-  if(myRank == 1){
-    print("The greeting program. Now with progress reporting!");
-    cakeTask = parAddTask("Get the cake.");
-  }
-  getPieceTask = parAddTask("Get the cake pieces.");
-  annoucementTask = parAddTask("Announce the pieces you got.");
-  parReportTasks();
-
-  parReportProgress(introductionTask,0);
-  print("Hello to all "+size+" nodes. I am node number: "+myRank);
-  parReportProgress(introductionTask, 100);
-  
-  cake = newArray(0);
-  if(myRank == 1){
-    parReportProgress(cakeTask, 0);
-    print("I brought the cake.");
-    cake = newArray(30);
-      for(i = 0; i < lengthOf(cake); i++){
-        cake[i] = i;
-        parReportProgress(cakeTask, i/30 * 100);
+    parInit();
+      introductionTask = parAddTask("Introduction to other nodes.");
+      
+      myRank = parGetRank();
+      size = parGetSize();
+      
+      if(myRank == 1){
+        print("The greeting program. Now with progress reporting!");
+        cakeTask = parAddTask("Get the cake.");
       }
-      parReportProgress(cakeTask, 100);
-  }
-  
-  parReportProgress(getPieceTask, 0);
-  receivedPieces = parScatterEqually(cake, 10, 1);
-  parReportProgress(getPieceTask, 100);
-  
-  parBarrier();
-  
-  parReportProgress(annoucementTask, 0);
-  for(i = 0; i < lengthOf(receivedPieces); i++){
-    print("I node number "+myRank+" received piece: "+receivedPieces[i]);
-    parReportProgress(annoucementTask, i/lengthOf(receivedPieces)*100);
-  }
-  parReportProgress(annoucementTask, 100);
-  
-  print("Bye, from node number: "+myRank);
-parFinalize();
-```
+      getPieceTask = parAddTask("Get the cake pieces.");
+      annoucementTask = parAddTask("Announce the pieces you got.");
+      parReportTasks();
 
-![ Figure 9: The job has finished and all the progress indicators are present. Note that the task "Get the cake" has a progress indicator only on node one (1) as expected. This is because this task was added in an `if` statement checking that the rank is one.](hpc-workflow-manager-progress-no-task.png " Figure 9: The job has finished and all the progress indicators are present. Note that the task \"Get the cake\" has a progress indicator only on node one (1) as expected. This is because this task was added in an if statement checking that the rank is one.")
+      parReportProgress(introductionTask,0);
+      print("Hello to all "+size+" nodes. I am node number: "+myRank);
+      parReportProgress(introductionTask, 100);
+      
+      cake = newArray(0);
+      if(myRank == 1){
+        parReportProgress(cakeTask, 0);
+        print("I brought the cake.");
+        cake = newArray(30);
+          for(i = 0; i < lengthOf(cake); i++){
+            cake[i] = i;
+            parReportProgress(cakeTask, i/30 * 100);
+          }
+          parReportProgress(cakeTask, 100);
+      }
+      
+      parReportProgress(getPieceTask, 0);
+      receivedPieces = parScatterEqually(cake, 10, 1);
+      parReportProgress(getPieceTask, 100);
+      
+      parBarrier();
+      
+      parReportProgress(annoucementTask, 0);
+      for(i = 0; i < lengthOf(receivedPieces); i++){
+        print("I node number "+myRank+" received piece: "+receivedPieces[i]);
+        parReportProgress(annoucementTask, i/lengthOf(receivedPieces)*100);
+      }
+      parReportProgress(annoucementTask, 100);
+      
+      print("Bye, from node number: "+myRank);
+    parFinalize();
 
-![ Figure 10: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of `if` statements. Notice that all calls of `parAddTask()` are before `parReportTasks()`.](/images/pages/Hpc-workflow-manager-side-by-side-example.png " Figure 10: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of if statements. Notice that all calls of parAddTask() are before parReportTasks().")
+<figure><img src="/images/pages/hpc-workflow-manager-progress-no-task.png" title=" Figure 9: The job has finished and all the progress indicators are present. Note that the task &quot;Get the cake&quot; has a progress indicator only on node one (1) as expected. This is because this task was added in an if statement checking that the rank is one." width="300" alt=" Figure 9: The job has finished and all the progress indicators are present. Note that the task &quot;Get the cake&quot; has a progress indicator only on node one (1) as expected. This is because this task was added in an if statement checking that the rank is one." /><figcaption aria-hidden="true"> Figure 9: The job has finished and all the progress indicators are present. Note that the task "Get the cake" has a progress indicator only on node one (1) as expected. This is because this task was added in an <code>if</code> statement checking that the rank is one.</figcaption></figure>
+
+<figure><img src="/images/pages/hpc-workflow-manager-side-by-side-example.png" title=" Figure 10: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of if statements. Notice that all calls of parAddTask() are before parReportTasks()." width="800" alt=" Figure 10: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of if statements. Notice that all calls of parAddTask() are before parReportTasks()." /><figcaption aria-hidden="true"> Figure 10: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of <code>if</code> statements. Notice that all calls of <code>parAddTask()</code> are before <code>parReportTasks()</code>.</figcaption></figure>
 
 ### Available functions (list)
 
 Many of the functions have an MPI equivalent, this will also be listed in the table to aid people familiar with MPI. This is because the current implementation uses OpenMPI 4.0. Note however that this does not mean that this will be a wrapper for MPI for Fiji Macro and the underlying implementation may and probably will change.
 
 | Function name     | Input                                                                                                                                | Output                  | Description                                                                                                                                                                                                                                                                                                    | MPI equivalent  |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
 | parInit           | None                                                                                                                                 | None                    | Initializes parallelization, it should be called at the beginning of the parallel code.                                                                                                                                                                                                                        | MPI\_Init       |
 | parFinalize       | None                                                                                                                                 | None                    | Finalizes parallelization, it should be called at the end of the parallel code.                                                                                                                                                                                                                                | MPI\_Finalize   |
 | parGetRank        | None                                                                                                                                 | Id of the current node. | Returns the id of the current node.                                                                                                                                                                                                                                                                            | MPI\_Comm\_rank |
@@ -434,7 +409,7 @@ Many of the functions have an MPI equivalent, this will also be listed in the ta
 Parallelization functions
 
 | Function name     | Input                                         | Output               | Description                                                                                            |
-| ----------------- | --------------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------ |
+|-------------------|-----------------------------------------------|----------------------|--------------------------------------------------------------------------------------------------------|
 | parReportProgress | Task id (ex 8), progress percentage (ex 85 %) | None                 | Outputs progress in percentage for a specified task in the node’s progress log.                        |
 | parReportText     | Text                                          | None                 | Outputs given text to the node’s log.                                                                  |
 | parAddTask        | Description                                   | Index of added task. | Creates a new task with the description provided.                                                      |
@@ -445,17 +420,18 @@ Progress log functions
 
 If you need help remembering the functions and what they do you may use autocompletion to get help. Just type "par" and a list of options will appear. There is a link to this page in the autocomplete help. An example is provided in figure 10.
 
-![ Figure 11: Function autocompletion example.](/images/pages/Hpc-workflow-manager-autocomplete.png " Figure 11: Function autocompletion example.")
+<figure><img src="/images/pages/hpc-workflow-manager-autocomplete.png" title=" Figure 11: Function autocompletion example." width="300" alt=" Figure 11: Function autocompletion example." /><figcaption aria-hidden="true"> Figure 11: Function autocompletion example.</figcaption></figure>
 
-## Installation
+Installation
+------------
 
 HPC Workflow Manager client is available to install through its update site.
 
 ### Instructions
 
-  - [Download](https://imagej.net/Fiji/Downloads) install and launch Fiji;
-  - go to {% include bc content='Help | Update... | Manage update sites'%};
-  - tick "P2E-IT4Innovations";
-  - close the window;
-  - click "Apply changes"; and
-  - restart Fiji.
+-   [Download](https://imagej.net/Fiji/Downloads) install and launch Fiji;
+-   go to {% include bc content='Help | Update... | Manage update sites'%};
+-   tick "P2E-IT4Innovations";
+-   close the window;
+-   click "Apply changes"; and
+-   restart Fiji.

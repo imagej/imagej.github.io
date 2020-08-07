@@ -10,7 +10,8 @@ description: test description
 {% include menu-cookbook%}
 
 
-## Stack-Projections
+Stack-Projections
+-----------------
 
 A z-series is generally difficult to represent as a 2-D image for publication purposes. A montage will allow the 3-D dataset to be visualized in 2-D, but results in each frame being very small. There are several ways to "flatten” the 3D stack.
 
@@ -20,11 +21,11 @@ Z Project is a method of analyzing a stack by applying different projection meth
 
 When Z Project opens, it prompts for a start and stop slice, which will determine the range of the stack that will be included in the z projection. The default for these values is the endpoint slices of the stack.
 
-![Prompt for Z Project.](/images/pages/Z project window.png "Prompt for Z Project.")
+<figure><img src="/images/pages/z_project_window.png" title="Prompt for Z Project." width="175" height="124" alt="Prompt for Z Project." /><figcaption aria-hidden="true">Prompt for Z Project.</figcaption></figure>
 
 There are six different projection types to choose from: average intensity, maximum intensity, minimum intensity, sum slices, standard deviation, and median. The appropriate projection type will vary depending on the type of data being represented. As seen below, by applying a z transform to an MRI stack using different projection methods, the results can be very different. In the case of the MRI stack, maximum intensity is a preferable method to view the external head rendering while other methods of projection may be used to examine the internal brain components. These remaining methods also have their distinguishing characteristics, as seen by the median projection which gives the clearest rendering with the trade-off of less of filtering out more of the image in the projection.
 
-![z\_project\_types.png](/images/pages/Z project types.png "z_project_types.png")
+<figure><img src="/images/pages/z_project_types.png" title="z_project_types.png" width="425" height="314" alt="z_project_types.png" /><figcaption aria-hidden="true">z_project_types.png</figcaption></figure>
 
 The six projection methods clockwise from top left: average intensity, maximum intensity, minimum intensity, median, standard deviation, and sum slices.
 
@@ -34,7 +35,7 @@ The Grouped Z Project tool ("*Image/Stacks/Tools/Grouped Z Project...*") works s
 
 The plugin will then apply the selected projection method to subgroups with this number of slices, starting with the first slice. The result of running this plugin is a new stack where each slice is a a projection of a subset of the original stack. This is a useful plugin for analyzing large stacks where the change from slice to slice is still relevant, but not all slices need to be examined individually. If group size is set to equal the number of slices in the stack, Grouped Z Project will evaluate the stack in the same manner as Z Project.
 
-![grouped\_z\_stack.png](/images/pages/Grouped z stack.png "grouped_z_stack.png")
+<figure><img src="/images/pages/grouped_z_stack.png" title="grouped_z_stack.png" width="377" height="245" alt="grouped_z_stack.png" /><figcaption aria-hidden="true">grouped_z_stack.png</figcaption></figure>
 
 Grouped Z Project applied to two halves of a stack, resulting in the two slices shown.
 
@@ -42,17 +43,17 @@ Grouped Z Project applied to two halves of a stack, resulting in the two slices 
 
 The Stack Focuser plugin uses a Sobel edge filter to calculate “best focus”. Try “3” for the kernel value in the first instance. The result is a "height map" showing the focused images. This plugin only works on 8- or 16-bit images. It can result in a “pixelly” image.
 
-![stack\_focuser\_example.png](/images/pages/Stack focuser example.png "stack_focuser_example.png")
+![](/images/pages/Stack focuser example.png "stack_focuser_example.png")
 
 Result of the Stack Focuser plugin with '3' as the kernel value.
 
 ### Wavelet-transform Based Focusing
 
-Authors: Daniel Sage, Jesse Berent, Brigitte Forster, Dimitri Van De Ville, Biomedical Imaging Group, Swiss Federal Institute of Technology Lausanne (EPFL), Switzerland, http://bigwww.epfl.ch/demo/edf/index.html.
+Authors: Daniel Sage, Jesse Berent, Brigitte Forster, Dimitri Van De Ville, Biomedical Imaging Group, Swiss Federal Institute of Technology Lausanne (EPFL), Switzerland, [http://bigwww.epfl.ch/demo/edf/index.html](http://bigwww.epfl.ch/demo/edf/index.html).
 
 This is a superior but slower, algorithm compared to the Sobel-filter focusing. The "*Extended Depth of Field*” plugin uses a wavelet transform (a more sophisticated transform compared to the Fourier transform) to calculate “best focus”. Run the plugin and check "Show 3D View". This plugin will work with RGB images. A more detailed description of the wavelet transform extended depth of field plugin can be found at the authors' website. A topology image is also generated. Please cite the authors' papers below if you publish work using this plugin.
 
-![Extended\_depth\_of\_field.png](/images/pages/Extended depth of field.png "Extended_depth_of_field.png")
+![](/images/pages/Extended depth of field.png "Extended_depth_of_field.png")
 
 For more information see the following papers:
 
@@ -60,7 +61,8 @@ B. Forster, D. Van De Ville, J. Berent, D. Sage, M. Unser , "[Extended Depth-of-
 
 J. Berent, B. Forster, D. Van De Ville, D. Sage, M. Unser, "[Extended Depth-of-Focus for Color Images in Bright-Field microscopy](http://bigwww.epfl.ch/publications/berent0301.html)" Proceedings from the Autumn Meeting of the Swiss Society of Pharmacology and Toxicology, October 27-28, 2003, Basel, Switzerland.
 
-## Depth Coding
+Depth Coding
+------------
 
 One method of preserving some z-information in a 2D image is to 'depth-encode' the stack. A monochrome 3D image can be colored so that the color represents the z-depth. Any subsequent projection will retain this z-encoding. An 8-bit stack can be depth encoded with the menu command "*Image/Hyperstacks/Temporal-Color Code*". From there you will be able to choose a LUT as well as the start and end slices from the stack.
 
@@ -68,21 +70,22 @@ Another option is to use the plugin *Z Code Stack* for the results shown below.
 
 Original stack:
 
-![z\_coded\_stack\_original.png](/images/pages/Z coded stack original.png "z_coded_stack_original.png")
+![](/images/pages/Z coded stack original.png "z_coded_stack_original.png")
 
 Z coded stack:
 
-![z\_coded\_stack\_colored.png](/images/pages/Z coded stack colored.png "z_coded_stack_colored.png")
+![](/images/pages/Z coded stack colored.png "z_coded_stack_colored.png")
 
 Maximum Intensity Projections of each:
 
-![depth\_code\_max.png](/images/pages/Depth code max.png "depth_code_max.png")
+![](/images/pages/Depth code max.png "depth_code_max.png")
 
-## 3D Project
+3D Project
+----------
 
 3D project (*"Image/Stacks/3D Project"*) creates a 3D rendering from a stack and rotates the resulting object through a range of angles. When using this plugin, you will be prompted for a variety of initial specifications. Based on these values, the program will generate a stack depicting a 360 degree rotation of the 3D projection. There are three projection methods available: nearest point, brightest point, and mean value.
 
-![3d\_project\_window.png](/images/pages/3d project window.png "3d_project_window.png")
+<figure><img src="/images/pages/3d_project_window.png" title="3d_project_window.png" width="225" height="293" alt="3d_project_window.png" /><figcaption aria-hidden="true">3d_project_window.png</figcaption></figure>
 
 The prompt seen when running 3D project.
 
@@ -94,7 +97,7 @@ The interpolation tool is relevant for images where the spacing between slices i
 
 Opacity, transparency, and depth cues may also be specified.
 
-![3d\_project\_depth\_cues.png](/images/pages/3d project depth cues.png "3d_project_depth_cues.png")
+<figure><img src="/images/pages/3d_project_depth_cues.png" title="3d_project_depth_cues.png" width="387" height="237" alt="3d_project_depth_cues.png" /><figcaption aria-hidden="true">3d_project_depth_cues.png</figcaption></figure>
 
 At left, an image with surface depth cues at 100% and interior depth cues at 50%. The image on the right has surface depth cues at 100% and interior depth cues at 50%.
 
@@ -102,15 +105,16 @@ Try these initial settings:
 
 1.  Projection Method: Use *"Brightest point*" method.
 2.  Slice Spacing: This determines your aspect ratio of the stack. Biorad stacks are internally calibrated and this value should be correct unless you set the wrong objective in the Biorad software during acquisition.
-3.  Interpolate: Used when slice spacing \> 0. Check this option although it will slow down the renderer. For a large data set, it may be worthwhile having this "off" initially while you're selecting the settings.
+3.  Interpolate: Used when slice spacing &gt; 0. Check this option although it will slow down the renderer. For a large data set, it may be worthwhile having this "off" initially while you're selecting the settings.
 
-## Volume Viewer
+Volume Viewer
+-------------
 
 The Volume Viewer (in the plugins menu) provides 3D rendering of a stack as well as slices of the XY, YZ, and XZ planes. Volume Viewer also offers more detailed interpolation and viewing methods than some of the other 3D rendering techniques.
 
 The different display modes contain many options with which you can view the rendering: 'Slice', 'Slice & Borders', 'Max Projection', 'Projection', and 'Volume'.
 
-![volume\_viewer\_display\_modes.png](/images/pages/Volume viewer display modes.png "volume_viewer_display_modes.png")
+<figure><img src="/images/pages/volume_viewer_display_modes.png" title="volume_viewer_display_modes.png" width="400" height="91" alt="volume_viewer_display_modes.png" /><figcaption aria-hidden="true">volume_viewer_display_modes.png</figcaption></figure>
 
 Display modes from left to right: slice, slice & borders, max projection, projection, volume.
 
@@ -118,17 +122,18 @@ For all display modes, the position may manually be updated by holding the ‘Sh
 
 Beyond the display modes, the image may also be analyzed in different ways through the selection of an interpolation method. These are of especial importance for the ‘Slice’, ‘Slice & Borders’, and ‘Volume’ modes. The methods available are ‘Nearest Neighbor’, ‘Trilinear’, ‘Tricubic Smooth’, and ‘Tricubic Sharp’.
 
-![volume\_viewer\_interpolation\_methods.png](/images/pages/Volume viewer interpolation methods.png "volume_viewer_interpolation_methods.png")
+<figure><img src="/images/pages/volume_viewer_interpolation_methods.png" title="volume_viewer_interpolation_methods.png" width="279" height="279" alt="volume_viewer_interpolation_methods.png" /><figcaption aria-hidden="true">volume_viewer_interpolation_methods.png</figcaption></figure>
 
 Interpolation methods clockwise from top left: nearest neighbor, trilinear, tricubic sharp, tricubic smooth.
 
 The z-Aspect may be used to either stretch or compress data along the Z-axis while the X and Y axes dimensions remain unchanged. The sampling value can be used to control how many samples are utilized to blend the rendering’s values. Typically, higher sampling values will result in better quality results, though the tradeoff is a slightly slower processing time.
 
-## 3D Viewer
+3D Viewer
+---------
 
 This plugin is found in the plugins folder. The 3D Viewer uses a stack of images to visualize it in 3D space as a volume, a surface, or orthoslices. When the plugin is run, you will have the option to choose a name for the new image as well as the display method: volume, orthoslice, surface, surface plot 2D, or multiorthoslices. Color, threshold, sampling factor, channels, and starting time point may also be selected. The starting time point is used when inserting the rendering into a movie: the rendering will be present starting at the time point specified. At this time point, modification of the image is possible within the viewer. Many of these variables may be updated in the viewer once the rendering is generated.
 
-![3d\_viewer\_window.png](/images/pages/3d viewer window.png "3d_viewer_window.png")
+<figure><img src="/images/pages/3d_viewer_window.png" title="3d_viewer_window.png" width="201" height="247" alt="3d_viewer_window.png" /><figcaption aria-hidden="true">3d_viewer_window.png</figcaption></figure>
 
 The window seen when 3D Viewer is opened.
 
@@ -136,7 +141,7 @@ To use the 3D Viewer, an 8-bit or RGB image is required. If used on another type
 
 The current display mode may be changed by clicking *"Edit/Display As"*. This will let you choose from 'Volume', 'Orthoslice', 'Multi-orthoslice', 'Surface', and 'Surface Plot 2D'. When using the 'Orthoslice' mode, you can right click on the viewer and select 'Adjust Slices' to update the placement of the x, y, and z coordinates. You can also press the {% include key content='X' %}, {% include key content='Y' %}, or {% include key content='Z' %} keys in combination with arrow keys to move the slices.
 
-![3d\_viewer\_volume.png](/images/pages/3d viewer volume.png "3d_viewer_volume.png")
+<figure><img src="/images/pages/3d_viewer_volume.png" title="3d_viewer_volume.png" width="264" height="286" alt="3d_viewer_volume.png" /><figcaption aria-hidden="true">3d_viewer_volume.png</figcaption></figure>
 
 Example of the type of volume seen in 3D viewer.
 
@@ -144,11 +149,13 @@ The “Edit” menu supplies some more options to change the color and transpare
 
 *"Edit/Transformation/Set Transform"* can give more control over the placement of the rendering by specifying rotation origin and rotation axis. You can also use the 3x4 matrix in "Set Transform" to specify the x, y, and z axes of the transformed coordinate system in the first three columns and the vector from the old origin to the new origin in the fourth column.
 
-## Other Volume Rendering Methods
+Other Volume Rendering Methods
+------------------------------
 
 3D reconstruction methods where the object will appear semitransparent include *360° 3D-project* and *Rocking 3D-project*. *360° 3D-project* produces a stack with a 360° rotation of the z-transform. The results will look similar to those generated with the *Grouped Z Projector* plugin. If you want the stack to just rock back and forth, use the *Rocking 3D-project* macro.
 
-## Surface Render
+Surface Render
+--------------
 
 VolumeJ is a 3D reconstruction method where the object surface will appear opaque, giving a more "solid" look to the object.
 
@@ -158,7 +165,7 @@ NB: VolumeJ's interactive rendering option is currently not working. Other modes
 
 </div>
 
-![volumej.png](/images/pages/Volumej.png "volumej.png")
+<figure><img src="/images/pages/volumej.png" title="volumej.png" width="348" height="269" alt="volumej.png" /><figcaption aria-hidden="true">volumej.png</figcaption></figure>
 
 1.  Select the volume stack to render.
 2.  Select the classifier (i.e. rendering algorithm). Choose 'Gradient no index' for grayscale stacks; choose 'Ramp + index' for RGB stacks.
@@ -170,11 +177,12 @@ NB: VolumeJ's interactive rendering option is currently not working. Other modes
 8.  Click on the *"Render"* button to start rendering.
 9.  Click on *"Stop renderer"* if you've made a mistake.
 
-## Stack Reslice
+Stack Reslice
+-------------
 
 This generates a “side-view” of a stack along a user defined line. Select part of a stack to be axially sectioned using the line ROI tool from the toolbar. Select the menu item “*Image/Stacks/Reslice*" after drawing a straight line or rectangle onto an open stack.
 
-![stack\_reslice\_example.png](/images/pages/Stack reslice example.png "stack_reslice_example.png")
+![](/images/pages/Stack reslice example.png "stack_reslice_example.png")
 
 Stack resliced along a vertical axis.
 
@@ -182,11 +190,12 @@ From this point, you can generate a new stack by reconstructing the slices along
 
 The *Dynamic Reslice* plugin is used the same way as "*Image/Stacks/Reslice*". This plugin will dynamically update the slice generated as the ROI is changed on the original image.
 
-## Orthogonal Views
+Orthogonal Views
+----------------
 
 A straightforward method to visualize 3D renderings is through orthogonal views, accessed via "*Image/Stacks/Orthogonal Views*". This method may be used with a stack to display the XZ and YZ planes at a given point in the 3D image. When Orthogonal Views is opened, windows containing the two planes will dock alongside the original stack, with the intersection of the yellow lines on the stack indicating the point in the stack that is being analyzed. The views in the XZ and YZ planes will update automatically, either as the stack is set to a different slice or the lines are manually adjusted on any of the three windows.
 
-![orthogonal\_views\_example.png](/images/pages/Orthogonal views example.png "orthogonal_views_example.png")
+<figure><img src="/images/pages/orthogonal_views_example.png" title="orthogonal_views_example.png" width="292" height="350" alt="orthogonal_views_example.png" /><figcaption aria-hidden="true">orthogonal_views_example.png</figcaption></figure>
 
 Example of image seen with orthogonal views.
 
@@ -196,21 +205,22 @@ This plugin is an alternative to the orthogonal views option. After making a poi
 
 When running the plugin, it is possible to adjust the aspect ratio of the three axes. The stack is initially assumed to contain cubic voxels, or, a 1:1:1 ratio. These numbers may be modified to change dimensions of the XZ and YZ plane images. The gap between the Z planes may also be updated from its initial value of 1 pixel.
 
-## Stereo Pairs and Anaglyphs
+Stereo Pairs and Anaglyphs
+--------------------------
 
 To create an anaglyph of two images, you can use the Two Shot Anaglyph plugin. This plugin may be used with two RGB Color images of the same dimensions to make a stereo image.
 
 ### Volume-rendered anaglyphs
 
-This is an adaptation of the methods described at http://imagej.nih.gov/nih-image/more-docs/confocals.html.
+This is an adaptation of the methods described at [http://imagej.nih.gov/nih-image/more-docs/confocals.html](http://imagej.nih.gov/nih-image/more-docs/confocals.html).
 
 This plugin can use your stack to create a side by side stereo pair, a red-cyan anaglyph, a red-green anaglyph, or a rotation movie based on user specifications. The plugin will let you specify which of the stereo pair projections you want as well as the angle of rotation between the pairs. Typical values are 6-9°.
 
-![stereo\_pair.png](/images/pages/Stereo pair.png "stereo_pair.png")
+![](/images/pages/Stereo pair.png "stereo_pair.png")
 
 Stereo pair
 
-![anaglyph\_comparisons.png](/images/pages/Anaglyph comparisons.png "anaglyph_comparisons.png")
+![](/images/pages/Anaglyph comparisons.png "anaglyph_comparisons.png")
 
 Red-green anaglyph at left, red-cyan anaglyph on the right.
 

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Enhance Local Contrast (CLAHE)](Enhance_Local_Contrast_CLAHE )
+1.  REDIRECT [Enhance Local Contrast (CLAHE)](Enhance_Local_Contrast_(CLAHE) "wikilink")

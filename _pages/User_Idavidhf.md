@@ -7,7 +7,8 @@ categories:
 description: test description
 ---
 
-# VHPro
+VHPro
+=====
 
 ### An image-based plugin for relative mesurements using custom ROIs
 

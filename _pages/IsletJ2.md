@@ -7,7 +7,8 @@ categories:
 description: test description
 ---
 
-## General
+General
+-------
 
 IsletJ2 is a tool implemented as an ImageJ plugin that segments and reports properties of the Langerhans islets. The plugin was available already in 2018 under name [IsletJ](https://imagej.net/IsletJ). However, many changes have been implemented since then. The original version can be found [here](https://imagej.net/IsletJ).
 
@@ -15,16 +16,18 @@ Perhaps the most noticable change is the new graphical user interface (GUI). We 
 
 Despite being invisible to users, massive changes have been done in the plugin core. The whole plugin has been rewritten from the ground up, resulting in more modular and extensible code and lesser demands on computing resources. The plugin, however, still employs the same approach as before.
 
-## Installation
+Installation
+------------
 
 The plugin was tested to work with ImageJ 1.52 (Fiji distribution) and Java 8. Follow these steps (a general procedure to install an ImageJ plugin) to install the plugin:
 
 1.  Start ImageJ and start updater using `Help` – `Update...`.
-2.  Click `Manage update sites` and add a new site using `Add update site`, then enter a name (e.g., `IsletJ2`) and URL https://sites.imagej.net/IsletJ2/. Close the dialog.
+2.  Click `Manage update sites` and add a new site using `Add update site`, then enter a name (e.g., `IsletJ2`) and URL [`https://sites.imagej.net/IsletJ2/`](https://sites.imagej.net/IsletJ2/). Close the dialog.
 3.  Click `Apply changes` to fetch and install the plugin.
 4.  Restart ImageJ.
 
-## Training
+Training
+--------
 
 The training procedure consists of three consecutive phases:
 
@@ -51,7 +54,8 @@ The last phase deals with model training. It is required to set a path where a m
 
 Once the training finishes, a protocol is composed and saved to the same directory as the trained model. The protocol is a CSV file with two columns per row. Each row represents a single training example: the first and the second column contain paths to the example image and ground truth, respectively. The protocol name has a particular form, namely `isletj_MODEL_YYYY-MM-DD_hh-mm-ss.csv`, where `MODEL` is the model name, and `YYYY-MM-DD_hh-mm-ss` specifies the date and time when the protocol was created, e.g., `isletj_model-file.gz_2019-12-19_14-23-31.csv`.
 
-## Analysis
+Analysis
+--------
 
 The analysis assumes that there is a trained model somewhere in the file system.
 
@@ -79,7 +83,8 @@ Similarly to the training protocol, the analysis protocol is a CSV file. There i
 4.  spherical volume (in IEQ),
 5.  the last 15 columns are for 15 different bins with diameter frequencies (based on the histogram of Ricordi).
 
-## Demo
+Demo
+----
 
 The following steps show basic interaction with the plugin.
 
@@ -93,11 +98,13 @@ The following steps show basic interaction with the plugin.
 8.  Select the extracted directory as before (we will analyze the training image for the demo purposes), set an appropriate pixel size (e.g., 2.355 μm) and minimal size of islets (e.g., 0 μm), and select the previously trained model.
 9.  Select an output directory and click `Analyze`.
 
-## Pretrained models
+Pretrained models
+-----------------
 
 Pretrained segmentation models can be downloaded [here](http://ptak.felk.cvut.cz/Medical/microscopy/IKEM/IsletJ/public/). Note that future versions of IsletJ2 need not support older segmentation models. However, we will try to maintain a compatible model for each version.
 
-## Tips
+Tips
+----
 
 ### Keyboard shortcuts
 
@@ -113,10 +120,11 @@ Take a photo of a stage micrometer and open the photo in Fiji. Use a straight li
 
 ![How to measure the pixel size. Taken from the [documentation](https://github.com/jschier/IsletJ/blob/master/pdf/IsletJ_Guide_2.pdf) of the original plugin version.](Micrometer.png "How to measure the pixel size. Taken from the documentation of the original plugin version.")
 
-## Acknowledgements
+Acknowledgements
+----------------
 
 The current implementation is heavily inspired by the previous implementation done by *Jan Schier*.
 
 The method used in the plugin was developed and described in the following work:
 
-  - Habart, D. *et al.* (2016) ‘Automated Analysis of Microscopic Images of Isolated Pancreatic Islets’, *Cell Transplantation*, 25(12), pp. 2145–2156. doi: 10.3727/096368916X692005.
+-   Habart, D. *et al.* (2016) ‘Automated Analysis of Microscopic Images of Isolated Pancreatic Islets’, *Cell Transplantation*, 25(12), pp. 2145–2156. doi: 10.3727/096368916X692005.

@@ -9,7 +9,8 @@ description: test description
 
 The previous TrackMate tutorial - [Manual editing of tracks using TrackMate](Manual_editing_of_tracks_using_TrackMate ) is dedicated to manually correcting the results of an automated process. This small tutorial here shows how to do a fully manual annotation with [TrackMate](TrackMate ).
 
-## Setting up
+Setting up
+----------
 
 ![](/images/pages/TrackMate ManualTrackingEntryPoint.png)
 
@@ -22,7 +23,8 @@ You should should get the layout pictured on the right. Notice that we are alrea
 {% include clear%}
 
 
-## Creating spots one by one
+Creating spots one by one
+-------------------------
 
 The default view (the one that re-uses the HyperStack viewer of ImageJ) can readily edit the tracks. You just have to make sure that the TrackMate tool is selected in the ImageJ toolbar:
 
@@ -30,27 +32,28 @@ The default view (the one that re-uses the HyperStack viewer of ImageJ) can read
 
 With this tool selected, you can now make the image window active and use the mouse of the keyboard to create spots. Here are the commands for the mouse:
 
-  - **Double-click** anywhere in the image to create a spot and enter the edit mode. The edited spot is highlighted with a green, dashed circle, as pictured below:
+-   **Double-click** anywhere in the image to create a spot and enter the edit mode. The edited spot is highlighted with a green, dashed circle, as pictured below:
 
 ![](/images/pages/TrackMate SpotEditMode.png)
 
-  - To leave the edit mode, **double-click** again anywhere. The spot is then added to the data model.
-  - To edit it again, **double-click inside the spot**. Its outline is now dashed; you are back in the edit mode.
-  - While in the edit mode, you can move the edited spot around by clicking inside the spot and dragging it around. The spot will follow you if you change the time or the Z slider, and it will be added to the right plane upon leaving the edit mode.
-  - You can also change its radius by using {% include key content='Alt' %}+{% include key content='Mouse wheel' %}. Using {% include key content='Shift' %}+{% include key content='Alt' %} changes the spot radius faster.
+-   To leave the edit mode, **double-click** again anywhere. The spot is then added to the data model.
+-   To edit it again, **double-click inside the spot**. Its outline is now dashed; you are back in the edit mode.
+-   While in the edit mode, you can move the edited spot around by clicking inside the spot and dragging it around. The spot will follow you if you change the time or the Z slider, and it will be added to the right plane upon leaving the edit mode.
+-   You can also change its radius by using {% include key content='Alt' %}+{% include key content='Mouse wheel' %}. Using {% include key content='Shift' %}+{% include key content='Alt' %} changes the spot radius faster.
 
 This is how you edit the data with the mouse. You can also use the keyboard:
 
-  - To create (or <u>a</u>dd) a spot, press {% include key content='A' %} with the mouse at the desired location. By default, the new spot will have the radius of the last spot you edited with the double-click mode. So if you want to have all spots of a certain radius, edit a spot by double-clicking inside it, set its radius using {% include key content='Alt' %}+{% include key content='Mouse wheel' %}, and leave the edit mode. This will "capture" the spot radius and apply it anywhere after.
-  - To move a spot around, press {% include key content='Space' %} with the mouse over the target spot. Then move the mouse around. No need for mouse clicks.
-  - To <u>d</u>elete a spot, press the {% include key content='D' %} key with the mouse over the target spot.
-  - To change a spot radius, press {% include key content='Q' %} and {% include key content='E' %} over the target spot. {% include key content='Shift' %}+{% include key content='Q' %} and {% include key content='Shift' %}+{% include key content='E' %} change the radius by a larger amount.
+-   To create (or <u>a</u>dd) a spot, press {% include key content='A' %} with the mouse at the desired location. By default, the new spot will have the radius of the last spot you edited with the double-click mode. So if you want to have all spots of a certain radius, edit a spot by double-clicking inside it, set its radius using {% include key content='Alt' %}+{% include key content='Mouse wheel' %}, and leave the edit mode. This will "capture" the spot radius and apply it anywhere after.
+-   To move a spot around, press {% include key content='Space' %} with the mouse over the target spot. Then move the mouse around. No need for mouse clicks.
+-   To <u>d</u>elete a spot, press the {% include key content='D' %} key with the mouse over the target spot.
+-   To change a spot radius, press {% include key content='Q' %} and {% include key content='E' %} over the target spot. {% include key content='Shift' %}+{% include key content='Q' %} and {% include key content='Shift' %}+{% include key content='E' %} change the radius by a larger amount.
 
 And that's it for spot creation.
 
 ![](/images/pages/TrackMate CreateSpots.png)
 
-## Create and removing single links
+Create and removing single links
+--------------------------------
 
 ![](/images/pages/TrackMate CreateSingleLink.png)
 
@@ -66,7 +69,8 @@ As you can see, there is nothing that prevents you from creating a link over man
 
 Removing a link is done the same way: Select exactly two spots that are connected by a link, and press the {% include key content='L' %} key. The link will be removed.
 
-## The auto-linking mode
+The auto-linking mode
+---------------------
 
 ![](/images/pages/TrackMate ManualTracking 1.png)
 
@@ -88,7 +92,8 @@ Therefore, to create the branch that goes on the right, go back on the frame 9 (
 {% include clear%}
 
 
-## Tracks are updated live
+Tracks are updated live
+-----------------------
 
 ![](/images/pages/TrackMate ManualTracking 3.png)
 
@@ -99,9 +104,10 @@ The same is valid when you delete a link or a spot. For instance, let's create 3
 {% include clear%}
 
 
-## Track and spot features are updated live
+Track and spot features are updated live
+----------------------------------------
 
-![TrackMate\_GUIManualTracking.png](/images/pages/TrackMate GUIManualTracking.png "TrackMate_GUIManualTracking.png")
+<figure><img src="/images/pages/TrackMate_GUIManualTracking.png" title="TrackMate_GUIManualTracking.png" width="200" alt="TrackMate_GUIManualTracking.png" /><figcaption aria-hidden="true">TrackMate_GUIManualTracking.png</figcaption></figure>
 
 TrackMate uses computes and uses some numerical features for its spots, edges and tracks. You can use these features to color the TrackMate objects.
 
@@ -112,13 +118,14 @@ The track and spot colors are refreshed immediately in the HyperStack displayer.
 {% include clear%}
 
 
-## The semi-automatic tracking tool
+The semi-automatic tracking tool
+--------------------------------
 
 Since v2.1.0, TrackMate includes a tool that can automatically find spots and automatically link them to build a track. This is extremely handy to annotate images for which the automated detection in bulk yields too much spurious spots. I wish I had come with the idea *before* I started doing *C.elegans* lineaging.
 
 This tool is configured in the TrackMate tool option panel. It is not part of the classic GUI; to make it appear, double-click on the TrackMate tool in the ImageJ toolbar. You should see something like this:
 
-![TrackMate\_v2.1.0\_TrackMateTools.png](/images/pages/TrackMate v2.1.0 TrackMateTools.png "TrackMate_v2.1.0_TrackMateTools.png")
+![](/images/pages/TrackMate v2.1.0 TrackMateTools.png "TrackMate_v2.1.0_TrackMateTools.png")
 
 We are interested in the **Semi-automatic tracking** panel. The bottom panel has just convenience buttons that allow you to select tracks or parts of tracks from the current selection (great to delete faulty tracks at once), and the right panel is a log. The semi-automatic tracking tool itself works as follow: It takes the single spot in the selection, and use its radius to build a neighborhood of this spot, but in the next frame. It then searches this neighborhood for a bright blob with a similar radius. If the found spot is close enough and have a quality high enough, it is linked to the first spot. The process is then repeated, until no suitable spot can be found or until there is no time-point to inspect anymore.
 
@@ -132,7 +139,8 @@ How far can it go really depends on the radius you set for the first spot, so re
 
 Great, no?
 
-## Wrapping up
+Wrapping up
+-----------
 
 These are the tools that should allow you to work very quickly. For fun: redo this tutorial with a [TrackScheme](TrackScheme ) window open. You should see that it works very well with manual annotation.
 

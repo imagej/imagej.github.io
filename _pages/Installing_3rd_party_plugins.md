@@ -7,48 +7,40 @@ categories: Tutorials
 description: test description
 ---
 
-## For users
+For users
+---------
 
-  - If the plugin is published on an [ImageJ update site](Update_Sites ), you can run {% include bc content='Help | Update'%} then click the *Manage update sites* button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
+-   If the plugin is published on an [ImageJ update site](Update_Sites ), you can run {% include bc content='Help | Update'%} then click the *Manage update sites* button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
 
-<!-- end list -->
+<!-- -->
 
-  - Otherwise, you can just drag 'n drop the plugin .jar file (from the Explorer, Finder or any file browser) into the plugins directory:
+-   Otherwise, you can just drag 'n drop the plugin .jar file (from the Explorer, Finder or any file browser) into the plugins directory:
 
-<!-- end list -->
+  
+<img src="/images/pages/Install-Plugin-DragNDrop.png" width="750"/>
 
-  -   
-    <img src="/images/pages/Install-Plugin-DragNDrop.png" width="750"/>
+<!-- -->
 
-<!-- end list -->
+  
+This will ask you for the <u>destination</u> of the plugin, just hitting *Save* is safe.
 
-  -   
-    This will ask you for the <u>destination</u> of the plugin, just hitting *Save* is safe.
+-   Alternatively, use {% include bc content='Plugins | Install Plugin...'%}:
 
-<!-- end list -->
+  
+<img src="/images/pages/Install-Plugin.png" width="550"/>
 
-  - Alternatively, use {% include bc content='Plugins | Install Plugin...'%}:
+<!-- -->
 
-<!-- end list -->
+  
+It will ask you for the file name of the plugin, and install the given file.
 
-  -   
-    <img src="/images/pages/Install-Plugin.png" width="550"/>
+-   You can also copy the *.jar*, *.class* or *.java* files (or a script in any language Fiji supports) to *Fiji.app/plugins/*, followed by calling {% include bc content='Help | Refresh Menus'%}.
 
-<!-- end list -->
+  
+**Note:** On MacOSX, you need to {% include key content='Ctrl' %}+{% include key content='click' %} on the *Fiji* icon in the Finder and select *Show package contents* to see the *plugins/* folder.
 
-  -   
-    It will ask you for the file name of the plugin, and install the given file.
-
-<!-- end list -->
-
-  - You can also copy the *.jar*, *.class* or *.java* files (or a script in any language Fiji supports) to *Fiji.app/plugins/*, followed by calling {% include bc content='Help | Refresh Menus'%}.
-
-<!-- end list -->
-
-  -   
-    **Note:** On MacOSX, you need to {% include key content='Ctrl' %}+{% include key content='click' %} on the *Fiji* icon in the Finder and select *Show package contents* to see the *plugins/* folder.
-
-## For developers
+For developers
+--------------
 
 {% include template content='Outdated' %}
 

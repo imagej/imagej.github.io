@@ -7,22 +7,21 @@ categories: Colocalization,Tutorials,Color processing
 description: test description
 ---
 
-## Foreword
+Foreword
+--------
 
 These notes primarily concern the **pixel intensity correlation based** colocalization methods, where one looks for intensity correlation in different colour channels of individual pixels. Sometimes it is more useful to look for **object-based** colocalization, where objects are segmented out of images, then objects in different colour channels are tested for spatial overlap: colocalization. In the **object-based** case, one attempts to acquire images suitable for segmentation. The following principles apply in the case of pixel-based colocalization, but most of the precautions underlined here are general.
 
-## Introduction
+Introduction
+------------
 
 How can we properly define colocalization? One could suggest:
 
-  - 
-    
-    *Degree of overlap between two colour channels in one image, which can be characterised by*
+  
+*Degree of overlap between two colour channels in one image, which can be characterised by*
 
-<!-- end list -->
-
-  - *colocalisation coefficients (single global statistics regarding the whole image)*
-  - *colocalisation maps (identification of colocalised pixels over the image, spatially)*
+-   *colocalisation coefficients (single global statistics regarding the whole image)*
+-   *colocalisation maps (identification of colocalised pixels over the image, spatially)*
 
   
 Estimating colocalisation by looking for yellow colour in images where the green and red images have been colour merged is a bad idea because:
@@ -38,45 +37,46 @@ Estimating colocalisation by looking for yellow colour in images where the green
   
 What we need are objective quantitative methods to estimate/measure colocalisation in 2 colour channel images. These will output colocalisation coefficients that should be:
 
-  - sensitive to colocalization between one colour channel and the other;
-  - insensitive to the presence of a non-relevant background;
-  - insensitive to relative variation of intensities between channels.
+-   sensitive to colocalization between one colour channel and the other;
+-   insensitive to the presence of a non-relevant background;
+-   insensitive to relative variation of intensities between channels.
 
   
-But... in order to do quantitative analysis on images, they muse be acquired in the correct way, such that they contain the information that you are tring to measure\! You must also understand the limitations of your microscope and the digital imaging process. 
+But... in order to do quantitative analysis on images, they muse be acquired in the correct way, such that they contain the information that you are tring to measure! You must also understand the limitations of your microscope and the digital imaging process. 
 
-## Precautions during image analysis
+Precautions during image analysis
+---------------------------------
 
 There are various problems that need to be understood and overcome while collecting images at the microscope. No clever analysis can save crappy images (aka. The "crap in - crap out" principle). If you lose or don't collect information that the microscope could have seen during imaging, it is lost forever. We list here a few of these dangers. Being modest, we should make it clear that some of the difficulties are actually unavoidable and must be lived with, but understood all the same. 
 
 ### Blur
 
-![ColocBlur.gif](/images/pages/ColocBlur.gif "ColocBlur.gif")
+![](/images/pages/ColocBlur.gif "ColocBlur.gif")
 
 *`Definition:`*` The Fourier spectrum of the `  
 `image lacks proper high frequencies. `
 
-*`Definition``   ``2:`*` The small features/edges of the `  
+*`Definition`` ``2:`*` The small features/edges of the `  
 `real object are not well represented in the image `
 
 This phenomenon will artificially enlarge the size of your objects, making them look bigger. The problem with this is that two non colocalizing objects might appear to colocalize in the image because of the blur. This gives false-positive results.
 
 Possible origins of blur are:
 
-  - optical system is dirty (objective, sample)
-  - optical system is misaligned (pinhole, optical components)
-  - wrong immersion oil / coverslip thickness / immersion medium
-  - similarly: objective lens correction collars not ajusted
-  - mechanical drift or moving sample - most apparent with slow imaging
-  - imaging too deep into the sample ( \< 5 µm with oil, \> 5 µm with water, \> 50 µm with 2-photons system, and you will see sherical abberation due to refractive index mismatch between the objective lens immersion medium and sample)
-  - widefield microscope system (or on a confocal microscope - optimal pinhole size of 1 Airy Unit not set)
-  - colorshift: if you don't know what it is, always use apochromat objectives - these correct for chromatic aberrations (blue bends better than red)
-  - Inadequate spatial sampling. If your pixels are too big to correctly sample the smallest features visible, you will not see those features. 
+-   optical system is dirty (objective, sample)
+-   optical system is misaligned (pinhole, optical components)
+-   wrong immersion oil / coverslip thickness / immersion medium
+-   similarly: objective lens correction collars not ajusted
+-   mechanical drift or moving sample - most apparent with slow imaging
+-   imaging too deep into the sample ( &lt; 5 µm with oil, &gt; 5 µm with water, &gt; 50 µm with 2-photons system, and you will see sherical abberation due to refractive index mismatch between the objective lens immersion medium and sample)
+-   widefield microscope system (or on a confocal microscope - optimal pinhole size of 1 Airy Unit not set)
+-   colorshift: if you don't know what it is, always use apochromat objectives - these correct for chromatic aberrations (blue bends better than red)
+-   Inadequate spatial sampling. If your pixels are too big to correctly sample the smallest features visible, you will not see those features. 
 
   
 Some things we can't do anything about (hey, that's the *light* microscopy facility, hum?):
 
-  - Diffraction: The spatial resolution of the conventional widefield or confocal (as typically used - noise limited) light microscope is limited by diffraction, and is dependent on the wavelength of the light (shorter is better) and the numerical aperture (NA) of the objective lens (higher is better). XY resolution is better than resolution in Z direction (about 3x better for a high NA objective. Spatial sampling should be done so that there are not less than and not too many more than 2.3 pixels across the resolution limit (according to Nyqvist). For a high NA lens (say a 63x 1.4 oil immersion) this means the pixels in XY should be about 80-100 nm, and in Z about 250 nm. Also see Sampling below.
+-   Diffraction: The spatial resolution of the conventional widefield or confocal (as typically used - noise limited) light microscope is limited by diffraction, and is dependent on the wavelength of the light (shorter is better) and the numerical aperture (NA) of the objective lens (higher is better). XY resolution is better than resolution in Z direction (about 3x better for a high NA objective. Spatial sampling should be done so that there are not less than and not too many more than 2.3 pixels across the resolution limit (according to Nyqvist). For a high NA lens (say a 63x 1.4 oil immersion) this means the pixels in XY should be about 80-100 nm, and in Z about 250 nm. Also see Sampling below.
 
 If the blurring of you images is too much, you might want to consider [deconvolution](deconvolution ). Have a look at [this page](http://support.svi.nl/wiki/BlurAndNoiseAffectColocalization) from SVI (the guys that provides [Huygens](Huygens ) software to see how it can help.
 
@@ -84,7 +84,7 @@ If the blurring of you images is too much, you might want to consider [deconvolu
 
 ### Background
 
-![ColocBGnoise.gif](/images/pages/ColocBGnoise.gif "ColocBGnoise.gif")
+![](/images/pages/ColocBGnoise.gif "ColocBGnoise.gif")
 
 *`Definition:`*` Unspecific signal. `
 
@@ -96,10 +96,10 @@ At the microscope, you must decide what parts of your image are background and n
   
 Getting rid of high background? Consider:
 
-  - autofluorescence of the sample / medium / immersion medium (*e.g.* phenol red)
-  - staining protocol (bad unspecific antibodies ...)
-  - leaking of excitation light in the emission range, because of inadequate fluorescence filter design
-  - too low "offset" on a PMT detector in a confocal microscope. 
+-   autofluorescence of the sample / medium / immersion medium (*e.g.* phenol red)
+-   staining protocol (bad unspecific antibodies ...)
+-   leaking of excitation light in the emission range, because of inadequate fluorescence filter design
+-   too low "offset" on a PMT detector in a confocal microscope. 
 
   
 
@@ -111,22 +111,22 @@ Colocalisation in a pixel might be false, coming from noise, and thus, not be re
 
 Types of Noise:
 
-  - dark noise / dark current. False signal with Poisson distribution from thermally generated electrons in the detector. CCD/EMCCD/sCMOS: increases with temperature, so we use cooled cameras, then there is nothing much to do as the noise is then very small and only seen in very long exposures. PMT/Confocal: cooled PMTs help, eg. Leica SP5
-  - Read noise / digitizer noise / electronic noise from the system (Confocal PMTs get over it with a PMT voltage above about 400). EMCCDs are very sensitive because they amplify a small signal over and above the dark noise and read noise so you can measure it. sCMOS cameras have a very low read noise of an eletron ot two, several times less than a CCD camera.  
-  - Photon shot noise. This is intrinsic statistical noise in the signal coming from fluorescence photons. It follows a Poisson distribution over time, as photons arrive whenever they like at the detector. It's magnitude is the square root of the number of incident photons measured. So we can increase the "photon signal" to "photon signal noise" ratio by increasing the exposure time or pixel dwell time and collecting more photons, but this contradicts one of the rules to avoid a blurry image - when the sample is moving, and might cause photo bleaching of the dye. On a single point scan confocal microscope it gives a better signal, more photons detected, to do more line scan averages with a pixel dwell time much less than 10 microseconds, than to do one slower scan with more than about 10 microseconds pixel dwell time (this is for complicated photophysics reasons to do with dye dark states, eg triplet state population build up.)
-  - Amplification noise. The more gain, the more noise. This noise is Gaussian shaped. A solution would be to use lower gains (on a confocal dont use a PMT voltage over about 800, turn the laser power up a bit instead if you can, or do more line scan averaging). On A CCD (especially EM CCD) don't have the gain too high or you will add noise to your image.
+-   dark noise / dark current. False signal with Poisson distribution from thermally generated electrons in the detector. CCD/EMCCD/sCMOS: increases with temperature, so we use cooled cameras, then there is nothing much to do as the noise is then very small and only seen in very long exposures. PMT/Confocal: cooled PMTs help, eg. Leica SP5
+-   Read noise / digitizer noise / electronic noise from the system (Confocal PMTs get over it with a PMT voltage above about 400). EMCCDs are very sensitive because they amplify a small signal over and above the dark noise and read noise so you can measure it. sCMOS cameras have a very low read noise of an eletron ot two, several times less than a CCD camera.  
+-   Photon shot noise. This is intrinsic statistical noise in the signal coming from fluorescence photons. It follows a Poisson distribution over time, as photons arrive whenever they like at the detector. It's magnitude is the square root of the number of incident photons measured. So we can increase the "photon signal" to "photon signal noise" ratio by increasing the exposure time or pixel dwell time and collecting more photons, but this contradicts one of the rules to avoid a blurry image - when the sample is moving, and might cause photo bleaching of the dye. On a single point scan confocal microscope it gives a better signal, more photons detected, to do more line scan averages with a pixel dwell time much less than 10 microseconds, than to do one slower scan with more than about 10 microseconds pixel dwell time (this is for complicated photophysics reasons to do with dye dark states, eg triplet state population build up.)
+-   Amplification noise. The more gain, the more noise. This noise is Gaussian shaped. A solution would be to use lower gains (on a confocal dont use a PMT voltage over about 800, turn the laser power up a bit instead if you can, or do more line scan averaging). On A CCD (especially EM CCD) don't have the gain too high or you will add noise to your image.
 
-One must have a signal strong enough to allow a good enough signal:noise ratio, or be able to deal with a weak signal and separate it from the noise, using eg iterative deconvolution\!
+One must have a signal strong enough to allow a good enough signal:noise ratio, or be able to deal with a weak signal and separate it from the noise, using eg iterative deconvolution!
 
   
 
 ### Cross talk and Bleed through
 
-*`Definition``   ``1:`*` Fluorophores do not match `  
+*`Definition`` ``1:`*` Fluorophores do not match `  
 `optical components (excitation / emission filters, `  
 `lasers, dichroics). `
 
-*`Definition``   ``2:`*` You detect emission from the wrong `  
+*`Definition`` ``2:`*` You detect emission from the wrong `  
 `dye, and falsely believe it comes from the right dye. `
 
 So... this one is *the* very worst and most dangerous problem in colocalization experiments. It can be explained with the following spectra:
@@ -164,7 +164,7 @@ Also remember: since we are doing light microscopy, two objects closer and small
 
 ### Detector Saturation
 
-The problem with "saturated pixels" occurs mainly when we use pixel-based colocalization (*i.e.* when we are interested in intensity correlation over space). It is possible to derive the quantitative error made with saturation. See [here](Colocalization/ErrorDueToSaturation ). If pixels/images are saturated (that is having pixels with an intensity level at the top of the range, ie 255 for 8 bit data) then they are missing information about the real spatial intensity distribution in the sample. This is the most important data in your analysis, as you are usually most interested in the brightest objects - right?\! That means its a really bad idea to throw that information away when you collect the images.
+The problem with "saturated pixels" occurs mainly when we use pixel-based colocalization (*i.e.* when we are interested in intensity correlation over space). It is possible to derive the quantitative error made with saturation. See [here](Colocalization/ErrorDueToSaturation ). If pixels/images are saturated (that is having pixels with an intensity level at the top of the range, ie 255 for 8 bit data) then they are missing information about the real spatial intensity distribution in the sample. This is the most important data in your analysis, as you are usually most interested in the brightest objects - right?! That means its a really bad idea to throw that information away when you collect the images.
 
 ### Chromatic Shift
 
@@ -182,7 +182,8 @@ Also, for a review of the hardware part, read *Zucker, 2006, Cytometry*.
 `From Jan Peychl notes. `  
 `The two animated gifs are from the Huygens Software wiki page. `
 
-# Further reading
+Further reading
+===============
 
 [The 39 steps: a cautionary tale of quantitative 3-D fluorescence microscopy](http://www.ncbi.nlm.nih.gov/pubmed/10818693) by J. Pawley.
 

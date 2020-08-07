@@ -23,26 +23,31 @@ description: test description
 
 Dynamic\_Kymograph is a plugin for ImageJ that generates kymographs from stack videos using key-framing and linear interpolation.
 
-## Features
+Features
+--------
 
 The main features are:
 
-  - Allows user to specify polyline ROIs on multiple frames of a stack video
-  - Automatically interpolates between ROIs drawn on different frames
-  - Generates a kymograph using the interpolated ROI throughout the stack video
+-   Allows user to specify polyline ROIs on multiple frames of a stack video
+-   Automatically interpolates between ROIs drawn on different frames
+-   Generates a kymograph using the interpolated ROI throughout the stack video
 
-## Download and Usage
+Download and Usage
+------------------
 
-See https://github.com/rudyzhou/Dynamic_Kymograph for download and detailed usage instructions.
+See [https://github.com/rudyzhou/Dynamic_Kymograph](https://github.com/rudyzhou/Dynamic_Kymograph) for download and detailed usage instructions.
 
-## Authors
+Authors
+-------
 
-  - Rudy Zhou - \[rudyzhou\](https://github.com/rudyzhou)
+-   Rudy Zhou - \[rudyzhou\](https://github.com/rudyzhou)
 
-## License
+License
+-------
 
 This project is licensed under the [GNU General Public License](https://imagej.net/GPL).
 
-## Acknowledgements
+Acknowledgements
+----------------
 
 Some code used from [Multiple Kymograph Plugin](https://imagej.net/Multi_Kymograph) by Jens Reitdorf, Arne Seitz, and Johannes Schindelin.

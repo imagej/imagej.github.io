@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include info-box logo='![ 96px](/images/pages/Fiji-icon.png " 96px") ' software='ImageJ ' name='RETINA Analysis Toolkit ' author=' ["""Daniel E. Maidana"""](https://www.researchgate.net/profile/Daniel_Maidana2)  
+{% include info-box logo='![ 96px](/images/pages/Fiji-icon.png "fig: 96px") ' software='ImageJ ' name='RETINA Analysis Toolkit ' author=' ["""Daniel E. Maidana"""](https://www.researchgate.net/profile/Daniel_Maidana2)  
 ["""Demetrios G. Vavvas"""](https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g) ' maintainer='"""Daniel E. Maidana"""  
 Angiogenesis Laboratory  
 Massachusetts Eye and Ear Infirmary  
@@ -17,14 +17,16 @@ Email: [Daniel Maidana](mailto:dmaida3@uic.edu) ' filename=' [TUNEL Cell Counter
 **RETINA Analysis Toolkit** is a free macro toolkit designed and developed for Fiji (ImageJ). The purpose of the RETINA Analysis Toolkit is to perform fast quantitation of digital RGB images from retina cryosections, acquired by fluorescent microscopes. The current components of these toolkit are: TUNEL Cell Counter and RETINA Cell Heatmap.
 
   
-\----
+----
 
-# TUNEL Cell Counter
+TUNEL Cell Counter
+==================
 
   
 TUNEL Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. {% include thumbnail src='/images/pages/RETINA Cell Counter Montage.png ' title='\'\'\'TUNEL Cell Counter\'\'\': Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.'%}
 
-## Required Components
+Required Components
+-------------------
 
 The following are required to execute this tool:
 
@@ -33,11 +35,13 @@ The following are required to execute this tool:
 3.  <b>Microscope Spatial Scale</b>: Pixels/microns.
 4.  <b>Minimum Cell Size & Maximum Cell Area (µm<sup>2</sup>)</b>: These values should be determined upfront, according to your image dataset. These measurements can be performed in Fiji with the freehand selection tool, after setting the spatial scale factor.
 
-## How to Use: 2 Minute Tutorial
+How to Use: 2 Minute Tutorial
+-----------------------------
 
 {% include youtube url='https://www.youtube.com/embed/NyCXqNA-NTc'%}
 
-## Processing Settings
+Processing Settings
+-------------------
 
 {% include thumbnail src='/images/pages/RETINA Cell Counter Dialog.png' title='\'\'\'Settings Dialog\'\'\': Input the spatial scale obtained from the image metadata or microscope.'%} After importing a TIFF image and executing the counter, the following settings should be selected:
 
@@ -52,20 +56,20 @@ The following are required to execute this tool:
 9.  <b>Channels</b>: Choose the cells of interest in either the green, red, or combined channels.
 10. <b>Help</b>: Links directly to this site.
 
-|                                                                                                                                                                            |                                                                                                                                                                                      |                                                                                                                                                                                           |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| {% include thumbnail src='/images/pages/RETINA Cell Counter Roundness.png' title='\'\'\'Cell Roundness\'\'\': Select the desired morphology for cells.'%} | {% include thumbnail src='/images/pages/RETINA Cell Counter Area.png' title='\'\'\'Retina Area Selection\'\'\': Choose between automated or manual segmentation.'%} | {% include thumbnail src='/images/pages/RETINA Cell Counter Threshold.png' title='\'\'\'Threshold Sensitivity\'\'\': Select the threshold protocol for cell counting.'%} |
+<table><tbody><tr class="odd"><td><p>style="vertical-align:top"|{% include thumbnail src='/images/pages/RETINA Cell Counter Roundness.png' title='\'\'\'Cell Roundness\'\'\': Select the desired morphology for cells.'%}</p></td><td><p>style=“vertical-align:top"|{% include thumbnail src='/images/pages/RETINA Cell Counter Area.png' title='\'\'\'Retina Area Selection\'\'\': Choose between automated or manual segmentation.'%}</p></td><td><p>style=“vertical-align:top"|{% include thumbnail src='/images/pages/RETINA Cell Counter Threshold.png' title='\'\'\'Threshold Sensitivity\'\'\': Select the threshold protocol for cell counting.'%}</p></td></tr></tbody></table>
 
-## Results
+Results
+-------
 
 A processed image is generated and saved in a new directory. Results are saved as an Excel (.xls) file.
 
-## Limitations
+Limitations
+-----------
 
 1.  Acquisition: The macro was designed for images acquired with a 20x/0.8 air objective. We considered this magnification the most suitable to assess a reasonably large area without missing out cell morphology details.
 2.  Staining quality: Images need to have an intense cell staining and low background noise.
 3.  Image Focus: Uneven image focus will render incomplete layer segmentation.
-4.  Indistinguishable Retinal Layers: The macro cannot distinguish between the ONL and INL if you can't either\!
+4.  Indistinguishable Retinal Layers: The macro cannot distinguish between the ONL and INL if you can't either!
 5.  Uncentered Image: For best results, acquire images centered in frame.
 6.  Significant Shadowing: Shadowing will render incomplete layer segmentation.
 
@@ -74,32 +78,37 @@ To have an idea of suitable images for this macro, we recommend to review the im
 
 :\*[TUNEL Cell Counter Repository](https://osf.io/9rveh/)
 
-## FAQs
+FAQs
+----
 
 1.  Q: Can I modify the source code?
-      - A: *Yes, you can modify the code to develop new macros or plugins. Please acknowledge previous work that helped or inspired you, and share your contribution with the scientific community\!*  
+    -   A: *Yes, you can modify the code to develop new macros or plugins. Please acknowledge previous work that helped or inspired you, and share your contribution with the scientific community!*  
 2.  Q: I used this tool for my research. How should I acknowledge it?
-      - A: *Please cite or reference this work as follows: Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Invest Ophthalmol Vis Sci. 2015;56:6701–6708. <DOI:10.1167/> iovs.15-17599.*  
+    -   A: *Please cite or reference this work as follows: Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Invest Ophthalmol Vis Sci. 2015;56:6701–6708. <DOI:10.1167/> iovs.15-17599.*  
 3.  Q: I cannot get accurate segmentation or counting. Any advice?
-      - A: *Check your acquisition and post-processing parameters for the channel of interest. First, reduce background as much as possible to remove any fragments. Next, adjust saturation until cells are easily identifiable. Apply the same settings to the entire dataset if comparison is intended.*  
+    -   A: *Check your acquisition and post-processing parameters for the channel of interest. First, reduce background as much as possible to remove any fragments. Next, adjust saturation until cells are easily identifiable. Apply the same settings to the entire dataset if comparison is intended.*  
 
-## Future Developments
+Future Developments
+-------------------
 
-Yes, we know there is a lot to improve\!  
-<b>In case you have any comments, suggestions, or any difficulties with your images, just send us a message\!</b>
+Yes, we know there is a lot to improve!  
+<b>In case you have any comments, suggestions, or any difficulties with your images, just send us a message!</b>
 
-## References
+References
+----------
 
 1.  Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina.<i> Invest Ophthalmol Vis Sci</i>. 2015;56:6701–6708. <DOI:10.1167/> iovs.15-17599.''
 
------
+------------------------------------------------------------------------
 
-# Macro Setup Instructions
+Macro Setup Instructions
+========================
 
-## How to Download and Install ImageJ Macros
+How to Download and Install ImageJ Macros
+-----------------------------------------
 
   
 {% include youtube url='https://www.youtube.com/embed/CvhPjZ62cik'%}  
-\----
+----
 
 

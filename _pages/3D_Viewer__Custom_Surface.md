@@ -10,7 +10,8 @@ description: test description
 (Return to the [Developer Documentation](3D_Viewer__Developer_Documentation ) page)  
 (Return to the main [3D\_Viewer](3D_Viewer ) page)
 
-## How to display and show custom surfaces
+How to display and show custom surfaces
+---------------------------------------
 
 You can download example source code for this HowTo [here](3D_Viewer__Example_code ).
 
@@ -20,44 +21,42 @@ Before reading this HowTo, it may be helpful to read [The relation between Conte
 
 One strength of the viewer is to make displaying custom meshes very straightforward. User-defined points, lines, triangle or quadrangle meshes can be displayed very easily:
 
-``` java
-    // Create a set of points
-    List&lt;Point3f&gt; mesh = new ArrayList&lt;Point3f&gt;();
-    mesh.add(new Point3f(-100, -100, 50));
-    mesh.add(new Point3f(100, -100, 50));
-    mesh.add(new Point3f(0, 100, 50));
+        // Create a set of points
+        List&lt;Point3f&gt; mesh = new ArrayList&lt;Point3f&gt;();
+        mesh.add(new Point3f(-100, -100, 50));
+        mesh.add(new Point3f(100, -100, 50));
+        mesh.add(new Point3f(0, 100, 50));
 
-    // Create a universe and show it
-    Image3DUniverse univ = new Image3DUniverse();
-    univ.showAttribute(
-            Image3DUniverse.ATTRIBUTE_COORD_SYSTEM, false);
-    univ.show();
+        // Create a universe and show it
+        Image3DUniverse univ = new Image3DUniverse();
+        univ.showAttribute(
+                Image3DUniverse.ATTRIBUTE_COORD_SYSTEM, false);
+        univ.show();
 
-    // Add the mesh as points
-    CustomPointMesh cm = new CustomPointMesh(mesh);
-    cm.setColor(new Color3f(0, 1, 0));
-    univ.addCustomMesh(cm, "points");
-    cm.setPointSize(10);
+        // Add the mesh as points
+        CustomPointMesh cm = new CustomPointMesh(mesh);
+        cm.setColor(new Color3f(0, 1, 0));
+        univ.addCustomMesh(cm, "points");
+        cm.setPointSize(10);
 
-    // Add the mesh as a triangle
-    CustomTriangleMesh tm = new CustomTriangleMesh(mesh);
-    tm.setColor(new Color3f(0, 0, 1));
-    Content c = univ.addCustomMesh(tm, "triangle");
+        // Add the mesh as a triangle
+        CustomTriangleMesh tm = new CustomTriangleMesh(mesh);
+        tm.setColor(new Color3f(0, 0, 1));
+        Content c = univ.addCustomMesh(tm, "triangle");
 
-    // Add the mesh as a triangle
-    mesh.add(new Point3f(mesh.get(0))); // to close the path
-    CustomLineMesh lm = new CustomLineMesh(
-            mesh, CustomLineMesh.CONTINUOUS);
-    lm.setColor(new Color3f(1, 0, 0));
-    univ.addCustomMesh(lm, "lines");
-    lm.setLineWidth(5);
-    lm.setPattern(CustomLineMesh.DASH);
+        // Add the mesh as a triangle
+        mesh.add(new Point3f(mesh.get(0))); // to close the path
+        CustomLineMesh lm = new CustomLineMesh(
+                mesh, CustomLineMesh.CONTINUOUS);
+        lm.setColor(new Color3f(1, 0, 0));
+        univ.addCustomMesh(lm, "lines");
+        lm.setLineWidth(5);
+        lm.setPattern(CustomLineMesh.DASH);
 
-    // after adding the CustomMesh to the universe, we have a
-    // reference to the Content, which can be used for further
-    // modification
-    c.setTransparency(0.5f);
-```
+        // after adding the CustomMesh to the universe, we have a
+        // reference to the Content, which can be used for further
+        // modification
+        c.setTransparency(0.5f);
 
 ### More complex meshes, like spheres, tubes, etc
 
@@ -65,18 +64,16 @@ There exist also convenience methods in `ImageJ3DUniverse` for adding custom mes
 
 To create more complex meshes, one can use the helper methods of the class `Mesh_Maker`:
 
-``` 
-    // Use Mesh_Maker to create more complex surfaces like spheres,
-    // tubes or discs:
+        // Use Mesh_Maker to create more complex surfaces like spheres,
+        // tubes or discs:
 
-    // define a sphere with center at the origin and radius 50
-    double x = 0, y = 0, z = 30, r = 50;
-    int meridians = 24;
-    int parallels = 24;
-    mesh = Mesh_Maker.createSphere(x, y, z, r, meridians, parallels);
-    Color3f color = null;
-    univ.addTriangleMesh(mesh, color, "sphere");
-```
+        // define a sphere with center at the origin and radius 50
+        double x = 0, y = 0, z = 30, r = 50;
+        int meridians = 24;
+        int parallels = 24;
+        mesh = Mesh_Maker.createSphere(x, y, z, r, meridians, parallels);
+        Color3f color = null;
+        univ.addTriangleMesh(mesh, color, "sphere");
 
 ### Display many surfaces efficiently
 
@@ -102,53 +99,45 @@ There is also another disadvantage; adding each sphere individually means that e
 
 <b>`Image3DUniverse:`</b>
 
-``` java
-public Content addCustomMesh(CustomMesh mesh, String name);
+    public Content addCustomMesh(CustomMesh mesh, String name);
 
-public Content addLineMesh(List&lt;Point3f&gt; mesh, Color3f color, String name,
-        boolean strips);
+    public Content addLineMesh(List&lt;Point3f&gt; mesh, Color3f color, String name,
+            boolean strips);
 
-public Content addPointMesh(List&lt;Point3f&gt; mesh, Color3f color, String name);
+    public Content addPointMesh(List&lt;Point3f&gt; mesh, Color3f color, String name);
 
-public Content addQuadMesh(List&lt;Point3f&gt; mesh, Color3f color, String name);
+    public Content addQuadMesh(List&lt;Point3f&gt; mesh, Color3f color, String name);
 
-public Content addTriangleMesh(List&lt;Point3f&gt; mesh, Color3f color, String name);
-```
+    public Content addTriangleMesh(List&lt;Point3f&gt; mesh, Color3f color, String name);
 
 <b>`CustomMesh:`</b>  
 The methods of `CustomMesh` are inherited by `CustomLineMesh`, `CustomPointMesh`,`CustomTriangleMesh` and `CustomQuadMesh`. They can be used next to similar functions which are provided by the `Content` class, once the wrapping `Content` is created, however, it is recommended to use the methods there.
 
-``` 
-    public Color3f getColor();
+        public Color3f getColor();
 
-    public void setColor(Color3f color);
+        public void setColor(Color3f color);
 
-    public float getTransparency();
+        public float getTransparency();
 
-    public void setTransparency(float transparency);
+        public void setTransparency(float transparency);
 
-    public boolean isShaded();
+        public boolean isShaded();
 
-    public void setShaded(boolean b);
-```
+        public void setShaded(boolean b);
 
 <b>`CustomLineMesh:`</b>
 
-``` 
-    public void setPattern(int pattern);
-    
-    public void setAntiAliasing(boolean b);
-    
-    public void setLineWidth(float w);
-```
+        public void setPattern(int pattern);
+        
+        public void setAntiAliasing(boolean b);
+        
+        public void setLineWidth(float w);
 
 <b>`CustomPointMesh:`</b>
 
-``` 
-    public void setPointSize(float pointsize);
-    
-    public void setAntiAliasing(boolean b);
-```
+        public void setPointSize(float pointsize);
+        
+        public void setAntiAliasing(boolean b);
 
 <b>`CustomTriangleMesh:`</b>  
 no additional methods.
@@ -158,17 +147,15 @@ no additional methods.
 
 <b>`Mesh_Maker:`</b>
 
-``` 
-    static public List createSphere(double x, double y, double z, double r);
+        static public List createSphere(double x, double y, double z, double r);
 
-    static public List createSphere(double x, double y, double z, double r,
-                int meridians, int parallels);
+        static public List createSphere(double x, double y, double z, double r,
+                    int meridians, int parallels);
 
-    static public List createTube(double[] x,  double[] y,  double[] z,
-                double[] r,  int parallels,  boolean do_resample);
+        static public List createTube(double[] x,  double[] y,  double[] z,
+                    double[] r,  int parallels,  boolean do_resample);
 
-    static public List createDisc(double x, double y, double z,
-                double nx, double ny, double nz,
-                double radius,
-                int edgePoints );
-```
+        static public List createDisc(double x, double y, double z,
+                    double nx, double ny, double nz,
+                    double radius,
+                    int edgePoints );

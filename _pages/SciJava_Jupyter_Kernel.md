@@ -21,7 +21,8 @@ description: test description
 {% endcapture %}
 {% include info-box name='scijava-jupyter-kernel ' logo=' ' software='SciJava ' author=author maintainer=maintainer source=source released='23/04/2016 ' status='0.4.0, beta ' category=' ' %}
 
-## Presentation
+Presentation
+------------
 
 Scijava Jupyter Kernel aims to provide a first class citizen Jupyter kernel that integrates out-of-the-box with ImageJ.
 

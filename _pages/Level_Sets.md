@@ -9,7 +9,8 @@ description: test description
 
 {% include component-stats content='sc.fiji:level\_sets' %}<img src="/images/pages/LS.2b.progress.png" width="300"/>
 
-## Level Sets and Fast Marching
+Level Sets and Fast Marching
+----------------------------
 
 ### Introduction
 
@@ -31,51 +32,52 @@ Active contours evolve an initial contour in time according to multiple intrinsi
 
 This implementation is based on following PDE update:
 
-$$\Phi(i) = \Delta T g(i) ( W_a F_a |\nabla\Phi| + W_c F_c |\nabla\Phi| )$$
+$$*Φ*(*i*) = *Δ**T**g*(*i*)(*W*<sub>*a*</sub>*F*<sub>*a*</sub>\|∇*Φ*\| + *W*<sub>*c*</sub>*F*<sub>*c*</sub>\|∇*Φ*\|)$$
 
 with
 
-  -   
-    $$g(I) = \frac{1}{1 + ({\nabla I}^*  + g) \cdot 2}$$
+  
+$$$g(I) = \\frac{1}{1 + ({\\nabla I}^\*  + g) \\cdot 2}$$$
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        $$\nabla I^*$$ = difference of smoothened (gaussian blurred) image
+  
+  
+$$∇*I*<sup>\*</sup>$$ = difference of smoothened (gaussian blurred) image
 
-<!-- end list -->
+<!-- -->
 
-  - 
-    
-      -   
-        $$<math>g = \\begin{cases} 0 & \\text{if gray value } \< \\text{ preset gray value.}\\\\
+  
+  
+$$<math>g = \\begin{cases} 0 & \\text{if gray value } &lt; \\text{ preset gray value.}\\\\
 
 \\text{gray value }&\\text{otherwise.} \\end{cases}</math>$$
 
-  -   
-    $$\Delta T = \frac{1}{6 \cdot W_a \cdot W_c}$$
+  
+$$$\\Delta T = \\frac{1}{6 \\cdot W\_a \\cdot W\_c}$$$
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    $$\Phi(i)$$ = iso surface at current iteration i
+  
+$$*Φ*(*i*)$$ = iso surface at current iteration i
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    $$W_a$$ = Advection weight
-    $$F_a$$ = Advection force
-    $$W_c$$ = Curvature weight
-    $$F_c$$ = Curvature force
+  
+$$*W*<sub>*a*</sub>$$ = Advection weight
+
+$$*F*<sub>*a*</sub>$$ = Advection force
+
+$$*W*<sub>*c*</sub>$$ = Curvature weight
+
+$$*F*<sub>*c*</sub>$$ = Curvature force
 
 A more detailed explanation of the algorithm can be found at following links:
 
-  - Book: [Insight Into Images Principles and Practice for Segmentation, Registration and Image Analysis](http://www.akpeters.com/product.asp?ProdCode=2175)
-  - [ITK online documentation](http://www.itk.org/ItkSoftwareGuide.pdf), Chapter 9.3
-  - {% include wikipedia title='Fast marching' text='Wikipedia Fast Marching'%}
-  - {% include wikipedia title='Level set' text='Wikipedia Level Sets'%}
+-   Book: [Insight Into Images Principles and Practice for Segmentation, Registration and Image Analysis](http://www.akpeters.com/product.asp?ProdCode=2175)
+-   [ITK online documentation](http://www.itk.org/ItkSoftwareGuide.pdf), Chapter 9.3
+-   {% include wikipedia title='Fast marching' text='Wikipedia Fast Marching'%}
+-   {% include wikipedia title='Level set' text='Wikipedia Level Sets'%}
 
 An upcoming future implementation will add geodesic active contours as described by Caselles et.al.
 
@@ -85,25 +87,25 @@ An upcoming future implementation will add geodesic active contours as described
 
 Open the example image "Dot Blot (7k)" in the menu File, Open Samples
 
-![Dot\_Blot.jpg](/images/pages/Dot Blot.jpg "Dot_Blot.jpg")
+![](/images/pages/Dot Blot.jpg "Dot_Blot.jpg")
 
 Using the "Point selections", select a seed point as a start.
 
-![Fiji-pointselection.png](/images/pages/Fiji-pointselection.png "Fiji-pointselection.png")
+![](/images/pages/Fiji-pointselection.png "Fiji-pointselection.png")
 
 Selecting a point is very similar to selecting a location for filling an object - in fact, fast marching is very similar to flood fill with a more sophisticated boundary detection. In the following picture, a point inside one of the dots is selected:
 
-![FM.1.seed.png](/images/pages/FM.1.seed.png "FM.1.seed.png")
+![](/images/pages/FM.1.seed.png "FM.1.seed.png")
 
 Go to the Level Sets dialog, deselect the Level Sets option and select the Fast Marching option. Keep the parameters the same:
 
-![FM.0.dialog.png](/images/pages/FM.0.dialog.png "FM.0.dialog.png")
+![](/images/pages/FM.0.dialog.png "FM.0.dialog.png")
 
 Click on OK and you'll see a constantly updated progress window and, after completion, a result window. The segmented points will be shown in green in the progress window.
 
-Progress: ![FM.2.progress.png](/images/pages/FM.2.progress.png "FM.2.progress.png")
+Progress: ![](/images/pages/FM.2.progress.png "fig:FM.2.progress.png")
 
-Result: ![FM.3.result.png](/images/pages/FM.3.result.png "FM.3.result.png")
+Result: ![](/images/pages/FM.3.result.png "fig:FM.3.result.png")
 
 **Level Sets**
 
@@ -111,17 +113,17 @@ Open the example image "Dot Blot (7k)" in the menu File, Open Samples
 
 Using an object selector, select an approximate shape inside or outside the object. In the first example, a oval inside one of the Dots is selected.
 
-![LS.1.seed.png](/images/pages/LS.1.seed.png "LS.1.seed.png")
+![](/images/pages/LS.1.seed.png "LS.1.seed.png")
 
 Go to the Level Sets dialog, deselect Fast Marching and make sure Level Sets is selected. Keep the parameters and click OK. Note that the "Region expands to" option is set to outside, i.e. the contour will grow to the outside of the initial selection. Thus, make sure that the setting "Region expands to" matches the initial selection relative to the object of interest.
 
-![LS.0.dialog.png](/images/pages/LS.0.dialog.png "LS.0.dialog.png")
+![](/images/pages/LS.0.dialog.png "LS.0.dialog.png")
 
 Level Sets advance a contour until it hits a boundary. Thus, the progress window shows the currently active contour in red and the previously active contour in yellow. The contour will advance until it hits the border of the dot.
 
-Progress: ![LS.2.progress.png](/images/pages/LS.2.progress.png "LS.2.progress.png")
+Progress: ![](/images/pages/LS.2.progress.png "fig:LS.2.progress.png")
 
-Result: ![LS.3.result.png](/images/pages/LS.3.result.png "LS.3.result.png")
+Result: ![](/images/pages/LS.3.result.png "fig:LS.3.result.png")
 
 Note the output in the debug window:
 
@@ -145,17 +147,17 @@ More important is the output of the convergence. If the convergence in the dialo
 
 In the following example, the contour will advance to the inside with a rectangular selection as starting point. Note, that with Level Set segmentation, several objects can be selected at the same time. During the contour advancement, the contour will separate into the separate objects. Select a rectangular region outside the object of interest:
 
-![LS.1b.seed.png](/images/pages/LS.1b.seed.png "LS.1b.seed.png")
+![](/images/pages/LS.1b.seed.png "LS.1b.seed.png")
 
 Go to the Level Sets plugin dialog, select "Region expands to **inside**"
 
-![LS.0b.dialog.png](/images/pages/LS.0b.dialog.png "LS.0b.dialog.png")
+![](/images/pages/LS.0b.dialog.png "LS.0b.dialog.png")
 
 The end result looks slightly different because the local differences are not the same when the contour approaches the dot from the outside or the inside.
 
-Progress: ![LS.2b.progress.png](/images/pages/LS.2b.progress.png "LS.2b.progress.png")
+Progress: ![](/images/pages/LS.2b.progress.png "fig:LS.2b.progress.png")
 
-Result: ![LS.3b.result.png](/images/pages/LS.3b.result.png "LS.3b.result.png")
+Result: ![](/images/pages/LS.3b.result.png "fig:LS.3b.result.png")
 
 All three dots were segmented into distinct objects.
 
@@ -169,41 +171,41 @@ The "Preprocessing" option is used for calculation the differences of neighborin
 
 **Fast Marching**
 
-  - **Gray value threshold**:
+-   **Gray value threshold**:
 
 This is used to determine the stopping point for the expansion as the gray value difference between boundary pixels and the seed point(s). Increase it if the image has stronger contrasts, decrease it if the contrast is not strong.
 
-  - **Distance threshold**:
+-   **Distance threshold**:
 
 How much the selection is permitted to expand in one iteration. Increasing it will speed up the process but desensitize it.
 
 **Level Sets**
 
-  - **Method**:
+-   **Method**:
 
 "Active Contours" or "Geodesic Active Contours". "Active Contours" is the algorithm as described above. "Geodesic Active Contours" are an implementation of the algorithm as described by Caselles et.al. (International Journal of Computer Vision 22:61) and implemented in the in the GeodesicActiveContour class of ITK. Geodesic active contours can find Canny-type edges in the region of interest, while also introducing a smoothing term. This implementation is still experimental and not completely vetted. Use with caution. There will be a more complete description once it is feature complete. The convergence value should be lowered for Geodesic Active Contours.
 
-  - **Advection**:
+-   **Advection**:
 
 Essentially the speed the contour progresses. Increasing the value will speed up the segmentation but it may advance too fast and miss the boundary.
 
-  - **Propagation**:
+-   **Propagation**:
 
 This number determines the expansion (propagation) of the contour. Only used for Geodesic Active Contours.
 
-  - **Curvature**:
+-   **Curvature**:
 
 This number determines the weight of the curvature in progressing the contour.
 
-  - **Grayscale tolerance**:
+-   **Grayscale tolerance**:
 
 During contour evolution the gray values of the current contour are compared to the next progression of the contour. If they exceed the value set here, a penalty is introduced.
 
-  - **Convergence**:
+-   **Convergence**:
 
 The value here is used as criterion for converging. If the changes in the contour between two iterations are lower than that value, the algorithm will stop. Increase the value if the contour doesn't stop at the boundary and/or collapses completely or decrease it if it stops to early.
 
-  - **Region expands to**:
+-   **Region expands to**:
 
 As described in the tutorial, this setting determines if the contour will evolve to the inside of the selection or the outside.
 

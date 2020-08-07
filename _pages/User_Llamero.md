@@ -11,6 +11,7 @@ description: test description
 
 My name is **Benjamin Smith**. I am currently an Imaging Specialist within the Vision Sciences Group at the University of California, Berkeley.
 
-## Maintained plugins (Fiji)
+Maintained plugins (Fiji)
+-------------------------
 
-  - [Quiver Plot](Quiver_Plot )
+-   [Quiver Plot](Quiver_Plot )

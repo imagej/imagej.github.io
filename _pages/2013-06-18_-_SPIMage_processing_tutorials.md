@@ -7,13 +7,13 @@ categories: News
 description: test description
 ---
 
-As part of Fiji's sister project - [**OpenSPIM**](http://openspim.org)\[1\] - we have assembled detailed step-by-step tutorials for [**SPIMage processing**](http://openspim.org/Operation#Data_processing).
+As part of Fiji's sister project - [**OpenSPIM**](http://openspim.org)[1] - we have assembled detailed step-by-step tutorials for [**SPIMage processing**](http://openspim.org/Operation#Data_processing).
 
-  - We start by defining [**System requirements**](http://openspim.org/Pre-requisites) and downloading ['''sample OpenSPIM data](http://openspim.org/Raw_data),
-  - followed by optional [**pre-processing steps**](http://openspim.org/Pre-processing).
-  - [**Multi-view registration**](http://openspim.org/Registration) is at the heart of SPIMage processing pipeline.
-  - [**Multi-view Fusion**](http://openspim.org/Fusion) section discusses how to combine several view into one output image
-  - [**Time series registration**](http://openspim.org/Timelapse_Registration) removes the sample drift across long-term timelapse.
+-   We start by defining [**System requirements**](http://openspim.org/Pre-requisites) and downloading ['''sample OpenSPIM data](http://openspim.org/Raw_data),
+-   followed by optional [**pre-processing steps**](http://openspim.org/Pre-processing).
+-   [**Multi-view registration**](http://openspim.org/Registration) is at the heart of SPIMage processing pipeline.
+-   [**Multi-view Fusion**](http://openspim.org/Fusion) section discusses how to combine several view into one output image
+-   [**Time series registration**](http://openspim.org/Timelapse_Registration) removes the sample drift across long-term timelapse.
 
 The pipeline is relatively linear as described above, we highlight the steps where [**alternative routes exist**](http://openspim.org/Registration#Cross-road_in_SPIM_plugins).
 
@@ -21,4 +21,4 @@ The pipeline is relatively linear as described above, we highlight the steps whe
 
 
 
-1.  {% include cite content='journal' author='Pitrone P. G., Schindelin J., Stuyvenberg L., Preibisch S., Weber M.; Eliceiri K. W., Huisken J., Tomancak P. ' title='OpenSPIM: an open access light sheet microscopy platform ' journal='Nature Methods ' volume=' ' number=' ' pages=' ' year='2013 ' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2507.html ' %}
+[1] {% include cite content='journal' author='Pitrone P. G., Schindelin J., Stuyvenberg L., Preibisch S., Weber M.; Eliceiri K. W., Huisken J., Tomancak P. ' title='OpenSPIM: an open access light sheet microscopy platform ' journal='Nature Methods ' volume=' ' number=' ' pages=' ' year='2013 ' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2507.html ' %}

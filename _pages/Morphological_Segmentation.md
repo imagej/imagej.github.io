@@ -19,13 +19,16 @@ description: test description
 {% capture source%}
 {% include github org='ijpb ' repo='MorphoLibJ ' %}
 {% endcapture %}
-{% include info-box name='Morphological Segmentation ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ ) v1.4.1) ' status='stable, active ' category='[Segmentation](Category_Segmentation ), [Mathematical morphology](Category_Mathematical_morphology ) ' %}{| |style="vertical-align:top" |{% include thumbnail src='/images/pages/Morphological-Segmentation-animation-blobs.gif' title='Visual description of the different steps of the Morphological Segmentation plugin.'%} |}
+{% include info-box name='Morphological Segmentation ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ ) v1.4.1) ' status='stable, active ' category='[Segmentation](Category_Segmentation ), [Mathematical morphology](Category_Mathematical_morphology ) ' %}{\| \|<span>  
+</span>style="vertical-align:top" \|{% include thumbnail src='/images/pages/Morphological-Segmentation-animation-blobs.gif' title='Visual description of the different steps of the Morphological Segmentation plugin.'%} \|}
 
-## Introduction
+Introduction
+------------
 
 <img src="/images/pages/Morphological-segmentation-front.png" width="400"/>Morphological Segmentation is an ImageJ/Fiji plugin that combines morphological operations, such as extended minima and morphological gradient, with watershed flooding algorithms to segment grayscale images of any type (8, 16 and 32-bit) in 2D and 3D.
 
-## Usage
+Usage
+-----
 
 Morphological Segmentation runs on any open grayscale image, single 2D image or (3D) stack. If no image is open when calling the plugin, an Open dialog will pop up.
 
@@ -39,26 +42,22 @@ The user can pan, zoom in and out, or scroll between slices (if the input image 
 
 You should select:
 
-  - **Border Image**: if your input image has highlighted object boundaries.
-  - **Object Image**: if the borders of the objects do not have higher intensity values than the rest of voxels in the image.
+-   **Border Image**: if your input image has highlighted object boundaries.
+-   **Object Image**: if the borders of the objects do not have higher intensity values than the rest of voxels in the image.
 
 When selecting “Object Image”, an additional set of options is enabled to choose the type of gradient and radius (in pixels) to apply to the input image before starting the morphological operations. Finally, a checkbox allows displaying the gradient image instead of the input image in the main canvas of the plugin (only after running the watershed segmentation).
 
 ### Watershed Segmentation panel
 
-![Watershed Segmentation panel](/images/pages/Morphological-segmentation-watershed-segmentation-panel.png "Watershed Segmentation panel")This panel is reserved to the parameters involved in the segmentation pipeline. By default, only the tolerance can be changed. Clicking on “Advanced options” enables the rest of options.
+<img src="/images/pages/Morphological-segmentation-watershed-segmentation-panel.png" title="fig:Watershed Segmentation panel" width="250" alt="Watershed Segmentation panel" />This panel is reserved to the parameters involved in the segmentation pipeline. By default, only the tolerance can be changed. Clicking on “Advanced options” enables the rest of options.
 
-  - **Tolerance**: dynamic of intensity for the search of regional minima (in the extended-minima transform, which is the regional minima of the H-minima transform, value of h). Increasing the tolerance value reduces the number of segments in the final result, while decreasing its value produces more object splits.
+-   **Tolerance**: dynamic of intensity for the search of regional minima (in the extended-minima transform, which is the regional minima of the H-minima transform, value of h). Increasing the tolerance value reduces the number of segments in the final result, while decreasing its value produces more object splits.
 
-<!-- end list -->
+  
+<b><span style="color:#f80000">Note</span></b>: since the tolerance is an intensity parameter, it is sensitive to the input image type. A tolerance value of 10 is a good starting point for 8-bit images (with 0-255 intensity range) but it should be drastically increased when using image types with larger intensity ranges. For example to \~2000 when working on a 16-bit image (intensity values between 0 and 65535).
 
-  -   
-    <b><span style="color:#f80000">Note</span></b>: since the tolerance is an intensity parameter, it is sensitive to the input image type. A tolerance value of 10 is a good starting point for 8-bit images (with 0-255 intensity range) but it should be drastically increased when using image types with larger intensity ranges. For example to \~2000 when working on a 16-bit image (intensity values between 0 and 65535).
-
-<!-- end list -->
-
-  - **Calculate dams**: un-check this option to produce segmentations without watershed lines.
-  - **Connectivity**: voxel connectivity (4-8 in 2D, and 6-26 in 3D). Selecting non-diagonal connectivity (4 or 6) usually provides more rounded objects.
+-   **Calculate dams**: un-check this option to produce segmentations without watershed lines.
+-   **Connectivity**: voxel connectivity (4-8 in 2D, and 6-26 in 3D). Selecting non-diagonal connectivity (4 or 6) usually provides more rounded objects.
 
 Finally, **click on “Run” to launch the segmentation**.
 
@@ -66,34 +65,31 @@ If your segmentation is taking too long or you want **to stop it** for any reaso
 
 ### Results panel
 
-![Results panel](/images/pages/Morphological-segmentation-results-panel.png "Results panel")Only enabled after running the segmentation.
+<img src="/images/pages/Morphological-segmentation-results-panel.png" title="fig:Results panel" width="250" alt="Results panel" />Only enabled after running the segmentation.
 
-  - **Display**: list of options to display the segmentation results.
-      - **Overlaid basins**: colored objects overlaying the input image (with or without dams depending on the selected option in the Watershed Segmentation panel).
-      - **Overlaid dams**: overlay the watershed dams in red on top of the input image (only works if “Calculate dams” is checked).
-      - **Catchment basins**: colored objects.
-      - **Watershed lines**: binary image showing the watershed lines in black and the objects in white (only works if “Calculate dams” is checked).
-  - **Show result overlay**: toggle result overlay.
-  - **Create image button**: create a new image with the results displayed in the canvas.
+-   **Display**: list of options to display the segmentation results.
+    -   **Overlaid basins**: colored objects overlaying the input image (with or without dams depending on the selected option in the Watershed Segmentation panel).
+    -   **Overlaid dams**: overlay the watershed dams in red on top of the input image (only works if “Calculate dams” is checked).
+    -   **Catchment basins**: colored objects.
+    -   **Watershed lines**: binary image showing the watershed lines in black and the objects in white (only works if “Calculate dams” is checked).
+-   **Show result overlay**: toggle result overlay.
+-   **Create image button**: create a new image with the results displayed in the canvas.
 
 {% include thumbnail src='/images/pages/Morphological-segmentation-result-examples.png' title='Examples of the 4 different display options'%}
 
 ### Post-processing panel
 
-![Post-processing panel](/images/pages/Morphological-segmentation-post-processing-panel.png "Post-processing panel")Similarly to the Results panel, this panel only gets enabled after running the segmentation pipeline.
+<img src="/images/pages/Morphological-segmentation-post-processing-panel.png" title="fig:Post-processing panel" width="250" alt="Post-processing panel" />Similarly to the Results panel, this panel only gets enabled after running the segmentation pipeline.
 
-  - **Merge labels**: merge together labels selected by either the **“freehand” selection too**l (on a single slice) **or the point tool** (on single or multiple slices). The zero-value label belongs to the watershed dams, therefore it will ignored in case of being selected. The first selected label value will be assigned to the rest of selected labels, which will share its color.
+-   **Merge labels**: merge together labels selected by either the **“freehand” selection too**l (on a single slice) **or the point tool** (on single or multiple slices). The zero-value label belongs to the watershed dams, therefore it will ignored in case of being selected. The first selected label value will be assigned to the rest of selected labels, which will share its color.
 
-<!-- end list -->
+  
+<b><span style="color:#f80000">Note</span></b>: to select labels on different slices, use the point selection tool and keep the SHIFT key pressed each time you click on a new label.
 
-  -   
-    <b><span style="color:#f80000">Note</span></b>: to select labels on different slices, use the point selection tool and keep the SHIFT key pressed each time you click on a new label.
+-   **Shuffle colors**: randomly re-assign colors to the labels. This is a very handy option whenever two adjacent labels present a similar color.
 
-<!-- end list -->
-
-  - **Shuffle colors**: randomly re-assign colors to the labels. This is a very handy option whenever two adjacent labels present a similar color.
-
-## Video tutorials
+Video tutorials
+---------------
 
 ### Quick start guide
 
@@ -107,104 +103,90 @@ This video tutorial (with audio as well) shows how to use the plugin segment a 3
 
 {% include youtube url='https://www.youtube.com/embed/lm4hQhLlnHU'%}
 
-## Macro language compatibility
+Macro language compatibility
+----------------------------
 
 Morphological Segmentation is completely compatible with the popular [ImageJ macro language](https://imagej.net/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
 
 The complete list of commands is as follows:
 
-  - Start the plugin:
+-   Start the plugin:
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-run("Morphological Segmentation"); 
-```
+     
+    run("Morphological Segmentation"); 
 
-  - Select input image:
+-   Select input image:
 
-<!-- end list -->
+<!-- -->
 
-``` java
-// select as object image 
-call("inra.ijpb.plugins.MorphologicalSegmentation.setInputImageType", "object");
-// select as border image
-call("inra.ijpb.plugins.MorphologicalSegmentation.setInputImageType", "border"); 
-```
+    // select as object image 
+    call("inra.ijpb.plugins.MorphologicalSegmentation.setInputImageType", "object");
+    // select as border image
+    call("inra.ijpb.plugins.MorphologicalSegmentation.setInputImageType", "border"); 
 
-  - Run segmentation with specific options:
+-   Run segmentation with specific options:
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("inra.ijpb.plugins.MorphologicalSegmentation.segment", "tolerance=10",
- "calculateDams=true", "connectivity=6");
-```
+     
+    call("inra.ijpb.plugins.MorphologicalSegmentation.segment", "tolerance=10",
+     "calculateDams=true", "connectivity=6");
 
-  - Toggle result overlay:
+-   Toggle result overlay:
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("inra.ijpb.plugins.MorphologicalSegmentation.toggleOverlay");
-```
+     
+    call("inra.ijpb.plugins.MorphologicalSegmentation.toggleOverlay");
 
-  - Set option to display gradient image:
+-   Set option to display gradient image:
 
-<!-- end list -->
+<!-- -->
 
-``` java
-call("inra.ijpb.plugins.MorphologicalSegmentation.setShowGradient", "true");
-```
+    call("inra.ijpb.plugins.MorphologicalSegmentation.setShowGradient", "true");
 
-  - Select display format:
+-   Select display format:
 
-<!-- end list -->
+<!-- -->
 
-``` java
-// Overlaid basins
-call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Overlaid basins");
-// Overlaid dams
-call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Overlaid dams");
-// Catchment basins
-call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Catchment basins");
-// Watershed lines 
-call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Watershed lines");
-```
+    // Overlaid basins
+    call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Overlaid basins");
+    // Overlaid dams
+    call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Overlaid dams");
+    // Catchment basins
+    call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Catchment basins");
+    // Watershed lines 
+    call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Watershed lines");
 
-  - Create new image with the current result:
+-   Create new image with the current result:
 
-<!-- end list -->
+<!-- -->
 
-``` java
-call("inra.ijpb.plugins.MorphologicalSegmentation.createResultImage");
-```
+    call("inra.ijpb.plugins.MorphologicalSegmentation.createResultImage");
 
 #### Complete macro example:
 
-``` java
-// load the Blobs sample image
-run("Blobs (25K)");
-// run the plugin
-run("Morphological Segmentation");
-// wait for the plugin to load
-wait(1000);
-// select input image as "object"
-call("inra.ijpb.plugins.MorphologicalSegmentation.setInputImageType", "object");
-// set gradient radius as 1
-call("inra.ijpb.plugins.MorphologicalSegmentation.setGradientRadius", "1");
-// run segmentation with tolerance 32, calculating the watershed dams, 
-// 4-connectivity 
-call("inra.ijpb.plugins.MorphologicalSegmentation.segment", "tolerance=32",
- "calculateDams=true", "connectivity=4");
-// display the overlaid dams
-call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Overlaid dams");
-```
+    // load the Blobs sample image
+    run("Blobs (25K)");
+    // run the plugin
+    run("Morphological Segmentation");
+    // wait for the plugin to load
+    wait(1000);
+    // select input image as "object"
+    call("inra.ijpb.plugins.MorphologicalSegmentation.setInputImageType", "object");
+    // set gradient radius as 1
+    call("inra.ijpb.plugins.MorphologicalSegmentation.setGradientRadius", "1");
+    // run segmentation with tolerance 32, calculating the watershed dams, 
+    // 4-connectivity 
+    call("inra.ijpb.plugins.MorphologicalSegmentation.segment", "tolerance=32",
+     "calculateDams=true", "connectivity=4");
+    // display the overlaid dams
+    call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Overlaid dams");
 
-## Installation
+Installation
+------------
 
 Morphological Segmentation is part of the [MorphoLibJ](MorphoLibJ ) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites ) the IJPB-plugins update site:
 
@@ -220,35 +202,38 @@ You should now find the plugin under the sub-menu {% include bc content='Plugins
 
 **Note**: Morphological Segmentation is only one of the plugins included in the [MorphoLibJ](MorphoLibJ ) library. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
-## Examples
+Examples
+--------
 
-|                                                                                                                                                                                                                                                                           |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| {% include thumbnail src='/images/pages/Arabidopsis-embryo-3d-animation.gif' title='3d reconstruction of an \'\'Arabidopsis thaliana\'\' embryo using the Morphological Segmentation plugin. Image courtesy of Jean-Christophe Palauqui (INRA-Versailles)'%} |
+<table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/images/pages/Arabidopsis-embryo-3d-animation.gif' title='3d reconstruction of an \'\'Arabidopsis thaliana\'\' embryo using the Morphological Segmentation plugin. Image courtesy of Jean-Christophe Palauqui (INRA-Versailles)'%}</p></td></tr></tbody></table>
 
-## Citation
+Citation
+--------
 
 If you need to cite the plugin, please do so by citing the following paper:
 
-  - {% include publication content='MorphoLibJ' %}
+-   {% include publication content='MorphoLibJ' %}
 
 To cite the implementation, [MorphoLibJ](MorphoLibJ )'s code repository has its own [DOI](http://dx.doi.org/10.5281/zenodo.50694).
 
-## References
+References
+----------
 
 1.  Meyer, Fernand, and Serge Beucher. "Morphological segmentation." Journal of visual communication and image representation 1.1 (1990): 21-46.
 2.  Soille, P., "Morphological Image Analysis: Principles and Applications", Springer-Verlag, 1999, pp. 170-171.
 
-## See also
+See also
+--------
 
-  - [Marker-controlled Watershed](Marker-controlled_Watershed ), a plugin to perform watershed by flooding from specific seed points or markers.
-  - [Classic Watershed](Classic_Watershed ), plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
-  - [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
-  - [G. Bertrand's Topological Watershed site](http://www.esiee.fr/~info/tw/index.html), with papers, lecture slides and source code.
+-   [Marker-controlled Watershed](Marker-controlled_Watershed ), a plugin to perform watershed by flooding from specific seed points or markers.
+-   [Classic Watershed](Classic_Watershed ), plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
+-   [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
+-   [G. Bertrand's Topological Watershed site](http://www.esiee.fr/~info/tw/index.html), with papers, lecture slides and source code.
 
-## License
+License
+-------
 
-This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
+This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 

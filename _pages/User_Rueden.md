@@ -9,7 +9,8 @@ description: test description
 
 {% include user-box name='Curtis Rueden ' gravatar='63df759e2779af56fd050a968ff98d09 ' affiliation='UW-Madison [LOCI](LOCI ) ' loci='curtis-rueden ' forum='ctrueden ' github='ctrueden ' stackoverflow='1207769/ctrueden ' openhub='ctrueden ' osrc='ctrueden ' linkedin='pub/curtis-rueden/15/372/52a ' researchgate='Curtis\_Rueden ' scholar='VqKfxYcAAAAJ ' orcid='0000-0001-7055-6707 ' arxiv='rueden\_c\_1 ' website='https://restlesscoder.net/ ' %}Curtis Rueden directs the [software development efforts](https://loci.wisc.edu/software/home) of [LOCI](LOCI ). He is the principal architect of [ImageJ2](ImageJ2 ), and the current maintainer of the [Fiji](Fiji ) distribution of ImageJ.
 
-## What is Curtis working on?
+What is Curtis working on?
+--------------------------
 
 ### Primary projects
 
@@ -54,182 +55,15 @@ Finally, I have the following continuous priorities:
 
 On average, I spend \~0-2 hours per day on my primary projects above. The rest is spent on these constant priorities.
 
-## Recommended development tools
+Recommended development tools
+-----------------------------
 
-So you want to be an effective software developer? Use tools\!
+So you want to be an effective software developer? Use tools!
 
-<table>
-<thead>
-<tr class="header">
-<th><p>Tool</p></th>
-<th><p>Purpose</p></th>
-<th><p>Plugins</p></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="Eclipse" title="wikilink">Eclipse</a></p></td>
-<td><p>Super powerful</p>
-<ul>
-<li><em>Essential</em> for navigation of large projects</li>
-<li>Supreme code completion</li>
-<li>Super useful debugger</li>
-</ul></td>
-<td><p><a href="http://vrapper.sourceforge.net/">Vrapper</a></p></td>
-<td><p>Vim-fu inside Eclipse – almost as good as the real thing</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="https://ecd-plugin.github.io/">Enhanced Class Decompiler</a></p></td>
-<td><p>Automatic decompilation when browsing classes in Eclipse</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><a href="https://www.vim.org/">Vim</a></p></td>
-<td><p>Great editor. Crazy fast <a href="https://vim.wikia.com/wiki/Macros">macros</a></p></td>
-<td><p><a href="https://github.com/VundleVim/Vundle.vim">Vundle</a></p></td>
-<td><p>Manage your vim plugins like a boss</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="https://github.com/tpope/vim-sensible">vim-sensible</a></p></td>
-<td><p>Defaults everyone can agree on</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><a href="https://github.com/vim-airline/vim-airline">vim-airline</a></p></td>
-<td><p>Lean &amp; mean status/tabline that's light as air</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a></p></td>
-<td><p>A Git wrapper so awesome, it should be illegal</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><a href="https://github.com/tpope/vim-repeat">vim-repeat</a></p></td>
-<td><p>Repeating supported plugin maps with "."</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><a href="https://github.com/tpope/vim-surround">vim-surround</a></p></td>
-<td><p>Quoting/parenthesizing made simple</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/vimrc">my .vimrc</a></p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><a href="https://www.zsh.org/">Zsh</a></p></td>
-<td><p>Awesome shell – even <a href="https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692">better than bash</a></p></td>
-<td><p><a href="https://github.com/tarjoilija/zgen">zgen</a></p></td>
-<td><p>Lightweight plugin manager</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="https://ohmyz.sh/">oh-my-zsh</a></p></td>
-<td><p>Your terminal never felt <em>this</em> good before:</p>
-<ul>
-<li><strong>git</strong> - awesome git completion and aliases</li>
-<li><strong>mvn</strong> - mvn completion, highlighting, aliases</li>
-<li><strong>vi-mode</strong> - vi on the CLI</li>
-<li><strong>vundle</strong> - manage your vim plugins</li>
-<li><strong>z</strong> - stop <code>cd</code>ing your life away</li>
-<li>And <em>much</em> more</li>
-</ul></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><a href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting</a></p></td>
-<td><p>Syntax highlights commands as you type them</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><a href="https://github.com/zsh-users/zsh-history-substring-search">zsh-history-substring-search</a></p></td>
-<td><p>Better command history navigation</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><a href="https://github.com/zsh-users/zsh-completions">zsh-completion</a></p></td>
-<td><p>Even more and better tab completions</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/zshrc">my .zshrc</a></p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><a href="Git" title="wikilink">Git</a></p></td>
-<td><p>It is worth the pain, I promise</p></td>
-<td><p><a href="https://myrepos.branchable.com/">myrepos</a></p></td>
-<td><p>Commit, push &amp; pull across repositories <a href="https://github.com/ctrueden/dotfiles/blob/master/mrconfig">en masse</a></p></td>
-</tr>
-<tr class="even">
-<td><p>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/gitconfig">my .gitconfig</a></p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><a href="GitHub" title="wikilink">GitHub</a></p></td>
-<td><p>If you don't have a GitHub account, <a href="https://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/">you don't exist</a></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><a href="Maven" title="wikilink">Maven</a></p></td>
-<td><p>Build <a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">reusable software components</a></p></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<table><thead><tr class="header"><th><p>Tool</p></th><th><p>Purpose</p></th><th><p>Plugins</p></th><th></th></tr></thead><tbody><tr class="odd"><td><p><a href="Eclipse" title="wikilink">Eclipse</a></p></td><td><p>Super powerful</p><ul><li><em>Essential</em> for navigation of large projects</li><li>Supreme code completion</li><li>Super useful debugger</li></ul></td><td><p><a href="http://vrapper.sourceforge.net/">Vrapper</a></p></td><td><p>Vim-fu inside Eclipse – almost as good as the real thing</p></td></tr><tr class="even"><td><p><a href="https://ecd-plugin.github.io/">Enhanced Class Decompiler</a></p></td><td><p>Automatic decompilation when browsing classes in Eclipse</p></td><td></td><td></td></tr><tr class="odd"><td></td><td></td><td></td><td></td></tr><tr class="even"><td><p><a href="https://www.vim.org/">Vim</a></p></td><td><p>Great editor. Crazy fast <a href="https://vim.wikia.com/wiki/Macros">macros</a></p></td><td><p><a href="https://github.com/VundleVim/Vundle.vim">Vundle</a></p></td><td><p>Manage your vim plugins like a boss</p></td></tr><tr class="odd"><td><p><a href="https://github.com/tpope/vim-sensible">vim-sensible</a></p></td><td><p>Defaults everyone can agree on</p></td><td></td><td></td></tr><tr class="even"><td><p><a href="https://github.com/vim-airline/vim-airline">vim-airline</a></p></td><td><p>Lean &amp; mean status/tabline that's light as air</p></td><td></td><td></td></tr><tr class="odd"><td><p><a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a></p></td><td><p>A Git wrapper so awesome, it should be illegal</p></td><td></td><td></td></tr><tr class="even"><td><p><a href="https://github.com/tpope/vim-repeat">vim-repeat</a></p></td><td><p>Repeating supported plugin maps with "."</p></td><td></td><td></td></tr><tr class="odd"><td><p><a href="https://github.com/tpope/vim-surround">vim-surround</a></p></td><td><p>Quoting/parenthesizing made simple</p></td><td></td><td></td></tr><tr class="even"><td><p>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/vimrc">my .vimrc</a></p></td><td></td><td></td><td></td></tr><tr class="odd"><td></td><td></td><td></td><td></td></tr><tr class="even"><td><p><a href="https://www.zsh.org/">Zsh</a></p></td><td><p>Awesome shell – even <a href="https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692">better than bash</a></p></td><td><p><a href="https://github.com/tarjoilija/zgen">zgen</a></p></td><td><p>Lightweight plugin manager</p></td></tr><tr class="odd"><td><p><a href="https://ohmyz.sh/">oh-my-zsh</a></p></td><td><p>Your terminal never felt <em>this</em> good before:</p><ul><li><strong>git</strong> - awesome git completion and aliases</li><li><strong>mvn</strong> - mvn completion, highlighting, aliases</li><li><strong>vi-mode</strong> - vi on the CLI</li><li><strong>vundle</strong> - manage your vim plugins</li><li><strong>z</strong> - stop <code>cd</code>ing your life away</li><li>And <em>much</em> more</li></ul></td><td></td><td></td></tr><tr class="even"><td><p><a href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting</a></p></td><td><p>Syntax highlights commands as you type them</p></td><td></td><td></td></tr><tr class="odd"><td><p><a href="https://github.com/zsh-users/zsh-history-substring-search">zsh-history-substring-search</a></p></td><td><p>Better command history navigation</p></td><td></td><td></td></tr><tr class="even"><td><p><a href="https://github.com/zsh-users/zsh-completions">zsh-completion</a></p></td><td><p>Even more and better tab completions</p></td><td></td><td></td></tr><tr class="odd"><td><p>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/zshrc">my .zshrc</a></p></td><td></td><td></td><td></td></tr><tr class="even"><td></td><td></td><td></td><td></td></tr><tr class="odd"><td><p><a href="Git" title="wikilink">Git</a></p></td><td><p>It is worth the pain, I promise</p></td><td><p><a href="https://myrepos.branchable.com/">myrepos</a></p></td><td><p>Commit, push &amp; pull across repositories <a href="https://github.com/ctrueden/dotfiles/blob/master/mrconfig">en masse</a></p></td></tr><tr class="even"><td><p>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/gitconfig">my .gitconfig</a></p></td><td></td><td></td><td></td></tr><tr class="odd"><td></td><td></td><td></td><td></td></tr><tr class="even"><td><p><a href="GitHub" title="wikilink">GitHub</a></p></td><td><p>If you don't have a GitHub account, <a href="https://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/">you don't exist</a></p></td><td></td><td></td></tr><tr class="odd"><td></td><td></td><td></td><td></td></tr><tr class="even"><td><p><a href="Maven" title="wikilink">Maven</a></p></td><td><p>Build <a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">reusable software components</a></p></td><td></td><td></td></tr></tbody></table>
 
 See also:
 
-  - The [Dotfiles](Dotfiles ) setup guide
-  - [Key developer tools](Development#Key_developer_tools ) on this wiki
-  - [LOCI developer getting started guide](https://loci.wisc.edu/software/developing-loci-software)
+-   The [Dotfiles](Dotfiles ) setup guide
+-   [Key developer tools](Development#Key_developer_tools ) on this wiki
+-   [LOCI developer getting started guide](https://loci.wisc.edu/software/developing-loci-software)

@@ -11,24 +11,26 @@ To take full advantage of a Maven-based project from within Eclipse, you should 
 
 For more information about Maven, see:
 
-  - [Maven web site](http://maven.apache.org/)
-  - [Maven: The Complete Reference](http://www.sonatype.com/books/mvnref-book/reference/public-book.html)
-  - [Better Builds with Maven](http://www.maestrodev.com/better-builds-with-maven/0-about-this-guide)
+-   [Maven web site](http://maven.apache.org/)
+-   [Maven: The Complete Reference](http://www.sonatype.com/books/mvnref-book/reference/public-book.html)
+-   [Better Builds with Maven](http://www.maestrodev.com/better-builds-with-maven/0-about-this-guide)
 
-## Install m2eclipse
+Install m2eclipse
+-----------------
 
 **Note:** if you use Eclipse 3.7 Indigo or newer, you most likely have m2e already. If your {% include bc content='File | Import'%} offers you a *Maven* section, you have it, and can skip the rest of this section.
 
-  - From the Eclipse menu, choose {% include bc content='Help | Install New Software...'%}
-  - Click the Add button to add an update site:
-      - Name: m2eclipse
-      - Location: http://m2eclipse.sonatype.org/sites/m2e
-      - Click OK
-  - Check the item that appears—Maven Integration for Eclipse—and click Next.
-  - Click Next again, accept the license terms, and click Finish.
-  - Restart Eclipse.
+-   From the Eclipse menu, choose {% include bc content='Help | Install New Software...'%}
+-   Click the Add button to add an update site:
+    -   Name: m2eclipse
+    -   Location: http://m2eclipse.sonatype.org/sites/m2e
+    -   Click OK
+-   Check the item that appears—Maven Integration for Eclipse—and click Next.
+-   Click Next again, accept the license terms, and click Finish.
+-   Restart Eclipse.
 
-## Configure Eclipse (Windows only)
+Configure Eclipse (Windows only)
+--------------------------------
 
 On Windows, you will need to configure Eclipse to use the Java Development Kit (JDK).
 
@@ -42,13 +44,14 @@ Open the file "C:\\Users\\you\\Programs\\eclipse\\eclipse.ini" in a text editor,
 
 Now update Eclipse's JRE to be JDK-aware:
 
-  - Launch Eclipse
-  - From the menu choose {% include bc content='Window | Preferences'%}
-  - Select {% include bc content='Java | Installed JREs'%}
-  - Click Search..., navigate to "C:\\Program Files\\Java\\jdk1.6.0\_20" and click OK
-  - Check the box next to the JDK that appears and click OK
+-   Launch Eclipse
+-   From the menu choose {% include bc content='Window | Preferences'%}
+-   Select {% include bc content='Java | Installed JREs'%}
+-   Click Search..., navigate to "C:\\Program Files\\Java\\jdk1.6.0\_20" and click OK
+-   Check the box next to the JDK that appears and click OK
 
-## Troubleshooting
+Troubleshooting
+---------------
 
 ### On Mac OS X, behind a firewall
 

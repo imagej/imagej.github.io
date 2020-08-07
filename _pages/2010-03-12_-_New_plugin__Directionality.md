@@ -7,6 +7,6 @@ categories: News
 description: test description
 ---
 
-{% include person content='JeanYvesTinevez' %} released the [Directionality](Directionality ) plugin, which allows you to quantify the orientation of the structures in your images. It does so by analyzing either the Fourier spectrum, or the local image gradient. Check it out, it is pretty cool\!
+{% include person content='JeanYvesTinevez' %} released the [Directionality](Directionality ) plugin, which allows you to quantify the orientation of the structures in your images. It does so by analyzing either the Fourier spectrum, or the local image gradient. Check it out, it is pretty cool!
 
 

@@ -9,59 +9,72 @@ description: test description
 
 The page is a collection of principles for the entire image analysis process, from acquisition to processing to analysis.
 
-# Image acquisition principles
+Image acquisition principles
+============================
 
-## Introduction
+Introduction
+------------
 
 Not all data is created equal and thus the analysis of certain images can be easily automated, while others pose a bigger challenge.
 
 The goal of this section is to collect information on image acquisition principles that ease the automation of image analysis.
 
-## Use sufficient spatial resolution
+Use sufficient spatial resolution
+---------------------------------
 
 Spatial resolution refers to the number (or density, if you prefer) of samples in the image. Digital detectors such as cameras and PMTs can produce sample matrices ranging from 256 x 256 pixels or fewer, up to 128 megapixels or more. As a rule of thumb, more samples is better. Spatial resolution can always be downsampled after the fact—but never upsampled. Furthermore, if your objects of interest are described by too few pixels, the error of many statistical computations will be prohibitively high, and some forms of analyses will not be possible at all.
 
-## Avoid lossy compression
+Avoid lossy compression
+-----------------------
 
 Original data should be saved in a way that preserves the exact sample values. Do not store raw image data in file formats such as JPEG which use lossy compression. See [Why (lossy) JPEGs should not be used in imaging](Principles#Why_.28lossy.29_JPEGs_should_not_be_used_in_imaging ) below for details.
 
-## Illuminate as evenly as possible
+Illuminate as evenly as possible
+--------------------------------
 
 Many forms of imaging require some form of illumination. You should ensure that this illumination is as evenly distributed as possible, rather than attempting to correct for it after acquisition. If you *must* tolerate an uneven illumination for some reason, try to acquire a background image so that you can use a background subtraction—but there may still be issues such as reflection artifacts.
 
-## Avoid overlapping objects
+Avoid overlapping objects
+-------------------------
 
 In many cases, it is not possible to avoid objects which overlap. But they are harder to analyze and measure, since many algorithms have difficulty distinguishing between objects. It may be possible to mitigate these difficulties by preparing the environment somehow—e.g., staining cell membranes with a fluorescent dye.
 
-## Naming schemes
+Naming schemes
+--------------
 
 Effective naming schemes are easy to read by both humans and computers. The following examples give an overview over the principles of creating good naming schemes:
 
-  - Example A:
+-   Example A:
 
-## Sample preparation
+Sample preparation
+------------------
 
 In certain cases (Examples ...) it is very helpful to add markers to the slides.
 
-# Image processing principles
+Image processing principles
+===========================
 
-## Introduction
+Introduction
+------------
 
 In scientific image processing and image analysis, an image is something different than a regular digital photograph of a beautiful scene you shot during your latest vacation.
 
 In the context of science, digital images are samples of information, sampled at vertex points of *n*-dimensional grids.
 
-## What are pixel values?
+What are pixel values?
+----------------------
 
 Human visual perception is very good at certain tasks, such as contrast correction and detecting subtle differences in bright colors, but notoriously bad with other things, such as discerning dark colors, or classifying colors without appropriate reference. Our brains process and filter information, so that we perceive visually only after we 1) "see" light information that enters our eyes and interacts with the environment of the eye and eventually individual cells in our retinas, and 2) process the signal in the context of our brains. It is therefore very important to keep in mind that the pixel values in digital images are numbers, not subjective experiences of color. These numbers represent how light or some other type of signal entered the instrument we are using and interacted with its environment and eventually triggered sensors in the instrument that further processed the information into a digital output.
 
 For example, when you record an image using a light gathering device such as a confocal microscope, the values you get at a certain coordinate or pixel are not color values, but relate to photon counts. This is an essential point to start with for understanding this topic.
 
-## Pixels are not little squares
+Pixels are not little squares
+-----------------------------
 
-And voxels are not cubes\! See the [whitepaper by Alvy Ray Smith](http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf).
+And voxels are not cubes! See the [whitepaper by Alvy Ray Smith](http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf).
 
-## Why (lossy) JPEGs should not be used in imaging
+Why (lossy) JPEGs should not be used in imaging
+-----------------------------------------------
 
 JPEG stands for Joint Photographic Experts Group who were the creators of a commonly used method of lossy compression for photographic images. This format is commonly used in web pages and supported by the vast majority of digital photographic cameras and image scanners because it can store images in relatively small files at the expense of image quality. There are also loss-less JPEG modes, but these in general are not widely implemented and chances are that most of the images are of the lossy type.
 
@@ -73,7 +86,7 @@ In JPEG lossy compression, therefore, the stored image is not the same as the or
 
 Example: a section of the famous [Mandrill](http://sampl.ece.ohio-state.edu/data/stills/color/mandrill.png) image. From left to right, you see the original (with an 8-bit colormap), the hue channel of the original, and the hue channel after saving as a JPEG with ImageJ's default options -- note in particular the vertical and horizontal artifacts:
 
-![Original (8-bit colormap)](/images/pages/Mandrill-orig.png "Original (8-bit colormap)")![Hue of the original image](/images/pages/Mandrill-hue-png.png "Hue of the original image")![Hue of the JPEG image (default ImageJ settings)](/images/pages/Mandrill-hue-jpg.png "Hue of the JPEG image (default ImageJ settings)")
+![Original (8-bit colormap)](/images/pages/Mandrill-orig.png "fig:Original (8-bit colormap)")![Hue of the original image](/images/pages/Mandrill-hue-png.png "fig:Hue of the original image")![Hue of the JPEG image (default ImageJ settings)](/images/pages/Mandrill-hue-jpg.png "fig:Hue of the JPEG image (default ImageJ settings)")
 
 While most digital cameras save in JPEG format by default, it is very likely that they also support some non-lossy format (such as TIFF or a custom RAW format). Use those formats instead. A format called JPEG2000 supported by various slide scanners and used in "virtual slide" products was created to improve image quality and compression rates, however both lossy and non-lossy versions the JPEG2000 format exist. Use only the non-lossy formats.
 
@@ -85,36 +98,35 @@ Once an image has been saved as compressed JPEG there is no way of reverting to 
 
 Below is an ImageJ macro which demonstrates the issue. It requires the [Glasbey](Glasbey ) LUT, part of the [Fiji](Fiji ) distribution of ImageJ.
 
-``` javascript
-// load Boats
-run("Boats (356K)");
-run("Out [-]");
-rename("Original");
+    // load Boats
+    run("Boats (356K)");
+    run("Out [-]");
+    rename("Original");
 
-// convert to JPEG
-run("Duplicate...", " ");
-run("Out [-]");
-run("Save As JPEG... [j]", "jpeg=85");
-run("Revert");
-rename("JPEG");
+    // convert to JPEG
+    run("Duplicate...", " ");
+    run("Out [-]");
+    run("Save As JPEG... [j]", "jpeg=85");
+    run("Revert");
+    rename("JPEG");
 
-// compute the difference
-imageCalculator("Subtract create 32-bit", "Original","JPEG");
-run("Out [-]");
-rename("Difference");
+    // compute the difference
+    imageCalculator("Subtract create 32-bit", "Original","JPEG");
+    run("Out [-]");
+    rename("Difference");
 
-// display windows side by side
-run("Tile");
+    // display windows side by side
+    run("Tile");
 
-// highlight artifacts using Glasbey LUT
-selectWindow("Original");
-run("glasbey");
-selectWindow("JPEG");
-run("glasbey");
-selectWindow("Difference");
-```
+    // highlight artifacts using Glasbey LUT
+    selectWindow("Original");
+    run("glasbey");
+    selectWindow("JPEG");
+    run("glasbey");
+    selectWindow("Difference");
 
-## Considerations during image segmentation (binarization)
+Considerations during image segmentation (binarization)
+-------------------------------------------------------
 
 ### What is binarization and what is it good for?
 
@@ -122,7 +134,7 @@ As the word already suggests, with a binarization you divide your image into two
 
 ### Why not simply choose a manual threshold?
 
-"I usually define a manual threshold to extract my objects..., is this ok?" As a recommendation... Whenever possible, try to avoid manual thresholding\!\!\!
+"I usually define a manual threshold to extract my objects..., is this ok?" As a recommendation... Whenever possible, try to avoid manual thresholding!!!
 
 **Manual methods have several limitations:**
 
@@ -166,7 +178,7 @@ In ImageJ and Fiji, there are so far 16 [Global Auto Thresholds](Auto_Threshold 
 
 **Is there one superior automatic algorithm?**
 
-For all of the reasons outlined above, NO\! But this is not really a problem. It is akin to asking the question "Is there one superior food?". As is the case with biological protocols in general, most algorithms are developed serving a specific purpose or solving a specific extraction problem. Thus, performance is relative and depends on the image content and quality, and the intended use of the pattern extracted. This last statement can be understood in terms of a single image from which an experimenter may want to extract overall cell shape in one investigation but nuclear texture in another. Every basic method needs to be tested to determine if any of its implementations do a good job for every single new question to be answered. In this regard, there are many more algorithms published and otherwise being developed, and you might want to think about implementing one in an ImageJ plugin yourself and providing it to the community :-)
+For all of the reasons outlined above, NO! But this is not really a problem. It is akin to asking the question "Is there one superior food?". As is the case with biological protocols in general, most algorithms are developed serving a specific purpose or solving a specific extraction problem. Thus, performance is relative and depends on the image content and quality, and the intended use of the pattern extracted. This last statement can be understood in terms of a single image from which an experimenter may want to extract overall cell shape in one investigation but nuclear texture in another. Every basic method needs to be tested to determine if any of its implementations do a good job for every single new question to be answered. In this regard, there are many more algorithms published and otherwise being developed, and you might want to think about implementing one in an ImageJ plugin yourself and providing it to the community :-)
 
 ### Which automatic methods do exist for binarization?
 
@@ -193,7 +205,7 @@ Since the basis of any cut-off value during thresholding is pixel values, any ch
 
 #### Post-processing
 
-After being binarized through any thresholding method, an image may require additional binary operations to make the final pattern useable. These include erosion, dilation, opening, and closing (all under {% include bc content='Process | Binary'%}), image filters (under {% include bc content='Process | Filters'%}), and image combinations by boolean operations (e.g. {% include bc content='Process | Image Calculator'%}). Here the user needs to pay attention to recording all parameters and events and not alter the extraction notably, lest they reduce the [reproducibility](reproducibility ) and overall quality of the segmentation. Post-processing binary operations might be necessary to correct further measurements of area or object counts. Internal holes, for example, may need to be closed ({% include bc content='Process | Binary | Fill Holes'%}) to extract the correct area of particles (this can also be achieved directly during the measurement when using \>{% include bc content='Analyze | Analyze Particles...'%}.). Watershed (or related) separation techniques may be necessary when close particles fuse to form clumps or aggregates.
+After being binarized through any thresholding method, an image may require additional binary operations to make the final pattern useable. These include erosion, dilation, opening, and closing (all under {% include bc content='Process | Binary'%}), image filters (under {% include bc content='Process | Filters'%}), and image combinations by boolean operations (e.g. {% include bc content='Process | Image Calculator'%}). Here the user needs to pay attention to recording all parameters and events and not alter the extraction notably, lest they reduce the [reproducibility](reproducibility ) and overall quality of the segmentation. Post-processing binary operations might be necessary to correct further measurements of area or object counts. Internal holes, for example, may need to be closed ({% include bc content='Process | Binary | Fill Holes'%}) to extract the correct area of particles (this can also be achieved directly during the measurement when using &gt;{% include bc content='Analyze | Analyze Particles...'%}.). Watershed (or related) separation techniques may be necessary when close particles fuse to form clumps or aggregates.
 
 ### Segmented ROIs for additional processing
 
@@ -215,9 +227,11 @@ If converting to grayscale damages or distorts the information desired from a pa
 4.  Specific tools based on machine learning might be helpful. Here, the user is required to do some training on representative example images. This is achieved by selecting areas which should be assigned to the foreground or background, respectively. This is obviously also biased, with a good training (potentially by different experts) the feature extraction contains a lower bias, since the same trained classifier is applied to the different images. Relevant ImageJ plugins available are the [SIOX: Simple Interactive Object Extraction](SIOX__Simple_Interactive_Object_Extraction ) and the [Trainable WEKA Segmentation](Trainable_Weka_Segmentation ).
 5.  ...
 
-# Image analysis principles
+Image analysis principles
+=========================
 
-## Introduction
+Introduction
+------------
 
 The following principles help with the analysis of processed images.
 

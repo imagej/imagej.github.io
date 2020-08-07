@@ -21,38 +21,41 @@ description: test description
 {% endcapture %}
 {% include info-box software='Fiji ' name='Sprout Morphology ' author=author maintainer=maintainer source=source released=' ' latest-version=' ' status='stable ' category='[Analysis](Category_Analysis ) ' %} The **Sprout Morphology** plugin measures sprout *number*, *length*, *width* and *cell density* of endothelial cell (EC) sprouts grown in a bead sprouting assay. It optionally includes measuring the coverage of these sprouts with pericytes included in the assay, as well as the endothelial cell/pericyte ratio.
 
-## Installation
+Installation
+------------
 
 To install the plugin, activate the **Angiogenesis** [update site](How_to_follow_a_3rd_party_update_site ) and restart Fiji.
 
-## Usage
+Usage
+-----
 
 Open a maximum intensity projection of the multi-channel image to be analyzed, then start the plugin via {% include bc content='Analyze|Sprout Morphology'%}. The process consists of up to six dialogs:
 
 ### General configuration
 
-![Configuration dialog](/images/pages/SproutAnalyzer Configuration.png "Configuration dialog")
+<figure><img src="/images/pages/SproutAnalyzer_Configuration.png" title="Configuration dialog" width="400" alt="Configuration dialog" /><figcaption aria-hidden="true">Configuration dialog</figcaption></figure>
 
 ### Bead detection
 
-![Bead detection](/images/pages/SproutAnalyzer BeadDetection.png "Bead detection")
+<figure><img src="/images/pages/SproutAnalyzer_BeadDetection.png" title="Bead detection" width="400" alt="Bead detection" /><figcaption aria-hidden="true">Bead detection</figcaption></figure>
 
 ### Sprout detection
 
-![Sprout detection](/images/pages/SproutAnalyzer SproutDetection.png "Sprout detection")
+<figure><img src="/images/pages/SproutAnalyzer_SproutDetection.png" title="Sprout detection" width="400" alt="Sprout detection" /><figcaption aria-hidden="true">Sprout detection</figcaption></figure>
 
 ### Nucleus segmentation
 
-![Nucleus segmentation](/images/pages/SproutAnalyzer NucleusSegmentation.png "Nucleus segmentation")
+<figure><img src="/images/pages/SproutAnalyzer_NucleusSegmentation.png" title="Nucleus segmentation" width="400" alt="Nucleus segmentation" /><figcaption aria-hidden="true">Nucleus segmentation</figcaption></figure>
 
 ### Endothelial cell/Pericyte classification
 
-![Cell classification of ECs and pericytes](/images/pages/SproutAnalyzer CellClassification.png "Cell classification of ECs and pericytes")
+<figure><img src="/images/pages/SproutAnalyzer_CellClassification.png" title="Cell classification of ECs and pericytes" width="400" alt="Cell classification of ECs and pericytes" /><figcaption aria-hidden="true">Cell classification of ECs and pericytes</figcaption></figure>
 
 ### Pericyte coverage
 
-![Pericyte coverage measurement](/images/pages/SproutAnalyzer PericyteCoverage.png "Pericyte coverage measurement")
+<figure><img src="/images/pages/SproutAnalyzer_PericyteCoverage.png" title="Pericyte coverage measurement" width="400" alt="Pericyte coverage measurement" /><figcaption aria-hidden="true">Pericyte coverage measurement</figcaption></figure>
 
-## Publication
+Publication
+-----------
 
-  - {% include citation last='Eglinger ' first='J. ' last2='Karsjens ' first2='H. ' last3='Lammert ' first3='E. ' year='2017 ' journal='Inflammation and Regeneration ' url='http://inflammregen.biomedcentral.com/articles/10.1186/s41232-016-0033-2 ' title='Quantitative assessment of angiogenesis and pericyte coverage in human cell-derived vascular sprouts ' volume='37(2) ' pmid=' ' doi='10.1186/s41232-016-0033-2 ' %}
+-   {% include citation last='Eglinger ' first='J. ' last2='Karsjens ' first2='H. ' last3='Lammert ' first3='E. ' year='2017 ' journal='Inflammation and Regeneration ' url='http://inflammregen.biomedcentral.com/articles/10.1186/s41232-016-0033-2 ' title='Quantitative assessment of angiogenesis and pericyte coverage in human cell-derived vascular sprouts ' volume='37(2) ' pmid=' ' doi='10.1186/s41232-016-0033-2 ' %}

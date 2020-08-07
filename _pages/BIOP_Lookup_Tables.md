@@ -9,11 +9,13 @@ description: test description
 
 {% include info-box name='BIOP luts ' software='Fiji ' author='Romain Guiet, Olivier Burri ' maintainer='Romain Guiet ' filename='biop-\*.lut ' released='October 2016 ' latest-version='October 2016 ' source='PTBIOP update site ' status='stable ' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff) ' %}
 
-## Purpose
+Purpose
+-------
 
 Having LUTs to handle display of images with more than 3 channels. Visit [Color Image Processing](Color_Image_Processing ) page to know more about LUTs.
 
-## Details
+Details
+-------
 
 Classical color space are RGB and CMY. Expressed as RGB value, CMY are equal combination of 2 components of RGB, ie Cyan is obtained by combining Green and Blue in equal proportion.
 
@@ -23,45 +25,48 @@ Here, we propose to use 6 LUTs, which are obtained by combining Red Green and Bl
 
 [400px ](File_BIOP6Luts_hex.png )
 
-## On 3 channels image
+On 3 channels image
+-------------------
 
-![3 channels, each in Grays levels. ](/images/pages/3chs Grays cell.jpg "3 channels, each in Grays levels. ")
+<figure><img src="/images/pages/3chs_Grays_cell.jpg" title="3 channels, each in Grays levels. " width="600" alt="3 channels, each in Grays levels. " /><figcaption aria-hidden="true">3 channels, each in Grays levels. </figcaption></figure>
 
 ### RGB
 
-![3 channels image, in Red Green Blue and Merge. ](/images/pages/3chs RGB cell.jpg "3 channels image, in Red Green Blue and Merge. ")
+<figure><img src="/images/pages/3chs_RGB_cell.jpg" title="3 channels image, in Red Green Blue and Merge. " width="800" alt="3 channels image, in Red Green Blue and Merge. " /><figcaption aria-hidden="true">3 channels image, in Red Green Blue and Merge. </figcaption></figure>
 
 ### CMY
 
-![3 channels image, in Red Green Blue and Merge. ](/images/pages/3chs CMY cell.jpg "3 channels image, in Red Green Blue and Merge. ")
+<figure><img src="/images/pages/3chs_CMY_cell.jpg" title="3 channels image, in Red Green Blue and Merge. " width="800" alt="3 channels image, in Red Green Blue and Merge. " /><figcaption aria-hidden="true">3 channels image, in Red Green Blue and Merge. </figcaption></figure>
 
-## On 4 (to 6) channels image
+On 4 (to 6) channels image
+--------------------------
 
-![4 channels image, each in Grays levels. ](/images/pages/4chs Grays cell.jpg "4 channels image, each in Grays levels. ")
+<figure><img src="/images/pages/4chs_Grays_cell.jpg" title="4 channels image, each in Grays levels. " width="800" alt="4 channels image, each in Grays levels. " /><figcaption aria-hidden="true">4 channels image, each in Grays levels. </figcaption></figure>
 
 ### Appropriate BIOP-LUTs selection
 
-![4 channels image, biop luts good choice](/images/pages/4chs biop-lut cell ok.jpg "4 channels image, biop luts good choice")
+<figure><img src="/images/pages/4chs_biop-lut_cell_ok.jpg" title="4 channels image, biop luts good choice" width="1000" alt="4 channels image, biop luts good choice" /><figcaption aria-hidden="true">4 channels image, biop luts good choice</figcaption></figure>
 
 ### Unappropriate BIOP-LUTs selection
 
-![4 channels image, biop luts poor choice](/images/pages/4chs biop-lut cell bad.jpg "4 channels image, biop luts poor choice")
+<figure><img src="/images/pages/4chs_biop-lut_cell_bad.jpg" title="4 channels image, biop luts poor choice" width="1000" alt="4 channels image, biop luts poor choice" /><figcaption aria-hidden="true">4 channels image, biop luts poor choice</figcaption></figure>
 
 Here, channels 2 and 3 are tubular structure and it's difficult to distinguish them if both are greenish.
 
-## Macro Language
+Macro Language
+--------------
 
-``` java
-run("biop-Amber");
-run("biop-Azure");
-run("biop-BrightPink");
-run("biop-Chartreuse");
-run("biop-ElectricIndigo");
-run("biop-SpringGreen");
-```
+    run("biop-Amber");
+    run("biop-Azure");
+    run("biop-BrightPink");
+    run("biop-Chartreuse");
+    run("biop-ElectricIndigo");
+    run("biop-SpringGreen");
 
-## Install
+Install
+-------
 
 You can either use our PTBIOP update site or [download biop-luts.zip](https://imagej.net/_images/b/b0/Biop-luts.zip) and extract to the \\luts folder.
 
-## Notes
+Notes
+-----

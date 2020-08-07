@@ -13,7 +13,7 @@ The site is:
 
 <div style="padding-left: 30px; font-size: 24px">
 
-http://search.imagej.net/
+[http://search.imagej.net/](http://search.imagej.net/)
 
 </div>
 

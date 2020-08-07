@@ -12,22 +12,24 @@ description: test description
 {% capture title%}
 Synthetic neuron generated using the {% include bc content='Demo|Cx3D|Random Branching'%} command ([source code](https://github.com/morphonets/cx3d/blob/master/src/main/java/sc/iview/cx3d/commands/RandomBranchingDemo.java)), accessible from SciView's main menu.
 {% endcapture %}
-{% include thumbnail src='/images/pages/Cx3d-sciview.png' title=title %} Modeling in SNT is performed through [Cortex3D (Cx3D)](https://github.com/morphonets/cx3d) and [SciView](SciView ). Cx3D was developed in 2009\[1\] as a computational modeling tool for simulating neurodevelopmental processes and is well known for generative models of cortical circuits.
+{% include thumbnail src='/images/pages/Cx3d-sciview.png' title=title %} Modeling in SNT is performed through [Cortex3D (Cx3D)](https://github.com/morphonets/cx3d) and [SciView](SciView ). Cx3D was developed in 2009[1] as a computational modeling tool for simulating neurodevelopmental processes and is well known for generative models of cortical circuits.
 
 The [Morphonets](http://morphonets.org) distribution of Cx3D was modified by {% include person content='Kharrington' %} to be compatible with the ImageJ and Fiji ecosystem. This includes using [SciView](SciView ) for 3D visualization, and support for image-based modeling.
 
 Currently, an [IDE](IDEs ) is the most effective way to implement custom models, using the [minimal-cx3d-example-project](https://github.com/morphonets/minimal-cx3d-example-project) as a template. For more information refer to the [GitHub project page](https://github.com/morphonets/cx3d).
 
-## References
+References
+----------
 
 <references >
 
-\[2\]
+[2]
 
 </references>
 
 {% include sntnavbar%}
 
 
-1.  
-2.  Zubler, F. & Douglas, R. A framework for modeling the growth and development of neurons and networks. Front. Comput. Neurosci. 3, 25 (2009) [<PMID:19949465>](http://www.ncbi.nlm.nih.gov/pubmed?term=19949465).
+[1] 
+
+[2] Zubler, F. & Douglas, R. A framework for modeling the growth and development of neurons and networks. Front. Comput. Neurosci. 3, 25 (2009) [<PMID:19949465>](http://www.ncbi.nlm.nih.gov/pubmed?term=19949465).

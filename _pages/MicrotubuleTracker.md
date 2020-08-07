@@ -17,7 +17,8 @@ MTrack is a bi-modular tool. The first module detects microtubule seeds, tracks 
 
 For using MTrack on movies which have very low signal to noise ratio you should create a denoised image to be used for segmentation and upload it along with the original movie. In this setting the microtubules pixels are identified from the segmentation movie while the actual measurement is always done on the original movie. To make yourself familiar with this setting please go to the [Low SNR Example section](#Low_SNR_Example "wikilink") where we detail this approach with a demo movie.
 
-## Installation
+Installation
+------------
 
 1.  Click *Help ▶ Update....*
 2.  Click the *Manage update sites* button.
@@ -26,7 +27,8 @@ For using MTrack on movies which have very low signal to noise ratio you should 
 5.  Restart Fiji.
 6.  Launch the plugin with *Plugins ▶ MTrack*.
 
-## Usage
+Usage
+-----
 
 ### Module 1 - Microtubule Detection & Tracking
 
@@ -38,7 +40,7 @@ The welcome panel will open.
 
 #### Choose Mode
 
-For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking, you can use the [advanced mode(MTrack)](advanced_modeMTrack ) to fine-tune settings. When analyzing more than one movie, you can select [batch mode(MTrack)](batch_modeMTrack ) and run many movies simultaneously. However, before running the program in batch mode, you have to at least run the program once in simple or advanced mode to select and save the required parameters.
+For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking, you can use the [advanced mode(MTrack)](advanced_mode(MTrack) "wikilink") to fine-tune settings. When analyzing more than one movie, you can select [batch mode(MTrack)](batch_mode(MTrack) "wikilink") and run many movies simultaneously. However, before running the program in batch mode, you have to at least run the program once in simple or advanced mode to select and save the required parameters.
 
 The following intro is on simple mode.
 
@@ -46,13 +48,13 @@ The following intro is on simple mode.
 
 Next, the user selects the movie. The movie to be uploaded is the original movie coming out of the microscope. In simple mode, the program will do a pseudo flat-field correction by default. This preprocessed movie will only be used for object recognition of seeds, not for end-point detection. End point detection will always be performed on the original image.
 
-In the advanced mode, the user has the option to either perform a flat-field correction and apply a median filter of a chosen radius. Alternatively, the user can upload their own preprocessed movie. (Read more about [Preprocessing(MTrack)](PreprocessingMTrack )).
+In the advanced mode, the user has the option to either perform a flat-field correction and apply a median filter of a chosen radius. Alternatively, the user can upload their own preprocessed movie. (Read more about [Preprocessing(MTrack)](Preprocessing(MTrack) "wikilink")).
 
 For the movie type, choose one of the three supported options:
 
-  - Two channel image as hyper-stack (both channels in one image)
-  - Concatenated seed image followed by time-lapse images
-  - Single channel time-lapse images
+-   Two channel image as hyper-stack (both channels in one image)
+-   Concatenated seed image followed by time-lapse images
+-   Single channel time-lapse images
 
 Please choose an output file directory. The trajectory files will be written as .txt files. By default, trajectories will be saved in the current working directory with the name of the movie.
 
@@ -66,7 +68,7 @@ Press Next to proceed. Three screens and one panel will open. They show the orig
 
 #### MSER parameters
 
-The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER)\[1\]. Read more about [MSER parameters](MSER_parameters ). If a single seed is not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the “active image”. Once most seeds are correctly recognized as objects, click “Find endpoints” to detect the ends of each seed with sub-pixel accuracy.
+The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER)[1]. Read more about [MSER parameters](MSER_parameters ). If a single seed is not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the “active image”. Once most seeds are correctly recognized as objects, click “Find endpoints” to detect the ends of each seed with sub-pixel accuracy.
 
 The end-points will be displayed as green circles. A “Next” button appears on the panel, which allows the user to flip to the next panel.
 
@@ -80,7 +82,7 @@ Before starting the actual tracking of the dynamically growing microtubules, the
 
 **Deselect and select ends**
 
-In case an end has been wrongly recognized, the user can deselect an end by left clicking on it in the image. The program will remember and allow to re-select this end by clicking Shift + left click (pink circle will mark the end). In case an end has not been recognized, use Shift + Alt + left click to select a user defined end (orange circle will mark the end). Read more on [microtubule polarity and (+) end vs. (-) end tracking](microtubule_polarity_and_+_end_vs._-_end_tracking ).
+In case an end has been wrongly recognized, the user can deselect an end by left clicking on it in the image. The program will remember and allow to re-select this end by clicking Shift + left click (pink circle will mark the end). In case an end has not been recognized, use Shift + Alt + left click to select a user defined end (orange circle will mark the end). Read more on [microtubule polarity and (+) end vs. (-) end tracking](microtubule_polarity_and_(+)_end_vs._(-)_end_tracking "wikilink").
 
 **Select time**
 
@@ -102,32 +104,34 @@ In addition, the user can obtain microtubule length distribution for a certain t
 
 <img src="/images/pages/RansacPanel.png" width="600"/> Click here to see some examples of the [MTrack-Ransac fits](MTrack-Ransac_fits ).
 
-## Example
+Example
+-------
 
 An example movie with several dynamic microtubules is available for download [here](http://preibischlab.mdc-berlin.de/download/MTrack/MTrack_Demo.tif.zip). To perform the analysis of this movie:
 
 1.  Put the demo movie **MTrack\_Demo.tif** into an empty directory, the results will also be stored here.
 2.  To run the MicroTubule Tracker:
 3.  Select **Plugins** ▶ **MTrack** ▶ **Microtubule Detection and Tracking**,
-4.  Select **Simple Mode**, **Concatenated Seed Image followed by time-lapse images**, choose the file, the microscope parameters will be automatically loaded, finally click **Next\>** to continue.
+4.  Select **Simple Mode**, **Concatenated Seed Image followed by time-lapse images**, choose the file, the microscope parameters will be automatically loaded, finally click **Next&gt;** to continue.
 5.  Using the default MSER parameters *7 microtubule seeds will be identified*, click **Find Endpoints** to continue.
-6.  The correct endpoints of 6 microtubule seeds will be identified (one is too short and can be added manually), click **Next\>** to continue.
+6.  The correct endpoints of 6 microtubule seeds will be identified (one is too short and can be added manually), click **Next&gt;** to continue.
 7.  Click **Confirm the end(s) and track** to track the microtubules over all 241 time-points. The expected runtime is around 6-7 min. *Note: the few warnings of missed assignments can be safely ignored, these timepoints will simply be missing, which does not create any further problems as long as it is not happening in the majority of cases.*
 8.  Each microtubule trajectory will be saved.
-9.  You are now able to review the tracking results in the ImageJ windows, click **Enter RANSAC stage\>** to continue.
+9.  You are now able to review the tracking results in the ImageJ windows, click **Enter RANSAC stage&gt;** to continue.
 10. Click **Select directory of MTrack generated files** and select the directory that now contains all the text files with the tracking results. The assignment which file belongs to which seed the user can get via the labelled seed end points in the 'Display Tracks' window which appears after tracking the microtubules in module 1.
 11. To adjust the parameters to automatically derive microtubule dynamics **select one of the microtubule seed end points** in the panel Ransac velocity and Statistics Analyzer. The selected file will be displayed in the **Microtubule Length Plot** window and some parameters will be shown in an extra window. For the example file **MTrack\_DemoSeedLabel1Plus.txt** all growth events are successfully detected. The catastrophes are shorter than the default setting, therefore the user needs to click 'Detect catastrophies without fit' to ensure a working data evaluation. Furthermore the user can adjust parameters like "Minimum number of timepoints" manually or can change the fitting function to achieve a better fit of the data.
 
 All dynamic parameters are saved in a .txt file call 'Allaverages'. For a better presentation the user can copy and paste the data from the .txt file to Excel or an equivalent software.
 
-## Low SNR Example
+Low SNR Example
+---------------
 
 An example movie with a single simulated microtubule at low SNR and the same microtubule without the noise is available for download [here](http://preibischlab.mdc-berlin.de/download/MTrack/LowSNRMTrack_Demo.tif.zip) To perform the analysis of such microtubules:
 
 1.  Put the demo movies **LowSNRMTrack\_Demo.tif** and **DenoisedMTrack\_Demo.tif** into an empty directory, the results will also be stored here.
 2.  To run the MicroTubule Tracker:
 3.  Select **Plugins** ▶ **MTrack** ▶ **Microtubule Detection and Tracking**,
-4.  Select **Advanced Mode**, **Concatenated Seed Image followed by time-lapse images**, choose the LowSNR movie , the microscope parameters will be automatically loaded, finally click **Next\>** to continue.
+4.  Select **Advanced Mode**, **Concatenated Seed Image followed by time-lapse images**, choose the LowSNR movie , the microscope parameters will be automatically loaded, finally click **Next&gt;** to continue.
 5.  In the second panel load the denoised movie and click on **Load preprocessed movie and go next**
 6.  In the panel labelled **Object recognition methods** select MSER from the drop down menu. The microtubule would be correctly identified, click *' next*' to go to the second panel where MSER parameters are displayed. Now click **Find Endpoints** to continue.
 7.  Click **next** to go to the next panel. Using the slider in the panel **Deselect and select ends** identify the non-growing end of the microtubule and deselect it from further calculations by doing a left click near it, the green circle should turn pink implying that the end has been deselected.
@@ -135,13 +139,16 @@ An example movie with a single simulated microtubule at low SNR and the same mic
 9.  To track the microtubules over all 100 time-points click on **Start tracking** from the **Tracker options** panel . The expected runtime is around 5 min.
 10. The microtubule trajectory will be saved.
 
-## Citation
+Citation
+--------
 
 Please note that MTrack is available through Fiji, and is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
-Varun Kapoor, William G. Hirst, Christoph Hentschel, Stephan Preibisch and Simone Reber, “MTrack: Automated Detection and Tracking of Dynamic Microtubules” \[2\]
+Varun Kapoor, William G. Hirst, Christoph Hentschel, Stephan Preibisch and Simone Reber, “MTrack: Automated Detection and Tracking of Dynamic Microtubules” [2]
 
-## References
+References
+----------
 
-1.  Robust wide-baseline stereo from maximally stable extremal regions, J Matas, O Chum, M Urban, T Pajdla Image and vision computing 22 (10), 761-767.
-2.  https://www.biorxiv.org/content/early/2018/07/13/368191
+[1] Robust wide-baseline stereo from maximally stable extremal regions, J Matas, O Chum, M Urban, T Pajdla Image and vision computing 22 (10), 761-767.
+
+[2] https://www.biorxiv.org/content/early/2018/07/13/368191

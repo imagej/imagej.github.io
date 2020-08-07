@@ -11,19 +11,21 @@ description: test description
 {% include toc%}
 
 
-## How do I make my update site appear in ImageJ's *Manage update sites* dialog?
+How do I make my update site appear in ImageJ's *Manage update sites* dialog?
+-----------------------------------------------------------------------------
 
 The dialog is based on the {% include list-of-update-sites%}
  wiki page. You can edit that page to add your own update site.
 
-## How do I remove a file from my update site?
+How do I remove a file from my update site?
+-------------------------------------------
 
 An update site is a {% include wikipedia title='Revision control' text='revision control'%} system where nothing is ever really deleted from the history.
 
 Hence, there are two levels of removal:
 
-  - marking a file **Obsolete** effectively deletes it from the update site, but preserves the file's history. This is the most common method of removing a file from an update site.
-  - **Deleting a file completely from the history** is sometimes necessary e.g., for legal or privacy reasons.
+-   marking a file **Obsolete** effectively deletes it from the update site, but preserves the file's history. This is the most common method of removing a file from an update site.
+-   **Deleting a file completely from the history** is sometimes necessary e.g., for legal or privacy reasons.
 
 The practical effects in both cases are the same: the file in question is no longer served by the update site.
 
@@ -55,46 +57,51 @@ If the file is not hosted by any other active update site you need to tell the u
 
 Deleting a file from the history is strongly not recommended, but if you *must* do so (e.g., for legal or privacy reasons):
 
-  - If you using a [personal update site](Personal_Update_Sites ), then [contact an ImageJ administrator](Contact ) to have the offending file(s) removed.
-  - If you are hosting your own update site, then you must delete all versions of the file from the file system, *and* edit the *db.xml.gz* file to remove the *<plugin>* entry as well as any *<dependency>* elements in other entries which reference it.
+-   If you using a [personal update site](Personal_Update_Sites ), then [contact an ImageJ administrator](Contact ) to have the offending file(s) removed.
+-   If you are hosting your own update site, then you must delete all versions of the file from the file system, *and* edit the *db.xml.gz* file to remove the *<plugin>* entry as well as any *<dependency>* elements in other entries which reference it.
 
-## What are the Terms of Service for personal update sites?
+What are the Terms of Service for personal update sites?
+--------------------------------------------------------
 
 Please see the [Personal Update Site Terms of Service](Personal_Update_Site_Terms_of_Service ) page.
 
-## How do I set a password for my personal update site?
+How do I set a password for my personal update site?
+----------------------------------------------------
 
 Use [this page](Special_ChangeUploadPassword ) to set a password for *uploading* content.
 
 If you want to restrict which users can *access* your update site, please note that the [Personal Update Sites](Personal_Update_Sites ) service is only intended for freely available plugins. To restrict user access, you will need to host the update site yourself, sharing the URL only with your customers. Implementing an authentication scheme on top of an ImageJ update site is outside the scope of ImageJ—consider using something like [OAuth](http://oauth.net/).
 
-## How do I delete my personal update site?
+How do I delete my personal update site?
+----------------------------------------
 
 If you want to completely remove your update site, [contact an ImageJ administrator](Contact ) to have the site removed.
 
-## Can I manipulate the files on my update site directly? (E.g., via WebDAV?)
+Can I manipulate the files on my update site directly? (E.g., via WebDAV?)
+--------------------------------------------------------------------------
 
-Please don't\! Update sites are intended to be accessed *only* via ImageJ's [Updater](Updater ). There is important metadata in the *db.xml.gz* file which *must* be kept in sync with the files in the directory structure. Otherwise, your update site will stop working properly.
+Please don't! Update sites are intended to be accessed *only* via ImageJ's [Updater](Updater ). There is important metadata in the *db.xml.gz* file which *must* be kept in sync with the files in the directory structure. Otherwise, your update site will stop working properly.
 
-## Why don't I have an upload option?
+Why don't I have an upload option?
+----------------------------------
 
 When working with the updater, it's important to understand that there are two types of operations: upload and download. To avoid corrupting local or remote plugin databases, the two classes of operation are mutually exclusive—if actions of one type are scheduled, actions of the other type will not be available. For most users, the updater only performs download operations and this is not an issue. However, when managing an update site, there can be scenarios of conflict between these operations.
 
 A typical sequence of events:
 
-  - You start the updater
-  - The updater sees new remote updates and marks them for installation/update.
-  - Or, the updater sees you deleted a file (i.e. one you are about to mark obsolete) and flags it for installation—since it's still tracked by the remote update site.
-  - You try to mark your file to upload it, but the Upload to server/Obsolete options are not available.
+-   You start the updater
+-   The updater sees new remote updates and marks them for installation/update.
+-   Or, the updater sees you deleted a file (i.e. one you are about to mark obsolete) and flags it for installation—since it's still tracked by the remote update site.
+-   You try to mark your file to upload it, but the Upload to server/Obsolete options are not available.
 
 To continue with your upload, you have to resolve the pending downloads in one of two ways:
 
-  - If there are legitimate pending updates, perform the download/installation and restart ImageJ.
-  - If you deleted files locally to make them obsolete, mark the files "Keep as-is".
+-   If there are legitimate pending updates, perform the download/installation and restart ImageJ.
+-   If you deleted files locally to make them obsolete, mark the files "Keep as-is".
 
 The *View changes* option is helpful to identify what downloads are pending. Once all of these are at a neutral state—with everything up-to-date or keep as-is—you can start flagging your files for upload as intended.
 
 Other options to check if still not resolved:
 
-  - Be sure to set your upload password for your currently logged-in wiki account. Just click [Set/change upload password](Special_ChangeUploadPassword ) under the MORE TOOLS section at the bottom of any wiki page.
-  - Be sure that under “Manage update sites” that your credentials are inserted for your update site. See [Uploading files to your update site](How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site ) on the ImageJ wiki to double-check how to do this.
+-   Be sure to set your upload password for your currently logged-in wiki account. Just click [Set/change upload password](Special_ChangeUploadPassword ) under the MORE TOOLS section at the bottom of any wiki page.
+-   Be sure that under “Manage update sites” that your credentials are inserted for your update site. See [Uploading files to your update site](How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site ) on the ImageJ wiki to double-check how to do this.

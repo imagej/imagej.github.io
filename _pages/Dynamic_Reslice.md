@@ -13,11 +13,13 @@ description: test description
 {% endcapture %}
 {% include info-box name='Dynamic Reslice ' software='[Fiji\_Plugins](Fiji_Plugins ) ' author='Jean-Yves Tinevez & Albert Cardona from an ImageJ class ' maintainer='Jean-Yves Tinevez (<tinevez_at_mpi-cbg_dot_de>) ' filename=' [Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Reslice.jar) ' source=source released='22 April 2009 ' latest-version='v1.2 (23 April 2009) ' status='active ' %}
 
-## Purpose
+Purpose
+-------
 
 This plugin is simply a dynamic version of the Reslice command as it is in ImageJ version 1.42l, by Patrick Kelly, Harvey Karten, {% include person content='Rasband' %}, Julian Cooper and Adrian Deerr. It draws an orthogonal slice through the volume represented by the stack it is applied on along its ROI, and update dynamically this slice as the ROI is displaced or deformed.
 
-## Installation
+Installation
+------------
 
 ### ImageJ
 
@@ -27,88 +29,91 @@ Download the jar file [Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Res
 
 The plugin is part of the Fiji distribution, as a member of the [Fiji\_Plugins](Fiji_Plugins ) package. You can find it in the {% include bc content='Image | Stacks'%} menu.
 
-## Usage
+Usage
+-----
 
 Open a stack and draw a line roi on it (any line roi will do it: straight line, poly-line, freehand line). When you call the plugin you are asked for two parameters.
 
-  - *Flip vertically* will cause the source slices to be processed from bottom to top.
-  - *Rotate 90º* will cause the result display to be rotated by 90º.
+-   *Flip vertically* will cause the source slices to be processed from bottom to top.
+-   *Rotate 90º* will cause the result display to be rotated by 90º.
 
 The reslice window is drawn. Now change the roi shape or move it with the mouse. The result window refreshes automatically. Is is possible to change roi type on the fly.
 
-## Scripting
+Scripting
+---------
 
 It is possible to call and control this plugin from other plugin or scripts. Here is a script example for use with [Fiji](Fiji ).
 
-``` python
-'''
-This jython script intends at demonstrating how to script the 
-Dynamic_Reslice plugin. It will open the t1-head sample stack
-in Fiji, draw a ROI on it, and animate it while updating the 
-Reslice image.
+    '''
+    This jython script intends at demonstrating how to script the 
+    Dynamic_Reslice plugin. It will open the t1-head sample stack
+    in Fiji, draw a ROI on it, and animate it while updating the 
+    Reslice image.
 
-Created on Apr 23, 2009
+    Created on Apr 23, 2009
 
-@author: Jean-Yves Tinevez
-'''
+    @author: Jean-Yves Tinevez
+    '''
 
-import fiji
-import time
+    import fiji
+    import time
 
-xstart = 40
-ystart = 50
+    xstart = 40
+    ystart = 50
 
 
-# Fetch the t1-head stack from URL
-source_imp = IJ.openImage('https://imagej.net/images/t1-head.zip')
-source_imp.show()
+    # Fetch the t1-head stack from URL
+    source_imp = IJ.openImage('https://imagej.net/images/t1-head.zip')
+    source_imp.show()
 
-# Select middle slice (does not matter)
-source_imp.setSlice(60)
+    # Select middle slice (does not matter)
+    source_imp.setSlice(60)
 
-# Instantiate the Dynamic_Reslice plugin
-dr = fiji.stacks.Dynamic_Reslice(source_imp)
+    # Instantiate the Dynamic_Reslice plugin
+    dr = fiji.stacks.Dynamic_Reslice(source_imp)
 
-# Set up the plugin so that it will rotate the resulting image, and will 
-# parse slices from bottom to top
-dr.setRotate(True)
-dr.setFlip(True)
+    # Set up the plugin so that it will rotate the resulting image, and will 
+    # parse slices from bottom to top
+    dr.setRotate(True)
+    dr.setFlip(True)
 
-# Get the destination ImagePlus
-dest_imp = dr.getImagePlus()
+    # Get the destination ImagePlus
+    dest_imp = dr.getImagePlus()
 
-# Now move the roi and update the image
-for dx in range(170):
-    
-    IJ.showStatus('Moving the Roi by '+str(dx))
-    
-    # Draw a line ROI on the source imp
-    roi = Line(xstart+dx, ystart, xstart+dx, ystart+170)
-    source_imp.setRoi(roi)
-    
-    # Update the reslice. We have to call it manually in the script.
-    dr.update();
-    
-    # Wait a bit so that we can see what is happening
-    time.sleep(0.03)
-    
-IJ.showStatus('Done')
-```
+    # Now move the roi and update the image
+    for dx in range(170):
+        
+        IJ.showStatus('Moving the Roi by '+str(dx))
+        
+        # Draw a line ROI on the source imp
+        roi = Line(xstart+dx, ystart, xstart+dx, ystart+170)
+        source_imp.setRoi(roi)
+        
+        # Update the reslice. We have to call it manually in the script.
+        dr.update();
+        
+        # Wait a bit so that we can see what is happening
+        time.sleep(0.03)
+        
+    IJ.showStatus('Done')
 
-## Example
+Example
+-------
 
-![DynamicresliceROI.gif](/images/pages/DynamicresliceROI.gif "DynamicresliceROI.gif") ![Dynamicreslice.gif](/images/pages/Dynamicreslice.gif "Dynamicreslice.gif")
+![](/images/pages/DynamicresliceROI.gif "fig:DynamicresliceROI.gif") ![](/images/pages/Dynamicreslice.gif "fig:Dynamicreslice.gif")
 
-## Version history
+Version history
+---------------
 
-  - 1.0 - 22 April 2009 - First working version.
-  - 1.1 - 22 April 2009 - Albert Cardona added the separate thread for updating
-  - 1.2 - 23 April 2009 -
-      - Window size automatically changes when Roi length changes
-      - Can now be called and managed from scripts
-      - Major refactoring
+-   1.0 - 22 April 2009 - First working version.
+-   1.1 - 22 April 2009 - Albert Cardona added the separate thread for updating
+-   1.2 - 23 April 2009 -
+    -   Window size automatically changes when Roi length changes
+    -   Can now be called and managed from scripts
+    -   Major refactoring
 
-## License: GPL
+License: GPL
+------------
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License 2 as published by the Free Software Foundation.
 

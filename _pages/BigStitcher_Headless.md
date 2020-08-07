@@ -7,7 +7,8 @@ categories:
 description: test description
 ---
 
-## Overview
+Overview
+--------
 
 In addition to the main application available in the Fiji menu via {% include bc content='Plugins|BigStitcher|BigStitcher'%}, we offer macro-recordable versions of most processing steps under the {% include bc content='Plugins|BigStitcher|Batch Processing'%} menu.
 
@@ -17,21 +18,23 @@ The operation of the Batch versions of the processing steps is essentially the s
 
 Macro-scriptable versions of the Multiview Reconstruction steps can be found in the Fiji menu under: {% include bc content='Plugins|Multiview Reconstruction|Batch Processing'%}
 
-## Example: Recording processing steps
+Example: Recording processing steps
+-----------------------------------
 
 Clicking {% include bc content='Plugins|Macros|Record...'%} in the Fiji will bring up the macro recorder that compiles most actions performed in Fiji as a executable script.
 
 In the following example, we performed the following macro-recordable steps of BigStitcher:
 
-  - Import a dataset (available [here](BigStitcher#3D_multi-tile_dataset_123_MB )), arange the tiles into a regular grid and re-save the data as HDF5.
-  - Perform pairwise shift calculation via Phase correlation, filter the links by thresholding on the correlation coefficient and globally optimize the alignment.
-  - Fuse the Tiles and save the results as TIFF
+-   Import a dataset (available [here](BigStitcher#3D_multi-tile_dataset_(123_MB) "wikilink")), arange the tiles into a regular grid and re-save the data as HDF5.
+-   Perform pairwise shift calculation via Phase correlation, filter the links by thresholding on the correlation coefficient and globally optimize the alignment.
+-   Fuse the Tiles and save the results as TIFF
 
 <img src="/images/pages/BigStitcher Headless Recorder.png" width="800"/>
 
 Clicking **Generate** in the macro recorder will pop up the Fiji script editor with a new script containing the recorded commands. You can save or **Run** the created script.
 
-## Example: Modifying and Calling the macro
+Example: Modifying and Calling the macro
+----------------------------------------
 
 Calling the macro generated after clicking **Generate** will just perform the same steps on the same dataset again. By providing some parameters to the script as an argument string and substitution them in the recorded commands, a script for headless, batch operation of BigStitcher can be generated.
 
@@ -44,7 +47,7 @@ to process another dataset with a different number of tiles headlessly:
     // read dataset path, number of tiles as commandline arguments
     args = getArgument()
     args = split(args, " ");
-    
+
     basePath = args[0];
     if (!endsWith(basePath, File.separator))
     {
@@ -52,7 +55,7 @@ to process another dataset with a different number of tiles headlessly:
     }
     tilesX = args[1];
     tilesY = args[2];
-    
+
     // define dataset
     run("Define dataset ...",
         "define_dataset=[Automatic Loader (Bioformats based)]" +
@@ -66,25 +69,25 @@ to process another dataset with a different number of tiles headlessly:
         "subsampling_factors=[{ {1,1,1}, {2,2,2} }] hdf5_chunk_sizes=[{ {16,16,16}, {16,16,16} }] " +
         "timepoints_per_partition=1 setups_per_partition=0 use_deflate_compression " +
         "export_path=" + basePath + "dataset");
-    
+
     // calculate pairwise shifts
     run("Calculate pairwise shifts ...",
         "select="+basePath+"dataset.xml process_angle=[All angles] process_channel=[All channels]" +
         " process_illumination=[All illuminations] process_tile=[All tiles] process_timepoint=[All Timepoints]" +
         " method=[Phase Correlation] channels=[Average Channels] downsample_in_x=2 downsample_in_y=2 downsample_in_z=2");
-    
+
     // filter shifts with 0.7 corr. threshold
     run("Filter pairwise shifts ...",
         "select="+basePath+"dataset.xml filter_by_link_quality min_r=0.7 max_r=1 " +
         "max_shift_in_x=0 max_shift_in_y=0 max_shift_in_z=0 max_displacement=0");
-    
+
     // do global optimization
     run("Optimize globally and apply shifts ...",
         "select="+basePath+"dataset.xml process_angle=[All angles] process_channel=[All channels] " +
         "process_illumination=[All illuminations] process_tile=[All tiles] process_timepoint=[All Timepoints]" +
         " relative=2.500 absolute=3.500 global_optimization_strategy=" +
         "[Two-Round using Metadata to align unconnected Tiles] fix_group_0-0,");
-    
+
     // fuse dataset, save as TIFF
     run("Fuse dataset ...",
         "select="+basePath+"dataset.xml process_angle=[All angles] process_channel=[All channels] " +
@@ -92,7 +95,7 @@ to process another dataset with a different number of tiles headlessly:
         " bounding_box=[All Views] downsampling=1 pixel_type=[16-bit unsigned integer] interpolation=[Linear Interpolation]" +
         " image=[Precompute Image] blend produce=[Each timepoint & channel] fused_image=[Save as (compressed) TIFF stacks] " +
         "output_file_directory=" + basePath);
-    
+
     // quit after we are finished
     eval("script", "System.exit(0);");
 

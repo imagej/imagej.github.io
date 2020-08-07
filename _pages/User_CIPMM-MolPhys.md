@@ -7,35 +7,38 @@ categories:
 description: test description
 ---
 
-Welcome\!
+Welcome!
 
 This is the official plugin repository of hte department of molecular physiology at the Center for Integrative Physiology and Molecular Medicine (CIPMM) at Saarland University.
 
 Currently, this repository contains a plugin called 'LRoi', which helps you creating sets of equally sized ROIs.
 
-## Installation
+Installation
+------------
 
-You can install LRoi (and all future plugins) by simply adding the following update site to the ImageJ updater: [http://sites.imagej.net/CIPMM-MolPhys/\[http://sites.imagej.net/CIPMM-MolPhys/](http://sites.imagej.net/CIPMM-MolPhys/%5Bhttp://sites.imagej.net/CIPMM-MolPhys/)\].
+You can install LRoi (and all future plugins) by simply adding the following update site to the ImageJ updater: http://sites.imagej.net/CIPMM-MolPhys/%5Bhttp://sites.imagej.net/CIPMM-MolPhys/\].
 
-## Usage
+Usage
+-----
 
 The main purpose of LRoi is to create equally sized regions of interest (ROIs) along a seeding line (hence LRoi). To create a number of ROIs, simply select the line drawing tool of ImageJ and draw a line on an opened image or image stack.
 
-![LineTool.png](/images/pages/LineTool.png "LineTool.png") ![SeedingLine.png](/images/pages/SeedingLine.png "SeedingLine.png")
+![](/images/pages/LineTool.png "fig:LineTool.png") ![](/images/pages/SeedingLine.png "fig:SeedingLine.png")
 
 Open the LRoi plugin and specify the number of ROIs you want to create, the ROI width and height.
 
-![LRoi\_example.png](/images/pages/LRoi example.png "LRoi_example.png") ![LRoi-length.png](/images/pages/LRoi-length.png "LRoi-length.png")
+![](/images/pages/LRoi example.png "fig:LRoi_example.png") ![](/images/pages/LRoi-length.png "fig:LRoi-length.png")
 
 The ROI height is used to adjust the length of your seed line w.r.t. its center point. This can be used as an drawing aid, since it might sometimes be difficult to draw a line with a speciffic length by hand. LRoi ensures, that your seeding line will have the exact length you specified.
 
 This line is then subdivided into the number of ROIs you want to create with your specified width. In our example, we create 25 ROIs along a 350µm seeding line, each having a width of 50 µm. This will result in iach ROI having an area of 14µm x 50 µm = 700 µm.
 
-![ROIs\_example.png](/images/pages/ROIs example.png "ROIs_example.png")
+![](/images/pages/ROIs example.png "ROIs_example.png")
 
 In this example, we have created 25 ROIs, each having an area of 700 µm².
 
-## Advanced usage
+Advanced usage
+--------------
 
 Besides creating equally sized ROIs along a seeding line, LRoi also allows to create ROIs perpendicular to that line, cross-shaped, as a regular grid or custom sized grid.
 

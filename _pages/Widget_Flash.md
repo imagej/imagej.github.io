@@ -13,7 +13,8 @@ description: test description
 2.  Embed it in a page using
         TODO FLASH WIDGET
 
-## Example
+Example
+-------
 
     TODO FLASH WIDGET
 

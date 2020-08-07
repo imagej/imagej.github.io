@@ -10,46 +10,41 @@ description: test description
 {% include menu-cookbook%}
 This book is an analysis-oriented introduction and user guide to ImageJ. It is inspired by the defunct [MBF "ImageJ for microscopy" manual](MBF_Plugin_Collection ) which went offline in November 2012, and it describes many of the same plugins from that distribution.
 
-Cooks call them *recipes*, biologists *protocols*, and programmers call them *HOWTOs*. No matter how you refer to them, you'll find the book topics in the sidebar to the right\!
+Cooks call them *recipes*, biologists *protocols*, and programmers call them *HOWTOs*. No matter how you refer to them, you'll find the book topics in the sidebar to the right!
 
-Like the rest of this wiki, this Cookbook is a community project. Please feel welcome to edit and expand the material here\! {% include toc%}
+Like the rest of this wiki, this Cookbook is a community project. Please feel welcome to edit and expand the material here! {% include toc%}
 
 
-## Installing ImageJ
+Installing ImageJ
+-----------------
 
 The Cookbook is based on the [Fiji](Fiji ) distribution of ImageJ. {% include downloadfiji%}
 
 
-## Installing the Cookbook plugins
+Installing the Cookbook plugins
+-------------------------------
 
+<table style="font-size:17px; margin-left: 25px;"><tbody><tr class="odd"><td><p>From the Fiji menu, select {% include bc content='Help | Update...'%}</p></td><td><figure><img src="/images/pages/1_Update_Fiji.png" title="1_Update_Fiji.png" width="150" alt="1_Update_Fiji.png" /><figcaption aria-hidden="true">1_Update_Fiji.png</figcaption></figure></td></tr><tr class="even"><td><p>Click the <strong>Manage update sites</strong> button</p></td><td><figure><img src="/images/pages/2_Manage_update_sites.png" title="2_Manage_update_sites.png" width="250" alt="2_Manage_update_sites.png" /><figcaption aria-hidden="true">2_Manage_update_sites.png</figcaption></figure></td></tr><tr class="odd"><td><p>Check the <strong>Cookbook</strong> update site</p></td><td><figure><img src="/images/pages/3_Enable_cookbook.png" title="3_Enable_cookbook.png" width="250" alt="3_Enable_cookbook.png" /><figcaption aria-hidden="true">3_Enable_cookbook.png</figcaption></figure></td></tr><tr class="even"><td><p>Close the <strong>Manage update sites</strong> dialog</p></td><td></td></tr><tr class="odd"><td><p>Click <strong>Apply changes</strong> to download the Cookbook plugins</p></td><td><figure><img src="/images/pages/4_Apply_changes.png" title="4_Apply_changes.png" width="250" alt="4_Apply_changes.png" /><figcaption aria-hidden="true">4_Apply_changes.png</figcaption></figure></td></tr><tr class="even"><td><p>Restart Fiji to complete the plugin installation</p></td><td></td></tr><tr class="odd"><td><p>Enjoy your new plugins from the <strong>Cookbook</strong> menu!</p></td><td><figure><img src="/images/pages/5_Use_the_Cookbook.png" title="5_Use_the_Cookbook.png" width="250" alt="5_Use_the_Cookbook.png" /><figcaption aria-hidden="true">5_Use_the_Cookbook.png</figcaption></figure></td></tr></tbody></table>
 
-|                                                                       |                                                                                        |
-| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| From the Fiji menu, select {% include bc content='Help | Update...'%} | ![1\_Update\_Fiji.png](/images/pages/1 Update Fiji.png "1_Update_Fiji.png")                          |
-| Click the **Manage update sites** button                              | ![2\_Manage\_update\_sites.png](/images/pages/2 Manage update sites.png "2_Manage_update_sites.png") |
-| Check the **Cookbook** update site                                    | ![3\_Enable\_cookbook.png](/images/pages/3 Enable cookbook.png "3_Enable_cookbook.png")              |
-| Close the **Manage update sites** dialog                              |                                                                                        |
-| Click **Apply changes** to download the Cookbook plugins              | ![4\_Apply\_changes.png](/images/pages/4 Apply changes.png "4_Apply_changes.png")                    |
-| Restart Fiji to complete the plugin installation                      |                                                                                        |
-| Enjoy your new plugins from the **Cookbook** menu\!                   | ![5\_Use\_the\_Cookbook.png](/images/pages/5 Use the Cookbook.png "5_Use_the_Cookbook.png")          |
-
-## Source
+Source
+------
 
 The source code is {% include github org='fiji ' repo='cookbook ' label='on GitHub ' %}.
 
-## Credits
+Credits
+-------
 
 The Cookbook pages themselves were adapted from the defunct [MBF "ImageJ for microscopy" manual](MBF_Plugin_Collection ), originally created by Tony Collins.
 
 The Cookbook technical writer team includes:
 
-  - {% include person content='Rueden' %} (technical oversight and maintenance)
-  - {% include person content='Apal4' %} (January 2014 - May 2015)
-  - {% include person content='Schindelin' %} (June 2013 - November 2014)
-  - {% include person content='Khildebrand' %} (June 2013 - December 2013)
-  - {% include person content='Amacall' %} (June 2013 - December 2013)
-  - {% include person content='Ruizhi' %} (November 2013 - December 2013)
-  - {% include person content='Gtcwildfire' %} (June 2013 - August 2013)
+-   {% include person content='Rueden' %} (technical oversight and maintenance)
+-   {% include person content='Apal4' %} (January 2014 - May 2015)
+-   {% include person content='Schindelin' %} (June 2013 - November 2014)
+-   {% include person content='Khildebrand' %} (June 2013 - December 2013)
+-   {% include person content='Amacall' %} (June 2013 - December 2013)
+-   {% include person content='Ruizhi' %} (November 2013 - December 2013)
+-   {% include person content='Gtcwildfire' %} (June 2013 - August 2013)
 
 The plugins featured in the Cookbook were collated from various sources and have various authors and licenses.
 

@@ -13,7 +13,8 @@ Non-hardware accelerated volume rendering in different modalities.
 
 Documentation: https://imagej.net/plugins/volume-viewer.html
 
-## See also
+See also
+--------
 
 [3D Viewer](3D_Viewer ): hardware-accelerated 3D visualization of image volumes, orthoslices, and 3D meshes.
 

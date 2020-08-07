@@ -7,11 +7,12 @@ categories:
 description: test description
 ---
 
-CAMDU (http://www.warwick.ac.uk/camdu) is a "virtual facility" at the University of Warwick. We are home to multiple advanced light microscopes, both commercial and custom-built systems, alongside computational workstations, software development and integrated petabyte data storage. This includes our Wellcome-funded lattice light sheet microscope and visitor programme.
+CAMDU ([http://www.warwick.ac.uk/camdu](http://www.warwick.ac.uk/camdu)) is a "virtual facility" at the University of Warwick. We are home to multiple advanced light microscopes, both commercial and custom-built systems, alongside computational workstations, software development and integrated petabyte data storage. This includes our Wellcome-funded lattice light sheet microscope and visitor programme.
 
 Currently, our Fiji update site offers the plugin autoQC for automating tasks related to microscope quality control.
 
-## AutoQC
+AutoQC
+------
 
 Usage Instructions:
 
@@ -27,13 +28,13 @@ If you're using files from multiple folders, outputs will be saved on the folder
 
 You can operate over multiseries files - the match string parameter tells the program what substring it should look for. For example, if you have a multiseries file and you wan to run autoPSF only over series containing "psf" on their names, use "psf" as the match string parameter.
 
-Note that, for multiseries files (e.g. mvd2), the same calibration is used for all series - do not mix different objectives on the same file\!
+Note that, for multiseries files (e.g. mvd2), the same calibration is used for all series - do not mix different objectives on the same file!
 
 When in doubt, consult the [MetroloJ Manual](http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:metroloj:metroloj.pdf) for detailed protocols.
 
 For OMERO stuff, you need the [OMERO Plugin for ImageJ](https://www.openmicroscopy.org/omero/downloads/).
 
------
+------------------------------------------------------------------------
 
 **References:**
 

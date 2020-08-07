@@ -7,9 +7,10 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content='sc.fiji:Volume\_Calculator' %}{| |style="vertical-align:top" |![Volume Calculator user interface.](/images/pages/VolCal.png "Volume Calculator user interface.") |}
+{% include component-stats content='sc.fiji:Volume\_Calculator' %}{\| \|style="vertical-align:top" \|<img src="/images/pages/VolCal.png" title="fig:Volume Calculator user interface." width="380" alt="Volume Calculator user interface." /> \|}
 
-## Introduction
+Introduction
+------------
 
 The Volume Calculator plugin is designed to let users measure the volumes of arbitrary segments of blood vessels by selecting them directly from a 3D image. Although Volume Calculator was developed for quantification in a mouse hindlimb ischemia experiment, it should be useful for the volume measurement of any network. This possibility is determined by the following requirement: the plugin is configured to work best with images that can be read and analyzed by the Skeleton 3D and Analyze 3D plugins. Hence, it is suggested that users first check their images with these two plugins.
 
@@ -19,9 +20,10 @@ Volume Calculator uses three Fiji plugins:
 2.  [AnalyzeSkeleton](AnalyzeSkeleton ) for the analysis and
 3.  [3D Viewer](3D_Viewer ) for display.
 
-## Usage
+Usage
+-----
 
-The section explains how to use Volume Calculator. A Magnetic Resonance Angiogram {% include wikipedia title='Magnetic resonance angiography' text='Magnetic resonance angiography'%}|(MRA) is used as an example image. This MRA is of the hindlimb vasculature of a mouse and was performed in vivo.
+The section explains how to use Volume Calculator. A Magnetic Resonance Angiogram {% include wikipedia title='Magnetic resonance angiography' text='Magnetic resonance angiography'%}\|(MRA) is used as an example image. This MRA is of the hindlimb vasculature of a mouse and was performed in vivo.
 
 ### Image Acquistion
 
@@ -55,7 +57,8 @@ Another form of selection is to click a ponit on a line once and then click anot
 
 The Volume Calculator keeps track of the what measurements are associated with a color. If you select a line with a color different from the measurement color, the volume of that line is subtracted from the original color total and added to the measurement color total.
 
-## References
+References
+----------
 
 The Volume Calculator plugin uses the following plugins:
 
@@ -63,7 +66,8 @@ The Volume Calculator plugin uses the following plugins:
 2.  [AnalyzeSkeleton](AnalyzeSkeleton ) for the analysis. Also tree traversal to create the Java 3D image is based on the one in this plugin.
 3.  [3D Viewer](3D_Viewer ) for display and image manipulation.
 
-## License
+License
+-------
 
 Copyright (c) 2012, Peter C Marks and Maine Medical Center Research Institute All rights reserved.
 

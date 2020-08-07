@@ -9,75 +9,64 @@ description: test description
 
 {% include develop-menu content='tools' %}This article explains how to install and configure command line tools for use with [ImageJ](ImageJ ) development.
 
-## Install and configure command line tools
+Install and configure command line tools
+----------------------------------------
 
 <div style="overflow: hidden">
 
-<tabs> <tab name="Windows"> ![ x32px](/images/pages/Win.png " x32px") **Windows**
+<tabs> <tab name="Windows"> ![ x32px](/images/pages/Win.png "fig: x32px") **Windows**
 
 Install [Git](Git ), [Maven](Maven ), and Java SE using [Chocolatey](https://chocolatey.org/):
 
-``` bash
-choco install -y git maven jdk8
-```
+    choco install -y git maven jdk8
 
 We also heartily recommend installing [Cygwin](https://www.cygwin.com/):
 
-``` bash
-choco install -y cyg-get
-```
+    choco install -y cyg-get
 
-</tab> <tab name="OS X"> ![ x32px](/images/pages/Osx.png " x32px") **OS X**
+</tab> <tab name="OS X"> ![ x32px](/images/pages/Osx.png "fig: x32px") **OS X**
 
 Install [Git](Git ) and [Maven](Maven ) using [Homebrew](http://brew.sh/):
 
-``` bash
-brew install git maven bash-completion
-```
+    brew install git maven bash-completion
 
-Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/) from Oracle. </tab> <tab name="Linux"> ![ x32px](/images/pages/Tux.png " x32px") **Linux**
+Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/) from Oracle. </tab> <tab name="Linux"> ![ x32px](/images/pages/Tux.png "fig: x32px") **Linux**
 
-``` bash
-sudo apt-get install default-jdk git maven
-```
+    sudo apt-get install default-jdk git maven
 
 </tab> </tabs>
 
 </div>
 
-## Download the source
+Download the source
+-------------------
 
-``` bash
-git clone git://github.com/imagej/imagej
-```
+    git clone git://github.com/imagej/imagej
 
 See the [Source Code](Source_Code ) page for further details.
 
-## Build the source
+Build the source
+----------------
 
-``` bash
-cd imagej
-mvn
-```
+    cd imagej
+    mvn
 
-## Launch the program
+Launch the program
+------------------
 
-``` bash
-mvn -Pexec
-```
+    mvn -Pexec
 
 ### Launching alternative user interfaces
 
 {% include warning-box content='Alternative UIs are experimental and still at "proof of concept" stage. The `swing` UI is semi-functional, but the other two (`swing-mdi` and `awt`) are largely non-functional, mentioned here solely for completeness.' %}
 
-``` bash
-mvn -Dscijava.ui=swing -Pexec
-mvn -Dscijava.ui=swing-mdi -Pexec
-mvn -Dscijava.ui=awt -Pexec
-```
+    mvn -Dscijava.ui=swing -Pexec
+    mvn -Dscijava.ui=swing-mdi -Pexec
+    mvn -Dscijava.ui=awt -Pexec
 
-## See also
+See also
+--------
 
-  - [Dotfiles](Dotfiles ) if you want to twink out your shell
+-   [Dotfiles](Dotfiles ) if you want to twink out your shell
 
  

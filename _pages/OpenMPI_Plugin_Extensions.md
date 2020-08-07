@@ -9,7 +9,8 @@ description: test description
 
 {% include info-box name='OpenMPI Plugin Extensions ' software='Fiji ' author='Daniel Trnka, Michal Krumnikl ' maintainer='Michal Krumnikl ' released='TBD ' latest-version='TBD ' category='TBD ' source=' [on github](https://github.com/fiji-hpc/scijava-parallel-mpi) ' %}
 
-## General information
+General information
+-------------------
 
 ### Motivation
 
@@ -19,28 +20,28 @@ OpenMPI, despite being relatively old, still remains the most dominant programmi
 
 This presents a set of Ops adapted to herein presented OpenMPI wrapper, jointly comprising a solution designed to be seamlessly used in any existing ImageJ2 code. Moreover, framework automatically initializes and disposes connections to the OpenMPI environment, making available OpenMPI implementations for the most frequent operations covered by Ops. The package contains example implementations for fundamental image processing functions as well as basic math, logical and statistics operations.
 
-## Installation
+Installation
+------------
 
 TBD
 
-## How to use
+How to use
+----------
 
 In order to demonstrate convenience of this approach, we prepared an example of parallelized convolution. We used Python for readers' convenience, however plugins can be invoked from any other scripting language supported by Fiji.
 
-``` python
-kernel = ops.run("create.img", [3, 3], FloatType())
-for p in kernel:
- p.set(1.0/kernel.size())
+    kernel = ops.run("create.img", [3, 3], FloatType())
+    for p in kernel:
+     p.set(1.0/kernel.size())
 
-def fn():
- output = ops.create().img(input)
- ops.filter().convolve(output, Views.extendMirrorSingle(input), kernel)
- return output
+    def fn():
+     output = ops.create().img(input)
+     ops.filter().convolve(output, Views.extendMirrorSingle(input), kernel)
+     return output
 
-input = scifio.datasetIO().open(input_path)
-output = Measure.benchmark(fn, rounds)
-scifio.datasetIO().save(output, output_path)
-```
+    input = scifio.datasetIO().open(input_path)
+    output = Measure.benchmark(fn, rounds)
+    scifio.datasetIO().save(output, output_path)
 
 The Listing shows the OpenMPI implementation with initialization of a 3×3 blur kernel (lines 1-3), definition of a processing function with convolution (it reuses already existing implementation of a convolution filter in ImageJ2) on lines 5-8 and finally its execution in the benchmark mode to measure execution times (the variable rounds defines the number of repetitions).
 

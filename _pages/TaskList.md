@@ -9,7 +9,8 @@ description: test description
 
 This is the summary of the final project meeting of the [Hackathon](Hackathon ) which took place at the MPI-CBG in Dresden/Germany from 04/21/2008 till 04/30/2008.
 
-## Finished Tasks
+Finished Tasks
+--------------
 
 Support Windows XP 64 Bit  
 Git-Web  
@@ -28,7 +29,8 @@ Google Groups Fiji-Users List
 Multiple Plugins Dir  
 Bugreport
 
-## Started Tasks
+Started Tasks
+-------------
 
 Fiji-Wiki  
 MicroManager support  
@@ -38,7 +40,8 @@ Fiji Webstart
 Generic Image Container with IJ Compatibilty Layer  
 Open Version of 3D Transformations
 
-## Tasks To Do
+Tasks To Do
+-----------
 
 Task oriented Tutorial  
 FAQ  

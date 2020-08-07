@@ -10,15 +10,17 @@ description: test description
 {% include fijimenu%}
 [Fiji](https://fiji.sc/) is an image processing package—a "batteries-included" distribution of [ImageJ](ImageJ ), bundling a lot of plugins which facilitate scientific image analysis.
 
-  - **[For users](Fiji_Usage )** - Fiji is [easy to install](Fiji/Downloads ) and has an automatic update function, bundles a [lot of plugins](Category_Plugins ) and offers comprehensive [documentation](documentation ).
-  - **[For developers](Developing_Fiji )** - Fiji is an open source project hosted in a [Git](Git ) version control {% include github repo='fiji ' label='repository ' %}, with access to the source code of all internals, libraries and plugins, and eases the [development](Development ) and [scripting](Scripting_Help ) of plugins.
+-   **[For users](Fiji_Usage )** - Fiji is [easy to install](Fiji/Downloads ) and has an automatic update function, bundles a [lot of plugins](Category_Plugins ) and offers comprehensive [documentation](documentation ).
+-   **[For developers](Developing_Fiji )** - Fiji is an open source project hosted in a [Git](Git ) version control {% include github repo='fiji ' label='repository ' %}, with access to the source code of all internals, libraries and plugins, and eases the [development](Development ) and [scripting](Scripting_Help ) of plugins.
 
-## Downloads
+Downloads
+---------
 
 {% include downloadfiji%}
  See the [Fiji Downloads](Fiji/Downloads ) page for Life-Line versions, etc.
 
-## License
+License
+-------
 
 Fiji is released as [open source](open_source ) under the [GNU General Public License](GPL ).
 
@@ -28,21 +30,23 @@ Plugins and other components have {% include github repo='fiji ' path='LICENSES 
 
 See the [Licensing](Licensing ) page for details.
 
-## Contributing
+Contributing
+------------
 
 Fiji is supported by several laboratories and institutions:
 
-  - The [Eliceiri/LOCI](LOCI ) lab at [UW-Madison](https://wisc.edu/), home of [ImageJ2](ImageJ2 ).
-  - The [Tomancak](https://www.mpi-cbg.de/research-groups/current-groups/pavel-tomancak/research-focus/) and [Jug](https://www.mpi-cbg.de/jug) labs at [MPI-CBG](MPI-CBG ) and the [CSBD](CSBD ).
-  - The [Saalfeld Lab](https://www.janelia.org/lab/saalfeld-lab) at [Janelia Research Campus](https://www.janelia.org/).
-  - Individuals at [many other institutions worldwide](Contributors ).
+-   The [Eliceiri/LOCI](LOCI ) lab at [UW-Madison](https://wisc.edu/), home of [ImageJ2](ImageJ2 ).
+-   The [Tomancak](https://www.mpi-cbg.de/research-groups/current-groups/pavel-tomancak/research-focus/) and [Jug](https://www.mpi-cbg.de/jug) labs at [MPI-CBG](MPI-CBG ) and the [CSBD](CSBD ).
+-   The [Saalfeld Lab](https://www.janelia.org/lab/saalfeld-lab) at [Janelia Research Campus](https://www.janelia.org/).
+-   Individuals at [many other institutions worldwide](Contributors ).
 
 Fiji is an [open source](open_source ) project, so everybody is welcome to contribute with plugins, patches, bug reports, tutorials, documentation, and artwork.
 
 If you'd like to share an idea or project, please [share them with the community](Contact ).
 
-## Publication
+Publication
+-----------
 
-  - {% include publication content='Fiji' %}
+-   {% include publication content='Fiji' %}
 
   

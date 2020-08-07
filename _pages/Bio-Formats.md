@@ -13,20 +13,23 @@ description: test description
 {% include github org='openmicroscopy ' repo='bioformats ' %}
 {% endcapture %}
 {% include info-box software='ImageJ ' name='OME Bio-Formats plugins ' logo='<img src="/images/pages/Bio-formats-icon.png" width="96"/> ' author=' [Open Microscopy Environment](https://www.openmicroscopy.org/) :  
-\- [UW-Madison LOCI](LOCI )  
-\- [Glencoe Software](https://www.glencoesoftware.com/)  
-\- [University of Dundee](https://www.dundee.ac.uk/) ' maintainer='OME development team ' filename=' [See Bio-Formats Downloads page](https://downloads.openmicroscopy.org/bio-formats/) ' source=source latest-version=' [See Bio-Formats Downloads page](https://downloads.openmicroscopy.org/bio-formats/) ' status='active ' category='[:Category:Import-Export](Category_Import-Export ) ' %}{% include toc%}
+- [UW-Madison LOCI](LOCI )  
+- [Glencoe Software](https://www.glencoesoftware.com/)  
+- [University of Dundee](https://www.dundee.ac.uk/) ' maintainer='OME development team ' filename=' [See Bio-Formats Downloads page](https://downloads.openmicroscopy.org/bio-formats/) ' source=source latest-version=' [See Bio-Formats Downloads page](https://downloads.openmicroscopy.org/bio-formats/) ' status='active ' category='[:Category:Import-Export](Category_Import-Export ) ' %}{% include toc%}
 
 
-## Purpose
+Purpose
+-------
 
 Import data from many life sciences file formats, and export to several open formats.
 
-## History
+History
+-------
 
 See [LOCI's Bio-Formats site](https://loci.wisc.edu/software/bio-formats) for a historical narrative of the project.
 
-## Documentation
+Documentation
+-------------
 
 What follows is a brief overview of the available plugins. You will find them all under the "Bio-Formats" submenu of Plugins. See the [Bio-Formats web site](https://www.openmicroscopy.org/bio-formats/) for additional information about Bio-Formats in general.
 
@@ -44,20 +47,20 @@ The **Bio-Formats Exporter** is a plugin for exporting data to disk.
 
 It can save to the open [OME-TIFF](https://docs.openmicroscopy.org/latest/ome-model/#ome-tiff) file format, as well as several movie formats (e.g., QuickTime, AVI) and graphics formats (e.g., PNG, JPEG).
 
-  - Animated PNG (\*.png)
-  - [Audio Video Interleave](https://en.wikipedia.org/wiki/Audio_Video_Interleave) (\*.avi)
-  - [CellH5](https://github.com/CellH5/cellh5) File Format (\*.ch5)
-  - Encausupated PostScript (\*.eps, \*.epsi)
-  - [Image Cytometry Standard](https://en.wikipedia.org/wiki/Image_Cytometry_Standard) (\*.ids, \*.ics)
-  - Java source code (\*.java)
-  - JPEG (\*.jpg, \*.jpeg, \*.jpe)
-  - JPEG-2000 (\*.jp2)
-  - [OME-TIFF](https://docs.openmicroscopy.org/latest/ome-model/ome-tiff/) (\*.ome.tif, \*.ome.tiff, \*.ome.tf2, \*.ome.tf8, \*.ome.btf)
-  - [OME-XML](https://docs.openmicroscopy.org/latest/ome-model/ome-xml/) (\*.ome, \*.ome.xml)
-  - QuickTime (\*.mov)
-  - Tagged Image File Format (TIFF) (\*.tif, \*.tiff, \*.tf2, \*.tf8, \*.btf)
-  - [Vaa3d](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/Vaa3D-Wiki) (\*.v3draw)
-  - [Woolz](https://www.emouseatlas.org/emap/analysis_tools_resources/software/woolz.html) (\*.wlz)
+-   Animated PNG (\*.png)
+-   [Audio Video Interleave](https://en.wikipedia.org/wiki/Audio_Video_Interleave) (\*.avi)
+-   [CellH5](https://github.com/CellH5/cellh5) File Format (\*.ch5)
+-   Encausupated PostScript (\*.eps, \*.epsi)
+-   [Image Cytometry Standard](https://en.wikipedia.org/wiki/Image_Cytometry_Standard) (\*.ids, \*.ics)
+-   Java source code (\*.java)
+-   JPEG (\*.jpg, \*.jpeg, \*.jpe)
+-   JPEG-2000 (\*.jp2)
+-   [OME-TIFF](https://docs.openmicroscopy.org/latest/ome-model/ome-tiff/) (\*.ome.tif, \*.ome.tiff, \*.ome.tf2, \*.ome.tf8, \*.ome.btf)
+-   [OME-XML](https://docs.openmicroscopy.org/latest/ome-model/ome-xml/) (\*.ome, \*.ome.xml)
+-   QuickTime (\*.mov)
+-   Tagged Image File Format (TIFF) (\*.tif, \*.tiff, \*.tf2, \*.tf8, \*.btf)
+-   [Vaa3d](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/Vaa3D-Wiki) (\*.v3draw)
+-   [Woolz](https://www.emouseatlas.org/emap/analysis_tools_resources/software/woolz.html) (\*.wlz)
 
 **Note:** For OME-TIFF and TIFF formats, the file extensions **\*.tif** and **\*.tiff** are associated with the standard 32-bit TIFF, which has a 4GB size limit. On the other hand, the file extensions **\*.tf2**, **\*.tf8**, and **\*.btf** are automatically associated with [the 64-bit BigTIFF format](https://www.awaresystems.be/imaging/tiff/bigtiff.html), which can store much bigger data.
 
@@ -93,7 +96,8 @@ The **Bio-Formats Plugins Shortcut Window** is a small window with a quick-launc
 
 The **Update Bio-Formats Plugins** command will check online for updates to the Bio-Formats Plugins. In the case of Fiji, we recommend that you do not use this method of update, but instead use the [Fiji Updater](Update_Fiji ).
 
-## Calling Bio-Formats from the command line
+Calling Bio-Formats from the command line
+-----------------------------------------
 
 You can invoke Bio-Formats from the command line using the [ImageJ Launcher](Launcher ):
 
@@ -101,11 +105,9 @@ You can invoke Bio-Formats from the command line using the [ImageJ Launcher](Lau
 2.  Click "Create" to pop up the [Script Editor](Script_Editor ), edit as desired, then save the macro as a `.ijm` macro file.
 3.  Run the macro from the command line; e.g.:
 
-<!-- end list -->
+<!-- -->
 
-``` plain
-ImageJ-win32.exe -macro myMacro.ijm -batch
-```
+    ImageJ-win32.exe -macro myMacro.ijm -batch
 
 Leave off the `-batch` flag if you want ImageJ to remain open afterward.
 
@@ -113,36 +115,32 @@ Note that you cannot use the [--headless option](Headless#Running_macros_in_head
 
 Here is an example macro created in such a fashion:
 
-``` java
-run("Bio-Formats", "open=/Users/jdoe/data.ome.tif " +
-  "autoscale color_mode=Default view=Hyperstack stack_order=XYCZT");
-saveAs("Tiff", "/Users/jdoe/Desktop/result.tif");
-```
+    run("Bio-Formats", "open=/Users/jdoe/data.ome.tif " +
+      "autoscale color_mode=Default view=Hyperstack stack_order=XYCZT");
+    saveAs("Tiff", "/Users/jdoe/Desktop/result.tif");
 
-## Scripting
+Scripting
+---------
 
 Bio-Formats has a high-level scripting interface, accessible by Java and all scripting languages supported by Fiji (but not the ImageJ macro language). Java example:
 
-``` java
-String id = "/path/to/myFile.ext";
-ImagePlus[] imps = BF.openImagePlus(id);
-```
+    String id = "/path/to/myFile.ext";
+    ImagePlus[] imps = BF.openImagePlus(id);
 
 If needed, import options can be set:
 
-``` java
-String id = "/path/to/myFile.ext";
-ImporterOptions options = new ImporterOptions();
-options.setId(id);
-options.setAutoscale(true);
-options.setCrop(true);
-options.setCropRegion(0, new Region(x, y, w, h));
-options.setColorMode(ImporterOptions.COLOR_MODE_COMPOSITE);
-//...etc.
-ImagePlus[] imps = BF.openImagePlus(options);
-```
+    String id = "/path/to/myFile.ext";
+    ImporterOptions options = new ImporterOptions();
+    options.setId(id);
+    options.setAutoscale(true);
+    options.setCrop(true);
+    options.setCropRegion(0, new Region(x, y, w, h));
+    options.setColorMode(ImporterOptions.COLOR_MODE_COMPOSITE);
+    //...etc.
+    ImagePlus[] imps = BF.openImagePlus(options);
 
-## Daily builds
+Daily builds
+------------
 
 {% include warning-box content='The daily builds are """not yet released""" and should be considered """beta""" in quality. There may be new bugs. In particular, you should """avoid exporting data using the Bio-Formats Exporter""" because the files it writes might not be readable later by release versions of Bio-Formats or other OME-compliant tools.' %}
 
@@ -154,22 +152,25 @@ To enable the Bio-Formats update site:
 
 1.  Launch the updater: **Update** from the **Help** menu.
 2.  Click the **Manage update sites** button.
-3.  Tick the **Bio-Formats** box: ![Bf-manage-update-sites.png](/images/pages/Bf-manage-update-sites.png "Bf-manage-update-sites.png")
-4.  Click the **Close** button. The updater should want to update some files now: ![Bf-jars-to-update.png](/images/pages/Bf-jars-to-update.png "Bf-jars-to-update.png")
+3.  Tick the **Bio-Formats** box: <img src="/images/pages/Bf-manage-update-sites.png" title="fig:Bf-manage-update-sites.png" width="700" alt="Bf-manage-update-sites.png" />
+4.  Click the **Close** button. The updater should want to update some files now: <img src="/images/pages/Bf-jars-to-update.png" title="fig:Bf-jars-to-update.png" width="700" alt="Bf-jars-to-update.png" />
 5.  Click the **Apply changes** button.
 6.  Restart Fiji when prompted.
-7.  To verify the upgrade, choose **Bio-Formats Plugins...** from **About Plugins** beneath the **Help** menu: ![Bf-about-plugins.png](/images/pages/Bf-about-plugins.png "Bf-about-plugins.png")
+7.  To verify the upgrade, choose **Bio-Formats Plugins...** from **About Plugins** beneath the **Help** menu: <img src="/images/pages/Bf-about-plugins.png" title="fig:Bf-about-plugins.png" width="700" alt="Bf-about-plugins.png" />
 
-## Source code
+Source code
+-----------
 
 The Bio-Formats source code is {% include github org='openmicroscopy ' repo='bioformats ' %}.
 
-## Reporting bugs
+Reporting bugs
+--------------
 
 To report a bug in Bio-Formats, please see [reporting a bug in Bio-Formats](https://docs.openmicroscopy.org/latest/bio-formats/about/bug-reporting.html).
 
-## Publication
+Publication
+-----------
 
-  - {% include publication content='Bio-Formats' %}
+-   {% include publication content='Bio-Formats' %}
 
    

@@ -11,13 +11,15 @@ description: test description
 
 I have been nicknamed *Ambassador of Fiji* by the [Mother of Fiji](User_Schindelin ).
 
-## Maintained plugins
+Maintained plugins
+------------------
 
-  - [Coloc 2](Coloc_2 ) (and [Colocalization Analysis](Colocalization_Analysis ))
-  - [Series Labeler](Series_Labeler )
-  - [Manual Tracking](Manual_Tracking )
-  - [Time Stamper](Time_Stamper )
+-   [Coloc 2](Coloc_2 ) (and [Colocalization Analysis](Colocalization_Analysis ))
+-   [Series Labeler](Series_Labeler )
+-   [Manual Tracking](Manual_Tracking )
+-   [Time Stamper](Time_Stamper )
 
-## Authored plugins
+Authored plugins
+----------------
 
-One of the authors of [BioImageXD](BioImageXD )\!
+One of the authors of [BioImageXD](BioImageXD )!

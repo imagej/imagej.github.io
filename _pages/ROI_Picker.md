@@ -13,7 +13,8 @@ description: test description
 {% endcapture %}
 {% include info-box software='Fiji ' name='ROI Picker ' author='Mark Hiner ' maintainer='Mark Hiner ' source=source released='30 August 2013 ' latest-version='22 October 2013 ' status='second version ' category='[Plugins](Category_Plugins ) ' %}
 
-## Purpose
+Purpose
+-------
 
 {% include thumbnail src='/images/pages/ROI Picker.png' title='The ROI Picker tool selected.'%}
 

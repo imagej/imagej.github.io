@@ -19,15 +19,14 @@ By default, when ImageJ runs headlessly it acts like a one-off program: it will 
 
 {% include warning-box content='In many cases, it is necessary to enclose the entire list of key/value pairs in single quotes, to avoid shell expansion. See the following examples.' %}
 
-## Basic run
+Basic run
+---------
 
 Let's say we have the following Python script saved in a file, `hello.py`:
 
-``` python
-#@String name
+    #@String name
 
-print('Hello ' + name)
-```
+    print('Hello ' + name)
 
 we could run this script with the command:
 
@@ -41,16 +40,15 @@ On Windows systems, single/double quotes might be inverted though, such that str
 
     ImageJ-win64.exe --ij2 --headless --console --run "PathTo/hello.py" "name='Mr Kraken'"
 
-## Multiple parameters
+Multiple parameters
+-------------------
 
 If your script has more than one parameter:
 
-``` python
-#@String name1
-#@String name2
+    #@String name1
+    #@String name2
 
-print('Hello ' + name1 + " and " + name2)
-```
+    print('Hello ' + name1 + " and " + name2)
 
 then these are filled by using a comma-separated list of parameter pairs—e.g.:
 

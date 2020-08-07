@@ -15,16 +15,18 @@ description: test description
 
 Client software can:
 
-  - Send images to, and receive images from, the server.
-  - Discover and execute ImageJ modules.
+-   Send images to, and receive images from, the server.
+-   Discover and execute ImageJ modules.
 
-## Installation
+Installation
+------------
 
-  - [Enable](Following_an_update_site ) the Server [update site](update_site ).
-  - Start the server via the {% include bc content='Plugins | Utilities | Start Server'%} command.
-  - Or launch ImageJ in server mode using the `--server` flag.
+-   [Enable](Following_an_update_site ) the Server [update site](update_site ).
+-   Start the server via the {% include bc content='Plugins | Utilities | Start Server'%} command.
+-   Or launch ImageJ in server mode using the `--server` flag.
 
-## Documentation
+Documentation
+-------------
 
 See the {% include github org='imagej ' repo='imagej-server ' label='GitHub site ' %}.
 

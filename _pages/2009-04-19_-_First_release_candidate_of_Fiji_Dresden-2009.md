@@ -7,13 +7,13 @@ categories: News
 description: test description
 ---
 
-In the aftermath of our hackathon in Dresden, we have a [first release candidate](Downloads ) now\!
+In the aftermath of our hackathon in Dresden, we have a [first release candidate](Downloads ) now!
 
 Here is the impressive list of changes:
 
 This is the after-hackathon release, and so far we have these changes (please correct me if I am wrong or forgot something):
 
-1.  lots of bug fixes (thanks to all\!)
+1.  lots of bug fixes (thanks to all!)
 2.  the scripting interpreters remember the previous commands (thanks to Albert Cardona): just use Cursor Up/Down to find out.
 3.  we have a NRRD reader/writer now (thanks to Greg Jefferis)
 4.  added the Turbo Reg plugin (thanks Philippe Thevenaz)
@@ -51,7 +51,7 @@ This is the after-hackathon release, and so far we have these changes (please co
 36. the 3D Viewer's 4D option can now load hyperstacks (thanks Benjamin Schmid)
 37. the 3D Viewer can do free\#hand recordings again, as well as convenience key bindings (thanks Benjamin Schmid)
 38. the Lasso/Blow Tool can optionally track dark lines, and actually respects the space/color ratio now
-39. lots of changes only relevant for developers (thanks to all\!)
+39. lots of changes only relevant for developers (thanks to all!)
 
 NOTE: as often, Johannes forgot to acknowledge himself :)
 

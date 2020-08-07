@@ -7,35 +7,40 @@ categories:
 description: test description
 ---
 
-## Edge and Symmetry filter
+Edge and Symmetry filter
+------------------------
 
 3D Canny-Deriche edge detection filter and symmetry filter.
 
-## Author
+Author
+------
 
 Thomas Boudier
 
-## Description
+Description
+-----------
 
 This plugin will compute the gradients of the image based on the [Canny edge detector](https://en.wikipedia.org/wiki/Canny_edge_detector). The symmetry filter will vote for the voxels inside the object based on the gradient vector direction.
 
 **Alpha parameter** refers to the smoothing in canny edge detection, the smaller the value, the smoother the edges.
 
-![Edgeandsymmetry.png](/images/pages/Edgeandsymmetry.png "Edgeandsymmetry.png")
+![](/images/pages/Edgeandsymmetry.png "Edgeandsymmetry.png")
 
 The **radius** parameter refer to the radius of the object whose symmetry is to be detected. Normalization and scaling refer to internal values of the algorithm, see Gertych *et al.* for references. The smoothed version is smoothed using ImageJ 3D Gaussian filter with a radius 2.
 
 The **improved seed detection** refer to a modified implementation to better detect seeds inside objects rather than objects themselves.
 
-![Edgesymmetry.png](/images/pages/Edgesymmetry.png "Edgesymmetry.png")
+![](/images/pages/Edgesymmetry.png "Edgesymmetry.png")
 
 The gradient vector is perpendicular to the edges, voxels along the direction of the gradient are highlighted and *vote* for the symmetry.
 
-## Download
+Download
+--------
 
 For details go to the [3D ImageJ Suite](3D_ImageJ_Suite ).
 
-## Citation
+Citation
+--------
 
 When using the plugin for publication, please refer to :
 
@@ -43,6 +48,7 @@ J. Ollion, J. Cochennec, F. Loll, C. Escudé, T. Boudier. (**2013**) TANGO: A Ge
 
 A. Gertych *et al.*, **Computers in Biology and Medecine**, 2015 ([doi](http://dx.doi.org/10.1016/j.compbiomed.2015.04.025))
 
-## License
+License
+-------
 
 GPL distribution (see [licence](http://www.cecill.info/index.en.html)). Sources are available freely.

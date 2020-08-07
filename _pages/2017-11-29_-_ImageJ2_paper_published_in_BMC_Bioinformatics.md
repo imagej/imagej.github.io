@@ -9,9 +9,9 @@ description: test description
 
 A detailed technical paper on [ImageJ2](ImageJ2 ) has been published in BMC Bioinformatics:
 
-  - {% include publication content='ImageJ2' %}
+-   {% include publication content='ImageJ2' %}
 
-Please [cite it](Citing ) if you use ImageJ2 in your work\! Thank you\!
+Please [cite it](Citing ) if you use ImageJ2 in your work! Thank you!
 
 P.S. You can also [find the LaTeX source on GitHub](https://github.com/imagej/imagej2-manuscript-2017).
 

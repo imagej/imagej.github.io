@@ -11,31 +11,35 @@ description: test description
 
 See [TrakEM2 snapshots](http://www.ini.uzh.ch/~acardona/snapshots.html) for an overview. {% include toc content='small' %}
 
-## Features
+Features
+--------
 
-  - **Segmentation:** manually draw areas across stacks, and sketch structures with balls and pipes. Skeletonize entire neuronal arborizations and represent synapses with relational connector objects.
-  - **Measurements:** volumes, surfaces, lengths, and also measurements via ImageJ ROIs.
-  - **Image Registration:** register floating image tiles to each other using [SIFT](Feature_Extraction ) and global optimization algorithms.
-  - **3D Visualization:** interacting with the [3D Viewer](3D_Viewer ) plugin, TrakEM2 displays image volumes and 3D meshes of all kinds.
-  - **Image Annotation:** floating text labels.
-  - **Semantic segmentation:** order segmentations in tree hierarchies, whose template is exportable for reuse in other, comparable projects.
+-   **Segmentation:** manually draw areas across stacks, and sketch structures with balls and pipes. Skeletonize entire neuronal arborizations and represent synapses with relational connector objects.
+-   **Measurements:** volumes, surfaces, lengths, and also measurements via ImageJ ROIs.
+-   **Image Registration:** register floating image tiles to each other using [SIFT](Feature_Extraction ) and global optimization algorithms.
+-   **3D Visualization:** interacting with the [3D Viewer](3D_Viewer ) plugin, TrakEM2 displays image volumes and 3D meshes of all kinds.
+-   **Image Annotation:** floating text labels.
+-   **Semantic segmentation:** order segmentations in tree hierarchies, whose template is exportable for reuse in other, comparable projects.
 
 TrakEM2 interacts with the [3D Viewer](3D_Viewer ) for visualization of image volumes and 3D meshes.
 
-## TrakEM2 in Fiji
+TrakEM2 in Fiji
+---------------
 
-  - Create new projects from "File - New - TrakEM2 (blank)"
-  - Open an existing project by dragging its .xml file onto the toolbar, or via "File - Open".
+-   Create new projects from "File - New - TrakEM2 (blank)"
+-   Open an existing project by dragging its .xml file onto the toolbar, or via "File - Open".
 
-## Documentation
+Documentation
+-------------
 
-  - [How to](http://www.ini.uzh.ch/~acardona/howto.html)
-  - [Manual](http://www.ini.uzh.ch/~acardona/trakem2_manual.html)
-  - [TrakEM2 tutorials](TrakEM2_tutorials ) with video tutorials.
-  - Examples of [scripting in TrakEM2](TrakEM2_Scripting ).
-  - Writing [plugins for TrakEM2](TrakEM2_TPlugIn ).
+-   [How to](http://www.ini.uzh.ch/~acardona/howto.html)
+-   [Manual](http://www.ini.uzh.ch/~acardona/trakem2_manual.html)
+-   [TrakEM2 tutorials](TrakEM2_tutorials ) with video tutorials.
+-   Examples of [scripting in TrakEM2](TrakEM2_Scripting ).
+-   Writing [plugins for TrakEM2](TrakEM2_TPlugIn ).
 
-## Running fiji for heavy-duty, memory-intensive, high-performance TrakEM2 tasks
+Running fiji for heavy-duty, memory-intensive, high-performance TrakEM2 tasks
+-----------------------------------------------------------------------------
 
 The following configuration has been tested in a machine with 8 CPU cores and 16 Gb of RAM, running Ubuntu 8.04 "Hardy", with a 1.6.0\_16 or newer JVM:
 
@@ -46,26 +50,27 @@ Put all the above in one line.
 
 What the JVM flags mean:
 
-  - \-Xms10g : use an initial heap size of 10 Gb (i.e. start fiji with 10 Gb of RAM preallocated to it)
-  - \-Xmx10g: use a maximum heap size of 10 Gb. Note it's the same amount as the intial heap size, so that the heap cannot be resized.
-  - \-Xincgc : use the incremental garbage collector. Clean up unused memory in the concurrent mark-sweep generation (i.e. not the super-new generation of allocated objects) using parallel threads.
-  - \-XX:MaxPermSize=256m : set the heap size allocated to objects that don't need to be garbage often to 256 Mb. The default is only 32 Mb, which proves insufficient.
-  - \-XX:PermSize=256m : preallocate the heap for the permanent objects directly to the desired maximum, 256 Mb, so it doesn't ever have to be resized.
-  - \-XX:NewRatio=5 : Set the ratio of ephemeral versus more long-lived objects to 5 (the default is 9 or more in 64-bit Sun JVMs).
-  - \-XX:CMSTriggerRatio=50 : run the parallel garbage collector when the ratio of free versus non-free heap space is 50 % (the default is 92% in 64-bit JVM, which may incur in pauses and undesirable full sweeps).
-  - \-XX:+UseCompressedOops : use 32-bit pointers when possible, in a 64-bit JVM. This can cut the memory footprint by half in many cases.
-  - The ending double hyphen "--" is to specify all of these are JVM arguments, not fiji/ImageJ arguments.
+-   -Xms10g : use an initial heap size of 10 Gb (i.e. start fiji with 10 Gb of RAM preallocated to it)
+-   -Xmx10g: use a maximum heap size of 10 Gb. Note it's the same amount as the intial heap size, so that the heap cannot be resized.
+-   -Xincgc : use the incremental garbage collector. Clean up unused memory in the concurrent mark-sweep generation (i.e. not the super-new generation of allocated objects) using parallel threads.
+-   -XX:MaxPermSize=256m : set the heap size allocated to objects that don't need to be garbage often to 256 Mb. The default is only 32 Mb, which proves insufficient.
+-   -XX:PermSize=256m : preallocate the heap for the permanent objects directly to the desired maximum, 256 Mb, so it doesn't ever have to be resized.
+-   -XX:NewRatio=5 : Set the ratio of ephemeral versus more long-lived objects to 5 (the default is 9 or more in 64-bit Sun JVMs).
+-   -XX:CMSTriggerRatio=50 : run the parallel garbage collector when the ratio of free versus non-free heap space is 50 % (the default is 92% in 64-bit JVM, which may incur in pauses and undesirable full sweeps).
+-   -XX:+UseCompressedOops : use 32-bit pointers when possible, in a 64-bit JVM. This can cut the memory footprint by half in many cases.
+-   The ending double hyphen "--" is to specify all of these are JVM arguments, not fiji/ImageJ arguments.
 
 With the above settings, we have succesfully registered 33,000 image tiles corresponding to 459 serial sections, using the "Align multi-layer mosaic" TrakEM2 command.
 
-## Preparing TrakEM2 for best performance
+Preparing TrakEM2 for best performance
+--------------------------------------
 
 ### For fastest browsing through layers
 
 Right-click on the canvas and choose "Display - Properties...". Then make sure that:
 
-  - "snapshots mode" is set to "Disabled", or at most to "Outlines".
-  - "Prepaint" is not checked, so that it is disabled.
+-   "snapshots mode" is set to "Disabled", or at most to "Outlines".
+-   "Prepaint" is not checked, so that it is disabled.
 
 ### For importing large collections of images and editing them immediately afterwards
 
@@ -73,7 +78,7 @@ The goal is to avoid generating mipmaps multiple times, which may be very time c
 
 Right-click on the canvas and choose "Display - Properties...". Then make sure that:
 
-  - "enable mipmaps" is not checked, so that it is disabled.
+-   "enable mipmaps" is not checked, so that it is disabled.
 
 Beware that <b>you will not be able to browse quickly</b> through layers while importing, given that mipmaps will not be generated.
 
@@ -81,16 +86,14 @@ Now to correct the contrast, first <b>re-enable mipmaps</b> by going again to "D
 
 A. Use the built-in commands from the right-click menu, such as:
 
-  - "Adjust images - Enhance contrast layer-wise"
-  - "Adjust images - Set min and max layer-wise"
+-   "Adjust images - Enhance contrast layer-wise"
+-   "Adjust images - Set min and max layer-wise"
 
 B. Create a preprocessor script and set it to all images. For example, a [beanshell](Beanshell_Scripting ) script to run [CLAHE](CLAHE ) on each image. In the script, the <i>patch</i> and <i>imp</i> variables exist automatically, and represent the [Patch](https://fiji.sc/javadoc/ini/trakem2/display/Patch.html) instance and the [ImagePlus](https://fiji.sc/javadoc/ij/ImagePlus.html) instance that the Patch wraps, respectively.
 
-``` java
-import ij.IJ;
-IJ.run(imp, "Enhance Local Contrast (CLAHE)", "blocksize=127"
-   + " histogram=256 maximum=3 mask=*None* fast_(less_accurate)");
-```
+    import ij.IJ;
+    IJ.run(imp, "Enhance Local Contrast (CLAHE)", "blocksize=127"
+       + " histogram=256 maximum=3 mask=*None* fast_(less_accurate)");
 
 To set the script to all images, save the above to a file named "whatever.bsh" (notice the filename extension ".bsh") and then right-click on the TrakEM2 canvas and choose "Script - Set preprocessor script layer-wise", and choose the whole range of layers. This will set the script to every image of every layer, and trigger mipmap regeneration for every image. When TrakEM2 loads the image, the script will run on the image before TrakEM2 ever sees its contents.
 
@@ -113,8 +116,8 @@ If your machine has 12 cores, the default settings will use 1 thread for mipmaps
 
 Two strategies are possible for accelerating Gaussian-based generation of mipmaps:
 
-  - <b>Strategy A</b>: your data consists of large images (over 4000x4000). Right-click on the TrakEM2 display and choose "Project - Properties...", and set the mipmap threads to 1 (the default). Now, mipmaps will be regenerated for one single image at a time, using 12 threads (given 12 cores) for computing the Gaussians.
-  - <b>Strategy B</b>: your data consists of small images (smaller than 4000x4000). Go to the Fiji window and select "Edit - Options - Memory & Threads...", and set the number of threads to 1. Then, go to "Project - Properties...", and set the mipmap threads to 12. Now, mipmaps will be regenerated for 12 images at a time (given 12 cores), using a single thread for each to compute the Gaussians.
+-   <b>Strategy A</b>: your data consists of large images (over 4000x4000). Right-click on the TrakEM2 display and choose "Project - Properties...", and set the mipmap threads to 1 (the default). Now, mipmaps will be regenerated for one single image at a time, using 12 threads (given 12 cores) for computing the Gaussians.
+-   <b>Strategy B</b>: your data consists of small images (smaller than 4000x4000). Go to the Fiji window and select "Edit - Options - Memory & Threads...", and set the number of threads to 1. Then, go to "Project - Properties...", and set the mipmap threads to 12. Now, mipmaps will be regenerated for 12 images at a time (given 12 cores), using a single thread for each to compute the Gaussians.
 
 Use <b>strategy A</b> as well if your computer has little RAM, or if access to the images is slow and contentious (such as if the data lives in a USB hard drive). That's why the default is one single thread for generating mipmaps.
 
@@ -138,7 +141,8 @@ Setting the bucket size to a large value will reduce XML loading time <b>a lot</
 
 To set the bucket size, right-click and choose "Display - Properties ..." and write in the bucket size value.
 
-## How much RAM should I allocate to the JVM for Fiji to run TrakEM2?
+How much RAM should I allocate to the JVM for Fiji to run TrakEM2?
+------------------------------------------------------------------
 
 Use a computer that follows this rule of thumb: take the largest single 2D image in your dataset, then multiply its size by 10, and make sure that every core of your CPU has at least that much RAM available to it.
 
@@ -146,12 +150,14 @@ For example, for a 4096x4096 16-bit image you will need at least 335 Mb per core
 
 As for a graphics card buy the largest you can afford, both in computing power and in internal memory.
 
-## Examples
+Examples
+--------
 
-{% include thumbnail src='/images/pages/Trakem2-snap.jpg' title='TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each.'%} ![TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right).](/images/pages/TrakEM2 Display.png "TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right).") {% include thumbnail src='/images/pages/3D-Viewer.jpg' title='3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes. Above, secondary lineages of <i>Drosophila</i> third instar larval brain segmented in TrakEM2.'%} {% include thumbnail src='/images/pages/TrakEM2-trees.png' title='The three TrakEM2 trees, as an interface for editing and visualizing the three internal TrakEM2 data structures.'%} {% include thumbnail src='/images/pages/Clahe-live-filter.jpg' title='Effect of the [CLAHE](Enhance_Local_Contrast_CLAHE ) live filter in TrakEM2. Data with high dynamic range is displayed with perceptually boosted local contrast. [CLAHE parameters](Enhance_Local_Contrast_CLAHE ) are relative to display pixels and, therefore, will not result in an effective bandpass when zooming out largely on statically pre-processed images.'%} {% include thumbnail src='/images/pages/Neuronal-arbors-1.png' title='Neuronal arbors reconstructed with TrakEM2 using the [treeline](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) segmentation type.'%} {% include thumbnail src='/images/pages/TrakEM2-arealists.png' title='Neuronal arbors from serial section electron microscopy reconstructed with TrakEM2 using the [manually segmentated data set](http://www.ini.uzh.ch/~acardona/data.html).'%} {% include thumbnail src='/images/pages/TrakEM2-display-2.png' title='[TrakEM2](TrakEM2 ) showing one section of a serial section transmission electron microscopy (ssTEM) data set, with numerous neuronal arbors reconstructed using [treelines](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) and [connectors](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#connectors) (for synapses).'%} {% include thumbnail src='/images/pages/TrakEM2 Display segmentations.png' title='Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList and floating text labels.'%} {% include clear content='left' %}
+{% include thumbnail src='/images/pages/Trakem2-snap.jpg' title='TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each.'%} <img src="/images/pages/TrakEM2_Display.png" title="fig:TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right)." width="232" alt="TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right)." /> {% include thumbnail src='/images/pages/3D-Viewer.jpg' title='3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes. Above, secondary lineages of <i>Drosophila</i> third instar larval brain segmented in TrakEM2.'%} {% include thumbnail src='/images/pages/TrakEM2-trees.png' title='The three TrakEM2 trees, as an interface for editing and visualizing the three internal TrakEM2 data structures.'%} {% include thumbnail src='/images/pages/Clahe-live-filter.jpg' title='Effect of the [CLAHE](Enhance_Local_Contrast_(CLAHE) "wikilink") live filter in TrakEM2. Data with high dynamic range is displayed with perceptually boosted local contrast. [CLAHE parameters](Enhance_Local_Contrast_(CLAHE) "wikilink") are relative to display pixels and, therefore, will not result in an effective bandpass when zooming out largely on statically pre-processed images.'%} {% include thumbnail src='/images/pages/Neuronal-arbors-1.png' title='Neuronal arbors reconstructed with TrakEM2 using the [treeline](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) segmentation type.'%} {% include thumbnail src='/images/pages/TrakEM2-arealists.png' title='Neuronal arbors from serial section electron microscopy reconstructed with TrakEM2 using the [manually segmentated data set](http://www.ini.uzh.ch/~acardona/data.html).'%} {% include thumbnail src='/images/pages/TrakEM2-display-2.png' title='[TrakEM2](TrakEM2 ) showing one section of a serial section transmission electron microscopy (ssTEM) data set, with numerous neuronal arbors reconstructed using [treelines](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) and [connectors](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#connectors) (for synapses).'%} {% include thumbnail src='/images/pages/TrakEM2 Display segmentations.png' title='Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList and floating text labels.'%} {% include clear content='left' %}
 
-## Publication
+Publication
+-----------
 
-  - {% include publication content='TrakEM2' %}
+-   {% include publication content='TrakEM2' %}
 
       

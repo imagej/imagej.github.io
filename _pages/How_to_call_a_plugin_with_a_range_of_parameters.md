@@ -9,23 +9,21 @@ description: test description
 
 If you want to call a plugin taking a single numerical parameter for a range of values, use a macro like this:
 
-``` java
-setBatchMode(true);
-id = getImageID();
-for (radius = 1; radius < 10; radius++) {
-    run("Duplicate...", "title=slice");
-    run("Gaussian Blur...", "sigma=" + radius);
-    run("Select All");
-    run("Copy");
-    close();
-    selectImage(id);
-    setSlice(nSlices);
-    run("Add Slice");
-    run("Paste");
-    setSlice(1);
-}
-setBatchMode(false);
-```
+    setBatchMode(true);
+    id = getImageID();
+    for (radius = 1; radius < 10; radius++) {
+        run("Duplicate...", "title=slice");
+        run("Gaussian Blur...", "sigma=" + radius);
+        run("Select All");
+        run("Copy");
+        close();
+        selectImage(id);
+        setSlice(nSlices);
+        run("Add Slice");
+        run("Paste");
+        setSlice(1);
+    }
+    setBatchMode(false);
 
 This macro takes the current image, and makes a stack of it by adding Gaussian-blurred versions for sigma ("radius") values between *1..9*.
 

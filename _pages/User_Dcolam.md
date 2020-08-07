@@ -7,6 +7,7 @@ categories:
 description: test description
 ---
 
-## Cluster Analysis Wiki Page under construction
+Cluster Analysis Wiki Page under construction
+---------------------------------------------
 
 [1](https://github.com/dcolam/Cluster-Analysis-Plugin)

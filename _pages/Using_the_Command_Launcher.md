@@ -11,14 +11,14 @@ One of the most useful functions of ImageJ is the *Command Launcher* (also known
 
 Once the window opens, just type part of the menu item you want to launch, and it will show you a list of commands that match that substring:
 
-![Snapshot\_of\_the\_Command\_Launcher.png](/images/pages/Snapshot of the Command Launcher.png "Snapshot_of_the_Command_Launcher.png")
+![](/images/pages/Snapshot of the Command Launcher.png "Snapshot_of_the_Command_Launcher.png")
 
 If you are not quite sure about the spelling, just click on the *Fuzzy matching* checkbox:
 
-![Snapshot\_of\_the\_fuzzy\_Command\_Launcher.png](/images/pages/Snapshot of the fuzzy Command Launcher.png "Snapshot_of_the_fuzzy_Command_Launcher.png")
+![](/images/pages/Snapshot of the fuzzy Command Launcher.png "Snapshot_of_the_fuzzy_Command_Launcher.png")
 
 If you want to know what menu the entries are in, or from which .jar files they come, enable the *full information*:
 
-![Snapshot\_of\_full\_info\_Command\_Launcher.png](/images/pages/Snapshot of full info Command Launcher.png "Snapshot_of_full_info_Command_Launcher.png")
+![](/images/pages/Snapshot of full info Command Launcher.png "Snapshot_of_full_info_Command_Launcher.png")
 
 

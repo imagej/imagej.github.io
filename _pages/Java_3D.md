@@ -9,13 +9,15 @@ description: test description
 
 {% include wikipedia title='Java 3D' text='Java 3D'%} is a technology used for 3D visualization in Java. In [ImageJ](ImageJ ), it is used by the [3D Viewer](3D_Viewer ) plugin, and hence transitively by other plugins which rely on the 3D Viewer for their visualization, such as the [Simple Neurite Tracer](Simple_Neurite_Tracer ) and [TrakEM2](TrakEM2 ).
 
-## Status of Java 3D
+Status of Java 3D
+-----------------
 
 The Java 3D project, originally developed at Sun (now Oracle), has been abandoned for several years in favor of [JavaFX 3D](https://docs.oracle.com/javase/8/javafx/graphics-tutorial/javafx-3d-graphics.htm). However, it has been adopted by the [JogAmp](https://jogamp.org/) community, and is now maintained there—though no longer under active development.
 
 From the perspective of new features, Java 3D is essentially a dead technology. The future of 3D visualization in ImageJ is the [SciView](SciView ) plugin. But it will be a lot of work to make SciView comparable to—and eventually better than—3D Viewer, so the ImageJ and [Fiji](Fiji ) teams are still exploring the best ways to proceed here.
 
-## Versions of Java 3D
+Versions of Java 3D
+-------------------
 
 ### Java 3D 1.5
 
@@ -23,9 +25,9 @@ The last version of Java 3D supported by Sun/Oracle was 1.5.2. It was packaged a
 
 It works with Java 6, but:
 
-  - It has a restrictive license.
-  - It does not work Java 7 or 8 on OS X.
-  - It does not work with Java 8 (or 7?) on some Windows systems.
+-   It has a restrictive license.
+-   It does not work Java 7 or 8 on OS X.
+-   It does not work with Java 8 (or 7?) on some Windows systems.
 
 The Java 6 version of ImageJ works with Java 3D 1.5.2, by launching the 3D Viewer and allowing it to automatically install Java 3D; see [this page](2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D ) for further details.
 

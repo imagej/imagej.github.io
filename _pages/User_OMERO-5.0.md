@@ -12,18 +12,18 @@ This account is used to manage the [OMERO 5.0 update site](http://sites.imagej.n
 
 To activate it:
 
-  - [*Help\>Update*](Update_Sites )
-  - Click *Manage update sites*
-  - Check *OMERO 5.0*
-  - Click *Close*
+-   [*Help&gt;Update*](Update_Sites )
+-   Click *Manage update sites*
+-   Check *OMERO 5.0*
+-   Click *Close*
 
 Some files should appear on the list with *Status/Action* of *Install it*.
 
-  - Click *Apply changes*
-  - Restart ImageJ
+-   Click *Apply changes*
+-   Restart ImageJ
 
 Your ImageJ should now possess the following commands:
 
-  - *File \> Import \> OMERO*
-  - *File \> Export \> OMERO*
-  - *Help\>About Plugins\>OMERO...*
+-   *File &gt; Import &gt; OMERO*
+-   *File &gt; Export &gt; OMERO*
+-   *Help&gt;About Plugins&gt;OMERO...*

@@ -9,11 +9,13 @@ description: test description
 
 [Docker](https://www.docker.com/whatisdocker/) provides a platform for distribution of application state. This facilitates the highest level of scientific [reproducibility](reproducibility ) - as a Docker image can bundle operating system, Java version, update site and plugin state, and even sample data. These images can then be reused by remote users and scientists worldwide, with no dependency concerns (beyond Docker itself).
 
-# Pre-Requisites
+Pre-Requisites
+==============
 
 You will need to [install Docker](https://docs.docker.com/installation/#installation) for your system.
 
-# How to use the Fiji Docker images
+How to use the Fiji Docker images
+=================================
 
 The base Fiji images are provided on [Docker Hub](https://registry.hub.docker.com/u/fiji/fiji/). These images call the Fiji executable by default. For example:
 
@@ -31,7 +33,8 @@ Several [tags](https://registry.hub.docker.com/u/fiji/fiji/tags/manage/) are pro
 
 The following sections cover [headless](#Running_headless "wikilink") and [graphical](#Running_the_UI "wikilink") uses.
 
-# Running headless
+Running headless
+================
 
 Running ImageJ headlessly in Docker is not much different than normal headless operation - see the [headless guide](Headless ) for general information. To start a headless ImageJ invocation from Docker, use:
 
@@ -41,15 +44,17 @@ If you want to manually explore the Fiji Docker image, e.g. to install additiona
 
 ` docker run -it --rm fiji/fiji bash`
 
-Just be sure to [commit any changes](https://docs.docker.com/userguide/dockerimages/#updating-and-committing-an-image)\!
+Just be sure to [commit any changes](https://docs.docker.com/userguide/dockerimages/#updating-and-committing-an-image)!
 
-# Running the UI
+Running the UI
+==============
 
 This is, unfortunately, currently quite platform-specific. Docker has tight Linux integration, so it is much easier to share displays with a Docker image if you are using a Linux host. However, it is not impossible on other architectures.
 
 Note that this is highly experimental right now, and the steps to get Fiji running can be fairly involved. Please [report issues](https://github.com/fiji/dockerfiles/issues) and contribute suggestions if you have ideas for improving interoperability between Fiji's UI and Docker.
 
-## On Linux
+On Linux
+--------
 
 We can adapt [this blog post](http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/) on running GUI applications with Docker to share the X11 port.
 
@@ -82,7 +87,8 @@ Run Fiji with:
 
 Which should pop up a window with Fiji running.
 
-## On OSX
+On OSX
+------
 
 ### boot2docker
 
@@ -137,13 +143,14 @@ to start listening for X11 forwarding. In the second terminal, you can now use D
 
 Where the IP address was what we found earlier with `ifconfig`.
 
-Congratulations\! You should now be running Fiji in a Docker image.
+Congratulations! You should now be running Fiji in a Docker image.
 
 ### Kitematic
 
 [Kitematic](https://kitematic.com/) is a UI-oriented way to start Docker containers on Macs. It makes it very easy to download and run new images. However we have not yet investigated how to run the Fiji UI with Kitematic.
 
-# Exposing your data
+Exposing your data
+==================
 
 Once you have Fiji up and running, you will probably want to open some images.
 
@@ -157,19 +164,22 @@ will create a `data` subdirectory in the Fiji installation, which you can then o
 
 For more information on using volumes, see the [Docker user guide](https://docs.docker.com/userguide/dockervolumes/).
 
-# Dockerfiles
+Dockerfiles
+===========
 
 Dockerfiles for Fiji can be [found on GitHub](https://github.com/fiji/dockerfiles). See the [official documentation](https://docs.docker.com/reference/builder/) for directions on building images from Dockerfiles.
 
-# Docker image structure
+Docker image structure
+======================
 
 In these docker images, you will find Fiji installed in the `/fiji` directory, which has been added to the `PATH` of the image (so that Fiji can be run as the default command).
 
-# Troubleshooting
+Troubleshooting
+===============
 
 If you run into any problems or have questions about ImageJ + Docker, please use:
 
-  - [GitHub](https://github.com/fiji/dockerfiles/issues)
-  - The [mailing lists](Mailing_Lists )
+-   [GitHub](https://github.com/fiji/dockerfiles/issues)
+-   The [mailing lists](Mailing_Lists )
 
 

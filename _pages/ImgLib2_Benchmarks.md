@@ -15,30 +15,33 @@ This page compares the time performance of image processing operations using raw
 
 Some of the charts plot results at several iterations, meaning the test was performed repeatedly in a loop. This is important because the just-in-time compiler (JIT) is able to optimize performance increasingly well as the same code is executed more than once. Hence, we show results after both a single iteration, as well as ten iterations.
 
-## Scenarios
+Scenarios
+---------
 
 The data below cover the following scenarios:
 
-  - Cheap operation on 1Mpx image (1000 x 1000), by iteration
-  - Expensive operation on 1Mpx image (1000 x 1000), by iteration
-  - Cheap operation on 25Mpx image (5000 x 5000), by iteration
-  - Expensive operation on 25Mpx image (5000 x 5000), by iteration
-  - Cheap operation on various image resolutions, 1st iteration (fresh JVM)
-  - Expensive operation on various image resolutions, 1st iteration (fresh JVM)
-  - Cheap operation on various image resolutions, 10th iteration
-  - Expensive operation on various image resolutions, 10th iteration
+-   Cheap operation on 1Mpx image (1000 x 1000), by iteration
+-   Expensive operation on 1Mpx image (1000 x 1000), by iteration
+-   Cheap operation on 25Mpx image (5000 x 5000), by iteration
+-   Expensive operation on 25Mpx image (5000 x 5000), by iteration
+-   Cheap operation on various image resolutions, 1st iteration (fresh JVM)
+-   Expensive operation on various image resolutions, 1st iteration (fresh JVM)
+-   Cheap operation on various image resolutions, 10th iteration
+-   Expensive operation on various image resolutions, 10th iteration
 
-## Hardware and software specifications
+Hardware and software specifications
+------------------------------------
 
-  - [ImgLib2](ImgLib2 ) version 2.9.0
-  - [ImageJ 1.x](ImageJ_1.x ) version 1.50i
-  - Mid 2015 MacBook Pro
-  - Mac OS X 10.11.4
-  - 2.5 GHz Intel Core i7 processor
-  - 16 GB 1600 MHz DDR3 RAM
-  - Oracle Java(TM) SE Runtime Environment (build 1.8.0\_77-b03) with Java HotSpot(TM) 64-Bit Server VM (build 25.77-b03, mixed mode)
+-   [ImgLib2](ImgLib2 ) version 2.9.0
+-   [ImageJ 1.x](ImageJ_1.x ) version 1.50i
+-   Mid 2015 MacBook Pro
+-   Mac OS X 10.11.4
+-   2.5 GHz Intel Core i7 processor
+-   16 GB 1600 MHz DDR3 RAM
+-   Oracle Java(TM) SE Runtime Environment (build 1.8.0\_77-b03) with Java HotSpot(TM) 64-Bit Server VM (build 25.77-b03, mixed mode)
 
-## Analysis of time performance
+Analysis of time performance
+----------------------------
 
 For cheap operations, time performance is dominated by the overhead of looping itself, meaning several methods are significantly slower. However, this loop overhead is generally very small–and for several methods, such as ImgLib Array, the JIT quickly optimizes it down to raw performance. Hence, in the expensive case, performance converges across all methods.
 
@@ -46,21 +49,23 @@ Looking at trends as image resolution increases (the "various image resolutions"
 
 In conclusion, we believe there is little reason for concern regarding time performance of any of these libraries. And the advantages of ImgLib2's type- and container-agnostic algorithm development certainly outweigh any minor differences in time performance—especially since the flexible containers provide a mechanism for optimizing space performance based on the data type.
 
-## Source code
+Source code
+-----------
 
 The main benchmark code can be found at:
 
-  - {% include github org='imglib ' repo='imglib2-tests ' path='src/test/java/tests/PerformanceBenchmark.java ' label='PerformanceBenchmark.java ' %}
+-   {% include github org='imglib ' repo='imglib2-tests ' path='src/test/java/tests/PerformanceBenchmark.java ' label='PerformanceBenchmark.java ' %}
 
 The script that runs the benchmark at various image resolutions is:
 
-  - {% include github org='imglib ' repo='imglib2-tests ' path='src/test/scripts/benchmark.sh ' label='benchmark.sh ' %}
+-   {% include github org='imglib ' repo='imglib2-tests ' path='src/test/scripts/benchmark.sh ' label='benchmark.sh ' %}
 
 The shell script also uses a Python script to transform the CSV output into the pChart data on this page:
 
-  - {% include github org='imglib ' repo='imglib2-tests ' path='src/test/scripts/chart-gen.py ' label='chart-gen.py ' %}
+-   {% include github org='imglib ' repo='imglib2-tests ' path='src/test/scripts/chart-gen.py ' label='chart-gen.py ' %}
 
-## Cheap operation results
+Cheap operation results
+-----------------------
 
 <div style="float: left">
 
@@ -80,7 +85,8 @@ The shell script also uses a Python script to transform the CSV output into the 
 <pLines ymin=0 title="Resolution x Time (ms) at iteration #10" size=435x250 angle=90 cubic plots legend> , ImageJ 1.x, ImgLib2 Array, ImgLib2 Cell, ImgLib2 ImagePlus, ImgLib2 Planar, Raw 1 Mpx, 0, 0, 2, 0, 0, 1 4 Mpx, 0, 0, 15, 1, 0, 1 7 Mpx, 1, 0, 21, 2, 0, 0 10 Mpx, 1, 0, 30, 1, 1, 1 13 Mpx, 1, 1, 39, 1, 2, 1 16 Mpx, 1, 1, 52, 1, 2, 2 19 Mpx, 1, 1, 65, 1, 2, 2 22 Mpx, 2, 1, 70, 2, 2, 2 25 Mpx, 1, 3, 83, 3, 3, 4 </pLines> {% include clear%}
 
 
-## Expensive operation results
+Expensive operation results
+---------------------------
 
 <div style="float: left">
 

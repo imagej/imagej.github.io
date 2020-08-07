@@ -37,8 +37,8 @@ Local maxima in the filtered image yields spot detections. Each detected spot is
 
 So by properties of the LoG filter, this quality value is larger for :
 
-  - bright spots;
-  - spots which diameter is close to the specified diameter.
+-   bright spots;
+-   spots which diameter is close to the specified diameter.
 
 ### Exporting TrackMate spots to ImageJ1 ROIs.
 
@@ -54,18 +54,16 @@ An action called **Export current spots to IJ rois** will appear in the menu of 
 
 The simplest solution consists in editing the TrackMate XML file, and have it point to another tif file.
 
-  - Make a copy of the XML file, and edit it in a good text editor;
-  - Find in the XML file the line that points to the TIF file on which you did the analysis. It looks like this:
+-   Make a copy of the XML file, and edit it in a good text editor;
+-   Find in the XML file the line that points to the TIF file on which you did the analysis. It looks like this:
 
-<!-- end list -->
+<!-- -->
 
-``` xml
-  <Settings>
-    <ImageData filename="DUP_TIM1 GFP clat dsred TIRF-5.tif" folder="/Users/tinevez/Desktop/" width="310" height="362" nslices="1" nframes="113" pixelwidth="0.1" pixelheight="0.1" voxeldepth="1.0" timeinterval="2.463" />
-```
+      <Settings>
+        <ImageData filename="DUP_TIM1 GFP clat dsred TIRF-5.tif" folder="/Users/tinevez/Desktop/" width="310" height="362" nslices="1" nframes="113" pixelwidth="0.1" pixelheight="0.1" voxeldepth="1.0" timeinterval="2.463" />
 
-  - Change the `filename` tag to point to the other TIF file on which you want to copy the overlay.
-  - Next time you open the edited file in TrackMate, it will also open the new TIF file and put the annotation on it.
+-   Change the `filename` tag to point to the other TIF file on which you want to copy the overlay.
+-   Next time you open the edited file in TrackMate, it will also open the new TIF file and put the annotation on it.
 
 ### Exporting TrakMate overlay to a movie.
 
@@ -87,7 +85,7 @@ The overlay capture abides to the display settings you set in the **Display Sett
 
 *The particle traces resemble jagged line rather than a smooth curve of the path. I'm measuring the average speed of the particles and it's crucial the software calculates the distance traveled accurately.*
 
-![TrackMate\_JaggedLines.png](/images/pages/TrackMate JaggedLines.png "TrackMate_JaggedLines.png")
+<figure><img src="/images/pages/TrackMate_JaggedLines.png" title="TrackMate_JaggedLines.png" width="600" alt="TrackMate_JaggedLines.png" /><figcaption aria-hidden="true">TrackMate_JaggedLines.png</figcaption></figure>
 
 Make sure the `Do sub-pixel localization` is checked. It will mitigate this problem. Also make sure that you choose a blob diameter that actually matches the objects you tracking.
 
@@ -104,6 +102,6 @@ These errors may popup when you try to launch TrackMate, or plot features. A sta
 
 This kind of error is caused when a Java class is missing in your installation. In most cases, this happens because your Fiji installation did not update properly. Possible solutions are
 
-  - [Update](Updater ) Fiji.
-  - Check if you have the [Jave8](2015-12-22_-_The_road_to_Java_8 ) update site in the Fiji [Updater](Updater )
-  - Finally, if nothing works, rather than digging in your Fiji installation in details, just install Java 8 and [re-download](Downloads ) a fresh Fiji application.
+-   [Update](Updater ) Fiji.
+-   Check if you have the [Jave8](2015-12-22_-_The_road_to_Java_8 ) update site in the Fiji [Updater](Updater )
+-   Finally, if nothing works, rather than digging in your Fiji installation in details, just install Java 8 and [re-download](Downloads ) a fresh Fiji application.

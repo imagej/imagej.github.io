@@ -19,7 +19,8 @@ Imglib provides interfaces to ImageJ for importing, exporting and visualizing da
 
 As a consequence of its generic aims, the library allows and requires a different way of designing and implementing algorithms. We will first give an overview of ImgLib and its basic design elements and will then hands-on implement a selection of simple algorithms to mediate the way of programming.
 
-## Workshop Material
+Workshop Material
+-----------------
 
 1.  [An overview of the workshop](https://fiji.sc/~preibisch/ImgLibPresentation.pdf)
 2.  [The corresponding ImgLib publication in the Proceedings of the ImageJ Conference 2010](http://fly.mpi-cbg.de/~preibisch/pubs/imagejpaper2010.pdf)
@@ -27,7 +28,8 @@ As a consequence of its generic aims, the library allows and requires a differen
 4.  [Code examples and images without libraries (4MB, for Fiji users)](https://fiji.sc/~preibisch/workshop2.zip)
 5.  [Code examples without images and libraries (15KB, for Fiji users)](http://fly.mpi-cbg.de/~saalfeld/workshop3.zip)
 
-## References
+References
+----------
 
 1.  [ImageJ Conference 2010](http://imagejconf.tudor.lu/program/doku.php?id=:program:workshops:preibisch:start) programme entry
 2.  [Fiji-devel mailing list](mailto:fiji@fiji.sc) discusses imglib development and questions

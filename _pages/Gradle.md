@@ -11,36 +11,35 @@ description: test description
 
 The ImageJ core artifacts are built with Maven, but can also be consumed in a Gradle build script.
 
-## Sample ImageJ build.gradle
+Sample ImageJ build.gradle
+--------------------------
 
 Contributed<sup>[1](https://github.com/imagej/tutorials/issues/24)</sup> by {% include person content='reckbo' %}
 
-``` groovy
-buildscript {
-    repositories {
-        maven {
-            url "https://plugins.gradle.org/m2/"
+    buildscript {
+        repositories {
+            maven {
+                url "https://plugins.gradle.org/m2/"
+            }
+        }
+        dependencies {
+            classpath "io.spring.gradle:dependency-management-plugin:0.5.4.RELEASE"
         }
     }
+    apply plugin: "io.spring.dependency-management"
+
+    repositories {
+        jcenter()
+        maven {
+              url "http://maven.imagej.net/content/groups/public/"
+        }
+    }
+    dependencyManagement {
+        imports {
+            mavenBom 'net.imagej:pom-imagej:14.1.0'
+        }
+    }
+
     dependencies {
-        classpath "io.spring.gradle:dependency-management-plugin:0.5.4.RELEASE"
+        compile 'net.imagej:imagej'
     }
-}
-apply plugin: "io.spring.dependency-management"
-
-repositories {
-    jcenter()
-    maven {
-          url "http://maven.imagej.net/content/groups/public/"
-    }
-}
-dependencyManagement {
-    imports {
-        mavenBom 'net.imagej:pom-imagej:14.1.0'
-    }
-}
-
-dependencies {
-    compile 'net.imagej:imagej'
-}
-```

@@ -7,7 +7,8 @@ categories:
 description: test description
 ---
 
-## Stack-based dataset import
+Stack-based dataset import
+--------------------------
 
 See also: the [dataset definition documentation](MVR-DefineDataset ) in [Multiview-Reconstruction](Multiview-Reconstruction ).
 
@@ -31,18 +32,18 @@ In the next dialog, you will be asked to specify the **Image File directory**, i
 
 You will also be asked for an **Image File Pattern** with placeholders for the actual attribute indices. For all attributes for which you specified **YES (one file per ... )** in the previous dialog, you have to include a placeholder in curly brackets:
 
-  - `{t}` for time points
-  - `{c}` for channels
-  - `{i}` for illumination directions
-  - `{a}` for angles
-  - `{x}` for tiles
+-   `{t}` for time points
+-   `{c}` for channels
+-   `{i}` for illumination directions
+-   `{a}` for angles
+-   `{x}` for tiles
 
 If your attribute indices always have a defined length in the filename , e.g. angles `000, 090, 180, ...`, you can specify that length by repeating the placeholder e.g. `{aaa}` for 3-digit angle index.
 
 Next, you have to specify the actual indices for all the attributes. You can do this in two ways:
 
-  - just list them, separated by commas. e.g.: `18,19,30`
-  - specify a *range* in the form: `start-end[:step]`. e.g. `0-315:45` will produce `0, 45, 90, 135, 180, 225, 270, 315`
+-   just list them, separated by commas. e.g.: `18,19,30`
+-   specify a *range* in the form: `start-end[:step]`. e.g. `0-315:45` will produce `0, 45, 90, 135, 180, 225, 270, 315`
 
 For attributes for which you selected **YES (all ... in one file)**, please set the range to `0-(number of instances - 1)`, e.g. `0-2` for 3 channels.
 

@@ -21,13 +21,15 @@ description: test description
 {% endcapture %}
 {% include info-box name='BigDataServer ' software='Fiji ' author=author maintainer=maintainer source=source latest-version='1.0.5 ' status='experimental ' category='[Visualization](Category_Visualization ), [Transform](Category_Transform ) ' %}
 
-## Description
+Description
+-----------
 
 BigDataServer is a minimalistic HTTP server that serves XML/HDF5 datasets to the [BigDataViewer](BigDataViewer ) Fiji plugin for visualisation.
 
 The BigDataServer is running on a remote machine which hosts the XML/HDF5 datasets. A client running Fiji connects to the server, chooses the dataset that the server offers and then the data are efficiently delivered to the BigDataViewer. In this way, it is possible to seamlessly navigate very large datasets that reside in a remote location.
 
-## Installing and running the BigDataServer
+Installing and running the BigDataServer
+----------------------------------------
 
 BigDataServer is packaged as a single "batteries-included" jar file with all required dependencies. It is run from the command line using Java 7 or higher. Copy [bigdataserver.jar](http://fly.mpi-cbg.de/~pietzsch/bigdataserver.jar) onto your webserver (probably running Linux). Run the BigDataServer using this command:
 
@@ -58,9 +60,9 @@ Running the above command without parameters will print this help:
 A typical command to start the server will look like this:
 
 `$ java -Xmx4G -jar bigdataserver.jar -d datasets.txt -s fly.mpi-cbg.de -p 8081`  
-`2015-02-14 14:02:52.696:`<INFO::main>`: Logging initialized @421ms`  
+`2015-02-14 14:02:52.696:`[`INFO::main`](INFO__main)`: Logging initialized @421ms`  
 `...`  
-`2015-02-14 14:03:12.316:`<INFO:oejs.Server:main>`: Started @20046ms`
+`2015-02-14 14:03:12.316:`[`INFO:oejs.Server:main`](INFO_oejs.Server_main)`: Started @20046ms`
 
 where *dataset.txt* is a TAB delimited list of names and XML paths to the locally accessible datasets (comprising the XML and HDF5 files). Optionally, users can add \[Category\], \[Description\], \[Priority\] after the XML path. For example *dataset.txt* could look like this:
 
@@ -72,41 +74,42 @@ When the manager context is enabled, the keystore password and manager password 
 A common way to start the server with the manager context looks like below:
 
 `$ java -Xmx4G -jar bigdataserver.jar -d datasets.txt -s fly.mpi-cbg.de -p 8081 -m 8443`  
-`2015-02-14 14:02:52.696:`<INFO::main>`: Logging initialized @421ms`  
+`2015-02-14 14:02:52.696:`[`INFO::main`](INFO__main)`: Logging initialized @421ms`  
 `...`  
 `Please, enter your keystore password:`  
-`2015-02-14 14:02:53.626:`<INFO:bdv.server.BigDataServer.main>`(): Set handler: org.eclipse.jetty.server.handler.HandlerList`  
-`2015-02-14 15:34:53.304:`<INFO:bdv.server.BigDataServer.main>`(): Started ServerConnector{HTTP/1.1}{fly.mpi-cbg.de:8081}`  
-`2015-02-14 15:34:53.420:`<INFO:bdv.server.BigDataServer.main>`(): Started ServerConnector{SSL-http/1.1}{fly.mpi-cbg.de:8443}`
+`2015-02-14 14:02:53.626:`[`INFO:bdv.server.BigDataServer.main`](INFO_bdv.server.BigDataServer.main)`(): Set handler: org.eclipse.jetty.server.handler.HandlerList`  
+`2015-02-14 15:34:53.304:`[`INFO:bdv.server.BigDataServer.main`](INFO_bdv.server.BigDataServer.main)`(): Started ServerConnector{HTTP/1.1}{fly.mpi-cbg.de:8081}`  
+`2015-02-14 15:34:53.420:`[`INFO:bdv.server.BigDataServer.main`](INFO_bdv.server.BigDataServer.main)`(): Started ServerConnector{SSL-http/1.1}{fly.mpi-cbg.de:8443}`
 
 The keystore password should be provided when the server starts. Then, the /manager context enables users to handle the datasets with the web interface.
 
 The web interface of /manager context looks like this: <img src="/images/pages/BigDataServer Manager.png" width="600"/>
 
-The server will keep running until you cancel it with {% include key content='press|Ctrl|C' %} or close the shell. To start the server in the background run it in a screen session:
+The server will keep running until you cancel it with {% include key content='press\|Ctrl\|C' %} or close the shell. To start the server in the background run it in a screen session:
 
 `$ screen`  
 `$ java -Xmx4G -jar bigdataserver.jar -d datasets.txt`  
-`2015-02-14 14:02:52.696:`<INFO::main>`: Logging initialized @421ms`  
+`2015-02-14 14:02:52.696:`[`INFO::main`](INFO__main)`: Logging initialized @421ms`  
 `...`  
-`2015-02-14 14:03:12.316:`<INFO:oejs.Server:main>`: Started @20046ms`
+`2015-02-14 14:03:12.316:`[`INFO:oejs.Server:main`](INFO_oejs.Server_main)`: Started @20046ms`
 
-and detach the screen with {% include key content='press|Ctrl|A' %} {% include key content='press|D' %}.
+and detach the screen with {% include key content='press\|Ctrl\|A' %} {% include key content='press\|D' %}.
 
-To add new datasets edit the *dataset.txt* and add new XML paths. After that you have to currently restart the server. (Re-attach the screen session with `screen -r`, cancel the server with {% include key content='press|Ctrl|C' %} and repeat the above).
+To add new datasets edit the *dataset.txt* and add new XML paths. After that you have to currently restart the server. (Re-attach the screen session with `screen -r`, cancel the server with {% include key content='press\|Ctrl\|C' %} and repeat the above).
 
 Note that the server port needs to be open.
 
-## Connecting to a running BigDataServer from Fiji
+Connecting to a running BigDataServer from Fiji
+-----------------------------------------------
 
 In order to connect to a BigDataServer from Fiji and view the data go to {% include bc content='Plugins | BigDataViewer | Browse BigDataServer'%}. You will be presented with the following dialog box:
 
 <img src="/images/pages/Bdv-browse-bigdataserver-1.png" width="500"/>
 
-Enter the URL (including port) of a BigDataServer. For example, the Drosophila timelapse dataset described in [BigDataViewer\_Example\_Datasets\#Remote\_HDF5](BigDataViewer_Example_Datasets#Remote_HDF5 ) is available through this address: http://fly.mpi-cbg.de:8081. Click OK. The following window will pop up showing a list of datasets offered by the server:
+Enter the URL (including port) of a BigDataServer. For example, the Drosophila timelapse dataset described in [BigDataViewer\_Example\_Datasets\#Remote\_HDF5](BigDataViewer_Example_Datasets#Remote_HDF5 ) is available through this address: [http://fly.mpi-cbg.de:8081](http://fly.mpi-cbg.de:8081). Click OK. The following window will pop up showing a list of datasets offered by the server:
 
 <img src="/images/pages/Bdv-browse-bigdataserver-2.png" width="500"/>
 
 In the example, the server offers only a single dataset called *Drosophila*. Double-clicking on a dataset in the list will launch it in the BigDataViewer.
 
-![bdv-bdv-start.png](/images/pages/Bdv-bdv-start.png "bdv-bdv-start.png")
+![](/images/pages/Bdv-bdv-start.png "bdv-bdv-start.png")

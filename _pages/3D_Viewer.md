@@ -9,9 +9,10 @@ description: test description
 
 {% include component-stats content='sc.fiji:3D\_Viewer' %}This plugin offers hardware-accelerated visualization possibilities for image stacks, using the [Java 3D](Java_3D ) library. Stacks can be displayed as texture-based volume renderings, surfaces or orthoslices.
 
-![3D\_Viewer\_overview.png](/images/pages/3D Viewer overview.png "3D_Viewer_overview.png")
+![](/images/pages/3D Viewer overview.png "3D_Viewer_overview.png")
 
-## Screencasts
+Screencasts
+-----------
 
 Here you are a demo screencast separated into two different videos (\~15 min in total) showing many of the features of the 3D viewer:
 
@@ -19,31 +20,31 @@ Here you are a demo screencast separated into two different videos (\~15 min in 
 
 Beyond this, a lot more screencasts can be found [here](3D_Viewer__Screencasts ), covering the following topics:
 
-  - Display stacks
-  - Rendering modes and attributes
-  - Adjusting the transfer functions
-  - Editing volumes
-  - Point lists
-  - Landmark-based registration
-  - Transformations
-  - 3D Content in PDFs
+-   Display stacks
+-   Rendering modes and attributes
+-   Adjusting the transfer functions
+-   Editing volumes
+-   Point lists
+-   Landmark-based registration
+-   Transformations
+-   3D Content in PDFs
 
-## For users
+For users
+---------
 
 Comprehensive usage guidelines in form of FAQs and tutorials can be found [here](3D_Viewer__User_FAQs ).
 
-## For developers
+For developers
+--------------
 
 A lot of functions of the 3D Viewer are macro-recordable. However, if that is not enough (or if the function is not recorded properly), it is better to [write a plugin](Introduction_into_Developing_Plugins ). In the latter case no macros should be called from Java, as that would limit the code to work with the currently active 3D Viewer (even if the user clicked somewhere else).
 
 This code snippet should get you started:
 
-``` java
-Image3DUniverse univ = new Image3DUniverse();
-univ.show();
-univ.addMesh(yourImagePlus, null, "somename", 50, new boolean[] {true, true, true}, 2);
-...
-```
+    Image3DUniverse univ = new Image3DUniverse();
+    univ.show();
+    univ.addMesh(yourImagePlus, null, "somename", 50, new boolean[] {true, true, true}, 2);
+    ...
 
 Full documentation for developers with tutorials and explained code snippets can be found [here](3D_Viewer__Developer_Documentation ).
 
@@ -51,7 +52,8 @@ Full documentation for developers with tutorials and explained code snippets can
 
 The Fiji Javadocs provide detailed information about the {% include javadoc package='ij3d ' class='package-summary ' label='3D Viewer API ' %}.
 
-## FAQ
+FAQ
+---
 
 ### The 3D Viewer opens a window saying *An unexpected exception occurred.*
 
@@ -75,8 +77,9 @@ Unfortunately, there are quite a large number of possible reasons. Please help u
 
 As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [debugging the issues](Debugging_intro#Debugging_Java3D_issues ) and [contacting us](Contact ) with the information. You can also [report a bug](Report_a_Bug ), which will provide a lot of addidtional, potentially useful information.
 
-## Publication
+Publication
+-----------
 
-  - {% include publication content='3D Viewer' %}
+-   {% include publication content='3D Viewer' %}
 
   

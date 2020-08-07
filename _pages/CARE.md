@@ -53,7 +53,8 @@ description: test description
 {% endcapture %}
 {% include component project='CSBDresden ' name='CARE Fiji Plugin ' url='https://imagej.net/CARE ' source=source license='[BSD-2](BSD-2 ) ' release=release date='Tue Dec 11 00:00:00 CDT 2018 ' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
 
-## Install
+Install
+-------
 
 ### ImageJ update site
 
@@ -66,24 +67,26 @@ The CSBDeep plugin can be installed from the ImageJ update site [1](http://sites
 
 `mvn -Dimagej.app.directory=/path/to/Fiji.app/ -Ddelete.other.versions=true`
 
-## Run demos
+Run demos
+---------
 
 1.  Download the [exemplary image data](http://csbdeep.bioimagecomputing.com/exemplary-image-data.zip)
 2.  Open Fiji.
 3.  Open an example image, e.g. \`tribolium.tif\`.
-4.  Run the plugin via \`Plugins \> CSBDeep \> Demo\`.
+4.  Run the plugin via \`Plugins &gt; CSBDeep &gt; Demo\`.
 5.  Run the plugin by pressing \`Ok\`.
 
 If all goes well, an image will be displayed representing the result of the model execution.
 
 See the [CSBDeep Wiki Pages](https://github.com/CSBDeep/CSBDeep_website/wiki/CSBDeep-in-Fiji) for more details.
 
-## Run your own model
+Run your own model
+------------------
 
 1.  Use the [python code](https://github.com/CSBDeep/CSBDeep) to train your network with your data. Export it as ZIP.
 2.  Open Fiji.
 3.  Open an image.
-4.  Run the plugin for any network via \`Plugins \> CSBDeep \> Run your network\`.
+4.  Run the plugin for any network via \`Plugins &gt; CSBDeep &gt; Run your network\`.
 5.  Load your exported network by pressing \`Browse\` on the \`Import model (.zip)\` line.
 6.  Run the plugin by pressing \`Ok\`.
 
@@ -91,10 +94,12 @@ If all goes well, an image will be displayed representing the result of the mode
 
 See the [CSBDeep Wiki Page](https://github.com/CSBDeep/CSBDeep_website/wiki/Your-Model-in-Fiji) for more details.
 
-## GPU support
+GPU support
+-----------
 
 Please read [this page](https://imagej.net/TensorFlow-GPU) for GPU support.
 
-## License
+License
+-------
 
 This project is licensed under the BSD 2-clause "Simplified" License -- see the [LICENSE.txt](https://github.com/CSBDeep/CSBDeep_fiji/blob/master/LICENSE.txt) file for details.

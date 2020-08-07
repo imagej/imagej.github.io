@@ -9,15 +9,15 @@ description: test description
 
 There are plenty of good reasons why one might need to synchronize all the branches of multiple repositories:
 
-  - Development happens on multiple continents
-  - Some servers might have some unscheduled downtime from time to time
-  - Windows users might want to have a fast access to a Git-SVN mirror
+-   Development happens on multiple continents
+-   Some servers might have some unscheduled downtime from time to time
+-   Windows users might want to have a fast access to a Git-SVN mirror
 
 This last point is quite a sore point: [Git for Windows](http://msysgit.github.io/)' support for importing Subversion repositories suffers from many performance problems, ranging from the general I/O weakness of the platform to the need to use MSys Perl to be able to use the `SVN.pl` module.
 
-Alas, a solution is nigh\!
+Alas, a solution is nigh!
 
-We solved exactly those problems in the ImageJ project. There is a [Jenkins job](http://jenkins.imagej.net/view/Synchronizers/job/ImageJ-synchronizer/) to synchronize the ImageJ repositories with each other, using {% include github org='scijava ' repo='scijava-scripts ' path='git-synchronizer.sh ' label='this script ' %}. Sadly the script is a little more complex than I hoped, but it does the job reliably and to be honest, it is a little more tricky than I first thought: when there are updates from only one of the repositories, they should be forced. However, there might be contradicting updates in which case nothing may be forced. Of course, such a script—especially when it is a little more complex than the author hoped—also has to take precautions not to be overzealous in corner-cases the author might have not thought about. That is the reason why it makes extra-sure to look for updates it might have missed in earlier rounds and does **not** force those updates. [Jenkins](Jenkins ) executes this job every 5 minutes which is why it is very important that the much faster <git://> protocol is used for fetching the branches instead of the slower ssh-based protocol used for pushing.
+We solved exactly those problems in the ImageJ project. There is a [Jenkins job](http://jenkins.imagej.net/view/Synchronizers/job/ImageJ-synchronizer/) to synchronize the ImageJ repositories with each other, using {% include github org='scijava ' repo='scijava-scripts ' path='git-synchronizer.sh ' label='this script ' %}. Sadly the script is a little more complex than I hoped, but it does the job reliably and to be honest, it is a little more tricky than I first thought: when there are updates from only one of the repositories, they should be forced. However, there might be contradicting updates in which case nothing may be forced. Of course, such a script—especially when it is a little more complex than the author hoped—also has to take precautions not to be overzealous in corner-cases the author might have not thought about. That is the reason why it makes extra-sure to look for updates it might have missed in earlier rounds and does **not** force those updates. [Jenkins](Jenkins ) executes this job every 5 minutes which is why it is very important that the much faster [`git://`](git_//) protocol is used for fetching the branches instead of the slower ssh-based protocol used for pushing.
 
 As for the git-svn mirror, we have a Jenkins job that too. It is driven by a—thankfully quite simple—[script](https://github.com/imagej/imagej/blob/9227a1048426dc2c1b312be4e8a80c1b726a04ce%5E/bin/jenkins-git-job.sh). This script makes sure that the remote information is set up such that all branches in `refs/remotes/` (i.e. the ones maintained by git-svn) are pushed into the `refs/heads/svn/` namespace. Jenkins polls the Subversion repository and only runs the job when new commits are available.
 

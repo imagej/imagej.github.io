@@ -8,12 +8,13 @@ description: test description
 ---
 
 {% include menu-platforms%}
-{% include minibox logo='Pi.svg ' blurb='Learn programming through fun, practical projects\! ' %}The {% include wikipedia title='Raspberry Pi' text='Raspberry Pi'%} is an inexpensive single-board computer system which runs the {% include wikipedia title='Raspbian' text='Raspbian'%} operating system, a flavor of Debian [Linux](Linux ). This page provides advice and guidance for running [ImageJ](ImageJ ) and [Fiji](Fiji ) on Raspberry Pi systems.
+{% include minibox logo='Pi.svg ' blurb='Learn programming through fun, practical projects! ' %}The {% include wikipedia title='Raspberry Pi' text='Raspberry Pi'%} is an inexpensive single-board computer system which runs the {% include wikipedia title='Raspbian' text='Raspbian'%} operating system, a flavor of Debian [Linux](Linux ). This page provides advice and guidance for running [ImageJ](ImageJ ) and [Fiji](Fiji ) on Raspberry Pi systems.
 
 {% include toc%}
 
 
-# Installation
+Installation
+============
 
 {% include imagej1 content='You might notice there is as an `imagej` package available from your package manager. Please be aware that this provides [ImageJ 1.x](ImageJ_1.x ) only, packaged by a third party, without cooperation from the core ImageJ development team. You will not have access to any [ImageJ2](ImageJ2 )-specific features such as [parameterized scripts](Script_parameters ), and you will likely have permissions errors because it is a system-wide ImageJ installation.' %}The following steps describe how to install ImageJ on a Raspberry Pi:
 
@@ -34,47 +35,49 @@ Note that the shell script supports only a subset of the functionality of the na
 The following steps describe how to create a desktop icon to launch Fiji on a Raspberry Pi:
 
 1.  Download the Fiji icon image: [Fiji icon link](https://imagej.net/_images/thumb/a/ae/Fiji-icon.png/48px-Fiji-icon.png)
-2.  Press {% include key content='ctrl|alt|t' %} to open the terminal window
+2.  Press {% include key content='ctrl\|alt\|t' %} to open the terminal window
 3.  Type `nano Fiji.desktop` and press return. This will load Nano which will allow you to create a desktop icon.
 4.  Type the following code, replacing `/path/to` with the paths to the `ImageJ.sh` file and the Fiji icon:
 
-<!-- end list -->
+<!-- -->
 
-``` linux-config
-[Desktop Entry]
-Name=Fiji
-Version=1.0
-Comment=Launches Fiji
-Exec=/path/to/ImageJ.sh
-Icon=/path/to/48px-Fiji-icon.png
-Terminal=false
-Type=Application
-Categories=Education
-```
+    [Desktop Entry]
+    Name=Fiji
+    Version=1.0
+    Comment=Launches Fiji
+    Exec=/path/to/ImageJ.sh
+    Icon=/path/to/48px-Fiji-icon.png
+    Terminal=false
+    Type=Application
+    Categories=Education
 
-1.  Press {% include key content='ctrl|x' %} and then press {% include key content='Y' %} to exit and save the new desktop icon.
+1.  Press {% include key content='ctrl\|x' %} and then press {% include key content='Y' %} to exit and save the new desktop icon.
 2.  Enter your desired file name, such as `Fiji.desktop` and press return. Once complete, an icon should be visible on the desktop.
-3.  Press {% include key content='ctrl|x' %} to return to the terminal window
+3.  Press {% include key content='ctrl\|x' %} to return to the terminal window
 4.  In the terminal window, type the following to navigate to the Desktop `cd ~/Desktop`
 5.  Then type the following to make the new icon executable `chmod +x Fiji.desktop`
 
-# 3D Visualization
+3D Visualization
+================
 
-It is supposedly possible to run [Java 3D](Java_3D ) on the Pi; see [this StackOverflow thread](http://stackoverflow.com/questions/28529344/how-to-run-java3d-on-rpi-2). However, there have been no official reported successes on ImageJ community channels yet. If you get it working, please edit this section to describe the steps you used\!
+It is supposedly possible to run [Java 3D](Java_3D ) on the Pi; see [this StackOverflow thread](http://stackoverflow.com/questions/28529344/how-to-run-java3d-on-rpi-2). However, there have been no official reported successes on ImageJ community channels yet. If you get it working, please edit this section to describe the steps you used!
 
-Even better, if you get [ClearVolume](ClearVolume ) and/or [SciView](SciView ) working on the Pi, please update this page, and announce it on the [Image.sc Forum](Image.sc_Forum )\!
+Even better, if you get [ClearVolume](ClearVolume ) and/or [SciView](SciView ) working on the Pi, please update this page, and announce it on the [Image.sc Forum](Image.sc_Forum )!
 
-# Troubleshooting
+Troubleshooting
+===============
 
 See the [Troubleshooting](Troubleshooting ) page.
 
-# Frequently Asked Questions
+Frequently Asked Questions
+==========================
 
 See the [Frequently Asked Questions](Frequently_Asked_Questions ) page.
 
-# See also
+See also
+========
 
-  - Topics tagged [raspberry-pi](https://forum.image.sc/tags/raspberry-pi) on the [Image.sc Forum](Image.sc_Forum ).
-  - The [Linux](Linux ) page, for general information about ImageJ on Linux systems.
+-   Topics tagged [raspberry-pi](https://forum.image.sc/tags/raspberry-pi) on the [Image.sc Forum](Image.sc_Forum ).
+-   The [Linux](Linux ) page, for general information about ImageJ on Linux systems.
 
 

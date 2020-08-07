@@ -7,7 +7,8 @@ categories: Plugins
 description: test description
 ---
 
-## Introduction
+Introduction
+------------
 
 
 {% capture source%}
@@ -18,7 +19,7 @@ description: test description
 Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 
 | Version | Release Date                                | Notes                                                                                                                                                                    |
-| ------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|---------|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | v1.0.0  | 19 Nov 2015 |                                                                                                                                                                          |
 | v1.0.1  | 25 Nov 2015 |                                                                                                                                                                          |
 | v1.0.2  | 10 Apr 2017 |                                                                                                                                                                          |
@@ -30,20 +31,19 @@ Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 | v1.1.5  | 30 Nov 2019 |                                                                                                                                                                          |
 | v1.1.6  | 20 May 2020 |                                                                                                                                                                          |
 
-class="nowrap" | Release version dates
+class="nowrap" \| Release version dates
 
 {% include toc%}
 
 
-## Usage
+Usage
+-----
 
 <span style="float:right; margin-left:10px;"> **Youtube tutorial:**  
 {% include youtube url='https://www.youtube.com/embed/dLkoB25MTIY'%} </span> This plugin can be called from a macro using:
 
-``` javascript
- 
-run("Read and Write Excel");
-```
+     
+    run("Read and Write Excel");
 
 and it works very well with batching. A major change for v1.1.0, is that, if called slightly differently (see below), the plugin is now much better at handling large data sets and/or excel files that become large over time.
 
@@ -55,47 +55,35 @@ Arguments will be parsed from the second argument string as follows.
 
 "dataset\_label=" The label to write in the cell above the data in the excel file. Strings and numbers can also be fed to the custom title modifier from a macro/loop:
 
-``` java
- 
-run("Read and Write Excel", "dataset_label=[My new results data label]");
-//example with passed variable 'i'
-run("Read and Write Excel", "dataset_label=Table"+i);
-```
+     
+    run("Read and Write Excel", "dataset_label=[My new results data label]");
+    //example with passed variable 'i'
+    run("Read and Write Excel", "dataset_label=Table"+i);
 
 "no\_count\_column" Prevents the plugin from adding a "Count" column automatically:
 
-``` java
- 
-run("Read and Write Excel", "no_count_column");
-```
+     
+    run("Read and Write Excel", "no_count_column");
 
 "stack\_results" Causes the plugin to export results data underneath pre-existing data (instead of adjacent to it). NOTE: The dataset label for the now stacked data will be that determined for the most recent import:
 
-``` java
- 
-run("Read and Write Excel", "stack_results");
-```
+     
+    run("Read and Write Excel", "stack_results");
 
 "file=" The path to the excel file to create and/or update (uses the default desktop file otherwise):
 
-``` java
- 
-run("Read and Write Excel", "file=[C:/Users/antinos/Desktop/My_file.xlsx]");
-```
+     
+    run("Read and Write Excel", "file=[C:/Users/antinos/Desktop/My_file.xlsx]");
 
 "sheet=" Which sheet in the excel file to put the results in. For example, "sheet=banana" will create and/or append a sheet named 'banana':
 
-``` java
- 
-run("Read and Write Excel", "sheet=banana");
-```
+     
+    run("Read and Write Excel", "sheet=banana");
 
 Join arguments as follows:
 
-``` java
- 
-run("Read and Write Excel", "no_count_column file=[C:/Users/antinos/Documents/My_cool_file.xlsx] sheet=[Custom name here] dataset_label=[Custom data title here]");
-```
+     
+    run("Read and Write Excel", "no_count_column file=[C:/Users/antinos/Documents/My_cool_file.xlsx] sheet=[Custom name here] dataset_label=[Custom data title here]");
 
 ### Large data import and export
 
@@ -103,55 +91,48 @@ run("Read and Write Excel", "no_count_column file=[C:/Users/antinos/Documents/My
 
 "file\_mode=read\_and\_open" Will just load/open an excel file into computer memory (the one you specify with file=)...make sure you do write\_and\_close when you're done or you'll have problems:
 
-``` java
- 
-run("Read and Write Excel", "file=[C:/Users/antinos/Documents/My_cool_file.xlsx] file_mode=read_and_open");
-```
+     
+    run("Read and Write Excel", "file=[C:/Users/antinos/Documents/My_cool_file.xlsx] file_mode=read_and_open");
 
 "file\_mode=queue\_write" Will queue something to be written to the excel file you've opened previously with read\_and\_open:
 
-``` java
- 
-run("Read and Write Excel", "file_mode=queue_write");
-```
+     
+    run("Read and Write Excel", "file_mode=queue_write");
 
 "file\_mode=write\_and\_close" Will write everything you've queued with queue\_write, then close the excel file:
 
-``` java
- 
-run("Read and Write Excel", "file_mode=write_and_close");
-```
+     
+    run("Read and Write Excel", "file_mode=write_and_close");
 
 Example large data macro workflow:
 
-``` java
-//macro to read and write large datasets
+    //macro to read and write large datasets
 
-//open or create the .xlsx file we want to add data to
-run("Read and Write Excel", "file=[C:/Users/antinos/Documents/My_cool_file.xlsx] file_mode=read_and_open");
+    //open or create the .xlsx file we want to add data to
+    run("Read and Write Excel", "file=[C:/Users/antinos/Documents/My_cool_file.xlsx] file_mode=read_and_open");
 
-//add multiple and/or large datasets
-///do macro analysis and generate a big results table
-run("Read and Write Excel", "file_mode=queue_write");
-///do macro analysis and generate a big results table
-run("Read and Write Excel", "file_mode=queue_write");
-///do macro analysis and generate a big results table
-run("Read and Write Excel", "file_mode=queue_write");
-///do macro analysis and generate a big results table
-run("Read and Write Excel", "file_mode=queue_write");
-//for example in a loop
-for (i = 0; i < 100; i++) {
-    //macro code here
+    //add multiple and/or large datasets
+    ///do macro analysis and generate a big results table
     run("Read and Write Excel", "file_mode=queue_write");
-}
+    ///do macro analysis and generate a big results table
+    run("Read and Write Excel", "file_mode=queue_write");
+    ///do macro analysis and generate a big results table
+    run("Read and Write Excel", "file_mode=queue_write");
+    ///do macro analysis and generate a big results table
+    run("Read and Write Excel", "file_mode=queue_write");
+    //for example in a loop
+    for (i = 0; i < 100; i++) {
+        //macro code here
+        run("Read and Write Excel", "file_mode=queue_write");
+    }
 
-//finally write the queued results data to the file
-run("Read and Write Excel", "file_mode=write_and_close");
-```
+    //finally write the queued results data to the file
+    run("Read and Write Excel", "file_mode=write_and_close");
 
 Also see https://github.com/bkromhout/Read_and_Write_Excel_Modified for examples. **(However please note: whilst Brenden did an amazing job updating the plugin for the version 1.1 release, the most up-to-date version is currently not represented on his github repo)**
 
-## Disclaimers and Licencing stuff
+Disclaimers and Licencing stuff
+-------------------------------
 
 I am aware that another Excel\_Writer plugin exists but it did not work very well for me (hence me creating this). I did not consult their source code but did find out about Apache POI(\*) from them.
 
@@ -159,16 +140,15 @@ Since Brenden modified the plugin, the code is now a lot neater. Feel free to co
 
 (\*)This plugin uses the Apache POI api, which is distributed under the terms of the Apache Licence (available from https://poi.apache.org/legal.html). I believe this software to be free and open source.
 
-## Plugin technical details
+Plugin technical details
+------------------------
 
 <div class="mw-collapsible mw-collapsed">
-
 <div>
 
 ### Change log
 
 </div>
-
 <div class="mw-collapsible-content">
 
 Version 1.0.1 changes:
@@ -215,13 +195,12 @@ Version 1.1.6 changes:
 1.  Bug fix. Fixed a rare 'stack\_results' issue whereby the data was exported incorrectly if the results table and the excel file both contained a single-row of data.
 
 </div>
-
 </div>
 
 ### Dependencies
 
 | Dependency                    | Maven Repo                                                                                                       |
-| ----------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+|-------------------------------|------------------------------------------------------------------------------------------------------------------|
 | jars/commons-collections4.jar | [1](https://mvnrepository.com/artifact/org.apache.commons/commons-collections4) |
 | jars/xmlbeans.jar             | [2](https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans)            |
 | jars/poi-ooxml.jar            | [3](https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml)                |
@@ -233,20 +212,21 @@ Version 1.1.6 changes:
 
 http://sites.imagej.net/ResultsToExcel
 
-## Installation
+Installation
+------------
 
-  - With ImageJ open, navigate to 'Help'
-  - In the presented drop down menu, then select 'Update...'
-  - Allow ImageJ to check for updates
-  - If required, download updates and restart ImageJ as prompted
-  - Repeat the first two steps = Help\>Update...
-  - This time ImageJ should let you know that there are no updates available
-  - Click on 'OK' but do not close the 'ImageJ Updater' window that is also open
-  - In the bottom left of the 'ImageJ Updater' window, find and click on 'Manage update sites'
-  - In the newly presented 'Manage update sites' window, find and check the 'ResultsToExcel' check box
-  - Then close the 'Manage update sites' window
-  - The 'ImageJ Updater' window will now present you with the plugin files for installation
-  - Press 'Apply changes'
-  - After the update has been applied successfully, restart ImageJ
+-   With ImageJ open, navigate to 'Help'
+-   In the presented drop down menu, then select 'Update...'
+-   Allow ImageJ to check for updates
+-   If required, download updates and restart ImageJ as prompted
+-   Repeat the first two steps = Help&gt;Update...
+-   This time ImageJ should let you know that there are no updates available
+-   Click on 'OK' but do not close the 'ImageJ Updater' window that is also open
+-   In the bottom left of the 'ImageJ Updater' window, find and click on 'Manage update sites'
+-   In the newly presented 'Manage update sites' window, find and check the 'ResultsToExcel' check box
+-   Then close the 'Manage update sites' window
+-   The 'ImageJ Updater' window will now present you with the plugin files for installation
+-   Press 'Apply changes'
+-   After the update has been applied successfully, restart ImageJ
 
 

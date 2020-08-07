@@ -13,17 +13,19 @@ My name is Jean-Yves Tinevez. I used to work at the [Max-Planck Institute of Cel
 
 Here are the plugins released I am responsible for. If you detect any problem with them, I am the one to slap (at [this](mailto:jeanyves.tinevez_at_gmail.com) email address, for instance).
 
-## Maintained plugins
+Maintained plugins
+------------------
 
-  - [FlowJ](FlowJ )
-  - [LSM Toolbox](LSM_Toolbox )
-  - The [Stack Manipulation](Stack_Manipulation ) package
-  - [View5D](View5D )
+-   [FlowJ](FlowJ )
+-   [LSM Toolbox](LSM_Toolbox )
+-   The [Stack Manipulation](Stack_Manipulation ) package
+-   [View5D](View5D )
 
-## Authored plugins documented here
+Authored plugins documented here
+--------------------------------
 
-  - [Arrow\_](Arrow_ )
-  - [Directionality\_](Directionality_ )
-  - [Image Expression Parser](Image_Expression_Parser )
-  - [PIV analysis](PIV_analysis )
-  - [TrackMate\_](TrackMate_ )
+-   [Arrow\_](Arrow )
+-   [Directionality\_](Directionality )
+-   [Image Expression Parser](Image_Expression_Parser )
+-   [PIV analysis](PIV_analysis )
+-   [TrackMate\_](TrackMate )

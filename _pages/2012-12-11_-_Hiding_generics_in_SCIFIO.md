@@ -15,8 +15,8 @@ The use of generic types makes a lot of sense in SCIFIO: you have an interface-d
 
 There are essentially two use cases in SCIFIO.
 
-  - General algorithms. In this case, the developer is writing general image IO algorithms that will operate on a variety of image formats. In this case, there are no known concrete instances.
-  - Specific algorithms. The developer is coding against a specific, known image format(s). The concrete type can be instantiated.
+-   General algorithms. In this case, the developer is writing general image IO algorithms that will operate on a variety of image formats. In this case, there are no known concrete instances.
+-   Specific algorithms. The developer is coding against a specific, known image format(s). The concrete type can be instantiated.
 
 In the second case, there are no generics to worry about. In the first case, if generics were present in all levels of the SCIFIO interfaces, you would either have to use raw types or wildcards in any declarations, and may need to cast in many method calls. The generics are working against you, because you literally can't know what types to code against.
 
@@ -34,6 +34,6 @@ To avoid creating differently named method signatures, we followed the base/type
 
 This does mean that when you are programming with concrete implementations, you may see some extra (less specific) method signatures in the API that will throw `IllegalArgumentExceptions` if given incorrect parameters. But we think it's worth it to avoid code like this:
 
-![**The Evolution of SCIFIO:** Generics can be terrifying.](/images/pages/Terrifying-generics.jpg "The Evolution of SCIFIO: Generics can be terrifying.")
+<figure><img src="/images/pages/Terrifying-generics.jpg" title="The Evolution of SCIFIO: Generics can be terrifying." width="700" alt="The Evolution of SCIFIO: Generics can be terrifying." /><figcaption aria-hidden="true"><strong>The Evolution of SCIFIO:</strong> Generics can be terrifying.</figcaption></figure>
 
  

@@ -7,18 +7,20 @@ categories: News,News
 description: test description
 ---
 
-Fiji now has its own news channel. We will use this feed to post news related to Fiji development and relevant events. Stay tuned\!
+Fiji now has its own news channel. We will use this feed to post news related to Fiji development and relevant events. Stay tuned!
 
 If you need to post a news event, simly use the Fiji wiki to do so:
 
-  - Create an article in the wiki
-  - For archiving reason, please name it as
+-   Create an article in the wiki
+-   For archiving reason, please name it as
         yyyy-mm-dd - news title
+
     so that items are sorted chronologically in the category.
-  - Add the category tag:
+-   Add the category tag:
         <nowiki>[[Category:News]]</nowiki>
+
     at the end of the page
 
-That's all\! Enjoy\!
+That's all! Enjoy!
 
 

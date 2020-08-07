@@ -7,68 +7,69 @@ categories: Plugins,Scripting
 description: test description
 ---
 
-## Purpose
+Purpose
+-------
 
 This script serves two purposes:
 
-  - to demonstrate that an AWT Listener can be written in Jython, and
-  - to find the width of an image you know is uncompressed, but do not know the dimensions.
+-   to demonstrate that an AWT Listener can be written in Jython, and
+-   to find the width of an image you know is uncompressed, but do not know the dimensions.
 
 To use it, open the raw image with {% include bc content='File | Import | Raw...'%} choosing a width and height that should roughly be the correct one. Then start this script, which will open a dialog box with a slider, with which you can interactively test new widths -- the pixels in the image window will be updated accordingly.
 
 The script is maintained by {% include person content='Schindelin' %}.
 
-## Code
+Code
+----
 
-``` python
-# This script serves two purposes:
-#
-# - to demonstrate that an AWT Listener can be written in Jython, and
-#
-# - to find the width of an image you know is uncompressed, but do not know
-#   the dimensions.
-#
-# To use it, open the raw image with {% include bc content='File | Import | Raw...'%} choosing a width and
-# height that should roughly be the correct one.  Then start this script,
-# which will open a dialog box with a slider, with which you can interactively
-# test new widths -- the pixels in the image window will be updated accordingly.
+    # This script serves two purposes:
+    #
+    # - to demonstrate that an AWT Listener can be written in Jython, and
+    #
+    # - to find the width of an image you know is uncompressed, but do not know
+    #   the dimensions.
+    #
+    # To use it, open the raw image with {% include bc content='File | Import | Raw...'%} choosing a width and
+    # height that should roughly be the correct one.  Then start this script,
+    # which will open a dialog box with a slider, with which you can interactively
+    # test new widths -- the pixels in the image window will be updated accordingly.
 
-from ij.gui import GenericDialog
+    from ij.gui import GenericDialog
 
-from java.awt.event import AdjustmentListener
+    from java.awt.event import AdjustmentListener
 
-from java.lang import Math, System
+    from java.lang import Math, System
 
-image = WindowManager.getCurrentImage()
-ip = image.getProcessor()
-pixelsCopy = ip.getPixelsCopy()
-pixels = ip.getPixels()
-width = ip.getWidth()
-height = ip.getHeight()
+    image = WindowManager.getCurrentImage()
+    ip = image.getProcessor()
+    pixelsCopy = ip.getPixelsCopy()
+    pixels = ip.getPixels()
+    width = ip.getWidth()
+    height = ip.getHeight()
 
-minWidth = int(Math.sqrt(len(pixels) / 16))
-maxWidth = minWidth * 16
+    minWidth = int(Math.sqrt(len(pixels) / 16))
+    maxWidth = minWidth * 16
 
-class Listener(AdjustmentListener):
-    def adjustmentValueChanged(self, event):
-        value = event.getSource().getValue()
-        rowstride = min(width, value)
-        for j in range(0, min(height, int(width * height / value))):
-            System.arraycopy(pixelsCopy, j * value,
-                pixels, j * width, rowstride)
+    class Listener(AdjustmentListener):
+        def adjustmentValueChanged(self, event):
+            value = event.getSource().getValue()
+            rowstride = min(width, value)
+            for j in range(0, min(height, int(width * height / value))):
+                System.arraycopy(pixelsCopy, j * value,
+                    pixels, j * width, rowstride)
+            image.updateAndDraw()
+
+    gd = GenericDialog("Width")
+    gd.addSlider("width", minWidth, maxWidth, ip.getHeight())
+    gd.getSliders().get(0).addAdjustmentListener(Listener())
+    gd.showDialog()
+    if gd.wasCanceled():
+        pixels[0:width * height] = pixelsCopy
         image.updateAndDraw()
 
-gd = GenericDialog("Width")
-gd.addSlider("width", minWidth, maxWidth, ip.getHeight())
-gd.getSliders().get(0).addAdjustmentListener(Listener())
-gd.showDialog()
-if gd.wasCanceled():
-    pixels[0:width * height] = pixelsCopy
-    image.updateAndDraw()
-```
+See also
+--------
 
-## See also
-
-  - [Jython Scripting](Jython_Scripting )
+-   [Jython Scripting](Jython_Scripting )
 
  

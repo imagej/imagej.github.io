@@ -7,43 +7,46 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu content='tools' %}{% include minibox logo='Travis.png ' blurb='"""Travis CI:""" Build your code in the cloud\! ' %}[Travis CI](https://travis-ci.org/) is a tool for [continuous integration](Project_management#Continuous_integration ). It has excellent integration with [GitHub](GitHub ), and is very useful for automating builds, deployment and other tasks. {% include toc%}
+{% include develop-menu content='tools' %}{% include minibox logo='Travis.png ' blurb='"""Travis CI:""" Build your code in the cloud! ' %}[Travis CI](https://travis-ci.org/) is a tool for [continuous integration](Project_management#Continuous_integration ). It has excellent integration with [GitHub](GitHub ), and is very useful for automating builds, deployment and other tasks. {% include toc%}
 
 
-# Services
+Services
+========
 
 [ImageJ](ImageJ ) and [SciJava](SciJava ) projects use Travis in a variety of ways:
 
-  - Perform builds of SciJava projects. Travis deploys `SNAPSHOT` builds to the [SciJava Maven repository](https://maven.scijava.org/) in response to pushes to each code repository's `master` branch. So any downstream projects depending on a version of `LATEST` for a given component will match the last successful Travis build—i.e., the latest code on `master`.
-  - Run each project's associated {% include wikipedia title='Unit testing' text='unit tests'%}. Travis is instrumental in early detection of new bugs introduced to the codebase.
-  - Perform [releases](releases ) of [SciJava](SciJava ) projects. Travis deploys release builds to the appropriate Maven repository—typically either the SciJava Maven repository or [OSS Sonatype](https://oss.sonatype.org/).
-  - Keep the [javadoc](javadoc ) site updated.
-  - Keep other web resources updated.
+-   Perform builds of SciJava projects. Travis deploys `SNAPSHOT` builds to the [SciJava Maven repository](https://maven.scijava.org/) in response to pushes to each code repository's `master` branch. So any downstream projects depending on a version of `LATEST` for a given component will match the last successful Travis build—i.e., the latest code on `master`.
+-   Run each project's associated {% include wikipedia title='Unit testing' text='unit tests'%}. Travis is instrumental in early detection of new bugs introduced to the codebase.
+-   Perform [releases](releases ) of [SciJava](SciJava ) projects. Travis deploys release builds to the appropriate Maven repository—typically either the SciJava Maven repository or [OSS Sonatype](https://oss.sonatype.org/).
+-   Keep the [javadoc](javadoc ) site updated.
+-   Keep other web resources updated.
 
-# Automatic Deployment of Maven Artifacts
+Automatic Deployment of Maven Artifacts
+=======================================
 
 Deploying your library to a [Maven](Maven ) repository makes it available for other developers. It is also a [contribution requirement for the Fiji project](Fiji/Contribution_requirements ).
 
-## Requirements
+Requirements
+------------
 
-  - Host your [open-source](open-source ) project on [GitHub](GitHub ).
-  - Log in to [Travis CI](https://travis-ci.com/auth) with your corresponding GitHub account and enable your repository.
-  - Contact an ImageJ admin in [Gitter](Chat#Gitter ) or [the Image.sc Forum](http://forum.image.sc/) and request that they file a PR which adds Travis support to your repository.
+-   Host your [open-source](open-source ) project on [GitHub](GitHub ).
+-   Log in to [Travis CI](https://travis-ci.com/auth) with your corresponding GitHub account and enable your repository.
+-   Contact an ImageJ admin in [Gitter](Chat#Gitter ) or [the Image.sc Forum](http://forum.image.sc/) and request that they file a PR which adds Travis support to your repository.
 
-## Instructions
+Instructions
+------------
 
 In order to add Travis CI support to a repository, the SciJava credentials are needed: A) for deploying to Maven repositories; and B) in the case of deploying to OSS Sonatype, for GPG signing of artifacts. If you have a copy of these credentials, and admin access to the relevant repository on GitHub, you can use the [travisify.sh script](https://github.com/scijava/scijava-scripts/blob/master/travisify.sh) to perform the needed operations. This script requires the [travis command line client](https://github.com/travis-ci/travis.rb) to be installed, and you may need to run `travis login` to authenticate first. If you need help, please ask [on the Image.sc Forum](https://forum.image.sc/) in the Development category, or in the [scijava-common channel](https://gitter.im/scijava/scijava-common) on Gitter.
 
-## Testing things which cannot run headless
+Testing things which cannot run headless
+----------------------------------------
 
 If your tests require a display (i.e.: they do not pass when run [headless](headless )), you can use [Xvfb](Xvfb ) as follows:
 
-``` yml
-before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - sleep 3 # give xvfb some time to start
-```
+    before_script:
+      - "export DISPLAY=:99.0"
+      - "sh -e /etc/init.d/xvfb start"
+      - sleep 3 # give xvfb some time to start
 
 Of course, you should do this only as a last resort, since the best unit tests should not require a display in the first place.
 

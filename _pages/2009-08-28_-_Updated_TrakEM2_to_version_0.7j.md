@@ -13,10 +13,10 @@ Please call "Help - Update Fiji" to get the new TrakEM2\_.jar into your plugins 
 
 The update includes:
 
-  - New AreaList surface and maximum diameter measurements. See [arealist measurements](http://t2.ini.uzh.ch/trakem2_manual.html#measure_arealist).
-  - Dialog for importing stacks appears only when it's not obvious which stack to import.
-  - New paint mode for AreaList: [overlap (current), exclusion and erosion](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#edit_arealist).
-  - Improved lens distortion correction.
+-   New AreaList surface and maximum diameter measurements. See [arealist measurements](http://t2.ini.uzh.ch/trakem2_manual.html#measure_arealist).
+-   Dialog for importing stacks appears only when it's not obvious which stack to import.
+-   New paint mode for AreaList: [overlap (current), exclusion and erosion](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#edit_arealist).
+-   Improved lens distortion correction.
 
 See [all news here.](http://t2.ini.uzh.ch/trakem2.html)
 

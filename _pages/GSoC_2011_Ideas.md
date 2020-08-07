@@ -7,7 +7,8 @@ categories:
 description: test description
 ---
 
-## 3-way viewer for Block-Face EM image volumes based in ImgLib cells
+3-way viewer for Block-Face EM image volumes based in ImgLib cells
+------------------------------------------------------------------
 
 {% include thumbnail src='/images/pages/3-way-view.png' title='Example of a 3-way view of an anisotropic EM stack. An isotropic stack would show images with the same resolution in the side views.'%} Volumetric or higher dimensional data as generated in todays scientific experiments is often too large to be kept in memory entirely. Still, the data needs to be displayed rapidly in multiple views. A typical example is data from [Block-Face Serial Scanning Electron Microscopy](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329), displayed through a technique now commercialized as "Gatan 3-way view EM." See this page for [theory](http://www.gatan.com/knowhow/knowhow_15/3view.htm) and for [pictures and examples](http://www.gatan.com/resources/knowhow/kh18-3view.php). Our generic image processing library [Imglib](Imglib ) is designed to efficiently generate such virtual views from arbitrary *n*-dimensional image data containers. Still missing is a data back-end that stores the data on the harddisk and provides rapid access to parts of it at multiple scales. The aim of this project is to create such a data back-end and utilize it for an interactive viewer application.
 
@@ -15,7 +16,8 @@ description: test description
 **Language:** any supported by Fiji, preferably Java.  
 **Mentor:** {% include person content='Albertcardona' %}, [Mark Longair](http://longair.net/mark)
 
-## Applying machine learning to the image segmentation problem
+Applying machine learning to the image segmentation problem
+-----------------------------------------------------------
 
 The term *image segmentation* describes the task where objects in an image are to be outlined, so that every pixel is connected to either a named object, or background.
 
@@ -31,8 +33,8 @@ We will consider applications for implementations that are either as generic as 
 
 We have several data sets of images and their corresponding manual segmentations (for training the algorithm). See for example:
 
-  - <i>Drosophila</i> larva brain imaged with ssTEM: http://t2.ini.uzh.ch/data.html
-  - <i>Drosophila</i> embryonic nuclei imaged with confocal microscopy.
+-   <i>Drosophila</i> larva brain imaged with ssTEM: [http://t2.ini.uzh.ch/data.html](http://t2.ini.uzh.ch/data.html)
+-   <i>Drosophila</i> embryonic nuclei imaged with confocal microscopy.
 
 You are welcome to use any scientifically-relevant dataset of your choice, but we will give priority to biologically-oriented data sets.
 
@@ -42,27 +44,27 @@ A plugin already exists for Fiji: [Trainable Segmentation](Trainable_Segmentatio
 **Language:** Java.  
 **Mentor:** {% include person content='Iarganda' %}, {% include person content='Albertcardona' %}, {% include person content='Mark' %}  
 
-## Implementing algorithms for Imglib
+Implementing algorithms for Imglib
+----------------------------------
 
 The new imglib supports dimension-, storage- and data type independent image processing. This library has some algorithms built-in already but there is a strong need to generically implement more general image processing algorithms, storage strategies and data types such as:
 
-  - Interpolation (Cubic, Spline, ...)
-  - Entropy Filter, Average Filter, Percentile(Min, Median, Max) Filter, ...
-  - Memory Management for partial image loading
-  - Color Spaces and Color Space Conversions
-  - Efficient representation of non-raster images (based on 2d polygonal shapes and 3d/4d meshes)
+-   Interpolation (Cubic, Spline, ...)
+-   Entropy Filter, Average Filter, Percentile(Min, Median, Max) Filter, ...
+-   Memory Management for partial image loading
+-   Color Spaces and Color Space Conversions
+-   Efficient representation of non-raster images (based on 2d polygonal shapes and 3d/4d meshes)
 
 **Goal:** Implement generic algorithms for image processing.  
 **Language:** Java.  
 **Mentor:** [Stephan Preibisch](http://fly.mpi-cbg.de/preibisch), [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld), [Tobias Pietzsch](http://www.wv.inf.tu-dresden.de/People/Pietzsch.html), {% include person content='Albertcardona' %}  
 
-## Reparing images with missing data by using contextual information
+Reparing images with missing data by using contextual information
+-----------------------------------------------------------------
 
 Implement a simple inpainting method (i.e. restore missing/unwanted parts of the image marked by a ROI) using wavelets: apply the wavelet transform, and then, on each level, use a diffusion algorithm to deduce a smooth signal from the surrounding parts, and finally inverse-transform the wavelet to get the restored image.
 
-|                                                                          |                                                                          |                                                                          |
-| ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
-| {% include thumbnail src='/images/pages/S2.png' title='Section 1'%} | {% include thumbnail src='/images/pages/S1.png' title='Section 2'%} | {% include thumbnail src='/images/pages/S3.png' title='Section 3'%} |
+<table><tbody><tr class="odd"><td><p>{% include thumbnail src='/images/pages/S2.png' title='Section 1'%}</p></td><td><p>{% include thumbnail src='/images/pages/S1.png' title='Section 2'%}</p></td><td><p>{% include thumbnail src='/images/pages/S3.png' title='Section 3'%}</p></td></tr></tbody></table>
 
 Other approaches are also welcome, such as using information from adjacent serial sections in electron microscopical image volumes. See for example the [large black blob at top left](http://fly.mpi-cbg.de/?pid=10&zp=660&yp=43500.5532&xp=54214.2522&sid0=10&s0=2) which could be restored with information from the next and previous sections.
 
@@ -70,7 +72,8 @@ Other approaches are also welcome, such as using information from adjacent seria
 **Language:** Java.  
 **Mentor:** {% include person content='Albertcardona' %}  
 
-## Robust blob segmentation
+Robust blob segmentation
+------------------------
 
 In life sciences, you often cope with round structures of interest. Such round structures can be cells, vesicles, nuclei or similarly shaped objects. While an ellipse might be a good initial fit, the final outline most certainly is not.
 
@@ -82,4 +85,4 @@ The purpose of this project is to segment in a fully automatic way round, convex
 
 **Goal:** Provide a robust blob segmentation algorithm that can work in 2D, 3D and 4D.  
 **Language:** Java  
-**Mentor:** {% include person content='Albertcardona' %}
+**Mentor:** {% include person content='Albertcardona' %}  

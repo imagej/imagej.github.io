@@ -10,7 +10,8 @@ description: test description
 (Return to the [Developer Documentation](3D_Viewer__Developer_Documentation ) page)  
 (Return to the main [3D\_Viewer](3D_Viewer ) page)
 
-## The relation between Content and Universe
+The relation between Content and Universe
+-----------------------------------------
 
 You can download example source code for this HowTo [here](3D_Viewer__Example_code ).
 
@@ -20,9 +21,9 @@ The following figure shows a simplified class diagram which shows the class hier
 
 There exist three classes which together provide the functionality of the universe:
 
-  - <b>`DefaultUniverse`</b> initializes the scene graph. It provides methods for retrieving the window in which the universe is shown, and the root `BranchGroup` of the Java3D scene graph, under which all objects are placed.
-  - <b>`DefaultAnimatableUniverse`</b> extends `DefaultUniverse`. It provides functionality for animation and recording.
-  - <b>`Image3DUniverse`</b> in turn extends `DefaultAnimatableUniverse`. It provides methods for adding, deleting and selecting Contents.
+-   <b>`DefaultUniverse`</b> initializes the scene graph. It provides methods for retrieving the window in which the universe is shown, and the root `BranchGroup` of the Java3D scene graph, under which all objects are placed.
+-   <b>`DefaultAnimatableUniverse`</b> extends `DefaultUniverse`. It provides functionality for animation and recording.
+-   <b>`Image3DUniverse`</b> in turn extends `DefaultAnimatableUniverse`. It provides methods for adding, deleting and selecting Contents.
 
 ### The relationship between `Content` and `Image3DUniverse`
 

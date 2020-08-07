@@ -13,14 +13,16 @@ The syntax is always shown in the gray boxes and the actual look you will see di
 
 If you want to add other templates, here you can find the ones existing on imagej.net: [Template pages](https://imagej.net/index.php?title=Special%3AAllPages&from=&to=&namespace=10)
 
-## Different headline levels
+Different headline levels
+-------------------------
 
     == 1 Main Menu Items ==     
     === 1.1 Submenus/Direct commands ===
     ==== 1.1.1 Sub-submenu ==== 
     ===== 1.1.1.1 Sub-submenu =====
 
-## 1 Main Menu Items
+1 Main Menu Items
+-----------------
 
 ### 1.1 Submenus/Direct commands
 
@@ -30,25 +32,29 @@ If you want to add other templates, here you can find the ones existing on image
 
   
 
-## Plugin parameters
+Plugin parameters
+-----------------
 
 Plugin parameters such as number fields, text fields, checkboxes, or radio buttons will be shown **bold**
 
 dropdown choices will be indeícated ***bold/italic***
 
-## Keyboard keys
+Keyboard keys
+-------------
 
     {% include key content='Ctrl' %} + {% include key content='C' %}   or    {% include key content='Ctrl' %} + {% include key content='Shift' %} + {% include key content='F' %}
 
 {% include key content='Ctrl' %} + {% include key content='C' %}     /     {% include key content='Ctrl' %} + {% include key content='Shift' %} + {% include key content='F' %}
 
-## Menu structure
+Menu structure
+--------------
 
     {% include bc content='Image | Color | Split Channels'%}
 
 {% include bc content='Image | Color | Split Channels'%}
 
-## Boxes
+Boxes
+-----
 
     {% include box width='30% ' %}
 
@@ -56,7 +62,7 @@ dropdown choices will be indeícated ***bold/italic***
 
     {% include box title='Modifies Box with a title! ' text='As a standard box for additional info. ' width='30% ' float='left ' %}
 
-{% include box title='Modifies Sidebox with title\! ' text='As a standard box for additional info. ' width='30% ' float='left ' %}
+{% include box title='Modifies Sidebox with title! ' text='As a standard box for additional info. ' width='30% ' float='left ' %}
 
   
   
@@ -83,7 +89,7 @@ Press the {% include key content='L' %} key to access ImageJ"s most useful featu
 
     {% include warning-box content='Something critical like do not put Fiji in the Programm Files folder!' %}
 
-{% include warning-box content='Something critical like do not put Fiji in the Programm Files folder\!' %}
+{% include warning-box content='Something critical like do not put Fiji in the Programm Files folder!' %}
 
     {% include tech content='if necessary can be used for technical details.' %}
 
@@ -91,7 +97,7 @@ Press the {% include key content='L' %} key to access ImageJ"s most useful featu
 
     {% include fiji content='To mention Fiji specific hints!' %}
 
-{% include fiji content='To mention Fiji specific hints\!' %}
+{% include fiji content='To mention Fiji specific hints!' %}
 
   
   
@@ -106,7 +112,8 @@ Press the {% include key content='L' %} key to access ImageJ"s most useful featu
 {% include yes%}
 
 
-## Specific Icons
+Specific Icons
+--------------
 
     {% include no%}
 
@@ -114,11 +121,12 @@ Press the {% include key content='L' %} key to access ImageJ"s most useful featu
 {% include no%}
 
 
-## Operating systems
+Operating systems
+-----------------
 
     {% include linux content='Everyone agrees: Linux is the ""best"" operating system!' %}
 
-{% include linux content='Everyone agrees: Linux is the ""best"" operating system\!' %}  
+{% include linux content='Everyone agrees: Linux is the ""best"" operating system!' %}  
   
   
   
@@ -127,7 +135,7 @@ Press the {% include key content='L' %} key to access ImageJ"s most useful featu
 
     {% include windows content='Everyone agrees: Windows is the ""best"" operating system!' %}
 
-{% include windows content='Everyone agrees: Windows is the ""best"" operating system\!' %}  
+{% include windows content='Everyone agrees: Windows is the ""best"" operating system!' %}  
   
   
   
@@ -136,13 +144,13 @@ Press the {% include key content='L' %} key to access ImageJ"s most useful featu
 
     {% include macos content='Everyone agrees: macOS is the ""best"" operating system!' %}
 
-{% include macos content='Everyone agrees: macOS is the ""best"" operating system\!' %}  
+{% include macos content='Everyone agrees: macOS is the ""best"" operating system!' %}  
   
   
   
   
   
-\== TODO / Task list == The guidetask enables to make a tasklist with up to 10 entries. This could either be appended to the bottom of each article, or to article's discussion page. We could use the Todo
+== TODO / Task list == The guidetask enables to make a tasklist with up to 10 entries. This could either be appended to the bottom of each article, or to article's discussion page. We could use the Todo
 
     
 {% capture  content %}
@@ -152,6 +160,6 @@ add link to wiki page|add info on shortcut {% include key content='Shift' %} + {
 
 
 {% capture  content %}
-add link to wiki page|add info on usage of {% include key content='Shift' %} + {% include key content='F' %}|mention alternative plugins
+add link to wiki page\|add info on usage of {% include key content='Shift' %} + {% include key content='F' %}\|mention alternative plugins
 {% endcapture %}
 {% include guidetask content=content %}

@@ -7,76 +7,45 @@ categories: News,ImageJ2,Hackathons,Ops
 description: test description
 ---
 
-![A graph of progress during the hackathon.](/images/pages/2014-ops-hackathon.png "A graph of progress during the hackathon.")
+<figure><img src="/images/pages/2014-ops-hackathon.png" title="A graph of progress during the hackathon." width="304" alt="A graph of progress during the hackathon." /><figcaption aria-hidden="true">A graph of progress during the hackathon.</figcaption></figure>
 
 From Sunday, September 14, 2014 through Friday, September 19, 2014, LOCI in Madison hosted Christian Dietz and Brian Northan, two developers of [ImageJ Ops](ImageJ_Ops ), for an exciting hackathon. [Christian Dietz](http://www.informatik.uni-konstanz.de/en/berthold/members/christian-dietz/) is a PhD student in computer science at the University of Konstanz and the lead developer of the [KNIME Image Processing](http://knime.imagej.net/) project; [Brian Northan](https://www.linkedin.com/pub/brian-northan/6/860/3a7) is a freelance contract research and development engineer specializing in scientific image and signal processing.
 
-## Overview
+Overview
+--------
 
 ImageJ Ops is an extensible Java framework for algorithms, particularly image processing algorithms. Ops seeks to be a unifying library for scientific image processing. See the [Motivation](https://github.com/imagej/imagej-ops/wiki/Motivation) page on the Ops wiki for details.
 
 [KNIME](KNIME ) is an open source data analytics, reporting and integration platform, which integrates various components for machine learning and data mining through its modular data pipelining concept. The [**KN**IME **I**mage **P**rocessing](http://knime.imagej.net/) extension, KNIP, provides nodes for working with images, and is built on the ImageJ Ops library. Ops makes it possible to execute the image processing algorithm in many contexts, including from within [ImageJ](ImageJ ) itself, from [OMERO](OMERO ), [KNIME](KNIME ), [CellProfiler](CellProfiler ) and beyond.
 
-## Accomplishments
+Accomplishments
+---------------
 
 This hackathon focused on the [ImageJ Ops](ImageJ_Ops ) library, adding support for key image processing operations, as well as improving the framework itself. Achievements from the hackathon include:
 
-  - Vastly improved thresholding code ([\#52](https://github.com/imagej/imagej-ops/pull/52))
-  - Improvements to the code generation mechanism ([\#42](https://github.com/imagej/imagej-ops/pull/42))
-  - Autogeneration of base op interfaces ([e1e2d18f](https://github.com/imagej/imagej-ops/commit/e1e2d18fd1e96968c4a8aa29d1f67c46222167b6))
-  - Several miscellaneous design improvements ([\#36](https://github.com/imagej/imagej-ops/pull/36), [6cb8b083](https://github.com/imagej/imagej-ops/commit/6cb8b0831f9f3fb6d27bfcf2ee509ca20688b5c4))
-  - See the \[https://github.com/imagej/imagej-ops/compare/master@%7B13-Sep-2014%7D...master@%7B20-Sep-2014%7D SCM history\] for full details.
+-   Vastly improved thresholding code ([\#52](https://github.com/imagej/imagej-ops/pull/52))
+-   Improvements to the code generation mechanism ([\#42](https://github.com/imagej/imagej-ops/pull/42))
+-   Autogeneration of base op interfaces ([e1e2d18f](https://github.com/imagej/imagej-ops/commit/e1e2d18fd1e96968c4a8aa29d1f67c46222167b6))
+-   Several miscellaneous design improvements ([\#36](https://github.com/imagej/imagej-ops/pull/36), [6cb8b083](https://github.com/imagej/imagej-ops/commit/6cb8b0831f9f3fb6d27bfcf2ee509ca20688b5c4))
+-   See the \[https://github.com/imagej/imagej-ops/compare/master@%7B13-Sep-2014%7D...master@%7B20-Sep-2014%7D SCM history\] for full details.
 
 All thresholding algorithms from [ImageJ 1.x](ImageJ_1.x ) have been ported to Ops. Available thresholding methods now include:
 
-<table>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>huang</li>
-<li>ij1</li>
-<li>intermodes</li>
-</ul></td>
-<td><ul>
-<li>isodata</li>
-<li>li</li>
-<li>maxEntropy</li>
-</ul></td>
-<td><ul>
-<li>maxlikelihood</li>
-<li>mean</li>
-<li>minerror</li>
-</ul></td>
-<td><ul>
-<li>minimum</li>
-<li>moments</li>
-<li>otsu</li>
-</ul></td>
-<td><ul>
-<li>percentile</li>
-<li>renyientropy</li>
-<li>shanbhag</li>
-</ul></td>
-<td style="vertical-align: top">
-<ul>
-<li>triangle</li>
-<li>yen</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+<table><tbody><tr class="odd"><td style="vertical-align: top"><ul><li>huang</li><li>ij1</li><li>intermodes</li></ul></td><td><ul><li>isodata</li><li>li</li><li>maxEntropy</li></ul></td><td><ul><li>maxlikelihood</li><li>mean</li><li>minerror</li></ul></td><td><ul><li>minimum</li><li>moments</li><li>otsu</li></ul></td><td><ul><li>percentile</li><li>renyientropy</li><li>shanbhag</li></ul></td><td><ul><li>triangle</li><li>yen</li></ul></td></tr></tbody></table>
 
-## Progress and future directions
+Progress and future directions
+------------------------------
 
 We also made great progress on several new lines of development:
 
-  - Type conversion ([\#47](https://github.com/imagej/imagej-ops/pull/47))
-  - Kernels ([\#48](https://github.com/imagej/imagej-ops/pull/48))
-  - Projection ([\#51](https://github.com/imagej/imagej-ops/pull/51))
-  - Conditions ([\#73](https://github.com/imagej/imagej-ops/pull/73))
-  - Features and descriptors ([feature-service branch](https://github.com/imagej/imagej-ops/compare/feature-service))
+-   Type conversion ([\#47](https://github.com/imagej/imagej-ops/pull/47))
+-   Kernels ([\#48](https://github.com/imagej/imagej-ops/pull/48))
+-   Projection ([\#51](https://github.com/imagej/imagej-ops/pull/51))
+-   Conditions ([\#73](https://github.com/imagej/imagej-ops/pull/73))
+-   Features and descriptors ([feature-service branch](https://github.com/imagej/imagej-ops/compare/feature-service))
 
-## Future directions
+Future directions
+-----------------
 
 The Ops development plan and timeline is now [codified on GitHub](https://github.com/imagej/imagej-ops/milestones). Major milestones include:
 
@@ -86,6 +55,6 @@ The Ops development plan and timeline is now [codified on GitHub](https://github
 
 Please direct questions about Ops to the [ImageJ forum](http://forum.imagej.net/).
 
-Thanks to everyone involved for all the hard work, patience and enthusiasm\!
+Thanks to everyone involved for all the hard work, patience and enthusiasm!
 
    

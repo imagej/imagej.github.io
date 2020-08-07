@@ -7,15 +7,18 @@ categories:
 description: test description
 ---
 
-## 3D Mathematical Morphology
+3D Mathematical Morphology
+--------------------------
 
 Various algorithms for 3D Mathematical Morphology, as part of the [3D ImageJ Suite](3D_ImageJ_Suite ).
 
-## Author
+Author
+------
 
 {% include person content='Tboudier' %}
 
-## Description
+Description
+-----------
 
 3D mathematical **operations** (erosion, dilation, ...) are available in [3D Filters](3D_Filters ) using minimum and maximum filters.
 
@@ -37,20 +40,24 @@ In the case of labelled objects (as count masks) a **Binary Close Labels** is av
 
 Nuclear regions ((c) J. Ollion, MNHN) : raw image, segmented labelled image, close labels image.
 
-## Download
+Download
+--------
 
 For details go to the [3D ImageJ Suite](3D_ImageJ_Suite ).
 
-## Citation
+Citation
+--------
 
 When using the *3D Mathematical Morphology* plugins for publication, please refer to :
 
 J. Ollion, J. Cochennec, F. Loll, C. Escudé, T. Boudier. (**2013**) TANGO: A Generic Tool for High-throughput 3D Image Analysis for Studying Nuclear Organization. *Bioinformatics* 2013 Jul 15;29(14):1840-1. [doi](http://dx.doi.org/10.1093/bioinformatics/btt276)
 
-## License
+License
+-------
 
 GPL distribution (see [license](https://cecill.info/licences/Licence_CeCILL_V2.1-en.html)). Sources are available freely.
 
-## Changelog
+Changelog
+---------
 
-  - 30/03/2016 V3.74: bug fixed in EDT
+-   30/03/2016 V3.74: bug fixed in EDT

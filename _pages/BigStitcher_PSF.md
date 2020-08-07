@@ -7,7 +7,8 @@ categories:
 description: test description
 ---
 
-## Overview
+Overview
+--------
 
 For deconvolution, it is necessary to have a **Point spread function (PSF)** for each image you want to deconvolve. An ideal PSF should represent how a point emitter smaller than the diffraction limit of your optical setup is imaged by your microscope.
 
@@ -17,7 +18,8 @@ Functions for assigning PSFs to images and managing PSFs can be found in **Multi
 
 <img src="/images/pages/BigStitcher psf menu.png" width="500"/>
 
-## PSF management
+PSF management
+--------------
 
 ### Extracting PSFs
 
@@ -27,10 +29,10 @@ Functions for assigning PSFs to images and managing PSFs can be found in **Multi
 
 Here, you have a few options:
 
-  - **Interest Points**: which interest points to use for PSF creation.
-  - **Use corresponding interest points**: check this to only use interest points that have a correspondence in another image. This only works if you have already performed [registration](BigStitcher_Registration ) with those points. This is useful to quickly exclude spurious detections, but for the best results, you might want to [manually curate a set of points that only consists of beads](BigStitcher_Interest_point_management#Remove_interactively ).
-  - **Remove min intensity projection from PSF**: check this to remove the minimal intensity projection (thrice, in x, y and z) from the resulting averaged PSF. This should reduce background noise.
-  - **PSF size**: the volume (in raw image pixels) to cut around the interest points for PSF generation. The default typically works well for reasonably sampled images, but you might want to increase the size if you have oversampling.
+-   **Interest Points**: which interest points to use for PSF creation.
+-   **Use corresponding interest points**: check this to only use interest points that have a correspondence in another image. This only works if you have already performed [registration](BigStitcher_Registration ) with those points. This is useful to quickly exclude spurious detections, but for the best results, you might want to [manually curate a set of points that only consists of beads](BigStitcher_Interest_point_management#Remove_interactively ).
+-   **Remove min intensity projection from PSF**: check this to remove the minimal intensity projection (thrice, in x, y and z) from the resulting averaged PSF. This should reduce background noise.
+-   **PSF size**: the volume (in raw image pixels) to cut around the interest points for PSF generation. The default typically works well for reasonably sampled images, but you might want to increase the size if you have oversampling.
 
 Click **OK** to turn the selected interest points into PSFs. This will generate a single PSF for all selected views (the interest points in each view will be averaged).
 
@@ -46,30 +48,30 @@ It also contains an **Advanced...** option allowing for more flexible re-assignm
 
 The options here are:
 
-  - **Assign existing PSF to all selected views**: After selecting this, you will be asked for one view in the next step. The PSF from this view will be assigned to all selected views (same as the quick assign in the menu).
-  - **Assign new PSF to all selected views**: After selecting this, you will be asked for a **PSF file** in the next step. The PSF in that file will be assigned to all selected views. The PSF files have to be 3D TIFF stacks with odd dimension sizes and the center of the PSF at the center of the image.
-  - **Duplicate PSFs from other channel**: After selecting this, you will be asked for a source and target channsel. For all selected views of the **target** channel, we will assign the PSF from the corresponding view in the **source** channel.
-  - **Duplicate PSFs from other timepoint**: After selecting this, you will be asked for a timepoint. For all selected views, we will select the corresponding view at the selected timepoint and copy the PSF of that view.
+-   **Assign existing PSF to all selected views**: After selecting this, you will be asked for one view in the next step. The PSF from this view will be assigned to all selected views (same as the quick assign in the menu).
+-   **Assign new PSF to all selected views**: After selecting this, you will be asked for a **PSF file** in the next step. The PSF in that file will be assigned to all selected views. The PSF files have to be 3D TIFF stacks with odd dimension sizes and the center of the PSF at the center of the image.
+-   **Duplicate PSFs from other channel**: After selecting this, you will be asked for a source and target channsel. For all selected views of the **target** channel, we will assign the PSF from the corresponding view in the **source** channel.
+-   **Duplicate PSFs from other timepoint**: After selecting this, you will be asked for a timepoint. For all selected views, we will select the corresponding view at the selected timepoint and copy the PSF of that view.
 
 ### Averaging PSFs
 
 You can use this sub-menu to replace the individual PSFs of the selected views by their average PSF or simply display the averaged PSF. The available options are:
 
-  - **Display only**: display the average PSF of the selected views as an ImageJ image.
-  - **Display only (remove Min Projections)**: display the average PSF of the selected views as an ImageJ image, subtract minimum intensity projections from the average (see above).
-  - **Assign to all input views**: average the PSFs of all selected views and assign the average PSF to all of them.
-  - **Assign to all input views (remove Min Projections)**: average the PSFs of all selected views and assign the average PSF to all of them, subtract minimum intensity projections from the average (see above).
-  - **Display & assign to all input views**: average the PSFs of all selected views and assign the average PSF to all of them and also display the resulting PSF in ImageJ.
-  - **Display & assign to all input views (remove Min Projections)**: average the PSFs of all selected views and assign the average PSF to all of them, subtract minimum intensity projections from the average (see above). Also display the resulting PSF in ImageJ.
+-   **Display only**: display the average PSF of the selected views as an ImageJ image.
+-   **Display only (remove Min Projections)**: display the average PSF of the selected views as an ImageJ image, subtract minimum intensity projections from the average (see above).
+-   **Assign to all input views**: average the PSFs of all selected views and assign the average PSF to all of them.
+-   **Assign to all input views (remove Min Projections)**: average the PSFs of all selected views and assign the average PSF to all of them, subtract minimum intensity projections from the average (see above).
+-   **Display & assign to all input views**: average the PSFs of all selected views and assign the average PSF to all of them and also display the resulting PSF in ImageJ.
+-   **Display & assign to all input views (remove Min Projections)**: average the PSFs of all selected views and assign the average PSF to all of them, subtract minimum intensity projections from the average (see above). Also display the resulting PSF in ImageJ.
 
 ### Displaying PSFs
 
 You can use the function in this sub-menu to quickly display your PSFs as ImageJ images. The available options are:
 
-  - **Raw PSF for each view**: show the raw PSF for each selected view.
-  - **Averaged PSF**: show averaged PSF of all selected views.
-  - **Averaged transformed PSF**: show averaged PSF of all selected views, with the individual PSFs transformed to world coordinates according to the registrations of the views.
-  - **Maximum Projection of averaged PSF**: show a Maximum intensity projection of the averaged PSF of all selected views. Note that the projection will be done **along the smallest (px) axis of the PSF**.
-  - **Maximum Projection of averaged transformed PSF**: show a maximum intensity projection of the averaged PSF transformed to world coordinates according to the view registrations.
+-   **Raw PSF for each view**: show the raw PSF for each selected view.
+-   **Averaged PSF**: show averaged PSF of all selected views.
+-   **Averaged transformed PSF**: show averaged PSF of all selected views, with the individual PSFs transformed to world coordinates according to the registrations of the views.
+-   **Maximum Projection of averaged PSF**: show a Maximum intensity projection of the averaged PSF of all selected views. Note that the projection will be done **along the smallest (px) axis of the PSF**.
+-   **Maximum Projection of averaged transformed PSF**: show a maximum intensity projection of the averaged PSF transformed to world coordinates according to the view registrations.
 
 Go back to the [main page](BigStitcher#Documentation )

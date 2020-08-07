@@ -7,7 +7,8 @@ categories: Tutorials
 description: test description
 ---
 
-## Shortcuts to folders inside Fiji.app
+Shortcuts to folders inside Fiji.app
+------------------------------------
 
 Put Fiji.app in a folder (named for exemple "Fiji"): <img src="/images/pages/Shortcuts to folders inside Fiji.app-2.png" width="750"/>
 

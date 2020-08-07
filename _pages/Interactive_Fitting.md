@@ -9,11 +9,12 @@ description: test description
 
 {% include info-box software='ImageJ1 ' name='Interactive\_Fitting ' author='Fred Damen ' filename='Interactive\_Fitting.jar ' source=' [Interactive\_Fitting.zip](https://imagej.net/_images/9/92/Interactive_Fitting.zip) ' released='1 April 2020 ' status='stable ' category='[Plotting‏‎](Category_Plotting‏‎ ) ' website=' ' %}
 
-The Interactive\_Fitting plugin provides the ability to fit plotted data to an equation and plot the results on the same plot, and to be able to update the plot without refitting if you suspect there is a better set of parameters or a better equation. I had noticed that an ability to fit a plotted dataset using CurveFitter was added to the PlotWindow(Data\>\>Add fit...). I needed more functionality, so...
+The Interactive\_Fitting plugin provides the ability to fit plotted data to an equation and plot the results on the same plot, and to be able to update the plot without refitting if you suspect there is a better set of parameters or a better equation. I had noticed that an ability to fit a plotted dataset using CurveFitter was added to the PlotWindow(Data&gt;&gt;Add fit...). I needed more functionality, so...
 
 N.B., I wish to express gratitude to the immense work that I was able to add a little part to.
 
-## Features
+Features
+--------
 
 <img src="/images/pages/Interactive Fitting.jpg" width="800"/>  
 **PlotWindow** identifies the PlotWindow that contains the plot of interest.  
@@ -30,7 +31,8 @@ N.B., I wish to express gratitude to the immense work that I was able to add a l
 **Copy to Clipboard** allow the information from the current settings to be captured for later use. May be pasted into the primary equation field to recover the current equations/parameters settings.  
 The *status field* presents any pertinent details about the fitting / updating.
 
-## Coding Goodies
+Coding Goodies
+--------------
 
 Fancy control of the GUI so that only relevant information is used.
 
@@ -38,20 +40,24 @@ Evaluating equations using the macro processor.
 
 Interrogating plots and reacting as they change.
 
-## Install
+Install
+-------
 
-Unzip [Interactive\_Fitting.zip](https://imagej.net/_images/9/92/Interactive_Fitting.zip) into ImageJ1 plugins (File\>Show Folder\>Plugins) or plugins/jars directories. Source code in jar file.  
-**Plugins\>Interactive\>Interactive\_Plotting...**
+Unzip [Interactive\_Fitting.zip](https://imagej.net/_images/9/92/Interactive_Fitting.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code in jar file.  
+**Plugins&gt;Interactive&gt;Interactive\_Plotting...**
 
-## Licence
+Licence
+-------
 
 GPL distribution licence.
 
-## ChangeLog
+ChangeLog
+---------
 
 1 April 2020 Initial version.
 
-## Known Bugs
+Known Bugs
+----------
 
 Let me know.
 

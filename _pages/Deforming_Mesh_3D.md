@@ -7,7 +7,8 @@ categories:
 description: test description
 ---
 
-# Deforming Mesh Plugin: Interactive 3D Segmentation.
+Deforming Mesh Plugin: Interactive 3D Segmentation.
+===================================================
 
 This is a page for our plugin, originally developed at LMCB at UCL London.
 

@@ -12,14 +12,14 @@ This account is used to manage the [MATLAB update site](http://sites.imagej.net/
 
 To activate it:
 
-  - [*Help\>Update*](Update_Sites )
-  - Click *Manage update sites*
-  - Check *MATLAB*
-  - Click *Close*
+-   [*Help&gt;Update*](Update_Sites )
+-   Click *Manage update sites*
+-   Check *MATLAB*
+-   Click *Close*
 
 Some files should appear on the list with *Status/Action* of *Install it*.
 
-  - Click *Apply changes*
-  - Restart ImageJ
+-   Click *Apply changes*
+-   Restart ImageJ
 
-Your [Script Editor](Script_Editor ) should now have MATLAB as an available language option\!
+Your [Script Editor](Script_Editor ) should now have MATLAB as an available language option!

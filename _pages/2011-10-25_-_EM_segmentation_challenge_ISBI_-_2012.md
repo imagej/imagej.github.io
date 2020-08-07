@@ -15,19 +15,19 @@ You can find all the information about the challenge [ here](Segmentation_of_neu
 
 Important dates:
 
-  - **Deadline for submitting results**: February 1<sup>st</sup>, 2012
+-   **Deadline for submitting results**: February 1<sup>st</sup>, 2012
 
-<!-- end list -->
+<!-- -->
 
-  - **Notification of the evaluation**: February 21<sup>st</sup>, 2012
+-   **Notification of the evaluation**: February 21<sup>st</sup>, 2012
 
-<!-- end list -->
+<!-- -->
 
-  - **Deadline for submitting abstracts**: March 1<sup>st</sup>, 2012
+-   **Deadline for submitting abstracts**: March 1<sup>st</sup>, 2012
 
-<!-- end list -->
+<!-- -->
 
-  - **Notification of acceptance/presentation type**: March 15<sup>th</sup>, 2012
+-   **Notification of acceptance/presentation type**: March 15<sup>th</sup>, 2012
 
 After the publication of the evaluation ranking, teams will be invited to submit an abstract. During the workshop, participants will have the opportunity to present their methods and the results will be discussed.
 

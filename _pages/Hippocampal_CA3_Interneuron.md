@@ -7,10 +7,11 @@ categories: Tutorials
 description: test description
 ---
 
-## Hippocampal CA3 Interneuron
+Hippocampal CA3 Interneuron
+---------------------------
 
 (from the previous tutorial:
 
-![Hippocampal\_CA3\_Interneuron-1.png](/images/pages/Hippocampal CA3 Interneuron-1.png "Hippocampal_CA3_Interneuron-1.png")
+![](/images/pages/Hippocampal CA3 Interneuron-1.png "Hippocampal_CA3_Interneuron-1.png")
 
 

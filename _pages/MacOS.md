@@ -17,15 +17,18 @@ description: test description
 {% include toc%}
 
 
-# Installation
+Installation
+============
 
 See also the [Java 8](Java_8 ) page for OS-X-specific issues.
 
-# Troubleshooting
+Troubleshooting
+===============
 
 See also the [Troubleshooting](Troubleshooting ) page.
 
-## ImageJ becomes very slow after running for a while
+ImageJ becomes very slow after running for a while
+--------------------------------------------------
 
 There are several reasons ImageJ can run slowly on macOS.
 
@@ -39,29 +42,34 @@ There is a bug in Java 8 on MacOS which causes the application to drastically sl
 
 ### App Nap
 
-On recent versions of OS X—10.9 "Mavericks" and later—there is an "App Nap" feature which dramatically slows down applications that are not in the foreground. Leave ImageJ in the foreground while it is processing to avoid this issue. (There are also [various](http://osxdaily.com/2014/05/13/disable-app-nap-mac-os-x/) [ways](http://www.cultofmac.com/274396/disable-app-nap-specific-apps-os-x-tips/) to disable App Nap on your machine, but we have not had much success with them. If you find a solution that works, allowing ImageJ to run fast in the background, please [tell us on the forum](http://forum.imagej.net/)\!)
+On recent versions of OS X—10.9 "Mavericks" and later—there is an "App Nap" feature which dramatically slows down applications that are not in the foreground. Leave ImageJ in the foreground while it is processing to avoid this issue. (There are also [various](http://osxdaily.com/2014/05/13/disable-app-nap-mac-os-x/) [ways](http://www.cultofmac.com/274396/disable-app-nap-specific-apps-os-x-tips/) to disable App Nap on your machine, but we have not had much success with them. If you find a solution that works, allowing ImageJ to run fast in the background, please [tell us on the forum](http://forum.imagej.net/)!)
 
-## No title bar in file chooser dialogs
+No title bar in file chooser dialogs
+------------------------------------
 
 On macOS 10.11 "El Capitan" and later, the operating system no longer includes a title bar for file chooser dialogs. See e.g. [this JDK bug](https://bugs.openjdk.java.net/browse/JDK-8136427) discussing the issue.
 
 As a workaround, you can check "Use JFileChooser to open/save" in the {% include bc content='Edit | Options | Input/Output...'%} dialog.
 
-# Frequently Asked Questions
+Frequently Asked Questions
+==========================
 
 See also the [Frequently Asked Questions](Frequently_Asked_Questions ) page.
 
-## How do I run ImageJ with Java 6?
+How do I run ImageJ with Java 6?
+--------------------------------
 
 It is unfortunately no longer feasible to install Apple Java 6 on current versions of macOS. However, ImageJ should work OK with Java 8. If you have difficulties, please post on the [Image.sc Forum](https://forum.image.sc/).
 
 At any time, you can verify which Javas are installed on your system using {% include github org='ctrueden ' repo='ctr-scripts ' path='java-info ' label='this script ' %}.
 
-## How do I run ImageJ on Yosemite?
+How do I run ImageJ on Yosemite?
+--------------------------------
 
 Install the [Java 8 JRE](http://java.com/) or [Java SE 8](http://www.oracle.com/technetwork/java/javase/downloads/).
 
-## How do I run ImageJ on El Capitan?
+How do I run ImageJ on El Capitan?
+----------------------------------
 
 Unfortunately, El Capitan has some new java-related issues. If you upgraded to El Capitan and your Java 8 installation is not being detected properly:
 

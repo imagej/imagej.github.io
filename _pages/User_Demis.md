@@ -13,4 +13,4 @@ Contributed the following plugin: http://fiji.sc/Microscope_Measurement_Tools
 
 Add new issues or problems at GitHub:
 
-  - [Microscope Measurement Tools on GitHub](https://github.com/demisjohn/Microscope-Measurement-Tools)
+-   [Microscope Measurement Tools on GitHub](https://github.com/demisjohn/Microscope-Measurement-Tools)

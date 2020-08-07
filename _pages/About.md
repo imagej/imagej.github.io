@@ -10,7 +10,7 @@ description: test description
 So you want to know about ImageJ, do you? What would you like to know?
 
 | Question                        | See                                     |
-| ------------------------------- | --------------------------------------- |
+|---------------------------------|-----------------------------------------|
 | **What is ImageJ?**             | [ImageJ](ImageJ )             |
 | **Why ImageJ?**                 | [Philosophy](Philosophy )     |
 | **Who uses ImageJ?**            | [Usage](Usage )               |

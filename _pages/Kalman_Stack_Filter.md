@@ -9,11 +9,13 @@ description: test description
 
 {% include info-box software='ImageJ ' name='Kalman Stack Filter ' author='Christopher Philip Mauer ' filename='Kalman\_Stack\_Filter.class ' source=' [Kalman\_Stack\_Filter.java](https://imagej.net/plugins/download/Kalman_Stack_Filter.java) ' released='23 May 2003 ' latest-version='17 November 2006 ' status='stable (not yet in fiji update) ' category='[Filtering](Category_Filtering ) ' website='https://imagej.net/plugins/kalman.html ' %}
 
-## Purpose
+Purpose
+-------
 
 This plugin implements a recursive prediction/correction algorithm which is based on the Kalman Filter to remove high gain noise from stacks. It is very useful for noisy time-lapse movies.
 
-## Documentation
+Documentation
+-------------
 
 The [ImageJ website](https://imagej.net/plugins/kalman.html) offer a very complete documentation for its usage. Please refer to it.
 

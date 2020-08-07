@@ -9,233 +9,48 @@ description: test description
 
 {% include develop-menu content='tutorials' %}If you create a useful extension of ImageJ—e.g., a [plugin](plugin ), [script](script ) or [macro](macro )—the next step is to *distribute* it to others, including:
 
-  - **Distribute** the extension itself to users
-  - Share the extension's **source code**
-  - **Document** the extension somewhere
+-   **Distribute** the extension itself to users
+-   Share the extension's **source code**
+-   **Document** the extension somewhere
 
-## Best practices
+Best practices
+--------------
 
 Here is a quick summary of the most recommended options:
 
-  - **Distribution.**
-      - A) **[create your own update site](How_to_set_up_and_populate_an_update_site )**; or
-      - B) **[bundle your plugin with Fiji](Fiji_contribution_requirements )**.
-  - **Source code.**
-      - Make your project **[open source](open_source )**.
-      - Host it on **[GitHub](GitHub )**.
-      - Use **[Maven](Maven )** to build and SemVer for **[versioning](versioning )**.
-      - Use **[Travis](Travis )** for continuous integration and artifact deployment to the [SciJava Maven repository](SciJava_Maven_repository ).
-  - **Documentation.**
-      - Create a page here on the **[ImageJ Wiki](https://imagej.net/)**.
+-   **Distribution.**
+    -   A\) **[create your own update site](How_to_set_up_and_populate_an_update_site )**; or
+    -   B\) **[bundle your plugin with Fiji](Fiji_contribution_requirements )**.
+-   **Source code.**
+    -   Make your project **[open source](open_source )**.
+    -   Host it on **[GitHub](GitHub )**.
+    -   Use **[Maven](Maven )** to build and SemVer for **[versioning](versioning )**.
+    -   Use **[Travis](Travis )** for continuous integration and artifact deployment to the [SciJava Maven repository](SciJava_Maven_repository ).
+-   **Documentation.**
+    -   Create a page here on the **[ImageJ Wiki](https://imagej.net/)**.
 
 The tables below discuss additional options for these three aspects of distribution. Green items are recommended. Other options are given but not recommended for various reasons.
 
-## Distributing your extension
+Distributing your extension
+---------------------------
 
 The first goal is to get your extension into the hands of users.
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p><strong>Create your own update site</strong></p></td>
-</tr>
-<tr class="even">
-<td style="background: #dfd"><p> <strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="background: #dfd; vertical-align: top">
-<ul>
-<li><strong><a href="How_to_set_up_and_populate_an_update_site" title="wikilink"> Create your update site</a></strong>, then <strong><a href="How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site" title="wikilink">upload your extension to it</a></strong>.</li>
-<li>You may add your update site to the list of built-in sites by editing the <strong>{% include list-of-update-sites%}
-</strong> page.</li>
-<li>To release a new version, <strong><a href="How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site" title="wikilink">upload it to the update site</a></strong>.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Distribute it as part of Fiji</strong></p></td>
-</tr>
-<tr class="even">
-<td style="background: #dfd"><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="background: #dfd; vertical-align: top">
-<ul>
-<li>Make a post on the <strong><a href="Forum" title="wikilink">ImageJ forum</a></strong> to initiate a request.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Serve it from a website as a download</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="vertical-align: top">
-<ul>
-<li>Create an archive (TAR, ZIP, etc.).</li>
-<li>Upload the archive to the relevant web space, and link it.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+<table><tbody><tr class="odd"><td style="background: #dfd"><p><strong>Create your own update site</strong></p></td></tr><tr class="even"><td><p> <strong>Steps</strong></p></td></tr><tr class="odd"><td style="background: #dfd; vertical-align: top"><ul><li><strong><a href="How_to_set_up_and_populate_an_update_site" title="wikilink"> Create your update site</a></strong>, then <strong><a href="How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site" title="wikilink">upload your extension to it</a></strong>.</li><li>You may add your update site to the list of built-in sites by editing the <strong>{% include list-of-update-sites%}
+</strong> page.</li><li>To release a new version, <strong><a href="How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site" title="wikilink">upload it to the update site</a></strong>.</li></ul></td></tr><tr class="even"><td style="background: #dfd"></td></tr><tr class="odd"><td><p><strong>Distribute it as part of Fiji</strong></p></td></tr><tr class="even"><td><p><strong>Steps</strong></p></td></tr><tr class="odd"><td style="background: #dfd; vertical-align: top"><ul><li>Make a post on the <strong><a href="Forum" title="wikilink">ImageJ forum</a></strong> to initiate a request.</li></ul></td></tr><tr class="even"><td style="vertical-align: top"></td></tr><tr class="odd"><td><p><strong>Serve it from a website as a download</strong></p></td></tr><tr class="even"><td><p><strong>Steps</strong></p></td></tr><tr class="odd"><td><ul><li>Create an archive (TAR, ZIP, etc.).</li><li>Upload the archive to the relevant web space, and link it.</li></ul></td></tr></tbody></table>
 
-## Sharing your source code
+Sharing your source code
+------------------------
 
 If you want to facilitate good science, please [share your source code](Open_Source ). Otherwise, your extension is a black box and its results are not verifiable.
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p><strong>Host on GitHub in your userspace or organization</strong></p></td>
-</tr>
-<tr class="even">
-<td style="background: #dfd"><p> <strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="background: #dfd; vertical-align: top">
-<ul>
-<li>Create an account on <strong><a href="https://github.com">GitHub</a></strong>.</li>
-<li><strong><a href="https://help.github.com/articles/create-a-repo">Create a new repository</a></strong> for your project.</li>
-<li><strong><a href="https://help.github.com/articles/pushing-to-a-remote">Push your code</a></strong> there.</li>
-<li><strong><a href="Git" title="wikilink">Learn Git</a></strong> to manage your code effectively.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Host on GitHub in the Fiji organization (for <a href="Fiji_contribution_requirements" title="wikilink">extensions distributed with Fiji</a>)</strong></p></td>
-</tr>
-<tr class="even">
-<td style="background: #dfd"><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="background: #dfd; vertical-align: top">
-<ul>
-<li>Request a <strong><a href="Governance" title="wikilink">Fiji maintainer</a></strong> create a repository for you and add you as a contributor.</li>
-<li>Meet the <strong><a href="Fiji_contribution_requirements" title="wikilink">Fiji contribution requirements</a></strong>.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Host on BitBucket</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="vertical-align: top">
-<ul>
-<li>Similar to GitHub, but using <a href="https://bitbucket.org/">BitBucket</a> instead.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Host on SourceForge</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="vertical-align: top">
-<ul>
-<li>Similar to GitHub, but using <a href="http://sourceforge.net/">SourceForge</a> instead.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Serve it from a website as a download</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="vertical-align: top">
-<ul>
-<li>Create an archive (TAR, ZIP, etc.).</li>
-<li>Upload the archive to the relevant web space, and link it.</li>
-<li>Users download and unpack the archive.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+<table><tbody><tr class="odd"><td style="background: #dfd"><p><strong>Host on GitHub in your userspace or organization</strong></p></td></tr><tr class="even"><td><p> <strong>Steps</strong></p></td></tr><tr class="odd"><td style="background: #dfd; vertical-align: top"><ul><li>Create an account on <strong><a href="https://github.com">GitHub</a></strong>.</li><li><strong><a href="https://help.github.com/articles/create-a-repo">Create a new repository</a></strong> for your project.</li><li><strong><a href="https://help.github.com/articles/pushing-to-a-remote">Push your code</a></strong> there.</li><li><strong><a href="Git" title="wikilink">Learn Git</a></strong> to manage your code effectively.</li></ul></td></tr><tr class="even"><td style="background: #dfd"></td></tr><tr class="odd"><td><p><strong>Host on GitHub in the Fiji organization (for <a href="Fiji_contribution_requirements" title="wikilink">extensions distributed with Fiji</a>)</strong></p></td></tr><tr class="even"><td><p><strong>Steps</strong></p></td></tr><tr class="odd"><td style="background: #dfd; vertical-align: top"><ul><li>Request a <strong><a href="Governance" title="wikilink">Fiji maintainer</a></strong> create a repository for you and add you as a contributor.</li><li>Meet the <strong><a href="Fiji_contribution_requirements" title="wikilink">Fiji contribution requirements</a></strong>.</li></ul></td></tr><tr class="even"><td style="vertical-align: top"></td></tr><tr class="odd"><td><p><strong>Host on BitBucket</strong></p></td></tr><tr class="even"><td><p><strong>Steps</strong></p></td></tr><tr class="odd"><td><ul><li>Similar to GitHub, but using <a href="https://bitbucket.org/">BitBucket</a> instead.</li></ul></td></tr><tr class="even"><td style="vertical-align: top"></td></tr><tr class="odd"><td><p><strong>Host on SourceForge</strong></p></td></tr><tr class="even"><td><p><strong>Steps</strong></p></td></tr><tr class="odd"><td><ul><li>Similar to GitHub, but using <a href="http://sourceforge.net/">SourceForge</a> instead.</li></ul></td></tr><tr class="even"><td style="vertical-align: top"></td></tr><tr class="odd"><td><p><strong>Serve it from a website as a download</strong></p></td></tr><tr class="even"><td><p><strong>Steps</strong></p></td></tr><tr class="odd"><td><ul><li>Create an archive (TAR, ZIP, etc.).</li><li>Upload the archive to the relevant web space, and link it.</li><li>Users download and unpack the archive.</li></ul></td></tr></tbody></table>
 
-## Documenting your extension
+Documenting your extension
+--------------------------
 
 Useful extensions deserve corresponding documentation explaining how to use them.
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p><strong>Create an ImageJ wiki page</strong></p></td>
-</tr>
-<tr class="even">
-<td style="background: #dfd"><p> <strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="background: #dfd; vertical-align: top">
-<ul>
-<li><strong><a href="https://imagej.net/index.php?title=Special:UserLogin&amp;returnto=Welcome&amp;type=signup">Create an account</a></strong>.</li>
-<li><strong><a href="https://www.mediawiki.org/wiki/Help:Starting_a_new_page">Create a page</a></strong> for your extension.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Use the ImageJ Information and Documentation Portal (IIDP)</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="vertical-align: top">
-<ul>
-<li>Request an account from an IIDP administrator.</li>
-<li><a href="http://imagejdocu.tudor.lu/doku.php?id=create_new_content">Create a page</a> for your extension.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Add a page to the ImageJ 1.x website</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="vertical-align: top">
-<ul>
-<li>Prepare an HTML page modeled after the <a href="https://imagej.net/plugins/index.html">list of ImageJ 1.x plugins</a>.</li>
-<li>Email it to {% include person content='Rasband' %}, the developer of ImageJ 1.x, and sole maintainer of the <a href="https://imagej.net/index.html">ImageJ 1.x website</a>.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Create your own webpage elsewhere</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="vertical-align: top"><p> (Varies)</p></td>
-</tr>
-</tbody>
-</table>
+<table><tbody><tr class="odd"><td style="background: #dfd"><p><strong>Create an ImageJ wiki page</strong></p></td></tr><tr class="even"><td><p> <strong>Steps</strong></p></td></tr><tr class="odd"><td style="background: #dfd; vertical-align: top"><ul><li><strong><a href="https://imagej.net/index.php?title=Special:UserLogin&amp;returnto=Welcome&amp;type=signup">Create an account</a></strong>.</li><li><strong><a href="https://www.mediawiki.org/wiki/Help:Starting_a_new_page">Create a page</a></strong> for your extension.</li></ul></td></tr><tr class="even"><td style="vertical-align: top"></td></tr><tr class="odd"><td><p><strong>Use the ImageJ Information and Documentation Portal (IIDP)</strong></p></td></tr><tr class="even"><td><p><strong>Steps</strong></p></td></tr><tr class="odd"><td><ul><li>Request an account from an IIDP administrator.</li><li><a href="http://imagejdocu.tudor.lu/doku.php?id=create_new_content">Create a page</a> for your extension.</li></ul></td></tr><tr class="even"><td style="vertical-align: top"></td></tr><tr class="odd"><td><p><strong>Add a page to the ImageJ 1.x website</strong></p></td></tr><tr class="even"><td><p><strong>Steps</strong></p></td></tr><tr class="odd"><td><ul><li>Prepare an HTML page modeled after the <a href="https://imagej.net/plugins/index.html">list of ImageJ 1.x plugins</a>.</li><li>Email it to {% include person content='Rasband' %}, the developer of ImageJ 1.x, and sole maintainer of the <a href="https://imagej.net/index.html">ImageJ 1.x website</a>.</li></ul></td></tr><tr class="even"><td style="vertical-align: top"></td></tr><tr class="odd"><td><p><strong>Create your own webpage elsewhere</strong></p></td></tr><tr class="even"><td><p><strong>Steps</strong></p></td></tr><tr class="odd"><td><p> (Varies)</p></td></tr></tbody></table>
 
 

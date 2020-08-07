@@ -9,6 +9,7 @@ description: test description
 
 Fiji.sc is our server; it hosts [this Wiki](Fiji ), [the downloadable files](Downloads ) and the [Git repositories](https://fiji.sc/cgi-bin/gitweb.cgi).
 
-## Former name
+Former name
+-----------
 
 The artist known as *fiji.sc* was formerly known under the name *Pacific*, which happens to be also {% include wikipedia title='Pacific Ocean' text='the ocean'%} in which the country called *Fiji* is located.

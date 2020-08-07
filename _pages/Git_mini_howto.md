@@ -13,23 +13,27 @@ description: test description
 
 Most of these explanations are meant for the command line users.
 
-## Nomenclature
+Nomenclature
+------------
 
 A quick note on the nomenclature: *fiji.git* refers to the "official" repository on [1](https://github.com/fiji/fiji.git). After cloning it, you will have a local repository with a working directory, which will be referred to as "fiji/" in this document (and "cd fiji/" just tells you to make sure you are in that directory).
 
 If you are unsure about the meaning of any Git term, just consult the [Git glossary](http://git.or.cz/gitwiki/GitGlossary).
 
-# Cloning
+Cloning
+=======
 
 You need to clone *fiji.git*:
 
-`$ git clone `<git://fiji.sc/fiji.git/>
+`$ git clone `[`git://fiji.sc/fiji.git/`](git_//fiji.sc/fiji.git/)
 
-# Contributing
+Contributing
+============
 
 All contributions should go through GitHub [pull request](https://help.github.com/articles/using-pull-requests/)
 
-# Local configuration
+Local configuration
+===================
 
 You need to make sure that Git knows who you are (substitute your name/email here...):
 
@@ -40,7 +44,8 @@ Likewise, if your preferred editor is not *vi*, you might want to do something a
 
 `$ git config --global core.editor xemacs`
 
-# Updating
+Updating
+========
 
 To get the most recent changes, call
 
@@ -49,7 +54,8 @@ To get the most recent changes, call
 
 Note: You should always commit your changes before pulling.
 
-# Running Fiji
+Running Fiji
+============
 
 A simple
 
@@ -58,7 +64,8 @@ A simple
 
 will pick up on all changes, rebuild what needs to be rebuilt, and run Fiji.
 
-# Making changes
+Making changes
+==============
 
 You can [add/modify plugins](Adding_plugins_with_source ), and test by running "make".
 
@@ -93,7 +100,8 @@ Note: a neat trick when you realize that you did not commit after all, is to del
 
 For more advanced Git usage, see "Making changes (advanced)".
 
-# Pushing changes upstream
+Pushing changes upstream
+========================
 
 All commits are purely local before you decide to publish them. You might want to check first what you are going to publish before actually doing that (assuming a branch name "contrib"):
 
@@ -118,19 +126,21 @@ Note: if somebody made changes to the branch in the mean-time, you need to pull 
 
 **Note for CVS/Subversion users**: With Git, it is highly encouraged to commit **first**, **then** pull. Git is really good at branching and merging, and it is better for you to commit a version that you actually tested than to integrate other people's changes before committing. It also helps [finding which commit introduced a regression](Git_bisection ).
 
-# Graphical user interfaces
+Graphical user interfaces
+=========================
 
 There are a few graphical user interfaces for working with Git. You probably want to look at the commit history with *gitk*, and you might want to clone/pull/add/commit/push with *git gui*.
 
-If you are an Eclipse user, you might want to work with the [Eclipse plugin](http://git.or.cz/gitwiki/EclipsePlugin?highlight=\(eclipse\)).
+If you are an Eclipse user, you might want to work with the [Eclipse plugin](http://git.or.cz/gitwiki/EclipsePlugin?highlight=(eclipse)).
 
-# Making changes (advanced)
+Making changes (advanced)
+=========================
 
 Git is aware of three states:
 
-  - the tip of the branch (AKA the last committed version, or "HEAD")
-  - the staging area (also called "the index")
-  - the working directory
+-   the tip of the branch (AKA the last committed version, or "HEAD")
+-   the staging area (also called "the index")
+-   the working directory
 
 Instead of staging whole files, you can pick just a few changes to be staged:
 

@@ -23,62 +23,68 @@ description: test description
 
 Labkit is a plugin for:
 
-  - automatic image segmentation
-  - labeling regions of an image
+-   automatic image segmentation
+-   labeling regions of an image
 
 The automatic image segmentation functionality is comparable to Trainable Weka Segmenation, but it's better suited for large 3d images. And it has a nice Big Data Viewer based editor.
 
-## Installation
+Installation
+------------
 
 Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Labkit/ (For details on how to install an update site click [here](Following_an_update_site ).)
 
-To start Labkit in ImageJ, first open the image you want to work with, and then select Plugins \> Segmentation \> Labkit from the main menu.
+To start Labkit in ImageJ, first open the image you want to work with, and then select Plugins &gt; Segmentation &gt; Labkit from the main menu.
 
-## Quick Start
+Quick Start
+-----------
 
 Follow these steps to segment an image:
 
 1.  Open an image in ImageJ.
-2.  Start Labkit by selecting "Plugins \> Segmentation \> Labkit" from the menu.
-3.  Labkit should start and display the image. If it shows a black window instead of the image: Click {% include key content='press|S' %} and adjust the contrast.
+2.  Start Labkit by selecting "Plugins &gt; Segmentation &gt; Labkit" from the menu.
+3.  Labkit should start and display the image. If it shows a black window instead of the image: Click {% include key content='press\|S' %} and adjust the contrast.
 4.  Select "foreground" (In the side bar of Labkit). Select the pencil tool (top bar of Labkit) and draw on the image.
 5.  Select "background" and the pencil tool, and mark some other region of the image as background.
 6.  In the side bar of Labkit, under the heading "Segmentation" you will find an entry "Classifier \#1". And next to it there is a play button (black triangle). Click it, to train the Classifier. After a moment you will see the automatic segmentation of your image.
-7.  From Labkit's main menu select "Segmentation -\> Show Segmentation Result in ImageJ", to export your segmentation into ImageJ.
+7.  From Labkit's main menu select "Segmentation -&gt; Show Segmentation Result in ImageJ", to export your segmentation into ImageJ.
 
-## Basic Navigation
+Basic Navigation
+----------------
 
 Labkit is based on Big Data Viewer. Navigation the image works as in Big Data Viewer, and many short cuts work too. Click [here](BigDataViewer ) for a description of the short cuts.
 
-  - {% include key content='press|Ctrl|Shift|mouse-wheel' %} to zoom in and out
-  - {% include key content='press|right-click|drag' %} to move the image
-  - {% include key content='press|left-click|drag' %} to rotate a 3d image
-  - {% include key content='press|mouse-wheel' %} to scroll through the z-slices of a 3d image
+-   {% include key content='press\|Ctrl\|Shift\|mouse-wheel' %} to zoom in and out
+-   {% include key content='press\|right-click\|drag' %} to move the image
+-   {% include key content='press\|left-click\|drag' %} to rotate a 3d image
+-   {% include key content='press\|mouse-wheel' %} to scroll through the z-slices of a 3d image
 
-## Tips & Tricks
+Tips & Tricks
+-------------
 
-  - If there's a black window, where the image should be? You might need to change the contrast settings: Click on the image, and then press {% include key content='press|S' %} on the keyboard. A dialog shows up. Use it to adjust the contrast.
-  - There can be more than two labels, just click on the "Add label" button...
-  - Labels can be renamed, by double clicking on them.
-  - To change the label color, just click on the colored rectangle left of the labels name.
-  - {% include key content='press|D|mouse-wheel' %} to change the size of the brush tool.
+-   If there's a black window, where the image should be? You might need to change the contrast settings: Click on the image, and then press {% include key content='press\|S' %} on the keyboard. A dialog shows up. Use it to adjust the contrast.
+-   There can be more than two labels, just click on the "Add label" button...
+-   Labels can be renamed, by double clicking on them.
+-   To change the label color, just click on the colored rectangle left of the labels name.
+-   {% include key content='press\|D\|mouse-wheel' %} to change the size of the brush tool.
 
-## Drawing Tool Shortcuts
+Drawing Tool Shortcuts
+----------------------
 
-  - {% include key content='press|D|left-click' %} to draw with the pencil tool.
-  - {% include key content='press|E|left-click' %} to erase with the pencil tool.
-  - {% include key content='press|F|left click' %} to use the flood fill tool.
-  - {% include key content='press|R|left-click' %} to remove a connected component.
-  - {% include key content='press|N' %} - switch to next label
+-   {% include key content='press\|D\|left-click' %} to draw with the pencil tool.
+-   {% include key content='press\|E\|left-click' %} to erase with the pencil tool.
+-   {% include key content='press\|F\|left click' %} to use the flood fill tool.
+-   {% include key content='press\|R\|left-click' %} to remove a connected component.
+-   {% include key content='press\|N' %} - switch to next label
 
-## Open & Save - Import & Export
+Open & Save - Import & Export
+-----------------------------
 
-  - Things you can save, open, import or export:
-      - Labeling - As \*.tif or \*.labeling
-      - Bitmap - (One layer of the labeling) As \*.tif
-      - Classifier - As \*.classifier, only Labkit is able to work with them.
-      - Segmentation result - As \*.tif, or show to ImageJ
-      - Segmentation's probability Map - As \*.tif, or show in ImageJ
-  - The word "Labeling" is used to refer to the colorfully displayed areas overlayed on top of the image.
-  - Labkit's file format for Labelings is \*.labeling. It works greate for very large files with very few labels. (This file format is likely to be improved and changed in the future.)
-  - The labeling can be saved and opened as \*.tif as well. (This is a good option for not to big images. And can be used by any other tool.)
+-   Things you can save, open, import or export:
+    -   Labeling - As \*.tif or \*.labeling
+    -   Bitmap - (One layer of the labeling) As \*.tif
+    -   Classifier - As \*.classifier, only Labkit is able to work with them.
+    -   Segmentation result - As \*.tif, or show to ImageJ
+    -   Segmentation's probability Map - As \*.tif, or show in ImageJ
+-   The word "Labeling" is used to refer to the colorfully displayed areas overlayed on top of the image.
+-   Labkit's file format for Labelings is \*.labeling. It works greate for very large files with very few labels. (This file format is likely to be improved and changed in the future.)
+-   The labeling can be saved and opened as \*.tif as well. (This is a good option for not to big images. And can be used by any other tool.)

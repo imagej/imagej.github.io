@@ -21,7 +21,8 @@ description: test description
 {% endcapture %}
 {% include info-box name='MRI Perfusion PlugIn ' software='Fiji ' author=author maintainer=maintainer source=source released='February 04<sup>th</sup>, 2015 ' latest-version='February 04<sup>th</sup>, 2015 ' status='experimental, active ' category='[Plugins](Category_Plugins ), [MRI](Category_Perfusion ) ' %}
 
-## Perfusion in MRI
+Perfusion in MRI
+----------------
 
 {% include thumbnail src='/images/pages/Perfusion.png' title='Example of the perfusion curve obtained in the peritumoral region on brain cancer.'%}
 
@@ -31,9 +32,10 @@ The ultimate goal of perfusion MRI is to measure or assess the blood flow irriga
 
 **Update notes:**
 
-  - *Feb-04-2015*: The method is capable to process a image stack with the perfusion gadolinium contrast agent.
+-   *Feb-04-2015*: The method is capable to process a image stack with the perfusion gadolinium contrast agent.
 
-## Perfusion Metrics
+Perfusion Metrics
+-----------------
 
 The quantitative values that our plugin can calculate are listed bellow.
 
@@ -49,16 +51,18 @@ The quantitative values that our plugin can calculate are listed bellow.
 
 ### Time to peak
 
-## How to use
+How to use
+----------
 
 First of all, the perfusion gadolinium contrast agent image sequence has to be transformed into a HyperStack (use the plugin MRI Perfusion/Create HyperStack). It is important here that the image sequence loaded must to have a DICOM header, otherwise the method will fail to transform the image stack into a HyperStack. ALso, the perfusion image sequence that we say here is a image sequence with each brain slice are acquired in a period of time, which usually all the brain is acquired.
 
-After the HyperStack transformation step, you can choose what brain region you want to measure the perfusion metrics values\[1\]. Use the ROI tool provided by ImageJ to do the brain area selection. Before ROI selection, you can choose the two plugin metrics methods: Maps\[2\] and Metrics.
+After the HyperStack transformation step, you can choose what brain region you want to measure the perfusion metrics values[1]. Use the ROI tool provided by ImageJ to do the brain area selection. Before ROI selection, you can choose the two plugin metrics methods: Maps[2] and Metrics.
 
 It will be displayed several tables with the measures calculated in each pixel into the ROI. At the last column of all tables its show the mean values for all pixels into the ROI.
 
 {% include reflist%}
 
 
-1.  The size of the region of interesting influence directly the time consuming of our plugin. Large regions could use several minutes to process all the perfusion metrics
-2.  It is still an experimental method. The maps generated are create in a separeted window. Further updates will merge these maps into the original perfusion image.
+[1] The size of the region of interesting influence directly the time consuming of our plugin. Large regions could use several minutes to process all the perfusion metrics
+
+[2] It is still an experimental method. The maps generated are create in a separeted window. Further updates will merge these maps into the original perfusion image.

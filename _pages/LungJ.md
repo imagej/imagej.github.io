@@ -11,10 +11,11 @@ description: test description
 {% capture source%}
 {% include github org='LWollatz ' repo='LungJ ' %}
 {% endcapture %}
-{% include info-box name='LungJ ' author='[Lasse Wollatz](User_LungJ ) ' maintainer='[Lasse Wollatz](User_LungJ ) ' software='ImageJ/Fiji ' logo='![LungJ-logo.png](/images/pages/LungJ-logo.png "LungJ-logo.png") ' source=source released='Nov 10<sup>st</sup>, 2016 ' latest-version='0.5.1, November 10<sup>th</sup>, 2016 (LungJ v0.5.1) ' status='stable, new ' category='[Segmentation](Category_Segmentation ), [Binary](Category_Binary ), [Filtering](Category_Filtering ), [Image annotation](Category_Image_annotation ) ' %}{% include toc%}
+{% include info-box name='LungJ ' author='[Lasse Wollatz](User_LungJ ) ' maintainer='[Lasse Wollatz](User_LungJ ) ' software='ImageJ/Fiji ' logo='<img src="/images/pages/LungJ-logo.png" title="fig:LungJ-logo.png" width="200" alt="LungJ-logo.png" /> ' source=source released='Nov 10<sup>st</sup>, 2016 ' latest-version='0.5.1, November 10<sup>th</sup>, 2016 (LungJ v0.5.1) ' status='stable, new ' category='[Segmentation](Category_Segmentation ), [Binary](Category_Binary ), [Filtering](Category_Filtering ), [Image annotation](Category_Image_annotation ) ' %}{% include toc%}
 
 
-## Installation
+Installation
+------------
 
 1\) {% include bc content='Help | Update...'%}
 
@@ -36,7 +37,8 @@ description: test description
 
 10\) Future versions of LungJ will be updated together with the normal Fiji plugin updates.
 
-## Function Documentation
+Function Documentation
+----------------------
 
 ### 3D Blocks - Concatenate (Concatenate\_3D)
 
@@ -190,7 +192,7 @@ Applies the Neighbors filter from Trainable Segmentation/src/main/java/trainable
 
 {% include bc content='Plugins | LungJ | Other | Set Calibration'%}
 
-Allows to set the Calibration of an image, similar to Image \> Properties but with pixel value calibration function included.
+Allows to set the Calibration of an image, similar to Image &gt; Properties but with pixel value calibration function included.
 
 ### Stretch Histogram (Stretch\_Histogram)
 
@@ -204,10 +206,11 @@ Linearly stretch the values of an image.
 
 Allows to compare WEKA filters visually. Note that the Gabor filter is currently not working.
 
-## Publications
+Publications
+------------
 
 Please note that LungJ, as well as other plug-ins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
-  - {% include citation last1='Wollatz ' first1='Lasse ' last2='Johnston ' first2='Steven J. ' last3='Lackie ' first3='Peter M. ' last4='Cox ' first4='Simon J. ' title='LungJ v0.5.1 ' type='Code ' year='2016 ' month='November ' publisher='University of Southampton ' doi='10.5258/SOTON/401280 ' url='http://eprints.soton.ac.uk/id/eprint/401280 ' %}
+-   {% include citation last1='Wollatz ' first1='Lasse ' last2='Johnston ' first2='Steven J. ' last3='Lackie ' first3='Peter M. ' last4='Cox ' first4='Simon J. ' title='LungJ v0.5.1 ' type='Code ' year='2016 ' month='November ' publisher='University of Southampton ' doi='10.5258/SOTON/401280 ' url='http://eprints.soton.ac.uk/id/eprint/401280 ' %}
 
      

@@ -11,19 +11,19 @@ The deadlines for the [ challenge on EM (machine-learning-based) automatic segme
 
 The new important dates are:
 
-  - **Deadline for submitting results**: ~~February 1<sup>st</sup>~~ March 1<sup>st</sup>, 2012
+-   **Deadline for submitting results**: ~~February 1<sup>st</sup>~~ March 1<sup>st</sup>, 2012
 
-<!-- end list -->
+<!-- -->
 
-  - **Notification of the evaluation**: ~~February 21<sup>st</sup>~~ March 2<sup>nd</sup>, 2012
+-   **Notification of the evaluation**: ~~February 21<sup>st</sup>~~ March 2<sup>nd</sup>, 2012
 
-<!-- end list -->
+<!-- -->
 
-  - **Deadline for submitting abstracts**: ~~March 1<sup>st</sup>~~ March 9<sup>th</sup>, 2012
+-   **Deadline for submitting abstracts**: ~~March 1<sup>st</sup>~~ March 9<sup>th</sup>, 2012
 
-<!-- end list -->
+<!-- -->
 
-  - **Notification of acceptance/presentation type**: ~~March 15<sup>th</sup>~~ March 16<sup>th</sup>, 2012
+-   **Notification of acceptance/presentation type**: ~~March 15<sup>th</sup>~~ March 16<sup>th</sup>, 2012
 
 Again, **the challenge is open to everybody**, the only requirement is to register in the [server](https://fiji.sc/isbi-challenge/home/) to obtain a user name and password to be able to download the training and test datasets, and upload your results.
 

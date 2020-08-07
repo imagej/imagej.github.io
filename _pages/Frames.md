@@ -11,7 +11,8 @@ description: test description
 
 These are a set of plugins that are used to work with data in the frame direction. The F\_Project plugin projects the images in the frame direction into a lower dimension using different methods. The F\_Profiler pulgin plots the contents of an ROI through the frame direction. The Frame\_Slider provides sliders to step though the frames of a hyperstacks based on the variable/values in the slice labels.
 
-## F\_Project
+F\_Project
+----------
 
 <img src="/images/pages/F Project ScreenShot.jpg" width="400"/>
 
@@ -38,7 +39,7 @@ The following summary methods as provided:
 **Centroid** Centroid  
 **Fit** CurveFitter fitting - frames are model parameters, r<sup>2</sup>, Ψ<sup>2</sup>  
 **Deviation** Appends a frame with the appropriate deviation from an appropriate selected summary.  
-If the first slice of every frame has a Short Label that can be split by the regex " = |=| ", e.g., var = fval, and the list has unique elements, the float fval values will be used in the fittings instead of the frame number.
+If the first slice of every frame has a Short Label that can be split by the regex " = \|=\| ", e.g., var = fval, and the list has unique elements, the float fval values will be used in the fittings instead of the frame number.
 
 There are also static methods provided, with the same names, albeit, all lower case, with two syntaxis: `method(ImagePlus,slices,frames)`, `method(ImagePlus)`, `save fit(..., int), fit(..., String)`.
 
@@ -129,21 +130,25 @@ OR with more resilience to outliers . . .
 `      }`  
 `   }, mask, new ImagePlus[0]);`
 
-## F\_Profilier
+F\_Profilier
+------------
 
 <img src="/images/pages/F Profiler Screenshot.jpg" width="400"/>  
 Given a Hyperstack image, draw an ROI and start plugin. Manipulate the ROI and the plot changes. Check out Interactive\_Fitting plugin.
 
-## Frame\_Slider
+Frame\_Slider
+-------------
 
 <img src="/images/pages/Frame Slider Screenshot.jpg" width="400"/>  
 When you have one or more Hyperstacks open and want to step though the images per the variables in the slice labels, start the Frame\_Slider with the dataset with the most variables, select the other datasets, and step through them using the sliders. The datasets should all be governed by the same set of variables, i.e., The two left images are the raw data with repeats and the two right images are the mean and SNR projections, to see why click the scrollbars.
 
-## Install
+Install
+-------
 
-Unzip [Frames.zip](https://imagej.net/_images/3/3d/Frames.zip) into ImageJ1 plugins (File\>Show Folder\>Plugins) or plugins/jars directories. Source code in jar file.
+Unzip [Frames.zip](https://imagej.net/_images/3/3d/Frames.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code in jar file.
 
-## ChangeLog
+ChangeLog
+---------
 
 ` * 1 April 2018 - Initial Version.`  
 ` * 1 April 2019 - Updated.`

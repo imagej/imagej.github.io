@@ -7,7 +7,8 @@ categories: Plugins,Scripting
 description: test description
 ---
 
-## Purpose
+Purpose
+-------
 
 As simple as that: a dialog opens to ask for a time delay (in seconds).
 
@@ -15,34 +16,34 @@ After such delay, a screenshot of the desktop is taken.
 
 The script is maintained by Albert Cardona.
 
-## Code
+Code
+----
 
-``` python
-# Take a snapshot after a delay specified in a dialog
-# 
-# The plugin has to fork, which is done by:
-# 1 - declaring a function to do the work, 'snasphot'
-# 2 - invoking the function via thread.start_new_thread,
-#     which runs it in a separate thread.
+    # Take a snapshot after a delay specified in a dialog
+    # 
+    # The plugin has to fork, which is done by:
+    # 1 - declaring a function to do the work, 'snasphot'
+    # 2 - invoking the function via thread.start_new_thread,
+    #     which runs it in a separate thread.
 
 
-import thread
-import time
+    import thread
+    import time
 
-def snapshot(delay):
-   time.sleep(delay)
-   IJ.doCommand('Capture Screen ')
+    def snapshot(delay):
+       time.sleep(delay)
+       IJ.doCommand('Capture Screen ')
 
-gd = GenericDialog('Delay')
-gd.addSlider('Delay (secs.): ', 0, 20, 5)
-gd.showDialog()
+    gd = GenericDialog('Delay')
+    gd.addSlider('Delay (secs.): ', 0, 20, 5)
+    gd.showDialog()
 
-if not gd.wasCanceled():
-    # the 'extra' comma signals tuple, a kind of list in python.
-    thread.start_new_thread(snapshot, (int(gd.getNextNumber()),))
-```
+    if not gd.wasCanceled():
+        # the 'extra' comma signals tuple, a kind of list in python.
+        thread.start_new_thread(snapshot, (int(gd.getNextNumber()),))
 
-## See also
+See also
+--------
 
 [Jython Scripting](Jython_Scripting )
 

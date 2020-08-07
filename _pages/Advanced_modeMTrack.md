@@ -7,7 +7,8 @@ categories:
 description: test description
 ---
 
-## Object recognition methods
+Object recognition methods
+--------------------------
 
 In advanced mode there are three distinct methods to identify microtubules, MSER, Watershedding followed by Hough Transform and MSER followed by Hough Transform. The object recognition for microtubules is performed on a preprocessed image, on that preprocessed image a Canny edge detector followed by a mean filter with a radius determined by the PSF of the microscope is applied, in the simple mode the edge enhancement factor is simply 1. In this mode this is adjustable, increasing this parameter causes the microtubules to appear thicker on the preprocessed image. This factor can be increased if certain microtubules are not properly detected by the Object recognition method of choice.
 
@@ -31,21 +32,22 @@ The first panel for this mode is shown below.
 
 The next button appears on this panel only after the user has made the choice of the object recognition method.
 
-## Tracking options
+Tracking options
+----------------
 
 After clicking the next button the user has several options to choose from before starting the tracking.
 
 <img src="/images/pages/Advanced4.png" width="300"/>
 
-  - Deselect and select ends
+-   Deselect and select ends
 
-Before starting the actual tracking of the dynamically growing microtubules, the program will give you several options. Before choosing endpoints to remove or add you check all frames of the movie by moving the slider in the “Deselect and select ends” dialog. Select or deselect ends. If an end was wrongly recognized or two points are too close to each other you can deselect an end by left clicking on it in the image (will appear as pink circle instead of green). The program will remember and allow to re-select this end by clicking left click again near to the end point of interest (the pink circle becomes green again). In case an end has not been recognized or a randomly nucleated end has to be selected, use Shift + left click to select a user defined end (orange circle will mark the end). Making a left click near the user defined seed end deselects it and marks it as red, the user can make as many clicks to select the ends they want to. Read more on [microtubule polarity and (+) end vs. (-) end tracking](microtubule_polarity_and_+_end_vs._-_end_tracking ).
+Before starting the actual tracking of the dynamically growing microtubules, the program will give you several options. Before choosing endpoints to remove or add you check all frames of the movie by moving the slider in the “Deselect and select ends” dialog. Select or deselect ends. If an end was wrongly recognized or two points are too close to each other you can deselect an end by left clicking on it in the image (will appear as pink circle instead of green). The program will remember and allow to re-select this end by clicking left click again near to the end point of interest (the pink circle becomes green again). In case an end has not been recognized or a randomly nucleated end has to be selected, use Shift + left click to select a user defined end (orange circle will mark the end). Making a left click near the user defined seed end deselects it and marks it as red, the user can make as many clicks to select the ends they want to. Read more on [microtubule polarity and (+) end vs. (-) end tracking](microtubule_polarity_and_(+)_end_vs._(-)_end_tracking "wikilink").
 
-  - Select time
+-   Select time
 
 The tracking is performed from the first frame till the end frame by default, if the user however wishes to alter the start and the end frame of tracking they can do so here. The tracking will then be performed from the user chosen start frame till the user chosen end frame.
 
-  - Select Segmentation method
+-   Select Segmentation method
 
 For the dynamic channel the user here has the option of selecting just [MSER as the segmentation method](MSER_as_the_segmentation_method ) or [watershed followed by MSER](watershed_followed_by_MSER ), the first method is the default method in the simple mode. The second method is provided here to ensure correct assignment of the end points over the time frames when microtubules get too close to each other and collide for example. The parameter selection required for each of the two segmentation methods is made in the next panel to which the user can flip to after making this choice.
 

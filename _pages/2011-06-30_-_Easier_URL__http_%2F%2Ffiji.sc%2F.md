@@ -13,6 +13,6 @@ The original URL, http://pacific.mpi-cbg.de/ is still valid, and in fact, the se
 
 In related news, we added the [Google +1 button](http://www.google.com/+1/button/) to the main page.
 
-As always, [your feedback](mailto:fiji-devel@googlegroups.com) is welcome\!
+As always, [your feedback](mailto:fiji-devel@googlegroups.com) is welcome!
 
 

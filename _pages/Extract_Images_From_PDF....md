@@ -16,9 +16,7 @@ A dialog pops up to pick a file. Choose a .pdf file, and all its images will be 
 
 If the PDF file is on the web, use a macro or script to call the plugin with the URL as argument:
 
-``` java
-  IJ.runPlugIn("io.Extract_Images_From_PDF", "http://www.example.org/slides.pdf")
-```
+      IJ.runPlugIn("io.Extract_Images_From_PDF", "http://www.example.org/slides.pdf")
 
 For example, open the Jython Interpreter from Plugins / Scripting / Jython Interpreter (See [Scripting Help](Scripting_Help )), and paste the above with a desired .pdf URL argument.
 

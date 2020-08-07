@@ -13,13 +13,11 @@ In this context, as of today, Fiji switches its editor to the ImageJ2 script edi
 
 The main benefit is that the script editor is now fully plug 'n play: adding the .jar file implementing a new scripting language will automatically add it to the script editor language menu; even custom syntax highlighting can be added that way.
 
-The biggest bonus for users, however, is that you can use the *@Parameter* framework for painless user interaction, even from ImageJ 1.x macros\! Example:
+The biggest bonus for users, however, is that you can use the *@Parameter* framework for painless user interaction, even from ImageJ 1.x macros! Example:
 
-``` java
-// @String(label = "What is your first name?") name
-print("Hello, " + name + "!");
-```
+    // @String(label = "What is your first name?") name
+    print("Hello, " + name + "!");
 
-Enjoy\!
+Enjoy!
 
  

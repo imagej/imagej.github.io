@@ -19,20 +19,20 @@ However, once you become more comfortable with Maven, we suggest using [a SNAPSH
 
 For example, while you develop your plugin, you might use the version `1.0.0-SNAPSHOT` to indicate that this is not the final `1.0.0` version but leads up to it. Once you are happy with the plugin in its current form, switch to `1.0.0`. Note, however, that you will cause problems if you later change the sources of the final `1.0.0` version (i.e., without first advancing the version in the `pom.xml` file).
 
-# How are dependency versions determined?
+How are dependency versions determined?
+=======================================
 
 In many `pom.xml` files which extend `pom-scijava`, you can see that the dependency versions are omitted. The versions are defined (or "managed") by the pom-scijava parent configuration as part of its [Bill of Materials](Bill_of_Materials )—e.g., {% include github org='scijava ' repo='pom-scijava ' tag='pom-scijava-14.0.0 ' path='pom.xml\#L218-L219 ' label='here ' %} is where the ImageJ 1.x version is defined.
 
-  - Browse the latest `pom-scijava` {% include github org='scijava ' repo='pom-scijava ' path='pom.xml ' label='here ' %}.
-  - Browse the available versions of ImageJ 1.x [here](http://maven.imagej.net/content/groups/public/net/imagej/ij/).
+-   Browse the latest `pom-scijava` {% include github org='scijava ' repo='pom-scijava ' path='pom.xml ' label='here ' %}.
+-   Browse the available versions of ImageJ 1.x [here](http://maven.imagej.net/content/groups/public/net/imagej/ij/).
 
-# How do I determine which Maven projects (i.e., dependencies) I actually need?
+How do I determine which Maven projects (i.e., dependencies) I actually need?
+=============================================================================
 
 One way to check is using the dependency plugin like so:
 
-``` bash
-mvn dependency:analyze
-```
+    mvn dependency:analyze
 
 This will tell you:
 
@@ -41,55 +41,53 @@ This will tell you:
 
 Note that this will only work if your project compiles successfully. In other words, it is easier to start with "too many" dependencies and pare down, rather than trying to "build up" from zero.
 
-# What's this: *Property 'imagej.app.directory' or 'scijava.app.directory' unset; Skipping copy-jars*
+What's this: *Property 'imagej.app.directory' or 'scijava.app.directory' unset; Skipping copy-jars*
+===================================================================================================
 
-This is part of the {% include github org='imagej ' repo='imagej-maven-plugin ' label='imagej-maven-plugin ' %} (enabled for you by pom-scijava). For pom-scijava\>=24.0.0, imagej-maven-plugin was replaced by {% include github org='scijava ' repo='scijava-maven-plugin ' label='scijava-maven-plugin ' %}.  
+This is part of the {% include github org='imagej ' repo='imagej-maven-plugin ' label='imagej-maven-plugin ' %} (enabled for you by pom-scijava). For pom-scijava&gt;=24.0.0, imagej-maven-plugin was replaced by {% include github org='scijava ' repo='scijava-maven-plugin ' label='scijava-maven-plugin ' %}.  
 As you suspected, it copies your plugin's *.jar* file together with its dependencies to your ImageJ jars or plugins folder. To do so, you have to provide the path to your ImageJ.app (or Fiji.app) as an additional argument to Maven:
 
-``` bash
-mvn -Dimagej.app.directory=YourPath/ImageJ.app
-```
+    mvn -Dimagej.app.directory=YourPath/ImageJ.app
 
-or for pom-scijava\>=24.0.0,
+or for pom-scijava&gt;=24.0.0,
 
-``` bash
-mvn -Dscijava.app.directory=YourPath/ImageJ.app
-```
+    mvn -Dscijava.app.directory=YourPath/ImageJ.app
 
 You can cause this to happen automatically by creating a file `$HOME/.m2/settings.xml` where `$HOME` is your home directory, with the following contents:
 
-``` xml
-<settings>
-    <profiles>
-        <profile>
-            <id>imagej</id>
-            <activation>
-                <file>
-                    <exists>${env.HOME}/Desktop/Fiji.app</exists>
-                </file>
-            </activation>
-            <properties>
-                <imagej.app.directory>${env.HOME}/Desktop/Fiji.app</imagej.app.directory>
-                <delete.other.versions>true</delete.other.versions>
-            </properties>
-        </profile>
-    </profiles>
-</settings>
-```
+    <settings>
+        <profiles>
+            <profile>
+                <id>imagej</id>
+                <activation>
+                    <file>
+                        <exists>${env.HOME}/Desktop/Fiji.app</exists>
+                    </file>
+                </activation>
+                <properties>
+                    <imagej.app.directory>${env.HOME}/Desktop/Fiji.app</imagej.app.directory>
+                    <delete.other.versions>true</delete.other.versions>
+                </properties>
+            </profile>
+        </profiles>
+    </settings>
 
 With such user-wide settings in place, all your Maven builds will automatically copy the build artifacts into your ImageJ installation in `$HOME/Desktop/Fiji.app`. Of course, you can change this path to whatever you like.
 
-# How to use my own, custom ImageJ version?
+How to use my own, custom ImageJ version?
+=========================================
 
 The dependencies specified in *pom.xml* are only used to compile your .jar file. If you set the *imagej.app.directory* property properly, it will copy things into the *jars/* subdirectory of the location you pointed the property to.
 
-# My software depends on a *.jar* file that is not available via Maven\!
+My software depends on a *.jar* file that is not available via Maven!
+=====================================================================
 
 Write to the [ImageJ Forum](http://forum.imagej.net/) seeking assistance. The best solution is to get your dependency deployed to the [ImageJ Maven repository](https://maven.imagej.net/).
 
 See [Playing Tradeoffs with Maven](https://www.cloudbees.com/blog/playing-trade-offs-maven) for an in-depth discussion of various solutions to this issue.
 
-# Can I call *svnversion* via Maven?
+Can I call *svnversion* via Maven?
+==================================
 
 Typically you want to do that to put the current revision into an About box or something similar.
 
@@ -99,38 +97,35 @@ The pom-scijava parent uses the buildnumber-maven-plugin to embed the SCM revisi
 
 Your About dialog box can access the information by adding a dependency on *scijava-common* like this:
 
-``` xml
-<dependencies>
-  <dependency>
-    <groupId>org.scijava</groupId>
-    <artifactId>scijava-common</artifactId>
-  </dependency>
-</dependencies>
-```
+    <dependencies>
+      <dependency>
+        <groupId>org.scijava</groupId>
+        <artifactId>scijava-common</artifactId>
+      </dependency>
+    </dependencies>
 
 and then using code like this:
 
-``` java
-import org.scijava.util.VersionUtils;
+    import org.scijava.util.VersionUtils;
 
-...
-    String version = VersionUtils.getVersion(MyBeautifulPlugin.class);
-```
+    ...
+        String version = VersionUtils.getVersion(MyBeautifulPlugin.class);
 
-# How do I make my modified project available to a depending project using Maven?
+How do I make my modified project available to a depending project using Maven?
+===============================================================================
 
 See [Using snapshot couplings during development](Architecture#Using_snapshot_couplings_during_development ).
 
-# How can I run individual tests with Maven?
+How can I run individual tests with Maven?
+==========================================
 
 As described [here](http://maven.apache.org/surefire/maven-surefire-plugin/examples/single-test.html):
 
-``` bash
-mvn -Dtest='TestCircle#mytest' test
-```
+    mvn -Dtest='TestCircle#mytest' test
 
-# Where can I find more information about Maven?
+Where can I find more information about Maven?
+==============================================
 
-See the [Maven](Maven ) page\!
+See the [Maven](Maven ) page!
 
  

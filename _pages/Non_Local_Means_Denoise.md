@@ -17,7 +17,8 @@ Pascal Behnel, {% include person content='Twagner' %}
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji ' name='Non Local Means Denoise ' maintainer=maintainer author=author filename='ij\_nl\_means.jar [\[1](https://github.com/thorstenwagner/ij-nl-means/releases/latest) \] ' source='GitHub [\[2](https://github.com/jumpfunky/ij-nl-means) \] ' latest-version='v1.4.6 (13 March 2016) ' status='maintaining ' category='[:Category:Plugins](Category_Plugins ) ' %}
 
-# Purpose
+Purpose
+=======
 
 This is an ImageJ plugin for denosing images via the non-local-means algorithm descriped in
 
@@ -31,25 +32,29 @@ It is numerically optimized and multithreaded. It works with all image types (RG
 
 This plugin was developed within the scope of a study work of Pascal Behnel and is maintained by Thorsten Wagner (Both are members of the Biomedical Imaging Group).
 
-# Settings
+Settings
+========
 
 **Sigma:** The sigma of the noise.
 
-**Smoothing factor:** In most cases, the default value (1) should not be changed. However, sometimes a more smoothed image is desired which can be achieved by selecting values \> 1.
+**Smoothing factor:** In most cases, the default value (1) should not be changed. However, sometimes a more smoothed image is desired which can be achieved by selecting values &gt; 1.
 
 **Auto estimate sigma:** If this option is selected, the sigma is automatically estimated by the method descriped in *Immerkaer, J., 1996. Fast noise variance estimation. Computer Vision and Image Understanding.*
 
 Both, the value for the (estimated) sigma and the smoothing factor are saved in the imagej preferences and are accessible with the keys "nlmean.sigma" / "nlmeans.smoothingfactor".
 
-# Example
+Example
+=======
 
 The left image shows a noisy (sigma=25) image of lena and right image the denoised version using the non local means plugin: <img src="/images/pages/Lena-noise-25.png" width="250"/> <img src="/images/pages/Lena-denoised.png" width="250"/>
 
-# Installation
+Installation
+============
 
 You could simply use our update site "[biomedgroup](https://fiji.sc/List_of_update_sites)" to install the non local means plugin or copy the jar file into your plugins folder.
 
-# How to cite
+How to cite
+===========
 
 We think the best way is to cite the formal method and the used implementation:
 

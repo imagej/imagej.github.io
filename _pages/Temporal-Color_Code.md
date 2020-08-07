@@ -7,7 +7,7 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-![ 256px | Stack of Listeria Movement ](/images/pages/K listeria animated.gif " 256px | Stack of Listeria Movement ") ![ 256px | Temporal-Color Coded](/images/pages/K temporal color coded listeria.png " 256px | Temporal-Color Coded")
+![ 256px \| Stack of Listeria Movement ](/images/pages/K listeria animated.gif "fig: 256px | Stack of Listeria Movement ") ![ 256px \| Temporal-Color Coded](/images/pages/K temporal color coded listeria.png "fig: 256px | Temporal-Color Coded")
 
 
 {% capture author%}
@@ -19,13 +19,15 @@ description: test description
 {% endcapture %}
 {% include info-box name='Temporal-Color Code ' software='Fiji ' author=author maintainer=' [Kota Miura](http://cmci.embl.de) ([1](mailto:miura@embl.de)) ' source=source released='29 Nov 2010 ' latest-version='29 Nov 2010 ' status='beta ' %}
 
-## Temporal-Color Code
+Temporal-Color Code
+-------------------
 
 Generates a temporal-color coded XY 2D image (above right) from HyperStack (above left). Works with both 2D time series and 3D time series.
 
-  - Be sure to set the dimensional sizes (especially Z and T) properly with Image/Properties.
+Be sure to set the dimensional sizes (especially Z and T) properly with Image/Properties.  
 
-# Work Flow
+Work Flow
+=========
 
 With a hyperstack window activated (at the most front among other images), select **Image/Hyperstacks/Temporal-Color** Code.
 

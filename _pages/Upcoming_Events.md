@@ -9,8 +9,9 @@ description: test description
 
 Please see [this list on the Image.sc Forum](https://forum.image.sc/t/upcoming-image-analysis-events/19912) of upcoming conferences, courses, and other events in the scientific imaging community.
 
-## Past events
+Past events
+-----------
 
-  - [Presentations](Presentations ) – from past conferences and workshops
-  - [Conferences](Conferences ) – past conferences focused on ImageJ
-  - [Hackathons](Hackathons ) – past software developer gatherings
+-   [Presentations](Presentations ) – from past conferences and workshops
+-   [Conferences](Conferences ) – past conferences focused on ImageJ
+-   [Hackathons](Hackathons ) – past software developer gatherings

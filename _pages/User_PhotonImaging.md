@@ -7,9 +7,10 @@ categories:
 description: test description
 ---
 
-## Photon Imaging
+Photon Imaging
+--------------
 
------
+------------------------------------------------------------------------
 
 **About this project**
 
@@ -21,21 +22,21 @@ This plugin for ImageJ is able to process single photon event data, by locating 
 
 The project can be found on GitHub via https://github.com/penuts7644/PhotonImaging.
 
------
+------------------------------------------------------------------------
 
 **Getting set up**
 
 This plugin requires at least Java 8 to function. Make sure that ImageJ is installed on your Windows/Mac/Linux device and that ImageJ uses Java 8. The source has been written in IntelliJ IDEA 2016 and the project uses Maven for package management and building.
 
------
+------------------------------------------------------------------------
 
 **How to install**
 
-There are two ways of installing the plugin. For developers, who cloned this project and build a jar file via maven, you can install the plugin in ImageJ via 'Plugins\>Install PlugIn...'. Users can enable the update site 'PhotonImaging' via 'Update...\>Manage update sites'. This will prompt you to download the plugin the next time ImageJ searches for updates.
+There are two ways of installing the plugin. For developers, who cloned this project and build a jar file via maven, you can install the plugin in ImageJ via 'Plugins&gt;Install PlugIn...'. Users can enable the update site 'PhotonImaging' via 'Update...&gt;Manage update sites'. This will prompt you to download the plugin the next time ImageJ searches for updates.
 
-After you installed the plugin, restart ImageJ. When correctly installed, you'll now have 'Plugins\>Photon Image Processor' available. If you have enabled the update site, you will automatically receive updates for the plugin when their released.
+After you installed the plugin, restart ImageJ. When correctly installed, you'll now have 'Plugins&gt;Photon Image Processor' available. If you have enabled the update site, you will automatically receive updates for the plugin when their released.
 
------
+------------------------------------------------------------------------
 
 **How to use this plugin**
 

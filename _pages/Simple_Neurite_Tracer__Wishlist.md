@@ -12,44 +12,44 @@ description: test description
 
 This is a list of the most commonly requested (or most important) wishlist items for Simple Neurite Tracer.
 
-  - Add a page to the wiki about accuracy considerations, particularly for people who are measuring lengths of processes.
+-   Add a page to the wiki about accuracy considerations, particularly for people who are measuring lengths of processes.
 
-<!-- end list -->
+<!-- -->
 
-  - Path finding and filling are very memory hungry in large stacks. The data structures for storing the progress of these searches should be much more efficient.
+-   Path finding and filling are very memory hungry in large stacks. The data structures for storing the progress of these searches should be much more efficient.
 
-<!-- end list -->
+<!-- -->
 
-  - It would be nice to be able to export paths to NeuroML
+-   It would be nice to be able to export paths to NeuroML
 
-<!-- end list -->
+<!-- -->
 
-  - The "fill volume" option works well, but currently isn't rendered in the 3D viewer and doesn't calculate radii around the path for export. It would be useful to fit spheres within the fill to optimize the midpoint and generate radii.
+-   The "fill volume" option works well, but currently isn't rendered in the 3D viewer and doesn't calculate radii around the path for export. It would be useful to fit spheres within the fill to optimize the midpoint and generate radii.
 
-<!-- end list -->
+<!-- -->
 
-  - Make the Tubular Geodesics plugins available through the Fiji [Updater](Updater ).
+-   Make the Tubular Geodesics plugins available through the Fiji [Updater](Updater ).
 
-<!-- end list -->
+<!-- -->
 
-  - There should be an Undo option when tracing - a big job to implement, unfortunately
+-   There should be an Undo option when tracing - a big job to implement, unfortunately
 
-<!-- end list -->
+<!-- -->
 
-  - The way that fills are stored in the .traces file format is very inefficient at the moment - it stores enough information to be able to restart the fill from the exact state that the search reached, and this isn't really necessary.
+-   The way that fills are stored in the .traces file format is very inefficient at the moment - it stores enough information to be able to restart the fill from the exact state that the search reached, and this isn't really necessary.
 
------
+------------------------------------------------------------------------
 
 Done:
 
-  - An option to optionally colour the paths by their SWC type
-  - An option to set paths to a particular colour
-  - An option to export paths as SWC
-  - An option to export all neurons as SWC files, i.e. one per connected set of paths
-  - You should be able to split paths
-  - You should be able to merge branches that meet at a single point. This is important for when people forget to use the join modifier when creating a branch. The suggested course of action is to go back and create a tiny joining path between the original process and the branch. However, to avoid having this additional tiny branch, it would be best to be able to merge them
-  - It has been requested that for RGB images, the tracer should continue to convert the image stack to luminance values for tracing internally, but in the interface should instead display the full colour images. I agree, but would like to go further and add an option to display any one of:
-      - The original image data.
-      - The values which are being traced on, which might be preprocessed or just a simple transformation of the original data
-  - The "fit volume" option is very naive, and doesn't work well for noisy stacks. For clear processes it's still a nice way to visualize the traces, but it should be replaced by a better algorithm. Update: this option should be deprecated - for reconstruction it's vastly better to use [the Tubular Geodesics method](Simple_Neurite_Tracer__Tubular_Geodesics ).
-  - You should be able to do all the basic tracing operations in the 3D Viewer. e.g. selecting the start point, selecting the subsequent points, and creating joins and branches. This is partially implemented now - you can try switching between the "hand" and "wand" tool and clicking in the 3D viewer. There's no visual feedback yet for what you're doing, however. Ideally it would be nice not to have to switch tool, as well
+-   An option to optionally colour the paths by their SWC type
+-   An option to set paths to a particular colour
+-   An option to export paths as SWC
+-   An option to export all neurons as SWC files, i.e. one per connected set of paths
+-   You should be able to split paths
+-   You should be able to merge branches that meet at a single point. This is important for when people forget to use the join modifier when creating a branch. The suggested course of action is to go back and create a tiny joining path between the original process and the branch. However, to avoid having this additional tiny branch, it would be best to be able to merge them
+-   It has been requested that for RGB images, the tracer should continue to convert the image stack to luminance values for tracing internally, but in the interface should instead display the full colour images. I agree, but would like to go further and add an option to display any one of:
+    -   The original image data.
+    -   The values which are being traced on, which might be preprocessed or just a simple transformation of the original data
+-   The "fit volume" option is very naive, and doesn't work well for noisy stacks. For clear processes it's still a nice way to visualize the traces, but it should be replaced by a better algorithm. Update: this option should be deprecated - for reconstruction it's vastly better to use [the Tubular Geodesics method](Simple_Neurite_Tracer__Tubular_Geodesics ).
+-   You should be able to do all the basic tracing operations in the 3D Viewer. e.g. selecting the start point, selecting the subsequent points, and creating joins and branches. This is partially implemented now - you can try switching between the "hand" and "wand" tool and clicking in the 3D viewer. There's no visual feedback yet for what you're doing, however. Ideally it would be nice not to have to switch tool, as well

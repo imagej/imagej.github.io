@@ -17,11 +17,13 @@ description: test description
 {% endcapture %}
 {% include info-box name='Colocalization Threshold ' software='ImageJ - Fiji ' author='Tony Collins (and others?) ' maintainer=maintainer filename='Colocalization.jar ' source=source latest-version='june 2009 ' website='[Colocalization Analysis\#Colocalization\_Threshold](Colocalization_Analysis#Colocalization_Threshold ) ' status='no longer actively supported, unlikely to be stable enough for real use. Use [Coloc\_2](Coloc_2 ) ' %}
 
-## Purpose
+Purpose
+-------
 
 Sets the thresholds for colocalization analysis, and also calculates Manders coefficients, 2D histogram / scatter plot, and other stats.
 
-## Documentation
+Documentation
+-------------
 
 <span style="color:red">Note: this plugin is now deprecated. You should use the newer [Coloc 2](Coloc_2 ) plugin instead.</span>
 

@@ -12,17 +12,17 @@ description: test description
 
 To activate it:
 
-  - [{% include bc content='Help|Update...'%}](Update_Sites )
-  - Click *Manage update sites*
-  - Check one of the associated update sites:
-      - *ImagingBook*
-      - *ImagingBookEn1*
-      - *ImagingBookEn2*
-      - *ImagingBookDe2*
-      - *ImagingBookDe3*
-  - Click *Close*
+-   [{% include bc content='Help|Update...'%}](Update_Sites )
+-   Click *Manage update sites*
+-   Check one of the associated update sites:
+    -   *ImagingBook*
+    -   *ImagingBookEn1*
+    -   *ImagingBookEn2*
+    -   *ImagingBookDe2*
+    -   *ImagingBookDe3*
+-   Click *Close*
 
 Some files should appear on the list with *Status/Action* of *Install it*.
 
-  - Click *Apply changes*
-  - Restart ImageJ
+-   Click *Apply changes*
+-   Restart ImageJ

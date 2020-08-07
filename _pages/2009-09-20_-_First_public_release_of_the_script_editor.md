@@ -11,10 +11,10 @@ This is a first *alpha* release of the [script editor](SoC_2009_Ideas#Add_a_simp
 
 While it was pretty well stress-tested in the [Fiji School](2009-08-04_-_Fiji_School_-_Last_Call_for_Student_Applications ), and while it works pretty well for some of the Fiji developers, it is more like a technology preview.
 
-Having said all that, if you are interested in scripting Fiji, just use the [Fiji Updater](Update_Fiji ) and [give it a shot](Using_the_Script_Editor )\!
+Having said all that, if you are interested in scripting Fiji, just use the [Fiji Updater](Update_Fiji ) and [give it a shot](Using_the_Script_Editor )!
 
 Speaking of shots: here is a screenshot:
 
-![Script-Editor-first-script.jpg](/images/pages/Script-Editor-first-script.jpg "Script-Editor-first-script.jpg")
+![](/images/pages/Script-Editor-first-script.jpg "Script-Editor-first-script.jpg")
 
 

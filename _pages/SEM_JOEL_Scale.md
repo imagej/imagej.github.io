@@ -7,11 +7,13 @@ categories:
 description: test description
 ---
 
-## **Overview**
+**Overview**
+------------
 
 This tool sets image scale based on pixel size store in the .txt file associated with SEM image.
 
-## **How to use**
+**How to use**
+--------------
 
 1\. Open an image file acquired from JOEL SEM, and make the image window active.
 

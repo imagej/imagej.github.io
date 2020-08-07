@@ -12,14 +12,14 @@ This account is used to manage the [Biomedgroup update site](http://sites.imagej
 
 To activate it:
 
-  - [{% include bc content='Help|Update...'%}](Update_Sites )
-  - Click *Manage update sites*
-  - Check *Biomedgroup*
-  - Click *Close*
+-   [{% include bc content='Help|Update...'%}](Update_Sites )
+-   Click *Manage update sites*
+-   Check *Biomedgroup*
+-   Click *Close*
 
 Some files should appear on the list with *Status/Action* of *Install it*.
 
-  - Click *Apply changes*
-  - Restart ImageJ
+-   Click *Apply changes*
+-   Restart ImageJ
 
-Your ImageJ should now possess additional commands\!
+Your ImageJ should now possess additional commands!

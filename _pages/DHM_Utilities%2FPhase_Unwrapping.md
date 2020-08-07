@@ -51,20 +51,21 @@ description: test description
 
 Phase Unwrapping is a plugin to perform phase unwrapping on a phase image, with a focus on unwrapping images produced by DHM (possibly created using [DHM Utilities/Reconstruction](DHM_Utilities/Reconstruction )). It currently has support for two different algorithms. The first is a quality-guided unwrapping method, and the second is a double-wavelength unwrapping method.
 
-## Quality-Based Unwrapping
+Quality-Based Unwrapping
+------------------------
 
 The quality-based unwrapping algorithm works on the principle that some pixels should be considered "better" than others when it comes to how well they represent the true phase value of the image. To determine these values, the algorithm uses a "quality" mapping which assigns a quality value to every pixel in the image. Several quality types come built in to the plugin, and it is possible to create your own in your own plugins.
 
 To unwrap the image, the algorithm starts with the center pixel. It then looks at the four adjacent pixels and picks the one with the highest quality, unwrapping it relative to itself. It then looks at the six adjacent pixels and picks the one with the highest quality, unwrapping it relative to an adjacent pixel that has already been unwrapped with the highest quality. This process repeats until the entire image has been unwrapped.
 
-To perform quality-based unwrapping, run the command "Plugins \> DHM \> Phase Unwrapping \> Quality Guided". Here is a description of all of the parameters:
+To perform quality-based unwrapping, run the command "Plugins &gt; DHM &gt; Phase Unwrapping &gt; Quality Guided". Here is a description of all of the parameters:
 
-  - Phase Image: The phase image that you want to unwrap.
-  - Quality: What algorithm you wish to use to compute the quality mapping. Depending on the quality type, it may add additional parameters that will appear directly after this one.
-  - Single Frame: If the phase image is a stack, select this if you do not want to unwrap the whole stack.
-  - Pixel Phase Value: The pixel value difference that represents one period in the phase.
-  - Output Type: Image type for the output. If 32-bit is selected, the scale will be the same as the original image. If 32-bit radians is selected, the original scale will be scaled down to \[0, 2π\].
-  - Show Progress: Show the progress during unwrapping. This algorithm can take some time, especially with larger images, so this can be used to alleviate boredom while waiting.
+-   Phase Image: The phase image that you want to unwrap.
+-   Quality: What algorithm you wish to use to compute the quality mapping. Depending on the quality type, it may add additional parameters that will appear directly after this one.
+-   Single Frame: If the phase image is a stack, select this if you do not want to unwrap the whole stack.
+-   Pixel Phase Value: The pixel value difference that represents one period in the phase.
+-   Output Type: Image type for the output. If 32-bit is selected, the scale will be the same as the original image. If 32-bit radians is selected, the original scale will be scaled down to \[0, 2π\].
+-   Show Progress: Show the progress during unwrapping. This algorithm can take some time, especially with larger images, so this can be used to alleviate boredom while waiting.
 
 It is also possible to unwrap a single image or a stack of images programmatically using the `QualityUnwrappingOp` and `QualityUnwrappingStackOp` Ops. See the documentation for more details on how to do this.
 
@@ -94,7 +95,8 @@ The `Quality` interface includes several default methods that you may want to ov
 
 `Quality` uses our custom [Dynamic Parameters](https://github.com/sudgy/dynamic-parameters) to process inputs, because some of the parameters may change. If you do not require any extra inputs in your quality type, you do not need to worry about using this. However, if you do require extra inputs, you must override `param()` with your dynamic parameter. If you require multiple parameters, you should use a `HoldingParameter` that has all of your parameters.
 
-## Double Wavelength Unwrapping
+Double Wavelength Unwrapping
+----------------------------
 
 The double wavelength unwrapping algorithm is based off of the double wavelength algorithm described in many places in the literature. Given two images of the same thing in different wavelengths, the two images are subtracted, than anything less than zero is increased by one wavelength. This result is called the coarse map. This, in effect, changes the phase image into a phase image of a longer "beat frequency". The idea is that sometimes the shortness of the wavelengths is an issue when it comes to unwrapping, and by producing a phase image of a longer wavelength, those issues can be avoided. The algorithm is also much faster than other unwrapping algorithms.
 
@@ -106,14 +108,14 @@ There is still another issue: the final image can still be wrapped. You can alwa
 
 If you can find ways to improve our implementation of the algorithm, please let us know.
 
-To use this algorithm in ImageJ, run the command "Plugins \> DHM \> Phase Unwrapping \> Double Wavelength". Here is a description of all of the parameters:
+To use this algorithm in ImageJ, run the command "Plugins &gt; DHM &gt; Phase Unwrapping &gt; Double Wavelength". Here is a description of all of the parameters:
 
-  - Phase Image 1: The first phase image to use.
-  - Wavelength 1: The wavelength of light used to create the first image. There are no units on it because the actual value of the wavelength is not important, only the difference between it and the other wavelength is important.
-  - Phase Image 2: The second phase image to use.
-  - Wavelength 2: The wavelength of light used to create the second image.
-  - Pixel Phase Value: The pixel value difference that represents one period in the phase.
-  - Show Intermediate Steps: Whether or not to show all of the steps taken during the process. It is mainly used for debug purposes, but it might help when trying to determine what is going on. If it is off, only the coarse map and the fine map are shown.
+-   Phase Image 1: The first phase image to use.
+-   Wavelength 1: The wavelength of light used to create the first image. There are no units on it because the actual value of the wavelength is not important, only the difference between it and the other wavelength is important.
+-   Phase Image 2: The second phase image to use.
+-   Wavelength 2: The wavelength of light used to create the second image.
+-   Pixel Phase Value: The pixel value difference that represents one period in the phase.
+-   Show Intermediate Steps: Whether or not to show all of the steps taken during the process. It is mainly used for debug purposes, but it might help when trying to determine what is going on. If it is off, only the coarse map and the fine map are shown.
 
 It is also possible to unwrap a single image or a stack of images programmatically using the DoubleWavelengthOp and DoubleWavelengthStackOp Ops. See the documentation for more details on how to do this.
 

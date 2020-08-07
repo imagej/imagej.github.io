@@ -7,17 +7,20 @@ categories:
 description: test description
 ---
 
-## **Overview**
+**Overview**
+------------
 
 This is a montaging plugin designed with figure submission to peer review journals in mind, however its versatility lends it to different applications. Peer review journals sometimes ask that your submitted figures uphold a certain ppi (pixels per inch), and to ensure that, you need to know the width of your image in both pixels and inches. Often collected images in a TEM or SEM do not save distance units in the metadata, and if they do the units are usually in nanometers or microns. This makes it hard to ensure your figures have the required ppi.
 
 Since imageJ can set the image scale to any unit you want, this plugin sets it to a distance in inches designated by the user. It can also scale the resolution of your images. Together these two properties determine the images ppi. It can also arrange multiple images into a single image montage, which is a nice way of showing different TEM and SEM images. It works with any file type that imageJ can read, and you can build pretty much any arrangement you want. In order to achieve a specific ppi, however, you must choose to save the montage as a file type that saves distance units in the metadata. Tagged image file format (.tiff) is a good choice.
 
-## **Gallery**
+**Gallery**
+-----------
 
 <img src="/images/pages/Temp.jpg" width="1070"/> <img src="/images/pages/Temp2.jpg" width="1070"/>
 
-## **Directions**
+**Directions**
+--------------
 
 There are two objects upon which this plugin can operate:
 
@@ -26,7 +29,7 @@ There are two objects upon which this plugin can operate:
 
 If you have a bunch of images open in imageJ, the plugin starts by converting those images into a stack. So basically, it needs a stack to create the montage. If you don't have one it will created one for you.
 
-This means that any stack can be used. For example, the fly brain stack that comes with the FIJI distribution of imageJ \[*File =\> Open Samples =\> Fly Brian (1MB)*\] is a pre-made stack consisting of 57 images that you can access to learn how to use this plugin.
+This means that any stack can be used. For example, the fly brain stack that comes with the FIJI distribution of imageJ \[*File =&gt; Open Samples =&gt; Fly Brian (1MB)*\] is a pre-made stack consisting of 57 images that you can access to learn how to use this plugin.
 
 ### **Main Window**
 
@@ -57,7 +60,8 @@ The ppi for this image is thus 517 pix / 3.2 inches = 162. This is rather low, b
 
 Therefore, the plugin allows you to present your images in the highest possible resolution, and the smallest possible file size. If the file size becomes extreme, however, you can downsize the images. Reducing the image resolution by 1/2 reduces the file size by 1/4.
 
-## **Tips**
+**Tips**
+--------
 
 1.  The plugin usually remembers your previous choices in the main window.
 2.  Use like images for the montage, i.e. same size and aspect ratio.
@@ -65,6 +69,7 @@ Therefore, the plugin allows you to present your images in the highest possible 
 4.  You can make an odd montage (e.g. 5 images). Blank regions are allowed.
 5.  The label option supports up to 78 images. The list goes a, b, c,...; aa, bb, cc,...; aaa, bbb, ccc,...
 
-## **Image Requirements**
+**Image Requirements**
+----------------------
 
 Any file type that imageJ can read can be used to build a montage.

@@ -10,169 +10,54 @@ description: test description
 {% include info-box content='If your goal is to automate the behavior of ImageJ, consider writing a [script](script ) using ImageJ"s [Script Editor](Script_Editor )—it is often much simpler than a plugin in Java.' %} {% include develop-menu%}
 This page provides an overview of ImageJ from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [plugins](plugins ).
 
-## Quick start
+Quick start
+-----------
 
-  - **Learn to write [ImageJ scripts](Scripting )** from the [ImageJ tutorial notebooks](https://imagej.github.io/tutorials).
-  - **Learn to use ImageJ from Java** with the [ImageJ tutorial Maven projects](https://github.com/imagej/tutorials/tree/master/maven-projects).
+-   **Learn to write [ImageJ scripts](Scripting )** from the [ImageJ tutorial notebooks](https://imagej.github.io/tutorials).
+-   **Learn to use ImageJ from Java** with the [ImageJ tutorial Maven projects](https://github.com/imagej/tutorials/tree/master/maven-projects).
 
-## What is ImageJ?
+What is ImageJ?
+---------------
 
-<table style="font-size: large; margin-left: 25px; margin-top: 5px;">
-<tbody>
-<tr class="odd">
-<td style="padding: 15px 15px;"><p> An end-user {% include wikipedia title='Application software' text='software application'%}</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="Getting started"><img src="/images/pages/Imagej-app.png" width="500px"/></a></p></td>
-</tr>
-<tr class="odd">
-<td style="border-top: 1px #aaa solid; padding: 15px 15px;"><p> Reusable {% include wikipedia title='Library (computing)' text='software libraries'%}</p></td>
-</tr>
-<tr class="even">
-<td style="padding: 0 15px 15px 35px; font-size: small;">
-<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">public</span> <span class="dt">void</span> <span class="fu">loadAndDisplay</span>(<span class="bu">File</span> file) {</a>
-<a class="sourceLine" id="cb1-2" title="2">    ImageJ ij = <span class="kw">new</span> <span class="fu">ImageJ</span>();</a>
-<a class="sourceLine" id="cb1-3" title="3">    <span class="bu">Object</span> data = ij.<span class="fu">io</span>().<span class="fu">open</span>(file);</a>
-<a class="sourceLine" id="cb1-4" title="4">    ij.<span class="fu">ui</span>().<span class="fu">show</span>(data);</a>
-<a class="sourceLine" id="cb1-5" title="5">}</a></code></pre></div></td>
-</tr>
-<tr class="odd">
-<td style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;"><p> An extensible collection of <a href="plugins" title="wikilink">plugins</a> and <a href="services" title="wikilink">services</a></p></td>
-</tr>
-<tr class="even">
-<td style="padding: 15px 0 30px 45px;"><p> <a href="SciJava"><img src="/images/pages/Scijava-logo.png" height="72px"/></a></p></td>
-</tr>
-<tr class="odd">
-<td style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;"><p> <em>"Write once, run anywhere"</em> <a href="Ops" title="wikilink">image processing routines</a></p></td>
-</tr>
-<tr class="even">
-<td style="padding: 15px 0 15px 25px;"><p> <a href="Ops"><img src="/images/pages/Write-once-run-anywhere.png" width="500px"/></a></p></td>
-</tr>
-</tbody>
-</table>
+<table style="font-size: large; margin-left: 25px; margin-top: 5px;"><tbody><tr class="odd"><td style="padding: 15px 15px;"><p> An end-user {% include wikipedia title='Application software' text='software application'%}</p></td></tr><tr class="even"><td style="border-top: 1px #aaa solid; padding: 15px 15px;"><p><a href="Getting started"><img src="/images/pages/Imagej-app.png" width="500px"/></a></p></td></tr><tr class="odd"><td><p> Reusable {% include wikipedia title='Library (computing)' text='software libraries'%}</p></td></tr><tr class="even"><td style="padding: 0 15px 15px 35px; font-size: small;"><div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">public</span> <span class="dt">void</span> <span class="fu">loadAndDisplay</span>(<span class="bu">File</span> file) {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>    ImageJ ij = <span class="kw">new</span> <span class="fu">ImageJ</span>();</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>    <span class="bu">Object</span> data = ij.<span class="fu">io</span>().<span class="fu">open</span>(file);</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>    ij.<span class="fu">ui</span>().<span class="fu">show</span>(data);</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>}</span></code></pre></div></td></tr><tr class="odd"><td style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;"><p> An extensible collection of <a href="plugins" title="wikilink">plugins</a> and <a href="services" title="wikilink">services</a></p></td></tr><tr class="even"><td style="padding: 15px 0 30px 45px;"><p> <a href="SciJava"><img src="/images/pages/Scijava-logo.png" height="72px"/></a></p></td></tr><tr class="odd"><td style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;"><p> <em>"Write once, run anywhere"</em> <a href="Ops" title="wikilink">image processing routines</a></p></td></tr><tr class="even"><td style="padding: 15px 0 15px 25px;"><p> <a href="Ops"><img src="/images/pages/Write-once-run-anywhere.png" width="500px"/></a></p></td></tr></tbody></table>
 
-## Project structure
+Project structure
+-----------------
 
 ImageJ is divided into three parts:
 
-<table>
-<thead>
-<tr class="header">
-<th><p>{% include logo content='ImageJ' size='72px ' %}<a href="ImageJ" title="wikilink">ImageJ</a></p></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><span style="font-size: large"><strong>Image-specific components</strong></span></p></td>
-<td><ul>
-<li><a href="ImageJ_Common" title="wikilink">ImageJ Common</a></li>
-<li><a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a></li>
-<li><a href="ImageJ_Updater" title="wikilink">ImageJ Updater</a></li>
-<li><a href="ImageJ_Legacy" title="wikilink">ImageJ Legacy</a></li>
-<li><a href="SCIFIO" title="wikilink">SCIFIO</a></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td style="font-size: 56px; width: 350px"><p> {% include logo content='ImgLib2' size='72px ' %}<a href="ImgLib2" title="wikilink">ImgLib2</a></p></td>
-<td style="width: 350px"><p> <a href="SciJava"><img src="/images/pages/Scijava-logo.png" height="72px"/></a></p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center; vertical-align: top"><p> <span style="font-size: large"><strong>Core image data model</strong></span><br />
-</p>
-<ul>
-<li>Extensible pixel types – not just uint8, uint16, float32</li>
-<li>Extensible data sources – not just files on disk</li>
-<li>Extensible sample organizations – not just arrays</li>
-<li>Extensible dimensionality – not just X, Y, Z and time</li>
-<li>Interface-driven design</li>
-</ul></td>
-<td style="text-align: center; vertical-align: top"><p> <span style="font-size: large"><strong>More general than images</strong></span><br />
-</p>
-<ul>
-<li>Application container</li>
-<li>Plugin framework</li>
-<li>Module framework</li>
-<li>Display and UI frameworks</li>
-<li>Scripting framework and plugins</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+<table><thead><tr class="header"><th style="font-size: 56px; width: 350px"><p> {% include logo content='ImageJ' size='72px ' %}<a href="ImageJ" title="wikilink">ImageJ</a></p></th><th></th></tr></thead><tbody><tr class="odd"><td><p><span style="font-size: large"><strong>Image-specific components</strong></span></p></td><td><ul><li><a href="ImageJ_Common" title="wikilink">ImageJ Common</a></li><li><a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a></li><li><a href="ImageJ_Updater" title="wikilink">ImageJ Updater</a></li><li><a href="ImageJ_Legacy" title="wikilink">ImageJ Legacy</a></li><li><a href="SCIFIO" title="wikilink">SCIFIO</a></li></ul></td></tr><tr class="even"><td><p> {% include logo content='ImgLib2' size='72px ' %}<a href="ImgLib2" title="wikilink">ImgLib2</a></p></td><td style="width: 350px"><p> <a href="SciJava"><img src="/images/pages/Scijava-logo.png" height="72px"/></a></p></td></tr><tr class="odd"><td style="text-align: center; vertical-align: top"><p> <span style="font-size: large"><strong>Core image data model</strong></span><br />
+</p><ul><li>Extensible pixel types – not just uint8, uint16, float32</li><li>Extensible data sources – not just files on disk</li><li>Extensible sample organizations – not just arrays</li><li>Extensible dimensionality – not just X, Y, Z and time</li><li>Interface-driven design</li></ul></td><td style="text-align: center; vertical-align: top"><p> <span style="font-size: large"><strong>More general than images</strong></span><br />
+</p><ul><li>Application container</li><li>Plugin framework</li><li>Module framework</li><li>Display and UI frameworks</li><li>Scripting framework and plugins</li></ul></td></tr></tbody></table>
 
 For full details on the technical structure of ImageJ, see the [Architecture](Architecture ) page.
 
-## Key developer tools
+Key developer tools
+-------------------
 
 There are four indispensable software development tools on which ImageJ relies:
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>{% include logo content='GitHub' %}</p></td>
-<td><p><a href="GitHub" title="wikilink">GitHub</a></p></td>
-<td><p>A website which hosts all of ImageJ's <a href="source_code" title="wikilink">source code</a> and <a href="issues" title="wikilink">issue trackers</a>. GitHub is ImageJ's nexus of online collaboration (i.e., "social coding").</p></td>
-</tr>
-<tr class="even">
-<td><p>{% include logo content='Git' %}</p></td>
-<td><p><a href="Git" title="wikilink">Git</a></p></td>
-<td><p>A first-class {% include wikipedia title='Distributed version control' text='distributed'%} {% include wikipedia title='Version control' text='version control'%} system. Git saves "snapshots" of the source code, keeping a history of changes.</p></td>
-</tr>
-<tr class="odd">
-<td style="vertical-align: middle"><p> {% include logo content='Maven' %}</p></td>
-<td><p><a href="Maven" title="wikilink">Maven</a></p></td>
-<td><p>A {% include wikipedia title='Build automation' text='build automation'%} tool with great dependency management. Maven converts source code into program binaries, and much more.</p></td>
-</tr>
-<tr class="even">
-<td><p>{% include logo content='Eclipse' %}</p></td>
-<td><p><a href="Eclipse" title="wikilink">Eclipse</a></p></td>
-<td><p>An <a href="IDE" title="wikilink">integrated development environment</a> (IDE) used by many ImageJ developers. Eclipse makes it much easier to explore and edit the source code.<br />
-Although: ImageJ can be developed using <a href="IDEs" title="wikilink"><em>any</em> IDE</a> which supports <a href="Maven" title="wikilink">Maven</a>.</p></td>
-</tr>
-</tbody>
-</table>
+<table><tbody><tr class="odd"><td style="vertical-align: middle"><p> {% include logo content='GitHub' %}</p></td><td><p><a href="GitHub" title="wikilink">GitHub</a></p></td><td><p>A website which hosts all of ImageJ's <a href="source_code" title="wikilink">source code</a> and <a href="issues" title="wikilink">issue trackers</a>. GitHub is ImageJ's nexus of online collaboration (i.e., "social coding").</p></td></tr><tr class="even"><td><p> {% include logo content='Git' %}</p></td><td><p><a href="Git" title="wikilink">Git</a></p></td><td><p> A first-class {% include wikipedia title='Distributed version control' text='distributed'%} {% include wikipedia title='Version control' text='version control'%} system. Git saves "snapshots" of the source code, keeping a history of changes.</p></td></tr><tr class="odd"><td><p> {% include logo content='Maven' %}</p></td><td><p><a href="Maven" title="wikilink">Maven</a></p></td><td><p> A {% include wikipedia title='Build automation' text='build automation'%} tool with great dependency management. Maven converts source code into program binaries, and much more.</p></td></tr><tr class="even"><td><p> {% include logo content='Eclipse' %}</p></td><td><p><a href="Eclipse" title="wikilink">Eclipse</a></p></td><td><p>An <a href="IDE" title="wikilink">integrated development environment</a> (IDE) used by many ImageJ developers. Eclipse makes it much easier to explore and edit the source code.<br />
+Although: ImageJ can be developed using <a href="IDEs" title="wikilink"><em>any</em> IDE</a> which supports <a href="Maven" title="wikilink">Maven</a>.</p></td></tr></tbody></table>
 
 See the [Project management](Project_management ) page for further details.
 
-## Source code
+Source code
+-----------
 
 [ImageJ](ImageJ ) and related [SciJava](SciJava ) software projects are [open source](open_source ). The code is organized into [well-separated](Architecture#Modularity ) projects.
 
 See the [source code](source_code ) page for further details.
 
-## Tutorials
+Tutorials
+---------
 
-Start with the [ImageJ tutorial notebooks](https://imagej.github.io/tutorials)\!
+Start with the [ImageJ tutorial notebooks](https://imagej.github.io/tutorials)!
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p><strong>Learning the ImageJ API</strong></p></td>
-<td><p><strong>ImageJ plugins</strong></p></td>
-<td><p><strong>The Fiji distribution of ImageJ</strong></p></td>
-</tr>
-<tr class="even">
-<td style="vertical-align: top">
-<ul>
-<li><a href="https://github.com/imagej/tutorials">ImageJ tutorials</a></li>
-<li><a href="ImgLib2_Examples" title="wikilink">ImgLib2 Examples</a></li>
-<li><a href="ImageJ1-ImageJ2_cheat_sheet" title="wikilink">ImageJ1-ImageJ2 cheat sheet</a></li>
-</ul></td>
-<td><ul>
-<li><a href="Writing_ImageJ2_plugins" title="wikilink">Writing ImageJ2 plugins</a></li>
-<li><a href="How_to_contribute_to_an_existing_plugin_or_library" title="wikilink">Contributing to an existing plugin</a></li>
-<li><a href="Distribution" title="wikilink">Distributing your plugin</a></li>
-<li><a href="Introduction_into_Developing_Plugins" title="wikilink">Writing ImageJ 1.x plugins</a></li>
-</ul></td>
-<td style="vertical-align: top">
-<ul>
-<li><a href="Developing_Fiji" title="wikilink">Developing Fiji</a></li>
-<li><a href="Developing_Fiji_in_Eclipse" title="wikilink"> Fiji + Eclipse</a></li>
-<li><a href="Fiji_contribution_requirements" title="wikilink">Fiji contribution requirements</a></li>
-<li><a href="Supported_Compilers" title="wikilink">Supported Compilers</a></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+<table><tbody><tr class="odd"><td style="vertical-align: top"><p><strong>Learning the ImageJ API</strong></p></td><td><p><strong>ImageJ plugins</strong></p></td><td><p><strong>The Fiji distribution of ImageJ</strong></p></td></tr><tr class="even"><td><ul><li><a href="https://github.com/imagej/tutorials">ImageJ tutorials</a></li><li><a href="ImgLib2_Examples" title="wikilink">ImgLib2 Examples</a></li><li><a href="ImageJ1-ImageJ2_cheat_sheet" title="wikilink">ImageJ1-ImageJ2 cheat sheet</a></li></ul></td><td style="vertical-align: top"><ul><li><a href="Writing_ImageJ2_plugins" title="wikilink">Writing ImageJ2 plugins</a></li><li><a href="How_to_contribute_to_an_existing_plugin_or_library" title="wikilink">Contributing to an existing plugin</a></li><li><a href="Distribution" title="wikilink">Distributing your plugin</a></li><li><a href="Introduction_into_Developing_Plugins" title="wikilink">Writing ImageJ 1.x plugins</a></li></ul></td><td><ul><li><a href="Developing_Fiji" title="wikilink">Developing Fiji</a></li><li><a href="Developing_Fiji_in_Eclipse" title="wikilink"> Fiji + Eclipse</a></li><li><a href="Fiji_contribution_requirements" title="wikilink">Fiji contribution requirements</a></li><li><a href="Supported_Compilers" title="wikilink">Supported Compilers</a></li></ul></td></tr></tbody></table>
 
 

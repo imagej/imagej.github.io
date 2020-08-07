@@ -9,7 +9,7 @@ description: test description
 
 {% include info-box software='ImageJ/Fiji ' name='CIP ' update-site='CIP ' author='[Benoit Lombardot](User_Benoit ) ' maintainer='[Benoit Lombardot](User_Benoit ) ' released='January 2018 ' filename='CIP update site ' source='https://github.com/benoalo/CIP ' category='[Scripting](Category_Scripting ) ' %}
 
-![CIP: ](/images/pages/CIP basic concept.PNG "CIP: ")
+<figure><img src="/images/pages/CIP_basic_concept.PNG" title="CIP: " width="600" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
 
 <div align="center">
 
@@ -17,33 +17,37 @@ description: test description
 
 </div>
 
-# CIP : Classic Image Processing
+CIP : Classic Image Processing
+==============================
 
 Classic Image Processing (CIP) is an image procesing toolbox which provides functions for scripting in ImageJ. Its principal goal is to facilitate image analysis workflow construction as well as to provide an accessible entry point to learn the programming of such workflow. CIP also has a specific focus on user experience which should appear clearly in the libraries main features:
 
-  - **Integration** to ImageJ ecosystem: CIP can be easily used in combination other ImageJ1 and ImageJ2 plugins. For instance, it can process seamlessly all usual imageJ image type (ImagePlus, Dataset, ImgPlus, Img) wihtout requiring any conversion.
+-   **Integration** to ImageJ ecosystem: CIP can be easily used in combination other ImageJ1 and ImageJ2 plugins. For instance, it can process seamlessly all usual imageJ image type (ImagePlus, Dataset, ImgPlus, Img) wihtout requiring any conversion.
 
-<!-- end list -->
+<!-- -->
 
-  - **Discoverability** of its functionnalities: CIP provides a complete user documentation that explain function usage, details their parameters and provides illustration. In order to allow an intuitive learning, function parameters can be named or made optionnal while similar functions will have similar signatures. For the same reason 2D and 3D images can be processed with the same functions.
+-   **Discoverability** of its functionnalities: CIP provides a complete user documentation that explain function usage, details their parameters and provides illustration. In order to allow an intuitive learning, function parameters can be named or made optionnal while similar functions will have similar signatures. For the same reason 2D and 3D images can be processed with the same functions.
 
-<!-- end list -->
+<!-- -->
 
-  - **Simplicity** of use: Learning programming is demanding and CIP goal is to hide unecessary difficulty when one starts scripting. For instance CIP requires no class and package import. It Also uses only 3 main data types, Image, Region Table, to simplify data representation. Finally, CIP functions never modifies functions inputs so you always know what is happening to your data.
+-   **Simplicity** of use: Learning programming is demanding and CIP goal is to hide unecessary difficulty when one starts scripting. For instance CIP requires no class and package import. It Also uses only 3 main data types, Image, Region Table, to simplify data representation. Finally, CIP functions never modifies functions inputs so you always know what is happening to your data.
 
-<!-- end list -->
+<!-- -->
 
-  - An **essential** set of tools: CIP gathers the 10% of tools that will get the job done, allowing one to go straight to the tool he needs. The function selected are also well adopted by the community to facilitate exchange and understanding. Finally, CIP provides basic visualisation and measure tools that are needed in every workflow.
+-   An **essential** set of tools: CIP gathers the 10% of tools that will get the job done, allowing one to go straight to the tool he needs. The function selected are also well adopted by the community to facilitate exchange and understanding. Finally, CIP provides basic visualisation and measure tools that are needed in every workflow.
 
-# Getting started
+Getting started
+===============
 
-## Installation
+Installation
+------------
 
 If you want to use CIP in ImageJ script editor, simply add the CIP update site to your imageJ installation ([instruction to follow an update site](https://imagej.net/Following_an_update_site)) restart imagej, open the script editor and you are good to go. For inspiration, one can look at one of the [example scripts](CIP#Script_example ).
 
 If one would like to contribute or simply toy with the source code of the library, its source code and the instruction for the project set up in an IDE can be found on the [project repository](https://github.com/benoalo/CIP).
 
-## Documentation organisation
+Documentation organisation
+--------------------------
 
 To build a script with CIP, follow one of the examples below or try one of the [repository](https://github.com/benoalo/CIP/tree/master/scripts%7Cproject) examples.
 
@@ -51,11 +55,12 @@ To get information on a function follow the link in the function table in the [c
 
 For information on the parameters, their type, whether they are optionnal or required and more one can consult the [ Parameters](CIP_Parameters ) page.
 
-# Tools categories
+Tools categories
+================
 
 Image analysis workflows require the user to perform stereotypic steps: enhance signal, define and characterize region, visualize and assess results. This recurring process allows to create one function per task and to organize these functions in categories with similar roles, input and output: Format, Filter, Segment, Math, Assess.
 
-![CIP\_generic\_pipeline.PNG](/images/pages/CIP generic pipeline.PNG "CIP_generic_pipeline.PNG")
+<figure><img src="/images/pages/CIP_generic_pipeline.PNG" title="CIP_generic_pipeline.PNG" width="700" alt="CIP_generic_pipeline.PNG" /><figcaption aria-hidden="true">CIP_generic_pipeline.PNG</figcaption></figure>
 
 <div align="center">
 
@@ -63,28 +68,28 @@ Image analysis workflows require the user to perform stereotypic steps: enhance 
 
 </div>
 
-  - **[Format](CIP_Format )**: These functions are used to managed image data, combine them or reduce their dimensionnality. They take one or multiple image as input and return one image as output. These function will generally provide an ouput which size and/or dimensionality can be different from the input
+-   **[Format](CIP_Format )**: These functions are used to managed image data, combine them or reduce their dimensionnality. They take one or multiple image as input and return one image as output. These function will generally provide an ouput which size and/or dimensionality can be different from the input
 
-<!-- end list -->
+<!-- -->
 
-  - **[Filter](CIP_Filter )**: filters act on image graylevel. They creates an output image the same size as the input. Filters are used to remove noise, filter out unwanted background or enhance feature of interest such as spots and lines.
+-   **[Filter](CIP_Filter )**: filters act on image graylevel. They creates an output image the same size as the input. Filters are used to remove noise, filter out unwanted background or enhance feature of interest such as spots and lines.
 
-<!-- end list -->
+<!-- -->
 
-  - **[Math](CIP_Math ) operations and functions**: These category gathers usual mathematical operations such as addition, subtraction or trigonometric functions for instance. They can be used with scalars, images or image and scalar in combination. When use with images the operation are applied pixel wise.
+-   **[Math](CIP_Math ) operations and functions**: These category gathers usual mathematical operations such as addition, subtraction or trigonometric functions for instance. They can be used with scalars, images or image and scalar in combination. When use with images the operation are applied pixel wise.
 
-<!-- end list -->
+<!-- -->
 
-  - **[Segmentation](CIP_Segmentation )**: Segmentation functions allow to define regions in an image. Applied to an input image they create so called label image that defines the pixel where the object lays. Each region is attributed a particular label, an integer value, that can be used to retrieve the object later. Watershed, thresholding spot and line detection can be found here.
+-   **[Segmentation](CIP_Segmentation )**: Segmentation functions allow to define regions in an image. Applied to an input image they create so called label image that defines the pixel where the object lays. Each region is attributed a particular label, an integer value, that can be used to retrieve the object later. Watershed, thresholding spot and line detection can be found here.
 
-<!-- end list -->
+<!-- -->
 
-  - **[Assess](CIP_Utilities )**: in that category are tools to facilitate data visualisation and measures that will be needed in every pipeline once the image processing is done.
+-   **[Assess](CIP_Utilities )**: in that category are tools to facilitate data visualisation and measures that will be needed in every pipeline once the image processing is done.
 
 Link to function user documentation are provided in the table below.
 
 | Filter                                     | Segmentation                                       | Format                                       | Math                                                                                                                                 | Assess                                      | Experimental                               |
-| ------------------------------------------ | -------------------------------------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------- | ------------------------------------------ |
+|--------------------------------------------|----------------------------------------------------|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|--------------------------------------------|
 | [gauss](CIP_Filter#gauss )       | [threshold](CIP_Segmentation#threshold ) | [create](CIP_Format#create )       | [add](CIP_Math#binary_operator ), [sub](CIP_Math#binary_operator )                                               | [measure](CIP_Utilities#measure ) | [track](CIP_Experimental#track ) |
 | [erosion](CIP_Filter#erosion )   | [maxima](CIP_Segmentation#maxima )       | [duplicate](CIP_Format#duplicate ) | [mul](CIP_Math#binary_operator ), [div](CIP_Math#binary_operator )                                               | [show](CIP_Utilities#show )       |                                            |
 | [dilation](CIP_Filter#dilation ) | [watershed](CIP_Segmentation#watershed ) | [slice](CIP_Format#slice )         | [cos](CIP_Math#unary_operator ), [sin](CIP_Math#unary_operator ), [tan](CIP_Math#unary_operator )      | [region](CIP_Utilities#region )   |                                            |
@@ -96,13 +101,14 @@ Link to function user documentation are provided in the table below.
 | [invert](CIP_Filter#invert )     |                                                    |                                              | [sign](CIP_Math#unary_operator ), [abs](CIP_Math#unary_operator )                                                | [list](CIP_Utilities#list )       |                                            |
 |                                            |                                                    |                                              |                                                                                                                                      | [help](CIP_Utilities#help )       |                                            |
 
-# Script example
+Script example
+==============
 
 The following script shows how to segment 2d object in an image and visualize them. The workflow is illustrated in the **Figure 3**.
 
 {% include github-embed org='benoalo ' repo='CIP ' path='wiki\_examples/2D\_nuclei.py ' %}
 
-![CIP: ](/images/pages/CIP example 2D.PNG "CIP: ")
+<figure><img src="/images/pages/CIP_example_2D.PNG" title="CIP: " width="800" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
 
 <div align="center">
 
@@ -114,7 +120,7 @@ The following script shows a 3d nuclei segmentation and the measure and displau 
 
 {% include github-embed org='benoalo ' repo='CIP ' path='wiki\_examples/3D\_nuclei\_segmentation.py ' %}
 
-![CIP: ](/images/pages/CIP example 3D.PNG "CIP: ")
+<figure><img src="/images/pages/CIP_example_3D.PNG" title="CIP: " width="800" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
 
 <div align="center">
 
@@ -122,46 +128,49 @@ The following script shows a 3d nuclei segmentation and the measure and displau 
 
 </div>
 
-# Development plan
+Development plan
+================
 
 This section provide the main development directions as well as a list of functions that we intend to implement per category
 
 | Filter    | Segmentation | Format      | Math                 | Assess |
-| --------- | ------------ | ----------- | -------------------- | ------ |
+|-----------|--------------|-------------|----------------------|--------|
 | gradient  | skeleton     | concatenate | logic operators      |        |
 | laplacian | edge         |             | comparison operators |        |
 | hessian   |              |             |                      |        |
 | fillholes |              |             |                      |        |
 
-# Cite
+Cite
+====
 
-# History
+History
+=======
 
-  - 2017-12-20 : version 0.1.0 , first public version of CIP is made available on CIP update site. The package is still under development
+-   2017-12-20 : version 0.1.0 , first public version of CIP is made available on CIP update site. The package is still under development
 
-<!-- end list -->
+<!-- -->
 
-  - 2018-01-29 : version 0.1.1 , add a help function
+-   2018-01-29 : version 0.1.1 , add a help function
 
-<!-- end list -->
+<!-- -->
 
-  - 2018-05-03 : version 0.1.2 , minimal backcompatible updates of a few functions signatures for consistency. cip.show( handle\*, region\*, ...) becomes cip.show(region\*, handle, ...), if no handle is provided region are shown on the current image. Update parameter name for create, slice and show function.
+-   2018-05-03 : version 0.1.2 , minimal backcompatible updates of a few functions signatures for consistency. cip.show( handle\*, region\*, ...) becomes cip.show(region\*, handle, ...), if no handle is provided region are shown on the current image. Update parameter name for create, slice and show function.
 
-<!-- end list -->
+<!-- -->
 
-  - 2018-05-28 : version 0.2.0 , tracking, watershed and maxima update
-      - add an experimental cip.track function allowing to track regions in a list of labelmap. it uses trackmate LapTracker below the hood thus allowing splitting, merging and discontinous tracks. resulting track can be visualized with cip.show both in trackscheme or hyperstack viewer.
-      - cip.watershed(img, threshold, ...) labeling is more consistant, each connected component (region) has a distinct label and region with height inferior to hMin are no displayed. This feature was added with ImgAlgo-0.1.1.jar
-      - the multiscale maxima detection was debugged and now give consistant results. It works in 2d/3d and takes into account data anisotropy. As an experiment it is possible to return multiscale maxima detection as a list of measures. multiscale maxima debugging also occured in ImgAlgo-0.1.2.jar update.
-      - corresponding documentation is on the work
+-   2018-05-28 : version 0.2.0 , tracking, watershed and maxima update
+    -   add an experimental cip.track function allowing to track regions in a list of labelmap. it uses trackmate LapTracker below the hood thus allowing splitting, merging and discontinous tracks. resulting track can be visualized with cip.show both in trackscheme or hyperstack viewer.
+    -   cip.watershed(img, threshold, ...) labeling is more consistant, each connected component (region) has a distinct label and region with height inferior to hMin are no displayed. This feature was added with ImgAlgo-0.1.1.jar
+    -   the multiscale maxima detection was debugged and now give consistant results. It works in 2d/3d and takes into account data anisotropy. As an experiment it is possible to return multiscale maxima detection as a list of measures. multiscale maxima debugging also occured in ImgAlgo-0.1.2.jar update.
+    -   corresponding documentation is on the work
 
-<!-- end list -->
+<!-- -->
 
-  - 2018-06-11 : version 0.2.1 correct a regression that prevented the visualisation of 3d regions
+-   2018-06-11 : version 0.2.1 correct a regression that prevented the visualisation of 3d regions
 
-<!-- end list -->
+<!-- -->
 
-  - 2018-06-19 : version 0.2.2 bug corrections
-      - correct a bug in median measure
-      - cip.project(...): change outputType parameter name to output
-      - cip.project(...): correct a bug preventing to use output='both'
+-   2018-06-19 : version 0.2.2 bug corrections
+    -   correct a bug in median measure
+    -   cip.project(...): change outputType parameter name to output
+    -   cip.project(...): correct a bug preventing to use output='both'

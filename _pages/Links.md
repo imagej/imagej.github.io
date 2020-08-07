@@ -7,41 +7,40 @@ categories:
 description: test description
 ---
 
-  - [ImageJ's Google+ page](https://plus.google.com/u/0/112060674582400644206/)
-  - [Fiji's Google+ page](https://plus.google.com/u/0/111207545597136714163/)
-  - [ImageJ 1.x documentation](https://imagej.net/index.html)
-  - [ImageJ User Manual](https://imagej.net/docs/user-guide.pdf)
-  - [Fluorescence image analysis introduction](http://blogs.qub.ac.uk/ccbg/fluorescence-image-analysis-intro/)
-  - [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php)
-  - [About the relationship between ImageJ2 and Fiji](http://imagej-dev.org/2010/04/07/recent-fiji-imagej2-presentations)
-  - {% include wikipedia title='ImageJ' text='Wikipedia page on ImageJ'%}
-  - {% include wikipedia title='Fiji (software)' text='Wikipedia page on Fiji'%}
-  - [Fiji on OHLOH](http://www.ohloh.net/p/therealfiji)
-  - [ObjectJ](http://simon.bio.uva.nl/objectj/)
+-   [ImageJ's Google+ page](https://plus.google.com/u/0/112060674582400644206/)
+-   [Fiji's Google+ page](https://plus.google.com/u/0/111207545597136714163/)
+-   [ImageJ 1.x documentation](https://imagej.net/index.html)
+-   [ImageJ User Manual](https://imagej.net/docs/user-guide.pdf)
+-   [Fluorescence image analysis introduction](http://blogs.qub.ac.uk/ccbg/fluorescence-image-analysis-intro/)
+-   [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php)
+-   [About the relationship between ImageJ2 and Fiji](http://imagej-dev.org/2010/04/07/recent-fiji-imagej2-presentations)
+-   {% include wikipedia title='ImageJ' text='Wikipedia page on ImageJ'%}
+-   {% include wikipedia title='Fiji (software)' text='Wikipedia page on Fiji'%}
+-   [Fiji on OHLOH](http://www.ohloh.net/p/therealfiji)
+-   [ObjectJ](http://simon.bio.uva.nl/objectj/)
 
 Links to the contributors' personal pages can be found [here](Contributors ).
 
-## More ImageJ plugins
+More ImageJ plugins
+-------------------
 
-  - Plugins on the [ImageJ website](https://imagej.net/plugins/index.html), specifically [links to external websites](https://imagej.net/plugins/index.html#more)
-  - Plugins on the [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php?id=plugin:start)
-  - The Biomedical Imaging Group in Lausanne has [many interesting plugins](http://bigwww.epfl.ch/algorithms.html).
-  - Christian Henden has some interesting plugins (mainly in the Public Domain), including 3D threshold methods: http://www.pvv.org/~perchrh/imagej/
+-   Plugins on the [ImageJ website](https://imagej.net/plugins/index.html), specifically [links to external websites](https://imagej.net/plugins/index.html#more)
+-   Plugins on the [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php?id=plugin:start)
+-   The Biomedical Imaging Group in Lausanne has [many interesting plugins](http://bigwww.epfl.ch/algorithms.html).
+-   Christian Henden has some interesting plugins (mainly in the Public Domain), including 3D threshold methods: http://www.pvv.org/~perchrh/imagej/
 
-## Related projects
+Related projects
+----------------
 
-|                                            |                                                                                                                                                                                                                         |
-| ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="/images/pages/Knime-logo.jpg" width="150"/>    | The [Konstanz kNowledge Information Mining Environment](http://tech.knime.org/community/image-processing).                                                                                                              |
-| <img src="/images/pages/Mm-icon.jpg" width="150"/>       | [µManager](http://micro-manager.org/) is an extensive software suite to interact with microscopes. It integrates nicely as an ImageJ plugin ({% include bc content='Plugins | Micro-Manager | Micro-Manager Studio'%}). |
-| <img src="/images/pages/OpenSPIM-logo.png" width="150"/> | [OpenSPIM](http://openspim.org/) is an Open Access and Open Source project to make Single Plane Illumination Microscopy (SPIM) accessible to researchers working with, or on, SPIM technology.                          |
-| <img src="/images/pages/SlideSet-logo.png" width="90"/>  | [Slide Set](http://b.nanes.org/slideset/) is a batch processing system for ImageJ, already leveraging the power of [ImageJ2](ImageJ2 ).                                                                       |
+<table><tbody><tr class="odd"><td><p><img src="/images/pages/Knime-logo.jpg" width="150"/></p></td><td><p>The <a href="http://tech.knime.org/community/image-processing">Konstanz kNowledge Information Mining Environment</a>.</p></td></tr><tr class="even"><td><p><img src="/images/pages/Mm-icon.jpg" width="150"/></p></td><td><p>valign=center|<a href="http://micro-manager.org/">µManager</a> is an extensive software suite to interact with microscopes. It integrates nicely as an ImageJ plugin ({% include bc content='Plugins | Micro-Manager | Micro-Manager Studio'%}).</p></td></tr><tr class="odd"><td><p><img src="/images/pages/OpenSPIM-logo.png" width="150"/></p></td><td><p><a href="http://openspim.org/">OpenSPIM</a> is an Open Access and Open Source project to make Single Plane Illumination Microscopy (SPIM) accessible to researchers working with, or on, SPIM technology.</p></td></tr><tr class="even"><td><p><img src="/images/pages/SlideSet-logo.png" width="90"/></p></td><td><p><a href="http://b.nanes.org/slideset/">Slide Set</a> is a batch processing system for ImageJ, already leveraging the power of <a href="ImageJ2" title="wikilink">ImageJ2</a>.</p></td></tr></tbody></table>
 
-## Image Processing and Ethics
+Image Processing and Ethics
+---------------------------
 
 See the [Principles](Principles ) page.
 
-## Input/Output
+Input/Output
+------------
 
 See the [Formats](Formats ) page.
 
@@ -49,7 +48,8 @@ See the [Formats](Formats ) page.
 
 See the [Video](Video ) page.
 
-## Image Processing
+Image Processing
+----------------
 
 See the [Principles](Principles ) page.
 
@@ -59,11 +59,12 @@ Explore the [Hypermedia Image Processing Reference](http://homepages.inf.ed.ac.u
 
 The University of Edinburgh also has the rather complete [CVonline](http://homepages.inf.ed.ac.uk/rbf/CVonline/) compendium of Computer Vision.
 
-A scientific image [is not a photograph](http://www.4p8.com/eric.brasseur/gamma.html)\!
+A scientific image [is not a photograph](http://www.4p8.com/eric.brasseur/gamma.html)!
 
 [External tutorials](External_tutorials ).
 
-## Programming in science
+Programming in science
+----------------------
 
 In research Software should be treated just like materials: if you publish your results, you should [publish the software (including source code)](http://sciencecodemanifesto.org/), too.
 
@@ -71,31 +72,34 @@ Even [Nature](http://www.nature.com/news/2010/101013/full/467753a.html) says tha
 
 If you're still unsure and think that your code is not good enough, then publish it under a license [appropriate for science](http://matt.might.net/articles/crapl/) (CRAPL).
 
-## Java
+Java
+----
 
-  - An [introduction to Java for kids (ebook)](http://myflex.org/books/java4kids/java4kids.htm)
-  - [Mixing light-weight (Swing) and heavy-weight (AWT) components](http://java.sun.com/developer/technicalArticles/GUI/mixing_components/index.html)
+-   An [introduction to Java for kids (ebook)](http://myflex.org/books/java4kids/java4kids.htm)
+-   [Mixing light-weight (Swing) and heavy-weight (AWT) components](http://java.sun.com/developer/technicalArticles/GUI/mixing_components/index.html)
 
-<!-- end list -->
+<!-- -->
 
-  - A [generics tutorial](http://java.sun.com/j2se/1.5/pdf/generics-tutorial.pdf)
+-   A [generics tutorial](http://java.sun.com/j2se/1.5/pdf/generics-tutorial.pdf)
 
-<!-- end list -->
+<!-- -->
 
-  - [Infrequently Asked Questions](http://norvig.com/java-iaq.html) about Java
+-   [Infrequently Asked Questions](http://norvig.com/java-iaq.html) about Java
 
-<!-- end list -->
+<!-- -->
 
-  - [Effective Java](http://www.slideshare.net/marakana/effective-java-still-effective-after-all-these-years)
+-   [Effective Java](http://www.slideshare.net/marakana/effective-java-still-effective-after-all-these-years)
 
-<!-- end list -->
+<!-- -->
 
-  - [Details about Sun's/Oracle's Java Just-In-Time (JIT) compiler](https://wikis.oracle.com/display/HotSpotInternals), and in particular, [performance techniques](https://wikis.oracle.com/display/HotSpotInternals/PerformanceTechniques) of the JIT.
+-   [Details about Sun's/Oracle's Java Just-In-Time (JIT) compiler](https://wikis.oracle.com/display/HotSpotInternals), and in particular, [performance techniques](https://wikis.oracle.com/display/HotSpotInternals/PerformanceTechniques) of the JIT.
 
-## Miscellaneous
+Miscellaneous
+-------------
 
-  - An [explanation](https://imagej.net/docs/install/osx.html#icon) where ImageJ's icon's [microscope](http://www.arsmachina.com/s-hart1209.htm) comes from.
+-   An [explanation](https://imagej.net/docs/install/osx.html#icon) where ImageJ's icon's [microscope](http://www.arsmachina.com/s-hart1209.htm) comes from.
 
-## Imaging Networks and Facilities
+Imaging Networks and Facilities
+-------------------------------
 
-  - [Imaging Facility Network (Dresden Biopolis)](https://ifn.mpi-cbg.de)
+-   [Imaging Facility Network (Dresden Biopolis)](https://ifn.mpi-cbg.de)

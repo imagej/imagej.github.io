@@ -11,15 +11,16 @@ description: test description
 
 JRuby scripting in ImageJ is a nice alternative to scripting using ImageJ's macro language. It has the following advantages:
 
-  - You don't have to learn a new language to script ImageJ (assuming you know Ruby)
-  - You're not limited to using the functionality exposed by the macro language: you can use any class in ImageJ, one of its plugins or standard Java classes
-  - Developing JRuby scripts is very fast compared to developing plugins in Java
+-   You don't have to learn a new language to script ImageJ (assuming you know Ruby)
+-   You're not limited to using the functionality exposed by the macro language: you can use any class in ImageJ, one of its plugins or standard Java classes
+-   Developing JRuby scripts is very fast compared to developing plugins in Java
 
 *(These advantages, of course, are shared by the [Jython Scripting](Jython_Scripting ), [Clojure Scripting](Clojure_Scripting ), Beanscript and [Javascript Scripting](Javascript_Scripting ) bundled in Fiji.)*
 
-If you have any questions or suggestions about JRuby scripting in ImageJ, please contact the [ImageJ forum](https://forum.imagej.net). Have fun\!
+If you have any questions or suggestions about JRuby scripting in ImageJ, please contact the [ImageJ forum](https://forum.imagej.net). Have fun!
 
-## Tutorial
+Tutorial
+--------
 
 Let's start writing some JRuby right away - start up the interpreter by going to {% include bc content='Plugins | Scripting | JRuby Interpreter'%}. The interpreter window will pop up, but it may take a little time for the JRuby runtime to be ready. You should initially see the message:
 
@@ -69,7 +70,7 @@ You might find the use of "ij.IJ.getImage" above slightly suspicious if you're u
 ` >>> rng.nextInt 1024`  
 ` 94`
 
-Note that this is an example of creating an object in JRuby; you use the usual Something.new syntax of Ruby, but it creates an object of the standard Java class. Hopefully you're thinking "Excellent\!" or something similar at this stage...
+Note that this is an example of creating an object in JRuby; you use the usual Something.new syntax of Ruby, but it creates an object of the standard Java class. Hopefully you're thinking "Excellent!" or something similar at this stage...
 
 ### Importing classes
 
@@ -90,111 +91,101 @@ Then you can, for example, do the following:
 ` C2-test.lsm`  
 ` >>> a[1].show`
 
-## Example: Generating a Plasma Cloud
+Example: Generating a Plasma Cloud
+----------------------------------
 
 In this first example, we'll just create a small script to create a fractal "plasma cloud" image. We'll start of experimenting in the interpreter to make sure we've got the code to create images correctly. To create the RGB image in the first place, we create a ColorProcessor and then an ImagePlus from that:
 
-``` ruby
->>> w = 800
-800
->>> h = 600
-600
->>> cp = ij.process.ColorProcessor.new(w,h)
-ip[width=800, height=600, min=0.0, max=255.0]
->>> i = ij.ImagePlus.new "Plasma Cloud", cp
-imp[Plasma Cloud 800x600x1]
-```
+    >>> w = 800
+    800
+    >>> h = 600
+    600
+    >>> cp = ij.process.ColorProcessor.new(w,h)
+    ip[width=800, height=600, min=0.0, max=255.0]
+    >>> i = ij.ImagePlus.new "Plasma Cloud", cp
+    imp[Plasma Cloud 800x600x1]
 
 ... and now show it:
 
-``` ruby
->>> i.show
-```
+    >>> i.show
 
 We'll manipulate the pixel array directly, so it's worth checking that this will work OK. Here we try to set half of the image to green:
 
-``` ruby
->>> i
-imp[Plasma Cloud 800x600x1]
->>> pixels = cp.getPixels
-[I@e038c4
->>> 0.upto( w * (h / 2) - 1) { |j| pixels[j] = 0x0000FF00 }
-0
->>> i.updateAndDraw
-```
+    >>> i
+    imp[Plasma Cloud 800x600x1]
+    >>> pixels = cp.getPixels
+    [I@e038c4
+    >>> 0.upto( w * (h / 2) - 1) { |j| pixels[j] = 0x0000FF00 }
+    0
+    >>> i.updateAndDraw
 
 Hopefully that worked OK. The color value specified there is in ARGB format. You may have noticed that this step was rather slow - there is quite a bit of magic involved in JRuby's transparent access between Ruby and Java, which has an inevitable performance cost. But if your goal is not so much the speed with which the script is executed, but to get a working script as fast as possible, JRuby scripting may well be your optimal tool.
 
 (By the way, sometimes it's even possible to use java's optimizations in ruby. Replace the
 
-``` ruby
-0.upto( w * (h / 2) - 1) { |j| pixels[j] = 0x0000FF00 }
-```
+    0.upto( w * (h / 2) - 1) { |j| pixels[j] = 0x0000FF00 }
 
 with
 
-``` ruby
- java.util.Arrays.fill(pixels, 0, w*h/2 - 1, 0x0000FF00)
-```
+     java.util.Arrays.fill(pixels, 0, w*h/2 - 1, 0x0000FF00)
 
 and get a free 240 times speedup.)
 
 You would probably proceed at this stage by switching to a text editor and creating a script with the extension ".rb" and underscores in the name in the Fiji plugins directory. You should find an example "Plasma\_Cloud.rb" script in plugins/Examples which is based on the basics we worked out above. The output of this script looks like this:
 
-![Example "Plasma Cloud" image](Plasma-cloud.png "Example \"Plasma Cloud\" image")
+![Example "Plasma Cloud" image](Plasma-cloud.png "Example "Plasma Cloud" image")
 
-## Example: Batch Converting File Formats
+Example: Batch Converting File Formats
+--------------------------------------
 
 This is a short example script showing how to convert a directory of LSM files into BioRad .PIC format using JRuby and the util.BatchOpener methods that I mentioned above. This just hard-codes the paths in the filesystem, so you would need to edit it if you want to do something similar. Nonetheless, hopefully this is instructive: filtering filenames, and so on, is typically much more convenient using JRuby than the ImageJ macro language:
 
-``` ruby
-input_directory  = "/home/mark/lsm-examples/"
-output_directory = "/home/mark/lsm-examples/biorad/"
+    input_directory  = "/home/mark/lsm-examples/"
+    output_directory = "/home/mark/lsm-examples/biorad/"
 
-include_class 'util.BatchOpener'
-include_class 'Biorad_Writer'
+    include_class 'util.BatchOpener'
+    include_class 'Biorad_Writer'
 
-# Check that the input directory exists:
-unless FileTest.directory? input_directory
-  ij.IJ.error "Input directory '#{input_directory} was not found"
-  exit(-1)
-end
+    # Check that the input directory exists:
+    unless FileTest.directory? input_directory
+      ij.IJ.error "Input directory '#{input_directory} was not found"
+      exit(-1)
+    end
 
-# Create the output directory if it doesn't exist:
-unless FileTest.exist? output_directory
-  Dir.mkdir output_directory
-end
+    # Create the output directory if it doesn't exist:
+    unless FileTest.exist? output_directory
+      Dir.mkdir output_directory
+    end
 
-# Biorad filenames have a standard format, which we generate with
-# this function.  ('channel' should be 1-indexed):
-def make_biorad_filename(lsm_filename,channel)
-  lsm_filename.gsub(/.lsm$/,sprintf("%02d.pic",channel))
-end
+    # Biorad filenames have a standard format, which we generate with
+    # this function.  ('channel' should be 1-indexed):
+    def make_biorad_filename(lsm_filename,channel)
+      lsm_filename.gsub(/.lsm$/,sprintf("%02d.pic",channel))
+    end
 
-Dir.entries(input_directory).each do |e|
-  # Skip anything that doesn't have a '.lsm' extension:
-  next unless e =~ /\.lsm$/
-  puts "Converting: #{e}"
-  # Open the image file to an array of ImagePlus objects:
-  a = BatchOpener.open("#{input_directory}#{e}")
-  # Create the writer plugin object:
-  writer = Biorad_Writer.new
-  # Now, for each channel in the input image, write out
-  index = 0
-  a.each do |image|
-    # The Biorad_Writer doesn't like COLOR_256 images, so convert to
-    # GRAY8:
-    ij.process.StackConverter.new(image).convertToGray8
-    biorad_filename = make_biorad_filename e, index + 1
-    puts "    Writing: #{biorad_filename}"
-    writer.save image, output_directory, biorad_filename
-    index += 1
-    image.close
-  end
-end
-  
-ij.IJ.showMessage("Finished converting to Biorad format!")
-```
+    Dir.entries(input_directory).each do |e|
+      # Skip anything that doesn't have a '.lsm' extension:
+      next unless e =~ /\.lsm$/
+      puts "Converting: #{e}"
+      # Open the image file to an array of ImagePlus objects:
+      a = BatchOpener.open("#{input_directory}#{e}")
+      # Create the writer plugin object:
+      writer = Biorad_Writer.new
+      # Now, for each channel in the input image, write out
+      index = 0
+      a.each do |image|
+        # The Biorad_Writer doesn't like COLOR_256 images, so convert to
+        # GRAY8:
+        ij.process.StackConverter.new(image).convertToGray8
+        biorad_filename = make_biorad_filename e, index + 1
+        puts "    Writing: #{biorad_filename}"
+        writer.save image, output_directory, biorad_filename
+        index += 1
+        image.close
+      end
+    end
+      
+    ij.IJ.showMessage("Finished converting to Biorad format!")
 
 ### Converting ImageJ Macros to JRuby
 
@@ -214,21 +205,20 @@ The "run" method may also be particularly useful for calling existing ImageJ plu
 
 ` x_coordinates, y_coordinates = get_selection_coordinates`
 
-A note for the interested programmer: About 15% of the macro functions have be done so far, and if anyone wanted to help out with doing the rest, that would be excellent\! The source code {% include github repo='fiji ' path='plugins/JRuby/imagej.rb ' label='can be found here ' %}.
+A note for the interested programmer: About 15% of the macro functions have be done so far, and if anyone wanted to help out with doing the rest, that would be excellent! The source code {% include github repo='fiji ' path='plugins/JRuby/imagej.rb ' label='can be found here ' %}.
 
-## Example: Generating Red/Cyan Anaglyphs
+Example: Generating Red/Cyan Anaglyphs
+--------------------------------------
 
 This example script can be found in the Plugins/Examples/ folder of Fiji. It will take an image stack and generate from it an image that should appear in 3D when viewed through red and cyan glasses. All that this does is to do two maximum intensity projections from two slightly different angles and merges them together. It's a nice example because all the work is done by existing ImageJ commands. If you look at the script, you'll see that the first step is to run the "3D Project..." plugin with some slightly convoluted options:
 
-``` ruby
-projection_options = "projection=[Brightest Point] axis=Y-Axis "
-projection_options += "initial=-#{degree_separation / 2} "
-projection_options += "total=#{degree_separation} "
-projection_options += "rotation=#{degree_separation} "
-projection_options += "interpolate"
+    projection_options = "projection=[Brightest Point] axis=Y-Axis "
+    projection_options += "initial=-#{degree_separation / 2} "
+    projection_options += "total=#{degree_separation} "
+    projection_options += "rotation=#{degree_separation} "
+    projection_options += "interpolate"
 
-run "3D Project...", projection_options
-```
+    run "3D Project...", projection_options
 
 In general, the best way to figure out what these options should be is to start the macro recorder with "{% include bc content='Plugins | Macros | Record...'%}" and run the plugin. In this case, the output in the macro recorder looks like this:
 
@@ -241,17 +231,20 @@ Some example output:
 
 ![Example anaglyph image](/images/pages/Anaglyph.png "Example anaglyph image")
 
-## Script Parameters
+Script Parameters
+-----------------
 
 When using [Script Parameters](Script_Parameters ), e.g., in the [Script Editor](Script_Editor ), you need to use a `$` before `@ variables`, due to a limitation in the scoping, as in this example from [Script Templates](Script_Templates ):
 
 {% include github-embed org='scijava ' repo='scripting-jruby ' path='src/main/resources/script\_templates/Intro/Greeting.rb ' label='Greeting.rb ' %}
 
-## Library
+Library
+-------
 
 There is a library called {% include github repo='fiji ' path='plugins/JRuby/imagej.rb ' label='imagej.rb ' %} for convenience. It contains a number of useful functions related to ImageJ. It is loaded by default when creating a new JRuby script in the [Script Editor](Script_Editor ).
 
-## What next?
+What next?
+----------
 
 You may want to first have a quick look at the [Scripting Help](Scripting_Help ) page for generic instructions in using the interpreter and script interfaces, and the [Scripting comparisons](Scripting_comparisons ) page for an example written in several of the different scripting languages available. The JRuby example shows how to implement a Java interface in JRuby.
 

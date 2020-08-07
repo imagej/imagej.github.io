@@ -7,7 +7,7 @@ categories: Citable
 description: test description
 ---
 
-![File.png](/images/pages/File.png "File.png"){% include clear%}
+<img src="/images/pages/File.png" title="fig:File.png" width="500" alt="File.png" />{% include clear%}
 
 {% capture author%}
 Alex Dobens, {% include person content='Dobensl' %}
@@ -18,7 +18,7 @@ Alex Dobens, {% include person content='Dobensl' %}
 {% endcapture %}
 {% include info-box content='Plugin' software='Fiji/ImageJ ' name='FijiWings ' author=author maintainer=maintainer filename='fiji-macosx.zip ' source='https://sourceforge.net/projects/fijiwings/ ' status='stable ' %}=== Introduction ===
 
-This set of macros control plugin to perform semi-automatic tracing of insect wing veins and determination of trichome number and density. The native file format is open and XML-based. This plugin is Free Software (also known as Open Source software) and is supplied as a packaged version of Fiji, here \<http://sourceforge.net/projects/fijiwings>\.
+This set of macros control plugin to perform semi-automatic tracing of insect wing veins and determination of trichome number and density. The native file format is open and XML-based. This plugin is Free Software (also known as Open Source software) and is supplied as a packaged version of Fiji, here &lt;http://sourceforge.net/projects/fijiwings&gt;.
 
 To help you to get started with using this plugin, there is an explanatory screencast here: http://www.youtube.com/user/Fijiwingsadmin/videos
 
@@ -28,7 +28,7 @@ This plugin is free software, licensed under the GNU GPL v3 so please do contrib
 
 ### Installation
 
-A packaged version of Fiji for both MacOS and Windows are available for download at \<http://sourceforge.net/projects/fijiwings>\. Following download, FijiWings is unzipped and used directly.
+A packaged version of Fiji for both MacOS and Windows are available for download at &lt;http://sourceforge.net/projects/fijiwings&gt;. Following download, FijiWings is unzipped and used directly.
 
 ### Feedback
 
@@ -38,19 +38,22 @@ Please report any bugs that you find with Fiji's {% include bc content='Help | R
 
 If you would like to reference FijiWings in a publication, you can cite:
 
-  - {% include publication content='FijiWings' %}
+-   {% include publication content='FijiWings' %}
 
-## Tutorials
+Tutorials
+---------
 
 {% include youtube url='https://www.youtube.com/embed/kkwbRaN51ww'%} {% include youtube url='https://www.youtube.com/embed/nlYZyJxV5Bw'%} {% include youtube url='https://www.youtube.com/embed/YDZHy\_5mPko'%}
 
-  - [All FijiWings videos](http://www.youtube.com/user/Fijiwingsadmin/videos)
+-   [All FijiWings videos](http://www.youtube.com/user/Fijiwingsadmin/videos)
 
-## Technical Documentation
+Technical Documentation
+-----------------------
 
-see \<http://sourceforge.net/projects/fijiwings>\
+see &lt;http://sourceforge.net/projects/fijiwings&gt;
 
-## Authors
+Authors
+-------
 
 These macros were written by Alexander Dobens with feedback and direction from Leonard Dobens.
 

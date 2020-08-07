@@ -21,13 +21,15 @@ description: test description
 {% endcapture %}
 {% include info-box name='FilamentDetector ' logo=' ' software='Fiji ' author=author maintainer=maintainer source=source released='13/10/2017 ' status='v0.1.1, alpha ' category='Tracking, Detection ' %}
 
-## Presentation
+Presentation
+------------
 
 FilamentDetector is a Fiji plugin that allows easy, fast and accurate detection and tracking of biological filaments.
 
 **Please visit the GitHub page for more information: https://github.com/hadim/FilamentDetector**
 
-## Authors
+Authors
+-------
 
 FilamentDetector has been created by Hadrien Mary.
 

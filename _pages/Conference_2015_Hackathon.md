@@ -9,7 +9,8 @@ description: test description
 
 There was a [hackathon](hackathon ) in Madison following the ImageJ [Conference 2015](Conference_2015 ).
 
-## Topic
+Topic
+-----
 
 There were two primary topics for this hackathon:
 
@@ -18,17 +19,18 @@ There were two primary topics for this hackathon:
 
 ### Side projects
 
-As always, there were lots of other exciting collaborations going on, too\!
+As always, there were lots of other exciting collaborations going on, too!
 
-  - Troubleshoot the [SCIFIO-ITK-bridge](https://github.com/scifio/scifio-itk-bridge) in SimpleITK (Mark + Matt)
-  - Generalize MATLABCommands to a [general framework](https://github.com/Tiago/Scripts/issues/14) that could be used in BAR (Mark + Tiago)
-  - The {% include github org='imagej ' repo='imagej-omero ' label='ImageJ-OMERO ' %} plugin (Alex + Curtis)
-  - SciJava {% include github org='scijava ' repo='scijava-common ' pr='167 ' label='robust-io redesign ' %} (Curtis)
-  - SCIFIO {% include github org='scifio ' repo='scifio ' issue='283 ' label='blockization ' %} (Mark)
-  - {% include github org='fiji ' repo='colocalisation\_analysis ' label='Coloc2 ' %} bugs? (Ellen)
-  - KNIME paper (Mark + Christian)
+-   Troubleshoot the [SCIFIO-ITK-bridge](https://github.com/scifio/scifio-itk-bridge) in SimpleITK (Mark + Matt)
+-   Generalize MATLABCommands to a [general framework](https://github.com/Tiago/Scripts/issues/14) that could be used in BAR (Mark + Tiago)
+-   The {% include github org='imagej ' repo='imagej-omero ' label='ImageJ-OMERO ' %} plugin (Alex + Curtis)
+-   SciJava {% include github org='scijava ' repo='scijava-common ' pr='167 ' label='robust-io redesign ' %} (Curtis)
+-   SCIFIO {% include github org='scifio ' repo='scifio ' issue='283 ' label='blockization ' %} (Mark)
+-   {% include github org='fiji ' repo='colocalisation\_analysis ' label='Coloc2 ' %} bugs? (Ellen)
+-   KNIME paper (Mark + Christian)
 
-## Participants
+Participants
+------------
 
 <timeline> Preset = TimeHorizontal\_AutoPlaceBars\_UnitYear
 
@@ -117,27 +119,28 @@ PlotData=
 
 \* Madison locals include:
 
-  - {% include person content='etarena' %}
-  - {% include person content='Eliceiri' %}
-  - {% include person content='Hinerm' %}
-  - {% include person content='yuminguw' %}
-  - {% include person content='guneetsinghmehta' %}
-  - {% include person content='Rueden' %}
-  - {% include person content='Awalter2' %}
-  - {% include person content='jaywarrick' %}
-  - {% include person content='LeonYang5114' %}
+-   {% include person content='etarena' %}
+-   {% include person content='Eliceiri' %}
+-   {% include person content='Hinerm' %}
+-   {% include person content='yuminguw' %}
+-   {% include person content='guneetsinghmehta' %}
+-   {% include person content='Rueden' %}
+-   {% include person content='Awalter2' %}
+-   {% include person content='jaywarrick' %}
+-   {% include person content='LeonYang5114' %}
 
 Some people were not present at the hackathon on weekends.
 
-## Locations
+Locations
+---------
 
 ### Thursday, September 3 - Friday, September 4
 
 [ImageJ 2015 conference](Conference_2015 ) at the [H.F. DeLuca Forum](http://discovery.wisc.edu/home/town-center/apply-to-reserve-town-center-spaces/large-rooms/h-f-deluca-forum/h-f-deluca-forum.cmsx), [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/), 330 N. Orchard St., Madison, WI 53715.
 
-  - **Directions:** [Directions to the Discovery Building](http://discovery.wisc.edu/home/discovery/plan-your-visit/directions/)
-  - **Maps:** [Google map](https://www.google.com/maps/place/Wisconsin+Institutes+for+Discovery,+University+of+Wisconsin-Madison,+330+N+Orchard+St,+Madison,+WI+53715), [Campus map](http://map.wisc.edu/)
-  - **Parking:** [Lot 17](http://www.map.wisc.edu/s/gtdclo2r), [Lot 20](http://www.map.wisc.edu/s/rl4uc9mf), [Lot 80](http://www.map.wisc.edu/s/2f9gywd7)
+-   **Directions:** [Directions to the Discovery Building](http://discovery.wisc.edu/home/discovery/plan-your-visit/directions/)
+-   **Maps:** [Google map](https://www.google.com/maps/place/Wisconsin+Institutes+for+Discovery,+University+of+Wisconsin-Madison,+330+N+Orchard+St,+Madison,+WI+53715), [Campus map](http://map.wisc.edu/)
+-   **Parking:** [Lot 17](http://www.map.wisc.edu/s/gtdclo2r), [Lot 20](http://www.map.wisc.edu/s/rl4uc9mf), [Lot 80](http://www.map.wisc.edu/s/2f9gywd7)
 
 ### Saturday, September 5 - Friday, September 11
 

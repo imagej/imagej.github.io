@@ -13,7 +13,8 @@ Plugin generating contour lines with equal spacing on top of an image (using ove
 
 http://katpyxa.info/software/ContourLines/CL2.gif
 
-## Parameters
+Parameters
+----------
 
 After plugin launch, rendering parameters window will appear
 
@@ -63,6 +64,7 @@ Plugin will remove open contours (contours with free ends). Examples are below, 
 
 http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3_x.png> <http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3_single_color_closed_only.png
 
-## Updates history
+Updates history
+---------------
 
-  - v.0.0.4 added criteria for line integration end. Added a possibility to remove open contours.
+-   v.0.0.4 added criteria for line integration end. Added a possibility to remove open contours.

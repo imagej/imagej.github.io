@@ -7,23 +7,25 @@ categories:
 description: test description
 ---
 
-# Welcome\!
+Welcome!
+========
 
 Fiji is planning on applying to the Google Summer of Code 2009 program. As mentoring organizations have not yet been accepted, there is no guarantee that Fiji will be asked to participate. This page is to help plan proposed student projects. (UPDATE: Fiji [has been accepted](http://socghop.appspot.com/program/accepted_orgs/google/gsoc2009) as a mentoring organization. See the [Fiji GSoC organization page](http://socghop.appspot.com/org/show/google/gsoc2009/fiji).)
 
 This page contains project ideas culled from the Fiji user and developer community. You can get started by reading some project descriptions, and the mailing list thread(s) that spawned them. Also consider joining the developer mailing list, or finding us on IRC. Details can be found in [Help](Help ).
 
-Don't like a project you see here? Just throw your ideas at us, on the developer mailing list\!
+Don't like a project you see here? Just throw your ideas at us, on the developer mailing list!
 
-# General Requirements
+General Requirements
+====================
 
 All projects have the following basic requirements:
 
-  - Unless otherwise stated, projects will require programming in Java.
-  - All materials must be released under the [GNU General Public License (GPL)](http://www.gnu.org/copyleft/gpl.html), version 2.
-  - Individual students shall retain copyright on their works.
-  - Projects must be tracked and managed in Git, and published on [1](https://fiji.sc/cgi-bin/gitweb.cgi) (we will provide you with an account).
-  - Weekly project status reports should be sent to the project's mentors. Each status report should outline what was accomplished that week, any issues that prevented that week's goals from being completed, and your goals for the next week. This will help you to break your project down into manageable chunks, and will also help the project's mentors to better support your efforts.
+-   Unless otherwise stated, projects will require programming in Java.
+-   All materials must be released under the [GNU General Public License (GPL)](http://www.gnu.org/copyleft/gpl.html), version 2.
+-   Individual students shall retain copyright on their works.
+-   Projects must be tracked and managed in Git, and published on [1](https://fiji.sc/cgi-bin/gitweb.cgi) (we will provide you with an account).
+-   Weekly project status reports should be sent to the project's mentors. Each status report should outline what was accomplished that week, any issues that prevented that week's goals from being completed, and your goals for the next week. This will help you to break your project down into manageable chunks, and will also help the project's mentors to better support your efforts.
 
 Interested students are encouraged to read the [Advice for GSoC Students Page](http://code.google.com/p/google-summer-of-code/wiki/AdviceforStudents), as it has excellent suggestions that might help you to pick a project and shape your proposal.
 
@@ -33,9 +35,11 @@ If your original proposal doesn't pan out or becomes too much of a challenge, yo
 
 Students can apply for the program at the [Google Summer of Code website](http://code.google.com/soc/). Please consider reviewing our [SoC2009Template](SoC2009Template ) and answering its questions as part of your application.
 
-# Project ideas
+Project ideas
+=============
 
-## General-purpose Image Processing Framework
+General-purpose Image Processing Framework
+------------------------------------------
 
 ImageJ has an abstraction of an image, called ImageProcessor, which is specialized by data type as ByteProcessor, ShortProcessor, ColorProcessor... That only wraps 2-dimensional images, though. For 3-dimensional images, you need to use instances of the ImageStack class, and if you need even more dimensions, you need a HyperStack.
 
@@ -45,23 +49,23 @@ So some data structure is sorely needed, preferably with performant yet easy acc
 
 The idea is to have
 
-  - an abstraction of the data type: a class that provides methods for performing arithmetics, to be specialized for all data types (byte, short, int, float, double, RGB, complex float and complex double),
+-   an abstraction of the data type: a class that provides methods for performing arithmetics, to be specialized for all data types (byte, short, int, float, double, RGB, complex float and complex double),
 
-<!-- end list -->
+<!-- -->
 
-  - an abstraction of a "cursor": a class that points to a certain location in an image,
+-   an abstraction of a "cursor": a class that points to a certain location in an image,
 
-<!-- end list -->
+<!-- -->
 
-  - a family of iterators that work on cursors,
+-   a family of iterators that work on cursors,
 
-<!-- end list -->
+<!-- -->
 
-  - interpolation, cropping and affine/non-linear transformations implemented in terms of iterators,
+-   interpolation, cropping and affine/non-linear transformations implemented in terms of iterators,
 
-<!-- end list -->
+<!-- -->
 
-  - all kinds of cool stuff that will be now easy.
+-   all kinds of cool stuff that will be now easy.
 
 Careful implementation of these ideas should result in a framework where you do not need to implement the same algorithm for every single data type, where the code is still readable, and which executes as fast as if the algorithm was implemented once per data type.
 
@@ -75,7 +79,8 @@ The minimal goal is a set of "data type", "cursor" and "iterator" implementation
 **Language:** Java.  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)  
 
-## Integrate Micro-Manager into Fiji
+Integrate Micro-Manager into Fiji
+---------------------------------
 
 This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX and Windows. The idea is to make a recipe that other people can use to compile new releases of [Micro-Manager](http://www.micro-manager.org/), as well as integrate it into the Fiji project for a smooth user experience. To ensure that support for Micro-Manager is not broken inadvertently, you shall add regression tests, too.
 
@@ -83,7 +88,8 @@ This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX 
 **Language:** Java  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)
 
-## Add more regression tests
+Add more regression tests
+-------------------------
 
 Whenever releasing Fiji, or after major changes, we would like to be reasonably safe that we did not break things that used to work before. We already have a few [tests](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=tests), but hardly enough.
 
@@ -95,7 +101,8 @@ The idea is to extend the simple Python script in tests/record.py to make it eas
 **Language:** Java, Clojure, Javascript, Jython, JRuby **or** ImageJ's macro language  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)
 
-## Add word expansion to the scripting interpreters
+Add word expansion to the scripting interpreters
+------------------------------------------------
 
 Fiji offers scripting in 5 different languages, all running on the JVM: [Javascript](Javascript_Scripting ), [Jython](Jython_Scripting ), [JRuby](JRuby_Scripting ), [Clojure](Clojure_Scripting ), Beanshell and the ImageJ Macro Language. Through the reflection API and the numerous language hooks that each scripting engine provides, it is possible to complete method names or names of member variables, as well as class names.
 
@@ -103,7 +110,8 @@ Fiji offers scripting in 5 different languages, all running on the JVM: [Javascr
 **Language:** A combination of Java plus the scripting language, in this order of preference: Javascript, Jython, JRuby, Clojure and Beanshell. If you can do them all, we'll erect you a monument.  
 **Mentor:** [Albert Cardona](http://www.ini.uzh.ch/people/acardona) (acardona@ini.phys.ethz.ch)  
 
-## Add a simple yet minimally powerful plugin and script editor
+Add a simple yet minimally powerful plugin and script editor
+------------------------------------------------------------
 
 ImageJ offers currently a very limited, java.awt.TextArea -based built-in text editor, for writing, compiling and running java plugins, ImageJ macros, and as of recently javascript scripts. The text editor lacks syntax highlighting, does not use a proper font for coding, and lacks minimal debugging capabilities (such as parsing stack traces to highlight lines that failed to compile).
 
@@ -115,7 +123,8 @@ The student will have to research if there are existing Open Source components t
 **Language:** Java or a JVM scripting language of your choice (preferrably Javascript, Jython, JRuby or Clojure).  
 **Mentor:** [Albert Cardona](http://www.ini.uzh.ch/people/acardona) (acardona@ini.phys.ethz.ch)  
 
-## Enhance Fiji's plugin manager
+Enhance Fiji's plugin manager
+-----------------------------
 
 Beyond the built-in commands, ImageJ provides the means to add user-developed plugins by implementing the PlugIn, PlugInFilter and PlugInFrame interfaces. Fiji uses ImageJ at the core and packages around it a very large number of plugins (see the [Plugins Menu](Plugins_Menu )). The ideal application menus cannot contain hundreds of plugins: any specific user has no use for more than half of them, and their mere presence get on the way to adding other, user-desired plugins.
 
@@ -128,30 +137,32 @@ At the moment, there is a rudimentary {% include github repo='fiji ' path='src-p
 **Goal:** Convert Fiji's update plugin into a proper plugin manager.  
 The GUI should have two main components: a tree with the plugins and a text pane for reading documentation.
 
-  - The tree must mirror the user's plugins menu and provide the means to enable/disable plugins, i.e. to add/remove them from the menus. As well as indicate whether any updates are available for a plugin, or newly available plugins.
-  - The text pane will offer the documentation on a plugin, and thus double as built-in plugin documentation GUI. The documentation must be fetched directly from this wiki site (displayed in a javax.swing.JEditorPane with an HTMLEditorKit).  
+-   The tree must mirror the user's plugins menu and provide the means to enable/disable plugins, i.e. to add/remove them from the menus. As well as indicate whether any updates are available for a plugin, or newly available plugins.
+-   The text pane will offer the documentation on a plugin, and thus double as built-in plugin documentation GUI. The documentation must be fetched directly from this wiki site (displayed in a javax.swing.JEditorPane with an HTMLEditorKit).  
 
 The plugin manager will query a specific server based on fiji.sc for updated and newly available plugins.
 
 **Language:** Java or a JVM scripting language of your choice (preferrably Javascript, Jython, JRuby or Clojure).  
 **Mentor:** [Albert Cardona](http://www.ini.uzh.ch/people/acardona) (acardona@ini.phys.ethz.ch), Johannes Schindelin (johannes.schindelin@gmx.de)  
 
-## Provide cluster support for Fiji
+Provide cluster support for Fiji
+--------------------------------
 
 Fiji runs fine on desktop machines, but for some tasks, it is better to use a cluster.
 
 To that end, Fiji already supports "headless" mode, i.e. operation without the need to have a graphical user interface running. But that is not enough:
 
-  - There must be an easy way to define what operation should be performed on what set of images, or on what set of subimages.
-  - Clusters come in all kinds of flavors with a lot of different schedulers. A general backend with adapters for the most common schedulers will be needed.
-  - The user should have a nice user interface to see the progress, and the end result.
-  - For convenience, Fiji should offer the option to make sure that the current Fiji is installed.
+-   There must be an easy way to define what operation should be performed on what set of images, or on what set of subimages.
+-   Clusters come in all kinds of flavors with a lot of different schedulers. A general backend with adapters for the most common schedulers will be needed.
+-   The user should have a nice user interface to see the progress, and the end result.
+-   For convenience, Fiji should offer the option to make sure that the current Fiji is installed.
 
 **Goal:** Add a component to schedule processes.  
 **Language:** Java.  
 **Mentor:** Pavel Tomancak, Johannes Schindelin (johannes.schindelin@gmx.de)  
 
-## Add JMathLib (MATLAB clone) support
+Add JMathLib (MATLAB clone) support
+-----------------------------------
 
 Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB ) scripts. While it is [wrong to think of pixels as little squares](ftp_//ftp.alvyray.com/Acrobat/6_Pixel.pdf), and literally all [MATLAB](MATLAB ) scripts to perform image processing are suffering from that shortcoming, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB ) licenses just for that purpose.
 
@@ -159,30 +170,32 @@ Happily, there is a [MATLAB](MATLAB ) clone written in Java: [JMathLib](http://w
 
 The project would consist of
 
-  - getting as many .m scripts for image processing as possible,
+-   getting as many .m scripts for image processing as possible,
 
-<!-- end list -->
+<!-- -->
 
-  - integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at {% include github repo='fiji ' path='src-plugins/JRuby/JRuby\_Interpreter.java ' label='the JRuby Interpreter ' %} for an example,
+-   integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at {% include github repo='fiji ' path='src-plugins/JRuby/JRuby\_Interpreter.java ' label='the JRuby Interpreter ' %} for an example,
 
-<!-- end list -->
+<!-- -->
 
-  - adapting (or overriding) JMathLib's image toolbox so that it integrates seamlessly with ImageJ,
+-   adapting (or overriding) JMathLib's image toolbox so that it integrates seamlessly with ImageJ,
 
-<!-- end list -->
+<!-- -->
 
-  - test (and fix what does not work) as many .m scripts as possible.
+-   test (and fix what does not work) as many .m scripts as possible.
 
 **Goal:** Integrate JMathLib as a new scripting language.  
 **Language:** Java.  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)  
 
-# Other Resources
+Other Resources
+===============
 
 `* `[`SoC2009Application`](SoC2009Application )
 
-# Other links
+Other links
+===========
 
-`* `[`ImageJ's``   ``homepage`](https://imagej.net)  
-`* `[`Fiji's``   ``developer``   ``mailing``   ``list`](http://groups.google.com/group/fiji-devel)  
-`* `[`#fiji-devel``   ``channel`](IRC )` on irc.freenode.net`
+`* `[`ImageJ's`` ``homepage`](https://imagej.net)  
+`* `[`Fiji's`` ``developer`` ``mailing`` ``list`](http://groups.google.com/group/fiji-devel)  
+`* `[`#fiji-devel`` ``channel`](IRC )` on irc.freenode.net`

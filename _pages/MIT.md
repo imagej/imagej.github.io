@@ -14,5 +14,5 @@ See the {% include wikipedia title='MIT License' text='Wikipedia article on the 
 
 {% include license name='MIT License ' shortname='MIT ' description='The """MIT""" license is a simple permissive license, functionally equivalent to the [Simplified BSD License](BSD-2 ). A licensee of MIT-licensed software can:
 
-  - Use, copy and distribute the unmodified source or binary forms of the licensed program
-  - Use, copy and distribute modified source or binary forms of the licensed program, provided that all distributed copies are accompanied by the license ' url='http://choosealicense.com/licenses/mit/ ' choosealicense='mit ' osi='MIT ' %}
+-   Use, copy and distribute the unmodified source or binary forms of the licensed program
+-   Use, copy and distribute modified source or binary forms of the licensed program, provided that all distributed copies are accompanied by the license ' url='http://choosealicense.com/licenses/mit/ ' choosealicense='mit ' osi='MIT ' %}

@@ -17,11 +17,13 @@ Undral Erdenetsogt (erdenetsogt@biomedical-imaging.de), {% include person conten
 {% endcapture %}
 {% include info-box software='Fiji ' name='Shape Smoothing Plugin ' author=author maintainer=maintainer filename=' [shape-smoothing.jar](https://github.com/thorstenwagner/ij-shape-smoothing/releases/latest) ' source=' [Github](https://github.com/thorstenwagner/ij-shape-smoothing) ' latest-version='v1.2 (06 October 2016) ' status='maintaining ' %}
 
-# General Purpose
+General Purpose
+===============
 
 The plugin smoothens contours of objects in binary images. The Fourier transformation combined with filtering of Fourier descriptors (FDs) are applied to conduct the smoothing. The user can define the measure of contour smoothing by setting the amount of FDs – either relative or absolute. All FDs up to the selected threshold are scale-, rotation- and translation-invariant.
 
-# Background
+Background
+==========
 
 The plugin at first extracts the contours of all objects found in the input image. Object recognition and contour extraction are both performed by using [IJBlob](https://github.com/thorstenwagner/ij-blob). Then the contours are processed one at a time in the following way:
 
@@ -33,9 +35,10 @@ For implementing the Fourier transformations [JTransforms](https://github.com/we
 
 Some theoretical background of FD-filtering: the result of step 1 is a series of FDs with the zero frequency (ZF) in its middle. ZF is essential for reconstruction spatial information of the contour. A frequency or a FD contains the more information the nearer it is to ZF (regardless of the side). Therefore in step 2 the FDs on the ends of the obtained series are set to 0+0i to achieve the smoothing.
 
-# Parameters
+Parameters
+==========
 
-![Shape-Smoothing parameters](/images/pages/Shape smoothing GUI.png "Shape-Smoothing parameters")
+<figure><img src="/images/pages/Shape_smoothing_GUI.png" title="Shape-Smoothing parameters" width="320" alt="Shape-Smoothing parameters" /><figcaption aria-hidden="true">Shape-Smoothing parameters</figcaption></figure>
 
 At first users have to choose on how they want to define the smoothing: via relative or absolute number of FDs to be “kept”.
 
@@ -49,17 +52,19 @@ At first users have to choose on how they want to define the smoothing: via rela
 
 **Black Background:** Select this option, if the background in the input image is black and the objects are white. (The plugin prefills this parameter according to a rudimentary background detection)
 
-# Examples
+Examples
+========
 
 <div>
 
-  - {% include thumbnail src='/images/pages/Shape-smoothing-original-image.png' title='none|300px|Original image'%}
-  - {% include thumbnail src='/images/pages/Shape-smoothing-smoothed-object.png' title='none|300px|Smoothed object (4% of FDs retained)'%}
-  - {% include thumbnail src='/images/pages/Shape-smoothing-smoothed-contour.png' title='none|300px|Smoothed contour (2% of FDs retained)'%}
+-   {% include thumbnail src='/images/pages/Shape-smoothing-original-image.png' title='none\|300px\|Original image'%}
+-   {% include thumbnail src='/images/pages/Shape-smoothing-smoothed-object.png' title='none\|300px\|Smoothed object (4% of FDs retained)'%}
+-   {% include thumbnail src='/images/pages/Shape-smoothing-smoothed-contour.png' title='none\|300px\|Smoothed contour (2% of FDs retained)'%}
 
 </div>
 
-# Installation
+Installation
+============
 
 You could simply use our update site [biomedgroup](http://sites.imagej.net/Biomedgroup) to install the plugin.
 

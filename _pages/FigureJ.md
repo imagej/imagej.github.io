@@ -31,10 +31,11 @@ Download, installation instructions and video tutorials can be found [here.](htt
 
 When using FigureJ for a research article, you can cite the following [article from Journal of Microscopy.](http://onlinelibrary.wiley.com/doi/10.1111/jmi.12069/abstract)
 
-![Figurej\_poster.png](/images/pages/Figurej poster.png "Figurej_poster.png")
+![](/images/pages/Figurej poster.png "Figurej_poster.png")
 
-## Publication
+Publication
+-----------
 
-  - {% include publication content='FigureJ' %}
+-   {% include publication content='FigureJ' %}
 
 

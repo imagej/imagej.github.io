@@ -10,9 +10,11 @@ description: test description
 {% include menu-help%}
 
 
-# How to troubleshoot problems
+How to troubleshoot problems
+============================
 
-## Checking the Java version
+Checking the Java version
+-------------------------
 
 You can tell which Java version ImageJ is using by clicking the ImageJ [status bar](status_bar ) and looking for the part that says e.g. "Java 1.8.0\_45 \[64-bit\]". The relevant number is the one after "Java 1."—so e.g. "Java 1.8.0\_45" or similar indicates Java 8, while "Java 1.7.0\_79" or similar indicates Java 7.
 
@@ -20,37 +22,34 @@ On OS X, you can use [this script](https://raw.githubusercontent.com/ctrueden/ct
 
 See also [How do I launch ImageJ with a different version of Java?](Frequently_Asked_Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F ).
 
-## Launching ImageJ from the console
+Launching ImageJ from the console
+---------------------------------
 
 To diagnose problems with ImageJ, it is often helpful to launch it in debug mode:
 
-  - <img src="/images/pages/Tux.png" height="20"/> On Linux 64-bit (from a console):
-    ``` bash
-    DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64
-    ```
-  - <img src="/images/pages/Osx.png" height="20"/> On OS X (from Terminal):
-    ``` bash
-    DEBUG=1 /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx
-    ```
-  - <img src="/images/pages/Win.png" height="20"/> On Windows 64-bit:
-      - Make a copy of `ImageJ-win64.exe` called `debug.exe`
-      - Run `debug.exe`
+-   <img src="/images/pages/Tux.png" height="20"/> On Linux 64-bit (from a console):
+        DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64
+-   <img src="/images/pages/Osx.png" height="20"/> On OS X (from Terminal):
+        DEBUG=1 /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx
+-   <img src="/images/pages/Win.png" height="20"/> On Windows 64-bit:
+    -   Make a copy of `ImageJ-win64.exe` called `debug.exe`
+    -   Run `debug.exe`
 
 ### If you need more control
 
 You can control the log level more precisely by setting the `scijava.log.level` system property. E.g., on Linux:
 
-``` bash
-$HOME/ImageJ.app/ImageJ-linux64 -Dscijava.log.level=trace --
-```
+    $HOME/ImageJ.app/ImageJ-linux64 -Dscijava.log.level=trace --
 
 Valid levels include: `none`, `error`, `warn`, `info`, `debug` and `trace`. See the [Logging](Logging ) page for more about SciJava logging.
 
-## The other debug mode
+The other debug mode
+--------------------
 
-There is another debug mode, which can be enabled in the {% include bc content='Edit | Options | Misc...'%} menu, by checking *Debug mode*. This might reveal different information than using the techniques described above. For maximum debugitude, turn on both\!
+There is another debug mode, which can be enabled in the {% include bc content='Edit | Options | Misc...'%} menu, by checking *Debug mode*. This might reveal different information than using the techniques described above. For maximum debugitude, turn on both!
 
-## If ImageJ freezes or hangs
+If ImageJ freezes or hangs
+--------------------------
 
 If ImageJ appears to {% include wikipedia title='Hang (computing)' text='hang'%}—i.e., it stops responding to inputs—it is often helpful to take a "snapshot" of where the program is at after the hang occurs. This information can give the developers valuable hints about how to fix the problem.
 
@@ -59,36 +58,38 @@ There are two ways to create such a snapshot, known as a "thread dump" or "stack
 ### The easy way
 
 1.  Press {% include key content='Shift' %}+{% include key content='\\' %} in ImageJ itself. If successful, it will open a new window with the stack trace.
-2.  Press {% include key content='Ctrl|A' %} to select it, then {% include key content='Ctrl|C' %} to copy it to the clipboard.
+2.  Press {% include key content='Ctrl\|A' %} to select it, then {% include key content='Ctrl\|C' %} to copy it to the clipboard.
 
 ### The fallback way
 
 If the first method does not work, and you can reproduce the hang:
 
 1.  Launch ImageJ again, this time [from the console](#Launching_ImageJ_from_the_console "wikilink") as described above.
-      - <img src="/images/pages/Win.png" height="20"/> On Windows, you will need to download and run [this batch file](https://raw.githubusercontent.com/imagej/imagej/master/bin/ImageJ.bat), which launches ImageJ with an attached Command Prompt window.
+    -   <img src="/images/pages/Win.png" height="20"/> On Windows, you will need to download and run [this batch file](https://raw.githubusercontent.com/imagej/imagej/master/bin/ImageJ.bat), which launches ImageJ with an attached Command Prompt window.
 2.  Generate and copy the stack trace:
-      - <img src="/images/pages/Osx.png" height="20"/> <img src="/images/pages/Tux.png" height="20"/> On non-Windows platforms:
-        1.  Press {% include key content='Ctrl|\\' %} in the console window to print the stack trace.
+    -   <img src="/images/pages/Osx.png" height="20"/> <img src="/images/pages/Tux.png" height="20"/> On non-Windows platforms:
+        1.  Press {% include key content='Ctrl\|\\' %} in the console window to print the stack trace.
         2.  Select the stack trace by dragging with the left mouse button.
         3.  Right click and select "Copy" to copy it to the clipboard.
-      - <img src="/images/pages/Win.png" height="20"/> On Windows:
-        1.  Press {% include key content='Ctrl|Pause' %} in the Command Prompt window to print the stack trace. (**Note:** this shortcut actually uses the [Break key](Wikipedia_Break_key ))
+    -   <img src="/images/pages/Win.png" height="20"/> On Windows:
+        1.  Press {% include key content='Ctrl\|Pause' %} in the Command Prompt window to print the stack trace. (**Note:** this shortcut actually uses the [Break key](Wikipedia_Break_key ))
         2.  Click the Command Prompt icon in the upper left corner of the window, and choose {% include bc content='Edit|Mark'%}.
         3.  Select the stack trace by dragging with the left mouse button.
         4.  Press {% include key content='Enter' %} to copy it to the clipboard.
 
-Once you have the stack trace. you can paste it into a [bug report](Bugs )\!
+Once you have the stack trace. you can paste it into a [bug report](Bugs )!
 
-## If ImageJ crashes
+If ImageJ crashes
+-----------------
 
 If ImageJ {% include wikipedia title='Crash (computing)' text='crashes'%}—i.e., the program suddenly terminates, with or without an error message—it is very helpful to identify the steps which can reliably reproduce the crash:
 
-  - Launch ImageJ [from the console](#Launching_ImageJ_from_the_console "wikilink") as described above.
-  - Perform the same actions which previously resulted in the crash.
-  - Take note of any error messages in the console window, which you can copy and paste it into a [bug report](Bugs ).
+-   Launch ImageJ [from the console](#Launching_ImageJ_from_the_console "wikilink") as described above.
+-   Perform the same actions which previously resulted in the crash.
+-   Take note of any error messages in the console window, which you can copy and paste it into a [bug report](Bugs ).
 
-## If ImageJ does not start up
+If ImageJ does not start up
+---------------------------
 
 ### On a fresh installation
 
@@ -98,14 +99,14 @@ If ImageJ {% include wikipedia title='Crash (computing)' text='crashes'%}—i.e.
 
 Then you can try the following:
 
-  - Run Notepad
-  - Paste in the following:
+-   Run Notepad
+-   Paste in the following:
         .
         jre\bin\javaw.exe
         -Xmx512m -cp ij.jar ij.ImageJ
-  - Save the file as `ImageJ.cfg` in your `ImageJ.app` (or `Fiji.app`) installation.
-      - Note that by default, Windows hides file extensions; you may need to [show file extensions](http://windows.microsoft.com/en-us/windows/show-hide-file-name-extensions) before you can successfully name the file `ImageJ.cfg` as required.
-  - Try running `ImageJ-win32.exe` again.
+-   Save the file as `ImageJ.cfg` in your `ImageJ.app` (or `Fiji.app`) installation.
+    -   Note that by default, Windows hides file extensions; you may need to [show file extensions](http://windows.microsoft.com/en-us/windows/show-hide-file-name-extensions) before you can successfully name the file `ImageJ.cfg` as required.
+-   Try running `ImageJ-win32.exe` again.
 
 You can replace the `512m` with however many megabytes of memory you wish to give to ImageJ.
 
@@ -117,13 +118,16 @@ The easiest workaround is to [download](download ) a fresh copy of the software.
 
 If you are feeling investigative, you can try [launching ImageJ from the console](#Launching_ImageJ_from_the_console "wikilink") to get more information about why it is failing to start up. After doing that, you will probably see some information printed to the console, which you can paste online to somewhere like [Pastebin.com](http://pastebin.com/), and write to the [Community](Community ) to ask for help deciphering it.
 
-## Advanced debugging techniques
+Advanced debugging techniques
+-----------------------------
 
 If you are technically savvy, check out the [Debugging](Debugging ) page for additional—but more complicated—debugging techniques.
 
-# Common issues
+Common issues
+=============
 
-## The image I loaded is displayed all black\! But it is not black\!
+The image I loaded is displayed all black! But it is not black!
+---------------------------------------------------------------
 
 This problem can arise when 12-bit, 14-bit or 16-bit images are loaded into ImageJ without autoscaling. In that case, the display is scaled to the full 16-bit range (0 - 65535 intensity values), even though the actual data values typically span a much smaller range. For example, on a 12-bit camera, the largest possible intensity value is 4095—but with 0 mapped to black and 65535 mapped to white, 4095 ends up (linearly) mapped to a very very dark gray, nearly invisible to the human eye.
 
@@ -131,75 +135,80 @@ You can fix this by clicking on {% include bc content='Image | Adjust | Brightne
 
 You can verify whether the actual data is there by moving the mouse over the image, and looking at the pixel probe output in the [status bar area of the main ImageJ window](Getting_Started#The_status_bar ).
 
-## The image colors do not match what I see in other programs\! ImageJ is wrong\!
+The image colors do not match what I see in other programs! ImageJ is wrong!
+----------------------------------------------------------------------------
 
 In many cases, ImageJ performs autoscaling by default, to improve the contrast of your image. Otherwise, in many cases with scientific images you might see only a black square (see previous question).
 
 You can override the autoscaling using the [Brightness/Contrast](https://imagej.net/docs/guide/146-28.html#sub:Adjust) dialog.
 
-It is important to understand that [your image is a collection of samples, each of which has a numerical intensity value](Principles#What_are_pixel_values.3F ). The unit of these values is rather arbitrary and unspecified, depending on the type and calibration of your detector. Your file is stored with a certain [bit depth](https://imagej.net/docs/guide/146-7.html#toc-Section-7), meaning these intensities can range from 0 (no light detected) to a particular maximum value (the most light the detector is capable of detecting). For example, 8-bit images have a maximum value of 255, whereas 16-bit images have a maximum of 65535. In practice though, especially with higher bit depths, your detector will not typically record sample intensities across that entire range of values (and if it does record a significant number of values at the maximum, you probably oversaturated your detector, which will skew your analysis\!).
+It is important to understand that [your image is a collection of samples, each of which has a numerical intensity value](Principles#What_are_pixel_values.3F ). The unit of these values is rather arbitrary and unspecified, depending on the type and calibration of your detector. Your file is stored with a certain [bit depth](https://imagej.net/docs/guide/146-7.html#toc-Section-7), meaning these intensities can range from 0 (no light detected) to a particular maximum value (the most light the detector is capable of detecting). For example, 8-bit images have a maximum value of 255, whereas 16-bit images have a maximum of 65535. In practice though, especially with higher bit depths, your detector will not typically record sample intensities across that entire range of values (and if it does record a significant number of values at the maximum, you probably oversaturated your detector, which will skew your analysis!).
 
 Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs **autoscaling** to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [Brightness/Contrast](https://imagej.net/docs/guide/146-28.html#sub:Adjust) dialog under the {% include bc content='Image | Adjust'%} menu (shortcut: {% include key content='shift' %}+{% include key content='C' %}).
 
 Alternately, to disable autoscaling during initial import, you can use the [Bio-Formats](Bio-Formats ) plugin to import your data with the "Autoscale" option turned off:
 
-  - {% include bc content='File | Import | Bio-Formats'%}
-  - Choose your file
-  - Uncheck the "Autoscale" box
-  - Click OK
-  - The data will be scaled to match the maximum of the bit depth, rather than autoscaled.
+-   {% include bc content='File | Import | Bio-Formats'%}
+-   Choose your file
+-   Uncheck the "Autoscale" box
+-   Click OK
+-   The data will be scaled to match the maximum of the bit depth, rather than autoscaled.
 
 Further reading:
 
-  - [Image Intensity Processing](Image_Intensity_Processing )
-  - [Image Processing Principles](Principles )
+-   [Image Intensity Processing](Image_Intensity_Processing )
+-   [Image Processing Principles](Principles )
 
-## Whenever I open a file in ImageJ, the file size increases by a ridiculous amount\!
+Whenever I open a file in ImageJ, the file size increases by a ridiculous amount!
+---------------------------------------------------------------------------------
 
 Are you using a [compressed format](https://imagej.net/docs/guide/146-7.html#sub:Native-Formats) such as JPEG, PNG or ZIP? The file size on disk is smaller than the size of the pixels in memory. ImageJ reports this true (uncompressed) size of the image in the subtitle bar of the image window. For example: an uncompressed image of 16000 pixels x 16000 pixels x 32 bit (RGBA) will occupy 976 MB in memory.
 
 Note that [lossy compression is not suitable for quantitative image analysis](Principles#Why_.28lossy.29_JPEGs_should_not_be_used_in_imaging ).
 
-## The same plugin gives different results on different machines\!
+The same plugin gives different results on different machines!
+--------------------------------------------------------------
 
 While ImageJ strives for [reproducible](reproducible ) analysis, there are many reasons results can differ. Check the following:
 
-  - Ensure that the version of [ImageJ](ImageJ ) is exactly the same on both machines.
-      - Click the [status bar](status_bar ) and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
-      - If these two values differ between your machines, the versions are not the same.
-      - See also [How can I verify that my ImageJ is really 100% up to date?](Frequently_Asked_Questions#How_can_I_verify_that_my_ImageJ_is_really_100%_up_to_date? ).
-      - If the two versions of ImageJ match but produce different numerical results, it is a bug—please [report it](Report_a_Bug )\!
-  - Ensure that the *options* of ImageJ match between the machines.
-      - A fast way to ensure this is the {% include bc content='Edit | Options | Reset...'%} command, which resets everything to its default state.
-      - Alternately, you can check the settings in the following dialog boxes:
-          - All {% include bc content='Edit | Options'%} dialog boxes
-      - {% include bc content='Process | Binary | Options...'%} – a very common culprit of black-vs.-white issues is the "Black background" option.
-      - {% include bc content='Process | FFT | FFT Options...'%}
-      - {% include bc content='Image | Overlay | Overlay Options...'%}
-      - {% include bc content='Analyze | Gels | Gel Analyzer Options...'%}
-      - Press L for the [Command Finder](Command_Finder ) and type "options" and double check any other options you think might be relevant.
-  - If you are running your analysis [headless](headless ), there might be a bug in the headless support.
-      - Try the analysis *headless* on both machines and see if the results match.
-      - Try the analysis *headless* vs. through the GUI on a single machine, and see if the results match.
-      - If the results differ due to headlessness, it is a bug—please [report it](Report_a_Bug )\!
+-   Ensure that the version of [ImageJ](ImageJ ) is exactly the same on both machines.
+    -   Click the [status bar](status_bar ) and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
+    -   If these two values differ between your machines, the versions are not the same.
+    -   See also [How can I verify that my ImageJ is really 100% up to date?](Frequently_Asked_Questions#How_can_I_verify_that_my_ImageJ_is_really_100%_up_to_date? ).
+    -   If the two versions of ImageJ match but produce different numerical results, it is a bug—please [report it](Report_a_Bug )!
+-   Ensure that the *options* of ImageJ match between the machines.
+    -   A fast way to ensure this is the {% include bc content='Edit | Options | Reset...'%} command, which resets everything to its default state.
+    -   Alternately, you can check the settings in the following dialog boxes:
+        -   All {% include bc content='Edit | Options'%} dialog boxes
+    -   {% include bc content='Process | Binary | Options...'%} – a very common culprit of black-vs.-white issues is the "Black background" option.
+    -   {% include bc content='Process | FFT | FFT Options...'%}
+    -   {% include bc content='Image | Overlay | Overlay Options...'%}
+    -   {% include bc content='Analyze | Gels | Gel Analyzer Options...'%}
+    -   Press L for the [Command Finder](Command_Finder ) and type "options" and double check any other options you think might be relevant.
+-   If you are running your analysis [headless](headless ), there might be a bug in the headless support.
+    -   Try the analysis *headless* on both machines and see if the results match.
+    -   Try the analysis *headless* vs. through the GUI on a single machine, and see if the results match.
+    -   If the results differ due to headlessness, it is a bug—please [report it](Report_a_Bug )!
 
-# Common error messages
+Common error messages
+=====================
 
-## OutOfMemoryError
+OutOfMemoryError
+----------------
 
 {% include box float='right ' %} The error means ImageJ ran out of available {% include wikipedia title='Random-access memory' text='computer memory'%} (*not* hard drive space).
 
 The first thing to do is make sure that ImageJ has a large enough "maximum heap" size:
 
-  - {% include bc content='Edit | Options | Memory & Threads'%}
-  - Change "Maximum Memory" to something larger (at most, 1000 MB less than your computer's total RAM).
-  - Restart ImageJ for the new memory settings to take effect.
+-   {% include bc content='Edit | Options | Memory & Threads'%}
+-   Change "Maximum Memory" to something larger (at most, 1000 MB less than your computer's total RAM).
+-   Restart ImageJ for the new memory settings to take effect.
 
 Note that in most cases, the [ImageJ launcher](Launcher ) will make an initial guess at a reasonable value: \~75% of physical RAM.
 
 You can confirm how much memory is actually available by clicking on the [status bar](status_bar ). You will see a "\[used\] of \[max\]" memory message, as pictured here:
 
-![MemoryStatus.png](/images/pages/MemoryStatus.png "MemoryStatus.png")
+![](/images/pages/MemoryStatus.png "MemoryStatus.png")
 
 If you are already at the limits of your computer's physical memory, the next step would be to add more.
 
@@ -207,7 +216,8 @@ If you are already at the limits of your computer's physical memory, the next st
 
 **About Java garbage collection:** Java always automatically calls the garbage collector when the heap is getting full [\[1](http://stackoverflow.com/questions/8719071)\]. While it is possible to manually invoke the garbage collector by clicking ImageJ's [status bar](status_bar )—or programmatically by calling `run("Collect Garbage")` in a macro or `System.gc()` in a plugin—it will not solve the fundamental problem of Java actually not having a sufficient amount of memory. (The only exception to this is a rare case where Java decides that garbage collection is happening too slowly, in which case you should see the message "GC overhead limit exceeded" [\[2](http://www.petefreitag.com/item/746.cfm)\]).
 
-## NegativeArraySizeException
+NegativeArraySizeException
+--------------------------
 
 This error usually means that your image planes are larger than the maximum supported size.
 
@@ -217,7 +227,8 @@ If you are using Bio-Formats to open a file, however, the size limit is a bit mo
 
 [ImageJ2](ImageJ2 ) supports larger image planes internally, but uses the [ImageJ1](ImageJ1 ) user interface by default, which once again limits visualization to 2 gigapixels. The [ImageJ2 team](Contributors ) is working to lift these size restrictions; see {% include github org='imagej ' repo='imagej ' issue='87 ' label='imagej/imagej\#87 ' %}.
 
-## UnsupportedClassVersionError
+UnsupportedClassVersionError
+----------------------------
 
 Usually, this error takes the form of "Unsupported major.minor version 52.0" or similar, and indicates you are attempting to use a plugin which requires a newer version of Java than you are running. For example, you may have enabled an [update site](update_site ) that requires Java 7, but your ImageJ is using Java 6.
 
@@ -226,7 +237,7 @@ Check which version of Java is being used by ImageJ; see [Checking the Java vers
 The number given in the `UnsupportedClassVersionError` error messages is an internal code, which translates to Java versions as follows:
 
 | Internal code | Java version |
-| ------------- | ------------ |
+|---------------|--------------|
 | 45.0          | JDK 1.1      |
 | 46.0          | J2SE 1.2     |
 | 47.0          | J2SE 1.3     |
@@ -240,15 +251,18 @@ See {% include wikipedia title='Java version history' text='Java version history
 
 To control the version of Java that ImageJ uses, see [How do I launch ImageJ with a different version of Java](Frequently_Asked_Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F ).
 
-## NoSuchMethodError or NoClassDefFoundError
+NoSuchMethodError or NoClassDefFoundError
+-----------------------------------------
 
 These errors indicate a "version skew" between the software libraries in your ImageJ installation. Most commonly, this situation occurs when multiple [update sites](update_sites ) are enabled which ship incompatible versions of those libraries.
 
 The proper fix is for the maintainers of those update sites to reconcile the versions somehow, but as a user you can work around the issue in the meantime by disabling the problematic update site(s). Start from a fresh download of ImageJ, enabling the update sites you want one by one, testing your workflow each time. Once you determine which update site(s) causes the issue, you can create a separate copy of ImageJ with only the problematic site(s) enabled. Although you will no longer have a single ImageJ with all desired functionality enabled, keeping isolated installations will let you continue using all the plugins you need by launching each appropriate copy of ImageJ.
 
-# OS X issues
+OS X issues
+===========
 
-## Why does ImageJ run so slowly?
+Why does ImageJ run so slowly?
+------------------------------
 
 ### Java painting bug
 

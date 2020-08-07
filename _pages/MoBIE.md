@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-![Mobie-white.jpg](/images/pages/Mobie-white.jpg "Mobie-white.jpg")
+<figure><img src="/images/pages/Mobie-white.jpg" title="Mobie-white.jpg" width="200" alt="Mobie-white.jpg" /><figcaption aria-hidden="true">Mobie-white.jpg</figcaption></figure>
 
 
 {% capture source%}
@@ -23,17 +23,20 @@ description: test description
   
   
 
-## Overview
+Overview
+--------
 
 MoBIE (Multimodal Big Image Data Exploration) is a framework for sharing and interactive browsing of multimodal big image data. The MoBIE Fiji viewer is based on [BigDataViewer](https://imagej.net/BigDataViewer) and enables browsing of MoBIE datasets. For more information please visit the GitHub [README](https://github.com/mobie-org/mobie).
 
-## Installation
+Installation
+------------
 
 Please install the Update Site: http://sites.imagej.net/MoBIE/. For details on how to install an update site click [here](Following_an_update_site ).
 
-To run it, please select Plugins \> MoBIE from the main menu.
+To run it, please select Plugins &gt; MoBIE from the main menu.
 
-## Publication
+Publication
+-----------
 
 MoBIE was used in the following publications:
 

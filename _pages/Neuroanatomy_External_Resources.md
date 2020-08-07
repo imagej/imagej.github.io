@@ -9,10 +9,11 @@ description: test description
 
 This page lists [Open Source](Open_Source ) resources that complement [SNT](SNT ).
 
-## Online Tools
+Online Tools
+------------
 
 |                                |
-| ------------------------------ |
+|--------------------------------|
 | *Online Tools (Visualization)* |
 | SharkViewer                    |
 | MPDL SWC service               |
@@ -21,10 +22,11 @@ This page lists [Open Source](Open_Source ) resources that complement [SNT](SNT 
 | Remod                          |
 | L-measure (applet)             |
 
-## Desktop Tools
+Desktop Tools
+-------------
 
 |                                          |
-| ---------------------------------------- |
+|------------------------------------------|
 | *Visualization and Analysis of Tracings* |
 | Py3DN                                    |
 | NeuroMorph                               |
@@ -33,7 +35,8 @@ This page lists [Open Source](Open_Source ) resources that complement [SNT](SNT 
 | L-measure                                |
 | btmorph                                  |
 
-## Tracing Tools
+Tracing Tools
+-------------
 
 Software packages for neuronal tracing not based on ImageJ: [Neuromantic](http://www.reading.ac.uk/neuromantic/), [NeuronStudio](http://research.mssm.edu/cnic/tools-ns.html), [neuTube](http://www.neutracing.com), [Vaa3D](http://www.vaa3d.org/)
 

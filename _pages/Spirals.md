@@ -7,13 +7,14 @@ categories: Tutorials
 description: test description
 ---
 
-The *Spirals* sample is designed to disspell the all-too-common idea that human beings are able to quantify color. If you ever hear a scientist say: <span style='font-size: 20px;'>"But I can see it\!"</span> show them this image, it is an example of [Munker's illusion](http://engineering.utep.edu/novick/colors/) :
+The *Spirals* sample is designed to disspell the all-too-common idea that human beings are able to quantify color. If you ever hear a scientist say: <span style='font-size: 20px;'>"But I can see it!"</span> show them this image, it is an example of [Munker's illusion](http://engineering.utep.edu/novick/colors/) :
 
-![Spirals.png](/images/pages/Spirals.png "Spirals.png")
+![](/images/pages/Spirals.png "Spirals.png")
 
 Ask them to point to the green and then to the blue spiral arms. And then explain to them that most human beings see this, it is quite normal, there is nothing to be ashamed of, but there are no green or blue spiral arms. The arms have the *exact* same color. They do not have a different color.
 
-## The macro
+The macro
+---------
 
 Any self-respecting scientist will doubt your statement. This is where the source code comes in. In Fiji, press the {% include key content='Shift' %} key and then open {% include bc content='File | Open Samples | Spirals (macro)'%} which will open the macro in the [Script Editor](Script_Editor ) instead of running it directly.
 
@@ -23,7 +24,8 @@ You can inspect the source code, run it, change it, run it again. This is the pr
 
 The macro originally produced exactly the above image (it was in fact made using the original version). It was since changed to address the all-too-common, triumphant response: "Yeah, but I want to quantify red vs green".
 
-## Take home message
+Take home message
+-----------------
 
 You cannot quantify color by eye. Nobody can. The only thing you can quantify by eye are written-out numbers.
 

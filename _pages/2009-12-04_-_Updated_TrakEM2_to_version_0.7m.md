@@ -13,12 +13,12 @@ Please call "Help - Update Fiji" to get the new TrakEM2\_.jar into your plugins 
 
 The update includes:
 
-  - Non-linear layer registration
-  - Montaging with phase-correlation
-  - Import multiple sections of montages in one short with "Import sequence as grid"
-  - New Connector and Treeline types
-  - New contrast adjustment mode with "Adjust - Adjust min and max (selected images)"
-  - New registration mode with landmarks
+-   Non-linear layer registration
+-   Montaging with phase-correlation
+-   Import multiple sections of montages in one short with "Import sequence as grid"
+-   New Connector and Treeline types
+-   New contrast adjustment mode with "Adjust - Adjust min and max (selected images)"
+-   New registration mode with landmarks
 
 And many, many more features and error fixes.
 

@@ -12,7 +12,8 @@ description: test description
 
 If you want to try something that might not work out, and you do not want anybody to know in such a case, you can keep the topic branches local.
 
-# Creating a topic branch
+Creating a topic branch
+=======================
 
 You can create a topic branch from any starting point like this:
 
@@ -30,7 +31,8 @@ The argument *branch-point* can be any commit, or tag. If you want to branch off
 
 will pull the branch *fake2* from *origin* into the current (*fake2*) branch.
 
-# Switching between branches
+Switching between branches
+==========================
 
 To switch from the current branch to another, first make sure that you have committed (or stashed) everything, and then call
 
@@ -38,7 +40,8 @@ To switch from the current branch to another, first make sure that you have comm
 
 This will switch to another branch (which now becomes your HEAD), and update the working directory. Note: only the tracked files will be updated; the untracked files will be untouched.
 
-# Cherry-picking commits
+Cherry-picking commits
+======================
 
 If you have a single commit on another branch that you would like to have in the current branch, use
 
@@ -57,9 +60,10 @@ Cherry-picking comes in handy if you fix something in a topic branch which needs
 
 In this example, after fixing the bug and committing the bug fix, you switched to the branch *master*, cherry-picked the most recent commit on the branch *topic234* and then switched back to the branch *topic234*.
 
-## Resolving conflicts
+Resolving conflicts
+-------------------
 
-Note: when cherry-picking commits, conflicts can arise. These are marked with conflict markers ("\<\<\<" ... "===" ... "\>\>\>").
+Note: when cherry-picking commits, conflicts can arise. These are marked with conflict markers ("&lt;&lt;&lt;" ... "===" ... "&gt;&gt;&gt;").
 
 You will have to edit the files, picking what changes you want (the first part is what the version is in the current branch, the second part is what the cherry-picked commit wanted to introduce). See [Git Conflicts](Git_Conflicts ) for details how to resolve the merge conflicts.
 
@@ -70,7 +74,8 @@ After editing the files, stage them for commit and commit, with
 
 In case of a failed cherry-pick/rebase, this will pick up the appropriate commit message for you.
 
-# Merging/Rebasing topic branches
+Merging/Rebasing topic branches
+===============================
 
 If you finished a topic, and want to bring the changes to the branch *master*, just switch to that branch and merge the topic branch:
 
@@ -111,7 +116,8 @@ Typically, merges should be preferred to rebases, because merges show the histor
 
 However, a rebase comes in pretty handy from time to time, especially if you want to rewrite commit history, as described in the next section.
 
-# Advanced topic branch editing (AKA rebase on drugs)
+Advanced topic branch editing (AKA rebase on drugs)
+===================================================
 
 Often, a topic branch becomes a collection of nice commits and fixup commits, and maybe a few commits that are no longer necessary. In such a case, you probably want to clean up the commit history a bit. This is where the *interactive* rebase comes in.
 
@@ -124,7 +130,7 @@ Consider such a history (the first "word" is the abbreviated commit name):
 
 where *0470894* is the tip of the *master* branch, and *deadbee* fixes some severe issue in the commit *e0acf90*, that should not have been committed as is.
 
-Note that the *fixup\!* commit can be made easily by calling *git commit --fixup <commit-to-fixup>*.
+Note that the *fixup!* commit can be made easily by calling *git commit --fixup <commit-to-fixup>*.
 
 To reorder the commits and merge the two commits (*squash* in Git terminology, as *merge* already means to merge branches), call
 
@@ -148,7 +154,8 @@ Note: as with cherry-picking and merging, conflicts can arise. You will [have to
 
 will pick up the changes, apply the correct commit author and message, and fire up an editor for you to verify the contents. As before, save and exit, and the rebase will continue.
 
-## Aborting an interactive rebase
+Aborting an interactive rebase
+------------------------------
 
 Sometimes you realize by the sheer size of the list of commits that you made a mistake, and do not want to rebase after all. As with "git commit", just delete the *complete* list, and the interactive rebase will be aborted.
 
@@ -158,7 +165,8 @@ Even at later stages, e.g. when you have a huge conflict and would prefer to go 
 
 and Git will bring you back to where you were before you started the rebase.
 
-## Reflogs and rebases
+Reflogs and rebases
+-------------------
 
 A rebase will work on a *detached* HEAD. In other words, while the rebase is in progress, no branch will be updated, but a temporary branch will grow, and only when the rebase is finished successfully, the originally current branch will be updated.
 

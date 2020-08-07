@@ -15,7 +15,8 @@ description: test description
 
 The **MosaicSuite** is a fully integrated suite of various plugins from the [MOSAIC Group](http://mosaic.mpi-cbg.de). It contains tools for 2D and 3D feature point-tracking, 2D and 3D image segmentation, colocalization analysis, interaction analysis, background subtraction, Point-Spread Function (PSF) estimation from images, and simulation of the image-formation process in fluorescence microscopes. The best way to install it is via the MOSAIC Fiji Update site, as described on the [MOSAIC web page](http://mosaic.mpi-cbg.de/?q=downloads/imageJ). The MOSAICsuite interconnects all the different methods from the MOSAIC Group to a coherent workflow package and also contains wizards to assist parameter tuning, as well as support for parallel processing on computer clusters.
 
-## References
+References
+----------
 
 I. F. Sbalzarini and P. Koumoutsakos. Feature Point Tracking and Trajectory Analysis for Video Imaging in Cell Biology, Journal of Structural Biology 151(2):182-195, 2005.
 

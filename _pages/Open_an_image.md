@@ -11,15 +11,17 @@ description: test description
 
 The answer to this question depends on how you use ImageJ.
 
-  - Do you want the open an image using the graphical user interface? ([\#From the GUI](#From_the_GUI "wikilink"))
-  - Are you writing a script? ([\#From a Script](#From_a_Script "wikilink"))
-  - Are you using Java, to develop an ImageJ2 plug-in or do write your one program using ImgLib2 and ImageJ libraries? ([\#From Java](#From_Java "wikilink"))
+-   Do you want the open an image using the graphical user interface? ([\#From the GUI](#From_the_GUI "wikilink"))
+-   Are you writing a script? ([\#From a Script](#From_a_Script "wikilink"))
+-   Are you using Java, to develop an ImageJ2 plug-in or do write your one program using ImgLib2 and ImageJ libraries? ([\#From Java](#From_Java "wikilink"))
 
-## From the GUI
+From the GUI
+------------
 
-In the menu select "File \> Open ..." or "File \> Import \> ...".
+In the menu select "File &gt; Open ..." or "File &gt; Import &gt; ...".
 
-## From a Script
+From a Script
+-------------
 
 What are then possible ways to open an image when you are writing an Python / Groovy / ... script in ImageJ?
 
@@ -27,22 +29,19 @@ What are then possible ways to open an image when you are writing an Python / Gr
 
 When the following script is run in ImageJ. ImageJ will ask to user to select two Images, before it runs the script.
 
-``` python
-# @Dataset firstImage
-# @Dataset secondImage
-# @UIService ui
-ui.show(firstImage)
-ui.show(secondImage)
-```
+    # @Dataset firstImage
+    # @Dataset secondImage
+    # @UIService ui
+    ui.show(firstImage)
+    ui.show(secondImage)
 
 ### Use the DatasetIOService
 
-``` python
-# @DatasetIOService io
-# @UIService ui
-path = "C:\Path\to\the\image.tif"
-image = io.open(path)
-ui.show(image)
-```
+    # @DatasetIOService io
+    # @UIService ui
+    path = "C:\Path\to\the\image.tif"
+    image = io.open(path)
+    ui.show(image)
 
-## From Java
+From Java
+---------

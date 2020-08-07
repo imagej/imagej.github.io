@@ -9,15 +9,16 @@ description: test description
 
 {% include component-stats content='net.imagej:imagej-legacy' %}Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing plugins and macros with new versions of [ImageJ](ImageJ ).
 
-## ImageJ Legacy
+ImageJ Legacy
+-------------
 
 The [ImageJ2](ImageJ2 ) project is a complete redesign of ImageJ, with no dependency on [ImageJ 1.x](ImageJ_1.x ). However, to facilitate backwards compatibility, there is an **ImageJ Legacy** component (source {% include github org='imagej ' repo='imagej-legacy ' %}) which provides extensions for ImageJ2 and ImageJ1 to operate in harmony.
 
 The ImageJ legacy layer provides the following extensions:
 
-  - It makes ImageJ 1.x **usable [headless](headless )** from the command line.
-  - It wraps the **ImageJ 1.x UI as a [SciJava](SciJava ) user interface**.
-  - It **translates between ImageJ1 and ImageJ2 data structures** on demand.
+-   It makes ImageJ 1.x **usable [headless](headless )** from the command line.
+-   It wraps the **ImageJ 1.x UI as a [SciJava](SciJava ) user interface**.
+-   It **translates between ImageJ1 and ImageJ2 data structures** on demand.
 
 ImageJ2 currently uses the ImageJ 1.x user interface by default, since many users need to retain access to ImageJ1 plugins.
 
@@ -35,14 +36,14 @@ Currently, automatic synchronization is disabled as it has negative performance 
 
 In the mean time, full synchronization can be forced by setting a `imagej.legacy.sync` [system property](https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html). This can be done in a running ImageJ instance, for example by running the following as a [BeanShell script](BeanShell_Scripting ):
 
-``` java
-System.setProperty("imagej.legacy.sync", "true");
-```
+    System.setProperty("imagej.legacy.sync", "true");
 
-## Updating ImageJ commands to the new paradigm
+Updating ImageJ commands to the new paradigm
+--------------------------------------------
 
 The eventual goal is to migrate all core ImageJ1 plugins to the ImageJ2 paradigm. Many ImageJ1 plugins have been already been updated in this fashion; see the {% include github org='imagej ' repo='imagej-ops ' label='imagej-ops ' %} and {% include github org='imagej ' repo='imagej-plugins-commands ' label='imagej-plugins-commands ' %} repositories in particular.
 
-## See also
+See also
+--------
 
-  - The [ImageJDev talk](http://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf) from the ImageJ 2010 Conference, for a historical perspective on how this approach to compatibility evolved over time.
+-   The [ImageJDev talk](http://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf) from the ImageJ 2010 Conference, for a historical perspective on how this approach to compatibility evolved over time.

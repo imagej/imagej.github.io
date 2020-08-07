@@ -8,7 +8,7 @@ description: test description
 ---
 
 <B>LSM-W2 manual</B>  
-![Untitled-7\_small.png](/images/pages/Untitled-7 small.png "Untitled-7_small.png")
+<img src="/images/pages/Untitled-7_small.png" title="fig:Untitled-7_small.png" width="200" alt="Untitled-7_small.png" />
 
 <FONT SIZE=4><SPAN LANG="en-US"><I><B>LSM-W2 </B></I></SPAN></FONT><FONT SIZE=4><SPAN LANG="en-US"><I>extracts Leaf Surface Morphology from Laser Scanning Microscopy images</I></SPAN></FONT>
 
@@ -18,32 +18,32 @@ description: test description
 
 <FONT SIZE=3><SPAN LANG="en-US"><B>Description:</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"> The plugin can work with multi-channel multi-frame 3D images in \*.lsm format obtained from a laser scanning microscope. </SPAN></FONT><FONT SIZE=3>The main functionality of the plugin includes:</FONT>
 
-  - <FONT SIZE=3>Assembly
+-   <FONT SIZE=3>Assembly
     `   and visualization of images.`</FONT>
-  - `   `<FONT SIZE=3><SPAN LANG="en-US">`Improve image quality (elimination`  
+-   `   `<FONT SIZE=3><SPAN LANG="en-US">`Improve image quality (elimination`  
     `   of shear and overlap, application of the anisotropic diffusion`  
     `   algorithm).`</SPAN></FONT>
-  - `   `<FONT SIZE=3>`Linear operations with intensity values from different`  
+-   `   `<FONT SIZE=3>`Linear operations with intensity values from different`  
     `   channels.`</FONT>
-  - `   `<FONT SIZE=3><SPAN LANG="en-US">`Detection a 2D leaf surface.`</SPAN></FONT>
-  - `   `<FONT SIZE=3>`Application of the segmentation algorithm for cellular`  
+-   `   `<FONT SIZE=3><SPAN LANG="en-US">`Detection a 2D leaf surface.`</SPAN></FONT>
+-   `   `<FONT SIZE=3>`Application of the segmentation algorithm for cellular`  
     `   and nuclear layers.`</FONT>
-  - `   `<FONT SIZE=3><SPAN LANG="en-US">`Manual correction of segmented`  
+-   `   `<FONT SIZE=3><SPAN LANG="en-US">`Manual correction of segmented`  
     `   regions.`</SPAN></FONT>
-  - `   `<FONT SIZE=3><SPAN LANG="en-US">`M`</SPAN></FONT><FONT SIZE=3>`a`</FONT><FONT SIZE=3><SPAN LANG="en-US">`r`</SPAN></FONT><FONT SIZE=3>`king`</FONT><FONT SIZE=3><SPAN LANG="en-US">  
+-   `   `<FONT SIZE=3><SPAN LANG="en-US">`M`</SPAN></FONT><FONT SIZE=3>`a`</FONT><FONT SIZE=3><SPAN LANG="en-US">`r`</SPAN></FONT><FONT SIZE=3>`king`</FONT><FONT SIZE=3><SPAN LANG="en-US">  
     `   of`</SPAN></FONT><FONT SIZE=3>` `</FONT><FONT SIZE=3><SPAN LANG="en-US">`c`</SPAN></FONT><FONT SIZE=3>`ell`</FONT><FONT SIZE=3><SPAN LANG="en-US">  
     `   `</SPAN></FONT><FONT SIZE=3>`groups.`</FONT>
-  - `   `<FONT SIZE=3><SPAN LANG="en-US">`Calculation of volumes for cells and`  
+-   `   `<FONT SIZE=3><SPAN LANG="en-US">`Calculation of volumes for cells and`  
     `   nuclei.`</SPAN></FONT>
-  - `   `<FONT SIZE=3><SPAN LANG="en-US">`Comparison of cells and nuclei by`  
+-   `   `<FONT SIZE=3><SPAN LANG="en-US">`Comparison of cells and nuclei by`  
     `   mutual arrangement.`</SPAN></FONT>
-  - `   `<FONT SIZE=3>`Download images in tiff format for single-channel`  
+-   `   `<FONT SIZE=3>`Download images in tiff format for single-channel`  
     `   processing (multiple images for each channel can be downloaded).`</FONT>
-  - `   `<FONT SIZE=3>`Saving results in the form of tables and intermediate`  
+-   `   `<FONT SIZE=3>`Saving results in the form of tables and intermediate`  
     `   images, obtained at any stage of processing.`</FONT>
 
   
-![English\_manual\_uz\_html\_m7831868e.png](/images/pages/English manual uz html m7831868e.png "English_manual_uz_html_m7831868e.png")  
+<img src="/images/pages/English_manual_uz_html_m7831868e.png" title="fig:English_manual_uz_html_m7831868e.png" width="1000" alt="English_manual_uz_html_m7831868e.png" />  
 
 <FONT SIZE=4><B>Getting started</B></FONT>
 
@@ -51,21 +51,21 @@ description: test description
 
 <FONT SIZE=3>As soon as the information from the file is read, a window will be displayed showing the necessary information to form a complete multi-frame multi-channel 3D image (uploading window is showed in fig.1). To continue working with the plugin, one must specify:</FONT>
 
-![Fig 1. Image upload options](/images/pages/English manual uz html m75ce2a0c.png "Fig 1. Image upload options")
+<figure><img src="/images/pages/English_manual_uz_html_m75ce2a0c.png" title="Fig 1. Image upload options" width="200" alt="Fig 1. Image upload options" /><figcaption aria-hidden="true">Fig 1. Image upload options</figcaption></figure>
 
-  - <FONT SIZE=3><SPAN LANG="en-US">The
+-   <FONT SIZE=3><SPAN LANG="en-US">The
     `   number of fragments on X axis and Y axis.`</SPAN></FONT>
 
-<!-- end list -->
+<!-- -->
 
-  - <FONT SIZE=3><SPAN LANG="en-US">The
+-   <FONT SIZE=3><SPAN LANG="en-US">The
     `   overlap percentage. The part of the total area at the junction of`  
     `   the fragments is indicated as a percentage.  `</SPAN></FONT>  
     `   `
 
-<!-- end list -->
+<!-- -->
 
-  - <FONT SIZE=3><SPAN LANG="en-US">If necessary, you can reduce
+-   <FONT SIZE=3><SPAN LANG="en-US">If necessary, you can reduce
     `   the amount of memory consumed by compressing the image (reducing the`  
     `   size and depth of color). `</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>`Choosing`  
     `   this option will result in data loss and possible deterioration of`  
@@ -86,45 +86,45 @@ description: test description
 
 <FONT SIZE=3><SPAN LANG="en-US">Functions of the buttons:</SPAN></FONT>
 
-  - <FONT SIZE=3><SPAN LANG="en-US">The
+-   <FONT SIZE=3><SPAN LANG="en-US">The
     `   `</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>`“Get original`  
     `   image”`</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">  
     `   button cancels all changes and returns the original image.`</SPAN></FONT>
 
-<!-- end list -->
+<!-- -->
 
-  - `   `<FONT SIZE=3><SPAN LANG="en-US">`The `</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>`“Apply`  
+-   `   `<FONT SIZE=3><SPAN LANG="en-US">`The `</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>`“Apply`  
     `   offset”`</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">  
     `   button is responsible for shifting frames on the specified number of`  
     `   pixels. Reusing this option shifts frames relative to their original`  
     `   positions (not the current one).`</SPAN></FONT>
-  - <FONT SIZE=3><SPAN LANG="en-US">The
+-   <FONT SIZE=3><SPAN LANG="en-US">The
     `   `</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>`“Cut Image”`</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">  
     `   button cuts the selected area for all channels from the source`  
     `   image. Before applying this function, you must select a rectangular`  
     `   fragment in the image using the standard ImageJ tool.`</SPAN></FONT>
-  - <FONT SIZE=3><SPAN LANG="en-US">The
+-   <FONT SIZE=3><SPAN LANG="en-US">The
     `   `</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>`“Diffusion”`</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">  
     `   button allows one to apply an anisotropic diffusion filter layer by`  
     `   layer for all slices of the selected channel. This button calls the`  
-    `   plugin `[`Anisotropic``   ``diffusion``   ``2D`](https://imagej.nih.gov/ij/plugins/anisotropic-diffusion-2d.html)`.`</SPAN></FONT>
-  - `   `<FONT SIZE=3><SPAN LANG="en-US">`The `</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>`“MorfSegmentation”`</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">  
+    `   plugin `[`Anisotropic`` ``diffusion`` ``2D`](https://imagej.nih.gov/ij/plugins/anisotropic-diffusion-2d.html)`.`</SPAN></FONT>
+-   `   `<FONT SIZE=3><SPAN LANG="en-US">`The `</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>`“MorfSegmentation”`</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">  
     `   button starts the plugin “Morphological Segmentation”`  
     `   (for more information, see section “The module of`  
     `   morphological segmentation by means of watersheds”).`</SPAN></FONT>
 
-<!-- end list -->
+<!-- -->
 
-  - <FONT SIZE=3><SPAN LANG="en-US">The
+-   <FONT SIZE=3><SPAN LANG="en-US">The
     `   `</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>`“Cells/Nucleus`  
     `   Info”`</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">` button`  
     `   maps the segmented images of the cell walls and nuclei and displays`  
     `   the result in the table (for more details see section “Comparison`  
     `   of cells and nuclei images” section).`</SPAN></FONT>
 
-<!-- end list -->
+<!-- -->
 
-  - <FONT SIZE=3><SPAN LANG="en-US">The
+-   <FONT SIZE=3><SPAN LANG="en-US">The
     `   `</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>`“Pix Graph”`</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">  
     `   button allows one to plot the intensity change depending on the`  
     `   layer number (“depth” of the image). After clicking the`  
@@ -137,7 +137,7 @@ description: test description
 
   
 
-![English\_manual\_uz\_html\_m7937f04c.png](/images/pages/English manual uz html m7937f04c.png "English_manual_uz_html_m7937f04c.png")
+<figure><img src="/images/pages/English_manual_uz_html_m7937f04c.png" title="English_manual_uz_html_m7937f04c.png" width="900" alt="English_manual_uz_html_m7937f04c.png" /><figcaption aria-hidden="true">English_manual_uz_html_m7937f04c.png</figcaption></figure>
 
 <FONT SIZE=3>Fig.2 Main window of the LSM-W2 plugin</FONT>
 
@@ -149,15 +149,15 @@ description: test description
 
 <FONT SIZE=3><SPAN LANG="en-US"><B>B. </B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">Area for specifying the parameters for constructing a 2D projection of the upper cell-level walls. The “Get 2D Image” button builds this projection depending on the specified parameters:</SPAN></FONT>
 
-  - <FONT SIZE=3><SPAN LANG="en-US">The
+-   <FONT SIZE=3><SPAN LANG="en-US">The
     `   `</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>`Diving value`</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">  
     `   indicates how much pixels should be descended from the surface`  
     `   layer.`</SPAN></FONT>
-  - <FONT SIZE=3><SPAN LANG="en-US"><B>Lattice
+-   <FONT SIZE=3><SPAN LANG="en-US"><B>Lattice
     `   size`</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">` specifies the`  
     `   number of pixels between adjacent nodes for the algorithm of`  
     `   construction and calculation of the surface layer.`</SPAN></FONT>
-  - <FONT SIZE=3><SPAN LANG="en-US">The
+-   <FONT SIZE=3><SPAN LANG="en-US">The
     `   maximum “threshold” (`</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>`Threshold`</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">`)`  
     `   determines the optimal maximum of intensity. The maximum point is`  
     `   called optimal if it is a local maximum and if moving toward it to`  
@@ -174,7 +174,7 @@ description: test description
 
 <FONT SIZE=3><SPAN LANG="en-US">The surface of any cell layer can be selected by constructing the projection of the cellular structure onto the leaf surface from the original 3D-confocal image. In the process of constructing the leaf surface of the cell layer, it is usually considered that the maximum of intensity is concentrated on the upper layer. Figure 3 shows the surface layer of the sample in the ZoX plane. It shows that the cell walls of the upper cell layer are well colored, unlike the lower walls.</SPAN></FONT>
 
-![English\_manual\_uz\_html\_m6c7637a1.png](/images/pages/English manual uz html m6c7637a1.png "English_manual_uz_html_m6c7637a1.png")
+<figure><img src="/images/pages/English_manual_uz_html_m6c7637a1.png" title="English_manual_uz_html_m6c7637a1.png" width="1000" alt="English_manual_uz_html_m6c7637a1.png" /><figcaption aria-hidden="true">English_manual_uz_html_m6c7637a1.png</figcaption></figure>
 
 <FONT SIZE=3><SPAN LANG="en-US">Fig.3 ZoX-projection of cell walls structure</SPAN></FONT>
 
@@ -188,7 +188,7 @@ description: test description
 
   
 
-![English\_manual\_uz\_html\_2bfeaac3.png](/images/pages/English manual uz html 2bfeaac3.png "English_manual_uz_html_2bfeaac3.png")
+<figure><img src="/images/pages/English_manual_uz_html_2bfeaac3.png" title="English_manual_uz_html_2bfeaac3.png" width="800" alt="English_manual_uz_html_2bfeaac3.png" /><figcaption aria-hidden="true">English_manual_uz_html_2bfeaac3.png</figcaption></figure>
 
 <FONT SIZE=3><SPAN LANG="en-US">Fig. 4 Samples of plots for intensity distribution over the 3D image slices</SPAN></FONT>
 
@@ -210,7 +210,7 @@ description: test description
 
   
 
-![English\_manual\_uz\_html\_m75ddb95f.png](/images/pages/English manual uz html m75ddb95f.png "English_manual_uz_html_m75ddb95f.png")
+<figure><img src="/images/pages/English_manual_uz_html_m75ddb95f.png" title="English_manual_uz_html_m75ddb95f.png" width="1000" alt="English_manual_uz_html_m75ddb95f.png" /><figcaption aria-hidden="true">English_manual_uz_html_m75ddb95f.png</figcaption></figure>
 
 <FONT SIZE=3>Fig. 5 Screenshot of the window for working with superficial cell layer</FONT>
 
@@ -230,7 +230,7 @@ description: test description
 
   
 
-![English\_manual\_uz\_html\_m3fb0e365.png](/images/pages/English manual uz html m3fb0e365.png "English_manual_uz_html_m3fb0e365.png")
+<figure><img src="/images/pages/English_manual_uz_html_m3fb0e365.png" title="English_manual_uz_html_m3fb0e365.png" width="1000" alt="English_manual_uz_html_m3fb0e365.png" /><figcaption aria-hidden="true">English_manual_uz_html_m3fb0e365.png</figcaption></figure>
 
 <FONT SIZE=3>Fig. 6 Screenshot of the window for the plugin Morphological\_Segmentation</FONT>
 
@@ -267,7 +267,7 @@ description: test description
 <FONT SIZE=3><SPAN LANG="en-US">A colorized 3D/2D image is a result of segmentation through the plugin Morphological\_Segmentation, integrated with LSM-W2. An additional window is used to edit segmented regions.</SPAN></FONT>
 
   
-![English\_manual\_uz\_html\_m1bab5a50.jpg](/images/pages/English manual uz html m1bab5a50.jpg "English_manual_uz_html_m1bab5a50.jpg")
+<img src="/images/pages/English_manual_uz_html_m1bab5a50.jpg" title="fig:English_manual_uz_html_m1bab5a50.jpg" width="1000" alt="English_manual_uz_html_m1bab5a50.jpg" />
 
 <FONT SIZE=3>Fig. 7 Screenshot of the window for working with segmented image</FONT>
 
@@ -311,7 +311,7 @@ description: test description
 
 <FONT SIZE=3><B>C. </B><SPAN LANG="en-US">Make a segmentation of resulting 2D image (Border Image) and count objects’ volumes. C1 is a resulting table. </SPAN></FONT>
 
-![English\_manual\_uz\_html\_m66ff0f30.png](/images/pages/English manual uz html m66ff0f30.png "English_manual_uz_html_m66ff0f30.png")
+<figure><img src="/images/pages/English_manual_uz_html_m66ff0f30.png" title="English_manual_uz_html_m66ff0f30.png" width="600" alt="English_manual_uz_html_m66ff0f30.png" /><figcaption aria-hidden="true">English_manual_uz_html_m66ff0f30.png</figcaption></figure>
 
 <FONT SIZE=3><B>D. </B><SPAN LANG="en-US">Make a “nuclei segmentation” of original 3D image (Object Image) and count volumes of segmented areas (C1 is a resulting table}. </SPAN></FONT>
 
@@ -319,11 +319,11 @@ description: test description
 
 <FONT SIZE=3><B>I. </B><SPAN LANG="en-US">Mark the image with nuclei by the <B>“Nucleus image”</B> flag in the checkbox. </SPAN></FONT>
 
-![English\_manual\_uz\_html\_ae32c15.png](/images/pages/English manual uz html ae32c15.png "English_manual_uz_html_ae32c15.png")
+<figure><img src="/images/pages/English_manual_uz_html_ae32c15.png" title="English_manual_uz_html_ae32c15.png" width="600" alt="English_manual_uz_html_ae32c15.png" /><figcaption aria-hidden="true">English_manual_uz_html_ae32c15.png</figcaption></figure>
 
 <FONT SIZE=3><B>E. </B><SPAN LANG="en-US">Calculate the correspondence between cells and nuclei by pressing the button <B>“Cell-nucleus”</B>. <U>It is necessary to keep all resulting tables and segmentation windows opened for correct work.</U> </SPAN></FONT>
 
-![English\_manual\_uz\_html\_m70237ad3.png](/images/pages/English manual uz html m70237ad3.png "English_manual_uz_html_m70237ad3.png")
+<figure><img src="/images/pages/English_manual_uz_html_m70237ad3.png" title="English_manual_uz_html_m70237ad3.png" width="1000" alt="English_manual_uz_html_m70237ad3.png" /><figcaption aria-hidden="true">English_manual_uz_html_m70237ad3.png</figcaption></figure>
 
   
 
@@ -339,10 +339,10 @@ description: test description
 
 <FONT SIZE=3><SPAN LANG="en-US">5. fraction of pixels laying into the cell area. When there are mistakes in segmentation, the value P is less then one.</SPAN></FONT>
 
-![English\_manual\_uz\_html\_m7446267b.gif](/images/pages/English manual uz html m7446267b.gif "English_manual_uz_html_m7446267b.gif") <FONT SIZE=3><SPAN LANG="en-US">, where k is quantitate of cell’s pixels; n is quantitate of pixels into the inner cell area. In the case of incomplete overlapping of the nucleus region by the inner space of the cell </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><I>p</I></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"> becomes less than one. </SPAN></FONT>
+![](/images/pages/English manual uz html m7446267b.gif "fig:English_manual_uz_html_m7446267b.gif") <FONT SIZE=3><SPAN LANG="en-US">, where k is quantitate of cell’s pixels; n is quantitate of pixels into the inner cell area. In the case of incomplete overlapping of the nucleus region by the inner space of the cell </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><I>p</I></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"> becomes less than one. </SPAN></FONT>
 
 <FONT SIZE=3><B>H. </B><SPAN LANG="en-US">Resulting image </SPAN></FONT>
 
-![English\_manual\_uz\_html\_e86db9c.png](/images/pages/English manual uz html e86db9c.png "English_manual_uz_html_e86db9c.png")  
+<img src="/images/pages/English_manual_uz_html_e86db9c.png" title="fig:English_manual_uz_html_e86db9c.png" width="800" alt="English_manual_uz_html_e86db9c.png" />  
   
 Test lsm image is available [here](http://pixie.bionet.nsc.ru/LSM_WORKER/example.lsm).

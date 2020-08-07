@@ -11,38 +11,35 @@ description: test description
 
 This answer can be completely irrelevant, even non-physical, and there is no built-in flags that would indicate something wrong. The best way to avoid basing your downstream analysis on faulty tracking results is to know in what situation the tracker works the best, and what are its limitations. This is the aim of this page for the trackers and detectors shipped with [TrackMate](TrackMate ).
 
-## The ISBI 2012 single particle challenge.
+The ISBI 2012 single particle challenge.
+----------------------------------------
 
-In 2011-2012, an ISBI Grand Challenge was organized for the [Single-Particle Tracking algorithms](http://bioimageanalysis.org/track/). Though TrackMate does not offer a completely new algorithm, product of an original Research work, we took the chance and participated in the challenge. The results and the methodology to compute the accuracy of a tracking algorithms were published\[1\] thereafter.
+In 2011-2012, an ISBI Grand Challenge was organized for the [Single-Particle Tracking algorithms](http://bioimageanalysis.org/track/). Though TrackMate does not offer a completely new algorithm, product of an original Research work, we took the chance and participated in the challenge. The results and the methodology to compute the accuracy of a tracking algorithms were published[1] thereafter.
 
-Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman *et al.* LAP framework\[2\]. See the [LAP trackers section](TrackMate_algorithms#LAP_trackers ) for algorithm details. Plus, TrackMate was was young at the time, and some bugs did not help.
+Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman *et al.* LAP framework[2]. See the [LAP trackers section](TrackMate_algorithms#LAP_trackers ) for algorithm details. Plus, TrackMate was was young at the time, and some bugs did not help.
 
-## TrackMate v2.7.x series accuracy against the ISBI dataset.
+TrackMate v2.7.x series accuracy against the ISBI dataset.
+----------------------------------------------------------
 
-From v2.7.x, TrackMate ships a new tracker that can deal specifically with linear motion. We though it was the right time to re-run the accuracy assessment with the ISBI challenge data. The people behind [Icy](Icy ) offered the website to host the challenge data, and it is still available today\[3\] for download.
+From v2.7.x, TrackMate ships a new tracker that can deal specifically with linear motion. We though it was the right time to re-run the accuracy assessment with the ISBI challenge data. The people behind [Icy](Icy ) offered the website to host the challenge data, and it is still available today[3] for download.
 
 The figures below shows the comparison of accuracy for the 3 classes of tracking algorithms available in TrackMate:
 
-  - The LAP framework derived from Jaqaman *et al.*\[4\].
-  - The linear motion tracker based on Kalman filter.
-  - The plain Nearest neighbor tracker for reference.
+-   The LAP framework derived from Jaqaman *et al.*[4].
+-   The linear motion tracker based on Kalman filter.
+-   The plain Nearest neighbor tracker for reference.
 
 ### Scenarios.
 
-It's best to directly read the paper\[5\] to know what is behind these measures, but here is a brief survey of how they are done. The ISBI dataset covers four scenarios:
+It's best to directly read the paper[5] to know what is behind these measures, but here is a brief survey of how they are done. The ISBI dataset covers four scenarios:
 
-| Scenario name                                    | Particle shape                                                                    | Motion type                                                                                                                                                             |
-| ------------------------------------------------ | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [MICROTUBULE](#Microtubule_scenario. "wikilink") | Slightly elongated shape to mimic MT tip staining.                                | Roughly constant velocity motion.                                                                                                                                       |
-| [RECEPTOR](#Receptor_scenario. "wikilink")       | Spherical.                                                                        | {% include wikipedia title='Tethered particle motion' text='Tethered motion'%}: switch between Brownian and directed motion with random orientation for the later. |
-| [VESICLE](#Vesicle_scenario. "wikilink")         | {% include wikipedia title='Brownian motion' text='Brownian motion'%}.       |                                                                                                                                                                         |
-| [VIRUS](#Virus_scenario. "wikilink")             | Switch between Brownian and directed motion with fixed orientation for the later. |                                                                                                                                                                         |
+<table><thead><tr class="header"><th><p>Scenario name</p></th><th><p>Particle shape</p></th><th><p>Motion type</p></th></tr></thead><tbody><tr class="odd"><td><p><a href="#Microtubule_scenario." title="wikilink">MICROTUBULE</a></p></td><td><p>Slightly elongated shape to mimic MT tip staining.</p></td><td><p>Roughly constant velocity motion.</p></td></tr><tr class="even"><td><p><a href="#Receptor_scenario." title="wikilink">RECEPTOR</a></p></td><td><p>Spherical.</p></td><td><p> {% include wikipedia title='Tethered particle motion' text='Tethered motion'%}: switch between Brownian and directed motion with random orientation for the later.</p></td></tr><tr class="odd"><td><p><a href="#Vesicle_scenario." title="wikilink">VESICLE</a></p></td><td><p> {% include wikipedia title='Brownian motion' text='Brownian motion'%}.</p></td><td></td></tr><tr class="even"><td><p><a href="#Virus_scenario." title="wikilink">VIRUS</a></p></td><td><p>Switch between Brownian and directed motion with fixed orientation for the later.</p></td><td></td></tr></tbody></table>
 
 For each scenario, images covers several particle density:
 
-  - low: 60-100 / frame
-  - mid: 400-500 / frame
-  - high: 700-1000 / frame
+-   low: 60-100 / frame
+-   mid: 400-500 / frame
+-   high: 700-1000 / frame
 
 to check how a tracking algorithm behaves when particles get very dense.
 
@@ -54,33 +51,33 @@ Below are shown typical images taken from the challenge.
 
 #### Varying particle density.
 
-<File:VESICLE> snr 7 density low-1.png|Low density <File:VESICLE> snr 7 density mid-1.png|Medium density <File:VESICLE> snr 7 density high-1.png|High density
+<File:VESICLE> snr 7 density low-1.png\|Low density <File:VESICLE> snr 7 density mid-1.png\|Medium density <File:VESICLE> snr 7 density high-1.png\|High density
 
 Contrast stretched to the 0-150 8-bit range.
 
 #### Varying particle SNR.
 
-<File:RECEPTOR> snr 7 density low-1.png|SNR = 7 <File:RECEPTOR> snr 4 density low-1.png|SNR = 4 <File:RECEPTOR> snr 3 density low-1.png|SNR = 3 <File:RECEPTOR> snr 2 density low-1.png|SNR = 2 <File:RECEPTOR> snr 1 density low-1.png|SNR = 1
+<File:RECEPTOR> snr 7 density low-1.png\|SNR = 7 <File:RECEPTOR> snr 4 density low-1.png\|SNR = 4 <File:RECEPTOR> snr 3 density low-1.png\|SNR = 3 <File:RECEPTOR> snr 2 density low-1.png\|SNR = 2 <File:RECEPTOR> snr 1 density low-1.png\|SNR = 1
 
 Contrast stretched to the 0-50 8-bit range.
 
 #### The MICROTUBULE scenario particle shape.
 
-<File:MICROTUBULE> snr 4 density mid-1.png|MICROTUBULE, SNR = 4, density = mid
+<File:MICROTUBULE> snr 4 density mid-1.png\|MICROTUBULE, SNR = 4, density = mid
 
 ### Accuracy measurements.
 
 For each scenario and condition, the method returns numerous values that characterizes the accuracy of a tracking algorithm. They are detailed on [this technical paper](http://bioimageanalysis.org/track/PerformanceMeasures.pdf). We plot below only three of them:
 
-  - The <b>Jaccard similarity between tracks</b>, that quantifies how well the tracks returned by the algorithm match the ground truth. This value assesses the accuracy of the [spot tracker](TrackMate_algorithms#Spot_trackers ) you pick in TrackMate. It ranges from 0 (terrible) to 1 (found tracks = ground truth).
+-   The <b>Jaccard similarity between tracks</b>, that quantifies how well the tracks returned by the algorithm match the ground truth. This value assesses the accuracy of the [spot tracker](TrackMate_algorithms#Spot_trackers ) you pick in TrackMate. It ranges from 0 (terrible) to 1 (found tracks = ground truth).
 
-<!-- end list -->
+<!-- -->
 
-  - The <b>Jaccard similarity between detections</b>, that quantifies how well the particle detected by the detection algorithm match the ground truth. It depends strongly on the [spot detector](TrackMate_algorithms#Spot_detectors ) you pick in TrackMate, and ranges from 0 to 1 like the above quantity.
+-   The <b>Jaccard similarity between detections</b>, that quantifies how well the particle detected by the detection algorithm match the ground truth. It depends strongly on the [spot detector](TrackMate_algorithms#Spot_detectors ) you pick in TrackMate, and ranges from 0 to 1 like the above quantity.
 
-<!-- end list -->
+<!-- -->
 
-  - The <b>RMSE of detection positions</b> that quantifies how precise is the location of the detected particles. The smaller the better.
+-   The <b>RMSE of detection positions</b> that quantifies how precise is the location of the detected particles. The smaller the better.
 
 I fully relied on [Icy](Icy ) to compute these values. TrackMate ships an action that exports tracking results to the XML format imposed by the ISBI challenge, and that can be found [here](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/action/ISBIChallengeExporter.java). I generated these files for all the conditions of a scenario, and used the [Icy ISBI challenge scoring plugin](http://icy.bioimageanalysis.org/plugin/ISBI_Tracking_Challenge_Batch_Scoring) to yield metrics. I then used [MATLAB](MATLAB ) to plot them.
 
@@ -92,17 +89,17 @@ When the histogram of detection quality returned by the detector as not bimodal,
 
 The three spot trackers were configured as indicated in the table below. It's not very sensible to keep always the same parameter across different scenario, but with what you can tune in TrackMate, there is little room for fine-tuning.
 
-| Spot tracker                                                                                 | Parameter             | Value |
-| -------------------------------------------------------------------------------------------- | --------------------- | ----- |
-| rowspan =3 | [Linear motion tracker](TrackMate_algorithms#Linear_motion_tracker. ) | Initial search radius | 10    |
-| Search radius                                                                                | 7                     |       |
-| Max frame gap                                                                                | 3                     |       |
-| rowspan = 3 | [LAP Brownian motion](TrackMate_algorithms#LAP_trackers )            | Max linking distance  | 7     |
-| Max gap-closing distance                                                                     | 10                    |       |
-| Max frame gap                                                                                | 3                     |       |
-| Nearest neighbor                                                                             | Max search distance   | 10    |
+| Spot tracker                                                                                  | Parameter             | Value |
+|-----------------------------------------------------------------------------------------------|-----------------------|-------|
+| rowspan =3 \| [Linear motion tracker](TrackMate_algorithms#Linear_motion_tracker. ) | Initial search radius | 10    |
+| Search radius                                                                                 | 7                     |       |
+| Max frame gap                                                                                 | 3                     |       |
+| rowspan = 3 \| [LAP Brownian motion](TrackMate_algorithms#LAP_trackers )            | Max linking distance  | 7     |
+| Max gap-closing distance                                                                      | 10                    |       |
+| Max frame gap                                                                                 | 3                     |       |
+| Nearest neighbor                                                                              | Max search distance   | 10    |
 
-Finally, for SNR\<4, I filtered out tracks that had less than 4 detections.
+Finally, for SNR&lt;4, I filtered out tracks that had less than 4 detections.
 
 ### Results.
 
@@ -118,7 +115,7 @@ The LAP tracker does not perform well, even in the ideal case, as it expects the
 
 The RMSE on particle position is the worst here over the 4 scenarios. This is the obvious consequence of the particle shape, which is asymmetric and elongated, when the LoG detector expects bright blobs. Still, this does not affect tracking results.
 
-![TrackMate\_MICROTUBULE\_LAP\_Brownian\_motion,\_Linear\_motion\_tracker\_\&amp;\_Nearest\_neighbor.png](/images/pages/TrackMate MICROTUBULE LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png "TrackMate_MICROTUBULE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png")
+<figure><img src="/images/pages/TrackMate_MICROTUBULE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" title="TrackMate_MICROTUBULE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" width="600" alt="TrackMate_MICROTUBULE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" /><figcaption aria-hidden="true">TrackMate_MICROTUBULE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png</figcaption></figure>
 
 #### Receptor scenario.
 
@@ -126,13 +123,13 @@ TrackMate does not have a particle linking algorithm that specifically address t
 
 Fortunately, accuracy values are rather good and do not break down too much against particle number. We also see that the linear motion tracker behaves slightly better than the rest in all conditions.
 
-![TrackMate\_RECEPTOR\_LAP\_Brownian\_motion,\_Linear\_motion\_tracker\_\&amp;\_Nearest\_neighbor.png](/images/pages/TrackMate RECEPTOR LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png "TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png")
+<figure><img src="/images/pages/TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" title="TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" width="600" alt="TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" /><figcaption aria-hidden="true">TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png</figcaption></figure>
 
 #### Vesicle scenario.
 
 The motion model of this scenario is the pure Brownian motion. Unsurprisingly the LAP tracker behaves the best as it models precisely this situation. The linear motion tracker is confused by the constant direction changed generated by the random motion, and is superseded even by the nearst neighbor search.
 
-![TrackMate\_VESICLE\_LAP\_Brownian\_motion,\_Linear\_motion\_tracker\_\&amp;\_Nearest\_neighbor.png](/images/pages/TrackMate VESICLE LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png "TrackMate_VESICLE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png")
+<figure><img src="/images/pages/TrackMate_VESICLE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" title="TrackMate_VESICLE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" width="600" alt="TrackMate_VESICLE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" /><figcaption aria-hidden="true">TrackMate_VESICLE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png</figcaption></figure>
 
 #### Virus scenario.
 
@@ -140,11 +137,11 @@ As for the receptor scenario, TrackMate does not have a specific tracker for thi
 
 Also, this scenario was the only one to ship 3D data over time. Thanks to ImgLib2 dimensional genericity, TrackMate does not mind.
 
-![TrackMate\_VIRUS\_LAP\_Brownian\_motion,\_Linear\_motion\_tracker\_\&amp;\_Nearest\_neighbor.png](/images/pages/TrackMate VIRUS LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png "TrackMate_VIRUS_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png")
+<figure><img src="/images/pages/TrackMate_VIRUS_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" title="TrackMate_VIRUS_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" width="600" alt="TrackMate_VIRUS_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" /><figcaption aria-hidden="true">TrackMate_VIRUS_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png</figcaption></figure>
 
 ### Comments.
 
-These results should help you pick the right algorithm for your problems, and maybe encourage you to implement your own. As said before, a deeper interpretation of these metrics in the general case is found in the original paper\[6\]. Here are a few things specific to the current version of TrackMate.
+These results should help you pick the right algorithm for your problems, and maybe encourage you to implement your own. As said before, a deeper interpretation of these metrics in the general case is found in the original paper[6]. Here are a few things specific to the current version of TrackMate.
 
 The parameters and strategy used for this accuracy assessment are pretty basic and unelaborated. This way, results give the 'raw' accuracy, before a user exploits the deeper specificity of their problem. The two sections below quickly list what we could have done and could not have done even if we wanted to improve results.
 
@@ -158,18 +155,21 @@ The LAP trackers were the first trackers to be shipped with TrackMate. They are 
 
 The challenge data does offer that possibility: all particles have roughly the same shape and intensity (modulo some minor variations in SNR). An exception is the MICROTUBULE scenario, where particles have an elongated shape. Therefore, we could have computed an orientation for them, and penalize two particles with different orientation (assuming - correctly - that orientation remains roughly the same between two frames).
 
-## References.
+References.
+-----------
 
 <references/>
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez )) 03:49, 25 January 2015 (CST)
 
-1.  [Chenouard *et al.*, "Objective comparison of particle tracking methods", '''Nature Methods, 2014 '''](http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html)
+[1] [Chenouard *et al.*, "Objective comparison of particle tracking methods", '''Nature Methods, 2014 '''](http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html)
 
-2.  [Jaqaman *et al.*, "Robust single-particle tracking in live-cell time-lapse sequences", **Nature Methods, 2008**](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)
+[2] [Jaqaman *et al.*, "Robust single-particle tracking in live-cell time-lapse sequences", **Nature Methods, 2008**](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)
 
-3.  January 2015
+[3] January 2015
 
-4.  
-5.  
-6.
+[4] 
+
+[5] 
+
+[6] 

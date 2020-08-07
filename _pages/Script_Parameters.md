@@ -11,7 +11,8 @@ description: test description
 
 {% include info-box content='Script parameters are a feature of [ImageJ2](ImageJ2 ); they will not work in plain [ImageJ1](ImageJ1 ). The [Fiji](Fiji ) distribution of ImageJ is built on ImageJ2, so they also work in Fiji.' %}
 
-## Basic syntax
+Basic syntax
+------------
 
 The rules for `#@` parameter use are as follows:
 
@@ -37,47 +38,48 @@ We could also run this script [headlessly](Scripting_Headless ), thanks to the g
 
 When the script is completed, any `#@output` variables are handled by the framework, based on their type. In this case we expect the `greeting` variable to be printed, since it is a `string`.
 
-## Parameter types
+Parameter types
+---------------
 
 A list of possible data types and the corresponding widgets is provided below.  
 The optional style argument defines how the widget are rendered in the input window.  
 See the respective widget sections for a preview of the styles.
 
-|                                   |                                        |                                                  |
-| --------------------------------- | -------------------------------------- | ------------------------------------------------ |
-| **Data type**                     | **Widget type**                        | **Available styles**                             |
-| | `boolean` `Boolean`             | checkbox                               |                                                  |
-| | `byte` `short` `int` `long`     | numeric field                          | | `slider` `spinner` `scroll bar`                |
-| | `Byte` `Short` `Integer` `Long` | numeric field                          | | `slider` `spinner` `scroll bar`                |
-| | `Float`                         | numeric field                          | | `slider` `spinner` `scroll bar`                |
-| | `BigInteger` `BigDecimal`       | numeric field                          | | `slider` `spinner` `scroll bar`                |
-| | `char` `Character` `String`     | text field                             | | `text field` `text area` `password`            |
-| | `Dataset` `ImagePlus`           | (\>=2 images) triggers a dropdown list |                                                  |
-| | `ColorRGB`                      | color chooser                          |                                                  |
-| | `Date`                          | date chooser                           |                                                  |
-| | `File`                          | file chooser                           | | `open` `save` `file` `directory` `extensions:` |
+|                                    |                                          |                                                   |
+|------------------------------------|------------------------------------------|---------------------------------------------------|
+| **Data type**                      | **Widget type**                          | **Available styles**                              |
+| \| `boolean` `Boolean`             | checkbox                                 |                                                   |
+| \| `byte` `short` `int` `long`     | numeric field                            | \| `slider` `spinner` `scroll bar`                |
+| \| `Byte` `Short` `Integer` `Long` | numeric field                            | \| `slider` `spinner` `scroll bar`                |
+| \| `Float`                         | numeric field                            | \| `slider` `spinner` `scroll bar`                |
+| \| `BigInteger` `BigDecimal`       | numeric field                            | \| `slider` `spinner` `scroll bar`                |
+| \| `char` `Character` `String`     | text field                               | \| `text field` `text area` `password`            |
+| \| `Dataset` `ImagePlus`           | (&gt;=2 images) triggers a dropdown list |                                                   |
+| \| `ColorRGB`                      | color chooser                            |                                                   |
+| \| `Date`                          | date chooser                             |                                                   |
+| \| `File`                          | file chooser                             | \| `open` `save` `file` `directory` `extensions:` |
 
 {% include warning-box content='`float` is also an accepted field but the decimal part is not displayed in the form compared to `Float` (mind the capital F).  
 A related [issue](https://github.com/scijava/scijava-common/issues/302) occurs with `int` and `double` when a default value is set in the code and entered in the form, the value is not properly recalled at the next run. Use `Integer` and `Double` instead.' %} {% include warning-box content='A single `#@ImagePlus` or `#@Dataset` field will not show up in the input form, instead the current image will automatically be processed. The idea is to stick to the IJ macro language. However if 2 `#@ImagePlus` (or respectively `#@Dataset`) are present then they will be rendered as drop-down buttons.' %}
 
 By implementing {% include javadoc project='SciJava ' package='org/scijava/widget ' class='InputWidget ' %} it is possible to extend this list.
 
-## Examples
+Examples
+--------
 
 ### Integer and Decimal input
 
 Integer and flaot can have the optional argument *min*, *max* and *stepSize* value (default 1) as well as a default value indicated by *value*.  
 Different styles are also possible.
 
-``` python
-#@ Integer (label="Default integer style", min=0, max=10, value=5) myint1
-#@ Integer (label="Slider integer style", style="slider", min=0, max=10, stepSize=2) myint2
-#@ Float   (label="Slider with float", style="slider", min=0, max=1, stepSize=0.1) myfloat
-```
+    #@ Integer (label="Default integer style", min=0, max=10, value=5) myint1
+    #@ Integer (label="Slider integer style", style="slider", min=0, max=10, stepSize=2) myint2
+    #@ Float   (label="Slider with float", style="slider", min=0, max=1, stepSize=0.1) myfloat
 
 <img src="/images/pages/ScriptParameters-IntegerStyles.JPG" width="450"/>
 
-## Parameter properties
+Parameter properties
+--------------------
 
 If you look at the [@Parameter annotation](https://github.com/scijava/scijava-common/blob/scijava-common-2.40.0/src/main/java/org/scijava/plugin/Parameter.java), you will notice it has many properties—for example, `name` and `description`.
 
@@ -92,39 +94,31 @@ Properties are your way to customize how an `#@parameter` should be handled by t
 
 Widgets are the User Interface elements shown to users to collect input information. For example, instead of just displaying "Name" to the user, we can add a custom label to the field of our `Greeting.py` script as follows:
 
-``` python
-#@ String (label="Please enter your name") name
-#@output String greeting
+    #@ String (label="Please enter your name") name
+    #@output String greeting
 
-greeting = "Hello, " + name + "!"
-```
+    greeting = "Hello, " + name + "!"
 
 ### Widget mouseover
 
 We can add a `description` property to provide mouse-over text for our field:
 
-``` python
-#@ String (label="Please enter your name", description="Your name") name
-#@output String greeting
+    #@ String (label="Please enter your name", description="Your name") name
+    #@output String greeting
 
-greeting = "Hello, " + name + "!"
-```
+    greeting = "Hello, " + name + "!"
 
 ### Default values
 
 Default values are also supported as parameter properties:
 
-``` python
-#@ Integer (label="An integer!",value=15) someInt
-```
+    #@ Integer (label="An integer!",value=15) someInt
 
 ### Persistence
 
 Per default, variable values are persisted between runs of a script. This means that parameter values from a previous run are used as starting value. Please note that a persisted value will overwrite a defined [default value](#Default_value "wikilink").
 
-``` python
-#@ Integer (label="An integer!", value=15, persist=false) someInt
-```
+    #@ Integer (label="An integer!", value=15, persist=false) someInt
 
 {% include warning-box content='Currently, "two scripts which declare the same parameter name, even with different types, will stomp each other." See [1](https://github.com/scijava/scijava-common/issues/193).' %}
 
@@ -140,19 +134,15 @@ This property set if the parameter should be displayed, editable and/or recorded
 
 \- MESSAGE: parameter value is intended as a message only, not editable by the user nor included as an input or output parameter. The option `required` should be set to false.
 
-![ScriptParam\_MESSAGEstring.JPG](/images/pages/ScriptParam MESSAGEstring.JPG "ScriptParam_MESSAGEstring.JPG")
+![](/images/pages/ScriptParam MESSAGEstring.JPG "ScriptParam_MESSAGEstring.JPG")
 
-``` python
-#@ String (visibility=MESSAGE, value="This is a documentation line", required=false) msg
-#@ Integer (label="Some integer parameter") my_int
-```
+    #@ String (visibility=MESSAGE, value="This is a documentation line", required=false) msg
+    #@ Integer (label="Some integer parameter") my_int
 
-You can [use HTML](https://forum.image.sc/t/multiline-messages-in-dialog-widgets/183) to format the message string, for example: ![ScijavaMultilineMessage.png](/images/pages/ScijavaMultilineMessage.png "ScijavaMultilineMessage.png")
+You can [use HTML](https://forum.image.sc/t/multiline-messages-in-dialog-widgets/183) to format the message string, for example: ![](/images/pages/ScijavaMultilineMessage.png "fig:ScijavaMultilineMessage.png")
 
-``` python
-#@ String (visibility=MESSAGE, value="<html>Message line 1<br/>Message line 2<p>Let's make a list<ul><li>item a</li><li>item b</li></ul></html>") docmsg
-#@ Integer anIntParam
-```
+    #@ String (visibility=MESSAGE, value="<html>Message line 1<br/>Message line 2<p>Let's make a list<ul><li>item a</li><li>item b</li></ul></html>") docmsg
+    #@ Integer anIntParam
 
 {% include warning-box content='Currently if a script containing a MESSAGE string is recorded with the macro recorder and the resulting recorded code executed, a window will show up containing only the MESSAGE string This is unexpected and will be corrected in the future.' %}
 
@@ -161,71 +151,61 @@ You can [use HTML](https://forum.image.sc/t/multiline-messages-in-dialog-widgets
 Any parameter can be turned into a multiple-choice selector by adding a `choices={...}` property.  
 The choice widget can have different styles like dropdown list or radio buttons.
 
-``` python
-#@ String (choices={"Option 1", "Option 2"}, style="listBox") myChoice123
-#@ String (choices={"Option A", "Option B"}, style="radioButtonHorizontal") myChoiceABC
+    #@ String (choices={"Option 1", "Option 2"}, style="listBox") myChoice123
+    #@ String (choices={"Option A", "Option B"}, style="radioButtonHorizontal") myChoiceABC
 
-print(myChoice123)
-print(myChoiceABC)
-```
+    print(myChoice123)
+    print(myChoiceABC)
 
-![Input-styles.png](/images/pages/Input-styles.png "Input-styles.png")
+![](/images/pages/Input-styles.png "Input-styles.png")
 
 ### Files and Folders
 
 By default, a `#@ File` parameter will create a chooser for a single file. Here is an example in python:
 
-``` python
-#@ File (label="Select a file") myFile
+    #@ File (label="Select a file") myFile
 
-print(myFile)
-```
+    print(myFile)
 
 You can request for multiple files or folders as well. However multiple files/folders input are not yet macro-recordable.
 
 Example in ImageJ Macro Language:
 
-``` python
-#@ File[] listOfPaths (label="select files or folders", style="both")
+    #@ File[] listOfPaths (label="select files or folders", style="both")
 
-print("There are "+listOfPaths.length+" paths selected.");
+    print("There are "+listOfPaths.length+" paths selected.");
 
-for (i=0;i<listOfPaths.length;i++) {
-        myFile=listOfPaths[i];
-        if (File.exists(myFile)) {
-                print(myFile + " exists.");
-                if (File.isDirectory(myFile)) {
-                        print("Is a directory");
-                } else {
-                        print("Is a file");
-                }
-        }
-}
-```
+    for (i=0;i<listOfPaths.length;i++) {
+            myFile=listOfPaths[i];
+            if (File.exists(myFile)) {
+                    print(myFile + " exists.");
+                    if (File.isDirectory(myFile)) {
+                            print("Is a directory");
+                    } else {
+                            print("Is a file");
+                    }
+            }
+    }
 
 The exact same code works for the [ImageJ1 Macro language](Macros ), too.
 
 If you want to select files or folders exclusively, use a `style` property:
 
-``` python
-#@ File (label="Select a file", style="file") myFile
-#@ File (label="Select a directory", style="directory") myDir
+    #@ File (label="Select a file", style="file") myFile
+    #@ File (label="Select a directory", style="directory") myDir
 
-print(myFile)
-print(myDir)
-```
+    print(myFile)
+    print(myDir)
 
 The single `File` parameter support the styles "*file*", "*directory*", "*open*", "*save*".
 
 For multiple file or directories, the styles are plural
 
-``` python
-#@ File[] (label="Select some files", style="files") listfiles
-#@ File[] (label="Select some directories", style="directories")listdirs
+    #@ File[] (label="Select some files", style="files") listfiles
+    #@ File[] (label="Select some directories", style="directories")listdirs
 
-print(listfiles)
-print(listdirs)
-```
+    print(listfiles)
+    print(listdirs)
 
 The `File[]` parameter supports the styles "*files*", "*directories*", "*both*".
 

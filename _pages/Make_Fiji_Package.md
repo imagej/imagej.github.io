@@ -13,18 +13,19 @@ After clicking on {% include bc content='Plugins | Utilities | Make Fiji Package
 
 After both are specified, the plugin does all the rest, reporting its progress in the status bar.
 
-## Files included in the archive
+Files included in the archive
+-----------------------------
 
 The packager includes files from the following subdirectories of *Fiji.app/*:
 
-  - images/
-  - jars/
-  - luts/
-  - macros/
-  - misc/
-  - plugins/
-  - retro/
-  - scripts/
+-   images/
+-   jars/
+-   luts/
+-   macros/
+-   misc/
+-   plugins/
+-   retro/
+-   scripts/
 
 It also includes the ImageJ launcher and the updater database including the current list of update sites.
 

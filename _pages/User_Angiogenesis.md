@@ -12,14 +12,14 @@ This account is used to manage the [Angiogenesis update site](http://sites.image
 
 To activate it:
 
-  - [{% include bc content='Help|Update...'%}](Update_Sites )
-  - Click *Manage update sites*
-  - Check *Angiogenesis*
-  - Click *Close*
+-   [{% include bc content='Help|Update...'%}](Update_Sites )
+-   Click *Manage update sites*
+-   Check *Angiogenesis*
+-   Click *Close*
 
 Some files should appear on the list with *Status/Action* of *Update it*.
 
-  - Click *Apply changes*
-  - Restart ImageJ
+-   Click *Apply changes*
+-   Restart ImageJ
 
-Your ImageJ should now possess additional commands\!
+Your ImageJ should now possess additional commands!

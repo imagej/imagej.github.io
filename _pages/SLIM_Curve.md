@@ -20,9 +20,10 @@ description: test description
 {% include info-box software='ImageJ ' name='SLIM Curve plugin ' logo='<img src="/images/pages/Slim-curve-icon.png" width="64"/> ' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
 [UW-Madison LOCI](http://loci.wisc.edu/) ' maintainer=maintainer filename='slim\_plugin-2.0.0-SNAPSHOT.jar ' source=source latest-version='2.0.0-SNAPSHOT ' status='discontinued in favor of [FLIMJ](FLIMJ ) ' website='https://slim-curve.github.io/ ' category='[:Category:Analysis](Category_Analysis ) ' %}
 
-## Introduction
+Introduction
+------------
 
-![SLIM-screenshot.png](/images/pages/SLIM-screenshot.png "SLIM-screenshot.png")
+<figure><img src="/images/pages/SLIM-screenshot.png" title="SLIM-screenshot.png" width="357" alt="SLIM-screenshot.png" /><figcaption aria-hidden="true">SLIM-screenshot.png</figcaption></figure>
 
 [SLIM Curve](https://slim-curve.github.io/) is an exponential curve fitting library used for Fluorescent Lifetime Imaging (FLIM) and Spectral Lifetime Imaging (SLIM). It is developed by Paul Barber and the Advanced Technology Group at the [Cancer Research UK and Medical Research Council Oxford Institute for Radiation Oncology](http://www.rob.ox.ac.uk/), as well as the [Laboratory for Optical and Computational Instrumentation](http://loci.wisc.edu/) at the University of Wisconsin-Madison. SLIM Curve is used for FLIM functionality in the Advanced Technology Group's [Time Resolved Imaging](https://www.assembla.com/spaces/ATD_TRI/wiki) (TRI2) software, as well as in the SLIM Curve plugin for ImageJ.
 
@@ -33,17 +34,19 @@ There are two algorithms used for curve fitting within SLIM Curve:
 
 The SLIM Curve library code is written in C89 compatible C and is thread-safe for fitting multiple pixels concurrently. Several files are provided as wrappers to call the library from Java code: *EcfWrapper.c* and *.h* provide a subset of function calls used by the SLIM Curve plugin for ImageJ, these may be invoked directly from Java using JNA. In addition there is a Java CurveFitter project that provides a wrapper to the SLIM Curve code. This invokes the C code using JNI, with loci\_curvefitter\_*SLIMCurveFitter.c* and *.h*.
 
-## Installation
+Installation
+------------
 
 The SLIM Curve plugin is available from the "SLIM Curve" [update site](update_site ).
 
 Once you have installed the SLIM Curve plugin it becomes available on the menu under {% include bc content='Analyze | Lifetime | SLIM Curve'%}.
 
-## Usage
+Usage
+-----
 
 When you run the plugin you will first be prompted to load a lifetime data file. (This should have a .sdt or .ics suffix.) Once the file loads a grayscale version of the lifetime image pops up, produced by summing the photon counts for all time bins for each pixel:
 
-![SLIM-grayscale-image.png](/images/pages/SLIM-grayscale-image.png "SLIM-grayscale-image.png")
+![](/images/pages/SLIM-grayscale-image.png "SLIM-grayscale-image.png")
 
 Here the red color signifies pixels that have a low photon count and will be excluded from any fitted images that are produced. The threshold value for this is adjustable in the user interface. When fitted images are created, yellow pixels signify fitting errors. During analysis of fitted images, blue pixels indicate outliers.
 
@@ -51,26 +54,26 @@ The crosshair cursor shows the current fitted pixel. This starts out as the brig
 
 The fitted decay graph pops up showing the results of the pixel fit:
 
-![SLIM-fitted-decay-graph.png](/images/pages/SLIM-fitted-decay-graph.png "SLIM-fitted-decay-graph.png")
+![](/images/pages/SLIM-fitted-decay-graph.png "SLIM-fitted-decay-graph.png")
 
 Here the graph shows black squares for the observed photon counts over time and a red line for the fitted curve. There are also vertical blue, green, and red lines or cursors that mark the region of the decay being fitted. Below the decay graph is a graph showing the Residuals, the difference between the observed and fitted values. For a good fit the residuals should have a low value range and exhibit a random pattern.
 
 The user interface panel also pops up, allowing you to control the settings of the fit. On the initial tab of the user interface panel entitled *Fit* you can choose what kind of fit and analysis you want to perform:
 
-![SLIM-UI-fit-tab.png](/images/pages/SLIM-UI-fit-tab.png "SLIM-UI-fit-tab.png")
+![](/images/pages/SLIM-UI-fit-tab.png "SLIM-UI-fit-tab.png")
 
-  - *Region* allows you to fit the entire image, a single pixel, the sum of all pixels, or the sum of each ROI defined on the grayscale image.
-  - *Algorithm* selects the fit algorithm. *SLIMCurve RLD+LMA* is recommended. This uses a rapid lifetime determination (also known as a triple integral fit) to quickly estimate the fitted parameters. Then a Levenberg-Marquardt least-squares fit is done to refine those estimates.
-  - *Function* lets you choose between single, double, and triple exponential fitted components. The stretched exponential fit can be used to characterize the distribution of multiple exponential lifetime components.
-  - *Noise Model* compensates for the noise in the fitted data. The recommendation here is to use the *Maximum Likelihood Estimation* noise model. This compensates for low photon counts.
-  - *Fitted Images* selects what output images are produced when you fit the entire image. These output images are colorized using a special lifetime LUT (lookup table or palette). You may select *A* the intensity, *Tau* the lifetime, *Z* the background, and/or the *ChiSquare* for each pixel of the fit. When you are fitting multiple exponential components you may also select *f* the fractional contribution and *F* the fractional intensity, as well as *Tm* the mean of the fitted taus. For stretched exponential fits you may select *H* which characterizes the distribution of the multiple lifetimes.
-  - *Colorize grayscale* is an option to combine the LUT colors indicating the parameter values for each pixel with the grayscale image.
-  - *Analysis* lets you optionally specify further analysis of the fitted results: *Export to Text* produces a text file of the fitted values. *VisAD* sends the fitted data to a VisAD plugin for further analysis. *Display Fit Results* produces a single image containing all the output images.
-  - The *Fit all channels* checkbox selects whether to fit all channels or just the current channel when the source image has multiple channels.
+-   *Region* allows you to fit the entire image, a single pixel, the sum of all pixels, or the sum of each ROI defined on the grayscale image.
+-   *Algorithm* selects the fit algorithm. *SLIMCurve RLD+LMA* is recommended. This uses a rapid lifetime determination (also known as a triple integral fit) to quickly estimate the fitted parameters. Then a Levenberg-Marquardt least-squares fit is done to refine those estimates.
+-   *Function* lets you choose between single, double, and triple exponential fitted components. The stretched exponential fit can be used to characterize the distribution of multiple exponential lifetime components.
+-   *Noise Model* compensates for the noise in the fitted data. The recommendation here is to use the *Maximum Likelihood Estimation* noise model. This compensates for low photon counts.
+-   *Fitted Images* selects what output images are produced when you fit the entire image. These output images are colorized using a special lifetime LUT (lookup table or palette). You may select *A* the intensity, *Tau* the lifetime, *Z* the background, and/or the *ChiSquare* for each pixel of the fit. When you are fitting multiple exponential components you may also select *f* the fractional contribution and *F* the fractional intensity, as well as *Tm* the mean of the fitted taus. For stretched exponential fits you may select *H* which characterizes the distribution of the multiple lifetimes.
+-   *Colorize grayscale* is an option to combine the LUT colors indicating the parameter values for each pixel with the grayscale image.
+-   *Analysis* lets you optionally specify further analysis of the fitted results: *Export to Text* produces a text file of the fitted values. *VisAD* sends the fitted data to a VisAD plugin for further analysis. *Display Fit Results* produces a single image containing all the output images.
+-   The *Fit all channels* checkbox selects whether to fit all channels or just the current channel when the source image has multiple channels.
 
 The next tab is entitled *Cursors*:
 
-![SLIM-UI-cursors-tab.png](/images/pages/SLIM-UI-cursors-tab.png "SLIM-UI-cursors-tab.png")
+![](/images/pages/SLIM-UI-cursors-tab.png "SLIM-UI-cursors-tab.png")
 
 Here the positions of the fit cursors are listed. There are two kinds of cursors:
 
@@ -78,7 +81,7 @@ The transient cursors bracket which region of the decay to fit. *Transient Start
 
 The excitation cursors bracket which region of the excitation or instrument response function decay to use in the fit. If an excitation is loaded the decay is shown in an Instrument Response Function graph with cursor lines similar to the *Fitted Decay Graph:*
 
-![SLIM-excitation-graph.png](/images/pages/SLIM-excitation-graph.png "SLIM-excitation-graph.png")
+![](/images/pages/SLIM-excitation-graph.png "SLIM-excitation-graph.png")
 
 The horizontal green line controls the *Excitation Baseline*, the minimum photon count to be included in the excitation. The vertical blue and green cursor lines define the start and end of the excitation. The *Excitation Delay* is the offset between the *Transient Start* and the start of the excitation. *Excitation Width* is the end of the excitation minus the start.
 
@@ -92,28 +95,28 @@ To create an excitation is currently a two step process. Run SLIM Curve with the
 
 If an excitation is loaded it is also shown on the fitted decay graph in light gray:
 
-![SLIM-fitted-decay-graph-excitation.png](/images/pages/SLIM-fitted-decay-graph-excitation.png "SLIM-fitted-decay-graph-excitation.png")
+![](/images/pages/SLIM-fitted-decay-graph-excitation.png "SLIM-fitted-decay-graph-excitation.png")
 
 In the next tab of the UI panel titled *Control* you can fine tune some aspects of the fit:
 
-![SLIM-UI-control-tab.png](/images/pages/SLIM-UI-control-tab.png "SLIM-UI-control-tab.png")
+![](/images/pages/SLIM-UI-control-tab.png "SLIM-UI-control-tab.png")
 
-  - *X* and *Y* specify the location of the last single fitted pixel. (You can fit a single pixel by setting Region to Single Pixel and clicking the Fit Pixel button or by just clicking on the grayscale image.)
-  - *Start* and *Stop* select the starting and ending time bins to be fitted.
-  - *Threshold* determines the minimum number of photons in the decay curve for a given pixel that are needed in order to fit that pixel.
-  - *ChiSquare target* controls the value of chi square at which the iterative LMA fitting process will stop. (Fitting also stops after a maximum number of iterations.)
-  - *Bin* can compensate for lower photon counts at the expense of some spatial resolution by binning the photons from adjacent pixels.
+-   *X* and *Y* specify the location of the last single fitted pixel. (You can fit a single pixel by setting Region to Single Pixel and clicking the Fit Pixel button or by just clicking on the grayscale image.)
+-   *Start* and *Stop* select the starting and ending time bins to be fitted.
+-   *Threshold* determines the minimum number of photons in the decay curve for a given pixel that are needed in order to fit that pixel.
+-   *ChiSquare target* controls the value of chi square at which the iterative LMA fitting process will stop. (Fitting also stops after a maximum number of iterations.)
+-   *Bin* can compensate for lower photon counts at the expense of some spatial resolution by binning the photons from adjacent pixels.
 
 The final tab of the user interface panel is a section entitled *Parameters* which displays and lets you constrain the fitted parameters. The actual contents of this subpanel will depend upon the Function selected.
 
-![SLIM-UI-params-tab.png](/images/pages/SLIM-UI-params-tab.png "SLIM-UI-params-tab.png")
+![](/images/pages/SLIM-UI-params-tab.png "SLIM-UI-params-tab.png")
 
 For each parameter:
 
-  - A label, such as *A1* or *Tau2* identifies the parameter.
-  - A textfield shows the current value of that parameter.
-  - A checkbox labelled *Fix* lets you fix the value of that parameter during the fit.
-  - Both the *reduced chisquare* and the *AIC* are measures of the goodness of fit. *AIC* stands for the Akaike Information Criterion. Unlike *chisquare* *AIC* has no absolute meaning, but can be used to compare single, double, and triple exponential fits to determine which model has the best fit.
+-   A label, such as *A1* or *Tau2* identifies the parameter.
+-   A textfield shows the current value of that parameter.
+-   A checkbox labelled *Fix* lets you fix the value of that parameter during the fit.
+-   Both the *reduced chisquare* and the *AIC* are measures of the goodness of fit. *AIC* stands for the Akaike Information Criterion. Unlike *chisquare* *AIC* has no absolute meaning, but can be used to compare single, double, and triple exponential fits to determine which model has the best fit.
 
 After fitting a single pixel or all of the pixels summed the fitted parameters can be viewed in this user interface panel *Params* section.
 
@@ -121,7 +124,7 @@ SLIM Curve starts up with the *Region* under the *Fit* tab of the UI set to Imag
 
 When a fitted image is created a histogram tool panel also pops up. This panel shows the range of values encountered in the fitted image and the LUT used to display those values, as well as a histogram of the distribution of those values in the image.
 
-![SLIM-fitted-image-histogram.png](/images/pages/SLIM-fitted-image-histogram.png "SLIM-fitted-image-histogram.png")
+![](/images/pages/SLIM-fitted-image-histogram.png "SLIM-fitted-image-histogram.png")
 
 By default the histogram tool comes up in automatic mode, the start and end of the LUT range automatically adjust to the minimum and maximum values in the image, so you can see the distribution all of the fitted values. Here the dashed gray lines indicate the quartiles of the distribution. If you uncheck this *Adjust range to min/max values* checkbox the histogram will zoom in based on the quartile range. (This uses Tukey's Outlier Rule: If Q1 is the first quartile value and Q3 the third, let the interquartile range IQR equal Q3 - Q1. Then values less than Q1 - 1.5 \* IQR or greater than Q3 + 1.5 \* IQR are considered outliers and are discarded.) You can also either enter new start and end values (this is useful to impose a uniform LUT range so you can compare different lifetime images) or just drag markers at the start and end of the histogram.
 
@@ -139,198 +142,162 @@ All the operations in SLIM Plugin operation are completely compatible with the p
 
 The list of command are as follows
 
-  - Start the plugin with a lifetime(\*.sdt or \*.ics) file:
+-   Start the plugin with a lifetime(\*.sdt or \*.ics) file:
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.startSLIMCurve", "true", "/Users/msagar/Downloads/", "/4t1_740_60xW_zoom4_256_1mg_1_140218_copy.sdt");
-run("SLIM Curve");
-```
+     
+    call("loci.slim.SLIMProcessor.startSLIMCurve", "true", "/Users/msagar/Downloads/", "/4t1_740_60xW_zoom4_256_1mg_1_140218_copy.sdt");
+    run("SLIM Curve");
 
-  - Change the algorithm:
+-   Change the algorithm:
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.setAlgorithmType", "SLIMCurve RLD");
-```
+     
+    call("loci.slim.SLIMProcessor.setAlgorithmType", "SLIMCurve RLD");
 
-  - Set number of components of exponents:
+-   Set number of components of exponents:
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.setFunctionType", "Double Exponential");
-```
+     
+    call("loci.slim.SLIMProcessor.setFunctionType", "Double Exponential");
 
-  - Change noise model:
+-   Change noise model:
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.setNoiseModel", "Poisson Data");
-```
+     
+    call("loci.slim.SLIMProcessor.setNoiseModel", "Poisson Data");
 
-  - change which parameters for fitting:
+-   change which parameters for fitting:
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.setFittedImagesType", "3");
-```
+     
+    call("loci.slim.SLIMProcessor.setFittedImagesType", "3");
 
-  - Set transient start time:
+-   Set transient start time:
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.setTransientStart", "2.0");
-```
+     
+    call("loci.slim.SLIMProcessor.setTransientStart", "2.0");
 
-  - Set the binning
+-   Set the binning
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.setBinnning", "3 x 3");
-```
+     
+    call("loci.slim.SLIMProcessor.setBinnning", "3 x 3");
 
-  - Load default excitation:
+-   Load default excitation:
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.loadDefaultExcitation", "true");
-```
+     
+    call("loci.slim.SLIMProcessor.loadDefaultExcitation", "true");
 
-  - Load default excitation:
+-   Load default excitation:
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.loadDefaultExcitation", "true");
-```
+     
+    call("loci.slim.SLIMProcessor.loadDefaultExcitation", "true");
 
-  - Set the chi2 target value:
+-   Set the chi2 target value:
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.setChi2Target", "1.75");
-```
+     
+    call("loci.slim.SLIMProcessor.setChi2Target", "1.75");
 
-  - Fix the A value(All "fix" are recordable):
+-   Fix the A value(All "fix" are recordable):
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.fixA1", "true");
-```
+     
+    call("loci.slim.SLIMProcessor.fixA1", "true");
 
-  - Start fitting
+-   Start fitting
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.startFitting", "");
-```
+     
+    call("loci.slim.SLIMProcessor.startFitting", "");
 
-  - Loading an existing excitation file
+-   Loading an existing excitation file
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.setExcitation", "/Users/msagar/Documents/qwe.irf");
-```
+     
+    call("loci.slim.SLIMProcessor.setExcitation", "/Users/msagar/Documents/qwe.irf");
 
-  - Set to double exponential(no of component =2)
+-   Set to double exponential(no of component =2)
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.setFunctionType", "Double Exponential");
-```
+     
+    call("loci.slim.SLIMProcessor.setFunctionType", "Double Exponential");
 
-  - Fix Z for double exponential fitting
+-   Fix Z for double exponential fitting
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.fixZ", "true");
-```
+     
+    call("loci.slim.SLIMProcessor.fixZ", "true");
 
 For batch processing, the whole operation can be recorded. Macro record the name of the files needed for exporting the values. A typical batch processing macro code looks like following
 
-  - Start fitting
+-   Start fitting
 
-<!-- end list -->
+<!-- -->
 
-``` java
- 
-call("loci.slim.SLIMProcessor.batchModeSet", "true");
-call("loci.slim.SLIMProcessor.exportFileSet", "pixel.tsv", "histograms.tsv", "summary.tsv");
-call("loci.slim.SLIMProcessor.startBatchMacro", ""); 
-```
+     
+    call("loci.slim.SLIMProcessor.batchModeSet", "true");
+    call("loci.slim.SLIMProcessor.exportFileSet", "pixel.tsv", "histograms.tsv", "summary.tsv");
+    call("loci.slim.SLIMProcessor.startBatchMacro", ""); 
 
 When "Export Histogram to Text" or/and "Export Pixels to Text" is selected for exporting the output to a CSV or TSV file that is also recorded in macro. A typical code looks like this
 
-``` java
- 
-call("loci.slim.SLIMProcessor.exportHistoFileName", "histoGram.csv", ",");
-call("loci.slim.SLIMProcessor.exportPixelFileName", "pixel.csv", ",");
-call("loci.slim.SLIMProcessor.setAnalysisList", "true", "2"); 
-```
+     
+    call("loci.slim.SLIMProcessor.exportHistoFileName", "histoGram.csv", ",");
+    call("loci.slim.SLIMProcessor.exportPixelFileName", "pixel.csv", ",");
+    call("loci.slim.SLIMProcessor.setAnalysisList", "true", "2"); 
 
 #### Complete Macro Example
 
 Complete macro example with exporting histograms and pixel information to CSV file
 
-``` java
- 
-call("loci.slim.SLIMProcessor.startSLIMCurve", "true", "/Users/msagar/Downloads/", "/4t1_740_60xW_zoom4_256_1mg_1_140218_copy.sdt");
-run("SLIM Curve");
-call("loci.slim.SLIMProcessor.setFunctionType", "Double Exponential");
-call("loci.slim.SLIMProcessor.loadDefaultExcitation", "true");
-wait(1000);
-call("loci.slim.SLIMProcessor.setWidthPrompt", "1.8359");
-call("loci.slim.SLIMProcessor.setWidthPrompt", "4.8533");
-call("loci.slim.SLIMProcessor.setDelayPrompt", "-0.3791");
-call("loci.slim.SLIMProcessor.setBinnning", "3 x 3");
-call("loci.slim.SLIMProcessor.fixZ", "true");
-wait(1000);
-call("loci.slim.SLIMProcessor.startFitting", "");
-call("loci.slim.SLIMProcessor.exportHistoFileName", "histogram1.csv", ",");
-call("loci.slim.SLIMProcessor.exportPixelFileName", "pixel1.csv", ",");
-call("loci.slim.SLIMProcessor.setAnalysisList", "true", "2");
-```
+     
+    call("loci.slim.SLIMProcessor.startSLIMCurve", "true", "/Users/msagar/Downloads/", "/4t1_740_60xW_zoom4_256_1mg_1_140218_copy.sdt");
+    run("SLIM Curve");
+    call("loci.slim.SLIMProcessor.setFunctionType", "Double Exponential");
+    call("loci.slim.SLIMProcessor.loadDefaultExcitation", "true");
+    wait(1000);
+    call("loci.slim.SLIMProcessor.setWidthPrompt", "1.8359");
+    call("loci.slim.SLIMProcessor.setWidthPrompt", "4.8533");
+    call("loci.slim.SLIMProcessor.setDelayPrompt", "-0.3791");
+    call("loci.slim.SLIMProcessor.setBinnning", "3 x 3");
+    call("loci.slim.SLIMProcessor.fixZ", "true");
+    wait(1000);
+    call("loci.slim.SLIMProcessor.startFitting", "");
+    call("loci.slim.SLIMProcessor.exportHistoFileName", "histogram1.csv", ",");
+    call("loci.slim.SLIMProcessor.exportPixelFileName", "pixel1.csv", ",");
+    call("loci.slim.SLIMProcessor.setAnalysisList", "true", "2");
 
 ### Batch mode
 
 Once you are satisfied with the fitting settings for a source image you can use those same settings on a series of similar images. All images should have the same number of time bins. To get into batch mode merely click on the *New File/Batch* button and select a folder or a selection of images. The batch mode UI will pop up:
 
-![SLIM-batch-mode-UI.png](/images/pages/SLIM-batch-mode-UI.png "SLIM-batch-mode-UI.png")
+![](/images/pages/SLIM-batch-mode-UI.png "SLIM-batch-mode-UI.png")
 
 You can export the pixel values, histogram values and statistics, and summary histogram values and statistics to a text file. This can be the same file or separate files. The default is tab separated values but the checkbox allows comma separated values.
 
 Once the batch processing starts a window will pop up showing the histogram and statistics for each lifetime file, as well as a summary histogram and statistics:
 
-![SLIM-batch-mode-window.png](/images/pages/SLIM-batch-mode-window.png "SLIM-batch-mode-window.png")
+![](/images/pages/SLIM-batch-mode-window.png "SLIM-batch-mode-window.png")
 
 Each source lifetime image has a row of histograms for each of the parameters in the *Fitted Images* dropdown of the *Fit* tab of the UI. Clicking on the row loads the source image into the plugin.
 
@@ -338,41 +305,39 @@ Note that you can't start out in batch mode, you need to fit a single image firs
 
 #### Example macro
 
-``` java
-dir = getDirectory("Choose Source Directory ");
-Dialog.create("Batch Processing");
-Dialog.addCheckbox("Export Pixels to Text", true);
-Dialog.addCheckbox("Export Histograms to Text", true);
-Dialog.addCheckbox("Export Batch Histogram to Text", true);
-Dialog.addString("Save as", "", 20);
-Dialog.show();
-pixels = Dialog.getCheckbox();
-histos = Dialog.getCheckbox();
-batchHisto = Dialog.getCheckbox();
-output = Dialog.getString();
-if (pixels || histos) {
-    list = getFileList(dir);
-    setBatchMode(true);
-    okay = call("loci.slim.SLIM_PlugIn.startBatch");
-//  if (okay) { // doesn't work
-        for (i = 0; i < list.length; i++) {
-            showProgress(i+1, list.length);
-            call("loci.slim.SLIM_PlugIn.batch", dir + list[i], output, pixels, histos);
-        }
-        call("loci.slim.SLIM_PlugIn.endBatch");
-//  }
-}
-if (batchHisto) {
-    list = getFileList(dir);
-    setBatchMode(true);
-    call("loci.slim.SLIM_PlugIn.startBatchHisto");
-    for (i = 0; i < list.length; ++i) {
-        showProgress(i+1, list.length);
-        call("loci.slim.SLIM_PlugIn.batchHisto", dir + list[i], output);
+    dir = getDirectory("Choose Source Directory ");
+    Dialog.create("Batch Processing");
+    Dialog.addCheckbox("Export Pixels to Text", true);
+    Dialog.addCheckbox("Export Histograms to Text", true);
+    Dialog.addCheckbox("Export Batch Histogram to Text", true);
+    Dialog.addString("Save as", "", 20);
+    Dialog.show();
+    pixels = Dialog.getCheckbox();
+    histos = Dialog.getCheckbox();
+    batchHisto = Dialog.getCheckbox();
+    output = Dialog.getString();
+    if (pixels || histos) {
+        list = getFileList(dir);
+        setBatchMode(true);
+        okay = call("loci.slim.SLIM_PlugIn.startBatch");
+    //  if (okay) { // doesn't work
+            for (i = 0; i < list.length; i++) {
+                showProgress(i+1, list.length);
+                call("loci.slim.SLIM_PlugIn.batch", dir + list[i], output, pixels, histos);
+            }
+            call("loci.slim.SLIM_PlugIn.endBatch");
+    //  }
     }
-    call("loci.slim.SLIM_PlugIn.endBatchHisto");
-}
-```
+    if (batchHisto) {
+        list = getFileList(dir);
+        setBatchMode(true);
+        call("loci.slim.SLIM_PlugIn.startBatchHisto");
+        for (i = 0; i < list.length; ++i) {
+            showProgress(i+1, list.length);
+            call("loci.slim.SLIM_PlugIn.batchHisto", dir + list[i], output);
+        }
+        call("loci.slim.SLIM_PlugIn.endBatchHisto");
+    }
 
 ### Segmentation using classification
 
@@ -387,21 +352,22 @@ For some specific applications, you might want to analyze a specific segment in 
 7.  Run the Create Mask and Create Selection commands to make the ROI. You can execute commands easily using the [Command Finder](Command_Finder ) (press {% include key content='L' %}).
 8.  Add the ROI to ROI manager by pressing {% include key content='T' %}. Use it on overlay with lifetime image and start analyzing.
 
-![Weka\_module.JPG](/images/pages/Weka module.JPG "Weka_module.JPG") ![Overlay.JPG](/images/pages/Overlay.JPG "Overlay.JPG")
+![](/images/pages/Weka module.JPG "fig:Weka_module.JPG") ![](/images/pages/Overlay.JPG "fig:Overlay.JPG")
 
 ### Result comparison
 
 The result of the SLIM Curve plugin compares reasonably with standard lifetime analysis software like SPCImage. Here is a small comparison between the lifetime obtained with SPCImage and SLIM Curve for lifetime analysis of coumarin 6 dye. The lifetime image which has been analysed can be found [here](https://www.dropbox.com/s/53biq6plp0z4q5v/coumarin6_740_60xW_zoom4_256_140603.sdt) and the urea image that is used to create the excitation can be found [here](https://www.dropbox.com/s/rg4rdb1ad8uxk61/urea_740_60xW_zoom4_256_140603.sdt). The excitation was set between 1.5 to 5.2 ns. And the shift(Z) was fixed at 0.7. A one component fit was performed. Binning was 3x3. The results shows that the lifetime values obtained from SLIM Curve varies between 0.5%-2% from the value obtained from SPCImage for 5 points selected randomly. The lifetimes are given below for the same locations are given below.
 
 | X   | Y   | SLIM Curve(in ps) | SPCImage(in ps) | Difference(%) |
-| --- | --- | ----------------- | --------------- | ------------- |
+|-----|-----|-------------------|-----------------|---------------|
 | 166 | 113 | 2582              | 2567            | 0.584         |
-| 93  | 37  | 2488              | 2539            | \-2.01        |
-| 195 | 76  | 2548              | 2602            | \-2.08        |
-| 207 | 202 | 2464              | 2487            | \-0.92        |
-| 219 | 49  | 2470              | 2493            | \-0.922       |
+| 93  | 37  | 2488              | 2539            | -2.01         |
+| 195 | 76  | 2548              | 2602            | -2.08         |
+| 207 | 202 | 2464              | 2487            | -0.92         |
+| 219 | 49  | 2470              | 2493            | -0.922        |
 
-## Getting help
+Getting help
+------------
 
 If you have questions, please ask on the [Image.sc Forum](https://forum.image.sc/) with the [`slim-curve` tag](https://forum.image.sc/tags/slim-curve).
 

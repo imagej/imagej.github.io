@@ -13,16 +13,15 @@ This plugin simulates color blindness.
 
 It is based on http://quarkphysics.ca/phys1/light/u-light.htm .
 
-## Usage
+Usage
+-----
 
 Choose one of the color blindness modes in the dialog, then press OK:
 
-![Simulate\_Color\_Blindness\_Dialog.png](/images/pages/Simulate Color Blindness Dialog.png "Simulate_Color_Blindness_Dialog.png")
+![](/images/pages/Simulate Color Blindness Dialog.png "Simulate_Color_Blindness_Dialog.png")
 
 Here's how the results look like when applied to the *Clown* sample image:
 
-|                                                                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| {% include thumbnail src='/images/pages/Simulate Color Blindness Results.png' title='Simulate Color Blindness: overview of the nine different modes.'%} |
+<table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/images/pages/Simulate Color Blindness Results.png' title='Simulate Color Blindness: overview of the nine different modes.'%}</p></td></tr></tbody></table>
 
   

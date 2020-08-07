@@ -10,13 +10,14 @@ description: test description
 (Return to the [Developer Documentation](3D_Viewer__Developer_Documentation ) page)  
 (Return to the main [3D\_Viewer](3D_Viewer ) page)
 
-## How to create two canvasses displaying the same universe
+How to create two canvasses displaying the same universe
+--------------------------------------------------------
 
 You can download example source code for this HowTo [here](3D_Viewer__Example_code ).
 
 This howto shows how to create two windows showing the same universe:
 
-\<source lang="java" first-line="21"; font-size: '100%';"\>
+&lt;source lang="java" first-line="21"; font-size: '100%';"&gt;
 
 `   // Open a hyperstack`  
 `   String path = "/home/bene/PhD/brains/template.tif";`  

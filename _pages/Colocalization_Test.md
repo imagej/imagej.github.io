@@ -17,11 +17,13 @@ description: test description
 {% endcapture %}
 {% include info-box name='Colocalization Test ' software='ImageJ - Fiji ' author='Tony Collins (and others?) ' maintainer=maintainer filename='Colocalization.jar ' source=source latest-version='june 2009 ' website='[Colocalization Analysis\#Colocalization\_Test](Colocalization_Analysis#Colocalization_Test ) ' status='<span style="color:red">Deprecated, use [Coloc 2](Coloc_2 ) instead.</span> ' %}
 
-## Purpose
+Purpose
+-------
 
 Performs one of a set of three statistical tests, comparing the Persons correlation coefficient of 2 colour channels in the real image data against a white noise image, or the same image data with one of the colour channels spatially shifted, repeated a number of times.
 
-## Documentation
+Documentation
+-------------
 
 <span style="color: red">Note: this plugin is now deprecated. You should use the newer [Coloc 2](Coloc_2 ) plugin instead.</span>
 

@@ -9,27 +9,30 @@ description: test description
 
 {% include develop-menu content='tutorials' %}This article explains how to install, configure and use Eclipse to develop [ImageJ](ImageJ ) [components](components ) and [plugins](plugins ). Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
 
-# Initial setup
+Initial setup
+=============
 
-## Install the Java Development Kit
+Install the Java Development Kit
+--------------------------------
 
-  - Download and install the Java Development Kit (JDK) from the [Java web site](http://www.oracle.com/technetwork/java/javase/downloads/).
+-   Download and install the Java Development Kit (JDK) from the [Java web site](http://www.oracle.com/technetwork/java/javase/downloads/).
 
-## Install and configure Eclipse
+Install and configure Eclipse
+-----------------------------
 
 ### Install Eclipse
 
-  - Download "Eclipse IDE for Java Developers" from the [Eclipse web site](http://www.eclipse.org/downloads/).
+-   Download "Eclipse IDE for Java Developers" from the [Eclipse web site](http://www.eclipse.org/downloads/).
 
 {% include warning-box content='It is """important""" to choose "Eclipse IDE for Java Developers" because it contains Maven support built-in. Otherwise, you will have to [install the M2E plugin manually](http://eclipse.org/m2e/).' %}
 
-  - Unpack the archive to a location of your choice.
+-   Unpack the archive to a location of your choice.
 
 ### Configure Eclipse for your platform
 
 <div style="overflow: hidden">
 
-<tabs> <tab name="Windows"> ![ x32px](/images/pages/Win.png " x32px") **Windows**
+<tabs> <tab name="Windows"> ![ x32px](/images/pages/Win.png "fig: x32px") **Windows**
 
 **Avoid permissions issues.** We recommend installing Eclipse *outside* of the `Program Files` directory. E.g.: **`C:\Users\frood\Programs\eclipse`**, where **`C:\Users\frood`** is your user directory.
 
@@ -39,15 +42,15 @@ Use Wordpad to edit the `eclipse.ini` file in your Eclipse installation (e.g., *
 
 Now update Eclipse's JRE to be JDK-aware:
 
-  - Launch Eclipse
-  - From the menu choose {% include bc content='Window | Preferences'%}
-  - Select {% include bc content='Java | Installed JREs'%}
-  - Click Search..., navigate to your JDK installation folder (e.g., **`C:\Program Files\Java\jdk1.8.0_11`**) and click OK
-  - Check the box next to the JRE that appears and click OK
+-   Launch Eclipse
+-   From the menu choose {% include bc content='Window | Preferences'%}
+-   Select {% include bc content='Java | Installed JREs'%}
+-   Click Search..., navigate to your JDK installation folder (e.g., **`C:\Program Files\Java\jdk1.8.0_11`**) and click OK
+-   Check the box next to the JRE that appears and click OK
 
-</tab> <tab name="OS X"> ![ x32px](/images/pages/Osx.png " x32px") **OS X**
+</tab> <tab name="OS X"> ![ x32px](/images/pages/Osx.png "fig: x32px") **OS X**
 
-**Understand Java 6 vs. Java 8.** Eclipse should work on OS X with no further configuration. However, we recommend reading the [OS X section of the FAQ](FAQ#Mac_OS_X ), as there are several Java-related issues on OS X. </tab> <tab name="Linux"> ![ x32px](/images/pages/Tux.png " x32px") **Linux**
+**Understand Java 6 vs. Java 8.** Eclipse should work on OS X with no further configuration. However, we recommend reading the [OS X section of the FAQ](FAQ#Mac_OS_X ), as there are several Java-related issues on OS X. </tab> <tab name="Linux"> ![ x32px](/images/pages/Tux.png "fig: x32px") **Linux**
 
 **Avoid permissions issues.** We recommend installing to `$HOME/eclipse`.
 
@@ -64,14 +67,16 @@ Then run eclipse using this command: `GTK2_RC_FILES=~/.gtkrc-eclipse eclipse` </
 
 </div>
 
-## Clone the source code
+Clone the source code
+---------------------
 
 Using your [Git client of choice](http://git-scm.com/downloads/guis), clone the source code which interests you:
 
-  - If you want to work on an existing project, see the [list of sources](source_code ).
-  - If you are creating your own project, see the [building a pom](building_a_pom ) guide.
+-   If you want to work on an existing project, see the [list of sources](source_code ).
+-   If you are creating your own project, see the [building a pom](building_a_pom ) guide.
 
-## Import the source code
+Import the source code
+----------------------
 
 1.  Choose {% include bc content='File | Import'%} from the Eclipse menu
 2.  Select "Existing Maven Projects" and click Next
@@ -82,7 +87,8 @@ Eclipse will import and automatically build the project(s). There should not be 
 
 If you're having trouble, how to import and build your Maven + Eclipse project, follow this video: [How To Setup and Make a Fiji Plugin](https://www.youtube.com/watch?v=YIWpoBnnLio)
 
-# The Run-Debug cycle
+The Run-Debug cycle
+===================
 
 <div style="float: right;
         width: 400px;
@@ -93,122 +99,21 @@ If you're having trouble, how to import and build your Maven + Eclipse project, 
         background-color: #ffefbe;
 {% include border content='-radius|0.75em' %} {% include box content='-shadow' %}">
 
-## Keyboard shortcuts
+Keyboard shortcuts
+------------------
 
 On OS X, replace {% include key content='Ctrl' %} with {% include key content='Cmd' %}
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p><strong>Navigation</strong></p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|Shift|T' %}</p></td>
-<td><p>Open a Java class from the workspace</p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|Shift|R' %}</p></td>
-<td><p>Open a file from the workspace</p></td>
-</tr>
-<tr class="even">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='F3' %}</p></td>
-<td><p>Jump to selected class<br />
-(to edit the code, see <a href="Architecture#Using_snapshot_couplings_during_development" title="wikilink">snapshot coupling</a>)</p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|O' %}</p></td>
-<td><p>Show superclass/subclass hierarchy</p></td>
-</tr>
-<tr class="even">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|T' %}</p></td>
-<td><p>Show implementations of interface or class</p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|L' %}</p></td>
-<td><p>Go to line number</p></td>
-</tr>
-<tr class="even">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|Q' %}</p></td>
-<td><p>Go to last edit location</p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|E' %}</p></td>
-<td><p>Go to next file in editor</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Editing</strong></p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Alt|Up' %}, {% include key content='Alt|Down' %}</p></td>
-<td><p>Move current line up or down</p></td>
-</tr>
-<tr class="even">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|D' %}</p></td>
-<td><p>Delete the current line</p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|/' %}</p></td>
-<td><p>Comment/uncomment the selected line(s)</p></td>
-</tr>
-<tr class="even">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|1' %}</p></td>
-<td><p>Quick fix selected error</p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|Space' %}</p></td>
-<td><p>Auto-complete current selection</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Code cleanup</strong></p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|Shift|O' %}</p></td>
-<td><p>Organize imports</p></td>
-</tr>
-<tr class="even">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|Shift|F' %}</p></td>
-<td><p>Format code<br />
-(BUT make sure you set the <a href="Coding_style#Eclipse_code_style_profiles" title="wikilink">coding style</a>)</p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Alt|Shift|S' %}, {% include key content='U' %}</p></td>
-<td><p>Clean up (does format and much more)</p></td>
-</tr>
-<tr class="even">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Alt|Shift|R' %}</p></td>
-<td><p>Refactor/rename selected class/variable</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Debugging</strong></p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|Shift|B' %}</p></td>
-<td><p>Set/Remove breakpoint</p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='F5' %}</p></td>
-<td><p>Step into</p></td>
-</tr>
-<tr class="even">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='F6' %}</p></td>
-<td><p>Step over</p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='F7' %}</p></td>
-<td><p>Step out</p></td>
-</tr>
-</tbody>
-</table>
+<table><tbody><tr class="odd"><td style="text-align: right; vertical-align: top; white-space: nowrap"><p><strong>Navigation</strong></p></td><td></td></tr><tr class="even"><td><p> {% include key content='Ctrl|Shift|T' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Open a Java class from the workspace</p></td></tr><tr class="odd"><td><p> {% include key content='Ctrl|Shift|R' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Open a file from the workspace</p></td></tr><tr class="even"><td><p> {% include key content='F3' %}</p></td><td><p>Jump to selected class<br />
+(to edit the code, see <a href="Architecture#Using_snapshot_couplings_during_development" title="wikilink">snapshot coupling</a>)</p></td></tr><tr class="odd"><td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|O' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Show superclass/subclass hierarchy</p></td></tr><tr class="even"><td><p> {% include key content='Ctrl|T' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Show implementations of interface or class</p></td></tr><tr class="odd"><td><p> {% include key content='Ctrl|L' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Go to line number</p></td></tr><tr class="even"><td><p> {% include key content='Ctrl|Q' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Go to last edit location</p></td></tr><tr class="odd"><td><p> {% include key content='Ctrl|E' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Go to next file in editor</p></td></tr><tr class="even"><td><p><strong>Editing</strong></p></td><td></td></tr><tr class="odd"><td><p> {% include key content='Alt|Up' %}, {% include key content='Alt|Down' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Move current line up or down</p></td></tr><tr class="even"><td><p> {% include key content='Ctrl|D' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Delete the current line</p></td></tr><tr class="odd"><td><p> {% include key content='Ctrl|/' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Comment/uncomment the selected line(s)</p></td></tr><tr class="even"><td><p> {% include key content='Ctrl|1' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Quick fix selected error</p></td></tr><tr class="odd"><td><p> {% include key content='Ctrl|Space' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Auto-complete current selection</p></td></tr><tr class="even"><td><p><strong>Code cleanup</strong></p></td><td></td></tr><tr class="odd"><td><p> {% include key content='Ctrl|Shift|O' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Organize imports</p></td></tr><tr class="even"><td><p> {% include key content='Ctrl|Shift|F' %}</p></td><td><p>Format code<br />
+(BUT make sure you set the <a href="Coding_style#Eclipse_code_style_profiles" title="wikilink">coding style</a>)</p></td></tr><tr class="odd"><td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Alt|Shift|S' %}, {% include key content='U' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Clean up (does format and much more)</p></td></tr><tr class="even"><td><p> {% include key content='Alt|Shift|R' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Refactor/rename selected class/variable</p></td></tr><tr class="odd"><td><p><strong>Debugging</strong></p></td><td></td></tr><tr class="even"><td><p> {% include key content='Ctrl|Shift|B' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Set/Remove breakpoint</p></td></tr><tr class="odd"><td><p> {% include key content='F5' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Step into</p></td></tr><tr class="even"><td><p> {% include key content='F6' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Step over</p></td></tr><tr class="odd"><td><p> {% include key content='F7' %}</p></td><td><p>Step out</p></td></tr></tbody></table>
 
 </div>
 
 Now that you have the project successfully nestled within Eclipse, you can run it, change the code, and run it again, iterating as needed to develop features and fix bugs. This process is known as the *run-debug cycle*—although some people call it *compile-debug* or *edit-compile-debug* or *edit-compile-run* or *debug-edit-compile* or *edit-build-test-debug* or *edit-compile-link-debug* or...
 
-## Launch ImageJ
+Launch ImageJ
+-------------
 
 If you cloned the [imagej project](https://github.com/imagej/imagej), you can launch the program as follows:
 
@@ -220,48 +125,44 @@ If you cloned the [imagej project](https://github.com/imagej/imagej), you can la
 
 Other projects will have different main classes, but the general procedure is the same.
 
-## Running and debugging
+Running and debugging
+---------------------
 
 One major problem when debugging [ImageJ 1.x](ImageJ_1.x ) plugins is that ImageJ 1.x expects all the plugins' *.jar* files to live in a sub-directory *plugins/* in the ImageJ root directory. We can trick ImageJ by setting the property *ij.dir* to the location of the *.jar* file generated by m2e. The [Fiji](Fiji ) project provides a convenience class *fiji.Debug* in the {% include github org='fiji ' repo='fiji-lib ' label='fiji-lib ' %} component which lets you do that without any pain:
 
-``` java
-import fiji.Debug; // requires fiji-lib as a dependency
+    import fiji.Debug; // requires fiji-lib as a dependency
 
-[...]
+    [...]
 
-public static void main(String[] args) {
-    // requires a plugins.config in src/main/resources/ that defines the command name:
-    // Plugins, "My shiny new plugin", the.current.PluginClass
-    Debug.run("My shiny new plugin", "plugin parameters");
-}
-```
+    public static void main(String[] args) {
+        // requires a plugins.config in src/main/resources/ that defines the command name:
+        // Plugins, "My shiny new plugin", the.current.PluginClass
+        Debug.run("My shiny new plugin", "plugin parameters");
+    }
 
 The format of `plugin parameters` can be determined by using the [macro recorder](macro_recorder ), or just pass `null` if your plugin opens a dialog. For more complex plugins that are not macro recordable, you can pass empty strings to the `run` method—it will still launch an ImageJ instance with your plugin on the classpath.
 
 If your plugin does not depend on `fiji-lib` by default, you can add it using [maven](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html). Just paste the following block into your `pom.xml` dependencies:
 
-``` xml
-<dependency>
-    <groupId>sc.fiji</groupId>
-    <artifactId>fiji-lib</artifactId>
-</dependency>
-```
+    <dependency>
+        <groupId>sc.fiji</groupId>
+        <artifactId>fiji-lib</artifactId>
+    </dependency>
 
 To debug classes of type *PlugInFilter*, use the *Debug.runFilter(imagePath, plugin, parameters)* method instead.
 
 Note: if you do not even require ImageJ 1.x to really know about your plugin (i.e. the plugin does not have to show up in the menus for the testing/debugging to work), you can also do something like this instead:
 
-``` java
-public static void main(String[] args) {
-    new ImageJ();
-    ImagePlus image = IJ.openImage("/path/to/fiji/samples/clown.jpg");
-    IJ.runPlugIn(image, "fiji.My_Beautiful_Plugin", "parameter=Hello");
-    image.show();
-    WindowManager.addWindow(image.getWindow());
-}
-```
+    public static void main(String[] args) {
+        new ImageJ();
+        ImagePlus image = IJ.openImage("/path/to/fiji/samples/clown.jpg");
+        IJ.runPlugIn(image, "fiji.My_Beautiful_Plugin", "parameter=Hello");
+        image.show();
+        WindowManager.addWindow(image.getWindow());
+    }
 
-## Testing your plugin in an existing installation
+Testing your plugin in an existing installation
+-----------------------------------------------
 
 When you run your plugin from Eclipse, you're only testing with the classpath *of this project*—which may or may not reflect the environment of an actual user's installation. To test your plugin in an existing installation you can either simply copy the jar, or use Maven to install your plugin and its dependencies. {% include thumbnail src='/images/pages/MavenRunConfig.png' title='Setting up a new Maven Build configuration'%}
 
@@ -285,7 +186,8 @@ Steps are as follows:
 
 You can now run the project from this dialog. You only need to perform this configuration once though—future uses of the [Maven Build](http://www.vogella.com/tutorials/EclipseMaven/article.html#example_eclipsemavenproject_runningthebuild) option will automatically copy your plugin and its dependencies to the specified ImageJ app.
 
-## Adding new plugins
+Adding new plugins
+------------------
 
 The easiest method is to start with a [minimal project](https://github.com/imagej/example-legacy-plugin), renamed to the desired name of your plugin. By convention, the project directory should match the base name of the `.jar` file to be generated.
 
@@ -297,7 +199,8 @@ Next, you will put your Java sources into `src/main/java/` and adjust `src/main/
 
 After that, ask Eclipse to import it: {% include bc content='File | Import | Maven | Import Existing Maven Project'%}.
 
-## Viewing Dependency Source
+Viewing Dependency Source
+-------------------------
 
 When jumping into a dependency class in Eclipse (using {% include key content='F3' %}), you may see a message stating "Source not found".
 
@@ -307,40 +210,22 @@ However, if for some reason this doesn't happen you can try the following steps.
 
 1.  Try right-clicking the JAR in the Maven dependencies in Eclipse, and selecting "Download Sources". This should force Eclipse to download the `-sources` JAR.
 2.  Check that the `-sources` JAR has been downloaded locally.
-      - Navigate to `<path-to-.m2-repo>/repository/`<groupId>`/`<artifactId>`/`<version> and see if there is a `-sources` JAR there.
-      - If it is not, then in a terminal navigate to the folder containing your project's pom.xml file. And then from the command line run  
+    -   Navigate to `<path-to-.m2-repo>/repository/`<groupId>`/`<artifactId>`/`<version> and see if there is a `-sources` JAR there.
+    -   If it is not, then in a terminal navigate to the folder containing your project's pom.xml file. And then from the command line run  
         `mvn dependency:get -Dartifact=groupId:artifactId:version:packaging:classifier`.
-          - For example if a project depended on imagej-common and you needed to retrieve the `-sources` JAR, the command you'd type would be:  
-            `mvn dependency:get -Dartifact=net.imagej:imagej-common:0.24.4:`<jar:sources>
+        -   For example if a project depended on imagej-common and you needed to retrieve the `-sources` JAR, the command you'd type would be:  
+            `mvn dependency:get -Dartifact=net.imagej:imagej-common:0.24.4:`[`jar:sources`](jar_sources)
 3.  If the `-sources` JAR was there, you could check its contents by running the following command from the terminal:  
     `jar tr <path-to-.m2-repo>/repository/`<groupId>`/`<artifactId>`/`<version>`/`<jar-name>`-sources.jar`.
-      - If the file in question isn't there, then unfortunately this project doesn't have source for that class.
+    -   If the file in question isn't there, then unfortunately this project doesn't have source for that class.
 
 If the class you're trying to view is a part of the JRE and you're on Linux, you may need to run `sudo apt install openjdk-`<java-version-number>`-sources` to retrieve the sources.
 
 Note that doing this only allows you to view the source code, it does **not** allow you to edit it. If you need to edit these files, see the [snapshot coupling](Architecture#Using_snapshot_couplings_during_development ) section for more information.
 
-## See also
+See also
+--------
 
-<table>
-<thead>
-<tr class="header">
-<th><p><a href="ImageJ2" title="wikilink">ImageJ2</a></p></th>
-<th><p><a href="ImageJ_1.x" title="wikilink">ImageJ 1.x</a></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><a href="Writing_plugins" title="wikilink">Writing plugins</a></li>
-<li><a href="How_to_contribute_to_an_existing_plugin_or_library" title="wikilink">Contributing to a plugin</a></li>
-</ul></td>
-<td><ul>
-<li>{% include github org='imagej ' repo='example-legacy-plugin ' label='example-legacy-plugin ' %} project template</li>
-<li><a href="Developing_Plugins_for_ImageJ_1.x" title="wikilink">Developing Plugins for ImageJ 1.x</a></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+<table><thead><tr class="header"><th><p><a href="ImageJ2" title="wikilink">ImageJ2</a></p></th><th><p><a href="ImageJ_1.x" title="wikilink">ImageJ 1.x</a></p></th></tr></thead><tbody><tr class="odd"><td><ul><li><a href="Writing_plugins" title="wikilink">Writing plugins</a></li><li><a href="How_to_contribute_to_an_existing_plugin_or_library" title="wikilink">Contributing to a plugin</a></li></ul></td><td><ul><li>{% include github org='imagej ' repo='example-legacy-plugin ' label='example-legacy-plugin ' %} project template</li><li><a href="Developing_Plugins_for_ImageJ_1.x" title="wikilink">Developing Plugins for ImageJ 1.x</a></li></ul></td></tr></tbody></table>
 
  

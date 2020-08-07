@@ -9,72 +9,75 @@ description: test description
 
 We just released a new minor version of [TrackMate](TrackMate ), pressed by the many bugs that were found and appeared between this version and the [previous one](2014-03-19_-_TrackMate_v2.2.0_released ). It focuses mainly on **interoperability** and of course **bugfixes**.
 
-## Highlights
+Highlights
+----------
 
-  - It is possible to manually color spots and edges. The colors attributed are saved and retrieved from XML.
+-   It is possible to manually color spots and edges. The colors attributed are saved and retrieved from XML.
 
-![TrackMate\_ManualColoring.png](/images/pages/TrackMate ManualColoring.png "TrackMate_ManualColoring.png")
+<figure><img src="/images/pages/TrackMate_ManualColoring.png" title="TrackMate_ManualColoring.png" width="400" alt="TrackMate_ManualColoring.png" /><figcaption aria-hidden="true">TrackMate_ManualColoring.png</figcaption></figure>
 
 To use it, select a few cells in TrackScheme and right-click to make the contextual menu appear:
 
-![TrackMate\_ManualColoring\_2.png](/images/pages/TrackMate ManualColoring 2.png "TrackMate_ManualColoring_2.png")
+![](/images/pages/TrackMate ManualColoring 2.png "TrackMate_ManualColoring_2.png")
 
-  - There is now an action to export to [Icy](http://icy.bioimageanalysis.org/) track manager. It generates a XML file that can be opened in the [Icy track manager](http://icy.bioimageanalysis.org/plugin/Track_Manager).
+-   There is now an action to export to [Icy](http://icy.bioimageanalysis.org/) track manager. It generates a XML file that can be opened in the [Icy track manager](http://icy.bioimageanalysis.org/plugin/Track_Manager).
 
-![TrackMate\_ExportToIcy.png](/images/pages/TrackMate ExportToIcy.png "TrackMate_ExportToIcy.png")
+![](/images/pages/TrackMate ExportToIcy.png "TrackMate_ExportToIcy.png")
 
-  - Icy XML track files can be opened in TrackMate. Just point the TrackMate loader plugin to such a file, and its type will be detected and it will be opened in TrackMate.
+-   Icy XML track files can be opened in TrackMate. Just point the TrackMate loader plugin to such a file, and its type will be detected and it will be opened in TrackMate.
 
-![TrackMate\_ImportFromIcy.png](/images/pages/TrackMate ImportFromIcy.png "TrackMate_ImportFromIcy.png")
+![](/images/pages/TrackMate ImportFromIcy.png "TrackMate_ImportFromIcy.png")
 
 We would like to express our thanks to {% include person content='Fab14' %} for his help in developing these two features.
 
-  - A new action allows merging two TrackMate files into one.
+-   A new action allows merging two TrackMate files into one.
 
-![TrackMate\_MergeFiles.png](/images/pages/TrackMate MergeFiles.png "TrackMate_MergeFiles.png")
+![](/images/pages/TrackMate MergeFiles.png "TrackMate_MergeFiles.png")
 
-  - The color scale used to display colored tracks, links and spots can now be manually adjusted. In the display panel of the GUI, double click on the label "color by" and a settings window will open allowing the user to select between manual or automatic scaling. This is great to generate views that are comparable between datasets. This feature is commissioned and offered by Fumio Hayashi, Kobe University.
+-   The color scale used to display colored tracks, links and spots can now be manually adjusted. In the display panel of the GUI, double click on the label "color by" and a settings window will open allowing the user to select between manual or automatic scaling. This is great to generate views that are comparable between datasets. This feature is commissioned and offered by Fumio Hayashi, Kobe University.
 
-![TrackMate\_ManualColorScale.png](/images/pages/TrackMate ManualColorScale.png "TrackMate_ManualColorScale.png")
+![](/images/pages/TrackMate ManualColorScale.png "TrackMate_ManualColorScale.png")
 
-## Minor improvements
+Minor improvements
+------------------
 
-  - The table in the InfoPane of TrackScheme displays the full spot name.
+-   The table in the InfoPane of TrackScheme displays the full spot name.
 
-<!-- end list -->
+<!-- -->
 
-  - Auto-linking mode allows the creation of links backward in time.
+-   Auto-linking mode allows the creation of links backward in time.
 
-<!-- end list -->
+<!-- -->
 
-  - Two new track feature analyzers allow filtering tracks by their spots quality or by their longest gap.
+-   Two new track feature analyzers allow filtering tracks by their spots quality or by their longest gap.
 
-## Bugfixes
+Bugfixes
+--------
 
-  - Fix a potential (and potentially long standing) bug with numerical input on machine using locales different from the US locale.
+-   Fix a potential (and potentially long standing) bug with numerical input on machine using locales different from the US locale.
 
-<!-- end list -->
+<!-- -->
 
-  - Put back the forgotten Manual Tracker.
+-   Put back the forgotten Manual Tracker.
 
-<!-- end list -->
+<!-- -->
 
-  - Save and retrieve the tracker used in the XML file.
+-   Save and retrieve the tracker used in the XML file.
 
-<!-- end list -->
+<!-- -->
 
-  - Fix crash triggered when the specified ROI had points out of the source image bounds.
+-   Fix crash triggered when the specified ROI had points out of the source image bounds.
 
-<!-- end list -->
+<!-- -->
 
-  - Fix crash when saving with a source image not loaded from disk.
+-   Fix crash when saving with a source image not loaded from disk.
 
-<!-- end list -->
+<!-- -->
 
-  - Do not crash when saving unconfigured detector or tracker.
+-   Do not crash when saving unconfigured detector or tracker.
 
-<!-- end list -->
+<!-- -->
 
-  - Many other bugfixes.
+-   Many other bugfixes.
 
 

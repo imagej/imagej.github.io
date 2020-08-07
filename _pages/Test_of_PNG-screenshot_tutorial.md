@@ -7,7 +7,8 @@ categories: Tutorials
 description: test description
 ---
 
-## Test of PNG-screenshot tutorial
+Test of PNG-screenshot tutorial
+-------------------------------
 
 This is a test tutorial.
 

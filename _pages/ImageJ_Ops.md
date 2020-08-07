@@ -11,7 +11,8 @@ description: test description
 
 The central goal is to enable programmers to code an image processing algorithm in the Ops framework, which is then usable as-is from any [SciJava](SciJava )-compatible software project, such as [ImageJ](ImageJ ), [CellProfiler](CellProfiler ), [KNIME](KNIME ), [OMERO](OMERO ) and [Alida](Alida ). {% include toc content='small' %} {% include develop-menu content='tutorials' %}
 
-## Design goals
+Design goals
+------------
 
 Ops has three major design goals:
 
@@ -19,31 +20,34 @@ Ops has three major design goals:
 2.  **Powerful and general.** An op should be able to consist of any number of typed input and output parameters, operating on arbitrary data structures, including images of N dimensions stored in a myriad of different ways: as files on disk, programmatically generated in memory, or in remote databases. Using the powerful [ImgLib2](ImgLib2 ) library achieves this ambitious goal.
 3.  **Very fast.** Even though ImgLib2 is vastly more general than ImageJ 1.x's data model, that generality should not come at the expense of performance. Otherwise, users must pay a time tax to do the same things they could already do in ImageJ 1.x. The ImageJ Ops framework needs to provide a means to override *any* general-but-slow op with a faster-but-more-specific alternative, fully transparently to the user.
 
-## Getting started
+Getting started
+---------------
 
 Start by reading these Jupyter notebooks:
 
-  - [Using ImageJ Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1-Using-ImageJ/2-ImageJ-Ops.ipynb) - to call ops from your scripts.
-  - [Writing Op plugins](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2-Extending-ImageJ/4-Ops.ipynb) - to write your own ops.
+-   [Using ImageJ Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1-Using-ImageJ/2-ImageJ-Ops.ipynb) - to call ops from your scripts.
+-   [Writing Op plugins](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2-Extending-ImageJ/4-Ops.ipynb) - to write your own ops.
 
 Ops are a special type of ImageJ plugin, so a basic understanding of the [SciJava plugin framework](Writing_Plugins ) is strongly recommended.
 
 In addition to cloning the [imagej-ops](https://github.com/imagej/imagej-ops) itself, the following components have useful Ops examples:
 
-  - {% include github org='imagej ' repo='imagej-tutorials ' label='ImageJ-tutorials ' %} - examples of ImageJ plugins using Ops
-  - {% include github org='imagej ' repo='imagej-scripting ' label='ImageJ-scripting ' %} - provides [templates in the Script Editor](Script_Templates )
+-   {% include github org='imagej ' repo='imagej-tutorials ' label='ImageJ-tutorials ' %} - examples of ImageJ plugins using Ops
+-   {% include github org='imagej ' repo='imagej-scripting ' label='ImageJ-scripting ' %} - provides [templates in the Script Editor](Script_Templates )
 
-## Tutorials and workshops
+Tutorials and workshops
+-----------------------
 
-  - [Step-by-step guide: Adding new ops](Adding_new_ops )
-  - [ImageJ Tutorial: Introduction to ImageJ Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1-Using-ImageJ/2-ImageJ-Ops.ipynb)
-  - [Extending ImageJ: Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2-Extending-ImageJ/4-Ops.ipynb)
-  - "Scripting in ImageJ - An introduction to ImageJ Ops" (February 2017 NEUBIAS2020) – [slides](http://imagej.github.io/presentations/2017-02-12-imagej-ops-neubias/#/)
-  - "ImageJ2 scripts: Parameters + ImageJ Ops" (ImageJ conference 2015) – [slides](https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/), [video 1](https://vimeo.com/140098817), [video 2](https://vimeo.com/140098835)
-  - "The ImageJ Ops Framework: Image processing made easy" (January 2015) – [slides](https://imagej.github.io/presentations/2015-01-12-imagej-ops/)
-  - "Intro to ImageJ Ops - Usage and Development" (November 2015) – [slides](http://workshops.imagej.net/IntroToOps.pdf)
+-   [Step-by-step guide: Adding new ops](Adding_new_ops )
+-   [ImageJ Tutorial: Introduction to ImageJ Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1-Using-ImageJ/2-ImageJ-Ops.ipynb)
+-   [Extending ImageJ: Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2-Extending-ImageJ/4-Ops.ipynb)
+-   "Scripting in ImageJ - An introduction to ImageJ Ops" (February 2017 NEUBIAS2020) – [slides](http://imagej.github.io/presentations/2017-02-12-imagej-ops-neubias/#/)
+-   "ImageJ2 scripts: Parameters + ImageJ Ops" (ImageJ conference 2015) – [slides](https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/), [video 1](https://vimeo.com/140098817), [video 2](https://vimeo.com/140098835)
+-   "The ImageJ Ops Framework: Image processing made easy" (January 2015) – [slides](https://imagej.github.io/presentations/2015-01-12-imagej-ops/)
+-   "Intro to ImageJ Ops - Usage and Development" (November 2015) – [slides](http://workshops.imagej.net/IntroToOps.pdf)
 
-## FAQ
+FAQ
+---
 
 ### Why not implement algorithms as "plain old Java" methods?
 
@@ -61,10 +65,8 @@ For the core Ops available, you can go to the {% include javadoc package='?net/i
 
 You can also use the [Script Editor](Script_Editor ) in ImageJ and actively search using Ops itself. For example in groovy language:
 
-``` groovy
-// @OpService ops
-print ops.help()
-```
+    // @OpService ops
+    print ops.help()
 
 in groovy will give a list of every Op signature. The `help` op can also provide information about ops or namespaces; e.g., `ops.help("add")` will return info about available `add` ops.
 
@@ -93,8 +95,9 @@ Then an independent developer comes up with a new way to add the arrays that's 5
 
 Regardless of this proliferation of implementations, a user just has to write `ops.math().add(array1, array2)` and it will work. If they have the guava implementation on their classpath it will be faster, and if they purchase the proprietary implementation it will be faster still. But their code does not have to be adjusted.
 
-## See also
+See also
+--------
 
-  - [2014-04-04 - Announcing ImageJ Ops](2014-04-04_-_Announcing_ImageJ_Ops ) news post
+-   [2014-04-04 - Announcing ImageJ Ops](2014-04-04_-_Announcing_ImageJ_Ops ) news post
 
 

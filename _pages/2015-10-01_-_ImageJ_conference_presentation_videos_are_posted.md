@@ -15,6 +15,6 @@ Today we are pleased to announce that the presentation recordings have been post
 
 {% include big-link link='Presentations ' %}
 
-Many thanks to all the presenters—the conference was a huge success because of your efforts\!
+Many thanks to all the presenters—the conference was a huge success because of your efforts!
 
  

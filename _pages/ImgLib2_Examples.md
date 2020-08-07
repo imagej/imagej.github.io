@@ -14,27 +14,30 @@ description: test description
 {% include info-box name='Examples ' software='ImgLib2 ' author='Stephan Preibisch ' maintainer='Stephan Preibisch, Curtis Rueden ' source=source released='March 2012 ' latest-version='December 2013 ' website=' [ImgLib2 publication](http://bioinformatics.oxfordjournals.org/content/early/2012/09/07/bioinformatics.bts543.abstract) ' %} {% include imglibmenu%}
 
 
-## Jupyter notebook
+Jupyter notebook
+----------------
 
-This tutorial is also available in Jupyter notebook form [here](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/3-Advanced-Usage/2-ImgLib2-in-Detail.ipynb)\!
+This tutorial is also available in Jupyter notebook form [here](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/3-Advanced-Usage/2-ImgLib2-in-Detail.ipynb)!
 
-## Introduction & required files
+Introduction & required files
+-----------------------------
 
 This page shows eight increasingly complex examples of how to program with ImgLib2. The intention of these examples are not to explain ImgLib2 concepts, but rather to give some practical hints how to work with the library and to grasp the principles in a learning-by-doing way.
 
 All examples presented on this page are always entire classes including a main method to run them. Simply copying them into your favorite editor (e.g. the [Script Editor](Script_Editor )) and compile & run them. The required Java libraries (jar files) are part of ImageJ and can be found in *ImageJ.app/jars/*:
 
-  - imglib2 (the core)
-  - imglib2-algorithm (algorithms implemented in ImgLib2)
-  - imglib2-algorithm-gpl (for example 6b and 6c: GPL-licensed algorithms implemented in ImgLib2—ships with [Fiji](Fiji ) only, not plain [ImageJ2](ImageJ2 ), for [licensing](licensing ) reasons)
-  - imglib2-ij (the ImageJ interaction)
-  - imglib2-realtransform (for example 8)
-  - scifio (for reading and writing files)
-  - ij (ImageJ 1.x core, used for display)
+-   imglib2 (the core)
+-   imglib2-algorithm (algorithms implemented in ImgLib2)
+-   imglib2-algorithm-gpl (for example 6b and 6c: GPL-licensed algorithms implemented in ImgLib2—ships with [Fiji](Fiji ) only, not plain [ImageJ2](ImageJ2 ), for [licensing](licensing ) reasons)
+-   imglib2-ij (the ImageJ interaction)
+-   imglib2-realtransform (for example 8)
+-   scifio (for reading and writing files)
+-   ij (ImageJ 1.x core, used for display)
 
 Alternately, you can access the examples from the {% include github org='imglib ' repo='imglib-tutorials ' label='ImgLib-tutorials Git repository ' %}. After cloning the source code, open the project in your favorite IDE. See [Developing ImgLib2](Developing_ImgLib2 ) for further details.
 
-## Example 1 - Opening, creating and displaying images
+Example 1 - Opening, creating and displaying images
+---------------------------------------------------
 
 The first example illustrates the most basic operations of opening, creating, and displaying image content in ImgLib2. It will first focus on entires images (**Img<T>**), but also show how to display subsets only.
 
@@ -42,7 +45,7 @@ The first example illustrates the most basic operations of opening, creating, an
 
 If you are already an ImageJ programmer, you might find it the easiest way to simply wrap an ImageJ image into ImgLib2. Here, the data is not copied, so editing the image in ImgLib2 will also modify the ImageJ ImagePlus.
 
-Internally, we use a compatibility **Img** to represent the data which is as fast as ImageJ but in the case of higher dimensionality (\>2d) is slower than ImgLib2 can do with the **ArrayImg**. Furthermore you are limited in dimensionality (2d-5d), in the type of data (**UnsignedByteType**, **UnsignedShortType**, **FloatType** and **ARGBType**) and maximal size of each 2d-plane (max. 46000x46000).
+Internally, we use a compatibility **Img** to represent the data which is as fast as ImageJ but in the case of higher dimensionality (&gt;2d) is slower than ImgLib2 can do with the **ArrayImg**. Furthermore you are limited in dimensionality (2d-5d), in the type of data (**UnsignedByteType**, **UnsignedShortType**, **FloatType** and **ARGBType**) and maximal size of each 2d-plane (max. 46000x46000).
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example1a.java ' %}
 
@@ -54,7 +57,7 @@ Note that for *(a)* we use an **ArrayImg** to hold the data. This means the data
 
 In *(b)* we use a **CellImg** instead. It partitions the image data into n-dimensional cells each holding only a part of the data. Further, SCIFIO takes care of caching cells in and out of memory as needed, greatly reducing the memory requirement to work with very large images.
 
-The SCIFIO importer also requires **Types** that implement **NativeType**, which means it is able to map the data into a Java basic type array. All available **Types** until now are implementing **NativeType**, if you want to work with some self-developed **Type** it would be easiest to copy the opened **Img** afterwards. Please also note that until now, the only **Img** that supports non-native types is the **ListImg** which stores every pixel as an individual object\!
+The SCIFIO importer also requires **Types** that implement **NativeType**, which means it is able to map the data into a Java basic type array. All available **Types** until now are implementing **NativeType**, if you want to work with some self-developed **Type** it would be easiest to copy the opened **Img** afterwards. Please also note that until now, the only **Img** that supports non-native types is the **ListImg** which stores every pixel as an individual object!
 
 **Important**: it does not matter which type of **Img** you use to hold the data as we will use **Iterators** and **RandomAccesses** to access the image content. It might be, however, important if you work on two **Img** at the same time using **Iterators**, see Example2.
 
@@ -78,11 +81,12 @@ A **View** almost behaves similar to an **Img**, and in fact they share importan
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example1d.java ' %}
 
-## Example 2 - How to use Cursor, RandomAccess and Type
+Example 2 - How to use Cursor, RandomAccess and Type
+----------------------------------------------------
 
 The following examples illustrate how to access pixels using **Cursor** and **RandomAccess**, their basic properties, and how to modify pixel values using **Type**.
 
-Accessing pixels using a **Cursor** means to iterate all pixels in a way similar to iterating Java collections. However, a **Cursor** only ensures to visit each pixel exactly once, the order of iteration is not fixed in order to optimize the speed of iteration. This implies that that the order of iteration on two different **Img** is not necessarily the same, see [ example 2b](ImgLib2_Examples#Example_2b_-_Duplicating_an_Img_using_a_different_ImgFactory )\! **Cursors** can be created by any object that implements **IterableInterval**, such as an **Img**. **Views** that are not infinite can be made iterable (see example 2c). *Note that in general a **Cursor** has significantly higher performance than a **RandomAccess** and should therefore be given preference if possible*.
+Accessing pixels using a **Cursor** means to iterate all pixels in a way similar to iterating Java collections. However, a **Cursor** only ensures to visit each pixel exactly once, the order of iteration is not fixed in order to optimize the speed of iteration. This implies that that the order of iteration on two different **Img** is not necessarily the same, see [ example 2b](ImgLib2_Examples#Example_2b_-_Duplicating_an_Img_using_a_different_ImgFactory )! **Cursors** can be created by any object that implements **IterableInterval**, such as an **Img**. **Views** that are not infinite can be made iterable (see example 2c). *Note that in general a **Cursor** has significantly higher performance than a **RandomAccess** and should therefore be given preference if possible*.
 
 In contrast to iterating image data, a **RandomAccess** can be placed at arbitrary locations. It is possible to set them to a specific n-dimensional coordinate or move them relative to their current position. Note that relative movements are usually more performant. A **RandomAccess** can be created by any object that implements **RandomAccessible**, like an **Img** or a **View**.
 
@@ -92,34 +96,28 @@ The **Sampler** interface implemented by **Cursor** and **RandomAccess** provide
 
 Note that **IterableInterval** implements the java.lang.Iterable interface, which means it is compatible to specialized Java language constructs:
 
-``` java
-// add 5 to every pixel
-for ( UnsignedByteType type : img )
-    type.add( 5 );
-```
+    // add 5 to every pixel
+    for ( UnsignedByteType type : img )
+        type.add( 5 );
 
 ### Example 2a - Duplicating an Img using a generic method
 
 The goal of this example is to make a copy of an existing **Img**. For this task it is sufficient to employ **Cursors**. The order of iteration for both **Img**'s will be the same as they are instantiated using the same **ImgFactory**. It is possible to test if two **IterableInterval** have the same iteration order:
 
-``` java
-boolean sameIterationOrder =
-    interval1.iterationOrder().equals( interval2.iterationOrder() );
-```
+    boolean sameIterationOrder =
+        interval1.iterationOrder().equals( interval2.iterationOrder() );
 
 The copy method itself is a generic method, it will work on any kind of **Type**. In this particular case it works on a **FloatType**, but would also work on anything else like for example a **ComplexDoubleType**. The declaration of the generic type is done in the method declaration:
 
-``` java
-public < T extends Type< T > > Img< T > copyImage( ... )
-```
+    public < T extends Type< T > > Img< T > copyImage( ... )
 
-**\< T extends Type\< T \> \>** basically means that **T** can be anything that extends **Type**. These can be final implementations such as **FloatType** or also intermediate interfaces such as **RealType**. This, however, also means that in the method body only operations supported by **Type** will be available. Note that the method returns a **T**, which also means that in the constructor from which we call method it will also return an **Img<FloatType>** as we provide it with one.
+**&lt; T extends Type&lt; T &gt; &gt;** basically means that **T** can be anything that extends **Type**. These can be final implementations such as **FloatType** or also intermediate interfaces such as **RealType**. This, however, also means that in the method body only operations supported by **Type** will be available. Note that the method returns a **T**, which also means that in the constructor from which we call method it will also return an **Img<FloatType>** as we provide it with one.
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example2a.java ' %}
 
 ### Example 2b - Duplicating an Img using a different ImgFactory
 
-<span style="color:#FF0000">**WARNING:** The **copyImageWrong** method in this example makes a mistake on purpose\!</span> It intends to show that the iteration order of **Cursors** is important to consider. The goal is to copy the content of an **ArrayImg** (i.e. an **Img** that was created using an **ArrayImgFactory**) into a **CellImg**. Using only **Cursors** for both images will have a wrong result as an **ArrayImg** and a **CellImg** have different iteration orders. An **ArrayImg** is iterated linearly, while a **CellImg** is iterate cell-by-cell, but linearly within each cell.
+<span style="color:#FF0000">**WARNING:** The **copyImageWrong** method in this example makes a mistake on purpose!</span> It intends to show that the iteration order of **Cursors** is important to consider. The goal is to copy the content of an **ArrayImg** (i.e. an **Img** that was created using an **ArrayImgFactory**) into a **CellImg**. Using only **Cursors** for both images will have a wrong result as an **ArrayImg** and a **CellImg** have different iteration orders. An **ArrayImg** is iterated linearly, while a **CellImg** is iterate cell-by-cell, but linearly within each cell.
 
 <img src="/images/pages/ImgLib2example2b.png" width="780"/> *Shows the result if two Cursors are used that have a different iteration order. Here we are wrongly copying an ArrayImg (left) into a CellImg (right).*
 
@@ -139,15 +137,16 @@ As the *target* needs to be an **IterableInterval**, it is more confined. This, 
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example2c.java ' %}
 
-## Example 3 - Writing generic algorithms
+Example 3 - Writing generic algorithms
+--------------------------------------
 
 Examples 1 and 2 tried to introduce important tools you need in order to implement algorithms with ImgLib2. This example will show three generic implementations of algorithms computing the [ min/max](ImgLib2_Examples#Example_3a_-_Min/Max_search ), average as well as the center of mass.
 
 The core idea is to implement algorithms as generic as possible in order to maximize code-reusability. In general, a good way to start is to think: *What are the minimal requirements in order to implement algorithm X?* This applies to all of the following three concepts:
 
-  - **Type:** You should always use the most abstract **Type** possible, i.e. the one that just offers enough operations to perform your goal. In this way, the algorithm will be able to run on **Types** you might not even have thought about when implementing it. A good example is the min\&max search in example 3a. Instead of implementing it for **FloatType** or the more abstract **RealType**, we implement it for the even more abstract **Comparable & Type**.
-  - **Image data:** Every algorithm should only demand those interfaces that it requires, not specific implementations of it like **Img**. You might require **RandomAccessible** (infinite), **RandomAccessibleInterval** (finite), **Iterable** (values without location), **IterableInterval** (values and their location) or their corresponding interfaces for *real-valued locations* **RealRandomAccessible**, **RealRandomAccessibleRealInterval** and **IterableRealInterval**. Note that you can concatenate them if you need more than one property.
-  - **Dimensionality:** Usually there is no reason to restrict an algorithm to a certain dimensionality (like only for two-dimensional images), at least we could not really come up with an convincing example  
+-   **Type:** You should always use the most abstract **Type** possible, i.e. the one that just offers enough operations to perform your goal. In this way, the algorithm will be able to run on **Types** you might not even have thought about when implementing it. A good example is the min&max search in example 3a. Instead of implementing it for **FloatType** or the more abstract **RealType**, we implement it for the even more abstract **Comparable & Type**.
+-   **Image data:** Every algorithm should only demand those interfaces that it requires, not specific implementations of it like **Img**. You might require **RandomAccessible** (infinite), **RandomAccessibleInterval** (finite), **Iterable** (values without location), **IterableInterval** (values and their location) or their corresponding interfaces for *real-valued locations* **RealRandomAccessible**, **RealRandomAccessibleRealInterval** and **IterableRealInterval**. Note that you can concatenate them if you need more than one property.
+-   **Dimensionality:** Usually there is no reason to restrict an algorithm to a certain dimensionality (like only for two-dimensional images), at least we could not really come up with an convincing example  
     *If the application or plugin your are developing addresses a certain dimensionality (e.g. stitching of panorama photos) it is understandable that you do not want to implement everything n-dimensionally. But try to implement as many as possible of the smaller algorithm you are using as generic, n-dimensional methods. For example, everything that requires only to **iterate** the data is usually inherently n-dimensional.*
 
 Following those ideas, your newly implemented algorithm will be applicable to any kind of data and dimensionality it is defined for, not only a very small domain you are currently working with. Also note that quite often this actually makes the implementation simpler.
@@ -180,12 +179,13 @@ In a very similar way one can compute the average intensity for image data. Note
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example3b.java ' %}
 
-## Example 4 - Specialized iterables
+Example 4 - Specialized iterables
+---------------------------------
 
 Example 4 will focus on how to work with specialized **iterables**. They are especially useful when performing operations in the local neighborhood of many pixels - like finding local minima/maxima, texture analysis, convolution with non-separable, non-linear filters and many more. One elegant solution is to write a specialized **Iterable** that will iterate all pixels in the local neighborhood. We implemented two examples:
 
-  - A **HyperSphere** that will iterate a n-dimensional sphere with a given radius at a defined location.
-  - A **LocalNeighborhood** that will iterate n-dimensionally all pixels adjacent to a certain location, but skip the central pixel (this corresponds to an both neighbors in 1d, an 8-neighborhood in 2d, a 26-neighborhood in 3d, and so on ...)
+-   A **HyperSphere** that will iterate a n-dimensional sphere with a given radius at a defined location.
+-   A **LocalNeighborhood** that will iterate n-dimensionally all pixels adjacent to a certain location, but skip the central pixel (this corresponds to an both neighbors in 1d, an 8-neighborhood in 2d, a 26-neighborhood in 3d, and so on ...)
 
 ### Example 4a - Drawing a sphere full of spheres
 
@@ -226,7 +226,8 @@ Please note as well that if one would increase the radius of the **RectangleShap
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example4b.java ' %}
 
-## Example 5 - Out of bounds
+Example 5 - Out of bounds
+-------------------------
 
 Many algorithms like *convolutions* require to access pixels outside of an **Interval**, i.e. also pixels outside of an image. In ImgLib2 this is handled using **Views** which convert a **RandomAccessibleInterval** into an infinite **RandomAccessible** using an **OutOfBoundsStrategy**. Those infinite **RandomAccessibles** are able to return pixel values at any arbitrary location.
 
@@ -238,7 +239,8 @@ Which **OutOfBoundsStrategies** to use depends on task you want to perform. For 
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example5.java ' %}
 
-## Example 6 - Basic built-in algorithms
+Example 6 - Basic built-in algorithms
+-------------------------------------
 
 ImgLib2 contains a growing number of built-in standard algorithms. In this section, we will show some of those, illustrate how to use them and give some examples of what it might be used for.
 
@@ -288,7 +290,7 @@ In image processing it is sometimes necessary to convolve images with non-separa
 
 <img src="/images/pages/FourierConvolution.jpg" width="780"/> *Shows the effect of the Fourier convolution. The left image was convolved with the kernel depicted in the lower left corner, the right panel shows the convolved image. Note that the computation speed does not depend on the size or the shape of the kernel.*
 
-<span style="color:#FF0000">*Important: This source code is only GPLv2\!*</span>
+<span style="color:#FF0000">*Important: This source code is only GPLv2!*</span>
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example6b.java ' %}
 
@@ -306,17 +308,18 @@ The final convolution of the inverse template with the image is performed using 
 
 <img src="/images/pages/Fourier.jpg" width="780"/> *Shows the result and intermediate steps of the template matching using the Fourier space. In the upper panel you see the input image as well as the template that we use from matching. Below we show four different views of the Fast Fourier Transform of the template: the power spectrum, the phase spectrum, the real values, and the imaginary values. In the lower panel you see the result of the convolution of the inverse template with the image. The position where the template was located in the image is significantly visible. In the bottom right corner you see the inverse FFT of the inverse kernel.*
 
-<span style="color:#FF0000">*Important: This source code is only GPLv2\!*</span>
+<span style="color:#FF0000">*Important: This source code is only GPLv2!*</span>
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example6c.java ' %}
 
-## Example 7 - Interpolation
+Example 7 - Interpolation
+-------------------------
 
 Interpolation is a basic operation required in many image processing tasks. In the terminology of ImgLib2 it means to convert a **RandomAccessible** into a **RealRandomAccessible** which is able to create a **RealRandomAccess**. It can be positioned at real coordinates instead of only integer coordinates and a return a value for each real location. Currently, three interpolation schemes are available for ImgLib2:
 
-  - **Nearest neighbor interpolation** (also for available for any kind of data that can return a nearest neighbor like sparse datasets)
-  - **Linear interpolation**
-  - **Lanczos interpolation**
+-   **Nearest neighbor interpolation** (also for available for any kind of data that can return a nearest neighbor like sparse datasets)
+-   **Linear interpolation**
+-   **Lanczos interpolation**
 
 In the example we magnify a given real interval in the **RealRandomAccessible** which is based on the interpolation on an **Img** and compare the results of all three interpolation methods.
 
@@ -324,7 +327,8 @@ In the example we magnify a given real interval in the **RealRandomAccessible** 
 
 {% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example7.java ' %}
 
-## Example 8 - Working with sparse data
+Example 8 - Working with sparse data
+------------------------------------
 
 ImgLib2 supports sparsely sampled data, i.e. collections of locations together with their value. Such datasets typically implement the **IterableRealInterval** interface, which means they can be iterated and have real-valued locations in n-dimensional space. Currently ImgLib2 supports to store such collections either as list (**RealPointSampleList**) or **KDTree**. The **RealPointSampleList** can be iterated, whereas the **KDTree** additionally supports three efficient ways of searching for nearest neighboring points in the n-dimensional space (**NearestNeighborSearch**, **KNearestNeighborSearch**, and **RadiusNeighborSearch**).
 

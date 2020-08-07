@@ -13,22 +13,24 @@ Plugin for finding and/or analyzing colocalization of bright intensity spots (ce
 
 For help with plugin installation, see [instructions](https://github.com/ekatrukha/ComDet/wiki/How-to-install-plugin).
 
-## How to use plugin
+How to use plugin
+-----------------
 
 Open the image to be analyzed in ImageJ. In general, the plugin works in two modes:
 
-  - particles detection (whole image or ROI)
-  - particles detection and colocalization analysis (whole image or ROI).
+-   particles detection (whole image or ROI)
+-   particles detection and colocalization analysis (whole image or ROI).
 
 For **colocalization** you need a [color composite image](https://imagej.net/Color_Image_Processing#Color_Composite_Images) containing **multiple color channels (two or more)**. Plugin auto-detects the number of channels and if it is more than one then the plugin will automatically switch to the second mode (see below).
 
 The plugin works with time/z-stacks.
 
-Launch the detection by choosing *Plugins-\>ComDet-\>Detect Particles*.
+Launch the detection by choosing *Plugins-&gt;ComDet-&gt;Detect Particles*.
 
 http://katpyxa.info/software/ComDet/ComDet_open_v.0.5.0.png
 
-## Simple detection (1 channel)
+Simple detection (1 channel)
+----------------------------
 
 If the image is not multi-channel image, the following dialog window will appear:
 
@@ -50,7 +52,8 @@ http://katpyxa.info/software/ComDet/ComDet_detection_before_after_v2.png
 
 Also it will provide you *Results* table containing particles' coordinates (see below) and *Summary* table. I recommend to play with parameters to get a nice detection result.
 
-## Detection in ROI
+Detection in ROI
+----------------
 
 If you want detection to be performed in some specific region instead of whole image, select some ROI using any ImageJ ROI selection tools **before** launching plugin:
 
@@ -60,7 +63,8 @@ In this case only particles in that ROI will be detected (also supported in "*Pr
 
 http://katpyxa.info/software/ComDet/ComDet_ROI_after_v2.png
 
-## Detection and colocalization in multi-channel image (two or more channels)
+Detection and colocalization in multi-channel image (two or more channels)
+--------------------------------------------------------------------------
 
 If your image contains multiple channels then after pressing *Detect Particles* the dialog will look differently:
 
@@ -70,7 +74,7 @@ First, the plugin will show the window above with general setup and later it wil
 
 There is an additional parameter in case of colocalization: maximum distance between spots' centers. It defines at what distance (in pixels) two spots in different channels are considered to be localized.
 
-**So colocalization is based on the distance between spots' centers\!**
+**So colocalization is based on the distance between spots' centers!**
 
 After you press "OK", a series of windows for detection parameters for each channel will pop-up:
 
@@ -86,7 +90,8 @@ Also *Add to ROI Manager* option is available. ROIs will have names in the forma
 
 *Only ROI detection* mode (as described above) also automatically works in this case.
 
-## Results table
+Results table
+-------------
 
 Here is example of *Results* table (*Summary* table is kind of self-explanatory).
 
@@ -107,7 +112,8 @@ Columns are:
 11. *ColocIndChX* = corresponds to the unique detection index (last column) in Results table, corresponding to the particle in another channel (if colocalized). Zero otherwise.
 12. *Index* = unique index for each detection.
 
-## Additional info
+Additional info
+---------------
 
 For detection explanation, see [How does detection work?](https://github.com/ekatrukha/ComDet/wiki/How-does-detection-work%3F) Also [updates history](https://github.com/ekatrukha/ComDet/wiki/Updates-history) is available.
 

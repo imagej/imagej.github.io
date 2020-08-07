@@ -9,7 +9,8 @@ description: test description
 
 <b> This is a very incomplete DRAFT </b>
 
-## The test machine
+The test machine
+----------------
 
 The computer used for these tests is the following:
 
@@ -19,7 +20,8 @@ The computer used for these tests is the following:
 ` Memory  24 GB 1333 MHz DDR3 ECC`  
 ` Software  Mac OS X Lion 10.7.5 (11G63)`
 
-## Time of execution.
+Time of execution.
+------------------
 
 The tests reported here were run on an Apple MacPro, 2 x 2.66 GHz 6-Core Intel Xeon, 24 Go 1333 MHz DDR3, running Mac OS X v10.7.5, with Java 1.6. The detectors instantiated were tamed to use only 1 thread. Unless indicated, the median filter and the sub-pixel localization were not done.
 
@@ -30,7 +32,7 @@ The tests reported here were run on an Apple MacPro, 2 x 2.66 GHz 6-Core Intel X
 For a *uint16* image, varying its size, containing 200 gaussian spots of radius 3 (everything is in pixel units).
 
 | N (pixels) | Image size | DoG detector time (ms) | LoG detector time (ms) |
-| :--------- | ---------- | ---------------------- | ---------------------- |
+|:-----------|------------|------------------------|------------------------|
 | 256        | 16x16      | 3.0                    | 4.8                    |
 | 1024       | 32x32      | 2.95                   | 4.3                    |
 | 4096       | 64x64      | 3.95                   | 4.35                   |
@@ -50,7 +52,7 @@ The LoG detector operates in Fourier space, and because of the Fourier transform
 #### Processing time for a 3D image as a function of its size.
 
 | N (pixels) | Image size  | DoG detector time (ms) | LoG detector time (ms) |
-| :--------- | ----------- | ---------------------- | ---------------------- |
+|:-----------|-------------|------------------------|------------------------|
 | 4096       | 16x16x16    | 8.7                    | 24.7                   |
 | 32768      | 32x32x32    | 23.5                   | 38.5                   |
 | 262144     | 64x64x64    | 129.3                  | 159.2                  |
@@ -68,9 +70,9 @@ Interestingly, the LoG detector seems to become the slowest at intermediate size
 
 We used a 1024x1024 *uint16* image, with 200 gaussian spots, the size of which we varied. The detector was tuned to this radius.
 
-![TrackMate\_DoGandLoGTimeVsRadius2D.png](/images/pages/TrackMate DoGandLoGTimeVsRadius2D.png "TrackMate_DoGandLoGTimeVsRadius2D.png")
+<figure><img src="/images/pages/TrackMate_DoGandLoGTimeVsRadius2D.png" title="TrackMate_DoGandLoGTimeVsRadius2D.png" width="400" alt="TrackMate_DoGandLoGTimeVsRadius2D.png" /><figcaption aria-hidden="true">TrackMate_DoGandLoGTimeVsRadius2D.png</figcaption></figure>
 
-We find that for the DoG detector, the processing time to increase linearly with the specified radius, following approximately *t (ms) = 20.5 x radius + 260*. As the difference-of-gaussians is calculated in the direct space, a marked increase is expected as there is more pixels to iterate over. Without optimization, we should however have found the time to be increasing with the square of the radius, and find the same dependence that for the image size. Thanks to the clever implementation of gaussian filtering\[1\], this is avoided.
+We find that for the DoG detector, the processing time to increase linearly with the specified radius, following approximately *t (ms) = 20.5 x radius + 260*. As the difference-of-gaussians is calculated in the direct space, a marked increase is expected as there is more pixels to iterate over. Without optimization, we should however have found the time to be increasing with the square of the radius, and find the same dependence that for the image size. Thanks to the clever implementation of gaussian filtering[1], this is avoided.
 
 The LoG detector shows a near-constant processing time, which makes it desirable for spots larger than 2 pixels in radius. This is due to the way we compute the convolution which is explained below.
 
@@ -88,9 +90,9 @@ The LoG performance clearly highlights the 0-padding used because of the Fourier
 
 This stepwise evolution makes it slightly harder to choose between LoG and DoG detectors based on performance. As a crude rule of thumb we will remember that
 
-  - The LoG detector outperforms the DoG detector in 2D for radiuses larger than 2 pixels.
-  - The LoG detector outperforms the DoG detector in 3D for radiuses larger than 4 pixels.
+-   The LoG detector outperforms the DoG detector in 2D for radiuses larger than 2 pixels.
+-   The LoG detector outperforms the DoG detector in 3D for radiuses larger than 4 pixels.
 
 <references/>
 
-1.  https://github.com/imagej/imglib/blob/master/algorithms/core/src/main/java/net/imglib2/algorithm/gauss3/Gauss3.java
+[1] https://github.com/imagej/imglib/blob/master/algorithms/core/src/main/java/net/imglib2/algorithm/gauss3/Gauss3.java

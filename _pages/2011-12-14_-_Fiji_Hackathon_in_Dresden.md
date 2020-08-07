@@ -9,20 +9,22 @@ description: test description
 
 A great [Fiji](Fiji ) hackathon took place between Saturday, December 10 and Sunday, December 18, 2011 at the [MPI-CBG](http://www.mpi-cbg.de/), which besides hosting also provided generous sponsoring of food and accommodation, and again brought together biologists and developers associated with the various bioimage analysis projects.
 
-## Topic
+Topic
+-----
 
 The topic was Integration, including: [Fiji](Fiji ) + [ImageJ2](ImageJ2 ), [OMERO](OMERO ) + [ImageJ](ImageJ ), [KNIME](KNIME ) + [ImageJ](ImageJ ), [Icy](Icy ) + [ImageJ](ImageJ ), [OMERO](OMERO ) + [Icy](Icy ), [KNIME](KNIME ) + [OMERO](OMERO ) and more.
 
-This is the hackathon where the [SciJava](SciJava ) idea was originally born\!
+This is the hackathon where the [SciJava](SciJava ) idea was originally born!
 
-## Participants
+Participants
+------------
 
 There were 25 people participating at various times, though only a few stayed for the entire duration.
 
 Here is the list of participants together with their primary affiliation:
 
 |                        |                                                               |
-| ---------------------- | ------------------------------------------------------------- |
+|------------------------|---------------------------------------------------------------|
 | Kevin Eliceiri         | [ImageJ2](ImageJ2 )                                 |
 | Curtis Rueden          | [IJ2](IJ2 )/[Fiji](Fiji )                 |
 | Barry DeZonia          | [IJ2](IJ2 )                                         |
@@ -49,7 +51,8 @@ Here is the list of participants together with their primary affiliation:
 | Jiri Matas             | Computer Vision (Prague) special guest                        |
 | Boris Flach            | Computer Vision (Prague) special guest                        |
 
-## Timeline
+Timeline
+--------
 
 The following chart illustrates when everyone was present:
 
@@ -138,18 +141,19 @@ PlotData=
 
 \* Dresden locals include:
 
-  - Fernando Carrilo
-  - Michael Doube
-  - Tom Kazimiers
-  - Alex Krull
-  - Tobias Pietzsch
-  - Peter Pitrone
-  - Daniel James White
-  - Pavel Tomancak
+-   Fernando Carrilo
+-   Michael Doube
+-   Tom Kazimiers
+-   Alex Krull
+-   Tobias Pietzsch
+-   Peter Pitrone
+-   Daniel James White
+-   Pavel Tomancak
 
 Some locals were not present at the hackathon on weekends.
 
-## Photos
+Photos
+------
 
 <File:Fiji_Hackathon_Galleria5.jpg> <File:Fiji_Hackathon_Galleria4.jpg> <File:Fiji_Hackathon_Galleria3.jpg> <File:Fiji_Hackathon_Galleria2.jpg> <File:Fiji_Hackathon_Galeria.jpg> <File:Fiji_Hackathon_thinking.jpg> <File:Fiji_Hackathon_thinking2.jpg> <File:Fiji_Hackathon_hacking.jpg> <File:Fiji_Hackathon_Curtis.jpg> <File:Fiji_Hackathon_Josh2.jpg> <File:Fiji_Hackathon_Josh_Johannes.jpg> <File:Fiji_Hackathon_Melissa.jpg> <File:Fiji_Hackathon_Dan_Jurgen.jpg> <File:Fiji_Hackathon_Icy.jpg> <File:Fiji_Hackathon_Josh4.jpg> <File:Fiji_Hackathon_Josh3.jpg> <File:Fiji_Hackathon_Josh1.jpg> <File:Fiji_Hackathon_Kevin.jpg> <File:Fiji_Hackathon_Ferdi.jpg> <File:Fiji_Hackathon_Jean-Marie.jpg>
 

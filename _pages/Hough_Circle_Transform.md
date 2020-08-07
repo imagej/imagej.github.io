@@ -21,17 +21,19 @@ description: test description
 {% endcapture %}
 {% include info-box name='Hough Circle Transform ' software='plugin ' update-site='UCB Vision Sciences ' author=author maintainer=maintainer source=source released='February 4<sup>th</sup>, 2017 ' latest-version='September 21<sup>st</sup>, 2018 (v1.0.0) ' status='stable, active ' category='[Analysis](Category_Analysis ), [Feature Extraction](Category_Feature_Extraction ) ' %}
 
-## Introduction
+Introduction
+------------
 
 A {% include wikipedia title='Circle Hough Transform' text='Hough circle transform'%} is an image transform that allows for circular objects to be extracted from an image, even if the circle is incomplete. The transform is also selective for circles, and will generally ignore elongated ellipses. The transform effectively searches for objects with a high degree of radial symmetry, with each degree of symmetry receiving one "vote" in the search space. By searching a 3D Hough search space, the transform can measure the centroid and radius of each circlular object in an image.
 
-\[\[[File:Hough\_Intro2.png|thumb|1000px|center](File_Hough_Intro2.png%7Cthumb%7C1000px%7Ccenter)|**Hough circle transform is specific to circular objects.** *Left Panel:* This panel shown the input data for the Hough circle transform. The data includes (clockwise from top left) a circle (radius 37 pixels), a square (length 37 pixels), an ellipse (minor axis 37 pixels), and a sectored circle (radius 37 pixels).
+\[\[<File:Hough_Intro2.png%7Cthumb%7C1000px%7Ccenter>\|**Hough circle transform is specific to circular objects.** *Left Panel:* This panel shown the input data for the Hough circle transform. The data includes (clockwise from top left) a circle (radius 37 pixels), a square (length 37 pixels), an ellipse (minor axis 37 pixels), and a sectored circle (radius 37 pixels).
 
 *Right Panel:* This panel shows the output of a 24 step Hough circle transform. As you can see, the circle and the sectored circle converge to local maxima, while the square and ellipse do not, show the specificity of the transform for circular objects.\]\]
 
 The method works by transforming an image around in a circle. Each time a transformed pixel with an intensity greater than zero lands on a Cartesian coordinate, that coordinate gets one vote. As the image continues to be transformed in a circle of a given radius, if a circle in the image has the same radius, then votes will accumulate at the centroid of this circle. Therefore, by finding the maxima in the transform (points with the highest number of votes) you can find the centroid of circles within the image. A Hough circle transform can also be used to find circles of an unknown radius by searching a 3D transform space, where the the third dimension is the range of radii to be tested.
 
-## Image Processing Workflow
+Image Processing Workflow
+-------------------------
 
 The Hough circle transform finds circles based on the rotational symmetry of the perimeter. Therefore, the data needs to be converted to this format for the transform to work.
 
@@ -47,7 +49,7 @@ If the circular objects are solid rather than hollow, take the derivative of the
 
 ### Step 2: Threshold
 
-The algorithm does not weight the transform based on the intensity of the pixels, as this would result in bright, non-circular objects getting a very high score. Therefore, any pixel with an intensity \> 0 is given one vote per transform. This means that any pixel you do not want to be part of the transform needs to be set to zero, which is best done by thresholding the image and creating a mask by running: {% include bc content='Image | Adjust | Threshold'%}. After choosing the right threshold for the data press "Apply" to create a mask with an inverting LUT (0 is white, 255 is black). The LUT can be changed back to a normal gray-scale by going to {% include bc content='Image | Lookup Tables | Grays'%}.
+The algorithm does not weight the transform based on the intensity of the pixels, as this would result in bright, non-circular objects getting a very high score. Therefore, any pixel with an intensity &gt; 0 is given one vote per transform. This means that any pixel you do not want to be part of the transform needs to be set to zero, which is best done by thresholding the image and creating a mask by running: {% include bc content='Image | Adjust | Threshold'%}. After choosing the right threshold for the data press "Apply" to create a mask with an inverting LUT (0 is white, 255 is black). The LUT can be changed back to a normal gray-scale by going to {% include bc content='Image | Lookup Tables | Grays'%}.
 
 ### Step 3: Run the Hough Transform
 
@@ -55,7 +57,8 @@ Now you are ready to run the Hough transform (see below for detailed information
 
 If the circle found is correct, then gradually reduce the threshold until all the circles in the image are found. This will give you the upper threshold bound. Continue to decrease the threshold until an errant circle is detected, this will give you the lower threshold bound. Set the threshold between the upper and lower bounds, and then run the transform on the full data set.
 
-## Running the Hough Circle Transform Plugin
+Running the Hough Circle Transform Plugin
+-----------------------------------------
 
 The plugin runs on the current active image, and can also process stacks, but it cannot handle hyperstacks. The plugin is also recordable for macro implementation, and multi-threaded to fast searching on the 3D Hough space. The plugin can be cancelled at any time by either pressing the "Cancel" button in the GUI or pressing the "Escape" key.
 
@@ -79,7 +82,7 @@ This mode uses the minimal number of user input values necessary to run the tran
 
 This mode is intended for a more fine tuned search, such as to better adapt the search space to your data, and/or increase the speed of the Hough transform. In this mode, all of the available search parameters are available, and the option to see the Raw Hough transform output also becomes available.
 
------
+------------------------------------------------------------------------
 
 ### Search Parameters
 
@@ -105,8 +108,8 @@ NOTE: This option is only available in advanced mode. In easy mode, this value d
 
 This option sets the minimum cutoff for the Hough score (i.e. ratio of votes) that a circle can have to count as a valid object. This value is described as the following ratio:
 
-  -   
-    $$\text{Hough score}=\left ( \frac{\text{number of votes}}{\text{transform resolution}} \right )$$
+  
+$$$\\text{Hough score}=\\left ( \\frac{\\text{number of votes}}{\\text{transform resolution}} \\right )$$$
 
 Since the maximum number of votes a circle can receive is the transform resolution (i.e. every transform resulted in a vote), the highest score a circle can receive is 1.0. Thus, the lower the score threshold, the more tolerant the search will be of incomplete and/or imperfect circles.
 
@@ -116,7 +119,7 @@ This option sets the number of steps in each circle transform. To reduce unneces
 
 NOTE: This option is only available in advanced mode. In easy mode, this value defaults to 1000.
 
-\[\[<File:Resolution> Figure.png|thumb|1000px|center|**Effect of transform resolution on distinguishing various n-gons.** *Panel 1* shows a circle and three regular polygons: a 4-gon, 8-gon, and 16-gon. *Panel 2* shows a Hough circle transform with four steps. Since all the shapes are radially symmetrical with 90° rotations, they all have an equal peak score at their centroids.
+\[\[<File:Resolution> Figure.png\|thumb\|1000px\|center\|**Effect of transform resolution on distinguishing various n-gons.** *Panel 1* shows a circle and three regular polygons: a 4-gon, 8-gon, and 16-gon. *Panel 2* shows a Hough circle transform with four steps. Since all the shapes are radially symmetrical with 90° rotations, they all have an equal peak score at their centroids.
 
 *Panel 3* shows a Hough circle transform with eight steps. Since the circle, 8-gon, and 16-gon radially symmetrical with 45° rotations, they all have an equal peak score at their centroids. These shapes have a higher score at their centroids than the 4-gon, because it lacks 45° radial symmetry.
 
@@ -132,7 +135,7 @@ By default, this ratio is set to be one, meaning that a circle of the same size 
 
 NOTE: This option is only available in advanced mode. In easy mode, this value defaults to 1.0.
 
-\[\[<File:Clear> Ratio2.png|thumb|1000px|center|**Adjusting the clear radius ratio to find overlapping circles.**
+\[\[<File:Clear> Ratio2.png\|thumb\|1000px\|center\|**Adjusting the clear radius ratio to find overlapping circles.**
 
 The left panel shows the input data with a single circle on top and a pair of overlapping circles below. The next panel shows the resulting Hough circle transform (24 steps).
 
@@ -150,7 +153,7 @@ While speeding up the algorithm, the trade-off is that the transform steps are d
 
 NOTE: This option is only available in advanced mode. In easy mode, this option is selected by default.
 
------
+------------------------------------------------------------------------
 
 ### Local Search Parameters
 
@@ -166,7 +169,7 @@ The local search algorithm is comprised of three sub-algorithms, depending on th
 
 '''Partial Local - ''' If the number of circular objects in the previous frame is less than the minimum number of objects set but greater than 0, then the algorithm will use a a hybrid search. A full Hough transform will be performed such that any missing circles will now be found. However, so speed up the search, the algorithm will first search locally within the Hough space for the same circular objects found in the previous frame, and then will search the entire Hough space for any remaining circular objects.
 
-\[\[<File:Local> Search.png|thumb|1000px|center|**Local versus full Hough transform.**
+\[\[<File:Local> Search.png\|thumb\|1000px\|center\|**Local versus full Hough transform.**
 
 The left panel shows the input data with a single circle in the center of the image with a radius of 50 pixels. The center panel shows orthogonal projections of the full 3D Hough space. The radius search range was 10-110 pixels. The left panel shows a local Hough transform of the same circle, with a search area of 20x20 pixels, and a radius search range of +/- 10 pixels of the original circle radius. NOTE: In Hough space, the Z-dimension is the radius of the transform.\]\]
 
@@ -186,7 +189,7 @@ This value allows you to set the x,y axis search radius. For example, if in your
 
 NOTE: This option is only available in advanced mode. In easy mode, this value defaults to the minimum search radius.
 
------
+------------------------------------------------------------------------
 
 ### Output Options:
 
@@ -222,7 +225,8 @@ This output is identical to the radius output (see above), however the pixel int
 
 If no circles were found in a frame, than that frame is excluded from the results table.
 
-## Installing the Plugin
+Installing the Plugin
+---------------------
 
 The Hough Circle Transform plugin is part of the [UCB Vision Sciences](UCB_Vision_Sciences ) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites ) the UCB Vision Sciences update site:
 
@@ -238,21 +242,24 @@ You should now find the plugin under the sub-menu {% include bc content='Plugins
 
 NOTE: Hough Circle Transform is only one of the plugins included in the [UCB Vision Sciences](UCB_Vision_Sciences ) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
-## Acknowledgements
+Acknowledgements
+----------------
 
 This plugin is a modified version of the Hough circle transform implemented by [Hemerson Pistori and Eduardo Rocha Costa](https://imagej.nih.gov/ij/plugins/hough-circles.html). The transform algorithm was based off of an original implementation by [Mark Schulze](http://www.markschulze.net/).
 
 This plugin was developed as part of the University of California, Berkeley Vision Sciences core grant NIH P30EY003176.
 
-## Bug Report
+Bug Report
+----------
 
 April 5, 2018 - Fixed bug where the clear radius ratio was ignored.
 
 September 21, 2018 - Fixed bug where repeated calls to the plugin would result in a memory leak.
 
-## License
+License
+-------
 
-This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
+This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 

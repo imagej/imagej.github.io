@@ -47,9 +47,9 @@ description: test description
 
 DHM Utilities is a collection of plugins for use in Digital Holographic Microscopy. There are three main plugins packaged with DHM Utilities:
 
-  - [DHM Utilities/Reconstruction](DHM_Utilities/Reconstruction ), for reconstructing and propagating holograms.
-  - [DHM Utilities/Phase Unwrapping](DHM_Utilities/Phase_Unwrapping ), for phase unwrapping.
-  - [DHM Utilities/Multi-Image Landmark Correspondences](DHM_Utilities/Multi-Image_Landmark_Correspondences ), for aligning images.
+-   [DHM Utilities/Reconstruction](DHM_Utilities/Reconstruction ), for reconstructing and propagating holograms.
+-   [DHM Utilities/Phase Unwrapping](DHM_Utilities/Phase_Unwrapping ), for phase unwrapping.
+-   [DHM Utilities/Multi-Image Landmark Correspondences](DHM_Utilities/Multi-Image_Landmark_Correspondences ), for aligning images.
 
 The plugins use ImageJ2's plugin system, and are highly configurable. If you wish to add to one of these plugins, please check its own page.
 

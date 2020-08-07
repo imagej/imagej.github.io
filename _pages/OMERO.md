@@ -13,12 +13,14 @@ description: test description
 {% endcapture %}
 {% include info-box content='Plugin' software='OMERO ' name='OMERO ' logo='<img src="/images/pages/Omero-logo.png" width="128"/> ' author=' [Open Microscopy Environment](http://openmicroscopy.org/) ' maintainer=' [Open Microscopy Environment](http://openmicroscopy.org/) ' source=source status='active ' website='http://www.openmicroscopy.org/info/omero ' %}OMERO is client-server software for visualization, management and analysis of biological microscope images.
 
-## Publication
+Publication
+-----------
 
-  - Allan, C., Burel, J. M., Moore, J., Blackburn, C., Linkert, M., Loynton, S., ... & Swedlow, J. R. (2012). [OMERO: flexible, model-driven data management for experimental biology](http://www.nature.com/nmeth/journal/v9/n3/abs/nmeth.1896.html). Nature methods, 9(3), 245-253.
+-   Allan, C., Burel, J. M., Moore, J., Blackburn, C., Linkert, M., Loynton, S., ... & Swedlow, J. R. (2012). [OMERO: flexible, model-driven data management for experimental biology](http://www.nature.com/nmeth/journal/v9/n3/abs/nmeth.1896.html). Nature methods, 9(3), 245-253.
 
-## See also
+See also
+--------
 
-  - The [ImageJ-OMERO](https://github.com/imagej/imagej-omero) project for bidirectional interoperability between ImageJ and OMERO.
+-   The [ImageJ-OMERO](https://github.com/imagej/imagej-omero) project for bidirectional interoperability between ImageJ and OMERO.
 
    

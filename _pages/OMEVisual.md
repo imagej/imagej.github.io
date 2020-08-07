@@ -22,34 +22,37 @@ description: test description
 {% include info-box name='OMEVisual ' logo=' ' software='Fiji ' author=author maintainer=maintainer source=source released='08/05/2016 ' status='v1.0.1, stable ' category=' ' %}{% include toc%}
 
 
-## Presentation
+Presentation
+------------
 
 `OMEVisual` is a Fiji plugin to easily visualize OME metadata.
 
 Usage:
 
-  - Open your image in Fiji.
-  - Start the plugin with `Plugins ► Utilities ► Visualize OME Metadata`.
-  - A window should open with the metadata in it.
+-   Open your image in Fiji.
+-   Start the plugin with `Plugins ► Utilities ► Visualize OME Metadata`.
+-   A window should open with the metadata in it.
 
 Please note that :
 
-  - This goal of this plugin is **not to implement** all the OME features.
-  - This plugin makes several strong assumptions about the OME model in order to simplify the interface :
-      - Each image contains only one `Pixels` element.
-      - Each `TiffData` contains only one `Plane`.
-      - `Plane` and `TiffData` informations are displayed at the same location without distinction.
-  - Any ideas to improve the visualization and/or add OME features is very welcome :
-      - The best way is to submit a PR.
-      - You can also open an issue and post an OME-TIFF file which contains additional OME features you would like to see added to the plugin.
+-   This goal of this plugin is **not to implement** all the OME features.
+-   This plugin makes several strong assumptions about the OME model in order to simplify the interface :
+    -   Each image contains only one `Pixels` element.
+    -   Each `TiffData` contains only one `Plane`.
+    -   `Plane` and `TiffData` informations are displayed at the same location without distinction.
+-   Any ideas to improve the visualization and/or add OME features is very welcome :
+    -   The best way is to submit a PR.
+    -   You can also open an issue and post an OME-TIFF file which contains additional OME features you would like to see added to the plugin.
 
-![caption OMEVisual Screenshot](/images/pages/OMEVisual Screenshot.png "caption OMEVisual Screenshot")
+<figure><img src="/images/pages/OMEVisual_Screenshot.png" title="caption OMEVisual Screenshot" width="600" alt="caption OMEVisual Screenshot" /><figcaption aria-hidden="true">caption OMEVisual Screenshot</figcaption></figure>
 
-## Related links
+Related links
+-------------
 
-  - Source code on GitHub : https://github.com/fiji/OMEVisual
+-   Source code on GitHub : https://github.com/fiji/OMEVisual
 
-## Authors
+Authors
+-------
 
 `OMEVisual` has been created by [Hadrien Mary](mailto:hadrien.mary@gmail.com).
 

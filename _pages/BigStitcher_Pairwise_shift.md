@@ -9,11 +9,11 @@ description: test description
 
 The first step in stitching a tiled dataset is determining the pairwise shifts between the views. In the **Stitching Mode** select the views for the pairwise shift calculation. Then right-click and select {% include bc content='Stitching Wizard|Stitch dataset...'%}. The **Stitching wizard** will guide you through the three steps of pairwise shift determination, link verification and global optimization.
 
-  - If you just want to determine pairwise shifts and skip the other steps, you can use {% include bc content='Step-by-step Stitching|Calculate Pairwise Shifts...|Phase Correlation'%}
+-   If you just want to determine pairwise shifts and skip the other steps, you can use {% include bc content='Step-by-step Stitching|Calculate Pairwise Shifts...|Phase Correlation'%}
 
-<!-- end list -->
+<!-- -->
 
-  - Aside from the default **Phase correlation** algorithm for shift determination, we also offer alignment via the Lucas-Kanade method or interest point registration, as well as expert view grouping options. For those advanced methods, refer to [BigStitcher\_Advanced\_stitching](BigStitcher_Advanced_stitching )
+-   Aside from the default **Phase correlation** algorithm for shift determination, we also offer alignment via the Lucas-Kanade method or interest point registration, as well as expert view grouping options. For those advanced methods, refer to [BigStitcher\_Advanced\_stitching](BigStitcher_Advanced_stitching )
 
 <img src="/images/pages/BigStitcher stitch 0.png" width="600"/>
 
@@ -21,17 +21,17 @@ The first step in stitching a tiled dataset is determining the pairwise shifts b
 
 After starting the stitching process, you need to specify how to handle multiple channels (if present) and which downsampling to use.
 
-  - If your dataset has multiple channels, you will be asked which channel to use for the stitching. You can also average the channels for the stitching process.
+-   If your dataset has multiple channels, you will be asked which channel to use for the stitching. You can also average the channels for the stitching process.
 
 <img src="/images/pages/BigStitcher stitch 1.png" width="600"/>
 
-  - Next, choose the the downsampling in x,y,z to be used for the calculation. Select a predefined downsampling factor or choose your own.
+-   Next, choose the the downsampling in x,y,z to be used for the calculation. Select a predefined downsampling factor or choose your own.
 
 {% include info-box content='In our experience, some downsampling (2-4x) improves results over using raw image data, as it reduces noise in the images. It also dramatically speeds up computations, so we advise using moderate downsampling in this step' %}
 
 <img src="/images/pages/BigStitcher stitch 2.png" width="600"/>
 
-  - If you ran the **Stitching wizard**, you will be asked to proceed to [Link Preview Mode](BigStitcher_Preview_Pairwise_shift ). Otherwise, you can proceed to this step via the right-click menu.
+-   If you ran the **Stitching wizard**, you will be asked to proceed to [Link Preview Mode](BigStitcher_Preview_Pairwise_shift ). Otherwise, you can proceed to this step via the right-click menu.
 
 Go back to the [main page](BigStitcher#Documentation )
 

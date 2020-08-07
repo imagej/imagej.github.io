@@ -9,7 +9,8 @@ description: test description
 
 {% include learn content='scripting' %}
 
-# Background
+Background
+==========
 
 The ImageJ script editor originally would automatically import many useful classes. This provided a clear benefit to writing scripts in ImageJ, as any plugins could be used without troubling the writer to know and enumerate the required classes.
 
@@ -17,7 +18,8 @@ However, there were drawbacks to this method as well. As the imports were not tr
 
 Today, ImageJ has a flexible and extensible automatic import mechanism: the [ScriptHeader](https://github.com/scijava/scijava-common/blob/181c016330be30861b573b70fb934f0b23c30447/src/main/java/org/scijava/script/ScriptHeader.java).
 
-# How ScriptHeaders works
+How ScriptHeaders works
+=======================
 
 ScriptHeaders are [SciJava](SciJava ) plugins, so they can be distributed with any part of ImageJ or Fiji and will automatically be discovered.
 
@@ -27,59 +29,61 @@ Added lines may be language-specific imports, `@Parameter` script parameters, co
 
 The result is that the script-writer sees exactly what is added. If they need to make changes of any type, they can do so easily within the editor. When a script is complete, it is then able to be run in any context and not just ImageJ where the auto-imports are present.
 
-# How to: Activate a Header
+How to: Activate a Header
+=========================
 
 1.  Open the [Script Editor](Using_the_Script_Editor )
 2.  Select a language from the Language Menu
 
-That's it\! If one or more ScriptHeader(s) exist for the selected language, they will be added automatically to the top of your script.
+That's it! If one or more ScriptHeader(s) exist for the selected language, they will be added automatically to the top of your script.
 
-## Limitations
+Limitations
+-----------
 
 By default, headers will only be added when switching away from `Language = None`. The ScriptHeader population logic itself can be overridden by providing a higher-priority [ScriptHeaderService](https://github.com/scijava/scijava-common/blob/181c016330be30861b573b70fb934f0b23c30447/src/main/java/org/scijava/script/ScriptService.java).
 
-# How to: Add a New Header
+How to: Add a New Header
+========================
 
 A skeleton ScriptHeader is provided below. Simply resolve the marked TODOs and you can distribute your header as appropriate.
 
-  - If you are writing a ScriptHeader general to the core scripting languages, it can be contributed to the [core scripting repositories](https://github.com/scijava?query=scripting).
-  - If your ScriptHeader is specific to your project, it can be distributed as part of that project.
+-   If you are writing a ScriptHeader general to the core scripting languages, it can be contributed to the [core scripting repositories](https://github.com/scijava?query=scripting).
+-   If your ScriptHeader is specific to your project, it can be distributed as part of that project.
 
-## Prototype ScriptHeader
+Prototype ScriptHeader
+----------------------
 
-``` java
-import org.scijava.plugin.Plugin;
-import org.scijava.script.AbstractScriptHeader;
-import org.scijava.script.ScriptHeader;
-import org.scijava.script.ScriptLanguage;
+    import org.scijava.plugin.Plugin;
+    import org.scijava.script.AbstractScriptHeader;
+    import org.scijava.script.ScriptHeader;
+    import org.scijava.script.ScriptLanguage;
 
-//NB: The @Plugin annotation allows this ScriptHeader to be discovered
-//TODO give this header class an appropriate name
+    //NB: The @Plugin annotation allows this ScriptHeader to be discovered
+    //TODO give this header class an appropriate name
 
-@Plugin(type = ScriptHeader.class)
-public class MyScriptHeader extends AbstractScriptHeader {
+    @Plugin(type = ScriptHeader.class)
+    public class MyScriptHeader extends AbstractScriptHeader {
 
-// -- ScriptHeader Methods --
+    // -- ScriptHeader Methods --
 
-  @Override
-  public String getHeader() {
-    // TODO Return the text you would like to enter at the top
-    // of scripts of the target language.
-    return null;
-  }
+      @Override
+      public String getHeader() {
+        // TODO Return the text you would like to enter at the top
+        // of scripts of the target language.
+        return null;
+      }
 
-  // NB: If AbstractScriptHeader is not extended you will not implement this section
-  // but instead should override the public boolean supports(T) method.
+      // NB: If AbstractScriptHeader is not extended you will not implement this section
+      // but instead should override the public boolean supports(T) method.
 
-  // -- AbstractScriptHeader methods --
+      // -- AbstractScriptHeader methods --
 
-  @Override
-  protected Class<? extends ScriptLanguage> handledType() {
-    // TODO return the ScriptLanguage class you would like to
-    // receive this header string.
-    return null;
-  }
-}
-```
+      @Override
+      protected Class<? extends ScriptLanguage> handledType() {
+        // TODO return the ScriptLanguage class you would like to
+        // receive this header string.
+        return null;
+      }
+    }
 
 

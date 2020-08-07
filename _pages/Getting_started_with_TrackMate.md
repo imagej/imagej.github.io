@@ -7,13 +7,15 @@ categories: Tutorials
 description: test description
 ---
 
-## Introduction
+Introduction
+------------
 
 This tutorial is the starting point for [TrackMate](TrackMate ) users. It explains how it works by walking you through a simple case, using an easy image.
 
 The [TrackMate](TrackMate ) plugin provides a way to semi-automatically segment spots or roughly spherical objects from a 2D or 3D image, and track them over time. It follows the classical scheme, where the segmentation step and the particle-linking steps are separated. Therefore each step is handled in the user interface by a specific panel, and you will go back in forth through them. Also, TrackMate has a fishing net with small holes: it will find as much spots as it can, even the ones you are not interested. So there is a step to filter them out before tracking. In these views, TrackMate resembles a bit to the Spot Segmentation Wizard of [Imaris™](http://www.bitplane.com/go/products/imaris).
 
-## The test image
+The test image
+--------------
 
 The test image we will use for this tutorial has now a link in Fiji. You can find it in {% include bc content='File | Open Samples | Tracks for TrackMate (807K)'%}, at the bottom of the list.
 
@@ -26,7 +28,8 @@ Also, if you look carefully, you will see that there are two splitting events - 
 {% include clear%}
 
 
-## Starting TrackMate
+Starting TrackMate
+------------------
 
 ![](/images/pages/TrackMate MainButtons.png)
 
@@ -45,7 +48,8 @@ The advantage of this approach is that you load in TrackMate, and everything you
 {% include clear%}
 
 
-## The start panel
+The start panel
+---------------
 
 ![](/images/pages/TrackMate StartPanel.png)
 
@@ -64,7 +68,8 @@ Defining a smaller area to analyze can be very beneficial to test and inspect fo
 {% include clear%}
 
 
-## Choosing a detector
+Choosing a detector
+-------------------
 
 ![](/images/pages/TrackMate SegmenterChoice.png)
 
@@ -72,16 +77,17 @@ You are now offered to choose a detection algorithm ("detector") amongst the cur
 
 The choice is actually quite limited. Apart from the **Manual annotation**, you will find 3 detectors, but they are all based on {% include wikipedia title='Blob detection\#The\_Laplacian\_of\_Gaussian' text='LoG (Laplacian of Gaussian) segmentation'%}. They are described in detail elsewhere, but here is what you need to know.
 
-  - The **LoG detector** applies a plain LoG segmentation on the image. All calculations are made in the Fourier space, which makes it optimal for intermediate spot sizes, between ≈5 and ≈20 pixels in diameter.
-  - The **DoG detector** uses the {% include wikipedia title='Blob detection\#The\_difference\_of\_Gaussians\_approach' text='difference of Gaussians'%} approach to approximate a LoG filter by the difference of 2 Gaussians. Calculations are made in the direct space, and it is optimal for small spot sizes, below ≈5 pixels.
-  - The **Downsample LoG detector** uses the LoG detector, but downsizes the image by an integer factor before filtering. This makes it optimal for large spot sizes, above ≈20 pixels in diameter, at the cost of localization precision.
+-   The **LoG detector** applies a plain LoG segmentation on the image. All calculations are made in the Fourier space, which makes it optimal for intermediate spot sizes, between ≈5 and ≈20 pixels in diameter.
+-   The **DoG detector** uses the {% include wikipedia title='Blob detection\#The\_difference\_of\_Gaussians\_approach' text='difference of Gaussians'%} approach to approximate a LoG filter by the difference of 2 Gaussians. Calculations are made in the direct space, and it is optimal for small spot sizes, below ≈5 pixels.
+-   The **Downsample LoG detector** uses the LoG detector, but downsizes the image by an integer factor before filtering. This makes it optimal for large spot sizes, above ≈20 pixels in diameter, at the cost of localization precision.
 
 In our case, let us just use the **Dog detector**.
 
 {% include clear%}
 
 
-## The detector configuration panel
+The detector configuration panel
+--------------------------------
 
 ![](/images/pages/TrackMate SegmenterConfig.png)
 
@@ -91,7 +97,7 @@ There are extra fields that you can configure also. The **Threshold** numerical 
 
 You can check **Use median filter**: this will apply a 3x3 median filter prior to any processing. This can help dealing with images that have a marked salt & pepper noise which generates spurious spots.
 
-We hope that TrackMate will be used in experiments requiring **Sub-pixel localization**, such as following motor proteins in biophysical experiments, so we added schemes to achieve this. The one currently implemented uses a quadratic fitting scheme (made by Stephan Saalfeld and Stephan Preibisch) based on [David Lowe SIFT work](http://www.cs.ubc.ca/~lowe/keypoints/)\[1\]. It has the advantage of being very quick, compared to the segmentation time itself.
+We hope that TrackMate will be used in experiments requiring **Sub-pixel localization**, such as following motor proteins in biophysical experiments, so we added schemes to achieve this. The one currently implemented uses a quadratic fitting scheme (made by Stephan Saalfeld and Stephan Preibisch) based on [David Lowe SIFT work](http://www.cs.ubc.ca/~lowe/keypoints/)[1]. It has the advantage of being very quick, compared to the segmentation time itself.
 
 Finally, there is a **Preview button** that allows to quickly check your parameters on the current data. After some computations, you can check the results overlaid on the image. Most likely, you will see plenty of spurious spots that you will be tempted to discard by adjusting the **Threshold** value. This is a very good approach for large problems. Here, we care little for that, just leave the threshold at 0.
 
@@ -102,7 +108,8 @@ In our case, the spots we want to track are about 5 pixels in diameter, so this 
 {% include clear%}
 
 
-## The detection process
+The detection process
+---------------------
 
 ![](/images/pages/TrackMate Segmenting.png)
 
@@ -117,7 +124,8 @@ On our dummy image, this is clearly something we need to worry about, and the se
 {% include clear%}
 
 
-## Initial spot filtering
+Initial spot filtering
+----------------------
 
 ![](/images/pages/TrackMate InitThresholding.png)
 
@@ -136,7 +144,8 @@ In our case, we see from the histogram that we could make sense of this step. Th
 {% include clear%}
 
 
-## Selecting a view
+Selecting a view
+----------------
 
 ![](/images/pages/TrackMate DisplayerChoice.png)
 
@@ -146,15 +155,16 @@ Honestly, choose the HyperStack displayer. Unless you have a very specific and c
 
 When you press the **Next** button, two processes start:
 
-  - the features of all spots (well, those you left after the initial filtering step) are calculated;
-  - the displayer selected does everything it needs to prepare displaying them.
+-   the features of all spots (well, those you left after the initial filtering step) are calculated;
+-   the displayer selected does everything it needs to prepare displaying them.
 
 So nothing much. Let's carry on.
 
 {% include clear%}
 
 
-## Spot filtering
+Spot filtering
+--------------
 
 ![](/images/pages/TrackMate FilterSpots 1.png)
 
@@ -180,8 +190,8 @@ To move the threshold, simply click and drag inside the histogram window. Notice
 
 <u>Interlude</u>: A word on the GUI: I put some effort into having a GUI that can be navigated almost solely with the keyboard. Any of the small filter panel can be controlled with the keyboard. For instance: give the histogram the focus by either pressing the Tab key or clicking into it.
 
-  - The floating threshold value should turn from orange to dark red. You can now type a numerical value (including decimals using the dot '.' as separator); wait two seconds, and the threshold value will be updated to what you just typed.
-  - Ot use the arrow keys: the left and right arrow keys will change the threshold value by 10%, the up and down arrow will set it to the max and min value respectively.
+-   The floating threshold value should turn from orange to dark red. You can now type a numerical value (including decimals using the dot '.' as separator); wait two seconds, and the threshold value will be updated to what you just typed.
+-   Ot use the arrow keys: the left and right arrow keys will change the threshold value by 10%, the up and down arrow will set it to the max and min value respectively.
 
 A filter can be set to be above or below the given threshold. You change this behavior using the radio buttons below the histogram window. In our case, we want it to be above of course. The **Auto** button uses {% include wikipedia title='Otsu%27s method' text='Otsu\'s method'%} to determine automatically a threshold. In our case, we will put it manually around 33.
 
@@ -194,23 +204,24 @@ Press **Next** when you are ready to build tracks with these spots.
 {% include clear%}
 
 
-## Selecting a simple tracker
+Selecting a simple tracker
+--------------------------
 
 ![](/images/pages/TrackMate TrackerChoice.png)
 
 The next panel let you choose amongst available particle-linking algorithms, or "trackers".
 
-The apparent profusion of choices should not disorient you, for it just that: an appearance. We chose to focus on the Linear Assignment Problem (LAP) in the framework first developed by Jaqaman *et al.*\[2\].
+The apparent profusion of choices should not disorient you, for it just that: an appearance. We chose to focus on the Linear Assignment Problem (LAP) in the framework first developed by Jaqaman *et al.*[2].
 
 The first two LAP trackers are based on LAP, with important differences from the original paper described [here](TrackMate_algorithms#Main_differences_with_the_Jaqaman_paper.5B1.5D ) . We focused on this method for it gave us a lot of flexibility and it can be configured easily to handle most cases. You can tune it to allow *splitting events*, where a track splits in two, for instance following a cell that encounters mitosis. *Merging events* are handled too in the same way, though my small culture prevents me from quoting a relevant biological case obvious as the previous one. More importantly are *gap-closing* events, where a spot disappear for one frame (because it moves out of focus, because segmentation fails, ...) but the track manages to recuperates and connect with reappearing spots later.
 
 These LAP algorithm exists in TrackMate in two flavors: a simple one and a not simple one. There are again the same, but the simple ones propose fewer configuration options and a thus more concise configuration panel. In short:
 
-  - The simple one only allows to deal with gap-closing events, and prevent splitting and merging events to be detected. Also, the costs to link two spots are computed solely based on their respective distance.
+-   The simple one only allows to deal with gap-closing events, and prevent splitting and merging events to be detected. Also, the costs to link two spots are computed solely based on their respective distance.
 
-<!-- end list -->
+<!-- -->
 
-  - The not simple one allows to detect any kind of event, so if you need to build tracks that are splitting or merging, you must go for this one. If you want to forbid the detection of gap-closing events, you want to use it as well. Also, you can alter the cost calculation to disfavor the linking of spots that have very different feature values.
+-   The not simple one allows to detect any kind of event, so if you need to build tracks that are splitting or merging, you must go for this one. If you want to forbid the detection of gap-closing events, you want to use it as well. Also, you can alter the cost calculation to disfavor the linking of spots that have very different feature values.
 
 There is also a 3rd tracker, the {% include wikipedia title='Nearest neighbor search' text='\'\'\'Nearest neighbor search\'\'\''%} tracker. This is the most simple tracker you can build, and it is mostly here for demonstration purposes. Each spot in one frame is linked to another one in the next frame, disregarding any other spot, thus achieving only a very local optimum. You can set a maximal linking distance to prevent the results to be totally pathological, but this is as far as it goes. It may be of use for very large and easy datasets: its memory consumption is very limited (at maximum only two frames need to be in memory) and is quick (the nearest neighbor search is performed using {% include wikipedia title='Kd tree' text='Kd-trees'%}).
 
@@ -218,25 +229,27 @@ Then of course, there is the option to skip the automated tracking using **Manua
 
 Right now, in our first trial, let us pick the **Simple fast LAP tracker**.
 
-## Configuring the simple LAP tracker
+Configuring the simple LAP tracker
+----------------------------------
 
 ![TrackMate TrackerConfiguration 1.png](/images/pages/TrackMate TrackerConfiguration 1.png "TrackMate TrackerConfiguration 1.png")
 
 As promised, there is only three configuration fields.
 
-  - The first one defines the maximal allowed linking distance. This value limits the spatial search range for candidate matching spots. If you know the maximal displacement of your object between two frame, you can put this value here. Theoretically, a too large value will demand more computation time. In our case, seeing the size of the dataset, this does not matter at all. This distance must be expressed in physical units, but again, you don't see it there for there is no spatial calibration on our image.
+-   The first one defines the maximal allowed linking distance. This value limits the spatial search range for candidate matching spots. If you know the maximal displacement of your object between two frame, you can put this value here. Theoretically, a too large value will demand more computation time. In our case, seeing the size of the dataset, this does not matter at all. This distance must be expressed in physical units, but again, you don't see it there for there is no spatial calibration on our image.
 
-<!-- end list -->
+<!-- -->
 
-  - The second field defines the maximal distance for gap-closing. Two track segments will not be bridged if the last spot of the first segment is further away than the first spot of the second segment. In our dummy example stack, there is spot disappearance at the frame number 45, top left. So the spot on frame 44 and the spot on frame 46 must not be separated by more than the distance you set there to have a chance to be linked.
+-   The second field defines the maximal distance for gap-closing. Two track segments will not be bridged if the last spot of the first segment is further away than the first spot of the second segment. In our dummy example stack, there is spot disappearance at the frame number 45, top left. So the spot on frame 44 and the spot on frame 46 must not be separated by more than the distance you set there to have a chance to be linked.
 
-<!-- end list -->
+<!-- -->
 
-  - The third field also deal with the detection of gap-closing events, and sets the maximal *frame interval* between two spots to be bridged. Careful, the time is set in frame interval, here we do not want the physical time. In our case, since the only disappearance event we have last one frame, we can simply put this value to 2 frames duration. But actually it does not matter, as you can see by experimenting.
+-   The third field also deal with the detection of gap-closing events, and sets the maximal *frame interval* between two spots to be bridged. Careful, the time is set in frame interval, here we do not want the physical time. In our case, since the only disappearance event we have last one frame, we can simply put this value to 2 frames duration. But actually it does not matter, as you can see by experimenting.
 
 Press **Next** to start the tracking computation.
 
-## Our first tracking results
+Our first tracking results
+--------------------------
 
 You are now shown the log panel, where the tracking process is logged. Since our dataset is very small, it should complete very quickly. Press **Next** again to see the results. They should look like this:
 
@@ -248,9 +261,10 @@ The track colors are yet meaningless; there are just used to facilitate separati
 
 Now, we would like the shape of these tracks to change. We see that the yellow track is actually branching from the blue one at frame 10. The same goes for the orange track, which branches from the green one at frame 17, and merges to the blue one at frame 27. To deal with that, we need to change of tracker. So go two steps back using the **Previous** button and go back to the tracker choice panel. There, select the **LAP tracker** and move to its configuration panel.
 
-## Configuring a not so simple tracker
+Configuring a not so simple tracker
+-----------------------------------
 
-![TrackMate\_TrackerConfiguration\_2.png](/images/pages/TrackMate TrackerConfiguration 2.png "TrackMate_TrackerConfiguration_2.png")
+![](/images/pages/TrackMate TrackerConfiguration 2.png "TrackMate_TrackerConfiguration_2.png")
 
 Look at the configuration panel. It is quite more complex than for the simple tracker, obviously, and it is the price for flexibility. Since it is quite long, the panel has to be scrolled to its bottom to venture on all fields.
 
@@ -258,13 +272,13 @@ However, this apparent complexity is not that difficult to harness. If you look 
 
 The first one deals with the <u>frame-to-frame linking</u>. It consists in creating small track segments by linking spots in one frame to the spots in the frame just after, not minding anything else. That is of course not enough to make us happy: there might be some spot missing, failed detection that might have caused your tracks to be broken. But let us focus on this one now.
 
-Linking is made by minimizing a global cost (from one frame to another, yet). A short word on the linking logic: The base cost of linking a particle with another one is simply the squared distance\[3\]. Following the proposal of Jaqaman *et al.*\[4\], we also consider the possibility for a particle *not* to make any link, if is advantageous for the global cost. The sum of all costs are minimized to find to set of link for this pair of frame, and we move to the next one.
+Linking is made by minimizing a global cost (from one frame to another, yet). A short word on the linking logic: The base cost of linking a particle with another one is simply the squared distance[3]. Following the proposal of Jaqaman *et al.*[4], we also consider the possibility for a particle *not* to make any link, if is advantageous for the global cost. The sum of all costs are minimized to find to set of link for this pair of frame, and we move to the next one.
 
 As for the simple tracker, the **Max distance** field helps preventing irrelevant linking to occur. Two spots separated by more than this distance will never be considered for linking. This also saves some computation time.
 
 The **Feature penalties** let you tune the linking cost using some measures of spot similarity. Typically in the single particle tracking framework, you cannot rely on shape descriptors to identify a single object across multiple frames, for spots are "shapeless": they are just described by a X, Y, Z, T position tuple.
 
-Yet, you might know your Biology better. For instance, you might be in the case where the mean intensity of a spot is roughly conserved along time, but vary even slightly from one spot to another. Or it might be the spot diameters, or a rough elliptic shape. Feature penalties allow you to penalize links between spots that have feature values that are different. Since the case you study might be anything, you can pick any feature to build your penalties. This one of the novelties in TrackMate, already evoked in Jaqaman *et al.*\[5\], but extended here.
+Yet, you might know your Biology better. For instance, you might be in the case where the mean intensity of a spot is roughly conserved along time, but vary even slightly from one spot to another. Or it might be the spot diameters, or a rough elliptic shape. Feature penalties allow you to penalize links between spots that have feature values that are different. Since the case you study might be anything, you can pick any feature to build your penalties. This one of the novelties in TrackMate, already evoked in Jaqaman *et al.*[5], but extended here.
 
 If you want to use feature penalties for frame-to-frame linking, simply press the green **+** button in the sub-panel. A combo-box will appear, in which you can choose the target feature. The text field ti its right allows specifying the penalty weight. Feature penalties will *change* the base cost. We will not go in the details here (particularly because we are not going to use feature penalties in this tutorial), but basically, two spots with different features will have a linking cost higher than if the selected features values were the same. The weight allows you to specify how much you want to penalize a specific feature difference. A weight of 10 is already very penalizing.
 
@@ -278,19 +292,21 @@ For <u>track splitting</u>, the middle of a segment is offered to bridge to the 
 
 As an exercise, try to find the parameters the will fuse the central track segments in a single large track, with two splitting events and a merge event. You should obtain the track layout pictured below.
 
-![TrackMate\_TrackingResults\_2.png](/images/pages/TrackMate TrackingResults 2.png "TrackMate_TrackingResults_2.png")
+![](/images/pages/TrackMate TrackingResults 2.png "TrackMate_TrackingResults_2.png")
 
-## Filtering tracks
+Filtering tracks
+----------------
 
 The next panel is just the equivalent of the spot filtering step we met before, but this time we use track features,. The filter principles are the same: you simply add filters, choosing a target feature, until you are happy with the remaining tracks. As for the spots, the tracks are not really deleted; they are just hidden and you can retrieve them by switching back to this panel and delete the filters.
 
-![TrackMate\_TrackingFiltering.png](/images/pages/TrackMate TrackingFiltering.png "TrackMate_TrackingFiltering.png")
+![](/images/pages/TrackMate TrackingFiltering.png "TrackMate_TrackingFiltering.png")
 
 Here, we have a total of 4 tracks. The two immobile spots of the bottom left contribute one track each, that we can barely see because they do not move much. Let us say that we want to get rid of them. There are several ways to do that, but the simple is simply to add a filter on track displacement, as picture above.
 
-## The end or so
+The end or so
+-------------
 
-![TrackMate\_DisplayPanel.png](/images/pages/TrackMate DisplayPanel.png "TrackMate_DisplayPanel.png")
+![](/images/pages/TrackMate DisplayPanel.png "TrackMate_DisplayPanel.png")
 
 We are now close to the end of a typical workflow for a tracking problem. The panel you see now is the one that recapitulates display option. You can set spot color by feature, hide them, show their name, etc... Find out what they do, display options are pretty much self-explanatory.
 
@@ -302,30 +318,33 @@ The last panel is the Action chooser panel, that allows you to execute simple ac
 
 If you are happy with the results, you can save them now. Loading the resulting file again in TrackMate will bring you to this panel, where you can inspect those results conveniently
 
-## Wrapping up
+Wrapping up
+-----------
 
 That is the end of this introductory tutorial. As you can see, it is quite long. Hopefully that does not mean that TrackMate itself is complicated. We detailed what you could do for the tracking part (the analysis and editing part is still to be seen), but if you recapitulate what we changed from the default, that was pretty simple:
 
-  - we set the segmentation diameter to 5;
-  - we added a spot filter on mean pixel intensity;
-  - we picked a not-so-simple tracker and allowed for splitting and merging;
-  - we added a track filter on displacement.
+-   we set the segmentation diameter to 5;
+-   we added a spot filter on mean pixel intensity;
+-   we picked a not-so-simple tracker and allowed for splitting and merging;
+-   we added a track filter on displacement.
 
 Now that you know how the plugin works, you should be able to reach the end result in less than 30 seconds...
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez )) 04:18, 1 August 2013 (CDT)
 
-## References
+References
+----------
 
 <references/>
 
 
 
-1.  David G. Lowe, "Distinctive image features from scale-invariant keypoints", International Journal of Computer Vision, 60, 2 (2004), pp. 91-110.
+[1] David G. Lowe, "Distinctive image features from scale-invariant keypoints", International Journal of Computer Vision, 60, 2 (2004), pp. 91-110.
 
-2.  [Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)
+[2] [Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)
 
-3.  There is some theoretical grounds for that, if you are investigating Brownian motion. See the [page](TrackMate_algorithms#Cost_calculation_.26_Brownian_motion ) that details the segmenters and trackers for information.
+[3] There is some theoretical grounds for that, if you are investigating Brownian motion. See the [page](TrackMate_algorithms#Cost_calculation_.26_Brownian_motion ) that details the segmenters and trackers for information.
 
-4.  
-5.
+[4] 
+
+[5] 

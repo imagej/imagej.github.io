@@ -9,12 +9,12 @@ description: test description
 
 Resaving a dataset is a simple two step process:
 
-  - select existing dataset
-  - define resaving parameters
+-   select existing dataset
+-   define resaving parameters
 
-![MVR\_resave1.png](/images/pages/MVR resave1.png "MVR_resave1.png")
+![](/images/pages/MVR resave1.png "MVR_resave1.png")
 
-![MVR\_resave2.png](/images/pages/MVR resave2.png "MVR_resave2.png")
+![](/images/pages/MVR resave2.png "MVR_resave2.png")
 
 Some log output shows the resaving process.
 
@@ -27,8 +27,9 @@ Some log output shows the resaving process.
     .
     (Thu Aug 21 13:38:15 CEST 2014): Saved xml '/Users/janosch/no_backup/HisYFP/dataset-hdf5.xml'.
 
-## View with BigDataViewer
+View with BigDataViewer
+-----------------------
 
 Finally you can use [BigDataViewer](BigDataViewer ) to view your data set.
 
-![MVR\_resave3.png](/images/pages/MVR resave3.png "MVR_resave3.png")
+![](/images/pages/MVR resave3.png "MVR_resave3.png")

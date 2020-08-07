@@ -9,4 +9,4 @@ description: test description
 
 {% include user-box name='CellDynamics ' affiliation=' [Department of Computer Science, University of Warwick](http://www2.warwick.ac.uk/fac/sci/dcs/) ' forum='Piotr\_Baniukiewicz ' github='CellDynamics ' %} CellDynamics contributes to the following projects:
 
-  - [QuimP](http://warwick.ac.uk/quimp) - the software for tracking cellular shape changes and dynamic distributions of fluorescent reporters at the cell membrane. Developed by: [Piotr Baniukiewicz](mailto:p.baniukiewicz@warwick.ac.uk) (current lead developer), [Till Bretschneider](mailto:Till.Bretschneider@warwick.ac.uk) and Richard Tyson.
+-   [QuimP](http://warwick.ac.uk/quimp) - the software for tracking cellular shape changes and dynamic distributions of fluorescent reporters at the cell membrane. Developed by: [Piotr Baniukiewicz](mailto:p.baniukiewicz@warwick.ac.uk) (current lead developer), [Till Bretschneider](mailto:Till.Bretschneider@warwick.ac.uk) and Richard Tyson.

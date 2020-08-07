@@ -23,9 +23,9 @@ Student travel fellowships available, limited to students enrolled in a Master o
 
 Important data:
 
-  - <b>Where</b>: Pilsen, Czech Republic
-  - <b>When</b>: September 9-12, 2009
-  - [School webpage](http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/)
-  - [Student application form](http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/course-application-form/).
+-   <b>Where</b>: Pilsen, Czech Republic
+-   <b>When</b>: September 9-12, 2009
+-   [School webpage](http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/)
+-   [Student application form](http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/course-application-form/).
 
 

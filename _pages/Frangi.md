@@ -7,14 +7,14 @@ categories:
 description: test description
 ---
 
-{% include warning-box content='This is an experimental plugin, and I have doubts about its correctness—in particular, the results are strange when the ratio of pixelWidth : pixelHeight : pixelDepth is other than 1:1:1. In addition, the results in any case seem to be different from those from other implementations, such as [this [MATLAB](MATLAB ) one](http://www.mathworks.co.uk/matlabcentral/fileexchange/24409-hessian-based-frangi-vesselness-filter). I don"t have time to work on this any more (and no longer work in academia at all) so if someone were interested in taking it over, that would be brilliant.' %} {% include component-stats content='sc.fiji:Feature\_Detection' %} This plugin implements the algorithm for detection of vessel- or tube-like structures in 2D and 3D images described Frangi et al 1998. \[1\]
+{% include warning-box content='This is an experimental plugin, and I have doubts about its correctness—in particular, the results are strange when the ratio of pixelWidth : pixelHeight : pixelDepth is other than 1:1:1. In addition, the results in any case seem to be different from those from other implementations, such as [this [MATLAB](MATLAB ) one](http://www.mathworks.co.uk/matlabcentral/fileexchange/24409-hessian-based-frangi-vesselness-filter). I don"t have time to work on this any more (and no longer work in academia at all) so if someone were interested in taking it over, that would be brilliant.' %} {% include component-stats content='sc.fiji:Feature\_Detection' %} This plugin implements the algorithm for detection of vessel- or tube-like structures in 2D and 3D images described Frangi et al 1998. [1]
 
 In my experience, this method produces consistently better results than the [Tubeness](Tubeness ) plugin for isotropic image data, although it is significantly slower.
 
 These screenshots show the results on an example file:
 
-![Frangi-before-and-after.png](/images/pages/Frangi-before-and-after.png "Frangi-before-and-after.png")
+![](/images/pages/Frangi-before-and-after.png "Frangi-before-and-after.png")
 
 <references/>
 
-1.  {% include cite content='journal' author='Alejandro F. Frangi, Wiro J. Niessen, Koen L. Vinc and Max A. Viergever ' title='Multiscale Vessel Enhancement Filtering ' journal='Medical Image Computing and Computer-Assisted Interventation — MICCAI’98 Lecture Notes in Computer Science ' year='1998 ' volume='1496/1998 ' page='130 ' url='http://www.tecn.upf.es/\~afrangi/articles/miccai1998.pdf ' %}
+[1] {% include cite content='journal' author='Alejandro F. Frangi, Wiro J. Niessen, Koen L. Vinc and Max A. Viergever ' title='Multiscale Vessel Enhancement Filtering ' journal='Medical Image Computing and Computer-Assisted Interventation — MICCAI’98 Lecture Notes in Computer Science ' year='1998 ' volume='1496/1998 ' page='130 ' url='http://www.tecn.upf.es/\~afrangi/articles/miccai1998.pdf ' %}

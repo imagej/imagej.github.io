@@ -7,7 +7,8 @@ categories:
 description: test description
 ---
 
-## Project Goals
+Project Goals
+-------------
 
 What is the goal of your project?
 
@@ -29,7 +30,8 @@ What are your future plans regarding image processing?
 
 ''The most successful Open Source projects were started because somebody had a real need, and tried to make a tool/library/plugin to address that need. Tell us what you want to achieve in the field of image processing, and how your project will help you in that respect.'
 
-## Interfaces
+Interfaces
+----------
 
 What parts of Fiji will you need to modify or enhance?
 
@@ -39,11 +41,12 @@ What other Open Source projects can you use?
 
 *Many problems have been solved in Open Source libraries. It is very likely that there exist such libraries which can help you accomplish your goal. Name and describe them.*
 
-## About You
+About You
+---------
 
 Can you list some prior Open Source projects that you have worked on?
 
-*These don't need to be related to Fiji. We'd love to know what your background is\! What projects did you work on? Can you provide a link to your contributions? What language(s) and tools were used? How many people were involved? What were the primary means of communication within the project? If you have a CV or resume online, please feel free to include a link.*
+*These don't need to be related to Fiji. We'd love to know what your background is! What projects did you work on? Can you provide a link to your contributions? What language(s) and tools were used? How many people were involved? What were the primary means of communication within the project? If you have a CV or resume online, please feel free to include a link.*
 
 Do you have any prior Fiji/ImageJ experience? Have you started to get involved?
 

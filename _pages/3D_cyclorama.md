@@ -7,6 +7,6 @@ categories:
 description: test description
 ---
 
-![3D cyclorama](/images/pages/Avatar.png "3D cyclorama") Fiji plugin to digitally unroll deformed tubes.
+<img src="/images/pages/Avatar.png" title="fig:3D cyclorama" width="200" alt="3D cyclorama" /> Fiji plugin to digitally unroll deformed tubes.
 
-\< page under construction \>
+&lt; page under construction &gt;

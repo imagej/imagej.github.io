@@ -11,28 +11,30 @@ description: test description
 
 This tool may be used to adjust the brightness and contrast of an active image.
 
-## Usage
+Usage
+-----
 
-The Brightness and Contrast tool may be accessed through {% include bc content='Image | Adjust | Brightness/Contrast'%} or {% include key content='Ctrl|Shift|C' %}.
+The Brightness and Contrast tool may be accessed through {% include bc content='Image | Adjust | Brightness/Contrast'%} or {% include key content='Ctrl\|Shift\|C' %}.
 
-![Brightness\_Contrast\_Window.png](/images/pages/Brightness Contrast Window.png "Brightness_Contrast_Window.png")
+<figure><img src="/images/pages/Brightness_Contrast_Window.png" title="Brightness_Contrast_Window.png" width="266" height="177" alt="Brightness_Contrast_Window.png" /><figcaption aria-hidden="true">Brightness_Contrast_Window.png</figcaption></figure>
 
 The upper and lower limits of the display range can be adjusted by modifying the minimum and maximum settings. Image brightness and image contrast can be modified by using the brightness and contrast sliders or by using the arrows on the right of the window to adjust the range.
 
 Selecting 'OK' will make the specified changes to the display and close the Brightness/Contrast window. All channels in an image will be simultaneously updated automatically.
 
-ImageJ may provide intelligent thresholding based on the image's histogram through {% include bc content='Image | Adjust | Auto-Contrast'%} or {% include key content='Ctrl|Alt|Shift|L' %}. Repeated usage of this process will allow more pixel values to become saturated.
+ImageJ may provide intelligent thresholding based on the image's histogram through {% include bc content='Image | Adjust | Auto-Contrast'%} or {% include key content='Ctrl\|Alt\|Shift\|L' %}. Repeated usage of this process will allow more pixel values to become saturated.
 
-## Example
+Example
+-------
 
 The below images show the effects of adjusting brightness and contrast settings.
 
 **Before**
 
-![Brightness\_Contrast\_Before.png](/images/pages/Brightness Contrast Before.png "Brightness_Contrast_Before.png")
+<figure><img src="/images/pages/Brightness_Contrast_Before.png" title="Brightness_Contrast_Before.png" width="350" height="404" alt="Brightness_Contrast_Before.png" /><figcaption aria-hidden="true">Brightness_Contrast_Before.png</figcaption></figure>
 
 **After**
 
-![Brightness\_Contrast\_After.png](/images/pages/Brightness Contrast After.png "Brightness_Contrast_After.png")
+<figure><img src="/images/pages/Brightness_Contrast_After.png" title="Brightness_Contrast_After.png" width="350" height="404" alt="Brightness_Contrast_After.png" /><figcaption aria-hidden="true">Brightness_Contrast_After.png</figcaption></figure>
 
 

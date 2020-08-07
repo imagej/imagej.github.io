@@ -13,12 +13,13 @@ description: test description
 {% endcapture %}
 {% include info-box name='Interactive Moving Least Squares ' software='Fiji ' author='Stephan Saalfeld ' maintainer='Stephan Saalfeld ' source=source released='July 18, 2008 ' latest-version='May 26, 2009 ' status='stable, active ' category='[Transform](Category_Transform ), [Plugins](Category_Plugins ) ' %}{% include youtube url='https://www.youtube.com/embed/NwOxRmX03xs'%}
 
-## License
+License
+-------
 
-This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
+This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
------
+------------------------------------------------------------------------
 
  

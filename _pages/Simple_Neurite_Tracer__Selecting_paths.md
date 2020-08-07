@@ -24,12 +24,12 @@ If you press the {% include key content='G' %} key with your mouse over a path i
 
 There are various ways to select a path in the 3D viewer, from easiest to most difficult:
 
-  - If you press {% include key content='G' %} when the mouse is over a path in the 3D Viewer, it will be selected.
+-   If you press {% include key content='G' %} when the mouse is over a path in the 3D Viewer, it will be selected.
 
-<!-- end list -->
+<!-- -->
 
-  - If you select a path in the 3D viewer, it should now also be selected in the rest of the tracing interface. One way of doing this is via the "Select" menu.
+-   If you select a path in the 3D viewer, it should now also be selected in the rest of the tracing interface. One way of doing this is via the "Select" menu.
 
-<!-- end list -->
+<!-- -->
 
-  - Alternatively, you can click on the path in the 3D view. Note that you will probably have the problem that clicks in the 3D view only select the <i>volume</i> rather than the paths - you can get around this by selecting the volume and then unticking {% include bc content='Edit | Hide/Show | Show content'%} to hide the volume rendering. Then clicking on the paths will be easy.
+-   Alternatively, you can click on the path in the 3D view. Note that you will probably have the problem that clicks in the 3D view only select the <i>volume</i> rather than the paths - you can get around this by selecting the volume and then unticking {% include bc content='Edit | Hide/Show | Show content'%} to hide the volume rendering. Then clicking on the paths will be easy.

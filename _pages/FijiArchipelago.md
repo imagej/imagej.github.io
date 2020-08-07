@@ -9,7 +9,8 @@ description: test description
 
 {% include component-stats content='sc.fiji:Fiji\_Archipelago' %}Fiji Archipelago is a plugin that brings Cluster functionality to Fiji
 
-## Overview
+Overview
+--------
 
 Fiji Archipelago is a tool designed to make it easy for programmers to export Fiji/ImageJ functionality over a network to several other computers.
 
@@ -17,23 +18,26 @@ For the purposes of this article, the root node is the computer from which the c
 
 Client nodes either may be started by the root node, or else the root node may be configured to accept connections from client nodes that have been started manually. By default, communication is done by standard IO over ssh when possible, but may optionally be done via insecure sockets instead.
 
-## Requirements
+Requirements
+------------
 
-  - Root and client nodes should all have the same version of Fiji installed.
-  - Fiji Archipelago makes use of ssh and ssh key pair authentication, so the server must have a private key file that matches a public key in authorized\_hosts on the client.
-  - Server and clients must have access to a shared network file server if file transfer is required.
+-   Root and client nodes should all have the same version of Fiji installed.
+-   Fiji Archipelago makes use of ssh and ssh key pair authentication, so the server must have a private key file that matches a public key in authorized\_hosts on the client.
+-   Server and clients must have access to a shared network file server if file transfer is required.
 
 So far, this has been extensively tested only on Linux machines, but it should be platform-independent.
 
-## Features
+Features
+--------
 
-  - On-the-fly addition of new cluster nodes
-  - Volunteer cluster nodes. A node may be started manually (this has security implications).
-  - Processes running on nodes that crash or are cancelled are automatically rescheduled.
-  - Security - root/client communication is done over ssh standard IO by default.
-  - Easy API - submit Callables to an ExecutorService.
+-   On-the-fly addition of new cluster nodes
+-   Volunteer cluster nodes. A node may be started manually (this has security implications).
+-   Processes running on nodes that crash or are cancelled are automatically rescheduled.
+-   Security - root/client communication is done over ssh standard IO by default.
+-   Easy API - submit Callables to an ExecutorService.
 
-## Usage
+Usage
+-----
 
 ### Existing Archipelago Plugins
 
@@ -47,13 +51,13 @@ This plugin allows clusterized least-squares and elastic alignment in TrakEM2. R
 
 This plugin accelerates image classification with the [ Trainable Weka Segmentation](Trainable_Weka_Segmentation ) plugin. To use it, create a classifier and save it (ie, a .model file).
 
-Run the batch segmentation plugin by selecting Plugins -\> Batch -\> Weka Segmentation 2D
+Run the batch segmentation plugin by selecting Plugins -&gt; Batch -&gt; Weka Segmentation 2D
 
 This plugin is designed for two-dimensional serial sections.
 
 ### Starting a Cluster
 
-  - From the ImageJ window, select Plugins-\>Cluster-\>Start Cluster...
+-   From the ImageJ window, select Plugins-&gt;Cluster-&gt;Start Cluster...
 
 The Cluster user interface will open. The cluster must be configured before it may be started.
 
@@ -63,16 +67,16 @@ The Cluster user interface will open. The cluster must be configured before it m
 
 <img src="/images/pages/Archipelago 02.png" width="500"/>
 
-  - Click the Configure Root Node... button
-      - Local Exec Root: The folder containing your local fiji (or ImageJ) executable. This field may disappear in future versions.
-      - Local File Root: A shared network folder, if one is available. Not necessary for most jobs.
-      - User Name: Your user name on this machine
-      - Default Client Exec Root: The folder containing fiji (or ImageJ) on most remote clients. This field may disappear in future versions.
-      - Default Client File Root: The matching network folder, relative to remote clients.
+-   Click the Configure Root Node... button
+    -   Local Exec Root: The folder containing your local fiji (or ImageJ) executable. This field may disappear in future versions.
+    -   Local File Root: A shared network folder, if one is available. Not necessary for most jobs.
+    -   User Name: Your user name on this machine
+    -   Default Client Exec Root: The folder containing fiji (or ImageJ) on most remote clients. This field may disappear in future versions.
+    -   Default Client File Root: The matching network folder, relative to remote clients.
 
-<!-- end list -->
+<!-- -->
 
-  - Click the OK button
+-   Click the OK button
 
 #### Configure Remote Nodes
 
@@ -86,30 +90,30 @@ The other option is the Insecure Socket Shell method, which starts the remote no
 
 <img src="/images/pages/Archipelago 03.png" width="500"/>
 
-  - Click Configure Cluster Nodes...
+-   Click Configure Cluster Nodes...
 
 This will open the cluster node configuration window
 
-  - Click Add Node...
+-   Click Add Node...
 
 <img src="/images/pages/Archipelago 04.png" width="500"/>
 
 This will open a dialog for adding a new cluster node, with the following fields:
 
-  -   - Hostname: The hostname or IP address for this host
-      - User name: The username for this host
-      - Thread Limit: Allow up to this many processes to be scheduled on this host. If set to 0, this defaults to the number of available cores.
-      - Remote Fiji Root: The folder containing fiji or ImageJ on this host.
-      - Remote File Root: The shared network folder relative to this host.
-      - Shell: SSH Shell or Insecure Socket Shell
-      - keyfile: Your ssh keyfile, as generated in Linux by ssh-keygen
-      - executable: either fiji or ImageJ
-      - ssh-port: the ssh port for this host
+-   -   Hostname: The hostname or IP address for this host
+    -   User name: The username for this host
+    -   Thread Limit: Allow up to this many processes to be scheduled on this host. If set to 0, this defaults to the number of available cores.
+    -   Remote Fiji Root: The folder containing fiji or ImageJ on this host.
+    -   Remote File Root: The shared network folder relative to this host.
+    -   Shell: SSH Shell or Insecure Socket Shell
+    -   keyfile: Your ssh keyfile, as generated in Linux by ssh-keygen
+    -   executable: either fiji or ImageJ
+    -   ssh-port: the ssh port for this host
 
-<!-- end list -->
+<!-- -->
 
-  - Click OK
-  - When you have added all of your nodes, click OK
+-   Click OK
+-   When you have added all of your nodes, click OK
 
 ##### Via Keyboard
 
@@ -119,14 +123,14 @@ On the root node, once the cluster is started, click the Start Insecure Server b
 
 On the client node:
 
-  - Start Fiji
-  - From the ImageJ window, select Plugins-\>Cluster-\>Attach to Cluster...
-  - Enter the hostname and port for your root node
-  - Click OK
+-   Start Fiji
+-   From the ImageJ window, select Plugins-&gt;Cluster-&gt;Attach to Cluster...
+-   Enter the hostname and port for your root node
+-   Click OK
 
 or
 
-  - Run ./fiji --full-classpath --main-class edu.utexas.clm.archipelago.Fiji\_Archipelago root.node.hostname port
+-   Run ./fiji --full-classpath --main-class edu.utexas.clm.archipelago.Fiji\_Archipelago root.node.hostname port
 
 The default port is 4012.
 
@@ -156,19 +160,20 @@ To allow "volunteer nodes" to attach, click the Start Insecure Server button. Th
 
 Clicking the Show Node Statistics button will open a dialog that displays usage stats for running client nodes:
 
-  - Host: the hostname of the client node in question
-  - state: the state of the node, active, inactive, or stopped.
-  - n Jobs: k/n, where there are k running processes out of n available cores.
-  - Beat: Client nodes send a heartbeat message to the root node approximately once per second. This indicates the length of time since the last heartbeat was received.
-  - MB Used: The number of megabytes of RAM used by Fiji's JVM on the client node.
-  - MB Total: The number of megabytes of RAM that are available to the remote JVM.
-  - Stop: Click this button to shut the client node down. Any running processes will be rescheduled on other nodes, once they become available.
+-   Host: the hostname of the client node in question
+-   state: the state of the node, active, inactive, or stopped.
+-   n Jobs: k/n, where there are k running processes out of n available cores.
+-   Beat: Client nodes send a heartbeat message to the root node approximately once per second. This indicates the length of time since the last heartbeat was received.
+-   MB Used: The number of megabytes of RAM used by Fiji's JVM on the client node.
+-   MB Total: The number of megabytes of RAM that are available to the remote JVM.
+-   Stop: Click this button to shut the client node down. Any running processes will be rescheduled on other nodes, once they become available.
 
 #### Debug Output
 
 Select this checkbox if you would like to display debug output on your command line. This is potentially verbose, but should include useful information if your cluster behaves erroneously.
 
-## Programmers
+Programmers
+-----------
 
 The Cluster class provides [ExecutorServices](http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ExecutorService.html) through Cluster.getService(n). The argument n may be either an int or a float. If an int, any processes submitted to the ExecutorService are assumed to require n number of cores. If a float, processes are assumed to require a fraction n of the available resources of any given computer. For most usage cases, Cluster.getCluster().getService(1) will return the desired service.
 

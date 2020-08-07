@@ -10,39 +10,44 @@ description: test description
 {% include menu-help%}
 A bug report is a reproducible set of steps describing a problem. They are a common communication medium between users and developers. Users willing to take the time to write helpful bug reports drive the development of ImageJ, making it a better product for everyone.
 
-# TL;DR Summary
+TL;DR Summary
+=============
 
-  - Report the issue using the [Report a Bug](Report_a_Bug ) plugin (in the Help menu).
-  - Provide a [minimal, complete, verifiable example](http://stackoverflow.com/help/mcve) (MCVE).
-  - [Describe what you already tried](http://whathaveyoutried.com/).
-  - [Put as much effort into your question](http://stackoverflow.com/help/how-to-ask) as you expect to be put into its response.
+-   Report the issue using the [Report a Bug](Report_a_Bug ) plugin (in the Help menu).
+-   Provide a [minimal, complete, verifiable example](http://stackoverflow.com/help/mcve) (MCVE).
+-   [Describe what you already tried](http://whathaveyoutried.com/).
+-   [Put as much effort into your question](http://stackoverflow.com/help/how-to-ask) as you expect to be put into its response.
 
-# Be concise
+Be concise
+==========
 
 Here are some quick tips for [writing a shorter letter](http://en.wikiquote.org/wiki/Blaise_Pascal):
 
-  - Use bullet points to summarize.
-  - Do not inline lengthy logs; use [Gist](https://gist.github.com/) or [Pastebin](http://pastebin.com/) instead.
-  - Use formatting such as **emphasis** and `code snippets` to make text easier to read.
-  - Use [link syntax](https://help.github.com/articles/github-flavored-markdown) instead of relying on URL autolinking.
-  - Use footnotes \[1\] for lengthy asides.
-  - Most importantly, provide a [Minimal, Complete and Verifiable example](http://stackoverflow.com/help/mcve) (MCVE), ideally as a standalone project.
+-   Use bullet points to summarize.
+-   Do not inline lengthy logs; use [Gist](https://gist.github.com/) or [Pastebin](http://pastebin.com/) instead.
+-   Use formatting such as **emphasis** and `code snippets` to make text easier to read.
+-   Use [link syntax](https://help.github.com/articles/github-flavored-markdown) instead of relying on URL autolinking.
+-   Use footnotes \[1\] for lengthy asides.
+-   Most importantly, provide a [Minimal, Complete and Verifiable example](http://stackoverflow.com/help/mcve) (MCVE), ideally as a standalone project.
 
 \[1\] For technical matters, "too much" information is certainly much preferred to "too little" information. But long paragraphs also break up the flow of information, and bog down an otherwise concise and clear bug report or question. So there is certainly a balance to be struck.
 
-# Why put effort into bug reports
+Why put effort into bug reports
+===============================
 
 For light reading, there are numerous guides and essays on [how and why to write excellent bug reports](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html). ImageJ users should be aware that the development community is diverse: from publicly-funded individuals and teams to scientists and user contributors. For a largely open-source community like this, there are several key points to consider when submitting a bug:
 
-  - Teams developing open-source code are typically smaller and lack dedicated testing teams. Developers thus rely on an active and vocal community to provide feedback and guide the development process by identifying the areas in need of attention (complaint-driven development).
-  - If you encounter a bug, it is likely interfering with your desired workflow and needs to be resolved quickly. The better the bug report, the faster a developer will be able to reproduce and address the issue. Poorly written bug reports are more likely to sit unanswered—not because developers see the issue as unimportant, rather that the time required to clarify the bug report itself presents a significant barrier when setting priorities within an overflowing schedule.
-  - When you find a bug, it is unlikely that you are the only individual affected by it. By reporting a bug in a way that developers can understand, identify and resolve the issue, you are performing a necessary and valuable service to the entire ImageJ community.
+-   Teams developing open-source code are typically smaller and lack dedicated testing teams. Developers thus rely on an active and vocal community to provide feedback and guide the development process by identifying the areas in need of attention (complaint-driven development).
+-   If you encounter a bug, it is likely interfering with your desired workflow and needs to be resolved quickly. The better the bug report, the faster a developer will be able to reproduce and address the issue. Poorly written bug reports are more likely to sit unanswered—not because developers see the issue as unimportant, rather that the time required to clarify the bug report itself presents a significant barrier when setting priorities within an overflowing schedule.
+-   When you find a bug, it is unlikely that you are the only individual affected by it. By reporting a bug in a way that developers can understand, identify and resolve the issue, you are performing a necessary and valuable service to the entire ImageJ community.
 
-# Components of a complete bug report
+Components of a complete bug report
+===================================
 
 There are three critical components in an ImageJ bug report. If a report is missing any of these components, its usefulness may be limited.
 
-## Environment information
+Environment information
+-----------------------
 
 ImageJ is a flexible and extensible platform, so the actual "ImageJ environment" can vary from user to user. A common misunderstanding in bug reports is to just report the version of the base ImageJ component (e.g. 1.49e). This is helpful, but says nothing about what plugins, update sites, etc... are in use.
 
@@ -50,21 +55,26 @@ Errors can appear in any component of the software, and in some cases two plugin
 
 Note that if you file a bug manually or are enquiring to a [mailing list](Mailing_Lists ), you can still copy and paste the contents of the *"Useful information about your system"* text box from the [Report a Bug](Report_a_Bug ) dialog. It will be greatly appreciated.
 
-## Minimal and precise steps to reproduce
+Minimal and precise steps to reproduce
+--------------------------------------
 
 When we're in a hurry, it's easy to provide a brief overview a bug without actually describing how to reproduce the error. We are also prone to providing too much information, which can confuse the issue and discourage thorough reading.
 
 The actual text of your bug report should succinctly describe the fewest steps possible to reproduce your issue. For example:
 
-  -   
-    1\) Open sample image "blobs"
-    2\) Run auto-threshold command
-    3\) Run subtract background command
-    At this point, an evil kraken appears and sinks my hard drive.
+  
+1\) Open sample image "blobs"
+
+2\) Run auto-threshold command
+
+3\) Run subtract background command
+
+At this point, an evil kraken appears and sinks my hard drive.
 
 Additional information is typically unnecessary... if a developer can reproduce the problem, they will do their best to fix it.
 
-## Sample data
+Sample data
+-----------
 
 Developers typically have a cache of sample data for testing their application. That said, we are still striving to reproduce the original environment of the error. Having the original image that caused the error is the best possible way to test.
 
@@ -76,22 +86,25 @@ Note: if you do upload sample data via ImageJ, you should mention the name of th
 
 For bugs working with excessively large datasets, you may need to communicate with a developer to determine the best way to test on your data.
 
-# While you're waiting...
+While you're waiting...
+=======================
 
 If you have encountered and reported a bug that is completely blocking your work, you still have options available while waiting for the issue to be resolved.
 
-## Disable SCIFIO
+Disable SCIFIO
+--------------
 
-[ImageJ2](ImageJ2 ) provides an alternative to the hard-coded case logic of [ImageJ 1.x](ImageJ_1.x )'s image I/O: [SCIFIO](SCIFIO ), plugin-based image I/O. While SCIFIO is more powerful, due to the vast scope of the overhaul, there are inevitably issues remaining. If your dataset used to open correctly for you, but is broken after updating, please *disable* the "Use SCIFIO when opening files (BETA\!)" option in the {% include bc content='Edit | Options | ImageJ2'%} dialog. This will revert to ImageJ 1.x's classic image I/O until the SCIFIO-driven I/O is fixed or improved.
+[ImageJ2](ImageJ2 ) provides an alternative to the hard-coded case logic of [ImageJ 1.x](ImageJ_1.x )'s image I/O: [SCIFIO](SCIFIO ), plugin-based image I/O. While SCIFIO is more powerful, due to the vast scope of the overhaul, there are inevitably issues remaining. If your dataset used to open correctly for you, but is broken after updating, please *disable* the "Use SCIFIO when opening files (BETA!)" option in the {% include bc content='Edit | Options | ImageJ2'%} dialog. This will revert to ImageJ 1.x's classic image I/O until the SCIFIO-driven I/O is fixed or improved.
 
 Note: even if disabling SCIFIO fixes the issue for you, **please** still report the discovered bug. The long-term vision for ImageJ is to migrate completely to the new image I/O paradigm, so if there are problems we need to know about them.
 
-## Disable problematic update sites
+Disable problematic update sites
+--------------------------------
 
 The [Report a Bug](Report_a_Bug ) dialog provides several pieces of critical information. Some of the most important being:
 
-  - Activated update sites
-  - Files not up-to-date
+-   Activated update sites
+-   Files not up-to-date
 
 The {% include list-of-update-sites content='default update sites' %} are intended to be fairly stable, but if you have additional update sites enabled there can be a risk of skewed or out of date dependencies (due to changes in core libraries), and some update sites are intentionally experimental.
 
@@ -99,13 +112,11 @@ Furthermore, if you have any **LOCAL\_ONLY** or **MODIFIED** files, their behavi
 
 In cases where it is clear which class or classes are causing problems, you can do remove the offending component as follows:
 
-  - If the problem is in an external plugin, simply delete the file(s).
+-   If the problem is in an external plugin, simply delete the file(s).
 
-<!-- end list -->
+<!-- -->
 
-  - If the problem is with an update site:
-
-<!-- end list -->
+-   If the problem is with an update site:
 
 1.  If necessary, identify the jar containing the problematic class(es), e.g. by using {% include bc content='Plugins | Utilities | Find Jar for Class'%} in Fiji.
 2.  Start the updater with `{% include bc content='Help | Update...'%}`
@@ -129,7 +140,8 @@ With this method you will continue to reduce your list of potentially bad candid
 
 Note: if the "erroneous behavior" is [catastrophic](#Catastrophic_failure "wikilink") to the point you can not start ImageJ, you can instead start from a clean build and re-introduce update sites and local plugins as detailed above until the problem is identified.
 
-## Catastrophic failure
+Catastrophic failure
+--------------------
 
 We maintain lifeline ImageJ distributions on the [Downloads page](Downloads ). You can use these until any outstanding issues are resolved.
 

@@ -11,7 +11,8 @@ This page provides user documentation for the Math category of the [CIP](CIP ) s
 
 {% include cip content='Navigation' %}
 
-# **binary operator**
+**binary operator**
+===================
 
 <span style="font-size:110%">**Description**</span>  
 the binary operators receive 2 inputs and produce one output applying the mathematical operation to the inputs. input can be a scalar or an image if one of the input is an image the operation is applied pixelwise. The output is an image is one of the input is an image or a scalar is both input are a number
@@ -34,7 +35,8 @@ the binary operators receive 2 inputs and produce one output applying the mathem
 <span style="font-size:110%">**Implementation**</span>  
 The function implementation rely on ops map and math operation. Further more the pixelor scalar type is updated to avoid any clipping of the resulting number in the operation. for instance a division between 2 integer image will create a float image.
 
-# **unary operator**
+**unary operator**
+==================
 
 <span style="font-size:110%">**Description**</span>  
 the unary operator receive one input and produces one ouput, applying the specified operation to the input. Input can be an image or a scalar. output is of the same type as the input.
@@ -53,9 +55,9 @@ the unary operator receive one input and produces one ouput, applying the specif
     `b = cip.atan( a )` calculate the trigonometric arctangent function. b is in radian
 
 <span style="font-size:110%">**Signatures rounding**</span>  
-    `b = cip.floor( a )` replace a by the closest integer such that abs(a)\>abs(b)
+    `b = cip.floor( a )` replace a by the closest integer such that abs(a)&gt;abs(b)
 
-    `b = cip.ceil( a )` replace a by the closest integer such that abs(a)\<abs(b)
+    `b = cip.ceil( a )` replace a by the closest integer such that abs(a)&lt;abs(b)
 
     `b = cip.round( a )` replace a by to the closest integer
 
@@ -68,7 +70,7 @@ the unary operator receive one input and produces one ouput, applying the specif
 
     `b = cip.abs( a )` calculates absolute value of a
 
-    `b = cip.sign( a )` replace a 1 if a\>0, 0 if a=0 and -1 if a\<0
+    `b = cip.sign( a )` replace a 1 if a&gt;0, 0 if a=0 and -1 if a&lt;0
 
 <span style="font-size:110%">**Implementation**</span>  
 The function implementation rely on ops map and java Math implementation. Further more the pixel or scalar type is updated to avoid any clipping of the resulting number in the operation. for instance the logarithm of an integer will be a float value.

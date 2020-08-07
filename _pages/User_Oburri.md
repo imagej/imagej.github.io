@@ -9,4 +9,5 @@ description: test description
 
 {% include user-box name='Olivier Burri ' affiliation='EPFL ' github='lacan ' %}
 
-# Olivier Burri
+Olivier Burri
+=============

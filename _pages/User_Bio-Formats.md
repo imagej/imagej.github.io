@@ -12,15 +12,15 @@ This account is used to manage the [Bio-Formats update site](http://sites.imagej
 
 To activate it in your Fiji setup:
 
-  - [{% include bc content='Help|Update...'%}](Update_Sites )
-  - Click *Manage update sites*
-  - Check *Bio-Formats*
-  - Click *Close*
+-   [{% include bc content='Help|Update...'%}](Update_Sites )
+-   Click *Manage update sites*
+-   Check *Bio-Formats*
+-   Click *Close*
 
 Some files should appear on the list with *Status/Action* of *Update it*.
 
-  - Click *Apply changes*
-  - Restart Fiji
-  - {% include bc content='Help|About Plugins|Bio-Formats Plugins...'%}
+-   Click *Apply changes*
+-   Restart Fiji
+-   {% include bc content='Help|About Plugins|Bio-Formats Plugins...'%}
 
 The dialog should now show a very recent build date (within the last few days).

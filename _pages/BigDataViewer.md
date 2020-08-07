@@ -9,7 +9,8 @@ description: test description
 
 {% include component-stats content='sc.fiji:bigdataviewer\_fiji' %}
 
-## Description
+Description
+-----------
 
 The BigDataViewer is a re-slicing browser for terabyte-sized multi-view image sequences. BigDataViewer was developed with multi-view light-sheet microscopy data in mind and integrates well with Fiji's SPIMage processing pipeline.
 
@@ -19,11 +20,13 @@ BigDataViewer comes with a custom data format that is is optimized for fast rand
 
 The file format is based on XML and HDF5. Images are represented as tiled multi-resolution pyramids, and stored in HDF5 chunked multi-dimensional arrays. The XML file contains metadata, for example the registration of sources to the global coordinate system.
 
-## Installation
+Installation
+------------
 
 The BigDataViewer comes with Fiji. You should have a sub-menu {% include bc content='Plugins | BigDataViewer'%}.
 
-## Usage
+Usage
+-----
 
 ### Opening a Dataset
 
@@ -51,47 +54,33 @@ For example, open the sample image {% include bc content='File | Open Samples | 
 
 Assuming you downloaded the *drosophila melanogaster* example dataset, you should see something like this:
 
-![bdv-bdv-start.png](/images/pages/Bdv-bdv-start.png "bdv-bdv-start.png")
+![](/images/pages/Bdv-bdv-start.png "bdv-bdv-start.png")
 
 On startup, the middle slice of the first source (angle) is shown. You can browse the stack using the keyboard or the mouse. To get started, try the following:
 
-  - Use the mouse-wheel or {% include key content='press|\<' %} and {% include key content='press|\>' %} keys to scroll through z slices.
-  - {% include key content='press|right-click|drag' %} anywhere on the canvas to translate the image.
-  - Use {% include key content='press|Ctrl|Shift|mouse-wheel' %}, or {% include key content='press|Up' %} and {% include key content='press|Down' %} keys to zoom in and out.
-  - {% include key content='press|left-click|drag' %} anywhere on the canvas to rotate (reslice) the image.
+-   Use the mouse-wheel or {% include key content='press\|&lt;' %} and {% include key content='press\|&gt;' %} keys to scroll through z slices.
+-   {% include key content='press\|right-click\|drag' %} anywhere on the canvas to translate the image.
+-   Use {% include key content='press\|Ctrl\|Shift\|mouse-wheel' %}, or {% include key content='press\|Up' %} and {% include key content='press\|Down' %} keys to zoom in and out.
+-   {% include key content='press\|left-click\|drag' %} anywhere on the canvas to rotate (reslice) the image.
 
 The following table shows the available navigation commands using the mouse:
 
-|                                                                                                                                           |                                                                                                 |
-| ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| {% include key content='press|left-click|drag' %}                                                             | Rotate (pan and tilt) around the point where the mouse was clicked. |
-| {% include key content='press|right-click|drag' %} or {% include key content='press|middle-click|drag' %}     | Translate in the XY-plane.                                          |
-| {% include key content='press|mouse-wheel' %}                                                                 | Move along the z-axis.                                              |
-| {% include key content='press|Cmd|mouse-wheel' %} or {% include key content='press|Shift|Ctrl|mouse-wheel' %} | Zoom in and out.                                                    |
+<table><tbody><tr class="odd"><td style="padding: 5px;"><p> <span class="removeme"><br />
+</span>{% include key content='press|left-click|drag' %}</p></td><td style="padding: 5px;"><p> Rotate (pan and tilt) around the point where the mouse was clicked.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|right-click|drag' %} or {% include key content='press|middle-click|drag' %}</p></td><td style="padding: 5px;"><p> Translate in the XY-plane.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|mouse-wheel' %}</p></td><td style="padding: 5px;"><p> Move along the z-axis.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Cmd|mouse-wheel' %} or {% include key content='press|Shift|Ctrl|mouse-wheel' %}</p></td><td style="padding: 5px;"><p> Zoom in and out.</p></td></tr></tbody></table>
 
 The following table shows the available navigation commands using keyboard shortcuts:
 
-|                                                                                                                                           |                                                                                                                          |
-| ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| {% include key content='press|X' %}, {% include key content='press|Y' %}, {% include key content='press|Z' %} | Select keyboard rotation axis.                                                               |
-| {% include key content='press|Left' %}, {% include key content='press|Right' %}                               | Rotate clockwise or counter-clockwise around the choosen rotation axis.                      |
-| {% include key content='press|Up' %}, {% include key content='press|Down' %}                                  | Zoom in or out.                                                                              |
-| {% include key content='press|,' %}, {% include key content='press|.' %}                                      | Move forward or backward along the Z-axis.                                                   |
-| {% include key content='press|Shift|X' %}                                                                     | Rotate to the ZY-plane of the current source. (Look along the X-axis of the current source.) |
-| {% include key content='press|Shift|Y' %} or {% include key content='press|Shift|A' %}                        | Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.) |
-| {% include key content='press|Shift|Z' %}                                                                     | Rotate to the XY-plane of the current source. (Look along the Z-axis of the current source.) |
-| {% include key content='press|\[' %} or {% include key content='press|N' %}                                   | Move to previous timepoint.                                                                  |
-| {% include key content='press|\]' %} or {% include key content='press|M' %}                                   | Move to next timepoint.                                                                      |
+<table><tbody><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|X' %}, {% include key content='press|Y' %}, {% include key content='press|Z' %}</p></td><td style="padding: 5px;"><p> Select keyboard rotation axis.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Left' %}, {% include key content='press|Right' %}</p></td><td style="padding: 5px;"><p> Rotate clockwise or counter-clockwise around the choosen rotation axis.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Up' %}, {% include key content='press|Down' %}</p></td><td style="padding: 5px;"><p> Zoom in or out.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|,' %}, {% include key content='press|.' %}</p></td><td style="padding: 5px;"><p> Move forward or backward along the Z-axis.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Shift|X' %}</p></td><td style="padding: 5px;"><p> Rotate to the ZY-plane of the current source. (Look along the X-axis of the current source.)</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Shift|Y' %} or {% include key content='press|Shift|A' %}</p></td><td style="padding: 5px;"><p> Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.)</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Shift|Z' %}</p></td><td style="padding: 5px;"><p> Rotate to the XY-plane of the current source. (Look along the Z-axis of the current source.)</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|[' %} or {% include key content='press|N' %}</p></td><td style="padding: 5px;"><p> Move to previous timepoint.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|]' %} or {% include key content='press|M' %}</p></td><td style="padding: 5px;"><p> Move to next timepoint.</p></td></tr></tbody></table>
 
-For all navigation commands you can hold {% include key content='press|Shift' %} to rotate and browse 10x faster, or hold {% include key content='press|Ctrl' %} to rotate and browse 10x slower. For example, {% include key content='press|Left' %} rotates by 1° clockwise, while {% include key content='press|Shift|Left' %} rotates by 10°, and {% include key content='press|Ctrl|Left' %} rotates by 0.1°.
+For all navigation commands you can hold {% include key content='press\|Shift' %} to rotate and browse 10x faster, or hold {% include key content='press\|Ctrl' %} to rotate and browse 10x slower. For example, {% include key content='press\|Left' %} rotates by 1° clockwise, while {% include key content='press\|Shift\|Left' %} rotates by 10°, and {% include key content='press\|Ctrl\|Left' %} rotates by 0.1°.
 
-The axis-rotation commands (e.g., {% include key content='press|Shift|X' %}) rotate around the current mouse location. That is, if you press {% include key content='press|Shift|X' %}, the view will pivot such that you see a ZY-slice through the dataset (you look along the X-axis). The point under the mouse will stay fixed, i.e., the view will be a ZY-slice through that point.
+The axis-rotation commands (e.g., {% include key content='press\|Shift\|X' %}) rotate around the current mouse location. That is, if you press {% include key content='press\|Shift\|X' %}, the view will pivot such that you see a ZY-slice through the dataset (you look along the X-axis). The point under the mouse will stay fixed, i.e., the view will be a ZY-slice through that point.
 
 ### Interpolation Mode
 
-Using {% include key content='press|I' %} you can switch between nearest-neighbor and trilinear interpolation schemes. The difference is clearly visible when you zoom in such that individual source pixels are visible.
+Using {% include key content='press\|I' %} you can switch between nearest-neighbor and trilinear interpolation schemes. The difference is clearly visible when you zoom in such that individual source pixels are visible.
 
-![bdv-interpolation.png](/images/pages/Bdv-interpolation.png "bdv-interpolation.png")
+![](/images/pages/Bdv-interpolation.png "bdv-interpolation.png")
 
 Trilinear interpolation results in smoother images but is a bit more expensive computationally. Nearest-neighbor is faster but looks more pixelated.
 
@@ -99,13 +88,13 @@ Trilinear interpolation results in smoother images but is a bit more expensive c
 
 BigDataViewer datasets typically contain more than one source. For a SPIM sequence one usually has multiple angles and possibly fused and deconvoled data on top.
 
-Select {% include bc content='Settings | Visibility & Grouping'%} from the BigDataViewer menu to bring up a dialog to control source visibility. You can also bring up this dialog by the shortcut {% include key content='press|F6' %}.
+Select {% include bc content='Settings | Visibility & Grouping'%} from the BigDataViewer menu to bring up a dialog to control source visibility. You can also bring up this dialog by the shortcut {% include key content='press\|F6' %}.
 
 <img src="/images/pages/Bdv-visibility.png" width="500"/>
 
-Using the current source checkboxes (A in the figure above), you can switch between available sources. The first ten sources can also be made current by the number keys {% include key content='press|1' %} through {% include key content='press|0' %} in the main BigDataViewer window.
+Using the current source checkboxes (A in the figure above), you can switch between available sources. The first ten sources can also be made current by the number keys {% include key content='press\|1' %} through {% include key content='press\|0' %} in the main BigDataViewer window.
 
-To view multiple sources overlaid at the same time, switch to *fused mode* using the checkbox (B). You can also switch between normal and fused mode using the shortcut {% include key content='press|F' %} in the main window. In fused mode individual sources can be turned on and off using the checkboxes (C) or shortcuts {% include key content='press|Shift|1' %} through {% include key content='press|Shift|0' %} in the main window.
+To view multiple sources overlaid at the same time, switch to *fused mode* using the checkbox (B). You can also switch between normal and fused mode using the shortcut {% include key content='press\|F' %} in the main window. In fused mode individual sources can be turned on and off using the checkboxes (C) or shortcuts {% include key content='press\|Shift\|1' %} through {% include key content='press\|Shift\|0' %} in the main window.
 
 Whether in normal or fused mode, the (unselectable) boxes (D) provide feedback on which sources are actually currently displayed. Also the main window provides feedback:
 
@@ -115,13 +104,13 @@ In the top-left corner an overview of the dataset is displayed (E). Visible sour
 
 At the top of the window, the name of the current source is shown (F).
 
-Note, that also in fused mode there is always a *current source*, although this source may not even be visible. Commands such as {% include key content='press|Shift|X' %} (rotate to ZY-plane) refer to the local coordinate system of the current source.
+Note, that also in fused mode there is always a *current source*, although this source may not even be visible. Commands such as {% include key content='press\|Shift\|X' %} (rotate to ZY-plane) refer to the local coordinate system of the current source.
 
 ### Grouping Sources
 
 Often there are sets of sources for which visibility is logically related. For example, in a multi-angle, multi-channel SPIM sequence, you will frequently want to see all channels of a given angle, or all angles of a given channel. If your dataset contains deconvolved data, you may want to see either all raw angles overlaid, or the deconvolved view, respectively. You want to be able to quickly switch between those two views. Turning individual sources on and off becomes tedious in these situations. Therefore, sources can be organized into *groups*. All sources of a *group* can be activated or deactivated at once.
 
-Source grouping is handled in the visibility and grouping dialog, too (menu {% include bc content='Settings | Visibility & Grouping'%} or shortcut {% include key content='press|F6' %}).
+Source grouping is handled in the visibility and grouping dialog, too (menu {% include bc content='Settings | Visibility & Grouping'%} or shortcut {% include key content='press\|F6' %}).
 
 <img src="/images/pages/Bdv-grouping.png" width="500"/>
 
@@ -129,9 +118,9 @@ The lower half of the dialog is dedicated to grouping. There are 10 groups avail
 
 Sources can be assigned to groups using the checkboxes (B). In every line, there are as many checkboxes as there are sources. Sources corresponding to active checkboxes are assigned to the respective group. For example, in the above screenshot there are two sources and therefore two "assigned sources" checkboxes per line The first source is assigned to groups 1 and 2, the second source is assigned to groups 2 and 3. Group 2 has been renamed to "all sources".
 
-*Grouping* can be turned on and off by the checkbox (C) or by using the shortcut {% include key content='press|G' %} in the main window. If grouping is enabled, groups take the role of individual sources: There is one *current group* which is visible in normal mode (all individual sources that are part of this group are overlaid). Groups can be activated or deactivated to determine visibility in fused mode (all individual sources that are part of at least one active group are overlaid).
+*Grouping* can be turned on and off by the checkbox (C) or by using the shortcut {% include key content='press\|G' %} in the main window. If grouping is enabled, groups take the role of individual sources: There is one *current group* which is visible in normal mode (all individual sources that are part of this group are overlaid). Groups can be activated or deactivated to determine visibility in fused mode (all individual sources that are part of at least one active group are overlaid).
 
-Groups can be made current and made active or inactive using the checkboxes (D). Also, if grouping is enabled the number key shortcuts in the main BigDataViewer window act on groups instead of individual sources. That is, groups 1 through 10 can be made current by keys {% include key content='press|1' %} through {% include key content='press|0' %}. Similarly, shortcuts {% include key content='press|Shift|1' %} through {% include key content='press|Shift|0' %} in the main window activate or deactivate groups 1 through 10 for visibility in fused mode.
+Groups can be made current and made active or inactive using the checkboxes (D). Also, if grouping is enabled the number key shortcuts in the main BigDataViewer window act on groups instead of individual sources. That is, groups 1 through 10 can be made current by keys {% include key content='press\|1' %} through {% include key content='press\|0' %}. Similarly, shortcuts {% include key content='press\|Shift\|1' %} through {% include key content='press\|Shift\|0' %} in the main window activate or deactivate groups 1 through 10 for visibility in fused mode.
 
 If grouping is enabled, the name of the current group is shown at the top of the main window.
 
@@ -139,7 +128,7 @@ If grouping is enabled, the name of the current group is shown at the top of the
 
 ### Adjusting Brightness and Color
 
-To change the brightness, contrast, or color of particular sources select {% include bc content='Settings | Brightness & Color'%} or press the shortcut {% include key content='press|S' %}. This brings up the brightness and color settings dialog.
+To change the brightness, contrast, or color of particular sources select {% include bc content='Settings | Brightness & Color'%} or press the shortcut {% include key content='press\|S' %}. This brings up the brightness and color settings dialog.
 
 <img src="/images/pages/Bdv-brightness-1.png" width="500"/>
 
@@ -147,7 +136,7 @@ The *min* and *max* sliders (A) can be used to adjust the brightness and contras
 
 When a new dataset is opened, BigDataViewer tries to estimate good initial *min* and *max* settings by looking at the first image of the dataset.
 
-BigDataViewer datasets are currently always stored with 16 bits per pixel, however the data does not always exploit the full value range 0 ... 65535. The example drosophila dataset uses values in the range of perhaps 0 ... 1000, except for the much brighter fiducial beads around the specimen. The *min* and *max* sliders in this case are a bit fiddly to use, because they span the full 16 bit range with the interesting region squeezed into the first few pixels. This can be remedied by adjusting the range of the sliders. For this, click on the \>\> dialog button (B). This shows two additional input fields, where the range of the sliders can be adjusted. In the following screenshot, the leftmost value of the slider range has been set to 0 and the rightmost value to 2000, making the sliders much more useful.
+BigDataViewer datasets are currently always stored with 16 bits per pixel, however the data does not always exploit the full value range 0 ... 65535. The example drosophila dataset uses values in the range of perhaps 0 ... 1000, except for the much brighter fiducial beads around the specimen. The *min* and *max* sliders in this case are a bit fiddly to use, because they span the full 16 bit range with the interesting region squeezed into the first few pixels. This can be remedied by adjusting the range of the sliders. For this, click on the &gt;&gt; dialog button (B). This shows two additional input fields, where the range of the sliders can be adjusted. In the following screenshot, the leftmost value of the slider range has been set to 0 and the rightmost value to 2000, making the sliders much more useful.
 
 <img src="/images/pages/Bdv-brightness-2.png" width="500"/>
 
@@ -167,19 +156,19 @@ Finally, at the bottom of the dialog (D) colors can be assigned to sources. Ther
 
 BigDataViewer allows to bookmark the current view. You can set bookmarks for interesting views or particular details of your dataset to easily navigate back to those views later.
 
-Each bookmark has an assigned shortcut key, i.e., you can have bookmarks "a", "A", "b", ..., "1", "2", etc. To set a bookmark for the current view, press {% include key content='press|Shift|B' %} and then the shortcut you want to use for the bookmark. To recall bookmark, press {% include key content='press|B' %} and then the shortcut of the bookmark.
+Each bookmark has an assigned shortcut key, i.e., you can have bookmarks "a", "A", "b", ..., "1", "2", etc. To set a bookmark for the current view, press {% include key content='press\|Shift\|B' %} and then the shortcut you want to use for the bookmark. To recall bookmark, press {% include key content='press\|B' %} and then the shortcut of the bookmark.
 
-BigDataViewer provides visual feedback for setting and recalling bookmarks. When you press {% include key content='press|Shift|B' %}, the message "**set bookmark:**" appears in the lower right corner of the main window, prompting to press the bookmark shortcut next.
+BigDataViewer provides visual feedback for setting and recalling bookmarks. When you press {% include key content='press\|Shift\|B' %}, the message "**set bookmark:**" appears in the lower right corner of the main window, prompting to press the bookmark shortcut next.
 
 <img src="/images/pages/Bdv-set-bookmark.png" width="500"/>
 
-Now press the key you want to use as a shortcut, for example {% include key content='press|A' %}. The prompt message will change to "**set bookmark: a**" indicating that you have set a bookmark with shortcut {% include key content='press|A' %}. Instead of pressing a shortcut key you can abort using {% include key content='press|esc' %}.
+Now press the key you want to use as a shortcut, for example {% include key content='press\|A' %}. The prompt message will change to "**set bookmark: a**" indicating that you have set a bookmark with shortcut {% include key content='press\|A' %}. Instead of pressing a shortcut key you can abort using {% include key content='press\|esc' %}.
 
-Similarly, when you press {% include key content='press|B' %} to recall a bookmark, the prompt message "**go to bookmark:**" appears. Now press the shortcut of the bookmark you want to recall, for example {% include key content='press|A' %}. The prompt message will change to "**go to bookmark: a**" and the view will move to the bookmarked location. Instead of pressing a shortcut key you can abort using {% include key content='press|esc' %}.
+Similarly, when you press {% include key content='press\|B' %} to recall a bookmark, the prompt message "**go to bookmark:**" appears. Now press the shortcut of the bookmark you want to recall, for example {% include key content='press\|A' %}. The prompt message will change to "**go to bookmark: a**" and the view will move to the bookmarked location. Instead of pressing a shortcut key you can abort using {% include key content='press\|esc' %}.
 
-Note, that bookmark shortcuts are case-sensitive, i.e., {% include key content='press|A' %} and {% include key content='press|Shift|A' %} refer to distinct bookmarks "a" and "A" respectively.
+Note, that bookmark shortcuts are case-sensitive, i.e., {% include key content='press\|A' %} and {% include key content='press\|Shift\|A' %} refer to distinct bookmarks "a" and "A" respectively.
 
-The bookmarking mechanism can also be used to bookmark and recall orientations. Press {% include key content='press|O' %} and then a bookmark shortcut to recall only the orientation of that bookmark. This rotates the view into the rotation of the bookmarked view (but does not zoom or translate to the bookmarked location). The rotation is around the current mouse location (i.e., the point under the mouse stays fixed).
+The bookmarking mechanism can also be used to bookmark and recall orientations. Press {% include key content='press\|O' %} and then a bookmark shortcut to recall only the orientation of that bookmark. This rotates the view into the rotation of the bookmarked view (but does not zoom or translate to the bookmarked location). The rotation is around the current mouse location (i.e., the point under the mouse stays fixed).
 
 ### Loading and Saving Settings
 
@@ -201,7 +190,8 @@ Select the XML file of a dataset, then choose the time-point and source (setup) 
 
 Note that the import function is macro-recordable. Thus, you can make use of it to batch-process images from BigDataViewer datasets.
 
-## Exporting Datasets for the BigDataViewer
+Exporting Datasets for the BigDataViewer
+----------------------------------------
 
 BigDataViewer uses a custom file-format that is optimized for fast arbitrary re-slicing at various scales. This file format is build on open standards [XML](http://www.w3.org/XML/) and [HDF5](http://www.hdfgroup.org/HDF5/). XML is used to store meta-data and HDF5 is used to store image volumes. (Actually, we support several ways to store the image volumes besides HDF5. For example, the volume data can be provided by a web service for remote access.)
 
@@ -213,14 +203,14 @@ Each BigDataViewer dataset contains a set of 3D grayscale image volumes organize
 
 A dataset comprises an XML file to store meta-data and one or more HDF5 files to store the raw images. Among other things, the XML file contains
 
-  - the path of the HDF5 file(s),
-  - a number of *setups*,
-  - a number of *timepoints*,
-  - the registration of each *view* into the global coordinate system.
+-   the path of the HDF5 file(s),
+-   a number of *setups*,
+-   a number of *timepoints*,
+-   the registration of each *view* into the global coordinate system.
 
 Each *view* has one corresponding image volume which is stored in the HDF5 file. Raw image volumes are stored as multi-resolution pyramids: In addition to the original resolution, several progressively down-scaled resolutions (mipmaps) are stored. This serves two purposes. First, using mipmaps minimizes aliasing effects when rendering a zoomed-out view of the dataset\~\\cite{Williams:1983it}. Second, and more importantly, using mipmaps reduces data access time and thus increases the perceived responsiveness for navigation. Low-resolution mipmaps take up less memory and therefore load faster from disk. New chunks of data must be loaded when the user browses to a part of the dataset that is not currently cached in memory. In this situation, BigDataViewer can rapidly load and render low-resolution data, filling in high resolution detail later as it becomes available. This multi-resolution pyramid scheme is illustrated in the following figure.
 
-![bdvTikz-pyramidblocks.png](/images/pages/BdvTikz-pyramidblocks.png "bdvTikz-pyramidblocks.png")
+![](/images/pages/BdvTikz-pyramidblocks.png "bdvTikz-pyramidblocks.png")
 
 Each raw image volume is stored in multiple resolutions, the original resolution (left) and successively smaller, downsampled versions (right). Each resolution is stored in a chunked representation, split into small 3D blocks.
 
@@ -228,7 +218,7 @@ Each level of the multi-resolution pyramid is stored as a *chunked multi-dimensi
 
 Rendering a virtual slice requires data contained within a small subset of chunks. Only chunks that touch the slice need to be loaded, as illustrated in the following Figure.
 
-![bdvTikz-sliceblocks.png](/images/pages/BdvTikz-sliceblocks.png "bdvTikz-sliceblocks.png")
+![](/images/pages/BdvTikz-sliceblocks.png "bdvTikz-sliceblocks.png")
 
 When rendering a slice (schematically illustrated by the blue line) the data of only a small subset of blocks is required. In the original resolution 5 blocks are required, while only 2, respectively 1 block is required for lower resolutions. Therefore, less data needs to be loaded to render a low-resolution slice. This allows low-resolution versions to be loaded and rendered rapidly. High-resolution detail is filled in when the user stops browsing to view a certain slice for an extended period of time.
 
@@ -236,15 +226,15 @@ Each of these chunks, however, is loaded in full, although only a subset of voxe
 
 All loaded chunks are cached in RAM. During interactive navigation, subsequent slices typically intersect with a similar set of chunks because their pose has changed only moderately, i.e.. cached data are re-used. Only chunks that are not currently in the cache need to be loaded from disk, as illustrated in the following Figure.
 
-![bdvTikz-cacheblocks.png](/images/pages/BdvTikz-cacheblocks.png "bdvTikz-cacheblocks.png")
+![](/images/pages/BdvTikz-cacheblocks.png "bdvTikz-cacheblocks.png")
 
 For rendering the slice indicated by the red line, only the red blocks need to be loaded. The blue blocks are already cached from rendering the blue slice before. Combined with the multi-resolution mipmap representation, this chunking and caching scheme allows for fluid interactive browsing of very large datasets.
 
 The parameters of the mipmap and chunking scheme are specific to each dataset and they are fully configurable by the user. In particular, when exporting images to the BigDataViewer format, the following parameters are adjustable:
 
-  - the number of mipmap levels,
-  - the subsampling factors in each dimension for each mipmap level,
-  - the chunk sizes in each dimension for each mipmap level.
+-   the number of mipmap levels,
+-   the subsampling factors in each dimension for each mipmap level,
+-   the chunk sizes in each dimension for each mipmap level.
 
 BigDataViewer suggests sensible parameter settings, however, for particular applications and data properties a user may tweak these parameters for optimal performance.
 
@@ -262,9 +252,9 @@ At the bottom of the dialog (D), the export path is defined. Specify the path of
 
 In part (B) of the dialog the *value range* of the image must be specified. BigDataViewer always stores images with 16-bit precision currently, while the image you want to export is not necessarily 16-bit. The value range defines the minimum and maximum of the image you want to export. This is mapped to the 16-bit range for export. I.e., the minimum of the value range will be mapped to the minimum of the unsigned 16-bit range (0). The maximum of the value range will be mapped to the maximum of the unsigned 16-bit range (65535). In the drop-down menu you can select one the following options to specify how the value range should be determined:
 
-  - *"Use ImageJ's current min/max setting"*. The minimum and maximum set in ImageJ's Brightness\&Contrast are used. Note, that image intensities outside that range will be clipped to the minimum or maximum, respectively.
-  - *"Compute min/max of the (hyper-)stack"*. Compute the minimum and maximum of the stack and use these. Note, that this may take some time to compute because it requires to look at all pixels of the stack you want to export.
-  - *"Use values specified below"*. Use the values specified in the *Min* and *Max* fields (B) of the export dialog. Note, that image intensities outside that range will be clipped to the minimum or maximum, respectively.
+-   *"Use ImageJ's current min/max setting"*. The minimum and maximum set in ImageJ's Brightness&Contrast are used. Note, that image intensities outside that range will be clipped to the minimum or maximum, respectively.
+-   *"Compute min/max of the (hyper-)stack"*. Compute the minimum and maximum of the stack and use these. Note, that this may take some time to compute because it requires to look at all pixels of the stack you want to export.
+-   *"Use values specified below"*. Use the values specified in the *Min* and *Max* fields (B) of the export dialog. Note, that image intensities outside that range will be clipped to the minimum or maximum, respectively.
 
 After you have specified the value range and selected and export path, press *OK* to export the dataset. Messages about the progress of the operation are displayed in the ImageJ Log window.
 
@@ -284,10 +274,10 @@ Finally, in part (C) of the export dialog, you may choose to split your dataset 
 
 For example, assume your dataset has 4 setups and 10 timepoints. Setting *timepoints per partition = 5* and *setups per partition = 2* will result in 4 HDF5 partitions:
 
-  - setups 1 and 2 of timepoints 1 through 5,
-  - setups 3 and 4 of timepoints 1 through 5,
-  - setups 1 and 2 of timepoints 6 through 10, and
-  - setups 3 and 4 of timepoints 6 through 10.
+-   setups 1 and 2 of timepoints 1 through 5,
+-   setups 3 and 4 of timepoints 1 through 5,
+-   setups 1 and 2 of timepoints 6 through 10, and
+-   setups 3 and 4 of timepoints 6 through 10.
 
 Setting *timepoints per partition = 0* or *setups per partition = 0* means that the dataset is not split in the respective dimension.
 
@@ -323,8 +313,9 @@ First it is necessary to define an XML file that describes the parameters of the
 
 A multi-view dataset consisting of 715 six angle time points (altogether 2.1 Terabytes) converts to HDF5 with compression in 65 minutes using about 200 processors working in parallel.
 
-## Publication
+Publication
+-----------
 
-  - {% include publication content='BigDataViewer' %}
+-   {% include publication content='BigDataViewer' %}
 
  

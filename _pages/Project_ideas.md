@@ -9,9 +9,11 @@ description: test description
 
 This page contains a loose list of ideas for cool/useful projects that have some relation to Fiji
 
-# Visualization
+Visualization
+=============
 
-## 3-way viewer for Block-Face EM image volumes based in ImgLib cells
+3-way viewer for Block-Face EM image volumes based in ImgLib cells
+------------------------------------------------------------------
 
 The [Imglib](Imglib ) provides a cell container, where each cell is an arbitrary n-dimensional image block potentially paged out to a file. Consider the specific case of isotropic 3d-cells stored with lossless compression. This setup would enable efficient browsing and analysis of image volumes larger than available RAM, while observing a specific 3d ROI from XY, YZ and XZ planes. These image volumes are common in [Block-Face Serial Scanning Electron Microscopy](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329), a technique now commercialized as "Gatan 3-way view EM." See this page for [theory](http://www.gatan.com/knowhow/knowhow_15/3view.htm) and for [pictures and examples](http://www.gatan.com/resources/knowhow/kh18-3view.php).
 
@@ -19,7 +21,8 @@ The [Imglib](Imglib ) provides a cell container, where each cell is an arbitrary
 **Language:** any supported by Fiji, preferably java.  
 **Contact:** {% include person content='Albertcardona' %}
 
-## Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window
+Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window
+------------------------------------------------------------------
 
 The idea is to be able to display multiple virtual hyperstack-type data sets in a single multi-color composite window. I've already arranged this using multiple QuickTime Movies or AVIs. But the ideal will be to allow overlay from mixed data of any of the many BioFormats-supported file types.
 
@@ -27,28 +30,31 @@ The user would be able to overlay, realign and fit the separate channels in 4 di
 
 The project would consist of
 
-  - Writing a class extending VirtualStack.java class for each type of input data file series. Currently, these exist for FileSeriesFromList and QTVirtualStack.
+-   Writing a class extending VirtualStack.java class for each type of input data file series. Currently, these exist for FileSeriesFromList and QTVirtualStack.
 
-<!-- end list -->
+<!-- -->
 
-  - Create a MultiVirtualHyperStack.java class that can organize multiple VirtualStack types into a single VirtualHyperStack displayed via a single ImagePlus and StackWindow. The getProcessor() method in this class must be able to sort out the file coordinates of any channel/slice/frame requested from the mixed-format virtual stack and call getProcessor() from each of the specialized VirtualStack classes for each format.
+-   Create a MultiVirtualHyperStack.java class that can organize multiple VirtualStack types into a single VirtualHyperStack displayed via a single ImagePlus and StackWindow. The getProcessor() method in this class must be able to sort out the file coordinates of any channel/slice/frame requested from the mixed-format virtual stack and call getProcessor() from each of the specialized VirtualStack classes for each format.
 
-<!-- end list -->
+<!-- -->
 
-  - Create a control panel that allows adjustments of XYZT position for any single VirtualHyperStack that is a component of the mixed overlay window.
+-   Create a control panel that allows adjustments of XYZT position for any single VirtualHyperStack that is a component of the mixed overlay window.
 
 **Goal:** Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window.  
 **Language:** Java.  
 **Contact:** Bill Mohler (wmohler@neuron.uchc.edu)  
 **Plugin:** [ python script for multi-stack composite image](Jython_Scripting#Visualize_any_number_of_TIFF_stacks_in_a_single_composite_multi-color_image_stack )
 
-## Interactively adjustable intensity/LUT curves
+Interactively adjustable intensity/LUT curves
+---------------------------------------------
 
 In Fiji, you can adjust the dynamic range of an image by calling {% include bc content='Image | Adjust | Brightness & Contrast'%}. However, this only lets you choose a linear mapping between pixel intensity and lookup table. This project aims to provide non-linear controls, such as piecewise linear functions, gamma curves, splines, etc
 
-# Image processing plugins
+Image processing plugins
+========================
 
-## Applying machine learning to the image segmentation problem
+Applying machine learning to the image segmentation problem
+-----------------------------------------------------------
 
 The term *image segmentation* describes the task where objects in an image are to be outlined, so that every pixel is connected to either a named object, or background.
 
@@ -62,8 +68,8 @@ We will consider applications for implementations that are either as generic as 
 
 We have several data sets of images and their corresponding manual segmentations (for training the algorithm). See for example:
 
-  - <i>Drosophila</i> larva brain imaged with ssTEM: http://t2.ini.uzh.ch/data.html
-  - <i>Drosophila</i> embryonic nuclei imaged with confocal microscopy.
+-   <i>Drosophila</i> larva brain imaged with ssTEM: [http://t2.ini.uzh.ch/data.html](http://t2.ini.uzh.ch/data.html)
+-   <i>Drosophila</i> embryonic nuclei imaged with confocal microscopy.
 
 You are welcome to use any scientifically-relevant dataset of your choice, but we will give priority to biologically-oriented data sets.
 
@@ -71,21 +77,23 @@ You are welcome to use any scientifically-relevant dataset of your choice, but w
 **Language:** Java.  
 **Mentor:** {% include person content='Iarganda' %}, {% include person content='Albertcardona' %}  
 
-## Implementing algorithms for Imglib
+Implementing algorithms for Imglib
+----------------------------------
 
 The new imglib supports dimension-, storage- and data type independent image processing. This library has some algorithms built-in already but there is a strong need to generically implement more general image processing algorithms, storage strategies and data types such as:
 
-  - Interpolation (Cubic, Spline, ...)
-  - Entropy Filter, Average Filter, Percentile(Min, Median, Max) Filter, ...
-  - Memory Management for partial image loading
-  - Color Spaces and Color Space Conversions
-  - Efficient representation of non-raster images (based on 2d polygonal shapes and 3d/4d meshes)
+-   Interpolation (Cubic, Spline, ...)
+-   Entropy Filter, Average Filter, Percentile(Min, Median, Max) Filter, ...
+-   Memory Management for partial image loading
+-   Color Spaces and Color Space Conversions
+-   Efficient representation of non-raster images (based on 2d polygonal shapes and 3d/4d meshes)
 
 **Goal:** Implement generic algorithms for image processing.  
 **Language:** Java.  
 **Mentor:** [Stephan Preibisch](http://fly.mpi-cbg.de/preibisch), [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld)\], [Tobias Pietzsch](http://www.wv.inf.tu-dresden.de/People/Pietzsch.html), {% include person content='Albertcardona' %}  
 
-## Colorizing algorithms
+Colorizing algorithms
+---------------------
 
 There are a number of publications about turning greyscale images into color images. This project is about implementing as many of them as possible.
 
@@ -95,11 +103,13 @@ Note: this is an ill-posed problem, as there is not enough information in the gr
 **Language:** Java.  
 **Mentor:** J. Schindelin (johannes.schindelin AT gmx.de)  
 
-## Image selector/sorter
+Image selector/sorter
+---------------------
 
 Implement an algorithm that sorts a number of images by features, such as color. Inspired by Kai-Uwe Barthel's [pixolu](http://pixolu.de) project.
 
-## A set of more powerful painting brushes and image editing tools
+A set of more powerful painting brushes and image editing tools
+---------------------------------------------------------------
 
 Even if Fiji aims at scientific image processing rather than beautifying photographs, it might be fun to take your holiday pictures and post-process them with the image processing software you are familiar with.
 
@@ -109,7 +119,8 @@ Possible tools to do so would be airbrushes (allowing for transparent colors) or
 **Language:** Java.  
 **Mentor:** J. Schindelin (johannes.schindelin AT gmx.de)  
 
-## Wavelet inpainting
+Wavelet inpainting
+------------------
 
 Implement a simple inpainting method (i.e. restore missing/unwanted parts of the image marked by a ROI) using wavelets: apply the wavelet transform, and then, on each level, use a diffusion algorithm to deduce a smooth signal from the surrounding parts, and finally inverse-transform the wavelet to get the restored image.
 
@@ -117,19 +128,19 @@ Implement a simple inpainting method (i.e. restore missing/unwanted parts of the
 **Language:** Java.  
 **Mentor:** \[ Albert Cardona\])  
 
-# Scripting
+Scripting
+=========
 
-## Add JMathLib (MATLAB clone) support
+Add JMathLib (MATLAB clone) support
+-----------------------------------
 
 Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB ) scripts. While it is [wrong to think of pixels as little squares](ftp_//ftp.alvyray.com/Acrobat/6_Pixel.pdf), and literally all [MATLAB](MATLAB ) scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB ) licenses just for that purpose.
 
-MATLAB bundles a Java runtime (and in fact, all of [MATLAB](MATLAB )'s GUI is implemented in Java\!) and allows the user to instantiate Java classes and call methods on them:
+MATLAB bundles a Java runtime (and in fact, all of [MATLAB](MATLAB )'s GUI is implemented in Java!) and allows the user to instantiate Java classes and call methods on them:
 
-``` matlab
-import java.io.File;
-f = File('/usr/local/Fiji.app/');
-f.exists()
-```
+    import java.io.File;
+    f = File('/usr/local/Fiji.app/');
+    f.exists()
 
 Happily, there is a [MATLAB](MATLAB ) clone written in Java: [JMathLib](http://www.jmathlib.de/). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](MATLAB ) scripts can be executed just like all other ImageJ scripts, too.
 
@@ -139,65 +150,75 @@ The proof-of-concept version of [the Refresh\_JMathLib\_Scripts class](https://f
 
 The following issues need to be tackled in the JMathLib source code:
 
-  - In embedded (non-standalone) mode, the [FunctionManager installs](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/FunctionManager.java;hb=refs/heads/fiji#l45) a [WebFunctionLoader](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/WebFunctionLoader.java;hb=refs/heads/fiji) which disallows new functions to be added. Either the WebFunctionLoader needs to be taught to allow (maybe optionally) new functions to be added, or there needs to be another mode in which JMathLib is embedded, but still allows new functions to be defined.
+-   In embedded (non-standalone) mode, the [FunctionManager installs](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/FunctionManager.java;hb=refs/heads/fiji#l45) a [WebFunctionLoader](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/WebFunctionLoader.java;hb=refs/heads/fiji) which disallows new functions to be added. Either the WebFunctionLoader needs to be taught to allow (maybe optionally) new functions to be added, or there needs to be another mode in which JMathLib is embedded, but still allows new functions to be defined.
 
-<!-- end list -->
+<!-- -->
 
-  - In embedded mode, JMathLib <u>must not</u> [call *System.exit()*](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/toolbox/jmathlib/system/quit.java;hb=refs/heads/fiji).
+-   In embedded mode, JMathLib <u>must not</u> [call *System.exit()*](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/toolbox/jmathlib/system/quit.java;hb=refs/heads/fiji).
 
-<!-- end list -->
+<!-- -->
 
-  - [Only in standalone mode](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/FunctionManager.java;hb=refs/heads/fiji#l45) are the available functions discovered at runtime rather than [read from an embedded file](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/WebFunctionLoader.java;hb=refs/heads/fiji#l40). This file should not be necessary. JMathLib should detect whether it is bundled in a .jar or not, and use [a JarInputStream](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/util/jar/JarInputStream.html) or traverse the directory hierarchy otherwise. Probably the best place to do this is to teach the [FileFunctionLoader](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/FileFunctionLoader.java;hb=refs/heads/fiji) to accept a [URL](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/net/URL.html) instead of a [File](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/io/File.html), too.
+-   [Only in standalone mode](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/FunctionManager.java;hb=refs/heads/fiji#l45) are the available functions discovered at runtime rather than [read from an embedded file](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/WebFunctionLoader.java;hb=refs/heads/fiji#l40). This file should not be necessary. JMathLib should detect whether it is bundled in a .jar or not, and use [a JarInputStream](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/util/jar/JarInputStream.html) or traverse the directory hierarchy otherwise. Probably the best place to do this is to teach the [FileFunctionLoader](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/FileFunctionLoader.java;hb=refs/heads/fiji) to accept a [URL](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/net/URL.html) instead of a [File](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/io/File.html), too.
 
-<!-- end list -->
+<!-- -->
 
-  - JMathLib supports Java via a [non-standard mechanism](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/plugins/dynjava/JavaPlugin.java;hb=refs/heads/fiji) based on [DynamicJava](http://old.koalateam.com/djava/). This is incompatible with [MATLAB](MATLAB ), so there needs to be native support using [reflection](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/package-summary.html) to support the method to instantiate Java objects mentioned above.
+-   JMathLib supports Java via a [non-standard mechanism](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/plugins/dynjava/JavaPlugin.java;hb=refs/heads/fiji) based on [DynamicJava](http://old.koalateam.com/djava/). This is incompatible with [MATLAB](MATLAB ), so there needs to be native support using [reflection](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/package-summary.html) to support the method to instantiate Java objects mentioned above.
 
 This issue needs to be tackled in Fiji's source code:
 
-  - JMathLib's image toolbox does not contain much. Even the most basic functions are missing. And even if there were functions, we would have to override them, because the functions need to be done in a way so that they can use and interact with ImageJ. The best approach may be to start by implementing the functions mentioned in [[MATLAB](MATLAB )'s image processing toolbox'](http://www.mathworks.com/help/toolbox/images/index.html) *Getting Started* section, by implementing *.m* files that call directly into ImagePlus (using the above-mentioned technique).
+-   JMathLib's image toolbox does not contain much. Even the most basic functions are missing. And even if there were functions, we would have to override them, because the functions need to be done in a way so that they can use and interact with ImageJ. The best approach may be to start by implementing the functions mentioned in [[MATLAB](MATLAB )'s image processing toolbox'](http://www.mathworks.com/help/toolbox/images/index.html) *Getting Started* section, by implementing *.m* files that call directly into ImagePlus (using the above-mentioned technique).
 
 **Goal:** Integrate JMathLib as a new scripting language.  
 **Language:** Java.  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)  
 
-## A Javascript Recorder
+A Javascript Recorder
+---------------------
 
 Similar to the Macro Recorder but producing Javascript instead. There is a Javascript recorder in ImageJ right now, but it is in no way integrated into the Fiji Script Editor. It also appears that the Javascript recorder is not as robust as the Macro recorder yet.
 
-## Code templates in the Script Editor
+Code templates in the Script Editor
+-----------------------------------
 
 The Script Editor provides a fine way to script small plugins that do some simple tasks. If you know how.
 
 Provide a good number of templates so that the user does not have to start from scratch. A good template will also include rather more documentation than less, so that ideally the user does not have to look up the appropriate API calls, but just modifies the well-documented code.
 
-## Make Script Editor rename a Java class automatically on *Save As...*
+Make Script Editor rename a Java class automatically on *Save As...*
+--------------------------------------------------------------------
 
 A public Java class must be compiled from a source file reflecting the class name, so it makes sense to rename the Java class when the file is saved under a new name. Teach the Script Editor to do that.
 
-## Add a *Bookmark* function to the Script Editor
+Add a *Bookmark* function to the Script Editor
+----------------------------------------------
 
 Often, it would be very convenient to remember the current cursor position to come back to, after looking around in other parts of the file. Maybe {% include key content='Ctrl' %}+{% include key content='B' %} (together with a menu entry), or {% include key content='Ctrl' %}+{% include key content='<digit>' %} are good ways to implement the user interface. (The code should be similar to the *Goto Line...* function.
 
-## Add support for Haskell (via Jaskell) and Tcl (via Jacl)
+Add support for Haskell (via Jaskell) and Tcl (via Jacl)
+--------------------------------------------------------
 
 We already have Jacl in Fiji, as it is a dependency of Batik. There is also a pure-Java implementation of the Haskell language, and both should be relatively easy to integrate into Fiji as scripting languages.
 
 For Tcl, the Script Editor would need minimal adjustments, as RSyntaxTextArea already has support for Tcl, but for Haskell, a new TokenMaker would have to be implemented.
 
-## Add {% include bc content='Edit | Find in files...'%}
+Add {% include bc content='Edit | Find in files...'%}
+------------------------------------------------------
 
 We already have a mechanism to jump between compile errors and locations of a stack trace. The same mechanism could be used to present results from a search through multiple files.
 
-## Add a {% include wikipedia title='Read-eval-print loop' text='"REPL" (Read-Eval-Print-Loop)'%} to the [Script Editor](Script_Editor )
+Add a {% include wikipedia title='Read-eval-print loop' text='"REPL" (Read-Eval-Print-Loop)'%} to the [Script Editor](Script_Editor )
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Detect loops after macro recording
+Detect loops after macro recording
+----------------------------------
 
 A special form of an autocorrelation (on text) should be pretty good an indication where the user repeated things that might want to be done in a loop instead. This would help users with little background in programming to write powerful plugins through the macro recorder.
 
-# Fiji development environment/infrastructure
+Fiji development environment/infrastructure
+===========================================
 
-## GUI Testing framework
+GUI Testing framework
+---------------------
 
 We have some rudimentary GUI testing in the *tests* branch but it may be better to use an established GUI framework such as [Jemmy](https://jemmy.dev.java.net/) or [Marathon](http://www.marathontesting.com/Marathon.html).
 
@@ -207,7 +228,8 @@ The idea is, in any case, to record mouse moves and keyboard presses, optionally
 **Language:** Mainly Java  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)
 
-## Interface between R and ImageJ/Fiji
+Interface between R and ImageJ/Fiji
+-----------------------------------
 
 It would be nice to have a set of implemented procedures so IJ/Fiji can run statistical procedures directly from Results tables, etc).
 
@@ -217,18 +239,17 @@ It would be nice to have the opposite direction working, to call R from Fiji. As
 
 To overcome the typical problem of loading native libraries via System.loadLibrary() needing special platform-dependent settings, we should do something like this:
 
-``` java
-// prohibit JRI to call System.exit(1);
-System.setProperty("jri.ignore.ule", "yes");
-if (!Rengine.jriLoaded) {
-        // not found on the library path
-        System.load("/absolute/path/to/the/library");
-        Rengine.jriLoaded = true;
-}
-Rengine re = new Rengine();
-```
+    // prohibit JRI to call System.exit(1);
+    System.setProperty("jri.ignore.ule", "yes");
+    if (!Rengine.jriLoaded) {
+            // not found on the library path
+            System.load("/absolute/path/to/the/library");
+            Rengine.jriLoaded = true;
+    }
+    Rengine re = new Rengine();
 
-## Teach the Fiji Updater to accept other sites in addition to [fiji.sc](fiji.sc )
+Teach the Fiji Updater to accept other sites in addition to [fiji.sc](fiji.sc )
+-----------------------------------------------------------------------------------------
 
 The Fiji Updater always looks for a static file containing an XML database of Fiji plugins (both current and past versions) on our website. To put new versions or new plugins there (to *upload into the updater*), you have to be a Fiji developer with write permission for that particular directory on our server.
 
@@ -236,29 +257,30 @@ In some cases, there are plugins that are either too sensitive, or too specific 
 
 The project is not without complications, though:
 
-  - The XML database is saved as a file in the local Fiji directory, and it is always checked at startup whether the timestamp is newer than the timestamp of the XML database on the server. If you have multiple update sites, it should be handled in a way, where the local XML database reflects the sources of the metadata, and for uploading, a temporary XML database must be constructed for one particular upload site.
+-   The XML database is saved as a file in the local Fiji directory, and it is always checked at startup whether the timestamp is newer than the timestamp of the XML database on the server. If you have multiple update sites, it should be handled in a way, where the local XML database reflects the sources of the metadata, and for uploading, a temporary XML database must be constructed for one particular upload site.
 
-<!-- end list -->
+<!-- -->
 
-  - There may be conflicts between plugins that are official Fiji plugins, but also available from a secondary site. This has to be coped with (it is not clear what the best strategy should be: take the official Fiji version over the secondary site? let the user choose?)
+-   There may be conflicts between plugins that are official Fiji plugins, but also available from a secondary site. This has to be coped with (it is not clear what the best strategy should be: take the official Fiji version over the secondary site? let the user choose?)
 
-<!-- end list -->
+<!-- -->
 
-  - With a new site, you need to be able to [upload plugins](Uploading_plugins ) to that site, too. There needs to be a very good way to prevent confusion, lest the plugin is uploaded to the <u>wrong</u> site.
+-   With a new site, you need to be able to [upload plugins](Uploading_plugins ) to that site, too. There needs to be a very good way to prevent confusion, lest the plugin is uploaded to the <u>wrong</u> site.
 
-<!-- end list -->
+<!-- -->
 
-  - To determine whether a developer can upload new plugins (because there are new versions), the Fiji Updater scans the complete plugins directory, along with a few other places where macros, 3rd party libraries, or the Fiji launcher might hide. The Fiji Updater needs to learn <u>not</u> to offer these plugins for upload to a secondary site, but only the non-Fiji ones.
+-   To determine whether a developer can upload new plugins (because there are new versions), the Fiji Updater scans the complete plugins directory, along with a few other places where macros, 3rd party libraries, or the Fiji launcher might hide. The Fiji Updater needs to learn <u>not</u> to offer these plugins for upload to a secondary site, but only the non-Fiji ones.
 
-<!-- end list -->
+<!-- -->
 
-  - It is unlikely that our current Fiji Updater can start a database from scratch. This has to be verified, and if there is no code for that yet, it has to be implemented.
+-   It is unlikely that our current Fiji Updater can start a database from scratch. This has to be verified, and if there is no code for that yet, it has to be implemented.
 
-<!-- end list -->
+<!-- -->
 
-  - Cross-site dependencies should be handled by having hints in the XML database as to what other site is supposed to have the newest dependency.
+-   Cross-site dependencies should be handled by having hints in the XML database as to what other site is supposed to have the newest dependency.
 
-## Integrate [JGit](http://www.jgit.org) into Fiji
+Integrate [JGit](http://www.jgit.org) into Fiji
+-----------------------------------------------
 
 An important part of Fiji's success is the ease with which developers can collaborate through the use of [Git](Git ).
 
@@ -266,7 +288,8 @@ There exists a pure Java implementation of Git called [JGit](http://www.jgit.org
 
 It would be nice to have it integrated into Fiji so that the Script Editor can give the developers an even smoother developing experience.
 
-## Make the Fiji Updater more intelligent about restarting
+Make the Fiji Updater more intelligent about restarting
+-------------------------------------------------------
 
 Only when there are updates outside plugins/ is it necessary to do a full restart; otherwise, a simple "Update Menus" will do the trick.
 
@@ -274,7 +297,8 @@ Further, after the message "You need to restart Fiji" (or the Update Menus), the
 
 And finally, if a restart is required, the user could be asked whether a restart should be attempted, and a JNI-provided function could be called with a list of open images (if there are unsaved images, they should be saved temporarily into temporary files) and result tables, which then re-executes Fiji appropriately.
 
-## Make the Object Inspector more useful
+Make the Object Inspector more useful
+-------------------------------------
 
 There is a tool in Fiji that lets you sift through all open frames and inspect the corresponding objects (and their fields, in a recursive fashion).
 
@@ -282,9 +306,11 @@ However, there is no connection to the script editor yet (where you could open t
 
 Additionally, there could be a mode where you open the hierarchy of objects starting with the object the cursor hovers over, updated dynamically. This could be even more useful if there was a mode to show only the listeners of the objects, so that you can easily determine what code is responsible, say, to handle the click on a specific OK button.
 
-# User interface improvements
+User interface improvements
+===========================
 
-## Add a meta-plugin to run other plugins with ranges of parameters
+Add a meta-plugin to run other plugins with ranges of parameters
+----------------------------------------------------------------
 
 Many plugins take parameters, and it might not be obvious what the optimal values are. So it would be nice to have a plugin that can call another plugin with a range of values.
 
@@ -296,9 +322,10 @@ Another (more hacky) possibility of getting the range parameters is to intercept
 
 Suggested by Quentin de Robillard.
 
-## Integrate ImageFlow into Fiji
+Integrate ImageFlow into Fiji
+-----------------------------
 
-![ImageFlow.png](/images/pages/ImageFlow.png "ImageFlow.png")
+<figure><img src="/images/pages/ImageFlow.png" title="ImageFlow.png" width="700" alt="ImageFlow.png" /><figcaption aria-hidden="true">ImageFlow.png</figcaption></figure>
 
 ImageFlow provides a graphical way to construct macros. Every action is represented by a node which the user can connect with lines to define a workflow.
 
@@ -306,17 +333,18 @@ ImageFlow has its own {% include github org='Dahie ' repo='imageflow ' label='Gi
 
 The following issues need to be resolved:
 
-  - At the moment, it is not a true plugin, but wants to start its own ImageJ instance
+-   At the moment, it is not a true plugin, but wants to start its own ImageJ instance
 
-<!-- end list -->
+<!-- -->
 
-  - it only targets the macro language, while we want to target all the scripting languages supported by Fiji
+-   it only targets the macro language, while we want to target all the scripting languages supported by Fiji
 
-<!-- end list -->
+<!-- -->
 
-  - it searches for its .xml files outside of the .jar file, which makes it cumbersome to ship with the Fiji updater.
+-   it searches for its .xml files outside of the .jar file, which makes it cumbersome to ship with the Fiji updater.
 
-## Provide *Help on menu item*
+Provide *Help on menu item*
+---------------------------
 
 Many commands available from menu items are actually plugins, so they are documented nicely on the Fiji Wiki. There is a beginning of a plugin that changes the cursor to an arrow with a question mark, and (temporarily) the way the menu items are handled: instead of running the corresponding command, the corresponding documentation on the Fiji Wiki is opened in a web browser.
 
@@ -328,7 +356,8 @@ The user should also be informed that hitting the {% include key content='Esc' %
 
 And finally, the Fiji Wiki needs some love to reflect the exact titles of the menu items, most probably by adding appropriate redirects.
 
-## Add a clever *Save As* plugin
+Add a clever *Save As* plugin
+-----------------------------
 
 For now, {% include bc content='File | Save As'%} always saves the result as a *.tiff* file, even if the user specified a file name ending in, say, *.png*.
 
@@ -336,33 +365,41 @@ Stephan Preibisch suggests: Add a plugin that determines from a set of extension
 
 For extra brownie points, do not hardcode the extension/plugin mapping (like HandleExtraFileTypes), but make it configurable via one or more file.
 
-# Miscellaneous
+Miscellaneous
+=============
 
-## Alpha shapes / concave hull / other Graph Theory algorithms
+Alpha shapes / concave hull / other Graph Theory algorithms
+-----------------------------------------------------------
 
 Fiji already contains a [Delaunay\_Voronoi](Delaunay_Voronoi ) plugin. The purpose of this project is to implement more graph algorithms. Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
 
-## Support for storing ROIs in TIFF tag fields
+Support for storing ROIs in TIFF tag fields
+-------------------------------------------
 
 Fiji can save images as TIFF files and ROIs into custom .roi files. Provide a way to store the ROIs inside custom tags in the TIFF file so ROIs and images can be saved together.
 
-## Cross platform webcam support
+Cross platform webcam support
+-----------------------------
 
 Supporting image recording from webcams might provide a cheap way to make videomicroscope/telescope units (possibly using the [Distortion Correction](Distortion_Correction ) plugin to overcome low-quality CCD chips and lenses).
 
 One way to achieve that would be by using the [Free Java Media Framework](http://fmj-sf.net/).
 
-## A unique/common segmentation interface
+A unique/common segmentation interface
+--------------------------------------
 
 I have collected near 15 new histogram segmentation methods that would be better put under a single interface together with others already available.
 
 Note: this is more or less implemented in the Auto\_Threshold and Auto\_Local\_Threshold plugins.--{% include person content='Landini' %} 14:47, 29 November 2009 (CET)
 
-## Virtual microscope-like image viewer
+Virtual microscope-like image viewer
+------------------------------------
 
-## HSB/Lab painting modes
+HSB/Lab painting modes
+----------------------
 
-## Integrate Micro-Manager into Fiji
+Integrate Micro-Manager into Fiji
+---------------------------------
 
 This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX and Windows. The idea is to make a recipe that other people can use to compile new releases of [Micro-Manager](http://www.micro-manager.org/), as well as integrate it into the Fiji project for a smooth user experience. To ensure that support for Micro-Manager is not broken inadvertently, you shall add regression tests, too.
 
@@ -370,6 +407,7 @@ This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX 
 **Language:** Java, C++, shell  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)
 
-# Other resources
+Other resources
+===============
 
 There is a wish list on the [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php?id=wishlist:start&s%5b%5d=ideas).

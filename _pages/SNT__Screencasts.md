@@ -36,7 +36,8 @@ This page contains a list of screencasts that describe SNT capabilities.
 {% include youtube url='https://www.youtube.com/embed/inZl4zS7oc4'%}  
   
 
-# Outdated Screencasts
+Outdated Screencasts
+====================
 
 These are old [Simple Neurite Tracer](SNT__FAQ#snt ) screencasts that are likely too outdated to be useful.
 

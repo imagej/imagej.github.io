@@ -10,7 +10,8 @@ description: test description
 {% include gitmenu%}
 
 
-## Merge conflicts
+Merge conflicts
+---------------
 
 Sometimes you get *merge conflicts* when merging or pulling from a branch. Git will then tell you something like
 
@@ -18,7 +19,8 @@ Sometimes you get *merge conflicts* when merging or pulling from a branch. Git w
 
 It also tells you to fix the conflicts and then to commit the result. So how to fix the conflicts?
 
-## Resolving merge conflicts
+Resolving merge conflicts
+-------------------------
 
 First a little background: what is a merge conflict, and how does it happen? A merge conflict usually occurs when your current branch and the branch you want to merge into the current branch have diverged. That is, you have commits in your current branch which are not in the other branch, and vice versa.
 
@@ -34,11 +36,11 @@ The merge conflicts occur when there are disagreeing changes. In that case, your
 `the other version`  
 `>>>>>>> deadbeef... This is the tip of the other branch`
 
-Between the *\<\<\<\<\<\<\<* and *=======*, you will find the version as per the changes in your current branch, relative to the base commit.
+Between the *&lt;&lt;&lt;&lt;&lt;&lt;&lt;* and *=======*, you will find the version as per the changes in your current branch, relative to the base commit.
 
-Between the *=======* and *\>\>\>\>\>\>\>*, you will find the version according to the other branch, relative to the base commit.
+Between the *=======* and *&gt;&gt;&gt;&gt;&gt;&gt;&gt;*, you will find the version according to the other branch, relative to the base commit.
 
-For convenience, after the *\<\<\<\<\<\<\<* and *\>\>\>\>\>\>\>* markers, you will see hints as to which commit that part of the conflict stems from, *HEAD* of course being the current revision.
+For convenience, after the *&lt;&lt;&lt;&lt;&lt;&lt;&lt;* and *&gt;&gt;&gt;&gt;&gt;&gt;&gt;* markers, you will see hints as to which commit that part of the conflict stems from, *HEAD* of course being the current revision.
 
 To resolve the conflicts, you have to decide what the end result should be. This is not something you can do without thinking, otherwise Git would have done it for you.
 
@@ -69,7 +71,7 @@ might want to be resolved to
 `jars/some-lib.jar`  
 `plugins/Blub.jar`
 
-So you definitely need to think carefully about the resolution\!
+So you definitely need to think carefully about the resolution!
 
 ### Submodule conflicts
 
@@ -97,7 +99,8 @@ or for your version:
 
 `git checkout --ours ImageJA`
 
-## Committing the resolution
+Committing the resolution
+-------------------------
 
 After you resolved all the conflicts (if in doubt, where the conflicts are, just call *git diff*), add the resolved file contents:
 
@@ -107,7 +110,8 @@ and then commit the merge:
 
 `git commit -s`
 
-## Using an external merge tool
+Using an external merge tool
+----------------------------
 
 For complicated conflicts, you may find it easier to do the resolution using an external merge tool, which can show three versions of the file side-by-side. You can do this with:
 

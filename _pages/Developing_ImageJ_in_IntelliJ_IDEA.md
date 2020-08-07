@@ -9,18 +9,20 @@ description: test description
 
 {% include develop-menu content='source' %}This article explains how to install and configure IntelliJ IDEA for use with [ImageJ](ImageJ ) development. Directions correspond to IntelliJ IDEA 11.1, and may need adjustment for other versions.
 
-## Install and configure IDEA
+Install and configure IDEA
+--------------------------
 
-  - **Install Java Development Kit.** Download and install Java SE 8 from the [Java web site](http://www.oracle.com/technetwork/java/javase/downloads/). Or install it via a package manager, if possible.
+-   **Install Java Development Kit.** Download and install Java SE 8 from the [Java web site](http://www.oracle.com/technetwork/java/javase/downloads/). Or install it via a package manager, if possible.
 
-<!-- end list -->
+<!-- -->
 
-  - **Install IDEA.** Download and install IDEA from the [IDEA web site](http://www.jetbrains.com/idea/download/).
+-   **Install IDEA.** Download and install IDEA from the [IDEA web site](http://www.jetbrains.com/idea/download/).
 
-## Import the ImageJ source
+Import the ImageJ source
+------------------------
 
 1.  From the IDEA menu, choose {% include bc content='Version Control|Checkout from Version Control|Git'%}
-2.  For the Git Repository URL, enter: <git://github.com/imagej/imagej>
+2.  For the Git Repository URL, enter: [`git://github.com/imagej/imagej`](git_//github.com/imagej/imagej)
 3.  Specify a Parent Directory, click Clone, and wait
 4.  When prompted, click Yes to create an IntelliJ IDEA project from the sources
 
@@ -29,7 +31,8 @@ On some platforms, the first time you perform this procedure, you may be prompte
 1.  Click the plus sign and choose "JSDK"
 2.  Navigate to the directory containing your JDK installation
 
-## Launch the program
+Launch the program
+------------------
 
 1.  Choose {% include bc content='Run|Edit Configurations'%} from the menu
 2.  Click the Plus icon and choose Application
@@ -41,7 +44,8 @@ On some platforms, the first time you perform this procedure, you may be prompte
 
 The project automatically builds before launching, so it may take a little while the first time.
 
-## Troubleshooting
+Troubleshooting
+---------------
 
 ### Renaming SciJava `@Plugin` annotated classes
 
@@ -57,7 +61,7 @@ When renaming a classname which was annotated with SciJava's `@Plugin` annotatio
         [Subscriber] org.scijava.menu.DefaultMenuService [priority = 0.0]
         [Method] protected void org.scijava.menu.DefaultMenuService.onEvent(org.scijava.module.event.ModulesUpdatedEvent)
     java.lang.IllegalStateException: Can't overwrite cause with org.scijava.InstantiableException: Class not found: 
-    
+
     the.plugin.you.just.Renamed
 
 The error may be related to some caching mechanism in the IDE. The solution is to clear the caches, e.g. by running `mvn clean` from the maven panel.

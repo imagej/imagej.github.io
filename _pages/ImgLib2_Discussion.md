@@ -7,7 +7,8 @@ categories: ImgLib
 description: test description
 ---
 
-## 2011-03-16
+2011-03-16
+----------
 
 Tobias and Saalfeld found it a great idea to create this discussion page that, if ever possible, will be filled with the daily conceptual discussions and results. That way, all interested people can contribute and keep track on what we're trying to tackle next.
 
@@ -15,11 +16,9 @@ Tobias and Saalfeld found it a great idea to create this discussion page that, i
 
 Summary is that `View`<T> would be an interface that can return its target `T`, the data it is generated from:
 
-``` java
-public interface View<T> {
-    public T getTarget();
-}
-```
+    public interface View<T> {
+        public T getTarget();
+    }
 
 A `View` is an `[…]Accessible` that provides possibly transformed access to a subset of this target data.
 
@@ -37,47 +36,41 @@ Applied to Views, we will therefore completely reverse our previous opinion and 
 
 The `View`<T> interface would look like
 
-``` java
-public interface View<T> {
-    public T getSource();
-}
-```
+    public interface View<T> {
+        public T getSource();
+    }
 
 For Transforms, we will adapt and simplify the `CoordinateTransform` and related interfaces from Fiji's mpicbg submodule. There will be an integer and a real version as for `Positionable` and `Localizable`. `Transform` and `RealTransform` can specify the number of dimensions of its source and target domain. They look like
 
-``` java
-public interface Transform {
-    public int numSourceDimensions();
-    public int numTargetDimensions();
-    apply(long[] source, long[] target);
-    apply(Localizable source, Positionable target);
-}
+    public interface Transform {
+        public int numSourceDimensions();
+        public int numTargetDimensions();
+        apply(long[] source, long[] target);
+        apply(Localizable source, Positionable target);
+    }
 
-public interface RealTransform {
-    public int numSourceDimensions();
-    public int numTargetDimensions();
-    apply(double[] source, double[] target);
-    apply(RealLocalizable source, RealPositionable target);
-}
-```
+    public interface RealTransform {
+        public int numSourceDimensions();
+        public int numTargetDimensions();
+        apply(double[] source, double[] target);
+        apply(RealLocalizable source, RealPositionable target);
+    }
 
 The apply methods transfer source coordinates into target coordinates.
 
 There will be an invertible version for each of these interfaces
 
-``` java
-public interface IvertibleTransform extends Transform {
-    applyInverse(long[] source, long[] target);
-    applyInverse(Positionable source, Localizable target);
-    InvertibleTransform inverse();
-}
+    public interface IvertibleTransform extends Transform {
+        applyInverse(long[] source, long[] target);
+        applyInverse(Positionable source, Localizable target);
+        InvertibleTransform inverse();
+    }
 
-public interface IvertibleRealTransform extends RealTransform {
-    applyInverse(double[] source, source[] target);
-    applyInverse(RealPositionable source, RealLocalizable target);
-    InvertibleRealTransform inverse();
-}
-```
+    public interface IvertibleRealTransform extends RealTransform {
+        applyInverse(double[] source, source[] target);
+        applyInverse(RealPositionable source, RealLocalizable target);
+        InvertibleRealTransform inverse();
+    }
 
 Note that `target` is transferred into `source` in that case.
 
@@ -89,10 +82,11 @@ We think that it would be a great idea to be able to run both imglib and imglib2
 
 Why not just call it "org.imglib" then? Wouldn't clash with "mpicbg.imglib" of imglib1.
 
-  -   
-    Because imglib.org is registered by somebody else already. {% include person content='Saalfeld' %} 14:38, 24 March 2011 (CET)
+  
+Because imglib.org is registered by somebody else already. {% include person content='Saalfeld' %} 14:38, 24 March 2011 (CET)
 
-## 2011-03-21
+2011-03-21
+----------
 
 ### Efficient access for RandomAccessibleViews
 
@@ -144,41 +138,37 @@ Now it obviously can be made to work for ROIs and it can be made to work to comb
 
 In imglib2, out-of-bounds access is handled by [`ExtendedRandomAccessibleInterval`](https://fiji.sc/cgi-bin/gitweb.cgi?p=imglib.git;a=blob;f=imglib/src/main/java/mpicbg/imglib/ExtendedRandomAccessibleInterval.java;h=31dacac73d7c4377d2e2335681b3417e2c8665f4;hb=refs/heads/imglib2-dirty) If you have a `RandomAccessibleInterval` you can wrap it into an `ExtendedRandomAccessibleInterval` which extends to infinity. Like so:
 
-``` java
-F interval; // where F extends RandomAccessibleInterval< T >
-OutOfBoundsFactory< T, F > factory = new OutOfBoundsMirrorFactory< T, F >( OutOfBoundsMirrorFactory.Boundary.SINGLE );
-RandomAccessible< T > extended = new ExtendedRandomAccessibleInterval< T >( randomAccessible, factory );
-```
+    F interval; // where F extends RandomAccessibleInterval< T >
+    OutOfBoundsFactory< T, F > factory = new OutOfBoundsMirrorFactory< T, F >( OutOfBoundsMirrorFactory.Boundary.SINGLE );
+    RandomAccessible< T > extended = new ExtendedRandomAccessibleInterval< T >( randomAccessible, factory );
 
 `ExtendedRandomAccessibleInterval` is also a `RandomAccessibleView`. It might be inserted at any point in a view hierarchy. Here is an example:
 
-``` java
-Img< FloatType > img = LOCI.openLOCIFloatType(...);
-RandomAccessibleView< FloatType > view1 = Views.extend( img );  
-RandomAccessibleIntervalView< FloatType > view2 = Views.superIntervalView( view1, new long[] {-20, -20}, new long[] {157, 157} );       
-RandomAccessibleView< FloatType >         view3 = Views.extend( view2 );    
-RandomAccessibleIntervalView< FloatType > view4 = Views.superIntervalView( view3, new long[] {-100, -100}, new long[] {357, 357} );
-```
+    Img< FloatType > img = LOCI.openLOCIFloatType(...);
+    RandomAccessibleView< FloatType > view1 = Views.extend( img );  
+    RandomAccessibleIntervalView< FloatType > view2 = Views.superIntervalView( view1, new long[] {-20, -20}, new long[] {157, 157} );       
+    RandomAccessibleView< FloatType >         view3 = Views.extend( view2 );    
+    RandomAccessibleIntervalView< FloatType > view4 = Views.superIntervalView( view3, new long[] {-100, -100}, new long[] {357, 357} );
 
 The original `img` looks like this:
 
-![Imglib2views\_img.png‎](/images/pages/Imglib2views img.png‎ "Imglib2views_img.png‎")
+![](/images/pages/Imglib2views img.png‎ "Imglib2views_img.png‎")
 
 This is extended to infinity (using mirroring strategy) resulting in the unbounded `RandomAccessible view1`. A crop of `view1` looks like this:
 
-![Imglib2views\_ext1.png‎](/images/pages/Imglib2views ext1.png‎ "Imglib2views_ext1.png‎")
+![](/images/pages/Imglib2views ext1.png‎ "Imglib2views_ext1.png‎")
 
 Then we take a subview `view2` (which is again a bounded interval)
 
-![Imglib2views\_extsub1.png‎](/images/pages/Imglib2views extsub1.png‎ "Imglib2views_extsub1.png‎")
+![](/images/pages/Imglib2views extsub1.png‎ "Imglib2views_extsub1.png‎")
 
 We extend that to get `view3` and take a subview `view4` which looks like this:
 
-![Imglib2views\_extsub1extsub2.png‎](/images/pages/Imglib2views extsub1extsub2.png‎ "Imglib2views_extsub1extsub2.png‎")
+![](/images/pages/Imglib2views extsub1extsub2.png‎ "Imglib2views_extsub1extsub2.png‎")
 
 Now assume that we want `RandomAccess` into `view4`. If we know in advance interval in which we will use the access, `view4` can possibly provide more efficient access. Consider this:
 
-![Imglib2views\_extsub1extsub2regions.png‎](/images/pages/Imglib2views extsub1extsub2regions.png‎ "Imglib2views_extsub1extsub2regions.png‎")
+![](/images/pages/Imglib2views extsub1extsub2regions.png‎ "Imglib2views_extsub1extsub2regions.png‎")
 
 If we want to access only the green region, the `RandomAccess` can fall through all the way to the original `img` without needing out-of-bounds values. We simply wrap a `RandomAccess` on `img` with a coordinate translation to the top-left corner of `view4`
 
@@ -188,7 +178,8 @@ If we need to access the blue region, we wrap a out-of-bounds `RandomAccess` on 
 
 A view hierarchy may consist of an arbitrary sequence of views that do coordinate transforms and extending views. Depending on interval we want to access, sometimes the extending views "disappear". In this case, transforms before and after the extending view can be concatenated and simplified if possible.
 
-## 2011-03-24
+2011-03-24
+----------
 
 ### Transformation Hierarchies
 
@@ -200,14 +191,12 @@ We settled on the following scheme for implementing the transformation hierarchy
 
 There are interfaces `Concatenable` and `PreConcatenable`
 
-``` java
-public interface Concatenable< A >
-{
-    public Concatenable< A > concatenate( A a );
+    public interface Concatenable< A >
+    {
+        public Concatenable< A > concatenate( A a );
 
-    public Class< A > getConcatenableClass();
-}
-```
+        public Class< A > getConcatenableClass();
+    }
 
 if `T` implements `Concatenable< A >` that means I can concatenate it with an `A`, usually resulting in another `T`.
 
@@ -215,41 +204,38 @@ The hierarchy of transforms is implemented by a hierarchy of interfaces. However
 
 Instead, both the `Rigid` and `Concatenable< Rigid >` interfaces are implemented by the `RigidTransform` class
 
-``` java
-public class RigidTransform implements Rigid, Concatenable< Rigid >
-{
-    @Override
-    public RigidTransform concatenate( Rigid a ) {...}
-
-    @Override
-    public Class< Rigid > getConcatenableClass()
+    public class RigidTransform implements Rigid, Concatenable< Rigid >
     {
-        return Rigid.class;
+        @Override
+        public RigidTransform concatenate( Rigid a ) {...}
+
+        @Override
+        public Class< Rigid > getConcatenableClass()
+        {
+            return Rigid.class;
+        }
     }
-}
-```
 
 Similarly we have
 
-``` java
-public class TranslationTransform implements Translation, Concatenable< Translation >
-{
-    @Override
-    public TranslationTransform concatenate( Translation a ) {...}
-
-    @Override
-    public Class< Translation > getConcatenableClass()
+    public class TranslationTransform implements Translation, Concatenable< Translation >
     {
-        return Translation.class;
+        @Override
+        public TranslationTransform concatenate( Translation a ) {...}
+
+        @Override
+        public Class< Translation > getConcatenableClass()
+        {
+            return Translation.class;
+        }
     }
-}
-```
 
 Note, that `TranslationTransform` cannot extend `RigidTransform` (because otherwise it would inherit `Concatenable< Rigid >`.)
 
 We add an abstract class hierarchy between the interfaces and the transform classes. The abstract classes do not implement `Concatenable`, so at this level extension is still possible.
 
-## 2011-03-25
+2011-03-25
+----------
 
 ### Get and Set Strategy for different dimensionalities
 
@@ -279,7 +265,8 @@ We discussed this topic again and found that it is always bad practice to actual
 
 for the reason that in the latter case, the loop would require Localizable.numDimensions() to be called otherwise. There will be many situations where this cannot be inlined and thus be slower than using a temporary *n* in the executing class.
 
-## 2011-05-02
+2011-05-02
+----------
 
 ### We discussed the ExtendedRandomAccessibleInterval:
 
@@ -308,7 +295,8 @@ just for the case that somebody wants to implement it for some reason and does n
 
 {% include person content='StephanP' %} 12:24, 4 May 2011 (CEST)
 
-## 2011-05-04
+2011-05-04
+----------
 
 ### Localizable and RealLocalizable Interface get()-methods
 
@@ -326,7 +314,8 @@ should we maybe change it as well to intPosition(), longPosition, etc?
 
 Tobias pointed out that we should not as it is not clear if it is a getter or setter when passing an array.
 
-## 2011-05-12
+2011-05-12
+----------
 
 ### Positionables
 
@@ -334,23 +323,19 @@ Should we maybe have fast setPosition-calls for dimension 0?
 
 In many algorithms we will need 1-dimensional Img<T>, like Histograms, Gauss and many more. A fast setPositionDim0(position) could be quite some speedup for arrays as
 
-``` java
-public void setPosition( final int pos, final int dim )
-{
-    type.incIndex( ( pos - position[ dim ] ) * container.steps[ dim ] );
-    position[ dim ] = pos;
-}
-```
+    public void setPosition( final int pos, final int dim )
+    {
+        type.incIndex( ( pos - position[ dim ] ) * container.steps[ dim ] );
+        position[ dim ] = pos;
+    }
 
 could simply become
 
-``` java
-public void setPositionDim0( final int pos )
-{
-    type.incIndex( pos - position[ 0 ] );
-    position[ 0 ] = pos;
-}
-```
+    public void setPositionDim0( final int pos )
+    {
+        type.incIndex( pos - position[ 0 ] );
+        position[ 0 ] = pos;
+    }
 
 which saves a multiplication for many operations. It can also not be inlined by the JIT compiler as container.steps\[ 0 \] cannot be made final, it could potentially always be changed...
 
@@ -358,15 +343,16 @@ The same applies for fwd(dim), bck(dim), move(dim), there a -- ++ and += can rep
 
 {% include person content='StephanP' %} 12:27, 12 May 2011 (CEST)
 
-  -   
-    What about having a 1D `RandomAccess` instead as we have done in `PlanarImg` for `Cursor`. That could implement the `setPosition(long p, int d)` method ignoring `d`. A 1D `RandomAccess` could, in addition, have the proposed method such that in situations where you know what you're doing (read: where you can cast), you have a shorter call available. That approach would also relieve us from the need to implement that method in situations where it does not make sense at all, e.g. `ShapeImg`, that has no 1D. {% include person content='Saalfeld' %} 15:27, 12 May 2011 (CEST)
+  
+What about having a 1D `RandomAccess` instead as we have done in `PlanarImg` for `Cursor`. That could implement the `setPosition(long p, int d)` method ignoring `d`. A 1D `RandomAccess` could, in addition, have the proposed method such that in situations where you know what you're doing (read: where you can cast), you have a shorter call available. That approach would also relieve us from the need to implement that method in situations where it does not make sense at all, e.g. `ShapeImg`, that has no 1D. {% include person content='Saalfeld' %} 15:27, 12 May 2011 (CEST)
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    I like this way of realizing it, maybe we could also implement it on ImgFactory level. If a Img implements RandomAccessible1D, the factory could also have a special create( long size ) method (in e.g. RandomAccessible1DFactory) which returns for example \<I extends ArrayImg\<T,?\> & RandomAccessible1D\>, so no unchecked casts are necessary. {% include person content='StephanP' %} 16:15, 12 May 2011 (CEST)
+  
+I like this way of realizing it, maybe we could also implement it on ImgFactory level. If a Img implements RandomAccessible1D, the factory could also have a special create( long size ) method (in e.g. RandomAccessible1DFactory) which returns for example &lt;I extends ArrayImg&lt;T,?&gt; & RandomAccessible1D&gt;, so no unchecked casts are necessary. {% include person content='StephanP' %} 16:15, 12 May 2011 (CEST)
 
-## 2011-11-28
+2011-11-28
+----------
 
 ### RealViews
 
@@ -376,21 +362,19 @@ I think, what we need to achieve this is something similar to what we have with 
 
 A RealView would implement (in analogy to the integer views)
 
-``` java
-public interface RealTransformedRealRandomAccessible< T > extends RealRandomAccessible< T >
-{
-    /**
-     * @return the source {@link RealRandomAccessible}.
-     */
-    public RealRandomAccessible< T > getSource();
+    public interface RealTransformedRealRandomAccessible< T > extends RealRandomAccessible< T >
+    {
+        /**
+         * @return the source {@link RealRandomAccessible}.
+         */
+        public RealRandomAccessible< T > getSource();
 
-    /**
-     * @return transformation from view coordinates into {@link #getSource()
-     *         source} coordinates.
-     */
-    public RealTransform getTransformToSource();    
-}
-```
+        /**
+         * @return transformation from view coordinates into {@link #getSource()
+         *         source} coordinates.
+         */
+        public RealTransform getTransformToSource();    
+    }
 
 Note, that `RealTransform` implementations do not yet exist. However the ideas are in place, see [Transformation Hierarchies](https://fiji.sc/wiki/index.php/ImgLib2_Discussion#Transformation_Hierarchies) above. The interfaces to be implemented can be found in packages `net.imglib2.concatenate` and `net.imglib2.transform`.
 
@@ -400,32 +384,30 @@ Examples of implementation of the integer version of these interfaces can be fou
 
 As the source for a RealView we need a `RealRandomAccessible`. This will be most likely a interpolated image. In `net.imglib.interpolation` we have `InterpolatorFactories` implementing nearest-neighbor and n-linear interpolation. What is left to do is write a (trivial) wrapper which turns a `RandomAccessible` into a `RealRandomAccessible` using an `InterpolatorFactory`. It would look more or less exactly like this:
 
-``` java
-public final class InterpolatedRandomAccessible< T > implements RealRandomAccessible< T >
-{
-    private final RandomAccessible< T > source;
-    
-    private final InterpolatorFactory< T, RandomAccessible< T > > factory;
-    
-    public InterpolatedRandomAccessible( final RandomAccessible< T > source, final InterpolatorFactory< T, RandomAccessible< T > > factory )
+    public final class InterpolatedRandomAccessible< T > implements RealRandomAccessible< T >
     {
-        this.source = source;
-        this.factory = factory;
-    }
+        private final RandomAccessible< T > source;
+        
+        private final InterpolatorFactory< T, RandomAccessible< T > > factory;
+        
+        public InterpolatedRandomAccessible( final RandomAccessible< T > source, final InterpolatorFactory< T, RandomAccessible< T > > factory )
+        {
+            this.source = source;
+            this.factory = factory;
+        }
 
-    @Override
-    public int numDimensions()
-    {
-        return source.numDimensions();
-    }
+        @Override
+        public int numDimensions()
+        {
+            return source.numDimensions();
+        }
 
-    @Override
-    public RealRandomAccess< T > realRandomAccess()
-    {
-        return factory.create( source );
-    } 
-}
-```
+        @Override
+        public RealRandomAccess< T > realRandomAccess()
+        {
+            return factory.create( source );
+        } 
+    }
 
 #### Using RealViews
 
@@ -433,7 +415,8 @@ Similar to what is now in `Views` there would be static methods to construct vie
 
 One would wrap all of the source images into `InterpolatedRandomAccessible` and use RealViews as required to match the calibration of the target image. Then to carry out some operation, one would iterate through the target image and fetch the (possibly interpolated) values from the corresponding locations in the respective source views.
 
-## 2012-01-28
+2012-01-28
+----------
 
 We have discussed with Tobias that two additional integer views would be very helpful:
 
@@ -442,13 +425,14 @@ We have discussed with Tobias that two additional integer views would be very he
 
 When done properly this has the potential to replace or at least simplify PlanarImg like containers since they could be expressed as a composition of multiple ArrayImg-s. {% include person content='Saalfeld' %} 16:11, 18 January 2012 (CET)
 
-## 2012-11-21
+2012-11-21
+----------
 
 Another useful integer view comes to mind:
 
-1.  Stack two images with all dimensions *d* \< *n*-1 in the (*n*-1)<sup>th</sup> dimension. That would enable to load an image piecewise or to grow a time sequence *etc.*
+1.  Stack two images with all dimensions *d* &lt; *n*-1 in the (*n*-1)<sup>th</sup> dimension. That would enable to load an image piecewise or to grow a time sequence *etc.*
 
-The stack view is a special form of a \`composite' view (do not confuse with dimensional composition as mentioned above---clarify terminology\!) that consists of two `RandomAccessible`<T> or `RandomAccessibleInterval`<T> that combine their values following some composition rule. Examples:
+The stack view is a special form of a \`composite' view (do not confuse with dimensional composition as mentioned above---clarify terminology!) that consists of two `RandomAccessible`<T> or `RandomAccessibleInterval`<T> that combine their values following some composition rule. Examples:
 
 1.  a stack of images
 2.  two images overlaid on top of each other

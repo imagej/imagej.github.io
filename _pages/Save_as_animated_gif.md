@@ -17,7 +17,7 @@ description: test description
 2.  In the dialog, set the desired frames per second, or "Speed".
 3.  Select the stack to save, and go to menu ''{% include bc content='File | Save As | Animated Gif ...'%}"
 
-Done\!
+Done!
 
 **PS.** in order to include overlays in the animated gif, such as ROI or scale bar overlays, these must first be converted to pixel data by flattening the image.
 

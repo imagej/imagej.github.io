@@ -13,11 +13,13 @@ description: test description
 {% endcapture %}
 {% include info-box name='Elastix ' software='Fiji ' update-site='EMBL-CBA ' author='Christian Tischer ' maintainer='Christian Tischer ' source=source %}
 
-## Overview
+Overview
+--------
 
 Elastix is a Fiji plugin that wraps [elastix](http://elastix.isi.uu.nl/) into a graphical user interface. elastix is a collection of algorithms that are commonly used to solve image registration problems. Both 2D and 3D as well as multi-channel registrations are supported. Several rigid (translation, Euler, similarity, and affine) as well as locally deformable (BSpline) registrations are supported. For more information please visit the GitHub [README](https://github.com/embl-cba/fiji-plugin-elastixWrapper#fiji-plugins-for-running-elastix-and-transformix).
 
-## Installation
+Installation
+------------
 
 Elastix is available from the ImageJ update site: http://sites.imagej.net/EMBL-CBA.
 
@@ -25,9 +27,10 @@ For details on how to install an update site click [here](Following_an_update_si
 
 To use this plugin you also need to install elastix itself, as described [here](https://github.com/embl-cba/fiji-plugin-elastixWrapper/blob/master/README.md#install-elastix-binary).
 
-To start Elastix in ImageJ, select Plugins \> Registration \> Elastix \> Elastix from the main menu.
+To start Elastix in ImageJ, select Plugins &gt; Registration &gt; Elastix &gt; Elastix from the main menu.
 
-## Citation
+Citation
+--------
 
 You can cite this plugin like this:
 

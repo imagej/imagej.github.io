@@ -9,9 +9,9 @@ description: test description
 
 {% include info-box content='This page describes how to ""cite"" [SciJava](SciJava ) projects.
 
-  - For information on who ""contributes"" to these projects, see [Contributors](Contributors ).
-  - For information on who ""maintains"" these projects, see [Governance](Governance ).
-  - For information on how ImageJ projects are ""funded"", see [Funding](Funding ).' %}
+-   For information on who ""contributes"" to these projects, see [Contributors](Contributors ).
+-   For information on who ""maintains"" these projects, see [Governance](Governance ).
+-   For information on how ImageJ projects are ""funded"", see [Funding](Funding ).' %}
 
 {% include aboutmenu%}
 == Guidelines ==
@@ -24,28 +24,13 @@ We ask users to cite:
 
 If journal reference limits interfere, the plugin-specific publications should take precedence.
 
-In general, please cite these projects—their long-term future depends on it\!
+In general, please cite these projects—their long-term future depends on it!
 
 Thank you for your support.
 
-## Publications to cite
+Publications to cite
+--------------------
 
-|                                      |                                                                            |                                                    |
-| ------------------------------------ | -------------------------------------------------------------------------- | -------------------------------------------------- |
-| **Logo**                             | **Project**                                                                | **Citation**                                       |
-| Core projects                        |                                                                            |                                                    |
-| {% include logo content='ImageJ2' %} | [ImageJ2](ImageJ2 )                                              | {% include publication content='ImageJ2' %}        |
-| {% include logo content='ImageJ1' %} | [ImageJ 1.x](ImageJ_1.x )                                        | {% include publication content='ImageJ' %}         |
-| Distributions of ImageJ              |                                                                            |                                                    |
-| {% include logo content='Fiji' %}    | [Fiji](Fiji )                                                    | {% include publication content='Fiji' %}           |
-| {% include logo content='BoneJ' %}   | [BoneJ](BoneJ )                                                  | {% include publication content='BoneJ' %}          |
-| {% include logo content='Bio7' %}    | [Bio7](Bio7 )                                                    | {% include publication content='Bio7' %}           |
-| Supporting libraries                 |                                                                            |                                                    |
-| {% include logo content='ImgLib2' %} | [ImgLib2](ImgLib2 )                                              | {% include publication content='ImgLib2' %}        |
-| {% include logo content='SciJava' %} | [SciJava Common](SciJava_Common ) | {% include publication content='SciJava Common' %} |
-| {% include logo content='SCIFIO' %}  | [SCIFIO](SCIFIO )                                                | {% include publication content='SCIFIO' %}         |
-| {% include logo content='ImageJ' %}  | [ImageJ Ops](ImageJ_Ops )                                        | {% include publication content='ImageJ Ops' %}     |
-|                                      |                                                                            |                                                    |
-|                                      |                                                                            |                                                    |
+<table><tbody><tr class="odd"><td style="white-space: nowrap"><p><strong>Logo</strong></p></td><td><p><strong>Project</strong></p></td><td><p><strong>Citation</strong></p></td></tr><tr class="even"><td><p>Core projects</p></td><td></td><td></td></tr><tr class="odd"><td><p> {% include logo content='ImageJ2' %}</p></td><td><p><a href="ImageJ2" title="wikilink">ImageJ2</a></p></td><td><p> {% include publication content='ImageJ2' %}</p></td></tr><tr class="even"><td><p> {% include logo content='ImageJ1' %}</p></td><td><p><a href="ImageJ_1.x" title="wikilink">ImageJ 1.x</a></p></td><td><p> {% include publication content='ImageJ' %}</p></td></tr><tr class="odd"><td><p>Distributions of ImageJ</p></td><td></td><td></td></tr><tr class="even"><td><p> {% include logo content='Fiji' %}</p></td><td><p><a href="Fiji" title="wikilink">Fiji</a></p></td><td><p> {% include publication content='Fiji' %}</p></td></tr><tr class="odd"><td><p> {% include logo content='BoneJ' %}</p></td><td><p><a href="BoneJ" title="wikilink">BoneJ</a></p></td><td><p> {% include publication content='BoneJ' %}</p></td></tr><tr class="even"><td><p> {% include logo content='Bio7' %}</p></td><td><p><a href="Bio7" title="wikilink">Bio7</a></p></td><td><p> {% include publication content='Bio7' %}</p></td></tr><tr class="odd"><td><p>Supporting libraries</p></td><td></td><td></td></tr><tr class="even"><td><p> {% include logo content='ImgLib2' %}</p></td><td><p><a href="ImgLib2" title="wikilink">ImgLib2</a></p></td><td><p> {% include publication content='ImgLib2' %}</p></td></tr><tr class="odd"><td><p> {% include logo content='SciJava' %}</p></td><td><p> <a href="SciJava_Common" title="wikilink">SciJava Common</a></p></td><td><p> {% include publication content='SciJava Common' %}</p></td></tr><tr class="even"><td><p> {% include logo content='SCIFIO' %}</p></td><td><p><a href="SCIFIO" title="wikilink">SCIFIO</a></p></td><td><p> {% include publication content='SCIFIO' %}</p></td></tr><tr class="odd"><td><p> {% include logo content='ImageJ' %}</p></td><td><p><a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a></p></td><td><p> {% include publication content='ImageJ Ops' %}</p></td></tr><tr class="even"><td></td><td></td><td></td></tr><tr class="odd"><td></td><td></td><td></td></tr></tbody></table>
 
 See the [list of citable software](Category_Citable ) and [publications using Fiji](Fiji/Publications ) for additional citation information.

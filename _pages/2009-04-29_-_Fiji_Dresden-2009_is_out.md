@@ -7,11 +7,11 @@ categories: News
 description: test description
 ---
 
-Finally\! Fiji "dee-dee-oh-nine" is out\!
+Finally! Fiji "dee-dee-oh-nine" is out!
 
 The changes:
 
-1.  lots of bug fixes (thanks to all\!)
+1.  lots of bug fixes (thanks to all!)
 2.  the scripting interpreters remember the previous commands (thanks to Albert Cardona): just use Cursor Up/Down to find out.
 3.  we have a NRRD reader/writer now (thanks to Greg Jefferis)
 4.  added the Turbo Reg plugin (thanks Philippe Thevenaz)
@@ -49,7 +49,7 @@ The changes:
 36. the 3D Viewer's 4D option can now load hyperstacks (thanks Benjamin Schmid)
 37. the 3D Viewer can do free\#hand recordings again, as well as convenience key bindings (thanks Benjamin Schmid)
 38. the Lasso/Blow Tool can optionally track dark lines, and actually respects the space/color ratio now
-39. lots of changes only relevant for developers (thanks to all\!)
+39. lots of changes only relevant for developers (thanks to all!)
 40. FlowJ was integrated (thanks Jean-Yves Tinevez),
 41. The PIV Analyser (an optic flow technique) plugin was donated by Jean-Yves Tinevez,
 42. Refresh Javas is actually called on startup, so that you really can just drop .java files into plugins/ and they will be compiled and run automagically,
@@ -69,6 +69,6 @@ The changes:
 56. Mark Longair and Benjamin Schmid contributed the Shape Based Average plugin based on a paper by Torsten Rohlfing.
 57. Benjamin Schmid added some tools to edit videos.
 
-Thanks to all the people who helped this release come about\!
+Thanks to all the people who helped this release come about!
 
 

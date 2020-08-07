@@ -12,9 +12,7 @@ description: test description
 
 In the [ previous section](ImgLib2_-_Accessors ) we have seen how pixel values can be manipulated using [ Accessors](ImgLib2_-_Accessors ). Accessors are obtained from *Accessibles*. For example we have used
 
-``` java
-    final Cursor< UnsignedByteType > cursor = img.localizingCursor();
-```
+        final Cursor< UnsignedByteType > cursor = img.localizingCursor();
 
 to obtain an iterating accessor from the Accessible **img**.
 
@@ -22,15 +20,13 @@ to obtain an iterating accessor from the Accessible **img**.
 
 The UML diagram below shows the integer part of the *Accessible* interface hierarchy. We will look at the full diagram including Accessibles for real coordinates later. *Accessible* interfaces have been highlighted.
 
-![UML for ImgLib2 integer accessible interfaces](/images/pages/Imglib2-accessibles-integer.png "UML for ImgLib2 integer accessible interfaces")
+<figure><img src="/images/pages/imglib2-accessibles-integer.png" title="UML for ImgLib2 integer accessible interfaces" width="775" alt="UML for ImgLib2 integer accessible interfaces" /><figcaption aria-hidden="true">UML for ImgLib2 integer accessible interfaces</figcaption></figure>
 
 [RandomAccessible](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html) and [RandomAccessibleInterval](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessibleInterval.html) represent images that are random-accessible at integer coordinates. (Remember: an image is a - possibly partial - function from coordinates to values.) You can obtain a RandomAccess on the data using the **randomAccess()** or **randomAccess(Interval)** methods.
 
 All ImgLib2 classes representing pixel images are [RandomAccessibles](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html). We already used this in [ a previous example](ImgLib2_-_Accessors#RandomAccess ) to obtain a **RandomAccess** on an **ArrayImg**.
 
-``` java
-    final RandomAccess< UnsignedByteType > r = img.randomAccess();
-```
+        final RandomAccess< UnsignedByteType > r = img.randomAccess();
 
 [IterableInterval](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/IterableInterval.html) represents an iterable collection of samples at integer coordinates. You can obtain a **Cursor** using the **cursor()** or **localizingCursor()** methods. You can obtain the number of elements using **size()**. The first element can be obtained by **firstElement()** which is a short-cut for **cursor().next()**.
 

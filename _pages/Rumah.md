@@ -7,11 +7,13 @@ categories:
 description: test description
 ---
 
-## Rumah
+Rumah
+-----
 
 Rumah adalah tempat untuk tinggal bersama anggota keluarga. Setiap keluarga pada umumnya terdiri dari ayah, ibu, dan anak. Rumah merupakan salah satu tempat ternyaman di dunia. Pada saat orang lelah beraktivitas maka rumah menjadi tempat untuk melepas penat. Rumah juga mencerminkan tingkat ekonomi keluarga. [Architecture](Architecture ) rumah terdiri dari yang paling sederhana. Model rumah minimalis. Dan model rumah mewah dan megah.
 
-## macam-macam rumah
+macam-macam rumah
+-----------------
 
 Banyak sekali macam rumah:
 
@@ -23,7 +25,8 @@ Berdasarkan luas rumah bisa dibedakan menjadi type 36, 45,54, 60, 70, dan sebaga
 
 Berdasarkan warna rumah bisa diberi warna merah, putih, biru, dan sebagainya. Bisa juga dengan perpaduan warna merah dan putih, merah dan hitam, merah dan ungu, dan sebagainya. Berdasarkan bahan bangunannya rumah juga bisa berupa rumah kayu, rumah tembok, atau rumah kontainer.
 
-## Bagian-bagian rumah
+Bagian-bagian rumah
+-------------------
 
 Berdasarkan bagian yang ada di dalam dan sekitar rumah ada:
 

@@ -9,15 +9,15 @@ description: test description
 
 {% include user-box name='Tiago Ferreira ' affiliation=' [HHMI - Janelia Research Campus](https://www.janelia.org/) ' orcid='0000-0001-6866-1540 ' scholar='MOnW5FEAAAAJ ' researchgate='Tiago\_Ferreira51 ' forum='tferr ' github='tferr ' osrc='tferr ' loop='141716 ' %}Tiago Ferreira is the author of:
 
-  - [SNT](SNT ) ({% include github org='morphonets ' repo='SNT ' label='GitHub ' %})
-  - [Sholl Analysis](Sholl_Analysis ) ({% include github org='tferr ' repo='ASA ' label='GitHub ' %})
-  - [Neuroanatomy plugins](Neuroanatomy ) (including [Strahler Analysis](Strahler_Analysis )) ({% include github org='tferr ' repo='hIPNAT ' label='GitHub ' %})
-  - [ImageJ User Guide](https://imagej.nih.gov/ij/docs/guide/) ({% include github org='tferr ' repo='IJ-guide ' label='GitHub ' %})
-  - [BAR toolbox](BAR ) ({% include github org='tferr ' repo='Scripts ' label='GitHub ' %}), including among others:
-      - [Find Peaks](Find_Peaks )
-      - [ROI Color Coder](https://imagejdocu.tudor.lu/doku.php?id=macro:roi_color_coder) †
-      - [Distribution Plotter](https://imagejdocu.tudor.lu/doku.php?id=macro:distribution_plotter) †
-      - [ROI Manager Tools](https://imagej.nih.gov/ij/plugins/roi-manager-tools/) †
+-   [SNT](SNT ) ({% include github org='morphonets ' repo='SNT ' label='GitHub ' %})
+-   [Sholl Analysis](Sholl_Analysis ) ({% include github org='tferr ' repo='ASA ' label='GitHub ' %})
+-   [Neuroanatomy plugins](Neuroanatomy ) (including [Strahler Analysis](Strahler_Analysis )) ({% include github org='tferr ' repo='hIPNAT ' label='GitHub ' %})
+-   [ImageJ User Guide](https://imagej.nih.gov/ij/docs/guide/) ({% include github org='tferr ' repo='IJ-guide ' label='GitHub ' %})
+-   [BAR toolbox](BAR ) ({% include github org='tferr ' repo='Scripts ' label='GitHub ' %}), including among others:
+    -   [Find Peaks](Find_Peaks )
+    -   [ROI Color Coder](https://imagejdocu.tudor.lu/doku.php?id=macro:roi_color_coder) †
+    -   [Distribution Plotter](https://imagejdocu.tudor.lu/doku.php?id=macro:distribution_plotter) †
+    -   [ROI Manager Tools](https://imagej.nih.gov/ij/plugins/roi-manager-tools/) †
 
 You can reach him [here](mailto:tiago_dot_tferr_at_gmail_dot_com) (obviously, replacing *\_dot\_* with a de facto `.`)
 

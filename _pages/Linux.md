@@ -14,19 +14,23 @@ description: test description
 {% include toc%}
 
 
-# Installation
+Installation
+============
 
 Some flavors of Linux make [ImageJ 1.x](ImageJ_1.x ) available as a package. Do not install ImageJ this way—you will not receive [ImageJ2](ImageJ2 ), and you will have problems installing additional plugins. For the time being, it is recommended to [download the Linux 64-bit distribution of Fiji](Fiji/Downloads ).
 
-# HiDPI displays
+HiDPI displays
+==============
 
 You can make [ImageJ 1.x](ImageJ_1.x ) scale better on HiDPI displays by installing Java 9. See [this forum post](http://forum.imagej.net/t/how-to-increase-the-gui-font-size/552).
 
-# Troubleshooting
+Troubleshooting
+===============
 
 See the [Troubleshooting](Troubleshooting ) page.
 
-# Frequently Asked Questions
+Frequently Asked Questions
+==========================
 
 See the [Frequently Asked Questions](Frequently_Asked_Questions ) page.
 

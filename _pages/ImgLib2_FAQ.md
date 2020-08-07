@@ -10,21 +10,22 @@ description: test description
 {% include imglibmenu%}
 
 
-## What *is* ImgLib2 anyway?
+What *is* ImgLib2 anyway?
+-------------------------
 
 It is a library that helps you to implement algorithms for multi-dimensional data processing. The idea is that you can concentrate on the essence of your algorithm rather than syntactic sugar. It is possible to implement an algorithm without specifying what the image's data type is, how many dimensions it has, and how the image is stored.
 
 ImgLib2 is also the foundation of the [ImageJ2](ImageJ2 ) data model.
 
-## How do I migrate my ImgLib1 code to ImgLib2?
+How do I migrate my ImgLib1 code to ImgLib2?
+--------------------------------------------
 
 There is some [rudimentary documentation](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 ), but you will most likely need to ask more detailed questions on the [ImageJ Forum](http://forum.imagej.net).
 
-## How to create a new image from scratch?
+How to create a new image from scratch?
+---------------------------------------
 
-``` java
-int w = 768, h = 512, timepoints = 20;
-Img<FloatType> img = ArrayImgs.floats(w, h, timepoints);
-```
+    int w = 768, h = 512, timepoints = 20;
+    Img<FloatType> img = ArrayImgs.floats(w, h, timepoints);
 
 

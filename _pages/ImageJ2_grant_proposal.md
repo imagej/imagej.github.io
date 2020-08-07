@@ -9,7 +9,8 @@ description: test description
 
 The following is the original text of the [ImageJDev](ImageJ2 ) grant proposal circa mid-2009. {% include warning-box message='Please note that [ImageJ2](ImageJ2 )"s project directions evolved substantially as it developed, so the text below is dated, but in many ways, this document continues to represent the project"s conceptual core. ' %}
 
-## Summary
+Summary
+-------
 
 **Purpose: Refine ImageJ’s core design to accommodate a broader range of needs in the scientific community.**
 
@@ -35,7 +36,8 @@ ImageJ has a strong, established user base, with thousands of plugins and macros
 
 Together, these improvements will enhance the functionality and interoperability of ImageJ, solidifying and expanding the efforts of the community of researchers who rely on it for important research across all areas of biomedicine.
 
-## Approach
+Approach
+--------
 
 ### Aim I – Improve the ImageJ core architecture
 
@@ -51,7 +53,7 @@ To overcome this problem, we will employ a popular and successful design pattern
 
 We will also use Java's event-driven approach to provide a means for other software to “listen in” when ImageJ's Model changes, enabling features like dynamic charts and real-time linked displays. With this design, changes to the underlying Model will automatically propagate to all active linked Views, and user interaction with a View (such as cropping an image) will be capable of altering the Model.
 
-Refactoring ImageJ to use an MVC design is a significant effort, but fortunately, preliminary work has already been done in this direction: Grant Harris has written a whitepaper (![ImageJX\_Mar09.pdf](/images/pages/ImageJX Mar09.pdf "ImageJX_Mar09.pdf")) describing his efforts thus far to deploy an interface-driven architecture for extensible, modular GUI support. With further development, we will transform ImageJ into a flexible library usable by a wide variety of scientific image software.
+Refactoring ImageJ to use an MVC design is a significant effort, but fortunately, preliminary work has already been done in this direction: Grant Harris has written a whitepaper (![](/images/pages/ImageJX Mar09.pdf "fig:ImageJX_Mar09.pdf")) describing his efforts thus far to deploy an interface-driven architecture for extensible, modular GUI support. With further development, we will transform ImageJ into a flexible library usable by a wide variety of scientific image software.
 
 ### Aim IB – Introduce an extensions framework for algorithms
 
@@ -93,9 +95,9 @@ Unsurprisingly, in the course of developing the software, we found ourselves imp
 
 Meanwhile, a growing movement in the ImageJ community began to express interest in overcoming many of the same limitations that led to our work on VisBio. In recent years there have been several substantial improvements to ImageJ as a framework, but they do not go far enough to address the community’s needs:
 
-  - ImageJ now supports data of up to five dimensions—in 3-space, across time, and with multiple channels—but has no abstraction for higher dimensionality. For example, lifetime, spectral and polarization components are becoming increasingly common in light microscopy.
-  - ImageJ now has the concept of a “virtual stack,” with data pulled on demand from disk or another source, allowing processing of datasets larger than available memory—but it does not intelligently cache portions of the data to improve performance.
-  - Several limited 3D viewer plugins now exist, but there is still no core infrastructure decoupling image data from display. Many applications require the use of multiple linked views, with user actions in one view interactively updating other views.
+-   ImageJ now supports data of up to five dimensions—in 3-space, across time, and with multiple channels—but has no abstraction for higher dimensionality. For example, lifetime, spectral and polarization components are becoming increasingly common in light microscopy.
+-   ImageJ now has the concept of a “virtual stack,” with data pulled on demand from disk or another source, allowing processing of datasets larger than available memory—but it does not intelligently cache portions of the data to improve performance.
+-   Several limited 3D viewer plugins now exist, but there is still no core infrastructure decoupling image data from display. Many applications require the use of multiple linked views, with user actions in one view interactively updating other views.
 
 VisBio was our initial attempt at addressing these problems, but ultimately we have solved several of them at the Bio-Formats level instead, because doing so was convenient. For example, because many data formats contain multidimensional data beyond 5D, Bio-Formats includes a representation for Ndimensional image data that was originally part of the VisBio data engine. Bio-Formats also provides a generalized caching mechanism, designed to intelligently manage subsets of image planes within memory. However even though we have begun to address some of these needs in VisBio and some of them in Bio-Formats, a tighter coupling between these code bases and ImageJ is needed.
 
@@ -163,7 +165,8 @@ To facilitate widespread adoption of this resource, we will implement an “exte
 
 **Integrated help system.** Lastly, another built-in system we will add to ImageJ is an online help feature for documenting program features and extensions. Each extension will be able to provide rich text explaining its use, and all will be searchable from within the main ImageJ interface. As we develop the extensions framework itself (Aim 1b), we will look for ways to provide a more granular help mechanism, such that individual input and output parameters can be documented as well.
 
-## Timeline and Milestones
+Timeline and Milestones
+-----------------------
 
 *Year 1, Quarter 1:*  
 (Aim 3) Establish ImageJ source code repository.  
@@ -206,7 +209,8 @@ To facilitate widespread adoption of this resource, we will implement an “exte
 (Aim 2) Investigate use of new extensions mechanism within OMERO and FARSIGHT analysis workflow frameworks.  
 (Aim 3) Create a graphical extension manager for downloading, installing, configuring and removing extensions.
 
-## Measurable Outcomes
+Measurable Outcomes
+-------------------
 
 At the end of the of the two year development period we expect the following outcomes and deliverables:
 
@@ -214,7 +218,8 @@ At the end of the of the two year development period we expect the following out
 2.  An ImageJ development site that uses professional practices for code development and engineering.
 3.  A CellProfiler and VisBio application that is fully interfaced with ImageJ and in regular use.
 
-## Additional Deliverables
+Additional Deliverables
+-----------------------
 
 Examples of new applications facilitated by this grant’s technical aims:
 
@@ -223,7 +228,8 @@ Examples of new applications facilitated by this grant’s technical aims:
 3.  Real-time remote browsing of images, such as an OMERO database (aim 1c): Data source abstraction is critical for this type of feature.
 4.  Easy, flexible analysis workflow engine (aim 1b): Extensions with compatible inputs and outputs can be linked together.
 
-## References
+References
+----------
 
 1.  Collins, T.J., *ImageJ for microscopy*. Biotechniques, 2007. **43**(1 Suppl): p. 25-30.
 2.  Pool, M., et al., *NeuriteTracer: a novel ImageJ plugin for automated quantification of neurite outgrowth*. J Neurosci Methods, 2008. **168**(1): p. 134-9.
@@ -247,6 +253,7 @@ Examples of new applications facilitated by this grant’s technical aims:
 20. Abramoff, M., P. Magalhaes, and S. Ram, *Image processing with ImageJ*. Biophotonics International, 2004. **LAURIN Publishing**.
 21. Yan, L., et al., *Applications of combined spectral lifetime microscopy for biology*. Biotechniques, 2006. **41**(3): p. 249, 251, 253 passim.
 
-## See also
+See also
+--------
 
-  - ![ImageJX\_Mar09.pdf](/images/pages/ImageJX Mar09.pdf "ImageJX_Mar09.pdf"), the ImageJX whitepaper from 2008
+-   ![](/images/pages/ImageJX Mar09.pdf "fig:ImageJX_Mar09.pdf"), the ImageJX whitepaper from 2008

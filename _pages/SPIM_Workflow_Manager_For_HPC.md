@@ -9,19 +9,23 @@ description: test description
 
 {% include info-box name='SPIM Workflow Manager for HPC ' software='Fiji ' author='Jan Kožusznik, Petr Bainar, Jana Klímová, Michal Krumnikl, Pavel Moravec, Pavel Tomancak ' maintainer='jan.kozusznik@vsb.cz ' released='August 2018 ' latest-version='March 2019 ' category='[Transform](Category_Transform ), [Registration](Category_Registration ), [Deconvolution](Category_Deconvolution ) ' source=' [on github](https://github.com/fiji-hpc/hpc-workflow-manager/) ' %}
 
-# About the plugin
+About the plugin
+================
 
 SPIM Workflow Manager for HPC is a Fiji plugin developed at IT4Innovations, Ostrava, Czech Republic. The plugin enables biology users to upload data to the remote cluster, monitor computation progress, and examine and download results via the local Fiji installation.
 
-# Background
+Background
+==========
 
 Imaging techniques have emerged as a crucial means of understanding the structure and function of living organisms in primary research, as well as medical diagnostics. In order to maximize information gain, achieving as high spatial and temporal resolution as practically possible is desired. However, long-term time-lapse recordings at the single-cell level produce vast amounts of multidimensional image data, which cannot be processed on a personal computer in a timely manner, therefore requiring utilization of high-performance computing (HPC) clusters. For example, processing a 2.2 TB dataset of drosophila embryonic development, taking a week on a single computer, was brought down to 13 hours by employing an HPC cluster supporting parallel execution of individual tasks [\[automated workflow](https://imagej.net/Automated_workflow_for_parallel_Multiview_Reconstruction)\]. Unfortunately, life scientists often lack access to such infrastructure.
 
 Addressing this issue is particularly challenging as Fiji is an extraordinarily extensible platform and new plugins emerge incessantly. So far, plugin developers have typically implemented task parallelization within a particular plugin, but no universal approach has yet been incorporated into the SciJava architecture. Here we propose the concept of integrating parallelization support into one of the SciJava libraries, thereby enabling developers to access remote resources (e.g., remote HPC infrastructure) and delegate plugin-specific tasks to its compute nodes. As the cluster-specific details are hidden in respective interface implementations, the plugins can remain extensible and technology-agnostic. In addition, the proposed solution is highly scalable, meaning that any additional resources can be efficiently utilized.
 
-# Description
+Description
+===========
 
-## SPIM data processing pipeline
+SPIM data processing pipeline
+-----------------------------
 
 SPIM ("Selective/Single Plane Illumination Microscopy") typically images living biological samples from multiple angles (views) collecting several 3D image stacks to cover the entire biological specimen. The 3D image stacks, representing one time point in a long-term time-lapse acquisition, need to be registered to each other which is typically achieved using fluorescent beads as fiduciary markers. After the registration, the individual views within one time point need to be combined into a single output image either by content-based fusion or multi-view deconvolution [\[Multiview-reconstruction](https://imagej.net/Multiview-Reconstruction)\]. The living specimen can move during acquisition, necessitating an intermediate step of time-lapse registration. Whereas parallel processing of individual time points has proven to be beneficial, the time-lapse registration takes only a few seconds and can therefore be performed on a single computing node without the need for parallelization.
 
@@ -29,7 +33,8 @@ The sheer amount of the SPIM data requires conversion from raw microscopy data t
 
 Pipeline input parameters are entered by a user into a *config.yaml* configuration file. In the first step, the .czi raw data are concurrently resaved into the HDF5 container in parallel on the cluster. Similarly, the individual time points are registered in parallel using fluorescent beads as fiduciary markers on the cluster. Subsequently, a non-parallel job executed by *Snakemake* consolidate the registration XML files into a single one, followed by time-lapse registration using the beads segmented during the spatial registration step. After this, the pipeline diverge into either parallel content-based fusion or parallel multi-view deconvolution. To achieve this divergence in practice, the *Snakemake* pipeline is launched from the Fiji plugin as two separate jobs using two different *config.yaml* files set to execute content-based fusion and deconvolution respectively. In the final stage of the pipeline, the fusion/deconvolution output is saved into a new HDF5 container. Figure below shows results of registration, fusion and deconvolution in different time points. <img src="/images/pages/Drosophila.PNG" width="800"/>
 
-## HEAppE middleware
+HEAppE middleware
+-----------------
 
 Accessing a remote HPC cluster is often burdened by administrative overhead due to more or less complex security policies enforced by HPC centers. This barrier can be substantially lowered by employing a middleware tool based on the HPC-as-a-Service concept. To provide this simple and intuitive access to the supercomputing infrastructure an in-house application framework called High-End Application Execution [(HEAppE)](http://heappe.eu) Middleware has been developed. This middleware provides HPC capabilities to the users and third-party applications without the need to manage the running jobs from the command-line interface of the HPC scheduler on the cluster.
 
@@ -37,11 +42,13 @@ To facilitate access to HPC from the Fiji environment, we utilize the in-house H
 
 We developed a Fiji plugin underlain by HEAppE, which enables users to steer workflows running on a remote HPC resource. As a representative workflow we use a *Snakemake* based SPIM data processing pipeline operating on large image datasets. The *Snakemake* workflow engine resolves dependencies between subsequent steps and executes in parallel any tasks appearing to be independent, such as processing of individual time points of a time-lapse acquisition.
 
-# Installation
+Installation
+============
 
 After you install and launch [Fiji](https://imagej.net/Fiji/Downloads), go to {% include bc content='Help | Update... | Manage update sites'%}, tick *P2E-IT4Innovations* and close the window. Then click *Apply changes* and restart Fiji.
 
-# Usage
+Usage
+=====
 
 Now you should see the plugin under {% include bc content='Plugins | Multiview Reconstruction | SPIM Workflow Manager for HPC'%}. Upon plugin invocation from the application menu, you are prompted for HEAppE credentials, e-mail address and specifying your working directory. Following a successful login, the main window containing all jobs arranged in a table is displayed. In this context, the term *job* is used for a single pipeline run with specified parameters. The plugin actively inquires information on the created jobs from HEAppE and updates the table as appropriate. <img src="/images/pages/Flowchart.PNG" width="400"/>
 
@@ -53,7 +60,8 @@ Once a job execution is selected by you, the configuration file is sent to the c
 
 Following a successfully finished pipeline, you can interactively examine the processed SPIM image data using the [BigDataServer](https://imagej.net/BigDataServer) as well as download resultant data and a summary file containing key information about the performed job. Importantly, you can edit the corresponding local configuration file in a common text editor, and restart an interrupted, finished, or failed job.
 
-# HPC Cluster
+HPC Cluster
+===========
 
 Execution of the *Snakemake* pipeline from the implemented Fiji plugin was tested on the [Salomon](https://docs.it4i.cz/salomon/introduction/) supercomputer, at IT4Innovations in Ostrava, Czech Republic, which consists of 1 008 compute nodes, each of which is equipped with 2x12-core Intel Haswell processors and 128 GB RAM, providing a total of 24 192 compute cores of x86-64 architecture and 129 TB RAM. Furthermore, 432 nodes are accelerated by two Intel Xeon Phi 7110P accelerators with 16 GB RAM each, providing additional 52 704 cores and 15 TB RAM. The total theoretical peak performance reaches 2 000 TFLOPS. The system runs a Red Hat Linux.
 
@@ -61,8 +69,9 @@ Using the developed plugin, we executed the pipeline on the Salomon supercompute
 
 The data transfer and pipeline execution on Salomon using 90 nodes took 9 hours 37 minutes. For comparison, processing of the same dataset on a common workstation took 23 hours 56 minutes. The results show that despite the data transfer overhead, a significant speedup of SPIM image analysis has been achieved by employing HPC resources.
 
-# Citation
+Citation
+========
 
 Please note that the plugin SPIM Workflow Manager for HPC available through Fiji is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
-Jan Kožusznik, Petr Bainar, Jana Klímová, Michal Krumnikl, Pavel Moravec, Václav Svatoň, Pavel Tomančák; SPIM Workflow Manager for HPC, *Bioinformatics*, btz140, https://doi.org/10.1093/bioinformatics/btz140
+Jan Kožusznik, Petr Bainar, Jana Klímová, Michal Krumnikl, Pavel Moravec, Václav Svatoň, Pavel Tomančák; SPIM Workflow Manager for HPC, *Bioinformatics*, btz140, [https://doi.org/10.1093/bioinformatics/btz140](https://doi.org/10.1093/bioinformatics/btz140)

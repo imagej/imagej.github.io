@@ -10,17 +10,20 @@ description: test description
 {% include imglibmenu%}
 
 
-## Introduction
+Introduction
+------------
 
 The [ImgLib2](ImgLib2 ) library uses [Maven](Maven ) to manage project dependencies. One advantage of this approach is nice integration with various development environments ([IDEs](IDEs )).
 
 Because people tend to have differing IDE configurations, we do not put project metadata files (e.g., `.classpath`, `.project` and `.settings` for Eclipse) into the git repository. Instead, the IDE can use Maven's `pom.xml` file directly to manage your dependencies in a better way.
 
-## Getting the code
+Getting the code
+----------------
 
 You can clone the ImgLib2 code using Git with the URL: **<git://github.com/imglib/imglib2>**
 
-## Developing ImgLib2 with Eclipse
+Developing ImgLib2 with Eclipse
+-------------------------------
 
 To develop ImgLib2 in Eclipse, follow these steps:
 
@@ -35,19 +38,22 @@ For fresh installs, it will initially take some time (a few minutes) for Maven t
 
 Once you have the ImgLib2 projects within Eclipse, you can reap the benefits of the improved dependency management. For example, if you have the `imglib2` and `imglib2-algorithms` projects open, the `imglib2-algorithms` project will have an Eclipse project build dependency on `imglib2`. If you then close the `imglib2` project, the dependency within `imglib2-algorithms` with automatically become a library dependency to `imglib2-2.0-SNAPSHOT.jar`, rather than the project.
 
-## Developing ImgLib2 with IDEA
+Developing ImgLib2 with IDEA
+----------------------------
 
 IntelliJ IDEA comes with built-in support for Maven.
 
 See [Developing ImageJ in IntelliJ IDEA](Developing_ImageJ_in_IntelliJ_IDEA ).
 
-## Developing ImgLib2 with NetBeans
+Developing ImgLib2 with NetBeans
+--------------------------------
 
 NetBeans comes with built-in support for Maven.
 
 See [Developing ImageJ in NetBeans](Developing_ImageJ_in_NetBeans ).
 
-## Developing ImgLib2 with command line tools
+Developing ImgLib2 with command line tools
+------------------------------------------
 
 You can use the mvn command line tool to build ImgLib2. Just type "mvn" with no arguments. By default, Maven will compile the code, run unit tests, create a JAR file and install it in your local Maven repository (typically found in `~/.m2/repository`). Maven does its work in a subfolder called `target` which is where you'll find compiled classes and JAR artifacts.
 

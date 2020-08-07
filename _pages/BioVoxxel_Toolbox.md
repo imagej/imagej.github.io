@@ -23,15 +23,16 @@ description: test description
 
 You will find all functions of the BioVoxxel Toolbox under the icon of the green BioVoxxel cube after selecting BioVoxxel Toolbox from the More Tools Icon (last Icon in the ImageJ/Fiji Icon list with the double arrow).
 
------
+------------------------------------------------------------------------
 
-# Extended Particle Analyzer
+Extended Particle Analyzer
+==========================
 
 Purpose: The "Extended Particle Analyzer" is based on the ImageJ "Analyze Particles..." command. It enables the user to further restrict the analysis on particles according to many more parameter spezifications of shape descriptors and angle orientations. Thus, setting minimal and maximal exclusion ranges of different parameters enables to extract particles from a binary image. The output types are the same as for the {% include bc content='Analyze | Analyze Particles'%}.
 
 Example: If you want to extract/analyze only particles with a certain Feret's Angle or exclude elongated structures using the aspect ratio (AR) or circilarity you can specify so in the initial dialog box.
 
-![ExtendedParticleAnalyzer\_v2.png](/images/pages/ExtendedParticleAnalyzer v2.png "ExtendedParticleAnalyzer_v2.png")
+<figure><img src="/images/pages/ExtendedParticleAnalyzer_v2.png" title="ExtendedParticleAnalyzer_v2.png" width="750" alt="ExtendedParticleAnalyzer_v2.png" /><figcaption aria-hidden="true">ExtendedParticleAnalyzer_v2.png</figcaption></figure>
 
 How to: Key in minimal and maximal exclusion values connected with a hyphen. You can use integers as well as numbers containing decimal places. "Redirect" redirects the analysis to a grayscale image which enables to analyze skewness, kurtosis as well as the new measure coefficient of variance (cov). The option "Keep borders (correction)" eliminates particles from 2 edges and keeps particles touching the two borders of choice. This corrects the particle count for edge touching particles.
 
@@ -49,15 +50,16 @@ Coefficient of variance (CoV) = \[intensity standard deviation\] / \[intensity m
 
 **The new version from 11th February 2018 (included from BioVoxxel\_Plugins-2.0.1) on contains 2 checkboxes which enable the choice between pixel and calibrated units in images which are spatially calibrated. The checkbox "Pixel units" is equivalent to the checkbox with the same label in the standard IJ Analyze Particels... function and uses pixels instead of calibrated units to limit the analysis with the respective parameters. The checkbox "output in pixels" gives the option to separately choose if the results table should be in specific units or pixels (depending on the image calibration). Older Macros should still run, while the keyword "pixel" needs to be shifted before the definition of the area parameter.**
 
-Form: plugin (recordable, *uses smart recording --\> records only fields which have been changed by the user while recording. Default entries will not be recorded. It is already sufficient to cut a zero after the comma without changing the actual parameter value to make the recorder recognize that the entry should be recorded\!*)
+Form: plugin (recordable, *uses smart recording --&gt; records only fields which have been changed by the user while recording. Default entries will not be recorded. It is already sufficient to cut a zero after the comma without changing the actual parameter value to make the recorder recognize that the entry should be recorded!*)
 
 Status: Maintenance active
 
-Suggestions are welcome\!
+Suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# Field-of-view measure correction
+Field-of-view measure correction
+================================
 
 Purpose: The macro eliminates all particles in a binary image which touch the edges, then counts the remaining particles and corrects for the counting and the mean area bias due to the edge intersection using the following formula:
 
@@ -71,11 +73,12 @@ Form: macro
 
 Status: maintenance active
 
-Future: Suggestions are welcome\!
+Future: Suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# Shape Descriptor Maps
+Shape Descriptor Maps
+=====================
 
 Purpose: Shape descriptors of the particles in an 8-bit binary image will be color coded (smallest to biggest values) and are shown in a stack containing the original image in the first slice and the "shape descriptor maps" in the consecutive ones. The respective shape descriptors are indicated in each slice. A calibration bar (LUT can be selected in the setup) enables easier overview and interpretation. The highest descriptor values can also be displayd as an orientation. Since version 0.6, when "interactive plots" is enabled, the user can simply click on one of the slices in the color coded output stack to receive a plot of the respective size sorted shape descriptor. **To finally abort the macro when interactive plots is active "Esc" needs to be pressed**.
 
@@ -91,11 +94,12 @@ Form: macro
 
 Status: Maintenance active
 
-Future: Suggestions are welcome\!
+Future: Suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# Binary Feature Extractor
+Binary Feature Extractor
+========================
 
 Purpose: The "Feature Extractor" is aimed to select isolate specific features in a binary image by other binary particles as selectors which are located completely inside the features or overlap partially with those. It additionally allows also to get a visual combination of extracted features and selectors (combining those images by using a boolean OR function). The idea for the feature extractor is taken from J. Russ "The Image Processing Handbook" 6th Edition.
 
@@ -107,11 +111,12 @@ How to: First, specify the images containing on the one hand the objects to extr
 
 Status: plugin v1.0, can be run from the BioVoxxel Toolbox Menu, maintenance active
 
-Future: Further suggestions are welcome\!
+Future: Further suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# Speckle Inspector
+Speckle Inspector
+=================
 
 Purpose: The "Speckle Inspector" is able to identify bigger features by the number of containing smaller features/speckles.
 
@@ -127,11 +132,12 @@ Form: plugin, recordable
 
 Status: maintenance active
 
-Future: suggestions are welcome\!
+Future: suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# Watershed Irregular Features
+Watershed Irregular Features
+============================
 
 Purpose: The standard watershed algorithm in ImageJ is very usefull to separate connected, roughly circular structures. Nevertheless, it gets into trouble while separating irregular (non-ellipsoid like) structures. The Irregular Watershed enables the user to separate also irregular shaped structures to a certain extend.
 
@@ -151,11 +157,12 @@ Status: maintenance active
 
 Thanks to Thorsten Wagner which provided the ij-blobs library as basis and the idea to integrate convexity as a second parameter to make the function scale invariant and more flexible.
 
-Future: Suggestions are welcome\!
+Future: Suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# EDM Binary Operations
+EDM Binary Operations
+=====================
 
 Purpose: The standard binary erosion and dilation suffers from the artefact that under higher iteration cycles the binary structures get irregularly deformed (see image below, second column). The EDM based methods for erosion and dilation prevent these artifacts. The method is using thresholding on a 8-bit euclidean distance map of the original image to facilitate binary erosion, dilation, opening and closing.
 
@@ -167,11 +174,12 @@ Form: plugin (with preview, recordable)
 
 Status: works on stacks now, maintenance active
 
-Future: suggestions are welcome\!
+Future: suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# Auto Binary Masking
+Auto Binary Masking
+===================
 
 Purpose: The macro enables to mask images with their thresholded binary counterparts. Works with 2D images and 3D stacks.
 
@@ -181,15 +189,16 @@ Form: macro
 
 Status: maintenance active
 
-Future: Will be implemented for hyperstacks. Suggestions are welcome\!
+Future: Will be implemented for hyperstacks. Suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# **Threshold Check**
+**Threshold Check**
+===================
 
 Purpose: The "Threshold Check" should simply provide a help in deciding which of the 16 [Auto Threshold](Auto_Threshold ) and the 9 [Auto Local Threshold](Auto_Local_Threshold ) outputs from the respective plugins results in the potentially best binary image outcome. This is not an absolute measure but should rather assist in the decision for the application of one specific auto threshold algorithm in non-obvious cases. In the new version you can choose additionally to quantify the quality of the thresholding.
 
-How to: The user needs to first select the image the in which the thresholds should be checked (including all the pre-processing you want/need to apply). Be aware to also specify if you are thresholding bright or dark features in the first checkbox\! You can also choose to ignore black or white pixels from the threshold calculations (as in the normal AutoThreshold dialog). Furthermore, you can choose to include also the 9 Auto Local Thresholds with the respective parameters (for further reading check out: Auto Local Thresholds. Finally, you can include a quantification of the results and choose if you want to have an overview montage in addition to the normal stack output. Thresholds are indicated in the upper left corner of the images for better identification.
+How to: The user needs to first select the image the in which the thresholds should be checked (including all the pre-processing you want/need to apply). Be aware to also specify if you are thresholding bright or dark features in the first checkbox! You can also choose to ignore black or white pixels from the threshold calculations (as in the normal AutoThreshold dialog). Furthermore, you can choose to include also the 9 Auto Local Thresholds with the respective parameters (for further reading check out: Auto Local Thresholds. Finally, you can include a quantification of the results and choose if you want to have an overview montage in addition to the normal stack output. Thresholds are indicated in the upper left corner of the images for better identification.
 
 Output interpretation: You will get a stack with each thresholding method represented in a single stack slice. The following colors should help in interpreting the thresholding result:
 
@@ -203,7 +212,7 @@ Output interpretation: You will get a stack with each thresholding method repres
 
 **red/dark orange** = these areas have a very low brightness (or are black) in the original image but are thresholded as foreground and therefore most likely represent an overestimation by the threshold.
 
-Caution: Interpretation should be done with care and in context to the original image and imaging settings. This macro is thought to assist in the decision for choosing a good thresholding method. It is no absolute measure for thresholding quality\!
+Caution: Interpretation should be done with care and in context to the original image and imaging settings. This macro is thought to assist in the decision for choosing a good thresholding method. It is no absolute measure for thresholding quality!
 
 Quantification: The Quantification is shown in a results window in %Area. The threshold names are followed by either (under), (positive) or (over). This referres to the following:
 
@@ -223,17 +232,18 @@ Form: macro (plugin currently under development)
 
 Status: v2.2 (performance improved), maintenance active
 
-Future: Suggestions are welcome\!
+Future: Suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# Filter Check
+Filter Check
+============
 
 Purpose: This plugin enables you to test a certain range of radii of a specified image filter in one step. This shoud facilitate a better decision on a suitable filter for your processing purpose.
 
 How to: Choose a filter method from the drop down menu, key in a starting and an end radius. The image will be filtered in individual integer steps between the start and stop radius and presented in an image stack containing all the filtered images. The filter can also be applied to only a ROI. This is recommended for filters which are cost intensive, like the "Gaussian Weighted Median". The parameter setting is only needed for the "Bilateral Filter" (range radius) , "Mean Shift Filter" (Color Distance) and the "Linear Kuwahara" (line length).
 
-![Filter\_Check.png](/images/pages/Filter Check.png "Filter_Check.png")
+<figure><img src="/images/pages/Filter_Check.png" title="Filter_Check.png" width="750" alt="Filter_Check.png" /><figcaption aria-hidden="true">Filter_Check.png</figcaption></figure>
 
 Form: plugin
 
@@ -241,11 +251,12 @@ Status: maintenance active
 
 Future: potentially additional filters will be added
 
------
+------------------------------------------------------------------------
 
-# Flat-field and Pseudo flat-field correction
+Flat-field and Pseudo flat-field correction
+===========================================
 
-Purpose: The macro enables to "subtract" background due to inequal lighting from grayscale and true color images. It either uses a previously taken flat-field image (\>Flat-field correction) or creates an artificial flat-field image (\>Pseudo flat-field correction) from the selected original image. For true color images this is done using the brightness channel of an HSB stack. The original image (brightness channel for true color images) is divided by the flat-field image and the brightness is normalized using the mean intensity of the original image.
+Purpose: The macro enables to "subtract" background due to inequal lighting from grayscale and true color images. It either uses a previously taken flat-field image (&gt;Flat-field correction) or creates an artificial flat-field image (&gt;Pseudo flat-field correction) from the selected original image. For true color images this is done using the brightness channel of an HSB stack. The original image (brightness channel for true color images) is divided by the flat-field image and the brightness is normalized using the mean intensity of the original image.
 
 How to: You need either choose the two images in the "Flat-field" version or specify a gaussian blurring radius for the "Pseudo flat-field correction" in a way to eliminate specific feature appearance but to keep the difference in shading/lighting. Therefore, rather big radii (sigma) are needed (potentially between 40-150, but this depends on image and feature size).
 
@@ -259,29 +270,31 @@ form of Pseudo Flat-field correction: plugin
 
 Status: maintenance active, problems with specific stacks (fill be addressed soon)
 
-Future: suggestions are welcome\!
+Future: suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# Convoluted Background Subtraction
+Convoluted Background Subtraction
+=================================
 
-Purpose: This tool enables to subtract the background from an image by creating a convoluted copy of the original image and subtracting the filtered image from it. This background subtraction method should facilitate consecutive feature extraction and is not suitable prior to intensity analyses\!
+Purpose: This tool enables to subtract the background from an image by creating a convoluted copy of the original image and subtracting the filtered image from it. This background subtraction method should facilitate consecutive feature extraction and is not suitable prior to intensity analyses!
 
-How to: The user can choose between Gaussian, Median and Mean convolution filters and key in the respective filter radius (or sigma for the Gaussian Blur). The preview option directly gives a possiblity to compare the results of the background subtraction. The radius for the Gaussian method can be chosen around the biggest feature diameter (as for the rolling ball method). The median and mean methos might need bigger values to avoid elimination of bigger features\!
+How to: The user can choose between Gaussian, Median and Mean convolution filters and key in the respective filter radius (or sigma for the Gaussian Blur). The preview option directly gives a possiblity to compare the results of the background subtraction. The radius for the Gaussian method can be chosen around the biggest feature diameter (as for the rolling ball method). The median and mean methos might need bigger values to avoid elimination of bigger features!
 
 Method: The convoluted images are directly subtracted from the original with exception of the median filtered one. The latter additionally receives a grayscale dilation by application of a maximum filter with the factor (1.5\*(radius/10)). This should reduce artifacts around object borders.
 
-![Convoluted\_Background\_Subtraction.png](/images/pages/Convoluted Background Subtraction.png "Convoluted_Background_Subtraction.png")
+<figure><img src="/images/pages/Convoluted_Background_Subtraction.png" title="Convoluted_Background_Subtraction.png" width="750" alt="Convoluted_Background_Subtraction.png" /><figcaption aria-hidden="true">Convoluted_Background_Subtraction.png</figcaption></figure>
 
 Distribution: plugin, recordable
 
-Status: maintenance active\!
+Status: maintenance active!
 
-Future: suggestions are welcome\!
+Future: suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# Scaled Intensity Plot
+Scaled Intensity Plot
+=====================
 
 Purpose: The tool creates a intensity plot along any kind of lines as well as from rectangular selections (as does {% include bc content='Analyze | Plot Profile'%}) but with the initial possibility to influence the displayed intensity scale. This enables to create plots which can be overlayed by choosing "add to existing plot". In the case of a rectangular selection it can be chosen if the plotting direction should be horizontal or vertical. The intensities along the other direction are then averaged. Additionally, the color and look of the plot line can be chosen. This should enable to better compare intensity plots from different images or selections which is only possible if they have the same scaling. The latter is done in unscaled units (pixels). If a new plot line is added to an existing plot the choice "Draw grid lines" is either ignored or forced depending on how the destination plot was created using the same tool.
 
@@ -291,13 +304,14 @@ Form: macro
 
 Status: deprecated
 
------
+------------------------------------------------------------------------
 
-# Stack Line Plots
+Stack Line Plots
+================
 
 Purpose: The stack line plot enables to make line plots over a complete stack of images.
 
-How To: The line can be either straight, freehand or segmented and needs to be drawn beforehand. If the input image is a hyperstack the user can choose to plot over the z-slice or the t-frame range. In such a case the intensities of the active channel are taken for the plot. The macro automatically creates a stack of plots along the line selection with the upper intensity limit set at the highest intensity occurring along the line over all images. If the \[Shift\] key is held down before and while going to \>BioVoxxel Icon \>Stack Line Plots the limit is set to 255 for 8-bit images and 65535 for 16-bit images
+How To: The line can be either straight, freehand or segmented and needs to be drawn beforehand. If the input image is a hyperstack the user can choose to plot over the z-slice or the t-frame range. In such a case the intensities of the active channel are taken for the plot. The macro automatically creates a stack of plots along the line selection with the upper intensity limit set at the highest intensity occurring along the line over all images. If the \[Shift\] key is held down before and while going to &gt;BioVoxxel Icon &gt;Stack Line Plots the limit is set to 255 for 8-bit images and 65535 for 16-bit images
 
 <img src="/images/pages/StackLinePlots.png" width="750"/>
 
@@ -305,9 +319,10 @@ Form: macro
 
 Status: deprecated
 
------
+------------------------------------------------------------------------
 
-# Adaptive Filter
+Adaptive Filter
+===============
 
 (separate plugin under {% include bc content='Plugins | BioVoxxel'%})
 
@@ -319,7 +334,7 @@ The *Shape* option enables a basic pre-selection of pixels from the kernel neigh
 
 In the image below the upper pannels show the original photograph and a version with artificial shot noise added. The lower pannels depict the noisy image after a median filter (radius=2) or after the Adaptive Filter (radius = 2 and tolerance set to 0.2) using a circle-like kernel.
 
-![AdaptiveFilter.png](/images/pages/AdaptiveFilter.png "AdaptiveFilter.png")
+![](/images/pages/AdaptiveFilter.png "AdaptiveFilter.png")
 
 Output: The filter will be applied directly on the input image. It is undoable (by pressing \[z\]).
 
@@ -327,15 +342,16 @@ Limitation: So far, the filter is only applicable on 8-bit and 16-bit single ima
 
 Installation: Part of the BioVoxxel update site in Fiji and can be found under {% include bc content='Plugins | BioVoxxel'%}
 
-Form: plugin, recording still not fully functional\!\!\!
+Form: plugin, recording still not fully functional!!!
 
 Status: maintenance active
 
-Future: Will be adjusted für 32-bit float-type images as well as RGB images and stacks. Suggestions are welcome\!
+Future: Will be adjusted für 32-bit float-type images as well as RGB images and stacks. Suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# Recursive Filters
+Recursive Filters
+=================
 
 Purpose: The recursive filters plugin allows to repetitively apply one of the three basic image filters (Gaussian Blur, Mean, Median) with small radii (max = 3) by adjusting the iteration. The previously filtered image will then be taken as basis for the next image filtering
 
@@ -347,9 +363,10 @@ Form: recordable plugin
 
 Status: maintenance active
 
------
+------------------------------------------------------------------------
 
-# Difference of Gaussian and Difference from Median
+Difference of Gaussian and Difference from Median
+=================================================
 
 Purpose: Uses a basic difference of Gaussian method for feature detection and a method which gives the difference between the original and a specified "Median" filter on a copy of the original image.
 
@@ -359,11 +376,12 @@ Form: macro
 
 Status: maintenance active
 
-Future: Suggestions are welcome\!
+Future: Suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# Hyperstack Color Coding
+Hyperstack Color Coding
+=======================
 
 Purpose: This macro enables the color coding of the time or volume dimension in stacks and hyperstacks. Multi-channels need to be split up before color coding can be done. The macro is based on the idea of the plugin from Kota Miura and Johannes Schindelin. In contrast to the latter, it keeps the coded stack besides the creation of an additional color-coded z-projection.
 
@@ -373,11 +391,12 @@ Form: macro
 
 Status: maintenance active
 
-Future: Suggestions are welcome\!
+Future: Suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# Neighbor Analysis
+Neighbor Analysis
+=================
 
 Purpose: This macro enables the color coding of particles in an 8-bit binary image according to the number of neighbors of each individual particle. Depending on the method chosen, different neighbor particles will be considered during the analysis.
 
@@ -391,11 +410,12 @@ Form: macro
 
 Status: maintenance active
 
-Future: Suggestions are welcome\!
+Future: Suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# 2D Particle Distribution
+2D Particle Distribution
+========================
 
 (**formerly: Distribution Analysis**, name changed due to redundency with BoneJ function naming)
 
@@ -413,11 +433,12 @@ Form: macro
 
 Status: maintenance active
 
-Future: Suggestions are welcome\!
+Future: Suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# SSIDC Cluster Indicator
+SSIDC Cluster Indicator
+=======================
 
 Meaning: Shape and size invariant DBSCAN based clustering
 
@@ -425,7 +446,7 @@ Pronounce: S-SID C like "acid" C ;-)
 
 Purpose: Indicating clusters of binary image objects after segmentation based on a shape and size invariant density based clustering [DBSCAN](https://de.wikipedia.org/wiki/DBSCAN)
 
-Advantage and HowTo: the algorithm detects clusters of any size, shape and number\! The user does not need to have any prior knowledge or estimation of a number of clusters (as for e.g. k-means). The only input needed is the isotropic distance (in pixel) the user wants (epsilon in DBSCAN) to check around each object and a desired minimum density (number of objects inside the given distance). The algorithm reaches out equidistantly from the object shape. Therefore, amorphous shapes of particles do not matter. Furthermore, the size is not relevant, since the distance is taken from the outside of the object. If size and shape should be ignored, the plugin can be run on the thresholded (min=1 max=255) ultimate points of the binary objects \[►Process ►Binary ►Ultimate Points\] Clusters are also detected in an overlapping but still separate manner if some objects might belong to several clusters but do not belong to their core points.
+Advantage and HowTo: the algorithm detects clusters of any size, shape and number! The user does not need to have any prior knowledge or estimation of a number of clusters (as for e.g. k-means). The only input needed is the isotropic distance (in pixel) the user wants (epsilon in DBSCAN) to check around each object and a desired minimum density (number of objects inside the given distance). The algorithm reaches out equidistantly from the object shape. Therefore, amorphous shapes of particles do not matter. Furthermore, the size is not relevant, since the distance is taken from the outside of the object. If size and shape should be ignored, the plugin can be run on the thresholded (min=1 max=255) ultimate points of the binary objects \[►Process ►Binary ►Ultimate Points\] Clusters are also detected in an overlapping but still separate manner if some objects might belong to several clusters but do not belong to their core points.
 
 Output: The output is on purpose very sparse and gives only the ImageJ ROI Manager. From there cluster numbers and individual amount of objects per cluster can easily be analyzed e.g. using a macro on the ROI manager and the corresponding image
 
@@ -433,7 +454,8 @@ Application: The algorithm was already successfully applied in the quantificatio
 
 Limitation: works on 2D binary images only and does not detect clusters inside other clusters
 
-# Cluster Indicator
+Cluster Indicator
+=================
 
 (depricated)
 
@@ -459,17 +481,19 @@ Form: plugin, recordable
 
 Status: stable, not further actively maintained
 
------
+------------------------------------------------------------------------
 
-# Skeleton Length (corrected)
+Skeleton Length (corrected)
+===========================
 
 Status: deprecated due to incorrect calculation
 
 Please rather use the [Analyze Skeleton 2D/3D](https://imagej.net/AnalyzeSkeleton) which is shipped with Fiji
 
------
+------------------------------------------------------------------------
 
-# Nearest Neighbor Indicator (Separate Tool)
+Nearest Neighbor Indicator (Separate Tool)
+==========================================
 
 Purpose/How to: This tool enables the user to click in any feature in a binary image to identify all neigbors and the nearest neighbor of this feature. Therefore, the tool needs to be activated. Then any click will lead to a new calculation of the neighbors depending on the location clicked on.
 
@@ -483,11 +507,12 @@ Form: macro
 
 Status: maintenance active
 
-Future: Suggestions are welcome\!
+Future: Suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# Gaussian weighted Median filter
+Gaussian weighted Median filter
+===============================
 
 (separate plugin under {% include bc content='Plugins | BioVoxxel'%})
 
@@ -503,11 +528,12 @@ Form: plugin, recordable
 
 Status: maintenance active
 
-Future: Will be adjusted für 32-bit float-type images as well as RGB images and stacks. Suggestions are welcome\!
+Future: Will be adjusted für 32-bit float-type images as well as RGB images and stacks. Suggestions are welcome!
 
------
+------------------------------------------------------------------------
 
-# Enhance True Color Contrast
+Enhance True Color Contrast
+===========================
 
 (separate plugin under {% include bc content='Plugins | BioVoxxel'%})
 
@@ -521,9 +547,10 @@ Form: plugin, recordable
 
 Status: maintenance active
 
------
+------------------------------------------------------------------------
 
-# Mode and Differential Limited Mean Binarization
+Mode and Differential Limited Mean Binarization
+===============================================
 
 (separate plugin under {% include bc content='Plugins | BioVoxxel'%})
 
@@ -541,9 +568,9 @@ Status: maintenance active
 
 Future: Will be implemented for stacks as well.
 
------
+------------------------------------------------------------------------
 
------
+------------------------------------------------------------------------
 
 All BioVoxxel Macros were developed by {% include person content='BioVoxxel' %}
 

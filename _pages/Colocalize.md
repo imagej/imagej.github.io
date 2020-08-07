@@ -10,8 +10,10 @@ description: test description
 {% include wip%}
 
 
-# What is Colocalize?
+What is Colocalize?
+===================
 
-# How to Use Colocalize
+How to Use Colocalize
+=====================
 
  

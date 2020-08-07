@@ -11,10 +11,10 @@ This page provides a detailed explanation and pointers towards the use of the MS
 
 [Stapel, L. C., Lombardot, B., Broaddus, C., Kainmueller, D., Jug, F., Myers, E. W., & Vastenhouw, N. L. (2015). Automated detection and quantification of single RNAs at cellular resolution in zebrafish embryos. Development, dev-128918.](http://www.ncbi.nlm.nih.gov/pubmed/26700682)
 
-The documentation (![Stapel et al Documentation.pdf](/images/pages/Stapel et al Documentation.pdf "Stapel et al Documentation.pdf")) contains details on:
+The documentation (![Stapel et al Documentation.pdf](/images/pages/Stapel et al Documentation.pdf "fig:Stapel et al Documentation.pdf")) contains details on:
 
-  - PathFinder Fiji plugin
-  - Cell annotation plugin in Fiji
-  - Transcript analysis plugin in Fiji
+-   PathFinder Fiji plugin
+-   Cell annotation plugin in Fiji
+-   Transcript analysis plugin in Fiji
 
 Additonnally one can find detail on the KNIME workflow [here](http://tinyurl.com/KNIME-MS-ECS)

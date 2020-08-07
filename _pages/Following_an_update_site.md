@@ -11,17 +11,20 @@ description: test description
  {% include menu-updatesites%}
 
 
-## Introduction
+Introduction
+------------
 
 This tutorial will explain how to **add an update site to your install of ImageJ** such that the plugins maintained there will be installed and updated just like core ImageJ plugins.
 
-## Start the [Updater](Updater )
+Start the [Updater](Updater )
+---------------------------------------
 
 First, start the [updater](updater ):
 
-![How\_to\_setup\_a\_plugin\_distribution\_site-1.jpg](/images/pages/How to setup a plugin distribution site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
+![](/images/pages/How to setup a plugin distribution site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
 
-## Add update sites
+Add update sites
+----------------
 
 Click on the *Manage update sites* button to bring up the site management dialog:
 
@@ -37,9 +40,10 @@ After you have selected your desired update site(s), close the dialog. The list 
 
 {% include warning-box content='If an entry"s action is """Update It""", that means it is changing an existing plugin. This action is dangerous and can break other plugins, or ImageJ itself.  
 Ideally the maintainers of these sites would work with the core ImageJ maintainers to centralize important plugins.  
-When you find plugin conflicts between update sites, you can greatly help the community by [starting a discussion](Help ) with the maintainers\!' %}
+When you find plugin conflicts between update sites, you can greatly help the community by [starting a discussion](Help ) with the maintainers!' %}
 
-## Choose and download plugins
+Choose and download plugins
+---------------------------
 
 You can select whether you want to install a particular plugin by clicking in the **Status/Action** column and changing the option - for example, select **Keep as-is** to avoid installing a clashing plugin.
 
@@ -47,17 +51,18 @@ You can select whether you want to install a particular plugin by clicking in th
 
 Once you are happy with what will be installed, click on the *Apply Changes* button to download your updates.
 
-## Verify install
+Verify install
+--------------
 
 {% include warning-box content='An update is not finalized until """restarting the application.""" After initiating an update, """do not modify your ImageJ installation manually""" until after restarting at least once.' %}
 
 Restart ImageJ as instructed to finish the install. Check to see that the plugin was installed:
 
-![AddPluginSite-7.jpg](/images/pages/AddPluginSite-7.jpg "AddPluginSite-7.jpg")
+![](/images/pages/AddPluginSite-7.jpg "AddPluginSite-7.jpg")
 
 ...and that it works:
 
-![AddPluginSite-8.jpg](/images/pages/AddPluginSite-8.jpg "AddPluginSite-8.jpg")
+![](/images/pages/AddPluginSite-8.jpg "AddPluginSite-8.jpg")
 
 ...and that's all there is to it.
 

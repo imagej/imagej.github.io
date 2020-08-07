@@ -11,23 +11,24 @@ description: test description
 
 See also http://www.mecourse.com/landinig/software/software.html
 
-## Use
+Use
+---
 
 When running the plugin one must specify an 'order' to the robot and some parameters (not all orders require all the parameters):
 
 **Move**: moves the mouse to a particular position (x, y) on the screen.
 
-**\[Left|Middle|Right\]\_Click**: Clicks the mouse at a given (x, y) postion with the chosen button.
+**\[Left\|Middle\|Right\]\_Click**: Clicks the mouse at a given (x, y) postion with the chosen button.
 
 **Delay**: this is the time in milliseconds that the button is down during a click.
 
-**\[Left|Middle|Right\]\_Down**: presses the chosen button at the current position (this order does not read the x, y coordinates).
+**\[Left\|Middle\|Right\]\_Down**: presses the chosen button at the current position (this order does not read the x, y coordinates).
 
-**\[Left|Middle|Right\]\_Up**: releases the chosen button at the current position (this order does not read the x, y coordinates).
+**\[Left\|Middle\|Right\]\_Up**: releases the chosen button at the current position (this order does not read the x, y coordinates).
 
 **KeyPress**: this order will emulate typing the entered string, but will first Click (at the current position), so the cursor is guaranteed to focus in an entry box (maybe this click is not required, please send feedback or suggestions). KeyPress currently supports the following key presses: 0-9 a-z A-Z space /.,-
 
-To emulate the \[enter\] key, type the exclamation mark '\!'. Other characters are converted to '.' Note that in Mac OSX with an AZERTY keyboard, the typed string does not get interpreted correctly. Be also aware that some OS do not support some key presses.
+To emulate the \[enter\] key, type the exclamation mark '!'. Other characters are converted to '.' Note that in Mac OSX with an AZERTY keyboard, the typed string does not get interpreted correctly. Be also aware that some OS do not support some key presses.
 
 **GetPixel**: reports to the Log window the r,g,b values of the pixel at the specified postion (requires x, y coordinates). It will also return the Width and Height of the screen, as well as the coordinates of the pixel.
 
@@ -35,9 +36,10 @@ To emulate the \[enter\] key, type the exclamation mark '\!'. Other characters a
 
 A handy way to find the target coordinates is to first grab the screen (which opens as an image in IJ) and check the coordinates with the mouse in IJ (reported in the status bar).
 
-## Important
+Important
+---------
 
-Be careful with this plugin. It is really easy to end up clicking in unintended places with undesired results. You have been warned\!
+Be careful with this plugin. It is really easy to end up clicking in unintended places with undesired results. You have been warned!
 
 It may be necessary to increase the delay time for clicking orders depending on what is needed to be done and the response time of the target program.
 
@@ -45,8 +47,9 @@ It may be also necessary to slow down the macro calls to this plugin between ord
 
 The included demo, seems to work fine in various platforms. Make sure that there are no open images in IJ and that please do not move the mouse while running the macro.
 
-## Menu Path
+Menu Path
+---------
 
-{% include bc content='Plugins | Utilities (2nd on the list\!) | IJ Robot'%}
+{% include bc content='Plugins | Utilities (2nd on the list!) | IJ Robot'%}
 
 

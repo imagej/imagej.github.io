@@ -11,27 +11,30 @@ This page has a few war stories about having to fight with developing software w
 
 **Note:** there are places for closed-source. Research, however, is only impeded by closed-source.
 
-## QuickTime for Java
+QuickTime for Java
+------------------
 
 QuickTime for Java is a small component on top of the QuickTime SDK (software development kit). In theory, it should make it easy to create movies in QuickTime format. In practice, it is a hassle:
 
-  - QuickTime is only supported on Windows and MacOSX. Good bye, Linux users.
-  - QuickTime for Java is not supported on 64-bit MacOSX. Which means that every time you try to write a QuickTime movie on that platform, it complains that QuickTime is not installed. Good bye, almost every new MacOSX user.
-  - QuickTime for Java does not follow a standard API (see also "Java Media Framework" below). So you will never be able to write code that writes movies in general. You will always have to special-case QuickTime. Goodbye, disgusted developers.
+-   QuickTime is only supported on Windows and MacOSX. Good bye, Linux users.
+-   QuickTime for Java is not supported on 64-bit MacOSX. Which means that every time you try to write a QuickTime movie on that platform, it complains that QuickTime is not installed. Good bye, almost every new MacOSX user.
+-   QuickTime for Java does not follow a standard API (see also "Java Media Framework" below). So you will never be able to write code that writes movies in general. You will always have to special-case QuickTime. Goodbye, disgusted developers.
 
 All in all, QuickTime is just a nuisance, and were it not for Apple shipping it by default with every of their computers, the format would be long dead: the .avi format is a much more open and wider-spread format that does everything QuickTime ever could do, and more.
 
 If QuickTime for Java was [open source](open_source ), we could do something about the problems, at least.
 
-## TransformJ
+TransformJ
+----------
 
 For a long time, the [TransformJ](TransformJ ) plugin suite was closed-source. As it is used for science, we asked the author whether we could look at the source. Scientific process must be transparent so that other scientists can understand and question it. The skepticism in science arises not so much of distrust, but more of the knowledge that we are all human, and humans err.
 
 Happily, the author of TransformJ—Erik Meijering—agreed to let us redistribute the source code for exactly that purpose: that you can understand how it works, and why.
 
-Therefore, TransformJ is not so much an example why closed-source is wrong, but why [open source](open_source ) is right\!
+Therefore, TransformJ is not so much an example why closed-source is wrong, but why [open source](open_source ) is right!
 
-## Java Media Framework
+Java Media Framework
+--------------------
 
 Sun was never really open, except when it had to.
 
@@ -41,7 +44,8 @@ It will take a few years, probably, until the Java Media Framework is licensed i
 
 Due to these limitations, it must have been obvious to everybody from the beginning, that the API was doomed. If you have to depend on the whims of a company that can retract the basis of your software if it pleases them, you will not even start writing that software.
 
-## SUSAN
+SUSAN
+-----
 
 Did you ever hear of the SUSAN edge detector? If you have, you are one of a few lucky. Why? This is a sad story how to utterly destroy the value of your research, once and for all.
 

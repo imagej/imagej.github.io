@@ -7,8 +7,8 @@ categories: News
 description: test description
 ---
 
-We got accepted into Google's Summer of Code program\!
+We got accepted into Google's Summer of Code program!
 
-Our ideas can be found [here](SoC2009Ideas ), but we are looking forward to your ideas, too\!
+Our ideas can be found [here](SoC2009Ideas ), but we are looking forward to your ideas, too!
 
 

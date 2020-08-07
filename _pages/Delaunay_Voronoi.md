@@ -13,11 +13,13 @@ description: test description
 {% endcapture %}
 {% include info-box software='ImageJ ' name='Delaunay/Voronoi ' author='Johannes Schindelin, L. Paul Chew ' maintainer='Johannes Schindelin ' source=source released='14 August 2006 ' latest-version='11 December 2008 ' status='stable ' category='[Image annotation](Category_Image_annotation ) ' %}
 
-## Purpose
+Purpose
+-------
 
 Plugin to perform Delaunay Triangulation, or draw the Voronoi Diagram for a given point ROI.
 
-## Definitions
+Definitions
+-----------
 
 The Delaunay Triangulation for a set of points gives you triangles connecting all the points such that for each triangle, there are no other points in the circumference of that triangle than the three corner points.
 
@@ -29,7 +31,8 @@ A picture says more than thousand words:
 
 ![The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black](/images/pages/Delaunay-voronoi.png "The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black")
 
-## Usage
+Usage
+-----
 
 This plugin operates on a point selection consisting of multiple points.
 
@@ -41,23 +44,24 @@ This plugin operates on a point selection consisting of multiple points.
 
 The plugin shows this dialog when it is called:
 
-![Delaunay-dialog.png](/images/pages/Delaunay-dialog.png "Delaunay-dialog.png")
+![](/images/pages/Delaunay-dialog.png "Delaunay-dialog.png")
 
 Options include:
 
-  - In *interactive* mode, you can move the point selection, but the diagram is not drawn to the image; It is only overlayed.
-  - When selecting *make Delaunay ROI*, instead of drawing the diagram, the point selection is replaced by a line ROI resembling the Delaunay Triangulation (but for technical reasons, many lines will be in that selection *twice*).
-  - If you ask for the *mean distance*, it will be output to the *Results* window.
-  - After the Particle Analyzer was run, you can *infer the selection from the particles*.
-  - Lastly, you can *export* the lines of the Delaunay Triangulation *into the Results window*.
+-   In *interactive* mode, you can move the point selection, but the diagram is not drawn to the image; It is only overlayed.
+-   When selecting *make Delaunay ROI*, instead of drawing the diagram, the point selection is replaced by a line ROI resembling the Delaunay Triangulation (but for technical reasons, many lines will be in that selection *twice*).
+-   If you ask for the *mean distance*, it will be output to the *Results* window.
+-   After the Particle Analyzer was run, you can *infer the selection from the particles*.
+-   Lastly, you can *export* the lines of the Delaunay Triangulation *into the Results window*.
 
-## Version history
+Version history
+---------------
 
-  - 2006/08/14: First public version
-  - 2006/08/19: Fix zooming; draw diagram in zoom indicator
-  - 2006/08/20: Fix zooming of selection; have a dialog to chose parameters
-  - 2007/05/31: Optionally get points from Particle Analyzer, and optionally show mean distance
-  - 2007/07/20: Optionally generate a ROI instead of an overlay or drawing the lines
-  - 2008/11/27: Optionally export the lines of the Delaunay Triangulation into the Results table
+-   2006/08/14: First public version
+-   2006/08/19: Fix zooming; draw diagram in zoom indicator
+-   2006/08/20: Fix zooming of selection; have a dialog to chose parameters
+-   2007/05/31: Optionally get points from Particle Analyzer, and optionally show mean distance
+-   2007/07/20: Optionally generate a ROI instead of an overlay or drawing the lines
+-   2008/11/27: Optionally export the lines of the Delaunay Triangulation into the Results table
 
 

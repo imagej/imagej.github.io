@@ -10,16 +10,17 @@ description: test description
 {% include develop-menu%}
 The source code of ImageJ is very modular; i.e., it is organized into [well-separated](Architecture#Modularity ) projects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
 
-## Where is the code?
+Where is the code?
+------------------
 
-{% include tip tip='You can search the source code at http://search.imagej.net/ using the GitHub button\! ' %}\* All source code is on [GitHub](GitHub ).
+{% include tip tip='You can search the source code at http://search.imagej.net/ using the GitHub button! ' %}\* All source code is on [GitHub](GitHub ).
 
-  - Each project exists in its own GitHub organization.
-  - Each organization contains multiple source code repositories.
-  - Each repository corresponds to one Java library (.jar file).
+-   Each project exists in its own GitHub organization.
+-   Each organization contains multiple source code repositories.
+-   Each repository corresponds to one Java library (.jar file).
 
 |                                          |                                       |                                                                 |
-| ---------------------------------------- | ------------------------------------- | --------------------------------------------------------------- |
+|------------------------------------------|---------------------------------------|-----------------------------------------------------------------|
 | **Logo**                                 | **Organization**                      | **Purpose**                                                     |
 | <img src="/images/pages/Scijava-icon.png" width="28"/> | [SciJava](https://github.com/scijava) | Common utilities, plugin infrastructure, scripting, the context |
 | <img src="/images/pages/Imagej2-icon.png" width="28"/> | [ImageJ](https://github.com/imagej)   | A general-purpose image processing application                  |
@@ -29,11 +30,13 @@ The source code of ImageJ is very modular; i.e., it is organized into [well-sepa
 
 See the [Architecture](Architecture ) page for more information about the relationship between these projects.
 
-## What is the license?
+What is the license?
+--------------------
 
 Most is [BSD-2](BSD-2 ) (permissive); some is [GPL](GPL ) (copyleft). See the [Licensing](Licensing ) page.
 
-## Building from source
+Building from source
+--------------------
 
 Virtually all of these repositories have a top-level `pom.xml` file, identifying them as [Maven](Maven ) projects.
 
@@ -46,12 +49,14 @@ To build a Maven project:
 Advanced instructions for building, or modifying, the source code are available for specific development environments: {% include ides%}
  Note that these tutorials are targeted towards [ImageJ](ImageJ ), but would apply to any Maven-based project.
 
-## Javadocs
+Javadocs
+--------
 
 {% include javadocsection%}
 
 
-## Running ImageJ1 unit tests
+Running ImageJ1 unit tests
+--------------------------
 
 We have written a substantial number of unit tests to exercise [ImageJ 1.x](ImageJ_1.x ) functionality. See the [Unit tests for ImageJ1](Unit_tests_for_ImageJ1 ) page for more information.
 

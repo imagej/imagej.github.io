@@ -166,6 +166,7 @@ def process_file(str_content):
     content_tmp = re.sub(r'(\!|\|) colspan=(\d*)[ ]*(?:style\=\"([^\"]*)\")?(?:[ ]*\|([^\n]*))\n', match_table_colspan, content_tmp)
     content_tmp = content_tmp.replace("<math>", txt_math_start + "<math>")
     content_tmp = content_tmp.replace("</math>", "</math>" + txt_math_end)
+    content_tmp = re.sub(r'\n(\||\!)(.*(?:' + txt_include_start + ')+.*)', r'\n\1<span><br/></span>\2', content_tmp)
     # print(content_tmp)
     return content_tmp
 
@@ -576,9 +577,11 @@ def convert(path_in, path_out, layout, title):
         # do replacements in md format
         content_tmp = reveal_includes(content_tmp)
         content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
+        content_tmp = re.sub(r'(\{\% include bc content)(.+?)(?=\%\})', fix_bc_include, content_tmp)
         content_tmp = re.sub(r'((?<!\!)\[[^\]]*\]\()((?!#)(?!http)(?!mailto\:)(?:[^\)\"]|(?:\\\)))*)([.]*(?:\"[^\"]*\")?(?<!\\)\))', fix_link_match, content_tmp)
         content_tmp = re.sub(r'<img src=\"(?!http)(?!/images/pages/)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
         content_tmp = re.sub(r'((?<!-)\!\[(?!\[)[^\]]*\]\()((?!http)(?!\/images\/pages\/)[^\"\)]*)([ \n]*(?:\"[^\"]*\")?[ ]*\))', fix_md_image, content_tmp)
+        content_tmp = re.sub(r'\<span\>[ \n]*\<br[ ]*\/\>[ \n]*\<\/span\>', r'', content_tmp)
         content_tmp = re.sub(r'(\<td|\<th)(\>.*?(?=' + txt_apply_style_start + '))' + txt_apply_style_start + '(.+?)(?=' + txt_apply_style_end + ')' + txt_apply_style_end, r'\1 style="\3"\2', content_tmp)
         content_tmp = re.sub(r'\| ' + txt_apply_style_start + '(.+?)(?=' + txt_apply_style_end + ')' + txt_apply_style_end, r'|', content_tmp)
         content_tmp = re.sub(r'' + txt_apply_style_start + '([^\n]*)' + txt_apply_style_end + '[\n ]*(<\w*)', r'\2 style="\1"', content_tmp)
@@ -606,6 +609,10 @@ def convert(path_in, path_out, layout, title):
         for line in lines:
             f.write(line)
     return None
+
+
+def fix_bc_include(match):
+    return match.group(1) + match.group(2).replace("\|", "|")
 
 
 def fix_link_match(match):

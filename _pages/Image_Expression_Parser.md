@@ -10,7 +10,8 @@ description: test description
 {% include component-stats content='sc.fiji:Image\_Expression\_Parser' %}{% include toc%}
 
 
-## Usage
+Usage
+-----
 
 The plugin is located in {% include bc content='Process | Image Expression Parser'%}.
 
@@ -30,7 +31,8 @@ The parsing ability is provided by the JEP library: Java Expression Parser v.jep
 
 Internally, images are handled by copying them to a new float type image, so as to avoid clipping effect. The result image returned is of float type as well.
 
-## User interface
+User interface
+--------------
 
 The interactive version (launched from ImageJ) uses a GUI.
 
@@ -40,457 +42,351 @@ Variables can be added using +/- buttons. They are matched to opened images in I
 
 When the images are RGB images, they are processed in a special way:
 
-  - they are split in 3 RGB channels;
-  - each channel is parsed and evaluated separately;
-  - the 3 resulting images are put back together in a 3 channel composite image.
+-   they are split in 3 RGB channels;
+-   each channel is parsed and evaluated separately;
+-   the 3 resulting images are put back together in a 3 channel composite image.
 
 This GUI was built in part using Jigloo GUI builder http://www.cloudgarden.com/jigloo/.
 
-## Supported functions
+Supported functions
+-------------------
 
 Here is a list for supported functions and algorithms, as of version 2.1.
 
 ### Supported ImgLib algorithms
 
 <table border="1">
-
 <tr>
-
 <th>
 
 Description
 
 </th>
-
 <th>
 
 Syntax
 
 </th>
-
 </tr>
-
 <tr>
-
 <td>
 
 Gaussian convolution
 
 </td>
-
 <td>
 
 gauss(img, sigma)
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Floyd-Steinberg dithering
 
 </td>
-
 <td>
 
 dither(img)
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Image normalization (sum to 1)
 
 </td>
-
 <td>
 
 normalize(img)
 
 </td>
-
 </table>
 
 ### Supported functions
 
 <table border="1">
-
 <tr>
-
 <th>
 
 Description
 
 </th>
-
 <th>
 
 Syntax
 
 </th>
-
 </tr>
-
 <tr>
-
 <td>
 
 Euler constant
 
 </td>
-
 <td>
 
 e
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 π
 
 </td>
-
 <td>
 
 pi
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Standard operators
 
 </td>
-
 <td>
 
-\+, -, \*, /, ^, %
++, -, \*, /, ^, %
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Sine
 
 </td>
-
 <td>
 
 sin
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Cosine
 
 </td>
-
 <td>
 
 cos
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Tangent
 
 </td>
-
 <td>
 
 tan
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Arc Sine
 
 </td>
-
 <td>
 
 asin
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Arc Cosine
 
 </td>
-
 <td>
 
 acos
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Arc Tangent
 
 </td>
-
 <td>
 
 atan
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Arc Tangent 2 args
 
 </td>
-
 <td>
 
 atan2(y,x)
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Hyperbolic Sine
 
 </td>
-
 <td>
 
 sinh
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Hyperbolic Cosine
 
 </td>
-
 <td>
 
 cosh
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Hyperbolic Tangent
 
 </td>
-
 <td>
 
 tanh
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Natural Logarithm
 
 </td>
-
 <td>
 
 log
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Exponential
 
 </td>
-
 <td>
 
 exp
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Power
 
 </td>
-
 <td>
 
 pow
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Square Root
 
 </td>
-
 <td>
 
 sqrt
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Absolute Value
 
 </td>
-
 <td>
 
 abs
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Round
 
 </td>
-
 <td>
 
 round
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Floor
 
 </td>
-
 <td>
 
 floor
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Ceiling
 
 </td>
-
 <td>
 
 ceil
 
 </td>
-
 </tr>
-
 <tr>
-
 <td>
 
 Boolean operators
 
 </td>
-
 <td>
 
-\!, &&, ||, \<, \>, \!=, ==, \>=, \<=
+!, &&, \|\|, &lt;, &gt;, !=, ==, &gt;=, &lt;=
 
 </td>
-
 </table>
 
-## Extending the parser
+Extending the parser
+--------------------
 
 It is relatively easy to extends the parser with new functions.
 
@@ -512,8 +408,8 @@ The same thing, but for function with a single argument. For instance, see *fiji
 
 This is a more generic abstract class, allowing to handle whole image operation. There is two method to implement:
 
-  - *evaluate(Image<R> img)* to specify what the function does on a whole image;
-  - *evaluate(R t)* to specify what the function does on a scalar.
+-   *evaluate(Image<R> img)* to specify what the function does on a whole image;
+-   *evaluate(R t)* to specify what the function does on a scalar.
 
 See *ImgLibNormalize* for an example.
 
@@ -523,81 +419,80 @@ The same things, but for two arguments. There is more methods to implement, beca
 
 See *ImgLibGaussConv* for an example. In this example, you will also see how errors or invalid arguments are handled.
 
-## Calling the plugin from elsewhere
+Calling the plugin from elsewhere
+---------------------------------
 
 It is possible to call the plugin from another class or in a scripting language. For instance in Python:
 
-``` python
-from ij import WindowManager
-from net.imglib2.img import ImagePlusAdapter
-from net.imglib2.img.display.imagej import ImageJFunctions
-from fiji.process import Image_Expression_Parser
+    from ij import WindowManager
+    from net.imglib2.img import ImagePlusAdapter
+    from net.imglib2.img.display.imagej import ImageJFunctions
+    from fiji.process import Image_Expression_Parser
 
 
-# Make an ImgLib image from the current image
-imp = WindowManager.getCurrentImage()
-img = ImagePlusAdapter.wrap(imp)
+    # Make an ImgLib image from the current image
+    imp = WindowManager.getCurrentImage()
+    img = ImagePlusAdapter.wrap(imp)
 
-# In python, the map can be a dictionary, relating 
-# variable names to images
-map = {'A': img}
-expression = 'A^2'
+    # In python, the map can be a dictionary, relating 
+    # variable names to images
+    map = {'A': img}
+    expression = 'A^2'
 
-# Instantiate plugin
-parser = Image_Expression_Parser()
+    # Instantiate plugin
+    parser = Image_Expression_Parser()
 
-# Configure & execute
-parser.setImageMap(map)
-parser.setExpression(expression)
-parser.process()
-result = parser.getResult() # is an ImgLib image
+    # Configure & execute
+    parser.setImageMap(map)
+    parser.setExpression(expression)
+    parser.process()
+    result = parser.getResult() # is an ImgLib image
 
-# Copy result to an ImagePlus and display it
-result_imp = ImageJFunctions.show(result)
-result_imp.resetDisplayRange()
-result_imp.updateAndDraw()
-```
+    # Copy result to an ImagePlus and display it
+    result_imp = ImageJFunctions.show(result)
+    result_imp.resetDisplayRange()
+    result_imp.updateAndDraw()
 
 Here is another example in [Javascript](Javascript ) contributed by Jeff Hanson:
 
-``` javascript
-// This script was created as an javascript equivalent of the Python example here:
-//   https://fiji.sc/Image_Expression_Parser#Calling_the_plugin_from_elsewhere
+    // This script was created as an javascript equivalent of the Python example here:
+    //   https://fiji.sc/Image_Expression_Parser#Calling_the_plugin_from_elsewhere
 
-importClass(Packages.fiji.process.Image_Expression_Parser); 
-importClass(java.util.HashMap);
-importPackage(Packages.mpicbg.imglib);
+    importClass(Packages.fiji.process.Image_Expression_Parser); 
+    importClass(java.util.HashMap);
+    importPackage(Packages.mpicbg.imglib);
 
-expression = 'A^2';
+    expression = 'A^2';
 
-imp = IJ.getImage();
+    imp = IJ.getImage();
 
-img = Packages.mpicbg.imglib.image.ImagePlusAdapter.wrap(imp);
+    img = Packages.mpicbg.imglib.image.ImagePlusAdapter.wrap(imp);
 
-imgMap = new java.util.HashMap();
-imgMap.put('A', img);
-parser = new Packages.fiji.process.Image_Expression_Parser();
-parser.setImageMap(imgMap);
-parser.setExpression(expression);
-parser.process();
-result = parser.getResult();
-resultImp = Packages.mpicbg.imglib.image.display.imagej.ImageJFunctions.copyToImagePlus(result);
-IJ.run(resultImp, "Enhance Contrast", "saturated=0.35");
-resultImp.show();
-```
+    imgMap = new java.util.HashMap();
+    imgMap.put('A', img);
+    parser = new Packages.fiji.process.Image_Expression_Parser();
+    parser.setImageMap(imgMap);
+    parser.setExpression(expression);
+    parser.process();
+    result = parser.getResult();
+    resultImp = Packages.mpicbg.imglib.image.display.imagej.ImageJFunctions.copyToImagePlus(result);
+    IJ.run(resultImp, "Enhance Contrast", "saturated=0.35");
+    resultImp.show();
 
-## Version history
+Version history
+---------------
 
-  - v1.0 - Feb 2010 - First working version.
-  - v1.1 - Apr 2010 - Expression field now has a history.
-  - v2.0 - May 2010 - Complete logic rewrite:
-      - functions are now handled by code specific for ImgLib;
-      - support for ImgLib algorithms and non pixel-based operations, such as gaussian convolution;
-      - faster evaluation, thanks to dealing with ImgLib images as objects within the parser instead of pixel per pixel evaluation.
-  - v2.1 - June 2010 - The GUI now generate a new separate thread for processing, freeing resources for the redraw of the GUI panel itself (thanks to Albert Cardona and the Fijiers input).
-  - v2.2 - June 2010 - First version released publicly. RGB images are processed in a special way by the GUI: each of their channel is processed separately and put back together in a composite image.
+-   v1.0 - Feb 2010 - First working version.
+-   v1.1 - Apr 2010 - Expression field now has a history.
+-   v2.0 - May 2010 - Complete logic rewrite:
+    -   functions are now handled by code specific for ImgLib;
+    -   support for ImgLib algorithms and non pixel-based operations, such as gaussian convolution;
+    -   faster evaluation, thanks to dealing with ImgLib images as objects within the parser instead of pixel per pixel evaluation.
+-   v2.1 - June 2010 - The GUI now generate a new separate thread for processing, freeing resources for the redraw of the GUI panel itself (thanks to Albert Cardona and the Fijiers input).
+-   v2.2 - June 2010 - First version released publicly. RGB images are processed in a special way by the GUI: each of their channel is processed separately and put back together in a composite image.
 
-## Wish list for this plugin
+Wish list for this plugin
+-------------------------
 
 We are interested into knowing how we should extend this plugin so that it suits your need. Tell us in the [discussion page](Talk_Image_Expression_Parser ).
 

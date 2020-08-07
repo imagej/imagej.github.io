@@ -19,23 +19,22 @@ Results are displayed over no more than 225 columns, so that also the most widel
 
 The variables in the initial dialogue can be set from a macro, and the dialogue can be bypassed altogether. The following macro shows how to do this and also lists all the parameters that can be set from a macro:
 
-``` java
-call("MTrack2_.setProperty","minSize","2");
-call("MTrack2_.setProperty","maxSize","20");
-call("MTrack2_.setProperty","minTrackLength","3");
-call("MTrack2_.setProperty","maxVelocity","4");
-call("MTrack2_.setProperty","saveResultsFile","false");
-call("MTrack2_.setProperty","showPaths","true");
-call("MTrack2_.setProperty","showPathLengths","true");
-call("MTrack2_.setProperty","showLabels","false");
-call("MTrack2_.setProperty","showPositions","true");
-call("MTrack2_.setProperty","skipDialogue","true");
+    call("MTrack2_.setProperty","minSize","2");
+    call("MTrack2_.setProperty","maxSize","20");
+    call("MTrack2_.setProperty","minTrackLength","3");
+    call("MTrack2_.setProperty","maxVelocity","4");
+    call("MTrack2_.setProperty","saveResultsFile","false");
+    call("MTrack2_.setProperty","showPaths","true");
+    call("MTrack2_.setProperty","showPathLengths","true");
+    call("MTrack2_.setProperty","showLabels","false");
+    call("MTrack2_.setProperty","showPositions","true");
+    call("MTrack2_.setProperty","skipDialogue","true");
 
-run("MTrack2 ");
-```
+    run("MTrack2 ");
 
-## See also
+See also
+--------
 
-  - http://valelab.ucsf.edu/~nico/IJplugins/MTrack2.html
+-   http://valelab.ucsf.edu/~nico/IJplugins/MTrack2.html
 
  

@@ -10,7 +10,8 @@ description: test description
 (Return to the [Developer Documentation](3D_Viewer__Developer_Documentation ) page)  
 (Return to the main [3D\_Viewer](3D_Viewer ) page)
 
-## How to animate the universe and create movies
+How to animate the universe and create movies
+---------------------------------------------
 
 You can download example source code for this HowTo [here](3D_Viewer__Example_code ).
 
@@ -18,20 +19,18 @@ It is very easy to animate the virtual universe and to record the animation, so 
 
 The following lines show an easy example:
 
-``` java
-    // Add the image as a volume
-    univ.addVoltex(imp);
+        // Add the image as a volume
+        univ.addVoltex(imp);
 
 
-    // animate the universe
-    univ.startAnimation();
+        // animate the universe
+        univ.startAnimation();
 
 
-    // record a 360 degree rotation around the y-axis
-    ImagePlus movie = univ.record360();
-    movie.show();
-    univ.pauseAnimation();
-```
+        // record a 360 degree rotation around the y-axis
+        ImagePlus movie = univ.record360();
+        movie.show();
+        univ.pauseAnimation();
 
 The call to the universe's `record()` method returns an `ImagePlus`, which consists of a stack of successive frames of a full 360 degree animation.
 

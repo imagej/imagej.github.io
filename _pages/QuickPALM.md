@@ -9,7 +9,8 @@ description: test description
 
 {% include component-stats content='sc.fiji:QuickPALM\_' %}The QuickPALM ImageJ plugin enables PALM/STORM 2D/3D/4D particle detection and image reconstruction. It uses fast methods to make the reconstruction very quickly, or even in real time.
 
-## Publication
+Publication
+-----------
 
 {% include publication content='QuickPALM' %}
 

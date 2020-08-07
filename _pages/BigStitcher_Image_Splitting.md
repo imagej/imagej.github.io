@@ -7,7 +7,8 @@ categories:
 description: test description
 ---
 
-## Overview
+Overview
+--------
 
 A very easy way of improving registration quality in datasets in which translation and even affine models are not enough is to **split the images** into smaller blocks which can be registered individually, partially accounting for non-rigid distortions within the original images.
 
@@ -17,7 +18,8 @@ We support *virtual* splitting of datasets into smaller blocks in BigStitcher. T
 
 {% include info-box content='While all functionality of BigStitcher is available for split datasets, computationally intensive steps such as phase correlation (Stitching) or interest point detection may take much longer in the virtually split images. We therefore recommend to perform Stitching, Interest Point detection and/or MultiView reconstruction on the whole images first and then run a second round of ICP refinement with existing interest points after splitting (The interest points detected in the whole images are carried over to the split images). This way, you can """improve registration quality with minimal computational overhead."""' %}
 
-## Usage
+Usage
+-----
 
 The splitting functionality in **not included in the BigStitcher UI**. To split a dataset, you have to select {% include bc content='Plugins|BigStitcher|Tools|Split Images'%} in the **Fiji Main Menu**.
 
@@ -29,15 +31,15 @@ After selecting the dataset to split and clicking **OK**, the following dialog w
 
 Here, you can set
 
-  - **New Image Size** to specify the approximate size of the split images in X, Y and Z, in pixels.
-  - **Overlap** of the split images in X, Y and Z, in pixels.
+-   **New Image Size** to specify the approximate size of the split images in X, Y and Z, in pixels.
+-   **Overlap** of the split images in X, Y and Z, in pixels.
 
 {% include info-box content='The specified """New Image Sizes""" are only guidelines, the final result may deviate from them. The """Overlaps""" will be respected exactly, however.' %}
 
-  - The path of the **New XML File** to which the split dataset will be saved.
-  - **Split Result** Here, you can select
-      - **Display** to show the dataset in BigDataViewer after splitting. **You need to manually click SAVE to commit the changes**
-      - **Save & Close** to immediately save the split dataset.
+-   The path of the **New XML File** to which the split dataset will be saved.
+-   **Split Result** Here, you can select
+    -   **Display** to show the dataset in BigDataViewer after splitting. **You need to manually click SAVE to commit the changes**
+    -   **Save & Close** to immediately save the split dataset.
 
 You can the open the split dataset (XML) as you would any other dataset and reconstruct it in BigStitcher.
 

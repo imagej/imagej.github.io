@@ -7,7 +7,8 @@ categories:
 description: test description
 ---
 
-## A page for deconvolution tips and how-tos
+A page for deconvolution tips and how-tos
+-----------------------------------------
 
 Compiled by E. Crowell and D. J. White
 
@@ -45,7 +46,7 @@ Therefore, a distinct PSF must be acquired/created for every combination of thes
 
 ### Post-processing of acquired PSF images to generate a measured PSF
 
-A high-quality PSF image is difficult to generate by acquiring images of sub-resolution fluorescent beads. Such small beads seldom contain enough fluorescent dye to yield a high signal-to-noise (SNR) ratio. Therefore, z-stacks should be acquired using a relatively high exposure time (\> 200 ms). Caution should be used to avoid increasing the exposure time or lamp power to a level which will cause rapid photobleaching of the bead. If photobleaching occurs during acquisition of the PSF z-stack, it will result in a false PSF due to loss of signal caused by photobleaching.
+A high-quality PSF image is difficult to generate by acquiring images of sub-resolution fluorescent beads. Such small beads seldom contain enough fluorescent dye to yield a high signal-to-noise (SNR) ratio. Therefore, z-stacks should be acquired using a relatively high exposure time (&gt; 200 ms). Caution should be used to avoid increasing the exposure time or lamp power to a level which will cause rapid photobleaching of the bead. If photobleaching occurs during acquisition of the PSF z-stack, it will result in a false PSF due to loss of signal caused by photobleaching.
 
 The beads should be sufficiently diluted so that on average only one bead is visible per field of view. (Neighboring beads will contribute their own light diffraction patterns and deform the measured PSF.) Appropriate beads for measuring PSFs should have a low tendency to aggregate. Nevertheless, with subresolution size beads, one can never know if one is imaging a single bead, or a pair or small cluster of beads. Therefore, it is necessary to image multiple fluorescent beads and to compare the obtained PSFs. The ones that show nicely symmetrical Airy rings represent the useful PSFs. If none of the PSFs obtained shows the expected pattern, there is likely a problem in the optics (see above).
 

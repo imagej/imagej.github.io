@@ -10,7 +10,8 @@ description: test description
 {% include menu-cookbook%}
 
 
-## Brightness and Contrast
+Brightness and Contrast
+-----------------------
 
 {% include thumbnail src='/images/pages/Brightness contrast pic.png' title='right'%} Brightness is the visual perception of reflected light. Increased brightness refers to an image's increased luminance.
 
@@ -28,19 +29,22 @@ Pressing the *Apply* button permanently changes the *actual* grey values of the 
 
 If you prefer the image to be displayed as "black on white" rather than "white on black", then use the "inverted" command: {% include bc content='Image | Lookup Tables | Invert LUT'%}. The command {% include bc content='Edit | Invert'%} inverts the pixel *values themselves* permanently.
 
-## Getting intensity values from single ROI
+Getting intensity values from single ROI
+----------------------------------------
 
 If working with a stack, the ROI selected can be analyzed with the command: {% include bc content='Image | Stacks | Plot Z Axis Profile'%}. This generates a single column of numbers - one slice intensity per row.
 
-The top 6 rows of the column are details of the ROI. This makes sure the same ROI is not analyzed twice and allows you to save any interesting ROIs. The details are comprised of area, x-coordinate, y-coordinate, AR, roundness, and solidity of the ROI. If the ROI is a polyline\>freehand ROI rather than a square\>oval, it acts as if the ROI is an oval\>square. The (oval) ROI can be restored by entering the details prompted by the {% include bc content='Edit | Selection | Restore Selection'%} (hotkey: {% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='E' %}) command.
+The top 6 rows of the column are details of the ROI. This makes sure the same ROI is not analyzed twice and allows you to save any interesting ROIs. The details are comprised of area, x-coordinate, y-coordinate, AR, roundness, and solidity of the ROI. If the ROI is a polyline&gt;freehand ROI rather than a square&gt;oval, it acts as if the ROI is an oval&gt;square. The (oval) ROI can be restored by entering the details prompted by the {% include bc content='Edit | Selection | Restore Selection'%} (hotkey: {% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='E' %}) command.
 
 The results are displayed in a plot-window with the ROI details in the plot window title. The plot contains the buttons *List, Save, Copy.* The *Copy* button puts the data in the clipboard so it can be pasted into an Excel sheet. The settings for the copy button can be found under {% include bc content='Edit | Options | Profile Plot Options'%}. Recommended settings include: ''Do not save x-values ''(prevents slice number data being pasted into Excel) and *Autoclose* so that you don't have to close the analyzed plot each time.
 
-## Dynamic intensity vs Time analysis
+Dynamic intensity vs Time analysis
+----------------------------------
 
 The plugin *Plot Z Axis Profile* (this is the *Z Profiler* from Kevin (Gali) Baler (gliblr at yahoo.com) and {% include person content='Rasband' %} simply renamed) will monitor the intensity of a moving ROI using a particle tracking tool. This tool can be either manual or automatic. Use the {% include bc content='Image | Stacks | Plot Z Axis Profile'%} command.
 
-## Getting intensity values from multiple ROIs
+Getting intensity values from multiple ROIs
+-------------------------------------------
 
 You can analyze multiple ROIs at once with Bob Dougherty’s *Multi Measure* plugin. The native "ROI manager" function does a similar job except doesn't generate the results in sorted columns. Check [Bob’s website](http://www.optinav.com/imagej.html) for updates.
 
@@ -51,12 +55,12 @@ The Multi Measure plugin that comes with the installation is v3.2.
 3.  Rename this image something memorable.
 4.  Open the *ROI Manager* plugin ({% include bc content='Analyze | Tools | Roi Manager'%} or toolbar icon).
 5.  Select ROIs and "*Add*" to the ROI manager. Click the "*Show All*" button to help avoid analyzing the same cell twice.
-6.  After selecting ROIs to be analyzed in the reference image, you can draw them to the reference image by clicking the "*More\>\>*" button and selecting *Draw*. Save the reference image to the experiment’s data folder and then click on the stack to be analyzed.
-7.  Click the "*More\>\>*" button in the ROI manager and select the *Multi Measure* button to measure all the ROIs. Click *Ok*. This will put values from each slice in to a single row with multiple columns per slice. Clicking on "*Measure all 50 slices*" will put all values from all slices and each ROI in a single column.
+6.  After selecting ROIs to be analyzed in the reference image, you can draw them to the reference image by clicking the "*More&gt;&gt;*" button and selecting *Draw*. Save the reference image to the experiment’s data folder and then click on the stack to be analyzed.
+7.  Click the "*More&gt;&gt;*" button in the ROI manager and select the *Multi Measure* button to measure all the ROIs. Click *Ok*. This will put values from each slice in to a single row with multiple columns per slice. Clicking on "*Measure all 50 slices*" will put all values from all slices and each ROI in a single column.
 8.  Go to the *Results* window and select the menu item {% include bc content='Edit | Select All...'%}. Then *Edit/Copy*.
 9.  Go to Excel and paste in the data. Check that everything was pasted in correctly
 
-![roi\_select\_all.jpg](/images/pages/Roi select all.jpg "roi_select_all.jpg")
+![](/images/pages/ roi select all.jpg "_roi_select_all.jpg")
 
 10\. To copy ROI coordinates into the Excel spreadsheet, there needs to be an empty row above the intensity data. Use the Multi Measure dialog and click the *Copy list* button.
 
@@ -64,9 +68,10 @@ The Multi Measure plugin that comes with the installation is v3.2.
 
 Oval and rectangular ROIs can be restored individually from x, y, l, h values with the {% include bc content='Plugins | ROI | Specify ROI...'%} command.
 
-## Ratio Analysis
+Ratio Analysis
+--------------
 
-![intensity\_ratio\_analysis.jpg](/images/pages/Intensity ratio analysis.jpg "intensity_ratio_analysis.jpg") Ratiometric imaging compares the recordings of two different signals to see if there are any similarities between them. It is done by dividing one channel by another channel to produce a third ratiometric channel. This technique is useful because it corrects for dye leakage, unequal dye loading, and photo-bleaching. An example application would be measuring intracellular ion, pH, and voltage dynamics in real time.
+![](/images/pages/Intensity ratio analysis.jpg "fig:intensity_ratio_analysis.jpg") Ratiometric imaging compares the recordings of two different signals to see if there are any similarities between them. It is done by dividing one channel by another channel to produce a third ratiometric channel. This technique is useful because it corrects for dye leakage, unequal dye loading, and photo-bleaching. An example application would be measuring intracellular ion, pH, and voltage dynamics in real time.
 
 Background subtraction is needed before analysis of dual-channel ratio images. See also the [background correction](#Background_correction "wikilink") section. The *Ratio\_Profiler* plugin will perform ratiometric analysis of a single ROI on a dual-channel interleaved stack. The odd-slices are channel 1 images and the even slices are channel 2 images. If your two channels are opened as separate stacks, such as Zeiss, the two channels can be interleaved (mixed together by alternating between them) with the menu command {% include bc content='Plugins | Stacks - Shuffling | Stack Interleaver'%}.
 
@@ -96,7 +101,8 @@ To generate a reference image:
 2.  Adjust the brightness and contrast if necessary.
 3.  Select the new image and click the "More" button in the ROI manager. After that select "Label".
 
-## Obtaining timestamp data
+Obtaining timestamp data
+------------------------
 
 ### Zeiss LSM
 
@@ -108,7 +114,8 @@ In Fiji, corresponding commands are: "{% include bc content='File | Import | Sho
 
 This reading can be found by using the menu command {% include bc content='Image | Show Info...'%}. Scroll down to get the time each slice was acquired. Select this time, copy it into Excel, and find the time number obtained by using the Excel menu command {% include bc content='Edit | Replace'%}. This will leave only the time data. The "elapsed" time can then be calculated by subtracting row 1 from all subsequent rows.
 
-## Pseudo-linescan
+Pseudo-linescan
+---------------
 
 Linescanning involves acquiring a single line, one pixel in width, from a common confocal microscope instead of a standard 2D image. This is usually a faster way to take an image. All the single pixel-wide images are then stacked to recreate the 2D image.
 
@@ -118,7 +125,8 @@ A line of interest is drawn followed by the command: {% include bc content='Imag
 
 Fiji's default settings assume that stacks are *z*-series rather than *t*-series. This means that many functions related to the third-dimension of an image stack are referred to with a *z-*. Just keep this in mind.
 
-## FRAP (Fluorescence Recovery After Photobleaching) Analysis
+FRAP (Fluorescence Recovery After Photobleaching) Analysis
+----------------------------------------------------------
 
 The FRAP profiler plugin will analyze the intensity of a bleached ROI over time and normalize it against the intensity of the whole cell. After that it will find the minimum intensity in the bleached ROI and fit the recovery with this point in mind.
 
@@ -130,32 +138,27 @@ To use:
 4.  Run the FRAP profiler plugin.
 5.  The plugin will return the intensity vs time plot, the normalized intensity vs time plot of the bleached area, and the curve fit.
 
-## Non-linear contrast stretching
+Non-linear contrast stretching
+------------------------------
 
 ### Equalization
 
-<table>
-<tbody>
-<tr class="odd">
-<td style="border:none;padding:0in;"><p> You can have more control over brightness and contrast adjustments with the {% include bc content='Process | Enhance contrast'%} menu command. With a stack, it analyzes the each slice’s histogram to make the adjustment.</p>
-<p>The <em>Equalize contrast</em> command applies a non-linear stretch of the histogram based on the square root of its intensity.</p></td>
-</tr>
-</tbody>
-</table>
+<table><tbody><tr class="odd"><td style="border:none;padding:0in;"><p> You can have more control over brightness and contrast adjustments with the {% include bc content='Process | Enhance contrast'%} menu command. With a stack, it analyzes the each slice’s histogram to make the adjustment.</p><p>The <em>Equalize contrast</em> command applies a non-linear stretch of the histogram based on the square root of its intensity.</p></td></tr></tbody></table>
 
-![equalize\_histrogram.jpg](/images/pages/Equalize histrogram.jpg "equalize_histrogram.jpg")
+![](/images/pages/Equalize histrogram.jpg "equalize_histrogram.jpg")
 
 ### Gamma
 
-Gamma performs a non-linear histogram adjustment. Faint objects become more intense while bright objects do not (gamma \<1). Also, medium-intensity objects become fainter while bright objects do not (gamma \> 1). The intensity of each pixel is "raised to the power" of the gamma value and then scaled to 8-bits or the min and max of 16-bit images.
+Gamma performs a non-linear histogram adjustment. Faint objects become more intense while bright objects do not (gamma &lt;1). Also, medium-intensity objects become fainter while bright objects do not (gamma &gt; 1). The intensity of each pixel is "raised to the power" of the gamma value and then scaled to 8-bits or the min and max of 16-bit images.
 
 For 8 bit images; New intensity = 255 × *\[(old intensity÷255) gamma*\]
 
 Gamma can be adjusted via the {% include bc content='Process | Math | Gamma'%} command. It will allow you to adjust the gamma with the scroll bar. Click on *Ok* when you are finished. You can use the Scroll-bar to determine the desired gamma value on one slice of your stack. There is also an option to preview the results.
 
-![gamma\_pic.jpg](/images/pages/Gamma pic.jpg "gamma_pic.jpg")
+![](/images/pages/Gamma pic.jpg "gamma_pic.jpg")
 
-## Filtering
+Filtering
+---------
 
 See the [online reference](http://homepages.inf.ed.ac.uk/rbf/HIPR2/filtops.htm) for an explanation of digital filters and how they work.
 
@@ -175,7 +178,8 @@ Filters can be found using the menu command {% include bc content='Process | Fil
 
 *Kalman filter*: This filter, also known as the Linear Quadratic Estimation, recursively operates on noisy inputs to compute a statistically optimal estimate of the underlying system state.
 
-## Background correction
+Background correction
+---------------------
 
 Background correction can be done in multiple ways. A simple method is to use the {% include bc content='Image | Lookup Tables | HiLo'%} LUT to display zero values as blue and white values (pixel value 255) as red.
 
@@ -185,16 +189,13 @@ With a background that is relatively even across the image, remove it with the *
 
 To fix an uneven background use the menu command {% include bc content='Process | Subtract background'%}. This will use a *rolling ball* algorithm on the uneven background. The radius should be set to at least the size of the largest object that is *not* part of the background. It can also be used to remove background from gels where the background is white. Running the command several times may produce better results. The user can choose whether or not to have a light background, create a background with no subtraction, have a sliding paraboloid, disable smoothing, or preview the results. The default value for the rolling ball radius is 50 pixels.
 
-|                                                                                                                                                          |                                                                                                                                             |                                                                                                                                                                            |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| *RAW*                                                                                                  |                                                                                           | {% include bc content='Process | Subtract Background...'%}                                                               |
-| ![raw\_rolling\_ball\_back\_corr.jpg](/images/pages/Raw rolling ball back corr.jpg "raw_rolling_ball_back_corr.jpg") | ![rolling\_ball\_back\_corr.jpg](/images/pages/Rolling ball back corr.jpg "rolling_ball_back_corr.jpg") | ![processed\_rolling\_ball\_back\_corr.jpg](/images/pages/Processed rolling ball back corr.jpg "processed_rolling_ball_back_corr.jpg") |
+<table><tbody><tr class="odd"><td style="border:none;padding:0.0194in;"><p> <em>RAW</em></p></td><td style="border:none;padding:0.0194in;"></td><td style="border:none;padding:0.0194in;"><p> {% include bc content='Process | Subtract Background...'%}</p></td></tr><tr class="even"><td style="border:none;padding:0.0194in;"><p> <img src="/images/pages/raw_rolling_ball_back_corr.jpg" title="fig:raw_rolling_ball_back_corr.jpg" alt="raw_rolling_ball_back_corr.jpg" /></p></td><td style="border:none;padding:0.0194in;"><p> <img src="/images/pages/rolling_ball_back_corr.jpg" title="fig:rolling_ball_back_corr.jpg" alt="rolling_ball_back_corr.jpg" /></p></td><td style="border:none;padding:0.0194in;"><p> <img src="/images/pages/processed_rolling_ball_back_corr.jpg" title="fig:processed_rolling_ball_back_corr.jpg" alt="processed_rolling_ball_back_corr.jpg" /></p></td></tr></tbody></table>
 
 Once the background has been evened, final adjustments can be made with the *Brightness/Contrast* control.
 
-|                                                                                                                                             |                                                                                                                                   |                                                                                                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![bright\_contr\_roll\_ball.jpg](/images/pages/Bright contr roll ball.jpg "bright_contr_roll_ball.jpg") | ![histogram\_roll\_ball.jpg](/images/pages/Histogram roll ball.jpg "histogram_roll_ball.jpg") | ![bright\_contr\_control\_roll\_ball.jpg](/images/pages/Bright contr control roll ball.jpg "bright_contr_control_roll_ball.jpg") |
+|                                                                                                                    |                                                                                                              |                                                                                                                                    |
+|--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| ![](/images/pages/Bright contr roll ball.jpg "fig:bright_contr_roll_ball.jpg") | ![](/images/pages/Histogram roll ball.jpg "fig:histogram_roll_ball.jpg") | ![](/images/pages/Bright contr control roll ball.jpg "fig:bright_contr_control_roll_ball.jpg") |
 
 ### ROI background correction
 
@@ -202,50 +203,16 @@ The rolling-ball algorithm takes a lot of time. To speed up the process with an 
 
 This macro, because it also works with stacks, can be used on time-courses with varying backgrounds.
 
-<table>
-<tbody>
-<tr class="odd">
-<td style="border:none;padding:0in;">
-<center>
-<p>Before correction</p>
-</center></td>
-<td style="border:none;padding:0in;">
-<center>
-<p>Background intensity over time</p>
-</center></td>
-<td style="border:none;padding:0in;">
-<center>
-<p>After <em>ROI_BG_Correction</em></p>
-</center></td>
-</tr>
-<tr class="even">
-<td style="border:none;padding:0in;"><p> <img src="/images/pages/roi_back_corr_before.gif" title="fig:roi_back_corr_before.gif" alt="roi_back_corr_before.gif" /></p></td>
-<td style="border:none;padding:0in;"><p> <img src="/images/pages/roi_back_corr_during.gif" title="fig:roi_back_corr_during.gif" alt="roi_back_corr_during.gif" /></p></td>
-<td style="border:none;padding:0in;"><p> <img src="/images/pages/roi_back_corr_after.gif" title="fig:roi_back_corr_after.gif" alt="roi_back_corr_after.gif" /></p></td>
-</tr>
-</tbody>
-</table>
+<table><tbody><tr class="odd"><td style="border:none;padding:0in;"><center><p>Before correction</p></center></td><td style="border:none;padding:0in;"><center><p>Background intensity over time</p></center></td><td style="border:none;padding:0in;"><center><p>After <em>ROI_BG_Correction</em></p></center></td></tr><tr class="even"><td style="border:none;padding:0in;"><p> <img src="/images/pages/roi_back_corr_before.gif" title="fig:roi_back_corr_before.gif" alt="roi_back_corr_before.gif" /></p></td><td style="border:none;padding:0in;"><p> <img src="/images/pages/roi_back_corr_during.gif" title="fig:roi_back_corr_during.gif" alt="roi_back_corr_during.gif" /></p></td><td style="border:none;padding:0in;"><p> <img src="/images/pages/roi_back_corr_after.gif" title="fig:roi_back_corr_after.gif" alt="roi_back_corr_after.gif" /></p></td></tr></tbody></table>
 
-## Flat-field correction
+Flat-field correction
+---------------------
 
 ### Proper correction
 
 Use this technique on brightfield images. You can correct uneven illumination or dirt/dust on lenses by acquiring a "flat-field" reference image *with the same intensity illumination as the experiment*. The flat field image should be as close as possible to a field of view of the cover slip without any cells/debris. This is often not possible with the experimental cover slip, so a fresh cover slip may be used with approximately the same amount of buffer as the experiment.
 
-<table>
-<tbody>
-<tr class="odd">
-<td><figure>
-<img src="/images/pages/flat_field_correction.gif" title="flat_field_correction.gif" alt="flat_field_correction.gif" /><figcaption>flat_field_correction.gif</figcaption>
-</figure></td>
-</tr>
-<tr class="even">
-<td><center>
-<p><strong>RAW</strong></p>
-</center></td>
-</tr>
-</tbody>
-</table>
+<table><tbody><tr class="odd"><td><figure><img src="/images/pages/flat_field_correction.gif" title="flat_field_correction.gif" alt="flat_field_correction.gif" /><figcaption aria-hidden="true">flat_field_correction.gif</figcaption></figure></td></tr><tr class="even"><td><center><p><strong>RAW</strong></p></center></td></tr></tbody></table>
 
 1.  Open both the experimental image and the flat-field image.
 2.  Click the *Select all* button on the flat-field image and measure the average intensity. This value, the k1 value, will appear in the results window.
@@ -254,25 +221,11 @@ Use this technique on brightfield images. You can correct uneven illumination or
 
 This can also be done using the {% include bc content='Process | Image Calculator'%}function with the *32-bit Result* option checked. Then adjust the brightness and contrast and convert the image to 8-bit.
 
-![calculator\_plus\_flat\_field.jpg](/images/pages/Calculator plus flat field.jpg "calculator_plus_flat_field.jpg")
+![](/images/pages/Calculator plus flat field.jpg "calculator_plus_flat_field.jpg")
 
 ### Pseudo-correction
 
-<table>
-<tbody>
-<tr class="odd">
-<td><figure>
-<img src="/images/pages/pseudoCorrectionImage.gif" title="pseudoCorrectionImage.gif" alt="pseudoCorrectionImage.gif" /><figcaption>pseudoCorrectionImage.gif</figcaption>
-</figure>
-<p>Sometimes it is not possible to obtain a flat-field reference image. It is still possible to correct for illumination intensity, though not small defects like dust, by making a "pseudo-flat field" image by performing a large-kernel filter on the image to be corrected. For those working with DIC images, this is particularly useful because they generally have an intrinsic, and distracting, gradient in illumination.</p>
-<p>This can be accomplished simply by subtracting the Gaussian-blurred image version of the image.</p>
-<p>This can also be used with stacks for brightfield time-courses that vary in intensity with time. Doing this with stacks can be time consuming.</p></td>
-</tr>
-<tr class="even">
-<td style="border:none;padding:0in;"><p> <img src="/images/pages/pseudoCorrRawCorrected.gif" title="fig:pseudoCorrRawCorrected.gif" alt="pseudoCorrRawCorrected.gif" /></p></td>
-</tr>
-</tbody>
-</table>
+<table><tbody><tr class="odd"><td style="border:none;padding:0in;"><figure><img src="/images/pages/pseudoCorrectionImage.gif" title="pseudoCorrectionImage.gif" alt="pseudoCorrectionImage.gif" /><figcaption aria-hidden="true">pseudoCorrectionImage.gif</figcaption></figure><p>Sometimes it is not possible to obtain a flat-field reference image. It is still possible to correct for illumination intensity, though not small defects like dust, by making a "pseudo-flat field" image by performing a large-kernel filter on the image to be corrected. For those working with DIC images, this is particularly useful because they generally have an intrinsic, and distracting, gradient in illumination.</p><p>This can be accomplished simply by subtracting the Gaussian-blurred image version of the image.</p><p>This can also be used with stacks for brightfield time-courses that vary in intensity with time. Doing this with stacks can be time consuming.</p></td></tr><tr class="even"><td><p> <img src="/images/pages/pseudoCorrRawCorrected.gif" title="fig:pseudoCorrRawCorrected.gif" alt="pseudoCorrRawCorrected.gif" /></p></td></tr></tbody></table>
 
 ### FFT background correction
 
@@ -280,9 +233,10 @@ You can correct for uneven illumination and horizontal "scan lines" in transmitt
 
 You can experiment with the settings to optimize the filtering and also choose to filter structures down to a certain number of pixels. The default value is 40 pixels. You can filter small structures up to a certain value. The default value is 3 pixels. The user can choose from a drop down menu whether to suppress stripes with None, Horizontal, or Vertical. The tolerance of direction can be chosen. The default is 5%. Finally, the user can choose whether to allow autoscale after filtering, saturation of the image when autoscaling, whether or not to display the filter, and whether or not to process an entire stack.
 
-![newFftBandFilter.jpg](/images/pages/NewFftBandFilter.jpg "newFftBandFilter.jpg")
+![](/images/pages/NewFftBandFilter.jpg "newFftBandFilter.jpg")
 
-## Masking unwanted regions
+Masking unwanted regions
+------------------------
 
 ### Simple masking
 

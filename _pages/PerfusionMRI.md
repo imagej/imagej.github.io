@@ -7,10 +7,14 @@ categories:
 description: test description
 ---
 
-## Perfusion in MRI
+Perfusion in MRI
+----------------
 
-## Perfusion Analytic Description
+Perfusion Analytic Description
+------------------------------
 
-## PlugIn Parameters
+PlugIn Parameters
+-----------------
 
-## Indicated Usage
+Indicated Usage
+---------------

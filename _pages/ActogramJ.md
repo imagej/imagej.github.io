@@ -23,12 +23,13 @@ description: test description
 
 **ActogramJ** - Visualizing and analyzing activity diagrams in behavioral experiments
 
-## Publication
+Publication
+-----------
 
-  - {% include publication content='ActogramJ' %}
+-   {% include publication content='ActogramJ' %}
 
-![ActogramJ.png](/images/pages/ActogramJ.png "ActogramJ.png")
+![](/images/pages/ActogramJ.png "ActogramJ.png")
 
-More information is available at https://bene51.github.io/ActogramJ.
+More information is available at [https://bene51.github.io/ActogramJ](https://bene51.github.io/ActogramJ).
 
   

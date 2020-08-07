@@ -13,10 +13,10 @@ FIXME: add information about the weekly build script to this page
 
 At the March 2010 Hackathon, I made lots of changes to the old package building machinery. There were a number of problems with the old system, including:
 
-  - Building one monolithic package; in particular, this meant that many Free Software licenses mixed up in the one package.
-  - Bundling too many components that were already available in Debian main / Ubuntu.
-  - There were some non-free components included in the monolithic package.
-  - Each time I made a new release, I had to rebase the previous release branch. This was tedious, sometimes difficult and there's no particular reason not to build straight from master.
+-   Building one monolithic package; in particular, this meant that many Free Software licenses mixed up in the one package.
+-   Bundling too many components that were already available in Debian main / Ubuntu.
+-   There were some non-free components included in the monolithic package.
+-   Each time I made a new release, I had to rebase the previous release branch. This was tedious, sometimes difficult and there's no particular reason not to build straight from master.
 
 Since then, one our Google Summer of Code students, Yap Chin Kiet, and Johannes Schindelin worked on inferring dependencies between the jar and class files created in Fiji for the Fiji Updater, so we can reuse this code to infer package based dependencies.
 
@@ -28,23 +28,25 @@ The relevant lines for /etc/apt/sources.list, if you don't mind trying the exper
 
 <code>
 
-`   deb `https://fiji.sc/downloads/apt-experimental/` ./`  
-`   deb-src `https://fiji.sc/downloads/apt-experimental/` ./`
+`   deb `[`https://fiji.sc/downloads/apt-experimental/`](https://fiji.sc/downloads/apt-experimental/)` ./`  
+`   deb-src `[`https://fiji.sc/downloads/apt-experimental/`](https://fiji.sc/downloads/apt-experimental/)` ./`
 
 </code>
 
 The packages are targetting Ubuntu 10.04 (Lucid Lynx) and Debian testing (squeeze) later than August 2010.
 
-## Short Version
+Short Version
+-------------
 
 Mostly as a reminder to myself, the quick way to build new packages is:
 
-  - Clone a new fiji.git, initialize and update the right submodules \[FIXME: document which submodules are required, mentioned in the {% include github repo='fiji ' path='debian/TODO ' label='TODO ' %} at the moment\]
-  - Run `debian/complete-build`. If anything doesn't work, then you can retry the build with `debian/build-command`. Before retrying `debian/complete-build`, make sure that you've committed your changes, since afterwards you'll need to run `git reset --hard` to clean the tree so that `debian/complete-build` is happy to try again...
-  - Assuming that you're building on an amd64 machine, run `debian/build-in-i386-chroot` to build the i386 packages. (The chroot can be created as a one-off with debian/create-i386-chroot.py but you will still need to carefully customize /etc/schroot/schroot.conf )
-  - Upload the new versions of the packages with `debian/upload-to-pacific`.
+-   Clone a new fiji.git, initialize and update the right submodules \[FIXME: document which submodules are required, mentioned in the {% include github repo='fiji ' path='debian/TODO ' label='TODO ' %} at the moment\]
+-   Run `debian/complete-build`. If anything doesn't work, then you can retry the build with `debian/build-command`. Before retrying `debian/complete-build`, make sure that you've committed your changes, since afterwards you'll need to run `git reset --hard` to clean the tree so that `debian/complete-build` is happy to try again...
+-   Assuming that you're building on an amd64 machine, run `debian/build-in-i386-chroot` to build the i386 packages. (The chroot can be created as a one-off with debian/create-i386-chroot.py but you will still need to carefully customize /etc/schroot/schroot.conf )
+-   Upload the new versions of the packages with `debian/upload-to-pacific`.
 
-## Longer Version
+Longer Version
+--------------
 
 ### Clone a new copy of fiji.git
 
@@ -52,7 +54,7 @@ Mostly as a reminder to myself, the quick way to build new packages is:
 
 Clone the respository afresh with:
 
-`   git clone `<git://fiji.sc/fiji.git>
+`   git clone `[`git://fiji.sc/fiji.git`](git_//fiji.sc/fiji.git)
 
 ... and then initialize and update the following submodules:
 

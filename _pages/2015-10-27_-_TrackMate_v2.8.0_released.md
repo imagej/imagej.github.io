@@ -11,15 +11,16 @@ It is our please to announce the release of the version 2.8.0 of [TrackMate](Tra
 
 This version ships mainly small utilities, improvement and bugfixes. But more importantly, I would like to highlight several contributed [TrackMate modules](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate ) since the last release.
 
-## Contributed modules.
+Contributed modules.
+--------------------
 
-Pardon the informal tone this developer announcement will take but Ah\! the joy this part causes me\! All of us that wrote documentation for an academic open-source project know this pain and doubt very well: Is spending an excruciating time redacting tutorials for others to use an API worth anything? Is there any good that will come of it? Will this ever reach anyone? I am doing this for naught?
+Pardon the informal tone this developer announcement will take but Ah! the joy this part causes me! All of us that wrote documentation for an academic open-source project know this pain and doubt very well: Is spending an excruciating time redacting tutorials for others to use an API worth anything? Is there any good that will come of it? Will this ever reach anyone? I am doing this for naught?
 
 Picture yourself at work, leaned over the keyboard, this Wiki edit page opened, pondering the best way to make your message on [SciJava](SciJava ) extension mechanism through. When your boss knock at the door and says "I hope you are not writing tutorials for TrackMate. There is still papers X and Y to write, project Z has a report coming, and N users waiting for you to train them."
 
 Picture yourself at home. It's night. It's cold. The kids approach the desk, full of expectations.
 
-" - Daddy, come and play with us\!
+" - Daddy, come and play with us!
 
 \- Daddy can't, boys, he's redacting tutorials for TrackMate extension mechanisms."
 
@@ -29,10 +30,10 @@ So of course we were thrilled when we saw the first 3rd party contributed TrackM
 
 Ronny Sczech contributed:
 
-  - A linear tracker module that deals specifically with spots that travel at a roughly constant velocity.
-  - A track analyzer that reports track length, mean quality and angle.
-  - A batch processor for TrackMate.
-  - A new estimator for spot radius.
+-   A linear tracker module that deals specifically with spots that travel at a roughly constant velocity.
+-   A track analyzer that reports track length, mean quality and angle.
+-   A batch processor for TrackMate.
+-   A new estimator for spot radius.
 
 The source code is found on [his github page](https://github.com/chicoronny/RonnyTrackMate).
 
@@ -44,7 +45,8 @@ Thorsten Wagner is working on a detector that emulates the Find maxima tool of I
 
 Benoit Lombardo wrote a spot analyzer that compute mean intensities in all the channels of an image, when you have a multi-channel image. You can find it on the [TrackMate extras](https://github.com/tinevez/TrackMate-extras) page.
 
-## Improvements.
+Improvements.
+-------------
 
 ### Faster track rendering.
 
@@ -64,7 +66,7 @@ TrackMate initial design always favored speed over memory consumption. This can 
 
 To deal with this TrackMate now ships a **Block LoG detector**. It is identical to the LoG detector, except that it splits the image in smaller XY blocks and processes them independently. If you process each of this block sequentially, you can drastically reduce memory usage.
 
-![TrackMate\_BlockLogDetector.png](/images/pages/TrackMate BlockLogDetector.png "TrackMate_BlockLogDetector.png")
+<figure><img src="/images/pages/TrackMate_BlockLogDetector.png" title="TrackMate_BlockLogDetector.png" width="600" alt="TrackMate_BlockLogDetector.png" /><figcaption aria-hidden="true">TrackMate_BlockLogDetector.png</figcaption></figure>
 
 Of course there is a price to pay: Spots that are present exactly on the block borders might be detected twice on two different blocks. This will have a very detrimental effect on the subsequent tracking step. To temper this problem, this detector prunes spots that are found inside other spots.
 
@@ -72,7 +74,7 @@ Also, you will save memory only if you process blocks sequentially. If you fire 
 
 ### TrackMate honors ImageJ thread configuration.
 
-To configure how many threads TrackMate can use, Go the the *Edit \> Options \> Memory & Threads ....* menu item.
+To configure how many threads TrackMate can use, Go the the *Edit &gt; Options &gt; Memory & Threads ....* menu item.
 
 ### TrackScheme acknowledges the spot radius setting when capturing thumbnails.
 
@@ -98,19 +100,20 @@ Though the absolute value does not matter, the one reported by the LoG detector 
 
 Now, the quality value returned by the LoG detector is such that:
 
-  - It has a maximal value for spots that have the size this kernel is tuned
+-   It has a maximal value for spots that have the size this kernel is tuned
 
 to (for equal spot intensity).
 
-  - The quality will be of the same order of magnitude than the raw spot (if it
+-   The quality will be of the same order of magnitude than the raw spot (if it
 
 has the right size).
 
-  - If the image has its calibration changed by a constant factor, one will
+-   If the image has its calibration changed by a constant factor, one will
 
 retrieve the same quality value value than before scaling. However, I (JYT) could not derive the exact formula if the image is scaled differently across X, Y and Z.
 
-## Bugfixes.
+Bugfixes.
+---------
 
 ### Fix the accuracy problem in sub-pixel localization.
 

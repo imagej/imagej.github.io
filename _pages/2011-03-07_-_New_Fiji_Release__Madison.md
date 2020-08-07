@@ -7,7 +7,7 @@ categories: News
 description: test description
 ---
 
-There is a [new version of Fiji](Downloads )\!
+There is a [new version of Fiji](Downloads )!
 
 In our beloved tradition, the current version is named after the location of a big [hackathon](Hackathon ): Madison. It was not strictly a Fiji hackathon, but the first ImageJ2 hackathon, made possible by Kevin Eliceiri and Curtis Rueden. Nevertheless, quite some work on Fiji and its plugins got done, so here goes *Fiji Madison*.
 
@@ -19,7 +19,8 @@ Albert Cardona, Benjamin Schmid, Christian Tischer, Curtis Rueden, Daniel James 
 
 Changes since Fiji Heidelberg:
 
-# New plugins
+New plugins
+===========
 
 The Time Stamper plugin was much enhanced and eventually renamed into Series Labeler, thanks to Daniel James White and Tom Kazimiers.
 
@@ -57,7 +58,8 @@ There is now a plugin that saves the current image in EPS (Encapsulated PostScri
 
 Use {% include bc content='Plugins | Transform | Panorama equirectangular view'%} to look at 360° panorama photographs and pan around. Thanks to Stephan Saalfeld.
 
-# User-visible changes
+User-visible changes
+====================
 
 On Linux, the Fiji launcher will run even with older setups than the launcher was compiled on.
 
@@ -147,7 +149,7 @@ The Compile & Run command no longer needs write access to Fiji.app/plugins/, and
 
 A bug was fixed which prevented MBF plugins from being compiled and run on the fly when a .java file was present in a subdirectoy of Fiji.app/plugins/.
 
-Register\>Transform Virtual Stack Slices got a checkbox to toggle interpolation. Thanks to Stephan Saalfeld.
+Register&gt;Transform Virtual Stack Slices got a checkbox to toggle interpolation. Thanks to Stephan Saalfeld.
 
 The Script\_Editor can export scripts bundled in .jar files for other Fiji users to install and run.
 
@@ -197,7 +199,8 @@ When scripting, you can accelerate crucial parts by inserting Java code snippets
 
 Several fixes and improvements in the mpicbg submodule for feature extraction and transformation, e.g.: Feature matching can be performed without geometric consensus filter. Geometric consensus filter got a new parameter, minimal absolute number of inliers. Added robust regression outlier filter to TileConfiguration. Several fixes and improvements to the CLAHE local contrast enhancer, e.g.: Added a fast (real-time) version of the filter. Fixed selection handling. Fixed transfer of values beyond the current min/max range. Support CompositeImages in variable ways. Added homogeneous least squares fit for perspective transformations using Jama SVD. Interactive transforms can handle Composites, Stacks and HyperStacks. Added a simple but comparably fast Optic Flow variant based on the sum of square differences in a Gaussian weighted neighborhood of a pixel. Thanks to Stephan Saalfeld.
 
-# Developer-visible changes
+Developer-visible changes
+=========================
 
 There have been quite a few cleanups of the project structure; the sources for plugins and libraries which are not contained in submodules are supposed to live in src-plugins/<jarname>/<package>/<classname>.java, where <jarname> is the base name of the generated .jar file.
 

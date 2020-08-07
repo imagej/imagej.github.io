@@ -17,9 +17,10 @@ MRI DICOM dataset's voxel data tends to be stored as 16 bit unsigned integers, i
 
 The DICOM datasets that I open in ImageJ, contain multiple volumes, where each volume was acquired under slightly different conditions, e.g., multi b-value diffusion. DICOM\_explode plugin can sort a DICOM dataset into a top down properly sorted hyperstack, suitable for processing see F\_Project plugin.
 
-## Features
+Features
+--------
 
-![DICOM\_open.jpg](/images/pages/DICOM open.jpg "DICOM_open.jpg")
+![](/images/pages/DICOM open.jpg "DICOM_open.jpg")
 
 When run as a plugin the plugin will first present a directory browser to select the parent directory of where to start the DICOM dataset search, and then, present this GUI. At the top is the directory of the currently selected item.The second line presents a Pulldown to select an item under the currently selected item. Select an item to display information about the item below the Pulldown. The 'Load Series' button at the bottom is only available when the current item is a series.
 
@@ -27,7 +28,8 @@ If the DICOM series is a multi b-value diffusion dataset then use the Pulldown t
 
 The **Float** format causes the voxel values to be the same as in the DICOM dataset, albeit, in 32-bit FloatProcessor format. The **Scaled** format causes the FloatProcessor values to be scaled according to the linear rescale (0028,1053) and intercept (0028,1052). The **16-bit fixed** format causes the FloatProcessor values to be directly converted to short(s) and placed in a ShortProcessor, (i.e., Java: (short)floatvalue; not: (ShortProcessor)FloatProcessorValue, n.b., the (ShortProcessor) conversion rescales). The **16-bit broken** format is as the DICOM plugin imported.
 
-## Methods
+Methods
+-------
 
 `public static boolean isDICOM(File file)`  
 Does the file have the proper magic number ("DICM").
@@ -70,19 +72,23 @@ Sorts a multi b-value diffusion dataset into a array of 4 hyperstacks, one array
 `public static String getTagValue(ImagePlus imp, int s, String tag)`  
 `public static String getTagLine(ImagePlus imp, int s, String tag)` Convenience methods to access DICOM tag values for a slice s. The slice *s* is as returned by *ImagePlus.getStackIndex*.
 
-## Install
+Install
+-------
 
-Unzip [DICOM\_open.zip](https://imagej.net/_images/5/56/DICOM_open.zip) into ImageJ1 plugins (File\>Show Folder\>Plugins) or plugins/jars directories. Source code in jar file. DICOM\_explode is included.
+Unzip [DICOM\_open.zip](https://imagej.net/_images/5/56/DICOM_open.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code in jar file. DICOM\_explode is included.
 
-## Licence
+Licence
+-------
 
 GPL distribution licence.
 
-## ChangeLog
+ChangeLog
+---------
 
 1 April 2019 Initial version.
 
-## Known Bugs
+Known Bugs
+----------
 
 Let me know.
 

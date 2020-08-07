@@ -11,8 +11,9 @@ description: test description
 
 See pdf documentation [here](https://imagej.net/plugins/track/Manual%20Tracking%20plugin.pdf)
 
-## See also
+See also
+--------
 
-  - [ImageJ 1.x website](https://imagej.net/plugins/track/track.html)
+-   [ImageJ 1.x website](https://imagej.net/plugins/track/track.html)
 
   

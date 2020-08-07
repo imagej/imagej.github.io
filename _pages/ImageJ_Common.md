@@ -15,13 +15,13 @@ description: test description
 {% endcapture %}
 {% include testimonial quote='I Have to a admit that IJ2 API and Java 8 make the process very smooth Much better than few years ago :-0 ' person=person gravatar='bfb4b22436c24b136c722ce797d42cbe ' source='https://gitter.im/imagej/imagej?at=571e431b7469496137b9059f ' width='400px ' float='right ' %} Using [ImgLib2](ImgLib2 ) offers several benefits:
 
-  - Support for many different data types (different combinations of bit depths, signedness, and integer/real representations).
-  - Support for large datasets (many planes/cubes/etc., large planes/cubes/etc.).
-  - Abstraction of the underlying image storage mechanism (file on disk, data in memory, remote URL, remote database, etc.).
+-   Support for many different data types (different combinations of bit depths, signedness, and integer/real representations).
+-   Support for large datasets (many planes/cubes/etc., large planes/cubes/etc.).
+-   Abstraction of the underlying image storage mechanism (file on disk, data in memory, remote URL, remote database, etc.).
 
 ImageJ Common is still in beta, with significant changes still planned for its central class hierarchies.
 
 At the time of this writing, the central image data structures are:
 
-  - {% include javadoc package='net/imglib2/meta ' class='ImgPlus ' %}
-  - {% include javadoc package='net/imagej ' class='Dataset ' %} and {% include javadoc package='net/imagej ' class='DefaultDataset ' %}
+-   {% include javadoc package='net/imglib2/meta ' class='ImgPlus ' %}
+-   {% include javadoc package='net/imagej ' class='Dataset ' %} and {% include javadoc package='net/imagej ' class='DefaultDataset ' %}

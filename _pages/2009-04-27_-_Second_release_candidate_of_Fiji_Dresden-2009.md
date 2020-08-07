@@ -7,7 +7,7 @@ categories: News
 description: test description
 ---
 
-In the aftermath of our hackathon in Dresden, we have a [second release candidate](Downloads ) now\!
+In the aftermath of our hackathon in Dresden, we have a [second release candidate](Downloads ) now!
 
 This is the list of changes in addition to the changes in the first release candidate:
 
@@ -27,6 +27,6 @@ This is the list of changes in addition to the changes in the first release cand
 14. {% include bc content='Plugins | Scripting | Macro Interpreter'%} uses our AbstractInterpreter framework now (thanks to Albert Cardona), with command line history and all,
 15. Gabriel Landini pointed out that our Daltonize plugin is misnamed: it simulates color blindness, rather than trying to compensate for it.
 
-We are really close now to a final release, with just a few changes pending. Stay tuned\!
+We are really close now to a final release, with just a few changes pending. Stay tuned!
 
 

@@ -11,9 +11,10 @@ description: test description
 {% capture source%}
 {% include github org='fiji ' repo='Extended\_Depth\_Field ' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Extended Depth of Field ' maintainer='Daniel Sage ' author='Alex Prudencio ' source=source released='24/12/2010 ' latest-version='24/12/2010 ' status='stable ' category='[:Category:Plugins](Category_Plugins ) ' website=' http://bigwww.epfl.ch/demo/edf/ ' %}
+{% include info-box software='ImageJ ' name='Extended Depth of Field ' maintainer='Daniel Sage ' author='Alex Prudencio ' source=source released='24/12/2010 ' latest-version='24/12/2010 ' status='stable ' category='[:Category:Plugins](Category_Plugins ) ' website=' [http://bigwww.epfl.ch/demo/edf/](http://bigwww.epfl.ch/demo/edf/) ' %}
 
-## Extended Depth of Field
+Extended Depth of Field
+-----------------------
 
 This plugin provides an extended depth of field algorithm to obtain in focus microscopic images of 3D objects and organisms using different algorithms: Sobel, variance, real and complex wavelets.
 

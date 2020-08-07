@@ -22,61 +22,64 @@ description: test description
 {% endcapture %}
 {% include info-box name='SNT ' software='complete framework for quantification of neuronal anatomy ' logo='<img src="/images/pages/SNTLogo512.png" width="150"/> ' author=author maintainer=maintainer source=source status='stable, active ' category='[Neuroanatomy](Category_Neuroanatomy ) ' %}{% include toc content='right' %}
 
-## Overview
+Overview
+--------
 
 SNT is ImageJ's framework for semi-automated tracing, visualization, quantitative analyses and modeling of neuronal morphology. For tracing, SNT supports modern multi-dimensional microscopy data, and highly-customizable routines. For data analysis, SNT features advanced visualization tools, access to all major morphology databases, and support for whole-brain circuitry data. It supersedes the original [Simple Neurite Tracer](SNT__FAQ#snt ) plug-in.
 
 SNT's documentation is extensive. Please use the navigation bar on too of the page to access the different sections. The major sections are organized as follows:
 
-  - **[Manual](SNT__Manual )**: SNT's user guide for tracing operations
-  - **[Walk-throughs](SNT__Step-By-Step_Instructions )**: Detailed step-by-step instructions for specific tasks
-  - **[Screencasts](SNT__Screencasts )**: Video tutorials. If you are using SNT for the first time you probably want to start here
-  - **[Reconstruction Viewer](SNT__Reconstruction_Viewer )**: SNT's entry point for visualization of pre-existing data. If you are analyzing reconstructions you may want to start here
-  - **[Analysis](SNT__Analysis )** Overview of all analysis commands, accessible in either the tracing interface or [Reconstruction Viewer](SNT__Reconstruction_Viewer )
-  - **[Scripting](SNT__Scripting )** Details on how to use SNT as a scripting library
+-   **[Manual](SNT__Manual )**: SNT's user guide for tracing operations
+-   **[Walk-throughs](SNT__Step-By-Step_Instructions )**: Detailed step-by-step instructions for specific tasks
+-   **[Screencasts](SNT__Screencasts )**: Video tutorials. If you are using SNT for the first time you probably want to start here
+-   **[Reconstruction Viewer](SNT__Reconstruction_Viewer )**: SNT's entry point for visualization of pre-existing data. If you are analyzing reconstructions you may want to start here
+-   **[Analysis](SNT__Analysis )** Overview of all analysis commands, accessible in either the tracing interface or [Reconstruction Viewer](SNT__Reconstruction_Viewer )
+-   **[Scripting](SNT__Scripting )** Details on how to use SNT as a scripting library
 
 {% include thumbnail src='/images/pages/SimpleNeuriteTracer2.png' title='SNT Overview. A key feature of SNT is that \'\'every\'\' aspect of the program can be [scripted](SNT__Scripting ) in any of Fiji\'s supported languages, or from Python through [pyimagej](https://github.com/imagej/pyimagej). '%}
 
-## Features
+Features
+--------
 
 ### Tracing
 
-  - Support for up to 5D multidimensional images (including multichannel, and those with a time axis). While tracing, visibility of non-traced channels can be toggled at will
-  - Precise placement of nodes is aided by a local search that automatically snaps the cursor to neurites wihin a 3D neighborhood
-  - A-star search can be performed on a second, non-displayed image. This allows for e.g., tracing on a pre-process (filtered) image while interacting with the unfiltered image (or vice-versa). If enough RAM is available toggling between the two data sources is immediate
-  - Tracing is scriptable and can be interleaved with image processing routines
-  - Paths can be tagged, searched, grouped and filtered by morphometric properties (length, radius, etc.)
-  - Paths can be edited, i.e., a path can be merged into a existing one, or split into two. Nodes can be moved, deleted, or inserted
-  - Post-hoc refinement of node positioning by 'snapping' traces to the fluorescent signal associated with a a path
+-   Support for up to 5D multidimensional images (including multichannel, and those with a time axis). While tracing, visibility of non-traced channels can be toggled at will
+-   Precise placement of nodes is aided by a local search that automatically snaps the cursor to neurites wihin a 3D neighborhood
+-   A-star search can be performed on a second, non-displayed image. This allows for e.g., tracing on a pre-process (filtered) image while interacting with the unfiltered image (or vice-versa). If enough RAM is available toggling between the two data sources is immediate
+-   Tracing is scriptable and can be interleaved with image processing routines
+-   Paths can be tagged, searched, grouped and filtered by morphometric properties (length, radius, etc.)
+-   Paths can be edited, i.e., a path can be merged into a existing one, or split into two. Nodes can be moved, deleted, or inserted
+-   Post-hoc refinement of node positioning by 'snapping' traces to the fluorescent signal associated with a a path
 
 ### Analysis
 
-  - *Extensive* repertoire of metrics, namely those provided by [L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm) and [NeuroM](https://github.com/BlueBrain/NeuroM). Metrics can be collected from groups of cells, single cells, or parts thereof
-  - Analysis based on neuropil annotations for whole-brain data such as [MouseLight](https://ml-neuronbrowser.janelia.org/)
-  - Direct access to public databases, including [MouseLight](https://ml-neuronbrowser.janelia.org/), [FlyCircuit](http://www.flycircuit.tw) and [NeuroMorpho](http://neuromorpho.org/)
-  - Built-in commands for *immediate* retrieval of summary statistics, comparison plots and histograms
-  - Image processing: Reconstructions can be skeletonized, converted to masks or ROIs, and voxel intensities profiled
-  - [Sholl](SNT__Analysis#Sholl_Analysis ) and [Horton-Strahler](SNT__Analysis#Strahler_Analysis ) analyses. [Graph theory](https://en.wikipedia.org/wiki/Graph_theory) and [Persistent homology](https://en.wikipedia.org/wiki/Persistent_homology) -based analyses
-  - Modeling: access to the [Cx3D simulation engine](SNT__Modeling )
+-   *Extensive* repertoire of metrics, namely those provided by [L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm) and [NeuroM](https://github.com/BlueBrain/NeuroM). Metrics can be collected from groups of cells, single cells, or parts thereof
+-   Analysis based on neuropil annotations for whole-brain data such as [MouseLight](https://ml-neuronbrowser.janelia.org/)
+-   Direct access to public databases, including [MouseLight](https://ml-neuronbrowser.janelia.org/), [FlyCircuit](http://www.flycircuit.tw) and [NeuroMorpho](http://neuromorpho.org/)
+-   Built-in commands for *immediate* retrieval of summary statistics, comparison plots and histograms
+-   Image processing: Reconstructions can be skeletonized, converted to masks or ROIs, and voxel intensities profiled
+-   [Sholl](SNT__Analysis#Sholl_Analysis ) and [Horton-Strahler](SNT__Analysis#Strahler_Analysis ) analyses. [Graph theory](https://en.wikipedia.org/wiki/Graph_theory) and [Persistent homology](https://en.wikipedia.org/wiki/Persistent_homology) -based analyses
+-   Modeling: access to the [Cx3D simulation engine](SNT__Modeling )
 
 ### Visualization
 
-  - [Reconstruction Viewer](SNT__Reconstruction_Viewer ): Standalone hardware-accelerated 3D visualization tool for both meshes and reconstructions.
-      - Interactive and programmatic scenes (controlled rotations, panning, zoom, scaling, animation, “dark/light mode”, etc.)
-      - Customizable views: Interactive management of scene elements, controls for transparency, color interpolation, lightning, path smoothing, etc.. Ability to render both local and remote files on the same scene
-      - Built-in support for several template brains: Drosophila, zebrafish, and Allen CCF (Allen Mouse Brain Atlas)
-  - [SciView](SciView ) integration
-  - Quantitative, publication-quality visualization: Display neurons color coded by morphometric traits, or neuropil annotations. Export plots, reconstructions, diagrams and histograms as vector graphics
+-   [Reconstruction Viewer](SNT__Reconstruction_Viewer ): Standalone hardware-accelerated 3D visualization tool for both meshes and reconstructions.
+    -   Interactive and programmatic scenes (controlled rotations, panning, zoom, scaling, animation, “dark/light mode”, etc.)
+    -   Customizable views: Interactive management of scene elements, controls for transparency, color interpolation, lightning, path smoothing, etc.. Ability to render both local and remote files on the same scene
+    -   Built-in support for several template brains: Drosophila, zebrafish, and Allen CCF (Allen Mouse Brain Atlas)
+-   [SciView](SciView ) integration
+-   Quantitative, publication-quality visualization: Display neurons color coded by morphometric traits, or neuropil annotations. Export plots, reconstructions, diagrams and histograms as vector graphics
 
 ### Backwards Compatibility
 
-  - Special effort was put into backwards compatibility with older Simple Neurite Tracer releases (including [TrakEM2](TrakEM2 ) and [ITK interaction](SNT__Tubular_Geodesics )). Inherited functionality has been improved, namely:
-      - Extended support for sub-pixel accuracy
-      - Improved synchronization of XY, ZY, and XZ views
-      - Improved calls to Dijkstra’s filling and Path-fitting routines
-      - Multi-threading improvements
+-   Special effort was put into backwards compatibility with older Simple Neurite Tracer releases (including [TrakEM2](TrakEM2 ) and [ITK interaction](SNT__Tubular_Geodesics )). Inherited functionality has been improved, namely:
+    -   Extended support for sub-pixel accuracy
+    -   Improved synchronization of XY, ZY, and XZ views
+    -   Improved calls to Dijkstra’s filling and Path-fitting routines
+    -   Multi-threading improvements
 
-## Installation
+Installation
+------------
 
 SNT is currently distributed through the [Neuroanatomy](Neuroanatomy ) [update site](Update_Sites ). The first time you start SNT from Fiji’s menu structure ({% include bc content='Plugins|Neuroanatomy|SNT'%}, or its backwards-compatible alias {% include bc content='Plugins|NeuroAnatomy|Legacy|Simple Neurite Tracer...'%} ) you should be prompted for automatic subscription and download of required dependencies. If not:
 
@@ -91,7 +94,7 @@ SNT is currently distributed through the [Neuroanatomy](Neuroanatomy ) [update s
 2.  If you are currently subscribing to the *SciView* *regular* channel, please unselect its checkbox to minimize version conflicts
 3.  Add the following entry to the *Update Sites Table*, by clicking on *Add update site*:
     | Name         | URL                                          |
-    | ------------ | -------------------------------------------- |
+    |--------------|----------------------------------------------|
     | SciView-edge | https://sites.imagej.net/SciView-Unstable/ |
 4.  Click *Apply changes* and restart Fiji
 

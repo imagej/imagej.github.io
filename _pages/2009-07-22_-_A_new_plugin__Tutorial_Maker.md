@@ -17,6 +17,6 @@ After the snapshots are all done, you can edit them to your heart's content (ren
 
 A menu entry in the *Wiki* menu of the editor allows you to preview and upload the *complete* tutorial.
 
-So now the flood-gates are open, and this Wiki will hopefully see a flurry of new tutorials\!
+So now the flood-gates are open, and this Wiki will hopefully see a flurry of new tutorials!
 
 

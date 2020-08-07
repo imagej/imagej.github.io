@@ -10,22 +10,24 @@ description: test description
 {% include sntnavbar%}
 
 
-The Tubular Geodesics plugins were developed several years ago\[1\] for [Simple Neurite Tracer](SNT__FAQ#snt ) but remain functional in modern [SNT](SNT ). They can be installed manually as an SNT add-on. Once installed, they allow you to trace on a filtered-version of your image in which neuronal processes (or other tubular structures) are significantly enhanced using [ITK](ITK ) segmentation. More details on the following pages:
+The Tubular Geodesics plugins were developed several years ago[1] for [Simple Neurite Tracer](SNT__FAQ#snt ) but remain functional in modern [SNT](SNT ). They can be installed manually as an SNT add-on. Once installed, they allow you to trace on a filtered-version of your image in which neuronal processes (or other tubular structures) are significantly enhanced using [ITK](ITK ) segmentation. More details on the following pages:
 
-  - [Tubular Geodesics homepage](https://www.epfl.ch/labs/cvlab/software/biomedical/delin-fiji/)
-  - [Tracing on Filtered Images](SNT__Manual#Main_Dialog#Tracing_On_Secondary_image )
-  - [Secondary Image Screencast](SNT__Screencasts#Secondary_Images )
-  - [Generating Filtered Images](SNT__Step-By-Step_Instructions#Generating_Filtered_Images )
+-   [Tubular Geodesics homepage](https://www.epfl.ch/labs/cvlab/software/biomedical/delin-fiji/)
+-   [Tracing on Filtered Images](SNT__Manual#Main_Dialog#Tracing_On_Secondary_image )
+-   [Secondary Image Screencast](SNT__Screencasts#Secondary_Images )
+-   [Generating Filtered Images](SNT__Step-By-Step_Instructions#Generating_Filtered_Images )
 
-## References
+References
+----------
 
 <references >
 
-\[2\]
+[2]
 
 </references>
 
     
 
-1.  
-2.  Türetken E, Benmansour F, Fua P. [Automated Reconstruction of Tree Structures using Path Classifiers and Mixed Integer Programming](https://infoscience.epfl.ch/record/176222/files/turetken_et_al_2012.pdf?version=1). <i>IEEE Conference on Computer Vision and Pattern Recognition</i>, Providence, Rhode Island, 2012.
+[1] 
+
+[2] Türetken E, Benmansour F, Fua P. [Automated Reconstruction of Tree Structures using Path Classifiers and Mixed Integer Programming](https://infoscience.epfl.ch/record/176222/files/turetken_et_al_2012.pdf?version=1). <i>IEEE Conference on Computer Vision and Pattern Recognition</i>, Providence, Rhode Island, 2012.

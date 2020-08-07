@@ -9,78 +9,98 @@ description: test description
 
 This is a repository (update site) containing custom plugins and scripts created at the IMCF / Uni Basel, as well as some collected ImageJ plugins we are using that are not (yet) included in Fiji.
 
-# Instructions
+Instructions
+============
 
 To add the repository to your list of FiJi update sites, use this address:
 
-  - http://sites.imagej.net/UniBas-IMCF/
+-   [http://sites.imagej.net/UniBas-IMCF/](http://sites.imagej.net/UniBas-IMCF/)
 
 Please see [how to follow a 3rd party update site](how_to_follow_a_3rd_party_update_site ) for detailed instructions how to enable an additional update site in your Fiji installation.
 
 PLEASE NOTE: you also need to enable the "IBMP-CNRS" update site that is already configured in Fiji (it's just not active by default). Otherwise the ActionBars won't work.
 
-# Description
+Description
+===========
 
-## Macros and Plugins in the IMCF repository
+Macros and Plugins in the IMCF repository
+-----------------------------------------
 
-  - Auto Run  
-    Our custom auto run macros.
-    location: `macros/AutoRun/`
+Auto Run  
+Our custom auto run macros.
 
-<!-- end list -->
+location: `macros/AutoRun/`
 
-  - Action Bars  
-    Our shortcut toolbars, requires the [Action Bar](http://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:action_bar:start) plugin.
-    location: `plugins/ActionBar/`
+<!-- -->
 
-<!-- end list -->
+Action Bars  
+Our shortcut toolbars, requires the [Action Bar](http://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:action_bar:start) plugin.
 
-  - IMCF Tools  
-    Custom macros for users of our facility.
-    location: `plugins/IMCF_Tools/`
+location: `plugins/ActionBar/`
 
-<!-- end list -->
+<!-- -->
 
-  - [JaCoP](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:jacop_2.0:just_another_colocalization_plugin:start)  
-    "Just another Coloc Plugin": a compilation of co-localization tools.
-    location: `plugins/jacop_.jar`
+IMCF Tools  
+Custom macros for users of our facility.
 
-<!-- end list -->
+location: `plugins/IMCF_Tools/`
 
-  - Recording  
-    Scripts to record the desktop or a single window.
-    author: Albert Cardona
-    location: `scripts/Record_*.py`
+<!-- -->
 
-<!-- end list -->
+[JaCoP](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:jacop_2.0:just_another_colocalization_plugin:start)  
+"Just another Coloc Plugin": a compilation of co-localization tools.
 
-  - Kinetochore Analysis  
-    Plugin for analyzing kinetochores in 3D.
-    author / license: unknown, please check\!\!
-    location: `plugins/Kinetochore_Analysis3D.class`
+location: `plugins/jacop_.jar`
 
-<!-- end list -->
+<!-- -->
 
-  - FRAP plugins  
-    **[FRAP Analysis](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:frap_analysis:start)**
-      -   
-        Tool for normalized analysis of single-spot FRAP experiments.
-        author: Philippe Carl (phcarl@free.fr)
-        location: `plugins/FRAP_Analysis.class`
-    **[FRAP Norm](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:frap_normalization:start)**
-      -   
-        Automatic detection of bleached and whole cell areas in pictures from FRAP experiments.
-        author: Joris Meys
-        location: `plugins/frap_norm2.jar`
+Recording  
+Scripts to record the desktop or a single window.
 
-<!-- end list -->
+author: Albert Cardona
 
-  - [Edge detection](http://imagejdocu.tudor.lu/doku.php?id=plugin:filter:edge_detection:start)  
-    Canny-Deriche filtering for edge detection.
-    author: Thomas Boudier, repackaged by Joris Meys
-    location: `plugins/image_edge.jar`
+location: `scripts/Record_*.py`
 
------
+<!-- -->
+
+Kinetochore Analysis  
+Plugin for analyzing kinetochores in 3D.
+
+author / license: unknown, please check!!
+
+location: `plugins/Kinetochore_Analysis3D.class`
+
+<!-- -->
+
+FRAP plugins  
+**[FRAP Analysis](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:frap_analysis:start)**
+
+  
+Tool for normalized analysis of single-spot FRAP experiments.
+
+author: Philippe Carl (phcarl@free.fr)
+
+location: `plugins/FRAP_Analysis.class`
+
+**[FRAP Norm](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:frap_normalization:start)**
+
+  
+Automatic detection of bleached and whole cell areas in pictures from FRAP experiments.
+
+author: Joris Meys
+
+location: `plugins/frap_norm2.jar`
+
+<!-- -->
+
+[Edge detection](http://imagejdocu.tudor.lu/doku.php?id=plugin:filter:edge_detection:start)  
+Canny-Deriche filtering for edge detection.
+
+author: Thomas Boudier, repackaged by Joris Meys
+
+location: `plugins/image_edge.jar`
+
+------------------------------------------------------------------------
 
 For more information about the IMCF please have a look at our website:
 

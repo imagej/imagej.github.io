@@ -9,9 +9,11 @@ description: test description
 
 <i>This tutorial is brought to you by Joao Firmino, Knust lab, MPI-CBG. It relates how to correct for the drift of your biological samples during long-term timelapse imaging for subsequent analysis using Fiji. Comments on the content of this tutorial are welcome in the [disscussion page](Talk_Correcting_drift_in_FRAP_experiments&action ). </i>
 
-## Fluorescence Recovery After Photobleaching in Drosophila embryos
+Fluorescence Recovery After Photobleaching in Drosophila embryos
+----------------------------------------------------------------
 
-## At the confocal
+At the confocal
+---------------
 
 The following tutorial has been optimized to Drosophila embryos using the DuoScan confocal system in the MPI-CBG. Optimization of the bleaching and acquisition parameters while using other model organisms is strongly recommended.
 
@@ -21,7 +23,8 @@ Since you are interested in obtaining a good description of the fluorescence rec
 
 Now you have to establish the duration of the experiment - this depends on the kinetics of recovery of every protein so optimization is advised. In my particular case, every experiment lasts for 21m25s. However there are different acquisition rates during this time. The first 5 frames are taken every 5s without any bleach - this will be your **prebleach** conditions (25s). After this initial time series, you bleach your sample using the conditions previously described. Immediately after the bleach you take 60 frames every second - this will be your **fast acquisition postbleach** time series (1m). After this minute of intense imaging you can delay your frame rate to a medium level (one frame every 5s for 10 minutes) - **medium acquisition postbleach**. And finally you can take frames every 30s for another 10minutes - **slow acquisition postbleach**. All this can be set up automatically by using the Visual Macro option in the DuoScan confocal system. Once everything is done you should have 4 different time series and 205 frames in total. It is now time to analyze the results...
 
-## Analysing the data
+Analysing the data
+------------------
 
 Load the 4 different time series in Fiji.
 
@@ -31,7 +34,7 @@ Once you have an aligned movie you can draw the bleaching ROI and run **Plot Z-a
 
 You can normalize your values by using the following equation:
 
-$$I_{\text{norm}} = \frac{ I_{\text{bleach}} - I_{\text{nonbleach}} }{ \max (I_{\text{bleach}}-I_{\text{nonbleach}})-\min (I_{\text{bleach}}-I_{\text{nonbleach}}) }$$
+$$$I\_{\\text{norm}} = \\frac{ I\_{\\text{bleach}} - I\_{\\text{nonbleach}} }{ \\max (I\_{\\text{bleach}}-I\_{\\text{nonbleach}})-\\min (I\_{\\text{bleach}}-I\_{\\text{nonbleach}}) }$$$
 
 You will get values between 0 and 1 already normalized. All you have to do now is to plot your normalized values against time and you will get a rough curve of recovery. If you want to further analyse this you will have to fit this curve... For this, you can always talk to the Image Processing Facility in house, or if you already have a good knowledge of [MATLAB](MATLAB ) do it yourself...
 

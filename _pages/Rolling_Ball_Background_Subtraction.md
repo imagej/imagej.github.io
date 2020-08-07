@@ -9,7 +9,8 @@ description: test description
 
 {% include info-box software='ImageJ ' name='Rolling Ball Background Subtraction ' author='Michael Castle and Janice Keller (Mental Health Research Institute, University of Michigan) ' filename='Rolling\_Ball\_Background.class ' source=' [Rolling\_Ball\_Background.java](https://imagej.net/plugins/download/Rolling_Ball_Background.java) ' released='22 November 2007 ' status='first version ' category='[Filtering](Category_Filtering ) ' website='https://imagej.net/plugins/rolling-ball.html ' %}
 
-## Documentation
+Documentation
+-------------
 
 This plugin tries to correct for uneven illuminated background by using a "rolling ball" algorithm.
 

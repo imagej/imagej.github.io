@@ -11,29 +11,33 @@ description: test description
 {% include outdated%}
 
 
-Fiji is a community effort. So we are happy whenever we see new people developing Fiji\!
+Fiji is a community effort. So we are happy whenever we see new people developing Fiji!
 
-## Purpose
+Purpose
+-------
 
 The purpose of this tutorial is to get you started hacking on [Fiji's source code](https://github.com/fiji/) (i.e., the core Fiji plugins). If you need to develop a *new plugin* for ImageJ, you do not actually need Fiji's source. Rather, see these resources:
 
-  - {% include github org='imagej ' repo='example-legacy-plugin ' label='example-legacy-plugin ' %} project template
-  - [Introduction into Developing Plugins](Introduction_into_Developing_Plugins ) tutorial
-  - [Developing ImageJ 1.x plugins with NetBeans](https://www.youtube.com/watch?v=Ac-6gJ2eRb0) screencast
+-   {% include github org='imagej ' repo='example-legacy-plugin ' label='example-legacy-plugin ' %} project template
+-   [Introduction into Developing Plugins](Introduction_into_Developing_Plugins ) tutorial
+-   [Developing ImageJ 1.x plugins with NetBeans](https://www.youtube.com/watch?v=Ac-6gJ2eRb0) screencast
 
 See also [Developing Fiji in Eclipse](Developing_Fiji_in_Eclipse ) for a tutorial specific to the Eclipse IDE.
 
-## Getting started
+Getting started
+---------------
 
 First, you have to [download and build Fiji](Downloading_and_Building_Fiji_From_Source ). If you do not know Git yet, we have a [concise introduction](Git_for_dummies ) for you.
 
-## Building Fiji
+Building Fiji
+-------------
 
 Fiji is organized into a set of [Maven](Maven ) projects. For convenience and speed, there is [SciJava](SciJava )'s minimal Maven-lookalike [MiniMaven](MiniMaven ) to build Fiji, but it is recommended to use an [Integrated Development Environment](IDEs ), or at least real Maven.
 
 For details, please see [Downloading and Building Fiji From Source](Downloading_and_Building_Fiji_From_Source ). See also the [Supported Compilers](Supported_Compilers ) page for more information.
 
-## Testing
+Testing
+-------
 
 It is strongly recommended to write regression tests (also known as *unit tests*). It is [easy](Fiji_contribution_requirements#Regression_tests ).
 
@@ -43,37 +47,41 @@ You may also want to measure the code coverage of your tests - one way is descri
 
 At some point, you might want to debug whatever you wrote. There's a small [Debugging intro](Debugging_intro ) page.
 
-## Discussing code
+Discussing code
+---------------
 
 When you want to propose and/or discuss changes to some source code, the preferred way is to [submit a PR on GitHub](contributing ).
 
-## Contributing
+Contributing
+------------
 
 Please have a look at the excellent *[How to contribute to an existing plugin or library](How_to_contribute_to_an_existing_plugin_or_library )* tutorial.
 
-## Providing documentation
+Providing documentation
+-----------------------
 
 A plugin wants to be used. Therefore you want to give users some information about it, and most likely also a tutorial how to use it.
 
 If you have an account on this Wiki, you can easily create new tutorials with the [Tutorial Maker](Tutorial_Maker ).
 
-## Further reading for developers
+Further reading for developers
+------------------------------
 
-  - [Overview of Fiji's source code](Overview_of_Fijis_source_code )
-  - [Description of ImageJ's plugin architecture](Description_of_ImageJs_plugin_architecture )
-  - [Tips for developers](Tips_for_developers )
-  - [ImageJ1 Javadoc ZIP](http://jenkins.imagej.net/job/ImageJ1-javadoc/lastStableBuild/artifact/target/site/apidocs/) (for offline usage)
-  - [ImageJ2 Javadoc ZIP](http://jenkins.imagej.net/job/ImageJ-daily/lastStableBuild/artifact/target/site/apidocs/) (for offline usage)
-  - [Developers HowTo](Developers_HowTo )
-  - [ImageJ plugin writing tutorial](http://www.imagingbook.com/index.php?id=102)
-  - [ImageJ programming tutorials](http://albert.rierol.net/imagej_programming_tutorials.html)
-  - [Uploading plugins](Uploading_plugins )
-  - [Developing Fiji in Eclipse](Developing_Fiji_in_Eclipse )
-  - [Git](Git )
-  - [Project ideas](Project_ideas )
-  - [Code Coverage in Fiji](Code_Coverage_in_Fiji )
-  - [Introduction to debugging](Debugging_intro )
-  - [Profiling Java Code](Profiling_Java_Code )
-  - [Tips for C++ developers](Tips_for_C++_developers )
+-   [Overview of Fiji's source code](Overview_of_Fijis_source_code )
+-   [Description of ImageJ's plugin architecture](Description_of_ImageJs_plugin_architecture )
+-   [Tips for developers](Tips_for_developers )
+-   [ImageJ1 Javadoc ZIP](http://jenkins.imagej.net/job/ImageJ1-javadoc/lastStableBuild/artifact/target/site/apidocs/) (for offline usage)
+-   [ImageJ2 Javadoc ZIP](http://jenkins.imagej.net/job/ImageJ-daily/lastStableBuild/artifact/target/site/apidocs/) (for offline usage)
+-   [Developers HowTo](Developers_HowTo )
+-   [ImageJ plugin writing tutorial](http://www.imagingbook.com/index.php?id=102)
+-   [ImageJ programming tutorials](http://albert.rierol.net/imagej_programming_tutorials.html)
+-   [Uploading plugins](Uploading_plugins )
+-   [Developing Fiji in Eclipse](Developing_Fiji_in_Eclipse )
+-   [Git](Git )
+-   [Project ideas](Project_ideas )
+-   [Code Coverage in Fiji](Code_Coverage_in_Fiji )
+-   [Introduction to debugging](Debugging_intro )
+-   [Profiling Java Code](Profiling_Java_Code )
+-   [Tips for C++ developers](Tips_for_C++_developers )
 
  

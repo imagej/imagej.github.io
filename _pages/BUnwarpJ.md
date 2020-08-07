@@ -7,32 +7,34 @@ categories: Plugins,Registration,Citable
 description: test description
 ---
 
-{% include component-stats content='sc.fiji:bUnwarpJ\_' %}{| |style="vertical-align:top" |![bUnwarpJ scheme: bidirectional Unwarping in Java.](/images/pages/BUnwarpJ scheme.png "bUnwarpJ scheme: bidirectional Unwarping in Java.") |}
+{% include component-stats content='sc.fiji:bUnwarpJ\_' %}{\| \|style="vertical-align:top" \|<img src="/images/pages/BUnwarpJ_scheme.png" title="fig:bUnwarpJ scheme: bidirectional Unwarping in Java." width="390" alt="bUnwarpJ scheme: bidirectional Unwarping in Java." /> \|}
 
 This ImageJ/Fiji plugin performs **2D image registration based on elastic deformations** represented by B-splines. The invertibility of the deformations is enforced through a consistency restriction.
 
 For a quick start, you can have a look at the [video tutorial](http://imagejdocu.tudor.lu/doku.php?id=video:aligning:bunwarpj_basic_tutorial) (awarded at the Second ImageJ User & Developer Conference).
 
-## General Description
+General Description
+-------------------
 
 [bUnwarpJ](bUnwarpJ ) is an algorithm for **elastic and consistent image registration** developed as an ImageJ plugin. It performs a simultaneous registration of two images, A and B. Image A is elastically deformed in order to look as similar as possible to image B, and, at the same time, the "inverse" transformation (from B to A) is also calculated so a pseudo-invertibility of the final deformation could be guaranteed. Two images are given as a result: the deformed versions of A and B images.
 
-## Technical Explanations
+Technical Explanations
+----------------------
 
-This image registration algorithm is based on the minimization of an energy functional that includes the dissimilarity between the source and target images -in both directions- $$E_{img}$$, an optional landmark constraint $$E_{\mu}$$, a regularization term $$(E_{div} + E_{rot})$$, and an energy term $$E_{cons}$$ that accounts for the geometrical consistency between the elastic deformation in both directions. Namely, the energy function is given by
+This image registration algorithm is based on the minimization of an energy functional that includes the dissimilarity between the source and target images -in both directions- $$*E*<sub>*i**m**g*</sub>$$, an optional landmark constraint $$*E*<sub>*μ*</sub>$$, a regularization term $$(*E*<sub>*d**i**v*</sub> + *E*<sub>*r**o**t*</sub>)$$, and an energy term $$*E*<sub>*c**o**n**s*</sub>$$ that accounts for the geometrical consistency between the elastic deformation in both directions. Namely, the energy function is given by
 
-  - 
-    
-      -   
-        $$E = w_iE_{img} + w_{\mu}E_{\mu} + (w_dE_{div} + w_rE_{rot}) + w_cE_{cons}$$
+  
+  
+$$*E* = *w*<sub>*i*</sub>*E*<sub>*i**m**g*</sub> + *w*<sub>*μ*</sub>*E*<sub>*μ*</sub> + (*w*<sub>*d*</sub>*E*<sub>*d**i**v*</sub> + *w*<sub>*r*</sub>*E*<sub>*r**o**t*</sub>) + *w*<sub>*c*</sub>*E*<sub>*c**o**n**s*</sub>$$
 
 Where the weights of every term are set by the user in the main window of the plugin. The optimization process is a [Levenberg-Marquardt](https://en.wikipedia.org/wiki/Levenberg%E2%80%93Marquardt_algorithm) minimization enhanced by a [Broyden-Fletcher-Goldfarb-Shanno (BFGS)](https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm) estimate of the local Hessian of the goal function, and both, images and deformations are represented by [cubic B-splines](https://en.wikipedia.org/wiki/B-spline).
 
-## User Manual
+User Manual
+-----------
 
 ### Generalities
 
-The plugin can be called from the main ImageJ/Fiji menu under Plugins \> Registration \> bUnwarpJ. Two images (**8, 16, 32-bit grayscale or RGB Color**) need to be opened in order to be able to use the plugin. If so, the maing dialog window of the plugin will open.
+The plugin can be called from the main ImageJ/Fiji menu under Plugins &gt; Registration &gt; bUnwarpJ. Two images (**8, 16, 32-bit grayscale or RGB Color**) need to be opened in order to be able to use the plugin. If so, the maing dialog window of the plugin will open.
 
 {% include thumbnail src='/images/pages/BUnwarpJ-main-dialog.png' title='bUnwarpJ main dialog'%}
 
@@ -72,15 +74,11 @@ The "Mono" mode produces only results from the source to the target image.
 
 During the registration process, the current difference images and a mapping of the grid from the fixed images onto the moving images are shown:
 
-|                                                                                                                                                                                                             |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| {% include thumbnail src='/images/pages/BUnwarpJ-lena-during-registration.png' title='Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image.'%} |
+<table><tbody><tr class="odd"><td><p>{% include thumbnail src='/images/pages/BUnwarpJ-lena-during-registration.png' title='Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image.'%}</p></td></tr></tbody></table>
 
 During the registration process the toolbar will be changed to
 
-|                                                                                                                                                            |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| {% include thumbnail src='/images/pages/BUnwarpJ-toolbar-when-registering.png' title='bUnwarpJ toolbar when the registration process has started. '%} |
+<table><tbody><tr class="odd"><td><p>{% include thumbnail src='/images/pages/BUnwarpJ-toolbar-when-registering.png' title='bUnwarpJ toolbar when the registration process has started. '%}</p></td></tr></tbody></table>
 
 Click on the stop button to stop the process. The output at the current state of the optimization will be returned in the normal way.
 
@@ -88,27 +86,19 @@ Click on the stop button to stop the process. The output at the current state of
 
 When the plugin is called and before pressing "OK" in the main window, the toolbar changes its appearance and it is possible to manually add landmarks to the selected images:
 
-|                                                                                                                                         |
-| --------------------------------------------------------------------------------------------------------------------------------------- |
-| {% include thumbnail src='/images/pages/BUnwarpJ-toolbar-add-crosses.png' title='bUnwarpJ toolbar before starting registration.'%} |
+<table><tbody><tr class="odd"><td><p>{% include thumbnail src='/images/pages/BUnwarpJ-toolbar-add-crosses.png' title='bUnwarpJ toolbar before starting registration.'%}</p></td></tr></tbody></table>
 
 The depressed button indicates that you may **add a landmark** now. Landmarks are added in either image. The landmark will be automatically placed in the same position on both images. The new landmark becomes the "current landmark" (indicated by a thicker \[+\] sign in the current image and a \[×\] sign in the other image, while all the rest are represented by \[+\] signs). To move any landmark, press on the "**Move crosses**" button:
 
-|                                                                                                                                                 |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| {% include thumbnail src='/images/pages/BUnwarpJ-toolbar-move-crosses.png' title='bUnwarpJ toolbar with "Move crosses" button selected.'%} |
+<table><tbody><tr class="odd"><td><p>{% include thumbnail src='/images/pages/BUnwarpJ-toolbar-move-crosses.png' title='bUnwarpJ toolbar with "Move crosses" button selected.'%}</p></td></tr></tbody></table>
 
 Click and drag on any landmark to make it correspond to the same position in both images. Here goes an example of the two Lena images with corresponding landmarks:
 
-|                                                                                                                                         |
-| --------------------------------------------------------------------------------------------------------------------------------------- |
-| {% include thumbnail src='/images/pages/BUnwarpJ-landmarks-example.png' title='Example of landmarks on moving and fixed images.'%} |
+<table><tbody><tr class="odd"><td><p>{% include thumbnail src='/images/pages/BUnwarpJ-landmarks-example.png' title='Example of landmarks on moving and fixed images.'%}</p></td></tr></tbody></table>
 
 Landmarks can be removed through the "**Remove crosses**" button:
 
-|                                                                                                                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| {% include thumbnail src='/images/pages/BUnwarpJ-toolbar-remove-crosses.png' title='bUnwarpJ toolbar with "Remove crosses" button selected so the user can remove landmarks.'%} |
+<table><tbody><tr class="odd"><td><p>{% include thumbnail src='/images/pages/BUnwarpJ-toolbar-remove-crosses.png' title='bUnwarpJ toolbar with "Remove crosses" button selected so the user can remove landmarks.'%}</p></td></tr></tbody></table>
 
 This is the way of manually adding landmarks to the registration process. However, **since bUnwarpJ v2.0** there is the option as well of using automatic landmarks as explained in the section SIFT and MOPS support, **or manually adding point selections in both images before calling the plugin**. If the number of point selections is the same in both images, they will be transformed into landmarks.
 
@@ -118,16 +108,11 @@ This is the way of manually adding landmarks to the registration process. Howeve
 
 This program allows you using masks in **two mutually exclusive ways**. In the first way, masks are introduced together with the input images. In this mode, input images must be a stack of images (first slice: the image itself, second slice: the mask). In this way, the mask can have any shape. In the second way, the input images must not be stacks and simple polygonal masks can be used. These masks are defined using the two buttons ("**Draw an inner mask**" and "**Draw an outer mask**") shown below:
 
-|                                                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| {% include thumbnail src='/images/pages/BUnwarpJ-toolbar-draw-inner-mask.png' title='bUnwarpJ toolbar with "Draw an inner mask" button selected.'%} |
-| {% include thumbnail src='/images/pages/BUnwarpJ-toolbar-draw-outer-mask.png' title='bUnwarpJ toolbar with "Draw an outer mask" button selected.'%} |
+<table><tbody><tr class="odd"><td><p>{% include thumbnail src='/images/pages/BUnwarpJ-toolbar-draw-inner-mask.png' title='bUnwarpJ toolbar with "Draw an inner mask" button selected.'%}</p></td></tr><tr class="even"><td><p>{% include thumbnail src='/images/pages/BUnwarpJ-toolbar-draw-outer-mask.png' title='bUnwarpJ toolbar with "Draw an outer mask" button selected.'%}</p></td></tr></tbody></table>
 
 The inner mask keeps the information in the interior of the polygon, while the outer mask keeps the information in the exterior of the polygon. The thrown-out information is grayed. Here goes an example of an inner mask:
 
-|                                                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------- |
-| {% include thumbnail src='/images/pages/BUnwarpJ-inner-mask-example.png' title='bUnwarpJ example of inner mask on Lena image.'%} |
+<table><tbody><tr class="odd"><td><p>{% include thumbnail src='/images/pages/BUnwarpJ-inner-mask-example.png' title='bUnwarpJ example of inner mask on Lena image.'%}</p></td></tr></tbody></table>
 
 Masks can be used for one of the images, both, or none. You can put a mask in one of the images and not in the other, you can put a mask (with different shapes) in both images, or you may not use masks at all. After calling the plugin, the masks are erased and the initial images are restored.
 
@@ -135,32 +120,30 @@ Masks can be used for one of the images, both, or none. You can put a mask in on
 
 When using the "**Input/Output Menu**" from the toolbar, we have the possibility of processing different input and output files that will affect the registration.
 
-|                                                                                                                                                 |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| {% include thumbnail src='/images/pages/BUnwarpJ-toolbar-IO-menu.png' title='bUnwarpJ toolbar with "Input/Output menu" button selected.'%} |
+<table><tbody><tr class="odd"><td><p>{% include thumbnail src='/images/pages/BUnwarpJ-toolbar-IO-menu.png' title='bUnwarpJ toolbar with "Input/Output menu" button selected.'%}</p></td></tr></tbody></table>
 
 {% include thumbnail src='/images/pages/BUnwarpJ-IO-menu.png' title='bUnwarpJ Input/Output menu.'%}
 
 In the last release, the plugin presents the following Input/Output options:
 
-  - **Load Landmarks**: it allows loading landmarks files.
-  - **Save Landmarks As**: it allows saving the image landmarks into a file.
-  - **Show Landmarks**: it forces the landmarks to be displayed in a separate table.
-  - **Load Elastic Transformation**: it loads an elastic transformation from a file and applies it to the so-called source image. The transformation file must be in the format of the plugin B-spline transformations, i.e. the same format as the files created with the "Save Transformation" option.
-  - **Load Raw Transformation**: it loads a raw transformation from a file and applies it to the so-called source image. The transformation file must be in "raw" format, i.e. the same format as the files created with the "Convert Transformation To Raw" option. See the [ raw transformation example](BUnwarpJ#What_is_the_format_of_the_raw_transformation_file.3F ) for a format description.
-  - **Compare Opposite Elastic Transformations**: it calculates the warping index of two elastic transformations, i.e. the average of the geometrical distance between every pixel and its version after applying both transformations (direct and inverse). This value is given as a result. The transformation files must be in the format of the plugin B-spline transformations (same format as the files created with the "Save Transformation" option).
-  - **Compare Elastic/Raw Transformations**: it calculates the warping index of an elastic and a raw transformation (same direction). The second transformation file must be in "raw" format, i.e. the same format as the files created with the "Convert Transformation To Raw" option.
-  - **Compare Raw Transformations**: it calculates the warping index of two raw transformations (same direction). The transformation file must be in "raw" format, i.e. the same format as the files created with the "Convert Transformation To Raw" option.
-  - **Convert Transformation To Raw**: it converts a B-spline transformation file into a raw transformation file.
-  - **Convert Transformation To Elastic**: it converts a raw transformation file into a B-spline transformation file (approximation).
-  - **Compose Elastic Transformations**: it composes two elastic transformations into a raw transformation. The input files must be in the B-spline transformation format, and the output file will be in "raw" format.
-  - **Compose Raw Transformations**: it composes two raw transformations into another raw transformation. Both input and output files will be in "raw" format.
-  - **Compose Raw and Elastic Transformations**: it composes one raw transformation and one elastic transformation into a raw transformation.
-  - **Invert Raw Transformation**: it approximates the inverse of a raw transformation.
-  - **Evaluate Image Similarity**: it calculates de current similarity error between the source and target images. The results is displayed in the "Results" window.
-  - **Adapt Coefficients**: it transforms the coefficients of an specific elastic transformation according to a real image factor. Very useful for example when we have very large images. We can register subsampled versions of our images (let us say 4 times smaller) and then adapt the result transformations (image factor = 4) so we can apply them to the high resolution images.
-  - **Load Source Mask**: it loads a mask from file (binary image) in the source image.
-  - **Load Source Initial Affine Matrix**: it loads an affine matrix as starting point for the source-target transformation from a text file. The format of the text files is as follows: `cos(angle) -sin(angle) sin(angle) cos(angle) Translation_X Translation_Y`
+-   **Load Landmarks**: it allows loading landmarks files.
+-   **Save Landmarks As**: it allows saving the image landmarks into a file.
+-   **Show Landmarks**: it forces the landmarks to be displayed in a separate table.
+-   **Load Elastic Transformation**: it loads an elastic transformation from a file and applies it to the so-called source image. The transformation file must be in the format of the plugin B-spline transformations, i.e. the same format as the files created with the "Save Transformation" option.
+-   **Load Raw Transformation**: it loads a raw transformation from a file and applies it to the so-called source image. The transformation file must be in "raw" format, i.e. the same format as the files created with the "Convert Transformation To Raw" option. See the [ raw transformation example](BUnwarpJ#What_is_the_format_of_the_raw_transformation_file.3F ) for a format description.
+-   **Compare Opposite Elastic Transformations**: it calculates the warping index of two elastic transformations, i.e. the average of the geometrical distance between every pixel and its version after applying both transformations (direct and inverse). This value is given as a result. The transformation files must be in the format of the plugin B-spline transformations (same format as the files created with the "Save Transformation" option).
+-   **Compare Elastic/Raw Transformations**: it calculates the warping index of an elastic and a raw transformation (same direction). The second transformation file must be in "raw" format, i.e. the same format as the files created with the "Convert Transformation To Raw" option.
+-   **Compare Raw Transformations**: it calculates the warping index of two raw transformations (same direction). The transformation file must be in "raw" format, i.e. the same format as the files created with the "Convert Transformation To Raw" option.
+-   **Convert Transformation To Raw**: it converts a B-spline transformation file into a raw transformation file.
+-   **Convert Transformation To Elastic**: it converts a raw transformation file into a B-spline transformation file (approximation).
+-   **Compose Elastic Transformations**: it composes two elastic transformations into a raw transformation. The input files must be in the B-spline transformation format, and the output file will be in "raw" format.
+-   **Compose Raw Transformations**: it composes two raw transformations into another raw transformation. Both input and output files will be in "raw" format.
+-   **Compose Raw and Elastic Transformations**: it composes one raw transformation and one elastic transformation into a raw transformation.
+-   **Invert Raw Transformation**: it approximates the inverse of a raw transformation.
+-   **Evaluate Image Similarity**: it calculates de current similarity error between the source and target images. The results is displayed in the "Results" window.
+-   **Adapt Coefficients**: it transforms the coefficients of an specific elastic transformation according to a real image factor. Very useful for example when we have very large images. We can register subsampled versions of our images (let us say 4 times smaller) and then adapt the result transformations (image factor = 4) so we can apply them to the high resolution images.
+-   **Load Source Mask**: it loads a mask from file (binary image) in the source image.
+-   **Load Source Initial Affine Matrix**: it loads an affine matrix as starting point for the source-target transformation from a text file. The format of the text files is as follows: `cos(angle) -sin(angle) sin(angle) cos(angle) Translation_X Translation_Y`
 
 These new options (since version 1.1) allow the user comparing the results of our program with any other registration method.
 
@@ -174,15 +157,13 @@ You can also test bUnwarpJ with [Spline Deformation Generator](Spline_Deformatio
 
 The user can launch the plugin from a macro by setting all the parameters of the plugin main dialog, for instance:
 
-``` java
-run( "bUnwarpJ", "source_image=A target_image=B registration=Accurate 
-      image_subsample_factor=0 initial_deformation=[Very Coarse] 
-      final_deformation=Fine divergence_weight=0 curl_weight=0 landmark_weight=0 
-      image_weight=1 consistency_weight=10 stop_threshold=0.01
-      save_transformations
-      save_direct_transformation=/my-path/A_direct_transf.txt 
-      save_inverse_transformation=/my-path/B_inverse_transf.txt");
-```
+    run( "bUnwarpJ", "source_image=A target_image=B registration=Accurate 
+          image_subsample_factor=0 initial_deformation=[Very Coarse] 
+          final_deformation=Fine divergence_weight=0 curl_weight=0 landmark_weight=0 
+          image_weight=1 consistency_weight=10 stop_threshold=0.01
+          save_transformations
+          save_direct_transformation=/my-path/A_direct_transf.txt 
+          save_inverse_transformation=/my-path/B_inverse_transf.txt");
 
 Notice the path to the transformation files are only needed if the "save\_transformations" option is used.
 
@@ -190,39 +171,31 @@ Notice the path to the transformation files are only needed if the "save\_transf
 
 To use the main Input/Output options from a macro, there is a corresponding static method defined in the main class (bUnwarpJ\_). Again, the [Macro Recorder](Introduction_into_Macro_Programming#The_recorder ) will provide with the right macro command for each of them. For example:
 
-  - Load elastic transformation to source image:
+-   Load elastic transformation to source image:
 
-<!-- end list -->
+<!-- -->
 
-``` java
-call("bunwarpj.bUnwarpJ_.loadElasticTransform", "/my-path-to-transf/source_elastic_transf.txt", "target-image.png", "source-image.png");
-```
+    call("bunwarpj.bUnwarpJ_.loadElasticTransform", "/my-path-to-transf/source_elastic_transf.txt", "target-image.png", "source-image.png");
 
-  - Load raw transformation to source image:
+-   Load raw transformation to source image:
 
-<!-- end list -->
+<!-- -->
 
-``` java
-call("bunwarpj.bUnwarpJ_.loadRawTransform", "/my-path-to-transf/source_raw_transf.txt", "target-image.png", "source-image.png");
-```
+    call("bunwarpj.bUnwarpJ_.loadRawTransform", "/my-path-to-transf/source_raw_transf.txt", "target-image.png", "source-image.png");
 
-  - Compare opposite elastic transforms:
+-   Compare opposite elastic transforms:
 
-<!-- end list -->
+<!-- -->
 
-``` java
-call("bunwarpj.bUnwarpJ_.compareOppositeElasticTransforms", "/my-path-to-transf/inverse_transf.txt", "/my-path-to-transf/direct_transf.txt", "target-image.png", "source-image.png");
-```
+    call("bunwarpj.bUnwarpJ_.compareOppositeElasticTransforms", "/my-path-to-transf/inverse_transf.txt", "/my-path-to-transf/direct_transf.txt", "target-image.png", "source-image.png");
 
-  - Compare elastic and raw transforms (same direction):
+-   Compare elastic and raw transforms (same direction):
 
-<!-- end list -->
+<!-- -->
 
-``` java
-call("bunwarpj.bUnwarpJ_.compareElasticRawTransforms", "/my-path/source_direct_transf.txt", "/my-path/source_direct_transf_RAW.txt", "target-image.png", "source-image.png");
-```
+    call("bunwarpj.bUnwarpJ_.compareElasticRawTransforms", "/my-path/source_direct_transf.txt", "/my-path/source_direct_transf_RAW.txt", "target-image.png", "source-image.png");
 
-  - ... and so on.
+-   ... and so on.
 
 ##### Old methods
 
@@ -230,27 +203,25 @@ Before bUnwarpJ v2.6.7, these calls were done using methods that work on image f
 
 Notice here that the input and output file names must include the path, since they are not taken from the list of images. For instance, if we want to apply an elastic deformation stored in the file *A\_direct\_transf.txt* to the source image *A.jpg* with target image *B.jpg* and save the result in *output.tif*, we call:
 
-``` java
-call( "bunwarpj.bUnwarpJ_.elasticTransformImageMacro", "My_path/A.jpg",
-      "My_path/B.jpg", "My_path/A_direct_transf.txt", "My_path/output.tif" );
-```
+    call( "bunwarpj.bUnwarpJ_.elasticTransformImageMacro", "My_path/A.jpg",
+          "My_path/B.jpg", "My_path/A_direct_transf.txt", "My_path/output.tif" );
 
 ### Command line call
 
 [bUnwarpJ](bUnwarpJ ) might be called as well as an ImageJ command from the command line. In the command line, the program offers the following options:
 
-  - `-help`: shows the syntax of the program
-  - `-align`: launches the registration of two input images
-  - `-elastic_transform`: transforms the source image with a given elastic deformation (previously calculated)
-  - `-raw_transform`: transforms the source image with a given raw deformation (previously calculated)
-  - `-compare_elastic`: compares two previously calculated opposite elastic deformations through the warping index
-  - `-compare_elastic_raw`: compares an elastic deformation with a raw deformation (both direct transformations) through the warping index
-  - `-compare_raw`: compares two previously calculated and direct raw deformations through the warping index
-  - `-convert_to_raw`: converts an elastic transformation into raw format
-  - `-compose_elastic`: composes two elastic deformations, the result will be in raw format
-  - `-compose_raw`: composes two raw deformations, the result will be too in raw format
-  - `-compose_raw_elastic`: composes a raw deformation and an elastic one. Result in raw format
-  - `-adapt_transform`: adapts an specific elastic transformation given a resolution image factor
+-   `-help`: shows the syntax of the program
+-   `-align`: launches the registration of two input images
+-   `-elastic_transform`: transforms the source image with a given elastic deformation (previously calculated)
+-   `-raw_transform`: transforms the source image with a given raw deformation (previously calculated)
+-   `-compare_elastic`: compares two previously calculated opposite elastic deformations through the warping index
+-   `-compare_elastic_raw`: compares an elastic deformation with a raw deformation (both direct transformations) through the warping index
+-   `-compare_raw`: compares two previously calculated and direct raw deformations through the warping index
+-   `-convert_to_raw`: converts an elastic transformation into raw format
+-   `-compose_elastic`: composes two elastic deformations, the result will be in raw format
+-   `-compose_raw`: composes two raw deformations, the result will be too in raw format
+-   `-compose_raw_elastic`: composes a raw deformation and an elastic one. Result in raw format
+-   `-adapt_transform`: adapts an specific elastic transformation given a resolution image factor
 
 For instance, to see the program help we can call the program from the command line (where $IJDIR is the directory where ImageJ is installed) like this in Linux:
 
@@ -272,7 +243,8 @@ An explanation of the parameters is [ here](Feature_Extraction#Parameters ). Thi
 
 After applying SIFT or MOPS methods, you will get two sets of corresponding points in both images. If you call then [bUnwarpJ](bUnwarpJ ), the corresponding points will appear as source and target landmarks.
 
-## Downloads
+Downloads
+---------
 
 The latest stable distribution of bUnwarpJ can always be found included within Fiji and the **latest released JARs are available in the** [GitHub repository](https://github.com/fiji/bUnwarpJ/releases). If you detect any bug, please feel free to contact the maintainer. Any feedback will be very appreciated.
 
@@ -282,11 +254,12 @@ The API documentation can be reached [online](http://javadoc.imagej.net/Fiji/bun
 
 ### Installation
 
-In Fiji, [bUnwarpJ](bUnwarpJ ) comes installed by default. In ImageJ, you must simply download the latest bUnwarpJ\_.jar to the Plugins folder of ImageJ, restart ImageJ and there will be a new "Registration \> bUnwarpJ" command in the Plugins menu.
+In Fiji, [bUnwarpJ](bUnwarpJ ) comes installed by default. In ImageJ, you must simply download the latest bUnwarpJ\_.jar to the Plugins folder of ImageJ, restart ImageJ and there will be a new "Registration &gt; bUnwarpJ" command in the Plugins menu.
 
 To execute bUnwarpJ as a macro or from the command line, see the description in the User Manual.
 
-## Frequently Asked Questions
+Frequently Asked Questions
+--------------------------
 
 ### How do I choose the weights? What does each of the weights really mean?
 
@@ -296,7 +269,7 @@ The weights need to be chosen experimentally, test and error is the only way of 
 
 The divergence and curl weights regularize the deformation by penalizing the [divergence](https://en.wikipedia.org/wiki/Divergence) and [curl](https://en.wikipedia.org/wiki/Curl_%28mathematics%29) of the deformation vector field. In other words, we penalize vector fields with **many** points like this:
 
-![Divergence-curl-2d-examples.png](/images/pages/Divergence-curl-2d-examples.png "Divergence-curl-2d-examples.png")
+![](/images/pages/Divergence-curl-2d-examples.png "Divergence-curl-2d-examples.png")
 
 These are attractor points that make the deformation too rough. One of them would not be a problem (it could be just a rotation), but many yes. So controlling them we make the deformation **smooth**. If you see that your transformations get too rough, it is a good idea to use them. **0.1 and 0.1 are usually good values** if there's no prior knowledge about the deformation shape.
 
@@ -317,7 +290,7 @@ It forces the resulting deformations to be one (source to target) as close as po
 These values determine the level of detail of the initial and final deformations. In [bUnwarpJ](bUnwarpJ ) this is defined by the number of B-splines that we use to represent the deformations:
 
 | Deformation | Number of intervals (in the B-spline grid) |
-| ----------- | ------------------------------------------ |
+|-------------|--------------------------------------------|
 | Very coarse | 1x1                                        |
 | Coarse      | 2x2                                        |
 | Fine        | 4x4                                        |
@@ -338,13 +311,13 @@ The corresponding paper citation is on the [References](BUnwarpJ#References ).
 
 **Yes**, you can. You have different possibilities:
 
-  - You could call the program from the command line as explained in the [user manual](BUnwarpJ#User_Manual ),
-  - or you can make a [macro call](BUnwarpJ#Macro_call ) in batch mode,
-  - or you could as well create a script and use any of the methods called \[http://javadoc.imagej.net/Fiji/bunwarpj/bUnwarpJ_.html#alignImagesBatch(ij.ImagePlus,%20ij.ImagePlus,%20ij.process.ImageProcessor,%20ij.process.ImageProcessor,%20int,%20int,%20int,%20int,%20double,%20double,%20double,%20double,%20double,%20double) bUnwarpJ\_.alignImagesBatch\].
+-   You could call the program from the command line as explained in the [user manual](BUnwarpJ#User_Manual ),
+-   or you can make a [macro call](BUnwarpJ#Macro_call ) in batch mode,
+-   or you could as well create a script and use any of the methods called \[http://javadoc.imagej.net/Fiji/bunwarpj/bUnwarpJ_.html#alignImagesBatch(ij.ImagePlus,%20ij.ImagePlus,%20ij.process.ImageProcessor,%20ij.process.ImageProcessor,%20int,%20int,%20int,%20int,%20double,%20double,%20double,%20double,%20double,%20double) bUnwarpJ\_.alignImagesBatch\].
 
 ### My result images are 32-bit although my input images are 8-bit, is that a bug?
 
-No this is not a bug. To calculate the elastic-transformed images [bUnwarpJ](bUnwarpJ ) needs to interpolate the pixel values, so the first step in the process consists of converting the 8-bit (byte) images into 32-bit (float). You may want to convert them back to 8-bit after registration (Image \> Type \> 8-bit) and adjust the contrast (Process \> Enhance Contrast).
+No this is not a bug. To calculate the elastic-transformed images [bUnwarpJ](bUnwarpJ ) needs to interpolate the pixel values, so the first step in the process consists of converting the 8-bit (byte) images into 32-bit (float). You may want to convert them back to 8-bit after registration (Image &gt; Type &gt; 8-bit) and adjust the contrast (Process &gt; Enhance Contrast).
 
 ### How do I integrate the SIFT/MOPS results into bUnwarpJ?
 
@@ -364,30 +337,33 @@ The raw transformation file should be a text file with the following structure:
 
     Width=[TARGET IMAGE WITH]
     Height=[TARGET IMAGE HEIGHT]
-    
+
     X Trans -----------------------------------
        [(Height * Width) coordinates representing the X transformation for every pixel on the target image]
        
     Y Trans -----------------------------------
        [(Height * Width) coordinates representing the Y transformation for every pixel on the target image]
 
-## References (Citation)
+References (Citation)
+---------------------
 
 The algorithm implemented on bUnwarpJ and its technical explanations are detailed on a publication. If you use it successfully for your research please be so kind to cite our work:
 
-  - I. Arganda-Carreras, C. O. S. Sorzano, R. Marabini, J.-M. Carazo, C. Ortiz-de Solorzano, and J. Kybic, ["Consistent and Elastic Registration of Histological Sections using Vector-Spline Regularization,"](http://cmp.felk.cvut.cz/ftp/articles/kybic/Arganda-CVAMIA2006.pdf) Lecture Notes in Computer Science, Springer Berlin / Heidelberg, volume 4241/2006, CVAMIA: Computer Vision Approaches to Medical Image Analysis, pages 85-95, 2006.
+-   I. Arganda-Carreras, C. O. S. Sorzano, R. Marabini, J.-M. Carazo, C. Ortiz-de Solorzano, and J. Kybic, ["Consistent and Elastic Registration of Histological Sections using Vector-Spline Regularization,"](http://cmp.felk.cvut.cz/ftp/articles/kybic/Arganda-CVAMIA2006.pdf) Lecture Notes in Computer Science, Springer Berlin / Heidelberg, volume 4241/2006, CVAMIA: Computer Vision Approaches to Medical Image Analysis, pages 85-95, 2006.
 
 The related paper of the previous work ([UnwarpJ](UnwarpJ )) is:
 
-  - C.Ó. Sánchez Sorzano, P. Thévenaz, M. Unser, "Elastic Registration of Biological Images Using Vector-Spline Regularization", IEEE Transactions on Biomedical Engineering, vol. 52, no. 4, pp. 652-663, April 2005.
+-   C.Ó. Sánchez Sorzano, P. Thévenaz, M. Unser, "Elastic Registration of Biological Images Using Vector-Spline Regularization", IEEE Transactions on Biomedical Engineering, vol. 52, no. 4, pp. 652-663, April 2005.
 
-## License
+License
+-------
 
-This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
+This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-## Acknowledgements
+Acknowledgements
+----------------
 
 [bUnwarpJ](bUnwarpJ ) has been developed during several years already and many people need to be acknowledged for:
 
@@ -401,8 +377,8 @@ Many of the plugin updates and improvements would have never been possible witho
 
 [Marta Rivera-Alba](https://www.janelia.org/people/marta-rivera-alba) helped with the macro support and code debugging.
 
-[Johannes Schindelin](https://github.com/dscho) is responsible for the Fiji integration and he is simply there whenever a Java problem comes up\!
+[Johannes Schindelin](https://github.com/dscho) is responsible for the Fiji integration and he is simply there whenever a Java problem comes up!
 
------
+------------------------------------------------------------------------
 
   

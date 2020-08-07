@@ -27,17 +27,19 @@ description: test description
 
 This plugin enables user to track pillars with drift correction and visualize the trajectories and deflections.
 
-## Installation
+Installation
+------------
 
-It can be automatically downloaded and installed by Fiji's updater(*Help-\>Update...*). Activate the **PillarTracker** checkbox in *Manage update sites*. For more details about how to update Fiji in a most convenient way, please refer to our documentation here. However, if user doesn't want to use the updater for some reason, one can still download it from following link, and then install it manually.
+It can be automatically downloaded and installed by Fiji's updater(*Help-&gt;Update...*). Activate the **PillarTracker** checkbox in *Manage update sites*. For more details about how to update Fiji in a most convenient way, please refer to our documentation here. However, if user doesn't want to use the updater for some reason, one can still download it from following link, and then install it manually.
 
-Latest version: [Pillar\_Tracker\_GUI-1.1.6-SNAPSHOT.zip](https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs) (\<1 MB)
+Latest version: [Pillar\_Tracker\_GUI-1.1.6-SNAPSHOT.zip](https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs) (&lt;1 MB)
 
 [PillarTracker\_Documentation.pdf](https://drive.google.com/file/d/0B3hxvkn3VvhCVWJsdUN3eDUyNkk) (\~3 MB)
 
 [Sample\_Files.zip](https://drive.google.com/file/d/0B3hxvkn3VvhCYjFCaWx5dnNpSlE) (61.9 MB)
 
-## Update History
+Update History
+--------------
 
 version **1.1.6** (since Apr. 03, 2018)
 
@@ -47,7 +49,7 @@ version **1.1.6** (since Apr. 03, 2018)
 
 `(3).output ROI data for all frames as table.`
 
-`(4).source code on `[`Github``   ``repository`](https://github.com/scottreen/PillarTracker)`.`
+`(4).source code on `[`Github`` ``repository`](https://github.com/scottreen/PillarTracker)`.`
 
 version **1.1.5**
 
@@ -99,7 +101,8 @@ version **1.0.9**
 
 `(2).support fast localization algorithm: center of mass(CM).`
 
-## Acknowledgement
+Acknowledgement
+---------------
 
 This work is funded by Mechanobiology Institute,Singapore.
 

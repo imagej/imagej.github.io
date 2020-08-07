@@ -19,7 +19,7 @@ If you are curious and want to see what a peek into the future would have been l
 
 {% include youtube url='https://www.youtube.com/embed/LBrDzZCOQtI'%}
 
-If you do not like the Google search in your Firefox to be localized, change it. In a file that might be named /usr/lib/firefox-addons/searchplugins/google.xml... (you have to remove the \&hl=.. part).
+If you do not like the Google search in your Firefox to be localized, change it. In a file that might be named /usr/lib/firefox-addons/searchplugins/google.xml... (you have to remove the &hl=.. part).
 
 Okay, now a little riddle. What is the next number? 1, 2, 6, 42, 1806, ?
 

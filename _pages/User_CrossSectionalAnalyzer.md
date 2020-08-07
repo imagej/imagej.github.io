@@ -13,7 +13,7 @@ description: test description
 
 *Date*: 2020/05/14
 
-*Source*: ![Cross-sectional-analysis.zip](/images/pages/Cross-sectional-analysis.zip "Cross-sectional-analysis.zip")
+*Source*: ![](/images/pages/Cross-sectional-analysis.zip "fig:Cross-sectional-analysis.zip")
 
 You can access the source files at [1](https://github.com/mattrothman/cross-sectional-analysis).
 
@@ -25,8 +25,8 @@ You can access the source files at [1](https://github.com/mattrothman/cross-sect
 
 3\. Put Cross\_Sectional\_Analyzer.jar inside the ImageJ/plugins/Filters folder, and restart imageJ.
 
-4\. Once ImageJ opens, open an image to analyze, and calibrate the image. To run the plugin, use Plugins\>Filters\>Cross Sectional Analyzer.
+4\. Once ImageJ opens, open an image to analyze, and calibrate the image. To run the plugin, use Plugins&gt;Filters&gt;Cross Sectional Analyzer.
 
 *Description*: This plugin takes in an image of muscle fibers, outlines and numbers all of the fibers, and outputs a table of each fiber’s area as well as an RGB Color image of the numbered fiber outlines on a black background.
 
-![Input Image](/images/pages/Fibers.png "Input Image") ![Output Image](/images/pages/FiberOutlines.png "Output Image")
+<img src="/images/pages/Fibers.png" title="fig:Input Image" width="300" alt="Input Image" /> <img src="/images/pages/FiberOutlines.png" title="fig:Output Image" width="300" alt="Output Image" />

@@ -13,15 +13,16 @@ description: test description
 `./Build.sh plugins/Fiji_Plugins.jar-clean`  
 `./Build.sh plugins/Fiji_Plugins.jar`
 
-## The graphical way (recommended)
+The graphical way (recommended)
+-------------------------------
 
 You can use the [Fiji Updater](Update_Fiji ) to upload new plugins (or new versions thereof). First start {% include bc content='Help | Update Fiji'%}. It will tell you that there are *locally modified files*:
 
-![Updater-locally-modified.png](/images/pages/Updater-locally-modified.png "Updater-locally-modified.png")
+<figure><img src="/images/pages/Updater-locally-modified.png" title="Updater-locally-modified.png" width="600" alt="Updater-locally-modified.png" /><figcaption aria-hidden="true">Updater-locally-modified.png</figcaption></figure>
 
 Please make sure that there are <u>no</u> updateable files, lest you overwrite new versions with old ones. If that is the case, the *Updater* will automatically switch to the *Advanced Mode* and show you the *locally modified files*. By clicking on the *Locally modified*, you can choose to upload one or more files:
 
-![Updater-select-upload.png](/images/pages/Updater-select-upload.png "Updater-select-upload.png")
+<figure><img src="/images/pages/Updater-select-upload.png" title="Updater-select-upload.png" width="750" alt="Updater-select-upload.png" /><figcaption aria-hidden="true">Updater-select-upload.png</figcaption></figure>
 
 **Note:** if you want to upload a new file, i.e. a file Fiji does not know anything about yet, you have to switch to *Advanced Mode* yourself and select the view option *View non-Fiji plugins only*.
 
@@ -33,22 +34,24 @@ Once everything is ready for upload, just click the button *Upload to Server*.
 
 **Note:** you will need to have an account on [fiji.sc](fiji.sc ) which is in the group *updaters*, and you will only be offered the upload option by the Updater if you work from a working directory with source files.
 
-## Using the command line
+Using the command line
+----------------------
 
 If you have an ssh account on *fiji.sc* that is in the *uploaders* group, you can upload plugins. To do this, run
 
 `git pull origin master`
 
-If this says that a recursive merge was performed, you had local changes and should **not** upload anything, as you did not test that version\!
+If this says that a recursive merge was performed, you had local changes and should **not** upload anything, as you did not test that version!
 
 If it was a fast-forward (or if Git said "Everything up-to-date"), you are good to go:
 
 `./Build.sh`  
 `./bin/update-fiji.py `<filename>
 
-It will refuse to upload a file that has locally-modified dependencies, and list them. To upload those dependencies, too, you can use the *--auto* option of *./bin/update-fiji.py*. **Use with care\!**
+It will refuse to upload a file that has locally-modified dependencies, and list them. To upload those dependencies, too, you can use the *--auto* option of *./bin/update-fiji.py*. **Use with care!**
 
-## Internals
+Internals
+---------
 
 The original [Fiji Updater](Update_Fiji ) was very limited; it only allowed to download new versions of files, and it did not have an option to determine whether a local version was previously installed via the Updater or not.
 
@@ -62,7 +65,7 @@ File versions are identified by a cryptographic hash of the file contents, and p
 
 Two different methods are applied: one for *.jar* files and one for all the other files. For regular files, the file name (without trailing NUL nor line feed character) and the exact file contents are piped into the SHA-1 algorithm. For *.jar* files, the file names of the <u>entries</u> and the exact contents of those files are pushed through the SHA-1 algorithm, one after another.
 
-The reason why *.jar* files are different is that they are really nothing more than glorified *.zip* files, and as such contain timestamps. If those timestamps differ, the *.zip* files differ. So if developer Anne Berlin compiles some plugin in Chicago and developer Dario Espana compiles the same plugin on Fiji, chances are that the timestamps are different, and therefore the *.jar* files, even if they contain the same ''.class' files\!
+The reason why *.jar* files are different is that they are really nothing more than glorified *.zip* files, and as such contain timestamps. If those timestamps differ, the *.zip* files differ. So if developer Anne Berlin compiles some plugin in Chicago and developer Dario Espana compiles the same plugin on Fiji, chances are that the timestamps are different, and therefore the *.jar* files, even if they contain the same ''.class' files!
 
 ### The database
 
@@ -78,7 +81,8 @@ The new database is stored in the file *db.xml.gz*, which again is a static file
 
 This database not only stores the same information as *current.txt*, it can contain arbitrary file names (even including spaces, which is not possible with the former database), store descriptions of the files, have information about the platform, categories and most importantly, it has the checksums of all known previous versions so that we can finally decide whether it is safe to update files or whether they are locally modified and the user should state **explicitely** that it is safe to update.
 
-## File organization
+File organization
+-----------------
 
 Different file types are stored at different locations in an ImageJ/Fiji installation, where they are picked up by the updater (see the [source code](https://github.com/imagej/imagej-updater/blob/imagej-updater-0.8.1/src/main/java/net/imagej/updater/Checksummer.java#L439-L451) for technical details):
 
@@ -144,7 +148,8 @@ The updater will only pick up files stored at the appropriate location according
 
 Further information is in this [thread on fiji-devel](https://groups.google.com/forum/#!topic/fiji-devel/QbY4XnLC-wE)
 
-## The actual files
+The actual files
+----------------
 
 The files corresponding to the database entries are also stored as flat files of the form
 

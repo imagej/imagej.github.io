@@ -7,7 +7,7 @@ categories: News
 description: test description
 ---
 
-Analyze\_Stripes\_v2.4.1 has just been released\!
+Analyze\_Stripes\_v2.4.1 has just been released!
 
 Analyze\_Stripes is a Fiji (or ImageJ) macro designed to automatically measure the width, edge roughness, and orientation angle of stripes.
 

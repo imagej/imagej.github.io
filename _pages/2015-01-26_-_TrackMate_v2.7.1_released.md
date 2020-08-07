@@ -15,14 +15,14 @@ The LAP trackers previously available in TrackMate had a cost calculation based 
 
 But a tracker that deals specifically with a new motion model is welcome, in particular when it is as common as linear motion. Its principles are detailed [here](TrackMate_algorithms#Linear_motion_tracker ).
 
-![TrackMate\_KalmanTrackerPrinciple.png](/images/pages/TrackMate KalmanTrackerPrinciple.png "TrackMate_KalmanTrackerPrinciple.png")
+<figure><img src="/images/pages/TrackMate_KalmanTrackerPrinciple.png" title="TrackMate_KalmanTrackerPrinciple.png" width="600" alt="TrackMate_KalmanTrackerPrinciple.png" /><figcaption aria-hidden="true">TrackMate_KalmanTrackerPrinciple.png</figcaption></figure>
 
-To assess the performance of the new and old trackers, we re-run the ISBI tracking challenge from 2012\[1\]. We put all the results on a single page: [TrackMate Accuracy](TrackMate_Accuracy ) that should help you decide what is the algorithm that suits your problem best. For instance:
+To assess the performance of the new and old trackers, we re-run the ISBI tracking challenge from 2012[1]. We put all the results on a single page: [TrackMate Accuracy](TrackMate_Accuracy ) that should help you decide what is the algorithm that suits your problem best. For instance:
 
-![TrackMate\_RECEPTOR\_LAP\_Brownian\_motion,\_Linear\_motion\_tracker\_\&amp;\_Nearest\_neighbor.png](/images/pages/TrackMate RECEPTOR LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png "TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png")
+<figure><img src="/images/pages/TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" title="TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" width="300" alt="TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" /><figcaption aria-hidden="true">TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png</figcaption></figure>
 
 <references/>
 
 
 
-1.  [Chenouard *et al.*, "Objective comparison of particle tracking methods", '''Nature Methods, 2014 '''](http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html)
+[1] [Chenouard *et al.*, "Objective comparison of particle tracking methods", '''Nature Methods, 2014 '''](http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html)

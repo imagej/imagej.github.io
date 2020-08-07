@@ -9,7 +9,8 @@ description: test description
 
 <b>The notes on this page are relevant for any tool shipping the `imagej-tensorflow` library (e.g. the update sites `imagej-tensorflow` and `CSBDeep`).</b>
 
-## How to install TensorFlow GPU native libraries
+How to install TensorFlow GPU native libraries
+----------------------------------------------
 
 GPU support is available for Linux and Windows machines with NVIDIA graphics cards. Please be warned that the TensorFlow Java native bindings are considered experimental and while some hardware / OS setups easily gained GPU support with the tools described on this page, on other machines we were not successful.
 
@@ -20,7 +21,7 @@ GPU support is available for Linux and Windows machines with NVIDIA graphics car
 3.  Wait until the library is downloaded and installed (a popup will tell you when it’s done)
 4.  Restart Fiji
 
-![Edit \> Options \> TensorFlow…](/images/pages/Tensorflow-installer.png "Edit \> Options \> TensorFlow…")
+![Edit &gt; Options &gt; TensorFlow…](/images/pages/Tensorflow-installer.png "Edit > Options > TensorFlow…")
 
 You can for example switch from CPU to GPU by finding the option which is already selected (in the screenshot, `TF 1.15.0 CPU`) and choose the same TensorFlow version but with GPU support (e.g. `TF 1.15.0 GPU`).
 
@@ -38,10 +39,11 @@ You can also use the filters on the top of the display to filter for a specific 
 
 If you trained your model on a different TensorFlow version, running the model with with the default installation might fail. In this case, choose a specific TensorFlow version via `Edit > Options > TensorFlow...` and install CUDA and cuDNN compatible to the TensorFlow version.
 
-## How to check if GPU support works
+How to check if GPU support works
+---------------------------------
 
-  - Go to `Edit > Options > TensorFlow...` and make sure a GPU version is selected an no error is displayed
-  - When running a command using `imagej-tensorflow`, you can open the console via `Window > Console`. There might be a line similar to this (in this example, no GPU version manually installed and therefore the default CPU TensorFlow version is used):
+-   Go to `Edit > Options > TensorFlow...` and make sure a GPU version is selected an no error is displayed
+-   When running a command using `imagej-tensorflow`, you can open the console via `Window > Console`. There might be a line similar to this (in this example, no GPU version manually installed and therefore the default CPU TensorFlow version is used):
 
 <code>
 
@@ -50,9 +52,10 @@ If you trained your model on a different TensorFlow version, running the model w
 
 </code>
 
-  - Sometimes that's still not sufficient and even though the right library is chosen and the console confirms that, the GPU is not used. Please read the notes for the specific operating systems below.
+-   Sometimes that's still not sufficient and even though the right library is chosen and the console confirms that, the GPU is not used. Please read the notes for the specific operating systems below.
 
-## Hints for Windows
+Hints for Windows
+-----------------
 
 ### Set the environment variables
 
@@ -62,13 +65,14 @@ To set the CUDA environment variables in Windows, please follow the steps descri
 
 Here is a step-by-step example of a successful GPU support installation (keep in mind that the person who tested this has little Windows experience and would benefit a lot from hints if this guide should be improved somehow):
 
-  - in Fiji, opened `Edit > Options > TensorFlow...` and switched to TF 1.15.0 GPU
-  - Installed `CUDA 10.1` from [here](https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exenetwork)
-  - Downloaded `cuDNN 7.6.5 for CUDA 10.1` from [here](https://developer.nvidia.com/rdp/form/cudnn-download-survey) (you need to register / login)
-  - copied cuDNN files from the ZIP into CUDA as described [here](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html#installwindows)
-  - add `/PATH/TO/Fiji.app/lib/win64/tensorflow_jni.dll` to your `PATH` (here’s a guide [how to set system variables](https://www.techjunkie.com/environment-variables-windows-10/))
+-   in Fiji, opened `Edit > Options > TensorFlow...` and switched to TF 1.15.0 GPU
+-   Installed `CUDA 10.1` from [here](https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exenetwork)
+-   Downloaded `cuDNN 7.6.5 for CUDA 10.1` from [here](https://developer.nvidia.com/rdp/form/cudnn-download-survey) (you need to register / login)
+-   copied cuDNN files from the ZIP into CUDA as described [here](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html#installwindows)
+-   add `/PATH/TO/Fiji.app/lib/win64/tensorflow_jni.dll` to your `PATH` (here’s a guide [how to set system variables](https://www.techjunkie.com/environment-variables-windows-10/))
 
-## Hints for Linux
+Hints for Linux
+---------------
 
 ### Set the library path
 
@@ -117,6 +121,7 @@ and also set the environment variable `CUDA_​DEVICE_​ORDER`:
 
 See the [CUDA Programming Guide](http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#env-vars) for more information.
 
-## HELP
+HELP
+----
 
-Is something not working? Please post your question [in the forum](https://forum.image.sc)\!
+Is something not working? Please post your question [in the forum](https://forum.image.sc)!

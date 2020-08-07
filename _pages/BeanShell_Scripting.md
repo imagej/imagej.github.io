@@ -11,195 +11,177 @@ description: test description
 
 BeanShell also does not require strict typing (read: you do not need to declare variables with types), making it easy to turn prototype code into proper Java after seeing that the code works.
 
-# Quickstart
+Quickstart
+==========
 
 If you are already familiar with Java or the macro language, the syntax of BeanShell will be familiar to you.
 
-The obligatory *Hello, World\!* example:
+The obligatory *Hello, World!* example:
 
-``` java
-// This prints 'Hello, World!' to the output area
-print("Hello, World!");
-```
+    // This prints 'Hello, World!' to the output area
+    print("Hello, World!");
 
 Variables can be assigned values:
 
-``` java
-someName = 1;
-someName = "Hello";
-```
+    someName = 1;
+    someName = "Hello";
 
 Variables are not strongly typed in BeanShell by default; If you use a variable name without specifying the type of it, you can assign anything to it. Optionally, you can declare variables with a data type, in which case the type is enforced:
 
-``` java
-String s;
-s = 1; // this fails
-```
+    String s;
+    s = 1; // this fails
 
 Note: The builtin functions of the ImageJ Macro language are <u>not</u> available in BeanShell.
 
-# Syntax
+Syntax
+======
 
-## Variables
+Variables
+---------
 
-  - A variable is a placeholder for a changing entity
-  - Each variable has a name
-  - Each variable has a value
-  - Values can be any data type (numeric, text, etc)
-  - Variables can be assigned new values
+-   A variable is a placeholder for a changing entity
+-   Each variable has a name
+-   Each variable has a value
+-   Values can be any data type (numeric, text, etc)
+-   Variables can be assigned new values
 
 ### Set variables' values
 
 Variables are assigned a value by statements of the form **name** = **value** ended by a semicolon. The value can be an expression.
 
-``` java
-intensity = 255;
-value = 2 * 8 + 1;
-title = “Hello, World!”;
-text = “title”;
-```
+    intensity = 255;
+    value = 2 * 8 + 1;
+    title = “Hello, World!”;
+    text = “title”;
 
 ### Using variables
 
 You can set a variable's value to the value of a second variable:
 
-``` java
-text = title;
-```
+    text = title;
 
 Note that the variable name on the left hand side of the equal sign refers to the variable itself (not its value), but on the right hand side, the variable name refers to the current value stored in the variable.
 
 As soon as the variables are assigned a new value, they simply forget the old value:
 
-``` java
-x = y;
-y = x;
-```
+    x = y;
+    y = x;
 
 After the first statement, *x* took on the value of *y*, so that the second statement does not change the value of *y*.
 
 The right hand side of an assignment can contain complicated expressions:
 
-``` java
-x = y * y – 2 * y + 3;
-```
+    x = y * y – 2 * y + 3;
 
 Note that the right hand side needs to be evaluated first before the value is assigned to the variable:
 
-``` java
-intensity = intensity * 2;
-```
+    intensity = intensity * 2;
 
 This statement just doubled the value of *intensity*.
 
-## Comments
+Comments
+--------
 
 It is important to use comments in your source code, not only for other people to understand the intent of the code, but also for yourself, when you come back to your code in 6 months. Comments look like this:
 
-``` java
-// This is a comment trying to help you to
-// remember what you meant to do here:
-a = Math.exp(x * Math.sin(y))
-    + Math.atan(x * y – a);
-```
+    // This is a comment trying to help you to
+    // remember what you meant to do here:
+    a = Math.exp(x * Math.sin(y))
+        + Math.atan(x * y – a);
 
 You should <u>not</u> repeat the code in English, but describe the important aspects not conveyed by the code. For example, there might be a bug requiring a workaround, and you might want to explain that in the comments (lest you try to "fix" the workaround).
 
 Comments are often abused to disable code, such as debugging statements
 
-``` java
-// x = 10; // hard-code x to 10 for now, just for debugging
-```
+    // x = 10; // hard-code x to 10 for now, just for debugging
 
 If you have a substantial amount of things to say in a comment, you might use multi-line comments:
 
-``` java
-/*
- Multi-line comments can be started by a slash
- followed by a star, and their end is marked
- by a star followed by a slash:
-*/
-```
+    /*
+     Multi-line comments can be started by a slash
+     followed by a star, and their end is marked
+     by a star followed by a slash:
+    */
 
-## Further reading
+Further reading
+---------------
 
 For more information, see BeanShell's [Quickstart](http://www.beanshell.org/manual/quickstart.html) page.
 
-# Tips
+Tips
+====
 
 You can *source* scripts (i.e. interpret another script before continuing to interpret the current script) using this line:
 
-``` java
-this.interpreter.source("the-other-script.bsh");
-```
+    this.interpreter.source("the-other-script.bsh");
 
-# Examples
+Examples
+========
 
-## Add CIEL\*a\*b numbers to the status bar
+Add CIEL\*a\*b numbers to the status bar
+----------------------------------------
 
 If your monitor is calibrated to *sRGB*, there is an easy way to do display also the *L*, *a* and *b* values in the status bar:
 
-``` java
-import color.CIELAB;
+    import color.CIELAB;
 
-import java.awt.Label;
+    import java.awt.Label;
 
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
+    import java.awt.event.KeyEvent;
+    import java.awt.event.KeyListener;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+    import java.util.regex.Matcher;
+    import java.util.regex.Pattern;
 
-// IJ1's API does not offer all I want
-setAccessibility(true);
+    // IJ1's API does not offer all I want
+    setAccessibility(true);
 
-// press Escape on the ImageJ window to stop it
-class Add_CIELab_to_Status extends Thread implements KeyListener {
-    protected ImageJ ij;
-    protected Label status;
-    protected Pattern pattern = Pattern.compile("^.* value=([0-9]*),([0-9]*),([0-9]*)$");
-    protected float[] lab, rgb;
+    // press Escape on the ImageJ window to stop it
+    class Add_CIELab_to_Status extends Thread implements KeyListener {
+        protected ImageJ ij;
+        protected Label status;
+        protected Pattern pattern = Pattern.compile("^.* value=([0-9]*),([0-9]*),([0-9]*)$");
+        protected float[] lab, rgb;
 
-    public Add_CIELab_to_Status() {
-        ij = IJ.getInstance();
-        status = ij.statusLine;
-        ij.addKeyListener(this);
-        lab = new float[3];
-        rgb = new float[3];
-    }
-
-    public void run() {
-        try {
-            for (;;) {
-                String text = status.getText();
-                Matcher matcher = pattern.matcher(text);
-                if (matcher.matches()) {
-                    for (int i = 0; i < 3; i++)
-                        rgb[i] = Float.parseFloat(matcher.group(i + 1)) / 255;
-                    CIELAB.sRGB2CIELAB(rgb, lab);
-                    status.setText(text + ", L=" + IJ.d2s(lab[0], 2)
-                        + ",a*=" + IJ.d2s(lab[1], 3) + ",b*=" + IJ.d2s(lab[2], 3));
-                }
-                Thread.sleep(5);
-            }
-        } catch (InterruptedException e) {}
-    }
- 
-    public void keyPressed(KeyEvent e) {
-        if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
-            ij.removeKeyListener(this);
-            interrupt();
+        public Add_CIELab_to_Status() {
+            ij = IJ.getInstance();
+            status = ij.statusLine;
+            ij.addKeyListener(this);
+            lab = new float[3];
+            rgb = new float[3];
         }
+
+        public void run() {
+            try {
+                for (;;) {
+                    String text = status.getText();
+                    Matcher matcher = pattern.matcher(text);
+                    if (matcher.matches()) {
+                        for (int i = 0; i < 3; i++)
+                            rgb[i] = Float.parseFloat(matcher.group(i + 1)) / 255;
+                        CIELAB.sRGB2CIELAB(rgb, lab);
+                        status.setText(text + ", L=" + IJ.d2s(lab[0], 2)
+                            + ",a*=" + IJ.d2s(lab[1], 3) + ",b*=" + IJ.d2s(lab[2], 3));
+                    }
+                    Thread.sleep(5);
+                }
+            } catch (InterruptedException e) {}
+        }
+     
+        public void keyPressed(KeyEvent e) {
+            if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
+                ij.removeKeyListener(this);
+                interrupt();
+            }
+        }
+
+        public void keyReleased(KeyEvent e) {}
+        public void keyTyped(KeyEvent e) {}
     }
 
-    public void keyReleased(KeyEvent e) {}
-    public void keyTyped(KeyEvent e) {}
-}
+    new Add_CIELab_to_Status().start();
 
-new Add_CIELab_to_Status().start();
-```
-
-This example starts a new thread (make sure to implement the *run()* method but actually call the *start()* method\!) which polls the status bar.
+This example starts a new thread (make sure to implement the *run()* method but actually call the *start()* method!) which polls the status bar.
 
 It also registers itself as a key listener so it can stop the process when the user hits the Escape key when the main window is in focus.
 

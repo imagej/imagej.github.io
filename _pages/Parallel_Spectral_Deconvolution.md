@@ -9,11 +9,13 @@ description: test description
 
 {% include info-box software='ImageJ ' name='Parallel Spectral Deconvolution 2D and 3D ' author='Piotr Wendykier ' filename=' [parallel\_spectral\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-bin.zip) ' source=' [parallel\_spectral\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-src.zip) ' released='27 September 2007 ' latest-version='11 April 2009 ' category='[Deconvolution](Category_Deconvolution ) ' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution ' %}
 
-## Purpose
+Purpose
+-------
 
 Parallel Spectral Deconvolution is an ImageJ plugin for spectral deblurring. This plugin takes advantage of multi-core processors.
 
-## Documentation
+Documentation
+-------------
 
 The plugin code is based on the following book:
 
@@ -21,7 +23,8 @@ The plugin code is based on the following book:
 
 Please refer to the [website](http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution) for detail and examples.
 
-## Introduction
+Introduction
+------------
 
 ### What is Deconvolution?
 
@@ -33,9 +36,10 @@ The spectral filtering algorithms include many well known techniques for image d
 
 Parallel Spectral Deconvolution is an ImageJ plugin for spectral image deblurring. The code is based on methods described in Deblurring Images: Matrices, Spectra, and Filtering by Per Christian Hansen, James G. Nagy, and Dianne P. O’Leary, SIAM, 2006. The current version implements Tikhonov- and TSVD-based image deblurring assuming either periodic of reflexive boundary conditions. Although the plugin can handle arbitrary-sized 2- and 3-dimensional images, its usage is limited to grayscale images. To deconvolve a color image, you would have to split the channels and deblur each channel separately.
 
-## How to use
+How to use
+----------
 
-![ParallelSpectralDeconvolutionDialog.jpg](/images/pages/ParallelSpectralDeconvolutionDialog.jpg "ParallelSpectralDeconvolutionDialog.jpg")
+<figure><img src="/images/pages/ParallelSpectralDeconvolutionDialog.jpg" title="ParallelSpectralDeconvolutionDialog.jpg" width="500" alt="ParallelSpectralDeconvolutionDialog.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolutionDialog.jpg</figcaption></figure>
 
 There are seven drop-down lists (combo-boxes) available in the GUI. From the Image list, you can choose a blurred image. PSF list is for selection of a point spread function image. The content of these two lists depends on what is currently open in ImageJ - if no image windows are displayed then both lists are empty. The next two lists (Method and Stencil) allow you to choose an algorithm used for deconvolution (Generalized Tikhonov, Tikhonov or TSVD) and a stencil (for Generalized Tikhonov only). The stencil is used for creating a regularization matrix (an approximation of a derivative operator). A detailed explanation of all algorithms can be found in Deblurring Images: Matrices, Spectra, and Filtering. In the Resizing combo-box you can choose whether the blurred image will be padded to the next power-of-two size before processing. This feature is available mainly for performance reasons (FFT works faster when the size of the data is a power-of-two number). Note that if the size of each dimension of a blurred image is already a power-of-two number, then the image will not be padded even if the Next power of two option is selected. To display a padded image, the Show padded image check-box needs to be selected. The Output list is used to specify the type of an output (reconstructed image). Finally, in the Precision combo-box you can choose a floating-point precision used in computations. Practice shows that a single precision is sufficient for most problems.
 
@@ -47,101 +51,105 @@ When deblurring an image, certain regularity conditions have to be enforced on t
 
 There are several ImageJ plugins for generating a theoretical point spread function:
 
-  - [PSF Tool for ImageJ](http://www.mosaic.ethz.ch/Downloads/psftool) by the ETH Computationnal Biophysics Lab
-  - [Diffraction PSF 3D](Diffraction_PSF_3D ) by Robert Dougherty
-  - [Deconvolution3D](http://bigwww.epfl.ch/demo/deconvolution3D/) by Pierre Besson.
+-   [PSF Tool for ImageJ](http://www.mosaic.ethz.ch/Downloads/psftool) by the ETH Computationnal Biophysics Lab
+-   [Diffraction PSF 3D](Diffraction_PSF_3D ) by Robert Dougherty
+-   [Deconvolution3D](http://bigwww.epfl.ch/demo/deconvolution3D/) by Pierre Besson.
 
 To use these tools you need to know some parameters of your microscope setup and sample like NA, RI of mounting medium, wavelength, etc.
 
-## 2D Example
+2D Example
+----------
 
 After opening the image to deconvolve and the image of the PSF, start {% include bc content='Plugins | Deconvolution | 2D Spectral Deconvolution...'%}
 
-![ParallelSpectralDeconvolution2DExample.jpg](/images/pages/ParallelSpectralDeconvolution2DExample.jpg "ParallelSpectralDeconvolution2DExample.jpg")
+<figure><img src="/images/pages/ParallelSpectralDeconvolution2DExample.jpg" title="ParallelSpectralDeconvolution2DExample.jpg" width="800" alt="ParallelSpectralDeconvolution2DExample.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution2DExample.jpg</figcaption></figure>
 
 Clicking on the Deconvolve button results in this:
 
-![ParallelSpectralDeconvolution2DExampleResult.jpg](/images/pages/ParallelSpectralDeconvolution2DExampleResult.jpg "ParallelSpectralDeconvolution2DExampleResult.jpg")
+<figure><img src="/images/pages/ParallelSpectralDeconvolution2DExampleResult.jpg" title="ParallelSpectralDeconvolution2DExampleResult.jpg" width="800" alt="ParallelSpectralDeconvolution2DExampleResult.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution2DExampleResult.jpg</figcaption></figure>
 
-## 3D Example
+3D Example
+----------
 
 After opening the image to deconvolve and the image of the PSF, start {% include bc content='Plugins | Deconvolution | 3D Spectral Deconvolution...'%}
 
-![ParallelSpectralDeconvolution3DExample.jpg](/images/pages/ParallelSpectralDeconvolution3DExample.jpg "ParallelSpectralDeconvolution3DExample.jpg")
+<figure><img src="/images/pages/ParallelSpectralDeconvolution3DExample.jpg" title="ParallelSpectralDeconvolution3DExample.jpg" width="800" alt="ParallelSpectralDeconvolution3DExample.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution3DExample.jpg</figcaption></figure>
 
 Clicking on the Deconvolve button results in this:
 
-![ParallelSpectralDeconvolution3DExampleResult.jpg](/images/pages/ParallelSpectralDeconvolution3DExampleResult.jpg "ParallelSpectralDeconvolution3DExampleResult.jpg")
+<figure><img src="/images/pages/ParallelSpectralDeconvolution3DExampleResult.jpg" title="ParallelSpectralDeconvolution3DExampleResult.jpg" width="800" alt="ParallelSpectralDeconvolution3DExampleResult.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution3DExampleResult.jpg</figcaption></figure>
 
-## See also
+See also
+--------
 
-  - [Parallel Iterative Deconvolution](Parallel_Iterative_Deconvolution ) by the same author, for another set of methods.
+-   [Parallel Iterative Deconvolution](Parallel_Iterative_Deconvolution ) by the same author, for another set of methods.
 
-## Version history
+Version history
+---------------
 
-  - 1.0: September 28, 2007
-      - Initial release.
+-   1.0: September 28, 2007
+    -   Initial release.
 
-<!-- end list -->
+<!-- -->
 
-  - 1.1: January 6, 2008
-      - Fixed bug causing poor results in all 3D methods with reflexive boundary conditions.
-      - The plugin is updated to use Parallel Colt 0.2.
-      - Added benchmarks.
+-   1.1: January 6, 2008
+    -   Fixed bug causing poor results in all 3D methods with reflexive boundary conditions.
+    -   The plugin is updated to use Parallel Colt 0.2.
+    -   Added benchmarks.
 
-<!-- end list -->
+<!-- -->
 
-  - 1.2: February 15, 2008
-      - Added single precision.
-      - Added exceptions handling.
+-   1.2: February 15, 2008
+    -   Added single precision.
+    -   Added exceptions handling.
 
-<!-- end list -->
+<!-- -->
 
-  - 1.3: February 27, 2008
-      - Memory optimization (all methods require less memory now).
-      - Added info displayed in the status bar.
-      - Changed the title of a deblurred image.
+-   1.3: February 27, 2008
+    -   Memory optimization (all methods require less memory now).
+    -   Added info displayed in the status bar.
+    -   Changed the title of a deblurred image.
 
-<!-- end list -->
+<!-- -->
 
-  - 1.4: March 1, 2008
-      - Added threshold option.
+-   1.4: March 1, 2008
+    -   Added threshold option.
 
-<!-- end list -->
+<!-- -->
 
-  - 1.5: March 11, 2008
-      - From now on Deconvolve, Update and Cancel buttons are disabled while deconvolution is in progress.
-      - From now on the main GUI window cannot be closed by using the button from the title bar.
+-   1.5: March 11, 2008
+    -   From now on Deconvolve, Update and Cancel buttons are disabled while deconvolution is in progress.
+    -   From now on the main GUI window cannot be closed by using the button from the title bar.
 
-<!-- end list -->
+<!-- -->
 
-  - 1.6: April 17, 2008
-      - The plugin is updated to use Parallel Colt 0.4.
+-   1.6: April 17, 2008
+    -   The plugin is updated to use Parallel Colt 0.4.
 
-<!-- end list -->
+<!-- -->
 
-  - 1.7: August 26, 2008
-      - Added support for macros.
-      - Memory optimization for single precision methods.
-      - Added javadoc distribution.
-      - Bzip2 is used to compress tar archives.
-      - The plugin is updated to use Parallel Colt 0.5.
+-   1.7: August 26, 2008
+    -   Added support for macros.
+    -   Memory optimization for single precision methods.
+    -   Added javadoc distribution.
+    -   Bzip2 is used to compress tar archives.
+    -   The plugin is updated to use Parallel Colt 0.5.
 
-<!-- end list -->
+<!-- -->
 
-  - 1.8: November 21, 2008
-      - Fixed bug in all FFT-based methods: a blurred image was padded reflexive instead of periodic.
-      - Added resizing option (an image does not need to be padded to the next power of two size).
-      - Added output option (a deblurred image is automatically converted to the chosen type).
-      - The plugin is updated to use Parallel Colt 0.6.
+-   1.8: November 21, 2008
+    -   Fixed bug in all FFT-based methods: a blurred image was padded reflexive instead of periodic.
+    -   Added resizing option (an image does not need to be padded to the next power of two size).
+    -   Added output option (a deblurred image is automatically converted to the chosen type).
+    -   The plugin is updated to use Parallel Colt 0.6.
 
-<!-- end list -->
+<!-- -->
 
-  - 1.9: April 11, 2009
-      - Added SpectralDeconvolver interfaces and abstract classes for 2D and 3D spectral algorithms.
-      - Default stencil for Generalized Tikhonov changed from Identity to Laplacian.
-      - Fixed bug causing NullPointerExceptinon when a blurred image or a PSF was renamed.
-      - Refactoring and cosmetic changes.
-      - The plugin is updated to use Parallel Colt 0.7.2.
+-   1.9: April 11, 2009
+    -   Added SpectralDeconvolver interfaces and abstract classes for 2D and 3D spectral algorithms.
+    -   Default stencil for Generalized Tikhonov changed from Identity to Laplacian.
+    -   Fixed bug causing NullPointerExceptinon when a blurred image or a PSF was renamed.
+    -   Refactoring and cosmetic changes.
+    -   The plugin is updated to use Parallel Colt 0.7.2.
 
  

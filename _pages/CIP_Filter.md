@@ -13,7 +13,8 @@ This page provides user documentation for the filter functions of the [CIP](CIP 
 
 {% include cip content='Navigation' %}
 
-# **gauss**
+**gauss**
+=========
 
 <span style="font-size:110%">**Description**</span>  
 gauss creates a gaussian blurred image. it convolves the image with a gaussian weighted window. Gaussian blurring is commonly used for image denoising as it smoothes out small details.
@@ -31,11 +32,12 @@ gauss creates a gaussian blurred image. it convolves the image with a gaussian w
     **outputImage**: the processed image. it always as the same size as the input image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.gauss( img1 , 5 )` ![CIP\_gauss.PNG](/images/pages/CIP gauss.PNG "CIP_gauss.PNG")  
+    `img2 = cip.gauss( img1 , 5 )` <img src="/images/pages/CIP_gauss.PNG" title="fig:CIP_gauss.PNG" width="400" alt="CIP_gauss.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 CIP gauss implementation wraps the gauss ops, itself relying on the [imglib2 gauss3 implementation](https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/gauss3).
 
-# **erode**
+**erode**
+=========
 
 <span style="font-size:110%">**Description**</span>  
 Erosion shrinks the region in an image by a certain radius. It works both with binary and graylevel images. This effect is obtained by replacing each pixel value by the minimum value found in a window surrounding that pixel.
@@ -54,11 +56,12 @@ Erosion shrinks the region in an image by a certain radius. It works both with b
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.erode( img1 , 2 )` ![CIP\_erode.PNG](/images/pages/CIP erode.PNG "CIP_erode.PNG")  
+    `img2 = cip.erode( img1 , 2 )` <img src="/images/pages/CIP_erode.PNG" title="fig:CIP_erode.PNG" width="400" alt="CIP_erode.PNG" />  
 <span style="font-size:115%">**Implementation**</span>  
 CIP function wraps the [imglib2 Erosion class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Erosion.java) from the morphology package.
 
-# **dilate**
+**dilate**
+==========
 
 <span style="font-size:110%">**Description**</span>  
 this filter dilate the region in an image by a certain radius. It works both with binary and graylevel images. This effect is obtained by replacing each pixel value by the maximum value found in a window surrounding that pixel.
@@ -77,11 +80,12 @@ this filter dilate the region in an image by a certain radius. It works both wit
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.dilate( img1 , 2 )` ![CIP\_dilate.PNG](/images/pages/CIP dilate.PNG "CIP_dilate.PNG")  
+    `img2 = cip.dilate( img1 , 2 )` <img src="/images/pages/CIP_dilate.PNG" title="fig:CIP_dilate.PNG" width="400" alt="CIP_dilate.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 CIP function wraps the [imglib2 Dilation class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Dilation.java) from the morphology package.
 
-# **opening**
+**opening**
+===========
 
 <span style="font-size:110%">**Description**</span>  
 This filter performs an erosion followed by a dilation. It erases small and thin objects.
@@ -100,11 +104,12 @@ This filter performs an erosion followed by a dilation. It erases small and thin
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.opening( img1 , 5 )` ![CIP\_opening.PNG](/images/pages/CIP opening.PNG "CIP_opening.PNG")  
+    `img2 = cip.opening( img1 , 5 )` <img src="/images/pages/CIP_opening.PNG" title="fig:CIP_opening.PNG" width="400" alt="CIP_opening.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 CIP function wraps the [imglib2 Opening class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Opening.java) from the morphology package.
 
-# **closing**
+**closing**
+===========
 
 <span style="font-size:110%">**Description**</span>  
 This filter performs a dilation followed by an erosion. It closes small holes and thin gaps between or inside objects.
@@ -123,11 +128,12 @@ This filter performs a dilation followed by an erosion. It closes small holes an
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.closing( img1 , 16, 'disk' )` ![CIP\_closing.PNG](/images/pages/CIP closing.PNG "CIP_closing.PNG")  
+    `img2 = cip.closing( img1 , 16, 'disk' )` <img src="/images/pages/CIP_closing.PNG" title="fig:CIP_closing.PNG" width="600" alt="CIP_closing.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The implementation successively applies CIP erosion and dilation functions.
 
-# **tophat**
+**tophat**
+==========
 
 <span style="font-size:110%">**Description**</span>  
 This filter subtract an opening of the input image to the input image. It removes object larger than the user selected radius in image while keeping smaller scale details.
@@ -146,11 +152,12 @@ This filter subtract an opening of the input image to the input image. It remove
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.tophat( img1 , 5, 'disk' )` ![CIP\_tophat.PNG](/images/pages/CIP tophat.PNG "CIP_tophat.PNG")  
+    `img2 = cip.tophat( img1 , 5, 'disk' )` <img src="/images/pages/CIP_tophat.PNG" title="fig:CIP_tophat.PNG" width="500" alt="CIP_tophat.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The function relies on ops for subtraction and CIP for the opening.
 
-# **distance**
+**distance**
+============
 
 <span style="font-size:110%">**Description**</span>  
 this function create an image where each pixel value correspond between the distance of that pixel to the closest background object in the input image
@@ -167,12 +174,13 @@ this function create an image where each pixel value correspond between the dist
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.distance( img1 , 500 )` or `img2 = cip.distance( img1 , 'threshold', 500 )` ![CIP\_distance1.PNG](/images/pages/CIP distance1.PNG "CIP_distance1.PNG")  
-    `img2 = cip.distance( img1 )` will build the distance map for a binary image. ![CIP\_distance2.PNG](/images/pages/CIP distance2.PNG "CIP_distance2.PNG")  
+    `img2 = cip.distance( img1 , 500 )` or `img2 = cip.distance( img1 , 'threshold', 500 )` <img src="/images/pages/CIP_distance1.PNG" title="fig:CIP_distance1.PNG" width="400" alt="CIP_distance1.PNG" />  
+    `img2 = cip.distance( img1 )` will build the distance map for a binary image. <img src="/images/pages/CIP_distance2.PNG" title="fig:CIP_distance2.PNG" width="400" alt="CIP_distance2.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The function relies on ops distance function implementation.
 
-# **median**
+**median**
+==========
 
 <span style="font-size:110%">**Description**</span>  
 This filter is used to denoise image. It is well suited to remove impulse noise.Compare to the gaussian filter it preserve edges better but has higher computationnal cost. Its basic principle is to replace a pixel value with the median value in a window surrounding that pixel.
@@ -191,11 +199,12 @@ This filter is used to denoise image. It is well suited to remove impulse noise.
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.median( img1 , 5 )` ![CIP\_median.PNG](/images/pages/CIP median.PNG "CIP_median.PNG")  
+    `img2 = cip.median( img1 , 5 )` <img src="/images/pages/CIP_median.PNG" title="fig:CIP_median.PNG" width="400" alt="CIP_median.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The function relies on ops that implement a brute force approach of the median filtering. It would be possible to implement more efficient approach using histogram and cord decomposition such ImageJ1 implementation for 2D image.
 
-# **invert**
+**invert**
+==========
 
 <span style="font-size:110%">**Description**</span>  
 This function invert the gray value of the input image such that each pixel value I is replaced by max+min-I , where are min (resp max) are the minimum (resp maximum) intensity in the input image.
@@ -209,6 +218,6 @@ This function invert the gray value of the input image such that each pixel valu
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.invert( img1 )` ![CIP\_invert.PNG](/images/pages/CIP invert.PNG "CIP_invert.PNG")  
+    `img2 = cip.invert( img1 )` <img src="/images/pages/CIP_invert.PNG" title="fig:CIP_invert.PNG" width="400" alt="CIP_invert.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The function implementation uses ops map function

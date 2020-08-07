@@ -9,17 +9,19 @@ description: test description
 
 {% include component-stats content='net.imagej:op-finder' %}The Op Finder is a utility for the browsing, learning, and running of all available {% include github org='imagej ' groupId='imagej-ops ' label='Ops ' %}. Because Ops are plugins and can be dynamically extended and specialized for particular inputs, it is not practical to have static documentation on a given Op. By using the Op Finder, you are able to explore the actual list of Ops available in *your* installation. The purpose of this guide is to familiarize yourself with the basic capabilities of the Op Finder, enabling you to learn and experiment with Ops.
 
-# Getting started
+Getting started
+===============
 
 There are two ways to start up the Op Finder:
 
-1.  Using the shortcut: {% include key content='Shift||L' %}
+1.  Using the shortcut: {% include key content='Shift\|\|L' %}
 2.  Using the menu path: {% include bc content='Plugins|Utilities|Find Ops...'%}
 
-# Parts of the Op Finder
+Parts of the Op Finder
+======================
 
-  -   
-    ![LabeledOpFinder.png](/images/pages/LabeledOpFinder.png "LabeledOpFinder.png")
+  
+![](/images/pages/LabeledOpFinder.png "fig:LabeledOpFinder.png")
 
 **Labeled components**
 
@@ -36,34 +38,37 @@ There are two ways to start up the Op Finder:
 
 **Additional features**
 
-  - Hover your mouse over any part of the Op Finder to get a descriptive tool-tip.
-  - Double-click any cell to copy its contents to your clipboard.
+-   Hover your mouse over any part of the Op Finder to get a descriptive tool-tip.
+-   Double-click any cell to copy its contents to your clipboard.
 
-# Views
+Views
+=====
 
 Because of the extensibility of Ops, there is a lot of information to process when looking at which Ops are actually available. One goal of the Op Finder is to present this information in a way that can be easily understood. To facilitate this, multiple views are available, each tailoring the content of the Op Finder to a specific audience.
 
-## For Users
+For Users
+---------
 
 {% include warning-box content='This view provides an abstract representation of available Ops e.g., one entry could be many Ops merged together. An Op call is ultimately defined by the combination of requested """Op type""" + """parameters""".' %}
 
 Ops in this view are focused on answering the question "What can I do *right now* with Ops?" For example, in this example we see that we can call the `Convolve` Op with either a base image, or the base and kernel:
 
-  -   
-    ![UserOpFinder.png](/images/pages/UserOpFinder.png "UserOpFinder.png")
+  
+<img src="/images/pages/UserOpFinder.png" title="fig:UserOpFinder.png" width="800" alt="UserOpFinder.png" />
 
 **User View Contents**
 
-  - Only Ops directly involving images are displayed
-  - Parameter types are abstracted ("Image", "Number")
-  - Optional parameters are hidden
+-   Only Ops directly involving images are displayed
+-   Parameter types are abstracted ("Image", "Number")
+-   Optional parameters are hidden
 
-## For Developers
+For Developers
+--------------
 
 This view provides a comprehensive list of available Ops implementations. For example, contrasting with the [User view](#For_Users "wikilink"), we see there are actually four concrete implementations of the `Convolve` Op, with a plethora of optional parameters.
 
-  -   
-    ![DevOpFinder.png](/images/pages/DevOpFinder.png "DevOpFinder.png")
+  
+<img src="/images/pages/DevOpFinder.png" title="fig:DevOpFinder.png" width="800" alt="DevOpFinder.png" />
 
 **Developer View Contents**
 
@@ -71,91 +76,87 @@ This view provides a comprehensive list of available Ops implementations. For ex
 2.  Code snippet for use
 3.  Defining Op class
 
-# Things to do
+Things to do
+============
 
-## Filtering
+Filtering
+---------
 
 The Op Finder includes [fuzzy filtering](Wikipedia_Approximate_string_matching ) to find Ops of interest. When filtering:
 
-  - Namespaces are hidden
-  - In [User view](#For_Users "wikilink"), the complete simplified Op entry is filtered.
-  - In [Developer view](#For_Developers "wikilink"), the Op namespaces + class name are filtered.
+-   Namespaces are hidden
+-   In [User view](#For_Users "wikilink"), the complete simplified Op entry is filtered.
+-   In [Developer view](#For_Developers "wikilink"), the Op namespaces + class name are filtered.
 
-![Filter-op-finder.png](/images/pages/Filter-op-finder.png "Filter-op-finder.png")
+<figure><img src="/images/pages/Filter-op-finder.png" title="Filter-op-finder.png" width="600" alt="Filter-op-finder.png" /><figcaption aria-hidden="true">Filter-op-finder.png</figcaption></figure>
 
-## Code Snippets
+Code Snippets
+-------------
 
 Code snippets are available in the [Developer view](#For_Developers "wikilink"). These are intended to help you rapidly build up scripts around the available Ops. The following is a step-by-step guide to take you through the process of finding an Op of interest to using it in a functional script.
 
 1\. The first thing to do is find an Op of interest. In this case, we start from the [User view](#For_Users "wikilink") and see that there is a Convolve Op we want to try:
 
-  -   
-    ![1-select-op.png](/images/pages/1-select-op.png "1-select-op.png")
+  
+![](/images/pages/1-select-op.png "fig:1-select-op.png")
 
 2\. In the [Script Editor](Script_Editor ) (the keyboard shortcut {% include key content='{' %} (open curly bracket) opens the editor), we need to add a reference to the `OpService` which will be our entry point for Op usage:
 
-``` python
-# @OpService ops
-```
+    # @OpService ops
 
-  -   
-    **Note:** this guide is written in [Python](Jython_Scripting ) but any scripting language will work
+  
+**Note:** this guide is written in [Python](Jython_Scripting ) but any scripting language will work
 
 3\. Now we need the code call for our Convolve Op, so we switch to the [Developer view](#For_Developers "wikilink"). The code is long, but remember we can [copy](#Parts_of_the_Op_Finder "wikilink"):
 
-  -   
-    ![2-op-snippet.png](/images/pages/2-op-snippet.png "2-op-snippet.png")
+  
+<img src="/images/pages/2-op-snippet.png" title="fig:2-op-snippet.png" width="1200" alt="2-op-snippet.png" />
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    and paste:
+  
+and paste:
 
-<!-- end list -->
+<!-- -->
 
-``` python
-# @OpService ops
+    # @OpService ops
 
-ops.run("filter.convolve", Img, Img, RandomAccessibleInterval, long[], OutOfBoundsFactory, OutOfBoundsFactory, RealType, ImgFactory)
-```
+    ops.run("filter.convolve", Img, Img, RandomAccessibleInterval, long[], OutOfBoundsFactory, OutOfBoundsFactory, RealType, ImgFactory)
 
 4\. Looking at the Op call, we see that there are *a lot* of parameters. To get a better idea of what these are, we look at the `Op Signature` column of the Op Finder:
 
-  -   
-    ![3-op-signature.png](/images/pages/3-op-signature.png "3-op-signature.png")
+  
+<img src="/images/pages/3-op-signature.png" title="fig:3-op-signature.png" width="1200" alt="3-op-signature.png" />
 
-<!-- end list -->
+<!-- -->
 
-  -   
-    All of the parameters with a {% include key content='?' %} are **optional**. For our purposes, let's just work with the input image, kernel, and returned image:
+  
+All of the parameters with a {% include key content='?' %} are **optional**. For our purposes, let's just work with the input image, kernel, and returned image:
 
-<!-- end list -->
+<!-- -->
 
-``` python
-# @OpService ops
+    # @OpService ops
 
-out = ops.run("filter.convolve", Img, RandomAccessibleInterval)
-```
+    out = ops.run("filter.convolve", Img, RandomAccessibleInterval)
 
 5\. At this stage, we can not actually run our code yet. The pasted snippet serves as a guideline for what types of parameters are needed and produced. The next step is to ask the framework for instances of these parameters by adding [@Parameters](Script_parameters ) to our script:
 
-``` python
-# @OpService ops
-# @Dataset input
-# @Dataset kernel
-# @OUTPUT ImgPlus out
+    # @OpService ops
+    # @Dataset input
+    # @Dataset kernel
+    # @OUTPUT ImgPlus out
 
-out = ops.run("filter.convolve", input, kernel)
-```
+    out = ops.run("filter.convolve", input, kernel)
 
-  -   
-    **Note:** the types we copied and pasted (`Img` and `RandomAccessibleInterval`) represent a *minimum class requirement*. Open images can always be requested as `Datasets`, which have a type hierarchy including {% include bc content='ImgPlus|Img|RandomAccessibleInterval'%}. `Dataset` is thus a good starting point as it can satisfy any of these parameters. If you want to have multiple input image parameters, you **must** use `@Dataset`.
+  
+**Note:** the types we copied and pasted (`Img` and `RandomAccessibleInterval`) represent a *minimum class requirement*. Open images can always be requested as `Datasets`, which have a type hierarchy including {% include bc content='ImgPlus|Img|RandomAccessibleInterval'%}. `Dataset` is thus a good starting point as it can satisfy any of these parameters. If you want to have multiple input image parameters, you **must** use `@Dataset`.
 
-6\. Our script is done\! If we open a base image and kernel in ImageJ we can run our script. The `OpService` is populated automatically by the ImageJ framework, and an input window is automatically created to select the images:
+6\. Our script is done! If we open a base image and kernel in ImageJ we can run our script. The `OpService` is populated automatically by the ImageJ framework, and an input window is automatically created to select the images:
 
 [border"1200px](File_4-run-op.png )
 
-## Running Ops
+Running Ops
+-----------
 
 Although you can run selected Ops through the Op Finder, this method **lacks reproducibility** and should not be used as a substitute for a proper script or plugin when using Ops in a scientific workflow. This functionality *is* intended to allow a rapid preview of what effect an Op will have on a dataset.
 
@@ -163,6 +164,7 @@ The [play button](#Parts_of_the_Op_Finder "wikilink") essentially automates the 
 
 Thus it is recommended to run Ops primarily from the [User view](#For_Users "wikilink"), as these Ops focus on images and numbers, which can automatically be provided by the framework (via open images and input panels, respectively).
 
-# Further Reading
+Further Reading
+===============
 
-  - For more in-depth development information, see [the guide to writing plugins](Writing_plugins ).
+-   For more in-depth development information, see [the guide to writing plugins](Writing_plugins ).

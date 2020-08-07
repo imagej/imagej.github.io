@@ -17,7 +17,8 @@ description: test description
 {% endcapture %}
 {% include info-box software='Fiji/ImageJ ' name='Ellipse Splitting Plugin ' author=author maintainer=maintainer filename='ij-ellipsesplit.jar [\[1](https://github.com/thorstenwagner/ij-ellipsesplit/releases/latest) \] ' source='Github [\[2](https://github.com/thorstenwagner/ij-ellipsesplit) \] ' latest-version='v0.4.0 (15 May 2016) ' status='active ' %}
 
-## Purpose
+Purpose
+-------
 
 The ellipse splitting plugin splits binary objects which could approximated by an ellipse. The used ellipse fitting algorithm was proposed in
 
@@ -36,27 +37,29 @@ The generall approach of the ellipse fitting plugin is as follows:
 `7. Merge ellipses if possible`  
 `8. Filter ellipses by geometric features`
 
-## Examples
+Examples
+--------
 
 Suppose you have the following input image:
 
-![Ellipsesplit\_input.png](/images/pages/Ellipsesplit input.png "Ellipsesplit_input.png")
+<figure><img src="/images/pages/Ellipsesplit_input.png" title="Ellipsesplit_input.png" width="300" alt="Ellipsesplit_input.png" /><figcaption aria-hidden="true">Ellipsesplit_input.png</figcaption></figure>
 
-Then the watershed approach (*Process -\> Binary -\> Watershed*) would give this result:
+Then the watershed approach (*Process -&gt; Binary -&gt; Watershed*) would give this result:
 
 <img src="/images/pages/Ellipsesplit watershed.png" width="300"/>
 
 The ellipse splitting plugin applied to the input image will combine the watershed result and direct ellipse fitting. This leads to the following result:
 
-![Ellipsesplit\_result.png](/images/pages/Ellipsesplit result.png "Ellipsesplit_result.png")
+![](/images/pages/Ellipsesplit result.png "Ellipsesplit_result.png")
 
 Furthermore it outputs several important features:
 
 <img src="/images/pages/Ellipsesplit resultstable.png" width="600"/>
 
-## Parameters
+Parameters
+----------
 
-![GUI of Ellipse Split Plugin](/images/pages/EllipseSplit.png "GUI of Ellipse Split Plugin")
+<figure><img src="/images/pages/EllipseSplit.png" title="GUI of Ellipse Split Plugin" width="350" alt="GUI of Ellipse Split Plugin" /><figcaption aria-hidden="true">GUI of Ellipse Split Plugin</figcaption></figure>
 
 **Binary splitted image:** If set to "Use standard watershed" it will use ImageJ's watershed technique to split the binary object. If there are better techniques for splitting available, you could select here the binary image splitted by that technique.
 
@@ -72,12 +75,14 @@ Furthermore it outputs several important features:
 
 **Aspect ratio:** Ratio of Major axis length and minor axis length.
 
-## Installation
+Installation
+------------
 
 Simply turn on the [Biomedgroup update site](https://fiji.sc/How_to_follow_a_3rd_party_update_site), which includes the ellipse splitting plugin.
 
 If you use ImageJ just copy the ij-ellipessplit.jar file in your plugins folder and copy the [GPCJ 2.2.0](http://sourceforge.net/projects/geom-java/files/gpcj/) and the latest [ij-blob](https://fiji.sc/IJ_Blob) jar file into the plugins/jars folder.
 
-## How to cite
+How to cite
+-----------
 
 Please get the lastest DOI for this plugin here: https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ellipsesplit

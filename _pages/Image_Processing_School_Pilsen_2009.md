@@ -9,16 +9,18 @@ description: test description
 
 See also the [Image Processing School](http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/) announcement webpage.
 
-# Schedule (tentative):
+Schedule (tentative):
+=====================
 
 | **Time**                 | Wednesday, September 9th                                                                                                 | Thursday, September 10th                                 | Friday, September 11th                                                         | Saturday, September 12th                 |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- | ------------------------------------------------------------------------------ | ---------------------------------------- |
+|--------------------------|--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------------------|
 | Session 1: 9:30 - 11:00  | [Welcome](#Welcome_and_Introduction "wikilink") and [Installing Fiji](#Overview_of_installing_and_using_Fiji "wikilink") | [Quantitative Imaging](#Quantitative_Imaging "wikilink") | [Segmentation](#Segmentation "wikilink")                                       | [Registration](#Registration "wikilink") |
 | Session 2: 11:30 - 12:30 | [Image Processing Fundamentals](#Image_Processing_fundamentals "wikilink")                                               | [Colocalization](#Colocalization "wikilink")             | [Beyond 3D](#Beyond_3D "wikilink")                                             |                                          |
 | Session 3: 14:00 - 15:30 | [Fiji scripting: Python](#Fiji_scripting:_Python "wikilink")                                                             | [TrakEM2](#TrakEM2 "wikilink")                           | [Fiji scripting: advanced Python](#Fiji_scripting:_advanced_Python "wikilink") |                                          |
-| Session 4: 16:00 - 17:30 | [Show your images\!](#Work_sessions "wikilink")                                                                          | [Work session](#Work_sessions "wikilink")                | [Work session](#Work_sessions "wikilink")                                      |                                          |
+| Session 4: 16:00 - 17:30 | [Show your images!](#Work_sessions "wikilink")                                                                           | [Work session](#Work_sessions "wikilink")                | [Work session](#Work_sessions "wikilink")                                      |                                          |
 
-## Wednesday
+Wednesday
+---------
 
 ### Welcome and Introduction
 
@@ -42,13 +44,14 @@ Introduction to Fiji scripting in Python
 
 Lead instructor: [Johannes Schindelin](Johannes_Schindelin )
 
-## Thursday
+Thursday
+--------
 
 ### Quantitative Imaging
 
 Quantitative image acquisition and analysis: Spectroscopy not photography, simple measurements.
 
-The presentation is available online (PDF) [here\!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
+The presentation is available online (PDF) [here!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
 
 Lead instructor: [Dan White](Dan_White )
 
@@ -56,7 +59,7 @@ Lead instructor: [Dan White](Dan_White )
 
 Quantitative Image analysis: What you need to know about Colocalization Analysis
 
-The presentation is available online (PDF) [here\!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
+The presentation is available online (PDF) [here!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
 
 Lead instructor: [Dan White](Dan_White )
 
@@ -66,14 +69,15 @@ Lead instructor: [Dan White](Dan_White )
 
 Lead instructor: [Albert Cardona](Albert_Cardona )
 
-## Friday
+Friday
+------
 
 ### Segmentation
 
 Introduction to image segmentation.
 
-  - Pixel-based and vector-based.
-  - Manual and semi-automatic.
+-   Pixel-based and vector-based.
+-   Manual and semi-automatic.
 
 Plugins: Simple Neurite Tracer, Segmentation Editor, VIB protocol, TrakEM2, Level Sets.
 
@@ -97,7 +101,8 @@ Introduction to Fiji programming in Java (this will be an add-on to the [advance
 
 Lead instructor: [Johannes Schindelin](Johannes_Schindelin )
 
-## Saturday
+Saturday
+--------
 
 ### Registration
 
@@ -105,6 +110,7 @@ Image registration: rigid, affine, elastic, maximal warping... ([Register Virtua
 
 Lead instructor: {% include person content='Iarganda' %}
 
-## Work sessions
+Work sessions
+-------------
 
 At the end of every day, there is time to apply what you learnt and go beyond that. You can process your own images and discuss results and methods with the instructors.

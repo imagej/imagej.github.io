@@ -13,23 +13,27 @@ description: test description
 {% endcapture %}
 {% include info-box software='ImageJ ' name='DS4H Image Alignment ' maintainer='DS4H ' author='Stefano Belli; Antonella Carbonaro; Filippo Piccinini ' source=source released='08/06/2019 ' latest-version='13/08/2019 ' status='stable ' category='[:Category:Registration](Category_Registration ) ' %}
 
-## Goal of the plugin
+Goal of the plugin
+------------------
 
 Align (i.e. co-register) 2D images
 
-![DS4H\_IA\_Modified\_TsujikawaCellReports2017.png](/images/pages/DS4H IA Modified TsujikawaCellReports2017.png "DS4H_IA_Modified_TsujikawaCellReports2017.png")
+![](/images/pages/DS4H IA Modified TsujikawaCellReports2017.png "DS4H_IA_Modified_TsujikawaCellReports2017.png")
 
-## Description
+Description
+-----------
 
 "Data Science for Health (DS4H) Image Alignment" is a user-friendly tool freely provided as an ImageJ/Fiji plugin. With DS4H Image Alignment, 2D images can be easily aligned (i.e. co-registered) by defining with a few clicks some well visible reference marks.
 
 The implemented least-squares method automatically approximates the solution of the mathematical overdetermined system, so to define the registration matrix then used for aligning the different images. It also considers rotations and scale changes in case of object dilation/shrink. Finally, it provides an iterative subroutine for a fine alignment, to easily reach a very good image co-registration quality.
 
-## Implementation
+Implementation
+--------------
 
 DS4H Image Alignment has been implemented in Java as a plugin for ImageJ/Fiji. It works with “.svs” files, but also all the medical imaging formats included in the [Bio-formats](Bio-formats ) library.
 
-## Download
+Download
+--------
 
 DS4H Image Alignment is freely available, together with a sample dataset and a video tutorial.
 
@@ -43,13 +47,15 @@ To install DS4H Image Alignment follow the instructions reported on the Video Tu
 
 {% include youtube url='https://www.youtube.com/embed/GliVW-g34EQ'%}
 
-## Reference
+Reference
+---------
 
 Please, when using/referring to "DS4H Image Alignment" in a scientific work, cite:
 
 "Jenny Bulgarelli, Marcella Tazzari\*, Anna Maria Granato, Laura Ridolfi, Serena Maiocchi, Francesco De Rosa, Massimiliano Petrini, Elena Pancisi, Giorgia Gentili, Barbara Vergani, Filippo Piccinini, Antonella Carbonaro, Biagio Eugenio Leone, Giovanni Foschi, Valentina Ancarani, Massimo Framarini, Massimo Guidoboni, "Dendritic cell vaccination in metastatic melanoma turns “non-T cell inflamed” into “T-cell inflamed” tumors". 2019."
 
-## License
+License
+-------
 
 Copyright (C) 2019, the Data Science for Health (DS4H) group. All rights reserved.
 
@@ -59,13 +65,15 @@ Image Alignment and the material available on the Image Alignment website is lic
 
 \- This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-## Acknowledgments
+Acknowledgments
+---------------
 
 We thanks all the University Students that helped in this project. In particular:
 
 \- (2019) Stefano Belli, Master's Degree Student in Computer Sciences, University of Bologna, Italy, email: stefano.belli4@studio.unibo.it
 
-## Contact Us
+Contact Us
+----------
 
 The Data Science for Health (DS4H) group:
 

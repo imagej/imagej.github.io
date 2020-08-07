@@ -7,41 +7,44 @@ categories: Tutorials
 description: test description
 ---
 
-## How to apply a common operation to a complete directory
+How to apply a common operation to a complete directory
+-------------------------------------------------------
 
 Often you want to apply a common operation to all images in a given directory. This tutorial tries to help you doing this. In addition, the [Script Editor](Script_Editor ) provides a template via {% include bc content='Templates | IJ1 Macro | Process Folder'%} that helps getting started quickly.
 
-## Step 1: record a macro
+Step 1: record a macro
+----------------------
 
 First, start the Macro Recorder:
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-1.jpg](/images/pages/How to apply a common operation to a complete directory-1.jpg "How_to_apply_a_common_operation_to_a_complete_directory-1.jpg")
+![](/images/pages/How to apply a common operation to a complete directory-1.jpg "How_to_apply_a_common_operation_to_a_complete_directory-1.jpg")
 
 This will open the Macro Recorder window:
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-2.jpg](/images/pages/How to apply a common operation to a complete directory-2.jpg "How_to_apply_a_common_operation_to_a_complete_directory-2.jpg")
+![](/images/pages/How to apply a common operation to a complete directory-2.jpg "How_to_apply_a_common_operation_to_a_complete_directory-2.jpg")
 
 Now perform the operation on a single image. Make sure that you save the image at the end.
 
 Exmaple: cropping the image. First, select a rectangle:
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-3.jpg](/images/pages/How to apply a common operation to a complete directory-3.jpg "How_to_apply_a_common_operation_to_a_complete_directory-3.jpg")
+![](/images/pages/How to apply a common operation to a complete directory-3.jpg "How_to_apply_a_common_operation_to_a_complete_directory-3.jpg")
 
 Then crop it.
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-4.jpg](/images/pages/How to apply a common operation to a complete directory-4.jpg "How_to_apply_a_common_operation_to_a_complete_directory-4.jpg")
+![](/images/pages/How to apply a common operation to a complete directory-4.jpg "How_to_apply_a_common_operation_to_a_complete_directory-4.jpg")
 
 After saving, the recorder window will show this:
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-6.jpg](/images/pages/How to apply a common operation to a complete directory-6.jpg "How_to_apply_a_common_operation_to_a_complete_directory-6.jpg")
+![](/images/pages/How to apply a common operation to a complete directory-6.jpg "How_to_apply_a_common_operation_to_a_complete_directory-6.jpg")
 
 Click on the **Create** button, and you will get this:
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-7.jpg](/images/pages/How to apply a common operation to a complete directory-7.jpg "How_to_apply_a_common_operation_to_a_complete_directory-7.jpg")
+![](/images/pages/How to apply a common operation to a complete directory-7.jpg "How_to_apply_a_common_operation_to_a_complete_directory-7.jpg")
 
-## Step 2: Make the macro generic
+Step 2: Make the macro generic
+------------------------------
 
-The problem now is that this macro contains the verbatim name of the file you saved, but of course, you do not want to save *all* the files in the direcotry as *clown.jpg*\!
+The problem now is that this macro contains the verbatim name of the file you saved, but of course, you do not want to save *all* the files in the direcotry as *clown.jpg*!
 
 The solution is to wrap the macro in a function which takes a *placeholder* for the file name. Let's call that function *action*:
 
@@ -69,7 +72,8 @@ Now, let's enhance the function so that it opens the image itself, and also clos
 
 The function takes three parameters now: the input and output directories and the file name. These need to be three parameters because the image should be saved into a different directory than the original came from (so that the output images will not be mistaken for input images in subsequent runs of the final macro).
 
-## Step 3: Iterating over all images in a given directory
+Step 3: Iterating over all images in a given directory
+------------------------------------------------------
 
 After defining the generic *action* function, you can call it on each image in an input directory:
 
@@ -104,7 +108,8 @@ Sometimes, ImageJ can get confused when it has to open or close windows and perf
 
 setBatchMode(false);
 
-## Alternative: Multiple Image Processor
+Alternative: Multiple Image Processor
+-------------------------------------
 
 If your macro does not use the actual name of the image (as e.g. the Image Calculator does), you can use the *Multiple Image Processor* plugin.
 
@@ -117,10 +122,10 @@ In our case, the file would simply contain these lines:
 
 Find the *Multiple ImageProcessor* plugin in the *Process* menu:
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-8.jpg](/images/pages/How to apply a common operation to a complete directory-8.jpg "How_to_apply_a_common_operation_to_a_complete_directory-8.jpg")
+![](/images/pages/How to apply a common operation to a complete directory-8.jpg "How_to_apply_a_common_operation_to_a_complete_directory-8.jpg")
 
 The dialog would need to be filled out like this:
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-9.jpg](/images/pages/How to apply a common operation to a complete directory-9.jpg "How_to_apply_a_common_operation_to_a_complete_directory-9.jpg")
+![](/images/pages/How to apply a common operation to a complete directory-9.jpg "How_to_apply_a_common_operation_to_a_complete_directory-9.jpg")
 
 

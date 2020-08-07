@@ -9,12 +9,14 @@ description: test description
 
 This page describes the full program for the [2015 ImageJ User & Developer Conference](Conference_2015 ).
 
-## Program
+Program
+-------
 
 TODO GOOGLE SPREADSHEET WIDGET {% include clear%}
 
 
-## Keynote presentations
+Keynote presentations
+---------------------
 
 There were four 45-minute keynote presentations.
 
@@ -34,7 +36,8 @@ There were four 45-minute keynote presentations.
 
 \[ [Presentation video](https://vimeo.com/140098839/) \]
 
-## Featured presentations
+Featured presentations
+----------------------
 
 Three lightning talks were selected as featured presentations, with elongated presentation times.
 
@@ -56,7 +59,8 @@ The Thin Plate Spline is an established method to yield a smooth non-rigid trans
 
 \[ [Presentation slides](http://conference.imagej.net/2015/john-bogovic/2015_imagej.pptx) \] \[ [Presentation video](https://vimeo.com/140929688/) \]
 
-## Lightning talks
+Lightning talks
+---------------
 
 The lightning talks will be 10-minute presentations including time for questions.
 
@@ -68,7 +72,7 @@ Plant organs such as stems are composed of tissues containing thick and thin-wal
 
 ### Fabrice de Chaumont - Yet another ImageJ friend: Icy
 
-[Icy](Icy ) is a free open-source bio-image analysis software. During its 3 years of life it has been continuously improved and continuously brings new features to users and developers. Today Icy is used by more than one thousands of regular users which appreciate its intuitive GUI, its ray-traced 3D visualization and its cutting-edge analysis methods. Users can also adapt and create new algorithms with script and the graphical programming protocol designer and store them on the Icy website which centralize all resources (http://icy.bioimageanalysis.org). Thus it makes available plug-ins, protocols and scripts to everybody. Centralization also allows searching directly from within the application for specific features and enables it in a one-click install. During the last months, Icy has received news exciting features: revisited 3D rendering based on latest VTK version and a new powerful Undo framework. Finally, Icy is always evolving, thanks to the feedback of all its users on http://icy.bioimageanalysis.org/support \!
+[Icy](Icy ) is a free open-source bio-image analysis software. During its 3 years of life it has been continuously improved and continuously brings new features to users and developers. Today Icy is used by more than one thousands of regular users which appreciate its intuitive GUI, its ray-traced 3D visualization and its cutting-edge analysis methods. Users can also adapt and create new algorithms with script and the graphical programming protocol designer and store them on the Icy website which centralize all resources (http://icy.bioimageanalysis.org). Thus it makes available plug-ins, protocols and scripts to everybody. Centralization also allows searching directly from within the application for specific features and enables it in a one-click install. During the last months, Icy has received news exciting features: revisited 3D rendering based on latest VTK version and a new powerful Undo framework. Finally, Icy is always evolving, thanks to the feedback of all its users on http://icy.bioimageanalysis.org/support !
 
 {% include publication content='Icy' %}
 
@@ -118,8 +122,8 @@ Our algorithm is implemented in Java as an [ImageJ](ImageJ ) plugin which runs o
 
 **Acknowledgments:** This work has been supported by NIST. We would like to acknowledge the team members of the computational science in biological metrology project at NIST for providing invaluable inputs to our work.
 
-  - \[1\] C. Kuglin and D. Hines, "The Phase Correlation Image Alignement Method," in Proceedings of the 1975 IEEE International Conference on Cybernetics and Society, 1975, pp. 163–165.
-  - \[2\] M. Frigo and S. Johnson, "The Design and Implementation of {FFTW3}," Proc. IEEE, vol. 93, no. 2, pp. 216–231, 2005.
+-   \[1\] C. Kuglin and D. Hines, "The Phase Correlation Image Alignement Method," in Proceedings of the 1975 IEEE International Conference on Cybernetics and Society, 1975, pp. 163–165.
+-   \[2\] M. Frigo and S. Johnson, "The Design and Implementation of {FFTW3}," Proc. IEEE, vol. 93, no. 2, pp. 216–231, 2005.
 
 \[ [MIST source code](https://github.com/NIST-ISG/MIST), [MIST project page](https://isg.nist.gov/deepzoomweb/resources/csmet/pages/image_stitching/image_stitching.html) \] \[ [Presentation video](https://vimeo.com/140929697/) \]
 
@@ -181,7 +185,8 @@ Telomeres are regions of repetitive nucleotide sequences located at the ends of 
 
 \[ [Presentation slides](http://conference.imagej.net/2015/aryeh-weiss/ij2015telomere-A.ppt) \] \[ [Presentation video](https://vimeo.com/140929694/) \]
 
-## Workshops
+Workshops
+---------
 
 The workshops are one-to-two hour blocks which help users to explore topics interactively and in depth.
 
@@ -201,9 +206,9 @@ The workshop will give a short introduction on the influence of contrast adjustm
 
 \[ [Presentation Video](https://vimeo.com/140929696/) \]
 
-### Fabrice de Chaumont and Stephane Dallongeville - Hands on Icy \!
+### Fabrice de Chaumont and Stephane Dallongeville - Hands on Icy !
 
-In this practical workshop, discover how to use [Icy](Icy ) to watch and analyse your images \! During this session, we will see the different functionalities of Icy in action, from visualization (2D/3D) to analysis based on a real biologic case with a lot of analysis traps \! Let's investigate \!
+In this practical workshop, discover how to use [Icy](Icy ) to watch and analyse your images ! During this session, we will see the different functionalities of Icy in action, from visualization (2D/3D) to analysis based on a real biologic case with a lot of analysis traps ! Let's investigate !
 
 {% include publication content='Icy' %}
 
@@ -218,9 +223,7 @@ The [scripting](scripting ) capabilities of [ImageJ](ImageJ ) play a pivotal rol
 1.  An updated installation of Fiji
 2.  An internet connection, required for download of sample images and browsing of http://javadoc.imagej.net
 
-<!-- end list -->
-
-  - NB: If you subscribe to the ImageJ-dev update site, ensure that your Image1 version is at least 1.50a (the ImageJ-dev update site may bundle an outdated version of ImageJ1). To do so, use the ImageJ1 command {% include bc content='Help |Update ImageJ...'%}
+NB: If you subscribe to the ImageJ-dev update site, ensure that your Image1 version is at least 1.50a (the ImageJ-dev update site may bundle an outdated version of ImageJ1). To do so, use the ImageJ1 command {% include bc content='Help |Update ImageJ...'%}  
 
 \[ [Presentation video](https://vimeo.com/140099767/) \]
 
@@ -228,9 +231,9 @@ The [scripting](scripting ) capabilities of [ImageJ](ImageJ ) play a pivotal rol
 
 In this workshop, we will outline and demonstrate the [OMERO](OMERO ) platform, and show how you can use it to work with your microscopy and/or HCS data. In addition we will demonstrate some of the applications that have been released by OME and some of the integration with 3rd party tools, including:
 
-  - OMERO.figure - fast figures from your OMERO images
-  - [ImageJ](ImageJ ) - improved interaction with OMERO
-  - [Micro-Manager](Micro-Manager ) - how to import directly images to OMERO
+-   OMERO.figure - fast figures from your OMERO images
+-   [ImageJ](ImageJ ) - improved interaction with OMERO
+-   [Micro-Manager](Micro-Manager ) - how to import directly images to OMERO
 
 We've designed OMERO to be as flexible as possible, and this has enabled its use in a range of imaging domains, including light and electron microscopy, high content screening. Come along to the workshop and bring your favourite data.
 
@@ -284,12 +287,13 @@ This workshop assumes no prior knowledge of image processing, and is designed to
 
 **Workshop requirements:**
 
-  - An installation of [ImageJ](ImageJ ) or [Fiji](Fiji )
-  - The [sample data](http://conference.imagej.net/2015/aryeh-weiss/stk_0001_Result%20of%20cftr-wt1.avi.zip) downloaded to your local computer
+-   An installation of [ImageJ](ImageJ ) or [Fiji](Fiji )
+-   The [sample data](http://conference.imagej.net/2015/aryeh-weiss/stk_0001_Result%20of%20cftr-wt1.avi.zip) downloaded to your local computer
 
 \[ [Presentation video](https://vimeo.com/140929692/) \]
 
-## Posters
+Posters
+-------
 
 Posters will be available to browse at any time throughout the conference. There will also be a dedicated poster session on Thursday evening during the reception.
 
@@ -325,7 +329,7 @@ We have developed a standardized method for morphological staining of liver sect
 
 ### Fabrice de Chaumont - Icy: an open source software for image analysis
 
-In this poster we present a panel of Icy's features. Live demo based on your images, and we will try to process them thanks to one of the 300 image analysis plugins available in Icy \!
+In this poster we present a panel of Icy's features. Live demo based on your images, and we will try to process them thanks to one of the 300 image analysis plugins available in Icy !
 
 {% include publication content='Icy' %}
 
@@ -367,8 +371,8 @@ Our algorithm is implemented in Java as an [ImageJ](ImageJ ) plugin which runs o
 
 **Acknowledgments:** This work has been supported by NIST. We would like to acknowledge the team members of the computational science in biological metrology project at NIST for providing invaluable inputs to our work.
 
-  - \[1\] C. Kuglin and D. Hines, "The Phase Correlation Image Alignement Method," in Proceedings of the 1975 IEEE International Conference on Cybernetics and Society, 1975, pp. 163–165.
-  - \[2\] M. Frigo and S. Johnson, "The Design and Implementation of {FFTW3}," Proc. IEEE, vol. 93, no. 2, pp. 216–231, 2005.
+-   \[1\] C. Kuglin and D. Hines, "The Phase Correlation Image Alignement Method," in Proceedings of the 1975 IEEE International Conference on Cybernetics and Society, 1975, pp. 163–165.
+-   \[2\] M. Frigo and S. Johnson, "The Design and Implementation of {FFTW3}," Proc. IEEE, vol. 93, no. 2, pp. 216–231, 2005.
 
 ### Jeffrey Murphy - Untitled
 
@@ -398,7 +402,7 @@ The necessity to make large volumetric datasets available for interactive visual
 
 It provides efficient implementations of common data types, storage layouts, and algorithms. [ImgLib2](ImgLib2 ) is the data model underlying [ImageJ2](ImageJ2 ), the [KNIME Image Processing toolbox](https://tech.knime.org/community/image-processing), the [BigDataViewer](BigDataViewer ), and an increasing number of Fiji-Plugins.
 
-[ImgLib2](ImgLib2 ) is licensed under [BSD](https://github.com/imglib/imglib2/blob/master/LICENSE.txt). Documentation and source code are available at http://imglib2.net and in a public source code repository at [GitHub](https://github.com/imglib/imglib2).
+[ImgLib2](ImgLib2 ) is licensed under [BSD](https://github.com/imglib/imglib2/blob/master/LICENSE.txt). Documentation and source code are available at [http://imglib2.net](http://imglib2.net) and in a public source code repository at [GitHub](https://github.com/imglib/imglib2).
 
 \[ [Poster](https://www.dropbox.com/s/f23tr3q607dxvlh/imglib2-imagej2015.pdf?dl=0) \]
 

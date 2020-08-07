@@ -19,36 +19,40 @@ description: test description
 {% capture source%}
 {% include github org='ijpb ' repo='ijpb-plugins ' %}
 {% endcapture %}
-{% include info-box name='Marker-controlled Watershed ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ ) v1.4.1) ' status='stable, active ' category='[Segmentation](Category_Segmentation ), [Mathematical morphology](Category_Mathematical_morphology ) ' %}{| |style="vertical-align:top" |{% include thumbnail src='/images/pages/Watershed-flooding-markers-blobs-gradient.gif' title='Marker-controlled flooding on the gradient image of the blobs sample.'%} |}
+{% include info-box name='Marker-controlled Watershed ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ ) v1.4.1) ' status='stable, active ' category='[Segmentation](Category_Segmentation ), [Mathematical morphology](Category_Mathematical_morphology ) ' %}{\| \|<span>  
+</span>style="vertical-align:top" \|{% include thumbnail src='/images/pages/Watershed-flooding-markers-blobs-gradient.gif' title='Marker-controlled flooding on the gradient image of the blobs sample.'%} \|}
 
-## Introduction
+Introduction
+------------
 
 Marker-controlled Watershed is an ImageJ/Fiji plugin to segment grayscale images of any type (8, 16 and 32-bit) in 2D and 3D based on the marker-controlled watershed algorithm (Meyer and Beucher, 1990). This algorithm considers the input image as a topographic surface (where higher pixel values mean higher altitude) and simulates its flooding from specific seed points or **markers**. A common choice for the markers are the local minima of the gradient of the image, but the method works on any specific marker, either selected manually by the user or determined automatically by another algorithm.
 
-## Usage
+Usage
+-----
 
 {% include thumbnail src='/images/pages/Marker-controlled-Watershed-dialog.png' title='Main dialog of the Marker-controlled Watershed plugin'%} Marker-controlled Watershed needs at least two images to run:
 
-  - The **Input** image: a 2D or 3D grayscale image to flood, usually the gradient of an image.
-  - The **Marker** image: an image of the same dimensions as the input containing the seed points or markers as connected regions of voxels, each of them with a different label. They correspond usually to the local minima of the input image, but they can be set arbitrarily.
+-   The **Input** image: a 2D or 3D grayscale image to flood, usually the gradient of an image.
+-   The **Marker** image: an image of the same dimensions as the input containing the seed points or markers as connected regions of voxels, each of them with a different label. They correspond usually to the local minima of the input image, but they can be set arbitrarily.
 
 And it can optionally admit a third image:
 
-  - The **Mask** image: a binary image of the same dimensions as input and marker which can be used to restrict the areas of application of the algorithm. Set to "None" to run the method on the whole input image.
+-   The **Mask** image: a binary image of the same dimensions as input and marker which can be used to restrict the areas of application of the algorithm. Set to "None" to run the method on the whole input image.
 
 Rest of parameters:
 
-  - **Binary markers**: select to specify that markers are binary and need to be labeled.
-  - **Calculate dams**: select to enable the calculation of watershed lines.
-  - **Use diagonal connectivity**: select to allow the flooding in diagonal directions.
+-   **Binary markers**: select to specify that markers are binary and need to be labeled.
+-   **Calculate dams**: select to enable the calculation of watershed lines.
+-   **Use diagonal connectivity**: select to allow the flooding in diagonal directions.
 
 Output:
 
-  - Labeled image containing the catchment basins and (optionally) watershed lines (dams).
+-   Labeled image containing the catchment basins and (optionally) watershed lines (dams).
 
 {% include thumbnail src='/images/pages/Arabidopsis-nucleus-segmentation.png' title='Example of marker-controlled watershed segmentation on nucleus of \'\'Arabidopsis thaliana\'\' (image courtesy of Kaori Sakai and Javier Arpon, INRA-Versailles)'%}
 
-## Installation
+Installation
+------------
 
 The Marker-controlled Watershed plugin is part of the [MorphoLibJ](MorphoLibJ ) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites ) the IJPB-plugins update site:
 
@@ -64,23 +68,26 @@ You should now find the plugin under the sub-menu {% include bc content='Plugins
 
 **Note**: Marker-controlled Watershed is only one of the plugins included in the [MorphoLibJ](MorphoLibJ ) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
-## References
+References
+----------
 
 1.  Fernand Meyer and Serge Beucher. "Morphological segmentation." Journal of visual communication and image representation 1.1 (1990): 21-46.
 2.  Soille, P., "Morphological Image Analysis: Principles and Applications", Springer-Verlag, 1999, pp. 170-171.
 3.  David Legland, Ignacio Arganda-Carreras, Philippe Andrey; [MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ](http://bioinformatics.oxfordjournals.org/content/early/2016/07/19/bioinformatics.btw413). Bioinformatics 2016; 32 (22): 3532-3534. doi: 10.1093/bioinformatics/btw413
 
-## See also
+See also
+--------
 
-  - [Interactive Marker-controlled Watershed](Interactive_Marker-controlled_Watershed ), same idea as this plugin but with user-defined seed points.
-  - [Morphological Segmentation](Morphological_Segmentation ), a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
-  - [Classic Watershed](Classic_Watershed ), plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
-  - [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
-  - [G. Bertrand's Topological Watershed site](http://www.esiee.fr/~info/tw/index.html), with papers, lecture slides and source code.
+-   [Interactive Marker-controlled Watershed](Interactive_Marker-controlled_Watershed ), same idea as this plugin but with user-defined seed points.
+-   [Morphological Segmentation](Morphological_Segmentation ), a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
+-   [Classic Watershed](Classic_Watershed ), plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
+-   [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
+-   [G. Bertrand's Topological Watershed site](http://www.esiee.fr/~info/tw/index.html), with papers, lecture slides and source code.
 
-## License
+License
+-------
 
-This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
+This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 

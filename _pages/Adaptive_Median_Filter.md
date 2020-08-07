@@ -13,7 +13,8 @@ description: test description
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji ' name='Adaptive Median Filter ' maintainer=' [Weisong Zhao](https://weisongzhao.github.io/) ' author=author filename='Adaptive\_Median\_Filter-0.1.0.jar [\[1](https://github.com/WeisongZhao/AdaptiveMedian.imagej/releases//latest) \] ' source='GitHub [\[2](https://github.com/jumpfunky/ij-nl-means) \] ' latest-version='v0.1.0 (18 Feb 2019) ' status='Maintaining ' category='[Plugins](Plugins ) ' %}
 
-## Motivation
+Motivation
+----------
 
 Confocal type images often exhibit isolated pixels (1×1 \~ 5×5) with extremely bright values caused by voltage instability or dead or hot camera pixels. The magnitudes of these pixels are approximately 5 to 100 times higher than the normal intensity amplitudes of the biostructure. These isolated pixels are ill-suited for the post analyse or processing. We created an adaptive median filter to remove these improper pixels. More specifically, instead of the normal median filter, which replaces each pixel with the median of the neighboring pixels in the window, we set a threshold for our developed adaptive median filter. If the pixel intensity is larger than threshold × median in the window, the pixel is replaced by the median; otherwise, the window moves to the next pixel. By using this method, we can filter the isolated pixels without blurring the images.
 
@@ -21,11 +22,12 @@ Also, the uncleaned slides can lead to this problem.
 
 This plugin ***Adaptive Median Filter*** (AMF) will handle this type of problems easily without any blurring or re-doing experiments.
 
-## Installation
+Installation
+------------
 
-1\. Add the [Adaptive\_Median\_Filter-0.1.0.jar](https://github.com/WeisongZhao/AdaptiveMedian.imagej/releases/download/v0.1.0/Adaptive_Median_Filter-0.1.0.jar) to your imageJ plugin folder as usual and it will show up in ***Process -\> Adaptive median filter***:
+1\. Add the [Adaptive\_Median\_Filter-0.1.0.jar](https://github.com/WeisongZhao/AdaptiveMedian.imagej/releases/download/v0.1.0/Adaptive_Median_Filter-0.1.0.jar) to your imageJ plugin folder as usual and it will show up in ***Process -&gt; Adaptive median filter***:
 
-`                                 `![`AMF_plugin.png`](/images/pages/AMF plugin.png "AMF_plugin.png")
+`                                 `![`AMF_plugin.png`](/images/pages/AMF plugin.png "fig:AMF_plugin.png")
 
 The window and weight to filter the pulse pixels. Radius should be odd **3, 5 or 7**. Threshold should be **2\~20**.
 
@@ -35,7 +37,8 @@ If you save the image sequence (one by one) in windows (or Unix system), the ima
 
 Basic useage of AMF is just like the classic ***Median filter***.
 
-## Plans
+Plans
+-----
 
 The padarray of image edge;
 
