@@ -21,11 +21,11 @@ General Description
 Technical Explanations
 ----------------------
 
-This image registration algorithm is based on the minimization of an energy functional that includes the dissimilarity between the source and target images -in both directions- $$*E*<sub>*i**m**g*</sub>$$, an optional landmark constraint $$*E*<sub>*μ*</sub>$$, a regularization term $$(*E*<sub>*d**i**v*</sub> + *E*<sub>*r**o**t*</sub>)$$, and an energy term $$*E*<sub>*c**o**n**s*</sub>$$ that accounts for the geometrical consistency between the elastic deformation in both directions. Namely, the energy function is given by
+This image registration algorithm is based on the minimization of an energy functional that includes the dissimilarity between the source and target images -in both directions- $$E_{img}$$, an optional landmark constraint $$E_{\mu}$$, a regularization term $$(E_{div} + E_{rot})$$, and an energy term $$E_{cons}$$ that accounts for the geometrical consistency between the elastic deformation in both directions. Namely, the energy function is given by
 
   
   
-$$*E* = *w*<sub>*i*</sub>*E*<sub>*i**m**g*</sub> + *w*<sub>*μ*</sub>*E*<sub>*μ*</sub> + (*w*<sub>*d*</sub>*E*<sub>*d**i**v*</sub> + *w*<sub>*r*</sub>*E*<sub>*r**o**t*</sub>) + *w*<sub>*c*</sub>*E*<sub>*c**o**n**s*</sub>$$
+$$ E = w_iE_{img} + w_{\mu}E_{\mu} + (w_dE_{div} + w_rE_{rot}) + w_cE_{cons} $$
 
 Where the weights of every term are set by the user in the main window of the plugin. The optimization process is a [Levenberg-Marquardt](https://en.wikipedia.org/wiki/Levenberg%E2%80%93Marquardt_algorithm) minimization enhanced by a [Broyden-Fletcher-Goldfarb-Shanno (BFGS)](https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm) estimate of the local Hessian of the goal function, and both, images and deformations are represented by [cubic B-splines](https://en.wikipedia.org/wiki/B-spline).
 

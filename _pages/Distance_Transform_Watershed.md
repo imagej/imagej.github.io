@@ -43,7 +43,7 @@ The plugin parameters are divided between the distance transform and the watersh
     -   **Distances**: allows selecting among a pre-defined set of weights that can be used to compute the distance transform using Chamfer approximations of the Euclidean metric. They affect the location but specially the shape of the border in the final result. The options are:
         -   **Chessboard (1,1)**: weight equal to 1 for all neighbors.
         -   **City-Block (1,2)**: weights 1 for orthogonal neighbors and 2 for diagonal neighbors.
-        -   **Quasi-Euclidean (1,1.41)**: weights 1 for orthogonal neighbors and $$$\\sqrt{2}$$$ for diagonal neighbors.
+        -   **Quasi-Euclidean (1,1.41)**: weights 1 for orthogonal neighbors and $$\sqrt{2}$$ for diagonal neighbors.
         -   **Borgefors (3,4)**: weights 3 for orthogonal neighbors and 4 for diagonal neighbors (best approximation of Euclidean distance for 3-by-3 masks).
         -   **Weights (2,3)**: weights 2 for orthogonal neighbors and 3 for diagonal neighbors.
         -   **Weights (5,7)**: weights 5 for orthogonal neighbors and 7 for diagonal neighbors.
@@ -71,7 +71,7 @@ The parameters are the same as in the 2D version but some of them are adapted fo
     -   **Distances**: Now the available options are:
         -   **Chessboard (1,1,1)**: weight equal to 1 for all neighbors.
         -   **City-Block (1,2,3)**: weights 1 for orthogonal neighbors, 2 for diagonal neighbors and 3 for cube-diagonals.
-        -   **Quasi-Euclidean (1,1.41,1.73)**: weights 1 for orthogonal neighbors, $$$\\sqrt{2}$$$ for diagonal neighbors and $$$\\sqrt{3}$$$ for cube-diagonals.
+        -   **Quasi-Euclidean (1,1.41,1.73)**: weights 1 for orthogonal neighbors, $$\sqrt{2}$$ for diagonal neighbors and $$\sqrt{3}$$ for cube-diagonals.
         -   **Borgefors (3,4,5)**: weights 3 for orthogonal neighbors, 4 for diagonal neighbors and 5 for cube-diagonals (best approximation of Euclidean distance for 3-by-3-by-3 masks).
     -   **Output type**: 16 or 32-bit, to calculate distance with short or float precision.
     -   **Normalize weights**: indicates whether the resulting distance map should be normalized (divide distances by the first Chamfer weight).

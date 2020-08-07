@@ -1417,7 +1417,7 @@ Creating a derivative of a function
 
 The derivative of a function:
 
-$$$D f(x) = f'(x) = \\lim\_{dx\\rightarrow 0}\\frac{f(x + dx) - f(x)}{dx}$$$
+$$ D f(x) = f'(x) = \lim_{dx\rightarrow 0}\frac{f(x + dx) - f(x)}{dx} $$
 
 We can approximate the derivative by choosing an arbitrarily precise value of the increment <i>dx</i>.
 

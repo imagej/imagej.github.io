@@ -18,7 +18,7 @@ Registration Explorer
 
 Clicking **Registration Explorer (on/off)** will open up a new window listing all transformations that are currently applied to the selected view (groups).
 
-Each **Transformation** consists of a 3x4 matrix (3D affine transformation + translation), of which all entries $$*m*<sub>*r**o**w*, *c**o**l**u**m**n*</sub>$$ are listed in this window.
+Each **Transformation** consists of a 3x4 matrix (3D affine transformation + translation), of which all entries $$m_{row, column}$$ are listed in this window.
 
 Note that the final transformation of a view is determined by applying the individual transformations **last-to-first**.
 

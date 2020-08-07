@@ -287,19 +287,19 @@ In 2D, the **isoperimetric deficit index** (or "shape factor", or "circularity")
 
   
   
-$$$circularity=4\\pi\\frac{A}{P^{2}}$$$
+$$circularity=4\pi\frac{A}{P^{2}}$$
 
-While values of circularity range theoretically within the interval $$\[0; 1\]$$, the measurements errors of the perimeter may produce circularity values above 1 (Lehmann *et al.*, 2012[12]). The MorphoLibJ library also considers the inverse of the circularity, referred to as "elongation index". The values of elongation range from 1 for round particles and increase for elongated particles.
+While values of circularity range theoretically within the interval $$[0;1]$$, the measurements errors of the perimeter may produce circularity values above 1 (Lehmann *et al.*, 2012[12]). The MorphoLibJ library also considers the inverse of the circularity, referred to as "elongation index". The values of elongation range from 1 for round particles and increase for elongated particles.
 
   
   
-$$$elongation    =   \\frac{P^{2}}{4\\pi\\cdot A}$$$
+$$elongation = \frac{P^{2}}{4\pi\cdot A}$$
 
 In 3D, the **sphericity index** can be defined as the ratio of the squared volume over the cube of the surface area, normalized such that the value for a ball equals one:
 
   
   
-$$$sphericity    =   36\\pi\\frac{V^{2}}{S^{3}}$$$
+$$sphericity = 36\pi\frac{V^{2}}{S^{3}}$$
 
 #### Inertia ellipse and ellipsoid
 
@@ -320,8 +320,8 @@ The **global geometry** of particles in 2D images can be characterized with the 
 -   **Label**: the label of the particle measured on the current line (it can be different from the row number if some labels do no exist in original image).
 -   **Area**: the number of pixels within each region, multiplied by the area of each pixel.
 -   **Perimeter**: an estimate of the perimeter, using the {% include wikipedia title='Crofton formula' text='Crofton formula'%}.
--   **Circularity** the normalized ratio of area by the square of the perimeter: $$4*π* ⋅ *A*/*p*<sup>2</sup>$$. The value should be comprised between 0 (very elongated) and 1 (close to circular). Values superior to 1 may appear due to discretization effect.
--   **Elongation**: the normalized ratio of the square of the perimeter by the area : $$*p*<sup>2</sup>/(4*π*⋅*A*)$$, corresponding to the inverse of the circularity. The values range from 1 (round), and increase with elongation of the particle.
+-   **Circularity** the normalized ratio of area by the square of the perimeter: $$4\pi\cdot A/p^{2}$$. The value should be comprised between 0 (very elongated) and 1 (close to circular). Values superior to 1 may appear due to discretization effect.
+-   **Elongation**: the normalized ratio of the square of the perimeter by the area : $$p^{2}/\left(4\pi\cdot A\right)$$, corresponding to the inverse of the circularity. The values range from 1 (round), and increase with elongation of the particle.
 
 ##### Largest inscribed circle or ball
 
@@ -354,7 +354,7 @@ The plugin calculating these measurements is found under {% include bc content='
 -   **Bounding box**: the minimal and maximal coordinates in each direction for each label.
 -   **Volume**: computes the number of voxels comprising the particle, multiplied by the volume of an individual voxel.
 -   **Surface area**: the surface area computed using a discretized version of the {% include wikipedia title='Crofton\_formula' text='Crofton formula'%}, that computes intersections with line grids of various orientations (currently either 3 or 13).
--   **Sphericity index**: defined as $$36*π**V*<sup>2</sup>/*S*<sup>3</sup>$$.
+-   **Sphericity index**: defined as $$36\pi V^{2}/S^{3}$$.
 -   **Inertia ellipse / ellipsoid**: returns the centroid (center of gravity) as well as the size and the orientation of the inertia ellipse or ellipsoid of each particle. Radii are sorted in decreasing order. Angles are given in degrees, and correspond to the azimut ("yaw"), the elevation ("pitch"), and the roll around the main axis.
 
 ### Intensity measurements
@@ -365,67 +365,67 @@ The plugin calculates the **mean**, **standard deviation**, **maximum**, **minim
 
 ### Label Overlap Measures
 
-Given two label images, there are different measures that allow us to evaluate the overlap agreement (or error) between the labels. Following Tustison & Gee (2009)&lt;ref name="Tustison2009&gt;{% include cite content='journal' title='Introducing Dice, Jaccard, and other label overlap measures to ITK ' author='Tustison, NJ and Gee, JC ' journal='The Insight Journal ' pages='1-4 ' issue='July-December ' year='2009 ' doi='10.1007/BF01189221 ' %}</ref>, and given a source image $$*S*$$ and a target image $$*T*$$, this plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Label Overlap Measures'%}) provides the following overlap measurements in two different result tables (one with the total values for all labels and one with values for individual labels):
+Given two label images, there are different measures that allow us to evaluate the overlap agreement (or error) between the labels. Following Tustison & Gee (2009)&lt;ref name="Tustison2009&gt;{% include cite content='journal' title='Introducing Dice, Jaccard, and other label overlap measures to ITK ' author='Tustison, NJ and Gee, JC ' journal='The Insight Journal ' pages='1-4 ' issue='July-December ' year='2009 ' doi='10.1007/BF01189221 ' %}</ref>, and given a source image $$S$$ and a target image $$T$$, this plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Label Overlap Measures'%}) provides the following overlap measurements in two different result tables (one with the total values for all labels and one with values for individual labels):
 
--   Target Overlap for each individual labeled region $$*r*$$:
+-   Target Overlap for each individual labeled region $$r$$:
 
   
-$$$TO\_{r}=\\frac{\|S\_{r}\\cap T\_{r}\|}{\|T\_{r}\|}$$$
+$$TO_{r}=\frac{|S_{r}\cap T_{r}|}{|T_{r}|}$$
 
 -   Total Overlap (for all regions):
 
   
-$$$TO=\\frac{\\sum\_{r}{\|S\_{r}\\cap T\_{r}\|}}{\\sum\_{r}{\|T\_{r}\|}}$$$
+$$TO=\frac{\sum_{r}{|S_{r}\cap T_{r}|}}{\sum_{r}{|T_{r}|}}$$
 
--   [Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index) or Union Overlap for each individual labeled region $$*r*$$:
+-   [Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index) or Union Overlap for each individual labeled region $$r$$:
 
   
-$$$UO\_{r}=\\frac{\|S\_{r}\\cap T\_{r}\|}{\|S\_{r}\\cup T\_{r}\|}$$$
+$$UO_{r}=\frac{|S_{r}\cap T_{r}|}{|S_{r}\cup T_{r}|}$$
 
 -   [Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index) or Union Overlap for all regions:
 
   
-$$$UO=\\frac{\\sum\_{r}\|S\_{r}\\cap T\_{r}\|}{\\sum\_{r}\|S\_{r}\\cup T\_{r}\|}$$$
+$$UO=\frac{\sum_{r}|S_{r}\cap T_{r}|}{\sum_{r}|S_{r}\cup T_{r}|}$$
 
--   [Dice Coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient) or Mean Overlap for each individual labeled region $$*r*$$:
+-   [Dice Coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient) or Mean Overlap for each individual labeled region $$r$$:
 
   
-$$$MO\_{r}=2\\frac{\|S\_{r}\\cap T\_{r}\|}{\|S\_{r}\|+\|T\_{r}\|}$$$
+$$MO_{r}=2\frac{|S_{r}\cap T_{r}|}{|S_{r}|+|T_{r}|}$$
 
 -   [Dice Coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient) or Mean Overlap for all regions:
 
   
-$$$MO=2\\frac{\\sum\_{r}\|S\_{r}\\cap T\_{r}\|}{\\sum\_{r}\\left(\|S\_{r}\|+\|T\_{r}\|\\right)}$$$
+$$MO=2\frac{\sum_{r}|S_{r}\cap T_{r}|}{\sum_{r}\left(|S_{r}|+|T_{r}|\right)}$$
 
--   Volume Similarity for each individual labeled region $$*r*$$:
+-   Volume Similarity for each individual labeled region $$r$$:
 
   
-$$$VS\_{r}=2\\frac{\|S\_{r}\|-\|T\_{r}\|}{\|S\_{r}\|+\|T\_{r}\|}$$$
+$$VS_{r}=2\frac{|S_{r}|-|T_{r}|}{|S_{r}|+|T_{r}|}$$
 
 -   Volume Similarity for all regions:
 
   
-$$$VS=2\\frac{\\sum\_{r}\\left(\|S\_{r}\|-\|T\_{r}\|\\right)}{\\sum\_{r}\\left(\|S\_{r}\|+\|T\_{r}\|\\right)}$$$
+$$VS=2\frac{\sum_{r}\left(|S_{r}|-|T_{r}|\right)}{\sum_{r}\left(|S_{r}|+|T_{r}|\right)}$$
 
--   False Negative Error for each individual labeled region $$*r*$$:
+-   False Negative Error for each individual labeled region $$r$$:
 
   
-$$$FN\_{r}=\\frac{\|T\_{r}\\setminus S\_{r}\|}{\|T\_{r}\|}$$$
+$$FN_{r}=\frac{|T_{r}\setminus S_{r}|}{|T_{r}|}$$
 
 -   False Negative Error for all regions:
 
   
-$$$FN=\\frac{\\sum\_{r}\|T\_{r}\\setminus S\_{r}\|}{\\sum\_{r}\|T\_{r}\|}$$$
+$$FN=\frac{\sum_{r}|T_{r}\setminus S_{r}|}{\sum_{r}|T_{r}|}$$
 
--   False Positive Error for each individual labeled region $$*r*$$:
+-   False Positive Error for each individual labeled region $$r$$:
 
   
-$$$FP\_{r}=\\frac{\|S\_{r}\\setminus T\_{r}\|}{\|S\_{r}\|}$$$
+$$FP_{r}=\frac{|S_{r}\setminus T_{r}|}{|S_{r}|}$$
 
 -   False Positive Error for all regions:
 
   
-$$$FP=\\frac{\\sum\_{r}\|S{}\_{r}\\setminus T{}\_{r}\|}{\\sum\_{r}\|S\_{r}\|}$$$
+$$FP=\frac{\sum_{r}|S{}_{r}\setminus T{}_{r}|}{\sum_{r}|S_{r}|}$$
 
 ### Spatial organization
 

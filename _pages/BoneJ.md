@@ -62,7 +62,7 @@ Menu path *Plugins &gt; BoneJ &gt; Anisotropy*.
 
 Anisotropy is used to quantify the directionality of trabecular bone. It tells whether the trabeculae have a certain orientation, or if they're randomly aligned. The method to measure anisotropy is fairly complex and consists of multiple steps:
 
-1.  Find mean intercept length (MIL) vectors from $$*n*$$ directions
+1.  Find mean intercept length (MIL) vectors from $$n$$ directions
 2.  Plot MIL vectors into a point cloud
 3.  Solve the equation of an ellipsoid that best fits the point cloud
 4.  Calculate the degree of anisotropy from the radii of the ellipsoid
@@ -71,13 +71,13 @@ It's important to note that algorithm is stochastic and does not guarantee exact
 
 ![150 px\|The red dots mark phase changes](/images/pages/PhaseChanges.png "150 px|The red dots mark phase changes")
 
-In the first step the algorithm draws parallel lines over the input image in direction $$**v**$$. The direction is chosen randomly. Each line segment in the image stack is sampled to find points where it changes from background to foreground, i.e. where the line enters an object. The points are called *phase changes*, in the adjacent figure they're marked with red dots. After the sampling is complete, the algorithm forms a *MIL vector*, whose length is the total length of the line segments divided by the total number of phase changes found. The MIL vector has the same direction as $$**v**$$. Drawing and sampling the lines is repeated for $$*n*$$ directions, and the method creates $$*n*$$ MIL vectors.
+In the first step the algorithm draws parallel lines over the input image in direction $$\mathbf{v}$$. The direction is chosen randomly. Each line segment in the image stack is sampled to find points where it changes from background to foreground, i.e. where the line enters an object. The points are called *phase changes*, in the adjacent figure they're marked with red dots. After the sampling is complete, the algorithm forms a *MIL vector*, whose length is the total length of the line segments divided by the total number of phase changes found. The MIL vector has the same direction as $$\mathbf{v}$$. Drawing and sampling the lines is repeated for $$n$$ directions, and the method creates $$n$$ MIL vectors.
 
 After the MIL vectors have been calculated, they are added to a point cloud (a collection of points) around the origin. Then the method tries solve the equation of an ellipsoid that would fit the cloud. There may be no solution, especially if there are few points. That is, the fitting may fail at which point the plug-in stops. The radii of this ellipsoid determine the degree of anisotropy (see [results](https://imagej.net/index.php?title=BoneJ_experimental&action=submit#Results)).
 
 ![200 px\|Projecting lines from a plane](/images/pages/MilCube.png "200 px|Projecting lines from a plane")
 
-In more detail, the lines in the first step are projected from a $$*d* \* *d*$$ plane with normal $$**v**$$ (see the adjacent figure). The size $$$d = \\sqrt{w^{2} + h^{2} + d^{2}}$$$, where $$*w*, *h*, *d*$$ are the dimensions of the image stack. Each of the lines goes through a random point $$**o**$$ on the plane. The points $$**o**$$ are random, but evenly distributed across the plane. The lines are drawn until they intercept the stack edges at points $$**o** + *t*<sub>*m**i**n*</sub>**v**$$,$$**o** + *t*<sub>*m**a**x*</sub>**v**$$ (the algorithm solves for $$*t*<sub>*m**i**n*</sub>$$, $$*t*<sub>*m**a**x*</sub>$$). These line segments within the stack are then sampled for phase changes. In this drawing method some lines may miss the image stack completely, but conversely there aren't any areas in the stack that don't have a chance of being sampled.
+In more detail, the lines in the first step are projected from a $$d * d$$ plane with normal $$\mathbf{v}$$ (see the adjacent figure). The size $$d = \sqrt{w^{2} + h^{2} + d^{2}}$$, where $$w, h, d$$ are the dimensions of the image stack. Each of the lines goes through a random point $$\mathbf{o}$$ on the plane. The points $$\mathbf{o}$$ are random, but evenly distributed across the plane. The lines are drawn until they intercept the stack edges at points $$\mathbf{o} + t_{min}\mathbf{v}$$,$$\mathbf{o} + t_{max}\mathbf{v}$$ (the algorithm solves for $$t_{min}$$, $$t_{max}$$). These line segments within the stack are then sampled for phase changes. In this drawing method some lines may miss the image stack completely, but conversely there aren't any areas in the stack that don't have a chance of being sampled.
 
 #### Suitable images
 
@@ -88,8 +88,8 @@ The plug-in is intended to analyse the "texture" of an object thus it suits samp
 #### Parameters
 
 -   **Directions**: number of times sampling is performed from different directions. The minimum is $$9$$, because that's how many independent variables the algorithm needs to solve the "shape" of the orientation in the image.
--   **Lines per direction**: controls how many parallel lines are drawn per each direction. Each line has the length $$$d = \\sqrt{width^2 + height^2 + depth^2}$$$.
--   **Sampling increment**: controls the distance between sampling points along a line. The default and minimum is &lt;math\\sqrt{3}</math>$$. The number of samples taken per line depends on the length of the line segment within the image stack.
+-   **Lines per direction**: controls how many parallel lines are drawn per each direction. Each line has the length $$d = \sqrt{width^2 + height^2 + depth^2}$$.
+-   **Sampling increment**: controls the distance between sampling points along a line. The default and minimum is &lt;math\\sqrt{3}$$. The number of samples taken per line depends on the length of the line segment within the image stack.
 -   **Recommended minimum**: if checked, then the above three parameters are set to the recommended minimum values. In our tests we found that with these values the results are quite stable, and fitting unlikely to fail. However, these minimums are not guaranteed to be the best settings for your image.
 -   **Show radii**: if checked, then the radii of the fitted ellipsoid are shown in the results table.
 -   **Show Eigens** if checked, then the eigenvectors and values of the fitted ellipsoid are shown in the results table.
@@ -126,8 +126,8 @@ This macro will output two tables, one with anisotropy results and one logging d
 #### Results
 
 -   **Degree of anisotropy**: how much orientation there is in the structure. $$0.0$$ means the image is completely isotropic, the sample has no directionality whatsoever. $$1.0$$ means there is an extreme prevailing orientation in the structure of the image.
--   **Radii of fitted ellipsoid** (optional): the lengths of the radii $$*a* ≤ *b* ≤ *c*$$ of the ellipsoid fitted on the MIL points. Degree of anisotropy equals $$$= 1.0 - \\frac{1}{c^2}/\\frac{1}{a^2}$$$.
--   **Eigenvectors and values** (optional): the values $$*m*00, *m*01, *m*02...*m*22$$ correspond to the $$*x*, *y*, *z*$$ components of the three eigenvectors of the fitted ellipsoid. The eigenvalues $$*D*1, *D*2, *D*3$$ correspond to $$$\\frac{1}{c^2}, \\frac{1}{b^2}, \\frac{1}{a^2}$$$ respectively, where $$*a*, *b*, *c*$$ are the radii of the ellipsoid.
+-   **Radii of fitted ellipsoid** (optional): the lengths of the radii $$a \leq b \leq c$$ of the ellipsoid fitted on the MIL points. Degree of anisotropy equals $$= 1.0 - \frac{1}{c^2}/\frac{1}{a^2}$$.
+-   **Eigenvectors and values** (optional): the values $$m00, m01, m02 ... m22$$ correspond to the $$x, y, z$$ components of the three eigenvectors of the fitted ellipsoid. The eigenvalues $$D1, D2, D3$$ correspond to $$\frac{1}{c^2}, \frac{1}{b^2}, \frac{1}{a^2}$$ respectively, where $$a, b, c$$ are the radii of the ellipsoid.
 
 The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
 
@@ -193,9 +193,9 @@ Connectivity
 
 Menu path *Plugins &gt; BoneJ &gt; Connectivity*.
 
-The Connectivity plug-in is designed to estimate the number of connected structures i.e. trabeculae in a trabecular network. This *connectivity* measure is related to a topological number $$*χ*$$ known as *Euler characteristic*, *Euler number* or *Euler-Poincaré characteristic*. Mathematically defined connectivity is $$ = 1 − (*χ* + *Δ**χ*)$$. Roughly speaking, $$*χ*$$ describes the shape or structure of a topological space. It can also be expressed as $$*χ* = *o**b**j**e**c**t**s* − *h**a**n**d**l**e**s* + *c**a**v**i**t**i**e**s*$$, where a handle is a hole that goes through an object (e.g the hole in a doughnut, or the ear of a coffee mug), and a cavity is enclosed inside one. When measuring trabecular cubes, you need to add $$*Δ**χ*$$ to $$*χ*$$ to get a more accurate estimate of the connectivity of the whole network. The term $$*Δ**χ*$$ corrects for the change in the topology of an object, when it's cut to pieces.
+The Connectivity plug-in is designed to estimate the number of connected structures i.e. trabeculae in a trabecular network. This *connectivity* measure is related to a topological number $$\chi$$ known as *Euler characteristic*, *Euler number* or *Euler-Poincaré characteristic*. Mathematically defined connectivity is $$= 1 - (\chi + \Delta\chi)$$. Roughly speaking, $$\chi$$ describes the shape or structure of a topological space. It can also be expressed as $$\chi = objects - handles + cavities$$, where a handle is a hole that goes through an object (e.g the hole in a doughnut, or the ear of a coffee mug), and a cavity is enclosed inside one. When measuring trabecular cubes, you need to add $$\Delta\chi$$ to $$\chi$$ to get a more accurate estimate of the connectivity of the whole network. The term $$\Delta\chi$$ corrects for the change in the topology of an object, when it's cut to pieces.
 
-NB some other Euler characteristic implementations report $$*χ* + *Δ**χ*$$ as $$*χ*$$, i.e. in them the correction $$*Δ**χ*$$ is implicit.
+NB some other Euler characteristic implementations report $$\chi + \Delta\chi$$ as $$\chi$$, i.e. in them the correction $$\Delta\chi$$ is implicit.
 
 #### Suitable images
 
@@ -203,9 +203,9 @@ The input image must be 3D and binary. The plug-in assumes that there is only on
 
 #### Results
 
--   **Euler characteristic (χ)**: describes the shape of the object(s) in the image, $$*χ* = *o**b**j**e**c**t**s* − *h**a**n**d**l**e**s* + *c**a**v**i**t**i**e**s*$$.
+-   **Euler characteristic (χ)**: describes the shape of the object(s) in the image, $$\chi = objects - handles + cavities$$.
 -   **Corrected Euler (χ + Δχ)**: the Euler characteristic of the part corrected for edge effects to fit the whole.
--   **Connectivity**: gives an estimate of the number of connected trabeculae in the image. Equal to $$1 − (*χ* + *Δ**χ*)$$.
+-   **Connectivity**: gives an estimate of the number of connected trabeculae in the image. Equal to $$1 - (\chi + \Delta\chi)$$.
 -   **Conn. density**: connectivity divided by unit volume.
 
 The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
@@ -236,7 +236,7 @@ Ellipsoid factor
 
 Menu path *Plugins &gt; BoneJ &gt; Ellipsoid factor*.
 
-Ellipsoid Factor is a new method for measuring rod/plate geometry. It uses the axis lengths from prolate, oblate and intermediate elipsoids to determine how prolate or oblate the trabecular space is at a particular point. Highly prolate (javelin-shaped, rod-like) ellipsoids have a single long axis ($$*c*$$) and two short axes ($$*a*, *b*$$) such that $$*a* &lt; *b* ≪ *c*$$ , whereas highly oblate (discus-shaped, plate-like) ellipsoids have two longer axes ($$*b*, *c*$$) and one much shorter axis ($$*a*$$) so that $$*a* ≪ *b* &lt; *c*$$. Calculating $$*E**F*$$ as the difference in ratios, $$*E**F* = *a*/*b* − *b*/*c*$$ leads to a useful scale ranging from $$ − 1$$ (oblate, $$*a*/*b* ≈ 0, *b*/*c* ≈ 1$$) to $$ + 1$$ (prolate, $$*a*/*b* ≈ 1, *b*/*c* ≈ 0$$). $$*E**F*$$ of $$0$$ indicates an intermediate ellipsoid where $$*a*/*b* = *b*/*c*$$, which is the case for spheres ($$*a* = *b* = *c*$$) and other ellipsoids with axis ratios $$*a* : *q**a* : *q*<sup>2</sup>*a*$$. Ellipsoid Factor runs [Skeletonize3D](Skeletonize3D ) to get the medial axis of the trabeculae, which is used as the seed for sampling. Ellipsoids are seeded from each voxel on the medial axis. A combination of dilation, contraction, rotation and a small amount of translation is run iteratively until the ellipsoid increases no further in volume.
+Ellipsoid Factor is a new method for measuring rod/plate geometry. It uses the axis lengths from prolate, oblate and intermediate elipsoids to determine how prolate or oblate the trabecular space is at a particular point. Highly prolate (javelin-shaped, rod-like) ellipsoids have a single long axis ($$c$$) and two short axes ($$a, b$$) such that $$a &lt; b \ll c$$ , whereas highly oblate (discus-shaped, plate-like) ellipsoids have two longer axes ($$b, c$$) and one much shorter axis ($$a$$) so that $$a \ll b &lt; c$$. Calculating $$EF$$ as the difference in ratios, $$EF = a/b - b/c$$ leads to a useful scale ranging from $$-1$$ (oblate, $$a/b \approx 0, b/c \approx 1$$) to $$+1$$ (prolate, $$a/b \approx 1, b/c \approx 0$$). $$EF$$ of $$0$$ indicates an intermediate ellipsoid where $$a/b = b/c$$, which is the case for spheres ($$a = b = c$$) and other ellipsoids with axis ratios $$a:qa:q^{2}a$$. Ellipsoid Factor runs [Skeletonize3D](Skeletonize3D ) to get the medial axis of the trabeculae, which is used as the seed for sampling. Ellipsoids are seeded from each voxel on the medial axis. A combination of dilation, contraction, rotation and a small amount of translation is run iteratively until the ellipsoid increases no further in volume.
 
 The EF at a point in the structure is determined as the EF of the most voluminous ellipsoid which contains that point.
 
@@ -257,20 +257,20 @@ A binary 3D image.
 -   **EF image**: stack containing EF values for each point contained by at least one ellipsoid and NaN elsewhere.
 -   **Ellipsoid ID image**: stack containing the ID of the biggest ellipsoid at each point, ranked in descending order ($$0$$ is the largest ellipsoid).
 -   **Volume image**: image showing the volume of the largest ellipsoid containing that point.
--   **Axis ratio images**: images showing $$*a*/*b*$$ and $$*b*/*c*$$ ratios foreach point containing at least one ellipsoid and NaN elsewhere.
--   **Flinn peak plot**: plot of $$*a*/*b*$$ vs $$*b*/*c*$$ weighted by volume, so bright pixels indicate relatively more of the structure has that axis ratio.
+-   **Axis ratio images**: images showing $$a/b$$ and $$b/c$$ ratios foreach point containing at least one ellipsoid and NaN elsewhere.
+-   **Flinn peak plot**: plot of $$a/b$$ vs $$b/c$$ weighted by volume, so bright pixels indicate relatively more of the structure has that axis ratio.
 -   **Gaussian sigma:** amount to blur the Flinn peak plot - set to $$0$$ for a precise but less 'beautiful' result.
 -   **Flinn plot**: unweighted Flinn plot - every ellipsoid is represented by the same sized point regardless of ellipsoid size.
 
 #### Results
 
 -   **EF image**: stack containing EF values. NaN (not a number) values are used in the background. Summary statistics can be obtained by running Analyze &gt; Histogram
--   **Short-Mid image**: stack containing the $$*a*/*b*$$ ratios
--   **Mid-Long image**: stack contining the $$*b*/*c*$$ ratios
+-   **Short-Mid image**: stack containing the $$a/b$$ ratios
+-   **Mid-Long image**: stack contining the $$b/c$$ ratios
 -   **Volume image**: stack containing ellipsoid volumes
--   **Max id image**: stack containing the ID of the largest ellipsoid at each point; IDs relate to the sort order based on volume, so ID = 0 is the largest ellipsoid. $$ − 1$$ is foreground and background is labelled with a large negative number.
--   **Flinn diagram**: plot of $$*a*/*b*$$ versus $$*b*/*c*$$ values present in the volume
--   **Weighted Flinn plot**: Flinn diagram with peaks of intensity proportional to volume occupied by each ($$*a*/*b*$$, $$*b*/*c*$$) ratio
+-   **Max id image**: stack containing the ID of the largest ellipsoid at each point; IDs relate to the sort order based on volume, so ID = 0 is the largest ellipsoid. $$-1$$ is foreground and background is labelled with a large negative number.
+-   **Flinn diagram**: plot of $$a/b$$ versus $$b/c$$ values present in the volume
+-   **Weighted Flinn plot**: Flinn diagram with peaks of intensity proportional to volume occupied by each ($$a/b$$, $$b/c$$) ratio
 
 #### Related publications
 
@@ -338,7 +338,7 @@ Menu path *Plugins &gt; BoneJ &gt; Fractal dimension*.
 
 This plug-in estimates the fractal dimension of an image by applying the box-counting algorithm. In this algorithm grids of diminishing size are scanned over the image, and the number of boxes containing at least one foreground voxel is counted. As the box size decreases and the grid becomes finer, the proportion of foreground boxes increases in a fractal structure. See [Wikipedia](https://en.wikipedia.org/wiki/Box_counting) for further details. BoneJ uses a fixed-grid scan, with an option to try to find the optimal covering.
 
-The box counting algorithm produces a pair of $$(*l**o**g*(*n*),  − *l**o**g*(*m*))$$ values for each iteration it runs. Here n = number of boxes with foreground, and m = box size. These pairs are passed to a curve-fitting algorithm, which returns the slope of the linear function which describes them ([regression fit](https://en.wikipedia.org/wiki/Linear_regression)). The coefficient of this slope is the fractal dimension.
+The box counting algorithm produces a pair of $$(log(n), -log(m))$$ values for each iteration it runs. Here n = number of boxes with foreground, and m = box size. These pairs are passed to a curve-fitting algorithm, which returns the slope of the linear function which describes them ([regression fit](https://en.wikipedia.org/wiki/Linear_regression)). The coefficient of this slope is the fractal dimension.
 
 Fractal dimension is markedly influenced by the parameters selected for the box counting algorithm, so it's worth running it several times with different values to find an accurate measure for your image.
 
@@ -353,12 +353,12 @@ A 2D or 3D binary image.
 -   *Box scaling factor*: the term used to divide the box size after iteration. For example, a scaling factor of $$2.0$$ halves the size at each step.
 -   *Grid translations*: how many times at each iteration the grid is moved to try to the find the optimal covering. The optimal covering covers the objects in the image with the least amount of boxes. The larger the parameter the more likely it is that optimal covering is found. However, this slows down the plug-in considerably.
 -   *Automatic parameters*: if checked, then the plug-in runs with default parameters.
--   *Show points*: if checked, then the plug-in displays the $$(*l**o**g*(*n*),  − *l**o**g*(*m*))$$ values it calculated.
+-   *Show points*: if checked, then the plug-in displays the $$(log(n), -log(m))$$ values it calculated.
 
 #### Results
 
 -   *Fractal dimension*: the [fractal dimension](https://en.wikipedia.org/wiki/Fractal_dimension) of the image. For example, the Koch snow flake has a fractal dimension of 1.262.
--   *R²*: the [coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination) of the line fitted to the $$(*l**o**g*(*n*),  − *l**o**g*(*m*))$$ points.
+-   *R²*: the [coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination) of the line fitted to the $$(log(n), -log(m))$$ points.
 
 The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
 
@@ -686,8 +686,8 @@ A 2D or 3D binary image.
 -   **HU Calibrated**: Allows you to enter your thresholds in Hounsfield units (HU) or uncalibrated units
 -   **Bone Min**: minimum pixel value to use in calculations
 -   **Bone Max**: maximum pixel value to use in calculations
--   **Slope**: $$*m*$$ where physical density $$ = *m* \* *p**i**x**e**l**v**a**l**u**e* + *c*$$
--   **Y Intercept**: $$*c*$$ where physical density $$ = *m* \* *p**i**x**e**l**v**a**l**u**e* + *c*$$
+-   **Slope**: $$m$$ where physical density $$= m * pixel value + c$$
+-   **Y Intercept**: $$c$$ where physical density $$= m * pixel value + c$$
 -   **Note**: density-weighted calculations are only applied to centroid determination at present
 -   **Partial volume compensation**: Use model that assumes Gaussian blur of imaging modality and linear transform between pixel value and sample 'density' to correct for blurred and pixelated images (e.g. small bone in clinical CT)
 -   **Background**: pixel value that corresponds to zero bone density (could be the 'fat', 'air' or 'muscle' pixel value)
@@ -705,7 +705,7 @@ A 2D or 3D binary image.
 -   **Density**: mean physical density, calculated from pixel values and calibration coefficients
 -   **wX cent**: Density-weighted x-coordinate of centroid
 -   **wY cent**: Density-weighted y-coordinate of centroid
--   **Theta**: angle of minor axis (axis for Imin, the long axis of your specimen's cross section) from the horizontal, ranging from $$ − *π*/2$$ to $$*π*/2$$, with positive as clockwise
+-   **Theta**: angle of minor axis (axis for Imin, the long axis of your specimen's cross section) from the horizontal, ranging from $$-\pi/2$$ to $$\pi/2$$, with positive as clockwise
 -   **R1**: maximum chord length from minor axis
 -   **R2**: maximum chord length from major axis
 -   **I<sub>min</sub>**: Second moment of area around major axis

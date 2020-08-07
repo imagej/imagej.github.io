@@ -34,7 +34,7 @@ Once you have an aligned movie you can draw the bleaching ROI and run **Plot Z-a
 
 You can normalize your values by using the following equation:
 
-$$$I\_{\\text{norm}} = \\frac{ I\_{\\text{bleach}} - I\_{\\text{nonbleach}} }{ \\max (I\_{\\text{bleach}}-I\_{\\text{nonbleach}})-\\min (I\_{\\text{bleach}}-I\_{\\text{nonbleach}}) }$$$
+$$ I_{\text{norm}} = \frac{ I_{\text{bleach}} - I_{\text{nonbleach}} }{ \max (I_{\text{bleach}}-I_{\text{nonbleach}})-\min (I_{\text{bleach}}-I_{\text{nonbleach}}) } $$
 
 You will get values between 0 and 1 already normalized. All you have to do now is to plot your normalized values against time and you will get a rough curve of recovery. If you want to further analyse this you will have to fit this curve... For this, you can always talk to the Image Processing Facility in house, or if you already have a good knowledge of [MATLAB](MATLAB ) do it yourself...
 

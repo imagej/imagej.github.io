@@ -109,7 +109,7 @@ NOTE: This option is only available in advanced mode. In easy mode, this value d
 This option sets the minimum cutoff for the Hough score (i.e. ratio of votes) that a circle can have to count as a valid object. This value is described as the following ratio:
 
   
-$$$\\text{Hough score}=\\left ( \\frac{\\text{number of votes}}{\\text{transform resolution}} \\right )$$$
+$$\text{Hough score}=\left ( \frac{\text{number of votes}}{\text{transform resolution}} \right )$$
 
 Since the maximum number of votes a circle can receive is the transform resolution (i.e. every transform resulted in a vote), the highest score a circle can receive is 1.0. Thus, the lower the score threshold, the more tolerant the search will be of incomplete and/or imperfect circles.
 

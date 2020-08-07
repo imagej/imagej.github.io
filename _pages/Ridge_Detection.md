@@ -53,17 +53,17 @@ Optional parameters
 
 The following optional parameters are used to estimate the mandatory parameters:
 
-**Line width** ($$*w*$$): The line diameter in pixels. It estimates the mandatory parameter 'Sigma' by:
+**Line width** ($$w$$): The line diameter in pixels. It estimates the mandatory parameter 'Sigma' by:
 
-$$$\\sigma=\\frac{w}{2\\sqrt{3}}+0.5$$$
+$$\sigma=\frac{w}{2\sqrt{3}}+0.5$$
 
-**High contrast** ($$*b*<sub>*u**p**p**e**r*</sub>$$): Highest grayscale value of the line. It estimates the mandatory parameter 'Upper threshold' by:
+**High contrast** ($$b_{upper}$$): Highest grayscale value of the line. It estimates the mandatory parameter 'Upper threshold' by:
 
-$$$T\_{U}=\\left\\lfloor 0.17\\cdot\\frac{2\\cdot b\_{upper}\\cdot\\frac{w}{2}}{\\sqrt{2\\pi}\\sigma^{3}}e^{-\\frac{\\left(\\frac{w}{2}\\right)^{2}}{2\\sigma^{2}}}\\right\\rfloor$$$
+$$T_{U}=\left\lfloor 0.17\cdot\frac{2\cdot b_{upper}\cdot\frac{w}{2}}{\sqrt{2\pi}\sigma^{3}}e^{-\frac{\left(\frac{w}{2}\right)^{2}}{2\sigma^{2}}}\right\rfloor $$
 
-**Low contrast** ($$*b*<sub>*l**o**w*</sub>$$): Lowest grayscale value of the line. It estimates the mandatory parameter 'Lower Threshold' by:
+**Low contrast** ($$b_{low}$$): Lowest grayscale value of the line. It estimates the mandatory parameter 'Lower Threshold' by:
 
-$$$T\_{L}=\\left\\lfloor 0.17\\cdot\\frac{2\\cdot b\_{low}\\cdot\\frac{w}{2}}{\\sqrt{2\\pi}\\sigma^{3}}e^{-\\frac{\\left(\\frac{w}{2}\\right)^{2}}{2\\sigma^{2}}}\\right\\rfloor$$$
+$$T_{L}=\left\lfloor 0.17\cdot\frac{2\cdot b_{low}\cdot\frac{w}{2}}{\sqrt{2\pi}\sigma^{3}}e^{-\frac{\left(\frac{w}{2}\right)^{2}}{2\sigma^{2}}}\right\rfloor $$
 
 Further options (true/false)
 ----------------------------

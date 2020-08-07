@@ -44,7 +44,7 @@ Please see the [Perfusion MRI wiki page](https://imagej.net/MRIPerfusion) for th
 
 ### Noise Generator
 
-In this specific PlugIn we offer a tool to add different noise on a image with several different probability distributions, where could be useful in some biological and medical studies. Some noise probability examples are the Uniform, Gaussian, Rayleigh and Colored noises (Brown, Pink, Blue and other $$1/*f*<sup>*β*</sup>$$ noises).
+In this specific PlugIn we offer a tool to add different noise on a image with several different probability distributions, where could be useful in some biological and medical studies. Some noise probability examples are the Uniform, Gaussian, Rayleigh and Colored noises (Brown, Pink, Blue and other $$1/f^\beta$$ noises).
 
 See the [Noise Generator wiki page](https://imagej.net/NoiseGenerator) to find out more information about this PlugIn.
 

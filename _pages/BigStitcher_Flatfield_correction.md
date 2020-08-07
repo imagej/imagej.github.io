@@ -13,15 +13,15 @@ Uneven illumination and fixed pattern noise can lead to artifacts in stitched im
 
 <img src="/images/pages/BigStitcher Flatfield 1.png" width="800"/>
 
-We perform the correction by calculating a corrected image pixel $$*C*<sub>*x*, *y*, *z*</sub>$$ according to [1](https://en.wikipedia.org/wiki/Flat-field_correction):
+We perform the correction by calculating a corrected image pixel $$C_{x,y,z}$$ according to [1](https://en.wikipedia.org/wiki/Flat-field_correction):
 
-$$$C\_{x,y,z} = \\frac{(R\_{x,y,z} - D\_{x,y}) \* \\overline{(B-D)} }{(B\_{x,y}- D\_{x,y})}$$$
+$$C_{x,y,z} = \frac{(R_{x,y,z} - D_{x,y}) * \overline{(B-D)} }{(B_{x,y}- D_{x,y})}$$
 
 with
 
--   $$*R*$$ = raw image
--   $$*B*$$ = bright image (image of a uniformly bright sample), 1 if not provided by user
--   $$*D*$$ = dark image (image with no sample and illumination, camera offset), 0 if not provided by user
+-   $$R$$ = raw image
+-   $$B$$ = bright image (image of a uniformly bright sample), 1 if not provided by user
+-   $$D$$ = dark image (image with no sample and illumination, camera offset), 0 if not provided by user
 
 ### Usage
 

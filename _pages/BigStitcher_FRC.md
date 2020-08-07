@@ -31,11 +31,11 @@ Many parameters are similar to [Image Fusion](BigStitcher_Fuse ): You can set a 
 
 Parameters that are important to the actual quality estimation are:
 
--   **Relative FRC** When this is activated we will not only integrate the FRC curve of the current image plane $$*n*$$ and it's neighbouring planes, but subtract a LOESS-smoothed FRC curve of planes $$*n* + 5$$ and $$*n* − 5$$ before integration. This reduces the effect of high-frequency fixed-pattern noise (e.g. sCMOS dark noise) on the quality metric. This means we have to calculate a second FRC curve, essentially doubling the computation time for this step.
+-   **Relative FRC** When this is activated we will not only integrate the FRC curve of the current image plane $$n$$ and it's neighbouring planes, but subtract a LOESS-smoothed FRC curve of planes $$n+5$$ and $$n-5$$ before integration. This reduces the effect of high-frequency fixed-pattern noise (e.g. sCMOS dark noise) on the quality metric. This means we have to calculate a second FRC curve, essentially doubling the computation time for this step.
 
 <!-- -->
 
--   **Smooth Local FRC** To get a smoother estimate of Quality, we can not only calculate FRC between image planes $$(*n*, *n* + 1)$$, but also $$(*n*, *n* − 1)$$ and average the integrals of the two curves. This increases computation time since we have to calculate yet another FRC curve.
+-   **Smooth Local FRC** To get a smoother estimate of Quality, we can not only calculate FRC between image planes $$(n,n+1)$$, but also $$(n,n-1)$$ and average the integrals of the two curves. This increases computation time since we have to calculate yet another FRC curve.
 
 The following two parameters essentially control the sampling of quality estimates in the images:
 

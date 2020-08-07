@@ -32,45 +32,45 @@ Active contours evolve an initial contour in time according to multiple intrinsi
 
 This implementation is based on following PDE update:
 
-$$*Φ*(*i*) = *Δ**T**g*(*i*)(*W*<sub>*a*</sub>*F*<sub>*a*</sub>\|∇*Φ*\| + *W*<sub>*c*</sub>*F*<sub>*c*</sub>\|∇*Φ*\|)$$
+$$\Phi(i) = \Delta T g(i) ( W_a F_a |\nabla\Phi| + W_c F_c |\nabla\Phi| )$$
 
 with
 
   
-$$$g(I) = \\frac{1}{1 + ({\\nabla I}^\*  + g) \\cdot 2}$$$
+$$g(I) = \frac{1}{1 + ({\nabla I}^* + g) \cdot 2}$$
 
 <!-- -->
 
   
   
-$$∇*I*<sup>\*</sup>$$ = difference of smoothened (gaussian blurred) image
+$$\nabla I^*$$ = difference of smoothened (gaussian blurred) image
 
 <!-- -->
 
   
   
-$$<math>g = \\begin{cases} 0 & \\text{if gray value } &lt; \\text{ preset gray value.}\\\\
+$$g = \\begin{cases} 0 & \\text{if gray value } &lt; \\text{ preset gray value.}\\\\
 
-\\text{gray value }&\\text{otherwise.} \\end{cases}</math>$$
+\\text{gray value }&\\text{otherwise.} \\end{cases}$$
 
   
-$$$\\Delta T = \\frac{1}{6 \\cdot W\_a \\cdot W\_c}$$$
+$$\Delta T = \frac{1}{6 \cdot W_a \cdot W_c}$$
 
 <!-- -->
 
   
-$$*Φ*(*i*)$$ = iso surface at current iteration i
+$$\Phi(i)$$ = iso surface at current iteration i
 
 <!-- -->
 
   
-$$*W*<sub>*a*</sub>$$ = Advection weight
+$$W_a$$ = Advection weight
 
-$$*F*<sub>*a*</sub>$$ = Advection force
+$$F_a$$ = Advection force
 
-$$*W*<sub>*c*</sub>$$ = Curvature weight
+$$W_c$$ = Curvature weight
 
-$$*F*<sub>*c*</sub>$$ = Curvature force
+$$F_c$$ = Curvature force
 
 A more detailed explanation of the algorithm can be found at following links:
 

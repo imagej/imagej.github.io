@@ -45,8 +45,8 @@ global_shadows = [
     ("\\\'", txt_single_quote),
     (":", txt_colon),
     (";", txt_colon2),
-    ("$$", txt_math_start),
-    ("$$", txt_math_end),
+    ("$$$", txt_math_start),
+    ("$$$", txt_math_end),
     ("\n", txt_newline)
 ]
 
@@ -142,6 +142,8 @@ def process_file(str_content):
     # fix youtube template
     content_tmp = re.sub(r'\{\{[\\]?\#widget\:YouTube\|id\=([^ \|]*)[^\}]*\}\}',
                          youtube_match, content_tmp)
+    content_tmp = re.sub(r'\{\{[\\]?\#widget\:YouTube\|playlist\=([^ \|]*)[^\}]*\}\}',
+                         youtube_playlist_match, content_tmp)
     content_tmp = re.sub(r'{{[\\]*#widget:Vimeo\|[^}]*}}', r'TODO VIMEO WIDGET', content_tmp)
     # TODO parse flash template?!, removing for now because it creates liquid issues
     content_tmp = re.sub(r'{{[\\]*#widget:flash\|[^}]*}}', r'TODO FLASH WIDGET', content_tmp)
@@ -164,8 +166,8 @@ def process_file(str_content):
     content_tmp = re.sub(r'\{\|style=\"([^\n]+)\"[ ]*\n([^\n]+)', match_table_header, content_tmp)
     content_tmp = re.sub(r'(\||\!) style=\"([^\"]*)\"[ ]*\|', match_table_row_style, content_tmp)
     content_tmp = re.sub(r'(\!|\|) colspan=(\d*)[ ]*(?:style\=\"([^\"]*)\")?(?:[ ]*\|([^\n]*))\n', match_table_colspan, content_tmp)
-    content_tmp = content_tmp.replace("<math>", txt_math_start + "<math>")
-    content_tmp = content_tmp.replace("</math>", "</math>" + txt_math_end)
+    content_tmp = content_tmp.replace("<math>", "$$")
+    content_tmp = content_tmp.replace("</math>", "$$")
     content_tmp = re.sub(r'\n(\||\!)(.*(?:' + txt_include_start + ')+.*)', r'\n\1<span><br/></span>\2', content_tmp)
     # print(content_tmp)
     return content_tmp
@@ -194,6 +196,10 @@ def shadow(text):
 
 def youtube_match(match):
     return txt_include_start + 'youtube url' + txt_param_start + txt_youtube + match.group(1) + txt_param_end + txt_liquid_end
+
+
+def youtube_playlist_match(match):
+    return txt_include_start + 'youtube-playlist url' + txt_param_start + txt_youtube + match.group(1) + txt_param_end + txt_liquid_end
 
 
 def gallery_content_match(gallery_content):
@@ -587,7 +593,7 @@ def convert(path_in, path_out, layout, title):
         content_tmp = re.sub(r'' + txt_apply_style_start + '([^\n]*)' + txt_apply_style_end + '[\n ]*(<\w*)', r'\2 style="\1"', content_tmp)
         content_tmp = re.sub(r'\<p\>\<\/p\>', r'', content_tmp)
         content_tmp = re.sub(r'\n' + txt_apply_style_start + '.*' + txt_apply_style_end, r'', content_tmp)
-        content_tmp = re.sub(r'\$\$\\\((.+?)(?=\\\)\$\$)\\\)\$\$', r'$$\1$$', content_tmp)
+        content_tmp = re.sub(r'\$\$(.+?)(?=\$\$)\$\$', fix_converted_math, content_tmp)
         if title in fix_math:
             content_tmp = re.sub(r'\n(\$\$.*\$\$)\n', r'\n{% raw %}\1{% endraw %}\n', content_tmp)
 
@@ -609,6 +615,11 @@ def convert(path_in, path_out, layout, title):
         for line in lines:
             f.write(line)
     return None
+
+
+def fix_converted_math(match):
+    res = re.sub(r'(?<!\\)\\', r'', match.group(1))
+    return '$$' + res + '$$'
 
 
 def fix_bc_include(match):

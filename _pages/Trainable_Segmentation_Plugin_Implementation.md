@@ -23,38 +23,35 @@ The plug in creates a set of features for each input image pixel by individually
 Features
 --------
 
-The plugin creates a stack of images - one image for each feature. For instance, if only Gaussian Blur is selected as a feature, the classifier will be trained on the original image and four blurred images with four different $$*σ*$$ parameters for the Gaussian, so each pixel will have 5 features. If the mean is added as a feature, then each pixel will have nine features (the value of the pixel's location in the original image, four Gaussian blur images, and four mean images with different radii).
+The plugin creates a stack of images - one image for each feature. For instance, if only Gaussian Blur is selected as a feature, the classifier will be trained on the original image and four blurred images with four different $$\sigma$$ parameters for the Gaussian, so each pixel will have 5 features. If the mean is added as a feature, then each pixel will have nine features (the value of the pixel's location in the original image, four Gaussian blur images, and four mean images with different radii).
 
 ### {% include wikipedia title='Gaussian blur' text='Gaussian Blur'%}
 
-Performs four individual [convolutions](http://homepages.inf.ed.ac.uk/rbf/HIPR2/convolve.htm) with Gaussian [kernels](http://homepages.inf.ed.ac.uk/rbf/HIPR2/convolve.htm) with $$*σ*$$ equal to 1, 2, 4, and 8. The larger the radius the more blurred the image becomes until the pixels are homogeneous.
+Performs four individual [convolutions](http://homepages.inf.ed.ac.uk/rbf/HIPR2/convolve.htm) with Gaussian [kernels](http://homepages.inf.ed.ac.uk/rbf/HIPR2/convolve.htm) with $$\sigma$$ equal to 1, 2, 4, and 8. The larger the radius the more blurred the image becomes until the pixels are homogeneous.
 
 ### {% include wikipedia title='Sobel operator' text='Sobel filter'%}
 
-Calculates the gradient at each pixel. Gaussian blurs with $$*σ*$$ = 1, 2, 4 and 8 are performed prior to the filter.
+Calculates the gradient at each pixel. Gaussian blurs with $$\sigma$$ = 1, 2, 4 and 8 are performed prior to the filter.
 
 ### Hessian
 
-Calculates a {% include wikipedia title='Hessian matrix' text='Hessian matrix'%} H at each pixel: $$$H(f) = \\begin{bmatrix}
-\\dfrac{\\partial^2f}{\\partial x^2} & \\dfrac{\\partial^2f}{\\partial x \\partial y} \\\\
-\\dfrac{\\partial^2f}{\\partial x \\partial y}  & \\dfrac{\\partial^2f}{\\partial y^2} \\\\
-\\end{bmatrix}$$$
+Calculates a {% include wikipedia title='Hessian matrix' text='Hessian matrix'%} H at each pixel: $$H(f) = \begin{bmatrix} \dfrac{\partial^2f}{\partial x^2} & \dfrac{\partial^2f}{\partial x \partial y} \\\ \dfrac{\partial^2f}{\partial x \partial y} & \dfrac{\partial^2f}{\partial y^2} \\\ \end{bmatrix}$$
 
 This is implemented as follows:
 
--   $$$\\dfrac{\\partial^2f}{\\partial x^2}$$$: the X-direction sobel kernel is convolved with the image twice.
--   $$$\\dfrac{\\partial^2f}{\\partial y^2}$$$: the Y-direction sobel kernel is convolved with the image twice.
--   $$$\\dfrac{\\partial^2f}{\\partial x \\partial y}$$$: the X and Y-direction sobel kernels are each convolved with the image once.
+-   $$\dfrac{\partial^2f}{\partial x^2}$$: the X-direction sobel kernel is convolved with the image twice.
+-   $$\dfrac{\partial^2f}{\partial y^2}$$: the Y-direction sobel kernel is convolved with the image twice.
+-   $$\dfrac{\partial^2f}{\partial x \partial y}$$: the X and Y-direction sobel kernels are each convolved with the image once.
 
-Prior to the application of any filters, a Gaussian blur with $$*σ*$$ = 1, 2, 4 or 8 is performed. The final features used for pixel classification, given the Hessian matrix $$$\\begin{bmatrix}a &  b \\\\ c & d\\end{bmatrix}$$$ are calculated thus:
+Prior to the application of any filters, a Gaussian blur with $$\sigma$$ = 1, 2, 4 or 8 is performed. The final features used for pixel classification, given the Hessian matrix $$\begin{bmatrix}a & b \\\ c & d\end{bmatrix}$$ are calculated thus:
 
--   $$$\\sqrt{a^2 + bc + d ^ 2}$$$
--   Trace: $$*a* + *d*$$
--   Determinant: $$*a**d* − *c**b*$$
+-   $$\sqrt{a^2 + bc + d ^ 2} $$
+-   Trace: $$ a + d$$
+-   Determinant: $$ ad - cb$$
 
 ### Difference of Gaussians
 
-Calculates two Gaussian blur images from the original image and subtracts one from the other. $$*σ*$$ values are again set to 1, 2, 4, and 8, so 6 feature images are added to the stack.
+Calculates two Gaussian blur images from the original image and subtracts one from the other. $$\sigma$$ values are again set to 1, 2, 4, and 8, so 6 feature images are added to the stack.
 
 ### Membrane projections
 

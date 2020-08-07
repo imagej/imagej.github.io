@@ -106,7 +106,7 @@ You can set the following parameters for this algorithm:
 
 -   **Transformation Model**: which type of transformation (translation, rigid transform or affine transform) to use to align the views.
 -   **Regularize model**: check to compute transformations of another type simultaneously and return a weighted average
--   **Redundancy for descriptor matching**: the number of next nearest neighbors (after the closest 3) to consider when constructing the descriptors. A descriptor will be created for all 3-neighbor combinations, resulting in $$${3+redundancy}\\choose{3}$$$ descriptors for each interest point. Increasing the redundancy greatly increases the computational cost of interest point matching but might lead to better matching if you have many or uniformly spaced interest points.
+-   **Redundancy for descriptor matching**: the number of next nearest neighbors (after the closest 3) to consider when constructing the descriptors. A descriptor will be created for all 3-neighbor combinations, resulting in $${3+redundancy}\choose{3}$$ descriptors for each interest point. Increasing the redundancy greatly increases the computational cost of interest point matching but might lead to better matching if you have many or uniformly spaced interest points.
 -   **Significance required for a descriptor match**: In the point match filtering step: how much more similar a potential match has to be (compared to the next best one). For example, 1 means no filtering, while 10 means that the descriptor distance has to be at l0 times smaller than the next closest candidate.
 -   **Allowed error for RANSAC (px)**: By how much a point match has to deviate from the consensus model be filtered out by RANSAC.
 -   **Number of RANSAC iterations**: RANSAC is an iterative and randomized procedure - if you have very little actual corresponding points but may candidate pairs, it may not find the corresponding subset. Increasing the number of iterations can help, but it also increases the computational cost.
@@ -127,7 +127,7 @@ The **Precise descriptor-based (translation invariant) registration** work essen
 
 In addition the the parameters for the **Fast descriptor-based registration**, you can set one additional parameter for the precise version:
 
--   **Number of neighbors for the descriptors**: how many neighbors of each point to use for the descriptor construction. More neighbors will lead to a more specific matching. In images with a lot if (potentially spurious) detections, you might also want to increase descriptor redundancy. Be aware that this might increase the computation time considerably - depending on this parameter and the selected redundancy level, we will construct $$${\\\#neighbors+redundancy}\\choose{\\\#neighbors}$$$ descriptors for each point.
+-   **Number of neighbors for the descriptors**: how many neighbors of each point to use for the descriptor construction. More neighbors will lead to a more specific matching. In images with a lot if (potentially spurious) detections, you might also want to increase descriptor redundancy. Be aware that this might increase the computation time considerably - depending on this parameter and the selected redundancy level, we will construct $${\\#neighbors+redundancy}\choose{\\#neighbors}$$ descriptors for each point.
 
 #### Center of mass (translation invariant)
 
@@ -158,7 +158,7 @@ In the parameter dialog, you can set the two parameters described above:
 
 ### Regularization Options
 
-If you opted for **Regularization** of the transform in the previous dialog, you will be asked for the type of the second transformation model to estimate and a **lambda** ($$ ∈ \[0, 1\]$$), i.e. how much weight you want to give to the regularizing model in the final averaged result.
+If you opted for **Regularization** of the transform in the previous dialog, you will be asked for the type of the second transformation model to estimate and a **lambda** ($$\in[0,1]$$), i.e. how much weight you want to give to the regularizing model in the final averaged result.
 
 <img src="/images/pages/BigStitcher regularize model.png" width="400"/>
 

@@ -580,7 +580,7 @@ Once the image is open, we can call the script and a dialog will pop up:
 
 ![](/images/pages/TWS-color-segmentation-script-menu.png "TWS-color-segmentation-script-menu.png")
 
-Here we can select the number of expected clusters, the number of samples per cluster used for training and the clustering method. The default values of 5 clusters, 1000 samples and “SimpleKMeans” involve that 5000 pixels will be used for training ($$5 × 1000 = 5000$$) a k-means classifier and the resulting image will be an integer image containing labels in the range of \[0-4\].
+Here we can select the number of expected clusters, the number of samples per cluster used for training and the clustering method. The default values of 5 clusters, 1000 samples and “SimpleKMeans” involve that 5000 pixels will be used for training ($$5\times1000=5000$$) a k-means classifier and the resulting image will be an integer image containing labels in the range of \[0-4\].
 
 This would be a possible output of the script with 3 clusters, 2000 samples and “SimpleKMeans”:
 

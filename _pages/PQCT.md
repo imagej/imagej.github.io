@@ -72,7 +72,7 @@ The main tool for pQCT image analysis. You must open an image first before runni
 
 <!-- -->
 
--   **Fat threshold**: pixels with values $$*a**i**r* ≤ *x* &lt; *f**a**t*$$ are considered fat tissue.
+-   **Fat threshold**: pixels with values $$air \leq x &lt; fat$$ are considered fat tissue.
 
 <!-- -->
 
@@ -80,11 +80,11 @@ The main tool for pQCT image analysis. You must open an image first before runni
 
 <!-- -->
 
--   **Marrow threshold**: separates marrow from bone. Pixels $$≤$$ the threshold within bone area are considered marrow.
+-   **Marrow threshold**: separates marrow from bone. Pixels $$\leq$$ the threshold within bone area are considered marrow.
 
 <!-- -->
 
--   **Soft tissue threshold**: separates bone from soft-tissue. Pixels $$≥$$ the threshold are considered soft-tissue.
+-   **Soft tissue threshold**: separates bone from soft-tissue. Pixels $$\geq$$ the threshold are considered soft-tissue.
 
 <!-- -->
 
@@ -96,11 +96,11 @@ The main tool for pQCT image analysis. You must open an image first before runni
 
 ------------------------------------------------------------------------
 
--   **Scaling coefficient**: Used as the coefficient to scale the raw integer values read from the image file into *BMD* values , i.e. the raw-value term $$*b*$$ in $$*y* = *a* + *b**x*$$ (N.B. in case of Stratec files a value of $$2<sup>15</sup>$$ is subtracted prior to applying the scaling to account for the fact that the values were stored as 16-bit signed integers , while ImageJ uses 16-bit unsigned integers. Also, the scaling is retrieved from a list of Stratec .TYP-files according to the image header information. In case of DICOM-files, the DICOM scaling (typically $$*y* =  − 1000 + 1*x*$$) is applied prior to applying this scaling.).
+-   **Scaling coefficient**: Used as the coefficient to scale the raw integer values read from the image file into *BMD* values , i.e. the raw-value term $$b$$ in $$y = a+bx$$ (N.B. in case of Stratec files a value of $$2^{15}$$ is subtracted prior to applying the scaling to account for the fact that the values were stored as 16-bit signed integers , while ImageJ uses 16-bit unsigned integers. Also, the scaling is retrieved from a list of Stratec .TYP-files according to the image header information. In case of DICOM-files, the DICOM scaling (typically $$y = -1000+1x$$) is applied prior to applying this scaling.).
 
 <!-- -->
 
--   **Scaling constant**: Used as the constant in scaling the raw integer values read from the image file into *BMD* values, i.e. term $$*a*$$ in $$*y* = *a* + *b**x*$$.
+-   **Scaling constant**: Used as the constant in scaling the raw integer values read from the image file into *BMD* values, i.e. term $$a$$ in $$y = a+bx$$.
 
 ------------------------------------------------------------------------
 
@@ -140,7 +140,7 @@ The main tool for pQCT image analysis. You must open an image first before runni
 
 <!-- -->
 
--   **Allow cleaving**: Used to separate bone/soft tissue areas, which are connected with a narrow struct. Cleaving is made by looking at the ratios of distances between two points along the edge and the shortest distance between the points. If the maximum of the ratio is high enough, the highest ratio points will be connected with a straight line and one of the resulting edges will be discarded. E.g. for a circle, the maximum ratio is $$$\\frac{\\pi}{2} / d \\approx 1.57$$$ and for a square it's $$$\\frac{2}{\\sqrt{2}} = \\sqrt{2} \\approx 1.41$$$.
+-   **Allow cleaving**: Used to separate bone/soft tissue areas, which are connected with a narrow struct. Cleaving is made by looking at the ratios of distances between two points along the edge and the shortest distance between the points. If the maximum of the ratio is high enough, the highest ratio points will be connected with a straight line and one of the resulting edges will be discarded. E.g. for a circle, the maximum ratio is $$\frac{\pi}{2} / d \approx 1.57$$ and for a square it's $$\frac{2}{\sqrt{2}} = \sqrt{2} \approx 1.41$$.
 
 <!-- -->
 
@@ -199,11 +199,11 @@ Distribution analysis results
 
 ### Alignment
 
--   Endo- and pericortical radii, and endo-, mid- and pericortical densities are produced for each $$10<sup>∘</sup>$$ sector.
--   The sector from $$0<sup>∘</sup>$$ to $$10<sup>∘</sup>$$ always opens directly to right in the visual result image.
+-   Endo- and pericortical radii, and endo-, mid- and pericortical densities are produced for each $$10^\circ$$ sector.
+-   The sector from $$0^\circ$$ to $$10^\circ$$ always opens directly to right in the visual result image.
 -   Sectors increase into clockwise direction in the visual results image, or counter clockwise, if results are flipped.
-    -   If you have selected flip distribution results, the sectors are still the same, but you will notice that the visual distribution result has been mirrored about the horizontal axis. This flipping is implemented by reversing the distribution results vectors and by making sure that the sector from $$0<sup>∘</sup>$$ to $$10<sup>∘</sup>$$ remains the same.
-    -   The color of the line used to delineate the endo- and pericortical border indicates in which direction the sector angle increases. $$0<sup>∘</sup>$$ is blue and $$360<sup>∘</sup>$$ is green/red.
+    -   If you have selected flip distribution results, the sectors are still the same, but you will notice that the visual distribution result has been mirrored about the horizontal axis. This flipping is implemented by reversing the distribution results vectors and by making sure that the sector from $$0^\circ$$ to $$10^\circ$$ remains the same.
+    -   The color of the line used to delineate the endo- and pericortical border indicates in which direction the sector angle increases. $$0^\circ$$ is blue and $$360^\circ$$ is green/red.
     -   In addition, the original and rotated x- and y- axes are highlighted in the visual image (the origin of which is the origin of the distribution results). The axes extend from origin towards positive coordinate values, green/cyan x-axis and blue/purple y-axis.
 
 ### Result headings

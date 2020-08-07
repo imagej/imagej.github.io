@@ -156,7 +156,7 @@ The plugin uses a fit by a gaussian to compute directionality parameters; howeve
 
 The gaussian fit has the following form:
 
-$$$y = a + (b-a)\*\\exp\\left(-\\frac{(x-c)^2}{2 d^2}\\right)$$$
+$$ y = a + (b-a)*\exp\left(-\frac{(x-c)^2}{2 d^2}\right) $$
 
 The parameters are returned by the method `public ArrayList<double[]> getFitParameters()`, which returns a, b, c and d in an `ArrayList` of `double[]`, one array per slice in the stack.
 

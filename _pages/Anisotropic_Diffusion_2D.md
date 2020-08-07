@@ -18,7 +18,7 @@ Documentation
 -   *Smoothings per iteration* - Number of smoothings by anisotropic Gaussian with 3x3 mask per iterations, default value is 1. Size of the smoothing per one complete iteration is proportional to the square root of this number.
 -   *Keep each* - Number of iterations between successive savings of the results. Default value is 20.
 -   *a1 (Diffusion limiter along minimal variations)* - a1 influences the shape of the smoothing mask. f1(l1,l2)= (1.0+l1+l2)^-a1. The smoothing in each iteration is defined by a tensor (2x2 matrix), that is linear combination of tensors corresponding to minimal and maximal eigenvalue of structure tensor. f1 and f2 are weights of the tensors (see Tschumperlé and Deriche, 2005).
--   *a2 (Diffusion limiter along maximal variations)* - a2 influences the shape of the smoothing mask. $$*f*<sub>2</sub>(*l*<sub>1</sub>, *l*<sub>2</sub>) = (1.0 + *l*<sub>1</sub> + *l*<sub>2</sub>)<sup> − *a*<sub>2</sub></sup>$$.
+-   *a2 (Diffusion limiter along maximal variations)* - a2 influences the shape of the smoothing mask. $$ f_2(l_1,l_2) = (1.0+l_1+l_2)^{-a_2} $$.
 -   *dt (Time step)* - Default value is 20. The result of the filter is proportional to the step, but too long time step yields numerical instability of the procedure.
 -   *Edge threshold height* - Defines minimum "strength" of edges that will be preserved by the filter. Default value is 5.
 -   *Show filter stats* - Display filter statistics for each iteration.

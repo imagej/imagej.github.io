@@ -69,10 +69,10 @@ In the screenshots above,
 
 -   **X** and **Y** are coordinates of the pixel cursor counting from the upper left corner.
 -   **Red curve** denotes the fitted portion of decay between the start and end cursor.
--   **Orange dots** denote the photon counts in each time bin in Fit plot and denote the residual ($$*y*<sub>*d**a**t**a*</sub> − *y*<sub>*f**i**t*</sub>$$) in Res plot.
+-   **Orange dots** denote the photon counts in each time bin in Fit plot and denote the residual ($$y_{data}-y_{fit}$$) in Res plot.
 -   **Photon Count** displays the total number of photons collected between the start and end cursor.
--   $$*z*, *A*, *τ*$$ (or $$*z*<sub>1</sub>, *A*<sub>1</sub>, *A*<sub>2</sub>, *τ*<sub>1</sub>, *τ*<sub>2</sub>$$ in two-component fit) are the background, initial intensity and lifetime parameters of the model.
--   $$*χ*<sup>2</sup>$$ shows the chi-squared measure of the fit (see [Noise models](#Noise_models "wikilink")).
+-   $$z, A, \tau$$ (or $$z_1, A_1, A_2, \tau_1, \tau_2$$ in two-component fit) are the background, initial intensity and lifetime parameters of the model.
+-   $$\chi^2$$ shows the chi-squared measure of the fit (see [Noise models](#Noise_models "wikilink")).
 
 ### Fit settings
 
@@ -86,12 +86,12 @@ Sometimes you may want to fine-tune the fitting configurations. The **Settings**
 <!-- -->
 
 -   **Kernel Size**: The radius (in pixels, excluding the center) of the binning kernel.  
-    FLIMJ plugin currently only supports the square kernel with size $$2*r* + 1$$ and values all equal to 1 where $$*r*$$ is the radius). The binning of the dataset is performed by convolving the dataset with this kernel, which is equivalent to adding neighboring pixels into the center:
+    FLIMJ plugin currently only supports the square kernel with size $$2r+1$$ and values all equal to 1 where $$r$$ is the radius). The binning of the dataset is performed by convolving the dataset with this kernel, which is equivalent to adding neighboring pixels into the center:
 
 <figure><img src="/images/pages/FLIMJ_settings_binning.png" title="Left to right: Intensity of dataset after binning of radius 0, 1, and 2." width="600" alt="Left to right: Intensity of dataset after binning of radius 0, 1, and 2." /><figcaption aria-hidden="true">Left to right: Intensity of dataset after binning of radius 0, 1, and 2.</figcaption></figure>
 
--   **χ² Target**: The $$*χ*<sup>2</sup>$$ value below which the LM fitting will stop.  
-    The LM algorithm checks at the end of each iteration whether the fit is good enough by comparing $$*χ*<sup>2</sup>$$ with this threshold. If the results are satisfactory, the LM algorithm will terminate.
+-   **χ² Target**: The $$\chi^2$$ value below which the LM fitting will stop.  
+    The LM algorithm checks at the end of each iteration whether the fit is good enough by comparing $$\chi^2$$ with this threshold. If the results are satisfactory, the LM algorithm will terminate.
 
 <!-- -->
 
@@ -139,11 +139,11 @@ When all settings are properly configured. Click on **Fit Dataset** button on th
 
 After the “pending” state ends, new options will be available as "Show" options in the **Preview** panel. Click on the options to view the fit results:
 
-<figure><img src="/images/pages/FLIMJ_fit_dataset_preview_results_show.png" title="Viewing the $$\tau$$ (lifetime) parameter of the fitted dataset." width="220" alt="Viewing the $$\tau$$ (lifetime) parameter of the fitted dataset." /><figcaption aria-hidden="true">Viewing the $$<span class="math inline"><em>τ</em></span>$$ (lifetime) parameter of the fitted dataset.</figcaption></figure>
+<figure><img src="/images/pages/FLIMJ_fit_dataset_preview_results_show.png" title="Viewing the $$tau$$ (lifetime) parameter of the fitted dataset." width="220" alt="Viewing the $$tau$$ (lifetime) parameter of the fitted dataset." /><figcaption aria-hidden="true">Viewing the $$tau$$ (lifetime) parameter of the fitted dataset.</figcaption></figure>
 
 You may also change the "as" option to specify how the results are rendered. Currently supported options are:
 
-<figure><img src="/images/pages/FLIMJ_fit_dataset_preview_results_as.png" title="Left to right: The $$\tau$$ image rendered with Grayscale, Color and Composite Color." width="600" alt="Left to right: The $$\tau$$ image rendered with Grayscale, Color and Composite Color." /><figcaption aria-hidden="true">Left to right: The $$<span class="math inline"><em>τ</em></span>$$ image rendered with <strong>Grayscale</strong>, <strong>Color</strong> and <strong>Composite Color</strong>.</figcaption></figure>
+<figure><img src="/images/pages/FLIMJ_fit_dataset_preview_results_as.png" title="Left to right: The $$tau$$ image rendered with Grayscale, Color and Composite Color." width="600" alt="Left to right: The $$tau$$ image rendered with Grayscale, Color and Composite Color." /><figcaption aria-hidden="true">Left to right: The $$tau$$ image rendered with <strong>Grayscale</strong>, <strong>Color</strong> and <strong>Composite Color</strong>.</figcaption></figure>
 
 -   **Grayscale**: Linearly maps the middle 80 percentile of the result image's values to grayscale colors from black to white. Values below the 10th percentile and above the 90th percentile are rendered black and white respectively.
 
