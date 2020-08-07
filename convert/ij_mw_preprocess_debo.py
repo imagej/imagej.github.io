@@ -20,8 +20,6 @@ txt_apply_style_start = "%NN%"
 txt_apply_style_end = "%OO%"
 txt_colon = "%PP%"
 txt_colon2 = "%QQ%"
-txt_math_start = "%RR%"
-txt_math_end = "%SS%"
 
 template_regex = r'(((?<=\n)[ ]*)*(?<!<nowiki>)\{\{[\n ]*([A-Za-z0-9_]*)[ \n]*\:?\|?[ \n]*(([\s\S]*?))\}\})'
 template_parameter_regex = r'(\w+([ ]\w+)*)[ ]*=[ ]*([^|]*)'
@@ -45,8 +43,6 @@ global_shadows = [
     ("\\\'", txt_single_quote),
     (":", txt_colon),
     (";", txt_colon2),
-    ("$$$", txt_math_start),
-    ("$$$", txt_math_end),
     ("\n", txt_newline)
 ]
 
@@ -154,6 +150,7 @@ def process_file(str_content):
 
     content_tmp = re.sub(r'\<gallery\>[ \n]*([^\<]*(?!\<\/gallery\>)*)\<\/gallery\>', gallery_match, content_tmp)
 
+    # fix file links - since they are also stacked, this needs to happen recursively
     content_tmp = regex.sub(r'\[((?>[^\[\]]+|(?R))*)\]', file_match, content_tmp)
 
     # replace '{{ stuff }}' mediawiki syntax with '{% include stuff %}` liquid
@@ -163,12 +160,18 @@ def process_file(str_content):
     content_tmp = content_tmp.replace("{{}}", "")
     content_tmp = content_tmp.replace("{{!}}", "")
 
+    # fix tables
+    # - keep row style
     content_tmp = re.sub(r'\{\|style=\"([^\n]+)\"[ ]*\n([^\n]+)', match_table_header, content_tmp)
     content_tmp = re.sub(r'(\||\!) style=\"([^\"]*)\"[ ]*\|', match_table_row_style, content_tmp)
+    # - fix colspan - add additional columns to make pandoc not skip table content
     content_tmp = re.sub(r'(\!|\|) colspan=(\d*)[ ]*(?:style\=\"([^\"]*)\")?(?:[ ]*\|([^\n]*))\n', match_table_colspan, content_tmp)
+    content_tmp = re.sub(r'\n(\||\!)(.*(?:' + txt_include_start + ')+.*)', r'\n\1<span><br/></span>\2', content_tmp)
+
+    # fix math - keeping the math tags makes
     content_tmp = content_tmp.replace("<math>", "$$")
     content_tmp = content_tmp.replace("</math>", "$$")
-    content_tmp = re.sub(r'\n(\||\!)(.*(?:' + txt_include_start + ')+.*)', r'\n\1<span><br/></span>\2', content_tmp)
+
     # print(content_tmp)
     return content_tmp
 
@@ -581,18 +584,30 @@ def convert(path_in, path_out, layout, title):
         # print(content_tmp)
 
         # do replacements in md format
+
+        # bring all shadowed includes back
         content_tmp = reveal_includes(content_tmp)
-        content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
+
+        # fix <http://imagej.net> links
+        content_tmp = re.sub(r'<(http.*)>', r'\1', content_tmp)
+        # fix escaped | in breadcrumb include
         content_tmp = re.sub(r'(\{\% include bc content)(.+?)(?=\%\})', fix_bc_include, content_tmp)
+        # fix internal links
         content_tmp = re.sub(r'((?<!\!)\[[^\]]*\]\()((?!#)(?!http)(?!mailto\:)(?:[^\)\"]|(?:\\\)))*)([.]*(?:\"[^\"]*\")?(?<!\\)\))', fix_link_match, content_tmp)
+        # fix internal image src paths
         content_tmp = re.sub(r'<img src=\"(?!http)(?!/images/pages/)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
         content_tmp = re.sub(r'((?<!-)\!\[(?!\[)[^\]]*\]\()((?!http)(?!\/images\/pages\/)[^\"\)]*)([ \n]*(?:\"[^\"]*\")?[ ]*\))', fix_md_image, content_tmp)
+        # remove empty html tags I guess?!
         content_tmp = re.sub(r'\<span\>[ \n]*\<br[ ]*\/\>[ \n]*\<\/span\>', r'', content_tmp)
+        # reapply table row styles
         content_tmp = re.sub(r'(\<td|\<th)(\>.*?(?=' + txt_apply_style_start + '))' + txt_apply_style_start + '(.+?)(?=' + txt_apply_style_end + ')' + txt_apply_style_end, r'\1 style="\3"\2', content_tmp)
         content_tmp = re.sub(r'\| ' + txt_apply_style_start + '(.+?)(?=' + txt_apply_style_end + ')' + txt_apply_style_end, r'|', content_tmp)
         content_tmp = re.sub(r'' + txt_apply_style_start + '([^\n]*)' + txt_apply_style_end + '[\n ]*(<\w*)', r'\2 style="\1"', content_tmp)
+        # remove empty paragraph tags
         content_tmp = re.sub(r'\<p\>\<\/p\>', r'', content_tmp)
+        # remove left over styles which could not be attached to any HTML tag
         content_tmp = re.sub(r'\n' + txt_apply_style_start + '.*' + txt_apply_style_end, r'', content_tmp)
+        # fix math
         content_tmp = re.sub(r'\$\$(.+?)(?=\$\$)\$\$', fix_converted_math, content_tmp)
         if title in fix_math:
             content_tmp = re.sub(r'\n(\$\$.*\$\$)\n', r'\n{% raw %}\1{% endraw %}\n', content_tmp)
