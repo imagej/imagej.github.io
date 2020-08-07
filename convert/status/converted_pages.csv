@@ -56,6 +56,7 @@
 2010-05-11_-_A_new_home_for_ImageJA.mw
 2010-05-22_-_3D_viewer_published_in_BMC_Bioinformatics.mw
 2010-06-03_-_New_SPIM_registration_plugin_-_released_and_published_in_Nature_Methods.mw
+2010-06-14_-_Fiji_"Heidelberg"_is_out.mw
 2010-06-20_-_Fiji_at_Cold_Spring_Harbor_Laboratory.mw
 2010-06-29_-_Fix_for_MacOSX_Updater_issue_available.mw
 2010-07-23_-_Introduction_to_developing_plugins_available.mw
@@ -111,6 +112,7 @@
 2012-02-17_-_Using_git-svn_to_develop_ImageJ2.mw
 2012-03-09_-_Auto-synchronizing_repositories.mw
 2012-03-12_-_ImageJ_2.0.0-beta1_is_nigh!.mw
+2012-03-20_-_Unit_tests_for_ImageJ_1.46.mw
 2012-03-29_ImageJ_2.0.0-beta1_release_underway.mw
 2012-04-01_-_Fiji_release_of_the_Balloon_Plugin.mw
 2012-04-09_-_First_beta_of_ImageJ2_is_out.mw
@@ -205,9 +207,11 @@
 2016-01-05_-_ImageScience_is_moving_to_an_update_site.mw
 2016-01-29_-_KNIME_Image_Processing_hackathon.mw
 2016-03-31_-_TrackMate_v3.1.0_released.mw
+2016-04-19_-_Writing_ImageJ2_Plugins:_A_Beginner's_Perspective.mw
 2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D.mw
 2016-05-25_-_The_ImageJ_site_has_a_new_look!.mw
 2016-06-23_-_ImgLib2_hackathon.mw
+2016-07-21_-_KNIME_Image_Processing_hackathon.mw
 2016-12-20_-_Fiji_+_KNIP_hackathon.mw
 2016-12-29_-_ImageJ_web_resources_now_support_HTTPS.mw
 2017-01-24_-_ImageJ2_manuscript_preprint_now_available_on_arXiv.mw
@@ -227,6 +231,7 @@
 2019-01-17_-_Fiji_Hackathon_-_Parallelization_and_HPC.mw
 2019-01-17_-_Fiji_Hackathon_–_Parallelization_and_HPC.mw
 2019-06_-_DAIS_learnathon.mw
+2D_Histogram.mw
 2D_Stitching.mw
 3D.mw
 3D_Binary_Filters.mw
@@ -288,6 +293,7 @@ Advanced_Weka_Segmentation.mw
 Advanced_Weka_Segmentation_-_How_to_compare_classifiers.mw
 Advanced_mode(MTrack).mw
 Advanced_mode.mw
+Alida.mw
 Align_Image_by_line_ROI.mw
 Align_RGB_planes.mw
 Align_by_ROI.mw
@@ -361,6 +367,7 @@ Beanshell.mw
 Beanshell_Scripting.mw
 BigDataProcessor.mw
 BigDataProcessor2.mw
+BigDataServer.mw
 BigDataServerDraft.mw
 BigDataViewer.mw
 BigDataViewer_Example_Datasets.mw
@@ -541,6 +548,7 @@ Chromatic_shift_origins_measurement_and_correction.mw
 Citations.mw
 Cite.mw
 Citing.mw
+Classic_Watershed.mw
 ClearVolume.mw
 Clear_BoneJ_results.mw
 Clij.mw
@@ -624,6 +632,7 @@ Correct_Particles_Drift_(based_on_ROI).mw
 Correcting_drift_in_FRAP_experiments.mw
 Courses.mw
 CoverMaker_plugin.mw
+Cover_Maker.mw
 Create_3D_calibration_(requires_astigmatism).mw
 Creating_Imglib2_images_in_MATLAB.mw
 Crop_(3D).mw
@@ -648,6 +657,7 @@ Debug.mw
 Debugging.mw
 Debugging_Exercises.mw
 Debugging_intro.mw
+Deconvolution.mw
 Deconvolution_tips.mw
 DeepClas4Bio.mw
 Deep_Zoom.mw
@@ -705,6 +715,7 @@ Dithering.mw
 Docker.mw
 Docs.mw
 Documentation.mw
+DokuWiki_Migration.mw
 Dotfiles.mw
 Download.mw
 Downloading_and_Building_Fiji_From_Source.mw
@@ -776,6 +787,7 @@ Fiji%2FDownload.mw
 Fiji%2FDownloads.mw
 Fiji%2FMenu.mw
 Fiji%2FPublications.mw
+Fiji%2FYouTube_Channel.mw
 Fiji%2FZ-Spacing_Correction.mw
 Fiji's_Menu.mw
 Fiji.mw
@@ -942,6 +954,7 @@ Image5D.mw
 ImageJ-MATLAB.mw
 ImageJ-Ops.mw
 ImageJ-matlab.mw
+ImageJ.mw
 ImageJ1-ImageJ2_cheat_sheet.mw
 ImageJ1.mw
 ImageJ2%2FDocumentation%2FEdit%2FOptions%2FCompatibility.mw
@@ -1222,6 +1235,7 @@ Miniature_Faking.mw
 Minimum%2FMaximum%2FMedian.mw
 Minimum_(3D).mw
 Minimum_Cost_Z_surface_Projection.mw
+Minimum_Splits_and_Mergers_Warping_error.mw
 Misc.mw
 Mission.mw
 Mixture_Modeling_Thresholding.mw
@@ -1293,6 +1307,7 @@ Open_source.mw
 Ops.mw
 OpsDeconvolution.mw
 Ops_Browser.mw
+Ops_Deconvolution.mw
 Orientation.mw
 OtoRing.mw
 Overview_of_Fiji's_source_code.mw
@@ -1371,6 +1386,7 @@ ROI_Conversions.mw
 ROI_Picker.mw
 ROIs.mw
 Radial_Symmetry.mw
+Rand_error.mw
 RandomJ.mw
 Ransac_fits.mw
 Raspberry_Pi.mw
@@ -1499,6 +1515,7 @@ Segmentation.mw
 Segmentation_Editor.mw
 Segmentation_evaluation_after_border_thinning_-_Script.mw
 Segmentation_evaluation_metrics_-_Script.mw
+Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012.mw
 Select_Bounding_Box.mw
 Select_Bounding_Box_(guess_background_color).mw
 SemVer.mw
@@ -1517,6 +1534,7 @@ Shepp-Logan_Phantom_(Plugin).mw
 SheppLogan.mw
 Sholl.mw
 Sholl_Analysis....mw
+Sholl_Analysis.mw
 Shortcuts_to_folders_inside_Fiji.app.mw
 Show_Color_Surfaces.mw
 Sigma_Filter.mw
@@ -1667,6 +1685,7 @@ ToAST.mw
 Tools.mw
 Topic_branches.mw
 TopoJ.mw
+Topology_preserving_warping_error.mw
 TraJClassifier.mw
 TrackMate.mw
 TrackMate3_devel.mw
@@ -1692,6 +1711,7 @@ TrakEM2.mw
 TrakEM2_(blank).mw
 TrakEM2_(from_template).mw
 TrakEM2_Archipelago.mw
+TrakEM2_Scripting.mw
 TrakEM2_TPlugIn.mw
 TrakEM2_add_more_sections%2Flayers_tutorial.mw
 TrakEM2_align_sections_tutorial.mw
@@ -2022,6 +2042,7 @@ VTEA.mw
 Vaa3d_Reader.mw
 Vaa3d_Writer.mw
 Version.mw
+Versioning.mw
 Versions.mw
 Vessel_Analysis.mw
 Video.mw

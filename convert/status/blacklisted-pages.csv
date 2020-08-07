@@ -1,26 +1,2 @@
 name,failing component,reason
-2010-06-14_-_Fiji_"Heidelberg"_is_out,liquid,one bc template is not closed
-2010-06-14_-_Fiji_Heidelberg_is_out,liquid,one bc template is not closed
-2012-03-20_-_Unit_tests_for_ImageJ_1.46,pandoc,
-2016-04-19_-_Writing_ImageJ2_Plugins:_A_Beginner's_Perspective,reader,
-2016-07-21_-_KNIME_Image_Processing_hackathon,liquid,gallery messing with include
-2D_Histogram,pandoc,
-Alida,pandoc,
-BigDataServer,pandoc,
-Classic_Watershed,linquid,syntax with image attached to infobox is not converted
-Cover_Maker,liquid,include captures in tables don't work
-Deconvolution,pandoc,
-DokuWiki_Migration,liquid,
-Fiji_Contribution_requirements,pandoc,
-Fiji%2FYouTube_Channel,liquid,youtube playlist
-ImageJ,liquid,timline needs to be replaced before conversion
-Minimum_Splits_and_Mergers_Warping_error,liquid,indendation in cite block converts to code block
-Ops_Deconvolution,liquid,math formulas look like liquid
-Rand_error,liquid,math formulas
-Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012,liquid,line break in cite creates code block
-Sholl_Analysis,liquid,intended lines create weird conversions
-Topology_preserving_warping_error,liquid,line break in cite creates code block
-TrakEM2_Scripting,liquid, whitespace before list items -> code blocks
-Tree_and_Menu_Demo,liquid,mediawiki demo page
 User:Freetrashbox%2FDiameterJ,reader,chinese symbols
-Versioning,pandoc,
