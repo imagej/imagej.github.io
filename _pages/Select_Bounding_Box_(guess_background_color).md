@@ -1,1 +1,0 @@
-#REDIRECT [[Auto Crop]]

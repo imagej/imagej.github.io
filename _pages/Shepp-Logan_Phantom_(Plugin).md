@@ -1,1 +1,0 @@
-#REDIRECT [[Shepp-Logan Phantom]]

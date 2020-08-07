@@ -1,1 +1,0 @@
-#REDIRECT [[Fiji/Menu]]

@@ -1,1 +1,0 @@
-#REDIRECT [[Adelson's Squares]]

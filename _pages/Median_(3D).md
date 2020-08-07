@@ -1,1 +1,0 @@
-#REDIRECT [[Minimum/Maximum/Median]]
