@@ -1,1 +1,0 @@
-{{Notice | The '''''recommended''''' way to get help with ImageJ is to use the '''[https://forum.image.sc/ Image.sc Forum]'''.<br>You will find a friendly community with many experts on both scientific and technical topics.}}
