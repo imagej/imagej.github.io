@@ -31,28 +31,44 @@ Active contours evolve an initial contour in time according to multiple intrinsi
 
 This implementation is based on following PDE update:
 
-\(\Phi(i) = \Delta T g(i) ( W_a F_a |\nabla\Phi| + W_c F_c |\nabla\Phi| )\)
+$$\Phi(i) = \Delta T g(i) ( W_a F_a |\nabla\Phi| + W_c F_c |\nabla\Phi| )$$
 
 with
 
-\[g(I) = \frac{1}{1 + ({\nabla I}^*  + g) \cdot 2}\]
+  -   
+    $$g(I) = \frac{1}{1 + ({\nabla I}^*  + g) \cdot 2}$$
 
-\[\nabla I^*\] = difference of smoothened (gaussian blurred) image
+<!-- end list -->
 
-\[g = \begin{cases} 0  & \text{if gray value } < \text{ preset gray value.}\\
-\text{gray value }&\text{otherwise.} \end{cases}\]
+  - 
+    
+      -   
+        $$\nabla I^*$$ = difference of smoothened (gaussian blurred) image
 
-\[\Delta T = \frac{1}{6 \cdot W_a \cdot W_c}\]
+<!-- end list -->
 
-\[\Phi(i)\] = iso surface at current iteration i
+  - 
+    
+      -   
+        $$<math>g = \\begin{cases} 0 & \\text{if gray value } \< \\text{ preset gray value.}\\\\
 
-\[W_a\] = Advection weight
+\\text{gray value }&\\text{otherwise.} \\end{cases}</math>$$
 
-\[F_a\] = Advection force
+  -   
+    $$\Delta T = \frac{1}{6 \cdot W_a \cdot W_c}$$
 
-\[W_c\] = Curvature weight
+<!-- end list -->
 
-\[F_c\] = Curvature force
+  -   
+    $$\Phi(i)$$ = iso surface at current iteration i
+
+<!-- end list -->
+
+  -   
+    $$W_a$$ = Advection weight
+    $$F_a$$ = Advection force
+    $$W_c$$ = Curvature weight
+    $$F_c$$ = Curvature force
 
 A more detailed explanation of the algorithm can be found at following links:
 

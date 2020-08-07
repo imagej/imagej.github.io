@@ -105,7 +105,7 @@ Here is logged all modification made to the structure of this wiki (not its cont
 
 <!-- end list -->
 
-  - 05/11/08 - JYT: enabled TeX. \<math\> tags are now supported. Help on syntax can be found [here](http://meta.wikimedia.org/wiki/Help:Formula).
+  - 05/11/08 - JYT: enabled TeX. $$\<math\> tags are now supported. Help on syntax can be found [here](http://meta.wikimedia.org/wiki/Help:Formula).
 
 <!-- end list -->
 

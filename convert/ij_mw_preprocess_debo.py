@@ -20,12 +20,16 @@ txt_apply_style_start = "%NN%"
 txt_apply_style_end = "%OO%"
 txt_colon = "%PP%"
 txt_colon2 = "%QQ%"
+txt_math_start = "%RR%"
+txt_math_end = "%SS%"
 
 template_regex = r'(((?<=\n)[ ]*)*(?<!<nowiki>)\{\{[\n ]*([A-Za-z0-9_]*)[ \n]*\:?\|?[ \n]*(([\s\S]*?))\}\})'
 template_parameter_regex = r'(\w+([ ]\w+)*)[ ]*=[ ]*([^|]*)'
 include_regex = r'((\n )*\{\%[\n ]*include\ ([^\ \n]*)([^\%]*)\%\})'
 include_shadowed_regex = r'(' + txt_include_start + '.+?(?=(' + txt_liquid_linebreak_end + '|' + txt_liquid_end + '))(' + txt_liquid_linebreak_end + '|' + txt_liquid_end + '))'
 link_with_vertical_bar_regex = r'(\[\[[^\]]*\|[^\]]*\]\])'
+
+fix_math = ["Ops Deconvolution"]
 
 global_shadows = [
     ("{% include ", txt_include_start),
@@ -41,6 +45,8 @@ global_shadows = [
     ("\\\'", txt_single_quote),
     (":", txt_colon),
     (";", txt_colon2),
+    ("$$", txt_math_start),
+    ("$$", txt_math_end),
     ("\n", txt_newline)
 ]
 
@@ -158,6 +164,8 @@ def process_file(str_content):
     content_tmp = re.sub(r'\{\|style=\"([^\n]+)\"[ ]*\n([^\n]+)', match_table_header, content_tmp)
     content_tmp = re.sub(r'(\||\!) style=\"([^\"]*)\"[ ]*\|', match_table_row_style, content_tmp)
     content_tmp = re.sub(r'(\!|\|) colspan=(\d*)[ ]*(?:style\=\"([^\"]*)\")?(?:[ ]*\|([^\n]*))\n', match_table_colspan, content_tmp)
+    content_tmp = content_tmp.replace("<math>", txt_math_start + "<math>")
+    content_tmp = content_tmp.replace("</math>", "</math>" + txt_math_end)
     # print(content_tmp)
     return content_tmp
 
@@ -563,7 +571,7 @@ def convert(path_in, path_out, layout, title):
         # open output file and create list
         content_tmp = read_file(path_out)
 
-        print(content_tmp)
+        # print(content_tmp)
 
         # do replacements in md format
         content_tmp = reveal_includes(content_tmp)
@@ -576,6 +584,9 @@ def convert(path_in, path_out, layout, title):
         content_tmp = re.sub(r'' + txt_apply_style_start + '([^\n]*)' + txt_apply_style_end + '[\n ]*(<\w*)', r'\2 style="\1"', content_tmp)
         content_tmp = re.sub(r'\<p\>\<\/p\>', r'', content_tmp)
         content_tmp = re.sub(r'\n' + txt_apply_style_start + '.*' + txt_apply_style_end, r'', content_tmp)
+        content_tmp = re.sub(r'\$\$\\\((.+?)(?=\\\)\$\$)\\\)\$\$', r'$$\1$$', content_tmp)
+        if title in fix_math:
+            content_tmp = re.sub(r'\n(\$\$.*\$\$)\n', r'\n{% raw %}\1{% endraw %}\n', content_tmp)
 
         # pattern = re.compile(include_regex)
         # for match in re.findall(pattern, content_tmp):

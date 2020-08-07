@@ -53,7 +53,7 @@ Once you have detected interest points, a dialog with expert options will pop up
 
 <img src="/images/pages/BigStitcher icp 02.png" width="500"/>
 
-If you opted for **Regularization** of the transform in the previous dialog, you will be asked for the type of the second transformation model to estimate and a **lambda** (\(\in[0,1]\)), i.e. how much weight you want to give to the regularizing model in the final averaged result.
+If you opted for **Regularization** of the transform in the previous dialog, you will be asked for the type of the second transformation model to estimate and a **lambda** ($$\in[0,1]$$), i.e. how much weight you want to give to the regularizing model in the final averaged result.
 
 <img src="/images/pages/BigStitcher regularize model.png" width="400"/>
 

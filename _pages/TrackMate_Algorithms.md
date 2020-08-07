@@ -207,7 +207,7 @@ It really report how much the particle 'walked'. For instance, if a particle tra
 
 <center>
 
-` `\(\text{ total distance travelled } = \sum_{i} d_{i,i+1}\)
+` $$`\(\text{ total distance travelled } = \sum_{i} d_{i,i+1}\)`$$`
 
 </center>
 
@@ -221,7 +221,7 @@ This distance is a "straight-line" distance. In our example above with the parti
 
 <center>
 
-` `\(\text{max distance traveled} = \text{Max}_{i,j} ( d_{ij} )\)
+` $$`\(\text{max distance traveled} = \text{Max}_{i,j} ( d_{ij} )\)`$$`
 
 </center>
 
@@ -233,7 +233,7 @@ The confinement ratio tells how "efficient" was a track displacement in getting 
 
 <center>
 
-` `\(\text{confinement ratio} = \frac{ \text{net distance} }{ \text{ total distance travelled } }\)
+` $$`\(\text{confinement ratio} = \frac{ \text{net distance} }{ \text{ total distance travelled } }\)`$$`
 
 </center>
 
@@ -247,7 +247,7 @@ The mean straight line speed is the defined as the net displacement (*Track disp
 
 <center>
 
-` `\(\text{mean straight line speed} = \frac{ \text{net distance} }{ \text{ total track time } }\)
+` $$`\(\text{mean straight line speed} = \frac{ \text{net distance} }{ \text{ total track time } }\)`$$`
 
 </center>
 
@@ -259,7 +259,7 @@ This value is simply the ratio between the **mean straight line speed** and the 
 
 <center>
 
-` `\(\text{linearity of forward progression} = \frac{ \text{mean straight line speed} }{ \text{ mean speed } }\)
+` $$`\(\text{linearity of forward progression} = \frac{ \text{mean straight line speed} }{ \text{ mean speed } }\)`$$`
 
 </center>
 
@@ -271,7 +271,7 @@ This value measure the angle between two succeeding links, averaged over all the
 
 <center>
 
-` `\(\text{ mean directional change } = \frac{1}{N} \sum \alpha_{i,i+1}\)
+` $$`\(\text{ mean directional change } = \frac{1}{N} \sum \alpha_{i,i+1}\)`$$`
 
 </center>
 
@@ -327,7 +327,7 @@ The user is asked for a maximal allowed linking distance (entered in physical un
 1.  The distance between the two spots D is calculated
 2.  If the spots are separated by more than the max allowed distance, the link is forbidden, and the cost is set to [infinity](http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html#POSITIVE_INFINITY) (*i.e* the blocking value). If not,
 3.  For each feature in the map, a penalty p is calculated as  
-    \(p = 3 \times W \times \frac{ | f_1-f_2|}{f_1+f_2}\)  
+    $$p = 3 \times W \times \frac{ | f_1-f_2|}{f_1+f_2}$$  
     where W is the factor associated to the feature in the map. This expression is such that:
       - there is no penalty if the 2 feature values f1 and f2 are the same;
       - with a factor of 1, the penalty is 1 is one value is the double of the other;

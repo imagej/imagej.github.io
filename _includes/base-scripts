@@ -7,4 +7,4 @@
 <script src="{{"/assets/js/main.js" | relative_url}}"></script>
 <script src="{{"/assets/js/ham_nav.js" | relative_url}}"></script>
 <script src="{{"/assets/js/lightbox.min.js" | relative_url}}"></script>
-
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
