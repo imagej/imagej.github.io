@@ -112,14 +112,25 @@ Debugging JVM hangs
 
 When the Java VM hangs, the reason might be a dead-lock. Try taking a [stack trace](Troubleshooting#If_ImageJ_freezes_or_hangs ). If you have trouble, you can try one of the following advanced techniques:
 
-1.  You can use the `jstack` command (you don't need to run ImageJ from the command line in this case). This requires that you first find the PID (process ID) of ImageJ. You can do so by running:
-        jps
+<li style="padding-bottom: 5px">
 
-    from the command line to print a list of running Java processes. If you're not sure which PID is ImageJ's, you can close ImageJ, run `jps`, open ImageJ and run `jps` again. Whichever PID is present in the second run but not the first is ImageJ's. Then, to acquire a stack trace, just run:
+You can use the `jstack` command (you don't need to run ImageJ from the command line in this case). This requires that you first find the PID (process ID) of ImageJ. You can do so by running:
 
-        jstack <ImageJ's PID>
-2.  For GUI-based debugging, can also attach to the ImageJ PID using the `jvisualvm` program that you can find in `java/`<platform>`/`<jdk>`/bin/`. Here you can simply press a big *Thread Dump* button to view the stack trace.
-    MacOSX users, please note that Apple decided that the VisualVM tool should no longer be shipped with the Java Development Kit; you will have to download it [from here](http://visualvm.java.net/download.html).
+    jps
+
+from the command line to print a list of running Java processes. If you're not sure which PID is ImageJ's, you can close ImageJ, run `jps`, open ImageJ and run `jps` again. Whichever PID is present in the second run but not the first is ImageJ's. Then, to acquire a stack trace, just run:
+
+    jstack <ImageJ's PID>
+
+</li>
+<li>
+
+For GUI-based debugging, can also attach to the ImageJ PID using the `jvisualvm` program that you can find in `java/`<platform>`/`<jdk>`/bin/`. Here you can simply press a big *Thread Dump* button to view the stack trace.
+
+MacOSX users, please note that Apple decided that the VisualVM tool should no longer be shipped with the Java Development Kit; you will have to download it [from here](http://visualvm.java.net/download.html).
+
+</li>
+</ol>
 
 Regardless of which method you use to acquire the stack trace, to debug you will want to acquire multiple stack traces over time and compare. If all the stack traces are in the same method execution, then that's the source of the deadlock (or slowdown).
 

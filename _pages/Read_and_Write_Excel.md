@@ -18,18 +18,18 @@ Introduction
 
 Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 
-| Version | Release Date                                | Notes                                                                                                                                                                    |
-|---------|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| v1.0.0  | 19 Nov 2015 |                                                                                                                                                                          |
-| v1.0.1  | 25 Nov 2015 |                                                                                                                                                                          |
-| v1.0.2  | 10 Apr 2017 |                                                                                                                                                                          |
+| Version | Release Date                                | Notes                                                                                                                                    |
+|---------|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| v1.0.0  | 19 Nov 2015 |                                                                                                                                          |
+| v1.0.1  | 25 Nov 2015 |                                                                                                                                          |
+| v1.0.2  | 10 Apr 2017 |                                                                                                                                          |
 | v1.1.0  | 27 Feb 2018 | <span style="font-size:80%; line-height: 0.9em;">This version contains many new features that have been added by Brenden Kromhout https://github.com/bkromhout> </span |
-| v1.1.1  | 02 Jul 2018 |                                                                                                                                                                          |
-| v1.1.2  | 04 Nov 2018 |                                                                                                                                                                          |
-| v1.1.3  | Jan 2019    |                                                                                                                                                                          |
-| v1.1.4  | 17 Apr 2019 |                                                                                                                                                                          |
-| v1.1.5  | 30 Nov 2019 |                                                                                                                                                                          |
-| v1.1.6  | 20 May 2020 |                                                                                                                                                                          |
+| v1.1.1  | 02 Jul 2018 |                                                                                                                                          |
+| v1.1.2  | 04 Nov 2018 |                                                                                                                                          |
+| v1.1.3  | Jan 2019    |                                                                                                                                          |
+| v1.1.4  | 17 Apr 2019 |                                                                                                                                          |
+| v1.1.5  | 30 Nov 2019 |                                                                                                                                          |
+| v1.1.6  | 20 May 2020 |                                                                                                                                          |
 
 class="nowrap" \| Release version dates
 

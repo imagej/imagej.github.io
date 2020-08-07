@@ -48,18 +48,36 @@ Scene Controls
 
 <div align="left">
 
--   <img src="/images/pages/reconstruction-viewer-not-stretched.png" title="fig:Stretch-to-Fill - disabled" width="200" alt="Stretch-to-Fill - disabled" />
--   <img src="/images/pages/reconstruction-viewer-stretched.png" title="fig:Stretch-to-Fill - enabled" width="200" alt="Stretch-to-Fill - enabled" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/reconstruction-viewer-not-stretched.png" title="Stretch-to-Fill - disabled" width="200" alt="Stretch-to-Fill - disabled" /><figcaption aria-hidden="true">Stretch-to-Fill - disabled</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/reconstruction-viewer-stretched.png" title="Stretch-to-Fill - enabled" width="200" alt="Stretch-to-Fill - enabled" /><figcaption aria-hidden="true">Stretch-to-Fill - enabled</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 -   {% include bc content='Impose Isotropic Scale|  '%} Squares the aspect ratio of the selected dimensions, leaving the others unchanged.
 
 <div align="left">
 
--   <img src="/images/pages/reconstruction-viewer-aspect-ratio-none.png" title="fig:Impose Isotropic Scale - None" width="200" alt="Impose Isotropic Scale - None" />
--   <img src="/images/pages/reconstruction-viewer-aspect-ratio-ZY.png" title="fig:Impose Isotropic Scale - ZY" width="200" alt="Impose Isotropic Scale - ZY" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/reconstruction-viewer-aspect-ratio-none.png" title="Impose Isotropic Scale - None" width="200" alt="Impose Isotropic Scale - None" /><figcaption aria-hidden="true">Impose Isotropic Scale - None</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/reconstruction-viewer-aspect-ratio-ZY.png" title="Impose Isotropic Scale - ZY" width="200" alt="Impose Isotropic Scale - ZY" /><figcaption aria-hidden="true">Impose Isotropic Scale - ZY</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 -   {% include bc content='Full Screen'%} {% include key content='Shift' %} + {% include key content='F' %} Enters full screen mode. To exit full screen press {% include key content='ESC' %}
@@ -91,33 +109,53 @@ This menu relates to the import, customization and management of rendered recons
 
 <div align="left">
 
--   <img src="/images/pages/reconstruction-viewer-color-mapping-individual.png" title="fig:Branch Order and Ice LUT" width="200" alt="Branch Order and Ice LUT" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/reconstruction-viewer-color-mapping-individual.png" title="Branch Order and Ice LUT" width="200" alt="Branch Order and Ice LUT" /><figcaption aria-hidden="true">Branch Order and Ice LUT</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 -   {% include bc content='Color Coding|Group of Cells...'%} Applies morphometric color coding to a selected group of reconstruction. Note that this option uses the chosen LUT to assign a homogeneous color to each reconstruction in the group based on the chosen metric.
 
 <div align="left">
 
--   <img src="/images/pages/reconstruction-viewer-color-mapping-group.png" title="fig:No. Branch Points and Ice LUT" width="200" alt="No. Branch Points and Ice LUT" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/reconstruction-viewer-color-mapping-group.png" title="No. Branch Points and Ice LUT" width="200" alt="No. Branch Points and Ice LUT" /><figcaption aria-hidden="true">No. Branch Points and Ice LUT</figcaption></figure>
+
+</ul>
 </div>
 
 -   {% include bc content='Color Coding|Color Each Cell Uniquely'%} Applies a unique homogeneous color to each selected reconstruction. Note this option will override any previously applied color mapping to the selected reconstructions.
 
 <div align="left">
 
--   <img src="/images/pages/reconstruction-viewer-color-mapping-unique.png" title="fig:Unique Color Coding" width="200" alt="Unique Color Coding" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/reconstruction-viewer-color-mapping-unique.png" title="Unique Color Coding" width="200" alt="Unique Color Coding" /><figcaption aria-hidden="true">Unique Color Coding</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 -   {% include bc content='Thickness...'%} Specifies a constant thickness to be applied to the selected reconstructions. Note this value will only affect how Paths are displayed in the Reconstruction Viewer.
 
 <div align="left">
 
--   <img src="/images/pages/reconstruction-viewer-thickness-1.png" title="fig:Thickness = 1.0" width="200" alt="Thickness = 1.0" />
--   <img src="/images/pages/reconstruction-viewer-thickness-5.png" title="fig:Thickness = 5.0" width="200" alt="Thickness = 5.0" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/reconstruction-viewer-thickness-1.png" title="Thickness = 1.0" width="200" alt="Thickness = 1.0" /><figcaption aria-hidden="true">Thickness = 1.0</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/reconstruction-viewer-thickness-5.png" title="Thickness = 5.0" width="200" alt="Thickness = 5.0" /><figcaption aria-hidden="true">Thickness = 5.0</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 -   {% include bc content='Translate...'%} Specifies a translation to be applied to the selected reconstructions. To avoid overwriting data from a tracing session, this command is only available in the standalone viewer.
@@ -149,9 +187,18 @@ Manage and Customize 3D Meshes
 
 <div align="left">
 
--   <img src="/images/pages/reconstruction-viewer-obj-transparency-5.png" title="fig:Transparency = 5%" width="300" alt="Transparency = 5%" />
--   <img src="/images/pages/reconstruction-viewer-obj-transparency-95.png" title="fig:Transparency = 95%" width="300" alt="Transparency = 95%" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/reconstruction-viewer-obj-transparency-5.png" title="Transparency = 5%" width="300" alt="Transparency = 5%" /><figcaption aria-hidden="true">Transparency = 5%</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/reconstruction-viewer-obj-transparency-95.png" title="Transparency = 95%" width="300" alt="Transparency = 95%" /><figcaption aria-hidden="true">Transparency = 95%</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 {% include clear%}
@@ -168,9 +215,18 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 <div align="left">
 
--   <img src="/images/pages/reconstruction-viewer-allen-ccf-ontology.png" title="fig:Allen CCF Navigator" width="200" alt="Allen CCF Navigator" />
--   <img src="/images/pages/reconstruction-viewer-allen-ccf-thalamus-info.png" title="fig:Allen CCF Ontology Info" width="200" alt="Allen CCF Ontology Info" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/reconstruction-viewer-allen-ccf-ontology.png" title="Allen CCF Navigator" width="200" alt="Allen CCF Navigator" /><figcaption aria-hidden="true">Allen CCF Navigator</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/reconstruction-viewer-allen-ccf-thalamus-info.png" title="Allen CCF Ontology Info" width="200" alt="Allen CCF Ontology Info" /><figcaption aria-hidden="true">Allen CCF Ontology Info</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 ### Zebrafish
@@ -189,10 +245,24 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 <div align="center">
 
--   <img src="/images/pages/reconstruction-flycircuit-reference.png" title="fig:FlyCircuit Drosophila (Adult)" width="300" alt="FlyCircuit Drosophila (Adult)" />
--   <img src="/images/pages/reconstruction-viewer-whole-mouse-thalamus.png" title="fig:Allen Adult Mouse Whole Brain + Thalamus" width="300" alt="Allen Adult Mouse Whole Brain + Thalamus" />
--   <img src="/images/pages/reconstruction-viewer-zebrafish-reference.png" title="fig:Max Planck ZBA" width="300" alt="Max Planck ZBA" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/reconstruction-flycircuit-reference.png" title="FlyCircuit Drosophila (Adult)" width="300" alt="FlyCircuit Drosophila (Adult)" /><figcaption aria-hidden="true">FlyCircuit Drosophila (Adult)</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/reconstruction-viewer-whole-mouse-thalamus.png" title="Allen Adult Mouse Whole Brain + Thalamus" width="300" alt="Allen Adult Mouse Whole Brain + Thalamus" /><figcaption aria-hidden="true">Allen Adult Mouse Whole Brain + Thalamus</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/reconstruction-viewer-zebrafish-reference.png" title="Max Planck ZBA" width="300" alt="Max Planck ZBA" /><figcaption aria-hidden="true">Max Planck ZBA</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 {% include clear%}
@@ -211,8 +281,12 @@ Analyze and Measure
 
 <div align="left">
 
--   <img src="/images/pages/reconstruction-viewer-measurements-AA0100.png" title="fig:AA0100 Measurements" width="900" alt="AA0100 Measurements" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/reconstruction-viewer-measurements-AA0100.png" title="AA0100 Measurements" width="900" alt="AA0100 Measurements" /><figcaption aria-hidden="true">AA0100 Measurements</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 ### Distribution Analysis
@@ -222,9 +296,18 @@ Analyze and Measure
 
 <div align="left">
 
--   <img src="/images/pages/reconstruction-viewer-AA0100-distribution-analysis.png" title="fig:AA0100: Branch Order" width="200" alt="AA0100: Branch Order" />
--   <img src="/images/pages/reconstruction-viewer-OP-distribution-analysis.png" title="fig:9 OP fibers: # Branch Points" width="200" alt="9 OP fibers: # Branch Points" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/reconstruction-viewer-AA0100-distribution-analysis.png" title="AA0100: Branch Order" width="200" alt="AA0100: Branch Order" /><figcaption aria-hidden="true">AA0100: Branch Order</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/reconstruction-viewer-OP-distribution-analysis.png" title="9 OP fibers: # Branch Points" width="200" alt="9 OP fibers: # Branch Points" /><figcaption aria-hidden="true">9 OP fibers: # Branch Points</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 ### Single-Cell Analysis
@@ -237,18 +320,36 @@ Analyze and Measure
 
 <div align="left">
 
--   <img src="/images/pages/reconstruction-viewer-AA0100-sholl-table.png" title="fig:AA0100 Sholl Table" width="200" alt="AA0100 Sholl Table" />
--   <img src="/images/pages/reconstruction-viewer-AA0100-sholl-plot.png" title="fig:AA0100 Sholl Plot" width="221" alt="AA0100 Sholl Plot" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/reconstruction-viewer-AA0100-sholl-table.png" title="AA0100 Sholl Table" width="200" alt="AA0100 Sholl Table" /><figcaption aria-hidden="true">AA0100 Sholl Table</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/reconstruction-viewer-AA0100-sholl-plot.png" title="AA0100 Sholl Plot" width="221" alt="AA0100 Sholl Plot" /><figcaption aria-hidden="true">AA0100 Sholl Plot</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 -   {% include bc content='Strahler Analysis'%} Conducts Strahler Analysis on the selected reconstruction. Note only one reconstruction may be analysed at a time.
 
 <div align="left">
 
--   <img src="/images/pages/reconstruction-viewer-AA0100-strahler-table.png" title="fig:AA0100 Strahler Table" width="227" alt="AA0100 Strahler Table" />
--   <img src="/images/pages/reconstruction-viewer-AA0100-strahler-plot.png" title="fig:AA0100 Strahler Plot" width="200" alt="AA0100 Strahler Plot" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/reconstruction-viewer-AA0100-strahler-table.png" title="AA0100 Strahler Table" width="227" alt="AA0100 Strahler Table" /><figcaption aria-hidden="true">AA0100 Strahler Table</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/reconstruction-viewer-AA0100-strahler-plot.png" title="AA0100 Strahler Plot" width="200" alt="AA0100 Strahler Plot" /><figcaption aria-hidden="true">AA0100 Strahler Plot</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 {% include clear%}

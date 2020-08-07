@@ -46,6 +46,9 @@ global_shadows = [
     ("\n", txt_newline)
 ]
 
+style_shadows = {}
+
+
 def read_file(file_path):
 
     #TODO: Sense box 'float = right' option and specifiy sidebox-right
@@ -172,8 +175,17 @@ def process_file(str_content):
     content_tmp = content_tmp.replace("<math>", "$$")
     content_tmp = content_tmp.replace("</math>", "$$")
 
+    # keep styles by shadowing them
+    content_tmp = re.sub(r'(<(?!div)\w+)( style\=\"[^\"]*\")', shadow_style, content_tmp)
+
     # print(content_tmp)
     return content_tmp
+
+
+def shadow_style(match):
+    id = "STYLE" + str(len(style_shadows))
+    style_shadows[id] = match.group(2)
+    return "<" + id + "/>" + match.group(1)
 
 
 def match_table_header(match):
@@ -603,10 +615,14 @@ def convert(path_in, path_out, layout, title):
         content_tmp = re.sub(r'(\<td|\<th)(\>.*?(?=' + txt_apply_style_start + '))' + txt_apply_style_start + '(.+?)(?=' + txt_apply_style_end + ')' + txt_apply_style_end, r'\1 style="\3"\2', content_tmp)
         content_tmp = re.sub(r'\| ' + txt_apply_style_start + '(.+?)(?=' + txt_apply_style_end + ')' + txt_apply_style_end, r'|', content_tmp)
         content_tmp = re.sub(r'' + txt_apply_style_start + '([^\n]*)' + txt_apply_style_end + '[\n ]*(<\w*)', r'\2 style="\1"', content_tmp)
+        # reapply styles of HTML tags
+        content_tmp = re.sub(r'\<(STYLE\d*)\/\>[ \n]*(\<\w*)', fix_style, content_tmp)
+        content_tmp = re.sub(r'\<p\>[ \n]*\<(STYLE\d*)\/\>[ \n]*(\<\w*)', fix_style, content_tmp)
         # remove empty paragraph tags
         content_tmp = re.sub(r'\<p\>\<\/p\>', r'', content_tmp)
         # remove left over styles which could not be attached to any HTML tag
         content_tmp = re.sub(r'\n' + txt_apply_style_start + '.*' + txt_apply_style_end, r'', content_tmp)
+        content_tmp = re.sub(r'(?:\<p\>[ \n]*)?\<(STYLE\d*)\/\>[ \n]*(?:\<\/p\>)?', r'', content_tmp)
         # fix math
         content_tmp = re.sub(r'\$\$(.+?)(?=\$\$)\$\$', fix_converted_math, content_tmp)
         if title in fix_math:
@@ -630,6 +646,10 @@ def convert(path_in, path_out, layout, title):
         for line in lines:
             f.write(line)
     return None
+
+
+def fix_style(match):
+    return match.group(2) + style_shadows[match.group(1)]
 
 
 def fix_converted_math(match):

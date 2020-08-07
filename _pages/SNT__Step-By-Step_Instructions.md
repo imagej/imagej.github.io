@@ -36,10 +36,24 @@ Once the search has reached the target point, the path is shown in cyan (to indi
 
 <div align="center">
 
--   <img src="/images/pages/Snt-cropped-confirmation-2.png" title="fig:A* search completed" width="400" alt="A* search completed" />
--   <img src="/images/pages/Snt-cropped-confirmed-2.png" title="fig:A confirmed segment" width="400" alt="A confirmed segment" />
--   <img src="/images/pages/Snt-cropped-completed-path-2.png" title="fig:A completed path" width="400" alt="A completed path" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/Snt-cropped-confirmation-2.png" title="A* search completed" width="400" alt="A* search completed" /><figcaption aria-hidden="true">A* search completed</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-cropped-confirmed-2.png" title="A confirmed segment" width="400" alt="A confirmed segment" /><figcaption aria-hidden="true">A confirmed segment</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-cropped-completed-path-2.png" title="A completed path" width="400" alt="A completed path" /><figcaption aria-hidden="true">A completed path</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 Branching: Start A Path On An Existing Path
@@ -59,10 +73,24 @@ From this point on, you can carry on adding nodes to the branched path as [above
 
 <div align="center">
 
--   <img src="/images/pages/Snt-sb-temporary-path-2.png" title="fig:1) Temporary path branching-off" width="400" alt="1) Temporary path branching-off" />
--   <img src="/images/pages/Snt-sb-confirmed-path-2.png" title="fig:2) Temporary path confirmed" width="400" alt="2) Temporary path confirmed" />
--   <img src="/images/pages/Snt-sb-completed-branch-2.png" title="fig:3) Branched (child) path completed" width="400" alt="3) Branched (child) path completed" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/Snt-sb-temporary-path-2.png" title="1) Temporary path branching-off" width="400" alt="1) Temporary path branching-off" /><figcaption aria-hidden="true">1) Temporary path branching-off</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-sb-confirmed-path-2.png" title="2) Temporary path confirmed" width="400" alt="2) Temporary path confirmed" /><figcaption aria-hidden="true">2) Temporary path confirmed</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-sb-completed-branch-2.png" title="3) Branched (child) path completed" width="400" alt="3) Branched (child) path completed" /><figcaption aria-hidden="true">3) Branched (child) path completed</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 Joining: End A Path On An Existing Path
@@ -84,12 +112,31 @@ If both nodes are terminal, the paths are merged together. Otherwise, one path w
 
 <div align="center">
 
--   {% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Step-1.png' title='none\|250px\|1) Select parent path and activate first join node'%}
--   {% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Step-2.png' title='none\|250px\|2) Select child path and activate second join node'%}
--   {% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Step-3.png' title='none\|250px\|3) Use contextual-menu option to connect child path to parent path'%}
--   {% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Result.png' title='none\|250px\|4) Joined result  
-     '%}
+<li style="display: inline-block;">
 
+{% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Step-1.png' title='none\|250px\|1) Select parent path and activate first join node'%}
+
+</li>
+
+<li style="display: inline-block;">
+
+{% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Step-2.png' title='none\|250px\|2) Select child path and activate second join node'%}
+
+</li>
+
+<li style="display: inline-block;">
+
+{% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Step-3.png' title='none\|250px\|3) Use contextual-menu option to connect child path to parent path'%}
+
+</li>
+
+<li style="display: inline-block;">
+
+{% include thumbnail src='/images/pages/SNT-Edit-Path-Connect-To-Result.png' title='none\|250px\|4) Joined result  
+ '%}
+
+</li>
+</ul>
 </div>
 
 Tracing in the Legacy 3D Viewer
@@ -145,10 +192,24 @@ As you can see in the middle image, the threshold is set too far from the path, 
 
 <div align="center">
 
--   <img src="/images/pages/Snt-zoomed-filling-2.png" title="fig:Fill, opaque" width="250" alt="Fill, opaque" />
--   <img src="/images/pages/Snt-transparent-filling-2.png" title="fig:Fill, with &quot;Transparent overlay&quot; on" width="250" alt="Fill, with &quot;Transparent overlay&quot; on" />
--   <img src="/images/pages/Snt-refined-filling-2.png" title="fig:Fill, refined" width="250" alt="Fill, refined" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/Snt-zoomed-filling-2.png" title="Fill, opaque" width="250" alt="Fill, opaque" /><figcaption aria-hidden="true">Fill, opaque</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-transparent-filling-2.png" title="Fill, with &quot;Transparent overlay&quot; on" width="250" alt="Fill, with &quot;Transparent overlay&quot; on" /><figcaption aria-hidden="true">Fill, with "Transparent overlay" on</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-refined-filling-2.png" title="Fill, refined" width="250" alt="Fill, refined" /><figcaption aria-hidden="true">Fill, refined</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 {% include clear%}
@@ -179,9 +240,18 @@ To get the spatial calibration for your image, go to {% include bc content='Imag
 
 <div align="center">
 
--   <img src="/images/pages/filtered-image-load.png" title="fig:Step 1" width="300" alt="Step 1" />
--   <img src="/images/pages/filtered-image-toggle.png" title="fig:Step 2" width="300" alt="Step 2" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/filtered-image-load.png" title="Step 1" width="300" alt="Step 1" /><figcaption aria-hidden="true">Step 1</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/filtered-image-toggle.png" title="Step 2" width="300" alt="Step 2" /><figcaption aria-hidden="true">Step 2</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 To display the image in a separate window, from the SNT dialog use {% include bc content='Show Cached Image'%} from the *gear* menu or {% include bc content='View | Show Cached ""Secondary Image""'%}. <img src="/images/pages/display-filtered-image.png" title="fig:Secondary Image MIP" width="400" alt="Secondary Image MIP" />

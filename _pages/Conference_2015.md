@@ -127,21 +127,25 @@ Sponsors and partners
 
 <table>
 <tr>
+
 <td style="padding-top: 10px">
 
 ![ x100px \| top \| link=LOCI](/images/pages/Loci-logo.png " x100px | top | link=LOCI")
 
 </td>
+
 <td style="padding-left: 30px; padding-top: 0">
 
 ![ x90px \| top \| link=http://wisc.edu/](/images/pages/UW-logo.png " x90px | top | link=http://wisc.edu/")
 
 </td>
+
 <td style="padding-left: 30px; padding-top: 0">
 
 ![ x80px \| top \| link=http://www.list.lu/](/images/pages/LIST-logo.jpg " x80px | top | link=http://www.list.lu/")
 
 </td>
+
 <td style="padding-left: 30px">
 
 ![ x80px \| top \| link=http://morgridge.wisc.edu/](/images/pages/Morgridge-logo.jpg " x80px | top | link=http://morgridge.wisc.edu/")

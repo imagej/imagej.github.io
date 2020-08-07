@@ -79,6 +79,7 @@ Versioning strategies
 </td>
 </tr>
 <tr>
+
 <td style="vertical-align: top">
 
 ""Releases""
@@ -96,6 +97,7 @@ Versioning strategies
 </td>
 </tr>
 <tr>
+
 <td style="vertical-align: top">
 
 ""Version compatibility""
@@ -113,6 +115,7 @@ Compatible components have the same version number
 </td>
 </tr>
 <tr>
+
 <td style="vertical-align: top">
 
 ""Frequency of releases""
@@ -130,6 +133,7 @@ Slower
 </td>
 </tr>
 <tr>
+
 <td style="vertical-align: top">
 
 ""Stability""

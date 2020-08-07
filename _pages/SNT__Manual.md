@@ -59,8 +59,12 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy: <img s
 
 <div align="left">
 
--   <img src="/images/pages/SNT-Path-CSV-Properties-Example-Spreadsheet.png" title="fig:Exported measurements for OP_1 (truncated)" width="1000" alt="Exported measurements for OP_1 (truncated)" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/SNT-Path-CSV-Properties-Example-Spreadsheet.png" title="Exported measurements for OP_1 (truncated)" width="1000" alt="Exported measurements for OP_1 (truncated)" /><figcaption aria-hidden="true">Exported measurements for OP_1 (truncated)</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 {% include clear%}
@@ -82,10 +86,24 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy: <img s
 
 <div align="left">
 
--   <img src="/images/pages/SNT-Reconstruction-Plotter-Example.png" title="fig:SNT-Reconstruction-Plotter-Example.png" width="200" alt="SNT-Reconstruction-Plotter-Example.png" />
--   <img src="/images/pages/SNT-Reconstruction-Plotter-Controls.png" title="fig:SNT-Reconstruction-Plotter-Controls.png" width="200" alt="SNT-Reconstruction-Plotter-Controls.png" />
--   <img src="/images/pages/SNT-Reconstruction-Plotter-Colored.png" title="fig:SNT-Reconstruction-Plotter-Colored.png" width="200" alt="SNT-Reconstruction-Plotter-Colored.png" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/SNT-Reconstruction-Plotter-Example.png" title="SNT-Reconstruction-Plotter-Example.png" width="200" alt="SNT-Reconstruction-Plotter-Example.png" /><figcaption aria-hidden="true">SNT-Reconstruction-Plotter-Example.png</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/SNT-Reconstruction-Plotter-Controls.png" title="SNT-Reconstruction-Plotter-Controls.png" width="200" alt="SNT-Reconstruction-Plotter-Controls.png" /><figcaption aria-hidden="true">SNT-Reconstruction-Plotter-Controls.png</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/SNT-Reconstruction-Plotter-Colored.png" title="SNT-Reconstruction-Plotter-Colored.png" width="200" alt="SNT-Reconstruction-Plotter-Colored.png" /><figcaption aria-hidden="true">SNT-Reconstruction-Plotter-Colored.png</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 -   {% include bc content='Compare Reconstructions...'%} Allows morphometric conparison of two single reconstruction files or multiple groups of reconstruction files. See [Comparing Reconstructions](https://imagej.net/SNT:_Analysis#Comparing_Reconstructions) for details.
@@ -154,9 +172,18 @@ Pressing *OK* will output a color-mapped image (based off local radius) and a hi
 
 <div align="left">
 
--   <img src="/images/pages/Snt-Estimate-Radii-Image-Result.png" title="fig:Snt-Estimate-Radii-Image-Result.png" width="200" alt="Snt-Estimate-Radii-Image-Result.png" />
--   <img src="/images/pages/Snt-Estimate-Radii-Histogram-Result.png" title="fig:Snt-Estimate-Radii-Histogram-Result.png" width="200" alt="Snt-Estimate-Radii-Histogram-Result.png" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/Snt-Estimate-Radii-Image-Result.png" title="Snt-Estimate-Radii-Image-Result.png" width="200" alt="Snt-Estimate-Radii-Image-Result.png" /><figcaption aria-hidden="true">Snt-Estimate-Radii-Image-Result.png</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-Estimate-Radii-Histogram-Result.png" title="Snt-Estimate-Radii-Histogram-Result.png" width="200" alt="Snt-Estimate-Radii-Histogram-Result.png" /><figcaption aria-hidden="true">Snt-Estimate-Radii-Histogram-Result.png</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 Other options are also available in the *gear* drop-down menu:
@@ -212,10 +239,24 @@ The \_\_\_SHADOW3\_\_\_ offers several ways to colorize Paths: 1) Using {% inclu
 
 <div align="center">
 
--   \_\_\_SHADOW5\_\_\_
--   \_\_\_SHADOW6\_\_\_
--   \_\_\_SHADOW7\_\_\_
+<li style="display:inline-block;">
 
+\_\_\_SHADOW5\_\_\_
+
+</li>
+
+<li style="display:inline-block;">
+
+\_\_\_SHADOW6\_\_\_
+
+</li>
+
+<li style="display:inline-block;">
+
+\_\_\_SHADOW7\_\_\_
+
+</li>
+</ul>
 </div>
 
 
@@ -242,18 +283,36 @@ This tab aggregated widgets for advanced settings.
 
 <div align="center">
 
--   <img src="/images/pages/OP1-without-MIP.png" title="fig:Image without MIP overlay" width="250" alt="Image without MIP overlay" />
--   <img src="/images/pages/OP1-with-MIP.png" title="fig:Image with MIP overlay at 30%" width="250" alt="Image with MIP overlay at 30%" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/OP1-without-MIP.png" title="Image without MIP overlay" width="250" alt="Image without MIP overlay" /><figcaption aria-hidden="true">Image without MIP overlay</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/OP1-with-MIP.png" title="Image with MIP overlay at 30%" width="250" alt="Image with MIP overlay at 30%" /><figcaption aria-hidden="true">Image with MIP overlay at 30%</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 -   **Draw diameters in XY view** Displays the stored diameter (if any) in the XY view for all existing nodes. Each diameter is drawn as a line segment with length = diameter, which is bisected by the orthogonal tangent vector to the path at that node.
 
 <div align="center">
 
--   <img src="/images/pages/Draw-diameters-disabled.png" title="fig:Draw diameters - disabled" width="200" alt="Draw diameters - disabled" />
--   <img src="/images/pages/Draw-diameters-enabled.png" title="fig:Draw diameters - enabled" width="200" alt="Draw diameters - enabled" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/Draw-diameters-disabled.png" title="Draw diameters - disabled" width="200" alt="Draw diameters - disabled" /><figcaption aria-hidden="true">Draw diameters - disabled</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Draw-diameters-enabled.png" title="Draw diameters - enabled" width="200" alt="Draw diameters - enabled" /><figcaption aria-hidden="true">Draw diameters - enabled</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 -   **Apply zoom changes to all views** If a zoom change is applied to any one of the XY, ZY or XZ views, apply the same change to the two other views if they are open. Since in ImageJ zooming may resize the image window, you can use {% include bc content='Views|Arrange Views'%} to reset their positions
@@ -380,10 +439,24 @@ Assuming you chose to fit both centroids and radii, a fitted path might look lik
 
 <div align="center">
 
--   <img src="/images/pages/Fit-parameter-prompt.png" title="fig:Fitting parameters" width="286" alt="Fitting parameters" />
--   <img src="/images/pages/Before-fitting.png" title="fig:Before fitting" width="300" alt="Before fitting" />
--   <img src="/images/pages/After-fitting.png" title="fig:Fitted path" width="300" alt="Fitted path" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/Fit-parameter-prompt.png" title="Fitting parameters" width="286" alt="Fitting parameters" /><figcaption aria-hidden="true">Fitting parameters</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Before-fitting.png" title="Before fitting" width="300" alt="Before fitting" /><figcaption aria-hidden="true">Before fitting</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/After-fitting.png" title="Fitted path" width="300" alt="Fitted path" /><figcaption aria-hidden="true">Fitted path</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 ### Fill

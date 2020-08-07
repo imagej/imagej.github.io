@@ -30,10 +30,24 @@ Alternatively, for precise positioning of the center of analysis:
 
 <div align="center">
 
--   <img src="/images/pages/Snt-Sholl-Precise-Step-1.png" title="fig:1) Select path" width="200" alt="1) Select path" />
--   <img src="/images/pages/Snt-Sholl-Precise-Step-2.png" title="fig:2) Snap cursor to node" width="200" alt="2) Snap cursor to node" />
--   <img src="/images/pages/Snt-Sholl-Precise-Step-3.png" title="fig:3) Sholl dialog" width="146" alt="3) Sholl dialog" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/Snt-Sholl-Precise-Step-1.png" title="1) Select path" width="200" alt="1) Select path" /><figcaption aria-hidden="true">1) Select path</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-Sholl-Precise-Step-2.png" title="2) Snap cursor to node" width="200" alt="2) Snap cursor to node" /><figcaption aria-hidden="true">2) Snap cursor to node</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-Sholl-Precise-Step-3.png" title="3) Sholl dialog" width="146" alt="3) Sholl dialog" /><figcaption aria-hidden="true">3) Sholl dialog</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 {% include clear%}
@@ -41,20 +55,48 @@ Alternatively, for precise positioning of the center of analysis:
 
 <div align="center">
 
--   <img src="/images/pages/Snt-Sholl-preview-step-size-1.png" title="fig:Step Size = 0" width="200" alt="Step Size = 0" />
--   <img src="/images/pages/Snt-Sholl-preview-step-size-2.png" title="fig:Step Size = 5" width="200" alt="Step Size = 5" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/Snt-Sholl-preview-step-size-1.png" title="Step Size = 0" width="200" alt="Step Size = 0" /><figcaption aria-hidden="true">Step Size = 0</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-Sholl-preview-step-size-2.png" title="Step Size = 5" width="200" alt="Step Size = 5" /><figcaption aria-hidden="true">Step Size = 5</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 In addition to the Sholl Profile plot and table, the output of the analysis can be visualized as a color mapping of the reconstruction and as a [Sholl Image](https://imagej.net/Simple_Neurite_Tracer:_Sholl_analysis#Sholl_Image). To color code the tracing, choose *Color coded paths* from the *Annotations* drop-down menu and select a Lut from the *Annotations Lut* drop-down menu before pressing *Run Analysis*. To output the Sholl Image, choose *3D viewer labels image* from the *Annotations* drop-down menu and select the desired Lut before running the analysis.
 
 <div align="center">
 
--   <img src="/images/pages/Snt-Sholl-Profile-Plot-New.png" title="fig:Sholl Profile Plot" width="305" alt="Sholl Profile Plot" />
--   <img src="/images/pages/Snt-Sholl-Profile-Table-New.png" title="fig:Sholl Profile Table" width="230" alt="Sholl Profile Table" />
--   <img src="/images/pages/Snt-Sholl-Color-Map.png" title="fig:Color Coded Tracing - Ice Lut" width="200" alt="Color Coded Tracing - Ice Lut" />
--   <img src="/images/pages/Snt-Sholl-Color-Map-Mask.png" title="fig:Sholl Image - Ice Lut" width="200" alt="Sholl Image - Ice Lut" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/Snt-Sholl-Profile-Plot-New.png" title="Sholl Profile Plot" width="305" alt="Sholl Profile Plot" /><figcaption aria-hidden="true">Sholl Profile Plot</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-Sholl-Profile-Table-New.png" title="Sholl Profile Table" width="230" alt="Sholl Profile Table" /><figcaption aria-hidden="true">Sholl Profile Table</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-Sholl-Color-Map.png" title="Color Coded Tracing - Ice Lut" width="200" alt="Color Coded Tracing - Ice Lut" /><figcaption aria-hidden="true">Color Coded Tracing - Ice Lut</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-Sholl-Color-Map-Mask.png" title="Sholl Image - Ice Lut" width="200" alt="Sholl Image - Ice Lut" /><figcaption aria-hidden="true">Sholl Image - Ice Lut</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 Strahler Analysis
@@ -64,9 +106,18 @@ To conduct [Strahler Analysis](https://imagej.net/Strahler_Analysis) on the curr
 
 <div align="left">
 
--   <img src="/images/pages/SNT-Strahler-Analysis-Table.png" title="fig:Strahler Analysis table" width="200" alt="Strahler Analysis table" />
--   <img src="/images/pages/SNT-Strahler-Analysis-Plot.png" title="fig:Strahler Analysis plot" width="200" alt="Strahler Analysis plot" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/SNT-Strahler-Analysis-Table.png" title="Strahler Analysis table" width="200" alt="Strahler Analysis table" /><figcaption aria-hidden="true">Strahler Analysis table</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/SNT-Strahler-Analysis-Plot.png" title="Strahler Analysis plot" width="200" alt="Strahler Analysis plot" /><figcaption aria-hidden="true">Strahler Analysis plot</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 Path Order Analysis
@@ -76,9 +127,18 @@ Found at {% include bc content='Analysis|Path Order Analysis'%} in the main SNT 
 
 <div align="left">
 
--   <img src="/images/pages/SNT-Path-Order-Analysis-Table.png" title="fig:Path Order Analysis table" width="200" alt="Path Order Analysis table" />
--   <img src="/images/pages/SNT-Path-Order-Analysis-Plot.png" title="fig:Path Order Analysis plot" width="200" alt="Path Order Analysis plot" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/SNT-Path-Order-Analysis-Table.png" title="Path Order Analysis table" width="200" alt="Path Order Analysis table" /><figcaption aria-hidden="true">Path Order Analysis table</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/SNT-Path-Order-Analysis-Plot.png" title="Path Order Analysis plot" width="200" alt="Path Order Analysis plot" /><figcaption aria-hidden="true">Path Order Analysis plot</figcaption></figure>
+
+</li>
+</ul>
 </div>
 
 Measurements
@@ -128,16 +188,39 @@ The file selection prompt for this option allows selection of up to four directo
 
 <div align="center">
 
--   <img src="/images/pages/Snt-Compare-Reconstruction-Group-Render1.png" title="fig:" width="350" />
--   <img src="/images/pages/Snt-Compare-Reconstruction-Group-Render2.png" title="fig:" width="350" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/Snt-Compare-Reconstruction-Group-Render1.png" width="350" /></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-Compare-Reconstruction-Group-Render2.png" width="350" /></figure>
+
+</li>
+</ul>
 </div>
 <div align="center">
 
--   <img src="/images/pages/Snt-Compare-Reconstruction-Group-Statistics-Window.png" title="fig:Snt-Compare-Reconstruction-Group-Statistics-Window.png" width="300" alt="Snt-Compare-Reconstruction-Group-Statistics-Window.png" />
--   <img src="/images/pages/Snt-Compare-Reconstruction-Group-Box-Plot.png" title="fig:" width="200" />
--   <img src="/images/pages/Snt-Compare-Reconstruction-Group-Histogram.png" title="fig:" width="300" />
+<li style="display:inline-block;">
 
+<figure><img src="/images/pages/Snt-Compare-Reconstruction-Group-Statistics-Window.png" title="Snt-Compare-Reconstruction-Group-Statistics-Window.png" width="300" alt="Snt-Compare-Reconstruction-Group-Statistics-Window.png" /><figcaption aria-hidden="true">Snt-Compare-Reconstruction-Group-Statistics-Window.png</figcaption></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-Compare-Reconstruction-Group-Box-Plot.png" width="200" /></figure>
+
+</li>
+
+<li style="display:inline-block;">
+
+<figure><img src="/images/pages/Snt-Compare-Reconstruction-Group-Histogram.png" width="300" /></figure>
+
+</li>
+</ul>
 </div>
 
 Custom Analyses

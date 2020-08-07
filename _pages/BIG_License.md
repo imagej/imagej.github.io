@@ -12,9 +12,7 @@ Components distributed via the BIG-EPFL [update site](update_site ) were develop
 
 These components are licensed under proprietary terms, incompatible with the [GPL](GPL ) and similar licenses.
 
-However, the [Fiji](Fiji ) project has obtained permission to redistribute them:
-
->     Date: Mon, 26 Jul 2010 10:58:20 +0200
+However, the [Fiji](Fiji ) project has obtained permission to redistribute them: >     Date: Mon, 26 Jul 2010 10:58:20 +0200
 >     From: Michael Unser <michael.unser@epfl.ch>
 >
 >     [...] we are happy that Fiji distributes our software: you have

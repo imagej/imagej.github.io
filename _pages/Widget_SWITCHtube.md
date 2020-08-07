@@ -23,8 +23,6 @@ Copy to your site
 -----------------
 
 To use this widget on your site, just install the [MediaWiki Widgets extension](https://www.mediawiki.org/wiki/Extension:Widgets) and the copy \[{% include fullurl content='\_\_\_SHADOW1\_\_\_' action='edit ' %} full source code\] of this page to your wiki, as an article called **{% include fullpagename%}
-**. </noinclude><includeonly><iframe src="https://tube.switch.ch/embed/<!--{$id|escape:'urlpathinfo'}-->" width="<!--{$width|escape:'html'|default:'640'}-->" height="<!--{$height|escape:'html'|default:360}-->" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-<a href="https://tube.switch.ch/videos/<!--{$id|escape:'urlpathinfo'}-->"> \[view on SWITCHtube\] </a></span>
+**. </noinclude><includeonly><iframe src="https://tube.switch.ch/embed/<!--{$id|escape:'urlpathinfo'}-->" width="<!--{$width|escape:'html'|default:'640'}-->" height="<!--{$height|escape:'html'|default:360}-->" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><a style="font-size: small; margin-top: 0" href="https://tube.switch.ch/videos/<!--{$id|escape:'urlpathinfo'}-->"> \[view on SWITCHtube\] </a></span>
 
 </includeonly>

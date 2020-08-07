@@ -57,10 +57,24 @@ Examples
 
 <div>
 
--   {% include thumbnail src='/images/pages/Shape-smoothing-original-image.png' title='none\|300px\|Original image'%}
--   {% include thumbnail src='/images/pages/Shape-smoothing-smoothed-object.png' title='none\|300px\|Smoothed object (4% of FDs retained)'%}
--   {% include thumbnail src='/images/pages/Shape-smoothing-smoothed-contour.png' title='none\|300px\|Smoothed contour (2% of FDs retained)'%}
+<li style="display: inline-block;">
 
+{% include thumbnail src='/images/pages/Shape-smoothing-original-image.png' title='none\|300px\|Original image'%}
+
+</li>
+
+<li style="display: inline-block;">
+
+{% include thumbnail src='/images/pages/Shape-smoothing-smoothed-object.png' title='none\|300px\|Smoothed object (4% of FDs retained)'%}
+
+</li>
+
+<li style="display: inline-block;">
+
+{% include thumbnail src='/images/pages/Shape-smoothing-smoothed-contour.png' title='none\|300px\|Smoothed contour (2% of FDs retained)'%}
+
+</li>
+</ul>
 </div>
 
 Installation

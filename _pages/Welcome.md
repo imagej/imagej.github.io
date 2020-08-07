@@ -11,7 +11,7 @@ description: test description
 
 <div style="margin: 0 auto; padding: 0 3em 0.5em 0;" align="center">
 
-<table><tbody><tr class="odd"><td style="vertical-align: top"><p><a href=""><img src="/images/pages/Imagej2-icon.png" width="320px"/></a></p></td><td><h1 style="font-size: 5em; margin-bottom: 0"><p>ImageJ</p></h1><h3 style="margin-bottom: 1em"><p>An open platform for scientific image analysis</p></h3><div class="button-blue"><p><a href="Download" title="wikilink">Download</a></p></div><div class="button-green"><p><a href="Learn" title="wikilink">Learn</a></p></div><div class="button-red"><p><a href="Develop" title="wikilink">Develop</a></p></div></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td style="vertical-align: top"><p><a href=""><img src="/images/pages/Imagej2-icon.png" width="320px"/></a></p></td><td><p> < style="font-size: 5em; margin-bottom: 0"/p><h1><p>ImageJ</p></h1><p>< style="margin-bottom: 1em"/p><h3><p>An open platform for scientific image analysis</p></h3><div class="button-blue"><p><a href="Download" title="wikilink">Download</a></p></div><div class="button-green"><p><a href="Learn" title="wikilink">Learn</a></p></div><div class="button-red"><p><a href="Develop" title="wikilink">Develop</a></p></div></td></tr></tbody></table>
 
 </div>
 <div style="padding: 20px;" align="center">
