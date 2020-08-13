@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Virginie Uhlmann ' github='vuhlmann ' researchgate='Virginie\_Uhlmann ' linkedin='in/vuhlmann ' orcid='0000-0002-2859-9241 ' website='http://www.virginieuhlmann.com ' %}
+{% include user-box name='Virginie Uhlmann' github='vuhlmann' researchgate='Virginie\_Uhlmann' linkedin='in/vuhlmann' orcid='0000-0002-2859-9241' website='http://www.virginieuhlmann.com' %}

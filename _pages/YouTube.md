@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [YouTube Channel](YouTube_Channel )
+1.  REDIRECT [YouTube Channel](YouTube_Channel)

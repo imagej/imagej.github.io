@@ -56,13 +56,13 @@ Menu structure
 Boxes
 -----
 
-    {% include box width='30% ' %}
+    {% include box width='30%' %}
 
-{% include box width='30% ' %}  
+{% include box width='30%' %}  
 
-    {% include box title='Modifies Box with a title! ' text='As a standard box for additional info. ' width='30% ' float='left ' %}
+    {% include box title='Modifies Box with a title!' text='As a standard box for additional info.' width='30%' float='left' %}
 
-{% include box title='Modifies Sidebox with title! ' text='As a standard box for additional info. ' width='30% ' float='left ' %}
+{% include box title='Modifies Sidebox with title!' text='As a standard box for additional info.' width='30%' float='left' %}
 
   
   
@@ -79,7 +79,7 @@ Press the {% include key content='L' %} key to access ImageJ"s most useful featu
 
 
 {% capture tip%}
-Press the {% include key content='L' %} key to access ImageJ"s most useful feature: the [Command Finder](Command_Finder ).
+Press the {% include key content='L' %} key to access ImageJ"s most useful feature: the [Command Finder](Command_Finder).
 {% endcapture %}
 {% include tip tip=tip %}
 

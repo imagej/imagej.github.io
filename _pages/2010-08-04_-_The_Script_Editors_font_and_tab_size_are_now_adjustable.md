@@ -7,6 +7,6 @@ categories: News
 description: test description
 ---
 
-Thanks to Yili Zhao, the [Script Editor](Script_Editor ) got menu entries in the *Edit* menu to adjust the font size and the tab width. The font size can be adjusted using the {% include key content='Ctrl' %}+{% include key content='-' %} and {% include key content='Ctrl' %}+{% include key content='+' %} keyboard shortcuts, too. As a goodie, the tab width is automatically adjusted to 4 spaces for Python scripts, for everything else it still defaults to 8 spaces.
+Thanks to Yili Zhao, the [Script Editor](Script_Editor) got menu entries in the *Edit* menu to adjust the font size and the tab width. The font size can be adjusted using the {% include key content='Ctrl' %}+{% include key content='-' %} and {% include key content='Ctrl' %}+{% include key content='+' %} keyboard shortcuts, too. As a goodie, the tab width is automatically adjusted to 4 spaces for Python scripts, for everything else it still defaults to 8 spaces.
 
 

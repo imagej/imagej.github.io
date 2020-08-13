@@ -28,7 +28,7 @@ This is a list of the most commonly requested (or most important) wishlist items
 
 <!-- -->
 
--   Make the Tubular Geodesics plugins available through the Fiji [Updater](Updater ).
+-   Make the Tubular Geodesics plugins available through the Fiji [Updater](Updater).
 
 <!-- -->
 
@@ -51,5 +51,5 @@ Done:
 -   It has been requested that for RGB images, the tracer should continue to convert the image stack to luminance values for tracing internally, but in the interface should instead display the full colour images. I agree, but would like to go further and add an option to display any one of:
     -   The original image data.
     -   The values which are being traced on, which might be preprocessed or just a simple transformation of the original data
--   The "fit volume" option is very naive, and doesn't work well for noisy stacks. For clear processes it's still a nice way to visualize the traces, but it should be replaced by a better algorithm. Update: this option should be deprecated - for reconstruction it's vastly better to use [the Tubular Geodesics method](Simple_Neurite_Tracer__Tubular_Geodesics ).
+-   The "fit volume" option is very naive, and doesn't work well for noisy stacks. For clear processes it's still a nice way to visualize the traces, but it should be replaced by a better algorithm. Update: this option should be deprecated - for reconstruction it's vastly better to use [the Tubular Geodesics method](Simple_Neurite_Tracer__Tubular_Geodesics).
 -   You should be able to do all the basic tracing operations in the 3D Viewer. e.g. selecting the start point, selecting the subsequent points, and creating joins and branches. This is partially implemented now - you can try switching between the "hand" and "wand" tool and clicking in the 3D viewer. There's no visual feedback yet for what you're doing, however. Ideally it would be nice not to have to switch tool, as well

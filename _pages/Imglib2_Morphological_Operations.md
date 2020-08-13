@@ -186,11 +186,11 @@ The square is just a special case of the rectangle, implemented for convenience.
 
 #### 2D case.
 
-<File:SquareStrel2DPerformance.png%7CProcessing> time for the dilation of a 100x100 image. <File:SquareStrel2DPerformanceComparison.png%7CProcessing> time ratio. <File:SquareStrel2DPerformanceWMATLAB.png%7CFirst> image zoomed to highlight [MATLAB](MATLAB ) performance.
+<File:SquareStrel2DPerformance.png%7CProcessing> time for the dilation of a 100x100 image. <File:SquareStrel2DPerformanceComparison.png%7CProcessing> time ratio. <File:SquareStrel2DPerformanceWMATLAB.png%7CFirst> image zoomed to highlight [MATLAB](MATLAB) performance.
 
 #### 3D case.
 
-<File:SquareStrel3DPerformance.png%7CProcessing> time for the dilation of a 49x49x49 image. <File:SquareStrel3DPerformanceComparison.png%7CProcessing> time ratio. <File:SquareStrel3DPerformanceWMATLAB.png%7CFirst> image zoomed to highlight [MATLAB](MATLAB ) performance.
+<File:SquareStrel3DPerformance.png%7CProcessing> time for the dilation of a 49x49x49 image. <File:SquareStrel3DPerformanceComparison.png%7CProcessing> time ratio. <File:SquareStrel3DPerformanceWMATLAB.png%7CFirst> image zoomed to highlight [MATLAB](MATLAB) performance.
 
 Diamond structuring element
 ---------------------------
@@ -244,13 +244,13 @@ It is worth using a decomposition in almost any cases.
 
 #### Comparison with MATLAB.
 
-MATLAB comes with a very nice morphology package. I actually took inspiration from to it to write the Imglib2 code. It is tempting to compare the performance of [MATLAB](MATLAB ) vs Imglib2, even if this kind of comparison is always tricky and clumsy. Anyway, here it is. I just timed the duration required to perform the dilation of a provided source image, including the time required to generate the structuring element. Imglib2 tests above time the same process. But of course, the time required to generate the source image and to start [MATLAB](MATLAB ) or to launch the Java tests are not included. I took care to include a 'warm-up' run to allow the JIT compiler to kick-in in all cases.
+MATLAB comes with a very nice morphology package. I actually took inspiration from to it to write the Imglib2 code. It is tempting to compare the performance of [MATLAB](MATLAB) vs Imglib2, even if this kind of comparison is always tricky and clumsy. Anyway, here it is. I just timed the duration required to perform the dilation of a provided source image, including the time required to generate the structuring element. Imglib2 tests above time the same process. But of course, the time required to generate the source image and to start [MATLAB](MATLAB) or to launch the Java tests are not included. I took care to include a 'warm-up' run to allow the JIT compiler to kick-in in all cases.
 
 <File:DiamondStrel2DPerformanceWMATLAB.png%7CProcessing> time for the dilation of a 100x100 image. <File:DiamondStrel3DPerformanceWMATLAB.png%7CProcessing> time for the dilation of a 40x40x40 image.
 
-For the 2D case (only), [MATLAB](MATLAB ) offers to generate optimized structuring elements, like for this Imglib2 code. This is why there is two [MATLAB](MATLAB ) curves on the 2D graph. We can see that in all cases, the [MATLAB](MATLAB ) code is faster than the Imglib2 code (respective to optimized vs optimized and the converse). This may be explained by the fact that [MATLAB](MATLAB ) benefitiates on my computer (a 2012 MacPro) from the Intel Integrated Performance Primitives ([IPP](http://software.intel.com/en-us/intel-ipp)), that strongly improves block processing algorithms. Fortunately, the difference is not too taxing in the optimized case.
+For the 2D case (only), [MATLAB](MATLAB) offers to generate optimized structuring elements, like for this Imglib2 code. This is why there is two [MATLAB](MATLAB) curves on the 2D graph. We can see that in all cases, the [MATLAB](MATLAB) code is faster than the Imglib2 code (respective to optimized vs optimized and the converse). This may be explained by the fact that [MATLAB](MATLAB) benefitiates on my computer (a 2012 MacPro) from the Intel Integrated Performance Primitives ([IPP](http://software.intel.com/en-us/intel-ipp)), that strongly improves block processing algorithms. Fortunately, the difference is not too taxing in the optimized case.
 
-In 3D, [MATLAB](MATLAB ) does not offer a structuring element decomposition (yet). So the performance curve as the expected cubic shape, though it outperforms Imglib2 in the non-optimized case. For large radius, the Imglib2 optimization manages to beat it.
+In 3D, [MATLAB](MATLAB) does not offer a structuring element decomposition (yet). So the performance curve as the expected cubic shape, though it outperforms Imglib2 in the non-optimized case. For large radius, the Imglib2 optimization manages to beat it.
 
 Disk structuring element.
 -------------------------
@@ -274,7 +274,7 @@ References and links.
 
 <references/>
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez )) 09:33, 5 December 2014 (CST)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 09:33, 5 December 2014 (CST)
 
 [1] These are the 35 words added by the Oxford Online Dictionary during summer 2012. And another one.
 

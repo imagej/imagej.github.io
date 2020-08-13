@@ -9,12 +9,12 @@ description: test description
 
 {% include develop-menu%}
  {% include info-box content='This page has approaches for ""software developers"" to use for debugging ImageJ.  
-If you are a ""user"" looking to troubleshoot issues, see the [Troubleshooting](Troubleshooting ) page.' %}
+If you are a ""user"" looking to troubleshoot issues, see the [Troubleshooting](Troubleshooting) page.' %}
 
 Launching ImageJ in debug mode
 ==============================
 
-To debug problems with ImageJ, it is often helpful to launch it in debug mode. See the [Troubleshooting](Troubleshooting#Launching_ImageJ_from_the_console ) page for instructions.
+To debug problems with ImageJ, it is often helpful to launch it in debug mode. See the [Troubleshooting](Troubleshooting#Launching_ImageJ_from_the_console) page for instructions.
 
 Debugging plugins in an IDE (Netbeans, IntelliJ, Eclipse, etc)
 ==============================================================
@@ -110,7 +110,7 @@ Often, dynamic library issues are connected to a dependent .dll file missing. Do
 Debugging JVM hangs
 ===================
 
-When the Java VM hangs, the reason might be a dead-lock. Try taking a [stack trace](Troubleshooting#If_ImageJ_freezes_or_hangs ). If you have trouble, you can try one of the following advanced techniques:
+When the Java VM hangs, the reason might be a dead-lock. Try taking a [stack trace](Troubleshooting#If_ImageJ_freezes_or_hangs). If you have trouble, you can try one of the following advanced techniques:
 
 1.  You can use the `jstack` command (you don't need to run ImageJ from the command line in this case). This requires that you first find the PID (process ID) of ImageJ. You can do so by running:
         jps
@@ -291,7 +291,7 @@ Okay, so here you go, a little demonstration:
 Inspecting serialized objects
 =============================
 
-If you have a file with a serialized object, you can use this Beanshell in the [Script Editor](Script_Editor ) to open a tree view of the object (double-click to open/close the branches of the view):
+If you have a file with a serialized object, you can use this Beanshell in the [Script Editor](Script_Editor) to open a tree view of the object (double-click to open/close the branches of the view):
 
     import fiji.debugging.Object_Inspector;
 
@@ -320,7 +320,7 @@ There are a couple of ways to test for such EDT violations, see [this blog post 
 Debugging Java3D issues
 =======================
 
-When Java3D does not work, the first order of business is to use {% include bc content='Plugins | Utilities | Debugging | Test Java3D'%}. If this shows a rotating cube, but the [3D Viewer](3D_Viewer ) does not work, please click on {% include bc content='Help | Java3D Properties...'%} in the [3D Viewer](3D_Viewer )'s menu bar.
+When Java3D does not work, the first order of business is to use {% include bc content='Plugins | Utilities | Debugging | Test Java3D'%}. If this shows a rotating cube, but the [3D Viewer](3D_Viewer) does not work, please click on {% include bc content='Help | Java3D Properties...'%} in the [3D Viewer](3D_Viewer)'s menu bar.
 
 Command line debugging
 ----------------------

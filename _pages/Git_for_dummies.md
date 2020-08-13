@@ -41,15 +41,15 @@ Further benefits:
 
 -   Study the history of a project to understand not only *what* the developers did *when*, but also *why* by reading their commit messages (i.e., the log of changes).
 -   Recover any past revision, such as when the latest version suffers from a bug (i.e., a *regression*) not present in an older version.
--   Easily [find the commit which introduced such a regression](Pinpoint_regressions_with_Git ).
+-   Easily [find the commit which introduced such a regression](Pinpoint_regressions_with_Git).
 -   Ensure the code and history is never lost, even if your machine fails—anyone with a *clone* of the repository has a copy of the entire history.
 -   Work on multiple new features or bug-fixes simultaneously, easily organizing and switching between them using *branches*.
 
 The only negative to Git is the activation barrier of learning it. Once you become proficient, Git is a huge asset to any development project.
 
-If you feel comfortable in using the commandline but you are still not familiar with Git the **[Git workshop](Git_workshop )** page might be a perfect entry point for you.
+If you feel comfortable in using the commandline but you are still not familiar with Git the **[Git workshop](Git_workshop)** page might be a perfect entry point for you.
 
-If the commandline is not your favorite playground you can have a look at the Git integration **[EGit](EGit )** in the **[Eclipse](Eclipse )** IDE.
+If the commandline is not your favorite playground you can have a look at the Git integration **[EGit](EGit)** in the **[Eclipse](Eclipse)** IDE.
 
 Essential Git commands
 ======================
@@ -82,7 +82,7 @@ Initially, you need to start from somewhere:
 
 -   *git clone <URL>* will make a new local repository and initialize it from a remote one.
 
-See also the more verbose [Git mini howto](Git_mini_howto ).
+See also the more verbose [Git mini howto](Git_mini_howto).
 
 Substantial differences to other version control systems
 ========================================================
@@ -90,7 +90,7 @@ Substantial differences to other version control systems
 If you know CVS or Subversion, you are in for some surprises:
 
 -   In Git, each repository is local. To publish your changes, you need to have a remote repository, too, and *push* your work there.
--   In Git, [branches](Git_topic_branches ) are easy and fast.
+-   In Git, [branches](Git_topic_branches) are easy and fast.
 -   In Git, you *git add* <u>content</u>, not files. In other words, when the file *README* is already tracked, *git add README* will tell Git that you want the changes in said file to be part of the next commit.
 -   In Git, you <u>never, ever</u> try to integrate remote changes into an uncommitted state. In other words, if you have uncommitted changes, you <u>always</u> commit them before calling *git fetch origin; git merge origin/master*.
 

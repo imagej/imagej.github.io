@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [How to follow a 3rd party update site](How_to_follow_a_3rd_party_update_site )
+1.  REDIRECT [How to follow a 3rd party update site](How_to_follow_a_3rd_party_update_site)

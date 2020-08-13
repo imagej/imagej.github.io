@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include info-box name='Minimum/Maximum/Median ' software='ImageJ ' author='Benjamin Schmid ' maintainer='Benjamin Schmid ' filename='VIB\_.jar ' source='VIB\_.jar ' status='beta ' %}
+{% include info-box name='Minimum/Maximum/Median' software='ImageJ' author='Benjamin Schmid' maintainer='Benjamin Schmid' filename='VIB\_.jar' source='VIB\_.jar' status='beta' %}
 
 Purpose
 -------

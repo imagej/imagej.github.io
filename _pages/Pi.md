@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Raspberry Pi](Raspberry_Pi )
+1.  REDIRECT [Raspberry Pi](Raspberry_Pi)

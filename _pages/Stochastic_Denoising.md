@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Stochastic Denoise](Stochastic_Denoise )
+1.  REDIRECT [Stochastic Denoise](Stochastic_Denoise)

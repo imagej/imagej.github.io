@@ -12,7 +12,7 @@ Welcome!
 
 Fiji is planning on applying to the Google Summer of Code 2009 program. As mentoring organizations have not yet been accepted, there is no guarantee that Fiji will be asked to participate. This page is to help plan proposed student projects. (UPDATE: Fiji [has been accepted](http://socghop.appspot.com/program/accepted_orgs/google/gsoc2009) as a mentoring organization. See the [Fiji GSoC organization page](http://socghop.appspot.com/org/show/google/gsoc2009/fiji).)
 
-This page contains project ideas culled from the Fiji user and developer community. You can get started by reading some project descriptions, and the mailing list thread(s) that spawned them. Also consider joining the developer mailing list, or finding us on IRC. Details can be found in [Help](Help ).
+This page contains project ideas culled from the Fiji user and developer community. You can get started by reading some project descriptions, and the mailing list thread(s) that spawned them. Also consider joining the developer mailing list, or finding us on IRC. Details can be found in [Help](Help).
 
 Don't like a project you see here? Just throw your ideas at us, on the developer mailing list!
 
@@ -33,7 +33,7 @@ If your proposal is accepted by the Fiji Development Community you will be expec
 
 If your original proposal doesn't pan out or becomes too much of a challenge, you should work with your mentor to help redefine it. We really want to see every project succeed this summer, as there is a great deal of interest in these projects from within the user community.
 
-Students can apply for the program at the [Google Summer of Code website](http://code.google.com/soc/). Please consider reviewing our [SoC2009Template](SoC2009Template ) and answering its questions as part of your application.
+Students can apply for the program at the [Google Summer of Code website](http://code.google.com/soc/). Please consider reviewing our [SoC2009Template](SoC2009Template) and answering its questions as part of your application.
 
 Project ideas
 =============
@@ -104,9 +104,9 @@ The idea is to extend the simple Python script in tests/record.py to make it eas
 Add word expansion to the scripting interpreters
 ------------------------------------------------
 
-Fiji offers scripting in 5 different languages, all running on the JVM: [Javascript](Javascript_Scripting ), [Jython](Jython_Scripting ), [JRuby](JRuby_Scripting ), [Clojure](Clojure_Scripting ), Beanshell and the ImageJ Macro Language. Through the reflection API and the numerous language hooks that each scripting engine provides, it is possible to complete method names or names of member variables, as well as class names.
+Fiji offers scripting in 5 different languages, all running on the JVM: [Javascript](Javascript_Scripting), [Jython](Jython_Scripting), [JRuby](JRuby_Scripting), [Clojure](Clojure_Scripting), Beanshell and the ImageJ Macro Language. Through the reflection API and the numerous language hooks that each scripting engine provides, it is possible to complete method names or names of member variables, as well as class names.
 
-**Goal:** Provide word-expansion capabilities to the scripting interpreters (see [Scripting Help](Scripting_Help )).  
+**Goal:** Provide word-expansion capabilities to the scripting interpreters (see [Scripting Help](Scripting_Help)).  
 **Language:** A combination of Java plus the scripting language, in this order of preference: Javascript, Jython, JRuby, Clojure and Beanshell. If you can do them all, we'll erect you a monument.  
 **Mentor:** [Albert Cardona](http://www.ini.uzh.ch/people/acardona) (acardona@ini.phys.ethz.ch)  
 
@@ -126,13 +126,13 @@ The student will have to research if there are existing Open Source components t
 Enhance Fiji's plugin manager
 -----------------------------
 
-Beyond the built-in commands, ImageJ provides the means to add user-developed plugins by implementing the PlugIn, PlugInFilter and PlugInFrame interfaces. Fiji uses ImageJ at the core and packages around it a very large number of plugins (see the [Plugins Menu](Plugins_Menu )). The ideal application menus cannot contain hundreds of plugins: any specific user has no use for more than half of them, and their mere presence get on the way to adding other, user-desired plugins.
+Beyond the built-in commands, ImageJ provides the means to add user-developed plugins by implementing the PlugIn, PlugInFilter and PlugInFrame interfaces. Fiji uses ImageJ at the core and packages around it a very large number of plugins (see the [Plugins Menu](Plugins_Menu)). The ideal application menus cannot contain hundreds of plugins: any specific user has no use for more than half of them, and their mere presence get on the way to adding other, user-desired plugins.
 
 The core idea of this project is to generate a plugins manager, inspired in the excellent plugin manager of [JEdit](http://www.jedit.org), to enable/disable plugins.
 
 The lack of a plugin manager system is an enormous drag on the ability of good plugins to be widely distributed, and the ability of needy users to find them. The ability to be registered will also ensure proper compatibility with specific ImageJ versions, and the ability to track plugin versions.
 
-At the moment, there is a rudimentary {% include github repo='fiji ' path='src-plugins/Fiji\_Updater/UpdateFiji.java ' label='plugin updater ' %} which should be a good starting point for this project. The list of current plugins used by that plugin can be found [here](http://update.fiji.sc/current.txt).
+At the moment, there is a rudimentary {% include github repo='fiji' path='src-plugins/Fiji\_Updater/UpdateFiji.java' label='plugin updater' %} which should be a good starting point for this project. The list of current plugins used by that plugin can be found [here](http://update.fiji.sc/current.txt).
 
 **Goal:** Convert Fiji's update plugin into a proper plugin manager.  
 The GUI should have two main components: a tree with the plugins and a text pane for reading documentation.
@@ -164,9 +164,9 @@ To that end, Fiji already supports "headless" mode, i.e. operation without the n
 Add JMathLib (MATLAB clone) support
 -----------------------------------
 
-Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB ) scripts. While it is [wrong to think of pixels as little squares](Ftp_//ftp.alvyray.com/Acrobat/6_Pixel.pdf), and literally all [MATLAB](MATLAB ) scripts to perform image processing are suffering from that shortcoming, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB ) licenses just for that purpose.
+Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB) scripts. While it is [wrong to think of pixels as little squares](Ftp_//ftp.alvyray.com/Acrobat/6_Pixel.pdf), and literally all [MATLAB](MATLAB) scripts to perform image processing are suffering from that shortcoming, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB) licenses just for that purpose.
 
-Happily, there is a [MATLAB](MATLAB ) clone written in Java: [JMathLib](http://www.jmathlib.de/). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](MATLAB ) scripts can be executed just like all other ImageJ scripts, too.
+Happily, there is a [MATLAB](MATLAB) clone written in Java: [JMathLib](http://www.jmathlib.de/). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](MATLAB) scripts can be executed just like all other ImageJ scripts, too.
 
 The project would consist of
 
@@ -174,7 +174,7 @@ The project would consist of
 
 <!-- -->
 
--   integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at {% include github repo='fiji ' path='src-plugins/JRuby/JRuby\_Interpreter.java ' label='the JRuby Interpreter ' %} for an example,
+-   integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at {% include github repo='fiji' path='src-plugins/JRuby/JRuby\_Interpreter.java' label='the JRuby Interpreter' %} for an example,
 
 <!-- -->
 
@@ -191,11 +191,11 @@ The project would consist of
 Other Resources
 ===============
 
-`* `[`SoC2009Application`](SoC2009Application )
+`* `[`SoC2009Application`](SoC2009Application)
 
 Other links
 ===========
 
 `* `[`ImageJ's`` ``homepage`](https://imagej.net)  
 `* `[`Fiji's`` ``developer`` ``mailing`` ``list`](http://groups.google.com/group/fiji-devel)  
-`* `[`#fiji-devel`` ``channel`](IRC )` on irc.freenode.net`
+`* `[`#fiji-devel`` ``channel`](IRC)` on irc.freenode.net`

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Bio-Formats\#LOCI Plugins Shortcut Window](Bio-Formats#LOCI_Plugins_Shortcut_Window )
+1.  REDIRECT [Bio-Formats\#LOCI Plugins Shortcut Window](Bio-Formats#LOCI_Plugins_Shortcut_Window)

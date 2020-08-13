@@ -17,14 +17,14 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='bigdataviewer ' repo='bigdataviewer-server ' %}
+{% include github org='bigdataviewer' repo='bigdataviewer-server' %}
 {% endcapture %}
-{% include info-box name='BigDataServer ' software='Fiji ' author=author maintainer=maintainer source=source latest-version='1.0.2 ' status='experimental ' category='[Visualization](Category_Visualization ), [Transform](Category_Transform ) ' %}
+{% include info-box name='BigDataServer' software='Fiji' author=author maintainer=maintainer source=source latest-version='1.0.2' status='experimental' category='[Visualization](Category_Visualization), [Transform](Category_Transform)' %}
 
 Description
 -----------
 
-BigDataServer is a minimalistic HTTP server that serves XML/HDF5 datasets to the [BigDataViewer](BigDataViewer ) Fiji plugin for visualisation.
+BigDataServer is a minimalistic HTTP server that serves XML/HDF5 datasets to the [BigDataViewer](BigDataViewer) Fiji plugin for visualisation.
 
 The BigDataServer is running on a remote machine which hosts the XML/HDF5 datasets. A client running Fiji connects to the server, chooses the dataset that the server offers and then the data are efficiently delivered to the BigDataViewer. In this way, it is possible to seamlessly navigate very large datasets that reside in a remote location.
 
@@ -88,7 +88,7 @@ In order to connect to a BigDataServer from Fiji and view the data go to {% incl
 
 <img src="/images/pages/Bdv-browse-bigdataserver-1.png" width="500"/>
 
-Enter the URL (including port) of a BigDataServer. For example, the Drosophila timelapse dataset described in [BigDataViewer\_Example\_Datasets\#Remote\_HDF5](BigDataViewer_Example_Datasets#Remote_HDF5 ) is available through this address: [http://fly.mpi-cbg.de:8081](http://fly.mpi-cbg.de:8081). Click OK. The following window will pop up showing a list of datasets offered by the server:
+Enter the URL (including port) of a BigDataServer. For example, the Drosophila timelapse dataset described in [BigDataViewer\_Example\_Datasets\#Remote\_HDF5](BigDataViewer_Example_Datasets#Remote_HDF5) is available through this address: [http://fly.mpi-cbg.de:8081](http://fly.mpi-cbg.de:8081). Click OK. The following window will pop up showing a list of datasets offered by the server:
 
 <img src="/images/pages/Bdv-browse-bigdataserver-2.png" width="500"/>
 

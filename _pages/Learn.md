@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Introduction](Introduction )
+1.  REDIRECT [Introduction](Introduction)

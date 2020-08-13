@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Uber-JAR](Uber-JAR )
+1.  REDIRECT [Uber-JAR](Uber-JAR)

@@ -7,13 +7,13 @@ categories:
 description: test description
 ---
 
-{% include info-box content='This page describes the ""legal"" structure of [SciJava](SciJava ) projects.
+{% include info-box content='This page describes the ""legal"" structure of [SciJava](SciJava) projects.
 
--   For information on their ""technical"" structure, see [Architecture](Architecture ).
--   For information on their ""social"" structure, see [Governance](Governance ).' %}
+-   For information on their ""technical"" structure, see [Architecture](Architecture).
+-   For information on their ""social"" structure, see [Governance](Governance).' %}
 
 {% include menu-licenses%}
-The [ImageJ](ImageJ ) project, and related projects in the [SciJava](SciJava ) component collection, are licensed as [open source](Open_source ) software (OSS) projects.
+The [ImageJ](ImageJ) project, and related projects in the [SciJava](SciJava) component collection, are licensed as [open source](Open_source) software (OSS) projects.
 
 For an introduction to OSS licensing, see [http://choosealicense.com/](http://choosealicense.com/).
 
@@ -22,7 +22,7 @@ The table below summarizes the dominant license of each project's components.
 Exceptions
 ----------
 
-Since each project consists of many components, some may be licensed differently. You can always find the license of each project in a `LICENSE.txt` or similar file of the relevant repository on [GitHub](GitHub ). That said, in general, the table below is accurate with very few exceptions. When there *is* an exception, it is often licensed more permissively than the rest of the project—for example, the core of [Bio-Formats](Bio-Formats ) is licensed under [BSD-2](BSD-2 ) ([1](https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt)), and the [ImageJ](ImageJ ) and [SCIFIO](SCIFIO ) tutorials are licensed under [CC0](CC0 ) ([1](https://github.com/imagej/tutorials/blob/master/README.md), [2](https://github.com/scifio/scifio-tutorials/blob/master/README.md)), waiving all copyright interest as allowed by law.
+Since each project consists of many components, some may be licensed differently. You can always find the license of each project in a `LICENSE.txt` or similar file of the relevant repository on [GitHub](GitHub). That said, in general, the table below is accurate with very few exceptions. When there *is* an exception, it is often licensed more permissively than the rest of the project—for example, the core of [Bio-Formats](Bio-Formats) is licensed under [BSD-2](BSD-2) ([1](https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt)), and the [ImageJ](ImageJ) and [SCIFIO](SCIFIO) tutorials are licensed under [CC0](CC0) ([1](https://github.com/imagej/tutorials/blob/master/README.md), [2](https://github.com/scifio/scifio-tutorials/blob/master/README.md)), waiving all copyright interest as allowed by law.
 
 Project summary
 ---------------
@@ -83,7 +83,7 @@ Project summary
 A note about ImageJ1
 --------------------
 
-The [ImageJ 1.x](ImageJ_1.x ) project is developed at the National Institutes of Health, a United States government organization. Hence, pursuant to [U.S. copyright law Title 17, Section 105](http://www.copyright.gov/title17/92chap1.html#105), no copyright applies. However, that waiver of copyright applies only to U.S. law, and does not apply to other countries. Furthermore, the ImageJ1 project includes substantial effort and code from individuals who are not U.S. government employees, making the legal status of ImageJ1 as a whole decidedly unclear. For further reading, see the {% include wikipedia title='Copyright status of work by the U.S. government' text='Wikipedia article "Copyright status of work by the U.S. government"'%}.
+The [ImageJ 1.x](ImageJ_1.x) project is developed at the National Institutes of Health, a United States government organization. Hence, pursuant to [U.S. copyright law Title 17, Section 105](http://www.copyright.gov/title17/92chap1.html#105), no copyright applies. However, that waiver of copyright applies only to U.S. law, and does not apply to other countries. Furthermore, the ImageJ1 project includes substantial effort and code from individuals who are not U.S. government employees, making the legal status of ImageJ1 as a whole decidedly unclear. For further reading, see the {% include wikipedia title='Copyright status of work by the U.S. government' text='Wikipedia article "Copyright status of work by the U.S. government"'%}.
 
 Developers: How to use this page
 --------------------------------

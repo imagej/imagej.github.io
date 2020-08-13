@@ -21,22 +21,22 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='tferr ' repo='hIPNAT ' %}
+{% include github org='tferr' repo='hIPNAT' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='Strahler Analysis ' maintainer=maintainer author=author filename='hIPNAT\_.jar ([Neuroanatomy update site](User_Neuroanatomy )) ' source=source released='April 2016 ' category='[Plugins](Category_Plugins ), [Neuroanatomy](Category_Neuroanatomy ), [Analysis](Category_Analysis ), [Skeleton](Category_Skeleton ) ' %}
+{% include info-box software='Fiji' name='Strahler Analysis' maintainer=maintainer author=author filename='hIPNAT\_.jar ([Neuroanatomy update site](User_Neuroanatomy))' source=source released='April 2016' category='[Plugins](Category_Plugins), [Neuroanatomy](Category_Neuroanatomy), [Analysis](Category_Analysis), [Skeleton](Category_Skeleton)' %}
 
 </div>
 
-A plugin from the [Neuroanatomy update site](User_Neuroanatomy ) that performs Strahler analysis on topographic skeletons (2D/3D). {% include wikipedia title='Strahler number' text='Strahler numbering'%} is a numerical procedure that summarizes the branching complexity of mathematical trees.
+A plugin from the [Neuroanatomy update site](User_Neuroanatomy) that performs Strahler analysis on topographic skeletons (2D/3D). {% include wikipedia title='Strahler number' text='Strahler numbering'%} is a numerical procedure that summarizes the branching complexity of mathematical trees.
 
-{% include ambox text='This page describes how to perform Strahler Analysis on skeletonized images. For analysis of traced structures have a look at [SNT](SNT ). ' %}
+{% include ambox text='This page describes how to perform Strahler Analysis on skeletonized images. For analysis of traced structures have a look at [SNT](SNT).' %}
 
 Description
 -----------
 
 <span id="StrahlerAnimation"></span><img src="/images/pages/StrahlerAnimation.gif" title="fig:Strahler Analysis by iterative elimination of end-point branches" width="300" alt="Strahler Analysis by iterative elimination of end-point branches" /> The analysis occurs through progressive pruning of terminal branches, *iterative tree simplification*, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them.
 
-*Strahler Analysis* takes a <u>binary</u> or <u>8-bit grayscale</u> image (2D or 3D) containing a <u>single arbor</u>, and calls [AnalyzeSkeleton](AnalyzeSkeleton ) iteratively to retrieve [Horton-Strahler numbers](#References "wikilink") from the [skeletonized centerlines](Skeletonize3D ) of the input image. Each iteration includes three operations: 1) a (re)-skeletonization step to ensure that arbor remains represented by its centerlines, 2) an elimination step in which terminal-branches are pruned from the image and 3) an analysis step in which pruned branches are counted and measured. The iteration ceases as soon as all branches have been eliminated or a unresolved [closed loop](#Elimination_of_Skeleton_Loops "wikilink") has been detected in the pruned arbor.
+*Strahler Analysis* takes a <u>binary</u> or <u>8-bit grayscale</u> image (2D or 3D) containing a <u>single arbor</u>, and calls [AnalyzeSkeleton](AnalyzeSkeleton) iteratively to retrieve [Horton-Strahler numbers](#References "wikilink") from the [skeletonized centerlines](Skeletonize3D) of the input image. Each iteration includes three operations: 1) a (re)-skeletonization step to ensure that arbor remains represented by its centerlines, 2) an elimination step in which terminal-branches are pruned from the image and 3) an analysis step in which pruned branches are counted and measured. The iteration ceases as soon as all branches have been eliminated or a unresolved [closed loop](#Elimination_of_Skeleton_Loops "wikilink") has been detected in the pruned arbor.
 
 Parameters
 ----------
@@ -59,13 +59,13 @@ Elimination of Skeleton Loops:
 
 :;Method
 
-::*Strahler Analysis* cannot process skeletons containing closed loops and will output a warning message when such structures have been detected. The available methods in this drop-down menu define how closed loops should be resolved by and are described in the [AnalyzeSkeleton documentation page](AnalyzeSkeleton#Loop_detection_and_pruning ).
+::*Strahler Analysis* cannot process skeletons containing closed loops and will output a warning message when such structures have been detected. The available methods in this drop-down menu define how closed loops should be resolved by and are described in the [AnalyzeSkeleton documentation page](AnalyzeSkeleton#Loop_detection_and_pruning).
 
 :;Unsegmented image
 
   
   
-The initial non-thinned image to be used by [AnalyzeSkeleton](AnalyzeSkeleton ) for [intensity-based](AnalyzeSkeleton#Loop_detection_and_pruning ) elimination of closed loops. This option is only used if either *Lowest intensity voxel* or *Lowest intensity branch* is chosen as *Method*. Note that if an intensity-based method is selected but the chosen image is a binary one, closed loops will not be resolved.
+The initial non-thinned image to be used by [AnalyzeSkeleton](AnalyzeSkeleton) for [intensity-based](AnalyzeSkeleton#Loop_detection_and_pruning) elimination of closed loops. This option is only used if either *Lowest intensity voxel* or *Lowest intensity branch* is chosen as *Method*. Note that if an intensity-based method is selected but the chosen image is a binary one, closed loops will not be resolved.
 
 <!-- -->
 
@@ -128,42 +128,42 @@ Ramification or {% include wikipedia title='Strahler number\#Bifurcation\_ratio'
 <!-- -->
 
 Iteration log  
-If *Show detailed information* is checked, *Average branch length*, *N. of trees*, *N. of branches*, *N. of junctions*, *N. of triple points*, *N. of quadruple points* are also retrieved for each iteration. These are described in the AnalyzeSkeleton's [documentation page](AnalyzeSkeleton#Table_of_results ).
+If *Show detailed information* is checked, *Average branch length*, *N. of trees*, *N. of branches*, *N. of junctions*, *N. of triple points*, *N. of quadruple points* are also retrieved for each iteration. These are described in the AnalyzeSkeleton's [documentation page](AnalyzeSkeleton#Table_of_results).
 
 Installation
 ------------
 
-To install *Strahler Analysis* you must use Java 8 and subscribe to the [Neuroanatomy update site](User_Neuroanatomy ).
+To install *Strahler Analysis* you must use Java 8 and subscribe to the [Neuroanatomy update site](User_Neuroanatomy).
 
 Related Links
 -------------
 
--   [AnalyzeSkeleton](AnalyzeSkeleton ) and [Skeletonize3D](Skeletonize3D ), analysis of topographic skeletons
--   [Sholl Analysis](Sholl_Analysis ), bitmap morphometry based on the Sholl technique
+-   [AnalyzeSkeleton](AnalyzeSkeleton) and [Skeletonize3D](Skeletonize3D), analysis of topographic skeletons
+-   [Sholl Analysis](Sholl_Analysis), bitmap morphometry based on the Sholl technique
 
 References
 ----------
 
 Original publications by {% include wikipedia title='Robert E. Horton' text='Robert E. Horton'%} and {% include wikipedia title='Arthur Newell Strahler' text='Arthur N. Strahler'%}:
 
--   {% include citation first='R. E. ' last='Horton ' title='Erosional development of streams and their drainage basins: hydro-physical approach to quantitative morphology ' journal='Geological Society of America Bulletin ' volume='56 ' issue='3 ' year='1945 ' pages='275–370 ' doi='10.1130/0016-7606(1945)56\[275:EDOSAT\]2.0.CO;2 ' %}.
+-   {% include citation first='R. E.' last='Horton' title='Erosional development of streams and their drainage basins: hydro-physical approach to quantitative morphology' journal='Geological Society of America Bulletin' volume='56' issue='3' year='1945' pages='275–370' doi='10.1130/0016-7606(1945)56\[275:EDOSAT\]2.0.CO;2' %}.
 
 <!-- -->
 
--   {% include citation last='Strahler ' first='A. N. ' year='1952 ' title='Hypsometric (area-altitude) analysis of erosional topology ' journal='Geological Society of America Bulletin ' volume='63 ' issue='11 ' pages='1117–1142 ' doi='10.1130/0016-7606(1952)63\[1117:HAAOET\]2.0.CO;2 ' %}.
+-   {% include citation last='Strahler' first='A. N.' year='1952' title='Hypsometric (area-altitude) analysis of erosional topology' journal='Geological Society of America Bulletin' volume='63' issue='11' pages='1117–1142' doi='10.1130/0016-7606(1952)63\[1117:HAAOET\]2.0.CO;2' %}.
 
 <!-- -->
 
--   {% include citation last='Strahler ' first='A. N. ' year='1957 ' title='Quantitative analysis of watershed geomorphology ' journal='Transactions of the American Geophysical Union ' volume='38 ' issue='6 ' pages='913–920 ' %} ([PDF](http://www.uvm.edu/~pdodds/files/papers/others/1957/strahler1957a.pdf)).
+-   {% include citation last='Strahler' first='A. N.' year='1957' title='Quantitative analysis of watershed geomorphology' journal='Transactions of the American Geophysical Union' volume='38' issue='6' pages='913–920' %} ([PDF](http://www.uvm.edu/~pdodds/files/papers/others/1957/strahler1957a.pdf)).
 
 Citing
 ------
 
-Plugins from the [Neuroanatomy update site](User_Neuroanatomy ):
+Plugins from the [Neuroanatomy update site](User_Neuroanatomy):
 
 :\* Tiago Ferreira (2016) [<img src="https://zenodo.org/badge/doi/10.5281/zenodo.49399.svg" alt="10.5281/zenodo.49399">](http://dx.doi.org/10.5281/zenodo.49399)
 
-[Skeletonization](Skeletonize3D ) and [Skeleton Analysis](AnalyzeSkeleton ):
+[Skeletonization](Skeletonize3D) and [Skeleton Analysis](AnalyzeSkeleton):
 
 :\*Ignacio Arganda-Carreras, Rodrigo Fernandez-Gonzalez, Arrate Munoz-Barrutia, Carlos Ortiz-De-Solorzano, ["3D reconstruction of histological sections: Application to mammary gland tissue"](http://www3.interscience.wiley.com/journal/123322233/abstract), Microscopy Research and Technique, Volume 73, Issue 11, pages 1019–1029, October 2010.
 

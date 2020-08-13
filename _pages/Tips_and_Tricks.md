@@ -34,7 +34,7 @@ the return value will appear in your Log window when called.
 Find out in which menu (or .jar file) a certain command is
 ----------------------------------------------------------
 
-Hit {% include key content='Ctrl\|L' %} to start the [Command Finder](Command_Finder ). Type (part of) the name of the entry, then click on *Show full information*.
+Hit {% include key content='Ctrl\|L' %} to start the [Command Finder](Command_Finder). Type (part of) the name of the entry, then click on *Show full information*.
 
 If *{% include bc content='Edit | Options | Misc...'%}&gt;Require command key for shortcuts* is *un*checked, typing {% include key content='L' %} is sufficient.
 

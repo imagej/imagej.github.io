@@ -9,7 +9,7 @@ description: test description
 
 <noinclude> This widget allows you to add **{% include wikipedia title='SWF' text='SWF'%}** content to your wiki page:
 
-1.  [Upload](Special_Upload ) the SWF file.
+1.  [Upload](Special_Upload) the SWF file.
 2.  Embed it in a page using
         TODO FLASH WIDGET
 

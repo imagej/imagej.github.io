@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Developing\_using\_native\_libraries\#JNI](Developing_using_native_libraries#JNI )
+1.  REDIRECT [Developing\_using\_native\_libraries\#JNI](Developing_using_native_libraries#JNI)

@@ -8,21 +8,21 @@ description: test description
 ---
 
 {% include develop-menu content='tutorials' %} {% include info-box content='This page presents exercises for ""software developers"" to use for debugging ImageJ.  
-If you are a ""user"" looking to troubleshoot issues, see the [Troubleshooting](Troubleshooting ) page.' %}
+If you are a ""user"" looking to troubleshoot issues, see the [Troubleshooting](Troubleshooting) page.' %}
 
-[Debugging](Debugging ) is the art of determining the cause and/or location of a problem. The purpose of this guide is to provide developers practical, hands-on experience using a variety of debugging techniques to identify problems in code.
+[Debugging](Debugging) is the art of determining the cause and/or location of a problem. The purpose of this guide is to provide developers practical, hands-on experience using a variety of debugging techniques to identify problems in code.
 
 Requirements
 ============
 
-As ImageJ is built using the [SciJava principles of project management](Project_management ), this guide assumes a basic familiarity with these topics and tools, especially:
+As ImageJ is built using the [SciJava principles of project management](Project_management), this guide assumes a basic familiarity with these topics and tools, especially:
 
--   [Git](Git )
--   [Maven](Maven )
+-   [Git](Git)
+-   [Maven](Maven)
 
 Additionally, you should:
 
--   Install an IDE - this guide is written with [Eclipse](Eclipse ) in mind.
+-   Install an IDE - this guide is written with [Eclipse](Eclipse) in mind.
 -   If using Eclipse, install the [memory analyzer plugin](https://eclipse.org/mat/).
 -   Clone the [imagej-troubleshooting](https://github.com/imagej/imagej-troubleshooting) companion repository, which this guide is designed around, and import it as a Maven project into your IDE.
 -   Install the [jvisualvm](https://visualvm.java.net/) tool.
@@ -47,7 +47,7 @@ Learning to use debugging tools is, understandably, a burden: it's "one more thi
 Using this guide
 ================
 
-The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, most do not explicitly use ImageJ. But once you learn how to [debug an external Java application](#Exercise_4:_ImageJ_plugins "wikilink"), you will have the knowledge to apply any of these techniques to a rich, and complex, application like [ImageJ](ImageJ ).
+The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, most do not explicitly use ImageJ. But once you learn how to [debug an external Java application](#Exercise_4:_ImageJ_plugins "wikilink"), you will have the knowledge to apply any of these techniques to a rich, and complex, application like [ImageJ](ImageJ).
 
 Because this project is intended to help new developers practice troubleshooting skills, you may find these examples contrived - indeed, they are. Exercises are kept simple and focused to allow practice of targeted techniques. If you have complete knowledge and understanding of the code there isn't really a need for troubleshooting: it is trivial to see why something is behaving incorrectly. Thus the source of these exercises is divided into `hidden` and `visible` packages. Users are strongly recommended to only inspect and set breakpoints from the `visible` classes. From a development point of view, consider the `hidden` package a 3rd-party library that you may not have control over, or access to the source code.
 
@@ -76,7 +76,7 @@ To get started in this exercise, open up the source file - `E1BasicBreakpoints` 
 
 ![](/images/pages/E1StackTrace.png "E1StackTrace.png")
 
-[Stack traces](Wikipedia_Stack_trace ) are a common starting point for debugging, as they are typically automatically produced when something goes wrong that the program was not prepared to handle. Java programs are executed in [Last In, First Out](Wikipedia_Stack_(abstract_data_type) "wikilink") order; that is, starting with the `main` method, as methods are called they are added to the top of the *stack*, the method at the top is what's currently running, and when a method completes it is removed from the stack, returning the program to the next method in line. When an exception occurs, a *stack trace* is printed, showing the order that methods have been queued, with the top of the stack being the location of the exception (and thus a likely place to start looking for problems!).
+[Stack traces](Wikipedia_Stack_trace) are a common starting point for debugging, as they are typically automatically produced when something goes wrong that the program was not prepared to handle. Java programs are executed in [Last In, First Out](Wikipedia_Stack_(abstract_data_type) "wikilink") order; that is, starting with the `main` method, as methods are called they are added to the top of the *stack*, the method at the top is what's currently running, and when a method completes it is removed from the stack, returning the program to the next method in line. When an exception occurs, a *stack trace* is printed, showing the order that methods have been queued, with the top of the stack being the location of the exception (and thus a likely place to start looking for problems!).
 
 So looking back at the stack trace we got, we can see *what* went wrong (tried to use a `null` object) and *where* it happened (the line number at the top of the stack), but we don't know *why* the object was `null` at that point - which would be the actual root cause of the exception.
 
@@ -206,7 +206,7 @@ Exercise 4: ImageJ plugins
 
 -   Start a debugging session in Eclipse that connects to a running ImageJ instance
 
-Exercises 1-3 are abstract, self-contained programs. The `E4RemoteResearch` class, on the other hand, is an actual ImageJ [plugin](Writing_plugins#What_is_a_.22plugin.22.3F ). Although plugin developers typically set up tests to run their plugin within ImageJ, it is impossible to test all possible runtime environments: users could have a variety of [update sites](Update_Sites ) enabled, custom plugins installed, etc... and each modification is an opportunity for dependency skew and clashes with your plugin. When problems do arise, it is invaluable to have the ability to debug a running copy of ImageJ itself.
+Exercises 1-3 are abstract, self-contained programs. The `E4RemoteResearch` class, on the other hand, is an actual ImageJ [plugin](Writing_plugins#What_is_a_.22plugin.22.3F). Although plugin developers typically set up tests to run their plugin within ImageJ, it is impossible to test all possible runtime environments: users could have a variety of [update sites](Update_Sites) enabled, custom plugins installed, etc... and each modification is an opportunity for dependency skew and clashes with your plugin. When problems do arise, it is invaluable to have the ability to debug a running copy of ImageJ itself.
 
 `E4RemoteResearch` does still have a `main` method to demonstrate the expected output for this plugin - in this case, simply printing the concrete implementation of the `ConsoleService`. Run the class in Eclipse and you should see some simple output in the console:
 
@@ -222,11 +222,11 @@ Note that the menu path of the plugin is specified in the class's annotation:
 
     @Plugin(type = Command.class,menuPath = "Plugins>Troubleshooting>E4 - Print ConsoleService")
 
-So, you can now run the `E4 - Print ConsoleService` command either via the menus or [command finder](Command_Finder ). You should get an exception:
+So, you can now run the `E4 - Print ConsoleService` command either via the menus or [command finder](Command_Finder). You should get an exception:
 
 ![](/images/pages/E4StackTrace.png "E4StackTrace.png")
 
-In order to connect Eclipse to ImageJ, we need to close our running instance and [launch ImageJ from the command line](Troubleshooting#Launching_ImageJ_from_the_console ), which allows us to set the [debug flag](Debugging#Attaching_to_ImageJ_instances ), e.g.:
+In order to connect Eclipse to ImageJ, we need to close our running instance and [launch ImageJ from the command line](Troubleshooting#Launching_ImageJ_from_the_console), which allows us to set the [debug flag](Debugging#Attaching_to_ImageJ_instances), e.g.:
 
     ImageJ.app/ImageJ-linux64 --debugger=8000
 
@@ -272,7 +272,7 @@ Exercise 5: Git history
 
 -   Practice using [git bisect](https://git-scm.com/docs/git-bisect) to locate historical breakages
 
-Debugging code directly via the techniques we've discussed thus far is not always practical. If the code is excessively complex, or the problem subtle, it may not be practical to try and step through code execution - you may not even be sure where to start. Keeping code well-structured and well-documented can help here, but we have another resource to draw on: the history of changes to our code, via git commits - assuming [appropriate development practices](Development_Lifecycle ) are used. Identifying the breaking change gives us more information to use in our diagnosis (and in some cases, can be fixed with a simple [git revert](https://git-scm.com/docs/git-revert)\]).
+Debugging code directly via the techniques we've discussed thus far is not always practical. If the code is excessively complex, or the problem subtle, it may not be practical to try and step through code execution - you may not even be sure where to start. Keeping code well-structured and well-documented can help here, but we have another resource to draw on: the history of changes to our code, via git commits - assuming [appropriate development practices](Development_Lifecycle) are used. Identifying the breaking change gives us more information to use in our diagnosis (and in some cases, can be fixed with a simple [git revert](https://git-scm.com/docs/git-revert)\]).
 
 So, the first thing we'll do is run the `E5HistoricalHysteria` class and verify that it fails. For this exercise we have some additional information: this class used to run successfully, and a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) was made at that point.
 
@@ -317,7 +317,7 @@ After marking the last commit good or bad, bisect will print out the first bad c
 
 **Takeaways**
 
--   Use *all* resources available when debugging - even the git history can be useful (assuming it's [well-maintained](Development_Lifecycle )!)
+-   Use *all* resources available when debugging - even the git history can be useful (assuming it's [well-maintained](Development_Lifecycle)!)
 
 Exercise 6: Print stack trace
 -----------------------------
@@ -326,7 +326,7 @@ Exercise 6: Print stack trace
 
 -   Identify problematic code when no feedback is given
 
-When debugging we're trying to identify why a program isn't behaving as expected. Often this starts in response to an unhandled Java exception, which comes with a helpful stack trace to point us in the right direction. Unfortunately, there are also times when no information as given - such as when the [JVM hangs (gets stuck)](Debugging#Debugging_JVM_hangs ) or [crashes without warning](Debugging#Debugging_hard_JVM_crashes ). In this exercise we'll look at another way to extract information from our application: by forcing a stack trace to be printed.
+When debugging we're trying to identify why a program isn't behaving as expected. Often this starts in response to an unhandled Java exception, which comes with a helpful stack trace to point us in the right direction. Unfortunately, there are also times when no information as given - such as when the [JVM hangs (gets stuck)](Debugging#Debugging_JVM_hangs) or [crashes without warning](Debugging#Debugging_hard_JVM_crashes). In this exercise we'll look at another way to extract information from our application: by forcing a stack trace to be printed.
 
 As we did [in exercise 4](#Exercise_4:_ImageJ_plugins "wikilink"), the first thing to do is build the `imagej-troubleshooting .jar` and install it in your `ImageJ.app/jars` directory. Then you can start up ImageJ and run the command for this exercise:
 
@@ -354,7 +354,7 @@ We actually don't need any extra flags this time, as this technique isn't specif
 
 In this state, we can still send signals to the running application (for example - {% include key content='ctrl\|c' %} to [kill the app](http://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)).
 
-When running a Java application, we can use {% include key content='ctrl\|\\' %} to print a stack trace. **Note:** this shortcut may vary based on your OS and keyboard: see the [print stack trace instructions](Troubleshooting#If_ImageJ_freezes_or_hangs ) for more information.
+When running a Java application, we can use {% include key content='ctrl\|\\' %} to print a stack trace. **Note:** this shortcut may vary based on your OS and keyboard: see the [print stack trace instructions](Troubleshooting#If_ImageJ_freezes_or_hangs) for more information.
 
 With this knowledge:
 
@@ -435,7 +435,7 @@ Exercise 8: Profiling
 
 In the other debugging exercises, we look at programs failing due to errors. Another common concern is program *performance* - does your program run in a reasonable time frame? This often can not be deduced by simply looking at the code. So the first step in fixing performance is identifying the location of the slowdown.
 
-Exercise 8 in pretty straightforward with the main function calling two functions - `doStuff()` and `doMoreStuff()`. Both functions are called one after the other for two minutes. Our goal is to find which function is slower than the other. One solution a programmer may think of is to keep track of time taken by comparing values returned by [System.currentTimeMillis](http://docs.oracle.com/javase/7/docs/api/java/lang/System.html#currentTimeMillis%28%29), but this method does not scale up for large program and requires modifications to the code. It is much more efficient and useful to use a profiler to monitor time spent in methods - which is part of the [jvisualvm](Debugging_Exercises#Requirements ) troubleshooting tool.
+Exercise 8 in pretty straightforward with the main function calling two functions - `doStuff()` and `doMoreStuff()`. Both functions are called one after the other for two minutes. Our goal is to find which function is slower than the other. One solution a programmer may think of is to keep track of time taken by comparing values returned by [System.currentTimeMillis](http://docs.oracle.com/javase/7/docs/api/java/lang/System.html#currentTimeMillis%28%29), but this method does not scale up for large program and requires modifications to the code. It is much more efficient and useful to use a profiler to monitor time spent in methods - which is part of the [jvisualvm](Debugging_Exercises#Requirements) troubleshooting tool.
 
 **Steps for exercise**
 
@@ -493,14 +493,14 @@ The answer depends on the debugging developer's skill and responsibilities, and 
 
 If a fix is identified:
 
--   If you are a maintainer of the component you can make the fix directly, or use a [topic branch](Git_topic_branches ) if the fix needs discussion first.
--   If you do not have commit rights to the repository, you can [contribute the fix](How_to_contribute_to_an_existing_plugin_or_library ) via pull request
+-   If you are a maintainer of the component you can make the fix directly, or use a [topic branch](Git_topic_branches) if the fix needs discussion first.
+-   If you do not have commit rights to the repository, you can [contribute the fix](How_to_contribute_to_an_existing_plugin_or_library) via pull request
 
 If a fix is unclear:
 
--   Use any of the standard [channels for help](Help ).
+-   Use any of the standard [channels for help](Help).
 
-Even if you can't contribute a fix, if you went through the effort of debugging - at the very least you should identify the problem, steps you took to debug, and potential fix(es) via a [bug report](Report_a_Bug ) so that your effort is not lost.
+Even if you can't contribute a fix, if you went through the effort of debugging - at the very least you should identify the problem, steps you took to debug, and potential fix(es) via a [bug report](Report_a_Bug) so that your effort is not lost.
 
 See Also
 ========

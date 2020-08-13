@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Architecture\#Reproducible\_builds](Architecture#Reproducible_builds )
+1.  REDIRECT [Architecture\#Reproducible\_builds](Architecture#Reproducible_builds)

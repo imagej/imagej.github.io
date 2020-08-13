@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Spatial Calibration](Spatial_Calibration )
+1.  REDIRECT [Spatial Calibration](Spatial_Calibration)

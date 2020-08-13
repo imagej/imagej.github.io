@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Command Finder](Command_Finder )
+1.  REDIRECT [Command Finder](Command_Finder)

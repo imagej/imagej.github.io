@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Jean-Yves Tinevez ' gravatar='8393457e2502f0dd9acfaa88483dcb03 ' affiliation='Institut Pasteur ' forum='tinevez ' github='tinevez ' osrc='tinevez ' %}Hi,
+{% include user-box name='Jean-Yves Tinevez' gravatar='8393457e2502f0dd9acfaa88483dcb03' affiliation='Institut Pasteur' forum='tinevez' github='tinevez' osrc='tinevez' %}Hi,
 
 My name is Jean-Yves Tinevez. I used to work at the [Max-Planck Institute of Cell Biology and Genetics](http://mpi-cbg.de), in Dresden, and currently work at the Institut Pasteur, in the [imaging platform](http://www.pasteur.fr/ip/easysite/go/03b-000011-04a/recherche/plates-formes-technologiques/technopole-de-l-institut-pasteur/imagopole).
 
@@ -16,16 +16,16 @@ Here are the plugins released I am responsible for. If you detect any problem wi
 Maintained plugins
 ------------------
 
--   [FlowJ](FlowJ )
--   [LSM Toolbox](LSM_Toolbox )
--   The [Stack Manipulation](Stack_Manipulation ) package
--   [View5D](View5D )
+-   [FlowJ](FlowJ)
+-   [LSM Toolbox](LSM_Toolbox)
+-   The [Stack Manipulation](Stack_Manipulation) package
+-   [View5D](View5D)
 
 Authored plugins documented here
 --------------------------------
 
--   [Arrow\_](Arrow )
--   [Directionality\_](Directionality )
--   [Image Expression Parser](Image_Expression_Parser )
--   [PIV analysis](PIV_analysis )
--   [TrackMate\_](TrackMate )
+-   [Arrow\_](Arrow)
+-   [Directionality\_](Directionality)
+-   [Image Expression Parser](Image_Expression_Parser)
+-   [PIV analysis](PIV_analysis)
+-   [TrackMate\_](TrackMate)

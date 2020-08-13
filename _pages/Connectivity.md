@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BoneJ2\#Connectivity](BoneJ2#Connectivity )
+1.  REDIRECT [BoneJ2\#Connectivity](BoneJ2#Connectivity)

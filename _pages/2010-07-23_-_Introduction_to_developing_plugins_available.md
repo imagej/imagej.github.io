@@ -7,6 +7,6 @@ categories: News
 description: test description
 ---
 
-Between July 19th and 21st, there was a workshop about plugin development with Fiji at the [Department of Cognitive Biology](http://cogbio.univie.ac.at/home/) at the university of Vienna, Austria. The presentation has been turned into an [online tutorial](Introduction_into_Developing_Plugins‎ ) for everybody to enjoy.
+Between July 19th and 21st, there was a workshop about plugin development with Fiji at the [Department of Cognitive Biology](http://cogbio.univie.ac.at/home/) at the university of Vienna, Austria. The presentation has been turned into an [online tutorial](Introduction_into_Developing_Plugins‎) for everybody to enjoy.
 
 

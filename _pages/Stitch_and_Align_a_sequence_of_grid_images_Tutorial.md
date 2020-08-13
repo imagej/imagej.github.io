@@ -10,7 +10,7 @@ description: test description
 Introduction
 ------------
 
-This tutorial describes*' how to produce an image stack (or 3D image) from an input sequence of tiles*' using the Fiji plugins for [stitching](Stitching ) and [registration](Register_Virtual_Stack_Slices ).
+This tutorial describes*' how to produce an image stack (or 3D image) from an input sequence of tiles*' using the Fiji plugins for [stitching](Stitching) and [registration](Register_Virtual_Stack_Slices).
 
 Given the origin of the images used in this tutorial, the transformation between tiles can be modeled as a pure translation to generate the mosaic (of a slice). The transformation between slices can also be modeled as pure translation.
 
@@ -83,7 +83,7 @@ When we click on OK, another dialog pops up to select the Feature extraction par
 
 Here, we only increase the **steps per octave scale** to 5 to find more point candidates to correspondences, and the **maximum image size** to 1400 pixels, to use more image information.
 
-**NOTE**: these values are usually a good choice, but they can be tuned when working with other types of images. For more details about the parameters, visit the [registration plugin page](Register_Virtual_Stack_Slices ).
+**NOTE**: these values are usually a good choice, but they can be tuned when working with other types of images. For more details about the parameters, visit the [registration plugin page](Register_Virtual_Stack_Slices).
 
 We then click on OK and the alignment starts.
 

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SciJava](SciJava )
+1.  REDIRECT [SciJava](SciJava)

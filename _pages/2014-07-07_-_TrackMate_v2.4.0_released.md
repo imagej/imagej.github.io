@@ -7,7 +7,7 @@ categories: News
 description: test description
 ---
 
-We just released a new minor version of [TrackMate](TrackMate ), that ships improvements to [TrackScheme](TrackScheme ) and bugfixes.
+We just released a new minor version of [TrackMate](TrackMate), that ships improvements to [TrackScheme](TrackScheme) and bugfixes.
 
 Improvements
 ------------

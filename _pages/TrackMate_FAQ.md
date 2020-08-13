@@ -44,7 +44,7 @@ So by properties of the LoG filter, this quality value is larger for :
 
 *TrackMate found my particles, and the preview function is usefeul. However I can't seem to figure out how to export all the TrackMate overlays to individual ROIs, so that I can analyse them with other plugins.*
 
-There is a ROI exporter action is in a separate package called `TrackMate-extras`. To install it, you have to download its *jar* file and drop it in the *plugins* folder of Fiji. Link and instructions are on the [TrackMate\#Downloadable\_jars](TrackMate#Downloadable_jars ) page.
+There is a ROI exporter action is in a separate package called `TrackMate-extras`. To install it, you have to download its *jar* file and drop it in the *plugins* folder of Fiji. Link and instructions are on the [TrackMate\#Downloadable\_jars](TrackMate#Downloadable_jars) page.
 
 An action called **Export current spots to IJ rois** will appear in the menu of the action panel (the very last one in the GUI). It will convert each spot to a point in the Multi-Point ROI tool of ImageJ1.
 
@@ -102,6 +102,6 @@ These errors may popup when you try to launch TrackMate, or plot features. A sta
 
 This kind of error is caused when a Java class is missing in your installation. In most cases, this happens because your Fiji installation did not update properly. Possible solutions are
 
--   [Update](Updater ) Fiji.
--   Check if you have the [Jave8](2015-12-22_-_The_road_to_Java_8 ) update site in the Fiji [Updater](Updater )
--   Finally, if nothing works, rather than digging in your Fiji installation in details, just install Java 8 and [re-download](Downloads ) a fresh Fiji application.
+-   [Update](Updater) Fiji.
+-   Check if you have the [Jave8](2015-12-22_-_The_road_to_Java_8) update site in the Fiji [Updater](Updater)
+-   Finally, if nothing works, rather than digging in your Fiji installation in details, just install Java 8 and [re-download](Downloads) a fresh Fiji application.

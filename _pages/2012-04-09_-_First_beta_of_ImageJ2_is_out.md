@@ -7,7 +7,7 @@ categories: News,ImageJ2
 description: test description
 ---
 
-The first beta of the [next generation of ImageJ](ImageJ2 ) is out! From the announcement:
+The first beta of the [next generation of ImageJ](ImageJ2) is out! From the announcement:
 
   
 Today, the ImageJDev team is proud to release the first beta of ImageJ2, version 2.0.0-beta1!

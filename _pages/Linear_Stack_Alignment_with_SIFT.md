@@ -7,7 +7,7 @@ categories: Registration,Plugins
 description: test description
 ---
 
-{% include info-box software='Fiji ' name='Linear Stack Alignment with SIFT ' maintainer='Stephan Saalfeld ' author='Stephan Saalfeld ' source=' [on GitHub](https://github.com/axtimwalde/mpicbg/blob/master/mpicbg_/src/main/java/SIFT_Align.java) ' latest-version='June 2008 ' category='[:Category:Registration](Category_Registration ) ' website='http://fly.mpi-cbg.de/\~saalfeld/Projects/javasift.html ' %}
+{% include info-box software='Fiji' name='Linear Stack Alignment with SIFT' maintainer='Stephan Saalfeld' author='Stephan Saalfeld' source=' [on GitHub](https://github.com/axtimwalde/mpicbg/blob/master/mpicbg_/src/main/java/SIFT_Align.java)' latest-version='June 2008' category='[:Category:Registration](Category_Registration)' website='http://fly.mpi-cbg.de/\~saalfeld/Projects/javasift.html' %}
 
 A lightweight SIFT-implementation for Java after the paper of David Lowe[1]. The ImageJ plugin can be used for aligning image stacks.
 
@@ -22,4 +22,4 @@ References
 
  
 
-[1] {% include cite content='journal' author='Lowe D ' title='Distinctive Image Features from Scale-Invariant Keypoints ' journal='International Journal of Computer Vision ' year='2004 ' volume='60 ' number='2 ' pages='91-110 ' %}
+[1] {% include cite content='journal' author='Lowe D' title='Distinctive Image Features from Scale-Invariant Keypoints' journal='International Journal of Computer Vision' year='2004' volume='60' number='2' pages='91-110' %}

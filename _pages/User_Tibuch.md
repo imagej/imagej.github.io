@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Tim-Oliver Buchholz ' affiliation='MPI-CBG ' forum='tibuch ' github='tibuch ' website='https://tibuch.github.io/ ' %}
+{% include user-box name='Tim-Oliver Buchholz' affiliation='MPI-CBG' forum='tibuch' github='tibuch' website='https://tibuch.github.io/' %}

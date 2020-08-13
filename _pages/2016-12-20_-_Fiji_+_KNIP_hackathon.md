@@ -7,7 +7,7 @@ categories: News,Fiji
 description: test description
 ---
 
-From Tuesday, December 6, 2016 through Friday, December 16, 2016, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosted \~20 developers at their facility in Dresden, Germany for a [hackathon](Hackathon ) to develop [ImageJ2](ImageJ2 ) and [Fiji](Fiji ) core infrastructure and [plugins](Plugins ).
+From Tuesday, December 6, 2016 through Friday, December 16, 2016, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosted \~20 developers at their facility in Dresden, Germany for a [hackathon](Hackathon) to develop [ImageJ2](ImageJ2) and [Fiji](Fiji) core infrastructure and [plugins](Plugins).
 
 Timeline
 --------
@@ -133,25 +133,25 @@ Hackathon progress
 
 ### Tim-Oliver Buchholz
 
--   Participated in technical discussions about ThreeDViewer, BigDataViewer and the next generation of viewers used in [KNIME Image Processing](KNIME_Image_Processing ).
--   Participated in discussions about [ImageJ Ops](ImageJ_Ops ) based feature extraction.
--   Worked on the integration of the BigDataViewer as new standard viewer in [KNIME Image Processing](KNIME_Image_Processing ).
+-   Participated in technical discussions about ThreeDViewer, BigDataViewer and the next generation of viewers used in [KNIME Image Processing](KNIME_Image_Processing).
+-   Participated in discussions about [ImageJ Ops](ImageJ_Ops) based feature extraction.
+-   Worked on the integration of the BigDataViewer as new standard viewer in [KNIME Image Processing](KNIME_Image_Processing).
 
 ### Ulrik Günther
 
--   continued work on the [Scenery](Scenery ) 3D rendering backend for [ThreeDViewer](ThreeDViewer ) and [ClearVolume](ClearVolume ) 2.0:
+-   continued work on the [Scenery](Scenery) 3D rendering backend for [ThreeDViewer](ThreeDViewer) and [ClearVolume](ClearVolume) 2.0:
     -   introduced the library and its features to the community
     -   fixed native code dependencies, included CI builds
-    -   worked on the Vulkan ([1](https://www.khronos.org/vulkan)) backend for higher rendering performance, which finally got merged (see {% include github org='ClearVolume ' repo='scenery ' pr='31 ' label='ClearVolume/scenery\#31 ' %})
+    -   worked on the Vulkan ([1](https://www.khronos.org/vulkan)) backend for higher rendering performance, which finally got merged (see {% include github org='ClearVolume' repo='scenery' pr='31' label='ClearVolume/scenery\#31' %})
     -   helped various people getting scenery running on their machine
--   fixed some bugs in [ClearVolume](ClearVolume ), together with {% include person content='royerloic' %}
--   discussed future directions for [ThreeDViewer](ThreeDViewer )/[ClearVolume](ClearVolume )/[BigDataViewer](BigDataViewer ) with {% include person content='Kharrington' %}, {% include person content='royerloic' %}, {% include person content='tpietzsch' %} and {% include person content='Saalfeld' %}
+-   fixed some bugs in [ClearVolume](ClearVolume), together with {% include person content='royerloic' %}
+-   discussed future directions for [ThreeDViewer](ThreeDViewer)/[ClearVolume](ClearVolume)/[BigDataViewer](BigDataViewer) with {% include person content='Kharrington' %}, {% include person content='royerloic' %}, {% include person content='tpietzsch' %} and {% include person content='Saalfeld' %}
 
 ### Robert Haase
 
--   Participated in discussions about [Fiji](Fiji ) release cycle and [ImageJ Ops](ImageJ_Ops ) based feature extraction
--   Bugfixed a tool for visualising Meshes in the good old [3D Viewer](3D_Viewer ) which were derived from ArrayList&lt;RandomAccessibleInterval<BoolType>&gt;s as an intermediate solution until the [ThreeDViewer](ThreeDViewer ) is ready.
--   Built an ImageJ-Ops based particle analyser, which will in the future allow processing 3D images in a way like 2D images were processed using the good old [Particle Analysis](Particle_Analysis ) tool
+-   Participated in discussions about [Fiji](Fiji) release cycle and [ImageJ Ops](ImageJ_Ops) based feature extraction
+-   Bugfixed a tool for visualising Meshes in the good old [3D Viewer](3D_Viewer) which were derived from ArrayList&lt;RandomAccessibleInterval<BoolType>&gt;s as an intermediate solution until the [ThreeDViewer](ThreeDViewer) is ready.
+-   Built an ImageJ-Ops based particle analyser, which will in the future allow processing 3D images in a way like 2D images were processed using the good old [Particle Analysis](Particle_Analysis) tool
 -   With {% include person content='maarzt' %}, {% include person content='Jug' %}, and {% include person content='Rueden' %} we launched the work on a `PlotService` for ImageJ2.
 
 ### Kyle Harrington
@@ -159,25 +159,25 @@ Hackathon progress
 -   Participated in technical discussions, especially those focused on the next generation ThreeDViewer
 -   Finished integrating imagej-ops usage into Funimage (see [Funimage\#26](https://github.com/funimage/funimage/pull/26))
 -   Unifying Mesh data structure from ops with [imagej-mesh](https://github.com/imagej/imagej-mesh) file loading with {% include person content='rimadoma' %}
--   More [ThreeDViewer](ThreeDViewer ) enhancements
+-   More [ThreeDViewer](ThreeDViewer) enhancements
 
 ### Florian Jug
 
--   With {% include person content='Rueden' %}, overhauled the [SciJava Common](SciJava_Common ) [logging](Logging ) mechanism ({% include github org='scijava ' repo='scijava-common ' pr='253 ' label='scijava/scijava-common\#253 ' %}).
+-   With {% include person content='Rueden' %}, overhauled the [SciJava Common](SciJava_Common) [logging](Logging) mechanism ({% include github org='scijava' repo='scijava-common' pr='253' label='scijava/scijava-common\#253' %}).
 -   With {% include person content='Rueden' %},{% include person content='Haesleinhuepf' %},{% include person content='Pietzsch' %}, and {% include person content='Saalfeld' %} split up the necessary work in order to cut stable releases of Fiji (biannually). This 'earned' me the status of 'Grand Poobah'. ;)
 -   Worked on an 'indago' parent POM for DAIS related projects and started using it for the new tracker 'Tr2d'.
 -   Worked on the new tracker 'Tr2d'. New features: improved leveraged editing; tracklet export; improved BDV overlays.
--   With {% include person content='royerloic' %} and {% include person content='maweigert' %} we have fixed some reported [ClearVolume](ClearVolume ) bugs and released a new version after testing on Win/Linux/MaxOS.
+-   With {% include person content='royerloic' %} and {% include person content='maweigert' %} we have fixed some reported [ClearVolume](ClearVolume) bugs and released a new version after testing on Win/Linux/MaxOS.
 -   With {% include person content='maarzt' %}, {% include person content='Haesleinhuepf' %}, and {% include person content='Rueden' %} we launched the work on a `PlotService` for ImageJ2.
 
 ### Curtis Rueden
 
--   With {% include person content='Alecneevel' %} and {% include person content='Saalfeld' %}, completed update of ImageJ web resources to support HTTPS (see [separate news post](2016-12-29_-_ImageJ_web_resources_now_support_HTTPS )).
--   With {% include person content='Jug' %}, overhauled the [SciJava Common](SciJava_Common ) [logging](Logging ) mechanism ({% include github org='scijava ' repo='scijava-common ' pr='253 ' label='scijava/scijava-common\#253 ' %}).
--   With {% include person content='Rdom' %}, improved [SciJava Common](SciJava_Common ) context injection to be recursive, to fix bugs with service population of commands ({% include github org='scijava ' repo='scijava-common ' commit='b0c981b24fc8ec845656574d95f9eddbc285728e ' label='scijava/scijava-common@b0c981b2 ' %}, {% include github org='imagej ' repo='imagej-ops ' commit='4f78eca5b061881865c2a2c1702a98e634248aa5 ' label='imagej/imagej-ops@4f78eca5 ' %}).
--   With {% include person content='Rdom' %}, add a validater callback for parameter validation ({% include github org='scijava ' repo='scijava-common ' commit='66ed844ee76a264ca83629f0fef50c9b726c8897 ' label='scijava/scijava-common@66ed844e ' %}, {% include github org='scijava ' repo='scijava-common ' commit='70c50f48cc20cec0a747a000778f013c7380155d ' label='scijava/scijava-common@70c50f48 ' %}).
+-   With {% include person content='Alecneevel' %} and {% include person content='Saalfeld' %}, completed update of ImageJ web resources to support HTTPS (see [separate news post](2016-12-29_-_ImageJ_web_resources_now_support_HTTPS)).
+-   With {% include person content='Jug' %}, overhauled the [SciJava Common](SciJava_Common) [logging](Logging) mechanism ({% include github org='scijava' repo='scijava-common' pr='253' label='scijava/scijava-common\#253' %}).
+-   With {% include person content='Rdom' %}, improved [SciJava Common](SciJava_Common) context injection to be recursive, to fix bugs with service population of commands ({% include github org='scijava' repo='scijava-common' commit='b0c981b24fc8ec845656574d95f9eddbc285728e' label='scijava/scijava-common@b0c981b2' %}, {% include github org='imagej' repo='imagej-ops' commit='4f78eca5b061881865c2a2c1702a98e634248aa5' label='imagej/imagej-ops@4f78eca5' %}).
+-   With {% include person content='Rdom' %}, add a validater callback for parameter validation ({% include github org='scijava' repo='scijava-common' commit='66ed844ee76a264ca83629f0fef50c9b726c8897' label='scijava/scijava-common@66ed844e' %}, {% include github org='scijava' repo='scijava-common' commit='70c50f48cc20cec0a747a000778f013c7380155d' label='scijava/scijava-common@70c50f48' %}).
 -   With {% include person content='maarzt' %}, began work on a `PlotService` for ImageJ2 (\[https://github.com/imagej/imagej-ui-swing/compare/plot-service...maarzt:plot-service maarzt/imagej-ui-swing@plot-service\]).
--   Participated in technical discussions with various people, including a "big-picture" status update for ImageJ2 covering my [primary priorities](User_Rueden#Primary_projects ); see [Technical discussions](#Technical_discussions "wikilink") section below.
+-   Participated in technical discussions with various people, including a "big-picture" status update for ImageJ2 covering my [primary priorities](User_Rueden#Primary_projects); see [Technical discussions](#Technical_discussions "wikilink") section below.
 
 ### Tobias Pietzsch
 
@@ -198,7 +198,7 @@ Hackathon progress
 ### JeanYvesTinevez
 
 -   With {% include person content='Pietzsch' %}, worked on Mastodon/TrackMate3, in particular view colouring by numerical features calculated on a model.
--   With {% include person content='Pietzsch' %},extended the [MaMuT](MaMuT ) so that it can be used for 2D over time properly.
+-   With {% include person content='Pietzsch' %},extended the [MaMuT](MaMuT) so that it can be used for 2D over time properly.
 
 ### Christian Dietz
 
@@ -218,7 +218,7 @@ Hackathon progress
 
 ### Jonas Massa
 
--   implemented an ilastik HDF5 import/export plugin for Imagej ({% include github org='Beinabih ' repo='ilastik-Fiji-Plugin ' label='Beinabih/ilastik-Fiji-Plugin ' %})
+-   implemented an ilastik HDF5 import/export plugin for Imagej ({% include github org='Beinabih' repo='ilastik-Fiji-Plugin' label='Beinabih/ilastik-Fiji-Plugin' %})
 
 ### HongKee Moon
 
@@ -259,7 +259,7 @@ Technical discussions
 
 -   We agreed to cut a stable release of Fiji once every six months.
     -   {% include person content='Jug' %} will manage the releases, both socially and technically.
-    -   {% include person content='Haesleinhuepf' %} will update the [Updater](Updater ) to more clearly communicate the ramifications of updating.
+    -   {% include person content='Haesleinhuepf' %} will update the [Updater](Updater) to more clearly communicate the ramifications of updating.
     -   {% include person content='Rueden' %} will create Jenkins jobs for automating cutting of stable release candidates and releases.
 -   We agreed to continue pursuing the "melting pot" builds of Fiji and/or the SciJava universe, to better detect cross-component regressions and incompatibilities.
     -   {% include person content='Rueden' %} will research effective approaches for running the melting pot via CI.
@@ -267,9 +267,9 @@ Technical discussions
 
 ### 3D viewers in ImageJ and Fiji
 
--   We discussed how best to proceed with the [ThreeDViewer](ThreeDViewer ), [BigDataViewer](BigDataViewer ) et. al.
+-   We discussed how best to proceed with the [ThreeDViewer](ThreeDViewer), [BigDataViewer](BigDataViewer) et. al.
     -   All agree to be very grumpy if the discussion ever degrades back to a laundry list of desired features (before we actually finish the first iteration of the code)
-    -   {% include person content='Kharrington' %} will continue efforts to consolidate [ThreeDViewer](ThreeDViewer ) and [BigDataViewer](BigDataViewer ) into a unified viewer
+    -   {% include person content='Kharrington' %} will continue efforts to consolidate [ThreeDViewer](ThreeDViewer) and [BigDataViewer](BigDataViewer) into a unified viewer
     -   {% include person content='tibuch' %} and {% include person content='Dietzc' %} will continue to develop UI components for BDV and KNIME using SciJava for use in the unified viewer
     -   {% include person content='Kharrington' %}, {% include person content='tibuch' %}, and {% include person content='Dietzc' %} will reconvene in the Spring for component integration
     -   {% include person content='Pietzsch' %} will continue to work his BDV magic
@@ -281,7 +281,7 @@ Technical discussions
     -   ROI overlays can also be provided
     -   Panels are just JPanels
     -   {% include person content='Pietzsch' %} says most of the backend has already been developed in BDV
-    -   [ThreeDViewer](ThreeDViewer ) should reuse more of [BigDataViewer](BigDataViewer )'s UI components
+    -   [ThreeDViewer](ThreeDViewer) should reuse more of [BigDataViewer](BigDataViewer)'s UI components
     -   GUI tools/widgets will go into scijava-ui-swing
     -   {% include person content='skalarproduktraum' %} will continue to develop Scenery for the core 3D rendering functionality
 

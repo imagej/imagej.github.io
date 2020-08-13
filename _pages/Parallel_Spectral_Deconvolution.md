@@ -7,7 +7,7 @@ categories: Plugins,Deconvolution
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Parallel Spectral Deconvolution 2D and 3D ' author='Piotr Wendykier ' filename=' [parallel\_spectral\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-bin.zip) ' source=' [parallel\_spectral\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-src.zip) ' released='27 September 2007 ' latest-version='11 April 2009 ' category='[Deconvolution](Category_Deconvolution ) ' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution ' %}
+{% include info-box software='ImageJ' name='Parallel Spectral Deconvolution 2D and 3D' author='Piotr Wendykier' filename=' [parallel\_spectral\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-bin.zip)' source=' [parallel\_spectral\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-src.zip)' released='27 September 2007' latest-version='11 April 2009' category='[Deconvolution](Category_Deconvolution)' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution' %}
 
 Purpose
 -------
@@ -19,7 +19,7 @@ Documentation
 
 The plugin code is based on the following book:
 
-{% include citation last='Hansen ' first='C. ' last2='Nagy ' first3='J.G. ' last3='O"Leary ' first2='D.P. ' title='Deblurring Images: Matrices, Spectra, and Filtering ' editor='Society for Industrial and Applied Mathematic ' date='2006 ' ISBN='0898716187 ' %}
+{% include citation last='Hansen' first='C.' last2='Nagy' first3='J.G.' last3='O"Leary' first2='D.P.' title='Deblurring Images: Matrices, Spectra, and Filtering' editor='Society for Industrial and Applied Mathematic' date='2006' ISBN='0898716187' %}
 
 Please refer to the [website](http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution) for detail and examples.
 
@@ -52,7 +52,7 @@ When deblurring an image, certain regularity conditions have to be enforced on t
 There are several ImageJ plugins for generating a theoretical point spread function:
 
 -   [PSF Tool for ImageJ](http://www.mosaic.ethz.ch/Downloads/psftool) by the ETH Computationnal Biophysics Lab
--   [Diffraction PSF 3D](Diffraction_PSF_3D ) by Robert Dougherty
+-   [Diffraction PSF 3D](Diffraction_PSF_3D) by Robert Dougherty
 -   [Deconvolution3D](http://bigwww.epfl.ch/demo/deconvolution3D/) by Pierre Besson.
 
 To use these tools you need to know some parameters of your microscope setup and sample like NA, RI of mounting medium, wavelength, etc.
@@ -82,7 +82,7 @@ Clicking on the Deconvolve button results in this:
 See also
 --------
 
--   [Parallel Iterative Deconvolution](Parallel_Iterative_Deconvolution ) by the same author, for another set of methods.
+-   [Parallel Iterative Deconvolution](Parallel_Iterative_Deconvolution) by the same author, for another set of methods.
 
 Version history
 ---------------

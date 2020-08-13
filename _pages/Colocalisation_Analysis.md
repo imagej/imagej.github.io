@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Colocalization Analysis](Colocalization_Analysis )
+1.  REDIRECT [Colocalization Analysis](Colocalization_Analysis)

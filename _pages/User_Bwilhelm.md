@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Benjamin Wilhelm ' affiliation=' [KNIME](https://www.knime.com) ' forum='bwilhelm ' github='HedgehogCode ' %}Benjamin is a software developer for [KNIME](https://www.knime.com).
+{% include user-box name='Benjamin Wilhelm' affiliation=' [KNIME](https://www.knime.com)' forum='bwilhelm' github='HedgehogCode' %}Benjamin is a software developer for [KNIME](https://www.knime.com).

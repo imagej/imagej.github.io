@@ -11,11 +11,11 @@ After making this choice of segmentation in the advanced mode the following pane
 
 <img src="/images/pages/Trackadvanced.png" width="300"/>
 
-Here the user can again make a choice of increasing or decreasing the edge enhancement factor. All the MSER parameters appear here in the second panel, read more about [MSER parameters](MSER_parameters ). After making suitable parameter selection the user can then go over the tracking options where they can see some advanced parameter selections for the optimizer and assignment layer of the program. This panel is shown here
+Here the user can again make a choice of increasing or decreasing the edge enhancement factor. All the MSER parameters appear here in the second panel, read more about [MSER parameters](MSER_parameters). After making suitable parameter selection the user can then go over the tracking options where they can see some advanced parameter selections for the optimizer and assignment layer of the program. This panel is shown here
 
 <img src="/images/pages/ModelChoice.png" width="800"/>
 
-Read more about [sub-pixel localization parameter selection](Sub-pixel_localization_parameter_selection ).
+Read more about [sub-pixel localization parameter selection](Sub-pixel_localization_parameter_selection).
 
 -   Start tracking
 

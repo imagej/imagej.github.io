@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [User:Mdoube](User_Mdoube )
+1.  REDIRECT [User:Mdoube](User_Mdoube)

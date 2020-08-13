@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2019-01-17 - Fiji Hackathon - Parallelization and HPC](2019-01-17_-_Fiji_Hackathon_-_Parallelization_and_HPC )
+1.  REDIRECT [2019-01-17 - Fiji Hackathon - Parallelization and HPC](2019-01-17_-_Fiji_Hackathon_-_Parallelization_and_HPC)

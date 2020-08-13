@@ -105,7 +105,7 @@ Note: *heap* is Java speak for *memory*.
 Javassist-based
 ---------------
 
-A quite versatile method is to use (and possibly modify) the class {% include github org='fiji ' repo='fiji-compat ' source='fiji/MemoryProfiler.java ' label='fiji.MemoryProfiler ' %} in *fiji-compat.jar*.
+A quite versatile method is to use (and possibly modify) the class {% include github org='fiji' repo='fiji-compat' source='fiji/MemoryProfiler.java' label='fiji.MemoryProfiler' %} in *fiji-compat.jar*.
 
 This memory profiler instruments all method entries and exists using javassist. At each exit, it reports the relative memory usage, the total memory usage, and the exit point of the current method. Call it like this:
 
@@ -113,7 +113,7 @@ This memory profiler instruments all method entries and exists using javassist. 
 
 Since the memory profiling slows down execution dramatically due to the synchronous output to stderr, you may want to limit the classes to be instrumented by setting the environment variable *MEMORY\_PROFILE\_ONLY* to a space-delimited list of classes.
 
-If you want to instrument any class handled by {% include github org='imagej ' repo='imagej-legacy ' label='imagej-legacy ' %}, you need to use the slightly more complicated command line:
+If you want to instrument any class handled by {% include github org='imagej' repo='imagej-legacy' label='imagej-legacy' %}, you need to use the slightly more complicated command line:
 
     ./fiji -Dpatch.ij1=false --cp jars/javassist.jar --cp jars/fiji-compat.jar \
         --cp jars/ij.jar --main-class fiji.MemoryProfiler -- ij.ImageJ

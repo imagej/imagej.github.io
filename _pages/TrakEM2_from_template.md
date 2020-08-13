@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [TrakEM2](TrakEM2 )
+1.  REDIRECT [TrakEM2](TrakEM2)

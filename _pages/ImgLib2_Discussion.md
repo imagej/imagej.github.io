@@ -274,7 +274,7 @@ Tobias and Preibisch discussed today that the name ExtendedRandomAccessibleInter
 
 It is irritating as it is actually NOT an Interval. Instead one could name it for example OutOfBoundsView, which is also much shorter. It is only used for this purpose and the name is self-explanatory.
 
-We also added some convenience methods in the Views class to construct them very easily, see here: [ How does ImgLib2 handle OutOfBounds?](Changes_from_ImgLib1_to_ImgLib2#How_does_ImgLib2_handle_OutOfBounds? )
+We also added some convenience methods in the Views class to construct them very easily, see here: [ How does ImgLib2 handle OutOfBounds?](Changes_from_ImgLib1_to_ImgLib2#How_does_ImgLib2_handle_OutOfBounds?)
 
 ### Should Iterator (and so Cursor) have a bck() call?
 

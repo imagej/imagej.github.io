@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Series Labeler](Series_Labeler )
+1.  REDIRECT [Series Labeler](Series_Labeler)

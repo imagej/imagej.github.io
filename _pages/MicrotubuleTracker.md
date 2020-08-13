@@ -60,7 +60,7 @@ Please choose an output file directory. The trajectory files will be written as 
 
 #### Microscope Parameters
 
-The program automatically reads the metadata shown as pixel size (micrometer in x and y) and frame rate (in seconds). If the metadata can not be read properly, the user can manually add the values. In addition, the user is asked to enter the Sigma (X) and Sigma (Y) of the Point-Spread-Function (PSF) of the microscope in pixel units (see here for [more explanation](More_explanation )). For your convenience, our software comes with an inbuilt PSF analyzer tool, which can optionally determine the PSF of your microscope from bead images by fitting a Gaussian function.
+The program automatically reads the metadata shown as pixel size (micrometer in x and y) and frame rate (in seconds). If the metadata can not be read properly, the user can manually add the values. In addition, the user is asked to enter the Sigma (X) and Sigma (Y) of the Point-Spread-Function (PSF) of the microscope in pixel units (see here for [more explanation](More_explanation)). For your convenience, our software comes with an inbuilt PSF analyzer tool, which can optionally determine the PSF of your microscope from bead images by fitting a Gaussian function.
 
 When you input any parameters, please ensure that you use decimal number formatting only.
 
@@ -68,7 +68,7 @@ Press Next to proceed. Three screens and one panel will open. They show the orig
 
 #### MSER parameters
 
-The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER)[1]. Read more about [MSER parameters](MSER_parameters ). If a single seed is not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the “active image”. Once most seeds are correctly recognized as objects, click “Find endpoints” to detect the ends of each seed with sub-pixel accuracy.
+The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER)[1]. Read more about [MSER parameters](MSER_parameters). If a single seed is not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the “active image”. Once most seeds are correctly recognized as objects, click “Find endpoints” to detect the ends of each seed with sub-pixel accuracy.
 
 The end-points will be displayed as green circles. A “Next” button appears on the panel, which allows the user to flip to the next panel.
 
@@ -92,17 +92,17 @@ Yellow ellipses mark seeds to be tracked, red ellipses mark seeds which won’t 
 
 ### Module 2 - Microtubule dynamics
 
-Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/sec), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Module 2 derives these dynamic parameters by fitting models using RANSAC. (Read more on [MTrack-RANSAC models](MTrack-RANSAC_models )).
+Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/sec), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Module 2 derives these dynamic parameters by fitting models using RANSAC. (Read more on [MTrack-RANSAC models](MTrack-RANSAC_models)).
 
 If not forwarded by Module 1, Module 2 can be selected by {% include bc content='Plugins|MTrack|Microtubule Dynamics Analyzer'%}
 
-The panel that opens will allow the user to select individual files containing trajectories, which were generated in the first module. The trajectory will be displayed as length versus time plot, on which RANSAC fits a model of microtubule dynamics using the default parameters. Read more about the [MTrack-RANSAC parameters](MTrack-RANSAC_parameters ).
+The panel that opens will allow the user to select individual files containing trajectories, which were generated in the first module. The trajectory will be displayed as length versus time plot, on which RANSAC fits a model of microtubule dynamics using the default parameters. Read more about the [MTrack-RANSAC parameters](MTrack-RANSAC_parameters).
 
 Clicking "Auto Compute Velocity and Frequencies" auto computes the polymerization/depolymerization velocities and catastrophe and rescue frequency for all the files. If a file is empty, a warning message will show up with a blank plot.
 
 In addition, the user can obtain microtubule length distribution for a certain time point or a time-averaged distribution. In the length distribution plot, the mean length, and the standard deviation will be displayed after fitting an exponential decay curve to the obtained distribution.
 
-<img src="/images/pages/RansacPanel.png" width="600"/> Click here to see some examples of the [MTrack-Ransac fits](MTrack-Ransac_fits ).
+<img src="/images/pages/RansacPanel.png" width="600"/> Click here to see some examples of the [MTrack-Ransac fits](MTrack-Ransac_fits).
 
 Example
 -------

@@ -16,7 +16,7 @@ See [Gabriel Landini webpage](https://blog.bham.ac.uk/intellimic/g-landini-softw
 
 This plugin implements the method described in the following paper:
 
-{% include citation last='Ruifrok ' first='A.C. ' last2='Johnston ' first2='D.A. ' title='Quantification of histochemical staining by color deconvolution ' journal='Anal. Quant. Cytol. Histol. ' volume='23 ' pages='291-299 ' year='2001 ' PMID='11531144 ' %}
+{% include citation last='Ruifrok' first='A.C.' last2='Johnston' first2='D.A.' title='Quantification of histochemical staining by color deconvolution' journal='Anal. Quant. Cytol. Histol.' volume='23' pages='291-299' year='2001' PMID='11531144' %}
 
 Version history
 ---------------

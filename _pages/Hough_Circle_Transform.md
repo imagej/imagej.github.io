@@ -17,9 +17,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='llamero ' repo='Local\_Hough\_Circle ' %}
+{% include github org='llamero' repo='Local\_Hough\_Circle' %}
 {% endcapture %}
-{% include info-box name='Hough Circle Transform ' software='plugin ' update-site='UCB Vision Sciences ' author=author maintainer=maintainer source=source released='February 4<sup>th</sup>, 2017 ' latest-version='September 21<sup>st</sup>, 2018 (v1.0.0) ' status='stable, active ' category='[Analysis](Category_Analysis ), [Feature Extraction](Category_Feature_Extraction ) ' %}
+{% include info-box name='Hough Circle Transform' software='plugin' update-site='UCB Vision Sciences' author=author maintainer=maintainer source=source released='February 4<sup>th</sup>, 2017' latest-version='September 21<sup>st</sup>, 2018 (v1.0.0)' status='stable, active' category='[Analysis](Category_Analysis), [Feature Extraction](Category_Feature_Extraction)' %}
 
 Introduction
 ------------
@@ -68,7 +68,7 @@ The plugin has two separate algorithms available:
 
 '''Local Hough Transform: ''' This algorithm is designed for high-speed tracking of circles in a time-lapse series. The algorithm performs the full Hough circle transform on the first frame to find the initial radius and position of each circle. In subsequent frames, the algorithm then only performs a Hough transform near the centroid of each circle in subsequent frames. If the number of found circles drops below the minimum number of specified circles, the algorithm performs a full Hough circle transform on the next frame to try and find any circles missed in the local search.
 
-{% include thumbnail src='/images/pages/Hough GUI2.png' title='\'\'\'Hough Circle Transform GUI configurations\'\'\' \'\'Panel 1:\'\' Hough Circle transform - Easy Mode \'\'Panel 2:\'\' Hough Circle transform - Advanced Mode \'\'Panel 3:\'\' Local Hough Circle transform - Easy Mode \'\'Panel 4:\'\' Local Hough Circle transform - Advanced Mode '%}
+{% include thumbnail src='/images/pages/Hough GUI2.png' title='\'\'\'Hough Circle Transform GUI configurations\'\'\' \'\'Panel 1:\'\' Hough Circle transform - Easy Mode \'\'Panel 2:\'\' Hough Circle transform - Advanced Mode \'\'Panel 3:\'\' Local Hough Circle transform - Easy Mode \'\'Panel 4:\'\' Local Hough Circle transform - Advanced Mode'%}
 
 ### GUI Mode
 
@@ -197,7 +197,7 @@ The plugin contains several output options to both visualize the transform, as w
 
 #### *Raw Hough transform series*
 
-{% include thumbnail src='/images/pages/Raw Output.png' title=' '%} This option will output a stack where each slice is the transform for specified radius. Each slice is also labelled with the radius (in pixels) and resolution in the header. If the inputted data was a multi-frame stack, then the transform will return a hyperstack, where the Z-dimension is each radius tested, and the T-dimension is each frame in the movie.
+{% include thumbnail src='/images/pages/Raw Output.png' title=''%} This option will output a stack where each slice is the transform for specified radius. Each slice is also labelled with the radius (in pixels) and resolution in the header. If the inputted data was a multi-frame stack, then the transform will return a hyperstack, where the Z-dimension is each radius tested, and the T-dimension is each frame in the movie.
 
 To save memory, the Hough scores are set to an 8-bit scale, with the highest score in the transform search space getting a value of 255 (i.e. no saturation). If the inputted data was a movie, each frame will be rescaled independently. However, while the scores are down-sampled to an 8-bit scale, a Hough transform adds an extra dimension to your dataset, so be sure you will have sufficient RAM if your movie and search space are large.
 
@@ -205,13 +205,13 @@ NOTE: This option is only available in advanced mode. this value defaults to 1.0
 
 #### *Circle centroid(s) marked on the original image*
 
-{% include thumbnail src='/images/pages/Mask Output.png' title=' '%} This option will draw a cross-hair pattern on each centroid found within the image, overlaid on a mask of the original image. This output is especially useful for optimizing the Hough seach parameters. The header of the image contains the number of circles that were found within the image. If the inputted data was not a mask, it will calculate a mask with a threshold of 1.
+{% include thumbnail src='/images/pages/Mask Output.png' title=''%} This option will draw a cross-hair pattern on each centroid found within the image, overlaid on a mask of the original image. This output is especially useful for optimizing the Hough seach parameters. The header of the image contains the number of circles that were found within the image. If the inputted data was not a mask, it will calculate a mask with a threshold of 1.
 
 If the inputted data was a multi-frame stack, then the transform will return a stack, where the Z-dimension is each frame in the movie, and the header will show the number of circles found in each frame.
 
 #### *Map of circle radius at centroids (pixel intensity = circle radius)*
 
-{% include thumbnail src='/images/pages/Radius Output2.png' title=' '%} This option returns an image where the centroid of each circle is marked by a single pixel whose intensity is equal to the radius of the circle, with the header of the image showing the number of circles that was found. To save memory, the image is formatted to 16-bit, meaning that the largest radius it can show is 65535 pixels. If you need to export larger radii, export the results to a results table (see below).
+{% include thumbnail src='/images/pages/Radius Output2.png' title=''%} This option returns an image where the centroid of each circle is marked by a single pixel whose intensity is equal to the radius of the circle, with the header of the image showing the number of circles that was found. To save memory, the image is formatted to 16-bit, meaning that the largest radius it can show is 65535 pixels. If you need to export larger radii, export the results to a results table (see below).
 
 If the inputted data was a multi-frame stack, then the transform will return a stack, where the Z-dimension is each frame in the movie, and the header will show the number of circles found in each frame.
 
@@ -221,26 +221,26 @@ This output is identical to the radius output (see above), however the pixel int
 
 #### *Export measurements to the results table*
 
-{% include thumbnail src='/images/pages/Results Output.png' title=' '%} This will output the results of the transform to the results table. The measurements exported are: 1) the X and Y coordinates of each centroid, 2) the radius (in pixels) of each circle, 3) the Hough score for each circle, 4) the number of circles found within that frame, 5) the actual resolution that the transform used (this is also effectively the highest Hough score possible), and 6) the frame in which the circle was found.
+{% include thumbnail src='/images/pages/Results Output.png' title=''%} This will output the results of the transform to the results table. The measurements exported are: 1) the X and Y coordinates of each centroid, 2) the radius (in pixels) of each circle, 3) the Hough score for each circle, 4) the number of circles found within that frame, 5) the actual resolution that the transform used (this is also effectively the highest Hough score possible), and 6) the frame in which the circle was found.
 
 If no circles were found in a frame, than that frame is excluded from the results table.
 
 Installing the Plugin
 ---------------------
 
-The Hough Circle Transform plugin is part of the [UCB Vision Sciences](UCB_Vision_Sciences ) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites ) the UCB Vision Sciences update site:
+The Hough Circle Transform plugin is part of the [UCB Vision Sciences](UCB_Vision_Sciences) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the UCB Vision Sciences update site:
 
 1\) Select {% include bc content='Help | Update...'%} from the Fiji menu to start the updater.
 
 2\) Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
 
-3\) Activate the [UCB Vision Sciences](UCB_Vision_Sciences ) update site and close the dialog. Now you should see additional jar files for download.
+3\) Activate the [UCB Vision Sciences](UCB_Vision_Sciences) update site and close the dialog. Now you should see additional jar files for download.
 
 4\) Click *Apply changes* and restart Fiji.
 
 You should now find the plugin under the sub-menu {% include bc content='Plugins | UCB Vision Sciences | Hough Circle Transform'%}.
 
-NOTE: Hough Circle Transform is only one of the plugins included in the [UCB Vision Sciences](UCB_Vision_Sciences ) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
+NOTE: Hough Circle Transform is only one of the plugins included in the [UCB Vision Sciences](UCB_Vision_Sciences) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
 Acknowledgements
 ----------------

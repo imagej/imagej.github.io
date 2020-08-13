@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Dr. Volker Gatterdam ' affiliation='Gatterdam GmbH ' website='www.gatterdam.eu ' %}
+{% include user-box name='Dr. Volker Gatterdam' affiliation='Gatterdam GmbH' website='www.gatterdam.eu' %}

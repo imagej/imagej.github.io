@@ -9,9 +9,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='fiji ' repo='UnwarpJ ' source='UnwarpJ\_.java ' %}
+{% include github org='fiji' repo='UnwarpJ' source='UnwarpJ\_.java' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='UnwarpJ ' maintainer='Philippe Thévenaz ' author='Carlos Óscar Sánchez Sorzano, Philippe Thévenaz ' source=source released='17/09/2010 ' latest-version='17/09/2010 ' status=' ' category='[:Category:Plugins](Category_Plugins ) ' website='http://bigwww.epfl.ch/thevenaz/unwarpj/ ' %}
+{% include info-box software='ImageJ' name='UnwarpJ' maintainer='Philippe Thévenaz' author='Carlos Óscar Sánchez Sorzano, Philippe Thévenaz' source=source released='17/09/2010' latest-version='17/09/2010' status='' category='[:Category:Plugins](Category_Plugins)' website='http://bigwww.epfl.ch/thevenaz/unwarpj/' %}
 
 An ImageJ plugin that performs a spline-based elastic registration of two images.
 

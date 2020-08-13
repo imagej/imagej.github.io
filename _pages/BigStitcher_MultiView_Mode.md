@@ -29,4 +29,4 @@ Selecting the desired views and right-clicking in the main view list brings up a
 
 ![](/images/pages/BigStitcher Overview 5.png "BigStitcher_Overview_5.png")
 
-Go back to the [main page](BigStitcher#Documentation )
+Go back to the [main page](BigStitcher#Documentation)

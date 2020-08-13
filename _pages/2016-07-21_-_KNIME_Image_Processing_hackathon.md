@@ -7,7 +7,7 @@ categories: News,Hackathons,ImageJ2,KNIME
 description: test description
 ---
 
-From Tuesday, July 5, 2016 through Thursday, July 14, 2016, {% include person content='Dietzc' %} of the [University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~20 developers at the [KNIME Konstanz Regional Office](https://www.knime.org/contact) for a [hackathon](Hackathon ) to develop the [KNIME](KNIME ) Image Processing extensions along with the underlying [ImageJ Ops](ImageJ_Ops ) library, as well as other supporting technologies such as [ImgLib2](ImgLib2 ), [ClearVolume](ClearVolume ) and the [BigDataViewer](BigDataViewer ).
+From Tuesday, July 5, 2016 through Thursday, July 14, 2016, {% include person content='Dietzc' %} of the [University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~20 developers at the [KNIME Konstanz Regional Office](https://www.knime.org/contact) for a [hackathon](Hackathon) to develop the [KNIME](KNIME) Image Processing extensions along with the underlying [ImageJ Ops](ImageJ_Ops) library, as well as other supporting technologies such as [ImgLib2](ImgLib2), [ClearVolume](ClearVolume) and the [BigDataViewer](BigDataViewer).
 
 Timeline
 --------
@@ -135,22 +135,22 @@ Hackathon progress
 
 ### Richard Domander
 
--   Added first ops from BoneJ legacy code - topology namespace and ops for calculating the [Euler characteristic](https://en.wikipedia.org/wiki/Euler_characteristic) ({% include github org='imagej ' repo='imagej-ops ' pr='413 ' label='imagej-ops\#413 ' %})
+-   Added first ops from BoneJ legacy code - topology namespace and ops for calculating the [Euler characteristic](https://en.wikipedia.org/wiki/Euler_characteristic) ({% include github org='imagej' repo='imagej-ops' pr='413' label='imagej-ops\#413' %})
 
 ### Kyle Harrington
 
--   Added 3D Mesh Voxelization to {% include github org='imagej ' repo='imagej-ops ' label='imagej-ops ' %} ({% include github org='imagej ' repo='imagej-ops ' pr='419 ' label='imagej-ops\#419 ' %})
--   Began [ThreeDViewer](ThreeDViewer ) and reached a moderately usable level
--   Refactored [Funimage](Funimage ) to be more Clojure idiomatic
+-   Added 3D Mesh Voxelization to {% include github org='imagej' repo='imagej-ops' label='imagej-ops' %} ({% include github org='imagej' repo='imagej-ops' pr='419' label='imagej-ops\#419' %})
+-   Began [ThreeDViewer](ThreeDViewer) and reached a moderately usable level
+-   Refactored [Funimage](Funimage) to be more Clojure idiomatic
 
 ### Stefan Helfrich
 
--   Proof-of-principle implementations of MatrixType and VectorType ({% include github org='stelfrich ' repo='imglib2 ' label='matrixType ' %})
+-   Proof-of-principle implementations of MatrixType and VectorType ({% include github org='stelfrich' repo='imglib2' label='matrixType' %})
 -   Enable using global thresholds as local thresholds in Ops
 -   Improve default OOBF handling for filters
     -   i.e. do not apply an OOBF if an image already is extended
     -   Add defined bounds for RandomAccessibles ([imglib2/random-access-defined-bounds](https://github.com/stelfrich/imglib2/tree/random-access-defined-bounds))
-    -   Implement Shape.getBoundingBox() ({% include github org='imglib ' repo='imglib2 ' pr='27 ' label='imglib2\#27 ' %})
+    -   Implement Shape.getBoundingBox() ({% include github org='imglib' repo='imglib2' pr='27' label='imglib2\#27' %})
 
 ### Martin Horn & Alexander Fillbrunn
 
@@ -158,10 +158,10 @@ Hackathon progress
 
 ### Curtis Rueden
 
--   Made major progress on improved op lookups using Nil (a.k.a. "typed null") objects—work still ongoing on the `nil` branch of {% include github org='imagej ' repo='imagej-ops ' label='imagej-ops ' %}; prep work already on master (\[https://github.com/imagej/imagej-ops/compare/fd2d9c5b8974d77976dabc53ba973d2a52ee465a%5E...226fc2114f0d68786f4a27b8fa498f18681379bf 1\], {% include github org='imagej ' repo='imagej-ops ' commit='4135609f471352cbd32b048d32f0d5bb33343273 ' label='2 ' %})
--   Cleaned up the dependencies of ImageJ Ops; in particular, use SCIFIO for I/O, not ImageJ 1.x and AWT ({% include github org='imagej ' repo='imagej-ops ' pr='413 ' label='imagej-ops\#413 ' %})
--   Helped clean up {% include person content='Rdom' %}'s "Topology namespace and ops" PR ({% include github org='imagej ' repo='imagej-ops ' pr='415 ' label='imagej-ops\#415 ' %})
--   Created a (not yet functional) [Kotlin](https://kotlinlang.org/) SciJava script engine ({% include github org='scijava ' repo='scripting-kotlin ' label='scijava/scripting-kotlin ' %})
+-   Made major progress on improved op lookups using Nil (a.k.a. "typed null") objects—work still ongoing on the `nil` branch of {% include github org='imagej' repo='imagej-ops' label='imagej-ops' %}; prep work already on master (\[https://github.com/imagej/imagej-ops/compare/fd2d9c5b8974d77976dabc53ba973d2a52ee465a%5E...226fc2114f0d68786f4a27b8fa498f18681379bf 1\], {% include github org='imagej' repo='imagej-ops' commit='4135609f471352cbd32b048d32f0d5bb33343273' label='2' %})
+-   Cleaned up the dependencies of ImageJ Ops; in particular, use SCIFIO for I/O, not ImageJ 1.x and AWT ({% include github org='imagej' repo='imagej-ops' pr='413' label='imagej-ops\#413' %})
+-   Helped clean up {% include person content='Rdom' %}'s "Topology namespace and ops" PR ({% include github org='imagej' repo='imagej-ops' pr='415' label='imagej-ops\#415' %})
+-   Created a (not yet functional) [Kotlin](https://kotlinlang.org/) SciJava script engine ({% include github org='scijava' repo='scripting-kotlin' label='scijava/scripting-kotlin' %})
 
 Technical discussions
 ---------------------

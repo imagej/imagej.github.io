@@ -9,9 +9,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='fiji ' repo='VIB ' source='landmarks/Name\_Points.java ' %}
+{% include github org='fiji' repo='VIB' source='landmarks/Name\_Points.java' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Name Landmarks and Register ' author='Mark Longair and Greg Jefferis ' maintainer='Mark Longair ' filename='VIB\_.jar ' source=source status='stable ' %}
+{% include info-box software='ImageJ' name='Name Landmarks and Register' author='Mark Longair and Greg Jefferis' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
 
 The *Name Landmarks and Register* plugin provides a simple interface for marking named points in images, and optionally to register two images based on the named points that occur in both. The following tutorial describes how to do this.
 

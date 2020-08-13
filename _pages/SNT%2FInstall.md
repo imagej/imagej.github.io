@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SNT\#Installation](SNT#Installation )
+1.  REDIRECT [SNT\#Installation](SNT#Installation)

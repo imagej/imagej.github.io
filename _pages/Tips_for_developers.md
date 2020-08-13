@@ -25,7 +25,7 @@ Rapidly Prototype a Plugin
 
 It is often easier to start out with a Jython, JRuby or BeanShell script, as you do not have to care about strict typing, exceptions or recompiling. Just place your script (with the correct extension -- .py, .rb or .bsh) into the plugins/ folder and execute the script. Fiji will always execute the current version of the script, so you can edit and run the script without restarting Fiji.
 
-Of course, it is even more convenient to use the [Script Editor](Script_Editor )...
+Of course, it is even more convenient to use the [Script Editor](Script_Editor)...
 
 Once you have working code, you can turn it into a proper plugin (this is easiest with BeanShell, as its syntax is closest to Java already), adding strict typing and exception handling as needed.
 
@@ -36,7 +36,7 @@ Sometimes, the compiler complains about a class not having a certain method or i
 
     $ ./fiji bin/find-jar-for-class.py the.class.youre.looking.For
 
-If you want to do that with an installed Fiji (i.e. when bin/ is missing), you can start the [Script Editor](Script_Editor ) and execute a BeanShell like this:
+If you want to do that with an installed Fiji (i.e. when bin/ is missing), you can start the [Script Editor](Script_Editor) and execute a BeanShell like this:
 
      import ij.IJ;
              
@@ -260,7 +260,7 @@ Then you can add a new row:
 How to find equivalent API commands between ImageJ1 and ImageJ2?
 ----------------------------------------------------------------
 
-[ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet ) is available.
+[ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet) is available.
 
 Tips for Graphical User Interface (GUI) programming
 ===================================================

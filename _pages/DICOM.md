@@ -14,7 +14,7 @@ How to read DICOM files into ImageJ?
 ------------------------------------
 
 -   ImageJ has built-in support for reading some kinds of DICOM files. Try {% include bc content='File | Open'%} and see how it goes.
--   The [Bio-Formats](Bio-Formats ) plugin supports some kinds of DICOM files, too. Bio-Formats is available in the [Fiji](Fiji ) distribution of ImageJ. Try {% include bc content='File | Import | Bio-Formats'%}.
+-   The [Bio-Formats](Bio-Formats) plugin supports some kinds of DICOM files, too. Bio-Formats is available in the [Fiji](Fiji) distribution of ImageJ. Try {% include bc content='File | Import | Bio-Formats'%}.
 -   The [Tudor Dicom Tools](http://santec.tudor.lu/project/dicom) plugin suite can read and write many kinds of DICOM, and provide some support for working with DICOM metadata structures.
 
 How to save DICOM files from ImageJ?
@@ -25,7 +25,7 @@ The [Tudor Dicom Tools](http://santec.tudor.lu/project/dicom) provide basic supp
 How to work with DICOM headers from a script?
 ---------------------------------------------
 
-An example of using the `DicomTools.getTag()` method from [JavaScript](JavaScript ):
+An example of using the `DicomTools.getTag()` method from [JavaScript](JavaScript):
 
     importClass(Packages.ij.IJ)
     importClass(Packages.ij.util.DicomTools)
@@ -40,7 +40,7 @@ An example of using the `DicomTools.getTag()` method from [JavaScript](JavaScrip
 How to work with DICOM headers from a macro?
 --------------------------------------------
 
-See these [macro](Macro ) functions:
+See these [macro](Macro) functions:
 
 -   [getImageInfo()](https://imagej.net/developer/macro/functions.html#getImageInfo)
 -   [getInfo(DICOM\_TAG)](https://imagej.net/developer/macro/functions.html#getInfo)
@@ -56,7 +56,7 @@ An example using `getInfo()`:
     print("Image Position: "+imagePosition); 
     print("Pixel Spacing: "+ pixelSpacing);
 
-See also these past threads from the ImageJ [mailing list](Mailing_list ):
+See also these past threads from the ImageJ [mailing list](Mailing_list):
 
 -   2015-09-23 - [Reading DICOM header without opening the image](http://imagej.1557.x6.nabble.com/Reading-DICOM-header-without-opening-the-image-tp5014426.html)
 -   2013-10-10 - [ImageJ DICOM Header](http://imagej.1557.x6.nabble.com/ImageJ-DICOM-Header-tp5005125.html)

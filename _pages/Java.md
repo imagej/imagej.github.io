@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Writing plugins](Writing_plugins )
+1.  REDIRECT [Writing plugins](Writing_plugins)

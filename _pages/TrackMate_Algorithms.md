@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-This page documents the current components of [TrackMate](TrackMate ). TrackMate has a modular design, meaning that it is made of different modules that each have a specific role. Developers can build their own module and re-used the other ones and the GUI to achieve a quick development. The module types are (in the order you meet them when executing the plugin):
+This page documents the current components of [TrackMate](TrackMate). TrackMate has a modular design, meaning that it is made of different modules that each have a specific role. Developers can build their own module and re-used the other ones and the GUI to achieve a quick development. The module types are (in the order you meet them when executing the plugin):
 
 1.  **Spot detectors**. Taking your image data, they detect spots in them.
 2.  **Spot analyzers**. Each spot can receive a wide range of features, calculated from their location, radius and the image data. For instance: max intensity in spot, rough morphology, etc... They are then used to filter out spurious spots and retain only good ones for the subsequent tracking step.
@@ -192,7 +192,7 @@ This feature analyzer simply takes the mean, max, min, median and standard devia
 
 [code on github](https://github.com/tinevez/TrackMate-TrackAnalysis/blob/master/src/main/java/fiji/plugin/trackmate/features/track/LinearTrackDescriptor.java)
 
-This feature analyzer comes from a TrackMate extra. It is available as a jar that you should download separately and drop into the jars folder of you Fiji installation. Check [TrackMate\#Extensions](TrackMate#Extensions ) to get it.
+This feature analyzer comes from a TrackMate extra. It is available as a jar that you should download separately and drop into the jars folder of you Fiji installation. Check [TrackMate\#Extensions](TrackMate#Extensions) to get it.
 
 It was written to add track descriptor that would help characterize the track motility type. The features calculated there will help you determine whether a tracked object moves 'efficiently' or has an apparently random motion, etc. I simply took some of the feature described in the following paper:
 
@@ -367,7 +367,7 @@ Without penalties and with a maximal linking allowed distance, the returned solu
 
 By adding feature penalties, we aim at favoring linking particles that "resemble" each other. In brute single particle linking problems, spots are generally all the same, and they only differ by position. However, there is a variety of problems for which these feature penalties can add robustness to the tracking process.
 
-For instance, we originally developed [TrackMate](TrackMate ) for semi-automated lineaging of *C.elegans* embryos, using a strain fluorescent in the nucleus. Cells that are dividing have a fluorescence distribution which is very different from non-dividing cells, and this can be exploited for robust tracking.
+For instance, we originally developed [TrackMate](TrackMate) for semi-automated lineaging of *C.elegans* embryos, using a strain fluorescent in the nucleus. Cells that are dividing have a fluorescence distribution which is very different from non-dividing cells, and this can be exploited for robust tracking.
 
 #### Track segment linking
 
@@ -393,7 +393,7 @@ As before, we modified the way costs are calculated, and re-used the feature pen
 
 #### Main differences with the Jaqaman paper[8]
 
-The nominal implementation of the paper remains the one developed under [Matlab](Category_Matlab ) by Khuloud Jaqaman <i>et al.</i> and published in Nature Methods. The software is called u-track and can be found on [Khuloud Jaqaman homepage](http://www.utsouthwestern.edu/labs/jaqaman/software/).
+The nominal implementation of the paper remains the one developed under [Matlab](Category_Matlab) by Khuloud Jaqaman <i>et al.</i> and published in Nature Methods. The software is called u-track and can be found on [Khuloud Jaqaman homepage](http://www.utsouthwestern.edu/labs/jaqaman/software/).
 
 TrackMate was initially developed to simplify <i>C.elegans</i> lineaging. It therefore just bundles a stripped down version of this framework.
 
@@ -430,7 +430,7 @@ It is important to note here that the cost functions we use is the square distan
 
 #### Implementation
 
-The code can be found on {% include github org='fiji ' repo='TrackMate ' path='/src/main/java/fiji/plugin/trackmate/tracking/kalman/KalmanTracker.java ' %}. We now repeat the section above in pseudo-language. When you see the word <b>link</b> below, this means:
+The code can be found on {% include github org='fiji' repo='TrackMate' path='/src/main/java/fiji/plugin/trackmate/tracking/kalman/KalmanTracker.java' %}. We now repeat the section above in pseudo-language. When you see the word <b>link</b> below, this means:
 
 1.  Take all the source detections in frame t and the target detections in frame t+1.
 2.  Compute the costs for all possible physical assignment (potential links) between source and target detections and store them in the cost matrix.

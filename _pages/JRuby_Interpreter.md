@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [JRuby Scripting](JRuby_Scripting )
+1.  REDIRECT [JRuby Scripting](JRuby_Scripting)

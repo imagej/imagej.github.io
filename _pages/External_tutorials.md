@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Links to tutorials](Links_to_tutorials )
+1.  REDIRECT [Links to tutorials](Links_to_tutorials)

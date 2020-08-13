@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BoneJ2\#Results\_table](BoneJ2#Results_table )
+1.  REDIRECT [BoneJ2\#Results\_table](BoneJ2#Results_table)

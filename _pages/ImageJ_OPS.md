@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2014-04-04 - Announcing ImageJ Ops](2014-04-04_-_Announcing_ImageJ_Ops )
+1.  REDIRECT [2014-04-04 - Announcing ImageJ Ops](2014-04-04_-_Announcing_ImageJ_Ops)

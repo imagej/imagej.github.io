@@ -9,13 +9,13 @@ description: test description
 
 
 {% capture filename%}
-{% include maven g='sc.fiji ' a='VIB\_ ' %}
+{% include maven g='sc.fiji' a='VIB\_' %}
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji ' repo='VIB ' %}
+{% include github org='fiji' repo='VIB' %}
 {% endcapture %}
-{% include info-box name='Minimum/Maximum/Median ' software='ImageJ ' author='Benjamin Schmid ' maintainer='Benjamin Schmid ' filename=filename source=source latest-version='3.0.0, December 17<sup>th</sup>, 2015 ' status='beta ' %}
+{% include info-box name='Minimum/Maximum/Median' software='ImageJ' author='Benjamin Schmid' maintainer='Benjamin Schmid' filename=filename source=source latest-version='3.0.0, December 17<sup>th</sup>, 2015' status='beta' %}
 
 Purpose
 -------

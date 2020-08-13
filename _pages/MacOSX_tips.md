@@ -7,12 +7,12 @@ categories:
 description: test description
 ---
 
-**Critical:** if you update and Fiji does not work anymore, you need to follow [these instructions](Fix_non-functional_Fiji_after_Update_on_MacOSX ).
+**Critical:** if you update and Fiji does not work anymore, you need to follow [these instructions](Fix_non-functional_Fiji_after_Update_on_MacOSX).
 
 Installing Fiji
 ---------------
 
-1.  Download the .dmg package from the [Downloads](Downloads ) page, and then double-click it to open it.
+1.  Download the .dmg package from the [Downloads](Downloads) page, and then double-click it to open it.
 2.  Create a folder under /Applications/, such as /Applications/Fiji
 3.  Drag the 3 items (Fiji.app, and the plugins and macros symlinks) into the /Applications/Fiji folder.
 
@@ -21,7 +21,7 @@ Fiji is ready to run!
 Running Fiji in 32-bit mode
 ---------------------------
 
-{% include warning-box content='It may no longer be possible to start Fiji in 32-bit on recent versions of OS X. See [this bug report](https://fiji.sc/bugzilla/show_bug.cgi?id=1018) for details. ' %} Fiji on Intel Macs runs on Java 1.6 in 64-bit mode. If you need to run it in 32-bit mode, you can do so as follows:
+{% include warning-box content='It may no longer be possible to start Fiji in 32-bit on recent versions of OS X. See [this bug report](https://fiji.sc/bugzilla/show_bug.cgi?id=1018) for details.' %} Fiji on Intel Macs runs on Java 1.6 in 64-bit mode. If you need to run it in 32-bit mode, you can do so as follows:
 
 1.  Launch Fiji normally, and choose {% include bc content='Edit | Options | Memory & Threads'%}.
 2.  Reduce your Maximum Memory setting to \~1800 MB or less.
@@ -63,7 +63,7 @@ Alternatively, right-click (or {% include key content='Ctrl' %}+{% include key c
 Adding new plugins and macros
 -----------------------------
 
-For plugins, please follow the instructions about [Installing 3rd party plugins](Installing_3rd_party_plugins ). Otherwise, access the plugins folder as explained above and just drag and drop any plugin into the plugins folder, like you would do for ImageJ. Same for macros.
+For plugins, please follow the instructions about [Installing 3rd party plugins](Installing_3rd_party_plugins). Otherwise, access the plugins folder as explained above and just drag and drop any plugin into the plugins folder, like you would do for ImageJ. Same for macros.
 
 Installing OpenJDK for MacOSX
 -----------------------------
@@ -95,7 +95,7 @@ Once you switched to the correct directory, start the Fiji launcher:
 
 **Note for Windows users**: A backslash is not the same as a slash. So: *Contents\\MacOS\\ImageJ-macosx* will **not** work.
 
-Now you can pass, say, [Java Options](Java_Options ):
+Now you can pass, say, [Java Options](Java_Options):
 
     Contents/MacOS/ImageJ-macosx -verbose:gc --
 

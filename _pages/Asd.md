@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Stochastic Denoising](Stochastic_Denoising )
+1.  REDIRECT [Stochastic Denoising](Stochastic_Denoising)

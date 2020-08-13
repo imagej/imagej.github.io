@@ -11,9 +11,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='mobie-org ' repo='mobie-viewer-fiji ' %}
+{% include github org='mobie-org' repo='mobie-viewer-fiji' %}
 {% endcapture %}
-{% include info-box name='MoBIE ' software='Fiji ' update-site='MoBIE ' author='Christian Tischer ' maintainer='Christian Tischer ' source=source %}
+{% include info-box name='MoBIE' software='Fiji' update-site='MoBIE' author='Christian Tischer' maintainer='Christian Tischer' source=source %}
 
   
   
@@ -31,7 +31,7 @@ MoBIE (Multimodal Big Image Data Exploration) is a framework for sharing and int
 Installation
 ------------
 
-Please install the Update Site: http://sites.imagej.net/MoBIE/. For details on how to install an update site click [here](Following_an_update_site ).
+Please install the Update Site: http://sites.imagej.net/MoBIE/. For details on how to install an update site click [here](Following_an_update_site).
 
 To run it, please select Plugins &gt; MoBIE from the main menu.
 

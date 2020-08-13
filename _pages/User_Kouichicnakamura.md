@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Kouichi C. Nakamura ' gravatar='1228581d0f09dc538e44631bd09fd9bf ' affiliation='Department of Pharmacology, University of Oxford ' forum='kouichi-c-nakamura ' github='kouichi-c-nakamura ' %}
+{% include user-box name='Kouichi C. Nakamura' gravatar='1228581d0f09dc538e44631bd09fd9bf' affiliation='Department of Pharmacology, University of Oxford' forum='kouichi-c-nakamura' github='kouichi-c-nakamura' %}
 
 **Kouichi C. Nakamura, Ph.D.**
 

@@ -9,9 +9,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='imglib ' repo='imglib2-tutorials ' %}
+{% include github org='imglib' repo='imglib2-tutorials' %}
 {% endcapture %}
-{% include info-box name='Examples ' software='ImgLib2 ' author='Stephan Preibisch ' maintainer='Stephan Preibisch, Curtis Rueden ' source=source released='March 2012 ' latest-version='December 2013 ' website=' [ImgLib2 publication](http://bioinformatics.oxfordjournals.org/content/early/2012/09/07/bioinformatics.bts543.abstract) ' %} {% include imglibmenu%}
+{% include info-box name='Examples' software='ImgLib2' author='Stephan Preibisch' maintainer='Stephan Preibisch, Curtis Rueden' source=source released='March 2012' latest-version='December 2013' website=' [ImgLib2 publication](http://bioinformatics.oxfordjournals.org/content/early/2012/09/07/bioinformatics.bts543.abstract)' %} {% include imglibmenu%}
 
 
 Jupyter notebook
@@ -24,17 +24,17 @@ Introduction & required files
 
 This page shows eight increasingly complex examples of how to program with ImgLib2. The intention of these examples are not to explain ImgLib2 concepts, but rather to give some practical hints how to work with the library and to grasp the principles in a learning-by-doing way.
 
-All examples presented on this page are always entire classes including a main method to run them. Simply copying them into your favorite editor (e.g. the [Script Editor](Script_Editor )) and compile & run them. The required Java libraries (jar files) are part of ImageJ and can be found in *ImageJ.app/jars/*:
+All examples presented on this page are always entire classes including a main method to run them. Simply copying them into your favorite editor (e.g. the [Script Editor](Script_Editor)) and compile & run them. The required Java libraries (jar files) are part of ImageJ and can be found in *ImageJ.app/jars/*:
 
 -   imglib2 (the core)
 -   imglib2-algorithm (algorithms implemented in ImgLib2)
--   imglib2-algorithm-gpl (for example 6b and 6c: GPL-licensed algorithms implemented in ImgLib2—ships with [Fiji](Fiji ) only, not plain [ImageJ2](ImageJ2 ), for [licensing](Licensing ) reasons)
+-   imglib2-algorithm-gpl (for example 6b and 6c: GPL-licensed algorithms implemented in ImgLib2—ships with [Fiji](Fiji) only, not plain [ImageJ2](ImageJ2), for [licensing](Licensing) reasons)
 -   imglib2-ij (the ImageJ interaction)
 -   imglib2-realtransform (for example 8)
 -   scifio (for reading and writing files)
 -   ij (ImageJ 1.x core, used for display)
 
-Alternately, you can access the examples from the {% include github org='imglib ' repo='imglib-tutorials ' label='ImgLib-tutorials Git repository ' %}. After cloning the source code, open the project in your favorite IDE. See [Developing ImgLib2](Developing_ImgLib2 ) for further details.
+Alternately, you can access the examples from the {% include github org='imglib' repo='imglib-tutorials' label='ImgLib-tutorials Git repository' %}. After cloning the source code, open the project in your favorite IDE. See [Developing ImgLib2](Developing_ImgLib2) for further details.
 
 Example 1 - Opening, creating and displaying images
 ---------------------------------------------------
@@ -47,7 +47,7 @@ If you are already an ImageJ programmer, you might find it the easiest way to si
 
 Internally, we use a compatibility **Img** to represent the data which is as fast as ImageJ but in the case of higher dimensionality (&gt;2d) is slower than ImgLib2 can do with the **ArrayImg**. Furthermore you are limited in dimensionality (2d-5d), in the type of data (**UnsignedByteType**, **UnsignedShortType**, **FloatType** and **ARGBType**) and maximal size of each 2d-plane (max. 46000x46000).
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example1a.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example1a.java' %}
 
 ### Example 1b - Opening an ImgLib2 image
 
@@ -61,7 +61,7 @@ The SCIFIO importer also requires **Types** that implement **NativeType**, which
 
 **Important**: it does not matter which type of **Img** you use to hold the data as we will use **Iterators** and **RandomAccesses** to access the image content. It might be, however, important if you work on two **Img** at the same time using **Iterators**, see Example2.
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example1b.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example1b.java' %}
 
 ### Example 1c - Creating a new ImgLib2 image
 
@@ -69,7 +69,7 @@ Another important way to instantiate a new ImgLib2 **Img** is to create a new on
 
 Once you have one instance of an **Img**, it is very easy to create another one using the same **Type** and **ImgFactory**, even if it has a different size. Note that the call **img.firstElement()** returns the first pixel of any **Iterable**, e.g. an **Img**.
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example1c.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example1c.java' %}
 
 ### Example 1d - Displaying images partly using Views
 
@@ -79,14 +79,14 @@ A **View** almost behaves similar to an **Img**, and in fact they share importan
 
 <img src="/images/pages/ImgLib2example1d.jpg" width="780"/> *Shows the original image, the View of an interval, as well as the by 90 degree rotated version of the view. Note that only the original image in kept in memory, both Views are completely virtual.*
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example1d.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example1d.java' %}
 
 Example 2 - How to use Cursor, RandomAccess and Type
 ----------------------------------------------------
 
 The following examples illustrate how to access pixels using **Cursor** and **RandomAccess**, their basic properties, and how to modify pixel values using **Type**.
 
-Accessing pixels using a **Cursor** means to iterate all pixels in a way similar to iterating Java collections. However, a **Cursor** only ensures to visit each pixel exactly once, the order of iteration is not fixed in order to optimize the speed of iteration. This implies that that the order of iteration on two different **Img** is not necessarily the same, see [ example 2b](ImgLib2_Examples#Example_2b_-_Duplicating_an_Img_using_a_different_ImgFactory )! **Cursors** can be created by any object that implements **IterableInterval**, such as an **Img**. **Views** that are not infinite can be made iterable (see example 2c). *Note that in general a **Cursor** has significantly higher performance than a **RandomAccess** and should therefore be given preference if possible*.
+Accessing pixels using a **Cursor** means to iterate all pixels in a way similar to iterating Java collections. However, a **Cursor** only ensures to visit each pixel exactly once, the order of iteration is not fixed in order to optimize the speed of iteration. This implies that that the order of iteration on two different **Img** is not necessarily the same, see [ example 2b](ImgLib2_Examples#Example_2b_-_Duplicating_an_Img_using_a_different_ImgFactory)! **Cursors** can be created by any object that implements **IterableInterval**, such as an **Img**. **Views** that are not infinite can be made iterable (see example 2c). *Note that in general a **Cursor** has significantly higher performance than a **RandomAccess** and should therefore be given preference if possible*.
 
 In contrast to iterating image data, a **RandomAccess** can be placed at arbitrary locations. It is possible to set them to a specific n-dimensional coordinate or move them relative to their current position. Note that relative movements are usually more performant. A **RandomAccess** can be created by any object that implements **RandomAccessible**, like an **Img** or a **View**.
 
@@ -113,7 +113,7 @@ The copy method itself is a generic method, it will work on any kind of **Type**
 
 **&lt; T extends Type&lt; T &gt; &gt;** basically means that **T** can be anything that extends **Type**. These can be final implementations such as **FloatType** or also intermediate interfaces such as **RealType**. This, however, also means that in the method body only operations supported by **Type** will be available. Note that the method returns a **T**, which also means that in the constructor from which we call method it will also return an **Img<FloatType>** as we provide it with one.
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example2a.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example2a.java' %}
 
 ### Example 2b - Duplicating an Img using a different ImgFactory
 
@@ -123,7 +123,7 @@ The copy method itself is a generic method, it will work on any kind of **Type**
 
 <span style="color:#FF0000">The correct code for the copy-method (in **copyImageCorrect**) requires the use of a **RandomAccess**.</span> We use a **Cursor** to iterate over all pixels of the input and a **RandomAccess** which we set to the same location the output. Note that the *setPosition()* call of the **RandomAccess** directly takes the **Cursor** as input, which is possible because **Cursor** implements **Localizable**. Please also note that we use a **LocalizingCursor** instead of a normal **Cursor** because we need the location of the **Cursor** at every pixel.
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example2b.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example2b.java' %}
 
 ### Example 2c - Generic copying of image data
 
@@ -135,12 +135,12 @@ As the *source* only needs to be **RandomAccessible**, it can be basically anyth
 
 As the *target* needs to be an **IterableInterval**, it is more confined. This, however does not necessarily mean that it can only be an **Img** or a **View** that is not infinite. It simply means it has to be something that is iterable and not infinite, which for example also applies to sparse data (e.g. a list of locations and their values).
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example2c.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example2c.java' %}
 
 Example 3 - Writing generic algorithms
 --------------------------------------
 
-Examples 1 and 2 tried to introduce important tools you need in order to implement algorithms with ImgLib2. This example will show three generic implementations of algorithms computing the [ min/max](ImgLib2_Examples#Example_3a_-_Min/Max_search ), average as well as the center of mass.
+Examples 1 and 2 tried to introduce important tools you need in order to implement algorithms with ImgLib2. This example will show three generic implementations of algorithms computing the [ min/max](ImgLib2_Examples#Example_3a_-_Min/Max_search), average as well as the center of mass.
 
 The core idea is to implement algorithms as generic as possible in order to maximize code-reusability. In general, a good way to start is to think: *What are the minimal requirements in order to implement algorithm X?* This applies to all of the following three concepts:
 
@@ -155,29 +155,29 @@ Following those ideas, your newly implemented algorithm will be applicable to an
 
 Searching for the minimal and maximal value in a dataset is a very nice example to illustrate generic algorithms. In order to find min/max values, **Types** only need to be able to compare themselves. Therefore we do not need any numeric values, we only require them to implement the (Java) interface **Comparable**. Additionally, no random access to the data is required, we simply need to iterate all pixels, also their location is irrelevant. The image data we need only needs to be **Iterable**.
 
-Below we show **three** small variations of the min/max search. [ First](ImgLib2_Examples#Example_3a_-_Variation_1 ) we show the implementation as described above. [ Second](ImgLib2_Examples#Example_3a_-_Variation_2 ) we illustrate that this also works on a standard Java **ArrayList**. [ Third](ImgLib2_Examples#Example_3a_-_Variation_3 ) we show how the implementation changes if we do not only want the min/max value, but also their location. This requires to use **IterableInterval** instead, as **Cursor** can return their location.
+Below we show **three** small variations of the min/max search. [ First](ImgLib2_Examples#Example_3a_-_Variation_1) we show the implementation as described above. [ Second](ImgLib2_Examples#Example_3a_-_Variation_2) we illustrate that this also works on a standard Java **ArrayList**. [ Third](ImgLib2_Examples#Example_3a_-_Variation_3) we show how the implementation changes if we do not only want the min/max value, but also their location. This requires to use **IterableInterval** instead, as **Cursor** can return their location.
 
 #### Example 3a - Variation 1
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example3a1.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example3a1.java' %}
 
 #### Example 3a - Variation 2
 
 Note that this example works just the same way if the input is not an **Img**, but for example just a standard Java **ArrayList**.
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example3a2.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example3a2.java' %}
 
 #### Example 3a - Variation 3
 
 If we want to compute the location of the minimal and maximal pixel value, an **Iterator** will not be sufficient as we need location information. Instead the location search will demand an **IterableInterval** as input data which can create **Cursors**. Apart from that, the algorithm looks quite similar. Note that we do not use a **LocalizingCursor** but only a **Cursor** the location happens only when a new maximal or minimal value has been found while iterating the data.
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example3a3.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example3a3.java' %}
 
 ### Example 3b - Computing average
 
 In a very similar way one can compute the average intensity for image data. Note that we restrict the **Type** of data to **RealType**. In theory, we could use **NumericType** as it offers the possibility to *add* up values. However, we cannot ensure that **NumericType** provided is capable of adding up millions of pixels without overflow. And even if we would ask for a second **NumericType** that is capable of adding values up, it might still have numerical instabilities. *Note that actually every Java native type has those instabilities*. Therefore we use the **RealSum** class that offers correct addition of even very large amounts of pixels. As this implementation is only available for double values, we restrict the method here to **RealType**.
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example3b.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example3b.java' %}
 
 Example 4 - Specialized iterables
 ---------------------------------
@@ -197,11 +197,11 @@ Another interesting aspect of this example is the use of the **ImagePlusImgFacto
 
 <img src="/images/pages/ManySpheres.jpg" width="780"/> *Shows the result of example 4a for the (a) two-dimensional, (b) three-dimensional and (c) four-dimensional case. The image series in (c) represents a movie of a three-dimensional rendering. The images of (b) and (c) were rendered using the ImageJ 3d Viewer.*
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example4a.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example4a.java' %}
 
 ### Example 4b - Finding and displaying local minima
 
-In this example we want to find all local minima in an image an display them as small spheres. To not capture too much of the noise in the image data, we first perform an in-place Gaussian smoothing with a sigma of 1, i.e. the data will be overwritten with the result. A complete documentation of the gauss package for ImgLib2 can be found [ here](Gauss_Package_ImgLib2 ).
+In this example we want to find all local minima in an image an display them as small spheres. To not capture too much of the noise in the image data, we first perform an in-place Gaussian smoothing with a sigma of 1, i.e. the data will be overwritten with the result. A complete documentation of the gauss package for ImgLib2 can be found [ here](Gauss_Package_ImgLib2).
 
 We display the results using a binary image. *Note that the **BitType** only requires one bit per pixel and therefore is very memory efficient.*
 
@@ -224,7 +224,7 @@ Please note as well that if one would increase the radius of the **RectangleShap
 
 <img src="/images/pages/AllMinima.jpg" width="780"/> *Shows the result of the detection of local minima after the Gaussian blurring. (a) depicts the input image, (b) the blurred version (sigma=1) and (c) all local mimina drawn as circles with radius 1.*
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example4b.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example4b.java' %}
 
 Example 5 - Out of bounds
 -------------------------
@@ -237,7 +237,7 @@ Which **OutOfBoundsStrategies** to use depends on task you want to perform. For 
 
 <img src="/images/pages/OutOfBounds.jpg" width="780"/> *Illustrates the effect of various OutOfBoundsStrategies. (a) shows out of bounds with a constant value, (b) shows a mirroring strategy, (c) shows the periodic strategy, and (d) shows a strategy that uses random values.*
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example5.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example5.java' %}
 
 Example 6 - Basic built-in algorithms
 -------------------------------------
@@ -250,7 +250,7 @@ Typically algorithms provide static methods for simple calling, but they also ha
 
 ### Example 6a - Gaussian convolution
 
-The Gaussian convolution has its own [ wiki page](Gauss_Package_ImgLib2 ). You can apply the Gaussian convolution with different sigmas in any dimension. It will work on any kind **RandomAccessibleInterval**. Below we show a examples of a simple gaussian convolution (variation 1), convolution using a different **OutOfBoundsStrategy** (variation 2), convolution of a part of an **Interval** (variation 3), and convolution of in a lower dimensionality than the image data (variation 4).
+The Gaussian convolution has its own [ wiki page](Gauss_Package_ImgLib2). You can apply the Gaussian convolution with different sigmas in any dimension. It will work on any kind **RandomAccessibleInterval**. Below we show a examples of a simple gaussian convolution (variation 1), convolution using a different **OutOfBoundsStrategy** (variation 2), convolution of a part of an **Interval** (variation 3), and convolution of in a lower dimensionality than the image data (variation 4).
 
 <img src="/images/pages/GaussExamples.jpg" width="780"/> *Shows the result of the four examples for Gaussian convolution. (a) shows a simple Gaussian convolution with sigma=8. (b) shows the same Gaussian convolution but using an OutOfBoundsConstantValue instead. (c) shows the result when convolving part of the image in-place. (d) shows the result when individually convolving 1-dimensional parts on the image.*
 
@@ -258,13 +258,13 @@ The Gaussian convolution has its own [ wiki page](Gauss_Package_ImgLib2 ). You c
 
 Here, we simply apply a Gaussian convolution with a sigma of 8. Note that it could be applied in-place as well when calling *Gauss.inFloatInPlace( ... )*. The Gaussian convolution uses by default the **OutOfBoundsMirrorStrategy**.
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example6a1.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example6a1.java' %}
 
 #### Example 6a - Gaussian convolution (variation 2 - different OutOfBoundsStrategy)
 
 Here we use an **OutOfBoundsStrategyConstantValue** instead. It results in continuously darker borders as the zero-values from outside of the image are used in the convolution. Note that the computation is done in-place here. However, we still need to provide an **ImgFactory** as the Gaussian convolution needs to create temporary image(s) - except for the one-dimensional case.
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example6a2.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example6a2.java' %}
 
 #### Example 6a - Gaussian convolution (variation 3 - only part of an Interval)
 
@@ -272,7 +272,7 @@ Here we only convolve part of an **Interval**, or in this case part of the **Img
 
 Note: if you wanted, you could force him to use an **OutOfBoundsStrategy** directly outside of the **Interval**. For that you would have to create an **RandomAccessibleInterval** on the **Img**, extend it by an **OutOfBoundsStrategy** and give this as input to the Gaussian convolution.
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example6a3.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example6a3.java' %}
 
 #### Example 6a - Gaussian convolution (variation 4 - with a lower dimensionality)
 
@@ -280,7 +280,7 @@ This example shows howto apply an algorithm to a lower dimensionality as the ima
 
 Specifically, we apply 1-dimensional Gaussian convolution in 30-pixel wide stripes using a sigma of 16. ''Note that whenever you request an *HyperSlice* for a certain dimension, you will get back a **View** that contains all dimensions <span style="color:#FF0000">but</span> this one.''
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example6a4.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example6a4.java' %}
 
 ### Example 6b - Convolution in Fourier space
 
@@ -292,7 +292,7 @@ In image processing it is sometimes necessary to convolve images with non-separa
 
 <span style="color:#FF0000">*Important: This source code is only GPLv2!*</span>
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example6b.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example6b.java' %}
 
 ### Example 6c - Complex numbers and Fourier transforms
 
@@ -310,7 +310,7 @@ The final convolution of the inverse template with the image is performed using 
 
 <span style="color:#FF0000">*Important: This source code is only GPLv2!*</span>
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example6c.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example6c.java' %}
 
 Example 7 - Interpolation
 -------------------------
@@ -325,7 +325,7 @@ In the example we magnify a given real interval in the **RealRandomAccessible** 
 
 <img src="/images/pages/Interpolation.jpg" width="779"/> *Shows the result for three different interpolators when magnifying a small part of the image by 10x. The nearest neighbor interpolation is computed fastest and is the most versatile as it requires no computation but just a lookout. The result is, however, very pixelated. The linear interpolation produces reasonable results and computes quite fast. The Lanczos interpolation shows visually most pleasing results but also introduces slight artifacts in the background.*
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example7.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example7.java' %}
 
 Example 8 - Working with sparse data
 ------------------------------------
@@ -342,7 +342,7 @@ In this example we create a certain number of random samples with random intensi
 
 <img src="/images/pages/SparseImage1.jpg" width="777"/> *On the left hand side it shows nearest-neighbor rendered random sparse data as created in example 8a. The right hand side shows the result of a Gaussian convolution, run directly on the virtual RandomAccessibleInterval.*
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example8a.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example8a.java' %}
 
 ### Example 8b - Randomly sample an existing image and display it
 
@@ -351,6 +351,6 @@ In this example we sample an existing image at random locations and render the r
 <img src="/images/pages/SparseImage2.jpg" width="638"/>  
 *Shows the result of sparse sampling of an existing image using a varying number of random samples. The upper panel shows the rendering using nearest neighbor interpolation, the lower panel uses an interpolated, distance-weighted value of the k nearest neighbors relative to each sampled location (i.e. each pixel).*
 
-{% include github-embed org='imglib ' repo='imglib-tutorials ' source='Example8b.java ' %}
+{% include github-embed org='imglib' repo='imglib-tutorials' source='Example8b.java' %}
 
  

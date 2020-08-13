@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Les Foster ' affiliation=' [Janelia Research Campus](https://www.janelia.org/) ' github='lesfoster ' %}
+{% include user-box name='Les Foster' affiliation=' [Janelia Research Campus](https://www.janelia.org/)' github='lesfoster' %}

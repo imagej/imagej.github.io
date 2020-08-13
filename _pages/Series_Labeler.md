@@ -7,7 +7,7 @@ categories: Image annotation
 description: test description
 ---
 
-{% include component-stats content='sc.fiji:Series\_Labeler' %}This plugin is inspired by the [Time Stamper](Time_Stamper ) plugins from ImageJ and from Tony Collins' [MBF Plugin Collection](MBF_Plugin_Collection ), as well as the imageJ built-in {% include bc content='Image|Stack|Label'%} command.
+{% include component-stats content='sc.fiji:Series\_Labeler' %}This plugin is inspired by the [Time Stamper](Time_Stamper) plugins from ImageJ and from Tony Collins' [MBF Plugin Collection](MBF_Plugin_Collection), as well as the imageJ built-in {% include bc content='Image|Stack|Label'%} command.
 
 It aims to combine the functionality of these plugins and refine and enhance the functionality for instance by adding the preview functionality suggested by Michael Weber. Series Labeler is not a drop in replacement for Time Stamper, or Label... since it does not work with hyperstacks or allow macro recording.
 

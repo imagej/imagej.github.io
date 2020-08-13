@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Philosophy\#Interoperability](Philosophy#Interoperability )
+1.  REDIRECT [Philosophy\#Interoperability](Philosophy#Interoperability)

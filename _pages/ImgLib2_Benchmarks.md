@@ -11,7 +11,7 @@ description: test description
 {% include toc%}
 {% include info-box content='This page was last updated 2016 May 3.' %}
 
-This page compares the time performance of image processing operations using raw byte arrays, [ImageJ 1.x](ImageJ_1.x ) and [ImgLib2](ImgLib2 ). The benchmark tests these various methods for a "cheap" per-pixel operation (inverting an 8-bit image) as well as an "expensive" operation (some calls to `java.util.Math`) at several image resolutions.
+This page compares the time performance of image processing operations using raw byte arrays, [ImageJ 1.x](ImageJ_1.x) and [ImgLib2](ImgLib2). The benchmark tests these various methods for a "cheap" per-pixel operation (inverting an 8-bit image) as well as an "expensive" operation (some calls to `java.util.Math`) at several image resolutions.
 
 Some of the charts plot results at several iterations, meaning the test was performed repeatedly in a loop. This is important because the just-in-time compiler (JIT) is able to optimize performance increasingly well as the same code is executed more than once. Hence, we show results after both a single iteration, as well as ten iterations.
 
@@ -32,8 +32,8 @@ The data below cover the following scenarios:
 Hardware and software specifications
 ------------------------------------
 
--   [ImgLib2](ImgLib2 ) version 2.9.0
--   [ImageJ 1.x](ImageJ_1.x ) version 1.50i
+-   [ImgLib2](ImgLib2) version 2.9.0
+-   [ImageJ 1.x](ImageJ_1.x) version 1.50i
 -   Mid 2015 MacBook Pro
 -   Mac OS X 10.11.4
 -   2.5 GHz Intel Core i7 processor
@@ -54,15 +54,15 @@ Source code
 
 The main benchmark code can be found at:
 
--   {% include github org='imglib ' repo='imglib2-tests ' path='src/test/java/tests/PerformanceBenchmark.java ' label='PerformanceBenchmark.java ' %}
+-   {% include github org='imglib' repo='imglib2-tests' path='src/test/java/tests/PerformanceBenchmark.java' label='PerformanceBenchmark.java' %}
 
 The script that runs the benchmark at various image resolutions is:
 
--   {% include github org='imglib ' repo='imglib2-tests ' path='src/test/scripts/benchmark.sh ' label='benchmark.sh ' %}
+-   {% include github org='imglib' repo='imglib2-tests' path='src/test/scripts/benchmark.sh' label='benchmark.sh' %}
 
 The shell script also uses a Python script to transform the CSV output into the pChart data on this page:
 
--   {% include github org='imglib ' repo='imglib2-tests ' path='src/test/scripts/chart-gen.py ' label='chart-gen.py ' %}
+-   {% include github org='imglib' repo='imglib2-tests' path='src/test/scripts/chart-gen.py' label='chart-gen.py' %}
 
 Cheap operation results
 -----------------------

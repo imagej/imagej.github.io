@@ -23,7 +23,7 @@ There is an increasing demand to image large biological specimen at high resolut
 
 The Stitching Plugin (2d-5d) is able to reconstruct big images/stacks from an arbitrary number of tiled input images/stacks, making use of the Fourier Shift Theorem that computes all possible translations (x, y\[, z\]) between two 2d/3d images at once, yielding the best overlap in terms of the cross correlation measure. If more than two input images/stacks are used the correct placement of all tiles is determined using a global optimization. The stitching is able to align an arbitrary amount of channels and supports timelapse registration. To remove brightness differences at the tile borders, non-linear intensity blending can be applied.
 
-Plase note: this is the new implementation of the Stitching plugin which is finally based on [Imglib](Imglib ) and supports a lot of new features:
+Plase note: this is the new implementation of the Stitching plugin which is finally based on [Imglib](Imglib) and supports a lot of new features:
 
 -   composite images and hyperstacks now
 -   write the stitched image slice-by-slice directly to disk (significantly reduces the RAM requirements)
@@ -35,15 +35,15 @@ Plase note: this is the new implementation of the Stitching plugin which is fina
 
 **Due to the virtual input stacks and the direct export of the result to disk it is now possible to stitch an arbitrary amount of image tiles with limited RAM resources.**
 
-The documentation of the **old** Stitching plugin collection can be found here: [Stitching 2D/3D](Stitching_2D/3D ).
+The documentation of the **old** Stitching plugin collection can be found here: [Stitching 2D/3D](Stitching_2D/3D).
 
 Overview of the Stitching Plugins
 ---------------------------------
 
 The Image Stitching package comes with 2 different plugins:
 
--   **[ Pairwise Stitching](Image_Stitching#Pairwise_Stitching )**: Stitch two 2d-5d images, rectangular ROIs can be used to limit the area to search in.
--   **[ Grid/Collection Stitching](Image_Stitching#Grid/Collection_Stitching )**: Stitch an arbitrary amount of 2d-5d input images. It supports cases where the approximate alignment is known (grid, stored in file, metadata) as well as completely unguided alignment.
+-   **[ Pairwise Stitching](Image_Stitching#Pairwise_Stitching)**: Stitch two 2d-5d images, rectangular ROIs can be used to limit the area to search in.
+-   **[ Grid/Collection Stitching](Image_Stitching#Grid/Collection_Stitching)**: Stitch an arbitrary amount of 2d-5d input images. It supports cases where the approximate alignment is known (grid, stored in file, metadata) as well as completely unguided alignment.
 
 Although both plugins make use of layered context-dependent Generic Dialogs, they are completely macro-scriptable.
 
@@ -53,7 +53,7 @@ Pairwise Stitching
 {% include thumbnail src='/images/pages/PairwiseStitching1.png' title='Shows the selection of input images.'%} The Pairwise Stitching first queries for two input images that you intend to stitch. They can contain rectangular ROIs which limit the search to those areas, however, the full images will be stitched together. Once you selected the input images it will show the actual dialog for the Pairwise Stitching. The dialog will depend on the dimensionality of the input images. Please note that RGB input images will be converted into 8-Bit composite images.
 
 -   **Linear blending**: In the overlapping area the intensity are smoothly adjusted between the two images.
--   **Average**: In the overlapping area the average intensity between all images is computed ({% include github org='fiji ' repo='Stitching ' source='mpicbg/stitching/fusion/AveragePixelFusion.java ' label='example source code ' %}).
+-   **Average**: In the overlapping area the average intensity between all images is computed ({% include github org='fiji' repo='Stitching' source='mpicbg/stitching/fusion/AveragePixelFusion.java' label='example source code' %}).
 -   **Median**: In the overlapping area the median intensity of all images is computed.
 -   **Max. Intensity**: In the overlapping area the maximum intensity between all images is used int the output image.
 -   **Min. Intensity**: In the overlapping area the minimum intensity between all images is used int the output image.
@@ -116,7 +116,7 @@ The first dialog queries the type image collection or image grid that you want t
 -   **Filename defined positions**: The approximate positions of each tile are encoded in the filename.
 -   **Unknown positions**: The positions of each tile are unknown and the Stitching will try to determine them.
 -   **Positions from file**: The approximate position of each tile is defined in an extra file or by the metadata.
-    -   *Defined by TileConfiguration*: The next dialog will query for a tile configuration file that specifies the filenames as well as the approximate position of each tile in pixel coordinates. This is especially useful if the tiles are arranged in a way that is not covered by any of the other grid/snake options - or maybe also in z! You will find an example tile configuration file [ below](Image_Stitching#Problems,_known_issues_and_solutions ). If you want to manually or automatically create such a file I suggest creating one using grid stitching (even if you do not have any image data) and changing it accordingly.
+    -   *Defined by TileConfiguration*: The next dialog will query for a tile configuration file that specifies the filenames as well as the approximate position of each tile in pixel coordinates. This is especially useful if the tiles are arranged in a way that is not covered by any of the other grid/snake options - or maybe also in z! You will find an example tile configuration file [ below](Image_Stitching#Problems,_known_issues_and_solutions). If you want to manually or automatically create such a file I suggest creating one using grid stitching (even if you do not have any image data) and changing it accordingly.
     -   *Defined by meta data*: Use this option if all tiles are stored in one big file that also contains the approximate stage positions in its meta data. When importing you will have the chance to further increase the overlap and define if the stage coordinates are calibrated or in pixel coordinates.
 
 <img src="/images/pages/GridStitching1013.png" title="fig:Shows the main dialog for the grid stitching." width="400" alt="Shows the main dialog for the grid stitching." /> Once you selected your type of acquisition a second dialog will pop up that is slightly different depending up on your first selection. Here, I will explain the dialog that is used for any grid as this is the most complex one.
@@ -139,7 +139,7 @@ it would translate to the following pattern: **tile\_x{xx}\_y{yy}.lsm**.
 
 The *Output textfile name* defines the text files that will contain the initial approximate grid layout and the final positions of each tile after registration.
 
-The *fusion methods* are almost the same as the ones for the [ Pairwise Stitching](Image_Stitching#Pairwise_Stitching ), please check them out above.
+The *fusion methods* are almost the same as the ones for the [ Pairwise Stitching](Image_Stitching#Pairwise_Stitching), please check them out above.
 
 The next three entries describe the behaviour of the global optimization:
 
@@ -149,7 +149,7 @@ The next three entries describe the behaviour of the global optimization:
 
 There are then a series of toggles you can now choose to enable or disable.
 
-First, you can *add tiles as ROIs*, which will generate a ROI in the ImageJ RoiManager for each stitched tile. If possible, the ROI name will contain the source file for its corresponding tile, allowing easy identification of images of interest. This will also enable and select the [ ROI Picker](ROI_Picker ) tool, so you can select the ROI covering a desired visual area.
+First, you can *add tiles as ROIs*, which will generate a ROI in the ImageJ RoiManager for each stitched tile. If possible, the ROI name will contain the source file for its corresponding tile, allowing easy identification of images of interest. This will also enable and select the [ ROI Picker](ROI_Picker) tool, so you can select the ROI covering a desired visual area.
 
 Next, you can choose whether to *compute the overlap* or trust the (approximate) location defined by the grid, the meta data or the tile configuration file.
 
@@ -169,7 +169,7 @@ Finally, you can choose whether to display the result or write the fused image t
 
 ### Grid Collection/Stitching plugin
 
-Please see the [Grid/Collection Stitching Plugin](Grid/Collection_Stitching_Plugin ) page for a complete set of instruction on how to use Grid/Collection stitching in Fiji.
+Please see the [Grid/Collection Stitching Plugin](Grid/Collection_Stitching_Plugin) page for a complete set of instruction on how to use Grid/Collection stitching in Fiji.
 
 Problems, known issues and solutions
 ------------------------------------
@@ -290,9 +290,9 @@ Additionally to the Stitching plugins, it contains the following libraries. I wa
 
 -   *edu\_mines\_jtk.jar*: Efficient 1-dimensional FFT implementation by [Dave Hale](http://inside.mines.edu/~dhale/jtk/).
 -   *mpicbg.jar*: Transformation package by {% include person content='Saalfeld' %}
--   *[imglib](Imglib )*: N-dimensional image processing library for Java by {% include person content='Pietzsch' %}, {% include person content='StephanP' %} & {% include person content='Saalfeld' %}
+-   *[imglib](Imglib)*: N-dimensional image processing library for Java by {% include person content='Pietzsch' %}, {% include person content='StephanP' %} & {% include person content='Saalfeld' %}
 -   *fiji-lib.jar & Fiji\_Plugins.jar*: Fiji libraries by {% include person content='Schindelin' %}
--   *loci\_tools.jar*: [Bio-Formats](Bio-Formats ) Java library for reading and writing life sciences image file formats. I want to especially thank {% include person content='Rueden' %} and {% include person content='Linkert' %}
+-   *loci\_tools.jar*: [Bio-Formats](Bio-Formats) Java library for reading and writing life sciences image file formats. I want to especially thank {% include person content='Rueden' %} and {% include person content='Linkert' %}
 
 Additionally, I want to thank the following people for discussions, providing images and pushing me to develop and continuously improve the Stitching plugins:
 
@@ -302,7 +302,7 @@ See Also
 --------
 
 -   [The Publication on the Stitching Plugin](http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184), S. Preibisch, S. Saalfeld, P. Tomancak (2009) Globally optimal stitching of tiled 3D microscopic image acquisitions", *Bioinformatics*, **25**(11):1463-1465. [PDF](http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf)
--   [TrakEM2](TrakEM2 ) for non-destructive stitching with floating, adjustable images.
+-   [TrakEM2](TrakEM2) for non-destructive stitching with floating, adjustable images.
 -   [XuvTools](http://www.xuvtools.org/doku.php) similar stitching software (but you cannot access XuvTools' source code freely) from the University of Freiburg and the [abstract](http://dx.doi.org/10.1111/j.1365-2818.2008.03094.x) of the accompying publication
 
     

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Spline Deformation Generator](Spline_Deformation_Generator )
+1.  REDIRECT [Spline Deformation Generator](Spline_Deformation_Generator)

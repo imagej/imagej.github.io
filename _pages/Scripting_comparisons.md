@@ -35,7 +35,7 @@ To remark here that [Clojure](http://clojure.org) is **not** a scripting languag
 In Java
 -------
 
-See also the [Introduction into Developing Plugins](Introduction_into_Developing_Plugins ) documentation page.
+See also the [Introduction into Developing Plugins](Introduction_into_Developing_Plugins) documentation page.
 
     import ij.IJ;
     import ij.plugin.PlugIn;
@@ -103,7 +103,7 @@ Note that above the loop is only set as an example. It's easier to simply query 
 In Jython
 ---------
 
-See also the [Jython Scripting](Jython_Scripting ) documentation page.
+See also the [Jython Scripting](Jython_Scripting) documentation page.
 
     from java.awt import Color
     from java.awt.event import TextListener
@@ -139,7 +139,7 @@ Above, note that instead of looping the list of commands, we just query it with 
 In Clojure
 ----------
 
-See also the [Clojure Scripting](Clojure_Scripting ) documentation page.
+See also the [Clojure Scripting](Clojure_Scripting) documentation page.
 
     (import '(java.awt Color)
             '(java.awt.event TextListener)
@@ -189,7 +189,7 @@ A second version, lispier, rewritten from the above by Clojure's author [Rich Hi
 In Javascript
 -------------
 
-See also the [Javascript Scripting](Javascript_Scripting ) documentation page.
+See also the [Javascript Scripting](Javascript_Scripting) documentation page.
 
     // All ImageJ and java.lang.* classes have been automatically imported
     // using importPackage(Package.ij) etc. directives.
@@ -220,7 +220,7 @@ See also the [Javascript Scripting](Javascript_Scripting ) documentation page.
 In JRuby
 --------
 
-For some tutorial material on using JRuby to script ImageJ, please see [JRuby Scripting](JRuby_Scripting ).
+For some tutorial material on using JRuby to script ImageJ, please see [JRuby Scripting](JRuby_Scripting).
 
     include_class 'java.awt.Color'
     include_class 'java.awt.event.TextListener'
@@ -265,7 +265,7 @@ For some tutorial material on using JRuby to script ImageJ, please see [JRuby Sc
 In BeanShell
 ------------
 
-See also the [Beanshell Scripting](Beanshell_Scripting ) documentation page.
+See also the [Beanshell Scripting](Beanshell_Scripting) documentation page.
 
 For some tutorial material on using BeanShell, see [BeanShell's Quickstart](http://www.beanshell.org/manual/quickstart.html#Java_Statements_and_Expressions).
 

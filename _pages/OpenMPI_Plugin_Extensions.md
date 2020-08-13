@@ -7,14 +7,14 @@ categories:
 description: test description
 ---
 
-{% include info-box name='OpenMPI Plugin Extensions ' software='Fiji ' author='Daniel Trnka, Michal Krumnikl ' maintainer='Michal Krumnikl ' released='TBD ' latest-version='TBD ' category='TBD ' source=' [on github](https://github.com/fiji-hpc/scijava-parallel-mpi) ' %}
+{% include info-box name='OpenMPI Plugin Extensions' software='Fiji' author='Daniel Trnka, Michal Krumnikl' maintainer='Michal Krumnikl' released='TBD' latest-version='TBD' category='TBD' source=' [on github](https://github.com/fiji-hpc/scijava-parallel-mpi)' %}
 
 General information
 -------------------
 
 ### Motivation
 
-OpenMPI, despite being relatively old, still remains the most dominant programming model used in high-performance computing (HPC). As of today Fiji supports the GPU parallelization through [CLIJ](CLIJ ) and allows executing automated HPC workflows by means of [Automated\_workflow\_for\_parallel\_Multiview\_Reconstruction](Automated_workflow_for_parallel_Multiview_Reconstruction ). However, there are still no genuine internally parallel plugins developed specifically for deployment on large scale parallel machines like HPC clusters or supercomputers. This is a preliminary OpenMPI framework for Fiji and model parallel implementations of the most common image processing operations included in ImageJ.
+OpenMPI, despite being relatively old, still remains the most dominant programming model used in high-performance computing (HPC). As of today Fiji supports the GPU parallelization through [CLIJ](CLIJ) and allows executing automated HPC workflows by means of [Automated\_workflow\_for\_parallel\_Multiview\_Reconstruction](Automated_workflow_for_parallel_Multiview_Reconstruction). However, there are still no genuine internally parallel plugins developed specifically for deployment on large scale parallel machines like HPC clusters or supercomputers. This is a preliminary OpenMPI framework for Fiji and model parallel implementations of the most common image processing operations included in ImageJ.
 
 ### Extensions Description
 

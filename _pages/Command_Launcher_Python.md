@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Jython Scripting](Jython_Scripting )
+1.  REDIRECT [Jython Scripting](Jython_Scripting)

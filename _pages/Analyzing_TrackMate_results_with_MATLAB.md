@@ -7,19 +7,19 @@ categories: Tracking,Matlab
 description: test description
 ---
 
-This page documents the various ways to exchange data between [TrackMate](TrackMate ) and [MATLAB](MATLAB ).
+This page documents the various ways to exchange data between [TrackMate](TrackMate) and [MATLAB](MATLAB).
 
 Introduction
 ------------
 
-[TrackMate](TrackMate ) was originally designed solely as a tracking tool. Its goal was just to generate the tracks then another tool was supposed to analyze these tracks. Nonetheless, we built some crude analysis facilities in TrackMate for rapid inspection. But in no way they can compete with a proper dedicated, custom analysis tool.
+[TrackMate](TrackMate) was originally designed solely as a tracking tool. Its goal was just to generate the tracks then another tool was supposed to analyze these tracks. Nonetheless, we built some crude analysis facilities in TrackMate for rapid inspection. But in no way they can compete with a proper dedicated, custom analysis tool.
 
-I favor [MATLAB](MATLAB ) as a tool for data analysis. Therefore the interoperability facilities first deal with this software.
+I favor [MATLAB](MATLAB) as a tool for data analysis. Therefore the interoperability facilities first deal with this software.
 
 Location and installation of import functions
 ---------------------------------------------
 
-These tools take the form of several, hopefully well documented [MATLAB](MATLAB ) functions that are shipped with in your Fiji installation. All of them are located in the *scripts* folder of your Fiji package
+These tools take the form of several, hopefully well documented [MATLAB](MATLAB) functions that are shipped with in your Fiji installation. All of them are located in the *scripts* folder of your Fiji package
 
     tinevez@primevere:~/Development/fiji> cd ~/Applications/Fiji/Fiji.app/scripts/
     tinevez@primevere:~/Applications/Fiji/Fiji.app/scripts> ls
@@ -30,14 +30,14 @@ These tools take the form of several, hopefully well documented [MATLAB](MATLAB 
     Matlab3DViewerDemo_3.m       importTrackMateTracks.m
     tinevez@primevere:~/Applications/Fiji/Fiji.app/scripts> 
 
-If you did not do it already, there is a configuration step to take in [MATLAB](MATLAB ), so as to make [MATLAB](MATLAB ) aware of these files. You need to add the *scripts* folder to the [MATLAB](MATLAB ) path:
+If you did not do it already, there is a configuration step to take in [MATLAB](MATLAB), so as to make [MATLAB](MATLAB) aware of these files. You need to add the *scripts* folder to the [MATLAB](MATLAB) path:
 
-In [MATLAB](MATLAB ), select in the menu {% include bc content='File | Set Path...'%} and add the *scripts* folder there (on Mac, the file chooser doesn't let you choose directories within .app packages, so you have to use the [MATLAB](MATLAB ) command `addpath('/Applications/Fiji.app/scripts')` or whatever folder works for you) .
+In [MATLAB](MATLAB), select in the menu {% include bc content='File | Set Path...'%} and add the *scripts* folder there (on Mac, the file chooser doesn't let you choose directories within .app packages, so you have to use the [MATLAB](MATLAB) command `addpath('/Applications/Fiji.app/scripts')` or whatever folder works for you) .
 
 Importing track files
 ---------------------
 
-TrackMate has an action to export a simplified XML file containing only the tracks as spot positions. It is only suitable for linear tracks: tracks that are non-branching, non-merging. In that case, there is a [MATLAB](MATLAB ) function that can use this XML file to import the tracks and retrieve the relevant metadata:
+TrackMate has an action to export a simplified XML file containing only the tracks as spot positions. It is only suitable for linear tracks: tracks that are non-branching, non-merging. In that case, there is a [MATLAB](MATLAB) function that can use this XML file to import the tracks and retrieve the relevant metadata:
 
     >> [tracks, md] = importTrackMateTracks('RealPhotobac20min_Tracks.xml');
     >> tracks
@@ -67,8 +67,8 @@ There exists one flag that can remove the Z dimension in 2D case. And another th
 Application examples and links
 ------------------------------
 
-There are some specialized tools in [MATLAB](MATLAB ) that can exploit TrackMate results. For instance, here is a [MATLAB](MATLAB ) class that performs [mean-square displacement analysis](http://www.mathworks.com/matlabcentral/fileexchange/40692-mean-square-displacement-analysis-of-particles-trajectories). It is hopefully well documented in this [[MATLAB](MATLAB ) tutorial](http://www.mathworks.com/matlabcentral/fileexchange/40692-mean-square-displacement-analysis-of-particles-trajectories/content/msdanalyzer/MSDTuto.html).
+There are some specialized tools in [MATLAB](MATLAB) that can exploit TrackMate results. For instance, here is a [MATLAB](MATLAB) class that performs [mean-square displacement analysis](http://www.mathworks.com/matlabcentral/fileexchange/40692-mean-square-displacement-analysis-of-particles-trajectories). It is hopefully well documented in this [[MATLAB](MATLAB) tutorial](http://www.mathworks.com/matlabcentral/fileexchange/40692-mean-square-displacement-analysis-of-particles-trajectories/content/msdanalyzer/MSDTuto.html).
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez )) 10:35, 8 August 2013 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 10:35, 8 August 2013 (CDT)
 
  

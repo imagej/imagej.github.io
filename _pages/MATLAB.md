@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [MATLAB Scripting](MATLAB_Scripting )
+1.  REDIRECT [MATLAB Scripting](MATLAB_Scripting)

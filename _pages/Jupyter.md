@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Scijava Jupyter Kernel](Scijava_Jupyter_Kernel )
+1.  REDIRECT [Scijava Jupyter Kernel](Scijava_Jupyter_Kernel)

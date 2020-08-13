@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Tips for C++ developers](Tips_for_C++_developers )
+1.  REDIRECT [Tips for C++ developers](Tips_for_C++_developers)

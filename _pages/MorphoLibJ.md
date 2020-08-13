@@ -17,9 +17,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='ijpb ' repo='MorphoLibJ ' %}
+{% include github org='ijpb' repo='MorphoLibJ' %}
 {% endcapture %}
-{% include info-box name='MorphoLibJ ' software='IJPB-plugins ' update-site='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ ) v1.4.1) ' status='stable, active ' category='[Analysis](Category_Analysis ), [Filtering](Category_Filtering ), [Segmentation](Category_Segmentation ), [Mathematical morphology](Category_Mathematical_morphology ) ' %}MorphoLibJ is a collection of {% include wikipedia title='Mathematical morphology' text='mathematical morphology'%} methods and **plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital Imaging lab](http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/).
+{% include info-box name='MorphoLibJ' software='IJPB-plugins' update-site='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ) v1.4.1)' status='stable, active' category='[Analysis](Category_Analysis), [Filtering](Category_Filtering), [Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}MorphoLibJ is a collection of {% include wikipedia title='Mathematical morphology' text='mathematical morphology'%} methods and **plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital Imaging lab](http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/).
 
 The library implements several functionalities that were missing in ImageJ, and that were not or only partially covered by other plugins. Namely:
 
@@ -50,7 +50,7 @@ Morphological filters are defined according to a **structuring element** of a gi
 
 ### Principles
 
-The original idea was to define a methodology to describe shapes by using another shape as test probe (Serra, 1982[1]{% include cite content='journal' title='An overview of morphological filtering ' author='Serra, Jean and Vincent, Luc ' journal='Circuits, Systems and Signal Processing ' volume='11 ' number='1 ' pages='47-108 ' year='1992 ' publisher='Springer ' doi='10.1007/BF01189221 ' %}</ref>). The most basic morphological filters are the **morphological dilation** and the **morphological erosion**. The principle of morphological dilation is to test for each point of the plane, if the structuring element centered on this point **intersects** the structure of interest (see figure below). It results in a set larger than the original set. The principle of morphological erosion is to test for each point of the plane if the structuring element centred on this point **is contained** within the original set. It results in a set smaller than original set.
+The original idea was to define a methodology to describe shapes by using another shape as test probe (Serra, 1982[1]{% include cite content='journal' title='An overview of morphological filtering' author='Serra, Jean and Vincent, Luc' journal='Circuits, Systems and Signal Processing' volume='11' number='1' pages='47-108' year='1992' publisher='Springer' doi='10.1007/BF01189221' %}</ref>). The most basic morphological filters are the **morphological dilation** and the **morphological erosion**. The principle of morphological dilation is to test for each point of the plane, if the structuring element centered on this point **intersects** the structure of interest (see figure below). It results in a set larger than the original set. The principle of morphological erosion is to test for each point of the plane if the structuring element centred on this point **is contained** within the original set. It results in a set smaller than original set.
 
 {% include thumbnail src='/images/pages/Principle-of-morphological-dilation-and-erosion.png' title='Principle of morphological dilation and erosion on a binary set, using a disk-shaped structuring element.'%}
 
@@ -242,16 +242,16 @@ Watershed segmentation
 
 {% include thumbnail src='/images/pages/Classic-Watershed-lines-blur-blobs.png' title='Overlay of watershed lines on blurred blobs.'%} The watershed algorithm assimilates the grey level image to a digital elevation model, and aims at detecting the different catchment basins. In the grey-level image, the catchment basins correspond to dark regions surrounded by bright structures (the "crests"). It is a very popular technique specially used to segment touching objects. The MorphoLibJ suite contains several implementations of the algorithm and plugins that make use of it:
 
--   [Classic Watershed](Classic_Watershed ), plugin implementing the original watershed algorithm by Pierre Soille and Luc M. Vincent (1990)&lt;ref name="Soille1990&gt;{% include cite content='conference' title='Determining watersheds in digital pictures via flooding simulations ' author='Soille, Pierre and Vincent, Luc M ' booktitle='Proc. SPIE ' volume='1360 ' pages='240-250 ' year='1990 ' organization='International Society for Optics and Photonics ' doi='10.1117/12.24211 ' url='http://dx.doi.org/10.1117/12.24211 ' %}</ref> to segment 2D/3D grayscale images.
--   [Marker-controlled Watershed](Marker-controlled_Watershed ), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers by Meyer and Beucher (1990)&lt;ref name="Meyer1990&gt;{% include cite content='journal' title='Morphological segmentation ' author='F. Meyer and S. Beucher ' journal='Journal of Visual Communication and Image Representation ' volume='1 ' number='1 ' pages='21-46 ' year='1990 ' doi='10.1016/1047-3203(90)90014-M ' url='http://www.sciencedirect.com/science/article/pii/104732039090014M ' %}</ref>.
--   [Interactive Marker-controlled Watershed](Interactive_Marker-controlled_Watershed ), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers introduced interactively by the user.
--   [Morphological Segmentation](Morphological_Segmentation ), a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
--   [Distance Transform Watershed](Distance_Transform_Watershed ), two plugins (2D and 3D) that work on binary images and allow to separate touching objects by combining the distance transform and watershed methods.
+-   [Classic Watershed](Classic_Watershed), plugin implementing the original watershed algorithm by Pierre Soille and Luc M. Vincent (1990)&lt;ref name="Soille1990&gt;{% include cite content='conference' title='Determining watersheds in digital pictures via flooding simulations' author='Soille, Pierre and Vincent, Luc M' booktitle='Proc. SPIE' volume='1360' pages='240-250' year='1990' organization='International Society for Optics and Photonics' doi='10.1117/12.24211' url='http://dx.doi.org/10.1117/12.24211' %}</ref> to segment 2D/3D grayscale images.
+-   [Marker-controlled Watershed](Marker-controlled_Watershed), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers by Meyer and Beucher (1990)&lt;ref name="Meyer1990&gt;{% include cite content='journal' title='Morphological segmentation' author='F. Meyer and S. Beucher' journal='Journal of Visual Communication and Image Representation' volume='1' number='1' pages='21-46' year='1990' doi='10.1016/1047-3203(90)90014-M' url='http://www.sciencedirect.com/science/article/pii/104732039090014M' %}</ref>.
+-   [Interactive Marker-controlled Watershed](Interactive_Marker-controlled_Watershed), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers introduced interactively by the user.
+-   [Morphological Segmentation](Morphological_Segmentation), a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
+-   [Distance Transform Watershed](Distance_Transform_Watershed), two plugins (2D and 3D) that work on binary images and allow to separate touching objects by combining the distance transform and watershed methods.
 
 Measurements
 ------------
 
-[MorphoLibJ](MorphoLibJ ) contains several tools for quantifying the size, the shape, or the spatial organization, from **binary or label** 2D and 3D images. The aim is to facilitate the management of label images, contrary to the built-in “Analyze Particles...” function that operates directly on a grayscale image.
+[MorphoLibJ](MorphoLibJ) contains several tools for quantifying the size, the shape, or the spatial organization, from **binary or label** 2D and 3D images. The aim is to facilitate the management of label images, contrary to the built-in “Analyze Particles...” function that operates directly on a grayscale image.
 
 ### Region analysis
 
@@ -261,7 +261,7 @@ This section describes the methods implemented in MorphoLibJ for describing indi
 
 {% include thumbnail src='/images/pages/MorphoLibJ-Euler-number.png' title='Illustration of Euler Number definition. Left: three particles with Euler numbers equal to 1, 0 and -1, respectively. Right: example of a 3D particle with an Euler number equal to -1, corresponding to the subtraction of 1 connected components minus two handles.'%}The intrinsic volumes are a set of features with interesting mathematical properties that are commonly used for describing individual particles as well as binary microstructrues. In the planar case, they correspond to the area, the perimeter and the Euler number. The Euler number is a topological characteristic that equals the number of connected components minus the number of holes.
 
-For 3D particles, intrinsic volumes correspond to the volume, the surface area, the mean breadth (a quantity proportional to the integral of the mean curvature over the surface) and the Euler number. In 3D the Euler number equals the number of connected components minus the number of "handles" or "tunnels" through the structure, plus the number of bubbles within the particles (Serra, 1982[6]{% include cite content='conference' booktitle='3D Images of Materials Structures: processing and analysis ' title='Image Processing ' author='Joachim Ohser and Katja Schladitz ' publisher='Wiley-VCH Verlag GmbH & Co. KGaA ' year='2009 ' doi='10.1002/9783527628308.ch4 ' url='http://dx.doi.org/10.1002/9783527628308.ch4 ' %}</ref>).
+For 3D particles, intrinsic volumes correspond to the volume, the surface area, the mean breadth (a quantity proportional to the integral of the mean curvature over the surface) and the Euler number. In 3D the Euler number equals the number of connected components minus the number of "handles" or "tunnels" through the structure, plus the number of bubbles within the particles (Serra, 1982[6]{% include cite content='conference' booktitle='3D Images of Materials Structures: processing and analysis' title='Image Processing' author='Joachim Ohser and Katja Schladitz' publisher='Wiley-VCH Verlag GmbH & Co. KGaA' year='2009' doi='10.1002/9783527628308.ch4' url='http://dx.doi.org/10.1002/9783527628308.ch4' %}</ref>).
 
 ##### Estimation from 2D or 3D images
 
@@ -311,7 +311,7 @@ A binary particle may be described mathematically by its moments which correspon
 
 #### Plugins
 
-Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](MorphoLibJ#Utilities_for_binary_images )). The output is a results table (ImageJ [Results table](https://imagej.nih.gov/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc content='Plugins | MorphoLibJ | Analyze'%} menu.
+Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](MorphoLibJ#Utilities_for_binary_images)). The output is a results table (ImageJ [Results table](https://imagej.nih.gov/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc content='Plugins | MorphoLibJ | Analyze'%} menu.
 
 ##### Global geometry
 
@@ -332,7 +332,7 @@ This plugin computes for each label the largest disk that can be enclosed within
 -   **yi**: the y-coordinate of the inscribed circle.
 -   **radius**: the radius of the inscribed circle.
 
-<figure><img src="/images/pages/Longest-geodesic-path-DRIVE.png" title="Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal et al., 2004). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay." width="300" alt="Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal et al., 2004). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay." /><figcaption aria-hidden="true">Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal <em>et al</em>., 2004<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay.</figcaption></figure><section class="footnotes" role="doc-endnotes"><hr /><ol><li id="fn1" role="doc-endnote">{% include cite content='journal' title='Ridge based vessel segmentation in color images of the retina ' author='J.J. Staal and M.D. Abramoff and M. Niemeijer and M.A. Viergever and B. van Ginneken ' journal='IEEE Transactions on Medical Imaging ' year='2004 ' pages='501-509 ' volume='23 ' doi='10.1109/TMI.2004.825627 ' %}<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></li></ol></section>
+<figure><img src="/images/pages/Longest-geodesic-path-DRIVE.png" title="Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal et al., 2004). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay." width="300" alt="Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal et al., 2004). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay." /><figcaption aria-hidden="true">Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal <em>et al</em>., 2004<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay.</figcaption></figure><section class="footnotes" role="doc-endnotes"><hr /><ol><li id="fn1" role="doc-endnote">{% include cite content='journal' title='Ridge based vessel segmentation in color images of the retina' author='J.J. Staal and M.D. Abramoff and M. Niemeijer and M.A. Viergever and B. van Ginneken' journal='IEEE Transactions on Medical Imaging' year='2004' pages='501-509' volume='23' doi='10.1109/TMI.2004.825627' %}<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></li></ol></section>
 
 ##### Geodesic diameter
 
@@ -365,7 +365,7 @@ The plugin calculates the **mean**, **standard deviation**, **maximum**, **minim
 
 ### Label Overlap Measures
 
-Given two label images, there are different measures that allow us to evaluate the overlap agreement (or error) between the labels. Following Tustison & Gee (2009)&lt;ref name="Tustison2009&gt;{% include cite content='journal' title='Introducing Dice, Jaccard, and other label overlap measures to ITK ' author='Tustison, NJ and Gee, JC ' journal='The Insight Journal ' pages='1-4 ' issue='July-December ' year='2009 ' doi='10.1007/BF01189221 ' %}</ref>, and given a source image $$S$$ and a target image $$T$$, this plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Label Overlap Measures'%}) provides the following overlap measurements in two different result tables (one with the total values for all labels and one with values for individual labels):
+Given two label images, there are different measures that allow us to evaluate the overlap agreement (or error) between the labels. Following Tustison & Gee (2009)&lt;ref name="Tustison2009&gt;{% include cite content='journal' title='Introducing Dice, Jaccard, and other label overlap measures to ITK' author='Tustison, NJ and Gee, JC' journal='The Insight Journal' pages='1-4' issue='July-December' year='2009' doi='10.1007/BF01189221' %}</ref>, and given a source image $$S$$ and a target image $$T$$, this plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Label Overlap Measures'%}) provides the following overlap measurements in two different result tables (one with the total values for all labels and one with values for individual labels):
 
 -   Target Overlap for each individual labeled region $$r$$:
 
@@ -433,7 +433,7 @@ The region adjacency graph plugin gives access to the neighborhood relationship 
 
 {% include thumbnail src='/images/pages/MorphoLibJ-region-adjacency-graph.png' title='Computation of the Region Adjacency Graph on a microscopy image of plant tissue. Left: original image. Middle: result of watershed segmentation. Right: overlay of edges representing adjacent regions.'%}
 
-The plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Region Adjacency Graph'%}) works for both 2D and 3D images, and requires a label image as input. A typical input is the result of a watershed segmentation (see [Watershed Segmentation](MorphoLibJ#Watershed_segmentation )), eventually followed by [manual edition of the labels](MorphoLibJ#Label_Edition_plugin ). The output of the plugin is a results table with as many rows as the number of pairs of adjacent regions, containing the labels of the two adjacent regions.
+The plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Region Adjacency Graph'%}) works for both 2D and 3D images, and requires a label image as input. A typical input is the result of a watershed segmentation (see [Watershed Segmentation](MorphoLibJ#Watershed_segmentation)), eventually followed by [manual edition of the labels](MorphoLibJ#Label_Edition_plugin). The output of the plugin is a results table with as many rows as the number of pairs of adjacent regions, containing the labels of the two adjacent regions.
 
 Binary and label image utilities
 --------------------------------
@@ -513,7 +513,7 @@ Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is us
 
 ### Label Edition plugin
 
-{% include thumbnail src='/images/pages/Label-Edition-plugin.png' title='Label Edition plugin overview.'%}To ease the processing of label images, [MorphoLibJ](MorphoLibJ ) provides the Label Edition plugin (available under {% include bc content='Plugins | MorphoLibJ | Labels | Label Edition'%}). This plugin contains a graphical user interface (GUI) where the users can perform the following set of editing tasks:
+{% include thumbnail src='/images/pages/Label-Edition-plugin.png' title='Label Edition plugin overview.'%}To ease the processing of label images, [MorphoLibJ](MorphoLibJ) provides the Label Edition plugin (available under {% include bc content='Plugins | MorphoLibJ | Labels | Label Edition'%}). This plugin contains a graphical user interface (GUI) where the users can perform the following set of editing tasks:
 
 -   Manually merge labels after their selection using the point selection tool (in 2D and 3D).
 -   Apply morphological erosion, dilation, opening and closing with a square/cube of radius 1 as structuring element.
@@ -575,7 +575,7 @@ One advantage of this organization of the library and the use of public static m
 
 #### Segmentation pipeline prototype
 
-Let's see an example in a complete [Beanshell script](BeanShell_Scripting ) that takes the active 2D or 3D image and finds a reasonable segmentation combining a set of morphological operations (gradient, extended minima and watershed):
+Let's see an example in a complete [Beanshell script](BeanShell_Scripting) that takes the active 2D or 3D image and finds a reasonable segmentation combining a set of morphological operations (gradient, extended minima and watershed):
 
     #@ ImagePlus(label="Input image",description="Image to segment") imp
     #@ Integer(label="Gradient radius",description="Radius of the morphological gradient",value=2) radius
@@ -631,7 +631,7 @@ Let's see an example in a complete [Beanshell script](BeanShell_Scripting ) that
 
 #### Label visualization in 3D viewer
 
-Making use of MorphoLibJ's label methods and the [ImageJ 3D Viewer](3D_Viewer )'s visualization tools it is quite simple to create a script to display each label of an image as 3D surfaces of the corresponding colors provided by the image look-up table:
+Making use of MorphoLibJ's label methods and the [ImageJ 3D Viewer](3D_Viewer)'s visualization tools it is quite simple to create a script to display each label of an image as 3D surfaces of the corresponding colors provided by the image look-up table:
 
     #@ ImagePlus imp
 
@@ -712,9 +712,9 @@ You can browse the [javadoc](http://ijpb.github.io/MorphoLibJ/javadoc/) for more
 Installation
 ------------
 
--   In [ImageJ 1.x](ImageJ_1.x ), download the [latest released jar](https://github.com/ijpb/MorphoLibJ/releases) into the *plugins* folder.
--   In [ImageJ2](ImageJ2 ) (including [Fiji](Fiji )), you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites ) the IJPB-plugins site to your list of update sites:
-    1.  Select {% include bc content='Help | Update...'%} from the menu to start the [updater](Updater ).
+-   In [ImageJ 1.x](ImageJ_1.x), download the [latest released jar](https://github.com/ijpb/MorphoLibJ/releases) into the *plugins* folder.
+-   In [ImageJ2](ImageJ2) (including [Fiji](Fiji)), you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the IJPB-plugins site to your list of update sites:
+    1.  Select {% include bc content='Help | Update...'%} from the menu to start the [updater](Updater).
     2.  Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
     3.  Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
     4.  Click *Apply changes* and restart ImageJ.
@@ -722,11 +722,11 @@ Installation
 Citation
 --------
 
-Please note that [MorphoLibJ](MorphoLibJ ) is based on a publication. If you use it successfully for your research please be so kind to cite our work:
+Please note that [MorphoLibJ](MorphoLibJ) is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
 -   {% include publication content='MorphoLibJ' %}
 
-[MorphoLibJ](MorphoLibJ )'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349/ijpb/MorphoLibJ).
+[MorphoLibJ](MorphoLibJ)'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349/ijpb/MorphoLibJ).
 
 References
 ----------
@@ -744,19 +744,19 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 [1] 
 
-[2] {% include cite content='journal' title='Directional morphological filtering ' author='Soille, Pierre and Talbot, Hugues ' publisher='IEEE ' year='2001 ' volume='23 ' number='11 ' pages='1313-1329 ' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence ' doi='10.1109/34.969120 ' %}
+[2] {% include cite content='journal' title='Directional morphological filtering' author='Soille, Pierre and Talbot, Hugues' publisher='IEEE' year='2001' volume='23' number='11' pages='1313-1329' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence' doi='10.1109/34.969120' %}
 
-[3] {% include cite content='journal' title='Characterization of changes in blood vessel width and tortuosity in retinopathy of prematurity using image analysis ' author='Conor Heneghan and John Flynn and Michael O Keefe and Mark Cahill ' journal='Medical Image Analysis ' volume='6 ' number='4 ' pages='407-429 ' year='2002 ' publisher='Elsevier ' doi='10.1016/S1361-8415(02)00058-0 ' %}
+[3] {% include cite content='journal' title='Characterization of changes in blood vessel width and tortuosity in retinopathy of prematurity using image analysis' author='Conor Heneghan and John Flynn and Michael O Keefe and Mark Cahill' journal='Medical Image Analysis' volume='6' number='4' pages='407-429' year='2002' publisher='Elsevier' doi='10.1016/S1361-8415(02)00058-0' %}
 
-[4] {% include cite content='conference' title='Discrete Morphology with Line Structuring Elements ' author='Hendriks, CL Luengo and van Vliet, Lucas J ' booktitle='International Conference on Computer Analysis of Images and Patterns ' pages='722-729 ' year='2003 ' organization='Springer ' doi='10.1007/978-3-540-45179-2\_88 ' %}
+[4] {% include cite content='conference' title='Discrete Morphology with Line Structuring Elements' author='Hendriks, CL Luengo and van Vliet, Lucas J' booktitle='International Conference on Computer Analysis of Images and Patterns' pages='722-729' year='2003' organization='Springer' doi='10.1007/978-3-540-45179-2\_88' %}
 
-[5] {% include cite content='conference' title='Attribute Opening, Thinnings, and Granulometries ' author='Edmond J. Breen and Ronald Jones ' journal='Computer Vision and Image Understanding ' year='1996 ' month='Nov. ' number='3 ' pages='377--389 ' volume='64 ' doi='10.1006/cviu.1996.0066 ' url='http://www.sciencedirect.com/science/article/pii/S1077314296900661 ' %}
+[5] {% include cite content='conference' title='Attribute Opening, Thinnings, and Granulometries' author='Edmond J. Breen and Ronald Jones' journal='Computer Vision and Image Understanding' year='1996' month='Nov.' number='3' pages='377--389' volume='64' doi='10.1006/cviu.1996.0066' url='http://www.sciencedirect.com/science/article/pii/S1077314296900661' %}
 
 [6] 
 
-[7] {% include cite content='conference' title='Computation of Minkowski measures on 2D and 3D binary images ' author='Legland, David and Kiêu, Kiên and Devaux, Marie-Françoise ' journal='Image Analysis and Stereology ' year='2007 ' month='June ' number='6 ' pages='83-92 ' volume='26 ' doi='10.5566/ias.v26.p83-92 ' url='http://www.ias-iss.org/ojs/IAS/article/view/811 ' %}
+[7] {% include cite content='conference' title='Computation of Minkowski measures on 2D and 3D binary images' author='Legland, David and Kiêu, Kiên and Devaux, Marie-Françoise' journal='Image Analysis and Stereology' year='2007' month='June' number='6' pages='83-92' volume='26' doi='10.5566/ias.v26.p83-92' url='http://www.ias-iss.org/ojs/IAS/article/view/811' %}
 
-[8] {% include cite content='conference' title='Measuring the length of a curve ' author='Moran, PAP ' journal='Biometrika ' year='1966 ' volume='53 ' number='3-4 ' pages='359-364 ' doi='10.1093/biomet/53.3-4.359 ' URL='http://biomet.oxfordjournals.org/content/53/3-4/359.abstract ' %}
+[8] {% include cite content='conference' title='Measuring the length of a curve' author='Moran, PAP' journal='Biometrika' year='1966' volume='53' number='3-4' pages='359-364' doi='10.1093/biomet/53.3-4.359' URL='http://biomet.oxfordjournals.org/content/53/3-4/359.abstract' %}
 
 [9] 
 
@@ -764,14 +764,14 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 {% capture title%}
 Efficient N-Dimensional surface estimation using {% include wikipedia title='Crofton formula' text='Crofton formula'%} and run-length encoding
 {% endcapture %}
-{% include cite content='journal' title=title author='Lehmann, Gaetan and Legland, David ' journal='Insight Journal ' year='2012 ' pages='1-11 ' url='http://hdl.handle.net/10380/3342 ' %}
+{% include cite content='journal' title=title author='Lehmann, Gaetan and Legland, David' journal='Insight Journal' year='2012' pages='1-11' url='http://hdl.handle.net/10380/3342' %}
 
 [11] 
 
 [12] 
 
-[13] {% include cite content='conference' title='On the use of geodesic metric in image analysis ' author='Lantuejoul, C. and Beucher, S. ' journal='Journal of Microscopy ' year='1981 ' month='Jan. ' number='1, ' pages='39-40 ' volume='121 ' doi='10.1111/j.1365-2818.1981.tb01197.x ' url='http://dx.doi.org/10.1111/j.1365-2818.1981.tb01197.x ' %}
+[13] {% include cite content='conference' title='On the use of geodesic metric in image analysis' author='Lantuejoul, C. and Beucher, S.' journal='Journal of Microscopy' year='1981' month='Jan.' number='1,' pages='39-40' volume='121' doi='10.1111/j.1365-2818.1981.tb01197.x' url='http://dx.doi.org/10.1111/j.1365-2818.1981.tb01197.x' %}
 
-[14] {% include cite content='conference' title='Identifying plant species using architectural features in leaf microscopy images ' author='Joao Batista Florindo and Odemir Martinez Bruno and Davi Rodrigo Rossatto and Rosana Marta Kolb and Maria Cecilia Gomez and Gabriel Landini ' journal='Botany ' year='2016 ' number='1 ' pages='15-21 ' volume='94 ' doi='10.1139/cjb-2015-0075 ' url='http://dx.doi.org/10.1139/cjb-2015-0075 ' %}
+[14] {% include cite content='conference' title='Identifying plant species using architectural features in leaf microscopy images' author='Joao Batista Florindo and Odemir Martinez Bruno and Davi Rodrigo Rossatto and Rosana Marta Kolb and Maria Cecilia Gomez and Gabriel Landini' journal='Botany' year='2016' number='1' pages='15-21' volume='94' doi='10.1139/cjb-2015-0075' url='http://dx.doi.org/10.1139/cjb-2015-0075' %}
 
 [15] 

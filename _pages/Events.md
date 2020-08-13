@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Upcoming Events](Upcoming_Events )
+1.  REDIRECT [Upcoming Events](Upcoming_Events)

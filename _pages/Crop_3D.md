@@ -9,9 +9,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='fiji ' repo='VIB ' source='stacks/Three\_Pane\_Crop.java ' %}
+{% include github org='fiji' repo='VIB' source='stacks/Three\_Pane\_Crop.java' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Crop (3D) ' author='Mark Longair ' maintainer='Mark Longair ' filename='VIB\_.jar ' source=source status='stable ' %}
+{% include info-box software='ImageJ' name='Crop (3D)' author='Mark Longair' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
 
 The main documentation for the Crop (3D) or Three Pane Crop plugin can be found here: http://homepages.inf.ed.ac.uk/s9808248/imagej/three-pane-crop/
 

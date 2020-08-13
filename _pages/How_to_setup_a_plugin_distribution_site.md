@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [How to set up and populate an update site](How_to_set_up_and_populate_an_update_site )
+1.  REDIRECT [How to set up and populate an update site](How_to_set_up_and_populate_an_update_site)

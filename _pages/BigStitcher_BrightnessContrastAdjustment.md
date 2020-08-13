@@ -10,7 +10,7 @@ description: test description
 Overview
 --------
 
-Even after correcting for fixed-pattern noise (see [here](BigStitcher_Flatfield_correction )), differences in brightness and contrast between images, e.g. due to bleaching, might persist and be visible in the fused images. To correct for this, we estimate optimal linear transforms of pixel intensities in adjacent images to achieve uniform brightness and contrast in the whole dataset. We minimize the intensity difference of all pixels in the overlapping volume of two images according to the current registrations via a linear transform for each image: *I′*(x) = *I*(x) \* *α* + *β*
+Even after correcting for fixed-pattern noise (see [here](BigStitcher_Flatfield_correction)), differences in brightness and contrast between images, e.g. due to bleaching, might persist and be visible in the fused images. To correct for this, we estimate optimal linear transforms of pixel intensities in adjacent images to achieve uniform brightness and contrast in the whole dataset. We minimize the intensity difference of all pixels in the overlapping volume of two images according to the current registrations via a linear transform for each image: *I′*(x) = *I*(x) \* *α* + *β*
 
 The brightness and contrast adjustment is available in **Multiview mode** under {% include bc content='Processing|Intensity Adjustment'%}.
 
@@ -50,4 +50,4 @@ Clicking **List all** in the intensity adjustment sub-menu will list the current
 
 Clicking **Remove** in the sub-menu will remove the intensity adjustment from the currently selected image(s).
 
-Go back to the [main page](BigStitcher#Documentation )
+Go back to the [main page](BigStitcher#Documentation)

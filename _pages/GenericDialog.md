@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Generic dialog](Generic_dialog )
+1.  REDIRECT [Generic dialog](Generic_dialog)

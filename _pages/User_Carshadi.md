@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Cameron Arshadi ' affiliation=' [HHMI - Janelia Research Campus](https://www.janelia.org/) ' orcid=' ' scholar=' ' researchgate=' ' forum='arshadic ' github='carshadi ' osrc=' ' loop=' ' %}
+{% include user-box name='Cameron Arshadi' affiliation=' [HHMI - Janelia Research Campus](https://www.janelia.org/)' orcid='' scholar='' researchgate='' forum='arshadic' github='carshadi' osrc='' loop='' %}

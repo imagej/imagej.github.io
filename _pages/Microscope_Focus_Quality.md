@@ -9,19 +9,19 @@ description: test description
 
 <img src="/images/pages/Mifqc.png" width="900"/> 
 {% capture source%}
-{% include github org='fiji ' repo='microscope-image-quality ' tag='microscope-image-quality-0.1.0 ' %}
+{% include github org='fiji' repo='microscope-image-quality' tag='microscope-image-quality-0.1.0' %}
 {% endcapture %}
 
 {% capture release%}
-{% include maven g='sc.fiji ' a='microscope-image-quality ' v='0.1.0 ' label='0.1.0 ' %}
+{% include maven g='sc.fiji' a='microscope-image-quality' v='0.1.0' label='0.1.0' %}
 {% endcapture %}
 
 {% capture devStatus%}
-{% include devstatus developer='yes ' incubating='yes ' obsolete='no ' %}
+{% include devstatus developer='yes' incubating='yes' obsolete='no' %}
 {% endcapture %}
 
 {% capture supportStatus%}
-{% include supportstatus debugger='yes ' reviewer='yes ' support='yes ' %}
+{% include supportstatus debugger='yes' reviewer='yes' support='yes' %}
 {% endcapture %}
 
 {% capture founders%}
@@ -55,7 +55,7 @@ description: test description
 {% capture contributors%}
 {% include person content='samueljyang' %}, {% include person content='asimshankar' %}
 {% endcapture %}
-{% include component name='Microscope Image Focus Quality Classifier ' url='https://imagej.net/Microscope\_Focus\_Quality ' source=source license='[Apache](Apache ) ' release=release devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers contributors=contributors %}This plugin assesses the focus quality of microscope images, classifying the image in tiles.
+{% include component name='Microscope Image Focus Quality Classifier' url='https://imagej.net/Microscope\_Focus\_Quality' source=source license='[Apache](Apache)' release=release devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers contributors=contributors %}This plugin assesses the focus quality of microscope images, classifying the image in tiles.
 
 Summary
 -------
@@ -65,7 +65,7 @@ The plugin predicts an absolute measure of image focus on a single image in isol
 Installation
 ------------
 
--   [Enable](Following_an_update_site ) the TensorFlow [update site](Update_site ).
+-   [Enable](Following_an_update_site) the TensorFlow [update site](Update_site).
 -   The command is in {% include bc content='Plugins | Classification | Microscope Image Focus Quality'%}.
 
 Usage
@@ -81,7 +81,7 @@ Usage
 
 The screenshot above uses the "Overlay probability patches" option with a thickness of 5.
 
-If you wish to access the results of the classification quantitatively (e.g., as part of an automated workflow via [scripting](Scripting )), use the "Generate probability image" option.
+If you wish to access the results of the classification quantitatively (e.g., as part of an automated workflow via [scripting](Scripting)), use the "Generate probability image" option.
 
 You can can remove the probability patches overlay via the {% include bc content='Image | Overlay | Remove Overlay'%} command.
 
@@ -98,7 +98,7 @@ Publication
 See also
 --------
 
--   [TensorFlow](TensorFlow ), the machine learning library this plugin uses.
+-   [TensorFlow](TensorFlow), the machine learning library this plugin uses.
 -   [Using Deep Learning to Facilitate Scientific Image Analysis](https://research.googleblog.com/2018/03/using-deep-learning-to-facilitate.html) post on Google Research Blog
 
 

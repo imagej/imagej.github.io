@@ -18,7 +18,7 @@ This tutorial explains how to **set up a website to distribute your plugins**. I
 Rationale
 ---------
 
-See the [Distribution](Distribution ) page for a discussion of the benefits of update sites and how they fit in to plugin development.
+See the [Distribution](Distribution) page for a discussion of the benefits of update sites and how they fit in to plugin development.
 
 Add your personal update site
 -----------------------------
@@ -27,11 +27,11 @@ By far the easiest method to provide your macros, scripts and plugins to other u
 
 A *personal update site* is hosted on https://sites.imagej.net/&lt;imagej-wiki-account&gt;. If you do not have an ImageJ Wiki account yet, no need to worry, you can register one while setting up your update site.
 
-{% include info-box content='There are some minimal ""Terms of Service"" for personal update sites. See the [Personal Update Site Terms of Service](Personal_Update_Site_Terms_of_Service ) for details.' %}
+{% include info-box content='There are some minimal ""Terms of Service"" for personal update sites. See the [Personal Update Site Terms of Service](Personal_Update_Site_Terms_of_Service) for details.' %}
 
 First of all, create a wiki account on https://imagej.net.
 
-Please note, that the password for the corresponding update site is NOT the one for your wiki account. In order to set your update site password, use the link at the bottom of the wiki or click [here](Special_ChangeUploadPassword ).
+Please note, that the password for the corresponding update site is NOT the one for your wiki account. In order to set your update site password, use the link at the bottom of the wiki or click [here](Special_ChangeUploadPassword).
 
 start the updater with {% include bc content='Help | Update'%} and click on the *Manage update sites* button:
 
@@ -45,7 +45,7 @@ Enter the name of that account and click *OK*:
 
 If your upload password (separate from your wiki password) was not initialized, you will then be asked to provide your wiki password, which will be used to initialize your upload password. The two passwords can differ. This can be source of confusion during setting up of the update.
 
-You can also manually [change or initialize your upload password](Special_ChangeUploadPassword ).
+You can also manually [change or initialize your upload password](Special_ChangeUploadPassword).
 
 ### Dedicated plugin update sites
 
@@ -56,7 +56,7 @@ A given user/wiki account can own several update sites. To request a new update 
 Group update site
 -----------------
 
-In addition to [personal update sites](Personal_update_sites ), it is possible for groups of people to share an update site.
+In addition to [personal update sites](Personal_update_sites), it is possible for groups of people to share an update site.
 
 To create such an update site, post on the [Image.sc Forum](https://forum.image.sc/tags/imagej), or in the [imagej Gitter channel](https://gitter.im/imagej/imagej), requesting the creation of the site on `sites.imagej.net`, including the desired name of the site, as well as the wiki usernames to be granted upload permission to the group update site. An administrator will then create the site skeleton and grant those users upload permission to the new site.
 
@@ -102,9 +102,9 @@ Uploading files to your update site
 
 Note: you cannot simply copy files to your web space; the updater would miss all kinds of important information, and consequently refuse to accept that update site. You **need** to let the updater handle the file uploading.
 
-### Start the [updater](Updater ) and check your update site
+### Start the [updater](Updater) and check your update site
 
-First, start the [updater](Updater ):
+First, start the [updater](Updater):
 
 ![](/images/pages/How to setup a plugin distribution site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
 
@@ -139,7 +139,7 @@ Select the file to upload, click under the *Stats/Action* column, or right-click
 
 <img src="/images/pages/Upload-to-update-site.png" width="770"/>
 
-{% include info-box content='The ""Upload to <update site name>"" option is only available if you entered your [wiki credentials](#Start_the_updater_and_check_your_update_site "wikilink") and no other changes are pending. Be aware that the password for the update site [""is not"" your Wiki password](Update_site_FAQ#How_do_I_set_a_password_for_my_personal_update_site.3F ). This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the ""View changes"" view and resolve any pending changes - e.g. by updating or reverting to """Keep as-is""".' %}
+{% include info-box content='The ""Upload to <update site name>"" option is only available if you entered your [wiki credentials](#Start_the_updater_and_check_your_update_site "wikilink") and no other changes are pending. Be aware that the password for the update site [""is not"" your Wiki password](Update_site_FAQ#How_do_I_set_a_password_for_my_personal_update_site.3F). This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the ""View changes"" view and resolve any pending changes - e.g. by updating or reverting to """Keep as-is""".' %}
 
 ### Modifying Dependencies
 
@@ -151,7 +151,7 @@ You can also manually enter or edit any information in the *Details* panel:
 
 {% include info-box content='The ""Details"" panel can only be edited if you have entered upload credentials for the appropriate update site. After modifying the ""Details"" panel you can mark the jar for upload, even though the jar contents itself has not changed.' %}
 
-{% include warning-box content='Sometimes the updater will mis-detect your dependencies. This may prevent you from uploading to your update site! If a dependency is wrong, you can manually add or delete dependencies from the ""Details"" tab to correct the problem. Please [let us know](Contact ) when this happens so we can try to improve the updater' %}
+{% include warning-box content='Sometimes the updater will mis-detect your dependencies. This may prevent you from uploading to your update site! If a dependency is wrong, you can manually add or delete dependencies from the ""Details"" tab to correct the problem. Please [let us know](Contact) when this happens so we can try to improve the updater' %}
 
 ### Upload your files
 
@@ -161,7 +161,7 @@ Check that your plugins are now registered as ImageJ plugins by selecting the *V
 
 <img src="/images/pages/UpdaterFinalScreen.jpg" width="770"/>
 
-That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [add your update site](How_to_follow_a_3rd_party_update_site ) to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their ImageJ installations just like the standard ImageJ plugins.  
+That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [add your update site](How_to_follow_a_3rd_party_update_site) to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their ImageJ installations just like the standard ImageJ plugins.  
 For even more visibility and practicability, you can ask to have your update site listed in the Fiji Updater (see section below).
 
 Publishing your update site
@@ -173,6 +173,6 @@ If you want your update site to be listed in the ImageJ update manager, follow t
 Further Reading
 ---------------
 
-For additional information on common topics regarding update site maintenance, please see the [update site FAQ](Update_site_FAQ ).
+For additional information on common topics regarding update site maintenance, please see the [update site FAQ](Update_site_FAQ).
 
 

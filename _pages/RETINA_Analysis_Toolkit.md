@@ -7,13 +7,13 @@ categories:
 description: test description
 ---
 
-{% include info-box logo='![ 96px](/images/pages/Fiji-icon.png "fig: 96px") ' software='ImageJ ' name='RETINA Analysis Toolkit ' author=' ["""Daniel E. Maidana"""](https://www.researchgate.net/profile/Daniel_Maidana2)  
-["""Demetrios G. Vavvas"""](https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g) ' maintainer='"""Daniel E. Maidana"""  
+{% include info-box logo='![ 96px](/images/pages/Fiji-icon.png "fig: 96px")' software='ImageJ' name='RETINA Analysis Toolkit' author=' ["""Daniel E. Maidana"""](https://www.researchgate.net/profile/Daniel_Maidana2)  
+["""Demetrios G. Vavvas"""](https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g)' maintainer='"""Daniel E. Maidana"""  
 Angiogenesis Laboratory  
 Massachusetts Eye and Ear Infirmary  
 Harvard Medical School  
-Email: [Daniel Maidana](mailto:dmaida3@uic.edu) ' filename=' [TUNEL Cell Counter Macro](https://github.com/DanielMaidana/TUNEL_Cell_Counter/archive/master.zip) ' source=' [TUNEL Cell Counter Repository](https://osf.io/9rveh/)  
-' released='August 18<sup>th</sup>, 2015 ' latest-version='July 21<sup>th</sup>, 2016 ' status='Active and validated with Fiji (ImageJ 1.51d) ' website=' [RETINA Analysis Toolkit at YouTube](https://www.youtube.com/channel/UCqGMCPY9ViyAPWhYciRNuKQ) ' %}  
+Email: [Daniel Maidana](mailto:dmaida3@uic.edu)' filename=' [TUNEL Cell Counter Macro](https://github.com/DanielMaidana/TUNEL_Cell_Counter/archive/master.zip)' source=' [TUNEL Cell Counter Repository](https://osf.io/9rveh/)  
+' released='August 18<sup>th</sup>, 2015' latest-version='July 21<sup>th</sup>, 2016' status='Active and validated with Fiji (ImageJ 1.51d)' website=' [RETINA Analysis Toolkit at YouTube](https://www.youtube.com/channel/UCqGMCPY9ViyAPWhYciRNuKQ)' %}  
 **RETINA Analysis Toolkit** is a free macro toolkit designed and developed for Fiji (ImageJ). The purpose of the RETINA Analysis Toolkit is to perform fast quantitation of digital RGB images from retina cryosections, acquired by fluorescent microscopes. The current components of these toolkit are: TUNEL Cell Counter and RETINA Cell Heatmap.
 
   
@@ -23,7 +23,7 @@ TUNEL Cell Counter
 ==================
 
   
-TUNEL Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. {% include thumbnail src='/images/pages/RETINA Cell Counter Montage.png ' title='\'\'\'TUNEL Cell Counter\'\'\': Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.'%}
+TUNEL Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. {% include thumbnail src='/images/pages/RETINA Cell Counter Montage.png' title='\'\'\'TUNEL Cell Counter\'\'\': Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.'%}
 
 Required Components
 -------------------

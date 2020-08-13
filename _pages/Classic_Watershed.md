@@ -17,15 +17,15 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='ijpb ' repo='ijpb-plugins ' %}
+{% include github org='ijpb' repo='ijpb-plugins' %}
 {% endcapture %}
-{% include info-box name='Classic Watershed ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ ) v1.4.1) ' status='stable, active ' category='[Segmentation](Category_Segmentation ), [Mathematical morphology](Category_Mathematical_morphology ) ' %}{\| \|<span>  
+{% include info-box name='Classic Watershed' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}{\| \|<span>  
 </span>style="vertical-align:top" \|{% include thumbnail src='/images/pages/Classic-Watershed-lines-blur-blobs.png' title='Overlay of watershed lines on blurred blobs.'%} \|}
 
 Introduction
 ------------
 
-{% include thumbnail src='/images/pages/Watershed-flooding-graph.png' title='Schematic overview of watershed flooding in 1D'%}Classic Watershed is an ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D images using flooding simulations as described by Pierre Soille and Luc M. Vincent (1990)&lt;ref name="Soille1990&gt;{% include cite content='conference' title='Determining watersheds in digital pictures via flooding simulations ' author='Soille, Pierre and Vincent, Luc M ' booktitle='Proc. SPIE ' volume='1360 ' pages='240-250 ' year='1990 ' organization='International Society for Optics and Photonics ' doi='10.1117/12.24211 ' url='http://dx.doi.org/10.1117/12.24211 ' %}</ref>.
+{% include thumbnail src='/images/pages/Watershed-flooding-graph.png' title='Schematic overview of watershed flooding in 1D'%}Classic Watershed is an ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D images using flooding simulations as described by Pierre Soille and Luc M. Vincent (1990)&lt;ref name="Soille1990&gt;{% include cite content='conference' title='Determining watersheds in digital pictures via flooding simulations' author='Soille, Pierre and Vincent, Luc M' booktitle='Proc. SPIE' volume='1360' pages='240-250' year='1990' organization='International Society for Optics and Photonics' doi='10.1117/12.24211' url='http://dx.doi.org/10.1117/12.24211' %}</ref>.
 
 The basic idea consists of considering the input image as topographic surface and placing a water source in each regional minimum of its relief. Next the entire relief is flooded from the sources and dams are placed where the different water sources meet.
 
@@ -87,7 +87,7 @@ Image:Blobs-blur.png\|Gaussian-blurred blobs image used as input (radius = 3). I
 Installation
 ------------
 
-The Classic Watershed plugin is part of the [MorphoLibJ](MorphoLibJ ) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites ) the IJPB-plugins update site:
+The Classic Watershed plugin is part of the [MorphoLibJ](MorphoLibJ) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the IJPB-plugins update site:
 
 1\) Select {% include bc content='Help | Update...'%} from the Fiji menu to start the updater.
 
@@ -99,7 +99,7 @@ The Classic Watershed plugin is part of the [MorphoLibJ](MorphoLibJ ) library. T
 
 You should now find the plugin under the sub-menu {% include bc content='Plugins |MorphoLibJ | Segmentation'%}.
 
-**Note**: Classic Watershed is only one of the plugins included in the [MorphoLibJ](MorphoLibJ ) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
+**Note**: Classic Watershed is only one of the plugins included in the [MorphoLibJ](MorphoLibJ) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
 References
 ----------
@@ -109,8 +109,8 @@ References
 See also
 --------
 
--   [Marker-controlled Watershed](Marker-controlled_Watershed ), a plugin to perform watershed by flooding from specific seed points or markers.
--   [Morphological Segmentation](Morphological_Segmentation ), a plugin with a graphical user interface to segment images based on morphological operations and the watershed algorithm.
+-   [Marker-controlled Watershed](Marker-controlled_Watershed), a plugin to perform watershed by flooding from specific seed points or markers.
+-   [Morphological Segmentation](Morphological_Segmentation), a plugin with a graphical user interface to segment images based on morphological operations and the watershed algorithm.
 -   [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
 -   [G. Bertrand's Topological Watershed site](http://www.esiee.fr/~info/tw/index.html), with papers, lecture slides and source code.
 

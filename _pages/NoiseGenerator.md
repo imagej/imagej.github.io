@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Noise Generator](Noise_Generator )
+1.  REDIRECT [Noise Generator](Noise_Generator)

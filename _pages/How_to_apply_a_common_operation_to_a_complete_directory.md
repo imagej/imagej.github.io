@@ -10,7 +10,7 @@ description: test description
 How to apply a common operation to a complete directory
 -------------------------------------------------------
 
-Often you want to apply a common operation to all images in a given directory. This tutorial tries to help you doing this. In addition, the [Script Editor](Script_Editor ) provides a template via {% include bc content='Templates | IJ1 Macro | Process Folder'%} that helps getting started quickly.
+Often you want to apply a common operation to all images in a given directory. This tutorial tries to help you doing this. In addition, the [Script Editor](Script_Editor) provides a template via {% include bc content='Templates | IJ1 Macro | Process Folder'%} that helps getting started quickly.
 
 Step 1: record a macro
 ----------------------

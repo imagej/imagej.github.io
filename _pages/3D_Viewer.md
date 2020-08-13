@@ -7,7 +7,7 @@ categories: Plugins,Visualization,Citable
 description: test description
 ---
 
-{% include component-stats content='sc.fiji:3D\_Viewer' %}This plugin offers hardware-accelerated visualization possibilities for image stacks, using the [Java 3D](Java_3D ) library. Stacks can be displayed as texture-based volume renderings, surfaces or orthoslices.
+{% include component-stats content='sc.fiji:3D\_Viewer' %}This plugin offers hardware-accelerated visualization possibilities for image stacks, using the [Java 3D](Java_3D) library. Stacks can be displayed as texture-based volume renderings, surfaces or orthoslices.
 
 ![](/images/pages/3D Viewer overview.png "3D_Viewer_overview.png")
 
@@ -18,7 +18,7 @@ Here you are a demo screencast separated into two different videos (\~15 min in 
 
 {% include youtube url='https://www.youtube.com/embed/cD3Hc3NYkaU'%} {% include youtube url='https://www.youtube.com/embed/GqG\_RcK3kYg'%}
 
-Beyond this, a lot more screencasts can be found [here](3D_Viewer__Screencasts ), covering the following topics:
+Beyond this, a lot more screencasts can be found [here](3D_Viewer__Screencasts), covering the following topics:
 
 -   Display stacks
 -   Rendering modes and attributes
@@ -32,12 +32,12 @@ Beyond this, a lot more screencasts can be found [here](3D_Viewer__Screencasts )
 For users
 ---------
 
-Comprehensive usage guidelines in form of FAQs and tutorials can be found [here](3D_Viewer__User_FAQs ).
+Comprehensive usage guidelines in form of FAQs and tutorials can be found [here](3D_Viewer__User_FAQs).
 
 For developers
 --------------
 
-A lot of functions of the 3D Viewer are macro-recordable. However, if that is not enough (or if the function is not recorded properly), it is better to [write a plugin](Introduction_into_Developing_Plugins ). In the latter case no macros should be called from Java, as that would limit the code to work with the currently active 3D Viewer (even if the user clicked somewhere else).
+A lot of functions of the 3D Viewer are macro-recordable. However, if that is not enough (or if the function is not recorded properly), it is better to [write a plugin](Introduction_into_Developing_Plugins). In the latter case no macros should be called from Java, as that would limit the code to work with the currently active 3D Viewer (even if the user clicked somewhere else).
 
 This code snippet should get you started:
 
@@ -46,11 +46,11 @@ This code snippet should get you started:
     univ.addMesh(yourImagePlus, null, "somename", 50, new boolean[] {true, true, true}, 2);
     ...
 
-Full documentation for developers with tutorials and explained code snippets can be found [here](3D_Viewer__Developer_Documentation ).
+Full documentation for developers with tutorials and explained code snippets can be found [here](3D_Viewer__Developer_Documentation).
 
 ### Javadocs
 
-The Fiji Javadocs provide detailed information about the {% include javadoc package='ij3d ' class='package-summary ' label='3D Viewer API ' %}.
+The Fiji Javadocs provide detailed information about the {% include javadoc package='ij3d' class='package-summary' label='3D Viewer API' %}.
 
 FAQ
 ---
@@ -67,15 +67,15 @@ Unfortunately, there is not workaround/fix for this situation yet, except to use
 
 ### Problem with Intel graphics cards
 
-There is a known problem with older Windows drivers for some Intel graphics cards. Usually, this is fixed by installing new drivers. If you would like to help make ImageJ nicer by detecting faulty driver versions, please [contact us](Contact ).
+There is a known problem with older Windows drivers for some Intel graphics cards. Usually, this is fixed by installing new drivers. If you would like to help make ImageJ nicer by detecting faulty driver versions, please [contact us](Contact).
 
 ### The 3D Viewer simply crashes
 
-Unfortunately, there are quite a large number of possible reasons. Please help us by [debugging the issues](Debugging_intro#Debugging_Java3D_issues ) and [contacting us](Contact ) with the information. You can also [report a bug](Report_a_Bug ), which will provide a lot of additional, potentially useful information.
+Unfortunately, there are quite a large number of possible reasons. Please help us by [debugging the issues](Debugging_intro#Debugging_Java3D_issues) and [contacting us](Contact) with the information. You can also [report a bug](Report_a_Bug), which will provide a lot of additional, potentially useful information.
 
 ### Only a gray rectangle is shown by the 3D Viewer
 
-As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [debugging the issues](Debugging_intro#Debugging_Java3D_issues ) and [contacting us](Contact ) with the information. You can also [report a bug](Report_a_Bug ), which will provide a lot of addidtional, potentially useful information.
+As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [debugging the issues](Debugging_intro#Debugging_Java3D_issues) and [contacting us](Contact) with the information. You can also [report a bug](Report_a_Bug), which will provide a lot of addidtional, potentially useful information.
 
 Publication
 -----------

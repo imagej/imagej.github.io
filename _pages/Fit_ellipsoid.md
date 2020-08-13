@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BoneJ2\#Fit\_ellipsoid](BoneJ2#Fit_ellipsoid )
+1.  REDIRECT [BoneJ2\#Fit\_ellipsoid](BoneJ2#Fit_ellipsoid)

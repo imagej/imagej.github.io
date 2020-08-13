@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Nick Perry ' github='nickp ' %}== Contact ==
+{% include user-box name='Nick Perry' github='nickp' %}== Contact ==
 
 You can contact me by [courier pigeon](mailto:nicholas.m.perry_at_gmail.com).
 
@@ -16,4 +16,4 @@ Plugins
 
 Currently, I am responsible for a single plugin. Please let me know about any bugs you discover!
 
--   [TrackMate](TrackMate )
+-   [TrackMate](TrackMate)

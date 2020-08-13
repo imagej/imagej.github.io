@@ -17,9 +17,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='maarzt ' repo='imglib2-labkit ' %}
+{% include github org='maarzt' repo='imglib2-labkit' %}
 {% endcapture %}
-{% include info-box name='Labkit ' update-site='Labkit ' author=author maintainer=maintainer source=source %} <img src="/images/pages/Labkit Illustration.jpg" width="700"/>
+{% include info-box name='Labkit' update-site='Labkit' author=author maintainer=maintainer source=source %} <img src="/images/pages/Labkit Illustration.jpg" width="700"/>
 
 Labkit is a plugin for:
 
@@ -31,7 +31,7 @@ The automatic image segmentation functionality is comparable to Trainable Weka S
 Installation
 ------------
 
-Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Labkit/ (For details on how to install an update site click [here](Following_an_update_site ).)
+Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Labkit/ (For details on how to install an update site click [here](Following_an_update_site).)
 
 To start Labkit in ImageJ, first open the image you want to work with, and then select Plugins &gt; Segmentation &gt; Labkit from the main menu.
 
@@ -51,7 +51,7 @@ Follow these steps to segment an image:
 Basic Navigation
 ----------------
 
-Labkit is based on Big Data Viewer. Navigation the image works as in Big Data Viewer, and many short cuts work too. Click [here](BigDataViewer ) for a description of the short cuts.
+Labkit is based on Big Data Viewer. Navigation the image works as in Big Data Viewer, and many short cuts work too. Click [here](BigDataViewer) for a description of the short cuts.
 
 -   {% include key content='press\|Ctrl\|Shift\|mouse-wheel' %} to zoom in and out
 -   {% include key content='press\|right-click\|drag' %} to move the image

@@ -7,13 +7,13 @@ categories:
 description: test description
 ---
 
-(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation ) page)  
-(Return to the main [3D\_Viewer](3D_Viewer ) page)
+(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation) page)  
+(Return to the main [3D\_Viewer](3D_Viewer) page)
 
 How to apply a specific transformation to a Content
 ---------------------------------------------------
 
-You can download example source code for this HowTo [here](3D_Viewer__Example_code ).
+You can download example source code for this HowTo [here](3D_Viewer__Example_code).
 
 Each Content may be transformed separately. In the application, this is for example done by the user by selecting a content and dragging with the mouse.
 

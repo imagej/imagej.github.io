@@ -13,9 +13,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji ' repo='Fiji\_Plugins ' source='fiji/color/Convert\_Red\_To\_Magenta.java ' %}
+{% include github org='fiji' repo='Fiji\_Plugins' source='fiji/color/Convert\_Red\_To\_Magenta.java' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Replace Red with Magenta ' maintainer=maintainer author='Johannes Schindelin ' source=source released='27/06/2011 ' latest-version='27/06/2011 ' status=' ' category='[:Category:Plugins](Category_Plugins ) ' %}
+{% include info-box software='ImageJ' name='Replace Red with Magenta' maintainer=maintainer author='Johannes Schindelin' source=source released='27/06/2011' latest-version='27/06/2011' status='' category='[:Category:Plugins](Category_Plugins)' %}
 
 This plugin converts all occurrences of red in a red/green image with magenta, effectively replacing it with a magenta/green merge.
 
@@ -41,6 +41,6 @@ At least magenta/green images help this situation. However, [the only thing huma
 
 As a demonstration, call Fiji's {% include bc content='File | Open Samples | Spirals'%} and if you see a bright green and a bright yellow in the dominant spirals, you should look closer.
 
-However, in the 21st century, one should always use proper [Colocalization](Colocalization ) with scatter plots and statistics. It is [too easy not to](Coloc_2 ).
+However, in the 21st century, one should always use proper [Colocalization](Colocalization) with scatter plots and statistics. It is [too easy not to](Coloc_2).
 
  

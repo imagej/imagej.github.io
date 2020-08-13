@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SIOX: Simple Interactive Object Extraction](SIOX__Simple_Interactive_Object_Extraction )
+1.  REDIRECT [SIOX: Simple Interactive Object Extraction](SIOX__Simple_Interactive_Object_Extraction)

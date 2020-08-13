@@ -30,11 +30,11 @@ Conventions for algorithm development in ImgLib2
 <!-- -->
 
 -   Algorithms will be split into Maven subpackages where each subpackage can manage its own dependencies and licenses
-    -   [ Gauss](Gauss_ImgLib2 )
-    -   [ FFT](FFT_ImgLib2 )
-    -   [ FourierConvolution](FourierConvolution_ImgLib2 )
-    -   [ IntegralImg](IntegralImg_ImgLib2 )
-    -   [ ScaleSpace](ScaleSpace_ImgLib2 )
+    -   [ Gauss](Gauss_ImgLib2)
+    -   [ FFT](FFT_ImgLib2)
+    -   [ FourierConvolution](FourierConvolution_ImgLib2)
+    -   [ IntegralImg](IntegralImg_ImgLib2)
+    -   [ ScaleSpace](ScaleSpace_ImgLib2)
     -   ...
 
 <!-- -->

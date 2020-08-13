@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Antonio Carlos da Silva Senra Filho ' email='acsenrafilho@gmail.com ' affiliation='University of Sao Paulo, Brazil ' researchgate='Antonio\_Carlos\_Senra\_Filho ' scholar='8WPyRPQAAAAJ ' website='http://dcm.ffclrp.usp.br/csim ' %}I am a PhD student at the University of Sao Paulo, Brazil. My research knowledge area is on biomedical image processing and analysis, basically with different MRI techniques such as DTI, DWI, PWI and SWI.
+{% include user-box name='Antonio Carlos da Silva Senra Filho' email='acsenrafilho@gmail.com' affiliation='University of Sao Paulo, Brazil' researchgate='Antonio\_Carlos\_Senra\_Filho' scholar='8WPyRPQAAAAJ' website='http://dcm.ffclrp.usp.br/csim' %}I am a PhD student at the University of Sao Paulo, Brazil. My research knowledge area is on biomedical image processing and analysis, basically with different MRI techniques such as DTI, DWI, PWI and SWI.
 
 Please, visit our research group [website](http://dcm.ffclrp.usp.br/csim) to find out some of my publications and personal information.
 

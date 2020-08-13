@@ -7,11 +7,11 @@ categories:
 description: test description
 ---
 
-[ImageJ 1.x](ImageJ1 ) was never meant as anything else than a desktop application with one user in front of one screen attached to one computer.
+[ImageJ 1.x](ImageJ1) was never meant as anything else than a desktop application with one user in front of one screen attached to one computer.
 
-However, it acquired [macro](Macro ) capabilities, a [batch mode](Batch_mode ) for such macros, and even [scripting](Scripting ) support.
+However, it acquired [macro](Macro) capabilities, a [batch mode](Batch_mode) for such macros, and even [scripting](Scripting) support.
 
-Naturally, users want to execute such [macros](Macros ) or [scripts](Scripts ) in environments such as clusters where there is no graphical user interface available.
+Naturally, users want to execute such [macros](Macros) or [scripts](Scripts) in environments such as clusters where there is no graphical user interface available.
 
 The problem
 ===========
@@ -32,17 +32,17 @@ The `--headless` mode
 
 
 {% capture text%}
-Headless support was originally a branch in [ImageJA](ImageJA ); it worked by putting rewritten versions of three core ImageJ classes into a file called ""headless.jar"", which was put into the class path ""before"" `ij.jar` so they would override ImageJ"s versions.
+Headless support was originally a branch in [ImageJA](ImageJA); it worked by putting rewritten versions of three core ImageJ classes into a file called ""headless.jar"", which was put into the class path ""before"" `ij.jar` so they would override ImageJ"s versions.
 
-Nowadays, we use [Javassist](Javassist ) for run-time patching, through the {% include github org='imagej ' repo='ij1-patcher ' label='ImageJ 1.x patcher ' %} project. <span style="color: red">You do not need to do anything special to take advantage of this feature, except pass the `--headless` flag when launching ImageJ from the command line.</span>
+Nowadays, we use [Javassist](Javassist) for run-time patching, through the {% include github org='imagej' repo='ij1-patcher' label='ImageJ 1.x patcher' %} project. <span style="color: red">You do not need to do anything special to take advantage of this feature, except pass the `--headless` flag when launching ImageJ from the command line.</span>
 {% endcapture %}
-{% include box title='Historical note ' float='right ' text=text %} [ImageJ2](ImageJ2 ) provides the capability to execute ImageJ plugins, macros and scripts in headless mode. This feature uses bytecode manipulation to patch ImageJ 1.x's behavior at runtime, making it possible to start ImageJ in batch mode without instantiating GUI components.
+{% include box title='Historical note' float='right' text=text %} [ImageJ2](ImageJ2) provides the capability to execute ImageJ plugins, macros and scripts in headless mode. This feature uses bytecode manipulation to patch ImageJ 1.x's behavior at runtime, making it possible to start ImageJ in batch mode without instantiating GUI components.
 
 **Shortcoming:** There are plugins which are even more bound to a GUI than ImageJ 1.x is. Naturally, these plugins will still try to instantiate GUI elements when being called in headless mode, failing.
 
 ### Running scripts in headless mode
 
-Please see the [headless scripting guide](Scripting_Headless ).
+Please see the [headless scripting guide](Scripting_Headless).
 
 ### Running macros in headless mode
 
@@ -67,7 +67,7 @@ In that case, the RunBatch.ijm file should be something like:
 
 the `getArgument()` is used to grab the parameter string itself, and it is then passed to an IJ command.
 
-{% include warning-box content='Please note that you will not be able to use [script parameters](Script_parameters ) with `-macro`. Follow instructions in [Scripting Headless](Scripting_Headless ) instead.' %}
+{% include warning-box content='Please note that you will not be able to use [script parameters](Script_parameters) with `-macro`. Follow instructions in [Scripting Headless](Scripting_Headless) instead.' %}
 
 Xvfb
 ----
@@ -90,7 +90,7 @@ Passing direct arguments:
     $ xvfb-run -a $IMAGEJ_DIR/ImageJ-linux64 hello.js Emerson
     hello Emerson
 
-With [SciJava script parameters](Script_Parameters ):
+With [SciJava script parameters](Script_Parameters):
 
     $ cat hello-with-params.js
     // @String name

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Pariksheet Nanda ' github='omsai ' %}
+{% include user-box name='Pariksheet Nanda' github='omsai' %}

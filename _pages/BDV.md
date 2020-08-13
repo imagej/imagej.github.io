@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BigDataViewer](BigDataViewer )
+1.  REDIRECT [BigDataViewer](BigDataViewer)

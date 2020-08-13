@@ -17,17 +17,17 @@ description: test description
 {% endcapture %}
 
 {% capture filename%}
-{% include maven g='sc.fiji ' a='register\_virtual\_stack\_slices ' %}
+{% include maven g='sc.fiji' a='register\_virtual\_stack\_slices' %}
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji ' repo='register\_virtual\_stack\_slices ' %}
+{% include github org='fiji' repo='register\_virtual\_stack\_slices' %}
 {% endcapture %}
-{% include info-box name='Transform Virtual Stack Slices ' software='Fiji ' author=author maintainer=maintainer filename=filename source=source released='September 24<sup>th</sup>, 2009 ' latest-version='3.0.0, February 17<sup>th</sup>, 2016 ' status='stable, active ' category='[Registration](Category_Registration ), [Transform](Category_Transform ) ' %}{\| \|style="vertical-align:top" \| <img src="/images/pages/Transform_Virtual_Stack_scheme.png" title="fig:Transform Virtual Stack scheme - All images are transformed based on the XML files" width="381" alt="Transform Virtual Stack scheme - All images are transformed based on the XML files" /> \|}
+{% include info-box name='Transform Virtual Stack Slices' software='Fiji' author=author maintainer=maintainer filename=filename source=source released='September 24<sup>th</sup>, 2009' latest-version='3.0.0, February 17<sup>th</sup>, 2016' status='stable, active' category='[Registration](Category_Registration), [Transform](Category_Transform)' %}{\| \|style="vertical-align:top" \| <img src="/images/pages/Transform_Virtual_Stack_scheme.png" title="fig:Transform Virtual Stack scheme - All images are transformed based on the XML files" width="381" alt="Transform Virtual Stack scheme - All images are transformed based on the XML files" /> \|}
 
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of transformed image slices (with enlarged canvas) applying a list of transforms stored as **.XML** files in another folder.
 
-This is a **complementary plugin** of [Register Virtual Stack Slices](Register_Virtual_Stack_Slices ). It allows reproducing the results of [Register Virtual Stack Slices](Register_Virtual_Stack_Slices ) by loading the corresponding transform files (saved by checking the option [ "Save transforms"](Register_Virtual_Stack_Slices#Save_Transforms ) in the main dialog).
+This is a **complementary plugin** of [Register Virtual Stack Slices](Register_Virtual_Stack_Slices). It allows reproducing the results of [Register Virtual Stack Slices](Register_Virtual_Stack_Slices) by loading the corresponding transform files (saved by checking the option [ "Save transforms"](Register_Virtual_Stack_Slices#Save_Transforms) in the main dialog).
 
 User Manual
 -----------
@@ -37,14 +37,14 @@ User Manual
 -   **Source folder**: You have a folder with an ordered list of image files in it that Fiji can open.
 -   Each image represents a slice in a sequence.
 -   **Output folder**: You have or create a folder to store the resulting virtual stack with the transformed images.
--   **Transform folder**: You have a folder with the transform files (from a [Register Virtual Stack Slices](Register_Virtual_Stack_Slices ) execution).
+-   **Transform folder**: You have a folder with the transform files (from a [Register Virtual Stack Slices](Register_Virtual_Stack_Slices) execution).
 -   **Interpolate**: Toggle the interpolation for the result images.
 
 **Step 1**: launch the "Plugins - Transform - Transform Virtual Stack Slices" plugin. {% include thumbnail src='/images/pages/Main-Dialog-Transform Virtual Stack.png' title='Transform Virtual Stack main dialog'%} **Step 2**: choose the source, output and transform folders:
 
 -   Select a source folder containing the slices, at one slice per image file.
 -   Select the target folder where resulting transformed slices will be automatically stored as TIFF files.
--   Select the transform folder, where the .XML files from a [Register Virtual Stack Slices](Register_Virtual_Stack_Slices ) are stored.
+-   Select the transform folder, where the .XML files from a [Register Virtual Stack Slices](Register_Virtual_Stack_Slices) are stored.
 
 **Results**: on success, a virtual stack will open showing all the transformed images contained in the output folder. The virtual stack can be closed with no ill effect: images are saved in the output folder.
 

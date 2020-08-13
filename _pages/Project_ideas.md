@@ -15,9 +15,9 @@ Visualization
 3-way viewer for Block-Face EM image volumes based in ImgLib cells
 ------------------------------------------------------------------
 
-The [Imglib](Imglib ) provides a cell container, where each cell is an arbitrary n-dimensional image block potentially paged out to a file. Consider the specific case of isotropic 3d-cells stored with lossless compression. This setup would enable efficient browsing and analysis of image volumes larger than available RAM, while observing a specific 3d ROI from XY, YZ and XZ planes. These image volumes are common in [Block-Face Serial Scanning Electron Microscopy](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329), a technique now commercialized as "Gatan 3-way view EM." See this page for [theory](http://www.gatan.com/knowhow/knowhow_15/3view.htm) and for [pictures and examples](http://www.gatan.com/resources/knowhow/kh18-3view.php).
+The [Imglib](Imglib) provides a cell container, where each cell is an arbitrary n-dimensional image block potentially paged out to a file. Consider the specific case of isotropic 3d-cells stored with lossless compression. This setup would enable efficient browsing and analysis of image volumes larger than available RAM, while observing a specific 3d ROI from XY, YZ and XZ planes. These image volumes are common in [Block-Face Serial Scanning Electron Microscopy](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329), a technique now commercialized as "Gatan 3-way view EM." See this page for [theory](http://www.gatan.com/knowhow/knowhow_15/3view.htm) and for [pictures and examples](http://www.gatan.com/resources/knowhow/kh18-3view.php).
 
-**Goal:** create a 3-way viewer for a 3d instance of an [Imglib](Imglib )'s cell container.  
+**Goal:** create a 3-way viewer for a 3d instance of an [Imglib](Imglib)'s cell container.  
 **Language:** any supported by Fiji, preferably java.  
 **Contact:** {% include person content='Albertcardona' %}
 
@@ -43,7 +43,7 @@ The project would consist of
 **Goal:** Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window.  
 **Language:** Java.  
 **Contact:** Bill Mohler (wmohler@neuron.uchc.edu)  
-**Plugin:** [ python script for multi-stack composite image](Jython_Scripting#Visualize_any_number_of_TIFF_stacks_in_a_single_composite_multi-color_image_stack )
+**Plugin:** [ python script for multi-stack composite image](Jython_Scripting#Visualize_any_number_of_TIFF_stacks_in_a_single_composite_multi-color_image_stack)
 
 Interactively adjustable intensity/LUT curves
 ---------------------------------------------
@@ -60,7 +60,7 @@ The term *image segmentation* describes the task where objects in an image are t
 
 Segmentation is traditionally a very difficult problem, especially in the presence of variable lighting, noise, or low contrast.
 
-Many segmentation algorithms have been implemented in Fiji to perform image segmentation, such as [Auto Threshold](Auto_Threshold ) and [Auto Local Threshold](Auto_Local_Threshold ), but in practice, none of them might work, as they were designed with specific images in mind, and these expectations might not be met by your images.
+Many segmentation algorithms have been implemented in Fiji to perform image segmentation, such as [Auto Threshold](Auto_Threshold) and [Auto Local Threshold](Auto_Local_Threshold), but in practice, none of them might work, as they were designed with specific images in mind, and these expectations might not be met by your images.
 
 Recently, a new class of segmentation algorithms has been emerging: segmentation by example. These algorithms require a set of examples from which a model is calculated which can be applied to other -- similar-looking -- images.
 
@@ -134,15 +134,15 @@ Scripting
 Add JMathLib (MATLAB clone) support
 -----------------------------------
 
-Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB ) scripts. While it is [wrong to think of pixels as little squares](Ftp_//ftp.alvyray.com/Acrobat/6_Pixel.pdf), and literally all [MATLAB](MATLAB ) scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB ) licenses just for that purpose.
+Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB) scripts. While it is [wrong to think of pixels as little squares](Ftp_//ftp.alvyray.com/Acrobat/6_Pixel.pdf), and literally all [MATLAB](MATLAB) scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB) licenses just for that purpose.
 
-MATLAB bundles a Java runtime (and in fact, all of [MATLAB](MATLAB )'s GUI is implemented in Java!) and allows the user to instantiate Java classes and call methods on them:
+MATLAB bundles a Java runtime (and in fact, all of [MATLAB](MATLAB)'s GUI is implemented in Java!) and allows the user to instantiate Java classes and call methods on them:
 
     import java.io.File;
     f = File('/usr/local/Fiji.app/');
     f.exists()
 
-Happily, there is a [MATLAB](MATLAB ) clone written in Java: [JMathLib](http://www.jmathlib.de/). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](MATLAB ) scripts can be executed just like all other ImageJ scripts, too.
+Happily, there is a [MATLAB](MATLAB) clone written in Java: [JMathLib](http://www.jmathlib.de/). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](MATLAB) scripts can be executed just like all other ImageJ scripts, too.
 
 So far, we have [a branch which adds rudimentary JMathLib bindings to Fiji's scripting interface](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=shortlog;h=refs/heads/jmathlib) and [a Git-SVN mirror of the JMathLib source code repository](https://fiji.sc/JMathLib/.git) with a special *fiji* branch. The idea is to work on this branch to adjust JMathLib in certain ways to support this project, and once that is done, contribute the changes back to the JMathLib project.
 
@@ -162,11 +162,11 @@ The following issues need to be tackled in the JMathLib source code:
 
 <!-- -->
 
--   JMathLib supports Java via a [non-standard mechanism](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/plugins/dynjava/JavaPlugin.java;hb=refs/heads/fiji) based on [DynamicJava](http://old.koalateam.com/djava/). This is incompatible with [MATLAB](MATLAB ), so there needs to be native support using [reflection](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/package-summary.html) to support the method to instantiate Java objects mentioned above.
+-   JMathLib supports Java via a [non-standard mechanism](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/plugins/dynjava/JavaPlugin.java;hb=refs/heads/fiji) based on [DynamicJava](http://old.koalateam.com/djava/). This is incompatible with [MATLAB](MATLAB), so there needs to be native support using [reflection](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/package-summary.html) to support the method to instantiate Java objects mentioned above.
 
 This issue needs to be tackled in Fiji's source code:
 
--   JMathLib's image toolbox does not contain much. Even the most basic functions are missing. And even if there were functions, we would have to override them, because the functions need to be done in a way so that they can use and interact with ImageJ. The best approach may be to start by implementing the functions mentioned in [[MATLAB](MATLAB )'s image processing toolbox'](http://www.mathworks.com/help/toolbox/images/index.html) *Getting Started* section, by implementing *.m* files that call directly into ImagePlus (using the above-mentioned technique).
+-   JMathLib's image toolbox does not contain much. Even the most basic functions are missing. And even if there were functions, we would have to override them, because the functions need to be done in a way so that they can use and interact with ImageJ. The best approach may be to start by implementing the functions mentioned in [[MATLAB](MATLAB)'s image processing toolbox'](http://www.mathworks.com/help/toolbox/images/index.html) *Getting Started* section, by implementing *.m* files that call directly into ImagePlus (using the above-mentioned technique).
 
 **Goal:** Integrate JMathLib as a new scripting language.  
 **Language:** Java.  
@@ -202,12 +202,12 @@ We already have Jacl in Fiji, as it is a dependency of Batik. There is also a pu
 For Tcl, the Script Editor would need minimal adjustments, as RSyntaxTextArea already has support for Tcl, but for Haskell, a new TokenMaker would have to be implemented.
 
 Add {% include bc content='Edit | Find in files...'%}
-------------------------------------------------------
+-------------------------------------------------------
 
 We already have a mechanism to jump between compile errors and locations of a stack trace. The same mechanism could be used to present results from a search through multiple files.
 
-Add a {% include wikipedia title='Read-eval-print loop' text='"REPL" (Read-Eval-Print-Loop)'%} to the [Script Editor](Script_Editor )
-----------------------------------------------------------------------------------------------------------------------------------------------------
+Add a {% include wikipedia title='Read-eval-print loop' text='"REPL" (Read-Eval-Print-Loop)'%} to the [Script Editor](Script_Editor)
+------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Detect loops after macro recording
 ----------------------------------
@@ -248,7 +248,7 @@ To overcome the typical problem of loading native libraries via System.loadLibra
     }
     Rengine re = new Rengine();
 
-Teach the Fiji Updater to accept other sites in addition to [fiji.sc](Fiji.sc )
+Teach the Fiji Updater to accept other sites in addition to [fiji.sc](Fiji.sc)
 -----------------------------------------------------------------------------------------
 
 The Fiji Updater always looks for a static file containing an XML database of Fiji plugins (both current and past versions) on our website. To put new versions or new plugins there (to *upload into the updater*), you have to be a Fiji developer with write permission for that particular directory on our server.
@@ -265,7 +265,7 @@ The project is not without complications, though:
 
 <!-- -->
 
--   With a new site, you need to be able to [upload plugins](Uploading_plugins ) to that site, too. There needs to be a very good way to prevent confusion, lest the plugin is uploaded to the <u>wrong</u> site.
+-   With a new site, you need to be able to [upload plugins](Uploading_plugins) to that site, too. There needs to be a very good way to prevent confusion, lest the plugin is uploaded to the <u>wrong</u> site.
 
 <!-- -->
 
@@ -282,7 +282,7 @@ The project is not without complications, though:
 Integrate [JGit](http://www.jgit.org) into Fiji
 -----------------------------------------------
 
-An important part of Fiji's success is the ease with which developers can collaborate through the use of [Git](Git ).
+An important part of Fiji's success is the ease with which developers can collaborate through the use of [Git](Git).
 
 There exists a pure Java implementation of Git called [JGit](http://www.jgit.org), which already provides a large part of Git's functionality.
 
@@ -329,7 +329,7 @@ Integrate ImageFlow into Fiji
 
 ImageFlow provides a graphical way to construct macros. Every action is represented by a node which the user can connect with lines to define a workflow.
 
-ImageFlow has its own {% include github org='Dahie ' repo='imageflow ' label='Git repository ' %} ([our mirror](https://fiji.sc/cgi-bin/gitweb.cgi?p=imageflow.git;a=summary)).
+ImageFlow has its own {% include github org='Dahie' repo='imageflow' label='Git repository' %} ([our mirror](https://fiji.sc/cgi-bin/gitweb.cgi?p=imageflow.git;a=summary)).
 
 The following issues need to be resolved:
 
@@ -371,7 +371,7 @@ Miscellaneous
 Alpha shapes / concave hull / other Graph Theory algorithms
 -----------------------------------------------------------
 
-Fiji already contains a [Delaunay\_Voronoi](Delaunay_Voronoi ) plugin. The purpose of this project is to implement more graph algorithms. Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
+Fiji already contains a [Delaunay\_Voronoi](Delaunay_Voronoi) plugin. The purpose of this project is to implement more graph algorithms. Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
 
 Support for storing ROIs in TIFF tag fields
 -------------------------------------------
@@ -381,7 +381,7 @@ Fiji can save images as TIFF files and ROIs into custom .roi files. Provide a wa
 Cross platform webcam support
 -----------------------------
 
-Supporting image recording from webcams might provide a cheap way to make videomicroscope/telescope units (possibly using the [Distortion Correction](Distortion_Correction ) plugin to overcome low-quality CCD chips and lenses).
+Supporting image recording from webcams might provide a cheap way to make videomicroscope/telescope units (possibly using the [Distortion Correction](Distortion_Correction) plugin to overcome low-quality CCD chips and lenses).
 
 One way to achieve that would be by using the [Free Java Media Framework](http://fmj-sf.net/).
 

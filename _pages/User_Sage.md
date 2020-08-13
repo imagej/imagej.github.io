@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Daniel Sage ' affiliation=' [BIG](http://bigwww.epfl.ch/) at [EPFL](http://epfl.ch/) ' github='dasv74 ' website='http://bigwww.epfl.ch/sage/ ' %}Daniel Sage has written many ImageJ plugins—e.g., [MIJ](MIJ ).
+{% include user-box name='Daniel Sage' affiliation=' [BIG](http://bigwww.epfl.ch/) at [EPFL](http://epfl.ch/)' github='dasv74' website='http://bigwww.epfl.ch/sage/' %}Daniel Sage has written many ImageJ plugins—e.g., [MIJ](MIJ).

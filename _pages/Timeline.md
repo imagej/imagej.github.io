@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [History](History )
+1.  REDIRECT [History](History)

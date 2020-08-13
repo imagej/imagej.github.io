@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Robert Bryson-Richardson ' github='robertb-r ' %}
+{% include user-box name='Robert Bryson-Richardson' github='robertb-r' %}

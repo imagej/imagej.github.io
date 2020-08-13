@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Jan Schier ' affiliation=' [Institute of Information Theory and Automation](http://www.utia.cas.cz/) ' researchgate='Jan\_Schier ' linkedin='in/jan-schier-ab315730 ' %}
+{% include user-box name='Jan Schier' affiliation=' [Institute of Information Theory and Automation](http://www.utia.cas.cz/)' researchgate='Jan\_Schier' linkedin='in/jan-schier-ab315730' %}

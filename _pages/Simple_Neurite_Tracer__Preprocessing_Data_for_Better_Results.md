@@ -30,7 +30,7 @@ An Example Using Frangi et al.'s method
 
 ### A single image
 
-To process a single image, load your image ("test.lsm", say) into Fiji and select {% include bc content='Plugins | Process | Frangi Vesselness'%}. (There is more information about this plugin [on its page](Frangi ).) By way of example, let's say that you select 4 scales from half the x voxel separation to twice that value.
+To process a single image, load your image ("test.lsm", say) into Fiji and select {% include bc content='Plugins | Process | Frangi Vesselness'%}. (There is more information about this plugin [on its page](Frangi).) By way of example, let's say that you select 4 scales from half the x voxel separation to twice that value.
 
 Then save that file in the same directory as "test.tubes.tif".
 

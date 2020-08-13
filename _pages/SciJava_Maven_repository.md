@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Project management\#Maven](Project_management#Maven )
+1.  REDIRECT [Project management\#Maven](Project_management#Maven)

@@ -9,9 +9,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='icbm-iupui ' repo='volumetric-tissue-exploration-analysis ' %}
+{% include github org='icbm-iupui' repo='volumetric-tissue-exploration-analysis' %}
 {% endcapture %}
-{% include info-box name='VTEA ' software='Fiji ' author='Seth Winfree ([1](mailto:winfrees@iu.edu)) ' maintainer='Seth Winfree ([2](mailto:winfrees@iu.edu)) ' source=source status='v0.7, alpha, 1.0.a on deck. ' category='[Segmentation](Category_Segmentation ),[Visualization](Category_Visualization ),[Plugins](Category_Plugins ) ' %}
+{% include info-box name='VTEA' software='Fiji' author='Seth Winfree ([1](mailto:winfrees@iu.edu))' maintainer='Seth Winfree ([2](mailto:winfrees@iu.edu))' source=source status='v0.7, alpha, 1.0.a on deck.' category='[Segmentation](Category_Segmentation),[Visualization](Category_Visualization),[Plugins](Category_Plugins)' %}
 
 Volumetric Tissue Exploration and Analysis
 ==========================================
@@ -26,11 +26,11 @@ Volumetric Tissue Exploration and Analysis
 
 **Mesoscale 3D analysis.** We built segmentation to handle massive datasets and to operate seamlessly on an embedded database to enable analysis of 100’s of thousands of cells and will incorporate tools for clustering and dimensionality reduction.
 
-**Original image referencing.** The power of 3DTC in VTEA enables the localization of identified cells in the analysis space in the original image, *in situ*, and in 3D with [ClearVolume](ClearVolume ).
+**Original image referencing.** The power of 3DTC in VTEA enables the localization of identified cells in the analysis space in the original image, *in situ*, and in 3D with [ClearVolume](ClearVolume).
 
 {% include info-box content='VTEA is still under active development. Version 1.0 is tentatively planned for an October release..' %}
 
-This brief [video](Media_Demostration.mov ) describes VTEA's core behaviors. VTEA's utility has been demonstrated in this [paper](http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full).
+This brief [video](Media_Demostration.mov) describes VTEA's core behaviors. VTEA's utility has been demonstrated in this [paper](http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full).
 
 We developed VTEA out of a need to unify the various tasks involved in image processing, segmenting, exploring and analyzing large 3D fluorescence light microscopy image volumes ranging from 50-100s of microns thick. Our solution is predicated upon the idea that *image processing, segmentation and analysis of 3D image volumes is best implemented with a bidirectional interactive user interface from image processing to analysis*.
 
@@ -39,7 +39,7 @@ Importantly, our solution is in its infancy. In fact, the tools are relatively s
 Installing
 ----------
 
-`   To install the VTEA plugin use, `[`How`` ``to`` ``follow`` ``a`` ``3rd`` ``party`` ``update`` ``site`](How_to_follow_a_3rd_party_update_site )` and check the update site:`  
+`   To install the VTEA plugin use, `[`How`` ``to`` ``follow`` ``a`` ``3rd`` ``party`` ``update`` ``site`](How_to_follow_a_3rd_party_update_site)` and check the update site:`  
 `   "Volumetric Tissue Exploration and Analysis" `**`OR`**` follow the following four steps:`
 
 ### 1. Start updater

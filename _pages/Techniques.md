@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [:Category:Techniques](Category_Techniques )
+1.  REDIRECT [:Category:Techniques](Category_Techniques)

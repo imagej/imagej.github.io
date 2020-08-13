@@ -15,7 +15,7 @@ Searching ImageJ resources
 
 There is a convenient online search interface:
 
-{% include big-link url='https://search.imagej.net/ ' %}
+{% include big-link url='https://search.imagej.net/' %}
 
 Getting help with ImageJ
 ========================
@@ -32,11 +32,11 @@ There are several popular communication channels: {% include communication%}
 Troubleshooting
 ===============
 
-If you encounter problems, check the [Troubleshooting](Troubleshooting ) page.
+If you encounter problems, check the [Troubleshooting](Troubleshooting) page.
 
 Reporting bugs
 ==============
 
-If you have found a bug, you can help the project by [reporting it](Report_a_Bug ).
+If you have found a bug, you can help the project by [reporting it](Report_a_Bug).
 
 

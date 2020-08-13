@@ -99,7 +99,7 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 
 ### Git
 
--   See the [Git](Git ) page!
+-   See the [Git](Git) page!
 
 Wednesday
 ---------
@@ -118,7 +118,7 @@ Wednesday
 
 -   Clone https://github.com/imagej/tutorials (but you already have it, right?)
 -   Import `maven-projects/create-a-new-op` in Eclipse.
--   See also the [Adding new ops](Adding_new_ops ) guide
+-   See also the [Adding new ops](Adding_new_ops) guide
 -   See also the "Extending ImageJ: Ops" notebook linked from [here](http://imagej.github.io/tutorials)
 
 ### ImageJ Server

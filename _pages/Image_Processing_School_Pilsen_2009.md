@@ -24,25 +24,25 @@ Wednesday
 
 ### Welcome and Introduction
 
-[Albert Cardona](Albert_Cardona )
+[Albert Cardona](Albert_Cardona)
 
 ### Overview of installing and using Fiji
 
 Setup: installing Fiji and getting familiar with it; overview of major features.
 
-Lead instructor: [Johannes Schindelin](Johannes_Schindelin )
+Lead instructor: [Johannes Schindelin](Johannes_Schindelin)
 
 ### Image Processing fundamentals
 
 Fundamentals of image processing: anatomy of a digital image, image formats. Includes notes on image acquisition (effects of dynamic range and exposure times)
 
-Lead instructor: [Albert Cardona](Albert_Cardona )
+Lead instructor: [Albert Cardona](Albert_Cardona)
 
 ### Fiji scripting: Python
 
 Introduction to Fiji scripting in Python
 
-Lead instructor: [Johannes Schindelin](Johannes_Schindelin )
+Lead instructor: [Johannes Schindelin](Johannes_Schindelin)
 
 Thursday
 --------
@@ -53,7 +53,7 @@ Quantitative image acquisition and analysis: Spectroscopy not photography, simpl
 
 The presentation is available online (PDF) [here!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
 
-Lead instructor: [Dan White](Dan_White )
+Lead instructor: [Dan White](Dan_White)
 
 ### Colocalization
 
@@ -61,13 +61,13 @@ Quantitative Image analysis: What you need to know about Colocalization Analysis
 
 The presentation is available online (PDF) [here!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
 
-Lead instructor: [Dan White](Dan_White )
+Lead instructor: [Dan White](Dan_White)
 
 ### TrakEM2
 
-[TrakEM2](TrakEM2 ): image registration and manual segmentation.
+[TrakEM2](TrakEM2): image registration and manual segmentation.
 
-Lead instructor: [Albert Cardona](Albert_Cardona )
+Lead instructor: [Albert Cardona](Albert_Cardona)
 
 Friday
 ------
@@ -81,7 +81,7 @@ Introduction to image segmentation.
 
 Plugins: Simple Neurite Tracer, Segmentation Editor, VIB protocol, TrakEM2, Level Sets.
 
-Lead instructor: [Verena Kaynig](Verena_Kaynig )
+Lead instructor: [Verena Kaynig](Verena_Kaynig)
 
 ### Beyond 3D
 
@@ -99,14 +99,14 @@ Lead instructors: {% include person content='JeanYvesTinevez' %}
 
 Introduction to Fiji programming in Java (this will be an add-on to the [advanced scripting](#Fiji_scripting:_advanced_Python "wikilink")).
 
-Lead instructor: [Johannes Schindelin](Johannes_Schindelin )
+Lead instructor: [Johannes Schindelin](Johannes_Schindelin)
 
 Saturday
 --------
 
 ### Registration
 
-Image registration: rigid, affine, elastic, maximal warping... ([Register Virtual Stack Slices](Register_Virtual_Stack_Slices ), [TrakEM2](TrakEM2 ), [BUnwarpJ](BUnwarpJ ))
+Image registration: rigid, affine, elastic, maximal warping... ([Register Virtual Stack Slices](Register_Virtual_Stack_Slices), [TrakEM2](TrakEM2), [BUnwarpJ](BUnwarpJ))
 
 Lead instructor: {% include person content='Iarganda' %}
 

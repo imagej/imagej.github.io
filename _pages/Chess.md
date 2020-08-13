@@ -9,7 +9,7 @@ description: test description
 
 {% include learn content='scripting' %}== Purpose ==
 
-This [Jython](Jython_Scripting ) script illustrates how to make an image interactive.
+This [Jython](Jython_Scripting) script illustrates how to make an image interactive.
 
 Play chess within Fiji! Click on a starting square, then on another one to move a piece.
 
@@ -180,6 +180,6 @@ Small compared to what it does:
 See also
 --------
 
--   [Jython Scripting](Jython_Scripting )
+-   [Jython Scripting](Jython_Scripting)
 
  

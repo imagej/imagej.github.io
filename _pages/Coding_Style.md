@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Coding\_style](Coding_style )
+1.  REDIRECT [Coding\_style](Coding_style)

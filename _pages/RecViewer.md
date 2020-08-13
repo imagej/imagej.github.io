@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SNT: Reconstruction Viewer](SNT__Reconstruction_Viewer )
+1.  REDIRECT [SNT: Reconstruction Viewer](SNT__Reconstruction_Viewer)

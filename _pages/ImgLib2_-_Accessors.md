@@ -69,7 +69,7 @@ RandomAccess
         }
     }
 
-In lines *013-015* we create a 8-bit gray-level image, in line *029* we show the result (like in the [ previous example](ImgLib2_-_Getting_Started#Opening_And_Displaying_Image_Files )).
+In lines *013-015* we create a 8-bit gray-level image, in line *029* we show the result (like in the [ previous example](ImgLib2_-_Getting_Started#Opening_And_Displaying_Image_Files)).
 
 In line *017* we create a **RandomAccess** to the image. **Img** implements the [RandomAccessible](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html) interface, thus we can use **randomAccess()** to obtain one. The **RandomAccess** has the same generic type, **UnsignedByteType**, as the image.
 
@@ -424,7 +424,7 @@ Lines *028-031* show how to use **findmax** and get the maximum value and coordi
 
 ### Notes
 
--   The iteration order is subject to implementation, specialized for each memory layout to minimize access time. For example, an [ArrayImg](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/array/ArrayImg.html) has a different iteration order from a [CellImg](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/cell/CellImg.html). This is nicely illustrated in [ ImgLib2 Example 2b - Duplicating an Img using a different ImgFactory ](ImgLib2_Examples#Example_2b_-_Duplicating_an_Img_using_a_different_ImgFactory ).
+-   The iteration order is subject to implementation, specialized for each memory layout to minimize access time. For example, an [ArrayImg](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/array/ArrayImg.html) has a different iteration order from a [CellImg](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/cell/CellImg.html). This is nicely illustrated in [ ImgLib2 Example 2b - Duplicating an Img using a different ImgFactory ](ImgLib2_Examples#Example_2b_-_Duplicating_an_Img_using_a_different_ImgFactory).
 -   Typically, there are two variants of Cursors available. One that calculates its location per each iteration and one that calculates it only per localization request. The former is more efficient when localization occurs frequently, the latter otherwise. In the *maximum-finding* example, we use the latter because localization is only required once after the maximum has been found. The former one could be obtained using **localizingCursor()** instead of **cursor()** (see [IterableInterval](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/IterableInterval.html) API doc.)
 -   **copyCursor()** is a work-around to circumvent a *javac* bug with covariant return type overriding (see [bug report](http://bugs.sun.com/view_bug.do?bug_id=6656332)). In the future (with JDK7) every **Sampler** can be copied using **copy()** instead of having specialised **copyCursor()**, **copyRandomAccess()**, … methods.
 
@@ -437,13 +437,13 @@ ImgLib2 is not restricted to rasterized images and integer coordinates It also s
 -   a procedurally generated image, where a value can be computed at any real coordinate (continuous, unbounded, non-iterable).
 -   collections of samples taken at arbitrary real coordinates (discrete, bounded, iterable).
 
-The following image shows the UML diagram for the ImgLib2 accessor interface hierarchy. The real-coordinate counterparts that were missing in the simplified version [ above](ImgLib2_-_Accessors#Introduction ) are highlighted.
+The following image shows the UML diagram for the ImgLib2 accessor interface hierarchy. The real-coordinate counterparts that were missing in the simplified version [ above](ImgLib2_-_Accessors#Introduction) are highlighted.
 
 ![UML for ImgLib2 accessor interfaces](/images/pages/Imglib2-accessors-real.png "UML for ImgLib2 accessor interfaces")
 
 Real equivalents of the **Positionable** and **Localizable** interfaces have been added by which real-valued coordinates can be accessed.
 
-Something that is {% include javadoc project='ImgLib2 ' package='net/imglib2 ' class='RealPositionable ' %}, can be positioned at real coordinates. There are methods to set absolute or relative position, for a single or all dimensions, in analogy to the integer **Positionable**. You can also set a **RealPositionable** to the location of a **RealLocalizable**. Note that {% include javadoc project='ImgLib2 ' package='net/imglib2 ' class='RealPositionable ' %} extends **Positionable**, which is quite natural: Whenever something can be positioned at arbitrary real coordinates, of course it can be positioned to integer coordinates as well.
+Something that is {% include javadoc project='ImgLib2' package='net/imglib2' class='RealPositionable' %}, can be positioned at real coordinates. There are methods to set absolute or relative position, for a single or all dimensions, in analogy to the integer **Positionable**. You can also set a **RealPositionable** to the location of a **RealLocalizable**. Note that {% include javadoc project='ImgLib2' package='net/imglib2' class='RealPositionable' %} extends **Positionable**, which is quite natural: Whenever something can be positioned at arbitrary real coordinates, of course it can be positioned to integer coordinates as well.
 
 [RealLocalizable](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealLocalizable.html) allows to get a real coordinate from an accessor. Again, this is completely analogous to the integer **Localizable**. In this case, the inheritance relationship is the other way around - **Localizable** extends [RealLocalizable](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealLocalizable.html). Something that is able to provide its integer coordinates is always able to provide them as real coordinates too.
 

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Bug reporting best practices](Bug_reporting_best_practices )
+1.  REDIRECT [Bug reporting best practices](Bug_reporting_best_practices)

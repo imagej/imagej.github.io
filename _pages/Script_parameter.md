@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Script\_Parameters](Script_Parameters )
+1.  REDIRECT [Script\_Parameters](Script_Parameters)

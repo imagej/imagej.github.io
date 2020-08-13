@@ -7,9 +7,9 @@ categories: Segmentation,Scripting
 description: test description
 ---
 
-The following [Beanshell script](Beanshell_Scripting ) allows you to evaluate the performance of your [segmentation](Category_Segmentation ) method.
+The following [Beanshell script](Beanshell_Scripting) allows you to evaluate the performance of your [segmentation](Category_Segmentation) method.
 
-Just copy/paste it in the [Script Editor](Script_Editor ) or save it into a .bsh file and run it ({% include bc content='File | Open'%}):
+Just copy/paste it in the [Script Editor](Script_Editor) or save it into a .bsh file and run it ({% include bc content='File | Open'%}):
 
     /**
      * Script to calculate the segmentation error between some 2D 

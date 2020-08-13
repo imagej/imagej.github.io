@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Bio-Formats\#Bio-Formats\_Remote\_Importer](Bio-Formats#Bio-Formats_Remote_Importer )
+1.  REDIRECT [Bio-Formats\#Bio-Formats\_Remote\_Importer](Bio-Formats#Bio-Formats_Remote_Importer)

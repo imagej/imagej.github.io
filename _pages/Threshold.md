@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Thresholding](Thresholding )
+1.  REDIRECT [Thresholding](Thresholding)

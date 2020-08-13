@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Minimum/Maximum/Median](Minimum/Maximum/Median )
+1.  REDIRECT [Minimum/Maximum/Median](Minimum/Maximum/Median)

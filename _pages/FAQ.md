@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Frequently Asked Questions](Frequently_Asked_Questions )
+1.  REDIRECT [Frequently Asked Questions](Frequently_Asked_Questions)

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [ImgLib2 FAQ](ImgLib2_FAQ )
+1.  REDIRECT [ImgLib2 FAQ](ImgLib2_FAQ)

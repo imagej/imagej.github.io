@@ -41,7 +41,7 @@ This challenge was part of a [workshop](http://www.biomedicalimaging.org/2012/in
 
 Each team received statistics regarding their results. **After the workshop, an overview article will be compiled by the organizers of the challenge, with up to three members per participating team as co-authors**.
 
-If you have any doubt regarding the challenge, please, do not hesitate to contact the [organizers](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012#Organizers ). There is also an **open discussion group** that you can join [here](http://groups.google.com/group/EM-segmentation-challenge-ISBI-2012).
+If you have any doubt regarding the challenge, please, do not hesitate to contact the [organizers](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012#Organizers). There is also an **open discussion group** that you can join [here](http://groups.google.com/group/EM-segmentation-challenge-ISBI-2012).
 
 Training data
 -------------
@@ -71,13 +71,13 @@ In order to evaluate and rank the performances of the participant methods, we wi
 
 The metrics are:
 
--   [Minimum Splits and Mergers Warping error](Minimum_Splits_and_Mergers_Warping_error ), a segmentation metric that penalizes topological disagreements, in this case, the object splits and mergers.
+-   [Minimum Splits and Mergers Warping error](Minimum_Splits_and_Mergers_Warping_error), a segmentation metric that penalizes topological disagreements, in this case, the object splits and mergers.
 -   **Foreground-restricted Rand error**: defined as 1 - the maximal {% include wikipedia title='F1 score' text='F-score'%} of the foreground-restricted {% include wikipedia title='Rand index' text='Rand index'%}, a measure of similarity between two clusters or segmentations. On this version of the Rand index we exclude the zero component of the original labels (background pixels of the ground truth).
 -   **Pixel error**: defined as 1 - the maximal {% include wikipedia title='F1 score' text='F-score'%} of pixel similarity, or squared Euclidean distance between the original and the result labels.
 
-If you want to apply these metrics yourself to your own results, you can do it within Fiji using this [script](Segmentation_evaluation_metrics_-_Script ).
+If you want to apply these metrics yourself to your own results, you can do it within Fiji using this [script](Segmentation_evaluation_metrics_-_Script).
 
-We understand that segmentation evaluation is an ongoing and sensitive research topic, therefore we open the metrics to discussion. Please, do not hesitate to contact the [organizers](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012#Organizers ) to discuss about the metric selection.
+We understand that segmentation evaluation is an ongoing and sensitive research topic, therefore we open the metrics to discussion. Please, do not hesitate to contact the [organizers](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012#Organizers) to discuss about the metric selection.
 
 Organizers
 ----------
@@ -92,10 +92,10 @@ References
 
 Publications about the data:
 
--   {% include cite content='journal' author='Albert Cardona, Stephan Saalfeld, Stephan Preibisch, Benjamin Schmid, Anchi Cheng, Jim Pulokas, Pavel Tomancak and Volker Hartenstein ' title='An Integrated Micro- and Macroarchitectural Analysis of the ""Drosophila"" Brain by Computer-Assisted Serial Section Electron Microscopy ' journal='PLoS Biol ' year='2010 ' volume='8 ' pages='e1000502 ' number='10 ' month='10, ' doi='10.1371/journal.pbio.1000502 ' publisher='Public Library of Science ' url='http://dx.doi.org/10.1371%2Fjournal.pbio.1000502 ' %}
+-   {% include cite content='journal' author='Albert Cardona, Stephan Saalfeld, Stephan Preibisch, Benjamin Schmid, Anchi Cheng, Jim Pulokas, Pavel Tomancak and Volker Hartenstein' title='An Integrated Micro- and Macroarchitectural Analysis of the ""Drosophila"" Brain by Computer-Assisted Serial Section Electron Microscopy' journal='PLoS Biol' year='2010' volume='8' pages='e1000502' number='10' month='10,' doi='10.1371/journal.pbio.1000502' publisher='Public Library of Science' url='http://dx.doi.org/10.1371%2Fjournal.pbio.1000502' %}
 
 Publications about the metrics:
 
--   {% include cite content='journal' author='V. Jain, B. Bollmann, M. Richardson, D.R. Berger, M.N. Helmstaedter, K.L. Briggman, W. Denk, J.B. Bowden, J.M. Mendenhall, W.C. Abraham, K.M. Harris, N. Kasthuri, K.J. Hayworth, R. Schalek, J.C. Tapia, J.W. Lichtman, S.H. Seung ' title='Boundary Learning by Optimization with Topological Constraints ' booktitle='2010 IEEE CONFERENCE ON COMPUTER VISION AND PATTERN RECOGNITION (CVPR) ' year='2010 ' series='IEEE Conference on Computer Vision and Pattern Recognition ' pages='2488-2495 ' organization='IEEE Comp Soc ' doi='10.1109/CVPR.2010.5539950 ' %}
+-   {% include cite content='journal' author='V. Jain, B. Bollmann, M. Richardson, D.R. Berger, M.N. Helmstaedter, K.L. Briggman, W. Denk, J.B. Bowden, J.M. Mendenhall, W.C. Abraham, K.M. Harris, N. Kasthuri, K.J. Hayworth, R. Schalek, J.C. Tapia, J.W. Lichtman, S.H. Seung' title='Boundary Learning by Optimization with Topological Constraints' booktitle='2010 IEEE CONFERENCE ON COMPUTER VISION AND PATTERN RECOGNITION (CVPR)' year='2010' series='IEEE Conference on Computer Vision and Pattern Recognition' pages='2488-2495' organization='IEEE Comp Soc' doi='10.1109/CVPR.2010.5539950' %}
 
 

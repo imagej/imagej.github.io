@@ -7,23 +7,23 @@ categories:
 description: test description
 ---
 
-{% include info-box name='BIOP luts ' software='Fiji ' author='Romain Guiet, Olivier Burri ' maintainer='Romain Guiet ' filename='biop-\*.lut ' released='October 2016 ' latest-version='October 2016 ' source='PTBIOP update site ' status='stable ' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff) ' %}
+{% include info-box name='BIOP luts' software='Fiji' author='Romain Guiet, Olivier Burri' maintainer='Romain Guiet' filename='biop-\*.lut' released='October 2016' latest-version='October 2016' source='PTBIOP update site' status='stable' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
 
 Purpose
 -------
 
-Having LUTs to handle display of images with more than 3 channels. Visit [Color Image Processing](Color_Image_Processing ) page to know more about LUTs.
+Having LUTs to handle display of images with more than 3 channels. Visit [Color Image Processing](Color_Image_Processing) page to know more about LUTs.
 
 Details
 -------
 
 Classical color space are RGB and CMY. Expressed as RGB value, CMY are equal combination of 2 components of RGB, ie Cyan is obtained by combining Green and Blue in equal proportion.
 
-[200px ](File_RGB_hex.png ) [200px ](File_CMY_hex.png )
+[200px ](File_RGB_hex.png) [200px ](File_CMY_hex.png)
 
 Here, we propose to use 6 LUTs, which are obtained by combining Red Green and Blue, by two, in different proportion.
 
-[400px ](File_BIOP6Luts_hex.png )
+[400px ](File_BIOP6Luts_hex.png)
 
 On 3 channels image
 -------------------

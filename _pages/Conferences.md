@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Conference](Conference )
+1.  REDIRECT [Conference](Conference)

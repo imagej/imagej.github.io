@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BoneJ2\#Area.2FVolume\_fraction](BoneJ2#Area.2FVolume_fraction )
+1.  REDIRECT [BoneJ2\#Area.2FVolume\_fraction](BoneJ2#Area.2FVolume_fraction)

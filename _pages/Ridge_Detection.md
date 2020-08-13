@@ -8,13 +8,13 @@ description: test description
 ---
 
 {% include unmaintained%}
- {% include biginfo-box content='As this plugin is no longer maintained... you can check out [ImageJ Ops](ImageJ_Ops ) for Ridge Detection algorithms.' %}
+ {% include biginfo-box content='As this plugin is no longer maintained... you can check out [ImageJ Ops](ImageJ_Ops) for Ridge Detection algorithms.' %}
 
 
 {% capture author%}
 {% include person content='Twagner' %}, {% include person content='Hinerm' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='Ridge (Line) Detection Plugin ' author=author maintainer='Unmaintained ' filename='Ridge\_Detect.jar [\[1](https://github.com/thorstenwagner/ij-ridgedetection/releases/latest) \] ' source='Github [\[2](https://github.com/thorstenwagner/ij-ridgedetection) \] ' latest-version='v1.4.0 (20 Aug 2017) ' status='Unmaintained ' %}
+{% include info-box software='Fiji' name='Ridge (Line) Detection Plugin' author=author maintainer='Unmaintained' filename='Ridge\_Detect.jar [\[1](https://github.com/thorstenwagner/ij-ridgedetection/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-ridgedetection) \]' latest-version='v1.4.0 (20 Aug 2017)' status='Unmaintained' %}
 
 Purpose
 -------
@@ -116,7 +116,7 @@ Successful ridge detection with slope-based overlap detection enabled. Line 134 
 Installation
 ============
 
-Simply turn on the [Biomedgroup update site](How_to_follow_a_3rd_party_update_site ), which includes the ridge detection plugin.
+Simply turn on the [Biomedgroup update site](How_to_follow_a_3rd_party_update_site), which includes the ridge detection plugin.
 
 If you use ImageJ just copy the RidgeDetection.jar file in your plugins folder and copy the [apache-commons-lang 3](http://commons.apache.org/proper/commons-lang/) jar file into the plugins/jars folder.
 

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Bio-Formats\#Stack Slicer](Bio-Formats#Stack_Slicer )
+1.  REDIRECT [Bio-Formats\#Stack Slicer](Bio-Formats#Stack_Slicer)

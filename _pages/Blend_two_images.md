@@ -10,7 +10,7 @@ description: test description
 Purpose
 -------
 
-A [Clojure](Clojure_Scripting ) script illustrating how to:
+A [Clojure](Clojure_Scripting) script illustrating how to:
 
 -   Fetch images from the internet
 -   Extract and iterate/loop the pixels on an image
@@ -58,6 +58,6 @@ Code
 See also
 --------
 
-[Clojure Scripting](Clojure_Scripting )
+[Clojure Scripting](Clojure_Scripting)
 
  

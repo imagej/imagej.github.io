@@ -7,21 +7,21 @@ categories: Plugins,Registration
 description: test description
 ---
 
-{% include info-box name='Selective Plane Illumination Microscopy Registration ' software='ImageJ ' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak ' maintainer='Stephan Preibisch ' filename='SPIM\_Registration.jar ' released='February 2010 ' latest-version='September 2011 ' category='[SPIM Registration](Category_Registration ) ' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch) ' %}
+{% include info-box name='Selective Plane Illumination Microscopy Registration' software='ImageJ' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak' maintainer='Stephan Preibisch' filename='SPIM\_Registration.jar' released='February 2010' latest-version='September 2011' category='[SPIM Registration](Category_Registration)' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch)' %}
 
 Important Note
 --------------
 
-<span style="color:#A52A2A"> ***Please Note: This version of the software is outdated. It will be part of Fiji for the time being, but I highly recommend using the new [Multiview Reconstruction Plugin](Multiview-Reconstruction ). It is much more powerful, flexible and completely integrated with the [BigDataViewer](BigDataViewer ).*** </span>
+<span style="color:#A52A2A"> ***Please Note: This version of the software is outdated. It will be part of Fiji for the time being, but I highly recommend using the new [Multiview Reconstruction Plugin](Multiview-Reconstruction). It is much more powerful, flexible and completely integrated with the [BigDataViewer](BigDataViewer).*** </span>
 
 Citation
 --------
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
--   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media_Nmeth0610-418.pdf ) [Supplement](Media_Nmeth0610-418-S1.pdf )
+-   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media_Nmeth0610-418.pdf) [Supplement](Media_Nmeth0610-418-S1.pdf)
 
-For technical details about the bead-based registration method and SPIM imaging see [SPIM Registration Method](SPIM_Registration_Method ).
+For technical details about the bead-based registration method and SPIM imaging see [SPIM Registration Method](SPIM_Registration_Method).
 
 Overview of the ***deprecated*** SPIM bead-based registration plugin
 --------------------------------------------------------------------
@@ -44,13 +44,13 @@ Multi-view SPIM datasets are typically rather large, therefore it is recommended
 
 There are three plugins which take those input parameters in different formats:
 
--   **[ SPIM Registration](SPIM_Registration#SPIM_Registration )**: Allows the registration of SPIM data with a subset of necessary options presented in the graphical user interface
--   **[ Multi-Channel SPIM Registration](SPIM_Registration#Multi-Channel_SPIM_Registration )**: Extends the [ SPIM Registration](SPIM_Registration#SPIM_Registration ) to multiple channels and allows to override the z-stretching saved in the input files.
--   **[ Advanced SPIM Registration](SPIM_Registration#Advanced_SPIM_Registration )**: Registration of SPIM data using all possible options via loading a configuration file
+-   **[ SPIM Registration](SPIM_Registration#SPIM_Registration)**: Allows the registration of SPIM data with a subset of necessary options presented in the graphical user interface
+-   **[ Multi-Channel SPIM Registration](SPIM_Registration#Multi-Channel_SPIM_Registration)**: Extends the [ SPIM Registration](SPIM_Registration#SPIM_Registration) to multiple channels and allows to override the z-stretching saved in the input files.
+-   **[ Advanced SPIM Registration](SPIM_Registration#Advanced_SPIM_Registration)**: Registration of SPIM data using all possible options via loading a configuration file
 
 ### Processing a Time Lapse Acqusition
 
-Processing a time lapse acquisition requires two steps. In the first step the registration for each individual timepoint has to be computed and will be automatically stored. Therefore, in the first pass, input the timepoints that should be processed in **Time Points to process** (e.g. 1-100), check **Register only (no fusion)** and uncheck **Timelapse processing**. After the registration is performed one timepoint has to be selected as reference timepoint, typically one with a low registration error. This timepoint should be fused to determine the **[ correct cropping area ](SPIM_Registration#Creating_a_cropped_output_image )** which will afterwards be applied to all other timepoints.
+Processing a time lapse acquisition requires two steps. In the first step the registration for each individual timepoint has to be computed and will be automatically stored. Therefore, in the first pass, input the timepoints that should be processed in **Time Points to process** (e.g. 1-100), check **Register only (no fusion)** and uncheck **Timelapse processing**. After the registration is performed one timepoint has to be selected as reference timepoint, typically one with a low registration error. This timepoint should be fused to determine the **[ correct cropping area ](SPIM_Registration#Creating_a_cropped_output_image)** which will afterwards be applied to all other timepoints.
 
 After all individual timepoints are registered and the cropping area is defined the plugin has to be called again. This time check **Timelapse Registration**, insert the **Reference Timepoint**, uncheck **Register only (no fusion)** and insert the coordinates of the cropping area of the reference timepoint. The created output images can be viewed for example with Plugins-&gt;Image5D-&gt;Virtual Image 5D Opener [1](https://imagej.net/plugins/image5d.html).
 

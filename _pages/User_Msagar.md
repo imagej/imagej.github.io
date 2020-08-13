@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Md Abdul Kader Sagar ' affiliation='UW-Madison [LOCI](LOCI ) ' loci='md-abdul-kader-sagar ' github='aksagar ' osrc='aksagar ' %}Sagar develops and maintains the [SLIM Curve](SLIM_Curve ) plugin for time-resolved lifetime image analysis.
+{% include user-box name='Md Abdul Kader Sagar' affiliation='UW-Madison [LOCI](LOCI)' loci='md-abdul-kader-sagar' github='aksagar' osrc='aksagar' %}Sagar develops and maintains the [SLIM Curve](SLIM_Curve) plugin for time-resolved lifetime image analysis.

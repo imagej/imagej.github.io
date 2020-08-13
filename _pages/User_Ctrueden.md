@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [User:Rueden](User_Rueden )
+1.  REDIRECT [User:Rueden](User_Rueden)

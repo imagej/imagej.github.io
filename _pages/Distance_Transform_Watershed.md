@@ -17,9 +17,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='ijpb ' repo='ijpb-plugins ' %}
+{% include github org='ijpb' repo='ijpb-plugins' %}
 {% endcapture %}
-{% include info-box name='Distance Transform Watershed (2D and 3D) ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='August 25<sup>th</sup>, 2016 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ ) v1.4.1) ' status='stable, active ' category='[Segmentation](Category_Segmentation ), [Mathematical morphology](Category_Mathematical_morphology ) ' %}
+{% include info-box name='Distance Transform Watershed (2D and 3D)' software='IJPB-plugins' author=author maintainer=maintainer source=source released='August 25<sup>th</sup>, 2016' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}
 
 Introduction
 ------------
@@ -28,7 +28,7 @@ A classic way of separating touching objects in binary images makes use of the d
 
 {% include thumbnail src='/images/pages/MorphoLibJ-distance-transform-watershed-basics.png' title='\'\'\'Basics of the Distance Transform Watershed algorithm\'\'\'. From left to right: sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope, binary mask calculated after filtering and thresholding input image, inverse of the distance transform applied to the binary mask (Chamfer distance map using normalized Chessknight weights and 32-bit output) and resulting labeled image after applying watershed to the inverse distance image using the binary mask (dynamic of 1 and 4-connectivity).'%}
 
-[MorphoLibJ](MorphoLibJ ) provides two plugins under the {% include bc content='Plugins | MorphoLibJ | Binary Images...'%} menu to apply this strategy on 2D and 3D images:
+[MorphoLibJ](MorphoLibJ) provides two plugins under the {% include bc content='Plugins | MorphoLibJ | Binary Images...'%} menu to apply this strategy on 2D and 3D images:
 
 Distance Transform Watershed
 ----------------------------
@@ -86,7 +86,7 @@ As it is usual in ImageJ, no preview is provided here since we are dealing with 
 Installation
 ------------
 
-The Distance Transform Watershed plugins (2D and 3D) are part of the [MorphoLibJ](MorphoLibJ ) library. To install them, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites ) the IJPB-plugins update site:
+The Distance Transform Watershed plugins (2D and 3D) are part of the [MorphoLibJ](MorphoLibJ) library. To install them, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the IJPB-plugins update site:
 
 1\) Select {% include bc content='Help | Update...'%} from the Fiji menu to start the updater.
 
@@ -98,7 +98,7 @@ The Distance Transform Watershed plugins (2D and 3D) are part of the [MorphoLibJ
 
 You should now find the plugin under the sub-menu {% include bc content='Plugins |MorphoLibJ | Segmentation'%}.
 
-**Note**: the Distance Transform Watershed plugins are only two of the plugins included in the [MorphoLibJ](MorphoLibJ ) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
+**Note**: the Distance Transform Watershed plugins are only two of the plugins included in the [MorphoLibJ](MorphoLibJ) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
 References
 ----------
@@ -108,8 +108,8 @@ References
 See also
 --------
 
--   [Marker-controlled Watershed](Marker-controlled_Watershed ), a plugin to perform watershed by flooding from specific seed points or markers.
--   [Morphological Segmentation](Morphological_Segmentation ), a plugin with a graphical user interface to segment images based on morphological operations and the watershed algorithm.
+-   [Marker-controlled Watershed](Marker-controlled_Watershed), a plugin to perform watershed by flooding from specific seed points or markers.
+-   [Morphological Segmentation](Morphological_Segmentation), a plugin with a graphical user interface to segment images based on morphological operations and the watershed algorithm.
 -   [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
 -   [G. Bertrand's Topological Watershed site](https://perso.esiee.fr/~dpt-it/tw/index.html), with papers, lecture slides and source code.
 

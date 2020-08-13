@@ -7,17 +7,17 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Thorsten Wagner ' affiliation=' [Max Planck Institute for Molecular Physiology](http://www.mpi-dortmund.de) ' forum='twagner ' github='thorstenwagner ' %}Thorsten Wagner is a postdoc at the max planck institute of molecular physiology and has contributed and is maintaining serveral plugins:
+{% include user-box name='Thorsten Wagner' affiliation=' [Max Planck Institute for Molecular Physiology](http://www.mpi-dortmund.de)' forum='twagner' github='thorstenwagner' %}Thorsten Wagner is a postdoc at the max planck institute of molecular physiology and has contributed and is maintaining serveral plugins:
 
--   [Ridge Detection](Ridge_Detection )
--   [Shape Filter](Shape_Filter )
--   [Non Local Means Denoise](Non_Local_Means_Denoise )
--   [Shape Smoothing](Shape_Smoothing )
--   [IJ Blob](IJ_Blob )
--   [Ellipse split](Ellipse_split )
--   [NanoTrackJ](NanoTrackJ )
+-   [Ridge Detection](Ridge_Detection)
+-   [Shape Filter](Shape_Filter)
+-   [Non Local Means Denoise](Non_Local_Means_Denoise)
+-   [Shape Smoothing](Shape_Smoothing)
+-   [IJ Blob](IJ_Blob)
+-   [Ellipse split](Ellipse_split)
+-   [NanoTrackJ](NanoTrackJ)
 -   [Find\_maxima\_(Trackmate\_module)](Find_maxima_(Trackmate_module) "wikilink")
--   [ParticleSizer](ParticleSizer )
--   [TraJClassifier](TraJClassifier )
+-   [ParticleSizer](ParticleSizer)
+-   [TraJClassifier](TraJClassifier)
 
 You could contact me by thorsten dot wagner at mpi dash dortmund dot mpg dot de

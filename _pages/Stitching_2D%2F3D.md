@@ -7,7 +7,7 @@ categories: Plugins,Registration,Stitching
 description: test description
 ---
 
-{% include warning-box content='""Please note that this version of the Stitching is deprecated. A new version is available here: [Image Stitching](Image_Stitching )""' %}
+{% include warning-box content='""Please note that this version of the Stitching is deprecated. A new version is available here: [Image Stitching](Image_Stitching)""' %}
 
 {% include component-stats content='sc.fiji:Stitching\_' %}
 
@@ -30,11 +30,11 @@ Overview of the Stitching Plugins
 
 The Stitching package comes with 4 different plugins:
 
--   **[ 2D Stitching](Stitching_2D/3D#2D_Stitching_and_3D_Stitching )**: Stitch two 2-dimensional images, rectangular ROIs can be used to limit the area to search in.
--   **[ 3D Stitching](Stitching_2D/3D#2D_Stitching_and_3D_Stitching )**: Stitch two image stacks (3D), rectangular ROIs can be used to limit the area to search in as well.
--   **[ Stitch Grid of Images](Stitching_2D/3D#Stitch_Grid_of_Images )**: Stitch an arbitrary number of 2D or 3D images which are arranged in a regular grid (e.g. 4 x 3 images with roughly 10% overlap)
--   **[ Stitch Image Grid Sequence](Stitching_2D/3D#Stitch_Image_Grid_Sequence )**: Stitch a sequence of 2D or 3D regular grids of images.
--   **[ Stitch Collection of Images](Stitching_2D/3D#Stitch_Collection_of_Images )**: Stitch an arbitrary number of 2D or 3D images which do not have to be in a regular grid. The rough initial configuration (which image is overlapping another one) is given in tile configuration file.
+-   **[ 2D Stitching](Stitching_2D/3D#2D_Stitching_and_3D_Stitching)**: Stitch two 2-dimensional images, rectangular ROIs can be used to limit the area to search in.
+-   **[ 3D Stitching](Stitching_2D/3D#2D_Stitching_and_3D_Stitching)**: Stitch two image stacks (3D), rectangular ROIs can be used to limit the area to search in as well.
+-   **[ Stitch Grid of Images](Stitching_2D/3D#Stitch_Grid_of_Images)**: Stitch an arbitrary number of 2D or 3D images which are arranged in a regular grid (e.g. 4 x 3 images with roughly 10% overlap)
+-   **[ Stitch Image Grid Sequence](Stitching_2D/3D#Stitch_Image_Grid_Sequence)**: Stitch a sequence of 2D or 3D regular grids of images.
+-   **[ Stitch Collection of Images](Stitching_2D/3D#Stitch_Collection_of_Images)**: Stitch an arbitrary number of 2D or 3D images which do not have to be in a regular grid. The rough initial configuration (which image is overlapping another one) is given in tile configuration file.
 -   **[ Stitch Directory with Images (unknown configuration)](Stitching_2D/3D#Stitch_Directory_with_Images_(unknown_configuration) "wikilink")**: Stitch all images that are located in a given directory without any knowledge of the tile configuration.
 
 2D Stitching and 3D Stitching
@@ -100,17 +100,17 @@ This plugin takes an arbitrary tile configuration as input which has to be store
 
 The plugin Stitch Grid of Images will for example create such a file.
 
-All the other parameters are the same as explained in the section [ Stitch Grid of Images](Stitching_2D/3D#Stitch_Grid_of_Images ).
+All the other parameters are the same as explained in the section [ Stitch Grid of Images](Stitching_2D/3D#Stitch_Grid_of_Images).
 
 Stitch Directory with Images (unknown configuration)
 ----------------------------------------------------
 
-This plugin takes all images that are located in a given directory and tries to align them without any knowledge of the tile configuration. All other parameters are identical to those explained in the section [ Stitch Grid of Images](Stitching_2D/3D#Stitch_Grid_of_Images ). If the plugin does not find the correct alignment, you can try to increase the cross correlation threshold so that only pairwise alignments with very high quality are used for the global optimization. This increases the chance that the optimizer is able to detect the correct pairwise alignments. This, however, requires images with high quality as otherwise correct pairwise alignments with relatively low correlation are excluded.
+This plugin takes all images that are located in a given directory and tries to align them without any knowledge of the tile configuration. All other parameters are identical to those explained in the section [ Stitch Grid of Images](Stitching_2D/3D#Stitch_Grid_of_Images). If the plugin does not find the correct alignment, you can try to increase the cross correlation threshold so that only pairwise alignments with very high quality are used for the global optimization. This increases the chance that the optimizer is able to detect the correct pairwise alignments. This, however, requires images with high quality as otherwise correct pairwise alignments with relatively low correlation are excluded.
 
 Stitch Multiple Series or Tile Scan File
 ----------------------------------------
 
-This plugin takes series of images contained in a single file, e.g. in the .lsm file format. It relies on [Bio-Formats](Bio-Formats )'s series support. The parameters are as explained in the section [ Stitch Grid of Images](Stitching_2D/3D#Stitch_Grid_of_Images ).
+This plugin takes series of images contained in a single file, e.g. in the .lsm file format. It relies on [Bio-Formats](Bio-Formats)'s series support. The parameters are as explained in the section [ Stitch Grid of Images](Stitching_2D/3D#Stitch_Grid_of_Images).
 
 Problems and Known Issues
 -------------------------
@@ -148,7 +148,7 @@ See Also
 --------
 
 -   [The Publication on the Stitching Plugin](http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184), S. Preibisch, S. Saalfeld, P. Tomancak (2009) Globally optimal stitching of tiled 3D microscopic image acquisitions", *Bioinformatics*, **25**(11):1463-1465. [PDF](http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf)
--   [TrakEM2](TrakEM2 ) for non-destructive stitching with floating, adjustable images.
+-   [TrakEM2](TrakEM2) for non-destructive stitching with floating, adjustable images.
 -   [XuvTools](http://www.xuvtools.org/doku.php) similar stitching software from the University of Freiburg and the [abstract](http://dx.doi.org/10.1111/j.1365-2818.2008.03094.x) of the accompying publication
 
   

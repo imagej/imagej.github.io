@@ -7,9 +7,9 @@ categories: Registration|Registration
 description: test description
 ---
 
-{% include warning-box content='"""""Please Note: This version of the software is outdated. We highly recommend using the new [automated workflow](Automated_workflow_for_parallel_Multiview_Reconstruction ). It is much more user friendly, efficient and versatile using full automation of the processing"""""' %}
+{% include warning-box content='"""""Please Note: This version of the software is outdated. We highly recommend using the new [automated workflow](Automated_workflow_for_parallel_Multiview_Reconstruction). It is much more user friendly, efficient and versatile using full automation of the processing"""""' %}
 
-{% include info-box name='Selective Plane Illumination Microscopy Registration on a cluster ' software='Fiji ' author='Stephan Saalfeld, Christopher Schmied, Pavel Tomancak ' maintainer='Pavel Tomancak ' filename='n.a. ' released='May 2013 ' latest-version='May 2013 ' category='[Registration](Category_Registration ) ' website=' [Pavel Tomancak"s homepage](http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html) ' %}= Introduction =
+{% include info-box name='Selective Plane Illumination Microscopy Registration on a cluster' software='Fiji' author='Stephan Saalfeld, Christopher Schmied, Pavel Tomancak' maintainer='Pavel Tomancak' filename='n.a.' released='May 2013' latest-version='May 2013' category='[Registration](Category_Registration)' website=' [Pavel Tomancak"s homepage](http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html)' %}= Introduction =
 
 Light sheet microscopy such as SPIM produces enormous amounts of data especially when used in long-term time-lapse mode. In order to view and in some cases analyze the data it is necessary to process them which involves registration of the views within time-points, correction of sample drift across the time-lapse registration, fusion of data into single 3d image per time-point which may require multiview deconvolution and 3d rendering of the fused volumes. Here we describe how to perform such processing in parallel on a cluster computer.
 
@@ -21,7 +21,7 @@ Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system
 
 **Note on versions**
 
-The SPIM registration is a piece of software that undergoes ongoing development. The original version gathered under plugins *SPIM registration* has been replaced in 2014 by new set of plugins gathered under *Multiview reconstruction*. Moreover, the cluster pipeline has been changed to use a centralised Linux style master file. In 2015 this pipeline was reimplemented as **[automated workflow](Automated_workflow_for_parallel_Multiview_Reconstruction )** using the workflow manager **\[https://bitbucket.org/johanneskoester/snakemake/wiki/Home. Snakemake\]**. Which allows to map and dispatch the workflow logic automatically either on a single maschine or on a HPC cluster. Therefore there are 4 versions available. We highly recommend using the latest version:
+The SPIM registration is a piece of software that undergoes ongoing development. The original version gathered under plugins *SPIM registration* has been replaced in 2014 by new set of plugins gathered under *Multiview reconstruction*. Moreover, the cluster pipeline has been changed to use a centralised Linux style master file. In 2015 this pipeline was reimplemented as **[automated workflow](Automated_workflow_for_parallel_Multiview_Reconstruction)** using the workflow manager **\[https://bitbucket.org/johanneskoester/snakemake/wiki/Home. Snakemake\]**. Which allows to map and dispatch the workflow logic automatically either on a single maschine or on a HPC cluster. Therefore there are 4 versions available. We highly recommend using the latest version:
 
 -   [Original SPIM registration pipeline](#Original_SPIM_registration_pipeline "wikilink") - contains the most detailed description of the cluster pipeline using *SPIM registration* plugins. If you do not have much HPC/Linux experience start here.
 
@@ -35,7 +35,7 @@ The SPIM registration is a piece of software that undergoes ongoing development.
 
 <!-- -->
 
--   **[Automated workflow for parallel Multiview Reconstruction](Automated_workflow_for_parallel_Multiview_Reconstruction )** - automated workflow using the workflow manager **\[https://bitbucket.org/johanneskoester/snakemake/wiki/Home. Snakemake\]**
+-   **[Automated workflow for parallel Multiview Reconstruction](Automated_workflow_for_parallel_Multiview_Reconstruction)** - automated workflow using the workflow manager **\[https://bitbucket.org/johanneskoester/snakemake/wiki/Home. Snakemake\]**
 
 So, if you are new read a bit of the chapter 1 (original pipeline) to get familiar and then skip to chapter 3 (Multiview reconstruction pipeline) which is more up-to-date. To understand how the master file works refer to chapter 2 (NEW PIPELINE).
 
@@ -51,7 +51,7 @@ The Lightsheet Z.1 data are saved into the proprietary Zeiss file format **.czi*
 
 ### Getting familiar with Linux command line environment
 
-It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [Linux\_command\_line\_tutorial](Linux_command_line_tutorial ) page that explains the bare essentials.
+It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [Linux\_command\_line\_tutorial](Linux_command_line_tutorial) page that explains the bare essentials.
 
 ### Transferring data
 
@@ -329,7 +329,7 @@ or whatever your submission system offers. At the end of the run we will have a 
 `out.445491`  
 `....`
 
-The err.\* are hopefully empty. The out.\* contain Fiji log output if any. In this case it should look something like [this](Media_resaving_output.pdf ). Most importantly in the directory /projects/tomancak\_lightsheet/Tassos we now have for each .czi file a corresponding .tif file which was the goal of the whole exercise
+The err.\* are hopefully empty. The out.\* contain Fiji log output if any. In this case it should look something like [this](Media_resaving_output.pdf). Most importantly in the directory /projects/tomancak\_lightsheet/Tassos we now have for each .czi file a corresponding .tif file which was the goal of the whole exercise
 
      ls *Angle280*
      spim_TL1_Angle280.czi
@@ -349,13 +349,13 @@ On our cluster powered by the Lustre filesystem the resaving operation takes onl
 Registration
 ------------
 
-SPIM registration consists of **within time-point** registration of the views followed by **across time-point** registration of the time-series. Both are achieved using Fiji's bead based SPIM registration plugin. The per-time-point registration is a pre-requisite for time-lapse registration. For detailed overview see [here](SPIM_Registration ).
+SPIM registration consists of **within time-point** registration of the views followed by **across time-point** registration of the time-series. Both are achieved using Fiji's bead based SPIM registration plugin. The per-time-point registration is a pre-requisite for time-lapse registration. For detailed overview see [here](SPIM_Registration).
 
 ### Bead-based multi-view registration
 
-The first real step in the SPIMage processing pipeline, after re-saving as .tif, is to register the views within each timepoint. We will use for that the bead based registration plug-in in Fiji. The principle of the plug-in are described [here](SPIM_Registration_Method ) while the parameters are discussed [here](SPIM_Bead_Registration ).
+The first real step in the SPIMage processing pipeline, after re-saving as .tif, is to register the views within each timepoint. We will use for that the bead based registration plug-in in Fiji. The principle of the plug-in are described [here](SPIM_Registration_Method) while the parameters are discussed [here](SPIM_Bead_Registration).
 
-This description focuses on cluster processing and is less verbose, for details see section on [resaving](SPIM_Registration_on_cluster#Saving_data_as_tif ) as the principles are the same.
+This description focuses on cluster processing and is less verbose, for details see section on [resaving](SPIM_Registration_on_cluster#Saving_data_as_tif) as the principles are the same.
 
 In a directory jobs/registration create bash script **create-registration-jobs**
 
@@ -513,7 +513,7 @@ Tips and tricks
 Fusion
 ------
 
-In multi-view SPIM imaging fusion means combination of registered views into a single output image. Fiji currently implements two distinct fusion strategies: content based fusion and multi-view deconvolution. For detailed overview see [SPIM registration](SPIM_Registration ) page.
+In multi-view SPIM imaging fusion means combination of registered views into a single output image. Fiji currently implements two distinct fusion strategies: content based fusion and multi-view deconvolution. For detailed overview see [SPIM registration](SPIM_Registration) page.
 
 ### Content based multiview fusion
 
@@ -781,7 +781,7 @@ Coming soon.
 
 Finally we want generate a beautiful 3D rendering of the downsampled, fused data and run it as movies at conferences... ;-).
 
-The preparation phase of 3D rendering is a bit more complicated. We will use the [interactive Stack Rotation](Interactive_Stack_Rotation ) plugin to position the specimen the way we want to render it and then send it to [3DViewer](3D_Viewer ) plugin. Here is the recipe:
+The preparation phase of 3D rendering is a bit more complicated. We will use the [interactive Stack Rotation](Interactive_Stack_Rotation) plugin to position the specimen the way we want to render it and then send it to [3DViewer](3D_Viewer) plugin. Here is the recipe:
 
 1\. Open fused image stack and launch Interactive Stack Rotation plugin (Plugins-&gt;Transform-&gt;Interactive Stack Rotation). *Note: Familiarize yourself with the keystrokes that navigate the Interactive Stack Rotation. This is an extremely powerful way of looking at nearly isotropic 3D data coming from SPIM. More advanced version honoring these keystroke conventions is coming to Fiji soon (by Tobias Pietzsch).*
 
@@ -4386,14 +4386,14 @@ Modify the **master file** accordingly. Create the jobs using the **create\_expo
 New Multiview Reconstruction pipeline
 =====================================
 
-The key change in the **[Multiview Reconstruction](Multiview-Reconstruction )** (MVR) pipeline is that all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file.
+The key change in the **[Multiview Reconstruction](Multiview-Reconstruction)** (MVR) pipeline is that all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file.
 
 Stephan Preibisch solved that problem by allowing to write one XML file per job (usually a timepoint) and then merging the job specific XMLs into one XML for the entire dataset.
 
 In practice it means the following steps need to be executed:
 
 -   Define XML dataset - creates one XML for the entire timelapse
--   Re-save data as HDF5 - converts data into HDF5 container optimised for fast access in [BigDataViewer](BigDataViewer )
+-   Re-save data as HDF5 - converts data into HDF5 container optimised for fast access in [BigDataViewer](BigDataViewer)
 -   Run per time-point registrations - creates as many XMLs as there are timepoints
 -   Merge XMLs - consolidates the per-timepoint XMLs back into a single XML
 
@@ -4402,7 +4402,7 @@ Some new parameters are introduced and some old parameters change names. Therefo
 Define XML
 ----------
 
-First step in [**Multiview Reconstruction**](Multiview-Reconstruction ) is to define an XML file that describes the imaged dataset. This is very flexible and can be adapted to datasets with several angles, channels, illumination sides and timepoints. The relevant portion of the *master* file looks like this:
+First step in [**Multiview Reconstruction**](Multiview-Reconstruction) is to define an XML file that describes the imaged dataset. This is very flexible and can be adapted to datasets with several angles, channels, illumination sides and timepoints. The relevant portion of the *master* file looks like this:
 
     type_of_dataset="\"Image Stacks (ImageJ Opener)\""                      # raw fileformat
     xml_filename="\"dataset.xml\""                                          # filename
@@ -4700,7 +4700,7 @@ and generate in the raw data directory a series of *.h5* files. Each file contai
 
 and new *hdf5\_dataset.xml*.
 
-From now on, the data are in the HDF5 container (unregistered) and can be viewed in [BigDataViewer](BigDataViewer ). In the next step we register the data by running the registration pipeline and updating the XML.
+From now on, the data are in the HDF5 container (unregistered) and can be viewed in [BigDataViewer](BigDataViewer). In the next step we register the data by running the registration pipeline and updating the XML.
 
 Multiview registration
 ----------------------
@@ -5018,15 +5018,15 @@ creates *merge.job* that will execute *merge\_xml.bsh* on the cluster node using
     /* shutdown */
     runtime.exit(0);
 
-*merge.job* should be executed on the cluster in interactive mode (see [SPIM\_Registration\_on\_cluster\#Define\_XML](SPIM_Registration_on_cluster#Define_XML )).
+*merge.job* should be executed on the cluster in interactive mode (see [SPIM\_Registration\_on\_cluster\#Define\_XML](SPIM_Registration_on_cluster#Define_XML)).
 
-The result of the merge is *registration\_dataset,xml*. This is the final product of the registration pipeline. The results of registration can be viewed using [BigDataViewer](BigDataViewer )
+The result of the merge is *registration\_dataset,xml*. This is the final product of the registration pipeline. The results of registration can be viewed using [BigDataViewer](BigDataViewer)
 
 Tips and tricks
 
 -   the per-timepoint XML files can be deleted after the merge.
 -   regardless of whether or not the per-timepoint files are deleted, new per-timepoint XMLs can be added by re-running the merge.job
 
-[Invasion\_assay](Invasion_assay )
+[Invasion\_assay](Invasion_assay)
 
-[Registration](Category_Registration )
+[Registration](Category_Registration)

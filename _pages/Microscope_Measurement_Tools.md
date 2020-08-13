@@ -13,9 +13,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='demisjohn ' repo='Microscope-Measurement-Tools ' %}
+{% include github org='demisjohn' repo='Microscope-Measurement-Tools' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='Microscope Measurement Tools ' author=author maintainer='Demis D. John (<demis.john@gmail.com>) ' filename=' [Download from GitHub/Releases](https://github.com/demisjohn/Microscope-Measurement-Tools/releases) ' source=source released='Sept. 24<sup>th</sup>, 2015 ' latest-version='2.3 ' status='beta ' website=' [Microscope Measurement Tools at GitHub](https://github.com/demisjohn/Microscope-Measurement-Tools) ' %} Recall saved calibrations for your microscope's measurement scale and create measurement annotations.
+{% include info-box software='Fiji' name='Microscope Measurement Tools' author=author maintainer='Demis D. John (<demis.john@gmail.com>)' filename=' [Download from GitHub/Releases](https://github.com/demisjohn/Microscope-Measurement-Tools/releases)' source=source released='Sept. 24<sup>th</sup>, 2015' latest-version='2.3' status='beta' website=' [Microscope Measurement Tools at GitHub](https://github.com/demisjohn/Microscope-Measurement-Tools)' %} Recall saved calibrations for your microscope's measurement scale and create measurement annotations.
 
 Description
 -----------
@@ -135,7 +135,7 @@ Author(s)
 
 This simple python (jython) plugin was created by {% include person content='Demis' %}, 2015.
 
-I used the following plugins as inspiration: [Correct\_3D\_drift](Correct_3D_drift ) and [Microscope Scale](http://rsb.info.nih.gov/ij/plugins/microscope-scale.html) (which sadly is no longer easily customizable).
+I used the following plugins as inspiration: [Correct\_3D\_drift](Correct_3D_drift) and [Microscope Scale](http://rsb.info.nih.gov/ij/plugins/microscope-scale.html) (which sadly is no longer easily customizable).
 
 Please see the GitHub page for issues needing coding work, and ideas for improvement. You are always welcome to contribute code to the GitHub project, it is remarkably simple due to FIJI's excellent Python API!
 

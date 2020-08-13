@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Contributors](Contributors )
+1.  REDIRECT [Contributors](Contributors)

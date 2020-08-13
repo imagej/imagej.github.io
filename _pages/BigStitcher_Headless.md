@@ -99,8 +99,8 @@ to process another dataset with a different number of tiles headlessly:
     // quit after we are finished
     eval("script", "System.exit(0);");
 
-After saving the macro, it can be run from any Terminal by starting Fiji in [Headless](Headless ) mode and passing the macro as well as a parameter string.
+After saving the macro, it can be run from any Terminal by starting Fiji in [Headless](Headless) mode and passing the macro as well as a parameter string.
 
 `   /path/to/fiji/ImageJ-linux64 --headless --console -macro /path/to/macro/bigStitcherBatch.ijm "/path/to/data 2 3"`
 
-Go back to the [main page](BigStitcher#Documentation )
+Go back to the [main page](BigStitcher#Documentation)

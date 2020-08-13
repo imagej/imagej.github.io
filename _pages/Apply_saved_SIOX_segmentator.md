@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SIOX:\_Simple\_Interactive\_Object\_Extraction\#Apply\_SIOX\_segmentator](SIOX__Simple_Interactive_Object_Extraction#Apply_SIOX_segmentator )
+1.  REDIRECT [SIOX:\_Simple\_Interactive\_Object\_Extraction\#Apply\_SIOX\_segmentator](SIOX__Simple_Interactive_Object_Extraction#Apply_SIOX_segmentator)

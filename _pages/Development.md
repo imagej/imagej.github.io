@@ -7,13 +7,13 @@ categories: Development
 description: test description
 ---
 
-{% include info-box content='If your goal is to automate the behavior of ImageJ, consider writing a [script](Script ) using ImageJ"s [Script Editor](Script_Editor )—it is often much simpler than a plugin in Java.' %} {% include develop-menu%}
-This page provides an overview of ImageJ from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [plugins](Plugins ).
+{% include info-box content='If your goal is to automate the behavior of ImageJ, consider writing a [script](Script) using ImageJ"s [Script Editor](Script_Editor)—it is often much simpler than a plugin in Java.' %} {% include develop-menu%}
+This page provides an overview of ImageJ from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [plugins](Plugins).
 
 Quick start
 -----------
 
--   **Learn to write [ImageJ scripts](Scripting )** from the [ImageJ tutorial notebooks](https://imagej.github.io/tutorials).
+-   **Learn to write [ImageJ scripts](Scripting)** from the [ImageJ tutorial notebooks](https://imagej.github.io/tutorials).
 -   **Learn to use ImageJ from Java** with the [ImageJ tutorial Maven projects](https://github.com/imagej/tutorials/tree/master/maven-projects).
 
 What is ImageJ?
@@ -30,11 +30,11 @@ Project structure
 
 ImageJ is divided into three parts:
 
-<table><thead><tr class="header"><th style="font-size: 56px; width: 350px"><p> {% include logo content='ImageJ' size='72px ' %}<a href="ImageJ" title="wikilink">ImageJ</a></p></th><th></th></tr></thead><tbody><tr class="odd"><td><p><span style="font-size: large"><strong>Image-specific components</strong></span></p></td><td><ul><li><a href="ImageJ_Common" title="wikilink">ImageJ Common</a></li><li><a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a></li><li><a href="ImageJ_Updater" title="wikilink">ImageJ Updater</a></li><li><a href="ImageJ_Legacy" title="wikilink">ImageJ Legacy</a></li><li><a href="SCIFIO" title="wikilink">SCIFIO</a></li></ul></td></tr><tr class="even"><td><p> {% include logo content='ImgLib2' size='72px ' %}<a href="ImgLib2" title="wikilink">ImgLib2</a></p></td><td style="width: 350px"><p> <a href="SciJava"><img src="/images/pages/Scijava-logo.png" height="72px"/></a></p></td></tr><tr class="odd"><td style="text-align: center; vertical-align: top"><p> <span style="font-size: large"><strong>Core image data model</strong></span><br />
+<table><thead><tr class="header"><th style="font-size: 56px; width: 350px"><p> {% include logo content='ImageJ' size='72px' %}<a href="ImageJ" title="wikilink">ImageJ</a></p></th><th></th></tr></thead><tbody><tr class="odd"><td><p><span style="font-size: large"><strong>Image-specific components</strong></span></p></td><td><ul><li><a href="ImageJ_Common" title="wikilink">ImageJ Common</a></li><li><a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a></li><li><a href="ImageJ_Updater" title="wikilink">ImageJ Updater</a></li><li><a href="ImageJ_Legacy" title="wikilink">ImageJ Legacy</a></li><li><a href="SCIFIO" title="wikilink">SCIFIO</a></li></ul></td></tr><tr class="even"><td><p> {% include logo content='ImgLib2' size='72px' %}<a href="ImgLib2" title="wikilink">ImgLib2</a></p></td><td style="width: 350px"><p> <a href="SciJava"><img src="/images/pages/Scijava-logo.png" height="72px"/></a></p></td></tr><tr class="odd"><td style="text-align: center; vertical-align: top"><p> <span style="font-size: large"><strong>Core image data model</strong></span><br />
 </p><ul><li>Extensible pixel types – not just uint8, uint16, float32</li><li>Extensible data sources – not just files on disk</li><li>Extensible sample organizations – not just arrays</li><li>Extensible dimensionality – not just X, Y, Z and time</li><li>Interface-driven design</li></ul></td><td style="text-align: center; vertical-align: top"><p> <span style="font-size: large"><strong>More general than images</strong></span><br />
 </p><ul><li>Application container</li><li>Plugin framework</li><li>Module framework</li><li>Display and UI frameworks</li><li>Scripting framework and plugins</li></ul></td></tr></tbody></table>
 
-For full details on the technical structure of ImageJ, see the [Architecture](Architecture ) page.
+For full details on the technical structure of ImageJ, see the [Architecture](Architecture) page.
 
 Key developer tools
 -------------------
@@ -44,14 +44,14 @@ There are four indispensable software development tools on which ImageJ relies:
 <table><tbody><tr class="odd"><td style="vertical-align: middle"><p> {% include logo content='GitHub' %}</p></td><td><p><a href="GitHub" title="wikilink">GitHub</a></p></td><td><p>A website which hosts all of ImageJ's <a href="source_code" title="wikilink">source code</a> and <a href="issues" title="wikilink">issue trackers</a>. GitHub is ImageJ's nexus of online collaboration (i.e., "social coding").</p></td></tr><tr class="even"><td><p> {% include logo content='Git' %}</p></td><td><p><a href="Git" title="wikilink">Git</a></p></td><td><p> A first-class {% include wikipedia title='Distributed version control' text='distributed'%} {% include wikipedia title='Version control' text='version control'%} system. Git saves "snapshots" of the source code, keeping a history of changes.</p></td></tr><tr class="odd"><td><p> {% include logo content='Maven' %}</p></td><td><p><a href="Maven" title="wikilink">Maven</a></p></td><td><p> A {% include wikipedia title='Build automation' text='build automation'%} tool with great dependency management. Maven converts source code into program binaries, and much more.</p></td></tr><tr class="even"><td><p> {% include logo content='Eclipse' %}</p></td><td><p><a href="Eclipse" title="wikilink">Eclipse</a></p></td><td><p>An <a href="IDE" title="wikilink">integrated development environment</a> (IDE) used by many ImageJ developers. Eclipse makes it much easier to explore and edit the source code.<br />
 Although: ImageJ can be developed using <a href="IDEs" title="wikilink"><em>any</em> IDE</a> which supports <a href="Maven" title="wikilink">Maven</a>.</p></td></tr></tbody></table>
 
-See the [Project management](Project_management ) page for further details.
+See the [Project management](Project_management) page for further details.
 
 Source code
 -----------
 
-[ImageJ](ImageJ ) and related [SciJava](SciJava ) software projects are [open source](Open_source ). The code is organized into [well-separated](Architecture#Modularity ) projects.
+[ImageJ](ImageJ) and related [SciJava](SciJava) software projects are [open source](Open_source). The code is organized into [well-separated](Architecture#Modularity) projects.
 
-See the [source code](Source_code ) page for further details.
+See the [source code](Source_code) page for further details.
 
 Tutorials
 ---------

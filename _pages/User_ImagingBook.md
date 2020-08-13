@@ -7,12 +7,12 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Wilhelm Burger ' github='imagingbook ' %}This account is used to manage the [ImagingBook update site](http://sites.imagej.net/ImagingBook/). See also {% include list-of-update-sites%}
+{% include user-box name='Wilhelm Burger' github='imagingbook' %}This account is used to manage the [ImagingBook update site](http://sites.imagej.net/ImagingBook/). See also {% include list-of-update-sites%}
 .
 
 To activate it:
 
--   [{% include bc content='Help|Update...'%}](Update_Sites )
+-   [{% include bc content='Help|Update...'%}](Update_Sites)
 -   Click *Manage update sites*
 -   Check one of the associated update sites:
     -   *ImagingBook*

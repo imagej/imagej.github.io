@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Git topic branches](Git_topic_branches )
+1.  REDIRECT [Git topic branches](Git_topic_branches)

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [TrackMate Algorithms](TrackMate_Algorithms )
+1.  REDIRECT [TrackMate Algorithms](TrackMate_Algorithms)

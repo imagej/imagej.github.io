@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Ulrik Günther ' affiliation='MPI-CBG Dresden ' forum='skalarproduktraum ' github='skalarproduktraum ' %}
+{% include user-box name='Ulrik Günther' affiliation='MPI-CBG Dresden' forum='skalarproduktraum' github='skalarproduktraum' %}

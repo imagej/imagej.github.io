@@ -9,9 +9,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='mpicbg-scicomp ' repo='Interactive-H-Watershed ' %}
+{% include github org='mpicbg-scicomp' repo='Interactive-H-Watershed' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji ' name='Interactive H\_Watershed ' author='[Benoit Lombardot](User_Benoit ) ' maintainer='[Benoit Lombardot](User_Benoit ) ' released='08 May 2017 ' filename='SCF-MPI-CBG update site ' source=source category='[Plugins](Category_Plugins ), [Segmentation](Category_Segmentation ) ' %}
+{% include info-box software='ImageJ/Fiji' name='Interactive H\_Watershed' author='[Benoit Lombardot](User_Benoit)' maintainer='[Benoit Lombardot](User_Benoit)' released='08 May 2017' filename='SCF-MPI-CBG update site' source=source category='[Plugins](Category_Plugins), [Segmentation](Category_Segmentation)' %}
 
 <img src="/images/pages/InteractiveWatershed illustration.PNG" width="500"/>
 
@@ -68,7 +68,7 @@ Usage
 Installation
 ------------
 
-To install the plugin in your ImageJ or Fiji installation. Add the update site SCF-MPI-CBG. Java8 update site should also be installed if it is not there yet. The procedure to follow an update site [can be found there](Following_an_update_site ).
+To install the plugin in your ImageJ or Fiji installation. Add the update site SCF-MPI-CBG. Java8 update site should also be installed if it is not there yet. The procedure to follow an update site [can be found there](Following_an_update_site).
 
 Once the update site is installed, restart ImageJ. A new menu, SCF, should appear. The Interactive Watershed plugin can be found in the menu *SCF&gt;Labelling&gt;Interactive H\_Watershed*.
 
@@ -139,11 +139,11 @@ Scripting
 
 In ImageJ macro language one can perform a H-Watershed segmentation with the following command:
 
-{% include github-embed org='mpicbg-scicomp ' repo='Interactive-H-Watershed ' path='scripts/macro\_IJ1.ijm ' %}
+{% include github-embed org='mpicbg-scicomp' repo='Interactive-H-Watershed' path='scripts/macro\_IJ1.ijm' %}
 
 In a Jython script the H-Watershed segmentation could be called as follows:
 
-{% include github-embed org='mpicbg-scicomp ' repo='Interactive-H-Watershed ' path='scripts/jython\_Ops.py ' %}
+{% include github-embed org='mpicbg-scicomp' repo='Interactive-H-Watershed' path='scripts/jython\_Ops.py' %}
 
 The run commands are also recorded by the macro recorder when exporting a label map.
 

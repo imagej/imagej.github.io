@@ -16,21 +16,21 @@ There have been 524190 lines added and 245463 removed since the previous release
 Changes since Fiji Plzeň
 ------------------------
 
--   There is a new plugin called [Trainable Segmentation](Trainable_Segmentation ). This plugin offers advanced machine learning techniques to train a model that segments your images into different classes.
+-   There is a new plugin called [Trainable Segmentation](Trainable_Segmentation). This plugin offers advanced machine learning techniques to train a model that segments your images into different classes.
 
   
 While it is developed actively, it is already quite powerful and easily usable by non-programmers.
 
--   Fixed a critical bug in the [Fiji Updater](Fiji_Updater ) that affected MacOSX. Symptom:
+-   Fixed a critical bug in the [Fiji Updater](Fiji_Updater) that affected MacOSX. Symptom:
 
   
-Fiji no longer starts after an update). If you have not updated between April 8, 2010 and June 3rd, 2010, this bug affects you and you have to follow [these instructions](Fix_non-functional_Fiji_after_Update_on_MacOSX ).
+Fiji no longer starts after an update). If you have not updated between April 8, 2010 and June 3rd, 2010, this bug affects you and you have to follow [these instructions](Fix_non-functional_Fiji_after_Update_on_MacOSX).
 
 -   Unfortunately, we had to drop support for MacOSX PPC. If you need Fiji on such a system, please contact [the Fiji developer mailing list](http://groups.google.com/group/fiji-devel), and we will try to provide a special edition.
 
 <!-- -->
 
--   For Debian/Ubuntu users, there will be [fine-grained packages](Finer_Grained_Debian_Packages ) of Fiji Heidelberg available soon.
+-   For Debian/Ubuntu users, there will be [fine-grained packages](Finer_Grained_Debian_Packages) of Fiji Heidelberg available soon.
 
 ### Other changes
 
@@ -38,7 +38,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   many, many improvements in [bUnwarpJ](BUnwarpJ ) (thanks Ignacio Arganda-Carreras).
+-   many, many improvements in [bUnwarpJ](BUnwarpJ) (thanks Ignacio Arganda-Carreras).
 
 <!-- -->
 
@@ -54,15 +54,15 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   many, many improvements to the [Simple Neurite Tracer](Simple_Neurite_Tracer ) and [3D Viewer](3D_Viewer ), which were split off from the [VIB Protocol](VIB_Protocol ) plugin (thanks Mark Longair and Benjamin Schmid).
+-   many, many improvements to the [Simple Neurite Tracer](Simple_Neurite_Tracer) and [3D Viewer](3D_Viewer), which were split off from the [VIB Protocol](VIB_Protocol) plugin (thanks Mark Longair and Benjamin Schmid).
 
 <!-- -->
 
--   many updates for the [Register Virtual Stack Slices](Register_Virtual_Stack_Slices ) plugin (thanks Ignacio Arganda-Carreras).
+-   many updates for the [Register Virtual Stack Slices](Register_Virtual_Stack_Slices) plugin (thanks Ignacio Arganda-Carreras).
 
 <!-- -->
 
--   [Auto Threshold](Auto_Threshold ) was improved, and made accessible to other plugins (thanks Gabriel Landini).
+-   [Auto Threshold](Auto_Threshold) was improved, and made accessible to other plugins (thanks Gabriel Landini).
 
 <!-- -->
 
@@ -82,7 +82,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   [TrakEM2](TrakEM2 ) was updated several times, with tons of new goodies (thanks Albert Cardona and Stephan Saalfeld). For example:
+-   [TrakEM2](TrakEM2) was updated several times, with tons of new goodies (thanks Albert Cardona and Stephan Saalfeld). For example:
 
 :\* extended multi-layer-mosaic alignment to handle
 
@@ -100,11 +100,11 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 :\* several bug-fixes
 
--   A plugin was added that performs the [SIOX](SIOX ) algorithm (color segmentation by example, thanks Ignacio Arganda-Carreras).
+-   A plugin was added that performs the [SIOX](SIOX) algorithm (color segmentation by example, thanks Ignacio Arganda-Carreras).
 
 <!-- -->
 
--   Some bugs in [Stitching 2D/3D](Stitching_2D/3D ) were fixed (thanks Stephan Preibisch and Ignacio Arganda-Carreras).
+-   Some bugs in [Stitching 2D/3D](Stitching_2D/3D) were fixed (thanks Stephan Preibisch and Ignacio Arganda-Carreras).
 
 <!-- -->
 
@@ -116,7 +116,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   A bug was fixed in the [MTrack2](MTrack2 ) plugin (thanks to Chris Elliott).
+-   A bug was fixed in the [MTrack2](MTrack2) plugin (thanks to Chris Elliott).
 
 <!-- -->
 
@@ -124,11 +124,11 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   Many improvements to the [AnalyzeSkeleton](AnalyzeSkeleton )/[Skeletonize3D](Skeletonize3D ) plugins (thanks Ignacio Arganda-Carreras and Daniel Hornung).
+-   Many improvements to the [AnalyzeSkeleton](AnalyzeSkeleton)/[Skeletonize3D](Skeletonize3D) plugins (thanks Ignacio Arganda-Carreras and Daniel Hornung).
 
 <!-- -->
 
--   The [RATS](RATS__Robust_Automatic_Threshold_Selection ) plugin was added, providing a very powerful automatic local thresholding technique (thanks Ben Tupper).
+-   The [RATS](RATS__Robust_Automatic_Threshold_Selection) plugin was added, providing a very powerful automatic local thresholding technique (thanks Ben Tupper).
 
 <!-- -->
 
@@ -136,7 +136,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   The code of the [VIB Protocol](VIB_Protocol ) was improved (thanks to Mark Longair, Benjamin Schmid and Nick Weiler).
+-   The code of the [VIB Protocol](VIB_Protocol) was improved (thanks to Mark Longair, Benjamin Schmid and Nick Weiler).
 
 <!-- -->
 
@@ -152,19 +152,19 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   The [Script Editor](Script_Editor ) offers code templates now (thanks Tom Kazimiers).
+-   The [Script Editor](Script_Editor) offers code templates now (thanks Tom Kazimiers).
 
 <!-- -->
 
--   The Find/Replace function in the [Script Editor](Script_Editor ) now defaults to the selected text (thanks Tom Kazimiers).
+-   The Find/Replace function in the [Script Editor](Script_Editor) now defaults to the selected text (thanks Tom Kazimiers).
 
 <!-- -->
 
--   The [Tutorial Maker](Tutorial_Maker ) was renamed to {% include bc content='Plugins | Utilities | Fiji | New Fiji Tutorial'%}, and you can choose to upload to another Wiki than the Fiji Wiki (provided that it is powered by MediaWiki). It also uses the [Script Editor](Script_Editor ) for better usability now.
+-   The [Tutorial Maker](Tutorial_Maker) was renamed to {% include bc content='Plugins | Utilities | Fiji | New Fiji Tutorial'%}, and you can choose to upload to another Wiki than the Fiji Wiki (provided that it is powered by MediaWiki). It also uses the [Script Editor](Script_Editor) for better usability now.
 
 <!-- -->
 
--   The [Image Expression Parser](Image_Expression_Parser ) plugin was added, providing much more powerful operations on Images than the simple Image Calculator or Image Calculator Plus plugins (thanks to Jean-Yves Tinevez).
+-   The [Image Expression Parser](Image_Expression_Parser) plugin was added, providing much more powerful operations on Images than the simple Image Calculator or Image Calculator Plus plugins (thanks to Jean-Yves Tinevez).
 
 <!-- -->
 
@@ -188,23 +188,23 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   The [Script Editor](Script_Editor ) offers tabs now.
+-   The [Script Editor](Script_Editor) offers tabs now.
 
 <!-- -->
 
--   When a file changed outside the [Script Editor](Script_Editor ), it offers to reload the file now.
+-   When a file changed outside the [Script Editor](Script_Editor), it offers to reload the file now.
 
 <!-- -->
 
--   The [Script Editor](Script_Editor ) offers the ImageJ Macro Language in the Languages menu, with syntax-highlighting. Consequently, it is now the default editor for macros.
+-   The [Script Editor](Script_Editor) offers the ImageJ Macro Language in the Languages menu, with syntax-highlighting. Consequently, it is now the default editor for macros.
 
 <!-- -->
 
--   The [Script Editor](Script_Editor ) got a function to run just the selected part of the script.
+-   The [Script Editor](Script_Editor) got a function to run just the selected part of the script.
 
 <!-- -->
 
--   Many more improvements in the [Script Editor](Script_Editor ).
+-   Many more improvements in the [Script Editor](Script_Editor).
 
 <!-- -->
 
@@ -212,11 +212,11 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   The [Directionality](Directionality ) plugin was added to analyze images containing oriented structures (thanks Jean-Yves Tinevez).
+-   The [Directionality](Directionality) plugin was added to analyze images containing oriented structures (thanks Jean-Yves Tinevez).
 
 <!-- -->
 
--   The [Time Stamper](Time_Stamper ) plugin was updated (thanks Jean-Yves Tinevez, Daniel James White and Tom Kazimiers).
+-   The [Time Stamper](Time_Stamper) plugin was updated (thanks Jean-Yves Tinevez, Daniel James White and Tom Kazimiers).
 
 <!-- -->
 
@@ -248,23 +248,23 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   The [Script Editor](Script_Editor ) supports bookmarks now.
+-   The [Script Editor](Script_Editor) supports bookmarks now.
 
 <!-- -->
 
--   The [3D Viewer](3D_Viewer ) is now actually a 4D Viewer, handling hyperstacks correctly, and was improved in many other ways, too (thanks to Benjamin Schmid and Gabriel Landini).
+-   The [3D Viewer](3D_Viewer) is now actually a 4D Viewer, handling hyperstacks correctly, and was improved in many other ways, too (thanks to Benjamin Schmid and Gabriel Landini).
 
 <!-- -->
 
--   The [3D Viewer](3D_Viewer ) can export any kind of mesh now (thanks to Albert Cardona).
+-   The [3D Viewer](3D_Viewer) can export any kind of mesh now (thanks to Albert Cardona).
 
 <!-- -->
 
--   The [Anisotropic Diffusion 2D](Anisotropic_Diffusion_2D ) plugin was added.
+-   The [Anisotropic Diffusion 2D](Anisotropic_Diffusion_2D) plugin was added.
 
 <!-- -->
 
--   The [LSM Toolbox](LSM_Toolbox ) was updated to version 4.0g (thanks to Patrick Pirotte and Jean-Yves Tinevez).
+-   The [LSM Toolbox](LSM_Toolbox) was updated to version 4.0g (thanks to Patrick Pirotte and Jean-Yves Tinevez).
 
 <!-- -->
 
@@ -276,11 +276,11 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   [View5D](View5D ) was updated to version 1.2.17, thanks to Rainer Heintzmann and Jean-Yves Tinevez.
+-   [View5D](View5D) was updated to version 1.2.17, thanks to Rainer Heintzmann and Jean-Yves Tinevez.
 
 <!-- -->
 
--   The [Find Connected Regions](Find_Connected_Regions ) plugin was updated, thanks to Mark Longair.
+-   The [Find Connected Regions](Find_Connected_Regions) plugin was updated, thanks to Mark Longair.
 
 <!-- -->
 
@@ -288,11 +288,11 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   The [Fiji Updater](Update_Fiji ) up-to-date check is no longer run when you call Fiji with an argument (e.g. by Drag 'n Drop of an image onto the Fiji icon). Thanks to Jean-Marc Verbavatz for the suggestion.
+-   The [Fiji Updater](Update_Fiji) up-to-date check is no longer run when you call Fiji with an argument (e.g. by Drag 'n Drop of an image onto the Fiji icon). Thanks to Jean-Marc Verbavatz for the suggestion.
 
 <!-- -->
 
--   The [Fiji Updater](Update_Fiji ) offers to update Java on Windows and Linux in the Advanced Mode, thanks to one of the rare less-exciting talks at the ELMI meeting.
+-   The [Fiji Updater](Update_Fiji) offers to update Java on Windows and Linux in the Advanced Mode, thanks to one of the rare less-exciting talks at the ELMI meeting.
 
 <!-- -->
 
@@ -300,11 +300,11 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   The [SPIM Registration](SPIM_Registration ) plugin was added, offering multi-angle registration and reconstruction typically needed in Selective Plane Illumination Microscopy (thanks to Stephan Preibisch, Stephan Saalfeld and Pavel Tomancak).
+-   The [SPIM Registration](SPIM_Registration) plugin was added, offering multi-angle registration and reconstruction typically needed in Selective Plane Illumination Microscopy (thanks to Stephan Preibisch, Stephan Saalfeld and Pavel Tomancak).
 
 <!-- -->
 
--   [Clojure](Clojure_Scripting ) was updated to a newer version (thanks to Albert Cardona).
+-   [Clojure](Clojure_Scripting) was updated to a newer version (thanks to Albert Cardona).
 
 <!-- -->
 
@@ -312,7 +312,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   The [QuickPALM](QuickPALM ) plugin was added (thanks to Ricardo Henriques).
+-   The [QuickPALM](QuickPALM) plugin was added (thanks to Ricardo Henriques).
 
 <!-- -->
 
@@ -321,7 +321,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 Developer-visible changes
 -------------------------
 
--   There are two nightly builds, one including all the submodules, and the other to make sure that Fiji builds using Java 5 (which we are stuck to, because [there will not be any Java 6 for MacOSX 10.4, or for 32-bit MacOSX 10.5](MacOSX_tips#Running_Fiji_on_Java_1.5_.2832-bit.29 )).
+-   There are two nightly builds, one including all the submodules, and the other to make sure that Fiji builds using Java 5 (which we are stuck to, because [there will not be any Java 6 for MacOSX 10.4, or for 32-bit MacOSX 10.5](MacOSX_tips#Running_Fiji_on_Java_1.5_.2832-bit.29)).
 
 <!-- -->
 
@@ -329,43 +329,43 @@ Developer-visible changes
 
 <!-- -->
 
--   Developers can upload new plugins or updates from the [Fiji Updater](Fiji_Updater ) GUI, if they have the write permissions on the server (includes bug fixes by Mark Longair).
+-   Developers can upload new plugins or updates from the [Fiji Updater](Fiji_Updater) GUI, if they have the write permissions on the server (includes bug fixes by Mark Longair).
 
 <!-- -->
 
--   Many improvements in the [build system](Fiji_Build_System ) (less unnecessary rebuilds, separate output directory, excluding files from a .jar target, etc). Thanks to Jacques Pecreaux, Mark Longair and Curtis Rueden.
+-   Many improvements in the [build system](Fiji_Build_System) (less unnecessary rebuilds, separate output directory, excluding files from a .jar target, etc). Thanks to Jacques Pecreaux, Mark Longair and Curtis Rueden.
 
 <!-- -->
 
--   There is a generic way to define a tool in Java now, fiji.util.AbstractTool, rather than going the awkward way to define a macro that calls back into the Java code (thanks Jean-Yves Tinevez). An example is our [Arrow](Arrow ) Tool.
+-   There is a generic way to define a tool in Java now, fiji.util.AbstractTool, rather than going the awkward way to define a macro that calls back into the Java code (thanks Jean-Yves Tinevez). An example is our [Arrow](Arrow) Tool.
 
 <!-- -->
 
--   The [Script Editor](Script_Editor ) can launch classes outside of plugins/ now.
+-   The [Script Editor](Script_Editor) can launch classes outside of plugins/ now.
 
 <!-- -->
 
--   The [Script Editor](Script_Editor ) can make .jar files from .java plugins now.
+-   The [Script Editor](Script_Editor) can make .jar files from .java plugins now.
 
 <!-- -->
 
--   The [Script Editor](Script_Editor ) can build and launch [Fiji plugins](Category_Plugins ) from `$FIJI_ROOT/src-plugins/`<name>`/` now.
+-   The [Script Editor](Script_Editor) can build and launch [Fiji plugins](Category_Plugins) from `$FIJI_ROOT/src-plugins/`<name>`/` now.
 
 <!-- -->
 
--   The [Script Editor](Script_Editor ) recognizes errors from the Java compiler and offers to jump to the location of the next/previous error.
+-   The [Script Editor](Script_Editor) recognizes errors from the Java compiler and offers to jump to the location of the next/previous error.
 
 <!-- -->
 
--   The [Script Editor](Script_Editor ) recognizes exceptions thrown during the execution of a script and offers to jump to the next/previous location in the stacktrace.
+-   The [Script Editor](Script_Editor) recognizes exceptions thrown during the execution of a script and offers to jump to the next/previous location in the stacktrace.
 
 <!-- -->
 
--   You can ask the [Script Editor](Script_Editor ) to open the [JavaDoc](https://fiji.sc/javadoc/) for a given class using {% include bc content='Tools | Open Help on Class...'%}
+-   You can ask the [Script Editor](Script_Editor) to open the [JavaDoc](https://fiji.sc/javadoc/) for a given class using {% include bc content='Tools | Open Help on Class...'%}
 
 <!-- -->
 
--   The [WEKA library](Using_Weka ) is now part of Fiji; the {% include github org='fiji ' repo='fiji-compat ' source='fiji/FijiClassLoader.java ' label='FijiClassLoader ' %} is now an instance of URLClassLoader just because of that (thanks for Verena Kaynig, Albert Cardona and Ignacio Arganda-Carreras for the prodding).
+-   The [WEKA library](Using_Weka) is now part of Fiji; the {% include github org='fiji' repo='fiji-compat' source='fiji/FijiClassLoader.java' label='FijiClassLoader' %} is now an instance of URLClassLoader just because of that (thanks for Verena Kaynig, Albert Cardona and Ignacio Arganda-Carreras for the prodding).
 
 <!-- -->
 
@@ -373,19 +373,19 @@ Developer-visible changes
 
 <!-- -->
 
--   The new [versatile and most generic image processing library](Imglib ) -- fully Open Source! -- was added (thanks Stephan Saalfeld and Stephan Preibisch).
+-   The new [versatile and most generic image processing library](Imglib) -- fully Open Source! -- was added (thanks Stephan Saalfeld and Stephan Preibisch).
 
 <!-- -->
 
--   [imglib](Imglib ) was improved dramatically (thanks to Stephan Saalfeld, Stephan Preibisch, Larry Lindsey and Curtis Rueden).
+-   [imglib](Imglib) was improved dramatically (thanks to Stephan Saalfeld, Stephan Preibisch, Larry Lindsey and Curtis Rueden).
 
 <!-- -->
 
--   To use the [imglib](Imglib ), just select the Imglib Plugin item of [Script Editor's](Script_Editor ) *Templates* menu.
+-   To use the [imglib](Imglib), just select the Imglib Plugin item of [Script Editor's](Script_Editor) *Templates* menu.
 
 <!-- -->
 
--   The [Script Editor](Script_Editor ) learnt quite a number of functions that are useful when developing plugins written in Java (e.g. opening the sources for a menu item, or opening the directory of the current file upon {% include bc content='File | Open'%}/, or offering to search for the sources of a class).
+-   The [Script Editor](Script_Editor) learnt quite a number of functions that are useful when developing plugins written in Java (e.g. opening the sources for a menu item, or opening the directory of the current file upon {% include bc content='File | Open'%}/, or offering to search for the sources of a class).
 
 <!-- -->
 
@@ -401,7 +401,7 @@ Developer-visible changes
 
 <!-- -->
 
--   The [Fiji Updater](Fiji_Updater ) offers developers to see the plugin changes since the latest upload of said plugin.
+-   The [Fiji Updater](Fiji_Updater) offers developers to see the plugin changes since the latest upload of said plugin.
 
 <!-- -->
 
@@ -409,19 +409,19 @@ Developer-visible changes
 
 <!-- -->
 
--   Both *plugins/\*.jar* and *jars/\*.jar* are loaded via the {% include github org='fiji ' repo='fiji-compat ' source='fiji/FijiClassLoader.java ' label='FijiClassLoader ' %} now, which allows *.jar* files from *jars/* to call functions in *.jar* files from *plugins/* (notable exception: *jars/ij.jar* and *jars/Fiji.jar*).
+-   Both *plugins/\*.jar* and *jars/\*.jar* are loaded via the {% include github org='fiji' repo='fiji-compat' source='fiji/FijiClassLoader.java' label='FijiClassLoader' %} now, which allows *.jar* files from *jars/* to call functions in *.jar* files from *plugins/* (notable exception: *jars/ij.jar* and *jars/Fiji.jar*).
 
 <!-- -->
 
--   You can use the **analyze-dependencies.bsh** script to check dependencies of .jar files, reusing the functionality of the [Fiji Updater's](Fiji_Updater ) upload functionality.
+-   You can use the **analyze-dependencies.bsh** script to check dependencies of .jar files, reusing the functionality of the [Fiji Updater's](Fiji_Updater) upload functionality.
 
 <!-- -->
 
--   You can make your own "View on Fiji Development" movie, as seen on our [YouTube channel](http://youtube.com/fijichannel), using the combined-gource-video.bsh script (requires {% include github org='dscho ' repo='Gource ' label='Gource ' %}).
+-   You can make your own "View on Fiji Development" movie, as seen on our [YouTube channel](http://youtube.com/fijichannel), using the combined-gource-video.bsh script (requires {% include github org='dscho' repo='Gource' label='Gource' %}).
 
 <!-- -->
 
--   The [VIB](VIB_Protocol ) sources were moved from a submodule directly into [fiji.git](https://fiji.sc/fiji.git).
+-   The [VIB](VIB_Protocol) sources were moved from a submodule directly into [fiji.git](https://fiji.sc/fiji.git).
 
 <!-- -->
 
@@ -429,15 +429,15 @@ Developer-visible changes
 
 <!-- -->
 
--   There is a command line interface to the [Fiji Updater](Fiji_Updater ) now (e.g. run **fiji --jar plugins/Fiji\_Updater.jar --list jars/ij.jar** to find out the status of *jars/ij.jar*).
+-   There is a command line interface to the [Fiji Updater](Fiji_Updater) now (e.g. run **fiji --jar plugins/Fiji\_Updater.jar --list jars/ij.jar** to find out the status of *jars/ij.jar*).
 
 <!-- -->
 
--   [Fiji Build](Fiji_Build_System ) allows falling back to the [updater](Fiji_Updater ) if there is no *precompiled/* file for a not-checked-out submodule.
+-   [Fiji Build](Fiji_Build_System) allows falling back to the [updater](Fiji_Updater) if there is no *precompiled/* file for a not-checked-out submodule.
 
 <!-- -->
 
--   The [Fiji Build](Fiji_Build_System ) is more easily called via a public API now.
+-   The [Fiji Build](Fiji_Build_System) is more easily called via a public API now.
 
 <!-- -->
 
@@ -477,7 +477,7 @@ Developer-visible changes
 
 <!-- -->
 
--   When developing a in the [Script Editor](Script_Editor ), one can see the diff and commit the changes from within the [Script Editor](Script_Editor ) now.
+-   When developing a in the [Script Editor](Script_Editor), one can see the diff and commit the changes from within the [Script Editor](Script_Editor) now.
 
 <!-- -->
 
@@ -487,4 +487,4 @@ Developer-visible changes
 
 -   There is a maven helper in **bin/maven.sh** now, you can call it from Fakefiles to download maven if necessary, and then run it.
 
-[Fiji plugin](Category_Plugins ) 
+[Fiji plugin](Category_Plugins) 

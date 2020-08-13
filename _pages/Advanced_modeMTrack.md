@@ -14,17 +14,17 @@ In advanced mode there are three distinct methods to identify microtubules, MSER
 
 ### MSER
 
-This is the default method of object recognition in the simple mode and for sparsely populated images is the method of choice to find the regions in the image where the microtubules lie, the microtubules are assumed to lie along the semi-major axis of the MSER ellipses. Read more about [MSER parameters](MSER_parameters ).
+This is the default method of object recognition in the simple mode and for sparsely populated images is the method of choice to find the regions in the image where the microtubules lie, the microtubules are assumed to lie along the semi-major axis of the MSER ellipses. Read more about [MSER parameters](MSER_parameters).
 
 ### Watershedding and Hough Transform
 
-For crowded movies MSER based segmentation may not be able to separate close lying seeds. To do that watershed based segmentation may be needed, watershedding is able to demarcate the regions where each microtubule lies. After these regions have been found a Hough Transform is performed to obtain the line parameters for each microtubule. Read more about [watershedding and Hough transform parameters](Watershedding_and_Hough_transform_parameters ).
+For crowded movies MSER based segmentation may not be able to separate close lying seeds. To do that watershed based segmentation may be needed, watershedding is able to demarcate the regions where each microtubule lies. After these regions have been found a Hough Transform is performed to obtain the line parameters for each microtubule. Read more about [watershedding and Hough transform parameters](Watershedding_and_Hough_transform_parameters).
 
 ### MSER and Hough Transform
 
 For not so dense images the microtubules are easy to locate and MSER is able to do so, in the default MSER approach it is assumed that the microtubules lie along the semi-major axis of the microtubules, which is true in most of the cases. If however they do not lie along the semi-major axis of the ellipses a Hough transform inside each of the ellipse can be performed to determine the line parameters for each seed.
 
-In this approach the user has to first make a selection of the MSER parameters and then Hough transform parameters (see [MSER parameters](MSER_parameters ) and Size of Hough space in rho/theta in [watershedding and Hough transform parameters](Watershedding_and_Hough_transform_parameters )), MSER ellipses would be displayed in which the Hough transform would be carried out to find the line parameters of all the microtubules.
+In this approach the user has to first make a selection of the MSER parameters and then Hough transform parameters (see [MSER parameters](MSER_parameters) and Size of Hough space in rho/theta in [watershedding and Hough transform parameters](Watershedding_and_Hough_transform_parameters)), MSER ellipses would be displayed in which the Hough transform would be carried out to find the line parameters of all the microtubules.
 
 The first panel for this mode is shown below.
 
@@ -49,6 +49,6 @@ The tracking is performed from the first frame till the end frame by default, if
 
 -   Select Segmentation method
 
-For the dynamic channel the user here has the option of selecting just [MSER as the segmentation method](MSER_as_the_segmentation_method ) or [watershed followed by MSER](Watershed_followed_by_MSER ), the first method is the default method in the simple mode. The second method is provided here to ensure correct assignment of the end points over the time frames when microtubules get too close to each other and collide for example. The parameter selection required for each of the two segmentation methods is made in the next panel to which the user can flip to after making this choice.
+For the dynamic channel the user here has the option of selecting just [MSER as the segmentation method](MSER_as_the_segmentation_method) or [watershed followed by MSER](Watershed_followed_by_MSER), the first method is the default method in the simple mode. The second method is provided here to ensure correct assignment of the end points over the time frames when microtubules get too close to each other and collide for example. The parameter selection required for each of the two segmentation methods is made in the next panel to which the user can flip to after making this choice.
 
 After choosing appropriate parameters in either of the two segmentation methods the user can then track and save the program parameters for a batch mode run.

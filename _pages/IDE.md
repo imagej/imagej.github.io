@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [IDEs](IDEs )
+1.  REDIRECT [IDEs](IDEs)

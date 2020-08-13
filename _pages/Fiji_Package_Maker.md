@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Make Fiji Package](Make_Fiji_Package )
+1.  REDIRECT [Make Fiji Package](Make_Fiji_Package)

@@ -13,7 +13,7 @@ description: test description
 Introduction
 ------------
 
-The [ImgLib2](ImgLib2 ) library uses [Maven](Maven ) to manage project dependencies. One advantage of this approach is nice integration with various development environments ([IDEs](IDEs )).
+The [ImgLib2](ImgLib2) library uses [Maven](Maven) to manage project dependencies. One advantage of this approach is nice integration with various development environments ([IDEs](IDEs)).
 
 Because people tend to have differing IDE configurations, we do not put project metadata files (e.g., `.classpath`, `.project` and `.settings` for Eclipse) into the git repository. Instead, the IDE can use Maven's `pom.xml` file directly to manage your dependencies in a better way.
 
@@ -27,7 +27,7 @@ Developing ImgLib2 with Eclipse
 
 To develop ImgLib2 in Eclipse, follow these steps:
 
-1.  [Install the Maven plugin](Using_Maven_with_Eclipse )
+1.  [Install the Maven plugin](Using_Maven_with_Eclipse)
 2.  Choose {% include bc content='File | Import'%} from the Eclipse menu
 3.  Select "Existing Maven Projects" and click Next
 4.  For the Root Directory, specify the path where you cloned ImgLib2
@@ -43,14 +43,14 @@ Developing ImgLib2 with IDEA
 
 IntelliJ IDEA comes with built-in support for Maven.
 
-See [Developing ImageJ in IntelliJ IDEA](Developing_ImageJ_in_IntelliJ_IDEA ).
+See [Developing ImageJ in IntelliJ IDEA](Developing_ImageJ_in_IntelliJ_IDEA).
 
 Developing ImgLib2 with NetBeans
 --------------------------------
 
 NetBeans comes with built-in support for Maven.
 
-See [Developing ImageJ in NetBeans](Developing_ImageJ_in_NetBeans ).
+See [Developing ImageJ in NetBeans](Developing_ImageJ_in_NetBeans).
 
 Developing ImgLib2 with command line tools
 ------------------------------------------

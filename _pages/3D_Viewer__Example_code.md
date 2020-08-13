@@ -7,8 +7,8 @@ categories:
 description: test description
 ---
 
-(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation ) page)  
-(Return to the main [3D\_Viewer](3D_Viewer ) page)
+(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation) page)  
+(Return to the main [3D\_Viewer](3D_Viewer) page)
 
 Below you can find a list of all the example java classes for download, together with a short description.
 

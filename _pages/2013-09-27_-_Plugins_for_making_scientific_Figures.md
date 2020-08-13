@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2013-11-04 - Plugins for making scientific Figures](2013-11-04_-_Plugins_for_making_scientific_Figures )
+1.  REDIRECT [2013-11-04 - Plugins for making scientific Figures](2013-11-04_-_Plugins_for_making_scientific_Figures)

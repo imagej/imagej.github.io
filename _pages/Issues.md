@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Project management\#Issue\_tracking](Project_management#Issue_tracking )
+1.  REDIRECT [Project management\#Issue\_tracking](Project_management#Issue_tracking)

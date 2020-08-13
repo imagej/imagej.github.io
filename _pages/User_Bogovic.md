@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='John Bogovic ' affiliation='HHMI Janelia Research Campus ' github='bogovicj ' %}
+{% include user-box name='John Bogovic' affiliation='HHMI Janelia Research Campus' github='bogovicj' %}

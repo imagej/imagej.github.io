@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Skeletonize3D](Skeletonize3D )
+1.  REDIRECT [Skeletonize3D](Skeletonize3D)

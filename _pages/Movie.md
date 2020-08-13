@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Video](Video )
+1.  REDIRECT [Video](Video)

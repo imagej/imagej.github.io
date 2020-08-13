@@ -148,8 +148,8 @@ Note & references
 
   
 
-[1] {% include citation last='Raffael ' first='M. ' last2='Willert ' first2='C. ' last3='Kompenhans ' first3='J. ' title='Particle Image Velocimetry: A Practical Guide ' place='Berlin ' publisher='Springer-Verlag ' year='2007 ' volume=' ' edition='2nd ' url='http://www.springer.com/new+%26+forthcoming+titles+(default)/book/978-3-540-72307-3 ' doi=' ' id=' ' isbn='978-3-540-72307-3 ' %}
+[1] {% include citation last='Raffael' first='M.' last2='Willert' first2='C.' last3='Kompenhans' first3='J.' title='Particle Image Velocimetry: A Practical Guide' place='Berlin' publisher='Springer-Verlag' year='2007' volume='' edition='2nd' url='http://www.springer.com/new+%26+forthcoming+titles+(default)/book/978-3-540-72307-3' doi='' id='' isbn='978-3-540-72307-3' %}
 
-[2] {% include citation last='Supatto ' first='W. ' last2='Débarre ' first2='D. ' last3='Moulia ' first3='B. ' last4='Martin ' first4='J-L. ' last5='Farge ' first5='E. ' last6='Beaurepaire ' first6='E. ' title='In vivo modulation of morphogenetic movements in Drosophila embryos with femtosecond laser pulses ' journal='PNAS ' volume='102 ' pages='1047-1052 ' year='2005 ' PMID='15657140 ' %}
+[2] {% include citation last='Supatto' first='W.' last2='Débarre' first2='D.' last3='Moulia' first3='B.' last4='Martin' first4='J-L.' last5='Farge' first5='E.' last6='Beaurepaire' first6='E.' title='In vivo modulation of morphogenetic movements in Drosophila embryos with femtosecond laser pulses' journal='PNAS' volume='102' pages='1047-1052' year='2005' PMID='15657140' %}
 
-[3] {% include citation last='Hove ' first='J.R. ' first2='R.W. ' last3='Forouhar ' first3='A.S. ' last4='Acevedo-Bolton ' first4='G. ' last5='Fraser ' first5='S.E. ' last6='Gharib ' first6='M. ' title='Intracardiac fluid forces are an essential epigenetic factor for embryonic cardiogenesis ' journal='Nature ' volume='421 ' pages='172-177 ' year='2003 ' PMID='12520305 ' %}
+[3] {% include citation last='Hove' first='J.R.' first2='R.W.' last3='Forouhar' first3='A.S.' last4='Acevedo-Bolton' first4='G.' last5='Fraser' first5='S.E.' last6='Gharib' first6='M.' title='Intracardiac fluid forces are an essential epigenetic factor for embryonic cardiogenesis' journal='Nature' volume='421' pages='172-177' year='2003' PMID='12520305' %}

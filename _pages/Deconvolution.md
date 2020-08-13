@@ -7,7 +7,7 @@ categories: Cookbook,Tutorials
 description: test description
 ---
 
-{% include biginfo-box content='See [:Category:Deconvolution](Category_Deconvolution ) for pages about deconvolution.' %} {% include menu-cookbook%}
+{% include biginfo-box content='See [:Category:Deconvolution](Category_Deconvolution) for pages about deconvolution.' %} {% include menu-cookbook%}
 {% include learn content='techniques' %}{% include wikipedia title='Deconvolution' text='Deconvolution'%} corrects the systematic error of blur (loss of contrast in smaller features) in optical systems such as fluorescence microscopy images.
 
 The problem, and the solution

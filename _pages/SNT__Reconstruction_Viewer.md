@@ -232,8 +232,8 @@ Analyze and Measure
 <figure><img src="/images/pages/reconstruction-viewer-brain-area-analysis.png" title="Brain Area Analyis: Cable Length" width="300" alt="Brain Area Analyis: Cable Length" /><figcaption aria-hidden="true">Brain Area Analyis: Cable Length</figcaption></figure>
 
 -   {% include bc content='Brain Area Analysis...'%} Measures the amount of cable length, number of terminal nodes, or both that occur in distinct anatomical regions of the brain, with the option to restrict the analysis up to a maximum depth in the ontology hierarchy. Note that only one reconstruction may be selected at a time with this option.
--   {% include bc content='Create Dendrogram...'%} Runs the {% include bc content='Utilities|Create Dendrogram...'%} command found in the main SNT dialog. See [Dendrogram Viewer](SNT__Analysis#Dendrogram_Viewer ). Note only one reconstruction may be selected at a time with this option.
--   {% include bc content='Sholl Analysis...'%} Runs the [Sholl Analysis](Sholl_Analysis ) plugin found in {% include bc content='Analyze|Sholl|Sholl Analysis (From Tracings)'%}. Note only one reconstruction may be analysed at a time.
+-   {% include bc content='Create Dendrogram...'%} Runs the {% include bc content='Utilities|Create Dendrogram...'%} command found in the main SNT dialog. See [Dendrogram Viewer](SNT__Analysis#Dendrogram_Viewer). Note only one reconstruction may be selected at a time with this option.
+-   {% include bc content='Sholl Analysis...'%} Runs the [Sholl Analysis](Sholl_Analysis) plugin found in {% include bc content='Analyze|Sholl|Sholl Analysis (From Tracings)'%}. Note only one reconstruction may be analysed at a time.
 
 <div align="left">
 
@@ -268,7 +268,7 @@ Utilities
 
 ### Scripting
 
--   {% include bc content='Script This Viewer'%} Opens an instance of the Script Editor with pre-loaded extensible boilerplate code for advanced scripting of Reconstruction Viewer. For an example of the scripting capabilities of Reconstruction Viewer, see [Scripting Reconstruction Viewer](SNT__Scripting#Scripting_Reconstruction_Viewer ). A related script template can also be found in the Script Editor at {% include bc content='Templates|Neuroanatomy|Analysis|Reconstruction Viewer Demo (Python)'%}.
+-   {% include bc content='Script This Viewer'%} Opens an instance of the Script Editor with pre-loaded extensible boilerplate code for advanced scripting of Reconstruction Viewer. For an example of the scripting capabilities of Reconstruction Viewer, see [Scripting Reconstruction Viewer](SNT__Scripting#Scripting_Reconstruction_Viewer). A related script template can also be found in the Script Editor at {% include bc content='Templates|Neuroanatomy|Analysis|Reconstruction Viewer Demo (Python)'%}.
 -   {% include bc content='Script This Viewer In...'%} Prompts for selection of scripting language before running the previous command.
 -   {% include bc content='Log Scene Details'%} {% include key content='L' %} Logs detailed information about the current scene (e.g., currently visible objects, API calls, etc.) to the Console. This facilitates programmatic control over the Viewer's scene.
 -   {% include bc content='Debug Mode'%} Logs detailed information about plugin usage, including warnings and errors to the Console.

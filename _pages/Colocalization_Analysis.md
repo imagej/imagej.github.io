@@ -7,7 +7,7 @@ categories: Cookbook,Tutorials,Colocalization,Color processing
 description: test description
 ---
 
-{% include biginfo-box content='See [:Category:Colocalization](Category_Colocalization ) for pages about colocalization.' %} {% include learn content='techniques' %}
+{% include biginfo-box content='See [:Category:Colocalization](Category_Colocalization) for pages about colocalization.' %} {% include learn content='techniques' %}
 
 What is colocalization?
 -----------------------
@@ -21,17 +21,17 @@ Suppose you are given some images by a colleague, or have some images of your ow
 Here just are two of many colocalization coefficients to express the intensity correlation of colocalizing objects in each component of a dual-color image:
 
 1.  **Pearson's correlation coefficient.** It is not sensitive to differences in mean signal intensities or range, or a zero offset between the two components. The result is +1 for perfect correlation, 0 for no correlation, and -1 for perfect anti-correlation. Noise makes the value closer to 0 than it should be.
-2.  **Manders split coefficients.** Proportional to the amount of fluorescence of the colocalizing pixels or voxels in each colour channel. You can get more details in [Manders et al.](Media_Manders.pdf ) Values range from 0 to 1, expressing the fraction of intensity in a channel that is located in pixels where there is above zero (or threshold) intensity in the other colour channel.
+2.  **Manders split coefficients.** Proportional to the amount of fluorescence of the colocalizing pixels or voxels in each colour channel. You can get more details in [Manders et al.](Media_Manders.pdf) Values range from 0 to 1, expressing the fraction of intensity in a channel that is located in pixels where there is above zero (or threshold) intensity in the other colour channel.
 
-These coefficients measure the amount or degree of colocalization, or rather correlation and co-occurrence respectively (but should not be expressed as % values, because that is not how they are defined). But if there is nothing to compare them to, what do they mean? A statistical significance test was derived by Costses to evaluate the probability that the measured value of Pearson's correlation, r between the two colour channels is significantly greater than values of r that would be calculated if there was only random overlap of the same information. This test is performed by randomly scrambling the blocks of pixels (instead of individual pixels, because each pixel's intensity is correlated with its neighboring pixels) in one image, and then measuring the correlation of this image with the other (unscrambled) image. You can get more details in [Costes et al.](Media_Costes_etalColoc.pdf ) The result of this tests tell us if the Pearsons r and split Manders' coefficients we measure are better than pure chance or not.
+These coefficients measure the amount or degree of colocalization, or rather correlation and co-occurrence respectively (but should not be expressed as % values, because that is not how they are defined). But if there is nothing to compare them to, what do they mean? A statistical significance test was derived by Costses to evaluate the probability that the measured value of Pearson's correlation, r between the two colour channels is significantly greater than values of r that would be calculated if there was only random overlap of the same information. This test is performed by randomly scrambling the blocks of pixels (instead of individual pixels, because each pixel's intensity is correlated with its neighboring pixels) in one image, and then measuring the correlation of this image with the other (unscrambled) image. You can get more details in [Costes et al.](Media_Costes_etalColoc.pdf) The result of this tests tell us if the Pearsons r and split Manders' coefficients we measure are better than pure chance or not.
 
-Other coefficients include ranked correlations such as Spearman and Kendal's Tau, Li's ICQ and the % of intensities or area (volume) above one or both thresholds (coming soon to Coloc\_2). Some others are described in the literature that have been used in publications, but that have been refuted as insensitive, such as the overlap coefficient from the Manders paper, which [J. Adler et al.](Media_Adler_et_al-2010-Cytometry_Part_A.pdf ) showed to have large problems in interpretation compared to Pearson's r and Manders' split coefficients.
+Other coefficients include ranked correlations such as Spearman and Kendal's Tau, Li's ICQ and the % of intensities or area (volume) above one or both thresholds (coming soon to Coloc\_2). Some others are described in the literature that have been used in publications, but that have been refuted as insensitive, such as the overlap coefficient from the Manders paper, which [J. Adler et al.](Media_Adler_et_al-2010-Cytometry_Part_A.pdf) showed to have large problems in interpretation compared to Pearson's r and Manders' split coefficients.
 
-Other methods include ICCS (image cross correlation spectroscopy) and a derivative of that called [PPI](http://www.anes.ucla.edu/~wuyong/PPI/index.html) (protein proximity index, [original article](Media_Wu2010-crosscorrelationPPI_Coloc.pdf )).
+Other methods include ICCS (image cross correlation spectroscopy) and a derivative of that called [PPI](http://www.anes.ucla.edu/~wuyong/PPI/index.html) (protein proximity index, [original article](Media_Wu2010-crosscorrelationPPI_Coloc.pdf)).
 
 #### Object-based overlap analysis
 
-This cookbook does not cover object-based overlap analysis, since it requires segmenting the image into objects and background, and that is a whole branch of image processing in itself. See the [JACoP](JACoP ) imageJ plugin for object based methods.
+This cookbook does not cover object-based overlap analysis, since it requires segmenting the image into objects and background, and that is a whole branch of image processing in itself. See the [JACoP](JACoP) imageJ plugin for object based methods.
 
 #### Do state the spatial resolution explicitly!
 
@@ -74,23 +74,23 @@ If you like, you can change the look up tables of the images (LUTs) so one is "g
 ImageJ plugins for colocalization analysis
 ------------------------------------------
 
-There are several plugins available for performing colocalization analysis. In addition to the options described below, see also the [index of pages related to colocalization](Category_Colocalization ).
+There are several plugins available for performing colocalization analysis. In addition to the options described below, see also the [index of pages related to colocalization](Category_Colocalization).
 
 ### Coloc 2
 
-Coloc 2 implements and performs the pixel intensity correlation over space methods of {% include wikipedia title='Pearson product-moment correlation coefficient' text='Pearson'%}, [Manders](Media_Manders.pdf ), [Costes](Media_Costes_etalColoc.pdf ), [Li](Media_LietAlColoc.pdf ) and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
+Coloc 2 implements and performs the pixel intensity correlation over space methods of {% include wikipedia title='Pearson product-moment correlation coefficient' text='Pearson'%}, [Manders](Media_Manders.pdf), [Costes](Media_Costes_etalColoc.pdf), [Li](Media_LietAlColoc.pdf) and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 
-None of this gives sensible results unless you have your imaging hardware set up appropriately and have acquired images properly, and have performed appropriate controls for bleed-through and chromatic shift etc. See [here for hardware set up guidelines](Colocalization_-_hardware_setup_and_image_acquisition ).
+None of this gives sensible results unless you have your imaging hardware set up appropriately and have acquired images properly, and have performed appropriate controls for bleed-through and chromatic shift etc. See [here for hardware set up guidelines](Colocalization_-_hardware_setup_and_image_acquisition).
 
-This plugin supersedes the [Colocalization Threshold](Colocalization_Threshold ) and [Colocalization Test](Colocalization_Test ) plugins, which unfortunately were buggy and hard to maintain. So we started from scratch with a carefully planned and designed new plugin. While the old plugins are described below as well, we recommend that you use Coloc 2 instead.
+This plugin supersedes the [Colocalization Threshold](Colocalization_Threshold) and [Colocalization Test](Colocalization_Test) plugins, which unfortunately were buggy and hard to maintain. So we started from scratch with a carefully planned and designed new plugin. While the old plugins are described below as well, we recommend that you use Coloc 2 instead.
 
 One main feature of Coloc 2 is the standardised PDF output, which is intended to make the results of different colocalization experiments comparable.
 
-Please see the [Coloc2](Coloc2 ) page for complete instructions on using the Coloc 2 plugin, including common pitfalls of the pixel intensity spatial correlation methods that it employs.
+Please see the [Coloc2](Coloc2) page for complete instructions on using the Coloc 2 plugin, including common pitfalls of the pixel intensity spatial correlation methods that it employs.
 
 ### JaCoP
 
-[JaCoP](JaCoP ) is a compilation of co-localization tools:
+[JaCoP](JaCoP) is a compilation of co-localization tools:
 
 -   Calculating a set of commonly used co-localization indicators:
 
@@ -112,7 +112,7 @@ Please see the [Coloc2](Coloc2 ) page for complete instructions on using the Col
 
 All methods are implemented to work on 3D datasets.
 
-See the [JaCoP](JaCoP ) page for full details.
+See the [JaCoP](JaCoP) page for full details.
 
 ### Colocalization Finder
 
@@ -137,7 +137,7 @@ To begin with, we should check the images for problems that might make the coloc
 
 1.  Significant noise (uncertainty in the pixel values - usually from detection of too few photons) means the methods we will use will significantly underestimate the true colocalization, or even completely fail to give the "right" result.
 2.  Lossy compression messes up the intensity information of the pixels, causing the colocalization result to be more or less wrong.
-3.  Intensity clipping/saturation is bad news. Pixel intensity correlation measurements rely on the pixel intensities being true and not clipped to 255 when they were really higher! See the [Detect Information Loss](Detect_Information_Loss ) tutorial for details on how to detect such problems.
+3.  Intensity clipping/saturation is bad news. Pixel intensity correlation measurements rely on the pixel intensities being true and not clipped to 255 when they were really higher! See the [Detect Information Loss](Detect_Information_Loss) tutorial for details on how to detect such problems.
 4.  We should look for wrong offset / high background (since this confuses the auto threshold method, since zero signal is not zero pixel intensity but some larger number)
 5.  Spatial resolution
 
@@ -145,7 +145,7 @@ The spatial resolution of the images, by definition, determines the spatial reso
 
 The spatial resolution of the light microscope is limited by the wavelength of the light (and the NA of the objective lens) according to Ernst Abbe's work. Molecules / proteins are an order of magnitude smaller than the wavelength of visible light, so they could be many nm apart, but still appear in the same image pixel. Is that true colocalization? Maybe, but it depends how you define it!
 
-Are the images spatially calibrated? If not then we need to calibrate them so we know the spatial sampling rate (think pixel or voxel size) in x, y and z. See the [SpatialCalibration](SpatialCalibration ) tutorial for how to do that. We need the images to be spatially calibrated in order for the Costes statistical significance test (below) method to work properly.
+Are the images spatially calibrated? If not then we need to calibrate them so we know the spatial sampling rate (think pixel or voxel size) in x, y and z. See the [SpatialCalibration](SpatialCalibration) tutorial for how to do that. We need the images to be spatially calibrated in order for the Costes statistical significance test (below) method to work properly.
 
 We need to think carefully about the correct or adequate spatial resolution in x, y and probably z. This depends on the {% include wikipedia title='Numerical aperture' text='Numerical Aperture'%} of the objective lens. You can calculate the correct pixel or voxel sizes for the objective lens you are using, to get the maximum resolution that that objective lens can really see: [Nyquist Calculator](http://support.svi.nl/wiki/NyquistCalculator)\]. Essentially the pixels / voxels should be about 3 times smaller then the resolution of the lens. On the other hand, if you are only interested in larger objects, and not the smallest details the objective can see, it makes sense to have larger pixels or voxels. Again, these should be about 3 times smaller than the smallest feature you want to resolve.
 
@@ -161,9 +161,9 @@ Older colocalization plugins
 
 ### Colocalization Threshold
 
-<span style="color: red">Note: this plugin is no longer under active development and support. Use [Coloc 2](Coloc_2 ) instead, which does the same thing, only better.</span>
+<span style="color: red">Note: this plugin is no longer under active development and support. Use [Coloc 2](Coloc_2) instead, which does the same thing, only better.</span>
 
-The [Colocalization Threshold](Colocalization_Threshold ) plugin performs several functions for you in one go. With the "green" and "red" stacks of the [colocsample1bRGB\_BG.tif](https://fiji.sc/samples/colocsample1bRGB_BG.tif) dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [Why scatter plots?](#Why_scatter_plots.3F "wikilink")), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do.
+The [Colocalization Threshold](Colocalization_Threshold) plugin performs several functions for you in one go. With the "green" and "red" stacks of the [colocsample1bRGB\_BG.tif](https://fiji.sc/samples/colocsample1bRGB_BG.tif) dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [Why scatter plots?](#Why_scatter_plots.3F "wikilink")), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do.
 
 <img src="/images/pages/Coloc1.png" width="300"/> <img src="/images/pages/Coloc1b.png" width="300"/> <img src="/images/pages/Coloc2.png" width="300"/> &lt;\\p&gt;
 
@@ -183,9 +183,9 @@ The plugin finally sends a bunch of statistics and results to the results window
 
 ### Colocalization Test
 
-<span style="color: red">Note: This plugin is no longer actively developed or supported. Use [Coloc 2](Coloc_2 ) instead, which does the same thing, only more correctly, and as described in the original publication by Costes, instead of making a nasty assumption and shortcut.</span>
+<span style="color: red">Note: This plugin is no longer actively developed or supported. Use [Coloc 2](Coloc_2) instead, which does the same thing, only more correctly, and as described in the original publication by Costes, instead of making a nasty assumption and shortcut.</span>
 
-The [Colocalization Test](Colocalization_Test ) plugin performs the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot). It is in the menus at {% include bc content='Analyze | Colocalization | Colocalization Test'%}
+The [Colocalization Test](Colocalization_Test) plugin performs the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot). It is in the menus at {% include bc content='Analyze | Colocalization | Colocalization Test'%}
 
 <img src="/images/pages/ColocTestGUI1.png" width="400"/>
 
@@ -203,6 +203,6 @@ In this case the P-value should be 1.00. Since you told it to display the Pearso
 
 Other available methods, such as Fay and Van Steensel, do the same thing but randomize the image in less rigorous but very simple ways, which may lead to errors such as over or under estimation of the P-value. However, they are faster than the Costes method.
 
-Again, as for the [Colocalization Threshold](Colocalization_Threshold ) plugin, using an ROI here may well make very good sense, as you are only interested in the correlation between the 2 colour channels in parts of the image where the biology you are interested in is located. Background its typically uninteresting, and you can exclude it from the analysis. Its probably sensible to to use the same ROI as you used in the [Colocalization Threshold](Colocalization_Threshold ) plugin!
+Again, as for the [Colocalization Threshold](Colocalization_Threshold) plugin, using an ROI here may well make very good sense, as you are only interested in the correlation between the 2 colour channels in parts of the image where the biology you are interested in is located. Background its typically uninteresting, and you can exclude it from the analysis. Its probably sensible to to use the same ROI as you used in the [Colocalization Threshold](Colocalization_Threshold) plugin!
 
    

@@ -10,7 +10,7 @@ description: test description
 Purpose
 -------
 
-An example [Clojure](Clojure_Scripting ) script illustrating how to use a GenericDialog and how to show information to the user.
+An example [Clojure](Clojure_Scripting) script illustrating how to use a GenericDialog and how to show information to the user.
 
 The example is taken from the [Clojure](http://clojure.org) website.
 
@@ -73,6 +73,6 @@ Code
 See also
 --------
 
--   [Clojure Scripting](Clojure_Scripting ).
+-   [Clojure Scripting](Clojure_Scripting).
 
   

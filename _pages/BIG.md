@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BIG License](BIG_License )
+1.  REDIRECT [BIG License](BIG_License)

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Citing](Citing )
+1.  REDIRECT [Citing](Citing)

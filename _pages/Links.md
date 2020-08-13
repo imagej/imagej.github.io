@@ -19,7 +19,7 @@ description: test description
 -   [Fiji on OHLOH](http://www.ohloh.net/p/therealfiji)
 -   [ObjectJ](http://simon.bio.uva.nl/objectj/)
 
-Links to the contributors' personal pages can be found [here](Contributors ).
+Links to the contributors' personal pages can be found [here](Contributors).
 
 More ImageJ plugins
 -------------------
@@ -37,21 +37,21 @@ Related projects
 Image Processing and Ethics
 ---------------------------
 
-See the [Principles](Principles ) page.
+See the [Principles](Principles) page.
 
 Input/Output
 ------------
 
-See the [Formats](Formats ) page.
+See the [Formats](Formats) page.
 
 ### Movie support
 
-See the [Video](Video ) page.
+See the [Video](Video) page.
 
 Image Processing
 ----------------
 
-See the [Principles](Principles ) page.
+See the [Principles](Principles) page.
 
 [A pixel is not a little square](http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf). Really. It is not. Pixels may be spaced on a regular grid. But that does not make them square. Even thinking about them as squares will harm your analysis, since it is simply wrong.
 
@@ -61,7 +61,7 @@ The University of Edinburgh also has the rather complete [CVonline](http://homep
 
 A scientific image [is not a photograph](http://www.4p8.com/eric.brasseur/gamma.html)!
 
-[External tutorials](External_tutorials ).
+[External tutorials](External_tutorials).
 
 Programming in science
 ----------------------

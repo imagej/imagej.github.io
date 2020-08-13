@@ -13,18 +13,18 @@ description: test description
 Introduction.
 -------------
 
-Actions were my crude solution to the problem of adding random features to [TrackMate](TrackMate ) without having to change the GUI too much. Adding buttons or dialogs or extra panels is cumbersome and I thought it would complexify the GUI, which is meant to be simple. A TrackMate action is a lazy workaround for this problem. You must keep in mind that is a placeholder for random feature ideas, and provided a quick and dirty way to test them.
+Actions were my crude solution to the problem of adding random features to [TrackMate](TrackMate) without having to change the GUI too much. Adding buttons or dialogs or extra panels is cumbersome and I thought it would complexify the GUI, which is meant to be simple. A TrackMate action is a lazy workaround for this problem. You must keep in mind that is a placeholder for random feature ideas, and provided a quick and dirty way to test them.
 
-A TrackMate action takes the shape of an item in a drop-down list in the last panel of the GUI. It can do more or less anything, since we pass everything to the action, even a reference to the GUI itself. Thanks to the [SciJava](SciJava ) discovery mechanism, we do not have to worry about adding it on the GUI: it will automatically be listed in the action list. The drawback of this simplicity is that you cannot use it to provide elaborated user interaction mechanisms, such as the ones you can find in a view.
+A TrackMate action takes the shape of an item in a drop-down list in the last panel of the GUI. It can do more or less anything, since we pass everything to the action, even a reference to the GUI itself. Thanks to the [SciJava](SciJava) discovery mechanism, we do not have to worry about adding it on the GUI: it will automatically be listed in the action list. The drawback of this simplicity is that you cannot use it to provide elaborated user interaction mechanisms, such as the ones you can find in a view.
 
-In this tutorial, we will use it to launch the event logger we created in the [previous tutorial](How_to_write_your_own_viewer_for_TrackMate ) of this series. If you remember, we saw in the last paragraph how to use the `visible = false` parameter the [SciJava](SciJava ) annotation to hide it from the view menu. Hereby preventing the user to access it. No problem, we will now build an action that will launch it as a supplementary view.
+In this tutorial, we will use it to launch the event logger we created in the [previous tutorial](How_to_write_your_own_viewer_for_TrackMate) of this series. If you remember, we saw in the last paragraph how to use the `visible = false` parameter the [SciJava](SciJava) annotation to hide it from the view menu. Hereby preventing the user to access it. No problem, we will now build an action that will launch it as a supplementary view.
 
-The {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/action/TrackMateActionFactory.java ' label='TrackMateActionFactory ' %} interface.
+The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/TrackMateActionFactory.java' label='TrackMateActionFactory' %} interface.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Again, the action behavior and its integration in TrackMate are split in two classes. The behavior is described by the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/action/TrackMateAction.java ' label='TrackMateAction ' %} interface. The integration mechanism is controlled by the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/action/TrackMateActionFactory.java ' label='TrackMateActionFactory ' %} interface, which extends the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/TrackMateModule.java ' label='TrackMateModule ' %} interface.
+Again, the action behavior and its integration in TrackMate are split in two classes. The behavior is described by the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/TrackMateAction.java' label='TrackMateAction' %} interface. The integration mechanism is controlled by the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/TrackMateActionFactory.java' label='TrackMateActionFactory' %} interface, which extends the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/TrackMateModule.java' label='TrackMateModule' %} interface.
 
-### [SciJava](SciJava ) parameters recap.
+### [SciJava](SciJava) parameters recap.
 
 There is not much to say about the factory itself. Ii is the class that must be annotated with
 
@@ -38,14 +38,14 @@ All the SciJava annotation parameters apply, and they have the following meaning
 
 ### Action factory methods.
 
-As of [TrackMate](TrackMate ) version 2.2.0 (March 2014), actions are the only TrackMate modules that use the `getIcon()` method. The icon is then displayed in the action list, next to the action name. That's it for the `TrackMateModule` part.
+As of [TrackMate](TrackMate) version 2.2.0 (March 2014), actions are the only TrackMate modules that use the `getIcon()` method. The icon is then displayed in the action list, next to the action name. That's it for the `TrackMateModule` part.
 
 The method specific to actions is more interesting:
 
     @Override
     public TrackMateAction create( final TrackMateGUIController controller )
 
-This means that when we create our specific action, we have access to the some of GUI context through the controller. We therefore have to check its {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/gui/TrackMateGUIController.java ' label='API ' %} to know what we can get. It gives us access to:
+This means that when we create our specific action, we have access to the some of GUI context through the controller. We therefore have to check its {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/gui/TrackMateGUIController.java' label='API' %} to know what we can get. It gives us access to:
 
 -   The GUI window itself (`public TrackMateWizard getGUI()`), that we can use as parent for dialogs, wild live GUI editing...
 -   The trackmate plugin (`public TrackMate getPlugin()`), hereby the model and settings objects.
@@ -109,7 +109,7 @@ So you can pretty well mess stuff with the controller, but it gives us access to
 
 Nothing complicated.
 
-The {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/action/TrackMateAction.java ' label='TrackMateAction ' %} interface.
+The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/TrackMateAction.java' label='TrackMateAction' %} interface.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 This interface is just made of two methods:

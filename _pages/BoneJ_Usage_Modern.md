@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BoneJ\#Usage\_reporting](BoneJ#Usage_reporting )
+1.  REDIRECT [BoneJ\#Usage\_reporting](BoneJ#Usage_reporting)

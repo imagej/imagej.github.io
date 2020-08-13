@@ -15,7 +15,7 @@ Currently, the following alternatives allow to connect ImageJ/Fiji with OpenCV:
 
 <!-- -->
 
--   [IJ-OpenCV](IJ-OpenCV ): a library to convert between ImageJ1 and OpenCV objects. It provides methods to convert images, ROI...  
+-   [IJ-OpenCV](IJ-OpenCV): a library to convert between ImageJ1 and OpenCV objects. It provides methods to convert images, ROI...  
 
 From the perspective of ImageJ developers, they can use IJ-OpenCV to easily create plugins that use any functionality provided by the OpenCV library and explore different alternatives.  
 From the perspective of OpenCV developers, this library provides a link to the ImageJ graphical user interface and all its features to handle regions of interest.

@@ -14,7 +14,7 @@ Content and purpose
 
 This package regroups various "small" plugins dedicated to the manipulation of stacks, allowing to sort them, combine them, etc... As they are more of a utility package, they all can be found in the {% include bc content='Image | Stacks | Tools'%} menu, next to the ones provided by bare ImageJ.
 
-What they do is pretty much summarized by the following diagram, taken from the [MBF ImageJ](MBF_ImageJ ) webpage.
+What they do is pretty much summarized by the following diagram, taken from the [MBF ImageJ](MBF_ImageJ) webpage.
 
 ![](/images/pages/Stack Manipulation.jpg "Stack_Manipulation.jpg")
 
@@ -64,7 +64,7 @@ Original code by {% include person content='Rasband' %}.
 
 ### Slice Keeper
 
-By Tony Collins, initially part of his wonderful [MBF Plugin Collection](MBF_Plugin_Collection ) package. Tony mentioned credit should go to {% include person content='Rasband' %}, for the initial code is his work.
+By Tony Collins, initially part of his wonderful [MBF Plugin Collection](MBF_Plugin_Collection) package. Tony mentioned credit should go to {% include person content='Rasband' %}, for the initial code is his work.
 
 <references/>
 

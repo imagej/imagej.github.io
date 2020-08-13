@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Scripting Help](Scripting_Help )
+1.  REDIRECT [Scripting Help](Scripting_Help)

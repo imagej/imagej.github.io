@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BoneJ2\#Analyse\_skeleton](BoneJ2#Analyse_skeleton )
+1.  REDIRECT [BoneJ2\#Analyse\_skeleton](BoneJ2#Analyse_skeleton)

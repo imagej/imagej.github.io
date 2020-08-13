@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BoneJ2\#Fractal\_dimension](BoneJ2#Fractal_dimension )
+1.  REDIRECT [BoneJ2\#Fractal\_dimension](BoneJ2#Fractal_dimension)

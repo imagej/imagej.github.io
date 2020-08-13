@@ -12,7 +12,7 @@ description: test description
 {% capture blurb%}
 {% include wikipedia title='Think different' text='Think different'%}.
 {% endcapture %}
-{% include minibox logo='Osx.png ' blurb=blurb %}{% include wikipedia title='macOS' text='macOS'%} (formerly called Mac OS X, then OS X) is {% include wikipedia title='Apple Inc.' text='Apple'%}'s desktop operating system. It is [the second most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](Windows ). This page details issues specific to using [ImageJ](ImageJ ) on macOS systems.
+{% include minibox logo='Osx.png' blurb=blurb %}{% include wikipedia title='macOS' text='macOS'%} (formerly called Mac OS X, then OS X) is {% include wikipedia title='Apple Inc.' text='Apple'%}'s desktop operating system. It is [the second most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](Windows). This page details issues specific to using [ImageJ](ImageJ) on macOS systems.
 
 {% include toc%}
 
@@ -20,12 +20,12 @@ description: test description
 Installation
 ============
 
-See also the [Java 8](Java_8 ) page for OS-X-specific issues.
+See also the [Java 8](Java_8) page for OS-X-specific issues.
 
 Troubleshooting
 ===============
 
-See also the [Troubleshooting](Troubleshooting ) page.
+See also the [Troubleshooting](Troubleshooting) page.
 
 ImageJ becomes very slow after running for a while
 --------------------------------------------------
@@ -54,14 +54,14 @@ As a workaround, you can check "Use JFileChooser to open/save" in the {% include
 Frequently Asked Questions
 ==========================
 
-See also the [Frequently Asked Questions](Frequently_Asked_Questions ) page.
+See also the [Frequently Asked Questions](Frequently_Asked_Questions) page.
 
 How do I run ImageJ with Java 6?
 --------------------------------
 
 It is unfortunately no longer feasible to install Apple Java 6 on current versions of macOS. However, ImageJ should work OK with Java 8. If you have difficulties, please post on the [Image.sc Forum](https://forum.image.sc/).
 
-At any time, you can verify which Javas are installed on your system using {% include github org='ctrueden ' repo='ctr-scripts ' path='java-info ' label='this script ' %}.
+At any time, you can verify which Javas are installed on your system using {% include github org='ctrueden' repo='ctr-scripts' path='java-info' label='this script' %}.
 
 How do I run ImageJ on Yosemite?
 --------------------------------

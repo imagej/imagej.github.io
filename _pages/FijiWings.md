@@ -16,7 +16,7 @@ Alex Dobens, {% include person content='Dobensl' %}
 {% capture maintainer%}
 {% include person content='Dobensl' %}
 {% endcapture %}
-{% include info-box content='Plugin' software='Fiji/ImageJ ' name='FijiWings ' author=author maintainer=maintainer filename='fiji-macosx.zip ' source='https://sourceforge.net/projects/fijiwings/ ' status='stable ' %}=== Introduction ===
+{% include info-box content='Plugin' software='Fiji/ImageJ' name='FijiWings' author=author maintainer=maintainer filename='fiji-macosx.zip' source='https://sourceforge.net/projects/fijiwings/' status='stable' %}=== Introduction ===
 
 This set of macros control plugin to perform semi-automatic tracing of insect wing veins and determination of trichome number and density. The native file format is open and XML-based. This plugin is Free Software (also known as Open Source software) and is supplied as a packaged version of Fiji, here &lt;http://sourceforge.net/projects/fijiwings&gt;.
 
@@ -32,7 +32,7 @@ A packaged version of Fiji for both MacOS and Windows are available for download
 
 ### Feedback
 
-Please report any bugs that you find with Fiji's {% include bc content='Help | Report a Bug'%} menu option. For other feedback please email *dobensl* at *umkc.edu*. There are other ways of giving feedback on Fiji (e.g. the mailing lists, IRC, etc.) listed at [Help](Help ).
+Please report any bugs that you find with Fiji's {% include bc content='Help | Report a Bug'%} menu option. For other feedback please email *dobensl* at *umkc.edu*. There are other ways of giving feedback on Fiji (e.g. the mailing lists, IRC, etc.) listed at [Help](Help).
 
 ### Citing FijiWings
 

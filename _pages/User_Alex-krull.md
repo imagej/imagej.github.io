@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Alexander Krull ' affiliation=' [Computer Vision Lab](http://cvlab-dresden.de/) , [TU Dresden](http://tu-dresden.de/en) ' github='alex-krull ' website='http://cvlab-dresden.de/people/alexander-krull/ ' %}This is the personal page of Alexander Krull.
+{% include user-box name='Alexander Krull' affiliation=' [Computer Vision Lab](http://cvlab-dresden.de/) , [TU Dresden](http://tu-dresden.de/en)' github='alex-krull' website='http://cvlab-dresden.de/people/alexander-krull/' %}This is the personal page of Alexander Krull.

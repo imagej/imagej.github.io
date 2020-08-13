@@ -17,7 +17,7 @@ This page is a tutorial that shows how to integrate your own edge feature analyz
 
 All these tutorials assume you are familiar with Java development. You should be at ease with java core concepts such as object oriented design, inheritance, interfaces, etc... Ideally you would even know that maven exists and that it can help you to compile software. Beyond this, the tutorials will provide what you need to know.
 
-Edge feature analyzers are algorithms that can associate one or more scalar numerical features to an edge, or a link between two spots in TrackMate. For instance, the instantaneous velocity is an edge feature (you need two linked spots to compute a displacement and a time interval), which happens to be provided by the algorithm named {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/features/edges/EdgeVelocityAnalyzer.java ' label='EdgeVelocityAnalyzer.java ' %}.
+Edge feature analyzers are algorithms that can associate one or more scalar numerical features to an edge, or a link between two spots in TrackMate. For instance, the instantaneous velocity is an edge feature (you need two linked spots to compute a displacement and a time interval), which happens to be provided by the algorithm named {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/edges/EdgeVelocityAnalyzer.java' label='EdgeVelocityAnalyzer.java' %}.
 
 TrackMate modules
 -----------------
@@ -32,7 +32,7 @@ TrackMate is extended by writing *modules*. Modules are just the basic algorithm
 -   visualization tools
 -   post-processing actions (exporting, data massaging, etc...)
 
-All of these modules implement an interface, specific to the module class. For instance, an edge analyzer algorithm will implement the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java ' label='EdgeAnalyzer ' %} interface. There is therefore 7 interfaces. They do have in common that they all extend the mother module interface called {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/TrackMateModule.java ' label='TrackMateModule ' %}.
+All of these modules implement an interface, specific to the module class. For instance, an edge analyzer algorithm will implement the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java' label='EdgeAnalyzer' %} interface. There is therefore 7 interfaces. They do have in common that they all extend the mother module interface called {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/TrackMateModule.java' label='TrackMateModule' %}.
 
 TrackMateModule is used for two basic purpose:
 
@@ -56,7 +56,7 @@ These are the methods used to integrate you module within the GUI. According to 
 Basic project structure
 -----------------------
 
-Before we step into the edge analyzers specific, you want to setup a development environment that will ease TrackMate module development. Rather than listing the requirement, just checkout {% include github org='fiji ' repo='TrackMate-examples ' label='this github repository ' %}, and clone it. It contains the files of this tutorial series and more importantly, is configured to depend on the latest TrackMate version, which will make it available to your code.
+Before we step into the edge analyzers specific, you want to setup a development environment that will ease TrackMate module development. Rather than listing the requirement, just checkout {% include github org='fiji' repo='TrackMate-examples' label='this github repository' %}, and clone it. It contains the files of this tutorial series and more importantly, is configured to depend on the latest TrackMate version, which will make it available to your code.
 
 Compiling this project with maven will generate a jar, that you will be able to drop in the fiji plugins folder. Your modules will then be automatically detected and integrated in TrackMate.
 
@@ -71,7 +71,7 @@ For this tutorial, we are going to do something simple, at least mathematically.
 
 So create a package for your new analyzer in our project, for instance `fiji.plugin.trackmate.examples.edgeanalyzer`.
 
-In this package, create a class `EdgeAngleAnalyzer` and let it implement the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java ' label='EdgeAnalyzer ' %} interface. You should be getting something like this:
+In this package, create a class `EdgeAngleAnalyzer` and let it implement the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java' label='EdgeAnalyzer' %} interface. You should be getting something like this:
 
     package plugin.trackmate.examples.edgeanalyzer;
 
@@ -88,7 +88,7 @@ Feature analyzers specific methods
 
 Eclipse will immediately complain (I suppose you are using Eclipse; but when it comes to complaining, everything tends to be general) that your class needs to implement some abstract method. A variety of methods popup.
 
-We see the general module methods we discussed above, plus some specific to edge analyzers. Actually, most of the new methods are generic for <i>all</i> the feature analyzers (spot, track or edge). These methods belong to the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java ' label='FeatureAnalyzer ' %} interface, which `EdgeAnalyzer` extends, of course.
+We see the general module methods we discussed above, plus some specific to edge analyzers. Actually, most of the new methods are generic for <i>all</i> the feature analyzers (spot, track or edge). These methods belong to the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java' label='FeatureAnalyzer' %} interface, which `EdgeAnalyzer` extends, of course.
 
 They exist because TrackMate needs to know what your feature analyzer does. Since it computes numerical features, it needs to know what features it computes, their name, their short name (when we want to show them in crowded part of the GUI) and their physical dimension. Indeed, TrackMate wants to know the dimension of the feature you generate, for it was coded in part by a conflicted physicist who does not want angles and velocities to be plotted on the same graph.
 
@@ -106,7 +106,7 @@ These 6 methods are:
 
 <!-- -->
 
--   `getFeatureDimensions()` returns a last map, that gives a dimension to your features. Physical dimensions are listed in the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/Dimension.java ' label='Dimension enum ' %}.
+-   `getFeatureDimensions()` returns a last map, that gives a dimension to your features. Physical dimensions are listed in the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/Dimension.java' label='Dimension enum' %}.
 
 <!-- -->
 
@@ -287,7 +287,7 @@ In our case, we are coding an analyzer that returns the angle of a single edge, 
 
 The method that actually performs the work is the less elaborated. The concrete implementation is provided with `edges`, the collection of the edge whose features are to be calculated, and `model`, the TrackMate model that holds all the information you need.
 
-There is just one thing to know: Once you computed the numerical value of your feature, you need to store it in the {% include github org='fiji ' repo='TrackMate ' source='fiji/plugin/trackmate/FeatureModel.java ' label='FeatureModel ' %}. The feature model is a part of the main model.
+There is just one thing to know: Once you computed the numerical value of your feature, you need to store it in the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/FeatureModel.java' label='FeatureModel' %}. The feature model is a part of the main model.
 
 It works like a 2D Map:
 
@@ -341,7 +341,7 @@ Just add the following line before the class declaration:
 
 and that's it. Let me repeat:
 
-{% include ambox text='To make a TrackMate module discoverable in TrackMate, just annotate its class with `@Plugin( type = TheTrackMateModuleClassYouAreExtending.class )`. ' %}
+{% include ambox text='To make a TrackMate module discoverable in TrackMate, just annotate its class with `@Plugin( type = TheTrackMateModuleClassYouAreExtending.class )`.' %}
 
 Just the line `@Plugin( type = EdgeAnalyzer.class )` is enough. There are also mechanisms that allow fine tuning of priority, visibility (in the GUI menus), or enabling/disabling, but we will see this later.
 
@@ -354,8 +354,8 @@ Wrapping up
 
 Great, no?
 
-You can find the full source for this example {% include github org='fiji ' repo='TrackMate-examples ' source='plugin/trackmate/examples/edgeanalyzer/EdgeAngleAnalyzer.java ' label='here ' %}. It can also be used as a template for your analyzer.
+You can find the full source for this example {% include github org='fiji' repo='TrackMate-examples' source='plugin/trackmate/examples/edgeanalyzer/EdgeAngleAnalyzer.java' label='here' %}. It can also be used as a template for your analyzer.
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez )) 10:25, 27 January 2014 (CST)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 10:25, 27 January 2014 (CST)
 
 

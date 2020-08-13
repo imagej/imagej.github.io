@@ -13,9 +13,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji ' repo='Colocalisation\_Analysis ' source='Colocalisation\_Threshold.java ' %}, modified from [MBF ImageJ](MBF_ImageJ )
+{% include github org='fiji' repo='Colocalisation\_Analysis' source='Colocalisation\_Threshold.java' %}, modified from [MBF ImageJ](MBF_ImageJ)
 {% endcapture %}
-{% include info-box name='Colocalization Threshold ' software='ImageJ - Fiji ' author='Tony Collins (and others?) ' maintainer=maintainer filename='Colocalization.jar ' source=source latest-version='june 2009 ' website='[Colocalization Analysis\#Colocalization\_Threshold](Colocalization_Analysis#Colocalization_Threshold ) ' status='no longer actively supported, unlikely to be stable enough for real use. Use [Coloc\_2](Coloc_2 ) ' %}
+{% include info-box name='Colocalization Threshold' software='ImageJ - Fiji' author='Tony Collins (and others?)' maintainer=maintainer filename='Colocalization.jar' source=source latest-version='june 2009' website='[Colocalization Analysis\#Colocalization\_Threshold](Colocalization_Analysis#Colocalization_Threshold)' status='no longer actively supported, unlikely to be stable enough for real use. Use [Coloc\_2](Coloc_2)' %}
 
 Purpose
 -------
@@ -25,12 +25,12 @@ Sets the thresholds for colocalization analysis, and also calculates Manders coe
 Documentation
 -------------
 
-<span style="color:red">Note: this plugin is now deprecated. You should use the newer [Coloc 2](Coloc_2 ) plugin instead.</span>
+<span style="color:red">Note: this plugin is now deprecated. You should use the newer [Coloc 2](Coloc_2) plugin instead.</span>
 
-See the great documentation for this plugin at [Colocalization Analysis\#Colocalization\_Threshold](Colocalization_Analysis#Colocalization_Threshold ). The method is that implemented in Costes et al. This uses a Pearson's correlation above and below the thresholds to iteratively find where the correlation between the two images is 0 and sets the thresholds there. It is pretty robust and importantly is reproducible and non subjective.
+See the great documentation for this plugin at [Colocalization Analysis\#Colocalization\_Threshold](Colocalization_Analysis#Colocalization_Threshold). The method is that implemented in Costes et al. This uses a Pearson's correlation above and below the thresholds to iteratively find where the correlation between the two images is 0 and sets the thresholds there. It is pretty robust and importantly is reproducible and non subjective.
 
-Use of this plugin should be followed by use of the [Colocalization Test](Colocalization_Test ) plugin, to see of the results are statistically significant and better then random overlap of the signal in the images.
+Use of this plugin should be followed by use of the [Colocalization Test](Colocalization_Test) plugin, to see of the results are statistically significant and better then random overlap of the signal in the images.
 
-See also the [Colocalization Analysis](Colocalization_Analysis ) tutorial.
+See also the [Colocalization Analysis](Colocalization_Analysis) tutorial.
 
   

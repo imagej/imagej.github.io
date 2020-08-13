@@ -9,9 +9,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='ptbiop ' repo='ijp-max-inscribed-circles ' %}
+{% include github org='ptbiop' repo='ijp-max-inscribed-circles' %}
 {% endcapture %}
-{% include info-box name='Max Inscribed Circles ' software='Fiji ' author='Olivier Burri, Romain Guiet ' maintainer='Olivier Burri ' filename='Max\_Inscribed\_Circle.jar ' released='August 2015 ' latest-version='July 2016 ' source=source status='stable ' website=' [BIOP Staff Page](https://www.epfl.ch/research/facilities/ptbiop/staff/) ' %}
+{% include info-box name='Max Inscribed Circles' software='Fiji' author='Olivier Burri, Romain Guiet' maintainer='Olivier Burri' filename='Max\_Inscribed\_Circle.jar' released='August 2015' latest-version='July 2016' source=source status='stable' website=' [BIOP Staff Page](https://www.epfl.ch/research/facilities/ptbiop/staff/)' %}
 
 Purpose
 -------

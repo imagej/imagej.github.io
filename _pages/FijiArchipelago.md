@@ -41,7 +41,7 @@ Usage
 
 ### Existing Archipelago Plugins
 
-The following plugins are available by [ adding](How_to_follow_a_3rd_party_update_site#Add_update_sites ) the Archipelago update site.
+The following plugins are available by [ adding](How_to_follow_a_3rd_party_update_site#Add_update_sites) the Archipelago update site.
 
 #### TrakEM2 Archipelago
 
@@ -49,7 +49,7 @@ This plugin allows clusterized least-squares and elastic alignment in TrakEM2. R
 
 #### Batch Weka Segmentation
 
-This plugin accelerates image classification with the [ Trainable Weka Segmentation](Trainable_Weka_Segmentation ) plugin. To use it, create a classifier and save it (ie, a .model file).
+This plugin accelerates image classification with the [ Trainable Weka Segmentation](Trainable_Weka_Segmentation) plugin. To use it, create a classifier and save it (ie, a .model file).
 
 Run the batch segmentation plugin by selecting Plugins -&gt; Batch -&gt; Weka Segmentation 2D
 
@@ -136,7 +136,7 @@ The default port is 4012.
 
 #### Configuration on a Proprietary Cluster
 
-Archipelago may be run on a proprietary cluster, for instance one running SLURM or qsub, by scripting the creation of an .arc configuration file and passing it as an argument to the Fiji or ImageJ executable. An {% include github org='larrylindsey ' repo='Stampede-Fiji-Archipelago ' path='job.fiji\#L126 ' label='example ' %} showing how this is done on the vnc queue of the TACC stampede cluster is available.
+Archipelago may be run on a proprietary cluster, for instance one running SLURM or qsub, by scripting the creation of an .arc configuration file and passing it as an argument to the Fiji or ImageJ executable. An {% include github org='larrylindsey' repo='Stampede-Fiji-Archipelago' path='job.fiji\#L126' label='example' %} showing how this is done on the vnc queue of the TACC stampede cluster is available.
 
 #### Saving
 
@@ -181,6 +181,6 @@ To make this work, submissions to a Cluster are serialized and transmitted to a 
 
 While many Clusters may exist on a single root node, only one is "official." This instance is referenced by Cluster.getCluster(). Cluster.activeCluster() indicates whether there is existing active Cluster.
 
-An example may be found in {% include github repo='fiji ' path='src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Cluster\_SIFT.java ' label='Cluster\_SIFT ' %}. An example that demonstrates the breakage of deep equality may be found in {% include github repo='fiji ' path='src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Equality\_Example.java ' label='Equality\_Example ' %}
+An example may be found in {% include github repo='fiji' path='src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Cluster\_SIFT.java' label='Cluster\_SIFT' %}. An example that demonstrates the breakage of deep equality may be found in {% include github repo='fiji' path='src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Equality\_Example.java' label='Equality\_Example' %}
 
  

@@ -17,9 +17,9 @@ description: test description
 <div style="padding: 20px;" align="center">
 <div style="text-align: left; font-size: 1.3em; padding: 1.5em; background-color: #fec; border: 2px solid black; border-radius: 10px">
 
-[ImageJ](ImageJ ) is an [open source](Open_source ) image processing program designed for scientific multidimensional images.
+[ImageJ](ImageJ) is an [open source](Open_source) image processing program designed for scientific multidimensional images.
 
-[ImageJ](ImageJ ) is highly [extensible](Extensibility ), with thousands of [plugins](Plugins ) and [scripts](Scripts ) for performing a wide variety of tasks, and a [large user community](Usage ).
+[ImageJ](ImageJ) is highly [extensible](Extensibility), with thousands of [plugins](Plugins) and [scripts](Scripts) for performing a wide variety of tasks, and a [large user community](Usage).
 
 </div>
 <h2 class="header-stripe" style="margin-left: -20px; margin-right: -20px; border:solid black; border-left: 2px; border-right: 2px">
@@ -37,7 +37,7 @@ This {% include wikipedia title='wiki' text='wiki'%} documents all aspects of th
 <table><tbody><tr class="odd"><td><p>style="width: 25%; text-align: center"|{% include logo content='ImageJ' %}<br />
 ImageJ</p></td><td><p>style="width: 25%; text-align: center"|{% include logo content='Fiji' %}<br />
 Fiji</p></td><td><p>style="width: 25%; text-align: center"|{% include logo content='Plugin' %}<br />
-Plugins</p></td><td><p>style="width: 25%; text-align: center"|{% include logo content='SciJava' link='Category:Related Software ' %}<br />
+Plugins</p></td><td><p>style="width: 25%; text-align: center"|{% include logo content='SciJava' link='Category:Related Software' %}<br />
 Related software</p></td></tr></tbody></table>
 
 </center>
@@ -58,13 +58,13 @@ Join the Community
 |                                                                                                                                                 |                                                                                                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Image.sc Forum](https://forum.image.sc) | A great place to ask and answer questions, and become part of the community that has driven ImageJ's success.                            |
-| [GitHub Issues](Issues )       | The [ImageJ team](Contributors ) uses [GitHub](GitHub ) for bug reports, technical suggestions and feature requests. |
-| [Contact and Help](Help )      | For more ways to communicate: [mailing lists](Mailing_lists ), [chat](Chat ) services and more.                      |
+| [GitHub Issues](Issues)       | The [ImageJ team](Contributors) uses [GitHub](GitHub) for bug reports, technical suggestions and feature requests. |
+| [Contact and Help](Help)      | For more ways to communicate: [mailing lists](Mailing_lists), [chat](Chat) services and more.                      |
 
 <div align="left">
 <hr>
 
-<span style="font-size: 0.9em;">ImageJ is developed by [contributors worldwide](Contributors ). This web site is hosted by [LOCI](LOCI ) at the University of Wisconsin-Madison.</span>
+<span style="font-size: 0.9em;">ImageJ is developed by [contributors worldwide](Contributors). This web site is hosted by [LOCI](LOCI) at the University of Wisconsin-Madison.</span>
 
 </div>
 </div>

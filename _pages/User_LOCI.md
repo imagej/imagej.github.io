@@ -12,7 +12,7 @@ description: test description
 
 To activate it:
 
--   [{% include bc content='Help|Update...'%}](Update_Sites )
+-   [{% include bc content='Help|Update...'%}](Update_Sites)
 -   Click *Manage update sites*
 -   Check *LOCI*
 -   Click *Close*

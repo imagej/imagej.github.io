@@ -13,14 +13,14 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji ' repo='Fiji\_Plugins ' source='fiji/geom/Shape\_Index\_Map.java ' %}
+{% include github org='fiji' repo='Fiji\_Plugins' source='fiji/geom/Shape\_Index\_Map.java' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Shape Index Map ' maintainer=maintainer author='Johannes Schindelin ' source=source released='18/08/2010 ' latest-version='18/08/2010 ' status=' ' category='[:Category:Plugins](Category_Plugins ) ' website=' ' %}
+{% include info-box software='ImageJ' name='Shape Index Map' maintainer=maintainer author='Johannes Schindelin' source=source released='18/08/2010' latest-version='18/08/2010' status='' category='[:Category:Plugins](Category_Plugins)' website='' %}
 
 Explanation
 -----------
 
-The [shape index](http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=6820324) describes the surface topology of the image interpreted as a [height field](3D_Surface_Plot ):
+The [shape index](http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=6820324) describes the surface topology of the image interpreted as a [height field](3D_Surface_Plot):
 
 | shape index | 1   | 0.75 | 0.5   | 0.25         | 0      | -0.25      | -0.5 | -0.75  | -1  |
 |-------------|-----|------|-------|--------------|--------|------------|------|--------|-----|

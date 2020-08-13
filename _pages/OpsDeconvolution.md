@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Ops Deconvolution](Ops_Deconvolution )
+1.  REDIRECT [Ops Deconvolution](Ops_Deconvolution)

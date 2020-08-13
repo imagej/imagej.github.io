@@ -7,24 +7,24 @@ categories: Help
 description: test description
 ---
 
-[ImageJ](ImageJ ) community members are often available via a couple of different chat services.
+[ImageJ](ImageJ) community members are often available via a couple of different chat services.
 
 {% include info-box content='If you have ""image analysis"" questions, it is better to use the [Image.sc Forum](https://forum.image.sc/), rather than chat rooms. Most of ImageJ community"s image analysis experts frequent the Image.sc Forum, not live chat rooms.' %}
 
 Gitter
 ------
 
-The {% include wikipedia title='Gitter' text='Gitter'%} chat service, while relatively new, is a great way to discuss *programming* issues with developers of the [SciJava](SciJava ) component collection. All you need is either a [GitHub](https://github.com/) or [Twitter](https://twitter.com/) account. Advantages of Gitter include a nice "21st century" web interface, email notification when participants miss messages, and a full searchable history.
+The {% include wikipedia title='Gitter' text='Gitter'%} chat service, while relatively new, is a great way to discuss *programming* issues with developers of the [SciJava](SciJava) component collection. All you need is either a [GitHub](https://github.com/) or [Twitter](https://twitter.com/) account. Advantages of Gitter include a nice "21st century" web interface, email notification when participants miss messages, and a full searchable history.
 
 |                                          |                               |                                                   |
 |------------------------------------------|-------------------------------|---------------------------------------------------|
 | **Logo**                                 | **Organization**              | **Chat rooms**                                    |
-| <img src="/images/pages/Imagej2-icon.png" width="48"/> | [ImageJ](ImageJ )   | [imagej](https://gitter.im/orgs/imagej/rooms)     |
-| <img src="/images/pages/Fiji-icon.png" width="48"/>    | [Fiji](Fiji )       | [fiji](https://gitter.im/orgs/fiji/rooms)         |
-| <img src="/images/pages/Knime-icon.png" width="48"/>   | [KNIME](KNIME )     | [knime-ip](https://gitter.im/orgs/knime-ip/rooms) |
-| <img src="/images/pages/Imglib2-icon.png" width="48"/> | [ImgLib2](ImgLib2 ) | [imglib](https://gitter.im/orgs/imglib/rooms)     |
-| <img src="/images/pages/Scifio-icon.png" width="48"/>  | [SCIFIO](SCIFIO )   | [scifio](https://gitter.im/orgs/scifio/rooms)     |
-| <img src="/images/pages/Scijava-icon.png" width="48"/> | [SciJava](SciJava ) | [scijava](https://gitter.im/orgs/scijava/rooms)   |
+| <img src="/images/pages/Imagej2-icon.png" width="48"/> | [ImageJ](ImageJ)   | [imagej](https://gitter.im/orgs/imagej/rooms)     |
+| <img src="/images/pages/Fiji-icon.png" width="48"/>    | [Fiji](Fiji)       | [fiji](https://gitter.im/orgs/fiji/rooms)         |
+| <img src="/images/pages/Knime-icon.png" width="48"/>   | [KNIME](KNIME)     | [knime-ip](https://gitter.im/orgs/knime-ip/rooms) |
+| <img src="/images/pages/Imglib2-icon.png" width="48"/> | [ImgLib2](ImgLib2) | [imglib](https://gitter.im/orgs/imglib/rooms)     |
+| <img src="/images/pages/Scifio-icon.png" width="48"/>  | [SCIFIO](SCIFIO)   | [scifio](https://gitter.im/orgs/scifio/rooms)     |
+| <img src="/images/pages/Scijava-icon.png" width="48"/> | [SciJava](SciJava) | [scijava](https://gitter.im/orgs/scijava/rooms)   |
 
 IRC
 ---
@@ -34,7 +34,7 @@ Some community members frequent {% include wikipedia title='Internet Relay Chat'
 | Channel                                           | Description                                                          | Chat logs                                                     |
 |---------------------------------------------------|----------------------------------------------------------------------|---------------------------------------------------------------|
 | [\#imagejdev](Irc_//irc.freenode.net/imagejdev)   | Core ImageJ development discussion.                                  | [imagejdev logs](http://code.imagej.net/chatlogs/imagejdev)   |
-| [\#fiji-devel](Irc_//irc.freenode.net/fiji-devel) | [Fiji](Fiji ) user and developer discussion and questions. | [fiji-devel logs](http://code.imagej.net/chatlogs/fiji-devel) |
+| [\#fiji-devel](Irc_//irc.freenode.net/fiji-devel) | [Fiji](Fiji) user and developer discussion and questions. | [fiji-devel logs](http://code.imagej.net/chatlogs/fiji-devel) |
 
 Advantages of IRC include anonymity, and maximum compatibility with a huge variety of existing chat clients.
 

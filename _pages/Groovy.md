@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Groovy Scripting](Groovy_Scripting )
+1.  REDIRECT [Groovy Scripting](Groovy_Scripting)

@@ -8,12 +8,12 @@ description: test description
 ---
 
 {% include develop-menu%}
-The source code of ImageJ is very modular; i.e., it is organized into [well-separated](Architecture#Modularity ) projects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
+The source code of ImageJ is very modular; i.e., it is organized into [well-separated](Architecture#Modularity) projects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
 
 Where is the code?
 ------------------
 
-{% include tip tip='You can search the source code at http://search.imagej.net/ using the GitHub button! ' %}\* All source code is on [GitHub](GitHub ).
+{% include tip tip='You can search the source code at http://search.imagej.net/ using the GitHub button!' %}\* All source code is on [GitHub](GitHub).
 
 -   Each project exists in its own GitHub organization.
 -   Each organization contains multiple source code repositories.
@@ -28,17 +28,17 @@ Where is the code?
 | <img src="/images/pages/Scifio-icon.png" width="28"/>  | [SCIFIO](https://github.com/scifio)   | Extensible image file I/O                                       |
 | <img src="/images/pages/Fiji-icon.png" width="28"/>    | [Fiji](https://github.com/fiji)       | A "batteries-included" distribution of ImageJ                   |
 
-See the [Architecture](Architecture ) page for more information about the relationship between these projects.
+See the [Architecture](Architecture) page for more information about the relationship between these projects.
 
 What is the license?
 --------------------
 
-Most is [BSD-2](BSD-2 ) (permissive); some is [GPL](GPL ) (copyleft). See the [Licensing](Licensing ) page.
+Most is [BSD-2](BSD-2) (permissive); some is [GPL](GPL) (copyleft). See the [Licensing](Licensing) page.
 
 Building from source
 --------------------
 
-Virtually all of these repositories have a top-level `pom.xml` file, identifying them as [Maven](Maven ) projects.
+Virtually all of these repositories have a top-level `pom.xml` file, identifying them as [Maven](Maven) projects.
 
 To build a Maven project:
 
@@ -47,7 +47,7 @@ To build a Maven project:
 3.  Type `mvn` from the top-level directory.
 
 Advanced instructions for building, or modifying, the source code are available for specific development environments: {% include ides%}
- Note that these tutorials are targeted towards [ImageJ](ImageJ ), but would apply to any Maven-based project.
+ Note that these tutorials are targeted towards [ImageJ](ImageJ), but would apply to any Maven-based project.
 
 Javadocs
 --------
@@ -58,6 +58,6 @@ Javadocs
 Running ImageJ1 unit tests
 --------------------------
 
-We have written a substantial number of unit tests to exercise [ImageJ 1.x](ImageJ_1.x ) functionality. See the [Unit tests for ImageJ1](Unit_tests_for_ImageJ1 ) page for more information.
+We have written a substantial number of unit tests to exercise [ImageJ 1.x](ImageJ_1.x) functionality. See the [Unit tests for ImageJ1](Unit_tests_for_ImageJ1) page for more information.
 
 

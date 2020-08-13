@@ -13,7 +13,7 @@ description: test description
 Introduction.
 -------------
 
-This last part on particle-linking modules concludes the series of tutorials on extending [TrackMate](TrackMate ). The most difficult modules to create are spot detectors, which was the subject of the [previous tutorial](How_to_write_your_own_detection_algorithm_for_TrackMate ). Particle-linking modules, or trackers, are a little bit less complicated.
+This last part on particle-linking modules concludes the series of tutorials on extending [TrackMate](TrackMate). The most difficult modules to create are spot detectors, which was the subject of the [previous tutorial](How_to_write_your_own_detection_algorithm_for_TrackMate). Particle-linking modules, or trackers, are a little bit less complicated.
 
 However, you still need to understand how we store and manipulate links in TrackMate, and this implies very briefly introducing mathematical graphs.
 
@@ -240,7 +240,7 @@ So it's not really complicated. Which is good, because the complicated part, com
 The factory class.
 ------------------
 
-Now that we have the clever part of the code (the one that does the actual linking), we need to deal with TrackMate integration. Like for the detection modules, this is done <i>via</i> a factory class, named [SpotTrackerFactory](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/SpotTrackerFactory.java). It is completely equivalent to the SpotDetectorFactory we saw in the [previous tutorial](How_to_write_your_own_detection_algorithm_for_TrackMate ), so I won't detail the common methods again.
+Now that we have the clever part of the code (the one that does the actual linking), we need to deal with TrackMate integration. Like for the detection modules, this is done <i>via</i> a factory class, named [SpotTrackerFactory](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/SpotTrackerFactory.java). It is completely equivalent to the SpotDetectorFactory we saw in the [previous tutorial](How_to_write_your_own_detection_algorithm_for_TrackMate), so I won't detail the common methods again.
 
 The methods specific to the tracker are:
 
@@ -273,6 +273,6 @@ Wrapping up
 
 The full code, as well as the code for another tracker example can be found on [github](https://github.com/fiji/TrackMate-examples/tree/master/src/main/java/plugin/trackmate/examples/tracker). And this concludes flatly our series of tutorials on how to extend TrackMate. Go forth now, and bend it to your needs; it is *your* tool.
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez )) 09:26, 5 September 2014 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 09:26, 5 September 2014 (CDT)
 
 

@@ -7,9 +7,9 @@ categories: News
 description: test description
 ---
 
-We are happy to announce [the first challenge on EM (machine-learning-based) automatic segmentation](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012 ), as part of a [contest-workshop](http://www.biomedicalimaging.org/index.php/programme/contestworkshops?showall=&start=2) previous to the [ISBI 2012 conference](http://www.biomedicalimaging.org/index.php), which will take place next May in Barcelona, Spain.
+We are happy to announce [the first challenge on EM (machine-learning-based) automatic segmentation](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012), as part of a [contest-workshop](http://www.biomedicalimaging.org/index.php/programme/contestworkshops?showall=&start=2) previous to the [ISBI 2012 conference](http://www.biomedicalimaging.org/index.php), which will take place next May in Barcelona, Spain.
 
-You can find all the information about the challenge [ here](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012 ).
+You can find all the information about the challenge [ here](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012).
 
 **The challenge is open to everybody**, the only requirement is to register in the server to obtain a user name and password to be able to download the training and test datasets, and upload your results.
 

@@ -113,9 +113,9 @@ The performance is better in the *ImgLib* version, as there is no need for two t
 Tutorials and howtos
 ====================
 
--   [Using Imglib in a plugin](Using_Imglib_in_a_plugin )
--   [Imglib: iterating through pixel data](Imglib__iterating_through_pixel_data )
--   [Imglib FAQ](Imglib_FAQ )
--   [Developing Imglib](Developing_Imglib )
+-   [Using Imglib in a plugin](Using_Imglib_in_a_plugin)
+-   [Imglib: iterating through pixel data](Imglib__iterating_through_pixel_data)
+-   [Imglib FAQ](Imglib_FAQ)
+-   [Developing Imglib](Developing_Imglib)
 
  

@@ -9,11 +9,11 @@ description: test description
 
 <div style="background:#fdd; padding: 10px 10px 0 10px; border: 1px solid black;">
 
-**DEPRECATION NOTICE:** This page describes the implementation of the **deprecated** Trainable Segmentation plugin, the previous incarnation of the [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) plugin and library. We encourage users and developers to work with the more advanced and properly maintained [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) instead.
+**DEPRECATION NOTICE:** This page describes the implementation of the **deprecated** Trainable Segmentation plugin, the previous incarnation of the [Trainable Weka Segmentation](Trainable_Weka_Segmentation) plugin and library. We encourage users and developers to work with the more advanced and properly maintained [Trainable Weka Segmentation](Trainable_Weka_Segmentation) instead.
 
 </div>
 
-This page provides a high level overview of how the **deprecated** [Trainable Segmentation](Trainable_Segmentation ) plugin (TSP) works.
+This page provides a high level overview of how the **deprecated** [Trainable Segmentation](Trainable_Segmentation) plugin (TSP) works.
 
 Summary
 -------

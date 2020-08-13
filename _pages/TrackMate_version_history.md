@@ -9,7 +9,7 @@ description: test description
 
 <b>This page is deprecated!</b> Starting v5.1.0, please look at the gihub page for TrackMate releases: https://github.com/fiji/TrackMate/releases
 
-This page contains the version history for the [TrackMate](TrackMate ) plugin. Bug fixes are not mentioned here, and do not get their own release number.
+This page contains the version history for the [TrackMate](TrackMate) plugin. Bug fixes are not mentioned here, and do not get their own release number.
 
 <div class="nonumtoc">
 </div>
@@ -22,7 +22,7 @@ Initial release
 22/05/2012 - v1.1
 -----------------
 
--   [TrackScheme](TrackScheme ) can change of display style.
+-   [TrackScheme](TrackScheme) can change of display style.
 -   De-activated folding branches in TrackScheme, as it was non-functional.
 -   Fix bugs when loading invisible tracks.
 
@@ -37,9 +37,9 @@ Initial release
 25/02/2013 - v2.0.0
 -------------------
 
-[Major update](2013-02-25_-_TrackMate_v2.0.0_released ):
+[Major update](2013-02-25_-_TrackMate_v2.0.0_released):
 
--   TrackMate now uses [ImgLib2](ImgLib2 ) internally, and is therefore ready to be moved to [ImageJ2](ImageJ2 ).
+-   TrackMate now uses [ImgLib2](ImgLib2) internally, and is therefore ready to be moved to [ImageJ2](ImageJ2).
 -   TrackMate now computes edge features (on top of spot and track features). These features enable the immediate measure of velocity, displacement, etc...
 -   Tracks can be colored in the Hyperstack displayer, in the 3D viewer and in TrackScheme using indifferently track or edge features.
 -   All spot, edge and track features are computed automatically and kept in sync even versus manual modifications.
@@ -117,21 +117,21 @@ Initial release
 
 -   Major **improvement for tracking performance**: The LAP trackers are now based on the [Jonker-Volgenant](http://link.springer.com/article/10.1007%2FBF02278710) solver, which performs better than the Munkres-Kuhn we were using until then. Our initial tests report that this new version runs 2x to 4x faster.
 -   A **major problem was found in the LoG detector**: Because of a severe rounding error, the LoG detector was not behaving as a true LoG detector, which strongly hindered its accuracy and potence. The problem is now fixed and **the accuracy of the detector has vastly improved**. You should now observe much better results when using this detector: less spurious spots, better spot size sensitivity, better sensitivity to faint spots. On its side, the DoG detector now handles spots that lie on the border of the images better. Of course, the results will be different when comparing to v2.1.1.
--   We also took the chance to rewrite all the detectors from scratch, using the latest development in [ImgLib2](ImgLib2 ). This prompted **major performance improvement for the detection process**.
--   Complete rewrite of the way we handle modules in TrackMate. TrackMate now uses [SciJava](http://www.scijava.org/) and exploit its automatic discovery mechanism for modules. Practically, **it is now very easy to extend TrackMate**, and you do not depend on us anymore at all for anything. We could completely disappear and you would still be able to extend TrackMate so that it suits your need, without requiring any of our help. Several [tutorials](TrackMate#For_developers_2 ) describe how to do this. This is made possible thanks to the enormous efforts of the SciJava team. Thanks to them!
--   In [TrackScheme](TrackScheme ), the tracks can be navigated through using the keyboard:
+-   We also took the chance to rewrite all the detectors from scratch, using the latest development in [ImgLib2](ImgLib2). This prompted **major performance improvement for the detection process**.
+-   Complete rewrite of the way we handle modules in TrackMate. TrackMate now uses [SciJava](http://www.scijava.org/) and exploit its automatic discovery mechanism for modules. Practically, **it is now very easy to extend TrackMate**, and you do not depend on us anymore at all for anything. We could completely disappear and you would still be able to extend TrackMate so that it suits your need, without requiring any of our help. Several [tutorials](TrackMate#For_developers_2) describe how to do this. This is made possible thanks to the enormous efforts of the SciJava team. Thanks to them!
+-   In [TrackScheme](TrackScheme), the tracks can be navigated through using the keyboard:
     -   UP: previous spot in time.
     -   DOWN: next spot in time.
     -   LEFT: next sibling within the same track
     -   RIGHT: previous sibling within the same track
     -   PAGE-DOWN: jump to next track, same frame
     -   PAGE-UP: jump to previous track, same frame
--   Major performance improvement when launching [TrackScheme](TrackScheme ) on a large models.
--   Major performance improvement when selecting/deselecting in [TrackScheme](TrackScheme )
+-   Major performance improvement when launching [TrackScheme](TrackScheme) on a large models.
+-   Major performance improvement when selecting/deselecting in [TrackScheme](TrackScheme)
 -   The 3D viewer is now in sync with manual modification. Any edit made to the model is immediately echoed on the 3D viewer. This comes at a price: the 3D viewer cannot be used for very large model in an efficient manner.
 -   The user can now define a *depth of drawing* display setting, that limits the number of Z-slices on which we draw the model. This is useful on very thick samples where the drawing of all the data across all Zs can become confusing.
 -   Minor improvement for the track display on the main view, for large models.
--   Ship a [MATLAB](MATLAB ) function to import in [MATLAB](MATLAB ) the tracks exported by TrackMate. Check [this](Using_TrackMate_with_MATLAB ).
+-   Ship a [MATLAB](MATLAB) function to import in [MATLAB](MATLAB) the tracks exported by TrackMate. Check [this](Using_TrackMate_with_MATLAB).
 -   Warn the user if they feed TrackMate with a stack that has no time-points by plenty of Z-slices. This is one of the main reason we get irrelevant bug reports: By default, ImageJ considers that a multi-image file is always made of 1 time-points and many Z-slices. Whereas users mean to feed TrackMate with a movie made of several 2D planes filmed over time. We now warn the user that the dimensionality stored in the image might not be the one they expect.
 -   **Fine tune multithreading**. Before this version, TrackMate was doing multithreading during detection in the following way: We run the detection process on as many frames as we have threads, and each frame is processed using 1 thread. This is suboptimal if we have a large number of threads, but a few number of frames (e.g. 1 frame, 24 threads). This release fixes this: If we have 10 threads and 15 frames to process, we process 10 frames at once, and allocate 1 thread per frame. But if we have 10 threads and 2 frames, we process the 2 frames at once, and allocate 5 threads per frame if we can. For this to work of course, the detector must be multithreaded, which is the case with the ones we ship now.
 -   TrackMate can now load partial TrackMate files, and still display all the information it could retrieve, instead of generating an error and quitting. This is useful if you have file that contains the model section, but not the settings section.
@@ -212,7 +212,7 @@ Initial release
 22-12-2014 - v2.6.3
 -------------------
 
-TrackMate version bumped by several increments, prompted by the [big update](2014-12-10_-_ImgLib2_released ) that happened to Fiji between this and the previous release. Some minor bugfixes and improvements are shipped nonetheless.
+TrackMate version bumped by several increments, prompted by the [big update](2014-12-10_-_ImgLib2_released) that happened to Fiji between this and the previous release. Some minor bugfixes and improvements are shipped nonetheless.
 
 -   In the table exports, spots and links are sorted by track then by frame.
 -   TrackMate now works with 1D images: image sequences made of single line or single column frames.
@@ -234,7 +234,7 @@ TrackMate version bumped by several increments, prompted by the [big update](201
 26-01-2015 - v2.7.1
 -------------------
 
--   Add a new tracking algorithm: [the linear motion LAP tracker](TrackMate_algorithms#Linear_motion_tracker ).
+-   Add a new tracking algorithm: [the linear motion LAP tracker](TrackMate_algorithms#Linear_motion_tracker).
 
 26-01-2015 - v2.7.2
 -------------------
@@ -251,7 +251,7 @@ TrackMate version bumped by several increments, prompted by the [big update](201
 
 -   Fix a bug, incorrectly fixed in imglib, that caused dead threads to accumulate upon running the detection step. Noticed and fixed by @hadim, @dietzc and @tpietzsch.
 
-27-10-2015 - [v2.8.0](2015-10-27_-_TrackMate_v2.8.0_released )
+27-10-2015 - [v2.8.0](2015-10-27_-_TrackMate_v2.8.0_released)
 ------------------------------------------------------------------------
 
 -   Contributed modules.
@@ -335,7 +335,7 @@ Only a subset of TrackMate features can be used, though. Right now, only the LoG
                             + "channel=1 "
                             + "max_frame_gap=0" )
 
-If you need other detectors and trackers, you have to rely on Python for now. [Scripting\_TrackMate](Scripting_TrackMate )
+If you need other detectors and trackers, you have to rely on Python for now. [Scripting\_TrackMate](Scripting_TrackMate)
 
 -   Several TrackScheme improvements:
     -   The row and column headers are now properly displayed and resized when zooming.

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Philipp Hanslovsky ' affiliation=' [Saalfeld Lab](https://www.janelia.org/lab/saalfeld-lab) , [HHMI Janelia](https://www.janelia.org/) ' forum='hanslovsky ' github='hanslovsky ' website='https://www.janelia.org/people/philipp-hanslovsky ' %}
+{% include user-box name='Philipp Hanslovsky' affiliation=' [Saalfeld Lab](https://www.janelia.org/lab/saalfeld-lab) , [HHMI Janelia](https://www.janelia.org/)' forum='hanslovsky' github='hanslovsky' website='https://www.janelia.org/people/philipp-hanslovsky' %}

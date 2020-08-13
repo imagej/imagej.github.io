@@ -7,11 +7,11 @@ categories:
 description: test description
 ---
 
-(Return to the main [3D Viewer](3D_Viewer ) page)
+(Return to the main [3D Viewer](3D_Viewer) page)
 
 A number of screencasts exist to help new users getting a particular job done with the 3D Viewer.
 
-For remaining questions, there is also a detailed [User FAQs](3D_Viewer__User_FAQs ) page.
+For remaining questions, there is also a detailed [User FAQs](3D_Viewer__User_FAQs) page.
 
 Display stacks
 --------------

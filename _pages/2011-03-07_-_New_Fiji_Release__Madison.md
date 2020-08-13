@@ -7,11 +7,11 @@ categories: News
 description: test description
 ---
 
-There is a [new version of Fiji](Downloads )!
+There is a [new version of Fiji](Downloads)!
 
-In our beloved tradition, the current version is named after the location of a big [hackathon](Hackathon ): Madison. It was not strictly a Fiji hackathon, but the first ImageJ2 hackathon, made possible by Kevin Eliceiri and Curtis Rueden. Nevertheless, quite some work on Fiji and its plugins got done, so here goes *Fiji Madison*.
+In our beloved tradition, the current version is named after the location of a big [hackathon](Hackathon): Madison. It was not strictly a Fiji hackathon, but the first ImageJ2 hackathon, made possible by Kevin Eliceiri and Curtis Rueden. Nevertheless, quite some work on Fiji and its plugins got done, so here goes *Fiji Madison*.
 
-If you already have a Fiji installation, please just use the [Fiji Updater](Fiji_Updater ) to update (make sure that you update <u>only</u> the Updater first if you have not updated in quite a while) -- do not forget to switch to the *Advanced mode* and hit *Update Java*.
+If you already have a Fiji installation, please just use the [Fiji Updater](Fiji_Updater) to update (make sure that you update <u>only</u> the Updater first if you have not updated in quite a while) -- do not forget to switch to the *Advanced mode* and hit *Update Java*.
 
 There have been more than 150 thousand lines added and 40 thousand removed, with the help of (in alphabetical order):
 
@@ -36,11 +36,11 @@ Thanks to the generous license by Erik Meijering to distribute the source code f
 
 The Linear Kuwahara plugin was contributed by Christian Tischer.
 
-Daniel Sage's MIJ library to use Fiji/ImageJ from within [MATLAB](MATLAB ) is included with Fiji now. Just add Fiji.app/scripts/ to the search path and call *Miji*.
+Daniel Sage's MIJ library to use Fiji/ImageJ from within [MATLAB](MATLAB) is included with Fiji now. Just add Fiji.app/scripts/ to the search path and call *Miji*.
 
 Kota Miura contributed the Temporal Color Coder which makes a t-projection color-coding the original time points.
 
-Bio-Format's bfopen.m was added to use Fiji's Bio-Formats from [MATLAB](MATLAB ). Thanks to Curtis Rueden.
+Bio-Format's bfopen.m was added to use Fiji's Bio-Formats from [MATLAB](MATLAB). Thanks to Curtis Rueden.
 
 The new 3D Blob Segmentation plugin allows interactive 3D segmentation in the 3D Viewer backed by Fiji's level sets framework. Thanks to Erwin Frise, Albert Cardona and Benjamin Schmid.
 

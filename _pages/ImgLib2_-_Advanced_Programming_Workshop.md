@@ -10,7 +10,7 @@ description: test description
 {% include imglibmenu%}
 
 {% capture  content %}
-The workshop materials linked below are outdated. Please get the most recent version from {% include github org='imglib ' repo='imglib2-advanced-workshop ' label='github.com/imglib/imglib2-advanced-workshop ' %}.
+The workshop materials linked below are outdated. Please get the most recent version from {% include github org='imglib' repo='imglib2-advanced-workshop' label='github.com/imglib/imglib2-advanced-workshop' %}.
 {% endcapture %}
 {% include warning-box content=content %}
 

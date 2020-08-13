@@ -7,6 +7,6 @@ categories:
 description: test description
 ---
 
-{% include user-box name='[Martin Čapek](mailto:martin.capek_at_img.cas.cz) ' affiliation=' [Light Microscopy Core Facility, Institute of Molecular Genetics of the CAS, Prague, Czech Republic](https://www.img.cas.cz/core-facilities/light-microscopy/) ' github='LMCF-IMG ' %}
+{% include user-box name='[Martin Čapek](mailto:martin.capek_at_img.cas.cz)' affiliation=' [Light Microscopy Core Facility, Institute of Molecular Genetics of the CAS, Prague, Czech Republic](https://www.img.cas.cz/core-facilities/light-microscopy/)' github='LMCF-IMG' %}
 
-[Wavelet Denoise](Wavelet_Denoise ) - plugin for wavelet-based denoising/filtering image data
+[Wavelet Denoise](Wavelet_Denoise) - plugin for wavelet-based denoising/filtering image data

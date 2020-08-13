@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [DS4H Image Alignment](DS4H_Image_Alignment )
+1.  REDIRECT [DS4H Image Alignment](DS4H_Image_Alignment)

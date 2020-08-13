@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Links\#Movie\_support](Links#Movie_support )
+1.  REDIRECT [Links\#Movie\_support](Links#Movie_support)

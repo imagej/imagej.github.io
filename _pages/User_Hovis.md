@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='David Hovis ' %}
+{% include user-box name='David Hovis' %}

@@ -13,7 +13,7 @@ The first step in stitching a tiled dataset is determining the pairwise shifts b
 
 <!-- -->
 
--   Aside from the default **Phase correlation** algorithm for shift determination, we also offer alignment via the Lucas-Kanade method or interest point registration, as well as expert view grouping options. For those advanced methods, refer to [BigStitcher\_Advanced\_stitching](BigStitcher_Advanced_stitching )
+-   Aside from the default **Phase correlation** algorithm for shift determination, we also offer alignment via the Lucas-Kanade method or interest point registration, as well as expert view grouping options. For those advanced methods, refer to [BigStitcher\_Advanced\_stitching](BigStitcher_Advanced_stitching)
 
 <img src="/images/pages/BigStitcher stitch 0.png" width="600"/>
 
@@ -31,8 +31,8 @@ After starting the stitching process, you need to specify how to handle multiple
 
 <img src="/images/pages/BigStitcher stitch 2.png" width="600"/>
 
--   If you ran the **Stitching wizard**, you will be asked to proceed to [Link Preview Mode](BigStitcher_Preview_Pairwise_shift ). Otherwise, you can proceed to this step via the right-click menu.
+-   If you ran the **Stitching wizard**, you will be asked to proceed to [Link Preview Mode](BigStitcher_Preview_Pairwise_shift). Otherwise, you can proceed to this step via the right-click menu.
 
-Go back to the [main page](BigStitcher#Documentation )
+Go back to the [main page](BigStitcher#Documentation)
 
 {% include warning-box content='When calculating pairwise shifts, we use only the """overlapping parts of two views""". This reduces the amount of data we have to look at and speeds up the computation, but might lead to incorrect results if the initial overlap (e.g. the positions loaded from metadata or manual grid specification) of the images is too small.' %}

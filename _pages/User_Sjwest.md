@@ -19,4 +19,4 @@ The StereoMate Package facilitates Stereological and Automated analysis of confo
 Multi-OTSU:
 ===========
 
-The Multi-OTSU algorithm is based on the [Multi\_Otsu\_Threshold](Multi_Otsu_Threshold ) algorithm contributed by Yasunari Tosa. It has been modified to work on image stacks, and to directly modify the image, so that it can be used with the StereoMate Threshold Manager plugin.
+The Multi-OTSU algorithm is based on the [Multi\_Otsu\_Threshold](Multi_Otsu_Threshold) algorithm contributed by Yasunari Tosa. It has been modified to work on image stacks, and to directly modify the image, so that it can be used with the StereoMate Threshold Manager plugin.

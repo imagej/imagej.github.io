@@ -13,16 +13,16 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='slim-curve ' repo='slim-plugin ' %}
+{% include github org='slim-curve' repo='slim-plugin' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='FLIMJ plugin ' logo='<img src="/images/pages/Slim-curve-icon.png" width="64"/> ' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
-[UW-Madison LOCI](http://loci.wisc.edu/) ' maintainer=maintainer filename='flimlib.jar, flimlib-""arch""-""ver"".jar,  
-flimj-ops-""ver"".jar ' source=source latest-version='1.0.0 ' website='https://flimlib.github.io/ ' category='[:Category:Analysis](Category_Analysis ) ' %}
+{% include info-box software='ImageJ' name='FLIMJ plugin' logo='<img src="/images/pages/Slim-curve-icon.png" width="64"/>' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
+[UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer filename='flimlib.jar, flimlib-""arch""-""ver"".jar,  
+flimj-ops-""ver"".jar' source=source latest-version='1.0.0' website='https://flimlib.github.io/' category='[:Category:Analysis](Category_Analysis)' %}
 
 Introduction
 ------------
 
-The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data within ImageJ, using the [FLIMLib](https://flimlib.github.io/) library. The plugin can be installed into the [Fiji](Fiji ) distribution of ImageJ simply by enabling the FLIMJ [update site](Update_site ). Features include:
+The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data within ImageJ, using the [FLIMLib](https://flimlib.github.io/) library. The plugin can be installed into the [Fiji](Fiji) distribution of ImageJ simply by enabling the FLIMJ [update site](Update_site). Features include:
 
 -   Fit individual pixels, entire images per-pixel, or do global analysis on entire images, using FLIMLib's rapid lifetime determination (RLD), Levenberg-Marquardt (LMA) or global analysis (Global) fitting algorithms
 -   Single, double and triple exponential fits
@@ -31,12 +31,12 @@ The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data within Ima
 -   Full control over the start and end fit cutoffs known as "cursors"
 -   Binning options for various kernel sizes to reduce noise and boost intensity when fitting per-pixel
 -   Support for so-called "excitation" or "prompt" files containing a recorded system response function to be convolved with the exponential fit
--   Batch processing support for analyzing many lifetime images as part of a [scripting](Scripting ) workflow
+-   Batch processing support for analyzing many lifetime images as part of a [scripting](Scripting) workflow
 
 Installation
 ------------
 
-The FLIMJ plugin is available from the "FLIMJ" [update site](Update_site ).
+The FLIMJ plugin is available from the "FLIMJ" [update site](Update_site).
 
 Once you have installed the FLIMJ plugin, it becomes available on the menu under {% include bc content='Analyze | Lifetime | FLIMJ'%}.
 
@@ -45,7 +45,7 @@ Usage
 
 ### Startup
 
-Open a dataset (such as {% include github org='flimlib ' repo='flimj-ops ' path='test\_files/test2.sdt ' label='this one ' %}) or select an existing image display in Fiji:
+Open a dataset (such as {% include github org='flimlib' repo='flimj-ops' path='test\_files/test2.sdt' label='this one' %}) or select an existing image display in Fiji:
 
 <figure><img src="/images/pages/FLIMJ_usage_open_dataset.png" title="FLIMJ_usage_open_dataset.png" width="300" alt="FLIMJ_usage_open_dataset.png" /><figcaption aria-hidden="true">FLIMJ_usage_open_dataset.png</figcaption></figure>
 
@@ -57,7 +57,7 @@ With the desired dataset window active, launch FLIMJ from the menu under {% incl
 
 If the dataset comes with a (fourth) spectral dimension, the user has to choose the spectral channel to analyze as well:
 
-<img src="/images/pages/FLIMJ Multiple Channel Detected.png" width="350"/> ' %}
+<img src="/images/pages/FLIMJ Multiple Channel Detected.png" width="350"/>' %}
 
 ### Fit preview
 
@@ -123,7 +123,7 @@ Sometimes you may want to fine-tune the fitting configurations. The **Settings**
 
 #### Instrument response function (IRF/prompt)
 
-FLIMJ plugin currently only supports the selection of IRF from a single pixel in an [acceptable dataset](#Startup "wikilink") that is taken during a standard IRF measurement procedure (such as {% include github org='flimlib ' repo='flimj-ui ' path='test\_files/urea.sdt ' label='this one using urea crystals ' %}). The steps are as follows:
+FLIMJ plugin currently only supports the selection of IRF from a single pixel in an [acceptable dataset](#Startup "wikilink") that is taken during a standard IRF measurement procedure (such as {% include github org='flimlib' repo='flimj-ui' path='test\_files/urea.sdt' label='this one using urea crystals' %}). The steps are as follows:
 
 1.  Click on the drop-down menu, select *From file*; select the dataset file that contains the IRF.
 2.  In **Preview** panel, select *IRF Intensity* for the "Show" option (you may also select *Grayscale* for the "as" option to deactivate pseudocoloring):<img src="/images/pages/FLIMJ_irf_show_irf.png" title="fig:Choose IRF Intensity to enter IRF picking mode." width="200" alt="Choose IRF Intensity to enter IRF picking mode." />
@@ -181,8 +181,8 @@ Coming soon...
 
 More documentation coming soon. For now, see the source code at:
 
-{% include big-link url='https://github.com/flimlib/flimj-ui ' %}
+{% include big-link url='https://github.com/flimlib/flimj-ui' %}
 
 And:
 
-{% include big-link url='https://github.com/flimlib/flimj-ops ' %}
+{% include big-link url='https://github.com/flimlib/flimj-ops' %}

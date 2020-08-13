@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Developing Fiji\#The Fiji launcher](Developing_Fiji#The_Fiji_launcher )
+1.  REDIRECT [Developing Fiji\#The Fiji launcher](Developing_Fiji#The_Fiji_launcher)

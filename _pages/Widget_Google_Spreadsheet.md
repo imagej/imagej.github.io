@@ -19,5 +19,5 @@ For information on how to use this widget, see [widget description page on Media
 Copy to your site
 -----------------
 
-To use this widget on your site, just install [MediaWiki Widgets extension](http://www.mediawiki.org/wiki/Extension:Widgets) and copy \[{% include fullurl content='\_\_\_SHADOW1\_\_\_' action='edit ' %} full source code\] of this page to your wiki as **{% include fullpagename%}
+To use this widget on your site, just install [MediaWiki Widgets extension](http://www.mediawiki.org/wiki/Extension:Widgets) and copy \[{% include fullurl content='\_\_\_SHADOW1\_\_\_' action='edit' %} full source code\] of this page to your wiki as **{% include fullpagename%}
 ** article. </noinclude><includeonly><iframe width="<!--{$width|escape:'html'|default:500}-->" height="<!--{$height|escape:'html'|default:300}-->" frameborder="0" src="https://docs.google.com/spreadsheets/d/<!--{$key|escape:'urlpathinfo'}-->/pubhtml?gid=<!--{$gid|escape:'html'}-->;single=true&amp;widget=true&amp;headers=false"></iframe></includeonly>

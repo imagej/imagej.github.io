@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Lasso and Blow Tool](Lasso_and_Blow_Tool )
+1.  REDIRECT [Lasso and Blow Tool](Lasso_and_Blow_Tool)

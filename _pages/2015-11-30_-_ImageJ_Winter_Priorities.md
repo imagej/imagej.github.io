@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2015-11-30 - ImageJ winter priorities](2015-11-30_-_ImageJ_winter_priorities )
+1.  REDIRECT [2015-11-30 - ImageJ winter priorities](2015-11-30_-_ImageJ_winter_priorities)

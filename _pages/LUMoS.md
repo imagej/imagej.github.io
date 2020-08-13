@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Spectral Unmixing](Spectral_Unmixing )
+1.  REDIRECT [Spectral Unmixing](Spectral_Unmixing)

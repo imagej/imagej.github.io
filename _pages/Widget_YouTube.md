@@ -17,5 +17,5 @@ For information on how to use this widget, see the [widget description page on M
 Copy to your site
 -----------------
 
-To use this widget on your site, just install the [MediaWiki Widgets extension](https://www.mediawiki.org/wiki/Extension:Widgets) and the copy \[{% include fullurl content='\_\_\_SHADOW1\_\_\_' action='edit ' %} full source code\] of this page to your wiki, as an article called **{% include fullpagename%}
+To use this widget on your site, just install the [MediaWiki Widgets extension](https://www.mediawiki.org/wiki/Extension:Widgets) and the copy \[{% include fullurl content='\_\_\_SHADOW1\_\_\_' action='edit' %} full source code\] of this page to your wiki, as an article called **{% include fullpagename%}
 **. </noinclude><includeonly><iframe width="<!--{$width|escape:'html'|default:'425'}-->" height="<!--{$height|escape:'html'|default:355}-->" src="https://www.youtube.com/embed/<!--{if isset($playlist)}-->?listType=playlist&list=<!--{$playlist|escape:'urlpathinfo'}--><!--{else}--><!--{$id|escape:'urlpathinfo'}--><!--{/if}-->" frameborder="0" allowfullscreen></iframe></includeonly>

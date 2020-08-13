@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Giovanni Cardone ' affiliation='Max Planck Institute of Biochemistry, Martinsried, Germany ' forum='gcardone ' github='giocard ' %}
+{% include user-box name='Giovanni Cardone' affiliation='Max Planck Institute of Biochemistry, Martinsried, Germany' forum='gcardone' github='giocard' %}

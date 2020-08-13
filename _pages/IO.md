@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Formats](Formats )
+1.  REDIRECT [Formats](Formats)

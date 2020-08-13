@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Fiji.sc](Fiji.sc )
+1.  REDIRECT [Fiji.sc](Fiji.sc)

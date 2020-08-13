@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Stitch and Align sequence of grid images Tutorial](Stitch_and_Align_sequence_of_grid_images_Tutorial )
+1.  REDIRECT [Stitch and Align sequence of grid images Tutorial](Stitch_and_Align_sequence_of_grid_images_Tutorial)

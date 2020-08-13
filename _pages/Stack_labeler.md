@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Stack Labeler](Stack_Labeler )
+1.  REDIRECT [Stack Labeler](Stack_Labeler)

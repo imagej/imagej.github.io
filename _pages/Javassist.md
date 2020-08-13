@@ -77,7 +77,7 @@ Or you could disassemble a method like this:
     // disassemble the method
     InstructionPrinter.print(method, System.err);
 
-If you absolutely do not want the output to go to *System.err*, you could substitute it by *new PrintStream(new IJLogOutputStream())* (the class *IJLogOutputStream* is defined in [Fiji Updater](Update_Fiji )'s *fiji.updater.util* class for you to reuse).
+If you absolutely do not want the output to go to *System.err*, you could substitute it by *new PrintStream(new IJLogOutputStream())* (the class *IJLogOutputStream* is defined in [Fiji Updater](Update_Fiji)'s *fiji.updater.util* class for you to reuse).
 
 VerifyError
 ===========
@@ -114,7 +114,7 @@ Side note: the ASM component (which is included in JRuby, which in turn is inclu
             --main-class jruby.objectweb.asm.util.CheckClassAdapter \
             my.class.Name
 
-If you are using Fiji's {% include github org='fiji ' repo='fiji-compat ' source='fiji/JavassistHelper.java ' label='JavassistHelper class ' %}, you can use the *verify()* method which does nothing else than to hand off to the ASM component's verifier. Example:
+If you are using Fiji's {% include github org='fiji' repo='fiji-compat' source='fiji/JavassistHelper.java' label='JavassistHelper class' %}, you can use the *verify()* method which does nothing else than to hand off to the ASM component's verifier. Example:
 
     import fiji.JavassistHelper;
     import javassist.ClassPool;

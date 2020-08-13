@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Auto Crop](Auto_Crop )
+1.  REDIRECT [Auto Crop](Auto_Crop)

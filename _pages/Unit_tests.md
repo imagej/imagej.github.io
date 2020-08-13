@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Architecture\#Unit\_tests](Architecture#Unit_tests )
+1.  REDIRECT [Architecture\#Unit\_tests](Architecture#Unit_tests)

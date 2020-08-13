@@ -7,42 +7,42 @@ categories: Development
 description: test description
 ---
 
-{% include info-box content='This page describes the ""social"" structure of [SciJava](SciJava ) projects.
+{% include info-box content='This page describes the ""social"" structure of [SciJava](SciJava) projects.
 
--   For information on the ""technical"" structure, see [Architecture](Architecture ).
--   For information on the ""legal"" structure, see [Licensing](Licensing ).' %}
+-   For information on the ""technical"" structure, see [Architecture](Architecture).
+-   For information on the ""legal"" structure, see [Licensing](Licensing).' %}
 
 {% include aboutmenu%}
-The [ImageJ](ImageJ ) project, and related projects in the [SciJava](SciJava ) software ecosystem, are governed as [open source](Open_source ) software projects. Everybody is welcome to [contribute](Contribute ) with [plugins](Plugins ), patches, [bug reports](Bugs ), [tutorials](Tutorials ), [documentation](Documentation ), and artwork.
+The [ImageJ](ImageJ) project, and related projects in the [SciJava](SciJava) software ecosystem, are governed as [open source](Open_source) software projects. Everybody is welcome to [contribute](Contribute) with [plugins](Plugins), patches, [bug reports](Bugs), [tutorials](Tutorials), [documentation](Documentation), and artwork.
 
 That said, every project needs leaders: the ones who participate in *governance* of the project, {% include wikipedia title='Software maintenance' text='maintaining'%} the software and making key decisions.
 
 Project roles
 -------------
 
-Because [open source](Open_source ) software (OSS) is highly collaborative, it is extremely important to understand the difference between various roles on the project, to avoid misconceptions about **authority** (who makes decisions) and **responsibility** (who is pledged to do the work) concerning each project.
+Because [open source](Open_source) software (OSS) is highly collaborative, it is extremely important to understand the difference between various roles on the project, to avoid misconceptions about **authority** (who makes decisions) and **responsibility** (who is pledged to do the work) concerning each project.
 
 The most common roles in OSS are:
 
 -   **Founders** are the people who originally launched the project.
--   **Leads** are responsible for making final decisions. In the [open source](Open_source ) world these people are often referred to as [benevolent dictators](http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html). Changes with a serious impact on the community are typically [discussed on open channels](Community ) first.
+-   **Leads** are responsible for making final decisions. In the [open source](Open_source) world these people are often referred to as [benevolent dictators](http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html). Changes with a serious impact on the community are typically [discussed on open channels](Community) first.
 -   **Maintainers** keep the project functional, fix bugs and make releases. They often make day to day decisions, and are typically involved in discussion with the project lead(s) regarding major decisions, although the lead has final decision-making authority.
 -   **Developers** are people who work on the project significantly or often. Typically they have direct push access to the source code. In some cases they make day to day decisions, depending on their experience and comfort level with the project.
 -   **Contributors** are people who help with the project either currently or in the past. They may participate occasionally or sporadically, and are typically not involved in project decision making.
 
 ### SciJava team roles
 
-Projects in the [SciJava component collection](Architecture ) define each component's **team** as the group of people who take *responsibility* for it. The following roles formalize the ways people are pledged to help:
+Projects in the [SciJava component collection](Architecture) define each component's **team** as the group of people who take *responsibility* for it. The following roles formalize the ways people are pledged to help:
 
 | Role        | Commitment                                                                                                                         |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------|
 | Founder     | Created the project. Does not imply any current participation or responsibility.                                                   |
-| Lead        | Has decision-making authority: timing of [releases](Releases ), inclusion of features, etc.                              |
+| Lead        | Has decision-making authority: timing of [releases](Releases), inclusion of features, etc.                              |
 | Developer   | Adds new features or enhancements. Can be assigned to address feature requests.                                                    |
-| Debugger    | Fixes [bugs](Issues ). Can be assigned open [issues](Issues ) to solve.                                        |
-| Reviewer    | Reviews [patch submissions](Contributing ).                                                                              |
-| Support     | Responds to [community questions](Community ) and [issue reports](Issues ). Keeps the issue tracker organized. |
-| Maintainer  | Merges [patch submissions](Contributing ). Cuts releases.                                                                |
+| Debugger    | Fixes [bugs](Issues). Can be assigned open [issues](Issues) to solve.                                        |
+| Reviewer    | Reviews [patch submissions](Contributing).                                                                              |
+| Support     | Responds to [community questions](Community) and [issue reports](Issues). Keeps the issue tracker organized. |
+| Maintainer  | Merges [patch submissions](Contributing). Cuts releases.                                                                |
 | Contributor | Contributed code to the project. Does not imply any current participation or responsibility.                                       |
 
 Individuals often fill more than one role.
@@ -50,7 +50,7 @@ Individuals often fill more than one role.
 Component status
 ----------------
 
-This web site documents lots of software [components](Components )—and in particular, many ImageJ [plugins](Plugins ). Components in the ecosystem each have a distinct development path, with varying levels of maturity and activity, which is ultimately determined by the people who participate in developing it.
+This web site documents lots of software [components](Components)—and in particular, many ImageJ [plugins](Plugins). Components in the ecosystem each have a distinct development path, with varying levels of maturity and activity, which is ultimately determined by the people who participate in developing it.
 
 Each component's page features an informational sidebar with a status report derived from the component's declared *team*. This sidebar is intended to help users understand what level to expect when seeking help, reporting issues, and submitting feature requests.
 
@@ -60,14 +60,14 @@ Each component's page features an informational sidebar with a status report der
 
 | Status   | Meaning                                                                                                                                                                                     |
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Unstable | Project is under heavy development, with unstable API undergoing iterations of refinement. Typically, these components are either unreleased, or [versioned at 0.x](Versioning ). |
+| Unstable | Project is under heavy development, with unstable API undergoing iterations of refinement. Typically, these components are either unreleased, or [versioned at 0.x](Versioning). |
 | Active   | New features are being actively developed. API breakages are kept as limited as possible.                                                                                                   |
 | Stable   | No new features are under development. API is stable.                                                                                                                                       |
 | Obsolete | The project is discontinued.                                                                                                                                                                |
 
 ### Support status
 
-**Support status** indicates the level to which the team responds to questions and [issue reports](Bugs ).
+**Support status** indicates the level to which the team responds to questions and [issue reports](Bugs).
 
 | Status  | Meaning                                                                                                                                                                                         |
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -79,7 +79,7 @@ Each component's page features an informational sidebar with a status report der
 SciJava project summary
 -----------------------
 
-Here is a summary of roles for projects in the [SciJava](SciJava ) ecosystem.
+Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
 
 <table><tbody><tr class="odd"><td><p><strong>Logo</strong></p></td><td><p><strong>Project</strong></p></td><td><p><strong>Founders</strong></p></td><td><p><strong>Leads</strong></p></td><td><p><strong>Maintainers</strong></p></td><td><p><strong>Developers</strong></p></td><td><p><strong>Contributors</strong></p></td></tr><tr class="even"><td><p> {% include logo content='SciJava' %}</p></td><td><p><strong><a href="SciJava" title="wikilink">SciJava</a></strong></p></td><td><p> {% include person content='Moore' %}<br />
 {% include person content='Rueden' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p></td><td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td></tr><tr class="odd"><td><p> {% include logo content='ImgLib2' %}</p></td><td><p><strong><a href="ImgLib2" title="wikilink">ImgLib2</a></strong></p></td><td><p> {% include person content='Saalfeld' %}<br />
@@ -124,7 +124,7 @@ Birgit Möller</p></td><td><p>Stefan Posch<br />
 Birgit Möller</p></td><td><p><a href="https://github.com/orgs/mitobo-hub/people">List on GitHub</a></p></td><td><p><a href="https://github.com/mitobo-hub/mitobo/graphs/contributors">Info on GitHub</a></p></td></tr></tbody></table>
 
 <sup>1</sup> Pietzsch leads on day to day issues. Pietzsch, Preibisch and Saalfeld vote on primary decisions, with Pietzsch's vote breaking ties.  
-<sup>2</sup> Barber leads development of the {% include github org='slim-curve ' repo='slim-curve ' label='SLIM Curve C library ' %}; Rueden leads development of the {% include github org='slim-curve ' repo='slim-plugin ' label='SLIM Curve plugin for ImageJ ' %}.
+<sup>2</sup> Barber leads development of the {% include github org='slim-curve' repo='slim-curve' label='SLIM Curve C library' %}; Rueden leads development of the {% include github org='slim-curve' repo='slim-plugin' label='SLIM Curve plugin for ImageJ' %}.
 
 Further reading
 ---------------

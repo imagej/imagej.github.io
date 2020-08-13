@@ -12,7 +12,7 @@ This account is used to manage the [OMERO 5.0 update site](http://sites.imagej.n
 
 To activate it:
 
--   [*Help&gt;Update*](Update_Sites )
+-   [*Help&gt;Update*](Update_Sites)
 -   Click *Manage update sites*
 -   Check *OMERO 5.0*
 -   Click *Close*

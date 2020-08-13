@@ -11,7 +11,7 @@ Suppose you wish to gather measurements from an image using real spatial units (
 
 The process of spatial calibration involves calibrating a single image against known values, then applying that calibration to your uncalibrated image. This assumes, of course, that both images are at the same magnification. Here's an example: The stage micrometer image on the left shows 100 micrometers. The same magnification was used to take the image on the right, a stopped spinning disk confocal scan head. We want to measure the distance between the spots and the area of the spots.
 
-![ 300px \| Image of a stage micrometer](/images/pages/60Xnooptovar.gif "fig: 300px | Image of a stage micrometer") [300px \| Image of a stopped spinning disk confocal scanner head](Image_Disc60xwithoutoptovar.gif )
+![ 300px \| Image of a stage micrometer](/images/pages/60Xnooptovar.gif "fig: 300px | Image of a stage micrometer") [300px \| Image of a stopped spinning disk confocal scanner head](Image_Disc60xwithoutoptovar.gif)
 
 1.  Open the stage micrometer image, and the uncalibrated test image. Select the stage micrometer image. Notice that the images are not spatially calibrated, and their scale is reported in the top info bar in pixels, not real spatial units.
 2.  Use the Line Selection tool to draw a selection line of a known length on the stage micrometer image.

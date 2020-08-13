@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2015-07-27 - Janelia Hackathon](2015-07-27_-_Janelia_Hackathon )
+1.  REDIRECT [2015-07-27 - Janelia Hackathon](2015-07-27_-_Janelia_Hackathon)

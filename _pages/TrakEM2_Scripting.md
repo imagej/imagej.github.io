@@ -7,11 +7,11 @@ categories: Scripting,TrakEM2
 description: test description
 ---
 
-Examples in [Jython](Jython_Scripting ).
+Examples in [Jython](Jython_Scripting).
 
-Open the "Plugins - Scripting - Jython Interpreter" (see [Scripting Help](Scripting_Help )) and make sure there is a TrakEM2 project open, with a display open. Then type or paste the examples below.
+Open the "Plugins - Scripting - Jython Interpreter" (see [Scripting Help](Scripting_Help)) and make sure there is a TrakEM2 project open, with a display open. Then type or paste the examples below.
 
-Or open a new [Script Editor](Script_Editor ) window with "File - New - Script", then paste the example, select the "Language - Python", and push the "Run" button.
+Or open a new [Script Editor](Script_Editor) window with "File - New - Script", then paste the example, select the "Language - Python", and push the "Run" button.
 
 Introduction to scripting TrakEM2
 =================================
@@ -28,7 +28,7 @@ See a [TrakEM2 class diagram](http://www.ini.uzh.ch/~acardona/img/trakem2_datast
 
 See also the complete [TrakEM2 API documentation](http://www.ini.uzh.ch/~acardona/api)
 
-To run a script, follow instructions as indicated in the [Scripting Help](Scripting_Help ).
+To run a script, follow instructions as indicated in the [Scripting Help](Scripting_Help).
 
 ### Get the instance of a selected image
 
@@ -1166,7 +1166,7 @@ The [AreaTree](https://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html)'s gene
 Save the project while running a task
 =====================================
 
-While a task is running, the right-click menu shows only an entry to cancel the task. To save the project while the task is running, type the following into the [Jython Interpreter](Jython_Interpreter ), and push return to execute it:
+While a task is running, the right-click menu shows only an entry to cancel the task. To save the project while the task is running, type the following into the [Jython Interpreter](Jython_Interpreter), and push return to execute it:
 
     Display.getFront().getProject().save()
 
@@ -1301,12 +1301,12 @@ TrakEM2 tutorials
 -----------------
 
 -   TrakEM2 [how to](http://www.ini.uzh.ch/~acardona/howto.html), with java code examples.
--   TrakEM2 [video tutorials](TrakEM2_tutorials ).
+-   TrakEM2 [video tutorials](TrakEM2_tutorials).
 
 Jython scripting
 ----------------
 
--   [Jython Scripting](Jython_Scripting ) in fiji.
+-   [Jython Scripting](Jython_Scripting) in fiji.
 -   [Jython webpage](http://www.jython.org).
 -   [Fiji scripting tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial) in Jython.
 
@@ -1315,10 +1315,10 @@ Jython scripts for TrakEM2
 
 All the following are included in Fiji's plugins/Examples/TrakEM2\_Example\_Scripts/ folder:
 
--   {% include github repo='fiji ' path='plugins/Examples/TrakEM2\_Example\_Scripts/extract\_stack\_under\_arealist.py ' label='Extract stack under AreaList ' %} in TrakEM2.
--   {% include github repo='fiji ' path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py ' label='Set all transforms to identity ' %} for TrakEM2 objects.
--   {% include github repo='fiji ' path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_Select\_All.py ' label='Select All ' %} objects in TrakEM2.
--   {% include github repo='fiji ' path='plugins/Examples/TrakEM2\_Example\_Scripts/Measure\_AreaLists.py ' label='Measure AreaList ' %} in TrakEM2.
+-   {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/extract\_stack\_under\_arealist.py' label='Extract stack under AreaList' %} in TrakEM2.
+-   {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py' label='Set all transforms to identity' %} for TrakEM2 objects.
+-   {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_Select\_All.py' label='Select All' %} objects in TrakEM2.
+-   {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/Measure\_AreaLists.py' label='Measure AreaList' %} in TrakEM2.
 -   A [collection of scripts for TrakEM2](https://github.com/acardona/Fiji-TrakEM2-scripts/tree/master/TrakEM2), hosted by github. Mostly related to inspecting and analyzing [Treeline](https://fiji.sc/javadoc/ini/trakem2/display/Treeline.html), [AreaTree](https://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html) and [Connector](https://fiji.sc/javadoc/ini/trakem2/display/Connector.html) instances, when used for neural circuit reconstruction.
 
  

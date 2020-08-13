@@ -8,7 +8,7 @@ description: test description
 ---
 
 {% include aboutmenu%}
-ImageJ is an open source Java image processing program inspired by [NIH Image](NIH_Image ). It runs on any computer with a Java 1.8 or later virtual machine. [Downloadable distributions](Downloads ) are available for Windows, Mac OS X and Linux. ImageJ has a strong, established user base, with thousands of [plugins](Plugins ) and [macros](Macros ) for performing a wide variety of tasks.
+ImageJ is an open source Java image processing program inspired by [NIH Image](NIH_Image). It runs on any computer with a Java 1.8 or later virtual machine. [Downloadable distributions](Downloads) are available for Windows, Mac OS X and Linux. ImageJ has a strong, established user base, with thousands of [plugins](Plugins) and [macros](Macros) for performing a wide variety of tasks.
 
 Flavors
 -------
@@ -25,7 +25,7 @@ Dec. 2009)</p></td></tr><tr class="even"><td></td><td><p><a href="ImageJX" title
 History
 -------
 
-The first imaging program that {% include person content='Rasband' %} developed, starting in the late 70s, was called simply "Image". It was written in Pascal, ran on PDP-11 minicomputers and ran in only 64KB of memory! Rasband started work on the second, [NIH Image](NIH_Image ), in 1987 when the Mac II became available. Rasband was a Mac enthusiast, and the Mac II had card slots just like the PDP-11. Rasband started work on ImageJ in 1997, when Java was becoming popular. Rasband was intrigued by the idea of creating a version of NIH Image that would "run anywhere", including as an applet in Web browsers.
+The first imaging program that {% include person content='Rasband' %} developed, starting in the late 70s, was called simply "Image". It was written in Pascal, ran on PDP-11 minicomputers and ran in only 64KB of memory! Rasband started work on the second, [NIH Image](NIH_Image), in 1987 when the Mac II became available. Rasband was a Mac enthusiast, and the Mac II had card slots just like the PDP-11. Rasband started work on ImageJ in 1997, when Java was becoming popular. Rasband was intrigued by the idea of creating a version of NIH Image that would "run anywhere", including as an applet in Web browsers.
 
 Timeline
 --------
@@ -37,9 +37,9 @@ Here is a timeline of software development related to ImageJ:
 Publications
 ------------
 
--   {% include citation last='Schneider ' first='C. A. ' last2='Rasband ' first2='W. S. ' last3='Eliceiri ' first3='K. W. ' year='2012 ' journal='Nature methods ' url='http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html ' title='NIH Image to ImageJ: 25 years of image analysis ' volume='9(7) ' pages='671-675 ' pmid='22930834 ' %}.
--   {% include citation last='Schindelin ' first='J. ' last2='Rueden ' first2='C. T. ' last3='Hiner ' first3='M. C. ' last4='Eliceiri ' first4='K. W. ' year='2015 ' journal='Molecular Reproduction and Development ' url='http://onlinelibrary.wiley.com/doi/10.1002/mrd.22489/full ' title='The ImageJ ecosystem: An open platform for biomedical image analysis ' volume=' ' pages=' ' pmid='26153368 ' %}.
+-   {% include citation last='Schneider' first='C. A.' last2='Rasband' first2='W. S.' last3='Eliceiri' first3='K. W.' year='2012' journal='Nature methods' url='http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html' title='NIH Image to ImageJ: 25 years of image analysis' volume='9(7)' pages='671-675' pmid='22930834' %}.
+-   {% include citation last='Schindelin' first='J.' last2='Rueden' first2='C. T.' last3='Hiner' first3='M. C.' last4='Eliceiri' first4='K. W.' year='2015' journal='Molecular Reproduction and Development' url='http://onlinelibrary.wiley.com/doi/10.1002/mrd.22489/full' title='The ImageJ ecosystem: An open platform for biomedical image analysis' volume='' pages='' pmid='26153368' %}.
 
-See also [Citing](Citing ).
+See also [Citing](Citing).
 
  

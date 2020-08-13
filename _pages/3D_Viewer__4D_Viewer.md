@@ -7,13 +7,13 @@ categories:
 description: test description
 ---
 
-(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation ) page)  
-(Return to the main [3D\_Viewer](3D_Viewer ) page)
+(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation) page)  
+(Return to the main [3D\_Viewer](3D_Viewer) page)
 
 How to visualize 4D data
 ------------------------
 
-You can download example source code for this HowTo [here](3D_Viewer__Example_code ).
+You can download example source code for this HowTo [here](3D_Viewer__Example_code).
 
 Sometimes, 3D data are recorded over time, and it is desirable to visualize those data, i.e. show it in a time line, being able to animate it, etc. This is possible with the viewer. The following lines of code show how to do it programmatically:
 

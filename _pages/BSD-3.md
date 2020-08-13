@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BSD](BSD )
+1.  REDIRECT [BSD](BSD)

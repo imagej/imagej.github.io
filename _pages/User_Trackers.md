@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [VarunKapoor](VarunKapoor )
+1.  REDIRECT [VarunKapoor](VarunKapoor)

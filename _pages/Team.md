@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Governance\#SciJava\_team\_roles](Governance#SciJava_team_roles )
+1.  REDIRECT [Governance\#SciJava\_team\_roles](Governance#SciJava_team_roles)

@@ -44,7 +44,7 @@ The plugin's manual might be downloaded from [ImageJ's wiki.](http://imagejdocu.
 Install/Update
 --------------
 
-v2.0 plugin is now contained in Fiji; just use {% include bc content='Help | [Update Fiji](Update_Fiji )'%} to get it.
+v2.0 plugin is now contained in Fiji; just use {% include bc content='Help | [Update Fiji](Update_Fiji)'%} to get it.
 
 Reference
 ---------

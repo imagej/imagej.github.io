@@ -7,7 +7,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='languages' %}{% include wikipedia title='JavaScript' text='JavaScript'%} is a high-level, dynamic, untyped programming language, supporting multiple paradigms including object-oriented, imperative and functional programming styles. Although there are similarities between JavaScript and [Java](Java ), including language name and syntax, the two are distinct languages and differ greatly in their design.
+{% include learn content='languages' %}{% include wikipedia title='JavaScript' text='JavaScript'%} is a high-level, dynamic, untyped programming language, supporting multiple paradigms including object-oriented, imperative and functional programming styles. Although there are similarities between JavaScript and [Java](Java), including language name and syntax, the two are distinct languages and differ greatly in their design.
 
 A note about JavaScript engines
 ===============================
@@ -22,7 +22,7 @@ Language basics
 
 ### Importing classes
 
-{% include importing-classes lang='JavaScript ' %} You can specify imports in JavaScript as follows:
+{% include importing-classes lang='JavaScript' %} You can specify imports in JavaScript as follows:
 
     importClass(Packages.java.io.File)
 
@@ -220,7 +220,7 @@ For example:
     var imp = createImage(400, 400, "RGB");
     imp.show();
 
-For a complex example see the example script {% include github repo='fiji ' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js ' label='Multithreaded Image Processing in Javascript ' %}, which, beyond parallelization, illustrates how to pass functions as arguments to other functions, and how to invoke them with variable number of arguments.
+For a complex example see the example script {% include github repo='fiji' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js' label='Multithreaded Image Processing in Javascript' %}, which, beyond parallelization, illustrates how to pass functions as arguments to other functions, and how to invoke them with variable number of arguments.
 
 #### Functions as Objects
 
@@ -775,7 +775,7 @@ Simplified:
 
 What the code above did: to look for an interface that could take a method with no arguments, represented by the function, and instantiate an anonymous class that implements such interface with the function mapped to its method.
 
-See also an [example plugin](Scripting_comparisons#In_Javascript ) for ImageJ written in javascript.
+See also an [example plugin](Scripting_comparisons#In_Javascript) for ImageJ written in javascript.
 
 Multithreaded Image Processing in Javascript
 --------------------------------------------
@@ -788,7 +788,7 @@ Always remember: only <b>completely</b> independent tasks can be parallelized ef
 
 A good strategy for multithreading involves carefully considering the task to parallelize: how small can the chunks be? For an image, a chunk could be a pixel or a line, but often those are too small to overcome the overhead of parallelization.
 
-Despite the simple example below, the <i>multithreader</i> framework function allows variable amount of arguments to be passed, as illustrated in the complete plugin {% include github repo='fiji ' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js ' label='Multithreaded\_Image\_Processing\_in\_Javascript.js ' %}. The script shows how to generate an image with random pixel values in a multithreaded manner, and how the choice of chunks to process in parallel is made for reasonable effectiveness.
+Despite the simple example below, the <i>multithreader</i> framework function allows variable amount of arguments to be passed, as illustrated in the complete plugin {% include github repo='fiji' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js' label='Multithreaded\_Image\_Processing\_in\_Javascript.js' %}. The script shows how to generate an image with random pixel values in a multithreaded manner, and how the choice of chunks to process in parallel is made for reasonable effectiveness.
 
     // Import all classes that are used more than once:
     importClass(Packages.ij.IJ);
@@ -836,7 +836,7 @@ Despite the simple example below, the <i>multithreader</i> framework function al
      // Execute:
      multithreader(printer, 0, 10);
 
-See the complete file here: {% include github repo='fiji ' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js ' label='Multithreaded\_Image\_Processing\_in\_Javascript.js ' %}
+See the complete file here: {% include github repo='fiji' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js' label='Multithreaded\_Image\_Processing\_in\_Javascript.js' %}
 
 Links
 =====
@@ -846,6 +846,6 @@ Links
 -   [Performance tips](http://www.mozilla.org/rhino/perf.html) (Java 6).
 -   [Tutorial](http://winterbe.com/posts/2014/04/05/java8-nashorn-tutorial/) on Oracle Nashorn (Java 8).
 
-See also the [Scripting comparisons](Scripting_comparisons ).
+See also the [Scripting comparisons](Scripting_comparisons).
 
 

@@ -8,21 +8,21 @@ description: test description
 ---
 
 {% include menu-formats%}
-If you have Flex files from an older Opera system, you may receive a message from [Bio-Formats](Bio-Formats ) stating that you need a LuraWave LWF license code to decode these files.
+If you have Flex files from an older Opera system, you may receive a message from [Bio-Formats](Bio-Formats) stating that you need a LuraWave LWF license code to decode these files.
 
 Decoding Flex files using the MBF distribution
 ----------------------------------------------
 
-The [MBF Plugin Collection](MBF_Plugin_Collection ) legally bundles the LuraWave LWF decoder module: [McMaster University](http://www.mcmaster.ca/) purchased a redistributable license from LuraTech (see below).
+The [MBF Plugin Collection](MBF_Plugin_Collection) legally bundles the LuraWave LWF decoder module: [McMaster University](http://www.mcmaster.ca/) purchased a redistributable license from LuraTech (see below).
 
 Steps to use:
 
 1.  [Download ImageJ 1.x](https://imagej.net/download.html) and unpack it
 2.  [Download the MBF Plugins Collection](https://imagej.net/plugins/mbf/)
 3.  Merge the MBF plugins into your ImageJ 1.x folder
-4.  Use {% include bc content='File | Open...'%} to convert your .flex files to OME-TIFF using [Bio-Formats](Bio-Formats )
+4.  Use {% include bc content='File | Open...'%} to convert your .flex files to OME-TIFF using [Bio-Formats](Bio-Formats)
 
-Unfortunately, for legal reasons, we cannot elaborate on the technical details of how the MBF collection provides this functionality, nor can we legally make this feature available within [ImageJ2](ImageJ2 ) or [Fiji](Fiji ).
+Unfortunately, for legal reasons, we cannot elaborate on the technical details of how the MBF collection provides this functionality, nor can we legally make this feature available within [ImageJ2](ImageJ2) or [Fiji](Fiji).
 
 Purchasing your own license
 ---------------------------
@@ -34,6 +34,6 @@ See also
 
 -   {% include publication content='Bio-Formats' %}
 -   [OME Blog - Supporting complex formats - what we will and won't do, and what you can do to help](http://blog.openmicroscopy.org/file-formats/community/2016/01/06/format-support/)
--   [Why scientists should use open source software](Open_Source )
+-   [Why scientists should use open source software](Open_Source)
 
 

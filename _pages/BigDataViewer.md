@@ -289,7 +289,7 @@ BigDataViewer seamlessly integrates with the "Multiview Reconstruction" plugins 
 
 In principle, BigDataViewer is able to display a TIFF dataset as is. However, for quick navigation this is not the ideal format: When navigating to a new timepoint, BigDataViewer needs to load all TIFF files of that timepoint into memory, suffering a delay of tens of seconcds. Therefore, it is beneficial to convert the TIFF dataset to HDF5. Note, that this can be done at any point of the processing pipeline (i.e., before registration, after registration, after multiview fusion or deconvolution, etc) because the "Multiview reconstruction" plugins can operate on HDF5 datasets as well.
 
-We assume that the user has already created an XML/TIFF dataset, as explained in [Multiview-Reconstruction](Multiview-Reconstruction ).
+We assume that the user has already created an XML/TIFF dataset, as explained in [Multiview-Reconstruction](Multiview-Reconstruction).
 
 To convert the dataset to HDF5, select {% include bc content='Plugins | Multiview Reconstruction | Resave | As HDF5'%} form the Fiji menu. This brings up the following dialog.
 
@@ -307,9 +307,9 @@ These parameters are the same as discussed in the previous section: If you want 
 
 Converting very large datasets into the HDF5 file format adds a significant overhead. In order to speed up this conversion, we have developed a image processing pipeline that enables parallelisation of the process on a HPC cluster.
 
-We have documented the steps and software needed to execute the above mentioned Fiji plugin on a cluster computer on [**this wiki page**](SPIM_Registration_on_cluster ). Specifically, the sections [**Define XML**](SPIM_Registration_on_cluster#Define_XML ) and [**Re-save as HDF5**](SPIM_Registration_on_cluster#Re-save_as_HDF5 ) deal with the conversion process.
+We have documented the steps and software needed to execute the above mentioned Fiji plugin on a cluster computer on [**this wiki page**](SPIM_Registration_on_cluster). Specifically, the sections [**Define XML**](SPIM_Registration_on_cluster#Define_XML) and [**Re-save as HDF5**](SPIM_Registration_on_cluster#Re-save_as_HDF5) deal with the conversion process.
 
-First it is necessary to define an XML file that describes the parameters of the dataset (i.e. number of time points, angles, illuminations and channels). Subsequently, we launch one HDF5 re-save job per time point which generates as many `.h5` files as there are time points. An additional master `.h5` file and the updated XML allow seamless navigation of such dataset with BigDataViewer. Since the dataset will typically reside on a cluster filesystem without a graphical user interface, it is advisable to register it with the [**BigDataServer**](BigDataServer ) and examine it remotely. All subsequent processing steps of SPIM registration only modify the XML and thus it is necessary to perform the re-saving only once, usually as the first step of the SPIMage processing pipeline.
+First it is necessary to define an XML file that describes the parameters of the dataset (i.e. number of time points, angles, illuminations and channels). Subsequently, we launch one HDF5 re-save job per time point which generates as many `.h5` files as there are time points. An additional master `.h5` file and the updated XML allow seamless navigation of such dataset with BigDataViewer. Since the dataset will typically reside on a cluster filesystem without a graphical user interface, it is advisable to register it with the [**BigDataServer**](BigDataServer) and examine it remotely. All subsequent processing steps of SPIM registration only modify the XML and thus it is necessary to perform the re-saving only once, usually as the first step of the SPIMage processing pipeline.
 
 A multi-view dataset consisting of 715 six angle time points (altogether 2.1 Terabytes) converts to HDF5 with compression in 65 minutes using about 200 processors working in parallel.
 

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Scala Scripting](Scala_Scripting )
+1.  REDIRECT [Scala Scripting](Scala_Scripting)

@@ -7,13 +7,13 @@ categories:
 description: test description
 ---
 
-(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation ) page)  
-(Return to the main [3D\_Viewer](3D_Viewer ) page)
+(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation) page)  
+(Return to the main [3D\_Viewer](3D_Viewer) page)
 
 How to change color, transparency etc of a Content
 --------------------------------------------------
 
-You can download example source code for this HowTo [here](3D_Viewer__Example_code ).
+You can download example source code for this HowTo [here](3D_Viewer__Example_code).
 
 Changing attributes like color and transparency of a Content is very easy. First, an image stack is opened, and a universe is created:
 

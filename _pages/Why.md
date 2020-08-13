@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Philosophy](Philosophy )
+1.  REDIRECT [Philosophy](Philosophy)

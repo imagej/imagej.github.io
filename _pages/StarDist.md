@@ -9,9 +9,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='stardist ' repo='stardist-imagej ' %}
+{% include github org='stardist' repo='stardist-imagej' %}
 {% endcapture %}
-{% include info-box name='StarDist ' software='ImageJ ' update-site='StarDist ' author='Uwe Schmidt, Martin Weigert ' maintainer='Uwe Schmidt, Martin Weigert ' source=source website='https://github.com/mpicbg-csbd/stardist ' %} <img src="/images/pages/StarDist logo.jpg" width="128"/>
+{% include info-box name='StarDist' software='ImageJ' update-site='StarDist' author='Uwe Schmidt, Martin Weigert' maintainer='Uwe Schmidt, Martin Weigert' source=source website='https://github.com/mpicbg-csbd/stardist' %} <img src="/images/pages/StarDist logo.jpg" width="128"/>
 
 Overview
 --------

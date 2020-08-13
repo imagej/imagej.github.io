@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Timothy Grocott ' affiliation=' [School of Biological Sciences](http://www.uea.ac.uk/biological-sciences/) , [University of East Anglia](http://www.uea.ac.uk/) ' forum='GrocottLab ' github='GrocottLab ' researchgate='Timothy\_Grocott ' scholar='SSpMxV8AAAAJ ' website='http://http://www.grocottlab.com/ ' %}
+{% include user-box name='Timothy Grocott' affiliation=' [School of Biological Sciences](http://www.uea.ac.uk/biological-sciences/) , [University of East Anglia](http://www.uea.ac.uk/)' forum='GrocottLab' github='GrocottLab' researchgate='Timothy\_Grocott' scholar='SSpMxV8AAAAJ' website='http://http://www.grocottlab.com/' %}

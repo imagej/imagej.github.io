@@ -14,7 +14,7 @@ description: test description
 Installation
 ============
 
-First, you should to [install](Install ) ImageJ!
+First, you should to [install](Install) ImageJ!
 
 The main window
 ===============
@@ -96,7 +96,7 @@ Whenever you open an image, be it via {% include bc content='File | Open'%}, Dra
 
 The window has the file name as title, and it display some useful information above the image: the real resolution (in this case in square centimeters), the pixel resolution, the image type and the memory required by the image.
 
-If your image does not have meta-data about the real resolution, you can set the resolution explicitely with {% include bc content='Image | Properties...'%} or by following the [tutorial on spatial calibration](SpatialCalibration ).
+If your image does not have meta-data about the real resolution, you can set the resolution explicitely with {% include bc content='Image | Properties...'%} or by following the [tutorial on spatial calibration](SpatialCalibration).
 
 Image Types
 -----------
@@ -118,6 +118,6 @@ There are two more options: RGB stack and HSV stack, which can turn a 2-dimensio
 Further reading
 ===============
 
-Have a look at the list of [tutorials](Category_Tutorials ) on this Wiki.
+Have a look at the list of [tutorials](Category_Tutorials) on this Wiki.
 
 

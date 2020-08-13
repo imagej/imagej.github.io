@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Imglib: iterating through pixel data](Imglib__iterating_through_pixel_data )
+1.  REDIRECT [Imglib: iterating through pixel data](Imglib__iterating_through_pixel_data)

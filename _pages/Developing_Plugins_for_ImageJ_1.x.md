@@ -7,16 +7,16 @@ categories: Tutorials,Development
 description: test description
 ---
 
-{% include imagej1 content='This page explains how to develop plugins with the ImageJ 1.x API. If you start developing a new plugin today, it is highly recommended to [develop for ImageJ2](Writing_plugins ).' %}
+{% include imagej1 content='This page explains how to develop plugins with the ImageJ 1.x API. If you start developing a new plugin today, it is highly recommended to [develop for ImageJ2](Writing_plugins).' %}
 
 {% include develop-menu content='tutorials' %}{% include project content='ImageJ1 \| describes content related to' %}
 
 Plugin, script or macro?
 ========================
 
-If you want to add a new feature to ImageJ, you can either [write a script or macro](Scripting_Help ), or do it as a plugin. Scripts and macros are easier to learn, and hence often faster to develop. However, Java offers numerous advantages including better performance in many cases, as well as compile-time safety of the code.
+If you want to add a new feature to ImageJ, you can either [write a script or macro](Scripting_Help), or do it as a plugin. Scripts and macros are easier to learn, and hence often faster to develop. However, Java offers numerous advantages including better performance in many cases, as well as compile-time safety of the code.
 
-If you are not sure which to choose, take a look at the [Scripting Help](Scripting_Help ) and try your hand at a script in a language that appeals to you. You can always convert it to a Java plugin later if the execution speed becomes an issue.
+If you are not sure which to choose, take a look at the [Scripting Help](Scripting_Help) and try your hand at a script in a language that appeals to you. You can always convert it to a Java plugin later if the execution speed becomes an issue.
 
 If you are certain that you want to write a plugin in Java, keep on reading!
 
@@ -96,14 +96,14 @@ Limitations
 -   Some functions which are easy to call via macros are not available via the public Java API (e.g. {% include bc content='Image | Stacks | Plot Z-axis profile...'%})
 -   It is often quicker to write macros
 
-Rapid prototyping with the [Script Editor](Script_Editor )
+Rapid prototyping with the [Script Editor](Script_Editor)
 ====================================================================
 
 {% include warning-box content='Using the Script Editor for Java development is not currently recommended.  
 For Java development, proceed to the [Getting Started with Maven](#Getting_started_with_Maven "wikilink") section.  
-If you would like to use the script editor, see the sections for the [other supported languages](Scripting#Supported_languages ).' %}
+If you would like to use the script editor, see the sections for the [other supported languages](Scripting#Supported_languages).' %}
 
-<s>There a few good reasons why you should try the [Script Editor](Script_Editor ) for rapid prototyping of your plugins or scripts:
+<s>There a few good reasons why you should try the [Script Editor](Script_Editor) for rapid prototyping of your plugins or scripts:
 
 -   Supports Jython, JRuby, Javascript, Clojure, Java, BeanShell, and ImageJ's Macro Language
 -   Syntax highlighting
@@ -116,23 +116,23 @@ If you would like to use the script editor, see the sections for the [other supp
 Quick Start
 -----------
 
-<s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [Script Editor](Script_Editor ) ({% include bc content='File | New | Script'%}), and select the *Process Pixels* menu item from the {% include bc content='Templates | Java'%} menu. Then, run the plugin with *Run&gt;Run*.</s>
+<s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [Script Editor](Script_Editor) ({% include bc content='File | New | Script'%}), and select the *Process Pixels* menu item from the {% include bc content='Templates | Java'%} menu. Then, run the plugin with *Run&gt;Run*.</s>
 
 Getting started with Maven
 ==========================
 
-The {% include github org='imagej ' repo='example-legacy-plugin ' label='example-legacy-plugin project ' %} provides a working example, and documentation, illustrating how an ImageJ plugin should be structured from a "best practices in Maven" point of view.
+The {% include github org='imagej' repo='example-legacy-plugin' label='example-legacy-plugin project' %} provides a working example, and documentation, illustrating how an ImageJ plugin should be structured from a "best practices in Maven" point of view.
 
-Using this project requires a basic understanding of [Git](Git ) and [Maven](Maven ); thus if you are already familiar with the ImageJ 1.x API, this is a reasonable starting point to learn the [project management](Project_management ) tools used in [ImageJ2 development](Writing_plugins ).
+Using this project requires a basic understanding of [Git](Git) and [Maven](Maven); thus if you are already familiar with the ImageJ 1.x API, this is a reasonable starting point to learn the [project management](Project_management) tools used in [ImageJ2 development](Writing_plugins).
 
 Basic workflow
 ==============
 
 All plugin development tends to follow a consistent "Design - Build - Test" workflow. Practically, this looks like:
 
--   Make changes to the source code (e.g. in [Eclipse](Eclipse ))
--   Build your plugin's .jar from the source code (e.g. with [Maven](Maven ))
--   Move the plugin to the [plugins directory](Plugin#Installing_plugins_manually ) of an existing ImageJ installation
+-   Make changes to the source code (e.g. in [Eclipse](Eclipse))
+-   Build your plugin's .jar from the source code (e.g. with [Maven](Maven))
+-   Move the plugin to the [plugins directory](Plugin#Installing_plugins_manually) of an existing ImageJ installation
 -   (Re)start ImageJ and run the plugin to test the behavior
 
 ... and repeat until your plugin is working as intended.
@@ -145,7 +145,7 @@ The source of the various Fiji-related projects is spread over several source co
 The class *IJ*
 --------------
 
-The class {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/IJ.java ' label='ij.IJ ' %} is a convenience class with many static functions. Two of them are particularly useful for debugging:
+The class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/IJ.java' label='ij.IJ' %} is a convenience class with many static functions. Two of them are particularly useful for debugging:
 
     // output into the Log window
     IJ.log(“Hello, World!”);
@@ -156,7 +156,7 @@ The class {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij
 The class *ImageJ*
 ------------------
 
-The class {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/ImageJ.java ' label='ij.ImageJ ' %} implements the main window of ImageJ / Fiji, and you can access it via *ij.IJ*'s static method *getInstance()*:
+The class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/ImageJ.java' label='ij.ImageJ' %} implements the main window of ImageJ / Fiji, and you can access it via *ij.IJ*'s static method *getInstance()*:
 
     // check if ImageJ is used interactively
     if (IJ.getInstance() != null)
@@ -167,7 +167,7 @@ Typically, all you do with that instance is to test whether ImageJ is used as a 
 The class *WindowManager*
 -------------------------
 
-Use the class {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/WindowManager.java ' label='ij.WindowManager ' %} to access the ImageJ windows / images:
+Use the class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/WindowManager.java' label='ij.WindowManager' %} to access the ImageJ windows / images:
 
     // how many windows / images are active?
     IJ.log(“There are “
@@ -181,7 +181,7 @@ When implementing a filter plugin, you usually do not need to access *WindowMana
 The hierarchy of the classes representing an image
 --------------------------------------------------
 
-All images are represented as instances of {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/ImagePlus.java ' label='ij.ImagePlus ' %}. This class wraps an {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/ImageStack.java ' label='ij.ImageStack ' %} of slices. Slices are data-type dependent instances of {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/ImageProcessor.java ' label='ij.process.ImageProcessor ' %}: {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/ByteProcessor.java ' label='ij.process.ByteProcessor ' %}, {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/ShortProcessor.java ' label='ij.process.ShortProcessor ' %}, {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/FloatProcessor.java ' label='ij.process.FloatProcessor ' %}, and {% include github org='imagej ' repo='ImageJA ' path='src/main/java/ij/process/ColorProcessor.java ' label='ij.process.ColorProcessor ' %}. Or graphically:
+All images are represented as instances of {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/ImagePlus.java' label='ij.ImagePlus' %}. This class wraps an {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/ImageStack.java' label='ij.ImageStack' %} of slices. Slices are data-type dependent instances of {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ImageProcessor.java' label='ij.process.ImageProcessor' %}: {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ByteProcessor.java' label='ij.process.ByteProcessor' %}, {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ShortProcessor.java' label='ij.process.ShortProcessor' %}, {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/FloatProcessor.java' label='ij.process.FloatProcessor' %}, and {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ColorProcessor.java' label='ij.process.ColorProcessor' %}. Or graphically:
 
 <figure><img src="/images/pages/Image_Class_Hierarchy.png" title="Image_Class_Hierarchy.png" width="600" alt="Image_Class_Hierarchy.png" /><figcaption aria-hidden="true">Image_Class_Hierarchy.png</figcaption></figure>
 
@@ -211,7 +211,7 @@ In ImageJ, you can represent more than 3 dimensions in an image: *X, Y, Z, chann
     int index = image.getStackIndex(channel, slice, frame);
     ImageProcessor ip = stack.getProcessor(index);
 
-**Note:** for historical reasons, slice indices (and channel and frame indices as well) start at <u>1</u>. This is in contrast, e.g. to the x, y coordinates, which start at <u>0</u> (as one might be used to from other computer languages except BASIC, Pascal and [MATLAB](MATLAB )).
+**Note:** for historical reasons, slice indices (and channel and frame indices as well) start at <u>1</u>. This is in contrast, e.g. to the x, y coordinates, which start at <u>0</u> (as one might be used to from other computer languages except BASIC, Pascal and [MATLAB](MATLAB)).
 
 Working with the pixels' values
 -------------------------------
@@ -297,18 +297,18 @@ This code snippet shows you how to update the progress bar and the status text:
 Frequently used operators
 -------------------------
 
-The {% include javadoc-ij1 package='ij/process ' class='ImageProcessor ' %} class has a few methods such as *smooth()*, *sharpen()*, *findEdges()*, etc
+The {% include javadoc-ij1 package='ij/process' class='ImageProcessor' %} class has a few methods such as *smooth()*, *sharpen()*, *findEdges()*, etc
 
 **Tip:** use the Script Editor's functions in the *Tools* menu:
 
 -   *Open Help for Class...* (opens the JavaDoc for a class in a browser),
--   *Open .java file for class...* (requires the respective source files to be present in the Fiji directory, such as after [Downloading and Building Fiji From Source](Downloading_and_Building_Fiji_From_Source ), or
+-   *Open .java file for class...* (requires the respective source files to be present in the Fiji directory, such as after [Downloading and Building Fiji From Source](Downloading_and_Building_Fiji_From_Source), or
 -   *Open .java file for menu item...* (also needs the source files).
 
 Plots
 -----
 
-You can show a plot window very easily using the {% include javadoc-ij1 package='ij/gui ' class='Plot ' %} class:
+You can show a plot window very easily using the {% include javadoc-ij1 package='ij/gui' class='Plot' %} class:
 
     void plot(double[] values) {
         double[] x = new double[values.length];
@@ -331,7 +331,7 @@ It is almost as easy to put multiple plots into one window:
         plot.show();
     }
 
-To update the contents of a plot window, remember the return value of *plot.show()* which is a {% include javadoc-ij1 package='ij/gui ' class='PlotWindow ' %}, and use its *drawPlot()* method:
+To update the contents of a plot window, remember the return value of *plot.show()* which is a {% include javadoc-ij1 package='ij/gui' class='PlotWindow' %}, and use its *drawPlot()* method:
 
     void plot(double[] values) {
         ...
@@ -398,24 +398,24 @@ Calling ImageJ2 from ImageJ 1.x
 
 You can use ImageJ2-specific functionality from within an ImageJ 1.x plugin. For example, ImageJ2 provides a spreadsheet-like results table that supports string cells. You can write an ImageJ 1.x plugin that produces such a spreadsheet, displaying it onscreen.
 
-See the {% include github org='imagej ' repo='tutorials ' path='maven-projects/call-modern-from-legacy ' label='call-modern-from-legacy ' %} example of the ImageJ Tutorials:
+See the {% include github org='imagej' repo='tutorials' path='maven-projects/call-modern-from-legacy' label='call-modern-from-legacy' %} example of the ImageJ Tutorials:
 
-> {% include github org='imagej ' repo='tutorials ' path='maven-projects/call-modern-from-legacy/src/main/java/DisplayATable.java ' label='DisplayATable.java ' %}
+> {% include github org='imagej' repo='tutorials' path='maven-projects/call-modern-from-legacy/src/main/java/DisplayATable.java' label='DisplayATable.java' %}
 
 Further tips
 ------------
 
-Please see also the developers tips how to [use ImageJ's API effectively](Tips_for_developers#Using_ImageJ_effectively ).
+Please see also the developers tips how to [use ImageJ's API effectively](Tips_for_developers#Using_ImageJ_effectively).
 
 Next steps
 ==========
 
 See guides on:
 
--   [Developing in Eclipse](Developing_Fiji_in_Eclipse#Create_the_Eclipse_Projects )
--   [Plugin distribution](Distribution )
--   [Development lifecycle](Development_Lifecycle )
--   [Debugging practice](Debugging_Exercises )
--   [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet )
+-   [Developing in Eclipse](Developing_Fiji_in_Eclipse#Create_the_Eclipse_Projects)
+-   [Plugin distribution](Distribution)
+-   [Development lifecycle](Development_Lifecycle)
+-   [Debugging practice](Debugging_Exercises)
+-   [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet)
 
  

@@ -12,7 +12,7 @@ This account is used to manage the [Cookbook update site](http://sites.imagej.ne
 
 To activate it:
 
--   [*Help&gt;Update*](Update_Sites )
+-   [*Help&gt;Update*](Update_Sites)
 -   Click *Manage update sites*
 -   Check *Cookbook*
 -   Click *Close*
@@ -24,4 +24,4 @@ Some files should appear on the list with *Status/Action* of *Install it*.
 
 Your ImageJ should now possess additional commands in the *Cookbook* menu.
 
-See the [Cookbook](Cookbook ) pages for further details!
+See the [Cookbook](Cookbook) pages for further details!

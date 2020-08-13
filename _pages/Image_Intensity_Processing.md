@@ -106,7 +106,7 @@ Obtaining timestamp data
 
 ### Zeiss LSM
 
-The [LSM Toolbox](LSM_Toolbox ) is a project aiming at the integration of common useful functions around the Zeiss LSM file format, that should enhance usability of confocal LSM files kept in their native format, thus preserving all available metadata.
+The [LSM Toolbox](LSM_Toolbox) is a project aiming at the integration of common useful functions around the Zeiss LSM file format, that should enhance usability of confocal LSM files kept in their native format, thus preserving all available metadata.
 
 In Fiji, corresponding commands are: "{% include bc content='File | Import | Show LSMToolbox'%}" which displays the toolbox, from which all commands can be called and "{% include bc content='Help | About Plugins | LSMToolbox...'%}" which displays information about the plugin.
 

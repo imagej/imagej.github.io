@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-Fiji.sc is our server; it hosts [this Wiki](Fiji ), [the downloadable files](Downloads ) and the [Git repositories](https://fiji.sc/cgi-bin/gitweb.cgi).
+Fiji.sc is our server; it hosts [this Wiki](Fiji), [the downloadable files](Downloads) and the [Git repositories](https://fiji.sc/cgi-bin/gitweb.cgi).
 
 Former name
 -----------

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [User input](User_input )
+1.  REDIRECT [User input](User_input)

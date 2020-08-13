@@ -159,8 +159,8 @@ Code
 See also
 --------
 
--   [Beanshell Scripting](Beanshell_Scripting )
--   [Scripting Help](Scripting_Help )
--   [Scripting comparisons](Scripting_comparisons )
+-   [Beanshell Scripting](Beanshell_Scripting)
+-   [Scripting Help](Scripting_Help)
+-   [Scripting comparisons](Scripting_comparisons)
 
 

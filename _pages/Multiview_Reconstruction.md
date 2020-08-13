@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Multiview-Reconstruction](Multiview-Reconstruction )
+1.  REDIRECT [Multiview-Reconstruction](Multiview-Reconstruction)

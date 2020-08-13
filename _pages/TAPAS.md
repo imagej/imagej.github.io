@@ -13,9 +13,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='mcib3d ' repo='tapas-core ' %}
+{% include github org='mcib3d' repo='tapas-core' %}
 {% endcapture %}
-{% include info-box name='TAPAS ' software='tapas ' update-site='TAPAS ' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d) ' source=source released='14/08/2019, V0.4 ' latest-version='22/06/2020, V0.6.3 ' status='stable, active ' category='[Automation](Category_Automation ), [Analysis](Category_Analysis ), [Filtering](Category_Filtering ), [Segmentation](Category_Segmentation ) ' %}
+{% include info-box name='TAPAS' software='tapas' update-site='TAPAS' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d)' source=source released='14/08/2019, V0.4' latest-version='22/06/2020, V0.6.3' status='stable, active' category='[Automation](Category_Automation), [Analysis](Category_Analysis), [Filtering](Category_Filtering), [Segmentation](Category_Segmentation)' %}
 
 TAPAS : An integrated tool for batch processing
 -----------------------------------------------
@@ -36,7 +36,7 @@ Thomas Boudier
 Features
 --------
 
-Basically we will propose modules from the [3D\_ImageJ\_Suite](3D_ImageJ_Suite ), ImageJ/Fiji, along with other modules.
+Basically we will propose modules from the [3D\_ImageJ\_Suite](3D_ImageJ_Suite), ImageJ/Fiji, along with other modules.
 
 As for stable version 0.5 the following modules are available :
 
@@ -56,7 +56,7 @@ Installation
 
 <!-- -->
 
--   Install [3D\_ImageJ\_Suite](3D_ImageJ_Suite ). It is also available as a update site in Fiji. **ImageScience** should be installed too, either from [here](http://www.imagescience.org/meijering/software/featurej/) or via the update site in Fiji.
+-   Install [3D\_ImageJ\_Suite](3D_ImageJ_Suite). It is also available as a update site in Fiji. **ImageScience** should be installed too, either from [here](http://www.imagescience.org/meijering/software/featurej/) or via the update site in Fiji.
 
 <!-- -->
 

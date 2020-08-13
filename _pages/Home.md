@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Welcome](Welcome )
+1.  REDIRECT [Welcome](Welcome)

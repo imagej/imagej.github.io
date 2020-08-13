@@ -42,7 +42,7 @@ In the next window, you can review and correct the automatic metadata definition
 
 ### Views within files
 
-We are using [Bio-Formats](Bio-Formats ) under the hood. In Bio-Formats, files can include multiple **series**, each containing multiple **channels**, time points and z-slices.
+We are using [Bio-Formats](Bio-Formats) under the hood. In Bio-Formats, files can include multiple **series**, each containing multiple **channels**, time points and z-slices.
 
 The automatic loader tries to assign the stacks to different channels, illuminations, tiles, angles and time points automatically and you can review the choices here.
 
@@ -87,7 +87,7 @@ A simpler and less interactive, but Macro-scriptable version of the above. You w
 (Optional) Move Tile to regular grid (Macro-scriptable)
 -------------------------------------------------------
 
-If you selected to move tiles to a regular grid manually, you will be presented with a dialog to specify the parameters of the grid, i.e. the pattern of the tiles, how many tiles there are and by how much they overlap ([details](BigStitcher_manual_translation#Move_Tiles_To_Regular_Grid_... )).
+If you selected to move tiles to a regular grid manually, you will be presented with a dialog to specify the parameters of the grid, i.e. the pattern of the tiles, how many tiles there are and by how much they overlap ([details](BigStitcher_manual_translation#Move_Tiles_To_Regular_Grid_...)).
 
 If there are multiple angles in the dataset, the dialog will be shown for each of them.
 
@@ -114,7 +114,7 @@ You will also be able to specify the **dataset save path**, i.e. the directory t
 
 ### Options for re-saving as HDF5
 
-If you chose to resave your dataset as HDF5 in the previous dialog, you will be presented with options for the creating the multi-resolution pyramid and saving it. For an in-depth explanation of the options, have a look at the [BigDataViewer documentation](BigDataViewer#Exporting_from_ImageJ_Stacks ).
+If you chose to resave your dataset as HDF5 in the previous dialog, you will be presented with options for the creating the multi-resolution pyramid and saving it. For an in-depth explanation of the options, have a look at the [BigDataViewer documentation](BigDataViewer#Exporting_from_ImageJ_Stacks).
 
 -   **manual mipmap setup** allows you to specify the subampling factors in the form `{subsampling factor in x, subsampling factor in y, subsampling factor in z}`, e.g. `{1,1,1}` for the original images. The multiple subsampling factors have to separated by commas and placed between brackets. Furthermore, the data will be split into *chunks*, e.g. 16x16x16 pixels. You can specify the chunk size per subsampling level in the same format as the subsampling factors. Generally, we try to pick meaningful defaults here, so *you should not have to change these settings*.
 
@@ -137,14 +137,14 @@ If you chose to resave your dataset as HDF5 in the previous dialog, you will be 
 (Optional) Move Tiles to regular grid interactively
 ---------------------------------------------------
 
-If you selected **Move Tiles to Grid (interactive)** earlier on, a [BigDataViewer](BigDataViewer ) window will open at this point and display the images in your dataset.
+If you selected **Move Tiles to Grid (interactive)** earlier on, a [BigDataViewer](BigDataViewer) window will open at this point and display the images in your dataset.
 
-You will be presented with a dialog to specify the parameters of the grid, i.e. the pattern of the tiles, how many tiles there are and by how much they overlap. The effects of your settings will be displayed in the BigDataViewer window and updated on-the-fly ([details](BigStitcher_manual_translation#Move_Tiles_To_Regular_Grid_... )).
+You will be presented with a dialog to specify the parameters of the grid, i.e. the pattern of the tiles, how many tiles there are and by how much they overlap. The effects of your settings will be displayed in the BigDataViewer window and updated on-the-fly ([details](BigStitcher_manual_translation#Move_Tiles_To_Regular_Grid_...)).
 
 As with the macro-scriptable version of this dialog, if there are multiple angles in the dataset, the dialog will be shown for each of them and if you specify more than one layer in z, the x and y pattern will be repeated for every layer.
 
 {% include thumbnail src='/images/pages/BigStitcher Arrange Views004.png' title='Interactive grid alignment window.'%}
 
-Go back to the [dataset definition overview](BigStitcher_Define_new_dataset )
+Go back to the [dataset definition overview](BigStitcher_Define_new_dataset)
 
-Go back to the [main page](BigStitcher#Documentation )
+Go back to the [main page](BigStitcher#Documentation)

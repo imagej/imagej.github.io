@@ -13,9 +13,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='scijava ' repo='script-editor ' source='org/scijava/ui/swing/script/ScriptEditor.java ' %}
+{% include github org='scijava' repo='script-editor' source='org/scijava/ui/swing/script/ScriptEditor.java' %}
 {% endcapture %}
-{% include info-box name='Script Editor ' software='ImageJ ' author='Johannes Schindelin, Sumit Dubey (Google Summer of Code 2009) ' maintainer=maintainer source=source released='11 Sep 2008 ' status='active ' %}The script editor is an invaluable help when writing scripts in any of ImageJ's supported [languages](Scripting_comparisons ).{% include learn content='scripting' %}
+{% include info-box name='Script Editor' software='ImageJ' author='Johannes Schindelin, Sumit Dubey (Google Summer of Code 2009)' maintainer=maintainer source=source released='11 Sep 2008' status='active' %}The script editor is an invaluable help when writing scripts in any of ImageJ's supported [languages](Scripting_comparisons).{% include learn content='scripting' %}
 
 Features
 --------
@@ -30,8 +30,8 @@ Programming
 
 -   Syntax highlighting
 -   Output console
--   Git integration (file being edited must be part of a [Git](Git ) repository)
--   Language specific [templates](Script_Templates )
+-   Git integration (file being edited must be part of a [Git](Git) repository)
+-   Language specific [templates](Script_Templates)
 -   Find and replace using regex patterns
 -   Automatic brace highlighting
 -   Line numbers
@@ -63,7 +63,7 @@ There is also the keyboard shortcut {% include key content='\[' %} (open square 
 
 Then choose a language from the language menu:
 
-![](/images/pages/Script-Editor-choose-language.jpg "Script-Editor-choose-language.jpg")
+![](/images/pages/Script-Editor-choose-language.jpg"Script-Editor-choose-language.jpg")
 
 Now you can write your script. In this tutorial, Jython was chosen as scripting language, but the process is really the same for all scripting languages.
 
@@ -77,13 +77,13 @@ Once you are satisfied with the script, run it. This does not require saving, bu
 
 Note that while the script is running, the window title shows the tell-tale *(Running)*.
 
-You can use all of ImageJ's classes right away. Here is an example that shows a dialog where the user can input a number. For details how to write dialogs in the different scripting languages, see [Scripting comparisons](Scripting_comparisons )
+You can use all of ImageJ's classes right away. Here is an example that shows a dialog where the user can input a number. For details how to write dialogs in the different scripting languages, see [Scripting comparisons](Scripting_comparisons)
 
 ![](/images/pages/Script-Editor-dialog.jpg "Script-Editor-dialog.jpg")
 
 Further reading
 ---------------
 
-See the [Scripting Help](Scripting_Help ) page for an introduction to scripting. For more information about each specific language, see the Languages section of top right sidebar.
+See the [Scripting Help](Scripting_Help) page for an introduction to scripting. For more information about each specific language, see the Languages section of top right sidebar.
 
   

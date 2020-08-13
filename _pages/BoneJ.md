@@ -17,11 +17,11 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='bonej-org ' repo='BoneJ2 ' %}, [<doi:10.5281/zenodo.1427262>](https://doi.org/10.5281/zenodo.1427262) 
+{% include github org='bonej-org' repo='BoneJ2' %}, [<doi:10.5281/zenodo.1427262>](https://doi.org/10.5281/zenodo.1427262) 
 {% endcapture %}
-{% include info-box name='BoneJ ' software='ImageJ ' logo='<img src="/images/pages/Bonej-icon.png" width="96"/> ' author=author maintainer=maintainer source=source released='Dec 11<sup>th</sup>, 2017 ' latest-version=' [styloid-r7](https://github.com/bonej-org/BoneJ2/releases) ' status='Active ' %} BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is the new, modernized version of the software available through the ImageJ [updater](https://imagej.net/Updater). Its update site is called [BoneJ](http://sites.imagej.net/BoneJ). For the old ImageJ1 version, see [BoneJ1](BoneJ1 ).
+{% include info-box name='BoneJ' software='ImageJ' logo='<img src="/images/pages/Bonej-icon.png" width="96"/>' author=author maintainer=maintainer source=source released='Dec 11<sup>th</sup>, 2017' latest-version=' [styloid-r7](https://github.com/bonej-org/BoneJ2/releases)' status='Active' %} BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is the new, modernized version of the software available through the ImageJ [updater](https://imagej.net/Updater). Its update site is called [BoneJ](http://sites.imagej.net/BoneJ). For the old ImageJ1 version, see [BoneJ1](BoneJ1).
 
-This version works with the latest Fiji, and complies with the modern ImageJ [architecture](Architecture ). Most plug-ins also now support hyperstacks, i.e. images with multiple channels or time frames.
+This version works with the latest Fiji, and complies with the modern ImageJ [architecture](Architecture). Most plug-ins also now support hyperstacks, i.e. images with multiple channels or time frames.
 
 Below is the documentation for the plug-ins included in BoneJ.
 
@@ -45,7 +45,7 @@ Analyse skeleton
 
 Menu path *Plugins &gt; BoneJ &gt; Analyse skeleton*.
 
-This plug-in simply includes [AnalyzeSkeleton](AnalyzeSkeleton ) in BoneJ. It adds some additional validation to check that your image suits the tool. It also skeletonizes your image by calling [Skeletonize3D](Skeletonize3D ) if needed.
+This plug-in simply includes [AnalyzeSkeleton](AnalyzeSkeleton) in BoneJ. It adds some additional validation to check that your image suits the tool. It also skeletonizes your image by calling [Skeletonize3D](Skeletonize3D) if needed.
 
 #### Suitable images
 
@@ -53,7 +53,7 @@ The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supporte
 
 #### Differences to BoneJ1
 
-Calls the latest version of [AnalyzeSkeleton](AnalyzeSkeleton ).
+Calls the latest version of [AnalyzeSkeleton](AnalyzeSkeleton).
 
 Anisotropy
 ----------
@@ -236,7 +236,7 @@ Ellipsoid factor
 
 Menu path *Plugins &gt; BoneJ &gt; Ellipsoid factor*.
 
-Ellipsoid Factor is a new method for measuring rod/plate geometry. It uses the axis lengths from prolate, oblate and intermediate elipsoids to determine how prolate or oblate the trabecular space is at a particular point. Highly prolate (javelin-shaped, rod-like) ellipsoids have a single long axis ($$c$$) and two short axes ($$a, b$$) such that $$a &lt; b \ll c$$ , whereas highly oblate (discus-shaped, plate-like) ellipsoids have two longer axes ($$b, c$$) and one much shorter axis ($$a$$) so that $$a \ll b &lt; c$$. Calculating $$EF$$ as the difference in ratios, $$EF = a/b - b/c$$ leads to a useful scale ranging from $$-1$$ (oblate, $$a/b \approx 0, b/c \approx 1$$) to $$+1$$ (prolate, $$a/b \approx 1, b/c \approx 0$$). $$EF$$ of $$0$$ indicates an intermediate ellipsoid where $$a/b = b/c$$, which is the case for spheres ($$a = b = c$$) and other ellipsoids with axis ratios $$a:qa:q^{2}a$$. Ellipsoid Factor runs [Skeletonize3D](Skeletonize3D ) to get the medial axis of the trabeculae, which is used as the seed for sampling. Ellipsoids are seeded from each voxel on the medial axis. A combination of dilation, contraction, rotation and a small amount of translation is run iteratively until the ellipsoid increases no further in volume.
+Ellipsoid Factor is a new method for measuring rod/plate geometry. It uses the axis lengths from prolate, oblate and intermediate elipsoids to determine how prolate or oblate the trabecular space is at a particular point. Highly prolate (javelin-shaped, rod-like) ellipsoids have a single long axis ($$c$$) and two short axes ($$a, b$$) such that $$a &lt; b \ll c$$ , whereas highly oblate (discus-shaped, plate-like) ellipsoids have two longer axes ($$b, c$$) and one much shorter axis ($$a$$) so that $$a \ll b &lt; c$$. Calculating $$EF$$ as the difference in ratios, $$EF = a/b - b/c$$ leads to a useful scale ranging from $$-1$$ (oblate, $$a/b \approx 0, b/c \approx 1$$) to $$+1$$ (prolate, $$a/b \approx 1, b/c \approx 0$$). $$EF$$ of $$0$$ indicates an intermediate ellipsoid where $$a/b = b/c$$, which is the case for spheres ($$a = b = c$$) and other ellipsoids with axis ratios $$a:qa:q^{2}a$$. Ellipsoid Factor runs [Skeletonize3D](Skeletonize3D) to get the medial axis of the trabeculae, which is used as the seed for sampling. Ellipsoids are seeded from each voxel on the medial axis. A combination of dilation, contraction, rotation and a small amount of translation is run iteratively until the ellipsoid increases no further in volume.
 
 The EF at a point in the structure is determined as the EF of the most voluminous ellipsoid which contains that point.
 
@@ -376,7 +376,7 @@ Inter-trabecular angles
 
 Menu path *Plugins &gt; BoneJ &gt; Inter-trabecular Angles*.
 
-The plug-in was designed to analyse the angles between trabeculae of cancellous bone. First it calls [Skeletonize3D](Skeletonize3D ) to thin the input image (if necessary). Then it calls [AnalyzeSkeleton](AnalyzeSkeleton ), which creates a graph of the largest skeleton (by number of nodes) in the thinned image. The graph consists of nodes and the edges that connect them. Nodes are also known as vertices, and edges as branches. Roughly speaking the edges correspond to trabeculae and the nodes to the junction points, where trabeuculae meet.
+The plug-in was designed to analyse the angles between trabeculae of cancellous bone. First it calls [Skeletonize3D](Skeletonize3D) to thin the input image (if necessary). Then it calls [AnalyzeSkeleton](AnalyzeSkeleton), which creates a graph of the largest skeleton (by number of nodes) in the thinned image. The graph consists of nodes and the edges that connect them. Nodes are also known as vertices, and edges as branches. Roughly speaking the edges correspond to trabeculae and the nodes to the junction points, where trabeuculae meet.
 
 The graph is often not a perfect representation of the trabecular network in the input image. *Inter-trabecular angles* offers many options to adjust the graph's topology and filter out artefacts that may obfuscate or skew the results. First it allows you to filter out nodes with too many or too few edges. Secondly it can be used to prune very short edges, which often do not represent actual trabeculae.
 
@@ -424,7 +424,7 @@ Thickness
 
 Menu path *Plugins &gt; BoneJ &gt; Thickness*.
 
-This plug-in includes [Local\_Thickness](Local_Thickness ) in BoneJ, and provides some additional options & results. Local thickness measures *the diameter of the largest sphere that fits inside the object and contains the point* for each point i.e. foreground voxel in an image. The plug-in calculates mean and standard deviation of the trabecular thickness (Tb.Th) or trabecular spacing (Tb.Sp) directly from pixel values in the resulting thickness map. Foreground voxels are considered trabeculae, and background voxels are the spacing. Processing time is heavily dependent on feature size (in pixels); large features can take a very long time to process.
+This plug-in includes [Local\_Thickness](Local_Thickness) in BoneJ, and provides some additional options & results. Local thickness measures *the diameter of the largest sphere that fits inside the object and contains the point* for each point i.e. foreground voxel in an image. The plug-in calculates mean and standard deviation of the trabecular thickness (Tb.Th) or trabecular spacing (Tb.Sp) directly from pixel values in the resulting thickness map. Foreground voxels are considered trabeculae, and background voxels are the spacing. Processing time is heavily dependent on feature size (in pixels); large features can take a very long time to process.
 
 #### Suitable images
 
@@ -443,7 +443,7 @@ The input image must be 3D, 8-bit and binary. Hyperstacks are not supported.
 
 #### Differences to BoneJ1
 
--   Calls the latest version of [Local\_Thickness](Local_Thickness ).
+-   Calls the latest version of [Local\_Thickness](Local_Thickness).
 
 #### Related publications
 
@@ -546,7 +546,7 @@ A 2D or 3D binary image.
 -   **Moments of inertia**: measure each particle's moments of inertia
 -   **Thickness**: Measure each particle's local thickness. Note: does not handle anisotropic voxels due to the underlying implementation of Local Thickness.
 -   **Ellipsoids**: find the best-fit ellipsoid to the particle's surface mesh
--   **Skeletons**: Measure branch length and count branches using [AnalyzeSkeleton](AnalyzeSkeleton )
+-   **Skeletons**: Measure branch length and count branches using [AnalyzeSkeleton](AnalyzeSkeleton)
 -   **Surface Area**: measure particles' surface area from surface mesh
 -   **Enclosed volume**: measure volume enclosed by each particle's surface mesh
 -   **Euler characteristic**: measure each particle's Euler characteristic and connectivity
@@ -650,7 +650,7 @@ Skeletonise
 
 Menu path *Plugins &gt; BoneJ &gt;Skeletonise*.
 
-This plug-in simply includes [Skeletonize3D](Skeletonize3D ) in BoneJ. It adds some additional validation to check that your image suits the tool.
+This plug-in simply includes [Skeletonize3D](Skeletonize3D) in BoneJ. It adds some additional validation to check that your image suits the tool.
 
 #### Suitable images
 
@@ -658,7 +658,7 @@ The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supporte
 
 #### Differences to BoneJ1
 
-Calls the latest version of [Skeletonize3D](Skeletonize3D ).
+Calls the latest version of [Skeletonize3D](Skeletonize3D).
 
 Slice geometry
 --------------
@@ -849,9 +849,9 @@ Where is my favourite plug-in?
 
 We have removed some plug-ins from BoneJ. *Neck shaft angle*, *Plateness* and *Structure model index* have been discontinued. *Interpolate ROIs*, [*Dilate 3D* and *Erode 3D*](https://imagej.net/3D_Binary_Filters) come pre-packaged with ImageJ, so they are no longer included in BoneJ2.
 
-Support for *Kontron IMG*, *Scanco ISQ* and *Stratec pQCT* file formats has been moved to [SCIFIO](SCIFIO ). Just run *Edit &gt; Options &gt; ImageJ2*, and check *Use SCIFIO when opening files*. When the option is enabled, these kinds of files can be opened from *File &gt; Open* or dragging & dropping them like any other format.
+Support for *Kontron IMG*, *Scanco ISQ* and *Stratec pQCT* file formats has been moved to [SCIFIO](SCIFIO). Just run *Edit &gt; Options &gt; ImageJ2*, and check *Use SCIFIO when opening files*. When the option is enabled, these kinds of files can be opened from *File &gt; Open* or dragging & dropping them like any other format.
 
-*Distribution analysis* and other pQCT related tools can now be downloaded independently from the [PQCT](PQCT ) update site.
+*Distribution analysis* and other pQCT related tools can now be downloaded independently from the [PQCT](PQCT) update site.
 
 Licence
 -------
@@ -866,4 +866,4 @@ If you'd like to cite the software, we will soon publish a paper about migrating
 Funding
 -------
 
-The redesign and porting effort to create BoneJ2 was supported by a [Wellcome Trust Biomedical Resource and Technology Development Grant](https://wellcome.ac.uk/grant-funding/people-and-projects/grants-awarded/bonej2-fullfeatured-nextgeneration-bonej-standardised). Interaction with [SciView](SciView ) was assisted by a [Royal Society International Exchange grant](https://royalsociety.org/grants-schemes-awards/grants/international-exchanges/). [*Ellipsoid Factor*](#Ellipsoid_factor "wikilink") validation and improvements were funded by the UK [BBSRC](https://bbsrc.ukri.org/research/grants-search/AwardDetails/?FundingReference=BB%2fP006167%2f1).
+The redesign and porting effort to create BoneJ2 was supported by a [Wellcome Trust Biomedical Resource and Technology Development Grant](https://wellcome.ac.uk/grant-funding/people-and-projects/grants-awarded/bonej2-fullfeatured-nextgeneration-bonej-standardised). Interaction with [SciView](SciView) was assisted by a [Royal Society International Exchange grant](https://royalsociety.org/grants-schemes-awards/grants/international-exchanges/). [*Ellipsoid Factor*](#Ellipsoid_factor "wikilink") validation and improvements were funded by the UK [BBSRC](https://bbsrc.ukri.org/research/grants-search/AwardDetails/?FundingReference=BB%2fP006167%2f1).

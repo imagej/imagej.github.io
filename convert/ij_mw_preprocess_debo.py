@@ -6,7 +6,8 @@ import codecs
 
 txt_include_start = "%AA%"
 txt_param_start = "%BB%"
-txt_param_end = "%CC%"
+txt_param_end = " %CC%"
+txt_param_end2 = "%CC%"
 txt_param_var_start = "%DD%"
 txt_liquid_end = "%FF%"
 txt_liquid_linebreak_end = "%GG%"
@@ -34,6 +35,7 @@ global_shadows = [
     ("=\'", txt_param_start),
     ("=", txt_param_var_start),
     ("\'", txt_param_end),
+    ("\'", txt_param_end2),
     ("%}", txt_liquid_end),
     ("%}\n", txt_liquid_linebreak_end),
     ("\n{% endcapture %}\n", txt_capture_end),
@@ -291,18 +293,18 @@ def fix_thumbnail(src, title):
             capture = txt_capture_start + 'title' + txt_capture_start_end + title + txt_capture_end
             return capture + txt_include_start + 'thumbnail-link src="/images/pages/' \
                    + fix_image_name(src) + '" title' + txt_param_var_start + 'title ' \
-                   + ' link' + txt_param_start + link + ' ' + txt_param_end + txt_liquid_end
+                   + ' link' + txt_param_start + link + txt_param_end + txt_liquid_end
         else:
             title = title.replace("\'", txt_single_quote)
             if txt_include_start in title:
                 capture = txt_capture_start + 'title' + txt_capture_start_end + title + txt_capture_end
                 return capture + txt_include_start + 'thumbnail-link src="/images/pages/' \
                        + fix_image_name(src) + '" title' + txt_param_var_start + 'title ' \
-                       + ' link' + txt_param_start + link + ' ' + txt_param_end + txt_liquid_end
+                       + ' link' + txt_param_start + link + txt_param_end + txt_liquid_end
             else:
                 return txt_include_start + 'thumbnail-link src="/images/pages/' \
                        + fix_image_name(src) + '" title' + txt_param_start + title + txt_param_end \
-                       + ' link' + txt_param_start + link + ' ' + txt_param_end + txt_liquid_end
+                       + ' link' + txt_param_start + link + txt_param_end + txt_liquid_end
     else:
         if txt_include_start in title:
             capture = txt_capture_start + 'title' + txt_capture_start_end + title + txt_capture_end
@@ -499,7 +501,7 @@ def match_content_parameters(template_content):
             captures += txt_capture_start + key + txt_capture_start_end + value + txt_capture_end
             res += key + txt_param_var_start + key + " "
         else:
-            res += key + txt_param_start + cleanup(value) + " " + txt_param_end + " "
+            res += key + txt_param_start + cleanup(value) + txt_param_end + " "
 
     # check if additionally to having parameters, the template has an unnamed value as well,
     # e.g. {{template this is the unnamed value|x=bla|y=blub}}
@@ -649,7 +651,7 @@ def fix_link_match(match):
         return ''
     link = match.group(2).replace(":Category", "Category")
     link = link.replace(":", "_").replace("\'", "").replace("\"", "").replace("\(", "").replace("\)", "")
-    link = link[0].capitalize() + link[1:]
+    link = link[0].capitalize() + link[1:].rstrip()
     return match.group(1) + link + match.group(3).replace("\"wikilink\"", "")
 
 

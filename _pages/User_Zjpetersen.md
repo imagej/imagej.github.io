@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Zach Petersen ' affiliation='UW-Madison [LOCI](LOCI ) ' loci='zach-petersen ' github='zjpetersen ' %}
+{% include user-box name='Zach Petersen' affiliation='UW-Madison [LOCI](LOCI)' loci='zach-petersen' github='zjpetersen' %}

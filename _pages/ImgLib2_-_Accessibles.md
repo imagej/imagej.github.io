@@ -10,7 +10,7 @@ description: test description
 {% include imglibmenu%}
  In ImgLib2, images are represented by *Accessibles*. *Image* here refers to any (partial) function from coordinates to values.
 
-In the [ previous section](ImgLib2_-_Accessors ) we have seen how pixel values can be manipulated using [ Accessors](ImgLib2_-_Accessors ). Accessors are obtained from *Accessibles*. For example we have used
+In the [ previous section](ImgLib2_-_Accessors) we have seen how pixel values can be manipulated using [ Accessors](ImgLib2_-_Accessors). Accessors are obtained from *Accessibles*. For example we have used
 
         final Cursor< UnsignedByteType > cursor = img.localizingCursor();
 
@@ -24,7 +24,7 @@ The UML diagram below shows the integer part of the *Accessible* interface hiera
 
 [RandomAccessible](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html) and [RandomAccessibleInterval](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessibleInterval.html) represent images that are random-accessible at integer coordinates. (Remember: an image is a - possibly partial - function from coordinates to values.) You can obtain a RandomAccess on the data using the **randomAccess()** or **randomAccess(Interval)** methods.
 
-All ImgLib2 classes representing pixel images are [RandomAccessibles](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html). We already used this in [ a previous example](ImgLib2_-_Accessors#RandomAccess ) to obtain a **RandomAccess** on an **ArrayImg**.
+All ImgLib2 classes representing pixel images are [RandomAccessibles](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html). We already used this in [ a previous example](ImgLib2_-_Accessors#RandomAccess) to obtain a **RandomAccess** on an **ArrayImg**.
 
         final RandomAccess< UnsignedByteType > r = img.randomAccess();
 

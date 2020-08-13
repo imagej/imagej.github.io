@@ -17,9 +17,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='NicoKiaru ' repo='LimeSeg ' %}
+{% include github org='NicoKiaru' repo='LimeSeg' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='LimeSeg ' update-site='LimeSeg ' logo=' ' maintainer=maintainer author=author source=source status=' ' released='01/2018 ' category='[Segmentation](Category_Segmentation ), [:Category:Plugins](Category_Plugins ) ' %}
+{% include info-box software='Fiji' name='LimeSeg' update-site='LimeSeg' logo='' maintainer=maintainer author=author source=source status='' released='01/2018' category='[Segmentation](Category_Segmentation), [:Category:Plugins](Category_Plugins)' %}
 
 '''A Fiji plugin for the segmentation of 3D objects. '''
 
@@ -52,7 +52,7 @@ LimeSeg is a modular 3D segmentation plugin. It is a particle-based active conto
 
 ![](/images/pages/Dub-scaled0.5XY-Tp19.png "Dub-scaled0.5XY-Tp19.png")
 
-LimeSeg can be used with simple commands provided by the plugin (under Plugins&gt;LimeSeg in ImageJ menu), or on a more advanced manner with scripting capabilities of ImageJ (macro commands of ImageJ1 or preferentially with [groovy scripts](Groovy_Scripting )).
+LimeSeg can be used with simple commands provided by the plugin (under Plugins&gt;LimeSeg in ImageJ menu), or on a more advanced manner with scripting capabilities of ImageJ (macro commands of ImageJ1 or preferentially with [groovy scripts](Groovy_Scripting)).
 
 Commands : basic usage
 ======================

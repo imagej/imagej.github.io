@@ -7,7 +7,7 @@ categories: Development,IDEs
 description: test description
 ---
 
-{% include develop-menu content='tools' %}This article explains how to install and configure command line tools for use with [ImageJ](ImageJ ) development.
+{% include develop-menu content='tools' %}This article explains how to install and configure command line tools for use with [ImageJ](ImageJ) development.
 
 Install and configure command line tools
 ----------------------------------------
@@ -16,7 +16,7 @@ Install and configure command line tools
 
 <tabs> <tab name="Windows"> ![ x32px](/images/pages/Win.png "fig: x32px") **Windows**
 
-Install [Git](Git ), [Maven](Maven ), and Java SE using [Chocolatey](https://chocolatey.org/):
+Install [Git](Git), [Maven](Maven), and Java SE using [Chocolatey](https://chocolatey.org/):
 
     choco install -y git maven jdk8
 
@@ -26,7 +26,7 @@ We also heartily recommend installing [Cygwin](https://www.cygwin.com/):
 
 </tab> <tab name="OS X"> ![ x32px](/images/pages/Osx.png "fig: x32px") **OS X**
 
-Install [Git](Git ) and [Maven](Maven ) using [Homebrew](http://brew.sh/):
+Install [Git](Git) and [Maven](Maven) using [Homebrew](http://brew.sh/):
 
     brew install git maven bash-completion
 
@@ -43,7 +43,7 @@ Download the source
 
     git clone git://github.com/imagej/imagej
 
-See the [Source Code](Source_Code ) page for further details.
+See the [Source Code](Source_Code) page for further details.
 
 Build the source
 ----------------
@@ -67,6 +67,6 @@ Launch the program
 See also
 --------
 
--   [Dotfiles](Dotfiles ) if you want to twink out your shell
+-   [Dotfiles](Dotfiles) if you want to twink out your shell
 
  

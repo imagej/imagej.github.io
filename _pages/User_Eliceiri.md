@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Kevin Eliceiri ' affiliation='UW-Madison [LOCI](LOCI ) ' github='eliceiri ' forum='eliceiri ' loci='kevin-eliceiri ' %}As founding PI and director of [LOCI](LOCI ), Kevin Eliceiri oversees the day-to-day operations of the lab and has initiated research collaborations with faculty both at UW and internationally.
+{% include user-box name='Kevin Eliceiri' affiliation='UW-Madison [LOCI](LOCI)' github='eliceiri' forum='eliceiri' loci='kevin-eliceiri' %}As founding PI and director of [LOCI](LOCI), Kevin Eliceiri oversees the day-to-day operations of the lab and has initiated research collaborations with faculty both at UW and internationally.

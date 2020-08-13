@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Melissa Linkert ' affiliation='Glencoe Software, Inc. ' loci='melissa-linkert ' forum='melissa ' github='melissalinkert ' osrc='melissalinkert ' %}Melissa Linkert is the lead developer and maintainer of the [Bio-Formats](Bio-Formats ) project.
+{% include user-box name='Melissa Linkert' affiliation='Glencoe Software, Inc.' loci='melissa-linkert' forum='melissa' github='melissalinkert' osrc='melissalinkert' %}Melissa Linkert is the lead developer and maintainer of the [Bio-Formats](Bio-Formats) project.

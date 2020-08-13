@@ -10,7 +10,7 @@ description: test description
 'Xlib' plugins
 --------------
 
-{% include info-box software='ImageJ / Fiji plugins ' name='Xlib ' maintainer='Beat Münch ' author='Beat Münch ' filename='install from ImageJ Updater (Help--&gt;Update--&gt;Manage update sites--&gt;Xlib). Takes repository from https://sites.imagej.net/Xlib ' released='01.06.2015 ' latest-version='09.05.2020 ' status='maintained actively as of May 2020 ' category='[Plugins](Category_Plugins ) ' website='http://wiki.imagej.net/Xlib ' %}
+{% include info-box software='ImageJ / Fiji plugins' name='Xlib' maintainer='Beat Münch' author='Beat Münch' filename='install from ImageJ Updater (Help--&gt;Update--&gt;Manage update sites--&gt;Xlib). Takes repository from https://sites.imagej.net/Xlib' released='01.06.2015' latest-version='09.05.2020' status='maintained actively as of May 2020' category='[Plugins](Category_Plugins)' website='http://wiki.imagej.net/Xlib' %}
 
 Overview of 'Xlib'
 ------------------
@@ -28,7 +28,7 @@ The following plugins are included:
 **Data Analysis:**
 
 -   ["Closest Cluster"](#Closest_Cluster "wikilink"): Engine for finding the closest candidate to a list of chemical substances
--   ["Import DMP"](#Import_DMP "wikilink"): Import elementary image data from ".dmp" files (e.g. originating from [MATLAB](MATLAB ))
+-   ["Import DMP"](#Import_DMP "wikilink"): Import elementary image data from ".dmp" files (e.g. originating from [MATLAB](MATLAB))
 
 **Filtering:**
 
@@ -76,17 +76,17 @@ Plugins of this section offer importing, handling or analysis of special data fo
 
 This plugin provides an engine for finding the most probable chemical compositions of some given energy dispersive spectroscopy (EDS) data. From a set of proposed chemical formula, a ranking of the probability of matching with the candidate EDS data is calculated.
 
-A step by step tutorial for the clustering and phase identification of EDS maps is provided in the manual entitled ["Instructions for the Phase Clustering and Identification Using the Plugins for ImageJ"](Media_xClusteringPhaseIdentification.pdf ).
+A step by step tutorial for the clustering and phase identification of EDS maps is provided in the manual entitled ["Instructions for the Phase Clustering and Identification Using the Plugins for ImageJ"](Media_xClusteringPhaseIdentification.pdf).
 
 The program can be used in combination with the ["Cluster Image"](#Cluster_Image "wikilink") plugin. Thereby for a resulting set of cluster centers, the program provides the most probable cluster membership.
 
--   {% include citation last='Münch ' first='B ' last2='Martin ' first2='L ' last3='Leemann ' first3='A ' title='Segmentation of Elemental EDS Maps by Means of Multiple Clustering Combined with Phase Identification ' journal='Journal of Microscopy ' volume='260(3) ' pages='411-426 ' year='2015 ' %}
+-   {% include citation last='Münch' first='B' last2='Martin' first2='L' last3='Leemann' first3='A' title='Segmentation of Elemental EDS Maps by Means of Multiple Clustering Combined with Phase Identification' journal='Journal of Microscopy' volume='260(3)' pages='411-426' year='2015' %}
 
 ### Import DMP
 
 DMP is a simple data format for the storage of 2D images. It is used at IBT from the ETH and University of Zürich. The first two short integer entries of the data file are reserved for providing the width and the heigth of the image. The next short integer is reserved. Thereafter (i.e. after the first 6 bytes) follows the image data itself, each pixel given by a 32-bit floating number.
 
-A short [MATLAB](MATLAB ) code for writing such an image variable "image" with the size "width" and "heigth" is given below:
+A short [MATLAB](MATLAB) code for writing such an image variable "image" with the size "width" and "heigth" is given below:
 
      
     fid=fopen(file,'w');
@@ -96,7 +96,7 @@ A short [MATLAB](MATLAB ) code for writing such an image variable "image" with t
     fwrite(fid,image','float32');
     fclose(fid);
 
-Reading the a DMP image with [MATLAB](MATLAB ) can be achieved like this:
+Reading the a DMP image with [MATLAB](MATLAB) can be achieved like this:
 
      
     fid=fopen(filename);
@@ -127,11 +127,11 @@ The filter is a brilliant edge preserving / smoothing filter for intelligent noi
 
 The filter works in 2D as well as in 3D.
 
--   {% include citation last='Perona ' first='P ' last2='Malik ' first2='J ' title='Scale-Space and Edge-Detection Using Anisotropic Diffusion ' journal='IEEE Trans. Pattern Anal. Mach. Intell. ' volume='12(7) ' pages='629-639 ' year='1990 ' %}
+-   {% include citation last='Perona' first='P' last2='Malik' first2='J' title='Scale-Space and Edge-Detection Using Anisotropic Diffusion' journal='IEEE Trans. Pattern Anal. Mach. Intell.' volume='12(7)' pages='629-639' year='1990' %}
 
 <!-- -->
 
--   {% include citation last='Tschmperlé ' first='D ' last2='Deriche ' first2='R ' title='Vector-Valued Image Regularization with PDE"s: A Common Framework for Different Applications ' journal='IEEE Trans. Pat. Anal. Mach. Intell. ' volume='27(4) ' pages='506-517 ' year='2005 ' %}
+-   {% include citation last='Tschmperlé' first='D' last2='Deriche' first2='R' title='Vector-Valued Image Regularization with PDE"s: A Common Framework for Different Applications' journal='IEEE Trans. Pat. Anal. Mach. Intell.' volume='27(4)' pages='506-517' year='2005' %}
 
 ### Canny Edge
 
@@ -141,7 +141,7 @@ In 1986, J. Canny has proposed an excellent edge detection filter \[Canny1986\] 
 
 The results of a Canny filtered image of a valve image is shown in the upper figure (top: original image). The gradient magnitude and angles are presented (2nd row), as well as the magnitudes after non-maxima suppression and also after joining the connected regions (3rd row).
 
--   {% include citation last='Canny ' first='J ' title='A Computational Approach to Edge Detection ' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence ' volume='PAMI-8(6) ' pages='679-698 ' year='1986 ' %}
+-   {% include citation last='Canny' first='J' title='A Computational Approach to Edge Detection' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence' volume='PAMI-8(6)' pages='679-698' year='1986' %}
 
 ### Cluster Image
 
@@ -165,19 +165,19 @@ As an example, ESEM images of a natural cement analogue (Maqarin, Jordania) is p
 
 Clustering can also be applied to one dimensional spaces (i.e. from a single gray level image), or for color images where the R, G, B color channels provide a 3-dimensional vector space. Clustering thus provides an elegant way for automatic segmentation of 2D images or 3D image volumes containing different phases.
 
--   {% include citation last='Kanungo ' first='T ' last2='Mount ' first2='D M ' last3='Netanyahu ' first3='N S ' last4='Piatko ' first4='C D ' last5='Silverman ' first5='R ' last6='Wu ' first6='A Y ' title='An Efficient K-Means Clustering Algorithm: Analysis and Implementation ' journal='IEEE Trans. Pattern Analysis and Machine Intelligence ' volume='24(7) ' pages='881-892 ' year='2002 ' %}
+-   {% include citation last='Kanungo' first='T' last2='Mount' first2='D M' last3='Netanyahu' first3='N S' last4='Piatko' first4='C D' last5='Silverman' first5='R' last6='Wu' first6='A Y' title='An Efficient K-Means Clustering Algorithm: Analysis and Implementation' journal='IEEE Trans. Pattern Analysis and Machine Intelligence' volume='24(7)' pages='881-892' year='2002' %}
 
 <!-- -->
 
--   {% include citation last='Funkunaga ' first='K ' last2='Hosteler ' first2='L D ' last3='Netanyahu ' title='The Estimation of the Gradient of a Density Function, with Applications in Pattern Recognition ' journal='IEEE Transactions on Information Theory ' volume='21(1) ' pages='32-40 ' year='1975 ' %}
+-   {% include citation last='Funkunaga' first='K' last2='Hosteler' first2='L D' last3='Netanyahu' title='The Estimation of the Gradient of a Density Function, with Applications in Pattern Recognition' journal='IEEE Transactions on Information Theory' volume='21(1)' pages='32-40' year='1975' %}
 
 <!-- -->
 
--   {% include citation last='Bezdek ' first='J C ' title='FCM: The Fuzzy C-Means Clustering Algorithm ' journal='Computers & Geosciences ' volume='10(2) ' pages='191-203 ' year='1984 ' %}
+-   {% include citation last='Bezdek' first='J C' title='FCM: The Fuzzy C-Means Clustering Algorithm' journal='Computers & Geosciences' volume='10(2)' pages='191-203' year='1984' %}
 
 <!-- -->
 
--   {% include citation last='Dempster ' first='A P ' last2='Laird ' first2='N M ' last3='Rubin ' first3='D B ' title='Maximum Likelihood from Incomplete Data via the EM Algorithm ' journal='Journal of the Royal Statistical Society, Series B ' volume='39 (1) ' pages='1-38 ' year='1977 ' %}
+-   {% include citation last='Dempster' first='A P' last2='Laird' first2='N M' last3='Rubin' first3='D B' title='Maximum Likelihood from Incomplete Data via the EM Algorithm' journal='Journal of the Royal Statistical Society, Series B' volume='39 (1)' pages='1-38' year='1977' %}
 
 ### Disconnect Particles
 
@@ -187,7 +187,7 @@ In particle analysis from imaging due to the resolution limits, the particles mi
 
 Results from cement grains acquired by 3D FIB-nanotomography are displayed in the figure above. To the left, the original data volume is visualized. The center image shows the mask after image thresholding. Particles close to each other are erroneously interconnected at various locations. The image to the right shows the volume disconnected at k=0.7 and labeled subsequently.
 
--   {% include citation last='Münch ' first='B ' last2='Gasser ' first2='P ' last3='Holzer ' first3='L ' last3='Flatt ' first3='R ' title='FIB Nanotomography of Particulate Systems - Part II: Particle Recognition and Effect of Boundary Truncation ' journal='Journal American Ceramics Society ' volume='89(8) ' pages='2586-2595 ' year='2006 ' %}
+-   {% include citation last='Münch' first='B' last2='Gasser' first2='P' last3='Holzer' first3='L' last3='Flatt' first3='R' title='FIB Nanotomography of Particulate Systems - Part II: Particle Recognition and Effect of Boundary Truncation' journal='Journal American Ceramics Society' volume='89(8)' pages='2586-2595' year='2006' %}
 
 ### Distance Transform
 
@@ -199,11 +199,11 @@ In the upper figure, a binary mask from cement particles (left) is processed by 
 
 <table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/images/pages/XFig6 5 2.jpg' title='Mask containing 3 black dots only (left) and its Euclidian, Chessboard and Citymap (right) distance transform.'%}</p></td></tr></tbody></table>
 
--   {% include citation last='Saito ' first='T ' last2='Toriwaki ' first2='J-I ' title='New algorithms for Euclidean Distance Transformation of an N-Dimensional Digitized Picture with Applications ' journal='Pattern Recognition ' volume='27(11) ' pages='1551-1565 ' year='1994 ' %}
+-   {% include citation last='Saito' first='T' last2='Toriwaki' first2='J-I' title='New algorithms for Euclidean Distance Transformation of an N-Dimensional Digitized Picture with Applications' journal='Pattern Recognition' volume='27(11)' pages='1551-1565' year='1994' %}
 
 <!-- -->
 
--   {% include citation last='Meijster ' first='A ' last2='Roerdink ' first2='J B T M ' last3='Hesselink ' first3='W H ' title='A General Algorithm for Computing Distance Transform in Linear Time ' journal='in Proc. Mathematical Morphology and its Applications to Image and Signal Processing, Kluwer ' pages='331-340 ' year='2000 ' %}
+-   {% include citation last='Meijster' first='A' last2='Roerdink' first2='J B T M' last3='Hesselink' first3='W H' title='A General Algorithm for Computing Distance Transform in Linear Time' journal='in Proc. Mathematical Morphology and its Applications to Image and Signal Processing, Kluwer' pages='331-340' year='2000' %}
 
 {% include thumbnail src='/images/pages/XFig6 6.jpg' title='FIB-nt image (427x768 pixels) from cement paste (left) and the magnitudes (center) and angles (right) of its Fourier transform.'%}
 
@@ -213,17 +213,17 @@ The fast, well known and widely used Cooley-Tukey radix-2 algorithm for the calc
 
 The figure to the right shows a sample FIB-nt image from cement paste (left) with a width of 427 and a height of 768 pixels. The magnitudes and angles of its Fourier transform is scaled by a logarithmic funcion for improving the visibility of the small coefficients. The inverse FFT transform of the center and right images reconstructs the original function (left) again without any loss of precision.
 
--   {% include citation last='Bluestein ' first='L I ' title='A Linear Filtering Approach to the Computation of the Discrete Fourier Transform ' journal='Northeast Electronics Research and Engineering Meeting Record ' volume='10 ' pages='218-219 ' year='1968 ' %}
+-   {% include citation last='Bluestein' first='L I' title='A Linear Filtering Approach to the Computation of the Discrete Fourier Transform' journal='Northeast Electronics Research and Engineering Meeting Record' volume='10' pages='218-219' year='1968' %}
 
 <!-- -->
 
--   {% include citation last='Rabiner ' first='L R ' last2='Schafer ' first2='R W ' last3='Rader ' first3='C M ' title='The Chirp Z-Transform Algorithm ' journal='IEEE Trans. Audio Electroacoustics ' volume='17(2) ' pages='86-92 ' year='1969 ' %}
+-   {% include citation last='Rabiner' first='L R' last2='Schafer' first2='R W' last3='Rader' first3='C M' title='The Chirp Z-Transform Algorithm' journal='IEEE Trans. Audio Electroacoustics' volume='17(2)' pages='86-92' year='1969' %}
 
 ### Image Calculator
 
 Many image calculators allowing various arithmetic operations are already implemented in ImageJ, including the "Image Calculator", the "Calculator Plus" as well as the entire list of functions in "math", all of them under "Process". So why "yet another image calculator", you might ask. The reason is that our image calculator is easily able to perform the possible tasks of all of the above listed plugins and much more. The conceptual idea is to provide a list of all the images and image stacks that are currently opened in ImageJ and assign them to symbolic names (i0, i1, i2,...). In a text field, the user can then provide his own code he wants to be applied to the images.
 
-[right\|440px\|thumb\|left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2](Image_xFig6_7_01.jpg ) For instance,
+[right\|440px\|thumb\|left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2](Image_xFig6_7_01.jpg) For instance,
 
      
     (i0 + i1 + i2) / 3
@@ -234,7 +234,7 @@ will return an image providing the mean value of the images i0, i1 and i2 (see r
   
   
   
-[right\|300px\|thumb\|left: image i0, right: mask where regions higher than 170 are colored in red](Image_xFig6_7_02.jpg ) The operation
+[right\|300px\|thumb\|left: image i0, right: mask where regions higher than 170 are colored in red](Image_xFig6_7_02.jpg) The operation
 
      
     (i0 > 170)? 
@@ -247,7 +247,7 @@ displays a mask where regions higher than 170 are red.
   
   
   
-[right\|440px\|thumb\|left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2](Image_xFig6_7_03.jpg ) The operation
+[right\|440px\|thumb\|left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2](Image_xFig6_7_03.jpg) The operation
 
      
     (i0==255)? -16711936 : 
@@ -258,7 +258,7 @@ takes three binary images i0, i1, i2 and creates a colored mask out of it (see r
   
   
   
-[right\|300px\|thumb\|left: image i0, right: power of two of image i0](Image_xFig6_7_04.jpg ) The operation
+[right\|300px\|thumb\|left: image i0, right: power of two of image i0](Image_xFig6_7_04.jpg) The operation
 
      
     Math.pow(i0, 2.)
@@ -270,7 +270,7 @@ yields the power of two of the image i0.
   
   
   
-[right\|300px\|thumb\|left: image i0, right: copy of the image i0 overlayed by a horizontal ramp](Image_xFig6_7_05.jpg ) Or the operation
+[right\|300px\|thumb\|left: image i0, right: copy of the image i0 overlayed by a horizontal ramp](Image_xFig6_7_05.jpg) Or the operation
 
      
     i0 + x
@@ -283,7 +283,7 @@ will calculate a copy of the image i0 overlayed by a horizontal ramp.
   
   
   
-[right\|300px\|thumb\|left: image i0, right: ramp with the same size as image i0](Image_xFig6_7_06.jpg ) And the code line
+[right\|300px\|thumb\|left: image i0, right: ramp with the same size as image i0](Image_xFig6_7_06.jpg) And the code line
 
      
     x // i0
@@ -294,7 +294,7 @@ In this case, instead of a simple command "x" (which would create no image), a c
   
   
   
-[right\|350px\|thumb\|left: image i0 defining image size, right: halo centered at (100, 200)](Image_xFig6_7_07.jpg ) The code
+[right\|350px\|thumb\|left: image i0 defining image size, right: halo centered at (100, 200)](Image_xFig6_7_07.jpg) The code
 
      
     Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
@@ -306,7 +306,7 @@ calculates an image of the same size as image i0, but containing only a halo cen
   
   
   
-[right\|300px\|thumb\|left: image i0, right: binary thresholding of i0 by value 128](Image_xFig6_7_08.jpg ) The line
+[right\|300px\|thumb\|left: image i0, right: binary thresholding of i0 by value 128](Image_xFig6_7_08.jpg) The line
 
      
     (i0 >= 128)? 255 : 0
@@ -319,7 +319,7 @@ creates a binary image mask by thresholding the image i0 with the value 128.
   
   
   
-[right\|300px\|thumb\|left: image i0, right: circular mask around (100, 200)](Image_xFig6_7_09.jpg ) The command
+[right\|300px\|thumb\|left: image i0, right: circular mask around (100, 200)](Image_xFig6_7_09.jpg) The command
 
      
     (Math.sqrt(Math.pow(150 - x, 2) + 
@@ -331,7 +331,7 @@ creates an image of the same size as i0 containing a circular mask around point 
   
   
   
-[right\|320px\|thumb\|left: image i3, right: content of image i3 inside of a circle only](Image_xFig6_7_10.jpg )
+[right\|320px\|thumb\|left: image i3, right: content of image i3 inside of a circle only](Image_xFig6_7_10.jpg)
 
 The code
 
@@ -345,7 +345,7 @@ takes the content of the image inside of a circle only and removes the regions o
   
   
   
-[right\|360px\|thumb\|left: image i0, center: image i1, right: exclusive OR of images i0 and i1](Image_xFig6_7_11.jpg )
+[right\|360px\|thumb\|left: image i0, center: image i1, right: exclusive OR of images i0 and i1](Image_xFig6_7_11.jpg)
 
 Finally,
 
@@ -362,7 +362,7 @@ The above examples show that any pixel- or voxel-wise operation can be provided 
         out[ii] = (i0[ii] + i1[ii] + i2[ii]) / 3f;
     return new Object[] { m0, out };
 
-performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" above. [right\|350px\|thumb\|left: image i0, right: message box with number of pixel values &gt;= 10](Image_xFig6_7_13.jpg ) The code fragment
+performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" above. [right\|350px\|thumb\|left: image i0, right: message box with number of pixel values &gt;= 10](Image_xFig6_7_13.jpg) The code fragment
 
      
     float value = 10f;
@@ -373,7 +373,7 @@ performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" abov
     IJ.showMessage(" ", "Number of pixels: " + anz);
     return new Object[] { mm, null };
 
-[right\|500px\|thumb\|left: image i3, center: image i5, right: image i5 embedded at the center area of image i3](Image_xFig6_7_14.jpg ) Counts all pixels (or voxels) in the image (or volume) with a value larger or equal 10.  
+[right\|500px\|thumb\|left: image i3, center: image i5, right: image i5 embedded at the center area of image i3](Image_xFig6_7_14.jpg) Counts all pixels (or voxels) in the image (or volume) with a value larger or equal 10.  
   
   
   
@@ -393,7 +393,7 @@ Or the code
 
 takes the smaller image i5 and adds it to the center of the larger image i3.  
   
-[right\|500px\|thumb\|left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1](Image_xFig6_7_15.jpg ) The code fragment
+[right\|500px\|thumb\|left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1](Image_xFig6_7_15.jpg) The code fragment
 
      
     double mean = 0;
@@ -487,7 +487,7 @@ This plugin supports conventional as well as geometric 2D and 3D median filterin
 
 The example color image (top right) shows multiple noisy phases. Conventional median filtering on each of the R,G,B bands separately yields the top right image. As can be perceived due to the RGB bands, new colors appear that are not present on the original image. Multidimensional geometrical filtering (in the RGB case, 3-dimensional) by using the Weiszfeld algorithm yields the bottom left image. When additionally confining to already existing color vectors only, the bottom right image results.
 
--   {% include citation last='Weiszfeld ' first='E V ' title='Sur le point pour lequel la somme des distances de n points donnes est minimum ' journal='The Tohoku Mathematical Journal ' volume='43 ' pages='355-386 ' year='1937 ' %}
+-   {% include citation last='Weiszfeld' first='E V' title='Sur le point pour lequel la somme des distances de n points donnes est minimum' journal='The Tohoku Mathematical Journal' volume='43' pages='355-386' year='1937' %}
 
 ### Remove Background
 
@@ -514,7 +514,7 @@ Other well-known definitions (e.g. the definition of sphericity by Wadell \[Wade
 
 Roundness values are useful to provide a metric of how closely the shape of an object approaches a circle (2D) or a sphere (3D), thus for rating object shapes.
 
--   {% include citation last='Wadell ' first='H ' title='Volume, Shape and Roundness of Quartz Particles ' journal='Journal of Geology ' volume='43(3) ' pages='250-280 ' year='1935 ' %}
+-   {% include citation last='Wadell' first='H' title='Volume, Shape and Roundness of Quartz Particles' journal='Journal of Geology' volume='43(3)' pages='250-280' year='1935' %}
 
 ### Skeletonization 2D 3D
 
@@ -522,7 +522,7 @@ In shape analysis, topological features can be captured from skeletons of the ma
 
 <table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/images/pages/XFig6 11.jpg' title='Some 3D objects (top), their skeletonization (bottom left) and their restoration by inflating the pipes up to the distance transform values of the original objects (bottom right).'%}</p></td></tr></tbody></table>
 
--   {% include citation last='Palagyi ' first='K ' last2='Kuba ' first2='A ' title='A 3D-Subiteration Thinning Algorithm for Extracting Medial Lines ' journal='Pattern Recognition Letters ' volume='19 ' pages='613-227 ' year='1998 ' %}
+-   {% include citation last='Palagyi' first='K' last2='Kuba' first2='A' title='A 3D-Subiteration Thinning Algorithm for Extracting Medial Lines' journal='Pattern Recognition Letters' volume='19' pages='613-227' year='1998' %}
 
 ### Stripe Filter
 
@@ -534,7 +534,7 @@ In the next figure, the stripes in CT projections (top) and the resulting ring a
 
 <table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/images/pages/XFig6 12 2.jpg' title='Projection image in a CT slice (top) before (left) and after (right) stripe filtering. The stripes in the projections yield ring artifacts in the reconstructed image (bottom). An original (left) and its filtered version (right) is displayed.'%}</p></td></tr></tbody></table>
 
--   {% include citation last='Münch ' first='B ' last2='Trtik ' first2='P ' last3='Marone ' first3='F ' last4='Stampanoni ' first4='M ' title='Stripe and Ring Artifact Removal with Combined Wavelet-Fourier Filtering ' journal='Optical Express ' volume='17(10) ' pages='8567-8591 ' year='2009 ' %}
+-   {% include citation last='Münch' first='B' last2='Trtik' first2='P' last3='Marone' first3='F' last4='Stampanoni' first4='M' title='Stripe and Ring Artifact Removal with Combined Wavelet-Fourier Filtering' journal='Optical Express' volume='17(10)' pages='8567-8591' year='2009' %}
 
 {% include thumbnail src='/images/pages/XFig6 13.jpg' title='Flowers image (top left), its transform into polar coordinates (top right), its scaling followed by a rotation (bottom left), its rotation followed by a scaling (bottom right).'%}
 
@@ -624,7 +624,7 @@ An example of a 2D particle image, of its mask and some particle evaluations is 
 
 <table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/images/pages/XFig8 1.jpg' title='Grainy structure (top left), segmented mask of the grains (top right), and the evaluation of its particle size distribution (center and bottom).'%}</p></td></tr></tbody></table>
 
--   {% include citation last='Münch ' first='B ' last2='Gasser ' first2='P ' last3='Holzer ' first3='L ' last4='Flatt ' first4='R ' title='FIB Nanotomography of Particulate Systems - Part II: Particle Recognition and Effect of Boundary Truncation ' journal='Journal American Ceramics Society ' volume='89(8) ' pages='2586-2595 ' year='2006 ' %}
+-   {% include citation last='Münch' first='B' last2='Gasser' first2='P' last3='Holzer' first3='L' last4='Flatt' first4='R' title='FIB Nanotomography of Particulate Systems - Part II: Particle Recognition and Effect of Boundary Truncation' journal='Journal American Ceramics Society' volume='89(8)' pages='2586-2595' year='2006' %}
 
 ### Phase Image Evaluation
 
@@ -638,11 +638,11 @@ Furthermore, the plugin supports a peeling evaluation. Peeling starts from a spe
 
 An image defining some phases is given in the above figure (top, left). The cyan colored center particle is supposed to act as the location from where peeling is initiated. The percental areas of the phases "Pores", "Matter", "Artificial" and "Unspecified" are plotted below. As it is evident from the calling parameters (see above figure, top, right) two gray level data images associated to the pore mask are provided (center field). Their mean values depending on the peeling radius are displayed in the graph at the bottom. The parameters are provided in a text file as well (bottom).
 
--   {% include citation last='Leemann ' first='A ' last2='Münch ' first2='B ' last3='Gasser ' first3='P ' last4='Holzer ' first4='L ' title='Influence of Compaction on the Interfacial Transition Zone and the Permeability of Concrete ' journal='Cement and Concrete Research ' volume='36 ' pages='1425-1433 ' year='2006 ' %}
+-   {% include citation last='Leemann' first='A' last2='Münch' first2='B' last3='Gasser' first3='P' last4='Holzer' first4='L' title='Influence of Compaction on the Interfacial Transition Zone and the Permeability of Concrete' journal='Cement and Concrete Research' volume='36' pages='1425-1433' year='2006' %}
 
 <!-- -->
 
--   {% include citation last='Leemann ' first='A ' last2='Loser ' first2='R ' last3='Münch ' first3='B ' title='Influence of Cement Type on ITZ Porosity and Chloride Resistance on Self-Compacting Concrete ' journal='Cement & Concrete Composites ' volume='32 ' pages='116-120 ' year='2010 ' %}
+-   {% include citation last='Leemann' first='A' last2='Loser' first2='R' last3='Münch' first3='B' title='Influence of Cement Type on ITZ Porosity and Chloride Resistance on Self-Compacting Concrete' journal='Cement & Concrete Composites' volume='32' pages='116-120' year='2010' %}
 
 ### Pore Size Distribution
 
@@ -656,9 +656,9 @@ PDS's can be defined in different ways and must be chosen according to the speci
 
 <table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/images/pages/XFig8 3.jpg' title='3D volume of cement paste (OPC CEM 1, 42.5, w/c 0.35, 28 days hydration) acquired by FIB-nanotomography (top) and its pore size distributions of varying definition (bottom, see referenced paper).'%}</p></td></tr></tbody></table>
 
-The above figure (top) shows a picture of a 3D volume of cement paste measured by FIB-nanotomography at a pixel size of 14.84 x 18.84 x 30.0 nm^3. The pores have been segmented by thresholding and different definitions of PSD's have been calculated in slice-wise 2D as well as in real 3D (bottom graph, containing the results of the PSD calculations visualized by [MATLAB](MATLAB )).
+The above figure (top) shows a picture of a 3D volume of cement paste measured by FIB-nanotomography at a pixel size of 14.84 x 18.84 x 30.0 nm^3. The pores have been segmented by thresholding and different definitions of PSD's have been calculated in slice-wise 2D as well as in real 3D (bottom graph, containing the results of the PSD calculations visualized by [MATLAB](MATLAB)).
 
--   {% include citation last='Münch ' first='B ' last2='Holzer ' first2='L ' title='Contradicting Geometrical Concepts in Pore Size Analysis Attained with Electron Microscopy and Mercury Intrusion ' journal='Journal of American Ceramics Society ' volume='91(12) ' pages='4059-4067 ' year='2008 ' %}
+-   {% include citation last='Münch' first='B' last2='Holzer' first2='L' title='Contradicting Geometrical Concepts in Pore Size Analysis Attained with Electron Microscopy and Mercury Intrusion' journal='Journal of American Ceramics Society' volume='91(12)' pages='4059-4067' year='2008' %}
 
 Editors and Viewers
 -------------------
@@ -737,12 +737,12 @@ The 3D viewer also contains a button to the bottom called "save canvas as JPEG".
 
 As an example, a triangulated view of the segmented 3D volume is presented in the image to the right (see nanotomographic 3D sample from cement paste, image of plugins ["Pore Size Distribution"](#Pore_Size_Distribution "wikilink") (top image) and of ["Display Volume"](#Display_Volume "wikilink")). Other examples were given in the plugin description for ["Reconstruct 3D from 2D"](#Reconstruct_3D_from_2D "wikilink") and for ["Skeletonization 2D 3D"](#Skeletonization_2D_3D "wikilink") showing the original 3D scene, its skeleton and its skeleton after resizing its elements to their size determined by the distance transform values (see ["Distance Transform"](#Distance_Transform "wikilink") plugin).
 
--   {% include citation last='Lorensen ' first='W E ' last2='Cline ' first2='H E ' title='Marching Cubes: a High Resolution 3D Surface Construction Algorithm ' journal='Computer Graphics ' volume='21(4) ' pages='163-169 ' year='1987 ' %}
+-   {% include citation last='Lorensen' first='W E' last2='Cline' first2='H E' title='Marching Cubes: a High Resolution 3D Surface Construction Algorithm' journal='Computer Graphics' volume='21(4)' pages='163-169' year='1987' %}
 
 <!-- -->
 
--   {% include citation last='Artzy ' first='E ' last2='Frieder ' first2='G ' last3='Herman ' first3='G T ' title='The Theory, Design, Implementation and Evaluation of a Three-Dimensional Surface Detection Algorithm ' journal='Computer Graphics and Image Processing ' volume='15 ' pages='1-24 ' year='1981 ' %}
+-   {% include citation last='Artzy' first='E' last2='Frieder' first2='G' last3='Herman' first3='G T' title='The Theory, Design, Implementation and Evaluation of a Three-Dimensional Surface Detection Algorithm' journal='Computer Graphics and Image Processing' volume='15' pages='1-24' year='1981' %}
 
---[Beat](User_Beat ) ([talk](User_talk_Beat )) 06:26, 1 June 2015 (CDT)
+--[Beat](User_Beat) ([talk](User_talk_Beat)) 06:26, 1 June 2015 (CDT)
 
         

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Git Conflicts](Git_Conflicts )
+1.  REDIRECT [Git Conflicts](Git_Conflicts)

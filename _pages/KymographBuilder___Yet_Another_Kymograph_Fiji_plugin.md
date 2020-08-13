@@ -17,9 +17,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji ' repo='KymographBuilder ' %}
+{% include github org='fiji' repo='KymographBuilder' %}
 {% endcapture %}
-{% include info-box name='KymographBuilder ' logo=' ' software='Fiji ' author=author maintainer=maintainer source=source released='24/04/2016 ' status='v1.2.2, stable ' category=' ' %}
+{% include info-box name='KymographBuilder' logo='' software='Fiji' author=author maintainer=maintainer source=source released='24/04/2016' status='v1.2.2, stable' category='' %}
 
 Presentation
 ------------
@@ -47,12 +47,12 @@ Scripting
 
 You can script the plugin. Here is an example :
 
-{% include github-embed org='fiji ' repo='KymographBuilder ' path='src/main/resources/script\_templates/Examples/MultiKymographBuilder.py ' label='MultiKymographBuilder.py ' %}
+{% include github-embed org='fiji' repo='KymographBuilder' path='src/main/resources/script\_templates/Examples/MultiKymographBuilder.py' label='MultiKymographBuilder.py' %}
 
 Related links
 -------------
 
--   [Multi\_Kymograph](Multi_Kymograph ) : The first kymograph bundled with Fiji, with support for multiple Line ROIs
+-   [Multi\_Kymograph](Multi_Kymograph) : The first kymograph bundled with Fiji, with support for multiple Line ROIs
 -   Source code on GitHub : https://github.com/fiji/KymographBuilder
 -   Maven : https://maven.scijava.org/#nexus-search;quick~kymographbuilder
 -   Travis CI : https://travis-ci.org/fiji/KymographBuilder

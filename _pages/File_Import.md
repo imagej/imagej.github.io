@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Importing Image Files](Importing_Image_Files )
+1.  REDIRECT [Importing Image Files](Importing_Image_Files)

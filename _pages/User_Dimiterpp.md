@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Dimiter Prodanov ' forum='dimiterpp ' github='dprodanov ' %}
+{% include user-box name='Dimiter Prodanov' forum='dimiterpp' github='dprodanov' %}

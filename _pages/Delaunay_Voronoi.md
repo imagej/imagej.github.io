@@ -9,9 +9,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='fiji ' repo='VIB ' source='Delaunay\_Voronoi.java ' %}
+{% include github org='fiji' repo='VIB' source='Delaunay\_Voronoi.java' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='Delaunay/Voronoi ' author='Johannes Schindelin, L. Paul Chew ' maintainer='Johannes Schindelin ' source=source released='14 August 2006 ' latest-version='11 December 2008 ' status='stable ' category='[Image annotation](Category_Image_annotation ) ' %}
+{% include info-box software='ImageJ' name='Delaunay/Voronoi' author='Johannes Schindelin, L. Paul Chew' maintainer='Johannes Schindelin' source=source released='14 August 2006' latest-version='11 December 2008' status='stable' category='[Image annotation](Category_Image_annotation)' %}
 
 Purpose
 -------

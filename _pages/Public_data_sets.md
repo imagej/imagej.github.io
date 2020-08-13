@@ -22,7 +22,7 @@ In addition to the raw image data, we provide for the first stack a dense labeli
 <!-- -->
 
   
-All the data and further information is available in the {% include github org='unidesigner ' repo='groundtruth-drosophila-vnc ' label='GitHub repository ' %}.
+All the data and further information is available in the {% include github org='unidesigner' repo='groundtruth-drosophila-vnc' label='GitHub repository' %}.
 
 -   [Segmented ssTEM stack of neural tissue](http://www.ini.uzh.ch/~acardona/data.html), thanks to Albert Cardona.
 
@@ -31,7 +31,7 @@ All the data and further information is available in the {% include github org='
   
 30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
 
-**The challenge**: use this data set to train machine learning software for the purpose of automatic segmentation of neural structures in ssTEM. More information in the [ 2012 open competition page](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012 ).
+**The challenge**: use this data set to train machine learning software for the purpose of automatic segmentation of neural structures in ssTEM. More information in the [ 2012 open competition page](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012).
 
 <!-- -->
 
@@ -59,7 +59,7 @@ The dataset consists of tubulin histone GFP coexpressing *C. elegans* embryos. A
 
 **The challenge**: trace the macrophages in 4D, and measure their shape volumes, surfaces, positions and pixel value intensities.
 
-The file is a tif hyperstack that can be loaded directly into the [3D Viewer](3D_Viewer ).
+The file is a tif hyperstack that can be loaded directly into the [3D Viewer](3D_Viewer).
 
 The key idea is to setup the tracking system so that it requires minimal user interaction, and is general. For example, a user clicks on one cell in one time point, and the program should find all other time points of the same cell. Then the program should learn about the statistics of that cell, and offer the means to automatically find all other cells in the volume and track them as well. In summary, a machine learning approach to 4D tracking.
 

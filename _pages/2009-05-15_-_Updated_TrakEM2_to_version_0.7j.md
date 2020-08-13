@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2009-08-28 - Updated TrakEM2 to version 0.7j](2009-08-28_-_Updated_TrakEM2_to_version_0.7j )
+1.  REDIRECT [2009-08-28 - Updated TrakEM2 to version 0.7j](2009-08-28_-_Updated_TrakEM2_to_version_0.7j)

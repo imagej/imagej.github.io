@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [MacOS](MacOS )
+1.  REDIRECT [MacOS](MacOS)

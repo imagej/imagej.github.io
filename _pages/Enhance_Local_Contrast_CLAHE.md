@@ -17,7 +17,7 @@ description: test description
 {% capture maintainer%}
 {% include person content='Saalfeld' %}
 {% endcapture %}
-{% include info-box name='Enhance Local Contrast (CLAHE) ' software='Fiji ' author=author maintainer=maintainer source='https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/clahe ' released='November 13<sup>th</sup>, 2009 ' latest-version='September 1<sup>st</sup>, 2010 ' status='stable, active ' category='[Plugins](Category_Plugins ), [Filtering](Category_Filtering ) ' %} The plugin **Enhance Local Contrast (CLAHE)** implements the method *{% include wikipedia title='CLAHE' text='Contrast Limited Adaptive Histogram Equalization'%}*[1] for enhancing the local contrast of an image. In Fiji, it is called through the menu entry **Process / Enhance Local Contrast (CLAHE)**. The filter respects the selected regions of interest and triggers an Undo-step.
+{% include info-box name='Enhance Local Contrast (CLAHE)' software='Fiji' author=author maintainer=maintainer source='https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/clahe' released='November 13<sup>th</sup>, 2009' latest-version='September 1<sup>st</sup>, 2010' status='stable, active' category='[Plugins](Category_Plugins), [Filtering](Category_Filtering)' %} The plugin **Enhance Local Contrast (CLAHE)** implements the method *{% include wikipedia title='CLAHE' text='Contrast Limited Adaptive Histogram Equalization'%}*[1] for enhancing the local contrast of an image. In Fiji, it is called through the menu entry **Process / Enhance Local Contrast (CLAHE)**. The filter respects the selected regions of interest and triggers an Undo-step.
 
 The method has three parameters:
 
@@ -55,7 +55,7 @@ Tips
 ----
 
 How can I process a series/stack of images?  
-Execute the following macro from [ImageJ's macro editor](https://imagej.net/developer/macro/macros.html) or [Fiji's scripting editor](Using_the_Script_Editor ):
+Execute the following macro from [ImageJ's macro editor](https://imagej.net/developer/macro/macros.html) or [Fiji's scripting editor](Using_the_Script_Editor):
 
 <!-- -->
 
@@ -98,4 +98,4 @@ References
 
  
 
-[1] {% include citation last='Zuiderveld ' first='Karel ' contribution='Contrast limited adaptive histogram equalization ' title='Graphics gems IV ' pages='474–485 ' publisher='Academic Press Professional, Inc. ' address='San Diego, CA, USA ' year='1994 ' url='http://portal.acm.org/citation.cfm?id=180940 ' %}
+[1] {% include citation last='Zuiderveld' first='Karel' contribution='Contrast limited adaptive histogram equalization' title='Graphics gems IV' pages='474–485' publisher='Academic Press Professional, Inc.' address='San Diego, CA, USA' year='1994' url='http://portal.acm.org/citation.cfm?id=180940' %}

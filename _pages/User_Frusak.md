@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Fabio Rojas ' affiliation=' [Max Delbrück Center (MDC)](https://www.mdc-berlin.de/en) ' website='https://www.mdc-berlin.de/35567592/en/research/research\_teams/genetics\_of\_metabolic\_and\_reproductive\_disorders ' %}
+{% include user-box name='Fabio Rojas' affiliation=' [Max Delbrück Center (MDC)](https://www.mdc-berlin.de/en)' website='https://www.mdc-berlin.de/35567592/en/research/research\_teams/genetics\_of\_metabolic\_and\_reproductive\_disorders' %}

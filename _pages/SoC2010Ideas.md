@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SoC 2010 Ideas](SoC_2010_Ideas )
+1.  REDIRECT [SoC 2010 Ideas](SoC_2010_Ideas)

@@ -7,9 +7,9 @@ categories: Stacks,Plugins
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='KymoResliceWide ' author=' [Eugene Katrukha](http://katpyxa.info) and Laurie Young ' maintainer='[Eugene Katrukha](mailto:katpyxa_at_gmail.com) ' filename=' [KymoResliceWide\_.jar](https://github.com/ekatrukha/KymoResliceWide/blob/master/KymoResliceWide_.jar?raw=true) ' source=' [github](https://github.com/ekatrukha/KymoResliceWide) ' released='24 September 2014 ' latest-version='1 April 2017 ' status='stable ' category='[Stacks](Category_Stacks ) ' website=' [wiki\_page](https://github.com/ekatrukha/KymoResliceWide/wiki) ' %}
+{% include info-box software='ImageJ' name='KymoResliceWide' author=' [Eugene Katrukha](http://katpyxa.info) and Laurie Young' maintainer='[Eugene Katrukha](mailto:katpyxa_at_gmail.com)' filename=' [KymoResliceWide\_.jar](https://github.com/ekatrukha/KymoResliceWide/blob/master/KymoResliceWide_.jar?raw=true)' source=' [github](https://github.com/ekatrukha/KymoResliceWide)' released='24 September 2014' latest-version='1 April 2017' status='stable' category='[Stacks](Category_Stacks)' website=' [wiki\_page](https://github.com/ekatrukha/KymoResliceWide/wiki)' %}
 
-This plugin builds [kymographs](Generate_and_exploit_Kymographs ) using straight line, polyline or freehand selection of variable thickness (and using either average or maximum intensity across the line). So it is extended implementation of ImageJ's *Reslice* function. Here are some thought on "[Why another kymograph plugin?](http://katpyxa.info/feedbacks/?p=26)".
+This plugin builds [kymographs](Generate_and_exploit_Kymographs) using straight line, polyline or freehand selection of variable thickness (and using either average or maximum intensity across the line). So it is extended implementation of ImageJ's *Reslice* function. Here are some thought on "[Why another kymograph plugin?](http://katpyxa.info/feedbacks/?p=26)".
 
 Using plugin
 ------------
@@ -46,7 +46,7 @@ Where following options are available (in order):
 Other kymograph plugins
 -----------------------
 
-As alternative, there is very well documented [Multi Kymograph](Multi_Kymograph ) plugin and its updated version [Kymograph tool](http://biop.epfl.ch/TOOL_KYMOGRAPH.html).
+As alternative, there is very well documented [Multi Kymograph](Multi_Kymograph) plugin and its updated version [Kymograph tool](http://biop.epfl.ch/TOOL_KYMOGRAPH.html).
 
 Version history
 ---------------

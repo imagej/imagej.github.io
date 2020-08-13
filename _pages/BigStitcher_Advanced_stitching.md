@@ -32,9 +32,9 @@ First, you will be asked for parameters for the phase correlation calculation:
 -   **minimal overlap:** when checking multiple possible shifts, we can immediately discard some of them if the resulting overlap is to big. You can increase this parameter to restrict the results to small shifts (minimal overlap of 100 would correspond to NO shift) if you already have a rough alignment of the views.
 -   **subpixel accuracy:** whether to localize the peaks in the PCM with subpixel accuracy or not. This slightly increases the computational burden, but is especially important if you use **downsampled images**.
 -   **interpolate subpixel cross correlation:** when verifying subpixel-localized PCM-peaks, you can either calculate cross correlations with the nearest integer shift or, for maximum fidelity, on linearly interpolated images. Doing this on the fly increases the computational load quite a bit and the differences in results are typically negligible, so we recommend leaving this off.
--   **show expert grouping options**: if you activate this, you will be asked which views to include in the calculation and how to group them in another dialog. See the [Advanced view grouping section below](BigStitcher_Advanced_stitching#Advanced_view_grouping ) for details.
+-   **show expert grouping options**: if you activate this, you will be asked which views to include in the calculation and how to group them in another dialog. See the [Advanced view grouping section below](BigStitcher_Advanced_stitching#Advanced_view_grouping) for details.
 
-Next, you will be asked how to treat grouped views and which downsampling of the images to use. This is the same as in the simple mode, so please look [to the corresponding page](BigStitcher_Pairwise_shift#Pairwise_shift_calculation ) for details.
+Next, you will be asked how to treat grouped views and which downsampling of the images to use. This is the same as in the simple mode, so please look [to the corresponding page](BigStitcher_Pairwise_shift#Pairwise_shift_calculation) for details.
 
 <img src="/images/pages/BigStitcher stitch advanced phasecorr.png" width="600"/>
 
@@ -47,22 +47,22 @@ First, you will be asked for three parameters:
 
 -   **maximum iterations:** how many Gradient descent iterations to run. You might want to increase this parameter if the prior alignment is far off (however, the method generally performs poorly in such cases) or if you set the minimum parameter change very low. If no optimum was found after the maximum iteration number, we consider the alignment to have failed and return no shift for the image pair.
 -   **minimum parameter change for convergence:** the optimization will run until the change in length for the current estimate for the shift vector falls below this threshold (in pixels). Lower values might provide more accurate alignments but increase computation times.
--   **show expert grouping options**: if you activate this, you will be asked which views to include in the calculation and how to group them in another dialog. See the [Advanced view grouping section below](BigStitcher_Advanced_stitching#Advanced_view_grouping ) for details.
+-   **show expert grouping options**: if you activate this, you will be asked which views to include in the calculation and how to group them in another dialog. See the [Advanced view grouping section below](BigStitcher_Advanced_stitching#Advanced_view_grouping) for details.
 
-Next, you will be asked how to treat grouped views and which downsampling of the images to use. This is the same as in the simple mode, so please look [to the corresponding page](BigStitcher_Pairwise_shift#Pairwise_shift_calculation ) for details.
+Next, you will be asked how to treat grouped views and which downsampling of the images to use. This is the same as in the simple mode, so please look [to the corresponding page](BigStitcher_Pairwise_shift#Pairwise_shift_calculation) for details.
 
 <img src="/images/pages/BigStitcher stitch advanced lk.png" width="600"/>
 
 Interest point-based shift calculation
 --------------------------------------
 
-Finally, you can use the interest point-based registration of the [Multiview-Reconstruction](Multiview-Reconstruction ) to determine pairwise shifts. In the right-click menu, you can choose whether to do the alignment with **new interest points** or **existing interest points** (if they exist).
+Finally, you can use the interest point-based registration of the [Multiview-Reconstruction](Multiview-Reconstruction) to determine pairwise shifts. In the right-click menu, you can choose whether to do the alignment with **new interest points** or **existing interest points** (if they exist).
 
-Also in the menu, you can activate or deactivate **Show expert grouping options**. If it is activated, you will be asked which views to include in the calculation and how to group them. See the [Advanced view grouping section below](BigStitcher_Advanced_stitching#Advanced_view_grouping ) for details.
+Also in the menu, you can activate or deactivate **Show expert grouping options**. If it is activated, you will be asked which views to include in the calculation and how to group them. See the [Advanced view grouping section below](BigStitcher_Advanced_stitching#Advanced_view_grouping) for details.
 
-If you chose to detect new interest points, you will then have to proceed through the steps of interest point detection. Please refer to the [corresponding section](BigStitcher_Interest_points ) of this Wiki for detailed instructions.
+If you chose to detect new interest points, you will then have to proceed through the steps of interest point detection. Please refer to the [corresponding section](BigStitcher_Interest_points) of this Wiki for detailed instructions.
 
-Next, the image pairs will be registered using the interest points. Please refer to the [corresponding section](BigStitcher_Registration ) of this Wiki for detailed instructions. Note that the transformation model is restricted to a simple translation at the moment and you can only use the following strategies:
+Next, the image pairs will be registered using the interest points. Please refer to the [corresponding section](BigStitcher_Registration) of this Wiki for detailed instructions. Note that the transformation model is restricted to a simple translation at the moment and you can only use the following strategies:
 
 -   Fast descriptor-based (rotation invariant)
 -   Fast descriptor-based (translation invariant)
@@ -85,4 +85,4 @@ In the next two dialogs, you will be asked which views to include in the calcula
 
 {% include warning-box content='Theoretically, you can use the second dialog to generate arbitrary groupings of the data, e.g. compare Channels but group Tiles for chromatic shift correction. Not all of these groupings might make sense and not all of them can be properly visualized in the UI (e.g. for ""interactive link preview""). Note that you have to use for the same grouping of the data in the subsequent ""global optimization"" step.' %}
 
-Go back to the [main page](BigStitcher#Documentation )
+Go back to the [main page](BigStitcher#Documentation)

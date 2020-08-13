@@ -16,9 +16,9 @@ The Volume Calculator plugin is designed to let users measure the volumes of arb
 
 Volume Calculator uses three Fiji plugins:
 
-1.  [Skeletonize3D](Skeletonize3D ) for performing the skeletonization,
-2.  [AnalyzeSkeleton](AnalyzeSkeleton ) for the analysis and
-3.  [3D Viewer](3D_Viewer ) for display.
+1.  [Skeletonize3D](Skeletonize3D) for performing the skeletonization,
+2.  [AnalyzeSkeleton](AnalyzeSkeleton) for the analysis and
+3.  [3D Viewer](3D_Viewer) for display.
 
 Usage
 -----
@@ -31,15 +31,15 @@ The section explains how to use Volume Calculator. A Magnetic Resonance Angiogra
 
 ### Thresholding
 
-If your image is not binary then it must be thresholded in order for the first stage in the Volume Calculator to work. These settings are often determined by the nature of the image, for example, its noisiness, or by what features you wish to retain. You can pretest this image by running the image through the [Skeletonize3D](Skeletonize3D ) plugin. A second test can be performed by taking this skeleton image and applying to the [AnalyzeSkeleton](AnalyzeSkeleton ) plugin to see if it can be analyzed. If it can not be analyzed then oftentimes adjusting the threshold can make it "analyzable".
+If your image is not binary then it must be thresholded in order for the first stage in the Volume Calculator to work. These settings are often determined by the nature of the image, for example, its noisiness, or by what features you wish to retain. You can pretest this image by running the image through the [Skeletonize3D](Skeletonize3D) plugin. A second test can be performed by taking this skeleton image and applying to the [AnalyzeSkeleton](AnalyzeSkeleton) plugin to see if it can be analyzed. If it can not be analyzed then oftentimes adjusting the threshold can make it "analyzable".
 
 ### Volume Calculation
 
-The Volume Calculator is located at {% include bc content='Plugins | Analyze'%} in the Fiji menu. When run, it will take the current image as input. Processing begins immediately; its progress is shown in the status bar. After a successful run, the plugin will display the Volume Calculator window (Figure 2.) This window is actually the [3D Viewer](3D_Viewer ) plugin. Volume Calculator has taken its final result - a Java 3D representation of the analyzed image - and asked the [3D Viewer](3D_Viewer ) to display it.
+The Volume Calculator is located at {% include bc content='Plugins | Analyze'%} in the Fiji menu. When run, it will take the current image as input. Processing begins immediately; its progress is shown in the status bar. After a successful run, the plugin will display the Volume Calculator window (Figure 2.) This window is actually the [3D Viewer](3D_Viewer) plugin. Volume Calculator has taken its final result - a Java 3D representation of the analyzed image - and asked the [3D Viewer](3D_Viewer) to display it.
 
 #### User Interface
 
-{% include thumbnail src='/images/pages/VolCal-3.png' title='Figure 2. Volume Calculator user interface.'%} Because the [3D Viewer](3D_Viewer ) plugin is used for display, its menu is available at the top of the window. Below this menu line is the image area where the image can be manipulated with all of the available 3D Viewer commands. At the bottom of the window is an additional area that Volume Calculator uses to display volume results. It will be discussed in more detail in the next section. Below this area are two check boxes. These check boxes alter the display and behavior of the 3D Viewer. Checking the <i>Bounding Box</i> will cause the 3d Viewer boundary box to be displayed. Checking <i>Key Nav. Only</i> allows you to perform 3d transformations such as rotation with the just the directional keys.
+{% include thumbnail src='/images/pages/VolCal-3.png' title='Figure 2. Volume Calculator user interface.'%} Because the [3D Viewer](3D_Viewer) plugin is used for display, its menu is available at the top of the window. Below this menu line is the image area where the image can be manipulated with all of the available 3D Viewer commands. At the bottom of the window is an additional area that Volume Calculator uses to display volume results. It will be discussed in more detail in the next section. Below this area are two check boxes. These check boxes alter the display and behavior of the 3D Viewer. Checking the <i>Bounding Box</i> will cause the 3d Viewer boundary box to be displayed. Checking <i>Key Nav. Only</i> allows you to perform 3d transformations such as rotation with the just the directional keys.
 
 #### Selection
 
@@ -62,9 +62,9 @@ References
 
 The Volume Calculator plugin uses the following plugins:
 
-1.  [Skeletonize3D](Skeletonize3D ) for performing the skeletonization,
-2.  [AnalyzeSkeleton](AnalyzeSkeleton ) for the analysis. Also tree traversal to create the Java 3D image is based on the one in this plugin.
-3.  [3D Viewer](3D_Viewer ) for display and image manipulation.
+1.  [Skeletonize3D](Skeletonize3D) for performing the skeletonization,
+2.  [AnalyzeSkeleton](AnalyzeSkeleton) for the analysis. Also tree traversal to create the Java 3D image is based on the one in this plugin.
+3.  [3D Viewer](3D_Viewer) for display and image manipulation.
 
 License
 -------

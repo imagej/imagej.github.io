@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Kai Schleicher ' affiliation='Imaging Core Facility (IMCF), Biozentrum, University of Basel, Switzerland ' forum='CellKai ' %}
+{% include user-box name='Kai Schleicher' affiliation='Imaging Core Facility (IMCF), Biozentrum, University of Basel, Switzerland' forum='CellKai' %}

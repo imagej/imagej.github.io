@@ -13,20 +13,20 @@ description: test description
 Overview
 ========
 
-A fundamental benefit to creating [scripts and macros](Scripting ) in [ImageJ](ImageJ ) is the ability to *reuse* their functionality *on more than one image*. Although this can be done manually, there are multiple ways to easily automate this batch processing.
+A fundamental benefit to creating [scripts and macros](Scripting) in [ImageJ](ImageJ) is the ability to *reuse* their functionality *on more than one image*. Although this can be done manually, there are multiple ways to easily automate this batch processing.
 
 General workflow
 ================
 
 1.  Create a basic macro/script which operates on the active image or on a single file.
-    -   The [macro recorder](Introduction_into_Macro_Programming#The_recorder ) is an excellent way to generate macro code.
-    -   The [Introduction into Macro Programming](Introduction_into_Macro_Programming ) explains the principles of macro writing.
+    -   The [macro recorder](Introduction_into_Macro_Programming#The_recorder) is an excellent way to generate macro code.
+    -   The [Introduction into Macro Programming](Introduction_into_Macro_Programming) explains the principles of macro writing.
 2.  Apply your macro to a group of images.
     -   These images do not need to be open in ImageJ already—they will be read in as part of the batch process.
     -   See below for details.
 
 Option 1 - {% include bc content='Process | Batch | Macro...'%}
-=================================================================
+==================================================================
 
 The fastest way to start batch conversion is via the [{% include bc content='Process | Batch | Macro...'%}](https://imagej.net/docs/guide/146-29.html#toc-Subsubsection-29.12.3) command. This will open a dialog (below) that will allow you to specify an input and output directory. You can select an output file format, and then use the `Add Macro Code` drop-down to generate a macro with the desired functionality.
 
@@ -35,7 +35,7 @@ The fastest way to start batch conversion is via the [{% include bc content='Pro
 Option 2 - Script Template
 ==========================
 
-Open the [script editor](Using_the_Script_Editor ), select {% include bc content='Templates | ImageJ 1.x | Batch | Process Folder (IJ1 Macro)'%}. This will generate the following boilerplate:
+Open the [script editor](Using_the_Script_Editor), select {% include bc content='Templates | ImageJ 1.x | Batch | Process Folder (IJ1 Macro)'%}. This will generate the following boilerplate:
 
 <img src="/images/pages/Process folder ij1.png" width="762"/>
 
@@ -44,12 +44,12 @@ Lines 26 and 27 can now be edited, replaced with the functional macro code you w
 Option 3 - Batch Processing with Script Parameters
 ==================================================
 
-{% include info-box content='This section is currently being expanded to document the current state of the [SciJava Batch Processor](https://github.com/scijava/batch-processor/). The Batch Processor is a new addition to the SciJava/ImageJ framework. If you encounter any issues, please report/ask on the [forum](Forum ).' %}
+{% include info-box content='This section is currently being expanded to document the current state of the [SciJava Batch Processor](https://github.com/scijava/batch-processor/). The Batch Processor is a new addition to the SciJava/ImageJ framework. If you encounter any issues, please report/ask on the [forum](Forum).' %}
 
 See also
 ========
 
 -   [{% include bc content='Process | Batch'%}](https://imagej.net/docs/guide/146-29.html#toc-Subsection-29.12) submenu.
--   [Scripting](Scripting ) documentation and tutorials.
--   [How to apply a common operation to a complete directory](How_to_apply_a_common_operation_to_a_complete_directory )
--   [Assign your own keyboard shortcuts](Keyboard_shortcuts#Creating_your_own_keyboard_shortcuts )
+-   [Scripting](Scripting) documentation and tutorials.
+-   [How to apply a common operation to a complete directory](How_to_apply_a_common_operation_to_a_complete_directory)
+-   [Assign your own keyboard shortcuts](Keyboard_shortcuts#Creating_your_own_keyboard_shortcuts)

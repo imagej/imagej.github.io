@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='William Hirst ' affiliation=' [Humboldt-Universität zu Berlin](https://www.thereberlab.com) ' %}
+{% include user-box name='William Hirst' affiliation=' [Humboldt-Universität zu Berlin](https://www.thereberlab.com)' %}

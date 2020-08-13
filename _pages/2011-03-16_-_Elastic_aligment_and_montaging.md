@@ -11,9 +11,9 @@ We have implemented a long-standing simple idea for elastic alignment of large s
 
 Basically, each image is represented as an elastic mesh of spring-connected vertices that are dragged towards corresponding locations in overlapping images. Corresponding locations are found by block matching.
 
-Find the (still experimental) plugins for series alignment and montaging in an updated Fiji's Registration menu. [Documentation](Elastic_Alignment_and_Montage ) is available at the [Fiji Wiki](Elastic_Alignment_and_Montage ).
+Find the (still experimental) plugins for series alignment and montaging in an updated Fiji's Registration menu. [Documentation](Elastic_Alignment_and_Montage) is available at the [Fiji Wiki](Elastic_Alignment_and_Montage).
 
-[Elastic Alignment and Montage](Elastic_Alignment_and_Montage ) was developed by [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld/).
+[Elastic Alignment and Montage](Elastic_Alignment_and_Montage) was developed by [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld/).
 
 Many thanks to {% include person content='Albertcardona' %} and {% include person content='Iarganda' %} for pushing and helping.
 

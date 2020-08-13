@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [ImageJ Server](ImageJ_Server )
+1.  REDIRECT [ImageJ Server](ImageJ_Server)

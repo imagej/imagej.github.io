@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BoneJ2\#Skeletonise](BoneJ2#Skeletonise )
+1.  REDIRECT [BoneJ2\#Skeletonise](BoneJ2#Skeletonise)

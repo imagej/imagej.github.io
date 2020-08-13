@@ -22,9 +22,9 @@ Requirements:
 -   [ImageJ](https://imagej.net/Downloads) v1.49o or newer.
 -   [Bio-Formats 5.x](https://www.openmicroscopy.org/bio-formats/downloads/) or newer.
 
-{% include tip id='bioformat ' tip='Saving ""bioformats\_package.jar"" in .\\ImageJ.app\\plugins\\ seems to be the best way to use the macro in stable conditions. ' %} Use the ImageJ Updater and see the instructions [How to follow a 3rd party update site](https://imagej.net/How_to_follow_a_3rd_party_update_site) select FAST (http://sites.imagej.net/FAST) from the available site list.
+{% include tip id='bioformat' tip='Saving ""bioformats\_package.jar"" in .\\ImageJ.app\\plugins\\ seems to be the best way to use the macro in stable conditions.' %} Use the ImageJ Updater and see the instructions [How to follow a 3rd party update site](https://imagej.net/How_to_follow_a_3rd_party_update_site) select FAST (http://sites.imagej.net/FAST) from the available site list.
 
-New commands should then appear in ImageJ '{% include bc content='Plugins | FAST '%}' menu.
+New commands should then appear in ImageJ '{% include bc content='Plugins | FAST'%}' menu.
 
 Image Processing
 ----------------
@@ -52,7 +52,7 @@ Startup Options
 'Other' allow to enter a specific file extension.  
 **Threshold value** : Set threshold value for pixel intensity, segmenting the image into features of interest (above threshold) and background.  
 
-{% include tip id='Threshold ' tip='"""""Threshold value must be defined for each acquisition system (microscope + camera + exposure time + file-type)""""". ' %}
+{% include tip id='Threshold' tip='"""""Threshold value must be defined for each acquisition system (microscope + camera + exposure time + file-type)""""".' %}
 
 **Create ROIs** : Step 1, analyses pixels above the user-defined threshold value and automatically saves Regions Of Interest zip file in the image directory.  
 **Measure ROIs** : Step 2 of image analysis to check individually and measure previously created ROIs. (With Step 1 unchecked and Step 2 checked, user can reanalyse previous data).  
@@ -82,7 +82,7 @@ Select the appropriate tool in ImageJ toolbar: ![](/images/pages/Freehand.png "f
 -   To remove non-specific fluorescence, use selected tool and hold {% include key content='press\|Alt' %} while unwanted area to remove it from ROI.
 -   To add area to the previously selected ROI, hold {% include key content='press\|Shift' %} while selecting new area to add.
 
-Click {% include key content='press\|OK' %} to confirm the new ROI. Fluorescence is then measured and the ROI zip file is automatically updated. {% include tip id='Selection ' tip='In case the selection is empty after manual correction, the macro discards the image from analysis. ' %}
+Click {% include key content='press\|OK' %} to confirm the new ROI. Fluorescence is then measured and the ROI zip file is automatically updated. {% include tip id='Selection' tip='In case the selection is empty after manual correction, the macro discards the image from analysis.' %}
 
 After completion of Step 2, a list of all measured images with filename is displayed in the Result Table window of ImageJ.
 

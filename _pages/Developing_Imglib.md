@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Developing ImgLib2](Developing_ImgLib2 )
+1.  REDIRECT [Developing ImgLib2](Developing_ImgLib2)

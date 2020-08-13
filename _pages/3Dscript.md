@@ -17,9 +17,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='bene51 ' repo='3Dscript ' %}
+{% include github org='bene51' repo='3Dscript' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='3Dscript ' maintainer=maintainer author=author source=source status='active ' released='January 2019 ' category='[Visualization](Category_Visualization ), [:Category:Plugins](Category_Plugins ) ' %}
+{% include info-box software='Fiji' name='3Dscript' maintainer=maintainer author=author source=source status='active' released='January 2019' category='[Visualization](Category_Visualization), [:Category:Plugins](Category_Plugins)' %}
 
 <img src="/images/pages/3Dscript-Logo.png" width="160"/> **3Dscript** - Create high-quality 3D/4D animations using a natural-language based syntax
 

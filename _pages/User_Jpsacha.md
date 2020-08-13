@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Jarek Sacha ' website='https://codingonthestaircase.wordpress.com/ ' %}
+{% include user-box name='Jarek Sacha' website='https://codingonthestaircase.wordpress.com/' %}

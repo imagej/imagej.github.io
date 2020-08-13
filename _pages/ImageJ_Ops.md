@@ -9,7 +9,7 @@ description: test description
 
 {% include component-stats content='net.imagej:imagej-ops' %}ImageJ Ops is a framework for reusable image processing operations. Ops extends Java's mantra of "write once, run anywhere" to image processing algorithms.
 
-The central goal is to enable programmers to code an image processing algorithm in the Ops framework, which is then usable as-is from any [SciJava](SciJava )-compatible software project, such as [ImageJ](ImageJ ), [CellProfiler](CellProfiler ), [KNIME](KNIME ), [OMERO](OMERO ) and [Alida](Alida ). {% include toc content='small' %} {% include develop-menu content='tutorials' %}
+The central goal is to enable programmers to code an image processing algorithm in the Ops framework, which is then usable as-is from any [SciJava](SciJava)-compatible software project, such as [ImageJ](ImageJ), [CellProfiler](CellProfiler), [KNIME](KNIME), [OMERO](OMERO) and [Alida](Alida). {% include toc content='small' %} {% include develop-menu content='tutorials' %}
 
 Design goals
 ------------
@@ -17,7 +17,7 @@ Design goals
 Ops has three major design goals:
 
 1.  **Easy to use and extend.** There must be a wealth of easy-to-use image processing operations ("ops"), as well as an easy framework for extending those ops in new directions.
-2.  **Powerful and general.** An op should be able to consist of any number of typed input and output parameters, operating on arbitrary data structures, including images of N dimensions stored in a myriad of different ways: as files on disk, programmatically generated in memory, or in remote databases. Using the powerful [ImgLib2](ImgLib2 ) library achieves this ambitious goal.
+2.  **Powerful and general.** An op should be able to consist of any number of typed input and output parameters, operating on arbitrary data structures, including images of N dimensions stored in a myriad of different ways: as files on disk, programmatically generated in memory, or in remote databases. Using the powerful [ImgLib2](ImgLib2) library achieves this ambitious goal.
 3.  **Very fast.** Even though ImgLib2 is vastly more general than ImageJ 1.x's data model, that generality should not come at the expense of performance. Otherwise, users must pay a time tax to do the same things they could already do in ImageJ 1.x. The ImageJ Ops framework needs to provide a means to override *any* general-but-slow op with a faster-but-more-specific alternative, fully transparently to the user.
 
 Getting started
@@ -28,17 +28,17 @@ Start by reading these Jupyter notebooks:
 -   [Using ImageJ Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1-Using-ImageJ/2-ImageJ-Ops.ipynb) - to call ops from your scripts.
 -   [Writing Op plugins](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2-Extending-ImageJ/4-Ops.ipynb) - to write your own ops.
 
-Ops are a special type of ImageJ plugin, so a basic understanding of the [SciJava plugin framework](Writing_Plugins ) is strongly recommended.
+Ops are a special type of ImageJ plugin, so a basic understanding of the [SciJava plugin framework](Writing_Plugins) is strongly recommended.
 
 In addition to cloning the [imagej-ops](https://github.com/imagej/imagej-ops) itself, the following components have useful Ops examples:
 
--   {% include github org='imagej ' repo='imagej-tutorials ' label='ImageJ-tutorials ' %} - examples of ImageJ plugins using Ops
--   {% include github org='imagej ' repo='imagej-scripting ' label='ImageJ-scripting ' %} - provides [templates in the Script Editor](Script_Templates )
+-   {% include github org='imagej' repo='imagej-tutorials' label='ImageJ-tutorials' %} - examples of ImageJ plugins using Ops
+-   {% include github org='imagej' repo='imagej-scripting' label='ImageJ-scripting' %} - provides [templates in the Script Editor](Script_Templates)
 
 Tutorials and workshops
 -----------------------
 
--   [Step-by-step guide: Adding new ops](Adding_new_ops )
+-   [Step-by-step guide: Adding new ops](Adding_new_ops)
 -   [ImageJ Tutorial: Introduction to ImageJ Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1-Using-ImageJ/2-ImageJ-Ops.ipynb)
 -   [Extending ImageJ: Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2-Extending-ImageJ/4-Ops.ipynb)
 -   "Scripting in ImageJ - An introduction to ImageJ Ops" (February 2017 NEUBIAS2020) – [slides](http://imagej.github.io/presentations/2017-02-12-imagej-ops-neubias/#/)
@@ -59,11 +59,11 @@ Yes, but there is no automagic wrapping of native/external functionality in Ops.
 
 ### Is there a list of Ops somewhere with brief descriptions of their functionalities?
 
-For an interactive tool to see all available Ops, see the [Op Finder](Op_Finder ) documentation.
+For an interactive tool to see all available Ops, see the [Op Finder](Op_Finder) documentation.
 
-For the core Ops available, you can go to the {% include javadoc package='?net/imagej/ops ' class='package-summary ' label='ImageJ Ops ' %} javadocs. Any class under the package `net.imagej.ops` is related to Ops.
+For the core Ops available, you can go to the {% include javadoc package='?net/imagej/ops' class='package-summary' label='ImageJ Ops' %} javadocs. Any class under the package `net.imagej.ops` is related to Ops.
 
-You can also use the [Script Editor](Script_Editor ) in ImageJ and actively search using Ops itself. For example in groovy language:
+You can also use the [Script Editor](Script_Editor) in ImageJ and actively search using Ops itself. For example in groovy language:
 
     // @OpService ops
     print ops.help()
@@ -98,6 +98,6 @@ Regardless of this proliferation of implementations, a user just has to write `o
 See also
 --------
 
--   [2014-04-04 - Announcing ImageJ Ops](2014-04-04_-_Announcing_ImageJ_Ops ) news post
+-   [2014-04-04 - Announcing ImageJ Ops](2014-04-04_-_Announcing_ImageJ_Ops) news post
 
 

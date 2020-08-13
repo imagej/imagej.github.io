@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Varun Kapoor ' gravatar='fa99446001a750a28e3cac0cd0dcffcf ' affiliation=' [Institut Curie, Paris](https://science.curie.fr/members/varun-kapoor/) ' github='kapoorlab ' %}
+{% include user-box name='Varun Kapoor' gravatar='fa99446001a750a28e3cac0cd0dcffcf' affiliation=' [Institut Curie, Paris](https://science.curie.fr/members/varun-kapoor/)' github='kapoorlab' %}

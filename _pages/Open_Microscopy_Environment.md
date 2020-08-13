@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [OMERO](OMERO )
+1.  REDIRECT [OMERO](OMERO)

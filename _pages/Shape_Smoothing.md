@@ -15,7 +15,7 @@ Undral Erdenetsogt, {% include person content='Twagner' %}
 {% capture maintainer%}
 Undral Erdenetsogt (erdenetsogt@biomedical-imaging.de), {% include person content='Twagner' %}
 {% endcapture %}
-{% include info-box software='Fiji ' name='Shape Smoothing Plugin ' author=author maintainer=maintainer filename=' [shape-smoothing.jar](https://github.com/thorstenwagner/ij-shape-smoothing/releases/latest) ' source=' [Github](https://github.com/thorstenwagner/ij-shape-smoothing) ' latest-version='v1.2 (06 October 2016) ' status='maintaining ' %}
+{% include info-box software='Fiji' name='Shape Smoothing Plugin' author=author maintainer=maintainer filename=' [shape-smoothing.jar](https://github.com/thorstenwagner/ij-shape-smoothing/releases/latest)' source=' [Github](https://github.com/thorstenwagner/ij-shape-smoothing)' latest-version='v1.2 (06 October 2016)' status='maintaining' %}
 
 General Purpose
 ===============

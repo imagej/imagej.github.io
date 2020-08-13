@@ -7,7 +7,7 @@ categories: News,ImageJ2,Fiji
 description: test description
 ---
 
-From Wednesday, September 20, 2017 through Friday, September 28, 2017, {% include person content='Dietzc' %} of [KNIME](https://www.knime.org) hosted \~20 developers at the [KNIME Konstanz Regional Office](https://www.knime.com/contact) for a [hackathon](Hackathon ) to develop the KNIME Image Processing extensions along with the underlying [ImageJ Ops](ImageJ_Ops ) library, as well as other related and/or supporting technologies such as [Ilastik](http://ilastik.org/), [ImgLib2](ImgLib2 ) and [BigDataViewer](BigDataViewer ).
+From Wednesday, September 20, 2017 through Friday, September 28, 2017, {% include person content='Dietzc' %} of [KNIME](https://www.knime.org) hosted \~20 developers at the [KNIME Konstanz Regional Office](https://www.knime.com/contact) for a [hackathon](Hackathon) to develop the KNIME Image Processing extensions along with the underlying [ImageJ Ops](ImageJ_Ops) library, as well as other related and/or supporting technologies such as [Ilastik](http://ilastik.org/), [ImgLib2](ImgLib2) and [BigDataViewer](BigDataViewer).
 
 There was a big focus this time on machine learning, particularly deep learning networks applied to biological data.
 
@@ -23,14 +23,14 @@ Hackathon progress
 
 ### Curtis Rueden
 
--   Worked with {% include person content='Stelfrich' %} on automating releases of [SciJava components](Architecture#Definitions ) via [Travis CI](Travis_CI ) (\[https://github.com/scijava/scijava-scripts/compare/0235621...f5965c3 1\], {% include github org='scijava ' repo='pom-scijava-base ' commit='869206b008592b6849731fe5050817f888ae8a14 ' label='2 ' %}, {% include github org='scijvaa ' repo='pom-scijava-base ' commit='7ec8e5fbabe0d64350cc6b6de92861a3cd89b828 ' label='3 ' %}).
--   Assisted {% include person content='Stelfrich' %} in improvements to the `imagej-maven-plugin` ({% include github org='imagej ' repo='imagej-maven-plugin ' pr='24 ' label='1 ' %})
--   Reviewed and merged {% include person content='maarzt' %}'s initial revamp of the SciJava log framework ({% include github org='scijava ' repo='scijava-common ' pr='272 ' label='1 ' %}, {% include github org='scijava ' repo='scijava-ui-swing ' pr='25 ' label='2 ' %}).
--   Reviewed and merged {% include person content='Eglinger' %}'s work adding a SciJava widget for `File[]` inputs ({% include github org='scijava ' repo='scijava-common ' pr='286 ' label='1 ' %}, {% include github org='scijava ' repo='scijava-ui-swing ' pr='27 ' label='2 ' %}, {% include github org='imagej ' repo='imagej-legacy ' pr='165 ' label='3 ' %}).
+-   Worked with {% include person content='Stelfrich' %} on automating releases of [SciJava components](Architecture#Definitions) via [Travis CI](Travis_CI) (\[https://github.com/scijava/scijava-scripts/compare/0235621...f5965c3 1\], {% include github org='scijava' repo='pom-scijava-base' commit='869206b008592b6849731fe5050817f888ae8a14' label='2' %}, {% include github org='scijvaa' repo='pom-scijava-base' commit='7ec8e5fbabe0d64350cc6b6de92861a3cd89b828' label='3' %}).
+-   Assisted {% include person content='Stelfrich' %} in improvements to the `imagej-maven-plugin` ({% include github org='imagej' repo='imagej-maven-plugin' pr='24' label='1' %})
+-   Reviewed and merged {% include person content='maarzt' %}'s initial revamp of the SciJava log framework ({% include github org='scijava' repo='scijava-common' pr='272' label='1' %}, {% include github org='scijava' repo='scijava-ui-swing' pr='25' label='2' %}).
+-   Reviewed and merged {% include person content='Eglinger' %}'s work adding a SciJava widget for `File[]` inputs ({% include github org='scijava' repo='scijava-common' pr='286' label='1' %}, {% include github org='scijava' repo='scijava-ui-swing' pr='27' label='2' %}, {% include github org='imagej' repo='imagej-legacy' pr='165' label='3' %}).
 -   With {% include person content='Eglinger' %}, began work on several related SciJava scripting enhancements ([1](https://github.com/scijava/scijava-common/issues/261#issuecomment-331487719)).
 -   Helped {% include person content='HedgehogCode' %} and {% include person content='frauzufall' %} with ImageJ/TensorFlow integration and API improvements (PR(s) to `imagej/imagej-tensorflow` forthcoming).
 -   With {% include person content='Dietzc' %}, continued work on the next-generation SciJava Struct API, including an overhauled widget framework and Swing widget implementations (as of this writing, on an unstable branch of `scijava/scijava-ops` repository; see [here](https://github.com/scijava/scijava-common/issues/42#issuecomment-332658377) for a written update with illustration of progress).
--   Helped {% include person content='chaubold' %} set up his {% include github org='ilastik ' repo='ilastik4ij ' label='shiny new Ilastik-ImageJ integration ' %} with [Travis CI](Travis_CI ) and deploy it to the ImageJ Maven repository.
+-   Helped {% include person content='chaubold' %} set up his {% include github org='ilastik' repo='ilastik4ij' label='shiny new Ilastik-ImageJ integration' %} with [Travis CI](Travis_CI) and deploy it to the ImageJ Maven repository.
 
 ### Florian Jug
 
@@ -43,7 +43,7 @@ Hackathon progress
 
 -   Worked on the [Big Data Viewer GUI](https://github.com/knime-ip/knip-bdv).
 -   Helped {% include person content='maarzt' %} and {% include person content='xulman' %} with KNIME Image Processing Node development.
--   Fixed `DefaultDifferenceVariance` feature of the Haralick feature-set in `imagej-ops` ({% include github org='imagej ' repo='imagej-ops ' pr='523 ' label='1 ' %}).
+-   Fixed `DefaultDifferenceVariance` feature of the Haralick feature-set in `imagej-ops` ({% include github org='imagej' repo='imagej-ops' pr='523' label='1' %}).
 
 ### Benjamin Wilhelm
 
@@ -54,18 +54,18 @@ Hackathon progress
 
 ### Stefan Helfrich
 
--   Worked on improvements to the `imagej-maven-plugin` ({% include github org='imagej ' repo='imagej-maven-plugin ' pr='24 ' label='1 ' %}, {% include github org='imagej ' repo='imagej-maven-plugin ' pr='26 ' label='2 ' %}, {% include github org='imagej ' repo='imagej-maven-plugin ' pr='27 ' label='3 ' %})
+-   Worked on improvements to the `imagej-maven-plugin` ({% include github org='imagej' repo='imagej-maven-plugin' pr='24' label='1' %}, {% include github org='imagej' repo='imagej-maven-plugin' pr='26' label='2' %}, {% include github org='imagej' repo='imagej-maven-plugin' pr='27' label='3' %})
 -   Got {% include person content='chaubold' %}, {% include person content='maarzt' %}, and {% include person content='xulman' %} started on integrating their SciJava Commands as KNIME nodes
--   Reviewed PRs of `imagej-ops` ({% include github org='imagej ' repo='imagej-ops ' pr='523 ' label='1 ' %}, {% include github org='imagej ' repo='imagej-ops ' pr='519 ' label='2 ' %}, {% include github org='imagej ' repo='imagej-ops ' pr='510 ' label='3 ' %}, [4](http://forum.imagej.net/t/frangi-vesselness-filter-feedback/6747))
+-   Reviewed PRs of `imagej-ops` ({% include github org='imagej' repo='imagej-ops' pr='523' label='1' %}, {% include github org='imagej' repo='imagej-ops' pr='519' label='2' %}, {% include github org='imagej' repo='imagej-ops' pr='510' label='3' %}, [4](http://forum.imagej.net/t/frangi-vesselness-filter-feedback/6747))
 -   Looked into migration of algorithms from MorphoLibJ to Ops/ImgLib2
 -   Worked with {% include person content='milkyklim' %} on migrating an ImageJ1 plugin to a SciJava Command (and possibly Ops for computations)
--   Fixed some bugs with respect to `@Parameters` ({% include github org='imagej ' repo='imagej-common ' pr='69 ' label='1 ' %}, {% include github org='imagej ' repo='imagej-legacy ' pr='171 ' label='2 ' %})
+-   Fixed some bugs with respect to `@Parameters` ({% include github org='imagej' repo='imagej-common' pr='69' label='1' %}, {% include github org='imagej' repo='imagej-legacy' pr='171' label='2' %})
 -   Paired with {% include person content='Rueden' %} to push the cloud-based build and deploy infrastructure
 
 ### Tobias Pietzsch
 
 -   Worked on imglib2 discrete regions framework (imglib2-roi branch ["cleaned-up"](https://github.com/imglib/imglib2-roi/tree/8bafc8de2d83531aaef46ee36964731a78204589), imglib-tests branch ["roi"](https://github.com/imglib/imglib2-tests/tree/ec0df49bf5fc344f6ae5af5fec8584a36e3d2ca2)).
--   Reviewed imglib2-roi {% include github org='imglib ' repo='imglib-roi ' pr='29 ' label='Masks PR ' %}, and worked on revision/re-implementation of core interfaces and operators (imglib2-roi branch ["troi"](https://github.com/imglib/imglib2-roi/tree/c41c93acf696b801e13f5023bf00527c04722263)).
+-   Reviewed imglib2-roi {% include github org='imglib' repo='imglib-roi' pr='29' label='Masks PR' %}, and worked on revision/re-implementation of core interfaces and operators (imglib2-roi branch ["troi"](https://github.com/imglib/imglib2-roi/tree/c41c93acf696b801e13f5023bf00527c04722263)).
 -   Worked on reviewing and integrating "dynamic bookmarks" feature by [Max Kleinhenz](https://github.com/maxkleinhenz/bigdataviewer-core) into BigDataViewer.
 -   Minor BigDataViewer features to help {% include person content='tibuch' %} with [Big Data Viewer GUI](https://github.com/knime-ip/knip-bdv).
 

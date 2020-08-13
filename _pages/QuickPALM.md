@@ -16,4 +16,4 @@ Publication
 
 For Full Documentation, and details of how to build your own super resolution system, please visit: [QuickPALM pages at Google Code](http://code.google.com/p/quickpalm/)
 
-[ Super Resolution](Category_Superresolution ) 
+[ Super Resolution](Category_Superresolution) 

@@ -21,7 +21,7 @@ When views have more than one illumination, you can select the best one by selec
 
 -   -   **Pick brightest** will pick the illumination direction with the highest mean intensity (for multiresolution datasets, it will be calculated on the lowest resolution images).
     -   **Pick highest mean gradient magnitude** will calculate the mean gradient magnitude in the images via central differences and pick the illumination with the highest value (for multiresolution datasets, it will be calculated on the lowest resolution images).
-    -   **Relative Fourier Ring Correlation** will calculate a local relative Fourier Ring Correlation (FRC) and pick the illumination direction with the highest integrated FRC (this is calculated in full-resolution images). You need to specify some parameters for the FRC calculation, please refer to the section on [FRC Quality Control](BigStitcher_FRC_Quality_Control ) for a detailed explanation.
+    -   **Relative Fourier Ring Correlation** will calculate a local relative Fourier Ring Correlation (FRC) and pick the illumination direction with the highest integrated FRC (this is calculated in full-resolution images). You need to specify some parameters for the FRC calculation, please refer to the section on [FRC Quality Control](BigStitcher_FRC_Quality_Control) for a detailed explanation.
 
 In general, our experience is that all three methods provide similar results, with gradient magnitude and FRC providing more differentiation power in close cases (at the cost of longer compute times), see e.g. **Figure 1**.
 
@@ -33,4 +33,4 @@ After selecting the best illumination, only the chosen illumination will be used
 
 <img src="/images/pages/BigStitcher Illu 3.png" width="800"/>
 
-Go back to the [main page](BigStitcher#Documentation )
+Go back to the [main page](BigStitcher#Documentation)

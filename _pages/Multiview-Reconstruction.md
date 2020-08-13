@@ -12,33 +12,33 @@ description: test description
 Download
 --------
 
-The integration of the **Multiview Reconstruction** and the [BigDataViewer](BigDataViewer ) is available through the Fiji Updater. Simply update Fiji and the Multiview-Reconstruction pipeline will be available under '{% include bc content='Plugins | Multiview Reconstruction | Multiview Reconstruction Application'%}'. The source code is available {% include github org='bigdataviewer ' repo='SPIM\_Registration ' %}, please also report feature requests & bugs there.
+The integration of the **Multiview Reconstruction** and the [BigDataViewer](BigDataViewer) is available through the Fiji Updater. Simply update Fiji and the Multiview-Reconstruction pipeline will be available under '{% include bc content='Plugins | Multiview Reconstruction | Multiview Reconstruction Application'%}'. The source code is available {% include github org='bigdataviewer' repo='SPIM\_Registration' %}, please also report feature requests & bugs there.
 
 To enable GPU hardware accelerated processing, you might want to download the **native CUDA code** for:
 
 -   Separable Convolution: Used for the Difference-of-Gaussian segmentation, available on [GitHub](https://github.com/StephanPreibisch/SeparableConvolutionCUDALib)
--   Non-Separable Convolution: Used for the [MultiView Deconvolution](Multi-View_Deconvolution ), available on [GitHub](https://github.com/StephanPreibisch/FourierConvolutionCUDALib)
+-   Non-Separable Convolution: Used for the [MultiView Deconvolution](Multi-View_Deconvolution), available on [GitHub](https://github.com/StephanPreibisch/FourierConvolutionCUDALib)
 
 Citation
 --------
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
--   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media_Nmeth0610-418.pdf ) [Supplement](Media_Nmeth0610-418-S1.pdf )
+-   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media_Nmeth0610-418.pdf) [Supplement](Media_Nmeth0610-418-S1.pdf)
 -   S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", *Nature Methods*, **11**(6):645-648. [Webpage](http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html)
 
-For technical details about the registration method and SPIM imaging see also [SPIM Registration Method](SPIM_Registration_Method ).
+For technical details about the registration method and SPIM imaging see also [SPIM Registration Method](SPIM_Registration_Method).
 
 Introduction & Overview
 -----------------------
 
 The **Multiview Reconstruction** software package enables users to *register, fuse, deconvolve and view* multiview microscopy images (first box). The software is designed for lightsheet fluorescence microscopy (LSFM, second box), but is applicable to any form of three or higher dimensional imaging modalities like confocal timeseries or multicolor stacks.
 
-Interactive viewing and annotation of the data is provided by integration with Tobias Pietzsch's [BigDataViewer](BigDataViewer ). Both projects share a common XML data model to describe multiview datasets.
+Interactive viewing and annotation of the data is provided by integration with Tobias Pietzsch's [BigDataViewer](BigDataViewer). Both projects share a common XML data model to describe multiview datasets.
 
 ### History
 
-This software package is the successor to the [SPIM Registration](SPIM_Registration ) package. While the SPIM Registration will continue to live within Fiji for the time being, we will mostly offer support only for this new software package. It has all the functionality the SPIM Registration offered, but is much more flexible and supports many more types of registration, fusion and data handling.
+This software package is the successor to the [SPIM Registration](SPIM_Registration) package. While the SPIM Registration will continue to live within Fiji for the time being, we will mostly offer support only for this new software package. It has all the functionality the SPIM Registration offered, but is much more flexible and supports many more types of registration, fusion and data handling.
 
 ### Examples
 
@@ -61,25 +61,25 @@ Detailed Tutorials
 
 Using this software package consists of several steps. Please note that this software is more flexible and that this order is just a suggestion of how to use it in a more-or-less standard case.
 
--   **[Dataset Definition](MVR-DefineDataset )**
+-   **[Dataset Definition](MVR-DefineDataset)**
     -   The first step in every reconstruction is to define the dataset and thereby create the XML file. This has to be done only once, all consecutive steps are based on this definition, i.e. the XML file.
 
 <!-- -->
 
--   **[Resave the dataset as HDF5/TIFF](MVR-ResaveDataset )**
-    -   Once the dataset is defined, you might want to resave all the image data as HDF5 (to be able to view it using the [BigDataViewer](BigDataViewer )) or simply as TIFF to enable fast loading of the image data. Also note that those two formats are the only ones that allow to extend the dataset/XML with newly fused data.
+-   **[Resave the dataset as HDF5/TIFF](MVR-ResaveDataset)**
+    -   Once the dataset is defined, you might want to resave all the image data as HDF5 (to be able to view it using the [BigDataViewer](BigDataViewer)) or simply as TIFF to enable fast loading of the image data. Also note that those two formats are the only ones that allow to extend the dataset/XML with newly fused data.
 
 <!-- -->
 
--   **[Detect Interest Points](MVR-InterestPointDetection )**
+-   **[Detect Interest Points](MVR-InterestPointDetection)**
     -   Based on an existing dataset definition (XML file), the first step is typically to find interest points in the images that will be used for registration. In this step it is possible to look for multiple types of detections, e.g. fluorescent beads, nuclei or membrane markers. All of them can be stored in parallel.
 
 <!-- -->
 
--   **[Interest Point Registration](MVR-InterestPointRegistration )**
+-   **[Interest Point Registration](MVR-InterestPointRegistration)**
     -   Once interest points are detected, they can be used to register/align multiple views over time. To find corresponding detection the registration module supports the following modules:
         -   *Rotation-invariant matching* using fluorescent beads (no prior transformation knowledge necessary)
-        -   *Translation-invariant matching* using any kind of detections (an approximate knowledge of the rotation is required, e.g. 45 degrees around the x-axis. Check the [Tools-Section](Multiview-Reconstruction#Tools ) for how to provide approximate transformations.)
+        -   *Translation-invariant matching* using any kind of detections (an approximate knowledge of the rotation is required, e.g. 45 degrees around the x-axis. Check the [Tools-Section](Multiview-Reconstruction#Tools) for how to provide approximate transformations.)
         -   *Precise matching* using the Iterative-Closest Point (ICP) algorithm (the dataset needs to be aligned using for example any of the above methods).
     -   The different views (or timepoints) can be aligned using *Translation*, *Rigid* or *Affine* transformation models. We also support *regularized transformation models* developed by Stephan Saafeld.
     -   Alignment over time can be performed in different ways
@@ -93,38 +93,38 @@ Using this software package consists of several steps. Please note that this sof
 
 <!-- -->
 
--   **[Fusion/Deconvolution](MVR-FusionDeconvolution )**
+-   **[Fusion/Deconvolution](MVR-FusionDeconvolution)**
     -   Once the dataset is entirely aligned it can be fused or deconvolved into a single image per timepoint and channel. Deconvolution requires the knowledge of point spread functions (PSF's), which can be extracted from matched beads directly or can be provided by the user.
-    -   Alternatively, there is no need to fuse the data and you can interactively look at the data using the [BigDataViewer](BigDataViewer ) if you resaved it as HDF5. You can still do that now after the registration is complete.
+    -   Alternatively, there is no need to fuse the data and you can interactively look at the data using the [BigDataViewer](BigDataViewer) if you resaved it as HDF5. You can still do that now after the registration is complete.
 
 ### Tools
 
 Apart from this potential processing outline there are many **tools** available to help process multiview timelapse datasets.
 
--   **[Apply Transformations](MVR-ApplyTransformations )**
+-   **[Apply Transformations](MVR-ApplyTransformations)**
     -   This tool can be used to apply any kind of transformations to individual views, or all views at once. This allows the user to specify a know rotation of different acquisition angles around an axis or to simply re-orient the entire dataset after the registration is complete.
 
 <!-- -->
 
--   **[Duplicate Transformations](MVR-DuplicateTransformations )**
+-   **[Duplicate Transformations](MVR-DuplicateTransformations)**
     -   It can be used to apply transformations that have been computed (or defined) for a certain subset of views/timepoints to other views/timepoints. Typical scenarios where this is required are:
         -   Fluorescent beads are only visible in one channel, but the user wants to do apply the same transformation for all other channels
         -   The user registered one timepoint and wants to apply the same transformation for all other timepoints
 
 <!-- -->
 
--   **[Display View](MVR-DisplayView )**
+-   **[Display View](MVR-DisplayView)**
     -   It allows to simply load and display one of the views as defined in the dataset
 
 <!-- -->
 
--   **[Specify Calibration](MVR-SpecifyCalibration )**
+-   **[Specify Calibration](MVR-SpecifyCalibration)**
     -   This enables the user to change the calibration of individual or all views after having defined them. Note that all registrations need to be recomputed if it should reflect the new calibration.
 
 <!-- -->
 
--   **[Visualize Detections](MVR-VisualizeDetections )**
-    -   Detections as identified by [Detect Interest Points](MVR-InterestPointDetection ) can be visualized. It is possible to visualize all detections or only those that are found to be corresponding with other detections and were therefore used for registration. This helps to identify potential misalignments if corresponding detections are not equally distributed around the sample as they should be. One can also load the input view at the same time to overlay the detections with the image data
+-   **[Visualize Detections](MVR-VisualizeDetections)**
+    -   Detections as identified by [Detect Interest Points](MVR-InterestPointDetection) can be visualized. It is possible to visualize all detections or only those that are found to be corresponding with other detections and were therefore used for registration. This helps to identify potential misalignments if corresponding detections are not equally distributed around the sample as they should be. One can also load the input view at the same time to overlay the detections with the image data
 
 Video Tutorials & Scientific Talks
 ----------------------------------
@@ -161,6 +161,6 @@ Multi-view SPIM datasets are typically rather large, therefore it is recommended
 Cluster processing
 ------------------
 
-See the dedicated [page](Automated_workflow_for_parallel_Multiview_Reconstruction ) describing an automated workflow for processing SPIM data from Lighsheet.Z1 and OpenSPIM on the MPI-CBG cluster.
+See the dedicated [page](Automated_workflow_for_parallel_Multiview_Reconstruction) describing an automated workflow for processing SPIM data from Lighsheet.Z1 and OpenSPIM on the MPI-CBG cluster.
 
       

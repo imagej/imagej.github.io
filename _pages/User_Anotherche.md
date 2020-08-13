@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Stanislav Chizhik ' affiliation='Institute of Solid State Chemistry and Mechanochemistry SB RAS, Novosibirsk State University ' github='anotherche ' website=' ' %}Stanislav Chizhik is the author and maintainer of the [PhotoBend](PhotoBend ) collection of ImageJ plugins.
+{% include user-box name='Stanislav Chizhik' affiliation='Institute of Solid State Chemistry and Mechanochemistry SB RAS, Novosibirsk State University' github='anotherche' website='' %}Stanislav Chizhik is the author and maintainer of the [PhotoBend](PhotoBend) collection of ImageJ plugins.

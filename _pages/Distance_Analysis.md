@@ -95,9 +95,9 @@ choose a threshold value
 
 Filter objects by size and remove objects from image edges is possible
 
-\- Spot segmentation method : a tutorial for this method is found [here](Plugin_segmentation_3d_spots_segmentation_start )
+\- Spot segmentation method : a tutorial for this method is found [here](Plugin_segmentation_3d_spots_segmentation_start)
 
-\- Iterative segmentation method : a tutorial for this method is found [here](Plugin_segmentation_3d_spots_segmentation_start )
+\- Iterative segmentation method : a tutorial for this method is found [here](Plugin_segmentation_3d_spots_segmentation_start)
 
 \- Filter objects by size is possible
 
@@ -148,7 +148,7 @@ Installation
 
 Download and copy the following jar in your plugins folder [Diana\_1.48.jar](https://drive.google.com/open?id=1aODVyqRjmU53wEM52lfLM74Yn9GP9PBl)
 
-You have also to manually download and copy into your plugins directory the [3D ImageJ Suite](3D_ImageJ_Suite ).
+You have also to manually download and copy into your plugins directory the [3D ImageJ Suite](3D_ImageJ_Suite).
 
 ''Note that this version works only with 3D ImageJ library [mcib3d-core3.94.jar](https://drive.google.com/open?id=1a83KAeDEcCk0Lio3xXebd7Fxk83cTjy-) and upper!"
 

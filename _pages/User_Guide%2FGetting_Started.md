@@ -37,7 +37,7 @@ ImageJ is being developed on Mac OS X using its built in editor and Java compi
 Installing and Maintaining ImageJ
 ---------------------------------
 
-ImageJ can be downloaded from http://imagej.nih.gov/ij/download.html>. Details on how to install ImageJ on [↓](#index-Linux "wikilink")[Linux](http://imagej.nih.gov/ij/docs/install/linux.html), [Mac OS 9](http://imagej.nih.gov/ij/docs/install/mac.html), [↓](#index-Mac-OS-X "wikilink")[Mac OS X](http://imagej.nih.gov/ij/docs/install/osx.html) and [↓](#index-Windows-(OS) "wikilink")[Windows](http://imagej.nih.gov/ij/docs/install/windows.html) <span class="bibcites">[1]([#biblio-1 )\]</span> are available at <http://imagej.nih.gov/ij/docs/install/> (<span class="sans"><span class="menuitem"><span class="sans">Help ▷ [Installation…↓](#sub:Installation... "wikilink")</span></span></span> command). Specially useful are the platform-specific *Troubleshooting* and *Known Problems* sections. [↓](#index-Fiji "wikilink")[Fiji↓](#sub:Fiji-intro "wikilink") installation is described at <https://fiji.sc/wiki/index.php/Downloads.
+ImageJ can be downloaded from http://imagej.nih.gov/ij/download.html>. Details on how to install ImageJ on [↓](#index-Linux "wikilink")[Linux](http://imagej.nih.gov/ij/docs/install/linux.html), [Mac OS 9](http://imagej.nih.gov/ij/docs/install/mac.html), [↓](#index-Mac-OS-X "wikilink")[Mac OS X](http://imagej.nih.gov/ij/docs/install/osx.html) and [↓](#index-Windows-(OS) "wikilink")[Windows](http://imagej.nih.gov/ij/docs/install/windows.html) <span class="bibcites">[1]([#biblio-1)\]</span> are available at <http://imagej.nih.gov/ij/docs/install/> (<span class="sans"><span class="menuitem"><span class="sans">Help ▷ [Installation…↓](#sub:Installation... "wikilink")</span></span></span> command). Specially useful are the platform-specific *Troubleshooting* and *Known Problems* sections. [↓](#index-Fiji "wikilink")[Fiji↓](#sub:Fiji-intro "wikilink") installation is described at <https://fiji.sc/wiki/index.php/Downloads.
 
 The downloaded package may not contain the latest bug fixes so it is recommended to upgrade ImageJ right after a first installation. [↓Updating](#index-Updates "wikilink") IJ[↓](#nom-ij "wikilink") consists only of running <span class="sans"><span class="menuitem"><span class="sans">Help ▷ [Update ImageJ…↓](#sub:Update-ImageJ... "wikilink")</span></span></span>, which will install the latest <span class="Filename">[ij.jar](http://imagej.nih.gov/ij/upgrade/)</span> in the ImageJ folder (on Linux and Windows) or inside the ImageJ.app (on Mac OS X).
 
@@ -51,7 +51,7 @@ The downloaded package may not contain the latest bug fixes so it is recommended
 
 ### ImageJDistributions
 
-ImageJ alone is not that powerful: it’s real strength is the vast repertoire of [Plugins↓](#sub:Plugins "wikilink") that extend ImageJ’s functionality beyond its basic core. The many hundreds, probably thousands, freely available plugins from contributors around the world play a pivotal role in ImageJ’s success <span class="bibcites">[<span class="bib-index">112</span>]([#biblio-162 )\]</span>. Running <span class="sans"><span class="menuitem"><span class="sans">Help ▷ [Update ImageJ…↓](#sub:Update-ImageJ... "wikilink")</span></span></span>, however, will not update any of the plugins you may have installed<span class="FootOuter"><span class="SupFootMarker"> \[B\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[B\] </span>Certain plugins, however, provide self-updating mechanisms (e.g., [ObjectJ](http://simon.bio.uva.nl/objectj/) and the [↓](#index-Bio-Formats "wikilink")[OME Bio-Formats](http://loci.wisc.edu/software/bio-formats)).</span></span>.
+ImageJ alone is not that powerful: it’s real strength is the vast repertoire of [Plugins↓](#sub:Plugins "wikilink") that extend ImageJ’s functionality beyond its basic core. The many hundreds, probably thousands, freely available plugins from contributors around the world play a pivotal role in ImageJ’s success <span class="bibcites">[<span class="bib-index">112</span>]([#biblio-162)\]</span>. Running <span class="sans"><span class="menuitem"><span class="sans">Help ▷ [Update ImageJ…↓](#sub:Update-ImageJ... "wikilink")</span></span></span>, however, will not update any of the plugins you may have installed<span class="FootOuter"><span class="SupFootMarker"> \[B\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[B\] </span>Certain plugins, however, provide self-updating mechanisms (e.g., [ObjectJ](http://simon.bio.uva.nl/objectj/) and the [↓](#index-Bio-Formats "wikilink")[OME Bio-Formats](http://loci.wisc.edu/software/bio-formats)).</span></span>.
 
 ImageJ add-ons ([Plugins↓](#sub:Plugins "wikilink"), [Scripts↓](#sub:Scripts "wikilink") and [Macros↓](#sub:Macros-ExtendingIJ "wikilink")) are available from several sources ([ImageJ's plugins page](http://imagej.nih.gov/ij/plugins/) \[<span class="sans"><span class="menuitem"><span class="sans">Help ▷ [Plugins…↓](#sub:Plugins... "wikilink")</span></span></span>\], [ImageJ Information and Documentation Portal](http://imagejdocu.tudor.lu/doku.php?id=plugin:start) and [Fiji's webpage](https://fiji.sc/wiki/index.php/Category:Plugins), among others) making manual updates of a daunting task. This reason alone, makes it extremely convenient the use of [ImageJDistributions↑](#sec:ImageJ-Distributions "wikilink") bundled with a pre-organized collection of add-ons.
 
@@ -109,7 +109,7 @@ Description of all ImageJ related projects at [ImageDev](http://imagejdev.org/fa
 </div>
 <div class="Description">
 
-<span class="Description-entry">**[TrakEM]( )2**</span> [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html) is a program for morphological [↓data](#index-Data-mining "wikilink") mining, three-dimensional [↓modeling](#index-Modeling "wikilink") and image stitching, registration, editing and annotation <span class="bibcites">[<span class="bib-index">7</span>]([#biblio-57 )\]</span>. [↓](#index-TrakEM2 "wikilink")[↓TrakEM](#index-Fiji "wikilink")2 is [distributed with Fiji](https://fiji.sc/wiki/index.php/TrakEM2) and [capable of](http://www.ini.uzh.ch/~acardona/trakem2_manual.html):
+<span class="Description-entry">**[TrakEM]( )2**</span> [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html) is a program for morphological [↓data](#index-Data-mining "wikilink") mining, three-dimensional [↓modeling](#index-Modeling "wikilink") and image stitching, registration, editing and annotation <span class="bibcites">[<span class="bib-index">7</span>]([#biblio-57)\]</span>. [↓](#index-TrakEM2 "wikilink")[↓TrakEM](#index-Fiji "wikilink")2 is [distributed with Fiji](https://fiji.sc/wiki/index.php/TrakEM2) and [capable of](http://www.ini.uzh.ch/~acardona/trakem2_manual.html):
 
 <div class="vspace" style="height: -8pt;">
 </div>
@@ -143,7 +143,7 @@ Several packages exist that allow ImageJ to [↓interact](#index-Interoperabilit
 </div>
 <div class="Description">
 
-<span class="Description-entry">CellProfiler</span> [↓](#index-CellProfiler "wikilink")[CellProfiler](http://www.cellprofiler.org/) <span class="bibcites">[<span class="bib-index">11</span>]([#biblio-61 )\]</span> features [RunImageJ](http://cellprofiler.org/CPmanual/RunImageJ.html), a module that allows ImageJ plugins to be run in a CellProfiler pipeline.
+<span class="Description-entry">CellProfiler</span> [↓](#index-CellProfiler "wikilink")[CellProfiler](http://www.cellprofiler.org/) <span class="bibcites">[<span class="bib-index">11</span>]([#biblio-61)\]</span> features [RunImageJ](http://cellprofiler.org/CPmanual/RunImageJ.html), a module that allows ImageJ plugins to be run in a CellProfiler pipeline.
 
 </div>
 <div class="Description">
@@ -216,7 +216,7 @@ Simple and clear, this [Fiji↑](#sub:Fiji-intro "wikilink") webpage explains ba
 
 -   [imagingbook.com](http://www.imagingbook.com)  
 
-Web site of *Digital Image Processing: An Algorithmic Introduction using Java* by Wilhelm Burger and Mark Burge <span class="bibcites">[<span class="bib-index">114</span>]([#biblio-164 )\]</span>. This technical book provides a modern, self-contained, introduction to digital image processing techniques. Numerous complete Java implementations are provided, all of which work within ImageJ.
+Web site of *Digital Image Processing: An Algorithmic Introduction using Java* by Wilhelm Burger and Mark Burge <span class="bibcites">[<span class="bib-index">114</span>]([#biblio-164)\]</span>. This technical book provides a modern, self-contained, introduction to digital image processing techniques. Numerous complete Java implementations are provided, all of which work within ImageJ.
 
 -   [Hypermedia Image Processing Reference (HIPR2)](http://homepages.inf.ed.ac.uk/rbf/HIPR2/)  
 

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Anomalous Diffusion Filters](Anomalous_Diffusion_Filters )
+1.  REDIRECT [Anomalous Diffusion Filters](Anomalous_Diffusion_Filters)

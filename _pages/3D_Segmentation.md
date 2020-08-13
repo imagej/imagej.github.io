@@ -10,7 +10,7 @@ description: test description
 3D Segmentation
 ---------------
 
-This plugin implements various algorithms to segment 3D images, as part of the [3D ImageJ Suite](3D_ImageJ_Suite ).
+This plugin implements various algorithms to segment 3D images, as part of the [3D ImageJ Suite](3D_ImageJ_Suite).
 
 Author
 ------
@@ -57,16 +57,16 @@ Testing all thresholds may lead to **objects being divided into smaller objects*
 
 Dividing objects with thresholds, top left raw image with high brightness, top right raw image with adjusted contrast to distinguish the dividing nuclei, bottom left first channel of Iterative thresholding showing brighter and smaller objects, bottom right second channel of Iterative thresholding showing merged nuclei for lower threshold.
 
-If you find this plugin useful for your work, please cite this paper and refer to [3D ImageJ Suite](3D_ImageJ_Suite ) and this article : [A generic classification-based method for segmentation of nuclei in 3D images of early embryos](http://www.biomedcentral.com/1471-2105/15/9)
+If you find this plugin useful for your work, please cite this paper and refer to [3D ImageJ Suite](3D_ImageJ_Suite) and this article : [A generic classification-based method for segmentation of nuclei in 3D images of early embryos](http://www.biomedcentral.com/1471-2105/15/9)
 
 3D Spot Segmentation
 --------------------
 
-The plugin works with two images, one containing the **seeds** of the objects, that can be obtained from local maxima (see [3D Filters](3D_Filters )), the other image containing signal data. The program computes a **local threshold** around each seeds and cluster voxels with values higher than the local threshold computed. Spots-like objects can be enhanced using a topHat (see [3D Filters](3D_Filters )) or a [Edge and symmetry filter](Edge_and_symmetry_filter ). A plugin [3D maxima Finder](https://imagejdocu.list.lu/tutorial/plugins/3d_maxima_finder) is also available to compute these local maxima, similarly to the find maxima in ImageJ/Fiji.
+The plugin works with two images, one containing the **seeds** of the objects, that can be obtained from local maxima (see [3D Filters](3D_Filters)), the other image containing signal data. The program computes a **local threshold** around each seeds and cluster voxels with values higher than the local threshold computed. Spots-like objects can be enhanced using a topHat (see [3D Filters](3D_Filters)) or a [Edge and symmetry filter](Edge_and_symmetry_filter). A plugin [3D maxima Finder](https://imagejdocu.list.lu/tutorial/plugins/3d_maxima_finder) is also available to compute these local maxima, similarly to the find maxima in ImageJ/Fiji.
 
 Three methods are available for computing the value of the local threshold and 3 methods for clustering are also proposed. The option **watershed** can be chosen to avoid merging of close spots.
 
-A tutorial is also available : [Media:3d seg spot tutorial.pdf](Media_3d_seg_spot_tutorial.pdf )
+A tutorial is also available : [Media:3d seg spot tutorial.pdf](Media_3d_seg_spot_tutorial.pdf)
 
 ![](/images/pages/Heck-orig.png "fig:Heck-orig.png") ![](/images/pages/Heck-watershed.png "fig:Heck-watershed.png")![](/images/pages/Heck-seg.png "fig:Heck-seg.png")
 
@@ -75,14 +75,14 @@ Left, slice of a 3D raw image with crowded objects with different intensities. M
 3D Watershed
 ------------
 
-The plugin works with two images, one containing the **seeds** of the objects, that can be obtained from local maxima (see [3D Filters](3D_Filters )), the other image containing signal data. A first *threshold1* is used for seeds (only seeds with *value &gt; threshold1* will be used). A second threshold is used to cluster voxels with *values &gt; threshold2* In this implementation voxels are clustered to the seeds in descending order of voxel values. An alternative implementation is available in [Fiji classic watershed](http://fiji.sc/Classic_Watershed).
+The plugin works with two images, one containing the **seeds** of the objects, that can be obtained from local maxima (see [3D Filters](3D_Filters)), the other image containing signal data. A first *threshold1* is used for seeds (only seeds with *value &gt; threshold1* will be used). A second threshold is used to cluster voxels with *values &gt; threshold2* In this implementation voxels are clustered to the seeds in descending order of voxel values. An alternative implementation is available in [Fiji classic watershed](http://fiji.sc/Classic_Watershed).
 
 Two plugins **3D splitting** and **3D Voronoi** are also available, more details in this brief [tutorial](https://imagejdocu.list.lu/tutorial/general/watershed_3d).
 
 Download
 --------
 
-For details go to the [3D ImageJ Suite](3D_ImageJ_Suite ).
+For details go to the [3D ImageJ Suite](3D_ImageJ_Suite).
 
 Citation
 --------

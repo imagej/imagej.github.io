@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Developing ImageJ on the command line](Developing_ImageJ_on_the_command_line )
+1.  REDIRECT [Developing ImageJ on the command line](Developing_ImageJ_on_the_command_line)

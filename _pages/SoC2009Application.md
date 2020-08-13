@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [SoC 2009 Application](SoC_2009_Application )
+1.  REDIRECT [SoC 2009 Application](SoC_2009_Application)

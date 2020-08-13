@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Architecture\#Extensibility](Architecture#Extensibility )
+1.  REDIRECT [Architecture\#Extensibility](Architecture#Extensibility)

@@ -7,12 +7,12 @@ categories:
 description: test description
 ---
 
-{% include conference title='ImageJ 2015 User & Developer Conference ' section='5th ImageJ User & Developer Conference ' dates='3 - 4 September 2015 ' image='Imagej-conference-2015.jpg ' location=' [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/) in Madison, Wisconsin, USA ' %}
+{% include conference title='ImageJ 2015 User & Developer Conference' section='5th ImageJ User & Developer Conference' dates='3 - 4 September 2015' image='Imagej-conference-2015.jpg' location=' [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/) in Madison, Wisconsin, USA' %}
 
 Information
 ===========
 
-The 2015 [ImageJ User and Developer Conference](Conference ) complemented the EU meetings in Luxembourg and offered workshops to improve software knowledge and usage covering both beginner/user and advanced/developer topics. The conference provided a community forum for ImageJ development over the past three years and also featured shorter presentations highlighting case studies, plugins, and solutions to common problems.
+The 2015 [ImageJ User and Developer Conference](Conference) complemented the EU meetings in Luxembourg and offered workshops to improve software knowledge and usage covering both beginner/user and advanced/developer topics. The conference provided a community forum for ImageJ development over the past three years and also featured shorter presentations highlighting case studies, plugins, and solutions to common problems.
 
 Location
 --------
@@ -43,7 +43,7 @@ The focus of this conference was on community, so *tools being presented were ma
 Registration
 ------------
 
-Due to generous support from the University of Wisconsin-Madison and [LOCI](LOCI ), there was no registration fee for this conference.
+Due to generous support from the University of Wisconsin-Madison and [LOCI](LOCI), there was no registration fee for this conference.
 
 Visiting Madison
 ----------------
@@ -94,7 +94,7 @@ Program
 TODO GOOGLE SPREADSHEET WIDGET {% include clear%}
 
 
-For full details including abstracts and presentation recordings, see the [Conference 2015 Program](Conference_2015_Program ) page.
+For full details including abstracts and presentation recordings, see the [Conference 2015 Program](Conference_2015_Program) page.
 
 Organization
 ============
@@ -102,10 +102,10 @@ Organization
 Organizers
 ----------
 
--   {% include person content='Eliceiri' %}, [Laboratory for Optical and Computational Instrumentation](LOCI ) (LOCI) at [UW-Madison](http://wisc.edu/)
--   Kristy Wendt, [Laboratory for Optical and Computational Instrumentation](LOCI ) (LOCI) at [UW-Madison](http://wisc.edu/)
--   {% include person content='Rueden' %}, [Laboratory for Optical and Computational Instrumentation](LOCI ) (LOCI) at [UW-Madison](http://wisc.edu/)
--   {% include person content='Hinerm' %}, [Laboratory for Optical and Computational Instrumentation](LOCI ) (LOCI) at [UW-Madison](http://wisc.edu/)
+-   {% include person content='Eliceiri' %}, [Laboratory for Optical and Computational Instrumentation](LOCI) (LOCI) at [UW-Madison](http://wisc.edu/)
+-   Kristy Wendt, [Laboratory for Optical and Computational Instrumentation](LOCI) (LOCI) at [UW-Madison](http://wisc.edu/)
+-   {% include person content='Rueden' %}, [Laboratory for Optical and Computational Instrumentation](LOCI) (LOCI) at [UW-Madison](http://wisc.edu/)
+-   {% include person content='Hinerm' %}, [Laboratory for Optical and Computational Instrumentation](LOCI) (LOCI) at [UW-Madison](http://wisc.edu/)
 -   Andreas Jahnen, [Luxembourg Institute of Science and Technology](http://www.list.lu/)
 
 Advisory committee

@@ -9,11 +9,11 @@ description: test description
 
 {% include component-stats content='sc.fiji:Colocalisation\_Analysis' %}= What is Coloc 2 =
 
-Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs the pixel intensity correlation over space methods of {% include wikipedia title='Pearson product-moment correlation coefficient' text='Pearson'%}, [Manders](Media_Manders.pdf ), [Costes](Media_Costes_etalColoc.pdf ), [Li](Media_LietAlColoc.pdf ) and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
+Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs the pixel intensity correlation over space methods of {% include wikipedia title='Pearson product-moment correlation coefficient' text='Pearson'%}, [Manders](Media_Manders.pdf), [Costes](Media_Costes_etalColoc.pdf), [Li](Media_LietAlColoc.pdf) and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 
 Coloc 2 does NOT perform object based colocalization measurements, where objects are first segmented from the image, then their spatial relationships like overlap etc. are measured. This complementary approach is implemented in many ways elsewhere.
 
-<span style="color:red">There are many nuances and pitfalls to colocalization analysis. As such, we strongly recommend you read the [Colocalization Analysis](Colocalization_Analysis ) section of the [Cookbook](Cookbook ) before attempting to use Coloc 2!</span>
+<span style="color:red">There are many nuances and pitfalls to colocalization analysis. As such, we strongly recommend you read the [Colocalization Analysis](Colocalization_Analysis) section of the [Cookbook](Cookbook) before attempting to use Coloc 2!</span>
 
 How to use Coloc 2
 ==================
@@ -21,9 +21,9 @@ How to use Coloc 2
 1.  Read the original papers describing the analysis you are about to perform.
     1.  Don't treat this tool as a black box - try to understand what the strengths and limitations are and what the results could mean.
         1.  {% include wikipedia title='Pearson product-moment correlation coefficient' text='Pearson\'s correlation, r'%}
-        2.  [Manders paper](Media_Manders.pdf )
-        3.  [Costes paper](Media_Costes_etalColoc.pdf )
-        4.  [Li paper](Media_LietAlColoc.pdf )
+        2.  [Manders paper](Media_Manders.pdf)
+        3.  [Costes paper](Media_Costes_etalColoc.pdf)
+        4.  [Li paper](Media_LietAlColoc.pdf)
 2.  Open images to analyze.
     1.  You need a 2 color channel image. If the image has more than 2 channels, identify the two you want to analyze with each other, then split the channels into separate images (Image- Color - Split Channels)
     2.  Z stacks work fine. But time series will fail until that is fixed. For now, please split the time series into a numbered set of images and analyse those one by one. See https://github.com/fiji/Colocalisation_Analysis/issues/6
@@ -44,7 +44,7 @@ How to use Coloc 2
     2.  Turn the options on/off by clicking the selection button at the left of the Algorithm description
     3.  Also choose the approximate size of the point spread function (PSF) in your images, as well as the number of iterations to run the Costes statistical significance test (We suggest a large number... the larger the number, the longer the analysis will take. Do, at the very very least, 10 iterations (100 would be better).)
         1.  You should know approximately how big the PSF is (in pixels) in your images.
-        2.  If you don't, go back and read about: What is the PSF? Why is it important in colocalization analysis? (for instance: read the [Costes paper](Media_Costes_etalColoc.pdf ) )
+        2.  If you don't, go back and read about: What is the PSF? Why is it important in colocalization analysis? (for instance: read the [Costes paper](Media_Costes_etalColoc.pdf) )
         3.  This size determines what size of image 'chunks' are shuffled in the randomization process. (PSF-sized image pieces make physical sense, as that's the size of the smallest features visible in the image.)
 7.  Click OK to run the analysis.
 8.  The results gui will open showing a table of numbers and one of several images
@@ -61,7 +61,7 @@ Pitfalls of the Manders and Costes methods
 The auto threshold calculation method can fail if fed inappropriate information
 -------------------------------------------------------------------------------
 
-That means it does not like images with high zero offset, where no light detected still gives a large non zero pixel value. For instance, from a digital camera's zero offset/bias, or a confocal PMT's offset when incorrectly set. Also, a high, flat non specific background causes the same problem. These all add a constant number to the intensity values of each pixel, offsetting and obscuring the true proportionality relationship with the "concentration" of the fluorescent dye detected at each pixel. If pixels that contain no real (specific) signal have large intensity values, the algorithm, not knowing about the non zero intensity offset in all pixels, assumes the offset is real signal to be dealt with, and can reach a result for the thresholds where one or both of them is below the value of the lowest intensity value present in that colour channel of the image. This means that ALL of that channel's pixels are considered to be colocalised, then the Manders' Coefficients that you get will reflect that aberrant, unrealistic situation. In these cases, the background and/or offset should be carefully removed/subtracted before running the Coloc 2 or [Colocalization Threshold](Colocalization_Threshold ) plugin. The images below are an example of this situation, using the badly behaved data set: [150707\_WTstack.lsm](https://fiji.sc/samples/150707_WTstack.lsm). Note that the values for M1 and tM1 are the same! This should not be the case. You can see the green channel threshold is wrongly set below the intensity where the image data intensities actually start.
+That means it does not like images with high zero offset, where no light detected still gives a large non zero pixel value. For instance, from a digital camera's zero offset/bias, or a confocal PMT's offset when incorrectly set. Also, a high, flat non specific background causes the same problem. These all add a constant number to the intensity values of each pixel, offsetting and obscuring the true proportionality relationship with the "concentration" of the fluorescent dye detected at each pixel. If pixels that contain no real (specific) signal have large intensity values, the algorithm, not knowing about the non zero intensity offset in all pixels, assumes the offset is real signal to be dealt with, and can reach a result for the thresholds where one or both of them is below the value of the lowest intensity value present in that colour channel of the image. This means that ALL of that channel's pixels are considered to be colocalised, then the Manders' Coefficients that you get will reflect that aberrant, unrealistic situation. In these cases, the background and/or offset should be carefully removed/subtracted before running the Coloc 2 or [Colocalization Threshold](Colocalization_Threshold) plugin. The images below are an example of this situation, using the badly behaved data set: [150707\_WTstack.lsm](https://fiji.sc/samples/150707_WTstack.lsm). Note that the values for M1 and tM1 are the same! This should not be the case. You can see the green channel threshold is wrongly set below the intensity where the image data intensities actually start.
 
 Notice: the image contains large areas of background, with similar low values of pixel intensities in both channels. This means there is strong correlation in the background areas, which interferes with the interesting biological correlation in the high signal areas where the biology is located. This means it is important to set a biologically relevant region of interest (ROI) and not analyse the whole image. We must avoid analyzing the highly correlated, but uninteresting, background areas. See the section below...
 
@@ -91,7 +91,7 @@ Whether or not to consider zero - zero pixels as part of the interesting data fo
 Other pitfalls
 --------------
 
-Please see the [Colocalization Analysis](Colocalization_Analysis ) page for further discussion of precautions.
+Please see the [Colocalization Analysis](Colocalization_Analysis) page for further discussion of precautions.
 
 Release Notes, Newly Added Features and Squashed Bugs
 -----------------------------------------------------

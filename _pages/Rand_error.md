@@ -21,14 +21,14 @@ Given two segmentations $$S_1$$ and $$S_2$$ of an image $$I$$ with $$n$$ pixels,
 
 The Rand index, $$RI$$, is: $$ RI = \frac{a+b}{n \choose 2 }$$
 
-Here we instead define the closely related [Rand error](Rand_error ), which is a measure of disagreement. The [Rand error](Rand_error ) (RE) is the **frequency with which the two segmentations disagree over whether a pair of pixels belongs to same or different objects**:
+Here we instead define the closely related [Rand error](Rand_error), which is a measure of disagreement. The [Rand error](Rand_error) (RE) is the **frequency with which the two segmentations disagree over whether a pair of pixels belongs to same or different objects**:
 
 $$ RE = 1 - RI$$
 
 Implementation in Fiji
 ----------------------
 
-The [Rand error](Rand_error ) metric is implemented in the [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) library. Here is an example of how to use it in a [Beanshell script](Beanshell_Scripting ):
+The [Rand error](Rand_error) metric is implemented in the [Trainable Weka Segmentation](Trainable_Weka_Segmentation) library. Here is an example of how to use it in a [Beanshell script](Beanshell_Scripting):
 
     import trainableSegmentation.metrics.RandError;
     import ij.IJ;
@@ -51,7 +51,7 @@ The [Rand error](Rand_error ) metric is implemented in the [Trainable Weka Segme
 See also
 --------
 
--   [Topology preserving warping error](Topology_preserving_warping_error ).
+-   [Topology preserving warping error](Topology_preserving_warping_error).
 
 References
 ----------
@@ -60,6 +60,6 @@ References
 
 
 
-[1] {% include cite content='journal' author='William M. Rand ' title='Objective criteria for the evaluation of clustering methods ' journal='Journal of the American Statistical Association ' year='1971 ' volume='66 ' pages='846–850 ' number='36 ' doi='10.2307/2284239 ' %}
+[1] {% include cite content='journal' author='William M. Rand' title='Objective criteria for the evaluation of clustering methods' journal='Journal of the American Statistical Association' year='1971' volume='66' pages='846–850' number='36' doi='10.2307/2284239' %}
 
-[2] {% include cite content='journal' author='R. Unnikrishnan, C. Pantofaru, and M. Hebert ' title='Toward objective evaluation of image segmentation algorithms ' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence ' year='2007 ' volume='29 ' pages='929-944 ' issue='6 ' doi='10.1109/TPAMI.2007.1046 ' %}
+[2] {% include cite content='journal' author='R. Unnikrishnan, C. Pantofaru, and M. Hebert' title='Toward objective evaluation of image segmentation algorithms' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence' year='2007' volume='29' pages='929-944' issue='6' doi='10.1109/TPAMI.2007.1046' %}

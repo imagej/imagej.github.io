@@ -12,7 +12,7 @@ Welcome!
 
 Fiji applied to the Google Summer of Code 2010 program, but was not accepted.
 
-This page contains project ideas culled from the Fiji user and developer community. You can get started by reading some project descriptions, and the mailing list thread(s) that spawned them. Also consider joining the developer mailing list, or finding us on IRC. Details can be found in [Help](Help ).
+This page contains project ideas culled from the Fiji user and developer community. You can get started by reading some project descriptions, and the mailing list thread(s) that spawned them. Also consider joining the developer mailing list, or finding us on IRC. Details can be found in [Help](Help).
 
 If none of the listed projects suit you, but you have your own project idea instead, just throw your ideas at us, on the developer mailing list! (Of course, it should be related to Fiji...)
 
@@ -33,7 +33,7 @@ If your proposal is accepted by the Fiji Development Community you will be expec
 
 If your original proposal doesn't pan out or becomes too much of a challenge, you should work with your mentor to help redefine it. We really want to see every project succeed this summer, as there is a great deal of interest in these projects from within the user community.
 
-Students can apply for the program at the [Google Summer of Code website](http://code.google.com/soc/). Please consider reviewing our [SoC 2010 Template](SoC_2010_Template ) and answering its questions as part of your application.
+Students can apply for the program at the [Google Summer of Code website](http://code.google.com/soc/). Please consider reviewing our [SoC 2010 Template](SoC_2010_Template) and answering its questions as part of your application.
 
 Project ideas
 =============
@@ -45,7 +45,7 @@ The term *image segmentation* describes the task where objects in an image are t
 
 Segmentation is traditionally a very difficult problem, especially in the presence of variable lighting, noise, or low contrast.
 
-Many segmentation algorithms have been implemented in Fiji to perform image segmentation, such as [Auto Threshold](Auto_Threshold ) and [Auto Local Threshold](Auto_Local_Threshold ), but in practice, none of them might work, as they were designed with specific images in mind, and these expectations might not be met by your images.
+Many segmentation algorithms have been implemented in Fiji to perform image segmentation, such as [Auto Threshold](Auto_Threshold) and [Auto Local Threshold](Auto_Local_Threshold), but in practice, none of them might work, as they were designed with specific images in mind, and these expectations might not be met by your images.
 
 Recently, a new class of segmentation algorithms has been emerging: segmentation by example. These algorithms require a set of examples from which a model is calculated which can be applied to other -- similar-looking -- images.
 
@@ -65,9 +65,9 @@ You are welcome to use any scientifically-relevant dataset of your choice, but w
 Add JMathLib (MATLAB clone) support
 -----------------------------------
 
-Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB ) scripts. While it is [wrong to think of pixels as little squares](Ftp_//ftp.alvyray.com/Acrobat/6_Pixel.pdf), and literally all [MATLAB](MATLAB ) scripts to perform image processing are suffering from that shortcoming, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB ) licenses just for that purpose.
+Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB) scripts. While it is [wrong to think of pixels as little squares](Ftp_//ftp.alvyray.com/Acrobat/6_Pixel.pdf), and literally all [MATLAB](MATLAB) scripts to perform image processing are suffering from that shortcoming, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB) licenses just for that purpose.
 
-Happily, there is a [MATLAB](MATLAB ) clone written in Java: [JMathLib](http://www.jmathlib.de/). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](MATLAB ) scripts can be executed just like all other ImageJ scripts, too.
+Happily, there is a [MATLAB](MATLAB) clone written in Java: [JMathLib](http://www.jmathlib.de/). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](MATLAB) scripts can be executed just like all other ImageJ scripts, too.
 
 The project would consist of
 
@@ -75,7 +75,7 @@ The project would consist of
 
 <!-- -->
 
--   integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at {% include github repo='fiji ' path='src-plugins/JRuby\_Interpreter/src/main/java/JRuby/JRuby\_Interpreter.java ' label='the JRuby Interpreter ' %} for an example,
+-   integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at {% include github repo='fiji' path='src-plugins/JRuby\_Interpreter/src/main/java/JRuby/JRuby\_Interpreter.java' label='the JRuby Interpreter' %} for an example,
 
 <!-- -->
 
@@ -106,7 +106,7 @@ The project is not without complications, though:
 
 <!-- -->
 
--   With a new site, you need to be able to [upload plugins](Uploading_plugins ) to that site, too. There needs to be a very good way to prevent confusion, lest the plugin is uploaded to the <u>wrong</u> site.
+-   With a new site, you need to be able to [upload plugins](Uploading_plugins) to that site, too. There needs to be a very good way to prevent confusion, lest the plugin is uploaded to the <u>wrong</u> site.
 
 <!-- -->
 
@@ -217,7 +217,7 @@ This approach has been successfully used to classify embryo images yet a usable 
 <b>Pre-requisites:</b>
 
 -   Large scale database of annotated RNA in situ images of gene expression patterns consisting of about 90,000 image representing 6000 genes.
--   Feature extraction approaches implemented [in Fiji](Feature_Extraction )
+-   Feature extraction approaches implemented [in Fiji](Feature_Extraction)
 -   Machine learning implemented in Fiji ([Weka](http://www.cs.waikato.ac.nz/ml/weka/))
 -   [Paper](http://bioinformatics.oxfordjournals.org/cgi/content/full/24/17/1881) describing the principles of unsupervised machine learning approach on this dataset using combination of number of invariant features
 -   Biologically motivated candidate with significant programming skills
@@ -329,13 +329,13 @@ This project is about implementing a trainer for such tests, whose result is a m
 Other Resources
 ===============
 
--   [SoC 2010 Application](SoC_2010_Application )
+-   [SoC 2010 Application](SoC_2010_Application)
 
 Other links
 ===========
 
 -   [Fiji's developer mailing list](http://groups.google.com/group/fiji-devel)
 -   [Weka project](http://www.cs.waikato.ac.nz/ml/weka/)
--   [\#fiji-devel channel](IRC ) on irc.freenode.net
--   Other [Project ideas](Project_ideas )
--   [more links](Links )
+-   [\#fiji-devel channel](IRC) on irc.freenode.net
+-   Other [Project ideas](Project_ideas)
+-   [more links](Links)

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Introduction into Developing Plugins](Introduction_into_Developing_Plugins )
+1.  REDIRECT [Introduction into Developing Plugins](Introduction_into_Developing_Plugins)

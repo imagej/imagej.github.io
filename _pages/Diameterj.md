@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [DiameterJ](DiameterJ )
+1.  REDIRECT [DiameterJ](DiameterJ)

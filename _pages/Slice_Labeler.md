@@ -7,7 +7,7 @@ categories: Plugins,Image annotation
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Slice Labeler ' author='Pedro Ramos-Cabrer ' filename=' [Slice\_Labeler.class](https://imagej.net/plugins/download/Slice_Labeler.class) ' source=' [Slice\_Labeler.java](https://imagej.net/plugins/download/Slice_Labeler.java) ' released='13 May 2004 ' latest-version=' ' status='stable ' category='[Image annotation](Category_Image_annotation ) ' website=' [Slice Labeler](https://imagej.net/plugins/slice-labeler.html) ' %} This plugin is superceeded by the [Series Labeler](Series_Labeler )
+{% include info-box software='ImageJ' name='Slice Labeler' author='Pedro Ramos-Cabrer' filename=' [Slice\_Labeler.class](https://imagej.net/plugins/download/Slice_Labeler.class)' source=' [Slice\_Labeler.java](https://imagej.net/plugins/download/Slice_Labeler.java)' released='13 May 2004' latest-version='' status='stable' category='[Image annotation](Category_Image_annotation)' website=' [Slice Labeler](https://imagej.net/plugins/slice-labeler.html)' %} This plugin is superceeded by the [Series Labeler](Series_Labeler)
 
 *Copy from the website:*
 

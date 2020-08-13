@@ -7,7 +7,7 @@ categories: Plugins,Transform
 description: test description
 ---
 
-{% include info-box name='Interactive Similarity ' software='Fiji ' author='Stephan Saalfeld ' maintainer='Stephan Saalfeld ' source=' [in gitweb](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Transform_Similarity.java) ' released='November 22<sup>th</sup>, 2008 ' latest-version='December 15<sup>th</sup>, 2008 ' status='stable ' category='[Transform](Category_Transform ), [Plugins](Category_Plugins ) ' %}
+{% include info-box name='Interactive Similarity' software='Fiji' author='Stephan Saalfeld' maintainer='Stephan Saalfeld' source=' [in gitweb](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Transform_Similarity.java)' released='November 22<sup>th</sup>, 2008' latest-version='December 15<sup>th</sup>, 2008' status='stable' category='[Transform](Category_Transform), [Plugins](Category_Plugins)' %}
 
 This plugin allows to apply a **similarity transformation** (rotation, translation and isotropic scaling) to a 2D image in an interactive way.
 

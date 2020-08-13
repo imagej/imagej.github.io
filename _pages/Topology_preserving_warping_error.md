@@ -7,7 +7,7 @@ categories: Segmentation
 description: test description
 ---
 
-{% include thumbnail src='/images/pages/Warping-error-comparison.png' title='Application of the topology-preserving warping error. Example A and B have almost the same amount of pixel error with respect to the ground truth, however, example B has no topological error.'%} The **warping error** is a [segmentation](Category_Segmentation ) metric that tolerates disagreements over boundary location, penalizes topological disagreements, and can be used directly as a cost function for learning boundary detection[1].
+{% include thumbnail src='/images/pages/Warping-error-comparison.png' title='Application of the topology-preserving warping error. Example A and B have almost the same amount of pixel error with respect to the ground truth, however, example B has no topological error.'%} The **warping error** is a [segmentation](Category_Segmentation) metric that tolerates disagreements over boundary location, penalizes topological disagreements, and can be used directly as a cost function for learning boundary detection[1].
 
 In other words, instead of focusing on the geometric differences (pixel disagreement) between two segmentations, the **warping error** focuses on the objects and measures the topological error between them.
 
@@ -95,14 +95,14 @@ Since $$\parallel T-L \parallel ^2$$ is decreasing, the algorithm is guaranteed 
 
 At first glance, it may seem that the **warping error** measures only boundary detection performance. But it is also a good measure of segmentation performance. This is because digital topology tells us how any single pixel affects the global topology of an image. The **warping error** is an upper bound on the number of topologically-relevant boundary labeling errors in *T* (if a geometric mask is used, then the **warping error** also includes labeling errors of a geometric nature). Therefore, if segmentations are generated from *T* and *L*<sup>\*</sup> by finding their connected components, then the **warping error** should be a reasonable measure of the topological disagreements between the segmentations.
 
-The [Rand error](Rand_error ) can be used to compare segmentations in which regions are noncontiguous clusters of pixels. Such segmentations are not equivalent to boundary labelings, so the **warping error** cannot be applied. In many applications, this is not a significant limitation.
+The [Rand error](Rand_error) can be used to compare segmentations in which regions are noncontiguous clusters of pixels. Such segmentations are not equivalent to boundary labelings, so the **warping error** cannot be applied. In many applications, this is not a significant limitation.
 
-The **warping error** can be distinguished from the [Rand error](Rand_error ) in other respects. The **warping error** can penalize all kinds of topological errors, including the presence of holes and handles, but the [Rand error](Rand_error ) penalizes only connectivity errors. In certain medical imaging situations, control of such aspects of topology is especially important. The [Rand error](Rand_error ) mildly penalizes shifts in boundary location, while the **warping error** ignores them altogether. The **warping error** weights a topological error by the number of pixels involved in the error itself, while the [Rand error](Rand_error ) weights a split or merger by the number of pixels in the objects associated with the errors.
+The **warping error** can be distinguished from the [Rand error](Rand_error) in other respects. The **warping error** can penalize all kinds of topological errors, including the presence of holes and handles, but the [Rand error](Rand_error) penalizes only connectivity errors. In certain medical imaging situations, control of such aspects of topology is especially important. The [Rand error](Rand_error) mildly penalizes shifts in boundary location, while the **warping error** ignores them altogether. The **warping error** weights a topological error by the number of pixels involved in the error itself, while the [Rand error](Rand_error) weights a split or merger by the number of pixels in the objects associated with the errors.
 
 2D implementation in Fiji
 -------------------------
 
-The warping error metric is implemented for 2D images in the [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) library. Here is an example of how to use it in a [Beanshell script](Beanshell_Scripting ):
+The warping error metric is implemented for 2D images in the [Trainable Weka Segmentation](Trainable_Weka_Segmentation) library. Here is an example of how to use it in a [Beanshell script](Beanshell_Scripting):
 
     import trainableSegmentation.metrics.WarpingError;
     import ij.IJ;
@@ -129,7 +129,7 @@ The warping error metric is implemented for 2D images in the [Trainable Weka Seg
 See also
 --------
 
--   [Rand error](Rand_error ).
+-   [Rand error](Rand_error).
 
 References
 ----------
@@ -138,6 +138,6 @@ References
 
 
 
-[1] {% include cite content='journal' author='V. Jain, B. Bollmann, M. Richardson, D.R. Berger, M.N. Helmstaedter, K.L. Briggman, W. Denk, J.B. Bowden, J.M. Mendenhall, W.C. Abraham, K.M. Harris, N. Kasthuri, K.J. Hayworth, R. Schalek, J.C. Tapia, J.W. Lichtman, S.H. Seung ' title='Boundary Learning by Optimization with Topological Constraints ' booktitle='2010 IEEE CONFERENCE ON COMPUTER VISION AND PATTERN RECOGNITION (CVPR) ' year='2010 ' series='IEEE Conference on Computer Vision and Pattern Recognition ' pages='2488-2495 ' organization='IEEE Comp Soc ' doi='10.1109/CVPR.2010.5539950 ' %}
+[1] {% include cite content='journal' author='V. Jain, B. Bollmann, M. Richardson, D.R. Berger, M.N. Helmstaedter, K.L. Briggman, W. Denk, J.B. Bowden, J.M. Mendenhall, W.C. Abraham, K.M. Harris, N. Kasthuri, K.J. Hayworth, R. Schalek, J.C. Tapia, J.W. Lichtman, S.H. Seung' title='Boundary Learning by Optimization with Topological Constraints' booktitle='2010 IEEE CONFERENCE ON COMPUTER VISION AND PATTERN RECOGNITION (CVPR)' year='2010' series='IEEE Conference on Computer Vision and Pattern Recognition' pages='2488-2495' organization='IEEE Comp Soc' doi='10.1109/CVPR.2010.5539950' %}
 
 [2] 

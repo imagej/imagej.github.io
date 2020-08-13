@@ -7,7 +7,7 @@ categories: Neuroanatomy
 description: test description
 ---
 
-This page lists [Open Source](Open_Source ) resources that complement [SNT](SNT ).
+This page lists [Open Source](Open_Source) resources that complement [SNT](SNT).
 
 Online Tools
 ------------

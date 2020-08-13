@@ -17,10 +17,10 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='imagescience ' repo='NeuronJ ' %}
+{% include github org='imagescience' repo='NeuronJ' %}
 {% endcapture %}
-{% include info-box software='ImageScience ' name='NeuronJ ' maintainer=maintainer author=author source=source status=' ' category='[Plugins](Category_Plugins ) ' website='http://imagescience.org/meijering/software/neuronj/ ' %}[NeuronJ](http://imagescience.org/meijering/software/neuronj/) is an ImageJ plugin to facilitate the tracing and analysis of elongated image structures, such as neuronal processes, complementing [SNT](SNT ).
+{% include info-box software='ImageScience' name='NeuronJ' maintainer=maintainer author=author source=source status='' category='[Plugins](Category_Plugins)' website='http://imagescience.org/meijering/software/neuronj/' %}[NeuronJ](http://imagescience.org/meijering/software/neuronj/) is an ImageJ plugin to facilitate the tracing and analysis of elongated image structures, such as neuronal processes, complementing [SNT](SNT).
 
-NeuronJ features a friendly interface and a detailed [online manual](https://imagescience.org/meijering/software/neuronj/manual/) but can only be used to reconstruct 2D images and is not capable of [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) export, the most common format used in neuronal reconstructions. If you need to reconstruct three-dimensional imagery and require a program aware of SWC, we recommend using [SNT](SNT ) instead.
+NeuronJ features a friendly interface and a detailed [online manual](https://imagescience.org/meijering/software/neuronj/manual/) but can only be used to reconstruct 2D images and is not capable of [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) export, the most common format used in neuronal reconstructions. If you need to reconstruct three-dimensional imagery and require a program aware of SWC, we recommend using [SNT](SNT) instead.
 
-[ImageScience](Category_ImageScience ) [Neuroanatomy](Category_Neuroanatomy )   
+[ImageScience](Category_ImageScience) [Neuroanatomy](Category_Neuroanatomy)   

@@ -10,23 +10,23 @@ description: test description
 {% include menu-formats%}
 The {% include wikipedia title='QuickTime File Format' text='QuickTime movie format'%} is a multimedia container format with extension `.mov`.
 
-QuickTime MOV files come in many flavors, which are known as codecs. Whether you can open an MOV file in ImageJ will depend on several factors, including the codec used to store the movie, which version of which operating system you have, and which ImageJ [plugin](Plugin ) is used.
+QuickTime MOV files come in many flavors, which are known as codecs. Whether you can open an MOV file in ImageJ will depend on several factors, including the codec used to store the movie, which version of which operating system you have, and which ImageJ [plugin](Plugin) is used.
 
 There are several ways to import MOV files into ImageJ, each discussed below.
 
 Bio-Formats
 -----------
 
-The [Bio-Formats](Bio-Formats ) library supports several, but not all, QuickTime codecs. It is written in pure Java, so those codecs will be readable within ImageJ on all platforms (Windows, OS X, Linux, etc.).
+The [Bio-Formats](Bio-Formats) library supports several, but not all, QuickTime codecs. It is written in pure Java, so those codecs will be readable within ImageJ on all platforms (Windows, OS X, Linux, etc.).
 
-The Bio-Formats plugins are bundled with the [Fiji](Fiji ) distribution of ImageJ.
+The Bio-Formats plugins are bundled with the [Fiji](Fiji) distribution of ImageJ.
 
 See the [Bio-Formats QuickTime supported codecs](https://www.openmicroscopy.org/site/support/bio-formats/formats/quicktime-movie.html) page for a list of supported codecs.
 
 QuickTime for Java
 ------------------
 
-ImageJ has built-in support for MOV files, but only via the {% include wikipedia title='QuickTime for Java' text='QuickTime for Java'%} (QTJ) library, which is Apple's library for reading and writing QuickTime files from Java. QTJ is only available on Windows and OS X platforms, and only when running a 32-bit version of Java. On OS X, this means [using Apple Java 6](Frequently_Asked_Questions#How_do_I_set_up_Java_6_on_OS_X.3F ).
+ImageJ has built-in support for MOV files, but only via the {% include wikipedia title='QuickTime for Java' text='QuickTime for Java'%} (QTJ) library, which is Apple's library for reading and writing QuickTime files from Java. QTJ is only available on Windows and OS X platforms, and only when running a 32-bit version of Java. On OS X, this means [using Apple Java 6](Frequently_Asked_Questions#How_do_I_set_up_Java_6_on_OS_X.3F).
 
 {% include warning-box content='QuickTime for Java has been deprecated for many years, and Apple is steadily phasing it out. It is likely that it will no longer be possible to use QTJ at all in future operating system versions.
 
@@ -43,7 +43,7 @@ You can accomplish all of the above by pasting the following command into a runn
 FFMPEG
 ------
 
-There is an [update site](Update_site ) called FFMPEG which enables support for opening movie files via the {% include wikipedia title='FFMPEG' text='FFMPEG library'%}. This update site ships native libraries, which should work on Windows, OS X and Linux platforms, but not other platforms (AIX, Solaris, etc.).
+There is an [update site](Update_site) called FFMPEG which enables support for opening movie files via the {% include wikipedia title='FFMPEG' text='FFMPEG library'%}. This update site ships native libraries, which should work on Windows, OS X and Linux platforms, but not other platforms (AIX, Solaris, etc.).
 
 See the [FFMPEG supported codecs](https://www.ffmpeg.org/general.html#Video-Codecs) page for a list of supported codecs.
 

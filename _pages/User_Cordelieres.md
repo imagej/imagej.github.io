@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Fabrice Cordelieres ' github='fab2506 ' %}
+{% include user-box name='Fabrice Cordelieres' github='fab2506' %}

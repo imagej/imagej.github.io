@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Developing Plugins for ImageJ 1.x](Developing_Plugins_for_ImageJ_1.x )
+1.  REDIRECT [Developing Plugins for ImageJ 1.x](Developing_Plugins_for_ImageJ_1.x)

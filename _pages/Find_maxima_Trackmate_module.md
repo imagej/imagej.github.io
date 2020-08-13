@@ -15,12 +15,12 @@ description: test description
 {% capture maintainer%}
 {% include person content='Twagner' %},
 {% endcapture %}
-{% include info-box software='Fiji ' name='Find Maxima Detector for TrackMate ' author=author maintainer=maintainer filename='TrackMate\_FindMaxima.jar [\[1](https://github.com/thorstenwagner/ij-trackmate-findmaxima/releases/latest) \] ' source='Github [\[2](https://github.com/thorstenwagner/ij-trackmate-findmaxima) \] ' latest-version='v1.0.0 (13 May 2016) ' status='active ' %}
+{% include info-box software='Fiji' name='Find Maxima Detector for TrackMate' author=author maintainer=maintainer filename='TrackMate\_FindMaxima.jar [\[1](https://github.com/thorstenwagner/ij-trackmate-findmaxima/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-trackmate-findmaxima) \]' latest-version='v1.0.0 (13 May 2016)' status='active' %}
 
 Purpose
 -------
 
-This plugin implements the find maxima detection algorithm for [TrackMate](TrackMate ). It was tried to resample the approach as for the *Process -&gt; Find Maxima...* command. The results are almost the same. Subpixel accuracy is activated by default.
+This plugin implements the find maxima detection algorithm for [TrackMate](TrackMate). It was tried to resample the approach as for the *Process -&gt; Find Maxima...* command. The results are almost the same. Subpixel accuracy is activated by default.
 
 Installation
 ------------

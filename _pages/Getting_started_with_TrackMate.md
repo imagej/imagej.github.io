@@ -10,9 +10,9 @@ description: test description
 Introduction
 ------------
 
-This tutorial is the starting point for [TrackMate](TrackMate ) users. It explains how it works by walking you through a simple case, using an easy image.
+This tutorial is the starting point for [TrackMate](TrackMate) users. It explains how it works by walking you through a simple case, using an easy image.
 
-The [TrackMate](TrackMate ) plugin provides a way to semi-automatically segment spots or roughly spherical objects from a 2D or 3D image, and track them over time. It follows the classical scheme, where the segmentation step and the particle-linking steps are separated. Therefore each step is handled in the user interface by a specific panel, and you will go back in forth through them. Also, TrackMate has a fishing net with small holes: it will find as much spots as it can, even the ones you are not interested. So there is a step to filter them out before tracking. In these views, TrackMate resembles a bit to the Spot Segmentation Wizard of [Imaris™](http://www.bitplane.com/go/products/imaris).
+The [TrackMate](TrackMate) plugin provides a way to semi-automatically segment spots or roughly spherical objects from a 2D or 3D image, and track them over time. It follows the classical scheme, where the segmentation step and the particle-linking steps are separated. Therefore each step is handled in the user interface by a specific panel, and you will go back in forth through them. Also, TrackMate has a fishing net with small holes: it will find as much spots as it can, even the ones you are not interested. So there is a step to filter them out before tracking. In these views, TrackMate resembles a bit to the Spot Segmentation Wizard of [Imaris™](http://www.bitplane.com/go/products/imaris).
 
 The test image
 --------------
@@ -33,7 +33,7 @@ Starting TrackMate
 
 ![](/images/pages/TrackMate MainButtons.png)
 
-With this image selected, launch TrackMate from the menu {% include bc content='Plugins | Tracking | TrackMate'%} or from the [Command launcher](Using_the_Command_Launcher ). The TrackMate GUI appears next to the image, displaying the starting dialog panel.
+With this image selected, launch TrackMate from the menu {% include bc content='Plugins | Tracking | TrackMate'%} or from the [Command launcher](Using_the_Command_Launcher). The TrackMate GUI appears next to the image, displaying the starting dialog panel.
 
 But first, just a few words about its look. The user interface is a single frame - that can be resized - divided in a main panel, that displays context-dependent dialogs, and a permanent bottom panel containing the four main buttons depicted on the right.
 
@@ -213,7 +213,7 @@ The next panel let you choose amongst available particle-linking algorithms, or 
 
 The apparent profusion of choices should not disorient you, for it just that: an appearance. We chose to focus on the Linear Assignment Problem (LAP) in the framework first developed by Jaqaman *et al.*[2].
 
-The first two LAP trackers are based on LAP, with important differences from the original paper described [here](TrackMate_algorithms#Main_differences_with_the_Jaqaman_paper.5B1.5D ) . We focused on this method for it gave us a lot of flexibility and it can be configured easily to handle most cases. You can tune it to allow *splitting events*, where a track splits in two, for instance following a cell that encounters mitosis. *Merging events* are handled too in the same way, though my small culture prevents me from quoting a relevant biological case obvious as the previous one. More importantly are *gap-closing* events, where a spot disappear for one frame (because it moves out of focus, because segmentation fails, ...) but the track manages to recuperates and connect with reappearing spots later.
+The first two LAP trackers are based on LAP, with important differences from the original paper described [here](TrackMate_algorithms#Main_differences_with_the_Jaqaman_paper.5B1.5D) . We focused on this method for it gave us a lot of flexibility and it can be configured easily to handle most cases. You can tune it to allow *splitting events*, where a track splits in two, for instance following a cell that encounters mitosis. *Merging events* are handled too in the same way, though my small culture prevents me from quoting a relevant biological case obvious as the previous one. More importantly are *gap-closing* events, where a spot disappear for one frame (because it moves out of focus, because segmentation fails, ...) but the track manages to recuperates and connect with reappearing spots later.
 
 These LAP algorithm exists in TrackMate in two flavors: a simple one and a not simple one. There are again the same, but the simple ones propose fewer configuration options and a thus more concise configuration panel. In short:
 
@@ -310,7 +310,7 @@ The end or so
 
 We are now close to the end of a typical workflow for a tracking problem. The panel you see now is the one that recapitulates display option. You can set spot color by feature, hide them, show their name, etc... Find out what they do, display options are pretty much self-explanatory.
 
-The [TrackScheme](TrackScheme ) button launches a module that allow manually editing tracks, and performing analysis on them. It is the subject of another tutorial.
+The [TrackScheme](TrackScheme) button launches a module that allow manually editing tracks, and performing analysis on them. It is the subject of another tutorial.
 
 If you press **Next**, you will see that there is still two panels after this one. The first one allows to plot any kind of feature as a function of another one. TrackMate deals with 3 kind of features: spot, link and track feature, depending on where it makes sense to compute them. For instance, instantaneous velocity is computed over a link (between two spots linked in a track), so you will find it on the **Links** tab. The **+** and **-** buttons allow you add several features on the Y-axis, and they will be pooled on the same graph or not, depending on the dimensionality of the features.
 
@@ -330,7 +330,7 @@ That is the end of this introductory tutorial. As you can see, it is quite long.
 
 Now that you know how the plugin works, you should be able to reach the end result in less than 30 seconds...
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez )) 04:18, 1 August 2013 (CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 04:18, 1 August 2013 (CDT)
 
 References
 ----------
@@ -343,7 +343,7 @@ References
 
 [2] [Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)
 
-[3] There is some theoretical grounds for that, if you are investigating Brownian motion. See the [page](TrackMate_algorithms#Cost_calculation_.26_Brownian_motion ) that details the segmenters and trackers for information.
+[3] There is some theoretical grounds for that, if you are investigating Brownian motion. See the [page](TrackMate_algorithms#Cost_calculation_.26_Brownian_motion) that details the segmenters and trackers for information.
 
 [4] 
 

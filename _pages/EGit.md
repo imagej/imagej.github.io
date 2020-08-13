@@ -8,7 +8,7 @@ description: test description
 ---
 
 {% include gitmenu%}
- This page provides an introduction on how to start using the [EGit](http://www.eclipse.org/egit/) extension in the [Eclipse](Eclipse ) IDE for software development.
+ This page provides an introduction on how to start using the [EGit](http://www.eclipse.org/egit/) extension in the [Eclipse](Eclipse) IDE for software development.
 
 Installing EGit in Eclipse
 --------------------------
@@ -42,7 +42,7 @@ Cloning an existing git repository
     1.  choose *Import as general project* and press {% include key content='Next &gt;' %}
     2.  specify the projects name and {% include key content='Next &gt;' %}
 
-If the clones repository contains a [Maven](Maven ) project, you can then right-click it in Eclipses' package explorer and choose {% include bc content='Configure |Convert to Maven Project'%}
+If the clones repository contains a [Maven](Maven) project, you can then right-click it in Eclipses' package explorer and choose {% include bc content='Configure |Convert to Maven Project'%}
 
 Et voila, ready and all in Eclipse.
 

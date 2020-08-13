@@ -17,14 +17,14 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='ijpb ' repo='ijpb-plugins ' %}
+{% include github org='ijpb' repo='ijpb-plugins' %}
 {% endcapture %}
-{% include info-box name='Interactive Marker-controlled Watershed ' software='IJPB-plugins ' author=author maintainer=maintainer source=source released='September 9<sup>th</sup>, 2017 ' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ ) v1.4.1) ' status='stable, active ' category='[Segmentation](Category_Segmentation ), [Mathematical morphology](Category_Mathematical_morphology ) ' %}
+{% include info-box name='Interactive Marker-controlled Watershed' software='IJPB-plugins' author=author maintainer=maintainer source=source released='September 9<sup>th</sup>, 2017' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}
 
 Introduction
 ------------
 
-<img src="/images/pages/Interactive-Marker-controlled-Watershed-plugin-overview.png" width="400"/> Similar to the [Marker-controlled Watershed](Marker-controlled_Watershed ) plugin, this ImageJ/Fiji plugin segments grayscale images of any type (8, 16 and 32-bit) in 2D and 3D using the marker-controlled watershed algorithm by Meyer and Beucher (1990) and it floods the image from specific seed points, **but this time the points are introduced interactively by the user**.
+<img src="/images/pages/Interactive-Marker-controlled-Watershed-plugin-overview.png" width="400"/> Similar to the [Marker-controlled Watershed](Marker-controlled_Watershed) plugin, this ImageJ/Fiji plugin segments grayscale images of any type (8, 16 and 32-bit) in 2D and 3D using the marker-controlled watershed algorithm by Meyer and Beucher (1990) and it floods the image from specific seed points, **but this time the points are introduced interactively by the user**.
 
 Usage
 -----
@@ -76,7 +76,7 @@ In this plugin the markers are introduced interactively by the user using any of
 Installation
 ------------
 
-The Marker-controlled Watershed plugin is part of the [MorphoLibJ](MorphoLibJ ) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites ) the IJPB-plugins update site:
+The Marker-controlled Watershed plugin is part of the [MorphoLibJ](MorphoLibJ) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the IJPB-plugins update site:
 
 1\) Select {% include bc content='Help | Update...'%} from the Fiji menu to start the updater.
 
@@ -88,7 +88,7 @@ The Marker-controlled Watershed plugin is part of the [MorphoLibJ](MorphoLibJ ) 
 
 You should now find the plugin under the sub-menu {% include bc content='Plugins | MorphoLibJ | Segmentation'%}.
 
-**Note**: Marker-controlled Watershed is only one of the plugins included in the [MorphoLibJ](MorphoLibJ ) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
+**Note**: Marker-controlled Watershed is only one of the plugins included in the [MorphoLibJ](MorphoLibJ) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
 References
 ----------
@@ -100,8 +100,8 @@ References
 See also
 --------
 
--   [Morphological Segmentation](Morphological_Segmentation ), a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
--   [Classic Watershed](Classic_Watershed ), plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
+-   [Morphological Segmentation](Morphological_Segmentation), a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
+-   [Classic Watershed](Classic_Watershed), plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
 -   [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
 -   [G. Bertrand's Topological Watershed site](http://www.esiee.fr/~info/tw/index.html), with papers, lecture slides and source code.
 

@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Debugging\_intro\#Command\_line\_debugging](Debugging_intro#Command_line_debugging )
+1.  REDIRECT [Debugging\_intro\#Command\_line\_debugging](Debugging_intro#Command_line_debugging)

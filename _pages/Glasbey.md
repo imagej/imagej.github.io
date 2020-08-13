@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include info-box name='Glasbey ' software='Discontinuous color table ' maintainer='Gabriel Landini ' source='https://github.com/fiji/fiji/blob/master/luts/glasbey.lut and https://github.com/fiji/fiji/blob/master/luts/glasbey_inverted.lut ' category='[:Category:Color\_processing](Category_Color_processing ) ' %}![](/images/pages/Glasbey.png "fig:Glasbey.png")The Glasbey lookup table (LUT) is a color table structured in a maximally discontinuous manner. That is, adjacent color bins are chosen to be as distinct from one another as possible.
+{% include info-box name='Glasbey' software='Discontinuous color table' maintainer='Gabriel Landini' source='https://github.com/fiji/fiji/blob/master/luts/glasbey.lut and https://github.com/fiji/fiji/blob/master/luts/glasbey_inverted.lut' category='[:Category:Color\_processing](Category_Color_processing)' %}![](/images/pages/Glasbey.png "fig:Glasbey.png")The Glasbey lookup table (LUT) is a color table structured in a maximally discontinuous manner. That is, adjacent color bins are chosen to be as distinct from one another as possible.
 
 Like other LUTs, it is available from the {% include bc content='Image | Lookup Tables'%} menu.
 
@@ -32,4 +32,4 @@ Publication
 
 The Glasbey LUT is based on the publication:
 
--   {% include citation last='Glasbey ' first='Chris ' last2='van der Heijden ' first2='Gerie ' last3='Toh ' first3='Vivian F. K. ' last4='Gray ' first4='Alision ' year='2007 ' journal='Color Research & Application ' url='http://onlinelibrary.wiley.com/doi/10.1002/col.20327/abstract ' title='Colour displays for categorical images ' volume='32.4 ' pages='304-309 ' %}.
+-   {% include citation last='Glasbey' first='Chris' last2='van der Heijden' first2='Gerie' last3='Toh' first3='Vivian F. K.' last4='Gray' first4='Alision' year='2007' journal='Color Research & Application' url='http://onlinelibrary.wiley.com/doi/10.1002/col.20327/abstract' title='Colour displays for categorical images' volume='32.4' pages='304-309' %}.

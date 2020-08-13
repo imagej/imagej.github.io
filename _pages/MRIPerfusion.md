@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [MRI Perfusion](MRI_Perfusion )
+1.  REDIRECT [MRI Perfusion](MRI_Perfusion)

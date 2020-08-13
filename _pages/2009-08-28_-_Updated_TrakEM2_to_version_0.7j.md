@@ -7,7 +7,7 @@ categories: News
 description: test description
 ---
 
-[TrakEM2](TrakEM2 ) has been updated to version 0.7j
+[TrakEM2](TrakEM2) has been updated to version 0.7j
 
 Please call "Help - Update Fiji" to get the new TrakEM2\_.jar into your plugins folder.
 

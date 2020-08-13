@@ -7,7 +7,7 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %}If you create a useful extension of ImageJ—e.g., a [plugin](Plugin ), [script](Script ) or [macro](Macro )—the next step is to *distribute* it to others, including:
+{% include develop-menu content='tutorials' %}If you create a useful extension of ImageJ—e.g., a [plugin](Plugin), [script](Script) or [macro](Macro)—the next step is to *distribute* it to others, including:
 
 -   **Distribute** the extension itself to users
 -   Share the extension's **source code**
@@ -19,13 +19,13 @@ Best practices
 Here is a quick summary of the most recommended options:
 
 -   **Distribution.**
-    -   A\) **[create your own update site](How_to_set_up_and_populate_an_update_site )**; or
-    -   B\) **[bundle your plugin with Fiji](Fiji_contribution_requirements )**.
+    -   A\) **[create your own update site](How_to_set_up_and_populate_an_update_site)**; or
+    -   B\) **[bundle your plugin with Fiji](Fiji_contribution_requirements)**.
 -   **Source code.**
-    -   Make your project **[open source](Open_source )**.
-    -   Host it on **[GitHub](GitHub )**.
-    -   Use **[Maven](Maven )** to build and SemVer for **[versioning](Versioning )**.
-    -   Use **[Travis](Travis )** for continuous integration and artifact deployment to the [SciJava Maven repository](SciJava_Maven_repository ).
+    -   Make your project **[open source](Open_source)**.
+    -   Host it on **[GitHub](GitHub)**.
+    -   Use **[Maven](Maven)** to build and SemVer for **[versioning](Versioning)**.
+    -   Use **[Travis](Travis)** for continuous integration and artifact deployment to the [SciJava Maven repository](SciJava_Maven_repository).
 -   **Documentation.**
     -   Create a page here on the **[ImageJ Wiki](https://imagej.net/)**.
 
@@ -42,7 +42,7 @@ The first goal is to get your extension into the hands of users.
 Sharing your source code
 ------------------------
 
-If you want to facilitate good science, please [share your source code](Open_Source ). Otherwise, your extension is a black box and its results are not verifiable.
+If you want to facilitate good science, please [share your source code](Open_Source). Otherwise, your extension is a black box and its results are not verifiable.
 
 <table><tbody><tr class="odd"><td style="background: #dfd"><p><strong>Host on GitHub in your userspace or organization</strong></p></td></tr><tr class="even"><td><p> <strong>Steps</strong></p></td></tr><tr class="odd"><td style="background: #dfd; vertical-align: top"><ul><li>Create an account on <strong><a href="https://github.com">GitHub</a></strong>.</li><li><strong><a href="https://help.github.com/articles/create-a-repo">Create a new repository</a></strong> for your project.</li><li><strong><a href="https://help.github.com/articles/pushing-to-a-remote">Push your code</a></strong> there.</li><li><strong><a href="Git" title="wikilink">Learn Git</a></strong> to manage your code effectively.</li></ul></td></tr><tr class="even"><td style="background: #dfd"></td></tr><tr class="odd"><td><p><strong>Host on GitHub in the Fiji organization (for <a href="Fiji_contribution_requirements" title="wikilink">extensions distributed with Fiji</a>)</strong></p></td></tr><tr class="even"><td><p><strong>Steps</strong></p></td></tr><tr class="odd"><td style="background: #dfd; vertical-align: top"><ul><li>Request a <strong><a href="Governance" title="wikilink">Fiji maintainer</a></strong> create a repository for you and add you as a contributor.</li><li>Meet the <strong><a href="Fiji_contribution_requirements" title="wikilink">Fiji contribution requirements</a></strong>.</li></ul></td></tr><tr class="even"><td style="vertical-align: top"></td></tr><tr class="odd"><td><p><strong>Host on BitBucket</strong></p></td></tr><tr class="even"><td><p><strong>Steps</strong></p></td></tr><tr class="odd"><td><ul><li>Similar to GitHub, but using <a href="https://bitbucket.org/">BitBucket</a> instead.</li></ul></td></tr><tr class="even"><td style="vertical-align: top"></td></tr><tr class="odd"><td><p><strong>Host on SourceForge</strong></p></td></tr><tr class="even"><td><p><strong>Steps</strong></p></td></tr><tr class="odd"><td><ul><li>Similar to GitHub, but using <a href="http://sourceforge.net/">SourceForge</a> instead.</li></ul></td></tr><tr class="even"><td style="vertical-align: top"></td></tr><tr class="odd"><td><p><strong>Serve it from a website as a download</strong></p></td></tr><tr class="even"><td><p><strong>Steps</strong></p></td></tr><tr class="odd"><td><ul><li>Create an archive (TAR, ZIP, etc.).</li><li>Upload the archive to the relevant web space, and link it.</li><li>Users download and unpack the archive.</li></ul></td></tr></tbody></table>
 

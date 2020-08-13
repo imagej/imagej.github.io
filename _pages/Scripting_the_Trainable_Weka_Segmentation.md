@@ -7,7 +7,7 @@ categories: Scripting,Segmentation,Machine Learning
 description: test description
 ---
 
-[Scripting](Script_Editor ) is one of the reasons Fiji is so powerful, and the Trainable Weka Segmentation library (that includes the [ Trainable Weka Segmentation plugin](Trainable_Weka_Segmentation )) is one of the best examples for scriptable Fiji components.
+[Scripting](Script_Editor) is one of the reasons Fiji is so powerful, and the Trainable Weka Segmentation library (that includes the [ Trainable Weka Segmentation plugin](Trainable_Weka_Segmentation)) is one of the best examples for scriptable Fiji components.
 
 Getting started
 ===============
@@ -29,7 +29,7 @@ Now we are ready to play. We can open our input image and assign it to a WekaSeg
     // create Weka Segmentation object
     segmentator = new WekaSegmentation( input );
 
-As it is now, the segmentator has default parameters and default classifier. That means that it will use the same features that are set by default in the [ Trainable Weka Segmentation plugin](Trainable_Weka_Segmentation ), 2 classes (named "class 1" and "class 2") and a random forest classifier with 200 trees and 2 random features per node. If we are fine with that, we can now add some labels for our training data and train the classifier based on them.
+As it is now, the segmentator has default parameters and default classifier. That means that it will use the same features that are set by default in the [ Trainable Weka Segmentation plugin](Trainable_Weka_Segmentation), 2 classes (named "class 1" and "class 2") and a random forest classifier with 200 trees and 2 random features per node. If we are fine with that, we can now add some labels for our training data and train the classifier based on them.
 
 ### Adding training samples
 
@@ -164,7 +164,7 @@ We might also want to use the default random forest but tune its parameters. In 
 Example: apply classifier to all images in folder
 =================================================
 
-Very frequently we might end up having to process a large number of images using a classifier that we interactively trained with the GUI of the [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) plugin. The following [Beanshell](Beanshell ) script shows how to load a classifier from file, apply it to all images contained in a folder and save the results in another folder defined by the user:
+Very frequently we might end up having to process a large number of images using a classifier that we interactively trained with the GUI of the [Trainable Weka Segmentation](Trainable_Weka_Segmentation) plugin. The following [Beanshell](Beanshell) script shows how to load a classifier from file, apply it to all images contained in a folder and save the results in another folder defined by the user:
 
     #@ File(label="Input directory", description="Select the directory with input images", style="directory") inputDir
     #@ File(label="Output directory", description="Select the output directory", style="directory") outputDir
@@ -224,7 +224,7 @@ Very frequently we might end up having to process a large number of images using
 Example: apply classifier to all images in folder **by tiles**
 ==============================================================
 
-In some cases, we may have to apply a saved classifier to very large images, which together with a large number of image features may fill the RAM of our machine. To prevent running into out-of-memory exceptions, the following [Beanshell](Beanshell ) script shows how to load a classifier from file, apply it to all images contained in a folder by subdividing them into smaller pieces, and save the results in another folder defined by the user:
+In some cases, we may have to apply a saved classifier to very large images, which together with a large number of image features may fill the RAM of our machine. To prevent running into out-of-memory exceptions, the following [Beanshell](Beanshell) script shows how to load a classifier from file, apply it to all images contained in a folder by subdividing them into smaller pieces, and save the results in another folder defined by the user:
 
     #@ File(label="Input directory", description="Select the directory with input images", style="directory") inputDir
     #@ File(label="Output directory", description="Select the output directory", style="directory") outputDir
@@ -297,7 +297,7 @@ In some cases, we may have to apply a saved classifier to very large images, whi
 Example: define your own features
 =================================
 
-Although Trainable Segmentation provides a large set of predefined image features, it might happen that you need to define your own features for a specific problem. You can do that with a simple set of instructions. Here is a little [Beanshell](Beanshell ) script that makes two features from the Clown example and uses them to train a classifier (see the inline comments for more information):
+Although Trainable Segmentation provides a large set of predefined image features, it might happen that you need to define your own features for a specific problem. You can do that with a simple set of instructions. Here is a little [Beanshell](Beanshell) script that makes two features from the Clown example and uses them to train a classifier (see the inline comments for more information):
 
     import ij.IJ;
     import ij.ImagePlus;
@@ -479,7 +479,7 @@ Here is a simple script in **Beanshell** doing the following:
 Example: color-based segmentation using clustering
 ==================================================
 
-The following [Beanshell](Beanshell ) script shows how to segment a 2D color image or stack in an automatic fashion using the {% include wikipedia title='CIELAB' text='CIELab color space'%} and two possible clustering schemes: {% include wikipedia title='K-means' text='k-means'%} and {% include wikipedia title='Expectation–maximization\_algorithm' text='expectation maximization'%} (note: if you do not have Weka's ClassificationViaClustering classifier installed, check [how to install new classifiers via Weka's package manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers )).
+The following [Beanshell](Beanshell) script shows how to segment a 2D color image or stack in an automatic fashion using the {% include wikipedia title='CIELAB' text='CIELab color space'%} and two possible clustering schemes: {% include wikipedia title='K-means' text='k-means'%} and {% include wikipedia title='Expectation–maximization\_algorithm' text='expectation maximization'%} (note: if you do not have Weka's ClassificationViaClustering classifier installed, check [how to install new classifiers via Weka's package manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers)).
 
     #@ ImagePlus image
     #@ int(label="Num. of clusters", description="Number of expected clusters", value=5) numClusters

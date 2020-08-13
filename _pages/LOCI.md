@@ -7,20 +7,20 @@ categories: Location
 description: test description
 ---
 
-The [Eliceiri](User_Eliceiri ) lab, also known as the [Laboratory for Optical and Computational Instrumentation](http://loci.wisc.edu/), is an interdisciplinary biophotonics laboratory at the [University of Wisconsin-Madison](http://wisc.edu/).
+The [Eliceiri](User_Eliceiri) lab, also known as the [Laboratory for Optical and Computational Instrumentation](http://loci.wisc.edu/), is an interdisciplinary biophotonics laboratory at the [University of Wisconsin-Madison](http://wisc.edu/).
 
 ![ 250px \| border](/images/pages/Loci-logo.png " 250px | border")
 
 LOCI plays a very active role in the ImageJ community:
 
--   LOCI launched the [ImageJ2](ImageJ2 ), [SCIFIO](SCIFIO ) and [SciJava Common](SciJava_Common ) projects, and continues to drive their development.
--   Together with [CSBD](CSBD )/[MPI-CBG](MPI-CBG ), LOCI maintains the [Fiji](Fiji ) project.
--   LOCI founded the [Bio-Formats](Bio-Formats ) project, and led the project's development for several years.
--   LOCI regularly funds and hosts [hackathons](Hackathons ) intended to foster community development of [open source](Open_source ) biological software projects.
+-   LOCI launched the [ImageJ2](ImageJ2), [SCIFIO](SCIFIO) and [SciJava Common](SciJava_Common) projects, and continues to drive their development.
+-   Together with [CSBD](CSBD)/[MPI-CBG](MPI-CBG), LOCI maintains the [Fiji](Fiji) project.
+-   LOCI founded the [Bio-Formats](Bio-Formats) project, and led the project's development for several years.
+-   LOCI regularly funds and hosts [hackathons](Hackathons) intended to foster community development of [open source](Open_source) biological software projects.
 -   LOCI hosts the `imagej.net` web services, as well as related services including `fiji.sc` and `openspim.org`.
--   LOCI current funds core [Micro-Manager](Micro-Manager ) development work.
+-   LOCI current funds core [Micro-Manager](Micro-Manager) development work.
 
-LOCI is a founding member of the [SciJava](SciJava ) collaboration, and a partner of the [Open Microscopy Environment consortium](http://openmicroscopy.org/).
+LOCI is a founding member of the [SciJava](SciJava) collaboration, and a partner of the [Open Microscopy Environment consortium](http://openmicroscopy.org/).
 
 Developers
 ----------
@@ -31,8 +31,8 @@ Developers
 -   {% include person content='Hinerm' %} (developer, Sep 2010-Jun 2016, Jun 2020-current)
 -   {% include person content='Etarena' %} (developer)
 -   {% include person content='elevans' %} (developer)
--   {% include person content='gselzer' %} (developer, [ImageJ Ops](ImageJ_Ops ))
--   {% include person content='Xanthorapedia' %} (developer, [FLIMJ](FLIMJ ))
+-   {% include person content='gselzer' %} (developer, [ImageJ Ops](ImageJ_Ops))
+-   {% include person content='Xanthorapedia' %} (developer, [FLIMJ](FLIMJ))
 
 Alumni
 ------
@@ -47,6 +47,6 @@ Alumni
 See also
 --------
 
--   The [LOCI update site](User_LOCI )
+-   The [LOCI update site](User_LOCI)
 
 

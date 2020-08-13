@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Adelson's Squares](Adelsons_Squares )
+1.  REDIRECT [Adelson's Squares](Adelsons_Squares)

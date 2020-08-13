@@ -7,7 +7,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include warning-box content='The SLIM Curve plugin for ImageJ has been discontinued in favor of [FLIMJ](FLIMJ ).' %}
+{% include warning-box content='The SLIM Curve plugin for ImageJ has been discontinued in favor of [FLIMJ](FLIMJ).' %}
 
 
 {% capture maintainer%}
@@ -15,10 +15,10 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='slim-curve ' repo='slim-plugin ' %}
+{% include github org='slim-curve' repo='slim-plugin' %}
 {% endcapture %}
-{% include info-box software='ImageJ ' name='SLIM Curve plugin ' logo='<img src="/images/pages/Slim-curve-icon.png" width="64"/> ' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
-[UW-Madison LOCI](http://loci.wisc.edu/) ' maintainer=maintainer filename='slim\_plugin-2.0.0-SNAPSHOT.jar ' source=source latest-version='2.0.0-SNAPSHOT ' status='discontinued in favor of [FLIMJ](FLIMJ ) ' website='https://slim-curve.github.io/ ' category='[:Category:Analysis](Category_Analysis ) ' %}
+{% include info-box software='ImageJ' name='SLIM Curve plugin' logo='<img src="/images/pages/Slim-curve-icon.png" width="64"/>' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
+[UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer filename='slim\_plugin-2.0.0-SNAPSHOT.jar' source=source latest-version='2.0.0-SNAPSHOT' status='discontinued in favor of [FLIMJ](FLIMJ)' website='https://slim-curve.github.io/' category='[:Category:Analysis](Category_Analysis)' %}
 
 Introduction
 ------------
@@ -37,7 +37,7 @@ The SLIM Curve library code is written in C89 compatible C and is thread-safe fo
 Installation
 ------------
 
-The SLIM Curve plugin is available from the "SLIM Curve" [update site](Update_site ).
+The SLIM Curve plugin is available from the "SLIM Curve" [update site](Update_site).
 
 Once you have installed the SLIM Curve plugin it becomes available on the menu under {% include bc content='Analyze | Lifetime | SLIM Curve'%}.
 
@@ -341,15 +341,15 @@ Note that you can't start out in batch mode, you need to fit a single image firs
 
 ### Segmentation using classification
 
-For some specific applications, you might want to analyze a specific segment in the lifetime image. In particular, Fiji's [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) plugin is very useful for machine learning based segmentation. We can train the classifier with one image with certain training instances, then use that classifier to segment additional images. With segmented data, we can create a mask and using the ROI manager we can overlay the ROI to analyze different part of the image. The steps for segmentation using classification are:
+For some specific applications, you might want to analyze a specific segment in the lifetime image. In particular, Fiji's [Trainable Weka Segmentation](Trainable_Weka_Segmentation) plugin is very useful for machine learning based segmentation. We can train the classifier with one image with certain training instances, then use that classifier to segment additional images. With segmented data, we can create a mask and using the ROI manager we can overlay the ROI to analyze different part of the image. The steps for segmentation using classification are:
 
 1.  Open a lifetime image using the SLIM Curve plugin.
-2.  [Train the classifier](Trainable_Weka_Segmentation#Train_classifier ) using Trainable Weka Segmentation.
+2.  [Train the classifier](Trainable_Weka_Segmentation#Train_classifier) using Trainable Weka Segmentation.
 3.  Create instances to train your classifier with the number of classes required.
 4.  Train classifier by clicking the "Train classifier" button.
 5.  Select “Create result” to create the segmented image (you can save the classifier to use it later).
 6.  Use the Thresholding tool to threshold the image to remove the region not needed.
-7.  Run the Create Mask and Create Selection commands to make the ROI. You can execute commands easily using the [Command Finder](Command_Finder ) (press {% include key content='L' %}).
+7.  Run the Create Mask and Create Selection commands to make the ROI. You can execute commands easily using the [Command Finder](Command_Finder) (press {% include key content='L' %}).
 8.  Add the ROI to ROI manager by pressing {% include key content='T' %}. Use it on overlay with lifetime image and start analyzing.
 
 ![](/images/pages/Weka module.JPG "fig:Weka_module.JPG") ![](/images/pages/Overlay.JPG "fig:Overlay.JPG")

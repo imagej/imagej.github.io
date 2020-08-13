@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Learnathon 2017](Learnathon_2017 )
+1.  REDIRECT [Learnathon 2017](Learnathon_2017)

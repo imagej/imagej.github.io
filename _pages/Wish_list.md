@@ -16,23 +16,23 @@ Packaging
 ---------
 
 -   Debian – see [this branch](http://git.imagej.net/git/?p=fiji-historical.git;a=shortlog;h=refs/heads/stale/debian-fixes-2011-02-09)
--   Gentoo – see {% include github org='imagej ' repo='imagej ' issue='162 ' label='imagej/imagej\#162 ' %}
--   Chocolatey – see {% include github org='imagej ' repo='imagej ' issue='152 ' label='imagej/imagej\#152 ' %}
--   Homebrew – see {% include github org='imagej ' repo='imagej ' issue='124 ' label='imagej/imagej\#124 ' %}
--   Docker – see {% include github org='fiji ' repo='dockerfiles ' label='fiji/dockerfiles ' %}
+-   Gentoo – see {% include github org='imagej' repo='imagej' issue='162' label='imagej/imagej\#162' %}
+-   Chocolatey – see {% include github org='imagej' repo='imagej' issue='152' label='imagej/imagej\#152' %}
+-   Homebrew – see {% include github org='imagej' repo='imagej' issue='124' label='imagej/imagej\#124' %}
+-   Docker – see {% include github org='fiji' repo='dockerfiles' label='fiji/dockerfiles' %}
 
 Cross-language, integrations, web
 ---------------------------------
 
--   Better ITK support – see the [ITK](ITK ) page
--   Better OpenCV support – see the [OpenCV](OpenCV ) page
--   Better MATLAB support – see e.g. {% include github org='imagej ' repo='imagej-matlab ' issue='13 ' label='imagej/imagej-matlab\#13 ' %}
--   Better Octave support – see e.g. {% include github org='imagej ' repo='imagej-matlab ' issue='8 ' label='imagej/imagej-matlab\#8 ' %}
--   ImageJ JavaScript client – see {% include github org='imagej ' repo='imagej-server ' label='imagej-server ' %} project for a start
+-   Better ITK support – see the [ITK](ITK) page
+-   Better OpenCV support – see the [OpenCV](OpenCV) page
+-   Better MATLAB support – see e.g. {% include github org='imagej' repo='imagej-matlab' issue='13' label='imagej/imagej-matlab\#13' %}
+-   Better Octave support – see e.g. {% include github org='imagej' repo='imagej-matlab' issue='8' label='imagej/imagej-matlab\#8' %}
+-   ImageJ JavaScript client – see {% include github org='imagej' repo='imagej-server' label='imagej-server' %} project for a start
 
 ImageJ 1.x
 ----------
 
--   Headless ROI manager – see {% include github org='imagej ' repo='imagej-legacy ' issue='153 ' label='imagej/imagej-legacy\#153 ' %}
+-   Headless ROI manager – see {% include github org='imagej' repo='imagej-legacy' issue='153' label='imagej/imagej-legacy\#153' %}
 
 

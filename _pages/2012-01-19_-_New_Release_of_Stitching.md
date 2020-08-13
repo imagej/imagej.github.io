@@ -25,11 +25,11 @@ There are only two plugins left, they replace the Stitching2D/3D and the Stitch 
 -   **Stitching -&gt; Pairwise Stitching**
 -   **Stitching -&gt; Grid/Collection Stitching**
 
-You will find a complete documentation on the Fiji wiki: [Image\_Stitching](Image_Stitching )
+You will find a complete documentation on the Fiji wiki: [Image\_Stitching](Image_Stitching)
 
 The Stitching is deployed as a component of Fiji (simply update Fiji) or you can download it for ImageJ as a stand-alone package which includes all necessary libraries (11MB): [Download...](http://fly.mpi-cbg.de/~preibisch/software.html#Stitching)
 
-I thank all the authors of the libraries and other people who helped me with the Stitching: [ Acknowledgements](Image_Stitching#Download_for_ImageJ_.26_Acknowledgements )
+I thank all the authors of the libraries and other people who helped me with the Stitching: [ Acknowledgements](Image_Stitching#Download_for_ImageJ_.26_Acknowledgements)
 
 Last but not least, it would be really nice if you could cite the publication that is associated with the plugin:
 

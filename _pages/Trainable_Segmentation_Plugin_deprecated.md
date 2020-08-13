@@ -9,7 +9,7 @@ description: test description
 
 <div style="background:#fdd; padding: 10px 10px 0 10px; border: 1px solid black;">
 
-**DEPRECATION NOTICE:** This page describes the Trainable Segmentation plugin, the previous incarnation of the [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) plugin and library. We encourage users and developers to work with the more advanced and properly maintained [Trainable Weka Segmentation](Trainable_Weka_Segmentation ) instead.
+**DEPRECATION NOTICE:** This page describes the Trainable Segmentation plugin, the previous incarnation of the [Trainable Weka Segmentation](Trainable_Weka_Segmentation) plugin and library. We encourage users and developers to work with the more advanced and properly maintained [Trainable Weka Segmentation](Trainable_Weka_Segmentation) instead.
 
 </div>
 
@@ -23,9 +23,9 @@ Verena Kaynig, {% include person content='Iarganda' %}, Albert Cardona
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji ' repo='Trainable\_Segmentation ' %}
+{% include github org='fiji' repo='Trainable\_Segmentation' %}
 {% endcapture %}
-{% include info-box name='Trainable Segmentation ' software='Fiji ' author=author maintainer=maintainer source=source released='March 16<sup>th</sup>, 2010 ' latest-version='January 6<sup>th</sup>, 2012 ' status='"""deprecated""" ' category='[Segmentation](Category_Segmentation ) ' %}
+{% include info-box name='Trainable Segmentation' software='Fiji' author=author maintainer=maintainer source=source released='March 16<sup>th</sup>, 2010' latest-version='January 6<sup>th</sup>, 2012' status='"""deprecated"""' category='[Segmentation](Category_Segmentation)' %}
 
 User Manual
 -----------
@@ -86,7 +86,7 @@ The other option is to apply the trained classifier to other images or stacks. F
 
 -   You can use the save data and load data buttons to save the annotated examples. When you then open a new training image you can also load annotations from the former image and now add new examples on the new image. The classifier will be trained on the loaded and the currently annotated examples.
 -   Use a small image for training, as the classification of the whole image is taking some time. Training on the small image will limit your waiting time.
--   At the moment the plugin is aimed for gray value images that are hard to segment with a threshold alone. When you have color images you might want to look at the [SIOX](SIOX__Simple_Interactive_Object_Extraction ) plugin to segment them.
+-   At the moment the plugin is aimed for gray value images that are hard to segment with a threshold alone. When you have color images you might want to look at the [SIOX](SIOX__Simple_Interactive_Object_Extraction) plugin to segment them.
 
 Have fun!
 
@@ -100,7 +100,7 @@ Common problems and solutions:
 See Also
 --------
 
--   [Trainable Segmentation Plugin Implementation](Trainable_Segmentation_Plugin_Implementation )
--   [Scripting the Trainable Segmentation](Scripting_the_Trainable_Segmentation )
+-   [Trainable Segmentation Plugin Implementation](Trainable_Segmentation_Plugin_Implementation)
+-   [Scripting the Trainable Segmentation](Scripting_the_Trainable_Segmentation)
 
   

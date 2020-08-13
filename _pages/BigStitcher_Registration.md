@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-After you have [detected interest points](BigStitcher_Interest_points ) in your images, you can proceed to register them. In **MultiView mode**, select the views to be registered, right-click and choose {% include bc content='Processing|Register using Interest Points...'%}.
+After you have [detected interest points](BigStitcher_Interest_points) in your images, you can proceed to register them. In **MultiView mode**, select the views to be registered, right-click and choose {% include bc content='Processing|Register using Interest Points...'%}.
 
 The interest point-based registration consists of two steps:
 
@@ -175,4 +175,4 @@ The options for **Interest point grouping** are:
 
 Furthermore, you can specify the **interest point merge distance**. If you choose to **group interest points**, points from multiple images that lie within this distance to each other will be replaced by their center.
 
-Go back to the [main page](BigStitcher#Documentation )
+Go back to the [main page](BigStitcher#Documentation)

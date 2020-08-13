@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2009-03-12 - Dresden Hackathon 2009](2009-03-12_-_Dresden_Hackathon_2009 )
+1.  REDIRECT [2009-03-12 - Dresden Hackathon 2009](2009-03-12_-_Dresden_Hackathon_2009)

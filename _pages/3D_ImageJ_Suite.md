@@ -13,9 +13,9 @@ description: test description
 {% endcapture %}
 
 {% capture source%}
-{% include github org='mcib3d ' repo='mcib3d-core ' %}
+{% include github org='mcib3d' repo='mcib3d-core' %}
 {% endcapture %}
-{% include info-box name='3D ImageJ Suite ' software='3DSuite ' update-site='3D ImageJ Suite ' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d) ' source=source released='25/09/2012, V2.0 ' latest-version='30/10/2019, V3.96 ' status='stable, active ' category='[3D](Category_3D ), [Analysis](Category_Analysis ), [Filtering](Category_Filtering ), [Segmentation](Category_Segmentation ), [Mathematical morphology](Category_Mathematical_morphology ) ' %}
+{% include info-box name='3D ImageJ Suite' software='3DSuite' update-site='3D ImageJ Suite' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d)' source=source released='25/09/2012, V2.0' latest-version='30/10/2019, V3.96' status='stable, active' category='[3D](Category_3D), [Analysis](Category_Analysis), [Filtering](Category_Filtering), [Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}
 
 3D ImageJ Suite
 ---------------
@@ -24,11 +24,11 @@ This *suite* provides plugins to enhance 3D capabilities of ImageJ.
 
 Migrating contents from [3D Suite on ImageJ Documentation Website](https://imagejdocu.list.lu/plugin/stacks/3d_ij_suite/start).
 
-The pdf of the [NEUBIAS academy](http://eubias.org/NEUBIAS/training-schools/neubias-academy-home/) presentation "*Introduction to 3D Analysis with 3D ImageJ suite*" is available : [Media:NEUBIAS\_3DSuite.pdf](Media_NEUBIAS_3DSuite.pdf ).
+The pdf of the [NEUBIAS academy](http://eubias.org/NEUBIAS/training-schools/neubias-academy-home/) presentation "*Introduction to 3D Analysis with 3D ImageJ suite*" is available : [Media:NEUBIAS\_3DSuite.pdf](Media_NEUBIAS_3DSuite.pdf).
 
 The associated video is available on [YouTube](https://www.youtube.com/watch?v=OPC2kP-5By4). The QAs are available on the [image.sc forum](https://forum.image.sc/t/neubias-academy-home-webinar-introduction-to-3d-analysis-with-3d-imagej-suite-questions-answers/39027).
 
-The associated project for automation is available in [TAPAS](TAPAS ).
+The associated project for automation is available in [TAPAS](TAPAS).
 
 Author
 ------
@@ -42,9 +42,9 @@ Features
 
 This *suite* is composed of :
 
--   [3D Filters](3D_Filters ) (mean, median, max, min, tophat, max local, ...) and [Edge and symmetry filter](Edge_and_symmetry_filter )
--   [3D Segmentation](3D_Segmentation ) (iterative thresholding, spots segmentation, watershed, ...)
--   [3D Mathematical Morphology](3D_Mathematical_Morphology ) tools (fill holes, binary closing, distance map, ...)
+-   [3D Filters](3D_Filters) (mean, median, max, min, tophat, max local, ...) and [Edge and symmetry filter](Edge_and_symmetry_filter)
+-   [3D Segmentation](3D_Segmentation) (iterative thresholding, spots segmentation, watershed, ...)
+-   [3D Mathematical Morphology](3D_Mathematical_Morphology) tools (fill holes, binary closing, distance map, ...)
 -   [3D RoiManager](https://imagejdocu.list.lu/plugin/stacks/3d_roi_manager/start) (3D display and analysis of 3D objects)
 -   [3D Analysis](https://imagejdocu.list.lu/plugin/analysis/3d_analysis/start) (Geometrical measurements, Mesh measurements, Convex hull, ...)
 -   [3D MereoTopology](https://imagejdocu.list.lu/plugin/analysis/3d_mereotopology/start) (Relationship between objects)
@@ -64,13 +64,13 @@ You have also to manually download and copy into your plugins directory the **im
 Download
 --------
 
-ImageJ 1.47 or later is required. Java3D is also required, check that [3D\_Viewer](3D_Viewer ) is working.
+ImageJ 1.47 or later is required. Java3D is also required, check that [3D\_Viewer](3D_Viewer) is working.
 
-**NEW** From version 3.83 and later, for ImageJ users the new version 4.0.1 of 3D\_Viewer is required (please remove the 3D\_Viewer plugin provided by ImageJ and replace it by [Media:3d\_viewer-mcib.zip](Media_3d_viewer-mcib.zip ), just unzip the file in the plugins directory).
+**NEW** From version 3.83 and later, for ImageJ users the new version 4.0.1 of 3D\_Viewer is required (please remove the 3D\_Viewer plugin provided by ImageJ and replace it by [Media:3d\_viewer-mcib.zip](Media_3d_viewer-mcib.zip), just unzip the file in the plugins directory).
 
 Java 1.8 or later is required. '''The [imagescience](http://www.imagescience.org/meijering/software/featurej/) library is required ''' : [download here](http://www.imagescience.org/meijering/software/download/imagescience.jar).
 
-**Bundle** : [Media:Mcib3d-suite3.96.3.zip](Media_Mcib3d-suite3.96.3.zip )
+**Bundle** : [Media:Mcib3d-suite3.96.3.zip](Media_Mcib3d-suite3.96.3.zip)
 
 Sources are available on [GitHub](https://github.com/) for [core](https://github.com/mcib3d/mcib3d-core) and [plugins](https://github.com/mcib3d/mcib3d-plugins).
 
@@ -101,11 +101,11 @@ The 3D suite would like to thanks the developers of the following plugins :
 Links
 -----
 
--   [BoneJ2](BoneJ2 )
+-   [BoneJ2](BoneJ2)
 -   [3D Shapes](https://sites.google.com/site/learnimagej/plugins/3d-shape)
 -   [3D Annotation Tool](https://imagejdocu.list.lu/plugin/utilities/annotation_roi_3d/start)
--   [3D Viewer](3D_Viewer )
--   [MorphoLibJ](MorphoLibJ )
+-   [3D Viewer](3D_Viewer)
+-   [MorphoLibJ](MorphoLibJ)
 
 Change Log
 ----------

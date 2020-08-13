@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Kai Uwe Barthel ' github='kaibarthel ' website='http://www.f4.fhtw-berlin.de/\~barthel/ ' %}
+{% include user-box name='Kai Uwe Barthel' github='kaibarthel' website='http://www.f4.fhtw-berlin.de/\~barthel/' %}

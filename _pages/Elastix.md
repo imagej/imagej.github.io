@@ -9,9 +9,9 @@ description: test description
 
 
 {% capture source%}
-{% include github org='embl-cba ' repo='fiji-plugin-elastixWrapper ' %}
+{% include github org='embl-cba' repo='fiji-plugin-elastixWrapper' %}
 {% endcapture %}
-{% include info-box name='Elastix ' software='Fiji ' update-site='EMBL-CBA ' author='Christian Tischer ' maintainer='Christian Tischer ' source=source %}
+{% include info-box name='Elastix' software='Fiji' update-site='EMBL-CBA' author='Christian Tischer' maintainer='Christian Tischer' source=source %}
 
 Overview
 --------
@@ -23,7 +23,7 @@ Installation
 
 Elastix is available from the ImageJ update site: http://sites.imagej.net/EMBL-CBA.
 
-For details on how to install an update site click [here](Following_an_update_site ).
+For details on how to install an update site click [here](Following_an_update_site).
 
 To use this plugin you also need to install elastix itself, as described [here](https://github.com/embl-cba/fiji-plugin-elastixWrapper/blob/master/README.md#install-elastix-binary).
 

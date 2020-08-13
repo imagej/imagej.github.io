@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [GSoC 2011 Ideas](GSoC_2011_Ideas )
+1.  REDIRECT [GSoC 2011 Ideas](GSoC_2011_Ideas)

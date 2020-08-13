@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Ruizhi "Ray" Liao ' affiliation='UW-Madison [LOCI](LOCI ) (former) ' %}
+{% include user-box name='Ruizhi "Ray" Liao' affiliation='UW-Madison [LOCI](LOCI) (former)' %}

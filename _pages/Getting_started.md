@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Getting Started](Getting_Started )
+1.  REDIRECT [Getting Started](Getting_Started)

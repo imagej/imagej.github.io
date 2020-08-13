@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include info-box software='ImageJ ' name='Adiposoft ' author=' [CIMA](https://cima.unav.edu/) , [University of Navarra](http://www.unav.edu/) . ' maintainer='[Mikel Ariz](mailto:mikelariz@unav.es) ' released='April 2012 ' latest-version='January 2019 ' status='stable, active ' publications=' [JLR](http://www.jlr.org/content/53/12/2791.short) ' category='[Segmentation](Category_Segmentation ) ' %}
+{% include info-box software='ImageJ' name='Adiposoft' author=' [CIMA](https://cima.unav.edu/) , [University of Navarra](http://www.unav.edu/) .' maintainer='[Mikel Ariz](mailto:mikelariz@unav.es)' released='April 2012' latest-version='January 2019' status='stable, active' publications=' [JLR](http://www.jlr.org/content/53/12/2791.short)' category='[Segmentation](Category_Segmentation)' %}
 
 <img src="/images/pages/Screenshot1.jpg" width="350"/>
 
@@ -78,8 +78,8 @@ Metamorph Macro (Molecular Devices, USA) that automated the acquisition of the i
 Adiposoft under MATLAB (advanced users) - Maintained only until December 2014
 -----------------------------------------------------------------------------
 
-A version of Adiposoft was entirely developed using [MATLAB](MATLAB ) v.7.11 and the DIPlib v2.2 C Image Processing libraries \[11\] under Linux OS Fedora 14. To run Adiposoft, the same or newer version of this software is required, but the OS can be different. [MATLAB](MATLAB ) requires a non-free license. ADIPOSOFT - [MATLAB](MATLAB ) Version (Download)
+A version of Adiposoft was entirely developed using [MATLAB](MATLAB) v.7.11 and the DIPlib v2.2 C Image Processing libraries \[11\] under Linux OS Fedora 14. To run Adiposoft, the same or newer version of this software is required, but the OS can be different. [MATLAB](MATLAB) requires a non-free license. ADIPOSOFT - [MATLAB](MATLAB) Version (Download)
 
-Before installing Adiposoft under [MATLAB](MATLAB ) you must download and install the DIP Image libraries DIPlib v2.2 C, which can be downloaded here. After installing DIPlib you must to extract the AdiposoftMatlab.zip file. To run Adiposoft, execute the .m file inside [MATLAB](MATLAB )
+Before installing Adiposoft under [MATLAB](MATLAB) you must download and install the DIP Image libraries DIPlib v2.2 C, which can be downloaded here. After installing DIPlib you must to extract the AdiposoftMatlab.zip file. To run Adiposoft, execute the .m file inside [MATLAB](MATLAB)
 
-Note: Installing Adiposoft can be a bit tricky under [MATLAB](MATLAB ), due to compatibility problems between the versions of DIPlib and [MATLAB](MATLAB ). We will be pleased to help you with the installation. To that end, please contact mgalarraga@unav.es for help.
+Note: Installing Adiposoft can be a bit tricky under [MATLAB](MATLAB), due to compatibility problems between the versions of DIPlib and [MATLAB](MATLAB). We will be pleased to help you with the installation. To that end, please contact mgalarraga@unav.es for help.

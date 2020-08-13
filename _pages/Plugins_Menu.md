@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Fiji's Menu](Fijis_Menu )
+1.  REDIRECT [Fiji's Menu](Fijis_Menu)

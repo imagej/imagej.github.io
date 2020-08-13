@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Ben Booth ' affiliation=' [Lawrence Berkeley National Lab](http://www.lbl.gov/) ' github='benwbooth ' website='http://profiles.lbl.gov/benjamin.booth ' %}
+{% include user-box name='Ben Booth' affiliation=' [Lawrence Berkeley National Lab](http://www.lbl.gov/)' github='benwbooth' website='http://profiles.lbl.gov/benjamin.booth' %}

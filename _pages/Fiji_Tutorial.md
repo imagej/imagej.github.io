@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Tutorial\_Maker](Tutorial_Maker )
+1.  REDIRECT [Tutorial\_Maker](Tutorial_Maker)

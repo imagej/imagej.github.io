@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Simone Reber ' affiliation=' [IRI Life Sciences, Humboldt-Universitaet zu Berlin](https://www.iri-ls.hu-berlin.de/en) ' website='http://www.thereberlab.com/ ' %}
+{% include user-box name='Simone Reber' affiliation=' [IRI Life Sciences, Humboldt-Universitaet zu Berlin](https://www.iri-ls.hu-berlin.de/en)' website='http://www.thereberlab.com/' %}
