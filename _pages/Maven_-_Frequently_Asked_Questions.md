@@ -15,7 +15,7 @@ The version of `pom-scijava` (`14.0.0` as of this writing) indicates the version
 
 The version of `example-legacy-plugin` itself (`0.1.0-SNAPSHOT` as of this writing) is the version of your plugin. This string is appended to the JAR file name (e.g., example-legacy-plugin-0.1.0-SNAPSHOT.jar), so that you can differentiate between multiple versions of your plugin. Use whatever versioning scheme you want.
 
-However, once you become more comfortable with Maven, we suggest using [a SNAPSHOT version during development](http://stackoverflow.com/questions/5901378/what-exactly-is-a-maven-snapshot-and-why-do-we-need-it), and a release (i.e., non-SNAPSHOT) version when distributing your plugin. The reason is to avoid two different JAR files both called `my-plugin-1.2.3` but with different contents. (This is part of what Maven calls [reproducible builds](reproducible_builds ).)
+However, once you become more comfortable with Maven, we suggest using [a SNAPSHOT version during development](http://stackoverflow.com/questions/5901378/what-exactly-is-a-maven-snapshot-and-why-do-we-need-it), and a release (i.e., non-SNAPSHOT) version when distributing your plugin. The reason is to avoid two different JAR files both called `my-plugin-1.2.3` but with different contents. (This is part of what Maven calls [reproducible builds](Reproducible_builds ).)
 
 For example, while you develop your plugin, you might use the version `1.0.0-SNAPSHOT` to indicate that this is not the final `1.0.0` version but leads up to it. Once you are happy with the plugin in its current form, switch to `1.0.0`. Note, however, that you will cause problems if you later change the sources of the final `1.0.0` version (i.e., without first advancing the version in the `pom.xml` file).
 

@@ -12,7 +12,7 @@ description: test description
 -   For an overview of ""distribution methods"", see [Distribution](Distribution ).
 -   To ""download"" software releases, see [Downloads](Downloads ).' %}
 
-{% include develop-menu content='tutorials' %}The SciJava [philosophy](philosophy ) is to [release early, release often](Philosophy#Release_early.2C_release_often ). At the same time, we always want to preserve [scientific reproducibility](reproducible_builds ). To make this possible we lean on several [project management](project_management ) tools. The purpose of this guide is to take you through the process of using these tools with the goal of releasing new versions of your software, and then providing those releases to users.
+{% include develop-menu content='tutorials' %}The SciJava [philosophy](Philosophy ) is to [release early, release often](Philosophy#Release_early.2C_release_often ). At the same time, we always want to preserve [scientific reproducibility](Reproducible_builds ). To make this possible we lean on several [project management](Project_management ) tools. The purpose of this guide is to take you through the process of using these tools with the goal of releasing new versions of your software, and then providing those releases to users.
 
 Phases of development
 =====================
@@ -36,7 +36,7 @@ Artifacts are files, most commonly a """{% include wikipedia title='JAR\_%28file
 2.  **On master.** When you have a set of one or more *commits* that you are happy with (i.e. the feature is complete, or the bug is fixed) they are moved to the `master` branch of the project's repository on GitHub. This ensures the `master` branch is always *release ready*.
 3.  **Released.** When there is a need to make the current `master` branch public (i.e. it has a critical bug fix or cool new feature that users have requested) [Maven](Maven ) is used to *cut a release*, which is then *deployed as an artifact* to the [SciJava Maven repository](https://maven.scijava.org/). Developers can now use the new version in their own projects.
 4.  **Managed.** The new release artifact must be verified to work in the combined runtime environment with other SciJava components. Once it has been tested to work, the version listed in the SciJava component collection [Bill of Materials (BOM)](BOM ) can be updated accordingly.
-5.  **Uploaded.** Finally, the new release artifact can be uploaded to its associated ImageJ [update site](update_site ), making it available to end users.
+5.  **Uploaded.** Finally, the new release artifact can be uploaded to its associated ImageJ [update site](Update_site ), making it available to end users.
 
 The following sections will discuss these phases, and their associated tools and workflows, in more depth.
 
@@ -61,16 +61,16 @@ Topic branches are great for isolating potentially disruptive and/or unfinished 
 
 -   """Fewer conflicts.""" It avoids conflicts between multiple long-running topic branches.
 -   """SNAPSHOT builds.""" [Travis](Travis ) builds the change into the latest SNAPSHOT build, making it available from the [SciJava Maven repository](SciJava_Maven_repository ).
--   """Faster support.""" Supporting the community is less convoluted, with changes released to users more rapidly. Yes, you can link to changes on a topic branch. And yes, you can upload binary builds from that branch. But each extra manual step costs time—better to link directly to the latest SNAPSHOT build. There are even ImageJ [update sites](update_sites ) which serve the latest builds from master, to make it easier for non-technical users to test changes.
+-   """Faster support.""" Supporting the community is less convoluted, with changes released to users more rapidly. Yes, you can link to changes on a topic branch. And yes, you can upload binary builds from that branch. But each extra manual step costs time—better to link directly to the latest SNAPSHOT build. There are even ImageJ [update sites](Update_sites ) which serve the latest builds from master, to make it easier for non-technical users to test changes.
 -   """Less complex.""" The more topic branches you have—and in particular, the more integration branches you have—the more complex the system becomes, the more supporting tooling, CI jobs, etc. are needed. And the more developer time is needed to maintain the tooling, sort through topic branches, keep track of open PRs... leaving less time for developing new features and fixing bugs.
 
 Hence, when exactly to use a topic branch is a judgment call, but some good times to use a topic branch are:
 
--   """Breaking.""" The changes break [backwards compatibility](backwards_compatibility ).
+-   """Breaking.""" The changes break [backwards compatibility](Backwards_compatibility ).
 -   """New API.""" The changes introduce significant new API which will need to remain backwards compatible in the future, and review is desired before committing to that API.
 -   """Unfinished.""" The changes are unfinished.
 -   """Regressing.""" The changes leave the codebase in a "worse" state somehow.
--   """Discussion.""" To solicit discussion from the [community](community ), especially if the changes might be contentious.
+-   """Discussion.""" To solicit discussion from the [community](Community ), especially if the changes might be contentious.
 
 Conversely, some situations to push directly to master:
 
@@ -121,9 +121,9 @@ The [release-version.sh](https://github.com/scijava/scijava-scripts/blob/master/
 
 -   Install the `release-version.sh` script. The best way to do this is to clone the [SciJava-scripts](https://github.com/scijava/scijava-scripts) repository. That will give you access to other useful scripts and help keep them all up to date.
 -   (**optional**) If you want to easily use these scripts from any directory, you can [add the scijava-scripts folder to your PATH](http://askubuntu.com/q/97897).
--   Verify that your project's parent is pom-scijava version 17.1.1 or newer. If the parent version is too old, or is not pom-scijava, then upgrade it. Ask on the [forum](forum ) if you need assistance.
+-   Verify that your project's parent is pom-scijava version 17.1.1 or newer. If the parent version is too old, or is not pom-scijava, then upgrade it. Ask on the [forum](Forum ) if you need assistance.
 -   If your component is to be released to the SciJava Maven repository, then add the following line to the properties section of your POM: <releaseProfiles>`deploy-to-imagej`</releaseProfiles>
--   Ensure the repository for your project is linked with a [Travis CI](Travis_CI ) job that automatically builds and deploys Maven artifacts in response to changes on GitHub. If you're not sure if your project has this automation, ask for help on the [forum](forum ).
+-   Ensure the repository for your project is linked with a [Travis CI](Travis_CI ) job that automatically builds and deploys Maven artifacts in response to changes on GitHub. If you're not sure if your project has this automation, ask for help on the [forum](Forum ).
 
 ### Steps to release
 
@@ -145,7 +145,7 @@ To update the version of your component listed in the {% include github org='sci
 Phase 5: Uploaded
 -----------------
 
-{% include box title='What are ImageJ update sites? ' width='30% ' float='right ' text='ImageJ [update sites](update_sites ) are what ImageJ actually queries to download updates. These update sites are versioned, but do not rely on other tools (e.g., [Git](Git ) or [Maven](Maven )) in order to function. Rather, component developers upload new versions of their component(s) using the [ImageJ Updater](ImageJ_Updater ), which makes them available to end users. Typically, update sites are available as web sites via HTTP, with uploads functioning via [WebDAV](https://github.com/imagej/imagej-plugins-uploader-webdav) or [SSH/SFTP/SCP](https://github.com/imagej/imagej-plugins-uploader-ssh) . ' %} Deploying to the Maven repository creates a stable release artifact of a software component usable by other developers. But for ImageJ-related components, that alone does not put it into the hands of users. To do that, the component must then be *uploaded* to an ImageJ [update site](update_site ).
+{% include box title='What are ImageJ update sites? ' width='30% ' float='right ' text='ImageJ [update sites](Update_sites ) are what ImageJ actually queries to download updates. These update sites are versioned, but do not rely on other tools (e.g., [Git](Git ) or [Maven](Maven )) in order to function. Rather, component developers upload new versions of their component(s) using the [ImageJ Updater](ImageJ_Updater ), which makes them available to end users. Typically, update sites are available as web sites via HTTP, with uploads functioning via [WebDAV](https://github.com/imagej/imagej-plugins-uploader-webdav) or [SSH/SFTP/SCP](https://github.com/imagej/imagej-plugins-uploader-ssh) . ' %} Deploying to the Maven repository creates a stable release artifact of a software component usable by other developers. But for ImageJ-related components, that alone does not put it into the hands of users. To do that, the component must then be *uploaded* to an ImageJ [update site](Update_site ).
 
 ### ImageJ and Fiji update sites
 
@@ -155,7 +155,7 @@ Phase 5: Uploaded
 
 ### External update sites
 
-An update site can be hosted anywhere, though the ImageJ web server at http://sites.imagej.net/ offers a [personal update site](personal_update_site ) service.
+An update site can be hosted anywhere, though the ImageJ web server at http://sites.imagej.net/ offers a [personal update site](Personal_update_site ) service.
 
 See the **[distribution](Distribution )** page for a discussion of pros and cons of distributing your plugin on a core versus a personal update site.
 

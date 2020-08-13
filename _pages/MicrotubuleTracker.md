@@ -40,7 +40,7 @@ The welcome panel will open.
 
 #### Choose Mode
 
-For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking, you can use the [advanced mode(MTrack)](advanced_mode(MTrack) "wikilink") to fine-tune settings. When analyzing more than one movie, you can select [batch mode(MTrack)](batch_mode(MTrack) "wikilink") and run many movies simultaneously. However, before running the program in batch mode, you have to at least run the program once in simple or advanced mode to select and save the required parameters.
+For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking, you can use the [advanced mode(MTrack)](Advanced_mode(MTrack) "wikilink") to fine-tune settings. When analyzing more than one movie, you can select [batch mode(MTrack)](Batch_mode(MTrack) "wikilink") and run many movies simultaneously. However, before running the program in batch mode, you have to at least run the program once in simple or advanced mode to select and save the required parameters.
 
 The following intro is on simple mode.
 
@@ -60,7 +60,7 @@ Please choose an output file directory. The trajectory files will be written as 
 
 #### Microscope Parameters
 
-The program automatically reads the metadata shown as pixel size (micrometer in x and y) and frame rate (in seconds). If the metadata can not be read properly, the user can manually add the values. In addition, the user is asked to enter the Sigma (X) and Sigma (Y) of the Point-Spread-Function (PSF) of the microscope in pixel units (see here for [more explanation](more_explanation )). For your convenience, our software comes with an inbuilt PSF analyzer tool, which can optionally determine the PSF of your microscope from bead images by fitting a Gaussian function.
+The program automatically reads the metadata shown as pixel size (micrometer in x and y) and frame rate (in seconds). If the metadata can not be read properly, the user can manually add the values. In addition, the user is asked to enter the Sigma (X) and Sigma (Y) of the Point-Spread-Function (PSF) of the microscope in pixel units (see here for [more explanation](More_explanation )). For your convenience, our software comes with an inbuilt PSF analyzer tool, which can optionally determine the PSF of your microscope from bead images by fitting a Gaussian function.
 
 When you input any parameters, please ensure that you use decimal number formatting only.
 
@@ -82,7 +82,7 @@ Before starting the actual tracking of the dynamically growing microtubules, the
 
 **Deselect and select ends**
 
-In case an end has been wrongly recognized, the user can deselect an end by left clicking on it in the image. The program will remember and allow to re-select this end by clicking Shift + left click (pink circle will mark the end). In case an end has not been recognized, use Shift + Alt + left click to select a user defined end (orange circle will mark the end). Read more on [microtubule polarity and (+) end vs. (-) end tracking](microtubule_polarity_and_(+)_end_vs._(-)_end_tracking "wikilink").
+In case an end has been wrongly recognized, the user can deselect an end by left clicking on it in the image. The program will remember and allow to re-select this end by clicking Shift + left click (pink circle will mark the end). In case an end has not been recognized, use Shift + Alt + left click to select a user defined end (orange circle will mark the end). Read more on [microtubule polarity and (+) end vs. (-) end tracking](Microtubule_polarity_and_(+)_end_vs._(-)_end_tracking "wikilink").
 
 **Select time**
 

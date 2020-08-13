@@ -8,7 +8,7 @@ description: test description
 ---
 
 {% include menu-formats%}
-The {% include wikipedia title='TIFF' text='TIFF file format'%} is one of the most widely used formats in biosciences. Many commercial instruments write images using some flavor of TIFF. It is used in [open source](open_source ) efforts as well; for example, the [Open Microscopy Environment](OME ) developed the [OME-TIFF format](http://www.openmicroscopy.org/site/support/ome-model/ome-tiff/) as an open exchange standard for microscopy data.
+The {% include wikipedia title='TIFF' text='TIFF file format'%} is one of the most widely used formats in biosciences. Many commercial instruments write images using some flavor of TIFF. It is used in [open source](Open_source ) efforts as well; for example, the [Open Microscopy Environment](OME ) developed the [OME-TIFF format](http://www.openmicroscopy.org/site/support/ome-model/ome-tiff/) as an open exchange standard for microscopy data.
 
 ImageJ 1.x support
 ------------------

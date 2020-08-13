@@ -647,7 +647,10 @@ def fix_link_match(match):
         return match.group(0)
     if match.group(1).startswith('[Category:'):
         return ''
-    return match.group(1) + match.group(2).replace(":Category", "Category").replace(":", "_").replace("\'", "").replace("\"", "").replace("\(", "").replace("\)", "") + match.group(3).replace("\"wikilink\"", "")
+    link = match.group(2).replace(":Category", "Category")
+    link = link.replace(":", "_").replace("\'", "").replace("\"", "").replace("\(", "").replace("\)", "")
+    link = link[0].capitalize() + link[1:]
+    return match.group(1) + link + match.group(3).replace("\"wikilink\"", "")
 
 
 def fix_md_image(match):

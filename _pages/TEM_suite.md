@@ -9,10 +9,10 @@ description: test description
 
 This is a suite of useful imageJ plugins that are designed for analysis of images and diffraction patterns taken on a Transmission Electron Microscope (TEM). Included in the suite are:
 
-1.  [calc dSpace](calc_dSpace ) is a simple way to find interplanar spacing values in imageJ.
-2.  [get dSpace](get_dSpace ) is a more accurate and advanced way of finding d-spacing.
-3.  [pub Montage](pub_Montage ) is a high quality montaging plugin designed for figure submission to a peer review journal.
-4.  [get Meta](get_Meta ) extracts the metadata from all the DM3 files in the directory and saves them to a text file within that directory.
+1.  [calc dSpace](Calc_dSpace ) is a simple way to find interplanar spacing values in imageJ.
+2.  [get dSpace](Get_dSpace ) is a more accurate and advanced way of finding d-spacing.
+3.  [pub Montage](Pub_Montage ) is a high quality montaging plugin designed for figure submission to a peer review journal.
+4.  [get Meta](Get_Meta ) extracts the metadata from all the DM3 files in the directory and saves them to a text file within that directory.
 
 Getting Started
 ---------------

@@ -95,9 +95,9 @@ choose a threshold value
 
 Filter objects by size and remove objects from image edges is possible
 
-\- Spot segmentation method : a tutorial for this method is found [here](plugin_segmentation_3d_spots_segmentation_start )
+\- Spot segmentation method : a tutorial for this method is found [here](Plugin_segmentation_3d_spots_segmentation_start )
 
-\- Iterative segmentation method : a tutorial for this method is found [here](plugin_segmentation_3d_spots_segmentation_start )
+\- Iterative segmentation method : a tutorial for this method is found [here](Plugin_segmentation_3d_spots_segmentation_start )
 
 \- Filter objects by size is possible
 

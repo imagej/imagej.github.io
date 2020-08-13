@@ -8,7 +8,7 @@ description: test description
 ---
 
 {% include menu-formats%}
-Thanks to ImageJ's [extensibility](extensibility ) via [plugins](plugins ), it supports a lot of image formats!
+Thanks to ImageJ's [extensibility](Extensibility ) via [plugins](Plugins ), it supports a lot of image formats!
 
 Life sciences
 -------------
@@ -23,7 +23,7 @@ ImageJ has some built-in support for the DICOM format, and there are also plugin
 HDF
 ---
 
-The HDF5 [update site](update_site ) enables support for reading and writing [HDF5](https://en.wikipedia.org/wiki/Hierarchical_Data_Format "wikilink") image data. Note that HDF5 is a very broad specification; the HDF5 plugin will not support all manner of HDF files, but only those written according to its constraints.
+The HDF5 [update site](Update_site ) enables support for reading and writing [HDF5](https://en.wikipedia.org/wiki/Hierarchical_Data_Format "wikilink") image data. Note that HDF5 is a very broad specification; the HDF5 plugin will not support all manner of HDF files, but only those written according to its constraints.
 
 Video
 -----

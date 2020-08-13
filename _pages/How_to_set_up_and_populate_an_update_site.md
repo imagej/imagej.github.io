@@ -56,7 +56,7 @@ A given user/wiki account can own several update sites. To request a new update 
 Group update site
 -----------------
 
-In addition to [personal update sites](personal_update_sites ), it is possible for groups of people to share an update site.
+In addition to [personal update sites](Personal_update_sites ), it is possible for groups of people to share an update site.
 
 To create such an update site, post on the [Image.sc Forum](https://forum.image.sc/tags/imagej), or in the [imagej Gitter channel](https://gitter.im/imagej/imagej), requesting the creation of the site on `sites.imagej.net`, including the desired name of the site, as well as the wiki usernames to be granted upload permission to the group update site. An administrator will then create the site skeleton and grant those users upload permission to the new site.
 
@@ -102,9 +102,9 @@ Uploading files to your update site
 
 Note: you cannot simply copy files to your web space; the updater would miss all kinds of important information, and consequently refuse to accept that update site. You **need** to let the updater handle the file uploading.
 
-### Start the [updater](updater ) and check your update site
+### Start the [updater](Updater ) and check your update site
 
-First, start the [updater](updater ):
+First, start the [updater](Updater ):
 
 ![](/images/pages/How to setup a plugin distribution site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
 

@@ -16,7 +16,7 @@ The [ImageJ2](ImageJ2 ) project is a complete redesign of ImageJ, with no depend
 
 The ImageJ legacy layer provides the following extensions:
 
--   It makes ImageJ 1.x **usable [headless](headless )** from the command line.
+-   It makes ImageJ 1.x **usable [headless](Headless )** from the command line.
 -   It wraps the **ImageJ 1.x UI as a [SciJava](SciJava ) user interface**.
 -   It **translates between ImageJ1 and ImageJ2 data structures** on demand.
 

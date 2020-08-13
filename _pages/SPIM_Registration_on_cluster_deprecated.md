@@ -329,7 +329,7 @@ or whatever your submission system offers. At the end of the run we will have a 
 `out.445491`  
 `....`
 
-The err.\* are hopefully empty. The out.\* contain Fiji log output if any. In this case it should look something like [this](media_resaving_output.pdf ). Most importantly in the directory /projects/tomancak\_lightsheet/Tassos we now have for each .czi file a corresponding .tif file which was the goal of the whole exercise
+The err.\* are hopefully empty. The out.\* contain Fiji log output if any. In this case it should look something like [this](Media_resaving_output.pdf ). Most importantly in the directory /projects/tomancak\_lightsheet/Tassos we now have for each .czi file a corresponding .tif file which was the goal of the whole exercise
 
      ls *Angle280*
      spim_TL1_Angle280.czi

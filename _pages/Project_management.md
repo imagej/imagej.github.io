@@ -13,7 +13,7 @@ The [ImageJ](ImageJ ) and related [SciJava](SciJava ) projects take advantage of
 Git
 ---
 
-ImageJ uses the [Git](Git ) revision control system to manage its [source code](source_code ).
+ImageJ uses the [Git](Git ) revision control system to manage its [source code](Source_code ).
 
 See the [Git](Git ) pages for more information, tutorials, etc.
 

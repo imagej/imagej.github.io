@@ -19,7 +19,7 @@ There are several ways to enable support for more video formats:
 
 <!-- -->
 
--   Enable the *beta-quality* FFMPEG [update site](update_site ), which uses native bindings to the {% include wikipedia title='FFmpeg' text='FFmpeg'%} library to read many video formats. The source code for this update site is [embedded in the scifio-javacv history](https://github.com/scifio/scifio-javacv/tree/ffmpeg).
+-   Enable the *beta-quality* FFMPEG [update site](Update_site ), which uses native bindings to the {% include wikipedia title='FFmpeg' text='FFmpeg'%} library to read many video formats. The source code for this update site is [embedded in the scifio-javacv history](https://github.com/scifio/scifio-javacv/tree/ffmpeg).
 
 <!-- -->
 

@@ -7,7 +7,7 @@ categories: News,Fiji,ImageScience
 description: test description
 ---
 
-Resulting from [a discussion](https://github.com/imagescience/ImageScience/pull/1) with {% include person content='ImageScience' %}, the [ImageScience](ImageScience ) plugins have moved to their own dedicated [update site](update_site ), and will no longer be distributed as part of core [Fiji](Fiji ).
+Resulting from [a discussion](https://github.com/imagescience/ImageScience/pull/1) with {% include person content='ImageScience' %}, the [ImageScience](ImageScience ) plugins have moved to their own dedicated [update site](Update_site ), and will no longer be distributed as part of core [Fiji](Fiji ).
 
 What moved?
 -----------
@@ -26,13 +26,13 @@ Why?
 
 The main reasons for the switch are:
 
--   To give Erik more control over the [development lifecycle](development_lifecycle ) ([versioning](versioning ), [releases](releases ), etc.).
+-   To give Erik more control over the [development lifecycle](Development_lifecycle ) ([versioning](Versioning ), [releases](Releases ), etc.).
 -   To avoid a licensing conflict between Fiji's [GPL](GPL ) license and [ImageScience's proprietary one](http://www.imagescience.org/meijering/software/imagescience/).
 
 How does this affect users?
 ---------------------------
 
-If you are using these plugins in your own workflows ([scripts](scripts ), [macros](macros ), [plugins](plugins ), etc.), then you will need to [enable the ImageScience update site](How_to_follow_a_3rd_party_update_site ) for those workflows to remain functional.
+If you are using these plugins in your own workflows ([scripts](Scripts ), [macros](Macros ), [plugins](Plugins ), etc.), then you will need to [enable the ImageScience update site](How_to_follow_a_3rd_party_update_site ) for those workflows to remain functional.
 
 We will leave the current versions of the ImageScience plugins on the Fiji update site for a few more weeks, to give people time to transition to the update site. We anticipate a "spring cleaning" announcement in a couple of months, announcing the removal of several plugins, including the ImageScience ones.
 

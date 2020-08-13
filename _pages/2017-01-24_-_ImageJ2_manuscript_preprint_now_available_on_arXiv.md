@@ -11,7 +11,7 @@ A 36-page technical manuscript describing [ImageJ2](ImageJ2 ) in depth is now av
 
 {% include big-link url='http://arxiv.org/abs/1701.05940 ' %}
 
-This manuscript provides a technical overview of [ImageJ2](ImageJ2 ), including in-depth description of the [architecture](architecture ), with sections on [SciJava Common](SciJava_Common ), [ImageJ Common](ImageJ_Common ), [SCIFIO](SCIFIO ), [ImageJ Ops](ImageJ_Ops ), [ImageJ Legacy](ImageJ_Legacy ), and the [ImageJ Updater](ImageJ_Updater ), as well as a discussion on how ImageJ2 improves upon key areas of functionality, [extensibility](extensibility ), [reproducibility](reproducibility ), usability, performance, [compatibility](compatibility ) and [community](community ).
+This manuscript provides a technical overview of [ImageJ2](ImageJ2 ), including in-depth description of the [architecture](Architecture ), with sections on [SciJava Common](SciJava_Common ), [ImageJ Common](ImageJ_Common ), [SCIFIO](SCIFIO ), [ImageJ Ops](ImageJ_Ops ), [ImageJ Legacy](ImageJ_Legacy ), and the [ImageJ Updater](ImageJ_Updater ), as well as a discussion on how ImageJ2 improves upon key areas of functionality, [extensibility](Extensibility ), [reproducibility](Reproducibility ), usability, performance, [compatibility](Compatibility ) and [community](Community ).
 
 Abstract
 --------

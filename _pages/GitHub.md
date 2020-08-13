@@ -7,7 +7,7 @@ categories: Development,Git
 description: test description
 ---
 
-{% include develop-menu content='tools' %}In the [ImageJ](ImageJ ) and related [SciJava](SciJava ) projects, we make extensive use of [GitHub](https://github.com/), a web site that hosts [open source](open_source ) projects for free.
+{% include develop-menu content='tools' %}In the [ImageJ](ImageJ ) and related [SciJava](SciJava ) projects, we make extensive use of [GitHub](https://github.com/), a web site that hosts [open source](Open_source ) projects for free.
 
 Here are a few tips how to interact via GitHub more effectively:
 

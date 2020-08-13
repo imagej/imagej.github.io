@@ -53,7 +53,7 @@ How to use the plugin
 
 {% include thumbnail src='/images/pages/Spim multiview dialog1.jpg' title='Shows the first dialog that queries the location of the multi-view files'%}
 
-The multi-view fusion consists of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset. Please note that all the parameters will be looked up in the [bead-based registration](SPIM_Bead_Registration ) or [segmentation-based registration](segmentation-based_registration ), so typically just pressing ok is sufficient, except you process a timeseries. These are the options of the first dialog:
+The multi-view fusion consists of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset. Please note that all the parameters will be looked up in the [bead-based registration](SPIM_Bead_Registration ) or [segmentation-based registration](Segmentation-based_registration ), so typically just pressing ok is sufficient, except you process a timeseries. These are the options of the first dialog:
 
 -   **SPIM data directory:** Fill in the directory name that contains all the image files (or directories with equally sized 2d image planes). You can either drag&drop the directory, browse for it or type the name directly.
 

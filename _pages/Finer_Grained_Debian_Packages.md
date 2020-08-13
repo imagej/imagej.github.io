@@ -54,7 +54,7 @@ Longer Version
 
 Clone the respository afresh with:
 
-`   git clone `[`git://fiji.sc/fiji.git`](git_//fiji.sc/fiji.git)
+`   git clone `[`git://fiji.sc/fiji.git`](Git_//fiji.sc/fiji.git)
 
 ... and then initialize and update the following submodules:
 

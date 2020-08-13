@@ -36,7 +36,7 @@ Installation
 
 We used to offer Debian packages of Fiji. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.
 
-If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us in [chat](chat ) or on the [forum](http://forum.imagej.net/c/development) .
+If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us in [chat](Chat ) or on the [forum](http://forum.imagej.net/c/development) .
 
 ' %} Fiji is distributed as a {% include wikipedia title='Portable application' text='portable application'%}. That means that you do not have to run an installer; just download, unpack and start it.
 
@@ -49,7 +49,7 @@ Troubleshooting
 Source code
 ===========
 
-See the [source code](source_code ) page for details on obtaining the Fiji source code.
+See the [source code](Source_code ) page for details on obtaining the Fiji source code.
 
 Other downloads
 ===============

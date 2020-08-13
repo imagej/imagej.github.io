@@ -7,7 +7,7 @@ categories: News,Hackathons,ImageJ2,KNIME
 description: test description
 ---
 
-From Monday, January 11, 2016 through Friday, January 22, 2016, {% include person content='Dietzc' %} of the [University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~30 developers at the [KNIME Konstanz Regional Office](https://www.knime.org/contact) for a [hackathon](hackathon ) to develop the [KNIME](KNIME ) Image Processing extensions along with the underlying [ImageJ Ops](ImageJ_Ops ) library, as well as other supporting technologies such as [ImgLib2](ImgLib2 ) and [ClearVolume](ClearVolume ).
+From Monday, January 11, 2016 through Friday, January 22, 2016, {% include person content='Dietzc' %} of the [University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~30 developers at the [KNIME Konstanz Regional Office](https://www.knime.org/contact) for a [hackathon](Hackathon ) to develop the [KNIME](KNIME ) Image Processing extensions along with the underlying [ImageJ Ops](ImageJ_Ops ) library, as well as other supporting technologies such as [ImgLib2](ImgLib2 ) and [ClearVolume](ClearVolume ).
 
 Timeline
 --------

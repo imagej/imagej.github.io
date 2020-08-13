@@ -47,7 +47,7 @@ Source repository for each core update site:
 Getting started
 ---------------
 
-First of all, start the [updater](updater ) with {% include bc content='Help | Update'%} and click on the *Manage update sites* button:
+First of all, start the [updater](Updater ) with {% include bc content='Help | Update'%} and click on the *Manage update sites* button:
 
 <img src="/images/pages/Mamed-3.jpg" width="770"/>
 

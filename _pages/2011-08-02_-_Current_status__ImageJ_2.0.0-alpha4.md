@@ -21,7 +21,7 @@ We have also expanded support for ROIs and overlays. Rather than allowing only a
 
 ### ImageJ2 plugins
 
-<img src="/images/pages/math-plugins.png" title="fig:Math plugins: ImageJ2 math plugins." width="326" alt="Math plugins: ImageJ2 math plugins." /> We have reimplemented many ImageJ1 plugins within the ImageJ2 [extensibility framework](extensibility ). These plugins illustrate some of the features of ImageJ2, and serve as examples for how to bring legacy plugins up to date.
+<img src="/images/pages/math-plugins.png" title="fig:Math plugins: ImageJ2 math plugins." width="326" alt="Math plugins: ImageJ2 math plugins." /> We have reimplemented many ImageJ1 plugins within the ImageJ2 [extensibility framework](Extensibility ). These plugins illustrate some of the features of ImageJ2, and serve as examples for how to bring legacy plugins up to date.
 
 ImageJ2 supports several types of plugins depending on what you are trying to do. The most straightforward is the `ImageJPlugin`, which is as simple to implement as IJ1's `Plugin` interface—there is a single method, `run()`, that executes the plugin command. The difference is that the plugin's inputs and outputs are explicitly declared using instance fields annotated with `@Parameter`. This eliminates the need to write UI-centric `GenericDialog` code as was needed in IJ1, and provides automatic scripting capabilities for all such plugins.
 
@@ -39,7 +39,7 @@ Like in IJ1, and as you may have guessed from the terminology above, plugins are
 
 <img src="/images/pages/event-debugger.png" title="fig:Event Debugger: The Event Watcher plugin monitors various ImageJ events." width="543" alt="Event Debugger: The Event Watcher plugin monitors various ImageJ events." /> To help keep track of all these details, we have created several plugins useful for debugging ImageJ2 during development. With these plugins (located in the {% include bc content='Plugins &gt; Debug'%} submenu), you can monitor every event published, every object being tracked including `Dataset`s and `Display`s, inspect the details of an image's data structure, and more. Of course, you can do many of these things with an IDE such as Eclipse or NetBeans, but providing these tools from the ImageJ application itself provides more *a posteriori* debugging capabilities to end users when problems occur.
 
-Our eventual goal is to translate all existing core IJ1 plugins into the IJ2 framework. For now, much of the functionality present in IJ1 is accessible in IJ2 through the legacy layer (see below), but by reimplementing the plugins in "pure IJ2" we can slowly phase out the legacy layer. Doing so is important because there are problems running ImageJ1 [headless](headless ), and thus it is difficult to use as a library. In contrast, ImageJ2's plugin framework has been designed with headless operation in mind.
+Our eventual goal is to translate all existing core IJ1 plugins into the IJ2 framework. For now, much of the functionality present in IJ1 is accessible in IJ2 through the legacy layer (see below), but by reimplementing the plugins in "pure IJ2" we can slowly phase out the legacy layer. Doing so is important because there are problems running ImageJ1 [headless](Headless ), and thus it is difficult to use as a library. In contrast, ImageJ2's plugin framework has been designed with headless operation in mind.
 
 ### ImageJ2 modularity
 

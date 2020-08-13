@@ -714,7 +714,7 @@ Installation
 
 -   In [ImageJ 1.x](ImageJ_1.x ), download the [latest released jar](https://github.com/ijpb/MorphoLibJ/releases) into the *plugins* folder.
 -   In [ImageJ2](ImageJ2 ) (including [Fiji](Fiji )), you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites ) the IJPB-plugins site to your list of update sites:
-    1.  Select {% include bc content='Help | Update...'%} from the menu to start the [updater](updater ).
+    1.  Select {% include bc content='Help | Update...'%} from the menu to start the [updater](Updater ).
     2.  Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
     3.  Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
     4.  Click *Apply changes* and restart ImageJ.

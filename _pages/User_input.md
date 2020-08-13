@@ -18,11 +18,11 @@ Each parameter (integer, string input, etc.) corresponds to a user interface ele
 
 There are as many notations/lines as there are items to put in the GUI, and the items are rendered vertically in the resulting interface, in the order of appearance in the code.
 
-See the [script parameters](script_parameters ) page for further details.
+See the [script parameters](Script_parameters ) page for further details.
 
 GenericDialog
 -------------
 
-<img src="/images/pages/Multi-column-dialog.png" title="fig:Multi-column-dialog.png" width="300" alt="Multi-column-dialog.png" /> The [GenericDialog](generic_dialog ) class—part of [ImageJ1](ImageJ1 )—offers more flexibility than the [script parameters](script_parameters ), including custom layout and buttons, but requires more coding—e.g., successive calls to the plugin do not automatically remember previously entered values. Plugins coded using `GenericDialog` are also not automatically usable in other [SciJava](SciJava ) tools such as [KNIME](KNIME ) or [ImageJFX](ImageJFX ).
+<img src="/images/pages/Multi-column-dialog.png" title="fig:Multi-column-dialog.png" width="300" alt="Multi-column-dialog.png" /> The [GenericDialog](Generic_dialog ) class—part of [ImageJ1](ImageJ1 )—offers more flexibility than the [script parameters](Script_parameters ), including custom layout and buttons, but requires more coding—e.g., successive calls to the plugin do not automatically remember previously entered values. Plugins coded using `GenericDialog` are also not automatically usable in other [SciJava](SciJava ) tools such as [KNIME](KNIME ) or [ImageJFX](ImageJFX ).
 
-See the [generic dialog](generic_dialog ) page for further details.
+See the [generic dialog](Generic_dialog ) page for further details.

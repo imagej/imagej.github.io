@@ -22,7 +22,7 @@ Writing ImageJ2 Plugins: A Beginner's Perspective
 Preamble
 --------
 
-Before you consider to write your own [plugin](plugin ) for [ImageJ](ImageJ ), please note that writing a [script](script ) has a much lower barrier to entry than Java plugin development.
+Before you consider to write your own [plugin](Plugin ) for [ImageJ](ImageJ ), please note that writing a [script](Script ) has a much lower barrier to entry than Java plugin development.
 
 Also you may want to have a look at [Introduction\_into\_Macro\_Programming](Introduction_into_Macro_Programming ) as an easy way to automate repetitive tasks with existing tools and plugins.
 
@@ -64,7 +64,7 @@ Both Git and Maven have build in support in current versions of the IDEs mention
 
 Earlier versions of the ImageJ wiki [mentioned another software tool](Project_management ), called [Jenkins](Jenkins ), which is according to Wikipedia "an open source continuous integration tool written in Java". This tool was later replaced by a similar working service called [Travis CI](Travis_CI ). Tools like Maven and Travis CI make it more complicated for casual developers to understand the workflow of ImageJ Plugin development at the beginning. However, these tools are well maintained by the community so that you will not have to think about them too much initially and they facilitate the programming process. For example, concerning "Travis CI" it is enough to know that "Continuous Integration" means merging all developer working copies to a shared mainline several times a day. Here the work of multiple developers is compiled and tested on a single machine to ensure that the combined code produces a working project at any time. For the development of a single plugin for our personal use we can ignore "Travis CI" for the moment. It will be important if you want to share your plugin in the ImageJ updater or even contribute to the ImageJ project.
 
-All [source code](source_code ) is on [GitHub](GitHub ). As ImageJ nowadays is a rather complex project its development is split into several [ImageJ subprojects](Architecture ). For a beginner it is hard to understand the interaction of the different available projects which all contribute under the label "[SciJava](SciJava )" to ImageJ2. The nice thing is, that Maven will help to pull in the necessary code from all ImageJ subprojects automatically with the help of configurations files which are supplied by the ImageJ2 developer community. The ImageJ wiki provides a very first overview of the [SciJava ecosystem](Architecture ) of ImageJ2.
+All [source code](Source_code ) is on [GitHub](GitHub ). As ImageJ nowadays is a rather complex project its development is split into several [ImageJ subprojects](Architecture ). For a beginner it is hard to understand the interaction of the different available projects which all contribute under the label "[SciJava](SciJava )" to ImageJ2. The nice thing is, that Maven will help to pull in the necessary code from all ImageJ subprojects automatically with the help of configurations files which are supplied by the ImageJ2 developer community. The ImageJ wiki provides a very first overview of the [SciJava ecosystem](Architecture ) of ImageJ2.
 
 To make Maven work we need so called `pom.xml` files. These configuration file contains information about the project and various configuration details used by Maven to build the project(s). The `pom.xml` files help to organize everything needed to build ImageJ. You can use any Maven-based project you want with that approach, not just ImageJ. So e.g. you can import {% include github org='fiji ' repo='fiji ' label='fiji/fiji ' %} that way, or an individual plugin such as {% include github org='fiji ' repo='AnalyzeSkeleton ' label='fiji/AnalyzeSkeleton ' %}.
 
@@ -99,7 +99,7 @@ Using JAR works for local development, but it will cause you various problems la
 Build ImageJ with NetBeans, Git and Maven
 -----------------------------------------
 
-Using Maven to develop your plugins is a much better approach. You will not have to commit any JAR files to source control. You can pin your code to fixed, known versions of its dependencies that will provide [reproducible builds](reproducible_builds ) for many years to come.
+Using Maven to develop your plugins is a much better approach. You will not have to commit any JAR files to source control. You can pin your code to fixed, known versions of its dependencies that will provide [reproducible builds](Reproducible_builds ) for many years to come.
 
 Getting the ImageJ sources in NetBeans should be as simple as importing the source from the Git repository.
 

@@ -14,7 +14,7 @@ If you run MATLAB R2017b and later, you don"t need to do this, as it ships and u
 -   Translates data between ImageJ images and MATLAB matrices.
 -   Enables execution of MATLAB scripts from inside ImageJ's [Script Editor](Script_Editor ).
 -   Lets you launch ImageJ and interact with it from inside MATLAB.
--   Allows developers to write additional [plugins](plugins ) which [extend](extensibility ) these capabilities in new directions.
+-   Allows developers to write additional [plugins](Plugins ) which [extend](Extensibility ) these capabilities in new directions.
 
 MATLAB tutorial for ImageJ
 ==========================

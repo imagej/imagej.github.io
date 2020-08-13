@@ -16,7 +16,7 @@ It seems that many projects associated with [Fiji](Fiji ) attach a "2" to their 
 
 In addition, there is a very good, technical reason to go "Fiji2". From the get-go, Fiji set out to make work with ImageJ easier—both for developers and users. For developers in particular, we wanted to have a good infrastructure that helps developing better plugins faster. As part of that, we explored not only new development techniques such as using a [source code management tool](Git ), but we also worked toward a more flexible core.
 
-As an example, we provided a way to run some plugins [without a graphical desktop](Headless ). Due to the design of [ImageJ 1.x](ImageJ1 ), this "headless" mode can work only to a subset to plugins, though. Fiji also started to address other issues with ImageJ 1.x such as the lack of an [updater](updater ), a powerful [editor for macros and scripts](Script_Editor ), or extension points e.g. to add new tools (ImageJ 1.46d added a limited version of Fiji's `AbstractTool` framework).
+As an example, we provided a way to run some plugins [without a graphical desktop](Headless ). Due to the design of [ImageJ 1.x](ImageJ1 ), this "headless" mode can work only to a subset to plugins, though. Fiji also started to address other issues with ImageJ 1.x such as the lack of an [updater](Updater ), a powerful [editor for macros and scripts](Script_Editor ), or extension points e.g. to add new tools (ImageJ 1.46d added a limited version of Fiji's `AbstractTool` framework).
 
 Happily, these and other design limitations are addressed in the next-generation ImageJ!
 
@@ -38,7 +38,7 @@ In this chart, the dark blue boxes denote three of Fiji's plugins, the light blu
 
 It is obvious that many of the depicted components share their dependencies with other components. For example, both the [3D Viewer](3D_Viewer ) and [TrakEM2](TrakEM2 ) rely on [ImgLib2](ImgLib2 ). Now, [ImageJ 1.x](ImageJ1 ) (and many plugins written for it) try to avoid such dependencies since it is inconvenient to force users to keep track of them. The downside for the developer is that they have to implement the same functionality as other people provided, again. As a consequence, such support is often incomplete, and sometimes bugs hide in that code for years.
 
-But in Fiji, we have the [updater](updater ), which makes it easy both for developers and users to manage many dependencies effortlessly.
+But in Fiji, we have the [updater](Updater ), which makes it easy both for developers and users to manage many dependencies effortlessly.
 
 On the road to Fiji2, we also adopted ImageJ2's use of [Maven](Maven )—it is basically an updater for developers, as it makes it easy to keep track of dependencies' different versions and to inspect their source code. It is also superior to the previous approach (the [Fiji Build System](Fiji_Build_System )) that did not allow integration into the many available developer tools (e.g. [Eclipse](Eclipse )).
 

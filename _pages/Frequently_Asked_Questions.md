@@ -140,7 +140,7 @@ Downgrading is generally not recommended as a long-term solution, but can be han
 
 *If you need to downgrade to avoid a critical bug, please [report that bug](Bugs ) to the developers so that it can be fixed in a future version!*
 
--   You can change the version of [ImageJ 1.x](ImageJ_1.x ) used via the {% include bc content='Help | Update ImageJ...'%} menu item. This *only* changes the version of ImageJ 1.x—not all ImageJ components, [plugins](plugins ), etc.
+-   You can change the version of [ImageJ 1.x](ImageJ_1.x ) used via the {% include bc content='Help | Update ImageJ...'%} menu item. This *only* changes the version of ImageJ 1.x—not all ImageJ components, [plugins](Plugins ), etc.
 -   You can [switch to a different version of Java](#How_do_I_launch_ImageJ_with_a_different_version_of_Java? "wikilink").
 -   You can [download a Fiji Life-Line version](Downloads#Fiji ).
 
@@ -199,11 +199,11 @@ ImageJ2 user interfaces are just plugins; ImageJ2 runs with the "ImageJ1 legacy 
 Does ImageJ2 support the ImageJ macro language? Is it deprecated?
 -----------------------------------------------------------------
 
-Thanks to the {% include github org='imagej ' repo='imagej-legacy ' label='ImageJ legacy layer ' %}, [ImageJ1](ImageJ1 ) [macros](macros ) will run unchanged in [ImageJ2](ImageJ2 ), while also allowing to harness ImageJ2's new parameterized [scripting](scripting ) paradigm—something that was previously not possible with the macro language.
+Thanks to the {% include github org='imagej ' repo='imagej-legacy ' label='ImageJ legacy layer ' %}, [ImageJ1](ImageJ1 ) [macros](Macros ) will run unchanged in [ImageJ2](ImageJ2 ), while also allowing to harness ImageJ2's new parameterized [scripting](Scripting ) paradigm—something that was previously not possible with the macro language.
 
 The ImageJ1 macro language has been extremely useful to many users. However, it has a substantial limitation: its functions are separate from those available from Java and the other scripting languages.
 
-In ImageJ2, the goal is to provide one unified set of functions, which is fully accessible from Java and all scripting languages. Hence, ImageJ2 plugins and scripts are more flexible than [ImageJ1](ImageJ1 ) [plugins](plugins ) and [macros](macros ). They can run [headless](headless ) on a server, and are accessible from various applications such as CellProfiler, [KNIME](KNIME ), OMERO, and headless from the command line. We would encourage newly developed scripts and plugins to use the ImageJ2 API since it offers these advantages, but the ImageJ1 API will remain accessible, too.
+In ImageJ2, the goal is to provide one unified set of functions, which is fully accessible from Java and all scripting languages. Hence, ImageJ2 plugins and scripts are more flexible than [ImageJ1](ImageJ1 ) [plugins](Plugins ) and [macros](Macros ). They can run [headless](Headless ) on a server, and are accessible from various applications such as CellProfiler, [KNIME](KNIME ), OMERO, and headless from the command line. We would encourage newly developed scripts and plugins to use the ImageJ2 API since it offers these advantages, but the ImageJ1 API will remain accessible, too.
 
 Can I call ImageJ1 API from an ImageJ2 command?
 -----------------------------------------------
@@ -257,7 +257,7 @@ Doing this is not recommended:
 
 -   Fiji plugin authors test their plugins in Fiji, not vanilla [ImageJ 1.x](ImageJ_1.x ).
 -   An increasing number of plugins use features of [ImageJ2](ImageJ2 ), which are not available in [ImageJ 1.x](ImageJ_1.x ).
--   If you install multiple plugins with complex dependency chains in this manner, you may have dependency [version](version ) conflicts. For things to work, you will need to ensure that all the library versions are compatible. The [ Fiji maintainers](Governance ) have already solved this problem for the [Fiji](Fiji ) distribution.
+-   If you install multiple plugins with complex dependency chains in this manner, you may have dependency [version](Version ) conflicts. For things to work, you will need to ensure that all the library versions are compatible. The [ Fiji maintainers](Governance ) have already solved this problem for the [Fiji](Fiji ) distribution.
 
 So you could save yourself a lot of pain by using Fiji instead.
 
@@ -277,7 +277,7 @@ Interoperability
 How can I call ImageJ from MATLAB, or vice versa?
 -------------------------------------------------
 
-Use the ImageJ-MATLAB [update site](update_site ). See the [MATLAB](MATLAB ) page for details.
+Use the ImageJ-MATLAB [update site](Update_site ). See the [MATLAB](MATLAB ) page for details.
 
 Development
 ===========
@@ -334,10 +334,10 @@ Over the years we evolved a development style as follows:
 
 This development style has been adopted by the [ImageJ team](Contributors ), with two additions (making the fall-out step much smaller):
 
--   tests are added as automated regression tests (to be run by the [continuous integration](continuous_integration ) whenever new changes were pushed) whenever possible.
+-   tests are added as automated regression tests (to be run by the [continuous integration](Continuous_integration ) whenever new changes were pushed) whenever possible.
 -   merges are usually done with *--no-ff*, so that even fast-forwarding branches (i.e. rebased on top of *master*) will get a merge commit in which the branch is described more broadly.
 
-See also [coding style](coding_style ).
+See also [coding style](Coding_style ).
 
 Class loading issue in 3-rd party libraries (e.g. JPPF)
 -------------------------------------------------------
@@ -400,7 +400,7 @@ If your software is written in Java, we recommend using [Maven](Maven ) to struc
 
 If your software is written in another language such as C or Python, there are [many ways to integrate Java functionality](http://loci.wisc.edu/bio-formats/interfacing-non-java-code). You must choose which one is best for your particular requirements.
 
-To facilitate some use cases, we provide a script for generating a combined bundle of all ImageJ-related JARs in a single [uber-JAR](uber-JAR ) library. To use, check out the ImageJ [source code](source_code ) and execute:
+To facilitate some use cases, we provide a script for generating a combined bundle of all ImageJ-related JARs in a single [uber-JAR](Uber-JAR ) library. To use, check out the ImageJ [source code](Source_code ) and execute:
 
 > `mvn -Pdeps package`
 
@@ -440,7 +440,7 @@ We are working to create an architecture where the programs work together and pr
 Would it make sense to merge the ImageJ2 and Fiji projects?
 -----------------------------------------------------------
 
-[Fiji](Fiji ) and [ImageJ2](ImageJ2 ) are fundamentally the same software, using the same [launcher](launcher ). So from the standpoint of development effort, the ImageJ2 and Fiji projects have indeed merged. ImageJ2 is the core software, and several pieces of infrastructure originally developed for Fiji have now migrated to ImageJ2 (e.g., the [Updater](Updater ), [Launcher](Launcher ) and [Script Editor](Script_Editor ) components). At heart, Fiji is just a big collection of life sciences plugins (though "Fijabcolsp" doesn't have quite the same ring to it). In other words, Fiji is just an ImageJ update site ("Fijaius")—and as such, you can obtain a working Fiji installation by downloading ImageJ2, running the updater, and enabling the Fiji update site.
+[Fiji](Fiji ) and [ImageJ2](ImageJ2 ) are fundamentally the same software, using the same [launcher](Launcher ). So from the standpoint of development effort, the ImageJ2 and Fiji projects have indeed merged. ImageJ2 is the core software, and several pieces of infrastructure originally developed for Fiji have now migrated to ImageJ2 (e.g., the [Updater](Updater ), [Launcher](Launcher ) and [Script Editor](Script_Editor ) components). At heart, Fiji is just a big collection of life sciences plugins (though "Fijabcolsp" doesn't have quite the same ring to it). In other words, Fiji is just an ImageJ update site ("Fijaius")—and as such, you can obtain a working Fiji installation by downloading ImageJ2, running the updater, and enabling the Fiji update site.
 
 All of that said, we do not want to get rid of the two distinct project names, since people are familiar with both. But we are integrating resources when feasible: e.g., the [ImageJ wiki](https://imagej.net/) and the [Fiji wiki](https://fiji.sc/) are really both the same wiki with different skins, to make cross-linking more seamless. But we want to ensure it is clear that ImageJ is not a life-sciences-specific project, whereas Fiji is. Historically, because Fiji has a life sciences focus, there have been some users who refused to switch from vanilla [ImageJ1](ImageJ1 ) to Fiji even though Fiji makes users' lives easier in lots of ways. With ImageJ2, we want to avoid such misconceptions.
 
@@ -490,7 +490,7 @@ Use the {% include bc content='Help | [Report a Bug](Report_a_Bug )'%} command, 
 I reported an issue, but it is still not fixed! Why not?
 --------------------------------------------------------
 
-[ImageJ](ImageJ ) is an [Open Source](Open_Source ) community project. The list of [contributors](contributors ) is large but most of the people involved are not paid to work on it. We greatly value community contributions and assistance.
+[ImageJ](ImageJ ) is an [Open Source](Open_Source ) community project. The list of [contributors](Contributors ) is large but most of the people involved are not paid to work on it. We greatly value community contributions and assistance.
 
 There are not many professional developers whose formal jobs include responding to and addressing bug reports. These developers are not paid *solely* to fix bugs—rather, they are working to solve scientific problems and to advance the software's capabilities. And their attention is spread thin across many projects: [ImageJ](https://github.com/imagej), [Fiji](https://github.com/fiji), [SCIFIO](https://github.com/scifio), [SciJava](https://github.com/scijava), [LOCI](https://github.com/uw-loci), [OME](https://github.com/openmicroscopy), [ImgLib2](https://github.com/imglib), [OpenSPIM](https://github.com/openspim), [SLIM Curve](https://github.com/slim-curve), [NAR plugin for Maven](https://github.com/maven-nar), and others.
 
@@ -504,9 +504,9 @@ If you want to increase the chances of your issue being worked on, you can:
 -   Provide a [minimal, complete, verifiable example](http://stackoverflow.com/help/mcve).
 -   [Describe what you already tried](http://whathaveyoutried.com/).
 -   [Put as much effort into your question](http://stackoverflow.com/help/how-to-ask) as you expect to be put into its response.
--   Consider [debugging](debugging ) the issue yourself and [submitting a fix](Contributing ) as a [pull request](https://help.github.com/articles/using-pull-requests).
+-   Consider [debugging](Debugging ) the issue yourself and [submitting a fix](Contributing ) as a [pull request](https://help.github.com/articles/using-pull-requests).
 
-See the [bug reporting best practices](bug_reporting_best_practices ) article for details.
+See the [bug reporting best practices](Bug_reporting_best_practices ) article for details.
 
 How do I contribute a bug fix or patch, or propose an idea for a change?
 ------------------------------------------------------------------------

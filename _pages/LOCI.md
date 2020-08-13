@@ -16,7 +16,7 @@ LOCI plays a very active role in the ImageJ community:
 -   LOCI launched the [ImageJ2](ImageJ2 ), [SCIFIO](SCIFIO ) and [SciJava Common](SciJava_Common ) projects, and continues to drive their development.
 -   Together with [CSBD](CSBD )/[MPI-CBG](MPI-CBG ), LOCI maintains the [Fiji](Fiji ) project.
 -   LOCI founded the [Bio-Formats](Bio-Formats ) project, and led the project's development for several years.
--   LOCI regularly funds and hosts [hackathons](hackathons ) intended to foster community development of [open source](open_source ) biological software projects.
+-   LOCI regularly funds and hosts [hackathons](Hackathons ) intended to foster community development of [open source](Open_source ) biological software projects.
 -   LOCI hosts the `imagej.net` web services, as well as related services including `fiji.sc` and `openspim.org`.
 -   LOCI current funds core [Micro-Manager](Micro-Manager ) development work.
 

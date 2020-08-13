@@ -12,7 +12,7 @@ ImageJ User and Developer Conferences
 
 ![](/images/pages/Imagej-conference-logo.png "Imagej-conference-logo.png")
 
-Approximately every two years from 2006 through 2015, there was a conference focused on [ImageJ](ImageJ )-based software, including both the core program itself, as well as applications and [plugins](plugins ) thereof.
+Approximately every two years from 2006 through 2015, there was a conference focused on [ImageJ](ImageJ )-based software, including both the core program itself, as well as applications and [plugins](Plugins ) thereof.
 
 As the community has grown, the ecosystem of imaging software tools has grown increasingly powerful and diverse, and therefore, the scope of the conferences has grown as well. In 2018, the conference name was changed to communicate this evolution of scope.
 

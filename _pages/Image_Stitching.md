@@ -290,7 +290,7 @@ Additionally to the Stitching plugins, it contains the following libraries. I wa
 
 -   *edu\_mines\_jtk.jar*: Efficient 1-dimensional FFT implementation by [Dave Hale](http://inside.mines.edu/~dhale/jtk/).
 -   *mpicbg.jar*: Transformation package by {% include person content='Saalfeld' %}
--   *[imglib](imglib )*: N-dimensional image processing library for Java by {% include person content='Pietzsch' %}, {% include person content='StephanP' %} & {% include person content='Saalfeld' %}
+-   *[imglib](Imglib )*: N-dimensional image processing library for Java by {% include person content='Pietzsch' %}, {% include person content='StephanP' %} & {% include person content='Saalfeld' %}
 -   *fiji-lib.jar & Fiji\_Plugins.jar*: Fiji libraries by {% include person content='Schindelin' %}
 -   *loci\_tools.jar*: [Bio-Formats](Bio-Formats ) Java library for reading and writing life sciences image file formats. I want to especially thank {% include person content='Rueden' %} and {% include person content='Linkert' %}
 

@@ -8,7 +8,7 @@ description: test description
 ---
 
 {% include info-box content='For a summary of [SciJava](SciJava ) licensing, see the [Licensing](Licensing ) page.' %} {% include menu-licenses%}
-Components distributed via the BIG-EPFL [update site](update_site ) were developed by the [Biomedical Imaging Group](http://bigwww.epfl.ch/) (BIG) at the [École Polytechnique Fédérale de Lausanne](http://epfl.ch/) (EPFL).
+Components distributed via the BIG-EPFL [update site](Update_site ) were developed by the [Biomedical Imaging Group](http://bigwww.epfl.ch/) (BIG) at the [École Polytechnique Fédérale de Lausanne](http://epfl.ch/) (EPFL).
 
 These components are licensed under proprietary terms, incompatible with the [GPL](GPL ) and similar licenses.
 
@@ -35,7 +35,7 @@ The following components are expressly or implicitly licensed this way:
 | **Project**                                                       | **License text**                                           |
 | **[Differentials](Differentials )**                     | http://bigwww.epfl.ch/thevenaz/differentials/#LegalBlurb |
 | **[Extended Depth of Field](Extended_Depth_of_Field )** | http://bigwww.epfl.ch/demo/edf/                          |
-| **[imageware](imageware )**                             | Implicit                                                   |
+| **[imageware](Imageware )**                             | Implicit                                                   |
 | **[MIJ](MIJ )**                                         | http://bigwww.epfl.ch/sage/soft/mij/#term                |
 | **[MosaicJ](MosaicJ )**                                 | http://bigwww.epfl.ch/thevenaz/mosaicj/#LegalBlurb       |
 | **[PointPicker](PointPicker )**                         | Implicit                                                   |
@@ -44,4 +44,4 @@ The following components are expressly or implicitly licensed this way:
 | **[StackReg](StackReg )**                               | http://bigwww.epfl.ch/thevenaz/stackreg/#LegalBlurb      |
 | **[TurboReg](TurboReg )**                               | http://bigwww.epfl.ch/thevenaz/turboreg/#LegalBlurb      |
 | **[UnwarpJ](UnwarpJ )**                                 | http://bigwww.epfl.ch/thevenaz/UnwarpJ/#LegalBlurb       |
-| **[wavelets](wavelets )**                               | Implicit                                                   |
+| **[wavelets](Wavelets )**                               | Implicit                                                   |

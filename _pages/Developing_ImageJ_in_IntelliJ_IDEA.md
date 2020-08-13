@@ -22,7 +22,7 @@ Import the ImageJ source
 ------------------------
 
 1.  From the IDEA menu, choose {% include bc content='Version Control|Checkout from Version Control|Git'%}
-2.  For the Git Repository URL, enter: [`git://github.com/imagej/imagej`](git_//github.com/imagej/imagej)
+2.  For the Git Repository URL, enter: [`git://github.com/imagej/imagej`](Git_//github.com/imagej/imagej)
 3.  Specify a Parent Directory, click Clone, and wait
 4.  When prompted, click Yes to create an IntelliJ IDEA project from the sources
 

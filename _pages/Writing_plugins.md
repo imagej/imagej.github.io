@@ -7,7 +7,7 @@ categories: Tutorials,ImageJ2,Development
 description: test description
 ---
 
-{% include info-box content='This guide provides a technical overview of [plugins](plugins ), including how to """create new plugins""".  
+{% include info-box content='This guide provides a technical overview of [plugins](Plugins ), including how to """create new plugins""".  
 \* If you are interested in developing an """existing""" plugin instead, see [Contributing to a plugin](How_to_contribute_to_an_existing_plugin_or_library ).  
 \* If you have completed a plugin that you would like to """share with the community""", see [Distributing your plugins](Distribution ).
 

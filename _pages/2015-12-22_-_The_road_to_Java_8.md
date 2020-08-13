@@ -13,7 +13,7 @@ description: test description
 For {% include github org='imagej ' repo='imagej ' issue='135 ' label='many reasons ' %}, ImageJ needs to switch to Java 8. Hence, in recent months, the ImageJ team at [LOCI](LOCI ) has been [taking steps toward migrating ImageJ and Fiji toward Java 8](2015-06-15_-_Major_updates_in_the_works ). This week marks a significant milestone in that effort:
 
 1.  Several ImageJ and Fiji components migrated to Java 7 or 8; and
-2.  A new Java-8 [update site](update_site ) was created, which offers the latest releases of these components.
+2.  A new Java-8 [update site](Update_site ) was created, which offers the latest releases of these components.
 
 Key points about ImageJ's Java 8 migration strategy
 ---------------------------------------------------
@@ -41,7 +41,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
 Conflicting update sites
 ------------------------
 
-It is the responsibility of individual update site maintainers to decide if and when they follow this migration process. The following [update sites](update_sites ) are known to cause conflicts when enabled with the **Java-8** update site. If your workflow requires components from these sites, we do not recommend enabling the **Java-8** update site.
+It is the responsibility of individual update site maintainers to decide if and when they follow this migration process. The following [update sites](Update_sites ) are known to cause conflicts when enabled with the **Java-8** update site. If your workflow requires components from these sites, we do not recommend enabling the **Java-8** update site.
 
 *Note:* if you are a maintainer of one of these update sites and need any guidance on how to update your project to comply with the **Java-8** update site, please contact us on the [ImageJ forum](Help ).
 

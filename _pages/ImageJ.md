@@ -8,7 +8,7 @@ description: test description
 ---
 
 {% include aboutmenu%}
-ImageJ is an open source Java image processing program inspired by [NIH Image](NIH_Image ). It runs on any computer with a Java 1.8 or later virtual machine. [Downloadable distributions](Downloads ) are available for Windows, Mac OS X and Linux. ImageJ has a strong, established user base, with thousands of [plugins](plugins ) and [macros](macros ) for performing a wide variety of tasks.
+ImageJ is an open source Java image processing program inspired by [NIH Image](NIH_Image ). It runs on any computer with a Java 1.8 or later virtual machine. [Downloadable distributions](Downloads ) are available for Windows, Mac OS X and Linux. ImageJ has a strong, established user base, with thousands of [plugins](Plugins ) and [macros](Macros ) for performing a wide variety of tasks.
 
 Flavors
 -------

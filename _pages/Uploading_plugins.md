@@ -32,7 +32,7 @@ Please make sure also that the files you are about to upload are clean. You shou
 
 Once everything is ready for upload, just click the button *Upload to Server*.
 
-**Note:** you will need to have an account on [fiji.sc](fiji.sc ) which is in the group *updaters*, and you will only be offered the upload option by the Updater if you work from a working directory with source files.
+**Note:** you will need to have an account on [fiji.sc](Fiji.sc ) which is in the group *updaters*, and you will only be offered the upload option by the Updater if you work from a working directory with source files.
 
 Using the command line
 ----------------------
@@ -69,7 +69,7 @@ The reason why *.jar* files are different is that they are really nothing more t
 
 ### The database
 
-Originally, the database was stored in the file *current.txt*, which is stored in the *update/* directory of [fiji.sc](fiji.sc )'s web server. Its format was simply lines in the form
+Originally, the database was stored in the file *current.txt*, which is stored in the *update/* directory of [fiji.sc](Fiji.sc )'s web server. Its format was simply lines in the form
 
 <filename>` `<timestamp>` `<checksum>
 

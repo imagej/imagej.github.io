@@ -20,7 +20,7 @@ Definitions
 
 Throughout this article, and elsewhere on this wiki, we use the following terms:
 
--   A software **component** is a program, such as a [plugin](plugin ), or a {% include wikipedia title='Library (computing)' text='library'%} of reusable functions. Components are typically designed to work together, and combined to form a {% include wikipedia title='Application software' text='software application'%} such as [ImageJ](ImageJ ). In [Maven](Maven ) terms, a component is a single *artifact*, typically a [JAR file](https://en.wikipedia.org/wiki/JAR_(file_format)).
+-   A software **component** is a program, such as a [plugin](Plugin ), or a {% include wikipedia title='Library (computing)' text='library'%} of reusable functions. Components are typically designed to work together, and combined to form a {% include wikipedia title='Application software' text='software application'%} such as [ImageJ](ImageJ ). In [Maven](Maven ) terms, a component is a single *artifact*, typically a [JAR file](https://en.wikipedia.org/wiki/JAR_(file_format)).
 -   A software **project** is a more general term referring to either a single component or a *collection* of related components. For example, the phrase "ImageJ project" refers to several components including [ImageJ Common](ImageJ_Common ), [ImageJ Ops](ImageJ_Ops ), [ImageJ Legacy](ImageJ_Legacy ) and the [ImageJ Updater](ImageJ_Updater ).
 -   The **SciJava component collection** is the set of all components managed by the `pom-scijava` Bill of Materials. Such **SciJava components** reside across several different architectural layers. See "Bill of Materials" below for details.
 -   **SciJava core components** are SciJava components of the SciJava component layer itself. See "Organizational structure" below.
@@ -29,7 +29,7 @@ Throughout this article, and elsewhere on this wiki, we use the following terms:
 SciJava project structure
 =========================
 
-The [ImageJ](ImageJ ) project, and related projects in the [SciJava](SciJava ) software ecosystem, are carefully structured to foster [extensibility](extensibility ).
+The [ImageJ](ImageJ ) project, and related projects in the [SciJava](SciJava ) software ecosystem, are carefully structured to foster [extensibility](Extensibility ).
 
 Organizational structure
 ------------------------
@@ -72,7 +72,7 @@ With [Maven](Maven ) it is possible to create a [multi-module reactor](http://ma
 
 While many SciJava components used to be structured this way, we found that lumping multiple components into a single Git repository with a multi-module build has disadvantages compared to separate Git repositories with single-module builds:
 
--   Typically, components of a multi-module project are all versioned together, but we have opted for individual [versioning](versioning ) of components, for reasons of [rapid iteration](Philosophy#Release_early.2C_release_often ), [extensibility](extensibility ) and [modularity](Architecture#Modularity ).
+-   Typically, components of a multi-module project are all versioned together, but we have opted for individual [versioning](Versioning ) of components, for reasons of [rapid iteration](Philosophy#Release_early.2C_release_often ), [extensibility](Extensibility ) and [modularity](Architecture#Modularity ).
 -   Individual repositories make it easier for developers to cherry-pick only those components of interest, without building the rest of the code, since dependencies are fetched on demand from remote [Maven](Maven ) repositories.
 -   Concerns are better separated, with each component encapsulating its own codebase, issues, pull requests and technical documentation.
 -   Since every component follows a consistent structure, the supporting tools (e.g., [these scripts](https://github.com/scijava/scijava-scripts)) are simpler to develop and maintain.
@@ -83,7 +83,7 @@ Of course, there are downsides, too:
 -   Issues relevant to multiple components must be filed separately in each issue tracker and cross-referenced.
 -   It can be more difficult to locate code of interest, since the codebase is spread across so many repositories.
 
-As a rule of thumb, we find that multi-module [Maven](Maven ) projects stored within a single Git repository are a natural fit for "big bang" software which is versioned in lockstep and carefully tested before each [release](release ), whereas single-module projects stored in separate Git repositories work well for the [RERO](Philosophy#Release_early.2C_release_often )-style [release](release ) paradigm.
+As a rule of thumb, we find that multi-module [Maven](Maven ) projects stored within a single Git repository are a natural fit for "big bang" software which is versioned in lockstep and carefully tested before each [release](Release ), whereas single-module projects stored in separate Git repositories work well for the [RERO](Philosophy#Release_early.2C_release_often )-style [release](Release ) paradigm.
 
 Maven component structure
 -------------------------
@@ -95,7 +95,7 @@ All components in these organizations use [Maven](Maven ) for [project managemen
 Bill of Materials
 -----------------
 
-The `pom-scijava` parent includes a [Bill of Materials](http://howtodoinjava.com/maven/maven-bom-bill-of-materials-dependency/) (BOM) which declares compatible versions of all components of the **SciJava component collection** in its [dependencyManagement section](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management). These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include `ClassNotFoundException` and `NoSuchMethodError`, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break [backwards compatibility](backwards_compatibility ).
+The `pom-scijava` parent includes a [Bill of Materials](http://howtodoinjava.com/maven/maven-bom-bill-of-materials-dependency/) (BOM) which declares compatible versions of all components of the **SciJava component collection** in its [dependencyManagement section](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management). These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include `ClassNotFoundException` and `NoSuchMethodError`, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break [backwards compatibility](Backwards_compatibility ).
 
 Core libraries
 --------------
@@ -143,7 +143,7 @@ The [SciJava Common](SciJava_Common ) (SJC) library provides a plugin framework 
 Reproducible builds
 ===================
 
-{% include box title='Why are reproducible builds so essential for science? ' width='40% ' float='right ' text='Arguably """the most important thing""" in science is to gain insights about nature """that can be verified by other researchers""". It is this mission for which [ImageJ](ImageJ ) and [Fiji](Fiji ) stand, and it is the central reason why they are [open source](open_source ).
+{% include box title='Why are reproducible builds so essential for science? ' width='40% ' float='right ' text='Arguably """the most important thing""" in science is to gain insights about nature """that can be verified by other researchers""". It is this mission for which [ImageJ](ImageJ ) and [Fiji](Fiji ) stand, and it is the central reason why they are [open source](Open_source ).
 
 To verify results, it is absolutely necessary to be able to reproduce results claimed in scientific articles, and in the interest of efficiency, it should be """easy""" to reproduce the results, and it should """also""" be easy to scrutinize the used methods—incorrect results can be artifacts of flawed algorithms, after all.
 
@@ -197,12 +197,12 @@ In the case of Eclipse, you may need to "Update Maven project" in order to see t
 
 {% include warning-box content='"""Current versions of the Eclipse Maven integration (tested with Eclipse Mars) fail to correctly resolve the `LATEST` version tag to `SNAPSHOT`s. Use the command-line client instead."""' %}
 
-Either way, ***be sure to work on a topic branch while developing code in this fashion.*** You will need to clean up your Git history afterwards before merging things to the `master` branch, in order to achieve [reproducible builds](reproducible_builds ).
+Either way, ***be sure to work on a topic branch while developing code in this fashion.*** You will need to clean up your Git history afterwards before merging things to the `master` branch, in order to achieve [reproducible builds](Reproducible_builds ).
 
 Versioning
 ==========
 
-SciJava components use the [Semantic Versioning](Semantic_Versioning ) system. This scheme communicates information about the [backwards compatibility](backwards_compatibility ) (or lack thereof) between versions of each individual software component. In a nutshell:
+SciJava components use the [Semantic Versioning](Semantic_Versioning ) system. This scheme communicates information about the [backwards compatibility](Backwards_compatibility ) (or lack thereof) between versions of each individual software component. In a nutshell:
 
 > Given a version number MAJOR.MINOR.PATCH, increment the:
 >

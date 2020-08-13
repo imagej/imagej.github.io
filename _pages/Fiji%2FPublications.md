@@ -19,7 +19,7 @@ description: test description
 
 <!-- -->
 
--   A paper about the ImageJ software ecosystem—including [ImageJ](ImageJ ) itself, [ImageJ2](ImageJ2 ), [Fiji](Fiji ), related [SciJava](SciJava ) projects, and various [plugins](plugins )—was published in Molecular Reproduction and Development in July 2015[2].
+-   A paper about the ImageJ software ecosystem—including [ImageJ](ImageJ ) itself, [ImageJ2](ImageJ2 ), [Fiji](Fiji ), related [SciJava](SciJava ) projects, and various [plugins](Plugins )—was published in Molecular Reproduction and Development in July 2015[2].
 
 <!-- -->
 

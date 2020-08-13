@@ -14,7 +14,7 @@ Motivation
 
 If you aren't already familiar with [Docker](https://www.docker.com/), it provides a flexible mechanism for distributing operating system + application state.
 
-For ImageJ, this means a way to guarantee scientific [reproducibility](reproducibility ) across all the variables of software use: not just installed plugins and update sites, but Java versions, system tools, environment variables, and even OS version.
+For ImageJ, this means a way to guarantee scientific [reproducibility](Reproducibility ) across all the variables of software use: not just installed plugins and update sites, but Java versions, system tools, environment variables, and even OS version.
 
 It also should help provide new paradigms for lifeline distributions and minimization of dependencies/prerequisites.
 

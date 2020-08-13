@@ -9,9 +9,9 @@ description: test description
 
 ![ 64px \| left \| link=https://opensource.org/](/images/pages/Osi symbol.png "fig: 64px | left | link=https://opensource.org/") The [ImageJ](ImageJ ) project, and related projects in the [SciJava](SciJava ) software ecosystem, are open source software projects. See the [Licensing](Licensing ) page for details.
 
-Everybody is welcome to [contribute](contribute ) with [plugins](plugins ), patches, [bug reports](Bugs ), [tutorials](tutorials ), [documentation](documentation ), and artwork.
+Everybody is welcome to [contribute](Contribute ) with [plugins](Plugins ), patches, [bug reports](Bugs ), [tutorials](Tutorials ), [documentation](Documentation ), and artwork.
 
-The [SciJava](SciJava ) ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](Source_Code ), public [communication](communication ) channels, public [project management](project_management ) resources, and of course, this [community editable website](Help_Contents ). See the [Philosophy](Philosophy ) page for more information.
+The [SciJava](SciJava ) ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](Source_Code ), public [communication](Communication ) channels, public [project management](Project_management ) resources, and of course, this [community editable website](Help_Contents ). See the [Philosophy](Philosophy ) page for more information.
 
 Why open source?
 ----------------
@@ -28,7 +28,7 @@ The [Science Code Manifesto](http://sciencecodemanifesto.org/discussion) provide
 
 Further, we strive for ImageJ to be a community driven project. It is not merely an {% include wikipedia title='Open source' text='open source'%} *product*, but an open source *process*. ImageJ follows open development practices, and provides open development tools online:
 
--   Public [source code](source_code ) repositories including complete development history.
+-   Public [source code](Source_code ) repositories including complete development history.
 -   Public [issue trackers](Issues ).
 -   Public [communication channels](Communication ) for open discussion.
 -   Public [wiki](https://imagej.net/) for community contributed content.

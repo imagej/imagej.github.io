@@ -7,7 +7,7 @@ categories: Development,IDEs
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %}This article explains how to install, configure and use Eclipse to develop [ImageJ](ImageJ ) [components](components ) and [plugins](plugins ). Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
+{% include develop-menu content='tutorials' %}This article explains how to install, configure and use Eclipse to develop [ImageJ](ImageJ ) [components](Components ) and [plugins](Plugins ). Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
 
 Initial setup
 =============
@@ -72,8 +72,8 @@ Clone the source code
 
 Using your [Git client of choice](http://git-scm.com/downloads/guis), clone the source code which interests you:
 
--   If you want to work on an existing project, see the [list of sources](source_code ).
--   If you are creating your own project, see the [building a pom](building_a_pom ) guide.
+-   If you want to work on an existing project, see the [list of sources](Source_code ).
+-   If you are creating your own project, see the [building a pom](Building_a_pom ) guide.
 
 Import the source code
 ----------------------
@@ -140,7 +140,7 @@ One major problem when debugging [ImageJ 1.x](ImageJ_1.x ) plugins is that Image
         Debug.run("My shiny new plugin", "plugin parameters");
     }
 
-The format of `plugin parameters` can be determined by using the [macro recorder](macro_recorder ), or just pass `null` if your plugin opens a dialog. For more complex plugins that are not macro recordable, you can pass empty strings to the `run` method—it will still launch an ImageJ instance with your plugin on the classpath.
+The format of `plugin parameters` can be determined by using the [macro recorder](Macro_recorder ), or just pass `null` if your plugin opens a dialog. For more complex plugins that are not macro recordable, you can pass empty strings to the `run` method—it will still launch an ImageJ instance with your plugin on the classpath.
 
 If your plugin does not depend on `fiji-lib` by default, you can add it using [maven](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html). Just paste the following block into your `pom.xml` dependencies:
 
@@ -214,7 +214,7 @@ However, if for some reason this doesn't happen you can try the following steps.
     -   If it is not, then in a terminal navigate to the folder containing your project's pom.xml file. And then from the command line run  
         `mvn dependency:get -Dartifact=groupId:artifactId:version:packaging:classifier`.
         -   For example if a project depended on imagej-common and you needed to retrieve the `-sources` JAR, the command you'd type would be:  
-            `mvn dependency:get -Dartifact=net.imagej:imagej-common:0.24.4:`[`jar:sources`](jar_sources)
+            `mvn dependency:get -Dartifact=net.imagej:imagej-common:0.24.4:`[`jar:sources`](Jar_sources)
 3.  If the `-sources` JAR was there, you could check its contents by running the following command from the terminal:  
     `jar tr <path-to-.m2-repo>/repository/`<groupId>`/`<artifactId>`/`<version>`/`<jar-name>`-sources.jar`.
     -   If the file in question isn't there, then unfortunately this project doesn't have source for that class.

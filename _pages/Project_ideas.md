@@ -134,7 +134,7 @@ Scripting
 Add JMathLib (MATLAB clone) support
 -----------------------------------
 
-Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB ) scripts. While it is [wrong to think of pixels as little squares](ftp_//ftp.alvyray.com/Acrobat/6_Pixel.pdf), and literally all [MATLAB](MATLAB ) scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB ) licenses just for that purpose.
+Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB ) scripts. While it is [wrong to think of pixels as little squares](Ftp_//ftp.alvyray.com/Acrobat/6_Pixel.pdf), and literally all [MATLAB](MATLAB ) scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB ) licenses just for that purpose.
 
 MATLAB bundles a Java runtime (and in fact, all of [MATLAB](MATLAB )'s GUI is implemented in Java!) and allows the user to instantiate Java classes and call methods on them:
 
@@ -248,7 +248,7 @@ To overcome the typical problem of loading native libraries via System.loadLibra
     }
     Rengine re = new Rengine();
 
-Teach the Fiji Updater to accept other sites in addition to [fiji.sc](fiji.sc )
+Teach the Fiji Updater to accept other sites in addition to [fiji.sc](Fiji.sc )
 -----------------------------------------------------------------------------------------
 
 The Fiji Updater always looks for a static file containing an XML database of Fiji plugins (both current and past versions) on our website. To put new versions or new plugins there (to *upload into the updater*), you have to be a Fiji developer with write permission for that particular directory on our server.

@@ -7,7 +7,7 @@ categories: Hackathons
 description: test description
 ---
 
-There was a [hackathon](hackathon ) in Madison following the ImageJ [Conference 2015](Conference_2015 ).
+There was a [hackathon](Hackathon ) in Madison following the ImageJ [Conference 2015](Conference_2015 ).
 
 Topic
 -----

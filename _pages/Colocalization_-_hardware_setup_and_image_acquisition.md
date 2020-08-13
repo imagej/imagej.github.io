@@ -78,7 +78,7 @@ Some things we can't do anything about (hey, that's the *light* microscopy facil
 
 -   Diffraction: The spatial resolution of the conventional widefield or confocal (as typically used - noise limited) light microscope is limited by diffraction, and is dependent on the wavelength of the light (shorter is better) and the numerical aperture (NA) of the objective lens (higher is better). XY resolution is better than resolution in Z direction (about 3x better for a high NA objective. Spatial sampling should be done so that there are not less than and not too many more than 2.3 pixels across the resolution limit (according to Nyqvist). For a high NA lens (say a 63x 1.4 oil immersion) this means the pixels in XY should be about 80-100 nm, and in Z about 250 nm. Also see Sampling below.
 
-If the blurring of you images is too much, you might want to consider [deconvolution](deconvolution ). Have a look at [this page](http://support.svi.nl/wiki/BlurAndNoiseAffectColocalization) from SVI (the guys that provides [Huygens](Huygens ) software to see how it can help.
+If the blurring of you images is too much, you might want to consider [deconvolution](Deconvolution ). Have a look at [this page](http://support.svi.nl/wiki/BlurAndNoiseAffectColocalization) from SVI (the guys that provides [Huygens](Huygens ) software to see how it can help.
 
   
 

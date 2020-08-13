@@ -44,7 +44,7 @@ Lines 26 and 27 can now be edited, replaced with the functional macro code you w
 Option 3 - Batch Processing with Script Parameters
 ==================================================
 
-{% include info-box content='This section is currently being expanded to document the current state of the [SciJava Batch Processor](https://github.com/scijava/batch-processor/). The Batch Processor is a new addition to the SciJava/ImageJ framework. If you encounter any issues, please report/ask on the [forum](forum ).' %}
+{% include info-box content='This section is currently being expanded to document the current state of the [SciJava Batch Processor](https://github.com/scijava/batch-processor/). The Batch Processor is a new addition to the SciJava/ImageJ framework. If you encounter any issues, please report/ask on the [forum](Forum ).' %}
 
 See also
 ========

@@ -32,7 +32,7 @@ Here is the list of participants together with their primary affiliation:
 | Christian Dietz        | [KNIME](KNIME )                                     |
 | Martin Horn            | [KNIME](KNIME )                                     |
 | Melissa Linkert        | [OME](OME ) ([Bio-Formats](Bio-Formats )) |
-| Erwin Frise            | [Fiji](Fiji )/[uManager](uManager )       |
+| Erwin Frise            | [Fiji](Fiji )/[uManager](UManager )       |
 | Mark Longair           | [Fiji](Fiji )                                       |
 | Josh Moore             | [OMERO](OMERO )                                     |
 | Jean-Marie Burel       | [OMERO](OMERO )                                     |

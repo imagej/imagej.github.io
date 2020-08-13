@@ -18,7 +18,7 @@ description: test description
 
 We ask users to cite:
 
-1.  Any [specific publications](Category_Citable ) of [plugins](plugins ) used.
+1.  Any [specific publications](Category_Citable ) of [plugins](Plugins ) used.
 2.  The general paper of ImageJ distribution(s) used—e.g., if you used [Fiji](Fiji ), cite the [Fiji](Fiji ) paper.
 3.  The general [ImageJ](ImageJ ) paper.
 

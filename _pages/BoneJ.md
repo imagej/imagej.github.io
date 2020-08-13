@@ -21,7 +21,7 @@ description: test description
 {% endcapture %}
 {% include info-box name='BoneJ ' software='ImageJ ' logo='<img src="/images/pages/Bonej-icon.png" width="96"/> ' author=author maintainer=maintainer source=source released='Dec 11<sup>th</sup>, 2017 ' latest-version=' [styloid-r7](https://github.com/bonej-org/BoneJ2/releases) ' status='Active ' %} BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is the new, modernized version of the software available through the ImageJ [updater](https://imagej.net/Updater). Its update site is called [BoneJ](http://sites.imagej.net/BoneJ). For the old ImageJ1 version, see [BoneJ1](BoneJ1 ).
 
-This version works with the latest Fiji, and complies with the modern ImageJ [architecture](architecture ). Most plug-ins also now support hyperstacks, i.e. images with multiple channels or time frames.
+This version works with the latest Fiji, and complies with the modern ImageJ [architecture](Architecture ). Most plug-ins also now support hyperstacks, i.e. images with multiple channels or time frames.
 
 Below is the documentation for the plug-ins included in BoneJ.
 

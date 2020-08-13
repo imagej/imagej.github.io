@@ -21,7 +21,7 @@ The beginning
 
 Back when I met [Albert Cardona](http://albert.rierol.net) at the [first ImageJ conference](Conference_2006 ), it became pretty apparent pretty quickly that not only would we become good friends, but also that we had a lot of mutual respect for the work we had done so far. His biggest accomplishment was certainly [TrakEM2](TrakEM2 ), but he had also worked on the macro interpreter (including a so-called [Command Line Interface](Macro_Interpreter ), which is a two-paned window for interactive macro evaluation) and had already turned to [Jython](Jython_Scripting ) as a more powerful way to script ImageJ. At that time, I had not worked all that many years with ImageJ, but I already was maintainer of [ImageJA](ImageJA ).
 
-Over the years, we had more and more contact, meeting briefly in [Würzburg](http://genetics.biozentrum.uni-wuerzburg.de/main/) and later at a [hackathon](hackathon ) at [Janelia Farms](http://www.hhmi.org/bulletin/nov2007/chronicle/hackathon.html), where we met with a bunch of enthusiastic people who all tried to bridge neuro science with software development (even if I was there, the article does not show a photo of me, because they did the article in the second week, and back then I was not on too-good terms with my employer, so I dared only ask to leave for one).
+Over the years, we had more and more contact, meeting briefly in [Würzburg](http://genetics.biozentrum.uni-wuerzburg.de/main/) and later at a [hackathon](Hackathon ) at [Janelia Farms](http://www.hhmi.org/bulletin/nov2007/chronicle/hackathon.html), where we met with a bunch of enthusiastic people who all tried to bridge neuro science with software development (even if I was there, the article does not show a photo of me, because they did the article in the second week, and back then I was not on too-good terms with my employer, so I dared only ask to leave for one).
 
 After an exciting hackathon, you almost always have to take a few breaths for a couple of weeks. In other words, you are no longer as productive, and if you are a workaholic like me, you fall into a depression.
 
@@ -68,7 +68,7 @@ After some weeks I was reasonably comfortable with Fiji and thought about wrappi
 
 Little did I know just how many people Albert told about this project. I thought it was really focused on TrakEM2, but as Albert's motto is (or at least back then, was) *The sky is the limit*, he had told a few people at the Max-Planck Institute of Molecular Cell Biology and Genetics in Dresden. Sorry for the lengthy title, earlier I always referred to it as "the Max-Planck in Dresden", but there are three. The MPI-CBG just happens to be the biggest one in Dresden. And probably also one of the most important Max-Planck Institutes on this planet. But sorry, I digress.
 
-At one point Albert told me. Apparently the good people in Dresden were not only interested in our little software project, but were actually enthusiastic. Enthusiastic enough that they provided us with a nice, beefy [server](Pacific ), and offered to organize a [hackathon](hackathon ) to kick-start Fiji as a much bigger project!
+At one point Albert told me. Apparently the good people in Dresden were not only interested in our little software project, but were actually enthusiastic. Enthusiastic enough that they provided us with a nice, beefy [server](Pacific ), and offered to organize a [hackathon](Hackathon ) to kick-start Fiji as a much bigger project!
 
 Fiji won't quit
 ---------------

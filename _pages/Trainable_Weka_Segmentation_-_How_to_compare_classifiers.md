@@ -19,7 +19,7 @@ To get started, open the 2D image or stack you want to work on and launch the [T
 
 <img src="/images/pages/Screenshot-open-AWS.png" width="700"/>
 
-For this tutorial, we used one of the TEM sections from [ Albert Cardona's public data set](public_data_sets ).
+For this tutorial, we used one of the TEM sections from [ Albert Cardona's public data set](Public_data_sets ).
 
 After loading, the main GUI of the plugin will pop up: <img src="/images/pages/Screenshot-AWS-startup.png" width="700"/>
 

@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %}[SciJava](SciJava ) components use the [Semantic Versioning](http://semver.org/) (SemVer) system. This scheme communicates information about the [backwards compatibility](backwards_compatibility ) (or lack thereof) between versions of each individual software component. {% include clear content='left' %}
+{% include develop-menu content='tutorials' %}[SciJava](SciJava ) components use the [Semantic Versioning](http://semver.org/) (SemVer) system. This scheme communicates information about the [backwards compatibility](Backwards_compatibility ) (or lack thereof) between versions of each individual software component. {% include clear content='left' %}
 
 Summary
 -------
@@ -50,7 +50,7 @@ The following are practical examples of what is not part of the SciJava "public 
 
 <!-- -->
 
--   **SPI** ({% include wikipedia title='Service provider interface' text='\'\'\'S\'\'\'ervice \'\'\'P\'\'\'rovider \'\'\'I\'\'\'nterface'%}) [compatibility](compatibility )—the set of classes and interfaces that are *extended* and *implemented* by downstream *implementors*. For example, if your code provides its own implementation of the {% include javadoc package='org/scijava/module ' class='ModuleService ' %} interface, updating to a new version of `scijava-common` may break your code due to the addition of new method signatures which your class does not implement.
+-   **SPI** ({% include wikipedia title='Service provider interface' text='\'\'\'S\'\'\'ervice \'\'\'P\'\'\'rovider \'\'\'I\'\'\'nterface'%}) [compatibility](Compatibility )—the set of classes and interfaces that are *extended* and *implemented* by downstream *implementors*. For example, if your code provides its own implementation of the {% include javadoc package='org/scijava/module ' class='ModuleService ' %} interface, updating to a new version of `scijava-common` may break your code due to the addition of new method signatures which your class does not implement.
 
 Note that these many of these limitations can be mitigated in practice. For example, developers can make a best effort to limit SPI breakages, submit upstream patches instead of working around software, and consume a BOM to ensure cross-library compatibility.
 

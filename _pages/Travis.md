@@ -17,8 +17,8 @@ Services
 
 -   Perform builds of SciJava projects. Travis deploys `SNAPSHOT` builds to the [SciJava Maven repository](https://maven.scijava.org/) in response to pushes to each code repository's `master` branch. So any downstream projects depending on a version of `LATEST` for a given component will match the last successful Travis build—i.e., the latest code on `master`.
 -   Run each project's associated {% include wikipedia title='Unit testing' text='unit tests'%}. Travis is instrumental in early detection of new bugs introduced to the codebase.
--   Perform [releases](releases ) of [SciJava](SciJava ) projects. Travis deploys release builds to the appropriate Maven repository—typically either the SciJava Maven repository or [OSS Sonatype](https://oss.sonatype.org/).
--   Keep the [javadoc](javadoc ) site updated.
+-   Perform [releases](Releases ) of [SciJava](SciJava ) projects. Travis deploys release builds to the appropriate Maven repository—typically either the SciJava Maven repository or [OSS Sonatype](https://oss.sonatype.org/).
+-   Keep the [javadoc](Javadoc ) site updated.
 -   Keep other web resources updated.
 
 Automatic Deployment of Maven Artifacts
@@ -29,7 +29,7 @@ Deploying your library to a [Maven](Maven ) repository makes it available for ot
 Requirements
 ------------
 
--   Host your [open-source](open-source ) project on [GitHub](GitHub ).
+-   Host your [open-source](Open-source ) project on [GitHub](GitHub ).
 -   Log in to [Travis CI](https://travis-ci.com/auth) with your corresponding GitHub account and enable your repository.
 -   Contact an ImageJ admin in [Gitter](Chat#Gitter ) or [the Image.sc Forum](http://forum.image.sc/) and request that they file a PR which adds Travis support to your repository.
 
@@ -41,7 +41,7 @@ In order to add Travis CI support to a repository, the SciJava credentials are n
 Testing things which cannot run headless
 ----------------------------------------
 
-If your tests require a display (i.e.: they do not pass when run [headless](headless )), you can use [Xvfb](Xvfb ) as follows:
+If your tests require a display (i.e.: they do not pass when run [headless](Headless )), you can use [Xvfb](Xvfb ) as follows:
 
     before_script:
       - "export DISPLAY=:99.0"

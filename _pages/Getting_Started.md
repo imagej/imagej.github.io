@@ -14,7 +14,7 @@ description: test description
 Installation
 ============
 
-First, you should to [install](install ) ImageJ!
+First, you should to [install](Install ) ImageJ!
 
 The main window
 ===============

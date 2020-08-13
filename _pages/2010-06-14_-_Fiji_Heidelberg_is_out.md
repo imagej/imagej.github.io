@@ -38,7 +38,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   many, many improvements in [bUnwarpJ](bUnwarpJ ) (thanks Ignacio Arganda-Carreras).
+-   many, many improvements in [bUnwarpJ](BUnwarpJ ) (thanks Ignacio Arganda-Carreras).
 
 <!-- -->
 

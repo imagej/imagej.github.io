@@ -9,9 +9,9 @@ description: test description
 
 [ImageJ 1.x](ImageJ1 ) was never meant as anything else than a desktop application with one user in front of one screen attached to one computer.
 
-However, it acquired [macro](macro ) capabilities, a [batch mode](batch_mode ) for such macros, and even [scripting](scripting ) support.
+However, it acquired [macro](Macro ) capabilities, a [batch mode](Batch_mode ) for such macros, and even [scripting](Scripting ) support.
 
-Naturally, users want to execute such [macros](macros ) or [scripts](scripts ) in environments such as clusters where there is no graphical user interface available.
+Naturally, users want to execute such [macros](Macros ) or [scripts](Scripts ) in environments such as clusters where there is no graphical user interface available.
 
 The problem
 ===========
@@ -67,7 +67,7 @@ In that case, the RunBatch.ijm file should be something like:
 
 the `getArgument()` is used to grab the parameter string itself, and it is then passed to an IJ command.
 
-{% include warning-box content='Please note that you will not be able to use [script parameters](script_parameters ) with `-macro`. Follow instructions in [Scripting Headless](Scripting_Headless ) instead.' %}
+{% include warning-box content='Please note that you will not be able to use [script parameters](Script_parameters ) with `-macro`. Follow instructions in [Scripting Headless](Scripting_Headless ) instead.' %}
 
 Xvfb
 ----

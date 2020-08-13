@@ -13,19 +13,19 @@ description: test description
 -   For information on the ""legal"" structure, see [Licensing](Licensing ).' %}
 
 {% include aboutmenu%}
-The [ImageJ](ImageJ ) project, and related projects in the [SciJava](SciJava ) software ecosystem, are governed as [open source](open_source ) software projects. Everybody is welcome to [contribute](contribute ) with [plugins](plugins ), patches, [bug reports](Bugs ), [tutorials](tutorials ), [documentation](documentation ), and artwork.
+The [ImageJ](ImageJ ) project, and related projects in the [SciJava](SciJava ) software ecosystem, are governed as [open source](Open_source ) software projects. Everybody is welcome to [contribute](Contribute ) with [plugins](Plugins ), patches, [bug reports](Bugs ), [tutorials](Tutorials ), [documentation](Documentation ), and artwork.
 
 That said, every project needs leaders: the ones who participate in *governance* of the project, {% include wikipedia title='Software maintenance' text='maintaining'%} the software and making key decisions.
 
 Project roles
 -------------
 
-Because [open source](open_source ) software (OSS) is highly collaborative, it is extremely important to understand the difference between various roles on the project, to avoid misconceptions about **authority** (who makes decisions) and **responsibility** (who is pledged to do the work) concerning each project.
+Because [open source](Open_source ) software (OSS) is highly collaborative, it is extremely important to understand the difference between various roles on the project, to avoid misconceptions about **authority** (who makes decisions) and **responsibility** (who is pledged to do the work) concerning each project.
 
 The most common roles in OSS are:
 
 -   **Founders** are the people who originally launched the project.
--   **Leads** are responsible for making final decisions. In the [open source](open_source ) world these people are often referred to as [benevolent dictators](http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html). Changes with a serious impact on the community are typically [discussed on open channels](Community ) first.
+-   **Leads** are responsible for making final decisions. In the [open source](Open_source ) world these people are often referred to as [benevolent dictators](http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html). Changes with a serious impact on the community are typically [discussed on open channels](Community ) first.
 -   **Maintainers** keep the project functional, fix bugs and make releases. They often make day to day decisions, and are typically involved in discussion with the project lead(s) regarding major decisions, although the lead has final decision-making authority.
 -   **Developers** are people who work on the project significantly or often. Typically they have direct push access to the source code. In some cases they make day to day decisions, depending on their experience and comfort level with the project.
 -   **Contributors** are people who help with the project either currently or in the past. They may participate occasionally or sporadically, and are typically not involved in project decision making.
@@ -37,9 +37,9 @@ Projects in the [SciJava component collection](Architecture ) define each compon
 | Role        | Commitment                                                                                                                         |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------|
 | Founder     | Created the project. Does not imply any current participation or responsibility.                                                   |
-| Lead        | Has decision-making authority: timing of [releases](releases ), inclusion of features, etc.                              |
+| Lead        | Has decision-making authority: timing of [releases](Releases ), inclusion of features, etc.                              |
 | Developer   | Adds new features or enhancements. Can be assigned to address feature requests.                                                    |
-| Debugger    | Fixes [bugs](Issues ). Can be assigned open [issues](issues ) to solve.                                        |
+| Debugger    | Fixes [bugs](Issues ). Can be assigned open [issues](Issues ) to solve.                                        |
 | Reviewer    | Reviews [patch submissions](Contributing ).                                                                              |
 | Support     | Responds to [community questions](Community ) and [issue reports](Issues ). Keeps the issue tracker organized. |
 | Maintainer  | Merges [patch submissions](Contributing ). Cuts releases.                                                                |
@@ -50,7 +50,7 @@ Individuals often fill more than one role.
 Component status
 ----------------
 
-This web site documents lots of software [components](components )—and in particular, many ImageJ [plugins](plugins ). Components in the ecosystem each have a distinct development path, with varying levels of maturity and activity, which is ultimately determined by the people who participate in developing it.
+This web site documents lots of software [components](Components )—and in particular, many ImageJ [plugins](Plugins ). Components in the ecosystem each have a distinct development path, with varying levels of maturity and activity, which is ultimately determined by the people who participate in developing it.
 
 Each component's page features an informational sidebar with a status report derived from the component's declared *team*. This sidebar is intended to help users understand what level to expect when seeking help, reporting issues, and submitting feature requests.
 
@@ -60,14 +60,14 @@ Each component's page features an informational sidebar with a status report der
 
 | Status   | Meaning                                                                                                                                                                                     |
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Unstable | Project is under heavy development, with unstable API undergoing iterations of refinement. Typically, these components are either unreleased, or [versioned at 0.x](versioning ). |
+| Unstable | Project is under heavy development, with unstable API undergoing iterations of refinement. Typically, these components are either unreleased, or [versioned at 0.x](Versioning ). |
 | Active   | New features are being actively developed. API breakages are kept as limited as possible.                                                                                                   |
 | Stable   | No new features are under development. API is stable.                                                                                                                                       |
 | Obsolete | The project is discontinued.                                                                                                                                                                |
 
 ### Support status
 
-**Support status** indicates the level to which the team responds to questions and [issue reports](bugs ).
+**Support status** indicates the level to which the team responds to questions and [issue reports](Bugs ).
 
 | Status  | Meaning                                                                                                                                                                                         |
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

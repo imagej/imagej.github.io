@@ -39,7 +39,7 @@ The typical option is single-channel registration, even if you want to process a
 
 Both options work in the exactly same way and have very similar options. The additional options of multi-channel registration are explained in the last section.
 
-***Important note:** the output of the plugin are not images, but only registration matrices that serve as basis for either the [multi-view fusion plugin](Multi-View_Fusion ) or the [multi-view deconvolution plugin](multi-view_deconvolution_plugin ). An overview of the complete registration and fusion process can be found [here](SPIM_Registration ).*
+***Important note:** the output of the plugin are not images, but only registration matrices that serve as basis for either the [multi-view fusion plugin](Multi-View_Fusion ) or the [multi-view deconvolution plugin](Multi-view_deconvolution_plugin ). An overview of the complete registration and fusion process can be found [here](SPIM_Registration ).*
 
 How to use the plugin
 ---------------------

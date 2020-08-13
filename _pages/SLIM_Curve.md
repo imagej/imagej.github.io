@@ -37,7 +37,7 @@ The SLIM Curve library code is written in C89 compatible C and is thread-safe fo
 Installation
 ------------
 
-The SLIM Curve plugin is available from the "SLIM Curve" [update site](update_site ).
+The SLIM Curve plugin is available from the "SLIM Curve" [update site](Update_site ).
 
 Once you have installed the SLIM Curve plugin it becomes available on the menu under {% include bc content='Analyze | Lifetime | SLIM Curve'%}.
 

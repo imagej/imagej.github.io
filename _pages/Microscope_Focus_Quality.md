@@ -65,7 +65,7 @@ The plugin predicts an absolute measure of image focus on a single image in isol
 Installation
 ------------
 
--   [Enable](Following_an_update_site ) the TensorFlow [update site](update_site ).
+-   [Enable](Following_an_update_site ) the TensorFlow [update site](Update_site ).
 -   The command is in {% include bc content='Plugins | Classification | Microscope Image Focus Quality'%}.
 
 Usage
@@ -81,7 +81,7 @@ Usage
 
 The screenshot above uses the "Overlay probability patches" option with a thickness of 5.
 
-If you wish to access the results of the classification quantitatively (e.g., as part of an automated workflow via [scripting](scripting )), use the "Generate probability image" option.
+If you wish to access the results of the classification quantitatively (e.g., as part of an automated workflow via [scripting](Scripting )), use the "Generate probability image" option.
 
 You can can remove the probability patches overlay via the {% include bc content='Image | Overlay | Remove Overlay'%} command.
 

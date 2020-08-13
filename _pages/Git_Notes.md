@@ -290,7 +290,7 @@ Tutorials
     git config branch.master.remote origin
     git config branch.master.merge refs/heads/master
 
-Creates a bare remote repository at [`ssh://server/home/you/remote.git`](ssh_//server/home/you/remote.git) that tracks your local repository in `/home/you/local`. Adopted from [Tim Lucas](http://toolmantim.com/articles/setting_up_a_new_remote_git_repository).
+Creates a bare remote repository at [`ssh://server/home/you/remote.git`](Ssh_//server/home/you/remote.git) that tracks your local repository in `/home/you/local`. Adopted from [Tim Lucas](http://toolmantim.com/articles/setting_up_a_new_remote_git_repository).
 
 ### Displaying a filtered set of commits
 

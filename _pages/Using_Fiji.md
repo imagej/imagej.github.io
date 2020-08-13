@@ -15,7 +15,7 @@ Useful information about using Fiji can be found here:
 -   [Getting started with Fiji](Getting_started )
 -   [Tutorials](Category_Tutorials ) (also [external ones](External_tutorials ))
 -   [Introduction into Macro Programming](Introduction_into_Macro_Programming )
--   Example images you'll find in the {% include bc content='File | Open Samples'%} menu or in [public data sets](public_data_sets )
+-   Example images you'll find in the {% include bc content='File | Open Samples'%} menu or in [public data sets](Public_data_sets )
 -   Some [ImageJ tricks](ImageJ_tricks )
 -   Descriptions of bundled [Plugins](Category_Plugins )
 -   A detailed overview of the [Plugins Menu](Plugins_Menu )

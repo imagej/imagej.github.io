@@ -10,7 +10,7 @@ description: test description
 **Overview**
 ------------
 
-This plugin provides a more impartial, reproducible, and mathematically rigorous way of calculating interplanar spacing, which makes it more accurate than [calc dSpace](calc_dSpace ). It is also easier to use on diffraction patterns where it is hard to tell which reflections originate at like planes in the crystal. Get dSpace helps the user figure this out.
+This plugin provides a more impartial, reproducible, and mathematically rigorous way of calculating interplanar spacing, which makes it more accurate than [calc dSpace](Calc_dSpace ). It is also easier to use on diffraction patterns where it is hard to tell which reflections originate at like planes in the crystal. Get dSpace helps the user figure this out.
 
 **How it Works**
 ----------------
@@ -33,7 +33,7 @@ This is the window that opens up when you first start the plugin. All you need f
 -   **Binning Size:** this sets a value in the plugin that is used to distinguish between like planes (110, 101, and 011) and different planes (100, 110, 111,...).
 -   **Display modes:** these options allow the user to operate the plugin in three different modes. The *Measurements* mode does not give you a summary plot or table, which is convenient if you are optimizing your settings for a single DP. The *Summary* mode closes the two measurement windows (so you don't have to) and only shows the summary table and plot. *All* leaves all four windows open, so you see everything.
 -   **d-spacing list:** yet a fifth window that you can enable, which allows you to view the list of d-spacing values in a text window on a single line.
--   **Ring Overlay:** not shown in the image above, but a new option that draws circles on the diffraction pattern that correspond to the measurements made, and adds an inset with a list of d-values. See [calc dSpace](calc_dSpace ) for more info.
+-   **Ring Overlay:** not shown in the image above, but a new option that draws circles on the diffraction pattern that correspond to the measurements made, and adds an inset with a list of d-values. See [calc dSpace](Calc_dSpace ) for more info.
 
 ### **Adjust Threshold**
 

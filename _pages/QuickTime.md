@@ -10,7 +10,7 @@ description: test description
 {% include menu-formats%}
 The {% include wikipedia title='QuickTime File Format' text='QuickTime movie format'%} is a multimedia container format with extension `.mov`.
 
-QuickTime MOV files come in many flavors, which are known as codecs. Whether you can open an MOV file in ImageJ will depend on several factors, including the codec used to store the movie, which version of which operating system you have, and which ImageJ [plugin](plugin ) is used.
+QuickTime MOV files come in many flavors, which are known as codecs. Whether you can open an MOV file in ImageJ will depend on several factors, including the codec used to store the movie, which version of which operating system you have, and which ImageJ [plugin](Plugin ) is used.
 
 There are several ways to import MOV files into ImageJ, each discussed below.
 
@@ -43,7 +43,7 @@ You can accomplish all of the above by pasting the following command into a runn
 FFMPEG
 ------
 
-There is an [update site](update_site ) called FFMPEG which enables support for opening movie files via the {% include wikipedia title='FFMPEG' text='FFMPEG library'%}. This update site ships native libraries, which should work on Windows, OS X and Linux platforms, but not other platforms (AIX, Solaris, etc.).
+There is an [update site](Update_site ) called FFMPEG which enables support for opening movie files via the {% include wikipedia title='FFMPEG' text='FFMPEG library'%}. This update site ships native libraries, which should work on Windows, OS X and Linux platforms, but not other platforms (AIX, Solaris, etc.).
 
 See the [FFMPEG supported codecs](https://www.ffmpeg.org/general.html#Video-Codecs) page for a list of supported codecs.
 

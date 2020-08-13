@@ -16,7 +16,7 @@ How to troubleshoot problems
 Checking the Java version
 -------------------------
 
-You can tell which Java version ImageJ is using by clicking the ImageJ [status bar](status_bar ) and looking for the part that says e.g. "Java 1.8.0\_45 \[64-bit\]". The relevant number is the one after "Java 1."—so e.g. "Java 1.8.0\_45" or similar indicates Java 8, while "Java 1.7.0\_79" or similar indicates Java 7.
+You can tell which Java version ImageJ is using by clicking the ImageJ [status bar](Status_bar ) and looking for the part that says e.g. "Java 1.8.0\_45 \[64-bit\]". The relevant number is the one after "Java 1."—so e.g. "Java 1.8.0\_45" or similar indicates Java 8, while "Java 1.7.0\_79" or similar indicates Java 7.
 
 On OS X, you can use [this script](https://raw.githubusercontent.com/ctrueden/ctr-scripts/master/java-info) to diagnose which versions of Java are installed on your system.
 
@@ -114,7 +114,7 @@ You can replace the `512m` with however many megabytes of memory you wish to giv
 
 If the ImageJ window never appears after launching the program, the installation may be corrupted. While the developers of ImageJ make a serious effort to prevent this problem from happening, it is still possible after running the {% include bc content='Help | Update...'%} command, due to bugs in the [Updater](Updater ).
 
-The easiest workaround is to [download](download ) a fresh copy of the software.
+The easiest workaround is to [download](Download ) a fresh copy of the software.
 
 If you are feeling investigative, you can try [launching ImageJ from the console](#Launching_ImageJ_from_the_console "wikilink") to get more information about why it is failing to start up. After doing that, you will probably see some information printed to the console, which you can paste online to somewhere like [Pastebin.com](http://pastebin.com/), and write to the [Community](Community ) to ask for help deciphering it.
 
@@ -169,10 +169,10 @@ Note that [lossy compression is not suitable for quantitative image analysis](Pr
 The same plugin gives different results on different machines!
 --------------------------------------------------------------
 
-While ImageJ strives for [reproducible](reproducible ) analysis, there are many reasons results can differ. Check the following:
+While ImageJ strives for [reproducible](Reproducible ) analysis, there are many reasons results can differ. Check the following:
 
 -   Ensure that the version of [ImageJ](ImageJ ) is exactly the same on both machines.
-    -   Click the [status bar](status_bar ) and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
+    -   Click the [status bar](Status_bar ) and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
     -   If these two values differ between your machines, the versions are not the same.
     -   See also [How can I verify that my ImageJ is really 100% up to date?](Frequently_Asked_Questions#How_can_I_verify_that_my_ImageJ_is_really_100%_up_to_date? ).
     -   If the two versions of ImageJ match but produce different numerical results, it is a bug—please [report it](Report_a_Bug )!
@@ -185,7 +185,7 @@ While ImageJ strives for [reproducible](reproducible ) analysis, there are many 
     -   {% include bc content='Image | Overlay | Overlay Options...'%}
     -   {% include bc content='Analyze | Gels | Gel Analyzer Options...'%}
     -   Press L for the [Command Finder](Command_Finder ) and type "options" and double check any other options you think might be relevant.
--   If you are running your analysis [headless](headless ), there might be a bug in the headless support.
+-   If you are running your analysis [headless](Headless ), there might be a bug in the headless support.
     -   Try the analysis *headless* on both machines and see if the results match.
     -   Try the analysis *headless* vs. through the GUI on a single machine, and see if the results match.
     -   If the results differ due to headlessness, it is a bug—please [report it](Report_a_Bug )!
@@ -206,7 +206,7 @@ The first thing to do is make sure that ImageJ has a large enough "maximum heap"
 
 Note that in most cases, the [ImageJ launcher](Launcher ) will make an initial guess at a reasonable value: \~75% of physical RAM.
 
-You can confirm how much memory is actually available by clicking on the [status bar](status_bar ). You will see a "\[used\] of \[max\]" memory message, as pictured here:
+You can confirm how much memory is actually available by clicking on the [status bar](Status_bar ). You will see a "\[used\] of \[max\]" memory message, as pictured here:
 
 ![](/images/pages/MemoryStatus.png "MemoryStatus.png")
 
@@ -214,7 +214,7 @@ If you are already at the limits of your computer's physical memory, the next st
 
 **If setting this value somehow has no effect:** Check for an [environment variable](http://www.computerhope.com/issues/ch000549.htm) called `_JAVA_OPTIONS` or similar, which is overriding the value. If the variable exists, change the memory value there, or remove the variable completely.
 
-**About Java garbage collection:** Java always automatically calls the garbage collector when the heap is getting full [\[1](http://stackoverflow.com/questions/8719071)\]. While it is possible to manually invoke the garbage collector by clicking ImageJ's [status bar](status_bar )—or programmatically by calling `run("Collect Garbage")` in a macro or `System.gc()` in a plugin—it will not solve the fundamental problem of Java actually not having a sufficient amount of memory. (The only exception to this is a rare case where Java decides that garbage collection is happening too slowly, in which case you should see the message "GC overhead limit exceeded" [\[2](http://www.petefreitag.com/item/746.cfm)\]).
+**About Java garbage collection:** Java always automatically calls the garbage collector when the heap is getting full [\[1](http://stackoverflow.com/questions/8719071)\]. While it is possible to manually invoke the garbage collector by clicking ImageJ's [status bar](Status_bar )—or programmatically by calling `run("Collect Garbage")` in a macro or `System.gc()` in a plugin—it will not solve the fundamental problem of Java actually not having a sufficient amount of memory. (The only exception to this is a rare case where Java decides that garbage collection is happening too slowly, in which case you should see the message "GC overhead limit exceeded" [\[2](http://www.petefreitag.com/item/746.cfm)\]).
 
 NegativeArraySizeException
 --------------------------
@@ -230,7 +230,7 @@ If you are using Bio-Formats to open a file, however, the size limit is a bit mo
 UnsupportedClassVersionError
 ----------------------------
 
-Usually, this error takes the form of "Unsupported major.minor version 52.0" or similar, and indicates you are attempting to use a plugin which requires a newer version of Java than you are running. For example, you may have enabled an [update site](update_site ) that requires Java 7, but your ImageJ is using Java 6.
+Usually, this error takes the form of "Unsupported major.minor version 52.0" or similar, and indicates you are attempting to use a plugin which requires a newer version of Java than you are running. For example, you may have enabled an [update site](Update_site ) that requires Java 7, but your ImageJ is using Java 6.
 
 Check which version of Java is being used by ImageJ; see [Checking the Java version](#Checking_the_Java_version "wikilink") above.
 
@@ -254,7 +254,7 @@ To control the version of Java that ImageJ uses, see [How do I launch ImageJ wit
 NoSuchMethodError or NoClassDefFoundError
 -----------------------------------------
 
-These errors indicate a "version skew" between the software libraries in your ImageJ installation. Most commonly, this situation occurs when multiple [update sites](update_sites ) are enabled which ship incompatible versions of those libraries.
+These errors indicate a "version skew" between the software libraries in your ImageJ installation. Most commonly, this situation occurs when multiple [update sites](Update_sites ) are enabled which ship incompatible versions of those libraries.
 
 The proper fix is for the maintainers of those update sites to reconcile the versions somehow, but as a user you can work around the issue in the meantime by disabling the problematic update site(s). Start from a fresh download of ImageJ, enabling the update sites you want one by one, testing your workflow each time. Once you determine which update site(s) causes the issue, you can create a separate copy of ImageJ with only the problematic site(s) enabled. Although you will no longer have a single ImageJ with all desired functionality enabled, keeping isolated installations will let you continue using all the plugins you need by launching each appropriate copy of ImageJ.
 

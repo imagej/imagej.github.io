@@ -15,7 +15,7 @@ Here the user can again make a choice of increasing or decreasing the edge enhan
 
 <img src="/images/pages/ModelChoice.png" width="800"/>
 
-Read more about [sub-pixel localization parameter selection](sub-pixel_localization_parameter_selection ).
+Read more about [sub-pixel localization parameter selection](Sub-pixel_localization_parameter_selection ).
 
 -   Start tracking
 

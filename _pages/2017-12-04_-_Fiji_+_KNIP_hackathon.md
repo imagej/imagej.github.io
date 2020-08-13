@@ -7,7 +7,7 @@ categories: News
 description: test description
 ---
 
-From Monday, December 4, 2017 through Friday, December 15, 2017, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosts \~50 developers at the [Center for Systems Biology](http://www.csbdresden.de/) in Dresden, Germany for a [hackathon](hackathon ) to develop [ImageJ2](ImageJ2 ) and [Fiji](Fiji ) core infrastructure and [plugins](plugins ).
+From Monday, December 4, 2017 through Friday, December 15, 2017, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosts \~50 developers at the [Center for Systems Biology](http://www.csbdresden.de/) in Dresden, Germany for a [hackathon](Hackathon ) to develop [ImageJ2](ImageJ2 ) and [Fiji](Fiji ) core infrastructure and [plugins](Plugins ).
 
 https://gitter.im/fiji/hackathon_dd_2017
 

@@ -13,9 +13,9 @@ description: test description
 Open source
 -----------
 
-The SciJava ecosystem is strongly committed to [open source](open_source ) software development. But this software is not an [open source](open_source ) software *product*—it is an [open source](open_source ) software *project* following an [open source](open_source ) development *process*.
+The SciJava ecosystem is strongly committed to [open source](Open_source ) software development. But this software is not an [open source](Open_source ) software *product*—it is an [open source](Open_source ) software *project* following an [open source](Open_source ) development *process*.
 
-ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [source code repositories](Source_Code ), public [communication](communication ) channels, public [project management](project_management ) resources, and of course, this [community editable website](Help_Contents ). As you can see, we love [doing it in public](http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/)!
+ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [source code repositories](Source_Code ), public [communication](Communication ) channels, public [project management](Project_management ) resources, and of course, this [community editable website](Help_Contents ). As you can see, we love [doing it in public](http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/)!
 
 Independent learning
 --------------------
@@ -31,9 +31,9 @@ We are always looking for more ways to improve the software to meet this goal of
 Extensibility
 -------------
 
-[Extensibility](Extensibility ) is [ImageJ](ImageJ )'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](Category_Visualization ), [segmentation](segmentation ), [registration](Category_Registration ), and [analysis](Category_Analysis ) routines.
+[Extensibility](Extensibility ) is [ImageJ](ImageJ )'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](Category_Visualization ), [segmentation](Segmentation ), [registration](Category_Registration ), and [analysis](Category_Analysis ) routines.
 
-Isaac Newton attributed his success to {% include wikipedia title='Standing on the shoulders of giants' text='standing on the shoulders of giants'%}. The [SciJava component collection](Architecture )'s powerful [plugin](plugin ) mechanism and [open source](open_source ) software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](Extensibility ) page for details.
+Isaac Newton attributed his success to {% include wikipedia title='Standing on the shoulders of giants' text='standing on the shoulders of giants'%}. The [SciJava component collection](Architecture )'s powerful [plugin](Plugin ) mechanism and [open source](Open_source ) software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](Extensibility ) page for details.
 
 Interoperability
 ----------------
@@ -45,7 +45,7 @@ One of the central goals of the [SciJava component collection](Architecture ) is
 Compatibility
 -------------
 
-Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing [plugins](plugins ) and [macros](macros ) with new versions of ImageJ. See the [Compatibility](Compatibility ) page for details.
+Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing [plugins](Plugins ) and [macros](Macros ) with new versions of ImageJ. See the [Compatibility](Compatibility ) page for details.
 
 Release early, release often
 ----------------------------
@@ -155,7 +155,7 @@ To ensure releases can happen quickly, each SciJava component is independently r
 Convention over configuration
 -----------------------------
 
-With increased [modularity](modularity ) often comes increased complexity. One key way of addressing this issue is to provide sensible defaults (e.g., the [big green Xerox button](http://athinkingperson.com/2010/06/02/where-the-big-green-copier-button-came-from/)) as a way of dealing with complex software programs. We embrace the philosophy of {% include wikipedia title='Convention over configuration' text='convention over configuration'%} utilized by many large software projects in recent years. For this reason, SciJava projects use the [Maven](Maven ) build tool for [project management](project_management ).
+With increased [modularity](Modularity ) often comes increased complexity. One key way of addressing this issue is to provide sensible defaults (e.g., the [big green Xerox button](http://athinkingperson.com/2010/06/02/where-the-big-green-copier-button-came-from/)) as a way of dealing with complex software programs. We embrace the philosophy of {% include wikipedia title='Convention over configuration' text='convention over configuration'%} utilized by many large software projects in recent years. For this reason, SciJava projects use the [Maven](Maven ) build tool for [project management](Project_management ).
 
 Why Java?
 ---------

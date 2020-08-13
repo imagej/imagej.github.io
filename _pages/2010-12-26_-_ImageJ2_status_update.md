@@ -23,11 +23,11 @@ We have created {% include github org='imagej ' repo='ij1-tests ' label='extensi
 
 #### ImageJ2 architecture
 
-We have designed initial versions of several aspects of the ImageJ2 architecture, including the [image data model](ImageJ_Common ), and [IJ2 plugin architecture](extensibility ). At this point, everything is completely subject to change, with many things not yet ready for public review.
+We have designed initial versions of several aspects of the ImageJ2 architecture, including the [image data model](ImageJ_Common ), and [IJ2 plugin architecture](Extensibility ). At this point, everything is completely subject to change, with many things not yet ready for public review.
 
 #### ImageJ2 user interface
 
-Though our eventual goal is to create a [rich ImageJ client application](modularity ) using the NetBeans RCP, for the time being we have created a barebones, proof-of-concept user interface to test the feasibility of the current architecture.
+Though our eventual goal is to create a [rich ImageJ client application](Modularity ) using the NetBeans RCP, for the time being we have created a barebones, proof-of-concept user interface to test the feasibility of the current architecture.
 
 ### Spectral lifetime visualization
 

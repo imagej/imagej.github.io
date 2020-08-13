@@ -22,7 +22,7 @@ There are four tiers of plugins:
 
 1.  Core ImageJ plugins, bundled with the base ImageJ distribution. (more than 1000 as of this writing)
 2.  Core Fiji plugins, bundled with the [Fiji](Fiji ) distribution of ImageJ. (nearly 1000 additional plugins as of this writing)
-3.  Plugins installable from an ImageJ [update site](update_site ).
+3.  Plugins installable from an ImageJ [update site](Update_site ).
 4.  Additional plugins available from various online sources, which must be manually installed.
 
 Installing plugins
@@ -35,7 +35,7 @@ Advanced topics
 
 ### Installing plugins manually
 
-If the plugin you want is not distributed via an ImageJ update site, please encourage the plugin's maintainer to do so! Anyone can create a [personal update site](personal_update_site ) as well as additional dedicated update sites (for a particular plugin) hosted on [sites.imagej.net](http://sites.imagej.net/), to easily share and maintain updated plugins.
+If the plugin you want is not distributed via an ImageJ update site, please encourage the plugin's maintainer to do so! Anyone can create a [personal update site](Personal_update_site ) as well as additional dedicated update sites (for a particular plugin) hosted on [sites.imagej.net](http://sites.imagej.net/), to easily share and maintain updated plugins.
 
 In the meantime, to install a plugin manually, follow the plugin's installation instructions, if any. The plugin will consist of one or more files which must be downloaded and (typically) placed in ImageJ's `plugins` folder:
 

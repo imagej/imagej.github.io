@@ -17,7 +17,7 @@ Macros can be used to
 -   add tools to the toolbar
 -   add keyboard shortcuts
 
-{% include info-box message='Please be aware that there are several other available [scripting](scripting ) languages that are more powerful than macros, too! See the sidebar on the right, as well as the [Overcoming limitations](#Overcoming_limitations "wikilink") section below. ' %}
+{% include info-box message='Please be aware that there are several other available [scripting](Scripting ) languages that are more powerful than macros, too! See the sidebar on the right, as well as the [Overcoming limitations](#Overcoming_limitations "wikilink") section below. ' %}
 
 Variables
 =========
@@ -626,7 +626,7 @@ There are quite a lot of macros on the [ImageJ website](https://imagej.net/macro
 Overcoming limitations
 ======================
 
-Macros have a major limitation compared to the other [scripting](scripting ) languages: they have only a [fixed set of built-in functions](https://imagej.net/developer/macro/functions.html). Sometimes, though, one needs access to functions outside this realm; in that case, there are three primary means of overcoming this limitation:
+Macros have a major limitation compared to the other [scripting](Scripting ) languages: they have only a [fixed set of built-in functions](https://imagej.net/developer/macro/functions.html). Sometimes, though, one needs access to functions outside this realm; in that case, there are three primary means of overcoming this limitation:
 
 Macro extensions
 ----------------

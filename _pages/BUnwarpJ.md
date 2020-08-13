@@ -16,7 +16,7 @@ For a quick start, you can have a look at the [video tutorial](http://imagejdocu
 General Description
 -------------------
 
-[bUnwarpJ](bUnwarpJ ) is an algorithm for **elastic and consistent image registration** developed as an ImageJ plugin. It performs a simultaneous registration of two images, A and B. Image A is elastically deformed in order to look as similar as possible to image B, and, at the same time, the "inverse" transformation (from B to A) is also calculated so a pseudo-invertibility of the final deformation could be guaranteed. Two images are given as a result: the deformed versions of A and B images.
+[bUnwarpJ](BUnwarpJ ) is an algorithm for **elastic and consistent image registration** developed as an ImageJ plugin. It performs a simultaneous registration of two images, A and B. Image A is elastically deformed in order to look as similar as possible to image B, and, at the same time, the "inverse" transformation (from B to A) is also calculated so a pseudo-invertibility of the final deformation could be guaranteed. Two images are given as a result: the deformed versions of A and B images.
 
 Technical Explanations
 ----------------------
@@ -151,7 +151,7 @@ You can also test bUnwarpJ with [Spline Deformation Generator](Spline_Deformatio
 
 ### Macro call
 
-[bUnwarpJ](bUnwarpJ ) is completely compatible with the [ImageJ macro language](http://rsb.info.nih.gov/ij/developer/macro/macros.html). When in doubt, use the [Macro Recorder](Introduction_into_Macro_Programming#The_recorder ) to identify which commands need to be used.
+[bUnwarpJ](BUnwarpJ ) is completely compatible with the [ImageJ macro language](http://rsb.info.nih.gov/ij/developer/macro/macros.html). When in doubt, use the [Macro Recorder](Introduction_into_Macro_Programming#The_recorder ) to identify which commands need to be used.
 
 #### Main dialog
 
@@ -208,7 +208,7 @@ Notice here that the input and output file names must include the path, since th
 
 ### Command line call
 
-[bUnwarpJ](bUnwarpJ ) might be called as well as an ImageJ command from the command line. In the command line, the program offers the following options:
+[bUnwarpJ](BUnwarpJ ) might be called as well as an ImageJ command from the command line. In the command line, the program offers the following options:
 
 -   `-help`: shows the syntax of the program
 -   `-align`: launches the registration of two input images
@@ -231,9 +231,9 @@ For the rest of the options, follow the help instructions.
 
 ### Consistency weight
 
-The main reason to create [bUnwarpJ](bUnwarpJ ) was the idea of enforcing deformations' consistency through the consistency weight. This number forces the algorithm to move into solutions that ensure the invertibility of the resulting deformations. Therefore, the higher this number is, the more strictly one deformation is the inverse of the other one. Due to the different units, there is no rule for selecting the right parameters, they need to be found experimentally.
+The main reason to create [bUnwarpJ](BUnwarpJ ) was the idea of enforcing deformations' consistency through the consistency weight. This number forces the algorithm to move into solutions that ensure the invertibility of the resulting deformations. Therefore, the higher this number is, the more strictly one deformation is the inverse of the other one. Due to the different units, there is no rule for selecting the right parameters, they need to be found experimentally.
 
-One important advantage of [bUnwarpJ](bUnwarpJ ) over the previous method lies in the fact that many registration problems can be solved without using the landmarks and regularization terms of the energy function (that means setting their corresponding parameters to 0.0). Therefore, no user interaction is needed and the computational complexity of the algorithm is reduced.
+One important advantage of [bUnwarpJ](BUnwarpJ ) over the previous method lies in the fact that many registration problems can be solved without using the landmarks and regularization terms of the energy function (that means setting their corresponding parameters to 0.0). Therefore, no user interaction is needed and the computational complexity of the algorithm is reduced.
 
 ### SIFT and MOPS plugin support
 
@@ -241,7 +241,7 @@ One important advantage of [bUnwarpJ](bUnwarpJ ) over the previous method lies i
 
 An explanation of the parameters is [ here](Feature_Extraction#Parameters ). This plugin is also integrated in Fiji.
 
-After applying SIFT or MOPS methods, you will get two sets of corresponding points in both images. If you call then [bUnwarpJ](bUnwarpJ ), the corresponding points will appear as source and target landmarks.
+After applying SIFT or MOPS methods, you will get two sets of corresponding points in both images. If you call then [bUnwarpJ](BUnwarpJ ), the corresponding points will appear as source and target landmarks.
 
 Downloads
 ---------
@@ -254,7 +254,7 @@ The API documentation can be reached [online](http://javadoc.imagej.net/Fiji/bun
 
 ### Installation
 
-In Fiji, [bUnwarpJ](bUnwarpJ ) comes installed by default. In ImageJ, you must simply download the latest bUnwarpJ\_.jar to the Plugins folder of ImageJ, restart ImageJ and there will be a new "Registration &gt; bUnwarpJ" command in the Plugins menu.
+In Fiji, [bUnwarpJ](BUnwarpJ ) comes installed by default. In ImageJ, you must simply download the latest bUnwarpJ\_.jar to the Plugins folder of ImageJ, restart ImageJ and there will be a new "Registration &gt; bUnwarpJ" command in the Plugins menu.
 
 To execute bUnwarpJ as a macro or from the command line, see the description in the User Manual.
 
@@ -287,7 +287,7 @@ It forces the resulting deformations to be one (source to target) as close as po
 
 ### How do I choose the initial and final deformations? What do they mean?
 
-These values determine the level of detail of the initial and final deformations. In [bUnwarpJ](bUnwarpJ ) this is defined by the number of B-splines that we use to represent the deformations:
+These values determine the level of detail of the initial and final deformations. In [bUnwarpJ](BUnwarpJ ) this is defined by the number of B-splines that we use to represent the deformations:
 
 | Deformation | Number of intervals (in the B-spline grid) |
 |-------------|--------------------------------------------|
@@ -301,7 +301,7 @@ How to choose the initial and final deformation? It depends on how misaligned yo
 
 ### Can bUnwarpJ register 3D images?
 
-Unfortunately, **no**. If you call [bUnwarpJ](bUnwarpJ ) with two stacks as input images, it will use the second slice of every stack as the corresponding mask of the first slice. If you're looking for 3D image registration software, you may want to have a look at [Elastix](http://elastix.isi.uu.nl/), an excellent open source toolkit to perform image registration written in [ITK](http://www.itk.org/).
+Unfortunately, **no**. If you call [bUnwarpJ](BUnwarpJ ) with two stacks as input images, it will use the second slice of every stack as the corresponding mask of the first slice. If you're looking for 3D image registration software, you may want to have a look at [Elastix](http://elastix.isi.uu.nl/), an excellent open source toolkit to perform image registration written in [ITK](http://www.itk.org/).
 
 ### How do I cite bUnwarpJ?
 
@@ -317,15 +317,15 @@ The corresponding paper citation is on the [References](BUnwarpJ#References ).
 
 ### My result images are 32-bit although my input images are 8-bit, is that a bug?
 
-No this is not a bug. To calculate the elastic-transformed images [bUnwarpJ](bUnwarpJ ) needs to interpolate the pixel values, so the first step in the process consists of converting the 8-bit (byte) images into 32-bit (float). You may want to convert them back to 8-bit after registration (Image &gt; Type &gt; 8-bit) and adjust the contrast (Process &gt; Enhance Contrast).
+No this is not a bug. To calculate the elastic-transformed images [bUnwarpJ](BUnwarpJ ) needs to interpolate the pixel values, so the first step in the process consists of converting the 8-bit (byte) images into 32-bit (float). You may want to convert them back to 8-bit after registration (Image &gt; Type &gt; 8-bit) and adjust the contrast (Process &gt; Enhance Contrast).
 
 ### How do I integrate the SIFT/MOPS results into bUnwarpJ?
 
-If you are using the ImageJ graphical interface, wait until the SIFT/MOPS plugin shows the results and then call immediately [bUnwarpJ](bUnwarpJ ). The correspondences found after the SIFT or MOPS algorithms are automatically converted into [bUnwarpJ](bUnwarpJ ) landmarks. Please, be aware that if you touch any of the input images before calling [bUnwarpJ](bUnwarpJ ) you will probably loose the point selections (SIFT/MOPS correspondences) of that image and then no landmark will be displayed.
+If you are using the ImageJ graphical interface, wait until the SIFT/MOPS plugin shows the results and then call immediately [bUnwarpJ](BUnwarpJ ). The correspondences found after the SIFT or MOPS algorithms are automatically converted into [bUnwarpJ](BUnwarpJ ) landmarks. Please, be aware that if you touch any of the input images before calling [bUnwarpJ](BUnwarpJ ) you will probably loose the point selections (SIFT/MOPS correspondences) of that image and then no landmark will be displayed.
 
 If you do a macro call or use the method bUnwarpJ\_.alignImagesBatch, the landmarks will be read as well from the point selections of the input images.
 
-If you are calling [bUnwarpJ](bUnwarpJ ) from the command line, you will have to save the SIFT/MOPS point selections in a file and use the file name in the command line call.
+If you are calling [bUnwarpJ](BUnwarpJ ) from the command line, you will have to save the SIFT/MOPS point selections in a file and use the file name in the command line call.
 
 ### What does "source and target" mean? Which image is being transformed?
 
@@ -365,11 +365,11 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 Acknowledgements
 ----------------
 
-[bUnwarpJ](bUnwarpJ ) has been developed during several years already and many people need to be acknowledged for:
+[bUnwarpJ](BUnwarpJ ) has been developed during several years already and many people need to be acknowledged for:
 
-It started as an extension of [UnwarpJ](UnwarpJ ) from [Carlos O. S. Sorzano](http://biocomp.cnb.csic.es/~coss/) and thanks to him and [Jan Kybic](http://cmp.felk.cvut.cz/~kybic/) at the [Center for Machine Perception](http://cmp.felk.cvut.cz/) in Prague, [bUnwarpJ](bUnwarpJ ) was born in the summer 2005 and published online in 2006.
+It started as an extension of [UnwarpJ](UnwarpJ ) from [Carlos O. S. Sorzano](http://biocomp.cnb.csic.es/~coss/) and thanks to him and [Jan Kybic](http://cmp.felk.cvut.cz/~kybic/) at the [Center for Machine Perception](http://cmp.felk.cvut.cz/) in Prague, [bUnwarpJ](BUnwarpJ ) was born in the summer 2005 and published online in 2006.
 
-Many of the plugin updates and improvements would have never been possible without the [hackathons](hackathon ) that took place in [Janelia Research Campus](https://www.janelia.org/) (Virginia, summer 2008) and the [Institute of Neuroinformatics](https://www.ini.uzh.ch/) (Zürich, winter 2008).
+Many of the plugin updates and improvements would have never been possible without the [hackathons](Hackathon ) that took place in [Janelia Research Campus](https://www.janelia.org/) (Virginia, summer 2008) and the [Institute of Neuroinformatics](https://www.ini.uzh.ch/) (Zürich, winter 2008).
 
 [Albert Cardona](http://albert.rierol.net/) organized the hackathons and is responsible for the code parallelization and javascripting support.
 

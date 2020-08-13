@@ -32,7 +32,7 @@ Script parameters
 
 There is a universal `@parameter` notation available across all scripts for declaring inputs and outputs. This approach is preferred to using ImageJ 1.x `GenericDialog` because it is totally agnostic to the user interface, allowing such scripts to run in a variety of contexts.
 
-See the [script parameters](script_parameters ) page for details.
+See the [script parameters](Script_parameters ) page for details.
 
 Using an interpreter
 ====================
@@ -95,7 +95,7 @@ Scripts in the top-level `ImageJ.app/plugins` directory will appear at the botto
 
 If you aren't able to find your script, you can always run the [Command Finder](Using_the_Command_Launcher ) to verify its location (or absence).
 
-Commands added to the menu in the described way can be called from other scripts. Use the [macro recorder](macro_recorder ) to get the required code for doing so.
+Commands added to the menu in the described way can be called from other scripts. Use the [macro recorder](Macro_recorder ) to get the required code for doing so.
 
 Adding JAR-packaged scripts to the menu
 ---------------------------------------

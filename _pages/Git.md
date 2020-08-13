@@ -17,7 +17,7 @@ If you are passingly familiar with Git, but wish it wasn"t so arcane, check out:
 
 -   [Think Like (a) Git - A Guide for the Perplexed](http://think-like-a-git.net/)' %}
 
-{% include develop-menu content='tools' %}Development of ImageJ and related software relies heavily on [Git](http://git-scm.com/). See the [source code](source_code ) page for information on where the Git repositories reside.
+{% include develop-menu content='tools' %}Development of ImageJ and related software relies heavily on [Git](http://git-scm.com/). See the [source code](Source_code ) page for information on where the Git repositories reside.
 
 Why do we use Git?
 ------------------

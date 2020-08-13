@@ -19,7 +19,7 @@ This tutorial will explain how to **add an update site to your install of ImageJ
 Start the [Updater](Updater )
 ---------------------------------------
 
-First, start the [updater](updater ):
+First, start the [updater](Updater ):
 
 ![](/images/pages/How to setup a plugin distribution site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
 

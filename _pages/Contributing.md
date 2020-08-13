@@ -8,11 +8,11 @@ description: test description
 ---
 
 {% include aboutmenu%}
-The community encourages discussion about proposed changes on ImageJ's [communication](communication ) channels. Submit your ideas!
+The community encourages discussion about proposed changes on ImageJ's [communication](Communication ) channels. Submit your ideas!
 
-Start on the [forum](forum ), searching for discussions related to your contribution to get some context & background. It can also be helpful to [search](search ) for applicable issues and plans across the spectrum of ImageJ resources. The ImageJ community believes that [public discussion is important](Philosophy#Open_source ) so that ideas are exposed to healthy alternate points of view rather than lost.
+Start on the [forum](Forum ), searching for discussions related to your contribution to get some context & background. It can also be helpful to [search](Search ) for applicable issues and plans across the spectrum of ImageJ resources. The ImageJ community believes that [public discussion is important](Philosophy#Open_source ) so that ideas are exposed to healthy alternate points of view rather than lost.
 
-If you are interested in helping to tackle open issues, see the [wish list](wish_list ) page.
+If you are interested in helping to tackle open issues, see the [wish list](Wish_list ) page.
 
 This web site
 -------------
@@ -30,7 +30,7 @@ ImageJ2
 
 Submit patches to [ImageJ2](ImageJ2 ) via [pull requests](https://help.github.com/articles/using-pull-requests/) against [ImageJ2's source on GitHub](https://github.com/imagej).
 
-Note that since ImageJ2 has a modular [architecture](architecture ), it is possible that your change would be more applicable to one of the supporting technologies such as [ImgLib2](https://github.com/imglib), [SCIFIO](https://github.com/scifio) or [SciJava](https://github.com/scijava).
+Note that since ImageJ2 has a modular [architecture](Architecture ), it is possible that your change would be more applicable to one of the supporting technologies such as [ImgLib2](https://github.com/imglib), [SCIFIO](https://github.com/scifio) or [SciJava](https://github.com/scijava).
 
 ImageJ1
 -------
