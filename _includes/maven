@@ -1,1 +1,1 @@
-<div class="include maven">TODO maven:  <code>{{include}}</code></div>
+<span class="include maven">TODO maven:  <code>{{include}}</code></span>
