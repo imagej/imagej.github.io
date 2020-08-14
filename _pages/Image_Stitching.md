@@ -35,7 +35,7 @@ Plase note: this is the new implementation of the Stitching plugin which is fina
 
 **Due to the virtual input stacks and the direct export of the result to disk it is now possible to stitch an arbitrary amount of image tiles with limited RAM resources.**
 
-The documentation of the **old** Stitching plugin collection can be found here: [Stitching 2D/3D](Stitching_2D/3D).
+The documentation of the **old** Stitching plugin collection can be found here: [Stitching 2D/3D](Stitching_2D_3D).
 
 Overview of the Stitching Plugins
 ---------------------------------
@@ -43,7 +43,7 @@ Overview of the Stitching Plugins
 The Image Stitching package comes with 2 different plugins:
 
 -   **[ Pairwise Stitching](Image_Stitching#Pairwise_Stitching)**: Stitch two 2d-5d images, rectangular ROIs can be used to limit the area to search in.
--   **[ Grid/Collection Stitching](Image_Stitching#Grid/Collection_Stitching)**: Stitch an arbitrary amount of 2d-5d input images. It supports cases where the approximate alignment is known (grid, stored in file, metadata) as well as completely unguided alignment.
+-   **[ Grid/Collection Stitching](Image_Stitching#Grid_Collection_Stitching)**: Stitch an arbitrary amount of 2d-5d input images. It supports cases where the approximate alignment is known (grid, stored in file, metadata) as well as completely unguided alignment.
 
 Although both plugins make use of layered context-dependent Generic Dialogs, they are completely macro-scriptable.
 
@@ -169,7 +169,7 @@ Finally, you can choose whether to display the result or write the fused image t
 
 ### Grid Collection/Stitching plugin
 
-Please see the [Grid/Collection Stitching Plugin](Grid/Collection_Stitching_Plugin) page for a complete set of instruction on how to use Grid/Collection stitching in Fiji.
+Please see the [Grid/Collection Stitching Plugin](Grid_Collection_Stitching_Plugin) page for a complete set of instruction on how to use Grid/Collection stitching in Fiji.
 
 Problems, known issues and solutions
 ------------------------------------

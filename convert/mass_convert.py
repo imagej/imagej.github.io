@@ -111,6 +111,7 @@ def convert_page(page_title, recursive=False):
     page_title = page_title.replace("(", "")
     page_title = page_title.replace(")", "")
     path_out = os.path.join(os.path.join(root_out, "_pages"), page_title + ".md")
+    page_title = page_title.replace("%2F", "_")
     if os.path.exists(path_out):
         return
     # print("converting " + title)

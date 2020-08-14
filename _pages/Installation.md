@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Fiji/Downloads\#Installation](Fiji/Downloads#Installation)
+1.  REDIRECT [Fiji/Downloads\#Installation](Fiji_Downloads#Installation)

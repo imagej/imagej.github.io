@@ -134,7 +134,7 @@ Scripting
 Add JMathLib (MATLAB clone) support
 -----------------------------------
 
-Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB) scripts. While it is [wrong to think of pixels as little squares](Ftp_//ftp.alvyray.com/Acrobat/6_Pixel.pdf), and literally all [MATLAB](MATLAB) scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB) licenses just for that purpose.
+Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB) scripts. While it is [wrong to think of pixels as little squares](Ftp___ftp.alvyray.com_Acrobat_6_Pixel.pdf), and literally all [MATLAB](MATLAB) scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB) licenses just for that purpose.
 
 MATLAB bundles a Java runtime (and in fact, all of [MATLAB](MATLAB)'s GUI is implemented in Java!) and allows the user to instantiate Java classes and call methods on them:
 

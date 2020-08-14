@@ -164,7 +164,7 @@ Also remember: since we are doing light microscopy, two objects closer and small
 
 ### Detector Saturation
 
-The problem with "saturated pixels" occurs mainly when we use pixel-based colocalization (*i.e.* when we are interested in intensity correlation over space). It is possible to derive the quantitative error made with saturation. See [here](Colocalization/ErrorDueToSaturation). If pixels/images are saturated (that is having pixels with an intensity level at the top of the range, ie 255 for 8 bit data) then they are missing information about the real spatial intensity distribution in the sample. This is the most important data in your analysis, as you are usually most interested in the brightest objects - right?! That means its a really bad idea to throw that information away when you collect the images.
+The problem with "saturated pixels" occurs mainly when we use pixel-based colocalization (*i.e.* when we are interested in intensity correlation over space). It is possible to derive the quantitative error made with saturation. See [here](Colocalization_ErrorDueToSaturation). If pixels/images are saturated (that is having pixels with an intensity level at the top of the range, ie 255 for 8 bit data) then they are missing information about the real spatial intensity distribution in the sample. This is the most important data in your analysis, as you are usually most interested in the brightest objects - right?! That means its a really bad idea to throw that information away when you collect the images.
 
 ### Chromatic Shift
 

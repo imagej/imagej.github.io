@@ -82,7 +82,7 @@ Download the current JAR files, e.g. [imagej-2.0.0-SNAPSHOT-all.jar](http://jenk
 
 You could also use the JAR file to compile your own plugins, which are distributed in the `Fiji.app/plugins` directory.
 
-If you download Fiji via [Fiji/Downloads](Fiji/Downloads) then take care to select the right version of Fiji. The most prominent download option on top of the page is compiled with JDK 1.8, while you can download so-called "life-line" versions at the bottom of the page which are compiled with JDK 1.6 to ensure compatibility with older plugins not supported by the ImageJ2 Team. For details [look here](2015-12-22_-_The_road_to_Java_8).
+If you download Fiji via [Fiji/Downloads](Fiji_Downloads) then take care to select the right version of Fiji. The most prominent download option on top of the page is compiled with JDK 1.8, while you can download so-called "life-line" versions at the bottom of the page which are compiled with JDK 1.6 to ensure compatibility with older plugins not supported by the ImageJ2 Team. For details [look here](2015-12-22_-_The_road_to_Java_8).
 
 In any case you need to open a new project, assign the project name, its directory location and add the JAR files as libraries.
 
@@ -474,8 +474,8 @@ From [ImageJ Forum Thread 1151](http://forum.imagej.net/t/java3d-issue-bonej-wit
 The current situation with respect to Java 6 vs. Java 8, as well as the ramifications there regarding Java 3D, is basically:
 
 -   If you download "vanilla" [ImageJ2](ImageJ2) (author's note: in the context of software "vanilla" means software used as originally distributed without any customizations or updates applied to them) from the [Downloads](Downloads) page, you get a "Java 8" version from February 2016.
--   If you [download the latest Fiji](Fiji/Downloads) you get the newest "Java 8" version—i.e., with Java-8 update site. This includes the Java 3D 1.6 (SciJava fork) along with all Fiji plugins (except for [TrakEM2](TrakEM2)) updated to work with it.
--   If you [download a Life-Line version of Fiji](Fiji/Downloads#Life-Line_Fiji_versions) and fully update it, you'll have the newest (probably the final) "Java 6" version including the latest Java-6-compatible plugin versions. No Java 3D until you run the [3D Viewer](3D_Viewer) for the first time and it gets auto-installed. Those plugin versions are frozen: the ImageJ/Fiji developers are in the process of migrating everything to Java 8, and are only uploading new versions of everything to the Java-8 update site now, to avoid breaking the stable Java-6 versions of everything.
+-   If you [download the latest Fiji](Fiji_Downloads) you get the newest "Java 8" version—i.e., with Java-8 update site. This includes the Java 3D 1.6 (SciJava fork) along with all Fiji plugins (except for [TrakEM2](TrakEM2)) updated to work with it.
+-   If you [download a Life-Line version of Fiji](Fiji_Downloads#Life-Line_Fiji_versions) and fully update it, you'll have the newest (probably the final) "Java 6" version including the latest Java-6-compatible plugin versions. No Java 3D until you run the [3D Viewer](3D_Viewer) for the first time and it gets auto-installed. Those plugin versions are frozen: the ImageJ/Fiji developers are in the process of migrating everything to Java 8, and are only uploading new versions of everything to the Java-8 update site now, to avoid breaking the stable Java-6 versions of everything.
 
 Ultimately, the ImageJ/Fiji developers will push all the Java-8 stuff back to the core ImageJ and Fiji sites. But not until the ImageJ/Fiji developers add a launch check that verifies your version of Java is new enough—and if not, tells you how to upgrade it. Ihe ImageJ/Fiji developers will definitely archive the final Java-6-compatible versions of ImageJ and Fiji when they complete that transition.
 
@@ -527,7 +527,7 @@ In IntelliJ IDEA you may want to make sure that the JUnit5 Plugin is activated. 
 Continuous Integration with Travis CI
 -------------------------------------
 
-If you want to share your plugin in the ImageJ updater automatically [Automatic Update Site Uploads](Automatic_Update_Site_Uploads), contribute to the ImageJ project [Fiji/Contribution requirements](Fiji/Contribution_requirements) or work in a team with multiple developers, you may want to build, test and deploy your Plugin with [Travis CI](Travis_CI). If you are hosting your code in a public [GitHub](GitHub) repository this service is free for you. After signing in with your [GitHub](GitHub) account you can activate single repositories for [Travis CI](Travis_CI). Travis then automatically clones your repository with every change and runs a build according to the `.travis.yml` configuration file in your root directory.
+If you want to share your plugin in the ImageJ updater automatically [Automatic Update Site Uploads](Automatic_Update_Site_Uploads), contribute to the ImageJ project [Fiji/Contribution requirements](Fiji_Contribution_requirements) or work in a team with multiple developers, you may want to build, test and deploy your Plugin with [Travis CI](Travis_CI). If you are hosting your code in a public [GitHub](GitHub) repository this service is free for you. After signing in with your [GitHub](GitHub) account you can activate single repositories for [Travis CI](Travis_CI). Travis then automatically clones your repository with every change and runs a build according to the `.travis.yml` configuration file in your root directory.
 
         # specify compiler
         language: java

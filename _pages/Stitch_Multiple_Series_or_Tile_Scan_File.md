@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Stitching 2D/3D\#Stitch Multiple Series or Tile Scan File](Stitching_2D/3D#Stitch_Multiple_Series_or_Tile_Scan_File)
+1.  REDIRECT [Stitching 2D/3D\#Stitch Multiple Series or Tile Scan File](Stitching_2D_3D#Stitch_Multiple_Series_or_Tile_Scan_File)

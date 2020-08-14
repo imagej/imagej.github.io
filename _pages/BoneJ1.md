@@ -33,7 +33,7 @@ Legacy (BoneJ v1.x) Installation
 
 {% include logo content='Fiji' size='24px' %} BoneJ can be installed into [Fiji](Fiji), but you must **use the Java-6 version of Fiji, not the current Java-8 version**:
 
--   Download the final Java-6 version of Fiji labeled “2017 May 30” from [here](Fiji/Downloads#Java_6).
+-   Download the final Java-6 version of Fiji labeled “2017 May 30” from [here](Fiji_Downloads#Java_6).
 -   Unpack it somewhere beneath your home folder.
 -   Download and install `BoneJ_.jar` into that installation's `plugins` folder.
 -   Launch Fiji and run {% include bc content='Plugins | 3D Viewer'%} to trigger installation of the [3D Viewer](3D_Viewer).

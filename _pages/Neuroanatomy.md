@@ -24,7 +24,7 @@ description: test description
 Installation
 ============
 
-The requirements to run the Neuroanatomy suite of plugins are twofold: i) [Fiji](Fiji) (i.e., an ImageJ installation subscribed to the Fiji update site) running at least Java 8. If you are running an older version of Java, you can either i) [Download the latest Fiji release](Fiji/Downloads) (newer releases come pre-bundled with Java 8); or ii) If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [Fiji installation aware of it](Troubleshooting#Checking_the_Java_version).
+The requirements to run the Neuroanatomy suite of plugins are twofold: i) [Fiji](Fiji) (i.e., an ImageJ installation subscribed to the Fiji update site) running at least Java 8. If you are running an older version of Java, you can either i) [Download the latest Fiji release](Fiji_Downloads) (newer releases come pre-bundled with Java 8); or ii) If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [Fiji installation aware of it](Troubleshooting#Checking_the_Java_version).
 
 **Subscribing to the Neuroanatomy update site:**
 

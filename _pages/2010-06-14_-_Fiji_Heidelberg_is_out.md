@@ -104,7 +104,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   Some bugs in [Stitching 2D/3D](Stitching_2D/3D) were fixed (thanks Stephan Preibisch and Ignacio Arganda-Carreras).
+-   Some bugs in [Stitching 2D/3D](Stitching_2D_3D) were fixed (thanks Stephan Preibisch and Ignacio Arganda-Carreras).
 
 <!-- -->
 

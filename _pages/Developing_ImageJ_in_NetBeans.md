@@ -49,7 +49,7 @@ Import the ImageJ source
 ------------------------
 
 1.  Choose Team &gt; Git &gt; Clone... from the NetBeans menu
-2.  For the Repository URL, enter: [`git://github.com/imagej/imagej`](Git_//github.com/imagej/imagej)
+2.  For the Repository URL, enter: [`git://github.com/imagej/imagej`](Git___github.com_imagej_imagej)
 3.  Click Next, check the "master\*" branch, then Next again, then Finish
 4.  When prompted, click Open Project...
 5.  Select the "ImageJ Projects" project in the tree then click Open

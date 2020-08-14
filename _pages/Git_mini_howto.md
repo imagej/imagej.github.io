@@ -25,7 +25,7 @@ Cloning
 
 You need to clone *fiji.git*:
 
-`$ git clone `[`git://fiji.sc/fiji.git/`](Git_//fiji.sc/fiji.git/)
+`$ git clone `[`git://fiji.sc/fiji.git/`](Git___fiji.sc_fiji.git_)
 
 Contributing
 ============

@@ -33,8 +33,8 @@ Some community members frequent {% include wikipedia title='Internet Relay Chat'
 
 | Channel                                           | Description                                                          | Chat logs                                                     |
 |---------------------------------------------------|----------------------------------------------------------------------|---------------------------------------------------------------|
-| [\#imagejdev](Irc_//irc.freenode.net/imagejdev)   | Core ImageJ development discussion.                                  | [imagejdev logs](http://code.imagej.net/chatlogs/imagejdev)   |
-| [\#fiji-devel](Irc_//irc.freenode.net/fiji-devel) | [Fiji](Fiji) user and developer discussion and questions. | [fiji-devel logs](http://code.imagej.net/chatlogs/fiji-devel) |
+| [\#imagejdev](Irc___irc.freenode.net_imagejdev)   | Core ImageJ development discussion.                                  | [imagejdev logs](http://code.imagej.net/chatlogs/imagejdev)   |
+| [\#fiji-devel](Irc___irc.freenode.net_fiji-devel) | [Fiji](Fiji) user and developer discussion and questions. | [fiji-devel logs](http://code.imagej.net/chatlogs/fiji-devel) |
 
 Advantages of IRC include anonymity, and maximum compatibility with a huge variety of existing chat clients.
 

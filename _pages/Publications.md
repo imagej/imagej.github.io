@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Fiji/Publications](Fiji/Publications)
+1.  REDIRECT [Fiji/Publications](Fiji_Publications)

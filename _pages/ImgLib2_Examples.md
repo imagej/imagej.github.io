@@ -140,7 +140,7 @@ As the *target* needs to be an **IterableInterval**, it is more confined. This, 
 Example 3 - Writing generic algorithms
 --------------------------------------
 
-Examples 1 and 2 tried to introduce important tools you need in order to implement algorithms with ImgLib2. This example will show three generic implementations of algorithms computing the [ min/max](ImgLib2_Examples#Example_3a_-_Min/Max_search), average as well as the center of mass.
+Examples 1 and 2 tried to introduce important tools you need in order to implement algorithms with ImgLib2. This example will show three generic implementations of algorithms computing the [ min/max](ImgLib2_Examples#Example_3a_-_Min_Max_search), average as well as the center of mass.
 
 The core idea is to implement algorithms as generic as possible in order to maximize code-reusability. In general, a good way to start is to think: *What are the minimal requirements in order to implement algorithm X?* This applies to all of the following three concepts:
 

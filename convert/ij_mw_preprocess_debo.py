@@ -539,7 +539,9 @@ def add_front_matter(str_content, file_path, layout, title):
 
     # scrap necessary info fom page and populate the front matter.
     title = title.replace(":", " ›")
+    title = title.replace("%2F", "/")
     breadcrumb = get_breadcrumb(file_path)
+    breadcrumb = breadcrumb.replace("%2F", "/")
     categories = get_categories(file_path)
     description = "test description"
     front_matter_content = "---\ntitle: {0}\nbreadcrumb: {1}\nlayout: {2}\ncategories: {3}\ndescription: {4}\n---\n\n{5}".format(title, breadcrumb, layout, categories, description, str_content)
@@ -650,7 +652,7 @@ def fix_link_match(match):
     if match.group(1).startswith('[Category:'):
         return ''
     link = match.group(2).replace(":Category", "Category")
-    link = link.replace(":", "_").replace("\'", "").replace("\"", "").replace("\(", "").replace("\)", "")
+    link = link.replace(":", "_").replace("\'", "").replace("\"", "").replace("\(", "").replace("\)", "").replace("/", "_")
     link = link[0].capitalize() + link[1:].rstrip()
     return match.group(1) + link + match.group(3).replace("\"wikilink\"", "")
 

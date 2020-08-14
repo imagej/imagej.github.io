@@ -112,7 +112,7 @@ Video tutorial on adding sections/layers to an existing project
 
 {% include thumbnail-link src="/images/pages/Screenshot-TrakEM2-tutorial-add-layers.png" title='TrakEM2 adding layers to existing project' link='TrakEM2 adding layers to existing project'%}
 
-[Here](TrakEM2_add_more_sections/layers_tutorial) you will learn how to:
+[Here](TrakEM2_add_more_sections_layers_tutorial) you will learn how to:
 
 -   Open an image sequence as a virtual stack in Fiji.
 -   Calibrate the virtual stack.
