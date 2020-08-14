@@ -1,1 +1,1 @@
-<div class="include maintainers">TODO maintainers: {{include}}</div>
+<div class="include maintainers">TODO maintainers:  <code>{{include}}</code></div>

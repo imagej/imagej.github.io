@@ -1,1 +1,1 @@
-<span class="include lc">TODO lc: {{include}}</span>
+<span class="include lc">TODO lc:  <code>{{include}}</code></span>

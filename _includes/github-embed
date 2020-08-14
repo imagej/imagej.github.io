@@ -1,1 +1,1 @@
-<div class="include githubembed">TODO githubembed: {{include}}</div>
+<div class="include githubembed">TODO githubembed:  <code>{{include}}</code></div>

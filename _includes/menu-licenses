@@ -1,1 +1,1 @@
-<span class="include platformsmenu">TODO platformsmenu: {{include}}</span>
+<span class="include platformsmenu">TODO platformsmenu:  <code>{{include}}</code></span>

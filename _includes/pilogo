@@ -1,1 +1,1 @@
-<span class="include pilogo">TODO pilogo: {{include}}</span>
+<span class="include pilogo">TODO pilogo:  <code>{{include}}</code></span>

@@ -1,1 +1,1 @@
-<div class="include fiji">TODO fiji: {{include}}</div>
+<div class="include fiji">TODO fiji:  <code>{{include}}</code></div>

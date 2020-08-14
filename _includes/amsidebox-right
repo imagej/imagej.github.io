@@ -1,1 +1,1 @@
-<span class="include amsidebox-right">TODO amsidebox-right: {{include}}</span>
+<span class="include amsidebox-right">TODO amsidebox-right:  <code>{{include}}</code></span>

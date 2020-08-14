@@ -1,1 +1,1 @@
-<span class="include inline">TODO inline: {{include}}</span>
+<span class="include inline">TODO inline:  <code>{{include}}</code></span>

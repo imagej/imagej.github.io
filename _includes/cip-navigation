@@ -1,1 +1,1 @@
-<span class="include cip-navigation">TODO cip-navigation: {{include}}</span>
+<span class="include cip-navigation">TODO cip-navigation:  <code>{{include}}</code></span>

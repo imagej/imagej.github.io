@@ -1,1 +1,1 @@
-<span class="include updatesites-menu">TODO updatesites-menu: {{include}}</span>
+<span class="include updatesites-menu">TODO updatesites-menu:  <code>{{include}}</code></span>

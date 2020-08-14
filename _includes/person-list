@@ -1,1 +1,1 @@
-<div class="include personlist">TODO personlist: {{include}}</div>
+<div class="include personlist">TODO personlist:  <code>{{include}}</code></div>

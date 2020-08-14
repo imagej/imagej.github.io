@@ -1,1 +1,1 @@
-<span class="include tasks">TODO tasks: {{include}}</span>
+<span class="include tasks">TODO tasks:  <code>{{include}}</code></span>

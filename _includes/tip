@@ -1,1 +1,1 @@
-<div class="include tip">TODO tip: {{include}}</div>
+<div class="include tip">TODO tip:  <code>{{include}}</code></div>

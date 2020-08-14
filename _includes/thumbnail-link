@@ -1,1 +1,1 @@
-<span class="include thumbnail-link">TODO thumbnail-link: {{include}}</span>
+<span class="include thumbnail-link">TODO thumbnail-link:  <code>{{include}}</code></span>

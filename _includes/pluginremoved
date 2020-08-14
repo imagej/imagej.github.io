@@ -1,1 +1,1 @@
-<div class="include pluginremoved">TODO pluginremoved: {{include}}</div>
+<div class="include pluginremoved">TODO pluginremoved:  <code>{{include}}</code></div>

@@ -1,1 +1,1 @@
-<div class="include testimonial">TODO testimonial: {{include}}</div>
+<div class="include testimonial">TODO testimonial:  <code>{{include}}</code></div>

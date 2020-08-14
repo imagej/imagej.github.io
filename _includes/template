@@ -1,1 +1,1 @@
-<span class="include template">TODO template: {{include}}</span>
+<span class="include template">TODO template:  <code>{{include}}</code></span>

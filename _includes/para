@@ -1,1 +1,1 @@
-<span class="include para">TODO para: {{include}}</span>
+<span class="include para">TODO para:  <code>{{include}}</code></span>

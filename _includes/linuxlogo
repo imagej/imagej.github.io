@@ -1,1 +1,1 @@
-<span class="include linuxlogo">TODO linuxlogo: {{include}}</span>
+<span class="include linuxlogo">TODO linuxlogo:  <code>{{include}}</code></span>

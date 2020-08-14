@@ -1,1 +1,1 @@
-<span class="include learn">TODO learn: {{include}}</span>
+<span class="include learn">TODO learn:  <code>{{include}}</code></span>

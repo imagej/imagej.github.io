@@ -1,1 +1,1 @@
-<span class="include biginfo-box">TODO biginfo-box: {{include}}</span>
+<span class="include biginfo-box">TODO biginfo-box:  <code>{{include}}</code></span>

@@ -1,1 +1,1 @@
-<div class="include expanding-box">TODO expanding-box: {{include}}</div>
+<div class="include expanding-box">TODO expanding-box:  <code>{{include}}</code></div>
