@@ -1,1 +1,1 @@
-<div class="pluginremoved">{{include.content}}</div>
+<div class="include pluginremoved">TODO pluginremoved: {{include}}</div>

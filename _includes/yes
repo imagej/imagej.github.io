@@ -1,1 +1,1 @@
-<span class="yes">{{include.content}}</span>
+<span class="include yes">TODO yes: {{include}}</span>

@@ -1,1 +1,1 @@
-<span class="expandingsidebox-right">{{include.content}}</span>
+<span class="include expandingsidebox-right">TODO expandingsidebox-right: {{include}}</span>

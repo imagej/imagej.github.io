@@ -1,1 +1,1 @@
-<span class="imglibmenu">{{include.content}}</span>
+<span class="include imglibmenu">TODO imglibmenu: {{include}}</span>

@@ -1,1 +1,1 @@
-<span class="downloadfiji">{{include.content}}</span>
+<span class="include downloadfiji">TODO downloadfiji: {{include}}</span>

@@ -1,1 +1,1 @@
-<span class="fullpagename">{{include.content}}</span>
+<span class="include fullpagename">TODO fullpagename: {{include}}</span>

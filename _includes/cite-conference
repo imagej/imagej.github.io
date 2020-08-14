@@ -1,1 +1,1 @@
-<div class="cite-conference">{{include.content}}</div>
+<div class="include cite-conference">TODO cite-conference: {{include}}</div>

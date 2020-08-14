@@ -1,1 +1,1 @@
-<div class="big-notice">{{include.content}}</div>
+<div class="include big-notice">TODO big-notice: {{include}}</div>

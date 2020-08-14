@@ -1,1 +1,1 @@
-<span class="winlogo">{{include.content}}</span>
+<span class="include winlogo">TODO winlogo: {{include}}</span>

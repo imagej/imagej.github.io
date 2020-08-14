@@ -1,1 +1,1 @@
-<span class="reason">{{include.content}}</span>
+<span class="include reason">TODO reason: {{include}}</span>

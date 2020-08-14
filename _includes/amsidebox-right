@@ -1,1 +1,1 @@
-<span class="amsidebox-right">{{include.content}}</span>
+<span class="include amsidebox-right">TODO amsidebox-right: {{include}}</span>

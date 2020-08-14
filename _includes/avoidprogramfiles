@@ -1,1 +1,1 @@
-<span class="avoidprogramfiles">{{include.content}}</span>
+<span class="include avoidprogramfiles">TODO avoidprogramfiles: {{include}}</span>

@@ -1,1 +1,1 @@
-<span class="bcvert">{{include.content}}</span>
+<span class="include bcvert">TODO bcvert: {{include}}</span>

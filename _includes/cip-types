@@ -1,1 +1,1 @@
-<span class="cip-types">{{include.content}}</span>
+<span class="include cip-types">TODO cip-types: {{include}}</span>

@@ -1,1 +1,1 @@
-<div class="menu-entry">{{include.content}}</div>
+<div class="include menu-entry">TODO menu-entry: {{include}}</div>

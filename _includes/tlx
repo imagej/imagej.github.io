@@ -1,1 +1,1 @@
-<span class="tlx">{{include.content}}</span>
+<span class="include tlx">TODO tlx: {{include}}</span>

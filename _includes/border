@@ -1,1 +1,1 @@
-<span class="border">{{include.content}}</span>
+<span class="include border">TODO border: {{include}}</span>

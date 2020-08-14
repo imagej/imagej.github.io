@@ -1,1 +1,1 @@
-<div class="tech">{{include.content}}</div>
+<div class="include tech">TODO tech: {{include}}</div>

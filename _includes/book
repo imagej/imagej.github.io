@@ -1,1 +1,1 @@
-<div class="book">{{include.content}}</div>
+<div class="include book">TODO book: {{include}}</div>

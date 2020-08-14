@@ -1,1 +1,1 @@
-<span class="error">{{include.content}}</span>
+<span class="include error">TODO error: {{include}}</span>

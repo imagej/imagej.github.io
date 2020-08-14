@@ -1,1 +1,1 @@
-<span class="androidlogo">{{include.content}}</span>
+<span class="include androidlogo">TODO androidlogo: {{include}}</span>

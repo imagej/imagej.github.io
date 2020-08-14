@@ -1,1 +1,1 @@
-<div class="mini-box">{{include.content}}</div>
+<div class="include mini-box">TODO mini-box: {{include}}</div>

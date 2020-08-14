@@ -1,1 +1,1 @@
-<span class="ides">{{include.content}}</span>
+<span class="include ides">TODO ides: {{include}}</span>

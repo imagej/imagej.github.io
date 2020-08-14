@@ -1,1 +1,1 @@
-<span class="stub">{{include.content}}</span>
+<span class="include stub">TODO stub: {{include}}</span>

@@ -1,1 +1,1 @@
-<span class="servername">{{include.content}}</span>
+<span class="include servername">TODO servername: {{include}}</span>

@@ -1,1 +1,1 @@
-<span class="maclogo">{{include.content}}</span>
+<span class="include maclogo">TODO maclogo: {{include}}</span>
