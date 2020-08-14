@@ -104,7 +104,7 @@ def convert_page(page_title, recursive=False):
             # print("Could not find " + page_title)
             return
         title = get_title(path_in)
-        catch_media(path_in, images_dir())
+        # catch_media(path_in, images_dir())
     page_title = page_title.replace(":", "_")
     page_title = page_title.replace("\"", "")
     page_title = page_title.replace("\'", "")
@@ -138,7 +138,7 @@ def convert_all():
             title = filename.replace(".mw", "")
             # print("trying to convert " + title + "...")
             convert_page(title, recursive=False)
-    handle_templates()
+    # handle_templates()
     save_status()
 
 
