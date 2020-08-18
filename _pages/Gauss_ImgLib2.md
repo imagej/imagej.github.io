@@ -7,4 +7,4 @@ categories:
 description: test description
 ---
 
-<figure><img src="/images/pages/Gauss.png" title="Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution" width="750" alt="Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution" /><figcaption aria-hidden="true">Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution</figcaption></figure>
+<figure><img src="/media/Gauss.png" title="Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution" width="750" alt="Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution" /><figcaption aria-hidden="true">Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution</figcaption></figure>

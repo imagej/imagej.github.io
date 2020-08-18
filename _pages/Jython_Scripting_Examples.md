@@ -541,7 +541,7 @@ One could easily add more color channels. But there are already lots.
 
 The script uses [Imglib](Imglib) scripting to normalize images and generate the color composite. See this [imglib scripting tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/#s10) for in-depth explanations.
 
-![](/images/pages/Corti-multi-channel.png "Corti-multi-channel.png")
+![](/media/Corti-multi-channel.png "Corti-multi-channel.png")
 
     # 2010-12-03 Albert Cardona and Arnim Jenett
     # At HHMI Janelia Farm, Fiji tutorials class

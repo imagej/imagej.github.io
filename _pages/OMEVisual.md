@@ -44,7 +44,7 @@ Please note that :
     -   The best way is to submit a PR.
     -   You can also open an issue and post an OME-TIFF file which contains additional OME features you would like to see added to the plugin.
 
-<figure><img src="/images/pages/OMEVisual_Screenshot.png" title="caption OMEVisual Screenshot" width="600" alt="caption OMEVisual Screenshot" /><figcaption aria-hidden="true">caption OMEVisual Screenshot</figcaption></figure>
+<figure><img src="/media/OMEVisual_Screenshot.png" title="caption OMEVisual Screenshot" width="600" alt="caption OMEVisual Screenshot" /><figcaption aria-hidden="true">caption OMEVisual Screenshot</figcaption></figure>
 
 Related links
 -------------

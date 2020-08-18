@@ -13,10 +13,10 @@ You can specify how large the generated kernels should be, and for how many diff
 
 Example:
 
-![](/images/pages/Noisy-lines.png "Noisy-lines.png")
+![](/media/Noisy-lines.png "Noisy-lines.png")
 
 With 30 angles at line length 17 with the criterion *Variance*, the filtered image looks like this:
 
-![](/images/pages/Noisy-lines-kuwahara.png "Noisy-lines-kuwahara.png")
+![](/media/Noisy-lines-kuwahara.png "Noisy-lines-kuwahara.png")
 
  

@@ -24,23 +24,23 @@ Tutorial
 
 Load the original and choose the landmarks:
 
-![](/images/pages/MLS-orig.jpg "MLS-orig.jpg")
+![](/media/MLS-orig.jpg "MLS-orig.jpg")
 
 By clicking on the menu entry {% include bc content='Edit | Selection | Add to Manager'%} add this landmark set to the ROI Manager:
 
-![](/images/pages/MLS-roi-manager.jpg "MLS-roi-manager.jpg")
+![](/media/MLS-roi-manager.jpg "MLS-roi-manager.jpg")
 
 Duplicate the image ({% include bc content='Image | Duplicate...'%}), click on the selection in the ROI manager and move the landmarks to their target location:
 
-![](/images/pages/MLS-new1.jpg "MLS-new1.jpg")
+![](/media/MLS-new1.jpg "MLS-new1.jpg")
 
 Now, run the plugin:
 
-![](/images/pages/MLS-dialog.jpg "MLS-dialog.jpg")
+![](/media/MLS-dialog.jpg "MLS-dialog.jpg")
 
 And you get the result:
 
-![](/images/pages/MLS-new2.jpg "MLS-new2.jpg")
+![](/media/MLS-new2.jpg "MLS-new2.jpg")
 
 References
 ----------

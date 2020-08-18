@@ -119,6 +119,6 @@ For complicated conflicts, you may find it easier to do the resolution using an 
 
 ... which will offer you a choice of tools. Here is a screenshot of using `git mergetool --tool=meld`:
 
-<img src="/images/pages/Meld-example.png" width="750"/>
+<img src="/media/Meld-example.png" width="750"/>
 
 

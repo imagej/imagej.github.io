@@ -140,7 +140,7 @@ To convert one to another use these commands:
     // ImageProcessor to ImageStack:
     stack.addSlice(ip)
 
-The following scheme depicts the relations between the different classes. <img src="/images/pages/Image_Class_Hierarchy.png" title="fig:Image_Class_Hierarchy.png" width="600" alt="Image_Class_Hierarchy.png" />
+The following scheme depicts the relations between the different classes. <img src="/media/Image_Class_Hierarchy.png" title="fig:Image_Class_Hierarchy.png" width="600" alt="Image_Class_Hierarchy.png" />
 
 Loop over Roi in Roi Manager
 ============================

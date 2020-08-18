@@ -18,7 +18,7 @@ Goal of the plugin
 
 Align (i.e. co-register) 2D images
 
-![](/images/pages/DS4H IA Modified TsujikawaCellReports2017.png "DS4H_IA_Modified_TsujikawaCellReports2017.png")
+![](/media/DS4H IA Modified TsujikawaCellReports2017.png "DS4H_IA_Modified_TsujikawaCellReports2017.png")
 
 Description
 -----------

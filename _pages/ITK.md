@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='InsightSoftwareConsortium' repo='ITK' %}
 {% endcapture %}
-{% include info-box name='ITK' software='ITK' logo='<img src="/images/pages/Itk-logo.png" width="96"/>' author=' [Insight Software Consortium](http://itk.org/)' maintainer=' [Insight Software Consortium](http://itk.org/)' source=source status='Active' website='http://itk.org/' %}The Insight Toolkit (ITK) is a cross-platform, [open-source](Open-source) application development framework widely used for the development of image [segmentation](Segmentation) and image registration programs.
+{% include info-box name='ITK' software='ITK' logo='<img src="/media/Itk-logo.png" width="96"/>' author=' [Insight Software Consortium](http://itk.org/)' maintainer=' [Insight Software Consortium](http://itk.org/)' source=source status='Active' website='http://itk.org/' %}The Insight Toolkit (ITK) is a cross-platform, [open-source](Open-source) application development framework widely used for the development of image [segmentation](Segmentation) and image registration programs.
 
 ITK integration with ImageJ
 ===========================

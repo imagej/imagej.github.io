@@ -17,7 +17,7 @@ Export all connected path sets as SWC files
 
 To export each connected set of paths as a separate SWC file, you can now select the "Export all as SWC..." menu option - you will be prompted for the prefix of the file names:
 
-![](/images/pages/Save-all-as-swc.png "Save-all-as-swc.png")
+![](/media/Save-all-as-swc.png "Save-all-as-swc.png")
 
 Export a single connected path set as an SWC file
 -------------------------------------------------
@@ -44,11 +44,11 @@ The SWC file format describes a single neuron's morphology (so every point is co
 
 There is now support in Simple Neurite Tracer for setting the type of SWC points contained in each path. You can do this by selecting a set of paths and then choosing a value from the SWC Type context menu:
 
-![](/images/pages/Snt-set-to-soma.png "Snt-set-to-soma.png")
+![](/media/Snt-set-to-soma.png "Snt-set-to-soma.png")
 
 You can set each path to a different type in this way, e.g.:
 
-![](/images/pages/Snt-after-setting-swc-types.png "Snt-after-setting-swc-types.png")
+![](/media/Snt-after-setting-swc-types.png "Snt-after-setting-swc-types.png")
 
 Note: setting an SWC type for every point is **required** by some software, such as L-measure.
 

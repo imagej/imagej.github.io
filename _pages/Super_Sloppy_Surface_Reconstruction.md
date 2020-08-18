@@ -26,7 +26,7 @@ Example
 
 See here a photograph of the [lunar crater Hohmann](http://commons.wikimedia.org/wiki/File:Hohmann_crater.png) original, integrated, and rendered as a [3D Surface Plot](3D_Surface_Plot).
 
-<table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/images/pages/Hohmann-crater.jpg' title='Original image'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/images/pages/Hohmann-crater-xintegral.jpg' title='Integral in <em>x</em>'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/images/pages/Hohmann-crater-surfaceplot.jpg' title='3D Surface Plot'%}</p></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Hohmann-crater.jpg' title='Original image'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Hohmann-crater-xintegral.jpg' title='Integral in <em>x</em>'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Hohmann-crater-surfaceplot.jpg' title='3D Surface Plot'%}</p></td></tr></tbody></table>
 
 Shortcomings
 ------------

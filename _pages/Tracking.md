@@ -14,7 +14,7 @@ Recommended ImageJ Plugins for Tracking
 
 Here we summarize some of the tracking plugins in ImageJ.
 
-<table><tbody><tr class="odd"><td><p><strong>Name</strong></p></td><td><p><strong>Short Description</strong></p></td><td><p><strong>Highlights</strong></p></td><td><p><strong>Plugin Snapshot</strong></p></td></tr><tr class="even"><td><p><a href="https://imagej.net/TrackMate">TrackMate</a></p></td><td><p>A tool for automated, and semi-automated particle tracking.</p></td><td><ul><li>Versatile and modular solution that works out of the box for end users</li><li>Provides several visualization and analysis tools that aid in assessing results</li><li>A very modular design, that makes it easy to extend</li></ul></td><td><p><img src="/images/pages/TrackMateGUI.png" width="500"/></p></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td><p><strong>Name</strong></p></td><td><p><strong>Short Description</strong></p></td><td><p><strong>Highlights</strong></p></td><td><p><strong>Plugin Snapshot</strong></p></td></tr><tr class="even"><td><p><a href="https://imagej.net/TrackMate">TrackMate</a></p></td><td><p>A tool for automated, and semi-automated particle tracking.</p></td><td><ul><li>Versatile and modular solution that works out of the box for end users</li><li>Provides several visualization and analysis tools that aid in assessing results</li><li>A very modular design, that makes it easy to extend</li></ul></td><td><p><img src="/media/TrackMateGUI.png" width="500"/></p></td></tr></tbody></table>
 
 Related publications
 --------------------

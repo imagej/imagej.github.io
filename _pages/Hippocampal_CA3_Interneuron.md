@@ -12,6 +12,6 @@ Hippocampal CA3 Interneuron
 
 (from the previous tutorial:
 
-![](/images/pages/Hippocampal CA3 Interneuron-1.png "Hippocampal_CA3_Interneuron-1.png")
+![](/media/Hippocampal CA3 Interneuron-1.png "Hippocampal_CA3_Interneuron-1.png")
 
 

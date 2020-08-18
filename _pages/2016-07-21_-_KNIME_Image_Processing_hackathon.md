@@ -111,17 +111,17 @@ Gallery
 
 
 {% capture content%}
-/images/pages/Hackathon-2016-konstanz-hackers.jpg \| Hackers!
-/images/pages/Hackathon-2016-konstanz-dinner.jpg \| Hackers at dinner
-/images/pages/Hackathon-2016-konstanz-rueden.jpg \| {% include person content='Rueden' %}
-/images/pages/Hackathon-2016-konstanz-harrington.jpg \| {% include person content='Kharrington' %}
-/images/pages/Hackathon-2016-konstanz-domander.jpg \| {% include person content='Rdom' %}
-/images/pages/Hackathon-2016-konstanz-hoerl.jpg \| {% include person content='hoerldavid' %}
-/images/pages/Hackathon-2016-konstanz-dietz-and-rueden.jpg \| {% include person content='Dietzc' %} and {% include person content='Rueden' %}
-/images/pages/Hackathon-2016-konstanz-harrington-and-gunther.jpg \| {% include person content='Kharrington' %} and {% include person content='skalarproduktraum' %}
-/images/pages/Hackathon-2016-konstanz-helfrich-and-pietzsch.jpg \| {% include person content='Stelfrich' %} and {% include person content='Pietzsch' %}
-/images/pages/2016-hackathon-konstanz-sushi.jpg \| KNIME 3.2: sushi edition
-/images/pages/Hackathon-2016-konstanz-amazing-salt.jpg \| The gravity-defying salt shaker!
+/media/Hackathon-2016-konstanz-hackers.jpg \| Hackers!
+/media/Hackathon-2016-konstanz-dinner.jpg \| Hackers at dinner
+/media/Hackathon-2016-konstanz-rueden.jpg \| {% include person content='Rueden' %}
+/media/Hackathon-2016-konstanz-harrington.jpg \| {% include person content='Kharrington' %}
+/media/Hackathon-2016-konstanz-domander.jpg \| {% include person content='Rdom' %}
+/media/Hackathon-2016-konstanz-hoerl.jpg \| {% include person content='hoerldavid' %}
+/media/Hackathon-2016-konstanz-dietz-and-rueden.jpg \| {% include person content='Dietzc' %} and {% include person content='Rueden' %}
+/media/Hackathon-2016-konstanz-harrington-and-gunther.jpg \| {% include person content='Kharrington' %} and {% include person content='skalarproduktraum' %}
+/media/Hackathon-2016-konstanz-helfrich-and-pietzsch.jpg \| {% include person content='Stelfrich' %} and {% include person content='Pietzsch' %}
+/media/2016-hackathon-konstanz-sushi.jpg \| KNIME 3.2: sushi edition
+/media/Hackathon-2016-konstanz-amazing-salt.jpg \| The gravity-defying salt shaker!
 {% endcapture %}
 {% include gallery content=content%}
 

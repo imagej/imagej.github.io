@@ -18,12 +18,12 @@ Purpose
 
 This is an implementation of the Largest Inscribed Circle algorithm using an euclidean distance map. The algorithm is looped until a circle diameter smaller than the defined minimum diameter is found. The code for this plugin was inspired by this [Matlab Central function](http://www.mathworks.ch/matlabcentral/fileexchange/30805-maximum-inscribed-circle-using-distance-transform)
 
-<figure><img src="/images/pages/Max_largest_circ_dialog2.png" title="Plugin Dialog choices" width="500" alt="Plugin Dialog choices" /><figcaption aria-hidden="true">Plugin Dialog choices</figcaption></figure>
+<figure><img src="/media/Max_largest_circ_dialog2.png" title="Plugin Dialog choices" width="500" alt="Plugin Dialog choices" /><figcaption aria-hidden="true">Plugin Dialog choices</figcaption></figure>
 
 Details
 -------
 
-As of July 26th 2016, the plugin has been rewritten with a new algorithm to make it run much faster.. See the faster implementation details figure. <img src="/images/pages/Max-Circles-Algorithm-Overview.png" title="fig:Faster implementation details" width="400" alt="Faster implementation details" />
+As of July 26th 2016, the plugin has been rewritten with a new algorithm to make it run much faster.. See the faster implementation details figure. <img src="/media/Max-Circles-Algorithm-Overview.png" title="fig:Faster implementation details" width="400" alt="Faster implementation details" />
 
 The previous implementation would calculate a distance map, then find the max value, place a circle and repeat. This was making it very slow for small circle diameters or large images as it needed to make one distance map calculation per circle on the whole image.
 
@@ -50,7 +50,7 @@ It will add all the found circles to the ROI Manager.
 
 Setting the Minimum Disk Diameter to 0 will return a single ROI with the largest inscribed circle.
 
-<figure><img src="/images/pages/Max_largest_circ_beforeafter.png" title="Result of Plugin on whole image" width="400" alt="Result of Plugin on whole image" /><figcaption aria-hidden="true">Result of Plugin on whole image</figcaption></figure>
+<figure><img src="/media/Max_largest_circ_beforeafter.png" title="Result of Plugin on whole image" width="400" alt="Result of Plugin on whole image" /><figcaption aria-hidden="true">Result of Plugin on whole image</figcaption></figure>
 
 Macro Recordable
 ----------------

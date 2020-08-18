@@ -20,7 +20,7 @@ description: test description
 {% include github org='ijpb' repo='ijpb-plugins' %}
 {% endcapture %}
 {% include info-box name='Marker-controlled Watershed' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}{\| \|<span>  
-</span>style="vertical-align:top" \|{% include thumbnail src='/images/pages/Watershed-flooding-markers-blobs-gradient.gif' title='Marker-controlled flooding on the gradient image of the blobs sample.'%} \|}
+</span>style="vertical-align:top" \|{% include thumbnail src='/media/Watershed-flooding-markers-blobs-gradient.gif' title='Marker-controlled flooding on the gradient image of the blobs sample.'%} \|}
 
 Introduction
 ------------
@@ -30,7 +30,7 @@ Marker-controlled Watershed is an ImageJ/Fiji plugin to segment grayscale images
 Usage
 -----
 
-{% include thumbnail src='/images/pages/Marker-controlled-Watershed-dialog.png' title='Main dialog of the Marker-controlled Watershed plugin'%} Marker-controlled Watershed needs at least two images to run:
+{% include thumbnail src='/media/Marker-controlled-Watershed-dialog.png' title='Main dialog of the Marker-controlled Watershed plugin'%} Marker-controlled Watershed needs at least two images to run:
 
 -   The **Input** image: a 2D or 3D grayscale image to flood, usually the gradient of an image.
 -   The **Marker** image: an image of the same dimensions as the input containing the seed points or markers as connected regions of voxels, each of them with a different label. They correspond usually to the local minima of the input image, but they can be set arbitrarily.
@@ -49,7 +49,7 @@ Output:
 
 -   Labeled image containing the catchment basins and (optionally) watershed lines (dams).
 
-{% include thumbnail src='/images/pages/Arabidopsis-nucleus-segmentation.png' title='Example of marker-controlled watershed segmentation on nucleus of \'\'Arabidopsis thaliana\'\' (image courtesy of Kaori Sakai and Javier Arpon, INRA-Versailles)'%}
+{% include thumbnail src='/media/Arabidopsis-nucleus-segmentation.png' title='Example of marker-controlled watershed segmentation on nucleus of \'\'Arabidopsis thaliana\'\' (image courtesy of Kaori Sakai and Javier Arpon, INRA-Versailles)'%}
 
 Installation
 ------------

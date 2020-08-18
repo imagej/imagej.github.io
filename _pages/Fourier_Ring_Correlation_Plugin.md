@@ -69,7 +69,7 @@ Use
 Direct Use
 ----------
 
-<figure><img src="/images/pages/frc-dialog-std.png" title="Plugin Dialog choices Standard Use" width="500" alt="Plugin Dialog choices Standard Use" /><figcaption aria-hidden="true">Plugin Dialog choices Standard Use</figcaption></figure>
+<figure><img src="/media/frc-dialog-std.png" title="Plugin Dialog choices Standard Use" width="500" alt="Plugin Dialog choices Standard Use" /><figcaption aria-hidden="true">Plugin Dialog choices Standard Use</figcaption></figure>
 
 Call up the plugin using *Plugins-&gt;BIOP-&gt;Image Analysis-&gt;FRC-&gt;FRC Calculation...*.
 
@@ -78,7 +78,7 @@ You need two images open to perform the FRC.
 Batch Mode
 ----------
 
-<figure><img src="/images/pages/Frc-dialog-batch.png" title="Plugin Dialog choices in Batch mode" width="500" alt="Plugin Dialog choices in Batch mode" /><figcaption aria-hidden="true">Plugin Dialog choices in Batch mode</figcaption></figure>
+<figure><img src="/media/Frc-dialog-batch.png" title="Plugin Dialog choices in Batch mode" width="500" alt="Plugin Dialog choices in Batch mode" /><figcaption aria-hidden="true">Plugin Dialog choices in Batch mode</figcaption></figure>
 
 There is also a Batch Option under *Plugins-&gt;BIOP-&gt;Image Analysis-&gt;FRC-&gt;FRC Calculation (Batch)...*
 
@@ -89,14 +89,14 @@ Results
 
 The plugin writes the FIRE (Fourier Image REsolution) number on a Results Table that gets appended as the plugin gets used. The column name reflects the calibration of the image and the threshold method selected.
 
-<figure><img src="/images/pages/Frc-results.png" title="Results Table example from FRC Calculation" width="500" alt="Results Table example from FRC Calculation" /><figcaption aria-hidden="true">Results Table example from FRC Calculation</figcaption></figure>
+<figure><img src="/media/Frc-results.png" title="Results Table example from FRC Calculation" width="500" alt="Results Table example from FRC Calculation" /><figcaption aria-hidden="true">Results Table example from FRC Calculation</figcaption></figure>
 
 Plots
 -----
 
 The Plugin can display a plot of the FRC curve, along with the LOESS smoothed version of the curve. Finally it displays the threshold method used and the intersection of the FRC with the threshold, providing the FIRE number. The X dimension is in the frequency domain and represents pixels<sup>-1</sup>
 
-<figure><img src="/images/pages/Frc-results-curve.png" title="FRC Curve example using 1/7 Threshold condition" width="500" alt="FRC Curve example using 1/7 Threshold condition" /><figcaption aria-hidden="true">FRC Curve example using 1/7 Threshold condition</figcaption></figure>
+<figure><img src="/media/Frc-results-curve.png" title="FRC Curve example using 1/7 Threshold condition" width="500" alt="FRC Curve example using 1/7 Threshold condition" /><figcaption aria-hidden="true">FRC Curve example using 1/7 Threshold condition</figcaption></figure>
 
 In the case of batch processing, if *Save Plot* is checked, the plugin creates a new folder in the parent directory called "Graphs" and saves an over-sampled plot with the name of the image and threshold method.
 

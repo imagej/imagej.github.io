@@ -9,7 +9,7 @@ description: test description
 
 When clicking {% include bc content='Plugins|BigStitcher| BigStitcher'%} in the the Fiji menu, it will open a macro-scriptable dialog that looks as following:
 
-![](/images/pages/BigStitcher import exisitng 0.png "BigStitcher_import_exisitng_0.png")
+![](/media/BigStitcher import exisitng 0.png "BigStitcher_import_exisitng_0.png")
 
 You have several options of how you can select your XML dataset file:
 
@@ -19,7 +19,7 @@ You have several options of how you can select your XML dataset file:
 
 If the XML file was successfully recognized, the dialog will change and show a quick summary of the contents of the dataset (the number of views, attributes, etc...) in <span style='color:#008000'>green</span>:
 
-![](/images/pages/BigStitcher import exisitng 1.png "BigStitcher_import_exisitng_1.png")
+![](/media/BigStitcher import exisitng 1.png "BigStitcher_import_exisitng_1.png")
 
 If there was an error parsing the XML file or the XML file doesn't exist the dialog will show respective warnings and errors. Finally just click **OK** and the BigStitcher window will appear.
 

@@ -22,4 +22,4 @@ HOW TO CITE:
 
 Wegner KA, Abler LL, Oakes SR, Mehta GS, Ritter KE, Hill WG, Zwaans BM, Lamb LE, Wang Z, Bjorling DE, Ricke WA, Macoska J, Marker PC, Southard-Smith EM, Eliceiri KW, Vezina CM. Void spot assay procedural optimization and software for rapid and objective quantification of rodent voiding function, including overlapping urine spots. *Am J Physiol Renal Physiol*. 2018 Oct 1;315(4):F1067-F1080
 
-`         `![`Void_Whizzard.PNG`](/images/pages/Void Whizzard.PNG "fig:Void_Whizzard.PNG")` `![`Figure_01.jpg`](/images/pages/Figure 01.jpg "fig:Figure_01.jpg")
+`         `![`Void_Whizzard.PNG`](/media/Void Whizzard.PNG "fig:Void_Whizzard.PNG")` `![`Figure_01.jpg`](/media/Figure 01.jpg "fig:Figure_01.jpg")

@@ -18,6 +18,6 @@ From the MacBiophotonics webpage:
 
 See also [Color Image Processing\#\#Splitting\_multi-channel\_Images](Color_Image_Processing##Splitting_multi-channel_Images).
 
-![](/images/pages/RGB to montage example.png "RGB_to_montage_example.png")
+![](/media/RGB to montage example.png "RGB_to_montage_example.png")
 
  

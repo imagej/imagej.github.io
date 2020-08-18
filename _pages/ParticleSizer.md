@@ -40,7 +40,7 @@ You can now start the ParticleSizer via *Plugins -&gt; NanoDefine -&gt; Particle
 Settings
 ========
 
-**Segmentation:**![](/images/pages/Psizer gui.png "fig:Psizer_gui.png")
+**Segmentation:**![](/media/Psizer gui.png "fig:Psizer_gui.png")
 
 -   Circular window radius: This is a parameter of the local thresholding technique. The ParticleSizer does not use a global threshold to binarize the image. Instead it uses a local threshold which is estimated for a specific circular region with the configured radius.
 -   Rolling ball radius: The background is removed by rolling a ball with this radius over the surface (intensity interpreded as hight) of the image. It should be at least as large as the largest object in image which does not belongs to the background.
@@ -105,19 +105,19 @@ Examples
 Gold 8 nm, Settings: Default
 ----------------------------
 
-<img src="/images/pages/Gold_nooverlay.png" title="fig:Gold_nooverlay.png" width="300" alt="Gold_nooverlay.png" /> <img src="/images/pages/Gold_overlay.png" title="fig:Gold_overlay.png" width="300" alt="Gold_overlay.png" /> <img src="/images/pages/Hist_gold_normal.png" title="fig:Hist_gold_normal.png" width="300" alt="Hist_gold_normal.png" />
+<img src="/media/Gold_nooverlay.png" title="fig:Gold_nooverlay.png" width="300" alt="Gold_nooverlay.png" /> <img src="/media/Gold_overlay.png" title="fig:Gold_overlay.png" width="300" alt="Gold_overlay.png" /> <img src="/media/Hist_gold_normal.png" title="fig:Hist_gold_normal.png" width="300" alt="Hist_gold_normal.png" />
 
 Gold 8 nm, Settings: +Ellipse fitting mode
 ------------------------------------------
 
-<img src="/images/pages/Gold_nooverlay.png" title="fig:Gold_nooverlay.png" width="300" alt="Gold_nooverlay.png" /> <img src="/images/pages/Gold_overlay_ellipsefitting.png" title="fig:Gold_overlay_ellipsefitting.png" width="300" alt="Gold_overlay_ellipsefitting.png" /> <img src="/images/pages/Gold_overlay_ellipsefitting_size.png" title="fig:Gold_overlay_ellipsefitting_size.png" width="300" alt="Gold_overlay_ellipsefitting_size.png" />
+<img src="/media/Gold_nooverlay.png" title="fig:Gold_nooverlay.png" width="300" alt="Gold_nooverlay.png" /> <img src="/media/Gold_overlay_ellipsefitting.png" title="fig:Gold_overlay_ellipsefitting.png" width="300" alt="Gold_overlay_ellipsefitting.png" /> <img src="/media/Gold_overlay_ellipsefitting_size.png" title="fig:Gold_overlay_ellipsefitting_size.png" width="300" alt="Gold_overlay_ellipsefitting_size.png" />
 
-== Gold 10 nm, Settings: +Min. OTB difference=30 == <img src="/images/pages/10nm_gold_nooverlay.png" title="fig:10nm_gold_nooverlay.png" width="300" alt="10nm_gold_nooverlay.png" /> <img src="/images/pages/10nm_gold_overlay.png" title="fig:10nm_gold_overlay.png" width="300" alt="10nm_gold_overlay.png" /> <img src="/images/pages/10nm_gold_overlay_size.png" title="fig:10nm_gold_overlay_size.png" width="300" alt="10nm_gold_overlay_size.png" />
+== Gold 10 nm, Settings: +Min. OTB difference=30 == <img src="/media/10nm_gold_nooverlay.png" title="fig:10nm_gold_nooverlay.png" width="300" alt="10nm_gold_nooverlay.png" /> <img src="/media/10nm_gold_overlay.png" title="fig:10nm_gold_overlay.png" width="300" alt="10nm_gold_overlay.png" /> <img src="/media/10nm_gold_overlay_size.png" title="fig:10nm_gold_overlay_size.png" width="300" alt="10nm_gold_overlay_size.png" />
 
 Kaolin, Settings: +Single particle mode
 ---------------------------------------
 
-<img src="/images/pages/Kaolin_ohne_overlay.png" title="fig:Kaolin_ohne_overlay.png" width="300" alt="Kaolin_ohne_overlay.png" /> <img src="/images/pages/Kaolin overlay.png" width="300"/> <img src="/images/pages/Kaolin_size_distr.png" title="fig:Kaolin_size_distr.png" width="300" alt="Kaolin_size_distr.png" />
+<img src="/media/Kaolin_ohne_overlay.png" title="fig:Kaolin_ohne_overlay.png" width="300" alt="Kaolin_ohne_overlay.png" /> <img src="/media/Kaolin overlay.png" width="300"/> <img src="/media/Kaolin_size_distr.png" title="fig:Kaolin_size_distr.png" width="300" alt="Kaolin_size_distr.png" />
 
 How to cite
 ===========

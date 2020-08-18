@@ -22,11 +22,11 @@ Where is the code?
 |                                          |                                       |                                                                 |
 |------------------------------------------|---------------------------------------|-----------------------------------------------------------------|
 | **Logo**                                 | **Organization**                      | **Purpose**                                                     |
-| <img src="/images/pages/Scijava-icon.png" width="28"/> | [SciJava](https://github.com/scijava) | Common utilities, plugin infrastructure, scripting, the context |
-| <img src="/images/pages/Imagej2-icon.png" width="28"/> | [ImageJ](https://github.com/imagej)   | A general-purpose image processing application                  |
-| <img src="/images/pages/Imglib2-icon.png" width="28"/> | [ImgLib2](https://github.com/imglib)  | Generic multi-dimensional data processing                       |
-| <img src="/images/pages/Scifio-icon.png" width="28"/>  | [SCIFIO](https://github.com/scifio)   | Extensible image file I/O                                       |
-| <img src="/images/pages/Fiji-icon.png" width="28"/>    | [Fiji](https://github.com/fiji)       | A "batteries-included" distribution of ImageJ                   |
+| <img src="/media/Scijava-icon.png" width="28"/> | [SciJava](https://github.com/scijava) | Common utilities, plugin infrastructure, scripting, the context |
+| <img src="/media/Imagej2-icon.png" width="28"/> | [ImageJ](https://github.com/imagej)   | A general-purpose image processing application                  |
+| <img src="/media/Imglib2-icon.png" width="28"/> | [ImgLib2](https://github.com/imglib)  | Generic multi-dimensional data processing                       |
+| <img src="/media/Scifio-icon.png" width="28"/>  | [SCIFIO](https://github.com/scifio)   | Extensible image file I/O                                       |
+| <img src="/media/Fiji-icon.png" width="28"/>    | [Fiji](https://github.com/fiji)       | A "batteries-included" distribution of ImageJ                   |
 
 See the [Architecture](Architecture) page for more information about the relationship between these projects.
 

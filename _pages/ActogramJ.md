@@ -28,7 +28,7 @@ Publication
 
 -   {% include publication content='ActogramJ' %}
 
-![](/images/pages/ActogramJ.png "ActogramJ.png")
+![](/media/ActogramJ.png "ActogramJ.png")
 
 More information is available at [https://bene51.github.io/ActogramJ](https://bene51.github.io/ActogramJ).
 

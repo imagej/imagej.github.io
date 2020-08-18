@@ -26,7 +26,7 @@ Multi-modal time-series registration
 
 **Versatility:** Fijiyama is a generic tool, efficient at any scale, tissue or imaging modality. It has been tested on the most common imaging approaches in biology and medicine: MRI, X-rays, photography...
 
-<img src="/images/pages/Reg present 1.png" width="700"/>
+<img src="/media/Reg present 1.png" width="700"/>
 
 Dataset with DOI for testing purpose
 ------------------------------------
@@ -89,7 +89,7 @@ Once signal intensity and voxel sizes have been checked, save your modified imag
 The registration manager window
 -------------------------------
 
-<img src="/images/pages/Fijiyama_reg_manager.png" title="fig:Fijiyama_reg_manager.png" width="350" alt="Fijiyama_reg_manager.png" /> Once a registration scenario starts, you can interact with the registration manager window through (see image) :
+<img src="/media/Fijiyama_reg_manager.png" title="fig:Fijiyama_reg_manager.png" width="350" alt="Fijiyama_reg_manager.png" /> Once a registration scenario starts, you can interact with the registration manager window through (see image) :
 
 -   The log window : a guide to remember last operations, and to understand what the plugin expects from you
 
@@ -176,7 +176,7 @@ Major updates include new features released, or major refactoring, while minor u
 
 Major updates are symbolized with a change in the plugin version name. For minor updates, only the release time is modified.
 
-<figure><img src="/images/pages/Versioning_Fijiyama.jpeg" title="Versioning_Fijiyama.jpeg" width="700" alt="Versioning_Fijiyama.jpeg" /><figcaption aria-hidden="true">Versioning_Fijiyama.jpeg</figcaption></figure>
+<figure><img src="/media/Versioning_Fijiyama.jpeg" title="Versioning_Fijiyama.jpeg" width="700" alt="Versioning_Fijiyama.jpeg" /><figcaption aria-hidden="true">Versioning_Fijiyama.jpeg</figcaption></figure>
 
 |                                               |                      |                     |                                                                                                                                                                                                                 |                                                                                                                                                                         |
 |-----------------------------------------------|----------------------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

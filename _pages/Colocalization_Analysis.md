@@ -42,11 +42,11 @@ Why scatter plots instead of colour merge images?
 
 Far too often, composite/merge images of red and green channels are considered sufficient to demonstrate colocalisation. This is plain wrong. The problems with red/green merge images for colour-blind people aside, there is another very good reason to require scatter plots: the perception of human eyes and brain can be fooled very easily. Just have a look at this image:
 
-<figure><img src="/images/pages/SpiralsRGY.png" title="SpiralsRGY.png" width="512" alt="SpiralsRGY.png" /><figcaption aria-hidden="true">SpiralsRGY.png</figcaption></figure>
+<figure><img src="/media/SpiralsRGY.png" title="SpiralsRGY.png" width="512" alt="SpiralsRGY.png" /><figcaption aria-hidden="true">SpiralsRGY.png</figcaption></figure>
 
 Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling {% include bc content='File | Open Samples | [Spirals (Macro)](Spirals_(Macro) "wikilink")'%} in Fiji.
 
-<figure><img src="/images/pages/GreenYellowSimultColourIllusion.png" title="GreenYellowSimultColourIllusion.png" width="512" alt="GreenYellowSimultColourIllusion.png" /><figcaption aria-hidden="true">GreenYellowSimultColourIllusion.png</figcaption></figure>
+<figure><img src="/media/GreenYellowSimultColourIllusion.png" title="GreenYellowSimultColourIllusion.png" width="512" alt="GreenYellowSimultColourIllusion.png" /><figcaption aria-hidden="true">GreenYellowSimultColourIllusion.png</figcaption></figure>
 
 Here is another one. The two circles look like different colours, but they are exactly the same if you measure the pixel values.
 
@@ -54,7 +54,7 @@ So... now, how do you feel about determining colocalization by looking for yello
 
 An even better reason to always look at scatterplots / 2D histograms / cytofluorograms is that they actually show the thing you are looking for and talking about - the correlation (or not) between the intensities of the 2 colour channels of the pixels over space.
 
-![](/images/pages/Ch1coloc.gif "fig:Ch1coloc.gif") ![](/images/pages/Ch2coloc.jpg "fig:Ch2coloc.jpg") ![](/images/pages/Scatterplotcoloc.jpg "fig:Scatterplotcoloc.jpg") ![](/images/pages/ColocQuadrants.jpg "fig:ColocQuadrants.jpg")
+![](/media/Ch1coloc.gif "fig:Ch1coloc.gif") ![](/media/Ch2coloc.jpg "fig:Ch2coloc.jpg") ![](/media/Scatterplotcoloc.jpg "fig:Scatterplotcoloc.jpg") ![](/media/ColocQuadrants.jpg "fig:ColocQuadrants.jpg")
 
 In the scatterplot or 2D Histogram (Thanks Tony Collins for this nice figure) the two intensity values for each pixel or voxel are plotted against each other, and the brighter the colour, the more pixels or voxel have those two intensity values for their two colour channels. Here we see if there is correlation immediately by eye, in the presence of a cloud of information in the middle of the 2D histogram. We can fit that cloud with a linear regression and measure correlation coefficients.
 
@@ -69,7 +69,7 @@ Let's open a sample data set that we know should have very good colocalization b
 
 If you like, you can change the look up tables of the images (LUTs) so one is "green" and one is "magenta". Of course the colors here are always false. These false colors are only useful to tell which channel is which. The optoelectronic detectors we use only see photons, and don't know what color they are; that is determined by the fluorescence emission filters we use. There is no such thing as a green dye or a red dye, since they have broad emission spectra not a single wavelength corresponding to a certain "color". If I want to show DAPI in green and EGFP as magenta, there is nothing "wrong" about that.
 
-<img src="/images/pages/SplitChannels.png" width="300"/>
+<img src="/media/SplitChannels.png" width="300"/>
 
 ImageJ plugins for colocalization analysis
 ------------------------------------------
@@ -165,7 +165,7 @@ Older colocalization plugins
 
 The [Colocalization Threshold](Colocalization_Threshold) plugin performs several functions for you in one go. With the "green" and "red" stacks of the [colocsample1bRGB\_BG.tif](https://fiji.sc/samples/colocsample1bRGB_BG.tif) dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [Why scatter plots?](#Why_scatter_plots.3F "wikilink")), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do.
 
-<img src="/images/pages/Coloc1.png" width="300"/> <img src="/images/pages/Coloc1b.png" width="300"/> <img src="/images/pages/Coloc2.png" width="300"/> &lt;\\p&gt;
+<img src="/media/Coloc1.png" width="300"/> <img src="/media/Coloc1b.png" width="300"/> <img src="/media/Coloc2.png" width="300"/> &lt;\\p&gt;
 
 1.  It generates a 2D Histogram / Scatterplot / Fluorogram. this is a really good way to visualise the correlation of the pixel intensities, over all pixels/voxels in the image, and can tell you immediately about problems such as intensity saturation/clipping, wrong offset, emission bleedthrough (fluorescence signal from the wrong dye in the detection channel), and even if there are multiple populations of colocalising species with different ratios of dyes in the same sample. Think of it just like a FACS or Flow cytometry scatter plot; indeed it is very similar.
 2.  It makes a linear regression fit of the data in the scatter plot. That is the diagonal white line in the scatter plot, the gradient of which is the ratio of the intensities of the 2 channels.
@@ -187,15 +187,15 @@ The plugin finally sends a bunch of statistics and results to the results window
 
 The [Colocalization Test](Colocalization_Test) plugin performs the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot). It is in the menus at {% include bc content='Analyze | Colocalization | Colocalization Test'%}
 
-<img src="/images/pages/ColocTestGUI1.png" width="400"/>
+<img src="/media/ColocTestGUI1.png" width="400"/>
 
 Choose the correct Channel 1 and Channel 2 images stacks from the drop down lists. Make sure "Current Slice Only" is off, and "Keep Example Randomized Image" and Show All R values" are on. Then click "OK"
 
-<img src="/images/pages/ColocTestGUI2.png" width="200"/>
+<img src="/media/ColocTestGUI2.png" width="200"/>
 
 The results window will then display the calculated P-value, and some other details of the test calculation.
 
-<img src="/images/pages/ColocTestResult.png" width="400"/>
+<img src="/media/ColocTestResult.png" width="400"/>
 
 The Costes method for {% include wikipedia title='Statistical significance' text='Statistical Significance'%} relies on the spatial calibration of the image, knowledge of the {% include wikipedia title='Numerical aperture' text='Numerical Aperture (N.A.)'%} of the objective lens, and the fluorescence emission wavelength to calculate how many pixels the {% include wikipedia title='Point spread function' text='point spread function'%} covers in the image. Then it takes the image in one of the channels, and randomizes it by moving PSF sized chunks of the image to random locations in a new random test image. Then it calculates the {% include wikipedia title='Correlation' text='Pearson\'s correlation coefficient (r)'%} between the randomized image and the original image of the other channel. If the correlation of the randomized image with the real image of the other channel is as good as or better than the correlation between the two real images, then any correlation that you measure is no better then what you would have got by chance for this image. This test is performed many (100) times, and the P-value is output, which is the proportion of random images that had better correlation than the real image. A P-value of 1.00 means that none of the randomised images had better correlation. 0.95 is the normal statistical confidence limit of 95%. Anything lower than that, and the correlation / colocalisation that you measure in the real images is not likely to be better than random chance, and thus is probably not interesting.
 

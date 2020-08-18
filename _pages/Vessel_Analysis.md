@@ -54,7 +54,7 @@ As the image is processed, new images will be generated and automatically saved 
 
 You will now be prompted to perform either vascular density or diameter measurements. At the end of each individual program, you can choose to analyze the other metric as well.
 
-![](/images/pages/Vessel Analysis RGB.png "fig:Vessel_Analysis_RGB.png") ![](/images/pages/Vessel Analysis Binary.png "fig:Vessel_Analysis_Binary.png") ![](/images/pages/Vessel Analysis DiameterM.png "fig:Vessel_Analysis_DiameterM.png")
+![](/media/Vessel Analysis RGB.png "fig:Vessel_Analysis_RGB.png") ![](/media/Vessel Analysis Binary.png "fig:Vessel_Analysis_Binary.png") ![](/media/Vessel Analysis DiameterM.png "fig:Vessel_Analysis_DiameterM.png")
 
 **Recommended Citation:**
 -------------------------

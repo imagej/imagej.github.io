@@ -65,7 +65,7 @@ That means it does not like images with high zero offset, where no light detecte
 
 Notice: the image contains large areas of background, with similar low values of pixel intensities in both channels. This means there is strong correlation in the background areas, which interferes with the interesting biological correlation in the high signal areas where the biology is located. This means it is important to set a biologically relevant region of interest (ROI) and not analyse the whole image. We must avoid analyzing the highly correlated, but uninteresting, background areas. See the section below...
 
-<img src="/images/pages/BadOffsetConfusesCostesAutoThreshold.png" width="300"/>
+<img src="/media/BadOffsetConfusesCostesAutoThreshold.png" width="300"/>
 
 Effect of noise on Pearson's and Manders' coefficients
 ------------------------------------------------------
@@ -79,14 +79,14 @@ Fluorescence emission bleed through looks like perfect colocalization
 
 As is often true for DAPI nuclear stain and GFP dye pairs, when images are captured at the same time, with both dyes being excited and detected simultaneously, fluorescence emission bleed through gives misleading results, as the signal from the DAPI also appears in the GFP detection channel! Where there is more DAPI, there is also more signal in the GFP channel. This looks like really good colocalization, but of course it is totally false! It is a problem with the imaging systems not being set up correctly or not used correctly. This can also happen with many other dye combinations, if they have overlapping emission spectra. Always check your spectra. You can do that here: [Invitrogen Fluorescent Dye Spectra Viewer](http://probes.invitrogen.com/servlets/spectraviewer). To be safe, check your emission filter sets don't allow in the wrong signal, and do **"sequential imaging"**, so you only excite and image one dye at a time.
 
-<img src="/images/pages/ColocBleedThru.png" width="300"/>
+<img src="/media/ColocBleedThru.png" width="300"/>
 
 Regions of interest (ROIs)
 --------------------------
 
 Whether or not to consider zero - zero pixels as part of the interesting data for the algorithms to deal with. If you think about it, in a fluorescence image there is typically quite a large area which is black in both channels. For instance where there is space between cells, or just no signal in either channel since that area is not part of an interesting area of the sample. A philosophical point but a significant one: Why bother taking images of black areas? Why bother analyzing black areas for colocalisation? Surely you are not interested in those regions, as they contain no information of use to you? If you perform these pixel intensity correlation methods and include zero zero pixels, then of course these pixels have a very high correlation! They have the same value. But they are totally uninteresting! Sure, the auto threshold method excludes them from the tM1 and tM2 figures, but why include them in the first place? Probably better not to include them unless there is a good reason to do that. Why not just image the area, or just analyze the area where your biology is happening? If you analyse an image with large areas of close to zero and zero intensities, then the autothreshold method will tend to lower the thresholds to include more of that non interesting background. If you image the same sample, but only image a patch of the interesting part, say cytoplasm, then the autothreshold will probably give higher thresholds, and exclude more non interesting background, so the thresholded Manders coefficients will better reflect the biologically interesting parts of the image data - right? You can analyze only a region of interest by making an ROI then selecting the use ROI option in the plugin. You can use a regular shape (rectangle or ellipse) or even a freehand ROI to manually select the interesting part of the image and ignore the part you know is background. Yes, this is a subjective decision, so be careful! You can see in the following example screenshot that for the same misbehaving data set, using an ROI which roughly gets just the cell, the thresholds were calculated properly and the tM1 and tM2 are sensible and lower than 1.00:
 
-<img src="/images/pages/ColocWithROI.png" width="300"/>
+<img src="/media/ColocWithROI.png" width="300"/>
 
 Other pitfalls
 --------------

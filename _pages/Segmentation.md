@@ -16,7 +16,7 @@ Introduction
 
 Image segmentation is "the process of partitioning a digital image into multiple segments." ({% include wikipedia title='Image segmentation' text='Wikipedia'%})
 
-![](/images/pages/Segmentation-overlay.jpg "fig:Segmentation-overlay.jpg") ![](/images/pages/Segmentation-boundaries.jpg "fig:Segmentation-boundaries.jpg")
+![](/media/Segmentation-overlay.jpg "fig:Segmentation-overlay.jpg") ![](/media/Segmentation-boundaries.jpg "fig:Segmentation-boundaries.jpg")
 
 It is typically used to locate *objects* and *boundaries*.
 
@@ -27,7 +27,7 @@ Easy workflow
 
 One plugin which is designed to be very powerful, yet easy to use for non-experts in image processing:
 
-<table><tbody><tr class="odd"><td><p><strong>Plugin Name</strong></p></td><td><p><strong>Short Description</strong></p></td><td><p><strong>Highlights</strong></p></td><td><p><strong>Plugin Snapshot</strong></p></td></tr><tr class="even"><td><p><a href="https://imagej.net/Trainable_Weka_Segmentation">Trainable Weka Segmentation</a></p></td><td><p>A tool that combines a collection of machine learning algorithms with a set of selected image features to produce pixel-based segmentations.</p></td><td><ul><li>Can be trained to learn from the user input and perform later the same task in unknown (test) data</li><li>Makes use of all the powerful tools and classifiers from the latest version of <a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a></li><li>Provides a labeled result based on the training of a chosen classifier</li><li>Ease of use due to its graphical user interfaces</li></ul></td><td><p><img src="/images/pages/TWS-GUI-after-training.png" width="500"/></p></td></tr><tr class="odd"><td></td><td></td><td></td><td></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td><p><strong>Plugin Name</strong></p></td><td><p><strong>Short Description</strong></p></td><td><p><strong>Highlights</strong></p></td><td><p><strong>Plugin Snapshot</strong></p></td></tr><tr class="even"><td><p><a href="https://imagej.net/Trainable_Weka_Segmentation">Trainable Weka Segmentation</a></p></td><td><p>A tool that combines a collection of machine learning algorithms with a set of selected image features to produce pixel-based segmentations.</p></td><td><ul><li>Can be trained to learn from the user input and perform later the same task in unknown (test) data</li><li>Makes use of all the powerful tools and classifiers from the latest version of <a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a></li><li>Provides a labeled result based on the training of a chosen classifier</li><li>Ease of use due to its graphical user interfaces</li></ul></td><td><p><img src="/media/TWS-GUI-after-training.png" width="500"/></p></td></tr><tr class="odd"><td></td><td></td><td></td><td></td></tr></tbody></table>
 
 Give it a try—you might like it!
 
@@ -55,7 +55,7 @@ Preprocess the image using filters, to make later thresholding more effective. W
 Adjusting Threshold
 -------------------
 
-<figure><img src="/images/pages/_Threshold_tree.png" title="Tree ring sample image with a threshold applied for a B&amp;W image" width="300" alt="Tree ring sample image with a threshold applied for a B&amp;W image" /><figcaption aria-hidden="true">Tree ring sample image with a threshold applied for a B&amp;W image</figcaption></figure>
+<figure><img src="/media/_Threshold_tree.png" title="Tree ring sample image with a threshold applied for a B&amp;W image" width="300" alt="Tree ring sample image with a threshold applied for a B&amp;W image" /><figcaption aria-hidden="true">Tree ring sample image with a threshold applied for a B&amp;W image</figcaption></figure>
 
 Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
 
@@ -68,7 +68,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 Creating Masks
 --------------
 
-<figure><img src="/images/pages/Eroded_tree.png" title="Over-saturated mask is eroded around the center tree ring" width="300" alt="Over-saturated mask is eroded around the center tree ring" /><figcaption aria-hidden="true">Over-saturated mask is eroded around the center tree ring</figcaption></figure>
+<figure><img src="/media/Eroded_tree.png" title="Over-saturated mask is eroded around the center tree ring" width="300" alt="Over-saturated mask is eroded around the center tree ring" /><figcaption aria-hidden="true">Over-saturated mask is eroded around the center tree ring</figcaption></figure>
 
 -   Select {% include bc content='Edit | Selection | Create Mask'%}
 -   Based on the image and set threshold, some portions of the image may be over/under saturated
@@ -80,7 +80,7 @@ Creating Masks
 Selections
 ----------
 
-<figure><img src="/images/pages/_Selection_tree.png" title="Selections on the mask" width="300" alt="Selections on the mask" /><figcaption aria-hidden="true">Selections on the mask</figcaption></figure>
+<figure><img src="/media/_Selection_tree.png" title="Selections on the mask" width="300" alt="Selections on the mask" /><figcaption aria-hidden="true">Selections on the mask</figcaption></figure>
 
 ### Creating Selections
 
@@ -88,7 +88,7 @@ Selections
 -   To deselect a portion of the image, select {% include key content='Shift' %}+{% include key content='click' %}
     -   [More information](https://imagej.net/docs/guide/146-27.html#sub:Create-Selection)
 
-<figure><img src="/images/pages/_Reverted_tree.png" title="Selections on the reverted image" width="300" alt="Selections on the reverted image" /><figcaption aria-hidden="true">Selections on the reverted image</figcaption></figure>
+<figure><img src="/media/_Reverted_tree.png" title="Selections on the reverted image" width="300" alt="Selections on the reverted image" /><figcaption aria-hidden="true">Selections on the reverted image</figcaption></figure>
 
 ### Transferring Selections
 

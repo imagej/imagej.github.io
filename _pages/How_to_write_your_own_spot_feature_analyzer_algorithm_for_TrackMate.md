@@ -156,7 +156,7 @@ Wrapping up
 
 Apart from the discussion on the priority and execution order, there is not much to say. It works!
 
-<figure><img src="/images/pages/TrackMate_CustomSpotAnalyzer_01.png" title="TrackMate_CustomSpotAnalyzer_01.png" width="600" alt="TrackMate_CustomSpotAnalyzer_01.png" /><figcaption aria-hidden="true">TrackMate_CustomSpotAnalyzer_01.png</figcaption></figure>
+<figure><img src="/media/TrackMate_CustomSpotAnalyzer_01.png" title="TrackMate_CustomSpotAnalyzer_01.png" width="600" alt="TrackMate_CustomSpotAnalyzer_01.png" /><figcaption aria-hidden="true">TrackMate_CustomSpotAnalyzer_01.png</figcaption></figure>
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 07:32, 11 March 2014 (CDT)
 

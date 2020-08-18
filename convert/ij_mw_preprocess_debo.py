@@ -215,7 +215,7 @@ def gallery_content_match(gallery_content):
         if path.startswith("File:"):
             filename = path.replace('File:', '')
             filename = filename[0].capitalize() + filename[1:]
-            path = '/images/pages/' + filename
+            path = '/media/' + filename
         res += path + ' | ' + match[1] + txt_newline
     return res[:-len(txt_newline)]
 
@@ -291,28 +291,28 @@ def fix_thumbnail(src, title):
         title = re.sub(r'^link\=[^|]*\|((?:.*|\n)*)$', r'\1', title)
         if txt_include_start in title:
             capture = txt_capture_start + 'title' + txt_capture_start_end + title + txt_capture_end
-            return capture + txt_include_start + 'thumbnail-link src="/images/pages/' \
+            return capture + txt_include_start + 'thumbnail-link src="/media/' \
                    + fix_image_name(src) + '" title' + txt_param_var_start + 'title ' \
                    + ' link' + txt_param_start + link + txt_param_end + txt_liquid_end
         else:
             title = title.replace("\'", txt_single_quote)
             if txt_include_start in title:
                 capture = txt_capture_start + 'title' + txt_capture_start_end + title + txt_capture_end
-                return capture + txt_include_start + 'thumbnail-link src="/images/pages/' \
+                return capture + txt_include_start + 'thumbnail-link src="/media/' \
                        + fix_image_name(src) + '" title' + txt_param_var_start + 'title ' \
                        + ' link' + txt_param_start + link + txt_param_end + txt_liquid_end
             else:
-                return txt_include_start + 'thumbnail-link src="/images/pages/' \
+                return txt_include_start + 'thumbnail-link src="/media/' \
                        + fix_image_name(src) + '" title' + txt_param_start + title + txt_param_end \
                        + ' link' + txt_param_start + link + txt_param_end + txt_liquid_end
     else:
         if txt_include_start in title:
             capture = txt_capture_start + 'title' + txt_capture_start_end + title + txt_capture_end
-            return capture + txt_include_start + 'thumbnail src' + txt_param_start + '/images/pages/' \
+            return capture + txt_include_start + 'thumbnail src' + txt_param_start + '/media/' \
                    + fix_image_name(src) + txt_param_end + ' title' + txt_param_var_start + 'title ' + txt_liquid_end
         else:
             title = title.replace("\'", txt_single_quote)
-            return txt_include_start + 'thumbnail src' + txt_param_start + '/images/pages/' \
+            return txt_include_start + 'thumbnail src' + txt_param_start + '/media/' \
                    + fix_image_name(
                 src) + txt_param_end + ' title' + txt_param_start + title + txt_param_end + txt_liquid_end
 
@@ -599,8 +599,8 @@ def convert(path_in, path_out, layout, title):
         # fix internal links
         content_tmp = re.sub(r'((?<!\!)\[[^\]]*\]\()((?!#)(?!http)(?!mailto\:)(?:[^\)\"]|(?:\\\)))*)([.]*(?:\"[^\"]*\")?(?<!\\)\))', fix_link_match, content_tmp)
         # fix internal image src paths
-        content_tmp = re.sub(r'<img src=\"(?!http)(?!/images/pages/)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
-        content_tmp = re.sub(r'((?<!-)\!\[(?!\[)[^\]]*\]\()((?!http)(?!\/images\/pages\/)[^\"\)]*)([ \n]*(?:\"[^\"]*\")?[ ]*\))', fix_md_image, content_tmp)
+        content_tmp = re.sub(r'<img src=\"(?!http)(?!/media/)([^\"]*)\"', r'<img src="/media/\1"', content_tmp)
+        content_tmp = re.sub(r'((?<!-)\!\[(?!\[)[^\]]*\]\()((?!http)(?!\/media\/)[^\"\)]*)([ \n]*(?:\"[^\"]*\")?[ ]*\))', fix_md_image, content_tmp)
         # remove empty html tags I guess?!
         content_tmp = re.sub(r'\<span\>[ \n]*\<br[ ]*\/\>[ \n]*\<\/span\>', r'', content_tmp)
         # reapply table row styles
@@ -647,7 +647,7 @@ def fix_bc_include(match):
 
 def fix_link_match(match):
     if match.group(1).startswith('[File:'):
-        # return '![/images/pages/' + match.group(2)
+        # return '![/media/' + match.group(2)
         return match.group(0)
     if match.group(1).startswith('[Category:'):
         return ''
@@ -658,7 +658,7 @@ def fix_link_match(match):
 
 
 def fix_md_image(match):
-    return match.group(1) + "/images/pages/" + fix_image_name(match.group(2)) + match.group(3)
+    return match.group(1) + "/media/" + fix_image_name(match.group(2)) + match.group(3)
 
 
 def run_pandoc(path_in, path_out):

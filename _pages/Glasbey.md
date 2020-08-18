@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include info-box name='Glasbey' software='Discontinuous color table' maintainer='Gabriel Landini' source='https://github.com/fiji/fiji/blob/master/luts/glasbey.lut and https://github.com/fiji/fiji/blob/master/luts/glasbey_inverted.lut' category='[:Category:Color\_processing](Category_Color_processing)' %}![](/images/pages/Glasbey.png "fig:Glasbey.png")The Glasbey lookup table (LUT) is a color table structured in a maximally discontinuous manner. That is, adjacent color bins are chosen to be as distinct from one another as possible.
+{% include info-box name='Glasbey' software='Discontinuous color table' maintainer='Gabriel Landini' source='https://github.com/fiji/fiji/blob/master/luts/glasbey.lut and https://github.com/fiji/fiji/blob/master/luts/glasbey_inverted.lut' category='[:Category:Color\_processing](Category_Color_processing)' %}![](/media/Glasbey.png "fig:Glasbey.png")The Glasbey lookup table (LUT) is a color table structured in a maximally discontinuous manner. That is, adjacent color bins are chosen to be as distinct from one another as possible.
 
 Like other LUTs, it is available from the {% include bc content='Image | Lookup Tables'%} menu.
 
@@ -18,14 +18,14 @@ Labelings
 
 The Glasbey LUT has numerous uses. It is ideal when coloring a "labeling" of integer-coded regions, since each region will then appear obviously distinct:
 
-![](/images/pages/Glasbey-labeling.png "Glasbey-labeling.png")
+![](/media/Glasbey-labeling.png "Glasbey-labeling.png")
 
 JPEG artifacts
 --------------
 
 Glasbey can also be used to illustrate otherwise-subtle phenomena such as JPEG compression artifacts. Here is a comparison of the Boats sample image before and after being resaved as a JPEG:
 
-![The grayscale LUT makes it very difficult (for most people) to see any visual difference.](/images/pages/JPEG-grayscale.png "fig:The grayscale LUT makes it very difficult (for most people) to see any visual difference.") ![The Glasbey LUT makes it quite obvious where JPEG compression caused a loss of data fidelity.](/images/pages/JPEG-glasbey.png "fig:The Glasbey LUT makes it quite obvious where JPEG compression caused a loss of data fidelity.")
+![The grayscale LUT makes it very difficult (for most people) to see any visual difference.](/media/JPEG-grayscale.png "fig:The grayscale LUT makes it very difficult (for most people) to see any visual difference.") ![The Glasbey LUT makes it quite obvious where JPEG compression caused a loss of data fidelity.](/media/JPEG-glasbey.png "fig:The Glasbey LUT makes it quite obvious where JPEG compression caused a loss of data fidelity.")
 
 Publication
 -----------

@@ -51,9 +51,9 @@ adjusts the colour of the result. Large values produce less saturated images..
 Example
 -------
 
-Original: ![](/images/pages/Photo1.jpg "fig:Photo1.jpg")
+Original: ![](/media/Photo1.jpg "fig:Photo1.jpg")
 
-After Retinex (default parameters): ![](/images/pages/Photo1-Retinex.jpg "fig:Photo1-Retinex.jpg")
+After Retinex (default parameters): ![](/media/Photo1-Retinex.jpg "fig:Photo1-Retinex.jpg")
 
 Homepage
 --------

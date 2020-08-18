@@ -23,7 +23,7 @@ The Updater is a mechanism to update individual packages. It is automatically ru
 
 If there were updates since the Updater was run the last time, the user will be asked whether you want to run the Updater now or later:
 
-![](/images/pages/Up-to-date-check.png "Up-to-date-check.png")
+![](/media/Up-to-date-check.png "Up-to-date-check.png")
 
 In case you do not want to run the Updater upon startup, you can choose *Never*.
 
@@ -37,7 +37,7 @@ Easy mode
 
 The Updater has two modes, the *Easy Mode* and the *Advanced Mode*. In the easy mode, you will only see the files that can be updated. The easy mode looks like this:
 
-![](/images/pages/Updater-easy-mode.png "Updater-easy-mode.png")
+![](/media/Updater-easy-mode.png "Updater-easy-mode.png")
 
 For technical reasons, a restart of ImageJ is required before the changes take effect. You can read about technical details [here](Uploading_plugins).
 
@@ -45,7 +45,7 @@ For technical reasons, a restart of ImageJ is required before the changes take e
 
 Some plugins require other components to be updated. For example, the [Simple Neurite Tracer](Simple_Neurite_Tracer) needs the [3D Viewer](3D_Viewer). If you have a locally modified version of the dependency (i.e. the Updater does not know that particular version), the Updater will ask you what to do:
 
-![](/images/pages/Updater-Resolve dependencies.png "Updater-Resolve_dependencies.png")
+![](/media/Updater-Resolve dependencies.png "Updater-Resolve_dependencies.png")
 
 A typical scenario when you can have a locally modified version of a component is when you asked the respective plugin author for a change in a certain component and got a test version that you [installed manually](Installing_3rd_party_plugins).
 
@@ -58,14 +58,14 @@ In the advanced mode, you can see details about the files, choose to skip updati
 
 Note: in the advanced mode you can also upload plugins to your [update site](Update_Sites). The details for each component can be edited by writing below the respective entry. To save the changes, you have to upload the plugin to the server.
 
-<figure><img src="/images/pages/Snapshot_of_the_Advanced_Mode_of_the_Updater.png" title="Snapshot_of_the_Advanced_Mode_of_the_Updater.png" width="750" alt="Snapshot_of_the_Advanced_Mode_of_the_Updater.png" /><figcaption aria-hidden="true">Snapshot_of_the_Advanced_Mode_of_the_Updater.png</figcaption></figure>
+<figure><img src="/media/Snapshot_of_the_Advanced_Mode_of_the_Updater.png" title="Snapshot_of_the_Advanced_Mode_of_the_Updater.png" width="750" alt="Snapshot_of_the_Advanced_Mode_of_the_Updater.png" /><figcaption aria-hidden="true">Snapshot_of_the_Advanced_Mode_of_the_Updater.png</figcaption></figure>
 
 Starting the Updater manually
 -----------------------------
 
 Just click on the {% include bc content='Help | Update...'%} menu item:
 
-![](/images/pages/Fiji Updater-screenshot.png "Fiji_Updater-screenshot.png")
+![](/media/Fiji Updater-screenshot.png "Fiji_Updater-screenshot.png")
 
 Adding update sites
 -------------------

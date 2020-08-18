@@ -17,7 +17,7 @@ For users
 -   Otherwise, you can just drag 'n drop the plugin .jar file (from the Explorer, Finder or any file browser) into the plugins directory:
 
   
-<img src="/images/pages/Install-Plugin-DragNDrop.png" width="750"/>
+<img src="/media/Install-Plugin-DragNDrop.png" width="750"/>
 
 <!-- -->
 
@@ -27,7 +27,7 @@ This will ask you for the <u>destination</u> of the plugin, just hitting *Save* 
 -   Alternatively, use {% include bc content='Plugins | Install Plugin...'%}:
 
   
-<img src="/images/pages/Install-Plugin.png" width="550"/>
+<img src="/media/Install-Plugin.png" width="550"/>
 
 <!-- -->
 

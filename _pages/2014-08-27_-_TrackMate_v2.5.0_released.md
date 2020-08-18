@@ -33,14 +33,14 @@ TrackScheme UI improvement
 
 [TrackScheme](TrackScheme) now features a search box and proper row and column headers.
 
-<img src="/images/pages/TrachSchemeSearchBar.png" width="600"/>
+<img src="/media/TrachSchemeSearchBar.png" width="600"/>
 
 Other improvement
 -----------------
 
 A new action, called *Branch hierarchy analysis* features a branch-based analysis of tracks. The output is an ImageJ results table that contains for each branch the number of predecessors, the number of successors and its duration. The results table is clickable and will set the selection to be the clicked branch.
 
-<img src="/images/pages/TrackMateBranchAnalysis.png" width="600"/>
+<img src="/media/TrackMateBranchAnalysis.png" width="600"/>
 
 <references/>
 

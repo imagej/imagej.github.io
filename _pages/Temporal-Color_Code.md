@@ -7,7 +7,7 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-![ 256px \| Stack of Listeria Movement ](/images/pages/K listeria animated.gif "fig: 256px | Stack of Listeria Movement ") ![ 256px \| Temporal-Color Coded](/images/pages/K temporal color coded listeria.png "fig: 256px | Temporal-Color Coded")
+![ 256px \| Stack of Listeria Movement ](/media/K listeria animated.gif "fig: 256px | Stack of Listeria Movement ") ![ 256px \| Temporal-Color Coded](/media/K temporal color coded listeria.png "fig: 256px | Temporal-Color Coded")
 
 
 {% capture author%}

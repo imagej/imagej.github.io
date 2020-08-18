@@ -264,7 +264,7 @@ Used to pretty-print the settings map specific to this tracker.
 
 The rest is classic. Here is what it looks like for our tracker:
 
-![](/images/pages/TrackaMateExample RandomCellDivision.png "TrackaMateExample_RandomCellDivision.png")
+![](/media/TrackaMateExample RandomCellDivision.png "TrackaMateExample_RandomCellDivision.png")
 
 TrackMate recognize there were two tracks. You did not have to worry about that.
 

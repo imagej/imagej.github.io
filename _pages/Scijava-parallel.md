@@ -25,7 +25,7 @@ A parallelization paradigm provider offers new parallelization paradigm implemen
 Developers
 ----------
 
-Developers obtain parallelization paradigm implementation that is in selected profile by method getParadigmOfType. Desired parallelization paradigm is specified when the method is called. If the parallelization paradigm implementation does not exist, *null* value type is returned. ![](/images/pages/ParallelService.png "fig:ParallelService.png")
+Developers obtain parallelization paradigm implementation that is in selected profile by method getParadigmOfType. Desired parallelization paradigm is specified when the method is called. If the parallelization paradigm implementation does not exist, *null* value type is returned. ![](/media/ParallelService.png "fig:ParallelService.png")
 
 Base type ParallelParadimg contains three methods:
 
@@ -55,7 +55,7 @@ Fiji users
 
 Scijava-parallel offers plugin that provides management of paradigms and profiles. It is accessible from menu *Plugins &gt; Scijava parallel &gt; Paradigm Profiles Manager*. The plugin shows the following form:
 
-![](/images/pages/ParadigmProfilesManager.png "ParadigmProfilesManager.png")
+![](/media/ParadigmProfilesManager.png "ParadigmProfilesManager.png")
 
 Profiles can be:
 
@@ -94,13 +94,13 @@ The parallelization paradigm implementation very often also requires some specif
 
 The framework provides interface *ParadigmManager* and its implementation is used by the framework for a profile creation (method *createProfile*) and its editing (method *editProfile*). Parallelization paradigm implementation is initialized by the method*prepareParadigm*. The parallelization paradigm provider implements the interface *ParadigmManager* and annotates it as *@Plugin* with a type *ParadigmManager*.
 
-![](/images/pages/Paradigm-manager.png "paradigm-manager.png")
+![](/media/Paradigm-manager.png "paradigm-manager.png")
 
 The class ParadigmManagerUsingRunner supports the frequently occurring scenario of how ParallelizationParadigm is initialized: external software is launched - it is always Fiji in the case of the existing implementation - and parallelization paradigm is initialized with information on how to access the software (host name, port number). It works with profile type *ParadigmProfileUsingRunner* that contains an object of a type *RunnerSettings* or its subtype (e.g. LocalImagejRunnerSettings). ParadigmManagerUsingRunner starts external software through an interface *ServerRunner*. ParadigmManagerUsingRunner edits settings with an object that implements *RunnerSettingsEditor*. Implementing class should be annotated with the annotation *@Plugin* with the type *RunnerSettingsEditor*. It enables scijava-parallel to find an editor for a given type of settings. There are registered editors for existing implementations of RunnerSettings.
 
 A developer makes a non-abstract child of the class ParadigmManagerUsingRunner. The child needs to implement only two abstract methods: *getTypeOfRunner* and *initParadigm*. It is possible to create a new implementation of *ServerRunner* or reuse one of the existing ones: LocalImagejRunner, HPCImageJRunner.
 
-![](/images/pages/Paradigm-manager-using-runner.jpg "paradigm-manager-using-runner.jpg")
+![](/media/Paradigm-manager-using-runner.jpg "paradigm-manager-using-runner.jpg")
 
 Installation
 ------------

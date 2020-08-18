@@ -21,7 +21,7 @@ description: test description
 
 ------------------------------------------------------------------------
 
-<img src="/images/pages/02b_Hotaling_Visual_Abstract.png" title="fig:Overview of DiameterJ analysis flow - (Top) SEM image --&gt; segmented image --&gt; stylized Euclidean distance transform. (Bottom) A few of the graphs capable of being produced from data given by DiameterJ" width="500" alt="Overview of DiameterJ analysis flow - (Top) SEM image --&gt; segmented image --&gt; stylized Euclidean distance transform. (Bottom) A few of the graphs capable of being produced from data given by DiameterJ" /> DiameterJ[3]は2つのステップで画像解析します:
+<img src="/media/02b_Hotaling_Visual_Abstract.png" title="fig:Overview of DiameterJ analysis flow - (Top) SEM image --&gt; segmented image --&gt; stylized Euclidean distance transform. (Bottom) A few of the graphs capable of being produced from data given by DiameterJ" width="500" alt="Overview of DiameterJ analysis flow - (Top) SEM image --&gt; segmented image --&gt; stylized Euclidean distance transform. (Bottom) A few of the graphs capable of being produced from data given by DiameterJ" /> DiameterJ[3]は2つのステップで画像解析します:
 
 1.  画像をバイナリイメージ（黒白ピクセルのみ）に分割します。
     -   DiameterJの16の初期設定分割アルゴリズムが「Segment SRM」「Segment Mixed」プラグインで組み込まれます。ただしこれらのアルゴリズムはすべてのSEMイメージで使われるわけではありません。
@@ -56,7 +56,7 @@ Fiji最新版: [DiameterJ v. 1.018 for Fiji](http://imagej.net/_images/6/65/Diam
 
 ------------------------------------------------------------------------
 
-<img src="/images/pages/Figure_1.png" title="fig:Diagram of DiameterJ code" width="400" alt="Diagram of DiameterJ code" /> DiameterJの目標[4]は、8ビットのSEM画像をどんな解像度であろうとも60秒以内にデスクトップコンピューターで解析することです。この下に、DiameterJのアルゴリズムがどのように繊維径を解析し、その他の骨組みがどのようになっているのかを示す図を挙げます。
+<img src="/media/Figure_1.png" title="fig:Diagram of DiameterJ code" width="400" alt="Diagram of DiameterJ code" /> DiameterJの目標[4]は、8ビットのSEM画像をどんな解像度であろうとも60秒以内にデスクトップコンピューターで解析することです。この下に、DiameterJのアルゴリズムがどのように繊維径を解析し、その他の骨組みがどのようになっているのかを示す図を挙げます。
 
 #### Segmentation
 
@@ -64,7 +64,7 @@ SEM画像は、まずImageJ/Fijiが持つ様々な閾値化技術を駆使して
 
 画像分割した後は、残されたノイズや形状上の特徴を、D'Amore[11]とGonzalez[12]が示した手順を基本に平滑化しました。簡単に言えば、ImageJのノイズ除去コマンドを、画像の変化が無くなるまで数回繰り返しています。そして、ImageJsの浸食コマンド、拡張コマンド、そして最終的には浸食コマンドを使い、繊維の境界を際立たせ、孤立したピクセルエリアを消去します。センターラインの決定の精度を良くするため、我々はLamらが開発した手法[13]を利用した。
 
-<figure><img src="/images/pages/Segmentation.png" title="Original image--&gt; Segmented image with no processing--&gt; Segmented image after smoothing and noise removal" width="600" alt="Original image--&gt; Segmented image with no processing--&gt; Segmented image after smoothing and noise removal" /><figcaption aria-hidden="true">Original image--&gt; Segmented image with no processing--&gt; Segmented image after smoothing and noise removal</figcaption></figure>
+<figure><img src="/media/Segmentation.png" title="Original image--&gt; Segmented image with no processing--&gt; Segmented image after smoothing and noise removal" width="600" alt="Original image--&gt; Segmented image with no processing--&gt; Segmented image after smoothing and noise removal" /><figcaption aria-hidden="true">Original image--&gt; Segmented image with no processing--&gt; Segmented image after smoothing and noise removal</figcaption></figure>
 
 #### Super Pixel Diameter
 
@@ -80,11 +80,11 @@ A new diameter was then calculated using the new corrected length and the total 
 
 #### Fiber Diameter Histogram
 
-{% include thumbnail src='/images/pages/Radius Histogram.png' title='alt=Alt\|Radius histogram produced by DiameterJ'%}To obtain the distribution of fiber diameters the segmented image was transformed with a Euclidian distance transformation algorithm [17] (Distance Map command in ImageJ). This algorithm takes a fiber pixel and finds the distance to the nearest orthogonal mesh hole using the square root of the sum of the square of the vertical and horizontal distances to the hole and then transforms the fiber pixel to a grey scale value equal to that distance. The resulting image is a grey scale image rather than black and white. The center-line calculated by the axial thinning algorithm above is then overlaid on top of the distance transformed image. At each intersection of the centerline the greyscale value is found and radii values within that range are subtracted out from the center-line. The greyscale values under the remaining centerline are then obtained and multiplied by 2 to get the value of all diameters not in an intersection area. The subsequent histogram of greyscale values is then found and placed in a .csv file along with the overall average, standard deviation, median and mode of all diameter values. The sensitive centerline was chosen because it was the more discriminating option and thus, had a higher likelihood of eliminating pixels that had a higher value than the real radius value.
+{% include thumbnail src='/media/Radius Histogram.png' title='alt=Alt\|Radius histogram produced by DiameterJ'%}To obtain the distribution of fiber diameters the segmented image was transformed with a Euclidian distance transformation algorithm [17] (Distance Map command in ImageJ). This algorithm takes a fiber pixel and finds the distance to the nearest orthogonal mesh hole using the square root of the sum of the square of the vertical and horizontal distances to the hole and then transforms the fiber pixel to a grey scale value equal to that distance. The resulting image is a grey scale image rather than black and white. The center-line calculated by the axial thinning algorithm above is then overlaid on top of the distance transformed image. At each intersection of the centerline the greyscale value is found and radii values within that range are subtracted out from the center-line. The greyscale values under the remaining centerline are then obtained and multiplied by 2 to get the value of all diameters not in an intersection area. The subsequent histogram of greyscale values is then found and placed in a .csv file along with the overall average, standard deviation, median and mode of all diameter values. The sensitive centerline was chosen because it was the more discriminating option and thus, had a higher likelihood of eliminating pixels that had a higher value than the real radius value.
 
 #### Mesh Hole Analysis
 
-{% include thumbnail src='/images/pages/Pore Outlines.png' title='alt=Alt\|Mesh holes measured by DiameterJ'%}Segmented pictures contain only black and white pixels; with black pixels representing background and white pixels representing fibers. Black pixels were analyzed using the Analyze Particles command in ImageJ. This algorithm essentially finds discrete clusters of black pixels, counts the number of pixels in each cluster and then reports their area. Pixel units were selected for particle analysis as well as a circularity from 0.00-1.00, the option to exclude clusters that touch the edge was also chosen. The subsequent particle analysis was then saved to later produce a mesh hole histogram, mean mesh hole area (produced by averaging all cluster areas), and percent mesh hole (produced by taking the total number of black pixels and dividing it by the total image resolution).
+{% include thumbnail src='/media/Pore Outlines.png' title='alt=Alt\|Mesh holes measured by DiameterJ'%}Segmented pictures contain only black and white pixels; with black pixels representing background and white pixels representing fibers. Black pixels were analyzed using the Analyze Particles command in ImageJ. This algorithm essentially finds discrete clusters of black pixels, counts the number of pixels in each cluster and then reports their area. Pixel units were selected for particle analysis as well as a circularity from 0.00-1.00, the option to exclude clusters that touch the edge was also chosen. The subsequent particle analysis was then saved to later produce a mesh hole histogram, mean mesh hole area (produced by averaging all cluster areas), and percent mesh hole (produced by taking the total number of black pixels and dividing it by the total image resolution).
 
 #### Fiber Orientation
 
@@ -210,7 +210,7 @@ FAQs
 
 :\# Q: None of the images I am analyzing are segmenting well with your algorithms, why not?
 
-:\#:\* A: ''The algorithms included by default with DiameterJ rely heavily on uniformity of fiber color and/or a dark background. Below are four good examples and four examples that work poorly for image segmentation with the default algorithms. Keep in mind there are many more segmentation algorithms than I have included with DiameterJ in both Fiji and ImageJ. See the [Complementary Tools](DiameterJ#Complementary_Tools) or [Image Segmentation](DiameterJ#Image_Segmentation) sections of this work for a few of the options available.<img src="/images/pages/Good_vs_Bad_Seg.PNG" title="fig:Example images that segment well and that do not segment well with DiameterJ&#39;s default segmentation algorithms" width="750" alt="Example images that segment well and that do not segment well with DiameterJ&#39;s default segmentation algorithms" />
+:\#:\* A: ''The algorithms included by default with DiameterJ rely heavily on uniformity of fiber color and/or a dark background. Below are four good examples and four examples that work poorly for image segmentation with the default algorithms. Keep in mind there are many more segmentation algorithms than I have included with DiameterJ in both Fiji and ImageJ. See the [Complementary Tools](DiameterJ#Complementary_Tools) or [Image Segmentation](DiameterJ#Image_Segmentation) sections of this work for a few of the options available.<img src="/media/Good_vs_Bad_Seg.PNG" title="fig:Example images that segment well and that do not segment well with DiameterJ&#39;s default segmentation algorithms" width="750" alt="Example images that segment well and that do not segment well with DiameterJ&#39;s default segmentation algorithms" />
 
 Complementary Tools
 -------------------

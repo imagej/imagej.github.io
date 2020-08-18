@@ -67,7 +67,7 @@ Stack Sorter: “*Image/Stacks/Tools/Stack Sorter*”.
 -   Control the position of individual slices or groups of slices.
 -   Advanced “Insert” functionality.
 
-![](/images/pages/Stack slice manipulations1.png "stack_slice_manipulations1.png")
+![](/media/Stack slice manipulations1.png "stack_slice_manipulations1.png")
 
 Stack dimension manipulations
 -----------------------------
@@ -78,7 +78,7 @@ E. H. W. Meijering, W. J. Niessen, M. A. Viergever, [Quantitative Evaluation of 
 
 An alternative method for cropping a stack is found with "*Plugins/Stacks/Crop (3D)*" After selecting 'OK', you will be presented with panels of the ZY and XZ planes, as well as the original stack, where you can use the mouse to crop the stack in any of the three directions.
 
-![](/images/pages/3dcrop.png "3dcrop.png")
+![](/media/3dcrop.png "3dcrop.png")
 
 Window for the Crop (3D) plugin.
 
@@ -91,11 +91,11 @@ To use this plugin, select an ROI which will become the final frame, but do not 
 
 Image with selected ROI
 
-<figure><img src="/images/pages/zoomify_start.png" title="zoomify_start.png" width="359" height="270" alt="zoomify_start.png" /><figcaption aria-hidden="true">zoomify_start.png</figcaption></figure>
+<figure><img src="/media/zoomify_start.png" title="zoomify_start.png" width="359" height="270" alt="zoomify_start.png" /><figcaption aria-hidden="true">zoomify_start.png</figcaption></figure>
 
 Series generated with zoomify
 
-<figure><img src="/images/pages/zoomify_montage.png" title="zoomify_montage.png" width="533" height="111" alt="zoomify_montage.png" /><figcaption aria-hidden="true">zoomify_montage.png</figcaption></figure>
+<figure><img src="/media/zoomify_montage.png" title="zoomify_montage.png" width="533" height="111" alt="zoomify_montage.png" /><figcaption aria-hidden="true">zoomify_montage.png</figcaption></figure>
 
 Align slices in stack
 ---------------------
@@ -108,10 +108,10 @@ P. Thévenaz, U.E. Ruttimann, M. Unser, "[A Pyramid Approach to Subpixel Registr
 
 Time series before alignment
 
-![](/images/pages/Pre alignment.png "pre_alignment.png")
+![](/media/Pre alignment.png "pre_alignment.png")
 
 After
 
-![](/images/pages/After alignment.png "after_alignment.png")
+![](/media/After alignment.png "after_alignment.png")
 
  

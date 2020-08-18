@@ -20,7 +20,7 @@ description: test description
 {% capture source%}
 {% include github org='imagej' repo='imagej1' %}
 {% endcapture %}
-{% include info-box name='ImageJ1' software='ImageJ' logo='<img src="/images/pages/Imagej1-icon.png" width="96"/>' author=author maintainer=maintainer source=source status='stable, active' category='' %}ImageJ 1.x, often shortened to ImageJ1 or IJ1, is a stable version of [ImageJ](ImageJ) which has been under continuous development since 1997. It has always been, and continues to be, a one-developer project of {% include person content='Rasband' %}.
+{% include info-box name='ImageJ1' software='ImageJ' logo='<img src="/media/Imagej1-icon.png" width="96"/>' author=author maintainer=maintainer source=source status='stable, active' category='' %}ImageJ 1.x, often shortened to ImageJ1 or IJ1, is a stable version of [ImageJ](ImageJ) which has been under continuous development since 1997. It has always been, and continues to be, a one-developer project of {% include person content='Rasband' %}.
 
 ImageJ was originally developed in 1997 as a cross-platform version of [NIH Image](NIH_Image). ImageJ grew organically over time as {% include person content='Rasband' %} continued to add features according to user requests. Now there are many hundreds, probably thousands, of plugins written by members of a diverse community.
 

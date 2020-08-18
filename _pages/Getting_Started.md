@@ -21,7 +21,7 @@ The main window
 
 After starting ImageJ, you will see the main window:
 
-![](/images/pages/Fiji-main-window.jpg "Fiji-main-window.jpg")
+![](/media/Fiji-main-window.jpg "Fiji-main-window.jpg")
 
 On Mac OS X, the menu bar will appear on the top of the screen (as with all OS X applications).
 
@@ -63,22 +63,22 @@ The toolbar mostly contains selection tools: the rectangle, ellipse, polygon, fr
 
 Some tools offer option dialogs which you can open by double clicking the icon. This example shows the option dialog of the Oval Tool:
 
-![](/images/pages/Oval Tool Option Dialog.png "Oval_Tool_Option_Dialog.png")
+![](/media/Oval Tool Option Dialog.png "Oval_Tool_Option_Dialog.png")
 
 If there is a small red arrow in the lower right corner of the tool icon, you can right-click ({% include key content='Ctrl' %}+{% include key content='click' %} on an Apple mouse) and select an alternative selection tool (e.g. a circular brush selection tool which shares the icon with the ellipse selection tool). Example:
 
-![](/images/pages/Alternative Tools.png "Alternative_Tools.png")
+![](/media/Alternative Tools.png "Alternative_Tools.png")
 
 The status bar
 --------------
 
 The status bar displays useful information at startup, and when running plugins. It also shows a progress bar on the right side for long-running processes:
 
-![](/images/pages/Status-bar-with-progress.png "Status-bar-with-progress.png")
+![](/media/Status-bar-with-progress.png "Status-bar-with-progress.png")
 
 A single mouse click on the status bar will show the information about ImageJ and Java version as well as about memory consumption:
 
-![](/images/pages/Default-status-message.png "Default-status-message.png")
+![](/media/Default-status-message.png "Default-status-message.png")
 
 Drag & Drop
 -----------
@@ -92,7 +92,7 @@ Image windows
 
 Whenever you open an image, be it via {% include bc content='File | Open'%}, Drag 'n Drop or {% include bc content='File | Open Samples'%}, ImageJ will open an image window.
 
-![](/images/pages/Clown-snapshot.jpg "Clown-snapshot.jpg")
+![](/media/Clown-snapshot.jpg "Clown-snapshot.jpg")
 
 The window has the file name as title, and it display some useful information above the image: the real resolution (in this case in square centimeters), the pixel resolution, the image type and the memory required by the image.
 
@@ -103,7 +103,7 @@ Image Types
 
 You can change the image *type*:
 
-![](/images/pages/Image-Types.png "Image-Types.png")
+![](/media/Image-Types.png "Image-Types.png")
 
 Choose between
 

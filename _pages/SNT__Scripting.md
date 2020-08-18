@@ -20,7 +20,7 @@ The most up-to-date SNT API can be found at [https://morphonets.github.io/SNT](h
 Script Templates
 ----------------
 
-<img src="/images/pages/Snt-Scripts-Menu-Full-List.png" title="fig:SNT Scripts Menu" width="300" alt="SNT Scripts Menu" /> SNT comes packaged with script templates demonstrating various analysis, tracing, image processing and batch processing routines. These templates can be found both in the *Scripts* menu of the SNT dialog and in the {% include bc content='Templates|Neuroanatomy'%} menu of Fiji's Script Editor. Scripts can be written in any language supported by Fiji's Script Editor.
+<img src="/media/Snt-Scripts-Menu-Full-List.png" title="fig:SNT Scripts Menu" width="300" alt="SNT Scripts Menu" /> SNT comes packaged with script templates demonstrating various analysis, tracing, image processing and batch processing routines. These templates can be found both in the *Scripts* menu of the SNT dialog and in the {% include bc content='Templates|Neuroanatomy'%} menu of Fiji's Script Editor. Scripts can be written in any language supported by Fiji's Script Editor.
 
 ### Analysis
 
@@ -254,7 +254,7 @@ The following script exemplifies how to extend the boilerplate template to contr
 
 ### Script Interpreter
 
-Some of SNT's functionality is accessible in the [Script Interpreter](Script_Interpreter). Here is an example: <img src="/images/pages/SNT-ScriptInterpreter.png" title="fig:SNT-ScriptInterpreter.png" width="650" alt="SNT-ScriptInterpreter.png" />
+Some of SNT's functionality is accessible in the [Script Interpreter](Script_Interpreter). Here is an example: <img src="/media/SNT-ScriptInterpreter.png" title="fig:SNT-ScriptInterpreter.png" width="650" alt="SNT-ScriptInterpreter.png" />
 
 {% include sntnavbar%}
 

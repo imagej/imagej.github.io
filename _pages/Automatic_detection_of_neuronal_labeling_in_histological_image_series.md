@@ -17,7 +17,7 @@ Installation
 
 Download files to the ImageJ/plugins or ImageJ/plugins/Macros directory. The zip package is organized into the right folder structure and can be extracted directly to the ImageJ directory. Processing of image series is primarily handled by the macros, available from the ImageJ menu Plugins -&gt; Macros. The NeSys Pixel Counter plugin can be used on individual images by placing the .class file into the ImageJ/plugins directory, or compiling the Java source code (.java) in the same place (Plugins -&gt; Compile and run), and thereafter running the plugin from the Plugins menu. The CDgetPrimaryChannel plugin is intended for usage together with the NeSys Labeling Detection macro and is not available from the Plugins menu.
 
-<u>**Download the complete package:**</u> ![](/images/pages/Nesys-labeling-detection.zip "fig:Nesys-labeling-detection.zip")
+<u>**Download the complete package:**</u> ![](/media/Nesys-labeling-detection.zip "fig:Nesys-labeling-detection.zip")
 
 **Package contents**
 
@@ -38,7 +38,7 @@ After installation, the macros are available from the Plugins -&gt; Macros menu.
 
 The NeSys Labeling Detection macro uses the CDgetPrimaryChannel plugin to perform [Colour Deconvolution](Plugin_color_colour_deconvolution_start) on series of color (RGB) images using a shortened version of the plugin from G. Landini based on the method of \[http://www.ncbi.nlm.nih.gov/pubmed/11531144>\| A.C. Ruifrok\]. Vectors for Colour Deconvolution are expected to be acquired in advance using the original plugin and saved in the colourdeconvolution.txt file located in the Imagej/plugins/Macros folder. The parameter file is formatted according to the example provided by Benjamin Pavie (bpavie) on \[<https://github.com/bpavie/Colour_Deconvolution/tree/externaltxt/src/main/java/sc/fiji/colourDeconvolution\| GitHub\]. Requires ImageJ version 1.39f or later.
 
-<u>We recorded Colour Deconvolution vectors for the following staining combinations (see colourdeconvolution.txt):</u> <a href="|Staining combinations"><img src="/images/pages/Staining-combinations.png" width="600px"/></a>
+<u>We recorded Colour Deconvolution vectors for the following staining combinations (see colourdeconvolution.txt):</u> <a href="|Staining combinations"><img src="/media/Staining-combinations.png" width="600px"/></a>
 
 -   BDA and Neutral Red
 -   BDA and no background

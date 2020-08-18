@@ -19,12 +19,12 @@ The {% include wikipedia title='Gitter' text='Gitter'%} chat service, while rela
 |                                          |                               |                                                   |
 |------------------------------------------|-------------------------------|---------------------------------------------------|
 | **Logo**                                 | **Organization**              | **Chat rooms**                                    |
-| <img src="/images/pages/Imagej2-icon.png" width="48"/> | [ImageJ](ImageJ)   | [imagej](https://gitter.im/orgs/imagej/rooms)     |
-| <img src="/images/pages/Fiji-icon.png" width="48"/>    | [Fiji](Fiji)       | [fiji](https://gitter.im/orgs/fiji/rooms)         |
-| <img src="/images/pages/Knime-icon.png" width="48"/>   | [KNIME](KNIME)     | [knime-ip](https://gitter.im/orgs/knime-ip/rooms) |
-| <img src="/images/pages/Imglib2-icon.png" width="48"/> | [ImgLib2](ImgLib2) | [imglib](https://gitter.im/orgs/imglib/rooms)     |
-| <img src="/images/pages/Scifio-icon.png" width="48"/>  | [SCIFIO](SCIFIO)   | [scifio](https://gitter.im/orgs/scifio/rooms)     |
-| <img src="/images/pages/Scijava-icon.png" width="48"/> | [SciJava](SciJava) | [scijava](https://gitter.im/orgs/scijava/rooms)   |
+| <img src="/media/Imagej2-icon.png" width="48"/> | [ImageJ](ImageJ)   | [imagej](https://gitter.im/orgs/imagej/rooms)     |
+| <img src="/media/Fiji-icon.png" width="48"/>    | [Fiji](Fiji)       | [fiji](https://gitter.im/orgs/fiji/rooms)         |
+| <img src="/media/Knime-icon.png" width="48"/>   | [KNIME](KNIME)     | [knime-ip](https://gitter.im/orgs/knime-ip/rooms) |
+| <img src="/media/Imglib2-icon.png" width="48"/> | [ImgLib2](ImgLib2) | [imglib](https://gitter.im/orgs/imglib/rooms)     |
+| <img src="/media/Scifio-icon.png" width="48"/>  | [SCIFIO](SCIFIO)   | [scifio](https://gitter.im/orgs/scifio/rooms)     |
+| <img src="/media/Scijava-icon.png" width="48"/> | [SciJava](SciJava) | [scijava](https://gitter.im/orgs/scijava/rooms)   |
 
 IRC
 ---

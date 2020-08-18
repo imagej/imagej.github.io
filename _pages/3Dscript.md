@@ -21,13 +21,13 @@ description: test description
 {% endcapture %}
 {% include info-box software='Fiji' name='3Dscript' maintainer=maintainer author=author source=source status='active' released='January 2019' category='[Visualization](Category_Visualization), [:Category:Plugins](Category_Plugins)' %}
 
-<img src="/images/pages/3Dscript-Logo.png" width="160"/> **3Dscript** - Create high-quality 3D/4D animations using a natural-language based syntax
+<img src="/media/3Dscript-Logo.png" width="160"/> **3Dscript** - Create high-quality 3D/4D animations using a natural-language based syntax
 
 In state-of-the-art 3D rendering and animation software the user typically creates an animation by specifying a number of keyframes. While intuitive, this approach becomes tedious for complex motions like simultaneous rotations around multiple axes, and even worse for accelerated and decelerated motions: The number of required keyframes increases, and creating them becomes hardly reproducible.
 
 In 3Dscript, animations are defined by a syntax based on natural English language, in sentences such as "From frame 0 to frame 100 rotate by 360 degrees horizontally ease-in".
 
-![](/images/pages/3Dscript-wiki-01.jpg "3Dscript-wiki-01.jpg")
+![](/media/3Dscript-wiki-01.jpg "3Dscript-wiki-01.jpg")
 
 Publication
 -----------

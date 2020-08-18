@@ -18,17 +18,17 @@ The RATS algorithm is applied across regions of the image making it suitable for
 
 In this implementation the input gradient of the input image is computed using the Sobel kernels. Traditionally the Sobel gradient is computed using
 
-![](/images/pages/RATS sobel.png "RATS_sobel.png")
+![](/media/RATS sobel.png "RATS_sobel.png")
 
 The kernel operators are detailed in many sources including {% include wikipedia title='Sobel operator' text='here'%}. However, Wilkinson shows that eliminating the square root yields suitable results with out the added cost of a final scan across the image to compute the root. In the plugin the gradient is left simply as the sum of the squares of the kernel operations.
 
-![](/images/pages/RATS sobel2.png "RATS_sobel2.png")
+![](/media/RATS sobel2.png "RATS_sobel2.png")
 
-Pixels with gradients that fall below a user specified threshold, ![](/images/pages/RATS lambdasigma.png "fig:RATS_lambdasigma.png") , are rejected. The threshold is defined by an estimate of the noise (![](/images/pages/RATS sigma.png "fig:RATS_sigma.png") ,the standard deviation of the expected background is a good starting point) and a scaling factor (![](/images/pages/RATS lambda.png "fig:RATS_lambda.png"), 3 is a good starting point). Estimate the noise by selecting a "background" portion of the image and using ImageJ to determine the standard deviation of gray values.
+Pixels with gradients that fall below a user specified threshold, ![](/media/RATS lambdasigma.png "fig:RATS_lambdasigma.png") , are rejected. The threshold is defined by an estimate of the noise (![](/media/RATS sigma.png "fig:RATS_sigma.png") ,the standard deviation of the expected background is a good starting point) and a scaling factor (![](/media/RATS lambda.png "fig:RATS_lambda.png"), 3 is a good starting point). Estimate the noise by selecting a "background" portion of the image and using ImageJ to determine the standard deviation of gray values.
 
-The input image is then subdivided into a quadtree architecture (for more info see {% include wikipedia title='Quadtree' text='Wikipedia:Quadtree'%}). Within each of the smallest subregions, a regional threshold, ![](/images/pages/RATS Tr.png "fig:RATS_Tr.png") , is computed as the gradient weighted sum of the pixels, P.
+The input image is then subdivided into a quadtree architecture (for more info see {% include wikipedia title='Quadtree' text='Wikipedia:Quadtree'%}). Within each of the smallest subregions, a regional threshold, ![](/media/RATS Tr.png "fig:RATS_Tr.png") , is computed as the gradient weighted sum of the pixels, P.
 
-![](/images/pages/RATS Tr2.png "RATS_Tr2.png")
+![](/media/RATS Tr2.png "RATS_Tr2.png")
 
 Occasionally, the regional threshold fails if the sum of the weights (the denominator) falls to the level of background containing only noise. In such cases, the regional threshold is replaced by the threshold of its parent quadtree (if the parent's threshold doesn't fail). It is possible that thresholds fail all the way up the quadtree heirarchy, in which case a same threshold is applied to all regions which is identical to applying a global threshold. In our experience, regional threshold failures are rare. Once the regional thresholds are computed, they are interpolated (bilinear interpolation) across the entire image yielding a threshold map.
 
@@ -37,7 +37,7 @@ The user also controls the size of the smallest quadtree region (aka leaflet). A
 Plugin Usage
 ------------
 
-![](/images/pages/RATS gui.jpg "RATS_gui.jpg")
+![](/media/RATS gui.jpg "RATS_gui.jpg")
 
 Load an single channel image (8-bit, 16-bit or 32-bit). Note that the plugin expects bright objects on dark background, so you might want to call {% include bc content='Edit | Invert'%} if your input image has dark objects. Select the RATS plugin from the Plugins menu. The following dialog will appear:
 
@@ -51,7 +51,7 @@ Load an single channel image (8-bit, 16-bit or 32-bit). Note that the plugin exp
 
 That's it! A bilevel image is produced with the name "-mask" appended to the original image name.
 
-![](/images/pages/RATS-Output.png "RATS-Output.png")
+![](/media/RATS-Output.png "RATS-Output.png")
 
 Macro Usage
 -----------

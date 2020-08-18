@@ -8,7 +8,7 @@ description: test description
 ---
 
 <B>LSM-W2 manual</B>  
-<img src="/images/pages/Untitled-7_small.png" title="fig:Untitled-7_small.png" width="200" alt="Untitled-7_small.png" />
+<img src="/media/Untitled-7_small.png" title="fig:Untitled-7_small.png" width="200" alt="Untitled-7_small.png" />
 
 <FONT SIZE=4><SPAN LANG="en-US"><I><B>LSM-W2 </B></I></SPAN></FONT><FONT SIZE=4><SPAN LANG="en-US"><I>extracts Leaf Surface Morphology from Laser Scanning Microscopy images</I></SPAN></FONT>
 
@@ -43,7 +43,7 @@ description: test description
     `   images, obtained at any stage of processing.`</FONT>
 
   
-<img src="/images/pages/English_manual_uz_html_m7831868e.png" title="fig:English_manual_uz_html_m7831868e.png" width="1000" alt="English_manual_uz_html_m7831868e.png" />  
+<img src="/media/English_manual_uz_html_m7831868e.png" title="fig:English_manual_uz_html_m7831868e.png" width="1000" alt="English_manual_uz_html_m7831868e.png" />  
 
 <FONT SIZE=4><B>Getting started</B></FONT>
 
@@ -51,7 +51,7 @@ description: test description
 
 <FONT SIZE=3>As soon as the information from the file is read, a window will be displayed showing the necessary information to form a complete multi-frame multi-channel 3D image (uploading window is showed in fig.1). To continue working with the plugin, one must specify:</FONT>
 
-<figure><img src="/images/pages/English_manual_uz_html_m75ce2a0c.png" title="Fig 1. Image upload options" width="200" alt="Fig 1. Image upload options" /><figcaption aria-hidden="true">Fig 1. Image upload options</figcaption></figure>
+<figure><img src="/media/English_manual_uz_html_m75ce2a0c.png" title="Fig 1. Image upload options" width="200" alt="Fig 1. Image upload options" /><figcaption aria-hidden="true">Fig 1. Image upload options</figcaption></figure>
 
 -   <FONT SIZE=3><SPAN LANG="en-US">The
     `   number of fragments on X axis and Y axis.`</SPAN></FONT>
@@ -137,7 +137,7 @@ description: test description
 
   
 
-<figure><img src="/images/pages/English_manual_uz_html_m7937f04c.png" title="English_manual_uz_html_m7937f04c.png" width="900" alt="English_manual_uz_html_m7937f04c.png" /><figcaption aria-hidden="true">English_manual_uz_html_m7937f04c.png</figcaption></figure>
+<figure><img src="/media/English_manual_uz_html_m7937f04c.png" title="English_manual_uz_html_m7937f04c.png" width="900" alt="English_manual_uz_html_m7937f04c.png" /><figcaption aria-hidden="true">English_manual_uz_html_m7937f04c.png</figcaption></figure>
 
 <FONT SIZE=3>Fig.2 Main window of the LSM-W2 plugin</FONT>
 
@@ -174,7 +174,7 @@ description: test description
 
 <FONT SIZE=3><SPAN LANG="en-US">The surface of any cell layer can be selected by constructing the projection of the cellular structure onto the leaf surface from the original 3D-confocal image. In the process of constructing the leaf surface of the cell layer, it is usually considered that the maximum of intensity is concentrated on the upper layer. Figure 3 shows the surface layer of the sample in the ZoX plane. It shows that the cell walls of the upper cell layer are well colored, unlike the lower walls.</SPAN></FONT>
 
-<figure><img src="/images/pages/English_manual_uz_html_m6c7637a1.png" title="English_manual_uz_html_m6c7637a1.png" width="1000" alt="English_manual_uz_html_m6c7637a1.png" /><figcaption aria-hidden="true">English_manual_uz_html_m6c7637a1.png</figcaption></figure>
+<figure><img src="/media/English_manual_uz_html_m6c7637a1.png" title="English_manual_uz_html_m6c7637a1.png" width="1000" alt="English_manual_uz_html_m6c7637a1.png" /><figcaption aria-hidden="true">English_manual_uz_html_m6c7637a1.png</figcaption></figure>
 
 <FONT SIZE=3><SPAN LANG="en-US">Fig.3 ZoX-projection of cell walls structure</SPAN></FONT>
 
@@ -188,7 +188,7 @@ description: test description
 
   
 
-<figure><img src="/images/pages/English_manual_uz_html_2bfeaac3.png" title="English_manual_uz_html_2bfeaac3.png" width="800" alt="English_manual_uz_html_2bfeaac3.png" /><figcaption aria-hidden="true">English_manual_uz_html_2bfeaac3.png</figcaption></figure>
+<figure><img src="/media/English_manual_uz_html_2bfeaac3.png" title="English_manual_uz_html_2bfeaac3.png" width="800" alt="English_manual_uz_html_2bfeaac3.png" /><figcaption aria-hidden="true">English_manual_uz_html_2bfeaac3.png</figcaption></figure>
 
 <FONT SIZE=3><SPAN LANG="en-US">Fig. 4 Samples of plots for intensity distribution over the 3D image slices</SPAN></FONT>
 
@@ -210,7 +210,7 @@ description: test description
 
   
 
-<figure><img src="/images/pages/English_manual_uz_html_m75ddb95f.png" title="English_manual_uz_html_m75ddb95f.png" width="1000" alt="English_manual_uz_html_m75ddb95f.png" /><figcaption aria-hidden="true">English_manual_uz_html_m75ddb95f.png</figcaption></figure>
+<figure><img src="/media/English_manual_uz_html_m75ddb95f.png" title="English_manual_uz_html_m75ddb95f.png" width="1000" alt="English_manual_uz_html_m75ddb95f.png" /><figcaption aria-hidden="true">English_manual_uz_html_m75ddb95f.png</figcaption></figure>
 
 <FONT SIZE=3>Fig. 5 Screenshot of the window for working with superficial cell layer</FONT>
 
@@ -230,7 +230,7 @@ description: test description
 
   
 
-<figure><img src="/images/pages/English_manual_uz_html_m3fb0e365.png" title="English_manual_uz_html_m3fb0e365.png" width="1000" alt="English_manual_uz_html_m3fb0e365.png" /><figcaption aria-hidden="true">English_manual_uz_html_m3fb0e365.png</figcaption></figure>
+<figure><img src="/media/English_manual_uz_html_m3fb0e365.png" title="English_manual_uz_html_m3fb0e365.png" width="1000" alt="English_manual_uz_html_m3fb0e365.png" /><figcaption aria-hidden="true">English_manual_uz_html_m3fb0e365.png</figcaption></figure>
 
 <FONT SIZE=3>Fig. 6 Screenshot of the window for the plugin Morphological\_Segmentation</FONT>
 
@@ -267,7 +267,7 @@ description: test description
 <FONT SIZE=3><SPAN LANG="en-US">A colorized 3D/2D image is a result of segmentation through the plugin Morphological\_Segmentation, integrated with LSM-W2. An additional window is used to edit segmented regions.</SPAN></FONT>
 
   
-<img src="/images/pages/English_manual_uz_html_m1bab5a50.jpg" title="fig:English_manual_uz_html_m1bab5a50.jpg" width="1000" alt="English_manual_uz_html_m1bab5a50.jpg" />
+<img src="/media/English_manual_uz_html_m1bab5a50.jpg" title="fig:English_manual_uz_html_m1bab5a50.jpg" width="1000" alt="English_manual_uz_html_m1bab5a50.jpg" />
 
 <FONT SIZE=3>Fig. 7 Screenshot of the window for working with segmented image</FONT>
 
@@ -311,7 +311,7 @@ description: test description
 
 <FONT SIZE=3><B>C. </B><SPAN LANG="en-US">Make a segmentation of resulting 2D image (Border Image) and count objects’ volumes. C1 is a resulting table. </SPAN></FONT>
 
-<figure><img src="/images/pages/English_manual_uz_html_m66ff0f30.png" title="English_manual_uz_html_m66ff0f30.png" width="600" alt="English_manual_uz_html_m66ff0f30.png" /><figcaption aria-hidden="true">English_manual_uz_html_m66ff0f30.png</figcaption></figure>
+<figure><img src="/media/English_manual_uz_html_m66ff0f30.png" title="English_manual_uz_html_m66ff0f30.png" width="600" alt="English_manual_uz_html_m66ff0f30.png" /><figcaption aria-hidden="true">English_manual_uz_html_m66ff0f30.png</figcaption></figure>
 
 <FONT SIZE=3><B>D. </B><SPAN LANG="en-US">Make a “nuclei segmentation” of original 3D image (Object Image) and count volumes of segmented areas (C1 is a resulting table}. </SPAN></FONT>
 
@@ -319,11 +319,11 @@ description: test description
 
 <FONT SIZE=3><B>I. </B><SPAN LANG="en-US">Mark the image with nuclei by the <B>“Nucleus image”</B> flag in the checkbox. </SPAN></FONT>
 
-<figure><img src="/images/pages/English_manual_uz_html_ae32c15.png" title="English_manual_uz_html_ae32c15.png" width="600" alt="English_manual_uz_html_ae32c15.png" /><figcaption aria-hidden="true">English_manual_uz_html_ae32c15.png</figcaption></figure>
+<figure><img src="/media/English_manual_uz_html_ae32c15.png" title="English_manual_uz_html_ae32c15.png" width="600" alt="English_manual_uz_html_ae32c15.png" /><figcaption aria-hidden="true">English_manual_uz_html_ae32c15.png</figcaption></figure>
 
 <FONT SIZE=3><B>E. </B><SPAN LANG="en-US">Calculate the correspondence between cells and nuclei by pressing the button <B>“Cell-nucleus”</B>. <U>It is necessary to keep all resulting tables and segmentation windows opened for correct work.</U> </SPAN></FONT>
 
-<figure><img src="/images/pages/English_manual_uz_html_m70237ad3.png" title="English_manual_uz_html_m70237ad3.png" width="1000" alt="English_manual_uz_html_m70237ad3.png" /><figcaption aria-hidden="true">English_manual_uz_html_m70237ad3.png</figcaption></figure>
+<figure><img src="/media/English_manual_uz_html_m70237ad3.png" title="English_manual_uz_html_m70237ad3.png" width="1000" alt="English_manual_uz_html_m70237ad3.png" /><figcaption aria-hidden="true">English_manual_uz_html_m70237ad3.png</figcaption></figure>
 
   
 
@@ -339,10 +339,10 @@ description: test description
 
 <FONT SIZE=3><SPAN LANG="en-US">5. fraction of pixels laying into the cell area. When there are mistakes in segmentation, the value P is less then one.</SPAN></FONT>
 
-![](/images/pages/English manual uz html m7446267b.gif "fig:English_manual_uz_html_m7446267b.gif") <FONT SIZE=3><SPAN LANG="en-US">, where k is quantitate of cell’s pixels; n is quantitate of pixels into the inner cell area. In the case of incomplete overlapping of the nucleus region by the inner space of the cell </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><I>p</I></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"> becomes less than one. </SPAN></FONT>
+![](/media/English manual uz html m7446267b.gif "fig:English_manual_uz_html_m7446267b.gif") <FONT SIZE=3><SPAN LANG="en-US">, where k is quantitate of cell’s pixels; n is quantitate of pixels into the inner cell area. In the case of incomplete overlapping of the nucleus region by the inner space of the cell </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><I>p</I></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"> becomes less than one. </SPAN></FONT>
 
 <FONT SIZE=3><B>H. </B><SPAN LANG="en-US">Resulting image </SPAN></FONT>
 
-<img src="/images/pages/English_manual_uz_html_e86db9c.png" title="fig:English_manual_uz_html_e86db9c.png" width="800" alt="English_manual_uz_html_e86db9c.png" />  
+<img src="/media/English_manual_uz_html_e86db9c.png" title="fig:English_manual_uz_html_e86db9c.png" width="800" alt="English_manual_uz_html_e86db9c.png" />  
   
 Test lsm image is available [here](http://pixie.bionet.nsc.ru/LSM_WORKER/example.lsm).

@@ -16,7 +16,7 @@ N.B., I wish to express gratitude to the immense work that I was able to add a l
 Features
 --------
 
-<img src="/images/pages/Interactive Fitting.jpg" width="800"/>  
+<img src="/media/Interactive Fitting.jpg" width="800"/>  
 **PlotWindow** identifies the PlotWindow that contains the plot of interest.  
 **DataSource** identifies the plotted dataset of interest.  
 **Fit** identifies the desired fitting. The *<user defined>* option allows an arbitrary equation, using the macro language, to be specified. The rest of the options are CurveFitter predefined fitting options. A user specified equation which is essentially the same as a CurveFitter option may not fit exactly the same.  

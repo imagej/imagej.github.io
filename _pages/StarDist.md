@@ -11,7 +11,7 @@ description: test description
 {% capture source%}
 {% include github org='stardist' repo='stardist-imagej' %}
 {% endcapture %}
-{% include info-box name='StarDist' software='ImageJ' update-site='StarDist' author='Uwe Schmidt, Martin Weigert' maintainer='Uwe Schmidt, Martin Weigert' source=source website='https://github.com/mpicbg-csbd/stardist' %} <img src="/images/pages/StarDist logo.jpg" width="128"/>
+{% include info-box name='StarDist' software='ImageJ' update-site='StarDist' author='Uwe Schmidt, Martin Weigert' maintainer='Uwe Schmidt, Martin Weigert' source=source website='https://github.com/mpicbg-csbd/stardist' %} <img src="/media/StarDist logo.jpg" width="128"/>
 
 Overview
 --------
@@ -20,7 +20,7 @@ This is the ImageJ/Fiji plugin for [StarDist](https://github.com/mpicbg-csbd/sta
 
 *The plugin currently only supports 2D image and time lapse data. If you have 3D data, please use our [python library](https://github.com/mpicbg-csbd/stardist).*
 
-<img src="/images/pages/Stardist screenshot small.jpg" width="640"/>
+<img src="/media/Stardist screenshot small.jpg" width="640"/>
 
 Installation
 ------------
@@ -30,7 +30,7 @@ Installation
 3.  Click on the button `Manage update sites`.
 4.  Scroll down the list and tick the checkboxes for update sites `CSBDeep` and `StarDist`, then click the `Close` button.  
     (If `StarDist` is missing, click `Update URLs` to refresh the list of update sites.)  
-    <img src="/images/pages/StarDist update site2.png" width="320"/><img src="/images/pages/StarDist update site.png" width="320"/>
+    <img src="/media/StarDist update site2.png" width="320"/><img src="/media/StarDist update site.png" width="320"/>
 5.  Click on `Apply changes` to install the plugin.
 6.  Restart Fiji.
 
@@ -41,15 +41,15 @@ Usage
 
 Open the image that should be segmented. Note, that currently only 2D and 2D+time images are supported. Suitable test images can for instance be found at the [Broad Bioimage Benchmark Collection](https://data.broadinstitute.org/bbbc/BBBC008/BBBC008_v1_images.zip)[1]:
 
-<img src="/images/pages/StarDist usage input.png" height="240"/>
+<img src="/media/StarDist usage input.png" height="240"/>
 
 Start the plugin from `Plugins > StarDist > StarDist 2D`. The following parameters can be set:
 
-<table><tbody><tr class="odd"><td><p><img src="/images/pages/StarDist usage param pred.jpg" width="400"/></p></td><td><p>Select a neural network model from the dropdown list, which can be one of the following:</p><ul><li><em>A built-in model</em>. We currently provide:<ul><li><code>Versatile (fluorescent nuclei)</code> and <code>DSB 2018 (from StarDist 2D paper)</code> that were both trained on a subset of the <a href="https://data.broadinstitute.org/bbbc/BBBC038/">DSB 2018 nuclei segmentation challenge dataset</a>.</li><li><code>Versatile (H&amp;E nuclei)</code> that was trained on images from the <a href="https://monuseg.grand-challenge.org/Data/">MoNuSeg 2018 training data</a> and the <a href="http://cancergenome.nih.gov/">TCGA archive</a>.</li></ul></li><li><em>A custom user-trained model</em> (<a href="https://github.com/mpicbg-csbd/stardist">via the training code</a>) that has been <a href="https://github.com/mpicbg-csbd/stardist/search?q=export_TF&amp;type=Code">exported as a zip file</a> and can be loaded from a file or URL (see <em>Advanced options</em> below).</li></ul><p>If necessary, one can change/disable the percentile-based input image normalization.</p></td></tr><tr class="even"><td><p><img src="/images/pages/StarDist usage param nms.jpg" width="400"/></p></td><td><p>Adjust the NMS (non-maximum suppression) postprocessing parameters:</p><ul><li><em>Probability/Score Threshold</em> - higher values lead to fewer segmented objects, but will likely avoid false positives.</li><li><em>Overlap Threshold</em> - higher values allow segmented objects to overlap substantially.</li></ul><p>If in doubt, load the default NMS parameters of the selected built-in model (see below).</p><p>The segmented objects can be returned as a <em>Label Image</em> or in the <em>ROI Manager</em> (or both).</p></td></tr><tr class="odd"><td><p><img src="/images/pages/StarDist usage param advanced.jpg" width="400"/></p></td><td><p>Advanced options:</p><ul><li>Specify a user-trained model file or URL</li><li>Increase the number of tiles (in case of GPU memory limitations/errors, i.e. for larger images)</li><li>Load default NMS parameters for the selected built-in model.</li><li>Restore all default parameters.</li></ul></td></tr><tr class="even"><td></td><td></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td><p><img src="/media/StarDist usage param pred.jpg" width="400"/></p></td><td><p>Select a neural network model from the dropdown list, which can be one of the following:</p><ul><li><em>A built-in model</em>. We currently provide:<ul><li><code>Versatile (fluorescent nuclei)</code> and <code>DSB 2018 (from StarDist 2D paper)</code> that were both trained on a subset of the <a href="https://data.broadinstitute.org/bbbc/BBBC038/">DSB 2018 nuclei segmentation challenge dataset</a>.</li><li><code>Versatile (H&amp;E nuclei)</code> that was trained on images from the <a href="https://monuseg.grand-challenge.org/Data/">MoNuSeg 2018 training data</a> and the <a href="http://cancergenome.nih.gov/">TCGA archive</a>.</li></ul></li><li><em>A custom user-trained model</em> (<a href="https://github.com/mpicbg-csbd/stardist">via the training code</a>) that has been <a href="https://github.com/mpicbg-csbd/stardist/search?q=export_TF&amp;type=Code">exported as a zip file</a> and can be loaded from a file or URL (see <em>Advanced options</em> below).</li></ul><p>If necessary, one can change/disable the percentile-based input image normalization.</p></td></tr><tr class="even"><td><p><img src="/media/StarDist usage param nms.jpg" width="400"/></p></td><td><p>Adjust the NMS (non-maximum suppression) postprocessing parameters:</p><ul><li><em>Probability/Score Threshold</em> - higher values lead to fewer segmented objects, but will likely avoid false positives.</li><li><em>Overlap Threshold</em> - higher values allow segmented objects to overlap substantially.</li></ul><p>If in doubt, load the default NMS parameters of the selected built-in model (see below).</p><p>The segmented objects can be returned as a <em>Label Image</em> or in the <em>ROI Manager</em> (or both).</p></td></tr><tr class="odd"><td><p><img src="/media/StarDist usage param advanced.jpg" width="400"/></p></td><td><p>Advanced options:</p><ul><li>Specify a user-trained model file or URL</li><li>Increase the number of tiles (in case of GPU memory limitations/errors, i.e. for larger images)</li><li>Load default NMS parameters for the selected built-in model.</li><li>Restore all default parameters.</li></ul></td></tr><tr class="even"><td></td><td></td></tr></tbody></table>
 
 Example of running the plugin, showing the returned label image and ROIs overlaid on the input image (check `Show All` in the ROI Manager):
 
-<img src="/images/pages/StarDist usage output.png" height="240"/>
+<img src="/media/StarDist usage output.png" height="240"/>
 
 ### Scripting/Batch-Processing
 

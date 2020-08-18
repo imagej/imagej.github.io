@@ -7,7 +7,7 @@ categories: Segmentation|segmentation,Segmentation
 description: test description
 ---
 
-{% include thumbnail src='/images/pages/Splits-vs-Mergers-classic-warping-error.png' title='Figure 1: example of splits vs mergers curve detected using the warping error metric.'%} When segmenting images with multiple objects, one might decide that some errors are not relevant compared to others. One of the advantages of the [ warping error](Topology_preserving_warping_error) is that it allows us to focus on only some desired types of topological errors[1].
+{% include thumbnail src='/media/Splits-vs-Mergers-classic-warping-error.png' title='Figure 1: example of splits vs mergers curve detected using the warping error metric.'%} When segmenting images with multiple objects, one might decide that some errors are not relevant compared to others. One of the advantages of the [ warping error](Topology_preserving_warping_error) is that it allows us to focus on only some desired types of topological errors[1].
 
 Here we propose a metric that takes only into account the **number of splits and mergers** produced while comparing two different labelings.
 

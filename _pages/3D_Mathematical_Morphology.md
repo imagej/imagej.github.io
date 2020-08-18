@@ -26,17 +26,17 @@ A 3D **Fill Holes** is available, works the same way as in 2D but will not fill 
 
 A 3D **Euclidean Distance Map** (also called *EDT*) is available that takes into account the calibration of the image stack. A 3D normalized distance map (called Eroded Volume Fraction, or **EVF**) is also available.
 
-<img src="/images/pages/Groom-raw.png" width="200"/><img src="/images/pages/Groom-bin.png" width="200"/>
+<img src="/media/Groom-raw.png" width="200"/><img src="/media/Groom-bin.png" width="200"/>
 
 Left, raw image of a lymph node ((c) J. Groom, WEHI). Right, binary thresholded image.
 
-<img src="/images/pages/Groom-edt.png" width="200"/><img src="/images/pages/Groom-evf.png" width="200"/>
+<img src="/media/Groom-edt.png" width="200"/><img src="/media/Groom-evf.png" width="200"/>
 
 Left, EDT image . Right, EVF image.
 
 In the case of labelled objects (as count masks) a **Binary Close Labels** is available, that permits to perform closing on individual objects, hence avoiding objects to touch during the dilation operation.
 
-<img src="/images/pages/Ollion-raw.png" width="200"/><img src="/images/pages/Ollion-seg.png" width="200"/><img src="/images/pages/Ollion-closeLabels.png" width="200"/>
+<img src="/media/Ollion-raw.png" width="200"/><img src="/media/Ollion-seg.png" width="200"/><img src="/media/Ollion-closeLabels.png" width="200"/>
 
 Nuclear regions ((c) J. Ollion, MNHN) : raw image, segmented labelled image, close labels image.
 

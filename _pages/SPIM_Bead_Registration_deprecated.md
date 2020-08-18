@@ -57,7 +57,7 @@ After all individual timepoints are registered and the cropping area is defined 
 ***deprecated*** SPIM bead-based registration
 ---------------------------------------------
 
-{% include thumbnail src='/images/pages/SPIM Registration.png' title='Shows the SPIM Registration Dialog.'%}
+{% include thumbnail src='/media/SPIM Registration.png' title='Shows the SPIM Registration Dialog.'%}
 
 -   **SPIM Data Directory**: Fill in the directory name that contains all the image files. You can either drag&drop the directory, browse for it or type the name directly.
 
@@ -160,7 +160,7 @@ The multi-channel SPIM Registration extends the normal registration by the abili
 Advanced SPIM Registration
 --------------------------
 
-{% include thumbnail src='/images/pages/Advanced SPIM Registration.png' title='Shows the Advanced SPIM Registration Dialog.'%}  
+{% include thumbnail src='/media/Advanced SPIM Registration.png' title='Shows the Advanced SPIM Registration Dialog.'%}  
 For advanced SPIM registration all available parameters can be tuned using two configuration files (configuration.txt and VariablesAssignment.txt, see below). Contact the author for further details [2](http://fly.mpi-cbg.de/preibisch/contact.html).
 
 ### configuration.txt

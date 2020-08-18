@@ -19,7 +19,7 @@ The test image
 
 The test image we will use for this tutorial has now a link in Fiji. You can find it in {% include bc content='File | Open Samples | Tracks for TrackMate (807K)'%}, at the bottom of the list.
 
-![](/images/pages/TrackMate FakeTracks.png)
+![](/media/TrackMate FakeTracks.png)
 
 This is 128x128 stack of 50 frames, uncalibrated. It is noisy, but is still a very easy use case: there is at most 4 spots per frame, they are well separated, they are about the same size and the background is uniform. It is such an ideal case that you would not need TrackMate to deal with it. But for this first tutorial, it will help us getting through TrackMate without being bothered by difficulties.
 
@@ -31,7 +31,7 @@ Also, if you look carefully, you will see that there are two splitting events - 
 Starting TrackMate
 ------------------
 
-![](/images/pages/TrackMate MainButtons.png)
+![](/media/TrackMate MainButtons.png)
 
 With this image selected, launch TrackMate from the menu {% include bc content='Plugins | Tracking | TrackMate'%} or from the [Command launcher](Using_the_Command_Launcher). The TrackMate GUI appears next to the image, displaying the starting dialog panel.
 
@@ -51,7 +51,7 @@ The advantage of this approach is that you load in TrackMate, and everything you
 The start panel
 ---------------
 
-![](/images/pages/TrackMate StartPanel.png)
+![](/media/TrackMate StartPanel.png)
 
 This first panel allows you to check the spatial and temporal calibration of your data. It is very important to get it right, since everything afterwards will be based on physical units and not in pixel units (for instance μm and minutes, and not pixels and frames). In our case, that does not matter actually, since our test image has a dummy calibration (`1 pixel = 1 pixel`).
 
@@ -71,7 +71,7 @@ Defining a smaller area to analyze can be very beneficial to test and inspect fo
 Choosing a detector
 -------------------
 
-![](/images/pages/TrackMate SegmenterChoice.png)
+![](/media/TrackMate SegmenterChoice.png)
 
 You are now offered to choose a detection algorithm ("detector") amongst the currently implemented ones.
 
@@ -89,7 +89,7 @@ In our case, let us just use the **Dog detector**.
 The detector configuration panel
 --------------------------------
 
-![](/images/pages/TrackMate SegmenterConfig.png)
+![](/media/TrackMate SegmenterConfig.png)
 
 The LoG-based detectors fortunately demand very few parameters to tune them. The only really important one is the *Estimated blob diameter*'. Just enter the approximate size of the spots you are looking to tracks. Careful: you are expected to enter it in <u>physical units</u>. In our dummy example, there is no calibration (`1 pixel = 1 pixel`), so it does not appear here.
 
@@ -111,7 +111,7 @@ In our case, the spots we want to track are about 5 pixels in diameter, so this 
 The detection process
 ---------------------
 
-![](/images/pages/TrackMate Segmenting.png)
+![](/media/TrackMate Segmenting.png)
 
 Once you are happy with the segmentation parameters, press the **Next** button and the segmentation will start. The TrackMate GUI displays the **log panel**, that you will meet several times during the process. It is basically made of a text area that recapitulates your choices and send information on the current process, and of a progress bar on top. You can copy-paste the text if you want to keep track of the process somewhere. You can even add comments as text in it: it is editable, and everything you type there is saved in the XML file, and retrieved upon loading. You can access the log panel anytime, by clicking on the log button at the bottom of the TrackMate window.
 
@@ -127,7 +127,7 @@ On our dummy image, this is clearly something we need to worry about, and the se
 Initial spot filtering
 ----------------------
 
-![](/images/pages/TrackMate InitThresholding.png)
+![](/media/TrackMate InitThresholding.png)
 
 Here is a difficult step to explain, particularly because we do not need at all now. If the explanations following in this paragraph seem foggy, please feel free to press the **Next** button and skip to the next paragraph. This one is all related to performance, memory and disk usage in difficult cases.
 
@@ -147,7 +147,7 @@ In our case, we see from the histogram that we could make sense of this step. Th
 Selecting a view
 ----------------
 
-![](/images/pages/TrackMate DisplayerChoice.png)
+![](/media/TrackMate DisplayerChoice.png)
 
 Here, you can choose between the two visualization tools that will be used to display the tracking results. The first one, **HyperStack displayer**, simply reuses ImageJ stack window and overlay the results non-destructively over the image. Choosing the **3D viewer** will open a new 3D viewer window, import that image data in it, and will display spots as 3D spheres and tracks as 3D lines.
 
@@ -166,7 +166,7 @@ So nothing much. Let's carry on.
 Spot filtering
 --------------
 
-![](/images/pages/TrackMate FilterSpots 1.png)
+![](/media/TrackMate FilterSpots 1.png)
 
 The moment this panel is shown, the spots should be displayed on the ImageJ stack. They take the shape of purple circles of diameter set previously. As promised, there are quite a lot of them, and their vast majority are irrelevant. If you did not remove the irrelevant one in the initial thresholding step, you should get an overlay that resembles the image to the right.
 
@@ -182,7 +182,7 @@ By default , when the combo-box is on **Uniform color**, all spots are purple. B
 
 We will therefore add a filter based on this feature. Click the green **+** button. A small orange box should appear in the upper part, containing the histogram for a given feature. Click on the orange box combo-box to select **Mean intensity**. Yous should have something similar to the image below.
 
-![](/images/pages/TrackMate FilterSpots 2.png)
+![](/media/TrackMate FilterSpots 2.png)
 
 We note that the histogram has a very desirable shape: a massive peak at low intensity represent most of the spots. There are other smaller peaks at higher intensity, and fortunately, they are very well separated from the large peak.
 
@@ -207,7 +207,7 @@ Press **Next** when you are ready to build tracks with these spots.
 Selecting a simple tracker
 --------------------------
 
-![](/images/pages/TrackMate TrackerChoice.png)
+![](/media/TrackMate TrackerChoice.png)
 
 The next panel let you choose amongst available particle-linking algorithms, or "trackers".
 
@@ -232,7 +232,7 @@ Right now, in our first trial, let us pick the **Simple fast LAP tracker**.
 Configuring the simple LAP tracker
 ----------------------------------
 
-![TrackMate TrackerConfiguration 1.png](/images/pages/TrackMate TrackerConfiguration 1.png "TrackMate TrackerConfiguration 1.png")
+![TrackMate TrackerConfiguration 1.png](/media/TrackMate TrackerConfiguration 1.png "TrackMate TrackerConfiguration 1.png")
 
 As promised, there is only three configuration fields.
 
@@ -253,7 +253,7 @@ Our first tracking results
 
 You are now shown the log panel, where the tracking process is logged. Since our dataset is very small, it should complete very quickly. Press **Next** again to see the results. They should look like this:
 
-![TrackMate TrackingResults 1.png](/images/pages/TrackMate TrackingResults 1.png "TrackMate TrackingResults 1.png")
+![TrackMate TrackingResults 1.png](/media/TrackMate TrackingResults 1.png "TrackMate TrackingResults 1.png")
 
 Basically, the tracker held its promises: there is 6 tracks (the two immobile spots at the bottom left part of the image contributed a track each). These tracks are not branching. The red track indeed contains a gap closing event, that did not generate a track break. That would have been different if we would have used the **Nearest neighbor search** tracker: as it cannot deal with gap-closing events, we would have 7 tracks.
 
@@ -264,7 +264,7 @@ Now, we would like the shape of these tracks to change. We see that the yellow t
 Configuring a not so simple tracker
 -----------------------------------
 
-![](/images/pages/TrackMate TrackerConfiguration 2.png "TrackMate_TrackerConfiguration_2.png")
+![](/media/TrackMate TrackerConfiguration 2.png "TrackMate_TrackerConfiguration_2.png")
 
 Look at the configuration panel. It is quite more complex than for the simple tracker, obviously, and it is the price for flexibility. Since it is quite long, the panel has to be scrolled to its bottom to venture on all fields.
 
@@ -292,21 +292,21 @@ For <u>track splitting</u>, the middle of a segment is offered to bridge to the 
 
 As an exercise, try to find the parameters the will fuse the central track segments in a single large track, with two splitting events and a merge event. You should obtain the track layout pictured below.
 
-![](/images/pages/TrackMate TrackingResults 2.png "TrackMate_TrackingResults_2.png")
+![](/media/TrackMate TrackingResults 2.png "TrackMate_TrackingResults_2.png")
 
 Filtering tracks
 ----------------
 
 The next panel is just the equivalent of the spot filtering step we met before, but this time we use track features,. The filter principles are the same: you simply add filters, choosing a target feature, until you are happy with the remaining tracks. As for the spots, the tracks are not really deleted; they are just hidden and you can retrieve them by switching back to this panel and delete the filters.
 
-![](/images/pages/TrackMate TrackingFiltering.png "TrackMate_TrackingFiltering.png")
+![](/media/TrackMate TrackingFiltering.png "TrackMate_TrackingFiltering.png")
 
 Here, we have a total of 4 tracks. The two immobile spots of the bottom left contribute one track each, that we can barely see because they do not move much. Let us say that we want to get rid of them. There are several ways to do that, but the simple is simply to add a filter on track displacement, as picture above.
 
 The end or so
 -------------
 
-![](/images/pages/TrackMate DisplayPanel.png "TrackMate_DisplayPanel.png")
+![](/media/TrackMate DisplayPanel.png "TrackMate_DisplayPanel.png")
 
 We are now close to the end of a typical workflow for a tracking problem. The panel you see now is the one that recapitulates display option. You can set spot color by feature, hide them, show their name, etc... Find out what they do, display options are pretty much self-explanatory.
 

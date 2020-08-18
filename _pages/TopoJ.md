@@ -9,24 +9,24 @@ description: test description
 
 {% include component-stats content='sc.fiji:TopoJ\_' %}The TopoJ plugins help you analyze surfaces of bright objects in image stacks. You can load an example via {% include bc content='File | Open Samples | SinteredAlumina (2.6MB)'%}:
 
-![](/images/pages/TopoJ-Sintered Alumina.jpg "TopoJ-Sintered_Alumina.jpg")
+![](/media/TopoJ-Sintered Alumina.jpg "TopoJ-Sintered_Alumina.jpg")
 
 Compute Topography
 ------------------
 
 To compute the Topography, call {% include bc content='Analyze | TopoJ | Compute Topography'%}:
 
-![](/images/pages/TopoJ-Dialog.jpg "TopoJ-Dialog.jpg")
+![](/media/TopoJ-Dialog.jpg "TopoJ-Dialog.jpg")
 
 The result looks like this:
 
-![](/images/pages/TopoJ-Computed Topography.jpg "TopoJ-Computed_Topography.jpg")
+![](/media/TopoJ-Computed Topography.jpg "TopoJ-Computed_Topography.jpg")
 
 Remove Slope
 ------------
 
 To remove the overall slope of the surface, click on the {% include bc content='Analyze | TopoJ | Remove Slope'%} menu item:
 
-![](/images/pages/TopoJ-Remove Slope.jpg "TopoJ-Remove_Slope.jpg")
+![](/media/TopoJ-Remove Slope.jpg "TopoJ-Remove_Slope.jpg")
 
  

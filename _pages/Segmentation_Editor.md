@@ -25,14 +25,14 @@ Start
 
 Open the stack containing the structures you want to reconstruct or segment. Go the to the plugins menu and click on "Segmentation Editor". Your stack will be embedded into a segmentation window, and another window opens, which will contain your labels later.
 
-![](/images/pages/Segmentation Editor 1.png "Segmentation_Editor_1.png")
+![](/media/Segmentation Editor 1.png "Segmentation_Editor_1.png")
 
 Material
 --------
 
 On the left side of the segmentation window, you see a list of available materials. You can extend and modify these materials by right-clicking into the list. For a first start, right-click on Interior, select "Rename" from the popup menu and specify the name of the label you want.
 
-![](/images/pages/Segmentation Editor 2.png "Segmentation_Editor_2.png")
+![](/media/Segmentation Editor 2.png "Segmentation_Editor_2.png")
 
 Labelling
 ---------
@@ -41,17 +41,17 @@ Now go through the slices and use ImageJ's selection tools to select the regions
 
 After selecting the regions to label in each slice, click the I-Button (which is next to the Plus and Minus button). This interpolates if you didn't make selections on each slice. Now activate the "3d" checkbox. It means that the selections of all slices will be asigned to a material, not only the selection of the current slice.
 
-![](/images/pages/Segmentation Editor 3.png "Segmentation_Editor_3.png")
+![](/media/Segmentation Editor 3.png "Segmentation_Editor_3.png")
 
 Now go to the material list, select the material which you want to asign, and click on the Plus button. That's it.
 
-![](/images/pages/Segmentation Editor 4.png "Segmentation_Editor_4.png")
+![](/media/Segmentation Editor 4.png "Segmentation_Editor_4.png")
 
 After finishing, click Ok to close the segmentation window. The labels will remain open. You must store them yourself.
 
 Have also a look at our 3D viewer if you want to see your result in 3D.
 
-![](/images/pages/Segmentation Editor medulla r labels rotating.gif "Segmentation_Editor_medulla_r_labels_rotating.gif")
+![](/media/Segmentation Editor medulla r labels rotating.gif "Segmentation_Editor_medulla_r_labels_rotating.gif")
 
 Starting from a macro
 ---------------------

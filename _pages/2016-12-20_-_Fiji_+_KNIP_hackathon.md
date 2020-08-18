@@ -115,15 +115,15 @@ Gallery
 
 
 {% capture content%}
-/images/pages/Hackdd16-beautiful-dresden.jpg \| Beautiful Dresden
-/images/pages/Hackdd16-beer-and-code.jpg \| Beer and code
-/images/pages/Hackdd16-better-software.jpg \| Better software, better research!
-/images/pages/Hackdd16-day1.jpg \| First day
-/images/pages/Hackdd16-hackers.jpg \| Hackers at work
-/images/pages/Hackdd16-hacking.jpg \| Hacking
-/images/pages/Hackdd16-mpicbg-xmas-party.jpg \| MPI-CBG Christmas party
-/images/pages/Hackdd16-waldschlosschen.jpg \| Waldschloßchen
-/images/pages/Hackdd16-xmas.jpg \| Merry Christmas!
+/media/Hackdd16-beautiful-dresden.jpg \| Beautiful Dresden
+/media/Hackdd16-beer-and-code.jpg \| Beer and code
+/media/Hackdd16-better-software.jpg \| Better software, better research!
+/media/Hackdd16-day1.jpg \| First day
+/media/Hackdd16-hackers.jpg \| Hackers at work
+/media/Hackdd16-hacking.jpg \| Hacking
+/media/Hackdd16-mpicbg-xmas-party.jpg \| MPI-CBG Christmas party
+/media/Hackdd16-waldschlosschen.jpg \| Waldschloßchen
+/media/Hackdd16-xmas.jpg \| Merry Christmas!
 {% endcapture %}
 {% include gallery content=content%}
 

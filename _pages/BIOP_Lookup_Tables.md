@@ -28,28 +28,28 @@ Here, we propose to use 6 LUTs, which are obtained by combining Red Green and Bl
 On 3 channels image
 -------------------
 
-<figure><img src="/images/pages/3chs_Grays_cell.jpg" title="3 channels, each in Grays levels. " width="600" alt="3 channels, each in Grays levels. " /><figcaption aria-hidden="true">3 channels, each in Grays levels. </figcaption></figure>
+<figure><img src="/media/3chs_Grays_cell.jpg" title="3 channels, each in Grays levels. " width="600" alt="3 channels, each in Grays levels. " /><figcaption aria-hidden="true">3 channels, each in Grays levels. </figcaption></figure>
 
 ### RGB
 
-<figure><img src="/images/pages/3chs_RGB_cell.jpg" title="3 channels image, in Red Green Blue and Merge. " width="800" alt="3 channels image, in Red Green Blue and Merge. " /><figcaption aria-hidden="true">3 channels image, in Red Green Blue and Merge. </figcaption></figure>
+<figure><img src="/media/3chs_RGB_cell.jpg" title="3 channels image, in Red Green Blue and Merge. " width="800" alt="3 channels image, in Red Green Blue and Merge. " /><figcaption aria-hidden="true">3 channels image, in Red Green Blue and Merge. </figcaption></figure>
 
 ### CMY
 
-<figure><img src="/images/pages/3chs_CMY_cell.jpg" title="3 channels image, in Red Green Blue and Merge. " width="800" alt="3 channels image, in Red Green Blue and Merge. " /><figcaption aria-hidden="true">3 channels image, in Red Green Blue and Merge. </figcaption></figure>
+<figure><img src="/media/3chs_CMY_cell.jpg" title="3 channels image, in Red Green Blue and Merge. " width="800" alt="3 channels image, in Red Green Blue and Merge. " /><figcaption aria-hidden="true">3 channels image, in Red Green Blue and Merge. </figcaption></figure>
 
 On 4 (to 6) channels image
 --------------------------
 
-<figure><img src="/images/pages/4chs_Grays_cell.jpg" title="4 channels image, each in Grays levels. " width="800" alt="4 channels image, each in Grays levels. " /><figcaption aria-hidden="true">4 channels image, each in Grays levels. </figcaption></figure>
+<figure><img src="/media/4chs_Grays_cell.jpg" title="4 channels image, each in Grays levels. " width="800" alt="4 channels image, each in Grays levels. " /><figcaption aria-hidden="true">4 channels image, each in Grays levels. </figcaption></figure>
 
 ### Appropriate BIOP-LUTs selection
 
-<figure><img src="/images/pages/4chs_biop-lut_cell_ok.jpg" title="4 channels image, biop luts good choice" width="1000" alt="4 channels image, biop luts good choice" /><figcaption aria-hidden="true">4 channels image, biop luts good choice</figcaption></figure>
+<figure><img src="/media/4chs_biop-lut_cell_ok.jpg" title="4 channels image, biop luts good choice" width="1000" alt="4 channels image, biop luts good choice" /><figcaption aria-hidden="true">4 channels image, biop luts good choice</figcaption></figure>
 
 ### Unappropriate BIOP-LUTs selection
 
-<figure><img src="/images/pages/4chs_biop-lut_cell_bad.jpg" title="4 channels image, biop luts poor choice" width="1000" alt="4 channels image, biop luts poor choice" /><figcaption aria-hidden="true">4 channels image, biop luts poor choice</figcaption></figure>
+<figure><img src="/media/4chs_biop-lut_cell_bad.jpg" title="4 channels image, biop luts poor choice" width="1000" alt="4 channels image, biop luts poor choice" /><figcaption aria-hidden="true">4 channels image, biop luts poor choice</figcaption></figure>
 
 Here, channels 2 and 3 are tubular structure and it's difficult to distinguish them if both are greenish.
 

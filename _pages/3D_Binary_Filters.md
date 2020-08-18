@@ -31,6 +31,6 @@ The applied kernel has a diameter of 3 voxels.
 
 The image below shows the effect of the 'Erode' and 'Dilate' filters, using the Bat Cochlea image which comes as one of ImageJ's and Fiji's sample images. Both filters are applied three times, to make the effect clearer.
 
-![](/images/pages/ErodeDilate.png "ErodeDilate.png")
+![](/media/ErodeDilate.png "ErodeDilate.png")
 
 

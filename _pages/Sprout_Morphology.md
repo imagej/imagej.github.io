@@ -33,27 +33,27 @@ Open a maximum intensity projection of the multi-channel image to be analyzed, t
 
 ### General configuration
 
-<figure><img src="/images/pages/SproutAnalyzer_Configuration.png" title="Configuration dialog" width="400" alt="Configuration dialog" /><figcaption aria-hidden="true">Configuration dialog</figcaption></figure>
+<figure><img src="/media/SproutAnalyzer_Configuration.png" title="Configuration dialog" width="400" alt="Configuration dialog" /><figcaption aria-hidden="true">Configuration dialog</figcaption></figure>
 
 ### Bead detection
 
-<figure><img src="/images/pages/SproutAnalyzer_BeadDetection.png" title="Bead detection" width="400" alt="Bead detection" /><figcaption aria-hidden="true">Bead detection</figcaption></figure>
+<figure><img src="/media/SproutAnalyzer_BeadDetection.png" title="Bead detection" width="400" alt="Bead detection" /><figcaption aria-hidden="true">Bead detection</figcaption></figure>
 
 ### Sprout detection
 
-<figure><img src="/images/pages/SproutAnalyzer_SproutDetection.png" title="Sprout detection" width="400" alt="Sprout detection" /><figcaption aria-hidden="true">Sprout detection</figcaption></figure>
+<figure><img src="/media/SproutAnalyzer_SproutDetection.png" title="Sprout detection" width="400" alt="Sprout detection" /><figcaption aria-hidden="true">Sprout detection</figcaption></figure>
 
 ### Nucleus segmentation
 
-<figure><img src="/images/pages/SproutAnalyzer_NucleusSegmentation.png" title="Nucleus segmentation" width="400" alt="Nucleus segmentation" /><figcaption aria-hidden="true">Nucleus segmentation</figcaption></figure>
+<figure><img src="/media/SproutAnalyzer_NucleusSegmentation.png" title="Nucleus segmentation" width="400" alt="Nucleus segmentation" /><figcaption aria-hidden="true">Nucleus segmentation</figcaption></figure>
 
 ### Endothelial cell/Pericyte classification
 
-<figure><img src="/images/pages/SproutAnalyzer_CellClassification.png" title="Cell classification of ECs and pericytes" width="400" alt="Cell classification of ECs and pericytes" /><figcaption aria-hidden="true">Cell classification of ECs and pericytes</figcaption></figure>
+<figure><img src="/media/SproutAnalyzer_CellClassification.png" title="Cell classification of ECs and pericytes" width="400" alt="Cell classification of ECs and pericytes" /><figcaption aria-hidden="true">Cell classification of ECs and pericytes</figcaption></figure>
 
 ### Pericyte coverage
 
-<figure><img src="/images/pages/SproutAnalyzer_PericyteCoverage.png" title="Pericyte coverage measurement" width="400" alt="Pericyte coverage measurement" /><figcaption aria-hidden="true">Pericyte coverage measurement</figcaption></figure>
+<figure><img src="/media/SproutAnalyzer_PericyteCoverage.png" title="Pericyte coverage measurement" width="400" alt="Pericyte coverage measurement" /><figcaption aria-hidden="true">Pericyte coverage measurement</figcaption></figure>
 
 Publication
 -----------

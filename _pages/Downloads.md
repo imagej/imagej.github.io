@@ -18,7 +18,7 @@ description: test description
 
 <center>
 
-<a href="https://downloads.imagej.net/ImageJ2-20160205.zip "><img src="/images/pages/Imagej2-download-icon.png" width="192px"/></a>
+<a href="https://downloads.imagej.net/ImageJ2-20160205.zip "><img src="/media/Imagej2-download-icon.png" width="192px"/></a>
 
 </center>
 
@@ -34,14 +34,14 @@ These downloads bundle ImageJ with a curated collection of plugins pre-installed
 
 <div style="float: left; padding: 1em; text-align:center; font-size:1.5em" markdown="1">
 
-<a href="Fiji/Downloads"><img src="/images/pages/Fiji-icon.png" height="96px"/></a>  
+<a href="Fiji/Downloads"><img src="/media/Fiji-icon.png" height="96px"/></a>  
 [Fiji](Fiji/Downloads)
 
 </div>
 
 <div style="float: left; padding: 1em; text-align:center; font-size:1.5em" markdown="1">
 
-<a href="Bio7"><img src="/images/pages/Bio7-icon.png" height="96px"/></a>  
+<a href="Bio7"><img src="/media/Bio7-icon.png" height="96px"/></a>  
 [Bio7](Bio7)
 
 </div>

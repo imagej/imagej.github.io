@@ -7,7 +7,7 @@ categories: Plugins,Registration
 description: test description
 ---
 
-{% include info-box software='Fiji' name='Manual drift correction' author='[Benoit Lombardot](User_Benoit)' maintainer='[Benoit Lombardot](User_Benoit)' released='22 March 2016' filename='![](/images/pages/Manual Drift Correction-1.0.0.jar.zip "fig:Manual_Drift_Correction-1.0.0.jar.zip")' source=' [github](https://github.com/mpicbg-scicomp/Manual_drift_correction)' category='[Plugins](Category_Plugins), [Registration](Category_Registration)' %}
+{% include info-box software='Fiji' name='Manual drift correction' author='[Benoit Lombardot](User_Benoit)' maintainer='[Benoit Lombardot](User_Benoit)' released='22 March 2016' filename='![](/media/Manual Drift Correction-1.0.0.jar.zip "fig:Manual_Drift_Correction-1.0.0.jar.zip")' source=' [github](https://github.com/mpicbg-scicomp/Manual_drift_correction)' category='[Plugins](Category_Plugins), [Registration](Category_Registration)' %}
 
 Goal of the plugin
 ------------------
@@ -19,7 +19,7 @@ Usage
 
 ### Installation
 
-To get started with the plugin first download it (![](/images/pages/Manual Drift Correction-1.0.0.jar.zip "fig:Manual_Drift_Correction-1.0.0.jar.zip")), unzip it and install it (Fiji menu Plugins&gt;Install...). Alternatively you can manually copy the unzipped file in <Fiji folder>/plugins.Once the file is installed, restart Fiji. A new entry will be available in the menu Plugins&gt;Registration&gt;Manual drift correction meaning that the plugin was properly installed.
+To get started with the plugin first download it (![](/media/Manual Drift Correction-1.0.0.jar.zip "fig:Manual_Drift_Correction-1.0.0.jar.zip")), unzip it and install it (Fiji menu Plugins&gt;Install...). Alternatively you can manually copy the unzipped file in <Fiji folder>/plugins.Once the file is installed, restart Fiji. A new entry will be available in the menu Plugins&gt;Registration&gt;Manual drift correction meaning that the plugin was properly installed.
 
 ### Tutorial
 

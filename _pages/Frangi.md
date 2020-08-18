@@ -13,7 +13,7 @@ In my experience, this method produces consistently better results than the [Tub
 
 These screenshots show the results on an example file:
 
-![](/images/pages/Frangi-before-and-after.png "Frangi-before-and-after.png")
+![](/media/Frangi-before-and-after.png "Frangi-before-and-after.png")
 
 <references/>
 

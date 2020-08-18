@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji' repo='MaMuT' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='MaMuT' logo='<img src="/images/pages/MaMuT_logo-256x256.png" title="fig:MaMuT_logo-256x256.png" width="160" alt="MaMuT_logo-256x256.png" />' maintainer=maintainer author=author source=source status='v0.27.0, active' released='06/01/2015' category='[Segmentation](Category_Segmentation), [Tracking](Category_Tracking), [:Category:Plugins](Category_Plugins)' %}
+{% include info-box software='Fiji' name='MaMuT' logo='<img src="/media/MaMuT_logo-256x256.png" title="fig:MaMuT_logo-256x256.png" width="160" alt="MaMuT_logo-256x256.png" />' maintainer=maintainer author=author source=source status='v0.27.0, active' released='06/01/2015' category='[Segmentation](Category_Segmentation), [Tracking](Category_Tracking), [:Category:Plugins](Category_Plugins)' %}
 
 '''A Fiji plugin for the annotation of massive, multi-view data. '''
 
@@ -35,19 +35,19 @@ Presentation.
 
 MaMuT is an end user plugin that combines the [BigDataViewer](BigDataViewer) and [TrackMate](TrackMate) to provide an application that allow browsing, annotating and curating annotations for large image data.
 
-<figure><img src="/images/pages/MaMuT_presentation.png" title="MaMuT_presentation.png" width="600" alt="MaMuT_presentation.png" /><figcaption aria-hidden="true">MaMuT_presentation.png</figcaption></figure>
+<figure><img src="/media/MaMuT_presentation.png" title="MaMuT_presentation.png" width="600" alt="MaMuT_presentation.png" /><figcaption aria-hidden="true">MaMuT_presentation.png</figcaption></figure>
 
 The main window resembles the display panel of [TrackMate](TrackMate). It controls how the annotations are displayed. Using the *MaMuT Viewer* button, several views of the data can be launched. They will all be in sync. Each of them is an instance of the [BigDataViewer](BigDataViewer).
 
-![](/images/pages/MaMuT WindowsInSync.png "MaMuT_WindowsInSync.png")
+![](/media/MaMuT WindowsInSync.png "MaMuT_WindowsInSync.png")
 
 We privileged annotations that are like lineages, or object followed over time (which is what [TrackMate](TrackMate) does). MaMuT ships [TrackScheme](TrackScheme), the lineage browser taken from TrackMate.
 
-![](/images/pages/MaMuT WithTrackScheme.png "MaMuT_WithTrackScheme.png")
+![](/media/MaMuT WithTrackScheme.png "MaMuT_WithTrackScheme.png")
 
 However, MaMuT itself does not ship any fully-automated or tracking algorithm. It is meant for manual or semi-automatic annotation. Still, we made the GUI comfortable enough so that you can quickly generate rather large annotations. A semi-automated segmentation can help you generating quickly lineage branches from single cells.
 
-![](/images/pages/MaMuT LargeAnnotationsQuickly.png "MaMuT_LargeAnnotationsQuickly.png")
+![](/media/MaMuT LargeAnnotationsQuickly.png "MaMuT_LargeAnnotationsQuickly.png")
 
 User documentation.
 -------------------

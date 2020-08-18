@@ -26,7 +26,7 @@ Please read carefully before using this macro. {% include info-box content='"""T
 
 ### Microscope Calibration
 
-<img src="/images/pages/Scale.png" title="fig:Replace the value 3095.975 in the source code with your microscope spatial scale." width="250" alt="Replace the value 3095.975 in the source code with your microscope spatial scale." /> To convert pixels to mm<sup>2</sup>, the image spatial scale is required. This can be found in the image metadata or in the microscope's bundled software.
+<img src="/media/Scale.png" title="fig:Replace the value 3095.975 in the source code with your microscope spatial scale." width="250" alt="Replace the value 3095.975 in the source code with your microscope spatial scale." /> To convert pixels to mm<sup>2</sup>, the image spatial scale is required. This can be found in the image metadata or in the microscope's bundled software.
 
   
 For validation purposes, we acquired images with Axio Imager M2 fluorescence microscope (Carl Zeiss Inc., NY) using a 20x/0.8 air objective. The spatial scale was: 3095.975 pixels/mm.
@@ -69,7 +69,7 @@ Download & Install
 TUNEL Cell Counter
 ------------------
 
-<img src="/images/pages/Stack_-_Macro.gif" title="fig:Representative animation of Macro Mode. Processing time is ~5 seconds/image." width="250" alt="Representative animation of Macro Mode. Processing time is ~5 seconds/image." /> <img src="/images/pages/Stack_-_Batch.gif" title="fig:Representative animation of Batch Mode. Processing time is ~2.7 seconds/image." width="250" alt="Representative animation of Batch Mode. Processing time is ~2.7 seconds/image." />
+<img src="/media/Stack_-_Macro.gif" title="fig:Representative animation of Macro Mode. Processing time is ~5 seconds/image." width="250" alt="Representative animation of Macro Mode. Processing time is ~5 seconds/image." /> <img src="/media/Stack_-_Batch.gif" title="fig:Representative animation of Batch Mode. Processing time is ~2.7 seconds/image." width="250" alt="Representative animation of Batch Mode. Processing time is ~2.7 seconds/image." />
 
 ### Segmentation
 
@@ -133,7 +133,7 @@ Macro Output
 
 ### Qualitative
 
-<figure><img src="/images/pages/Montage.jpg" title="Example of an original TUNEL assay image (top) after macro processing (bottom)." width="250" alt="Example of an original TUNEL assay image (top) after macro processing (bottom)." /><figcaption aria-hidden="true">Example of an original TUNEL assay image (top) after macro processing (bottom).</figcaption></figure>
+<figure><img src="/media/Montage.jpg" title="Example of an original TUNEL assay image (top) after macro processing (bottom)." width="250" alt="Example of an original TUNEL assay image (top) after macro processing (bottom)." /><figcaption aria-hidden="true">Example of an original TUNEL assay image (top) after macro processing (bottom).</figcaption></figure>
 
   
 A JPEG image is created to visualize ONL and INL segmentation and TUNEL<sup>+</sup> cell count, as an overlay.
@@ -162,7 +162,7 @@ When executed in Macro Mode, the output variables are:
 -   Ratio TUNEL<sup>+</sup> Cells/INL Area (count/mm<sup>2</sup>)
 -   Percentage TUNEL<sup>+</sup> Cells/INL Total Cells (%)  
 
-<img src="/images/pages/Bar.png" title="fig:A new window is generated with the output variables." width="250" alt="A new window is generated with the output variables." /> When executed in Batch Mode, ONL Area, INL Area, ONL TUNEL<sup>+</sup> cells, and INL TUNEL<sup>+</sup> cells are reported. These values were used for macro validation.  
+<img src="/media/Bar.png" title="fig:A new window is generated with the output variables." width="250" alt="A new window is generated with the output variables." /> When executed in Batch Mode, ONL Area, INL Area, ONL TUNEL<sup>+</sup> cells, and INL TUNEL<sup>+</sup> cells are reported. These values were used for macro validation.  
 Ratio of TUNEL<sup>+</sup> Cells can be calculated by any spreadsheet or statistics package.
 
 Limitations

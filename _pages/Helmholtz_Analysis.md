@@ -15,18 +15,18 @@ See also http://www.optinav.info/Helmholtz_Analysis.htm
 
 With an artificial example input like this:
 
-![](/images/pages/Helmholtz Input.png "Helmholtz_Input.png")
+![](/media/Helmholtz Input.png "Helmholtz_Input.png")
 
 and parameters like this:
 
-![](/images/pages/HelmholtzDialog.png "HelmholtzDialog.png")
+![](/media/HelmholtzDialog.png "HelmholtzDialog.png")
 
 the Helmholtz Analysis plugin produces the local estimates:
 
-<img src="/images/pages/HelmholtzAnalysisOutput.png" width="750"/>
+<img src="/media/HelmholtzAnalysisOutput.png" width="750"/>
 
 and the smoothed versions thereof:
 
-<img src="/images/pages/HelmholtzAnalysisAverageOutput.png" width="750"/>
+<img src="/media/HelmholtzAnalysisAverageOutput.png" width="750"/>
 
 

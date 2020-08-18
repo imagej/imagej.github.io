@@ -21,14 +21,14 @@ Start the [Updater](Updater)
 
 First, start the [updater](Updater):
 
-![](/images/pages/How to setup a plugin distribution site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
+![](/media/How to setup a plugin distribution site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
 
 Add update sites
 ----------------
 
 Click on the *Manage update sites* button to bring up the site management dialog:
 
-<img src="/images/pages/Mamed-3.jpg" width="770"/>
+<img src="/media/Mamed-3.jpg" width="770"/>
 
 If the update site you want to follow is listed, just click the checkbox next to its name. If it is not listed, you can add Click the *Add update site* button and fill in the name of your choice for the site and the URL, which would be provided by the plugin's author or distributor.
 
@@ -36,7 +36,7 @@ If the update site you want to follow is listed, just click the checkbox next to
 
 After you have selected your desired update site(s), close the dialog. The list of plugins that will be installed or updated from the chosen sites will now show up:
 
-<img src="/images/pages/AddPluginSite-5.jpg" width="770"/>
+<img src="/media/AddPluginSite-5.jpg" width="770"/>
 
 {% include warning-box content='If an entry"s action is """Update It""", that means it is changing an existing plugin. This action is dangerous and can break other plugins, or ImageJ itself.  
 Ideally the maintainers of these sites would work with the core ImageJ maintainers to centralize important plugins.  
@@ -47,7 +47,7 @@ Choose and download plugins
 
 You can select whether you want to install a particular plugin by clicking in the **Status/Action** column and changing the option - for example, select **Keep as-is** to avoid installing a clashing plugin.
 
-<img src="/images/pages/AddPluginSite-6.jpg" width="770"/>
+<img src="/media/AddPluginSite-6.jpg" width="770"/>
 
 Once you are happy with what will be installed, click on the *Apply Changes* button to download your updates.
 
@@ -58,11 +58,11 @@ Verify install
 
 Restart ImageJ as instructed to finish the install. Check to see that the plugin was installed:
 
-![](/images/pages/AddPluginSite-7.jpg "AddPluginSite-7.jpg")
+![](/media/AddPluginSite-7.jpg "AddPluginSite-7.jpg")
 
 ...and that it works:
 
-![](/images/pages/AddPluginSite-8.jpg "AddPluginSite-8.jpg")
+![](/media/AddPluginSite-8.jpg "AddPluginSite-8.jpg")
 
 ...and that's all there is to it.
 

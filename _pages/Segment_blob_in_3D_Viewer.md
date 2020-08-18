@@ -9,7 +9,7 @@ description: test description
 
 Running the plugin "Plugins - Segmentation - Segment blob in 3D Viewer" will add capabilities to all existing 3D Viewer windows. A new 3D Viewer window opens if none are already open.
 
-{% include thumbnail src='/images/pages/Blob-segmentation.jpg' title='Segment blob in 3D Viewer: example of resulting mesh (in green) overlaid on the original image volume (the sample file "bat cochlea volume").'%}
+{% include thumbnail src='/media/Blob-segmentation.jpg' title='Segment blob in 3D Viewer: example of resulting mesh (in green) overlaid on the original image volume (the sample file "bat cochlea volume").'%}
 
 Segmenting a blob
 =================

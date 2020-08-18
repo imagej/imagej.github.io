@@ -16,7 +16,7 @@ This package regroups various "small" plugins dedicated to the manipulation of s
 
 What they do is pretty much summarized by the following diagram, taken from the [MBF ImageJ](MBF_ImageJ) webpage.
 
-![](/images/pages/Stack Manipulation.jpg "Stack_Manipulation.jpg")
+![](/media/Stack Manipulation.jpg "Stack_Manipulation.jpg")
 
 -   The **Grouped ZProjector** acts a bit like the **Substack Maker**, for it allows to reduce the number of frame within a stack. But rather than taking a slice every certain step, it combines a group of slices and project them on a single slice. The size of the groups is configurable, and must be a divisor of the total number of slice.
 

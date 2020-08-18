@@ -11,7 +11,7 @@ description: test description
 {% capture author%}
 {% include person content='Kharrington' %}, {% include person content='skalarproduktraum' %}, {% include person content='Rueden' %}
 {% endcapture %}
-{% include info-box logo='<img src="/images/pages/SciView-icon.png" width="150"/>' name='SciView' software='ImageJ' author=author filename='' source=' [SciView](https://github.com/kephale/SciView)' released='in development' latest-version='in development' status='alpha' category='[Visualization](Category_Visualization)' website='https://github.com/scenerygraphics/SciView' %}== Purpose ==
+{% include info-box logo='<img src="/media/SciView-icon.png" width="150"/>' name='SciView' software='ImageJ' author=author filename='' source=' [SciView](https://github.com/kephale/SciView)' released='in development' latest-version='in development' status='alpha' category='[Visualization](Category_Visualization)' website='https://github.com/scenerygraphics/SciView' %}== Purpose ==
 
 This plugin provides 3D visualization and virtual reality capabilities for images and meshes using the [Scenery](https://github.com/scenerygraphics/scenery). SciView integrates [ImageJ2](ImageJ2) functionality, including [ImageJ Ops](ImageJ_Ops) and [ImageJ Mesh](ImageJ_Mesh), to provide the ability to interact with image and mesh data in 3D and interface with the popular [Fiji](Fiji) software ecosystem.
 
@@ -19,7 +19,7 @@ An update site is available: http://sites.imagej.net/SciView/
 
 There have been a number of contributors to the project: {% include person content='Saalfeld' %}, {% include person content='Pietzsch' %}, {% include person content='royerloic' %}, and {% include person content='Haesleinhuepf' %}. Development has taken place at hackathons such as the first [SciView hackathon](2018-04-04_22-_SciView_hackathon).
 
-![align=right](/images/pages/Sciview-gameoflife.gif "align=right")
+![align=right](/media/Sciview-gameoflife.gif "align=right")
 
 ### Shortcuts
 

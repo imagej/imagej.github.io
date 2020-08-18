@@ -27,4 +27,4 @@ The ImageJ1 API
 
 The diagram below depicts the relation between the different classes composing ImageJ1.
 
-<img src="/images/pages/ImageJ1-API-diagram.jpg" width="1100"/>
+<img src="/media/ImageJ1-API-diagram.jpg" width="1100"/>

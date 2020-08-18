@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-{% include thumbnail src='/images/pages/N2v-teaser.png' title='Examples of N2V denoised images.'%}
+{% include thumbnail src='/media/N2v-teaser.png' title='Examples of N2V denoised images.'%}
 
 Noise2Void (N2V) is a powerful, context aware and flexible algorithm for image denoising. It uses artificial neural networks to learn about the properties of your images and how to best denoise them. N2V outperforms traditional denoising techniques.
 
@@ -41,7 +41,7 @@ Installation
 
 You should now have access to these plugins:
 
-![Available N2V plugins](/images/pages/N2v-plugins.png "Available N2V plugins")
+![Available N2V plugins](/media/N2v-plugins.png "Available N2V plugins")
 
 Usage
 =====
@@ -53,7 +53,7 @@ Training without GPU support is possible, but will take ages. Please read the no
 
 ### Training on a single image
 
-{% include thumbnail src='/images/pages/N2v-train-parameters.png' title='N2V train parameters'%}
+{% include thumbnail src='/media/N2v-train-parameters.png' title='N2V train parameters'%}
 
 1.  Start ImageJ / Fiji
 2.  Open a noisy image of your choice (it should be sufficiently large)
@@ -72,7 +72,7 @@ Training without GPU support is possible, but will take ages. Please read the no
 
 ### Training and prediction on single images (one-click solution)
 
-{% include thumbnail src='/images/pages/N2v-trainpredict-parameters.png' title='N2V train & predict parameters'%}
+{% include thumbnail src='/media/N2v-trainpredict-parameters.png' title='N2V train & predict parameters'%}
 
 1.  Start ImageJ / Fiji
 2.  Open a noisy image of your choice (it should be sufficiently large)
@@ -87,7 +87,7 @@ Training without GPU support is possible, but will take ages. Please read the no
 
 ### Training on multiple images
 
-{% include thumbnail src='/images/pages/N2v-trainfolder-parameters.png' title='N2V train on folder parameters'%}
+{% include thumbnail src='/media/N2v-trainfolder-parameters.png' title='N2V train on folder parameters'%}
 
 1.  Start ImageJ / Fiji
 2.  Click on `Plugins > CSBDeep > N2V > N2V train on folder` and adjust the following parameters:
@@ -100,14 +100,14 @@ Training without GPU support is possible, but will take ages. Please read the no
 What happens during and after training
 --------------------------------------
 
-{% include thumbnail src='/images/pages/N2v-train-progress.png' title='N2V training progress window'%} {% include thumbnail src='/images/pages/N2v-train-preview.png' title='N2V training preview window'%} During training, you will see two windows:
+{% include thumbnail src='/media/N2v-train-progress.png' title='N2V training progress window'%} {% include thumbnail src='/media/N2v-train-preview.png' title='N2V training preview window'%} During training, you will see two windows:
 
 -   The progress window keeps you updated of the steps the training process is going through. It also plots the current training and validation loss.
 -   The preview window is generated from the first validation batch. It is slit into two parts. The upper left part displays the original noisy data, the lower right part displays the prediction at the current state of the training.
 
 After training, two additional windows should appear. They represent two trained models. One is the model from the epoch with the lowest validation loss, the other one the model from the last epoch step. For N2V, using the model from the last epoch is almost always recommended. The windows will look similar to this:
 
-![N2V model archive window](/images/pages/N2v-model.png "N2V model archive window")
+![N2V model archive window](/media/N2v-model.png "N2V model archive window")
 
 They are stored to a temporary location which you can see in the Overview section of the model window under `Saved to..`.
 
@@ -118,7 +118,7 @@ Prediction
 
 There are two ways to predict from a trained model.
 
-You can <b>open the model directly</b>: {% include thumbnail src='/images/pages/N2v-modelpredict-parameters.png' title='N2V prediction from model parameters'%}
+You can <b>open the model directly</b>: {% include thumbnail src='/media/N2v-modelpredict-parameters.png' title='N2V prediction from model parameters'%}
 
 1.  Start Fiji
 2.  Open an image you want to denoise and for which you have a pretrained model available as ZIP file
@@ -127,7 +127,7 @@ You can <b>open the model directly</b>: {% include thumbnail src='/images/pages/
     -   <b>`Input`</b> The image you want to denoise
     -   <b>`Axes of prediction input`</b> This parameter helps to figure out how your input data is organized. It's a string with one letter per dimension of the input image. For 2D images, this should be `XY`. If your data has another axis which should be batch processed, set this parameter to `XYB`
 
-Alternatively, you can <b>use the N2V menu</b>: {% include thumbnail src='/images/pages/N2v-predict-parameters.png' title='N2V prediction parameters'%}
+Alternatively, you can <b>use the N2V menu</b>: {% include thumbnail src='/media/N2v-predict-parameters.png' title='N2V prediction parameters'%}
 
 1.  Start Fiji
 2.  Open an image you want to denoise and for which you have a pretrained model available as ZIP file

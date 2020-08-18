@@ -347,7 +347,7 @@ Just the line `@Plugin( type = EdgeAnalyzer.class )` is enough. There are also m
 
 Right now, just compile your project, and drop the resulting jar in the Fiji plugins folder. Here is what you get:
 
-![](/images/pages/TrackMate DevelopEdgeAnalyzer.png "TrackMate_DevelopEdgeAnalyzer.png")
+![](/media/TrackMate DevelopEdgeAnalyzer.png "TrackMate_DevelopEdgeAnalyzer.png")
 
 Wrapping up
 -----------

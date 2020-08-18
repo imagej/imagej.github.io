@@ -38,7 +38,7 @@ We began developing a GUI based java application separate from the FIJI platform
 
 <div style="text-align: center;">
 
-![](/images/pages/FuzzySetFormula.gif "FuzzySetFormula.gif")
+![](/media/FuzzySetFormula.gif "FuzzySetFormula.gif")
 
 </div>
 
@@ -71,7 +71,7 @@ Launch the FIJI application until the following window appears.
 
 <div style="text-align: center;">
 
-![](/images/pages/OpeningAnImage.jpg "OpeningAnImage.jpg")
+![](/media/OpeningAnImage.jpg "OpeningAnImage.jpg")
 
 </div>
 
@@ -84,9 +84,9 @@ Select the Plugin from the application window. See diagram below.
 
 <div style="text-align: center;">
 
-![](/images/pages/LaunchingPlugin.jpg "LaunchingPlugin.jpg")
+![](/media/LaunchingPlugin.jpg "LaunchingPlugin.jpg")
 
-![](/images/pages/LaunchingPlugin2.jpg "LaunchingPlugin2.jpg")
+![](/media/LaunchingPlugin2.jpg "LaunchingPlugin2.jpg")
 
 </div>
 
@@ -94,7 +94,7 @@ A user may now set the appropriate user defined values.
 
 <div style="text-align: center;">
 
-![](/images/pages/SelectValues.jpg "SelectValues.jpg")
+![](/media/SelectValues.jpg "SelectValues.jpg")
 
 </div>
 
@@ -107,7 +107,7 @@ Below is an example of a histogram window.
 
 <div style="text-align: center;">
 
-![](/images/pages/HistogramWindow.jpg "HistogramWindow.jpg")
+![](/media/HistogramWindow.jpg "HistogramWindow.jpg")
 
 </div>
 
@@ -118,7 +118,7 @@ Below is an example of the modified Histogram
 
 <div style="text-align: center;">
 
-![](/images/pages/ModifiedHistogramWindow.jpg "ModifiedHistogramWindow.jpg")
+![](/media/ModifiedHistogramWindow.jpg "ModifiedHistogramWindow.jpg")
 
 </div>
 
@@ -129,7 +129,7 @@ Following is an example of the Modified Image Window (image supplied by author)
 
 <div style="text-align: center;">
 
-![`ModifiedWindow.jpg`](/images/pages/ModifiedWindow.jpg "ModifiedWindow.jpg")
+![`ModifiedWindow.jpg`](/media/ModifiedWindow.jpg "ModifiedWindow.jpg")
 
 </div>
 
@@ -141,22 +141,22 @@ SAVING RESULTS
 DEMO
 ----
 
-We did many experiments with the application, but to show case one such result, we have included a demo below. ![](/images/pages/2.jpg "fig:2.jpg") ![](/images/pages/ModAE.jpg "fig:ModAE.jpg")
+We did many experiments with the application, but to show case one such result, we have included a demo below. ![](/media/2.jpg "fig:2.jpg") ![](/media/ModAE.jpg "fig:ModAE.jpg")
 
 <div>
 
-![](/images/pages/Hist2.jpg "fig:Hist2.jpg") Histogram of Image Before Transformation
+![](/media/Hist2.jpg "fig:Hist2.jpg") Histogram of Image Before Transformation
 
 </div>
 
-![](/images/pages/HistMod.jpg "fig:HistMod.jpg") Histogram of Image After Transformation
+![](/media/HistMod.jpg "fig:HistMod.jpg") Histogram of Image After Transformation
 
 ACKNOWLEDGEMENTS
 ----------------
 
 <div style="text-align: center;">
 
-![](/images/pages/Dr.jpg "Dr.jpg")
+![](/media/Dr.jpg "Dr.jpg")
 
 </div>
 

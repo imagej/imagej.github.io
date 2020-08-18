@@ -7,7 +7,7 @@ categories: Segmentation,Tracking,Tutorials,Plugins,Citable
 description: test description
 ---
 
-<img src="/images/pages/TrackMate-Logo85x50-color-300p.png" width="160"/> {% include component-stats content='sc.fiji:TrackMate\_' %}
+<img src="/media/TrackMate-Logo85x50-color-300p.png" width="160"/> {% include component-stats content='sc.fiji:TrackMate\_' %}
 
 Citation
 --------
@@ -23,23 +23,23 @@ Presentation
 
 ### Examples
 
-![](/images/pages/TrackMate Celegans devel.gif "TrackMate_Celegans_devel.gif")
+![](/media/TrackMate Celegans devel.gif "TrackMate_Celegans_devel.gif")
 
 The first 2 hours of a *C.elegans* embryo development, followed in 3D over time using TrackMate (strain: [AZ212](http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain))
 
-<figure><img src="/images/pages/TrackMate_Celegans_lineage_detail.png" title="TrackMate_Celegans_lineage_detail.png" width="500" alt="TrackMate_Celegans_lineage_detail.png" /><figcaption aria-hidden="true">TrackMate_Celegans_lineage_detail.png</figcaption></figure>
+<figure><img src="/media/TrackMate_Celegans_lineage_detail.png" title="TrackMate_Celegans_lineage_detail.png" width="500" alt="TrackMate_Celegans_lineage_detail.png" /><figcaption aria-hidden="true">TrackMate_Celegans_lineage_detail.png</figcaption></figure>
 
 A detail of the corresponding unannotated lineage visualized in TrackScheme. The full lineage of this one hour of imaging is [there](_Image_TrackMate_Celegans_lineage.pdf).
 
-![](/images/pages/TrackMate Split Merge Gapclosing.gif "TrackMate_Split_Merge_Gapclosing.gif")
+![](/media/TrackMate Split Merge Gapclosing.gif "TrackMate_Split_Merge_Gapclosing.gif")
 
 TrackMate can be set to detect and deal with gap-closing events, splitting events and merging events.
 
-![TrackMate Celegans CellDiameter.png](/images/pages/TrackMate Celegans CellDiameter.png "TrackMate Celegans CellDiameter.png")
+![TrackMate Celegans CellDiameter.png](/media/TrackMate Celegans CellDiameter.png "TrackMate Celegans CellDiameter.png")
 
 TrackMate can also be used for basic track analysis. Here is plotted the estimated diameter of a *C.elegans* cell as it divides over time.
 
-![](/images/pages/TrackMate CelegansCellFollowed.gif "TrackMate_CelegansCellFollowed.gif")
+![](/media/TrackMate CelegansCellFollowed.gif "TrackMate_CelegansCellFollowed.gif")
 
 A movie following one cell of a *C.elegans* embryo tracked over 3 hours, as it divides. The track follows the lineage from cell AB to ABaraapap.
 
@@ -99,7 +99,7 @@ Documentation and tutorials
 
 The [TrackMate paper](http://www.sciencedirect.com/science/article/pii/S1046202316303346) contains a polished, pdf version of the documentation below. But we host it here:
 
-![](/images/pages/TrackMate-manual.pdf "fig:TrackMate-manual.pdf") 14 MB
+![](/media/TrackMate-manual.pdf "fig:TrackMate-manual.pdf") 14 MB
 
 -   TrackMate version history: Please look at the gihub page for TrackMate releases:
 

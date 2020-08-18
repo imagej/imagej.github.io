@@ -46,7 +46,7 @@ Both, the value for the (estimated) sigma and the smoothing factor are saved in 
 Example
 =======
 
-The left image shows a noisy (sigma=25) image of lena and right image the denoised version using the non local means plugin: <img src="/images/pages/Lena-noise-25.png" width="250"/> <img src="/images/pages/Lena-denoised.png" width="250"/>
+The left image shows a noisy (sigma=25) image of lena and right image the denoised version using the non local means plugin: <img src="/media/Lena-noise-25.png" width="250"/> <img src="/media/Lena-denoised.png" width="250"/>
 
 Installation
 ============
@@ -68,4 +68,4 @@ and
 
 **Implementation:**
 
-<a href="https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-nl-means"><img src="/images/pages/Zenodo.35114.svg" width="174px"/></a>
+<a href="https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-nl-means"><img src="/media/Zenodo.35114.svg" width="174px"/></a>

@@ -14,7 +14,7 @@ Even after correcting for fixed-pattern noise (see [here](BigStitcher_Flatfield_
 
 The brightness and contrast adjustment is available in **Multiview mode** under {% include bc content='Processing|Intensity Adjustment'%}.
 
-<img src="/images/pages/BigStitcher Intensity Adjustment menu.png" width="500"/>
+<img src="/media/BigStitcher Intensity Adjustment menu.png" width="500"/>
 
 {% include info-box content='Calculating the intensity adjustment requires the images to be aligned, therefore use it as a last step after registration before fusing the dataset.' %}
 
@@ -22,7 +22,7 @@ The brightness and contrast adjustment is available in **Multiview mode** under 
 
 Clicking **Compute...** in the Intensity adjustment menu brings up the following dialog:
 
-<img src="/images/pages/BigStitcher Intensity Adjustment dialog.png" width="600"/>
+<img src="/media/BigStitcher Intensity Adjustment dialog.png" width="600"/>
 
 First, since the adjustment is calculates for pixel intensities in overlapping areas of the images, you can select how to load the pixels:
 

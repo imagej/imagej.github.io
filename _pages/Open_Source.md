@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-![ 64px \| left \| link=https://opensource.org/](/images/pages/Osi symbol.png "fig: 64px | left | link=https://opensource.org/") The [ImageJ](ImageJ) project, and related projects in the [SciJava](SciJava) software ecosystem, are open source software projects. See the [Licensing](Licensing) page for details.
+![ 64px \| left \| link=https://opensource.org/](/media/Osi symbol.png "fig: 64px | left | link=https://opensource.org/") The [ImageJ](ImageJ) project, and related projects in the [SciJava](SciJava) software ecosystem, are open source software projects. See the [Licensing](Licensing) page for details.
 
 Everybody is welcome to [contribute](Contribute) with [plugins](Plugins), patches, [bug reports](Bugs), [tutorials](Tutorials), [documentation](Documentation), and artwork.
 

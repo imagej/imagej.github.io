@@ -12,6 +12,6 @@ Test of PNG-screenshot tutorial
 
 This is a test tutorial.
 
-<img src="/images/pages/Test of PNG-screenshot tutorial-1.png" width="750"/>
+<img src="/media/Test of PNG-screenshot tutorial-1.png" width="750"/>
 
 

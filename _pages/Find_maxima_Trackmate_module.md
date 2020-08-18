@@ -30,7 +30,7 @@ Copy the jar file into your fiji plugins folder. If you start TrackMate it is de
 Parameters
 ----------
 
-<figure><img src="/images/pages/Findmaxima_gui.png" title="Findmaxima_gui.png" width="400" alt="Findmaxima_gui.png" /><figcaption aria-hidden="true">Findmaxima_gui.png</figcaption></figure>
+<figure><img src="/media/Findmaxima_gui.png" title="Findmaxima_gui.png" width="400" alt="Findmaxima_gui.png" /><figcaption aria-hidden="true">Findmaxima_gui.png</figcaption></figure>
 
 **Estimated blob diameter:** To achieve subpixel accuracy this region is used for refining the positions.
 
@@ -39,4 +39,4 @@ Parameters
 Example
 -------
 
-The example shows a typical image of scattering nanoparticles. The detection was done with a **estimated blob diameter** of 10 and **tolerance** of 10: ![](/images/pages/Findmax result.png "fig:Findmax_result.png")
+The example shows a typical image of scattering nanoparticles. The detection was done with a **estimated blob diameter** of 10 and **tolerance** of 10: ![](/media/Findmax result.png "fig:Findmax_result.png")

@@ -100,7 +100,7 @@ It is possible to call and control this plugin from other plugin or scripts. Her
 Example
 -------
 
-![](/images/pages/DynamicresliceROI.gif "fig:DynamicresliceROI.gif") ![](/images/pages/Dynamicreslice.gif "fig:Dynamicreslice.gif")
+![](/media/DynamicresliceROI.gif "fig:DynamicresliceROI.gif") ![](/media/Dynamicreslice.gif "fig:Dynamicreslice.gif")
 
 Version history
 ---------------

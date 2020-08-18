@@ -12,7 +12,7 @@ description: test description
 {% capture source%}
 {% include github org='openmicroscopy' repo='bioformats' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='OME Bio-Formats plugins' logo='<img src="/images/pages/Bio-formats-icon.png" width="96"/>' author=' [Open Microscopy Environment](https://www.openmicroscopy.org/) :  
+{% include info-box software='ImageJ' name='OME Bio-Formats plugins' logo='<img src="/media/Bio-formats-icon.png" width="96"/>' author=' [Open Microscopy Environment](https://www.openmicroscopy.org/) :  
 - [UW-Madison LOCI](LOCI)  
 - [Glencoe Software](https://www.glencoesoftware.com/)  
 - [University of Dundee](https://www.dundee.ac.uk/)' maintainer='OME development team' filename=' [See Bio-Formats Downloads page](https://downloads.openmicroscopy.org/bio-formats/)' source=source latest-version=' [See Bio-Formats Downloads page](https://downloads.openmicroscopy.org/bio-formats/)' status='active' category='[:Category:Import-Export](Category_Import-Export)' %}{% include toc%}
@@ -152,11 +152,11 @@ To enable the Bio-Formats update site:
 
 1.  Launch the updater: **Update** from the **Help** menu.
 2.  Click the **Manage update sites** button.
-3.  Tick the **Bio-Formats** box: <img src="/images/pages/Bf-manage-update-sites.png" title="fig:Bf-manage-update-sites.png" width="700" alt="Bf-manage-update-sites.png" />
-4.  Click the **Close** button. The updater should want to update some files now: <img src="/images/pages/Bf-jars-to-update.png" title="fig:Bf-jars-to-update.png" width="700" alt="Bf-jars-to-update.png" />
+3.  Tick the **Bio-Formats** box: <img src="/media/Bf-manage-update-sites.png" title="fig:Bf-manage-update-sites.png" width="700" alt="Bf-manage-update-sites.png" />
+4.  Click the **Close** button. The updater should want to update some files now: <img src="/media/Bf-jars-to-update.png" title="fig:Bf-jars-to-update.png" width="700" alt="Bf-jars-to-update.png" />
 5.  Click the **Apply changes** button.
 6.  Restart Fiji when prompted.
-7.  To verify the upgrade, choose **Bio-Formats Plugins...** from **About Plugins** beneath the **Help** menu: <img src="/images/pages/Bf-about-plugins.png" title="fig:Bf-about-plugins.png" width="700" alt="Bf-about-plugins.png" />
+7.  To verify the upgrade, choose **Bio-Formats Plugins...** from **About Plugins** beneath the **Help** menu: <img src="/media/Bf-about-plugins.png" title="fig:Bf-about-plugins.png" width="700" alt="Bf-about-plugins.png" />
 
 Source code
 -----------

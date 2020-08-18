@@ -21,7 +21,7 @@ Parts of the Op Finder
 ======================
 
   
-![](/images/pages/LabeledOpFinder.png "fig:LabeledOpFinder.png")
+![](/media/LabeledOpFinder.png "fig:LabeledOpFinder.png")
 
 **Labeled components**
 
@@ -54,7 +54,7 @@ For Users
 Ops in this view are focused on answering the question "What can I do *right now* with Ops?" For example, in this example we see that we can call the `Convolve` Op with either a base image, or the base and kernel:
 
   
-<img src="/images/pages/UserOpFinder.png" title="fig:UserOpFinder.png" width="800" alt="UserOpFinder.png" />
+<img src="/media/UserOpFinder.png" title="fig:UserOpFinder.png" width="800" alt="UserOpFinder.png" />
 
 **User View Contents**
 
@@ -68,7 +68,7 @@ For Developers
 This view provides a comprehensive list of available Ops implementations. For example, contrasting with the [User view](#For_Users "wikilink"), we see there are actually four concrete implementations of the `Convolve` Op, with a plethora of optional parameters.
 
   
-<img src="/images/pages/DevOpFinder.png" title="fig:DevOpFinder.png" width="800" alt="DevOpFinder.png" />
+<img src="/media/DevOpFinder.png" title="fig:DevOpFinder.png" width="800" alt="DevOpFinder.png" />
 
 **Developer View Contents**
 
@@ -88,7 +88,7 @@ The Op Finder includes [fuzzy filtering](Wikipedia_Approximate_string_matching) 
 -   In [User view](#For_Users "wikilink"), the complete simplified Op entry is filtered.
 -   In [Developer view](#For_Developers "wikilink"), the Op namespaces + class name are filtered.
 
-<figure><img src="/images/pages/Filter-op-finder.png" title="Filter-op-finder.png" width="600" alt="Filter-op-finder.png" /><figcaption aria-hidden="true">Filter-op-finder.png</figcaption></figure>
+<figure><img src="/media/Filter-op-finder.png" title="Filter-op-finder.png" width="600" alt="Filter-op-finder.png" /><figcaption aria-hidden="true">Filter-op-finder.png</figcaption></figure>
 
 Code Snippets
 -------------
@@ -98,7 +98,7 @@ Code snippets are available in the [Developer view](#For_Developers "wikilink").
 1\. The first thing to do is find an Op of interest. In this case, we start from the [User view](#For_Users "wikilink") and see that there is a Convolve Op we want to try:
 
   
-![](/images/pages/1-select-op.png "fig:1-select-op.png")
+![](/media/1-select-op.png "fig:1-select-op.png")
 
 2\. In the [Script Editor](Script_Editor) (the keyboard shortcut {% include key content='{' %} (open curly bracket) opens the editor), we need to add a reference to the `OpService` which will be our entry point for Op usage:
 
@@ -110,7 +110,7 @@ Code snippets are available in the [Developer view](#For_Developers "wikilink").
 3\. Now we need the code call for our Convolve Op, so we switch to the [Developer view](#For_Developers "wikilink"). The code is long, but remember we can [copy](#Parts_of_the_Op_Finder "wikilink"):
 
   
-<img src="/images/pages/2-op-snippet.png" title="fig:2-op-snippet.png" width="1200" alt="2-op-snippet.png" />
+<img src="/media/2-op-snippet.png" title="fig:2-op-snippet.png" width="1200" alt="2-op-snippet.png" />
 
 <!-- -->
 
@@ -126,7 +126,7 @@ and paste:
 4\. Looking at the Op call, we see that there are *a lot* of parameters. To get a better idea of what these are, we look at the `Op Signature` column of the Op Finder:
 
   
-<img src="/images/pages/3-op-signature.png" title="fig:3-op-signature.png" width="1200" alt="3-op-signature.png" />
+<img src="/media/3-op-signature.png" title="fig:3-op-signature.png" width="1200" alt="3-op-signature.png" />
 
 <!-- -->
 

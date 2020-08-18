@@ -30,6 +30,6 @@ The command {% include bc content='Analyze | Tools | Sync Windows'%} opens a dia
 
 Clicking on **Synchronize All** starts synchronizing all windows, clicking on **Unsynchronize All** stops synchronization.
 
-<img src="/images/pages/Sync Win.png" width="750"/>
+<img src="/media/Sync Win.png" width="750"/>
 
  

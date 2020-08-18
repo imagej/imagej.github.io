@@ -32,7 +32,7 @@ Estimating colocalisation by looking for yellow colour in images where the green
 4.  There are simple and quick objective methods to estimate colocalisation, so don't be lazy. You can use them to get hard objective statistics describing the colocalisation in your images, and its easy to do.
 5.  Our brains find color contrast that is not even really there. In the following illusion (Fig. 1), there are only really 3 colors. The "blue"and "green" are exactly the same color: Do not trust your eyes - measure it.
 
-{% include thumbnail src='/images/pages/Spirals.png' title='\'\'\'Figure 1\'\'\': The \'\'spirals\'\' color illusion'%}
+{% include thumbnail src='/media/Spirals.png' title='\'\'\'Figure 1\'\'\': The \'\'spirals\'\' color illusion'%}
 
   
 What we need are objective quantitative methods to estimate/measure colocalisation in 2 colour channel images. These will output colocalisation coefficients that should be:
@@ -51,7 +51,7 @@ There are various problems that need to be understood and overcome while collect
 
 ### Blur
 
-![](/images/pages/ColocBlur.gif "ColocBlur.gif")
+![](/media/ColocBlur.gif "ColocBlur.gif")
 
 *`Definition:`*` The Fourier spectrum of the `  
 `image lacks proper high frequencies. `
@@ -84,7 +84,7 @@ If the blurring of you images is too much, you might want to consider [deconvolu
 
 ### Background
 
-![](/images/pages/ColocBGnoise.gif "ColocBGnoise.gif")
+![](/media/ColocBGnoise.gif "ColocBGnoise.gif")
 
 *`Definition:`*` Unspecific signal. `
 
@@ -131,7 +131,7 @@ One must have a signal strong enough to allow a good enough signal:noise ratio, 
 
 So... this one is *the* very worst and most dangerous problem in colocalization experiments. It can be explained with the following spectra:
 
-<img src="/images/pages/500px-CrossTalkBleedThrough.jpg" width="500"/>
+<img src="/media/500px-CrossTalkBleedThrough.jpg" width="500"/>
 
   
 In this picture, the detection setup is configured so as to measure emitted light from the second fluorophore. The problem is that in this detection channel, some of the light emitted by the first fluorophore is also collected and integrated to the channel 2 signal. This is called **bleed-through**. When you are going to compute colocalization of this channel with the first one, there will be a part of the signal that will colocalize with it whatever it is, since signal coming from the first fluorophore is present in both channels. That is, you generated false-positive result.
@@ -157,7 +157,7 @@ As a general rule, you should have each object you image sampled over many pixel
 
 Let's suppose that you have two objects each with different colour, and you would like to assess if they colocalize in space. If we assume that they don't colcocalise, if the colocalization procedure you are using is working, it should give you a negative result. Consider one molecule of each dye. They are sitting close to each other, but they are not colocalized (in the same place). Now, if the pixel size is so big that these two molecules are imaged on the same pixel, the procedure tells you that they are colocalized. Once again, you are producing false-positive results.
 
-<img src="/images/pages/500px-ColocalizationSampling.png" width="500"/>
+<img src="/media/500px-ColocalizationSampling.png" width="500"/>
 
   
 Also remember: since we are doing light microscopy, two objects closer and smaller than the diffraction limit will appear colocalized whatever you do. Particular care must be taken in the case of Z-stack, where the resolution in the Z axis is generally lower than in the XY plane. In order to get around the diffraction limit, and to confirm your colocalisation result, you can do other methods too, such as FRET or FLIM, and immuno precipitation or cellular cofractionation. 

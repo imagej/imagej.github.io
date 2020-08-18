@@ -108,12 +108,12 @@ Just copy/paste it in the [Script Editor](Script_Editor) or save it into a .bsh 
 
 If you run it, the following dialog will pop up:
 
-![](/images/pages/Challenge-segmentation-metrics-script.png "Challenge-segmentation-metrics-script.png")
+![](/media/Challenge-segmentation-metrics-script.png "Challenge-segmentation-metrics-script.png")
 
 Here you can select among the open images which ones are the original and the proposed labels, along with the specific metrics you want to apply to evaluate the segmentation results.
 
 After clicking OK the metrics will be applied and the results will be shown in the Log window:
 
-![](/images/pages/Challenge-script-log-window.png "Challenge-script-log-window.png")
+![](/media/Challenge-script-log-window.png "Challenge-script-log-window.png")
 
  

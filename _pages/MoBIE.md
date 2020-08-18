@@ -7,7 +7,7 @@ categories:
 description: test description
 ---
 
-<figure><img src="/images/pages/Mobie-white.jpg" title="Mobie-white.jpg" width="200" alt="Mobie-white.jpg" /><figcaption aria-hidden="true">Mobie-white.jpg</figcaption></figure>
+<figure><img src="/media/Mobie-white.jpg" title="Mobie-white.jpg" width="200" alt="Mobie-white.jpg" /><figcaption aria-hidden="true">Mobie-white.jpg</figcaption></figure>
 
 
 {% capture source%}

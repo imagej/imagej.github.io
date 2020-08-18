@@ -7,7 +7,7 @@ categories: Citable
 description: test description
 ---
 
-<img src="/images/pages/Mifqc.png" width="900"/> 
+<img src="/media/Mifqc.png" width="900"/> 
 {% capture source%}
 {% include github org='fiji' repo='microscope-image-quality' tag='microscope-image-quality-0.1.0' %}
 {% endcapture %}

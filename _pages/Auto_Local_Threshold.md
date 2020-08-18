@@ -38,11 +38,11 @@ Available methods
 
 Which method segments your data best? You can attempt to answer this question using the **Try all** option. This produces a montage with results from all the methods, so one can explore how the different algorithms perform on an image or stack.
 
-![](/images/pages/Epith.png "Epith.png")
+![](/media/Epith.png "Epith.png")
 
 Original image
 
-![](/images/pages/Epithm2.png "epithm2.png")
+![](/media/Epithm2.png "epithm2.png")
 
 Try all methods.
 

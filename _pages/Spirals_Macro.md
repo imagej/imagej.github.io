@@ -11,4 +11,4 @@ The {% include github repo='fiji' path='plugins/Scripts/File/Open\_Samples/Spira
 
 In the generated image, you perceive some yellow and some green-yellow bands, but they have exactly the same color:
 
-![](/images/pages/SpiralsRGY.png "SpiralsRGY.png")
+![](/media/SpiralsRGY.png "SpiralsRGY.png")

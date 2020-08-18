@@ -17,7 +17,7 @@ The 2015 [ImageJ User and Developer Conference](Conference) complemented the EU 
 Location
 --------
 
-![ 250px \| left](/images/pages/ WID.jpg " 250px | left")
+![ 250px \| left](/media/ WID.jpg " 250px | left")
 
 [H.F. DeLuca Forum](http://discovery.wisc.edu/home/town-center/apply-to-reserve-town-center-spaces/large-rooms/h-f-deluca-forum/h-f-deluca-forum.cmsx)  
 [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/)  
@@ -129,22 +129,22 @@ Sponsors and partners
 <tr>
 <td style="padding-top: 10px">
 
-![ x100px \| top \| link=LOCI](/images/pages/Loci-logo.png " x100px | top | link=LOCI")
+![ x100px \| top \| link=LOCI](/media/Loci-logo.png " x100px | top | link=LOCI")
 
 </td>
 <td style="padding-left: 30px; padding-top: 0">
 
-![ x90px \| top \| link=http://wisc.edu/](/images/pages/UW-logo.png " x90px | top | link=http://wisc.edu/")
+![ x90px \| top \| link=http://wisc.edu/](/media/UW-logo.png " x90px | top | link=http://wisc.edu/")
 
 </td>
 <td style="padding-left: 30px; padding-top: 0">
 
-![ x80px \| top \| link=http://www.list.lu/](/images/pages/LIST-logo.jpg " x80px | top | link=http://www.list.lu/")
+![ x80px \| top \| link=http://www.list.lu/](/media/LIST-logo.jpg " x80px | top | link=http://www.list.lu/")
 
 </td>
 <td style="padding-left: 30px">
 
-![ x80px \| top \| link=http://morgridge.wisc.edu/](/images/pages/Morgridge-logo.jpg " x80px | top | link=http://morgridge.wisc.edu/")
+![ x80px \| top \| link=http://morgridge.wisc.edu/](/media/Morgridge-logo.jpg " x80px | top | link=http://morgridge.wisc.edu/")
 
 </td>
 </tr>

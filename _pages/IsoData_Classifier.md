@@ -13,6 +13,6 @@ This plugin works on 8-bit and 16-bit grayscale images only.
 
 To start the plugin, go to {% include bc content='Analyze | Classification | IsoData Classifier'%}.
 
-<figure><img src="/images/pages/IsoData_Classifier.png" title="Configuration dialog of the IsoData Classifier plugin" width="400" alt="Configuration dialog of the IsoData Classifier plugin" /><figcaption aria-hidden="true">Configuration dialog of the IsoData Classifier plugin</figcaption></figure>
+<figure><img src="/media/IsoData_Classifier.png" title="Configuration dialog of the IsoData Classifier plugin" width="400" alt="Configuration dialog of the IsoData Classifier plugin" /><figcaption aria-hidden="true">Configuration dialog of the IsoData Classifier plugin</figcaption></figure>
 
  

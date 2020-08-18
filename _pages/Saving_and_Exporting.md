@@ -13,7 +13,7 @@ description: test description
 Image formats
 -------------
 
-![](/images/pages/Save as1.png "fig:save_as1.png") ![](/images/pages/Save as2.png "fig:save_as2.png")The “*File/Save*” (hotkey: S) menu command will save the image as a TIF file. Other formats are available (see menu image on the right) and can be accessed by “*File/Save As...*”. When the “*Save as*” dialog is opened, Fiji will enter the image window’s name, plus the appropriate file suffix, as the “File Name".
+![](/media/Save as1.png "fig:save_as1.png") ![](/media/Save as2.png "fig:save_as2.png")The “*File/Save*” (hotkey: S) menu command will save the image as a TIF file. Other formats are available (see menu image on the right) and can be accessed by “*File/Save As...*”. When the “*Save as*” dialog is opened, Fiji will enter the image window’s name, plus the appropriate file suffix, as the “File Name".
 
 *Animated GIF…* Choosing this option from the "*Save as*" menu saves a stack as an animated GIF. It is only compatible on RGB or 8 bit images. A more suitable option would be saving as *GIF*, where the only limitation is that any RGB color stacks must be converted to 8 bit color.
 

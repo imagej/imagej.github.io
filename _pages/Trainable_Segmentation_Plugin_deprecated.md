@@ -38,41 +38,41 @@ The plugin can be found in the Fiji menu under {% include bc content='Plugins | 
 
 First, you have to choose the image you want to train on.
 
-![](/images/pages/TrainingImage.jpg "trainingImage.jpg")
+![](/media/TrainingImage.jpg "trainingImage.jpg")
 
 Now open the plugin ({% include bc content='Plugins | Segmentation | deprecated | Trainable Segmentation'%}). It opens a training window that contains the training image.
 
-![](/images/pages/Playground.jpg "Playground.jpg")
+![](/media/Playground.jpg "Playground.jpg")
 
 ### Make example annotations
 
 Next, we have to teach the plugin what a membrane in the image looks like. So we select pixels from a membrane using the freeline tool.
 
-![](/images/pages/PlaygroundFirstAnnotation.jpg "PlaygroundFirstAnnotation.jpg")
+![](/media/PlaygroundFirstAnnotation.jpg "PlaygroundFirstAnnotation.jpg")
 
 Now push the "Add to class 2" button. The selected trace will turn green, showing that it is been selected as a representative example of class 2.
 
-![](/images/pages/FirstPositiveExample.jpg "firstPositiveExample.jpg")
+![](/media/FirstPositiveExample.jpg "firstPositiveExample.jpg")
 
 For training it is also important what a membrane does not look like. So we select some other pixels and push the "Add to class 1" button.
 
-![](/images/pages/FirstNegativeExample.jpg "FirstNegativeExample.jpg")
+![](/media/FirstNegativeExample.jpg "FirstNegativeExample.jpg")
 
 ### Train the classifier
 
 Now it is time to train the classifier and look at the result, so we push the "Train classifier" button on the left side. After training the plugin will automatically classify all pixels from the training image and present the result in a color overlay. This overlay can be switched on and off with the "Toggle overlay" button.
 
-![](/images/pages/TrainedClassifier.jpg "trainedClassifier.jpg")
+![](/media/TrainedClassifier.jpg "trainedClassifier.jpg")
 
 ### Refine the training
 
 Looking at the classification result there are some cases that are harder to classify than others. We add more annotations to help the classifier correct these cases. This is done by adding examples and then pushing the train classifier button in between to see how the result changes. **If you want to delete an example trace**, select the trace in the right list (it turns to yellow in the training image) and then **double click on it**. Here are some examples of what the annoations can look like:
 
-![](/images/pages/MultiAnnotations.jpg "MultiAnnotations.jpg")
+![](/media/MultiAnnotations.jpg "MultiAnnotations.jpg")
 
 And here is the corresponding classification result:
 
-![](/images/pages/FinalOverlay.jpg "FinalOverlay.jpg")
+![](/media/FinalOverlay.jpg "FinalOverlay.jpg")
 
 ### Apply the trained classifier to other images
 
@@ -80,7 +80,7 @@ If you want a binary image of this result you can use the "Create result" button
 
 The other option is to apply the trained classifier to other images or stacks. For this we click the "Apply classifier" button. A dialog opens asking for the image or stack that should be classified using the current trained classifier. Depending on the size of this image or stack, the classification can take some time. When it is finished you see the image/stack the classifier was applied to and the result in new windows. These images can now be saved or further processed.
 
-<img src="/images/pages/WholeImageClassified.jpg" width="780"/>
+<img src="/media/WholeImageClassified.jpg" width="780"/>
 
 ### Tips
 

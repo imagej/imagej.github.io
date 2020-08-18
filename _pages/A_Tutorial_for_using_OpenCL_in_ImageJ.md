@@ -154,15 +154,15 @@ Understanding platform-specific JOCL native libraries
 
 For these samples, three native libraries are needed: gluegen-rt, jocl, and JOCL-'platform'-'arch'. If you look in the lib folder, you will find -natives-xyz.jar files containing the respective libraries. You need to unzip each of the three jar files and copy the dynamic files (.so, .dylib, or .dll) into the parent directory if they are not already present. Notice the below example where the `libgluegen-rt.dylib`, `libJOCL-apple-x86_64.dylib`, and `libjocl.dylib` files are in the platform specific directory.
 
-<figure><img src="/images/pages/2011-opencl-01.png" title="2011-opencl-01.png" width="256" height="170" alt="2011-opencl-01.png" /><figcaption aria-hidden="true">2011-opencl-01.png</figcaption></figure>
+<figure><img src="/media/2011-opencl-01.png" title="2011-opencl-01.png" width="256" height="170" alt="2011-opencl-01.png" /><figcaption aria-hidden="true">2011-opencl-01.png</figcaption></figure>
 
 Then ensure that the platform specific jar is exported during the project build. For example notice that the JOCL-0-1.4-beta1.jar file is referenced in the project. (To see this menu right click the project and choose Properties -&gt; Java Build Path -&gt; Libraries.)
 
-<figure><img src="/images/pages/2011-opencl-00.png" title="2011-opencl-00.png" width="641" height="270" alt="2011-opencl-00.png" /><figcaption aria-hidden="true">2011-opencl-00.png</figcaption></figure>
+<figure><img src="/media/2011-opencl-00.png" title="2011-opencl-00.png" width="641" height="270" alt="2011-opencl-00.png" /><figcaption aria-hidden="true">2011-opencl-00.png</figcaption></figure>
 
 Finally, ensure that the platform specific files are exported:
 
-<figure><img src="/images/pages/2011-opencl-02.png" title="2011-opencl-02.png" width="679" height="286" alt="2011-opencl-02.png" /><figcaption aria-hidden="true">2011-opencl-02.png</figcaption></figure>
+<figure><img src="/media/2011-opencl-02.png" title="2011-opencl-02.png" width="679" height="286" alt="2011-opencl-02.png" /><figcaption aria-hidden="true">2011-opencl-02.png</figcaption></figure>
 
 Start exploring the examples by viewing the developer comments in the file `src/publication/SobelFilterExample.java`. Notice the `Main()` method calls `run()` which use an `awt.Image` type as an input parameter. Modify and run the `Main()` method as a Java application and adjust the VM Arguments (E.g. `-Xmx1024m`) if needed.
 

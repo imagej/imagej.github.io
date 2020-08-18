@@ -9,7 +9,7 @@ description: test description
 
 Today, the [ImageJ](ImageJ) and [KNIME](KNIME) teams are pleased to announce {% include github org='imagej' repo='imagej-ops' label='ImageJ Ops' %}: a framework for reusable image processing operations. This library is the direct result of an extremely successful hackathon hosted by Michael Berthold's team at the University of Konstanz, Germany.
 
-<figure><img src="/images/pages/Konstanz-hackathon.jpg" title="Happy hackers: 502 commits in five days!" width="320" alt="Happy hackers: 502 commits in five days!" /><figcaption aria-hidden="true">Happy hackers: 502 commits in five days!</figcaption></figure>
+<figure><img src="/media/Konstanz-hackathon.jpg" title="Happy hackers: 502 commits in five days!" width="320" alt="Happy hackers: 502 commits in five days!" /><figcaption aria-hidden="true">Happy hackers: 502 commits in five days!</figcaption></figure>
 
 Motivation
 ----------

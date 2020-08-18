@@ -27,6 +27,6 @@ Here is a screencast how to use the Interactive Stack Rotation plugin:
 
 For a quick overview of keyboard shortcuts, please press the {% include key content='F1' %} key to be shown this usage:
 
-![](/images/pages/InteractiveStackRotation.jpg "InteractiveStackRotation.jpg")
+![](/media/InteractiveStackRotation.jpg "InteractiveStackRotation.jpg")
 
   

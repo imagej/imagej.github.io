@@ -26,7 +26,7 @@ PhotoBend plugins collection
 
 A collection of specialized plugins for ImageJ providing tracking of a needle-like crystal shape changing during photobending process. Photobending is a phenomenon of crystal deformation caused by non-uniform crystal structure transformation due to photochemical reaction. Bending of crystals caused by light irradiation is only one of various types of mechanical response observed in chemically transforming solid substances (see the review by Naumov *et al.*, 2015[1]{% include cite content='journal' title='Quantification of photoinduced bending of dynamic molecular crystals: from macroscopic strain to kinetic constants and activation energies' author='Stanislav Chizhik, Anatoly Sidelnikov, Boris Zakharov, Panče Naumov and Elena Boldyreva' journal='Chemical Science' volume='9' number='8' pages='2319-2335' year='2018' publisher='The Royal Society of Chemistry' doi='10.1039/C7SC04863G' %}</ref> ).
 
-{% include thumbnail src='/images/pages/Photobend demo.gif' title='Animation of the photobend time lapse (\~1500x playback speed)'%}
+{% include thumbnail src='/media/Photobend demo.gif' title='Animation of the photobend time lapse (\~1500x playback speed)'%}
 
 There are two plugins in the collection providing two methods of crystal bending measurement: Bending\_Crystal\_Track and Laser\_Spot\_Track4. Both use the template matching technique based on OpenCV library to track the movement of specific targets in the series of time lapse images organized in the virtual stack. Direct usage of movies opened as image stacks is not supported currently (movies can be transformed in the image sequences with tools like ffmpeg. <span style="color:red"> UPDATE! - movies can be used directly with the Bending\_Crystal\_Track plugin! </span> Laser\_Spot\_Track4 stil requires a series of images). Timeline of the registered process is based on exif timestamps in the images or on the constant time step if the metadata are not available.
 
@@ -47,20 +47,20 @@ Bending\_Crystal\_Track plugin
 
 The plugin is for the analysis of a stack of time lapse microscopic images of a bending crystal. User is instructed to select specific parts on the reference crystal image which includes: the point on the tip of free crystal's end, the point on the attached end of the crystal, the point in the middle of the crystal and a rectangle around a stable part of the image (a part supposed to be immobile during the whole process, a tip of holder or capillary to which the crystal is attached, for one).
 
-![400pix\|left\|Crystal shape tracking in process](/images/pages/Photobend processing.jpg "fig:400pix|left|Crystal shape tracking in process") ![](/images/pages/Photobend deformation plot.jpg "fig:photobend_deformation_plot.jpg") ![](/images/pages/Photobend curvature plot.jpg "fig:photobend_curvature_plot.jpg")
+![400pix\|left\|Crystal shape tracking in process](/media/Photobend processing.jpg "fig:400pix|left|Crystal shape tracking in process") ![](/media/Photobend deformation plot.jpg "fig:photobend_deformation_plot.jpg") ![](/media/Photobend curvature plot.jpg "fig:photobend_curvature_plot.jpg")
 
 The plugin code uses the selected regions of the image as reference templates to find them in the series of the time lapse images. Automatic picture stabilization is provided by detection of the stable part displacement. Then the free crystal's end and its middle part are detected in new positions of the image (accounting for the displacement and rotation) with the template matching technique. The coordinates of the three points (two ends and the middle part) are used to calculate the curvature and deformation (elongation or shortening) of the crystal.
 
 Laser\_Spot\_Track4 plugin
 --------------------------
 
-{% include thumbnail src='/images/pages/LaserSpotMove.gif' title='Animation of the laser spot movement obtained while registering the photobending with the laser beam deflection technique (\~70x playback speed)'%}
+{% include thumbnail src='/media/LaserSpotMove.gif' title='Animation of the laser spot movement obtained while registering the photobending with the laser beam deflection technique (\~70x playback speed)'%}
 
 The plugin's goal is to automate the registering and analysis for the so-called laser beam deflection technique. The technique is the general purpose method to study various processes in which objects undergo weak change of their geometry. A laser beam reflecting from the object itself or from a mirror attached to the object deflects while the object's geometry changes. The spot of the deflected laser beam moves on a distant screen (e.g. wall). Due to long distance between the object and the screen an amplification of the geometry change is provided.
 
 The plugin was developed to analyze weak photobending of thick crystals. To utilize the technique tiny mirror is attached to the free crystal's end. The bending then causes tilt of the mirror and corresponding deflection of the laser beam.
 
-![400pix\|left\|Laser spot tracking in process](/images/pages/LaserSpotTrack.jpg "400pix|left|Laser spot tracking in process")
+![400pix\|left\|Laser spot tracking in process](/media/LaserSpotTrack.jpg "400pix|left|Laser spot tracking in process")
 
 The movement of the laser spot is registered with a camera to give the series of the time-lapse photographs (or a movie which should be transformed to the series for the analysis). The laser spot should be registered on the screen with the template attached which contains 4 marks placed in corners of a square. The usage of the template provides automatic image stabilization and correction of perspective distortion (note that only linear perspective is corrected; no spherical distortion can be corrected by the plugin, so usage of wide-angle lenses is not recommeded). The template should be made prior to the registering by any appropriate technique. For example by printing a prepared image like the one from this [archive](Media_LaserDeflectionMeasurementTemplate.zip). The archive contains various vector formats of the image having measurement marks placed in the corners of the square of 100 mm side. Depending on the printer model the scale of the image may be distorted differently in vertical or horizontal direction, so the final scale should be checked and corrected if necessary (for example, by editing one of the vector file suggested).
 

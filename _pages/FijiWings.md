@@ -7,7 +7,7 @@ categories: Citable
 description: test description
 ---
 
-<img src="/images/pages/File.png" title="fig:File.png" width="500" alt="File.png" />{% include clear%}
+<img src="/media/File.png" title="fig:File.png" width="500" alt="File.png" />{% include clear%}
 
 {% capture author%}
 Alex Dobens, {% include person content='Dobensl' %}

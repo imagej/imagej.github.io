@@ -7,7 +7,7 @@ categories: Plugins,Filtering
 description: test description
 ---
 
-{% include thumbnail src='/images/pages/Tem.jpg' title='TEM original image'%} {% include thumbnail src='/images/pages/Tem-clahe-50-256-2.5.jpg' title='TEM CLAHE processed, (block: 50; bins: 256; max slope: 2.5)'%}
+{% include thumbnail src='/media/Tem.jpg' title='TEM original image'%} {% include thumbnail src='/media/Tem-clahe-50-256-2.5.jpg' title='TEM CLAHE processed, (block: 50; bins: 256; max slope: 2.5)'%}
 
 
 {% capture author%}
@@ -47,9 +47,9 @@ use the displayed image to estimate the intensity transfer that is then applied 
 unchecked  
 the selected channel is processed individually.
 
-{% include thumbnail src='/images/pages/Photo1.jpg' title='Photo1 original image'%} {% include thumbnail src='/images/pages/Photo1-clahe-150-256-3.jpg' title='Photo1 CLAHE processed, (block: 150; bins: 256; max slope: 3)'%}
+{% include thumbnail src='/media/Photo1.jpg' title='Photo1 original image'%} {% include thumbnail src='/media/Photo1-clahe-150-256-3.jpg' title='Photo1 CLAHE processed, (block: 150; bins: 256; max slope: 3)'%}
 
-{% include thumbnail src='/images/pages/Photo3.jpg' title='Photo2 original image'%} {% include thumbnail src='/images/pages/Photo3-clahe-50-256-3.jpg' title='Photo2 CLAHE processed, (block: 50; bins: 256; max slope: 3)'%}
+{% include thumbnail src='/media/Photo3.jpg' title='Photo2 original image'%} {% include thumbnail src='/media/Photo3-clahe-50-256-3.jpg' title='Photo2 CLAHE processed, (block: 50; bins: 256; max slope: 3)'%}
 
 Tips
 ----

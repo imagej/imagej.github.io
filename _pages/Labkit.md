@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='maarzt' repo='imglib2-labkit' %}
 {% endcapture %}
-{% include info-box name='Labkit' update-site='Labkit' author=author maintainer=maintainer source=source %} <img src="/images/pages/Labkit Illustration.jpg" width="700"/>
+{% include info-box name='Labkit' update-site='Labkit' author=author maintainer=maintainer source=source %} <img src="/media/Labkit Illustration.jpg" width="700"/>
 
 Labkit is a plugin for:
 

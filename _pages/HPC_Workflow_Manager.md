@@ -44,7 +44,7 @@ How to use
 
 From the Fiji menu bar select Plugins &gt; Multiview Reconstruction &gt; HPC Workflow Manager and fill in the Login dialog that will appear. For example, see the filled-in dialog in Figure 1.
 
-<figure><img src="/images/pages/hpc-workflow-manager-login.png" title="Figure 1: Example of a filled in login dialog." width="500" alt="Figure 1: Example of a filled in login dialog." /><figcaption aria-hidden="true">Figure 1: Example of a filled in login dialog.</figcaption></figure>
+<figure><img src="/media/hpc-workflow-manager-login.png" title="Figure 1: Example of a filled in login dialog." width="500" alt="Figure 1: Example of a filled in login dialog." /><figcaption aria-hidden="true">Figure 1: Example of a filled in login dialog.</figcaption></figure>
 
 ### How to login
 
@@ -56,11 +56,11 @@ Press "Ok" and the dialog should disappear, and a progress dialog should appear.
 
 After the connection to the HPC Cluster is made and the jobs are downloaded from the cluster you should see a window like the one in Figure 2. If it is the first time you run this plugin the table will be empty.
 
-<figure><img src="/images/pages/hpc-workflow-manager-main-empty.png" title="Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used." width="500" alt="Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used." /><figcaption aria-hidden="true">Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used.</figcaption></figure>
+<figure><img src="/media/hpc-workflow-manager-main-empty.png" title="Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used." width="500" alt="Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used." /><figcaption aria-hidden="true">Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used.</figcaption></figure>
 
 Right-click in the empty table or an empty row of the table to display the context menu, an example of the context menu is featured in Figure 3.
 
-<figure><img src="/images/pages/hpc_workflow_manager_context_menu.png" title=" Figure 3: Context menu press right click on an empty row or empty table to display." width="200" alt=" Figure 3: Context menu press right click on an empty row or empty table to display." /><figcaption aria-hidden="true"> Figure 3: Context menu press right click on an empty row or empty table to display.</figcaption></figure>
+<figure><img src="/media/hpc_workflow_manager_context_menu.png" title=" Figure 3: Context menu press right click on an empty row or empty table to display." width="200" alt=" Figure 3: Context menu press right click on an empty row or empty table to display." /><figcaption aria-hidden="true"> Figure 3: Context menu press right click on an empty row or empty table to display.</figcaption></figure>
 
 Select the first option “Create a new job”. The “Create job” window will appear. From the “Workflow Type” section, select the “Macro Execution” option.
 
@@ -72,19 +72,19 @@ In the “Output data location” section leave the default option, “Job subdi
 
 Now, the filled-in form should look like Figure 4. If you are using Linux save the “HelloWorld” example script in your home directory (“\~/HelloWorld/user.ijm”) and use that path instead of “C:/Documents/HelloWorld”. When you are sure that the form is filled-in correctly press the “Create” button.
 
-<figure><img src="/images/pages/hpc-workflow-manager-create-job.png" title=" Figure 4: Example of a new Macro job configuration." width="300" alt=" Figure 4: Example of a new Macro job configuration." /><figcaption aria-hidden="true"> Figure 4: Example of a new Macro job configuration.</figcaption></figure>
+<figure><img src="/media/hpc-workflow-manager-create-job.png" title=" Figure 4: Example of a new Macro job configuration." width="300" alt=" Figure 4: Example of a new Macro job configuration." /><figcaption aria-hidden="true"> Figure 4: Example of a new Macro job configuration.</figcaption></figure>
 
 ### How to upload the data and the Macro script
 
 If you have created a new job, the main window should look roughly like Figure 5.
 
-<figure><img src="/images/pages/hpc-workflow-manager-created-job.png" title=" Figure 5: A new Macro job has been created." width="300" alt=" Figure 5: A new Macro job has been created." /><figcaption aria-hidden="true"> Figure 5: A new Macro job has been created.</figcaption></figure>
+<figure><img src="/media/hpc-workflow-manager-created-job.png" title=" Figure 5: A new Macro job has been created." width="300" alt=" Figure 5: A new Macro job has been created." /><figcaption aria-hidden="true"> Figure 5: A new Macro job has been created.</figcaption></figure>
 
 Before you can start the job, you need to upload your script (“user.ijm”). To do this you must select the “Upload data” item from the context menu. If your script also needs data, they should also be located in the same directory that the user's script is in. The data will be uploaded along with the Macro script file.
 
 A timer will appear in the download column. When it has completed uploading the data and user's script the cell that corresponds to the job should indicate that it is “Done” (Figure 6).
 
-<figure><img src="/images/pages/hpc-workflow-manager-upload-job.png" title=" Figure 6: Uploading files (in this case just the user’s script) is done." width="300" alt=" Figure 6: Uploading files (in this case just the user’s script) is done." /><figcaption aria-hidden="true"> Figure 6: Uploading files (in this case just the user’s script) is done.</figcaption></figure>
+<figure><img src="/media/hpc-workflow-manager-upload-job.png" title=" Figure 6: Uploading files (in this case just the user’s script) is done." width="300" alt=" Figure 6: Uploading files (in this case just the user’s script) is done." /><figcaption aria-hidden="true"> Figure 6: Uploading files (in this case just the user’s script) is done.</figcaption></figure>
 
 Now that the script file is uploaded the job can be started.
 
@@ -125,7 +125,7 @@ There are two ways to inspect the progress of a job.
 
 The first one is by looking at the “Status” of a job. This way you can see whether a job is running on the HPC Cluster or not. In the case of Figure 7, the job is “Queued”.
 
-<figure><img src="/images/pages/hpc-workflow-manager-queued-job.png" title=" Figure 7: Job is queued." width="300" alt=" Figure 7: Job is queued." /><figcaption aria-hidden="true"> Figure 7: Job is queued.</figcaption></figure>
+<figure><img src="/media/hpc-workflow-manager-queued-job.png" title=" Figure 7: Job is queued." width="300" alt=" Figure 7: Job is queued." /><figcaption aria-hidden="true"> Figure 7: Job is queued.</figcaption></figure>
 
 However, this is a very coarse-grained way to see the progress of the job and when it starts running it does not provide any useful information until it has ended (“Finished”, “Failed” etc.).
 
@@ -139,7 +139,7 @@ You can see a snapshot of the progress of the tasks of the running job of the ex
 
 Each line represents a different task, each column represents a different compute-node where the task is executed on, with the exception of the first column that provides task descriptions. Cells that do not have a progress indicator represent nodes that either will not execute the task at all or they have not started executing the task yet. In the second case, a progress indicator will appear when the progress is updated to zero percent (0%) or more.
 
-<figure><img src="/images/pages/hpc-workflow-manager-progress-running.png" title=" Figure 8: The job is running and the progress indicators display the progress for each task on each compute-node." width="300" alt=" Figure 8: The job is running and the progress indicators display the progress for each task on each compute-node." /><figcaption aria-hidden="true"> Figure 8: The job is running and the progress indicators display the progress for each task on each compute-node.</figcaption></figure>
+<figure><img src="/media/hpc-workflow-manager-progress-running.png" title=" Figure 8: The job is running and the progress indicators display the progress for each task on each compute-node." width="300" alt=" Figure 8: The job is running and the progress indicators display the progress for each task on each compute-node." /><figcaption aria-hidden="true"> Figure 8: The job is running and the progress indicators display the progress for each task on each compute-node.</figcaption></figure>
 
 ### Job dashboard
 
@@ -386,9 +386,9 @@ This can cause great difficulty, this is why it is suggested to always store the
       print("Bye, from node number: "+myRank);
     parFinalize();
 
-<figure><img src="/images/pages/hpc-workflow-manager-progress-no-task.png" title=" Figure 9: The job has finished and all the progress indicators are present. Note that the task &quot;Get the cake&quot; has a progress indicator only on node one (1) as expected. This is because this task was added in an if statement checking that the rank is one." width="300" alt=" Figure 9: The job has finished and all the progress indicators are present. Note that the task &quot;Get the cake&quot; has a progress indicator only on node one (1) as expected. This is because this task was added in an if statement checking that the rank is one." /><figcaption aria-hidden="true"> Figure 9: The job has finished and all the progress indicators are present. Note that the task "Get the cake" has a progress indicator only on node one (1) as expected. This is because this task was added in an <code>if</code> statement checking that the rank is one.</figcaption></figure>
+<figure><img src="/media/hpc-workflow-manager-progress-no-task.png" title=" Figure 9: The job has finished and all the progress indicators are present. Note that the task &quot;Get the cake&quot; has a progress indicator only on node one (1) as expected. This is because this task was added in an if statement checking that the rank is one." width="300" alt=" Figure 9: The job has finished and all the progress indicators are present. Note that the task &quot;Get the cake&quot; has a progress indicator only on node one (1) as expected. This is because this task was added in an if statement checking that the rank is one." /><figcaption aria-hidden="true"> Figure 9: The job has finished and all the progress indicators are present. Note that the task "Get the cake" has a progress indicator only on node one (1) as expected. This is because this task was added in an <code>if</code> statement checking that the rank is one.</figcaption></figure>
 
-<figure><img src="/images/pages/hpc-workflow-manager-side-by-side-example.png" title=" Figure 10: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of if statements. Notice that all calls of parAddTask() are before parReportTasks()." width="800" alt=" Figure 10: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of if statements. Notice that all calls of parAddTask() are before parReportTasks()." /><figcaption aria-hidden="true"> Figure 10: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of <code>if</code> statements. Notice that all calls of <code>parAddTask()</code> are before <code>parReportTasks()</code>.</figcaption></figure>
+<figure><img src="/media/hpc-workflow-manager-side-by-side-example.png" title=" Figure 10: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of if statements. Notice that all calls of parAddTask() are before parReportTasks()." width="800" alt=" Figure 10: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of if statements. Notice that all calls of parAddTask() are before parReportTasks()." /><figcaption aria-hidden="true"> Figure 10: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of <code>if</code> statements. Notice that all calls of <code>parAddTask()</code> are before <code>parReportTasks()</code>.</figcaption></figure>
 
 ### Available functions (list)
 
@@ -420,7 +420,7 @@ Progress log functions
 
 If you need help remembering the functions and what they do you may use autocompletion to get help. Just type "par" and a list of options will appear. There is a link to this page in the autocomplete help. An example is provided in figure 10.
 
-<figure><img src="/images/pages/hpc-workflow-manager-autocomplete.png" title=" Figure 11: Function autocompletion example." width="300" alt=" Figure 11: Function autocompletion example." /><figcaption aria-hidden="true"> Figure 11: Function autocompletion example.</figcaption></figure>
+<figure><img src="/media/hpc-workflow-manager-autocomplete.png" title=" Figure 11: Function autocompletion example." width="300" alt=" Figure 11: Function autocompletion example." /><figcaption aria-hidden="true"> Figure 11: Function autocompletion example.</figcaption></figure>
 
 Installation
 ------------

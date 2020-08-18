@@ -14,7 +14,7 @@ Install and configure command line tools
 
 <div style="overflow: hidden">
 
-<tabs> <tab name="Windows"> ![ x32px](/images/pages/Win.png "fig: x32px") **Windows**
+<tabs> <tab name="Windows"> ![ x32px](/media/Win.png "fig: x32px") **Windows**
 
 Install [Git](Git), [Maven](Maven), and Java SE using [Chocolatey](https://chocolatey.org/):
 
@@ -24,13 +24,13 @@ We also heartily recommend installing [Cygwin](https://www.cygwin.com/):
 
     choco install -y cyg-get
 
-</tab> <tab name="OS X"> ![ x32px](/images/pages/Osx.png "fig: x32px") **OS X**
+</tab> <tab name="OS X"> ![ x32px](/media/Osx.png "fig: x32px") **OS X**
 
 Install [Git](Git) and [Maven](Maven) using [Homebrew](http://brew.sh/):
 
     brew install git maven bash-completion
 
-Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/) from Oracle. </tab> <tab name="Linux"> ![ x32px](/images/pages/Tux.png "fig: x32px") **Linux**
+Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/) from Oracle. </tab> <tab name="Linux"> ![ x32px](/media/Tux.png "fig: x32px") **Linux**
 
     sudo apt-get install default-jdk git maven
 
