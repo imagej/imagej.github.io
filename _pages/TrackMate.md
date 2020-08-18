@@ -99,7 +99,7 @@ Documentation and tutorials
 
 The [TrackMate paper](http://www.sciencedirect.com/science/article/pii/S1046202316303346) contains a polished, pdf version of the documentation below. But we host it here:
 
-![](/media/TrackMate-manual.pdf "fig:TrackMate-manual.pdf") 14 MB
+[TrackMate-manual.pdf](/media/TrackMate-manual.pdf) 14 MB
 
 -   TrackMate version history: Please look at the gihub page for TrackMate releases:
 

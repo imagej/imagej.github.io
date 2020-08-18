@@ -96,12 +96,12 @@ A list of tutorials :
 -   How to use the **analyzeParticles** module for segmentation and measurement [here](https://imagejdocu.list.lu/plugin/utilities/tapas_tutorial/2d_measurements_with_analyze_particles/start).
 -   How to quantify **layers distribution** [here](https://imagejdocu.list.lu/plugin/utilities/layers_analysis/start).
 
-The list of available modules is described in ![](/media/Tapas description0.6.3.pdf "fig:Tapas_description0.6.3.pdf").
+The list of available modules is described in [Tapas description0.6.3.pdf](/media/Tapas description0.6.3.pdf).
 
 Citation
 --------
 
-2018 Whitehead, L., Wimmer, V., Lafouresse, F., Ratnayake, D., Currie, P., Groom, J., Rogers, K. and Boudier, T. Towards an Automated Processing and Analysis System for multi-dimensional light-sheet microscopy big data using ImageJ and OMERO. International Microscopy Congress IMC 19. (![](/media/Abstract 1848 thomasboudier.pdf "fig:Abstract_1848_thomasboudier.pdf"))
+2018 Whitehead, L., Wimmer, V., Lafouresse, F., Ratnayake, D., Currie, P., Groom, J., Rogers, K. and Boudier, T. Towards an Automated Processing and Analysis System for multi-dimensional light-sheet microscopy big data using ImageJ and OMERO. International Microscopy Congress IMC 19. ([Abstract 1848 thomasboudier.pdf](/media/Abstract 1848 thomasboudier.pdf))
 
 License
 -------

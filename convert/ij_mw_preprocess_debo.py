@@ -658,6 +658,9 @@ def fix_link_match(match):
 
 
 def fix_md_image(match):
+    if ".pdf" in match.group(0):
+        media_name = fix_image_name(match.group(2)).rstrip()
+        return "[" + media_name + "](/media/" + media_name + ")"
     return match.group(1) + "/media/" + fix_image_name(match.group(2)) + match.group(3)
 
 

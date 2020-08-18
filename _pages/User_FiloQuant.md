@@ -13,7 +13,7 @@ FiloQuant was created by Guillaume Jacquemet and Alexandre Carisey. This program
 
 FiloQuant user guide can be accessed bellow:
 
-**![](/media/FiloQuant Manual V1.pdf "fig:FiloQuant_Manual_V1.pdf")**
+**[FiloQuant Manual V1.pdf](/media/FiloQuant Manual V1.pdf)**
 
 More info can be found in our paper:
 
