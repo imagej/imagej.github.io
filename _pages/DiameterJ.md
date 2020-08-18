@@ -21,7 +21,7 @@ description: test description
 
 ------------------------------------------------------------------------
 
-<img src="/media/02b_Hotaling_Visual_Abstract.png" title="fig:Overview of DiameterJ analysis flow - (Top) SEM image --&gt; segmented image --&gt; stylized Euclidean distance transform. (Bottom) A few of the graphs capable of being produced from data given by DiameterJ" width="500" alt="Overview of DiameterJ analysis flow - (Top) SEM image --&gt; segmented image --&gt; stylized Euclidean distance transform. (Bottom) A few of the graphs capable of being produced from data given by DiameterJ" /> DiameterJ[3] is a two step process of image analysis:
+<img src="/media/02b Hotaling Visual Abstract.png" title="fig:Overview of DiameterJ analysis flow - (Top) SEM image --&gt; segmented image --&gt; stylized Euclidean distance transform. (Bottom) A few of the graphs capable of being produced from data given by DiameterJ" width="500" alt="Overview of DiameterJ analysis flow - (Top) SEM image --&gt; segmented image --&gt; stylized Euclidean distance transform. (Bottom) A few of the graphs capable of being produced from data given by DiameterJ" /> DiameterJ[3] is a two step process of image analysis:
 
 1.  Image Segmentation into a binary image (black and white pixels only)
     -   Sixteen default segmentation algorithms have been included with DiameterJ in the "Segment SRM" and "Segment Mixed" plugins. However, these algorithms may not work for all SEM images.
@@ -56,7 +56,7 @@ For Fiji latest release: [DiameterJ v. 1.018 for Fiji](https://imagej.net/_image
 
 ------------------------------------------------------------------------
 
-<img src="/media/Figure_1.png" title="fig:Diagram of DiameterJ code" width="400" alt="Diagram of DiameterJ code" /> The overall goal of the DiameterJ[4] algorithm was to be able to analyze an 8-bit SEM image of any resolution using a desktop computer in less than 60 seconds. For a block diagram and overview of how the DiameterJ algorithm analyzes fiber diameter and other scaffold properties see below.
+<img src="/media/Figure 1.png" title="fig:Diagram of DiameterJ code" width="400" alt="Diagram of DiameterJ code" /> The overall goal of the DiameterJ[4] algorithm was to be able to analyze an 8-bit SEM image of any resolution using a desktop computer in less than 60 seconds. For a block diagram and overview of how the DiameterJ algorithm analyzes fiber diameter and other scaffold properties see below.
 
 #### Segmentation
 
@@ -208,7 +208,7 @@ FAQs
 
 :\# Q: None of the images I am analyzing are segmenting well with your algorithms, why not?
 
-:\#:\* A: ''The algorithms included by default with DiameterJ rely heavily on uniformity of fiber color and/or a dark background. Below are four good examples and four examples that work poorly for image segmentation with the default algorithms. Keep in mind there are many more segmentation algorithms than I have included with DiameterJ in both Fiji and ImageJ. See the [Complementary Tools](DiameterJ#Complementary_Tools) or [Image Segmentation](DiameterJ#Image_Segmentation) sections of this work for a few of the options available.<img src="/media/Good_vs_Bad_Seg.PNG" title="fig:Example images that segment well and that do not segment well with DiameterJ&#39;s default segmentation algorithms" width="750" alt="Example images that segment well and that do not segment well with DiameterJ&#39;s default segmentation algorithms" />
+:\#:\* A: ''The algorithms included by default with DiameterJ rely heavily on uniformity of fiber color and/or a dark background. Below are four good examples and four examples that work poorly for image segmentation with the default algorithms. Keep in mind there are many more segmentation algorithms than I have included with DiameterJ in both Fiji and ImageJ. See the [Complementary Tools](DiameterJ#Complementary_Tools) or [Image Segmentation](DiameterJ#Image_Segmentation) sections of this work for a few of the options available.<img src="/media/Good vs Bad Seg.PNG" title="fig:Example images that segment well and that do not segment well with DiameterJ&#39;s default segmentation algorithms" width="750" alt="Example images that segment well and that do not segment well with DiameterJ&#39;s default segmentation algorithms" />
 
 Complementary Tools
 -------------------

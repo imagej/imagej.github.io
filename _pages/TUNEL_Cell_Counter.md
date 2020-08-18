@@ -69,7 +69,7 @@ Download & Install
 TUNEL Cell Counter
 ------------------
 
-<img src="/media/Stack_-_Macro.gif" title="fig:Representative animation of Macro Mode. Processing time is ~5 seconds/image." width="250" alt="Representative animation of Macro Mode. Processing time is ~5 seconds/image." /> <img src="/media/Stack_-_Batch.gif" title="fig:Representative animation of Batch Mode. Processing time is ~2.7 seconds/image." width="250" alt="Representative animation of Batch Mode. Processing time is ~2.7 seconds/image." />
+<img src="/media/Stack - Macro.gif" title="fig:Representative animation of Macro Mode. Processing time is ~5 seconds/image." width="250" alt="Representative animation of Macro Mode. Processing time is ~5 seconds/image." /> <img src="/media/Stack - Batch.gif" title="fig:Representative animation of Batch Mode. Processing time is ~2.7 seconds/image." width="250" alt="Representative animation of Batch Mode. Processing time is ~2.7 seconds/image." />
 
 ### Segmentation
 

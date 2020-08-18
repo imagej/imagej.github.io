@@ -16,7 +16,7 @@ Usage
 
 The Brightness and Contrast tool may be accessed through {% include bc content='Image | Adjust | Brightness/Contrast'%} or {% include key content='Ctrl\|Shift\|C' %}.
 
-<figure><img src="/media/Brightness_Contrast_Window.png" title="Brightness_Contrast_Window.png" width="266" height="177" alt="Brightness_Contrast_Window.png" /><figcaption aria-hidden="true">Brightness_Contrast_Window.png</figcaption></figure>
+<figure><img src="/media/Brightness Contrast Window.png" title="Brightness_Contrast_Window.png" width="266" height="177" alt="Brightness_Contrast_Window.png" /><figcaption aria-hidden="true">Brightness_Contrast_Window.png</figcaption></figure>
 
 The upper and lower limits of the display range can be adjusted by modifying the minimum and maximum settings. Image brightness and image contrast can be modified by using the brightness and contrast sliders or by using the arrows on the right of the window to adjust the range.
 
@@ -31,10 +31,10 @@ The below images show the effects of adjusting brightness and contrast settings.
 
 **Before**
 
-<figure><img src="/media/Brightness_Contrast_Before.png" title="Brightness_Contrast_Before.png" width="350" height="404" alt="Brightness_Contrast_Before.png" /><figcaption aria-hidden="true">Brightness_Contrast_Before.png</figcaption></figure>
+<figure><img src="/media/Brightness Contrast Before.png" title="Brightness_Contrast_Before.png" width="350" height="404" alt="Brightness_Contrast_Before.png" /><figcaption aria-hidden="true">Brightness_Contrast_Before.png</figcaption></figure>
 
 **After**
 
-<figure><img src="/media/Brightness_Contrast_After.png" title="Brightness_Contrast_After.png" width="350" height="404" alt="Brightness_Contrast_After.png" /><figcaption aria-hidden="true">Brightness_Contrast_After.png</figcaption></figure>
+<figure><img src="/media/Brightness Contrast After.png" title="Brightness_Contrast_After.png" width="350" height="404" alt="Brightness_Contrast_After.png" /><figcaption aria-hidden="true">Brightness_Contrast_After.png</figcaption></figure>
 
 

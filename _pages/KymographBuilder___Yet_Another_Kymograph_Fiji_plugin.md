@@ -40,7 +40,7 @@ How to use :
 -   Launch KymographBuilder : {% include bc content='Plugins|Kymograph|KymographBuilder'%}
 -   You're done.
 
-<figure><img src="/media/Kymograph_Construction.png" width="600" /></figure>
+<figure><img src="/media/Kymograph Construction.png" width="600" /></figure>
 
 Scripting
 ---------

@@ -165,7 +165,7 @@ Other options are also available in the *gear* drop-down menu:
 -   **Flush Cached Data** Removes cached data from memory
 -   **Show Cached "Tubeness Image"** Displays the *Tubeness* data currently cached. Useful for debugging purposes. Also mirrored in {% include bc content='View | Show Cached/Loaded Hessian (Tubeness) Image'%}.
 
-<figure><img src="/media/original-hessian-side-by-side.png" title="OP_1 &quot;Tubeness&quot; image overlay at 80% opacity" width="400" alt="OP_1 &quot;Tubeness&quot; image overlay at 80% opacity" /><figcaption aria-hidden="true">OP_1 "Tubeness" image overlay at 80% opacity</figcaption></figure>
+<figure><img src="/media/Original-hessian-side-by-side.png" title="OP_1 &quot;Tubeness&quot; image overlay at 80% opacity" width="400" alt="OP_1 &quot;Tubeness&quot; image overlay at 80% opacity" /><figcaption aria-hidden="true">OP_1 "Tubeness" image overlay at 80% opacity</figcaption></figure>
 
 ### Tracing on Secondary Image
 

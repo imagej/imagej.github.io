@@ -42,7 +42,7 @@ We made a Java-based open source implementation jSLIC - the superpixel clusterin
 
 ### How to use the plugin
 
-<img src="/media/Fiji_jSLIC_gui.jpg" title="fig:jSLIC interface" width="250" alt="jSLIC interface" /> As you can see the Interface to the plugin contains a parameters for superpixel configuration and also its final visualisation.
+<img src="/media/Fiji jSLIC gui.jpg" title="fig:jSLIC interface" width="250" alt="jSLIC interface" /> As you can see the Interface to the plugin contains a parameters for superpixel configuration and also its final visualisation.
 
 #### Parameters
 

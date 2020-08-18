@@ -23,7 +23,7 @@ Some microscope models (e.g., Biorad PIC, and Zeiss LSM confocal image files) wi
 
 In the case that the files have no calibration, you can apply the calibration using images of a stage micrometer with the same settings as your experiment. These settings include camera binning, frame size, objective, confocal zoom, etc. Then the calibration can be applied using "*Analyze/Set Scale*" (see below). Spatial calibration can also be found and set in the "*Image/Properties*" dialog. The "*Microscope Scale*" plugin is another alternative and can be customized using a drop-down box of objectives to apply spatial calibrations.
 
-<figure><img src="/media/set_scale_plugin.png" title="set_scale_plugin.png" width="179" height="200" alt="set_scale_plugin.png" /><figcaption aria-hidden="true">set_scale_plugin.png</figcaption></figure>
+<figure><img src="/media/Set scale plugin.png" title="set_scale_plugin.png" width="179" height="200" alt="set_scale_plugin.png" /><figcaption aria-hidden="true">set_scale_plugin.png</figcaption></figure>
 
 Sometimes the spatial calibration may be lost after applying an image processing function. In this case, use the original file's spatial calibration (located under "*Image/Properties*") to update the "*Image/Properties*" values of the final, processed image.
 
@@ -38,7 +38,7 @@ There are three ways to reapply spatial calibration: manually via the “*Image/
 3.  In the “*from*" drop-down box select the original image; in the “*to*" box, select the processed image. Click OK.
 4.  In the new dialog, enter a value by which the receiving image has been scaled.
 
-<figure><img src="/media/copy_pixel_size_values.png" title="copy_pixel_size_values.png" width="180" height="240" alt="copy_pixel_size_values.png" /><figcaption aria-hidden="true">copy_pixel_size_values.png</figcaption></figure>
+<figure><img src="/media/Copy pixel size values.png" title="copy_pixel_size_values.png" width="180" height="240" alt="copy_pixel_size_values.png" /><figcaption aria-hidden="true">copy_pixel_size_values.png</figcaption></figure>
 
 #### Set Scale
 
@@ -102,7 +102,7 @@ Adding text to a stack is a slightly different process. You can draw a text box 
 
 Open the *Time Stamper2* plugin. From here, you can specify the location, interval, format, and other properties of the time stamp.
 
-<figure><img src="/media/time_stamper.png" title="time_stamper.png" width="166" height="237" alt="time_stamper.png" /><figcaption aria-hidden="true">time_stamper.png</figcaption></figure>
+<figure><img src="/media/Time stamper.png" title="time_stamper.png" width="166" height="237" alt="time_stamper.png" /><figcaption aria-hidden="true">time_stamper.png</figcaption></figure>
 
 Alternatively, you can also draw a rectangular ROI at the location and approximate size of the desired counter. The text will, by default, be the same height as the ROI and aligned to its left edge. Note that if the rectangle is drawn on the right side of the image, the text could be cut off on the right in the case that the size is too large.
 

@@ -105,19 +105,19 @@ Examples
 Gold 8 nm, Settings: Default
 ----------------------------
 
-<img src="/media/Gold_nooverlay.png" title="fig:Gold_nooverlay.png" width="300" alt="Gold_nooverlay.png" /> <img src="/media/Gold_overlay.png" title="fig:Gold_overlay.png" width="300" alt="Gold_overlay.png" /> <img src="/media/Hist_gold_normal.png" title="fig:Hist_gold_normal.png" width="300" alt="Hist_gold_normal.png" />
+<img src="/media/Gold nooverlay.png" title="fig:Gold_nooverlay.png" width="300" alt="Gold_nooverlay.png" /> <img src="/media/Gold overlay.png" title="fig:Gold_overlay.png" width="300" alt="Gold_overlay.png" /> <img src="/media/Hist gold normal.png" title="fig:Hist_gold_normal.png" width="300" alt="Hist_gold_normal.png" />
 
 Gold 8 nm, Settings: +Ellipse fitting mode
 ------------------------------------------
 
-<img src="/media/Gold_nooverlay.png" title="fig:Gold_nooverlay.png" width="300" alt="Gold_nooverlay.png" /> <img src="/media/Gold_overlay_ellipsefitting.png" title="fig:Gold_overlay_ellipsefitting.png" width="300" alt="Gold_overlay_ellipsefitting.png" /> <img src="/media/Gold_overlay_ellipsefitting_size.png" title="fig:Gold_overlay_ellipsefitting_size.png" width="300" alt="Gold_overlay_ellipsefitting_size.png" />
+<img src="/media/Gold nooverlay.png" title="fig:Gold_nooverlay.png" width="300" alt="Gold_nooverlay.png" /> <img src="/media/Gold overlay ellipsefitting.png" title="fig:Gold_overlay_ellipsefitting.png" width="300" alt="Gold_overlay_ellipsefitting.png" /> <img src="/media/Gold overlay ellipsefitting size.png" title="fig:Gold_overlay_ellipsefitting_size.png" width="300" alt="Gold_overlay_ellipsefitting_size.png" />
 
-== Gold 10 nm, Settings: +Min. OTB difference=30 == <img src="/media/10nm_gold_nooverlay.png" title="fig:10nm_gold_nooverlay.png" width="300" alt="10nm_gold_nooverlay.png" /> <img src="/media/10nm_gold_overlay.png" title="fig:10nm_gold_overlay.png" width="300" alt="10nm_gold_overlay.png" /> <img src="/media/10nm_gold_overlay_size.png" title="fig:10nm_gold_overlay_size.png" width="300" alt="10nm_gold_overlay_size.png" />
+== Gold 10 nm, Settings: +Min. OTB difference=30 == <img src="/media/10nm gold nooverlay.png" title="fig:10nm_gold_nooverlay.png" width="300" alt="10nm_gold_nooverlay.png" /> <img src="/media/10nm gold overlay.png" title="fig:10nm_gold_overlay.png" width="300" alt="10nm_gold_overlay.png" /> <img src="/media/10nm gold overlay size.png" title="fig:10nm_gold_overlay_size.png" width="300" alt="10nm_gold_overlay_size.png" />
 
 Kaolin, Settings: +Single particle mode
 ---------------------------------------
 
-<img src="/media/Kaolin_ohne_overlay.png" title="fig:Kaolin_ohne_overlay.png" width="300" alt="Kaolin_ohne_overlay.png" /> <img src="/media/Kaolin overlay.png" width="300"/> <img src="/media/Kaolin_size_distr.png" title="fig:Kaolin_size_distr.png" width="300" alt="Kaolin_size_distr.png" />
+<img src="/media/Kaolin ohne overlay.png" title="fig:Kaolin_ohne_overlay.png" width="300" alt="Kaolin_ohne_overlay.png" /> <img src="/media/Kaolin overlay.png" width="300"/> <img src="/media/Kaolin size distr.png" title="fig:Kaolin_size_distr.png" width="300" alt="Kaolin_size_distr.png" />
 
 How to cite
 ===========

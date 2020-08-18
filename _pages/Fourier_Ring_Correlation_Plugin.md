@@ -69,7 +69,7 @@ Use
 Direct Use
 ----------
 
-<figure><img src="/media/frc-dialog-std.png" title="Plugin Dialog choices Standard Use" width="500" alt="Plugin Dialog choices Standard Use" /><figcaption aria-hidden="true">Plugin Dialog choices Standard Use</figcaption></figure>
+<figure><img src="/media/Frc-dialog-std.png" title="Plugin Dialog choices Standard Use" width="500" alt="Plugin Dialog choices Standard Use" /><figcaption aria-hidden="true">Plugin Dialog choices Standard Use</figcaption></figure>
 
 Call up the plugin using *Plugins-&gt;BIOP-&gt;Image Analysis-&gt;FRC-&gt;FRC Calculation...*.
 

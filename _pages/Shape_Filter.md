@@ -20,7 +20,7 @@ description: test description
 General Description
 ===================
 
-The ImageJ Shape Filter Plugin use the [\[ij-blob](https://github.com/thorstenwagner/ij-blob)\] library to characterize and filter objects in binary scenes by its shape. Therefore, several features are calculated as shown below. <img src="/media/Shape_Filter_GUI.png" title="fig:Shape_Filter_GUI.png" width="200" alt="Shape_Filter_GUI.png" />
+The ImageJ Shape Filter Plugin use the [\[ij-blob](https://github.com/thorstenwagner/ij-blob)\] library to characterize and filter objects in binary scenes by its shape. Therefore, several features are calculated as shown below. <img src="/media/Shape Filter GUI.png" title="fig:Shape_Filter_GUI.png" width="200" alt="Shape_Filter_GUI.png" />
 
 If you like to cite the Shape Filter plugin in a scientific publication, please cite:
 

@@ -85,7 +85,7 @@ The overlay capture abides to the display settings you set in the **Display Sett
 
 *The particle traces resemble jagged line rather than a smooth curve of the path. I'm measuring the average speed of the particles and it's crucial the software calculates the distance traveled accurately.*
 
-<figure><img src="/media/TrackMate_JaggedLines.png" title="TrackMate_JaggedLines.png" width="600" alt="TrackMate_JaggedLines.png" /><figcaption aria-hidden="true">TrackMate_JaggedLines.png</figcaption></figure>
+<figure><img src="/media/TrackMate JaggedLines.png" title="TrackMate_JaggedLines.png" width="600" alt="TrackMate_JaggedLines.png" /><figcaption aria-hidden="true">TrackMate_JaggedLines.png</figcaption></figure>
 
 Make sure the `Do sub-pixel localization` is checked. It will mitigate this problem. Also make sure that you choose a blob diameter that actually matches the objects you tracking.
 

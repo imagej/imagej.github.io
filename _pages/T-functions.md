@@ -17,7 +17,7 @@ Often, during acquisition of a time-course, the fluorophore may bleach and the i
 
 **Corrected intensity = (Intensity at time *t*) *÷* exp<sup>-k×*t*</sup>** where k = decay constant
 
-<figure><img src="/media/bleach_correction_window.png" title="bleach_correction_window.png" width="257" height="112" alt="bleach_correction_window.png" /><figcaption aria-hidden="true">bleach_correction_window.png</figcaption></figure>
+<figure><img src="/media/Bleach correction window.png" title="bleach_correction_window.png" width="257" height="112" alt="bleach_correction_window.png" /><figcaption aria-hidden="true">bleach_correction_window.png</figcaption></figure>
 
 If you know the decay constant *k*, you can use the plugin "*Image/Adjust/Bleach Correction*" with the exponential fitting method. It may be worth performing a background subtraction prior to running the plugin. Note that the plugin is expecting the k value to be "per-slice" rather than per-second, per-minute, etc.
 
@@ -98,7 +98,7 @@ Surface plots can be generated in many ways: notably via the menu command “*An
 
 When this function is selected, a dialog will appear. Try the settings below first and play with them to optimize the surface plot. The LUT of the final surface plot is taken from the LUT of the image.
 
-<figure><img src="/media/analyze_surface.png" title="analyze_surface.png" width="212" height="243" alt="analyze_surface.png" /><figcaption aria-hidden="true">analyze_surface.png</figcaption></figure>
+<figure><img src="/media/Analyze surface.png" title="analyze_surface.png" width="212" height="243" alt="analyze_surface.png" /><figcaption aria-hidden="true">analyze_surface.png</figcaption></figure>
 
 ### SurfaceJ settings
 

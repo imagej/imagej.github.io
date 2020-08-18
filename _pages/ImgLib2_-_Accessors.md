@@ -21,7 +21,7 @@ In ImgLib2, images are manipulated using *Accessors*. For pixel images, you can 
 
 The accessors provided by ImgLib2 typically implement **Cursor** or **RandomAccess**. **Cursor** and **RandomAccess** are aggregations of interfaces covering the above three points. A simplified UML diagram for the interface hierarchy is shown below. (The simplification is with respect to real-coordinate interfaces for continuous images that are left out for now.)
 
-<figure><img src="/media/imglib2-accessors-simplified-integer.png" title="Simplified UML for ImgLib2 accessor interfaces" width="775" alt="Simplified UML for ImgLib2 accessor interfaces" /><figcaption aria-hidden="true">Simplified UML for ImgLib2 accessor interfaces</figcaption></figure>
+<figure><img src="/media/Imglib2-accessors-simplified-integer.png" title="Simplified UML for ImgLib2 accessor interfaces" width="775" alt="Simplified UML for ImgLib2 accessor interfaces" /><figcaption aria-hidden="true">Simplified UML for ImgLib2 accessor interfaces</figcaption></figure>
 
 ImgLib2 supports two basic access patterns:
 
@@ -583,14 +583,14 @@ Finally, we get a reference to the current pixel, and set it to the value comput
 
 **cursor.get()** gives the **UnsignedByteType** reference to the value under the cursor. **mb.get()** gives the **UnsignedByteType** reference to the value computed by the **MandelbrotRealRandomAccess**. Then we **set()** the value of the former to the value of the latter.
 
-When you run the code you will see this: <img src="/media/mandelbrot-1.png" title="fig:Mandelbrot fractal" width="300" alt="Mandelbrot fractal" />
+When you run the code you will see this: <img src="/media/Mandelbrot-1.png" title="fig:Mandelbrot fractal" width="300" alt="Mandelbrot fractal" />
 
 Because we have a **RealRandomAccess** you can zoom in indefinitely (until you hit the **double** precision limit). If you like, you can play around with the scale and offset values. Here is another example obtained with
 
     final double scale = 0.000125;
     final double[] offset = new double[] { -1.3875, 0.045 };
 
-<figure><img src="/media/mandelbrot-2.png" title="Mandelbrot fractal" width="300" alt="Mandelbrot fractal" /><figcaption aria-hidden="true">Mandelbrot fractal</figcaption></figure>
+<figure><img src="/media/Mandelbrot-2.png" title="Mandelbrot fractal" width="300" alt="Mandelbrot fractal" /><figcaption aria-hidden="true">Mandelbrot fractal</figcaption></figure>
 
 ### Notes
 

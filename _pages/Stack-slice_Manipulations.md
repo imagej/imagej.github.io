@@ -91,11 +91,11 @@ To use this plugin, select an ROI which will become the final frame, but do not 
 
 Image with selected ROI
 
-<figure><img src="/media/zoomify_start.png" title="zoomify_start.png" width="359" height="270" alt="zoomify_start.png" /><figcaption aria-hidden="true">zoomify_start.png</figcaption></figure>
+<figure><img src="/media/Zoomify start.png" title="zoomify_start.png" width="359" height="270" alt="zoomify_start.png" /><figcaption aria-hidden="true">zoomify_start.png</figcaption></figure>
 
 Series generated with zoomify
 
-<figure><img src="/media/zoomify_montage.png" title="zoomify_montage.png" width="533" height="111" alt="zoomify_montage.png" /><figcaption aria-hidden="true">zoomify_montage.png</figcaption></figure>
+<figure><img src="/media/Zoomify montage.png" title="zoomify_montage.png" width="533" height="111" alt="zoomify_montage.png" /><figcaption aria-hidden="true">zoomify_montage.png</figcaption></figure>
 
 Align slices in stack
 ---------------------

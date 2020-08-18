@@ -47,7 +47,7 @@ See other [manually segmented serial section TEM data sets.](http://www.incf.org
 
 <!-- -->
 
--   [Sample OME-TIFF data on openmicroscopy.org](http://www.openmicroscopy.org/site/support/file-formats/ome-tiff/ome-tiff-data), thanks to Josh Bembenek.<img src="/media/tubhiswt4D.png" title="fig:C. elegans embryo coexpressing tubulin histone GFP" width="140" alt="C. elegans embryo coexpressing tubulin histone GFP" />
+-   [Sample OME-TIFF data on openmicroscopy.org](http://www.openmicroscopy.org/site/support/file-formats/ome-tiff/ome-tiff-data), thanks to Josh Bembenek.<img src="/media/Tubhiswt4D.png" title="fig:C. elegans embryo coexpressing tubulin histone GFP" width="140" alt="C. elegans embryo coexpressing tubulin histone GFP" />
 
   
 The dataset consists of tubulin histone GFP coexpressing *C. elegans* embryos. All image planes were collected at 512x512 resolution in 8-bit grayscale.

@@ -27,7 +27,7 @@ Presentation
 
 The first 2 hours of a *C.elegans* embryo development, followed in 3D over time using TrackMate (strain: [AZ212](http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain))
 
-<figure><img src="/media/TrackMate_Celegans_lineage_detail.png" title="TrackMate_Celegans_lineage_detail.png" width="500" alt="TrackMate_Celegans_lineage_detail.png" /><figcaption aria-hidden="true">TrackMate_Celegans_lineage_detail.png</figcaption></figure>
+<figure><img src="/media/TrackMate Celegans lineage detail.png" title="TrackMate_Celegans_lineage_detail.png" width="500" alt="TrackMate_Celegans_lineage_detail.png" /><figcaption aria-hidden="true">TrackMate_Celegans_lineage_detail.png</figcaption></figure>
 
 A detail of the corresponding unannotated lineage visualized in TrackScheme. The full lineage of this one hour of imaging is [there](_Image_TrackMate_Celegans_lineage.pdf).
 

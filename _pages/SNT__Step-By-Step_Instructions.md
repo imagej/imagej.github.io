@@ -179,12 +179,12 @@ To get the spatial calibration for your image, go to {% include bc content='Imag
 
 <div align="center">
 
--   <img src="/media/filtered-image-load.png" title="fig:Step 1" width="300" alt="Step 1" />
--   <img src="/media/filtered-image-toggle.png" title="fig:Step 2" width="300" alt="Step 2" />
+-   <img src="/media/Filtered-image-load.png" title="fig:Step 1" width="300" alt="Step 1" />
+-   <img src="/media/Filtered-image-toggle.png" title="fig:Step 2" width="300" alt="Step 2" />
 
 </div>
 
-To display the image in a separate window, from the SNT dialog use {% include bc content='Show Cached Image'%} from the *gear* menu or {% include bc content='View | Show Cached ""Secondary Image""'%}. <img src="/media/display-filtered-image.png" title="fig:Secondary Image MIP" width="400" alt="Secondary Image MIP" />
+To display the image in a separate window, from the SNT dialog use {% include bc content='Show Cached Image'%} from the *gear* menu or {% include bc content='View | Show Cached ""Secondary Image""'%}. <img src="/media/Display-filtered-image.png" title="fig:Secondary Image MIP" width="400" alt="Secondary Image MIP" />
 
 #### Multiple Images
 

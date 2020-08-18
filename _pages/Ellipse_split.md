@@ -42,7 +42,7 @@ Examples
 
 Suppose you have the following input image:
 
-<figure><img src="/media/Ellipsesplit_input.png" title="Ellipsesplit_input.png" width="300" alt="Ellipsesplit_input.png" /><figcaption aria-hidden="true">Ellipsesplit_input.png</figcaption></figure>
+<figure><img src="/media/Ellipsesplit input.png" title="Ellipsesplit_input.png" width="300" alt="Ellipsesplit_input.png" /><figcaption aria-hidden="true">Ellipsesplit_input.png</figcaption></figure>
 
 Then the watershed approach (*Process -&gt; Binary -&gt; Watershed*) would give this result:
 

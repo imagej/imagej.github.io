@@ -63,7 +63,7 @@ Startup Options
 Validation of selected Regions Of Interest
 ------------------------------------------
 
-<img src="/media/FAST_ROI-check.png" title="fig:User validation of defined ROI" width="200" alt="User validation of defined ROI" /> After completion of Step 1 of image processing, images and their corresponding ROIs need to be validated by the user.
+<img src="/media/FAST ROI-check.png" title="fig:User validation of defined ROI" width="200" alt="User validation of defined ROI" /> After completion of Step 1 of image processing, images and their corresponding ROIs need to be validated by the user.
 
 Each image and the corresponding ROI are opened automatically. An options dialog box is displayed.
 
@@ -73,9 +73,9 @@ Each image and the corresponding ROI are opened automatically. An options dialog
 
 Just select the radio button option needed then click {% include key content='press\|OK' %} or {% include key content='press\|⏎ENTER' %} to continue.
 
-<img src="/media/FAST_ROI-edition.png" title="fig:Dialog box to redefine area" width="200" alt="Dialog box to redefine area" /> If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
+<img src="/media/FAST ROI-edition.png" title="fig:Dialog box to redefine area" width="200" alt="Dialog box to redefine area" /> If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
 
-<figure><img src="/media/FAST_Thr-ROI.png" title="Example of thresholded image and corrected ROI" width="500" alt="Example of thresholded image and corrected ROI" /><figcaption aria-hidden="true">Example of thresholded image and corrected ROI</figcaption></figure>
+<figure><img src="/media/FAST Thr-ROI.png" title="Example of thresholded image and corrected ROI" width="500" alt="Example of thresholded image and corrected ROI" /><figcaption aria-hidden="true">Example of thresholded image and corrected ROI</figcaption></figure>
 
 Select the appropriate tool in ImageJ toolbar: ![](/media/Freehand.png "fig:Freehand.png") Freehand (default) OR ![](/media/Wand-tool.png "fig:Wand-tool.png") Wand tool.
 

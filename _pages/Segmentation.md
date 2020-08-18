@@ -55,7 +55,7 @@ Preprocess the image using filters, to make later thresholding more effective. W
 Adjusting Threshold
 -------------------
 
-<figure><img src="/media/_Threshold_tree.png" title="Tree ring sample image with a threshold applied for a B&amp;W image" width="300" alt="Tree ring sample image with a threshold applied for a B&amp;W image" /><figcaption aria-hidden="true">Tree ring sample image with a threshold applied for a B&amp;W image</figcaption></figure>
+<figure><img src="/media/ Threshold tree.png" title="Tree ring sample image with a threshold applied for a B&amp;W image" width="300" alt="Tree ring sample image with a threshold applied for a B&amp;W image" /><figcaption aria-hidden="true">Tree ring sample image with a threshold applied for a B&amp;W image</figcaption></figure>
 
 Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
 
@@ -68,7 +68,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 Creating Masks
 --------------
 
-<figure><img src="/media/Eroded_tree.png" title="Over-saturated mask is eroded around the center tree ring" width="300" alt="Over-saturated mask is eroded around the center tree ring" /><figcaption aria-hidden="true">Over-saturated mask is eroded around the center tree ring</figcaption></figure>
+<figure><img src="/media/Eroded tree.png" title="Over-saturated mask is eroded around the center tree ring" width="300" alt="Over-saturated mask is eroded around the center tree ring" /><figcaption aria-hidden="true">Over-saturated mask is eroded around the center tree ring</figcaption></figure>
 
 -   Select {% include bc content='Edit | Selection | Create Mask'%}
 -   Based on the image and set threshold, some portions of the image may be over/under saturated
@@ -80,7 +80,7 @@ Creating Masks
 Selections
 ----------
 
-<figure><img src="/media/_Selection_tree.png" title="Selections on the mask" width="300" alt="Selections on the mask" /><figcaption aria-hidden="true">Selections on the mask</figcaption></figure>
+<figure><img src="/media/ Selection tree.png" title="Selections on the mask" width="300" alt="Selections on the mask" /><figcaption aria-hidden="true">Selections on the mask</figcaption></figure>
 
 ### Creating Selections
 
@@ -88,7 +88,7 @@ Selections
 -   To deselect a portion of the image, select {% include key content='Shift' %}+{% include key content='click' %}
     -   [More information](https://imagej.net/docs/guide/146-27.html#sub:Create-Selection)
 
-<figure><img src="/media/_Reverted_tree.png" title="Selections on the reverted image" width="300" alt="Selections on the reverted image" /><figcaption aria-hidden="true">Selections on the reverted image</figcaption></figure>
+<figure><img src="/media/ Reverted tree.png" title="Selections on the reverted image" width="300" alt="Selections on the reverted image" /><figcaption aria-hidden="true">Selections on the reverted image</figcaption></figure>
 
 ### Transferring Selections
 

@@ -44,13 +44,13 @@ Installing
 
 ### 1. Start updater
 
-<figure><img src="/media/Step_1.jpg" title="Select &quot;Update...&quot; under &quot;Help&quot;." width="500" alt="Select &quot;Update...&quot; under &quot;Help&quot;." /><figcaption aria-hidden="true">Select "Update..." under "Help".</figcaption></figure>
+<figure><img src="/media/Step 1.jpg" title="Select &quot;Update...&quot; under &quot;Help&quot;." width="500" alt="Select &quot;Update...&quot; under &quot;Help&quot;." /><figcaption aria-hidden="true">Select "Update..." under "Help".</figcaption></figure>
 
 Select "Update..." under "Help".
 
 ### 2. Add update site
 
-<figure><img src="/media/Step_2.jpg" title="Select &quot;Manage update sites.&quot;" width="500" alt="Select &quot;Manage update sites.&quot;" /><figcaption aria-hidden="true">Select "Manage update sites."</figcaption></figure>
+<figure><img src="/media/Step 2.jpg" title="Select &quot;Manage update sites.&quot;" width="500" alt="Select &quot;Manage update sites.&quot;" /><figcaption aria-hidden="true">Select "Manage update sites."</figcaption></figure>
 
 Select "Manage update sites."
 

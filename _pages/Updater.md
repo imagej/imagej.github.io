@@ -58,7 +58,7 @@ In the advanced mode, you can see details about the files, choose to skip updati
 
 Note: in the advanced mode you can also upload plugins to your [update site](Update_Sites). The details for each component can be edited by writing below the respective entry. To save the changes, you have to upload the plugin to the server.
 
-<figure><img src="/media/Snapshot_of_the_Advanced_Mode_of_the_Updater.png" title="Snapshot_of_the_Advanced_Mode_of_the_Updater.png" width="750" alt="Snapshot_of_the_Advanced_Mode_of_the_Updater.png" /><figcaption aria-hidden="true">Snapshot_of_the_Advanced_Mode_of_the_Updater.png</figcaption></figure>
+<figure><img src="/media/Snapshot of the Advanced Mode of the Updater.png" title="Snapshot_of_the_Advanced_Mode_of_the_Updater.png" width="750" alt="Snapshot_of_the_Advanced_Mode_of_the_Updater.png" /><figcaption aria-hidden="true">Snapshot_of_the_Advanced_Mode_of_the_Updater.png</figcaption></figure>
 
 Starting the Updater manually
 -----------------------------

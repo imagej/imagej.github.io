@@ -14,7 +14,7 @@ Highlights
 
 -   It is possible to manually color spots and edges. The colors attributed are saved and retrieved from XML.
 
-<figure><img src="/media/TrackMate_ManualColoring.png" title="TrackMate_ManualColoring.png" width="400" alt="TrackMate_ManualColoring.png" /><figcaption aria-hidden="true">TrackMate_ManualColoring.png</figcaption></figure>
+<figure><img src="/media/TrackMate ManualColoring.png" title="TrackMate_ManualColoring.png" width="400" alt="TrackMate_ManualColoring.png" /><figcaption aria-hidden="true">TrackMate_ManualColoring.png</figcaption></figure>
 
 To use it, select a few cells in TrackScheme and right-click to make the contextual menu appear:
 

@@ -18,7 +18,7 @@ Purpose
 
 Gabriel Graph Implementation for ImageJ/Fiji See https://en.wikipedia.org/wiki/Gabriel_graph for implementation
 
-<figure><img src="/media/Gabriel_Graph_Dialog.png" title="Gabriel_Graph_Dialog.png" width="200" alt="Gabriel_Graph_Dialog.png" /><figcaption aria-hidden="true">Gabriel_Graph_Dialog.png</figcaption></figure>
+<figure><img src="/media/Gabriel Graph Dialog.png" title="Gabriel_Graph_Dialog.png" width="200" alt="Gabriel_Graph_Dialog.png" /><figcaption aria-hidden="true">Gabriel_Graph_Dialog.png</figcaption></figure>
 
 Details
 -------
@@ -36,7 +36,7 @@ If selected, it will create a new results table with each point, its computed ne
 
 If selected, it will overlay the Gabriel Graph onto the image.
 
-<figure><img src="/media/Gabriel_Graph_Processing_Example.png" title="Result of Plugin on image" width="400" alt="Result of Plugin on image" /><figcaption aria-hidden="true">Result of Plugin on image</figcaption></figure>
+<figure><img src="/media/Gabriel Graph Processing Example.png" title="Result of Plugin on image" width="400" alt="Result of Plugin on image" /><figcaption aria-hidden="true">Result of Plugin on image</figcaption></figure>
 
 Macro Recordable
 ----------------

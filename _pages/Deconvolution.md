@@ -35,7 +35,7 @@ The Diffraction PSF 3D plugin can be used to generate theoretical PSFs assuming 
 
 To use, run the "Diffraction PSF 3D" plugin. A dialog will appear; most of the fields are self explanatory. The width, height and depth values are for the PSF image, not your image stack. The desired values will need to be empirically determined. Try to match the parameters used to capture the raw image.
 
-<figure><img src="/media/diffraction_psf_window1.png" title="diffraction_psf_window1.png" width="377" height="317" alt="diffraction_psf_window1.png" /><figcaption aria-hidden="true">diffraction_psf_window1.png</figcaption></figure>
+<figure><img src="/media/Diffraction psf window1.png" title="diffraction_psf_window1.png" width="377" height="317" alt="diffraction_psf_window1.png" /><figcaption aria-hidden="true">diffraction_psf_window1.png</figcaption></figure>
 
 Constrained Iterative Deconvolution
 -----------------------------------
@@ -44,7 +44,7 @@ Non negative constrained (non linear), iterative deconvolution algorithms greatl
 
 Run the Iterative Deconvolve 3D plugin, then select the image and PSF. For a 2D image, use a 2D (single plane) PSF. For 3D images, use a 3D PSF (z stack). Start with the default values and set iterations to 10 initially. Be careful not to run out of memory when processing large 3D images. Crop them if they are too large.
 
-<figure><img src="/media/iterative_deconvolve_window.png" title="iterative_deconvolve_window.png" width="411" height="272" alt="iterative_deconvolve_window.png" /><figcaption aria-hidden="true">iterative_deconvolve_window.png</figcaption></figure>
+<figure><img src="/media/Iterative deconvolve window.png" title="iterative_deconvolve_window.png" width="411" height="272" alt="iterative_deconvolve_window.png" /><figcaption aria-hidden="true">iterative_deconvolve_window.png</figcaption></figure>
 
 An interactive Convolution / Deconvolution / Contrast Restoration demo in ImageJ
 --------------------------------------------------------------------------------

@@ -32,7 +32,7 @@ gauss creates a gaussian blurred image. it convolves the image with a gaussian w
     **outputImage**: the processed image. it always as the same size as the input image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.gauss( img1 , 5 )` <img src="/media/CIP_gauss.PNG" title="fig:CIP_gauss.PNG" width="400" alt="CIP_gauss.PNG" />  
+    `img2 = cip.gauss( img1 , 5 )` <img src="/media/CIP gauss.PNG" title="fig:CIP_gauss.PNG" width="400" alt="CIP_gauss.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 CIP gauss implementation wraps the gauss ops, itself relying on the [imglib2 gauss3 implementation](https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/gauss3).
 
@@ -56,7 +56,7 @@ Erosion shrinks the region in an image by a certain radius. It works both with b
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.erode( img1 , 2 )` <img src="/media/CIP_erode.PNG" title="fig:CIP_erode.PNG" width="400" alt="CIP_erode.PNG" />  
+    `img2 = cip.erode( img1 , 2 )` <img src="/media/CIP erode.PNG" title="fig:CIP_erode.PNG" width="400" alt="CIP_erode.PNG" />  
 <span style="font-size:115%">**Implementation**</span>  
 CIP function wraps the [imglib2 Erosion class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Erosion.java) from the morphology package.
 
@@ -80,7 +80,7 @@ this filter dilate the region in an image by a certain radius. It works both wit
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.dilate( img1 , 2 )` <img src="/media/CIP_dilate.PNG" title="fig:CIP_dilate.PNG" width="400" alt="CIP_dilate.PNG" />  
+    `img2 = cip.dilate( img1 , 2 )` <img src="/media/CIP dilate.PNG" title="fig:CIP_dilate.PNG" width="400" alt="CIP_dilate.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 CIP function wraps the [imglib2 Dilation class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Dilation.java) from the morphology package.
 
@@ -104,7 +104,7 @@ This filter performs an erosion followed by a dilation. It erases small and thin
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.opening( img1 , 5 )` <img src="/media/CIP_opening.PNG" title="fig:CIP_opening.PNG" width="400" alt="CIP_opening.PNG" />  
+    `img2 = cip.opening( img1 , 5 )` <img src="/media/CIP opening.PNG" title="fig:CIP_opening.PNG" width="400" alt="CIP_opening.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 CIP function wraps the [imglib2 Opening class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Opening.java) from the morphology package.
 
@@ -128,7 +128,7 @@ This filter performs a dilation followed by an erosion. It closes small holes an
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.closing( img1 , 16, 'disk' )` <img src="/media/CIP_closing.PNG" title="fig:CIP_closing.PNG" width="600" alt="CIP_closing.PNG" />  
+    `img2 = cip.closing( img1 , 16, 'disk' )` <img src="/media/CIP closing.PNG" title="fig:CIP_closing.PNG" width="600" alt="CIP_closing.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The implementation successively applies CIP erosion and dilation functions.
 
@@ -152,7 +152,7 @@ This filter subtract an opening of the input image to the input image. It remove
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.tophat( img1 , 5, 'disk' )` <img src="/media/CIP_tophat.PNG" title="fig:CIP_tophat.PNG" width="500" alt="CIP_tophat.PNG" />  
+    `img2 = cip.tophat( img1 , 5, 'disk' )` <img src="/media/CIP tophat.PNG" title="fig:CIP_tophat.PNG" width="500" alt="CIP_tophat.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The function relies on ops for subtraction and CIP for the opening.
 
@@ -174,8 +174,8 @@ this function create an image where each pixel value correspond between the dist
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.distance( img1 , 500 )` or `img2 = cip.distance( img1 , 'threshold', 500 )` <img src="/media/CIP_distance1.PNG" title="fig:CIP_distance1.PNG" width="400" alt="CIP_distance1.PNG" />  
-    `img2 = cip.distance( img1 )` will build the distance map for a binary image. <img src="/media/CIP_distance2.PNG" title="fig:CIP_distance2.PNG" width="400" alt="CIP_distance2.PNG" />  
+    `img2 = cip.distance( img1 , 500 )` or `img2 = cip.distance( img1 , 'threshold', 500 )` <img src="/media/CIP distance1.PNG" title="fig:CIP_distance1.PNG" width="400" alt="CIP_distance1.PNG" />  
+    `img2 = cip.distance( img1 )` will build the distance map for a binary image. <img src="/media/CIP distance2.PNG" title="fig:CIP_distance2.PNG" width="400" alt="CIP_distance2.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The function relies on ops distance function implementation.
 
@@ -199,7 +199,7 @@ This filter is used to denoise image. It is well suited to remove impulse noise.
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.median( img1 , 5 )` <img src="/media/CIP_median.PNG" title="fig:CIP_median.PNG" width="400" alt="CIP_median.PNG" />  
+    `img2 = cip.median( img1 , 5 )` <img src="/media/CIP median.PNG" title="fig:CIP_median.PNG" width="400" alt="CIP_median.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The function relies on ops that implement a brute force approach of the median filtering. It would be possible to implement more efficient approach using histogram and cord decomposition such ImageJ1 implementation for 2D image.
 
@@ -218,6 +218,6 @@ This function invert the gray value of the input image such that each pixel valu
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.invert( img1 )` <img src="/media/CIP_invert.PNG" title="fig:CIP_invert.PNG" width="400" alt="CIP_invert.PNG" />  
+    `img2 = cip.invert( img1 )` <img src="/media/CIP invert.PNG" title="fig:CIP_invert.PNG" width="400" alt="CIP_invert.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The function implementation uses ops map function

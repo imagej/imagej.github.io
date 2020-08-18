@@ -18,7 +18,7 @@ Purpose
 
 This is an implementation of the Largest Inscribed Circle algorithm using an euclidean distance map. The algorithm is looped until a circle diameter smaller than the defined minimum diameter is found. The code for this plugin was inspired by this [Matlab Central function](http://www.mathworks.ch/matlabcentral/fileexchange/30805-maximum-inscribed-circle-using-distance-transform)
 
-<figure><img src="/media/Max_largest_circ_dialog2.png" title="Plugin Dialog choices" width="500" alt="Plugin Dialog choices" /><figcaption aria-hidden="true">Plugin Dialog choices</figcaption></figure>
+<figure><img src="/media/Max largest circ dialog2.png" title="Plugin Dialog choices" width="500" alt="Plugin Dialog choices" /><figcaption aria-hidden="true">Plugin Dialog choices</figcaption></figure>
 
 Details
 -------
@@ -50,7 +50,7 @@ It will add all the found circles to the ROI Manager.
 
 Setting the Minimum Disk Diameter to 0 will return a single ROI with the largest inscribed circle.
 
-<figure><img src="/media/Max_largest_circ_beforeafter.png" title="Result of Plugin on whole image" width="400" alt="Result of Plugin on whole image" /><figcaption aria-hidden="true">Result of Plugin on whole image</figcaption></figure>
+<figure><img src="/media/Max largest circ beforeafter.png" title="Result of Plugin on whole image" width="400" alt="Result of Plugin on whole image" /><figcaption aria-hidden="true">Result of Plugin on whole image</figcaption></figure>
 
 Macro Recordable
 ----------------

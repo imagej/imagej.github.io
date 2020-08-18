@@ -14,7 +14,7 @@ Improvements
 
 -   TrackScheme now has an outline panel, useful to navigate in large models.
 
-<figure><img src="/media/TrackMate_TrackSchemeOutline.png" title="TrackMate_TrackSchemeOutline.png" width="600" alt="TrackMate_TrackSchemeOutline.png" /><figcaption aria-hidden="true">TrackMate_TrackSchemeOutline.png</figcaption></figure>
+<figure><img src="/media/TrackMate TrackSchemeOutline.png" title="TrackMate_TrackSchemeOutline.png" width="600" alt="TrackMate_TrackSchemeOutline.png" /><figcaption aria-hidden="true">TrackMate_TrackSchemeOutline.png</figcaption></figure>
 
 -   TrackScheme has a better layout for tracks that have merge and split events.
 

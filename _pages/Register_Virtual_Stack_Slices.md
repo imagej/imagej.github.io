@@ -7,7 +7,7 @@ categories: Plugins,Registration,TrakEM2
 description: test description
 ---
 
-{% include component-stats content='sc.fiji:register\_virtual\_stack\_slices' %}{\| \|style="vertical-align:top" \|<img src="/media/Rvs_scheme.png" title="fig:Register Virtual Stack scheme - All images are transformed to match the reference" width="380" alt="Register Virtual Stack scheme - All images are transformed to match the reference" /> \|}
+{% include component-stats content='sc.fiji:register\_virtual\_stack\_slices' %}{\| \|style="vertical-align:top" \|<img src="/media/Rvs scheme.png" title="fig:Register Virtual Stack scheme - All images are transformed to match the reference" width="380" alt="Register Virtual Stack scheme - All images are transformed to match the reference" /> \|}
 
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas). One of the images in the sequence can be selected by the user as **reference** and it will remain intact.
 
@@ -35,7 +35,7 @@ Images may have different dimensions and be of different type.
 
 <b>Step 1</b>: launch the "Plugins - Registration - Register Virtual Stack Slices" plugin.
 
-<figure><img src="/media/Rvs_main_window.png" title="Register Virtual Stack main window" width="400" alt="Register Virtual Stack main window" /><figcaption aria-hidden="true">Register Virtual Stack main window</figcaption></figure>
+<figure><img src="/media/Rvs main window.png" title="Register Virtual Stack main window" width="400" alt="Register Virtual Stack main window" /><figcaption aria-hidden="true">Register Virtual Stack main window</figcaption></figure>
 
 <b>Step 2</b>: choose the appropriate options:  
 
@@ -94,7 +94,7 @@ The transforms are saved as **.XML** files, following [TrakEM2](TrakEM2) format.
 3.  All types of images are accepted (8-bit, 16-bit, 32-bit and RGB) but only in .tif, .jpg, .png, .gif, .tiff, .jpeg, .bmp, .pgm, or .ima format. Output images are saved as TIFF.
 4.  If you selected the "Advanced setup" and "Elastic" as registration model, another window to adjust the elastic registration parameters will be shown.
 
-<figure><img src="/media/Rvs_elastic_options_351x446.png" title="Elastic registration options" width="280" alt="Elastic registration options" /><figcaption aria-hidden="true">Elastic registration options</figcaption></figure>
+<figure><img src="/media/Rvs elastic options 351x446.png" title="Elastic registration options" width="280" alt="Elastic registration options" /><figcaption aria-hidden="true">Elastic registration options</figcaption></figure>
 
 This is actually a reduced version of the [ bUnwarpJ](BUnwarpJ) main window.
 

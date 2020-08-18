@@ -599,7 +599,7 @@ def convert(path_in, path_out, layout, title):
         # fix internal links
         content_tmp = re.sub(r'((?<!\!)\[[^\]]*\]\()((?!#)(?!http)(?!mailto\:)(?:[^\)\"]|(?:\\\)))*)([.]*(?:\"[^\"]*\")?(?<!\\)\))', fix_link_match, content_tmp)
         # fix internal image src paths
-        content_tmp = re.sub(r'<img src=\"(?!http)(?!/media/)([^\"]*)\"', r'<img src="/media/\1"', content_tmp)
+        content_tmp = re.sub(r'<img src=\"(?!http)(?!/media/)([^\"]*)\"', fix_img_image, content_tmp)
         content_tmp = re.sub(r'((?<!-)\!\[(?!\[)[^\]]*\]\()((?!http)(?!\/media\/)[^\"\)]*)([ \n]*(?:\"[^\"]*\")?[ ]*\))', fix_md_image, content_tmp)
         # remove empty html tags I guess?!
         content_tmp = re.sub(r'\<span\>[ \n]*\<br[ ]*\/\>[ \n]*\<\/span\>', r'', content_tmp)
@@ -662,6 +662,10 @@ def fix_md_image(match):
         media_name = fix_image_name(match.group(2)).rstrip()
         return "[" + media_name + "](/media/" + media_name + ")"
     return match.group(1) + "/media/" + fix_image_name(match.group(2)) + match.group(3)
+
+
+def fix_img_image(match):
+    return '<img src="/media/' + fix_image_name(match.group(1)) + '"'
 
 
 def run_pandoc(path_in, path_out):

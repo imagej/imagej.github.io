@@ -107,7 +107,7 @@ The same is valid when you delete a link or a spot. For instance, let's create 3
 Track and spot features are updated live
 ----------------------------------------
 
-<figure><img src="/media/TrackMate_GUIManualTracking.png" title="TrackMate_GUIManualTracking.png" width="200" alt="TrackMate_GUIManualTracking.png" /><figcaption aria-hidden="true">TrackMate_GUIManualTracking.png</figcaption></figure>
+<figure><img src="/media/TrackMate GUIManualTracking.png" title="TrackMate_GUIManualTracking.png" width="200" alt="TrackMate_GUIManualTracking.png" /><figcaption aria-hidden="true">TrackMate_GUIManualTracking.png</figcaption></figure>
 
 TrackMate uses computes and uses some numerical features for its spots, edges and tracks. You can use these features to color the TrackMate objects.
 

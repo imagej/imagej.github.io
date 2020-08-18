@@ -91,11 +91,11 @@ Move to the *Display options* panel, skipping the track filtering part.
 
 [TrackScheme](TrackScheme) also allows manually editing the tracks. Press the **TrackScheme** button on the last panel. By default, the tracks are displayed as colored circles joined by lines. Each circle represent a spot, and the lines represent a link connecting two dots. The selection in TrackScheme is share across TrackMate, so if you select one circle, it will be highlighted in the HyperStack viewer as well (circled in green).
 
-<figure><img src="/media/TrackScheme_Start.png" title="TrackScheme_Start.png" width="700" alt="TrackScheme_Start.png" /><figcaption aria-hidden="true">TrackScheme_Start.png</figcaption></figure>
+<figure><img src="/media/TrackScheme Start.png" title="TrackScheme_Start.png" width="700" alt="TrackScheme_Start.png" /><figcaption aria-hidden="true">TrackScheme_Start.png</figcaption></figure>
 
 TrackScheme launches with a simple style: each spot is represented with a circle. You can get more information by changing the style. Next to the **Style** button in the TrackScheme toolbar, there is combo-box ini which you can select either **simple** or **full**. Select **full**. Each spot is now represented by a rounded rectangle, with the default name printed on the right. Go back in the TrackScheme toolbar. Next to the style combo-box, there is greyed-out button showing 3 pictures. Press it; after some time, each spot in TrackScheme will contain a thumbnail of the spot taken in the raw image. This is very handy to quickly detect detection problems.
 
-<figure><img src="/media/TrackScheme_Full.png" title="TrackScheme_Full.png" width="700" alt="TrackScheme_Full.png" /><figcaption aria-hidden="true">TrackScheme_Full.png</figcaption></figure>
+<figure><img src="/media/TrackScheme Full.png" title="TrackScheme_Full.png" width="700" alt="TrackScheme_Full.png" /><figcaption aria-hidden="true">TrackScheme_Full.png</figcaption></figure>
 
 TrackScheme in a nutshell
 -------------------------
@@ -209,7 +209,7 @@ You can create a link between two cells in TrackScheme simply by enabling the li
 
 This is pictured below, where the fore-to-last cell of the track 4 is connected to the new spot. For visibility, I brought on this screenshot the target cell closer to the lane of the track 4. You can normally find it either on the far right of the panel.
 
-<figure><img src="/media/TrackMate_CreateLinksInTrackScheme_annotated.png" title="TrackMate_CreateLinksInTrackScheme_annotated.png" width="700" alt="TrackMate_CreateLinksInTrackScheme_annotated.png" /><figcaption aria-hidden="true">TrackMate_CreateLinksInTrackScheme_annotated.png</figcaption></figure>
+<figure><img src="/media/TrackMate CreateLinksInTrackScheme annotated.png" title="TrackMate_CreateLinksInTrackScheme_annotated.png" width="700" alt="TrackMate_CreateLinksInTrackScheme_annotated.png" /><figcaption aria-hidden="true">TrackMate_CreateLinksInTrackScheme_annotated.png</figcaption></figure>
 
 Press the **Redo layout** button to see the arranged result. The first spot is now incorporated in the right track.
 

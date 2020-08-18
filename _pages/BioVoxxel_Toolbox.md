@@ -32,7 +32,7 @@ Purpose: The "Extended Particle Analyzer" is based on the ImageJ "Analyze Partic
 
 Example: If you want to extract/analyze only particles with a certain Feret's Angle or exclude elongated structures using the aspect ratio (AR) or circilarity you can specify so in the initial dialog box.
 
-<figure><img src="/media/ExtendedParticleAnalyzer_v2.png" title="ExtendedParticleAnalyzer_v2.png" width="750" alt="ExtendedParticleAnalyzer_v2.png" /><figcaption aria-hidden="true">ExtendedParticleAnalyzer_v2.png</figcaption></figure>
+<figure><img src="/media/ExtendedParticleAnalyzer v2.png" title="ExtendedParticleAnalyzer_v2.png" width="750" alt="ExtendedParticleAnalyzer_v2.png" /><figcaption aria-hidden="true">ExtendedParticleAnalyzer_v2.png</figcaption></figure>
 
 How to: Key in minimal and maximal exclusion values connected with a hyphen. You can use integers as well as numbers containing decimal places. "Redirect" redirects the analysis to a grayscale image which enables to analyze skewness, kurtosis as well as the new measure coefficient of variance (cov). The option "Keep borders (correction)" eliminates particles from 2 edges and keeps particles touching the two borders of choice. This corrects the particle count for edge touching particles.
 
@@ -243,7 +243,7 @@ Purpose: This plugin enables you to test a certain range of radii of a specified
 
 How to: Choose a filter method from the drop down menu, key in a starting and an end radius. The image will be filtered in individual integer steps between the start and stop radius and presented in an image stack containing all the filtered images. The filter can also be applied to only a ROI. This is recommended for filters which are cost intensive, like the "Gaussian Weighted Median". The parameter setting is only needed for the "Bilateral Filter" (range radius) , "Mean Shift Filter" (Color Distance) and the "Linear Kuwahara" (line length).
 
-<figure><img src="/media/Filter_Check.png" title="Filter_Check.png" width="750" alt="Filter_Check.png" /><figcaption aria-hidden="true">Filter_Check.png</figcaption></figure>
+<figure><img src="/media/Filter Check.png" title="Filter_Check.png" width="750" alt="Filter_Check.png" /><figcaption aria-hidden="true">Filter_Check.png</figcaption></figure>
 
 Form: plugin
 
@@ -283,7 +283,7 @@ How to: The user can choose between Gaussian, Median and Mean convolution filter
 
 Method: The convoluted images are directly subtracted from the original with exception of the median filtered one. The latter additionally receives a grayscale dilation by application of a maximum filter with the factor (1.5\*(radius/10)). This should reduce artifacts around object borders.
 
-<figure><img src="/media/Convoluted_Background_Subtraction.png" title="Convoluted_Background_Subtraction.png" width="750" alt="Convoluted_Background_Subtraction.png" /><figcaption aria-hidden="true">Convoluted_Background_Subtraction.png</figcaption></figure>
+<figure><img src="/media/Convoluted Background Subtraction.png" title="Convoluted_Background_Subtraction.png" width="750" alt="Convoluted_Background_Subtraction.png" /><figcaption aria-hidden="true">Convoluted_Background_Subtraction.png</figcaption></figure>
 
 Distribution: plugin, recordable
 

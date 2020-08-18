@@ -10,7 +10,7 @@ description: test description
 Wiscan Data Acquisition
 =======================
 
-<figure><img src="/media/OWS_1.jpg" title="Microscope setup" width="300" alt="Microscope setup" /><figcaption aria-hidden="true">Microscope setup</figcaption></figure>
+<figure><img src="/media/OWS 1.jpg" title="Microscope setup" width="300" alt="Microscope setup" /><figcaption aria-hidden="true">Microscope setup</figcaption></figure>
 
 1.  Make sure the image being used has been set up correctly:
     1.  On the computer, click and hold the shutter button until it turns yellow. The shutter is now activated

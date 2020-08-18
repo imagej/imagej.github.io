@@ -28,7 +28,7 @@ Use
 
 Call up the plugin using *Plugins-&gt;BIOP-&gt;Multi Stack Montage...* and select the stacks that you wish to use.
 
-<figure><img src="/media/Hyperstacks_Montage_menu.jpg" title="Interface of the plugin" width="400" alt="Interface of the plugin" /><figcaption aria-hidden="true">Interface of the plugin</figcaption></figure>
+<figure><img src="/media/Hyperstacks Montage menu.jpg" title="Interface of the plugin" width="400" alt="Interface of the plugin" /><figcaption aria-hidden="true">Interface of the plugin</figcaption></figure>
 
 {% include warning-box content='If you are going to make a montage, you need each stack to be as follows:
 
@@ -37,7 +37,7 @@ Call up the plugin using *Plugins-&gt;BIOP-&gt;Multi Stack Montage...* and selec
 
 In the case that there would be many images open, the plugin does not pre-select any images.
 
-<figure><img src="/media/Hyperstacks_Montage_example.jpg" title="Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination" width="400" alt="Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination" /><figcaption aria-hidden="true">Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination</figcaption></figure>
+<figure><img src="/media/Hyperstacks Montage example.jpg" title="Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination" width="400" alt="Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination" /><figcaption aria-hidden="true">Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination</figcaption></figure>
 
 This plugin is useful when montaging multiple views or when montaging RGB datasets all in one go.
 
