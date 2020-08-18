@@ -9,7 +9,7 @@ description: test description
 
 {% include component-stats content='sc.fiji:Colocalisation\_Analysis' %}= What is Coloc 2 =
 
-Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs the pixel intensity correlation over space methods of {% include wikipedia title='Pearson product-moment correlation coefficient' text='Pearson'%}, [Manders](Media_Manders.pdf), [Costes](Media_Costes_etalColoc.pdf), [Li](Media_LietAlColoc.pdf) and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
+Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs the pixel intensity correlation over space methods of {% include wikipedia title='Pearson product-moment correlation coefficient' text='Pearson'%}, [Manders](/media/Manders.pdf), [Costes](/media/Costes etalColoc.pdf), [Li](/media/LietAlColoc.pdf) and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 
 Coloc 2 does NOT perform object based colocalization measurements, where objects are first segmented from the image, then their spatial relationships like overlap etc. are measured. This complementary approach is implemented in many ways elsewhere.
 
@@ -21,9 +21,9 @@ How to use Coloc 2
 1.  Read the original papers describing the analysis you are about to perform.
     1.  Don't treat this tool as a black box - try to understand what the strengths and limitations are and what the results could mean.
         1.  {% include wikipedia title='Pearson product-moment correlation coefficient' text='Pearson\'s correlation, r'%}
-        2.  [Manders paper](Media_Manders.pdf)
-        3.  [Costes paper](Media_Costes_etalColoc.pdf)
-        4.  [Li paper](Media_LietAlColoc.pdf)
+        2.  [Manders paper](/media/Manders.pdf)
+        3.  [Costes paper](/media/Costes etalColoc.pdf)
+        4.  [Li paper](/media/LietAlColoc.pdf)
 2.  Open images to analyze.
     1.  You need a 2 color channel image. If the image has more than 2 channels, identify the two you want to analyze with each other, then split the channels into separate images (Image- Color - Split Channels)
     2.  Z stacks work fine. But time series will fail until that is fixed. For now, please split the time series into a numbered set of images and analyse those one by one. See https://github.com/fiji/Colocalisation_Analysis/issues/6
@@ -44,7 +44,7 @@ How to use Coloc 2
     2.  Turn the options on/off by clicking the selection button at the left of the Algorithm description
     3.  Also choose the approximate size of the point spread function (PSF) in your images, as well as the number of iterations to run the Costes statistical significance test (We suggest a large number... the larger the number, the longer the analysis will take. Do, at the very very least, 10 iterations (100 would be better).)
         1.  You should know approximately how big the PSF is (in pixels) in your images.
-        2.  If you don't, go back and read about: What is the PSF? Why is it important in colocalization analysis? (for instance: read the [Costes paper](Media_Costes_etalColoc.pdf) )
+        2.  If you don't, go back and read about: What is the PSF? Why is it important in colocalization analysis? (for instance: read the [Costes paper](/media/Costes etalColoc.pdf) )
         3.  This size determines what size of image 'chunks' are shuffled in the randomization process. (PSF-sized image pieces make physical sense, as that's the size of the smallest features visible in the image.)
 7.  Click OK to run the analysis.
 8.  The results gui will open showing a table of numbers and one of several images

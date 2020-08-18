@@ -42,7 +42,7 @@ To install the plugin in your ImageJ or Fiji installation, add the update site L
 
 Alternatively, a full Fiji distribution with LUMoS already packaged can be downloaded. Unlike the update site, this packaged download is PC only. [PC only download](https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/multiphoton-core/documents/Fiji-app-for-LUMoS-spectral-unmixing.zip).
 
-A user guide for this plugin with step by step instructions can be found [ here](Media_Spectral_Unmixing_User_Guide.pdf).
+A user guide for this plugin with step by step instructions can be found [ here](/media/Spectral Unmixing User Guide.pdf).
 
 See Also
 ========

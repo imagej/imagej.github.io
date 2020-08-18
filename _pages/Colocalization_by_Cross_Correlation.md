@@ -25,7 +25,7 @@ Available on the list of [ImageJ updates sites](Update_Sites). Requires Fiji.
 
 The plugin performs a cross-correlation in frequency space to create a correlation image. To remove non-specific correlations (from background, or high signal density), a correlation image generated from randomized images is then subtracted from the original correlation image. This occurs through cycles of:
 
-1\. Randomizing Image1 using the [Costes randomization method](Media_Costes_etalColoc.pdf) and a mask of all theoretically possible localizations for the signal in Image1 (i.e. a mask of the cells, or the nuclei).
+1\. Randomizing Image1 using the [Costes randomization method](/media/Costes etalColoc.pdf) and a mask of all theoretically possible localizations for the signal in Image1 (i.e. a mask of the cells, or the nuclei).
 
 2\. Calculating the cross-correlation of the randomized image with Image2, then averaging this over successive cycles.
 

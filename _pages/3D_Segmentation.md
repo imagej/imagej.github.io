@@ -66,7 +66,7 @@ The plugin works with two images, one containing the **seeds** of the objects, t
 
 Three methods are available for computing the value of the local threshold and 3 methods for clustering are also proposed. The option **watershed** can be chosen to avoid merging of close spots.
 
-A tutorial is also available : [Media:3d seg spot tutorial.pdf](Media_3d_seg_spot_tutorial.pdf)
+A tutorial is also available : [3d seg spot tutorial.pdf](/media/3d seg spot tutorial.pdf)
 
 ![](/media/Heck-orig.png "fig:Heck-orig.png") ![](/media/Heck-watershed.png "fig:Heck-watershed.png")![](/media/Heck-seg.png "fig:Heck-seg.png")
 

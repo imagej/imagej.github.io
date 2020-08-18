@@ -76,7 +76,7 @@ Plugins of this section offer importing, handling or analysis of special data fo
 
 This plugin provides an engine for finding the most probable chemical compositions of some given energy dispersive spectroscopy (EDS) data. From a set of proposed chemical formula, a ranking of the probability of matching with the candidate EDS data is calculated.
 
-A step by step tutorial for the clustering and phase identification of EDS maps is provided in the manual entitled ["Instructions for the Phase Clustering and Identification Using the Plugins for ImageJ"](Media_xClusteringPhaseIdentification.pdf).
+A step by step tutorial for the clustering and phase identification of EDS maps is provided in the manual entitled ["Instructions for the Phase Clustering and Identification Using the Plugins for ImageJ"](/media/xClusteringPhaseIdentification.pdf).
 
 The program can be used in combination with the ["Cluster Image"](#Cluster_Image "wikilink") plugin. Thereby for a resulting set of cluster centers, the program provides the most probable cluster membership.
 

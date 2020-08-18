@@ -646,15 +646,21 @@ def fix_bc_include(match):
 
 
 def fix_link_match(match):
-    if match.group(1).startswith('[File:'):
+    beginning = match.group(1)
+    if beginning.startswith('[File:'):
         # return '![/media/' + match.group(2)
         return match.group(0)
-    if match.group(1).startswith('[Category:'):
+    if 'Media:' in match.group(2):
+        beginning = beginning.replace("Media:", "")
+        link = match.group(2).replace("Media:", "/media/")
+        link = fix_image_name(link)
+        return beginning + link.rstrip() + match.group(3).replace("\"wikilink\"", "").lstrip()
+    if beginning.startswith('[Category:'):
         return ''
     link = match.group(2).replace(":Category", "Category")
     link = link.replace(":", "_").replace("\'", "").replace("\"", "").replace("\(", "").replace("\)", "").replace("/", "_")
     link = link[0].capitalize() + link[1:].rstrip()
-    return match.group(1) + link + match.group(3).replace("\"wikilink\"", "")
+    return beginning + link + match.group(3).replace("\"wikilink\"", "")
 
 
 def fix_md_image(match):

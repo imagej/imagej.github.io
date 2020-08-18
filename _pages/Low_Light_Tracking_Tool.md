@@ -269,7 +269,7 @@ The files are created in the working directory. Each file begins with some lines
 Example Data
 ============
 
-This link contains the data used to generate this tutorial, and a two channel 3D data set to try. [Media:Example\_Data.zip‎](Media_Example_Data.zip‎)
+This link contains the data used to generate this tutorial, and a two channel 3D data set to try. [Example\_Data.zip‎](/media/Example Data.zip‎)
 
 License
 =======

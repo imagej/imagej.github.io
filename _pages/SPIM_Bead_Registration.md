@@ -14,7 +14,7 @@ Citation
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
--   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](Media_Nmeth0610-418.pdf) [Supplement](Media_Nmeth0610-418-S1.pdf)
+-   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](/media/Nmeth0610-418.pdf) [Supplement](/media/Nmeth0610-418-S1.pdf)
 
 For technical details about the registration method and SPIM imaging see [SPIM Registration Method](SPIM_Registration_Method).
 

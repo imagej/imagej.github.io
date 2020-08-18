@@ -25,7 +25,7 @@ To install the plugin, activate the **PixFRET** [update site](How_to_follow_a_3r
 Usage
 -----
 
-Please refer to the [user guide (PDF)](Media_PixFRET_userguide.pdf).
+Please refer to the [user guide (PDF)](/media/PixFRET userguide.pdf).
 
 Publication
 -----------

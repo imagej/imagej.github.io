@@ -28,7 +28,7 @@ Watershed Separation of touching DAPI stained nuclei images -Tutorial
 
 ### Open the sample image
 
--   open the [sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope.](Media_NucleiDAPIconfocal.png)
+-   open the [sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope.](/media/NucleiDAPIconfocal.png)
 
 ![ 250px](/media/NucleiDAPIconfocal.png " 250px")
 
