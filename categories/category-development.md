@@ -1,6 +1,5 @@
 ---
 title: Development
-breadcrumb: Development
 author: admin
 categories: admin
 layout: page

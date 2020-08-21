@@ -1,6 +1,5 @@
 ---
 title: Example 5
-breadcrumb: Example 5
 author: Dad
 categories: plugins, help
 layout: page

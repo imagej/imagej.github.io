@@ -1,6 +1,5 @@
 ---
 title: Example 4
-breadcrumb: Example 4
 author: Wallie the cat
 categories: plugins, demo, development, help
 layout: page

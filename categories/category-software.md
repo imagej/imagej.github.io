@@ -1,6 +1,5 @@
 ---
 title: Software
-breadcrumb: Software
 author: admin
 categories: admin
 layout: page

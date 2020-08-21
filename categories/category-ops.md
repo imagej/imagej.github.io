@@ -1,6 +1,5 @@
 ---
 title: Ops
-breadcrumb: Ops
 author: admin
 categories: admin
 layout: page

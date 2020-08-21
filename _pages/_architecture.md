@@ -1,6 +1,5 @@
 ---
 title: Architecture
-breadcrumb: Architecture
 author: admin
 categories: development
 layout: page

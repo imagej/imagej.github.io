@@ -1,6 +1,5 @@
 ---
 title: Editing the Wiki
-breadcrumb: Editing the Wiki
 layout: page
 categories: help
 description: This page explains how to write and edit pages.
@@ -29,16 +28,14 @@ Click `Add file` then  `Create new file` from the drop-down.
 The *front matter* precedes the content of your page, and sets several parameters that help setup your page within the repository. Without the front matter, your page will not render correctly.
 
 **title:** The title of your page.\
-**breadcrumb:** Site navigation.\
 **layout:** This sets the page's layout. Always use setting `page`.\
 **categories:** Categories that your page falls into, [see a list of imagej.github.io categories.](/search?query=categories) (These are the only categories recognized be the site)\
 **description:** A short description of your page. Also used for the site's search engine.
 
-Find below the front matter for this page. You can copy and paste this code into the editor of a new page from lines 1-7. Replace the settings in the `title`, `breadcrumb`, `categories`, and `description` fields with details from the new page. **Do not change the `layout: page` setting.**
+Find below the front matter for this page. You can copy and paste this code into the editor of a new page from lines 1-6. Replace the settings in the `title`, `breadcrumb`, `categories`, and `description` fields with details from the new page. **Do not change the `layout: page` setting.**
 ```
 ---
 title: Editing the Wiki
-breadcrumb: Editing the Wiki
 layout: page
 categories: demo, help
 description: This page explains how to write and edit pages.
@@ -56,7 +53,7 @@ Markdown is plain-text syntax formatting, allowing a user to easily and cleanly 
 #### Using includes
 Includes provide more robust formatting options and are unique to this site. With includes, you can insert menus, images, tables, sideboxes, figures, math, warnings, etc into a page. For a full list of includes with utilization instructions, see below.
 
-#### Avaliable "includes"
+#### Available "includes"
 
 | Action | Link to demo page|
 | : --- : | :---: |
@@ -158,11 +155,11 @@ def update_progress(progress):
     sys.stdout.write(text)
     sys.stdout.flush()
 ```
-## Advanced editing with jekyll
+# Advanced editing with jekyll
 
-####Install jekyll
+#### Install jekyll
 The jekyll static site generator can be installed on Linux, MacOS and Windows. To install a local version of jekyll follow the instructions for your respective operating system [here](https://jekyllrb.com/docs/installation/).
-####Clone the `imagej.github.io` repository
+#### Clone the `imagej.github.io` repository
 Once jekyll has been installed, [clone](https://docs.github.com/en/enterprise/2.13/user/articles/cloning-a-repository) the the imagej.github.io repository. Navigate to the cloned repository and run `bundle install` to install the specific gems used in imagej.github.io. Once this is complete, it is a good idea to run `bundle update`.
 
 ####Serve a local version of imagej.github.io

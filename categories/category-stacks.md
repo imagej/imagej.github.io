@@ -1,6 +1,5 @@
 ---
 title: Stacks
-breadcrumb: Stacks
 author: admin
 categories: admin
 layout: page

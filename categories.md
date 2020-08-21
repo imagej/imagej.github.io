@@ -1,6 +1,5 @@
 ---
 title: Browse categories
-breadcrumb: Browse categories
 layout: browse
 ---
 

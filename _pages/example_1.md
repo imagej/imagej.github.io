@@ -1,6 +1,5 @@
 ---
 title: Example 1
-breadcrumb: Example 1
 author: Edward Evans
 categories: plugins, analysis, development
 layout: page

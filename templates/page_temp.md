@@ -1,6 +1,5 @@
 ---
 title: YOUR-POST-TITLE
-breadcrumb: YOUR-BREADCRUMB
 layout: page
 author: YOUR-NAME
 category: POST-TYPE:YOUR-CATEGORY

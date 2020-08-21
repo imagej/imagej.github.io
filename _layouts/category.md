@@ -1,6 +1,5 @@
 ---
 title: Plugins
-breadcrumb: Plugin
 author: admin
 categories: admin, plugins
 layout: page

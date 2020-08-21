@@ -1,6 +1,5 @@
 ---
 title: Example 2
-breadcrumb: Example 2
 author: Mel Hammond
 categories: plugins, demo, development
 layout: page

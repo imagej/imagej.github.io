@@ -1,6 +1,5 @@
 ---
 title: Math test
-breadcrumb: Math test
 author: Edward Evans
 categories: plugins, demo
 layout: page

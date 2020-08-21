@@ -1,6 +1,5 @@
 ---
 title: 3D Viewer
-breadcrumb: 3D Viewer
 author: Curtis Rueden
 categories: plugins, analysis, visualization
 layout: page

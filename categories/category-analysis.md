@@ -1,6 +1,5 @@
 ---
 title: Analysis
-breadcrumb: Analysis
 author: admin
 categories: admin
 layout: page

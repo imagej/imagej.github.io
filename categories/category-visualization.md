@@ -1,6 +1,5 @@
 ---
 title: Visualization
-breadcrumb: Visualization
 author: admin
 categories: admin
 layout: page

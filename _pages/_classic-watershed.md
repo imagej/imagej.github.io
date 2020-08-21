@@ -1,6 +1,5 @@
 ---
 title: Classic Watershed
-breadcrumb: Classic Watershed
 author: Ignacio Arganda-Carreras
 categories: plugins, segmentation
 layout: page

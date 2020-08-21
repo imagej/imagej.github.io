@@ -1,6 +1,5 @@
 ---
 title: Mathematical morphology
-breadcrumb: Mathematical morphology
 author: admin
 categories: admin
 layout: page

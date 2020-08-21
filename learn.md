@@ -1,6 +1,5 @@
 ---
 title: Learn about ImageJ
-breadcrumb: Learn
 layout: page
 category: admin
 use_math: false

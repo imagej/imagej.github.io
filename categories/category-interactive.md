@@ -1,6 +1,5 @@
 ---
 title: Interactive
-breadcrumb: Interactive
 author: admin
 categories: admin
 layout: page

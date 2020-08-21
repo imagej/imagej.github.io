@@ -1,6 +1,5 @@
 ---
 title: Howto - Authoring a page
-breadcrumb: Howto - Authoring  a page
 layout: page
 categories: plugins, demo, help
 description: This page explains how to write pages.

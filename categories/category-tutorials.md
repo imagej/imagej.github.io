@@ -1,6 +1,5 @@
 ---
 title: Tutorials
-breadcrumb: Tutorials
 author: admin
 categories: admin, plugins
 layout: page
