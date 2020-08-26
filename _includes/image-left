@@ -1,1 +1,1 @@
-![{{include.name}}]({{include.image_path | relative_url}}){: .image.left}
+![{{include.name}}]({{include.image_path | relative_url}}){: .image-left}

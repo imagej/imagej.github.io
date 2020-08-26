@@ -2371,48 +2371,48 @@ input, select, textarea {
 			display: block;
 		}
 
-		.image.table {
+		.image-table {
 			display: inline-block;
 			margin: 0 0 0 0;
 			vertical-align: middle;
 		}
 
-		.image.left {
+		.image-left {
 			float: left;
 			padding: 0 0.5em 0.5em 0;
 			top: 0.25em;
 		}
 
-		.image.right {
+		.image-right {
 			float: right;
 			padding: 0 0 0.5em 0.5em;
 			top: 0.25em;
 		}
 
-		.image.center {
+		.image-center {
 			margin: 0 auto;
 			display: block;
 		}
 
-		.image.left, .image.right {
+		.image-left, .image-right {
 			max-width: 50%;
 		}
 
-			.image.left img, .image.right img {
-				width: 100%;
-			}
+		.image-left img, .image-right img {
+			width: 100%;
+		}
 
-		.image.fit {
+		.image-fit {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
 		}
 
-			.image.fit img {
-				width: 100%;
-			}
+		.image-fit img {
+			width: 100%;
+		}
 		
-		.image.header {
+		.image-header {
 			display: block;
 			margin: auto;
 			width: 25%;
