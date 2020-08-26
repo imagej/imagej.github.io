@@ -1,1 +1,1 @@
-![{{include.name}}]({{include.image_path | relative_url}}){: .image-left}
+<img src="{{include.image_path}}" alt="{{include.name}}" class="image-left {{include.classes}}">
