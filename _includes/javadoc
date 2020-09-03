@@ -1,1 +1,33 @@
-<span class="include javadoc">TODO javadoc:  <code>{{include}}</code></span>
+{% capture javadocs-content %}
+
+{% assign url=https://javadoc.scijava.org/" %}
+
+{% if include.project != "" %}
+{% assign project = {{include.project}} %}
+{% endif %}
+
+{% if include.package != "" %}
+{% assign package = "/" | append: {{include.package}} %}
+{% endif %}
+
+{% if include.class != "" %}
+{% assign class = "/" | append: {{include.class}} | append: ".html"%}
+{% endif %}
+
+{% if include.anchor != "" %}
+{% assign anchor = "#" | append: {{include.anchor}} %}
+{% endif %}
+
+{% assign final_url =url | append: project | append: package | append: class | append: anchor | append: label}}
+
+{% if include.label != "" %}
+{% assign label = {{include.label}} %}
+{% else %}
+{% assign label = {{include.class}} %}
+{% endif %}
+
+<a href=”{{final_url}}”>{{label}}
+
+{% endcapture %}
+
+{{javadocs-content}}
