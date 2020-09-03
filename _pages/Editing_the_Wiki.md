@@ -9,20 +9,22 @@ description: This page explains how to write and edit pages.
 
 Creating or editing a page on GitHub pages is super easy! Pages can be created or modified online via GitHub's online file editor (clicking "Edit page" on the top right of this page will bring you to this specific page's source) or, for advanced users, via a local installation of jekyll and the imagej.github.io site. (See our advanced user guide for jekyll set-up instructions)
 
-If you do not need to create a new page and would like to make changes to an existing page, skip to
+If you do not need to create a new page and would like to make changes to an existing page, skip to [adding and editing page content](Editing_the_Wiki#adding-and-editing-page-content).
 
 ## Creating a new page
+<br>
 
+{% include image-right name="create-page" image_path="/images/readme/create-page-etw.png" %}
+
+<br>
 1. Navigate to the [_pages section](https://github.com/imagej/imagej.github.io/tree/master/_pages) of the `imagej.github.io` repository.
 Click `Add file` then  `Create new file` from the drop-down.
 
-<br>
+{% include image-right name="name-your-file" image_path="/images/readme/name-your-file.png" %}
 
-{% include image-center name="create-page" image_path="/images/readme/create-page-etw.png" %}
+{% include image-right name="name-your-file" image_path="/images/readme/name-your-file.png" classes="grey-border" %}
 
-<br>
-
-1. Add a name for your file. **Note: this is not the page title;** the page title will be applied in the next section, front matter. File names should be lowercase, avoid symbols, and contain no spaces (use underscores or dashes instead, `_` `-`).
+2. Add a name for your file. **Note: this is not the page title;** the page title will be applied in the next section, front matter. File names should be lowercase, avoid symbols, and contain no spaces (use underscores or dashes instead, `_` `-`).
 
 ## Add the page's *front matter*
 The *front matter* precedes the content of your page, and sets several parameters that help setup your page within the repository. Without the front matter, your page will not render correctly.
@@ -32,7 +34,8 @@ The *front matter* precedes the content of your page, and sets several parameter
 **categories:** Categories that your page falls into, [see a list of imagej.github.io categories.](/search?query=categories) (These are the only categories recognized be the site)\
 **description:** A short description of your page. Also used for the site's search engine.
 
-Find below the front matter for this page. You can copy and paste this code into the editor of a new page from lines 1-6. Replace the settings in the `title`, `breadcrumb`, `categories`, and `description` fields with details from the new page. **Do not change the `layout: page` setting.**
+Find below the front matter for this page. You can copy and paste this code into the editor of a new page from lines 1-6. Replace the settings in the `title`, `categories`, and `description` fields with details from the new page. **Do not change the `layout: page` setting.**
+
 ```
 ---
 title: Editing the Wiki
@@ -43,15 +46,15 @@ description: This page explains how to write and edit pages.
 ```
 
 ## Adding and editing page *content*
-This section will cover how to populate the *content* of your page, including: links to GitHub markdown resources, as well as guides on how to use this site's includes.
+Pages on `imagej.github.io` are optimized to be written in git markdown, but will also read `html` formatting. This section will cover how to populate the *content* of your page, including: links to GitHub markdown resources, as well as guides on how to use this site's includes.
 
 
 
 #### Markdown
-Markdown is plain-text syntax formatting, allowing a user to easily and cleanly modify text with italics, bold, lists, etc. As a GitHub pages hosted website, imagej.github.io uses the `git` flavor of markdown. [A basic Git markdown guide can be found here.](https://guides.github.com/features/mastering-markdown/)
+Markdown is plain-text syntax formatting, allowing a user to easily and cleanly modify text with italics, bold, ordered or bulleted lists, etc. As a GitHub pages hosted website, imagej.github.io uses the `git` flavor of markdown. [A basic Git markdown guide can be found here.](https://guides.github.com/features/mastering-markdown/)
 
 #### Using includes
-Includes provide more robust formatting options and are unique to this site. With includes, you can insert menus, images, tables, sideboxes, figures, math, warnings, etc into a page. For a full list of includes with utilization instructions, see below.
+Includes provide more robust formatting options and are unique to this site. With includes, you can insert menus, images, tables, sideboxes, figures, math, warnings, etc with pre-formatted settings into a page. For a full list of includes with utilization instructions, [see below](Editing_the_Wiki#available-includes).
 
 #### Available "includes"
 
@@ -157,20 +160,28 @@ def update_progress(progress):
 ```
 # Advanced editing with jekyll
 
-#### Install jekyll
+## Install jekyll
 The jekyll static site generator can be installed on Linux, MacOS and Windows. To install a local version of jekyll follow the instructions for your respective operating system [here](https://jekyllrb.com/docs/installation/).
-#### Clone the `imagej.github.io` repository
+
+## Clone the `imagej.github.io` repository
 Once jekyll has been installed, [clone](https://docs.github.com/en/enterprise/2.13/user/articles/cloning-a-repository) the the imagej.github.io repository. Navigate to the cloned repository and run `bundle install` to install the specific gems used in imagej.github.io. Once this is complete, it is a good idea to run `bundle update`.
 
-####Serve a local version of imagej.github.io
-Now that the both jekyll and the respository are installed on your local machine, you can run the static site generator by navigating to the directory imagej.github.io was saved and running `bundle exec jekyll serve`. Wait for a minute or two while it generates and then in your browser navigate to `http://127.0.0.1:4000`. Any changes you make to any file in the directory will be detected by jekyll, regenerating the site to reflect the new changes.
+## Serve a local version of imagej.github.io
+Now that the both jekyll and the respository are installed on your local machine, you can run the static site generator by navigating to the directory imagej.github.io withing a terminal was saved and running `bundle exec jekyll serve`. Wait for a minute or two while it generates, and then in your browser navigate to `http://127.0.0.1:4000`. Changes you make to any file in the directory will be detected by jekyll, regenerating the site to reflect the new changes.
 
-Alternatively, you can run `bundle exec jekyll serve --incremental`to initiate the local server. This command will reduce the amount of time it takes for the site to regenerate if you anticipate making many changes in quick succession.
-####Create a new page in `_pages`
-In `/path/to/imagej.github.io/_pages`, create a new text file i.e. `cat > your_page_name.md`. NOTE: filenames should be lowercase, omit spaces, and end in `.md`.
+Alternatively, you can run `bundle exec jekyll serve --incremental` to initiate the local server. This command will reduce the amount of time it takes for the site to regenerate if you anticipate making many changes in quick succession.
 
-From here, the [front matter](Editing_the_Wiki#add-the-pages-front-matter) and content of the new page can be populated with a text editor of your choosing.
+## Create a new page in `_pages`
 
-Images and other media should be stored in `/path/to/imagej.github.io/media` or
+1. In `/path/to/imagej.github.io/_pages`, create a new text file i.e. `cat > your_page_name.md`. <br>
+NOTE: filenames should be lowercase, omit spaces, and use extension `.md`.
 
-####Pushing and pulling with Git
+2. From here, the [front matter](Editing_the_Wiki#add-the-pages-front-matter) and content of the new page can be populated with a text editor of your choosing.
+
+* Images and other media should be stored in `/path/to/imagej.github.io/media`.
+
+* Regularly save your progress with `git add` i.e. if within the `imagej.github.io` working directory, use command `git add _pages/your-page-name.md`
+
+## Pushing and pulling with Git
+
+Once you are ready to publish your

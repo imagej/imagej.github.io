@@ -33,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-    
+
 }
 
 ol, ul {
@@ -98,7 +98,7 @@ input, select, textarea {
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
 			transition: none !important;
-         
+
 		}
 
 	body, input, select, textarea {
@@ -107,7 +107,7 @@ input, select, textarea {
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
-        
+
 	}
 
 	a {
@@ -2394,6 +2394,14 @@ input, select, textarea {
 			display: block;
 		}
 
+		.red-border {
+			#line copied from inspect work flow
+		}
+
+		.grey-border {
+    	border: 1px solid#AAAAAA;
+		}
+
 		.image-left, .image-right {
 			max-width: 50%;
 		}
@@ -2411,7 +2419,7 @@ input, select, textarea {
 		.image-fit img {
 			width: 100%;
 		}
-		
+
 		.image-header {
 			display: block;
 			margin: auto;
@@ -2554,14 +2562,14 @@ input, select, textarea {
 			font-weight: 500;
 			border-bottom: none;
 		}
-	
+
 		.topnav a:hover {
 			background-color: #eee;
 			color: #585858;
 			border-bottom: none;
 			padding: 14.25px 16px;
 		}
-	
+
 		.topnav a.active {
 			background-color: #4CAF50;
 			color: white;
@@ -2600,7 +2608,7 @@ input, select, textarea {
 			right: auto;
 			left: 0;
 		}
-		
+
 		.ham-drop-content a {
 			color: black !important;
 			padding: 12px 16px;
@@ -2614,11 +2622,11 @@ input, select, textarea {
 			background-color: #bdebeb;
 			border-bottom: none;
 		}
-	
+
 		.show {
 			display: block;
 		}
-	
+
 		.bar1, .bar2, .bar3 {
 			width: 35px;
 			height: 5px;
@@ -2626,21 +2634,21 @@ input, select, textarea {
 			margin: 6px 0;
 			transition: 0.4s;
 		}
-	
+
 		.change .bar1 {
 			-webkit-transform: rotate(-45deg) translate(-9px, 6px);
 			transform: rotate(-45deg) translate(-9px, 6px);
 		}
-	
+
 		.change .bar2 {
 			opacity: 0;
 		}
-	
+
 		.change .bar3 {
 			-webkit-transform: rotate(45deg) translate(-8px, -8px);
 			transform: rotate(45deg) translate(-8px, -8px);
 		}
-	
+
 
 	}
 
@@ -3330,7 +3338,7 @@ input, select, textarea {
 	.page-content h2 {
 		color: #585858;
 		margin: 1em 0 0.2em 0;
-		font-weight: 550;		
+		font-weight: 550;
 	}
 
 	.page-content h3 {
@@ -3470,15 +3478,15 @@ input, select, textarea {
 		}
 
 /* Main */
-/* min-height 80vh is to resolve the footer issue from sitting in the middle of the page */     
+/* min-height 80vh is to resolve the footer issue from sitting in the middle of the page */
 
 	.main {
 		padding: 6em 0 4em 0 ;
 	}
 
 		.main.style1 {
-			background: #fff;       
-            min-height: 80vh; 
+			background: #fff;
+            min-height: 80vh;
 		}
 
 		.main.style2 {
@@ -3770,7 +3778,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 4em 0 4em 0 ;  
+		padding: 4em 0 4em 0 ;
 		background-image: url("../../images/site/overlay8.png"), url("../../images/header.jpg");
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
@@ -3886,7 +3894,7 @@ input, select, textarea {
 					margin-left: 0;
 					padding: 0;
 				}
-              
+
 
 /* Video */
 
@@ -4176,7 +4184,7 @@ input, select, textarea {
 			.main {
 				padding: 2em 1em 0.1em 1em ;
 			}
-        
+
 
 		/* Header */
 
