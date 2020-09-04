@@ -17,14 +17,13 @@ If you do not need to create a new page and would like to make changes to an exi
 {% include image-right name="create-page" image_path="/images/readme/create-page-etw.png" %}
 
 <br>
+
 1. Navigate to the [_pages section](https://github.com/imagej/imagej.github.io/tree/master/_pages) of the `imagej.github.io` repository.
 Click `Add file` then  `Create new file` from the drop-down.
 
-{% include image-right name="name-your-file" image_path="/images/readme/name-your-file.png" %}
+2. Add a name for your file. **Note: this is not the page title;** the page title will be applied in the next section, front matter. File names should be lowercase, avoid symbols, and contain no spaces (use underscores or dashes instead, `_` `-`).
 
 {% include image-right name="name-your-file" image_path="/images/readme/name-your-file.png" classes="grey-border" %}
-
-2. Add a name for your file. **Note: this is not the page title;** the page title will be applied in the next section, front matter. File names should be lowercase, avoid symbols, and contain no spaces (use underscores or dashes instead, `_` `-`).
 
 ## Add the page's *front matter*
 The *front matter* precedes the content of your page, and sets several parameters that help setup your page within the repository. Without the front matter, your page will not render correctly.
@@ -75,55 +74,11 @@ Includes provide more robust formatting options and are unique to this site. Wit
 | Insert person details | [person]({{"/demo-person" | relative_url}})
 | Insert a sidebox | [sidebox]({{"/demo-sidebox" | relative_url}})
 | Insert the SNT nav bar | [SNT-nav]({{"/demo-SNT-nav" | relative_url}})|
+| Insert a table | [markdown-table]({{"/demo-markdown-table" | relative_url"}})
 | Insert a tech box | [tech-box]({{"/demo-tech-box" | relative_url}})
 | Insert a warning | [warning-box]({{"/demo-warning-box" | relative_url}}) |
+| Insert a YouTube video | [youtube-video]({{"/demo-youtube-video" | relative_url}}) |
 
-{% include sidebar title="Demo" content="Introduction, |, Left image, Right image, Center image, Fit image, Figure left, Figure right,Figure center, Figure row, Markdown table, YouTube video, Embedded images in table, Math equations, Sidebox, Syntax highlighting, Menu breadcrumbs" %}
-
-
-{% include anchor content="Introduction" %}
-
-While in Clojure one is able to declare types if desired, it's not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated.
-
-While in Clojure one is able to declare types if desired, it's not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated.
-
-{% include anchor content="Figure center" %}
-
-{% include figure-center name="place holder image" image_path="/images/placeholder.png" content="**Figure 3** : This is a center figure." %}
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-
-{% include anchor content="Figure row" %}
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-<div class="figure row" markdown="1">
-
-| ![placeholder image 1]({{site.baseurl}}/images/placeholder.png){: .image.fit} Row legend 1 | ![placeholder image 2]({{site.baseurl}}/images/placeholder.png){: .image.fit} Row legend 2 | ![placeholder image 3]({{site.baseurl}}/images/placeholder.png){: .image.fit} Row legend 3 |
-
-</div>
-
-{% include anchor content="Markdown table" %}
-
-| Item 1 | Item 2 | Item 3 |
-| :---: | :---: | :---: |
-| A | B | C |
-| 1 | 2 | 3 |
-
-{% include anchor content="YouTube video" %}
-
-{% include youtube url="https://www.youtube.com/embed/4NOM-kLfDR8" %}
-
-{% include anchor content="Embedded images in table" %}
-
-A table with images, use the .image.table to make it align with text:
-
-| :---: | :---: |
-|![Plugins]({{"/images/icons/plugins_icon.png" | relative_url}}){: .image.table} | A powerful mechanism for extending ImageJ in all kinds of useful ways.
-| ![Extend]({{"/images/icons/extend_icon.png" | relative_url}}){: .image.table} | Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster. |
 
 {% include anchor content="Syntax highlighting" %}
 
@@ -182,6 +137,12 @@ NOTE: filenames should be lowercase, omit spaces, and use extension `.md`.
 
 * Regularly save your progress with `git add` i.e. if within the `imagej.github.io` working directory, use command `git add _pages/your-page-name.md`
 
-## Pushing and pulling with Git
+## Pushing, pulling, and maintaining with Git
 
-Once you are ready to publish your
+Once you are ready to publish your your new page you will need to add, commit, and push your changes to the repository. These steps should looks something like:
+
+1. `git add path/to/your-page-name.md`
+2. `git commit path/to/your-page-name.md` Note: you will not be prompted to enter a commit message. Our lab uses imperative tense, i.e. "Add new page xzy"
+3. `git push` Your new page or edits will not be pushed to the master branch of the repository.
+
+[This guide](https://rogerdudler.github.io/git-guide/) provides further explanations on the above steps, as well as how to keep your local repository up-to-date with the master with `git pull`.
