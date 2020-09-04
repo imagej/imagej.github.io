@@ -1,33 +1,27 @@
-{% capture javadocs-content %}
-
-{% assign url=https://javadoc.scijava.org/" %}
-
-{% if include.project != "" %}
+{% capture javadoc-content %}
+{% assign url = "https://javadoc.scijava.org/" %}
+{% if include.project != null %}
 {% assign project = {{include.project}} %}
+{% else %}
+{% assign project = "ImageJ" %}
 {% endif %}
-
-{% if include.package != "" %}
+{% if include.package != null %}
 {% assign package = "/" | append: {{include.package}} %}
 {% endif %}
-
-{% if include.class != "" %}
-{% assign class = "/" | append: {{include.class}} | append: ".html"%}
+{% if include.class != null %}
+{% assign class = "/" | append: {{include.class}} | append: ".html" %}
 {% endif %}
-
-{% if include.anchor != "" %}
+{% if include.anchor != null %}
 {% assign anchor = "#" | append: {{include.anchor}} %}
 {% endif %}
-
-{% assign final_url =url | append: project | append: package | append: class | append: anchor | append: label}}
-
-{% if include.label != "" %}
+{% if include.label != null %}
 {% assign label = {{include.label}} %}
-{% else %}
+{% elsif include.class != null %}
 {% assign label = {{include.class}} %}
+{% else %}
+{% assign label = {{include.project}} %}
 {% endif %}
-
-<a href=”{{final_url}}”>{{label}}
-
+{% assign javadoc-url = url | append: {{project}} | append: {{package}} | append: {{class}} | append: {{anchor}} %}
+<a href="{{javadoc-url}}">{{label}}</a>
 {% endcapture %}
-
-{{javadocs-content}}
+{{javadoc-content | strip }}
