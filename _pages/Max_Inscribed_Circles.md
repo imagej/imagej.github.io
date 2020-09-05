@@ -70,11 +70,7 @@ And then call the static method
     //imp must be an 8-bit binary image
     ArrayList<Roi> circles = MaxInscribedCircles.findCircles(ImagePlus imp, double minD, boolean isSelectionOnly);
 
-Set the last argument
-
-    isSelectionOnly
-
-to true if you want to fit circles in the current selection. If you'd like to use the pixel mask, set it to false.
+Set the last argument `isSelectionOnly` to true if you want to fit circles in the current selection. If you'd like to use the pixel mask, set it to false.
 
 Notes
 -----
