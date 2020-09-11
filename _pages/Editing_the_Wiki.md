@@ -74,13 +74,13 @@ Includes provide more robust formatting options and are unique to this site. Wit
 | Insert person details | [person]({{"/demo-person" | relative_url}})
 | Insert a sidebox | [sidebox]({{"/demo-sidebox" | relative_url}})
 | Insert the SNT nav bar | [SNT-nav]({{"/demo-SNT-nav" | relative_url}})|
-| Insert a table | [markdown-table]({{"/demo-markdown-table" | relative_url"}})
+| Insert a table | [markdown-table]({{"/demo-markdown-table" | relative_url}})
 | Insert a tech box | [tech-box]({{"/demo-tech-box" | relative_url}})
 | Insert a warning | [warning-box]({{"/demo-warning-box" | relative_url}}) |
 | Insert a YouTube video | [youtube-video]({{"/demo-youtube-video" | relative_url}}) |
 
 
-{% include anchor content="Syntax highlighting" %}
+# Syntax highlighting
 
 Java example:
 
@@ -122,16 +122,19 @@ The jekyll static site generator can be installed on Linux, MacOS and Windows. T
 Once jekyll has been installed, [clone](https://docs.github.com/en/enterprise/2.13/user/articles/cloning-a-repository) the the imagej.github.io repository. Navigate to the cloned repository and run `bundle install` to install the specific gems used in imagej.github.io. Once this is complete, it is a good idea to run `bundle update`.
 
 ## Serve a local version of imagej.github.io
-Now that the both jekyll and the respository are installed on your local machine, you can run the static site generator by navigating to the directory imagej.github.io withing a terminal was saved and running `bundle exec jekyll serve`. Wait for a minute or two while it generates, and then in your browser navigate to `http://127.0.0.1:4000`. Changes you make to any file in the directory will be detected by jekyll, regenerating the site to reflect the new changes.
+Now that the both jekyll and the repository are installed on your local machine, you can run the static site generator by navigating to the directory imagej.github.io withing a terminal was saved and running `bundle exec jekyll serve`. Wait for a minute or two while it generates, and then in your browser navigate to `http://127.0.0.1:4000`. Changes you make to any file in the directory will be detected by jekyll, regenerating the site to reflect the new changes.
 
 Alternatively, you can run `bundle exec jekyll serve --incremental` to initiate the local server. This command will reduce the amount of time it takes for the site to regenerate if you anticipate making many changes in quick succession.
 
 ## Create a new page in `_pages`
 
-1. In `/path/to/imagej.github.io/_pages`, create a new text file i.e. `cat > your_page_name.md`. <br>
+In `/path/to/imagej.github.io/_pages`, create a new text file i.e. `cat > your_page_name.md`.
+
+<br>
+
 NOTE: filenames should be lowercase, omit spaces, and use extension `.md`.
 
-2. From here, the [front matter](Editing_the_Wiki#add-the-pages-front-matter) and content of the new page can be populated with a text editor of your choosing.
+From here, the [front matter](Editing_the_Wiki#add-the-pages-front-matter) and content of the new page can be populated with a text editor of your choosing.
 
 * Images and other media should be stored in `/path/to/imagej.github.io/media`.
 

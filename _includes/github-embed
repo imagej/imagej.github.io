@@ -1,1 +1,10 @@
-<span class="include githubembed">TODO githubembed:  <code>{{include}}</code></span>
+{% capture githubembed-content %}
+{% assign url = "https://github.com/" %}
+{% assign org = {{include.org}} %}
+{% assign repo = "/" | append: {{include.repo}} %}
+{% assign path = "/" | append: {{include.path}} %}
+{% assign label = {{include.label}} %}
+{% assign githubembed-url = url | append: {{org}} | append: {{path}} %}
+<a href="{{githubembed-url}}">{{label}}</a>
+{% endcapture %}
+{{githubembed-content | strip }}
