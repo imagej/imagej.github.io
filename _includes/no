@@ -1,1 +1,6 @@
-<span class="include no">TODO no:  <code>{{include}}</code></span>
+{% capture no %}
+<center>
+<img src="/images/icons/no-red-x.png" style="width:30px;height:30px;">
+</center>
+{% endcapture %}
+{{no}}

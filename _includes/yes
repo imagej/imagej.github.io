@@ -1,1 +1,6 @@
-<span class="include yes">TODO yes:  <code>{{include}}</code></span>
+{% capture yes %}
+<center>
+<img src="/images/icons/yes-green-check.png" style="width:30px;height:30px;">
+</center>
+{% endcapture %}
+{{yes}}
