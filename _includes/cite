@@ -1,1 +1,41 @@
-<span class="include cite">TODO cite:  <code>{{include}}</code></span>
+{% capture citation-content %}
+
+{% assign content = {{include content}} %}
+{% assign url = {{include.url}} %}
+{% assign author = {{include.author}} %}
+{% assign title = {{include.title}} %}
+{% if include.journal != null %}
+{% assign journal = {{include.journal}} %}
+{% endif %}
+{% if include.volume != null %}
+{% assign volume = {{include.volume}} append: ":" %}
+{% endif %}
+{% if include.number != null %}
+{% assign number = {{include.number}} %}
+{% endif %}
+{% if include.pages != null %}
+{% assign pages = {{include.pages}} | append: "," %}
+{% endif %}
+{% if include.year != null %}
+{% assign year = "(" | append: {{include.year}} | append: ")," %}
+{% endif %}
+{% if include.doi != null %}
+{% assign doi = {{include.doi}} %}
+{% assign doi-url = "doi:" | append: <a href="{{doi}}">{{doi}}</a> %}
+{% endif %}
+
+
+{{author}} {{year}} "<a href="{{url}}">{{title}}</a>", *{{journal}}* {{volume}} {{pages}} {{doi-url}}
+
+
+{% assign repo = "/" | append: {{include.repo}} %}
+{% assign path = "/" | append: {{include.path}} %}
+{% assign label = {{include.label}} %}
+{% assign citation-url = url | append: {{org}} | append: {{path}} %}
+<a href="{{githubembed-url}}">{{label}}</a>
+{% endcapture %}
+{{githubembed-content | strip }}
+
+
+
+{{citation-content | strip }}
