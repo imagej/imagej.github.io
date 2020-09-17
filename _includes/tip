@@ -1,1 +1,22 @@
-<span class="include tip">TODO tip:  <code>{{include}}</code></span>
+{% capture info_content %}
+<div info="content" markdown="1">
+{{include.tip}}
+</div>
+{% endcapture %}
+
+<div id="info-box">
+    <table class="table-tip-info">
+        <tbody>
+            <tr>
+                <td>
+                    <p>
+                        <b>Tip:</b>
+                    </p>
+                </td>
+                <td>
+                    {{info_content}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

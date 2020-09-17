@@ -3234,6 +3234,15 @@ input, select, textarea {
 
 	}
 
+	.table-tip-info {
+		margin: 0 10%;
+		float: center;
+		border-collapse: collapse;
+		background: #f9f9f9;
+		border: 1px solid #aaa;
+		width: 80%;
+	}
+
 	.table-info {
 		margin: 0 10%;
 		border-collapse: collapse;
