@@ -37,7 +37,7 @@ Demo
 
 The following video shows an example of Fijiyama application: the registration of two stacks of MRI 3D images, collected on a grapevine cutting at different dates(see the "Training tutorial" for details).
 
-{% include youtube url='https://www.youtube.com/embed/QG\_i50XJRfc'%}
+{% include youtube url='https://www.youtube.com/embed/QG_i50XJRfc'%}
 
 Plugin features
 ---------------
