@@ -8,34 +8,26 @@
 {% assign journal = {{include.journal}} %}
 {% endif %}
 {% if include.volume != null %}
-{% assign volume = {{include.volume}} append: ":" %}
+{% assign volume = {{include.volume}} | append: "**" | prepend: "**" | append: ":" %}
 {% endif %}
 {% if include.number != null %}
 {% assign number = {{include.number}} %}
 {% endif %}
-{% if include.pages != null %}
-{% assign pages = {{include.pages}} | append: "," %}
+{% if include.page != null %}
+{% assign page = {{include.page}} | append: "," %}
+{% else %}
+{% assign page = {{include.pages}} | append: "," %}
 {% endif %}
 {% if include.year != null %}
 {% assign year = "(" | append: {{include.year}} | append: ")," %}
 {% endif %}
 {% if include.doi != null %}
 {% assign doi = {{include.doi}} %}
-{% assign doi-url = "doi:" | append: <a href="{{doi}}">{{doi}}</a> %}
+{% assign doi-url = "doi:" | append: "<a href={{doi}}></a>" %}
 {% endif %}
-
-
-{{author}} {{year}} "<a href="{{url}}">{{title}}</a>", *{{journal}}* {{volume}} {{pages}} {{doi-url}}
-
-
-{% assign repo = "/" | append: {{include.repo}} %}
-{% assign path = "/" | append: {{include.path}} %}
-{% assign label = {{include.label}} %}
-{% assign citation-url = url | append: {{org}} | append: {{path}} %}
-<a href="{{githubembed-url}}">{{label}}</a>
 {% endcapture %}
-{{githubembed-content | strip }}
 
+{{author}} {{year}} "<a href="{{url}}">{{title}}</a>", *{{journal}}* {{volume}} {{page}} {{doi-url}}
 
 
 {{citation-content | strip }}
