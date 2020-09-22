@@ -22,7 +22,7 @@
 {% assign year = "(" | append: {{include.year}} | append: ")," %}
 {% endif %}
 {% if include.doi != null %}
-{% assign doi = "doi:<a href=" | append: '"' | append: {{include.doi}} | append: '"' | append: ">" | append: {{include.doi}} | append: "</a>" %}
+{% assign doi = "doi:<a href=" | append: '"' | |append: "https://dx.doi.org/" | append: {{include.doi}} | append: '"' | append: ">" | append: {{include.doi}} | append: "</a>" %}
 {% endif %}
 {{author}} {{year}} "<a href="{{url}}">{{title}}</a>", *{{journal}}* {{volume}} {{page}} {{doi}}
 {% endcapture %}
