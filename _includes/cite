@@ -22,11 +22,10 @@
 {% assign year = "(" | append: {{include.year}} | append: ")," %}
 {% endif %}
 {% if include.doi != null %}
-{% assign doi = "doi:<a href=" | append: \"\ | append: {{include.doi}} | append: \"\ | append: ">" | append: {{include.doi}} | append: "</a>" %}
+{% assign doi = "doi:<a href=" | append: '"' | append: {{include.doi}} | append: '"' | append: ">" | append: {{include.doi}} | append: "</a>" %}
 {% endif %}
-{% endcapture %}
-
 {{author}} {{year}} "<a href="{{url}}">{{title}}</a>", *{{journal}}* {{volume}} {{page}} {{doi}}
+{% endcapture %}
 
 
 {{citation-content | strip }}
