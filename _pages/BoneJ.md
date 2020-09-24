@@ -26,6 +26,7 @@ Below is the documentation for the plug-ins included in BoneJ.
 
 Installation
 ------------
+![400 px\|Install BoneJ](/media/Install-bonej.png "400 px|Install BoneJ")
 
 1.  [Download](https://imagej.net/Downloads) the latest version of Fiji for your operating system
 2.  Launch Fiji
