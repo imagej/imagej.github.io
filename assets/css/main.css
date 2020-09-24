@@ -3243,6 +3243,18 @@ input, select, textarea {
 		width: 80%;
 	}
 
+	.table-OS-info {
+		margin-top: 1em;
+		margin-bottom: 2em;
+		background-color: #ffefbe; -moz-border-radius: .75em; -webkit-border-radius: .75em;
+		border-radius: .75em; -moz-box-shadow: 4px 4px 4px #CCC; -webkit-box-shadow: 4px 4px 4px #CCC;
+		box-shadow: 4px 4px 4px #CCC;
+		width: 300px;
+		float:right;
+		border: 1px solid #ccc;
+		padding: 15px !important;
+	}
+
 	.table-info {
 		margin: 0 10%;
 		border-collapse: collapse;

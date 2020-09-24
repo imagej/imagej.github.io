@@ -14,17 +14,17 @@
 {% assign number = {{include.number}} %}
 {% endif %}
 {% if include.page != null %}
-{% assign page = {{include.page}} | append: "," %}
+{% assign page = {{include.page}} %}
 {% else %}
-{% assign page = {{include.pages}} | append: "," %}
+{% assign page = {{include.pages}} %}
 {% endif %}
 {% if include.year != null %}
 {% assign year = "(" | append: {{include.year}} | append: ")," %}
 {% endif %}
 {% if include.doi != null %}
-{% assign doi = "doi:<a href=" | append: '"' | |append: "https://dx.doi.org/" | append: {{include.doi}} | append: '"' | append: ">" | append: {{include.doi}} | append: "</a>" %}
+{% assign doi = ", doi:<a href=" | append: '"' | |append: "https://dx.doi.org/" | append: {{include.doi}} | append: '"' | append: ">" | append: {{include.doi}} | append: "</a>" %}
 {% endif %}
-{{author}} {{year}} "<a href="{{url}}">{{title}}</a>", *{{journal}}* {{volume}} {{page}} {{doi}}
+{{author}} {{year}} "<a href="{{url}}">{{title}}</a>", *{{journal}}* {{volume}} {{page}} {{doi}}.
 {% assign doi = "" %}
 {% endcapture %}
 
