@@ -1,1 +1,22 @@
-<span class="include macos">TODO macos:  <code>{{include}}</code></div>
+{% capture info_content %}
+<div info="content" markdown="1">
+{{include.content}}
+</div>
+{% endcapture %}
+
+<div id="info-box">
+    <table class="table-OS-info">
+        <tbody>
+            <tr>
+                <td>
+                    <p>
+                        <img src="/images/logos/Osx.png" width=64 height=64>
+                    </p>
+                </td>
+                <td>
+                    {{info_content}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
