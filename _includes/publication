@@ -1,1 +1,3 @@
-<span class="include publication">TODO publication:  <code>{{include}}</code></span>
+{% if include.publication | ImageJ2 %}
+Rueden, C. T.; Schindelin, J. & Hiner, M. C. et al. (2017), "<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1934-z">ImageJ2: ImageJ for the next generation of scientific image data</a>", BMC Bioinformatics 18:529, PMID 29187165, doi:"<a href="https://10.1186/s12859-017-1934-z">10.1186/s12859-017-1934-z</a>" (<a href="https://scholar.google.com/scholar?cluster=8433857897174342172">on Google Scholar</a>)
+{% endif %}

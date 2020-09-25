@@ -3234,6 +3234,16 @@ input, select, textarea {
 
 	}
 
+	.learn-table {
+		cellspacing: 5;
+		collapsetext: -;
+		text-align: left;
+		float: right;
+		border: 1px solid #a0a0a0;
+		font-size: 80%
+
+	}
+
 	.table-tip-info {
 		margin: 0 10%;
 		float: center;

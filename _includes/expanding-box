@@ -1,1 +1,6 @@
-<span class="include expanding-box">TODO expanding-box:  <code>{{include}}</code></span>
+{{% capture content %}}
+{{% include.content | replace: "|", "
+>" %}}
+{{% endcapture %}}
+
+{{content}}
