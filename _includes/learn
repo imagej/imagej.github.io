@@ -13,10 +13,13 @@
 <th>  Topics
 </th></tr>
 
-
+{% if page.title == "Introduction" %}
+<h2>Introduction</h2>
+{% else %}
 <tr>
 <td>  <a href="Introduction" title="Introduction">Introduction</a>
 </td></tr>
+{% endif %}
 <tr>
 <td>  <a href="Getting_Started" title="Getting Started">Getting Started</a>
 </td></tr>
