@@ -1,1 +1,4 @@
-<span class="include personlist">TODO personlist:  <code>{{include}}</code></span>
+{% assign people = include.content | split: "|" %}
+{% for person in people %}
+{% include person content=person %}
+{% endfor %}
