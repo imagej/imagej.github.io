@@ -1,1 +1,4 @@
+{% capture content %}
 ›
+{% endcapture %}
+{{content | strip }}

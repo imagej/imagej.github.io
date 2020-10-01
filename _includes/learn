@@ -14,15 +14,20 @@
 </th></tr>
 
 {% if page.title == "Introduction" %}
-<h2>Introduction</h2>
+<h3>Introduction</h3>
 {% else %}
 <tr>
 <td>  <a href="Introduction" title="Introduction">Introduction</a>
 </td></tr>
 {% endif %}
+
+{% if page.title == "Getting_Started" %}
+<h3>Getting_Started</h3>
+{% else %}
 <tr>
 <td>  <a href="Getting_Started" title="Getting Started">Getting Started</a>
 </td></tr>
+{% endif %}
 <tr>
 <td>  <a href="User_Guides" title="User Guides">User Guides</a>
 </td></tr>
