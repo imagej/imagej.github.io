@@ -1,1 +1,114 @@
-<span class="include maintainers">TODO maintainers:  <code>{{include}}</code></span>
+{% if include.maintainer == "Ignacio Arganda-Carreras" %}
+### Plugins
+<a href="https://imagej.net/Register_virtual_stack_slices">Register virtual stack slices</a><br>
+<a href="https://imagej.net/Analyze_Skeleton_(2D/3D)">Analyze Skeleton (2D/3D)</a><br>
+<a href="https://imagej.net/Skeletonize_(2D/3D)">Skeletonize (2D/3D)</a><br>
+<a href="https://imagej.net/BUnwarpJ">BUnwarpJ</a><br>
+### Packages
+<a href="https://imagej.net/Register_virtual_stack_slices">Register virtual stack slices</a><br>
+<a href="https://imagej.net/AnalyzeSkeleton">AnalyzeSkeleton</a><br>
+<a href="https://imagej.net/Skeletonize3D">Skeletonize3D</a><br>
+<a href="https://imagej.net/BUnwarpJ">BUnwarpJ</a><br>
+{% endif %}
+
+{% if include.maintainer == "Albert Cardona" %}
+### Plugins
+<a href="https://imagej.net/Level_Sets">Level Sets</a><br>
+<a href="https://imagej.net/Extract_Images_From_PDF...">Extract Images From PDF...</a><br>
+<a href="https://imagej.net/TrakEM2_(from_template)">TrakEM2 (from template)</a><br>
+<a href="https://imagej.net/TrakEM2_(blank)">TrakEM2 (blank)</a><br>
+### Packages
+<a href="https://imagej.net/Level_sets">Level sets</a><br>
+<a href="https://imagej.net/TrakEM2">TrakEM2</a><br>
+{% endif %}
+
+
+{% if include.maintainer == "Johannes Schindelin" %}
+### Plugins
+<a href="https://imagej.net/Delaunay_Voronoi">Delaunay Voronoi</a><br>
+<a href="https://imagej.net/Update_Fiji">Update Fiji</a><br>
+<a href="https://imagej.net/Fiji_Wiki">Fiji Wiki</a><br>
+### Packages
+{% endif %}
+
+
+{% if include.maintainer == "Verena Kaynig" %}
+### Plugins
+<a href="https://imagej.net/Distortion_Correction">Distortion Correction</a><br>
+### Packages
+{% endif %}
+
+
+{% if include.maintainer == "Gabriel Landini" %}
+### Plugins
+<a href="https://imagej.net/IJ_Robot">IJ Robot</a><br>
+<a href="https://imagej.net/Auto_Local_Threshold">Auto Local Threshold</a><br>
+<a href="https://imagej.net/Auto_Threshold">Auto Threshold</a><br>
+### Packages
+<a href="https://imagej.net/IJ_Robot">IJ Robot</a><br>
+<a href="https://imagej.net/Auto_Threshold">Auto Threshold</a><br>
+{% endif %}
+
+
+{% if include.maintainer == "Mark Longair" %}
+### Plugins
+<a href="https://imagej.net/Tubeness">Tubeness</a><br>
+<a href="https://imagej.net/2D_Histogram">2D Histogram</a><br>
+<a href="https://imagej.net/Surfaceness">Surfaceness</a><br>
+<a href="https://imagej.net/Compute_Curvatures">Compute Curvatures</a><br>
+<a href="https://imagej.net/JRuby_Interpreter">JRuby Interpreter</a><br>
+<a href="https://imagej.net/Refresh_JRuby_Scripts">Refresh JRuby Scripts</a><br>
+<a href="https://imagej.net/Simple_Neurite_Tracer">Simple Neurite Tracer</a><br>
+<a href="https://imagej.net/Mask_Of_Nearby_Points">Mask Of Nearby Points</a><br>
+<a href="https://imagej.net/Quantile_Based_Normalization">Quantile Based Normalization</a><br>
+<a href="https://imagej.net/Show_Color_Surfaces">Show Color Surfaces</a><br>
+<a href="https://imagej.net/Find_Connected_Regions">Find Connected Regions</a><br>
+<a href="https://imagej.net/Crop_(3D)">Crop (3D)</a><br>
+<a href="https://imagej.net/Average_Images">Average Images</a><br>
+<a href="https://imagej.net/Name_Landmarks_and_Register">Name Landmarks and Register</a><br>
+<a href="https://imagej.net/Wavefront_.OBJ_...">Wavefront .OBJ ...</a><br>
+### Packages
+<a href="https://imagej.net/JRuby_Interpreter">JRuby Interpreter</a><br>
+{% endif %}
+
+
+{% if include.maintainer == "Benjamin Schmid" %}
+### Plugins
+<a href="https://imagej.net/3D_Viewer">3D Viewer</a><br>
+<a href="https://imagej.net/Segmentation_Editor">Segmentation Editor</a><br>
+<a href="https://imagej.net/Median_(3D)">Median (3D)</a><br>
+<a href="https://imagej.net/Maximum_(3D)">Maximum (3D)</a><br>
+<a href="https://imagej.net/Minimum_(3D)">Minimum (3D)</a><br>
+<a href="https://imagej.net/Erode_(3D)">Erode (3D)</a><br>
+<a href="https://imagej.net/Dilate_(3D)">Dilate (3D)</a><br>
+### Packages
+{% endif %}
+
+
+{% if include.maintainer == "Jean-Yves Tinevez" %}
+### Plugins
+<a href="https://imagej.net/Concatenate">Concatenate</a><br>
+<a href="https://imagej.net/Substack_Maker">Substack Maker</a><br>
+<a href="https://imagej.net/Stack_Inserter">Stack Inserter</a><br>
+<a href="https://imagej.net/Stack_Spliter">Stack Spliter</a><br>
+<a href="https://imagej.net/Stack_Sorter">Stack Sorter</a><br>
+<a href="https://imagej.net/Stack_Combiner">Stack Combiner</a><br>
+<a href="https://imagej.net/Stack_Reverser">Stack Reverser</a><br>
+<a href="https://imagej.net/Dynamic_Reslice">Dynamic Reslice</a><br>
+<a href="https://imagej.net/Stack_Maker">Stack Maker</a><br>
+<a href="https://imagej.net/Slice_Remover">Slice Remover</a><br>
+<a href="https://imagej.net/PIV_analysis">PIV analysis</a><br>
+<a href="https://imagej.net/FlowJ">FlowJ</a><br>
+### Packages
+<a href="https://imagej.net/Stack_Manipulation">Stack Manipulation</a><br>
+<a href="https://imagej.net/PIV_analyser">PIV analyser</a><br>
+<a href="https://imagej.net/FlowJ">FlowJ</a><br>
+{% endif %}
+
+
+{% if include.maintainer == "Dan White" %}
+### Plugins
+<a href="https://imagej.net/Time_Stamper">Time Stamper</a><br>
+### Packages
+<a href="https://imagej.net/Time_Stamper">Time Stamper</a><br>
+{% endif %}
