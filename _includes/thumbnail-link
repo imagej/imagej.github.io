@@ -1,1 +1,15 @@
-<span class="include thumbnail-link">TODO thumbnail-link:  <code>{{include}}</code></span>
+{% if include.link != null %}
+{% assign link = {{include.link}} %}
+{% endif %}
+
+{% if include.src != null %}
+{% assign src = {{include.src}} %}
+{% endif %}
+
+{% if include.title != null %}
+{% assign title = {{include.title}} %}
+{% endif %}
+
+<a href="/{{link}}">
+<img src="{{src}}" alt="{{title}}"
+style="float:right;width:250px;height:194px;"></a>

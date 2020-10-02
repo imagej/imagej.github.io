@@ -1,1 +1,21 @@
-<span class="include pluginremoved">TODO pluginremoved:  <code>{{include}}</code></span>
+<div id="info-box">
+    <table class="table-info">
+        <tbody>
+            <tr>
+                <td>
+                    <p>
+                        <img src="/media/Removed-from-Fiji.png" style="width:64px;height:64px;">
+                    </p>
+                </td>
+                <td>
+                    <div align="center"><b>This plugin has been removed from the current Fiji distribution.</b></div>
+                    <div markdown="1">{{reason}}</div>
+                    <br>
+                    <i>{{include.date}}</i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<br>

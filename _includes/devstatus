@@ -1,1 +1,15 @@
-<span class="include devstatus">TODO devstatus:  <code>{{include}}</code></span>
+{% if include.developer == "yes" and include.incubating != "yes" %}
+Active
+{% endif %}
+
+{% if include.developer == "no" %}
+Stable
+{% endif %}
+
+{% if include.developer == "yes" and include.incubating == "yes" %}
+Unstable
+{% endif %}
+
+{% if include.obsolete == "yes" %}
+Obsolete
+{% endif %}
