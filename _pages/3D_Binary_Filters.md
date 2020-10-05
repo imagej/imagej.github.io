@@ -7,11 +7,11 @@ description: test description
 ---
 
 
-{% capture filename%}
+{% capture filename %}
 {% include maven g='sc.fiji' a='VIB\_' %}
 {% endcapture %}
 
-{% capture source%}
+{% capture source %}
 {% include github org='fiji' repo='VIB' %}
 {% endcapture %}
 {% include info-box name='Minimum/Maximum/Median' software='ImageJ' author='Benjamin Schmid' maintainer='Benjamin Schmid' filename=filename source=source latest-version='3.0.0, December 17<sup>th</sup>, 2015' status='beta' %}
@@ -31,5 +31,3 @@ The applied kernel has a diameter of 3 voxels.
 The image below shows the effect of the 'Erode' and 'Dilate' filters, using the Bat Cochlea image which comes as one of ImageJ's and Fiji's sample images. Both filters are applied three times, to make the effect clearer.
 
 ![](/media/ErodeDilate.png "ErodeDilate.png")
-
-

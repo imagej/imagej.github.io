@@ -1,1 +1,33 @@
-<span class="include maven">TODO maven:  <code>{{include}}</code></span>
+{% capture content %}
+{% assign url = "https://maven.scijava.org/index.html#nexus-search;gav~" %}
+{% if include.g != null %}
+{% assign g = {{include.g}} %}
+{% endif %}
+
+{% if include.a != null %}
+{% assign a = {{include.a}} %}
+{% endif %}
+
+{% if include.v != null %}
+{% assign v = {{include.v}} %}
+{% endif %}
+
+{% if include.p != null %}
+{% assign p = {{include.p}} %}
+{% endif %}
+
+{% if include.c != null %}
+{% assign c = {{include.c}} %}
+{% endif %}
+
+{% assign maven-url = url | append: {{g}} | append: "~" | append: {{a}} | append: "~" | append: {{v}} | append: "~" | append: {p}} | append: "~" | append: {{c}} | append: "~" | append: "kw,versionexpand" %}
+
+{% if include.label != null %}
+{% assign label = {{include.label}} %}
+{% endif %}
+
+
+<a href="{{maven-url}}">{{label}}</a>
+
+{% endcapture %}
+{{content}}

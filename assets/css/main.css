@@ -2256,6 +2256,29 @@ input, select, textarea {
 		padding: 1.5em;
 	}
 
+	div.minibox {
+	    border: thin solid #cccccc;
+	    padding: 0.2em;
+	    background-color: #f9f9f9;
+	    font-size: 0.875em;
+	    text-align: center;
+	    overflow: hidden;
+	}
+
+	div.miniboxcaption {
+			font-family: 'Linux Libertine',constantia,'hoefler text','palatino linotype',serif;
+			line-height: 1.4;
+			color: #333333;
+			direction: ltr;
+			margin: 0;
+			outline: 0;
+			font-size: 100%;
+			vertical-align: baseline;
+			background: transparent;
+			border: none;
+			padding: 0.2em;
+			text-align: left;
+}
 		.box > :last-child,
 		.box > :last-child > :last-child,
 		.box > :last-child > :last-child > :last-child {
@@ -4230,3 +4253,34 @@ input, select, textarea {
 			}
 
 	}
+
+		/* Info-side-box */
+
+			div.info-side-box {
+				font-family: 'Linux Libertine',constantia,'hoefler text','palatino linotype',serif;
+				line-height: 1.4;
+				color: #333333;
+				direction: ltr;
+				margin: 0;
+				outline: 0;
+				font-size: 100%;
+				vertical-align: baseline;
+				background: transparent;
+				float: right;
+				width: 450px;
+				border: 1px solid #ccc;
+				padding: 15px !important;
+				margin-bottom: 2em;
+				background-color: #f9f9f9;
+				border-radius: .75em;
+				box-shadow: 4px 4px 4px #CCC;
+			}
+
+			.table-side-info {
+				margin: 0 10%;
+				border-collapse: collapse;
+				background: #f9f9f9;
+				border: 1px solid #aaa;
+				width: 45%;
+			}
+}

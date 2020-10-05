@@ -1,1 +1,12 @@
-<span class="include imagej1">TODO imagej1:  <code>{{include}}</code></span>
+{% capture info_content %}
+<div info="content" markdown="1">
+{{include.content}}
+</div>
+{% endcapture %}
+
+<div class="info-side-box">
+<div class="floatleft">
+<img alt="Imagej1-icon.png" src="/images/logos/Imagej1-icon.png" width="64" height="64" style="float:left;">
+</div>
+{{info_content}}
+</div>
