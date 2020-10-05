@@ -15,33 +15,33 @@ For users
 
 -   Otherwise, you can just drag 'n drop the plugin .jar file (from the Explorer, Finder or any file browser) into the plugins directory:
 
-  
+
 <img src="/media/Install-Plugin-DragNDrop.png" width="750"/>
 
 <!-- -->
 
-  
+
 This will ask you for the <u>destination</u> of the plugin, just hitting *Save* is safe.
 
 -   Alternatively, use {% include bc content='Plugins | Install Plugin...'%}:
 
-  
+
 <img src="/media/Install-Plugin.png" width="550"/>
 
 <!-- -->
 
-  
+
 It will ask you for the file name of the plugin, and install the given file.
 
 -   You can also copy the *.jar*, *.class* or *.java* files (or a script in any language Fiji supports) to *Fiji.app/plugins/*, followed by calling {% include bc content='Help | Refresh Menus'%}.
 
-  
+
 **Note:** On MacOSX, you need to {% include key content='Ctrl' %}+{% include key content='click' %} on the *Fiji* icon in the Finder and select *Show package contents* to see the *plugins/* folder.
 
 For developers
 --------------
 
-{% include template content='Outdated' %}
+{% include warning-box content='This section is out of date, potentially misleading or invalid. Be careful with any instructions here. When in doubt,  [ask for help from the community](https://imagej.net/Help).' %}
 
 Please try to avoid closed-source plugins.
 
@@ -64,5 +64,3 @@ In other words, the .config file will become the plugins.config of the .jar file
 Please make sure that your .config file is designed such that the menus fit in snuggly with the common Fiji menu structure.
 
 Then just "make", and the plugin will be automatically installed.
-
-
