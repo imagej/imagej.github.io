@@ -14,9 +14,9 @@ Installation
 ------------
 
 Bigwarp comes with Fiji. You can access it via *Plugins {% include arrow%}
- BigDataViewer {% include arrow%}
- Big Warp*, or by modifying {% include github org='saalfeldlab' repo='bigwarp' path='scripts/bigwarp\_fiji\_demo.bsh' label='this example script' %}. If this is not visible in your installation, try updating Fiji with *Help {% include arrow%}
- Update Fiji.*
+BigDataViewer {% include arrow%}
+Big Warp*, or by modifying {% include github org='saalfeldlab' repo='bigwarp' path='scriptsbigwarp\_fiji\_demo.bsh' label='this example script' %}. If this is not visible in your installation, try updating Fiji with *Help {% include arrow%}
+Update Fiji.*
 
 Usage
 -----
@@ -233,5 +233,3 @@ Publications using BigWarp
 6.  Gao et al. ["Cortical column and whole-brain imaging with molecular contrast and nanoscale resolution."](http://science.sciencemag.org/content/363/6424/eaau8302.abstract) Science 363 (6424) 2019.
 7.  Wan et al. ["Single-Cell Reconstruction of Emerging Population Activity in an Entire Developing Circuit."](https://www.sciencedirect.com/science/article/pii/S0092867419309584) Cell 179(2) 2019.
 8.  Hoffman, Shtengel et al. ["Correlative three-dimensional super-resolution and block-face electron microscopy of whole vitreously frozen cells."](https://science.sciencemag.org/content/367/6475/eaaz5357) Science 367 (6475) 2020.
-
-    

@@ -15,7 +15,7 @@ description: test description
 Downloads
 ---------
 
-{% include downloadfiji%}
+{% include downloadfiji %}
  See the [Fiji Downloads](Fiji_Downloads) page for Life-Line versions, etc.
 
 License
@@ -47,5 +47,3 @@ Publication
 -----------
 
 -   {% include publication content='Fiji' %}
-
-  

@@ -5,7 +5,7 @@
 {% endcapture %}
 
 <div id="info-box">
-    <table class="ambox">
+    <table class="table-ambox">
         <tbody>
             <tr>
                 <td>

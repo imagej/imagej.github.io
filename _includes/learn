@@ -13,36 +13,57 @@
 <th>  Topics
 </th></tr>
 
+
 {% if page.title == "Introduction" %}
-<h3>Introduction</h3>
+<b>Introduction</b>
 {% else %}
 <tr>
-<td>  <a href="Introduction" title="Introduction">Introduction</a>
+<td><a href="Introduction" title="Introduction">Introduction</a>
 </td></tr>
 {% endif %}
-
-{% if page.title == "Getting_Started" %}
-<h3>Getting_Started</h3>
+{% if page.title == "Getting Started" %}
+<b>Getting_Started</b>
 {% else %}
 <tr>
 <td>  <a href="Getting_Started" title="Getting Started">Getting Started</a>
 </td></tr>
 {% endif %}
+{% if page.title == "User Guides" %}
+<b>User Guides</b>
+{% else %}
 <tr>
 <td>  <a href="User_Guides" title="User Guides">User Guides</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Tutorials" %}
+<b>Tutorials</b>
+{% else %}
 <tr>
 <td>  <a href="./Category:Tutorials" title="Category:Tutorials">Tutorials</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Tips and Tricks" %}
+<b>Tips and Tricks</b>
+{% else %}
 <tr>
 <td>  <a href="Tips_and_Tricks" title="Tips and Tricks">Tips and Tricks</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Presentations" %}
+<b>Presentations</b>
+{% else %}
 <tr>
 <td>  <a href="Presentations" title="Presentations">Presentations</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Plugins" %}
+<b>Plugins</b>
+{% else %}
 <tr>
 <td>  <a href="Plugins" title="Plugins">Plugins</a>
-</td></tr></table>
+</td></tr>
+{% endif %}
+</table>
 </td></tr>
 <tr>
 <td>
@@ -55,78 +76,162 @@
 <tr>
 <td>  <a href="./Category:Techniques" title="Category:Techniques">All Techniques</a>
 </td></tr>
+{% if page.title == "Colocalization" %}
+<b>Colocalization</b>
+{% else %}
 <tr>
 <td>  <a href="Colocalization_Analysis" title="Colocalization Analysis"> Colocalization</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Deconvolution" %}
+<b>Deconvolution</b>
+{% else %}
 <tr>
 <td>  <a href="Deconvolution" title="Deconvolution">Deconvolution</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Registration" %}
+<b>Registration</b>
+{% else %}
 <tr>
 <td>  <a href="Registration" title="Registration">Registration</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Segmentation" %}
+<b>Segmentation</b>
+{% else %}
 <tr>
 <td>  <a href="Segmentation" title="Segmentation">Segmentation</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Stitching" %}
+<b>Stitching</b>
+{% else %}
 <tr>
 <td>  <a href="Image_Stitching" title="Image Stitching"> Stitching</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Tracking" %}
+<b>Tracking</b>
+{% else %}
 <tr>
 <td>  <a href="Tracking" title="Tracking">Tracking</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Visualization" %}
+<b>Visualization</b>
+{% else %}
 <tr>
 <td>  <a href="Visualization" title="Visualization">Visualization</a>
-</td></tr></table>
+</td></tr>
+{% endif %}
+</table>
 </td></tr>
 <tr>
 <td>
 <table class="infobox mw-collapsible mw-collapsed" cellspacing="5" data-collapsetext="-" data-expandtext="+" style="width: 100%; text-align: left; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;">
 <tr>
 <th>  Scripting
-</th></tr>
+</th>
 
-
+{% if page.title == "Scripting" %}
+<b>Scripting</b>
+{% else %}
 <tr>
 <td>  <a href="Scripting" title="Scripting">Overview</a>
 </td></tr>
+{% endif %}
+{% if page.title == "User input" %}
+<b>User Input</b>
+{% else %}
 <tr>
 <td>  <a href="User_input" title="User input">User input</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Basics of script writing" %}
+<b>Scripting Basics</b>
+{% else %}
 <tr>
 <td>  <a href="Scripting_basics" title="Scripting basics">Basics of script writing</a>
 </td></tr>
+{% endif %}
+{% if page.title == "How to use the Javadoc" %}
+<b>Using Javadoc</b>
+{% else %}
 <tr>
 <td>  <a href="How_to_use_the_Javadoc" title="How to use the Javadoc">How to use the Javadoc</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Batch Processing" %}
+<b>Batch Processing</b>
+{% else %}
 <tr>
 <td>  <a href="Batch_Processing" title="Batch Processing">Batch processing</a>
 </td></tr>
-<tr>
+{% endif %}
+{% if page.title == "Script Editor" %}
+<b>Script Editor</b>
+{% else %}
 <td>  <a href="Using_the_Script_Editor" title="Using the Script Editor">Script Editor</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Auto Imports" %}
+<b>Autor Imports</b>
+{% else %}
 <tr>
 <td>  <a href="Script_Editor_Auto_Import" title="Script Editor Auto Import">Auto Imports</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Templates" %}
+<b>Templates</b>
+{% else %}
 <tr>
 <td>  <a href="Script_Templates" title="Script Templates">Templates</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Running headlessly" %}
+<b>Running Headlessly</b>
+{% else %}
 <tr>
 <td>  <a href="Scripting_Headless" title="Scripting Headless">Running headlessly</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Comparisons" %}
+<b>Comparisons</b>
+{% else %}
 <tr>
 <td>  <a href="Scripting_comparisons" title="Scripting comparisons">Comparisons</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Toolbox" %}
+<b>Toolbox</b>
+{% else %}
 <tr>
 <td>  <a href="Scripting_toolbox" title="Scripting toolbox">Toolbox</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Multithreaded Image Processing in Clojure" %}
+<b>Multithreading with Clojure</b>
+{% else %}
 <tr>
 <td>  <a href="Multithreaded_Image_Processing_in_Clojure" title="Multithreaded Image Processing in Clojure">Multithreading in Clojure</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Multithreaded Image Processing in JavaScript" %}
+<b>Multithreading in Javascript</b>
+{% else %}
 <tr>
 <td>  <a href="Multithreaded_Image_Processing_in_JavaScript" title="Multithreaded Image Processing in JavaScript">Multithreading in JavaScript</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Chess in Jython" %}
+<b>Chess in Jython</b>
+{% else %}
 <tr>
 <td>  <a href="Chess" title="Chess">Chess</a> in Jython
-</td></tr></table>
+</td></tr>
+{% endif %}
+</table>
 </td></tr>
 <tr>
 <td>
@@ -135,37 +240,77 @@
 <th>  Languages
 </th></tr>
 
-
+{% if page.title == "BeanShell Scripting" %}
+<b>Beanshell</b>
+{% else %}
 <tr>
 <td>  <a href="BeanShell_Scripting" title="BeanShell Scripting">BeanShell</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Groovy Scripting" %}
+<b>Groovy</b>
+{% else %}
 <tr>
 <td>  <a href="Groovy_Scripting" title="Groovy Scripting">Groovy</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Introduction into Macro Programming" %}
+<b>ImageJ Macro</b>
+{% else %}
 <tr>
 <td>  <a href="Introduction_into_Macro_Programming" title="Introduction into Macro Programming">ImageJ Macro</a>
 </td></tr>
+{% endif %}
+{% if page.title == "JavaScript Scripting" %}
+<b>JavaScript</b>
+{% else %}
 <tr>
 <td>  <a href="JavaScript_Scripting" title="JavaScript Scripting">JavaScript</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Clojure Scripting" %}
+<b>Lisp (Clojure)</b>
+{% else %}
 <tr>
 <td>  <a href="Clojure_Scripting" title="Clojure Scripting">Lisp (Clojure)</a>
 </td></tr>
+{% endif %}
+{% if page.title == "MATLAB Scripting" %}
+<b>MATLAB</b>
+{% else %}
 <tr>
 <td>  <a href="MATLAB_Scripting" title="MATLAB Scripting">MATLAB</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Jything Scripting" %}
+<b>Python(Jython)</b>
+{% else %}
 <tr>
 <td>  <a href="Jython_Scripting" title="Jython Scripting">Python (Jython)</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Renjin Scripting" %}
+<b>R(Renjin)</b>
+{% else %}
 <tr>
 <td>  <a href="Renjin_Scripting" title="Renjin Scripting">R (Renjin)</a>
 </td></tr>
+{% endif %}
+{% if page.title == "JRuby Scripting" %}
+<b>Ruby(JRuby)</b>
+{% else %}
 <tr>
 <td>  <a href="JRuby_Scripting" title="JRuby Scripting">Ruby (JRuby)</a>
 </td></tr>
+{% endif %}
+{% if page.title == "Scala Scripting" %}
+<b>Scala</b>
+{% else %}
 <tr>
 <td>  <a href="Scala_Scripting" title="Scala Scripting">Scala</a>
-</td></tr></table>
+</td></tr>
+{% endif %}
+</table>
 </td></tr></table>
 </div>
 {% endcapture %}
