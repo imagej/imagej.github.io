@@ -1,1 +1,125 @@
-<span class="include imglibmenu">TODO imglibmenu:  <code>{{include}}</code></span>
+<table class="infobox" cellspacing="5" style="text-align: left; float: right; border: 1px solid #a0a0a0; font-size: 80%; width: 35%;">
+<tbody><tr>
+<th colspan="2" style="font-size: 130%;">  ImgLib2
+</th></tr>
+<tr>
+<td>
+</td></tr>
+<tr>
+<td>
+<table class="infobox mw-collapsible" cellspacing="5" data-collapsetext="-" data-expandtext="+" style="width: 100%; text-align: left; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;">
+<tbody><tr>
+<th>  Topics
+</th></tr>
+
+{% if page.title == "ImgLib2" %}
+<b>Overview</b>
+{% else %}
+<tr>
+<td>  <a href="ImgLib2" title="ImgLib2">Overview</a>
+</td></tr>
+{% endif %}
+{% if page.title == "ImgLib2 Benchmarks" %}
+<b>Benchmarks</b>
+{% else %}
+<tr>
+<td>  <a href="ImgLib2_Benchmarks" title="ImgLib2 Benchmarks">Benchmarks</a>
+</td></tr>
+{% endif %}
+{% if page.title == "ImgLib2 FAQ" %}
+<b>FAQ</b>
+{% else %}
+<tr>
+<td>  <a href="ImgLib2_FAQ" title="ImgLib2 FAQ">FAQ</a>
+</td></tr></tbody></table>
+</td></tr>
+{% endif %}
+<tr>
+<td>
+<table class="infobox mw-collapsible" cellspacing="5" data-collapsetext="-" data-expandtext="+" style="width: 100%; text-align: left; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;">
+<tbody><tr>
+<th>  Tutorials
+</th></tr>
+
+
+<tr>
+{% if page.title == "ImgLib2 - Getting Started" %}
+<b>Getting Started</b>
+{% else %}
+<td>  <a href="ImgLib2_-_Getting_Started" title="ImgLib2 - Getting Started">Getting Started</a>
+</td></tr>
+{% endif %}
+{% if page.title == "ImgLib2 - Accessors" %}
+<b>Accessors</b>
+{% else %}
+<tr>
+<td>  <a href="ImgLib2_-_Accessors" title="ImgLib2 - Accessors">Accessors</a>
+</td></tr>
+{% endif %}
+{% if page.title == "ImgLib2 - Accessibles" %}
+<b>Accessibles</b>
+{% else %}
+<tr>
+<td>  <a href="ImgLib2_-_Accessibles" title="ImgLib2 - Accessibles">Accessibles</a>
+</td></tr>
+{% endif %}
+{% if page.title == "ImgLib2 Examples" %}
+<b>ImgLib2 Examples</b>
+{% else %}
+<tr>
+<td>  <a href="ImgLib2_Examples" title="ImgLib2 Examples">ImgLib2 Examples</a>
+</td></tr>
+{% endif %}
+{% if page.title == "ImgLib2 - Introductory Workshop" %}
+<b>Introductory Workshop</b>
+{% else %}
+<tr>
+<td>  <a href="ImgLib2_-_Introductory_Workshop" title="ImgLib2 - Introductory Workshop">Introductory Workshop</a>
+</td></tr>
+{% endif %}
+{% if page.title == "ImgLib2 - Advanced Programming Workshop" %}
+<b>Advanced Programming Workshop</b>
+{% else %}
+<tr>
+<td>  <a href="ImgLib2_-_Advanced_Programming_Workshop" title="ImgLib2 - Advanced Programming Workshop">Advanced Programming Workshop</a>
+</td></tr>
+{% endif %}
+{% if page.title == "Into ImgLib - Generic Image Processing in Java" %}
+<b>Into ImgLib - Generic Image Processing in Java</b>
+{% else %}
+<tr>
+<td>  <a href="Into_ImgLib_-_Generic_Image_Processing_in_Java" title="Into ImgLib - Generic Image Processing in Java">Into ImgLib - Generic Image Processing in Java</a>
+</td></tr>
+{% endif %}
+{% if page.title == "Creating Imglib2 images in MATLAB" %}
+<b>Creating Imglib2 images in MATLAB</b>
+{% else %}
+<tr>
+<td>  <a href="Creating_Imglib2_images_in_MATLAB" title="Creating Imglib2 images in MATLAB">Creating Imglib2 images in MATLAB</a>
+</td></tr></tbody></table>
+</td></tr>
+{% endif %}
+<tr>
+<td>
+<table class="infobox mw-collapsible" cellspacing="5" data-collapsetext="-" data-expandtext="+" style="width: 100%; text-align: left; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;">
+<tbody><tr>
+<th>  Development
+</th></tr>
+
+
+<tr>
+{% if page.title == "Developing ImgLib2" %}
+<b>Developing ImgLib2</b>
+{% else %}
+<td>  <a href="Developing_ImgLib2" title="Developing ImgLib2">Developing ImgLib2</a>
+</td></tr>
+{% endif %}
+{% if page.title == "ImgLib2 Discussion" %}
+<b>ImgLib2 Discussion</b>
+{% else %}
+<tr>
+<td>  <a href="ImgLib2_Discussion" title="ImgLib2 Discussion">ImgLib2 Discussion</a>
+</td></tr>
+{% endif %}
+</tbody></table>
+</td></tr></tbody></table>
