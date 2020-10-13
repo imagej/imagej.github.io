@@ -1,1 +1,22 @@
-<span class="include platformsmenu">TODO platformsmenu:  <code>{{include}}</code></span>
+<table class="infobox" cellspacing="5" style="text-align: left; float: right; border: 1px solid #a0a0a0; font-size: 80%; width: 20%;">
+<tbody><tr>
+<th colspan="2" style="font-size: 130%;">  Platforms
+</th></tr>
+<tr>
+<td>
+</td></tr>
+<tr>
+<td>  <a href="Windows" title="Windows"><img alt="Win.png" src="images/logos/Win.png" width="24" height="24"></a> <a href="Windows" title="Windows">Windows</a>
+</td></tr>
+<tr>
+<td>  <a href="MacOS" title="MacOS"><img alt="Osx.png" src="images/logos/Osx.png" width="24" height="29"></a> <a href="MacOS" title="MacOS">MacOS</a>
+</td></tr>
+<tr>
+<td>  <a href="Linux" title="Linux"><img alt="Tux.svg" src="images/logos/Tux.svg" width="24" height="24"></a> <a href="Linux" title="Linux">Linux</a>
+</td></tr>
+<tr>
+<td>  <a href="Raspberry_Pi" title="Raspberry Pi"><img alt="Pi.svg" src="images/logos/Pi.svg" width="24" height="30">Raspberry Pi</a>
+</td></tr>
+<tr>
+<td>  <a href="Android" title="Android"><img alt="Android-robot.svg" src="media/Android-robot.svg/" width="20" height="24" title="Android">Android</a>
+</td></tr></tbody></table>

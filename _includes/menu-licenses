@@ -1,1 +1,81 @@
-<span class="include platformsmenu">TODO platformsmenu:  <code>{{include}}</code></span>
+<table class="infobox" cellspacing="5" style="text-align: left; float: right; border: 1px solid #a0a0a0; font-size: 80%; width: 30%;">
+<tbody><tr>
+<th colspan="2" style="font-size: 130%;">  Licenses
+</th></tr>
+<tr>
+<td>
+</td></tr>
+{% if page.title == "Licensing" %}
+<b>Overview</b>
+{% else %}
+<tr>
+<td>  <a href="Licensing" title="Licensing">Overview</a>
+</td></tr>
+{% endif %}
+<tr>
+<td>
+<table class="infobox mw-collapsible" cellspacing="5" data-collapsetext="-" data-expandtext="+" style="width: 100%; text-align: left; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;">
+<tbody><tr>
+<th>  Open Source
+</th></tr>
+
+{% if page.title == "Apache" %}
+<b>Apache</b>
+{% else %}
+<tr>
+<td>  <a href="Apache" title="Apache">Apache</a>
+</td></tr>
+{% endif %}
+{% if page.title == "BSD" %}
+<b>BSD</b>
+{% else %}
+<tr>
+<td>  <a href="BSD" title="BSD">BSD</a>
+</td></tr>
+{% endif %}
+{% if page.title == "GPL" %}
+<b>GPL</b>
+{% else %}
+<tr>
+<td>  <a href="GPL" title="GPL">GPL</a>
+</td></tr>
+{% endif %}
+{% if page.title == "LGPL" %}
+<b>LGPL</b>
+{% else %}
+<tr>
+<td>  <a href="LGPL" title="LGPL">LGPL</a>
+</td></tr>
+{% endif %}
+{% if page.title == "MIT" %}
+<b>MIT</b>
+{% else %}
+<tr>
+<td>  <a href="MIT" title="MIT">MIT</a>
+</td></tr>
+{% endif %}
+{% if page.title == "Public Domain" %}
+<b>Public domain</b>
+{% else %}
+<tr>
+<td>  <a href="Public_Domain" title="Public Domain">Public domain</a>
+</td></tr>
+{% endif %}
+</tbody></table>
+</td></tr>
+<tr>
+<td>
+<table class="infobox mw-collapsible" cellspacing="5" data-collapsetext="-" data-expandtext="+" style="width: 100%; text-align: left; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;">
+<tbody><tr>
+<th>  Proprietary
+</th></tr>
+
+{% if page.title == "BIG License" %}
+<b>BIG</b>
+{% else %}
+<tr>
+<td>  <a href="BIG_License" title="BIG License"> BIG</a>
+</td></tr>
+{% endif %}
+</tbody></table>
+</td></tr></tbody></table>

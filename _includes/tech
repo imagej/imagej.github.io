@@ -1,1 +1,22 @@
-<span class="include tech">TODO tech:  <code>{{include}}</code></span>
+{% capture info_content %}
+<div info="content" markdown="1">
+{{include.content}}
+</div>
+{% endcapture %}
+
+<div id="info-box">
+    <table class="table-info">
+        <tbody>
+            <tr>
+                <td>
+                    <p>
+                        <img src="/media/Tech.png">
+                    </p>
+                </td>
+                <td>
+                    {{info_content}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
