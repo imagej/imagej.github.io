@@ -4283,4 +4283,13 @@ input, select, textarea {
 				border: 1px solid #aaa;
 				width: 45%;
 			}
-}
+	}
+		/* Ambox */
+
+			table.table-ambox {
+    		margin: 0 10%;
+    		border-collapse: collapse;
+    		background: #fbfbfb;
+    		border: 1px solid #aaa;
+    		border-left: 10px solid #1e90ff !important;
+	}

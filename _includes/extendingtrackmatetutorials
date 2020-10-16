@@ -1,1 +1,1 @@
-<span class="include extendingtrackmatetutorials">TODO extendingtrackmatetutorials:  <code>{{include}}</code></span>
+<a href="TrackMate">TrackMate</a> can be extended with new modules covering about everything it does, thanks to several nice features of <a href="https://imagej.net/SciJava">SciJava</a>. These tutorials explain how to do so. They are best read in order.
