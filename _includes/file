@@ -1,1 +1,28 @@
-<span class="include file">TODO file:  <code>{{include}}</code></span>
+{% capture info_content %}
+<div info="content" markdown="1">
+{{include.content}}
+</div>
+{% endcapture %}
+<div style="font-family: 'Linux Libertine',constantia,'hoefler text','palatino linotype',serif;
+line-height: 1.4;
+color: #333333;
+direction: ltr;
+margin: 0;
+padding: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+border: 1px solid #204A87;
+background-color: #F3F3F3;
+overflow: auto;">
+<table class="table-ambox">
+    <tbody>
+        <tr>
+            <td>
+                File: {{info_content}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>

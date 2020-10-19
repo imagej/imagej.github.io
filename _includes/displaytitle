@@ -1,1 +1,5 @@
-<span class="include displaytitle">TODO displaytitle:  <code>{{include}}</code></span>
+{% capture title %}
+{{include.content}}
+{% endcapture %}
+
+<h2>{{title}}</h2>

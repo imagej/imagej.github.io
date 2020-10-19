@@ -1,1 +1,6 @@
-<span class="include javadocsection">TODO javadocsection:  <code>{{include}}</code></span>
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Javadoc for all ImageJ-related projects can be found online:
+</p>
+<div style="font-family: monospace;font-size: large; background-color: khaki; padding: 0.5em 0 0.5em 3em;"><a rel="nofollow" class="external free" href="http://javadoc.scijava.org/">http://javadoc.scijava.org/</a></div>
+<p><br>
+You can also search the javadocs at <a rel="nofollow" class="external free" href="http://search.imagej.net/">http://search.imagej.net/</a> using the Javadoc button.
+</p>

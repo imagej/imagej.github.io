@@ -136,8 +136,8 @@ This instructions only cover the setting up of the synchronization. It does not 
 
 -   Why would you want to do this?
 
-  
-  
+
+
 The main reason is if you have systems with ImageJ installed that are behind a firewall with blocked internet access. Another reason is if you have multiple systems to update and a local mirror would be faster for you (and nicer for the ImageJ servers). Yet another reason is if you are not on North America, the updater runs very slow.
 
 There is no rsync daemon to support for anonymous synchronization. If you want to keep a mirror of ImageJ update sites, please make a post on the [ImageJ Forum](http://forum.imagej.net/) to obtain an ssh account.
@@ -147,7 +147,7 @@ The rough idea is to have a cronjob to run rsync on ssh. Since this needs authen
 `$ sudo adduser --system fiji_mirror_sync`  
 `$ sudo fiji_mirror_sync ssh-keygen -t rsa -b 4096 -C "Your institution"`
 
-These instructions are valid for Ubuntu 14.04. Other distributions may handle system users differently and may not even create a home directory for them. In such case, the ssh key can be placed in {% include path content='/etc/ssh' %}, and the config options used with {% include inline content='ssh -o' %}.
+These instructions are valid for Ubuntu 14.04. Other distributions may handle system users differently and may not even create a home directory for them. In such case, the ssh key can be placed in {% include path content='/etc/ssh' %}, and the config options used with 'ssh -o' .
 
 {% include file content='/home/fiji\_mirror\_sync/.ssh/config\|\|
 
@@ -166,7 +166,7 @@ To prepare the known hosts files:
 `$ ssh-keyscan -t rsa code.imagej.net | sudo -u fiji_mirror_sync tee -a /home/fiji_mirror_sync/.ssh/known_hosts`  
 `$ sudo -u fiji_mirror_sync ssh imagej ssh-keyscan -t rsa fiji.sc | sudo -u fiji_mirror_sync tee -a /home/fiji_mirror_sync/.ssh/known_hosts`
 
-Finally set up the cronjob with {% include inline content='sudo crontab -u fiji\_mirror\_sync -e' %}
+Finally set up the cronjob with 'sudo crontab -u fiji\_mirror\_sync -e'
 
 {% include file content='/var/spool/cron/...\|\|
 
@@ -190,5 +190,3 @@ In the course of one of two successful Google Summer of Code projects, the updat
 Johannes Schindelin got stuck with the maintainership and introduced third-party update sites (a feature that many claimed to desire, though no pinky was harmed by contributing any code) in the course of a very successful [hackathon](Hackathon#ImageJ_hackathons) at the Lawrence Berkeley National Laboratory in October 2010 and another one in February 2011 hosted by [LOCI](LOCI).
 
 As of September 2012, the Fiji Updater has moved to [ImageJ2](ImageJ2). Details can be found in the announcement: [2012-09-14 - The Updater moved](2012-09-14_-_The_Updater_moved).
-
- 

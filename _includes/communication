@@ -1,1 +1,26 @@
-<span class="include communication">TODO communication:  <code>{{include}}</code></span>
+<table class="infobox" cellspacing="5" style="text-align: left; float: right; border: 1px solid #a0a0a0; font-size: 80%; width: 30%;">
+<tbody><tr>
+<th> <a rel="nofollow" class="external text" href="https://forum.image.sc/">Forum</a>
+</th>
+<td> The recommended way to get help. Very active. Rich modern interface. Public, archived discussion.
+</td></tr>
+<tr>
+<th> <a href="Mailing_Lists" title="Mailing Lists">Mailing Lists</a>
+</th>
+<td> An established and trusted resource for help. Thousands of subscribers. Public, archived discussion.
+</td></tr>
+<tr>
+<th> <a href="Chat" title="Chat">Chat</a>
+</th>
+<td> ImageJ developers and experts frequent real-time <a href="Chat" title="Chat">chat</a> services including Gitter and IRC.
+</td></tr>
+<tr>
+<th> <a rel="nofollow" class="external text" href="http://stackoverflow.com/questions/tagged/imagej?sort=newest">Stack Overflow</a>
+</th>
+<td> Some people like to post about ImageJ on Stack Overflow, a programming Q&amp;A site.
+</td></tr>
+<tr>
+<th> <a rel="nofollow" class="external text" href="https://www.reddit.com/r/ImageJ/">Reddit</a>
+</th>
+<td> Some people like to post about ImageJ on Reddit, a community bulletin board.
+</td></tr></tbody></table>

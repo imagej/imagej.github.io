@@ -49,13 +49,13 @@ A *plugins.config* file looks like this:
 `# The other lines have this format:`  
 `#  Menu, “Menu Item”, ClassName`  
 `# Example:`  
-  
+
 `Plugins > Analyze, “Plot”, fiji.Plot`
 
 A class can be reused for multiple menu entries, by passing an optional argument in the *plugins.config* file:
 
 `# Example how to reuse a Java class`  
-  
+
 `Help, “Bug report”, fiji.Send(“bug”)`  
 `Help, “Contact”, fiji.Send(“contact”)`
 
@@ -191,7 +191,7 @@ Example usage:
 
     // get the current slice
     ImageProcessor ip = image.getProcessor();
-     
+
     // duplicate the slice
     ImageProcessor ip2 = ip.duplicate();
 
@@ -296,7 +296,7 @@ This code snippet shows you how to update the progress bar and the status text:
 Frequently used operators
 -------------------------
 
-The {% include javadoc-ij1 package='ij/process' class='ImageProcessor' %} class has a few methods such as *smooth()*, *sharpen()*, *findEdges()*, etc
+The [ImageProcessor](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/process/ImageProcessor.html) class has a few methods such as *smooth()*, *sharpen()*, *findEdges()*, etc
 
 **Tip:** use the Script Editor's functions in the *Tools* menu:
 
@@ -307,7 +307,7 @@ The {% include javadoc-ij1 package='ij/process' class='ImageProcessor' %} class 
 Plots
 -----
 
-You can show a plot window very easily using the {% include javadoc-ij1 package='ij/gui' class='Plot' %} class:
+You can show a plot window very easily using the [Plot](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/gui/Plot.html) class:
 
     void plot(double[] values) {
         double[] x = new double[values.length];
@@ -330,7 +330,7 @@ It is almost as easy to put multiple plots into one window:
         plot.show();
     }
 
-To update the contents of a plot window, remember the return value of *plot.show()* which is a {% include javadoc-ij1 package='ij/gui' class='PlotWindow' %}, and use its *drawPlot()* method:
+To update the contents of a plot window, remember the return value of *plot.show()* which is a [PlotWindow](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/gui/PlotWindow.html), and use its *drawPlot()* method:
 
     void plot(double[] values) {
         ...
@@ -416,5 +416,3 @@ See guides on:
 -   [Development lifecycle](Development_Lifecycle)
 -   [Debugging practice](Debugging_Exercises)
 -   [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet)
-
- 
