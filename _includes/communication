@@ -1,4 +1,5 @@
-<table class="infobox" cellspacing="5" style="text-align: left; float: right; border: 1px solid #a0a0a0; font-size: 80%; width: 30%;">
+{% raw %}
+<table class="table-ambox" cellspacing="5" style="text-align: left; float:center; border: 1px solid #a0a0a0; font-size: 80%; width: 70%;">
 <tbody><tr>
 <th> <a rel="nofollow" class="external text" href="https://forum.image.sc/">Forum</a>
 </th>
@@ -24,3 +25,4 @@
 </th>
 <td> Some people like to post about ImageJ on Reddit, a community bulletin board.
 </td></tr></tbody></table>
+{% endraw %}

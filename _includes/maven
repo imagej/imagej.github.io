@@ -24,6 +24,7 @@
 
 {% if include.label != null %}
 {% assign label = {{include.label}} %}
+{% else label = {{g}} | append: ':' | append: {{a}} | append: ':' | append: {{v}} | append: ':' | append: 'p' %}
 {% endif %}
 
 

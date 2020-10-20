@@ -1,3 +1,4 @@
+{% raw %}
 <div id="infobox">
 <table class="ambox">
 <tbody>
@@ -24,4 +25,6 @@
 </td>
 <td style="text-align: center">  <a href="https://downloads.imagej.net/fiji/latest/fiji-linux32.zip" rel="nofollow"><img alt="Linux (32-bit)" src="images/logos/Tux.svg" width="24" height="24"></a> <a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-linux32.zip">32-bit</a>
 </td></tr></tbody>
-<table>
+</table>
+</div>
+{% endraw %}
