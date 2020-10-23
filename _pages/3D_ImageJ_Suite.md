@@ -95,7 +95,7 @@ The 3D suite would like to thanks the developers of the following plugins :
 -   [ConvexHull3D](http://rsbweb.nih.gov/ij/plugins/3d-convex-hull/index.html)
 -   [3D Object Counter](https://imagejdocu.list.lu/plugin/analysis/3d_object_counter/start)
 -   [Droplet Counter](https://imagejdocu.list.lu/plugin/analysis/droplet_counter/start)
--   and P. Andrey, J.-F. Gilles.
+and P. Andrey, J.-F. Gilles.
 
 Links
 -----
