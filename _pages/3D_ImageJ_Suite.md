@@ -88,14 +88,13 @@ GPL distribution (see [license](https://cecill.info/index.en.html)). Sources ava
 Acknowledgements
 ----------------
 
-The 3D suite would like to thanks the developers of the following plugins :
+The 3D suite would like to thanks P. Andrey, J.-F. Gilles and the developers of the following plugins :
 
 -   [Imagescience](http://www.imagescience.org/meijering/software/featurej/)
 -   [LocalThickness](http://www.optinav.com/Local_Thickness.htm)
 -   [ConvexHull3D](http://rsbweb.nih.gov/ij/plugins/3d-convex-hull/index.html)
 -   [3D Object Counter](https://imagejdocu.list.lu/plugin/analysis/3d_object_counter/start)
 -   [Droplet Counter](https://imagejdocu.list.lu/plugin/analysis/droplet_counter/start)
-and P. Andrey, J.-F. Gilles.
 
 Links
 -----
