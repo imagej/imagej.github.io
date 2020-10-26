@@ -8,7 +8,7 @@ description: test description
 
 
 {% capture filename %}
-{% include maven g='sc.fiji' a='VIB\_' label='sc.fiji' %}
+{% include maven g='sc.fiji' a='VIB\_' %}
 {% endcapture %}
 
 {% capture source %}

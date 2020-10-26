@@ -1,1 +1,37 @@
-<span class="include testimonial">TODO testimonial:  <code>{{include}}</code></span>
+{% capture info_content %}
+<div info="content" markdown="1">
+"{{include.quote}}"
+</div>
+{% endcapture %}
+
+{% if include.float != null %}
+{% assign float = include.float %}
+{% endif %}
+
+{% if include.width != null %}
+{% assign width = include.width %}
+{% endif %}
+
+{% if include.source != null %}
+{% assign source-url = include.source %}
+{% endif %}
+
+<div id="info-box">
+    <table class="table-OS-info" style="width:{{width}}; float:{{float}};">
+        <tbody>
+            <tr>
+                <td style="padding-right: 1em; vertical-align: middle; padding-top: 1em">
+                    <p>
+                        <img src="http://gravatar.com/avatar/{{include.gravatar}}" width=64 height=64>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                    {{info_content}}
+                    </p>
+                    &#8212;{{person}}[<a href="{{source-url}}">Source</a>]
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,1 +1,8 @@
-<span class="include book">TODO book:  <code>{{include}}</code></span>
+{% assign link = include.link %}
+{% assign description = include.description %}
+{% assign image = include.image %}
+<div style="text-align:center;" markdown="1">
+<a href="{{link}}"><img  src="/media/{{image}}" width="247" height="350">
+<br>
+{{description}}
+</div>
