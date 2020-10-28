@@ -96,7 +96,7 @@ The Run-Debug cycle
         margin-top: 1em;
         margin-bottom: 2em;
         background-color: #ffefbe;
-{% include border content='-radius|0.75em' %} {% include box content='-shadow' %}">
+{% include box content='-shadow' %}">
 
 Keyboard shortcuts
 ------------------
@@ -226,5 +226,3 @@ See also
 --------
 
 <table><thead><tr class="header"><th><p><a href="ImageJ2" title="wikilink">ImageJ2</a></p></th><th><p><a href="ImageJ_1.x" title="wikilink">ImageJ 1.x</a></p></th></tr></thead><tbody><tr class="odd"><td><ul><li><a href="Writing_plugins" title="wikilink">Writing plugins</a></li><li><a href="How_to_contribute_to_an_existing_plugin_or_library" title="wikilink">Contributing to a plugin</a></li></ul></td><td><ul><li>{% include github org='imagej' repo='example-legacy-plugin' label='example-legacy-plugin' %} project template</li><li><a href="Developing_Plugins_for_ImageJ_1.x" title="wikilink">Developing Plugins for ImageJ 1.x</a></li></ul></td></tr></tbody></table>
-
- 

@@ -6,7 +6,7 @@ categories: Plugins
 description: test description
 ---
 
-{% include otheruses4 content='the Watershed ImageJ plugin\|the Watershed Algorithm in general\|Watershed Algorithm' %} {% include info-box software='ImageJ' name='Watershed Algorithm' author='Christopher Mei' filename=' [Watershed\_Algorithm.jar](https://imagej.net/plugins/download/jars/Watershed_Algorithm.jar)' source='included in .jar' released='15 December 2003' latest-version='' status='unknown' category='[Segmentation](Category_Segmentation)' website='https://imagej.net/plugins/watershed.html' %}
+ {% include info-box software='ImageJ' name='Watershed Algorithm' author='Christopher Mei' filename=' [Watershed\_Algorithm.jar](https://imagej.net/plugins/download/jars/Watershed_Algorithm.jar)' source='included in .jar' released='15 December 2003' latest-version='' status='unknown' category='[Segmentation](Category_Segmentation)' website='https://imagej.net/plugins/watershed.html' %}
 
 `   This algorithm is an implementation of the watershed immersion algorithm written by Vincent and Soille (1991).`
 
@@ -15,5 +15,3 @@ description: test description
 A review of Watershed algorithms can be found at : http://www.cs.rug.nl/~roe/publications/parwshed.pdf
 
 -   {% include citation last='Roerdink' first='' link='' last2='Meijster' first2='' link='' date='' date='' year='2000' title='The Watershed Transform: Definitions, Algorithms and Parallelization Strategies' edition='' volume='41' series='FUNDINF: Fundamenta Informatica' place='' place='' publisher='IOS Press' pages='' page='' id='' isbn='' doi='' oclc='' url='' accessdate='' %}
-
-
