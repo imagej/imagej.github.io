@@ -28,7 +28,7 @@ description: test description
 2.  分割画像の解析
     -   DiameterJの測定はすべて、初期設定ではピクセル数で表現されます。
     -   DiameterJの正当性は、130以上の合成デジタル画像、および直径が分かっている繊維が写っている電子顕微鏡画像で確認されました。
-          
+
         \- <b>10ピクセル以下の繊維がある場合、および最小繊維径の繊維の数が10%を超える場合、10%以上の誤差が生じます。</b>
 
         \- 現在のDiameterJは、.tif, jpeg, png, .bmp, .gifの画像のみを解析できます。
@@ -39,14 +39,14 @@ description: test description
 
 #### 出典/参照情報
 
-  
+
 Hotaling NA, Bharti K, Kriel H, Simon Jr. CG. DiameterJ: A validated open source nanofiber diameter measurement tool. Biomaterials 2015;61:327–38. <doi:10.1016/j.biomaterials.2015.05.015>.
 
 http://www.sciencedirect.com/science/article/pii/S0142961215004652
 
 ### ダウンロードリンク
 
-  
+
 ImageJ 1.48以降: [DiameterJ v. 1.018 for ImageJ](http://imagej.net/_images/c/cc/DiameterJ_1-018.zip)
 
 Fiji最新版: [DiameterJ v. 1.018 for Fiji](http://imagej.net/_images/6/65/DiameterJ_Fiji_-_1-018.zip)
@@ -246,7 +246,38 @@ Help is welcome in any/all of these improvements!
 References
 ----------
 
-{% include reflist%}
+[1] Hotaling NA, Bharti K, Kriel H, Simon Jr. CG. DiameterJ: A validated open source nanofiber diameter measurement tool. Biomaterials 2015;61:327–38. <doi:10.1016/j.biomaterials.2015.05.015> http://www.sciencedirect.com/science/article/pii/S0142961215004652
+
+[2] R. Rezakhaniha, A. Agianniotis, J. T. C. Schrauwen, A. Griffa, D. Sage, C. V. C. Bouten, F. N. van de Vosse, M. Unser and N. Stergiopulos, Experimental investigation of collagen waviness and orientation in the arterial adventitia using confocal laser scanning microscopy, Biomechanics and modeling in mechanobiology, SpringerLink (DOI: 10.1007/s10237-011-0325-z)
+
+
+[3] R. Nock, F. Nielsen (2004), "Statistical Region Merging", IEEE Trans. Pattern Anal. Mach. Intell. 26 (11): 1452-1458
+
+[4] Otsu N. A threshold selection method from gray-level histograms. Automatica 1975;11:23–7.
+
+[5] Huang L-K, Wang M-JJ. Image thresholding by minimizing the measures of fuzziness. Pattern Recognit 1995;28:41–51. <doi:10.1016/0031-3203(94)E0043-K>.
+
+[6] Kittler J, Illingworth J. Minimum error thresholding. Pattern Recognit 1986;19:41–7. <doi:10.1016/0031-3203(86)90030-0>.
+
+[7] Doyle, W (1962), "Operation useful for similarity-invariant pattern recognition", Journal of the Association for Computing Machinery 9: 259-267, <doi:10.1145/321119.321123>
+
+[8] Zack GW, Rogers WE, Latt SA (1977), "Automatic measurement of sister chromatid exchange frequency", J. Histochem. Cytochem. 25 (7): 741–53, PMID 70454
+
+[9] D’Amore A, Stella JA, Wagner WR, Sacks MS. Characterization of the complete fiber network topology of planar fibrous tissues and scaffolds. Biomaterials 2010;31:5345–54. <doi:10.1016/j.biomaterials.2010.03.052>.
+
+[10] Gonzalez RC, Eddins SL. Digital Image Processing Using [MATLAB](MATLAB), 2nd ed. 2nd edition. S.I.: Gatesmark Publishing; 2001.
+
+[11] Lam L, Lee S-W, Suen CY. Thinning Methodologies-A Comprehensive Survey. IEEE Trans Pattern Anal Mach Intell 1992;14:869–85. <doi:10.1109/34.161346>.
+
+[12] Zhang TY, Suen CY. A Fast Parallel Algorithm for Thinning Digital Patterns. Commun ACM 1984;27:236–9. <doi:10.1145/357994.358023>.
+
+[13] Okabe A. Spatial Tessellations: Concepts and Applications of Voronoi Diagrams. 2 edition. Chichester ; New York: Wiley; 2000.
+
+[14] Arganda-Carreras I, Fernández-González R, Muñoz-Barrutia A, Ortiz-De-Solorzano C. 3D reconstruction of histological sections: Application to mammary gland tissue. Microsc Res Tech 2010;73:1019–29. <doi:10.1002/jemt.20829>
+
+[15] F. Leymarie, M. D. Levine, in: CVGIP Image Understanding, vol. 55 (1992), pp 84-94 http://dx.doi.org/10.1016/1049-9660(92)90008-Q
+
+[16] Liu. Scale space approach to directional analysis of images. Appl. Opt. (1991) vol. 30 (11) pp. 1369-1373
 
 
 External Links
@@ -254,45 +285,3 @@ External Links
 
 -   [OrientationJ](http://bigwww.epfl.ch/demo/orientation/)
 -   [NIST](http://www.nist.gov/)
-
- 
-
-[1] Hotaling NA, Bharti K, Kriel H, Simon Jr. CG. DiameterJ: A validated open source nanofiber diameter measurement tool. Biomaterials 2015;61:327–38. <doi:10.1016/j.biomaterials.2015.05.015> http://www.sciencedirect.com/science/article/pii/S0142961215004652
-
-[2] R. Rezakhaniha, A. Agianniotis, J. T. C. Schrauwen, A. Griffa, D. Sage, C. V. C. Bouten, F. N. van de Vosse, M. Unser and N. Stergiopulos, Experimental investigation of collagen waviness and orientation in the arterial adventitia using confocal laser scanning microscopy, Biomechanics and modeling in mechanobiology, SpringerLink (DOI: 10.1007/s10237-011-0325-z)
-
-[3] 
-
-[4] 
-
-[5] R. Nock, F. Nielsen (2004), "Statistical Region Merging", IEEE Trans. Pattern Anal. Mach. Intell. 26 (11): 1452-1458
-
-[6] Otsu N. A threshold selection method from gray-level histograms. Automatica 1975;11:23–7.
-
-[7] Huang L-K, Wang M-JJ. Image thresholding by minimizing the measures of fuzziness. Pattern Recognit 1995;28:41–51. <doi:10.1016/0031-3203(94)E0043-K>.
-
-[8] Kittler J, Illingworth J. Minimum error thresholding. Pattern Recognit 1986;19:41–7. <doi:10.1016/0031-3203(86)90030-0>.
-
-[9] Doyle, W (1962), "Operation useful for similarity-invariant pattern recognition", Journal of the Association for Computing Machinery 9: 259-267, <doi:10.1145/321119.321123>
-
-[10] Zack GW, Rogers WE, Latt SA (1977), "Automatic measurement of sister chromatid exchange frequency", J. Histochem. Cytochem. 25 (7): 741–53, PMID 70454
-
-[11] D’Amore A, Stella JA, Wagner WR, Sacks MS. Characterization of the complete fiber network topology of planar fibrous tissues and scaffolds. Biomaterials 2010;31:5345–54. <doi:10.1016/j.biomaterials.2010.03.052>.
-
-[12] Gonzalez RC, Eddins SL. Digital Image Processing Using [MATLAB](MATLAB), 2nd ed. 2nd edition. S.I.: Gatesmark Publishing; 2001.
-
-[13] Lam L, Lee S-W, Suen CY. Thinning Methodologies-A Comprehensive Survey. IEEE Trans Pattern Anal Mach Intell 1992;14:869–85. <doi:10.1109/34.161346>.
-
-[14] Zhang TY, Suen CY. A Fast Parallel Algorithm for Thinning Digital Patterns. Commun ACM 1984;27:236–9. <doi:10.1145/357994.358023>.
-
-[15] Okabe A. Spatial Tessellations: Concepts and Applications of Voronoi Diagrams. 2 edition. Chichester ; New York: Wiley; 2000.
-
-[16] Arganda-Carreras I, Fernández-González R, Muñoz-Barrutia A, Ortiz-De-Solorzano C. 3D reconstruction of histological sections: Application to mammary gland tissue. Microsc Res Tech 2010;73:1019–29. <doi:10.1002/jemt.20829>
-
-[17] F. Leymarie, M. D. Levine, in: CVGIP Image Understanding, vol. 55 (1992), pp 84-94 http://dx.doi.org/10.1016/1049-9660(92)90008-Q
-
-[18] 
-
-[19] Liu. Scale space approach to directional analysis of images. Appl. Opt. (1991) vol. 30 (11) pp. 1369-1373
-
-[20] 
