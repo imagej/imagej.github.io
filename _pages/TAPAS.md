@@ -102,6 +102,8 @@ Citation
 
 2018 Whitehead, L., Wimmer, V., Lafouresse, F., Ratnayake, D., Currie, P., Groom, J., Rogers, K. and Boudier, T. Towards an Automated Processing and Analysis System for multi-dimensional light-sheet microscopy big data using ImageJ and OMERO. International Microscopy Congress IMC 19. ([Abstract 1848 thomasboudier.pdf](/media/Abstract 1848 thomasboudier.pdf))
 
+Gilles JF and Boudier T. TAPAS: Towards Automated Processing and Analysis of multi-dimensional bioimage data. F1000Research 2020, 9:1278 [doi](https://doi.org/10.12688/f1000research.26977.1) 
+
 License
 -------
 
