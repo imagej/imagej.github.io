@@ -1,1 +1,16 @@
 <a href="TrackMate">TrackMate</a> can be extended with new modules covering about everything it does, thanks to several nice features of <a href="https://imagej.net/SciJava">SciJava</a>. These tutorials explain how to do so. They are best read in order.
+
+<table class="infobox" cellspacing="5" style="width: 22em; font-size: 90%; text-align: left; float: right; border: 1px dashed #a0a0a0;">
+<tbody><tr>
+<th colspan="2" style="font-size: 130%;"> Extending TrackMate
+</th></tr>
+<tr>
+<td>
+<ul><li> <a href="How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate" title="How to write your own edge feature analyzer algorithm for TrackMate">How to write your own edge feature analyzer algorithm for TrackMate</a></li>
+<li> <a href="How_to_write_your_own_track_feature_analyzer_algorithm_for_TrackMate" title="How to write your own track feature analyzer algorithm for TrackMate">How to write your own track feature analyzer algorithm for TrackMate</a></li>
+<li> <a href="How_to_write_your_own_spot_feature_analyzer_algorithm_for_TrackMate" title="How to write your own spot feature analyzer algorithm for TrackMate">How to write your own spot feature analyzer algorithm for TrackMate</a></li>
+<li> <a href="How_to_write_your_own_viewer_for_TrackMate" title="How to write your own viewer for TrackMate">How to write your own viewer for TrackMate</a></li>
+<li> <a href="How_to_write_custom_actions_for_TrackMate" title="How to write custom actions for TrackMate">How to write custom actions for TrackMate</a></li>
+<li> <a href="How_to_write_your_own_detection_algorithm_for_TrackMate" title="How to write your own detection algorithm for TrackMate">How to write your own detection algorithm for TrackMate</a></li>
+<li> <a href="How_to_write_your_own_particle-linking_algorithm_for_TrackMate" title="How to write your own particle-linking algorithm for TrackMate">How to write your own particle-linking algorithm for TrackMate</a></li></ul>
+</td></tr></tbody></table>
