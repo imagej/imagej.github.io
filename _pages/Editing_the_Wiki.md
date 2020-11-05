@@ -60,6 +60,7 @@ Includes provide more robust formatting options and are unique to this site. Wit
 | Action | Link to demo page|
 | : --- : | :---: |
 | Insert the about menu | [about-menu]({{"/demo-about-menu" | relative_url}})
+| Insert a citation | [citation]({{"/demo-citation" | relative_url}}) 
 | Insert conference info | [conference]({{"/demo-conference" | relative_url}})
 | Generate info/details box | [details-box]({{"/demo-details-box" | relative_url}}) |
 | Insert figure | [figure]({{"/demo-figure" | relative_url}}) |
