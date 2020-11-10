@@ -3277,11 +3277,10 @@ input, select, textarea {
 	}
 
 	.table-OS-info {
-		margin-top: 1em;
-		margin-bottom: 2em;
 		background-color: #e9f5f8; -moz-border-radius: .75em; -webkit-border-radius: .75em;
 		border-radius: .75em; -moz-box-shadow: 4px 4px 4px #CCC; -webkit-box-shadow: 4px 4px 4px #CCC;
 		box-shadow: 4px 4px 4px #CCC;
+		vertical-align: middle;
 		width: 300px;
 		float:right;
 		border: 0px solid #ccc;
