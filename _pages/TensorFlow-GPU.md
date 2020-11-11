@@ -62,6 +62,7 @@ You can also use the filters on the top of the display to filter for a specific 
 
 Here is a step-by-step example of a successful GPU support installation:
 
+-   Install the most recent Nvidia driver for your system as described [here](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installdriver)
 -   in Fiji, opened `Edit > Options > TensorFlow...` and switched to TF 1.15.0 GPU
 -   Installed `CUDA 10.1` from [here](https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exenetwork)
 -   Downloaded `cuDNN 7.6.5 for CUDA 10.1` from [here](https://developer.nvidia.com/rdp/form/cudnn-download-survey) (you need to register / login)
@@ -71,9 +72,8 @@ Here is a step-by-step example of a successful GPU support installation:
 The variables you should have set are these two. Normally, CUDA does that for you when you install it.
 ![System Environment Variables](../media/Tensorflow_gpu_win_envvars.png)
 
-As well as the following additions to your PATH system-variable:
+As well as the following additions to your PATH system-variable.
 ![PATH variable content](../media/Tensorflow_gpu_win_path.png)
-
 
 ### 3.2 Hints for Linux
 
