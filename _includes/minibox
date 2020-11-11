@@ -1,12 +1,9 @@
 <div style="float: right">
 <div class="thumb tright">
 <div class="minibox" style="width:252px;">
-<a href="./File:2016-hackathon-konstanz-sushi.jpg" class="image">
-<img alt="" src="images/logos/{{include.logo}}" width="250" height="200" class="thumbimage"></a>
+<img alt="" src="images/logos/{{include.logo}}" width="250" height="200" class="thumbimage">
 <div class="miniboxcaption">
-<div class="magnify">
-<a href="./File:2016-hackathon-konstanz-sushi.jpg" class="internal" title="Enlarge"></a>
-</div>
+
 {{include.blurb}}
 </div>
 </div>

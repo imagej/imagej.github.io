@@ -2,7 +2,7 @@
 title: Demo images
 layout: page
 author:
-categories:
+categories: help
 description: This page demonstrates how to add a details box to your page.
 ---
 ## Uploading an Image

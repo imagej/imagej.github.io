@@ -2,7 +2,7 @@
 title: Demo symbols
 layout: page
 author:
-categories:
+categories: help
 description: This page demonstrates how to add a symbol to your page from preset options.
 ---
 

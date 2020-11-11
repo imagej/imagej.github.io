@@ -2259,6 +2259,7 @@ input, select, textarea {
 	div.minibox {
 	    border: thin solid #cccccc;
 	    padding: 0.2em;
+			margin-top: -2em;
 	    background-color: #f9f9f9;
 	    font-size: 0.875em;
 	    text-align: center;
@@ -4288,7 +4289,7 @@ input, select, textarea {
 			table.table-ambox {
     		margin: 0 10%;
     		border-collapse: collapse;
-    		background: #fbfbfb;
+    		background: #e6e6e6;
     		border: 1px solid #aaa;
     		border-left: 10px solid #1e90ff !important;
 	}
