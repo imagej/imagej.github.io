@@ -42,6 +42,15 @@ Produces:
 <br>
 <br>
 <br>
+## Tip Box
+The following code:
+{% raw %}
+```
+{% include tip tip='Your text here.' %}
+```
+{% endraw %}
+Produces:
+{% include tip tip='Your text here.' %}
 
 ## Ambox
 

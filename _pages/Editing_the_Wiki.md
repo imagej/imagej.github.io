@@ -78,6 +78,7 @@ Includes provide more robust formatting options and are unique to this site. Wit
 | Insert the SNT nav bar | [SNT-nav]({{"/demo-SNT-nav" | relative_url}})|
 | Insert a symbol | [symbol]({{"/demo-symbols" | relative_url}})
 | Insert a table | [markdown-table]({{"/demo-markdown-table" | relative_url}})
+| Insert a todo list | [todo-list]({{"/demo-todo-list" | relative_url}})
 | Insert a tech box | [tech-box]({{"/demo-tech-box" | relative_url}})
 | Insert a warning | [warning-box]({{"/demo-warning-box" | relative_url}}) |
 | Insert a YouTube video | [youtube-video]({{"/demo-youtube-video" | relative_url}}) |
