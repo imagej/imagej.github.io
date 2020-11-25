@@ -37,7 +37,7 @@ Demo
 
 The following video shows an example of Fijiyama application: the registration of two stacks of MRI 3D images, collected on a grapevine cutting at different dates(see the "Training tutorial" for details).
 
-{% include youtube url='https://www.youtube.com/embed/QG\_i50XJRfc'%}
+{% include youtube url='https://www.youtube.com/embed/QG_i50XJRfc'%}
 
 Plugin features
 ---------------
@@ -230,6 +230,42 @@ Citing this work
 ----------------
 
 -   R. Fernandez and C. Moisy, *“Fijiyama: a registration tool for 3D multimodal time-lapse imaging”* (under review)
+
+
+
+Hall of fame: the Fijiyama community
+------------------------------------
+
+The Fijiyama community is growing : we have astronomers, plant scientists, biomedical experts, coming from all 
+over the world. We are open to bug reports and feature requests. If you like Fijiyama, please send us an email to romainfernandez06ATgmail.com !
+
+Here is a short-list of some Fijiyama users who helped us conceiving the software, fixing some bugs,
+or developing new features. We are grateful to them :
+
+<table>
+  <tbody>
+    <tr>
+      <td><img src="/media/cmoisy.png" alt="" class="image table" /></td>
+      <td>Cedric Moisy, PhD - French Wine and Vine Institute, Montpellier, France. Topic: Detection of tissue degradation and time-lapse monitoring of grapevine trunk diseases</td>
+    </tr>
+    <tr>
+      <td><img src="/media/kvilla.png" alt="" class="image table" /></td>
+      <td>Katie Villa, PhD - Massachussets Institute of Technology, Nedivi lab, Boston, USA. Topic: Neuronal plasticity</td>
+    </tr>
+    <tr>
+      <td><img src="/media/ewershof.png" alt="" class="image table" /></td>
+      <td>Esther Wershof, PhD - Sloan Kettering Institute for Cancer Research, New York, USA. Topic: Embryonic organogenesis</td>
+    </tr>
+    <tr>
+      <td><img src="/media/bpadman.png" alt="" class="image table" /></td>
+      <td>Benjamin Padman, PhD - Monash Biomedicine Discovery Institute, Melbourne, Australia. Topic: Cellular mechanisms of mammalian mitophagy</td>
+    </tr>
+    <tr>
+      <td><img src="/media/jmatsuno.png" alt="" class="image table" /></td>
+      <td>Junya Matsuno, Division of Earth and Planetary Sciences, University of Kyoto, Japan. Topic : Extraterrestrial matter analysis from Hayabusa spatial probes.</td>
+    </tr>
+  </tbody>
+</table>
 
 Contact
 -------
