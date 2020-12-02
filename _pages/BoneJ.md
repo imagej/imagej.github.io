@@ -706,8 +706,8 @@ A 2D or 3D binary image.
 -   **Theta**: angle of minor axis (axis for Imin, the long axis of your specimen's cross section) from the horizontal, ranging from $$-\pi/2$$ to $$\pi/2$$, with positive as clockwise
 -   **R1**: maximum chord length from minor axis
 -   **R2**: maximum chord length from major axis
--   **I<sub>min</sub>**: Second moment of area around major axis
--   **I<sub>max</sub>**: Second moment of area around minor axis
+-   **I<sub>min</sub>**: Second moment of area around minor axis
+-   **I<sub>max</sub>**: Second moment of area around major axis
 -   **I<sub>pm</sub>**: Product moment of area (= 0 if no errors are present, e.g. due to pixelation)
 -   **Z<sub>max</sub>**: Section modulus around major axis (*I*<sub>max</sub> / R2)
 -   **Z<sub>min</sub>**: Section modulus around minor axis (*I*<sub>min</sub> / R1)
