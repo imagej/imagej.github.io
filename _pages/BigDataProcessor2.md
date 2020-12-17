@@ -22,4 +22,4 @@ Installation
 
 Please install the update site: http://sites.imagej.net/BigDataProcessor/. For details on how to install an update site click [here](Following_an_update_site).
 
-After installation, please select Plugins &gt; BigDataProcessor2 &gt; BigDataProcessor2 from the main menu.
+After installation, please select Plugins &gt; BigDataProcessor2 &gt; BigDataProcessor2 from the main menu!
