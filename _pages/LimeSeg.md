@@ -10,7 +10,6 @@ description: test description
 {% capture maintainer%}
 {% include person content='NicoKiaru' %}
 {% endcapture %}
-
 {% capture author%}
 {% include person content='NicoKiaru' %}, {% include person content='Sarah Machado' %}
 {% endcapture %}
@@ -47,7 +46,7 @@ Probably the fastest to learn how to use LimeSeg at a basic level. You can find 
 Presentation.
 -------------
 
-LimeSeg is a modular 3D segmentation plugin. It is a particle-based active contour method. It can segment objects from 3D images where 3D objects are labelled on their outline, like cells labeled on their membrane, as shown in the image below (source of the image : https://loci.wisc.edu/sample-data/dub).
+Test LimeSeg is a modular 3D segmentation plugin. It is a particle-based active contour method. It can segment objects from 3D images where 3D objects are labelled on their outline, like cells labeled on their membrane, as shown in the image below (source of the image : https://loci.wisc.edu/sample-data/dub).
 
 ![](/media/Dub-scaled0.5XY-Tp19.png "Dub-scaled0.5XY-Tp19.png")
 
