@@ -4,7 +4,6 @@
         <a href="{{"/search" | relative_url}}" class="icon solid fa-search">Search</a>
         <a href="{{"/Downloads" | relative_url}}">Downloads</a>
         <a href="{{"/Introduction" | relative_url}}">Learn</a>
-        <a href="{{"/categories" | relative_url}}">Browse</a>
         <a href="{{"/Development" | relative_url}}">Develop</a>
         <a href="{{"/News" | relative_url}}">News</a>
         <a href="{{"/Upcoming_Events" | relative_url}}">Events</a>
@@ -19,7 +18,6 @@
                 <a href="{{"/search" | relative_url}}" class="icon solid fa-search">Search</a>
                 <a href="{{"/Downloads" | relative_url}}">Downloads</a>
                 <a href="{{"/Introduction" | relative_url}}">Learn</a>
-                <a href="{{"/categories" | relative_url}}">Browse</a>
                 <a href="{{"/Development" | relative_url}}">Develop</a>
                 <a href="{{"/News" | relative_url}}">News</a>
                 <a href="{{"/Upcoming_Events" | relative_url}}">Events</a>
