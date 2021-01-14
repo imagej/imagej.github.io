@@ -45,7 +45,8 @@ To build a Maven project:
 2.  Clone the source repository of interest.
 3.  Type `mvn` from the top-level directory.
 
-Advanced instructions for building, or modifying, the source code are available for specific development environments: {% include ides%}
+Advanced instructions for building, or modifying, the source code are available for specific development environments:
+{% include ides%}
  Note that these tutorials are targeted towards [ImageJ](ImageJ), but would apply to any Maven-based project.
 
 Javadocs
@@ -58,5 +59,3 @@ Running ImageJ1 unit tests
 --------------------------
 
 We have written a substantial number of unit tests to exercise [ImageJ 1.x](ImageJ_1.x) functionality. See the [Unit tests for ImageJ1](Unit_tests_for_ImageJ1) page for more information.
-
-
