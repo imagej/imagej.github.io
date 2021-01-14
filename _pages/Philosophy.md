@@ -49,103 +49,18 @@ Backward compatibility is one of ImageJ's most important goals. It must remain p
 Release early, release often
 ----------------------------
 
-{% include box title='What"s the alternative?' width='30%' float='right' text='Some projects opt to release their entire software stack with a single monolithic version number. This has one extremely nice ramification: it clearly communicates which versions of which software components are intended to be compatible with one another.
+{% include box title="**What's the alternative?**" width='50%' float='right' text='Some projects opt to release their entire software stack with a single monolithic version number. This has one extremely nice ramification: it clearly communicates which versions of which software components are intended to be compatible with one another.
 
 For example, the [OME](OME) project (which includes [OMERO](OMERO) and [Bio-Formats](Bio-Formats)) employs this approach to versioning and release management. Before each release, the entire OME team performs careful and thorough integration testing of all components.
 
-<table class="wikitable" style="width: 100%">
-<tr>
-<th colspan="3">
+**Versioning Strategies**
 
-Versioning strategies
-
-</th>
-<tr>
-<td>
-
-""Versioning""
-
-</td>
-<td>
-
-"""BOM"""
-
-</td>
-<td>
-
-"""Monoversioned"""
-
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top">
-
-""Releases""
-
-</td>
-<td>
-
-"""RERO"""
-
-</td>
-<td>
-
-""""Big bang""""
-
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top">
-
-""Version compatibility""
-
-</td>
-<td>
-
-Compatible components are declared in a [Bill of Materials](Bill_of_Materials) (BOM)
-
-</td>
-<td>
-
-Compatible components have the same version number
-
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top">
-
-""Frequency of releases""
-
-</td>
-<td>
-
-Faster
-
-</td>
-<td>
-
-Slower
-
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top">
-
-""Stability""
-
-</td>
-<td>
-
-Less
-
-</td>
-<td>
-
-More
-
-</td>
-</tr>
-</table>
+| *Versioning* | BOM | Monoversioned |
+|-|-|-|
+| *Releases* | RERO | Big bang |
+| *Version compatibility* | Compatible components are declared in a [Bill of Materials](/Bill_of_Materials) (BOM) | Compatible components have the same version number |
+| *Frequency of releases* | Faster | Slower |
+| *Stability* | Less | More |
 
 ' %} ImageJ subscribes to the {% include wikipedia title='Release early, release often' text='release early, release often'%} (RERO) mantra often cited in software engineering circles. In particular—and especially because there is a small core development team—the project is driven by [Boyd's Law of Iteration](http://blog.codinghorror.com/boyds-law-of-iteration/): **speed of iteration beats quality of iteration**. That is not to say that we do not strive for quality—we do. But we have found through experience that more releases, together with guiding user feedback, push a project forward more efficiently than a slower release cycle does.
 
@@ -168,5 +83,3 @@ Java programs run without trouble and without recompiling on the major platforms
 So the true reason why we use Java is probably: it makes [ImageJ](ImageJ) accessible.
 
 See also [Isn't Java too slow?](http://loci.wisc.edu/faq/isnt-java-too-slow) and [Why is your software written in Java?](http://loci.wisc.edu/faq/why-java) from the LOCI FAQ.
-
-
