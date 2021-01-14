@@ -41,15 +41,11 @@ Rewriting history
 
 One of the most powerful things Git can do is rewrite a series of patches after the fact. This is a powerful technique worth learning. There are many guides available here and elsewhere:
 
-<div style="list-style-position: inside;">
 
--   [Modifying your commits](How_to_contribute_to_an_existing_plugin_or_library#Modifying_your_commits) section of the [Contributing to a plugin](How_to_contribute_to_an_existing_plugin_or_library) page
--   [Advanced topic branch editing](Git_topic_branches#Advanced_topic_branch_editing_.28AKA_rebase_on_drugs.29) section of the [Git topic branches](Git_topic_branches) tutorial
--   [Rewriting history](https://www.atlassian.com/git/tutorials/rewriting-history/) tutorial from Atlassian
--   [7.6 Git Tools - Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) from the Git book
--   [About Git rebase](https://help.github.com/articles/about-git-rebase/) article from GitHub
--   [Using Git rebase](https://help.github.com/articles/using-git-rebase/) article from GitHub
 
-</div>
-
- 
+* [Modifying your commits](How_to_contribute_to_an_existing_plugin_or_library#Modifying_your_commits) section of the [Contributing to a plugin](How_to_contribute_to_an_existing_plugin_or_library) page
+*   [Advanced topic branch editing](Git_topic_branches#Advanced_topic_branch_editing_.28AKA_rebase_on_drugs.29) section of the [Git topic branches](Git_topic_branches) tutorial
+*   [Rewriting history](https://www.atlassian.com/git/tutorials/rewriting-history/) tutorial from Atlassian
+*   [7.6 Git Tools - Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) from the Git book
+*   [About Git rebase](https://help.github.com/articles/about-git-rebase/) article from GitHub
+*   [Using Git rebase](https://help.github.com/articles/using-git-rebase/) article from GitHub
