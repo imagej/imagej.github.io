@@ -1,78 +1,17 @@
-<table class="infobox" cellspacing="5" style="text-align: left; float: right; border: 1px solid #a0a0a0; font-size: 80%; width: 30%;">
-<tbody><tr>
-<th colspan="2" style="font-size: 130%;">  <a href="Formats" title="Formats">Formats</a>
-</th></tr>
-<tr>
-<td>
-</td></tr>
-{% if page.title == "Bio-Formats" %}
-<b>Bio-Formats</b>
-{% else %}
-<tr>
-<td>  <a href="Bio-Formats" title="Bio-Formats">Bio-Formats</a>
-</td></tr>
-{% endif %}
-{% if page.title == "Video formats" %}
-<b>Video formats</b>
-{% else %}
-<tr>
-<td>  <a href="Video" title="Video">Video formats</a>
-</td></tr>
-{% endif %}
-{% if page.title == "QuickTime" %}
-<b>QuickTime</b>
-{% else %}
-<tr>
-<td>  <a href="QuickTime" title="QuickTime">QuickTime</a>
-</td></tr>
-{% endif %}
-{% if page.title == "TIFF" %}
-<b>TIFF</b>
-{% else %}
-<tr>
-<td>  <a href="TIFF" title="TIFF">TIFF</a>
-</td></tr>
-{% endif %}
-{% if page.title == "Extract Images From PDF..." %}
-<b>PDF</b>
-{% else %}
-<tr>
-<td>  <a href="Extract_Images_From_PDF..." title="Extract Images From PDF...">PDF</a>
-</td></tr>
-{% endif %}
-{% if page.title == "DICOM" %}
-<b>DICOM</b>
-{% else %}
-<tr>
-<td>  <a href="DICOM" title="DICOM">DICOM</a>
-</td></tr>
-{% endif %}
-{% if page.title == "LSM Toolbox" %}
-<b>Zeiss LSM</b>
-{% else %}
-<tr>
-<td>  <a href="LSM_Toolbox" title="LSM Toolbox">Zeiss LSM</a>
-</td></tr>
-{% endif %}
-{% if page.title == "OlympusImageJPlugin" %}
-<b>Olympus VSI</b>
-{% else %}
-<tr>
-<td>  <a href="OlympusImageJPlugin" title="OlympusImageJPlugin">Olympus VSI</a>
-</td></tr>
-{% endif %}
-{% if page.title == "LuraWave" %}
-<b>LuraWave</b>
-{% else %}
-<tr>
-<td>  <a href="LuraWave" title="LuraWave">Opera Flex</a>
-</td></tr>
-{% endif %}
-{% if page.title == "Category:Import-Export" %}
-<b>All I/O plugins</b>
-{% else %}
-<tr>
-<td>  <a href="./Category:Import-Export" title="Category:Import-Export">All I/O plugins</a>
-</td></tr>
-{% endif %}
-</tbody></table>
+<div id="sidebar">
+{% include menu title="Formats" content=
+"
+| :---: |
+| [Bio-Formats](/Bio-Formats) |
+| [Video formats](/Video_formats) |
+| [QuickTime](/QuickTime) |
+| [TIFF](/TIFF) |
+| [PDF](/Extract_Images_From_PDF...) |
+| [DICOM](/DICOM) |
+| [Zeiss_LSM](/LSM Toolbox)
+| [Olympus_VSI](/OlympusImageJPlugin) |
+| [OperaFlex](/LuraWave) |
+| [All I/O plugins](/Category:Import-Export) |
+"
+%}
+</div>

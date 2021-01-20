@@ -1,85 +1,17 @@
-<table class="infobox" cellspacing="5" style="text-align: left; float: right; border: 1px solid #a0a0a0; font-size: 80%;">
-<tbody><tr>
-<th colspan="2" style="font-size: 130%;">  Cookbook Topics
-</th></tr>
-<tr>
-<td>
-</td></tr>
-{% if page.title == "Cookbook" %}
-<b>Introduction and Installation</b>
-{% else %}
-<tr>
-<td>  <a href="Cookbook" title="Cookbook">Introduction and Installation</a>
-</td></tr>
-{% endif %}
-{% if page.title == "Annotating Images" %}
-<b>Annotating Images</b>
-{% else %}
-<tr>
-<td>  <a href="Annotating_Images" title="Annotating Images">Annotating Images</a>
-</td></tr>
-{% endif %}
-{% if page.title == "Color Image Processing" %}
-<b>Color Image Processing</b>
-{% else %}
-<tr>
-<td>  <a href="Color_Image_Processing" title="Color Image Processing">Color Image Processing</a>
-</td></tr>
-{% endif %}
-{% if page.title == "Deconvolution" %}
-<b>Deconvolution</b>
-{% else %}
-<tr>
-<td>  <a href="Deconvolution" title="Deconvolution">Deconvolution</a>
-</td></tr>
-{% endif %}
-{% if page.title == "Image Intensity Processing" %}
-<b>Image Intensity Processing</b>
-{% else %}
-<tr>
-<td>  <a href="Image_Intensity_Processing" title="Image Intensity Processing">Image Intensity Processing</a>
-</td></tr>
-{% endif %}
-{% if page.title == "Importing Image Files" %}
-<b>Importing Image Files</b>
-{% else %}
-<tr>
-<td>  <a href="Importing_Image_Files" title="Importing Image Files">Importing Image Files</a>
-</td></tr>
-{% endif %}
-{% if page.title == "Particle Analysis" %}
-<b>Particle Analysis</b>
-{% else %}
-<tr>
-<td>  <a href="Particle_Analysis" title="Particle Analysis">Particle Analysis</a>
-</td></tr>
-{% endif %}
-{% if page.title == "Saving and Exporting" %}
-<b>Saving and Exporting</b>
-{% else %}
-<tr>
-<td>  <a href="Saving_and_Exporting" title="Saving and Exporting">Saving and Exporting</a>
-</td></tr>
-{% endif %}
-{% if page.title == "Stack-slice Manipulations" %}
-<b>Stack-slice Manipulations</b>
-{% else %}
-<tr>
-<td>  <a href="Stack-slice_Manipulations" title="Stack-slice Manipulations">Stack-slice Manipulations</a>
-</td></tr>
-{% endif %}
-{% if page.title == "T-functions" %}
-<b>T-functions</b>
-{% else %}
-<tr>
-<td>  <a href="T-functions" title="T-functions">T-functions</a>
-</td></tr>
-{% endif %}
-{% if page.title == "Z-functions" %}
-<b>Z-functions</b>
-{% else %}
-<tr>
-<td>  <a href="Z-functions" title="Z-functions">Z-functions</a>
-</td></tr>
-{% endif %}
-</tbody></table>
+<div id="sidebar">
+{% include menu title="About" content=
+"
+| :---: |
+| [Introduction and Installation](/Cookbook) |
+| [Annotating Images](/Annotating_Images) |
+| [Color Image Processing](/Color_Image_Processing) |
+| [Deconvolution](/Deconvolution) |
+| [Image Intensity Processing](/Image_Intensity_Processing) |
+| [Particle Analysis](/Particle_Analysis) |
+| [Saving and Exporting](/Saving_and_Exporting)
+| [Stack-slice Manipulations](/Stack-slice_Manipulations) |
+| [T-functions](/T-functions) |
+| [Z-functions](/Z-functions)
+"
+%}
+</div>

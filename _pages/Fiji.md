@@ -46,4 +46,4 @@ If you'd like to share an idea or project, please [share them with the community
 Publication
 -----------
 
--   {% include publication content='Fiji' %}
+{% include publication content='Fiji' %}
