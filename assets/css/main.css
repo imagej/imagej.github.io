@@ -3089,7 +3089,13 @@ input, select, textarea {
 		width: 100%;
 		text-align: left;
 	}
-
+	.menu-learn table {
+		background-color: #f9f9f9;
+		border-collapse: collapse;
+		table-layout: fixed;
+		width: 100%;
+		text-align: center;
+	}
 	.menu tbody {
 		background-color: #f9f9f9;
 		text-align: left;
@@ -3109,7 +3115,6 @@ input, select, textarea {
 
 	.menu th {
 		background: lightgray;
-		font-variant: small-caps;
 		text-align: center;
 		font-weight: bold;
 		font-size: medium;
@@ -3255,16 +3260,6 @@ input, select, textarea {
 	table {
 		margin: 0 auto;
 		width: 100%;
-
-	}
-
-	.learn-table {
-		cellspacing: 5;
-		collapsetext: -;
-		text-align: left;
-		float: right;
-		border: 1px solid #a0a0a0;
-		font-size: 80%
 
 	}
 
@@ -4292,4 +4287,9 @@ input, select, textarea {
     		background: #e6e6e6;
     		border: 1px solid #aaa;
     		border-left: 10px solid #1e90ff !important;
+	}
+	/* Info-box */
+
+	div.info-box {
+		width: 60%;
 	}
