@@ -96,4 +96,5 @@
 
 .wrap {
   position: relative;
+  max-width: 50%;
 }

@@ -1,3 +1,4 @@
+<div id="sidebar">
 {% include menu title="Help" content=
 "
 | :---: |
@@ -9,3 +10,4 @@
 | [Editing the ImageJ Wiki](/Help:Contents) |
 "
 %}
+</div>
