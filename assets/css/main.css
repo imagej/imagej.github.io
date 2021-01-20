@@ -247,9 +247,7 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		margin: 0 auto;
-		max-width: calc(100% - 4em);
-		width: 60em;
+		margin: 0 200px;
 	}
 
 		.container.xsmall {
@@ -3013,8 +3011,8 @@ input, select, textarea {
 /* Sidebar */
 
 	.sidebar {
-		width: auto;
-		float: right;
+		width: 240px;
+		position: absolute;
 		z-index: 1;
 		top: 0;
 		left: 0;
@@ -3284,11 +3282,9 @@ input, select, textarea {
 	}
 
 	.table-info {
-		margin: 0 10%;
 		border-collapse: collapse;
 		background: #f9f9f9;
 		border: 1px solid #aaa;
-		width: 80%;
 	}
 
 		.table-info td {
@@ -3530,7 +3526,7 @@ input, select, textarea {
 /* min-height 80vh is to resolve the footer issue from sitting in the middle of the page */
 
 	.main {
-		padding: 6em 0 4em 0 ;
+		padding: 0;
 	}
 
 		.main.style1 {

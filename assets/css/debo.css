@@ -50,14 +50,17 @@
 }
 
 #info-box {
-    float: right;
-    min-width: 500px;
+  position: absolute;
+  right: 0;
+  width: 240px;
+  font-size: 0.75em;
 }
 
 .toc {
-    margin-right: 40px;
-    max-width: 500px;
-    margin-bottom: 20px;
+    position: absolute;
+    left: 0;
+    font-size: 0.75em;
+    width: 240px;
     float: left;
 }
 
@@ -89,4 +92,8 @@
     border: 2px solid red;
     padding: 5px;
     display: inline-block;
+}
+
+.wrap {
+  position: relative;
 }
