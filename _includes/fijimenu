@@ -1,3 +1,4 @@
+<div id="sidebar">
 {% include menu title="<b>F</b>iji <b>I</b>s <b>J</b>ust <b>I</b>mageJ" content=
 "
 | :---: |
@@ -13,3 +14,4 @@
 | [Contribution requirements](/Fiji%2FContribution_requirements) |
 "
 %}
+</div>
