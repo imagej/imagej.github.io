@@ -1,5 +1,5 @@
 {% capture content %}
-<div id="learn-table" lang="en" dir="ltr" class="learn-table"><table class="learn-table" cellspacing="5" style="text-align: left; float: right; border: 1px solid #a0a0a0; font-size: 80%;">
+<div id="menu"><table class="menu">
 <tr>
 <th colspan="2" style="font-size: 130%;">  Learn
 </th></tr>
@@ -8,7 +8,7 @@
 </td></tr>
 <tr>
 <td>
-<table class="infobox mw-collapsible" cellspacing="5" data-collapsetext="-" data-expandtext="+" style="width: 100%; text-align: left; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;">
+<table>
 <tr>
 <th>  Topics
 </th></tr>
@@ -67,7 +67,7 @@
 </td></tr>
 <tr>
 <td>
-<table class="infobox mw-collapsible mw-collapsed" cellspacing="5" data-collapsetext="-" data-expandtext="+" style="width: 100%; text-align: left; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;">
+<table>
 <tr>
 <th>  Techniques
 </th></tr>
@@ -129,7 +129,7 @@
 </td></tr>
 <tr>
 <td>
-<table class="infobox mw-collapsible mw-collapsed" cellspacing="5" data-collapsetext="-" data-expandtext="+" style="width: 100%; text-align: left; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;">
+<table>
 <tr>
 <th>  Scripting
 </th>
@@ -235,7 +235,7 @@
 </td></tr>
 <tr>
 <td>
-<table class="infobox mw-collapsible mw-collapsed" cellspacing="5" data-collapsetext="-" data-expandtext="+" style="width: 100%; text-align: left; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;">
+<table>
 <tr>
 <th>  Languages
 </th></tr>

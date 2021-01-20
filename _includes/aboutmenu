@@ -1,4 +1,5 @@
 {% include menu title="About" content=
+<div id="sidebar">
 "
 | :---: |
 | [ImageJ](/ImageJ) |
@@ -10,4 +11,5 @@
 | [Contributing](/Contributing)
 | [Wish list](/Wish_list) |
 "
+</div>
 %}
