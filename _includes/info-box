@@ -49,7 +49,7 @@
 {% endif %}
 {% endcapture %}
 
-<div id="info-box">
+<div id="wrap">
     <table class="table-info">
         <tbody>
             <tr>

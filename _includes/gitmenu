@@ -1,3 +1,4 @@
+<div id="sidebar">
 {% include menu title="Git Tutorials" content=
 "
 | :---: |
@@ -15,3 +16,4 @@
 | [How to extract a subproject](How_to_extract_a_subproject) |
 "
 %}
+</div>

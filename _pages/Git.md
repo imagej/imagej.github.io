@@ -27,12 +27,12 @@ Why do we use Git?
 Git tutorials
 -------------
 
-<div style="float: left; padding-right: 20px">
+
 
 {% include gitmenu%}
 
 
-</div>
+
 
 This web site has lots of tutorials on Git; see the left sidebar.
 
