@@ -1,1 +1,7 @@
-<a class="big-link" href="#">{{include.content}}</a>
+{% if include.url != null %}
+{% assign url = {{include.url}} %}
+{% endif %}
+
+<div style="font-family: monospace;font-size: large; background-color: khaki; padding: 0.5em 0 0.5em 3em;">
+<a href="{{url}}">{{url}}</a>
+</div>
