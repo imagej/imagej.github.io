@@ -24,7 +24,7 @@ Prerequisites
 -   Add the {% include list-of-update-sites content='ImageJ-MATLAB' %} update site. See [Following an update site](Following_an_update_site) for more detail.
     1.  You go to `Help > Update...`
     2.  Once checking status is done, open `Manage update sites`
-    3.  Tick `ImageJ-MATLAB` and then `Close` ![](/media/Manage update sites ImageJ MATLAB.png "fig:Manage_update_sites_ImageJ_MATLAB.png")
+    3.  Tick `ImageJ-MATLAB` and then `Close` <img src="/media/Manage_update_sites_ImageJ_MATLAB.png" alt="fig:Manage_update_sites_ImageJ_MATLAB.png" width="550"/>
     4.  And then click `Apply changes` on ImageJ Updater
     5.  This will literally update and replace the existing, non-functional `ImageJ.m` file in the scripts folder with the genuine one.
 -   You will need to install your own licensed copy of [MATLAB](http://www.mathworks.com/products/matlab/). All that is provided with ImageJ are adapters for evaluating scripts written in ImageJ to [MATLAB](MATLAB), and converters between ImageJ and [MATLAB](MATLAB) data structures.
@@ -60,7 +60,7 @@ Actually running a [MATLAB](MATLAB) script from ImageJ is effectively like calli
 > will end up in an error in MATLAB:
 >
 >     Warning: Escaped character '\U' is not valid. See 'doc sprintf' for
->     supported special characters. 
+>     supported special characters.
 >     scijava_script523255 =
 >         's = 'C:'
 >     Error: Character vector is not terminated properly.
@@ -350,9 +350,9 @@ If you use [`copytoImagePlus`](https://github.com/kouichi-c-nakamura/copytoImage
     IJM.show('I16') % ImagePlus, 32-bit, 171x196x1x1x510
 
     imp4 = copytoImagePlus(I16,'XYCZT') % ImagePlus, 16-bit, 171x196x2x5x51
-    imp4.show(); 
+    imp4.show();
 
-`IJM.show(name)` cannot reproduce the dimensions and the data type. Channels (C), slices (Z), and frames (T) are all treated as frames. Image type is 32 bit. <img src="/media/IJMshow Image006.png" width="150"/>
+`IJM.show(name)` cannot reproduce the dimensions and the data type. Channels (C), slices (Z), and frames (T) are all treated as frames. Image type is 32 bit. <img src="/media/IJMshow_Image006.png" width="150"/>
 
 `copytoImagePlus` can keep the dimensions and the data type. <img src="/media/Image003.png" width="150"/>
 
@@ -380,5 +380,3 @@ See also
 -   [Analyzing TrackMate results with MATLAB](Analyzing_TrackMate_results_with_MATLAB)
 -   [Comparison of Matlab functions and Ops](Comparison_of_Matlab_functions_and_Ops)
 -   [Miji](Miji) (legacy)
-
-  

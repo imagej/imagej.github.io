@@ -133,6 +133,7 @@ In `/path/to/imagej.github.io/_pages`, create a new text file i.e. `cat > your_p
 <br>
 
 NOTE: filenames should be lowercase, omit spaces, and use extension `.md`.
+
 ## Editing a page locally
 
 We recommend using a [text editor](https://hackernoon.com/5-best-text-editors-for-programmers-3f54ef51d5ae) to add content and make changes to a page when working locally. A text editor makes navigating between files, searching for text within your page, and making multiple edits more efficient and provides a more user-friendly interface.

@@ -3281,6 +3281,11 @@ input, select, textarea {
 		padding: 15px !important;
 	}
 
+	.table-warning {
+		border-collapse: collapse;
+		background: #FFCCCB;
+		border: 0px solid #aaa;
+	}
 	.table-info {
 		border-collapse: collapse;
 		background: #f9f9f9;
