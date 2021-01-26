@@ -1,4 +1,4 @@
-<div id="sidebar" z-index="2">
+<div id="wrap">
 {% include menu title="Git Tutorials" content=
 "
 | :---: |
