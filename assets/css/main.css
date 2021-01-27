@@ -2257,7 +2257,8 @@ input, select, textarea {
 	div.minibox {
 	    border: thin solid #cccccc;
 	    padding: 0.2em;
-			margin-top: -2em;
+			margin-top: 1em;
+			margin-bottom: 1em;
 	    background-color: #f9f9f9;
 	    font-size: 0.875em;
 	    text-align: center;

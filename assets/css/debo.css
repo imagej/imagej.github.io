@@ -50,8 +50,8 @@
 }
 
 #info-box {
-  position: absolute;
-  right: 0;
+  position: relative;
+  float: right;
   width: 240px;
   font-size: 0.75em;
 }
@@ -97,4 +97,5 @@
 .wrap {
   position: relative;
   max-width: 50%;
+  float: center;
 }
