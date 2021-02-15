@@ -8,4 +8,13 @@ description: Fiji plugin to digitally unroll deformed tubes.
 
 Fiji plugin to digitally unroll deformed tubes.
 
-&lt; page under construction &gt;
+The plugin is currently available through the 3Dcyclorama Fiji site:
+
+- Start Fiji
+- Go to: Help>Update>Manage update sites
+- Check the 3Dcyclorama site
+- Click close
+- Click Apply changes
+- The 3D cyclorama plugin should appear in the Plugins menu towards the bottom in a menu titled "3D cyclorama"
+
+&lt; Help and tutorial coming soon &gt;
