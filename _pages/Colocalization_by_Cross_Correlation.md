@@ -20,7 +20,7 @@ Available on the list of [ImageJ updates sites](Update_Sites). Requires Fiji.
 
 **How it works:**
 
-{% include thumbnail src='/media/ColocByCorrelation-CorrelationImage.jpg' title='Correlation Image'%}
+{% include figure-left name="Correlation Image" image_path="/media/ColocByCorrelation-CorrelationImage.jpg" content="**Correlation Image**: Example image produced by the correlation function of two images." %}
 
 The plugin performs a cross-correlation in frequency space to create a correlation image. To remove non-specific correlations (from background, or high signal density), a correlation image generated from randomized images is then subtracted from the original correlation image. This occurs through cycles of:
 
@@ -30,7 +30,7 @@ The plugin performs a cross-correlation in frequency space to create a correlati
 
 After the subtraction of non-specific correlations, we generate a radial profile of this data and fit a gaussian curve to it, showing the correlation between the images at different offsets. We also generate a radial profile for the original correlation data before subtraction, as this is needed to establish a measure of confidence. The confidence is calculated as the area under the curve (AUC) of the subtracted correlation radial profile (in the range of mean ± 3×sigma) divided by the AUC of the original correlation radial profile (in same range) as a percentage. The confidence value, along with the mean and sigma of the gaussian fit are displayed in a log window. Higher values of confidence, closer to 100, indicate that two images likely have a true spatial correlation at the indicated distance.
 
-{% include thumbnail src='/media/ColocByCorrelate-Graph.jpeg' title='Radial profile of correlation image shown above'%}
+{% include figure-left name="Radial profile" image_path="/media/ColocByCorrelate-Graph.jpeg" content="Radial profile of correlation image shown above" %}
 
 **Preparing images:**
 
@@ -44,7 +44,7 @@ The plugin can be found in the plugins menu (near the bottom) and should be star
 
 After the plugin has finished, two new windows will be open:
 
-![](/media/ColocByCorrelate-GaussFit.jpg "ColocByCorrelate-GaussFit.jpg")
+{% include figure-right name="Gaussian fit resutls" image_path=/media/ColocByCorrelate-GaussFit.jpg" content="Example result of a gaussian fit to the above radial profile" %}
 
 Correlation plot: A radial profile plot will be displayed, it contains the radial profile of the original correlation image (black line), the radial profile of the correlation after subtraction of random associations (red line), and a Gaussian curve fit to the subtracted profile (blue dots). The Y-axis is the result of the average correlation function at a given distance. While not arbitrary, it is most easily viewed as a measure of relative correlation. The range of the graph is set automatically to fit the Gaussian curve. If you wish to view all the data select More&gt;Set Range to Fit all…
 
