@@ -56,34 +56,40 @@
   font-size: 0.75em;
 }
 
-.toc {
+@media screen and (min-width: 780px) {
+  .toc {
     position: absolute;
     left: 0;
     font-size: 0.75em;
     width: 240px;
     float: left;
-}
+  }
 
-.toc ol {
-    margin: 0;
-    padding-left: 1.4em;
-    border-left: 1px solid black;
-}
+  .toc ol {
+      margin: 0;
+      padding-left: 1.4em;
+      border-left: 1px solid black;
+  }
 
-.toc > ol {
-    background: #f1f1f4;
-    border: none;
-    padding: 20px 40px 20px 40px;
-}
+  .toc > ol {
+      background: #f1f1f4;
+      border: none;
+      padding: 20px 40px 20px 40px;
+  }
 
-.toc a {
-    color: black;
-}
+  .toc a {
+      color: black;
+  }
 
-.toc ol li {
-  margin-bottom: 0px;
+  .toc ol li {
+      margin-bottom: 0px;
+  }
 }
-
+@media screen and (max-width: 780px) {
+  .toc {
+    display: none;
+    }
+}
 .page-content h1, h2 {
     clear: left;
 }
