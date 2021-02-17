@@ -39,6 +39,9 @@ The following video shows an example of FijiRelax application: the T1-T2 cross-f
 **Installation**
 --
 
+The following video guide you throughout the installation process, and take a first tour of FijiRelax functions.
+{% include youtube url='https://youtu.be/4QjCp7qlaLM'%}
+
 In order to install FijiRelax on your computer, please follow these steps:
 
 1\. *(if needed) *Download and install Fiji from https://fiji.sc/ ; start Fiji, and let it automatically update. Then restart Fiji.
