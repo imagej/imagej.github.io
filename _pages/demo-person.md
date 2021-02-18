@@ -1,8 +1,9 @@
 ---
 title: Demo people
 layout: page
-author: 
-categories: 
+author:
+categories: help
+
 description: this page demonstrates how to use the person include tag.
 ---
 

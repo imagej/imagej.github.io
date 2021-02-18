@@ -1,8 +1,8 @@
 ---
 title: Demo figure
 layout: page
-author: 
-categories: 
+author:
+categories: help
 description: This page demonstrates how to use figures (_i.e._ images with legend text).
 ---
 

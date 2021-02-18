@@ -1,8 +1,8 @@
 ---
 title: Demo details-box
 layout: page
-author: 
-categories: 
+author:
+categories: help
 description: This page demonstrates how to add a details box to your page.
 ---
 
@@ -15,7 +15,7 @@ Include an information box about your project where you can list specific detail
 {% raw %}
 ```
 {% include details-box
-title="Feature Demo" 
+title="Feature Demo"
 project_name="ImageJ.net"
 url="[http://www.wisc.edu](https://www.wisc.edu)"
 source="[on GitHub](https://github.com/imagej/imagej.github.io/tree/jekyll-prototype)"
@@ -38,7 +38,7 @@ team_contributors = ""
 {% endraw %}
 
 {% include details-box
-title="Feature Demo" 
+title="Feature Demo"
 project_name="ImageJ.net"
 url="[http://www.wisc.edu](https://www.wisc.edu)"
 source="[on GitHub](https://github.com/imagej/imagej.github.io/tree/jekyll-prototype)"

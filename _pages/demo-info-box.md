@@ -1,8 +1,8 @@
 ---
 title: Demo info-box
 layout: page
-author: 
-categories: 
+author:
+categories: help
 description: This page demonstrates how to insert an info-box.
 ---
 
@@ -16,7 +16,7 @@ Note that you can still use markdown inside the `""` where your text is placed. 
 
 {% raw %}
 ```
-{% include info-box content="Hey this is the info box! 
+{% include info-box content="Hey this is the info box!
 
 - item 1
 - item 2
@@ -25,7 +25,7 @@ If you want to learn more about how to create an info box, view the source of th
 ```
 {% endraw %}
 
-{% include info-box content="Hey this is the info box! 
+{% include info-box content="Hey this is the info box!
 
 - item 1
 - item 2

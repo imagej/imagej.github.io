@@ -1,8 +1,8 @@
 ---
 title: Demo github links
 layout: page
-author: 
-categories: 
+author:
+categories: help
 description: this page demonstrates how to use the github include tag
 ---
 
@@ -62,7 +62,7 @@ repository as a whole:
 
 {% include github repo='fiji' %}  
 
-Use `tag` to specify a tag (rather than `master`): 
+Use `tag` to specify a tag (rather than `master`):
 
 {% raw %}
 ```
@@ -72,7 +72,7 @@ Use `tag` to specify a tag (rather than `master`):
 
 {% include github tag='imagej-2.0.0-beta-7.9' path='app/src/test/java/imagej/debug/TypeHierarchy.java' %}  
 
-Specifying `tag` alone links to the tag description: 
+Specifying `tag` alone links to the tag description:
 
 {% raw %}
 ```
@@ -92,7 +92,7 @@ Use `commit` to specify a commit hash:
 
 {% include github commit='7a10880d485a13fc449d84c7e2eca3e1481064ee' label='imagej@7a10880d' %}  
 
-Use `issue` or `pr` to specify an issue or PR number: 
+Use `issue` or `pr` to specify an issue or PR number:
 
 {% raw %}
 ```
@@ -106,7 +106,7 @@ Use `label` to override the label:
 
 {% raw %}
 ```
-{% include github repo='fiji' path='plugins/Examples/Fiji_Logo_3D.js' label='Fiji...' %} 
+{% include github repo='fiji' path='plugins/Examples/Fiji_Logo_3D.js' label='Fiji...' %}
 ```
 {% endraw %}
 

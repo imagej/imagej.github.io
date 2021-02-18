@@ -1,8 +1,8 @@
 ---
 title: Demo math
 layout: page
-author: 
-categories: 
+author:
+categories: help
 description: This page demonstrates how to use math equations.
 ---
 

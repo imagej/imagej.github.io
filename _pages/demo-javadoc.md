@@ -1,6 +1,8 @@
 ---
 title: Demo Javadoc
 layout: page
+category: help
+description: Demo on javadoc include
 ---
 
 # Usage

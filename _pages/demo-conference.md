@@ -1,8 +1,8 @@
 ---
 title: Demo conference
 layout: page
-author: 
-categories: 
+author:
+categories: help
 description: This page demonstrates how to insert conference information.
 ---
 
@@ -21,7 +21,7 @@ link = "http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-
 ```
 {% endraw %}
 
-{% include conference 
+{% include conference
 title = "ImageJ XXXX User & Developer Conference"
 section = "nth ImageJ User & Developer Conference"
 dates = "24 - 26 October XXXX"

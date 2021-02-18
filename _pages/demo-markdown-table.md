@@ -1,7 +1,7 @@
 ---
 title: Demo Markdown Table
 layout: page
-categories: demo
+categories: help
 description: This page explains how to insert a markdown table into your page, as well as add images to said table.
 ---
 ## Usage

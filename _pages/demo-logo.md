@@ -1,8 +1,8 @@
 ---
 title: Demo logos
 layout: page
-author: 
-categories: 
+author:
+categories: help
 description: this page demonstrates how to use the logo include tag
 ---
 
@@ -42,11 +42,11 @@ You can also override the horizontal alignment:
 
 {% raw %}
 ```
-{% include logo content='Linux' size='96px' align='left' %} 
+{% include logo content='Linux' size='96px' align='left' %}
 ```
 {% endraw %}
 
-{% include logo content='Linux' size='96px' align='left' %} 
+{% include logo content='Linux' size='96px' align='left' %}
 Alpha  
 Beta  
 Gamma

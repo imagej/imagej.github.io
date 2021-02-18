@@ -1,8 +1,8 @@
 ---
 title: Demo License menu
 layout: page
-author: 
-categories: 
+author:
+categories: help
 description: This page demonstrates how to insert the license menu.
 ---
 

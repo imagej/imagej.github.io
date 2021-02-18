@@ -1,8 +1,8 @@
 ---
 title: Demo gallery
 layout: page
-author: 
-categories: 
+author:
+categories: help
 description: This page demonstrates how to insert a gallery.
 ---
 
