@@ -14,7 +14,7 @@ Fiji plugin to digitally unroll deformed tubes. If you use this plugin for your 
 Download
 ---------
 
-The plugin is currently available through the *3Dcyclorama* Fiji site:
+Step 1 - enable the *3Dcyclorama* site:
 
 - Start Fiji
 - Go to Help > Update > Manage update sites
@@ -22,6 +22,13 @@ The plugin is currently available through the *3Dcyclorama* Fiji site:
 - Check the newly added *3Dcyclorama* site
 - Click *close*
 - Click *Apply changes*
+
+Step 2 - download dependencies:
+- Create a directory named *FastDTW* in the Fiji plugins directory (Fiji.app/plugins/FastDTW)
+- Download the FastDTW algorithm from github https://github.com/rmaestre/FastDTW (Click code > download zip)
+- Extract the contents of FastDTW-master (FastDTW.iml, README.md, src, target, etc.) in Fiji.app/plugins/FastDTW
+
+Step 3 - Run:
 - Restart Fiji
 - The 3D cyclorama plugin should appear in the Plugins menu towards the bottom in a menu titled **3D cyclorama**
 
