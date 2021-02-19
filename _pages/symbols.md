@@ -1,8 +1,8 @@
 ---
-title: Demo symbols
+title: Using symbols on the wiki
 layout: page
 author:
-categories: help
+categories: tutorials
 description: This page demonstrates how to add a symbol to your page from preset options.
 ---
 
