@@ -18,9 +18,11 @@ The plugin is currently available through the *3Dcyclorama* Fiji site:
 
 - Start Fiji
 - Go to Help > Update > Manage update sites
-- Check the *3Dcyclorama* site
+- Click *Add update site*. Name: 3D cyclorama, URL: https://sites.imagej.net/3Dcyclorama
+- Check the newly added *3Dcyclorama* site
 - Click *close*
 - Click *Apply changes*
+- Restart Fiji
 - The 3D cyclorama plugin should appear in the Plugins menu towards the bottom in a menu titled **3D cyclorama**
 
 Tutorial
