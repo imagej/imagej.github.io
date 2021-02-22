@@ -41,9 +41,9 @@ Far too often, composite/merge images of red and green channels are considered s
 
 {% include figure-center name="SpiralsRGY.png" image_path="/media/SpiralsRGY.png" content="SpiralsRGY.png" %}
 
-Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling {% include bc content='File | Open Samples | [Spirals (Macro)](Spirals_Macro "wikilink")'%} in Fiji.
+{% include figure-right name="GreenYellowSimultColourIllusion.png" image_path="/media/GreenYellowSimultColourIllusion.png" content="Here is another example: the two circles look like different colours, but they are exactly the same if you measure the pixel values." %}
 
-{% include figure-right name="GreenYellowSimultColourIllusion.png" image_path="/media/GreenYellowSimultColourIllusion.png" content="Here is another one: the two circles look like different colours, but they are exactly the same if you measure the pixel values." %}
+Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling {% include bc content='File | Open Samples | [Spirals (Macro)](Spirals_Macro "wikilink")'%} in Fiji.
 
 So... now, how do you feel about determining colocalization by looking for yellow blobs? Doesn't make much sense does it? We notice that the shades and hues of colours look different according to what other colours they are next to! So, you need to measure something from the pixel values, not simply subjectively "look at" a red/green colour merge image.
 
