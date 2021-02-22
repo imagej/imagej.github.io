@@ -43,6 +43,12 @@
 
 .gallery .thumbnail-group {
     float: none;
+    max-height: 100%;
+}
+
+.gallery .thumbnail-group img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .bc {
