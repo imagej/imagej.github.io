@@ -2563,7 +2563,7 @@ input, select, textarea {
 		padding: 0.5em 0.5em 0 0.5em;
 	}
 
-	.figure img {
+	.figure.center img, .figure.left img, .figure.right img {
 		max-width: 100%;	
 	}
 
