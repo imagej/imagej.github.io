@@ -2392,7 +2392,6 @@ input, select, textarea {
 	}
 
 		.image img {
-			max-width: 100%;
 			border-radius: 4px;
 			display: block;
 		}
@@ -2562,6 +2561,10 @@ input, select, textarea {
 		width: 20%;
 		height: 20%;
 		padding: 0.5em 0.5em 0 0.5em;
+	}
+
+	.figure img {
+		max-width: 100%;	
 	}
 
 /* Category */
