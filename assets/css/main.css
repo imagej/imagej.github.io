@@ -4292,8 +4292,6 @@ input, select, textarea {
 				font-size: 100%;
 				vertical-align: baseline;
 				background: transparent;
-				float: right;
-				width: 450px;
 				border: 1px solid #ccc;
 				padding: 15px !important;
 				margin-bottom: 2em;
@@ -4307,7 +4305,6 @@ input, select, textarea {
 				border-collapse: collapse;
 				background: #f9f9f9;
 				border: 1px solid #aaa;
-				width: 45%;
 			}
 	}
 		/* Ambox */
