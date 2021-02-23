@@ -4,12 +4,13 @@
 </div>
 {% endcapture %}
 
-<div id="info-box">
-
-    <center><img src="/images/icons/40px-Warning-sign.png"></center>
+<div id="wrap">
     <table class="table-warning">
         <tbody>
             <tr>
+                <td>
+                    <img src="/images/icons/40px-Warning-sign.png">
+                </td>
                 <td>
                     {{info_content}}
                 </td>
@@ -17,3 +18,4 @@
         </tbody>
     </table>
 </div>
+<br>

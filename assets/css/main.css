@@ -2564,7 +2564,7 @@ input, select, textarea {
 	}
 
 	.figure.center img, .figure.left img, .figure.right img {
-		max-width: 100%;	
+		max-width: 100%;
 	}
 
 /* Category */
@@ -3016,6 +3016,17 @@ input, select, textarea {
 	.search a:hover {
 		color: #6eb3bd;
 	}
+/* Sidebar Container */
+
+	.sidebar-container {
+		width: 240px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+  	justify-content: space-around;
+  	align-items: flex-start;
+	}
 
 /* Sidebar */
 
@@ -3289,6 +3300,22 @@ input, select, textarea {
 		background: #FFCCCB;
 		border: 0px solid #aaa;
 	}
+		.table-warning td {
+			padding: 2px 0px 2px 0.5em;
+			margin: auto;
+			vertical-align: middle;
+		}
+
+		.table-warning p {
+			margin: 0;
+		}
+
+		.table-warning ul {
+			list-style: disc;
+			margin: 0;
+			padding-left: 2em;
+		}
+
 	.table-info {
 		border-collapse: collapse;
 		background: #ebf2f8;
