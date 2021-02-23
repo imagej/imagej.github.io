@@ -17,11 +17,11 @@ FijiRelax is a generic tool for 3D+t MRI analysis and exploration using multi-ec
 - the [Aplim](https://umr-agap.cirad.fr/recherche/projets-de-recherche/aplim) flagship project.
 
  
-**Plugin features :**
+**Plugin features**
 --
 
--  Proton density, T1 and T2 maps computation from multi-echo spin-echo sequences (multiple TR and/or TE)
--  Parameters estimation by fitting noise-corrected mono- and biexponential decay models
+- Proton density, T1 and T2 maps computation from multi-echo spin-echo sequences (multiple TR and/or TE)
+- Parameters estimation by fitting noise-corrected mono- and biexponential decay models
 - Automatic correction of spatial drift and deformations for long T1 or T2 sequences
 - Exploration of T1/T2 distribution in ROI over time
 - Operable through a GUI, or scriptable for batch processing of large datasets
@@ -29,7 +29,7 @@ FijiRelax is a generic tool for 3D+t MRI analysis and exploration using multi-ec
 <figure><img src="/media/FijiRelax_Snap_glob_explorer.png" title="Time-lapse exploration of parameters in a plant under drought stress" width="800" alt="Time-lapse exploration of parameters in a plant under drought stress" /><figcaption aria-hidden="true">Time-lapse exploration of parameters in a plant under drought stress</figcaption></figure>
 
  
-**Dataset for testing purpose :**
+**Dataset for testing purpose**
 --
 A comprehensive dataset can be found on Zenodo at [https://doi.org/10.5281/zenodo.4518730](https://doi.org/10.5281/zenodo.4518730) 
 
@@ -104,14 +104,14 @@ The output image is a 4D MR hyperimage. The "channels" slicer helps you to explo
 
   
 Unit for the channels 2 and 3 are milliseconds, what mean you can use it like it, without any additional conversion.  
-For time-lapse experiments, one can compute such a 4D MR hyperimage at successive timepoints, and register and combine them in a 5D MR hyperimage (the same, with an additional slicer to walk through time). Registration and data combining can be done using the plugin \[Fijiyama\], using the Series registration mode .
+For time-lapse experiments, one can compute such a 4D MR hyperimage at successive timepoints, and register and combine them in a 5D MR hyperimage (the same, with an additional slicer to walk through time). Registration and data combining can be done using the series registration mode of the [Fijiyama](https://imagej.github.io/Fijiyama) plugin.
 
   
 **The science behind**
 --
 This plugin compute M0, T1 and T2 maps pixelwise from a given set of spin-echo sequences, acquired with different repetition times and/or different echo times.
 
-First a 3d registration is computed to align precisely the successive images, using libraries of the \[Fijiyama\] plugin. Then the rice noise level is estimated, and the M0, T1 and T2 parameters are estimated, fitting mono or bi-exponential curves, corrected with the measured rice noise. For more information, see the paper in next section.
+First a 3d registration is computed to align precisely the successive images, using libraries of the [Fijiyama](https://imagej.github.io/Fijiyama)  plugin. Then the rice noise level is estimated, and the M0, T1 and T2 parameters are estimated, fitting mono or bi-exponential curves, corrected with the measured rice noise. For more information, see the paper in next section.
 
 **Citing this work**
 --
@@ -121,8 +121,8 @@ First a 3d registration is computed to align precisely the successive images, us
 
 **Software dependencies acknowledgements**
 --
--   Johannes Schindelin et al for [Fiji](https://imagej.net/Fiji) (Schindelin et al., 2012)
--   Karl Schmidt and Curtis Rueden for MRI Analysis Calculator and CurveFitters
+- Johannes Schindelin et al for [Fiji](https://imagej.net/Fiji) (Schindelin et al., 2012)
+- Karl Schmidt and Curtis Rueden for MRI Analysis Calculator and CurveFitters
 
   
 
