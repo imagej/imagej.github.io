@@ -2259,12 +2259,12 @@ input, select, textarea {
 	div.minibox {
 	    border: thin solid #cccccc;
 	    padding: 0.2em;
-			margin-top: 1em;
 			margin-bottom: 1em;
 	    background-color: #f9f9f9;
 	    font-size: 0.875em;
 	    text-align: center;
 	    overflow: hidden;
+			float: right;
 	}
 
 	div.miniboxcaption {
@@ -4282,7 +4282,7 @@ input, select, textarea {
 
 		/* Info-side-box */
 
-			div.info-side-box {
+			div.imagej1-box {
 				font-family: 'Linux Libertine',constantia,'hoefler text','palatino linotype',serif;
 				line-height: 1.4;
 				color: #333333;
@@ -4298,9 +4298,10 @@ input, select, textarea {
 				background-color: #f9f9f9;
 				border-radius: .75em;
 				box-shadow: 4px 4px 4px #CCC;
+				float; right
 			}
 
-			.table-side-info {
+			.table-imagej1-info {
 				margin: 0 10%;
 				border-collapse: collapse;
 				background: #f9f9f9;
