@@ -3274,12 +3274,15 @@ input, select, textarea {
 
 	}
 
+	table.tip-notice {
+				border-left: 10px solid #7E7E7E;
+			}
+
 	.table-tip-info {
 		margin: 0 10%;
 		float: center;
 		border-collapse: collapse;
 		background: #f9f9f9;
-		border: 1px solid #aaa;
 		width: 80%;
 	}
 
@@ -4314,14 +4317,16 @@ input, select, textarea {
 				border: 1px solid #aaa;
 			}
 	}
-		/* Ambox */
+		/* biginfo */
 
-			table.table-ambox {
+			table.table-biginfo {
     		margin: 0 10%;
     		border-collapse: collapse;
     		background: #e6e6e6;
     		border: 1px solid #aaa;
     		border-left: 10px solid #1e90ff !important;
+				width: 80%;
+				float: center;
 	}
 	/* Info-box */
 

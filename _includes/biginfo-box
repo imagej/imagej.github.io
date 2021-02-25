@@ -4,8 +4,8 @@
 </div>
 {% endcapture %}
 
-<div id="info-box">
-    <table class="table-ambox">
+<div id="wrap">
+    <table class="table-biginfo info-notice">
         <tbody>
             <tr>
                 <td>
@@ -14,7 +14,9 @@
                     </p>
                 </td>
                 <td>
+                  <div style="font-size:25px;">
                     {{info_content}}
+                    </div>
                 </td>
             </tr>
         </tbody>

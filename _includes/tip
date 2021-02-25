@@ -4,8 +4,8 @@
 </div>
 {% endcapture %}
 
-<div id="info-box">
-    <table class="table-tip-info">
+<div id="wrap">
+    <table class="table-tip-info tip-notice">
         <tbody>
             <tr>
                 <td>
@@ -20,3 +20,4 @@
         </tbody>
     </table>
 </div>
+<br>
