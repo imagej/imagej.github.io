@@ -18,11 +18,15 @@ description: test description
 {% capture source%}
 {% include github org='bonej-org' repo='BoneJ2' %}, [doi:10.5281/zenodo.1427262](https://doi.org/10.5281/zenodo.1427262) 
 {% endcapture %}
-{% include info-box name='BoneJ' software='ImageJ' logo='<img src="/media/Bonej-icon.png" width="96"/>' author=author maintainer=maintainer source=source released='Dec 11<sup>th</sup>, 2017' latest-version=' [styloid-r7](https://github.com/bonej-org/BoneJ2/releases)' status='Active' %} BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is the new, modernized version of the software available through the ImageJ [updater](https://imagej.net/Updater). Its update site is called [BoneJ](http://sites.imagej.net/BoneJ). For the old ImageJ1 version, see [BoneJ1](BoneJ1).
+{% include info-box name='BoneJ' software='ImageJ' logo='<img src="/media/Bonej-icon.png" width="96"/>' author=author maintainer=maintainer source=source released='Dec 11<sup>th</sup>, 2017' latest-version=' [styloid-r7](https://github.com/bonej-org/BoneJ2/releases)' status='Active' %}
+
+BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is the new, modernized version of the software available through the ImageJ [updater](https://imagej.net/Updater). Its update site is called [BoneJ](http://sites.imagej.net/BoneJ). For the old ImageJ1 version, see [BoneJ1](BoneJ1).
 
 This version works with the latest Fiji, and complies with the modern ImageJ [architecture](Architecture). Most plug-ins also now support hyperstacks, i.e. images with multiple channels or time frames.
 
-Below is the documentation for the plug-ins included in BoneJ.
+If you use BoneJ in your work please cite:
+
+Domander R, Felder AA, Doube M. 2021 BoneJ2 - refactoring established research software. Wellcome Open Res. **6**. doi:[10.12688/wellcomeopenres.16619.1](https://doi.org/10.12688/wellcomeopenres.16619.1), and include the specific [release](https://github.com/bonej-org/BoneJ2/releases) used in your research, along with the primary sources linked to from the plugin descriptions below.
 
 Installation
 ------------
@@ -531,7 +535,10 @@ Particle Analyser performs connected-components labelling. It started life as an
 
 A member of our group wished to study osteocyte lacunae in synchrotron microCT images, so the Particle Analyser was born from Purify's particle labelling algorithm. Other groups use Particle Analyser for soil analysis; it could be used for any porous media. Particle Analyser labels unique (unconnected) particles, then analyses each particle separately. Substantial use is made of other plugins in BoneJ, including Connectivity to get the Euler characteristic, Isosurface to get the surface area and Thickness to get the local thickness of individual particles.
 
-If you use it in your published work, please cite Doube M. 2020 Multithreaded two-pass connected components labelling and particle analysis in ImageJ. bioRxiv , 2020.02.28.969139. (doi:10.1101/2020.02.28.969139) [1](https://doi.org/10.1101/2020.02.28.969139)
+If you use it in your published work, please cite:
+
+Doube M. 2021 Multithreaded two-pass connected components labelling and particle analysis in ImageJ. Roy. Soc. Open Sci. **8**. doi:[10.1098/rsos.201784](https://doi.org/10.1098/rsos.201784)
+
 
 #### Suitable images
 
@@ -818,10 +825,6 @@ A one-pixel GIF image is requested from Google, with a rather long set of parame
 -   Some of these values are saved in your preferences
 -   Your operating system and Java version are reported in the user agent ID
 
-#### What does the report look like?
-
-Data are collated with the Analytics report already used to track hits on bonej.org.
-
 #### For what is the data used?
 
 So far, BoneJ has been supported mainly by grants to scientists. We wish to create quantitative reports that detail how much BoneJ is being used in the community, so that decisions to fund further development can be made rationally.
@@ -858,8 +861,7 @@ BoneJ2 is free, open-source software. You can redistribute it and/or modify it u
 
 Citation
 --------
-
-If you'd like to cite the software, we will soon publish a paper about migrating BoneJ from ImageJ1 to ImageJ2. You can read the draft (and send us your feedback) as we're writing it [for Wellcome Open Research on Overleaf](https://v1.overleaf.com/read/yxdkwpcdkjzj). We recommend you cite the specific release used in your research.
+Domander R, Felder AA, Doube M. 2021 BoneJ2 - refactoring established research software. Wellcome Open Res. **6**. doi:[10.12688/wellcomeopenres.16619.1](https://doi.org/10.12688/wellcomeopenres.16619.1). We recommend you cite the specific [release](https://github.com/bonej-org/BoneJ2/releases) used in your research.
 
 Funding
 -------
