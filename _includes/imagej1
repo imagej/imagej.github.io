@@ -3,8 +3,7 @@
 {{include.content}}
 </div>
 {% endcapture %}
-
-<div class="imagej1-box">
+<div class="imagej1-box" style="position:relative;">
 <div class="floatleft">
 <img alt="Imagej1-icon.png" src="/images/logos/Imagej1-icon.png" width="64" height="64" style="float:left;">
 </div>
