@@ -4,8 +4,8 @@
 </div>
 {% endcapture %}
 
-<div id="info-box">
-    <table class="table-ambox">
+<div id="wrap">
+    <table class="table-info info-notice">
         <tbody>
             <tr>
                 <td>

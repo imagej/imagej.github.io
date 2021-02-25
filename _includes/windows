@@ -4,7 +4,7 @@
 </div>
 {% endcapture %}
 
-<div id="info-box">
+<div id="info-box" style="position:relative;">
     <table class="table-OS-info">
         <tbody>
             <tr>

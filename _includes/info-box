@@ -50,7 +50,7 @@
 {% endcapture %}
 
 <div id="wrap">
-    <table class="table-info">
+    <table class="table-info info-notice">
         <tbody>
             <tr>
                 <td>

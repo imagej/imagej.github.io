@@ -2258,13 +2258,12 @@ input, select, textarea {
 
 	div.minibox {
 	    border: thin solid #cccccc;
-	    padding: 0.2em;
-			margin-bottom: 1em;
 	    background-color: #f9f9f9;
 	    font-size: 0.875em;
 	    text-align: center;
 	    overflow: hidden;
 			float: right;
+			position: relative;
 	}
 
 	div.miniboxcaption {
@@ -3295,11 +3294,15 @@ input, select, textarea {
 		padding: 15px !important;
 	}
 
+	table.warning-notice {
+				border-left: 10px solid #b32424;
+			}
+
 	.table-warning {
-		border-collapse: collapse;
 		background: #FFCCCB;
 		border: 0px solid #aaa;
 	}
+
 		.table-warning td {
 			padding: 2px 0px 2px 0.5em;
 			margin: auto;
@@ -3316,8 +3319,11 @@ input, select, textarea {
 			padding-left: 2em;
 		}
 
+	table.info-notice {
+		    border-left: 10px solid #36c;
+		}
+
 	.table-info {
-		border-collapse: collapse;
 		background: #ebf2f8;
 		border: 0px solid #aaa;
 	}
