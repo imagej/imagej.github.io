@@ -40,7 +40,7 @@ A comprehensive dataset can be found on Zenodo at [https://doi.org/10.5281/zenod
 
 The following video guide you throughout the installation process, and take a first tour of FijiRelax functions.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PmJpKpfAw8g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8jEVQjRbFcU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 In order to install FijiRelax on your computer, please follow these steps:
 
@@ -84,8 +84,7 @@ FijiRelax interface have four main panels :
  
 
 **Tutorial part 2: from 4D HyperMaps to time-lapse plant physiology monitoring**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kSmKqe6GKIE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tiJnq_xN-dY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
