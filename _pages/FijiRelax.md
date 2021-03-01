@@ -115,7 +115,7 @@ First a 3d registration is computed to align precisely the successive images, us
 **Citing this work**
 --
 
-- Romain Fernandez, Cédric Moisy, Christophe Goze-Bac, Maïda Cardoso, Rahima Sidi-Boulenouar, Jean-Luc Vedeil, 2021  «FijiRelax: Fast and noise-corrected estimation of MRI relaxation maps in 3D + t» *under review*
+- Romain Fernandez, Cédric Moisy, Christophe Goze-Bac, Maïda Cardoso, Rahima Sidi-Boulenouar, Jean-Luc Verdeil, 2021  «FijiRelax: Fast and noise-corrected estimation of MRI relaxation maps in 3D + t» *under review*
   
 
 **Software dependencies acknowledgements**
