@@ -37,3 +37,9 @@ Tutorial
 
 &lt; Help and tutorial coming soon &gt;
 
+ChangeLog:
+----------
+v1.0.0:
+
+  Added functionality to flatten sheets and scrolls.
+  
