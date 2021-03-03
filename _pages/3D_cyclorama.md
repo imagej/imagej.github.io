@@ -37,7 +37,7 @@ Tutorial
 
 &lt; Help and tutorial coming soon &gt;
 
-ChangeLog:
+ChangeLog
 ----------
 v1.0.0:
 
