@@ -16,8 +16,12 @@
 {% assign source-url = include.source %}
 {% endif %}
 
-<div id="info-box">
-    <table class="table-OS-info" style="width:{{width}}; float:{{float}};">
+{% if include.person != null %}
+{% assign person = include.person %}
+{% endif %}
+
+<div id="testimonial">
+    <table class="table-OS-info">
         <tbody>
             <tr>
                 <td style="padding-right: 1em; vertical-align: middle; padding-top: 1em">

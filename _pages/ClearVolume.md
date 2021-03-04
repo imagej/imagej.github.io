@@ -21,10 +21,10 @@ description: test description
 {% include info-box name='ClearVolume' logo='![](/media/ClearVolumeLogo.png "fig:ClearVolumeLogo.png")' software='Fiji' author=author maintainer=maintainer source=source status='active' category='[Visualization](Category_Visualization)' website='https://clearvolume.github.io/' %}== Problems and Solutions == We work constantly on improving the Fiji and KNIME plugins. Help us doing so by letting us know if you encounter problems.
 
 -   **Problem:** on a Linux machine ClearVolume would not start but throw an ugly exception like
-      
+
     `java.lang.ExceptionInInitializerError at clearvolume.renderer.opencl.OpenCLAvailability...`.
 -   **Solution:** you might not have OpenCL installed or your installation is corrupted.
-      
+
     On Ubuntu the following instructions turned out to be useful for some of our users: [http://askubuntu.com/questions/541114/how-to-make-opencl-work-on-14-10-nvidia-331-89-drivers](http://askubuntu.com/questions/541114/how-to-make-opencl-work-on-14-10-nvidia-331-89-drivers)
 
 <!-- -->
@@ -35,7 +35,7 @@ description: test description
 What is ClearVolume?
 --------------------
 
-{% include testimonial quote='I checked out ClearVolume. Extremely well-made plugin! Does exactly what I want :)' person='komodovaran' source='http://forum.imagej.net/t/1907/3' width='30%' float='right' %}ClearVolume is a volume renderer developed at MPI-CBG. Its sources are open and can be cloned [from GitHub](https://github.com/ClearVolume). If you use ClearVolume in your research, please cite it—see reference below.
+{% include testimonial quote='I checked out ClearVolume. Extremely well-made plugin! Does exactly what I want :)' person='komodovaran' source='http://forum.imagej.net/t/1907/3' width='50%' float='right' %}ClearVolume is a volume renderer developed at MPI-CBG. Its sources are open and can be cloned [from GitHub](https://github.com/ClearVolume). If you use ClearVolume in your research, please cite it—see reference below.
 
 Screenshots
 -----------
@@ -56,5 +56,3 @@ See ClearVolume in action!
 {% include youtube url='https://www.youtube.com/embed/IyUpkgTJJvc}}
 
 =='%}
-
-  

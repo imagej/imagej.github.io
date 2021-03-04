@@ -3286,12 +3286,20 @@ input, select, textarea {
 		width: 80%;
 	}
 
-	.table-OS-info {
+.testimonial {
+	position: relative;
+  float: right;
+  width: 50%;
+  font-size: 0.75em;
+	padding: 15px !important;
+}
+
+	table.table-OS-info {
 		background-color: #e9f5f8; -moz-border-radius: .75em; -webkit-border-radius: .75em;
 		border-radius: .75em; -moz-box-shadow: 4px 4px 4px #CCC; -webkit-box-shadow: 4px 4px 4px #CCC;
 		box-shadow: 4px 4px 4px #CCC;
 		vertical-align: middle;
-		width: 300px;
+		width: 40%;
 		float:right;
 		border: 0px solid #ccc;
 		padding: 15px !important;
