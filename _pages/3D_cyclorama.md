@@ -41,5 +41,17 @@ ChangeLog
 ----------
 v1.0.0:
 
-  Added functionality to flatten sheets and scrolls.
+- Added functionality to flatten sheets and scrolls.
+  
+v0.6.0:
+  
+- Implemented sanity checks in GUI.
+  
+v0.5.0:
+
+- Restricted 3Dcyclorama GUI access to unnecessary backend functionality.
+  
+v0.4.0:
+  
+- First mature GUI.
   
