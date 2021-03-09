@@ -25,7 +25,7 @@ Step 1 - enable the *3Dcyclorama* site:
 
 Step 2 - download dependencies:
 - Create a directory named *FastDTW* in the Fiji plugins directory (Fiji.app/plugins/FastDTW)
-- Download the FastDTW algorithm from github https://github.com/rmaestre/FastDTW (Click code > download zip)
+- Download the FastDTW algorithm from github [https://github.com/rmaestre/FastDTW](https://github.com/rmaestre/FastDTW) (Click code > download zip)
 - Extract the contents of FastDTW-master (FastDTW.iml, README.md, src, target, etc.) in Fiji.app/plugins/FastDTW
 
 Step 3 - Run:
