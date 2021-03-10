@@ -6,7 +6,7 @@ categories: Tutorials,ImageJ2,Development,Ops
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %}{% include toc%}
+{% include develop-menu content='tutorials' %}
 This tutorial is designed to guide developers through the options, processes and motivations for adding Ops outside the core {% include github org='imagej' repo='imagej-ops' label='imagej-ops' %} project. Because this tutorial caters to external developers, in this tutorial we show how a [BAR](BAR) function could be converted to an Op.
 
 Make your first Op

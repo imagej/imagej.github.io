@@ -6,7 +6,7 @@ categories: Plugins,Registration,Stitching,Cookbook,Citable
 description: test description
 ---
 
-{% include learn content='techniques' %}{% include component-stats content='sc.fiji:Stitching\_' %}{% include toc content='small' %}
+{% include learn content='techniques' %}{% include component-stats content='sc.fiji:Stitching\_' %}
 
 Citation
 --------

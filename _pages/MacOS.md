@@ -13,7 +13,7 @@ description: test description
 {% endcapture %}
 {% include minibox logo='Osx.png' blurb=blurb %}{% include wikipedia title='macOS' text='macOS'%} (formerly called Mac OS X, then OS X) is {% include wikipedia title='Apple Inc.' text='Apple'%}'s desktop operating system. It is [the second most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](Windows). This page details issues specific to using [ImageJ](ImageJ) on macOS systems.
 
-{% include toc%}
+
 
 
 Installation

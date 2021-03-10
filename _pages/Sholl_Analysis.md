@@ -26,7 +26,7 @@ Having Problems?:Jump to [FAQs](#FAQ "wikilink")
 </div>
 </div>
 
-{% include toc%}
+
  Automated and multithreaded Sholl for direct analysis of fluorescent images and traced morphologies. Features powerful quantifications based on curve fitting. Analysis of data obtained outside of ImageJ is also possible.
 
 Introduction

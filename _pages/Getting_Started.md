@@ -7,7 +7,7 @@ description: test description
 ---
 
 {% include learn%}
-{% include toc%}
+
 
 
 Installation

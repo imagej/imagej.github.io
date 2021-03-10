@@ -6,7 +6,7 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %}{% include toc%}
+{% include develop-menu content='tutorials' %}
 {% include outdated%}
 
 

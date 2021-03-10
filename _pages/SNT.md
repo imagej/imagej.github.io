@@ -19,7 +19,7 @@ description: test description
 {% capture source%}
 {% include github org='morphonets' repo='SNT' %}
 {% endcapture %}
-{% include info-box name='SNT' software='complete framework for quantification of neuronal anatomy' logo='<img src="/media/SNTLogo512.png" width="150"/>' author=author maintainer=maintainer source=source status='stable, active' category='[Neuroanatomy](Category_Neuroanatomy)' %}{% include toc content='right' %}
+{% include info-box name='SNT' software='complete framework for quantification of neuronal anatomy' logo='<img src="/media/SNTLogo512.png" width="150"/>' author=author maintainer=maintainer source=source status='stable, active' category='[Neuroanatomy](Category_Neuroanatomy)' %}
 
 Overview
 --------

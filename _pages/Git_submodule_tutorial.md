@@ -7,7 +7,7 @@ description: test description
 ---
 
 {% include gitmenu%}
-{% include toc%}
+
 {% include outdated%}
 
 

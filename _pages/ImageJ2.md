@@ -33,7 +33,7 @@ ImageJ2 is a new version of [ImageJ](ImageJ) for the next generation of multidim
 
 To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
 
-The [Fiji](Fiji) distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](Updater) and [Launcher](Launcher), were originally developed as part of Fiji. {% include toc%}
+The [Fiji](Fiji) distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](Updater) and [Launcher](Launcher), were originally developed as part of Fiji. 
 
 
 Features of ImageJ2

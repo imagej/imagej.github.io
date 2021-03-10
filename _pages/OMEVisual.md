@@ -18,7 +18,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji' repo='OMEVisual' %}
 {% endcapture %}
-{% include info-box name='OMEVisual' logo='' software='Fiji' author=author maintainer=maintainer source=source released='08/05/2016' status='v1.0.1, stable' category='' %}{% include toc%}
+{% include info-box name='OMEVisual' logo='' software='Fiji' author=author maintainer=maintainer source=source released='08/05/2016' status='v1.0.1, stable' category='' %}
 
 
 Presentation

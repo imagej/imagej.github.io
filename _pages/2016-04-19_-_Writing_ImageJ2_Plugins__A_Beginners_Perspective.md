@@ -12,7 +12,7 @@ The following article was written by {% include person content='Scrivello' %} as
 {% endcapture %}
 {% include info-box content=content %}
 
-{% include toc%}
+
 
 
 Writing ImageJ2 Plugins: A Beginner's Perspective

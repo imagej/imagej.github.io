@@ -8,7 +8,7 @@ description: test description
 
 {% include project content='ImgLib2' %}At the [Madison hackathon](2011_Hackathon_in_Madison), quite a lot has been done about design issues of the originally published ImgLib (which was already the 6th generation). Unfortunately, these improvements were not possible in a fully backwards-compatible manner.
 
-{% include toc%}
+
 
 
 ### Summary

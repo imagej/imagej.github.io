@@ -10,7 +10,7 @@ description: test description
 {% include minibox logo='Tux.svg' blurb=' [Talk is cheap. Show me the code.](https://en.wikiquote.org/wiki/Linus_Torvalds)  
 —Linus Torvalds' %}{% include wikipedia title='Linux' text='Linux'%} (also known as {% include wikipedia title='GNU/Linux naming controversy' text='GNU/Linux'%}) is an [open source](Open_source) family of desktop operating systems. It is [the third most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](Windows) and [macOS](MacOS). This page details issues specific to using [ImageJ](ImageJ) on Linux systems.
 
-{% include toc%}
+
 
 
 Installation

@@ -11,7 +11,7 @@ This book is an analysis-oriented introduction and user guide to ImageJ. It is i
 
 Cooks call them *recipes*, biologists *protocols*, and programmers call them *HOWTOs*. No matter how you refer to them, you'll find the book topics in the sidebar to the right!
 
-Like the rest of this wiki, this Cookbook is a community project. Please feel welcome to edit and expand the material here! {% include toc%}
+Like the rest of this wiki, this Cookbook is a community project. Please feel welcome to edit and expand the material here! 
 
 
 Installing ImageJ

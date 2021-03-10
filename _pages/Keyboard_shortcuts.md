@@ -6,7 +6,7 @@ categories: User interface, tutorials
 description: test description
 ---
 
-{% include toc%}
+
 ImageJ has a lot of keyboard shortcuts.
 
 Listing all keyboard shortcuts

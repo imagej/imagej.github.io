@@ -20,7 +20,7 @@ This plugin contains an interface to reconstruct interactively and recursively a
 -   extract some set of images related to TreeJ functions
 -   save as a tree file compatible with other tree viewer and/or TreeJ
 
-<img src="/media/TreeJExample.png" width="900"/> {% include toc%}
+<img src="/media/TreeJExample.png" width="900"/> 
 
 
 Usage

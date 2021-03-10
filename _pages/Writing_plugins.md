@@ -12,7 +12,7 @@ description: test description
 
 -   For instructions on plugin development for [ImageJ 1.x](ImageJ_1.x), see [Developing Plugins for ImageJ 1.x](Developing_Plugins_for_ImageJ_1.x).' %}
 
-{% include develop-menu content='tutorials' %} {% include toc%}
+{% include develop-menu content='tutorials' %} 
 
 
 Requirements

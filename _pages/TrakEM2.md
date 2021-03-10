@@ -8,7 +8,7 @@ description: test description
 
 {% include component-stats content='sc.fiji:TrakEM2\_' %}TrakEM2 is an ImageJ plugin for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
 
-See [TrakEM2 snapshots](http://www.ini.uzh.ch/~acardona/snapshots.html) for an overview. {% include toc content='small' %}
+See [TrakEM2 snapshots](http://www.ini.uzh.ch/~acardona/snapshots.html) for an overview. 
 
 Features
 --------

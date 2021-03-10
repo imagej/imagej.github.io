@@ -7,7 +7,7 @@ description: test description
 ---
 
 {% include menu-updatesites%}
-{% include toc%}
+
 
 
 How do I make my update site appear in ImageJ's *Manage update sites* dialog?

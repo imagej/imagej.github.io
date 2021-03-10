@@ -6,7 +6,7 @@ categories: Techniques, tutorials
 description: test description
 ---
 
-{% include toc%}
+
 {% include wikipedia title='Thresholding (image processing)' text='Thresholding'%} is a technique for dividing an image into two (or more) classes of pixels, which are typically called "foreground" and "background."
 
 Global thresholding

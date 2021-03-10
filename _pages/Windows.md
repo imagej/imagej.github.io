@@ -13,7 +13,7 @@ description: test description
 {% endcapture %}
 {% include minibox logo='Win.png' blurb=blurb %}{% include wikipedia title='Microsoft Windows' text='Windows'%} is {% include wikipedia title='Microsoft' text='Microsoft'%}'s family of operating systems. It is [the most prevalent desktop computer platform](https://www.netmarketshare.com/operating-system-market-share.aspx). This page details issues specific to using [ImageJ](ImageJ) on Windows systems.
 
-{% include toc%}
+
 
 
 Installation

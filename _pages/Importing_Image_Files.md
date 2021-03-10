@@ -7,7 +7,7 @@ description: test description
 ---
 
 {% include menu-cookbook%}
-{% include toc%}
+
 
 
 The File / Import submenu

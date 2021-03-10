@@ -7,7 +7,7 @@ description: test description
 ---
 
 {% include component-stats content='sc.fiji:Trainable\_Segmentation' %}{\| \|style="vertical-align:top" \|<img src="/media/TWS-pipeline.png" title="fig:Trainable Weka Segmentation pipeline overview." width="600" alt="Trainable Weka Segmentation pipeline overview." /> \|<span>  
-</span>}{% include toc%}
+</span>}
  **Trainable**: this plugin can be trained to learn from the user input and perform later the same task in unknown (test) data.
 
 **Weka**: it makes use of all the powerful tools and classifiers from the latest version of [Weka](http://www.cs.waikato.ac.nz/ml/weka/).

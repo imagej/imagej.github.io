@@ -6,7 +6,7 @@ categories: tutorials
 description: test description
 ---
 
-{% include learn content='scripting' %}{% include toc%}
+{% include learn content='scripting' %}
 
 
 Overview

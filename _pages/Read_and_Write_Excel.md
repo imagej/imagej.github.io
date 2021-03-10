@@ -32,7 +32,7 @@ Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 
 class="nowrap" \| Release version dates
 
-{% include toc%}
+
 
 
 Usage
