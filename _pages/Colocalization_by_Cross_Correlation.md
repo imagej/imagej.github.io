@@ -6,7 +6,8 @@ description: How to use the Colocalization by Cross Correlation plugin
 ---
 {% include info-box software='Fiji' name='Colocalization by Cross Correlation' maintainer=' [Andrew McCall](https://imagej.net/User:Amccall)' author=' [Andrew McCall](https://imagej.net/User:Amccall)' source=source status='active' released='2020' category='[:Category:Plugins](Category_Plugins), [:Category:Colocalization](Category_Colocalization)' %}
 
-## Colocalization by Cross Correlation
+Colocalization by Cross Correlation
+-----------------------------------
 
 This plugin attempts to determine: the average distance between non-randomly spatially associated particles, the standard deviation of that distance (which should also reflect the width of the PSF in the image for diffraction limited images), and a statistical measure of confidence of the association. It does this by performing a cross-correlation function (CCF) between the two images, operating in a similar manner to Van Steensel's CCF except this plugin performs the CCF in all directions and provides additional information, such as a confidence level. It currently works on 2D/3D single-channel images, supports time-series analysis, and requires a mask of all possible localizations for the signal in one of the images.
 
