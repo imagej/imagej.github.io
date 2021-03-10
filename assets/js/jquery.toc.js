@@ -45,7 +45,7 @@
                 // In HTML5, the id attribute must be at least one character long and must not
                 // contain any space characters.
                 //
-				// We just use the HTML5 spec now because all browsers work fine with it.
+                // We just use the HTML5 spec now because all browsers work fine with it.
                 // https://mathiasbynens.be/notes/html5-id-class
                 var generateUniqueId = function (text) {
                     // Generate a valid ID. Spaces are replaced with underscores. We also check if
@@ -80,7 +80,15 @@
                     // In the upside-down stack, unshift = push, and stack[0] = the top.
                     var parentItem = stack[0].children("li:last")[0];
                     if (parentItem) {
-                        stack.unshift($("<" + listTag + "/>").appendTo(parentItem));
+                        var aItem = parentItem.firstChild; // <a> element
+                        var details = $("<details/>");
+                        var summary = $("<summary/>");
+                        summary.append(aItem); // move from previous location into <summary>
+                        details.append(summary);
+                        var ol = $("<" + listTag + "/>");
+                        details.append(ol);
+                        details.appendTo(parentItem);
+                        stack.unshift(ol); // move down to the new <ol> level
                     }
                 } else {
                     // Truncate the stack to the current level by chopping off the 'top' of the
