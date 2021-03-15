@@ -75,6 +75,7 @@
       margin: 0;
       padding-left: 1.4em;
       border-left: 1px solid black;
+      list-style-type: none;
   }
 
   .toc > ol {

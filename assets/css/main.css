@@ -138,6 +138,28 @@ input, select, textarea {
 		margin: 0 0 0.75em 0;
 	}
 
+	summary.li {
+		padding-left: 1.4em;
+	}
+
+	details>summary {
+
+	  list-style: none;
+	}
+	summary::-webkit-details-marker {
+	  display: none
+	}
+
+	summary::after {
+	  content: '>';
+		font-size: 20px;
+		position: absolute;
+		right: 10px;
+	}
+	details[open] summary:after {
+	  content: " ∨";
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #585858;
 		line-height: 1em;
