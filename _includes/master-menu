@@ -1,0 +1,64 @@
+<div id="sidebar" markdown="1">
+
+
+
+{% include menu title="Master Menu" content=
+"
+<details>
+<summary>
+  Development
+</summary>
+
+<details>
+<summary>
+<b>Topics</b>
+</summary>
+<li>[Overview](/Development)</li>
+<li>[Philosophy](/Philosophy)</li>
+<li>[Architecture](/Architecture)</li>
+<li>[Source code](/Source_code)</li>
+<li>[Project management](Project_management)</li>
+<li>[Coding style](Coding_style)</li>
+<li>[Debugging](Debugging)</li>
+</details>
+
+<details>
+<summary>
+ <b>Tools</b>
+</summary>
+ *[GitHub](/GitHub)
+ *[Git](/Git)
+ *[Maven](/Maven)
+ *[IDEs](/IDEs)
+ *[Travis](/Travis)
+ *[AppVeyor](/AppVeyor)
+ *[Dotfiles](/Dotfiles)
+ {::nomarkdown}<hr>{:/}
+ </details>
+
+ <details>
+ <summary>
+ <b>Guides</b>
+ </summary>
+ *[Writing plugins](/Writing_plugins)
+ *[ImageJ Ops](/ImageJ_Ops)
+ *[Contributing to a plugin](/How_to_contribute_to_an_existing_plugin_or_library)
+ *[Distributing your plugins](/Distribution)
+ *[Development lifecycle](/Development_Lifecycle)
+ *[Building a POM](/Building_a_POM)
+ [Developing with Eclipse](/Developing_ImageJ_in_Eclipse)
+ [Hands-on debugging](/Debugging_Exercises)
+ [Adding new ops](/Adding_new_ops)
+ [Adding new formats](/Adding_new_formats)
+ [Using native libraries](/Developing_using_native_libraries)
+ [Tips for developers](/Tips_for_developers)
+ [Tips for C++ developers](/Tips_for_C++_developers)
+ [ImageJ 1.x plugins](/Introduction_into_Developing_Plugins)
+ [Versioning](/Versioning)
+ [Logging](/Logging)
+ [Uber-JARs](/Uber-JAR)
+ </details>
+ </details>
+"
+%}
+</div>
