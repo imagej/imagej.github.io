@@ -152,12 +152,13 @@ input, select, textarea {
 
 	summary::after {
 	  content: '>';
-		font-size: 20px;
+		font-size: 15px;
 		position: absolute;
-		right: 10px;
+		right: 25px;
 	}
 	details[open] summary:after {
 	  content: " ∨";
+		font-size: 15px;
 	}
 
 	h1, h2, h3, h4, h5, h6 {

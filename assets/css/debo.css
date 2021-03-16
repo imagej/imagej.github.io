@@ -79,7 +79,7 @@
   }
 
   .toc > ol {
-      background: #f1f1f4;
+      /*background: #f1f1f4;*/
       border: none;
       padding: 20px 40px 20px 40px;
   }
