@@ -1,5 +1,7 @@
 {% if include.url != null %}
 {% assign url = {{include.url}} %}
+{% endif %}{% if include.link != null %}
+{% assign url = {{include.link}} %}
 {% endif %}
 
 <div style="font-family: monospace;font-size: large; background-color: khaki; padding: 0.5em 0 0.5em 3em;">
