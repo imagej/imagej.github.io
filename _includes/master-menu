@@ -13,7 +13,7 @@
 <summary>
 <b>Topics</b>
 </summary>
-{% include menuitem label='Overview' link='Development' %}
+<li>[Overview](/Development)<li>
 <li>[Philosophy](/Philosophy)</li>
 <li>[Architecture](/Architecture)</li>
 <li>[Source code](/Source_code)</li>
