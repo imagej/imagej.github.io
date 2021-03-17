@@ -1,6 +1,7 @@
 ---
 title: GPL
 layout: page
+section: About:Licensing:Open Source
 categories: 
 description: test description
 ---

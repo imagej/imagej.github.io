@@ -1,4 +1,16 @@
 <li>
+
+{% assign tokens = {{page.section}} | split: ":" %}
+{% assign open = false %}
+{% for token in tokens %}
+  {% if {{token}} == {{include.title}} %}
+    {% assign open = true %}
+  {% endif %}
+{% endfor %}
+{% if {{open}} == true %}
+<details open>
+{% else %}
 <details>
+{% endif %}
 <summary>{{include.title}}</summary>
 <ul>

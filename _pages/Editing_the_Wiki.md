@@ -1,6 +1,7 @@
 ---
 title: Editing the Wiki
 layout: page
+section: Help
 categories: tutorials
 description: This page explains how to write and edit pages.
 ---
