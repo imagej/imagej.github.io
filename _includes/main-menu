@@ -45,6 +45,8 @@
   {% include menu-section-end %} <!-- About/Fiji -->
 {% include menu-section-end %} <!-- About -->
 
+{% include menu-item title="Plugins" link="Plugins" %}
+
 {% include menu-section title="Learn" %}
   {% include menu-item title="Introduction" link="Introduction" %}
   {% include menu-item title="Getting Started" link="Getting_Started" %}
@@ -72,7 +74,6 @@
     {% include menu-item title="Zeiss LSM" link="LSM_Toolbox" %}
     {% include menu-item title="Olympus VSI" link="OlympusImageJPlugin" %}
     {% include menu-item title="Opera Flex" link="LuraWave" %}
-    {% include menu-item title="Plugins" link="Plugins" %}
   {% include menu-section-end %} <!-- Learn/File Formats -->
 
   {% include menu-section title="Cookbook" %}
