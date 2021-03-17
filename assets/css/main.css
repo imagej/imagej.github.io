@@ -3128,11 +3128,11 @@ input, select, textarea {
 		content: "▶";
 		font-size: 11px;
 		position: absolute;
-		right: 15px;
+		right: 20px;
 	}
 	.menu details[open] > summary::after {
 		content: "▼";
-		font-size: 14px;
+		font-size: 11px;
 	}
 
 /* User box */

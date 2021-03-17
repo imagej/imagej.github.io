@@ -95,8 +95,36 @@
   .toc li {
     margin: 10px 0;
   }
-}
 
+  .toc summary{
+    outline:none;
+  }
+  
+  .toc summary.li {
+		padding-left: 1.4em;
+	}
+
+	.toc details>summary {
+
+	  list-style: none;
+	}
+
+	.tox summary::-webkit-details-marker {
+	  display: none
+	}
+
+	.toc details > summary::after {
+		content: ">";
+		font-size: 15px;
+		position: absolute;
+		right: 20px;
+	}
+
+	.toc details[open] summary:after {
+	  content: " ∨";
+		font-size: 15px;
+	}
+}
 @media screen and (max-width: 780px) {
   .toc {
     display: none;
