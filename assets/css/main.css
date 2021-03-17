@@ -142,10 +142,10 @@ input, select, textarea {
 	summary{
 	  outline:none;
 	}
-	
+
 	summary.li {
 		padding-left: 1.4em;
-		border: none;
+		line-height: 5px;
 	}
 
 	details>summary {

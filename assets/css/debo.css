@@ -76,6 +76,7 @@
       padding-left: 1.4em;
       border-left: 1px solid black;
       list-style-type: none;
+      line-height: 20px;
   }
 
   .toc > ol {
