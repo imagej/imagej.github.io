@@ -99,7 +99,7 @@
   .toc summary{
     outline:none;
   }
-  
+
   .toc summary.li {
 		padding-left: 1.4em;
 	}
@@ -109,7 +109,7 @@
 	  list-style: none;
 	}
 
-	.tox summary::-webkit-details-marker {
+	.toc summary::-webkit-details-marker {
 	  display: none
 	}
 
