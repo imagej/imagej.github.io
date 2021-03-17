@@ -6,7 +6,7 @@ categories: Development,Fiji
 description: test description
 ---
 
-{% include fijimenu%}
+
 The complete Fiji distribution of ImageJ consists of over a hundred individual components. Most of these components are ImageJ [plugins](Plugins); the rest are core libraries, [scripts](Scripts) and several other resources (such as the [Fiji logo](_File_Fiji-icon.png) and the README).
 
 In the past, Fiji used to be built from one monolithic source code repository, which became unmanageable over time. These days, therefore, developers start from a fully-populated *Fiji.app/* directory and build only the parts they would like to change.

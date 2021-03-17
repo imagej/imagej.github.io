@@ -6,7 +6,7 @@ categories: Development,IDEs
 description: test description
 ---
 
-{% include develop-menu content='tools' %}This article explains how to install and configure command line tools for use with [ImageJ](ImageJ) development.
+This article explains how to install and configure command line tools for use with [ImageJ](ImageJ) development.
 
 Install and configure command line tools
 ----------------------------------------

@@ -6,7 +6,7 @@ categories: Tutorials,Plugins,Bug Reporting
 description: test description
 ---
 
-{% include menu-help%}
+
 Please report bugs via the [Image.sc Forum](https://forum.image.sc/):
 
 -   Start a new topic in the "Usage & Issues" category.

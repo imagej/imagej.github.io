@@ -6,7 +6,7 @@ categories: ImgLib
 description: test description
 ---
 
-{% include imglibmenu%}
+
  Please download the following archive and the presentation to follow the workshop presentation:
 
 -   [The presentation as PDF](_File_ImgLib2_presentation.pdf)

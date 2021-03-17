@@ -6,7 +6,7 @@ categories: Bug Reporting
 description: test description
 ---
 
-{% include menu-help%}
+
 A bug report is a reproducible set of steps describing a problem. They are a common communication medium between users and developers. Users willing to take the time to write helpful bug reports drive the development of ImageJ, making it a better product for everyone.
 
 TL;DR Summary

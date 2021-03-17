@@ -6,7 +6,7 @@ categories: Platforms
 description: test description
 ---
 
-{% include menu-platforms%}
+
 
 {% capture blurb%}
 {% include wikipedia title='Where do you want to go today?' text='Where do you want to go today?'%}

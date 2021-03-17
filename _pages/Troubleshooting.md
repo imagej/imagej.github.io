@@ -6,7 +6,7 @@ categories: help
 description: test description
 ---
 
-{% include menu-help%}
+
 
 
 How to troubleshoot problems

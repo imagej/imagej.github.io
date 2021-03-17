@@ -6,7 +6,7 @@ categories: development
 description: test description
 ---
 
-{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} {% include menu-licenses%}
+{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} 
 Software in the **public domain** disclaims all copyright interest, being freely available to everyone for any purpose, with no attribution or acknowledgement required. There are several ways (summarized below) to dedicate software to the public domain—although be warned that some jurisdictions do not recognize the legal concept of "public domain" at all.
 
 See the {% include wikipedia title='Public domain software' text='Wikipedia article on public domain software'%} for more information.

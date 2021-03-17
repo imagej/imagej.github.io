@@ -1,9 +1,0 @@
-<div class="menu" markdown="1">
-  <ul style="list-style-type:none;">
-
-<center><strong><h3>{{include.title}}</h3></strong></center>
-
-{{include.content | markdownify }}
-
-</ul>
-</div>

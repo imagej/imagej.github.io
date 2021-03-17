@@ -6,7 +6,7 @@ categories: Plugins,Import-Export
 description: test description
 ---
 
-{% include menu-formats%}
+
 {% include info-box software='ImageJ' name='OlympusViewer Plugin' author='OLYMPUS CORPORATION (olympus-imagejplugin at ot.olympus.co.jp)' maintainer='' filename='' source='The source code of plugin is in Olympus\_Viewer.jar. The source code of native library is not provided.' released='Dec. 9, 2015: First version Ver.1.1.1' latest-version='Mar. 17, 2020: Ver.2.3.1' status='' category='[:Category:Import-Export](Category_Import-Export)' website='' %}This plugin can load Olympus vsi/oir/omp2info file formats and show some meta data.
 
 

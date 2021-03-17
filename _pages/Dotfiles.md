@@ -6,7 +6,7 @@ categories: development
 description: test description
 ---
 
-{% include develop-menu content='tools' %}There are several [dotfiles](https://dotfiles.github.io/) repositories filled with command line configuration goodness for the different [layers](Architecture) of the [SciJava](SciJava) component collection.
+There are several [dotfiles](https://dotfiles.github.io/) repositories filled with command line configuration goodness for the different [layers](Architecture) of the [SciJava](SciJava) component collection.
 
 Repositories
 ------------

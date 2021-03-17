@@ -6,7 +6,7 @@ categories: Scripting,ImageJ2,Ops,SciJava
 description: test description
 ---
 
-{% include learn content='scripting' %}
+
 
 Introduction
 ============

@@ -6,7 +6,7 @@ categories: development
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %}[SciJava](SciJava) components use the [Semantic Versioning](http://semver.org/) (SemVer) system. This scheme communicates information about the [backwards compatibility](Backwards_compatibility) (or lack thereof) between versions of each individual software component. {% include clear content='left' %}
+[SciJava](SciJava) components use the [Semantic Versioning](http://semver.org/) (SemVer) system. This scheme communicates information about the [backwards compatibility](Backwards_compatibility) (or lack thereof) between versions of each individual software component. {% include clear content='left' %}
 
 Summary
 -------

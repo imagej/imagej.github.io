@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-{% include learn%}
+
 
 ## What is ImageJ?
 

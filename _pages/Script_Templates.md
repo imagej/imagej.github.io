@@ -6,7 +6,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='scripting' %}Templates are pre-written scripts in a particular scripting language. They can be distributed as any other plugin, and automatically discovered by the [Script Editor](Script_Editor). Templates thus present an excellent way to demonstrate a particular operation to a wide audience of users.
+Templates are pre-written scripts in a particular scripting language. They can be distributed as any other plugin, and automatically discovered by the [Script Editor](Script_Editor). Templates thus present an excellent way to demonstrate a particular operation to a wide audience of users.
 
 Available templates are sorted by language under the `Templates` menu of the [Script Editor](Script_Editor). The contents of a template will be loaded into the editor window when selected. The script can then be inspected, executed and modified as normal.
 

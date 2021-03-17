@@ -33,7 +33,7 @@
 {% endif %}
 {% endcapture %}
 
-<div class="menu" markdown="1">
+<div class="userbox" markdown="1">
 <center><strong><h3>{{include.name | strip}}</h3></strong></center>
 {{user-content}}
 </div>

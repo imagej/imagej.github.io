@@ -11,7 +11,7 @@ description: test description
 
 -   Travis CI is useful because it can freely build any open source project with minimal effort.' %}
 
-{% include menu-updatesites%}
+
 
 
 Requirements

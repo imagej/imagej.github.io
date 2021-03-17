@@ -6,7 +6,7 @@ categories: Cookbook,Tutorials,Colocalization,Color processing
 description: test description
 ---
 
-{% include biginfo-box content='See [:Category:Colocalization](Category_Colocalization) for pages about colocalization.' %} {% include learn content='techniques' %}
+{% include biginfo-box content='See [:Category:Colocalization](Category_Colocalization) for pages about colocalization.' %} 
 
 ## What is colocalization?
 

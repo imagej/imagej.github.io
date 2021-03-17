@@ -6,7 +6,7 @@ categories: community
 description: test description
 ---
 
-{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} {% include menu-licenses%}
+{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} 
 The **MIT License** is a **permissive** [free software](Open_Source) license, imposing minimal restrictions on the redistribution of covered software. This is in contrast to {% include wikipedia title='Copyleft' text='copyleft'%} licenses like the [GPL](GPL), which have reciprocity share-alike requirements. The MIT license is named for the [Massachusetts Institute of Technology](http://mit.edu/), where it originated.
 
 See the {% include wikipedia title='MIT License' text='Wikipedia article on the MIT license'%} for more information.

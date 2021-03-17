@@ -6,7 +6,7 @@ categories: Fiji
 description: test description
 ---
 
-{% include fijimenu%}
+
 Useful information about using Fiji can be found here:
 
 -   [What you need to know about scientific image processing](IP_Principles)

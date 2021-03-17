@@ -6,7 +6,7 @@ categories: Fiji,Related Software,Citable
 description: test description
 ---
 
-{% include fijimenu%}
+
 [Fiji](https://fiji.sc/) is an image processing package—a "batteries-included" distribution of [ImageJ](ImageJ), bundling a lot of plugins which facilitate scientific image analysis.
 
 -   **[For users](Fiji_Usage)** - Fiji is [easy to install](Fiji_Downloads) and has an automatic update function, bundles a [lot of plugins](Category_Plugins) and offers comprehensive [documentation](Documentation).

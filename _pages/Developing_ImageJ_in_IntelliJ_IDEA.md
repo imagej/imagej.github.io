@@ -6,7 +6,7 @@ categories: Development,IDEs
 description: test description
 ---
 
-{% include develop-menu content='source' %}This article explains how to install and configure IntelliJ IDEA for use with [ImageJ](ImageJ) development. Directions correspond to IntelliJ IDEA 11.1, and may need adjustment for other versions.
+This article explains how to install and configure IntelliJ IDEA for use with [ImageJ](ImageJ) development. Directions correspond to IntelliJ IDEA 11.1, and may need adjustment for other versions.
 
 Install and configure IDEA
 --------------------------

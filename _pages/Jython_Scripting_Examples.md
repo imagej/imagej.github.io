@@ -8,7 +8,7 @@ description: test description
 
 {% include info-box content='This page is a copy of [Jython Scripting](Jython_Scripting). The original wiki page is in a rewrite progress. When rewriting [Jython Scripting](Jython_Scripting) is finished, this wiki page will be shortened to only contain Jython code examples.' %}
 
-{% include learn content='scripting' %}[Jython](http://www.jython.org/) is an implementation of the [Python programming language](https://www.python.org/) designed to run on the Java platform.
+[Jython](http://www.jython.org/) is an implementation of the [Python programming language](https://www.python.org/) designed to run on the Java platform.
 
 Quickstart
 ----------

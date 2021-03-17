@@ -6,7 +6,7 @@ categories: Tutorials,Segmentation
 description: test description
 ---
 
-{% include biginfo-box content='See [:Category:Segmentation](Category_Segmentation) for pages about image segmentation.' %} {% include learn content='techniques' %}
+{% include biginfo-box content='See [:Category:Segmentation](Category_Segmentation) for pages about image segmentation.' %} 
 
 {% include tip tip='See [this helpful workshop on Image Segmentation](https://imagej.net/_images/8/87/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf) for another great overview of Segmentation!' %}
 

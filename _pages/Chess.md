@@ -6,7 +6,7 @@ categories: Plugins,Scripting
 description: test description
 ---
 
-{% include learn content='scripting' %}== Purpose ==
+== Purpose ==
 
 This [Jython](Jython_Scripting) script illustrates how to make an image interactive.
 

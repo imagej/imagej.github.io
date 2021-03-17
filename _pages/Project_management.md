@@ -6,7 +6,7 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu%}
+
 The [ImageJ](ImageJ) and related [SciJava](SciJava) projects take advantage of several project management tools.
 
 Git

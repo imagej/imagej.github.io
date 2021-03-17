@@ -6,7 +6,7 @@ categories: Tutorials
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %} 
+ 
 
 
 Introduction

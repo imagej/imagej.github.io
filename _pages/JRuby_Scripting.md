@@ -6,7 +6,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='languages' %}[JRuby](http://jruby.codehaus.org/) is a marvellous project that created a complete implementation of Ruby that runs in the JVM. The excellent work of the authors of JRuby has made it very simple for us to add JRuby scripting into ImageJ.
+[JRuby](http://jruby.codehaus.org/) is a marvellous project that created a complete implementation of Ruby that runs in the JVM. The excellent work of the authors of JRuby has made it very simple for us to add JRuby scripting into ImageJ.
 
 JRuby scripting in ImageJ is a nice alternative to scripting using ImageJ's macro language. It has the following advantages:
 

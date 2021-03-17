@@ -6,7 +6,7 @@ categories: community
 description: test description
 ---
 
-{% include aboutmenu%}
+
 The community encourages discussion about proposed changes on ImageJ's [communication](Communication) channels. Submit your ideas!
 
 Start on the [forum](Forum), searching for discussions related to your contribution to get some context & background. It can also be helpful to [search](Search) for applicable issues and plans across the spectrum of ImageJ resources. The ImageJ community believes that [public discussion is important](Philosophy#Open_source) so that ideas are exposed to healthy alternate points of view rather than lost.

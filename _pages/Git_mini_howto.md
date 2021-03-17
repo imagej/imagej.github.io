@@ -6,7 +6,7 @@ categories: Git
 description: test description
 ---
 
-{% include gitmenu%}
+
  {% include outdated%}
  This page is a **really** quick 'n dirty tutorial on how to work with Git. It is strongly biased to the work on Fiji; you should refer to [Git workshop](Git_workshop), [Git for dummies](Git_for_dummies) or to [Git's homepage](https://git-scm.com/) for much more information.
 

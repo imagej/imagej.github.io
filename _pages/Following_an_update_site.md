@@ -7,7 +7,7 @@ description: test description
 ---
 
 {% include updatesiteswarning-box%}
- {% include menu-updatesites%}
+ 
 
 
 Introduction

@@ -6,7 +6,7 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu%}
+
 The source code of ImageJ is very modular; i.e., it is organized into [well-separated](Architecture#Modularity) projects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
 
 Where is the code?

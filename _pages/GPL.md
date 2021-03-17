@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} {% include menu-licenses%}
+{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} 
 The **GNU General Public License** is a free, **{% include wikipedia title='Copyleft' text='copyleft'%}** [open source](Open_source) license for software and other kinds of works. This is in contrast to **permissive** licenses like [BSD](BSD), which impose minimal restrictions on the redistribution of covered software. The GPL ensures that granted freedoms are preserved whenever the work is distributed, even when the work is changed or added to.
 
 See the {% include wikipedia title='GNU General Public License' text='Wikipedia article on the GPL'%} for more information.

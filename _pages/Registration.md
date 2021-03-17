@@ -6,7 +6,7 @@ categories: plugins
 description: test description
 ---
 
-{% include learn content='techniques' %}
+
 
 What is Registration?
 ---------------------

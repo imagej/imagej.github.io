@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-{% include menu-help%}
+
  This page lists answers to the most frequently asked questions.
 
 Usage

@@ -6,7 +6,7 @@ categories: Import-Export
 description: test description
 ---
 
-{% include menu-formats%}
+
 Thanks to ImageJ's [extensibility](Extensibility) via [plugins](Plugins), it supports a lot of image formats!
 
 Life sciences

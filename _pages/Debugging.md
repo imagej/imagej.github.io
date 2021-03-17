@@ -6,7 +6,7 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu%}
+
  {% include info-box content='This page has approaches for ""software developers"" to use for debugging ImageJ.  
 If you are a ""user"" looking to troubleshoot issues, see the [Troubleshooting](Troubleshooting) page.' %}
 

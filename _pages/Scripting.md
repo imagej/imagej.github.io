@@ -6,7 +6,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='scripting' %}ImageJ allows you to write scripts in several different languages.
+ImageJ allows you to write scripts in several different languages.
 
 Getting started
 ===============

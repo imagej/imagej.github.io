@@ -11,7 +11,7 @@ description: test description
 -   For an overview of ""distribution methods"", see [Distribution](Distribution).
 -   To ""download"" software releases, see [Downloads](Downloads).' %}
 
-{% include develop-menu content='tutorials' %}The SciJava [philosophy](Philosophy) is to [release early, release often](Philosophy#Release_early.2C_release_often). At the same time, we always want to preserve [scientific reproducibility](Reproducible_builds). To make this possible we lean on several [project management](Project_management) tools. The purpose of this guide is to take you through the process of using these tools with the goal of releasing new versions of your software, and then providing those releases to users.
+The SciJava [philosophy](Philosophy) is to [release early, release often](Philosophy#Release_early.2C_release_often). At the same time, we always want to preserve [scientific reproducibility](Reproducible_builds). To make this possible we lean on several [project management](Project_management) tools. The purpose of this guide is to take you through the process of using these tools with the goal of releasing new versions of your software, and then providing those releases to users.
 
 Phases of development
 =====================

@@ -6,7 +6,7 @@ categories: Import-Export, plugins
 description: test description
 ---
 
-{% include menu-formats%}
+
 {% include wikipedia title='DICOM' text='Digital Imaging and Communications in Medicine (DICOM)'%} is a standard for handling, storing, printing, and transmitting information in medical imaging.
 
 How to read DICOM files into ImageJ?

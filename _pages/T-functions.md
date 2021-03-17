@@ -6,7 +6,7 @@ categories: Cookbook,Tutorials
 description: test description
 ---
 
-{% include menu-cookbook%}
+
 
 
 Correcting for bleaching

@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-{% include imglibmenu%}
+
 
 
 Creating and Displaying an Image

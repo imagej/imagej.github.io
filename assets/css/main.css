@@ -17,7 +17,6 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -137,35 +136,6 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 0.75em 0;
-	}
-
-	summary{
-	  outline:none;
-	}
-
-	summary.li {
-		padding-left: 1.4em;
-		line-height: 5px;
-	}
-
-	details>summary {
-
-	  list-style: none;
-	}
-
-	summary::-webkit-details-marker {
-	  display: none
-	}
-
-	summary::after {
-	  content: '>';
-		font-size: 15px;
-		position: absolute;
-		right: 25px;
-	}
-	details[open] summary:after {
-	  content: " ∨";
-		font-size: 15px;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -3120,69 +3090,21 @@ input, select, textarea {
 		z-index: 1;
 		background-color: #f9f9f9;
 		border: 1px solid #a0a0a0;
+		font-size: medium;
 		margin: 0.5em 0 1em 1em;
 		overflow-x: hidden;
-		padding: 0.5em 1em 0.5em 1em;
+		padding: 0.5em 10px 0.5em 0;
+		line-height: normal;
 	}
 
-	.menu h3 {
-		margin: 0 0 0.5em 0 !important;
-	}
-
-	.menu table {
-		background-color: #f9f9f9;
-		border-collapse: collapse;
-		table-layout: fixed;
-		width: 100%;
-		text-align: left;
-	}
-
-	.menu tbody {
-		background-color: #f9f9f9;
-		text-align: left;
-	}
-
-	.menu table tbody tr:nth-child(2n+1) {
-		background-color: #f9f9f9;
-	}
-
-	.menu tr {
-		text-align: left;
-	}
-
-	.menu td {
-		padding: 0 0 0 0;
-	}
-
-	.menu th {
-		background: lightgray;
-		text-align: center;
-		font-weight: bold;
-		font-size: medium;
-		padding: 0 0.5em 0 0.5em;
+	.menu ul {
+		list-style-type: none;
+		margin-bottom: 0;
+		padding: 0;
 	}
 
 	.menu a {
-		padding: 0.1em 0 0 0;
-		text-decoration: none;
-		text-align: justify;
-		font-size: medium;
-		font-weight: 500;
 		color: #0014ca;
-		display: inline-block;
-		border-bottom: none;
-		margin-bottom: 0;
-	}
-
-	.menu p {
-		font-size: large;
-		text-align: justify;
-		font-weight: 500;
-		padding: 0.1em 0 0 0;
-		text-decoration: none;
-		font-size: medium;
-		display: block;
-		margin: 0 0 0 0;
 	}
 
 	.menu hr {
@@ -3190,6 +3112,67 @@ input, select, textarea {
 		margin: 0.5em 0 0 0;
 	}
 
+	/*
+	 * NB: Hide the left-side details marker,
+	 * in favor of a manually placed right-side one.
+	 */
+	.menu details > summary {
+		list-style: none;
+		padding-top: 0.5em;
+		border-bottom: 0.5px solid gray;
+	}
+	.menu details > summary::-webkit-details-marker {
+		display: none;
+	}
+	.menu details > summary::after {
+		content: "▶";
+		font-size: 11px;
+		position: absolute;
+		right: 15px;
+	}
+	.menu details[open] > summary::after {
+		content: "▼";
+		font-size: 14px;
+	}
+
+/* User box */
+
+	.userbox h3 {
+		margin: 0 0 0.5em 0 !important;
+	}
+
+	.userbox table {
+		background-color: #f9f9f9;
+		border-collapse: collapse;
+		table-layout: fixed;
+		width: 100%;
+		text-align: left;
+	}
+
+	.userbox tbody {
+		background-color: #f9f9f9;
+		text-align: left;
+	}
+
+	.userbox table tbody tr:nth-child(2n+1) {
+		background-color: #f9f9f9;
+	}
+
+	.userbox tr {
+		text-align: left;
+	}
+
+	.userbox td {
+		padding: 0 0 0 0;
+	}
+
+	.userbox th {
+		background: lightgray;
+		text-align: center;
+		font-weight: bold;
+		font-size: medium;
+		padding: 0 0.5em 0 0.5em;
+	}
 
 /* Sidebox */
 

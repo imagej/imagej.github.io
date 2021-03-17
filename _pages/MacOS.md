@@ -6,7 +6,7 @@ categories: Platforms
 description: test description
 ---
 
-{% include menu-platforms%}
+
 
 {% capture blurb%}
 {% include wikipedia title='Think different' text='Think different'%}.

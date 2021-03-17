@@ -12,7 +12,7 @@ description: test description
 -   For information on how ImageJ projects are ""funded"", see [Funding](Funding).
 -   For information on ""citing"" these projects, see [Citing](Citing).' %}
 
-{% include aboutmenu%}
+
 == Who we are ==
 
 <div style="font-size: small">

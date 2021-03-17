@@ -6,7 +6,7 @@ categories: development
 description: test description
 ---
 
-{% include develop-menu%}
+
  This is a short guide on how to start using the Eclipse code style profile of ImageJ.
 
 Installing Eclipse code formatter plugin

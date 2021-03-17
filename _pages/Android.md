@@ -6,7 +6,7 @@ categories: Development
 description: test description
 ---
 
-{% include menu-platforms%}
+
 Android is a mobile operating system developed by Google, which commonly runs on Android phones and tablets.
 
 Status of ImageJ on Android

@@ -6,7 +6,7 @@ categories: tutorials
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %} {% include info-box content='This page presents exercises for ""software developers"" to use for debugging ImageJ.  
+ {% include info-box content='This page presents exercises for ""software developers"" to use for debugging ImageJ.  
 If you are a ""user"" looking to troubleshoot issues, see the [Troubleshooting](Troubleshooting) page.' %}
 
 [Debugging](Debugging) is the art of determining the cause and/or location of a problem. The purpose of this guide is to provide developers practical, hands-on experience using a variety of debugging techniques to identify problems in code.

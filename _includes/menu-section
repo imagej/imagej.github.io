@@ -1,0 +1,4 @@
+<li>
+<details>
+<summary>{{include.title}}</summary>
+<ul>

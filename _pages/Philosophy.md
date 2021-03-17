@@ -6,7 +6,7 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu%}
+
 [ImageJ](ImageJ), and the [SciJava](SciJava) component collection in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
 
 Open source

@@ -6,7 +6,7 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %}If you create a useful extension of ImageJ—e.g., a [plugin](Plugin), [script](Script) or [macro](Macro)—the next step is to *distribute* it to others, including:
+If you create a useful extension of ImageJ—e.g., a [plugin](Plugin), [script](Script) or [macro](Macro)—the next step is to *distribute* it to others, including:
 
 -   **Distribute** the extension itself to users
 -   Share the extension's **source code**

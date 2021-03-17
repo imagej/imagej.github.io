@@ -6,7 +6,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='languages' %}{% include wikipedia title='Clojure' text='Clojure'%} is a dialect of the {% include wikipedia title='Lisp (programming\_language)' text='Lisp programming language'%}. Clojure is a general-purpose programming language with an emphasis on functional programming.
+{% include wikipedia title='Clojure' text='Clojure'%} is a dialect of the {% include wikipedia title='Lisp (programming\_language)' text='Lisp programming language'%}. Clojure is a general-purpose programming language with an emphasis on functional programming.
 
 Clojure tutorial for ImageJ
 ===========================

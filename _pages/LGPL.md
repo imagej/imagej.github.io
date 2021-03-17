@@ -6,7 +6,7 @@ categories: development
 description: test description
 ---
 
-{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} {% include menu-licenses%}
+{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} 
 The **GNU Lesser General Public License** is a free, [open source](Open_source) license for software and other kinds of works. It is a middle ground between **{% include wikipedia title='Copyleft' text='copyleft'%}** licenses such as the [GPL](GPL) and **permissive** licenses like [BSD](BSD) and [MIT](MIT). The LGPL requires modifications to the work to also be distributed under OSS terms, but allows the work to be included (unmodified) in non-OSS combined works without propagating its terms onto the combined work itself.
 
 As such, the LGPL is considered a more "commercial friendly" license than the GPL, since LGPL libraries can be freely utilized by commercial software.

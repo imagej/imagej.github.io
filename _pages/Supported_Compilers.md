@@ -6,7 +6,7 @@ categories: Development,Fiji
 description: test description
 ---
 
-{% include fijimenu%}
+
 All components of the Fiji project are built using OpenJDK 8.
 
  

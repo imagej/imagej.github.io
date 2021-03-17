@@ -11,7 +11,7 @@ description: test description
 -   [What is Maven?](https://maven.apache.org/what-is-maven.html)
 -   [Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)' %}
 
-{% include develop-menu content='tools' %}
+
 {% capture blurb%}
   
 """Apache Maven""" is a {% include wikipedia title='Convention over configuration' text='convention over configuration'%} build automation tool.

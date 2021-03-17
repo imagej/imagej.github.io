@@ -6,7 +6,7 @@ categories: Development,IDEs
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %}This article explains how to install, configure and use Eclipse to develop [ImageJ](ImageJ) [components](Components) and [plugins](Plugins). Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
+This article explains how to install, configure and use Eclipse to develop [ImageJ](ImageJ) [components](Components) and [plugins](Plugins). Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
 
 Initial setup
 =============

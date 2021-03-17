@@ -13,7 +13,7 @@ description: test description
 <div style="float: left; padding-right: 1em">
 </div>
 
-{% include develop-menu content='tutorials' %}== Introduction == Sometimes you may want to contribute to an already existing ImageJ plugin or library. For example, a bug is found in one plugin and you want to fix it, or you would like to improve one library by adding more functions. This tutorial describes step by step how to do it with a practical case.
+== Introduction == Sometimes you may want to contribute to an already existing ImageJ plugin or library. For example, a bug is found in one plugin and you want to fix it, or you would like to improve one library by adding more functions. This tutorial describes step by step how to do it with a practical case.
 
 In many cases, the plugin or library will **have its own source code repository** online somewhere. For instance, in the [Fiji](Fiji) project, plugin code lives in the [Fiji GitHub organization](https://github.com/fiji); e.g., the **VIB-lib** library's repository is {% include github org='fiji' repo='VIB-lib' label='VIB-lib' %}. This structure allows for easy, independent development of each individual component.
 

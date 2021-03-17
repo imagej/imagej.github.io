@@ -6,7 +6,7 @@ categories: Cookbook,Tutorials
 description: test description
 ---
 
-{% include menu-cookbook%}
+
 
 
 Slice shuffling/removing/Adding

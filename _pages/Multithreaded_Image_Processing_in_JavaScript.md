@@ -6,7 +6,7 @@ categories: Plugins,Scripting,Unmaintained
 description: test description
 ---
 
-{% include learn content='scripting' %}== Purpose ==
+== Purpose ==
 
 An example [Javascript](Javascript_Scripting) ImageJ script illustrating how to create java Threads for concurrent execution.
 

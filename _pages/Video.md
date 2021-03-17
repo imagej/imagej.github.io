@@ -6,7 +6,7 @@ categories: Import-Export
 description: test description
 ---
 
-{% include menu-formats%}
+
 Out of the box, ImageJ has limited support for some video formats such as AVI and [QuickTime](QuickTime).
 
 Plugins

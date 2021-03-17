@@ -6,7 +6,7 @@ categories: related software
 description: test description
 ---
 
-{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} {% include menu-licenses%}
+{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} 
 The **Apache License** is a **permissive** [free software](Open_Source) license, imposing minimal restrictions on the redistribution of covered software. This is in contrast to {% include wikipedia title='Copyleft' text='copyleft'%} licenses like the [GPL](GPL), which have reciprocity share-alike requirements. The Apache License is named for the {% include wikipedia title='Apache Software Foundation' text='Apache Software Foundation'%}, where it originated.
 
 See the {% include wikipedia title='Apache License' text='Wikipedia article on the Apache License'%} for more information.

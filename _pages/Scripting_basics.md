@@ -6,7 +6,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='scripting' %}
+
 
 Introduction
 ============

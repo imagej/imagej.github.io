@@ -10,7 +10,7 @@ description: test description
 {% capture source%}
 {% include github org='imglib' repo='imglib2-tutorials' %}
 {% endcapture %}
-{% include info-box name='Examples' software='ImgLib2' author='Stephan Preibisch' maintainer='Stephan Preibisch, Curtis Rueden' source=source released='March 2012' latest-version='December 2013' website=' [ImgLib2 publication](http://bioinformatics.oxfordjournals.org/content/early/2012/09/07/bioinformatics.bts543.abstract)' %} {% include imglibmenu%}
+{% include info-box name='Examples' software='ImgLib2' author='Stephan Preibisch' maintainer='Stephan Preibisch, Curtis Rueden' source=source released='March 2012' latest-version='December 2013' website=' [ImgLib2 publication](http://bioinformatics.oxfordjournals.org/content/early/2012/09/07/bioinformatics.bts543.abstract)' %} 
 
 
 Jupyter notebook

@@ -12,7 +12,7 @@ description: test description
 -   For information on who ""maintains"" these projects, see [Governance](Governance).
 -   For information on how ImageJ projects are ""funded"", see [Funding](Funding).' %}
 
-{% include aboutmenu%}
+
 == Guidelines ==
 
 We ask users to cite:

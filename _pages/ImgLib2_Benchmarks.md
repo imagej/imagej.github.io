@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-{% include imglibmenu%}
+
 
 {% include info-box content='This page was last updated 2016 May 3.' %}
 

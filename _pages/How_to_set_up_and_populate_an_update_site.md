@@ -6,7 +6,7 @@ categories: Tutorials
 description: test description
 ---
 
-{% include menu-updatesites%}
+
 
 
 Introduction

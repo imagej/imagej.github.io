@@ -6,7 +6,7 @@ categories: ImgLib,Matlab
 description: test description
 ---
 
-{% include imglibmenu%}
+
  This page recenses experiments with creating ImgLib2 images from [MATLAB](MATLAB), and then calling ImgLib2 algorithm from [MATLAB](MATLAB). We aim first at showing how to build ImgLib2 types from [MATLAB](MATLAB) types, then to do that efficiently. By this we mean having to <b>share</b> a single, massive low level data piece between ImgLib2 and [MATLAB](MATLAB), which is not doable simply due to [MATLAB](MATLAB) memory model.
 
 All snippets listed here are to be run from [MATLAB](MATLAB). We rely on [Miji](Miji) to set up class path, so you have to start every [MATLAB](MATLAB) session with the command

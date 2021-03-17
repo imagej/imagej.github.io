@@ -6,7 +6,7 @@ categories: Plugins,Scripting,Unmaintained
 description: test description
 ---
 
-{% include learn content='scripting' %}== Purpose ==
+== Purpose ==
 
 An example [Clojure](Clojure_Scripting) script illustrating how to run concurrent threads that perform independent tasks, and how to combine their results afterwards.
 

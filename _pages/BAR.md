@@ -163,7 +163,7 @@ BAR provides several utility methods that simplify the creation of \_\_\_SHADOW3
 
 ### BAR lib
 
-{% include learn content='scripting' %}{% include github org='tferr' repo='Scripts' path='/lib/README.md\#lib' label='BAR libs' %} (stored in the */BAR/lib/* directory) are centralized libraries ([BeanShell](BeanShell_Scripting), [IJM](Introduction_into_Macro_Programming) and [Python](Jython_Scripting), etc.) that can be shared across files. These libraries serve as scripting additions to [Snippets](#Snippets "wikilink") and other routines.
+{% include github org='tferr' repo='Scripts' path='/lib/README.md\#lib' label='BAR libs' %} (stored in the */BAR/lib/* directory) are centralized libraries ([BeanShell](BeanShell_Scripting), [IJM](Introduction_into_Macro_Programming) and [Python](Jython_Scripting), etc.) that can be shared across files. These libraries serve as scripting additions to [Snippets](#Snippets "wikilink") and other routines.
 
 Do you find yourself copy and pasting functions from one file to the other? Do you keep on writing the same lines of code? Do you have some key code written across different languages? Would you like to make side-by-side comparisons of scripting languages? Then, BAR lib is for you.
 

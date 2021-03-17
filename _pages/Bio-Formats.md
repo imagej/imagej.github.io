@@ -6,7 +6,7 @@ categories: Related Software,Citable,SciJava,OME
 description: test description
 ---
 
-{% include menu-formats%}
+
 
 {% capture source%}
 {% include github org='openmicroscopy' repo='bioformats' %}

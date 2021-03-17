@@ -6,7 +6,7 @@ categories: plugins
 description: test description
 ---
 
-{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} {% include menu-licenses%}
+{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} 
 Components distributed via the BIG-EPFL [update site](Update_site) were developed by the [Biomedical Imaging Group](http://bigwww.epfl.ch/) (BIG) at the [École Polytechnique Fédérale de Lausanne](http://epfl.ch/) (EPFL).
 
 These components are licensed under proprietary terms, incompatible with the [GPL](GPL) and similar licenses.

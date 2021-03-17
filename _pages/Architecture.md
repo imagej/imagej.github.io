@@ -11,7 +11,7 @@ description: test description
 -   For information on the ""social"" structure, see [Governance](Governance).
 -   For information on the ""legal"" structure, see [Licensing](Licensing).' %}
 
-{% include develop-menu%}
+
 This page describes the technical structure of [SciJava](SciJava) and [ImageJ](ImageJ) projects. For maximum benefit, we suggest readers familiarize themselves with [Maven](Maven), [Git](Git) and [GitHub](GitHub) before reading the sections here.
 
 Definitions

@@ -6,7 +6,7 @@ categories: plugins
 description: test description
 ---
 
-{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} {% include menu-licenses%}
+{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} 
 **BSD licenses** are a family of **permissive** [free software](Open_Source) licenses, imposing minimal restrictions on the redistribution of covered software. This is in contrast to {% include wikipedia title='Copyleft' text='copyleft'%} licenses like the [GPL](GPL), which have reciprocity share-alike requirements. The original BSD license was used for its namesake, the Berkeley Software Distribution (BSD), a Unix-like operating system. The original version has since been revised and its descendants are more properly termed modified BSD licenses.
 
 See the {% include wikipedia title='BSD licenses' text='Wikipedia article on BSD licenses'%} for more information.

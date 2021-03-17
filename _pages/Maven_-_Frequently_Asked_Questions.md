@@ -6,7 +6,7 @@ categories: Development,Maven
 description: test description
 ---
 
-{% include develop-menu content='source' %}= What does the POM version mean? =
+= What does the POM version mean? =
 
 The {% include github org='imagej' repo='example-legacy-plugin' path='pom.xml' label='pom.xml' %} of [example-legacy-plugin](https://github.com/imagej/example-legacy-plugin/) inherits from a parent called {% include github org='scijava' repo='pom-scijava' path='pom.xml' label='pom-scijava' %}. This parent POM defines and configures many things so that the POMs of individual plugin projects are shorter (i.e., so they don't have to repeat things) and more consistent (i.e., so they do not forget to define crucial metadata).
 

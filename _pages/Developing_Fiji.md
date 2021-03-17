@@ -6,7 +6,7 @@ categories: Development,Fiji
 description: test description
 ---
 
-{% include fijimenu%}
+
 {% include outdated%}
 
 

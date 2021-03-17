@@ -6,7 +6,7 @@ categories: Import-Export,Related Software
 description: test description
 ---
 
-{% include menu-formats%}
+
 If you have Flex files from an older Opera system, you may receive a message from [Bio-Formats](Bio-Formats) stating that you need a LuraWave LWF license code to decode these files.
 
 Decoding Flex files using the MBF distribution

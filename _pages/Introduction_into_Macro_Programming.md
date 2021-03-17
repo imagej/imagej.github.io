@@ -6,7 +6,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='languages' %}= Why Macros? =
+= Why Macros? =
 
 Macros can be used to
 

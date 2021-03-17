@@ -6,7 +6,7 @@ categories: Git
 description: test description
 ---
 
-{% include gitmenu%}
+
 
 {% include outdated%}
 

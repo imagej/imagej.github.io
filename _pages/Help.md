@@ -6,7 +6,7 @@ categories: Help
 description: test description
 ---
 
-{% include menu-help%}
+
 The ImageJ community firmly believes in public discussion of the software. In this way, each question benefits not only the one asking, but everyone in the community, including everyone who subsequently does a [web search](http://search.imagej.net/) on the same topic.
 
 Searching ImageJ resources

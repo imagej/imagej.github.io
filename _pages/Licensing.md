@@ -11,7 +11,7 @@ description: test description
 -   For information on their ""technical"" structure, see [Architecture](Architecture).
 -   For information on their ""social"" structure, see [Governance](Governance).' %}
 
-{% include menu-licenses%}
+
 The [ImageJ](ImageJ) project, and related projects in the [SciJava](SciJava) component collection, are licensed as [open source](Open_source) software (OSS) projects.
 
 For an introduction to OSS licensing, see [http://choosealicense.com/](http://choosealicense.com/).
