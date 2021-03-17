@@ -34,13 +34,13 @@
     {% include menu-item title="Overview" link="Fiji" %}
     {% include menu-item title="Using Fiji" link="Using_Fiji" %}
     {% include menu-item title="Featured Fiji Projects" link="Featured_Fiji_Projects" %}
-    {% include menu-item title="Publications" link="Fiji%2FPublications" %}
+    {% include menu-item title="Publications" link="Fiji_Publications" %}
     {% include menu-item title="Links" link="Links" %}
 
     {% include menu-section title="Developing Fiji" %}
       {% include menu-item title="Building Fiji from source" link="Downloading_and_Building_Fiji_From_Source" %}
       {% include menu-item title="Developing Fiji" link="Developing_Fiji" %}
-      {% include menu-item title="Contribution requirements" link="Fiji%2FContribution_requirements" %}
+      {% include menu-item title="Contribution requirements" link="Fiji_Contribution_requirements" %}
     {% include menu-section-end %} <!-- About/Fiji/Developing Fiji -->
   {% include menu-section-end %} <!-- About/Fiji -->
 {% include menu-section-end %} <!-- About -->
@@ -192,8 +192,8 @@
     {% include menu-item title="FAQ" link="ImgLib2_FAQ" %}
 
     {% include menu-section title="Tutorials" %}
-      {% include menu-item title="Getting Started" link="mgLib2_-_Getting_Started" %}
-      {% include menu-item title="Accessors" link="mgLib2_-_Accessors" %}
+      {% include menu-item title="Getting Started" link="ImgLib2_-_Getting_Started" %}
+      {% include menu-item title="Accessors" link="ImgLib2_-_Accessors" %}
       {% include menu-item title="Accessibles" link="ImgLib2_-_Accessibles" %}
       {% include menu-item title="Examples" link="ImgLib2_Examples" %}
       {% include menu-item title="Introductory Workshop" link="ImgLib2_-_Introductory_Workshop" %}
@@ -215,15 +215,15 @@
   {% include menu-item title="Troubleshooting" link="Troubleshooting" %}
   {% include menu-item title="How to write bug reports" link="Bug_reporting_best_practices" %}
   {% include menu-item title="Report an issue" link="Report_a_Bug" %}
-  {% include menu-item title="Editing the ImageJ Wiki" link="Help:Contents" %}
+  {% include menu-item title="Editing the ImageJ Wiki" link="Editing_the_Wiki" %}
   {% include menu-section title="Update Sites" %}
-    {% include menu-item title="Introduction" link="Update_sites" %}
+    {% include menu-item title="Introduction" link="Update_Sites" %}
     {% include menu-item title="Following an update site" link="Following_an_update_site" %}
     {% include menu-item title="Creating your own update site" link="How_to_set_up_and_populate_an_update_site" %}
     {% include menu-item title="ToS for personal update sites" link="Personal_Update_Site_Terms_of_Service" %}
     {% include menu-item title="Automatically upload your site" link="Automatic_Update_Site_Uploads" %}
     {% include menu-item title="Uploading to core update sites" link="How_to_upload_to_core_update_sites" %}
-    {% include menu-item title="List of update sites" link="list-of-update-sites" %}
+    {% include menu-item title="List of update sites" link="https://imagej.github.io/list-of-update-sites/" %}
     {% include menu-item title="Update site FAQ" link="Update_site_FAQ" %}
   {% include menu-section-end %} <!-- Help/Update Sites -->
 {% include menu-section-end %} <!-- Help -->
