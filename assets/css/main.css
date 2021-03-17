@@ -83,6 +83,7 @@ input, select, textarea {
 
 	*, *:before, *:after {
 		box-sizing: inherit;
+		border: none;
 	}
 
 	body {
@@ -138,14 +139,20 @@ input, select, textarea {
 		margin: 0 0 0.75em 0;
 	}
 
+	summary{
+	  outline:none;
+	}
+	
 	summary.li {
 		padding-left: 1.4em;
+		border: none;
 	}
 
 	details>summary {
 
 	  list-style: none;
 	}
+
 	summary::-webkit-details-marker {
 	  display: none
 	}
