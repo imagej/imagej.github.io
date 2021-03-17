@@ -91,7 +91,12 @@
   .toc ol li {
       margin-bottom: 0px;
   }
+
+  .toc li {
+    margin: 10px 0;
+  }
 }
+
 @media screen and (max-width: 780px) {
   .toc {
     display: none;
