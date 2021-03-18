@@ -3082,29 +3082,47 @@ input, select, textarea {
 
 /* Menu */
 
+@media screen and (min-width: 780px) {
 	.menu {
 		position: absolute;
 		top: 223px;
 		right: 0;
+		font-size: 0.75em;
 		width: 240px;
-		z-index: 1;
-		background-color: #f9f9f9;
-		border: 1px solid #a0a0a0;
-		font-size: medium;
-		margin: 0.5em 0 1em 1em;
-		overflow-x: hidden;
-		padding: 0.5em 10px 0.5em 0;
-		line-height: normal;
+		float: right;
 	}
 
 	.menu ul {
-		list-style-type: none;
-		margin-bottom: 0;
-		padding: 0;
+			margin: 0;
+			padding-left: 1.4em;
+			border-left: 1px solid black;
+			list-style-type: none;
+			line-height: 20px;
+	}
+
+	.menu > ul {
+			border: none;
+			padding: 20px 40px 20px 40px;
 	}
 
 	.menu a {
-		color: #0014ca;
+			color: black;
+	}
+
+	.menu ul li {
+			margin-bottom: 0px;
+	}
+
+	.menu li {
+		margin: 10px 0;
+	}
+
+	.menu summary{
+		outline:none;
+	}
+
+	.menu summary.li {
+		padding-left: 1.4em;
 	}
 
 	.menu hr {
@@ -3112,28 +3130,27 @@ input, select, textarea {
 		margin: 0.5em 0 0 0;
 	}
 
-	/*
-	 * NB: Hide the left-side details marker,
-	 * in favor of a manually placed right-side one.
-	 */
-	.menu details > summary {
+	.menu details>summary {
+
 		list-style: none;
-		padding-top: 0.5em;
-		border-bottom: 0.5px solid gray;
 	}
-	.menu details > summary::-webkit-details-marker {
-		display: none;
+
+	.menu summary::-webkit-details-marker {
+		display: none
 	}
+
 	.menu details > summary::after {
-		content: "▶";
-		font-size: 11px;
+		content: ">";
+		font-size: 15px;
 		position: absolute;
 		right: 20px;
 	}
-	.menu details[open] > summary::after {
-		content: "▼";
-		font-size: 11px;
+
+	.menu details[open] summary:after {
+		content: " ∨";
+		font-size: 15px;
 	}
+}
 
 /* User box */
 
