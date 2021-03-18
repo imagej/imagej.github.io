@@ -74,7 +74,7 @@
   .toc ol {
       margin: 0;
       padding-left: 1.4em;
-      border-left: 1px solid black;
+      border-left: 1px solid gray;
       list-style-type: none;
       line-height: 20px;
   }
@@ -117,7 +117,7 @@
 		content: ">";
 		font-size: 15px;
 		position: absolute;
-		right: 20px;
+		right: 30px;
 	}
 
 	.toc details[open] summary:after {
@@ -127,77 +127,6 @@
 }
 @media screen and (max-width: 780px) {
   .toc {
-    display: none;
-    }
-}
-
-@media screen and (min-width: 780px) {
-  .mmenu {
-    position: absolute;
-    top: 223px;
-    right: 0;
-    font-size: 0.75em;
-    width: 240px;
-    float: right;
-  }
-
-  .mmenu ul {
-      margin: 0;
-      padding-left: 1.4em;
-      border-left: 1px solid black;
-      list-style-type: none;
-      line-height: 20px;
-  }
-
-  .mmenu > ul {
-      border: none;
-      padding: 20px 40px 20px 40px;
-  }
-
-  .mmenu a {
-      color: black;
-  }
-
-  .mmenu ul li {
-      margin-bottom: 0px;
-  }
-
-  .mmenu li {
-    margin: 10px 0;
-  }
-
-  .mmenu summary{
-    outline:none;
-  }
-
-  .mmenu summary.li {
-		padding-left: 1.4em;
-	}
-
-	.mmenu details>summary {
-
-	  list-style: none;
-	}
-
-	.mmenu summary::-webkit-details-marker {
-	  display: none
-	}
-
-	.mmenu details > summary::after {
-		content: ">";
-		font-size: 15px;
-		position: absolute;
-		right: 20px;
-	}
-
-	.mmenu details[open] summary:after {
-	  content: " ∨";
-		font-size: 15px;
-	}
-}
-
-@media screen and (max-width: 780px) {
-  .mmenu {
     display: none;
     }
 }

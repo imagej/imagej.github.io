@@ -3086,7 +3086,7 @@ input, select, textarea {
 	.menu {
 		position: absolute;
 		top: 223px;
-		right: 0;
+		right: 10px;
 		font-size: 0.75em;
 		width: 240px;
 		float: right;
@@ -3095,7 +3095,7 @@ input, select, textarea {
 	.menu ul {
 			margin: 0;
 			padding-left: 1.4em;
-			border-left: 1px solid black;
+			border-left: 1px solid gray;
 			list-style-type: none;
 			line-height: 20px;
 	}
@@ -3127,7 +3127,7 @@ input, select, textarea {
 
 	.menu hr {
 		border-bottom: solid 1px #000000;
-		margin: 0.5em 0 0 0;
+		margin: 0.5em -10px 0 0;
 	}
 
 	.menu details>summary {
@@ -3143,7 +3143,7 @@ input, select, textarea {
 		content: ">";
 		font-size: 15px;
 		position: absolute;
-		right: 20px;
+		right: 30px;
 	}
 
 	.menu details[open] summary:after {
