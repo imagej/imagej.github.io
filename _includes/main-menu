@@ -1,5 +1,5 @@
 <div id="sidebar">
-<div class="menu">
+<div class="mmenu">
 <ul>
 
 {% include menu-section title="About" %}
