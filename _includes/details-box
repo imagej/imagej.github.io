@@ -1,6 +1,6 @@
 {% capture details-content %}
-{% if include.project_name != "" %}
-| **Project:** | {{include.project_name | strip_newlines}}
+{% if include.project-name != "" %}
+| **Project:** | {{include.project-name | strip_newlines}}
 {% endif %}
 {% if include.url != "" %}
 | **URL:** | {{include.url | strip_newlines}}
@@ -17,13 +17,13 @@
 {% if include.date != "" %}
 | **Date:** | {{include.date | strip_newlines}}
 {% endif %}
-{% if include.dev_stat != "" %}
-| **Development Status:** | {{include.dev_stat | strip_newlines}}
+{% if include.dev-stat != "" %}
+| **Development Status:** | {{include.dev-stat | strip_newlines}}
 {% endif %}
-{% if include.sup_stat != "" %}
-| **Support status:** | {{include.sup_stat | strip_newlines}}
+{% if include.sup-stat != "" %}
+| **Support status:** | {{include.sup-stat | strip_newlines}}
 {% endif %}
-{% if include.team_banner == true %}
+{% if include.team-banner == true %}
 <table>
     <tbody>
         <tr>
@@ -32,29 +32,29 @@
     </tbody>
 </table>
 {% endif %}
-{% if include.team_founders != "" %}
-| **Founders:** | {{include.team_founders | strip_newlines}}
+{% if include.team-founders != "" %}
+| **Founders:** | {{include.team-founders | strip_newlines}}
 {% endif %}
-{% if include.team_leads != "" %}
-| **Leads:** | {{include.team_leads | strip_newlines}}
+{% if include.team-leads != "" %}
+| **Leads:** | {{include.team-leads | strip_newlines}}
 {% endif %}
-{% if include.team_developers != "" %}
-| **Developers:** | {{include.team_developers | strip_newlines}}
+{% if include.team-developers != "" %}
+| **Developers:** | {{include.team-developers | strip_newlines}}
 {% endif %}
-{% if include.team_debuggers != "" %}
-| **Debuggers:** | {{include.team_debuggers | strip_newlines}}
+{% if include.team-debuggers != "" %}
+| **Debuggers:** | {{include.team-debuggers | strip_newlines}}
 {% endif %}
-{% if include.team_reviewers != "" %}
-| **Reviewers:** | {{include.team_reviewers | strip_newlines}}
+{% if include.team-reviewers != "" %}
+| **Reviewers:** | {{include.team-reviewers | strip_newlines}}
 {% endif %}
-{% if include.team_support != "" %}
-| **Support:** | {{include.team_support | strip_newlines}}
+{% if include.team-support != "" %}
+| **Support:** | {{include.team-support | strip_newlines}}
 {% endif %}
-{% if include.team_maintainers != "" %}
-| **Maintainers:** | {{include.team_maintainers | strip_newlines}}
+{% if include.team-maintainers != "" %}
+| **Maintainers:** | {{include.team-maintainers | strip_newlines}}
 {% endif %}
-{% if include.team_contributors != "" %}
-| **Contributors:** | {{include.team_contributors | strip_newlines}}
+{% if include.team-contributors != "" %}
+| **Contributors:** | {{include.team-contributors | strip_newlines}}
 {% endif %}
 {% endcapture %}
 

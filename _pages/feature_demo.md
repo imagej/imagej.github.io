@@ -57,7 +57,7 @@ While in Clojure one is able to declare types if desired, it's not required; the
 
 {% include anchor content="Figure center" %}
 
-{% include figure-center name="place holder image" image_path="/images/placeholder.png" content="**Figure 3** : This is a center figure." %}
+{% include figure-center name="place holder image" image-path="/images/placeholder.png" content="**Figure 3** : This is a center figure." %}
 
 While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 

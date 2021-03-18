@@ -40,9 +40,9 @@ The {% include wikipedia title='Pauli exclusion principle' text='Pauli exclusion
 
 Far too often, composite/merge images of red and green channels are considered sufficient to demonstrate colocalisation. This is plain wrong. The problems with red/green merge images for colour-blind people aside, there is another very good reason to require scatter plots: the perception of human eyes and brain can be fooled very easily. Just have a look at this image:
 
-{% include figure-center name="SpiralsRGY.png" image_path="/media/SpiralsRGY.png" content="SpiralsRGY.png" %}
+{% include figure-center name="SpiralsRGY.png" image-path="/media/SpiralsRGY.png" content="SpiralsRGY.png" %}
 
-{% include figure-right name="GreenYellowSimultColourIllusion.png" image_path="/media/GreenYellowSimultColourIllusion.png" content="Here is another example: the two circles look like different colours, but they are exactly the same if you measure the pixel values." %}
+{% include figure-right name="GreenYellowSimultColourIllusion.png" image-path="/media/GreenYellowSimultColourIllusion.png" content="Here is another example: the two circles look like different colours, but they are exactly the same if you measure the pixel values." %}
 
 Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling {% include bc content='File | Open Samples | [Spirals (Macro)](Spirals_Macro "wikilink")'%} in Fiji.
 
@@ -69,7 +69,7 @@ Let's open a sample data set that we know should have very good colocalization b
 
 **Open this sample data file [colocsample1bRGB\_BG.tif](https://fiji.sc/samples/colocsample1bRGB_BG.tif).** Then use the "Image-Color-Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
 
-{% include image-right name="Split channels" image_path="/media/SplitChannels.png" %}
+{% include image-right name="Split channels" image-path="/media/SplitChannels.png" %}
 
 If you like, you can change the look up tables of the images (LUTs) so one is "green" and one is "magenta". Of course the colors here are always false. These false colors are only useful to tell which channel is which. The optoelectronic detectors we use only see photons, and don't know what color they are; that is determined by the fluorescence emission filters we use. There is no such thing as a green dye or a red dye, since they have broad emission spectra not a single wavelength corresponding to a certain "color". If I want to show DAPI in green and EGFP as magenta, there is nothing "wrong" about that.
 

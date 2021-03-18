@@ -16,7 +16,7 @@ Include an information box about your project where you can list specific detail
 ```
 {% include details-box
 title="Feature Demo"
-project_name="ImageJ.net"
+project-name="ImageJ.net"
 url="[http://www.wisc.edu](https://www.wisc.edu)"
 source="[on GitHub](https://github.com/imagej/imagej.github.io/tree/jekyll-prototype)"
 license="[GPLv3](https://imagej.net/GPLv3)"
@@ -39,7 +39,7 @@ team_contributors = ""
 
 {% include details-box
 title="Feature Demo"
-project_name="ImageJ.net"
+project-name="ImageJ.net"
 url="[http://www.wisc.edu](https://www.wisc.edu)"
 source="[on GitHub](https://github.com/imagej/imagej.github.io/tree/jekyll-prototype)"
 license="[GPLv3](https://imagej.net/GPLv3)"

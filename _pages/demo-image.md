@@ -16,11 +16,11 @@ Images can be added to your page by including `image-` with a location (_i.e._ `
 
 {% raw %}
 ```
-{% include image-left name="spirals" image_path="/images/readme/spirals.png" %}
+{% include image-left name="spirals" image-path="/images/readme/spirals.png" %}
 ```
 {% endraw %}
 
-{% include image-left name="spirals" image_path="/images/readme/spirals.png" %}
+{% include image-left name="spirals" image-path="/images/readme/spirals.png" %}
 
 Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
 
@@ -34,11 +34,11 @@ Changing `image-left` to `image-right` moves the image from the left to the righ
 
 {% raw %}
 ```
-{% include image-right name="spirals" image_path="/images/readme/spirals.png" %}
+{% include image-right name="spirals" image-path="/images/readme/spirals.png" %}
 ```
 {% endraw %}
 
-{% include image-right name="spirals" image_path="/images/readme/spirals.png" %}
+{% include image-right name="spirals" image-path="/images/readme/spirals.png" %}
 
 Albucius eligendi est ei. Graeco alterum prodesset pro ad. Eum movet populo mediocrem ad, ut vix scaevola legendos tractatos. Omnes adolescens voluptatibus qui eu. Ut sea quando soluta qualisque, qui in simul reprehendunt, pro ei dico abhorreant. Ius amet munere erroribus te.
 

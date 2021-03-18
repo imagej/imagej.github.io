@@ -2,9 +2,9 @@
 {% assign gallery-entries = include.content | newline_to_br | split: '<br />' %}
 {% assign gallery_end_index = gallery-entries | size | minus: 2 %}
 {% for i in (1..gallery_end_index) %}
-{% assign image_path = gallery-entries[i] | split: "|" | first | strip %}
-{% assign image_text = gallery-entries[i] | split: "|" | last | strip %}
-{%include thumbnail src=image_path title=image_text %}
+{% assign image-path = gallery-entries[i] | split: "|" | first | strip %}
+{% assign image-text = gallery-entries[i] | split: "|" | last | strip %}
+{%include thumbnail src=image-path title=image-text %}
 {% endfor %}
 {%- endcapture -%}
 

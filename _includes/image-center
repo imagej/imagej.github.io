@@ -1,1 +1,1 @@
-<img src="{{include.image_path}}" alt="{{include.name}}" class="image-center {{include.classes}}">
+<img src="{{include.image-path}}" alt="{{include.name}}" class="image-center {{include.classes}}">

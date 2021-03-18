@@ -1,1 +1,1 @@
-<img src={{"/images/placeholder.png" | relative_url}} alt="" data-echo={{include.image_path | relative_url}}>
+<img src={{"/images/placeholder.png" | relative_url}} alt="" data-echo={{include.image-path | relative_url}}>
