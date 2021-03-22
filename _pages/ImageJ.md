@@ -15,12 +15,163 @@ Flavors
 
 There are a few different flavors of ImageJ with very similar names, and some confusion is inevitable. Below is a table which should help to clarify the purpose of each. For the historical context of these projects, see [History](#History "wikilink") below.
 
-<table><tbody><tr class="odd"><td></td><td><p><strong>Name</strong></p></td><td><p><strong>Author/Maintainer(s)</strong></p></td><td><p><strong>Description</strong></p></td><td><p><strong>Initiated</strong></p></td><td><p><strong>Status</strong></p></td></tr><tr class="even"><td><p><img src="/media/Fiji-icon.png" width="64"/></p></td><td><p><a href="Fiji" title="wikilink">Fiji</a></p></td><td><p><a href="Contributors" title="wikilink">Fiji contributors</a></p></td><td><p><strong>F</strong>iji <strong>i</strong>s <strong>J</strong>ust <strong>I</strong>mageJ, with extras. It is a distribution of ImageJ with many plugins useful for scientific image analysis in fields such as life sciences. It is actively maintained, with updates released often.</p><p>We recommend Fiji as the preferred version of ImageJ.</p></td><td><p><a href="User:Schindelin#A_short_story_about_Fiji" title="wikilink">Dec. 2007</a></p></td><td><p>Active</p></td></tr><tr class="odd"><td><p><img src="/media/Imagej2-icon.png" width="64"/></p></td><td><p><a href="ImageJ2" title="wikilink">ImageJ2</a><br />
-ImageJDev</p></td><td><p><a href="Contributors" title="wikilink">ImageJ developers</a></p></td><td><p>A new version of ImageJ targeting scientific multidimensional image data. It is a complete rewrite of ImageJ, but includes <a href="ImageJ1" title="wikilink">ImageJ1</a> with a compatibility layer, so that old-style plugins and macros can run the same as always. ImageJ2 provides several significant new features, such as an automatic <a href="updater" title="wikilink">updater</a>, and improved <a href="scripting" title="wikilink">scripting</a> capabilities.</p></td><td><p>Dec. 2009</p></td><td><p>Active</p></td></tr><tr class="even"><td><p><img src="/media/Imagej1-icon.png" width="64"/></p></td><td><p><a href="ImageJ1" title="wikilink">ImageJ1</a></p></td><td><p>{% include person content='Rasband' %}</p></td><td><p>A stable version of ImageJ which has been in development since 1997. It has a strong, established user base, with thousands of plugins and macros for performing a wide variety of tasks.</p></td><td><p>1997</p></td><td><p>Active</p></td></tr><tr class="odd"><td><p><img src="/media/Imagej1-icon.png" width="64"/></p></td><td><p><a href="ImageJA" title="wikilink">ImageJA</a></p></td><td><p><a href="Contributors" title="wikilink">ImageJ developers</a></p></td><td><p>ImageJA is a project that provides a clean <a href="Git" title="wikilink">Git</a> history of ImageJ1, with a proper 'pom.xml' file so that it can be used with Maven without hassles.</p><p>It is what ImageJ2's legacy support uses at its core.</p></td><td><p>Jul. 2005</p></td><td><p>Active</p></td></tr><tr class="even"><td></td><td><p><a href="ImageJFX" title="wikilink">ImageJFX</a></p></td><td><p>{% include person content='cmongis' %}</p></td><td><p> ImageJFX is a new user interface for ImageJ, built using {% include wikipedia title='JavaFX' text='JavaFX'%}.</p></td><td><p>2015</p></td><td><p>Active</p></td></tr><tr class="odd"><td><p><img src="/media/Imagesxm-icon.png" width="64"/></p></td><td><p><a href="ImageSXM" title="wikilink">ImageSXM</a></p></td><td><p>Steve Barrett</p></td><td><p>Image SXM is a version of NIH Image that has been extended to handle the loading, display and analysis of scanning microscope images.</p></td><td><p>May 1993</p></td><td><p>Active</p></td></tr><tr class="even"><td><p><img src="/media/Astroimagej.png" width="64"/></p></td><td><p><a href="http://www.astro.louisville.edu/software/astroimagej/">AstroImageJ</a></p></td><td><p><a href="http://www.astro.louisville.edu/john_kielkopf/">John Kielkopf</a></p></td><td><p>AstroImageJ is ImageJ with astronomy plugins and macros installed.</p></td><td><p>Unknown</p></td><td><p>Active</p></td></tr><tr class="odd"><td></td><td><p><a href="http://www.rawak.de/ij2x/imagej2x.html">ImageJ2x</a></p></td><td><p><a href="http://rawak.de/">Rawak Software</a></p></td><td><p>ImageJ2x is a fork of ImageJ1, modified to use a Swing interface.</p></td><td><p>Unknown</p></td><td><p>Last update:<br />
-May 2015</p></td></tr><tr class="even"><td><p>Closed-source variants</p></td><td></td><td></td><td></td><td></td><td></td></tr><tr class="odd"><td><p><img src="/media/Eu-hou-logo.png" width="64"/></p></td><td><p><a href="http://www.euhou.net/index.php?option=com_content&amp;task=view&amp;id=7&amp;Itemid=9">SalsaJ</a></p></td><td><p><a href="http://www.euhou.net/">EU-HOU</a></p></td><td><p>SalsaJ is a closed-source fork of ImageJ1 intended for use with professional astronomy images. It was designed to be used in classrooms, and has been localized into over 30 different languages.</p></td><td><p>Unknown</p></td><td><p>Last update:<br />
-Oct. 2012</p></td></tr><tr class="even"><td><p>Obsolete variants</p></td><td></td><td></td><td></td><td></td><td></td></tr><tr class="odd"><td></td><td><p><a href="MBF_ImageJ" title="wikilink">MBF ImageJ</a></p></td><td><p>Tony Collins</p></td><td><p>The MBF "ImageJ for Microscopy" bundle (formerly <a href="http://www.uhnres.utoronto.ca/facilities/wcif/imagej/">WCIF ImageJ</a>) is a collection of plugins and macros, collated and organized by the MacBiophotonics facility.</p><p>It went hand in hand with a comprehensive manual describing how to use the bundle with light microscopy image data. It was a great resource by microscopists, for microscopists. Unfortunately, the manual went offline in late 2012. In response, the software team at <a href="LOCI" title="wikilink">LOCI</a> created the <a href="Cookbook" title="wikilink">Cookbook</a> user guide and <a href="update_site" title="wikilink">update site</a>, which includes most of the same plugins.</p></td><td><p>2005</p></td><td><p>Defunct<br />
-(Last update:<br />
-Dec. 2009)</p></td></tr><tr class="even"><td></td><td><p><a href="ImageJX" title="wikilink">ImageJX</a></p></td><td><p>{% include person content='Harris' %}</p></td><td><p>ImageJX was created as a means to discuss and explore improvements to ImageJ. There was an <a href="http://groups.google.com/group/imagejx">ImageJX mailing list</a> as well as an ImageJX software prototype.</p><p>The ImageJX software prototype was a proof of concept—an attempt to reorganize ImageJ's internals to make it more flexible. The prototype demonstrated this flexibility by recasting the program in Swing. The ImageJX project formed the basis of an application to NIH for funding, which is what launched the ImageJ2 project (see above).</p></td><td><p>Mar. 2009</p></td><td><p>Superceded by ImageJ2</p></td></tr><tr class="odd"><td></td><td><p><a href="NIH_Image" title="wikilink">NIH Image</a></p></td><td><p>{% include person content='Rasband' %}</p></td><td><p>NIH Image is a public domain image processing and analysis program for the Macintosh. It is the direct predecessor of ImageJ, and is no longer under active development (though see ImageSXM below).</p></td><td><p>1993 or earlier</p></td><td><p>Superceded by ImageJ</p></td></tr></tbody></table>
+<table>
+  <tbody>
+    <tr class="odd">
+      <td></td>
+      <th>Name</th>
+      <th>Author/Maintainer(s)</th>
+      <th>Description</th>
+      <th>Initiated</th>
+      <th>Status</th>
+    </tr>
+    <tr class="even">
+      <td><img src="/media/Fiji-icon.png" width="64"/></td>
+      <td><a href="Fiji" title="wikilink">Fiji</a></td>
+      <td><a href="Contributors" title="wikilink">Fiji contributors</a></td>
+      <td><strong>F</strong>iji <strong>i</strong>s <strong>J</strong>ust
+        <strong>I</strong>mageJ, with extras. It is a distribution of ImageJ with
+        many plugins useful for scientific image analysis in fields such as life
+        sciences. It is actively maintained, with updates released
+        often.<br><br>We recommend Fiji as the preferred version of ImageJ.</td>
+      <td><a href="User:Schindelin#A_short_story_about_Fiji" title="wikilink">Dec. 2007</a></td>
+      <td>Active</td>
+    </tr>
+    <tr class="odd">
+      <td><img src="/media/Imagej2-icon.png" width="64"/></td>
+      <td><a href="ImageJ2" title="wikilink">ImageJ2</a></td>
+      <td><a href="Contributors" title="wikilink">ImageJ developers</a></td>
+      <td>A new version of ImageJ targeting scientific multidimensional image
+        data. It is a complete rewrite of ImageJ, but includes <a
+        href="ImageJ1" title="wikilink">ImageJ1</a> with a compatibility layer,
+        so that old-style plugins and macros can run the same as always.
+        ImageJ2 provides several significant new features, such as an automatic
+        <a href="updater" title="wikilink">updater</a>, and improved <a
+        href="scripting" title="wikilink">scripting</a> capabilities.</td>
+      <td>Dec. 2009</td>
+      <td>Active</td>
+    </tr>
+    <tr class="even">
+      <td><img src="/media/Imagej1-icon.png" width="64"/></td>
+      <td><a href="ImageJ1" title="wikilink">ImageJ1</a></td>
+      <td>{% include person content='Rasband' %}</td>
+      <td>A stable version of ImageJ which has been in development since 1997.
+        It has a strong, established user base, with thousands of plugins and
+        macros for performing a wide variety of tasks.</td>
+      <td>1997</td>
+      <td>Active</td>
+    </tr>
+    <tr class="odd">
+      <td><img src="/media/Imagej1-icon.png" width="64"/></td>
+      <td><a href="ImageJA" title="wikilink">ImageJA</a></td>
+      <td><a href="Contributors" title="wikilink">ImageJ developers</a></td>
+      <td>ImageJA is a project that provides a clean <a href="Git">Git</a>
+        history of ImageJ1, with a proper 'pom.xml' file so that it can be used
+        with Maven without hassles.<br><br>It is what ImageJ2's legacy support
+        uses at its core.</td>
+      <td>Jul. 2005</td>
+      <td>Active</td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td><a href="ImageJFX" title="wikilink">ImageJFX</a></td>
+      <td>{% include person content='cmongis' %}</td>
+      <td>ImageJFX is a new user interface for ImageJ, built using
+        {% include wikipedia title='JavaFX' text='JavaFX' %}.</td>
+      <td>2015</td>
+      <td>Abandoned</td>
+    </tr>
+    <tr class="odd">
+      <td><img src="/media/Imagesxm-icon.png" width="64"/></td>
+      <td><a href="ImageSXM" title="wikilink">ImageSXM</a></td>
+      <td>Steve Barrett</td>
+      <td>Image SXM is a version of NIH Image that has been extended to handle
+        the loading, display and analysis of scanning microscope images.</td>
+      <td>May 1993</td>
+      <td>Active</td>
+    </tr>
+    <tr class="even">
+      <td><img src="/media/Astroimagej.png" width="64"/></td>
+      <td><a href="http://www.astro.louisville.edu/software/astroimagej/">AstroImageJ</a></td>
+      <td><a href="http://www.astro.louisville.edu/john_kielkopf/">John Kielkopf</a></td>
+      <td>AstroImageJ is ImageJ with astronomy plugins and macros installed.</td>
+      <td>Unknown</td>
+      <td>Active</td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td><a href="http://www.rawak.de/ij2x/imagej2x.html">ImageJ2x</a></td>
+      <td><a href="http://rawak.de/">Rawak Software</a></td>
+      <td>ImageJ2x is a fork of ImageJ1, modified to use a Swing interface.</td>
+      <td>Unknown</td>
+      <td>Last update:<br>May 2015</td>
+    </tr>
+    <tr class="even">
+      <th colspan=6>Closed-source variants</th>
+    </tr>
+    <tr class="odd">
+      <td><img src="/media/Eu-hou-logo.png" width="64"/></td>
+      <td><a href="http://www.euhou.net/index.php?option=com_content&amp;task=view&amp;id=7&amp;Itemid=9">SalsaJ</a></td>
+      <td><a href="http://www.euhou.net/">EU-HOU</a></td>
+      <td>SalsaJ is a closed-source fork of ImageJ1 intended for use with
+        professional astronomy images. It was designed to be used in
+        classrooms, and has been localized into over 30 different
+        languages.</td>
+      <td>Unknown</td>
+      <td>Last update:<br>Oct. 2012</td>
+    </tr>
+    <tr class="even">
+      <th colspan=6>Obsolete variants</th>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td><a href="MBF_ImageJ" title="wikilink">MBF ImageJ</a></td>
+      <td>Tony Collins</td>
+      <td>The MBF "ImageJ for Microscopy" bundle (formerly
+        <a href="http://www.uhnres.utoronto.ca/facilities/wcif/imagej/">WCIF
+        ImageJ</a>) is a collection of plugins and macros, collated and
+        organized by the MacBiophotonics facility.<br><br>It went hand in
+        hand with a comprehensive manual describing how to use the bundle
+        with light microscopy image data. It was a great resource by
+        microscopists, for microscopists. Unfortunately, the manual went
+        offline in late 2012. In response, the software team at
+        <a href="LOCI" title="wikilink">LOCI</a> created the
+        <a href="Cookbook" title="wikilink">Cookbook</a> user guide and
+        <a href="update_site" title="wikilink">update site</a>, which
+        includes most of the same plugins.</td>
+      <td>2005</td>
+      <td>Defunct<br>(Last update:<br>Dec. 2009)</td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td><a href="ImageJX" title="wikilink">ImageJX</a></td>
+      <td>{% include person content='Harris' %}</td>
+      <td>ImageJX was created as a means to discuss and explore
+        improvements to ImageJ. There was an
+        <a href="http://groups.google.com/group/imagejx">ImageJX mailing
+        list</a> as well as an ImageJX software prototype. The ImageJX
+        software prototype was a proof of concept—an attempt to
+        reorganize ImageJ's internals to make it more flexible. The
+        prototype demonstrated this flexibility by recasting the program
+        in Swing. The ImageJX project formed the basis of an application
+        to NIH for funding, which is what launched the ImageJ2 project
+        (see above).</td>
+      <td>Mar. 2009</td>
+      <td>Superseded by ImageJ2</td>
+    </tr>
+    <tr class="odd">
+      <td><img src="/media/nih-image-logo.png"/></td>
+      <td><a href="NIH_Image" title="wikilink">NIH Image</a></td>
+      <td>{% include person content='Rasband' %}</td>
+      <td>NIH Image is a public domain image processing and analysis
+        program for the Macintosh. It is the direct predecessor of ImageJ,
+        and is no longer under active development (though see ImageSXM
+        above).</td>
+      <td>1993 or earlier</td>
+      <td>Superseded by ImageJ</td>
+    </tr>
+  </tbody>
+</table>
 
 History
 -------
