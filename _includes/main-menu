@@ -1,4 +1,3 @@
-<div id="sticky-menu">
 <div class="menu">
 <ul>
 <center><b>ImageJ Documentation</b></center>
@@ -230,5 +229,4 @@
 {% include menu-section-end %} <!-- Help -->
 
 </ul>
-</div>
 </div>
