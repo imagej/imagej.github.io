@@ -3151,6 +3151,77 @@ input, select, textarea {
 		font-size: 15px;
 	}
 }
+/* plugin menu sidebar */
+
+@media screen and (min-width: 780px) {
+	.left-menu {
+		position: absolute;
+		top: 223px;
+		left: 10px;
+		font-size: 0.75em;
+		width: 240px;
+		float: left;
+	}
+
+	.left-menu ul {
+			margin: 0;
+			padding-left: 1.4em;
+			border-left: 1px solid gray;
+			list-style-type: none;
+			line-height: 20px;
+	}
+
+	.left-menu > ul {
+			border: none;
+			padding: 20px 40px 20px 40px;
+	}
+
+	.left-menu a {
+			color: black;
+	}
+
+	.left-menu ul li {
+			margin-bottom: 0px;
+	}
+
+	.left-menu li {
+		margin: 10px 0;
+	}
+
+	.left-menu summary{
+		outline:none;
+	}
+
+	.left-menu summary.li {
+		padding-left: 1.4em;
+	}
+
+	.left-menu hr {
+		border-bottom: solid 1px #000000;
+		margin: 0.5em -10px 0 0;
+	}
+
+	.left-menu details>summary {
+
+		list-style: none;
+	}
+
+	.left-menu summary::-webkit-details-marker {
+		display: none
+	}
+
+	.left-menu details > summary::after {
+		content: ">";
+		font-size: 15px;
+		position: absolute;
+		right: 30px;
+	}
+
+	.left-menu details[open] summary:after {
+		content: " ∨";
+		font-size: 15px;
+	}
+}
 
 /* User box */
 
@@ -3196,12 +3267,12 @@ input, select, textarea {
 	.sidebox-right {
 		float: right;
 		width: 40%;
-		border: 1px solid #ccc;
+		border: 0px solid #ccc;
 		padding: 15px !important;
 		margin-top: 1em;
 		margin-bottom: 2em;
 		margin-left: 1em;
-		background-color: #ffefbe;
+		background-color: white;
 		border-radius: .75em;
 		box-shadow: 4px 4px 4px #CCC;
 	}
