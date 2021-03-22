@@ -12,7 +12,7 @@ ImageJ has been extended with thousands of {% include wikipedia title='Plug-in (
 Available plugins
 -----------------
 
-{% include biginfo-box content='You can browse the [list of available plugins](Category_Plugins).' %}
+{% include biginfo-box content='You can browse the [list of available plugins](plugin-list).' %}
 
 Tiers of plugins
 ----------------
