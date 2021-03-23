@@ -150,32 +150,32 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2.25em;
+		font-size: 1.75em;
 		line-height: 1.35em;
 	}
 
 	h2 {
-		font-size: 2em;
+		font-size: 1.25em;
 		line-height: 1.35em;
 	}
 
 	h3 {
-		font-size: 1.35em;
+		font-size: 1.05em;
 		line-height: 1.5em;
 	}
 
 	h4 {
-		font-size: 1.25em;
-		line-height: 1.5em;
-	}
-
-	h5 {
 		font-size: 0.9em;
 		line-height: 1.5em;
 	}
 
-	h6 {
+	h5 {
 		font-size: 0.7em;
+		line-height: 1.5em;
+	}
+
+	h6 {
+		font-size: 0.5em;
 		line-height: 1.5em;
 	}
 
@@ -3091,7 +3091,6 @@ input, select, textarea {
 .sidebar-left {
 	position: absolute;
 	left: 0px;
-	top-margin: 223px;
 }
 
 /* Menu */
