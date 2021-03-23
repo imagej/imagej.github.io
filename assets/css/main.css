@@ -3079,17 +3079,29 @@ input, select, textarea {
 		.sidebar {padding-top: 15px;}
 		.sidebar a {font-size: 18px;}
 	}
+/* Sidebar Right */
+
+.sidebar-right {
+	position: absolute;
+	right: 10px;
+}
+
+/* Sidebar Left*/
+
+.sidebar-left {
+	position: absolute;
+	left: 0px;
+	top-margin: 223px;
+}
 
 /* Menu */
 
 @media screen and (min-width: 780px) {
 	.menu {
-		position: absolute;
-		top: 223px;
-		right: 10px;
 		font-size: 0.75em;
 		width: 240px;
 		float: right;
+		top: 200;
 	}
 
 	.menu ul {
