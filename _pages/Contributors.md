@@ -14,16 +14,16 @@ description: test description
 -   For information on ""citing"" these projects, see [Citing](Citing).' %}
 
 
-== Who we are ==
+# Who we are
 
 <div style="font-size: small">
 
 Note: This list is only irregularly updated.
 
 </div>
-<div style="float: left">
 
-###Principal investigators
+
+### Principal investigators
 
 -   {% include person content='Eliceiri' %}[1] (ImageJ, Fiji)
 -   {% include person content='Tomancak' %}[2] (Fiji)
@@ -54,8 +54,7 @@ Note: This list is only irregularly updated.
 -   {% include person content='StephanP' %}[23][24]
 -   {% include person content='Saalfeld' %}[25][26]
 
-</div>
-<div style="float: left">
+
 
 ### {% include logo content='Fiji' size='32px' %}[Fiji](Fiji)
 
@@ -87,8 +86,7 @@ Note: This list is only irregularly updated.
 -   {% include person content='Albertcardona' %}[51][52] (lead)
 -   {% include person content='Saalfeld' %}[53][54]
 
-</div>
-<div style="float: left">
+
 
 ### {% include logo content='SCIFIO' size='32px' %}[SCIFIO](SCIFIO)
 
@@ -114,12 +112,11 @@ Note: This list is only irregularly updated.
 -   {% include person content='jburel' %}[70] (co-lead)
 -   See also [OME Teams](http://openmicroscopy.org/site/about/who-ome)
 
-</div>
+
 
 {% include clear%}
 
 
-<div style="float: left">
 
 ### Plugin maintainers
 
@@ -129,8 +126,7 @@ The specific plugin maintainers can be found at the [ maintainer page](Maintaine
 
 Our deep thanks to {% include person content='Rasband' %}, author of [ImageJ1](ImageJ1), for all his support and patience!
 
-</div>
-<div style="float: left">
+
 
 ### Institutions
 
@@ -178,7 +174,3 @@ Our deep thanks to {% include person content='Rasband' %}, author of [ImageJ1](I
 [21] [HHMI Janelia Research Campus](http://janelia.org/)
 
 [22] [Berlin Institute of Medical Systems Biology (BIMSB)](https://www.mdc-berlin.de/13800178/en/bimsb) of the [Max Delbrück Center (MDC)](https://www.mdc-berlin.de/en)
-
-
-
-</div>
