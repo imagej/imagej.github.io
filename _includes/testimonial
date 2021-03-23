@@ -20,7 +20,7 @@
 {% assign person = include.person %}
 {% endif %}
 
-<div id="testimonial">
+<div class="testimonial">
     <table class="table-OS-info">
         <tbody>
             <tr>
