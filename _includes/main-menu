@@ -1,7 +1,7 @@
 <div id="sidebar-right">
 <div class="menu">
 <ul>
-<center><b>ImageJ Documentation</b></center>
+<center><strong><h3>ImageJ Documentation</h3></strong></center>
 <hr>
 {% include menu-section title="About" %}
   {% include menu-item title="ImageJ" link="ImageJ" %}
