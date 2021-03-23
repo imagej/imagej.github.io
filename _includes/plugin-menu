@@ -5,90 +5,94 @@
 <hr>
 {% include menu-section title="Analyze" %}
   {% include menu-item title="Classifaction" link="/plugin-list.html#Analyze_.3E_Classification" %}
-  {% include menu-item title="Colocalization" link="/Plugins_Menu.html#Analyze_.3E_Colocalization" %}
-  {% include menu-item title="Local Thickness" link="/Plugins_Menu.html#Analyze_.3E_Local_Thickness" %}
-  {% include menu-item title="QuickPALM" link="/Plugins_Menu.html#Analyze_.3E_QuickPALM" %}
-  {% include menu-item title="Tools" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Optic Flow" link="/Plugins_Menu.html#Analyze_.3E_Optic_Flow" %}
-  {% include menu-item title="TopoJ" link="/Plugins_Menu.html#Analyze_.3E_TopoJ" %}
+  {% include menu-item title="Colocalization" link="/plugin-list.html#Analyze_.3E_Colocalization" %}
+  {% include menu-item title="Local Thickness" link="/plugin-list.html#Analyze_.3E_Local_Thickness" %}
+  {% include menu-item title="QuickPALM" link="/plugin-list.html#Analyze_.3E_QuickPALM" %}
+  {% include menu-item title="Tools" link="/plugin-list.html#Analyze_.3E_Tools" %}
+  {% include menu-item title="Optic Flow" link="/plugin-list.html#Analyze_.3E_Optic_Flow" %}
+  {% include menu-item title="TopoJ" link="/plugin-list.html#Analyze_.3E_TopoJ" %}
 {% include menu-section-end %}
 
 {% include menu-section title="Edit" %}
-  {% include menu-item title="Selection" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+  {% include menu-item title="Edit" link="/plugin-list.html#Edit" %}
+  {% include menu-item title="Selection" link="/plugin-list.html#Edit_.3E_Selection" %}
 {% include menu-section-end %}
 
 {% include menu-section title="File" %}
-  {% include menu-item title="Import" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Import QuickPALM" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="New" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Open Samples" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Save As" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+  {% include menu-item title="Import" link="/plugin-list.html#File_.3E_Import" %}
+  {% include menu-item title="Import QuickPALM" link="/plugin-list.html#File_.3E_Import_.3E_QuickPALM" %}
+  {% include menu-item title="New" link="/plugin-list.html#File_.3E_New" %}
+  {% include menu-item title="Open Samples" link="/plugin-list.html#File_.3E_Open_Samples" %}
+  {% include menu-item title="Save As" link="/plugin-list.html#File_.3E_Save_As" %}
 {% include menu-section-end %}
 
 {% include menu-section title="Help" %}
-  {% include menu-item title="About Plugins" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+  {% include menu-item title="General Help" link="/plugin-list.html#Help" %}
+  {% include menu-item title="About Plugins" link="/plugin-list.html#Help_.3E_About_Plugins" %}
 {% include menu-section-end %}
 
   {% include menu-section title="Image" %}
-    {% include menu-item title="Adjust" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="Annotate" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="Color" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="Drawing" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="Hyperstacks" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="Selection" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+    {% include menu-item title="Adjust" link="/plugin-list.html#Image_.3E_Adjust" %}
+    {% include menu-item title="Annotate" link="/plugin-list.html#Image_.3E_Annotate" %}
+    {% include menu-item title="Color" link="/plugin-list.html#Image_.3E_Color" %}
+    {% include menu-item title="Drawing" link="/plugin-list.html#Image_.3E_Drawing" %}
+    {% include menu-item title="Hyperstacks" link="/plugin-list.html#Image_.3E_Hyperstacks" %}
+    {% include menu-item title="Selection" link="/plugin-list.html#Image_.3E_Selection" %}
     {% include menu-section title="Stacks" %}
-      {% include menu-item title="Stacks" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-      {% include menu-item title="Tools_" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-      {% include menu-item title="View5D" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+      {% include menu-item title="Stacks" link="/plugin-list.html#Image_.3E_Stacks" %}
+      {% include menu-item title="Tools_" link="/plugin-list.html#Image_.3E_Stacks_.3E_Tools" %}
+      {% include menu-item title="View5D" link="/plugin-list.html#Image_.3E_Stacks_.3E_View5D" %}
       {% include menu-section-end %}
-    {% include menu-item title="About Plugins" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+    {% include menu-item title="Video Editing" link="/plugin-list.html#Image_.3E_Video_Editing" %}
   {% include menu-section-end %}
 
 {% include menu-section title="Plugins" %}
-  {% include menu-item title="Analyze" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+  {% include menu-item title="Analyze" link="/plugin-list.html#Plugins_.3E_Analyze" %}
   {% include menu-section title="Examples" %}
-    {% include menu-item title="Examples" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="Command Launchers" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="CoverMaker" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="Track EM2 Example Scripts" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+    {% include menu-item title="Examples" link="/plugin-list.html#Plugins_.3E_Examples" %}
+    {% include menu-item title="Command Launchers" link="/plugin-list.html#Plugins_.3E_Examples_.3E_Command_Launchers" %}
+    {% include menu-item title="CoverMaker" link="/plugin-list.html#Plugins_.3E_Examples_.3E_CoverMaker" %}
+    {% include menu-item title="Track EM2 Example Scripts" link="/plugin-list.html#Plugins_.3E_Examples_.3E_TrakEM2_Example_Scripts" %}
     {% include menu-section-end %}
   {% include menu-section title="Feature Extraction" %}
-    {% include menu-item title="Feature Extraction" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="FeatureJ" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+    {% include menu-item title="Feature Extraction" link="/plugin-list.html#Plugins_.3E_Feature_Extraction" %}
+    {% include menu-item title="FeatureJ" link="/plugin-list.html#Plugins_.3E_Feature_Extraction_.3E_FeatureJ" %}
     {% include menu-section-end %}
-  {% include menu-item title="Image5D" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Integral Image Filters" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="LOCI" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Landmarks" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Macros" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Optic Flow" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Process" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+  {% include menu-item title="Image5D" link="/plugin-list.html#Plugins_.3E_Image5D" %}
+  {% include menu-item title="Integral Image Filters" link="/plugin-list.html#Plugins_.3E_Integral_Image_Filters" %}
+  {% include menu-item title="LOCI" link="/plugin-list.html#Plugins_.3E_LOCI" %}
+  {% include menu-item title="Landmarks" link="/plugin-list.html#Plugins_.3E_Landmarks" %}
+  {% include menu-item title="Macros" link="/plugin-list.html#Plugins_.3E_Macros" %}
+  {% include menu-item title="Optic Flow" link="/plugin-list.html#Plugins_.3E_Optic_Flow" %}
+  {% include menu-item title="Process" link="/plugin-list.html#Plugins_.3E_Process" %}
   {% include menu-section title="Registration" %}
-    {% include menu-item title="Registration" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="Elastic" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="SPIM_Registration" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="SPIM-Utilities" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="SPIM-Deprecated" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+    {% include menu-item title="Registration" link="/plugin-list.html#Plugins_.3E_Registration" %}
+    {% include menu-item title="Elastic" link="/plugin-list.html#Plugins_.3E_Registration_.3E_Elastic" %}
+    {% include menu-item title="SPIM_Registration" link="/plugin-list.html#Plugins_.3E_SPIM_Registration" %}
+    {% include menu-item title="SPIM-Utilities" link="/plugin-list.html#Plugins_.3E_SPIM_Registration_.3E_Utilities" %}
+    {% include menu-item title="SPIM-Deprecated" link="/plugin-list.html#Plugins_.3E_SPIM_Registration_.3E_deprecated" %}
     {% include menu-section-end %}
-  {% include menu-item title="Scripting" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Segmentation" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Stacks" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Tracking" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+  {% include menu-item title="Scripting" link="/plugin-list.html#Plugins_.3E_Scripting" %}
+  {% include menu-item title="Segmentation" link="/plugin-list.html#Plugins_.3E_Segmentation" %}
+  {% include menu-item title="Skeleton" link="/plugin-list.html#Plugins_.3E_Skeleton" %}
+  {% include menu-item title="Stacks" link="/plugin-list.html#Plugins_.3E_Stacks" %}
+  {% include menu-item title="Stitching" link="/plugin-list.html#Plugins_.3E_Stitching" %}
+  {% include menu-item title="Tracking" link="/plugin-list.html#Plugins_.3E_Tracking" %}
   {% include menu-section title="Transform" %}
-    {% include menu-item title="Transform" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="TransformJ" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+    {% include menu-item title="Transform" link="/plugin-list.html#Plugins_.3E_Transform" %}
+    {% include menu-item title="TransformJ" link="/plugin-list.html#Plugins_.3E_Transform_.3E_TransformJ" %}
     {% include menu-section-end %}
     {% include menu-section title="Utilities" %}
-    {% include menu-item title="Utilities" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="Debugging" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-    {% include menu-item title="Fiji" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+    {% include menu-item title="Utilities" link="/plugin-list.html#Plugins_.3E_Utilities" %}
+    {% include menu-item title="Debugging" link="/plugin-list.html#Plugins_.3E_Utilities_.3E_Debugging" %}
+    {% include menu-item title="Fiji" link="/plugin-list.html#Plugins_.3E_Utilities_.3E_Fiji" %}
     {% include menu-section-end %}
 {% include menu-section title="Process" %}
-  {% include menu-item title="Process" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Filters" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Morphology" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Noise" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
-  {% include menu-item title="Noise > RandomJ" link="/Plugins_Menu.html#Analyze_.3E_Tools" %}
+  {% include menu-item title="Process" link="/plugin-list.html#Process" %}
+  {% include menu-item title="Filters" link="/plugin-list.html#Process_.3E_Filters" %}
+  {% include menu-item title="Morphology" link="/plugin-list.html#Process_.3E_Morphology" %}
+  {% include menu-item title="Noise" link="/plugin-list.html#Process_.3E_Noise" %}
+  {% include menu-item title="Noise > RandomJ" link="/plugin-list.html#Process_.3E_Noise_.3E_RandomJ" %}
   {% include menu-section-end %}
 {% include menu-section-end %}
 
