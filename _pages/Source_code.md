@@ -56,7 +56,7 @@ Javadocs
 {% include javadocsection%}
 
 
-Running ImageJ1 unit tests
---------------------------
+### Running ImageJ1 unit tests
+
 
 We have written a substantial number of unit tests to exercise [ImageJ 1.x](ImageJ_1.x) functionality. See the [Unit tests for ImageJ1](Unit_tests_for_ImageJ1) page for more information.
