@@ -32,8 +32,10 @@
 | Website | [{{website}}]({{website}}) |
 {% endif %}
 {% endcapture %}
-
+<div class="sidebar-left">
 <div class="userbox" markdown="1">
 <center><strong><h3>{{include.name | strip}}</h3></strong></center>
+<hr>
 {{user-content}}
+</div>
 </div>

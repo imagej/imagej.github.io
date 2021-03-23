@@ -3090,7 +3090,7 @@ input, select, textarea {
 
 .sidebar-left {
 	position: absolute;
-	left: 0px;
+	left: 10px;
 }
 
 /* Menu */
@@ -3236,12 +3236,18 @@ input, select, textarea {
 
 /* User box */
 
+	.userbox {
+		font-size: 0.75em;
+		width: 240px;
+		overflow: none;
+	}
+
 	.userbox h3 {
 		margin: 0 0 0.5em 0 !important;
 	}
 
 	.userbox table {
-		background-color: #f9f9f9;
+		background-color: #FFFFFF;
 		border-collapse: collapse;
 		table-layout: fixed;
 		width: 100%;
@@ -3273,6 +3279,10 @@ input, select, textarea {
 		padding: 0 0.5em 0 0.5em;
 	}
 
+	.userbox hr {
+		border-bottom: solid 1px #000000;
+		margin: 0.5em -0.1em 0 0;
+	}
 /* Sidebox */
 
 	.sidebox-right {
