@@ -17,11 +17,21 @@ For more information on colocalisation and for how to correctly capture quantita
 
 ### Do state the spatial resolution explicitly!
 
-The {% include wikipedia title='Pauli exclusion principle' text='Pauli exclusion principle'%} states that two particles cannot have the same quantum numbers so they cannot be in the same place. So, actually nothing is "really" colocalised. At the other extreme, a universe of one voxel (not cubic of course) is completely colocalised - everything is inside it. Practically, our situation lies between the two extremes. We must colocalise at some defined and explicit spatial scale: In our case the optical resolution or image pixel/voxel spacing, whichever is the larger value in nm, micrometers, mm, meters, km, etc. The colocalization measurement we make only means anything in relation to the spatial scale we are working at, so it needs to be explicitly stated. You can find more details about optical resolution and image pixel spacing in the following sections.
+The {% include wikipedia title='Pauli exclusion principle' text='Pauli exclusion principle'%} states that two particles cannot have the same quantum numbers so they cannot be in the same place. So, actually nothing is "really" colocalised. At the other extreme, a universe of one voxel (not cubic of course) is completely colocalised - everything is inside it. Practically, our situation lies between the two extremes. We must colocalise at some defined and explicit spatial scale: In our case the optical resolution or image pixel/voxel spacing, whichever is the larger value in nm, micrometers, mm, meters, km, etc. The colocalization measurement we make only means anything in relation to the spatial scale we are working at, so it needs to be explicitly stated. Additionally, the spatial resolution of your image must be sufficient to actually support your hypothesis. You can find more details about optical resolution and image pixel spacing in the "Notes and precautions" section below.
 
-### Should I analyze 2D or 3D images?
+### "Color" doesn't matter
 
-Cells, and everything within them and outside of them, exist and relate to one another in 3 spatial dimensions. Whenever possible you should perform 3D colocalization analyses. You can even evaluate 3D colocalization over time in living cells/systems (4D colocalization anlaysis) for even more comprehensive results. 
+In the majority of fluorescence microscopy images, all the "colors" of a multi-channel image are captured using a monochromatic detector that doesn't know what color the photons that hit it are; that is determined by the fluorescence emission filters we use. Hence, any colors displayed are false. These false colors are only useful to tell which channel is which. If I want to show DAPI in green and EGFP as magenta, there is nothing "wrong" about that.
+
+When considering colocalization, too often composite images of red and green channels are considered sufficient. This is plain wrong. The problems with red/green merge images, aside from obvious issues with red-green colour-blind people, is that the perception of human eyes and brain can be fooled very easily. Just have a look at this image:
+
+{% include image-center name="SpiralsRGY.png" image-path="/media/SpiralsRGY.png" %}
+
+Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling {% include bc content='File | Open Samples | [Spirals (Macro)](Spirals_Macro "wikilink")'%} in Fiji.
+
+So... now, how do you feel about determining colocalization by looking for yellow blobs? Doesn't make much sense does it? We notice that the shades and hues of colours look different according to what other colours they are next to! So, you need to measure something from the pixel values, not simply subjectively "look at" a red/green colour merge image.
+
+An even better reason to always quantitatively evaluate colcoalization is that this actually tells you what you are looking for - the correlation (or not) between 2 channels of pixels over space. 
 
 ## Methods of colocalization analysis
 
@@ -41,19 +51,7 @@ Here are just two of many colocalization coefficients to express the intensity c
 
 These coefficients measure the amount or degree of colocalization, or rather correlation and co-occurrence respectively (but should not be expressed as % values, because that is not how they are defined). But if there is nothing to compare them to, what do they mean? A statistical significance test was derived by Costses to evaluate the probability that the measured value of Pearson's correlation, r between the two colour channels is significantly greater than values of r that would be calculated if there was only random overlap of the same information. This test is performed by randomly scrambling the blocks of pixels (instead of individual pixels, because each pixel's intensity is correlated with its neighboring pixels) in one image, and then measuring the correlation of this image with the other (unscrambled) image. You can get more details in [Costes et al.](/media/Costes etalColoc.pdf) The result of this tests tell us if the Pearsons r and split Manders' coefficients we measure are better than pure chance or not.
 
-Other coefficients include ranked correlations such as Spearman and Kendal's Tau, and Li's ICQ. Some others are described in the literature, but that have been refuted as insensitive, such as the overlap coefficient from the Manders paper, which [J. Adler et al.](/media/Adler et al-2010-Cytometry Part A.pdf) showed to have large problems in interpretation compared to Pearson's r and Manders' split coefficients.
-
-##### Why scatter plots instead of colour merge images?
-
-Too often, composite images of red and green channels are considered sufficient to demonstrate colocalisation. This is plain wrong. The problems with red/green merge images, aside from obvious issues with red-green colour-blind people, is that the perception of human eyes and brain can be fooled very easily. Just have a look at this image:
-
-{% include image-center name="SpiralsRGY.png" image-path="/media/SpiralsRGY.png" %}
-
-Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling {% include bc content='File | Open Samples | [Spirals (Macro)](Spirals_Macro "wikilink")'%} in Fiji.
-
-So... now, how do you feel about determining colocalization by looking for yellow blobs? Doesn't make much sense does it? We notice that the shades and hues of colours look different according to what other colours they are next to! So, you need to measure something from the pixel values, not simply subjectively "look at" a red/green colour merge image.
-
-An even better reason to always look at scatterplots / 2D histograms / cytofluorograms is that they actually show the thing you are looking for and talking about - the correlation (or not) between the intensities of the 2 colour channels of the pixels over space.
+The example below (Thanks Tony Collins for this nice figure), generally demonstrates the type of results generated by one to one pixel matching analyses. 
 
 {% include gallery content=
 "
@@ -64,7 +62,9 @@ An even better reason to always look at scatterplots / 2D histograms / cytofluor
 "
 %}
 
-In the scatterplot or 2D Histogram (Thanks Tony Collins for this nice figure) the two intensity values for each pixel or voxel are plotted against each other, and the brighter the colour, the more pixels or voxel have those two intensity values for their two colour channels. Here we see if there is correlation immediately by eye, in the presence of a cloud of information in the middle of the 2D histogram. We can fit that cloud with a linear regression and measure correlation coefficients. After setting thresholds in both colour channels, we see the scatterplot or 2D Histogram is split into 4 areas, quadrants. The contents of each can be used to calculate different colcoalization results.
+In the scatterplot or 2D Histogram the two intensity values for each pixel or voxel are plotted against each other, and the brighter the colour, the more pixels or voxels have those two intensity values for their two colour channels. Here we see if there is correlation immediately by eye, in the presence of a cloud of information in the middle of the 2D histogram. We can fit that cloud with a linear regression and measure correlation coefficients. After setting thresholds in both colour channels, we see the scatterplot or 2D Histogram is split into 4 areas, quadrants. The contents of each can be used to calculate different colcoalization results.
+
+Other coefficients include ranked correlations such as Spearman and Kendal's Tau, and Li's ICQ. Some others are described in the literature, but that have been refuted as insensitive, such as the overlap coefficient from the Manders paper, which [J. Adler et al.](/media/Adler et al-2010-Cytometry Part A.pdf) showed to have large problems in interpretation compared to Pearson's r and Manders' split coefficients.
 
 #### Cross-correlation function based analyses
 
@@ -90,7 +90,7 @@ In object-based colocalization analyses, the image is first [segmented](Segmenta
 
 ### SMLM colocalization analysis
 
-Due to the unique nature of single-molecule localization microscopy images, as a list of localized points rather than a matrix of intensity values, traditional intensity or object-based colocalization techniques are insufficient for their analysis. 
+Due to the unique nature of single-molecule localization microscopy images, as a list of localized points rather than a matrix of intensity values, traditional intensity or object-based colocalization techniques are insufficient for their analysis and thus SMLM images have their own unique colcoalization methods. There are presntly two categores of SMLM colcoalization methods, neighboring colocalization and Voronoï-based colcoalization anlaysis.
 
 ## ImageJ plugins for colocalization analysis
 
@@ -139,10 +139,8 @@ Please see the [Coloc2](Coloc2) page for complete instructions on using the Colo
     -   Overlap coefficient
     -   k1 & k2 coefficients
     -   Manders' coefficient
-
 -   Generating commonly used visualizations:
     -   Cytofluorogram
-
 -   Having access to more recently published methods:
     -   Costes' automatic threshold
     -   Li's ICA
@@ -161,32 +159,44 @@ See the [Colocalization Finder web page](http://punias.free.fr/ImageJ/colocaliza
 
 ## Sample datasets
 
-Let's open a sample data set that we know should have very good colocalization because the 2 subunits of a dimeric protein are stained with green and red dyes respectively. The methods of Pearson, Manders, Costes and Li should work very well for this sample, but maybe we can see some problems with the data? Maybe we can decide if the data is suitable for this analysis or not?
+This first sample data set that has very good colocalization because the 2 subunits of a dimeric protein are stained with green and red dyes respectively. The methods of Pearson, Manders, Costes and Li should work very well for this sample, but this dataset fails many of the quality checks addressed in the section below.
 
-**Open this sample data file [colocsample1bRGB\_BG.tif](https://fiji.sc/samples/colocsample1bRGB_BG.tif).** Then use the "Image > Color > Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
+[colocsample1bRGB\_BG.tif](https://fiji.sc/samples/colocsample1bRGB_BG.tif): Use the "Image > Color > Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
 
-If you like, you can change the look up tables of the images (LUTs) so one is "green" and one is "magenta". Of course the colors here are always false. These false colors are only useful to tell which channel is which. The optoelectronic detectors we use only see photons, and don't know what color they are; that is determined by the fluorescence emission filters we use. There is no such thing as a green dye or a red dye, since they have broad emission spectra not a single wavelength corresponding to a certain "color". If I want to show DAPI in green and EGFP as magenta, there is nothing "wrong" about that.
+In addition to this dataset, Fiji comes pre-loaded with many sample images found under the "File > Open Samples" menu. Of these, there are a few multi-channel images that can be used as inputs in Colocalization plugins (though they don't  necessarily have any spatial correlation between the channels):
 
+- Confocal series
+- Fluorescent Cells
+- Fly Brain
+- HeLa Cells
+- Mitosis (multi-frame image)
+- Neuron (good colcoalization between red and green channel)
+- Organ of corti
+- First instar brain
 
-## Precautions and notes
+## Notes and precautions
+
+### Should I analyze 2D or 3D images?
+
+Cells, and everything within them and outside of them, exist and relate to one another in 3 spatial dimensions. Whenever possible you should perform 3D colocalization analyses. You can even evaluate 3D colocalization over time in living cells/systems (4D colocalization anlaysis) for even more comprehensive results. 
 
 ### Check image data for problems and suitability for analysis
 
-Questions you should ask before attempting colocalisation analysis from 2 colour channel images, using the pixel intensity spatial correlation methods of Manders and Costes:
+Questions you should ask before attempting colocalisation analysis from 2 colour channel images:
 
 1.  Is the image data noisy?
 2.  Has there been lossy compression?
 3.  Is the intensity information saturated / clipped / overexposed?
 4.  Is there a problem with uniform background / detector offset?
-5.  What is the spatial resolution?
+5.  What is the spatial resolution and is it sufficient to support my hypothesis?
 
 To begin with, we should check the images for problems that might make the colocalisation analysis methods fail or be unreliable.
 
-1.  Significant noise (uncertainty in the pixel values - usually from detection of too few photons) means the methods we will use will significantly underestimate the true colocalization, or even completely fail to give the "right" result.
+1.  Significant noise (uncertainty in the pixel values - usually from detection of too few photons) means the methods we will use will significantly underestimate the true colocalization, or even completely fail to give the true result.
 2.  Lossy compression messes up the intensity information of the pixels, causing the colocalization result to be more or less wrong.
 3.  Intensity clipping/saturation is bad news. Pixel intensity correlation measurements rely on the pixel intensities being true and not clipped to 255 when they were really higher! See the [Detect Information Loss](Detect_Information_Loss) tutorial for details on how to detect such problems.
 4.  We should look for wrong offset / high background (since this confuses the auto threshold method, since zero signal is not zero pixel intensity but some larger number)
-5.  Spatial resolution
+5.  Spatial resolution:
 
 The spatial resolution of the images, by definition, determines the spatial resolution that you are measuring colocalization at. The results will be different at different levels of spatial resolution. If the image is one big pixel, everything will colocalize!
 
