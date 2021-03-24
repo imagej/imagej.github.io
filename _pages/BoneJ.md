@@ -26,7 +26,9 @@ This version works with the latest Fiji, and complies with the modern ImageJ [ar
 
 If you use BoneJ in your work please cite:
 
-Domander R, Felder AA, Doube M. 2021 BoneJ2 - refactoring established research software. Wellcome Open Res. **6**. doi:[10.12688/wellcomeopenres.16619.1](https://doi.org/10.12688/wellcomeopenres.16619.1), and include the specific [release](https://github.com/bonej-org/BoneJ2/releases) used in your research, along with the primary sources linked to from the plugin descriptions below.
+> Domander R, Felder AA, Doube M. 2021 BoneJ2 - refactoring established research software. Wellcome Open Res. **6**. doi:[10.12688/wellcomeopenres.16619.1](https://doi.org/10.12688/wellcomeopenres.16619.1)
+
+Include the specific [release](https://github.com/bonej-org/BoneJ2/releases) used in your research, along with the primary sources linked to from the plugin descriptions below.
 
 Installation
 ------------
