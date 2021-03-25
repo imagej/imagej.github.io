@@ -15,7 +15,7 @@ Suppose you are given some images by a colleague, or have some images of your ow
 
 For more information on colocalisation and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalisation analysis, look here: [Image Processing Courses at BioDIP, Dresden](http://www.biodip.de/wiki/Teaching_Material#IPF_Image_Processing_Courses). A recent review is [by Dunn in 2011](http://ajpcell.physiology.org/content/300/4/C723).
 
-### Do state the spatial resolution explicitly!
+### State the resolution explicitly!
 
 The {% include wikipedia title='Pauli exclusion principle' text='Pauli exclusion principle'%} states that two particles cannot have the same quantum numbers so they cannot be in the same place. So, actually nothing is "really" colocalised. At the other extreme, a universe of one voxel (not cubic of course) is completely colocalised - everything is inside it. Practically, our situation lies between the two extremes. We must colocalise at some defined and explicit spatial scale: In our case the optical resolution or image pixel/voxel spacing, whichever is the larger value in nm, micrometers, mm, meters, km, etc. The colocalization measurement we make only means anything in relation to the spatial scale we are working at, so it needs to be explicitly stated. Additionally, the spatial resolution of your image must be sufficient to actually support your hypothesis. You can find more details about optical resolution and image pixel spacing in the "Notes and precautions" section below.
 
@@ -37,11 +37,11 @@ An even better reason to always quantitatively evaluate colcoalization is that t
 
 As there are many different reasons you may perform a colocalization analysis when evaluating your images, and many different microscopy techniques you could have used to acquire those images, there are also many different methods of evaluating colocalization. There is no universal best method, each has its own advantages and disadvantages, but some methods may be better suited for your data or hypothesis. 
 
-### Pixel intensity-based spatial correlation analyses
+### Pixel intensity-based
 
-In intensity-based correlation analyses, the pixel/voxel values in the image are directly used in the evaluation of spatial correlation. 
+In intensity-based correlation analyses, the pixel/voxel values in the image are directly used in the evaluation of spatial correlation. These can be broadly divided into two types: pixel matching colocalization analyses, and cross-correlation function based analyses. 
 
-#### One to one pixel matching analyses
+#### One to one pixel matching
 In pixel matching colocalization analyses, the intensity of a pixel in one channel is evaluated against the corresponding pixel in the second channel of a dual-color image, generally producing a scatterplot from which a correlation coefficient is determined. As these methods are straightforward, work very well with traditional widefield fluorescence imaging, and are very well founded as some of the earliest methods for measuring colocalization, they are very widely used. However, the one to one pixel matching means that there must be overlap of the signal from the two channels to demonstrate positive spatial correlation. This can be problematic for super-resolution microscopy images, where the improved resolution means that even close, strongly-correlated proteins may not produce sufficient overlap after imaging to work with these colocalization methods. Additionally, **it is critical that the spatial resolution is reported when using this method**, as the scale and resolution of the image can affect the results and their interpretation!
 
 Here are just two of many colocalization coefficients to express the intensity correlation of colocalizing objects in each component of a dual-color image:
@@ -66,7 +66,7 @@ In the scatterplot or 2D Histogram the two intensity values for each pixel or vo
 
 Other coefficients include ranked correlations such as Spearman and Kendal's Tau, and Li's ICQ. Some others are described in the literature, but that have been refuted as insensitive, such as the overlap coefficient from the Manders paper, which [J. Adler et al.](/media/Adler et al-2010-Cytometry Part A.pdf) showed to have large problems in interpretation compared to Pearson's r and Manders' split coefficients.
 
-#### Cross-correlation function based analyses
+#### Cross-correlation function
 
 Another type of intensity-based colocalization analyses utilize the [cross-correlation function](https://en.wikipedia.org/wiki/Cross-correlation) (CCF) to evaluate correlation between two channels. Exploring these techniques in the literature can be very confusing as there are effectively two different ways to apply the cross-correlation function to the problem of colocalization, and the distinction between them is often not well delineated in manuscripts discussing these techniques, with no consistent naming convention distinguishing one from the other. The two different ways that the CCF can be evaluated are either as a function of distance (spatial cross-correlation) or time (temporal cross-correlation). While these both use the same root function, they are two very different methodologies that have different imaging requirements, and that provide very different information about your molecules/proteins. 
 
@@ -84,15 +84,15 @@ In temporal cross-correlation two stained molecules are simultaneously monitored
 
 The first, and best known, temporal cross-correlation technique is [fluorescence cross-correlation spectroscopy](https://en.wikipedia.org/wiki/Fluorescence_cross-correlation_spectroscopy) (FCCS). In FCCS a single diffraction limited volume is illuminated with two excitation lasers using a confocal microscope, and the emission of two fluorophores is recorded simultaneously over time. The two resulting fluorescent fluctuation graphs are then cross-correlated to determine if the particles are moving together, indicating an interaction. However, this technique does not need to be limited to a single focal volume, and more recent implementations of temporal cross-correlation apply this same methodology to multi-frame images, effectively evaluating the FCCS at each pixel of the image and averaging it. These image based temporal cross-correlation implementations are usually referred to as image cross-correlation spectroscopy (ICCS), however, this term has also been applied to spatial cross-correlation methods, which can make it very difficult to find the appropriate technique. If you’re ever unsure, the graphs generated from temporal cross-correlation methods will have their x-axis as time (usually labeled as τ or seconds), and not pixels or microns. 
 
-### Object-based overlap analysis
+### Object-based colocalization
 
 In object-based colocalization analyses, the image is first [segmented](Segmentation) to separate the objects of interest from the background for both channels. Colocalization is then evaluated using these binary images, generally by comparing the area/volume of the intersection of the two images to the area/volume of: a) the union of the binary images, b) the difference of the binary images, c) one of the binary images unaltered, or d) a combination of these three. What you compare the intersection against will depend on the exact question being asked. Being able to tailor the analysis to your specific circumstances is one of the biggest advantages to object based-analysis. Additionally, basic object-based analyses can be performed easily without use of a plugin (though some are available to streamline the process): Following [segmentation](Segmentation) of both images, the Image Calculator (Process > Image Calculator…) can be used to generate the intersection (AND operator), difference (difference or subtract operator), and the union (OR or add operator). Once these have be created, they can be analyzed using [particle analysis](Particle_Analysis) to determine the area/volume, or analysis can be redirected to the original intensity data (Analyze > Set Measurements…) to evaluate the original pixel density within the particles. This type of object-based colocalization does require that there is overlap between your objects of interest from each channel. However, plugins have been developed that will perform distance analysis on the original binary images, removing the requirement for overlap between the two channels. 
 
-### SMLM colocalization analysis
+### SMLM colocalization
 
 Due to the unique nature of single-molecule localization microscopy images, as a list of localized points rather than a matrix of intensity values, traditional intensity or object-based colocalization techniques are insufficient for their analysis and thus SMLM images have their own unique colcoalization methods. There are presntly two categores of SMLM colcoalization methods, neighboring colocalization and Voronoï-based colcoalization anlaysis.
 
-## ImageJ plugins for colocalization analysis
+## Plugins for colocalization
 
 There are several plugins available for performing colocalization analysis. In addition to the options described below, see also the [index of pages related to colocalization](Category_Colocalization). 
 
@@ -116,7 +116,7 @@ There are several plugins available for performing colocalization analysis. In a
   - [Coloc-Tesseler](https://github.com/flevet/Coloc-Tesseler) (standalone, not an ImageJ plugin)
   - [ClusDoC]( https://github.com/PRNicovich/ClusDoC) (MatLab plugin)
 
-### Details on commonly used ImageJ colocalization plugins
+### Details on popular ImageJ colocalization plugins
 
 #### Coloc 2
 
@@ -176,11 +176,11 @@ In addition to this dataset, Fiji comes pre-loaded with many sample images found
 
 ## Notes and precautions
 
-### Should I analyze 2D or 3D images?
+### 2D or 3D images?
 
 Cells, and everything within them and outside of them, exist and relate to one another in 3 spatial dimensions. Whenever possible you should perform 3D colocalization analyses. You can even evaluate 3D colocalization over time in living cells/systems (4D colocalization anlaysis) for even more comprehensive results. 
 
-### Check image data for problems and suitability for analysis
+### Check your image quality!
 
 Questions you should ask before attempting colocalisation analysis from 2 colour channel images:
 
