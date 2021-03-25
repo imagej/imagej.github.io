@@ -1,0 +1,82 @@
+/* Menu */
+
+.menu {
+	font-size: 0.85em;
+	width: 240px;
+	float: left;
+}
+
+.menu h3 {
+	text-align: center;
+	font-weight: bold;
+}
+
+.menu ul {
+	margin: 0;
+	border-left: 1px solid gray;
+	list-style-type: none;
+	line-height: 10px;
+}
+
+.menu > ul {
+	border: none;
+	padding: 20px 40px 20px 40px;
+}
+
+.menu a {
+	color: black;
+}
+
+.menu ul li {
+	margin-bottom: 0px;
+}
+
+.menu li {
+	margin: 10px 0;
+}
+
+.menu summary {
+	outline:none;
+}
+
+.menu summary.li {
+	padding-left: 1.4em;
+}
+
+.menu hr {
+	border-bottom: solid 1px gray;
+	margin: 0.5em -10px 0 0;
+}
+
+.menu details>summary {
+
+	list-style: none;
+}
+
+.menu summary::-webkit-details-marker {
+	display: none
+}
+
+.menu details > summary:after {
+	content: "▶";
+	font-size: 12px;
+	position: absolute;
+	left: 200px;
+}
+
+.menu details[open] > summary:after {
+	content: "▼";
+	font-size: 15px;
+	left: 198px;
+}
+
+.toc {
+	position: absolute;
+	right: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .menu {
+    display: none;
+  }
+}

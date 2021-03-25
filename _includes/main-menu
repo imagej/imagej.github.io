@@ -1,17 +1,14 @@
 <div class="sidebar-left">
 <div class="menu">
 <ul>
-<center><strong><h3>ImageJ Documentation</h3></strong></center>
+<h3>ImageJ Documentation</h3>
 <hr>
-{% include menu-section title="About" %}
-  {% include menu-item title="ImageJ" link="ImageJ" %}
+{% include menu-section title="About" link="ImageJ" %}
   {% include menu-item title="Usage" link="Usage" %}
   {% include menu-item title="Contributors" link="Contributors" %}
   {% include menu-item title="Governance" link="Governance" %}
 
-  {% include menu-section title="Licensing" %}
-    {% include menu-item title="Overview" link="Licensing" %}
-
+  {% include menu-section title="Licensing" link="Licensing" %}
     {% include menu-section title="Open Source" %}
       {% include menu-item title="Apache" link="Apache" %}
       {% include menu-item title="BSD" link="BSD" %}
@@ -31,8 +28,7 @@
   {% include menu-item title="Contributing" link="Contributing" %}
   {% include menu-item title="Wish list" link="Wish_list" %}
 
-  {% include menu-section title="Fiji" %}
-    {% include menu-item title="Overview" link="Fiji" %}
+  {% include menu-section title="Fiji" link="Fiji" %}
     {% include menu-item title="Using Fiji" link="Using_Fiji" %}
     {% include menu-item title="Featured Fiji Projects" link="Featured_Fiji_Projects" %}
     {% include menu-item title="Publications" link="Fiji_Publications" %}
@@ -48,8 +44,7 @@
 
 {% include menu-item title="Plugins" link="Plugins" %}
 
-{% include menu-section title="Learn" %}
-  {% include menu-item title="Introduction" link="Introduction" %}
+{% include menu-section title="Learn" link="Introduction" %}
   {% include menu-item title="Getting Started" link="Getting_Started" %}
   {% include menu-item title="User Guides" link="User_Guides" %}
   {% include menu-item title="Tutorials" link="Tutorials" %}
@@ -64,8 +59,7 @@
     {% include menu-item title="Android" link="Android" %}
   {% include menu-section-end %} <!-- Learn/Supported Platforms -->
 
-  {% include menu-section title="File Formats" %}
-    {% include menu-item title="Overview" link="Formats" %}
+  {% include menu-section title="File Formats" link="Formats" %}
     {% include menu-item title="Bio-Formats" link="Bio-Formats" %}
     {% include menu-item title="Video formats" link="Video" %}
     {% include menu-item title="QuickTime" link="QuickTime" %}
@@ -77,8 +71,7 @@
     {% include menu-item title="Opera Flex" link="LuraWave" %}
   {% include menu-section-end %} <!-- Learn/File Formats -->
 
-  {% include menu-section title="Cookbook" %}
-    {% include menu-item title="Introduction and Installation" link="Cookbook" %}
+  {% include menu-section title="Cookbook" link="Cookbook" %}
     {% include menu-item title="Annotating Images" link="Annotating_Images" %}
     {% include menu-item title="Color Image Processing" link="Color_Image_Processing" %}
     {% include menu-item title="Deconvolution" link="Deconvolution" %}
@@ -100,8 +93,7 @@
     {% include menu-item title="Visualization" link="Visualization" %}
   {% include menu-section-end %} <!-- Learn/Techniques -->
 
-  {% include menu-section title="Scripting" %}
-    {% include menu-item title="Overview" link="Scripting" %}
+  {% include menu-section title="Scripting" link="Scripting" %}
     {% include menu-item title="User Input" link="User_input" %}
     {% include menu-item title="Scripting Basics" link="Scripting_basics" %}
     {% include menu-item title="Using Javadocs" link="How_to_use_the_Javadoc" %}
@@ -132,8 +124,7 @@
   {% include menu-section-end %} <!-- Learn/Languages -->
 {% include menu-section-end %} <!-- Learn -->
 
-{% include menu-section title="Development" %}
-  {% include menu-item title="Overview" link="Development" %}
+{% include menu-section title="Development" link="Development" %}
   {% include menu-item title="Philosophy" link="Philosophy" %}
   {% include menu-item title="Architecture" link="Architecture" %}
   {% include menu-item title="Source code" link="Source_code" %}
@@ -186,8 +177,7 @@
     {% include menu-item title="How to extract a subproject" link="How_to_extract_a_subproject" %}
   {% include menu-section-end %} <!-- Development/Git -->
 
-  {% include menu-section title="ImgLib2" %}
-    {% include menu-item title="Overview" link="ImgLib2" %}
+  {% include menu-section title="ImgLib2" link="ImgLib2" %}
     {% include menu-item title="ImgLib2 Benchmarks" link="ImgLib2_Benchmarks" %}
     {% include menu-item title="Architecture" link="Architecture" %}
     {% include menu-item title="FAQ" link="ImgLib2_FAQ" %}
@@ -210,15 +200,13 @@
   {% include menu-section-end %} <!-- Development/ImgLib2 -->
 {% include menu-section-end %} <!-- Development -->
 
-{% include menu-section title="Help" %}
-  {% include menu-item title="Overview" link="Help" %}
+{% include menu-section title="Help" link="Help" %}
   {% include menu-item title="FAQ" link="Frequently_Asked_Questions" %}
   {% include menu-item title="Troubleshooting" link="Troubleshooting" %}
   {% include menu-item title="How to write bug reports" link="Bug_reporting_best_practices" %}
   {% include menu-item title="Report an issue" link="Report_a_Bug" %}
   {% include menu-item title="Editing the ImageJ Wiki" link="Editing_the_Wiki" %}
-  {% include menu-section title="Update Sites" %}
-    {% include menu-item title="Introduction" link="Update_Sites" %}
+  {% include menu-section title="Update Sites" link="Update_Sites"  %}
     {% include menu-item title="Following an update site" link="Following_an_update_site" %}
     {% include menu-item title="Creating your own update site" link="How_to_set_up_and_populate_an_update_site" %}
     {% include menu-item title="ToS for personal update sites" link="Personal_Update_Site_Terms_of_Service" %}

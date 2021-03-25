@@ -12,5 +12,14 @@
 {% else %}
 <details>
 {% endif %}
+{% if {{include.link}} == null %}
 <summary>{{include.title}}</summary>
+{% else %}
+{% assign myurl = {{include.link}} | prepend: "/" %}
+{% if {{page.url}} == {{myurl}} %}
+<summary><b>{{include.title}}</b></summary>
+{% else %}
+<summary><a href="{{include.link}}">{{include.title}}</a></summary>
+{% endif %}
+{% endif %}
 <ul>
