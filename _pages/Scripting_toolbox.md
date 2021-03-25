@@ -9,7 +9,7 @@ description: test description
 
 This page is meant to provide small code snippets as a starting point for writing scripts.
 
-{% include info-box message='"""See also:"""
+{% include info-box message='**See also:**
 
 -   Language-specific scripting pages in the right-hand menu.
 -   [Scripting comparisons](Scripting_comparisons) to compare and contrast the languages.

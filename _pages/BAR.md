@@ -20,7 +20,7 @@ description: test description
 {% endcapture %}
 
 {% capture latest-version%}
-"""1.1.13 March 2017""" ({% include github org='tferr' repo='Scripts/releases' label='Changelog' %})
+**1.1.13 March 2017** ({% include github org='tferr' repo='Scripts/releases' label='Changelog' %})
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji' name='BAR' maintainer=maintainer source=source released='June 2014' latest-version=latest-version category='[Analysis](Category_Analysis), [Annotation](Category_Image_annotation), [Filtering](Category_Filtering), [Segmentation](Category_Segmentation), [Scripting](Category_Scripting)' %}
 

@@ -1045,14 +1045,14 @@ https://aws1.discourse-cdn.com/business4/uploads/imagej/original/3X/2/3/237d4f70
 
 
     def spots_from_results_table( results_table, frame_interval ):
-        """
+        **
         Creates a spot collection from a results table in ImageJ.
         Requires the current results table, in which the results from
         particle analysis should be. We need at least the center
         of mass, the area and the slice to be specified there.
         We also query the frame interval to properly generate the
         POSITION_T spot feature.
-        """
+        **
 
         frames = results_table.getColumnAsDoubles( results_table.getColumnIndex( 'Slice' ) )
         xs = results_table.getColumnAsDoubles( results_table.getColumnIndex( 'XM' ) )
@@ -1078,11 +1078,11 @@ https://aws1.discourse-cdn.com/business4/uploads/imagej/original/3X/2/3/237d4f70
 
 
     def create_trackmate( imp, results_table ):
-        """
+        **
         Creates a TrackMate instance configured to operated on the specified
         ImagePlus imp with cell analysis stored in the specified ResultsTable
         results_table.
-        """
+        **
 
         cal = imp.getCalibration()
 
@@ -1151,9 +1151,9 @@ https://aws1.discourse-cdn.com/business4/uploads/imagej/original/3X/2/3/237d4f70
 
 
     def process( trackmate ):
-        """
+        **
         Execute the full process BUT for the detection step.
-        """
+        **
         # Check settings.
         ok = trackmate.checkInput()
         # Initial filtering
@@ -1182,14 +1182,14 @@ https://aws1.discourse-cdn.com/business4/uploads/imagej/original/3X/2/3/237d4f70
 
 
     def display_results_in_GUI( trackmate ):
-        """
+        **
         Creates and show a TrackMate GUI to configure the display
         of the results.
 
         This might not always be desriable in e.g. batch mode, but
         this allows to save the data, export statistics in IJ tables then
         save them to CSV, export results to AVI etc...
-        """
+        **
 
         gui = TrackMateGUIController( trackmate )
 
@@ -1210,7 +1210,7 @@ https://aws1.discourse-cdn.com/business4/uploads/imagej/original/3X/2/3/237d4f70
 
 
     def color_rois_by_track( trackmate, rm, results_table ):
-        """
+        **
         Colors the ROIs stored in the specified ROIManager rm using a color
         determined by the track ID they have.
 
@@ -1220,7 +1220,7 @@ https://aws1.discourse-cdn.com/business4/uploads/imagej/original/3X/2/3/237d4f70
         ROI in the ROIManager corresponds to the line in the ResultsTable it
         generated. So any changes to the ROIManager or the ResultsTable is
         likely to break things.
-        """
+        **
 
         rt = ResultsTable.getResultsTable()
         model = trackmate.getModel()

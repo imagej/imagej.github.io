@@ -15,7 +15,7 @@ A very easy way of improving registration quality in datasets in which translati
 
 We support *virtual* splitting of datasets into smaller blocks in BigStitcher. The original dataset will not be modified and data do not have to be resaved, as we just *wrap* the original dataset to produce a split version.
 
-{% include info-box content='While all functionality of BigStitcher is available for split datasets, computationally intensive steps such as phase correlation (Stitching) or interest point detection may take much longer in the virtually split images. We therefore recommend to perform Stitching, Interest Point detection and/or MultiView reconstruction on the whole images first and then run a second round of ICP refinement with existing interest points after splitting (The interest points detected in the whole images are carried over to the split images). This way, you can """improve registration quality with minimal computational overhead."""' %}
+{% include info-box content='While all functionality of BigStitcher is available for split datasets, computationally intensive steps such as phase correlation (Stitching) or interest point detection may take much longer in the virtually split images. We therefore recommend to perform Stitching, Interest Point detection and/or MultiView reconstruction on the whole images first and then run a second round of ICP refinement with existing interest points after splitting (The interest points detected in the whole images are carried over to the split images). This way, you can **improve registration quality with minimal computational overhead.**' %}
 
 Usage
 -----
@@ -33,7 +33,7 @@ Here, you can set
 -   **New Image Size** to specify the approximate size of the split images in X, Y and Z, in pixels.
 -   **Overlap** of the split images in X, Y and Z, in pixels.
 
-{% include info-box content='The specified """New Image Sizes""" are only guidelines, the final result may deviate from them. The """Overlaps""" will be respected exactly, however.' %}
+{% include info-box content='The specified **New Image Sizes** are only guidelines, the final result may deviate from them. The **Overlaps** will be respected exactly, however.' %}
 
 -   The path of the **New XML File** to which the split dataset will be saved.
 -   **Split Result** Here, you can select

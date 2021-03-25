@@ -15,7 +15,7 @@ description: test description
 
 {% capture blurb%}
   
-"""Apache Maven""" is a {% include wikipedia title='Convention over configuration' text='convention over configuration'%} build automation tool.
+**Apache Maven** is a {% include wikipedia title='Convention over configuration' text='convention over configuration'%} build automation tool.
 {% endcapture %}
 {% include minibox logo='Maven-icon.png' size='51px' blurb=blurb %}[ImageJ](ImageJ), [Fiji](Fiji) and other [SciJava](SciJava) projects use [Maven](https://maven.apache.org/) for their project infrastructure.
 

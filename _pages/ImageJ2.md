@@ -18,12 +18,12 @@ ImageJ2"s Mission
 
 </h2>
 
--   """Design""" the next generation of ImageJ, driven by the needs of the community.
--   """Collaborate""" across organizations, fostering open development through sharing and reuse.
--   """Broaden""" ImageJ"s usefulness and relevance across many disciplines of the scientific community.
--   """Maintain""" backwards compatibility with existing ImageJ functionality.
--   """Unify""" online resources to a central location for the ImageJ community.
--   """Lead""" ImageJ development with a clear vision.
+-   **Design** the next generation of ImageJ, driven by the needs of the community.
+-   **Collaborate** across organizations, fostering open development through sharing and reuse.
+-   **Broaden** ImageJ"s usefulness and relevance across many disciplines of the scientific community.
+-   **Maintain** backwards compatibility with existing ImageJ functionality.
+-   **Unify** online resources to a central location for the ImageJ community.
+-   **Lead** ImageJ development with a clear vision.
 
 See also [these presentation slides about ImageJ](https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/#/4) .' %}
 

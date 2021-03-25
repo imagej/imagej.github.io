@@ -274,7 +274,7 @@ The maximum value of sampled intersections, i.e., the maximum in a linear \[*N* 
 
 See also [Critical value](#CriticalValue "wikilink")
 
-{% include tip tip='"""""Max inters.""""": By default only the absolute maximum is noted. However, it is possible to apply peak detection techniques to the profile to retrieve other sites of high density branching. See [Complementary Tools](#Complementary_Tools "wikilink") for more details.' %}
+{% include tip tip='**""Max inters.**"": By default only the absolute maximum is noted. However, it is possible to apply peak detection techniques to the profile to retrieve other sites of high density branching. See [Complementary Tools](#Complementary_Tools "wikilink") for more details.' %}
 
 <span id="MaxIntersRadius"></span>Radius of highest count of intersections (*Max inters. radius*)  
 The distance at which the *Highest count of intersections* occurred, reflecting sites of highest branch density. Note that if the same maximum occurs multiple times, only the first distance is considered.
@@ -337,7 +337,7 @@ The distance at which *Critical value* occurs. By default (see [Advanced Usage](
 
 See also [Max inters. radius](#MaxIntersRadius "wikilink")
 
-{% include tip id='Nomenclature' tip='"""Nomenclature""": [Previous authors](#References "wikilink") have used different terms to describe the largest value taken by the Sholl profile, including ""Dendrite maximum"". Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [List of citations](#Citations "wikilink")), ""Sholl Analysis"" introduces the term [Critical radius](#CriticalRadius "wikilink"), renaming ""Dendrite maximum"" (""N<sub>m</sub>"") to [Critical value](#CriticalValue "wikilink").' %}
+{% include tip id='Nomenclature' tip='**Nomenclature**: [Previous authors](#References "wikilink") have used different terms to describe the largest value taken by the Sholl profile, including ""Dendrite maximum"". Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [List of citations](#Citations "wikilink")), ""Sholl Analysis"" introduces the term [Critical radius](#CriticalRadius "wikilink"), renaming ""Dendrite maximum"" (""N<sub>m</sub>"") to [Critical value](#CriticalValue "wikilink").' %}
 
 <span id="MeanValueOfFunction"></span>Mean value  
 The mean value[7] of the fitted polynomial function [(1)](#eq1 "wikilink"), representing the average of intersections over the whole area occupied by the arbor. Abbreviation *N<sub>av</sub>*.

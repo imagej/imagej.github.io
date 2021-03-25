@@ -35,7 +35,7 @@ The options available here are:
 
 This will immediately update the tile locations in the BigDataViewer, if it is open. If you want to un-do this step, you can click {% include bc content='Remove Transformation|Latest/Newest Transformation'%} in the main menu.
 
-{% include info-box content='We will not save the results to the project XML file automatically, click the """Save""" button in the main window to do that.' %}
+{% include info-box content='We will not save the results to the project XML file automatically, click the **Save** button in the main window to do that.' %}
 
 Expert Mode
 ===========
@@ -51,7 +51,7 @@ In the first dialog, you will be asked for the optimization strategy to apply:
 -   **One-Round with iterative dropping of bad links:** same as **Wrong link identification only:** (see above)
 -   **Two-Round using Metadata to align unconnected Tiles:** same as **Identify wrong links and handle unconnected Tiles:** (see above)
 
-{% include info-box content='The computational cost of the global optimization is relatively minor in comparison to the pairwise shift calculation. We therefore recommend to use the """Two-Round using Metadata to align unconnected Tiles""" strategy (and do so by default in the Simple Mode).' %}
+{% include info-box content='The computational cost of the global optimization is relatively minor in comparison to the pairwise shift calculation. We therefore recommend to use the **Two-Round using Metadata to align unconnected Tiles** strategy (and do so by default in the Simple Mode).' %}
 
 If you opt for any of the **iterative strategies**, you have to consider the two error thresholds, which determine when to stop dropping bad links and re-doing the optimization:
 

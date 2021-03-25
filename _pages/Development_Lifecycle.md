@@ -23,9 +23,9 @@ Whether adding new features, fixing bugs, improving performance, etc... **develo
 
 
 {% capture text%}
-Artifacts are files, most commonly a """{% include wikipedia title='JAR\_%28file\_format%29' text='JAR'%}""" encapsulating the compiled classes for a component. Other files that may be produced as artifacts include:
+Artifacts are files, most commonly a **{% include wikipedia title='JAR\_%28file\_format%29' text='JAR'%}** encapsulating the compiled classes for a component. Other files that may be produced as artifacts include:
 
--   The project"s """ [POM](https://maven.apache.org/pom.html) """
+-   The project"s ** [POM](https://maven.apache.org/pom.html) **
 -   A jar with the original source files
 -   A jar with any generated javadoc
 -   A jar with any test files
@@ -59,25 +59,25 @@ Phases in-depth
 
 Topic branches are great for isolating potentially disruptive and/or unfinished changes from the master branch, so that it always remains release ready. However, pushing directly to master has a huge time savings over filing a PR and awaiting review for days, weeks or months. Getting changes onto master quickly has many advantages:
 
--   """Fewer conflicts.""" It avoids conflicts between multiple long-running topic branches.
--   """SNAPSHOT builds.""" [Travis](Travis) builds the change into the latest SNAPSHOT build, making it available from the [SciJava Maven repository](SciJava_Maven_repository).
--   """Faster support.""" Supporting the community is less convoluted, with changes released to users more rapidly. Yes, you can link to changes on a topic branch. And yes, you can upload binary builds from that branch. But each extra manual step costs time—better to link directly to the latest SNAPSHOT build. There are even ImageJ [update sites](Update_sites) which serve the latest builds from master, to make it easier for non-technical users to test changes.
--   """Less complex.""" The more topic branches you have—and in particular, the more integration branches you have—the more complex the system becomes, the more supporting tooling, CI jobs, etc. are needed. And the more developer time is needed to maintain the tooling, sort through topic branches, keep track of open PRs... leaving less time for developing new features and fixing bugs.
+-   **Fewer conflicts.** It avoids conflicts between multiple long-running topic branches.
+-   **SNAPSHOT builds.** [Travis](Travis) builds the change into the latest SNAPSHOT build, making it available from the [SciJava Maven repository](SciJava_Maven_repository).
+-   **Faster support.** Supporting the community is less convoluted, with changes released to users more rapidly. Yes, you can link to changes on a topic branch. And yes, you can upload binary builds from that branch. But each extra manual step costs time—better to link directly to the latest SNAPSHOT build. There are even ImageJ [update sites](Update_sites) which serve the latest builds from master, to make it easier for non-technical users to test changes.
+-   **Less complex.** The more topic branches you have—and in particular, the more integration branches you have—the more complex the system becomes, the more supporting tooling, CI jobs, etc. are needed. And the more developer time is needed to maintain the tooling, sort through topic branches, keep track of open PRs... leaving less time for developing new features and fixing bugs.
 
 Hence, when exactly to use a topic branch is a judgment call, but some good times to use a topic branch are:
 
--   """Breaking.""" The changes break [backwards compatibility](Backwards_compatibility).
--   """New API.""" The changes introduce significant new API which will need to remain backwards compatible in the future, and review is desired before committing to that API.
--   """Unfinished.""" The changes are unfinished.
--   """Regressing.""" The changes leave the codebase in a "worse" state somehow.
--   """Discussion.""" To solicit discussion from the [community](Community), especially if the changes might be contentious.
+-   **Breaking.** The changes break [backwards compatibility](Backwards_compatibility).
+-   **New API.** The changes introduce significant new API which will need to remain backwards compatible in the future, and review is desired before committing to that API.
+-   **Unfinished.** The changes are unfinished.
+-   **Regressing.** The changes leave the codebase in a "worse" state somehow.
+-   **Discussion.** To solicit discussion from the [community](Community), especially if the changes might be contentious.
 
 Conversely, some situations to push directly to master:
 
--   """Correct.""" Bug-fixes where the developer is confident the fix is correct.
--   """No new API.""" Small new additions which do not introduce significant future maintenance burden.
--   """Unstable.""" Changes to unstable or experimental components still in their "incubation" period of development (i.e., versioned at 0.x), since there is no promise of backwards compatibility.
--   """Unsupported.""" Changes to "unsupported" components which make no guarantee of backwards compatibility.
+-   **Correct.** Bug-fixes where the developer is confident the fix is correct.
+-   **No new API.** Small new additions which do not introduce significant future maintenance burden.
+-   **Unstable.** Changes to unstable or experimental components still in their "incubation" period of development (i.e., versioned at 0.x), since there is no promise of backwards compatibility.
+-   **Unsupported.** Changes to "unsupported" components which make no guarantee of backwards compatibility.
 
 Lastly, keep in mind that SciJava favors the [release early, release often](RERO) style of development, to maximize iterations of community feedback. Just because a change makes it to the master branch, does not mean it is set in stone: if a problem is later found, the change can be amended or reverted as quickly as it was added—easy come, easy go.' %}
 

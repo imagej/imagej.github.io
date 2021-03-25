@@ -24,7 +24,7 @@ The typical workflow is:
 4.  Upload changes to ImageJ update site
 5.  Upload changes to Fiji update site
 
-{% include warning-box content='There is a known issue where """bio-formats\_plugins.jar""" is placed in `/jars/bio-formats` by this maven job. It should be manually moved to `/plugins/`' %}
+{% include warning-box content='There is a known issue where **bio-formats\_plugins.jar** is placed in `/jars/bio-formats` by this maven job. It should be manually moved to `/plugins/`' %}
 
 Responsibility of uploaders
 ---------------------------

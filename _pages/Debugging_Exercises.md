@@ -418,7 +418,7 @@ So now we know what's taking up all of our memory - but we don't actually know w
 There is a huge amount of information that can be browsed in the heap dump. Most of the options available via the right-click context menu are short-cuts for SQL queries. When we look at a "path to the GC root", we're looking at a chain of references between objects that's keeping the selected class alive. Because we're investigating memory leaks we can typically exclude weak and soft references, as these should be released before an `OutOfMemoryError` occurs.
 
 {% include expanding-box content='Expand the classes in the "merge shortest paths" tab until you get to the first child of the `ObjectMaker` class.  
-What is the child"s variable name and class? \|&gt;It is a `java.util.HashSet` with the name """cache""". `ObjectMaker` seems to store the `Float[]` instances in a set, creating strong references that prevent the arrays from being garbage collected.' %}
+What is the child"s variable name and class? \|&gt;It is a `java.util.HashSet` with the name **cache**. `ObjectMaker` seems to store the `Float[]` instances in a set, creating strong references that prevent the arrays from being garbage collected.' %}
 
 **Tip:** In this exercise we acquired the heap dump manually via `jvisualvm`. When you right-click on an application you can also set heap dumps to be acquired automatically when `OutOfMemoryErrors` occur. Heap dumps can also be acquired directly through the Eclipise MAT plugin, in the `Memory Analysis` perspective.
 
@@ -448,7 +448,7 @@ Exercise 8 in pretty straightforward with the main function calling two function
 
 <figure><img src="/media/E8ProfilingResults.PNG" title="Profiling Results" width="400" alt="Profiling Results" /><figcaption aria-hidden="true">Profiling Results</figcaption></figure>
 
-{% include expanding-box content='Which method takes more time? ""doStuff"" or ""doMoreStuff""? \|Answer - """doStuff""". Exact timing will vary per computer, but in our case ""doStuff"" took 954 ms while ""doMoreStuff"" took 710 ms.' %}
+{% include expanding-box content='Which method takes more time? ""doStuff"" or ""doMoreStuff""? \|Answer - **doStuff**. Exact timing will vary per computer, but in our case ""doStuff"" took 954 ms while ""doMoreStuff"" took 710 ms.' %}
 
 {% include expanding-box content='Are the number of invocations/function calls of both functions same ? \|Yes. This number will change based on the length of profiling, but in this case we see both methods were called 83,573,448 times - so the difference in timing is truly due to length of method execution.' %}
 

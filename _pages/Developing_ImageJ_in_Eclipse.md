@@ -24,7 +24,7 @@ Install and configure Eclipse
 
 -   Download "Eclipse IDE for Java Developers" from the [Eclipse web site](http://www.eclipse.org/downloads/).
 
-{% include warning-box content='It is """important""" to choose "Eclipse IDE for Java Developers" because it contains Maven support built-in. Otherwise, you will have to [install the M2E plugin manually](http://eclipse.org/m2e/).' %}
+{% include warning-box content='It is **important** to choose "Eclipse IDE for Java Developers" because it contains Maven support built-in. Otherwise, you will have to [install the M2E plugin manually](http://eclipse.org/m2e/).' %}
 
 -   Unpack the archive to a location of your choice.
 

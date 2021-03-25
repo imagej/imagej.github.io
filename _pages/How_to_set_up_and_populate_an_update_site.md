@@ -80,7 +80,7 @@ The *upload information* depends on the protocol available for uploading:
 
 In case you want to use an SFTP/SSH server, it must have an empty, public web accessible folder where you intend to publish your updates. The ImageJ updater will not create that empty folder.
 
-{% include warning-box content='"""A note about SSH and known\_hosts:""" For ImageJ to connect to your server over SSH, you must have configured your SSH credentials as normal—i.e.: `$HOME/.ssh/known_hosts` must contain the host key, and optionally `$HOME/.ssh/config` may contain the host configuration/credentials. We recommend that the given host be specified in `$HOME/.ssh/config` and equipped with a private key.  
+{% include warning-box content='**A note about SSH and known\_hosts:** For ImageJ to connect to your server over SSH, you must have configured your SSH credentials as normal—i.e.: `$HOME/.ssh/known_hosts` must contain the host key, and optionally `$HOME/.ssh/config` may contain the host configuration/credentials. We recommend that the given host be specified in `$HOME/.ssh/config` and equipped with a private key.  
   
 Note that you need to connect with command-line ssh first, to record the finger-print of the host. It might be necessary to call `ssh-keyscan test.imagej.net >> $HOME/.ssh/known_hosts` to ensure the correctly formatted key appears in your configuration file. There is an issue with newer SSH servers offering host keys in `ecdsa-sha2-nistp256` format, but the [JSch](http://www.jcraft.com/jsch/) library wanting them in `ssh-rsa` format instead. If you receive the error `com.jcraft.jsch.JSchException: UnknownHostKey` then you might be bitten by this discrepancy; try using the `ssh-keyscan` invocation above. If you still have trouble, please write to the [Image.sc Forum](https://forum.image.sc/) to troubleshoot further.' %}
 
@@ -139,7 +139,7 @@ Select the file to upload, click under the *Stats/Action* column, or right-click
 
 <img src="/media/Upload-to-update-site.png" width="770"/>
 
-{% include info-box content='The ""Upload to <update site name>"" option is only available if you entered your [wiki credentials](#Start_the_updater_and_check_your_update_site "wikilink") and no other changes are pending. Be aware that the password for the update site [""is not"" your Wiki password](Update_site_FAQ#How_do_I_set_a_password_for_my_personal_update_site.3F). This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the ""View changes"" view and resolve any pending changes - e.g. by updating or reverting to """Keep as-is""".' %}
+{% include info-box content='The ""Upload to <update site name>"" option is only available if you entered your [wiki credentials](#Start_the_updater_and_check_your_update_site "wikilink") and no other changes are pending. Be aware that the password for the update site [""is not"" your Wiki password](Update_site_FAQ#How_do_I_set_a_password_for_my_personal_update_site.3F). This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the ""View changes"" view and resolve any pending changes - e.g. by updating or reverting to **Keep as-is**.' %}
 
 ### Modifying Dependencies
 

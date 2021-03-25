@@ -154,11 +154,11 @@ The following script exemplifies how to extend the boilerplate template to contr
     #@ UIService ui
 
 
-    """
+    **
     file:    
     version:
     info:   
-    """
+    **
 
     from sc.fiji.snt import (Path, PathAndFillManager, SNT, SNTUI, Tree)
     from sc.fiji.snt.analysis import (MultiTreeColorMapper, PathProfiler, RoiConverter,

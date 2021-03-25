@@ -26,7 +26,7 @@ Finally, selecting a bounding box will open another sub-menu in which you can se
 
 <img src="/media/BigStitcher Fusion Quick.png" width="700"/>
 
-{% include info-box content='The quick fusion will fuse """all selected images""", including multiple channels/illuminations/time points, into one final image. To prevent e.g. a fusion of multiple channels, make sure to select only the images you need, ungrouping the views in the main window, if necessary.' %}
+{% include info-box content='The quick fusion will fuse **all selected images**, including multiple channels/illuminations/time points, into one final image. To prevent e.g. a fusion of multiple channels, make sure to select only the images you need, ungrouping the views in the main window, if necessary.' %}
 
 Advanced Fusion
 ---------------

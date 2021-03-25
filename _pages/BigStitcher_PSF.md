@@ -35,7 +35,7 @@ Here, you have a few options:
 
 Click **OK** to turn the selected interest points into PSFs. This will generate a single PSF for all selected views (the interest points in each view will be averaged).
 
-{% include info-box content='We will save the extracted PSFs as TIFF files in your project directory once you click """Save""" in the main window. This is necessary for subsequent steps such as deconvolution, so make sure to save.' %}
+{% include info-box content='We will save the extracted PSFs as TIFF files in your project directory once you click **Save** in the main window. This is necessary for subsequent steps such as deconvolution, so make sure to save.' %}
 
 ### Assigning PSFs
 

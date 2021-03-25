@@ -221,11 +221,11 @@ The same process can be accomplished more completely in a script using [ImageJ O
     # @StatusService status
     # @UIService uiservice
 
-    """
+    **
     file: Filter_Multiple_Images.py
     author: Tiago Ferreira, Cameron Arshadi
     info: Bulk filtering of image files using Frangi Vesselness
-    """
+    **
 
     from net.imagej.axis import Axes
 
@@ -233,9 +233,9 @@ The same process can be accomplished more completely in a script using [ImageJ O
 
 
     def get_image_files(directory, filtering_string, extension):
-        """Returns a list containing the paths of files in the specified
+        **Returns a list containing the paths of files in the specified
            directory. The list will only include files with the supplied
-           extension whose filename contains the specified string."""
+           extension whose filename contains the specified string.**
         files = []
         for (dirpath, dirnames, filenames) in os.walk(directory):
             for f in filenames:

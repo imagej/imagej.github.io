@@ -20,7 +20,7 @@ Advanced pairwise shift calculation
 
 We currently support three different ways of calculating pairwise shifts.
 
-{% include info-box content='We strongly advice to try the default """Phase Correlation""" first, as it tends to give the most robust results in comparison to the more specialized methods below.' %}
+{% include info-box content='We strongly advice to try the default **Phase Correlation** first, as it tends to give the most robust results in comparison to the more specialized methods below.' %}
 
 Advanced phase correlation
 --------------------------

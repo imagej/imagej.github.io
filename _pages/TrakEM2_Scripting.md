@@ -321,14 +321,14 @@ The script below is the same as the command "Import - Import labels as arealists
     from ij.plugin.frame import RoiManager
 
     def getRoiManager():
-      """ Obtain a valid instance of the ROI Manager.
-      Notice that it could still be null if its window is closed."""
+      ** Obtain a valid instance of the ROI Manager.
+      Notice that it could still be null if its window is closed.**
       if RoiManager.getInstance() is None:
         RoiManager()
       return RoiManager.getInstance()
 
     def putAreas(arealist):
-      """ Take all areas of an AreaList and put them in the ROI Manager."""
+      ** Take all areas of an AreaList and put them in the ROI Manager.**
       for layer in arealist.getLayerRange():
         area = arealist.getAreaAt(layer)
         if area is not None and not area.isEmpty():
@@ -350,7 +350,7 @@ The script below is the same as the command "Import - Import labels as arealists
 Notice that python (and jython) lets you use object instance methods as first-class functions, and constructors as well. This enables us to rewrite the "putAreas" function in a functional way, without using any temporary variables and without any if/else logic:
 
     def putAreas(arealist):
-      """ Take all areas of an AreaList and put them in the ROI Manager."""
+      ** Take all areas of an AreaList and put them in the ROI Manager.**
       def put(arealist):
       map(getRoiManager().addRoi,
           map(ShapeRoi,
@@ -683,7 +683,7 @@ Here is how to iterate over all the node's X,Y,Z positions, in world coordinates
     from jarray import array
 
     def getNodeCoordinates(tree):
-      """ Returns a map of Node instances vs. their X,Y,Z world coordinates. """
+      ** Returns a map of Node instances vs. their X,Y,Z world coordinates. **
       root = tree.getRoot()
       if root is None:
         return {}
@@ -988,7 +988,7 @@ Then, we iterate all nodes of the arbor looking for nodes that have the "neck st
     from ini.trakem2.display import Display, AreaTree, Treeline
 
     def findNeck(startNode):
-      """ Assumes necks are not branched. """ 
+      ** Assumes necks are not branched. ** 
       neck = []
       for node in startNode.getSubtreeNodes():
         tags = getTagsAsStrings(node)
@@ -1013,9 +1013,9 @@ Then, we iterate all nodes of the arbor looking for nodes that have the "neck st
 
 
     def measureSpineNecks(neuron):
-      """ Expects an AreaTree or a Treeline for neuron.
+      ** Expects an AreaTree or a Treeline for neuron.
       Assumes that nodes with a tag "neck start" are parents or superparents of nodes with tags of "neck end".
-      """
+      **
       print "Measurements for neuron '" + str(neuron) + "':"
       for node in neuron.getRoot().getSubtreeNodes():
         # Check if the node has the start tag

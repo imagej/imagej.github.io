@@ -21,7 +21,7 @@ TUNEL Cell Counter is a custom-built and validated ImageJ macro that processes d
 Before You Start
 ----------------
 
-Please read carefully before using this macro. {% include info-box content='"""This macro was validated using ImageJ 1.49v. We strongly suggest to use the same version, as segmentation and quantitation may vary with other versions."""' %}
+Please read carefully before using this macro. {% include info-box content='**This macro was validated using ImageJ 1.49v. We strongly suggest to use the same version, as segmentation and quantitation may vary with other versions.**' %}
 
 ### Microscope Calibration
 
@@ -47,7 +47,7 @@ We suggest using consistent post-processing for all images. Regarding the blue c
 
 ### Validated Dataset
 
-The original ONL and INL image datasets used for validation purposes are available to download. These images have been accurately segmented and quantitated, and their values were validated by observers. {% include info-box content='""" We strongly recommend to download and revise these images beforehand, to have a rough estimate on acquisition and post-processing parameters."""' %}
+The original ONL and INL image datasets used for validation purposes are available to download. These images have been accurately segmented and quantitated, and their values were validated by observers. {% include info-box content='** We strongly recommend to download and revise these images beforehand, to have a rough estimate on acquisition and post-processing parameters.**' %}
 
 ### Important Links
 

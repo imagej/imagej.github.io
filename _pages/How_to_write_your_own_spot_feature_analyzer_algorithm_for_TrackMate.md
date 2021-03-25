@@ -146,7 +146,7 @@ For instance, if you check the annotation part of the spot analyzer factory, you
 
 This priority parameter accepts a `double` as value and this value determines the order of execution. Careful, the rule is the opposite of what would make sense for a priority:
 
-{% include ambox text='Feature analyzers are executed in order according to """increasing priority""". This means that analyzers with the greatest priority are executed last.' %}
+{% include ambox text='Feature analyzers are executed in order according to **increasing priority**. This means that analyzers with the greatest priority are executed last.' %}
 
 By convention, if your feature analyzer depends on the features calculated by N other analyzers, you take the larger priority of these analyzers, and add 1. In our case, we depend on the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/spot/SpotIntensityAnalyzerFactory.java' label='SpotIntensityAnalyzerFactory' %}, which as a priority of 0 (the default if the parameter is unspecified). So quite logically, we set the priority of our analyzer to be 1. This ensures the proper execution order.
 

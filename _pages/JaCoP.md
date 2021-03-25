@@ -9,7 +9,7 @@ description: test description
 JACoP
 =====
 
-{% include info-box content='This page describes """J"""ust """A"""nother """Co"""localization """P"""lugin, not the [Java Constraint Programming solver](http://jacop.org).' %}
+{% include info-box content='This page describes **J**ust **A**nother **Co**localization **P**lugin, not the [Java Constraint Programming solver](http://jacop.org).' %}
 
 **This plug-in is a compilation of co-localization tools.**
 

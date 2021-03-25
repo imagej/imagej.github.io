@@ -8,8 +8,8 @@ description: test description
 ---
 
 {% include info-box content='This guide discusses how to modify an already-existing [plugin](Plugin), and contribute your changes back.  
-\* If you are interested in developing a """new""" plugin instead, see [Writing plugins](Writing_plugins).  
-\* If you have completed a plugin that you would like to """share with the community""", see [Distributing your plugins](Distribution).' %}
+\* If you are interested in developing a **new** plugin instead, see [Writing plugins](Writing_plugins).  
+\* If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](Distribution).' %}
 
 <div style="float: left; padding-right: 1em">
 </div>

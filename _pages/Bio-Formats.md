@@ -142,7 +142,7 @@ If needed, import options can be set:
 Daily builds
 ------------
 
-{% include warning-box content='The daily builds are """not yet released""" and should be considered """beta""" in quality. There may be new bugs. In particular, you should """avoid exporting data using the Bio-Formats Exporter""" because the files it writes might not be readable later by release versions of Bio-Formats or other OME-compliant tools.' %}
+{% include warning-box content='The daily builds are **not yet released** and should be considered **beta** in quality. There may be new bugs. In particular, you should **avoid exporting data using the Bio-Formats Exporter** because the files it writes might not be readable later by release versions of Bio-Formats or other OME-compliant tools.' %}
 
 Fiji ships release versions of Bio-Formats. However, given the long time frame between releases, you can update to the latest code by toggling the **Bio-Formats** update site, which includes the latest bug-fixes.
 

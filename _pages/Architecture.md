@@ -143,11 +143,11 @@ The [SciJava Common](SciJava_Common) (SJC) library provides a plugin framework w
 Reproducible builds
 ===================
 
-{% include box title='Why are reproducible builds so essential for science?' width='40%' float='right' text='Arguably """the most important thing""" in science is to gain insights about nature """that can be verified by other researchers""". It is this mission for which [ImageJ](ImageJ) and [Fiji](Fiji) stand, and it is the central reason why they are [open source](Open_source).
+{% include box title='Why are reproducible builds so essential for science?' width='40%' float='right' text='Arguably **the most important thing** in science is to gain insights about nature **that can be verified by other researchers**. It is this mission for which [ImageJ](ImageJ) and [Fiji](Fiji) stand, and it is the central reason why they are [open source](Open_source).
 
-To verify results, it is absolutely necessary to be able to reproduce results claimed in scientific articles, and in the interest of efficiency, it should be """easy""" to reproduce the results, and it should """also""" be easy to scrutinize the used methods—incorrect results can be artifacts of flawed algorithms, after all.
+To verify results, it is absolutely necessary to be able to reproduce results claimed in scientific articles, and in the interest of efficiency, it should be **easy** to reproduce the results, and it should **also** be easy to scrutinize the used methods—incorrect results can be artifacts of flawed algorithms, after all.
 
-To that end, it should be obvious that researchers """need""" to have the ability to inspect the exact source code corresponding to the software used to generate the results to be verified. In other words, reproducible builds are required for sound scientific research.' %} A software *version* (or *build*) is called **reproducible** if it is easy to regenerate the exact same software application from the source code.
+To that end, it should be obvious that researchers **need** to have the ability to inspect the exact source code corresponding to the software used to generate the results to be verified. In other words, reproducible builds are required for sound scientific research.' %} A software *version* (or *build*) is called **reproducible** if it is easy to regenerate the exact same software application from the source code.
 
 For example, you can refer to "ImageJ 1.49g" as a *reproducible build*, or to *Sholl Analysis 3.4.3*, while referring to "ImageJ" is irreproducible.
 
@@ -195,7 +195,7 @@ There are two easy ways of going about this:
 
 In the case of Eclipse, you may need to "Update Maven project" in order to see the snapshot couplings go into effect; the shortcut {% include key content='Alt' %}+{% include key content='F5' %} while selecting the affected project(s) accomplishes this quickly.
 
-{% include warning-box content='"""Current versions of the Eclipse Maven integration (tested with Eclipse Mars) fail to correctly resolve the `LATEST` version tag to `SNAPSHOT`s. Use the command-line client instead."""' %}
+{% include warning-box content='**Current versions of the Eclipse Maven integration (tested with Eclipse Mars) fail to correctly resolve the `LATEST` version tag to `SNAPSHOT`s. Use the command-line client instead.**' %}
 
 Either way, ***be sure to work on a topic branch while developing code in this fashion.*** You will need to clean up your Git history afterwards before merging things to the `master` branch, in order to achieve [reproducible builds](Reproducible_builds).
 

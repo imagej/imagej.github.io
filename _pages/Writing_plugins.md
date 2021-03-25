@@ -7,9 +7,9 @@ categories: Tutorials,ImageJ2,Development
 description: test description
 ---
 
-{% include info-box content='This guide provides a technical overview of [plugins](Plugins), including how to """create new plugins""".  
-\* If you are interested in developing an """existing""" plugin instead, see [Contributing to a plugin](How_to_contribute_to_an_existing_plugin_or_library).  
-\* If you have completed a plugin that you would like to """share with the community""", see [Distributing your plugins](Distribution).
+{% include info-box content='This guide provides a technical overview of [plugins](Plugins), including how to **create new plugins**.  
+\* If you are interested in developing an **existing** plugin instead, see [Contributing to a plugin](How_to_contribute_to_an_existing_plugin_or_library).  
+\* If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](Distribution).
 
 -   For instructions on plugin development for [ImageJ 1.x](ImageJ_1.x), see [Developing Plugins for ImageJ 1.x](Developing_Plugins_for_ImageJ_1.x).' %}
 
@@ -51,7 +51,7 @@ For example, given the following plugins:
 
 {% include expanding-box content='Which of these plugins would we expect back if asking the [Context](Writing_plugins#The_Context) for plugins of type `Service` plugin? \| &gt; It would give back both the `MyService` and `SpecialService` plugins, since `SpecialService` is a subclass of `Service`.' %}
 
-{% include expanding-box content='What if we asked for plugins of type `SpecialService`? \| &gt; It would just return the `SpecialService` plugin, since `MyService` is """not""" a `SpecialService`.' %}
+{% include expanding-box content='What if we asked for plugins of type `SpecialService`? \| &gt; It would just return the `SpecialService` plugin, since `MyService` is **not** a `SpecialService`.' %}
 
 ### Plugin priority
 

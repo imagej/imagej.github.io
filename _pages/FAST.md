@@ -51,7 +51,7 @@ Startup Options
 'Other' allow to enter a specific file extension.  
 **Threshold value** : Set threshold value for pixel intensity, segmenting the image into features of interest (above threshold) and background.  
 
-{% include tip id='Threshold' tip='"""""Threshold value must be defined for each acquisition system (microscope + camera + exposure time + file-type)""""".' %}
+{% include tip id='Threshold' tip='**""Threshold value must be defined for each acquisition system (microscope + camera + exposure time + file-type)**"".' %}
 
 **Create ROIs** : Step 1, analyses pixels above the user-defined threshold value and automatically saves Regions Of Interest zip file in the image directory.  
 **Measure ROIs** : Step 2 of image analysis to check individually and measure previously created ROIs. (With Step 1 unchecked and Step 2 checked, user can reanalyse previous data).  
