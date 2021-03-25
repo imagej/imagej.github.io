@@ -65,7 +65,7 @@
 @media screen and (min-width: 780px) {
   .toc {
     position: absolute;
-    left: 0;
+    right: 10px;
     font-size: 0.75em;
     width: 240px;
     float: left;
