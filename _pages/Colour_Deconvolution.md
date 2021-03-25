@@ -11,7 +11,8 @@ description: test description
 Documentation
 -------------
 
-See [Gabriel Landini webpage](https://blog.bham.ac.uk/intellimic/g-landini-software/colour-deconvolution/).
+See [Gabriel Landini webpage](https://blog.bham.ac.uk/intellimic/g-landini-software/colour-deconvolution-2/) for an updated version of the plugin.
+You can install an updated version in Fiji via the Colour Deconvolutio2 update site.
 
 This plugin implements the method described in the following paper:
 
