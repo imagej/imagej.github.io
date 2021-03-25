@@ -539,7 +539,7 @@ A member of our group wished to study osteocyte lacunae in synchrotron microCT i
 
 If you use it in your published work, please cite:
 
-Doube M. 2021 Multithreaded two-pass connected components labelling and particle analysis in ImageJ. Roy. Soc. Open Sci. **8**. doi:[10.1098/rsos.201784](https://doi.org/10.1098/rsos.201784)
+> Doube M. 2021 Multithreaded two-pass connected components labelling and particle analysis in ImageJ. Roy. Soc. Open Sci. **8**. doi:[10.1098/rsos.201784](https://doi.org/10.1098/rsos.201784)
 
 
 #### Suitable images
@@ -559,6 +559,7 @@ A 2D or 3D binary image.
 -   **Euler characteristic**: measure each particle's Euler characteristic and connectivity
 -   **Mask thickness map**: don't count thickness pixels overhanging the foreground
 -   **Record unit vectors**: log the unit vectors of the inertia tensor and best-fit ellipsoid's axes to the Results table
+-   **Aligned boxes**: calculate the minimal bounding box aligned to the inertia tensor vectors
 -   **Min Volume**: smallest particle to measure or display, in calibrated units
 -   **Max Volume**: largest particle to measure or display, in calibrated units
 -   **Surface resampling**: how much to resample the stack (in pixel units) while creating the surface mesh by marching cubes. Setting a large value smooths out small details and potentially eliminates very small particles. Setting a small value (minimum 1) leads to precise meshing over the pixel grid.
@@ -570,6 +571,7 @@ A 2D or 3D binary image.
 -   **Show surfaces (3D)**: display particles' surface meshes in a 3D Viewer window
 -   **Show axes (3D)**: display principal axes (from moments of inertia) and Feret axes, if they were selected to be calculated, in a 3D Viewer window
 -   **Show stack (3D)**: display the original binary stack in a 3D Viewer window
+-   **Show aligned boxes (3D)**: display each particle's minimal aligned bounding box in a 3D Viewer window
 -   **Surface colours**:
     -   **Gradient**: Each particle gets a unique colour between red and green
     -   **Split**: Each particle is coloured depending on whether it is over (red) or under (yellow) the Split value
@@ -586,6 +588,12 @@ A 2D or 3D binary image.
     -   **x Cent**: x-coordinate of particle centroid
     -   **y Cent**: y-coordinate of particle centroid
     -   **z Cent**: z-coordinate of particle centroid
+    -   **Box x**: x-coordinate of the center of the aligned box
+    -   **Box y**: y-coordinate of the center of the aligned box
+    -   **Box z**: z-coordinate of the center of the aligned box
+    -   **Box l0**: longest side length of the aligned box
+    -   **Box l1**: middle side length of the aligned box
+    -   **Box l2**: shortest side length of the aligned box
     -   **SA**: surface area (0 if too small for mesh to be produced; see warning log)
     -   **Feret**: maximum caliper diameter
     -   **FeretAx**: x-coordinate of the first point of the maximum caliper diameter
@@ -623,7 +631,7 @@ A 2D or 3D binary image.
 
 #### Citation
 
-Doube M. 2020 Multithreaded two-pass connected components labelling and particle analysis in ImageJ. bioRxiv , 2020.02.28.969139. (doi:10.1101/2020.02.28.969139) [2](https://doi.org/10.1101/2020.02.28.969139)
+> Doube M. 2020 Multithreaded two-pass connected components labelling and particle analysis in ImageJ. bioRxiv , 2020.02.28.969139. (doi:10.1101/2020.02.28.969139) [2](https://doi.org/10.1101/2020.02.28.969139)
 
 Purify
 ------
@@ -863,7 +871,9 @@ BoneJ2 is free, open-source software. You can redistribute it and/or modify it u
 
 Citation
 --------
-Domander R, Felder AA, Doube M. 2021 BoneJ2 - refactoring established research software. Wellcome Open Res. **6**. doi:[10.12688/wellcomeopenres.16619.1](https://doi.org/10.12688/wellcomeopenres.16619.1). We recommend you cite the specific [release](https://github.com/bonej-org/BoneJ2/releases) used in your research.
+> Domander R, Felder AA, Doube M. 2021 BoneJ2 - refactoring established research software. Wellcome Open Res. **6**. doi:[10.12688/wellcomeopenres.16619.1](https://doi.org/10.12688/wellcomeopenres.16619.1).
+
+We recommend you cite the specific [release](https://github.com/bonej-org/BoneJ2/releases) used in your research.
 
 Funding
 -------
