@@ -3090,22 +3090,20 @@ input, select, textarea {
 
 .sidebar-left {
 	position: absolute;
-	top: 175px;
-	left: 25px;
-}
+	top: 150px;
+	}
 
 /* Menu */
 
 @media screen and (min-width: 780px) {
 	.menu {
-		font-size: 0.75em;
+		font-size: 0.85em;
 		width: 240px;
 		float: left;
 	}
 
 	.menu ul {
 			margin: 0;
-			padding-left: 1.4em;
 			border-left: 1px solid gray;
 			list-style-type: none;
 			line-height: 20px;
@@ -4231,7 +4229,7 @@ input, select, textarea {
 
 /* XLarge */
 
-	@media screen and (max-width: 1680px) {
+	@media screen and (max-width: 2480px) {
 
 		/* Basic */
 
