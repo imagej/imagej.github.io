@@ -3090,6 +3090,7 @@ input, select, textarea {
 
 .sidebar-left {
 	position: absolute;
+	top: 175px;
 	left: 25px;
 }
 
@@ -3100,7 +3101,6 @@ input, select, textarea {
 		font-size: 0.75em;
 		width: 240px;
 		float: left;
-		top: 200;
 	}
 
 	.menu ul {

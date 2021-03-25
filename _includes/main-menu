@@ -1,4 +1,4 @@
-<div id="sidebar-left">
+<div class="sidebar-left">
 <div class="menu">
 <ul>
 <center><strong><h3>ImageJ Documentation</h3></strong></center>
@@ -231,4 +231,4 @@
 
 </ul>
 </div>
-<div>
+</div>
