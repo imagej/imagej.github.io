@@ -1,5 +1,4 @@
-{% assign myurl = {{include.link}} | prepend: "/" %}
-{% if {{page.url}} == {{myurl}} %}
+{% if {{page.url}} == {{include.link}} %}
 <li><b>{{include.title}}</b></li>
 {% else %}
 <li><a href="{{include.link}}">{{include.title}}</a></li>
