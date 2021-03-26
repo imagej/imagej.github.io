@@ -56,29 +56,29 @@ Includes provide more robust formatting options and are unique to this site (thi
 
 | Action | Link to demo page|
 | : --- : | :---: |
-| Insert the about menu | [about-menu]({{"/demo-about-menu" | relative_url}})
-| Insert a citation | [citation]({{"/demo-citation" | relative_url}})
-| Insert conference info | [conference]({{"/demo-conference" | relative_url}})
-| Generate info/details box | [details-box]({{"/demo-details-box" | relative_url}}) |
-| Alternative info/details boxes | [alt-boxes]({{"/demo-additional-info-boxes" | relative_url}}) |
-| Insert figure | [figure]({{"/demo-figure" | relative_url}}) |
-| Insert a gallery | [gallery]({{"/demo-gallery" | relative_url}}) |
-| Link to github files | [github]({{"/demo-github" | relative_url}}) |
-| Insert Git menu | [git-menu]({{"/demo-git-menu" | relative_url}}) |
-| Insert images | [image]({{"/demo-image" | relative_url}}) |
-| Insert a notice | [info-box]({{"/demo-info-box" | relative_url}})
-| Insert logos | [logo]({{"/demo-logo" | relative_url}}) |
-| Insert menu breadcrumb | [menu-bc]({{"/demo-menu-breadcrumb" | relative_url}}) |
-| Insert math | [math]({{"/demo-math" | relative_url}}) |
-| Insert person details | [person]({{"/demo-person" | relative_url}})
-| Insert a sidebox | [sidebox]({{"/demo-sidebox" | relative_url}})
-| Insert the SNT nav bar | [SNT-nav]({{"/demo-SNT-nav" | relative_url}})|
-| Insert a symbol | [symbol]({{"/demo-symbols" | relative_url}})
-| Insert a table | [markdown-table]({{"/demo-markdown-table" | relative_url}})
-| Insert a todo list | [todo-list]({{"/demo-todo-list" | relative_url}})
-| Insert a tech box | [tech-box]({{"/demo-tech-box" | relative_url}})
-| Insert a warning | [warning-box]({{"/demo-warning-box" | relative_url}}) |
-| Insert a YouTube video | [youtube-video]({{"/demo-youtube-video" | relative_url}}) |
+| Insert the about menu | [about-menu](about-menu)
+| Insert a citation | [citation](citation)
+| Insert conference info | [conference](conference)
+| Generate info/details box | [details-box](details-box) |
+| Alternative info/details boxes | [alt-boxes](additional-info-boxes) |
+| Insert figure | [figure](figure) |
+| Insert a gallery | [gallery](gallery) |
+| Link to github files | [github](github) |
+| Insert Git menu | [git-menu](git-menu) |
+| Insert images | [image](image) |
+| Insert a notice | [info-box](info-box)
+| Insert logos | [logo](logo) |
+| Insert menu breadcrumb | [menu-bc](menu-breadcrumb) |
+| Insert math | [math](math) |
+| Insert person details | [person](person)
+| Insert a sidebox | [sidebox](sidebox)
+| Insert the SNT nav bar | [SNT-nav](SNT-nav)|
+| Insert a symbol | [symbol](symbols)
+| Insert a table | [markdown-table](markdown-table)
+| Insert a todo list | [todo-list](todo-list)
+| Insert a tech box | [tech-box](tech-box)
+| Insert a warning | [warning-box](warning-box) |
+| Insert a YouTube video | [youtube-video](youtube-video) |
 
 
 # Syntax highlighting
