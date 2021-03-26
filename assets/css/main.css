@@ -2608,6 +2608,10 @@ input, select, textarea {
 		.ham-drop-content a {
 			display: none;
 		}
+
+			.ham-drop {
+				display: none;
+		}
 	}
 
 	@media screen and (max-width: 780px) {
