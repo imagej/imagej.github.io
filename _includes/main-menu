@@ -115,11 +115,11 @@
     {% include menu-item title="ImageJ Macro" link="Introduction_into_Macro_Programming" %}
     {% include menu-item title="JavaScript" link="JavaScript_Scripting" %}
     {% include menu-item title="Batch Processing" link="Batch_Processing" %}
-    {% include menu-item title="Lisp\(Clojure\)" link="Clojure_Scripting" %}
+    {% include menu-item title="Lisp (Clojure)" link="Clojure_Scripting" %}
     {% include menu-item title="MATLAB" link="MATLAB_Scripting" %}
-    {% include menu-item title="Python\(Jython\)" link="Jython_Scripting" %}
-    {% include menu-item title="R\(\Renjin\)" link="Renjin_Scripting" %}
-    {% include menu-item title="Ruby\(JRuby\)" link="JRuby_Scripting" %}
+    {% include menu-item title="Python (Jython)" link="Jython_Scripting" %}
+    {% include menu-item title="R (Renjin)" link="Renjin_Scripting" %}
+    {% include menu-item title="Ruby (JRuby)" link="JRuby_Scripting" %}
     {% include menu-item title="Scala Scripting" link="Scala_Scripting" %}
   {% include menu-section-end %} <!-- Learn/Languages -->
 {% include menu-section-end %} <!-- Learn -->
