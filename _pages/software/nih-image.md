@@ -1,7 +1,7 @@
 ---
 title: NIH Image
 layout: page
-categories: Related Software,Citable
+categories: Software,Citable
 description: test description
 ---
 
