@@ -1,4 +1,5 @@
 name: ImageJ
+title: ImageJ
 markdown: kramdown
 kramdown:
   syntax_highlighter: rogue
