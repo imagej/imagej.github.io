@@ -42,7 +42,10 @@
   {% include menu-section-end %} <!-- About/Fiji -->
 {% include menu-section-end %} <!-- About -->
 
-{% include menu-item title="Plugins" link="Plugins" %}
+{% include menu-section title="Plugins" link="Plugins" %}
+  {% include menu-item title="Overview" link="Plugins" %}
+  {% include menu-item title="Plugin Grid" link="plugin-grid" %}
+{% include menu-section-end %}
 
 {% include menu-section title="Learn" link="Introduction" %}
   {% include menu-item title="Getting Started" link="Getting_Started" %}
