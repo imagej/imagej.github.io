@@ -4,6 +4,8 @@ categories: admin
 layout: page
 ---
 
+<table>
+<tbody>
 {% assign plugin_page_1 = null %}
 {% assign plugin_page_2 = null %}
 {% assign plugin_page_3 = null %}
@@ -33,7 +35,11 @@ layout: page
 {% continue %}
 {% endif %}
 
-| {{plugin_page_1}} | {{plugin_page_2}} | {{plugin_page_3}} |
+<tr>
+<td style="text-align: center">{{plugin_page_1}}</td>
+<td style="text-align: center">{{plugin_page_2}}</td>
+<td style="text-align: center">{{plugin_page_3}}</td>
+</tr>
 
 {% assign plugin_page_1 = null %}
 {% assign plugin_page_2 = null %}
@@ -41,3 +47,5 @@ layout: page
 
 {% endif %}
 {% endfor %}
+</tbody>
+</table>
