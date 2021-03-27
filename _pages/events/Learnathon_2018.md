@@ -7,7 +7,7 @@ description: test description
 ---
 
 The second DAIS Learnathon took place from June 3 until June 9 2018.  
-[This page](https://imagej.net/2017-06-18_-_DAIS_learnathon) is the Learnathon Wiki page of last year's event!
+[This page](learnathon-2017) is the Learnathon Wiki page of last year's event!
 
 Schedule
 --------
