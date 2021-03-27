@@ -19,7 +19,7 @@ Video tutorial on the basic recipe for TrakEM2
 
 {% include thumbnail-link src="/media/Screenshot-TrakEM2 basics tutorial.png" title='TrakEM2 basic tutorial' link='TrakEM2 basic tutorial'%}
 
-This is the [basic tutorial for TrakEM2](TrakEM2_basics_tutorial). **If you are new to TrakEM2, please start by watching [this tutorial](TrakEM2_basics_tutorial)**. It includes:
+This is the [basic tutorial for TrakEM2](/plugins/trakem2/basics-tutorial). **If you are new to TrakEM2, please start by watching [this tutorial](/plugins/trakem2/basics-tutorial)**. It includes:
 
 -   Importing an image stack.
 -   Registering stack slices manually, using color overlays and affine transforms.
@@ -48,7 +48,7 @@ Video tutorial on aligning sections
 
 {% include thumbnail-link src="/media/Screenshot-TrakEM2 align sections tutorial.png" title='TrakEM2 align sections tutorial' link='TrakEM2 align sections tutorial'%}
 
-[This video tutorial](TrakEM2_align_sections_tutorial) is focused on:
+[This video tutorial](/plugins/trakem2/align-sections-tutorial) is focused on:
 
 -   Automatically registering sections.
 -   Selecting feature extraction parameters.
@@ -63,7 +63,7 @@ Video tutorial on manual segmentation modes
 
 {% include thumbnail-link src="/media/Screenshot-TrakEM2-Manual-Segmentation-Modes-Tutorial.png" title='TrakEM2 manual segmentation modes' link='TrakEM2 manual segmentation modes'%}
 
-[Tutorial on how to manually segment cells using the 3 segmentation modes](TrakEM2_segmentation_modes_tutorial):
+[Tutorial on how to manually segment cells using the 3 segmentation modes](/plugins/trakem2/segmentation-modes-tutorial):
 
 Overlap  
 multiple arealists can coexist in space (the normal mode; arealists are independent).
@@ -82,7 +82,7 @@ Video tutorial on semi-automatic segmentation
 
 {% include thumbnail-link src="/media/Screenshot-TrakEM2-tutorial-automatic-segmentation.png" title='TrakEM2 semi-automatic segmentation' link='TrakEM2 semi-automatic segmentation'%}
 
-In [this video tutorial](TrakEM2_semi-automatic_segmentation_tutorial) you will learn:
+In [this video tutorial](/plugins/trakem2/semi-automatic-segmentation-tutorial) you will learn:
 
 -   How to segment cells by only one click.
 -   Fast marching method tool in TrakEM2.
@@ -96,7 +96,7 @@ Video tutorial on measuring surfaces and volumes
 
 {% include thumbnail-link src="/media/Screenshot-TrakEM2-tutorial-measure-surfaces.png" title='TrakEM2 measuring surfaces and volumes' link='TrakEM2 measuring surfaces and volumes'%}
 
-In [this video tutorial](TrakEM2_measurements_tutorial) you will learn how to:
+In [this video tutorial](/plugins/trakem2/measurements-tutorial) you will learn how to:
 
 -   Extract information from TrakEM2 project objects.
 -   Save measurements into files.
@@ -111,7 +111,7 @@ Video tutorial on adding sections/layers to an existing project
 
 {% include thumbnail-link src="/media/Screenshot-TrakEM2-tutorial-add-layers.png" title='TrakEM2 adding layers to existing project' link='TrakEM2 adding layers to existing project'%}
 
-[Here](TrakEM2_add_more_sections_layers_tutorial) you will learn how to:
+[Here](/plugins/trakem2/add-more-sections-layers-tutorial) you will learn how to:
 
 -   Open an image sequence as a virtual stack in Fiji.
 -   Calibrate the virtual stack.
@@ -127,13 +127,13 @@ Video tutorial on saving a project
 
 {% include thumbnail-link src="/media/Screenshot-TrakEM2-save-project.png" title='TrakEM2 saving a project' link='TrakEM2 saving a project'%}
 
--   [Saving a TrakEM2 project](TrakEM2_saving_project_tutorial) into an .XML file.
+-   [Saving a TrakEM2 project](/plugins/trakem2/saving-project-tutorial) into an .XML file.
 
 See Also
 --------
 
--   [TrakEM2 Scripting](TrakEM2_Scripting)
--   [TrakEM2](TrakEM2) wiki page
+-   [TrakEM2 Scripting](/plugins/trakem2/scripting)
+-   [TrakEM2](/plugins/trakem2) wiki page
 -   [TrakEM2 web page](http://www.ini.uzh.ch/~acardona/trakem2.html)
 
  

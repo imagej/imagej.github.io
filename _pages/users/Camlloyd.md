@@ -8,4 +8,4 @@ description: test description
 
 {% include user-box name='Cameron Lloyd' forum='camlloyd' github='camlloyd' %}
 
-Cameron Lloyd currently maintains the [AccPbFRET](AccPbFRET) and [RiFRET](RiFRET) plugins.
+Cameron Lloyd currently maintains the [AccPbFRET](/plugins/accpbfret) and [RiFRET](/plugins/rifret) plugins.

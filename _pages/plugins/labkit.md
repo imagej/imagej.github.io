@@ -30,7 +30,7 @@ The automatic image segmentation functionality is comparable to Trainable Weka S
 Installation
 ------------
 
-Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Labkit/ (For details on how to install an update site click [here](Following_an_update_site).)
+Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Labkit/ (For details on how to install an update site click [here](/update-sites/following).)
 
 To start Labkit in ImageJ, first open the image you want to work with, and then select Plugins &gt; Segmentation &gt; Labkit from the main menu.
 
@@ -44,7 +44,7 @@ Follow these steps to segment an image:
 3.  Labkit should start and display the image. If it shows a black window instead of the image: Click {% include key content='press\|S' %} and adjust the contrast.
 4.  Select "foreground" (In the side bar of Labkit). Select the pencil tool (top bar of Labkit) and draw on the image.
 5.  Select "background" and the pencil tool, and mark some other region of the image as background.
-6.  In the side bar of Labkit, under the heading "Segmentation" you will find an entry "Classifier \#1". And next to it there is a play button (black triangle). Click it, to train the Classifier. After a moment you will see the automatic segmentation of your image.
+6.  In the side bar of Labkit, under the heading "/techniques/segmentation" you will find an entry "Classifier \#1". And next to it there is a play button (black triangle). Click it, to train the Classifier. After a moment you will see the automatic segmentation of your image.
 7.  From Labkit's main menu select "Segmentation -&gt; Show Segmentation Result in ImageJ", to export your segmentation into ImageJ.
 
 Basic Navigation

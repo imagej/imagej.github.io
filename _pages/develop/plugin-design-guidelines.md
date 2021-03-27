@@ -110,7 +110,7 @@ Compiling the plugin
 
 ### Using the Script Editor
 
-The easiest way to compile and run the plugin is to use the [Script Editor](Script_Editor): Call {% include bc content='File | New | Script'%}, select *Java* in the *Language* menu, and paste the source. Then, compile and run the plugin by calling *Run* in the '"Run'' menu.
+The easiest way to compile and run the plugin is to use the [Script Editor](/scripting/script-editor): Call {% include bc content='File | New | Script'%}, select *Java* in the *Language* menu, and paste the source. Then, compile and run the plugin by calling *Run* in the '"Run'' menu.
 
 ### The hard way
 
@@ -131,7 +131,7 @@ For this to work, you have to save the java file into the *plugins/* directory, 
 Running the plugin
 ------------------
 
-If you pasted the source into the [Script Editor](Script_Editor), you can run the plugin using the *Run&gt;Run* menu entry.
+If you pasted the source into the [Script Editor](/scripting/script-editor), you can run the plugin using the *Run&gt;Run* menu entry.
 
 Otherwise, after {% include bc content='Help | Refresh Menus'%}, or a Fiji restart, there will be a menu item called *Duplicate and Scale* in the *Plugins* menu.
 

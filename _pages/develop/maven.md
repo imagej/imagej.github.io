@@ -17,9 +17,9 @@ description: test description
   
 **Apache Maven** is a {% include wikipedia title='Convention over configuration' text='convention over configuration'%} build automation tool.
 {% endcapture %}
-{% include minibox logo='Maven-icon.png' size='51px' blurb=blurb %}[ImageJ](ImageJ), [Fiji](Fiji) and other [SciJava](SciJava) projects use [Maven](https://maven.apache.org/) for their project infrastructure.
+{% include minibox logo='Maven-icon.png' size='51px' blurb=blurb %}[ImageJ](/about), [Fiji](/fiji) and other [SciJava](SciJava) projects use [Maven](https://maven.apache.org/) for their project infrastructure.
 
-Maven artifacts are published to the [SciJava Maven repository](SciJava_Maven_repository).
+Maven artifacts are published to the [SciJava Maven repository](/Project_management#Maven).
 
 Why do we use Maven?
 ====================
@@ -34,9 +34,9 @@ Introduction
 
 Maven is a powerful tool to build Java projects and to manage their dependencies. It can build dependencies from sources, but if the sources are not available, it will look into Maven repositories from which to download the dependencies.
 
-Example: let's assume that you want to build a new plugin for [ImageJ 1.x](ImageJ_1.x) that builds on, say, the [3D Viewer](3D_Viewer) and commons-math. You do not want to rebuild them from scratch unless you need to debug issues that are suspect bugs in said components. This is where Maven comes in: you tell it that the dependencies are ImageJ 1.x, 3D Viewer and commons-math and what version(s) you require. It is Maven's job to find and get them, no matter whether you just built them locally or not.
+Example: let's assume that you want to build a new plugin for [ImageJ 1.x](/software/imagej1) that builds on, say, the [3D Viewer](/plugins/3d-viewer) and commons-math. You do not want to rebuild them from scratch unless you need to debug issues that are suspect bugs in said components. This is where Maven comes in: you tell it that the dependencies are ImageJ 1.x, 3D Viewer and commons-math and what version(s) you require. It is Maven's job to find and get them, no matter whether you just built them locally or not.
 
-Many convenient [IDEs](IDEs) (integrated development environments) including [Eclipse](Eclipse), [NetBeans](NetBeans) and [IntelliJ](IntelliJ) support Maven projects; therefore, using Maven is an excellent choice when trying to let every developer choose their preferred development environment.
+Many convenient [IDEs](/develop/ides) (integrated development environments) including [Eclipse](/develop/imagej-in-eclipse), [NetBeans](/Developing_ImageJ_in_NetBeans) and [IntelliJ](/Developing_ImageJ_in_IntelliJ_IDEA) support Maven projects; therefore, using Maven is an excellent choice when trying to let every developer choose their preferred development environment.
 
 What does it take to make a new Maven project?
 ==============================================
@@ -84,7 +84,7 @@ Dependencies
 
 Maven is not only a build tool, but also a dependency management tool.
 
-To depend on another library, you must declare the dependencies in your project's *pom.xml* file. For example, every [ImageJ 1.x](ImageJ_1.x) plugin will depend on ImageJ 1.x. So let's add that (before the final *</project>* line):
+To depend on another library, you must declare the dependencies in your project's *pom.xml* file. For example, every [ImageJ 1.x](/software/imagej1) plugin will depend on ImageJ 1.x. So let's add that (before the final *</project>* line):
 
     <dependencies>
       <dependency>
@@ -101,9 +101,9 @@ Repositories
 
 Once your dependencies are declared, Maven will download them on demand from the Internet. However, for Maven to find the dependencies, it has to know where to look.
 
-Out of the box, Maven will look in the so-called [Maven Central repository](https://search.maven.org/). Some ImageJ and SciJava components are deployed there, including the [pom-scijava parent POM](Architecture#Maven_component_structure) which declares important metadata, such as the [Bill of Materials](Bill_of_Materials): current artifact versions intended to work together.
+Out of the box, Maven will look in the so-called [Maven Central repository](https://search.maven.org/). Some ImageJ and SciJava components are deployed there, including the [pom-scijava parent POM](Architecture#Maven_component_structure) which declares important metadata, such as the [Bill of Materials](/Architecture#Bill_of_Materials): current artifact versions intended to work together.
 
-However, many other SciJava and ImageJ components are not yet deployed to Maven Central, but instead to the [SciJava Maven repository](SciJava_Maven_repository). To gain access to this repository from your project, add the following configuration block to your *pom.xml*:
+However, many other SciJava and ImageJ components are not yet deployed to Maven Central, but instead to the [SciJava Maven repository](/Project_management#Maven). To gain access to this repository from your project, add the following configuration block to your *pom.xml*:
 
     <repositories>
       <repository>
@@ -112,7 +112,7 @@ However, many other SciJava and ImageJ components are not yet deployed to Maven 
       </repository>
     </repositories>
 
-As a rule of thumb: components [versioned at 0.x](Versioning) are deployed to the SciJava Maven repository, while those at 1.x or later are deployed to Maven Central.
+As a rule of thumb: components [versioned at 0.x](/develop/versioning) are deployed to the SciJava Maven repository, while those at 1.x or later are deployed to Maven Central.
 
 Releases and snapshots
 ----------------------
@@ -124,7 +124,7 @@ Producing multiple JAR files
 
 So what if you have multiple *.jar* files you want to build in the same project? Then these need to live in their own subdirectories and there needs to be a common parent POM, a so-called *aggregator* or *multi-module* POM (only this POM needs to have the SciJava POM as parent, of course). {% include github org='imagej' repo='tutorials' tag='577286474be8399eb38d30d66cf0c35ee50bd929' path='pom.xml\#L47-L62' label='Here is an example' %}. Basically, it is adding the <packaging>`pom`</packaging> entry at the top, as well as some subdirectory names to the <modules> section.
 
-Note, however, that most projects of the [SciJava component collection](Architecture) (e.g., [SciJava](SciJava), [ImgLib2](ImgLib2), [SCIFIO](SCIFIO), [ImageJ](ImageJ) and [Fiji](Fiji)) now structure each component as its own single-module project in its own Git repository, since using multi-module projects can complicate versioning.
+Note, however, that most projects of the [SciJava component collection](/develop/architecture) (e.g., [SciJava](SciJava), [ImgLib2](/imglib2), [SCIFIO](/software/scifio), [ImageJ](/about) and [Fiji](/fiji)) now structure each component as its own single-module project in its own Git repository, since using multi-module projects can complicate versioning.
 
 Convention over configuration
 -----------------------------
@@ -157,7 +157,7 @@ If there are no public repositories containing your dependency, you have two opt
 
 <!-- -->
 
--   If the dependency is narrower in scope, you could [contact the ImageJ & Fiji maintainers](Mailing_Lists) to get your needed dependency added to the SciJava Maven repository. Note that you will then be responsible for distributing the dependency with your code—so ensure it is [licensed appropriately](Licensing).
+-   If the dependency is narrower in scope, you could [contact the ImageJ & Fiji maintainers](Mailing_Lists) to get your needed dependency added to the SciJava Maven repository. Note that you will then be responsible for distributing the dependency with your code—so ensure it is [licensed appropriately](/licensing).
 
 Finally, for local testing you can [install the dependency into your local Maven repository cache yourself](https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html). The command is `mvn install:install-file`. For example, if you have a library `foo.jar` to install, you could run:
 
@@ -168,12 +168,12 @@ For the `groupId`, it is typically best to use the reversed domain name of the l
 
 **WARNING:** If you use `install:install-file`, others will not be able to build your code unless they also use `install:install-file` to install the library on their systems.
 
-When in doubt, [contact the community](Help) with your questions.
+When in doubt, [contact the community](/help) with your questions.
 
 Further reading
 ===============
 
--   Our very own [Maven FAQ](Maven_-_Frequently_Asked_Questions)
+-   Our very own [Maven FAQ](/develop/maven-faq)
 -   [Maven's Getting Started](https://maven.apache.org/guides/getting-started/)
 -   [Maven: The Complete Reference](https://books.sonatype.com/mvnref-book/reference/index.html)
 -   [Maven by Example](https://books.sonatype.com/mvnex-book/reference/index.html)

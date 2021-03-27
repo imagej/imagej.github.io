@@ -18,7 +18,7 @@ description: test description
 {% capture source%}
 {% include github org='ijpb' repo='ijpb-plugins' %}
 {% endcapture %}
-{% include info-box name='Classic Watershed' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}{\| \|<span>  
+{% include info-box name='Classic Watershed' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}{\| \|<span>  
 </span>style="vertical-align:top" \|{% include thumbnail src='/media/Classic-Watershed-lines-blur-blobs.png' title='Overlay of watershed lines on blurred blobs.'%} \|}
 
 Introduction
@@ -86,7 +86,7 @@ Image:Blobs-blur.png\|Gaussian-blurred blobs image used as input (radius = 3). I
 Installation
 ------------
 
-The Classic Watershed plugin is part of the [MorphoLibJ](MorphoLibJ) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the IJPB-plugins update site:
+The Classic Watershed plugin is part of the [MorphoLibJ](/plugins/morpholibj) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the IJPB-plugins update site:
 
 1\) Select {% include bc content='Help | Update...'%} from the Fiji menu to start the updater.
 
@@ -98,7 +98,7 @@ The Classic Watershed plugin is part of the [MorphoLibJ](MorphoLibJ) library. To
 
 You should now find the plugin under the sub-menu {% include bc content='Plugins |MorphoLibJ | Segmentation'%}.
 
-**Note**: Classic Watershed is only one of the plugins included in the [MorphoLibJ](MorphoLibJ) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
+**Note**: Classic Watershed is only one of the plugins included in the [MorphoLibJ](/plugins/morpholibj) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
 References
 ----------
@@ -108,8 +108,8 @@ References
 See also
 --------
 
--   [Marker-controlled Watershed](Marker-controlled_Watershed), a plugin to perform watershed by flooding from specific seed points or markers.
--   [Morphological Segmentation](Morphological_Segmentation), a plugin with a graphical user interface to segment images based on morphological operations and the watershed algorithm.
+-   [Marker-controlled Watershed](/plugins/marker-controlled-watershed), a plugin to perform watershed by flooding from specific seed points or markers.
+-   [Morphological Segmentation](/plugins/morphological-segmentation), a plugin with a graphical user interface to segment images based on morphological operations and the watershed algorithm.
 -   [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
 -   [G. Bertrand's Topological Watershed site](http://www.esiee.fr/~info/tw/index.html), with papers, lecture slides and source code.
 

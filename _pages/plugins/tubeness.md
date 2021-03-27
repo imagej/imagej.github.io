@@ -14,7 +14,7 @@ description: test description
 
 
 {% capture text%}
-A multithreaded implementation of the original IJ1 Tubeness plugin has been [developed](https://github.com/imagej/imagej-ops/pull/527) by {% include person content='JeanYvesTinevez' %} in the context of [ImageJ\_Ops](ImageJ_Ops).
+A multithreaded implementation of the original IJ1 Tubeness plugin has been [developed](https://github.com/imagej/imagej-ops/pull/527) by {% include person content='JeanYvesTinevez' %} in the context of [ImageJ\_Ops](/develop/imagej-ops).
 {% endcapture %}
 {% include ambox text=text %}
 

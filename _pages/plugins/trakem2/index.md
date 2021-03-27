@@ -15,12 +15,12 @@ Features
 
 -   **Segmentation:** manually draw areas across stacks, and sketch structures with balls and pipes. Skeletonize entire neuronal arborizations and represent synapses with relational connector objects.
 -   **Measurements:** volumes, surfaces, lengths, and also measurements via ImageJ ROIs.
--   **Image Registration:** register floating image tiles to each other using [SIFT](Feature_Extraction) and global optimization algorithms.
--   **3D Visualization:** interacting with the [3D Viewer](3D_Viewer) plugin, TrakEM2 displays image volumes and 3D meshes of all kinds.
+-   **Image Registration:** register floating image tiles to each other using [SIFT](/plugins/feature-extraction) and global optimization algorithms.
+-   **3D Visualization:** interacting with the [3D Viewer](/plugins/3d-viewer) plugin, TrakEM2 displays image volumes and 3D meshes of all kinds.
 -   **Image Annotation:** floating text labels.
 -   **Semantic segmentation:** order segmentations in tree hierarchies, whose template is exportable for reuse in other, comparable projects.
 
-TrakEM2 interacts with the [3D Viewer](3D_Viewer) for visualization of image volumes and 3D meshes.
+TrakEM2 interacts with the [3D Viewer](/plugins/3d-viewer) for visualization of image volumes and 3D meshes.
 
 TrakEM2 in Fiji
 ---------------
@@ -33,9 +33,9 @@ Documentation
 
 -   [How to](http://www.ini.uzh.ch/~acardona/howto.html)
 -   [Manual](http://www.ini.uzh.ch/~acardona/trakem2_manual.html)
--   [TrakEM2 tutorials](TrakEM2_tutorials) with video tutorials.
--   Examples of [scripting in TrakEM2](TrakEM2_Scripting).
--   Writing [plugins for TrakEM2](TrakEM2_TPlugIn).
+-   [TrakEM2 tutorials](/plugins/trakem2/tutorials) with video tutorials.
+-   Examples of [scripting in TrakEM2](/plugins/trakem2/scripting).
+-   Writing [plugins for TrakEM2](/plugins/trakem2/tplugin).
 
 Running fiji for heavy-duty, memory-intensive, high-performance TrakEM2 tasks
 -----------------------------------------------------------------------------
@@ -88,7 +88,7 @@ A. Use the built-in commands from the right-click menu, such as:
 -   "Adjust images - Enhance contrast layer-wise"
 -   "Adjust images - Set min and max layer-wise"
 
-B. Create a preprocessor script and set it to all images. For example, a [beanshell](Beanshell_Scripting) script to run [CLAHE](CLAHE) on each image. In the script, the <i>patch</i> and <i>imp</i> variables exist automatically, and represent the [Patch](https://fiji.sc/javadoc/ini/trakem2/display/Patch.html) instance and the [ImagePlus](https://fiji.sc/javadoc/ij/ImagePlus.html) instance that the Patch wraps, respectively.
+B. Create a preprocessor script and set it to all images. For example, a [beanshell](Beanshell_Scripting) script to run [CLAHE](/plugins/enhance-local-contrast-clahe) on each image. In the script, the <i>patch</i> and <i>imp</i> variables exist automatically, and represent the [Patch](https://fiji.sc/javadoc/ini/trakem2/display/Patch.html) instance and the [ImagePlus](https://fiji.sc/javadoc/ij/ImagePlus.html) instance that the Patch wraps, respectively.
 
     import ij.IJ;
     IJ.run(imp, "Enhance Local Contrast (CLAHE)", "blocksize=127"
@@ -152,7 +152,7 @@ As for a graphics card buy the largest you can afford, both in computing power a
 Examples
 --------
 
-{% include thumbnail src='/media/Trakem2-snap.jpg' title='TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each.'%} <img src="/media/TrakEM2 Display.png" title="fig:TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right)." width="232" alt="TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right)." /> {% include thumbnail src='/media/3D-Viewer.jpg' title='3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes. Above, secondary lineages of <i>Drosophila</i> third instar larval brain segmented in TrakEM2.'%} {% include thumbnail src='/media/TrakEM2-trees.png' title='The three TrakEM2 trees, as an interface for editing and visualizing the three internal TrakEM2 data structures.'%} {% include thumbnail src='/media/Clahe-live-filter.jpg' title='Effect of the [CLAHE](Enhance_Local_Contrast_(CLAHE) "wikilink") live filter in TrakEM2. Data with high dynamic range is displayed with perceptually boosted local contrast. [CLAHE parameters](Enhance_Local_Contrast_(CLAHE) "wikilink") are relative to display pixels and, therefore, will not result in an effective bandpass when zooming out largely on statically pre-processed images.'%} {% include thumbnail src='/media/Neuronal-arbors-1.png' title='Neuronal arbors reconstructed with TrakEM2 using the [treeline](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) segmentation type.'%} {% include thumbnail src='/media/TrakEM2-arealists.png' title='Neuronal arbors from serial section electron microscopy reconstructed with TrakEM2 using the [manually segmentated data set](http://www.ini.uzh.ch/~acardona/data.html).'%} {% include thumbnail src='/media/TrakEM2-display-2.png' title='[TrakEM2](TrakEM2) showing one section of a serial section transmission electron microscopy (ssTEM) data set, with numerous neuronal arbors reconstructed using [treelines](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) and [connectors](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#connectors) (for synapses).'%} {% include thumbnail src='/media/TrakEM2 Display segmentations.png' title='Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList and floating text labels.'%} {% include clear content='left' %}
+{% include thumbnail src='/media/Trakem2-snap.jpg' title='TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each.'%} <img src="/media/TrakEM2 Display.png" title="fig:TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right)." width="232" alt="TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right)." /> {% include thumbnail src='/media/3D-Viewer.jpg' title='3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes. Above, secondary lineages of <i>Drosophila</i> third instar larval brain segmented in TrakEM2.'%} {% include thumbnail src='/media/TrakEM2-trees.png' title='The three TrakEM2 trees, as an interface for editing and visualizing the three internal TrakEM2 data structures.'%} {% include thumbnail src='/media/Clahe-live-filter.jpg' title='Effect of the [CLAHE](Enhance_Local_Contrast_(CLAHE) "wikilink") live filter in TrakEM2. Data with high dynamic range is displayed with perceptually boosted local contrast. [CLAHE parameters](Enhance_Local_Contrast_(CLAHE) "wikilink") are relative to display pixels and, therefore, will not result in an effective bandpass when zooming out largely on statically pre-processed images.'%} {% include thumbnail src='/media/Neuronal-arbors-1.png' title='Neuronal arbors reconstructed with TrakEM2 using the [treeline](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) segmentation type.'%} {% include thumbnail src='/media/TrakEM2-arealists.png' title='Neuronal arbors from serial section electron microscopy reconstructed with TrakEM2 using the [manually segmentated data set](http://www.ini.uzh.ch/~acardona/data.html).'%} {% include thumbnail src='/media/TrakEM2-display-2.png' title='[TrakEM2](/plugins/trakem2) showing one section of a serial section transmission electron microscopy (ssTEM) data set, with numerous neuronal arbors reconstructed using [treelines](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) and [connectors](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#connectors) (for synapses).'%} {% include thumbnail src='/media/TrakEM2 Display segmentations.png' title='Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList and floating text labels.'%} {% include clear content='left' %}
 
 Publication
 -----------

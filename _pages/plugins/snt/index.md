@@ -28,14 +28,14 @@ SNT is ImageJ's framework for semi-automated tracing, visualization, quantitativ
 
 SNT's documentation is extensive. Please use the navigation bar on too of the page to access the different sections. The major sections are organized as follows:
 
--   **[Manual](SNT__Manual)**: SNT's user guide for tracing operations
--   **[Walk-throughs](SNT__Step-By-Step_Instructions)**: Detailed step-by-step instructions for specific tasks
--   **[Screencasts](SNT__Screencasts)**: Video tutorials. If you are using SNT for the first time you probably want to start here
--   **[Reconstruction Viewer](SNT__Reconstruction_Viewer)**: SNT's entry point for visualization of pre-existing data. If you are analyzing reconstructions you may want to start here
--   **[Analysis](SNT__Analysis)** Overview of all analysis commands, accessible in either the tracing interface or [Reconstruction Viewer](SNT__Reconstruction_Viewer)
--   **[Scripting](SNT__Scripting)** Details on how to use SNT as a scripting library
+-   **[Manual](/plugins/snt/manual)**: SNT's user guide for tracing operations
+-   **[Walk-throughs](/plugins/snt/step-by-step-instructions)**: Detailed step-by-step instructions for specific tasks
+-   **[Screencasts](/plugins/snt/screencasts)**: Video tutorials. If you are using SNT for the first time you probably want to start here
+-   **[Reconstruction Viewer](/plugins/snt/reconstruction-viewer)**: SNT's entry point for visualization of pre-existing data. If you are analyzing reconstructions you may want to start here
+-   **[Analysis](/plugins/snt/analysis)** Overview of all analysis commands, accessible in either the tracing interface or [Reconstruction Viewer](/plugins/snt/reconstruction-viewer)
+-   **[Scripting](/plugins/snt/scripting)** Details on how to use SNT as a scripting library
 
-{% include thumbnail src='/media/SimpleNeuriteTracer2.png' title='SNT Overview. A key feature of SNT is that \'\'every\'\' aspect of the program can be [scripted](SNT__Scripting) in any of Fiji\'s supported languages, or from Python through [pyimagej](https://github.com/imagej/pyimagej).'%}
+{% include thumbnail src='/media/SimpleNeuriteTracer2.png' title='SNT Overview. A key feature of SNT is that \'\'every\'\' aspect of the program can be [scripted](/plugins/snt/scripting) in any of Fiji\'s supported languages, or from Python through [pyimagej](https://github.com/imagej/pyimagej).'%}
 
 Features
 --------
@@ -58,20 +58,20 @@ Features
 -   Built-in commands for *immediate* retrieval of summary statistics, comparison plots and histograms
 -   Image processing: Reconstructions can be skeletonized, converted to masks or ROIs, and voxel intensities profiled
 -   [Sholl](SNT__Analysis#Sholl_Analysis) and [Horton-Strahler](SNT__Analysis#Strahler_Analysis) analyses. [Graph theory](https://en.wikipedia.org/wiki/Graph_theory) and [Persistent homology](https://en.wikipedia.org/wiki/Persistent_homology) -based analyses
--   Modeling: access to the [Cx3D simulation engine](SNT__Modeling)
+-   Modeling: access to the [Cx3D simulation engine](/plugins/snt/modeling)
 
 ### Visualization
 
--   [Reconstruction Viewer](SNT__Reconstruction_Viewer): Standalone hardware-accelerated 3D visualization tool for both meshes and reconstructions.
+-   [Reconstruction Viewer](/plugins/snt/reconstruction-viewer): Standalone hardware-accelerated 3D visualization tool for both meshes and reconstructions.
     -   Interactive and programmatic scenes (controlled rotations, panning, zoom, scaling, animation, “dark/light mode”, etc.)
     -   Customizable views: Interactive management of scene elements, controls for transparency, color interpolation, lightning, path smoothing, etc.. Ability to render both local and remote files on the same scene
     -   Built-in support for several template brains: Drosophila, zebrafish, and Allen CCF (Allen Mouse Brain Atlas)
--   [SciView](SciView) integration
+-   [SciView](/plugins/sciview) integration
 -   Quantitative, publication-quality visualization: Display neurons color coded by morphometric traits, or neuropil annotations. Export plots, reconstructions, diagrams and histograms as vector graphics
 
 ### Backwards Compatibility
 
--   Special effort was put into backwards compatibility with older Simple Neurite Tracer releases (including [TrakEM2](TrakEM2) and [ITK interaction](SNT__Tubular_Geodesics)). Inherited functionality has been improved, namely:
+-   Special effort was put into backwards compatibility with older Simple Neurite Tracer releases (including [TrakEM2](/plugins/trakem2) and [ITK interaction](/plugins/snt/tubular-geodesics)). Inherited functionality has been improved, namely:
     -   Extended support for sub-pixel accuracy
     -   Improved synchronization of XY, ZY, and XZ views
     -   Improved calls to Dijkstra’s filling and Path-fitting routines
@@ -80,14 +80,14 @@ Features
 Installation
 ------------
 
-SNT is currently distributed through the [Neuroanatomy](Neuroanatomy) [update site](Update_Sites). The first time you start SNT from Fiji’s menu structure ({% include bc content='Plugins|Neuroanatomy|SNT'%}, or its backwards-compatible alias {% include bc content='Plugins|NeuroAnatomy|Legacy|Simple Neurite Tracer...'%} ) you should be prompted for automatic subscription and download of required dependencies. If not:
+SNT is currently distributed through the [Neuroanatomy](/plugins/neuroanatomy) [update site](/update-sites). The first time you start SNT from Fiji’s menu structure ({% include bc content='Plugins|Neuroanatomy|SNT'%}, or its backwards-compatible alias {% include bc content='Plugins|NeuroAnatomy|Legacy|Simple Neurite Tracer...'%} ) you should be prompted for automatic subscription and download of required dependencies. If not:
 
-1.  Run the Fiji [Updater](Updater) ({% include bc content='Help|Update..'%}, the penultimate entry in the {% include bc content='Help|'%} menu)
+1.  Run the Fiji [Updater](/plugins/updater) ({% include bc content='Help|Update..'%}, the penultimate entry in the {% include bc content='Help|'%} menu)
 2.  Click *Manage update sites*
 3.  Select the *Neuroanatomy* checkbox
 4.  Click *Apply changes* and restart Fiji.
 
-**Optional**: For [SciView](https://imagej.net/SciView) and [Cx3D](SNT__Modeling) functionality, you need to subscribe to the *SciView-Unstable* update site. Note that there is nothing inherently *unstable* with this procedure: this nomenclature is adopted from the [Debian release cycle](https://www.debian.org/releases/). The minor annoyance here is that this *Bleeding Edge* site is not included in the official list (this may change in the future), so you'll have to specify its location to the updater:
+**Optional**: For [SciView](https://imagej.net/SciView) and [Cx3D](/plugins/snt/modeling) functionality, you need to subscribe to the *SciView-Unstable* update site. Note that there is nothing inherently *unstable* with this procedure: this nomenclature is adopted from the [Debian release cycle](https://www.debian.org/releases/). The minor annoyance here is that this *Bleeding Edge* site is not included in the official list (this may change in the future), so you'll have to specify its location to the updater:
 
 1.  Re-run the updater and click on *Manage update sites*
 2.  If you are currently subscribing to the *SciView* *regular* channel, please unselect its checkbox to minimize version conflicts

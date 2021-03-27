@@ -13,20 +13,20 @@ description: test description
 General Description
 -------------------
 
-Skeletonize3D is a Fiji and ImageJ plugin that performs the {% include wikipedia title='Topological skeleton' text='skeletonization'%} of 2D and 3D binary images (8-bit images). In Fiji, you can find it under {% include bc content='Plugins | Skeleton | Skeletonize (2D/3D)'%}. If you need to analyze a 2D/3D skeleton image, you may be interested on having a look at [AnalyzeSkeleton](AnalyzeSkeleton).
+Skeletonize3D is a Fiji and ImageJ plugin that performs the {% include wikipedia title='Topological skeleton' text='skeletonization'%} of 2D and 3D binary images (8-bit images). In Fiji, you can find it under {% include bc content='Plugins | Skeleton | Skeletonize (2D/3D)'%}. If you need to analyze a 2D/3D skeleton image, you may be interested on having a look at [AnalyzeSkeleton](/plugins/analyze-skeleton).
 
 Video tutorial
 --------------
 
-For a fast introduction to [Skeletonize3D](Skeletonize3D) and [AnalyzeSkeleton](AnalyzeSkeleton) and an example of a real application, you can have a look at this [ video tutorial](Skeleton_analysis_video_tutorial).
+For a fast introduction to [Skeletonize3D](/plugins/skeletonize3d) and [AnalyzeSkeleton](/plugins/analyze-skeleton) and an example of a real application, you can have a look at this [ video tutorial](Skeleton_analysis_video_tutorial).
 
 The tutorial describes step by step how to:
 
 -   Pre-process a 3D image to extract the relevant morphological information by
     -   removing the noise
     -   and binarizing
--   Extract the skeleton of a binary image with [Skeletonize3D](Skeletonize3D)
--   Analyze the resulting skeletons in the 3D image with [AnalyzeSkeleton](AnalyzeSkeleton)
+-   Extract the skeleton of a binary image with [Skeletonize3D](/plugins/skeletonize3d)
+-   Analyze the resulting skeletons in the 3D image with [AnalyzeSkeleton](/plugins/analyze-skeleton)
 
 Related work
 ------------

@@ -348,11 +348,11 @@ On our cluster powered by the Lustre filesystem the resaving operation takes onl
 Registration
 ------------
 
-SPIM registration consists of **within time-point** registration of the views followed by **across time-point** registration of the time-series. Both are achieved using Fiji's bead based SPIM registration plugin. The per-time-point registration is a pre-requisite for time-lapse registration. For detailed overview see [here](SPIM_Registration).
+SPIM registration consists of **within time-point** registration of the views followed by **across time-point** registration of the time-series. Both are achieved using Fiji's bead based SPIM registration plugin. The per-time-point registration is a pre-requisite for time-lapse registration. For detailed overview see [here](/plugins/spim-registration).
 
 ### Bead-based multi-view registration
 
-The first real step in the SPIMage processing pipeline, after re-saving as .tif, is to register the views within each timepoint. We will use for that the bead based registration plug-in in Fiji. The principle of the plug-in are described [here](SPIM_Registration_Method) while the parameters are discussed [here](SPIM_Bead_Registration).
+The first real step in the SPIMage processing pipeline, after re-saving as .tif, is to register the views within each timepoint. We will use for that the bead based registration plug-in in Fiji. The principle of the plug-in are described [here](/plugins/spim-registration/method) while the parameters are discussed [here](/plugins/spim-bead-registration).
 
 This description focuses on cluster processing and is less verbose, for details see section on [resaving](SPIM_Registration_on_cluster#Saving_data_as_tif) as the principles are the same.
 
@@ -512,7 +512,7 @@ Tips and tricks
 Fusion
 ------
 
-In multi-view SPIM imaging fusion means combination of registered views into a single output image. Fiji currently implements two distinct fusion strategies: content based fusion and multi-view deconvolution. For detailed overview see [SPIM registration](SPIM_Registration) page.
+In multi-view SPIM imaging fusion means combination of registered views into a single output image. Fiji currently implements two distinct fusion strategies: content based fusion and multi-view deconvolution. For detailed overview see [SPIM registration](/plugins/spim-registration) page.
 
 ### Content based multiview fusion
 
@@ -780,7 +780,7 @@ Coming soon.
 
 Finally we want generate a beautiful 3D rendering of the downsampled, fused data and run it as movies at conferences... ;-).
 
-The preparation phase of 3D rendering is a bit more complicated. We will use the [interactive Stack Rotation](Interactive_Stack_Rotation) plugin to position the specimen the way we want to render it and then send it to [3DViewer](3D_Viewer) plugin. Here is the recipe:
+The preparation phase of 3D rendering is a bit more complicated. We will use the [interactive Stack Rotation](/plugins/interactive-stack-rotation) plugin to position the specimen the way we want to render it and then send it to [3DViewer](/plugins/3d-viewer) plugin. Here is the recipe:
 
 1\. Open fused image stack and launch Interactive Stack Rotation plugin (Plugins-&gt;Transform-&gt;Interactive Stack Rotation). *Note: Familiarize yourself with the keystrokes that navigate the Interactive Stack Rotation. This is an extremely powerful way of looking at nearly isotropic 3D data coming from SPIM. More advanced version honoring these keystroke conventions is coming to Fiji soon (by Tobias Pietzsch).*
 
@@ -4385,7 +4385,7 @@ Modify the **master file** accordingly. Create the jobs using the **create\_expo
 New Multiview Reconstruction pipeline
 =====================================
 
-The key change in the **[Multiview Reconstruction](Multiview-Reconstruction)** (MVR) pipeline is that all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file.
+The key change in the **[Multiview Reconstruction](/plugins/multiview-reconstruction)** (MVR) pipeline is that all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file.
 
 Stephan Preibisch solved that problem by allowing to write one XML file per job (usually a timepoint) and then merging the job specific XMLs into one XML for the entire dataset.
 
@@ -4401,7 +4401,7 @@ Some new parameters are introduced and some old parameters change names. Therefo
 Define XML
 ----------
 
-First step in [**Multiview Reconstruction**](Multiview-Reconstruction) is to define an XML file that describes the imaged dataset. This is very flexible and can be adapted to datasets with several angles, channels, illumination sides and timepoints. The relevant portion of the *master* file looks like this:
+First step in [**Multiview Reconstruction**](/plugins/multiview-reconstruction) is to define an XML file that describes the imaged dataset. This is very flexible and can be adapted to datasets with several angles, channels, illumination sides and timepoints. The relevant portion of the *master* file looks like this:
 
     type_of_dataset="\"Image Stacks (ImageJ Opener)\""                      # raw fileformat
     xml_filename="\"dataset.xml\""                                          # filename
@@ -5026,6 +5026,6 @@ Tips and tricks
 -   the per-timepoint XML files can be deleted after the merge.
 -   regardless of whether or not the per-timepoint files are deleted, new per-timepoint XMLs can be added by re-running the merge.job
 
-[Invasion\_assay](Invasion_assay)
+[Invasion\_assay](/plugins/invasion-assay)
 
 [Registration](Category_Registration)

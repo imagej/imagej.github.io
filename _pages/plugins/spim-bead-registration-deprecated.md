@@ -11,7 +11,7 @@ description: test description
 Important Note
 --------------
 
-<span style="color:#A52A2A"> ***Please Note: This version of the software is outdated. It will be part of Fiji for the time being, but I highly recommend using the new [Multiview Reconstruction Plugin](Multiview-Reconstruction). It is much more powerful, flexible and completely integrated with the [BigDataViewer](BigDataViewer).*** </span>
+<span style="color:#A52A2A"> ***Please Note: This version of the software is outdated. It will be part of Fiji for the time being, but I highly recommend using the new [Multiview Reconstruction Plugin](/plugins/multiview-reconstruction). It is much more powerful, flexible and completely integrated with the [BigDataViewer](BigDataViewer).*** </span>
 
 Citation
 --------
@@ -20,7 +20,7 @@ Please note that the SPIM registration plugin available through Fiji, is based o
 
 -   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](/media/Nmeth0610-418.pdf) [Supplement](/media/Nmeth0610-418-S1.pdf)
 
-For technical details about the bead-based registration method and SPIM imaging see [SPIM Registration Method](SPIM_Registration_Method).
+For technical details about the bead-based registration method and SPIM imaging see [SPIM Registration Method](/plugins/spim-registration/method).
 
 Overview of the ***deprecated*** SPIM bead-based registration plugin
 --------------------------------------------------------------------

@@ -6,14 +6,14 @@ categories: Docker,Fiji,News
 description: test description
 ---
 
-Today, the [ImageJ team](Contributors) is pleased to announce the first official support for running ImageJ in Docker: Fiji images!
+Today, the [ImageJ team](/about/contributors) is pleased to announce the first official support for running ImageJ in Docker: Fiji images!
 
 Motivation
 ==========
 
 If you aren't already familiar with [Docker](https://www.docker.com/), it provides a flexible mechanism for distributing operating system + application state.
 
-For ImageJ, this means a way to guarantee scientific [reproducibility](Reproducibility) across all the variables of software use: not just installed plugins and update sites, but Java versions, system tools, environment variables, and even OS version.
+For ImageJ, this means a way to guarantee scientific [reproducibility](/Architecture#Reproducible_builds) across all the variables of software use: not just installed plugins and update sites, but Java versions, system tools, environment variables, and even OS version.
 
 It also should help provide new paradigms for lifeline distributions and minimization of dependencies/prerequisites.
 
@@ -24,7 +24,7 @@ For now, the first Docker images are Fiji distributions with various Java versio
 
 -   [Fiji on Docker Hub](https://registry.hub.docker.com/u/fiji/fiji/)
 -   [Fiji Dockerfiles](https://github.com/fiji/dockerfiles)
--   [Instructions for use](Docker)
+-   [Instructions for use](/plugins/docker)
 
 Please note that Docker use of Fiji is still highly experimental, but any feedback and contributions would be welcome!
 

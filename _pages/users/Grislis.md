@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Aivar Grislis' affiliation='UW-Madison [LOCI](LOCI) (former)' loci='aivar-grislis' github='grislis' osrc='grislis' %}
+{% include user-box name='Aivar Grislis' affiliation='UW-Madison [LOCI](/orgs/loci) (former)' loci='aivar-grislis' github='grislis' osrc='grislis' %}

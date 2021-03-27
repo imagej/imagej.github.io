@@ -6,7 +6,7 @@ categories: News
 description: test description
 ---
 
-A new minor version of [TrackMate\_](TrackMate) has been released. This page lists the changes that are visible to the user.
+A new minor version of [TrackMate\_](/plugins/trackmate) has been released. This page lists the changes that are visible to the user.
 
 Version 2.1.0 focuses mainly on performance and usability improvements for manual editing and manual tracking using TrackMate. It also features GUI improvements.
 

@@ -30,7 +30,7 @@ Installation
 
 2\) Manage update sites
 
-3\) Check the box for "PQCT"
+3\) Check the box for "/plugins/pqct"
 
 4\) Close the list
 

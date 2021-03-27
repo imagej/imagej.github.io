@@ -33,9 +33,9 @@ In order to install AplimTools on your computer, please follow these simple step
 
 3\. In this list, activate **ImageJ-ITK** by checking the corresponding checkboxes. Don't close the window, or reopen it you read this to late.
 
-4\. Add the **Fijiyama** repository (by clicking on the button **Add update site**, and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama), then check the associated checkbox. Don't close the window, or reopen it you read this to late.
+4\. Add the **Fijiyama** repository (by clicking on the button **Add update site**, and filling the fields : name = "/plugins/fijiyama", site = https://sites.imagej.net/Fijiyama), then check the associated checkbox. Don't close the window, or reopen it you read this to late.
 
-5\. Add the **AplimTools** repository (by clicking on the button **Add update site**, and filling the fields : name = "AplimTools", site = https://sites.imagej.net/AplimTools), then check the associated checkbox. Now you can click on **Close**.
+5\. Add the **AplimTools** repository (by clicking on the button **Add update site**, and filling the fields : name = "/plugins/aplimtools", site = https://sites.imagej.net/AplimTools), then check the associated checkbox. Now you can click on **Close**.
 
 6\. Restart Fiji: a new **AplimTools** entry should be available in the menu Plugins &gt; Analyze. If not, go back to the Update Manager, and check that the repositories **ImageJ-ITK**, **Fijiyama**, and **AplimTools** are correctly selected.
 

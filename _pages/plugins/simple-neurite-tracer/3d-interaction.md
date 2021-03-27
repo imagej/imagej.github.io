@@ -9,7 +9,7 @@ description: test description
 {% include sntdeprecation%}
 
 
-It is now possible to select the points for traces in the [3D Viewer](3D_Viewer) rather than the 2D view.
+It is now possible to select the points for traces in the [3D Viewer](/plugins/3d-viewer) rather than the 2D view.
 
 {% include youtube url='https://www.youtube.com/embed/Vt4m55V7AjI'%}
 

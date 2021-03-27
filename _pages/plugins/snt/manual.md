@@ -17,7 +17,7 @@ SNT Commands
 SNT registers three commands in Fiji's menu structure in the {% include bc content='Plugins|NeuroAnatomy| '%} sub-menu:
 
 **[SNT](#Startup_Prompt "wikilink")...**:The main interface with *all* available commands with access to all viewers and canvases. Tracing and path editing operations are done from this interface.  
-**[Rec. Viewer](SNT__Reconstruction_Viewer)**:A fast, streamlined interface for analysis of existing neuroanatomical data.  
+**[Rec. Viewer](/plugins/snt/reconstruction-viewer)**:A fast, streamlined interface for analysis of existing neuroanatomical data.  
 **[Reconstruction Plotter](#RecPlotter "wikilink")**:A utility command for quickly render reconstructions in vector format without having to load other interfaces.  
 
 Startup Prompt
@@ -105,7 +105,7 @@ Contains commands for organizing tracing views on screen, plus commands for disp
 -   {% include bc content='Arrange Views'%} Resets the view pane on-screen positions to their default.
 -   {% include bc content='Hide Tracing Canvas| '%} Allows toggling of the visibility of the three orthogonal view panes as well as the Legacy 3D View window.
 -   {% include bc content='Show Cached Filtered Image'%} Displays the cached filtered image in a separate window. Note a filtered image must be loaded in order to use this feature. The process of loading a filtered image is detailed in [Generating Filtered Images](SNT__Step-By-Step_Instructions#Generating_Filtered_Images).
--   {% include bc content='Show Cached Hessian Tubeness Image'%} Displays the cached *Hessian (Tubeness) image* in a separate window. Note there are two ways to enable this feature. Either 1) enable *Hessian-based analysis* then run the *Cache All Hessian Computations* command from the "Auto-tracing" gear drop-down menu or 2) use the *Load Precomputed "Tubeness" Image* option in the same gear menu. These features are detailed in the "Auto-tracing" section of the [Main Dialog](SNT__Overview#Main_Dialog) overview guide.
+-   {% include bc content='Show Cached Hessian Tubeness Image'%} Displays the cached *Hessian (Tubeness) image* in a separate window. Note there are two ways to enable this feature. Either 1) enable *Hessian-based analysis* then run the *Cache All Hessian Computations* command from the "Auto-tracing" gear drop-down menu or 2) use the *Load Precomputed "/plugins/tubeness" Image* option in the same gear menu. These features are detailed in the "Auto-tracing" section of the [Main Dialog](SNT__Overview#Main_Dialog) overview guide.
 
 Main Tab
 --------
@@ -124,9 +124,9 @@ This home tab aggregated widgets for tracing and frequent operations.
 
 ### Auto-tracing
 
-![](/media/SNT-auto-tracing.png "fig:SNT-auto-tracing.png") **Enable A\* search algorithm** By default, SNT uses the [A\* search](https://en.wikipedia.org/wiki/A*_search_algorithm) to automatically trace paths between two manually selected points. To manually place nodes in a path, toggle this feature off. Note that it is also possible to enable other algorithms through the installation of SNT add-ons. See [Tubular Geodesics](SNT__Tubular_Geodesics) for details.
+![](/media/SNT-auto-tracing.png "fig:SNT-auto-tracing.png") **Enable A\* search algorithm** By default, SNT uses the [A\* search](https://en.wikipedia.org/wiki/A*_search_algorithm) to automatically trace paths between two manually selected points. To manually place nodes in a path, toggle this feature off. Note that it is also possible to enable other algorithms through the installation of SNT add-ons. See [Tubular Geodesics](/plugins/snt/tubular-geodesics) for details.
 
-**Hessian-based analysis** (Toggling shortcut: {% include key content='H' %}) A quick way to improve the quality and efficiency of the pathfinding is to enable this feature, in which paths are computed after filtering the image for tube-like structures. Upon such filtering, SNT will use a measure of [Tubeness](Tubeness) at each point of the image to define the best path through it, based on eigenvalues and eigenvectors of the [Hessian matrix](https://en.wikipedia.org/wiki/Hessian_matrix). The later can be used to infer the likelihood that a point in the image belongs to a tube-like structure. This concept is also known as *vesselness* or *neuriteness*.
+**Hessian-based analysis** (Toggling shortcut: {% include key content='H' %}) A quick way to improve the quality and efficiency of the pathfinding is to enable this feature, in which paths are computed after filtering the image for tube-like structures. Upon such filtering, SNT will use a measure of [Tubeness](/plugins/tubeness) at each point of the image to define the best path through it, based on eigenvalues and eigenvectors of the [Hessian matrix](https://en.wikipedia.org/wiki/Hessian_matrix). The later can be used to infer the likelihood that a point in the image belongs to a tube-like structure. This concept is also known as *vesselness* or *neuriteness*.
 
 **Hessian options** (Specified in the *gear* drop-down menu) may be chosen *Manually* (if you already have a quantitative understanding of the image) or *Visually* (generally more intuitive). Hessian analysis requires two parameters to be specified:
 
@@ -164,13 +164,13 @@ Other options are also available in the *gear* drop-down menu:
 -   **Flush Cached Data** Removes cached data from memory
 -   **Show Cached "Tubeness Image"** Displays the *Tubeness* data currently cached. Useful for debugging purposes. Also mirrored in {% include bc content='View | Show Cached/Loaded Hessian (Tubeness) Image'%}.
 
-<figure><img src="/media/Original-hessian-side-by-side.png" title="OP_1 &quot;Tubeness&quot; image overlay at 80% opacity" width="400" alt="OP_1 &quot;Tubeness&quot; image overlay at 80% opacity" /><figcaption aria-hidden="true">OP_1 "Tubeness" image overlay at 80% opacity</figcaption></figure>
+<figure><img src="/media/Original-hessian-side-by-side.png" title="OP_1 &quot;Tubeness&quot; image overlay at 80% opacity" width="400" alt="OP_1 &quot;Tubeness&quot; image overlay at 80% opacity" /><figcaption aria-hidden="true">OP_1 "/plugins/tubeness" image overlay at 80% opacity</figcaption></figure>
 
 ### Tracing on Secondary Image
 
 This is one of SNT's most advanced features. [Hessian-based analysis](#Auto-tracing "wikilink") provides a convenient and easy way to perform auto-tracing on pre-processed data in which voxels defining the traced structure are scored by their likelihood of *belonging* to a tube-like structure. However, it is just one approach for "tubeness" classification. What if your data requires different filtering?, or you want to experiment with other approaches?, or the perfect pre-processing algorithm for your images is not yet available in ImageJ? *Tracing on Secondary Image* is the answer to these questions: It allows you to feed SNT with pre-processed data on which the A\*star search will operate. Here are two specific usages for this option:
 
--   **Frangi *Vesselness* filtering** For certain datasets Frangi filtering ([Frangi et al. 1998](https://link.springer.com/content/pdf/10.1007%252FBFb0056195.pdf)) is more effective than [Tubeness](Tubeness) at enhancing tube-like structures in the image. However, it is more computation intensive, and thus, less suitable to be adopted by the "compute-as-needed" approach used in Hessian-based analysis. Thus, one can import a pre-computed Frangi-filtered image using this option.
+-   **Frangi *Vesselness* filtering** For certain datasets Frangi filtering ([Frangi et al. 1998](https://link.springer.com/content/pdf/10.1007%252FBFb0056195.pdf)) is more effective than [Tubeness](/plugins/tubeness) at enhancing tube-like structures in the image. However, it is more computation intensive, and thus, less suitable to be adopted by the "compute-as-needed" approach used in Hessian-based analysis. Thus, one can import a pre-computed Frangi-filtered image using this option.
 -   **Hessian-analysis at multiple scales** Let's consider a structure formed simultaneously by very thick and very thin processes (e.g. axons and dendrites). To trace it one would need to adjust continuously the sigma parameter while tracing. Instead, to trace structures of variable diameters more effectively, one could load a copy of the current image as *secondary image*, and assign different hessian parameters to both images.
 -   **Adopting probability maps** Pre-classified images (using e.g., machine learning) could also be loaded here.
 
@@ -197,13 +197,13 @@ By default, all the nodes of a path are projected onto the current Z-slice. This
 2.  **Only nodes within {x} nearby Z-slices** Only highlight nodes within {x} number of Z-slices on either side of the current slice. The projected skeletons of all paths remain visible.
 3.  **Only paths from active channel/frame** If tracing on a multichannel image or an image with a time axis, only show paths from the active channel or frame.
 
-Any combination of these options may be toggled simultaneously. Note that these options do not apply to [Rec. Viewer](SNT__Reconstruction_Viewer) and [SciView](SciView).
+Any combination of these options may be toggled simultaneously. Note that these options do not apply to [Rec. Viewer](/plugins/snt/reconstruction-viewer) and [SciView](/plugins/sciview).
 
 ### Default Path Colors
 
 <img src="/media/Default-path-colors.png" title="fig:" width="300" /> <img src="/media/CMYK-color-model.png" title="fig:CMYK color selection UI" width="300" alt="CMYK color selection UI" /> By default, finished paths are colored by their selection status (only selected paths can be edited, or extended). The default colors are <font color="#00FF00">Green</font> (selected paths) and <font color="#FF00FF">Magenta</font> (deselected). Default colors can be customized by pressing the respective button in the widget and using the [CMYK color chooser](https://en.wikipedia.org/wiki/CMYK_color_model). For customizing unconfirmed and temporary paths, see the *Colors* option in the [UI Interaction](#UI_Interaction "wikilink") widget.
 
-**Enforce default colors (ignore color tags)** If active, SNT will force all paths to conform to the default "Selected" and "Deselected" color buttons. Any custom color tags will be ignored until the option is toggled off. Note that this options does not apply to [Rec. Viewer](SNT__Reconstruction_Viewer) and [SciView](SciView).
+**Enforce default colors (ignore color tags)** If active, SNT will force all paths to conform to the default "Selected" and "Deselected" color buttons. Any custom color tags will be ignored until the option is toggled off. Note that this options does not apply to [Rec. Viewer](/plugins/snt/reconstruction-viewer) and [SciView](/plugins/sciview).
 
 
 {% capture tip%}
@@ -299,7 +299,7 @@ The [Reconstruction Viewer](https://imagej.net/SNT:_Reconstruction_Viewer) is an
 
 ### SciView
 
-[SciView](SciView) is IJ2's modern replacement for the Legacy 3D Viewer, providing sophisticated 3D visualization and virtual reality capabilities for arbitrarily large image volumes and meshes. Since it is fully integrated with SNT, SciView can enhance tracing, analysis and visualization routines by providing a deeper, more contextualized view of the imagery at hand. Additionally, native integration with [Cx3D](https://github.com/morphonets/cx3d) enables simulation of neurodevelopmental processes, including neuronal growth and formation of cortical circuits. See [SNT: Modeling](https://imagej.net/SNT:_Modeling) for details.
+[SciView](/plugins/sciview) is IJ2's modern replacement for the Legacy 3D Viewer, providing sophisticated 3D visualization and virtual reality capabilities for arbitrarily large image volumes and meshes. Since it is fully integrated with SNT, SciView can enhance tracing, analysis and visualization routines by providing a deeper, more contextualized view of the imagery at hand. Additionally, native integration with [Cx3D](https://github.com/morphonets/cx3d) enables simulation of neurodevelopmental processes, including neuronal growth and formation of cortical circuits. See [SNT: Modeling](https://imagej.net/SNT:_Modeling) for details.
 
 ### Legacy 3D Viewer
 
@@ -316,7 +316,7 @@ Right-clicking on any of the image views will bring up a menu with various editi
 -   **Continue Extending Path** Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path: first select it, choose this option, then place additional nodes as shown in [Step-By-Step Instructions](SNT__Step-By-Step_Instructions#II._Pick_A_Subsequent_Point).
 -   **Pause SNT** Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image processing routines with tracing operations. Note that if the image contents change while SNT is paused, the image should be reloaded so that SNT is aware of the changes. Tracing views are annotated with the *SNT Paused* [label](SNT__Overview#UI_Interaction) to indicate this state.
 -   **Pause Tracing** Disables tracing functions until this option is deselected. Tracing views are annotated with the *Tracing Paused* [label](SNT__Overview#UI_Interaction) to indicate this state.
--   **Sholl Analysis at Nearest Node** {% include key content='Shift' %}+{% include key content='Alt' %}+{% include key content='A' %} Runs the [Sholl Analysis](Sholl_Analysis) plugin found in {% include bc content='Analyze|Sholl|Sholl Analysis (From Tracings)'%}. Note the *Center* parameter, which sets the center point of the analysis, is left out as this value is given by the selected node.
+-   **Sholl Analysis at Nearest Node** {% include key content='Shift' %}+{% include key content='Alt' %}+{% include key content='A' %} Runs the [Sholl Analysis](/plugins/sholl-analysis) plugin found in {% include bc content='Analyze|Sholl|Sholl Analysis (From Tracings)'%}. Note the *Center* parameter, which sets the center point of the analysis, is left out as this value is given by the selected node.
 
 ### Editing Paths
 
@@ -475,7 +475,7 @@ This menu contains several options which provide quick ways to analyze and visua
     -   *Roi filtering*
         -   *None*
         -   *Convert only segments contained by ROI*
-    -   *Run "Analyze Skeleton" after conversion* Runs the [AnalyzeSkeleton](AnalyzeSkeleton) plugin on the skeletonized output image.
+    -   *Run "Analyze Skeleton" after conversion* Runs the [AnalyzeSkeleton](/plugins/analyze-skeleton) plugin on the skeletonized output image.
 
 <center>
 

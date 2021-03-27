@@ -16,10 +16,10 @@ The plugin can perform*' 6 types of image registration techniques*':
 -   Rigid (translation + rotation)
 -   Similarity (translation + rotation + isotropic scaling)
 -   Affine
--   Elastic (via [ bUnwarpJ](BUnwarpJ) with cubic B-splines)
+-   Elastic (via [ bUnwarpJ](/plugins/bunwarpj) with cubic B-splines)
 -   Moving least squares
 
-All models are aided by automatically extracted [ SIFT features](Feature_Extraction).
+All models are aided by automatically extracted [ SIFT features](/plugins/feature-extraction).
 
 User Manual
 -----------
@@ -42,9 +42,9 @@ Images may have different dimensions and be of different type.
 -   **Select the output folder** where resulting registered slices are automatically stored as TIFF files.
 -   **Feature extraction model**. The expected transformation model finding inliers (i.e. correspondences or landmarks between images) in the feature extraction: translation, rigid, similarity or affine.
 -   **Registration model**. The image transformation model: translation, rigid, similarity, affine, elastic or moving least squares.
--   **Advanced setup**. The advanced checkbox: whether to see the [ feature extraction parameters](Feature_Extraction#Parameters) setup dialog, and if elastic, the [ bUnwarpJ](BUnwarpJ) dialog. Otherwise the plugin operates on reasonable, default parameters.
+-   **Advanced setup**. The advanced checkbox: whether to see the [ feature extraction parameters](Feature_Extraction#Parameters) setup dialog, and if elastic, the [ bUnwarpJ](/plugins/bunwarpj) dialog. Otherwise the plugin operates on reasonable, default parameters.
 -   **Shrinkage constrain**. Option to regularize the registration in order to avoid section shrinking.
--   **Save transforms**. Option to save the resulting transforms into files, that can be loaded using [Transform Virtual Stack Slices](Transform_Virtual_Stack_Slices).
+-   **Save transforms**. Option to save the resulting transforms into files, that can be loaded using [Transform Virtual Stack Slices](/plugins/transform-virtual-stack-slices).
 
 <b>Step 3</b>: choose the **reference** image (only if the "Shrinkage constraint" checkbox was not marked):  
 
@@ -78,16 +78,16 @@ We can visualize the relaxation of the system into the desired registration mode
 
 ### Save Transforms
 
-Since the 09/24/2009 version, the plugin has the option to store the resulting transforms into files. This way, the results can be reproduce later on the same images or on a difference sequence by using the plugin [Transform Virtual Stack Slices](Transform_Virtual_Stack_Slices).
+Since the 09/24/2009 version, the plugin has the option to store the resulting transforms into files. This way, the results can be reproduce later on the same images or on a difference sequence by using the plugin [Transform Virtual Stack Slices](/plugins/transform-virtual-stack-slices).
 
 To save the transforms, you just have to click on the "Save transforms" check-box of the main dialog. Then, after selecting the source and output directories, a new dialog will pop up to select the folder to store the transforms in.
 
-The transforms are saved as **.XML** files, following [TrakEM2](TrakEM2) format.
+The transforms are saved as **.XML** files, following [TrakEM2](/plugins/trakem2) format.
 
 ### Notes
 
 1.  The plugin is multithreaded: more CPU cores means faster execution.
-2.  The two most relevant parameters in the [ SIFT feature extraction](Feature_Extraction) are:  
+2.  The two most relevant parameters in the [ SIFT feature extraction](/plugins/feature-extraction) are:  
     -   <b>maximum image size</b>, which limits the low-end size of the features (i.e. decrease maximum image size to increase the size of the smallest features to extract.)
     -   <b>inlier ratio</b>, which determines when to reject the intersection set of feature correspondences between two images (ratio between correspondent features vs. all extracted features.)
 3.  All types of images are accepted (8-bit, 16-bit, 32-bit and RGB) but only in .tif, .jpg, .png, .gif, .tiff, .jpeg, .bmp, .pgm, or .ima format. Output images are saved as TIFF.
@@ -95,7 +95,7 @@ The transforms are saved as **.XML** files, following [TrakEM2](TrakEM2) format.
 
 <figure><img src="/media/Rvs elastic options 351x446.png" title="Elastic registration options" width="280" alt="Elastic registration options" /><figcaption aria-hidden="true">Elastic registration options</figcaption></figure>
 
-This is actually a reduced version of the [ bUnwarpJ](BUnwarpJ) main window.
+This is actually a reduced version of the [ bUnwarpJ](/plugins/bunwarpj) main window.
 
 Briefly, the options are:
 
@@ -212,15 +212,15 @@ You can call the plugin in a non-interactive fashion from a jython script:
 See also
 --------
 
--   [Transform Virtual Stack Slices](Transform_Virtual_Stack_Slices), to see how to load the saved transforms.
+-   [Transform Virtual Stack Slices](/plugins/transform-virtual-stack-slices), to see how to load the saved transforms.
 -   [FloatArray2DSIFT.java](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/imagefeatures/FloatArray2DSIFT.java;hb=HEAD) which contains the subclass Param which is the 'sift' member of the Register\_Virtual\_Stack\_Slices.Param subclass.
 -   {% include github org='fiji' repo='register\_virtual\_stack\_slices' source='register\_virtual\_stack/Register\_Virtual\_Stack\_MT.java' label='Register\_Virtual\_Stack\_MT.java' %}, including the Param subclass.
--   [Elastic Alignment and Montage plugin](Elastic_Alignment_and_Montage), for elastic registration/montage of large datasets using spring meshes (local deformations).
+-   [Elastic Alignment and Montage plugin](/plugins/elastic-alignment-and-montage), for elastic registration/montage of large datasets using spring meshes (local deformations).
 
 References
 ----------
 
-The algorithm implemented for elastic registration ([bUnwarpJ](BUnwarpJ)) and its technical explanations are detailed on the paper:
+The algorithm implemented for elastic registration ([bUnwarpJ](/plugins/bunwarpj)) and its technical explanations are detailed on the paper:
 
 -   I. Arganda-Carreras, C. O. S. Sorzano, R. Marabini, J.-M. Carazo, C. Ortiz-de Solorzano, and J. Kybic, ["Consistent and Elastic Registration of Histological Sections using Vector-Spline Regularization,"](http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/downloads/arganda_carreras_CVAMIA06.pdf) Lecture Notes in Computer Science, Springer Berlin / Heidelberg, volume 4241/2006, CVAMIA: Computer Vision Approaches to Medical Image Analysis, pages 85-95, 2006.
 

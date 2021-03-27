@@ -6,7 +6,7 @@ categories: News
 description: test description
 ---
 
-From Monday, December 4, 2017 through Friday, December 15, 2017, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosts \~50 developers at the [Center for Systems Biology](http://www.csbdresden.de/) in Dresden, Germany for a [hackathon](Hackathon) to develop [ImageJ2](ImageJ2) and [Fiji](Fiji) core infrastructure and [plugins](Plugins).
+From Monday, December 4, 2017 through Friday, December 15, 2017, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosts \~50 developers at the [Center for Systems Biology](http://www.csbdresden.de/) in Dresden, Germany for a [hackathon](/events/Hackathon) to develop [ImageJ2](/software/imagej2) and [Fiji](/fiji) core infrastructure and [plugins](/fiji/plugins).
 
 https://gitter.im/fiji/hackathon_dd_2017
 
@@ -231,6 +231,6 @@ Hackathon Progress
 
 ### TrackMate & MaMuT (Ulrik Günther, Kyle Harrington, Jean-Yves Tinevez)
 
--   Prototype of a 3D viewer for [TrackMate](TrackMate) and [MaMuT](MaMuT) based on [SciView](SciView) and [Scenery](Scenery).
+-   Prototype of a 3D viewer for [TrackMate](/plugins/trackmate) and [MaMuT](/plugins/mamut) based on [SciView](/plugins/sciview) and [Scenery](Scenery).
 
 

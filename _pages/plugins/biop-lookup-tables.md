@@ -11,7 +11,7 @@ description: test description
 Purpose
 -------
 
-Having LUTs to handle display of images with more than 3 channels. Visit [Color Image Processing](Color_Image_Processing) page to know more about LUTs.
+Having LUTs to handle display of images with more than 3 channels. Visit [Color Image Processing](/cookbook/color-image-processing) page to know more about LUTs.
 
 Details
 -------

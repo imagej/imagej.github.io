@@ -16,7 +16,7 @@ Parallel Iterative Deconvolution is an ImageJ plugin for iterative deblurring. T
 Documentation
 -------------
 
-The plugin code is based on a [MATLAB](MATLAB) toolbox: [RestoreTools](http://mathcs.emory.edu/%7Enagy/RestoreTools/index.html) by James G. Nagy and several of his students, including Julianne Chung, Katrina Palmer, Lisa Perrone, and Ryan Wright and also on [Iterative Deconvolve 3D](Iterative_Deconvolve_3D) by Robert Dougherty.
+The plugin code is based on a [MATLAB](MATLAB) toolbox: [RestoreTools](http://mathcs.emory.edu/%7Enagy/RestoreTools/index.html) by James G. Nagy and several of his students, including Julianne Chung, Katrina Palmer, Lisa Perrone, and Ryan Wright and also on [Iterative Deconvolve 3D](/plugins/iterative-deconvolve-3d) by Robert Dougherty.
 
 It implements the 4 following iterative methods:
 
@@ -38,7 +38,7 @@ In applications such as astronomy, medicine, physics and biology, scientists use
 
 With iterative deconvolution methods, a sequence of approximations is constructed, where hopefully subsequent approximations provide better reconstructions. Mathematically this is equivalent to solving a particular optimization problem involving a PSF and a blurred image, which could be formulated as something simple like a least squares problem, or something more complicated that incorporates (possibly nonlinear) constraints. As with spectral filtering methods, regularization must be incorporated using, for example, a priori constraints, or through appropriate convergence criteria, or even a combination of such techniques. Well known examples of iterative image reconstruction algorithms include expectation maximization (EM) type approaches (such as the Richardson-Lucy algorithm), conjugate gradient (CG) type methods, and many others. One important advantage of using iterative algorithms is that they can be used on a much wider class of blurring models, including spatially variant blurs. Although iterative methods are generally more expensive than spectral filtering methods for simple spatially invariant blurs, they are much more efficient for difficult spatially variant blurs. Moreover, it is possible to incorporate constraints (e.g., nonnegativity) in the algorithms. The challenges in iterative algorithms concern the regularization (how to stabilize the iterative method in the presence of noise), and determination of an appropriate stopping iteration.
 
-Parallel Iterative Deconvolution is an ImageJ plugin for iterative image deblurring. The code is derived from [RestoreTools](http://mathcs.emory.edu/%7Enagy/RestoreTools/index.html): An Object Oriented [MATLAB](MATLAB) Package for Image Restoration written by James G. Nagy and several of his students, including Julianne Chung, Katrina Palmer, Lisa Perrone, and Ryan Wright and also from [Iterative Deconvolve 3D](Iterative_Deconvolve_3D) written by Robert Dougherty. The current version implements four iterative algorithms: Modified Residual Norm Steepest Descent [(MRNSD)](Ftp___ftp.mathcs.emory.edu_pub_nagy_papers_NagStr00.ps.gz), Wiener Filter Preconditioned Landweber [(WPL)](http://www.optinav.com/Iterative-Deconvolve-3D.htm), Conjugate Gradient for Least Squares [(CGLS)](http://www.mai.liu.se/%7Eakbjo/LSPbook.html) and Hybrid Bidiagonalization Regularization [(HyBR)](http://www.mathcs.emory.edu/%7Enagy/WGCV/). Although the plugin can handle arbitrary-sized 2- and 3-dimensional images, its usage is limited to grayscale images. To deconvolve a color image, you would have to split the channels and deblur each channel separately.
+Parallel Iterative Deconvolution is an ImageJ plugin for iterative image deblurring. The code is derived from [RestoreTools](http://mathcs.emory.edu/%7Enagy/RestoreTools/index.html): An Object Oriented [MATLAB](MATLAB) Package for Image Restoration written by James G. Nagy and several of his students, including Julianne Chung, Katrina Palmer, Lisa Perrone, and Ryan Wright and also from [Iterative Deconvolve 3D](/plugins/iterative-deconvolve-3d) written by Robert Dougherty. The current version implements four iterative algorithms: Modified Residual Norm Steepest Descent [(MRNSD)](Ftp___ftp.mathcs.emory.edu_pub_nagy_papers_NagStr00.ps.gz), Wiener Filter Preconditioned Landweber [(WPL)](http://www.optinav.com/Iterative-Deconvolve-3D.htm), Conjugate Gradient for Least Squares [(CGLS)](http://www.mai.liu.se/%7Eakbjo/LSPbook.html) and Hybrid Bidiagonalization Regularization [(HyBR)](http://www.mathcs.emory.edu/%7Enagy/WGCV/). Although the plugin can handle arbitrary-sized 2- and 3-dimensional images, its usage is limited to grayscale images. To deconvolve a color image, you would have to split the channels and deblur each channel separately.
 
 How to use
 ----------
@@ -90,7 +90,7 @@ There are three elements in the GUI that have not been described above, namely: 
 There are several ImageJ plugins for generating a theoretical point spread function:
 
 -   [PSF Tool for ImageJ](http://www.mosaic.ethz.ch/Downloads/psftool) by the ETH Computationnal Biophysics Lab
--   [Diffraction PSF 3D](Diffraction_PSF_3D) by Robert Dougherty
+-   [Diffraction PSF 3D](/plugins/diffraction-psf-3d) by Robert Dougherty
 -   [Deconvolution3D](http://bigwww.epfl.ch/demo/deconvolution3D/) by Pierre Besson.
 
 To use these tools you need to know some parameters of your microscope setup and sample like NA, RI of mounting medium, wavelength, etc.
@@ -139,7 +139,7 @@ Enter 20 in the Max number of iterations text field and click on the Deconvolve 
 See also
 --------
 
--   [Parallel Spectral Deconvolution](Parallel_Spectral_Deconvolution) by the same author, for another set of methods.
+-   [Parallel Spectral Deconvolution](/plugins/parallel-spectral-deconvolution) by the same author, for another set of methods.
 
 Version history
 ---------------

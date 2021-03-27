@@ -40,7 +40,7 @@ Expert refinement
 
 Click **Expert...** in the **Refine with ICP** menu to bring up advanced options.
 
-First, if you did not detect any interest points yet, you will be taken to the [interest point detection](BigStitcher_Interest_points) immediately.
+First, if you did not detect any interest points yet, you will be taken to the [interest point detection](/plugins/bigstitcher/interest-points) immediately.
 
 Once you have detected interest points, a dialog with expert options will pop up. In this dialog, you can set the following parameters:
 

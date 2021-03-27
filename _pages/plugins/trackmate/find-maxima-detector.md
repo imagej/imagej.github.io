@@ -19,7 +19,7 @@ description: test description
 Purpose
 -------
 
-This plugin implements the find maxima detection algorithm for [TrackMate](TrackMate). It was tried to resample the approach as for the *Process -&gt; Find Maxima...* command. The results are almost the same. Subpixel accuracy is activated by default.
+This plugin implements the find maxima detection algorithm for [TrackMate](/plugins/trackmate). It was tried to resample the approach as for the *Process -&gt; Find Maxima...* command. The results are almost the same. Subpixel accuracy is activated by default.
 
 Installation
 ------------

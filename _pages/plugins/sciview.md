@@ -12,6 +12,6 @@ description: test description
 {% endcapture %}
 {% include info-box logo='<img src="/media/SciView-icon.png" width="150"/>' name='SciView' software='ImageJ' author=author filename='' source=' [sciview](https://github.com/kephale/SciView)' released='in development' latest-version='in development' status='alpha' category='[Visualization](Category_Visualization)' website='https://github.com/scenerygraphics/SciView' %}== Purpose ==
 
-Sciview provides 3D visualization and virtual reality capabilities for images and meshes using the [scenery](https://github.com/scenerygraphics/scenery). Sciview integrates [ImageJ2](ImageJ2) functionality, including [ImageJ Ops](ImageJ_Ops) and [ImageJ Mesh](ImageJ_Mesh), to provide the ability to interact with image and mesh data in 3D and interface with the popular [Fiji](Fiji) software ecosystem.
+Sciview provides 3D visualization and virtual reality capabilities for images and meshes using the [scenery](https://github.com/scenerygraphics/scenery). Sciview integrates [ImageJ2](/software/imagej2) functionality, including [ImageJ Ops](/develop/imagej-ops) and [ImageJ Mesh](ImageJ_Mesh), to provide the ability to interact with image and mesh data in 3D and interface with the popular [Fiji](/fiji) software ecosystem.
 
 More information is available on the [official sciview documentation](https://docs.scenery.graphics/sciview)

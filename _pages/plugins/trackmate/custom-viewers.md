@@ -12,7 +12,7 @@ description: test description
 Introduction.
 -------------
 
-Developing a custom view for [TrackMate](TrackMate) is *hard* and painful. Of course it must be a graphical representation of the model: the tracking results with all intermediate steps. If you want to build something really useful, it has to be interactive and should allow modifying the model. And be aware that modifications might happen somewhere else. Performance is also critical: since it stands at the user interface, it must be responsive, and possibly deal with large models (millions of detections).
+Developing a custom view for [TrackMate](/plugins/trackmate) is *hard* and painful. Of course it must be a graphical representation of the model: the tracking results with all intermediate steps. If you want to build something really useful, it has to be interactive and should allow modifying the model. And be aware that modifications might happen somewhere else. Performance is also critical: since it stands at the user interface, it must be responsive, and possibly deal with large models (millions of detections).
 
 Honestly, I think that one of the main good reason to extend TrackMate is that there is ready some views available.
 
@@ -23,7 +23,7 @@ This tutorial introduces the <u>view interfaces</u> of TrackMate, and since they
 A custom TrackMate view.
 ------------------------
 
-Like for the [spot feature analyzers](How_to_write_your_own_spot_feature_analyzer_algorithm_for_TrackMate), a TrackMate view is separated in two parts, that each extends a different interface:
+Like for the [spot feature analyzers](/plugins/trackmate/custom-spot-feature-analyzer-algorithms), a TrackMate view is separated in two parts, that each extends a different interface:
 
 -   The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/TrackMateModelView.java' label='TrackMateModelView' %}, that is the actual view of the model. All the hard work is done here.
 -   The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/ViewFactory.java' label='ViewFactory' %} that is a factory in charge of instantiating the view and of the integration in TrackMate. This interface extends the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/TrackMateModule.java' label='TrackMateModule' %} interface, so we expect to find there some of the methods we discussed earlier, and the [SciJava](SciJava) annotation.
@@ -219,7 +219,7 @@ So editing the header of our ViewFactory to make it look like:
     @Plugin( type = ViewFactory.class, visible = false )
     public class EventLoggerViewFactory implements ViewFactory
 
-is enough to hide it in the menu. This is different from the `enabled` parameter we saw in [one the previous tutorial](How_to_write_your_own_track_feature_analyzer_algorithm_for_TrackMate). The factory is instantiated and available in TrackMate; it just does not show up in the menu.
+is enough to hide it in the menu. This is different from the `enabled` parameter we saw in [one the previous tutorial](/plugins/trackmate/custom-track-feature-analyzer-algorithms). The factory is instantiated and available in TrackMate; it just does not show up in the menu.
 
 But how could I make use of it then? you want to ask. Fortunately, this is just the subject of the next tutorial, on TrackMate actions. See you there.
 

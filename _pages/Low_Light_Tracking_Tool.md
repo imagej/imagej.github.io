@@ -26,7 +26,7 @@ The plugin can be quickly installed via the projects update site. This is unfort
 Add the project's update site to your Fiji installation
 -------------------------------------------------------
 
-Please refer to the [ **tutorial**](Update_Sites) on how to add our update site to your Fiji installation. Our update site has the following URL:
+Please refer to the [ **tutorial**](/update-sites) on how to add our update site to your Fiji installation. Our update site has the following URL:
 
 ` `**`http://sites.imagej.net/Alex-krull/`**
 

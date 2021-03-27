@@ -8,7 +8,7 @@ description: test description
 
 Probably the most popular feature of Fiji is the updater which lets users and developers alike keep up-to-date without hassles. Developers upload their macros, scripts or plugins, and users are notified whenever there are new versions available that can be downloaded with a couple of mouse clicks.
 
-The feature is so popular that we worked hard to allow for [3rd-party update sites](Update_Sites). The only problem with such sites was that you needed to have your own server to [set up your own update site](Adding_Update_Sites).
+The feature is so popular that we worked hard to allow for [3rd-party update sites](/update-sites). The only problem with such sites was that you needed to have your own server to [set up your own update site](/update-sites/setup).
 
 But this just changed.
 

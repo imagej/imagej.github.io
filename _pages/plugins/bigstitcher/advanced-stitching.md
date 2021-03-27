@@ -55,13 +55,13 @@ Next, you will be asked how to treat grouped views and which downsampling of the
 Interest point-based shift calculation
 --------------------------------------
 
-Finally, you can use the interest point-based registration of the [Multiview-Reconstruction](Multiview-Reconstruction) to determine pairwise shifts. In the right-click menu, you can choose whether to do the alignment with **new interest points** or **existing interest points** (if they exist).
+Finally, you can use the interest point-based registration of the [Multiview-Reconstruction](/plugins/multiview-reconstruction) to determine pairwise shifts. In the right-click menu, you can choose whether to do the alignment with **new interest points** or **existing interest points** (if they exist).
 
 Also in the menu, you can activate or deactivate **Show expert grouping options**. If it is activated, you will be asked which views to include in the calculation and how to group them. See the [Advanced view grouping section below](BigStitcher_Advanced_stitching#Advanced_view_grouping) for details.
 
-If you chose to detect new interest points, you will then have to proceed through the steps of interest point detection. Please refer to the [corresponding section](BigStitcher_Interest_points) of this Wiki for detailed instructions.
+If you chose to detect new interest points, you will then have to proceed through the steps of interest point detection. Please refer to the [corresponding section](/plugins/bigstitcher/interest-points) of this Wiki for detailed instructions.
 
-Next, the image pairs will be registered using the interest points. Please refer to the [corresponding section](BigStitcher_Registration) of this Wiki for detailed instructions. Note that the transformation model is restricted to a simple translation at the moment and you can only use the following strategies:
+Next, the image pairs will be registered using the interest points. Please refer to the [corresponding section](/plugins/bigstitcher/registration) of this Wiki for detailed instructions. Note that the transformation model is restricted to a simple translation at the moment and you can only use the following strategies:
 
 -   Fast descriptor-based (rotation invariant)
 -   Fast descriptor-based (translation invariant)

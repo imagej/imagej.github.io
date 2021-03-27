@@ -26,17 +26,17 @@ The multi-view deconvolution plugin is an image fusion plugin that computes one 
 
 #### Prerequisites I - Registration
 
-Prerequisite for the fusion is an aligned dataset, an overview of the complete registration process can be found [here](SPIM_Registration), we suggest using the [Bead-based registration](SPIM_Bead_Registration) as it provides a simple pipeline.
+Prerequisite for the fusion is an aligned dataset, an overview of the complete registration process can be found [here](/plugins/spim-registration), we suggest using the [Bead-based registration](/plugins/spim-bead-registration) as it provides a simple pipeline.
 
 #### Prerequisites II - PSF's
 
-The multi-view deconvolution additionally requires estimates of the PSF for each view. They can be directly and automatically measured from the data itself if fluorescent beads were added to the volume around the sample and the [Bead-based registration](SPIM_Bead_Registration) was used to register the views.
+The multi-view deconvolution additionally requires estimates of the PSF for each view. They can be directly and automatically measured from the data itself if fluorescent beads were added to the volume around the sample and the [Bead-based registration](/plugins/spim-bead-registration) was used to register the views.
 
 Alternatively, an estimate or a simulated PSF can be provided as a 3d image. This is especially helpful in case the registration was achieved in any another way, for example using the [Segmentation-based registration](Segmentation-based_registration) or by an external program.
 
 #### Prerequisites III - Cropping Area
 
-It is highly recommended that before starting the multi-view deconvolution, to use the [Multi-view fusion](Multi-View_Fusion) in order to determine the right bounding box for the image to be deconvolved.
+It is highly recommended that before starting the multi-view deconvolution, to use the [Multi-view fusion](/plugins/multi-view-fusion) in order to determine the right bounding box for the image to be deconvolved.
 
 <span style="color:#A52A2A"> *Note: Do not set the bounding box too close to the imaged sample as it might result in artifacts. A distance of around 30-50 pixels between sample and the bounding box is suggested for the multi-view deconvolution.* </span>
 
@@ -45,7 +45,7 @@ How to use the plugin
 
 {% include thumbnail src='/media/Spim multiview dialog1.jpg' title='Shows the first dialog that queries the location of the multi-view files'%}
 
-The multi-view deconvolution consists like the multi-view fusion of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset, i.e. locate the image files, the registration information and the location of the corresponding beads if applicable. Please note that all the parameters will be transferred from the [Multi-view fusion](Multi-View_Fusion) dialog that you used before to set the bounding box (cropping area).
+The multi-view deconvolution consists like the multi-view fusion of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset, i.e. locate the image files, the registration information and the location of the corresponding beads if applicable. Please note that all the parameters will be transferred from the [Multi-view fusion](/plugins/multi-view-fusion) dialog that you used before to set the bounding box (cropping area).
 
 We omit a detailed explanation of the parameters here as it is identical to the explanation provided [Multi-view fusion dialog](Multi-View_Fusion#How_to_use_the_plugin).
 
@@ -125,7 +125,7 @@ Multi-Channel Multi-View Deconvolution
 
 Multi-Channel deconvolution can be achieved by running the plugin on both channels individually. First, you have to make sure that both channels are aligned to each other. You have two choices:
 
-**(1)** Run the [Bead-based registration](SPIM_Bead_Registration) on just one channel and duplicate and rename the \*.dim, \*.beads.txt and \*.registration files for the other channels. Now when you run the deconvolution on the channel that contained the beads choose to export the PSF's in original calibration. For the other channels run the deconvolution with loaded PSFs. Alternatively use simulated PSFs. Simply merge the result of all channels.
+**(1)** Run the [Bead-based registration](/plugins/spim-bead-registration) on just one channel and duplicate and rename the \*.dim, \*.beads.txt and \*.registration files for the other channels. Now when you run the deconvolution on the channel that contained the beads choose to export the PSF's in original calibration. For the other channels run the deconvolution with loaded PSFs. Alternatively use simulated PSFs. Simply merge the result of all channels.
 
 **(2)** Run the [Multi-channel bead based registration](SPIM_Bead_Registration#Multichannel_registration), it requires that the same beads are visible in all channels and will register all to each other. Now run the deconvolution individually on both channels and extract the PSF's from the image or use simulated PSFs. Now there will be the problem that the images will most likely suffer an offset to each other, you might even need to define two different bounding boxes. The good news is that we know exactly what the offset - even with different bounding boxes - is. For that you need to note down one line in the output of the deconvolution (fusion is actually the same) of the channels:
 

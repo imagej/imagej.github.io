@@ -16,7 +16,7 @@ description: test description
 {% endcapture %}
 {% include info-box name='VisBio' software='VisBio' author=author maintainer='None' source=source status='Discontinued' website='http://loci.wisc.edu/software/visbio' %} VisBio is a biological visualization tool designed for easy visualization and analysis of multidimensional image data, developed by {% include person content='Rueden' %} at [UW-Madison LOCI](http://loci.wisc.edu/).
 
-VisBio is based on the [VisAD](http://visad.ssec.wisc.edu/) Java component library for interactive and collaborative visualization and analysis of numerical data. VisBio was first released in 2002. It was discontinued in 2009 in favor of [ImageJ2](ImageJ2), with the idea that the VisAD-based visualization components of VisBio could be migrated to the ImageJ platform in the future.
+VisBio is based on the [VisAD](http://visad.ssec.wisc.edu/) Java component library for interactive and collaborative visualization and analysis of numerical data. VisBio was first released in 2002. It was discontinued in 2009 in favor of [ImageJ2](/software/imagej2), with the idea that the VisAD-based visualization components of VisBio could be migrated to the ImageJ platform in the future.
 
 Publication
 -----------

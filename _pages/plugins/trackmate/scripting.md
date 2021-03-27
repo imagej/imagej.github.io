@@ -9,7 +9,7 @@ description: test description
 TrackMate scripting principle
 -----------------------------
 
-[TrackMate\_](TrackMate) can also be used without the GUI, using a scripting language that allows making calls to Java. The most simple way to get started is to use the [Script Editor](Script_Editor), which takes care of the difficult & boring part for you (such as path). The examples proposed on this page all use Jython, but can be adapted to anything.
+[TrackMate\_](/plugins/trackmate) can also be used without the GUI, using a scripting language that allows making calls to Java. The most simple way to get started is to use the [Script Editor](/scripting/script-editor), which takes care of the difficult & boring part for you (such as path). The examples proposed on this page all use Jython, but can be adapted to anything.
 
 Since we are calling the internals of TrackMate, we must get to know a bit of its guts. I have tried to come up with a rational design; though not always successfully. There is 3 main classes to interact with in a script:
 
@@ -28,13 +28,13 @@ So getting a working script is all about configuring a proper `Settings` object 
 A full example
 --------------
 
-Here is an example of full tracking process, using the easy image found in the [first tutorial](Getting_started_with_TrackMate). The following (Jython) script works as following:
+Here is an example of full tracking process, using the easy image found in the [first tutorial](/plugins/trackmate/getting-started). The following (Jython) script works as following:
 
 -   It fetches the image from the web
 -   It configures settings for segmentation and tracking
 -   The model is instantiated, with the settings and imp objects
--   The [TrackMate](TrackMate) class is instantiated with the model object
--   Then the [TrackMate](TrackMate) object performs all the steps needed.
+-   The [TrackMate](/plugins/trackmate) class is instantiated with the model object
+-   Then the [TrackMate](/plugins/trackmate) object performs all the steps needed.
 -   The final results is displayed as an overlay.
 
 <!-- -->

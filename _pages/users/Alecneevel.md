@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Alec Neevel' affiliation='UW-Madison [LOCI](LOCI) (former)' loci='alec-neevel' github='aneevel' %}
+{% include user-box name='Alec Neevel' affiliation='UW-Madison [LOCI](/orgs/loci) (former)' loci='alec-neevel' github='aneevel' %}

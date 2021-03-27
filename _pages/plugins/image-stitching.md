@@ -22,7 +22,7 @@ There is an increasing demand to image large biological specimen at high resolut
 
 The Stitching Plugin (2d-5d) is able to reconstruct big images/stacks from an arbitrary number of tiled input images/stacks, making use of the Fourier Shift Theorem that computes all possible translations (x, y\[, z\]) between two 2d/3d images at once, yielding the best overlap in terms of the cross correlation measure. If more than two input images/stacks are used the correct placement of all tiles is determined using a global optimization. The stitching is able to align an arbitrary amount of channels and supports timelapse registration. To remove brightness differences at the tile borders, non-linear intensity blending can be applied.
 
-Plase note: this is the new implementation of the Stitching plugin which is finally based on [Imglib](Imglib) and supports a lot of new features:
+Plase note: this is the new implementation of the Stitching plugin which is finally based on [Imglib](/imglib1) and supports a lot of new features:
 
 -   composite images and hyperstacks now
 -   write the stitched image slice-by-slice directly to disk (significantly reduces the RAM requirements)
@@ -34,7 +34,7 @@ Plase note: this is the new implementation of the Stitching plugin which is fina
 
 **Due to the virtual input stacks and the direct export of the result to disk it is now possible to stitch an arbitrary amount of image tiles with limited RAM resources.**
 
-The documentation of the **old** Stitching plugin collection can be found here: [Stitching 2D/3D](Stitching_2D_3D).
+The documentation of the **old** Stitching plugin collection can be found here: [Stitching 2D/3D](/plugins/stitching-2d-3d).
 
 Overview of the Stitching Plugins
 ---------------------------------
@@ -148,7 +148,7 @@ The next three entries describe the behaviour of the global optimization:
 
 There are then a series of toggles you can now choose to enable or disable.
 
-First, you can *add tiles as ROIs*, which will generate a ROI in the ImageJ RoiManager for each stitched tile. If possible, the ROI name will contain the source file for its corresponding tile, allowing easy identification of images of interest. This will also enable and select the [ ROI Picker](ROI_Picker) tool, so you can select the ROI covering a desired visual area.
+First, you can *add tiles as ROIs*, which will generate a ROI in the ImageJ RoiManager for each stitched tile. If possible, the ROI name will contain the source file for its corresponding tile, allowing easy identification of images of interest. This will also enable and select the [ ROI Picker](/plugins/roi-picker) tool, so you can select the ROI covering a desired visual area.
 
 Next, you can choose whether to *compute the overlap* or trust the (approximate) location defined by the grid, the meta data or the tile configuration file.
 
@@ -289,9 +289,9 @@ Additionally to the Stitching plugins, it contains the following libraries. I wa
 
 -   *edu\_mines\_jtk.jar*: Efficient 1-dimensional FFT implementation by [Dave Hale](http://inside.mines.edu/~dhale/jtk/).
 -   *mpicbg.jar*: Transformation package by {% include person content='Saalfeld' %}
--   *[imglib](Imglib)*: N-dimensional image processing library for Java by {% include person content='Pietzsch' %}, {% include person content='StephanP' %} & {% include person content='Saalfeld' %}
+-   *[imglib](/imglib1)*: N-dimensional image processing library for Java by {% include person content='Pietzsch' %}, {% include person content='StephanP' %} & {% include person content='Saalfeld' %}
 -   *fiji-lib.jar & Fiji\_Plugins.jar*: Fiji libraries by {% include person content='Schindelin' %}
--   *loci\_tools.jar*: [Bio-Formats](Bio-Formats) Java library for reading and writing life sciences image file formats. I want to especially thank {% include person content='Rueden' %} and {% include person content='Linkert' %}
+-   *loci\_tools.jar*: [Bio-Formats](/formats/bio-formats) Java library for reading and writing life sciences image file formats. I want to especially thank {% include person content='Rueden' %} and {% include person content='Linkert' %}
 
 Additionally, I want to thank the following people for discussions, providing images and pushing me to develop and continuously improve the Stitching plugins:
 
@@ -301,7 +301,7 @@ See Also
 --------
 
 -   [The Publication on the Stitching Plugin](http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184), S. Preibisch, S. Saalfeld, P. Tomancak (2009) Globally optimal stitching of tiled 3D microscopic image acquisitions", *Bioinformatics*, **25**(11):1463-1465. [PDF](http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf)
--   [TrakEM2](TrakEM2) for non-destructive stitching with floating, adjustable images.
+-   [TrakEM2](/plugins/trakem2) for non-destructive stitching with floating, adjustable images.
 -   [XuvTools](http://www.xuvtools.org/doku.php) similar stitching software (but you cannot access XuvTools' source code freely) from the University of Freiburg and the [abstract](http://dx.doi.org/10.1111/j.1365-2818.2008.03094.x) of the accompying publication
 
     

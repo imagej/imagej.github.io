@@ -8,7 +8,7 @@ description: test description
 ---
 
 
-The complete Fiji distribution of ImageJ consists of over a hundred individual components. Most of these components are ImageJ [plugins](Plugins); the rest are core libraries, [scripts](Scripts) and several other resources (such as the [Fiji logo](_File_Fiji-icon.png) and the README).
+The complete Fiji distribution of ImageJ consists of over a hundred individual components. Most of these components are ImageJ [plugins](/fiji/plugins); the rest are core libraries, [scripts](/scripting) and several other resources (such as the [Fiji logo](_File_Fiji-icon.png) and the README).
 
 In the past, Fiji used to be built from one monolithic source code repository, which became unmanageable over time. These days, therefore, developers start from a fully-populated *Fiji.app/* directory and build only the parts they would like to change.
 
@@ -31,7 +31,7 @@ Each individual component is maintained in its own repository in the [*fiji* org
 
 If in doubt about the location of the repository, just call {% include bc content='Plugins | Debug | System Information'%} and find the section corresponding to the file in question.
 
-Once the developer has identified which plugin or library she wants to modify or develop further, it is very easy to build and contribute by following [this tutorial](How_to_contribute_to_an_existing_plugin_or_library).
+Once the developer has identified which plugin or library she wants to modify or develop further, it is very easy to build and contribute by following [this tutorial](/develop/improving-the-code).
 
 Example
 -------

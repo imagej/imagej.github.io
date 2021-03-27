@@ -73,7 +73,7 @@ Includes provide more robust formatting options and are unique to this site (thi
 | Insert person details | [person](person)
 | Insert a sidebox | [sidebox](sidebox)
 | Insert the SNT nav bar | [SNT-nav](SNT-nav)|
-| Insert a symbol | [symbol](symbols)
+| Insert a symbol | [symbol](/help/editing/symbols)
 | Insert a table | [markdown-table](markdown-table)
 | Insert a todo list | [todo-list](todo-list)
 | Insert a tech box | [tech-box](tech-box)

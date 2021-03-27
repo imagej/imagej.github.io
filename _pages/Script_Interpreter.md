@@ -38,4 +38,4 @@ Usage
 Issues
 ------
 
-The Script Interpreter is under active development. Currently, [Groovy](Groovy) works fine, but there some issues with other scripting languages.
+The Script Interpreter is under active development. Currently, [Groovy](/scripting/groovy) works fine, but there some issues with other scripting languages.

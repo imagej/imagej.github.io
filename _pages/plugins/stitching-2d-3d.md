@@ -6,7 +6,7 @@ categories: Plugins,Registration,Stitching
 description: test description
 ---
 
-{% include warning-box content='""Please note that this version of the Stitching is deprecated. A new version is available here: [Image Stitching](Image_Stitching)""' %}
+{% include warning-box content='""Please note that this version of the Stitching is deprecated. A new version is available here: [Image Stitching](/plugins/image-stitching)""' %}
 
 {% include component-stats content='sc.fiji:Stitching\_' %}
 
@@ -109,7 +109,7 @@ This plugin takes all images that are located in a given directory and tries to 
 Stitch Multiple Series or Tile Scan File
 ----------------------------------------
 
-This plugin takes series of images contained in a single file, e.g. in the .lsm file format. It relies on [Bio-Formats](Bio-Formats)'s series support. The parameters are as explained in the section [ Stitch Grid of Images](Stitching_2D_3D#Stitch_Grid_of_Images).
+This plugin takes series of images contained in a single file, e.g. in the .lsm file format. It relies on [Bio-Formats](/formats/bio-formats)'s series support. The parameters are as explained in the section [ Stitch Grid of Images](Stitching_2D_3D#Stitch_Grid_of_Images).
 
 Problems and Known Issues
 -------------------------
@@ -147,7 +147,7 @@ See Also
 --------
 
 -   [The Publication on the Stitching Plugin](http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184), S. Preibisch, S. Saalfeld, P. Tomancak (2009) Globally optimal stitching of tiled 3D microscopic image acquisitions", *Bioinformatics*, **25**(11):1463-1465. [PDF](http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf)
--   [TrakEM2](TrakEM2) for non-destructive stitching with floating, adjustable images.
+-   [TrakEM2](/plugins/trakem2) for non-destructive stitching with floating, adjustable images.
 -   [XuvTools](http://www.xuvtools.org/doku.php) similar stitching software from the University of Freiburg and the [abstract](http://dx.doi.org/10.1111/j.1365-2818.2008.03094.x) of the accompying publication
 
   

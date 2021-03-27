@@ -35,4 +35,4 @@ This software is based on a publication. If you use it in your work, please cite
 See also
 --------
 
-For time lapse and 3D imaging, we recommend our other FRET plugin [RiFRET](RiFRET).
+For time lapse and 3D imaging, we recommend our other FRET plugin [RiFRET](/plugins/rifret).

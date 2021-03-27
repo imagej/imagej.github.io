@@ -15,7 +15,7 @@ Please note that the automated workflow for processing SPIM data on a cluster is
 
 -   C. Schmied, P. Steinbach, T. Pietzsch, S. Preibisch, P. Tomancak (2015) "An automated workflow for parallel processing of large multiview SPIM recordings." *Bioinformatics*, Dec 1; doi: 10.1093/bioinformatics/btv706 [Webpage](http://bioinformatics.oxfordjournals.org/content/early/2015/12/30/bioinformatics.btv706.long)
 
-The automated workflow is based on the Fiji plugins **[Multiview Reconstruction](Multiview-Reconstruction)** and **[BigDataViewer](BigDataViewer)**. Please refer to and cite the following publications:
+The automated workflow is based on the Fiji plugins **[Multiview Reconstruction](/plugins/multiview-reconstruction)** and **[BigDataViewer](BigDataViewer)**. Please refer to and cite the following publications:
 
 -   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419.[Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html)
 -   S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", *Nature Methods*, **11**(6):645-648. [Webpage](http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html)
@@ -24,7 +24,7 @@ The automated workflow is based on the Fiji plugins **[Multiview Reconstruction]
 Multiview reconstruction
 ========================
 
-In the **[Multiview Reconstruction](Multiview-Reconstruction)** (MVR) pipeline all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file.
+In the **[Multiview Reconstruction](/plugins/multiview-reconstruction)** (MVR) pipeline all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file.
 
 Stephan Preibisch solved that problem by allowing to write one XML file per job (usually a timepoint) and then merging the job specific XMLs into one XML for the entire dataset.
 
@@ -37,7 +37,7 @@ In practice it means the following steps need to be executed:
 
 Some new parameters are introduced and some old parameters change names. Therefore, use the ***[config.yaml](#config.yaml "wikilink")*** described in this chapter to process with the MVR pipeline.
 
-Outdated versions of the cluster processing scripts on which this workflow is based on you can find [here](SPIM_Registration_on_cluster)
+Outdated versions of the cluster processing scripts on which this workflow is based on you can find [here](/SPIM_Registration_on_cluster_(deprecated))
 
 Logic of workflow
 =================

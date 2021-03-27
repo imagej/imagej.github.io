@@ -18,13 +18,13 @@ Stefan Posch, {% include person content='MiToBo' %}
 {% capture source%}
 {% include github org='mitobo-hub' repo='mitobo-plugins' %}
 {% endcapture %}
-{% include info-box software='MiToBo' name='MiToBo' logo='<img src="/media/MiToBo-logo.png" width="96"/>' maintainer=maintainer author=author source=source status='' category='[:Category:Plugins](Category_Plugins)' website='http://www.informatik.uni-halle.de/mitobo/' %}The Microscope Image Analysis Toolbox MiToBo is a collection of basic and advanced image processing operators and applications mainly dedicated to biological and biomedical image data, however, not restricted to these fields. MiToBo is an extension of [ImageJ](ImageJ), i.e. MiToBo operators are ready to be directly used as plugins in ImageJ.
+{% include info-box software='MiToBo' name='MiToBo' logo='<img src="/media/MiToBo-logo.png" width="96"/>' maintainer=maintainer author=author source=source status='' category='[:Category:Plugins](Category_Plugins)' website='http://www.informatik.uni-halle.de/mitobo/' %}The Microscope Image Analysis Toolbox MiToBo is a collection of basic and advanced image processing operators and applications mainly dedicated to biological and biomedical image data, however, not restricted to these fields. MiToBo is an extension of [ImageJ](/about), i.e. MiToBo operators are ready to be directly used as plugins in ImageJ.
 
-To make use of MiToBo's functionality it can be enabled by [toggling the MiToBo update site](Update_Sites).
+To make use of MiToBo's functionality it can be enabled by [toggling the MiToBo update site](/update-sites).
 
 For further details, see the [MiToBo website](http://www.informatik.uni-halle.de/mitobo/).
 
-MiToBo is based on the [Alida](Alida) framework. MiToBo's operators are managed by Alida's graphical operator runner. In addition, and thanks to Alida's built-in graphical workflow editor *Grappa* also image analysis workflows can easily be designed graphically.
+MiToBo is based on the [Alida](/software/alida) framework. MiToBo's operators are managed by Alida's graphical operator runner. In addition, and thanks to Alida's built-in graphical workflow editor *Grappa* also image analysis workflows can easily be designed graphically.
 
 Publication
 -----------

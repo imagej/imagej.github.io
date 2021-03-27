@@ -6,14 +6,14 @@ categories:
 description: test description
 ---
 
-(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation) page)  
-(Return to the main [3D\_Viewer](3D_Viewer) page)
+(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
+(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 How to work with isosurfaces
 ----------------------------
 
-You can download example source code for this HowTo [here](3D_Viewer__Example_code).
+You can download example source code for this HowTo [here](/plugins/3d-viewer/example-code).
 
-Before reading this HowTo, it may be helpful to read [The relation between Content and Universe](3D_Viewer__Content_Structure).
+Before reading this HowTo, it may be helpful to read [The relation between Content and Universe](/plugins/3d-viewer/content-structure).
 
 When a `Content` is displayed as an isosurface, its `ContentNode` is of type `MeshGroup`. Since `MeshGroup` offers no additional functionality, than what can done with any `Content`, there is actually no reason under normal circumstances to retrieve a `MeshGroup` (although, it can be done of course).

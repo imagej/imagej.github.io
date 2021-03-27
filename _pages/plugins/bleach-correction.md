@@ -14,7 +14,7 @@ This plugin contains three different methods for correcting the intensity decay 
     -   Plugin version of [Jens Rietdorf's macro](http://www.embl.de/eamnet/html/bleach_correction.html), extended further with 3D time series
 -   Exponential Fitting Method:
     -   Similar to the [description on the T-functions page](T-functions#Correcting_for_bleaching). Additionally, this plugin also works with 3D time series.
-    -   [MBF ImageJ](MBF_ImageJ) suggests to use “Exponential” equation for fitting, whereas this plugin uses “Exponential with Offset”
+    -   [MBF ImageJ](/software/mbf-imagej) suggests to use “Exponential” equation for fitting, whereas this plugin uses “Exponential with Offset”
 -   Histogram Matching Method:
     -   A brand-new method for bleach correction.
     -   This algorithm first samples the histogram of initial frame, and for the successive frames, {% include wikipedia title='Histogram matching' text='histograms are matched'%} to the first frame. This avoids the increase in noise in the latter part of the sequence which is a problem in the above two methods.

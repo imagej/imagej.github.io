@@ -26,7 +26,7 @@ If QuickTime for Java was [open source](Open_source), we could do something abou
 TransformJ
 ----------
 
-For a long time, the [TransformJ](TransformJ) plugin suite was closed-source. As it is used for science, we asked the author whether we could look at the source. Scientific process must be transparent so that other scientists can understand and question it. The skepticism in science arises not so much of distrust, but more of the knowledge that we are all human, and humans err.
+For a long time, the [TransformJ](/plugins/transformj) plugin suite was closed-source. As it is used for science, we asked the author whether we could look at the source. Scientific process must be transparent so that other scientists can understand and question it. The skepticism in science arises not so much of distrust, but more of the knowledge that we are all human, and humans err.
 
 Happily, the author of TransformJ—Erik Meijering—agreed to let us redistribute the source code for exactly that purpose: that you can understand how it works, and why.
 
@@ -37,7 +37,7 @@ Java Media Framework
 
 Sun was never really open, except when it had to.
 
-It open-sourced Java only because IBM and others threatened them in a big way starting the [Harmony](http://harmony.apache.org/) project, which was basically an [open source](Open_source) rewrite of the complete Java Suite, licensed via the [Apache License](Apache) (which allows companies to take the source code, make a product of it, and never give anything back to the original authors—in contrast to the [GNU Public License](GPL)). Facing this huge opposition, Sun had only one chance to keep their advantage (already having a full implementation): make their version of Java truly [open source](Open_source), and licensing it in a way that would guarantee other companies a disadvantage, namely via the [GNU Public License](GPL). In a sense, this license is used against its original intention: as a weapon in cut-throat business against IBM and friends. But at least the common coder gets something nice in the process: true (albeit fair) freedom with the code.
+It open-sourced Java only because IBM and others threatened them in a big way starting the [Harmony](http://harmony.apache.org/) project, which was basically an [open source](Open_source) rewrite of the complete Java Suite, licensed via the [Apache License](/licensing/apache) (which allows companies to take the source code, make a product of it, and never give anything back to the original authors—in contrast to the [GNU Public License](/licensing/gpl)). Facing this huge opposition, Sun had only one chance to keep their advantage (already having a full implementation): make their version of Java truly [open source](Open_source), and licensing it in a way that would guarantee other companies a disadvantage, namely via the [GNU Public License](/licensing/gpl). In a sense, this license is used against its original intention: as a weapon in cut-throat business against IBM and friends. But at least the common coder gets something nice in the process: true (albeit fair) freedom with the code.
 
 It will take a few years, probably, until the Java Media Framework is licensed in a true [open source](Open_source) manner: at the moment, you can download the binaries, but not redistribute them; You can only get the source code under a pretty restrictive research license, and only if you ask personally, and you cannot redistribute it either.
 

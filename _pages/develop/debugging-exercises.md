@@ -8,21 +8,21 @@ description: test description
 ---
 
  {% include info-box content='This page presents exercises for ""software developers"" to use for debugging ImageJ.  
-If you are a ""user"" looking to troubleshoot issues, see the [Troubleshooting](Troubleshooting) page.' %}
+If you are a ""user"" looking to troubleshoot issues, see the [Troubleshooting](/help/troubleshooting) page.' %}
 
-[Debugging](Debugging) is the art of determining the cause and/or location of a problem. The purpose of this guide is to provide developers practical, hands-on experience using a variety of debugging techniques to identify problems in code.
+[Debugging](/develop/debugging) is the art of determining the cause and/or location of a problem. The purpose of this guide is to provide developers practical, hands-on experience using a variety of debugging techniques to identify problems in code.
 
 Requirements
 ============
 
-As ImageJ is built using the [SciJava principles of project management](Project_management), this guide assumes a basic familiarity with these topics and tools, especially:
+As ImageJ is built using the [SciJava principles of project management](/develop/project-management), this guide assumes a basic familiarity with these topics and tools, especially:
 
 -   [Git](Git)
--   [Maven](Maven)
+-   [Maven](/develop/maven)
 
 Additionally, you should:
 
--   Install an IDE - this guide is written with [Eclipse](Eclipse) in mind.
+-   Install an IDE - this guide is written with [Eclipse](/develop/imagej-in-eclipse) in mind.
 -   If using Eclipse, install the [memory analyzer plugin](https://eclipse.org/mat/).
 -   Clone the [imagej-troubleshooting](https://github.com/imagej/imagej-troubleshooting) companion repository, which this guide is designed around, and import it as a Maven project into your IDE.
 -   Install the [jvisualvm](https://visualvm.java.net/) tool.
@@ -47,7 +47,7 @@ Learning to use debugging tools is, understandably, a burden: it's "one more thi
 Using this guide
 ================
 
-The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, most do not explicitly use ImageJ. But once you learn how to [debug an external Java application](#Exercise_4:_ImageJ_plugins "wikilink"), you will have the knowledge to apply any of these techniques to a rich, and complex, application like [ImageJ](ImageJ).
+The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, most do not explicitly use ImageJ. But once you learn how to [debug an external Java application](#Exercise_4:_ImageJ_plugins "wikilink"), you will have the knowledge to apply any of these techniques to a rich, and complex, application like [ImageJ](/about).
 
 Because this project is intended to help new developers practice troubleshooting skills, you may find these examples contrived - indeed, they are. Exercises are kept simple and focused to allow practice of targeted techniques. If you have complete knowledge and understanding of the code there isn't really a need for troubleshooting: it is trivial to see why something is behaving incorrectly. Thus the source of these exercises is divided into `hidden` and `visible` packages. Users are strongly recommended to only inspect and set breakpoints from the `visible` classes. From a development point of view, consider the `hidden` package a 3rd-party library that you may not have control over, or access to the source code.
 
@@ -206,7 +206,7 @@ Exercise 4: ImageJ plugins
 
 -   Start a debugging session in Eclipse that connects to a running ImageJ instance
 
-Exercises 1-3 are abstract, self-contained programs. The `E4RemoteResearch` class, on the other hand, is an actual ImageJ [plugin](Writing_plugins#What_is_a_.22plugin.22.3F). Although plugin developers typically set up tests to run their plugin within ImageJ, it is impossible to test all possible runtime environments: users could have a variety of [update sites](Update_Sites) enabled, custom plugins installed, etc... and each modification is an opportunity for dependency skew and clashes with your plugin. When problems do arise, it is invaluable to have the ability to debug a running copy of ImageJ itself.
+Exercises 1-3 are abstract, self-contained programs. The `E4RemoteResearch` class, on the other hand, is an actual ImageJ [plugin](Writing_plugins#What_is_a_.22plugin.22.3F). Although plugin developers typically set up tests to run their plugin within ImageJ, it is impossible to test all possible runtime environments: users could have a variety of [update sites](/update-sites) enabled, custom plugins installed, etc... and each modification is an opportunity for dependency skew and clashes with your plugin. When problems do arise, it is invaluable to have the ability to debug a running copy of ImageJ itself.
 
 `E4RemoteResearch` does still have a `main` method to demonstrate the expected output for this plugin - in this case, simply printing the concrete implementation of the `ConsoleService`. Run the class in Eclipse and you should see some simple output in the console:
 
@@ -222,7 +222,7 @@ Note that the menu path of the plugin is specified in the class's annotation:
 
     @Plugin(type = Command.class,menuPath = "Plugins>Troubleshooting>E4 - Print ConsoleService")
 
-So, you can now run the `E4 - Print ConsoleService` command either via the menus or [command finder](Command_Finder). You should get an exception:
+So, you can now run the `E4 - Print ConsoleService` command either via the menus or [command finder](/Using_the_Command_Launcher). You should get an exception:
 
 ![](/media/E4StackTrace.png "E4StackTrace.png")
 
@@ -272,7 +272,7 @@ Exercise 5: Git history
 
 -   Practice using [git bisect](https://git-scm.com/docs/git-bisect) to locate historical breakages
 
-Debugging code directly via the techniques we've discussed thus far is not always practical. If the code is excessively complex, or the problem subtle, it may not be practical to try and step through code execution - you may not even be sure where to start. Keeping code well-structured and well-documented can help here, but we have another resource to draw on: the history of changes to our code, via git commits - assuming [appropriate development practices](Development_Lifecycle) are used. Identifying the breaking change gives us more information to use in our diagnosis (and in some cases, can be fixed with a simple [git revert](https://git-scm.com/docs/git-revert)\]).
+Debugging code directly via the techniques we've discussed thus far is not always practical. If the code is excessively complex, or the problem subtle, it may not be practical to try and step through code execution - you may not even be sure where to start. Keeping code well-structured and well-documented can help here, but we have another resource to draw on: the history of changes to our code, via git commits - assuming [appropriate development practices](/develop/releasing) are used. Identifying the breaking change gives us more information to use in our diagnosis (and in some cases, can be fixed with a simple [git revert](https://git-scm.com/docs/git-revert)\]).
 
 So, the first thing we'll do is run the `E5HistoricalHysteria` class and verify that it fails. For this exercise we have some additional information: this class used to run successfully, and a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) was made at that point.
 
@@ -317,7 +317,7 @@ After marking the last commit good or bad, bisect will print out the first bad c
 
 **Takeaways**
 
--   Use *all* resources available when debugging - even the git history can be useful (assuming it's [well-maintained](Development_Lifecycle)!)
+-   Use *all* resources available when debugging - even the git history can be useful (assuming it's [well-maintained](/develop/releasing)!)
 
 Exercise 6: Print stack trace
 -----------------------------
@@ -493,14 +493,14 @@ The answer depends on the debugging developer's skill and responsibilities, and 
 
 If a fix is identified:
 
--   If you are a maintainer of the component you can make the fix directly, or use a [topic branch](Git_topic_branches) if the fix needs discussion first.
--   If you do not have commit rights to the repository, you can [contribute the fix](How_to_contribute_to_an_existing_plugin_or_library) via pull request
+-   If you are a maintainer of the component you can make the fix directly, or use a [topic branch](/develop/git/topic-branches) if the fix needs discussion first.
+-   If you do not have commit rights to the repository, you can [contribute the fix](/develop/improving-the-code) via pull request
 
 If a fix is unclear:
 
--   Use any of the standard [channels for help](Help).
+-   Use any of the standard [channels for help](/help).
 
-Even if you can't contribute a fix, if you went through the effort of debugging - at the very least you should identify the problem, steps you took to debug, and potential fix(es) via a [bug report](Report_a_Bug) so that your effort is not lost.
+Even if you can't contribute a fix, if you went through the effort of debugging - at the very least you should identify the problem, steps you took to debug, and potential fix(es) via a [bug report](/help/report-a-bug) so that your effort is not lost.
 
 See Also
 ========

@@ -8,7 +8,7 @@ description: test description
 ---
 
 
-This tutorial is designed to guide developers through the options, processes and motivations for adding Ops outside the core {% include github org='imagej' repo='imagej-ops' label='imagej-ops' %} project. Because this tutorial caters to external developers, in this tutorial we show how a [BAR](BAR) function could be converted to an Op.
+This tutorial is designed to guide developers through the options, processes and motivations for adding Ops outside the core {% include github org='imagej' repo='imagej-ops' label='imagej-ops' %} project. Because this tutorial caters to external developers, in this tutorial we show how a [BAR](/plugins/bar) function could be converted to an Op.
 
 Make your first Op
 ==================
@@ -83,7 +83,7 @@ Implement your Op
 Use your Op
 -----------
 
-With these two components, you can start using your Op - for example, in the [script editor](Scripting):
+With these two components, you can start using your Op - for example, in the [script editor](/scripting):
 
     # @OpService ops
 
@@ -285,7 +285,7 @@ Now we can drop package prefixes when using our Namespace in scripts:
 Distribute scripts demonstrating how your Ops should be used
 ------------------------------------------------------------
 
-The ImageJ [script editor](Scripting) automatically collects scripts located in `src/main/resources/script_templates`. For example, if we create a file:
+The ImageJ [script editor](/scripting) automatically collects scripts located in `src/main/resources/script_templates`. For example, if we create a file:
 
 `src/main/resources/script_templates/BAR/GCD.py`
 

@@ -14,7 +14,7 @@ description: test description
 Introduction
 ------------
 
-This tutorial explains how to upload changes to core [ImageJ](ImageJ) and [Fiji](Fiji) libraries.
+This tutorial explains how to upload changes to core [ImageJ](/about) and [Fiji](/fiji) libraries.
 
 The typical workflow is:
 
@@ -47,7 +47,7 @@ Source repository for each core update site:
 Getting started
 ---------------
 
-First of all, start the [updater](Updater) with {% include bc content='Help | Update'%} and click on the *Manage update sites* button:
+First of all, start the [updater](/plugins/updater) with {% include bc content='Help | Update'%} and click on the *Manage update sites* button:
 
 <img src="/media/Mamed-3.jpg" width="770"/>
 

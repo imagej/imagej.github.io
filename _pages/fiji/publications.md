@@ -7,9 +7,9 @@ categories: Fiji
 description: test description
 ---
 
-{% include info-box content='This page lists publications relating to the [Fiji](Fiji) project.
+{% include info-box content='This page lists publications relating to the [Fiji](/fiji) project.
 
--   For general instructions on citing [ImageJ](ImageJ) and [Fiji](Fiji), see [Citing](Citing).
+-   For general instructions on citing [ImageJ](/about) and [Fiji](/fiji), see [Citing](/licensing/citing).
 -   For an index of citable software, see [:Category:Citable](Category_Citable).' %}
 
 
@@ -19,7 +19,7 @@ description: test description
 
 <!-- -->
 
--   A paper about the ImageJ software ecosystem—including [ImageJ](ImageJ) itself, [ImageJ2](ImageJ2), [Fiji](Fiji), related [SciJava](SciJava) projects, and various [plugins](Plugins)—was published in Molecular Reproduction and Development in July 2015[2].
+-   A paper about the ImageJ software ecosystem—including [ImageJ](/about) itself, [ImageJ2](/software/imagej2), [Fiji](/fiji), related [SciJava](SciJava) projects, and various [plugins](/fiji/plugins)—was published in Molecular Reproduction and Development in July 2015[2].
 
 <!-- -->
 
@@ -40,51 +40,51 @@ description: test description
 Publications using or enhancing Fiji
 ------------------------------------
 
--   [Stitching](Stitching)[6]
+-   [Stitching](/plugins/image-stitching)[6]
 
 <!-- -->
 
--   [Tracking](ToAST)[7]
+-   [Tracking](/plugins/toast)[7]
 
 <!-- -->
 
--   Fiji's [3D Viewer](3D_Viewer) was published in BMC Bioinformatics[8]
+-   Fiji's [3D Viewer](/plugins/3d-viewer) was published in BMC Bioinformatics[8]
 
 <!-- -->
 
--   A powerful plugin for [registering SPIM](SPIM_Registration) (Selective Plane Illumination Microscopy) and other multi-angle image data was published in Nature Methods[9]
+-   A powerful plugin for [registering SPIM](/plugins/spim-registration) (Selective Plane Illumination Microscopy) and other multi-angle image data was published in Nature Methods[9]
 
 <!-- -->
 
--   [TrakEM2](TrakEM2) was used and enhanced to identify neuronal lineages, and an article was published in the Journal of Neuroscience[10] about it.
+-   [TrakEM2](/plugins/trakem2) was used and enhanced to identify neuronal lineages, and an article was published in the Journal of Neuroscience[10] about it.
 
 <!-- -->
 
--   The algorithms behind [TrakEM2](TrakEM2) registration were presented at the [ISMB](http://www.iscb.org/ismb2010) conference and published in Bioinformatics.[11]
+-   The algorithms behind [TrakEM2](/plugins/trakem2) registration were presented at the [ISMB](http://www.iscb.org/ismb2010) conference and published in Bioinformatics.[11]
 
 <!-- -->
 
--   [Lens correction algorithm](Distortion_Correction) fully integrated into [TrakEM2](TrakEM2) was published in Journal of Structural Biology.[12]
+-   [Lens correction algorithm](/plugins/distortion-correction) fully integrated into [TrakEM2](/plugins/trakem2) was published in Journal of Structural Biology.[12]
 
 <!-- -->
 
--   [TrakEM2](TrakEM2) finally got its well deserved primary reference through the PLoS Biology paper on neuronal architecture of the fruitfly brain.[13]
+-   [TrakEM2](/plugins/trakem2) finally got its well deserved primary reference through the PLoS Biology paper on neuronal architecture of the fruitfly brain.[13]
 
 <!-- -->
 
--   The [Trainable Segmentation Plugin](Trainable_Segmentation_Plugin) is inspired by a CVPR publication on segmentation of neuronal membranes in TEM images. [14]
+-   The [Trainable Segmentation Plugin](/Trainable_Segmentation_Plugin_(deprecated)) is inspired by a CVPR publication on segmentation of neuronal membranes in TEM images. [14]
 
 <!-- -->
 
--   Not so simple [Simple\_Neurite\_Tracer](Simple_Neurite_Tracer), a product of the hard work of Mark Longair and one of the premier Fiji projects was published in Bioinformatics. [15]
+-   Not so simple [Simple\_Neurite\_Tracer](/plugins/snt), a product of the hard work of Mark Longair and one of the premier Fiji projects was published in Bioinformatics. [15]
 
 <!-- -->
 
--   We wanted to have the [Balloon](Balloon) segmentation plugin in Fiji for a long time and our request for the source code pushed the corresponding Nature Methods paper[16] forward. Thanks Lionel Dupuy!
+-   We wanted to have the [Balloon](/plugins/balloon) segmentation plugin in Fiji for a long time and our request for the source code pushed the corresponding Nature Methods paper[16] forward. Thanks Lionel Dupuy!
 
 <!-- -->
 
--   The [elastic alignment method](Elastic_Alignment_and_Montage) available in Fiji and [TrakEM2](TrakEM2) has been published in [Nature Methods](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.html).[17]
+-   The [elastic alignment method](/plugins/elastic-alignment-and-montage) available in Fiji and [TrakEM2](/plugins/trakem2) has been published in [Nature Methods](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.html).[17]
 
 <!-- -->
 
@@ -92,11 +92,11 @@ Publications using or enhancing Fiji
 
 <!-- -->
 
--   Albert Cardona's [TrakEM2](TrakEM2) was published in PLoS One[19].
+-   Albert Cardona's [TrakEM2](/plugins/trakem2) was published in PLoS One[19].
 
 <!-- -->
 
--   [ImgLib2](ImgLib2) was published in [Bioinformatics](http://bioinformatics.oxfordjournals.org/content/28/22/3009). The library developed jointly by Stephan Saalfeld, Stephan Preibisch and Tobias Pietzsch has originated in Fiji but has outgrown it becoming the centerpiece of other projects, especially [ImageJ2](ImageJ2) Pavel Tomancak provided funding for its developers.[20].
+-   [ImgLib2](/imglib2) was published in [Bioinformatics](http://bioinformatics.oxfordjournals.org/content/28/22/3009). The library developed jointly by Stephan Saalfeld, Stephan Preibisch and Tobias Pietzsch has originated in Fiji but has outgrown it becoming the centerpiece of other projects, especially [ImageJ2](/software/imagej2) Pavel Tomancak provided funding for its developers.[20].
 
 <!-- -->
 
@@ -108,43 +108,43 @@ Publications using or enhancing Fiji
 
 <!-- -->
 
--   The 2D and 3D [Particle Tracker](Particle_Tracker) algorithm available in Fiji though the [MOSAICsuite](MOSAICsuite) plugin is described in Sbalzarini and Koumoutsakos (2005[23]).
+-   The 2D and 3D [Particle Tracker](/plugins/particle-tracker) algorithm available in Fiji though the [MOSAICsuite](/plugins/mosaicsuite) plugin is described in Sbalzarini and Koumoutsakos (2005[23]).
 
 <!-- -->
 
--   The 2D and 3D [Particle Tracker](Particle_Tracker) algorithm available in Fiji though the [MOSAICsuite](MOSAICsuite) plugin performed well in a recent comparative study of many particle tracking tools: Chenouard et al. (2014[24]).
+-   The 2D and 3D [Particle Tracker](/plugins/particle-tracker) algorithm available in Fiji though the [MOSAICsuite](/plugins/mosaicsuite) plugin performed well in a recent comparative study of many particle tracking tools: Chenouard et al. (2014[24]).
 
 <!-- -->
 
--   The globally optimal [Squassh](Squassh) segmentation algorithm available in the [MOSAICsuite](MOSAICsuite) plugin includes cutting-edge developments from computer vision as described in Paul, Cardinale, and Sbalzarini (2013[25]). It optionally also corrects for the microscope PSF, providing deconvolving segmentation as described in Helmuth et al. (2009[26]) and in Helmuth and Sbalzarini (2009[27])
+-   The globally optimal [Squassh](/plugins/squassh) segmentation algorithm available in the [MOSAICsuite](/plugins/mosaicsuite) plugin includes cutting-edge developments from computer vision as described in Paul, Cardinale, and Sbalzarini (2013[25]). It optionally also corrects for the microscope PSF, providing deconvolving segmentation as described in Helmuth et al. (2009[26]) and in Helmuth and Sbalzarini (2009[27])
 
 <!-- -->
 
--   The [Squassh](Squassh) workflow for segmentation and quantification of subcellular shapes in fluorescence microscopy images has been published in in Rizk et al. (2014[28]).
+-   The [Squassh](/plugins/squassh) workflow for segmentation and quantification of subcellular shapes in fluorescence microscopy images has been published in in Rizk et al. (2014[28]).
 
 <!-- -->
 
--   The [Region Competition](Region_Competition) algorithm has been published in Cardinale, Paul, and Sbalzarini and Koumoutsakos (2012[29]). It provides a flexible and powerful tool for segmenting fluorescence-microscopy images. It can handle arbitrary numbers of objects that can additionally be shaded. It optionally also corrects for the microscope PSF, providing deconvolving segmentation as described in Helmuth et al. (2009[30]) and in Helmuth and Sbalzarini (2009[31]).
+-   The [Region Competition](/plugins/region-competition) algorithm has been published in Cardinale, Paul, and Sbalzarini and Koumoutsakos (2012[29]). It provides a flexible and powerful tool for segmenting fluorescence-microscopy images. It can handle arbitrary numbers of objects that can additionally be shaded. It optionally also corrects for the microscope PSF, providing deconvolving segmentation as described in Helmuth et al. (2009[30]) and in Helmuth and Sbalzarini (2009[31]).
 
 <!-- -->
 
--   Interaction analysis as provided by the [MosaicIA](MosaicIA) plugin extends the concept of colocalization analysis to spatial patterns and allows directly estimating interactions between imaged objects from the image, as described in Helmuth, Paul, and Sbalzarini (2010[32]).
+-   Interaction analysis as provided by the [MosaicIA](/plugins/interaction-analysis) plugin extends the concept of colocalization analysis to spatial patterns and allows directly estimating interactions between imaged objects from the image, as described in Helmuth, Paul, and Sbalzarini (2010[32]).
 
 <!-- -->
 
--   The [Interaction Analysis](Interaction_Analysis) or [MosaicIA](MosaicIA) plugin is part of the [MOSAICsuite](MOSAICsuite) and has been described in Shivanandan, Radenovic, and Sbalzarini (2013[33]).
+-   The [Interaction Analysis](/plugins/interaction-analysis) or [MosaicIA](/plugins/interaction-analysis) plugin is part of the [MOSAICsuite](/plugins/mosaicsuite) and has been described in Shivanandan, Radenovic, and Sbalzarini (2013[33]).
 
 <!-- -->
 
--   The [MOSAICsuite](MOSAICsuite) also contains a [Background Subtractor](Background_Subtractor).
+-   The [MOSAICsuite](/plugins/mosaicsuite) also contains a [Background Subtractor](/plugins/background-subtractor).
 
 <!-- -->
 
--   [Sholl Analysis](Sholl_Analysis) was published in Nature Methods[34]
+-   [Sholl Analysis](/plugins/sholl-analysis) was published in Nature Methods[34]
 
 <!-- -->
 
--   [TrackMate](TrackMate) was published 6 years after the initial commit, in a special edition of the Methods <ref>Jean-Yves Tinevez, Nick Perry, Johannes Schindelin, Genevieve M. Hoopes, Gregory D. Reynolds, Emmanuel Laplantine, Sebastian Y. Bednarek, Spencer L. Shorte, Kevin W. Eliceiri, [TrackMate: An open and extensible platform for single-particle tracking](http://www.sciencedirect.com/science/article/pii/S1046202316303346), *Methods*, Available online 3 October 2016, ISSN 1046-2023.
+-   [TrackMate](/plugins/trackmate) was published 6 years after the initial commit, in a special edition of the Methods <ref>Jean-Yves Tinevez, Nick Perry, Johannes Schindelin, Genevieve M. Hoopes, Gregory D. Reynolds, Emmanuel Laplantine, Sebastian Y. Bednarek, Spencer L. Shorte, Kevin W. Eliceiri, [TrackMate: An open and extensible platform for single-particle tracking](http://www.sciencedirect.com/science/article/pii/S1046202316303346), *Methods*, Available online 3 October 2016, ISSN 1046-2023.
 
 </ref> journal dedicated to open source software for Life Sciences.
 

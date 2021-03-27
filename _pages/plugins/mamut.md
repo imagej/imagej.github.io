@@ -32,15 +32,15 @@ Publication.
 Presentation.
 -------------
 
-MaMuT is an end user plugin that combines the [BigDataViewer](BigDataViewer) and [TrackMate](TrackMate) to provide an application that allow browsing, annotating and curating annotations for large image data.
+MaMuT is an end user plugin that combines the [BigDataViewer](BigDataViewer) and [TrackMate](/plugins/trackmate) to provide an application that allow browsing, annotating and curating annotations for large image data.
 
 <figure><img src="/media/MaMuT presentation.png" title="MaMuT_presentation.png" width="600" alt="MaMuT_presentation.png" /><figcaption aria-hidden="true">MaMuT_presentation.png</figcaption></figure>
 
-The main window resembles the display panel of [TrackMate](TrackMate). It controls how the annotations are displayed. Using the *MaMuT Viewer* button, several views of the data can be launched. They will all be in sync. Each of them is an instance of the [BigDataViewer](BigDataViewer).
+The main window resembles the display panel of [TrackMate](/plugins/trackmate). It controls how the annotations are displayed. Using the *MaMuT Viewer* button, several views of the data can be launched. They will all be in sync. Each of them is an instance of the [BigDataViewer](BigDataViewer).
 
 ![](/media/MaMuT WindowsInSync.png "MaMuT_WindowsInSync.png")
 
-We privileged annotations that are like lineages, or object followed over time (which is what [TrackMate](TrackMate) does). MaMuT ships [TrackScheme](TrackScheme), the lineage browser taken from TrackMate.
+We privileged annotations that are like lineages, or object followed over time (which is what [TrackMate](/plugins/trackmate) does). MaMuT ships [TrackScheme](/plugins/trackmate/trackscheme), the lineage browser taken from TrackMate.
 
 ![](/media/MaMuT WithTrackScheme.png "MaMuT_WithTrackScheme.png")
 

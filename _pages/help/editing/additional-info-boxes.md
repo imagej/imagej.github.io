@@ -63,7 +63,7 @@ This code: {% raw %} `{% include ambox text="Your text here."%}`  produces: {% e
 <br>
 ## OS Logo boxes
 
-Our site supports a predetermined list of frequently used logo-boxes. If you would like to use a stand alone logo, you can add one to your page as an image file with the [include image](/demo-image) feature.
+Our site supports a predetermined list of frequently used logo-boxes. If you would like to use a stand alone logo, you can add one to your page as an image file with the [include image](/help/editing/image) feature.
 
 This code: {% raw %} `{% include macos content="Your text here."%}`  produces: {% endraw %} {% include macos content="Your text here." %}
 <br>

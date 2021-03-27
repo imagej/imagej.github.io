@@ -51,7 +51,7 @@ When deblurring an image, certain regularity conditions have to be enforced on t
 There are several ImageJ plugins for generating a theoretical point spread function:
 
 -   [PSF Tool for ImageJ](http://www.mosaic.ethz.ch/Downloads/psftool) by the ETH Computationnal Biophysics Lab
--   [Diffraction PSF 3D](Diffraction_PSF_3D) by Robert Dougherty
+-   [Diffraction PSF 3D](/plugins/diffraction-psf-3d) by Robert Dougherty
 -   [Deconvolution3D](http://bigwww.epfl.ch/demo/deconvolution3D/) by Pierre Besson.
 
 To use these tools you need to know some parameters of your microscope setup and sample like NA, RI of mounting medium, wavelength, etc.
@@ -81,7 +81,7 @@ Clicking on the Deconvolve button results in this:
 See also
 --------
 
--   [Parallel Iterative Deconvolution](Parallel_Iterative_Deconvolution) by the same author, for another set of methods.
+-   [Parallel Iterative Deconvolution](/plugins/parallel-iterative-deconvolution) by the same author, for another set of methods.
 
 Version history
 ---------------

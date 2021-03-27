@@ -340,7 +340,7 @@ Note that you can't start out in batch mode, you need to fit a single image firs
 
 ### Segmentation using classification
 
-For some specific applications, you might want to analyze a specific segment in the lifetime image. In particular, Fiji's [Trainable Weka Segmentation](Trainable_Weka_Segmentation) plugin is very useful for machine learning based segmentation. We can train the classifier with one image with certain training instances, then use that classifier to segment additional images. With segmented data, we can create a mask and using the ROI manager we can overlay the ROI to analyze different part of the image. The steps for segmentation using classification are:
+For some specific applications, you might want to analyze a specific segment in the lifetime image. In particular, Fiji's [Trainable Weka Segmentation](/plugins/tws) plugin is very useful for machine learning based segmentation. We can train the classifier with one image with certain training instances, then use that classifier to segment additional images. With segmented data, we can create a mask and using the ROI manager we can overlay the ROI to analyze different part of the image. The steps for segmentation using classification are:
 
 1.  Open a lifetime image using the SLIM Curve plugin.
 2.  [Train the classifier](Trainable_Weka_Segmentation#Train_classifier) using Trainable Weka Segmentation.
@@ -348,7 +348,7 @@ For some specific applications, you might want to analyze a specific segment in 
 4.  Train classifier by clicking the "Train classifier" button.
 5.  Select “Create result” to create the segmented image (you can save the classifier to use it later).
 6.  Use the Thresholding tool to threshold the image to remove the region not needed.
-7.  Run the Create Mask and Create Selection commands to make the ROI. You can execute commands easily using the [Command Finder](Command_Finder) (press {% include key content='L' %}).
+7.  Run the Create Mask and Create Selection commands to make the ROI. You can execute commands easily using the [Command Finder](/Using_the_Command_Launcher) (press {% include key content='L' %}).
 8.  Add the ROI to ROI manager by pressing {% include key content='T' %}. Use it on overlay with lifetime image and start analyzing.
 
 ![](/media/Weka module.JPG "fig:Weka_module.JPG") ![](/media/Overlay.JPG "fig:Overlay.JPG")

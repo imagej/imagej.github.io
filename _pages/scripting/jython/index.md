@@ -22,7 +22,7 @@ All scripting language supported by ImageJ can be used to access the [ImageJ API
 The following list will help you to decide if Jython is the right choice to create scripts for ImageJ:
 
 -   If you have experience with Python you can easily use Jython for ImageJ scripting. But you have to keep in mind that tools commonly used in many Python projects (e.g. Numpy) are not available in Jython. By building your [own modules](Jython_Scripting#Self_written_Jython_modules_for_ImageJ) you can create complex scripts that otherwise are only possible by writing ImageJ plugins in Java.
--   If don't have any experience in programming, the Python language is a good choice to start with. If your only aim is to write scripts for ImageJ, there are other languages you should try first (e.g. [Groovy](Groovy_Scripting)).
+-   If don't have any experience in programming, the Python language is a good choice to start with. If your only aim is to write scripts for ImageJ, there are other languages you should try first (e.g. [Groovy](/scripting/groovy)).
 -   In Python many problems can be solved with less code than in other languages. Still the code is easy to read. Have a look at the examples on this page and decide if you want to start using Python for ImageJ scripting.
 
 ### Explanation
@@ -34,13 +34,13 @@ Even with the given limitations, Jython is a powerful language for ImageJ script
 Jython basics for ImageJ
 ------------------------
 
-{% include info-box content='For an introduction in ImageJ scripting visit the page [Scripting basics](Scripting_basics).' %}
+{% include info-box content='For an introduction in ImageJ scripting visit the page [Scripting basics](/scripting/basics).' %}
 
 ### Introduction
 
 The aim of this page is not to teach how to program in Python. This purpose is much better fulfilled by the [documentation of Python2](https://docs.python.org/2/library/index.html). The focus of this page is to show how features of the Python language can be useful for ImageJ scripting.
 
-That is why more complex examples are used that are fully functional. Just copy the code to the [Script Editor](Using_the_Script_Editor) and try them by yourself. Extensive in-line documentation is used to explain the implementation.
+That is why more complex examples are used that are fully functional. Just copy the code to the [Script Editor](/scripting/script-editor) and try them by yourself. Extensive in-line documentation is used to explain the implementation.
 
 ### Hello World
 
@@ -66,7 +66,7 @@ Contrary to the print statement the log function display some output into a log 
 
 ### Image selection using the GenericDialog class
 
-This example script will create up to 10 new images and create a GenericDialog to select 3 of them. Finally the names of the selected images are printed to the Log window. It is recommended to copy the code to the [Script Editor](Using_the_Script_Editor) and run it by yourself.
+This example script will create up to 10 new images and create a GenericDialog to select 3 of them. Finally the names of the selected images are printed to the Log window. It is recommended to copy the code to the [Script Editor](/scripting/script-editor) and run it by yourself.
 
 The following list links to documentation of the used Python features:
 
@@ -396,7 +396,7 @@ An interesting feature of Jython is to search for packages and modules inside of
           -- mathTools.py
           -- stackProcessing.py
 
-The advantage of this approach is that you can share your packages easily. For example you can upload the JAR file to an [update site](Update_Sites). It is possible to upload .py scripts to update sites too, without packaging into a jar. The advantage of jar are that they allow to define dependencies more systematically.
+The advantage of this approach is that you can share your packages easily. For example you can upload the JAR file to an [update site](/update-sites). It is possible to upload .py scripts to update sites too, without packaging into a jar. The advantage of jar are that they allow to define dependencies more systematically.
 
 **NB** : Script implementing "ImageJ menu macro" and "utilitary scripts" that are used as imported modules in other macros **should be packed in separate jar files** ! Indeed, if not explicitly mentioned, the jython interpreter only looks in the Jars/Lib folder to import module, so the .jar containing the "utilitary scripts" should be put there, while the jar containing the "ImageJ menu macro" can be put either in the Plugin or script/Plugin folder in order to appear in the ImageJ menu.
 
@@ -413,7 +413,7 @@ At GitHub you will find an [example project](https://github.com/m-entrup/imagej-
 Links
 -----
 
--   [Jython Scripting Examples](Jython_Scripting_Examples)
+-   [Jython Scripting Examples](/scripting/jython/examples)
 -   [ImageJ2 Python Scripts](ImageJ2_Python_Scripts)
 -   [A Fiji Scripting Tutorial by Albert Cardona](https://www.ini.uzh.ch/~acardona/fiji-tutorial/)
 -   [Jython scripting cookbook](http://wiki.cmci.info/documents/120206pyip_cooking/python_imagej_cookbook)

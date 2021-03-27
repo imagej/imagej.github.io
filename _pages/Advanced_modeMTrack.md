@@ -13,7 +13,7 @@ In advanced mode there are three distinct methods to identify microtubules, MSER
 
 ### MSER
 
-This is the default method of object recognition in the simple mode and for sparsely populated images is the method of choice to find the regions in the image where the microtubules lie, the microtubules are assumed to lie along the semi-major axis of the MSER ellipses. Read more about [MSER parameters](MSER_parameters).
+This is the default method of object recognition in the simple mode and for sparsely populated images is the method of choice to find the regions in the image where the microtubules lie, the microtubules are assumed to lie along the semi-major axis of the MSER ellipses. Read more about [MSER parameters](/plugins/mser-parameters).
 
 ### Watershedding and Hough Transform
 
@@ -23,7 +23,7 @@ For crowded movies MSER based segmentation may not be able to separate close lyi
 
 For not so dense images the microtubules are easy to locate and MSER is able to do so, in the default MSER approach it is assumed that the microtubules lie along the semi-major axis of the microtubules, which is true in most of the cases. If however they do not lie along the semi-major axis of the ellipses a Hough transform inside each of the ellipse can be performed to determine the line parameters for each seed.
 
-In this approach the user has to first make a selection of the MSER parameters and then Hough transform parameters (see [MSER parameters](MSER_parameters) and Size of Hough space in rho/theta in [watershedding and Hough transform parameters](Watershedding_and_Hough_transform_parameters)), MSER ellipses would be displayed in which the Hough transform would be carried out to find the line parameters of all the microtubules.
+In this approach the user has to first make a selection of the MSER parameters and then Hough transform parameters (see [MSER parameters](/plugins/mser-parameters) and Size of Hough space in rho/theta in [watershedding and Hough transform parameters](Watershedding_and_Hough_transform_parameters)), MSER ellipses would be displayed in which the Hough transform would be carried out to find the line parameters of all the microtubules.
 
 The first panel for this mode is shown below.
 

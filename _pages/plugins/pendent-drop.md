@@ -27,7 +27,7 @@ Installation
 
 The latest stable version is uploaded to the Fiji update site http://sites.imagej.net/Daerr/
 
-Follow the procedure described on the Fiji wiki at [How to follow a 3rd party update site](How_to_follow_a_3rd_party_update_site) to have Fiji download and install the plugin (Fiji will keep track of updates).
+Follow the procedure described on the Fiji wiki at [How to follow a 3rd party update site](/update-sites/following) to have Fiji download and install the plugin (Fiji will keep track of updates).
 
 Documentation, links and ressources
 -----------------------------------

@@ -9,7 +9,7 @@ description: test description
 Purpose
 -------
 
-An example [Jython](Jython_Scripting) script to illustrate how to query a ThreadGroup recursively to gather all children Thread instances.
+An example [Jython](/scripting/jython) script to illustrate how to query a ThreadGroup recursively to gather all children Thread instances.
 
 The output is something like the following:
 
@@ -83,6 +83,6 @@ Code
 See also
 --------
 
-[Jython Scripting](Jython_Scripting)
+[Jython Scripting](/scripting/jython)
 
   

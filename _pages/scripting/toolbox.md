@@ -12,8 +12,8 @@ This page is meant to provide small code snippets as a starting point for writin
 {% include info-box message='**See also:**
 
 -   Language-specific scripting pages in the right-hand menu.
--   [Scripting comparisons](Scripting_comparisons) to compare and contrast the languages.
--   [Broadly Applicable Routines](BAR), a curated collection of snippets.
+-   [Scripting comparisons](/scripting/comparisons) to compare and contrast the languages.
+-   [Broadly Applicable Routines](/plugins/bar), a curated collection of snippets.
 -   Albert Cardona"s comprehensive [Fiji Jython tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/) (please note that it is better idea to contribute tutorials to the ImageJ/Fiji wiki directly).' %}
 
 **Note:** To copy the snippets, just double-click somewhere into the code. If Javascript is enabled, this will automatically select the complete snippet.
@@ -146,7 +146,7 @@ Opening, processing, and saving a sequence of files in a folder
         print("Processing: " + input + file);
         open(input + file);
         print("Saving to: " + output);
-        saveAs("TIFF", output+file);
+        saveAs("/formats/tiff", output+file);
         close();
     }
 
@@ -298,7 +298,7 @@ Sometimes things go wrong and all you see is "blabla.jpg is locked" when you try
 
     IJ.getImage().unlock();
 
-Scripting [SIFT](Feature_Extraction)
+Scripting [SIFT](/plugins/feature-extraction)
 -----------------------------------------------
 
 The *Scale-Invariant Feature Transform* poses a relatively powerful way to reduce the complexity when trying to find matching parts of large images. Fiji has an implementation of this algorithm which you can use like so:

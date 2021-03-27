@@ -11,7 +11,7 @@ This account is used to manage the [Bio-Formats update site](http://sites.imagej
 
 To activate it in your Fiji setup:
 
--   [{% include bc content='Help|Update...'%}](Update_Sites)
+-   [{% include bc content='Help|Update...'%}](/update-sites)
 -   Click *Manage update sites*
 -   Check *Bio-Formats*
 -   Click *Close*

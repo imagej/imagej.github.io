@@ -6,7 +6,7 @@ categories: News
 description: test description
 ---
 
-A new minor version of [TrackMate\_](TrackMate) has been released. This page lists the changes that are visible to the user.
+A new minor version of [TrackMate\_](/plugins/trackmate) has been released. This page lists the changes that are visible to the user.
 
 Version 2.2.0 focuses mainly on extendability, tracking performance and detection accuracy.
 
@@ -20,7 +20,7 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 <!-- -->
 
--   We also took the chance to rewrite all the detectors from scratch, using the latest development in [ImgLib2](ImgLib2). This prompted **major performance improvement for the detection process**. Here are the results of a quick benchmark:
+-   We also took the chance to rewrite all the detectors from scratch, using the latest development in [ImgLib2](/imglib2). This prompted **major performance improvement for the detection process**. Here are the results of a quick benchmark:
 
 | Detector                   | v2.1.1 | v2.2.0 | speedup factor |
 |----------------------------|--------|--------|----------------|
@@ -29,13 +29,13 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 | LoG detector for 3D images | 291s   | 18.2s  | x15            |
 | DoG detector for 3D images | 21.6s  | 15.1s  | x1.4           |
 
-(This benchmark was done with the ISBI challenge datasets). You can find more benchmarks [here](TrackMate_Performance).
+(This benchmark was done with the ISBI challenge datasets). You can find more benchmarks [here](/plugins/trackmate/performance).
 
 -   Complete rewrite of the way we handle modules in TrackMate. TrackMate now uses [SciJava](http://www.scijava.org/) and exploit its automatic discovery mechanism for modules. Practically, **it is now very easy to extend TrackMate**, and you do not depend on us anymore at all for anything. We could completely disappear and you would still be able to extend TrackMate so that it suits your need, without requiring any of our help. Several [tutorials](TrackMate#For_developers_2) describe how to do this. This is made possible thanks to the enormous efforts of the SciJava team. Thanks to them!
 
 #### Improvements
 
--   In [TrackScheme](TrackScheme), the tracks can be navigated through using the keyboard:
+-   In [TrackScheme](/plugins/trackmate/trackscheme), the tracks can be navigated through using the keyboard:
     -   UP: previous spot in time.
     -   DOWN: next spot in time.
     -   LEFT: next sibling within the same track
@@ -45,11 +45,11 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 <!-- -->
 
--   Major performance improvement when launching [TrackScheme](TrackScheme) on a large models.
+-   Major performance improvement when launching [TrackScheme](/plugins/trackmate/trackscheme) on a large models.
 
 <!-- -->
 
--   Major performance improvement when selecting/deselecting in [TrackScheme](TrackScheme)
+-   Major performance improvement when selecting/deselecting in [TrackScheme](/plugins/trackmate/trackscheme)
 
 <!-- -->
 
@@ -65,7 +65,7 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 <!-- -->
 
--   Ship a [MATLAB](MATLAB) function to import in [MATLAB](MATLAB) the tracks exported by TrackMate. Check [this](Using_TrackMate_with_MATLAB).
+-   Ship a [MATLAB](MATLAB) function to import in [MATLAB](MATLAB) the tracks exported by TrackMate. Check [this](/plugins/trackmate/analyzing-results-with-matlab).
 
 <!-- -->
 

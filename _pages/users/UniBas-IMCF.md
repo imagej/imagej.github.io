@@ -15,7 +15,7 @@ To add the repository to your list of FiJi update sites, use this address:
 
 -   [http://sites.imagej.net/UniBas-IMCF/](http://sites.imagej.net/UniBas-IMCF/)
 
-Please see [how to follow a 3rd party update site](How_to_follow_a_3rd_party_update_site) for detailed instructions how to enable an additional update site in your Fiji installation.
+Please see [how to follow a 3rd party update site](/update-sites/following) for detailed instructions how to enable an additional update site in your Fiji installation.
 
 PLEASE NOTE: you also need to enable the "IBMP-CNRS" update site that is already configured in Fiji (it's just not active by default). Otherwise the ActionBars won't work.
 

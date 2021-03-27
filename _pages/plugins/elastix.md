@@ -22,7 +22,7 @@ Installation
 
 Elastix is available from the ImageJ update site: http://sites.imagej.net/EMBL-CBA.
 
-For details on how to install an update site click [here](Following_an_update_site).
+For details on how to install an update site click [here](/update-sites/following).
 
 To use this plugin you also need to install elastix itself, as described [here](https://github.com/embl-cba/fiji-plugin-elastixWrapper/blob/master/README.md#install-elastix-binary).
 

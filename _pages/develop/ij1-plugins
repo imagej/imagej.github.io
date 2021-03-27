@@ -6,16 +6,16 @@ categories: Tutorials,Development
 description: test description
 ---
 
-{% include imagej1 content='This page explains how to develop plugins with the ImageJ 1.x API. If you start developing a new plugin today, it is highly recommended to [develop for ImageJ2](Writing_plugins).' %}
+{% include imagej1 content='This page explains how to develop plugins with the ImageJ 1.x API. If you start developing a new plugin today, it is highly recommended to [develop for ImageJ2](/develop/plugins).' %}
 
 {% include project content='ImageJ1 \| describes content related to' %}
 
 Plugin, script or macro?
 ========================
 
-If you want to add a new feature to ImageJ, you can either [write a script or macro](Scripting_Help), or do it as a plugin. Scripts and macros are easier to learn, and hence often faster to develop. However, Java offers numerous advantages including better performance in many cases, as well as compile-time safety of the code.
+If you want to add a new feature to ImageJ, you can either [write a script or macro](/scripting), or do it as a plugin. Scripts and macros are easier to learn, and hence often faster to develop. However, Java offers numerous advantages including better performance in many cases, as well as compile-time safety of the code.
 
-If you are not sure which to choose, take a look at the [Scripting Help](Scripting_Help) and try your hand at a script in a language that appeals to you. You can always convert it to a Java plugin later if the execution speed becomes an issue.
+If you are not sure which to choose, take a look at the [Scripting Help](/scripting) and try your hand at a script in a language that appeals to you. You can always convert it to a Java plugin later if the execution speed becomes an issue.
 
 If you are certain that you want to write a plugin in Java, keep on reading!
 
@@ -95,14 +95,14 @@ Limitations
 -   Some functions which are easy to call via macros are not available via the public Java API (e.g. {% include bc content='Image | Stacks | Plot Z-axis profile...'%})
 -   It is often quicker to write macros
 
-Rapid prototyping with the [Script Editor](Script_Editor)
+Rapid prototyping with the [Script Editor](/scripting/script-editor)
 ====================================================================
 
 {% include warning-box content='Using the Script Editor for Java development is not currently recommended.  
 For Java development, proceed to the [Getting Started with Maven](#Getting_started_with_Maven "wikilink") section.  
 If you would like to use the script editor, see the sections for the [other supported languages](Scripting#Supported_languages).' %}
 
-<s>There a few good reasons why you should try the [Script Editor](Script_Editor) for rapid prototyping of your plugins or scripts:
+<s>There a few good reasons why you should try the [Script Editor](/scripting/script-editor) for rapid prototyping of your plugins or scripts:
 
 -   Supports Jython, JRuby, Javascript, Clojure, Java, BeanShell, and ImageJ's Macro Language
 -   Syntax highlighting
@@ -115,22 +115,22 @@ If you would like to use the script editor, see the sections for the [other supp
 Quick Start
 -----------
 
-<s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [Script Editor](Script_Editor) ({% include bc content='File | New | Script'%}), and select the *Process Pixels* menu item from the {% include bc content='Templates | Java'%} menu. Then, run the plugin with *Run&gt;Run*.</s>
+<s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [Script Editor](/scripting/script-editor) ({% include bc content='File | New | Script'%}), and select the *Process Pixels* menu item from the {% include bc content='Templates | Java'%} menu. Then, run the plugin with *Run&gt;Run*.</s>
 
 Getting started with Maven
 ==========================
 
 The {% include github org='imagej' repo='example-legacy-plugin' label='example-legacy-plugin project' %} provides a working example, and documentation, illustrating how an ImageJ plugin should be structured from a "best practices in Maven" point of view.
 
-Using this project requires a basic understanding of [Git](Git) and [Maven](Maven); thus if you are already familiar with the ImageJ 1.x API, this is a reasonable starting point to learn the [project management](Project_management) tools used in [ImageJ2 development](Writing_plugins).
+Using this project requires a basic understanding of [Git](Git) and [Maven](/develop/maven); thus if you are already familiar with the ImageJ 1.x API, this is a reasonable starting point to learn the [project management](/develop/project-management) tools used in [ImageJ2 development](/develop/plugins).
 
 Basic workflow
 ==============
 
 All plugin development tends to follow a consistent "Design - Build - Test" workflow. Practically, this looks like:
 
--   Make changes to the source code (e.g. in [Eclipse](Eclipse))
--   Build your plugin's .jar from the source code (e.g. with [Maven](Maven))
+-   Make changes to the source code (e.g. in [Eclipse](/develop/imagej-in-eclipse))
+-   Build your plugin's .jar from the source code (e.g. with [Maven](/develop/maven))
 -   Move the plugin to the [plugins directory](Plugin#Installing_plugins_manually) of an existing ImageJ installation
 -   (Re)start ImageJ and run the plugin to test the behavior
 
@@ -301,7 +301,7 @@ The [ImageProcessor](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/pr
 **Tip:** use the Script Editor's functions in the *Tools* menu:
 
 -   *Open Help for Class...* (opens the JavaDoc for a class in a browser),
--   *Open .java file for class...* (requires the respective source files to be present in the Fiji directory, such as after [Downloading and Building Fiji From Source](Downloading_and_Building_Fiji_From_Source), or
+-   *Open .java file for class...* (requires the respective source files to be present in the Fiji directory, such as after [Downloading and Building Fiji From Source](/fiji/building-from-source), or
 -   *Open .java file for menu item...* (also needs the source files).
 
 Plots
@@ -412,7 +412,7 @@ Next steps
 See guides on:
 
 -   [Developing in Eclipse](Developing_Fiji_in_Eclipse#Create_the_Eclipse_Projects)
--   [Plugin distribution](Distribution)
--   [Development lifecycle](Development_Lifecycle)
--   [Debugging practice](Debugging_Exercises)
+-   [Plugin distribution](/develop/distributing)
+-   [Development lifecycle](/develop/releasing)
+-   [Debugging practice](/develop/debugging-exercises)
 -   [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet)

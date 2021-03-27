@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-{% include info-box software='ImageJ/Fiji' name='CIP' update-site='CIP' author='[Benoit Lombardot](User_Benoit)' maintainer='[Benoit Lombardot](User_Benoit)' released='January 2018' filename='CIP update site' source='https://github.com/benoalo/CIP' category='[Scripting](Category_Scripting)' %}
+{% include info-box software='ImageJ/Fiji' name='CIP' update-site='CIP' author='[Benoit Lombardot](/users/Benoit)' maintainer='[Benoit Lombardot](/users/Benoit)' released='January 2018' filename='CIP update site' source='https://github.com/benoalo/CIP' category='[Scripting](Category_Scripting)' %}
 
 <figure><img src="/media/CIP basic concept.PNG" title="CIP: " width="600" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
 
@@ -50,9 +50,9 @@ Documentation organisation
 
 To build a script with CIP, follow one of the examples below or try one of the [repository](https://github.com/benoalo/CIP/tree/master/scripts%7Cproject) examples.
 
-To get information on a function follow the link in the function table in the [categories](CIP#Tools_categories) section or directly go to one of the category pages: [Format](CIP_Format), [Filter](CIP_Filter), [Math](CIP_Math), [Segment](CIP_Segmentation), [Assess](CIP_Utilities).
+To get information on a function follow the link in the function table in the [categories](CIP#Tools_categories) section or directly go to one of the category pages: [Format](/plugins/cip/format), [Filter](/plugins/cip/filter), [Math](/plugins/cip/math), [Segment](/plugins/cip/segmentation), [Assess](/plugins/cip/utilities).
 
-For information on the parameters, their type, whether they are optionnal or required and more one can consult the [ Parameters](CIP_Parameters) page.
+For information on the parameters, their type, whether they are optionnal or required and more one can consult the [ Parameters](/plugins/cip/parameters) page.
 
 Tools categories
 ================
@@ -67,23 +67,23 @@ Image analysis workflows require the user to perform stereotypic steps: enhance 
 
 </div>
 
--   **[Format](CIP_Format)**: These functions are used to managed image data, combine them or reduce their dimensionnality. They take one or multiple image as input and return one image as output. These function will generally provide an ouput which size and/or dimensionality can be different from the input
+-   **[Format](/plugins/cip/format)**: These functions are used to managed image data, combine them or reduce their dimensionnality. They take one or multiple image as input and return one image as output. These function will generally provide an ouput which size and/or dimensionality can be different from the input
 
 <!-- -->
 
--   **[Filter](CIP_Filter)**: filters act on image graylevel. They creates an output image the same size as the input. Filters are used to remove noise, filter out unwanted background or enhance feature of interest such as spots and lines.
+-   **[Filter](/plugins/cip/filter)**: filters act on image graylevel. They creates an output image the same size as the input. Filters are used to remove noise, filter out unwanted background or enhance feature of interest such as spots and lines.
 
 <!-- -->
 
--   **[Math](CIP_Math) operations and functions**: These category gathers usual mathematical operations such as addition, subtraction or trigonometric functions for instance. They can be used with scalars, images or image and scalar in combination. When use with images the operation are applied pixel wise.
+-   **[Math](/plugins/cip/math) operations and functions**: These category gathers usual mathematical operations such as addition, subtraction or trigonometric functions for instance. They can be used with scalars, images or image and scalar in combination. When use with images the operation are applied pixel wise.
 
 <!-- -->
 
--   **[Segmentation](CIP_Segmentation)**: Segmentation functions allow to define regions in an image. Applied to an input image they create so called label image that defines the pixel where the object lays. Each region is attributed a particular label, an integer value, that can be used to retrieve the object later. Watershed, thresholding spot and line detection can be found here.
+-   **[Segmentation](/plugins/cip/segmentation)**: Segmentation functions allow to define regions in an image. Applied to an input image they create so called label image that defines the pixel where the object lays. Each region is attributed a particular label, an integer value, that can be used to retrieve the object later. Watershed, thresholding spot and line detection can be found here.
 
 <!-- -->
 
--   **[Assess](CIP_Utilities)**: in that category are tools to facilitate data visualisation and measures that will be needed in every pipeline once the image processing is done.
+-   **[Assess](/plugins/cip/utilities)**: in that category are tools to facilitate data visualisation and measures that will be needed in every pipeline once the image processing is done.
 
 Link to function user documentation are provided in the table below.
 

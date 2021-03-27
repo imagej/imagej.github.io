@@ -6,9 +6,9 @@ categories: News
 description: test description
 ---
 
-It is our please to announce the release of the version 2.8.0 of [TrackMate](TrackMate), after a quieter pace of development.
+It is our please to announce the release of the version 2.8.0 of [TrackMate](/plugins/trackmate), after a quieter pace of development.
 
-This version ships mainly small utilities, improvement and bugfixes. But more importantly, I would like to highlight several contributed [TrackMate modules](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate) since the last release.
+This version ships mainly small utilities, improvement and bugfixes. But more importantly, I would like to highlight several contributed [TrackMate modules](/plugins/trackmate/custom-edge-feature-analyzer-algorithms) since the last release.
 
 Contributed modules.
 --------------------

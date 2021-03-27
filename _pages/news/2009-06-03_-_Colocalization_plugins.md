@@ -6,6 +6,6 @@ categories: News,Colocalization
 description: test description
 ---
 
-By request of Daniel James White, we now have Colocalization plugins in [Fiji](Fiji). We took two plugins from the [MBF Plugin Collection](MBF_Plugin_Collection), fixed them to work with newer [ImageJ](ImageJ) versions, and put them into the Fiji [Updater](Updater). Oh, and of course, they are {% include github org='fiji' repo='Colocalisation\_Analysis' %}, too.
+By request of Daniel James White, we now have Colocalization plugins in [Fiji](/fiji). We took two plugins from the [MBF Plugin Collection](/software/mbf-imagej), fixed them to work with newer [ImageJ](/about) versions, and put them into the Fiji [Updater](/plugins/updater). Oh, and of course, they are {% include github org='fiji' repo='Colocalisation\_Analysis' %}, too.
 
  

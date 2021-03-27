@@ -19,7 +19,7 @@ description: test description
 -   [Fiji on OHLOH](http://www.ohloh.net/p/therealfiji)
 -   [ObjectJ](http://simon.bio.uva.nl/objectj/)
 
-Links to the contributors' personal pages can be found [here](Contributors).
+Links to the contributors' personal pages can be found [here](/about/contributors).
 
 More ImageJ plugins
 -------------------
@@ -32,7 +32,7 @@ More ImageJ plugins
 Related projects
 ----------------
 
-<table><tbody><tr class="odd"><td><p><img src="/media/Knime-logo.jpg" width="150"/></p></td><td><p>The <a href="http://tech.knime.org/community/image-processing">Konstanz kNowledge Information Mining Environment</a>.</p></td></tr><tr class="even"><td><p><img src="/media/Mm-icon.jpg" width="150"/></p></td><td><p>valign=center|<a href="http://micro-manager.org/">µManager</a> is an extensive software suite to interact with microscopes. It integrates nicely as an ImageJ plugin ({% include bc content='Plugins | Micro-Manager | Micro-Manager Studio'%}).</p></td></tr><tr class="odd"><td><p><img src="/media/OpenSPIM-logo.png" width="150"/></p></td><td><p><a href="http://openspim.org/">OpenSPIM</a> is an Open Access and Open Source project to make Single Plane Illumination Microscopy (SPIM) accessible to researchers working with, or on, SPIM technology.</p></td></tr><tr class="even"><td><p><img src="/media/SlideSet-logo.png" width="90"/></p></td><td><p><a href="http://b.nanes.org/slideset/">Slide Set</a> is a batch processing system for ImageJ, already leveraging the power of <a href="ImageJ2" title="wikilink">ImageJ2</a>.</p></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td><p><img src="/media/Knime-logo.jpg" width="150"/></p></td><td><p>The <a href="http://tech.knime.org/community/image-processing">Konstanz kNowledge Information Mining Environment</a>.</p></td></tr><tr class="even"><td><p><img src="/media/Mm-icon.jpg" width="150"/></p></td><td><p>valign=center|<a href="http://micro-manager.org/">µManager</a> is an extensive software suite to interact with microscopes. It integrates nicely as an ImageJ plugin ({% include bc content='Plugins | Micro-Manager | Micro-Manager Studio'%}).</p></td></tr><tr class="odd"><td><p><img src="/media/OpenSPIM-logo.png" width="150"/></p></td><td><p><a href="http://openspim.org/">OpenSPIM</a> is an Open Access and Open Source project to make Single Plane Illumination Microscopy (SPIM) accessible to researchers working with, or on, SPIM technology.</p></td></tr><tr class="even"><td><p><img src="/media/SlideSet-logo.png" width="90"/></p></td><td><p><a href="http://b.nanes.org/slideset/">Slide Set</a> is a batch processing system for ImageJ, already leveraging the power of <a href="/software/imagej2" title="wikilink">ImageJ2</a>.</p></td></tr></tbody></table>
 
 Image Processing and Ethics
 ---------------------------
@@ -42,11 +42,11 @@ See the [Principles](Principles) page.
 Input/Output
 ------------
 
-See the [Formats](Formats) page.
+See the [Formats](/formats) page.
 
 ### Movie support
 
-See the [Video](Video) page.
+See the [Video](/formats/video) page.
 
 Image Processing
 ----------------
@@ -61,7 +61,7 @@ The University of Edinburgh also has the rather complete [CVonline](http://homep
 
 A scientific image [is not a photograph](http://www.4p8.com/eric.brasseur/gamma.html)!
 
-[External tutorials](External_tutorials).
+[External tutorials](/Category_Tutorials).
 
 Programming in science
 ----------------------

@@ -50,7 +50,7 @@ description: test description
 {% capture maintainers%}
 {% include person content='frauzufall' %}, {% include person content='tpietzsch' %}, {% include person content='HedgehogCode' %}
 {% endcapture %}
-{% include component project='CSBDresden' name='CARE Fiji Plugin' url='https://imagej.net/CARE' source=source license='[BSD-2](BSD-2)' release=release date='Tue Dec 11 00:00:00 CDT 2018' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
+{% include component project='CSBDresden' name='CARE Fiji Plugin' url='https://imagej.net/CARE' source=source license='[BSD-2](/licensing/bsd)' release=release date='Tue Dec 11 00:00:00 CDT 2018' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
 
 Install
 -------

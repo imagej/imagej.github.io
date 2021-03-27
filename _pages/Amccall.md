@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-The Amccall [ ImageJ update site](Update_Sites) (sites.imagej.net/Amccall) installs the [Colocalization by Cross Correlation](Colocalization_by_Cross_Correlation) plugin.
+The Amccall [ ImageJ update site](/update-sites) (sites.imagej.net/Amccall) installs the [Colocalization by Cross Correlation](/plugins/colocalization-by-cross-correlation) plugin.

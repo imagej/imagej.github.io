@@ -42,15 +42,15 @@ Select the views you wish to process in the main window and right-click to open 
 
 <img src="/media/BigStitcher Overview 3.png" width="500"/>
 
--   **Displaying (1)** shows functions for displaying the data in BigDataViewer or in ImageJ ([details](BigStitcher_BDV)).
--   **Preprocessing (2)** shows functions for manually moving views ([details](BigStitcher_manual_translation)), selecting the best illuminations ([details](BigStitcher_Select_illumination)) and performing flat-field correction ([details](BigStitcher_Flatfield_correction)).
+-   **Displaying (1)** shows functions for displaying the data in BigDataViewer or in ImageJ ([details](/plugins/bigstitcher/bdv)).
+-   **Preprocessing (2)** shows functions for manually moving views ([details](/plugins/bigstitcher/manual-translation)), selecting the best illuminations ([details](/plugins/bigstitcher/select-illumination)) and performing flat-field correction ([details](/plugins/bigstitcher/flatfield-correction)).
 -   **Stitching Wizard (3)** shows functions that guide you through the stitching process.
--   **Step-by-step Stitching (4)** shows functions to execute the individual steps of the stitching process, [Pairwise shift calculation](BigStitcher_Pairwise_shift), [Link Preview and Verification](BigStitcher_Preview_Pairwise_shift) and [Global Optimization](BigStitcher_Global_optimization).
+-   **Step-by-step Stitching (4)** shows functions to execute the individual steps of the stitching process, [Pairwise shift calculation](/plugins/bigstitcher/pairwise-shift), [Link Preview and Verification](/plugins/bigstitcher/preview-pairwise-shift) and [Global Optimization](/plugins/bigstitcher/global-optimization).
 
-There are also several advanced expert functions for the individual steps in the stitching pipeline ([details](BigStitcher_Advanced_stitching)).
+There are also several advanced expert functions for the individual steps in the stitching pipeline ([details](/plugins/bigstitcher/advanced-stitching)).
 
--   **Registration Refinement (5)** shows functions for refining the alignment via ICP ([details](BigStitcher_ICP_refinement))
--   **Fusion (6)** shows functions for the fusion of views (or parts thereof) into single output images ([details](BigStitcher_Fuse)).
+-   **Registration Refinement (5)** shows functions for refining the alignment via ICP ([details](/plugins/bigstitcher/icp-refinement))
+-   **Fusion (6)** shows functions for the fusion of views (or parts thereof) into single output images ([details](/plugins/bigstitcher/fuse)).
 -   **Calibration/Transformations (7)** shows functions for removing transformations from the dataset.
 -   **Modifications (8)** shows functions for resaving the dataset, e.g. as multiresolution HDF5 ([details](BigStitcher_AutoLoader#Options_for_re-saving_as_HDF5)).
 -   **Help (9)** contains a link to this documentation.

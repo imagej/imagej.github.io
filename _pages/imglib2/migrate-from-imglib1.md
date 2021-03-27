@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-{% include project content='ImgLib2' %}ImgLib2 is a major redesign of ImgLib, and [much has changed](Changes_from_ImgLib1_to_ImgLib2). This page attempts to provide a "how-to" guide for bringing existing ImgLib1 code up to date with ImgLib2. It is intended as a "quick start" guide—for more details, see the [Changes from ImgLib1 to ImgLib2](Changes_from_ImgLib1_to_ImgLib2) page.
+{% include project content='ImgLib2' %}ImgLib2 is a major redesign of ImgLib, and [much has changed](/imglib2/changes-from-imglib1). This page attempts to provide a "how-to" guide for bringing existing ImgLib1 code up to date with ImgLib2. It is intended as a "quick start" guide—for more details, see the [Changes from ImgLib1 to ImgLib2](/imglib2/changes-from-imglib1) page.
 
 Rename packages
 ---------------
@@ -30,7 +30,7 @@ In general, the Image class has been replaced with Img. Many classes with "Image
 -   `ImageFactory` → `ImgFactory`
 -   `ImageOpener` → `ImgOpener`
 
-Please note that there are cases where using Img is not appropriate, and a better alternative exists; see the [Changes from ImgLib1 to ImgLib2](Changes_from_ImgLib1_to_ImgLib2) page for a more complete explanation.
+Please note that there are cases where using Img is not appropriate, and a better alternative exists; see the [Changes from ImgLib1 to ImgLib2](/imglib2/changes-from-imglib1) page for a more complete explanation.
 
 Use long for dimensional lengths
 --------------------------------

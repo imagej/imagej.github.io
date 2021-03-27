@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Barry DeZonia' gravatar='4fa6edc39f49d549153b0c1ca4d1ea66' affiliation='UW-Madison [LOCI](LOCI) (former)' loci='barry-dezonia' github='bdezonia' osrc='bdezonia' %}
+{% include user-box name='Barry DeZonia' gravatar='4fa6edc39f49d549153b0c1ca4d1ea66' affiliation='UW-Madison [LOCI](/orgs/loci) (former)' loci='barry-dezonia' github='bdezonia' osrc='bdezonia' %}

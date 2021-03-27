@@ -11,7 +11,7 @@ Introduction
 
 The following [Beanshell script](Beanshell_Scripting) allows you to evaluate the performance of your [segmentation](Category_Segmentation) method after thinning the borders of the image segments to 1-pixel width.
 
-Retrospective evaluation of the original [ISBI-2012 segmentation challenge](http://brainiac2.mit.edu/isbi_challenge/) scoring system revealed that it was not sufficiently robust to variations in the widths of neurite borders. After evaluating all of these metrics and associated variants, it was found that specially normalized versions of the [Rand error](Rand_error) and [Variation of Information](https://en.wikipedia.org/wiki/Variation_of_information) best matched our qualitative judgements of segmentation quality:
+Retrospective evaluation of the original [ISBI-2012 segmentation challenge](http://brainiac2.mit.edu/isbi_challenge/) scoring system revealed that it was not sufficiently robust to variations in the widths of neurite borders. After evaluating all of these metrics and associated variants, it was found that specially normalized versions of the [Rand error](/plugins/rand-error) and [Variation of Information](https://en.wikipedia.org/wiki/Variation_of_information) best matched our qualitative judgements of segmentation quality:
 
 -   Foreground-restricted Rand Scoring after border thinning: V<sup>Rand</sup><sub>(thinned)</sub>
 -   Foreground-restricted Information Theoretic Scoring after border thinning: V<sup>Info</sup><sub>(thinned)</sub>
@@ -23,7 +23,7 @@ Further details about the metrics can be found in the [challenge publication](ht
 Use
 ===
 
-Just copy/paste it in the [Script Editor](Script_Editor) or save it into a .bsh file and run it ({% include bc content='File | Open'%}):
+Just copy/paste it in the [Script Editor](/scripting/script-editor) or save it into a .bsh file and run it ({% include bc content='File | Open'%}):
 
     /**
      * Script to calculate the segmentation error between some 2D 

@@ -13,7 +13,7 @@ A bug report is a reproducible set of steps describing a problem. They are a com
 TL;DR Summary
 =============
 
--   Report the issue using the [Report a Bug](Report_a_Bug) plugin (in the Help menu).
+-   Report the issue using the [Report a Bug](/help/report-a-bug) plugin (in the Help menu).
 -   Provide a [minimal, complete, verifiable example](http://stackoverflow.com/help/mcve) (MCVE).
 -   [Describe what you already tried](http://whathaveyoutried.com/).
 -   [Put as much effort into your question](http://stackoverflow.com/help/how-to-ask) as you expect to be put into its response.
@@ -51,9 +51,9 @@ Environment information
 
 ImageJ is a flexible and extensible platform, so the actual "ImageJ environment" can vary from user to user. A common misunderstanding in bug reports is to just report the version of the base ImageJ component (e.g. 1.49e). This is helpful, but says nothing about what plugins, update sites, etc... are in use.
 
-Errors can appear in any component of the software, and in some cases two plugins might work individually but have some negative interaction with each other. Thus a complete view of the ImageJ environment is imperative. Fiji currently ships with a [Report a Bug](Report_a_Bug) command; this will automatically populate the complete environment information and include it in the [bugzilla report](https://fiji.sc/bugzilla/); this bug-reporting functionality will be migrated to core ImageJ soon.
+Errors can appear in any component of the software, and in some cases two plugins might work individually but have some negative interaction with each other. Thus a complete view of the ImageJ environment is imperative. Fiji currently ships with a [Report a Bug](/help/report-a-bug) command; this will automatically populate the complete environment information and include it in the [bugzilla report](https://fiji.sc/bugzilla/); this bug-reporting functionality will be migrated to core ImageJ soon.
 
-Note that if you file a bug manually or are enquiring to a [mailing list](Mailing_Lists), you can still copy and paste the contents of the *"Useful information about your system"* text box from the [Report a Bug](Report_a_Bug) dialog. It will be greatly appreciated.
+Note that if you file a bug manually or are enquiring to a [mailing list](Mailing_Lists), you can still copy and paste the contents of the *"Useful information about your system"* text box from the [Report a Bug](/help/report-a-bug) dialog. It will be greatly appreciated.
 
 Minimal and precise steps to reproduce
 --------------------------------------
@@ -80,7 +80,7 @@ Developers typically have a cache of sample data for testing their application. 
 
 If your test data is small and public, you can typically attach it to the bug report.
 
-The easiest and safest way to provide sample data is via the {% include bc content='Help | [Upload Sample Image](Upload_Sample_Image)'%} command. This sends the image to a private space accessible only by trusted developers. This allows proprietary data to be tested without fear of public distribution.
+The easiest and safest way to provide sample data is via the {% include bc content='Help | [Upload Sample Image](/plugins/upload-sample-image)'%} command. This sends the image to a private space accessible only by trusted developers. This allows proprietary data to be tested without fear of public distribution.
 
 Note: if you do upload sample data via ImageJ, you should mention the name of the dataset in your bug report. This will help developers find your image(s) quickly.
 
@@ -94,14 +94,14 @@ If you have encountered and reported a bug that is completely blocking your work
 Disable SCIFIO
 --------------
 
-[ImageJ2](ImageJ2) provides an alternative to the hard-coded case logic of [ImageJ 1.x](ImageJ_1.x)'s image I/O: [SCIFIO](SCIFIO), plugin-based image I/O. While SCIFIO is more powerful, due to the vast scope of the overhaul, there are inevitably issues remaining. If your dataset used to open correctly for you, but is broken after updating, please *disable* the "Use SCIFIO when opening files (BETA!)" option in the {% include bc content='Edit | Options | ImageJ2'%} dialog. This will revert to ImageJ 1.x's classic image I/O until the SCIFIO-driven I/O is fixed or improved.
+[ImageJ2](/software/imagej2) provides an alternative to the hard-coded case logic of [ImageJ 1.x](/software/imagej1)'s image I/O: [SCIFIO](/software/scifio), plugin-based image I/O. While SCIFIO is more powerful, due to the vast scope of the overhaul, there are inevitably issues remaining. If your dataset used to open correctly for you, but is broken after updating, please *disable* the "Use SCIFIO when opening files (BETA!)" option in the {% include bc content='Edit | Options | ImageJ2'%} dialog. This will revert to ImageJ 1.x's classic image I/O until the SCIFIO-driven I/O is fixed or improved.
 
 Note: even if disabling SCIFIO fixes the issue for you, **please** still report the discovered bug. The long-term vision for ImageJ is to migrate completely to the new image I/O paradigm, so if there are problems we need to know about them.
 
 Disable problematic update sites
 --------------------------------
 
-The [Report a Bug](Report_a_Bug) dialog provides several pieces of critical information. Some of the most important being:
+The [Report a Bug](/help/report-a-bug) dialog provides several pieces of critical information. Some of the most important being:
 
 -   Activated update sites
 -   Files not up-to-date

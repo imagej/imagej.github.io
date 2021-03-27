@@ -31,7 +31,7 @@ OR
 
 -   In **Metadata viewing**: check "Display Metadata" or "Display OME-XML metadata"
 
-[OMEVisual](OMEVisual) is another tool that can visualize OME metadata; it is a [Fiji](Fiji) plugin.
+[OMEVisual](/plugins/omevisual) is another tool that can visualize OME metadata; it is a [Fiji](/fiji) plugin.
 
 These tools allow you to quickly check if your metadata 'looks' correct... are there the correct number of image blocks (i.e. one per tile if multi-scan image)? Are the dimensions correct? etc.
 

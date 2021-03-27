@@ -20,7 +20,7 @@ Client software can:
 Installation
 ------------
 
--   [Enable](Following_an_update_site) the Server [update site](Update_site).
+-   [Enable](/update-sites/following) the Server [update site](Update_site).
 -   Start the server via the {% include bc content='Plugins | Utilities | Start Server'%} command.
 -   Or launch ImageJ in server mode using the `--server` flag.
 

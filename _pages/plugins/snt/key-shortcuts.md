@@ -53,7 +53,7 @@ These shortcuts are available when running SNT in *Tracing Mode*:
 
 <!-- -->
 
--   {% include key content='S' %} - Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. This facilitates accurate [positioning of path points](Simple_Neurite_Tracer__Accurate_point_placement) and it is described in more detail in this [issue](https://github.com/fiji/Simple_Neurite_Tracer/issues/1).
+-   {% include key content='S' %} - Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. This facilitates accurate [positioning of path points](/SNT__Step-By-Step_Instructions#Accurate_Point_Placement) and it is described in more detail in this [issue](https://github.com/fiji/Simple_Neurite_Tracer/issues/1).
 
 <!-- -->
 
@@ -143,7 +143,7 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 -   {% include key content='Shift\|' %}+Scroll - Zoom
 -   {% include key content='W' %} {% include key content='A' %} {% include key content='S' %} {% include key content='D' %} - Move around (hold {% include key content='Shift' %} for slow movement)
 
-See [SciView](SciView)'s {% include bc content='Help| '%}menu for a full list of shortcuts.
+See [SciView](/plugins/sciview)'s {% include bc content='Help| '%}menu for a full list of shortcuts.
 
 #### Legacy 3D Viewer
 

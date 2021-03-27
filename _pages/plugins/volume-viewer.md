@@ -15,6 +15,6 @@ Documentation: https://imagej.net/plugins/volume-viewer.html
 See also
 --------
 
-[3D Viewer](3D_Viewer): hardware-accelerated 3D visualization of image volumes, orthoslices, and 3D meshes.
+[3D Viewer](/plugins/3d-viewer): hardware-accelerated 3D visualization of image volumes, orthoslices, and 3D meshes.
 
  

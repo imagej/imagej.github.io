@@ -20,15 +20,15 @@ description: test description
 {% endcapture %}
 {% include info-box software='ImageScience' name='ImageScience' maintainer=maintainer author=author source=source status='' category='[:Category:Libraries](Category_Libraries)' website='http://imagescience.org/meijering/software/imagescience/' %}The ImageScience library supports the ImageScience suite of plugins:
 
--   [FeatureJ](FeatureJ)
--   [MTrackJ](MTrackJ)
--   [NeuronJ](NeuronJ)
--   [RandomJ](RandomJ)
--   [TransformJ](TransformJ)
+-   [FeatureJ](/plugins/featurej)
+-   [MTrackJ](/plugins/mtrackj)
+-   [NeuronJ](/plugins/neuronj)
+-   [RandomJ](/plugins/randomj)
+-   [TransformJ](/plugins/transformj)
 
 To install them, enable the ImageScience update site:
 
--   [{% include bc content='Help|Update...'%}](Update_Sites)
+-   [{% include bc content='Help|Update...'%}](/update-sites)
 -   Click *Manage update sites*
 -   Check *ImageScience*
 -   Click *Close*

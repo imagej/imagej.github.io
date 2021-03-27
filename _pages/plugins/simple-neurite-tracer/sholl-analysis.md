@@ -6,12 +6,12 @@ categories: Tutorials
 description: test description
 ---
 
-{% include ambox text='This is an old tutorial on how to call the [Sholl Analysis](Sholl_Analysis) plugin from [Simple Neurite Tracer](Simple_Neurite_Tracer). **It is rather outdated. More up-to-date information is provided in [SNT: Analysis](SNT__Analysis#Sholl_Analysis).** For an overview of the technique refer to the [Sholl Analysis](Sholl_Analysis) documentation page.' %}
+{% include ambox text='This is an old tutorial on how to call the [Sholl Analysis](/plugins/sholl-analysis) plugin from [Simple Neurite Tracer](/plugins/snt). **It is rather outdated. More up-to-date information is provided in [SNT: Analysis](SNT__Analysis#Sholl_Analysis).** For an overview of the technique refer to the [Sholl Analysis](/plugins/sholl-analysis) documentation page.' %}
 
 Introduction
 ============
 
-This tutorial assumes that you've already traced an image with Simple Neurite Tracer (SNT) and that you are familiar with the [variants of Sholl methods](Sholl_Analysis#MethodsTable) and the [Sholl Analysis](Sholl_Analysis) plugin. This tutorial will use an olfactory projection fibre image, freely available from the [Diadem challenge data set](http://www.diademchallenge.org/olfactory_projection_fibers_readme.html).
+This tutorial assumes that you've already traced an image with Simple Neurite Tracer (SNT) and that you are familiar with the [variants of Sholl methods](Sholl_Analysis#MethodsTable) and the [Sholl Analysis](/plugins/sholl-analysis) plugin. This tutorial will use an olfactory projection fibre image, freely available from the [Diadem challenge data set](http://www.diademchallenge.org/olfactory_projection_fibers_readme.html).
 
 Retrieving Profiles
 ===================
@@ -52,12 +52,12 @@ You can export profiles by clicking on "Save Profile" which will prompt for a CS
 Analyzing Profiles
 ==================
 
-Press *Analyze Profile* to run the [Sholl Analysis](Sholl_Analysis) plugin. Once [Parameters](Sholl_Analysis#Parameters) have been specified, the plugin will [automatically calculate](Sholl_Analysis#Dratio) the normalization method thought to be the most informative. Metrics will be displayed in a [detailed table](Sholl_Analysis#Metrics). {% include tip tip='You can perform batch analysis using [\_\_\_SHADOW1\_\_\_](Sholl_Analysis#Analysis_of_Existing_Profiles) or [\_\_\_SHADOW2\_\_\_](Sholl_Analysis#Analysis_of_Traced_Cells)' %}
+Press *Analyze Profile* to run the [Sholl Analysis](/plugins/sholl-analysis) plugin. Once [Parameters](Sholl_Analysis#Parameters) have been specified, the plugin will [automatically calculate](Sholl_Analysis#Dratio) the normalization method thought to be the most informative. Metrics will be displayed in a [detailed table](Sholl_Analysis#Metrics). {% include tip tip='You can perform batch analysis using [\_\_\_SHADOW1\_\_\_](Sholl_Analysis#Analysis_of_Existing_Profiles) or [\_\_\_SHADOW2\_\_\_](Sholl_Analysis#Analysis_of_Traced_Cells)' %}
 
 Sholl Image
 ===========
 
-Another option that might be useful is *Make Sholl image*, equivalent to the [Intersections mask](Sholl#Output_Options) created by the [Sholl Analysis](Sholl_Analysis) plugin when parsing images directly. This will produce a stack which shows the number of intersections at each distance from the centre point on a colour scale. You can see the exact number of intersections corresponding to a colour by mousing over that region and looking in the status bar. For example, this shows you that the orange colour corresponds to 2 intersections ("value=2"): <img src="/media/Simple Neurite Tracer- Sholl analysis-12.jpg" title="fig:" width="500" />
+Another option that might be useful is *Make Sholl image*, equivalent to the [Intersections mask](Sholl#Output_Options) created by the [Sholl Analysis](/plugins/sholl-analysis) plugin when parsing images directly. This will produce a stack which shows the number of intersections at each distance from the centre point on a colour scale. You can see the exact number of intersections corresponding to a colour by mousing over that region and looking in the status bar. For example, this shows you that the orange colour corresponds to 2 intersections ("value=2"): <img src="/media/Simple Neurite Tracer- Sholl analysis-12.jpg" title="fig:" width="500" />
 
 If you go back to the main tracer interface, keeping that *Sholl image stack* open, you can visualize those colours on the traces by switching the *Use colors / labels from* option to *Sholl analysis of all paths* (volume of original image made transparent for clarity): <img src="/media/Simple Neurite Tracer- Sholl analysis-13.jpg" title="fig:" width="500" />
 

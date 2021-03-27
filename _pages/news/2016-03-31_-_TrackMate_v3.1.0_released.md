@@ -6,7 +6,7 @@ categories: News
 description: test description
 ---
 
-We just release the version 3.1.0 of [TrackMate](TrackMate), a Fiji plugin for single-particle tracking. We also mention here the changes of version 3.0.1, which did not get a news item.
+We just release the version 3.1.0 of [TrackMate](/plugins/trackmate), a Fiji plugin for single-particle tracking. We also mention here the changes of version 3.0.1, which did not get a news item.
 
 Improvements.
 -------------
@@ -52,6 +52,6 @@ Changes.
 
 -   Also, to keep the 3D Viewer tidy, it is not kept in sync with the manual edits made on the model. It just shows a snapshot of the model at the time when it was launched. It was not working properly before anyway, so we officially disable this feature.
 
-[JeanYvesTinevez](User_JeanYvesTinevez) ([talk](User_talk_JeanYvesTinevez)) 06:46, 31 March 2016 (CDT)
+[JeanYvesTinevez](/users/JeanYvesTinevez) ([talk](User_talk_JeanYvesTinevez)) 06:46, 31 March 2016 (CDT)
 
 

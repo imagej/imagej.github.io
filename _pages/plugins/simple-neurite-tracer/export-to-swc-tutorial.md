@@ -9,7 +9,7 @@ description: test description
 {% include sntdeprecation%}
 
 
-This short tutorial shows you how to export a connected set of paths in the [Simple Neurite Tracer](Simple_Neurite_Tracer) plugin to an SWC file. This may be useful for analyzing a structure in other tools (e.g. [L-measure](http://cng.gmu.edu:8080/Lm/)) or uploading to a database like [NeuroMorpho.org](http://neuromorpho.org/). (n.b. for use in L-measure you will have to set the SWC type for each path - see [\#Setting\_the\_SWC\_point\_types](#Setting_the_SWC_point_types "wikilink"))
+This short tutorial shows you how to export a connected set of paths in the [Simple Neurite Tracer](/plugins/snt) plugin to an SWC file. This may be useful for analyzing a structure in other tools (e.g. [L-measure](http://cng.gmu.edu:8080/Lm/)) or uploading to a database like [NeuroMorpho.org](http://neuromorpho.org/). (n.b. for use in L-measure you will have to set the SWC type for each path - see [\#Setting\_the\_SWC\_point\_types](#Setting_the_SWC_point_types "wikilink"))
 
 Export all connected path sets as SWC files
 -------------------------------------------
@@ -31,7 +31,7 @@ Those are actually three disconnected groups of paths, as you can see from the p
 
 In other words, there is one large group of neurons which are all connected, with "Path (0)" as the primary path, there is a single disconnected path ("Path (15)" and group of 6 paths with "Path (16)" as the primary path.
 
-(Paths are connected when you start one path on another one (branching) or end one path on another one (joining). To find out how to do that, see the [Simple Neurite Tracer: Step-By-Step Instructions](Simple_Neurite_Tracer__Step-By-Step_Instructions).)
+(Paths are connected when you start one path on another one (branching) or end one path on another one (joining). To find out how to do that, see the [Simple Neurite Tracer: Step-By-Step Instructions](/plugins/simple-neurite-tracer/step-by-step-instructions).)
 
 The SWC file format describes a single neuron's morphology (so every point is connected to another one), whereas a .traces file in Simple Neurite Tracer can describe multiple disconnected structures. This means that in this plugin you can only export a complete connected set of paths to SWC. So, in this example, you could only export three different SWC files, since there are three connected groups of paths. To do that, select all of the paths in that structure (using {% include key content='Shift' %} or {% include key content='Control' %} when selecting items in the list) - that should look like this:
 

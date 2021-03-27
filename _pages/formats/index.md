@@ -8,17 +8,17 @@ description: test description
 ---
 
 
-Thanks to ImageJ's [extensibility](Extensibility) via [plugins](Plugins), it supports a lot of image formats!
+Thanks to ImageJ's [extensibility](/Architecture#Extensibility) via [plugins](/fiji/plugins), it supports a lot of image formats!
 
 Life sciences
 -------------
 
-The [OME Bio-Formats](Bio-Formats) plugins provide support for over 130 file formats in microscopy, medical imaging, and related life science formats. Bio-Formats is included with the [Fiji](Fiji) distribution of ImageJ. See also the Bio-Formats [list of supported formats](https://www.openmicroscopy.org/site/support/bio-formats/supported-formats.html).
+The [OME Bio-Formats](/formats/bio-formats) plugins provide support for over 130 file formats in microscopy, medical imaging, and related life science formats. Bio-Formats is included with the [Fiji](/fiji) distribution of ImageJ. See also the Bio-Formats [list of supported formats](https://www.openmicroscopy.org/site/support/bio-formats/supported-formats.html).
 
 DICOM
 -----
 
-ImageJ has some built-in support for the DICOM format, and there are also plugins for working with DICOM files. See the [DICOM](DICOM) page for full details.
+ImageJ has some built-in support for the DICOM format, and there are also plugins for working with DICOM files. See the [DICOM](/formats/dicom) page for full details.
 
 HDF
 ---
@@ -28,7 +28,7 @@ The HDF5 [update site](Update_site) enables support for reading and writing [HDF
 Video
 -----
 
-Out of the box, ImageJ has limited support for some video formats such as AVI and [QuickTime](QuickTime), and there are also plugins which extend ImageJ's support for videos. See the [Video](Video) page for details.
+Out of the box, ImageJ has limited support for some video formats such as AVI and [QuickTime](/formats/quicktime), and there are also plugins which extend ImageJ's support for videos. See the [Video](/formats/video) page for details.
 
 See also
 --------

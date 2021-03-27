@@ -105,7 +105,7 @@ Do some numerical analysis on the selected data:
     -   Control which measurements are done using \[https://imagej.net/docs/guide/146-30.html#sub:Set-Measurements... Set Measurements\].
 -   Use \[https://imagej.net/docs/guide/146-30.html#sub:Analyze-Particles... Analyze Particles\] to extract desirable objects from your selection and report individual statistics on them.
 -   Use the [ROI Manager](https://imagej.net/docs/guide/146-30.html#fig:The-ROI-Manager) to **Add** the selection and then **Split** it (under the **More** button), then use **Multi Measure** (also under **More**) to report statistics on the objects.
--   [Write a macro](Macros_Intro) to automate this sort of analysis, loop over objects in the ROI manager, measure and manipulate them, etc.
+-   [Write a macro](/scripting/macro) to automate this sort of analysis, loop over objects in the ROI manager, measure and manipulate them, etc.
 
 See also
 ========

@@ -16,7 +16,7 @@ The paper comes with an extensive collection of **Supplementary Videos** availab
 
 If you are interested in the paper's genesis under intense but constructive scrutiny of reviewers, you may want to have a look at the various submitted pre-prints on arxiv [arxiv v1](http://arxiv.org/abs/1308.0730v1) [arxiv v2](http://arxiv.org/abs/1308.0730v2) [arxiv v3](http://arxiv.org/abs/1308.0730v3)
 
-The [**documentation**](Multi-View_Deconvolution) for the Fiji plugin contains description of parameters and a 'how to' for hacks that didn't yet make it into the plugins menu's. It complements other SPIM related Fiji plugins such as [**bead based registration**](SPIM_Bead_Registration) & [**Multiview fusion**](Multi-View_Fusion).
+The [**documentation**](/plugins/multi-view-deconvolution) for the Fiji plugin contains description of parameters and a 'how to' for hacks that didn't yet make it into the plugins menu's. It complements other SPIM related Fiji plugins such as [**bead based registration**](/plugins/spim-bead-registration) & [**Multiview fusion**](/plugins/multi-view-fusion).
 
 Finally, a Figure from the paper showing that multi-view deconvolution matters!
 

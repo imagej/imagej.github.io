@@ -29,7 +29,7 @@ description: test description
 
  **BAR**: A collection of **B**roadly **A**pplicable **R**outines.
 
-The collection contains [Macros](Macros), [Scripts](Scripts) and [Plugins](Plugins) focused on Data Analysis, Image Annotation and Image Segmentation. It is curated using {% include github org='tferr' repo='Scripts\#ij-bar' label='GitHub' %} and distributed as an optional {% include list-of-update-sites content='update site' %}.
+The collection contains [Macros](/scripting/macro), [Scripts](/scripting) and [Plugins](/fiji/plugins) focused on Data Analysis, Image Annotation and Image Segmentation. It is curated using {% include github org='tferr' repo='Scripts\#ij-bar' label='GitHub' %} and distributed as an optional {% include list-of-update-sites content='update site' %}.
 
 Installation
 ------------
@@ -58,11 +58,11 @@ Some of the scripts have a dedicated documentation page, others feature built-in
 <!-- -->
 
 {% include github org='tferr' repo='Scripts' path='README.md\#data-analysis' label='Data Analysis' %}<span id="Data_Analysis"></span>  
-{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-boxplot' label='Create Boxplot' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-polar-plot' label='Create Polar Plot' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#distribution-plotter' label='Distribution Plotter' %}, [Find Peaks](Find_Peaks), [Fit Polynomial](Sholl_Analysis#Complementary_Tools), {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#interactive-plotting' label='Interactive Plotting' %}
+{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-boxplot' label='Create Boxplot' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-polar-plot' label='Create Polar Plot' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#distribution-plotter' label='Distribution Plotter' %}, [Find Peaks](/plugins/find-peaks), [Fit Polynomial](Sholl_Analysis#Complementary_Tools), {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#interactive-plotting' label='Interactive Plotting' %}
 
 <!-- -->
 
-{% include github org='tferr' repo='Scripts' path='README.md\#image-segmentation' label='Segmentation' %}<span id="Segmentation"></span>  
+{% include github org='tferr' repo='Scripts' path='README.md\#image-segmentation' label='Segmentation' %}<span id="/techniques/segmentation"></span>  
 {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#shen-castan-edge-detector' label='Shen-Castan Edge Detector' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#apply-threshold-to-roi' label='Apply Threshold To ROI' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#clear-thresholded-pixels' label='Clear Thresholded Pixels' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#remove-isolated-pixels' label='Remove Isolated Pixels' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#threshold-from-background' label='Threshold From Background' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#wipe-background' label='Wipe Background' %}
 
 <!-- -->
@@ -72,7 +72,7 @@ Described in [Scripting BARs](#Scripting_BARs "wikilink")
 
 <!-- -->
 
-{% include github org='tferr' repo='Scripts' path='README.md\#tools-and-toolsets' label='Tools and Toolsets' %}<span id="Tools"></span>  
+{% include github org='tferr' repo='Scripts' path='README.md\#tools-and-toolsets' label='Tools and Toolsets' %}<span id="/develop/project-management"></span>  
 {% include github org='tferr' repo='Scripts' path='Tools/README.md\#calibration-menu' label='Calibration Menu' %}, {% include github org='tferr' repo='Scripts' path='Tools/README.md\#list-folder-menu' label='List Folder Menu' %}, {% include github org='tferr' repo='Scripts' path='Tools/README.md\#segment-profile-tool' label='Segment Profile' %}, {% include github org='tferr' repo='Scripts' path='Tools/README.md\#shortcuts-menu' label='Shortcuts Menu' %}, {% include github org='tferr' repo='Scripts' path='Tools/README.md\#roi-manager-tools' label='ROI Manager Tools' %}, {% include github org='tferr' repo='Scripts' path='Tools/README.md\#toolset-creator' label='Toolset Creator' %}
 
 <!-- -->
@@ -150,7 +150,7 @@ You can use BARs as a starting point for your own workflows. Whether you are jus
 
 <img src="/media/SnippetCreator.png" title="fig:{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)" width="350" alt="{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)" /> BAR contains a directory, *plugins/Scripts/BAR/Snippets/*, containing multi-language [examples](https://github.com/tferr/Scripts/tree/master/Snippets) that you can customize and recycle in your own scripts. You can, of course, also retrieve code and inspiration from the more complete BARs in the remaining *plugins/Scripts/BAR/* subdirectories. Any script or macro file stored in the *Snippets/*, folder with an underscore "\_" in the filename will be listed in <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷</span>. The <span style="border-bottom:1px dotted #ccc;">Snippets▷</span> menu contains some utilities to help you manage your scripts:
 
-List Snippets:Prints a table listing all scripts in *plugins/Scripts/BAR/Snippets/*. Files can then be opened in the [Script Editor](Script_Editor) by double-clicking on their filename.  
+List Snippets:Prints a table listing all scripts in *plugins/Scripts/BAR/Snippets/*. Files can then be opened in the [Script Editor](/scripting/script-editor) by double-clicking on their filename.  
 New Snippet: A java plugin that speeds up the creation of new scripts, pre-configured to use [BAR lib](#lib "wikilink").  
 Reveal Snippets:Opens *plugins/Scripts/BAR/Snippets/* in the file browser of the operating system.  
 Search BAR: Searches the contents of BAR files.  
@@ -163,7 +163,7 @@ BAR provides several utility methods that simplify the creation of \_\_\_SHADOW3
 
 ### BAR lib
 
-{% include github org='tferr' repo='Scripts' path='/lib/README.md\#lib' label='BAR libs' %} (stored in the */BAR/lib/* directory) are centralized libraries ([BeanShell](BeanShell_Scripting), [IJM](Introduction_into_Macro_Programming) and [Python](Jython_Scripting), etc.) that can be shared across files. These libraries serve as scripting additions to [Snippets](#Snippets "wikilink") and other routines.
+{% include github org='tferr' repo='Scripts' path='/lib/README.md\#lib' label='BAR libs' %} (stored in the */BAR/lib/* directory) are centralized libraries ([BeanShell](/scripting/beanshell), [IJM](/scripting/macro) and [Python](/scripting/jython), etc.) that can be shared across files. These libraries serve as scripting additions to [Snippets](#Snippets "wikilink") and other routines.
 
 Do you find yourself copy and pasting functions from one file to the other? Do you keep on writing the same lines of code? Do you have some key code written across different languages? Would you like to make side-by-side comparisons of scripting languages? Then, BAR lib is for you.
 
@@ -178,11 +178,11 @@ The idea is quite simple: Reusable functions and methods are written to a lib fi
     lib = new BARlib();
     lib.confirmLoading();
 
-Run it in the [Script Editor](Script_Editor) ({% include bc content='File|New|Script...'%}), and you should be greeted by a *"BAR lib successfully loaded"* message. Further details are provided on the {% include github org='tferr' repo='Scripts' path='/lib\#lib' label='GitHub lib page' %} and on the documentation of the [bar.Utils](http://tferr.github.io/Scripts/apidocs/index.html?bar/Utils.html) class.
+Run it in the [Script Editor](/scripting/script-editor) ({% include bc content='File|New|Script...'%}), and you should be greeted by a *"BAR lib successfully loaded"* message. Further details are provided on the {% include github org='tferr' repo='Scripts' path='/lib\#lib' label='GitHub lib page' %} and on the documentation of the [bar.Utils](http://tferr.github.io/Scripts/apidocs/index.html?bar/Utils.html) class.
 
 ### Batch Processors
 
-Some of the scripts included in */BAR/Snippets/* are scripts that apply a [common operation to a directory](How_to_apply_a_common_operation_to_a_complete_directory). These [batch processors](Batch_Processing) are implemented in different languages and perform the following operations:
+Some of the scripts included in */BAR/Snippets/* are scripts that apply a [common operation to a directory](How_to_apply_a_common_operation_to_a_complete_directory). These [batch processors](/scripting/batch) are implemented in different languages and perform the following operations:
 
 1.  Take an input folder specified by the user
 2.  Apply a series of operations to individual files of matched extension(s)
@@ -301,7 +301,7 @@ or even shorter:
 
         rename(call("java.util.UUID.randomUUID"));
 
-But discovering which methods can be called by the IJM language may not be trivial. Typically, it will require access to an [IDE](IDE) and some Java experience. So what about writing an ad-hoc function?
+But discovering which methods can be called by the IJM language may not be trivial. Typically, it will require access to an [IDE](/develop/ides) and some Java experience. So what about writing an ad-hoc function?
 
 The approach used in {% include github org='tferr' repo='Scripts' path='Snippets/Process\_Folder\_IJM.ijm' label='Process\_Folder\_IJM.ijm' %} is the following: 1) Take a template string containing the characters A-Z and digits 0-9; 2) Pick a random position between the first and last character of the string template. Extract the character at that position; 3) Repeat the last step several times, assembling extracted characters into a concatenated string:
 
@@ -386,17 +386,17 @@ Yes, please do! If you have some suggestions on how to improve it, do {% include
 <!-- -->
 
 Nothing happens when I run a BAR. What's going on?  
-In a case of premature termination BARs tend to exit rather silently. The best way to have insights on an unexpected error is to run it directly from the [Script Editor](Script_Editor): Open the script by holding {% include key content='press\|Shift' %} while selecting it from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu, press *Run* and have a look at the editors' s console, where all sort of useful messages will be printed to. Do {% include github org='tferr' repo='Scripts' path='README.md\#help' label='let us know' %} if you have found a bug.
+In a case of premature termination BARs tend to exit rather silently. The best way to have insights on an unexpected error is to run it directly from the [Script Editor](/scripting/script-editor): Open the script by holding {% include key content='press\|Shift' %} while selecting it from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu, press *Run* and have a look at the editors' s console, where all sort of useful messages will be printed to. Do {% include github org='tferr' repo='Scripts' path='README.md\#help' label='let us know' %} if you have found a bug.
 
 <!-- -->
 
 <span id="faq:ImageJ1"></span>Does BAR work outside Fiji/ImageJ2?  
-Yes, but with limitations. ImageJ1 (see [ImageJ Flavors](ImageJ#Flavors) if you have doubts about existing ImageJ distributions) will only register scripts saved in the *plugins/* folder or on one of its immediate subfolders. For this reason, some of the {% include bc content='BAR|'%} submenus will appear as empty, and it may not be possible to navigate the *BAR/* directory using menu commands ([Commander](#Commander "wikilink") could still be used, nevertheless). Another important aspect is that, without access to the [built-in updater](Update_Fiji), you will have to manually update BAR (by monitoring its {% include github org='tferr' repo='Scripts/releases' label='rpository' %}), and to manually install (and update) the dependencies (i.e., third-party plugins and third-party libraries) used by BAR).
+Yes, but with limitations. ImageJ1 (see [ImageJ Flavors](ImageJ#Flavors) if you have doubts about existing ImageJ distributions) will only register scripts saved in the *plugins/* folder or on one of its immediate subfolders. For this reason, some of the {% include bc content='BAR|'%} submenus will appear as empty, and it may not be possible to navigate the *BAR/* directory using menu commands ([Commander](#Commander "wikilink") could still be used, nevertheless). Another important aspect is that, without access to the [built-in updater](/plugins/updater), you will have to manually update BAR (by monitoring its {% include github org='tferr' repo='Scripts/releases' label='rpository' %}), and to manually install (and update) the dependencies (i.e., third-party plugins and third-party libraries) used by BAR).
 
 <!-- -->
 
 How do I uninstall BAR?  
-Run the [Updater](Fiji_Updater) ({% include bc content='Help|Update...'%}). Choose *Advance Mode* then *Manage update sites*. Deactivate the *BAR* checkbox in the alphabetically-sorted list of update sites. Press *OK*, then *Apply changes*. All BAR files will be deleted. Note that you can install and uninstall BAR as you see fit. See [How to follow a 3rd party update site](How_to_follow_a_3rd_party_update_site) for more details.
+Run the [Updater](/plugins/updater) ({% include bc content='Help|Update...'%}). Choose *Advance Mode* then *Manage update sites*. Deactivate the *BAR* checkbox in the alphabetically-sorted list of update sites. Press *OK*, then *Apply changes*. All BAR files will be deleted. Note that you can install and uninstall BAR as you see fit. See [How to follow a 3rd party update site](/update-sites/following) for more details.
 
 <!-- -->
 

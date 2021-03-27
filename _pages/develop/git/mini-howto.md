@@ -9,7 +9,7 @@ description: test description
 
 
  {% include outdated%}
- This page is a **really** quick 'n dirty tutorial on how to work with Git. It is strongly biased to the work on Fiji; you should refer to [Git workshop](Git_workshop), [Git for dummies](Git_for_dummies) or to [Git's homepage](https://git-scm.com/) for much more information.
+ This page is a **really** quick 'n dirty tutorial on how to work with Git. It is strongly biased to the work on Fiji; you should refer to [Git workshop](/develop/git/workshop), [Git for dummies](/develop/git) or to [Git's homepage](https://git-scm.com/) for much more information.
 
 Most of these explanations are meant for the command line users.
 
@@ -122,9 +122,9 @@ Note: if somebody made changes to the branch in the mean-time, you need to pull 
 `$ git pull contrib contrib`  
 `$ git push contrib HEAD:contrib`
 
-**Note**: there might be [merge conflicts](Git_Conflicts) that you need to [resolve](Git_Conflicts#Resolving_merge_conflicts) before pushing.
+**Note**: there might be [merge conflicts](/develop/git/conflicts) that you need to [resolve](Git_Conflicts#Resolving_merge_conflicts) before pushing.
 
-**Note for CVS/Subversion users**: With Git, it is highly encouraged to commit **first**, **then** pull. Git is really good at branching and merging, and it is better for you to commit a version that you actually tested than to integrate other people's changes before committing. It also helps [finding which commit introduced a regression](Git_bisection).
+**Note for CVS/Subversion users**: With Git, it is highly encouraged to commit **first**, **then** pull. Git is really good at branching and merging, and it is better for you to commit a version that you actually tested than to integrate other people's changes before committing. It also helps [finding which commit introduced a regression](/develop/git/pinpoint-regressions).
 
 Graphical user interfaces
 =========================
@@ -161,6 +161,6 @@ When you are comfortable with the staged changes, just commit with
 `$ cd fiji/`  
 `$ git commit`
 
-Even more advanced Git usage involved [topic branches](Git_topic_branches).
+Even more advanced Git usage involved [topic branches](/develop/git/topic-branches).
 
 

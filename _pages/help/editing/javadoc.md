@@ -17,19 +17,19 @@ See also the {% include javadoc project="SciJava" %} javadocs.
 
 {% raw %}
 ```
-See also the {% include javadoc project="ImageJ1" package="ij/process" class="ImageProcessor" %} class.
+See also the {% include javadoc project="/software/imagej1" package="ij/process" class="ImageProcessor" %} class.
 ```
 {% endraw %}
 
-See also the {% include javadoc project="ImageJ1" package="ij/process" class="ImageProcessor" %} class.
+See also the {% include javadoc project="/software/imagej1" package="ij/process" class="ImageProcessor" %} class.
 
 {% raw %}
 ```
-See also the {% include javadoc package ="net/imagej" class="ImageJ"%} class.
+See also the {% include javadoc package ="net/imagej" class="/about"%} class.
 ```
 {% endraw %}
 
-See also the {% include javadoc package ="net/imagej" class="ImageJ"%} class.
+See also the {% include javadoc package ="net/imagej" class="/about"%} class.
 
 {% raw %}
 ```

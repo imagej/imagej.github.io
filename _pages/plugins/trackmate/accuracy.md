@@ -8,7 +8,7 @@ description: test description
 
 **The problem with tracking algorithms is that they always give an answer.**
 
-This answer can be completely irrelevant, even non-physical, and there is no built-in flags that would indicate something wrong. The best way to avoid basing your downstream analysis on faulty tracking results is to know in what situation the tracker works the best, and what are its limitations. This is the aim of this page for the trackers and detectors shipped with [TrackMate](TrackMate).
+This answer can be completely irrelevant, even non-physical, and there is no built-in flags that would indicate something wrong. The best way to avoid basing your downstream analysis on faulty tracking results is to know in what situation the tracker works the best, and what are its limitations. This is the aim of this page for the trackers and detectors shipped with [TrackMate](/plugins/trackmate).
 
 The ISBI 2012 single particle challenge.
 ----------------------------------------
@@ -20,7 +20,7 @@ Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in
 TrackMate v2.7.x series accuracy against the ISBI dataset.
 ----------------------------------------------------------
 
-From v2.7.x, TrackMate ships a new tracker that can deal specifically with linear motion. We though it was the right time to re-run the accuracy assessment with the ISBI challenge data. The people behind [Icy](Icy) offered the website to host the challenge data, and it is still available today[3] for download.
+From v2.7.x, TrackMate ships a new tracker that can deal specifically with linear motion. We though it was the right time to re-run the accuracy assessment with the ISBI challenge data. The people behind [Icy](/software/icy) offered the website to host the challenge data, and it is still available today[3] for download.
 
 The figures below shows the comparison of accuracy for the 3 classes of tracking algorithms available in TrackMate:
 
@@ -78,7 +78,7 @@ For each scenario and condition, the method returns numerous values that charact
 
 -   The <b>RMSE of detection positions</b> that quantifies how precise is the location of the detected particles. The smaller the better.
 
-I fully relied on [Icy](Icy) to compute these values. TrackMate ships an action that exports tracking results to the XML format imposed by the ISBI challenge, and that can be found [here](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/action/ISBIChallengeExporter.java). I generated these files for all the conditions of a scenario, and used the [Icy ISBI challenge scoring plugin](http://icy.bioimageanalysis.org/plugin/ISBI_Tracking_Challenge_Batch_Scoring) to yield metrics. I then used [MATLAB](MATLAB) to plot them.
+I fully relied on [Icy](/software/icy) to compute these values. TrackMate ships an action that exports tracking results to the XML format imposed by the ISBI challenge, and that can be found [here](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/action/ISBIChallengeExporter.java). I generated these files for all the conditions of a scenario, and used the [Icy ISBI challenge scoring plugin](http://icy.bioimageanalysis.org/plugin/ISBI_Tracking_Challenge_Batch_Scoring) to yield metrics. I then used [MATLAB](MATLAB) to plot them.
 
 ### Parameter used.
 

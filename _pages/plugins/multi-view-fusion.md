@@ -18,9 +18,9 @@ Please note that the multi-view fusion plugin available through Fiji, is based o
 Overview of the multi-view fusion plugin
 ----------------------------------------
 
-The multi-view fusion plugin is able to combine several 3d acquistions of the same specimen taken from different viewpoints (this includes different tiles) into one single output image. This can be done for single timepoints or an entire timeseries. Prerequisite for the fusion is an aligned dataset, an overview of the complete registration and fusion process can be found [here](SPIM_Registration). The registration can be achieved using one the following plugins:
+The multi-view fusion plugin is able to combine several 3d acquistions of the same specimen taken from different viewpoints (this includes different tiles) into one single output image. This can be done for single timepoints or an entire timeseries. Prerequisite for the fusion is an aligned dataset, an overview of the complete registration and fusion process can be found [here](/plugins/spim-registration). The registration can be achieved using one the following plugins:
 
--   [Bead-based registration](SPIM_Bead_Registration)
+-   [Bead-based registration](/plugins/spim-bead-registration)
 -   [Segmentation-based registration](Segmentation-based_registration)
 
 The multi-view fusion plugins offers two registration options:
@@ -52,7 +52,7 @@ How to use the plugin
 
 {% include thumbnail src='/media/Spim multiview dialog1.jpg' title='Shows the first dialog that queries the location of the multi-view files'%}
 
-The multi-view fusion consists of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset. Please note that all the parameters will be looked up in the [bead-based registration](SPIM_Bead_Registration) or [segmentation-based registration](Segmentation-based_registration), so typically just pressing ok is sufficient, except you process a timeseries. These are the options of the first dialog:
+The multi-view fusion consists of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset. Please note that all the parameters will be looked up in the [bead-based registration](/plugins/spim-bead-registration) or [segmentation-based registration](Segmentation-based_registration), so typically just pressing ok is sufficient, except you process a timeseries. These are the options of the first dialog:
 
 -   **SPIM data directory:** Fill in the directory name that contains all the image files (or directories with equally sized 2d image planes). You can either drag&drop the directory, browse for it or type the name directly.
 

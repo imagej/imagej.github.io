@@ -72,9 +72,9 @@ Write your first `Command` plugin!
 Details of your assignment:
 
 -   Create a [Git](Git) repository.
--   Create a [Maven](Maven) project. (hints: [1](https://github.com/imagej/example-imagej-command), [2](Building_a_POM))
--   Implement a `Command` plugin in your [IDE](IDE), which calculates the *mean* across an image. (hints: [1](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb), [2](https://github.com/imagej/tutorials/tree/master/maven-projects/simple-commands/src/main/java))
--   Push to [GitHub](GitHub) (hints: [1](https://help.github.com/articles/pushing-to-a-remote/), [2](https://git-man-page-generator.lokaltog.net/)).
+-   Create a [Maven](/develop/maven) project. (hints: [1](https://github.com/imagej/example-imagej-command), [2](/develop/building-a-pom))
+-   Implement a `Command` plugin in your [IDE](/develop/ides), which calculates the *mean* across an image. (hints: [1](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb), [2](https://github.com/imagej/tutorials/tree/master/maven-projects/simple-commands/src/main/java))
+-   Push to [GitHub](/develop/github) (hints: [1](https://help.github.com/articles/pushing-to-a-remote/), [2](https://git-man-page-generator.lokaltog.net/)).
 
 If you get that far, YOU WIN. {% include person content='Jug' %} has a reward for you.
 

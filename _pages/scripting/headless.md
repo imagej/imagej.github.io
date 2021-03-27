@@ -7,7 +7,7 @@ categories: Scripting
 description: test description
 ---
 
-[ImageJ scripts](Scripting) are designed to operate independently of user interface—including [headless](Headless), with **no** user interface. This is made easy with the use of [script parameters](Script_parameters).
+[ImageJ scripts](/scripting) are designed to operate independently of user interface—including [headless](Headless), with **no** user interface. This is made easy with the use of [script parameters](Script_parameters).
 
 To start ImageJ in the ImageJ2 headless mode, run (with the launcher appropriate for your system substituted):
 

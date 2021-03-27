@@ -6,7 +6,7 @@ categories: Hackathons
 description: test description
 ---
 
-There was a [hackathon](Hackathon) in Madison following the ImageJ [Conference 2015](Conference_2015).
+There was a [hackathon](/events/Hackathon) in Madison following the ImageJ [Conference 2015](/events/Conference_2015).
 
 Topic
 -----
@@ -14,7 +14,7 @@ Topic
 There were two primary topics for this hackathon:
 
 1.  **Learnathon.** For the first half, we covered the current ImageJ2 and SciJava APIs with informal presentations and workshops. We spent some time beefing up and updating the tutorials.
-2.  **Ops.** The second half focused on development of the [ImageJ Ops](ImageJ_Ops) component for "write once, run anywhere" image processing. We added more algorithms and routines to the core library, and continued polishing the Ops framework itself, as well as the [ImageJ2 data model](ImageJ_Common).
+2.  **Ops.** The second half focused on development of the [ImageJ Ops](/develop/imagej-ops) component for "write once, run anywhere" image processing. We added more algorithms and routines to the core library, and continued polishing the Ops framework itself, as well as the [ImageJ2 data model](/plugins/imagej-common).
 
 ### Side projects
 
@@ -135,7 +135,7 @@ Locations
 
 ### Thursday, September 3 - Friday, September 4
 
-[ImageJ 2015 conference](Conference_2015) at the [H.F. DeLuca Forum](http://discovery.wisc.edu/home/town-center/apply-to-reserve-town-center-spaces/large-rooms/h-f-deluca-forum/h-f-deluca-forum.cmsx), [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/), 330 N. Orchard St., Madison, WI 53715.
+[ImageJ 2015 conference](/events/Conference_2015) at the [H.F. DeLuca Forum](http://discovery.wisc.edu/home/town-center/apply-to-reserve-town-center-spaces/large-rooms/h-f-deluca-forum/h-f-deluca-forum.cmsx), [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/), 330 N. Orchard St., Madison, WI 53715.
 
 -   **Directions:** [Directions to the Discovery Building](http://discovery.wisc.edu/home/discovery/plan-your-visit/directions/)
 -   **Maps:** [Google map](https://www.google.com/maps/place/Wisconsin+Institutes+for+Discovery,+University+of+Wisconsin-Madison,+330+N+Orchard+St,+Madison,+WI+53715), [Campus map](http://map.wisc.edu/)

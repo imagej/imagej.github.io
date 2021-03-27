@@ -16,7 +16,7 @@ This plugin allows you to add surfaces generated from *label field stacks* to a 
 
 A *label field* is an 8-bit image stack where the numbers attached to each pixels refer to a specific class rather than an intensity. Usually, label fields are visualized using a lookup table so that different classes are shown as different colors.
 
-The *Show Color Surfaces* command calculates surfaces embedded into the [3D Viewer](3D_Viewer) from label fields:
+The *Show Color Surfaces* command calculates surfaces embedded into the [3D Viewer](/plugins/3d-viewer) from label fields:
 
 ![](/media/Show-color-surfaces-reduced.png "Show-color-surfaces-reduced.png")
 

@@ -19,7 +19,7 @@ description: test description
 Installation
 ------------
 
-To install the plugin, activate the **PixFRET** [update site](How_to_follow_a_3rd_party_update_site) and restart Fiji.
+To install the plugin, activate the **PixFRET** [update site](/update-sites/following) and restart Fiji.
 
 Usage
 -----

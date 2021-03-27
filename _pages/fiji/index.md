@@ -8,10 +8,10 @@ description: test description
 ---
 
 
-[Fiji](https://fiji.sc/) is an image processing package—a "batteries-included" distribution of [ImageJ](ImageJ), bundling a lot of plugins which facilitate scientific image analysis.
+[Fiji](https://fiji.sc/) is an image processing package—a "batteries-included" distribution of [ImageJ](/about), bundling a lot of plugins which facilitate scientific image analysis.
 
--   **[For users](Fiji_Usage)** - Fiji is [easy to install](Fiji_Downloads) and has an automatic update function, bundles a [lot of plugins](Category_Plugins) and offers comprehensive [documentation](Documentation).
--   **[For developers](Developing_Fiji)** - Fiji is an open source project hosted in a [Git](Git) version control {% include github repo='fiji' label='repository' %}, with access to the source code of all internals, libraries and plugins, and eases the [development](Development) and [scripting](Scripting_Help) of plugins.
+-   **[For users](/about/usage)** - Fiji is [easy to install](Fiji_Downloads) and has an automatic update function, bundles a [lot of plugins](Category_Plugins) and offers comprehensive [documentation](/learn).
+-   **[For developers](/fiji/developing)** - Fiji is an open source project hosted in a [Git](Git) version control {% include github repo='fiji' label='repository' %}, with access to the source code of all internals, libraries and plugins, and eases the [development](/develop) and [scripting](/scripting) of plugins.
 
 Downloads
 ---------
@@ -22,27 +22,27 @@ Downloads
 License
 -------
 
-Fiji is released as [open source](Open_source) under the [GNU General Public License](GPL).
+Fiji is released as [open source](Open_source) under the [GNU General Public License](/licensing/gpl).
 
-Fiji builds on top of the [ImageJ2](ImageJ2) core, which is licensed under the permissive [BSD 2-Clause license](BSD).
+Fiji builds on top of the [ImageJ2](/software/imagej2) core, which is licensed under the permissive [BSD 2-Clause license](/licensing/bsd).
 
 Plugins and other components have {% include github repo='fiji' path='LICENSES' label='their own licenses' %}.
 
-See the [Licensing](Licensing) page for details.
+See the [Licensing](/licensing) page for details.
 
 Contributing
 ------------
 
 Fiji is supported by several laboratories and institutions:
 
--   The [Eliceiri/LOCI](LOCI) lab at [UW-Madison](https://wisc.edu/), home of [ImageJ2](ImageJ2).
--   The [Tomancak](https://www.mpi-cbg.de/research-groups/current-groups/pavel-tomancak/research-focus/) and [Jug](https://www.mpi-cbg.de/jug) labs at [MPI-CBG](MPI-CBG) and the [CSBD](CSBD).
+-   The [Eliceiri/LOCI](/orgs/loci) lab at [UW-Madison](https://wisc.edu/), home of [ImageJ2](/software/imagej2).
+-   The [Tomancak](https://www.mpi-cbg.de/research-groups/current-groups/pavel-tomancak/research-focus/) and [Jug](https://www.mpi-cbg.de/jug) labs at [MPI-CBG](/orgs/mpi-cbg) and the [CSBD](/orgs/csbd).
 -   The [Saalfeld Lab](https://www.janelia.org/lab/saalfeld-lab) at [Janelia Research Campus](https://www.janelia.org/).
--   Individuals at [many other institutions worldwide](Contributors).
+-   Individuals at [many other institutions worldwide](/about/contributors).
 
 Fiji is an [open source](Open_source) project, so everybody is welcome to contribute with plugins, patches, bug reports, tutorials, documentation, and artwork.
 
-If you'd like to share an idea or project, please [share them with the community](Contact).
+If you'd like to share an idea or project, please [share them with the community](/help).
 
 Publication
 -----------

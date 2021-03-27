@@ -15,7 +15,7 @@ JRuby scripting in ImageJ is a nice alternative to scripting using ImageJ's macr
 -   You're not limited to using the functionality exposed by the macro language: you can use any class in ImageJ, one of its plugins or standard Java classes
 -   Developing JRuby scripts is very fast compared to developing plugins in Java
 
-*(These advantages, of course, are shared by the [Jython Scripting](Jython_Scripting), [Clojure Scripting](Clojure_Scripting), Beanscript and [Javascript Scripting](Javascript_Scripting) bundled in Fiji.)*
+*(These advantages, of course, are shared by the [Jython Scripting](/scripting/jython), [Clojure Scripting](/scripting/clojure), Beanscript and [Javascript Scripting](Javascript_Scripting) bundled in Fiji.)*
 
 If you have any questions or suggestions about JRuby scripting in ImageJ, please contact the [ImageJ forum](https://forum.imagej.net). Have fun!
 
@@ -35,7 +35,7 @@ Now you can start typing Ruby expressions into that window, such as:
 ` >>> "hello there".upcase[1..4]`  
 ` ELLO`
 
-It would be a good idea to take a quick look at the page on [Scripting Help](Scripting_Help) for tips on using this interpreter window.l
+It would be a good idea to take a quick look at the page on [Scripting Help](/scripting) for tips on using this interpreter window.l
 
 Try loading one of the ImageJ sample images by going to {% include bc content='File | Open Samples | T1 Head (2.4M, 16-bits)'%}. Once you've done that we'll examine the image using JRuby. You can get a reference to the current image with ij.IJ.getImage. Try assigning the result to a variable, like this:
 
@@ -74,7 +74,7 @@ Note that this is an example of creating an object in JRuby; you use the usual S
 
 ### Importing classes
 
-If you need to use classes that aren't in the java.\* or ij.\* hierarchy—or if you are developing JRuby scripts in the [Script Editor](Script_Editor)—you will have to include them explicitly. {% include importing-classes lang='JRuby' %} For example, in the classpath of [Fiji](Fiji) there is a useful class called util.BatchOpener, that has static methods for opening files as arrays of ImagePlus objects (one per channel) without showing them. To use these methods, you would have to do:
+If you need to use classes that aren't in the java.\* or ij.\* hierarchy—or if you are developing JRuby scripts in the [Script Editor](/scripting/script-editor)—you will have to include them explicitly. {% include importing-classes lang='JRuby' %} For example, in the classpath of [Fiji](/fiji) there is a useful class called util.BatchOpener, that has static methods for opening files as arrays of ImagePlus objects (one per channel) without showing them. To use these methods, you would have to do:
 
 ` >>> java_import 'util.BatchOpener'`  
 ` util.BatchOpener`
@@ -234,19 +234,19 @@ Some example output:
 Script Parameters
 -----------------
 
-When using [Script Parameters](Script_Parameters), e.g., in the [Script Editor](Script_Editor), you need to use a `$` before `@ variables`, due to a limitation in the scoping, as in this example from [Script Templates](Script_Templates):
+When using [Script Parameters](/scripting/parameters), e.g., in the [Script Editor](/scripting/script-editor), you need to use a `$` before `@ variables`, due to a limitation in the scoping, as in this example from [Script Templates](/scripting/templates):
 
 {% include github-embed org='scijava' repo='scripting-jruby' path='src/main/resources/script\_templates/Intro/Greeting.rb' label='Greeting.rb' %}
 
 Library
 -------
 
-There is a library called {% include github repo='fiji' path='plugins/JRuby/imagej.rb' label='imagej.rb' %} for convenience. It contains a number of useful functions related to ImageJ. It is loaded by default when creating a new JRuby script in the [Script Editor](Script_Editor).
+There is a library called {% include github repo='fiji' path='plugins/JRuby/imagej.rb' label='imagej.rb' %} for convenience. It contains a number of useful functions related to ImageJ. It is loaded by default when creating a new JRuby script in the [Script Editor](/scripting/script-editor).
 
 What next?
 ----------
 
-You may want to first have a quick look at the [Scripting Help](Scripting_Help) page for generic instructions in using the interpreter and script interfaces, and the [Scripting comparisons](Scripting_comparisons) page for an example written in several of the different scripting languages available. The JRuby example shows how to implement a Java interface in JRuby.
+You may want to first have a quick look at the [Scripting Help](/scripting) page for generic instructions in using the interpreter and script interfaces, and the [Scripting comparisons](/scripting/comparisons) page for an example written in several of the different scripting languages available. The JRuby example shows how to implement a Java interface in JRuby.
 
 JRuby offers some more nice features, have a look at them in the JRuby documentation: https://github.com/jruby/jruby/wiki/CallingJavaFromJRuby
 

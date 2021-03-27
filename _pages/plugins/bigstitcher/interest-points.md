@@ -9,16 +9,16 @@ description: test description
 Overview
 --------
 
-Many processing steps of BigStitcher and [Multiview-Reconstruction](Multiview-Reconstruction) rely on the detection of **Interest Points**, i.e. bright or dark spots, in the images. The classical example is the alignment of multi-angle views by matching corresponding interest points in two images and aligning the points, and thus the images, to each other.
+Many processing steps of BigStitcher and [Multiview-Reconstruction](/plugins/multiview-reconstruction) rely on the detection of **Interest Points**, i.e. bright or dark spots, in the images. The classical example is the alignment of multi-angle views by matching corresponding interest points in two images and aligning the points, and thus the images, to each other.
 
 In **Multiview Mode**, interest point detection can be started by selecting the desired views, right-clicking and selecting the {% include bc content='Processing|Detect Interest Points...'%} option in the main menu.
 
 Other uses of interest points are:
 
 -   Expert-mode stitching via Interest Points (click [here](BigStitcher_Advanced_stitching#Interest_point-based_shift_calculation) for details)
--   Affine Refinement of Tile registrations and Chromatic aberration correction via ICP (click [here](BigStitcher_ICP_refinement) for details)
+-   Affine Refinement of Tile registrations and Chromatic aberration correction via ICP (click [here](/plugins/bigstitcher/icp-refinement) for details)
 
-Furthermore, detecting sub-diffraction-sized beads is the default way of extracting a [Point Spread Function (PSF)](BigStitcher_PSF) for [(MultiView) Deconvolution](BigStitcher_Deconvolution).
+Furthermore, detecting sub-diffraction-sized beads is the default way of extracting a [Point Spread Function (PSF)](/plugins/bigstitcher/psf) for [(MultiView) Deconvolution](/plugins/bigstitcher/deconvolution).
 
 ### Basic Parameters
 
@@ -86,7 +86,7 @@ First, you have to specify the **CUDA directory** in which to look for the compi
 
 ![](/media/BigStitcher interestpoint gpu-1.png "BigStitcher_interestpoint_gpu-1.png")
 
-Next, you have to select the actual library file to use (there might be multiple, be sure to pick the library for **separable convolution**, not the *Fourier convolution* used in [Multi-View\_Deconvolution](Multi-View_Deconvolution)).
+Next, you have to select the actual library file to use (there might be multiple, be sure to pick the library for **separable convolution**, not the *Fourier convolution* used in [Multi-View\_Deconvolution](/plugins/multi-view-deconvolution)).
 
 ![](/media/BigStitcher interestpoint gpu-2.png "BigStitcher_interestpoint_gpu-2.png")
 

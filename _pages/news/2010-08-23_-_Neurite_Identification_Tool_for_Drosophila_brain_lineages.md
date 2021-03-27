@@ -12,7 +12,7 @@ Cardona A, Saalfeld S, Arganda I, Pereanu W, Schindelin J, Hartenstein V. J Neur
 
 http://www.jneurosci.org/cgi/content/full/30/22/7538
 
-This work uses [TrakEM2](TrakEM2) to trace and identify neuronal lineages relative to a manually annotated database of lineages.
+This work uses [TrakEM2](/plugins/trakem2) to trace and identify neuronal lineages relative to a manually annotated database of lineages.
 
 See the manual page of the [Neurite Identification Tool](http://www.ini.uzh.ch/~acardona/nit/) for all details.
 

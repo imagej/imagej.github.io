@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-This page describes the segmentation function of the [CIP scripting](CIP) package
+This page describes the segmentation function of the [CIP scripting](/plugins/cip) package
 
 {% include cip content='Navigation' %}
 

@@ -69,6 +69,6 @@ Code
 See also
 --------
 
--   [Jython Scripting](Jython_Scripting)
+-   [Jython Scripting](/scripting/jython)
 
  

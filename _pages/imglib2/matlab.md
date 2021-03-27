@@ -142,7 +142,7 @@ Using ImgLib2 types as primary data holder
 
 Therefore, a solution implies a change of approach. We will not use [MATLAB](MATLAB) matrices as data holder, but use ImgLib2 structures. We can access the raw data through ImgLib2 facilities (cursor, randomAcess, ...). The changes made are then done *in place*, and will be visible from both ImgLib2 and [MATLAB](MATLAB), provided the data is accessed from the ImgLib2 container. We also already saw that `ArrayImg`s wrap a native array, that we can copy to [MATLAB](MATLAB) shall we need to quickly get the whole dataset.
 
-With this strategy, [MATLAB](MATLAB) steps aside a bit, since we use ImgLib2 for basically all data manipulation. It takes the role of a scripting language like [Jython](Jython_Scripting), from which you make plain call to Java classes. Duplicating the native array wrapped in an `ArrayImg` allows you still make the best our of [MATLAB](MATLAB) easily, but you must design a good tactic in your script to avoid these local copies to exist for too long.
+With this strategy, [MATLAB](MATLAB) steps aside a bit, since we use ImgLib2 for basically all data manipulation. It takes the role of a scripting language like [Jython](/scripting/jython), from which you make plain call to Java classes. Duplicating the native array wrapped in an `ArrayImg` allows you still make the best our of [MATLAB](MATLAB) easily, but you must design a good tactic in your script to avoid these local copies to exist for too long.
 
 <references/>
 

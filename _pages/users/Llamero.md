@@ -13,4 +13,4 @@ My name is **Benjamin Smith**. I am currently an Imaging Specialist within the V
 Maintained plugins (Fiji)
 -------------------------
 
--   [Quiver Plot](Quiver_Plot)
+-   [Quiver Plot](/plugins/quiver-plot)

@@ -25,9 +25,9 @@ See also:
 Using Clojure inside Fiji
 -------------------------
 
-Go to {% include bc content='Plugins|Scripting|Clojure Interpreter'%}. The prompt accepts any clojure code. See also Fiji's [Script Editor](Script_Editor).
+Go to {% include bc content='Plugins|Scripting|Clojure Interpreter'%}. The prompt accepts any clojure code. See also Fiji's [Script Editor](/scripting/script-editor).
 
-See [Scripting Help](Scripting_Help) for details on keybindings and how to use the interpreter. {% include key content='Ctrl' %}+{% include key content=')' %} will add all necessary ending parenthesis.
+See [Scripting Help](/scripting) for details on keybindings and how to use the interpreter. {% include key content='Ctrl' %}+{% include key content=')' %} will add all necessary ending parenthesis.
 
 A minimal, complete clojure example:
 
@@ -482,7 +482,7 @@ The above works with both single images and stacks.
 Manipulate images using ImgLib
 ------------------------------
 
-With [Imglib](Imglib), pixels are stored in native arrays of primitives such as int, float, double, etc. (or other more interesting forms, such as [Shape](http://download.oracle.com/javase/1.5.0/docs/api/java/awt/Shape.html). Such pixels are accessed with intermediate proxy objects that the JIT is able to completely remove out of the way.
+With [Imglib](/imglib1), pixels are stored in native arrays of primitives such as int, float, double, etc. (or other more interesting forms, such as [Shape](http://download.oracle.com/javase/1.5.0/docs/api/java/awt/Shape.html). Such pixels are accessed with intermediate proxy objects that the JIT is able to completely remove out of the way.
 
 From Clojure, there are many ways in which to access the pixels. Here we list some examples of the pixels accessed as a Collection of accessor [Type](https://fiji.sc/javadoc/mpicbg/imglib/type/Type.html) objects.
 
@@ -759,7 +759,7 @@ When done, just run the {% include bc content='PlugIns|Scripting|Refresh Clojure
 
 Once saved and in the menus, you need <b>not</b> call refresh scripts ever again for that script. Just edit and save it's text file, and run it again from the menus. Next time Fiji opens, the script will automatically appear in the menus.
 
-See [Scripting Help](Scripting_Help) for more details, including how to use the built-in dynamic interpreter.
+See [Scripting Help](/scripting) for more details, including how to use the built-in dynamic interpreter.
 
 Example Clojure plugins included in Fiji
 ----------------------------------------
@@ -770,7 +770,7 @@ Open the plugins/Examples/ folder in Fiji installation directory. You'll find th
 -   {% include github repo='fiji' path='plugins/Examples/blend\_two\_images.clj' label='blend\_two\_images.clj' %}: illustrates how to open two images from an URL, and blend the gray image into each channel of the color image.
 -   {% include github repo='fiji' path='plugins/Examples/celsius\_to\_fahrenheit.clj' label='celsius\_to\_fahrenheit.clj' %}: illustrates the usage of a Swing GUI, and how to instantiate anonymous classes from an interface (via [proxy](http://clojure.org/java_interop#toc20) Clojure function). This example is taken from the [Clojure website](http://clojure.org/jvm_hosted).
 -   {% include github repo='fiji' path='plugins/Examples/random\_noise\_example.clj' label='random\_noise\_example.clj' %}: illustrates how to declare a function inside a closure (for private access to, in this case, a unique instance of a random number generator), and then fill all pixels of a ByteProcessor image with a random byte value.
--   {% include github repo='fiji' path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Clojure.clj' label='Command\_Launcher\_Clojure.clj' %}: illustrates how to create a GUI with a KeyListener, so that the typed text changes color from red to black when it matches the name of an ImageJ command. This example is also under the [Scripting comparisons](Scripting_comparisons), along equivalent versions written in Java, [Jython](Jython_Scripting), [Javascript](Javascript_Scripting) and [JRuby](JRuby_Scripting).
+-   {% include github repo='fiji' path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Clojure.clj' label='Command\_Launcher\_Clojure.clj' %}: illustrates how to create a GUI with a KeyListener, so that the typed text changes color from red to black when it matches the name of an ImageJ command. This example is also under the [Scripting comparisons](/scripting/comparisons), along equivalent versions written in Java, [Jython](/scripting/jython), [Javascript](Javascript_Scripting) and [JRuby](/scripting/jruby).
 -   {% include github repo='fiji' path='plugins/Analyze/Dynamic\_ROI\_Profiler.clj' label='Dynamic ROI Profiler' %}: illustrates how to add a MouseMotionListener and a WindowListener to an ImageWindow of an open image. Reads out the ROI (Region Of Interest), and if it's a line, polyline or rectangle, plots the profile of pixel intensity along the line. As the mouse moves or edits the ROI on the image, the profile is updated.
 
 <h1>
@@ -1140,7 +1140,7 @@ So now any changes to the original <i>pixels</i> array will not affect the new s
 Generating java classes in .class files from clojure code
 ---------------------------------------------------------
 
-Using ahead of time (AOT) compilation with [gen-class](http://clojure.org/compilation), any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [jython](Jython_Scripting), [jruby](JRuby_Scripting), [javascript](Javascript_Scripting), and [any other](Category_Scripting).
+Using ahead of time (AOT) compilation with [gen-class](http://clojure.org/compilation), any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [jython](/scripting/jython), [jruby](/scripting/jruby), [javascript](Javascript_Scripting), and [any other](Category_Scripting).
 
 One way to do so is to place a [gen-class](http://clojure.org/compilation) declaration in a namespace block.
 

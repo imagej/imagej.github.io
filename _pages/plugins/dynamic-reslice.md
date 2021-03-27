@@ -10,7 +10,7 @@ description: test description
 {% capture source%}
 {% include github org='fiji' repo='Fiji\_Plugins' source='fiji/stacks/Dynamic\_Reslice.java' %}
 {% endcapture %}
-{% include info-box name='Dynamic Reslice' software='[Fiji\_Plugins](Fiji_Plugins)' author='Jean-Yves Tinevez & Albert Cardona from an ImageJ class' maintainer='Jean-Yves Tinevez (<tinevez_at_mpi-cbg_dot_de>)' filename=' [Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Reslice.jar)' source=source released='22 April 2009' latest-version='v1.2 (23 April 2009)' status='active' %}
+{% include info-box name='Dynamic Reslice' software='[Fiji\_Plugins](/plugins/fiji-plugins)' author='Jean-Yves Tinevez & Albert Cardona from an ImageJ class' maintainer='Jean-Yves Tinevez (<tinevez_at_mpi-cbg_dot_de>)' filename=' [Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Reslice.jar)' source=source released='22 April 2009' latest-version='v1.2 (23 April 2009)' status='active' %}
 
 Purpose
 -------
@@ -26,7 +26,7 @@ Download the jar file [Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Res
 
 ### Fiji
 
-The plugin is part of the Fiji distribution, as a member of the [Fiji\_Plugins](Fiji_Plugins) package. You can find it in the {% include bc content='Image | Stacks'%} menu.
+The plugin is part of the Fiji distribution, as a member of the [Fiji\_Plugins](/plugins/fiji-plugins) package. You can find it in the {% include bc content='Image | Stacks'%} menu.
 
 Usage
 -----
@@ -41,7 +41,7 @@ The reslice window is drawn. Now change the roi shape or move it with the mouse.
 Scripting
 ---------
 
-It is possible to call and control this plugin from other plugin or scripts. Here is a script example for use with [Fiji](Fiji).
+It is possible to call and control this plugin from other plugin or scripts. Here is a script example for use with [Fiji](/fiji).
 
     '''
     This jython script intends at demonstrating how to script the 

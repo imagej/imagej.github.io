@@ -10,7 +10,7 @@ description: test description
 
  In ImgLib2, images are represented by *Accessibles*. *Image* here refers to any (partial) function from coordinates to values.
 
-In the [ previous section](ImgLib2_-_Accessors) we have seen how pixel values can be manipulated using [ Accessors](ImgLib2_-_Accessors). Accessors are obtained from *Accessibles*. For example we have used
+In the [ previous section](/imglib2/accessors) we have seen how pixel values can be manipulated using [ Accessors](/imglib2/accessors). Accessors are obtained from *Accessibles*. For example we have used
 
         final Cursor< UnsignedByteType > cursor = img.localizingCursor();
 

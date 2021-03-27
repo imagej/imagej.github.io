@@ -101,6 +101,6 @@ These errors may popup when you try to launch TrackMate, or plot features. A sta
 
 This kind of error is caused when a Java class is missing in your installation. In most cases, this happens because your Fiji installation did not update properly. Possible solutions are
 
--   [Update](Updater) Fiji.
--   Check if you have the [Jave8](2015-12-22_-_The_road_to_Java_8) update site in the Fiji [Updater](Updater)
+-   [Update](/plugins/updater) Fiji.
+-   Check if you have the [Jave8](/news/2015-12-22_-_The_road_to_Java_8) update site in the Fiji [Updater](/plugins/updater)
 -   Finally, if nothing works, rather than digging in your Fiji installation in details, just install Java 8 and [re-download](Downloads) a fresh Fiji application.

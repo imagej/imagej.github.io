@@ -6,14 +6,14 @@ categories: Tutorials
 description: test description
 ---
 
-The previous TrackMate tutorial - [Manual editing of tracks using TrackMate](Manual_editing_of_tracks_using_TrackMate) is dedicated to manually correcting the results of an automated process. This small tutorial here shows how to do a fully manual annotation with [TrackMate](TrackMate).
+The previous TrackMate tutorial - [Manual editing of tracks using TrackMate](/plugins/trackmate/manual-track-editing) is dedicated to manually correcting the results of an automated process. This small tutorial here shows how to do a fully manual annotation with [TrackMate](/plugins/trackmate).
 
 Setting up
 ----------
 
 ![](/media/TrackMate ManualTrackingEntryPoint.png)
 
-There is not much to do. We will use the same, simple dataset that for [Getting started with TrackMate](Getting_started_with_TrackMate). You can find it in {% include bc content='File | Open Samples | Tracks for TrackMate (807K)'%}.
+There is not much to do. We will use the same, simple dataset that for [Getting started with TrackMate](/plugins/trackmate/getting-started). You can find it in {% include bc content='File | Open Samples | Tracks for TrackMate (807K)'%}.
 
 As for the TrackMate plugin, you could start it up normally, selecting {% include bc content='Plugins | Tracking | TrackMate'%} in the menu, and then when offered to select a detector and a tracker, always pick the manual one. That would work well, but we offered another entry point that has a simpler GUI dedicated to manual tracking. Pick the {% include bc content='Plugins | Tracking | Manual tracking with TrackMate'%} menu item.
 
@@ -56,9 +56,9 @@ Create and removing single links
 
 ![](/media/TrackMate CreateSingleLink.png)
 
-All we have done so far was to create single spots, that are not part of any tracks. Tracks are created on the fly when you link several spots together. You can do it in [TrackScheme](TrackScheme), as explained elsewhere. Here is how to do it directly on the image. To go on, create a few spots above the bright blob of the source image. We need at least a couple of them in consecutive frames.
+All we have done so far was to create single spots, that are not part of any tracks. Tracks are created on the fly when you link several spots together. You can do it in [TrackScheme](/plugins/trackmate/trackscheme), as explained elsewhere. Here is how to do it directly on the image. To go on, create a few spots above the bright blob of the source image. We need at least a couple of them in consecutive frames.
 
-We need to add spots to the **selection**. The selection in TrackMate is a very useful tool for inspection, particularly because it is shared amongst all the possible views of a session, including *e.g.* [TrackScheme](TrackScheme). When you click in a spot, the selection is made of this spot, and all views are centered on the target spot.
+We need to add spots to the **selection**. The selection in TrackMate is a very useful tool for inspection, particularly because it is shared amongst all the possible views of a session, including *e.g.* [TrackScheme](/plugins/trackmate/trackscheme). When you click in a spot, the selection is made of this spot, and all views are centered on the target spot.
 
 To create a link, we need exactly two spots to be in the selection. To add or remove a spot from the selection, use {% include key content='Shift' %}+{% include key content='click' %}. Selected spots are highlighted with a green, thick circle. To empty the selection, click on an empty (no spot) part of the image.
 
@@ -141,7 +141,7 @@ Great, no?
 Wrapping up
 -----------
 
-These are the tools that should allow you to work very quickly. For fun: redo this tutorial with a [TrackScheme](TrackScheme) window open. You should see that it works very well with manual annotation.
+These are the tools that should allow you to work very quickly. For fun: redo this tutorial with a [TrackScheme](/plugins/trackmate/trackscheme) window open. You should see that it works very well with manual annotation.
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 10:54, 5 August 2013 (CDT)
 

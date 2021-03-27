@@ -16,7 +16,7 @@ The integration of the **Multiview Reconstruction** and the [BigDataViewer](BigD
 To enable GPU hardware accelerated processing, you might want to download the **native CUDA code** for:
 
 -   Separable Convolution: Used for the Difference-of-Gaussian segmentation, available on [GitHub](https://github.com/StephanPreibisch/SeparableConvolutionCUDALib)
--   Non-Separable Convolution: Used for the [MultiView Deconvolution](Multi-View_Deconvolution), available on [GitHub](https://github.com/StephanPreibisch/FourierConvolutionCUDALib)
+-   Non-Separable Convolution: Used for the [MultiView Deconvolution](/plugins/multi-view-deconvolution), available on [GitHub](https://github.com/StephanPreibisch/FourierConvolutionCUDALib)
 
 Citation
 --------
@@ -26,7 +26,7 @@ Please note that the SPIM registration plugin available through Fiji, is based o
 -   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](/media/Nmeth0610-418.pdf) [Supplement](/media/Nmeth0610-418-S1.pdf)
 -   S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", *Nature Methods*, **11**(6):645-648. [Webpage](http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html)
 
-For technical details about the registration method and SPIM imaging see also [SPIM Registration Method](SPIM_Registration_Method).
+For technical details about the registration method and SPIM imaging see also [SPIM Registration Method](/plugins/spim-registration/method).
 
 Introduction & Overview
 -----------------------
@@ -37,7 +37,7 @@ Interactive viewing and annotation of the data is provided by integration with T
 
 ### History
 
-This software package is the successor to the [SPIM Registration](SPIM_Registration) package. While the SPIM Registration will continue to live within Fiji for the time being, we will mostly offer support only for this new software package. It has all the functionality the SPIM Registration offered, but is much more flexible and supports many more types of registration, fusion and data handling.
+This software package is the successor to the [SPIM Registration](/plugins/spim-registration) package. While the SPIM Registration will continue to live within Fiji for the time being, we will mostly offer support only for this new software package. It has all the functionality the SPIM Registration offered, but is much more flexible and supports many more types of registration, fusion and data handling.
 
 ### Examples
 
@@ -60,12 +60,12 @@ Detailed Tutorials
 
 Using this software package consists of several steps. Please note that this software is more flexible and that this order is just a suggestion of how to use it in a more-or-less standard case.
 
--   **[Dataset Definition](MVR-DefineDataset)**
+-   **[Dataset Definition](/plugins/mvr-definedataset)**
     -   The first step in every reconstruction is to define the dataset and thereby create the XML file. This has to be done only once, all consecutive steps are based on this definition, i.e. the XML file.
 
 <!-- -->
 
--   **[Resave the dataset as HDF5/TIFF](MVR-ResaveDataset)**
+-   **[Resave the dataset as HDF5/TIFF](/plugins/mvr-resavedataset)**
     -   Once the dataset is defined, you might want to resave all the image data as HDF5 (to be able to view it using the [BigDataViewer](BigDataViewer)) or simply as TIFF to enable fast loading of the image data. Also note that those two formats are the only ones that allow to extend the dataset/XML with newly fused data.
 
 <!-- -->
@@ -92,7 +92,7 @@ Using this software package consists of several steps. Please note that this sof
 
 <!-- -->
 
--   **[Fusion/Deconvolution](MVR-FusionDeconvolution)**
+-   **[Fusion/Deconvolution](/plugins/mvr-fusiondeconvolution)**
     -   Once the dataset is entirely aligned it can be fused or deconvolved into a single image per timepoint and channel. Deconvolution requires the knowledge of point spread functions (PSF's), which can be extracted from matched beads directly or can be provided by the user.
     -   Alternatively, there is no need to fuse the data and you can interactively look at the data using the [BigDataViewer](BigDataViewer) if you resaved it as HDF5. You can still do that now after the registration is complete.
 

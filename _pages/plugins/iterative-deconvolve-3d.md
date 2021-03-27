@@ -23,7 +23,7 @@ The plugin was also the subject of a conference paper: {% include citation last=
 See also
 --------
 
-[Diffraction PSF 3D](Diffraction_PSF_3D) for the creation of theoretical PSF.
+[Diffraction PSF 3D](/plugins/diffraction-psf-3d) for the creation of theoretical PSF.
 
 Version history
 ---------------

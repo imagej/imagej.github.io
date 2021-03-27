@@ -8,17 +8,17 @@ description: test description
 
 {% include user-box name='Daniel James White' title='Ambassador of Fiji' affiliation='GE Healthcare (Applied Precision, Inc.)' forum='chalkie666' github='chalkie666' linkedin='pub/daniel-james-white/8/8b4/8a1' %}Hi there,
 
-I have been nicknamed *Ambassador of Fiji* by the [Mother of Fiji](User_Schindelin).
+I have been nicknamed *Ambassador of Fiji* by the [Mother of Fiji](/users/Schindelin).
 
 Maintained plugins
 ------------------
 
--   [Coloc 2](Coloc_2) (and [Colocalization Analysis](Colocalization_Analysis))
--   [Series Labeler](Series_Labeler)
--   [Manual Tracking](Manual_Tracking)
--   [Time Stamper](Time_Stamper)
+-   [Coloc 2](/plugins/coloc-2) (and [Colocalization Analysis](/techniques/colocalization-analysis))
+-   [Series Labeler](/plugins/series-labeler)
+-   [Manual Tracking](/plugins/manual-tracking)
+-   [Time Stamper](/plugins/time-stamper)
 
 Authored plugins
 ----------------
 
-One of the authors of [BioImageXD](BioImageXD)!
+One of the authors of [BioImageXD](/software/bioimagexd)!

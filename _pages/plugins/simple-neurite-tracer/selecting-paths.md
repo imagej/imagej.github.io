@@ -9,7 +9,7 @@ description: test description
 {% include sntdeprecation%}
 
 
-There are three ways of selecting a particular path in [Simple Neurite Tracer](Simple_Neurite_Tracer).
+There are three ways of selecting a particular path in [Simple Neurite Tracer](/plugins/snt).
 
 ### In the Path Window
 

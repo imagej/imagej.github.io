@@ -80,7 +80,7 @@ fiji-devel@googlegroups.com
 What is the application template you would like contributors to your organization to use
 ----------------------------------------------------------------------------------------
 
-[SoC2009Template](SoC2009Template)
+[SoC2009Template](/events/SoC_2009_Template)
 
 What is your plan for dealing with disappearing contributors?
 -------------------------------------------------------------

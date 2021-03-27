@@ -6,7 +6,7 @@ categories: development
 description: test description
 ---
 
-{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](Licensing) page.' %} 
+{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](/licensing) page.' %} 
 
 Software in the **public domain** disclaims all copyright interest, being
 freely available to everyone for any purpose, with no attribution or

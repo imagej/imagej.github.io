@@ -29,11 +29,11 @@ See also [these presentation slides about ImageJ](https://imagej.github.io/prese
 
 </div>
 
-ImageJ2 is a new version of [ImageJ](ImageJ) for the next generation of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
+ImageJ2 is a new version of [ImageJ](/about) for the next generation of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
 
 To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
 
-The [Fiji](Fiji) distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](Updater) and [Launcher](Launcher), were originally developed as part of Fiji. 
+The [Fiji](/fiji) distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](/plugins/updater) and [Launcher](Launcher), were originally developed as part of Fiji. 
 
 
 Features of ImageJ2
@@ -41,18 +41,18 @@ Features of ImageJ2
 
 ImageJ2 provides a wealth of new features and capabilities:
 
--   The [ImageJ Updater](ImageJ_Updater) makes it simple to keep your ImageJ up to date, and to add new plugins by enabling additional [Update Sites](Update_Sites).
--   New and enhanced file format support via the [SCIFIO](SCIFIO) library ([see below](#Improved_image_I.2FO_with_the_SCIFIO_library "wikilink")).
--   More powerful [Script Editor](Script_Editor) with support for several scripting languages.
+-   The [ImageJ Updater](/plugins/updater) makes it simple to keep your ImageJ up to date, and to add new plugins by enabling additional [Update Sites](/update-sites).
+-   New and enhanced file format support via the [SCIFIO](/software/scifio) library ([see below](#Improved_image_I.2FO_with_the_SCIFIO_library "wikilink")).
+-   More powerful [Script Editor](/scripting/script-editor) with support for several scripting languages.
 -   New commands:
     -   {% include bc content='Plugins | Debug | Dump Stack'%} for debugging when things {% include wikipedia title='Hang (computing)' text='hang'%}.
     -   {% include bc content='Plugins | Debug | System Information'%} for reporting on versions of installed plugins and libraries.
--   Use ImageJ2's N-dimensional [ImgLib2](ImgLib2)-based data structures (still in beta).
+-   Use ImageJ2's N-dimensional [ImgLib2](/imglib2)-based data structures (still in beta).
 -   Write parameterized commands and scripts:
     -   Typed inputs and outputs with no dependence on AWT user interface.
     -   Mix and match ImageJ 1.x and ImageJ2 data structures.
     -   Plugins appear in the menu automatically without plugins.config files.
-    -   Reusable in many contexts: [KNIME](KNIME), [CellProfiler](CellProfiler), [OMERO](OMERO), [headless](Headless)...
+    -   Reusable in many contexts: [KNIME](/software/knime), [CellProfiler](/software/cellprofiler), [OMERO](/software/omero), [headless](Headless)...
 
 ### Integrated search bar
 
@@ -66,9 +66,9 @@ Developers can extend the capabilities of the search bar by writing [Searcher](h
 
 ### Improved image I/O with the SCIFIO library
 
-ImageJ2 uses the [SCIFIO](SCIFIO) library (SCientific Image Format Input and Output) by default for most image input tasks. You can change this behavior at any time by running {% include bc content='Edit | Options | ImageJ2'%} and modifying the *Use SCIFIO when opening files* option.
+ImageJ2 uses the [SCIFIO](/software/scifio) library (SCientific Image Format Input and Output) by default for most image input tasks. You can change this behavior at any time by running {% include bc content='Edit | Options | ImageJ2'%} and modifying the *Use SCIFIO when opening files* option.
 
-For further details, see the [SCIFIO](SCIFIO) page.
+For further details, see the [SCIFIO](/software/scifio) page.
 
 ### ImageJ2 is more than just an application
 
@@ -76,13 +76,13 @@ ImageJ2 is also a collection of reusable software libraries built on [SciJava](S
 
 The following software component libraries form the core of ImageJ2:
 
--   [ImageJ Common](ImageJ_Common) - The core image data model, using ImgLib2.
--   [ImageJ Ops](ImageJ_Ops) - An extensible framework for reusable image processing algorithms.
--   [ImageJ Updater](ImageJ_Updater) - A mechanism to update individual plugins and libraries within ImageJ.
--   [ImageJ Legacy](ImageJ_Legacy) - Provides complete backwards compatibility with ImageJ 1.x.
+-   [ImageJ Common](/plugins/imagej-common) - The core image data model, using ImgLib2.
+-   [ImageJ Ops](/develop/imagej-ops) - An extensible framework for reusable image processing algorithms.
+-   [ImageJ Updater](/plugins/updater) - A mechanism to update individual plugins and libraries within ImageJ.
+-   [ImageJ Legacy](/Compatibility) - Provides complete backwards compatibility with ImageJ 1.x.
 -   [SciJava Common](SciJava_Common) - The core frameworks for plugins, modules and the application itself.
 
-See the [Architecture](Architecture) page for further details.
+See the [Architecture](/develop/architecture) page for further details.
 
 Rationale
 ---------
@@ -101,7 +101,7 @@ For more details, see the [presentation from the 2010 ImageJ Conference](http://
 Funding
 -------
 
-ImageJ2 is funded from a variety of sources. See the [Funding](Funding) page for details.
+ImageJ2 is funded from a variety of sources. See the [Funding](/licensing/funding) page for details.
 
 Publications
 ------------

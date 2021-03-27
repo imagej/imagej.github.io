@@ -9,7 +9,7 @@ description: test description
 Installation
 ------------
 
-After installing Fiji, go to "Help" =&gt; "Update..." =&gt; "Manage update site" =&gt; select "PET-CT" =&gt; apply change.
+After installing Fiji, go to "/help" =&gt; "Update..." =&gt; "Manage update site" =&gt; select "PET-CT" =&gt; apply change.
 
 This will bring up a list of all plugins, not all of which need be installed. For example you may not want Read\_ClearCanvas\_Studies.jar and/or Read\_BI\_Studies.jar. In such cases click on "Status/Action" and choose "Keep as-is"
 

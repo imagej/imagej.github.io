@@ -37,7 +37,7 @@ You can mark any file previously uploaded as obsolete. The steps vary slightly d
 
 The process of marking the file obsolete will automatically revert it to the shadowed update site's version:
 
-1.  Start the [updater](Updater) and click the *Advanced mode* button.
+1.  Start the [updater](/plugins/updater) and click the *Advanced mode* button.
 2.  Select the *View files of the '\[your site name here\]*' option.
 3.  Right click and choose "**Mark obsolete (unshadowing)**" for the file.
 4.  Click "**Apply changes (upload)**" to finalize the unshadowing.
@@ -47,7 +47,7 @@ The process of marking the file obsolete will automatically revert it to the sha
 If the file is not hosted by any other active update site you need to tell the updater to delete the file:
 
 1.  Delete the file locally
-2.  Start the [updater](Updater) and click the *Advanced mode* button.
+2.  Start the [updater](/plugins/updater) and click the *Advanced mode* button.
 3.  Select the *View files of the '\[your site name here\]*' option.
 4.  The updater will see the file is missing and automatically flag it "**Install it**". You need to right-click the file and change it to "**Keep as-is**". See [Why don't I have an upload option?](#Why_don't_I_have_an_upload_option? "wikilink") below for an explanation.
 5.  Right-click the deleted file again and choose "**Mark obsolete**".
@@ -57,13 +57,13 @@ If the file is not hosted by any other active update site you need to tell the u
 
 Deleting a file from the history is strongly not recommended, but if you *must* do so (e.g., for legal or privacy reasons):
 
--   If you using a [personal update site](Personal_Update_Sites), then [contact an ImageJ administrator](Contact) to have the offending file(s) removed.
+-   If you using a [personal update site](Personal_Update_Sites), then [contact an ImageJ administrator](/help) to have the offending file(s) removed.
 -   If you are hosting your own update site, then you must delete all versions of the file from the file system, *and* edit the *db.xml.gz* file to remove the *<plugin>* entry as well as any *<dependency>* elements in other entries which reference it.
 
 What are the Terms of Service for personal update sites?
 --------------------------------------------------------
 
-Please see the [Personal Update Site Terms of Service](Personal_Update_Site_Terms_of_Service) page.
+Please see the [Personal Update Site Terms of Service](/update-sites/tos) page.
 
 How do I set a password for my personal update site?
 ----------------------------------------------------
@@ -75,12 +75,12 @@ If you want to restrict which users can *access* your update site, please note t
 How do I delete my personal update site?
 ----------------------------------------
 
-If you want to completely remove your update site, [contact an ImageJ administrator](Contact) to have the site removed.
+If you want to completely remove your update site, [contact an ImageJ administrator](/help) to have the site removed.
 
 Can I manipulate the files on my update site directly? (E.g., via WebDAV?)
 --------------------------------------------------------------------------
 
-Please don't! Update sites are intended to be accessed *only* via ImageJ's [Updater](Updater). There is important metadata in the *db.xml.gz* file which *must* be kept in sync with the files in the directory structure. Otherwise, your update site will stop working properly.
+Please don't! Update sites are intended to be accessed *only* via ImageJ's [Updater](/plugins/updater). There is important metadata in the *db.xml.gz* file which *must* be kept in sync with the files in the directory structure. Otherwise, your update site will stop working properly.
 
 Why don't I have an upload option?
 ----------------------------------

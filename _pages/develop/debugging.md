@@ -9,7 +9,7 @@ description: test description
 
 
  {% include info-box content='This page has approaches for ""software developers"" to use for debugging ImageJ.  
-If you are a ""user"" looking to troubleshoot issues, see the [Troubleshooting](Troubleshooting) page.' %}
+If you are a ""user"" looking to troubleshoot issues, see the [Troubleshooting](/help/troubleshooting) page.' %}
 
 Launching ImageJ in debug mode
 ==============================
@@ -291,7 +291,7 @@ Okay, so here you go, a little demonstration:
 Inspecting serialized objects
 =============================
 
-If you have a file with a serialized object, you can use this Beanshell in the [Script Editor](Script_Editor) to open a tree view of the object (double-click to open/close the branches of the view):
+If you have a file with a serialized object, you can use this Beanshell in the [Script Editor](/scripting/script-editor) to open a tree view of the object (double-click to open/close the branches of the view):
 
     import fiji.debugging.Object_Inspector;
 
@@ -320,7 +320,7 @@ There are a couple of ways to test for such EDT violations, see [this blog post 
 Debugging Java3D issues
 =======================
 
-When Java3D does not work, the first order of business is to use {% include bc content='Plugins | Utilities | Debugging | Test Java3D'%}. If this shows a rotating cube, but the [3D Viewer](3D_Viewer) does not work, please click on {% include bc content='Help | Java3D Properties...'%} in the [3D Viewer](3D_Viewer)'s menu bar.
+When Java3D does not work, the first order of business is to use {% include bc content='Plugins | Utilities | Debugging | Test Java3D'%}. If this shows a rotating cube, but the [3D Viewer](/plugins/3d-viewer) does not work, please click on {% include bc content='Help | Java3D Properties...'%} in the [3D Viewer](/plugins/3d-viewer)'s menu bar.
 
 Command line debugging
 ----------------------

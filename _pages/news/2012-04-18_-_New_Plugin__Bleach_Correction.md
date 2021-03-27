@@ -6,6 +6,6 @@ categories: News
 description: test description
 ---
 
-The new [Bleach Correction](Bleach_Correction) plugin was included into Fiji, thanks to Kota Miura and Jens Rietdorf. If you have time series where the signal is changed due to bleaching or similar effects, give it a try!
+The new [Bleach Correction](/plugins/bleach-correction) plugin was included into Fiji, thanks to Kota Miura and Jens Rietdorf. If you have time series where the signal is changed due to bleaching or similar effects, give it a try!
 
 

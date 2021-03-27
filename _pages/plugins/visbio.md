@@ -28,7 +28,7 @@ The VisBio Plugin is located within the LOCI updates. To learn more on how to up
 
 -   Select {% include bc content='Help | Update Fiji'%}
 -   Once the ImageJ Updater is presented, select "Manage Update sites"
--   Select the "LOCI" site to update all LOCI plugins, including VisBio
+-   Select the "/orgs/loci" site to update all LOCI plugins, including VisBio
 -   Close "Manage Update Sites" and select "Apply changes"
 -   Restart ImageJ and the update will be in effect
 

@@ -63,7 +63,7 @@ Melting pot
 
 Because there are limitations in what SemVer can be used to reason about, applications may also wish to provide a "melting pot" for a high-level assessment of compatibility.
 
-The [SciJava component collection](Architecture) uses a [melting pot script](https://github.com/scijava/scijava-scripts/blob/d892adc0092c220ee1e597b9fb5a1fb067e4509b/melting-pot.sh) to test components from its lowest-level libraries (e.g., [SciJava Common](SciJava_Common) and [ImgLib2](ImgLib2)) to its topmost applications (e.g., [ImageJ](ImageJ) and [Fiji](Fiji)).
+The [SciJava component collection](/develop/architecture) uses a [melting pot script](https://github.com/scijava/scijava-scripts/blob/d892adc0092c220ee1e597b9fb5a1fb067e4509b/melting-pot.sh) to test components from its lowest-level libraries (e.g., [SciJava Common](SciJava_Common) and [ImgLib2](/imglib2)) to its topmost applications (e.g., [ImageJ](/about) and [Fiji](/fiji)).
 
 Is SemVer transitive?
 ---------------------
@@ -78,6 +78,6 @@ It may feel strange to add a new dependency without bumping the major or minor v
 
 Essentially, dependency convergence is a separate issue to versioning, and is not be tracked with SemVer.
 
-**Bill of Materials projects.** For a [Bill of Materials](BOM) project, the "public API" is the union of all managed dependencies. Therefore if one or more components managed in a BOM are updated to an increased major or minor version, the BOM itself must take the most significant change in its next release.
+**Bill of Materials projects.** For a [Bill of Materials](/Architecture#Bill_of_Materials) project, the "public API" is the union of all managed dependencies. Therefore if one or more components managed in a BOM are updated to an increased major or minor version, the BOM itself must take the most significant change in its next release.
 
 For example, if a BOM is at version 5.4.3, and updates its managed dependencies X from 1.0.3 &gt; 1.1.0 and Y from 2.4.1 &gt; 3.0.0, the next release of the BOM will be 6.0.0.

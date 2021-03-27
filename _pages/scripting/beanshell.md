@@ -7,7 +7,7 @@ categories: Scripting
 description: test description
 ---
 
-[BeanShell](http://www.beanshell.org/) is the scripting language which is similar both to the [ImageJ macro language](Introduction_into_Macro_Programming) and to Java. In fact, you can even execute almost verbatim Java code, but the common case is to write *scripts*, i.e. leave out all the syntactic sugar to make your code part of a class.
+[BeanShell](http://www.beanshell.org/) is the scripting language which is similar both to the [ImageJ macro language](/scripting/macro) and to Java. In fact, you can even execute almost verbatim Java code, but the common case is to write *scripts*, i.e. leave out all the syntactic sugar to make your code part of a class.
 
 BeanShell also does not require strict typing (read: you do not need to declare variables with types), making it easy to turn prototype code into proper Java after seeing that the code works.
 

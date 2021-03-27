@@ -9,10 +9,10 @@ description: test description
 Overview
 --------
 
-While the [Interest Point-based registration](BigStitcher_Registration) is quite resistant to outliers and will typically work even with few actually corresponding points, there are situations in which you might want to manually curate the detected interest points:
+While the [Interest Point-based registration](/plugins/bigstitcher/registration) is quite resistant to outliers and will typically work even with few actually corresponding points, there are situations in which you might want to manually curate the detected interest points:
 
 -   in very heterogeneous samples you might have a lot of spurious detections that you want to exclude.
--   for extracting [Point Spread Functions (PSFs)](BigStitcher_PSF) for [Deconvolution](BigStitcher_Deconvolution), you want to only use detected beads, but not detections in the sample itself.
+-   for extracting [Point Spread Functions (PSFs)](/plugins/bigstitcher/psf) for [Deconvolution](/plugins/bigstitcher/deconvolution), you want to only use detected beads, but not detections in the sample itself.
 
 We offer a variety of ways to manage interest points in **MultiView mode**, which can be found in the main menu under `Interest Points`.
 

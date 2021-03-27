@@ -35,7 +35,7 @@ It is one of Java's greatest strengths that you do not need to compile for every
 
 -   By using native libraries, it is much easier to produce fatal errors that tear down the complete Java virtual machine. Consequently, debugging can be really hard when using native libraries.
 
-For further arguments to use Java instead of native libraries, see also our [rationale for using Java](Why_Java).
+For further arguments to use Java instead of native libraries, see also our [rationale for using Java](/Philosophy#Why_Java.3F).
 
 JNA vs JNI
 ----------

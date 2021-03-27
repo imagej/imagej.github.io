@@ -54,7 +54,7 @@ Tips
 ----
 
 How can I process a series/stack of images?  
-Execute the following macro from [ImageJ's macro editor](https://imagej.net/developer/macro/macros.html) or [Fiji's scripting editor](Using_the_Script_Editor):
+Execute the following macro from [ImageJ's macro editor](https://imagej.net/developer/macro/macros.html) or [Fiji's scripting editor](/scripting/script-editor):
 
 <!-- -->
 

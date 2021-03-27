@@ -8,7 +8,7 @@ description: test description
 
 ### Register Virtual Stack Slices now with non-linear models
 
-The plugin [Register Virtual Stack Slices](Register_Virtual_Stack_Slices) has been updated to work with the new generic image transformation library by {% include person content='Saalfeld' %} and with [bUnwarpJ](http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/) by Ignacio Arganda. As a result, stack slices may be now registered using:
+The plugin [Register Virtual Stack Slices](/plugins/register-virtual-stack-slices) has been updated to work with the new generic image transformation library by {% include person content='Saalfeld' %} and with [bUnwarpJ](http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/) by Ignacio Arganda. As a result, stack slices may be now registered using:
 
 -   Translation model
 -   Rigid model: rotation and translation

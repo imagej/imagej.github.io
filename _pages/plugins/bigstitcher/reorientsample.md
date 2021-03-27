@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-In addition to the manual view alignment functionality in **Stitching mode** (see [here](BigStitcher_manual_translation) for details), which focuses on the translational alignment of tiled images, we offer offer complementary functions for **manually transforming** images and **managing transformations** in **MultiView mode**.
+In addition to the manual view alignment functionality in **Stitching mode** (see [here](/plugins/bigstitcher/manual-translation) for details), which focuses on the translational alignment of tiled images, we offer offer complementary functions for **manually transforming** images and **managing transformations** in **MultiView mode**.
 
 These functions can be found under `Calibration/Transformations` in the main menu of the MultiView mode.
 

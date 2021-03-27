@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-This page provides user documentation for some experimental functions of the [CIP](CIP) package
+This page provides user documentation for some experimental functions of the [CIP](/plugins/cip) package
 
 {% include cip content='Navigation' %}
 
@@ -31,7 +31,7 @@ This function allow to track the region defined in a list of label map image and
 
 <span style="font-size:110%">**Output**</span>  
     **measure**: a measure table providing all the necessary information to analyze and display the tracks. The measure rows provide spot position ordered by trackId, branchId (i.e. the sub branch of a track) and time. The branch graph for each track is defined by the parameter branchIn and branch out indicatin the branchId of the connected branch. The measure table can be visualized with cip.show  
-    **trackmate model**: a TrackmateModel instance that can be further used for visualisation or saving the track information to disk. One can refer to [ trackmate scripting resource](Scripting_TrackMate) for more information on how to use trackmate model. [cip.show](CIP_Utilities#show) also provide some convenience to display result in trackschme or in image overlay.
+    **trackmate model**: a TrackmateModel instance that can be further used for visualisation or saving the track information to disk. One can refer to [ trackmate scripting resource](/plugins/trackmate/scripting) for more information on how to use trackmate model. [cip.show](CIP_Utilities#show) also provide some convenience to display result in trackschme or in image overlay.
 
 <span style="font-size:110%">**Example**</span>  
 one can find an example script [here](https://github.com/benoalo/CIP/blob/master/scripts/tracking_cip.py)

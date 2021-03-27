@@ -177,6 +177,6 @@ See also
 --------
 
 -   [Javascript Scripting](Javascript_Scripting)
--   [Multithreaded Image Processing in Clojure](Multithreaded_Image_Processing_in_Clojure)
+-   [Multithreaded Image Processing in Clojure](/scripting/multithreaded-image-processing-in-clojure)
 
   

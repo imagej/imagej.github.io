@@ -9,11 +9,11 @@ description: test description
 
 {% include info-box content='This page describes the ""social"" structure of [SciJava](SciJava) projects.
 
--   For information on the ""technical"" structure, see [Architecture](Architecture).
--   For information on the ""legal"" structure, see [Licensing](Licensing).' %}
+-   For information on the ""technical"" structure, see [Architecture](/develop/architecture).
+-   For information on the ""legal"" structure, see [Licensing](/licensing).' %}
 
 
-The [ImageJ](ImageJ) project, and related projects in the [SciJava](SciJava) software ecosystem, are governed as [open source](Open_source) software projects. Everybody is welcome to [contribute](Contribute) with [plugins](Plugins), patches, [bug reports](Bugs), [tutorials](Tutorials), [documentation](Documentation), and artwork.
+The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are governed as [open source](Open_source) software projects. Everybody is welcome to [contribute](/licensing/contributing) with [plugins](/fiji/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/Category_Tutorials), [documentation](/learn), and artwork.
 
 That said, every project needs leaders: the ones who participate in *governance* of the project, {% include wikipedia title='Software maintenance' text='maintaining'%} the software and making key decisions.
 
@@ -25,24 +25,24 @@ Because [open source](Open_source) software (OSS) is highly collaborative, it is
 The most common roles in OSS are:
 
 -   **Founders** are the people who originally launched the project.
--   **Leads** are responsible for making final decisions. In the [open source](Open_source) world these people are often referred to as [benevolent dictators](http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html). Changes with a serious impact on the community are typically [discussed on open channels](Community) first.
+-   **Leads** are responsible for making final decisions. In the [open source](Open_source) world these people are often referred to as [benevolent dictators](http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html). Changes with a serious impact on the community are typically [discussed on open channels](/help) first.
 -   **Maintainers** keep the project functional, fix bugs and make releases. They often make day to day decisions, and are typically involved in discussion with the project lead(s) regarding major decisions, although the lead has final decision-making authority.
 -   **Developers** are people who work on the project significantly or often. Typically they have direct push access to the source code. In some cases they make day to day decisions, depending on their experience and comfort level with the project.
 -   **Contributors** are people who help with the project either currently or in the past. They may participate occasionally or sporadically, and are typically not involved in project decision making.
 
 ### SciJava team roles
 
-Projects in the [SciJava component collection](Architecture) define each component's **team** as the group of people who take *responsibility* for it. The following roles formalize the ways people are pledged to help:
+Projects in the [SciJava component collection](/develop/architecture) define each component's **team** as the group of people who take *responsibility* for it. The following roles formalize the ways people are pledged to help:
 
 | Role        | Commitment                                                                                                                         |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------|
 | Founder     | Created the project. Does not imply any current participation or responsibility.                                                   |
-| Lead        | Has decision-making authority: timing of [releases](Releases), inclusion of features, etc.                              |
+| Lead        | Has decision-making authority: timing of [releases](/develop/releasing), inclusion of features, etc.                              |
 | Developer   | Adds new features or enhancements. Can be assigned to address feature requests.                                                    |
-| Debugger    | Fixes [bugs](Issues). Can be assigned open [issues](Issues) to solve.                                        |
-| Reviewer    | Reviews [patch submissions](Contributing).                                                                              |
-| Support     | Responds to [community questions](Community) and [issue reports](Issues). Keeps the issue tracker organized. |
-| Maintainer  | Merges [patch submissions](Contributing). Cuts releases.                                                                |
+| Debugger    | Fixes [bugs](/Project_management#Issue_tracking). Can be assigned open [issues](/Project_management#Issue_tracking) to solve.                                        |
+| Reviewer    | Reviews [patch submissions](/licensing/contributing).                                                                              |
+| Support     | Responds to [community questions](/help) and [issue reports](/Project_management#Issue_tracking). Keeps the issue tracker organized. |
+| Maintainer  | Merges [patch submissions](/licensing/contributing). Cuts releases.                                                                |
 | Contributor | Contributed code to the project. Does not imply any current participation or responsibility.                                       |
 
 Individuals often fill more than one role.
@@ -50,7 +50,7 @@ Individuals often fill more than one role.
 Component status
 ----------------
 
-This web site documents lots of software [components](Components)—and in particular, many ImageJ [plugins](Plugins). Components in the ecosystem each have a distinct development path, with varying levels of maturity and activity, which is ultimately determined by the people who participate in developing it.
+This web site documents lots of software [components](/Architecture#Definitions)—and in particular, many ImageJ [plugins](/fiji/plugins). Components in the ecosystem each have a distinct development path, with varying levels of maturity and activity, which is ultimately determined by the people who participate in developing it.
 
 Each component's page features an informational sidebar with a status report derived from the component's declared *team*. This sidebar is intended to help users understand what level to expect when seeking help, reporting issues, and submitting feature requests.
 
@@ -60,14 +60,14 @@ Each component's page features an informational sidebar with a status report der
 
 | Status   | Meaning                                                                                                                                                                                     |
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Unstable | Project is under heavy development, with unstable API undergoing iterations of refinement. Typically, these components are either unreleased, or [versioned at 0.x](Versioning). |
+| Unstable | Project is under heavy development, with unstable API undergoing iterations of refinement. Typically, these components are either unreleased, or [versioned at 0.x](/develop/versioning). |
 | Active   | New features are being actively developed. API breakages are kept as limited as possible.                                                                                                   |
 | Stable   | No new features are under development. API is stable.                                                                                                                                       |
 | Obsolete | The project is discontinued.                                                                                                                                                                |
 
 ### Support status
 
-**Support status** indicates the level to which the team responds to questions and [issue reports](Bugs).
+**Support status** indicates the level to which the team responds to questions and [issue reports](/help/report-a-bug).
 
 | Status  | Meaning                                                                                                                                                                                         |
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -82,43 +82,43 @@ SciJava project summary
 Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
 
 <table><tbody><tr class="odd"><td><p><strong>Logo</strong></p></td><td><p><strong>Project</strong></p></td><td><p><strong>Founders</strong></p></td><td><p><strong>Leads</strong></p></td><td><p><strong>Maintainers</strong></p></td><td><p><strong>Developers</strong></p></td><td><p><strong>Contributors</strong></p></td></tr><tr class="even"><td><p> {% include logo content='SciJava' %}</p></td><td><p><strong><a href="SciJava" title="wikilink">SciJava</a></strong></p></td><td><p> {% include person content='Moore' %}<br />
-{% include person content='Rueden' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p></td><td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td></tr><tr class="odd"><td><p> {% include logo content='ImgLib2' %}</p></td><td><p><strong><a href="ImgLib2" title="wikilink">ImgLib2</a></strong></p></td><td><p> {% include person content='Saalfeld' %}<br />
+{% include person content='Rueden' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors" title="wikilink">Contributors</a></p></td></tr><tr class="odd"><td><p> {% include logo content='ImgLib2' %}</p></td><td><p><strong><a href="/imglib2" title="wikilink">ImgLib2</a></strong></p></td><td><p> {% include person content='Saalfeld' %}<br />
 {% include person content='StephanP' %}</p></td><td><p> {% include person content='Pietzsch' %}<sup>1</sup><br />
 {% include person content='StephanP' %}<br />
 {% include person content='Saalfeld' %}</p></td><td><p> {% include person content='Pietzsch' %}<br />
 {% include person content='Rueden' %}<br />
 {% include person content='StephanP' %}<br />
-{% include person content='Saalfeld' %}</p></td><td><p><a href="https://github.com/orgs/imglib/people">List on GitHub</a></p></td><td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td></tr><tr class="even"><td><p> {% include logo content='ImageJ1' %}</p></td><td><p><strong><a href="ImageJ1" title="wikilink">ImageJ1</a></strong></p></td><td><p> {% include person content='Rasband' %}</p></td><td><p> {% include person content='Rasband' %}</p></td><td><p> {% include person content='Rasband' %}<br />
-{% include person content='Rueden' %}</p></td><td><p> {% include person content='Rasband' %}</p></td><td><p>See <a href="https://imagej.net/notes.html">release notes</a></p></td></tr><tr class="odd"><td><p> {% include logo content='ImageJ2' %}</p></td><td><p><strong><a href="ImageJ2" title="wikilink">ImageJ2</a></strong></p></td><td><p> {% include person content='Rueden' %}<br />
-{% include person content='Eliceiri' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p><a href="https://github.com/orgs/imagej/people">List on GitHub</a></p></td><td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td></tr><tr class="even"><td><p> {% include logo content='SCIFIO' %}</p></td><td><p><strong><a href="SCIFIO" title="wikilink">SCIFIO</a></strong></p></td><td><p> {% include person content='Rueden' %}<br />
+{% include person content='Saalfeld' %}</p></td><td><p><a href="https://github.com/orgs/imglib/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors" title="wikilink">Contributors</a></p></td></tr><tr class="even"><td><p> {% include logo content='ImageJ1' %}</p></td><td><p><strong><a href="/software/imagej1" title="wikilink">ImageJ1</a></strong></p></td><td><p> {% include person content='Rasband' %}</p></td><td><p> {% include person content='Rasband' %}</p></td><td><p> {% include person content='Rasband' %}<br />
+{% include person content='Rueden' %}</p></td><td><p> {% include person content='Rasband' %}</p></td><td><p>See <a href="https://imagej.net/notes.html">release notes</a></p></td></tr><tr class="odd"><td><p> {% include logo content='ImageJ2' %}</p></td><td><p><strong><a href="/software/imagej2" title="wikilink">ImageJ2</a></strong></p></td><td><p> {% include person content='Rueden' %}<br />
+{% include person content='Eliceiri' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p><a href="https://github.com/orgs/imagej/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors" title="wikilink">Contributors</a></p></td></tr><tr class="even"><td><p> {% include logo content='SCIFIO' %}</p></td><td><p><strong><a href="/software/scifio" title="wikilink">SCIFIO</a></strong></p></td><td><p> {% include person content='Rueden' %}<br />
 {% include person content='Eliceiri' %}<br />
-{% include person content='Hinerm' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p></td><td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td></tr><tr class="odd"><td rowspan=3 style="vertical-align: middle"><p> {% include logo content='Fiji' %}</p></td><td><p><strong><a href="Fiji" title="wikilink">Fiji</a></strong></p></td><td><p> {% include person content='Schindelin' %}<br />
+{% include person content='Hinerm' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors" title="wikilink">Contributors</a></p></td></tr><tr class="odd"><td rowspan=3 style="vertical-align: middle"><p> {% include logo content='Fiji' %}</p></td><td><p><strong><a href="/fiji" title="wikilink">Fiji</a></strong></p></td><td><p> {% include person content='Schindelin' %}<br />
 {% include person content='Albertcardona' %}<br />
 {% include person content='Tomancak' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p> {% include person content='Rueden' %}<br />
-Gabriella Turek</p></td><td><p><a href="https://github.com/orgs/fiji/people">List on GitHub</a></p></td><td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td></tr><tr class="even"><td><p><strong><a href="BigDataViewer" title="wikilink">BigDataViewer</a></strong></p></td><td><p> {% include person content='Pietzsch' %}</p></td><td><p> {% include person content='Pietzsch' %}</p></td><td><p> {% include person content='Pietzsch' %}<br />
-{% include person content='StephanP' %}</p></td><td><p><a href="https://github.com/orgs/bigdataviewer/people">List on GitHub</a></p></td><td><p><a href="https://github.com/bigdataviewer/bigdataviewer-core/graphs/contributors">Info on GitHub</a></p></td><td></td></tr><tr class="odd"><td><p><strong><a href="TrakEM2" title="wikilink">TrakEM2</a></strong></p></td><td><p> {% include person content='Albertcardona' %}</p></td><td><p> {% include person content='Albertcardona' %}</p></td><td><p> {% include person content='Albertcardona' %}<br />
+Gabriella Turek</p></td><td><p><a href="https://github.com/orgs/fiji/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors" title="wikilink">Contributors</a></p></td></tr><tr class="even"><td><p><strong><a href="BigDataViewer" title="wikilink">BigDataViewer</a></strong></p></td><td><p> {% include person content='Pietzsch' %}</p></td><td><p> {% include person content='Pietzsch' %}</p></td><td><p> {% include person content='Pietzsch' %}<br />
+{% include person content='StephanP' %}</p></td><td><p><a href="https://github.com/orgs/bigdataviewer/people">List on GitHub</a></p></td><td><p><a href="https://github.com/bigdataviewer/bigdataviewer-core/graphs/contributors">Info on GitHub</a></p></td><td></td></tr><tr class="odd"><td><p><strong><a href="/plugins/trakem2" title="wikilink">TrakEM2</a></strong></p></td><td><p> {% include person content='Albertcardona' %}</p></td><td><p> {% include person content='Albertcardona' %}</p></td><td><p> {% include person content='Albertcardona' %}<br />
 {% include person content='Saalfeld' %}<br />
-{% include person content='Rueden' %}</p></td><td><p><a href="https://github.com/orgs/trakem2/people">List on GitHub</a></p></td><td><p><a href="https://github.com/trakem2/TrakEM2/graphs/contributors">Info on GitHub</a></p></td><td></td></tr><tr class="even"><td><p> {% include logo content='SLIM Curve' %}</p></td><td><p><strong><a href="SLIM_Curve" title="wikilink">SLIM Curve</a></strong></p></td><td><p> Paul Barber<br />
+{% include person content='Rueden' %}</p></td><td><p><a href="https://github.com/orgs/trakem2/people">List on GitHub</a></p></td><td><p><a href="https://github.com/trakem2/TrakEM2/graphs/contributors">Info on GitHub</a></p></td><td></td></tr><tr class="even"><td><p> {% include logo content='SLIM Curve' %}</p></td><td><p><strong><a href="/plugins/slim-curve" title="wikilink">SLIM Curve</a></strong></p></td><td><p> Paul Barber<br />
 {% include person content='Rueden' %}</p></td><td><p> Paul Barber<sup>2</sup><br />
 {% include person content='Rueden' %}<sup>2</sup></p></td><td><p> {% include person content='Msagar' %}<br />
-{% include person content='Rueden' %}</p></td><td><p><a href="https://github.com/orgs/slim-curve/people">List on GitHub</a></p></td><td><p><a href="https://github.com/slim-curve/slim-plugin/graphs/contributors">Info on GitHub</a></p></td></tr><tr class="odd"><td><p> {% include logo content='Bio-Formats' %}</p></td><td><p><strong><a href="Bio-Formats" title="wikilink">Bio-Formats</a></strong></p></td><td><p> {% include person content='Rueden' %}<br />
+{% include person content='Rueden' %}</p></td><td><p><a href="https://github.com/orgs/slim-curve/people">List on GitHub</a></p></td><td><p><a href="https://github.com/slim-curve/slim-plugin/graphs/contributors">Info on GitHub</a></p></td></tr><tr class="odd"><td><p> {% include logo content='Bio-Formats' %}</p></td><td><p><strong><a href="/formats/bio-formats" title="wikilink">Bio-Formats</a></strong></p></td><td><p> {% include person content='Rueden' %}<br />
 {% include person content='Eliceiri' %}</p></td><td><p> {% include person content='Linkert' %}</p></td><td><p> {% include person content='Linkert' %}<br />
-{% include person content='Sbesson' %}</p></td><td style="white-space: normal"><p><a href="https://github.com/openmicroscopy/bioformats/graphs/contributors">List on GitHub</a></p></td><td><p>See <a href="http://www.openmicroscopy.org/site/about/ome-contributors">OME Contributors</a></p></td></tr><tr class="even"><td><p> {% include logo content='KNIME' %}</p></td><td><p> <strong><a href="KNIME" title="wikilink">KNIME Image Processing</a></strong></p></td><td><p> {% include person content='Dietzc' %}<br />
+{% include person content='Sbesson' %}</p></td><td style="white-space: normal"><p><a href="https://github.com/openmicroscopy/bioformats/graphs/contributors">List on GitHub</a></p></td><td><p>See <a href="http://www.openmicroscopy.org/site/about/ome-contributors">OME Contributors</a></p></td></tr><tr class="even"><td><p> {% include logo content='KNIME' %}</p></td><td><p> <strong><a href="/software/knime" title="wikilink">KNIME Image Processing</a></strong></p></td><td><p> {% include person content='Dietzc' %}<br />
 Martin Horn</p></td><td><p> {% include person content='Dietzc' %}</p></td><td><p> {% include person content='Dietzc' %}<br />
-Martin Horn</p></td><td><p><a href="https://github.com/orgs/knime-ip/people">List on GitHub</a></p></td><td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td></tr><tr class="odd"><td><p> {% include logo content='CellProfiler' %}</p></td><td><p><strong><a href="CellProfiler" title="wikilink">CellProfiler</a></strong></p></td><td><p> {% include person content='Leek' %}<br />
-Anne Carpenter</p></td><td><p> {% include person content='0x00B1' %}</p></td><td><p> {% include person content='0x00B1' %}</p></td><td><p><a href="https://github.com/orgs/CellProfiler/people">List on GitHub</a></p></td><td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td></tr><tr class="even"><td><p> {% include logo content='OMERO' %}</p></td><td><p><strong><a href="OMERO" title="wikilink">OMERO</a></strong></p></td><td><p> {% include person content='Moore' %}<br />
+Martin Horn</p></td><td><p><a href="https://github.com/orgs/knime-ip/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors" title="wikilink">Contributors</a></p></td></tr><tr class="odd"><td><p> {% include logo content='CellProfiler' %}</p></td><td><p><strong><a href="/software/cellprofiler" title="wikilink">CellProfiler</a></strong></p></td><td><p> {% include person content='Leek' %}<br />
+Anne Carpenter</p></td><td><p> {% include person content='0x00B1' %}</p></td><td><p> {% include person content='0x00B1' %}</p></td><td><p><a href="https://github.com/orgs/CellProfiler/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors" title="wikilink">Contributors</a></p></td></tr><tr class="even"><td><p> {% include logo content='OMERO' %}</p></td><td><p><strong><a href="/software/omero" title="wikilink">OMERO</a></strong></p></td><td><p> {% include person content='Moore' %}<br />
 Jean-Marie Burel<br />
 Chris Allan<br />
 Jason Swedlow</p></td><td><p> {% include person content='Moore' %}<br />
 Jean-Marie Burel<br />
-Chris Allan</p></td><td><p><a href="https://github.com/orgs/openmicroscopy/people">List on GitHub</a></p></td><td><p><a href="https://github.com/orgs/openmicroscopy/people">List on GitHub</a></p></td><td><p><a href="https://github.com/openmicroscopy/openmicroscopy/graphs/contributors">Info on GitHub</a></p></td></tr><tr class="odd"><td><p> {% include logo content='Icy' %}</p></td><td><p><strong><a href="Icy" title="wikilink">Icy</a></strong></p></td><td><p> Stephane Dallongeville<br />
+Chris Allan</p></td><td><p><a href="https://github.com/orgs/openmicroscopy/people">List on GitHub</a></p></td><td><p><a href="https://github.com/orgs/openmicroscopy/people">List on GitHub</a></p></td><td><p><a href="https://github.com/openmicroscopy/openmicroscopy/graphs/contributors">Info on GitHub</a></p></td></tr><tr class="odd"><td><p> {% include logo content='Icy' %}</p></td><td><p><strong><a href="/software/icy" title="wikilink">Icy</a></strong></p></td><td><p> Stephane Dallongeville<br />
 {% include person content='Fab14' %}<br />
 Jean-Christophe Olivo-Marin</p></td><td><p> Stephane Dallongeville<br />
 {% include person content='Fab14' %}</p></td><td><p> Stephane Dallongeville<br />
-{% include person content='Fab14' %}</p></td><td><p><a href="https://github.com/orgs/Icy-imaging/people">List on GitHub</a></p></td><td><p><a href="https://github.com/Icy-imaging/Icy-Kernel/graphs/contributors">Info on GitHub</a></p></td></tr><tr class="even"><td><p> {% include logo content='Alida' %}</p></td><td><p><strong><a href="Alida" title="wikilink">Alida</a></strong></p></td><td><p>Stefan Posch<br />
+{% include person content='Fab14' %}</p></td><td><p><a href="https://github.com/orgs/Icy-imaging/people">List on GitHub</a></p></td><td><p><a href="https://github.com/Icy-imaging/Icy-Kernel/graphs/contributors">Info on GitHub</a></p></td></tr><tr class="even"><td><p> {% include logo content='Alida' %}</p></td><td><p><strong><a href="/software/alida" title="wikilink">Alida</a></strong></p></td><td><p>Stefan Posch<br />
 Birgit Möller</p></td><td><p>Stefan Posch<br />
 Birgit Möller</p></td><td><p>Stefan Posch<br />
-Birgit Möller</p></td><td><p><a href="https://github.com/orgs/alida-hub/people">List on GitHub</a></p></td><td><p><a href="https://github.com/alida-hub/alida/graphs/contributors">Info on GitHub</a></p></td></tr><tr class="odd"><td><p> {% include logo content='MiToBo' %}</p></td><td><p><strong><a href="MiToBo" title="wikilink">MiToBo</a></strong></p></td><td><p>Stefan Posch<br />
+Birgit Möller</p></td><td><p><a href="https://github.com/orgs/alida-hub/people">List on GitHub</a></p></td><td><p><a href="https://github.com/alida-hub/alida/graphs/contributors">Info on GitHub</a></p></td></tr><tr class="odd"><td><p> {% include logo content='MiToBo' %}</p></td><td><p><strong><a href="/plugins/mitobo" title="wikilink">MiToBo</a></strong></p></td><td><p>Stefan Posch<br />
 Birgit Möller</p></td><td><p>Stefan Posch<br />
 Birgit Möller</p></td><td><p>Stefan Posch<br />
 Birgit Möller</p></td><td><p><a href="https://github.com/orgs/mitobo-hub/people">List on GitHub</a></p></td><td><p><a href="https://github.com/mitobo-hub/mitobo/graphs/contributors">Info on GitHub</a></p></td></tr></tbody></table>

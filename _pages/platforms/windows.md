@@ -12,7 +12,7 @@ description: test description
 {% capture blurb%}
 {% include wikipedia title='Where do you want to go today?' text='Where do you want to go today?'%}
 {% endcapture %}
-{% include minibox logo='Win.png' blurb=blurb %}{% include wikipedia title='Microsoft Windows' text='Windows'%} is {% include wikipedia title='Microsoft' text='Microsoft'%}'s family of operating systems. It is [the most prevalent desktop computer platform](https://www.netmarketshare.com/operating-system-market-share.aspx). This page details issues specific to using [ImageJ](ImageJ) on Windows systems.
+{% include minibox logo='Win.png' blurb=blurb %}{% include wikipedia title='Microsoft Windows' text='Windows'%} is {% include wikipedia title='Microsoft' text='Microsoft'%}'s family of operating systems. It is [the most prevalent desktop computer platform](https://www.netmarketshare.com/operating-system-market-share.aspx). This page details issues specific to using [ImageJ](/about) on Windows systems.
 
 
 
@@ -26,7 +26,7 @@ Installation
 Troubleshooting
 ===============
 
-See also the [Troubleshooting](Troubleshooting) page.
+See also the [Troubleshooting](/help/troubleshooting) page.
 
 HiDPI displays
 --------------
@@ -40,6 +40,6 @@ If text and other UI elements appear tiny on your {% include wikipedia title='Hi
 Frequently Asked Questions
 ==========================
 
-See the [Frequently Asked Questions](Frequently_Asked_Questions) page.
+See the [Frequently Asked Questions](/help/frequently-asked-questions) page.
 
 

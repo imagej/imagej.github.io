@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-After you have [detected interest points](BigStitcher_Interest_points) in your images, you can proceed to register them. In **MultiView mode**, select the views to be registered, right-click and choose {% include bc content='Processing|Register using Interest Points...'%}.
+After you have [detected interest points](/plugins/bigstitcher/interest-points) in your images, you can proceed to register them. In **MultiView mode**, select the views to be registered, right-click and choose {% include bc content='Processing|Register using Interest Points...'%}.
 
 The interest point-based registration consists of two steps:
 

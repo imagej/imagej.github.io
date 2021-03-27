@@ -24,7 +24,7 @@ Alida offers a Java implementation of its concept subsuming basic functionality 
 
 In addition, the Java library includes *Grappa*, a graphical editor for data analysis workflow design.
 
-Alida is the basis of the image processing toolbox [MiToBo](MiToBo).
+Alida is the basis of the image processing toolbox [MiToBo](/plugins/mitobo).
 
 For further details, see the [Alida website](http://www.informatik.uni-halle.de/alida/).
 

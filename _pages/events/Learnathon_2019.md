@@ -188,4 +188,4 @@ https://github.com/fiji-hpc/scijava-parallel
 
 **15:00 - 16:00 Update Sites**
 
-[How to set up and populate an update site](How_to_set_up_and_populate_an_update_site)
+[How to set up and populate an update site](/update-sites/setup)

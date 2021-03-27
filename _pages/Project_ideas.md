@@ -14,9 +14,9 @@ Visualization
 3-way viewer for Block-Face EM image volumes based in ImgLib cells
 ------------------------------------------------------------------
 
-The [Imglib](Imglib) provides a cell container, where each cell is an arbitrary n-dimensional image block potentially paged out to a file. Consider the specific case of isotropic 3d-cells stored with lossless compression. This setup would enable efficient browsing and analysis of image volumes larger than available RAM, while observing a specific 3d ROI from XY, YZ and XZ planes. These image volumes are common in [Block-Face Serial Scanning Electron Microscopy](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329), a technique now commercialized as "Gatan 3-way view EM." See this page for [theory](http://www.gatan.com/knowhow/knowhow_15/3view.htm) and for [pictures and examples](http://www.gatan.com/resources/knowhow/kh18-3view.php).
+The [Imglib](/imglib1) provides a cell container, where each cell is an arbitrary n-dimensional image block potentially paged out to a file. Consider the specific case of isotropic 3d-cells stored with lossless compression. This setup would enable efficient browsing and analysis of image volumes larger than available RAM, while observing a specific 3d ROI from XY, YZ and XZ planes. These image volumes are common in [Block-Face Serial Scanning Electron Microscopy](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329), a technique now commercialized as "Gatan 3-way view EM." See this page for [theory](http://www.gatan.com/knowhow/knowhow_15/3view.htm) and for [pictures and examples](http://www.gatan.com/resources/knowhow/kh18-3view.php).
 
-**Goal:** create a 3-way viewer for a 3d instance of an [Imglib](Imglib)'s cell container.  
+**Goal:** create a 3-way viewer for a 3d instance of an [Imglib](/imglib1)'s cell container.  
 **Language:** any supported by Fiji, preferably java.  
 **Contact:** {% include person content='Albertcardona' %}
 
@@ -59,7 +59,7 @@ The term *image segmentation* describes the task where objects in an image are t
 
 Segmentation is traditionally a very difficult problem, especially in the presence of variable lighting, noise, or low contrast.
 
-Many segmentation algorithms have been implemented in Fiji to perform image segmentation, such as [Auto Threshold](Auto_Threshold) and [Auto Local Threshold](Auto_Local_Threshold), but in practice, none of them might work, as they were designed with specific images in mind, and these expectations might not be met by your images.
+Many segmentation algorithms have been implemented in Fiji to perform image segmentation, such as [Auto Threshold](/plugins/auto-threshold) and [Auto Local Threshold](/plugins/auto-local-threshold), but in practice, none of them might work, as they were designed with specific images in mind, and these expectations might not be met by your images.
 
 Recently, a new class of segmentation algorithms has been emerging: segmentation by example. These algorithms require a set of examples from which a model is calculated which can be applied to other -- similar-looking -- images.
 
@@ -205,7 +205,7 @@ Add {% include bc content='Edit | Find in files...'%}
 
 We already have a mechanism to jump between compile errors and locations of a stack trace. The same mechanism could be used to present results from a search through multiple files.
 
-Add a {% include wikipedia title='Read-eval-print loop' text='"REPL" (Read-Eval-Print-Loop)'%} to the [Script Editor](Script_Editor)
+Add a {% include wikipedia title='Read-eval-print loop' text='"REPL" (Read-Eval-Print-Loop)'%} to the [Script Editor](/scripting/script-editor)
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Detect loops after macro recording
@@ -370,7 +370,7 @@ Miscellaneous
 Alpha shapes / concave hull / other Graph Theory algorithms
 -----------------------------------------------------------
 
-Fiji already contains a [Delaunay\_Voronoi](Delaunay_Voronoi) plugin. The purpose of this project is to implement more graph algorithms. Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
+Fiji already contains a [Delaunay\_Voronoi](/plugins/delaunay-voronoi) plugin. The purpose of this project is to implement more graph algorithms. Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
 
 Support for storing ROIs in TIFF tag fields
 -------------------------------------------
@@ -380,7 +380,7 @@ Fiji can save images as TIFF files and ROIs into custom .roi files. Provide a wa
 Cross platform webcam support
 -----------------------------
 
-Supporting image recording from webcams might provide a cheap way to make videomicroscope/telescope units (possibly using the [Distortion Correction](Distortion_Correction) plugin to overcome low-quality CCD chips and lenses).
+Supporting image recording from webcams might provide a cheap way to make videomicroscope/telescope units (possibly using the [Distortion Correction](/plugins/distortion-correction) plugin to overcome low-quality CCD chips and lenses).
 
 One way to achieve that would be by using the [Free Java Media Framework](http://fmj-sf.net/).
 

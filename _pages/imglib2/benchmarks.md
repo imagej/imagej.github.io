@@ -11,7 +11,7 @@ description: test description
 
 {% include info-box content='This page was last updated 2016 May 3.' %}
 
-This page compares the time performance of image processing operations using raw byte arrays, [ImageJ 1.x](ImageJ_1.x) and [ImgLib2](ImgLib2). The benchmark tests these various methods for a "cheap" per-pixel operation (inverting an 8-bit image) as well as an "expensive" operation (some calls to `java.util.Math`) at several image resolutions.
+This page compares the time performance of image processing operations using raw byte arrays, [ImageJ 1.x](/software/imagej1) and [ImgLib2](/imglib2). The benchmark tests these various methods for a "cheap" per-pixel operation (inverting an 8-bit image) as well as an "expensive" operation (some calls to `java.util.Math`) at several image resolutions.
 
 Some of the charts plot results at several iterations, meaning the test was performed repeatedly in a loop. This is important because the just-in-time compiler (JIT) is able to optimize performance increasingly well as the same code is executed more than once. Hence, we show results after both a single iteration, as well as ten iterations.
 
@@ -32,8 +32,8 @@ The data below cover the following scenarios:
 Hardware and software specifications
 ------------------------------------
 
--   [ImgLib2](ImgLib2) version 2.9.0
--   [ImageJ 1.x](ImageJ_1.x) version 1.50i
+-   [ImgLib2](/imglib2) version 2.9.0
+-   [ImageJ 1.x](/software/imagej1) version 1.50i
 -   Mid 2015 MacBook Pro
 -   Mac OS X 10.11.4
 -   2.5 GHz Intel Core i7 processor

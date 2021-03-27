@@ -16,7 +16,7 @@ Please note that the SPIM registration plugin available through Fiji, is based o
 Important Note
 --------------
 
-<span style="color:#A52A2A"> ***For details about the SPIM registration, fusion & deconvolution please have a look at the [Multiview Reconstruction Plugin](Multiview-Reconstruction). It is much more powerful, flexible and completely integrated with the [BigDataViewer](BigDataViewer). Documentation on the outdated [SPIM Registration](SPIM_Registration) is still available.*** </span>
+<span style="color:#A52A2A"> ***For details about the SPIM registration, fusion & deconvolution please have a look at the [Multiview Reconstruction Plugin](/plugins/multiview-reconstruction). It is much more powerful, flexible and completely integrated with the [BigDataViewer](BigDataViewer). Documentation on the outdated [SPIM Registration](/plugins/spim-registration) is still available.*** </span>
 
 Introduction
 ------------
@@ -177,9 +177,9 @@ For imaging, the capillary with the sample embedded in agarose containing approp
 Implementation
 --------------
 
-{% include thumbnail src='/media/Screenshot.png' title='<b>Figure 8:</b> Screenshot of SPIM registration plugin in Fiji'%} The bead-based registration framework is implemented in the Java programming language and provided as a fully open source plugin packaged with the ImageJ distribution [Fiji](Fiji) (Fiji Is Just ImageJ, that is actively developed by an international group of developers. The plugin ([Figure 8](/media/Screenshot.png)) performs all steps of the registration pipeline: bead segmentation, correspondence analysis of bead-descriptors, outlier removal (RANSAC and global regression), global optimization including optional visualization, several methods for fusion, blending and time-lapse registration.
+{% include thumbnail src='/media/Screenshot.png' title='<b>Figure 8:</b> Screenshot of SPIM registration plugin in Fiji'%} The bead-based registration framework is implemented in the Java programming language and provided as a fully open source plugin packaged with the ImageJ distribution [Fiji](/fiji) (Fiji Is Just ImageJ, that is actively developed by an international group of developers. The plugin ([Figure 8](/media/Screenshot.png)) performs all steps of the registration pipeline: bead segmentation, correspondence analysis of bead-descriptors, outlier removal (RANSAC and global regression), global optimization including optional visualization, several methods for fusion, blending and time-lapse registration.
 
-The tutorial on how to use the plugin in basic and advanced mode is available at [SPIM Registration](SPIM_Registration). The test data containing 7-view SPIM acquisitions of *Drosophila* embryo can be downloaded from [1](http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip).
+The tutorial on how to use the plugin in basic and advanced mode is available at [SPIM Registration](/plugins/spim-registration). The test data containing 7-view SPIM acquisitions of *Drosophila* embryo can be downloaded from [1](http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip).
 
 Acknowledgments
 ---------------

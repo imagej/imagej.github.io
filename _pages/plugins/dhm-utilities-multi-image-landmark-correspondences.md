@@ -46,9 +46,9 @@ description: test description
 {% capture maintainers%}
 {% include person content='David Cohoe' %}
 {% endcapture %}
-{% include component project='ImageJ' name='Reconstruction' source=source license='[LGPLv3](LGPLv3)' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
+{% include component project='ImageJ' name='Reconstruction' source=source license='[LGPLv3](/licensing/lgpl)' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
 
-Multi-Image Landmark Correspondences is a plugin that extends mpicbg's [Landmark Correspondences](Landmark_Correspondences) plugin to multiple images. It takes in any number of images that have point ROIs and aligns them all. It is included with DHM Utilities because we have used it to deal with some of the effects of chromatic aberration.
+Multi-Image Landmark Correspondences is a plugin that extends mpicbg's [Landmark Correspondences](/plugins/landmark-correspondences) plugin to multiple images. It takes in any number of images that have point ROIs and aligns them all. It is included with DHM Utilities because we have used it to deal with some of the effects of chromatic aberration.
 
 Usage
 -----

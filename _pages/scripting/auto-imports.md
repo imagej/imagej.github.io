@@ -32,7 +32,7 @@ The result is that the script-writer sees exactly what is added. If they need to
 How to: Activate a Header
 =========================
 
-1.  Open the [Script Editor](Using_the_Script_Editor)
+1.  Open the [Script Editor](/scripting/script-editor)
 2.  Select a language from the Language Menu
 
 That's it! If one or more ScriptHeader(s) exist for the selected language, they will be added automatically to the top of your script.

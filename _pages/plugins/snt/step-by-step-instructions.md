@@ -14,7 +14,7 @@ description: test description
 Tracing
 =======
 
-These instructions assume that you have read the [Overview](SNT__Overview) page, including starting up the plugin, enabling [Cursor Auto-snapping](SNT__Overview#Auto-snapping), and [Auto-tracing](SNT__Overview#Auto-tracing) options. This section is also documented in a [Screencast](SNT__Screencasts#Introduction_To_Tracing).
+These instructions assume that you have read the [Overview](/plugins/snt/manual) page, including starting up the plugin, enabling [Cursor Auto-snapping](SNT__Overview#Auto-snapping), and [Auto-tracing](SNT__Overview#Auto-tracing) options. This section is also documented in a [Screencast](SNT__Screencasts#Introduction_To_Tracing).
 
 Starting A Path
 ---------------
@@ -76,7 +76,7 @@ Two paths can be merged or joined in *Edit Mode*. To do so:
 
 1.  Select a path and enter *Edit Mode* (by right-clicking on the image canvas to access its [Contextual menu](SNT__Overview#Contextual_Menu))
 2.  Activate the node to be merged by hovering over it
-3.  Select the second path by using the {% include key content='G' %} [shortcut](SNT__Key_Shortcuts) and activate the second merging node by hovering over it
+3.  Select the second path by using the {% include key content='G' %} [shortcut](/plugins/snt/key-shortcuts) and activate the second merging node by hovering over it
 4.  Open the contextual menu and select the initial path from the *Connect To (Start Join)* / *Connect To (End Join)* menu.
 
 If both nodes are terminal, the paths are merged together. Otherwise, one path will become a child of the other. Note that one of the nodes must be terminal, to ensure no loops are created.
@@ -159,7 +159,7 @@ If you are happy with this, then you might as well click "Pause" so that your co
 
 -   Save the fill (which will add it to the fill list) by clicking "Stash Progress".
 -   Discard the fill by either clicking "Stop" while filling is in progress or, if you stashed the fill, select it in the fill list and click "Delete Fill(s)".
--   Use the "Image Stack..." button to view the same image stack, but with only the points in that fill preserved. You can choose either a grayscale image or a binary mask. One reason why you might want to do this is that you can then smooth that image and use the [3D Viewer](3D_Viewer) to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [tutorials](Simple_Neurite_Tracer#Tutorials)). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
+-   Use the "Image Stack..." button to view the same image stack, but with only the points in that fill preserved. You can choose either a grayscale image or a binary mask. One reason why you might want to do this is that you can then smooth that image and use the [3D Viewer](/plugins/3d-viewer) to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [tutorials](Simple_Neurite_Tracer#Tutorials)). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
 
 The image stack you would get from the image used in this example might look something like this: <img src="/media/Snt-filling-viewed-2.png" title="fig:Having selected the &quot;Image Stack... -&gt; As Grayscale Image...&quot; option" width="500" alt="Having selected the &quot;Image Stack... -&gt; As Grayscale Image...&quot; option" />
 
@@ -209,7 +209,7 @@ The easiest way to preprocess multiple images is to record a macro for processin
         }
     }
 
-The same process can be accomplished more completely in a script using [ImageJ Ops](ImageJ_Ops). For example, in Jython:
+The same process can be accomplished more completely in a script using [ImageJ Ops](/develop/imagej-ops). For example, in Jython:
 
     # @ImageJ ij
     # @String(value="<HTML>This script applies the Frangi Vesselness filter to all TIFF images in a directory.<br>Only 2D or 3D grayscale images are supported. Processing log is shown in Console.", visibility="MESSAGE") msg

@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Birgit Möller' affiliation=' [Institute of Computer Science](http://www.informatik.uni-halle.de/) at [Martin-Luther-University Halle-Wittenberg](http://www.uni-halle.de/)' forum='bimoelle' github='bimoelle' website='http://www.informatik.uni-halle.de/arbeitsgruppen/mustererkennung/mitarbeiter/moeller/' %} Birgit Möller develops the [MiToBo](MiToBo) (Microscope Image Analysis Toolbox) project, and its core framework [Alida](Alida).
+{% include user-box name='Birgit Möller' affiliation=' [Institute of Computer Science](http://www.informatik.uni-halle.de/) at [Martin-Luther-University Halle-Wittenberg](http://www.uni-halle.de/)' forum='bimoelle' github='bimoelle' website='http://www.informatik.uni-halle.de/arbeitsgruppen/mustererkennung/mitarbeiter/moeller/' %} Birgit Möller develops the [MiToBo](/plugins/mitobo) (Microscope Image Analysis Toolbox) project, and its core framework [Alida](/software/alida).

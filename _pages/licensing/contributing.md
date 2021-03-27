@@ -10,9 +10,9 @@ description: test description
 
 The community encourages discussion about proposed changes on ImageJ's [communication](Communication) channels. Submit your ideas!
 
-Start on the [forum](Forum), searching for discussions related to your contribution to get some context & background. It can also be helpful to [search](Search) for applicable issues and plans across the spectrum of ImageJ resources. The ImageJ community believes that [public discussion is important](Philosophy#Open_source) so that ideas are exposed to healthy alternate points of view rather than lost.
+Start on the [forum](/help), searching for discussions related to your contribution to get some context & background. It can also be helpful to [search](/Help#Searching_ImageJ_resources) for applicable issues and plans across the spectrum of ImageJ resources. The ImageJ community believes that [public discussion is important](Philosophy#Open_source) so that ideas are exposed to healthy alternate points of view rather than lost.
 
-If you are interested in helping to tackle open issues, see the [wish list](Wish_list) page.
+If you are interested in helping to tackle open issues, see the [wish list](/licensing/wish-list) page.
 
 This web site
 -------------
@@ -23,19 +23,19 @@ If you are an ImageJ user, contributing documentation is an easy way to give bac
 
 If you are a plugin author, please consider [documenting your plugin on this site](Distribution#Documenting_your_extension). You can have a look at the page [How\_to\_make\_a\_new\_tutorial](How_to_make_a_new_tutorial).
 
-When in doubt, discuss your ideas publicly on the Image.sc [Forum](Forum)!
+When in doubt, discuss your ideas publicly on the Image.sc [Forum](/help)!
 
 ImageJ2
 -------
 
-Submit patches to [ImageJ2](ImageJ2) via [pull requests](https://help.github.com/articles/using-pull-requests/) against [ImageJ2's source on GitHub](https://github.com/imagej).
+Submit patches to [ImageJ2](/software/imagej2) via [pull requests](https://help.github.com/articles/using-pull-requests/) against [ImageJ2's source on GitHub](https://github.com/imagej).
 
-Note that since ImageJ2 has a modular [architecture](Architecture), it is possible that your change would be more applicable to one of the supporting technologies such as [ImgLib2](https://github.com/imglib), [SCIFIO](https://github.com/scifio) or [SciJava](https://github.com/scijava).
+Note that since ImageJ2 has a modular [architecture](/develop/architecture), it is possible that your change would be more applicable to one of the supporting technologies such as [ImgLib2](https://github.com/imglib), [SCIFIO](https://github.com/scifio) or [SciJava](https://github.com/scijava).
 
 ImageJ1
 -------
 
-Changes to [ImageJ1](ImageJ1) are made by {% include person content='Rasband' %}, who is the sole [ImageJ1](ImageJ1) developer. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [ImageJ1's Release Notes/News](https://imagej.net/notes.html)).
+Changes to [ImageJ1](/software/imagej1) are made by {% include person content='Rasband' %}, who is the sole [ImageJ1](/software/imagej1) developer. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [ImageJ1's Release Notes/News](https://imagej.net/notes.html)).
 
 Methods of getting the patch to Wayne include:
 

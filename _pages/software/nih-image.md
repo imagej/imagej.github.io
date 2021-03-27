@@ -7,8 +7,8 @@ description: test description
 
 {% include image-left name="nih-image" image-path="/media/nih-image-logo.png" %}
 [NIH Image](http://imagej.nih.gov/nih-image/) is the precursor to
-[ImageJ](ImageJ). NIH Image was originally written by
-[Wayne Rasband](Wayne_Rasband) in Pascal for the Macintosh.
+[ImageJ](/about). NIH Image was originally written by
+[Wayne Rasband](/users/rasband) in Pascal for the Macintosh.
 It was first released in 1987, shared on floppy disks.
 
 Publication

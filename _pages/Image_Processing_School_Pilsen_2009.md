@@ -52,7 +52,7 @@ Quantitative image acquisition and analysis: Spectroscopy not photography, simpl
 
 The presentation is available online (PDF) [here!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
 
-Lead instructor: [Dan White](Dan_White)
+Lead instructor: [Dan White](/users/White)
 
 ### Colocalization
 
@@ -60,11 +60,11 @@ Quantitative Image analysis: What you need to know about Colocalization Analysis
 
 The presentation is available online (PDF) [here!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
 
-Lead instructor: [Dan White](Dan_White)
+Lead instructor: [Dan White](/users/White)
 
 ### TrakEM2
 
-[TrakEM2](TrakEM2): image registration and manual segmentation.
+[TrakEM2](/plugins/trakem2): image registration and manual segmentation.
 
 Lead instructor: [Albert Cardona](Albert_Cardona)
 
@@ -105,7 +105,7 @@ Saturday
 
 ### Registration
 
-Image registration: rigid, affine, elastic, maximal warping... ([Register Virtual Stack Slices](Register_Virtual_Stack_Slices), [TrakEM2](TrakEM2), [BUnwarpJ](BUnwarpJ))
+Image registration: rigid, affine, elastic, maximal warping... ([Register Virtual Stack Slices](/plugins/register-virtual-stack-slices), [TrakEM2](/plugins/trakem2), [BUnwarpJ](/plugins/bunwarpj))
 
 Lead instructor: {% include person content='Iarganda' %}
 
