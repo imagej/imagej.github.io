@@ -8,7 +8,7 @@ description: test description
 
 
 {% capture  content %}
-The following article was written by {% include person content='Scrivello' %} as he researched how to write plugins for [ImageJ2](ImageJ2). It is reproduced here as a [News](News) post in the hope that it may help others, particularly during 2016 while the information continues to be most accurate and relevant.
+The following article was written by {% include person content='Scrivello' %} as he researched how to write plugins for [ImageJ2](/software/imagej2). It is reproduced here as a [News](/news) post in the hope that it may help others, particularly during 2016 while the information continues to be most accurate and relevant.
 {% endcapture %}
 {% include info-box content=content %}
 
@@ -21,18 +21,18 @@ Writing ImageJ2 Plugins: A Beginner's Perspective
 Preamble
 --------
 
-Before you consider to write your own [plugin](Plugin) for [ImageJ](ImageJ), please note that writing a [script](Script) has a much lower barrier to entry than Java plugin development.
+Before you consider to write your own [plugin](/fiji/plugins) for [ImageJ](/about), please note that writing a [script](/scripting/script-editor) has a much lower barrier to entry than Java plugin development.
 
-Also you may want to have a look at [Introduction\_into\_Macro\_Programming](Introduction_into_Macro_Programming) as an easy way to automate repetitive tasks with existing tools and plugins.
+Also you may want to have a look at [Introduction\_into\_Macro\_Programming](/scripting/macro) as an easy way to automate repetitive tasks with existing tools and plugins.
 
 Finding information
 -------------------
 
 -   The top-level source of information is [the ImageJ wiki](Welcome).
--   The [Development](Development) page is the best portal for aspiring ImageJ developers.
--   [ImageJ2](ImageJ2) is available at: {% include github org='imagej' repo='imagej' label='imagej/imagej' %}
--   [Fiji](Fiji) is available at: {% include github org='fiji' repo='fiji' label='fiji/fiji' %}
--   For additional help, use the [ImageJ Forum](ImageJ_Forum).
+-   The [Development](/develop) page is the best portal for aspiring ImageJ developers.
+-   [ImageJ2](/software/imagej2) is available at: {% include github org='imagej' repo='imagej' label='imagej/imagej' %}
+-   [Fiji](/fiji) is available at: {% include github org='fiji' repo='fiji' label='fiji/fiji' %}
+-   For additional help, use the [ImageJ Forum](/help).
 
 The search engines will point you to both [https://imagej.net/>](https://imagej.net/) and [<http://developer.imagej.net/>](http://developer.imagej.net/). Avoid using [<http://developer.imagej.net/](http://developer.imagej.net/) for anything these days. It is a legacy site, in the process of being totally phased out. If you are looking for downloads, see the [Downloads](Downloads) page.
 
@@ -42,10 +42,10 @@ Configure your environment
 You will need:
 
 -   Java
--   [IDE](IDE) (for example: [Eclipse](Eclipse), [NetBeans](NetBeans) or [IntelliJ\_IDEA](IntelliJ_IDEA)) is highly recommended
+-   [IDE](/develop/ides) (for example: [Eclipse](/develop/imagej-in-eclipse), [NetBeans](/Developing_ImageJ_in_NetBeans) or [IntelliJ\_IDEA](/Developing_ImageJ_in_IntelliJ_IDEA)) is highly recommended
 -   [Git](Git)
--   [Apache Maven](Maven)
--   [ImageJ2 source code](Source_code) is an optional help
+-   [Apache Maven](/develop/maven)
+-   [ImageJ2 source code](/develop/source) is an optional help
 
 Environments used for testing this guide:
 
@@ -57,13 +57,13 @@ Environments used for testing this guide:
 
 [Git](Git) is a source-code-management system with revision control.
 
-[Maven](Maven) is a build automation tool used primarily for Java projects.
+[Maven](/develop/maven) is a build automation tool used primarily for Java projects.
 
 Both Git and Maven have build in support in current versions of the IDEs mentioned above.
 
-Earlier versions of the ImageJ wiki [mentioned another software tool](Project_management), called [Jenkins](Jenkins), which is according to Wikipedia "an open source continuous integration tool written in Java". This tool was later replaced by a similar working service called [Travis CI](Travis_CI). Tools like Maven and Travis CI make it more complicated for casual developers to understand the workflow of ImageJ Plugin development at the beginning. However, these tools are well maintained by the community so that you will not have to think about them too much initially and they facilitate the programming process. For example, concerning "Travis CI" it is enough to know that "Continuous Integration" means merging all developer working copies to a shared mainline several times a day. Here the work of multiple developers is compiled and tested on a single machine to ensure that the combined code produces a working project at any time. For the development of a single plugin for our personal use we can ignore "Travis CI" for the moment. It will be important if you want to share your plugin in the ImageJ updater or even contribute to the ImageJ project.
+Earlier versions of the ImageJ wiki [mentioned another software tool](/develop/project-management), called [Jenkins](/develop/jenkins), which is according to Wikipedia "an open source continuous integration tool written in Java". This tool was later replaced by a similar working service called [Travis CI](/develop/travis). Tools like Maven and Travis CI make it more complicated for casual developers to understand the workflow of ImageJ Plugin development at the beginning. However, these tools are well maintained by the community so that you will not have to think about them too much initially and they facilitate the programming process. For example, concerning "Travis CI" it is enough to know that "Continuous Integration" means merging all developer working copies to a shared mainline several times a day. Here the work of multiple developers is compiled and tested on a single machine to ensure that the combined code produces a working project at any time. For the development of a single plugin for our personal use we can ignore "Travis CI" for the moment. It will be important if you want to share your plugin in the ImageJ updater or even contribute to the ImageJ project.
 
-All [source code](Source_code) is on [GitHub](GitHub). As ImageJ nowadays is a rather complex project its development is split into several [ImageJ subprojects](Architecture). For a beginner it is hard to understand the interaction of the different available projects which all contribute under the label "[SciJava](SciJava)" to ImageJ2. The nice thing is, that Maven will help to pull in the necessary code from all ImageJ subprojects automatically with the help of configurations files which are supplied by the ImageJ2 developer community. The ImageJ wiki provides a very first overview of the [SciJava ecosystem](Architecture) of ImageJ2.
+All [source code](/develop/source) is on [GitHub](/develop/github). As ImageJ nowadays is a rather complex project its development is split into several [ImageJ subprojects](/develop/architecture). For a beginner it is hard to understand the interaction of the different available projects which all contribute under the label "[SciJava](SciJava)" to ImageJ2. The nice thing is, that Maven will help to pull in the necessary code from all ImageJ subprojects automatically with the help of configurations files which are supplied by the ImageJ2 developer community. The ImageJ wiki provides a very first overview of the [SciJava ecosystem](/develop/architecture) of ImageJ2.
 
 To make Maven work we need so called `pom.xml` files. These configuration file contains information about the project and various configuration details used by Maven to build the project(s). The `pom.xml` files help to organize everything needed to build ImageJ. You can use any Maven-based project you want with that approach, not just ImageJ. So e.g. you can import {% include github org='fiji' repo='fiji' label='fiji/fiji' %} that way, or an individual plugin such as {% include github org='fiji' repo='AnalyzeSkeleton' label='fiji/AnalyzeSkeleton' %}.
 
@@ -81,7 +81,7 @@ Download the current JAR files, e.g. [imagej-2.0.0-SNAPSHOT-all.jar](http://jenk
 
 You could also use the JAR file to compile your own plugins, which are distributed in the `Fiji.app/plugins` directory.
 
-If you download Fiji via [Fiji/Downloads](Fiji_Downloads) then take care to select the right version of Fiji. The most prominent download option on top of the page is compiled with JDK 1.8, while you can download so-called "life-line" versions at the bottom of the page which are compiled with JDK 1.6 to ensure compatibility with older plugins not supported by the ImageJ2 Team. For details [look here](2015-12-22_-_The_road_to_Java_8).
+If you download Fiji via [Fiji/Downloads](Fiji_Downloads) then take care to select the right version of Fiji. The most prominent download option on top of the page is compiled with JDK 1.8, while you can download so-called "life-line" versions at the bottom of the page which are compiled with JDK 1.6 to ensure compatibility with older plugins not supported by the ImageJ2 Team. For details [look here](/news/2015-12-22_-_The_road_to_Java_8).
 
 In any case you need to open a new project, assign the project name, its directory location and add the JAR files as libraries.
 
@@ -98,7 +98,7 @@ Using JAR works for local development, but it will cause you various problems la
 Build ImageJ with NetBeans, Git and Maven
 -----------------------------------------
 
-Using Maven to develop your plugins is a much better approach. You will not have to commit any JAR files to source control. You can pin your code to fixed, known versions of its dependencies that will provide [reproducible builds](Reproducible_builds) for many years to come.
+Using Maven to develop your plugins is a much better approach. You will not have to commit any JAR files to source control. You can pin your code to fixed, known versions of its dependencies that will provide [reproducible builds](/Architecture#Reproducible_builds) for many years to come.
 
 Getting the ImageJ sources in NetBeans should be as simple as importing the source from the Git repository.
 
@@ -125,7 +125,7 @@ Do not expect to find the ImageJ sources after cloning {% include github org='im
 
 If you want to look at the source code to study how to program image analysis algorithms then you will need to clone other GitHub projects.
 
-The repository {% include github org='imagej' repo='imagej1' label='imagej/imagej1' %}, for example, contains the source code of [ImageJ 1.x](ImageJ_1.x), but it does not use Maven. The [ImageJA](ImageJA) project at {% include github org='imagej' repo='ImageJA' label='imagej/ImageJA' %} is a Mavenized version of ImageJ 1.x with a clean Git history. For curious people like me: the "A" in ImageJA was originally used for "Applet" and to differentiate the project from ImageJ itself.
+The repository {% include github org='imagej' repo='imagej1' label='imagej/imagej1' %}, for example, contains the source code of [ImageJ 1.x](/software/imagej1), but it does not use Maven. The [ImageJA](/software/imageja) project at {% include github org='imagej' repo='ImageJA' label='imagej/ImageJA' %} is a Mavenized version of ImageJ 1.x with a clean Git history. For curious people like me: the "A" in ImageJA was originally used for "Applet" and to differentiate the project from ImageJ itself.
 
 {% include info-box content='Side note: I am not expert NetBeans user, therefore I could not figure out another way:
 
@@ -167,11 +167,11 @@ Details of Writing Plugins
 Tutorials
 ---------
 
--   For ImageJ 1.x: [Introduction into Developing Plugins](Introduction_into_Developing_Plugins) and [Example Legacy Plugin](https://github.com/imagej/example-legacy-plugin)
--   For ImageJ2: [Writing plugins](Writing_plugins) (Note: The instruction "Update your parent POM" in [Writing plugins\#Update\_your\_POM](Writing_plugins#Update_your_POM) just means that the version number should be adjusted to reflect the latest available version of the parent POM file on GitHub.)
--   [ImgLib2 Examples](ImgLib2_Examples)
--   [Developing ImgLib2](Developing_ImgLib2)
--   [ImageJ Ops](ImageJ_Ops)
+-   For ImageJ 1.x: [Introduction into Developing Plugins](/develop/ij1-plugins) and [Example Legacy Plugin](https://github.com/imagej/example-legacy-plugin)
+-   For ImageJ2: [Writing plugins](/develop/plugins) (Note: The instruction "Update your parent POM" in [Writing plugins\#Update\_your\_POM](Writing_plugins#Update_your_POM) just means that the version number should be adjusted to reflect the latest available version of the parent POM file on GitHub.)
+-   [ImgLib2 Examples](/imglib2/examples)
+-   [Developing ImgLib2](/imglib2/developing)
+-   [ImageJ Ops](/develop/imagej-ops)
 
 Getting Started
 ---------------
@@ -211,7 +211,7 @@ The imagej/tutorials are structured as individual projects. The files can live i
 "One file to bind them all": parent `pom.xml` files
 ---------------------------------------------------
 
-As the projects get more complex, read about the [Maven component structure of ImageJ/SciJava](Architecture#Maven_component_structure) and something which is called "[Bill of Materials](Bill_of_Materials)" or just BOM. A "BOM" is a list of dependencies at particular versions which are believed to be mutually compatible. The complexity of ImageJ/SciJava's dependencies is a tribute to the different organizations which are contributing with their independent projects to ImageJ/SciJava. There are several "parent" pom.xml files which are independently maintained for example by the ImageJ, [ImgLib2](ImgLib2) or [SCIFIO](SCIFIO) organizations. Each of these organizations has developed source code components which depend on components within the other two organizations. This complicated network of dependencies is managed with the help of the parent `pom.xml` files, i.e. `pom-imagej`, `pom-fiji`, `pom-imglib2` etc. (see a list of all on the [ImageJ Architecture page](Architecture#Maven_component_structure)).
+As the projects get more complex, read about the [Maven component structure of ImageJ/SciJava](Architecture#Maven_component_structure) and something which is called "[Bill of Materials](/Architecture#Bill_of_Materials)" or just BOM. A "/Architecture#Bill_of_Materials" is a list of dependencies at particular versions which are believed to be mutually compatible. The complexity of ImageJ/SciJava's dependencies is a tribute to the different organizations which are contributing with their independent projects to ImageJ/SciJava. There are several "parent" pom.xml files which are independently maintained for example by the ImageJ, [ImgLib2](/imglib2) or [SCIFIO](/software/scifio) organizations. Each of these organizations has developed source code components which depend on components within the other two organizations. This complicated network of dependencies is managed with the help of the parent `pom.xml` files, i.e. `pom-imagej`, `pom-fiji`, `pom-imglib2` etc. (see a list of all on the [ImageJ Architecture page](Architecture#Maven_component_structure)).
 
 Initially I could not figure out where to put one of these `pom-xxx` files to use it as parent POM. I erroneously thought it should be downloaded from GitHub and copied somewhere in my ImageJ projects folders. However, one does not have to take care of the parent POM file at all! You just have to refer to it in the local `pom.xml` file of your intended plugin project in the section <parent>.
 
@@ -268,7 +268,7 @@ Further readings
 
 -   [README.md](https://github.com/imagej/minimal-ij1-plugin/blob/master/README.md) of the [Minimal Maven based ImageJ 1.x plugin](https://github.com/imagej/minimal-ij1-plugin)
 -   Learn more about [ImageJ/SciJava dependencies](Maven#How_to_find_a_dependency.27s_groupId.2FartifactId.2Fversion_.28GAV.29.3F)
--   [ImageJ Maven FAQ](Maven_-_Frequently_Asked_Questions)
+-   [ImageJ Maven FAQ](/develop/maven-faq)
 
 Other References
 ================
@@ -280,7 +280,7 @@ Other References
 <!-- -->
 
 -   Git tutorial: [Git in 15 min](https://try.github.io/levels/1/challenges/1)
--   Web interface for git: [GitHub](GitHub)
+-   Web interface for git: [GitHub](/develop/github)
 
 and all other links cited in the text!
 
@@ -322,7 +322,7 @@ Where can I find example plugins?
 What is the directory structure for a plugin?
 ---------------------------------------------
 
-This text was adapted from the [Maven](Maven) page.
+This text was adapted from the [Maven](/develop/maven) page.
 
 The directory structure of a very simple demo project looks like:
 
@@ -365,7 +365,7 @@ More information about Maven's standard directory layout can be found on the [Ma
 What does a minimal `pom.xml` look like?
 ----------------------------------------
 
-This text was adapted from the [Maven](Maven) page.
+This text was adapted from the [Maven](/develop/maven) page.
 
 This is a very simple example:
 
@@ -472,20 +472,20 @@ From [ImageJ Forum Thread 1151](http://forum.imagej.net/t/java3d-issue-bonej-wit
 
 The current situation with respect to Java 6 vs. Java 8, as well as the ramifications there regarding Java 3D, is basically:
 
--   If you download "vanilla" [ImageJ2](ImageJ2) (author's note: in the context of software "vanilla" means software used as originally distributed without any customizations or updates applied to them) from the [Downloads](Downloads) page, you get a "Java 8" version from February 2016.
--   If you [download the latest Fiji](Fiji_Downloads) you get the newest "Java 8" version—i.e., with Java-8 update site. This includes the Java 3D 1.6 (SciJava fork) along with all Fiji plugins (except for [TrakEM2](TrakEM2)) updated to work with it.
--   If you [download a Life-Line version of Fiji](Fiji_Downloads#Life-Line_Fiji_versions) and fully update it, you'll have the newest (probably the final) "Java 6" version including the latest Java-6-compatible plugin versions. No Java 3D until you run the [3D Viewer](3D_Viewer) for the first time and it gets auto-installed. Those plugin versions are frozen: the ImageJ/Fiji developers are in the process of migrating everything to Java 8, and are only uploading new versions of everything to the Java-8 update site now, to avoid breaking the stable Java-6 versions of everything.
+-   If you download "vanilla" [ImageJ2](/software/imagej2) (author's note: in the context of software "vanilla" means software used as originally distributed without any customizations or updates applied to them) from the [Downloads](Downloads) page, you get a "Java 8" version from February 2016.
+-   If you [download the latest Fiji](Fiji_Downloads) you get the newest "Java 8" version—i.e., with Java-8 update site. This includes the Java 3D 1.6 (SciJava fork) along with all Fiji plugins (except for [TrakEM2](/plugins/trakem2)) updated to work with it.
+-   If you [download a Life-Line version of Fiji](Fiji_Downloads#Life-Line_Fiji_versions) and fully update it, you'll have the newest (probably the final) "Java 6" version including the latest Java-6-compatible plugin versions. No Java 3D until you run the [3D Viewer](/plugins/3d-viewer) for the first time and it gets auto-installed. Those plugin versions are frozen: the ImageJ/Fiji developers are in the process of migrating everything to Java 8, and are only uploading new versions of everything to the Java-8 update site now, to avoid breaking the stable Java-6 versions of everything.
 
 Ultimately, the ImageJ/Fiji developers will push all the Java-8 stuff back to the core ImageJ and Fiji sites. But not until the ImageJ/Fiji developers add a launch check that verifies your version of Java is new enough—and if not, tells you how to upgrade it. Ihe ImageJ/Fiji developers will definitely archive the final Java-6-compatible versions of ImageJ and Fiji when they complete that transition.
 
 Note: You can check the Java version as [described here](Troubleshooting#Checking_the_Java_version).
 
-More information can be read here: [2015-12-22 - The road to Java 8](2015-12-22_-_The_road_to_Java_8)
+More information can be read here: [2015-12-22 - The road to Java 8](/news/2015-12-22_-_The_road_to_Java_8)
 
 Make a redistributable package from a locally customized Fiji
 -------------------------------------------------------------
 
-Turn your local customized Fiji into a redistributable package that can then be installed on other machines e.g. in your lab: use the [Make Fiji Package](Make_Fiji_Package) command.
+Turn your local customized Fiji into a redistributable package that can then be installed on other machines e.g. in your lab: use the [Make Fiji Package](/plugins/make-fiji-package) command.
 
 Tests wit JUnit5
 ----------------
@@ -526,7 +526,7 @@ In IntelliJ IDEA you may want to make sure that the JUnit5 Plugin is activated. 
 Continuous Integration with Travis CI
 -------------------------------------
 
-If you want to share your plugin in the ImageJ updater automatically [Automatic Update Site Uploads](Automatic_Update_Site_Uploads), contribute to the ImageJ project [Fiji/Contribution requirements](Fiji_Contribution_requirements) or work in a team with multiple developers, you may want to build, test and deploy your Plugin with [Travis CI](Travis_CI). If you are hosting your code in a public [GitHub](GitHub) repository this service is free for you. After signing in with your [GitHub](GitHub) account you can activate single repositories for [Travis CI](Travis_CI). Travis then automatically clones your repository with every change and runs a build according to the `.travis.yml` configuration file in your root directory.
+If you want to share your plugin in the ImageJ updater automatically [Automatic Update Site Uploads](/update-sites/automatic-uploads), contribute to the ImageJ project [Fiji/Contribution requirements](/fiji/contribution-requirements) or work in a team with multiple developers, you may want to build, test and deploy your Plugin with [Travis CI](/develop/travis). If you are hosting your code in a public [GitHub](/develop/github) repository this service is free for you. After signing in with your [GitHub](/develop/github) account you can activate single repositories for [Travis CI](/develop/travis). Travis then automatically clones your repository with every change and runs a build according to the `.travis.yml` configuration file in your root directory.
 
         # specify compiler
         language: java

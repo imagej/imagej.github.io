@@ -12,18 +12,18 @@ description: test description
 Introduction
 ------------
 
-This third article in the series dedicated to extending [TrackMate](TrackMate) deals with spot feature analyzer. This is the last of the three kind of feature analyzers you can create, and it focuses on spots, or detections.
+This third article in the series dedicated to extending [TrackMate](/plugins/trackmate) deals with spot feature analyzer. This is the last of the three kind of feature analyzers you can create, and it focuses on spots, or detections.
 
 Spot features are typically calculated from the spot location and the image data. For instance, there is a spot feature that reports the mean intensity within the spot radius. You need to have the spot location, its radius and the image data to compute it.
 
-In this tutorial, we will generate an analyzer that is not directly calculated from the image data. This will enable us to skip over introducing [ImgLib2](ImgLib2) API, which would have considerably augmented the length of this series. But this choice does not only aim at nurturing my laziness: We will make our feature **depend on other features** which will allow us to introduce **analyzers priority**.
+In this tutorial, we will generate an analyzer that is not directly calculated from the image data. This will enable us to skip over introducing [ImgLib2](/imglib2) API, which would have considerably augmented the length of this series. But this choice does not only aim at nurturing my laziness: We will make our feature **depend on other features** which will allow us to introduce **analyzers priority**.
 
 But before this, let's visit the spot feature analyzers specificities.
 
 Spot analyzers and spot analyzer factories
 ------------------------------------------
 
-In the two previous articles we dealt with [edge](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate) and [track](How_to_write_your_own_track_feature_analyzer_algorithm_for_TrackMate) analyzers. We could make them in a single class, and this class embedded both the code for
+In the two previous articles we dealt with [edge](/plugins/trackmate/custom-edge-feature-analyzer-algorithms) and [track](/plugins/trackmate/custom-track-feature-analyzer-algorithms) analyzers. We could make them in a single class, and this class embedded both the code for
 
 -   TrackMate integration (feature names, dimensions, declaration, etc...);
 -   and actual feature calculation.

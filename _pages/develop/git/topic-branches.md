@@ -65,7 +65,7 @@ Resolving conflicts
 
 Note: when cherry-picking commits, conflicts can arise. These are marked with conflict markers ("&lt;&lt;&lt;" ... "===" ... "&gt;&gt;&gt;").
 
-You will have to edit the files, picking what changes you want (the first part is what the version is in the current branch, the second part is what the cherry-picked commit wanted to introduce). See [Git Conflicts](Git_Conflicts) for details how to resolve the merge conflicts.
+You will have to edit the files, picking what changes you want (the first part is what the version is in the current branch, the second part is what the cherry-picked commit wanted to introduce). See [Git Conflicts](/develop/git/conflicts) for details how to resolve the merge conflicts.
 
 After editing the files, stage them for commit and commit, with
 
@@ -102,7 +102,7 @@ after rebase:
 
 In other words, all the commits in topic234 were rewritten as if they were created on top of the current tip of the *master* branch.
 
-As you see, the branch *topic234* is rewritten, and does not share any interesting history with the former tip of the *topic234* branch. (You can access the former tip with *topic234@{1}*, see [Git\_reflogs](Git_reflogs).)
+As you see, the branch *topic234* is rewritten, and does not share any interesting history with the former tip of the *topic234* branch. (You can access the former tip with *topic234@{1}*, see [Git\_reflogs](/develop/git/reflogs).)
 
 So, to incorporate your topic branch into the *master* branch with a rebase, you would do the following:
 
@@ -148,7 +148,7 @@ Save that, and exit the editor. The rebase will be started and amend the first c
 
 Note: If you want to default to the *autosquash* mode, you can tell Git so: *git config --global rebase.autosquash true* (you only need to do this once).
 
-Note: as with cherry-picking and merging, conflicts can arise. You will [have to resolve them](Merge_Conflicts), "git add" the resolved files, but you do not need to commit; calling
+Note: as with cherry-picking and merging, conflicts can arise. You will [have to resolve them](/develop/git/conflicts), "git add" the resolved files, but you do not need to commit; calling
 
 `$ git rebase --continue`
 
@@ -170,7 +170,7 @@ Reflogs and rebases
 
 A rebase will work on a *detached* HEAD. In other words, while the rebase is in progress, no branch will be updated, but a temporary branch will grow, and only when the rebase is finished successfully, the originally current branch will be updated.
 
-This means that you can refer to the state \_before\_ the rebase by "branch-name@{1}" (see [Git\_reflogs](Git_reflogs)).
+This means that you can refer to the state \_before\_ the rebase by "branch-name@{1}" (see [Git\_reflogs](/develop/git/reflogs)).
 
 Note: the same is not true for "HEAD@{1}": the reflog for "HEAD" follows every single revision that was current at some stage in the repository.
 

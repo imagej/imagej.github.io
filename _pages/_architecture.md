@@ -7,7 +7,7 @@ use_math: false
 description: This page describes the technical structure of SciJava and ImageJ projects. For maximum benefit, we suggest readers familiarize themselves with Maven, Git and GitHub before reading the sections here.
 ---
 
-{% include sidebar title="Architecture" content="Definitions, SciJava project structure, Organizational structure, Git repositories, Maven component structure, Bill of Materials, Core libraries, Reproducible build, Advantages of reproducible builds, Using snapshot couplings during development" %}
+{% include sidebar title="/develop/architecture" content="Definitions, SciJava project structure, Organizational structure, Git repositories, Maven component structure, Bill of Materials, Core libraries, Reproducible build, Advantages of reproducible builds, Using snapshot couplings during development" %}
 
 This page describes the technical structure of SciJava and ImageJ projects. For maximum benefit, we suggest readers familiarize themselves with Maven, Git and GitHub before reading the sections here.
 
@@ -157,7 +157,7 @@ To that end, it should be obvious that researchers **need** to have the ability 
 
 A software version (or build) is called **reproducible** if it is easy to regenerate the exact same software application from the source code.
 
-For example, you can refer to "ImageJ 1.49g" as a _reproducible build_, or to _Sholl Analysis 3.4.3_, while referring to "ImageJ" is irreproducible.
+For example, you can refer to "ImageJ 1.49g" as a _reproducible build_, or to _Sholl Analysis 3.4.3_, while referring to "/about" is irreproducible.
 
 It gets more subtle when making heavy use of software libraries (sometimes called _dependencies_). It is known, for example, that many plugins in the now-defunct MacBiophotonics distribution of ImageJ worked fine with ImageJ 1.42l, but stopped working somewhere between that version and ImageJ 1.44e. That is: referring to, say, _the Colocalisation Analysis plugin_ does **not** refer to a reproducible build because it is very hard to regenerate a working Colocalisation Analysis and ImageJ 1.x version that could be used to verify previously published results.
 
@@ -213,7 +213,7 @@ In the case of Eclipse, you may need to "Update Maven project" in order to see t
 
 Either way, **_be sure to work on a topic branch while developing code in this fashion_**. You will need to clean up your Git history afterwards before merging things to the `master` branch, in order to achieve reproducible builds.
 
-{% include anchor content="Versioning" %}
+{% include anchor content="/develop/versioning" %}
 
 SciJava components use the Semantic Versioning system. This scheme communicates information about the backwards compatibility (or lack thereof) between versions of each individual software component. In a nutshell:
 

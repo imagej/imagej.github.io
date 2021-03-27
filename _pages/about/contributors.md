@@ -9,9 +9,9 @@ description: test description
 
 {% include info-box content='This page describes who ""contributes"" to [SciJava](SciJava) projects.
 
--   For information on who ""maintains"" these projects, see [Governance](Governance).
--   For information on how ImageJ projects are ""funded"", see [Funding](Funding).
--   For information on ""citing"" these projects, see [Citing](Citing).' %}
+-   For information on who ""maintains"" these projects, see [Governance](/about/governance).
+-   For information on how ImageJ projects are ""funded"", see [Funding](/licensing/funding).
+-   For information on ""citing"" these projects, see [Citing](/licensing/citing).' %}
 
 
 # Who we are
@@ -32,10 +32,10 @@ Note: This list is only irregularly updated.
 -   [Michael Berthold](http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/)[5][6] (KNIME)
 -   [Jason Swedlow](http://www.lifesci.dundee.ac.uk/people/jason-swedlow)[7][8] (OME)
 
-### {% include logo content='ImageJ' size='32px' %}[ImageJ](ImageJ)
+### {% include logo content='ImageJ' size='32px' %}[ImageJ](/about)
 
--   {% include person content='Rasband' %}[9] (lead, [ImageJ 1.x](ImageJ_1.x))
--   {% include person content='Rueden' %}[10] (lead, [ImageJ2](ImageJ2))
+-   {% include person content='Rasband' %}[9] (lead, [ImageJ 1.x](/software/imagej1))
+-   {% include person content='Rueden' %}[10] (lead, [ImageJ2](/software/imagej2))
 -   {% include person content='Dietzc' %}[11][12]
 -   {% include person content='Bnorthan' %}[13]
 -   {% include person content='Hinerm' %}[14] (Sep 2010-Jun 2016)
@@ -48,7 +48,7 @@ Note: This list is only irregularly updated.
 -   {% include person content='Lentz' %}[21] (Nov 2009-Feb 2011)
 -   See also [ImageJ forum heroes](http://forum.imagej.net/users)
 
-### {% include logo content='ImgLib2' size='32px' %}[ImgLib2](ImgLib2)
+### {% include logo content='ImgLib2' size='32px' %}[ImgLib2](/imglib2)
 
 -   {% include person content='Pietzsch' %}[22] (lead)
 -   {% include person content='StephanP' %}[23][24]
@@ -56,7 +56,7 @@ Note: This list is only irregularly updated.
 
 
 
-### {% include logo content='Fiji' size='32px' %}[Fiji](Fiji)
+### {% include logo content='Fiji' size='32px' %}[Fiji](/fiji)
 
 -   {% include person content='Rueden' %}[27] (lead)
 -   {% include person content='JeanYvesTinevez' %}[28]
@@ -81,24 +81,24 @@ Note: This list is only irregularly updated.
 -   {% include person content='Pietzsch' %}[48] (lead)
 -   {% include person content='StephanP' %}[49][50]
 
-### [TrakEM2](TrakEM2)
+### [TrakEM2](/plugins/trakem2)
 
 -   {% include person content='Albertcardona' %}[51][52] (lead)
 -   {% include person content='Saalfeld' %}[53][54]
 
 
 
-### {% include logo content='SCIFIO' size='32px' %}[SCIFIO](SCIFIO)
+### {% include logo content='SCIFIO' size='32px' %}[SCIFIO](/software/scifio)
 
 -   {% include person content='Rueden' %}[55] (lead)
 -   {% include person content='Hinerm' %}[56] (former, founder)
 
-### {% include logo content='CellProfiler' size='32px' %}[CellProfiler](CellProfiler)
+### {% include logo content='CellProfiler' size='32px' %}[CellProfiler](/software/cellprofiler)
 
 -   {% include person content='0x00B1' %}[57] (lead)
 -   {% include person content='Leek' %}[58] (former)
 
-### {% include logo content='KNIME' size='32px' %}[KNIME Image Processing](KNIME)
+### {% include logo content='KNIME' size='32px' %}[KNIME Image Processing](/software/knime)
 
 -   {% include person content='Dietzc' %}[59][60] (lead)
 -   {% include person content='hornm' %}[61]
@@ -106,7 +106,7 @@ Note: This list is only irregularly updated.
 -   {% include person content='Squareys' %}[64][65]
 -   {% include person content='Gab1one' %}[66][67]
 
-### {% include logo content='OME' size='32px' %}[OME](OME)
+### {% include logo content='OME' size='32px' %}[OME](/software/omero)
 
 -   {% include person content='Moore' %}[68][69] (co-lead)
 -   {% include person content='jburel' %}[70] (co-lead)
@@ -124,13 +124,13 @@ The specific plugin maintainers can be found at the [ maintainer page](Maintaine
 
 ### Special thanks
 
-Our deep thanks to {% include person content='Rasband' %}, author of [ImageJ1](ImageJ1), for all his support and patience!
+Our deep thanks to {% include person content='Rasband' %}, author of [ImageJ1](/software/imagej1), for all his support and patience!
 
 
 
 ### Institutions
 
-[1] [Laboratory for Optical and Computation](LOCI) (LOCI) at [UW-Madison](http://wisc.edu/)
+[1] [Laboratory for Optical and Computation](/orgs/loci) (LOCI) at [UW-Madison](http://wisc.edu/)
 
 [2] [Max Planck Institute of Molecular Cell Biology and Genetics](http://mpi-cbg.de/) (MPI-CBG) at Dresden
 

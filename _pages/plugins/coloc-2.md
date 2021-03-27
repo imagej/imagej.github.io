@@ -12,7 +12,7 @@ Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs
 
 Coloc 2 does NOT perform object based colocalization measurements, where objects are first segmented from the image, then their spatial relationships like overlap etc. are measured. This complementary approach is implemented in many ways elsewhere.
 
-<span style="color:red">There are many nuances and pitfalls to colocalization analysis. As such, we strongly recommend you read the [Colocalization Analysis](Colocalization_Analysis) section of the [Cookbook](Cookbook) before attempting to use Coloc 2!</span>
+<span style="color:red">There are many nuances and pitfalls to colocalization analysis. As such, we strongly recommend you read the [Colocalization Analysis](/techniques/colocalization-analysis) section of the [Cookbook](/cookbook) before attempting to use Coloc 2!</span>
 
 How to use Coloc 2
 ==================
@@ -60,7 +60,7 @@ Pitfalls of the Manders and Costes methods
 The auto threshold calculation method can fail if fed inappropriate information
 -------------------------------------------------------------------------------
 
-That means it does not like images with high zero offset, where no light detected still gives a large non zero pixel value. For instance, from a digital camera's zero offset/bias, or a confocal PMT's offset when incorrectly set. Also, a high, flat non specific background causes the same problem. These all add a constant number to the intensity values of each pixel, offsetting and obscuring the true proportionality relationship with the "concentration" of the fluorescent dye detected at each pixel. If pixels that contain no real (specific) signal have large intensity values, the algorithm, not knowing about the non zero intensity offset in all pixels, assumes the offset is real signal to be dealt with, and can reach a result for the thresholds where one or both of them is below the value of the lowest intensity value present in that colour channel of the image. This means that ALL of that channel's pixels are considered to be colocalised, then the Manders' Coefficients that you get will reflect that aberrant, unrealistic situation. In these cases, the background and/or offset should be carefully removed/subtracted before running the Coloc 2 or [Colocalization Threshold](Colocalization_Threshold) plugin. The images below are an example of this situation, using the badly behaved data set: [150707\_WTstack.lsm](https://fiji.sc/samples/150707_WTstack.lsm). Note that the values for M1 and tM1 are the same! This should not be the case. You can see the green channel threshold is wrongly set below the intensity where the image data intensities actually start.
+That means it does not like images with high zero offset, where no light detected still gives a large non zero pixel value. For instance, from a digital camera's zero offset/bias, or a confocal PMT's offset when incorrectly set. Also, a high, flat non specific background causes the same problem. These all add a constant number to the intensity values of each pixel, offsetting and obscuring the true proportionality relationship with the "concentration" of the fluorescent dye detected at each pixel. If pixels that contain no real (specific) signal have large intensity values, the algorithm, not knowing about the non zero intensity offset in all pixels, assumes the offset is real signal to be dealt with, and can reach a result for the thresholds where one or both of them is below the value of the lowest intensity value present in that colour channel of the image. This means that ALL of that channel's pixels are considered to be colocalised, then the Manders' Coefficients that you get will reflect that aberrant, unrealistic situation. In these cases, the background and/or offset should be carefully removed/subtracted before running the Coloc 2 or [Colocalization Threshold](/plugins/colocalization-threshold) plugin. The images below are an example of this situation, using the badly behaved data set: [150707\_WTstack.lsm](https://fiji.sc/samples/150707_WTstack.lsm). Note that the values for M1 and tM1 are the same! This should not be the case. You can see the green channel threshold is wrongly set below the intensity where the image data intensities actually start.
 
 Notice: the image contains large areas of background, with similar low values of pixel intensities in both channels. This means there is strong correlation in the background areas, which interferes with the interesting biological correlation in the high signal areas where the biology is located. This means it is important to set a biologically relevant region of interest (ROI) and not analyse the whole image. We must avoid analyzing the highly correlated, but uninteresting, background areas. See the section below...
 
@@ -90,7 +90,7 @@ Whether or not to consider zero - zero pixels as part of the interesting data fo
 Other pitfalls
 --------------
 
-Please see the [Colocalization Analysis](Colocalization_Analysis) page for further discussion of precautions.
+Please see the [Colocalization Analysis](/techniques/colocalization-analysis) page for further discussion of precautions.
 
 Release Notes, Newly Added Features and Squashed Bugs
 -----------------------------------------------------

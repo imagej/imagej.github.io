@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-Empty [Scijava-parallel](Scijava-parallel)
+Empty [Scijava-parallel](/software/scijava-parallel)

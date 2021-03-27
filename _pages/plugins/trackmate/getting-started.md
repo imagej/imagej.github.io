@@ -9,9 +9,9 @@ description: test description
 Introduction
 ------------
 
-This tutorial is the starting point for [TrackMate](TrackMate) users. It explains how it works by walking you through a simple case, using an easy image.
+This tutorial is the starting point for [TrackMate](/plugins/trackmate) users. It explains how it works by walking you through a simple case, using an easy image.
 
-The [TrackMate](TrackMate) plugin provides a way to semi-automatically segment spots or roughly spherical objects from a 2D or 3D image, and track them over time. It follows the classical scheme, where the segmentation step and the particle-linking steps are separated. Therefore each step is handled in the user interface by a specific panel, and you will go back in forth through them. Also, TrackMate has a fishing net with small holes: it will find as much spots as it can, even the ones you are not interested. So there is a step to filter them out before tracking. In these views, TrackMate resembles a bit to the Spot Segmentation Wizard of [Imaris™](http://www.bitplane.com/go/products/imaris).
+The [TrackMate](/plugins/trackmate) plugin provides a way to semi-automatically segment spots or roughly spherical objects from a 2D or 3D image, and track them over time. It follows the classical scheme, where the segmentation step and the particle-linking steps are separated. Therefore each step is handled in the user interface by a specific panel, and you will go back in forth through them. Also, TrackMate has a fishing net with small holes: it will find as much spots as it can, even the ones you are not interested. So there is a step to filter them out before tracking. In these views, TrackMate resembles a bit to the Spot Segmentation Wizard of [Imaris™](http://www.bitplane.com/go/products/imaris).
 
 The test image
 --------------
@@ -309,7 +309,7 @@ The end or so
 
 We are now close to the end of a typical workflow for a tracking problem. The panel you see now is the one that recapitulates display option. You can set spot color by feature, hide them, show their name, etc... Find out what they do, display options are pretty much self-explanatory.
 
-The [TrackScheme](TrackScheme) button launches a module that allow manually editing tracks, and performing analysis on them. It is the subject of another tutorial.
+The [TrackScheme](/plugins/trackmate/trackscheme) button launches a module that allow manually editing tracks, and performing analysis on them. It is the subject of another tutorial.
 
 If you press **Next**, you will see that there is still two panels after this one. The first one allows to plot any kind of feature as a function of another one. TrackMate deals with 3 kind of features: spot, link and track feature, depending on where it makes sense to compute them. For instance, instantaneous velocity is computed over a link (between two spots linked in a track), so you will find it on the **Links** tab. The **+** and **-** buttons allow you add several features on the Y-axis, and they will be pooled on the same graph or not, depending on the dimensionality of the features.
 

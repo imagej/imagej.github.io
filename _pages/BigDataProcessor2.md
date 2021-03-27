@@ -20,6 +20,6 @@ BigDataProcessor2 is a FIJI plugin for efficient inspection and processing of bi
 Installation
 ------------
 
-Please install the update site: http://sites.imagej.net/BigDataProcessor/. For details on how to install an update site click [here](Following_an_update_site).
+Please install the update site: http://sites.imagej.net/BigDataProcessor/. For details on how to install an update site click [here](/update-sites/following).
 
 After installation, please select Plugins &gt; BigDataProcessor2 &gt; BigDataProcessor2 from the main menu!

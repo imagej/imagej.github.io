@@ -14,6 +14,6 @@ description: test description
 
 This plugin is described in detail on the [BIG website](http://bigwww.epfl.ch/thevenaz/mosaicj/).
 
-[Enable the BIG-EPFL update site](Following_an_update_site) to gain access to the MosaicJ plugin. Find it in the menus at {% include bc content='Plugins | Stitching | MosaicJ'%}.
+[Enable the BIG-EPFL update site](/update-sites/following) to gain access to the MosaicJ plugin. Find it in the menus at {% include bc content='Plugins | Stitching | MosaicJ'%}.
 
 

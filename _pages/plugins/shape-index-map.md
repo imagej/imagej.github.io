@@ -19,7 +19,7 @@ description: test description
 Explanation
 -----------
 
-The [shape index](http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=6820324) describes the surface topology of the image interpreted as a [height field](3D_Surface_Plot):
+The [shape index](http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=6820324) describes the surface topology of the image interpreted as a [height field](/plugins/3d-surface-plot):
 
 | shape index | 1   | 0.75 | 0.5   | 0.25         | 0      | -0.25      | -0.5 | -0.75  | -1  |
 |-------------|-----|------|-------|--------------|--------|------------|------|--------|-----|

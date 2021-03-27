@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Andrew McCall' affiliation='University at Buffalo' forum='amccall' github='andmccall' scholar='YH8PjvkAAAAJ' %}Andrew McCall is the director of the [Optical Imaging and Analysis Facility](http://dental.buffalo.edu/research/centers-and-facilities/optical-imaging-and-analysis.html) at the University at Buffalo. He is the author of [Colocalization\_by\_Cross\_Correlation](Colocalization_by_Cross_Correlation).
+{% include user-box name='Andrew McCall' affiliation='University at Buffalo' forum='amccall' github='andmccall' scholar='YH8PjvkAAAAJ' %}Andrew McCall is the director of the [Optical Imaging and Analysis Facility](http://dental.buffalo.edu/research/centers-and-facilities/optical-imaging-and-analysis.html) at the University at Buffalo. He is the author of [Colocalization\_by\_Cross\_Correlation](/plugins/colocalization-by-cross-correlation).

@@ -6,7 +6,7 @@ categories: News
 description: test description
 ---
 
-The deadlines for the [ challenge on EM (machine-learning-based) automatic segmentation](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012) have been extended due to technical issues.
+The deadlines for the [ challenge on EM (machine-learning-based) automatic segmentation](/events/Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012) have been extended due to technical issues.
 
 The new important dates are:
 

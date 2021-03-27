@@ -10,11 +10,11 @@ By popular (AAAAaaaaahem - Cough!) demand the Fiji presentation from the ImageJ 
 
 During those tutorials, several Fiji Wiki page tutorials were used, which were created for teaching at that event:
 
-[SpatialCalibration](SpatialCalibration)
+[SpatialCalibration](/Spatial_Calibration)
 
-[ColocalizationAnalysis](ColocalizationAnalysis)
+[ColocalizationAnalysis](/techniques/colocalization-analysis)
 
-[DetectInformationLoss](DetectInformationLoss)
+[DetectInformationLoss](/Detect_Information_Loss)
 
 Some other tutorial are also already present there.
 

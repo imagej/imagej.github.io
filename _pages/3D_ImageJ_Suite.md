@@ -27,7 +27,7 @@ The pdf of the [NEUBIAS academy](http://eubias.org/NEUBIAS/training-schools/neub
 
 The associated video is available on [YouTube](https://www.youtube.com/watch?v=OPC2kP-5By4). The QAs are available on the [image.sc forum](https://forum.image.sc/t/neubias-academy-home-webinar-introduction-to-3d-analysis-with-3d-imagej-suite-questions-answers/39027).
 
-The associated project for automation is available in [TAPAS](TAPAS).
+The associated project for automation is available in [TAPAS](/plugins/tapas).
 
 Author
 ------
@@ -41,7 +41,7 @@ Features
 
 This *suite* is composed of :
 
--   [3D Filters](3D_Filters) (mean, median, max, min, tophat, max local, ...) and [Edge and symmetry filter](Edge_and_symmetry_filter)
+-   [3D Filters](3D_Filters) (mean, median, max, min, tophat, max local, ...) and [Edge and symmetry filter](/plugins/edge-and-symmetry-filter)
 -   [3D Segmentation](3D_Segmentation) (iterative thresholding, spots segmentation, watershed, ...)
 -   [3D Mathematical Morphology](3D_Mathematical_Morphology) tools (fill holes, binary closing, distance map, ...)
 -   [3D RoiManager](https://imagejdocu.list.lu/plugin/stacks/3d_roi_manager/start) (3D display and analysis of 3D objects)
@@ -63,7 +63,7 @@ You have also to manually download and copy into your plugins directory the **im
 Download
 --------
 
-ImageJ 1.47 or later is required. Java3D is also required, check that [3D\_Viewer](3D_Viewer) is working.
+ImageJ 1.47 or later is required. Java3D is also required, check that [3D\_Viewer](/plugins/3d-viewer) is working.
 
 **NEW** From version 3.83 and later, for ImageJ users the new version 4.0.1 of 3D\_Viewer is required (please remove the 3D\_Viewer plugin provided by ImageJ and replace it by [3d\_viewer-mcib.zip](/media/3d viewer-mcib.zip), just unzip the file in the plugins directory).
 
@@ -99,11 +99,11 @@ The 3D suite would like to thanks P. Andrey, J.-F. Gilles and the developers of 
 Links
 -----
 
--   [BoneJ2](BoneJ2)
+-   [BoneJ2](/BoneJ)
 -   [3D Shapes](https://sites.google.com/site/learnimagej/plugins/3d-shape)
 -   [3D Annotation Tool](https://imagejdocu.list.lu/plugin/utilities/annotation_roi_3d/start)
--   [3D Viewer](3D_Viewer)
--   [MorphoLibJ](MorphoLibJ)
+-   [3D Viewer](/plugins/3d-viewer)
+-   [MorphoLibJ](/plugins/morpholibj)
 
 Change Log
 ----------

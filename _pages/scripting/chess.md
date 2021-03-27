@@ -9,7 +9,7 @@ description: test description
 
 == Purpose ==
 
-This [Jython](Jython_Scripting) script illustrates how to make an image interactive.
+This [Jython](/scripting/jython) script illustrates how to make an image interactive.
 
 Play chess within Fiji! Click on a starting square, then on another one to move a piece.
 
@@ -105,7 +105,7 @@ Small compared to what it does:
 
     erase()
 
-    IJ.runMacro('newImage("Chess", "RGB", ' + str(w * 8) + ', '
+    IJ.runMacro('newImage("/scripting/chess", "RGB", ' + str(w * 8) + ', '
         + str(h * 8) + ', 1);')
 
     def initial_field():
@@ -180,6 +180,6 @@ Small compared to what it does:
 See also
 --------
 
--   [Jython Scripting](Jython_Scripting)
+-   [Jython Scripting](/scripting/jython)
 
  

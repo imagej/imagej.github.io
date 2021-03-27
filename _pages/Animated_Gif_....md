@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-1.  Redirect [Save as animated gif](Save_as_animated_gif)
+1.  Redirect [Save as animated gif](/plugins/save-as-animated-gif)

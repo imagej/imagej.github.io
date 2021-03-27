@@ -779,7 +779,7 @@ Please see the "FiguR" section.
 7.7) Help
 ---------
 
-Please find below a complete description of the "Help" menu :
+Please find below a complete description of the "/help" menu :
 
 ![](/media/Image42.png "Image42.png")
 

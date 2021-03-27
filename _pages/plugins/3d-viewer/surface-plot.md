@@ -6,15 +6,15 @@ categories:
 description: test description
 ---
 
-(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation) page)  
-(Return to the main [3D\_Viewer](3D_Viewer) page)
+(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
+(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 How to work with surface plots
 ------------------------------
 
-You can download example source code for this HowTo [here](3D_Viewer__Example_code).
+You can download example source code for this HowTo [here](/plugins/3d-viewer/example-code).
 
-Before reading this HowTo, it may be helpful to read [The relation between Content and Universe](3D_Viewer__Content_Structure).
+Before reading this HowTo, it may be helpful to read [The relation between Content and Universe](/plugins/3d-viewer/content-structure).
 
 Surface plots show a 2D image as a 3D plot, where the 3rd dimension is given by the intensity.
 

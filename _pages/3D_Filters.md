@@ -58,7 +58,7 @@ Download
 
 For details go to [3D ImageJ Suite](3D_ImageJ_Suite).
 
-If you want fast version using GPU, please refer to [CLIJ](CLIJ).
+If you want fast version using GPU, please refer to [CLIJ](/plugins/clij).
 
 Citation
 --------

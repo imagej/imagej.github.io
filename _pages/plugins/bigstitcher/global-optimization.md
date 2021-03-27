@@ -75,7 +75,7 @@ We found, however, that the default values of 3.5px absolute error and 2.5 relat
 Expert view grouping
 --------------------
 
-In the next two dialogs, you will be asked which views to include in the global optimization. They are the same as in [BigStitcher\_Advanced\_stitching](BigStitcher_Advanced_stitching).
+In the next two dialogs, you will be asked which views to include in the global optimization. They are the same as in [BigStitcher\_Advanced\_stitching](/plugins/bigstitcher/advanced-stitching).
 
 -   In the first dialog, you can select whether all instances of an attribute or just the currently selected views should be processed. For example, in the example below, we align all Channels, Tiles and Illuminations, but only for the currently selected timepoint and angle.
 

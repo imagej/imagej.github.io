@@ -9,9 +9,9 @@ description: test description
 3-way viewer for Block-Face EM image volumes based in ImgLib cells
 ------------------------------------------------------------------
 
-{% include thumbnail src='/media/3-way-view.png' title='Example of a 3-way view of an anisotropic EM stack. An isotropic stack would show images with the same resolution in the side views.'%} Volumetric or higher dimensional data as generated in todays scientific experiments is often too large to be kept in memory entirely. Still, the data needs to be displayed rapidly in multiple views. A typical example is data from [Block-Face Serial Scanning Electron Microscopy](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329), displayed through a technique now commercialized as "Gatan 3-way view EM." See this page for [theory](http://www.gatan.com/knowhow/knowhow_15/3view.htm) and for [pictures and examples](http://www.gatan.com/resources/knowhow/kh18-3view.php). Our generic image processing library [Imglib](Imglib) is designed to efficiently generate such virtual views from arbitrary *n*-dimensional image data containers. Still missing is a data back-end that stores the data on the harddisk and provides rapid access to parts of it at multiple scales. The aim of this project is to create such a data back-end and utilize it for an interactive viewer application.
+{% include thumbnail src='/media/3-way-view.png' title='Example of a 3-way view of an anisotropic EM stack. An isotropic stack would show images with the same resolution in the side views.'%} Volumetric or higher dimensional data as generated in todays scientific experiments is often too large to be kept in memory entirely. Still, the data needs to be displayed rapidly in multiple views. A typical example is data from [Block-Face Serial Scanning Electron Microscopy](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329), displayed through a technique now commercialized as "Gatan 3-way view EM." See this page for [theory](http://www.gatan.com/knowhow/knowhow_15/3view.htm) and for [pictures and examples](http://www.gatan.com/resources/knowhow/kh18-3view.php). Our generic image processing library [Imglib](/imglib1) is designed to efficiently generate such virtual views from arbitrary *n*-dimensional image data containers. Still missing is a data back-end that stores the data on the harddisk and provides rapid access to parts of it at multiple scales. The aim of this project is to create such a data back-end and utilize it for an interactive viewer application.
 
-**Goal:** create a multi-scale disk-stored image data container for [Imglib](Imglib) and use it for a rapid multi-view/multi-scale display of very large *n*-dimensional image data.  
+**Goal:** create a multi-scale disk-stored image data container for [Imglib](/imglib1) and use it for a rapid multi-view/multi-scale display of very large *n*-dimensional image data.  
 **Language:** any supported by Fiji, preferably Java.  
 **Mentor:** {% include person content='Albertcardona' %}, [Mark Longair](http://longair.net/mark)
 
@@ -22,11 +22,11 @@ The term *image segmentation* describes the task where objects in an image are t
 
 Segmentation is traditionally a very difficult problem, especially in the presence of variable lighting, noise, or low contrast.
 
-Many segmentation algorithms have been implemented in Fiji to perform image segmentation, such as [Auto Threshold](Auto_Threshold) and [Auto Local Threshold](Auto_Local_Threshold), but in practice, none of them might work, as they were designed with specific images in mind, and these expectations might not be met by your images.
+Many segmentation algorithms have been implemented in Fiji to perform image segmentation, such as [Auto Threshold](/plugins/auto-threshold) and [Auto Local Threshold](/plugins/auto-local-threshold), but in practice, none of them might work, as they were designed with specific images in mind, and these expectations might not be met by your images.
 
 Recently, a new class of segmentation algorithms has been emerging: segmentation by example. These algorithms require a set of examples from which a model is calculated which can be applied to other -- similar-looking -- images.
 
-{% include thumbnail src='/media/TrakEM2-display-s.jpg' title='Segmented neural tissue, painfully done by hand. See the [Public data sets](Public_data_sets)'%}
+{% include thumbnail src='/media/TrakEM2-display-s.jpg' title='Segmented neural tissue, painfully done by hand. See the [Public data sets](/plugins/public-data-sets)'%}
 
 We will consider applications for implementations that are either as generic as possible (i.e. they apply to any images), or that try to solve a very specific problem (such as segmenting neurons in serial sections imaged with electron microscopy, or with confocal imaging.)
 
@@ -37,7 +37,7 @@ We have several data sets of images and their corresponding manual segmentations
 
 You are welcome to use any scientifically-relevant dataset of your choice, but we will give priority to biologically-oriented data sets.
 
-A plugin already exists for Fiji: [Trainable Segmentation](Trainable_Segmentation).
+A plugin already exists for Fiji: [Trainable Segmentation](/plugins/tws).
 
 **Goal:** Implement a number of segmentation algorithms based on machine learning.  
 **Language:** Java.  

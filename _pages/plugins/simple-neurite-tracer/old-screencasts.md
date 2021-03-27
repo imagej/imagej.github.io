@@ -15,7 +15,7 @@ This first screencast shows the basic operation of the plugin on a fairly indist
 
 {% include youtube url='https://www.youtube.com/embed/SSXx3DLCJD8'%}
 
-This next video demonstrates more of the functionality that I added at Janelia Farm, in particular the fitting of centre lines and the filling-out of neurons. I use Benjamin Schmid's [3D Viewer](3D_Viewer) in this demo for visualizing the results, and as an example export the mesh and load it into Blender at the end - thanks to Albert Cardona for his advice on all matters Blender.
+This next video demonstrates more of the functionality that I added at Janelia Farm, in particular the fitting of centre lines and the filling-out of neurons. I use Benjamin Schmid's [3D Viewer](/plugins/3d-viewer) in this demo for visualizing the results, and as an example export the mesh and load it into Blender at the end - thanks to Albert Cardona for his advice on all matters Blender.
 
 {% include youtube url='https://www.youtube.com/embed/sjSsNsr\_2YM'%}
 

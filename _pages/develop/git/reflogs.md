@@ -114,6 +114,6 @@ It will show you something like
 
 So you can also refer to the reflog with something like "HEAD@{1 day ago}". For convenience, you can replace the spaces with dots so you do not have to quote the parameter.
 
-Reflogs are pretty useful to refer to commits when [bisecting](Git_bisection): you might happen to know that something worked two weeks ago ("git bisect good HEAD@{2.weeks.ago}", but stopped working in the current revision: ("git bisect bad HEAD").
+Reflogs are pretty useful to refer to commits when [bisecting](/develop/git/pinpoint-regressions): you might happen to know that something worked two weeks ago ("git bisect good HEAD@{2.weeks.ago}", but stopped working in the current revision: ("git bisect bad HEAD").
 
 

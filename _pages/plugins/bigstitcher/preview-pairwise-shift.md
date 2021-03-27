@@ -40,7 +40,7 @@ The Interactive Link Explorer allows you to to preview the pairwise links of a v
 
 <!-- -->
 
--   Once you are satisfied with the results, you can click **Apply & Run Global Optimization** to continue with the [global optimization](BigStitcher_Global_optimization) immediately.
+-   Once you are satisfied with the results, you can click **Apply & Run Global Optimization** to continue with the [global optimization](/plugins/bigstitcher/global-optimization) immediately.
 
 <img src="/media/BigStitcher stitch 4 1.png" width="1000"/>
 

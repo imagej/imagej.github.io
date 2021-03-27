@@ -18,7 +18,7 @@ description: test description
 {% capture source%}
 {% include github org='ijpb' repo='MorphoLibJ' %}
 {% endcapture %}
-{% include info-box name='Morphological Segmentation' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}{\| \|<span>  
+{% include info-box name='Morphological Segmentation' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}{\| \|<span>  
 </span>style="vertical-align:top" \|{% include thumbnail src='/media/Morphological-Segmentation-animation-blobs.gif' title='Visual description of the different steps of the Morphological Segmentation plugin.'%} \|}
 
 Introduction
@@ -187,7 +187,7 @@ The complete list of commands is as follows:
 Installation
 ------------
 
-Morphological Segmentation is part of the [MorphoLibJ](MorphoLibJ) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the IJPB-plugins update site:
+Morphological Segmentation is part of the [MorphoLibJ](/plugins/morpholibj) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the IJPB-plugins update site:
 
 1\) Select {% include bc content='Help | Update...'%} from the Fiji menu to start the updater.
 
@@ -199,7 +199,7 @@ Morphological Segmentation is part of the [MorphoLibJ](MorphoLibJ) library. To i
 
 You should now find the plugin under the sub-menu {% include bc content='Plugins | MorphoLibJ | Segmentation'%}.
 
-**Note**: Morphological Segmentation is only one of the plugins included in the [MorphoLibJ](MorphoLibJ) library. By following these installation steps, you will be installing as well the rest of plugins in the suite.
+**Note**: Morphological Segmentation is only one of the plugins included in the [MorphoLibJ](/plugins/morpholibj) library. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
 Examples
 --------
@@ -213,7 +213,7 @@ If you need to cite the plugin, please do so by citing the following paper:
 
 -   {% include publication content='MorphoLibJ' %}
 
-To cite the implementation, [MorphoLibJ](MorphoLibJ)'s code repository has its own [DOI](http://dx.doi.org/10.5281/zenodo.50694).
+To cite the implementation, [MorphoLibJ](/plugins/morpholibj)'s code repository has its own [DOI](http://dx.doi.org/10.5281/zenodo.50694).
 
 References
 ----------
@@ -224,8 +224,8 @@ References
 See also
 --------
 
--   [Marker-controlled Watershed](Marker-controlled_Watershed), a plugin to perform watershed by flooding from specific seed points or markers.
--   [Classic Watershed](Classic_Watershed), plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
+-   [Marker-controlled Watershed](/plugins/marker-controlled-watershed), a plugin to perform watershed by flooding from specific seed points or markers.
+-   [Classic Watershed](/plugins/classic-watershed), plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
 -   [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
 -   [G. Bertrand's Topological Watershed site](http://www.esiee.fr/~info/tw/index.html), with papers, lecture slides and source code.
 

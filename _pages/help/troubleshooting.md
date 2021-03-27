@@ -16,7 +16,7 @@ How to troubleshoot problems
 Checking the Java version
 -------------------------
 
-You can tell which Java version ImageJ is using by clicking the ImageJ [status bar](Status_bar) and looking for the part that says e.g. "Java 1.8.0\_45 \[64-bit\]". The relevant number is the one after "Java 1."—so e.g. "Java 1.8.0\_45" or similar indicates Java 8, while "Java 1.7.0\_79" or similar indicates Java 7.
+You can tell which Java version ImageJ is using by clicking the ImageJ [status bar](/Getting_started#The_status_bar) and looking for the part that says e.g. "Java 1.8.0\_45 \[64-bit\]". The relevant number is the one after "Java 1."—so e.g. "Java 1.8.0\_45" or similar indicates Java 8, while "Java 1.7.0\_79" or similar indicates Java 7.
 
 On OS X, you can use [this script](https://raw.githubusercontent.com/ctrueden/ctr-scripts/master/java-info) to diagnose which versions of Java are installed on your system.
 
@@ -41,7 +41,7 @@ You can control the log level more precisely by setting the `scijava.log.level` 
 
     $HOME/ImageJ.app/ImageJ-linux64 -Dscijava.log.level=trace --
 
-Valid levels include: `none`, `error`, `warn`, `info`, `debug` and `trace`. See the [Logging](Logging) page for more about SciJava logging.
+Valid levels include: `none`, `error`, `warn`, `info`, `debug` and `trace`. See the [Logging](/develop/logging) page for more about SciJava logging.
 
 The other debug mode
 --------------------
@@ -77,7 +77,7 @@ If the first method does not work, and you can reproduce the hang:
         3.  Select the stack trace by dragging with the left mouse button.
         4.  Press {% include key content='Enter' %} to copy it to the clipboard.
 
-Once you have the stack trace. you can paste it into a [bug report](Bugs)!
+Once you have the stack trace. you can paste it into a [bug report](/help/report-a-bug)!
 
 If ImageJ crashes
 -----------------
@@ -86,7 +86,7 @@ If ImageJ {% include wikipedia title='Crash (computing)' text='crashes'%}—i.e.
 
 -   Launch ImageJ [from the console](#Launching_ImageJ_from_the_console "wikilink") as described above.
 -   Perform the same actions which previously resulted in the crash.
--   Take note of any error messages in the console window, which you can copy and paste it into a [bug report](Bugs).
+-   Take note of any error messages in the console window, which you can copy and paste it into a [bug report](/help/report-a-bug).
 
 If ImageJ does not start up
 ---------------------------
@@ -112,16 +112,16 @@ You can replace the `512m` with however many megabytes of memory you wish to giv
 
 ### After running the updater
 
-If the ImageJ window never appears after launching the program, the installation may be corrupted. While the developers of ImageJ make a serious effort to prevent this problem from happening, it is still possible after running the {% include bc content='Help | Update...'%} command, due to bugs in the [Updater](Updater).
+If the ImageJ window never appears after launching the program, the installation may be corrupted. While the developers of ImageJ make a serious effort to prevent this problem from happening, it is still possible after running the {% include bc content='Help | Update...'%} command, due to bugs in the [Updater](/plugins/updater).
 
-The easiest workaround is to [download](Download) a fresh copy of the software.
+The easiest workaround is to [download](/Downloads) a fresh copy of the software.
 
-If you are feeling investigative, you can try [launching ImageJ from the console](#Launching_ImageJ_from_the_console "wikilink") to get more information about why it is failing to start up. After doing that, you will probably see some information printed to the console, which you can paste online to somewhere like [Pastebin.com](http://pastebin.com/), and write to the [Community](Community) to ask for help deciphering it.
+If you are feeling investigative, you can try [launching ImageJ from the console](#Launching_ImageJ_from_the_console "wikilink") to get more information about why it is failing to start up. After doing that, you will probably see some information printed to the console, which you can paste online to somewhere like [Pastebin.com](http://pastebin.com/), and write to the [Community](/help) to ask for help deciphering it.
 
 Advanced debugging techniques
 -----------------------------
 
-If you are technically savvy, check out the [Debugging](Debugging) page for additional—but more complicated—debugging techniques.
+If you are technically savvy, check out the [Debugging](/develop/debugging) page for additional—but more complicated—debugging techniques.
 
 Common issues
 =============
@@ -146,7 +146,7 @@ It is important to understand that [your image is a collection of samples, each 
 
 Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs **autoscaling** to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [Brightness/Contrast](https://imagej.net/docs/guide/146-28.html#sub:Adjust) dialog under the {% include bc content='Image | Adjust'%} menu (shortcut: {% include key content='shift' %}+{% include key content='C' %}).
 
-Alternately, to disable autoscaling during initial import, you can use the [Bio-Formats](Bio-Formats) plugin to import your data with the "Autoscale" option turned off:
+Alternately, to disable autoscaling during initial import, you can use the [Bio-Formats](/formats/bio-formats) plugin to import your data with the "Autoscale" option turned off:
 
 -   {% include bc content='File | Import | Bio-Formats'%}
 -   Choose your file
@@ -156,7 +156,7 @@ Alternately, to disable autoscaling during initial import, you can use the [Bio-
 
 Further reading:
 
--   [Image Intensity Processing](Image_Intensity_Processing)
+-   [Image Intensity Processing](/cookbook/image-intensity-processing)
 -   [Image Processing Principles](Principles)
 
 Whenever I open a file in ImageJ, the file size increases by a ridiculous amount!
@@ -169,13 +169,13 @@ Note that [lossy compression is not suitable for quantitative image analysis](Pr
 The same plugin gives different results on different machines!
 --------------------------------------------------------------
 
-While ImageJ strives for [reproducible](Reproducible) analysis, there are many reasons results can differ. Check the following:
+While ImageJ strives for [reproducible](/Architecture#Reproducible_builds) analysis, there are many reasons results can differ. Check the following:
 
--   Ensure that the version of [ImageJ](ImageJ) is exactly the same on both machines.
-    -   Click the [status bar](Status_bar) and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
+-   Ensure that the version of [ImageJ](/about) is exactly the same on both machines.
+    -   Click the [status bar](/Getting_started#The_status_bar) and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
     -   If these two values differ between your machines, the versions are not the same.
     -   See also [How can I verify that my ImageJ is really 100% up to date?](Frequently_Asked_Questions#How_can_I_verify_that_my_ImageJ_is_really_100%_up_to_date?).
-    -   If the two versions of ImageJ match but produce different numerical results, it is a bug—please [report it](Report_a_Bug)!
+    -   If the two versions of ImageJ match but produce different numerical results, it is a bug—please [report it](/help/report-a-bug)!
 -   Ensure that the *options* of ImageJ match between the machines.
     -   A fast way to ensure this is the {% include bc content='Edit | Options | Reset...'%} command, which resets everything to its default state.
     -   Alternately, you can check the settings in the following dialog boxes:
@@ -184,11 +184,11 @@ While ImageJ strives for [reproducible](Reproducible) analysis, there are many r
     -   {% include bc content='Process | FFT | FFT Options...'%}
     -   {% include bc content='Image | Overlay | Overlay Options...'%}
     -   {% include bc content='Analyze | Gels | Gel Analyzer Options...'%}
-    -   Press L for the [Command Finder](Command_Finder) and type "options" and double check any other options you think might be relevant.
+    -   Press L for the [Command Finder](/Using_the_Command_Launcher) and type "options" and double check any other options you think might be relevant.
 -   If you are running your analysis [headless](Headless), there might be a bug in the headless support.
     -   Try the analysis *headless* on both machines and see if the results match.
     -   Try the analysis *headless* vs. through the GUI on a single machine, and see if the results match.
-    -   If the results differ due to headlessness, it is a bug—please [report it](Report_a_Bug)!
+    -   If the results differ due to headlessness, it is a bug—please [report it](/help/report-a-bug)!
 
 Common error messages
 =====================
@@ -206,7 +206,7 @@ The first thing to do is make sure that ImageJ has a large enough "maximum heap"
 
 Note that in most cases, the [ImageJ launcher](Launcher) will make an initial guess at a reasonable value: \~75% of physical RAM.
 
-You can confirm how much memory is actually available by clicking on the [status bar](Status_bar). You will see a "\[used\] of \[max\]" memory message, as pictured here:
+You can confirm how much memory is actually available by clicking on the [status bar](/Getting_started#The_status_bar). You will see a "\[used\] of \[max\]" memory message, as pictured here:
 
 ![](/media/MemoryStatus.png "MemoryStatus.png")
 
@@ -214,18 +214,18 @@ If you are already at the limits of your computer's physical memory, the next st
 
 **If setting this value somehow has no effect:** Check for an [environment variable](http://www.computerhope.com/issues/ch000549.htm) called `_JAVA_OPTIONS` or similar, which is overriding the value. If the variable exists, change the memory value there, or remove the variable completely.
 
-**About Java garbage collection:** Java always automatically calls the garbage collector when the heap is getting full [\[1](http://stackoverflow.com/questions/8719071)\]. While it is possible to manually invoke the garbage collector by clicking ImageJ's [status bar](Status_bar)—or programmatically by calling `run("Collect Garbage")` in a macro or `System.gc()` in a plugin—it will not solve the fundamental problem of Java actually not having a sufficient amount of memory. (The only exception to this is a rare case where Java decides that garbage collection is happening too slowly, in which case you should see the message "GC overhead limit exceeded" [\[2](http://www.petefreitag.com/item/746.cfm)\]).
+**About Java garbage collection:** Java always automatically calls the garbage collector when the heap is getting full [\[1](http://stackoverflow.com/questions/8719071)\]. While it is possible to manually invoke the garbage collector by clicking ImageJ's [status bar](/Getting_started#The_status_bar)—or programmatically by calling `run("Collect Garbage")` in a macro or `System.gc()` in a plugin—it will not solve the fundamental problem of Java actually not having a sufficient amount of memory. (The only exception to this is a rare case where Java decides that garbage collection is happening too slowly, in which case you should see the message "GC overhead limit exceeded" [\[2](http://www.petefreitag.com/item/746.cfm)\]).
 
 NegativeArraySizeException
 --------------------------
 
 This error usually means that your image planes are larger than the maximum supported size.
 
-[ImageJ1](ImageJ1) only supports image planes with **2 gigapixels** (2^31 = 2147483648 pixels; in case of a square image, the maximum allowed is 46340 x 46340 pixels) or less. If your data has extremely large image planes—e.g., 50000 x 50000 pixels—you may need to analyze region by region. One way to do this is using the "Crop on import" feature of the [Bio-Formats](Bio-Formats) plugin.
+[ImageJ1](/software/imagej1) only supports image planes with **2 gigapixels** (2^31 = 2147483648 pixels; in case of a square image, the maximum allowed is 46340 x 46340 pixels) or less. If your data has extremely large image planes—e.g., 50000 x 50000 pixels—you may need to analyze region by region. One way to do this is using the "Crop on import" feature of the [Bio-Formats](/formats/bio-formats) plugin.
 
 If you are using Bio-Formats to open a file, however, the size limit is a bit more complicated. Instead of using `short[]` as in ImageJ1, Bio-Formats store data in `byte[]` when reading planes. If the source image is in 16 bit or in 32 bit (4 bytes, eg. floating point TIFF), the maximum pixel numbers allowed per plane will be 1/2 (1 gigapixels) or 1/4 (0.5 gigapixels), respectively.
 
-[ImageJ2](ImageJ2) supports larger image planes internally, but uses the [ImageJ1](ImageJ1) user interface by default, which once again limits visualization to 2 gigapixels. The [ImageJ2 team](Contributors) is working to lift these size restrictions; see {% include github org='imagej' repo='imagej' issue='87' label='imagej/imagej\#87' %}.
+[ImageJ2](/software/imagej2) supports larger image planes internally, but uses the [ImageJ1](/software/imagej1) user interface by default, which once again limits visualization to 2 gigapixels. The [ImageJ2 team](/about/contributors) is working to lift these size restrictions; see {% include github org='imagej' repo='imagej' issue='87' label='imagej/imagej\#87' %}.
 
 UnsupportedClassVersionError
 ----------------------------
@@ -266,8 +266,8 @@ Why does ImageJ run so slowly?
 
 ### Java painting bug
 
-See the [MacOS](MacOS) page.
+See the [MacOS](/platforms/macos) page.
 
 ### App Nap
 
-See the [MacOS](MacOS) page.
+See the [MacOS](/platforms/macos) page.

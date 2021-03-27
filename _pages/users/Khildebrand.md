@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Katie Hildebrand' affiliation='UW-Madison [LOCI](LOCI) (former)' %}
+{% include user-box name='Katie Hildebrand' affiliation='UW-Madison [LOCI](/orgs/loci) (former)' %}

@@ -9,13 +9,13 @@ description: test description
 Shortcuts to folders inside Fiji.app
 ------------------------------------
 
-Put Fiji.app in a folder (named for exemple "Fiji"): <img src="/media/Shortcuts to folders inside Fiji.app-2.png" width="750"/>
+Put Fiji.app in a folder (named for exemple "/fiji"): <img src="/media/Shortcuts to folders inside Fiji.app-2.png" width="750"/>
 
 Right click on Fiji.app and choose "Show Package Contents": <img src="/media/Shortcuts to folders inside Fiji.app-3.png" width="750"/>
 
 This will open a new window showing the folders inside Fiji.app: <img src="/media/Shortcuts to folders inside Fiji.app-4.png" width="750"/>
 
-Pressing both option (⌥) and cmd (⌘) keys, drag and drop the folders you want easy access to (here "plugins") in your "Fiji" folder, next to Fiji.app: <img src="/media/Shortcuts to folders inside Fiji.app-8.png" width="750"/>
+Pressing both option (⌥) and cmd (⌘) keys, drag and drop the folders you want easy access to (here "plugins") in your "/fiji" folder, next to Fiji.app: <img src="/media/Shortcuts to folders inside Fiji.app-8.png" width="750"/>
 
 This will create an alias (labeled by a small arrow in the lower left corner of the icon) to the chosen folder: <img src="/media/Shortcuts to folders inside Fiji.app-9.png" width="750"/>
 

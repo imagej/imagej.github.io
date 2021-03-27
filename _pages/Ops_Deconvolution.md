@@ -12,7 +12,7 @@ description: test description
 Overview
 --------
 
-[ImageJ Ops](ImageJ_Ops) is an extensible framework for algorithms. [Deconvolution](Deconvolution) is a process that is used to de-blur images. When implemented with appropriate constraints deconvolution can also de-noise images. The imagej-ops project gives algorithm developers a framework to implement, organize and test various approaches to deconvolution.
+[ImageJ Ops](/develop/imagej-ops) is an extensible framework for algorithms. [Deconvolution](/cookbook/deconvolution) is a process that is used to de-blur images. When implemented with appropriate constraints deconvolution can also de-noise images. The imagej-ops project gives algorithm developers a framework to implement, organize and test various approaches to deconvolution.
 
 Current work is focused on:
 

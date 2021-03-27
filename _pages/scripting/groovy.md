@@ -7,12 +7,12 @@ categories: Scripting
 description: test description
 ---
 
-[Groovy](http://groovy-lang.org/) is an agile and dynamic language for the Java Virtual Machine. It builds upon the strengths of [Java](Java) but has additional power features inspired by languages like [Python](Python), [Ruby](Ruby) and Smalltalk.
+[Groovy](http://groovy-lang.org/) is an agile and dynamic language for the Java Virtual Machine. It builds upon the strengths of [Java](/develop/plugins) but has additional power features inspired by languages like [Python](Python), [Ruby](/scripting/jruby) and Smalltalk.
 
 Quickstart
 ==========
 
--   Press {% include key content='\[' %} to bring up the [Script Editor](Script_Editor).
+-   Press {% include key content='\[' %} to bring up the [Script Editor](/scripting/script-editor).
 -   Select an example Groovy script from the {% include bc content='Templates | \[by language\] | Groovy'%} menu.
 -   Press {% include key content='Ctrl\|R' %} to run the script!
 

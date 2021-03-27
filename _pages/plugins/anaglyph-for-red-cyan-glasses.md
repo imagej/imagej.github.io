@@ -79,6 +79,6 @@ Code
 See also
 --------
 
-[JRuby Scripting](JRuby_Scripting)
+[JRuby Scripting](/scripting/jruby)
 
   

@@ -6,7 +6,7 @@ categories: ImageJ2,Fiji,News
 description: test description
 ---
 
-Just in time for the new year, we are proud to announce a new release of [ImageJ2](ImageJ2) version 2.0.0-rc-64.
+Just in time for the new year, we are proud to announce a new release of [ImageJ2](/software/imagej2) version 2.0.0-rc-64.
 
 The most significant improvement is a new search bar integrated with the main ImageJ window:
 

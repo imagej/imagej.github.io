@@ -9,7 +9,7 @@ description: test description
 
 Here you can [download](https://downloads.imagej.net/ImageJ2-20160205.zip) an "all platforms" version of ImageJ, without a bundled Java or extra extensions.
 
-{% include info-box content='Unfortunately, due to the ongoing transition from Java 6 to Java 8, this download of "plain ImageJ2" cannot currently be updated to the latest Java-8-compatible version. See the [Java 8](Java_8) page for details. For the time being, we recommend [using the Fiji distribution of ImageJ](Fiji/Downloads) to stay current with updates.' %}
+{% include info-box content='Unfortunately, due to the ongoing transition from Java 6 to Java 8, this download of "plain ImageJ2" cannot currently be updated to the latest Java-8-compatible version. See the [Java 8](/news/2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D) page for details. For the time being, we recommend [using the Fiji distribution of ImageJ](Fiji/Downloads) to stay current with updates.' %}
 
 <div style="width: 540px">
 
@@ -40,8 +40,8 @@ These downloads bundle ImageJ with a curated collection of plugins pre-installed
 
 <div style="float: left; padding: 1em; text-align:center; font-size:1.5em" markdown="1">
 
-<a href="Bio7"><img src="/media/Bio7-icon.png" height="96px"/></a>  
-[Bio7](Bio7)
+<a href="/software/bio7"><img src="/media/Bio7-icon.png" height="96px"/></a>  
+[Bio7](/software/bio7)
 
 </div>
 
@@ -63,14 +63,14 @@ ImageJ will run on any system that has a Java 8 (or later) runtime installed. Th
 
 # Troubleshooting
 
-  - Many common questions are answered on the [FAQ](FAQ) and [Troubleshooting](Troubleshooting) pages.
-  - If you encounter bugs, please see the [Getting Help](Help) page.
+  - Many common questions are answered on the [FAQ](FAQ) and [Troubleshooting](/help/troubleshooting) pages.
+  - If you encounter bugs, please see the [Getting Help](/help) page.
 
 # Source code
 
-See the [source code](Source_code) page for details on obtaining the ImageJ source code.
+See the [source code](/develop/source) page for details on obtaining the ImageJ source code.
 
 ## See also
 
-  - [ImageJ2 development releases](ImageJ2_development_releases) for early versions of [ImageJ2](ImageJ2).
-  - [ImageJ1 download archive](https://imagej.net/download/) for old versions of [ImageJ 1.x](ImageJ1).
+  - [ImageJ2 development releases](ImageJ2_development_releases) for early versions of [ImageJ2](/software/imagej2).
+  - [ImageJ1 download archive](https://imagej.net/download/) for old versions of [ImageJ 1.x](/software/imagej1).

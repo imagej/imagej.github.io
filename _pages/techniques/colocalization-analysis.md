@@ -86,7 +86,7 @@ The first, and best known, temporal cross-correlation technique is [fluorescence
 
 ### Object-based colocalization
 
-In object-based colocalization analyses, the image is first [segmented](Segmentation) to separate the objects of interest from the background for both channels. Colocalization is then evaluated using these binary images, generally by comparing the area/volume of the intersection of the two images to the area/volume of: a) the union of the binary images, b) the difference of the binary images, c) one of the binary images unaltered, or d) a combination of these three. What you compare the intersection against will depend on the exact question being asked. Being able to tailor the analysis to your specific circumstances is one of the biggest advantages to object based-analysis. Additionally, basic object-based analyses can be performed easily without use of a plugin (though some are available to streamline the process): Following [segmentation](Segmentation) of both images, the Image Calculator (Process > Image Calculator…) can be used to generate the intersection (AND operator), difference (difference or subtract operator), and the union (OR or add operator). Once these have be created, they can be analyzed using [particle analysis](Particle_Analysis) to determine the area/volume, or analysis can be redirected to the original intensity data (Analyze > Set Measurements…) to evaluate the original pixel density within the particles. This type of object-based colocalization does require that there is overlap between your objects of interest from each channel. However, plugins have been developed that will perform distance analysis on the original binary images, removing the requirement for overlap between the two channels. 
+In object-based colocalization analyses, the image is first [segmented](/techniques/segmentation) to separate the objects of interest from the background for both channels. Colocalization is then evaluated using these binary images, generally by comparing the area/volume of the intersection of the two images to the area/volume of: a) the union of the binary images, b) the difference of the binary images, c) one of the binary images unaltered, or d) a combination of these three. What you compare the intersection against will depend on the exact question being asked. Being able to tailor the analysis to your specific circumstances is one of the biggest advantages to object based-analysis. Additionally, basic object-based analyses can be performed easily without use of a plugin (though some are available to streamline the process): Following [segmentation](/techniques/segmentation) of both images, the Image Calculator (Process > Image Calculator…) can be used to generate the intersection (AND operator), difference (difference or subtract operator), and the union (OR or add operator). Once these have be created, they can be analyzed using [particle analysis](/cookbook/particle-analysis) to determine the area/volume, or analysis can be redirected to the original intensity data (Analyze > Set Measurements…) to evaluate the original pixel density within the particles. This type of object-based colocalization does require that there is overlap between your objects of interest from each channel. However, plugins have been developed that will perform distance analysis on the original binary images, removing the requirement for overlap between the two channels. 
 
 ### SMLM colocalization
 
@@ -99,19 +99,19 @@ There are several plugins available for performing colocalization analysis. In a
 ### List of plugins by method type
 
 - One to one pixel matching analyses:
-  - [Coloc2](Coloc_2)
-  - [JaCoP](JaCoP)
+  - [Coloc2](/plugins/coloc-2)
+  - [JaCoP](/plugins/jacop)
   - [Colocalization finder](http://punias.free.fr/ImageJ/colocalization-finder.html)
-  - [Colocalization Threshold](Colocalization_Threshold) (deprecated)
-  - [Colocalization Test](Colocalization_Test) (deprecated)
+  - [Colocalization Threshold](/plugins/colocalization-threshold) (deprecated)
+  - [Colocalization Test](/plugins/colocalization-test) (deprecated)
 - Spatial cross-correlation analyses:
-  - [Colocalization by cross-correlation](Colocalization_by_Cross_Correlation)
-  - [JaCoP](JaCoP)
+  - [Colocalization by cross-correlation](/plugins/colocalization-by-cross-correlation)
+  - [JaCoP](/plugins/jacop)
 - Temporal cross-correlation analyses:
   - [ImagingFCS](https://www.dbs.nus.edu.sg/lab/BFL/imfcs_image_j_plugin.html)
 - Object-based analyses:
-  - [JaCoP](JaCoP)
-  - [Distance Analysis](Distance_Analysis)
+  - [JaCoP](/plugins/jacop)
+  - [Distance Analysis](/plugins/distance-analysis)
 - SMLM analyses (no ImageJ implementations):
   - [Coloc-Tesseler](https://github.com/flevet/Coloc-Tesseler) (standalone, not an ImageJ plugin)
   - [ClusDoC]( https://github.com/PRNicovich/ClusDoC) (MatLab plugin)
@@ -124,15 +124,15 @@ Coloc 2 implements and performs the pixel intensity correlation over space metho
 
 None of this gives sensible results unless you have your imaging hardware set up appropriately and have acquired images properly, and have performed appropriate controls for bleed-through and chromatic shift etc. See [here for hardware set up guidelines](Colocalization_-_hardware_setup_and_image_acquisition).
 
-This plugin supersedes the [Colocalization Threshold](Colocalization_Threshold) and [Colocalization Test](Colocalization_Test) plugins, which unfortunately were buggy and hard to maintain. So we started from scratch with a carefully planned and designed new plugin. While the old plugins are described below as well, we recommend that you use Coloc 2 instead.
+This plugin supersedes the [Colocalization Threshold](/plugins/colocalization-threshold) and [Colocalization Test](/plugins/colocalization-test) plugins, which unfortunately were buggy and hard to maintain. So we started from scratch with a carefully planned and designed new plugin. While the old plugins are described below as well, we recommend that you use Coloc 2 instead.
 
 One main feature of Coloc 2 is the standardised PDF output, which is intended to make the results of different colocalization experiments comparable.
 
-Please see the [Coloc2](Coloc2) page for complete instructions on using the Coloc 2 plugin, including common pitfalls of the pixel intensity spatial correlation methods that it employs.
+Please see the [Coloc2](/plugins/coloc-2) page for complete instructions on using the Coloc 2 plugin, including common pitfalls of the pixel intensity spatial correlation methods that it employs.
 
 #### JaCoP
 
-[JaCoP](JaCoP) is a compilation of co-localization tools:
+[JaCoP](/plugins/jacop) is a compilation of co-localization tools:
 
 -   Calculating a set of commonly used co-localization indicators:
     -   Pearson's coefficient
@@ -149,7 +149,7 @@ Please see the [Coloc2](Coloc2) page for complete instructions on using the Colo
 
 All methods are implemented to work on 3D datasets.
 
-See the [JaCoP](JaCoP) page for full details.
+See the [JaCoP](/plugins/jacop) page for full details.
 
 #### Colocalization Finder
 
@@ -202,7 +202,7 @@ The spatial resolution of the images, by definition, determines the spatial reso
 
 The spatial resolution of the light microscope is limited by the wavelength of the light (and the NA of the objective lens) according to Ernst Abbe's work. Molecules / proteins are an order of magnitude smaller than the wavelength of visible light, so they could be many nm apart, but still appear in the same image pixel. Is that true colocalization? Maybe, but it depends how you define it!
 
-Are the images spatially calibrated? If not then we need to calibrate them so we know the spatial sampling rate (think pixel or voxel size) in x, y and z. See the [SpatialCalibration](SpatialCalibration) tutorial for how to do that. We need the images to be spatially calibrated in order for the Costes statistical significance test (below) method to work properly.
+Are the images spatially calibrated? If not then we need to calibrate them so we know the spatial sampling rate (think pixel or voxel size) in x, y and z. See the [SpatialCalibration](/Spatial_Calibration) tutorial for how to do that. We need the images to be spatially calibrated in order for the Costes statistical significance test (below) method to work properly.
 
 We need to think carefully about the correct or adequate spatial resolution in x, y and probably z. This depends on the {% include wikipedia title='Numerical aperture' text='Numerical Aperture'%} of the objective lens. You can calculate the correct pixel or voxel sizes for the objective lens you are using, to get the maximum resolution that that objective lens can really see: [Nyquist Calculator](http://support.svi.nl/wiki/NyquistCalculator)\]. Essentially the pixels / voxels should be about 3 times smaller than the resolution of the lens. On the other hand, if you are only interested in larger objects, and not the smallest details the objective can see, it makes sense to have larger pixels or voxels. Again, these should be about 3 times smaller than the smallest feature you want to resolve.
 
@@ -216,9 +216,9 @@ We need to think carefully about the correct or adequate spatial resolution in x
 
 ### Colocalization Threshold
 
-{% include info-box content="Note: this plugin is no longer under active development and support. Use [Coloc 2](Coloc_2) instead, which does the same thing, only better." %}
+{% include info-box content="Note: this plugin is no longer under active development and support. Use [Coloc 2](/plugins/coloc-2) instead, which does the same thing, only better." %}
 
-The [Colocalization Threshold](Colocalization_Threshold) plugin performs several functions for you in one go. With the "green" and "red" stacks of the [colocsample1bRGB\_BG.tif](https://fiji.sc/samples/colocsample1bRGB_BG.tif) dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [Why scatter plots?](#Why_scatter_plots.3F "wikilink")), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do.
+The [Colocalization Threshold](/plugins/colocalization-threshold) plugin performs several functions for you in one go. With the "green" and "red" stacks of the [colocsample1bRGB\_BG.tif](https://fiji.sc/samples/colocsample1bRGB_BG.tif) dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [Why scatter plots?](#Why_scatter_plots.3F "wikilink")), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do.
 
 {% include gallery content=
 "
@@ -242,9 +242,9 @@ The plugin finally sends a bunch of statistics and results to the results window
 
 ### Colocalization Test
 
-{% include info-box content="Note: this plugin is no longer under active development and support. Use [Coloc 2](Coloc_2) instead, which does the same thing, only more correctly, and as described in the original publication by Costes, instead of making a nasty assumption and shortcut." %}
+{% include info-box content="Note: this plugin is no longer under active development and support. Use [Coloc 2](/plugins/coloc-2) instead, which does the same thing, only more correctly, and as described in the original publication by Costes, instead of making a nasty assumption and shortcut." %}
 
-The [Colocalization Test](Colocalization_Test) plugin performs the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot). It is in the menus at {% include bc content='Analyze | Colocalization | Colocalization Test'%}
+The [Colocalization Test](/plugins/colocalization-test) plugin performs the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot). It is in the menus at {% include bc content='Analyze | Colocalization | Colocalization Test'%}
 
 Choose the correct Channel 1 and Channel 2 images stacks from the drop down lists. Make sure "Current Slice Only" is off, and "Keep Example Randomized Image" and Show All R values" are on. Then click "OK"
 
@@ -264,6 +264,6 @@ In this case the P-value should be 1.00. Since you told it to display the Pearso
 
 Other available methods, such as Fay and Van Steensel, do the same thing but randomize the image in less rigorous but very simple ways, which may lead to errors such as over or under estimation of the P-value. However, they are faster than the Costes method.
 
-Again, as for the [Colocalization Threshold](Colocalization_Threshold) plugin, using an ROI here may well make very good sense, as you are only interested in the correlation between the 2 colour channels in parts of the image where the biology you are interested in is located. Background its typically uninteresting, and you can exclude it from the analysis. Its probably sensible to to use the same ROI as you used in the [Colocalization Threshold](Colocalization_Threshold) plugin!
+Again, as for the [Colocalization Threshold](/plugins/colocalization-threshold) plugin, using an ROI here may well make very good sense, as you are only interested in the correlation between the 2 colour channels in parts of the image where the biology you are interested in is located. Background its typically uninteresting, and you can exclude it from the analysis. Its probably sensible to to use the same ROI as you used in the [Colocalization Threshold](/plugins/colocalization-threshold) plugin!
 
    

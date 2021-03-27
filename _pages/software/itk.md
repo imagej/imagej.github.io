@@ -10,7 +10,7 @@ description: test description
 {% capture source%}
 {% include github org='InsightSoftwareConsortium' repo='ITK' %}
 {% endcapture %}
-{% include info-box name='ITK' software='ITK' logo='<img src="/media/Itk-logo.png" width="96"/>' author=' [Insight Software Consortium](http://itk.org/)' maintainer=' [Insight Software Consortium](http://itk.org/)' source=source status='Active' website='http://itk.org/' %}The Insight Toolkit (ITK) is a cross-platform, [open-source](Open-source) application development framework widely used for the development of image [segmentation](Segmentation) and image registration programs.
+{% include info-box name='ITK' software='ITK' logo='<img src="/media/Itk-logo.png" width="96"/>' author=' [Insight Software Consortium](http://itk.org/)' maintainer=' [Insight Software Consortium](http://itk.org/)' source=source status='Active' website='http://itk.org/' %}The Insight Toolkit (ITK) is a cross-platform, [open-source](/Open_Source) application development framework widely used for the development of image [segmentation](/techniques/segmentation) and image registration programs.
 
 ITK integration with ImageJ
 ===========================
@@ -26,7 +26,7 @@ SimpleITK 0.90 is distributed with this update. After update all SimpleITK class
 
 When using `@itkImage` [parameters](Script_parameters) in scripts, ImageJ `Dataset` objects will be automatically converted to SimpleITK `Image` objects.
 
-There are several templates in the [Script Editor](Script_Editor) demonstrating ITK use. The following example shows how to perform Otsu multilevel threshold using SimpleITK.
+There are several templates in the [Script Editor](/scripting/script-editor) demonstrating ITK use. The following example shows how to perform Otsu multilevel threshold using SimpleITK.
 
     # @itkImage image
     # @OUTPUT Dataset output

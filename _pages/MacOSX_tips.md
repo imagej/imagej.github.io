@@ -6,7 +6,7 @@ categories: tutorials
 description: test description
 ---
 
-**Critical:** if you update and Fiji does not work anymore, you need to follow [these instructions](Fix_non-functional_Fiji_after_Update_on_MacOSX).
+**Critical:** if you update and Fiji does not work anymore, you need to follow [these instructions](/Fix_non-functional_ImageJ_after_Update).
 
 Installing Fiji
 ---------------

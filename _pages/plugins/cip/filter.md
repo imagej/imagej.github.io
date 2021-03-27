@@ -8,7 +8,7 @@ description: test description
 
 
 
-This page provides user documentation for the filter functions of the [CIP](CIP) package
+This page provides user documentation for the filter functions of the [CIP](/plugins/cip) package
 
 {% include cip content='Navigation' %}
 

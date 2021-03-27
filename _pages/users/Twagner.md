@@ -8,15 +8,15 @@ description: test description
 
 {% include user-box name='Thorsten Wagner' affiliation=' [Max Planck Institute for Molecular Physiology](http://www.mpi-dortmund.de)' forum='twagner' github='thorstenwagner' %}Thorsten Wagner is a postdoc at the max planck institute of molecular physiology and has contributed and is maintaining serveral plugins:
 
--   [Ridge Detection](Ridge_Detection)
--   [Shape Filter](Shape_Filter)
--   [Non Local Means Denoise](Non_Local_Means_Denoise)
--   [Shape Smoothing](Shape_Smoothing)
--   [IJ Blob](IJ_Blob)
--   [Ellipse split](Ellipse_split)
--   [NanoTrackJ](NanoTrackJ)
+-   [Ridge Detection](/plugins/ridge-detection)
+-   [Shape Filter](/plugins/shape-filter)
+-   [Non Local Means Denoise](/plugins/non-local-means-denoise)
+-   [Shape Smoothing](/plugins/shape-smoothing)
+-   [IJ Blob](/plugins/ij-blob)
+-   [Ellipse split](/plugins/ellipse-split)
+-   [NanoTrackJ](/plugins/nanotrackj)
 -   [Find\_maxima\_(Trackmate\_module)](Find_maxima_(Trackmate_module) "wikilink")
--   [ParticleSizer](ParticleSizer)
+-   [ParticleSizer](/plugins/particlesizer)
 -   [TraJClassifier](TraJClassifier)
 
 You could contact me by thorsten dot wagner at mpi dash dortmund dot mpg dot de

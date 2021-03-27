@@ -16,12 +16,12 @@ What can you do with CSBDeep?
 Which plugins are available in ImageJ / Fiji?
 ---------------------------------------------
 
--   [CARE](CARE) (CSBDeep update site)
--   [StarDist](StarDist) (StarDist update site)
--   [N2V](N2V) (CSBDeep update site)
--   [DenoiSeg](DenoiSeg) (CSBDeep update site)
+-   [CARE](/plugins/care) (CSBDeep update site)
+-   [StarDist](/plugins/stardist) (StarDist update site)
+-   [N2V](/plugins/n2v) (CSBDeep update site)
+-   [DenoiSeg](/plugins/denoiseg) (CSBDeep update site)
 
 GPU support
 -----------
 
--   go to the [TensorFlow-GPU](TensorFlow-GPU) wiki page for support
+-   go to the [TensorFlow-GPU](/develop/tensorflow) wiki page for support

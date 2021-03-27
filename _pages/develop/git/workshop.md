@@ -184,7 +184,7 @@ Committing while on a branch advances that pointer (if you need something that c
 
 Note: branch names must be simple, i.e. not contain spaces or wild characters (although minus & underscore is okay).
 
-Branches can be used to organize sets of changes by topic. Compare also [Fiji's tutorial on topic branches](Git_topic_branches).
+Branches can be used to organize sets of changes by topic. Compare also [Fiji's tutorial on topic branches](/develop/git/topic-branches).
 
 Hands-on
 --------
@@ -250,7 +250,7 @@ When working with others, or with topic branches, the changes (including their c
 
 In order to perform a merge, the file versions are put into a staging area (the *index*), and all non-overlapping changes are resolved automatically. Overlapping (read: contradicting) changes are not resolved, but marked as *merge conflicts*.
 
-Please refer to the Fiji's page on [Git Conflicts](Git_Conflicts) for a detailed explanation how to resolve merge conflicts.
+Please refer to the Fiji's page on [Git Conflicts](/develop/git/conflicts) for a detailed explanation how to resolve merge conflicts.
 
 Hands-on
 --------

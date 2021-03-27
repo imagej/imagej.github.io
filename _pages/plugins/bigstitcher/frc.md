@@ -24,7 +24,7 @@ In the main window of BigStitcher, select the images in which you want to perfor
 
 <img src="/media/BigStitcher FRC dialog.png" width="600"/>
 
-Many parameters are similar to [Image Fusion](BigStitcher_Fuse): You can set a bounding box for the resulting image, downsampling and whether to display or save results.
+Many parameters are similar to [Image Fusion](/plugins/bigstitcher/fuse): You can set a bounding box for the resulting image, downsampling and whether to display or save results.
 
 {% include info-box content='By default, Quality is estimated in relatively large blocks of the (full resolution) images, downsampling only affects how large the blocks are "rendered" in the resulting image. Using high downsampling should be okay here.' %}
 

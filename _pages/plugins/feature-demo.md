@@ -28,28 +28,28 @@ The jekyll static site generator can be installed on Linux, MacOS and Windows. T
 
 | Action | Link to demo page|
 | : --- : | :---: |
-| Insert the about menu | [about-menu]({{"/demo-about-menu" | relative_url}})
-| Insert conference info | [conference]({{"/demo-conference" | relative_url}})
-| Generate info/details box | [details-box]({{"/demo-details-box" | relative_url}}) | 
-| Insert figure | [figure]({{"/demo-figure" | relative_url}}) |
-| Insert a gallery | [gallery]({{"/demo-gallery" | relative_url}}) |
-| Link to github files | [github]({{"/demo-github" | relative_url}}) |
-| Insert Git menu | [git-menu]({{"/demo-git-menu" | relative_url}}) |
-| Insert images | [image]({{"/demo-image" | relative_url}}) |
-| Insert a notice | [info-box]({{"/demo-info-box" | relative_url}})
-| Insert logos | [logo]({{"/demo-logo" | relative_url}}) |
+| Insert the about menu | [about-menu]({{"/help/editing/about-menu" | relative_url}})
+| Insert conference info | [conference]({{"/help/editing/conference" | relative_url}})
+| Generate info/details box | [details-box]({{"/help/editing/details-box" | relative_url}}) | 
+| Insert figure | [figure]({{"/help/editing/figure" | relative_url}}) |
+| Insert a gallery | [gallery]({{"/help/editing/gallery" | relative_url}}) |
+| Link to github files | [github]({{"/help/editing/github" | relative_url}}) |
+| Insert Git menu | [git-menu]({{"/help/editing/git-menu" | relative_url}}) |
+| Insert images | [image]({{"/help/editing/image" | relative_url}}) |
+| Insert a notice | [info-box]({{"/help/editing/info-box" | relative_url}})
+| Insert logos | [logo]({{"/help/editing/logo" | relative_url}}) |
 | Insert menu breadcrumb | [menu-bc]({{"/demo-menu-breadcrumb" | relative_url}}) |
-| Insert math | [math]({{"/demo-math" | relative_url}}) |
-| Insert person details | [person]({{"/demo-person" | relative_url}})
-| Insert a sidebox | [sidebox]({{"/demo-sidebox" | relative_url}})
-| Insert the SNT nav bar | [SNT-nav]({{"/demo-SNT-nav" | relative_url}})|
-| Insert a tech box | [tech-box]({{"/demo-tech-box" | relative_url}})
-| Insert a warning | [warning-box]({{"/demo-warning-box" | relative_url}}) |
+| Insert math | [math]({{"/help/editing/math" | relative_url}}) |
+| Insert person details | [person]({{"/help/editing/person" | relative_url}})
+| Insert a sidebox | [sidebox]({{"/help/editing/sidebox" | relative_url}})
+| Insert the SNT nav bar | [SNT-nav]({{"/help/editing/SNT-nav" | relative_url}})|
+| Insert a tech box | [tech-box]({{"/help/editing/tech-box" | relative_url}})
+| Insert a warning | [warning-box]({{"/help/editing/warning-box" | relative_url}}) |
 
 {% include sidebar title="Demo" content="Introduction, |, Left image, Right image, Center image, Fit image, Figure left, Figure right,Figure center, Figure row, Markdown table, YouTube video, Embedded images in table, Math equations, Sidebox, Syntax highlighting, Menu breadcrumbs" %}
 
 
-{% include anchor content="Introduction" %}
+{% include anchor content="/learn" %}
 
 While in Clojure one is able to declare types if desired, it's not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated.
 

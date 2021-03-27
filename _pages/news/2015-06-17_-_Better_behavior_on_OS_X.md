@@ -8,7 +8,7 @@ description: test description
 
 Recent versions of OS X have seen a radical shift in how Java works. Apple no longer ships their own version of Java, but instead recommends users install Oracle's Java 7 or Java 8 runtime themselves. In recent years, these changes have made ImageJ deployment on OS X more difficult.
 
-Fortunately, the ImageJ team is happy to announce that [ImageJ2](ImageJ2) now behaves better on recent versions of OS X:
+Fortunately, the ImageJ team is happy to announce that [ImageJ2](/software/imagej2) now behaves better on recent versions of OS X:
 
 -   The ImageJ [Launcher](Launcher) now makes a best effort to use the newest installed version of Java.
 -   You no longer have to install Apple Java 6 just to run ImageJ—it is enough to just install Java 8.

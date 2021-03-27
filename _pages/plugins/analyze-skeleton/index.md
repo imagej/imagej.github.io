@@ -13,7 +13,7 @@ description: test description
 General Description
 -------------------
 
-{% include thumbnail src='/media/Tagging example.png' title='Example of voxel classification'%} This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {% include bc content='Analyze | Skeleton | Analyze Skeleton (2D/3D)'%}. See [Skeletonize3D](Skeletonize3D) for an example of how to produce skeleton images.
+{% include thumbnail src='/media/Tagging example.png' title='Example of voxel classification'%} This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {% include bc content='Analyze | Skeleton | Analyze Skeleton (2D/3D)'%}. See [Skeletonize3D](/plugins/skeletonize3d) for an example of how to produce skeleton images.
 
 The voxels are classified into three different categories depending on their 26 neighbors:
 
@@ -80,20 +80,20 @@ The branches are sorted by decreasing length.
 Video tutorial
 --------------
 
-For a fast introduction to [Skeletonize3D](Skeletonize3D) and [AnalyzeSkeleton](AnalyzeSkeleton) and an example of a real application, you can have a look at this [ video tutorial](Skeleton_analysis_video_tutorial).
+For a fast introduction to [Skeletonize3D](/plugins/skeletonize3d) and [AnalyzeSkeleton](/plugins/analyze-skeleton) and an example of a real application, you can have a look at this [ video tutorial](Skeleton_analysis_video_tutorial).
 
 The tutorial describes step by step how to:
 
 -   Pre-process a 3D image to extract the relevant morphological information by
     -   removing the noise
     -   and binarizing
--   Extract the skeleton of a binary image with [Skeletonize3D](Skeletonize3D)
--   Analyze the resulting skeletons in the 3D image with [AnalyzeSkeleton](AnalyzeSkeleton)
+-   Extract the skeleton of a binary image with [Skeletonize3D](/plugins/skeletonize3d)
+-   Analyze the resulting skeletons in the 3D image with [AnalyzeSkeleton](/plugins/analyze-skeleton)
 
 Visualization
 -------------
 
-Using the [3D\_Viewer](3D_Viewer) libraries we can easily display the results of both, the skeletonization and the analysis:
+Using the [3D\_Viewer](/plugins/3d-viewer) libraries we can easily display the results of both, the skeletonization and the analysis:
 
 <table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Bat cochlea 3D.gif' title='Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Movie skeleton rendering.gif' title='3D skeleton of bat cochlea volume rendered in the viewer after voxel classification'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Movie bat skel.gif' title='Bat cochlea volume rendered in the viewer with its corresponding classified skeleton'%}</p></td></tr></tbody></table>
 
@@ -335,7 +335,7 @@ The shortest path calculation and its applications have been published as:
 
 -   G. Polder, H.L.E Hovens and A.J Zweers, Measuring shoot length of submerged aquatic plants using graph analysis (2010), In: Proceedings of the ImageJ User and Developer Conference, Centre de Recherche Public Henri Tudor, Luxembourg, 27-29 October, pp 172-177.
 
-[AnalyzeSkeleton](AnalyzeSkeleton) makes also part of [BoneJ](http://bonej.org/), a plugin for bone image analysis in [ImageJ](https://imagej.net/):
+[AnalyzeSkeleton](/plugins/analyze-skeleton) makes also part of [BoneJ](http://bonej.org/), a plugin for bone image analysis in [ImageJ](https://imagej.net/):
 
 -   Michael Doube, Michal M. Klosowski, Ignacio Arganda-Carreras, Fabrice P. Cordelieres, Robert P. Dougherty, Jonathan S. Jackson, Benjamin Schmid, John R. Hutchinson, Sandra J. Shefelbine, [BoneJ: Free and extensible bone image analysis in ImageJ](http://dx.doi.org/10.1016/j.bone.2010.08.023), Bone, Volume 47, Issue 6, December 2010, Pages 1076-1079.
 

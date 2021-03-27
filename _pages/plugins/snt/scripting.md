@@ -27,7 +27,7 @@ Script Templates
 
 <!-- -->
 
--   **Analysis\_Demo.py** A [Jython](Jython) demo of how SNT can analyze neuronal reconstructions fetched from online databases such as MouseLight, NeuroMorpho or FlyCircuit.
+-   **Analysis\_Demo.py** A [Jython](/scripting/jython) demo of how SNT can analyze neuronal reconstructions fetched from online databases such as MouseLight, NeuroMorpho or FlyCircuit.
 
 <!-- -->
 
@@ -43,7 +43,7 @@ Script Templates
 
 <!-- -->
 
--   **Reconstruction\_Viewer\_Demo.py** Exemplifies how to render reconstructions and neuropil annotations in a stand-alone [Reconstruction Viewer](SNT__Reconstruction_Viewer).
+-   **Reconstruction\_Viewer\_Demo.py** Exemplifies how to render reconstructions and neuropil annotations in a stand-alone [Reconstruction Viewer](/plugins/snt/reconstruction-viewer).
 
 <!-- -->
 
@@ -51,11 +51,11 @@ Script Templates
 
 <!-- -->
 
--   **Extensive\_Sholl\_Stats.groovy** Exemplifies how to perform linear and polynomial regression on tabular [Sholl](Sholl) data.
+-   **Extensive\_Sholl\_Stats.groovy** Exemplifies how to perform linear and polynomial regression on tabular [Sholl](/plugins/sholl-analysis) data.
 
 ### Boilerplate
 
-This menu hosts script templates containing extensible boilerplate code in several programming languages, namely [BeanShell](BeanShell), [Groovy](Groovy) and [Jython](Jython_Scripting). The most essential imports and [script parameters](Script_Parameters) are included to facilitate rapid development.
+This menu hosts script templates containing extensible boilerplate code in several programming languages, namely [BeanShell](BeanShell), [Groovy](/scripting/groovy) and [Jython](/scripting/jython). The most essential imports and [script parameters](/scripting/parameters) are included to facilitate rapid development.
 
 ### Tracing
 
@@ -85,7 +85,7 @@ This menu hosts scripts that process files in bulk. Namely:
 
 <!-- -->
 
--   **Render\_Cell\_Collection.groovy** Exemplifies how to quickly render large collections of cells from a directory of files in [Reconstruction Viewer](SNT__Reconstruction_Viewer).
+-   **Render\_Cell\_Collection.groovy** Exemplifies how to quickly render large collections of cells from a directory of files in [Reconstruction Viewer](/plugins/snt/reconstruction-viewer).
 
 <!-- -->
 
@@ -139,7 +139,7 @@ Examples
 
 ### Scripting Reconstruction Viewer
 
-Programmatic control over an open instance of [Reconstruction Viewer](SNT__Reconstruction_Viewer) (either called from within SNT or as a standalone application) can be achieved by selecting the {% include bc content='Tools & Utilities|Script This Viewer...'%} [command](SNT__Reconstruction_Viewer#Utilities). It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [script parameters](Script_Parameters). The default programming language for this template can be chosen from the drop-down menu of the *Preferred Language* [option](SNT__Reconstruction_Viewer#Settings).
+Programmatic control over an open instance of [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) (either called from within SNT or as a standalone application) can be achieved by selecting the {% include bc content='Tools & Utilities|Script This Viewer...'%} [command](SNT__Reconstruction_Viewer#Utilities). It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [script parameters](/scripting/parameters). The default programming language for this template can be chosen from the drop-down menu of the *Preferred Language* [option](SNT__Reconstruction_Viewer#Settings).
 
 The following script exemplifies how to extend the boilerplate template to control the Viewer in real-time.
 

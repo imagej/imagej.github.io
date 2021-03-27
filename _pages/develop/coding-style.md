@@ -41,7 +41,7 @@ We try to follow best practices for maintaining a clean and organized Git histor
 -   We use topic branches for large feature additions and complex code changes, and purge them promptly once merged to master. We prefer to make explicit merges (i.e. with `--no-ff`) to document the purpose of each merged branch.
 -   To refine commits on topic branches, we use `git commit --fixup <commit>` extensively. Subsequent `git rebase --autosquash` will squash the fixup into the other commit.
 -   In the case of unfinished work at the conclusion of a coding session, we commit it with the subject *WIP* and push to the topic branch. (Calling `git reset HEAD^` next time makes it easy to pick up the work from there.) Doing this reduces the chance of lost work, and makes it easier for other programmers to collaborate during development.
--   We avoid monster commits (with commit messages like "Many changes to several subsystems") in favor of well-separated, modular commits with one conceptual change at a time. Git's staging area feature makes this much easier (e.g., `git add -p`). Granular commits have many advantages; e.g., [`git`` ``bisect`](Pinpoint_regressions_with_Git) becomes much more useful for understanding mysterious bugs.
+-   We avoid monster commits (with commit messages like "Many changes to several subsystems") in favor of well-separated, modular commits with one conceptual change at a time. Git's staging area feature makes this much easier (e.g., `git add -p`). Granular commits have many advantages; e.g., [`git`` ``bisect`](/develop/git/pinpoint-regressions) becomes much more useful for understanding mysterious bugs.
 
 Javadoc and comments
 --------------------
@@ -61,7 +61,7 @@ Eclipse code style profiles
 
 We provide [Eclipse configuration files in the source repository](https://github.com/imagej/imagej/tree/master/config) that define our rules for code structure and formatting. **NB** when downloading an `.epf` file from the repository, don't click *Save link as...*, rather create a file `my-file-name.epf`, and then copy-paste the contents of the file. To do this, click on `eclipse-preferences.epf` and then the *Raw* button.
 
-You can import them to your system using {% include bc content='File | Import | Preferences'%} and selecting the `eclipse-preferences.epf` file. Then, in Eclipse preferences, navigate to {% include bc content='Java | Code Style | Clean Up'%} and select "ImageJ" for the active profile. You can then format your source code by right-clicking your source file(s) and choosing {% include bc content='Source | Clean Up'%} from the context menu. As of this writing, these rules are not automatically applied by CI, but we make an effort to apply them to the codebase occasionally by hand.
+You can import them to your system using {% include bc content='File | Import | Preferences'%} and selecting the `eclipse-preferences.epf` file. Then, in Eclipse preferences, navigate to {% include bc content='Java | Code Style | Clean Up'%} and select "/about" for the active profile. You can then format your source code by right-clicking your source file(s) and choosing {% include bc content='Source | Clean Up'%} from the context menu. As of this writing, these rules are not automatically applied by CI, but we make an effort to apply them to the codebase occasionally by hand.
 
 Ordering of code blocks
 -----------------------

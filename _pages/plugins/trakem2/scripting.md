@@ -6,11 +6,11 @@ categories: Scripting,TrakEM2
 description: test description
 ---
 
-Examples in [Jython](Jython_Scripting).
+Examples in [Jython](/scripting/jython).
 
-Open the "Plugins - Scripting - Jython Interpreter" (see [Scripting Help](Scripting_Help)) and make sure there is a TrakEM2 project open, with a display open. Then type or paste the examples below.
+Open the "Plugins - Scripting - Jython Interpreter" (see [Scripting Help](/scripting)) and make sure there is a TrakEM2 project open, with a display open. Then type or paste the examples below.
 
-Or open a new [Script Editor](Script_Editor) window with "File - New - Script", then paste the example, select the "Language - Python", and push the "Run" button.
+Or open a new [Script Editor](/scripting/script-editor) window with "File - New - Script", then paste the example, select the "Language - Python", and push the "Run" button.
 
 Introduction to scripting TrakEM2
 =================================
@@ -27,7 +27,7 @@ See a [TrakEM2 class diagram](http://www.ini.uzh.ch/~acardona/img/trakem2_datast
 
 See also the complete [TrakEM2 API documentation](http://www.ini.uzh.ch/~acardona/api)
 
-To run a script, follow instructions as indicated in the [Scripting Help](Scripting_Help).
+To run a script, follow instructions as indicated in the [Scripting Help](/scripting).
 
 ### Get the instance of a selected image
 
@@ -1165,7 +1165,7 @@ The [AreaTree](https://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html)'s gene
 Save the project while running a task
 =====================================
 
-While a task is running, the right-click menu shows only an entry to cancel the task. To save the project while the task is running, type the following into the [Jython Interpreter](Jython_Interpreter), and push return to execute it:
+While a task is running, the right-click menu shows only an entry to cancel the task. To save the project while the task is running, type the following into the [Jython Interpreter](/scripting/jython), and push return to execute it:
 
     Display.getFront().getProject().save()
 
@@ -1182,7 +1182,7 @@ Create a TrakEM2 project for fast visualization, without mipmaps
 
 Create a TrakEM2 project that avoids generating mipmaps, then import lots of images from a text file that has four columns: the file path, the X, the Y, and the section index of each image tile. Then acquire a snapshot of the first section.
 
-As a result of the script, a new Project tab will open in the "TrakEM2" window, and a new Display window will show. At any time, run "project.saveAs(xmlfilepath)" to store the project in an XML file, and from then on just "project.save()". Or right-click and choose "Project - Save", or push 's'.
+As a result of the script, a new Project tab will open in the "/plugins/trakem2" window, and a new Display window will show. At any time, run "project.saveAs(xmlfilepath)" to store the project in an XML file, and from then on just "project.save()". Or right-click and choose "Project - Save", or push 's'.
 
     # Albert Cardona 2011-02-02
     # At Madison, Wisconsin, with Erwin Frise
@@ -1300,12 +1300,12 @@ TrakEM2 tutorials
 -----------------
 
 -   TrakEM2 [how to](http://www.ini.uzh.ch/~acardona/howto.html), with java code examples.
--   TrakEM2 [video tutorials](TrakEM2_tutorials).
+-   TrakEM2 [video tutorials](/plugins/trakem2/tutorials).
 
 Jython scripting
 ----------------
 
--   [Jython Scripting](Jython_Scripting) in fiji.
+-   [Jython Scripting](/scripting/jython) in fiji.
 -   [Jython webpage](http://www.jython.org).
 -   [Fiji scripting tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial) in Jython.
 

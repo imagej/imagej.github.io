@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Verena Kaynig-Fittkau' github='vkaynig' %}Verena Kaynig is the original author of the [Trainable Weka Segmentation](Trainable_Weka_Segmentation) plugin.
+{% include user-box name='Verena Kaynig-Fittkau' github='vkaynig' %}Verena Kaynig is the original author of the [Trainable Weka Segmentation](/plugins/tws) plugin.

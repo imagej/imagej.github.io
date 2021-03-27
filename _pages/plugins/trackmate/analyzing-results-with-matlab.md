@@ -6,12 +6,12 @@ categories: Tracking,Matlab,tutorials
 description: test description
 ---
 
-This page documents the various ways to exchange data between [TrackMate](TrackMate) and [MATLAB](MATLAB).
+This page documents the various ways to exchange data between [TrackMate](/plugins/trackmate) and [MATLAB](MATLAB).
 
 Introduction
 ------------
 
-[TrackMate](TrackMate) was originally designed solely as a tracking tool. Its goal was just to generate the tracks then another tool was supposed to analyze these tracks. Nonetheless, we built some crude analysis facilities in TrackMate for rapid inspection. But in no way they can compete with a proper dedicated, custom analysis tool.
+[TrackMate](/plugins/trackmate) was originally designed solely as a tracking tool. Its goal was just to generate the tracks then another tool was supposed to analyze these tracks. Nonetheless, we built some crude analysis facilities in TrackMate for rapid inspection. But in no way they can compete with a proper dedicated, custom analysis tool.
 
 I favor [MATLAB](MATLAB) as a tool for data analysis. Therefore the interoperability facilities first deal with this software.
 

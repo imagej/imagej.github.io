@@ -10,18 +10,18 @@ description: test description
 
 Useful information about using Fiji can be found here:
 
--   [What you need to know about scientific image processing](IP_Principles)
--   [Installing Fiji](Installation)
+-   [What you need to know about scientific image processing](/Principles)
+-   [Installing Fiji](/Fiji_Downloads#Installation)
 -   [Getting started with Fiji](Getting_started)
--   [Tutorials](Category_Tutorials) (also [external ones](External_tutorials))
--   [Introduction into Macro Programming](Introduction_into_Macro_Programming)
--   Example images you'll find in the {% include bc content='File | Open Samples'%} menu or in [public data sets](Public_data_sets)
--   Some [ImageJ tricks](ImageJ_tricks)
+-   [Tutorials](Category_Tutorials) (also [external ones](/Category_Tutorials))
+-   [Introduction into Macro Programming](/scripting/macro)
+-   Example images you'll find in the {% include bc content='File | Open Samples'%} menu or in [public data sets](/plugins/public-data-sets)
+-   Some [ImageJ tricks](/learn/tips-and-tricks)
 -   Descriptions of bundled [Plugins](Category_Plugins)
--   A detailed overview of the [Plugins Menu](Plugins_Menu)
+-   A detailed overview of the [Plugins Menu](/plugins/fiji-menu)
 -   The ImageJ website has a nice [ImageJ User Manual](https://imagej.net/docs/user-guide.pdf)
 -   [Installing 3rd party plugins](Installing_3rd_party_plugins)
--   [Find contact information, mailing list, IRC (chat) and help](Help)
--   [Frequently Asked Questions](Frequently_Asked_Questions)
+-   [Find contact information, mailing list, IRC (chat) and help](/help)
+-   [Frequently Asked Questions](/help/frequently-asked-questions)
 
 

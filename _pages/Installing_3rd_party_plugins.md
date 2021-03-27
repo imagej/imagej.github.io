@@ -9,7 +9,7 @@ description: test description
 For users
 ---------
 
--   If the plugin is published on an [ImageJ update site](Update_Sites), you can run {% include bc content='Help | Update'%} then click the *Manage update sites* button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
+-   If the plugin is published on an [ImageJ update site](/update-sites), you can run {% include bc content='Help | Update'%} then click the *Manage update sites* button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
 
 <!-- -->
 

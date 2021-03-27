@@ -28,7 +28,7 @@ Parts of the Op Finder
 2.  Toggle button to change between a [user](#For_Users "wikilink") and [developer](#For_Developers "wikilink") view.
 3.  Play button for [running the selected Op](#Running_Ops "wikilink").
 4.  Copy button to copy the selected cell contents.
-5.  Help button to open up the [Wiki reference](ImageJ_Ops) page in your browser.
+5.  Help button to open up the [Wiki reference](/develop/imagej-ops) page in your browser.
 6.  Status area showing success/failure notifications e.g., for copying or running Ops.
 7.  Namespaces and Op types: these can be expanded to explore the tree-based organization of Ops.
 8.  Op implementation: the leaves of this tree tell us what parameter options are available for each Op type. We interpret this particular example as "There is an Add Op in the Math namespace, that operates on an image and a numeric value".
@@ -99,12 +99,12 @@ Code snippets are available in the [Developer view](#For_Developers "wikilink").
 
 ![](/media/1-select-op.png "fig:1-select-op.png")
 
-2\. In the [Script Editor](Script_Editor) (the keyboard shortcut {% include key content='{' %} (open curly bracket) opens the editor), we need to add a reference to the `OpService` which will be our entry point for Op usage:
+2\. In the [Script Editor](/scripting/script-editor) (the keyboard shortcut {% include key content='{' %} (open curly bracket) opens the editor), we need to add a reference to the `OpService` which will be our entry point for Op usage:
 
     # @OpService ops
 
 
-**Note:** this guide is written in [Python](Jython_Scripting) but any scripting language will work
+**Note:** this guide is written in [Python](/scripting/jython) but any scripting language will work
 
 3\. Now we need the code call for our Convolve Op, so we switch to the [Developer view](#For_Developers "wikilink"). The code is long, but remember we can [copy](#Parts_of_the_Op_Finder "wikilink"):
 
@@ -166,4 +166,4 @@ Thus it is recommended to run Ops primarily from the [User view](#For_Users "wik
 Further Reading
 ===============
 
--   For more in-depth development information, see [the guide to writing plugins](Writing_plugins).
+-   For more in-depth development information, see [the guide to writing plugins](/develop/plugins).

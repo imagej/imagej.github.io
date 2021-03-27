@@ -6,13 +6,13 @@ categories: News,ImageJ2,Hackathons
 description: test description
 ---
 
-From Saturday, April 27, 2013 through Friday, May 3, 2013, LOCI in Madison hosted Tobias Pietzsch and Stephan Preibisch, two [ImgLib2](ImgLib2) main developers, for a hackathon. Here is a brief summary of overall accomplishments and topics of discussion:
+From Saturday, April 27, 2013 through Friday, May 3, 2013, LOCI in Madison hosted Tobias Pietzsch and Stephan Preibisch, two [ImgLib2](/imglib2) main developers, for a hackathon. Here is a brief summary of overall accomplishments and topics of discussion:
 
 -   Initial version of SCIFIOCellImg
 -   Much discussion and ideas and proofs of concept for better OPS
 -   Start on [better imglib2 type hierarchies for metadata](https://github.com/imglib/imglib/commit/e4e26aa05e0f42ff1a90e8c6d67235431471de44), particularly units
 -   Decided on histogram unification and [merged to master](https://github.com/imglib/imglib2/commit/79bbc2008eeec6f221c16b6f84782daca2b3f496)
--   Deprecated [ImgLib1](ImgLib1) more fully, purging it from the [imglib repository](https://github.com/imglib/imglib2)
+-   Deprecated [ImgLib1](/imglib1) more fully, purging it from the [imglib repository](https://github.com/imglib/imglib2)
     -   See the [deprecation announcement thread](http://thread.gmane.org/gmane.comp.java.imagej.devel/1477) for details
 -   Explored dual (read/write) type hierarchy; decided it is too complex
 

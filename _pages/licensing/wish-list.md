@@ -24,8 +24,8 @@ Packaging
 Cross-language, integrations, web
 ---------------------------------
 
--   Better ITK support – see the [ITK](ITK) page
--   Better OpenCV support – see the [OpenCV](OpenCV) page
+-   Better ITK support – see the [ITK](/software/itk) page
+-   Better OpenCV support – see the [OpenCV](/software/opencv) page
 -   Better MATLAB support – see e.g. {% include github org='imagej' repo='imagej-matlab' issue='13' label='imagej/imagej-matlab\#13' %}
 -   Better Octave support – see e.g. {% include github org='imagej' repo='imagej-matlab' issue='8' label='imagej/imagej-matlab\#8' %}
 -   ImageJ JavaScript client – see {% include github org='imagej' repo='imagej-server' label='imagej-server' %} project for a start

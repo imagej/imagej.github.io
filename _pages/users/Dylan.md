@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-Copy and paste: – — … ‘ “ ’ ” ° ″ ′ ≈ ≠ ≤ ≥ ± − × ÷ ← → · § Sign your posts on talk pages: [Dylan](User_Dylan) ([talk](User_talk_Dylan)) 08:09, 28 September 2017 (CDT)
+Copy and paste: – — … ‘ “ ’ ” ° ″ ′ ≈ ≠ ≤ ≥ ± − × ÷ ← → · § Sign your posts on talk pages: [Dylan](/users/Dylan) ([talk](User_talk_Dylan)) 08:09, 28 September 2017 (CDT)

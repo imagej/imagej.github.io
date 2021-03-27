@@ -32,7 +32,7 @@ Having Problems?:Jump to [FAQs](#FAQ "wikilink")
 Introduction
 ------------
 
-<span id="CA1CellMask"></span>[frame\|[Skeletonized](Skeletonize3D) hippocampal CA1 cell[1] (juvenile mouse) in which apical and basal dendrites have been analyzed [separately](#CA1CellPlot "wikilink") and [color coded](#Output_Options "wikilink") according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#CriticalRadius "wikilink") (*r<sub>c</sub>*) and [Mean value](#MeanValueOfFunction "wikilink") (*N<sub>av</sub>*) are indicated.](File:BitmapSholl-CA1mask.png "wikilink")
+<span id="CA1CellMask"></span>[frame\|[Skeletonized](/plugins/skeletonize3d) hippocampal CA1 cell[1] (juvenile mouse) in which apical and basal dendrites have been analyzed [separately](#CA1CellPlot "wikilink") and [color coded](#Output_Options "wikilink") according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#CriticalRadius "wikilink") (*r<sub>c</sub>*) and [Mean value](#MeanValueOfFunction "wikilink") (*N<sub>av</sub>*) are indicated.](File:BitmapSholl-CA1mask.png "wikilink")
 
 The Sholl technique[2] is used to describe neuronal arbors. This plugin can perform Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric *shells* (circles or spheres) around the focus of a neuronal arbor, and counts how many times connected voxels defining the arbor intersect the sampling shells. The major advantages of this plugin over other implementations are:
 
@@ -44,10 +44,10 @@ The Sholl technique[2] is used to describe neuronal arbors. This plugin can perf
 Installation
 ------------
 
-The plugin is distributed with Fiji. It installs several commands under {% include bc content='Analysis|Sholl| ' color='white'%}. **As part of an active effort to [modernize ImageJ](2015-12-22_-_The_road_to_Java_8) you need to [ subscribe](How_to_follow_a_3rd_party_update_site#Add_update_sites) to the Java 8 update site to access the latest plugin version** (this will also allow you to access the newest [ImageJ capabilities](2015-12-22_-_The_road_to_Java_8#Components_which_have_already_migrated)). To do so, you can either:
+The plugin is distributed with Fiji. It installs several commands under {% include bc content='Analysis|Sholl| ' color='white'%}. **As part of an active effort to [modernize ImageJ](/news/2015-12-22_-_The_road_to_Java_8) you need to [ subscribe](How_to_follow_a_3rd_party_update_site#Add_update_sites) to the Java 8 update site to access the latest plugin version** (this will also allow you to access the newest [ImageJ capabilities](2015-12-22_-_The_road_to_Java_8#Components_which_have_already_migrated)). To do so, you can either:
 
--   [Download the latest Fiji release](Downloads). Newer releases come pre-bundled with Java 8, and are already subscribed to the [Java-8 update site](User_Java-8).
--   If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [Fiji installation aware of it](Troubleshooting#Checking_the_Java_version). Then subscribe to the [Java-8 update site](User_Java-8).
+-   [Download the latest Fiji release](Downloads). Newer releases come pre-bundled with Java 8, and are already subscribed to the [Java-8 update site](/users/Java-8).
+-   If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [Fiji installation aware of it](Troubleshooting#Checking_the_Java_version). Then subscribe to the [Java-8 update site](/users/Java-8).
 
 Direct Analysis of Images
 -------------------------
@@ -89,14 +89,14 @@ Analysis of Traced Cells
 
 [400px\|right \|Main prompt (version 3.6.8), when input is traced data ({% include bc content='Analysis|Sholl|Sholl Analysis (Tracings)...' color='white'%})In](File_ShollTracingsPrompt.png) this mode, the plugin analyzes reconstructed arbors. This is particularly relevant for stainings that do not allow single-cell resolution. The plugin is macro recordable and [batch processing](#Batch_Processing "wikilink") is also possible.
 
-1.  Run {% include bc content='Analysis|Sholl|Sholl Analysis (Tracings)...' color='white'%} and specify a tracing file (a `.swc`, a `.eswc` or a [Simple Neurite Tracer](Simple_Neurite_Tracer) `.traces` file). If you want, you can also specify the image associated with the reconstruction. This will allow the plugin to use the image's metadata to determine spatial units and x,y,z spacing.
-2.  Choose the center of analysis using the drop down menu in the main prompt listing SWC tags (*axon*, *dendrite*, *soma*, etc.). Note that if your tracings are not tagged you can do so in [Simple Neurite Tracer](Simple_Neurite_Tracer)
+1.  Run {% include bc content='Analysis|Sholl|Sholl Analysis (Tracings)...' color='white'%} and specify a tracing file (a `.swc`, a `.eswc` or a [Simple Neurite Tracer](/plugins/snt) `.traces` file). If you want, you can also specify the image associated with the reconstruction. This will allow the plugin to use the image's metadata to determine spatial units and x,y,z spacing.
+2.  Choose the center of analysis using the drop down menu in the main prompt listing SWC tags (*axon*, *dendrite*, *soma*, etc.). Note that if your tracings are not tagged you can do so in [Simple Neurite Tracer](/plugins/snt)
 3.  Adjust the default [Parameters](#Parameters "wikilink")
 4.  Problems? Read the [FAQs](#FAQ "wikilink")
 
 
 {% capture tip%}
-You can use {% include bc content='Sholl Analysis (Tracings)...' color='white'%} to analyze reconstructed data from any software capable of [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) export such as [Py3DN](https://sourceforge.net/projects/py3dn/) , [Neuromantic](http://www.reading.ac.uk/neuromantic/) , [NeuronStudio](http://research.mssm.edu/cnic/tools-ns.html) , [neuTube](http://www.neutracing.com) , or [Vaa3D](http://www.vaa3d.org/) ), not just [Simple Neurite Tracer](Simple_Neurite_Tracer). In addition, [L-Measure](http://cng.gmu.edu:8080/Lm/) , [NLMorphologyConverter](http://neuronland.org/NL.html) or [Neuron](http://www.neuron.yale.edu/neuron/) can also be used to convert several file formats (including proprietary formats from closed-source commercial software such as Neurolucida®, MicroBrightField, Inc.) into SWC.
+You can use {% include bc content='Sholl Analysis (Tracings)...' color='white'%} to analyze reconstructed data from any software capable of [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) export such as [Py3DN](https://sourceforge.net/projects/py3dn/) , [Neuromantic](http://www.reading.ac.uk/neuromantic/) , [NeuronStudio](http://research.mssm.edu/cnic/tools-ns.html) , [neuTube](http://www.neutracing.com) , or [Vaa3D](http://www.vaa3d.org/) ), not just [Simple Neurite Tracer](/plugins/snt). In addition, [L-Measure](http://cng.gmu.edu:8080/Lm/) , [NLMorphologyConverter](http://neuronland.org/NL.html) or [Neuron](http://www.neuron.yale.edu/neuron/) can also be used to convert several file formats (including proprietary formats from closed-source commercial software such as Neurolucida®, MicroBrightField, Inc.) into SWC.
 {% endcapture %}
 {% include tip id='external-traces' tip=tip %} <span id="Importing"></span>
 
@@ -369,9 +369,9 @@ The coefficient of determination of the polynomial fit described in [(1)](#eq1 "
 Complementary Tools
 -------------------
 
-<span id="Extended_Fitting"></span>[frame\|Sampled data from the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>) being fitted to polynomials of varying degree using a complementary [BAR](BAR) script.](File:AnimatedPolyFit.gif "wikilink")
+<span id="Extended_Fitting"></span>[frame\|Sampled data from the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>) being fitted to polynomials of varying degree using a complementary [BAR](/plugins/bar) script.](File:AnimatedPolyFit.gif "wikilink")
 
-*Sholl Analysis* tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options as determining *best fit models* requires reasonable choices that are not amenable to full automation. For this reason, complementary tools for curve fitting can be installed as needed using [BAR](BAR) by subscribing to its [update site](BAR#Installation). Several [BAR](BAR) commands complement *Sholl Analysis*. These include:
+*Sholl Analysis* tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options as determining *best fit models* requires reasonable choices that are not amenable to full automation. For this reason, complementary tools for curve fitting can be installed as needed using [BAR](/plugins/bar) by subscribing to its [update site](BAR#Installation). Several [BAR](/plugins/bar) commands complement *Sholl Analysis*. These include:
 
 [Segmentation](#Pre-processing "wikilink") tools:  
 Thresholding, shape-based masking and edge-detection routines (see [full BAR list](BAR#List_of_BARs))
@@ -379,7 +379,7 @@ Thresholding, shape-based masking and edge-detection routines (see [full BAR lis
 <!-- -->
 
 Data analysis tools:  
-**[Find Peaks](Find_Peaks):** Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of branch density
+**[Find Peaks](/plugins/find-peaks):** Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of branch density
 
 **{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#fit-polynomial' label='Fit Polynomial' %}:** Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions.
 
@@ -390,16 +390,16 @@ Data analysis tools:
 Pre-processing
 --------------
 
-This section discusses some aspects that should be taken into account when segmenting neuronal arbors to be processed by *Sholl Analysis*. Since *image segmentation* (i.e., the partitioning of images into analyzable parts) is vulnerable to noise and background fluorescence, it is not possible to generalize universal routines that efficiently binarize grayscale images. This means that any procedure that tries to appropriately describe the original fluorescence image with a binary mask must be tailored to the characteristics of individual datasets. As mentioned in [Complementary Tools](#Complementary_Tools "wikilink"), several routines listed here as distributed through the [BAR](BAR) {% include list-of-update-sites content='update site' %}. <span id="Noise"></span>
+This section discusses some aspects that should be taken into account when segmenting neuronal arbors to be processed by *Sholl Analysis*. Since *image segmentation* (i.e., the partitioning of images into analyzable parts) is vulnerable to noise and background fluorescence, it is not possible to generalize universal routines that efficiently binarize grayscale images. This means that any procedure that tries to appropriately describe the original fluorescence image with a binary mask must be tailored to the characteristics of individual datasets. As mentioned in [Complementary Tools](#Complementary_Tools "wikilink"), several routines listed here as distributed through the [BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}. <span id="Noise"></span>
 
 Noise  
 Noise can be mitigated through the usage of processing filters, specially edge-preserving ones. Examples:
 
--   [Rolling Ball](Rolling_Ball_Background_Subtraction) or "Top hat" filters, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Subtract Background...</span>
+-   [Rolling Ball](/plugins/rolling-ball-background-subtraction) or "Top hat" filters, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Subtract Background...</span>
 -   Median Filtering (2D/3D), e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Filters▷</span>, <span style="border-bottom:1px dotted #ccc;">Plugins▷ 3D▷</span>
--   [Anisotropic Diffusion](Anisotropic_Diffusion_2D), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Process▷ Anisotropic Diffusion 2D</span>
+-   [Anisotropic Diffusion](/plugins/anisotropic-diffusion-2d), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Process▷ Anisotropic Diffusion 2D</span>
 -   Sobel Edge Detection, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Find Edges</span>
--   Shen-Castan Edge Detector ([BAR](BAR) {% include list-of-update-sites content='update site' %}), <span style="border-bottom:1px dotted #ccc;">BAR▷ Segmentation▷</span>
+-   Shen-Castan Edge Detector ([BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}), <span style="border-bottom:1px dotted #ccc;">BAR▷ Segmentation▷</span>
 -   Frequency filters, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ FFT▷ Bandpass Filter...</span>
 
 <span id="Uneven_Illumination"></span>
@@ -407,27 +407,27 @@ Noise can be mitigated through the usage of processing filters, specially edge-p
 Uneven Illumination  
 Uneven illumination problems, typically associated with [wide field microscopy](http://imagejdocu.tudor.lu/doku.php?id=howto:working:how_to_correct_background_illumination_in_brightfield_microscopy), do occur in confocal microscopy when signal from deep layers of the tissue is not captured as bright as with superficial layers. This signal attenuation along the Z-axis will generate a shaded gradient across the stack that [histogram-based segmentation](#Automated_Segmentation "wikilink") will need to take into account. While these problems are better tackled during acquisition (e.g., using laser ramping), it is possible to mitigate this effect using histogram-normalization techniques. Examples:
 
--   [Bleach Correction](Bleach_Correction), <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷</span>
+-   [Bleach Correction](/plugins/bleach-correction), <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷</span>
 -   [Attenuation correction](http://imagejdocu.tudor.lu/doku.php?id=plugin:stacks:attenuation_correction:start)
 
 <span id="Automated_Segmentation"></span>
 
 Automated Segmentation  
-It is possible to adopt more sophisticated [segmentation algorithms](Category_Segmentation) when [global thresholding methods](Auto_Threshold) do not yield satisfactory results. Examples:
+It is possible to adopt more sophisticated [segmentation algorithms](Category_Segmentation) when [global thresholding methods](/plugins/auto-threshold) do not yield satisfactory results. Examples:
 
--   [Local Threshold](Auto_Local_Threshold), <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷</span>
--   [Robust Automatic Threshold Selection](RATS__Robust_Automatic_Threshold_Selection), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
--   [Level Sets](Level_Sets), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
--   [Morphological Segmentation](Morphological_Segmentation) (IJPB-plugins {% include list-of-update-sites content='update site' %}), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
--   [Squassh](Squassh), split-Bregman Image Segmentation (Segmentation and Quantification of Sub-cellular Shapes, MOSAIC ToolSuite {% include list-of-update-sites content='update site' %}), , <span style="border-bottom:1px dotted #ccc;">Plugins▷ Mosaic▷ Segmentation▷</span>
+-   [Local Threshold](/plugins/auto-local-threshold), <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷</span>
+-   [Robust Automatic Threshold Selection](/plugins/rats--robust-automatic-threshold-selection), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
+-   [Level Sets](/plugins/level-sets), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
+-   [Morphological Segmentation](/plugins/morphological-segmentation) (IJPB-plugins {% include list-of-update-sites content='update site' %}), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
+-   [Squassh](/plugins/squassh), split-Bregman Image Segmentation (Segmentation and Quantification of Sub-cellular Shapes, MOSAIC ToolSuite {% include list-of-update-sites content='update site' %}), , <span style="border-bottom:1px dotted #ccc;">Plugins▷ Mosaic▷ Segmentation▷</span>
 
 <span id="Semi-Automated_Segmentation"></span>
 
 Semi-Automated Segmentation  
 Object detection and image segmentation in images with poor signal-to-noise will likely require decisions taken by a human operator. This is frequently done using hand-crafted workflows using either ImageJ's built-in tools or external add ons. Examples:
 
--   [Blow/Lasso Tool](Lasso_selection), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
--   Scripts from the [BAR](BAR) {% include list-of-update-sites content='update site' %}, <span style="border-bottom:1px dotted #ccc;">BAR▷ [Segmentation](BAR#Segmentation)▷</span>
+-   [Blow/Lasso Tool](/plugins/lasso-and-blow-tool), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
+-   Scripts from the [BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}, <span style="border-bottom:1px dotted #ccc;">BAR▷ [Segmentation](BAR#Segmentation)▷</span>
 
 
 {% capture tip%}
@@ -438,7 +438,7 @@ For additional image processing tools have a look at the growing list of {% incl
 Batch Processing
 ----------------
 
-It is fairly simple to [automate](Scripting_Help) the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji ([ImageJ Macro Language](Introduction_into_Macro_Programming), [Beanshell](Beanshell_Scripting), [Javascript](Javascript_Scripting), [JRuby](JRuby_Scripting), [Jython](Jython_Scripting), [Clojure](Clojure_Scripting), ...). This section provides some examples.
+It is fairly simple to [automate](/scripting) the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji ([ImageJ Macro Language](/scripting/macro), [Beanshell](Beanshell_Scripting), [Javascript](Javascript_Scripting), [JRuby](/scripting/jruby), [Jython](/scripting/jython), [Clojure](/scripting/clojure), ...). This section provides some examples.
 
 ### Batch Analysis of Images
 
@@ -505,7 +505,7 @@ That's it. Use the Macro Recorder to generate the customizations you will need b
 
 ### Batch Analysis of Tabular Data
 
-If you already have [obtained profiles](#Importing "wikilink") (either from previous runs or from [traced cells](#Analysis_of_Traced_Cells "wikilink")) and would like to extract new [metrics](#Metrics "wikilink") from such data, you can use the {% include bc content='Analysis|Sholl|Sholl Analysis (Existing Profile)...' color='white'%}. Here is an example macro that runs the plugin over a folder of .csv files containing Sholl profiles produced by [Simple Neurite Tracer](Simple_Neurite_Tracer__Sholl_analysis):
+If you already have [obtained profiles](#Importing "wikilink") (either from previous runs or from [traced cells](#Analysis_of_Traced_Cells "wikilink")) and would like to extract new [metrics](#Metrics "wikilink") from such data, you can use the {% include bc content='Analysis|Sholl|Sholl Analysis (Existing Profile)...' color='white'%}. Here is an example macro that runs the plugin over a folder of .csv files containing Sholl profiles produced by [Simple Neurite Tracer](/plugins/simple-neurite-tracer/sholl-analysis):
 
     distanceCol = "Radius";     // Column in .csv file listing distances
     intersecCol = "Inters.";    // Column in .csv file listing intersections
@@ -568,7 +568,7 @@ The authoritative reference for *Sholl Analysis* is:
 
 -   Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. (**2014**), [Neuronal morphometry directly from bitmap images](http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html), *Nature Methods* 11(10): 982–984.
 
-The [authoritative reference](Citing) for Fiji:
+The [authoritative reference](/licensing/citing) for Fiji:
 
 -   Schindelin J, Arganda-Carreras I, Frise E, Kaynig V, Longair M, Pietzsch T, Preibisch S, Rueden C, Saalfeld S, Schmid B, Tinevez JY, White DJ, Hartenstein V, Eliceiri K, Tomancak P, Cardona A. (**2012**) [Fiji: an open-source platform for biological-image analysis](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html), *Nature Methods* 9(7): 676-682.
 
@@ -642,7 +642,7 @@ As mentioned several times, the quality of the analysis relies on how the arbor 
 <dl>
 <dd>
 
-Please note that from version 3.4.6 onwards, updates are available through the [Java-8 update site](##Fiji_Users "wikilink"). If you have manually installed/modified *Sholl\_Analysis.jar* ([Development build](#Release_Notes_and_Pre-releases "wikilink")?). Run the [Updater](Updater), choose *Advanced Mode* then *View locally modified files* under *View Options*. Type "Sholl" in the *Search* field, selecting *Sholl\_Analysis.jar* from the list of files. If the *Details pane* indicates an available update, click on *Locally modified* under *Status/Action* and choose *Install/Update*. The latest release version will be available once you press *Apply changes*. See [Installation FAQs](Frequently_Asked_Questions#Installing.2FUpdating) for more details.
+Please note that from version 3.4.6 onwards, updates are available through the [Java-8 update site](##Fiji_Users "wikilink"). If you have manually installed/modified *Sholl\_Analysis.jar* ([Development build](#Release_Notes_and_Pre-releases "wikilink")?). Run the [Updater](/plugins/updater), choose *Advanced Mode* then *View locally modified files* under *View Options*. Type "/plugins/sholl-analysis" in the *Search* field, selecting *Sholl\_Analysis.jar* from the list of files. If the *Details pane* indicates an available update, click on *Locally modified* under *Status/Action* and choose *Install/Update*. The latest release version will be available once you press *Apply changes*. See [Installation FAQs](Frequently_Asked_Questions#Installing.2FUpdating) for more details.
 
 </dd>
 </dl>
@@ -839,7 +839,7 @@ It is likely that frequent interactions with the dialog prompt(s) (from which th
 <dl>
 <dd>
 
-Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](https://github.com/tferr/ASA/issues) on GitHub. Don't forget to include the [steps needed to reproduce the problem](Bug_reporting_best_practices). You may also want to check the {% include github org='tferr' repo='ASA' path='Notes.md\#development-builds' label='release notes' %} for the latest [development version](http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/) to see if the issue has meanwhile been addressed.
+Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](https://github.com/tferr/ASA/issues) on GitHub. Don't forget to include the [steps needed to reproduce the problem](/help/bug-reporting-best-practices). You may also want to check the {% include github org='tferr' repo='ASA' path='Notes.md\#development-builds' label='release notes' %} for the latest [development version](http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/) to see if the issue has meanwhile been addressed.
 
 </dd>
 </dl>
@@ -848,16 +848,16 @@ Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](http
 Release Notes and Pre-releases
 ------------------------------
 
-Releases notes are available on {% include github org='tferr' repo='ASA' path='Notes.md\#release-notes-for-sholl-analysis' label='Github' %}. If you do not mind unstable software, {% include github org='tferr' repo='ASA' path='Notes.md\#development-builds' label='development builds' %} may be found [here](http://jenkins.imagej.net/job/Sholl-Analysis). Once new features mature and no major issues are found these development versions will be made available, as usual, through the [Updater](Updater).
+Releases notes are available on {% include github org='tferr' repo='ASA' path='Notes.md\#release-notes-for-sholl-analysis' label='Github' %}. If you do not mind unstable software, {% include github org='tferr' repo='ASA' path='Notes.md\#development-builds' label='development builds' %} may be found [here](http://jenkins.imagej.net/job/Sholl-Analysis). Once new features mature and no major issues are found these development versions will be made available, as usual, through the [Updater](/plugins/updater).
 
 Related Resources
 -----------------
 
--   **[Simple Neurite Tracer](Simple_Neurite_Tracer) (SNT)** The remarkable ImageJ framework for semi-automated of two- and three-dimensional tracing. SNT performs Sholl using the *Sholl Analysis* plugin. On the other hand, *Sholl Analysis* uses SNT to [analyze tracings](#Analyze_Traced_Cells "wikilink")
+-   **[Simple Neurite Tracer](/plugins/snt) (SNT)** The remarkable ImageJ framework for semi-automated of two- and three-dimensional tracing. SNT performs Sholl using the *Sholl Analysis* plugin. On the other hand, *Sholl Analysis* uses SNT to [analyze tracings](#Analyze_Traced_Cells "wikilink")
 
 <!-- -->
 
--   **[NeuronJ](NeuronJ)** Another option for 2D reconstructions. NeuronJ features a friendly interface but is restricted to 2D images, is not capable of SWC export and is no longer under active development
+-   **[NeuronJ](/plugins/neuronj)** Another option for 2D reconstructions. NeuronJ features a friendly interface but is restricted to 2D images, is not capable of SWC export and is no longer under active development
 
 <!-- -->
 
@@ -865,11 +865,11 @@ Related Resources
 
 <!-- -->
 
--   **[Neuroanatomy update site](Neuroanatomy)**, distributing e.g., the **[Strahler\_Analysis](Strahler_Analysis)** plugin
+-   **[Neuroanatomy update site](/plugins/neuroanatomy)**, distributing e.g., the **[Strahler\_Analysis](/plugins/strahler-analysis)** plugin
 
 <!-- -->
 
--   **[BAR](BAR)**, *B*roadly *A*pplicable *R*outines that complement *Sholl Analysis*
+-   **[BAR](/plugins/bar)**, *B*roadly *A*pplicable *R*outines that complement *Sholl Analysis*
 
 Publication
 -----------

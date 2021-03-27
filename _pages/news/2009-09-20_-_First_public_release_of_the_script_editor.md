@@ -6,11 +6,11 @@ categories: News
 description: test description
 ---
 
-This is a first *alpha* release of the [script editor](SoC_2009_Ideas#Add_a_simple_yet_minimally_powerful_plugin_and_script_editor) that was one of our [Google Summer of Code](2009-04-20_-_Summer_of_Code__We_got_us_three_students) projects.
+This is a first *alpha* release of the [script editor](SoC_2009_Ideas#Add_a_simple_yet_minimally_powerful_plugin_and_script_editor) that was one of our [Google Summer of Code](/news/2009-04-20_-_Summer_of_Code__We_got_us_three_students) projects.
 
-While it was pretty well stress-tested in the [Fiji School](2009-08-04_-_Fiji_School_-_Last_Call_for_Student_Applications), and while it works pretty well for some of the Fiji developers, it is more like a technology preview.
+While it was pretty well stress-tested in the [Fiji School](/news/2009-08-04_-_Fiji_School_-_Last_Call_for_Student_Applications), and while it works pretty well for some of the Fiji developers, it is more like a technology preview.
 
-Having said all that, if you are interested in scripting Fiji, just use the [Fiji Updater](Update_Fiji) and [give it a shot](Using_the_Script_Editor)!
+Having said all that, if you are interested in scripting Fiji, just use the [Fiji Updater](/plugins/updater) and [give it a shot](/scripting/script-editor)!
 
 Speaking of shots: here is a screenshot:
 

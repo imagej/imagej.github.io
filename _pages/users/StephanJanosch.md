@@ -8,4 +8,4 @@ description: test description
 
 {% include user-box name='Stephan Janosch' affiliation='MPI-CBG Dresden' github='StephanJanosch' %}Working at [Max-Planck-Institute for Cell Biology and Genetics](http://www.mpi-cbg.de/facilities/profiles/transgeneomics.html) right now.
 
-Using [Multiview-Reconstruction](Multiview-Reconstruction) and [BigDataViewer](BigDataViewer) at the moment.
+Using [Multiview-Reconstruction](/plugins/multiview-reconstruction) and [BigDataViewer](BigDataViewer) at the moment.

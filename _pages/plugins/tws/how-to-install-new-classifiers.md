@@ -10,11 +10,11 @@ description: test description
 
 From version 3.7.2, Weka has a **package manager** (understanding package not in the java sense but as a bundle of additional functionality, separate from that supplied in the main weka.jar file). Many learning algorithms and tools that were present in earlier versions of Weka have become separate packages from version 3.7.2 and need to be installed via the package manager.
 
-In this tutorial we describe step by step **how to add new classifiers** to the [Trainable Weka Segmentation](Trainable_Weka_Segmentation) plugin using the [Weka package manager](http://weka.wikispaces.com/How+do+I+use+the+package+manager%3F).
+In this tutorial we describe step by step **how to add new classifiers** to the [Trainable Weka Segmentation](/plugins/tws) plugin using the [Weka package manager](http://weka.wikispaces.com/How+do+I+use+the+package+manager%3F).
 
 ### Calling the package manager
 
-We assume you are familiar with the [Trainable Weka Segmentation](Trainable_Weka_Segmentation) plugin and know why and how to use it, otherwise, please go back to a more basic tutorial.
+We assume you are familiar with the [Trainable Weka Segmentation](/plugins/tws) plugin and know why and how to use it, otherwise, please go back to a more basic tutorial.
 
 To get started, from the main plugin GUI click on the Weka button (on the bottom left corner of the window):
 
@@ -36,7 +36,7 @@ This will open the Weka Package Manager window:
 
 Once the package manager is open, we can select any "package" from the displayed list to install it or to remove it from our working Weka toolbox.
 
-In this tutorial we show how to install a new classifier, in particular the *ClassificationViaClustering* classifier. For that reason, we scroll down until we find the packaged called "classificationViaClustering" and click on "Install":
+In this tutorial we show how to install a new classifier, in particular the *ClassificationViaClustering* classifier. For that reason, we scroll down until we find the packaged called "classificationViaClustering" and click on "/Downloads":
 
 <img src="/media/Weka-package-manager-classificationViaClustering.png" width="700"/>
 
@@ -52,7 +52,7 @@ We click OK and the package will be installed. If everything goes right, the pac
 
 <img src="/media/Weka-package-manager-loaded-package.png" width="700"/>
 
-This means the *ClassificationViaClustering* classifier **is now installed** and ready to use. We can check it out by going to the settings dialog of the [Trainable Weka Segmentation](Trainable_Weka_Segmentation) plugin and confirming the classifier is now listed:
+This means the *ClassificationViaClustering* classifier **is now installed** and ready to use. We can check it out by going to the settings dialog of the [Trainable Weka Segmentation](/plugins/tws) plugin and confirming the classifier is now listed:
 
 ![](/media/TWS-settings-new-classifier.png "TWS-settings-new-classifier.png")
 

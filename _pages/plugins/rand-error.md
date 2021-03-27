@@ -20,14 +20,14 @@ Given two segmentations $$S_1$$ and $$S_2$$ of an image $$I$$ with $$n$$ pixels,
 
 The Rand index, $$RI$$, is: $$ RI = \frac{a+b}{n \choose 2 }$$
 
-Here we instead define the closely related [Rand error](Rand_error), which is a measure of disagreement. The [Rand error](Rand_error) (RE) is the **frequency with which the two segmentations disagree over whether a pair of pixels belongs to same or different objects**:
+Here we instead define the closely related [Rand error](/plugins/rand-error), which is a measure of disagreement. The [Rand error](/plugins/rand-error) (RE) is the **frequency with which the two segmentations disagree over whether a pair of pixels belongs to same or different objects**:
 
 $$ RE = 1 - RI$$
 
 Implementation in Fiji
 ----------------------
 
-The [Rand error](Rand_error) metric is implemented in the [Trainable Weka Segmentation](Trainable_Weka_Segmentation) library. Here is an example of how to use it in a [Beanshell script](Beanshell_Scripting):
+The [Rand error](/plugins/rand-error) metric is implemented in the [Trainable Weka Segmentation](/plugins/tws) library. Here is an example of how to use it in a [Beanshell script](Beanshell_Scripting):
 
     import trainableSegmentation.metrics.RandError;
     import ij.IJ;

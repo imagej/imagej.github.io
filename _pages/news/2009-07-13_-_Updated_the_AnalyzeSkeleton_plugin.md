@@ -6,6 +6,6 @@ categories: News
 description: test description
 ---
 
-The [AnalyzeSkeleton](AnalyzeSkeleton) plugin has advanced by two revisions since the latest Fiji release, so it was high time to update it to a newer version.
+The [AnalyzeSkeleton](/plugins/analyze-skeleton) plugin has advanced by two revisions since the latest Fiji release, so it was high time to update it to a newer version.
 
 

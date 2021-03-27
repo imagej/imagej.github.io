@@ -7,29 +7,29 @@ categories: Development
 description: test description
 ---
 
-{% include info-box content='This page describes the ""technical"" structure of [SciJava](SciJava) and [ImageJ](ImageJ) projects.
+{% include info-box content='This page describes the ""technical"" structure of [SciJava](SciJava) and [ImageJ](/about) projects.
 
--   For information on the ""social"" structure, see [Governance](Governance).
--   For information on the ""legal"" structure, see [Licensing](Licensing).' %}
+-   For information on the ""social"" structure, see [Governance](/about/governance).
+-   For information on the ""legal"" structure, see [Licensing](/licensing).' %}
 
 
-This page describes the technical structure of [SciJava](SciJava) and [ImageJ](ImageJ) projects. For maximum benefit, we suggest readers familiarize themselves with [Maven](Maven), [Git](Git) and [GitHub](GitHub) before reading the sections here.
+This page describes the technical structure of [SciJava](SciJava) and [ImageJ](/about) projects. For maximum benefit, we suggest readers familiarize themselves with [Maven](/develop/maven), [Git](Git) and [GitHub](/develop/github) before reading the sections here.
 
 Definitions
 ===========
 
 Throughout this article, and elsewhere on this wiki, we use the following terms:
 
--   A software **component** is a program, such as a [plugin](Plugin), or a {% include wikipedia title='Library (computing)' text='library'%} of reusable functions. Components are typically designed to work together, and combined to form a {% include wikipedia title='Application software' text='software application'%} such as [ImageJ](ImageJ). In [Maven](Maven) terms, a component is a single *artifact*, typically a [JAR file](https://en.wikipedia.org/wiki/JAR_(file_format)).
--   A software **project** is a more general term referring to either a single component or a *collection* of related components. For example, the phrase "ImageJ project" refers to several components including [ImageJ Common](ImageJ_Common), [ImageJ Ops](ImageJ_Ops), [ImageJ Legacy](ImageJ_Legacy) and the [ImageJ Updater](ImageJ_Updater).
+-   A software **component** is a program, such as a [plugin](/fiji/plugins), or a {% include wikipedia title='Library (computing)' text='library'%} of reusable functions. Components are typically designed to work together, and combined to form a {% include wikipedia title='Application software' text='software application'%} such as [ImageJ](/about). In [Maven](/develop/maven) terms, a component is a single *artifact*, typically a [JAR file](https://en.wikipedia.org/wiki/JAR_(file_format)).
+-   A software **project** is a more general term referring to either a single component or a *collection* of related components. For example, the phrase "ImageJ project" refers to several components including [ImageJ Common](/plugins/imagej-common), [ImageJ Ops](/develop/imagej-ops), [ImageJ Legacy](/Compatibility) and the [ImageJ Updater](/plugins/updater).
 -   The **SciJava component collection** is the set of all components managed by the `pom-scijava` Bill of Materials. Such **SciJava components** reside across several different architectural layers. See "Bill of Materials" below for details.
 -   **SciJava core components** are SciJava components of the SciJava component layer itself. See "Organizational structure" below.
--   The **ImageJ software stack** is the set of components upon which [ImageJ](ImageJ) is built. It includes components from the [SciJava](SciJava), [ImgLib2](ImgLib2), [ImageJ](ImageJ) and [SCIFIO](SCIFIO) foundational layers; see "Organizational structure" and "Core libraries" below for details.
+-   The **ImageJ software stack** is the set of components upon which [ImageJ](/about) is built. It includes components from the [SciJava](SciJava), [ImgLib2](/imglib2), [ImageJ](/about) and [SCIFIO](/software/scifio) foundational layers; see "Organizational structure" and "Core libraries" below for details.
 
 SciJava project structure
 =========================
 
-The [ImageJ](ImageJ) project, and related projects in the [SciJava](SciJava) software ecosystem, are carefully structured to foster [extensibility](Extensibility).
+The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are carefully structured to foster [extensibility](/Architecture#Extensibility).
 
 Organizational structure
 ------------------------
@@ -37,21 +37,21 @@ Organizational structure
 There are four organizations on [GitHub](https://github.com/) which form the backbone of the [SciJava](SciJava) ecosystem:
 
 -   [scijava](https://github.com/scijava) - for [SciJava](SciJava) core components: general-purpose, non-image-specific libraries.
--   [imglib](https://github.com/imglib) - for [ImgLib2](ImgLib2) components: flexible N-dimensional image processing.
--   [imagej](https://github.com/imagej) - for [ImageJ](ImageJ) components: metadata-rich image library and application.
--   [scifio](https://github.com/scifio) - for [SCIFIO](SCIFIO) components: scientific image I/O and file formats.
+-   [imglib](https://github.com/imglib) - for [ImgLib2](/imglib2) components: flexible N-dimensional image processing.
+-   [imagej](https://github.com/imagej) - for [ImageJ](/about) components: metadata-rich image library and application.
+-   [scifio](https://github.com/scifio) - for [SCIFIO](/software/scifio) components: scientific image I/O and file formats.
 
-Each organization contains several related components under its respective umbrella: a core library (see below) and several extensions. In social terms, each organization represents a collection of conceptually related components developed by a distinct [team of developers](Contributors).
+Each organization contains several related components under its respective umbrella: a core library (see below) and several extensions. In social terms, each organization represents a collection of conceptually related components developed by a distinct [team of developers](/about/contributors).
 
-Additional organizations can further extend this structure. For example, the [Fiji](Fiji) project has several organizations as follows:
+Additional organizations can further extend this structure. For example, the [Fiji](/fiji) project has several organizations as follows:
 
--   [fiji](https://github.com/fiji) - for [Fiji](Fiji) components
+-   [fiji](https://github.com/fiji) - for [Fiji](/fiji) components
 -   [bigdataviewer](https://github.com/bigdataviewer) - for [BigDataViewer](BigDataViewer) components
--   [trakem2](https://github.com/trakem2) - for [TrakEM2](TrakEM2) components
+-   [trakem2](https://github.com/trakem2) - for [TrakEM2](/plugins/trakem2) components
 
 Furthermore, many groups maintain their own GitHub organizations with components built on SciJava et al. Here are a few examples:
 
--   [LOCI](LOCI) – [uw-loci](https://github.com/uw-loci)
+-   [LOCI](/orgs/loci) – [uw-loci](https://github.com/uw-loci)
 -   [FLIMJ](FLIMJ) – [flimlib](https://github.com/flimlib)
 -   [DAIS](DAIS) – [TrnDy](https://github.com/TrnDy)
 -   {% include person content='Jug' %} – [juglab](https://github.com/juglab)
@@ -68,12 +68,12 @@ Each component is contained in its own [Git](Git) repository, so that interested
 
 ### Why separate Git repositories?
 
-With [Maven](Maven) it is possible to create a [multi-module reactor](http://maven.apache.org/guides/mini/guide-multiple-modules.html) that unifies several component artifacts into a single build, typically within a single Git repository.
+With [Maven](/develop/maven) it is possible to create a [multi-module reactor](http://maven.apache.org/guides/mini/guide-multiple-modules.html) that unifies several component artifacts into a single build, typically within a single Git repository.
 
 While many SciJava components used to be structured this way, we found that lumping multiple components into a single Git repository with a multi-module build has disadvantages compared to separate Git repositories with single-module builds:
 
--   Typically, components of a multi-module project are all versioned together, but we have opted for individual [versioning](Versioning) of components, for reasons of [rapid iteration](Philosophy#Release_early.2C_release_often), [extensibility](Extensibility) and [modularity](Architecture#Modularity).
--   Individual repositories make it easier for developers to cherry-pick only those components of interest, without building the rest of the code, since dependencies are fetched on demand from remote [Maven](Maven) repositories.
+-   Typically, components of a multi-module project are all versioned together, but we have opted for individual [versioning](/develop/versioning) of components, for reasons of [rapid iteration](Philosophy#Release_early.2C_release_often), [extensibility](/Architecture#Extensibility) and [modularity](Architecture#Modularity).
+-   Individual repositories make it easier for developers to cherry-pick only those components of interest, without building the rest of the code, since dependencies are fetched on demand from remote [Maven](/develop/maven) repositories.
 -   Concerns are better separated, with each component encapsulating its own codebase, issues, pull requests and technical documentation.
 -   Since every component follows a consistent structure, the supporting tools (e.g., [these scripts](https://github.com/scijava/scijava-scripts)) are simpler to develop and maintain.
 
@@ -83,14 +83,14 @@ Of course, there are downsides, too:
 -   Issues relevant to multiple components must be filed separately in each issue tracker and cross-referenced.
 -   It can be more difficult to locate code of interest, since the codebase is spread across so many repositories.
 
-As a rule of thumb, we find that multi-module [Maven](Maven) projects stored within a single Git repository are a natural fit for "big bang" software which is versioned in lockstep and carefully tested before each [release](Release), whereas single-module projects stored in separate Git repositories work well for the [RERO](Philosophy#Release_early.2C_release_often)-style [release](Release) paradigm.
+As a rule of thumb, we find that multi-module [Maven](/develop/maven) projects stored within a single Git repository are a natural fit for "big bang" software which is versioned in lockstep and carefully tested before each [release](/develop/releasing), whereas single-module projects stored in separate Git repositories work well for the [RERO](Philosophy#Release_early.2C_release_often)-style [release](/develop/releasing) paradigm.
 
 Maven component structure
 -------------------------
 
-All components in these organizations use [Maven](Maven) for [project management](Project_Management). Each organization has its own Maven [groupId](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates). Each component extends the {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %} [parent POM](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance), which provides sensible build defaults and compatible dependency versions (see "Bill of Materials" below).
+All components in these organizations use [Maven](/develop/maven) for [project management](Project_Management). Each organization has its own Maven [groupId](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates). Each component extends the {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %} [parent POM](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance), which provides sensible build defaults and compatible dependency versions (see "Bill of Materials" below).
 
-<table><tbody><tr class="odd"><td><p><strong>Logo</strong></p></td><td><p><strong>Project</strong></p></td><td><p><strong>Organization</strong></p></td><td><p><strong>groupId</strong></p></td></tr><tr class="even"><td><p> {% include logo content='SciJava' %}</p></td><td><p><a href="SciJava" title="wikilink">SciJava</a></p></td><td><p><a href="https://github.com/scijava">scijava</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~org.scijava">org.scijava</a></p></td></tr><tr class="odd"><td><p> {% include logo content='ImageJ2' %}</p></td><td><p><a href="ImageJ" title="wikilink">ImageJ</a></p></td><td><p><a href="https://github.com/imagej">imagej</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~net.imagej">net.imagej</a></p></td></tr><tr class="even"><td><p> {% include logo content='ImgLib2' %}</p></td><td><p><a href="ImgLib2" title="wikilink">ImgLib2</a></p></td><td><p><a href="https://github.com/imglib">imglib</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~net.imglib2">net.imglib2</a></p></td></tr><tr class="odd"><td><p> {% include logo content='SCIFIO' %}</p></td><td><p><a href="SCIFIO" title="wikilink">SCIFIO</a></p></td><td><p><a href="https://github.com/scifio">scifio</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~io.scif">io.scif</a></p></td></tr><tr class="even"><td rowspan=3 style="vertical-align: middle"><p> {% include logo content='Fiji' %}</p></td><td><p><a href="Fiji" title="wikilink">Fiji</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td></tr><tr class="odd"><td><p><a href="BigDataViewer" title="wikilink">BigDataViewer</a></p></td><td><p><a href="https://github.com/bigdataviewer">bigdataviewer</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td><td></td></tr><tr class="even"><td><p><a href="TrakEM2" title="wikilink">TrakEM2</a></p></td><td><p><a href="https://github.com/trakem2">trakem2</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td><td></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td><p><strong>Logo</strong></p></td><td><p><strong>Project</strong></p></td><td><p><strong>Organization</strong></p></td><td><p><strong>groupId</strong></p></td></tr><tr class="even"><td><p> {% include logo content='SciJava' %}</p></td><td><p><a href="SciJava" title="wikilink">SciJava</a></p></td><td><p><a href="https://github.com/scijava">scijava</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~org.scijava">org.scijava</a></p></td></tr><tr class="odd"><td><p> {% include logo content='ImageJ2' %}</p></td><td><p><a href="/about" title="wikilink">ImageJ</a></p></td><td><p><a href="https://github.com/imagej">imagej</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~net.imagej">net.imagej</a></p></td></tr><tr class="even"><td><p> {% include logo content='ImgLib2' %}</p></td><td><p><a href="/imglib2" title="wikilink">ImgLib2</a></p></td><td><p><a href="https://github.com/imglib">imglib</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~net.imglib2">net.imglib2</a></p></td></tr><tr class="odd"><td><p> {% include logo content='SCIFIO' %}</p></td><td><p><a href="/software/scifio" title="wikilink">SCIFIO</a></p></td><td><p><a href="https://github.com/scifio">scifio</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~io.scif">io.scif</a></p></td></tr><tr class="even"><td rowspan=3 style="vertical-align: middle"><p> {% include logo content='Fiji' %}</p></td><td><p><a href="/fiji" title="wikilink">Fiji</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td></tr><tr class="odd"><td><p><a href="BigDataViewer" title="wikilink">BigDataViewer</a></p></td><td><p><a href="https://github.com/bigdataviewer">bigdataviewer</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td><td></td></tr><tr class="even"><td><p><a href="/plugins/trakem2" title="wikilink">TrakEM2</a></p></td><td><p><a href="https://github.com/trakem2">trakem2</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td><td></td></tr></tbody></table>
 
 Bill of Materials
 -----------------
@@ -119,10 +119,10 @@ Core libraries
 The ImageJ software stack is composed of the following core libraries:
 
 -   [SciJava Common](SciJava_Common) - The [SciJava](SciJava) application container and plugin framework.
--   [ImgLib2](ImgLib2) - The N-dimensional image data model.
--   [ImageJ Common](ImageJ_Common) - Metadata-rich image data structures and SciJava extensions.
--   [ImageJ Ops](ImageJ_Ops) - The framework for reusable image processing operations.
--   [SCIFIO](SCIFIO) - The framework for N-dimensional image I/O.
+-   [ImgLib2](/imglib2) - The N-dimensional image data model.
+-   [ImageJ Common](/plugins/imagej-common) - Metadata-rich image data structures and SciJava extensions.
+-   [ImageJ Ops](/develop/imagej-ops) - The framework for reusable image processing operations.
+-   [SCIFIO](/software/scifio) - The framework for N-dimensional image I/O.
 
 These libraries form the basis of ImageJ-based software.
 
@@ -136,22 +136,22 @@ Along those lines, the libraries take great pains to be **UI agnostic**, with no
 
 ### Extensibility
 
-Extensibility is [ImageJ](ImageJ)'s greatest strength. ImageJ provides many different types of plugins, and it is possible to extend the system with your own new types of plugins. See the [create-a-new-plugin-type tutorial](https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-plugin-type) for an illustration.
+Extensibility is [ImageJ](/about)'s greatest strength. ImageJ provides many different types of plugins, and it is possible to extend the system with your own new types of plugins. See the [create-a-new-plugin-type tutorial](https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-plugin-type) for an illustration.
 
 The [SciJava Common](SciJava_Common) (SJC) library provides a plugin framework with {% include wikipedia title='Strong and weak typing' text='strong typing'%}, and makes extensive use of plugins itself, to allow core functionality to be [customized easily](http://c2.com/cgi/wiki?SoftwareSeam). SJC has an powerful plugin discovery mechanism that finds all plugins available on the Java classpath, without knowing in advance what they are or where they are located. It works by indexing the plugins at compile time via an {% include wikipedia title='Java annotation\#Processing' text='annotation processor'%} (inspired by the [SezPoz](https://github.com/jglick/sezpoz) project) which writes the plugin metadata inside the JAR file (in `META-INF/json/org.scijava.plugin.Plugin`). Reading this index allows the system to discover plugin metadata at runtime very quickly *without* loading the plugin classes in advance.
 
 Reproducible builds
 ===================
 
-{% include box title='Why are reproducible builds so essential for science?' width='40%' float='right' text='Arguably **the most important thing** in science is to gain insights about nature **that can be verified by other researchers**. It is this mission for which [ImageJ](ImageJ) and [Fiji](Fiji) stand, and it is the central reason why they are [open source](Open_source).
+{% include box title='Why are reproducible builds so essential for science?' width='40%' float='right' text='Arguably **the most important thing** in science is to gain insights about nature **that can be verified by other researchers**. It is this mission for which [ImageJ](/about) and [Fiji](/fiji) stand, and it is the central reason why they are [open source](Open_source).
 
 To verify results, it is absolutely necessary to be able to reproduce results claimed in scientific articles, and in the interest of efficiency, it should be **easy** to reproduce the results, and it should **also** be easy to scrutinize the used methods—incorrect results can be artifacts of flawed algorithms, after all.
 
 To that end, it should be obvious that researchers **need** to have the ability to inspect the exact source code corresponding to the software used to generate the results to be verified. In other words, reproducible builds are required for sound scientific research.' %} A software *version* (or *build*) is called **reproducible** if it is easy to regenerate the exact same software application from the source code.
 
-For example, you can refer to "ImageJ 1.49g" as a *reproducible build*, or to *Sholl Analysis 3.4.3*, while referring to "ImageJ" is irreproducible.
+For example, you can refer to "ImageJ 1.49g" as a *reproducible build*, or to *Sholl Analysis 3.4.3*, while referring to "/about" is irreproducible.
 
-It gets more subtle when making heavy use of software libraries (sometimes called *dependencies*). It is known, for example, that many plugins in the now-defunct [MacBiophotonics distribution of ImageJ](MBF) worked fine with ImageJ 1.42l, but stopped working somewhere between that version and ImageJ 1.44e. That is: referring to, say, *the Colocalisation Analysis plugin* does **not** refer to a reproducible build because it is very hard to regenerate a working Colocalisation Analysis and ImageJ 1.x version that could be used to verify previously published results.
+It gets more subtle when making heavy use of software libraries (sometimes called *dependencies*). It is known, for example, that many plugins in the now-defunct [MacBiophotonics distribution of ImageJ](/software/mbf-imagej) worked fine with ImageJ 1.42l, but stopped working somewhere between that version and ImageJ 1.44e. That is: referring to, say, *the Colocalisation Analysis plugin* does **not** refer to a reproducible build because it is very hard to regenerate a working Colocalisation Analysis and ImageJ 1.x version that could be used to verify previously published results.
 
 Advantages of reproducible builds
 ---------------------------------
@@ -160,7 +160,7 @@ Some cardinal reasons to strive for reproducible builds are:
 
 -   Reproducible builds are essential for the scientific method (see sidebar right).
 -   It becomes possible to use a [feature branch workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) development style where the `master` branch is always release ready—or even a {% include wikipedia title='Continuous delivery' text='continuous delivery'%} approach.
--   [Debugging with git-bisect](Pinpoint_regressions_with_Git) becomes feasible.
+-   [Debugging with git-bisect](/develop/git/pinpoint-regressions) becomes feasible.
 -   As a consequence, it avoids {% include wikipedia title='Technical debt' text='technical debt'%} in favor of a robust development style.
 -   It attracts more developers to the project, since things "just work" out of the box.
 
@@ -197,7 +197,7 @@ In the case of Eclipse, you may need to "Update Maven project" in order to see t
 
 {% include warning-box content='**Current versions of the Eclipse Maven integration (tested with Eclipse Mars) fail to correctly resolve the `LATEST` version tag to `SNAPSHOT`s. Use the command-line client instead.**' %}
 
-Either way, ***be sure to work on a topic branch while developing code in this fashion.*** You will need to clean up your Git history afterwards before merging things to the `master` branch, in order to achieve [reproducible builds](Reproducible_builds).
+Either way, ***be sure to work on a topic branch while developing code in this fashion.*** You will need to clean up your Git history afterwards before merging things to the `master` branch, in order to achieve [reproducible builds](/Architecture#Reproducible_builds).
 
 Versioning
 ==========
@@ -210,4 +210,4 @@ SciJava components use the [Semantic Versioning](Semantic_Versioning) system. Th
 > -   MINOR version when you add functionality in a backwards-compatible manner, and
 > -   PATCH version when you make backwards-compatible bug fixes.
 
-See the [Versioning](Versioning) page for a detailed discussion of SciJava versioning.
+See the [Versioning](/develop/versioning) page for a detailed discussion of SciJava versioning.

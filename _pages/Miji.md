@@ -7,11 +7,11 @@ description: test description
 ---
 
 {% include info-box content='This page covers the original compatibility layer for running ImageJ 1.x within MATLAB.  
-The current library for ImageJ/MATLAB integration is [ImageJ-MATLAB](MATLAB_Scripting); it has many advantages over this legacy project.' %}
+The current library for ImageJ/MATLAB integration is [ImageJ-MATLAB](/scripting/matlab); it has many advantages over this legacy project.' %}
 
 [MIJ](http://bigwww.epfl.ch/sage/soft/mij/) is a java package to exchange images between [MATLAB](MATLAB) and ImageJ. It is written by {% include person content='Sage' %} (Biomedical Image Group (BIG), Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland) and {% include person content='Dimiterpp' %} (Department of Physiology and Pharmacology, Université Catholique de Louvain (UCL), Brussels, Belgium). It allows to start a instance of ImageJ inside [MATLAB](MATLAB) and exchange images back and forth with it. It takes advantage of the fact that the user interface of [MATLAB](MATLAB) is written in Java.
 
-For your convenience, Jacques Pecreaux & {% include person content='Schindelin' %} wrote Miji.m, which makes it super-easy to use Fiji and the libraries and functions provided by [Fiji](Fiji)'s components from within [MATLAB](MATLAB). Simply make sure that the *scripts/* directory of your *Fiji.app/* is in [MATLAB](MATLAB)'s search patch, via {% include bc content='File | Set Path...'%} (on Mac, the file chooser doesn't let you choose directories within .app packages, so you have to use the [MATLAB](MATLAB) command *addpath('/Applications/Fiji.app/scripts')* ). Then a simple
+For your convenience, Jacques Pecreaux & {% include person content='Schindelin' %} wrote Miji.m, which makes it super-easy to use Fiji and the libraries and functions provided by [Fiji](/fiji)'s components from within [MATLAB](MATLAB). Simply make sure that the *scripts/* directory of your *Fiji.app/* is in [MATLAB](MATLAB)'s search patch, via {% include bc content='File | Set Path...'%} (on Mac, the file chooser doesn't let you choose directories within .app packages, so you have to use the [MATLAB](MATLAB) command *addpath('/Applications/Fiji.app/scripts')* ). Then a simple
 
     Miji;
 

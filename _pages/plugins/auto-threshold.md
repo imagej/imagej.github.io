@@ -8,7 +8,7 @@ description: test description
 
 {% include component-stats content='sc.fiji:Auto\_Threshold' %}This plugin binarises 8 and 16-bit images using various **global** (histogram-derived) thresholding methods. The segmented phase is always shown as white (255).
 
-For **local** thresholding rather than global, see the [Auto Local Threshold](Auto_Local_Threshold) plugin.
+For **local** thresholding rather than global, see the [Auto Local Threshold](/plugins/auto-local-threshold) plugin.
 
 Installation
 ------------

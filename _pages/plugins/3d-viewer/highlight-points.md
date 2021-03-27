@@ -6,13 +6,13 @@ categories:
 description: test description
 ---
 
-(Return to the [Developer Documentation](3D_Viewer__Developer_Documentation) page)  
-(Return to the main [3D\_Viewer](3D_Viewer) page)
+(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
+(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 How to highlight named points of a Content
 ------------------------------------------
 
-You can download example source code for this HowTo [here](3D_Viewer__Example_code).
+You can download example source code for this HowTo [here](/plugins/3d-viewer/example-code).
 
 Each `Content` owns a list of named points, which may e.g. be used to mark specific positions. By default, the point list is not shown, but it can be switched on, which displays the points as spheres in the universe and opens a dialog showing a list of the points.
 

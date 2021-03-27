@@ -45,7 +45,7 @@ Where following options are available (in order):
 Other kymograph plugins
 -----------------------
 
-As alternative, there is very well documented [Multi Kymograph](Multi_Kymograph) plugin and its updated version [Kymograph tool](http://biop.epfl.ch/TOOL_KYMOGRAPH.html).
+As alternative, there is very well documented [Multi Kymograph](/plugins/multi-kymograph) plugin and its updated version [Kymograph tool](http://biop.epfl.ch/TOOL_KYMOGRAPH.html).
 
 Version history
 ---------------

@@ -19,7 +19,7 @@ Another option lets you choose whether you would like to see a 3D representation
 
 The top of the left hand dialog box should always give you an idea about the next steps in basic tracing of paths. However, the first step when you load a new image should probably be to enable the option for using Hessian-based analysis of the image - this is done via a checkbox a little further down the dialog box. It will take some time to calculate the Gaussian convolution of the image once you select this option, but this only needs to be done once per image, so it's best to do it at the start. There is more on the use of this option in the [Tips](#Miscellaneous_Tips "wikilink") section below.
 
-*At this point, you may wish to switch to some shorter [step-by-step](Simple_Neurite_Tracer__Step-By-Step_Instructions) instructions - some people have suggested that the description below is a bit verbose. Alternatively, carry on below...*
+*At this point, you may wish to switch to some shorter [step-by-step](/plugins/simple-neurite-tracer/step-by-step-instructions) instructions - some people have suggested that the description below is a bit verbose. Alternatively, carry on below...*
 
 Now, as the instructions suggest, your next step should be to click on the point in the image stack where you want to start the path. To navigate in the stack you would adjust the slices scroll bar or used the {% include key content='&lt;' %} and {% include key content='&gt;' %} keys as usual. The red cross-hairs indicate the corresponding position in the three different views of the stack, but the slice positions will not be synchronized between the three windows unless you hold down {% include key content='Shift' %} while moving the mouse or activate the *Enable cursor snapping* option (window synchronization is particularly useful if you're creating a [branching branch](#Branching_and_Joining_Paths "wikilink") at the beginning or end of a path).
 
@@ -80,7 +80,7 @@ As you can see in this image, the threshold is set too far from the path, since 
 {% include clear%}
 
 
-If you are happy with this, then you might as well click "Pause" so that your computer isn't spending all its CPU on continuing to explore the image. Then you can either save the fill (which will add it to the fill list) by clicking "Save Fill", discard the fill by clicking "Cancel Fill" or use the "Create Image Stack from Fill" button to view the same image stack, but with only the points in that fill preserved. One reason why you might want to do this is that you can then smooth that image and use the [3D Viewer](3D_Viewer) to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [tutorials](Simple_Neurite_Tracer#Tutorials)). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
+If you are happy with this, then you might as well click "Pause" so that your computer isn't spending all its CPU on continuing to explore the image. Then you can either save the fill (which will add it to the fill list) by clicking "Save Fill", discard the fill by clicking "Cancel Fill" or use the "Create Image Stack from Fill" button to view the same image stack, but with only the points in that fill preserved. One reason why you might want to do this is that you can then smooth that image and use the [3D Viewer](/plugins/3d-viewer) to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [tutorials](Simple_Neurite_Tracer#Tutorials)). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
 
 The image stack you would get from the image used in this example might look something like this: ![Having selected the "Create Image from Fill" option](Snt-filling-viewed.png "fig:Having selected the "Create Image from Fill" option")
 
@@ -93,7 +93,7 @@ If you have a labels file for your image, you can load that file to help you mak
 
 #### Key Shortcuts
 
-Key Shortcuts and keyboard accelerators are described in [Key Shortcuts](Simple_Neurite_Tracer__Key_Shortcuts).
+Key Shortcuts and keyboard accelerators are described in [Key Shortcuts](/plugins/snt/key-shortcuts).
 
 #### Miscellaneous Tips
 

@@ -152,7 +152,7 @@ See also
 --------
 
 -   [Javascript Scripting](Javascript_Scripting)
--   [Scripting Help](Scripting_Help)
--   [Scripting\_comparisons](Scripting_comparisons)
+-   [Scripting Help](/scripting)
+-   [Scripting\_comparisons](/scripting/comparisons)
 
 

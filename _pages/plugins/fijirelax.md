@@ -50,7 +50,7 @@ In order to install FijiRelax on your computer, please follow these steps:
 
 3\. In this list, activate **ImageJ-ITK** by checking the corresponding checkboxes. Don't close the window, or reopen it if you read this too late.
 
-4\. Add the **Fijiyama** repository (by clicking on the button **Add update site**, and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama), then check the associated checkbox. Now you can click on **Close** and apply the modifications.
+4\. Add the **Fijiyama** repository (by clicking on the button **Add update site**, and filling the fields : name = "/plugins/fijiyama", site = https://sites.imagej.net/Fijiyama), then check the associated checkbox. Now you can click on **Close** and apply the modifications.
 
 5\. Restart Fiji: a new **FijiRelax** entry should be available in the menu Plugins &gt; Analyze. If not, go back to the Update Manager, and check that the repositories **ImageJ-ITK** and **Fijiyama** are correctly selected.
 

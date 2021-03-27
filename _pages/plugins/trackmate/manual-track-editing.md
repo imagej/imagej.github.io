@@ -9,13 +9,13 @@ description: test description
 Introduction
 ------------
 
-This tutorial show how to manually edit, correct and create spots and tracks in [TrackMate](TrackMate). You might want to use manual editing to correct mistakes of automated segmenting or tracking, to do a full manual annotation of a dataset, or to create a "ground-truth" data.
+This tutorial show how to manually edit, correct and create spots and tracks in [TrackMate](/plugins/trackmate). You might want to use manual editing to correct mistakes of automated segmenting or tracking, to do a full manual annotation of a dataset, or to create a "ground-truth" data.
 
 Manual annotation is seldom the most adequate alternative: depending on the size of the target data, it can take an important amount of time and energy, is not objective, and is not reproducible. But sometimes you have to bite the bullet, whether because a segmenter does not exist for your kind of images, or because it is quicker to manually correct error than to come with the ultimate, flawless algorithm.
 
 Also, tracking is difficult in bio-imaging: images have by construction often a very low SNR, and there is a very wide range of variability amongst experiment types. TrackMate includes generic tracking and segmentation algorithms, and therefore does not exploit the specificity of each problem. It is likely that there are going to be some defects on the difficult use cases you will use it on, and these defects should not stop your science. So there should be a way to manually correct and edit the tracking results. We tried to make it as convenient, easy and quick as possible in TrackMate, should your science requires it.
 
-It is a good idea to be already familiar with the automated segmentation in TrackMate, following the [Getting started with TrackMate](Getting_started_with_TrackMate) tutorial. Here, we will use an incorrect automated segmentation result, and correct it manually. It is perfectly possible to skip the automated part and to do the whole process manually.
+It is a good idea to be already familiar with the automated segmentation in TrackMate, following the [Getting started with TrackMate](/plugins/trackmate/getting-started) tutorial. Here, we will use an incorrect automated segmentation result, and correct it manually. It is perfectly possible to skip the automated part and to do the whole process manually.
 
 The test image: Development of a *C.elegans* embryo
 ---------------------------------------------------
@@ -86,9 +86,9 @@ Launching TrackScheme
 
 Move to the *Display options* panel, skipping the track filtering part.
 
-[TrackScheme](TrackScheme) is a TrackMate tool for the visualization and editing of tracks. It displays a kind of "track map", where a track is laid on a pane, arranged vertically over time, as a Parisian subway train map. Tracks are displayed hierarchically, discarding the spatial location of each spot. Each spot is laid out going through time from top to bottom. It is a great tool particularly to study and edit lineages.
+[TrackScheme](/plugins/trackmate/trackscheme) is a TrackMate tool for the visualization and editing of tracks. It displays a kind of "track map", where a track is laid on a pane, arranged vertically over time, as a Parisian subway train map. Tracks are displayed hierarchically, discarding the spatial location of each spot. Each spot is laid out going through time from top to bottom. It is a great tool particularly to study and edit lineages.
 
-[TrackScheme](TrackScheme) also allows manually editing the tracks. Press the **TrackScheme** button on the last panel. By default, the tracks are displayed as colored circles joined by lines. Each circle represent a spot, and the lines represent a link connecting two dots. The selection in TrackScheme is share across TrackMate, so if you select one circle, it will be highlighted in the HyperStack viewer as well (circled in green).
+[TrackScheme](/plugins/trackmate/trackscheme) also allows manually editing the tracks. Press the **TrackScheme** button on the last panel. By default, the tracks are displayed as colored circles joined by lines. Each circle represent a spot, and the lines represent a link connecting two dots. The selection in TrackScheme is share across TrackMate, so if you select one circle, it will be highlighted in the HyperStack viewer as well (circled in green).
 
 <figure><img src="/media/TrackScheme Start.png" title="TrackScheme_Start.png" width="700" alt="TrackScheme_Start.png" /><figcaption aria-hidden="true">TrackScheme_Start.png</figcaption></figure>
 

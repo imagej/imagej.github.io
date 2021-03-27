@@ -22,7 +22,7 @@ When a large biological specimen must be pictured in high resolution, it must be
 
 The Grid/Collection stitching plugin allows several tiles placed in varying dimensions to be stitched together.
 
-To learn more about Stitching, please read the [Stitching](Stitching) section of [Techniques](Techniques).
+To learn more about Stitching, please read the [Stitching](/plugins/image-stitching) section of [Techniques](/Category_Techniques).
 
 How to use the Grid/Collection Stitching plugin
 ===============================================
@@ -74,6 +74,6 @@ Even using virtual memory with maximum memory allocation can still be too much f
 Other Pitfalls
 ==============
 
-Please see the [Image Stitching](Image_Stitching) page for other precautions.
+Please see the [Image Stitching](/plugins/image-stitching) page for other precautions.
 
  

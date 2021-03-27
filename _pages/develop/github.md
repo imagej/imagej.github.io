@@ -7,7 +7,7 @@ categories: Development,Git
 description: test description
 ---
 
-In the [ImageJ](ImageJ) and related [SciJava](SciJava) projects, we make extensive use of [GitHub](https://github.com/), a web site that hosts [open source](Open_source) projects for free.
+In the [ImageJ](/about) and related [SciJava](SciJava) projects, we make extensive use of [GitHub](https://github.com/), a web site that hosts [open source](Open_source) projects for free.
 
 Here are a few tips how to interact via GitHub more effectively:
 
@@ -56,7 +56,7 @@ Pull Requests are a really neat way to work together. The idea is that Git makes
 Common workflow
 ---------------
 
-Let's assume that you want to provide a fix for a vexing bug in one of your favorite [Fiji](Fiji) plugins. The first thing is to *fork* it – meaning to copy the entire revision history into your personal GitHub space – unless you have done so already. Then you clone that onto your computer (again, unless you have done so already). Make your changes, commit them, push them and then make a Pull Request. See the excellent page [How to contribute to an existing plugin or library](How_to_contribute_to_an_existing_plugin_or_library) for a detailed walk-through.
+Let's assume that you want to provide a fix for a vexing bug in one of your favorite [Fiji](/fiji) plugins. The first thing is to *fork* it – meaning to copy the entire revision history into your personal GitHub space – unless you have done so already. Then you clone that onto your computer (again, unless you have done so already). Make your changes, commit them, push them and then make a Pull Request. See the excellent page [How to contribute to an existing plugin or library](/develop/improving-the-code) for a detailed walk-through.
 
 Testing Pull Requests before merging them
 -----------------------------------------

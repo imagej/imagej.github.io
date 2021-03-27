@@ -10,16 +10,16 @@ description: test description
 
 The {% include wikipedia title='QuickTime File Format' text='QuickTime movie format'%} is a multimedia container format with extension `.mov`.
 
-QuickTime MOV files come in many flavors, which are known as codecs. Whether you can open an MOV file in ImageJ will depend on several factors, including the codec used to store the movie, which version of which operating system you have, and which ImageJ [plugin](Plugin) is used.
+QuickTime MOV files come in many flavors, which are known as codecs. Whether you can open an MOV file in ImageJ will depend on several factors, including the codec used to store the movie, which version of which operating system you have, and which ImageJ [plugin](/fiji/plugins) is used.
 
 There are several ways to import MOV files into ImageJ, each discussed below.
 
 Bio-Formats
 -----------
 
-The [Bio-Formats](Bio-Formats) library supports several, but not all, QuickTime codecs. It is written in pure Java, so those codecs will be readable within ImageJ on all platforms (Windows, OS X, Linux, etc.).
+The [Bio-Formats](/formats/bio-formats) library supports several, but not all, QuickTime codecs. It is written in pure Java, so those codecs will be readable within ImageJ on all platforms (Windows, OS X, Linux, etc.).
 
-The Bio-Formats plugins are bundled with the [Fiji](Fiji) distribution of ImageJ.
+The Bio-Formats plugins are bundled with the [Fiji](/fiji) distribution of ImageJ.
 
 See the [Bio-Formats QuickTime supported codecs](https://www.openmicroscopy.org/site/support/bio-formats/formats/quicktime-movie.html) page for a list of supported codecs.
 

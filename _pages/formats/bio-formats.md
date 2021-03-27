@@ -13,7 +13,7 @@ description: test description
 {% include github org='openmicroscopy' repo='bioformats' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='OME Bio-Formats plugins' logo='<img src="/media/Bio-formats-icon.png" width="96"/>' author=' [Open Microscopy Environment](https://www.openmicroscopy.org/) :  
-- [UW-Madison LOCI](LOCI)  
+- [UW-Madison LOCI](/orgs/loci)  
 - [Glencoe Software](https://www.glencoesoftware.com/)  
 - [University of Dundee](https://www.dundee.ac.uk/)' maintainer='OME development team' filename=' [See Bio-Formats Downloads page](https://downloads.openmicroscopy.org/bio-formats/)' source=source latest-version=' [See Bio-Formats Downloads page](https://downloads.openmicroscopy.org/bio-formats/)' status='active' category='[:Category:Import-Export](Category_Import-Export)' %}
 
@@ -31,13 +31,13 @@ See [LOCI's Bio-Formats site](https://loci.wisc.edu/software/bio-formats) for a 
 Documentation
 -------------
 
-What follows is a brief overview of the available plugins. You will find them all under the "Bio-Formats" submenu of Plugins. See the [Bio-Formats web site](https://www.openmicroscopy.org/bio-formats/) for additional information about Bio-Formats in general.
+What follows is a brief overview of the available plugins. You will find them all under the "/formats/bio-formats" submenu of Plugins. See the [Bio-Formats web site](https://www.openmicroscopy.org/bio-formats/) for additional information about Bio-Formats in general.
 
 See especially the [Using Bio-Formats](https://docs.openmicroscopy.org/latest/bio-formats/users/imagej/load-images.html#using-bio-formats-to-load-images-into-imagej) page for detailed instructions.
 
 ### Bio-Formats Importer
 
-The **Bio-Formats Importer** is a plugin for reading data into Fiji. It can open many dozens of proprietary life sciences formats, and standardize their acquisition metadata into a common [OME data model](https://docs.openmicroscopy.org/latest/ome-model/developers/model-overview.html). It will also extract and set basic metadata values such as [spatial calibration](SpatialCalibration) if they are available in the file.
+The **Bio-Formats Importer** is a plugin for reading data into Fiji. It can open many dozens of proprietary life sciences formats, and standardize their acquisition metadata into a common [OME data model](https://docs.openmicroscopy.org/latest/ome-model/developers/model-overview.html). It will also extract and set basic metadata values such as [spatial calibration](/Spatial_Calibration) if they are available in the file.
 
 Often, you will not need to worry about this plugin to import your data, because Bio-Formats is largely integrated with the File/Open command of Fiji. However, for certain file formats, you may wish to explicitly activate the Bio-Formats Importer to override the default behavior of Fiji. For example, by default Fiji uses some built-in logic to open TIFF files, but this logic may fail with certain TIFFs. The Bio-Formats Importer plugin may be able to import such TIFFs successfully.
 
@@ -94,7 +94,7 @@ The **Bio-Formats Plugins Shortcut Window** is a small window with a quick-launc
 
 ### Update Bio-Formats Plugins
 
-The **Update Bio-Formats Plugins** command will check online for updates to the Bio-Formats Plugins. In the case of Fiji, we recommend that you do not use this method of update, but instead use the [Fiji Updater](Update_Fiji).
+The **Update Bio-Formats Plugins** command will check online for updates to the Bio-Formats Plugins. In the case of Fiji, we recommend that you do not use this method of update, but instead use the [Fiji Updater](/plugins/updater).
 
 Calling Bio-Formats from the command line
 -----------------------------------------
@@ -102,7 +102,7 @@ Calling Bio-Formats from the command line
 You can invoke Bio-Formats from the command line using the [ImageJ Launcher](Launcher):
 
 1.  Use the [Macro Recorder](Introduction_into_Macro_Programming#The_recorder) to record the line of macro code that runs Bio-Formats that way you want.
-2.  Click "Create" to pop up the [Script Editor](Script_Editor), edit as desired, then save the macro as a `.ijm` macro file.
+2.  Click "Create" to pop up the [Script Editor](/scripting/script-editor), edit as desired, then save the macro as a `.ijm` macro file.
 3.  Run the macro from the command line; e.g.:
 
 <!-- -->
@@ -115,7 +115,7 @@ Note that you cannot use the [--headless option](Headless#Running_macros_in_head
 
 Here is an example macro created in such a fashion:
 
-    run("Bio-Formats", "open=/Users/jdoe/data.ome.tif " +
+    run("/formats/bio-formats", "open=/Users/jdoe/data.ome.tif " +
       "autoscale color_mode=Default view=Hyperstack stack_order=XYCZT");
     saveAs("Tiff", "/Users/jdoe/Desktop/result.tif");
 

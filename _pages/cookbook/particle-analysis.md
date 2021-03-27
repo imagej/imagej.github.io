@@ -15,7 +15,7 @@ Automatic Particle counting
 
 Automatic particle counting can be done if the image does not have too many individual particles touching. Manual particle counting can be done using the [Multi-point Tool](https://imagej.net/docs/guide/146-19.html#sec:Multi-point-Tool).
 
-[Segmentation](Segmentation), or the ability to distinguish an object from its background, can be a difficult issue to deal with. Once this has been done, however, the object can then be analyzed.
+[Segmentation](/techniques/segmentation), or the ability to distinguish an object from its background, can be a difficult issue to deal with. Once this has been done, however, the object can then be analyzed.
 
 **RAW Threshold Watershed “AnalyzeParticles”** ![266\*177px](/media/Raw Threshold Watershed AnalyzeParticles2.jpg "fig:266*177px")
 
@@ -81,7 +81,7 @@ Particle tracking
 
 **Particle Tracker** Particle Tracker is a 2D feature point-tracking plugin for the automated detection and analysis of particle trajectories as recorded by video imaging in cell biology. The algorithm is decsribed in Sbalzarini and Koumoutsakos (2005\[1\]).
 
-**TrackMate** Use the menu command {% include bc content='Plugins | Tracking | TrackMate'%}. This plugin allows you to perform single particle tracking of spot-like structures. For more in-depth information, see the [TrackMate tutorial and explanation](TrackMate).
+**TrackMate** Use the menu command {% include bc content='Plugins | Tracking | TrackMate'%}. This plugin allows you to perform single particle tracking of spot-like structures. For more in-depth information, see the [TrackMate tutorial and explanation](/plugins/trackmate).
 
 **Manual Tracking** Use the menu command {% include bc content='Plugins | Tracking | Manual Tracking'%}. This tool allows you to keep track of the movement of a cell.
 

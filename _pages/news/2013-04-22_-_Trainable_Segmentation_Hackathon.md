@@ -6,11 +6,11 @@ categories: News,ImageJ2,Hackathons
 description: test description
 ---
 
-For three days last week, [LOCI](http://loci.wisc.edu/) in Madison hosted Dr Ignacio Arganda-Carreras of [Trainable Segmentation](Trainable_Segmentation) fame for a mini-[hackathon](Hackathon). Just in case you do not know what the Trainable Segmentation is: it provides an intuitive, graphical way to apply advanced Machine Learning techniques to image segmentation.
+For three days last week, [LOCI](http://loci.wisc.edu/) in Madison hosted Dr Ignacio Arganda-Carreras of [Trainable Segmentation](/plugins/tws) fame for a mini-[hackathon](/events/Hackathon). Just in case you do not know what the Trainable Segmentation is: it provides an intuitive, graphical way to apply advanced Machine Learning techniques to image segmentation.
 
 During this hackathon, Ignacio held a well-received workshop introducing the underlying technique and teaching how to use it in advanced ways by using one of Fiji's scripting languages.
 
-As a lot of scientists rely on the Trainable Segmentation (I was impressed that it is apparently used already in dozens of published papers, even before the Trainable Segmentation paper is out, point in favor of making your research available openly, to as many people as possible!), we added a few unit tests. These tests are implemented as Java code that generates test images and compares the results to known-good ones, and they get executed by the [ImageJ Jenkins server](Jenkins) whenever Fiji's source code changes. That way, we can be reasonably sure that the plugin still does what it is expected to, even if we make a ton of changes.
+As a lot of scientists rely on the Trainable Segmentation (I was impressed that it is apparently used already in dozens of published papers, even before the Trainable Segmentation paper is out, point in favor of making your research available openly, to as many people as possible!), we added a few unit tests. These tests are implemented as Java code that generates test images and compares the results to known-good ones, and they get executed by the [ImageJ Jenkins server](/develop/jenkins) whenever Fiji's source code changes. That way, we can be reasonably sure that the plugin still does what it is expected to, even if we make a ton of changes.
 
 We also made progress on a completely new idea: making the Trainable Segmentation extensible. What does this mean, exactly?
 
@@ -18,7 +18,7 @@ The Trainable Segmentation plugin works by calculating a number of features for 
 
 Typically, combinations of the most common image processing filters form a good basis for a feature space to discern between the different classes of interest.
 
-Sometimes, however, you need to augment that feature space with highly specialized filters, e.g. [Tubeness](Tubeness) or a non-standard wavelet filter to make it easier to segment your data reliably.
+Sometimes, however, you need to augment that feature space with highly specialized filters, e.g. [Tubeness](/plugins/tubeness) or a non-standard wavelet filter to make it easier to segment your data reliably.
 
 This is where our work comes in: similar to ImageJ2 commands, programmers will be able to implement their own features for use with the Trainable Segmentation.
 
@@ -26,11 +26,11 @@ All it needs is to conform to a simple interface and to add an annotation (no wo
 
 That way, if you come up with a powerful algorithm that makes classification of your objects of interest much easier, just a few minutes of work will enable you to include that algorithm as a feature (or multiple features) in the Trainable Segmentation.
 
-Something else we started to work on: we identified the places to change for [ImgLib2](ImgLib2) support.
+Something else we started to work on: we identified the places to change for [ImgLib2](/imglib2) support.
 
 Due to ImgLib2's interface-drive design, it is very easy to wrap any data structure (e.g. Icy's, Alida's, ImageJ 1.x', etc) to conform with ImgLib2's interfaces, so all of the algorithms implemented to work with ImgLib2 interfaces can run on all of aforementioned data structures.
 
-Hence, once Trainable Segmentation is ported to work on ImgLib2 structures, it will be much more useful: it will no longer be limited to [ImageJ 1.x](ImageJ1)!
+Hence, once Trainable Segmentation is ported to work on ImgLib2 structures, it will be much more useful: it will no longer be limited to [ImageJ 1.x](/software/imagej1)!
 
 All in all, a very productive hackathon!
 

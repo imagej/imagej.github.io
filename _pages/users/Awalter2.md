@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Alison Walter' affiliation='UW-Madison [LOCI](LOCI) (former)' loci='alison-walter' github='awalter17' forum='awalter17' %}
+{% include user-box name='Alison Walter' affiliation='UW-Madison [LOCI](/orgs/loci) (former)' loci='alison-walter' github='awalter17' forum='awalter17' %}

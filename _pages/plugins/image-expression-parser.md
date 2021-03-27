@@ -24,9 +24,9 @@ This plugin parses arbitrary mathematical expressions and compute results using 
 
 where A,B and C are opened images of the same dimensions.
 
-As of version 2.x, pixel per pixel based operations are supported and [Imglib](Imglib) algorithm are supported.
+As of version 2.x, pixel per pixel based operations are supported and [Imglib](/imglib1) algorithm are supported.
 
-The parsing ability is provided by the JEP library: Java Expression Parser v.jep-2.4.1-ext-1.1.1-gpl. This is the last version released under the GPL by its authors Nathan Funk and Richard Morris, see [Singular System](http://www.singularsys.com/jep/). Internally, this plugin uses [Imglib](Imglib) to deal with images.
+The parsing ability is provided by the JEP library: Java Expression Parser v.jep-2.4.1-ext-1.1.1-gpl. This is the last version released under the GPL by its authors Nathan Funk and Richard Morris, see [Singular System](http://www.singularsys.com/jep/). Internally, this plugin uses [Imglib](/imglib1) to deal with images.
 
 Internally, images are handled by copying them to a new float type image, so as to avoid clipping effect. The result image returned is of float type as well.
 

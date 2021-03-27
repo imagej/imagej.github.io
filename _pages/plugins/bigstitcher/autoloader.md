@@ -41,7 +41,7 @@ In the next window, you can review and correct the automatic metadata definition
 
 ### Views within files
 
-We are using [Bio-Formats](Bio-Formats) under the hood. In Bio-Formats, files can include multiple **series**, each containing multiple **channels**, time points and z-slices.
+We are using [Bio-Formats](/formats/bio-formats) under the hood. In Bio-Formats, files can include multiple **series**, each containing multiple **channels**, time points and z-slices.
 
 The automatic loader tries to assign the stacks to different channels, illuminations, tiles, angles and time points automatically and you can review the choices here.
 
@@ -144,6 +144,6 @@ As with the macro-scriptable version of this dialog, if there are multiple angle
 
 {% include thumbnail src='/media/BigStitcher Arrange Views004.png' title='Interactive grid alignment window.'%}
 
-Go back to the [dataset definition overview](BigStitcher_Define_new_dataset)
+Go back to the [dataset definition overview](/plugins/bigstitcher/define-new-dataset)
 
 Go back to the [main page](BigStitcher#Documentation)

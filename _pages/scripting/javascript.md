@@ -7,7 +7,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include wikipedia title='JavaScript' text='JavaScript'%} is a high-level, dynamic, untyped programming language, supporting multiple paradigms including object-oriented, imperative and functional programming styles. Although there are similarities between JavaScript and [Java](Java), including language name and syntax, the two are distinct languages and differ greatly in their design.
+{% include wikipedia title='JavaScript' text='JavaScript'%} is a high-level, dynamic, untyped programming language, supporting multiple paradigms including object-oriented, imperative and functional programming styles. Although there are similarities between JavaScript and [Java](/develop/plugins), including language name and syntax, the two are distinct languages and differ greatly in their design.
 
 A note about JavaScript engines
 ===============================
@@ -846,6 +846,6 @@ Links
 -   [Performance tips](http://www.mozilla.org/rhino/perf.html) (Java 6).
 -   [Tutorial](http://winterbe.com/posts/2014/04/05/java8-nashorn-tutorial/) on Oracle Nashorn (Java 8).
 
-See also the [Scripting comparisons](Scripting_comparisons).
+See also the [Scripting comparisons](/scripting/comparisons).
 
 

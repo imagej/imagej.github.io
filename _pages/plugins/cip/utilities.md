@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-This page provides user documentation for the utility functions of the [CIP](CIP) package
+This page provides user documentation for the utility functions of the [CIP](/plugins/cip) package
 
 {% include cip content='Navigation' %}
 

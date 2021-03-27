@@ -16,7 +16,7 @@ description: test description
 
 The plugins use the {% include wikipedia title='Scale-invariant feature transform' text='Scale Invariant Feature Transform'%} (SIFT) and [Multi-Scale Oriented Patches](http://research.microsoft.com/research/pubs/view.aspx?msr_tr_id=MSR-TR-2004-133) (MOPS) for local feature description. The thus established matches are filtered using the {% include wikipedia title='RANSAC' text='Random Sample Consensus'%} (RANSAC).
 
-The extracted sets of corresponding landmarks and the calculated transformations are used in [TrakEM2](TrakEM2), [Register Virtual Stack Slices](Register_Virtual_Stack_Slices) and [BUnwarpJ](BUnwarpJ) for image registration.
+The extracted sets of corresponding landmarks and the calculated transformations are used in [TrakEM2](/plugins/trakem2), [Register Virtual Stack Slices](/plugins/register-virtual-stack-slices) and [BUnwarpJ](/plugins/bunwarpj) for image registration.
 
 Parameters
 ----------

@@ -18,7 +18,7 @@ In the case of 24 bit RGB images the macro lets you either apply dithering to th
 Installation
 ------------
 
-Copy the source code below and save it into a file called "Dithering\_.txt" somewhere in the /Plugins folder. Restarting Fiji or ImageJ will show a new command called "Dithering".
+Copy the source code below and save it into a file called "Dithering\_.txt" somewhere in the /Plugins folder. Restarting Fiji or ImageJ will show a new command called "/plugins/dithering".
 
 Available methods
 -----------------
@@ -39,7 +39,7 @@ Macro code
     // G. Landini at bham. ac. uk
     // 17/ May 2009
 
-    Dialog.create("Dithering");
+    Dialog.create("/plugins/dithering");
     items=newArray("Floyd-Steinberg", "Atkinson", "Jarvis-Judice-Ninke","Stucki",
             "Bayer_2x2", "Bayer_4x4", "Bayer_8x8", "Clustered_4x4", "Random");
     doColour = false;

@@ -116,4 +116,4 @@ Notes
 -----
 
 -   Note that `Img` is just convenience interface. When you get more proficient with ImgLib2 you will find yourself using it less and less. You will either be more concrete or more general than that. In the above example, we could be more concrete -- the result of the `ArrayImgFactory< UnsignedByteType >.create()` is actually an `ArrayImg< UnsignedByteType, ByteArray >`. In algorithm implementations, you want to be as generic as possible to not constrain yourself to specific image types. You will specify only the super-interfaces of `Img` that you really need. For instance, if you need something which has boundaries and can be iterated you would use `IterableInterval`.
--   There are more [ImgLib2 Examples](ImgLib2_Examples) on [ Opening, creating and displaying images](ImgLib2_Examples#Example_1_-_Opening,_creating_and_displaying_images).
+-   There are more [ImgLib2 Examples](/imglib2/examples) on [ Opening, creating and displaying images](ImgLib2_Examples#Example_1_-_Opening,_creating_and_displaying_images).

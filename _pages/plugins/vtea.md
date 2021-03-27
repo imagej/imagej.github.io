@@ -25,7 +25,7 @@ Volumetric Tissue Exploration and Analysis
 
 **Mesoscale 3D analysis.** We built segmentation to handle massive datasets and to operate seamlessly on an embedded database to enable analysis of 100’s of thousands of cells and will incorporate tools for clustering and dimensionality reduction.
 
-**Original image referencing.** The power of 3DTC in VTEA enables the localization of identified cells in the analysis space in the original image, *in situ*, and in 3D with [ClearVolume](ClearVolume).
+**Original image referencing.** The power of 3DTC in VTEA enables the localization of identified cells in the analysis space in the original image, *in situ*, and in 3D with [ClearVolume](/plugins/clearvolume).
 
 {% include info-box content='VTEA is still under active development. Version 1.0 is tentatively planned for an October release..' %}
 
@@ -38,14 +38,14 @@ Importantly, our solution is in its infancy. In fact, the tools are relatively s
 Installing
 ----------
 
-`   To install the VTEA plugin use, `[`How`` ``to`` ``follow`` ``a`` ``3rd`` ``party`` ``update`` ``site`](How_to_follow_a_3rd_party_update_site)` and check the update site:`  
+`   To install the VTEA plugin use, `[`How`` ``to`` ``follow`` ``a`` ``3rd`` ``party`` ``update`` ``site`](/update-sites/following)` and check the update site:`  
 `   "Volumetric Tissue Exploration and Analysis" `**`OR`**` follow the following four steps:`
 
 ### 1. Start updater
 
-<figure><img src="/media/Step 1.jpg" title="Select &quot;Update...&quot; under &quot;Help&quot;." width="500" alt="Select &quot;Update...&quot; under &quot;Help&quot;." /><figcaption aria-hidden="true">Select "Update..." under "Help".</figcaption></figure>
+<figure><img src="/media/Step 1.jpg" title="Select &quot;Update...&quot; under &quot;Help&quot;." width="500" alt="Select &quot;Update...&quot; under &quot;Help&quot;." /><figcaption aria-hidden="true">Select "Update..." under "/help".</figcaption></figure>
 
-Select "Update..." under "Help".
+Select "Update..." under "/help".
 
 ### 2. Add update site
 

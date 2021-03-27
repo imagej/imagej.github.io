@@ -6,9 +6,9 @@ categories: News
 description: test description
 ---
 
-We are happy to announce [TrackMate](TrackMate) version 2.5.0, but aren't we each time?
+We are happy to announce [TrackMate](/plugins/trackmate) version 2.5.0, but aren't we each time?
 
-This version brings mainly a complete rewrite of the [LAP tracker](TrackMate_algorithms#LAP_trackers), that brings major improvement in speed performance and memory usage, as well as several enhancement in the UI of [TrackScheme](TrackScheme).
+This version brings mainly a complete rewrite of the [LAP tracker](TrackMate_algorithms#LAP_trackers), that brings major improvement in speed performance and memory usage, as well as several enhancement in the UI of [TrackScheme](/plugins/trackmate/trackscheme).
 
 The new LAP tracker
 -------------------
@@ -30,7 +30,7 @@ There are tiny differences with the previous version, notably in the way cost th
 TrackScheme UI improvement
 --------------------------
 
-[TrackScheme](TrackScheme) now features a search box and proper row and column headers.
+[TrackScheme](/plugins/trackmate/trackscheme) now features a search box and proper row and column headers.
 
 <img src="/media/TrachSchemeSearchBar.png" width="600"/>
 

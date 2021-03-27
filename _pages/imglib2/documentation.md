@@ -6,6 +6,6 @@ categories:
 description: test description
 ---
 
-1.  [ Getting Started](ImgLib2_-_Getting_Started)
-2.  [ Accessors](ImgLib2_-_Accessors)
-3.  [ Accessibles](ImgLib2_-_Accessibles)
+1.  [ Getting Started](/imglib2/getting-started)
+2.  [ Accessors](/imglib2/accessors)
+3.  [ Accessibles](/imglib2/accessibles)

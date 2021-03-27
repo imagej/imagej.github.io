@@ -11,12 +11,12 @@ There are several mailing lists for community discussion and troubleshooting.{% 
 
 Please [search the list archives](http://search.imagej.net/) first to find any previous discussions regarding your problem.
 
-If you have a natural allergy toward subscribing to mailing lists, there are [other ways to get help, too](Help).
+If you have a natural allergy toward subscribing to mailing lists, there are [other ways to get help, too](/help).
 
 Bugs
 ----
 
-If you have found a bug, please [submit a bug report](Bug_reporting_best_practices) via the Help menu's [Report a Bug](Report_a_Bug) plugin.
+If you have found a bug, please [submit a bug report](/help/bug-reporting-best-practices) via the Help menu's [Report a Bug](/help/report-a-bug) plugin.
 
 [Search for an existing bug](http://search.imagej.net/) before reporting a new one.
 
@@ -25,7 +25,7 @@ ImageJ
 
 | List           | Description                                                                                                                                                                                                                                                                          | Nabble                                      | Archives                     |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|------------------------------------------------------|
-| [ImageJ](https://imagej.net/list.html) | For general user and developer discussion about [ImageJ](ImageJ), mostly focused on [ImageJ1](ImageJ1). For a larger community of [ImageJ2](ImageJ2) and [Fiji](Fiji) users, the [Image.sc Forum](https://forum.image.sc/) is preferred. | [Nabble](http://imagej.1557.x6.nabble.com/) | [Archives](http://list.nih.gov/archives/imagej.html) |
+| [ImageJ](https://imagej.net/list.html) | For general user and developer discussion about [ImageJ](/about), mostly focused on [ImageJ1](/software/imagej1). For a larger community of [ImageJ2](/software/imagej2) and [Fiji](/fiji) users, the [Image.sc Forum](https://forum.image.sc/) is preferred. | [Nabble](http://imagej.1557.x6.nabble.com/) | [Archives](http://list.nih.gov/archives/imagej.html) |
 
 Supporting and related software
 -------------------------------
@@ -33,4 +33,4 @@ Supporting and related software
 | List                                                  | Description                                                                                                   | Archives                                                  |
 |-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | [SciJava](http://groups.google.com/group/scijava)                             | For discussion of [SciJava](SciJava) supporting libraries.                                         | [Archives](http://groups.google.com/group/scijava)                                |
-| [μManager](http://lists.sourceforge.net/lists/listinfo/micro-manager-general) | [Micro-Manager](Micro-Manager): open source software package for control of automated microscopes. | [Archives](http://sourceforge.net/p/micro-manager/mailman/micro-manager-general/) |
+| [μManager](http://lists.sourceforge.net/lists/listinfo/micro-manager-general) | [Micro-Manager](/software/micro-manager): open source software package for control of automated microscopes. | [Archives](http://sourceforge.net/p/micro-manager/mailman/micro-manager-general/) |

@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-This page provides user documentation for the Math category of the [CIP](CIP) scripting package
+This page provides user documentation for the Math category of the [CIP](/plugins/cip) scripting package
 
 {% include cip content='Navigation' %}
 

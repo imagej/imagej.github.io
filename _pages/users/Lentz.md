@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Rick Lentz' affiliation='UW-Madison [LOCI](LOCI) (former)' loci='rick-lentz' %}
+{% include user-box name='Rick Lentz' affiliation='UW-Madison [LOCI](/orgs/loci) (former)' loci='rick-lentz' %}

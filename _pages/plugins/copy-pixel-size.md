@@ -19,6 +19,6 @@ A second dialog allows to enter the scale factors.
 Installation
 ------------
 
-Available as part of the [Cookbook](Cookbook) suite of plugins.
+Available as part of the [Cookbook](/cookbook) suite of plugins.
 
  

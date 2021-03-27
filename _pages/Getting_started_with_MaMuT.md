@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-This page contains a tutorial for the [MaMuT](MaMuT) plugin. It describes and document all its features using a publication related dataset.
+This page contains a tutorial for the [MaMuT](/plugins/mamut) plugin. It describes and document all its features using a publication related dataset.
 
 Publication.
 ------------
@@ -20,7 +20,7 @@ Installation.
 
 MaMuT is a Fiji plugin that depends on its components to run. Download Fiji from [its website](https://fiji.sc/#download) if you do not have it already.
 
-MaMuT is not shipped with Fiji by default; you have to install it in Fiji. Thanks to the ImageJ [**Updater**](Updater), there is not much to do. Simply follow the instructions on how to [**follow a 3rd party site**](How_to_follow_a_3rd_party_update_site), and subscribe to the MaMuT update site. Here is briefly how to do it.
+MaMuT is not shipped with Fiji by default; you have to install it in Fiji. Thanks to the ImageJ [**Updater**](/plugins/updater), there is not much to do. Simply follow the instructions on how to [**follow a 3rd party site**](/update-sites/following), and subscribe to the MaMuT update site. Here is briefly how to do it.
 
 Got to {% include bc content='Help | Update...'%} and click on the **Manage update sites** button. In the window that appear, find the **MaMuT** checkbox and tick it. Then close the window. In the files to update list, there should be a **plugins/MaMuT\_.jar** appearing. Click on **Apply changes** button, then restart Fiji.
 
@@ -35,7 +35,7 @@ If you already have such a file, skip to the next section. Otherwise, we lazily 
 
 -   they are [**opened as an ImageJ stack**](BigDataViewer#Exporting_from_ImageJ_Stacks), or
 -   they come from a [**SPIM processing pipeline**](BigDataViewer#Integration_with_Fiji.27s_SPIMage_Processing_Tools).
--   they come from a new [**Multiview-Reconstruction**](Multiview-Reconstruction) datasets that are automatically in BigDataViewer format.
+-   they come from a new [**Multiview-Reconstruction**](/plugins/multiview-reconstruction) datasets that are automatically in BigDataViewer format.
 
 Once you have prepared your images for opening in the BigDataViewer, you should have a `.xml` file and a possibly very large `.h5` file on your computer. The `.xml` file must be the output of the BigDataViewer data preparation. It should start with the following lines:
 
@@ -70,7 +70,7 @@ If you are familiar with the BigDataViewer, there is a few useful things to know
 
 To save the annotation to a MaMuT file, press the **Save** button on the main GUI window. This will let you save to a file which is typically named `bdv_file-mamut.xml` if the BigDataViewer file was named `bdv_file.xml`.
 
-The MaMuT files are actually [**TrackMate**](TrackMate) files. They are XML files with 3 main sections:
+The MaMuT files are actually [**TrackMate**](/plugins/trackmate) files. They are XML files with 3 main sections:
 
     <?xml version="1.0" encoding="UTF-8"?>
       <TrackMate version="3.1.0">
@@ -102,7 +102,7 @@ MaMuT offers three kind of views:
 
 -   **MaMuT Viewer** is the main view that overlays the image data and the annotations using the physical coordinate system. This is where you will mainly interact with the data, and create, edit and move spots around. This view is based on the BigDataViewer.
 -   **TrackScheme** is the track browser, taken from TrackMate. It only shows the annotation data in a hierarchical way, discarding any physical location information. Tracks are laid out along time ranging from top to bottom, and arranged from left to right according to their name. This view is useful to make sense of the annotation data, as well as to edit links between spots.
--   **3D Viewer** shows a 3D View of the annotation data in the physical coordinate system, without the image data. It is based on the [**ImageJ 3D Viewer**](3D_Viewer).
+-   **3D Viewer** shows a 3D View of the annotation data in the physical coordinate system, without the image data. It is based on the [**ImageJ 3D Viewer**](/plugins/3d-viewer).
 
 Let's start with the MaMuT Viewer. Click on its button on the GUI, the one with a picture of a mammoth. A BigDataViewer window should appear.
 
@@ -359,7 +359,7 @@ The hierarchical layout of the lineages provided by TrackScheme can be useful fo
 
 <img src="/media/Bdv-MaMuT TrackSchemeExportButtons.png" width="500"/>
 
--   The **Capture undecorated TrackScheme** button will generate a view of [TrackScheme](TrackScheme) and open it in Fiji. The background is set to white and the zoom level is set to the default, regardless of what the actual zoom is in TrackScheme. Once this image is in Fiji, you can modify it, save it, etc using the tools in Fiji.
+-   The **Capture undecorated TrackScheme** button will generate a view of [TrackScheme](/plugins/trackmate/trackscheme) and open it in Fiji. The background is set to white and the zoom level is set to the default, regardless of what the actual zoom is in TrackScheme. Once this image is in Fiji, you can modify it, save it, etc using the tools in Fiji.
 -   The **Capture TrackScheme with decorations** button does the converse. It captures a snapshot of the TrackScheme window as is, and uses the current zoom level to generate an image.
 -   The **Export to...** opens file browser on which you can pick the export file format and its location. Many file formats are supported:
     -   PNG image file with/without transparent background.
@@ -372,7 +372,7 @@ The hierarchical layout of the lineages provided by TrackScheme can be useful fo
 
 ### Managing a selection in TrackScheme.
 
-[TrackScheme](TrackScheme) is useful to build a selection and query its properties. As we said above, TrackScheme does not abide any visibility setting. Spots and links are always visible, which is useful to build a selection. Spots and links are added to the current selection in a classical way:
+[TrackScheme](/plugins/trackmate/trackscheme) is useful to build a selection and query its properties. As we said above, TrackScheme does not abide any visibility setting. Spots and links are always visible, which is useful to build a selection. Spots and links are added to the current selection in a classical way:
 
 -   {% include key content='press\|Left-Click' %} on a spot or link to set the selection with this spot or link. The selection is cleared before.
 -   {% include key content='press\|Left-Click' %} outside a spot to clear the selection.
@@ -525,7 +525,7 @@ This command really reads into the raw data, and therefore generate ImageJ stack
 Numerical features.
 -------------------
 
-We already skimed over numerical features when we discussed the display settings for spots and tracks. Numerical features are scalar values associated to a spot, a link or a track that measures some useful value. For instance, the X position of a spot, the displacement across a link, and the number of split events in a track. The MaMuT feature system is direcly imported from [TrackMate](TrackMate), but only contains a subset of feature definitions from TrackMate and a few ones related to cell lineaging.
+We already skimed over numerical features when we discussed the display settings for spots and tracks. Numerical features are scalar values associated to a spot, a link or a track that measures some useful value. For instance, the X position of a spot, the displacement across a link, and the number of split events in a track. The MaMuT feature system is direcly imported from [TrackMate](/plugins/trackmate), but only contains a subset of feature definitions from TrackMate and a few ones related to cell lineaging.
 
 Numerical features are automatically kept in sync with the annotation. As soon as you add an annotation or modify and delete and existing one, the recalculation of features is triggered. As mentioned above however, the range display on the main GUI window is not, and you need to click over it to refresh the displayed colormap and its range.
 

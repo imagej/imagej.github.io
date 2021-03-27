@@ -7,16 +7,16 @@ categories: Development,Tutorials,Git
 description: test description
 ---
 
-{% include info-box content='This guide discusses how to modify an already-existing [plugin](Plugin), and contribute your changes back.  
-\* If you are interested in developing a **new** plugin instead, see [Writing plugins](Writing_plugins).  
-\* If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](Distribution).' %}
+{% include info-box content='This guide discusses how to modify an already-existing [plugin](/fiji/plugins), and contribute your changes back.  
+\* If you are interested in developing a **new** plugin instead, see [Writing plugins](/develop/plugins).  
+\* If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/develop/distributing).' %}
 
 <div style="float: left; padding-right: 1em">
 </div>
 
 == Introduction == Sometimes you may want to contribute to an already existing ImageJ plugin or library. For example, a bug is found in one plugin and you want to fix it, or you would like to improve one library by adding more functions. This tutorial describes step by step how to do it with a practical case.
 
-In many cases, the plugin or library will **have its own source code repository** online somewhere. For instance, in the [Fiji](Fiji) project, plugin code lives in the [Fiji GitHub organization](https://github.com/fiji); e.g., the **VIB-lib** library's repository is {% include github org='fiji' repo='VIB-lib' label='VIB-lib' %}. This structure allows for easy, independent development of each individual component.
+In many cases, the plugin or library will **have its own source code repository** online somewhere. For instance, in the [Fiji](/fiji) project, plugin code lives in the [Fiji GitHub organization](https://github.com/fiji); e.g., the **VIB-lib** library's repository is {% include github org='fiji' repo='VIB-lib' label='VIB-lib' %}. This structure allows for easy, independent development of each individual component.
 
 This tutorial assumes you are familiar with [Git](Git). If this is not the case, please go ahead and read the existing [documentation](Git).
 
@@ -70,9 +70,9 @@ Now we develop our code to include our changes in the library.
 
 ### Building
 
-Most of the ImageJ plugins and support libraries are developed as [Maven](Maven) projects. Developers typically prefer one of the supported [Integrated Development Environments](IDEs) to build and run the code.
+Most of the ImageJ plugins and support libraries are developed as [Maven](/develop/maven) projects. Developers typically prefer one of the supported [Integrated Development Environments](/develop/ides) to build and run the code.
 
-The most popular IDE is undoubtedly Eclipse, and you can follow [this tutorial](Eclipse) to build the plugin or library (you only need to change the URL from the ImageJ repository to the appropriate plugin or library repository URL).
+The most popular IDE is undoubtedly Eclipse, and you can follow [this tutorial](/develop/imagej-in-eclipse) to build the plugin or library (you only need to change the URL from the ImageJ repository to the appropriate plugin or library repository URL).
 
 ### Commit early, commit often!
 

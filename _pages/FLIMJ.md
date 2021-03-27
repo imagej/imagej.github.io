@@ -21,7 +21,7 @@ flimj-ops-""ver"".jar' source=source latest-version='1.0.0' website='https://fli
 Introduction
 ------------
 
-The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data within ImageJ, using the [FLIMLib](https://flimlib.github.io/) library. The plugin can be installed into the [Fiji](Fiji) distribution of ImageJ simply by enabling the FLIMJ [update site](Update_site). Features include:
+The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data within ImageJ, using the [FLIMLib](https://flimlib.github.io/) library. The plugin can be installed into the [Fiji](/fiji) distribution of ImageJ simply by enabling the FLIMJ [update site](Update_site). Features include:
 
 -   Fit individual pixels, entire images per-pixel, or do global analysis on entire images, using FLIMLib's rapid lifetime determination (RLD), Levenberg-Marquardt (LMA) or global analysis (Global) fitting algorithms
 -   Single, double and triple exponential fits
@@ -30,7 +30,7 @@ The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data within Ima
 -   Full control over the start and end fit cutoffs known as "cursors"
 -   Binning options for various kernel sizes to reduce noise and boost intensity when fitting per-pixel
 -   Support for so-called "excitation" or "prompt" files containing a recorded system response function to be convolved with the exponential fit
--   Batch processing support for analyzing many lifetime images as part of a [scripting](Scripting) workflow
+-   Batch processing support for analyzing many lifetime images as part of a [scripting](/scripting) workflow
 
 Installation
 ------------

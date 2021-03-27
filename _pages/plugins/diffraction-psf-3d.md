@@ -11,11 +11,11 @@ description: test description
 Purpose
 -------
 
-This plugin generates theoretical PSFs, assuming they arise only from diffraction. They can thereafter be used with deconvolution plugins (e.g. [Iterative Deconvolve 3D](Iterative_Deconvolve_3D)) when the actual PSF is not measured.
+This plugin generates theoretical PSFs, assuming they arise only from diffraction. They can thereafter be used with deconvolution plugins (e.g. [Iterative Deconvolve 3D](/plugins/iterative-deconvolve-3d)) when the actual PSF is not measured.
 
 See also
 --------
 
-[Iterative Deconvolve 3D](Iterative_Deconvolve_3D)
+[Iterative Deconvolve 3D](/plugins/iterative-deconvolve-3d)
 
  

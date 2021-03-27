@@ -6,7 +6,7 @@ categories: News
 description: test description
 ---
 
-We just released a new minor version of [TrackMate](TrackMate), pressed by the many bugs that were found and appeared between this version and the [previous one](2014-03-19_-_TrackMate_v2.2.0_released). It focuses mainly on **interoperability** and of course **bugfixes**.
+We just released a new minor version of [TrackMate](/plugins/trackmate), pressed by the many bugs that were found and appeared between this version and the [previous one](/news/2014-03-19_-_TrackMate_v2.2.0_released). It focuses mainly on **interoperability** and of course **bugfixes**.
 
 Highlights
 ----------

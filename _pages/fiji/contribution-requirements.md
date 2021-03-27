@@ -7,15 +7,15 @@ categories: Fiji
 description: test description
 ---
 
-{% include info-box content='There is another good way to distribute your extension: your own [update site](Update_site). See the [Distribution](Distribution) page for details.' %} 
-Distributing your software component as part of [Fiji](Fiji) is an effective way to immediately and easily put it into the hands of many users, as well as to actively participate in the community of ImageJ software development. However, doing so comes with a few corresponding rules.
+{% include info-box content='There is another good way to distribute your extension: your own [update site](Update_site). See the [Distribution](/develop/distributing) page for details.' %} 
+Distributing your software component as part of [Fiji](/fiji) is an effective way to immediately and easily put it into the hands of many users, as well as to actively participate in the community of ImageJ software development. However, doing so comes with a few corresponding rules.
 
-The following document describes these requirements, as well as associated best practices, for shipping your component as part of the [Fiji](Fiji) update site.
+The following document describes these requirements, as well as associated best practices, for shipping your component as part of the [Fiji](/fiji) update site.
 
 Definition
 ==========
 
-A "core" [Fiji](Fiji) project is one distributed on the [Fiji update site](http://update.fiji.sc). Such projects are subject to the requirements discussed below. Conversely, if you distribute your [ImageJ](ImageJ) extension on a separate update site, this page does not apply.
+A "core" [Fiji](/fiji) project is one distributed on the [Fiji update site](http://update.fiji.sc). Such projects are subject to the requirements discussed below. Conversely, if you distribute your [ImageJ](/about) extension on a separate update site, this page does not apply.
 
 Requirements
 ============
@@ -37,11 +37,11 @@ As such, components distributed with Fiji must be licensed in a way [compatible 
 Source hosted on GitHub
 -----------------------
 
-Core Fiji development takes place on [GitHub](GitHub). This ensures continuity and visibility, and facilitates collaboration.
+Core Fiji development takes place on [GitHub](/develop/github). This ensures continuity and visibility, and facilitates collaboration.
 
 There are two possibilities for where to host your project:
 
-1.  **Standard.** Repository is hosted in the [fiji organization](https://github.com/fiji), or a descendant organization (e.g., [trakem2](https://github.com/trakem2)). [Fiji maintainers](Governance) help maintain the project.
+1.  **Standard.** Repository is hosted in the [fiji organization](https://github.com/fiji), or a descendant organization (e.g., [trakem2](https://github.com/trakem2)). [Fiji maintainers](/about/governance) help maintain the project.
 2.  **External.** Repository is hosted in a GitHub organization you control. You alone maintain the project (though Fiji maintainers may submit PRs to help).
 
 ### Standard projects
@@ -49,15 +49,15 @@ There are two possibilities for where to host your project:
 The following criteria apply to projects hosted in the [fiji organization](https://github.com/fiji):
 
 -   Each component (i.e., JAR file) lives in its own repository.
--   Components use [Maven](Maven) to build:
+-   Components use [Maven](/develop/maven) to build:
     -   As single-module projects
     -   With the standard Maven directory layout
     -   Extending the [pom-scijava parent POM](Architecture#Maven_component_structure)
 -   Components use the groupId `sc.fiji`.
--   Components are [versioned according to SemVer](Versioning).
--   The project uses [GitHub Issues](Issues) for issue tracking.
+-   Components are [versioned according to SemVer](/develop/versioning).
+-   The project uses [GitHub Issues](/Project_management#Issue_tracking) for issue tracking.
 -   The project has a dedicated page here on the ImageJ wiki.
--   The [Fiji maintainers](Governance) may make commits and [release new versions](Releases) of the component as needed, so that Fiji as a whole continues to work as intended.
+-   The [Fiji maintainers](/about/governance) may make commits and [release new versions](/develop/releasing) of the component as needed, so that Fiji as a whole continues to work as intended.
 -   The `master` branch is considered *release ready* at all times, meaning it compiles with passing tests, and is ready for downstream consumption.
 
 ### External projects
@@ -67,14 +67,14 @@ Projects that reside outside the [fiji organization](https://github.com/fiji) ar
 Continuous integration: Travis CI
 ---------------------------------
 
-To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a [Travis CI](Travis_CI) job that builds and tests the source code, and deploys the [Maven artifacts](#Maven_artifacts "wikilink"), whenever a new revision is made available.
+To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a [Travis CI](/develop/travis) job that builds and tests the source code, and deploys the [Maven artifacts](#Maven_artifacts "wikilink"), whenever a new revision is made available.
 
-Have a look at the [Travis](Travis) page for instructions on setting it up.
+Have a look at the [Travis](/develop/travis) page for instructions on setting it up.
 
 Versioning and dependency convergence
 -------------------------------------
 
-Most Fiji projects use the [SemVer versioning scheme](Versioning): a standard to encourage API consistency without obstructing API improvements.
+Most Fiji projects use the [SemVer versioning scheme](/develop/versioning): a standard to encourage API consistency without obstructing API improvements.
 
 The minimum requirement for core Fiji projects is to abide by the **MAJOR** digit portion of [SemVer](http://semver.org/)—i.e., if the first digit of the version string increases, it means that the new version is *not* backwards compatible with the old version. Conversely, if any later digit of the version string increases, it means that the new version *is* backwards compatible.
 
@@ -86,9 +86,9 @@ In general, if the rest of the Fiji distribution upgrades to a new major version
 
 ### Best practice: version constants
 
-Many plugins in Fiji contain explicit version constants. Without [Maven](Maven), in-code constants may make sense as a way to track compatibility. But by Mavenizing for contribution to Fiji, the pom.xml provides a standard mechanism for versioning, allowing migration away from constants in the source code.
+Many plugins in Fiji contain explicit version constants. Without [Maven](/develop/maven), in-code constants may make sense as a way to track compatibility. But by Mavenizing for contribution to Fiji, the pom.xml provides a standard mechanism for versioning, allowing migration away from constants in the source code.
 
-Versioning through the pom.xml has several advantages to facilitate [reproducible builds](Reproducibility), including:
+Versioning through the pom.xml has several advantages to facilitate [reproducible builds](/Architecture#Reproducible_builds), including:
 
 -   Standardized scripts to increment versions appropriately.
 -   No risk of accidentally double-releasing a given version.
@@ -102,11 +102,11 @@ Furthermore, for backwards-compatibility a version can be automatically deduced:
 Maven artifacts
 ---------------
 
-[Fiji](Fiji) and related [SciJava](SciJava) software uses [Maven](Maven), an industry standard to declare metadata about a project, to build projects using said metadata, and to *deploy* the resulting artifacts to a [Maven repository](Architecture#Maven_repositories). Such repositories are essentially for developers what [update sites](Update_sites) are for users.
+[Fiji](/fiji) and related [SciJava](SciJava) software uses [Maven](/develop/maven), an industry standard to declare metadata about a project, to build projects using said metadata, and to *deploy* the resulting artifacts to a [Maven repository](Architecture#Maven_repositories). Such repositories are essentially for developers what [update sites](Update_sites) are for users.
 
--   The minimum requirement for core Fiji projects is to use a build system (e.g., [Maven](Maven) or Gradle) that automatically deploys required artifacts to the [ImageJ Maven repository](http://maven.imagej.net/), such that they can be consumed by downstream code, including other Fiji projects. Required artifacts to deploy include the main JAR and POM files, `-tests` JAR, `-sources` JAR and `-javadoc` JAR.
+-   The minimum requirement for core Fiji projects is to use a build system (e.g., [Maven](/develop/maven) or Gradle) that automatically deploys required artifacts to the [ImageJ Maven repository](http://maven.imagej.net/), such that they can be consumed by downstream code, including other Fiji projects. Required artifacts to deploy include the main JAR and POM files, `-tests` JAR, `-sources` JAR and `-javadoc` JAR.
 -   To facilitate this, most Fiji projects inherit a common Maven configuration from the [pom-fiji](https://github.com/fiji/pom-fiji) parent project. This configuration ensures that not only the compiled *.jar* files are deployed, but also the Javadocs and the sources. Therefore, it is strongly encouraged to extend this parent; see the [Maven component structure](Architecture#Maven_component_structure) section for details.
--   All of Fiji's components are deployed by [Travis CI](Travis_CI) to the [ImageJ Maven repository](Architecture#Maven_repositories) or to [OSS Sonatype](http://oss.sonatype.org/). That way, all Fiji components can be added easily as dependencies to downstream projects.
+-   All of Fiji's components are deployed by [Travis CI](/develop/travis) to the [ImageJ Maven repository](Architecture#Maven_repositories) or to [OSS Sonatype](http://oss.sonatype.org/). That way, all Fiji components can be added easily as dependencies to downstream projects.
 -   All Fiji components are declared in the toplevel [fiji](https://github.com/fiji/fiji) project's POM as dependencies, and declared in the [pom-fiji](https://github.com/fiji/pom-fiji) parent as *managed dependencies*, as part of Fiji's [Bill of Materials](Architecture#Bill_of_Materials).
 
 Guidelines
@@ -143,27 +143,27 @@ In particular when fixing a bug, it is a good idea to write a regression test *f
 Separation of concerns
 ----------------------
 
-New features should be put into the appropriate component. E.g., when adding a general purpose utility, consider contributing to [SciJava Common](SciJava_Common) or [ImageJ Common](ImageJ_Common) instead of bundling it with your specific extension.
+New features should be put into the appropriate component. E.g., when adding a general purpose utility, consider contributing to [SciJava Common](SciJava_Common) or [ImageJ Common](/plugins/imagej-common) instead of bundling it with your specific extension.
 
 Examples
 ========
 
 The following table provides a few examples of how various Fiji components are structured.
 
-<table><tbody><tr class="odd"><td style="text-align: center"><p><strong>Basics</strong></p></td><td></td><td></td><td></td><td></td><td><p><strong><a href="GitHub" title="wikilink">GitHub</a></strong></p></td><td></td><td><p><strong><a href="Maven" title="wikilink">Maven</a></strong></p></td></tr><tr class="even"><td><p><strong>Classification</strong></p></td><td><p><strong>Component</strong></p></td><td><p><strong>Core?<sup>1</sup></strong></p></td><td><p><strong>Update site</strong></p></td><td><p><strong>License<sup>2</sup></strong></p></td><td><p><strong>Organization</strong></p></td><td><p><strong>Repository</strong></p></td><td><p><strong>groupId</strong></p></td></tr><tr class="odd"><td><p><strong>Standard</strong></p></td><td><p><a href="3D_Viewer" title="wikilink">3D Viewer</a></p></td><td><p> {% include yes%}
-</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="GPLv3" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='3D_Viewer' label='3D_Viewer' %}</p></td><td><p><code>sc.fiji</code></p></td></tr><tr class="even"><td><p><a href="Coloc_2" title="wikilink">Coloc 2</a></p></td><td><p> {% include yes%}
-</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="GPLv3" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='Colocalisation_Analysis' label='Colocalisation_Analysis' %}</p></td><td><p><code>sc.fiji</code></p></td><td></td></tr><tr class="odd"><td><p><a href="Simple_Neurite_Tracer" title="wikilink">Simple Neurite Tracer</a></p></td><td><p> {% include yes%}
-</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="GPLv3" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='Simple_Neurite_Tracer' label='Simple_Neurite_Tracer' %}</p></td><td><p><code>sc.fiji</code></p></td><td></td></tr><tr class="even"><td><p><a href="TrackMate" title="wikilink">TrackMate</a></p></td><td><p> {% include yes%}
-</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p>?</p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='TrackMate' label='TrackMate' %}</p></td><td><p><code>sc.fiji</code></p></td><td></td></tr><tr class="odd"><td><p><strong>External</strong></p></td><td><p><a href="Sholl_Analysis" title="wikilink">Sholl Analysis</a></p></td><td><p> {% include yes%}
-</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="GPLv3" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/tferr">tferr</a></p></td><td><p> {% include github org='tferr' repo='ASA' label='ASA' %}</p></td><td><p><code>ca.mcgill</code></p></td></tr><tr class="even"><td><p><a href="Bio-Formats" title="wikilink">Bio-Formats</a></p></td><td><p> {% include yes%}
-</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="GPLv2" title="wikilink">GPLv2</a></p></td><td><p><a href="https://github.com/openmicroscopy">openmicroscopy</a></p></td><td><p> {% include github org='openmicroscopy' repo='bioformats' label='bioformats' %}</p></td><td><p><code>ome</code></p></td><td></td></tr><tr class="odd"><td><p><strong>Subproject</strong></p></td><td><p><a href="BigDataViewer" title="wikilink">BigDataViewer</a></p></td><td><p> {% include yes%}
-</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="GPLv3" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/bigdataviewer">bigdataviewer</a></p></td><td><p> {% include github org='bigdataviewer' repo='bigdataviewer_fiji' label='bigdataviewer_fiji' %}</p></td><td><p><code>sc.fiji</code></p></td></tr><tr class="even"><td><p><a href="TrakEM2" title="wikilink">TrakEM2</a></p></td><td><p> {% include yes%}
-</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="GPLv3" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/trakem2">trakem2</a></p></td><td><p> {% include github org='trakem2' repo='TrakEM2' label='TrakEM2' %}</p></td><td><p><code>sc.fiji</code></p></td><td></td></tr><tr class="odd"><td><p><strong>Third party</strong></p></td><td><p><a href="Cookbook" title="wikilink">Cookbook</a></p></td><td><p> {% include no%}
-</p></td><td style="text-align: center"><p><a href="http://sites.imagej.net/Cookbook/">Cookbook</a></p></td><td><p><a href="Cookbook#Credits" title="wikilink">Various</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='cookbook' label='cookbook' %}</p></td><td><p><code>sc.fiji</code></p></td></tr><tr class="even"><td><p><a href="MaMuT" title="wikilink">MaMuT</a></p></td><td><p> {% include no%}
-</p></td><td style="text-align: center"><p><a href="http://sites.imagej.net/MaMuT/">MaMuT</a></p></td><td><p><a href="GPLv3" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='MaMuT' label='MaMuT' %}</p></td><td><p><code>sc.fiji</code></p></td><td></td></tr><tr class="odd"><td><p><a href="SLIM_Curve" title="wikilink">SLIM Curve</a></p></td><td><p> {% include no%}
-</p></td><td><p><a href="http://sites.imagej.net/SLIM-Curve/">SLIM-Curve</a></p></td><td><p><a href="GPLv3" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/slim-curve">slim-curve</a></p></td><td><p> {% include github org='slim-curve' repo='slim-plugin' label='slim-plugin' %}</p></td><td><p><code>slim-curve</code></p></td><td></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td style="text-align: center"><p><strong>Basics</strong></p></td><td></td><td></td><td></td><td></td><td><p><strong><a href="/develop/github" title="wikilink">GitHub</a></strong></p></td><td></td><td><p><strong><a href="/develop/maven" title="wikilink">Maven</a></strong></p></td></tr><tr class="even"><td><p><strong>Classification</strong></p></td><td><p><strong>Component</strong></p></td><td><p><strong>Core?<sup>1</sup></strong></p></td><td><p><strong>Update site</strong></p></td><td><p><strong>License<sup>2</sup></strong></p></td><td><p><strong>Organization</strong></p></td><td><p><strong>Repository</strong></p></td><td><p><strong>groupId</strong></p></td></tr><tr class="odd"><td><p><strong>Standard</strong></p></td><td><p><a href="/plugins/3d-viewer" title="wikilink">3D Viewer</a></p></td><td><p> {% include yes%}
+</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="/licensing/gpl" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='3D_Viewer' label='3D_Viewer' %}</p></td><td><p><code>sc.fiji</code></p></td></tr><tr class="even"><td><p><a href="/plugins/coloc-2" title="wikilink">Coloc 2</a></p></td><td><p> {% include yes%}
+</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="/licensing/gpl" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='Colocalisation_Analysis' label='Colocalisation_Analysis' %}</p></td><td><p><code>sc.fiji</code></p></td><td></td></tr><tr class="odd"><td><p><a href="/plugins/snt" title="wikilink">Simple Neurite Tracer</a></p></td><td><p> {% include yes%}
+</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="/licensing/gpl" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='Simple_Neurite_Tracer' label='Simple_Neurite_Tracer' %}</p></td><td><p><code>sc.fiji</code></p></td><td></td></tr><tr class="even"><td><p><a href="/plugins/trackmate" title="wikilink">TrackMate</a></p></td><td><p> {% include yes%}
+</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p>?</p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='TrackMate' label='TrackMate' %}</p></td><td><p><code>sc.fiji</code></p></td><td></td></tr><tr class="odd"><td><p><strong>External</strong></p></td><td><p><a href="/plugins/sholl-analysis" title="wikilink">Sholl Analysis</a></p></td><td><p> {% include yes%}
+</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="/licensing/gpl" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/tferr">tferr</a></p></td><td><p> {% include github org='tferr' repo='ASA' label='ASA' %}</p></td><td><p><code>ca.mcgill</code></p></td></tr><tr class="even"><td><p><a href="/formats/bio-formats" title="wikilink">Bio-Formats</a></p></td><td><p> {% include yes%}
+</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="/licensing/gpl" title="wikilink">GPLv2</a></p></td><td><p><a href="https://github.com/openmicroscopy">openmicroscopy</a></p></td><td><p> {% include github org='openmicroscopy' repo='bioformats' label='bioformats' %}</p></td><td><p><code>ome</code></p></td><td></td></tr><tr class="odd"><td><p><strong>Subproject</strong></p></td><td><p><a href="BigDataViewer" title="wikilink">BigDataViewer</a></p></td><td><p> {% include yes%}
+</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="/licensing/gpl" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/bigdataviewer">bigdataviewer</a></p></td><td><p> {% include github org='bigdataviewer' repo='bigdataviewer_fiji' label='bigdataviewer_fiji' %}</p></td><td><p><code>sc.fiji</code></p></td></tr><tr class="even"><td><p><a href="/plugins/trakem2" title="wikilink">TrakEM2</a></p></td><td><p> {% include yes%}
+</p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="/licensing/gpl" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/trakem2">trakem2</a></p></td><td><p> {% include github org='trakem2' repo='TrakEM2' label='TrakEM2' %}</p></td><td><p><code>sc.fiji</code></p></td><td></td></tr><tr class="odd"><td><p><strong>Third party</strong></p></td><td><p><a href="/cookbook" title="wikilink">Cookbook</a></p></td><td><p> {% include no%}
+</p></td><td style="text-align: center"><p><a href="http://sites.imagej.net/Cookbook/">Cookbook</a></p></td><td><p><a href="Cookbook#Credits" title="wikilink">Various</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='cookbook' label='cookbook' %}</p></td><td><p><code>sc.fiji</code></p></td></tr><tr class="even"><td><p><a href="/plugins/mamut" title="wikilink">MaMuT</a></p></td><td><p> {% include no%}
+</p></td><td style="text-align: center"><p><a href="http://sites.imagej.net/MaMuT/">MaMuT</a></p></td><td><p><a href="/licensing/gpl" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='MaMuT' label='MaMuT' %}</p></td><td><p><code>sc.fiji</code></p></td><td></td></tr><tr class="odd"><td><p><a href="/plugins/slim-curve" title="wikilink">SLIM Curve</a></p></td><td><p> {% include no%}
+</p></td><td><p><a href="http://sites.imagej.net/SLIM-Curve/">SLIM-Curve</a></p></td><td><p><a href="/licensing/gpl" title="wikilink">GPLv3</a></p></td><td><p><a href="https://github.com/slim-curve">slim-curve</a></p></td><td><p> {% include github org='slim-curve' repo='slim-plugin' label='slim-plugin' %}</p></td><td><p><code>slim-curve</code></p></td><td></td></tr></tbody></table>
 
 <sup>1</sup> A "core" project is one distributed on the Fiji update site. These projects are subject to the requirements discussed on this page.  
-<sup>2</sup> See the [Licensing](Licensing) page for further details.
+<sup>2</sup> See the [Licensing](/licensing) page for further details.
 
 

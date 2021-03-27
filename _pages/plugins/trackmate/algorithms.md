@@ -6,7 +6,7 @@ categories:
 description: test description
 ---
 
-This page documents the current components of [TrackMate](TrackMate). TrackMate has a modular design, meaning that it is made of different modules that each have a specific role. Developers can build their own module and re-used the other ones and the GUI to achieve a quick development. The module types are (in the order you meet them when executing the plugin):
+This page documents the current components of [TrackMate](/plugins/trackmate). TrackMate has a modular design, meaning that it is made of different modules that each have a specific role. Developers can build their own module and re-used the other ones and the GUI to achieve a quick development. The module types are (in the order you meet them when executing the plugin):
 
 1.  **Spot detectors**. Taking your image data, they detect spots in them.
 2.  **Spot analyzers**. Each spot can receive a wide range of features, calculated from their location, radius and the image data. For instance: max intensity in spot, rough morphology, etc... They are then used to filter out spurious spots and retain only good ones for the subsequent tracking step.
@@ -366,7 +366,7 @@ Without penalties and with a maximal linking allowed distance, the returned solu
 
 By adding feature penalties, we aim at favoring linking particles that "resemble" each other. In brute single particle linking problems, spots are generally all the same, and they only differ by position. However, there is a variety of problems for which these feature penalties can add robustness to the tracking process.
 
-For instance, we originally developed [TrackMate](TrackMate) for semi-automated lineaging of *C.elegans* embryos, using a strain fluorescent in the nucleus. Cells that are dividing have a fluorescence distribution which is very different from non-dividing cells, and this can be exploited for robust tracking.
+For instance, we originally developed [TrackMate](/plugins/trackmate) for semi-automated lineaging of *C.elegans* embryos, using a strain fluorescent in the nucleus. Cells that are dividing have a fluorescence distribution which is very different from non-dividing cells, and this can be exploited for robust tracking.
 
 #### Track segment linking
 

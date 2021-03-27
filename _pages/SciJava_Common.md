@@ -6,7 +6,7 @@ categories: development
 description: test description
 ---
 
-{% include component-stats content='org.scijava:scijava-common' %}SciJava Common is a common library for [SciJava](SciJava) software. It provides a plugin framework, with an extensible mechanism for service discovery, backed by its own annotation processor, so that plugins can be loaded dynamically. It is used by both [ImageJ](ImageJ) and [SCIFIO](SCIFIO).
+{% include component-stats content='org.scijava:scijava-common' %}SciJava Common is a common library for [SciJava](SciJava) software. It provides a plugin framework, with an extensible mechanism for service discovery, backed by its own annotation processor, so that plugins can be loaded dynamically. It is used by both [ImageJ](/about) and [SCIFIO](/software/scifio).
 
 Plugin framework
 ================
@@ -28,7 +28,7 @@ Services
 
 
 {% capture  content %}
-Whereas [ImageJ1](ImageJ1) is a {% include wikipedia title='Singleton pattern' text='singleton'%}, with static methods to access much of its functionality, [ImageJ2](ImageJ2) encapsulates its program state in the application context, allowing multiple simultaneous such contexts in the same JVM.
+Whereas [ImageJ1](/software/imagej1) is a {% include wikipedia title='Singleton pattern' text='singleton'%}, with static methods to access much of its functionality, [ImageJ2](/software/imagej2) encapsulates its program state in the application context, allowing multiple simultaneous such contexts in the same JVM.
 {% endcapture %}
 {% include imagej1 content=content %}ImageJ encapsulates its various parts as separate "services" that provide related state functionality and track related program state. An instance of the {% include javadoc package='net/imagej' class='ImageJ' %} class is nothing more than a collection of these services; this instance is referred to as the "application gateway." Services are defined as interfaces, with concrete implementations as plugins. This design provides [seams](http://c2.com/cgi/wiki?SoftwareSeam) in the right places so that behavior at every level can be customized and overridden.
 

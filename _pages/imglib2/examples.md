@@ -24,17 +24,17 @@ Introduction & required files
 
 This page shows eight increasingly complex examples of how to program with ImgLib2. The intention of these examples are not to explain ImgLib2 concepts, but rather to give some practical hints how to work with the library and to grasp the principles in a learning-by-doing way.
 
-All examples presented on this page are always entire classes including a main method to run them. Simply copying them into your favorite editor (e.g. the [Script Editor](Script_Editor)) and compile & run them. The required Java libraries (jar files) are part of ImageJ and can be found in *ImageJ.app/jars/*:
+All examples presented on this page are always entire classes including a main method to run them. Simply copying them into your favorite editor (e.g. the [Script Editor](/scripting/script-editor)) and compile & run them. The required Java libraries (jar files) are part of ImageJ and can be found in *ImageJ.app/jars/*:
 
 -   imglib2 (the core)
 -   imglib2-algorithm (algorithms implemented in ImgLib2)
--   imglib2-algorithm-gpl (for example 6b and 6c: GPL-licensed algorithms implemented in ImgLib2—ships with [Fiji](Fiji) only, not plain [ImageJ2](ImageJ2), for [licensing](Licensing) reasons)
+-   imglib2-algorithm-gpl (for example 6b and 6c: GPL-licensed algorithms implemented in ImgLib2—ships with [Fiji](/fiji) only, not plain [ImageJ2](/software/imagej2), for [licensing](/licensing) reasons)
 -   imglib2-ij (the ImageJ interaction)
 -   imglib2-realtransform (for example 8)
 -   scifio (for reading and writing files)
 -   ij (ImageJ 1.x core, used for display)
 
-Alternately, you can access the examples from the {% include github org='imglib' repo='imglib-tutorials' label='ImgLib-tutorials Git repository' %}. After cloning the source code, open the project in your favorite IDE. See [Developing ImgLib2](Developing_ImgLib2) for further details.
+Alternately, you can access the examples from the {% include github org='imglib' repo='imglib-tutorials' label='ImgLib-tutorials Git repository' %}. After cloning the source code, open the project in your favorite IDE. See [Developing ImgLib2](/imglib2/developing) for further details.
 
 Example 1 - Opening, creating and displaying images
 ---------------------------------------------------

@@ -11,7 +11,7 @@ Welcome!
 
 Fiji is planning on applying to the Google Summer of Code 2009 program. As mentoring organizations have not yet been accepted, there is no guarantee that Fiji will be asked to participate. This page is to help plan proposed student projects. (UPDATE: Fiji [has been accepted](http://socghop.appspot.com/program/accepted_orgs/google/gsoc2009) as a mentoring organization. See the [Fiji GSoC organization page](http://socghop.appspot.com/org/show/google/gsoc2009/fiji).)
 
-This page contains project ideas culled from the Fiji user and developer community. You can get started by reading some project descriptions, and the mailing list thread(s) that spawned them. Also consider joining the developer mailing list, or finding us on IRC. Details can be found in [Help](Help).
+This page contains project ideas culled from the Fiji user and developer community. You can get started by reading some project descriptions, and the mailing list thread(s) that spawned them. Also consider joining the developer mailing list, or finding us on IRC. Details can be found in [Help](/help).
 
 Don't like a project you see here? Just throw your ideas at us, on the developer mailing list!
 
@@ -32,7 +32,7 @@ If your proposal is accepted by the Fiji Development Community you will be expec
 
 If your original proposal doesn't pan out or becomes too much of a challenge, you should work with your mentor to help redefine it. We really want to see every project succeed this summer, as there is a great deal of interest in these projects from within the user community.
 
-Students can apply for the program at the [Google Summer of Code website](http://code.google.com/soc/). Please consider reviewing our [SoC2009Template](SoC2009Template) and answering its questions as part of your application.
+Students can apply for the program at the [Google Summer of Code website](http://code.google.com/soc/). Please consider reviewing our [SoC2009Template](/events/SoC_2009_Template) and answering its questions as part of your application.
 
 Project ideas
 =============
@@ -103,9 +103,9 @@ The idea is to extend the simple Python script in tests/record.py to make it eas
 Add word expansion to the scripting interpreters
 ------------------------------------------------
 
-Fiji offers scripting in 5 different languages, all running on the JVM: [Javascript](Javascript_Scripting), [Jython](Jython_Scripting), [JRuby](JRuby_Scripting), [Clojure](Clojure_Scripting), Beanshell and the ImageJ Macro Language. Through the reflection API and the numerous language hooks that each scripting engine provides, it is possible to complete method names or names of member variables, as well as class names.
+Fiji offers scripting in 5 different languages, all running on the JVM: [Javascript](Javascript_Scripting), [Jython](/scripting/jython), [JRuby](/scripting/jruby), [Clojure](/scripting/clojure), Beanshell and the ImageJ Macro Language. Through the reflection API and the numerous language hooks that each scripting engine provides, it is possible to complete method names or names of member variables, as well as class names.
 
-**Goal:** Provide word-expansion capabilities to the scripting interpreters (see [Scripting Help](Scripting_Help)).  
+**Goal:** Provide word-expansion capabilities to the scripting interpreters (see [Scripting Help](/scripting)).  
 **Language:** A combination of Java plus the scripting language, in this order of preference: Javascript, Jython, JRuby, Clojure and Beanshell. If you can do them all, we'll erect you a monument.  
 **Mentor:** [Albert Cardona](http://www.ini.uzh.ch/people/acardona) (acardona@ini.phys.ethz.ch)  
 
@@ -125,7 +125,7 @@ The student will have to research if there are existing Open Source components t
 Enhance Fiji's plugin manager
 -----------------------------
 
-Beyond the built-in commands, ImageJ provides the means to add user-developed plugins by implementing the PlugIn, PlugInFilter and PlugInFrame interfaces. Fiji uses ImageJ at the core and packages around it a very large number of plugins (see the [Plugins Menu](Plugins_Menu)). The ideal application menus cannot contain hundreds of plugins: any specific user has no use for more than half of them, and their mere presence get on the way to adding other, user-desired plugins.
+Beyond the built-in commands, ImageJ provides the means to add user-developed plugins by implementing the PlugIn, PlugInFilter and PlugInFrame interfaces. Fiji uses ImageJ at the core and packages around it a very large number of plugins (see the [Plugins Menu](/plugins/fiji-menu)). The ideal application menus cannot contain hundreds of plugins: any specific user has no use for more than half of them, and their mere presence get on the way to adding other, user-desired plugins.
 
 The core idea of this project is to generate a plugins manager, inspired in the excellent plugin manager of [JEdit](http://www.jedit.org), to enable/disable plugins.
 
@@ -190,11 +190,11 @@ The project would consist of
 Other Resources
 ===============
 
-`* `[`SoC2009Application`](SoC2009Application)
+`* `[`SoC2009Application`](/events/SoC_2009_Application)
 
 Other links
 ===========
 
 `* `[`ImageJ's`` ``homepage`](https://imagej.net)  
 `* `[`Fiji's`` ``developer`` ``mailing`` ``list`](http://groups.google.com/group/fiji-devel)  
-`* `[`#fiji-devel`` ``channel`](IRC)` on irc.freenode.net`
+`* `[`#fiji-devel`` ``channel`](/Chat#IRC)` on irc.freenode.net`

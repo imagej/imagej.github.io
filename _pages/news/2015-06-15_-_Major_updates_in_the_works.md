@@ -8,7 +8,7 @@ description: test description
 
 In recent months, ImageJ has seen an increasing number of issues relating to application distribution, packaging and deployment.
 
-This summer, the ImageJ team at [LOCI](LOCI) is taking several major steps to bring [ImageJ2](ImageJ2) and [Fiji](Fiji) up to the latest Java packaging and deployment standards.
+This summer, the ImageJ team at [LOCI](/orgs/loci) is taking several major steps to bring [ImageJ2](/software/imagej2) and [Fiji](/fiji) up to the latest Java packaging and deployment standards.
 
 The obsolescence of Java 6
 --------------------------
@@ -22,7 +22,7 @@ However, at this point in time, there are an increasing number problems relating
 -   Users experience hard crashes with Fiji's bundled version of Java 6 (1.6.0\_24), which are avoided by using Java 7 or Java 8.
 -   More and more libraries used by ImageJ are updating their version requirement to Java 7 in newer releases. E.g., Jython 1.7.0 now requires Java 7—as such, ImageJ is stuck with Jython 1.5.3 as long as it continues to run using Java 6.
 
-It seems inevitable that ImageJ will need to switch to Java 8 very soon. At minimum, the ImageJ2 and Fiji downloads offered on the [Downloads](Downloads) page will be updated to ship with Java 8 instead of Java 6. And we are strongly considering updating the core ImageJ2 components to simply require Java 8. The ImageJ [Updater](Updater) will need to be updated to support these changes.
+It seems inevitable that ImageJ will need to switch to Java 8 very soon. At minimum, the ImageJ2 and Fiji downloads offered on the [Downloads](Downloads) page will be updated to ship with Java 8 instead of Java 6. And we are strongly considering updating the core ImageJ2 components to simply require Java 8. The ImageJ [Updater](/plugins/updater) will need to be updated to support these changes.
 
 Java on OS X
 ------------
@@ -67,20 +67,20 @@ With this new deployment scheme, the current ImageJ [Launcher](Launcher) will be
 Java 3D
 -------
 
-The [Java 3D](https://java3d.java.net/) library is a great add-on to Java which provides support for 3D visualization and rendering. It is required for the [3D Viewer](3D_Viewer) plugin in particular. Unfortunately, historically, Java 3D has been distributed separately with its own installer that must modify the Java runtime itself. This scheme meant we could not distribute Java 3D as a simple JAR dependency, unlike other libraries used by ImageJ plugins. And as such, the 3D Viewer developed its own custom installer for Java 3D, to help users get up and running more easily. But the 3D Viewer downloads Java 3D from an external web site which has seen an increasing amount of downtime recently, which has prevented users from successfully using the 3D Viewer on new installations, resulting in repeated volleys of bug reports.
+The [Java 3D](https://java3d.java.net/) library is a great add-on to Java which provides support for 3D visualization and rendering. It is required for the [3D Viewer](/plugins/3d-viewer) plugin in particular. Unfortunately, historically, Java 3D has been distributed separately with its own installer that must modify the Java runtime itself. This scheme meant we could not distribute Java 3D as a simple JAR dependency, unlike other libraries used by ImageJ plugins. And as such, the 3D Viewer developed its own custom installer for Java 3D, to help users get up and running more easily. But the 3D Viewer downloads Java 3D from an external web site which has seen an increasing amount of downtime recently, which has prevented users from successfully using the 3D Viewer on new installations, resulting in repeated volleys of bug reports.
 
 Fortunately, in recent years, the [JogAmp](http://jogamp.org/) team has updated Java 3D to use the [JOGL](http://jogamp.org/jogl/www/) library under the hood, and in so doing, solved the deployment issues regarding native libraries needed for JOGL and Java 3D. We have a working prototype of a Java 3D 1.6 prerelease bundled with Fiji, which enables the 3D Viewer to work without the user needing to explicitly install Java 3D into their Java runtime. [https://github.com/imagej/imagej/issues/120 imagej/imagej\#120](https://github.com/imagej/imagej/issues/120_imagej/imagej#120 "wikilink")
 
 Issue reporting
 ---------------
 
-Fiji ships with a [Report a Bug](Report_a_Bug) plugin that sends a bug report to the Fiji BugZilla. Soon, we will be retiring that system in favor of GitHub Issues for all ImageJ and Fiji components. The "Report a Bug" plugin will be overhauled to send the report to the appropriate component on GitHub Issues, rather than BugZilla. (And as such, instead of the user needing to create a Fiji BugZilla account, they will need to have a GitHub account.) This will help integrate all our issue tracking, as well as seamlessly link to external issue trackers such as the Bio-Formats GH issues tracker. [https://github.com/imagej/imagej/issues/122 imagej/imagej\#122](https://github.com/imagej/imagej/issues/122_imagej/imagej#122 "wikilink")
+Fiji ships with a [Report a Bug](/help/report-a-bug) plugin that sends a bug report to the Fiji BugZilla. Soon, we will be retiring that system in favor of GitHub Issues for all ImageJ and Fiji components. The "Report a Bug" plugin will be overhauled to send the report to the appropriate component on GitHub Issues, rather than BugZilla. (And as such, instead of the user needing to create a Fiji BugZilla account, they will need to have a GitHub account.) This will help integrate all our issue tracking, as well as seamlessly link to external issue trackers such as the Bio-Formats GH issues tracker. [https://github.com/imagej/imagej/issues/122 imagej/imagej\#122](https://github.com/imagej/imagej/issues/122_imagej/imagej#122 "wikilink")
 
 Further reading
 ---------------
 
 For a complete list of deployment-related issues we are tackling over the summer, see [the list on GitHub issues](https://github.com/issues?q=label%3Adeployment+is%3Aopen+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Ascifio+user%3Ascijava+user%3ATrakEM2+).
 
-As you can see, it's going to be a busy summer. We will push hard to have a newer, stronger ImageJ ready to go for [this fall's ImageJ conference](Conference_2015)!
+As you can see, it's going to be a busy summer. We will push hard to have a newer, stronger ImageJ ready to go for [this fall's ImageJ conference](/events/Conference_2015)!
 
  

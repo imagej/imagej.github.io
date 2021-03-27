@@ -6,7 +6,7 @@ categories: Hackathons
 description: test description
 ---
 
-The 2011 Madison [Fiji](Fiji)/ImageJDev [hackathon](Hackathon) took place from Friday, January 28 until Friday, February 11. The topic was "Multidimensional Visualization and Analysis in Fiji."
+The 2011 Madison [Fiji](/fiji)/ImageJDev [hackathon](/events/Hackathon) took place from Friday, January 28 until Friday, February 11. The topic was "Multidimensional Visualization and Analysis in Fiji."
 
 Participants
 ------------
@@ -130,7 +130,7 @@ Some locals were not present at the hackathon on weekends.
 Locations
 ---------
 
-Our initial meeting place from Friday, January 28 through Sunday, January 30 was the Laboratory for Optical and Computational Instrumentation ([LOCI](LOCI)), located at Room 271 Animal Sciences, 1675 Observatory Dr. [http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI See map](http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI_See_map "wikilink")
+Our initial meeting place from Friday, January 28 through Sunday, January 30 was the Laboratory for Optical and Computational Instrumentation ([LOCI](/orgs/loci)), located at Room 271 Animal Sciences, 1675 Observatory Dr. [http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI See map](http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI_See_map "wikilink")
 
 Starting Monday morning, the hackathon took place at the newly completed [Wisconsin Institutes for Discovery](http://www.discovery.wisc.edu/) (WID), located at 330 N. Orchard St. [http://maps.google.com/maps?q=330+N.+Orchard+Street,+Madison,+WI See map](http://maps.google.com/maps?q=330+N.+Orchard+Street,+Madison,+WI_See_map "wikilink")
 
@@ -143,7 +143,7 @@ Results
 
 Here is a summary of the hackathon results, written by Johannes Schindelin, Stephan Saalfeld and Curtis Rueden. Note that there was simply too much activity to fully describe everything everyone worked on, but we have tried to summarize the most major items. Thanks to all who participated!
 
-The most important work done is certainly the redesign of ImgLib (dubbed "ImgLib2"). Other design questions have been addressed, too:
+The most important work done is certainly the redesign of ImgLib (dubbed "/imglib2"). Other design questions have been addressed, too:
 
 -   How to reuse IJ2's plugin infrastructure (e.g. in the 3D Viewer)
 -   How to wrap IJ1 elegantly (Javassist)

@@ -37,7 +37,7 @@ In the context of spectral unmixing, the inputs to *k*-means are individual pixe
 Usage
 =====
 
-To install the plugin in your ImageJ or Fiji installation, add the update site LUMoS. The procedure to follow an update site [can be found here](Following_an_update_site).
+To install the plugin in your ImageJ or Fiji installation, add the update site LUMoS. The procedure to follow an update site [can be found here](/update-sites/following).
 
 Alternatively, a full Fiji distribution with LUMoS already packaged can be downloaded. Unlike the update site, this packaged download is PC only. [PC only download](https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/multiphoton-core/documents/Fiji-app-for-LUMoS-spectral-unmixing.zip).
 

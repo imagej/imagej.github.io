@@ -6,12 +6,12 @@ categories: development
 description: test description
 ---
 
-{% include component-stats content='net.imagej:imagej-legacy' %}Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing plugins and macros with new versions of [ImageJ](ImageJ).
+{% include component-stats content='net.imagej:imagej-legacy' %}Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing plugins and macros with new versions of [ImageJ](/about).
 
 ImageJ Legacy
 -------------
 
-The [ImageJ2](ImageJ2) project is a complete redesign of ImageJ, with no dependency on [ImageJ 1.x](ImageJ_1.x). However, to facilitate backwards compatibility, there is an **ImageJ Legacy** component (source {% include github org='imagej' repo='imagej-legacy' %}) which provides extensions for ImageJ2 and ImageJ1 to operate in harmony.
+The [ImageJ2](/software/imagej2) project is a complete redesign of ImageJ, with no dependency on [ImageJ 1.x](/software/imagej1). However, to facilitate backwards compatibility, there is an **ImageJ Legacy** component (source {% include github org='imagej' repo='imagej-legacy' %}) which provides extensions for ImageJ2 and ImageJ1 to operate in harmony.
 
 The ImageJ legacy layer provides the following extensions:
 
@@ -25,7 +25,7 @@ ImageJ2 currently uses the ImageJ 1.x user interface by default, since many user
 
 The legacy layer converts ImageJ1 into a SciJava-compatible user interface by implementing the {% include javadoc project='SciJava' package='org/scijava/ui' class='UserInterface' %} interface via the {% include javadoc package='net/imagej/legacy/ui' class='LegacyUI' %} class.
 
-However, things are complicated by the fact that ImageJ1 was not designed with such requirements in mind. The legacy layer uses a bytecode manipulation library called [Javassist](Javassist) to rewrite portions of ImageJ1 at runtime, in order to facilitate integration and extension. See the {% include github org='imagej' repo='ij1-patcher' label='ij1-patcher' %} project for details.
+However, things are complicated by the fact that ImageJ1 was not designed with such requirements in mind. The legacy layer uses a bytecode manipulation library called [Javassist](/develop/javassist) to rewrite portions of ImageJ1 at runtime, in order to facilitate integration and extension. See the {% include github org='imagej' repo='ij1-patcher' label='ij1-patcher' %} project for details.
 
 ### Translation of data structures
 
@@ -33,7 +33,7 @@ Each {% include javadoc package='net/imagej/display' class='ImageDisplay' %} has
 
 Currently, automatic synchronization is disabled as it has negative performance implications. The planned solution to the performance problems is to {% include github org='imagej' repo='imagej-legacy' issue='86' label='implement a wrapping layer' %}, instead of relying on up-front pixel-wise translation.
 
-In the mean time, full synchronization can be forced by setting a `imagej.legacy.sync` [system property](https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html). This can be done in a running ImageJ instance, for example by running the following as a [BeanShell script](BeanShell_Scripting):
+In the mean time, full synchronization can be forced by setting a `imagej.legacy.sync` [system property](https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html). This can be done in a running ImageJ instance, for example by running the following as a [BeanShell script](/scripting/beanshell):
 
     System.setProperty("imagej.legacy.sync", "true");
 

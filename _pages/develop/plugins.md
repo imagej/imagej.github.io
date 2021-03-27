@@ -7,11 +7,11 @@ categories: Tutorials,ImageJ2,Development
 description: test description
 ---
 
-{% include info-box content='This guide provides a technical overview of [plugins](Plugins), including how to **create new plugins**.  
-\* If you are interested in developing an **existing** plugin instead, see [Contributing to a plugin](How_to_contribute_to_an_existing_plugin_or_library).  
-\* If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](Distribution).
+{% include info-box content='This guide provides a technical overview of [plugins](/fiji/plugins), including how to **create new plugins**.  
+\* If you are interested in developing an **existing** plugin instead, see [Contributing to a plugin](/develop/improving-the-code).  
+\* If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/develop/distributing).
 
--   For instructions on plugin development for [ImageJ 1.x](ImageJ_1.x), see [Developing Plugins for ImageJ 1.x](Developing_Plugins_for_ImageJ_1.x).' %}
+-   For instructions on plugin development for [ImageJ 1.x](/software/imagej1), see [Developing Plugins for ImageJ 1.x](/develop/ij1-plugins).' %}
 
  
 
@@ -19,12 +19,12 @@ description: test description
 Requirements
 ------------
 
-As ImageJ is built using the [SciJava principles of project management](Project_management), this guide assumes a basic familiarity with these topics and tools, especially:
+As ImageJ is built using the [SciJava principles of project management](/develop/project-management), this guide assumes a basic familiarity with these topics and tools, especially:
 
 |                                                                                                              |                                                                                                                  |
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| <a href="Git"><img src="/media/Git-icon.png" width="64px"/></a> | <a href="Maven"><img src="/media/Maven-icon.png" width="64px"/></a> |
-| [Git](Git)                                    | [Maven](Maven)                                    |
+| <a href="Git"><img src="/media/Git-icon.png" width="64px"/></a> | <a href="/develop/maven"><img src="/media/Maven-icon.png" width="64px"/></a> |
+| [Git](Git)                                    | [Maven](/develop/maven)                                    |
 
 Additionally, at a minimum, you should clone the {% include github org='imagej' repo='tutorials' label='imagej/tutorials repository' %}. This will give you a local copy of the tutorials discussed in this guide, as well as templates for use in your own development.
 
@@ -153,12 +153,12 @@ Because virtually everything is a plugin in ImageJ, there are too many to explic
 A brief list of some of the more useful plugin types to extend:
 
 -   [Ops](Ops) provide a reusable set of image processing algorithms.
--   [Image formats](Adding_new_file_formats) allow new types of images to be opened in ImageJ.
+-   [Image formats](/develop/formats) allow new types of images to be opened in ImageJ.
 -   {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/convert/Converter.java' label='Converters' %} allow the framework to interchange types, outside of normal Java class hierarchy restrictions.
 -   {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/module/process/PreprocessorPlugin.java' label='Input Preprocessors' %} give you control over the population of `@Parameters`.
 -   {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/display/Display.java' label='Displays' %} control how UI elements are presented to users.
 
-If you know the function you want to modify but can't determine its location in the code, please [ask other developers.](Help) You're part of the community now!
+If you know the function you want to modify but can't determine its location in the code, please [ask other developers.](/help) You're part of the community now!
 
 Example projects
 ----------------
@@ -178,13 +178,13 @@ There are always other options for saving or restoring your work—[stashing](ht
 ### Tips
 
 -   Most of these examples have a [Main method](https://docs.oracle.com/javase/tutorial/getStarted/application/index.html) to see the code in action.
--   All of these projects are [Mavenized](Maven).
--   You can look at the [pom.xml](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) to figure out [which libraries](Source) that particular project is using.
+-   All of these projects are [Mavenized](/develop/maven).
+-   You can look at the [pom.xml](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) to figure out [which libraries](/develop/source) that particular project is using.
 -   You can [compile and build](http://maven.apache.org/archives/maven-1.x/start/quick-start.html) from the command line by running `mvn` from any project's top-level directory (any directory containing a `pom.xml`).
 -   Building a project results in a `jar` output in the `$PROJECT/target/` directory.
 -   For a more "real-world" experience, you can drop the `jar` you built into the `ImageJ.app/jars/` directory of an [ImageJ installation](Downloads) to try out any of the example plugins.
--   If you're not sure how to find your plugin within ImageJ, use the [Command Finder](Command_Finder)!
--   You can also import each project into [Eclipse](Eclipse)/[NetBeans](NetBeans)/[IntelliJ IDEA](IntelliJ_IDEA) as a [maven project](https://books.sonatype.com/m2eclipse-book/reference/creating-sect-importing-projects.html).
+-   If you're not sure how to find your plugin within ImageJ, use the [Command Finder](/Using_the_Command_Launcher)!
+-   You can also import each project into [Eclipse](/develop/imagej-in-eclipse)/[NetBeans](/Developing_ImageJ_in_NetBeans)/[IntelliJ IDEA](/Developing_ImageJ_in_IntelliJ_IDEA) as a [maven project](https://books.sonatype.com/m2eclipse-book/reference/creating-sect-importing-projects.html).
 
 ### First steps
 
@@ -244,17 +244,17 @@ If you are **implementing** an existing plugin type...
 
 You already [created your own GitHub repository](#Requirements "wikilink"), right??
 
-When you're just getting started with tools like [Git](Git) and [Maven](Maven), it's not easy to comprehend the nuances of how new projects should be set up and configured. It's much easier to copy a working project to use as a starting point and go from there.
+When you're just getting started with tools like [Git](Git) and [Maven](/develop/maven), it's not easy to comprehend the nuances of how new projects should be set up and configured. It's much easier to copy a working project to use as a starting point and go from there.
 
 The [example projects](#Example_projects "wikilink") are designed precisely to serve as such starting points for new projects. Once you have a solid idea of what kind of plugin you want to write, pick the project that discusses your area of choice and simply copy it to your own GitHub repo. From there, you can make changes as needed.
 
-At this point, if you haven't already, we **STRONGLY RECOMMEND** importing your project into an [IDE](IDE) like [Eclipse](Eclipse). This will make [development](Developing_Fiji_in_Eclipse) and [refactoring](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-menu-refactor.htm) much easier. Modern IDEs also have excellent [Git](Git) and [Maven](Maven) integration, which will allow you to take advantage of the fact that the example projects are already set up as Mavenized Git repositories.
+At this point, if you haven't already, we **STRONGLY RECOMMEND** importing your project into an [IDE](/develop/ides) like [Eclipse](/develop/imagej-in-eclipse). This will make [development](/develop/imagej-in-eclipse) and [refactoring](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-menu-refactor.htm) much easier. Modern IDEs also have excellent [Git](Git) and [Maven](/develop/maven) integration, which will allow you to take advantage of the fact that the example projects are already set up as Mavenized Git repositories.
 
 In addition to modifying and developing the source code itself, there are several things you should do to properly identify and configure your project:
 
 #### Update your POM
 
--   For your [parent pom](https://maven.apache.org/pom.html#Inheritance), we recommend that you extend [`pom-scijava`](https://github.com/scijava/pom-scijava). This will provide [dependency management](https://maven.apache.org/pom.html#Dependency_Management) of a lot of common useful dependencies, including the entire [ImageJ software stack](Architecture#Definitions) and all [Fiji](Fiji) components. Try to use the newest available version of `pom-scijava`.
+-   For your [parent pom](https://maven.apache.org/pom.html#Inheritance), we recommend that you extend [`pom-scijava`](https://github.com/scijava/pom-scijava). This will provide [dependency management](https://maven.apache.org/pom.html#Dependency_Management) of a lot of common useful dependencies, including the entire [ImageJ software stack](Architecture#Definitions) and all [Fiji](/fiji) components. Try to use the newest available version of `pom-scijava`.
 -   Update your [groupId](https://maven.apache.org/pom.html#Maven_Coordinates). ImageJ projects use a `net.imagej` groupId, while Fiji projects use `sc.fiji`—or you may use your own if you do not plan to distribute your plugin with the core ImageJ or Fiji projects.
 -   Update your [artifactId](https://maven.apache.org/pom.html#Maven_Coordinates) to something appropriate based on the intended use of your project.
 -   Update your <name> and <description> to something appropriate for your new artifactId.
@@ -266,24 +266,24 @@ In addition to modifying and developing the source code itself, there are severa
 
 #### Optional changes
 
--   If you want to use additional [ImageJ or Fiji projects](Source_code) as libraries, you will need to add them as dependencies in the [dependency block](https://maven.apache.org/pom.html#Dependencies) of your `pom.xml`. Note that you will not need to specify a <version>, as these are managed by the `pom-scijava` parent pom.
+-   If you want to use additional [ImageJ or Fiji projects](/develop/source) as libraries, you will need to add them as dependencies in the [dependency block](https://maven.apache.org/pom.html#Dependencies) of your `pom.xml`. Note that you will not need to specify a <version>, as these are managed by the `pom-scijava` parent pom.
 -   If your copied `pom.xml` has a [main method specification](https://github.com/imagej/tutorials/blob/249c699dbdb9308f8a5539f0f39cf84d2612b273/simple-commands/pom.xml#L22-L24) you will likely need to remove or update it as appropriate.
--   If you want to add non-Java files to your plugin, such as sample images or [demo scripts](Scripting), refer to the [standard maven layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html).
+-   If you want to add non-Java files to your plugin, such as sample images or [demo scripts](/scripting), refer to the [standard maven layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html).
 
 Next Steps
 ----------
 
 There are further guides available dedicated to developing particular types of plugins:
 
--   [Adding new ops](Adding_new_ops)
--   [Adding new file formats](Adding_new_file_formats)
+-   [Adding new ops](/develop/writing-ops)
+-   [Adding new file formats](/develop/formats)
 
 Once you have completed plugins and want to get them out to users, you can familiarize yourself with the articles on:
 
--   [Plugin distribution](Distribution)
--   [The development lifecycle](Development_Lifecycle)
+-   [Plugin distribution](/develop/distributing)
+-   [The development lifecycle](/develop/releasing)
 -   [Core contribution requirements](Fiji_contribution_requirements)
 
-As always, if you ever need assistance, [just ask](Help)!
+As always, if you ever need assistance, [just ask](/help)!
 
   

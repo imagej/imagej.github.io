@@ -26,7 +26,7 @@ Extract the revision history
 Update the Maven build
 ----------------------
 
-Assuming you are using [Maven](Maven) to build the subproject:
+Assuming you are using [Maven](/develop/maven) to build the subproject:
 
 1.  Add an *<scm>* section to the *pom.xml* to reflect the new remote repository's URL (see [example](https://github.com/scijava/jep/commit/b76f4a1df830c090fc96ab99bb145dd67e8e69ce)):
         vi pom.xml
@@ -47,7 +47,7 @@ Push the changes
     This is good advice in general: check `git status` and `git diff` *every time* before you commit, to prevent making a fool out of yourself.
 2.  Commit everything, mentioning the commit of the parent project from which history was rewritten (see [example](https://github.com/scijava/jep/commit/660930836860c6f67ecb53d091eb1730ecb68c80)):
         git add . && git commit -s
-3.  Create a new repository somewhere for the new project—we recommend [GitHub](GitHub).
+3.  Create a new repository somewhere for the new project—we recommend [GitHub](/develop/github).
 4.  Connect your repository with the remote one:
         git remote set-url origin git@github.com:my-org/my-new-project
 

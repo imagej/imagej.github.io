@@ -6,7 +6,7 @@ categories: News
 description: test description
 ---
 
-[ImgLib2](ImgLib2) was published in [Bioinformatics](http://bioinformatics.oxfordjournals.org/content/28/22/3009). The library developed jointly by Stephan Saalfeld, Stephan Preibisch and Tobias Pietszch has originated in Fiji, but has outgrown it becoming the centerpiece of other projects, especially [ImageJ2](ImageJ2). Pavel Tomancak provided funding for its developers.[1].
+[ImgLib2](/imglib2) was published in [Bioinformatics](http://bioinformatics.oxfordjournals.org/content/28/22/3009). The library developed jointly by Stephan Saalfeld, Stephan Preibisch and Tobias Pietszch has originated in Fiji, but has outgrown it becoming the centerpiece of other projects, especially [ImageJ2](/software/imagej2). Pavel Tomancak provided funding for its developers.[1].
 
 <references/>
 

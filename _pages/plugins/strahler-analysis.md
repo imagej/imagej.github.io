@@ -22,20 +22,20 @@ description: test description
 {% capture source%}
 {% include github org='tferr' repo='hIPNAT' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='Strahler Analysis' maintainer=maintainer author=author filename='hIPNAT\_.jar ([Neuroanatomy update site](User_Neuroanatomy))' source=source released='April 2016' category='[Plugins](Category_Plugins), [Neuroanatomy](Category_Neuroanatomy), [Analysis](Category_Analysis), [Skeleton](Category_Skeleton)' %}
+{% include info-box software='Fiji' name='Strahler Analysis' maintainer=maintainer author=author filename='hIPNAT\_.jar ([Neuroanatomy update site](/users/Neuroanatomy))' source=source released='April 2016' category='[Plugins](Category_Plugins), [Neuroanatomy](Category_Neuroanatomy), [Analysis](Category_Analysis), [Skeleton](Category_Skeleton)' %}
 
 </div>
 
-A plugin from the [Neuroanatomy update site](User_Neuroanatomy) that performs Strahler analysis on topographic skeletons (2D/3D). {% include wikipedia title='Strahler number' text='Strahler numbering'%} is a numerical procedure that summarizes the branching complexity of mathematical trees.
+A plugin from the [Neuroanatomy update site](/users/Neuroanatomy) that performs Strahler analysis on topographic skeletons (2D/3D). {% include wikipedia title='Strahler number' text='Strahler numbering'%} is a numerical procedure that summarizes the branching complexity of mathematical trees.
 
-{% include ambox text='This page describes how to perform Strahler Analysis on skeletonized images. For analysis of traced structures have a look at [SNT](SNT).' %}
+{% include ambox text='This page describes how to perform Strahler Analysis on skeletonized images. For analysis of traced structures have a look at [SNT](/plugins/snt).' %}
 
 Description
 -----------
 
 <span id="StrahlerAnimation"></span><img src="/media/StrahlerAnimation.gif" title="fig:Strahler Analysis by iterative elimination of end-point branches" width="300" alt="Strahler Analysis by iterative elimination of end-point branches" /> The analysis occurs through progressive pruning of terminal branches, *iterative tree simplification*, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them.
 
-*Strahler Analysis* takes a <u>binary</u> or <u>8-bit grayscale</u> image (2D or 3D) containing a <u>single arbor</u>, and calls [AnalyzeSkeleton](AnalyzeSkeleton) iteratively to retrieve [Horton-Strahler numbers](#References "wikilink") from the [skeletonized centerlines](Skeletonize3D) of the input image. Each iteration includes three operations: 1) a (re)-skeletonization step to ensure that arbor remains represented by its centerlines, 2) an elimination step in which terminal-branches are pruned from the image and 3) an analysis step in which pruned branches are counted and measured. The iteration ceases as soon as all branches have been eliminated or a unresolved [closed loop](#Elimination_of_Skeleton_Loops "wikilink") has been detected in the pruned arbor.
+*Strahler Analysis* takes a <u>binary</u> or <u>8-bit grayscale</u> image (2D or 3D) containing a <u>single arbor</u>, and calls [AnalyzeSkeleton](/plugins/analyze-skeleton) iteratively to retrieve [Horton-Strahler numbers](#References "wikilink") from the [skeletonized centerlines](/plugins/skeletonize3d) of the input image. Each iteration includes three operations: 1) a (re)-skeletonization step to ensure that arbor remains represented by its centerlines, 2) an elimination step in which terminal-branches are pruned from the image and 3) an analysis step in which pruned branches are counted and measured. The iteration ceases as soon as all branches have been eliminated or a unresolved [closed loop](#Elimination_of_Skeleton_Loops "wikilink") has been detected in the pruned arbor.
 
 Parameters
 ----------
@@ -64,7 +64,7 @@ Elimination of Skeleton Loops:
 
   
   
-The initial non-thinned image to be used by [AnalyzeSkeleton](AnalyzeSkeleton) for [intensity-based](AnalyzeSkeleton#Loop_detection_and_pruning) elimination of closed loops. This option is only used if either *Lowest intensity voxel* or *Lowest intensity branch* is chosen as *Method*. Note that if an intensity-based method is selected but the chosen image is a binary one, closed loops will not be resolved.
+The initial non-thinned image to be used by [AnalyzeSkeleton](/plugins/analyze-skeleton) for [intensity-based](AnalyzeSkeleton#Loop_detection_and_pruning) elimination of closed loops. This option is only used if either *Lowest intensity voxel* or *Lowest intensity branch* is chosen as *Method*. Note that if an intensity-based method is selected but the chosen image is a binary one, closed loops will not be resolved.
 
 <!-- -->
 
@@ -132,13 +132,13 @@ If *Show detailed information* is checked, *Average branch length*, *N. of trees
 Installation
 ------------
 
-To install *Strahler Analysis* you must use Java 8 and subscribe to the [Neuroanatomy update site](User_Neuroanatomy).
+To install *Strahler Analysis* you must use Java 8 and subscribe to the [Neuroanatomy update site](/users/Neuroanatomy).
 
 Related Links
 -------------
 
--   [AnalyzeSkeleton](AnalyzeSkeleton) and [Skeletonize3D](Skeletonize3D), analysis of topographic skeletons
--   [Sholl Analysis](Sholl_Analysis), bitmap morphometry based on the Sholl technique
+-   [AnalyzeSkeleton](/plugins/analyze-skeleton) and [Skeletonize3D](/plugins/skeletonize3d), analysis of topographic skeletons
+-   [Sholl Analysis](/plugins/sholl-analysis), bitmap morphometry based on the Sholl technique
 
 References
 ----------
@@ -158,11 +158,11 @@ Original publications by {% include wikipedia title='Robert E. Horton' text='Rob
 Citing
 ------
 
-Plugins from the [Neuroanatomy update site](User_Neuroanatomy):
+Plugins from the [Neuroanatomy update site](/users/Neuroanatomy):
 
 :\* Tiago Ferreira (2016) [<img src="https://zenodo.org/badge/doi/10.5281/zenodo.49399.svg" alt="10.5281/zenodo.49399">](http://dx.doi.org/10.5281/zenodo.49399)
 
-[Skeletonization](Skeletonize3D) and [Skeleton Analysis](AnalyzeSkeleton):
+[Skeletonization](/plugins/skeletonize3d) and [Skeleton Analysis](/plugins/analyze-skeleton):
 
 :\*Ignacio Arganda-Carreras, Rodrigo Fernandez-Gonzalez, Arrate Munoz-Barrutia, Carlos Ortiz-De-Solorzano, ["3D reconstruction of histological sections: Application to mammary gland tissue"](http://www3.interscience.wiley.com/journal/123322233/abstract), Microscopy Research and Technique, Volume 73, Issue 11, pages 1019–1029, October 2010.
 

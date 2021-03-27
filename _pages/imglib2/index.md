@@ -28,12 +28,12 @@ Resources
 ---------
 
 -   [ImgLib2 paper](http://bioinformatics.oxfordjournals.org/content/28/22/3009.full)
--   [ImgLib2 Documentation](ImgLib2_Documentation)
--   [ImgLib2 Examples](ImgLib2_Examples)
+-   [ImgLib2 Documentation](/imglib2/documentation)
+-   [ImgLib2 Examples](/imglib2/examples)
 -   {% include javadoc project='ImgLib2' %} javadoc
--   [How To Migrate Code From ImgLib To ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2)
--   ["Introduction to ImgLib2"](ImgLib2_-_Introductory_Workshop) workshop
--   ["Advanced Programming with ImgLib2"](ImgLib2_-_Advanced_Programming_Workshop) workshop
+-   [How To Migrate Code From ImgLib To ImgLib2](/imglib2/migrate-from-imglib1)
+-   ["Introduction to ImgLib2"](/imglib2/workshop-introductory) workshop
+-   ["Advanced Programming with ImgLib2"](/imglib2/workshop-advanced) workshop
 
 Source code
 -----------
@@ -45,11 +45,11 @@ There is also a continuous integration system that builds ImgLib2 [every time th
 ImgLib2 vs. ImgLib1
 -------------------
 
-[ImgLib1](ImgLib1_(deprecated) "wikilink") is the previous incarnation of the library. We encourage developers to use ImgLib2 instead, and [migrate existing ImgLib1 programs to ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2) whenever possible.
+[ImgLib1](ImgLib1_(deprecated) "wikilink") is the previous incarnation of the library. We encourage developers to use ImgLib2 instead, and [migrate existing ImgLib1 programs to ImgLib2](/imglib2/migrate-from-imglib1) whenever possible.
 
-For an explanation of how ImgLib2 has changed from ImgLib1, see the [Changes from ImgLib1 to ImgLib2](Changes_from_ImgLib1_to_ImgLib2) page.
+For an explanation of how ImgLib2 has changed from ImgLib1, see the [Changes from ImgLib1 to ImgLib2](/imglib2/changes-from-imglib1) page.
 
-See the [How To Migrate Code From ImgLib To ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2) page for details on how to update your ImgLib1-based code to use ImgLib2.
+See the [How To Migrate Code From ImgLib To ImgLib2](/imglib2/migrate-from-imglib1) page for details on how to update your ImgLib1-based code to use ImgLib2.
 
 API Version History
 -------------------
@@ -59,9 +59,9 @@ A history of API changes is available at: https://abi-laboratory.pro/java/tracke
 Other links
 -----------
 
--   [ImgLib2 development discussion](ImgLib2_Discussion)
--   [ImgLib2 performance benchmarks](ImgLib2_Benchmarks)
--   [ImageJ2](ImageJ2) uses ImgLib2 as its core data model
+-   [ImgLib2 development discussion](/imglib2/discussion)
+-   [ImgLib2 performance benchmarks](/imglib2/benchmarks)
+-   [ImageJ2](/software/imagej2) uses ImgLib2 as its core data model
 
 Publication
 -----------

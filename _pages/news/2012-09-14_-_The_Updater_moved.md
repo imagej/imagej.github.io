@@ -6,7 +6,7 @@ categories: News
 description: test description
 ---
 
-The Fiji Updater moved to [ImageJ2](ImageJ2)!
+The Fiji Updater moved to [ImageJ2](/software/imagej2)!
 
 It has always been the goal of the Fiji project to contribute to the ImageJ community. We have been pleased to contribute many bug fixes and useful features such as the [Command Finder](https://imagej.net/docs/guide/146-5.html).
 

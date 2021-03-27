@@ -28,7 +28,7 @@ layout: home
                     <header class="major">
                         <ul class = "actions special">
                             <li><a href="{{"/learn" | relative_url}}" class="button icon solid fa-cogs">Use</a></li>
-                            <li><a href="{{"/Development" | relative_url}}" class="button icon solid fa-wrench">Extend</a></li>
+                            <li><a href="{{"/develop" | relative_url}}" class="button icon solid fa-wrench">Extend</a></li>
                             <li><a href="{{"/search" | relative_url}}" class="button icon solid fa-search">Search</a></li>
                         </ul>
                         <ul class = "actions special">

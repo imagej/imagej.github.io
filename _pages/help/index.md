@@ -32,11 +32,11 @@ There are several popular communication channels: {% include communication%}
 Troubleshooting
 ===============
 
-If you encounter problems, check the [Troubleshooting](Troubleshooting) page.
+If you encounter problems, check the [Troubleshooting](/help/troubleshooting) page.
 
 Reporting bugs
 ==============
 
-If you have found a bug, you can help the project by [reporting it](Report_a_Bug).
+If you have found a bug, you can help the project by [reporting it](/help/report-a-bug).
 
 

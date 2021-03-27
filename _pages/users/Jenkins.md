@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-This bot account was used by ImageJ [Jenkins](Jenkins) jobs.
+This bot account was used by ImageJ [Jenkins](/develop/jenkins) jobs.

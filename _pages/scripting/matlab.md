@@ -12,9 +12,9 @@ description: test description
 If you run MATLAB R2017b and later, you don"t need to do this, as it ships and uses Java 8 already.' %} **ImageJ-MATLAB** is an extension which:
 
 -   Translates data between ImageJ images and MATLAB matrices.
--   Enables execution of MATLAB scripts from inside ImageJ's [Script Editor](Script_Editor).
+-   Enables execution of MATLAB scripts from inside ImageJ's [Script Editor](/scripting/script-editor).
 -   Lets you launch ImageJ and interact with it from inside MATLAB.
--   Allows developers to write additional [plugins](Plugins) which [extend](Extensibility) these capabilities in new directions.
+-   Allows developers to write additional [plugins](/fiji/plugins) which [extend](/Architecture#Extensibility) these capabilities in new directions.
 
 MATLAB tutorial for ImageJ
 ==========================
@@ -22,7 +22,7 @@ MATLAB tutorial for ImageJ
 Prerequisites
 -------------
 
--   Add the {% include list-of-update-sites content='ImageJ-MATLAB' %} update site. See [Following an update site](Following_an_update_site) for more detail.
+-   Add the {% include list-of-update-sites content='ImageJ-MATLAB' %} update site. See [Following an update site](/update-sites/following) for more detail.
     1.  You go to `Help > Update...`
     2.  Once checking status is done, open `Manage update sites`
     3.  Tick `ImageJ-MATLAB` and then `Close` <img src="/media/Manage_update_sites_ImageJ_MATLAB.png" alt="fig:Manage_update_sites_ImageJ_MATLAB.png" width="550"/>
@@ -50,7 +50,7 @@ Prerequisites
 Creating MATLAB scripts inside ImageJ
 -------------------------------------
 
-Using the [Script Editor](Script_Editor) you will be able to select [MATLAB](MATLAB) from the [ language menu](Script_Editor#Choosing_a_language). You can also install and run .m scripts via the [ standard script plugin infrastructure](Scripting_Help#Creating_scripts_and_using_.22refresh_scripts.22).
+Using the [Script Editor](/scripting/script-editor) you will be able to select [MATLAB](MATLAB) from the [ language menu](Script_Editor#Choosing_a_language). You can also install and run .m scripts via the [ standard script plugin infrastructure](Scripting_Help#Creating_scripts_and_using_.22refresh_scripts.22).
 
 Actually running a [MATLAB](MATLAB) script from ImageJ is effectively like calling [`eval`](http://www.mathworks.com/help/matlab/ref/eval.html) on the script's contents. The script will be evaluated as such in a remote [MATLAB](MATLAB) instance (which will be launched automatically, if needed). Note that only scripts, not functions, can be evaluated in this way. See [the MATLAB documentation](http://www.mathworks.com/help/matlab/learn_matlab/scripts-and-functions.html) for an explanation of these concepts.
 
@@ -266,7 +266,7 @@ The startup process automatically injects the ImageJ classpath into the [MATLAB]
 #### Solution to `IJM.show(name)` issues
 
 -   Until someone can fix `IJM.show(name)` properly, consider using [`copytoImagePlus`](https://github.com/kouichi-c-nakamura/copytoImagePlus) MATLAB function instead. It solves all the issues of `IJM.show(name)` descrived above and create an ImagePlus hyperstack. See the example of a 5D Hyperstack below.
--   `copytoImg` and `copytoImgPlus` MATLAB functions are also available from `Fiji.app/scripts` folder to allow you convert a MATLAB array to ImageJ2 (ImgLib2) Img and ImgPlus objects, respectively. See also [ this page](Creating_Imglib2_images_in_MATLAB).
+-   `copytoImg` and `copytoImgPlus` MATLAB functions are also available from `Fiji.app/scripts` folder to allow you convert a MATLAB array to ImageJ2 (ImgLib2) Img and ImgPlus objects, respectively. See also [ this page](/imglib2/matlab).
 
 ### Examples
 
@@ -376,8 +376,8 @@ Publication
 See also
 ========
 
--   [Creating Imglib2 images in MATLAB](Creating_Imglib2_images_in_MATLAB)
--   [Using TrackMate from MATLAB](Using_TrackMate_from_MATLAB)
--   [Analyzing TrackMate results with MATLAB](Analyzing_TrackMate_results_with_MATLAB)
+-   [Creating Imglib2 images in MATLAB](/imglib2/matlab)
+-   [Using TrackMate from MATLAB](/plugins/trackmate/using-from-matlab)
+-   [Analyzing TrackMate results with MATLAB](/plugins/trackmate/analyzing-results-with-matlab)
 -   [Comparison of Matlab functions and Ops](Comparison_of_Matlab_functions_and_Ops)
 -   [Miji](Miji) (legacy)

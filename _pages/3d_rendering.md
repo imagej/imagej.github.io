@@ -11,10 +11,10 @@ description: test description
 Currently available options
 ---------------------------
 
--   Existing [3D Viewer](3D_Viewer)
+-   Existing [3D Viewer](/plugins/3d-viewer)
 -   [BigDataViewer](BigDataViewer)
--   [ClearVolume](ClearVolume)
--   [Volume Viewer](Volume_Viewer)
+-   [ClearVolume](/plugins/clearvolume)
+-   [Volume Viewer](/plugins/volume-viewer)
 -   [Vaa3D](Vaa3D)
 -   [FluoRender](FluoRender)
 -   [VTK](VTK)

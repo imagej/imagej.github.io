@@ -8,7 +8,7 @@ description: test description
 
 
 {% capture reason%}
-This plugin was removed, as the [Auto Threshold](Auto_Threshold) plugin from {% include person content='Landini' %} does a better job.
+This plugin was removed, as the [Auto Threshold](/plugins/auto-threshold) plugin from {% include person content='Landini' %} does a better job.
 {% endcapture %}
 {% include pluginremoved reason=reason date='April 2009' %}
 
@@ -17,7 +17,7 @@ This plugin was removed, as the [Auto Threshold](Auto_Threshold) plugin from {% 
 Purpose
 -------
 
-This plugin allows the user to apply four different automatic thresholding algorithms. The four algorithms are ImageJ's built in IsoData algorithm, [Maximum Entropy Threshold](Maximum_Entropy_Threshold), [Otsu Thresholding](Otsu_Thresholding), and [Mixture Modeling](Mixture_Modeling_Thresholding). More information about thresholding and the algorithms employed here can be found at the [Image Thresholding Tutorial](http://www.ph.tn.tudelft.nl/Courses/FIP/noframes/fip-Segmenta.html).
+This plugin allows the user to apply four different automatic thresholding algorithms. The four algorithms are ImageJ's built in IsoData algorithm, [Maximum Entropy Threshold](/plugins/maximum-entropy-threshold), [Otsu Thresholding](Otsu_Thresholding), and [Mixture Modeling](/plugins/mixture-modeling-thresholding). More information about thresholding and the algorithms employed here can be found at the [Image Thresholding Tutorial](http://www.ph.tn.tudelft.nl/Courses/FIP/noframes/fip-Segmenta.html).
 
 Usage
 -----

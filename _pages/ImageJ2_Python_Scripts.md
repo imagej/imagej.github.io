@@ -68,7 +68,7 @@ Manual Simple Registration on Stack
 Resources
 =========
 
--   [Jython Scripting](Jython_Scripting)
--   [Jython Examples](Jython_Scripting_Examples)
+-   [Jython Scripting](/scripting/jython)
+-   [Jython Examples](/scripting/jython/examples)
 
    

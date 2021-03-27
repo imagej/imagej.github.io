@@ -61,7 +61,7 @@ If you find this plugin useful for your work, please cite this paper and refer t
 3D Spot Segmentation
 --------------------
 
-The plugin works with two images, one containing the **seeds** of the objects, that can be obtained from local maxima (see [3D Filters](3D_Filters)), the other image containing signal data. The program computes a **local threshold** around each seeds and cluster voxels with values higher than the local threshold computed. Spots-like objects can be enhanced using a topHat (see [3D Filters](3D_Filters)) or a [Edge and symmetry filter](Edge_and_symmetry_filter). A plugin [3D maxima Finder](https://imagejdocu.list.lu/tutorial/plugins/3d_maxima_finder) is also available to compute these local maxima, similarly to the find maxima in ImageJ/Fiji.
+The plugin works with two images, one containing the **seeds** of the objects, that can be obtained from local maxima (see [3D Filters](3D_Filters)), the other image containing signal data. The program computes a **local threshold** around each seeds and cluster voxels with values higher than the local threshold computed. Spots-like objects can be enhanced using a topHat (see [3D Filters](3D_Filters)) or a [Edge and symmetry filter](/plugins/edge-and-symmetry-filter). A plugin [3D maxima Finder](https://imagejdocu.list.lu/tutorial/plugins/3d_maxima_finder) is also available to compute these local maxima, similarly to the find maxima in ImageJ/Fiji.
 
 Three methods are available for computing the value of the local threshold and 3 methods for clustering are also proposed. The option **watershed** can be chosen to avoid merging of close spots.
 

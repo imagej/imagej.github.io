@@ -15,22 +15,22 @@ You can find more information about me in my website: [http://sites.google.com/s
 Maintained plugins (Fiji)
 -------------------------
 
--   [AnalyzeSkeleton](AnalyzeSkeleton)
--   [BUnwarpJ](BUnwarpJ)
--   [Register Virtual Stack Slices](Register_Virtual_Stack_Slices)
--   [SIOX: Simple Interactive Object Extraction](SIOX__Simple_Interactive_Object_Extraction)
--   [Skeletonize3D](Skeletonize3D)
--   [Spline Deformation Generator](Spline_Deformation_Generator)
--   [Transform Virtual Stack Slices](Transform_Virtual_Stack_Slices)
--   [Trainable Weka Segmentation](Trainable_Weka_Segmentation)
+-   [AnalyzeSkeleton](/plugins/analyze-skeleton)
+-   [BUnwarpJ](/plugins/bunwarpj)
+-   [Register Virtual Stack Slices](/plugins/register-virtual-stack-slices)
+-   [SIOX: Simple Interactive Object Extraction](/plugins/siox--simple-interactive-object-extraction)
+-   [Skeletonize3D](/plugins/skeletonize3d)
+-   [Spline Deformation Generator](/plugins/spline-deformation-generator)
+-   [Transform Virtual Stack Slices](/plugins/transform-virtual-stack-slices)
+-   [Trainable Weka Segmentation](/plugins/tws)
 
 Maintained plugins (IJPB-plugins update site)
 ---------------------------------------------
 
-Included in [MorphoLibJ](MorphoLibJ):
+Included in [MorphoLibJ](/plugins/morpholibj):
 
--   [Classic Watershed](Classic_Watershed)
--   [Distance Transform Watershed](Distance_Transform_Watershed)
--   [Marker-controlled Watershed](Marker-controlled_Watershed)
--   [Interactive\_Marker-controlled\_Watershed](Interactive_Marker-controlled_Watershed)
--   [Morphological Segmentation](Morphological_Segmentation)
+-   [Classic Watershed](/plugins/classic-watershed)
+-   [Distance Transform Watershed](/plugins/distance-transform-watershed)
+-   [Marker-controlled Watershed](/plugins/marker-controlled-watershed)
+-   [Interactive\_Marker-controlled\_Watershed](/plugins/interactive-marker-controlled-watershed)
+-   [Morphological Segmentation](/plugins/morphological-segmentation)

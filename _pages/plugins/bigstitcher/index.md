@@ -25,7 +25,7 @@ Introduction & Overview
 
 The BigStitcher is a software package that allows simple and efficient alignment of multi-tile and multi-angle image datasets, for example acquired by lightsheet, widefield or confocal microscopes. The software supports images of almost arbitrary size ranging from very small images up to volumes in the range of many terabytes, which are for example produced when acquiring cleared tissue samples with lightsheet microscopy.
 
-As its predecessor, the [Image Stitching](Image_Stitching), the BigStitcher can run in fully automatically mode but is additionally able to guide the user through the alignment process by interactively showing intermediate results with the option for user interaction, which includes interactive setup of approximate tile locations. The BigStitcher is fully integrated with the [BigDataViewer](BigDataViewer) and is thus able to interactively display and process the input images independent of their size. An improved global optimization is now able to efficiently align sparsely connected datasets, where image content is separated by large areas of almost constant background.
+As its predecessor, the [Image Stitching](/plugins/image-stitching), the BigStitcher can run in fully automatically mode but is additionally able to guide the user through the alignment process by interactively showing intermediate results with the option for user interaction, which includes interactive setup of approximate tile locations. The BigStitcher is fully integrated with the [BigDataViewer](BigDataViewer) and is thus able to interactively display and process the input images independent of their size. An improved global optimization is now able to efficiently align sparsely connected datasets, where image content is separated by large areas of almost constant background.
 
 **In addition to the documentation here there is a growing set of tutorial videos on this [YouTube Channel](https://www.youtube.com/playlist?list=PLNZz8lLDpAeVOeAmQWMrKGOeB3vv28yJE)**
 
@@ -55,45 +55,45 @@ Documentation
 
 Since image data is produced in a variety of formats, the first step is to assemble all images into a dataset and load the necessary metadata or manually define it if it is missing. The BigStitcher is integrated with the [BigDataViewer](BigDataViewer) and thus shares the same data representation, which is stored as a XML file on disk.
 
--   [Defining a new dataset](BigStitcher_Define_new_dataset)
+-   [Defining a new dataset](/plugins/bigstitcher/define-new-dataset)
 
 Once a dataset was defined and the XML file was saved, you can quickly load any dataset:
 
--   [Opening an existing dataset](BigStitcher_Open_existing)
+-   [Opening an existing dataset](/plugins/bigstitcher/open-existing)
 
 ### UI Overview
 
 The BigStitcher can run in two modes depending on whether you want to align tiled images imaged from the same direction (Stitching mode) or align tiled acquisitions from different angles or time points (MultiView mode). The following sections give an overview of the UI in both modes:
 
--   [Stitching mode](BigStitcher_Stitching_Mode)
+-   [Stitching mode](/plugins/bigstitcher/stitching-mode)
 
 <!-- -->
 
--   [MultiView mode](BigStitcher_MultiView_Mode)
+-   [MultiView mode](/plugins/bigstitcher/multiview-mode)
 
 <!-- -->
 
--   [Inspect Data using BigDataViewer or ImageJ](BigStitcher_BDV)
+-   [Inspect Data using BigDataViewer or ImageJ](/plugins/bigstitcher/bdv)
 
 ### Pre-alignment
 
 Ideally, the location of tiles should have been loaded from metadata while importing a dataset. With the BigStitcher you can, however, also move views to a regular grid manually, load view locations from a *tile configuration* file or manually translate single views.
 
--   [Manually align views](BigStitcher_manual_translation)
+-   [Manually align views](/plugins/bigstitcher/manual-translation)
 
 Many lightsheet microscopes offer illumination of the sample from multiple directions. Since typically one illumination direction produces the best image for a given point in the sample, you might want to discard images illuminated from other directions.
 
--   [Illumination selection](BigStitcher_Select_illumination)
+-   [Illumination selection](/plugins/bigstitcher/select-illumination)
 
 Furthermore, you might want to correct your images for uneven brightness across the field-of-view or camera offsets (**"flatfield correction"**). We offer on-the-fly flatfield correction as an experimental feature.
 
--   [Flatfield correction](BigStitcher_Flatfield_correction)
+-   [Flatfield correction](/plugins/bigstitcher/flatfield-correction)
 
 ### Quality Control
 
 To quantify image quality throughout a dataset, we allow for the calculation of (relative) Fourier Ring Correlation (FRC) in the images. You can use this functionality to assess whether image quality/resolution is constant throughout the sample or it decreases, e.g. as you go deeper into the sample.
 
--   [FRC Quality Control](BigStitcher_FRC)
+-   [FRC Quality Control](/plugins/bigstitcher/frc)
 
 ### Stitching
 
@@ -101,39 +101,39 @@ Stitching consists of aligning multiple overlapping image tiles using a translat
 
 The basic stitching pipeline consists of 3 steps:
 
--   [Pairwise shift calculation](BigStitcher_Pairwise_shift)
+-   [Pairwise shift calculation](/plugins/bigstitcher/pairwise-shift)
 
 <!-- -->
 
--   [Previewing and filtering pairwise shifts](BigStitcher_Preview_Pairwise_shift)
+-   [Previewing and filtering pairwise shifts](/plugins/bigstitcher/preview-pairwise-shift)
 
 <!-- -->
 
--   [Global optimization](BigStitcher_Global_optimization)
+-   [Global optimization](/plugins/bigstitcher/global-optimization)
 
 Additionally, we offer the possibility to refine the alignment with a more complex affine transformation model using the iterative Closest Point (ICP) algorithm:
 
--   [Affine refinement of registration via ICP](BigStitcher_ICP_refinement)
+-   [Affine refinement of registration via ICP](/plugins/bigstitcher/icp-refinement)
 
 In addition to the standard stitching pipeline, we also offer advanced functionality, such as different algorithms for determining pairwise shifts:
 
--   [Advanced stitching](BigStitcher_Advanced_stitching)
+-   [Advanced stitching](/plugins/bigstitcher/advanced-stitching)
 
 ### MultiView registration
 
-Once you have aligned the views imaged from the same angles to each other, you can then proceed to align those groups of views to each other, using [Multiview-Reconstruction](Multiview-Reconstruction). For this, switch to [MultiView mode](BigStitcher_MultiView_Mode) in the main window.
+Once you have aligned the views imaged from the same angles to each other, you can then proceed to align those groups of views to each other, using [Multiview-Reconstruction](/plugins/multiview-reconstruction). For this, switch to [MultiView mode](/plugins/bigstitcher/multiview-mode) in the main window.
 
 This process consists of finding *interest points* such as nuclei or fiducial beads in the single views, matching corresponding interest points in other views and then aligning the views based on the corresponding interest points.
 
--   [Interest point detection](BigStitcher_Interest_points)
+-   [Interest point detection](/plugins/bigstitcher/interest-points)
 
 <!-- -->
 
--   [Registration using interest points](BigStitcher_Registration)
+-   [Registration using interest points](/plugins/bigstitcher/registration)
 
 In MultiView mode, we also offer various ways of visualizing and managing interest points:
 
--   [Interest point management](BigStitcher_Interest_point_management)
+-   [Interest point management](/plugins/bigstitcher/interest-point-management)
 
 ### Blocked and Non-Rigid Refinement
 
@@ -141,7 +141,7 @@ In some cases, especially when aligning images illuminated from different sides 
 
 The first improvement is to *split the images of the dataset into virtual blocks*, allowing for a more fine-grained registration using the same registration tools available for the whole images:
 
--   [Virtual image splitting](BigStitcher_Image_Splitting)
+-   [Virtual image splitting](/plugins/bigstitcher/image-splitting)
 
 Additionally, we support (moving least squares) non-rigid refinement during **Image Fusion**. Since this is a time-consuming operation we implemented a quick virtual preview for inspection of the alignment in BigDataViewer.
 
@@ -151,19 +151,19 @@ Additionally, we support (moving least squares) non-rigid refinement during **Im
 
 Once the views in your dataset have been aligned, a typical last step is to create a "classical image" that can be used by other ImageJ-plugins or other programs altogether. The process of merging multiple aligned images into one resulting image is called **Image Fusion**:
 
--   [Fuse & Export](BigStitcher_Fuse)
+-   [Fuse & Export](/plugins/bigstitcher/fuse)
 
 Often, you might not want to fuse the whole sample, but rather a smaller sub-volume (defined by a **Bounding Box**). To do this, you have to define a bounding box to use in the fusion:
 
--   [Bounding Box Definition](BigStitcher_BoundingBox)
+-   [Bounding Box Definition](/plugins/bigstitcher/boundingbox)
 
 All bounding boxes will be axis-aligned in the **global coordinate system** of your dataset (determined by the coordinate system of the first view). Sometimes, the sample is "tilted" in respect to this coordinate system, leading to unnecessarily big dark space around the sample in the fused image. We therefore offer various ways of **re-orienting** the sample for more space-efficient fusion:
 
--   [Sample re-orientation and manual transformation](BigStitcher_ReorientSample)
+-   [Sample re-orientation and manual transformation](/plugins/bigstitcher/reorientsample)
 
 If the brightness of the various Views/Tiles in you dataset differs (e.g. due to bleaching), you have the option of determining an optimized brightness and contrast adjustment that will be applied during the fusion process:
 
--   [Brightness and Contrast Adjustment](BigStitcher_BrightnessContrastAdjustment)
+-   [Brightness and Contrast Adjustment](/plugins/bigstitcher/brightnesscontrastadjustment)
 
 ### (MultiView) Deconvolution
 
@@ -171,17 +171,17 @@ In addition to simple view fusion, we can additionally perform **Deconvolution**
 
 The first step in this process is assigning PSFs to the views you want to deconvolve:
 
--   [Point Spread Function (PSF) management](BigStitcher_PSF)
+-   [Point Spread Function (PSF) management](/plugins/bigstitcher/psf)
 
 After assigning PSFs to all the views you want to process, you can proceed with the deconvolution itself:
 
--   [(MultiView) Deconvolution](BigStitcher_Deconvolution)
+-   [(MultiView) Deconvolution](/plugins/bigstitcher/deconvolution)
 
 ### Headless Operation
 
 We provide a macro-scriptable version of most processing steps in BigStitcher. They can be recorded using the [Macro Recorder](Macro#The_recorder) and the resulting script can be adapted, e.g. for batch processing.
 
--   [Headless operation of BigStitcher](BigStitcher_Headless)
+-   [Headless operation of BigStitcher](/plugins/bigstitcher/headless)
 
 Example Datasets
 ----------------

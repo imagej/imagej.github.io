@@ -232,7 +232,7 @@ Analyze and Measure
 
 -   {% include bc content='Brain Area Analysis...'%} Measures the amount of cable length, number of terminal nodes, or both that occur in distinct anatomical regions of the brain, with the option to restrict the analysis up to a maximum depth in the ontology hierarchy. Note that only one reconstruction may be selected at a time with this option.
 -   {% include bc content='Create Dendrogram...'%} Runs the {% include bc content='Utilities|Create Dendrogram...'%} command found in the main SNT dialog. See [Dendrogram Viewer](SNT__Analysis#Dendrogram_Viewer). Note only one reconstruction may be selected at a time with this option.
--   {% include bc content='Sholl Analysis...'%} Runs the [Sholl Analysis](Sholl_Analysis) plugin found in {% include bc content='Analyze|Sholl|Sholl Analysis (From Tracings)'%}. Note only one reconstruction may be analysed at a time.
+-   {% include bc content='Sholl Analysis...'%} Runs the [Sholl Analysis](/plugins/sholl-analysis) plugin found in {% include bc content='Analyze|Sholl|Sholl Analysis (From Tracings)'%}. Note only one reconstruction may be analysed at a time.
 
 <div align="left">
 

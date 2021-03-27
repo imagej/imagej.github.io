@@ -18,27 +18,27 @@ description: test description
 {% capture source%}
 {% include github org='mdoube' repo='BoneJ' %}
 {% endcapture %}
-{% include info-box name='BoneJ 1.x' software='ImageJ' logo='<img src="/media/Bonej-icon.png" width="96"/>' author=author maintainer=maintainer source=source status='Legacy' website='http://bonej.org/legacy' %}BoneJ is a plugin for bone image analysis in [ImageJ](ImageJ). It provides free, open source tools for trabecular geometry and whole bone shape analysis.
+{% include info-box name='BoneJ 1.x' software='ImageJ' logo='<img src="/media/Bonej-icon.png" width="96"/>' author=author maintainer=maintainer source=source status='Legacy' website='http://bonej.org/legacy' %}BoneJ is a plugin for bone image analysis in [ImageJ](/about). It provides free, open source tools for trabecular geometry and whole bone shape analysis.
 
-Current release ([BoneJ2](BoneJ2))
+Current release ([BoneJ2](/BoneJ))
 ---------------------------------------------
 
-There's a new modernized version of BoneJ available through the ImageJ [updater](https://imagej.net/Updater). Read more about [BoneJ2](BoneJ2).
+There's a new modernized version of BoneJ available through the ImageJ [updater](https://imagej.net/Updater). Read more about [BoneJ2](/BoneJ).
 
 Legacy (BoneJ v1.x) Installation
 --------------------------------
 
-{% include logo content='ImageJ1' size='24px' %} BoneJ was originally designed to work with plain [ImageJ 1.x](ImageJ_1.x).
+{% include logo content='ImageJ1' size='24px' %} BoneJ was originally designed to work with plain [ImageJ 1.x](/software/imagej1).
 
-{% include logo content='Fiji' size='24px' %} BoneJ can be installed into [Fiji](Fiji), but you must **use the Java-6 version of Fiji, not the current Java-8 version**:
+{% include logo content='Fiji' size='24px' %} BoneJ can be installed into [Fiji](/fiji), but you must **use the Java-6 version of Fiji, not the current Java-8 version**:
 
 -   Download the final Java-6 version of Fiji labeled “2017 May 30” from [here](Fiji_Downloads#Java_6).
 -   Unpack it somewhere beneath your home folder.
 -   Download and install `BoneJ_.jar` into that installation's `plugins` folder.
--   Launch Fiji and run {% include bc content='Plugins | 3D Viewer'%} to trigger installation of the [3D Viewer](3D_Viewer).
+-   Launch Fiji and run {% include bc content='Plugins | 3D Viewer'%} to trigger installation of the [3D Viewer](/plugins/3d-viewer).
 -   Restart Fiji.
 
-For technical details about ImageJ and Fiji using Java 6 vs. Java 8, see the [Java 8](Java_8) page.
+For technical details about ImageJ and Fiji using Java 6 vs. Java 8, see the [Java 8](/news/2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D) page.
 
 BoneJ and pQCT
 --------------

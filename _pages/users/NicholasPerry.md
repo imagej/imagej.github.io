@@ -15,4 +15,4 @@ Plugins
 
 Currently, I am responsible for a single plugin. Please let me know about any bugs you discover!
 
--   [TrackMate](TrackMate)
+-   [TrackMate](/plugins/trackmate)

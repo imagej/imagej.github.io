@@ -6,6 +6,6 @@ categories: News
 description: test description
 ---
 
-Fiji now includes the [Auto Threshold](Auto_Threshold) from Gabriel Landini, that can binarise 8-bit images using various global (histogram-derived) thresholding methods. As a consequence, the [MultiThresholder](MultiThresholder) plugin will soon be marked as deprecated and removed from distribution.
+Fiji now includes the [Auto Threshold](/plugins/auto-threshold) from Gabriel Landini, that can binarise 8-bit images using various global (histogram-derived) thresholding methods. As a consequence, the [MultiThresholder](/plugins/multithresholder) plugin will soon be marked as deprecated and removed from distribution.
 
 

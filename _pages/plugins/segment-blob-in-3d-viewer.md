@@ -29,6 +29,6 @@ Push the {% include key content='Esc' %} key. You may have to do so while having
 Adjusting parameters of the segmentation
 ========================================
 
-Internally, the [Level Sets](Level_Sets) plugin is used. To adjust its many parameters, do a {% include key content='Shift' %}+{% include key content='click' %} with the magic wand. The dialog will open; it's the same dialog as shown in the [Level Sets](Level_Sets) documentation page.
+Internally, the [Level Sets](/plugins/level-sets) plugin is used. To adjust its many parameters, do a {% include key content='Shift' %}+{% include key content='click' %} with the magic wand. The dialog will open; it's the same dialog as shown in the [Level Sets](/plugins/level-sets) documentation page.
 
  

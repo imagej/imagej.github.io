@@ -99,7 +99,7 @@ String arguments can be passed to it, using the *setup(String, ImagePlus)* metho
      ImagePlus imp = IJ.openImage("./TwoLines.tif");
      imp.show();
      Directionality_ da = new Directionality_();
-     String command = "Directionality";
+     String command = "/plugins/directionality";
      new PlugInFilterRunner(da, command, "nbins=60, start=-90, method=gradient");
      
 

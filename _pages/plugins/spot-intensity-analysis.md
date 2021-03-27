@@ -17,7 +17,7 @@ Simple ImageJ/Fiji plugin to plot intensity of a spot over time.
 Installation
 ------------
 
-To install this plugin check the "ValelabUtils" [update site](Following_an_update_site) in the Fiji updater.
+To install this plugin check the "ValelabUtils" [update site](/update-sites/following) in the Fiji updater.
 
 Usage
 -----

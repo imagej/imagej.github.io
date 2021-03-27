@@ -15,7 +15,7 @@ Please note that the SPIM registration plugin available through Fiji, is based o
 
 -   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](/media/Nmeth0610-418.pdf) [Supplement](/media/Nmeth0610-418-S1.pdf)
 
-For technical details about the registration method and SPIM imaging see [SPIM Registration Method](SPIM_Registration_Method).
+For technical details about the registration method and SPIM imaging see [SPIM Registration Method](/plugins/spim-registration/method).
 
 Introduction
 ------------
@@ -34,11 +34,11 @@ The bead-registration plugins offers two registration options:
 -   Single-channel
 -   Multi-channel (same beads are visible in different channels)
 
-The typical option is single-channel registration, even if you want to process a multi-channel acquisitions. You can apply the registration of one channel later to other channels in the [multi-view fusion plugin](Multi-View_Fusion). Multi-channel registration is only required if the **same beads** are visible in several channels.
+The typical option is single-channel registration, even if you want to process a multi-channel acquisitions. You can apply the registration of one channel later to other channels in the [multi-view fusion plugin](/plugins/multi-view-fusion). Multi-channel registration is only required if the **same beads** are visible in several channels.
 
 Both options work in the exactly same way and have very similar options. The additional options of multi-channel registration are explained in the last section.
 
-***Important note:** the output of the plugin are not images, but only registration matrices that serve as basis for either the [multi-view fusion plugin](Multi-View_Fusion) or the [multi-view deconvolution plugin](Multi-view_deconvolution_plugin). An overview of the complete registration and fusion process can be found [here](SPIM_Registration).*
+***Important note:** the output of the plugin are not images, but only registration matrices that serve as basis for either the [multi-view fusion plugin](/plugins/multi-view-fusion) or the [multi-view deconvolution plugin](Multi-view_deconvolution_plugin). An overview of the complete registration and fusion process can be found [here](/plugins/spim-registration).*
 
 How to use the plugin
 ---------------------

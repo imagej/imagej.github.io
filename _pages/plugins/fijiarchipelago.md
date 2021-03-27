@@ -48,7 +48,7 @@ This plugin allows clusterized least-squares and elastic alignment in TrakEM2. R
 
 #### Batch Weka Segmentation
 
-This plugin accelerates image classification with the [ Trainable Weka Segmentation](Trainable_Weka_Segmentation) plugin. To use it, create a classifier and save it (ie, a .model file).
+This plugin accelerates image classification with the [ Trainable Weka Segmentation](/plugins/tws) plugin. To use it, create a classifier and save it (ie, a .model file).
 
 Run the batch segmentation plugin by selecting Plugins -&gt; Batch -&gt; Weka Segmentation 2D
 

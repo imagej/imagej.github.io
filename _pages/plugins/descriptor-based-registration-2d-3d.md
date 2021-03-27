@@ -16,7 +16,7 @@ description: test description
 {% endcapture %}
 {% include info-box software='ImageJ' name='Descriptor-based registration' maintainer=maintainer author='Stephan Preibisch' source=source released='30/11/2011' latest-version='30/11/2011' status='' category='[:Category:Plugins](Category_Plugins)' website='' %}
 
-I uploaded two HowTos to YouTube that illustrate the basic usage of the plugin, which makes use of the algorithms implemented in [BigStitcher](BigStitcher).
+I uploaded two HowTos to YouTube that illustrate the basic usage of the plugin, which makes use of the algorithms implemented in [BigStitcher](/plugins/bigstitcher).
 
 Video 1: [Using the Descriptor-based Registration and automate it through macro-recording](https://www.youtube.com/watch?v=SKW1xwhsxdo)
 

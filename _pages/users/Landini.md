@@ -8,6 +8,6 @@ description: test description
 
 {% include user-box name='Gabriel Landini' affiliation='University of Birmingham' forum='Gabriel' github='landinig' website='http://www.birmingham.ac.uk/staff/profiles/dentistry/landini-gabriel.aspx' %}Maintainer of:
 
--   [Auto Threshold](Auto_Threshold) plugin.
--   [Auto Local Threshold](Auto_Local_Threshold) plugin.
--   [IJ Robot](IJ_Robot) plugin.
+-   [Auto Threshold](/plugins/auto-threshold) plugin.
+-   [Auto Local Threshold](/plugins/auto-local-threshold) plugin.
+-   [IJ Robot](/plugins/ij-robot) plugin.
