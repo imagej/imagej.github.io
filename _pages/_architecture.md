@@ -103,11 +103,11 @@ All components in these organizations use Maven for project management. Each org
 
 | **Logo** | **Project** | **Organization** | **groupID** |
 | :---: | :---: | :---: | :---: |
-| ![SciJava]({{"/images/icons/47px-Scijava-icon.png" | relative_url}}){: .image.table} | SciJava | [scijava](https://github.com/scijava) | [org.scijava](https://maven.scijava.org/index.html#nexus-search;gav~org.scijava) |
-| ![ImageJ2]({{"/images/icons/48px-Imagej2-icon.png" | relative_url}}){: .image.table} | ImageJ | [imagej](https://github.com/imagej) | [net.imagej](https://maven.scijava.org/index.html#nexus-search;gav~net.imagej) |
-| ![ImgLib2]({{"/images/icons/48px-Imglib2-icon.png" | relative_url}}){: .image.table} | ImgLib2 | [imglib](https://github.com/imglib) | [net.imglib2](https://maven.scijava.org/index.html#nexus-search;gav~net.imglib2) |
-| ![SCIFIO]({{"/images/icons/40px-Scifio-icon.png" | relative_url}}){: .image.table} | SCIFIO | [scifio](https://github.com/scifio) | [io.scif](https://maven.scijava.org/index.html#nexus-search;gav~io.scif) |
-| ![FIJI]({{"/images/icons/48px-Fiji-icon.png" | relative_url}}){: .image.table} | Fiji  | [fiji](https://github.com/fiji) | [sc.fiji](https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji) |
+| ![SciJava](/images/icons/47px-Scijava-icon.png){: .image.table} | SciJava | [scijava](https://github.com/scijava) | [org.scijava](https://maven.scijava.org/index.html#nexus-search;gav~org.scijava) |
+| ![ImageJ2](/images/icons/48px-Imagej2-icon.png){: .image.table} | ImageJ | [imagej](https://github.com/imagej) | [net.imagej](https://maven.scijava.org/index.html#nexus-search;gav~net.imagej) |
+| ![ImgLib2](/images/icons/48px-Imglib2-icon.png){: .image.table} | ImgLib2 | [imglib](https://github.com/imglib) | [net.imglib2](https://maven.scijava.org/index.html#nexus-search;gav~net.imglib2) |
+| ![SCIFIO](/images/icons/40px-Scifio-icon.png){: .image.table} | SCIFIO | [scifio](https://github.com/scifio) | [io.scif](https://maven.scijava.org/index.html#nexus-search;gav~io.scif) |
+| ![FIJI](/images/icons/48px-Fiji-icon.png){: .image.table} | Fiji  | [fiji](https://github.com/fiji) | [sc.fiji](https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji) |
 
 {% include anchor content="Bill of Materials" %}
 
@@ -115,7 +115,7 @@ The pom-scijava parent includes a Bill of Materials (BOM) which declares compati
 
 {% include anchor content="Core libraries" %}
 
-![ImageJ Architecture]({{"/images/posts/imagej_arch.png" | relative_url}}){: .image.right}
+![ImageJ Architecture](/images/posts/imagej_arch.png){: .image.right}
 
 The ImageJ software stack is composed of the following core libraries:
 
