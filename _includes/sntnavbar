@@ -3,34 +3,34 @@
         <tbody>
             <tr>
                 <td style="background:#EEF3E2 !important">
-                        <a href="{{"/index" | relative_url}}"><strong>Home</strong></a>
+                        <a href="/index"><strong>Home</strong></a>
                 </td>
                 <td>
-                    <a href="{{"/SNT__Manual" | relative_url}}">Manual</a>
+                    <a href="/SNT__Manual">Manual</a>
                 </td>
                 <td>
-                    <a href="{{"/SNT__Step-By-Step_Instructions" | relative_url}}">Walk-throughs</a>
+                    <a href="/SNT__Step-By-Step_Instructions">Walk-throughs</a>
                 </td>
                 <td>
-                    <a href="{{"/SNT__Screencasts" | relative_url}}">Screencasts</a>
+                    <a href="/SNT__Screencasts">Screencasts</a>
                 </td>
                 <td>
-                    <a href="{{"/SNT__Key_Shortcuts" | relative_url}}">Shortcuts</a>
+                    <a href="/SNT__Key_Shortcuts">Shortcuts</a>
                 </td>
                 <td>
-                    <a href="{{"/SNT__Reconstruction_Viewer" | relative_url}}">Rec. Viewer</a>
+                    <a href="/SNT__Reconstruction_Viewer">Rec. Viewer</a>
                 </td>
                 <td>
-                    <a href="{{"/SNT__Analysis" | relative_url}}">Analysis</a>
+                    <a href="/SNT__Analysis">Analysis</a>
                 </td>
                 <td>
-                    <a href="{{"/SNT__Scripting" | relative_url}}">Scripting</a>
+                    <a href="/SNT__Scripting">Scripting</a>
                 </td>
                 <td>
-                    <a href="{{"/SNT__Modeling" | relative_url}}">Modeling</a>
+                    <a href="/SNT__Modeling">Modeling</a>
                 </td>
                 <td>
-                    <a href="{{"/SNT__FAQ" | relative_url}}">FAQ</a>
+                    <a href="/SNT__FAQ">FAQ</a>
                 </td>
             </tr>
         </tbody>
