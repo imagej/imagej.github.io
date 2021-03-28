@@ -50,42 +50,6 @@ If you want to learn more about how to create an info box, view the source of th
 	<img src="/images/readme/info-box.png">
 </p>
 
-## TODO (pre-live):
-
-- [X] Math support via Mathjax.
-- [X] UX bread crumbs (top of page)
-- [X] Code syntax highlighting
-- [X] Add infobox elements
-- [X] Add brief description to front matter.
-- [X] Add Lazy loading to images
-- [X] Seperate info-box into (author should not specifiy icon path):
-	- [X] Information
-	- [X] Tech
-	- [X] Warning
-- [ ] Add userbox (https://imagej.net/Template:Userbox)
-- [ ] Add component box (https://imagej.net/Template:Component)
-- [ ] Table of contents heirachy
-- [X] Remove "category indexes" from search
-- [ ] Create wide table style
-- [X] Add link support for the info-box
-- [X] Fix footer -- does not stick to bottom
-- [ ] Fix h2 header --> normal/bold should be #585858
-- [X] Fix tables (too wide) -- set to `width: 50%;`
-- [X] Fix infob0x (add bullet points support and better icon centering)
-- [ ] Change table style -- needs lines
-- [ ] Fix Figure center - width issues
-- [X] Convert all links to use relative_url (safely prepend links to the domain root and allows for moving to different `baseurl` if necessary)
-- [X] Add Sidebox element
-- [X] Add Edit and view source links to page template
-- [X] Add page/post type to categories
-- [ ] Add supporting pages
-	- [x] Getting started (/learn.md)
-	- [X] Architecture (/learn/architecture.md)
-
-## TODO (post-live):
-
-- [ ] Change base url for "View source" page info from jekyll-protoype branch
-
 Credit:
 ------------------
 
