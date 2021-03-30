@@ -244,7 +244,8 @@ Ellipsoid Factor is a new method for measuring rod/plate geometry. It uses the a
 
 The EF at a point in the structure is determined as the EF of the most voluminous ellipsoid which contains that point.
 
-If you use Ellipsoid Factor in your work, please cite: Doube M (2015), *The Ellipsoid Factor for quantification of rods, plates and intermediate forms in 3D geometries*, Frontiers in Endocrinology, 6:15, [doi: 10.3389/fendo.2015.00015](http://journal.frontiersin.org/Journal/10.3389/fendo.2015.00015/abstract)
+If you use Ellipsoid Factor in your work, please cite: 
+> Doube M (2015), *The Ellipsoid Factor for quantification of rods, plates and intermediate forms in 3D geometries*, Frontiers in Endocrinology, 6:15, [doi: 10.3389/fendo.2015.00015](https://doi.org/10.3389/fendo.2015.00015)
 
 #### Suitable images
 
@@ -373,7 +374,7 @@ The measures are reported separately for each 3D subspace in the image, i.e. for
 
 #### Related publications
 
-Fazzalari NL, Parkinson IH (1996), *Fractal dimension and architecture of trabecular bone*, J Pathol, 178: 100-5, \[http://dx.doi.org/10.1002/(SICI)1096-9896(199601)178:1%3C100>::AID-PATH429%3E3.0.CO;2-K <doi:10.1002/(SICI)1096-9896(199601)178:1&lt;100::AID-PATH429&gt;3.0.CO;2-K\].
+Fazzalari NL, Parkinson IH (1996), *Fractal dimension and architecture of trabecular bone*, J Pathol, 178: 100-5, [doi: 10.1002/(SICI)1096-9896(199601)178:1%3C100::AID-PATH429%3E3.0.CO;2-K](https://doi.org/10.1002/(SICI)1096-9896(199601)178:1%3C100::AID-PATH429%3E3.0.CO;2-K).
 
 Inter-trabecular angles
 -----------------------
