@@ -5,44 +5,6 @@ categories: Plugins
 description: test description
 ---
 
-
-{% capture devStatus%}
-{% include devstatus developer='yes' incubating='no' obsolete='no' %}
-{% endcapture %}
-
-{% capture supportStatus%}
-{% include supportstatus debugger='yes' reviewer='yes' support='yes' %}
-{% endcapture %}
-
-{% capture founders%}
-{% include person content='David Cohoe' %} ([1](mailto:dcohoe@pdx.edu))
-{% endcapture %}
-
-{% capture leads%}
-{% include person content='David Cohoe' %}
-{% endcapture %}
-
-{% capture developers%}
-{% include person content='David Cohoe' %}
-{% endcapture %}
-
-{% capture debuggers%}
-{% include person content='David Cohoe' %}
-{% endcapture %}
-
-{% capture reviewers%}
-{% include person content='David Cohoe' %}
-{% endcapture %}
-
-{% capture support%}
-{% include person content='David Cohoe' %}
-{% endcapture %}
-
-{% capture maintainers%}
-{% include person content='David Cohoe' %}
-{% endcapture %}
-{% include component project='ImageJ' name='DHM Utilities' license='[LGPLv3](/licensing/lgpl)' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
-
 DHM Utilities is a collection of plugins for use in Digital Holographic Microscopy. There are three main plugins packaged with DHM Utilities:
 
 -   [DHM Utilities/Reconstruction](/plugins/dhm-utilities-reconstruction), for reconstructing and propagating holograms.

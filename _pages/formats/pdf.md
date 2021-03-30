@@ -4,10 +4,11 @@ title: Extract Images From PDF...
 section: Learn:File Formats
 categories: Plugins,Import-Export
 description: test description
+artifact: sc.fiji:IO\_
 ---
 
 
-{% include component-stats content='sc.fiji:IO\_' %}Select {% include bc path='File|Import|Extract Images From PDF...'%}
+Select {% include bc path='File|Import|Extract Images From PDF...'%}
 
 A dialog pops up to pick a file. Choose a .pdf file, and all its images will be opened as ImageJ images, in their original resolution.
 

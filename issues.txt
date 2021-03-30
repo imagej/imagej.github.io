@@ -52,3 +52,7 @@ Fix links hardcoding imagej.net.
 Fix all citations to use an include.
 
 Fix ad hoc "*Note: asdf*" blurbs to use an include.
+
+Rename plugins/stitching-2d-3d to plugins/stitching
+
+SNT has custom styling. Ideal would be to generalize it.

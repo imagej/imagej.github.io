@@ -1,3 +1,6 @@
+<div class="menu">
+<h3>ImageJ Documentation</h3>
+<ul>
 {% include menu-section title="About" link="/about" %}
   {% include menu-item title="Usage" link="/about/usage" %}
   {% include menu-item title="Contributors" link="/about/contributors" %}
@@ -212,3 +215,6 @@
     {% include menu-item title="Update site FAQ" link="/update-sites/faq" %}
   {% include menu-section-end %} <!-- Help/Update Sites -->
 {% include menu-section-end %} <!-- Help -->
+
+</ul>
+</div>

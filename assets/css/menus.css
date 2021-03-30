@@ -2,13 +2,13 @@
 
 .menu {
 	font-size: 0.85em;
-	width: 240px;
-	float: left;
 }
 
 .menu h3 {
 	text-align: center;
 	font-weight: bold;
+	border-bottom: 1px solid darkgray;
+	margin-bottom: 0 2em 0.5em 2em;
 }
 
 .menu ul {
@@ -20,7 +20,7 @@
 
 .menu > ul {
 	border: none;
-	padding: 20px 40px 20px 40px;
+	padding: 0 40px 20px 40px;
 }
 
 .menu a {
@@ -43,44 +43,39 @@
 	padding-left: 1.4em;
 }
 
-.menu hr {
-	border-bottom: solid 1px gray;
-	margin: 0.5em .5rem 10px .5rem;
-}
-
 .menu details>summary {
-
 	list-style: none;
 }
 
 .menu summary::-webkit-details-marker {
-	display: none
+	display: none;
 }
 
 .menu details > summary:after {
 	content: "▶";
 	font-size: 12px;
 	position: absolute;
-	left: 200px;
 }
 
 .menu details[open] > summary:after {
 	content: "▼";
 	font-size: 15px;
-	left: 198px;
 }
 
-.toc {
-	position: absolute;
-	right: 0;
-	top: 165px;
-	width: 240px;
+#sidebar-left .menu details > summary:after {
+	left: 200px;
 }
 
-.toc hr {
-	border-bottom: solid 1px gray;
-	margin: 0.5em auto -20px auto;
-	width: 60%;
+#sidebar-left .menu details[open] > summary:after {
+	left: 197px;
+}
+
+#sidebar-right .menu details > summary:after {
+	right: 10px;
+}
+
+#sidebar-right .menu details[open] > summary:after {
+	right: 8px;
 }
 
 @media screen and (max-width: 780px) {
