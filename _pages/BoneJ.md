@@ -20,7 +20,7 @@ description: test description
 {% endcapture %}
 {% include info-box name='BoneJ' software='ImageJ' logo='<img src="/media/Bonej-icon.png" width="96"/>' author=author maintainer=maintainer source=source released='Dec 11<sup>th</sup>, 2017' latest-version=' [styloid-r7](https://github.com/bonej-org/BoneJ2/releases)' status='Active' %}
 
-BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is the new, modernized version of the software available through the ImageJ [updater](https://imagej.net/Updater). Its update site is called [BoneJ](http://sites.imagej.net/BoneJ). For the old ImageJ1 version, see [BoneJ1](/plugins/bonej1).
+BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is the new, modernized version of the software available through the ImageJ [updater](/plugins/updater). Its update site is called [BoneJ](http://sites.imagej.net/BoneJ). For the old ImageJ1 version, see [BoneJ1](/plugins/bonej1).
 
 This version works with the latest Fiji, and complies with the modern ImageJ [architecture](/develop/architecture). Most plug-ins also now support hyperstacks, i.e. images with multiple channels or time frames.
 
@@ -34,7 +34,7 @@ Installation
 ------------
 ![Install BoneJ](/media/Install-bonej.png)
 
-1.  [Download](https://imagej.net/Downloads) the latest version of Fiji for your operating system
+1.  [Download](/Downloads) the latest version of Fiji for your operating system
 2.  Launch Fiji
 3.  Select in the menu *Help* &gt; *Update...*
 4.  Click *Manage update sites*
@@ -73,13 +73,13 @@ Anisotropy is used to quantify the directionality of trabecular bone. It tells w
 
 It's important to note that algorithm is stochastic and does not guarantee exact results. Thus it's recommended to run it several times to establish the degree of anisotropy in your image.
 
-![150 px\|The red dots mark phase changes](/media/PhaseChanges.png "150 px|The red dots mark phase changes")
+![The red dots mark phase changes](/media/PhaseChanges.png "The red dots mark phase changes")
 
 In the first step the algorithm draws parallel lines over the input image in direction $$\mathbf{v}$$. The direction is chosen randomly. Each line segment in the image stack is sampled to find points where it changes from background to foreground, i.e. where the line enters an object. The points are called *phase changes*, in the adjacent figure they're marked with red dots. After the sampling is complete, the algorithm forms a *MIL vector*, whose length is the total length of the line segments divided by the total number of phase changes found. The MIL vector has the same direction as $$\mathbf{v}$$. Drawing and sampling the lines is repeated for $$n$$ directions, and the method creates $$n$$ MIL vectors.
 
 After the MIL vectors have been calculated, they are added to a point cloud (a collection of points) around the origin. Then the method tries solve the equation of an ellipsoid that would fit the cloud. There may be no solution, especially if there are few points. That is, the fitting may fail at which point the plug-in stops. The radii of this ellipsoid determine the degree of anisotropy (see [results](https://imagej.net/index.php?title=BoneJ_experimental&action=submit#Results)).
 
-![200 px\|Projecting lines from a plane](/media/MilCube.png "200 px|Projecting lines from a plane")
+![Projecting lines from a plane](/media/MilCube.png "Projecting lines from a plane")
 
 In more detail, the lines in the first step are projected from a $$d * d$$ plane with normal $$\mathbf{v}$$ (see the adjacent figure). The size $$d = \sqrt{w^{2} + h^{2} + d^{2}}$$, where $$w, h, d$$ are the dimensions of the image stack. Each of the lines goes through a random point $$\mathbf{o}$$ on the plane. The points $$\mathbf{o}$$ are random, but evenly distributed across the plane. The lines are drawn until they intercept the stack edges at points $$\mathbf{o} + t_{min}\mathbf{v}$$,$$\mathbf{o} + t_{max}\mathbf{v}$$ (the algorithm solves for $$t_{min}$$, $$t_{max}$$). These line segments within the stack are then sampled for phase changes. In this drawing method some lines may miss the image stack completely, but conversely there aren't any areas in the stack that don't have a chance of being sampled.
 
@@ -385,7 +385,7 @@ The plug-in was designed to analyse the angles between trabeculae of cancellous 
 
 The graph is often not a perfect representation of the trabecular network in the input image. *Inter-trabecular angles* offers many options to adjust the graph's topology and filter out artefacts that may obfuscate or skew the results. First it allows you to filter out nodes with too many or too few edges. Secondly it can be used to prune very short edges, which often do not represent actual trabeculae.
 
-![150 px\|Types of edges in pruning](/media/Ita types.png "fig:150 px|Types of edges in pruning") Pruning works differently for different types of edges. There are four kinds: outer, dead-end, inner and short. An outer edge doesn't interconnect different parts of a graph. In other words, one (and only one) of its endpoints connects to only one branch, i.e. the edge itself. In the figure the outer edge is colored black. A dead-end (blue) is an outer edge whose length is less than the minimum set by the user, i.e. it's a short, outer edge. An inner edge (green) connects to end points with more than one branch. A short edge is an inner edge, whose length is less than the set minimum. When a dead-end is pruned, it with its "lonely" end-point are removed from the graph. When a short edge is pruned, it and it's endpoints are removed, and a new node is placed at the midpoint of the former. This new node connects to all the branches the previous nodes connected to.
+![Types of edges in pruning](/media/Ita_types.png "Types of edges in pruning") Pruning works differently for different types of edges. There are four kinds: outer, dead-end, inner and short. An outer edge doesn't interconnect different parts of a graph. In other words, one (and only one) of its endpoints connects to only one branch, i.e. the edge itself. In the figure the outer edge is colored black. A dead-end (blue) is an outer edge whose length is less than the minimum set by the user, i.e. it's a short, outer edge. An inner edge (green) connects to end points with more than one branch. A short edge is an inner edge, whose length is less than the set minimum. When a dead-end is pruned, it with its "lonely" end-point are removed from the graph. When a short edge is pruned, it and it's endpoints are removed, and a new node is placed at the midpoint of the former. This new node connects to all the branches the previous nodes connected to.
 
 *Inter-trabecular angles* offers two further options to control pruning: *iteration* and *clustering*. Iteration repeats pruning until no new short edges are found. Sometimes pruning can create new short edges, and thus the graph may still have them after one iteration. However, iteration can alter the structure of the graph too dramatically. Clustering searches for all nodes connected by short edges, before removing any. In the figure, clustering pruning would remove the four nodes and the red edges between them in one go. It would create a new node at the center of the previous four, and connect it to the blue and green edges. When pruning is not clustering, it removes edges one-by-one. This changes the end result depending on the order the edges are traversed. Clustering creates the same result each time.
 
