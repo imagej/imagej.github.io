@@ -19,7 +19,7 @@
 {{include.maintainer | markdownify}}
 </td></tr>
 {% endif %}
-{% if include.filename != null %}
+{% if include.filename %}
 <tr><td>File</td><td>
 {{include.filename}}
 </td></tr>

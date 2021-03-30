@@ -4,19 +4,19 @@
 </div>
 {% endcapture %}
 
-{% if include.float != null %}
+{% if include.float %}
 {% assign float = include.float %}
 {% endif %}
 
-{% if include.width != null %}
+{% if include.width %}
 {% assign width = include.width %}
 {% endif %}
 
-{% if include.source != null %}
+{% if include.source %}
 {% assign source-url = include.source %}
 {% endif %}
 
-{% if include.person != null %}
+{% if include.person %}
 {% assign person = include.person %}
 {% endif %}
 

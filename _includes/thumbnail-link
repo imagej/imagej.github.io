@@ -1,12 +1,12 @@
-{% if include.link != null %}
+{% if include.link %}
 {% assign link = {{include.link}} %}
 {% endif %}
 
-{% if include.src != null %}
+{% if include.src %}
 {% assign src = {{include.src}} %}
 {% endif %}
 
-{% if include.title != null %}
+{% if include.title %}
 {% assign title = {{include.title}} %}
 {% endif %}
 

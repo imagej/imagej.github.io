@@ -1,94 +1,94 @@
 {% capture citation-content %}
 
-{% if include.last != null %}
+{% if include.last %}
 {% assign last = {{include.last}} %}
 {% endif %}
 
-{% if include.first != null %}
+{% if include.first %}
 {% assign first = {{include.first}} | append: "," %}
 {% endif %}
 
-{% if include.last2 != null %}
+{% if include.last2 %}
 {% assign last2 = {{include.last2}} %}
 {% endif %}
 
-{% if include.first2 != null %}
+{% if include.first2 %}
 {% assign first2 = {{include.first2 | append: "," %}
 {% endif %}
 
-{% if include.last3 != null %}
+{% if include.last3 %}
 {% assign last3 = {{include.last3}} %}
 {% endif %}
 
-{% if include.first3 != null %}
+{% if include.first3 %}
 {% assign first3 = {{include.first3}} | append: "," %}
 {% endif %}
 
-{% if include.last4 != null %}
+{% if include.last4 %}
 {% assign last4 = {{include.last4}} %}
 {% endif %}
 
-{% if include.first4 != null %}
+{% if include.first4 %}
 {% assign first4 = {{include.first4}} | append: "," %}
 {% endif %}
 
-{% if include.last5 != null %}
+{% if include.last5 %}
 {% assign last5 = {{include.last5}} %}
 {% endif %}
 
-{% if include.first5 != null %}
+{% if include.first5 %}
 {% assign first5 = {{include.first5}} | append: "," %}
 {% endif %}
 
-{% if include.last6 != null %}
+{% if include.last6 %}
 {% assign last6 = {{include.last6}} %}
 {% endif %}
 
-{% if include.first6 != null %}
+{% if include.first6 %}
 {% assign first6 = {{include.first6}} | append: "," %}
 {% endif %}
 
-{% if include.last7 != null %}
+{% if include.last7 %}
 {% assign last7 = {{include.last7}} %}
 {% endif %}
 
-{% if include.first7 != null %}
+{% if include.first7 %}
 {% assign first7 = {{include.first7}} | append: "," %}
 {% endif %}
 
-{% if include.title != null %}
+{% if include.title %}
 {% assign title = {{include.title}} %}
 {% endif %}
 
-{% if url.journal != null %}
+{% if url.journal %}
 {% assign url = {{include.url}} %}
 {% endif %}
 
-{% if include.journal != null %}
+{% if include.journal %}
 {% assign journal = {{include.journal}} %}
 {% endif %}
-{% if include.volume != null %}
+{% if include.volume %}
 {% assign volume = {{include.volume}} | append: "**" | prepend: "**" | append: {{number}} | append: ":" %}
 {% endif %}
-{% if include.issue != null %}
+{% if include.issue %}
 {% assign number = {{include.issue}} %}
 {% endif %}
-{% if include.number != null %}
+{% if include.number %}
 {% assign number = {{include.number}} | append: ")" | prepend: "(" %}
 {% endif %}
-{% if include.pages != null %}
+{% if include.pages %}
 {% assign pages = {{include.pages}}%}
 {% endif %}
-{% if include.date != null %}
+{% if include.date %}
 {% assign date = "(" | append: {{include.year}} | append: ")," %}
 {% endif %}
-{% if include.PMID != null %}
+{% if include.PMID %}
 {% assign PMID = {{include.PMID}} %}
 {% endif %}
-{% if include.abstract != null %}
+{% if include.abstract %}
 {% assign abstract = {{include.abstract}} %}
 {% endif %}
-{% if include.doi != null %}
+{% if include.doi %}
 {% assign doi = "doi:<a href=" | append: '"' | |append: "https://dx.doi.org/" | append: {{include.doi}} | append: '"' | append: ">" | append: {{include.doi}} | append: "</a>" %}
 {% endif %}
 

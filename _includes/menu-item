@@ -1,4 +1,4 @@
-{% if {{page.url}} == {{include.link}} %}
+{% if page.url == include.link %}
 <li><b>{{include.title}}</b></li>
 {% else %}
 <li><a href="{{include.link}}">{{include.title}}</a></li>

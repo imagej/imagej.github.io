@@ -1,22 +1,22 @@
 {% capture javadoc-content %}
 {% assign url = "https://javadoc.scijava.org/" %}
-{% if include.project != null %}
+{% if include.project %}
 {% assign project = {{include.project}} %}
 {% else %}
 {% assign project = "ImageJ" %}
 {% endif %}
-{% if include.package != null %}
+{% if include.package %}
 {% assign package = "/" | append: {{include.package}} %}
 {% endif %}
-{% if include.class != null %}
+{% if include.class %}
 {% assign class = "/" | append: {{include.class}} | append: ".html" %}
 {% endif %}
-{% if include.anchor != null %}
+{% if include.anchor %}
 {% assign anchor = "#" | append: {{include.anchor}} %}
 {% endif %}
-{% if include.label != null %}
+{% if include.label %}
 {% assign label = {{include.label}} %}
-{% elsif include.class != null %}
+{% elsif include.class %}
 {% assign label = {{include.class}} %}
 {% else %}
 {% assign label = {{include.project}} %}

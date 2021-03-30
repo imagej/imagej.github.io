@@ -1,6 +1,6 @@
-{% if include.url != null %}
+{% if include.url %}
 {% assign url = {{include.url}} %}
-{% endif %}{% if include.link != null %}
+{% endif %}{% if include.link %}
 {% assign url = {{include.link}} %}
 {% endif %}
 

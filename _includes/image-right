@@ -1,1 +1,1 @@
-<img src="{{include.image-path}}" alt="{{include.name}}" class="image-right {{include.classes}}"{% if include.image-width != null %} width={{include.image-width}}{% endif %}>
+<img src="{{include.image-path}}" alt="{{include.name}}" class="image-right {{include.classes}}"{% if include.image-width %} width={{include.image-width}}{% endif %}>

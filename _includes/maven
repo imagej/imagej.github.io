@@ -1,28 +1,28 @@
 {% capture content %}
 {% assign url = "https://maven.scijava.org/index.html#nexus-search;gav~" %}
-{% if include.g != null %}
+{% if include.g %}
 {% assign g = {{include.g}} %}
 {% endif %}
 
-{% if include.a != null %}
+{% if include.a %}
 {% assign a = {{include.a}} %}
 {% endif %}
 
-{% if include.v != null %}
+{% if include.v %}
 {% assign v = {{include.v}} %}
 {% endif %}
 
-{% if include.p != null %}
+{% if include.p %}
 {% assign p = {{include.p}} %}
 {% endif %}
 
-{% if include.c != null %}
+{% if include.c %}
 {% assign c = {{include.c}} %}
 {% endif %}
 
 {% assign maven-url = url | append: {{g}} | append: "~" | append: {{a}} | append: "~" | append: {{v}} | append: "~" | append: {p}} | append: "~" | append: {{c}} | append: "~" | append: "kw,versionexpand" %}
 
-{% if include.label != null %}
+{% if include.label %}
 {% assign label = {{include.label}} %}
 {% else label = {{g}} | append: ':' | append: {{a}} | append: ':' | append: {{v}} | append: ':' | append: 'p' %}
 {% endif %}
