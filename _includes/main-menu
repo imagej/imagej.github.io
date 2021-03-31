@@ -42,7 +42,7 @@
 {% include menu-section-end %} <!-- About -->
 
 {% include menu-section title="Plugins" link="/plugins" %}
-  {% include menu-item title="Plugin Grid" link="/plugin-grid" %}
+  {% include menu-item title="Plugin Grid" link="/plugin_grid" %}
 {% include menu-section-end %} <!-- Plugins -->
 
 {% include menu-section title="Learn" link="/learn" %}
