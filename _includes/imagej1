@@ -3,9 +3,19 @@
 {{include.content}}
 </div>
 {% endcapture %}
-<div class="imagej1-box" style="position:relative;">
-<div class="floatleft">
-<img alt="Imagej1-icon.png" src="/images/logos/Imagej1-icon.png" width="64" height="64" style="float:left;">
+
+<div id="wrap">
+    <table class="table-info tip-notice">
+        <tbody>
+            <tr>
+                <td>
+                    <img alt="Imagej1-icon.png" src="/images/logos/Imagej1-icon.png" width="64" height="64">
+                </td>
+                <td>
+                    {{info_content}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
-{{info_content}}
-</div>
+<br>

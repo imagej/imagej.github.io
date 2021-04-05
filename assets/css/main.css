@@ -2672,3 +2672,40 @@ input, select, textarea {
 			}
 
 	}
+
+
+.table-info {
+	border: 0px solid #aaa;
+}
+
+	.table-info td {
+		padding: 2px 0px 2px 0.5em;
+		margin: auto;
+		vertical-align: middle;
+	}
+
+	.table-info p {
+		margin: 0;
+	}
+
+	.table-info ul {
+		list-style: disc;
+		margin: 0;
+		padding-left: 2em;
+	}
+
+	table.warning-notice {
+		background: #FFCCCB;
+	  border-left: 10px solid #b32424;
+	 }
+
+	table.info-notice {
+		background: #ebf2f8;
+	  border-left: 10px solid #36c;
+	 }
+
+	table.tip-notice {
+		background: #dedede;
+		margin-top: 15px;
+		border-left: 10px solid #7E7E7E;
+	}

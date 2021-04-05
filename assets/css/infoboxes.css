@@ -1,64 +1,39 @@
-table.warning-notice {
-      border-left: 10px solid #b32424;
-    }
-
-.table-warning {
-  background: #FFCCCB;
-  border: 0px solid #aaa;
-}
-
-  .table-warning td {
-    padding: 2px 0px 2px 0.5em;
-    margin: auto;
-    vertical-align: middle;
-  }
-
-  .table-warning p {
-    margin: 0;
-  }
-
-  .table-warning ul {
-    list-style: disc;
-    margin: 0;
-    padding-left: 2em;
-  }
-
-table.info-notice {
-      border-left: 10px solid #36c;
-  }
+@import "main.css" print;
 
 .table-info {
-  background: #ebf2f8;
-  border: 0px solid #aaa;
+	border: 0px solid #aaa;
 }
 
-  .table-info td {
-    padding: 2px 0px 2px 0.5em;
-    margin: auto;
-    vertical-align: middle;
-  }
-
-  .table-info p {
-    margin: 0;
-  }
-
-  .table-info ul {
-    list-style: disc;
-    margin: 0;
-    padding-left: 2em;
-  }
-
-  table.tip-notice {
-		margin-top: 15px;
-		border-left: 10px solid #7E7E7E;
+	.table-info td {
+		padding: 2px 0px 2px 0.5em;
+		margin: auto;
+		vertical-align: middle;
 	}
 
-	.table-tip-info {
-		margin: 0 10%;
-		float: center;
-		border-collapse: collapse;
-		background: #f9f9f9;
-		width: 80%;
+	.table-info p {
+		margin: 0;
+	}
+
+	.table-info ul {
+		list-style: disc;
+		margin: 0;
+		padding-left: 2em;
+	}
+
+	table.warning-notice {
+		background: #FFCCCB;
+	  border-left: 10px solid #b32424;
+	 }
+
+	table.info-notice {
+		background: #ebf2f8;
+	  border-left: 10px solid #36c;
+	 }
+
+	table.tip-notice {
+		background: #dedede;
+		margin-top: 15px;
+		border-left: 10px solid #7E7E7E;
 	}
 
 .testimonial {
@@ -258,34 +233,6 @@ div.miniboxcaption {
 	}
 }
 
-/* Info-side-box */
-
-  div.imagej1-box {
-    font-family: 'Linux Libertine',constantia,'hoefler text','palatino linotype',serif;
-    line-height: 1.4;
-    color: #333333;
-    direction: ltr;
-    margin: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    border: 1px solid #ccc;
-    padding: 15px !important;
-    margin-bottom: 2em;
-    background-color: #f9f9f9;
-    border-radius: .75em;
-    box-shadow: 4px 4px 4px #CCC;
-    float; right
-  }
-
-  .table-imagej1-info {
-    margin: 0 10%;
-    border-collapse: collapse;
-    background: #f9f9f9;
-    border: 1px solid #aaa;
-  }
-}
 
 /* biginfo */
 
