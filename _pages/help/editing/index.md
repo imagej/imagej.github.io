@@ -59,8 +59,7 @@ Includes provide more robust formatting options and are unique to this site (thi
 | Insert the about menu | [about-menu](about-menu)
 | Insert a citation | [citation](citation)
 | Insert conference info | [conference](conference)
-| Generate info/details box | [details-box](details-box) |
-| Alternative info/details boxes | [alt-boxes](additional-info-boxes) |
+| Info/details boxes | [alt-boxes](additional-info-boxes) |
 | Insert figure | [figure](figure) |
 | Insert a gallery | [gallery](gallery) |
 | Link to github files | [github](github) |
