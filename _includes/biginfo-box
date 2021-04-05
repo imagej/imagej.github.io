@@ -5,7 +5,7 @@
 {% endcapture %}
 
 <div id="wrap">
-    <table class="biginfo info-notice">
+    <table class="biginfo">
         <tbody>
             <tr>
                 <td>
