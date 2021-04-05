@@ -1,4 +1,4 @@
-@import "main.css" print;
+@import "/assests/css/main.css" print;
 
 .table-info {
 	border: 0px solid #aaa;
@@ -35,6 +35,16 @@
 		margin-top: 15px;
 		border-left: 10px solid #7E7E7E;
 	}
+
+  table.biginfo {
+      margin: 0 10%;
+      border-collapse: collapse;
+      background: #e6e6e6;
+      border: 1px solid #aaa;
+      border-left: 10px solid #1e90ff !important;
+      width: 80%;
+      float: center;
+  }
 
 .testimonial {
 	position: relative;
@@ -83,8 +93,7 @@ div.miniboxcaption {
 
 /* Sidebox */
 
-	.sidebox-right {
-		float: right;
+	.sidebox {
 		width: 40%;
 		border: 0px solid #ccc;
 		padding: 15px !important;
@@ -96,18 +105,13 @@ div.miniboxcaption {
 		box-shadow: 4px 4px 4px #CCC;
 	}
 
-	.sidebox-left {
-		float: left;
-		width: 40%;
-		border: 1px solid #ccc;
-		padding: 15px !important;
-		margin-top: 1em;
-		margin-bottom: 2em;
-		margin-right: 1em;
-		background-color: #ffefbe;
-		border-radius: .75em;
-		box-shadow: 4px 4px 4px #CCC;
+	.left {
+    float:left;
 	}
+
+  .right {
+    float:right;
+  }
 
 /* User box */
 
@@ -161,18 +165,6 @@ div.miniboxcaption {
 	}
 }
 
-
-/* biginfo */
-
-  table.table-biginfo {
-    margin: 0 10%;
-    border-collapse: collapse;
-    background: #e6e6e6;
-    border: 1px solid #aaa;
-    border-left: 10px solid #1e90ff !important;
-    width: 80%;
-    float: center;
-}
 
 /* Info-box */
 
