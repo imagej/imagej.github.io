@@ -13,7 +13,12 @@ layout: home
                 multidimensional images.
             </p>
             <ul class="actions special">
-                <li><a href="#one" class="button scrolly">GET STARTED</a></li>
+            <li><a href="/learn" class="button icon solid fa-cogs">Use</a></li>
+            <li><a href="/develop" class="button icon solid fa-wrench">Extend</a></li>
+            <li><a href="/search" class="button icon solid fa-search">Search</a></li>
+        </ul>
+        <ul class = "actions special">
+            <li><a href="https://imagej.net/Downloads" class="button icon solid fa-download">Download</a></li>
             </ul>
         </div>
     </section>
@@ -26,14 +31,6 @@ layout: home
             <div class="row gtr-150">
                 <div class="col-12 col-12-medium">
                     <header class="major">
-                        <ul class = "actions special">
-                            <li><a href="/learn" class="button icon solid fa-cogs">Use</a></li>
-                            <li><a href="/develop" class="button icon solid fa-wrench">Extend</a></li>
-                            <li><a href="/search" class="button icon solid fa-search">Search</a></li>
-                        </ul>
-                        <ul class = "actions special">
-                            <li><a href="https://imagej.net/Downloads" class="button icon solid fa-download">Download</a></li>
-                        </ul>
                         <h2>Why use ImageJ/FIJI?</h2>
                         <div class="col-6 col-12-medium imp-medium">
                             <span class="image fit"><img src="images/imagej_sample_2.png" alt="Example image"></span>
@@ -45,14 +42,16 @@ layout: home
         </div>
     </section>
 {:/}
-<!-- Developer resources -->
 
-{% include user-resources %}
+<div class="resources">
+  <!-- Developer resources -->
 
-<!-- Developer resources -->
+  {% include user-resources %}
 
-{% include developer-resources %}
+  <!-- Developer resources -->
 
+  {% include developer-resources %}
+</div>
 <!-- Spotlight -->
 
 {% include spotlight %}

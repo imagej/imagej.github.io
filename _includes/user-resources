@@ -1,5 +1,5 @@
 <section id="dev_resources" class="main style3 special">
-    <div class="container">
+
         <header class="major">
             <h2>User Resources</h2>
         </header>
@@ -13,5 +13,5 @@
             <li><a href="https://javadoc.scijava.org/ImageJ/" class="button icon solid fa-terminal">ImageJ API</a></li>
         </ul>
 
-    </div>
+    
 </section>

@@ -2206,6 +2206,13 @@ input, select, textarea {
 				.main.style3 .icon.major {
 					color: #ffffff;
 				}
+
+
+			@media screen and (max-width: 780px) {
+				.main.style2, .main.style3 {
+					width:100%;
+				}
+			}
 /* Header */
 
 	#header {
@@ -2330,7 +2337,6 @@ input, select, textarea {
 				left: 50%;
 				position: absolute;
 				top: 100%;
-				width: 1px;
 			}
 
 		#header .inner {
@@ -2673,67 +2679,6 @@ input, select, textarea {
 
 	}
 
-	.table-info {
-		border: 0px solid #aaa;
+	.resources {
+		width:100%;
 	}
-
-		.table-info td {
-			padding: 2px 0px 2px 0.5em;
-			margin: auto;
-			vertical-align: middle;
-		}
-
-		.table-info p {
-			margin: 0;
-		}
-
-		.table-info ul {
-			list-style: disc;
-			margin: 0;
-			padding-left: 2em;
-		}
-
-		table.warning-notice {
-			background: #FFCCCB;
-		  border-left: 10px solid #b32424;
-		 }
-
-		table.info-notice {
-			background: #ebf2f8;
-		  border-left: 10px solid #36c;
-		 }
-
-		table.tip-notice {
-			background: #dedede;
-			margin-top: 15px;
-			border-left: 10px solid #7E7E7E;
-		}
-
-	  table.biginfo {
-	      border-collapse: collapse;
-	      background: #DDE8FF;
-	      border: 1px solid #003366;
-	      border-left: 10px solid #1e90ff !important;
-	  }
-		
-		/* Sidebox */
-
-			.sidebox {
-				width: 40%;
-				border: 0px solid #ccc;
-				padding: 15px !important;
-				margin-top: 1em;
-				margin-bottom: 2em;
-				margin-left: 1em;
-				background-color: white;
-				border-radius: .75em;
-				box-shadow: 4px 4px 4px #CCC;
-			}
-
-			.left {
-		    float:left;
-			}
-
-		  .right {
-		    float:right;
-		  }
