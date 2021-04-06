@@ -1,4 +1,5 @@
 <section id="dev_resources" class="main style2 special">
+<br>
         <header class="major">
             <h2>Developer Resources</h2>
         </header>
@@ -11,5 +12,5 @@
             <li><a href="https://javadoc.scijava.org/SciJava/" class="button icon solid fa-terminal">SciJava API</a></li>
             <li><a href="https://javadoc.scijava.org/ImageJ/" class="button icon solid fa-terminal">ImageJ API</a></li>
         </ul>
-        
+
 </section>

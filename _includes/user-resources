@@ -1,5 +1,5 @@
 <section id="dev_resources" class="main style3 special">
-
+<br>
         <header class="major">
             <h2>User Resources</h2>
         </header>
@@ -12,6 +12,4 @@
             <li><a href="https://image.sc" class="button icon solid fa-external-link-alt">image.sc Forums</a></li>
             <li><a href="/licensing/citing" class="button icon solid fa-quote-left">Cite</a></li>
         </ul>
-
-
 </section>
