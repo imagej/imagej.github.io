@@ -26,20 +26,31 @@ layout: home
 
 <!--ImageJ Introduction -->
 {::nomarkdown}
-    <section id="one" class="main style1">
-        <div class="container medium">
-            <div class="row gtr-150">
-                <div class="col-12 col-12-medium">
-                    <header class="major">
-                        <h2>Why use ImageJ/FIJI?</h2>
-                        <div class="col-6 col-12-medium imp-medium">
-                            <span class="image fit"><img src="images/imagej_sample_2.png" alt="Example image"></span>
-                            <p>ImageJ is highly extensible, with thousands of plugins and scripts for performing a wide variety of tasks, and a large user community.</p>
-                        </div>
-                    </header>
-                </div>
-            </div>
-        </div>
+    <section id="one">
+    <h1 class="text-center">Why Fiji?</h1>
+<div class="row text-center">
+ <div class="col-12 col-md-4">
+   <div class=" fa-5x text-success"><span class="fas fa-check-circle"></span></div>
+   <h2>Easy to Use</h2>
+   <p>
+     Fiji is easy to use and install - in one-click, Fiji installs all of its plugins, features an automatic updater, and offers comprehensive documentation.
+   </p>
+ </div>
+ <div class="col-12 col-md-4">
+   <div class=" fa-5x text-primary"><span class="fas fa-cogs"></span></div>
+   <h2>Powerful</h2>
+   <p>
+     Fiji bundles together many popular and useful ImageJ plugins for image analysis into one installation, and automatically manages their dependencies and updating.
+   </p>
+ </div>
+ <div class="col-12 col-md-4">
+   <div class=" fa-5x text-danger"><span class="fas fa-heart"></span></div>
+   <h2>Free &amp; Open Source</h2>
+   <p>
+     Like ImageJ itself, Fiji is an <a href="https://imagej.net/Open_Source">open source</a> project hosted on <a href="https://github.com/fiji">GitHub</a>, developed and written by the community.
+   </p>
+ </div>
+</div>
     </section>
 {:/}
 
