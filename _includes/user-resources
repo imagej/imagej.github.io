@@ -5,13 +5,13 @@
         </header>
         <p>Looking for user resources?</p>
         <ul class="actions special">
-            <li><a href="https://github.com/imagej/" class="button icon solid fa-code">Source Code</a></li>
-            <li><a href="https://github.com/imagej/imagej/issues" class="button icon solid fa-bullhorn">Report a Bug</a></li>
+            <li><a href="/plugins" class="button icon solid fa-plug">Plugins</a></li>
+            <li><a href="/help" class="button icon solid fa-hands-helping">Help</a></li>
         </ul>
         <ul class="actions special">
-            <li><a href="https://javadoc.scijava.org/SciJava/" class="button icon solid fa-terminal">SciJava API</a></li>
-            <li><a href="https://javadoc.scijava.org/ImageJ/" class="button icon solid fa-terminal">ImageJ API</a></li>
+            <li><a href="https://image.sc" class="button icon solid fa-external-link-alt">image.sc Forums</a></li>
+            <li><a href="/licensing/citing" class="button icon solid fa-quote-left">Cite</a></li>
         </ul>
 
-    
+
 </section>
