@@ -23,14 +23,14 @@
 
 /* Table Why ImageJ */
 
-.container {
+.container-whyij {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
   margin-top: 2.5em;
 }
 
-.row {
+.row-whyij {
   width: 100%;
   display: flex;
 }
@@ -52,7 +52,7 @@
 
 @media screen and ( max-width: 780px ) {
 
-     .row {
+     .row-whyij {
        flex-direction: column;
        text-align:center;
        vertical-align:top;
@@ -67,8 +67,8 @@
        vertical-align:top;
      }
 
-     .row > .col-4 {
-       width: 80%;
+     .row-whyij > .col-4 {
+       width: 65%;
        align: center;
        display: block;
        margin-left: auto;

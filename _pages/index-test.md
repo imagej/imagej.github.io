@@ -28,8 +28,8 @@ layout: home
 {::nomarkdown}
 
 <div class="text-center"><h1>Why ImageJ?</h1>
-<header class="container">
-  <div class="row">
+<header class="container-whyij">
+  <div class="row-whyij">
     <div class="col-4">
     <div class=" fa-5x text-success"><span class="fas fa-check-circle"></span></div>
     <h2>Easy to Use</h2>
