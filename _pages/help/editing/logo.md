@@ -1,6 +1,5 @@
 ---
 title: Demo logos
-layout: page
 author:
 categories: help
 description: this page demonstrates how to use the logo include tag

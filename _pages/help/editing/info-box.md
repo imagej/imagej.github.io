@@ -1,6 +1,5 @@
 ---
 title: Demo info-box
-layout: page
 author:
 categories: help
 description: This page demonstrates how to insert an info-box.

@@ -2,7 +2,6 @@
 title: Math test
 author: Edward Evans
 categories: plugins, demo
-layout: page
 use_math: true
 description: An example of math equations
 ---

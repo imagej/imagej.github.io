@@ -1,6 +1,5 @@
 ---
 title: Demo Youtube Video
-layout: page
 categories:
 description: This page demonstrates how to add a YouTube video embed to your page.
 ---

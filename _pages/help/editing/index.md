@@ -1,6 +1,5 @@
 ---
 title: Editing the Wiki
-layout: page
 section: Help
 categories: tutorials
 description: This page explains how to write and edit pages.
@@ -38,7 +37,6 @@ Find below the front matter for this page. You can copy and paste this code into
 ```
 ---
 title: Editing the Wiki
-layout: page
 description: This page explains how to write and edit pages.
 ---
 ```

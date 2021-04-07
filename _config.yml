@@ -9,3 +9,10 @@ collections:
   pages:
     output: true
     permalink: /:path
+defaults:
+  -
+    scope:
+      path: "" # NB: all files in the project
+      type: pages
+    values:
+      layout: page

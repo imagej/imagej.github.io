@@ -1,6 +1,5 @@
 ---
 title: Demo warning-box
-layout: page
 author: 
 categories: 
 description: This page demonstrates how to insert a warning box.

@@ -1,6 +1,5 @@
 ---
 title: NIH Image
-layout: page
 categories: Software,Citable
 description: test description
 ---

@@ -1,6 +1,5 @@
 ---
 title: Demo tech-box
-layout: page
 author: 
 categories: 
 description: This page demonstrates how to insert a tech box.

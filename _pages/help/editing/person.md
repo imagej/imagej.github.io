@@ -1,6 +1,5 @@
 ---
 title: Demo people
-layout: page
 author:
 categories: help
 

@@ -1,6 +1,5 @@
 ---
 title: Demo github links
-layout: page
 author:
 categories: help
 description: this page demonstrates how to use the github include tag

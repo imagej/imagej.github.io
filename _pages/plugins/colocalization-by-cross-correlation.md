@@ -1,6 +1,5 @@
 ---
 title: Colocalization by Cross Correlation
-layout: page
 categories: Colocalization,Plugins
 description: How to use the Colocalization by Cross Correlation plugin
 ---

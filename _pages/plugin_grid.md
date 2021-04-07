@@ -1,7 +1,6 @@
 ---
 title: Plugin Grid
 categories: admin
-layout: page
 ---
 
 <div class="plugin-grid">

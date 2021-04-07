@@ -1,6 +1,5 @@
 ---
 title: Demo Git menu
-layout: page
 author:
 categories: help
 description: This page demonstrates how to insert the Git menu.

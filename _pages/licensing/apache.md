@@ -1,6 +1,5 @@
 ---
 title: Apache
-layout: page
 section: About:Licensing:Open Source
 categories: related software
 description: test description
