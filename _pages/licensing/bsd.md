@@ -1,7 +1,6 @@
 ---
 title: BSD
 section: About:Licensing:Open Source
-categories: plugins
 description: test description
 ---
 

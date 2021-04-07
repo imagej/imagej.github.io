@@ -1,7 +1,6 @@
 ---
 title: Demo sidebox
 author: 
-categories: 
 description: This page demonstrates how to insert a sidebox on the left and right side.
 ---
 
